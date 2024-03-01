@@ -1,2 +1,0 @@
-# MemoryStore Database Service (MDS)
-

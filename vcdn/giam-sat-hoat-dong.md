@@ -1,2 +1,0 @@
-# Giám sát hoạt động
-

@@ -1,2 +1,0 @@
-# vStorage- Giao diện cũ
-

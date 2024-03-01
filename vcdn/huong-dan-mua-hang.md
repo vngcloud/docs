@@ -1,2 +1,0 @@
-# Hướng dẫn mua hàng
-
