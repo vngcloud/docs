@@ -142,6 +142,7 @@
           * [Enable sticky session](vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/pool/enable-sticky-session.md)
           * [Enable TLS encryption](vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/pool/enable-tls-encryption.md)
           * [Pool's algorithm](vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/pool/pools-algorithm.md)
+      * [Network Load Balancer](vserver/compute-hcm03-1a/vlb-load-balancer-new-version/network-load-balancer.md)
     * [Auto Scaling](vserver/compute-hcm03-1a/auto-scaling.md)
     * [APIs & IaC](vserver/compute-hcm03-1a/apis-and-iac.md)
     * [Terraform](vserver/compute-hcm03-1a/terraform.md)
