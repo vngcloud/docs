@@ -1,0 +1,2 @@
+# Thiết lập metadata object
+
