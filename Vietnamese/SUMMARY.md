@@ -305,6 +305,7 @@
   * [Security (vCDN)](vcdn/security-vcdn.md)
 * [vCloudcam](vcloudcam.md)
 * [vColocation](vcolocation.md)
+* [DataSync](datasync.md)
 * [Identity and Access Management (IAM)](identity-and-access-management-iam.md)
 * [Quản lý hóa đơn, chi phí & tài nguyên trên VNG Cloud](quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud.md)
 * [Calculator - Công cụ ước tính chi phí](calculator-cong-cu-uoc-tinh-chi-phi.md)
