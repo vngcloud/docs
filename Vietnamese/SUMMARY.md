@@ -356,6 +356,8 @@
           * [Phân quyền người dùng IAM User Account làm việc với 1 hoặc nhiều container](vstorage/vstorage-giao-dien-moi/tinh-huong-su-dung-use-case/cac-giai-phap-khac/phan-quyen-truy-cap-vstorage-thong-qua-iam/phan-quyen-nguoi-dung-iam-user-account-lam-viec-voi-1-hoac-nhieu-container.md)
           * [Phân quyền người dùng IAM User Account làm việc với 1 hoặc nhiều directories của một container](vstorage/vstorage-giao-dien-moi/tinh-huong-su-dung-use-case/cac-giai-phap-khac/phan-quyen-truy-cap-vstorage-thong-qua-iam/phan-quyen-nguoi-dung-iam-user-account-lam-viec-voi-1-hoac-nhieu-directories-cua-mot-container.md)
           * [Phân quyền người dùng IAM User Account làm việc với 1 hoặc nhiều objects của một directory hoặc cont](vstorage/vstorage-giao-dien-moi/tinh-huong-su-dung-use-case/cac-giai-phap-khac/phan-quyen-truy-cap-vstorage-thong-qua-iam/phan-quyen-nguoi-dung-iam-user-account-lam-viec-voi-1-hoac-nhieu-objects-cua-mot-directory-hoac-cont.md)
+          * [Phân quyền người dùng Service Account làm việc với 1 hoặc nhiều project](vstorage/vstorage-giao-dien-moi/tinh-huong-su-dung-use-case/cac-giai-phap-khac/phan-quyen-truy-cap-vstorage-thong-qua-iam/phan-quyen-nguoi-dung-service-account-lam-viec-voi-1-hoac-nhieu-project.md)
+          * [Phân quyền người dùng Service Account làm việc với 1 hoặc nhiều container](vstorage/vstorage-giao-dien-moi/tinh-huong-su-dung-use-case/cac-giai-phap-khac/phan-quyen-truy-cap-vstorage-thong-qua-iam/phan-quyen-nguoi-dung-service-account-lam-viec-voi-1-hoac-nhieu-container.md)
   * [vStorage- Giao diện cũ](vstorage/vstorage-giao-dien-cu.md)
 * [vMonitor](vmonitor/README.md)
   * [Metric](vmonitor/metric.md)
