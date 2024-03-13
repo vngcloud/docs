@@ -280,6 +280,7 @@
       * [Làm việc với POC project](vstorage/vstorage-giao-dien-moi/cac-tinh-nang-cua-vstorage/lam-viec-voi-poc-project.md)
       * [Làm việc với Archive project](vstorage/vstorage-giao-dien-moi/cac-tinh-nang-cua-vstorage/lam-viec-voi-archive-project.md)
       * [Làm việc với vBackup project](vstorage/vstorage-giao-dien-moi/cac-tinh-nang-cua-vstorage/lam-viec-voi-vbackup-project.md)
+    * [Quản lý truy cập](vstorage/vstorage-giao-dien-moi/quan-ly-truy-cap.md)
   * [Page](vstorage/page.md)
   * [vStorage- Giao diện cũ](vstorage/vstorage-giao-dien-cu.md)
 * [vMonitor](vmonitor/README.md)
