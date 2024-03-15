@@ -10,7 +10,7 @@ Welcome to VNG Cloud's user guide page. Here you can easily find useful informat
 
 {% tabs %}
 {% tab title="Infrastructure as a Service " %}
-[**vServer - SmartCloud Server System**](vserver.md)
+[**vServer - SmartCloud Server System**](vserver/)
 
 * [vServer HCM03-1A](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647923)
 
@@ -28,7 +28,7 @@ Welcome to VNG Cloud's user guide page. Here you can easily find useful informat
 
 [**vDB - Professional database management solution**](vdb.md)
 
-[**K8S - Container management with Kubernets**](vserver.md)
+[**K8S - Container management with Kubernets**](vserver/)
 
 [**vCDN: Optimal content delivery network** ](vcdn.md)
 {% endtab %}

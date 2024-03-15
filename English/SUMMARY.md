@@ -1,7 +1,10 @@
 # Table of contents
 
 * [🏴󠁧󠁢󠁥󠁮󠁧󠁿 VNG Cloud Help Center](README.md)
-* [vServer](vserver.md)
+* [vServer](vserver/README.md)
+  * [Compute (HCM03-1A)](vserver/compute-hcm03-1a/README.md)
+    * [What is vServer?](vserver/compute-hcm03-1a/what-is-vserver.md)
+  * [vMarketplace](vserver/vmarketplace.md)
 * [vStorage](vstorage.md)
 * [vCDN](vcdn.md)
 * [vMonitor](vmonitor.md)
