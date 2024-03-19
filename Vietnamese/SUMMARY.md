@@ -500,4 +500,6 @@
   * [Hướng dẫn hủy tài khoản](huong-dan-su-dung-tai-khoan/huong-dan-huy-tai-khoan.md)
   * [Hướng dẫn thay đổi số điện thoại](huong-dan-su-dung-tai-khoan/huong-dan-thay-doi-so-dien-thoai.md)
 * [Những câu hỏi thường gặp (FAQ)](nhung-cau-hoi-thuong-gap-faq/README.md)
-  * [vServer](nhung-cau-hoi-thuong-gap-faq/vserver.md)
+  * [vServer](nhung-cau-hoi-thuong-gap-faq/vserver/README.md)
+    * [\[vServer\]-\[CVE-2021-44228\] Apache Log4j2 0day being exploited](nhung-cau-hoi-thuong-gap-faq/vserver/vserver-cve-2021-44228-apache-log4j2-0day-being-exploited.md)
+  * [Storage](nhung-cau-hoi-thuong-gap-faq/storage.md)
