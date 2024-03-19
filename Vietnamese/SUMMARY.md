@@ -504,3 +504,5 @@
     * [\[vServer\]-\[CVE-2021-44228\] Apache Log4j2 0day being exploited](nhung-cau-hoi-thuong-gap-faq/vserver/vserver-cve-2021-44228-apache-log4j2-0day-being-exploited.md)
   * [Storage](nhung-cau-hoi-thuong-gap-faq/storage.md)
   * [vCDN](nhung-cau-hoi-thuong-gap-faq/vcdn.md)
+  * [vDB](nhung-cau-hoi-thuong-gap-faq/vdb.md)
+  * [NTP server](nhung-cau-hoi-thuong-gap-faq/ntp-server.md)
