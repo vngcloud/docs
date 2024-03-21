@@ -17,3 +17,5 @@ Sau khi tạo container, bạn không thể thay đổi tên của container. Đ
 5\. Chọn **Tạo.**
 
 Sau khi bạn hoàn thành 5 bước được mô tả bên trên, container đã được tạo. Tiếp tục sử dụng các tính năng mà chúng tôi cung cấp cho container, bắt đầu với [Tải lên object](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648524).
+
+<figure><img src="../../../../.gitbook/assets/Khoi_tao_container (1).gif" alt=""><figcaption></figcaption></figure>

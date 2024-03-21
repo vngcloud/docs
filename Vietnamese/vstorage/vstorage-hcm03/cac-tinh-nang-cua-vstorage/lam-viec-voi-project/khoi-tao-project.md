@@ -38,3 +38,6 @@ Quota là kích thước gói lưu trữ tối đa bạn có thể tạo. Đối
 
 Sau khi bạn hoàn thành 10 bước được mô tả bên trên, project đã được tạo. Tiếp tục sử dụng các tính năng mà chúng tôi cung cấp cho project, bắt đầu với [Khởi tạo container](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648505).
 
+
+
+<figure><img src="../../../../.gitbook/assets/khoi-tao-project_VtMlelyB.gif" alt=""><figcaption></figcaption></figure>

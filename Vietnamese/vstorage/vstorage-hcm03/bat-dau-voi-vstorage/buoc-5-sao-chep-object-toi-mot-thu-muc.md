@@ -9,3 +9,7 @@ Bạn đã thêm một object vào một container và tải object xuống. Bâ
 5. Chọn **Sao chép tại đây** để di chuyển object tới vị trí mới mà bạn mong muốn.
 
 Object đã được di chuyển tới container hoặc thư mục mà bạn mong muốn.
+
+
+
+<figure><img src="../../../.gitbook/assets/Sao_chep_object.gif" alt=""><figcaption></figcaption></figure>

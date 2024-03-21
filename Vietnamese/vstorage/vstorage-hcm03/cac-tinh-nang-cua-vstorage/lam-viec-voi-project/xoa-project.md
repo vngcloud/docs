@@ -17,3 +17,5 @@ Sau khi bạn bạn thực hiện xóa project thì project bị xóa sẽ biế
 Khi bạn thực hiện xóa project trước thời hạn lưu trữ ban đầu, chúng tôi sẽ thực hiện bồi hoàn cho bạn cũng như khi bạn khôi phục project, chúng tôi cũng sẽ tính phí khôi phục. Chi tiết cách vStorage tính phí bồi hoàn và khôi phục project, hãy xem [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).&#x20;
 
 Do hành động xóa project tiềm ẩn nhiều rủi ro nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận cũng như tạo một phiên bản dự phòng của project trước khi thực hiện xóa.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Xoa_project.gif" alt=""><figcaption></figcaption></figure>

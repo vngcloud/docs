@@ -8,3 +8,10 @@ Sau khi tạo container trong vStorage, bạn đã sẵn sàng để tải objec
 4. Sau khi kéo hoặc chọn một hay nhiều tệp tin vào vùng này. Chọn **Tải lên**.
 
 Bạn đã tải thành công object lên container của bạn.
+
+_**Video hướng dẫn:**_
+
+
+
+<figure><img src="../../../.gitbook/assets/Tai_len_tep_tin.gif" alt=""><figcaption></figcaption></figure>
+

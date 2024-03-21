@@ -17,6 +17,24 @@ Hệ thống sẽ tự động gia hạn 3 ngày trước khi dịch vụ hết 
 
 <summary>Thiết lập tính năng gia hạn tự động khi khởi tạo project</summary>
 
+1. Thực hiện các bước khởi tạo project theo hướng dẫn tại [Khởi tạo project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648428).
+2. Tại thời điểm thiết lập thông tin về project cần mua, chọn **Gia hạn tự động**.
+3. Chọn **chu kỳ gia hạn tự động**. Chúng tôi cung cấp các chu kỳ gia hạn bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng. Khi bạn thực hiện chọn chu kỳ gia hạn, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ lưu trữ mới và tổng số tiền bạn cần chi trả cho việc gia hạn **project**.
+
+Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).&#x20;
+
+Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ mới sau khi gia hạn project sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
+
+_**Video hướng dẫn:**_&#x20;
+
+<img src="../../../../.gitbook/assets/Khoi_tao_project.gif" alt="" data-size="original">
+
+</details>
+
+<details>
+
+<summary>Thiết lập tính năng gia hạn tự động trên project đã được khởi tạo trước đó</summary>
+
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 2. Chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49649654/image2023-3-6\_10-2-51.png?version=1\&modificationDate=1678345477000\&api=v2)tại **project** bạn muốn thực hiện thiết lập gia hạn tự động. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49649654/image2023-3-9\_14-4-56.png?version=1\&modificationDate=1678345498000\&api=v2).
 3. Màn hình **Bật gia hạn tự động** được hiển thị**.** Chọn **Thời hạn** gia hạn mà bạn mong muốn.&#x20;
@@ -26,13 +44,13 @@ Hệ thống sẽ tự động gia hạn 3 ngày trước khi dịch vụ hết 
 
 Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ mới sau khi gia hạn project sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
 
+<img src="../../../../.gitbook/assets/Bat_gia_han_tu_dong.gif" alt="" data-size="original">
+
 </details>
 
 <details>
 
 <summary>Gỡ bỏ tính năng gia hạn tự động trên một project đã được thiết lập gia hạn tự động trước đó</summary>
-
-
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 2. Chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49649654/image2023-3-6\_10-2-51.png?version=1\&modificationDate=1678345477000\&api=v2)tại **project** bạn muốn thực hiện tắt thiết lập gia hạn tự động. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49649654/image2023-3-9\_14-8-29.png?version=1\&modificationDate=1678345710000\&api=v2).
@@ -40,6 +58,8 @@ Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ
 4. Chọn **Đồng ý.**
 
 Sau khi bạn thực hiện thành công các bước trên, tính năng gia hạn tự động cho project đã được tắt.
+
+<img src="../../../../.gitbook/assets/Tat_gia_han_tu_dong.gif" alt="" data-size="original">
 
 </details>
 

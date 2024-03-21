@@ -24,3 +24,5 @@ Sau khi thực hiện 8 bước bên trên, bạn đã thiết lập thành côn
 Nếu bạn muốn tắt thiết lập IP range ACLs cho project của bạn, tức là mọi người dùng có quyền đều có thể truy cập vào tài nguyên mà không cần quan tâm tới địa chỉ IP, hãy lựa chọn **Tất cả IP/Subnet** khi thiết lập IP range ACLs.
 
 Sau khi thiết lập IP range ACLs, các yêu cầu S3/ HTTP (bao gồm các yêu cầu TempURL) đến project từ các IP/ Subnet không hợp lệ sẽ bị từ chối với mã lỗi trả về 403.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Su_dung_IPRange_ACLs.gif" alt=""><figcaption></figcaption></figure>

@@ -25,3 +25,5 @@ Bạn vừa thực hiện xóa một project hoặc một project hết hạn l�
 Sau khi bạn thực hiện thành công 7 bước trên, project sẽ được khôi phục với thông tin chu kỳ lưu trữ mới và được cập nhật trên thông tin chung của project mà bạn chọn.
 
 Khi project bị đưa vào Thùng rác bạn sẽ không thể tải lên/ tải xuống hoặc thực hiện các hành động tới object được nữa. Chúng tôi khuyến cáo bạn hãy gia hạn hoặc sao lưu toàn bộ dữ liệu trong project trước ngày hết hạn.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Khoi_phuc_project.gif" alt=""><figcaption></figcaption></figure>

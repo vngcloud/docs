@@ -21,3 +21,6 @@ Bên cạnh đó chúng tôi đang hỗ trợ 3 gói lưu trữ có sẵn bao g�
 
 Cách tính chi phí lưu trữ cho mỗi project được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).
 
+_**Video hướng dẫn:**_
+
+<figure><img src="../../../.gitbook/assets/Khoi_tao_project.gif" alt=""><figcaption></figcaption></figure>

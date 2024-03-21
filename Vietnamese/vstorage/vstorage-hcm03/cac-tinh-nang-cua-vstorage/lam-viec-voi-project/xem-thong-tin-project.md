@@ -18,3 +18,7 @@ Sau khi tạo project và thực hiện hành động trên project đó. Bạn 
 * **S3 key**: Cung cấp thông tin các cặp S3 key được khởi tạo cho project từ vStorage Portal cũ. Chúng tôi chỉ hỗ trợ tính năng **Khởi tạo S3 key** trên vStorage Portal cũ. Bây giờ bạn có thể khởi tạo các cặp S3 key từ hệ thống phân quyền truy cập vIAM mà VNG Cloud cung cấp. Tham khảo thêm tại: [Phân quyền truy cập](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648486).
 * **Lịch sử**: Cung cấp thông tin lịch sử tác động tới project bao gồm loại hành động, trạng thái hành động, thời gian hành động xảy ra và mô tả chi tiết hành động nếu có.&#x20;
 * **Thông tin kết nối**: Cung cấp các câu lệnh và tệp tin cấu hình để kết nối project với S3.&#x20;
+
+
+
+<figure><img src="../../../../.gitbook/assets/Xem_thong_tin_project.gif" alt=""><figcaption></figcaption></figure>

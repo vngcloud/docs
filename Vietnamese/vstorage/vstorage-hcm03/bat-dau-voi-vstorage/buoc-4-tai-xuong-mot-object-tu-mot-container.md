@@ -7,3 +7,7 @@ Sau khi bạn tải object lên container, bạn có thể xem thông tin về o
 3. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648419/image2023-3-6\_9-50-12.png?version=1\&modificationDate=1678071013000\&api=v2) hoặc chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648419/image2023-6-28\_11-45-59.png?version=1\&modificationDate=1687927559000\&api=v2)sau đó chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648419/image2023-6-28\_11-46-15.png?version=1\&modificationDate=1687927576000\&api=v2).
 
 Bạn đã tải xuống thành công object của mình.
+
+
+
+<figure><img src="../../../.gitbook/assets/Tai_xuong_object.gif" alt=""><figcaption></figcaption></figure>

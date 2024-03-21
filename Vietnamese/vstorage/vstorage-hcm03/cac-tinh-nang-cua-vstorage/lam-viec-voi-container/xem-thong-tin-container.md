@@ -19,3 +19,5 @@ Sau khi tạo container và tải lên object vào container đó. Bạn có th�
 * **IP range ACLs:** Cung cấp thông tin các địa chỉ IP/Subnet đang có quyền truy cập tới container. Để biết các sử dụng tính năng, hãy xem tại [Sử dụng tính năng IP range ACLs container](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802032).
 * **CORS**: Cung cấp thông tin các đường dẫn được phép truy cập vào tài nguyên của container. Để biết chi tiết cách sử dụng tính năng, hãy xem tại [Chia sẻ tài nguyên CORS container](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648515).
 * **Lifecycle**: Cung cấp thông tin các lifecycle được thiết lập cho container. Để biết chi tiết cách sử dụng tính năng, hãy xem tại [Sử dụng tính năng container lifecycle](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648517).
+
+<figure><img src="../../../../.gitbook/assets/Xem_thong_tin_container.gif" alt=""><figcaption></figcaption></figure>

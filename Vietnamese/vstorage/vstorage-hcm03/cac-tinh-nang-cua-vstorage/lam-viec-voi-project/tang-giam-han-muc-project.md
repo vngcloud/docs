@@ -21,3 +21,7 @@ Bạn đã khởi tạo project với lượng quota ban đầu phù hợp với
 Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí tăng thêm khi **thay đổi quota**, hãy xem [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).&#x20;
 
 Sau khi bạn thực hiện thành công 6 bước trên, giá trị tổng **quota** mới sau khi thay đổi sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
+
+
+
+<figure><img src="../../../../.gitbook/assets/Tang_giam_han_muc_project.gif" alt=""><figcaption></figcaption></figure>

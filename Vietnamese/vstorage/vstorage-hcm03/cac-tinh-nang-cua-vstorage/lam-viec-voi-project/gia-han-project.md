@@ -19,3 +19,7 @@ Bạn đã khởi tạo project với chu kỳ lưu trữ ngắn hạn. Hiện t
 Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).&#x20;
 
 Sau khi bạn thực hiện thành công 6 bước trên, chu kỳ lưu trữ mới sau khi gia hạn project sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
+
+
+
+<figure><img src="../../../../.gitbook/assets/Gia_han_project.gif" alt=""><figcaption></figcaption></figure>
