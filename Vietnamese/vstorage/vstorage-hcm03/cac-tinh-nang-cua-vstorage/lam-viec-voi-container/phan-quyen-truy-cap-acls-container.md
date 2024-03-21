@@ -7,11 +7,11 @@ Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho một hoặc
 * Đối với quyền Đọc: bạn có thể tải xuống các object từ container được cấp quyền.
 * Đối với quyền Ghi: bạn có thể tải lên, tải xuống object từ container được cấp quyền.
 
-<figure><img src="https://www.vngcloud.vn/documents/20126/1455799/vng-cloud-product-vstorage-acl-vi-01-slideshow.jpg" alt=""><figcaption></figcaption></figure>
-
 Để thiết lập phân quyền truy cập ACLs, bạn có thể thực hiện theo hướng dẫn bên dưới:&#x20;
 
-&#x20;Sử dụng vStorage Portal
+<details>
+
+<summary>Sử dụng vStorage Portal</summary>
 
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 
@@ -26,3 +26,18 @@ Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho một hoặc
 6\. Nếu bạn muốn tất cả người dùng có thể truy cập tới container với 1 quyền giống nhau, hãy chọn tương tự các bước trên trong mục **Truy cập công khai**.
 
 Sau khi bạn hoàn thành 7 bước được mô tả bên trên, bạn đã phân quyền truy cập ACLs container cho một vài tập người dùng mà bạn chọn. Nếu có việc truy cập không được phép, bạn có thể điều chỉnh thông tin truy cập của các Root user account này sang các quyền truy cập thấp hơn.
+
+<img src="../../../../.gitbook/assets/Phan_quyen_truy_cap_ACLs.gif" alt="" data-size="original">
+
+</details>
+
+<details>
+
+<summary>Sử dụng vStorage API</summary>
+
+Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung cấp API cho phép bạn tích hợp với các ứng dụng, công cụ phía người dùng của bạn với vStorage để lưu trữ dữ liệu.
+
+Để phân quyền truy cập ACLs container qua vStorage API, hãy xem [API Developers](https://docs.vngcloud.vn/display/VV/API+Developers).
+
+</details>
+

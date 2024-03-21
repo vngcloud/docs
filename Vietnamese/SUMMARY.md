@@ -260,6 +260,7 @@
         * [Chia sẻ tài nguyên CORS container](vstorage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/chia-se-tai-nguyen-cors-container.md)
         * [Xóa container](vstorage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/xoa-container.md)
         * [Sử dụng tính năng IP range ACLs container](vstorage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/su-dung-tinh-nang-ip-range-acls-container.md)
+        * [Sử dụng tính năng container lifecycle](vstorage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/su-dung-tinh-nang-container-lifecycle.md)
       * [Làm việc với directory và object](vstorage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-directory-va-object/README.md)
         * [Tổng quan object](vstorage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-directory-va-object/tong-quan-object.md)
         * [Phạm vi giới hạn object](vstorage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-directory-va-object/pham-vi-gioi-han-object.md)

@@ -4,7 +4,11 @@ CORS (Cross Origin Resource Sharing) là một cơ chế cho phép nhiều tài 
 
 Để chia sẻ tài nguyên CORS container, bạn có thể thực hiện theo hướng dẫn bên dưới:&#x20;
 
-&#x20;Sử dụng vStorage Portal
+
+
+<details>
+
+<summary> Sử dụng vStorage Portal</summary>
 
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 
@@ -15,3 +19,20 @@ CORS (Cross Origin Resource Sharing) là một cơ chế cho phép nhiều tài 
 4\. Màn hình **Thiết lập CORS** được hiển thị. Chọn Header và Value tương ứng cho Header đó. Chọn **Cập nhật**.
 
 CORS chỉ cho thiết lập theo domain xác định ví dụ [https://abc.com.vn](https://abc.com.vn/). Do đó bạn cần nhập Value là giá trị domain xác định này.
+
+<img src="../../../../.gitbook/assets/Chia_se_tai_nguyen_CORS.gif" alt="" data-size="original">
+
+</details>
+
+
+
+<details>
+
+<summary>Sử dụng vStorage API</summary>
+
+Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung cấp API cho phép bạn tích hợp với các ứng dụng, công cụ phía người dùng của bạn với vStorage để lưu trữ dữ liệu.
+
+Để chia sẻ tài nguyên CORS container qua vStorage API, hãy xem [API Developers](https://docs.vngcloud.vn/display/VV/API+Developers).
+
+</details>
+

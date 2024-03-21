@@ -4,7 +4,9 @@ vStorage hỗ trợ chế độ riêng tư (Private container) mặc định cho
 
 <figure><img src="https://www.vngcloud.vn/documents/20126/1455799/vng-cloud-product-vstorage-acl-vi-01-slideshow.jpg" alt=""><figcaption></figcaption></figure>
 
-&#x20;Sử dụng vStorage Portal
+<details>
+
+<summary>Sử dụng vStorage Portal</summary>
 
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 
@@ -15,3 +17,20 @@ vStorage hỗ trợ chế độ riêng tư (Private container) mặc định cho
 4\. Màn hình **Chuyển chế độ riêng tư** được hiển thị. Chọn **Chuyển chế độ riêng tư.**
 
 Sau khi bạn hoàn thành 5 bước được mô tả bên trên, tính năng Private container đã được bật. Quyền truy cập riêng tư được cấp cho container và object thông qua danh sách kiểm soát truy cập (ACLs). Cài đặt này hạn chế mọi người truy cập vào tất cả các object bên trong container với các quyền truy cập được chỉ định thông qua danh sách kiểm soát truy cập (ACLs).
+
+<img src="../../../../.gitbook/assets/Chuyen_che_do_rieng_tu.gif" alt="" data-size="original">
+
+</details>
+
+
+
+<details>
+
+<summary>Sử dụng vStorage API</summary>
+
+Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung cấp API cho phép bạn tích hợp với các ứng dụng, công cụ phía người dùng của bạn với vStorage để lưu trữ dữ liệu.
+
+Để chuyển chế độ riêng tư container qua vStorage API, hãy xem [API Developers](https://docs.vngcloud.vn/display/VV/API+Developers).
+
+</details>
+
