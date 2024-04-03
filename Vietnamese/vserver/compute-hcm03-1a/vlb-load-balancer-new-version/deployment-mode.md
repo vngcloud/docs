@@ -4,8 +4,10 @@ Trong môi trường điện toán đám mây của VNG Cloud, chúng tôi cung 
 
 **Tổng quan mô hình triển khai Load Balancer tại VNG Cloud như sau:**
 
-![](https://docs.vngcloud.vn/download/attachments/64553364/overview.drawio.png?version=1\&modificationDate=1693286486000\&api=v2)\
+\
 
+
+<figure><img src="https://docs.vngcloud.vn/download/attachments/64553364/overview.drawio.png?version=1&#x26;modificationDate=1693286486000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 **Model quản lý Load Balancer bao gồm các component chính như sau:**
 
@@ -26,6 +28,6 @@ Trong môi trường điện toán đám mây của VNG Cloud, chúng tôi cung 
 
 Tìm hiểu thêm về Application Load Balancer và Network Load Balancer tại đây:
 
-* [Application Load Balancer](https://docs.vngcloud.vn/display/vServer/Application+Load+Balancer)
-* [Network Load Balancer](https://docs.vngcloud.vn/display/vServer/Network+Load+Balancer)
-* [Feature Comparison](https://docs.vngcloud.vn/display/vServer/Feature+Comparison)
+* [Application Load Balancer](application-load-balancer/)
+* [Network Load Balancer](network-load-balancer/)
+* [Feature Comparison](feature-comparison.md)

@@ -19,6 +19,6 @@ VNG Cloud cung cấp trình quản lý Certificate, cho phép người dùng t�
 
 **3. Hướng dẫn tải lên Certificate**
 
-* Tham khảo hướng dẫn tải lên các loại Certificate tại [Upload a certificate](https://docs.vngcloud.vn/display/vServer/Upload+a+certificate)
+* Tham khảo hướng dẫn tải lên các loại Certificate tại [Upload a certificate](upload-a-certificate.md)
 
 \

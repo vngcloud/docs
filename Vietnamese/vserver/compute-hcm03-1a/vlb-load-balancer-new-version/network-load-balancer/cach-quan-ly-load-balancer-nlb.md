@@ -24,7 +24,7 @@ VNG cloud cung cấp giao diện trực quan trong việc quản lý Load Balanc
      * Chọn **Internet facing** nếu: Cho phép truy cập từ Internet
      * Chọn **Internal** nếu: Chỉ cho phép truy cập với mạng nội bộ
    * _**Load Balancer Package**_: Chọn gói khởi tạo phù hợp với nhu cầu và mục đích sử dụng, lưu ý rằng gói này là yếu tố chính dùng để tính chi phí khởi tạo và vận hành Load Balancer của bạn. Gói này có thể thay đổi trong quá trình sử dụng.
-   * _**Cài đặt Network**_**: Chọn Virtual Private Cloud (VPC) và Subnet** có sẵn từ danh sách VPC của bạn, trường hợp khởi tạo VPC, tham khảo hướng dẫn [Virtual Private Cloud (VPC)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039).
+   * _**Cài đặt Network**_**: Chọn Virtual Private Cloud (VPC) và Subnet** có sẵn từ danh sách VPC của bạn, trường hợp khởi tạo VPC, tham khảo hướng dẫn [Virtual Private Cloud (VPC)](../../network/virtual-private-cloud-vpc.md).
 4. **Chọn cấu hình Listener**
    * **Tên Listener:** Trường hợp người dùng không chủ động điền tên Listener, hệ thống sẽ tự động sinh ra tên Listener.
    * **Giao thức & Cổng (Protocol & Port)**
@@ -102,9 +102,9 @@ Truy cập vào Load Balancer để xem và quản lý thông tin chi tiết
 
 Tìm hiểu thêm thông tin chi tiết Load Balancer thông qua các bài viết sau:
 
-* [Listener (NLB)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553807)
-* [Pool (NLB)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553809)
-* [Monitor your load balancers](https://docs.vngcloud.vn/display/vServer/Monitor+your+load+balancers)
+* [Listener (NLB)](listener-nlb/)
+* [Pool (NLB)](pool-nlb/)
+* [Monitor your load balancers](../application-load-balancer/quan-ly-vlb.md)
 {% endhint %}
 
 ### **4. Thay đổi gói Load Balancer (Resize)** <a href="#manageloadbalancer-nlb-4.thaydoigoiloadbalancer-resize" id="manageloadbalancer-nlb-4.thaydoigoiloadbalancer-resize"></a>

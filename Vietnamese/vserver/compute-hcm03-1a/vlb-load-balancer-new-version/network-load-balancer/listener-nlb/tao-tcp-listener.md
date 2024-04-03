@@ -13,8 +13,8 @@ Sử dụng hướng dẫn này để thêm mới một TCP Listener vào một 
    * **Chọn Giao thức TCP và Port** (mặc định hiển thị Port 80 và tăng dần nếu các Port nhỏ hơn đã được sử dụng)
    * **Cấu hình Pool mặc định và hành động:** Trong trường các request đến Load Balancer mà không phù hợp với bất kỳ pool cụ thể nào, NLB sẽ chuyển hướng lưu lượng đó đến pool mặc định.&#x20;
    * **Cấu hình nâng cao:** Tham khảo thêm các hướng dẫn cấu hình nâng cao theo tính năng như bên dưới
-     * [Config timeout](https://docs.vngcloud.vn/display/vServer/Config+timeout)
-     * [Config IP whitelist to load balancer](https://docs.vngcloud.vn/display/vServer/Config+IP+whitelist+to+load+balancer)
+     * [Config timeout](../../application-load-balancer/listener/config-timeout.md)
+     * [Config IP whitelist to load balancer](../../application-load-balancer/listener/config-ip-whitelist-to-load-balancer.md)
 
 {% hint style="info" %}
 **Lưu ý**

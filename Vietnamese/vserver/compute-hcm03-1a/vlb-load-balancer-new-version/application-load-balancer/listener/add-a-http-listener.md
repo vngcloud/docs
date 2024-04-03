@@ -14,7 +14,7 @@ Sử dụng hướng dẫn này để thêm mới một HTTP Listener vào một
    * **Cấu hình request Header** tại phần cấu hình nâng cao: Mặc định điền sẵn X-Fowarded-For, X-Forwarded-Proto, X-Fowarded-Port, có thể bỏ chọn Header nếu không có nhu cầu.
    * **Cấu hình Pool mặc định và hành động:** Trong trường các request đến Listener nằm ngoài danh sách Policies được cấu hình, các request này sẽ được chuyển hướng đến Pool mặc định để xử lý.
    * **Cấu hình nâng cao:** Tham khảo thêm các hướng dẫn cấu hình nâng cao theo tính năng như bên dưới
-     * [Config timeout](https://docs.vngcloud.vn/display/vServer/Config+timeout)
-     * [Config IP whitelist to load balancer](https://docs.vngcloud.vn/display/vServer/Config+IP+whitelist+to+load+balancer)
+     * [Config timeout](config-timeout.md)
+     * [Config IP whitelist to load balancer](config-ip-whitelist-to-load-balancer.md)
 
 \

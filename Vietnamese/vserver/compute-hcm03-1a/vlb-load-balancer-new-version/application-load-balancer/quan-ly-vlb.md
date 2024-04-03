@@ -24,12 +24,12 @@ VNG cloud cung cấp giao diện trực quan trong việc quản lý Load Balanc
      * Chọn **Internet facing** nếu: Cho phép truy cập từ Internet
      * Chọn **Internal** nếu: Chỉ cho phép truy cập với mạng nội bộ
    * _**Load Balancer Package**_: Chọn gói khởi tạo phù hợp với nhu cầu và mục đích sử dụng, lưu ý rằng gói này là yếu tố chính dùng để tính chi phí khởi tạo và vận hành Load Balancer của bạn. Gói này có thể thay đổi trong quá trình sử dụng.
-   * _**Cài đặt Network**_**: Chọn Virtual Private Cloud (VPC) và Subnet** có sẵn từ danh sách VPC của bạn, trường hợp khởi tạo VPC, tham khảo hướng dẫn [Virtual Private Cloud (VPC)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039).
+   * _**Cài đặt Network**_**: Chọn Virtual Private Cloud (VPC) và Subnet** có sẵn từ danh sách VPC của bạn, trường hợp khởi tạo VPC, tham khảo hướng dẫn [Virtual Private Cloud (VPC)](../../network/virtual-private-cloud-vpc.md).
 4. **Chọn cấu hình Listener**
    * **Tên Listener:** Trường hợp người dùng không chủ động điền tên Listener, hệ thống sẽ tự động sinh ra tên Listener.
    * **Giao thức & Cổng (Protocol & Port)**
      * Trường hợp chọn Giao thức (Protocol) = **HTTP**: Người dùng cần **chọn Port** (mặc định điền sẵn Port **80**) và **Header** (mặc định điền sẵn X-Fowarded-For, X-Forwarded-Proto, X-Fowarded-Port, có thể bỏ chọn Header nếu không có nhu cầu).
-     * Trường hợp chọn Giao thức (Protocol) = **HTTPS**: Người dùng cần **chọn Port** (mặc định điền sẵn Port **443**) và **Certificate** (tham khảo hướng dẫn [Upload a certificate](https://docs.vngcloud.vn/display/vServer/Upload+a+certificate) nếu chưa có Certificate).
+     * Trường hợp chọn Giao thức (Protocol) = **HTTPS**: Người dùng cần **chọn Port** (mặc định điền sẵn Port **443**) và **Certificate** (tham khảo hướng dẫn [Upload a certificate](certificate/upload-a-certificate.md) nếu chưa có Certificate).
 5. **Chọn cấu hình Pool mặc định**
    * **Tên Pool**: Trường hợp người dùng không chủ động điền tên Pool, hệ thống sẽ tự động sinh ra tên Pool.
    * **Giao thức HTTP mặc định**
@@ -42,7 +42,7 @@ VNG cloud cung cấp giao diện trực quan trong việc quản lý Load Balanc
    * **Tab "Tóm tắt / Summary"**: Kiểm tra làn lượt các thông tin cấu hình Load Balancer, Listener, Pool và Pool Member
    * **Tab " Danh sách / Item list":** Kiểm tra thông tin Load Balancer Package và Chi phí
 8. **Hoàn tất khởi tạo: Sau khi hoàn tất việc cấu hình và kiểm tra thông tin, click nút "Tạo load Balancer / Create Load Balancer" để hoàn tất việc khởi tạo.**
-   * Đối với người dùng trả trước, bạn sẽ được điều hướng đến trang thanh toán, tại đây bạn cần cung cấp một phương thức thanh toán khả dụng để hoàn tất việc khởi tạo Application Load Balancer. Tham khảo thêm hướng dẫn [Thanh toán trực tuyến](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649313)
+   * Đối với người dùng trả trước, bạn sẽ được điều hướng đến trang thanh toán, tại đây bạn cần cung cấp một phương thức thanh toán khả dụng để hoàn tất việc khởi tạo Application Load Balancer. Tham khảo thêm hướng dẫn [Thanh toán trực tuyến](../../../../quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/thanh-toan/thanh-toan-truc-tuyen.md)
 
 **Việc khởi tạo ban đầu cho phép cấu hình một Listener và một Pool tương ứng, sau khi hoàn tất khởi tạo thành công, người dùng có thể truy cập vào chi tiết Load Balancer để thêm mới/chỉnh sửa Listener và Pool tùy ý.**
 
@@ -101,9 +101,9 @@ Thông tin
 
 Tìm hiểu thêm thông tin chi tiết Load Balancer thông qua các bài viết sau:
 
-* [Listener](https://docs.vngcloud.vn/display/vServer/Listener)
-* [Pool](https://docs.vngcloud.vn/display/vServer/Pool)
-* [Monitor your load balancers](https://docs.vngcloud.vn/display/vServer/Monitor+your+load+balancers)
+* [Listener](listener/)
+* [Pool](pool/)
+* [Monitor your load balancers](quan-ly-vlb.md)
 
 #### **4. Thay đổi gói Load Balancer (Resize)** <a href="#manageloadbalancer-4.thaydoigoiloadbalancer-resize" id="manageloadbalancer-4.thaydoigoiloadbalancer-resize"></a>
 

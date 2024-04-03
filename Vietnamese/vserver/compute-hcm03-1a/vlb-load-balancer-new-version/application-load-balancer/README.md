@@ -18,14 +18,4 @@ Nhờ những tính năng độc đáo này, Application Load Balancer đóng m�
 * **Monitor Loadbalance**r: Dễ dàng giám sát sức khỏe, lịch sử truy cập của client & lịch sử chỉnh sửa Loadbalancer.
 * **Terraform**: Hỗ trợ khởi tạo và quản lý Load Balancer nhanh chóng và hiệu quả với Terraform
 
-#### Chủ đề <a href="#applicationloadbalancer-chude" id="applicationloadbalancer-chude"></a>
-
-Tìm hiểu thêm về Application Load Balancer tại đây
-
-* [How it works (ALB)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553850)
-* [Getting Started](https://docs.vngcloud.vn/display/vServer/Getting+Started)
-* [Manage Load balancer](https://docs.vngcloud.vn/display/vServer/Manage+Load+balancer)
-* [Listener](https://docs.vngcloud.vn/display/vServer/Listener)
-* [Certificate](https://docs.vngcloud.vn/display/vServer/Certificate)
-* [Pool](https://docs.vngcloud.vn/display/vServer/Pool)
-* [Feature Comparison](https://docs.vngcloud.vn/display/vServer/Feature+Comparison)
+#### &#x20;<a href="#applicationloadbalancer-chude" id="applicationloadbalancer-chude"></a>

@@ -4,10 +4,10 @@ Trong phần này, chúng ta sẽ tìm hiểu về cách sử dụng và quản 
 
 #### Trước khi bắt đầu <a href="#gettingstarted-truockhibatdau" id="gettingstarted-truockhibatdau"></a>
 
-* Để bắt đầu sử dụng Application Load Balancer, bạn cần có ít nhất **một Virtal Private Cloud (VPC)**, tham khảo hướng dẫn [Virtual Private Cloud (VPC)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039).
-* Tìm hiểu cách **truy cập VNG Cloud Portal** với Root User Account hoặc IAM User Account, tham khảo hướng dẫn [How to Login into VNG Cloud](https://docs.vngcloud.vn/display/ONVINA/How+to+Login+into+VNG+Cloud).
-* Trong trường hợp người dùng muốn bắt đầu với IAM User Account, tham khảo hướng dẫn [IAM for vServer](https://docs.vngcloud.vn/display/ONVINA/IAM+for+vServer).
-* Đối với Application Load Balancer, yêu cầu có ít nhất một chứng chỉ TLS/SSL khi **cấu hình HTTPS Listener**, tham khảo hướng dẫn [Upload a certificate](https://docs.vngcloud.vn/display/vServer/Upload+a+certificate).&#x20;
+* Để bắt đầu sử dụng Application Load Balancer, bạn cần có ít nhất **một Virtal Private Cloud (VPC)**, tham khảo hướng dẫn [Virtual Private Cloud (VPC)](../../network/virtual-private-cloud-vpc.md).
+* Tìm hiểu cách **truy cập VNG Cloud Portal** với Root User Account hoặc IAM User Account, tham khảo hướng dẫn [How to Login into VNG Cloud](../../../../identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md).
+* Trong trường hợp người dùng muốn bắt đầu với IAM User Account, tham khảo hướng dẫn [IAM for vServer](../../../../identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vserver.md).
+* Đối với Application Load Balancer, yêu cầu có ít nhất một chứng chỉ TLS/SSL khi **cấu hình HTTPS Listener**, tham khảo hướng dẫn [Upload a certificate](certificate/upload-a-certificate.md).&#x20;
 
 #### 1. Truy cập vLB Console <a href="#gettingstarted-1.truycapvlbconsole" id="gettingstarted-1.truycapvlbconsole"></a>
 
@@ -33,12 +33,12 @@ vLB Console là giao diện người dùng dựa trên web, cho phép bạn qu�
      * Chọn **Internet facing** nếu: Cho phép truy cập từ Internet
      * Chọn **Internal** nếu: Chỉ cho phép truy cập với mạng nội bộ
    * _**Load Balancer Package**_: Chọn gói khởi tạo phù hợp với nhu cầu và mục đích sử dụng, lưu ý rằng gói này là yếu tố chính dùng để tính chi phí khởi tạo và vận hành Load Balancer của bạn
-   * _**Cài đặt Network**_**: Chọn Virtual Private Cloud (VPC) và Subnet** có sẵn từ danh sách VPC của bạn, trường hợp chưa khởi tạo VPC, tham khảo hướng dẫn [Virtual Private Cloud (VPC)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039).
+   * _**Cài đặt Network**_**: Chọn Virtual Private Cloud (VPC) và Subnet** có sẵn từ danh sách VPC của bạn, trường hợp chưa khởi tạo VPC, tham khảo hướng dẫn [Virtual Private Cloud (VPC)](../../network/virtual-private-cloud-vpc.md).
 3. **Chọn cấu hình Listener**
    * **Tên Listener:** Trường hợp người dùng không chủ động điền tên Listener, hệ thống sẽ tự động sinh ra tên Listener.
    * **Giao thức & Cổng (Protocol & Port)**
      * Trường hợp chọn Giao thức (Protocol) = **HTTP**: Người dùng cần **chọn Port** (mặc định điền sẵn Port **80**) và **Header** (mặc định điền sẵn X-Fowarded-For, X-Forwarded-Proto, X-Fowarded-Port, có thể bỏ chọn Header nếu không có nhu cầu).
-     * Trường hợp chọn Giao thức (Protocol) = **HTTPS**: Người dùng cần **chọn Port** (mặc định điền sẵn Port **443**) và **Certificate** (tham khảo hướng dẫn [Upload a certificate](https://docs.vngcloud.vn/display/vServer/Upload+a+certificate) nếu chưa có Certificate).
+     * Trường hợp chọn Giao thức (Protocol) = **HTTPS**: Người dùng cần **chọn Port** (mặc định điền sẵn Port **443**) và **Certificate** (tham khảo hướng dẫn [Upload a certificate](certificate/upload-a-certificate.md) nếu chưa có Certificate).
 4. **Chọn cấu hình Pool mặc định**
    * **Tên Pool**: Trường hợp người dùng không chủ động điền tên Pool, hệ thống sẽ tự động sinh ra tên Pool.
    * **Giao thức HTTP mặc định**
@@ -51,7 +51,7 @@ vLB Console là giao diện người dùng dựa trên web, cho phép bạn qu�
    * **Tab "Tóm tắt / Summary"**: Kiểm tra làn lượt các thông tin cấu hình Load Balancer, Listener, Pool và Pool Member
    * **Tab " Danh sách / Item list":** Kiểm tra thông tin Load Balancer Package và Chi phí
 7. **Hoàn tất khởi tạo: Sau khi hoàn tất việc cấu hình và kiểm tra thông tin, click nút "Tạo load Balancer / Create Load Balancer" để hoàn tất việc khởi tạo.**
-   * Đối với người dùng trả trước, bạn sẽ được điều hướng đến trang thanh toán, tại đây bạn cần cung cấp một phương thức thanh toán khả dụng để hoàn tất việc khởi tạo Application Load Balancer. Tham khảo thêm hướng dẫn [Thanh toán trực tuyến](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649313)
+   * Đối với người dùng trả trước, bạn sẽ được điều hướng đến trang thanh toán, tại đây bạn cần cung cấp một phương thức thanh toán khả dụng để hoàn tất việc khởi tạo Application Load Balancer. Tham khảo thêm hướng dẫn [Thanh toán trực tuyến](../../../../quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/thanh-toan/thanh-toan-truc-tuyen.md)
 
 #### 3. Quan sát và kiểm tra ALB <a href="#gettingstarted-3.quansatvakiemtraalb" id="gettingstarted-3.quansatvakiemtraalb"></a>
 
@@ -62,10 +62,3 @@ Trên đây là các hướng dẫn cơ bản trong việc khởi tạo Applicat
 
 
 
-Chủ đề liên quan
-
-* [Manage Load balancer](https://docs.vngcloud.vn/display/vServer/Manage+Load+balancer)
-* [Listener](https://docs.vngcloud.vn/display/vServer/Listener)
-* [Pool](https://docs.vngcloud.vn/display/vServer/Pool)
-* [Certificate](https://docs.vngcloud.vn/display/vServer/Certificate)
-* [Monitor your load balancers](https://docs.vngcloud.vn/display/vServer/Monitor+your+load+balancers)

@@ -21,8 +21,8 @@ Tóm lại, việc sử dụng PV và PVC trong Kubernetes giúp tách biệt d�
 
 #### Chủ đề <a href="#persistentvolume-pv-vapersistentvolumeclaim-pvc-voivngcloud-chude" id="persistentvolume-pv-vapersistentvolumeclaim-pvc-voivngcloud-chude"></a>
 
-* [Tạo PersistentVolume(PV) và PersistentVolumeClaim(PVC)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804471\&src=contextnavpagetreemode)
-* [Sử dụng PersistentVolumeClaim](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804492\&src=contextnavpagetreemode)
-* [Xóa PersistentVolume và PersistentVolumeClaim](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804502\&src=contextnavpagetreemode)
+* [Tạo PersistentVolume(PV) và PersistentVolumeClaim(PVC)](tao-persistentvolume-pv-va-persistentvolumeclaim-pvc.md)
+* [Sử dụng PersistentVolumeClaim](su-dung-persistentvolumeclaim.md)
+* [Xóa PersistentVolume và PersistentVolumeClaim](xoa-persistentvolume-va-persistentvolumeclaim.md)
 
 \

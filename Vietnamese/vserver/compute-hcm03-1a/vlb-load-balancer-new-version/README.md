@@ -64,11 +64,11 @@ Cùng tìm hiểu thêm về cách hoạt động của như các hướng dẫn
 
 Chủ đề liên quan
 
-* [Deployment Mode](https://docs.vngcloud.vn/display/vServer/Deployment+Mode)
-* [Feature Comparison](https://docs.vngcloud.vn/display/vServer/Feature+Comparison)
-* [Application Load Balancer](https://docs.vngcloud.vn/display/vServer/Application+Load+Balancer)
-* [Network Load Balancer](https://docs.vngcloud.vn/display/vServer/Network+Load+Balancer)
-* [Monitor your load balancers](https://docs.vngcloud.vn/display/vServer/Monitor+your+load+balancers)
+* [Deployment Mode](deployment-mode.md)
+* [Feature Comparison](feature-comparison.md)
+* [Application Load Balancer](application-load-balancer/)
+* [Network Load Balancer](network-load-balancer/)
+* [Monitor your load balancers](giam-sat-hoat-dong-lb/)
 
 \
 

@@ -10,13 +10,13 @@ Listener trong Load Balancer là một phần quan trọng của quá trình đi
 
 #### Các tính năng chính <a href="#listener-cactinhnangchinh" id="listener-cactinhnangchinh"></a>
 
-* [Add a HTTP listener](https://docs.vngcloud.vn/display/vServer/Add+a+HTTP+listener)
-* [Add a HTTPS listener](https://docs.vngcloud.vn/display/vServer/Add+a+HTTPS+listener)
-* [Update & Delete a Listener](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553571)
-* [Listener Policies](https://docs.vngcloud.vn/display/vServer/Listener+Policies)
-* [Client Certificate Authentication](https://docs.vngcloud.vn/display/vServer/Client+Certificate+Authentication)
-* [Config IP whitelist to load balancer](https://docs.vngcloud.vn/display/vServer/Config+IP+whitelist+to+load+balancer)
-* [Config timeout](https://docs.vngcloud.vn/display/vServer/Config+timeout)
+* [Add a HTTP listener](add-a-http-listener.md)
+* [Add a HTTPS listener](add-a-https-listener.md)
+* [Update & Delete a Listener](update-and-delete-a-listener.md)
+* [Listener Policies](listener-policies.md)
+* [Client Certificate Authentication](client-certificate-authentication.md)
+* [Config IP whitelist to load balancer](config-ip-whitelist-to-load-balancer.md)
+* [Config timeout](config-timeout.md)
 
 \
 

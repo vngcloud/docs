@@ -14,12 +14,12 @@ Sử dụng hướng dẫn này để thay đổi thông tin/xóa Listener trong
 5. **Nhấn vào biểu tượng Edit ở hàng Listener cần chỉnh sửa tại mục danh sách Listener**
 6. **Một cửa sổ giao diện chỉnh sửa xuất hiện, người dùng có thể chỉnh sửa các thông tin sau:**
    * **Chỉnh sửa Request Headers**
-   * **Bật/Tắt tính năng Client Certificate Authenticate (đối với HTTPS Listener)**: Tham khảo thêm tính năng [Client Certificate Authentication](https://docs.vngcloud.vn/display/vServer/Client+Certificate+Authentication)
+   * **Bật/Tắt tính năng Client Certificate Authenticate (đối với HTTPS Listener)**: Tham khảo thêm tính năng [Client Certificate Authentication](client-certificate-authentication.md)
    * **Thay đổi Certificate mặc định (đối với HTTPS Listener)**
    * **Thay đổi Pool mặc định:** Trong trường các request đến Listener nằm ngoài danh sách Policies được cấu hình, các request này sẽ được chuyển hướng đến Pool mặc định để xử lý.
    * **Thay đổi cấu hình nâng cao:** Tham khảo thêm các hướng dẫn cấu hình nâng cao theo tính năng như bên dưới
-     * [Config timeout](https://docs.vngcloud.vn/display/vServer/Config+timeout)
-     * [Config IP whitelist to load balancer](https://docs.vngcloud.vn/display/vServer/Config+IP+whitelist+to+load+balancer)
+     * [Config timeout](config-timeout.md)
+     * [Config IP whitelist to load balancer](config-ip-whitelist-to-load-balancer.md)
 7. Nhấn nút "Lưu" để hoàn tất chỉnh sửa
 
 **Xóa Listener**

@@ -11,11 +11,11 @@ Sử dụng hướng dẫn này để thêm mới/cập nhật một Pool vào m
 * **Tại cửa sổ thêm mới, cấu hình các thông tin như:**
   * **Tên Pool:** Lưu ý rằng tên Pool không thể thay đổi sau khi khởi tạo
   * **Giao thức HTTP**
-  * **Chọn thuật toán cân bằng tải:** Tham khảo thêm các thuật toán cân bằng tải [Pool's algorithm](https://docs.vngcloud.vn/display/vServer/Pool's+algorithm)
-  * **Enable/Bật Stick Session:** Tham khảo thêm tại [Enable sticky session](https://docs.vngcloud.vn/display/vServer/Enable+sticky+session)
+  * **Chọn thuật toán cân bằng tải:** Tham khảo thêm các thuật toán cân bằng tải [Pool's algorithm](pools-algorithm.md)
+  * **Enable/Bật Stick Session:** Tham khảo thêm tại [Enable sticky session](enable-sticky-session.md)
   * **Enable/Bật TLS Encryption:** Tham khảo thêm tại [Enable TLS encryption](https://docs.vngcloud.vn/display/vServer/Enable+TLS+encryption)
-  * **Cài đặt Health Check:** Tham khảo hướng dẫn cài đặt Health Check giao thức TCP/HTTP tại [Config health check setting](https://docs.vngcloud.vn/display/vServer/Config+health+check+setting)
-  * **Thêm Pool Member:** Tham khảo hướng dẫn [Attach pool members](https://docs.vngcloud.vn/display/vServer/Attach+pool+members)
+  * **Cài đặt Health Check:** Tham khảo hướng dẫn cài đặt Health Check giao thức TCP/HTTP tại [Config health check setting](config-health-check-setting.md)
+  * **Thêm Pool Member:** Tham khảo hướng dẫn [Attach pool members](pool-members/attach-pool-members.md)
 * **Nhấn nút "Thêm" tại góc dưới bên phải của cửa sổ thêm mới để hoàn tất việc thêm Pool**
 
 ### 2. Cách cập nhật thông tin Pool <a href="#add-and-updateapool-2.cachcapnhatthongtinpool" id="add-and-updateapool-2.cachcapnhatthongtinpool"></a>
@@ -29,12 +29,6 @@ Sử dụng hướng dẫn này để thêm mới/cập nhật một Pool vào m
   * **Cấu hình health check nâng cao**
 * **Nhấn nút "Lưu / Save" tại góc dưới bên phải của cửa sổ chỉnh sửa để hoàn tất việc cập nhập Pool**
 
-#### Chủ đề liên quan <a href="#add-and-updateapool-3.chudelienquan" id="add-and-updateapool-3.chudelienquan"></a>
 
-* [Pool's algorithm](https://docs.vngcloud.vn/display/vServer/Pool's+algorithm)
-* [Enable sticky session](https://docs.vngcloud.vn/display/vServer/Enable+sticky+session)
-* [Enable TLS encryption](https://docs.vngcloud.vn/display/vServer/Enable+TLS+encryption)
-* [Config health check setting](https://docs.vngcloud.vn/display/vServer/Config+health+check+setting)
-* [Attach pool members](https://docs.vngcloud.vn/display/vServer/Attach+pool+members)
 
 \

@@ -4,7 +4,7 @@ Giám sát hoạt động (monitoring) là một nhu cầu bắt buộc đối v
 
 **vMonitor Platform là gì?**
 
-**vMonitor Platform** là một dịch vụ Monitoring as a Service giúp thu thập các chỉ số sức khỏe **(metric)**, bản ghi hoạt động **(log)** của các resource trên VNG Cloud (hoặc ngoài VNG Cloud). Bên cạnh đó, bạn có thể vẽ các dashboard trực quan, thiết lập cảnh báo (alarm) và gửi thông báo (notification) khi xảy ra sự cố. Chi tiết về dịch vụ này bạn có thể tham khảo tại: [vMonitor Platform](https://docs.vngcloud.vn/display/ONVINA/vMonitor+Platform).
+**vMonitor Platform** là một dịch vụ Monitoring as a Service giúp thu thập các chỉ số sức khỏe **(metric)**, bản ghi hoạt động **(log)** của các resource trên VNG Cloud (hoặc ngoài VNG Cloud). Bên cạnh đó, bạn có thể vẽ các dashboard trực quan, thiết lập cảnh báo (alarm) và gửi thông báo (notification) khi xảy ra sự cố. Chi tiết về dịch vụ này bạn có thể tham khảo tại: [vMonitor Platform](../../../../vmonitor/).
 
 Để bắt đầu sử dụng, bạn truy cập vMonitor Platform, mục Infrastructure List:
 

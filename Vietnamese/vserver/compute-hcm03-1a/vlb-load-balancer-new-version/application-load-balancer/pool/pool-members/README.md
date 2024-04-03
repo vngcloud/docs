@@ -24,8 +24,6 @@ Pool Member là thành viên trong một nhóm máy chủ (Pool) trên Load Bala
 
 Nhìn chung, cơ chế này cho phép bạn tùy chỉnh cách Load Balancer phân phối lưu lượng truy cập giữa các Member trong một Pool. Bằng cách sử dụng trọng số, bạn có thể cân nhắc sự phân phối của lưu lượng. Đồng thời, vai trò Sao lưu giúp đảm bảo tính khả dụng và độ tin cậy của hệ thống khi Member Chính gặp sự cố.
 
-#### Các chủ đề liên quan <a href="#poolmembers-cacchudelienquan" id="poolmembers-cacchudelienquan"></a>
-
-* [Attach pool members](https://docs.vngcloud.vn/display/vServer/Attach+pool+members)
+#### &#x20;<a href="#poolmembers-cacchudelienquan" id="poolmembers-cacchudelienquan"></a>
 
 \

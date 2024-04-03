@@ -8,12 +8,3 @@ Listener trong Load Balancer là một phần quan trọng của quá trình đi
 * Dựa trên các cài đặt cấu hình, Listener định tuyến lưu lượng đến các máy chủ backend thích hợp.
 * Thường sử dụng các thông tin như cổng và giao thức để xác định cách định tuyến.
 
-#### Các tính năng chính <a href="#listener-nlb-cactinhnangchinh" id="listener-nlb-cactinhnangchinh"></a>
-
-* [Add a TCP Listener](https://docs.vngcloud.vn/display/vServer/Add+a+TCP+Listener)
-* [Add a UDP Listener](https://docs.vngcloud.vn/display/vServer/Add+a+UDP+Listener)
-* [Update & Delete Listener (NLB)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553819)
-* [Config IP Whitelist to Load Balancer (NLB)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553821)
-* [Config timeout (NLB)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553823)
-
-\

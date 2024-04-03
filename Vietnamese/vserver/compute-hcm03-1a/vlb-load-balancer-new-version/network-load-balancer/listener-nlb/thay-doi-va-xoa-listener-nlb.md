@@ -11,8 +11,8 @@ Sử dụng hướng dẫn này để thay đổi thông tin/xóa Listener trong
 5. **Một cửa sổ giao diện chỉnh sửa xuất hiện, người dùng có thể chỉnh sửa các thông tin sau:**
    * **Thay đổi Pool mặc định:** Trong trường các request đến Load Balancer mà không phù hợp với bất kỳ pool cụ thể nào, NLB sẽ chuyển hướng lưu lượng đó đến pool mặc định.
    * **Thay đổi cấu hình nâng cao:** Tham khảo thêm các hướng dẫn cấu hình nâng cao theo tính năng như bên dưới
-     * [Config timeout](https://docs.vngcloud.vn/display/vServer/Config+timeout)
-     * [Config IP whitelist to load balancer](https://docs.vngcloud.vn/display/vServer/Config+IP+whitelist+to+load+balancer)
+     * [Config timeout](../../application-load-balancer/listener/config-timeout.md)
+     * [Config IP whitelist to load balancer](../../application-load-balancer/listener/config-ip-whitelist-to-load-balancer.md)
 6. **Nhấn nút "Lưu" để hoàn tất chỉnh sửa**
 
 #### Xóa Listener <a href="#update-and-deletelistener-nlb-xoalistener" id="update-and-deletelistener-nlb-xoalistener"></a>

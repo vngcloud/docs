@@ -13,8 +13,8 @@ Sử dụng hướng dẫn này để thêm mới một UDP Listener vào một 
    * **Chọn Giao thức UDP và Port** (mặc định hiển thị Port 53 và tăng dần nếu các Port nhỏ hơn đã được sử dụng)
    * **Cấu hình Pool mặc định và hành động:** Trong trường các request đến Load Balancer mà không phù hợp với bất kỳ pool cụ thể nào, NLB sẽ chuyển hướng lưu lượng đó đến pool mặc định.&#x20;
    * **Cấu hình nâng cao:** Tham khảo thêm các hướng dẫn cấu hình nâng cao theo tính năng như bên dưới
-     * [Config timeout](https://docs.vngcloud.vn/display/vServer/Config+timeout)
-     * [Config IP whitelist to load balancer](https://docs.vngcloud.vn/display/vServer/Config+IP+whitelist+to+load+balancer)
+     * [Config timeout](../../application-load-balancer/listener/config-timeout.md)
+     * [Config IP whitelist to load balancer](../../application-load-balancer/listener/config-ip-whitelist-to-load-balancer.md)
 
 {% hint style="info" %}
 **Lưu ý**
@@ -22,6 +22,3 @@ Sử dụng hướng dẫn này để thêm mới một UDP Listener vào một 
 Lưu ý rằng bạn chỉ có thể chọn Pool với giao thức UDP để chỉ định làm Pool mặc định cho UDP Listener
 {% endhint %}
 
-
-
-\

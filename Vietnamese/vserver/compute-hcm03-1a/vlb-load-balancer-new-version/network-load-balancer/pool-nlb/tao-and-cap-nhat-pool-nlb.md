@@ -11,8 +11,8 @@ Sử dụng hướng dẫn này để thêm mới/cập nhật một Pool vào m
 5. **Tại cửa sổ thêm mới, cấu hình các thông tin như:**
    * **Tên Pool:** Lưu ý rằng tên Pool không thể thay đổi sau khi khởi tạo
    * **Giao thức: TCP / Proxy / UDP**
-   * **Chọn thuật toán cân bằng tải:** Tham khảo thêm các thuật toán cân bằng tải [Pool's algorithm (NLB)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553887)
-   * **Cài đặt Health Check:** Tham khảo hướng dẫn cài đặt Health Check NLB tại [Config health check setting (NLB)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553885)
+   * **Chọn thuật toán cân bằng tải:** Tham khảo thêm các thuật toán cân bằng tải [Pool's algorithm (NLB)](../../application-load-balancer/pool/pools-algorithm.md)
+   * **Cài đặt Health Check:** Tham khảo hướng dẫn cài đặt Health Check NLB tại [Config health check setting (NLB)](../../application-load-balancer/pool/config-health-check-setting.md)
    * **Thêm Pool Member:** Tham khảo hướng dẫn [Attach Pool Member (NLB)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553815)
 6. **Nhấn nút "Thêm" tại góc dưới bên phải của cửa sổ thêm mới để hoàn tất việc thêm Pool**
 
@@ -26,9 +26,3 @@ Sử dụng hướng dẫn này để thêm mới/cập nhật một Pool vào m
    * **Thuật toán cân bằng tải**
    * **Cấu hình health check nâng cao**
 6. **Nhấn nút "Lưu / Save" tại góc dưới bên phải của cửa sổ chỉnh sửa để hoàn tất việc cập nhập Pool**
-
-#### 3. Chủ đề liên quan <a href="#add-and-updateapool-nlb-3.chudelienquan" id="add-and-updateapool-nlb-3.chudelienquan"></a>
-
-* [Pool's algorithm (NLB)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553887)
-* [Config health check setting (NLB)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553885)
-* [Attach Pool Member (NLB)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553815)
