@@ -6,7 +6,6 @@ Cho phép xuất báo cáo từng CDN hoặc tất cả theo khung thời gian �
 
 Truy cập vào mục Report trên hệ thống Portal
 
-\
 
 
 &#x20;        &#x20;

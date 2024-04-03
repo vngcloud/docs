@@ -12,14 +12,14 @@ Dịch vụ Web Accelerator cache tất cả các đối tượng đi qua nó kh
 
 #### **Tính Năng Dịch Vụ** <a href="#webaccelerator-tinhnangdichvu" id="webaccelerator-tinhnangdichvu"></a>
 
-* Hỗ trợ [CNAME](https://docs.vngcloud.vn/display/ONVINA/CNAME).
-* Hỗ trở tùy chỉnh [Origin](https://docs.vngcloud.vn/display/ONVINA/Origin).
-* Hỗ trợ [tối ưu hóa kích thước file thiết bị đầu cuối](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045484).
-* Hỗ trợ chế độ bảo mật [HSTS](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045496).
-* Hỗ trợ tùy chỉnh các [tính năng cache](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045500).
-* Hỗ trợ [tự động redirect từ HTTP sang HTTPS](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045505).
-* Hỗ trợ [đổi các link HTTP sang HTTPS trong source code](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045508).
-* Hỗ trợ [chỉnh sửa CDN đã tạo](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045511).
+* Hỗ trợ [CNAME](../chi-tiet-tinh-nang/cname.md).
+* Hỗ trở tùy chỉnh [Origin](../chi-tiet-tinh-nang/origin.md).
+* Hỗ trợ [tối ưu hóa kích thước file thiết bị đầu cuối](../chi-tiet-tinh-nang/toi-uu-hoa-kich-thuoc-file-thiet-bi-dau-cuoi.md).
+* Hỗ trợ chế độ bảo mật [HSTS](../chi-tiet-tinh-nang/tinh-nang-bao-mat-hsts.md).
+* Hỗ trợ tùy chỉnh các [tính năng cache](../chi-tiet-tinh-nang/tuy-chinh-cac-tinh-nang-cache.md).
+* Hỗ trợ [tự động redirect từ HTTP sang HTTPS](../chi-tiet-tinh-nang/tu-dong-redirect-tu-http-sang-https.md).
+* Hỗ trợ [đổi các link HTTP sang HTTPS trong source code](../chi-tiet-tinh-nang/chuyen-doi-cac-link-http-sang-https-trong-source-code.md).
+* Hỗ trợ [chỉnh sửa CDN đã tạo](../chi-tiet-tinh-nang/chinh-sua-cdn-da-tao.md).
 
 ***
 

@@ -32,14 +32,14 @@ Dịch vụ VOD của VNG Cloud giúp doanh nghiệp:
 
 #### **Tính Năng Dịch Vụ** <a href="#videoondemandstreaming-tinhnangdichvu" id="videoondemandstreaming-tinhnangdichvu"></a>
 
-* Hỗ trợ kết nối trực tiếp đến origin là Object Storage thuộc chuẩn [AWS S3](https://docs.vngcloud.vn/display/ONVINA/Object+Storage+S3).
-* Tùy chỉnh [cơ chế caching](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045500) phù hợp với loại nội dung: Caching level.
-* Hỗ trợ [Origin](https://docs.vngcloud.vn/display/ONVINA/Origin) khi tạo CDN.
-* Hỗ trợ [tùy chọn HTTPS](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045514).
-* [Hỗ trợ các tính năng bảo mật link đầu ra](https://docs.vngcloud.vn/display/ONVINA/Security+Link):
-* Tùy chỉnh [thời gian cache](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045467).
-* Hỗ trợ tự động [redirect từ HTTP sang HTTPS](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045505).
-* Hỗ trợ cơ chế “nhà phát triển” ([Development Mode](https://docs.vngcloud.vn/display/ONVINA/Development+Mode))
+* Hỗ trợ kết nối trực tiếp đến origin là Object Storage thuộc chuẩn [AWS S3](../chi-tiet-tinh-nang/object-storage-s3.md).
+* Tùy chỉnh [cơ chế caching](../chi-tiet-tinh-nang/tuy-chinh-cac-tinh-nang-cache.md) phù hợp với loại nội dung: Caching level.
+* Hỗ trợ [Origin](../chi-tiet-tinh-nang/origin.md) khi tạo CDN.
+* Hỗ trợ [tùy chọn HTTPS](../chi-tiet-tinh-nang/tuy-chon-https-o-origin.md).
+* [Hỗ trợ các tính năng bảo mật link đầu ra](../chi-tiet-tinh-nang/security-link.md):
+* Tùy chỉnh [thời gian cache](../chi-tiet-tinh-nang/thoi-gian-cache.md).
+* Hỗ trợ tự động [redirect từ HTTP sang HTTPS](../chi-tiet-tinh-nang/tu-dong-redirect-tu-http-sang-https.md).
+* Hỗ trợ cơ chế “nhà phát triển” ([Development Mode](../chi-tiet-tinh-nang/development-mode.md))
 * Multi Audio Selection: tính năng hỗ trợ tách Audio trong file MP4 (trong trường hợp có nhiều định dạng Audio trong file), tính năng này được hỗ trợ song song cùng với tính năng Adaptive bitrate bằng file smil. Cú pháp link đầu ra tương tự như tính năng Adaptive Bitrate
 * HLS (smil ABR): https:// \<CDN Domain>/<Đường dẫn tới file smil trên VNGCloud Storage/Origin >/index.m3u8.
 
@@ -62,7 +62,7 @@ Dịch vụ VOD của VNG Cloud giúp doanh nghiệp:
   * MP4 (vCDN phục vụ trực tiếp file mp4 gốc từ origin cho end-user).
 * Bước 5: Thời gian "băm" của các file "ts" với loại dịch vụ VoD là CDN Packaging.
 * Tùy chọn các tính năng dịch vụ của VOD
-* Tùy theo người dùng yêu cầu nhập thông tin [chính sách rule cơ bản](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045518) hoặc [chính sách rule nâng cao](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045523) cho CDN.
+* Tùy theo người dùng yêu cầu nhập thông tin [chính sách rule cơ bản](../chi-tiet-tinh-nang/chinh-sach-rule-co-ban-pagerule.md) hoặc chính sách rule nâng cao cho CDN.
 * Khi điền các thông tin đúng và đủ thì nhấn button Submit ở cuối cùng giao diện đợi khoản 5 phút cho hệ thống cái đặt CDN cho người dùng.
 * Người dùng có thể truy cập CDN qua vCDN Domain khi đã tạo CDN xong.
 

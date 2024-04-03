@@ -4,4 +4,6 @@ Hệ thống phân quyền thứ cấp. Khách hàng có thể ủy quyền qu�
 
 Quyền hạn được cấp phát có thể bao gồm Full Control / Read Only / Access Deny (mặc định) lên từng loại đối tượng cụ thể trên hệ thống.
 
-&#x20;    ![](https://docs.vngcloud.vn/download/attachments/36045596/image2021-11-22\_12-48-53.png?version=1\&modificationDate=1637560124000\&api=v2)
+&#x20;   &#x20;
+
+<figure><img src="https://docs.vngcloud.vn/download/attachments/36045596/image2021-11-22_12-48-53.png?version=1&#x26;modificationDate=1637560124000&#x26;api=v2" alt=""><figcaption></figcaption></figure>

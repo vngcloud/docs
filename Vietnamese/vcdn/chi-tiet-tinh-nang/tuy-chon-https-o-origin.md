@@ -1,6 +1,6 @@
 # Tùy Chọn HTTPS Ở ORIGIN
 
-ỗ trợ tùy chọn HTTPS, chọn Use SSL
+Hỗ trợ tùy chọn HTTPS, chọn Use SSL
 
 &#x20;  &#x20;
 

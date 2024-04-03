@@ -6,7 +6,7 @@ Dịch vụ phát nội dung trực tiếp như sự kiện, chương trình tru
 
 #### **Cơ Chế Phân Phối Dữ Liệu** <a href="#livestreaming-cochephanphoidulieu" id="livestreaming-cochephanphoidulieu"></a>
 
-Sử dụng phương pháp [PU](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045436)[LL](https://docs.vngcloud.vn/display/ONVINA/Live+Streaming#\_Ph%C6%B0%C6%A1ng\_ph%C3%A1p\_PULL), [PUS](https://docs.vngcloud.vn/display/ONVINA/Live+Streaming#\_Ph%C6%B0%C6%A1ng\_ph%C3%A1p\_PUSH)[H](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045441) chọn tín hiệu đầu vào và tín hiểu đầu ra, đảm bào đường truyền tốt nhất, ổn định nhất, nhiều điểm truy cấp nhất cho dịch vụ live.
+Sử dụng phương pháp [PU](../tong-quan/co-che-phan-phoi-du-lieu/phuong-phap-pull.md)[LL](https://docs.vngcloud.vn/display/ONVINA/Live+Streaming#\_Ph%C6%B0%C6%A1ng\_ph%C3%A1p\_PULL), [PUS](../tong-quan/co-che-phan-phoi-du-lieu/phuong-phap-push.md)[H](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045441) chọn tín hiệu đầu vào và tín hiểu đầu ra, đảm bào đường truyền tốt nhất, ổn định nhất, nhiều điểm truy cấp nhất cho dịch vụ live.
 
 ***
 
@@ -15,12 +15,12 @@ Sử dụng phương pháp [PU](https://docs.vngcloud.vn/pages/viewpage.action?p
 <figure><img src="https://docs.vngcloud.vn/download/attachments/36045684/image2021-11-18_8-52-43.png?version=1&#x26;modificationDate=1637200355000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 * Tùy chọn thời chunk size nhằm tối ưu việc caching và phân phối nội dung
-* Hỗ trợ multi [Origin](https://docs.vngcloud.vn/display/ONVINA/Origin) khi tạo CDN.
-* Hỗ trợ tùy chọn[ HTTPS](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045514) khi kết nối đến Origin.
-* [Hỗ trợ các tính năng bảo mật link đầu ra](https://docs.vngcloud.vn/display/ONVINA/Security+Link):
-* Tùy chỉnh [cơ chế caching](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045500) phù hợp với loại nội dung.
-* Hỗ trợ [CNAME](https://docs.vngcloud.vn/display/ONVINA/CNAME) cho CDN.
-* [Quản lý và theo dõi các tín hiệu](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045633)[u](https://docs.vngcloud.vn/display/ONVINA/Live+Streaming#\_Qu%E1%BA%A3n\_l%C3%BD\_v%C3%A0) được đẩy đến hệ thống Live Entrypoint.
+* Hỗ trợ multi [Origin](../chi-tiet-tinh-nang/origin.md) khi tạo CDN.
+* Hỗ trợ tùy chọn[ HTTPS](../chi-tiet-tinh-nang/tuy-chon-https-o-origin.md) khi kết nối đến Origin.
+* [Hỗ trợ các tính năng bảo mật link đầu ra](../chi-tiet-tinh-nang/security-link.md):
+* Tùy chỉnh [cơ chế caching](../chi-tiet-tinh-nang/tuy-chinh-cac-tinh-nang-cache.md) phù hợp với loại nội dung.
+* Hỗ trợ [CNAME](../chi-tiet-tinh-nang/cname.md) cho CDN.
+* [Quản lý và theo dõi các tín hiệu](../giam-sat-hoat-dong/quan-ly-va-theo-doi-cac-tin-hieu-duoc-day-den-he-thong-live-entrypoint.md)[u](https://docs.vngcloud.vn/display/ONVINA/Live+Streaming#\_Qu%E1%BA%A3n\_l%C3%BD\_v%C3%A0) được đẩy đến hệ thống Live Entrypoint.
 * Hỗ trợ Adaptive bitrate (ABR) sử dụng định dạng video nguồn được mã hóa ở nhiều tốc độ bit. Các codec video được sử dụng phổ biến nhất là H.264 / AVC và H.265 / HEVC. Bộ giải mã âm thanh được sử dụng phổ biến nhất là AAC. Qua đó có thế tương thích với nhiều băng thông người xem trực tuyến có tốc độ khác nhau.
 
 ***
@@ -68,7 +68,7 @@ Trong đó:
 2. Dịch vụ Live Streaming CDN cho phép khách hàng sử dụng một trong 2 loại là CDN Packaging và Origin Packaging.
 3. Thời gian "băm" của các file "ts" với loại dịch vụ VoD là CDN Packaging.
 4. Chọn các thông tin tính năng dịch vụ.
-5. Tùy theo người dùng yêu cầu nhập thông [tin chính sách rule cơ bản](https://docs.vngcloud.vn/display/ONVINA/Live+Streaming#\_Ch%C3%ADnh\_s%C3%A1ch\_rule) hoặc [chính sách rule nâng cao](https://docs.vngcloud.vn/display/ONVINA/Live+Streaming#\_Ch%C3%ADnh\_s%C3%A1ch\_rule\_1) cho CDN.
+5. Tùy theo người dùng yêu cầu nhập thông [tin chính sách rule cơ bản](live-streaming.md) hoặc [chính sách rule nâng cao](live-streaming.md) cho CDN.
 
 Bước 5: Khi điền các thông tin đúng và đủ thì nhấn button Submit ở cuối cùng giao diện đợi khoản 5 phút cho hệ thống cái đặt CDN cho người dùng.
 
