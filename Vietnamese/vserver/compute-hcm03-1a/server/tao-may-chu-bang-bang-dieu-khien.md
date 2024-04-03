@@ -2,7 +2,7 @@
 
 Tạo máy chủ ảo bằng quy trình khởi tạo trên VNG Cloud
 
-Cách thực hiện: [Trải nghiệm sản phẩm vServer](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647861)
+Cách thực hiện: [Trải nghiệm sản phẩm vServer](../trai-nghiem-san-pham-vserver/)
 
 VNG Cloud cung cấp quy trình khởi tạo máy chủ ảo đơn giản với những thông tin cấu hình cần thiết đảm bảo tính bảo mật và tiện dụng.
 
@@ -18,8 +18,8 @@ Bạn cần xác định hệ điều hành cho máy chủ thông qua lựa ch�
 
 | **Image type**          | **Description**                                                                                                                                                                                                                                           | **Notes or References**                                                                       |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| OS Image / Public Image | Image chung là các image được VNG Cloud xây dựng sẵn, đảm bảo các tiêu chuẩn về hiệu năng và bảo mật. Các image này đều là các loại hệ điều hành phổ biến Windows Server hoặc các dòng Linux chủ đạo (Ubuntu, CentOS)                                     | [{Trang Image}](https://docs.vngcloud.vn/display/vServer/Image)                               |
-| My Image / Custom Image | Người dùng có thể tạo máy chủ ảo từ image đã được tùy biến riêng. Các image này thường được cài đặt sẵn các phần mềm hoặc môi trường riêng theo nhu cầu của người dùng, giúp giảm thời gian lặp lại các bước cài đặt thủ công khi cần tạo mới máy chủ ảo. | {Trang Tùy chỉnh Image}                                                                       |
+| OS Image / Public Image | Image chung là các image được VNG Cloud xây dựng sẵn, đảm bảo các tiêu chuẩn về hiệu năng và bảo mật. Các image này đều là các loại hệ điều hành phổ biến Windows Server hoặc các dòng Linux chủ đạo (Ubuntu, CentOS)                                     | [{Trang Image}](../image.md)                                                                  |
+| My Image / Custom Image | Người dùng có thể tạo máy chủ ảo từ image đã được tùy biến riêng. Các image này thường được cài đặt sẵn các phần mềm hoặc môi trường riêng theo nhu cầu của người dùng, giúp giảm thời gian lặp lại các bước cài đặt thủ công khi cần tạo mới máy chủ ảo. | [{Trang Tùy chỉnh Image}](../image.md)                                                        |
 | GPU Image               | Image có chứa sẵn các driver và phần mềm của NVIDIA, mục đích sử dụng các GPU NVIDIA nếu máy chủ ảo được lựa chọn có sử dụng GPU NVIDIA. Image này do VNG Cloud xây dựng sẵn dựa trên hệ điều hành Windows OS và Ubuntu.                                  | Người dùng cũng có thể chọn image chung và cài đặt các công cụ GPU tùy ý theo nhu cầu sau đó. |
 
 Lựa chọn loại máy chủ ảo để xác định số lượng tài nguyên CPU, RAM phù hợp cho nhu cầu ứng dụng. Người dùng có thể tham khảo chi phí dự kiến cho từng loại cấu hình của máy chủ ảo ở khung bên phải.
@@ -40,7 +40,7 @@ Máy chủ ảo có thể được gắn nhiều Volume lưu trữ dữ liệu k
 
 Người dùng có thể tạo thông tin Network và Security Group phù hợp để quản lý giao tiếp giữa các máy chủ ảo trong môi trường Network VPC.
 
-VPC là một không mang mạng riêng ảo. Người dùng có toàn quyền quản lý thông tin VPC này từ việc đặt range IP đến điều chỉnh routing hoặc điều khiển chính sách network trong VPC. Xem thêm tại [{Trang VPC}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039).
+VPC là một không mang mạng riêng ảo. Người dùng có toàn quyền quản lý thông tin VPC này từ việc đặt range IP đến điều chỉnh routing hoặc điều khiển chính sách network trong VPC. Xem thêm tại [{Trang VPC}](../network/virtual-private-cloud-vpc.md).
 
 Nếu bạn chưa từng tạo VPC trước đây, hệ thống sẽ tự động tạo trước VPC và subnet mặc định để nhanh chóng sử dụng tiếp trong quá trình khởi tạo máy chủ ảo.
 
@@ -58,7 +58,7 @@ Người dùng có thể sử dụng security group mặc định đã tạo s�
 
 #### Chứng thực <a href="#taomaychubangbangdieukhien-chungthuc" id="taomaychubangbangdieukhien-chungthuc"></a>
 
-Bạn nên sử dụng SSH Key để truy cập vào máy chủ ảo Linux. Bạn có thể tạo SSH Key mới hoặc nhập Public Key có sẵn của bạn lên VNG Cloud để sử dụng sau này. Xem thêm ở [{Trang SSH Key}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901).
+Bạn nên sử dụng SSH Key để truy cập vào máy chủ ảo Linux. Bạn có thể tạo SSH Key mới hoặc nhập Public Key có sẵn của bạn lên VNG Cloud để sử dụng sau này. Xem thêm ở [{Trang SSH Key}](../security/ssh-key-bo-khoa.md).
 
 Ngoài ra, bạn có thể điều thông tin username, password để truyền vào máy chủ khi khởi tạo.
 

@@ -25,7 +25,7 @@ Sau khi quá trình tăng dung lượng trên bảng điều khiển hoàn tất
 
 **a. Kiểm tra ổ đĩa đã được tăng dung lượng hay chưa:**
 
-1. [Kết nối vào Server](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650301)
+1. [Kết nối vào Server](../server/ket-noi-vao-may-chu-ao/#ketnoivaomaychuao-ketnoivaomaychulinuxbangcongcusshclient)
 2.  Gõ lệnh **`lsblk`**\
     Trong đầu ra ví dụ sau, ổ đĩa gốc (disk0) có hai phân vùng (disk01 và disk02), trong khi ổ đĩa bổ sung (disk00) không có phân vùng.
 

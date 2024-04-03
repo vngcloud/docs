@@ -2,7 +2,7 @@
 
 Bạn có thể kết nối dễ dàng với các máy chủ Window được tạo từ trình điều khiển VNG Cloud bằng Remote Desktop. Để làm điều này, bạn cần tải về RDP và làm theo hướng dẫn bên dưới của chúng tôi. RDP có sẵn trên hầu hết các phiên bản Windows và cũng có sẵn cho Mac OS.
 
-Để biết thông tin về cách kết nối với phiên bản Linux, hãy xem hướng dẫn  [Kết nối vào máy chủ Linux bằng công cụ SSH Client](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650301\&src=contextnavpagetreemode) dành cho Phiên bản Linux về cách kết nối với máy chủ của bạn.
+Để biết thông tin về cách kết nối với phiên bản Linux, hãy xem hướng dẫn  [Kết nối vào máy chủ Linux bằng công cụ SSH Client](ket-noi-vao-may-chu-linux-bang-cong-cu-ssh-client.md) dành cho Phiên bản Linux về cách kết nối với máy chủ của bạn.
 
 ***
 

@@ -10,7 +10,7 @@ Quá trình chụp ảnh nhanh hoạt động không đồng bộ. Mặc dù sna
 
 ### **Điều kiện tiên quyết** <a href="#taosnapshot-dieukientienquyet" id="taosnapshot-dieukientienquyet"></a>
 
-* Snapshot phải được được kích hoạt. Để biết thêm thông tin, hãy xem [Kích hoạt Snapshot](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64554088).
+* Snapshot phải được được kích hoạt. Để biết thêm thông tin, hãy xem [Kích hoạt Snapshot](kich-hoat-snapshot.md).
 * Đĩa mà bạn muốn tạo ảnh chụp nhanh đang ở trạng thái Đang sử dụng hoặc Chưa đính kèm. Hãy lưu ý các mục sau:
   * Nếu đĩa ở trạng thái Đang sử dụng, hãy đảm bảo rằng phiên bản mà đĩa được gắn vào ở trạng thái Đang chạy hoặc Đã dừng.
   * Nếu đĩa ở trạng thái Chưa được đính kèm, hãy đảm bảo rằng đĩa đã được gắn vào một Server tại một thời điểm nào đó. Không thể tạo snapshot cho các ổ đĩa đám mây chưa từng được gắn vào Server.
@@ -51,6 +51,6 @@ Quá trình chụp ảnh nhanh hoạt động không đồng bộ. Mặc dù sna
 
 ### **Mã hóa Snapshot** <a href="#taosnapshot-mahoasnapshot" id="taosnapshot-mahoasnapshot"></a>
 
-Mã hóa Snapshot đảm bảo tính bảo mật cho dữ liệu của bạn trong môi trường đám mây. Khi ảnh chụp nhanh được tạo từ các ổ đĩa được mã hóa, chúng sẽ tự động được mã hóa, bảo vệ dữ liệu khi lưu trữ và trong quá trình truyền tải. Cơ chế mã hóa này cung cấp khả năng bảo vệ toàn diện cho cả ổ đĩa và mọi ảnh chụp nhanh liên quan. Để biết thêm chi tiết, vui lòng tham khảo tài liệu về [mã hóa Volume](https://docs.vngcloud.vn/display/vServer/Compute+Encryption+Volume).
+Mã hóa Snapshot đảm bảo tính bảo mật cho dữ liệu của bạn trong môi trường đám mây. Khi ảnh chụp nhanh được tạo từ các ổ đĩa được mã hóa, chúng sẽ tự động được mã hóa, bảo vệ dữ liệu khi lưu trữ và trong quá trình truyền tải. Cơ chế mã hóa này cung cấp khả năng bảo vệ toàn diện cho cả ổ đĩa và mọi ảnh chụp nhanh liên quan. Để biết thêm chi tiết, vui lòng tham khảo tài liệu về [mã hóa Volume](../server/compute-encryption-volume/).
 
 \

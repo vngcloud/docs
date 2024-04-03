@@ -4,7 +4,7 @@ VNG Cloud Interconnect cho phép bạn thiết lập kết nối mạng trực t
 
 Hiện nay chúng tôi đang cung cấp loại kết nối:
 
-*   Kết nối chuyên dụng (Dedicated Connection): Kết nối Ethernet vật lý được liên kết với một khách hàng, là một loại kết nối mạng trong đó tài nguyên mạng được dành riêng cho một mục đích cụ thể hoặc một khách hàng cụ thể. Trong trường hợp này, không có sự chia sẻ tài nguyên với người dùng hoặc ứng dụng khác trên mạng. Điều này đảm bảo rằng tốc độ và băng thông của kết nối được duy trì ổn định và không bị ảnh hưởng bởi người dùng khác. Khách hàng có thể yêu cầu kết nối chuyên dụng thông qua bảng điều khiển VNG Cloud Interconnect hoặc API. Để biết thêm thông tin, hãy xem [Kết nối chuyên dụng](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553653).\
+*   Kết nối chuyên dụng (Dedicated Connection): Kết nối Ethernet vật lý được liên kết với một khách hàng, là một loại kết nối mạng trong đó tài nguyên mạng được dành riêng cho một mục đích cụ thể hoặc một khách hàng cụ thể. Trong trường hợp này, không có sự chia sẻ tài nguyên với người dùng hoặc ứng dụng khác trên mạng. Điều này đảm bảo rằng tốc độ và băng thông của kết nối được duy trì ổn định và không bị ảnh hưởng bởi người dùng khác. Khách hàng có thể yêu cầu kết nối chuyên dụng thông qua bảng điều khiển VNG Cloud Interconnect hoặc API. Để biết thêm thông tin, hãy xem [Kết nối chuyên dụng](tao-ket-noi-chuyen-dung-dedicated.md).\
     \
     \
 
@@ -15,9 +15,9 @@ Hiện nay chúng tôi đang cung cấp loại kết nối:
 
 **Chủ đề**
 
-* [Tạo kết nối chuyên dụng (Dedicated)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553653\&src=contextnavpagetreemode)
-* [Xem thông tin kết nối](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553671\&src=contextnavpagetreemode)
-* [Cập nhật kết nối](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553662\&src=contextnavpagetreemode)
-* [Xóa kết nối](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553665\&src=contextnavpagetreemode)
+* [Tạo kết nối chuyên dụng (Dedicated)](tao-ket-noi-chuyen-dung-dedicated.md)
+* [Xem thông tin kết nối](xem-thong-tin-ket-noi.md)
+* [Cập nhật kết nối](cap-nhat-ket-noi.md)
+* [Xóa kết nối](xoa-ket-noi.md)
 
 \

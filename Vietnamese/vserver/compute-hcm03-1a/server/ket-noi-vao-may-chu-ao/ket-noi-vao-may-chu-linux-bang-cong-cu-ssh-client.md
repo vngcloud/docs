@@ -2,7 +2,7 @@
 
 Để kết nối đến một máy chủ Linux bằng SSH Client, bạn cần có một Terminal hoặc Command Prompt trên máy tính của bạn và sử dụng lệnh SSH. Dưới đây là hướng dẫn cách thực hiện kết nối SSH đến máy chủ Linux
 
-Để biết thông tin về cách kết nối với phiên bản Window, hãy xem hướng dẫn [Kết nối vào máy chủ Windows sử dụng công cụ Remote Desktop (RDP)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650320\&src=contextnavpagetreemode) về cách kết nối với máy chủ của bạn.
+Để biết thông tin về cách kết nối với phiên bản Window, hãy xem hướng dẫn [Kết nối vào máy chủ Windows sử dụng công cụ Remote Desktop (RDP)](ket-noi-vao-may-chu-windows-su-dung-cong-cu-remote-desktop-rdp.md) về cách kết nối với máy chủ của bạn.
 
 ***
 
@@ -117,7 +117,7 @@ _**Phương án 1**_**: Login SSH bằng password**
     <figure><img src="https://docs.vngcloud.vn/download/attachments/49650301/worddav8dafb46ee04530a331aeef5ac72047fa.png?version=1&#x26;modificationDate=1681439919000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 _**Option 2**_: **Login SSH bằng SSH KEY**\
-Nếu bạn đã tạo một SSH Key Pair trên portal VNGCLOUD (_Nhấp vào_ [_**đây**_](https://docs.vngcloud.vn/display/ONVINA/SSH+Keys+HCM+03) _để xem hướng dẫn tạo SSH Keys_) và có add SSH Key vô vServer trong quá trình khởi tạo, bạn có thể thực hiện các bước sau đây
+Nếu bạn đã tạo một SSH Key Pair trên portal VNGCLOUD (_Nhấp vào_ [_**đây**_](../../security/ssh-key-bo-khoa.md) _để xem hướng dẫn tạo SSH Keys_) và có add SSH Key vô vServer trong quá trình khởi tạo, bạn có thể thực hiện các bước sau đây
 
 1.  Dùng putty-gen để convert file **key.pem** đã download thành file **key.ppk**\
     \

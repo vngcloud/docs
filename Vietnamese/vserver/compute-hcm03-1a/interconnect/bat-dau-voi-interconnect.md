@@ -11,7 +11,7 @@ Interconnect tạo kết nối mạng Lớp 3 (Layer 3) giữa mạng tại ch�
 Bạn phải xem xét và chọn một phương án về khả năng phục hồi để đảm bảo bạn sử dụng phương pháp tiếp cận phù hợp với nhu cầu về khả năng phục hồi của mình. Tùy chọn bạn chọn sẽ ảnh hưởng đến Thỏa thuận cấp độ dịch vụ (SLA) về thời gian hoạt động kết nối của bạn.\
 Khả năng kết nối được cung cấp bằng cách sử dụng kết nối chéo giữa thiết bị do VNG Cloud sở hữu và thiết bị do khách hàng sở hữu.
 
-![](https://docs.vngcloud.vn/download/attachments/64553619/image2023-9-8\_14-30-47.png?version=1\&modificationDate=1694158248000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/64553619/image2023-9-8_14-30-47.png?version=1&#x26;modificationDate=1694158248000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 Nếu bạn muốn kết nối từ cơ sở của mình, bạn cần làm việc với chúng tôi để lựa chọn cấu hình kết nối hợp lý và sau đó bạn sẽ cần phải ký hợp đồng trực tiếp để yêu cầu kết nối Interconnect.&#x20;
 
@@ -45,7 +45,7 @@ Tuỳ thuộc vào nhu cầu sử dụng mà bạn có thể lựa chọn băng 
 
 **Bước 4: Chọn loại kết nối Interconnect**
 
-Hiện nay, ngoài việc cung cấp dạng kết nối Direct Connect cơ bản, chúng tôi còn triển khai thêm một số loại hình kết nối khác như: Multicloud Connect, Hybrid Cloud Interconnect, VPN Interconnect để giúp bạn giải quyết các vấn đề về quản lý dữ liệu đa dạng. Để biết thêm thông tin chi tiết, xin vui lòng xem tại [Các tính năng của Interconnect](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553556).
+Hiện nay, ngoài việc cung cấp dạng kết nối Direct Connect cơ bản, chúng tôi còn triển khai thêm một số loại hình kết nối khác như: Multicloud Connect, Hybrid Cloud Interconnect, VPN Interconnect để giúp bạn giải quyết các vấn đề về quản lý dữ liệu đa dạng. Để biết thêm thông tin chi tiết, xin vui lòng xem tại [Các tính năng của Interconnect](cac-tinh-nang-interconnect.md).
 
 **Bước 5: Tạo kết nối Interconnect**
 

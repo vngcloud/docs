@@ -25,7 +25,7 @@ Cảnh báo
 ### **Kiểm tra hiệu suất đồng thời random read & random write** <a href="#kiemtrahieusuatiops-kiemtrahieusuatdongthoirandomread-and-randomwrite" id="kiemtrahieusuatiops-kiemtrahieusuatdongthoirandomread-and-randomwrite"></a>
 
 1. Tạo một Server với ổ đĩa Volume có loại NVME với IOPS 1000 tại trang chủ vServer
-2. Kết nối vào Server của bạn. Để biết thêm thông tin hãy xem hướng dẫn [Kết nối vào máy chủ ảo](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650318).
+2. Kết nối vào Server của bạn. Để biết thêm thông tin hãy xem hướng dẫn [Kết nối vào máy chủ ảo](../server/ket-noi-vao-may-chu-ao/).
 3.  Chạy lệnh sau để cài đặt FIO:
 
     | `sudo yum install -y epel-release && yum install -y fio \|\| ( apt-get update && apt-get install -y fio )` |

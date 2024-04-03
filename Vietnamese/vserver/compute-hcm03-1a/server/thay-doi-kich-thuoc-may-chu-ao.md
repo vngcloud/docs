@@ -12,7 +12,7 @@ Chi phí và cách tính toán theo cấu hình mới sẽ xuất hiện bên ph
 
 ### **Cách thực hiện** <a href="#thaydoikichthuocmaychuao-cachthuchien" id="thaydoikichthuocmaychuao-cachthuchien"></a>
 
-Trước khi thực hiện thay đổi flavor cho máy chủ ảo, bạn cần xác định trước flavor cũng như tìm hiểu các thuộc tính về nó như loại máy chủ, công nghệ CPU… Xem thêm tại [{Trang Flavor}](https://docs.vngcloud.vn/display/vServer/Flavor).
+Trước khi thực hiện thay đổi flavor cho máy chủ ảo, bạn cần xác định trước flavor cũng như tìm hiểu các thuộc tính về nó như loại máy chủ, công nghệ CPU… Xem thêm tại [{Trang Flavor}](flavor.md).
 
 1. Đăng nhập vào VNG Cloud portal và đi đến trang dịch vụ vServer tại đường link: [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)
 2. Tại trang Cloud Server, xác định máy chủ ảo cần thay đổi cấu hình, cần đảm bảo máy chủ đã stop trước khi thực hiện thay đổi. Vào danh sách Menu bên phải và chọn Resize

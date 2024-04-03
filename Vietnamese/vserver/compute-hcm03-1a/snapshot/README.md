@@ -58,4 +58,4 @@ Snapshot có thể giúp bạn chuyển đổi dữ liệu một cách dễ dàn
 
 ### **Bắt đầu với Snapshot** <a href="#snapshot-batdauvoisnapshot" id="snapshot-batdauvoisnapshot"></a>
 
-Để có thể sử dụng Snapshot bạn cần kích hoạt bản Snapshot tại giao diện bảng điều khiển của chúng tôi, vui lòng xem hướng dẫn [Kích hoạt Snapshot.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64554088)
+Để có thể sử dụng Snapshot bạn cần kích hoạt bản Snapshot tại giao diện bảng điều khiển của chúng tôi, vui lòng xem hướng dẫn [Kích hoạt Snapshot.](kich-hoat-snapshot.md)

@@ -26,7 +26,7 @@ Các image tại VNG Cloud được phân loại thành Image chung, Image riên
 
 #### Khởi tạo Server từ Image <a href="#image-khoitaoservertuimage" id="image-khoitaoservertuimage"></a>
 
-1. Để khởi tạo vServer từ My image, bạn có thể xem hướng dẫn về [Khởi tạo vServe](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647861)r, khi đến bước **Chọn Boot Image**, ở mục "**Basic Configuration**", chọn Image để khởi tạo Server, bạn cần thực hiện theo _**Option 3**_: Khởi tạo vServer với **MY IMAGES** đã được tạo ra trước đó, nhằm phục vụ cho việc Clone Server đang chạy trên Cloud thành các Server mới hoặc Backup / Restore Server
+1. Để khởi tạo vServer từ My image, bạn có thể xem hướng dẫn về [Khởi tạo vServe](trai-nghiem-san-pham-vserver/)r, khi đến bước **Chọn Boot Image**, ở mục "**Basic Configuration**", chọn Image để khởi tạo Server, bạn cần thực hiện theo _**Option 3**_: Khởi tạo vServer với **MY IMAGES** đã được tạo ra trước đó, nhằm phục vụ cho việc Clone Server đang chạy trên Cloud thành các Server mới hoặc Backup / Restore Server
 2. Tại tab **MY IMAGES**, chọn images tương ứng cần để tạo vServer
 3. Thực hiện tiếp các bước còn lại của hướng dẫn về Khởi tạo vServer để tạo ra Server hoàn chỉnh từ My image
 
