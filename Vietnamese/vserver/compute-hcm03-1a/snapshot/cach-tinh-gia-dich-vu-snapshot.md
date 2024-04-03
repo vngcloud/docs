@@ -21,13 +21,13 @@ Cách tính phí Snapshot áp dụng chung cho cả 2 hình thức thanh toán, 
 
 #### 2. Phương thức thanh toán trả trước <a href="#cachtinhgiadichvusnapshot-2.phuongthucthanhtoantratruoc" id="cachtinhgiadichvusnapshot-2.phuongthucthanhtoantratruoc"></a>
 
-Đối với người dùng Trả Trước, VNG Cloud áp dụng hình thức Hold Credit - Tạm giữ Credit để hỗ trợ việc sử dụng cũng như tính chi phí cho dịch vụ Snapshot. Tìm hiểu thêm về Hold Credit tại [Tạm giữ Credit](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649319).
+Đối với người dùng Trả Trước, VNG Cloud áp dụng hình thức Hold Credit - Tạm giữ Credit để hỗ trợ việc sử dụng cũng như tính chi phí cho dịch vụ Snapshot. Tìm hiểu thêm về Hold Credit tại [Tạm giữ Credit](../../../quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/thanh-toan/tam-giu-credit.md).
 
 * **Hình thức**: Dưới phương thức Tạm giữ Credit, người dùng phải duy trì số dư trả trước đủ để chi trả phần sử dụng dịch vụ trong tài khoản của họ.
 * **Kích hoạt Snapshot:** Khi kích hoạt Snapshot lần đầu, người dùng sẽ được điều hướng đến cổng thanh toán của VNG Cloud để ghi nhận nguồn tiền được sử dụng cho dịch vụ Snapshot. Lưu ý rằng, hành động này chỉ nhằm mục đích ghi nhận nguồn tiền sử dụng, người dùng hoàn toàn không mất phí cho lần kích hoạt đầu tiên.
 * **Chi phí tạo Snapshot**: Khi người dùng tạo một bản snapshot, hệ thống sẽ không tính chi phí ngay lập tức, mà sẽ được ghi nhận lại mỗi giờ sau đó. Cứ mỗi ngày một lần, hệ thống sẽ tiến hành Tạm giữ Credit cho phần sử dụng dịch vụ, chi phí này được xác định dựa trên kích thước của bản snapshot và thời gian sử dụng trong ngày hôm đó.
-* **Quản lý số dư**: Người dùng có trách nhiệm quản lý số dư trả trước của họ để đảm bảo đủ để chi trả cho việc sử dụng bản snapshot thep kế hoạch dự kiến, phần số dư này phải đủ để bao phủ cho việc sử dụng dịch vụ đến thời điểm hiện tại và 3 ngày tiếp theo đó. Chi tiết tham khảo tại [Tạm giữ Credit](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649319).
-* **Thông báo số dư thấp**: Để tránh gián đoạn dịch vụ, hệ thống sẽ gửi thông báo khi số dư trả trước giảm xuống dưới một ngưỡng cụ thể, khuyến nghị người dùng nạp thêm tiền. Trường hợp đã được nhắc nhở nhiều lần, nhưng số dư vẫn liên tục không đảm bảo, VNG Cloud sẽ tạm thời dừng cung cấp dịch vụ ([Vô hiệu hóa dịch vụ Snapshot](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64554015)) Snapshot đến người dùng.
+* **Quản lý số dư**: Người dùng có trách nhiệm quản lý số dư trả trước của họ để đảm bảo đủ để chi trả cho việc sử dụng bản snapshot thep kế hoạch dự kiến, phần số dư này phải đủ để bao phủ cho việc sử dụng dịch vụ đến thời điểm hiện tại và 3 ngày tiếp theo đó. Chi tiết tham khảo tại [Tạm giữ Credit](../../../quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/thanh-toan/tam-giu-credit.md).
+* **Thông báo số dư thấp**: Để tránh gián đoạn dịch vụ, hệ thống sẽ gửi thông báo khi số dư trả trước giảm xuống dưới một ngưỡng cụ thể, khuyến nghị người dùng nạp thêm tiền. Trường hợp đã được nhắc nhở nhiều lần, nhưng số dư vẫn liên tục không đảm bảo, VNG Cloud sẽ tạm thời dừng cung cấp dịch vụ ([Vô hiệu hóa dịch vụ Snapshot](vo-hieu-hoa-dich-vu-snapshot.md)) Snapshot đến người dùng.
 
 #### **3. Phương Thức Thanh Toán Trả Sau** <a href="#cachtinhgiadichvusnapshot-3.phuongthucthanhtoantrasau" id="cachtinhgiadichvusnapshot-3.phuongthucthanhtoantrasau"></a>
 
@@ -41,7 +41,7 @@ Cách tính phí Snapshot áp dụng chung cho cả 2 hình thức thanh toán, 
 
 #### 4. Chủ đề liên quan <a href="#cachtinhgiadichvusnapshot-4.chudelienquan" id="cachtinhgiadichvusnapshot-4.chudelienquan"></a>
 
-* [Tạm giữ Credit](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649319).
-* [Vô hiệu hóa dịch vụ Snapshot](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64554015).
+* [Tạm giữ Credit](../../../quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/thanh-toan/tam-giu-credit.md).
+* [Vô hiệu hóa dịch vụ Snapshot](vo-hieu-hoa-dich-vu-snapshot.md).
 
 \

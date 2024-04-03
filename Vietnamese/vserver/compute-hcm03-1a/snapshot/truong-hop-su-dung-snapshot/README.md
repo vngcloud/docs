@@ -4,8 +4,8 @@ Snapshot là một công cụ quan trọng trong quản lý hệ thống và b�
 
 ***
 
-* [Khôi phục hệ thống sau thảm hoạ](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64554121\&src=contextnavpagetreemode)
-* [Phát triển và kiểm tra](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64554201\&src=contextnavpagetreemode)
-* [Sao lưu và phục hồi hệ thống định kỳ](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64554203\&src=contextnavpagetreemode)
-* [Chuyển dữ liệu và ứng dụng giữa các môi trường](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64554205\&src=contextnavpagetreemode)
-* [Chống lại cuộc tấn công từ Hacker hoặc nhiễm malware](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64554207\&src=contextnavpagetreemode)
+* [Khôi phục hệ thống sau thảm hoạ](khoi-phuc-he-thong-sau-tham-hoa.md)
+* [Phát triển và kiểm tra](phat-trien-va-kiem-tra.md)
+* [Sao lưu và phục hồi hệ thống định kỳ](sao-luu-va-phuc-hoi-he-thong-dinh-ky.md)
+* [Chuyển dữ liệu và ứng dụng giữa các môi trường](chuyen-du-lieu-va-ung-dung-giua-cac-moi-truong.md)
+* [Chống lại cuộc tấn công từ Hacker hoặc nhiễm malware](chong-lai-cuoc-tan-cong-tu-hacker-hoac-nhiem-malware.md)
