@@ -12,7 +12,7 @@ Thuật toán Cân bằng tải sẽ xác định Member (server) nào được 
 
 Round Robin là thuật toán lựa chọn các Member (server) theo trình tự. Theo đó, Load Balancer sẽ bắt đầu đi từ Member (server) số 1 trong danh sách của nó ứng với yêu cầu đầu tiên. Tiếp đó, nó sẽ di chuyển dần xuống trong danh sách theo thứ tự và bắt đầu lại ở đầu trang khi đến Member (server) cuối cùng.
 
-![](https://docs.vngcloud.vn/download/attachments/64553887/image2020-5-24\_22-18-14.png?version=1\&modificationDate=1694660193000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/64553887/image2020-5-24_22-18-14.png?version=1&#x26;modificationDate=1694660193000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 ### **2. Least Connection** <a href="#poolsalgorithm-nlb-2.leastconnection" id="poolsalgorithm-nlb-2.leastconnection"></a>
 
@@ -24,16 +24,16 @@ Ví dụ: Chúng ta có 5 client gửi kết nối tới 2 server, thì khi có 
 
 * Trường hợp 1: Nếu không có client nào ngắt kết nối, client 6 sẽ được gửi sang Server 2 do tỉ lệ connection giữa hai Server đang là 3:2. Xem hình minh họa bên dưới.
 
-![](https://docs.vngcloud.vn/download/attachments/64553887/image2020-5-24\_22-19-20.png?version=1\&modificationDate=1694660193000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/64553887/image2020-5-24_22-19-20.png?version=1&#x26;modificationDate=1694660193000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 * Trường hợp 2: Nếu client 1 & 3 ngắt kết nối trước khi client 6 gửi request, thì khi gửi request, client 6 sẽ được gửi sang Server 1 do tỉ lệ connection giữa hai Server đang là 1:2. Xem hình minh họa bên dưới
 
-![](https://docs.vngcloud.vn/download/attachments/64553887/image2020-5-24\_22-25-23.png?version=1\&modificationDate=1694660193000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/64553887/image2020-5-24_22-25-23.png?version=1&#x26;modificationDate=1694660193000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 ### **3. Source IP** <a href="#poolsalgorithm-nlb-3.sourceip" id="poolsalgorithm-nlb-3.sourceip"></a>
 
 Thuật toán này kết hợp địa chỉ IP nguồn và đích của client và server để tạo ra hash key duy nhất. Key này được sử dụng để phân bổ client đến một server cụ thể, và nó có thể được tạo lại nếu session bị timeout hay ngắt kết nối do một lý do nào đó. Khi đó request của client vẫn được chuyển đến cùng một server mà nó đã sử dụng trước đó. Đây là một phương pháp để đảm bảo rằng người dùng sẽ kết nối với cùng một server. Ví dụ: để giữ lại các mặt hàng trong giỏ hàng giữa các phiên.
 
-![](https://docs.vngcloud.vn/download/attachments/64553887/image2020-5-24\_22-34-57.png?version=1\&modificationDate=1694660194000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/64553887/image2020-5-24_22-34-57.png?version=1&#x26;modificationDate=1694660194000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 \

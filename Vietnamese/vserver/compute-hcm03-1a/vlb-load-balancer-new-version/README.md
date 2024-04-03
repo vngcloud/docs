@@ -62,15 +62,3 @@ Load Balancer cung cấp thông tin về mẫu lưu lượng, hiệu suất máy
 
 Cùng tìm hiểu thêm về cách hoạt động của như các hướng dẫn sử dụng dịch vụ chi tiết thông qua các bài viết dưới đây
 
-Chủ đề liên quan
-
-* [Deployment Mode](deployment-mode.md)
-* [Feature Comparison](feature-comparison.md)
-* [Application Load Balancer](application-load-balancer/)
-* [Network Load Balancer](network-load-balancer/)
-* [Monitor your load balancers](giam-sat-hoat-dong-lb/)
-
-\
-
-
-\

@@ -8,14 +8,6 @@ Giám sát hoạt động (monitoring) là một nhu cầu bắt buộc đối v
 
 Để bắt đầu sử dụng, bạn truy cập vMonitor Platform, mục Infrastructure List:
 
-* Tab [vLB - Loadbalancer](https://hcm-3.console.vngcloud.vn/vmonitor/infrastructure/vlb): giúp bạn xem các metric của vLB. Bạn tham khảo mô tả tại: [Quản lý vLB với Infrastructure Host](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647455).
-* Tab [vLB-Log](https://hcm-3.console.vngcloud.vn/vmonitor/infrastructure/vlb-log): giúp bạn xem access log (Application Load Balancer) hoặc tcp log (Network Load Balancer). Bạn tham khảo mô tả tại link: [vLB-Log](https://docs.vngcloud.vn/display/ONVINA/vLB-Log)
+* Tab [vLB - Loadbalancer](https://hcm-3.console.vngcloud.vn/vmonitor/infrastructure/vlb): giúp bạn xem các metric của vLB. <mark style="color:orange;">Bạn tham khảo mô tả tại:</mark> [<mark style="color:orange;">Quản lý vLB với Infrastructure Host</mark>](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647455)<mark style="color:orange;">.</mark>
+* Tab [vLB-Log](https://hcm-3.console.vngcloud.vn/vmonitor/infrastructure/vlb-log): giúp bạn xem access log (Application Load Balancer) hoặc tcp log (Network Load Balancer). <mark style="color:orange;">Bạn tham khảo mô tả tại link:</mark> [<mark style="color:orange;">vLB-Log</mark>](https://docs.vngcloud.vn/display/ONVINA/vLB-Log)
 
-#### Chủ đề liên quan <a href="#monitoryourloadbalancers-chudelienquan" id="monitoryourloadbalancers-chudelienquan"></a>
-
-Cùng tìm hiểu xem các tính năng cũng như lợi ích mà vLB - Metric và vLB - Log mang lại cho người dùng trong việc quản lý hoạt động của Load Balancer thông qua các bài viết sau
-
-* [Metrics](https://docs.vngcloud.vn/display/vServer/Metrics)
-* [Logs](https://docs.vngcloud.vn/display/vServer/Logs)
-
-\
