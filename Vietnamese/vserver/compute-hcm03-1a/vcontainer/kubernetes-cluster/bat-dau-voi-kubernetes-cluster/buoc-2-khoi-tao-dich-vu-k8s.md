@@ -7,7 +7,7 @@ Chủ đề này cung cấp thông tin tổng quan về các tùy chọn khả d
 * Một VPC hiện có và các Subnet đáp ứng các yêu cầu của K8S. Trước khi bạn triển khai một Cluster để sử dụng trong sản xuất, chúng tôi khuyên bạn nên hiểu rõ về VPC và các yêu cầu Subnet. Nếu không có VPC và Subnet, bạn có thể tạo chúng trên giao diện của vServer.
 * Công cụ dòng lệnh kubectl được cài đặt trên thiết bị của bạn. Phiên bản có thể giống hoặc tối đa một phiên bản nhỏ sớm hơn hoặc muộn hơn phiên bản Kubernetes của Cluster của bạn. Ví dụ: nếu phiên bản Cluster của bạn là 1.23.16, thì bạn có thể sử dụng phiên bản kubectl 1.22, 1.23 hoặc 1.24 cùng với phiên bản đó.
 * Nếu bạn đang sử dụng Kubernetes Cluster trong lớp mạng pfsense hay Fortigate, bạn cần Config MTU cho các loại FW về 1450 theo hướng dẫn [MTU và “DF flag” best practice on VNG Cloud](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64554291).
-* Tài khoản IAM chính có quyền tạo và mô tả K8S. Để biết thêm thông tin, hãy xem phần [Phân quyền IAM cho vServer](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802254).
+* Tài khoản IAM chính có quyền tạo và mô tả K8S. Để biết thêm thông tin, hãy xem phần [Phân quyền IAM cho vServer](../../../quan-ly-dinh-danh-va-truy-cap-iam-cho-vserver/cac-hanh-dong-tai-nguyen-va-dieu-kien-can-cho-phan-quyen-truy-cap-vserver.md).
 
 ***
 
@@ -41,7 +41,7 @@ Chủ đề này cung cấp thông tin tổng quan về các tùy chọn khả d
    * **VPC** – Chọn một VPC hiện có đáp ứng các yêu cầu của K8S để tạo Cluster của bạn. Trước khi chọn một VPC, chúng tôi khuyên bạn nên làm quen với tất cả các yêu cầu và cân nhắc trong VPC cũng như các yêu cầu và cân nhắc về Subnet. Bạn không thể thay đổi VPC nào bạn muốn sử dụng sau khi tạo Cluster. Nếu không có VPC nào được liệt kê, trước tiên bạn cần tạo một VPC. Để biết thêm thông tin, hãy xem [**Tạo VPC**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039)**.**
    * **Loại Network, Chế độ Encapsulation** được tự chọn mặc định bởi hệ thống và bạn không thể thay đổi chúng, tuy nhiên bạn có thể nhập lại thông số **Calico CIDR** (lưu ý IP phải là riêng tư và có thể chọn theo các tùy chọn sau (10.0.0.0 - 10.255.0.0 / 172.16.0.0 - 172.24.0.0 / 192.168.0.0)
    * **Subnets** – Theo mặc định, tất cả các mạng con khả dụng trong VPC được chỉ định trong trường trước đó sẽ được chọn ngẫu nhiên ở thứ tự đầu tiên, bạn có thể chọn lại Subnet khác, tuy nhiên chỉ được chọn duy nhất 1.
-   * SSH keys - để Import vô Kubernetes trong quá trình khởi tạo (Nhấp vào [**đây**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901) để xem hướng dẫn tạo SSH Key)
+   * SSH keys - để Import vô Kubernetes trong quá trình khởi tạo (Nhấp vào [**đây**](../../../security/ssh-key-bo-khoa.md) để xem hướng dẫn tạo SSH Key)
 8. Sau khi điền các thông tin cần thiết để khởi tạo K8S, cần xem lại tóm tắt các thông tin thanh toán tại tab **Summary** phía bên trái màn hình và thông tin thanh toán chi tiết các mục tại tab **Item list,** nếu cần hay thực hiện thay đổi**.** Khi bạn đã hài lòng hãy chọn **Tạo Kubernetes Cluster** để xác nhận khởi tạo Cluster của bạn. Trường Trạng thái hiển thị **Creating** khi Cluster được cung cấp.
 
 \

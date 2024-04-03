@@ -4,9 +4,9 @@ Các hướng dẫn sau đây giới thiệu về các công cụ có sẵn và 
 
 #### Nội dung <a href="#batdauvoikubernetescluster-noidung" id="batdauvoikubernetescluster-noidung"></a>
 
-* [Bước 1: Hướng dẫn cài đặt và cấu hình công cụ kubectl trong Kubernetes](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650152\&src=contextnavpagetreemode)
-* [Bước 2: Khởi tạo dịch vụ K8S](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650154\&src=contextnavpagetreemode)
-* [Bước 3: Sử dụng Kubeclt để access vào Container đã khởi tạo](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650173\&src=contextnavpagetreemode)
-* [Bước 4: Deploy Application trên Container đã khởi tạo](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650179\&src=contextnavpagetreemode)
+* [Bước 1: Hướng dẫn cài đặt và cấu hình công cụ kubectl trong Kubernetes](buoc-1-huong-dan-cai-dat-va-cau-hinh-cong-cu-kubectl-trong-kubernetes.md)
+* [Bước 2: Khởi tạo dịch vụ K8S](buoc-2-khoi-tao-dich-vu-k8s.md)
+* [Bước 3: Sử dụng Kubeclt để access vào Container đã khởi tạo](buoc-3-su-dung-kubeclt-de-access-vao-container-da-khoi-tao.md)
+* [Bước 4: Deploy Application trên Container đã khởi tạo](buoc-4-deploy-application-tren-container-da-khoi-tao.md)
 
 \

@@ -13,7 +13,7 @@ An toàn mạnh là ưu tiên hàng đầu tại VNG Cloud. Khách hàng của V
 
 #### Chủ đề <a href="#security-chude" id="security-chude"></a>
 
-* [SSH Key](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)
-* [Security Groups](https://docs.vngcloud.vn/display/vServer/Security+Groups)
+* [SSH Key](ssh-key-bo-khoa.md)
+* [Security Groups](security-groups.md)
 
 \

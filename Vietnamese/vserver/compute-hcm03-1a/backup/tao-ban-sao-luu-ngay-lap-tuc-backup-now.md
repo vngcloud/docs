@@ -13,7 +13,7 @@ Lợi ích của Sao lưu Dữ liệu Ngay Lập Tức:
 
 ### **Tạo bản sao lưu ngay lập tức cho bản Backup Server trên bảng điều khiển vBackup** <a href="#taobansaoluungaylaptuc-backupnow-taobansaoluungaylaptucchobanbackupservertrenbangdieukhienvbackup" id="taobansaoluungaylaptuc-backupnow-taobansaoluungaylaptucchobanbackupservertrenbangdieukhienvbackup"></a>
 
-1. Sau khi tạo bản Backup Server theo bộ lịch Policy. Xem hướng dẫn tạo Backup Server tại [Tạo bản sao lưu cho máy chủ ảo theo bộ lịch Policy](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649803\&src=contextnavpagetreemode)
+1. Sau khi tạo bản Backup Server theo bộ lịch Policy. Xem hướng dẫn tạo Backup Server tại [Tạo bản sao lưu cho máy chủ ảo theo bộ lịch Policy](tao-ban-sao-luu-cho-may-chu-ao-theo-bo-lich-policy.md)
 2. Chọn bản Backup Server vừa tạo, sau đó chọn **Backup Now**
 3. Chọn **Backup Now,** và sau đó một bản Backup sẽ được tạo ngay tại thời điểm thực hiện hành động đồng thời sẽ hiển thị tại trang danh sách Backup Server
 

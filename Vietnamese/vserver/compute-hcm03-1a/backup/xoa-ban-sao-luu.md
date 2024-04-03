@@ -1,6 +1,6 @@
 # Xóa bản sao lưu
 
-Sau khi tạo bản sao lưu, bạn có thể thực hiện xóa chúng. Chúng tôi khuyên bạn nên sử dụng vBackup Policy để tự động xóa các bản sao lưu mà bạn không cần nữa bằng cách định cấu hình vòng đời của bạn khi bạn tạo gói sao lưu. Ví dụ: Nếu bạn tạo bản sao lưu với một chính sách sao lưu được lựa chọn tần suất sao lưu theo **Hàng Ngày** lúc **12:00** và số bản lưu **4** vào ngày 16/03/2023. Vào ngày hôm sau 17/03/2023, lúc 12:00 trưa, hệ thống theo khung giờ trên sẽ tạo bản sao lưu cho máy chủ ảo, và lưu giữ dưới hệ thống, sau đó sẽ tiếp tục tạo các bản sao lưu vào các ngày 18,19,20. Tuy nhiên tới ngày 21/03/2023, khi hệ thống tạo bản sao lưu, bản sao lưu của ngày 17/03/2023 sẽ tự động bị xoá. Để tìm hiểu thêm về cách định cấu hình chính sách lưu giữ vòng đời của bản sao lưu, hãy xem [Cấu trúc bộ lịch Policy](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649826\&src=contextnavpagetreemode).
+Sau khi tạo bản sao lưu, bạn có thể thực hiện xóa chúng. Chúng tôi khuyên bạn nên sử dụng vBackup Policy để tự động xóa các bản sao lưu mà bạn không cần nữa bằng cách định cấu hình vòng đời của bạn khi bạn tạo gói sao lưu. Ví dụ: Nếu bạn tạo bản sao lưu với một chính sách sao lưu được lựa chọn tần suất sao lưu theo **Hàng Ngày** lúc **12:00** và số bản lưu **4** vào ngày 16/03/2023. Vào ngày hôm sau 17/03/2023, lúc 12:00 trưa, hệ thống theo khung giờ trên sẽ tạo bản sao lưu cho máy chủ ảo, và lưu giữ dưới hệ thống, sau đó sẽ tiếp tục tạo các bản sao lưu vào các ngày 18,19,20. Tuy nhiên tới ngày 21/03/2023, khi hệ thống tạo bản sao lưu, bản sao lưu của ngày 17/03/2023 sẽ tự động bị xoá. Để tìm hiểu thêm về cách định cấu hình chính sách lưu giữ vòng đời của bản sao lưu, hãy xem [Cấu trúc bộ lịch Policy](../quan-ly-dinh-danh-va-truy-cap-iam-cho-vserver/cac-truong-hop-su-dung-iam.md).
 
 Tuy nhiên, bạn có thể muốn xóa thủ công một hoặc nhiều điểm khôi phục. Ví dụ:
 
@@ -12,7 +12,7 @@ Bạn tạo bản Backup Now. Đây là những điểm khôi phục mà vBackup
 Nếu bạn tiếp tục lưu trữ các điểm khôi phục không cần thiết trong tài khoản của mình. Điều này có thể làm tăng chi phí lưu trữ của bạn.
 {% endhint %}
 
-ạn không còn muốn một gói dự phòng hoạt động theo cách bạn đã định cấu hình. Việc cập nhật kế hoạch sao lưu sẽ ảnh hưởng đến các điểm khôi phục trong tương lai mà nó sẽ tạo, nhưng không ảnh hưởng đến điểm khôi phục mà nó đã tạo. Để tìm hiểu thêm, hãy xem [Cập nhật chính sách sao lưu](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649848).
+ạn không còn muốn một gói dự phòng hoạt động theo cách bạn đã định cấu hình. Việc cập nhật kế hoạch sao lưu sẽ ảnh hưởng đến các điểm khôi phục trong tương lai mà nó sẽ tạo, nhưng không ảnh hưởng đến điểm khôi phục mà nó đã tạo. Để tìm hiểu thêm, hãy xem [Cập nhật chính sách sao lưu](chinh-sach-sao-luu/).
 
 ***
 

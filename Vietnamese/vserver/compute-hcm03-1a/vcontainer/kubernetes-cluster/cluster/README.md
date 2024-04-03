@@ -6,13 +6,13 @@ Cluster trong điện toán đám mây là một khái niệm quan trọng trong
 
 #### Chủ đề <a href="#cluster-chude" id="cluster-chude"></a>
 
-* [Tạo Cluster](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59806526\&src=contextnavpagetreemode)
-* [Tải tệp Config Kubernetes Cluster](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59806513\&src=contextnavpagetreemode)
-* [Xoá Kubernetes Cluster](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804441\&src=contextnavpagetreemode)
-* [Cho phép integrate vLB vào dịch vụ Containers của VNG CLOUD](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650186\&src=contextnavpagetreemode)
-* [Bật Highly Available cho Cluster](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59806549\&src=contextnavpagetreemode)
-* [Bật Auto Healing cho Cluster](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59806555\&src=contextnavpagetreemode)
-* [Bật Ingress Control cho Cluster](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59806559\&src=contextnavpagetreemode)
-* [Bật Auto Scaling cho Cluster](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59806563\&src=contextnavpagetreemode)
+* [Tạo Cluster](tao-cluster.md)
+* [Tải tệp Config Kubernetes Cluster](tai-tep-config-kubernetes-cluster.md)
+* [Xoá Kubernetes Cluster](xoa-kubernetes-cluster.md)
+* [Cho phép integrate vLB vào dịch vụ Containers của VNG CLOUD](cho-phep-integrate-vlb-vao-dich-vu-containers-cua-vng-cloud.md)
+* [Bật Highly Available cho Cluster](bat-highly-available-cho-cluster.md)
+* [Bật Auto Healing cho Cluster](bat-auto-healing-cho-cluster.md)
+* [Bật Ingress Control cho Cluster](bat-ingress-control-cho-cluster.md)
+* [Bật Auto Scaling cho Cluster](bat-auto-scaling-cho-cluster.md)
 
 \

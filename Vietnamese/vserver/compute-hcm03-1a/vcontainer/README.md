@@ -14,5 +14,5 @@ Kubernetes quản lý các cụm phiên bản vServer và chạy các vùng ch�
 
 #### Chủ đề <a href="#vcontainer-chude" id="vcontainer-chude"></a>
 
-* [Kubernetes Cluster](https://docs.vngcloud.vn/display/vServer/Kubernetes+Cluster)
-* [Sử dụng Persistent Volume (PV) và Persistent Volume Claim(PVC) với VNG Cloud](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59801643)
+* [Kubernetes Cluster](kubernetes-cluster/)
+* [Sử dụng Persistent Volume (PV) và Persistent Volume Claim(PVC) với VNG Cloud](persistent-volume-pv-va-persistent-volume-claim-pvc-voi-vng-cloud/)

@@ -21,7 +21,7 @@ Khi bạn sử dụng dịch vụ vBackup. Trong lần đầu tiên, chúng tôi
 1. Mở bảng điều khiển vBackup tại [https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-server](https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-server)
 2. Chọn **Tạo Backup Server**
 3. Chọn loại tài nguyên bạn muốn sao lưu, ở đây là danh sách Server và Volume đính kèm với nó
-4. Chọn **Policy** bạn muốn áp dụng cho bản sao lưu. Lưu ý bạn cần tạo một Policy để có thể thêm vào cho bản Backup Server của mình. Xem hướng dẫn tạo Policy tại [Tạo, chỉnh sửa, xóa chính sách sao lưu](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649848\&src=contextnavpagetreemode)
+4. Chọn **Policy** bạn muốn áp dụng cho bản sao lưu. Lưu ý bạn cần tạo một Policy để có thể thêm vào cho bản Backup Server của mình. Xem hướng dẫn tạo Policy tại [Tạo, chỉnh sửa, xóa chính sách sao lưu](chinh-sach-sao-luu/tao-chinh-sua-xoa-chinh-sach-sao-luu.md)
 5. Nơi lưu trữ mặc định sẽ nằm tại **vStorage,** nên lưu ý rằng khi thực hiện thao tác chọn tài nguyên để tạo bản sao lưu, hệ thống sẽ tính toán và đưa ra kết quả dự đoán về dung lượng tạo bản sao lưu, để việc tạo không bị gián đoạn và gặp sự cố cần đảm bảo rằng dung lượng nơi lưu trữ của bạn tại vStorage là đủ dùng
 6. Nhập thông tin **ghi chú** cho các bản sao lưu của bạn để tạo sự gợi nhớ&#x20;
 7. Chọn **Tạo Backup Server**

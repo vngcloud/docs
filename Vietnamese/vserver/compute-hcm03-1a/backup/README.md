@@ -11,7 +11,7 @@ Dịch vụ vBackup cung cấp cho bạn các chức năng chính bao gồm:
 
 ### **Phân bố thành phần** <a href="#backup-phanbothanhphan" id="backup-phanbothanhphan"></a>
 
-![](https://docs.vngcloud.vn/download/attachments/49649794/image2023-3-16\_17-9-40.png?version=1\&modificationDate=1678961454000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/49649794/image2023-3-16_17-9-40.png?version=1&#x26;modificationDate=1678961454000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 #### **Diễn giải các thành phần:** <a href="#backup-diengiaicacthanhphan" id="backup-diengiaicacthanhphan"></a>
 
@@ -27,12 +27,11 @@ Dịch vụ vBackup cung cấp cho bạn các chức năng chính bao gồm:
 
 #### Chủ đề <a href="#backup-chude" id="backup-chude"></a>
 
-* [Tạo bản sao lưu cho máy chủ ảo theo bộ lịch Policy](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649803\&src=contextnavpagetreemode)
-* [Tạo bản sao lưu ngay lập tức (Backup Now) cho bản Backup Server](https://docs.vngcloud.vn/pages/viewpage.action?pageId=63767444\&src=contextnavpagetreemode)
-* [Tạo bản sao lưu ngay lập tức (Backup Now) cho máy chủ ảo](https://docs.vngcloud.vn/pages/viewpage.action?pageId=63767446\&src=contextnavpagetreemode)
-* [Thay đổi chính sách sao lưu](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804947\&src=contextnavpagetreemode)
-* [Khôi phục bản sao lưu](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649812\&src=contextnavpagetreemode)
-* [Xóa bản sao lưu](https://docs.vngcloud.vn/pages/viewpage.action?pageId=63767454\&src=contextnavpagetreemode)
-* [Chính sách sao lưu](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649834\&src=contextnavpagetreemode)
+* [Tạo bản sao lưu cho máy chủ ảo theo bộ lịch Policy](tao-ban-sao-luu-cho-may-chu-ao-theo-bo-lich-policy.md)
+* [Tạo bản sao lưu ngay lập tức (Backup Now) cho bản Backup Server](tao-ban-sao-luu-ngay-lap-tuc-backup-now.md)
+* [Thay đổi chính sách sao lưu](thay-doi-chinh-sach-sao-luu.md)
+* [Khôi phục bản sao lưu](khoi-phuc-ban-sao-luu.md)
+* [Xóa bản sao lưu](xoa-ban-sao-luu.md)
+* [Chính sách sao lưu](chinh-sach-sao-luu/)
 
 \
