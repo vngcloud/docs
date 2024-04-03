@@ -2,14 +2,14 @@
 
 #### Để quản lý vLB với Terraform, bạn cần làm các bước sau đây: <a href="#quanlyvlbvoiterraform-dequanlyvlbvoiterraform-bancanlamcacbuocsauday" id="quanlyvlbvoiterraform-dequanlyvlbvoiterraform-bancanlamcacbuocsauday"></a>
 
-**Bước 1:** Cài đặt Terraform CLI như hướng dẫn tại [đây](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803261)
+**Bước 1:** Cài đặt Terraform CLI như hướng dẫn tại [đây](cai-dat-terraform.md)
 
-**Bước 2:** Để có thể thực hiện quản lý vLB với Terraform bạn cần tạo **Service account** từ Root account trên trang chủ **IAM** (xem hướng dẫn cách tạo Service account và sử dụng IAM [tại đây](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802235)), trong trường hợp này lấy ví dụ cho việc bạn muốn tạo Load Balancer với Terraform cần có các quyền (Policy) sau:
+**Bước 2:** Để có thể thực hiện quản lý vLB với Terraform bạn cần tạo **Service account** từ Root account trên trang chủ **IAM** (xem hướng dẫn cách tạo Service account và sử dụng IAM [tại đây](../../../vdb/relational-database-service-rds/quan-ly-thong-tin-rds-instance.md)), trong trường hợp này lấy ví dụ cho việc bạn muốn tạo Load Balancer với Terraform cần có các quyền (Policy) sau:
 
 * CreateLoadBalancer
 * GetLoadBalancer
 
-hoặc bạn có thể cấp quyền **vLBFullAccess** (nên có quyền **vLBReadOnlyAccess** để get thông tin resource sau khi tạo xong). Tham khảo thêm về cách phân quyền cho từng **Resource, Action** tương ứng [{Trang phân quyền IAM}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802254).
+hoặc bạn có thể cấp quyền **vLBFullAccess** (nên có quyền **vLBReadOnlyAccess** để get thông tin resource sau khi tạo xong). Tham khảo thêm về cách phân quyền cho từng **Resource, Action** tương ứng [{Trang phân quyền IAM}](../quan-ly-dinh-danh-va-truy-cap-iam-cho-vserver/cac-hanh-dong-tai-nguyen-va-dieu-kien-can-cho-phan-quyen-truy-cap-vserver.md).
 
 > **Ghi chú:** Mỗi hành động quản lý tài nguyên khác nhau sẽ yêu cầu các quyền khác nhau, vì thế điều cần thiết là phải thiết lập một bộ phân quyền hợp lý phù hợp với nhu cầu kinh doanh của bạn.
 
@@ -52,7 +52,7 @@ _chỉ để lại:_
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59803620/image2023-6-8_17-21-49.png?version=1&#x26;modificationDate=1686542335000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-* **subnet\_id**: chỉ định subnet id mà vServer sẽ được tạo trên đó, bạn có thể lấy từ [{Tab VPC}](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), nếu chưa khởi tạo bất cứ subnet nào bạn có thể xem hướng dẫn tại [{Trang tạo subnet}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039):
+* **subnet\_id**: chỉ định subnet id mà vServer sẽ được tạo trên đó, bạn có thể lấy từ [{Tab VPC}](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), nếu chưa khởi tạo bất cứ subnet nào bạn có thể xem hướng dẫn tại [{Trang tạo subnet}](../network/virtual-private-cloud-vpc.md):
 
 \
 

@@ -2,18 +2,18 @@
 
 ### **Cài đặt Terraform CLI** <a href="#quanlyvservervoiterraform-caidatterraformcli" id="quanlyvservervoiterraform-caidatterraformcli"></a>
 
-Để có thể quản lý vServer với Terraform bạn cần cài đặt Terraform CLI theo hướng dẫn [tại đây ](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803261)
+Để có thể quản lý vServer với Terraform bạn cần cài đặt Terraform CLI theo hướng dẫn [tại đây ](cai-dat-terraform.md)
 
 ***
 
 ### **Cấp quyền IAM cho việc sử dụng**  <a href="#quanlyvservervoiterraform-capquyeniamchoviecsudung" id="quanlyvservervoiterraform-capquyeniamchoviecsudung"></a>
 
-Để có thể thực hiện quản lý vContainer với Terraform bạn cần tạo **Service account** từ Root account trên trang chủ **IAM** (xem hướng dẫn cách tạo Service account và sử dụng IAM [tại đây](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802235)), trong trường hợp này lấy ví dụ cho việc bạn muốn tạo Server với Terraform cần có các quyền (Policy) sau:
+Để có thể thực hiện quản lý vContainer với Terraform bạn cần tạo **Service account** từ Root account trên trang chủ **IAM** (xem hướng dẫn cách tạo Service account và sử dụng IAM [tại đây](../quan-ly-dinh-danh-va-truy-cap-iam-cho-vserver/)), trong trường hợp này lấy ví dụ cho việc bạn muốn tạo Server với Terraform cần có các quyền (Policy) sau:
 
 * CreateServer
 * GetServer
 
-hoặc bạn có thể cấp quyền **vServerFullAccess** (nên có quyền **vServerReadOnlyAccess** để get thông tin resource sau khi tạo xong). Tham khảo thêm về cách phân quyền cho từng **Resource, Action** tương ứng tại [{Trang phân quyền IAM}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802254).
+hoặc bạn có thể cấp quyền **vServerFullAccess** (nên có quyền **vServerReadOnlyAccess** để get thông tin resource sau khi tạo xong). Tham khảo thêm về cách phân quyền cho từng **Resource, Action** tương ứng tại [{Trang phân quyền IAM}](../quan-ly-dinh-danh-va-truy-cap-iam-cho-vserver/cac-hanh-dong-tai-nguyen-va-dieu-kien-can-cho-phan-quyen-truy-cap-vserver.md).
 
 > **Ghi chú:** Mỗi hành động quản lý tài nguyên khác nhau sẽ yêu cầu các quyền khác nhau, vì thế điều cần thiết là phải thiết lập một bộ phân quyền hợp lý phù hợp với nhu cầu kinh doanh của bạn.
 
@@ -96,7 +96,7 @@ _chỉ để lại:_
 
 
 
-* **network\_id**: chỉ định network id mà vServer sẽ được tạo trên đó, bạn có thể lấy từ tab [VPC](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), nếu chưa khởi tạo bất cứ network nào bạn có thể xem hướng dẫn [{Trang tạo network}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039):\
+* **network\_id**: chỉ định network id mà vServer sẽ được tạo trên đó, bạn có thể lấy từ tab [VPC](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), nếu chưa khởi tạo bất cứ network nào bạn có thể xem hướng dẫn [{Trang tạo network}](../network/virtual-private-cloud-vpc.md):\
 
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/49650384/image2023-6-9_9-55-7.png?version=1&#x26;modificationDate=1686279309000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
@@ -104,7 +104,7 @@ _chỉ để lại:_
 \
 
 
-* **subnet\_id**: chỉ định subnet id mà vServer sẽ được tạo trên đó, bạn có thể lấy từ [{Tab VPC}](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), nếu chưa khởi tạo bất cứ subnet nào bạn có thể xem hướng dẫn tại [{Trang tạo subnet}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039):
+* **subnet\_id**: chỉ định subnet id mà vServer sẽ được tạo trên đó, bạn có thể lấy từ [{Tab VPC}](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), nếu chưa khởi tạo bất cứ subnet nào bạn có thể xem hướng dẫn tại [{Trang tạo subnet}](../network/virtual-private-cloud-vpc.md):
 
 \
 
@@ -120,7 +120,7 @@ _chỉ để lại:_
 \
 
 
-* **ssh\_key\_id**: chỉ định ssh key sẽ được inject vào vServer, bạn có thể lấy ở [{Tab SSH Keys}](https://hcm-3.console.vngcloud.vn/vserver/v-server/ssh-key), nếu chưa khởi tạo bất kì ssh key nào bạn có thể xem tại [{](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[T](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[rang tạo SSH key](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901):&#x20;
+* **ssh\_key\_id**: chỉ định ssh key sẽ được inject vào vServer, bạn có thể lấy ở [{Tab SSH Keys}](https://hcm-3.console.vngcloud.vn/vserver/v-server/ssh-key), nếu chưa khởi tạo bất kì ssh key nào bạn có thể xem tại [{](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[T](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[rang tạo SSH key](../security/ssh-key-bo-khoa.md)[}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901):&#x20;
 
 \
 
@@ -130,7 +130,7 @@ _chỉ để lại:_
 \
 
 
-* **security\_group\_id\_list**: chỉ định danh sách security group id cần gắn vào vServer, bạn có thể lấy ở [{Tab Security Groups}](https://hcm-3.console.vngcloud.vn/vserver/network/sec-group), nếu cần tạo thêm security group bạn có thể xem tại [{Trang tạo Security Group}](https://docs.vngcloud.vn/display/vServer/Security+Groups)
+* **security\_group\_id\_list**: chỉ định danh sách security group id cần gắn vào vServer, bạn có thể lấy ở [{Tab Security Groups}](https://hcm-3.console.vngcloud.vn/vserver/network/sec-group), nếu cần tạo thêm security group bạn có thể xem tại [{Trang tạo Security Group}](../security/security-groups.md)
 
 \
 
@@ -181,4 +181,4 @@ và chọn **YES** để thực hiện việc khởi tạo vServer thông qua Te
 
 **Bước 8**: Bạn có thể lên [Portal ](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)để xem Server đang được khởi tạo từ Terraform:
 
-![](https://docs.vngcloud.vn/download/attachments/49650384/image2023-6-9\_10-13-51.png?version=1\&modificationDate=1686280432000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/49650384/image2023-6-9_10-13-51.png?version=1&#x26;modificationDate=1686280432000&#x26;api=v2" alt=""><figcaption></figcaption></figure>

@@ -23,10 +23,10 @@ Bản thân Terraform không có giao diện người dùng đồ họa, thay v�
 
 #### Chủ đề <a href="#terraform-chude" id="terraform-chude"></a>
 
-* [Cài đặt Terraform](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803261\&src=contextnavpagetreemode)
-* [Quản lý vServer với Terraform](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650384\&src=contextnavpagetreemode)
-* [Quản lý vContainer với Terraform](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803481\&src=contextnavpagetreemode)
-* [Quản lý vLB với Terraform](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803620\&src=contextnavpagetreemode)
-* [Tài liệu tham chiếu](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650397\&src=contextnavpagetreemode)
+* [Cài đặt Terraform](cai-dat-terraform.md)
+* [Quản lý vServer với Terraform](quan-ly-vserver-voi-terraform.md)
+* [Quản lý vContainer với Terraform](quan-ly-vcontainer-voi-terraform.md)
+* [Quản lý vLB với Terraform](quan-ly-vlb-voi-terraform.md)
+* [Tài liệu tham chiếu](tai-lieu-tham-chieu.md)
 
 \

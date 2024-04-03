@@ -16,7 +16,7 @@ Tại Profile information, click chọn và đặt tên cho profile &  instance,
 
 * **IMAGE:** Chọn trong danh sách OS có sẵn  &#x20;
 
-Bạn cũng có thể chọn danh sách Image bạn đã tạo (Xem hướng dẫn [Tạo Image cho Server](https://docs.vngcloud.vn/display/vServer/Image))&#x20;
+Bạn cũng có thể chọn danh sách Image bạn đã tạo (Xem hướng dẫn [Tạo Image cho Server](../image.md))&#x20;
 
 * **FLAVOR**&#x20;
 * **VOLUME**&#x20;

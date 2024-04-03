@@ -6,7 +6,7 @@ VNG Cloud cung cấp terraform provider để người dùng có thể quản l�
 
 | Tài liệu                                                                            | Mô tả                                               |
 | ----------------------------------------------------------------------------------- | --------------------------------------------------- |
-| [Cài Đặt](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650381)           | Hướng dẫn cài đặt và cấu hình Terraform             |
+| Cài Đặt                                                                             | Hướng dẫn cài đặt và cấu hình Terraform             |
 | [References](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs) | Tài liệu các resource mà VNG Cloud Terraform hỗ trợ |
 
 ### **VNG Cloud API** <a href="#apis-and-iac-vngcloudapi" id="apis-and-iac-vngcloudapi"></a>
