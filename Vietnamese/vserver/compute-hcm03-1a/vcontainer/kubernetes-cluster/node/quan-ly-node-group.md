@@ -8,7 +8,7 @@ Bạn có thể tạo một hoặc nhiều Node Group để quản lý các Node
 
 Bạn không phải trả thêm phí khi sử dụng các Node Group được quản lý bởi VNG Cloud, bạn chỉ phải trả phí cho các tài nguyên Kubernetes Cluster khởi tạo. Chúng bao gồm các cấu hình Master Node, Minion Node, ổ đĩa, số giờ hoạt động của Kubernetes Cluster và bất kỳ cơ sở hạ tầng VNG Cloud nào khác. Có yêu cầu phí tối thiểu đối với tài khoản trả trước và tính toán lại vào cuối tháng.
 
-Để bắt đầu với Kubernetes Cluster mới và Node Group được quản lý, hãy xem [Bắt đầu với Kubernetes – Bảng điều khiển quản lý vServer.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59806313)
+Để bắt đầu với Kubernetes Cluster mới và Node Group được quản lý, hãy xem [Bắt đầu với Kubernetes – Bảng điều khiển quản lý vServer.](../bat-dau-voi-kubernetes-cluster/)
 
 Để thêm một Node Group được quản lý vào một Cluster hiện có, hãy xem [Tạo Node Group](https://docs.vngcloud.vn/pages/viewpage.action?pageId=63766723).
 

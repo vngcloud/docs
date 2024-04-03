@@ -16,4 +16,4 @@ Vì thế, Auto Healing Clusters là một phương tiện quan trọng để đ
 
 ### **Bật Auto Healing** <a href="#batautohealingchocluster-batautohealing" id="batautohealingchocluster-batautohealing"></a>
 
-Để bật Auto Healing cho Kubernetes Cluster của bạn vui lòng chọn **Bật Auto Healing** ở mục **Tùy chọn nâng cao** tại màn hình tạo mới Kubernetes Cluster, bạn có thể xem quy trình khởi tạo Kubernetes Cluster tại [Bước 2: Khởi tạo dịch vụ K8S](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650154)
+Để bật Auto Healing cho Kubernetes Cluster của bạn vui lòng chọn **Bật Auto Healing** ở mục **Tùy chọn nâng cao** tại màn hình tạo mới Kubernetes Cluster, bạn có thể xem quy trình khởi tạo Kubernetes Cluster tại [Bước 2: Khởi tạo dịch vụ K8S](../bat-dau-voi-kubernetes-cluster/buoc-2-khoi-tao-dich-vu-k8s.md)

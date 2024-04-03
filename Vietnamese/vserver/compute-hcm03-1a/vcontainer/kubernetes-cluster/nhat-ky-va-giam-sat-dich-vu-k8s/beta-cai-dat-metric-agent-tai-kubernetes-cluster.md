@@ -6,7 +6,7 @@ Bạn có thể cài đặt vMonitor Platform Metric Agent vào Kubernetes Clust
 
 #### **Các bước chuẩn bị trước khi cài đặt** <a href="#id-beta-caidatmetricagenttaikubernetescluster-cacbuocchuanbitruockhicaidat" id="id-beta-caidatmetricagenttaikubernetescluster-cacbuocchuanbitruockhicaidat"></a>
 
-&#x20;      1\. Kiểm tra bạn đã có Metric Quota và quota chưa chạm mức giới hạn, nếu chưa có bạn cần thực hiện mua Quota Metric tại [đây](https://docs.vngcloud.vn/pages/viewpage.action?pageId=31555658).
+&#x20;      1\. Kiểm tra bạn đã có Metric Quota và quota chưa chạm mức giới hạn, nếu chưa có bạn cần thực hiện mua Quota Metric tại [đây](../../../../../vmonitor-platform/vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/metric-quota-class.md).
 
 &#x20;      **2. Tạo Service Account và gắn policy: vMonitorMetricPush để có đủ quyền đẩy Metric về vMonitor**
 

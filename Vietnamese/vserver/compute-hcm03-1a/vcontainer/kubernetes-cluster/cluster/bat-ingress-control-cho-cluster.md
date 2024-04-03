@@ -22,4 +22,4 @@ Các đặc điểm và lợi ích của Ingress Control bao gồm:
 
 ### **Bật Ingress Control** <a href="#batingresscontrolchocluster-batingresscontrol" id="batingresscontrolchocluster-batingresscontrol"></a>
 
-Để bật Ingress Control cho Kubernetes Cluster của bạn vui lòng chọn Bật Ingress Control ở mục Tùy chọn nâng cao tại màn hình tạo mới Kubernetes Cluster, bạn có thể xem quy trình khởi tạo Kubernetes Cluster tại [Bước 2: Khởi tạo dịch vụ K8S](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650154)
+Để bật Ingress Control cho Kubernetes Cluster của bạn vui lòng chọn Bật Ingress Control ở mục Tùy chọn nâng cao tại màn hình tạo mới Kubernetes Cluster, bạn có thể xem quy trình khởi tạo Kubernetes Cluster tại [Bước 2: Khởi tạo dịch vụ K8S](../bat-dau-voi-kubernetes-cluster/buoc-2-khoi-tao-dich-vu-k8s.md)

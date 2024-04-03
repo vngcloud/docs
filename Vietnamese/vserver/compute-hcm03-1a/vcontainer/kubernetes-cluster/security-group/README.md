@@ -28,7 +28,7 @@ Cấu hình master node security group và minion node security group là một 
 
 #### Chủ đề <a href="#securitygroup-chude" id="securitygroup-chude"></a>
 
-* [Cập nhật Master security group](https://docs.vngcloud.vn/pages/viewpage.action?pageId=63767428\&src=contextnavpagetreemode)
-* [Cập nhật Minion security group](https://docs.vngcloud.vn/pages/viewpage.action?pageId=63767432\&src=contextnavpagetreemode)
+* [Cập nhật Master security group](cap-nhat-master-security-group.md)
+* [Cập nhật Minion security group](cap-nhat-minion-security-group.md)
 
 \
