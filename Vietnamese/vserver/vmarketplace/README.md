@@ -1,6 +1,6 @@
 # vMarketplace
 
-Là nơi tổng hợp nhiều ứng dụng phổ biến phù hợp cho các nghành khác nhau như giải trí, ngân hàng, bất động sản, bán lẻ, sản xuất. Các ứng dụng được vMarketplace hỗ trợ build sẵn thành các image, giúp người dùng bỏ qua các bước tìm kiếm và cài đặt rườm ra để có thể triển khai máy chủ ảo một cách nhanh nhất chỉ qua hai bước [Khởi tạo và cài đặt ứng dụng](https://docs.vngcloud.vn/pages/viewpage.action?pageId=9175734)
+Là nơi tổng hợp nhiều ứng dụng phổ biến phù hợp cho các nghành khác nhau như giải trí, ngân hàng, bất động sản, bán lẻ, sản xuất. Các ứng dụng được vMarketplace hỗ trợ build sẵn thành các image, giúp người dùng bỏ qua các bước tìm kiếm và cài đặt rườm ra để có thể triển khai máy chủ ảo một cách nhanh nhất chỉ qua hai bước [Khởi tạo và cài đặt ứng dụng](vmarketplace-giao-dien-cu/application-software-installation-skip-to-end-of-metadatago-to-start-of-metadata/khoi-tao-va-cai-dat-ung-dung.md)
 
 &#x20;vMarketplace hiện tại đang cung cấp danh sách các ứng dụng như sau&#x20;
 

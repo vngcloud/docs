@@ -19,7 +19,4 @@ Chào mừng bạn đến với **vMarketplace - VNG cloud**, một trung tâm c
 | 11  | Storage Gateway       | <p><br></p> | Storage & Backup     |
 | 12  | Filecloud             | <p><br></p> | Storage & Backup     |
 
-#### Chủ đề liên quan <a href="#vmarketplace-newversion-chudelienquan" id="vmarketplace-newversion-chudelienquan"></a>
-
-* Tìm hiểu chung về các ứng dụng Networking & Security: [Networking & Security Applications](https://docs.vngcloud.vn/pages/viewpage.action?pageId=67993824)
-* Tìm hiểu chung về các ứng dụng Storage & Backup: [Storage & Backup Applications](https://docs.vngcloud.vn/pages/viewpage.action?pageId=67993822)
+#### &#x20;<a href="#vmarketplace-newversion-chudelienquan" id="vmarketplace-newversion-chudelienquan"></a>

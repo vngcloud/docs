@@ -1,6 +1,6 @@
 # Quản lý định danh và truy cập (IAM) cho vServer
 
-Quản lý định danh và truy cập (IAM) cho máy ảo là một hệ thống quản lý và kiểm soát quyền truy cập vào các máy ảo (VM) và tài nguyên của chúng trong môi trường điện toán đám mây. Nó cung cấp một cách để kiểm soát ai có thể truy cập máy ảo và những hành động họ có thể thực hiện trên đó. Trước tiên, chúng tôi khuyên bạn nên xem lại các chủ đề giới thiệu các khái niệm cơ bản và các tùy chọn có sẵn để bạn quản lý quyền truy cập vào tài nguyên vServer của mình. Để biết thêm thông tin, hãy xem [IAM - Identity and Access Management](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805240).
+Quản lý định danh và truy cập (IAM) cho máy ảo là một hệ thống quản lý và kiểm soát quyền truy cập vào các máy ảo (VM) và tài nguyên của chúng trong môi trường điện toán đám mây. Nó cung cấp một cách để kiểm soát ai có thể truy cập máy ảo và những hành động họ có thể thực hiện trên đó. Trước tiên, chúng tôi khuyên bạn nên xem lại các chủ đề giới thiệu các khái niệm cơ bản và các tùy chọn có sẵn để bạn quản lý quyền truy cập vào tài nguyên vServer của mình. Để biết thêm thông tin, hãy xem [IAM - Identity and Access Management](../../../identity-and-access-management-iam.md).
 
 IAM dành cho máy ảo thường bao gồm các chức năng như quản lý định danh, xác thực, ủy quyền và kiểm tra. Nó cho phép quản trị viên xác định các chính sách chỉ định ai có thể truy cập máy ảo và những hành động họ có thể thực hiện trên máy ảo, chẳng hạn như khởi động, dừng hoặc sửa đổi máy ảo.
 
@@ -67,7 +67,7 @@ Tạo chính sách truy cập chỉ định những hành động mà mỗi nhó
 
 Quan trọng
 
-Để xem thông tin chi tiết và ý nghĩa của hành động (Action), tài nguyên (Resource), và điều kiện cần (Request conditions) nhằm thiết lập bộ chính sách truy cập (Policies) hoàn chỉnh, vui lòng xem nội dung tại [trang cấu hình Policies](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802254)
+Để xem thông tin chi tiết và ý nghĩa của hành động (Action), tài nguyên (Resource), và điều kiện cần (Request conditions) nhằm thiết lập bộ chính sách truy cập (Policies) hoàn chỉnh, vui lòng xem nội dung tại [trang cấu hình Policies](cac-hanh-dong-tai-nguyen-va-dieu-kien-can-cho-phan-quyen-truy-cap-vserver.md)
 
 ***
 

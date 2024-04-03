@@ -26,7 +26,7 @@ Khi Công ty mở rộng, Sasha và Alex bắt đầu thuê nhân viên với nh
 
 Sau đó họ gán các chính sách này cho các User account hoặc Group với vai trò tương ứng và cấp Username & password của User account cho nhân viên để tiến hành truy cập sử dụng các dịch vụ và tài nguyên.
 
-Để hướng dẫn việc triển khai Trung tâm nhận dạng IAM, Sasha và Alex đã tham khảo phần "[Bắt đầu](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802235)" toàn diện trong Hướng dẫn sử dụng Trung tâm nhận dạng VNG Cloud IAM. Hướng dẫn từng bước này cung cấp cho họ hướng dẫn chi tiết về cấu hình ban đầu. Ngoài ra, họ đã tham khảo phần "[Danh sách phân quyền vào tài khoản VNG Cloud](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802254)" của hướng dẫn sử dụng để hiểu rõ hơn về việc cung cấp quyền truy cập của người dùng trong Trung tâm nhận dạng IAM.
+Để hướng dẫn việc triển khai Trung tâm nhận dạng IAM, Sasha và Alex đã tham khảo phần "[Bắt đầu](./)" toàn diện trong Hướng dẫn sử dụng Trung tâm nhận dạng VNG Cloud IAM. Hướng dẫn từng bước này cung cấp cho họ hướng dẫn chi tiết về cấu hình ban đầu. Ngoài ra, họ đã tham khảo phần "[Danh sách phân quyền vào tài khoản VNG Cloud](cac-hanh-dong-tai-nguyen-va-dieu-kien-can-cho-phan-quyen-truy-cap-vserver.md)" của hướng dẫn sử dụng để hiểu rõ hơn về việc cung cấp quyền truy cập của người dùng trong Trung tâm nhận dạng IAM.
 
 Khi Công ty đổi mới tiếp tục phát triển, Sasha và Alex vẫn thận trọng trong việc xem xét và cập nhật quyền truy cập cho từng nhân viên. Họ thường xuyên điều chỉnh quyền và cấp độ truy cập để đảm bảo rằng nhân viên có đặc quyền truy cập phù hợp với vai trò và trách nhiệm của họ trong tổ chức hoặc thu hồi lại nếu cần thiết.
 
@@ -34,7 +34,7 @@ Khi Công ty đổi mới tiếp tục phát triển, Sasha và Alex vẫn thậ
 
 ## **Trường hợp sử dụng IAM với vServer** <a href="#cactruonghopsudungiam-truonghopsudungiamvoivserver" id="cactruonghopsudungiam-truonghopsudungiamvoivserver"></a>
 
-Một công ty như Example thường sử dụng IAM để tương tác với các dịch vụ như VNG Cloud vServer. Để hiểu phần này của trường hợp sử dụng, bạn cần có hiểu biết cơ bản về VNG Cloud vServer. Để biết thêm thông tin về VNG Cloud vServer, hãy xem [Hướng dẫn sử dụng vServer](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647861).
+Một công ty như Example thường sử dụng IAM để tương tác với các dịch vụ như VNG Cloud vServer. Để hiểu phần này của trường hợp sử dụng, bạn cần có hiểu biết cơ bản về VNG Cloud vServer. Để biết thêm thông tin về VNG Cloud vServer, hãy xem [Hướng dẫn sử dụng vServer](../trai-nghiem-san-pham-vserver/).
 
 ### **Quyền vServer cho nhóm người dùng** <a href="#cactruonghopsudungiam-quyenvserverchonhomnguoidung" id="cactruonghopsudungiam-quyenvserverchonhomnguoidung"></a>
 

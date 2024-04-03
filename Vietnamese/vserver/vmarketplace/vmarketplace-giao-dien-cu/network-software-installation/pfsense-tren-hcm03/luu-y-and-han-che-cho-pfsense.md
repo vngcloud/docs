@@ -4,7 +4,7 @@
 
 Default MTU của Pfsense là **1500**. Bạn cần chỉnh thông số này cho phù hợp cấu hình của VNG Cloud là **1450**.
 
-Để update thông số này, bạn truy cập vào WebGUI. Bạn tham khảo link sau để bật WebGUI: [Khởi tạo Pfsense trên HCM03](https://docs.vngcloud.vn/pages/viewpage.action?pageId=22938978).
+Để update thông số này, bạn truy cập vào WebGUI. Bạn tham khảo link sau để bật WebGUI: [Khởi tạo Pfsense trên HCM03](khoi-tao-pfsense-tren-hcm03.md).
 
 Tại WebGui:
 
