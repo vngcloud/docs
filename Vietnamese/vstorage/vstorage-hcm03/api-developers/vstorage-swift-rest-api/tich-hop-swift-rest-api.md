@@ -12,3 +12,5 @@
    4. Nhập **Mật khẩu** tương ứng của **Tên người dùng** mà bạn vừa chọn. Cặp Swift user và mật khẩu được bạn tạo và quản lý thông qua hệ thống vIAM. Bạn có thể chọn [Nhấn vào đây để vào vIAM và quản lý Swift user](https://hcm-3.console.vngcloud.vn/iam/vstorage-credentials/swift) để chúng tôi điều hướng bạn tới hệ thống vIAM và chi tiết là các màn hình quản lý Swift user. Để biết thêm thông tin về Swift user, hãy xem tại [Khởi tạo Swift user](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804859).
    5. **URL cấp quyền**: mặc định chúng tôi sẽ hiển thị URL xác thực quyền tương ứng với Region mà bạn chọn.&#x20;
 5. Sau khi hoàn tất chọn cấu hình **Cấp quyền**, chọn **Xem APIs** để chuyển tới màn hình **Cấu hình**. Bạn luôn có thể quay lại đây để thay đổi thông tin **Cấp quyền** của mình, sau đó chọn lại **Xem APIs** để cập nhật danh sách Swift Rest API theo thông số mới của bạn.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Tich_hop_Swift_Rest_API.gif" alt=""><figcaption></figcaption></figure>

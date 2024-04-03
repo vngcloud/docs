@@ -13,6 +13,8 @@
 Sau khi chọn Xóa, hệ thống sẽ tự động chuyển ra màn hình chính, nếu bạn thấy object vừa thực hiện biến mất khỏi danh sách thì bạn đã xoá thành công. Object lúc này đã được xóa vĩnh viễn khỏi hệ thống.
 
 **Lưu ý:** một khi object đã bị xóa khỏi hệ thống vStorage, bạn không thể phục hồi object đó.
+
+<figure><img src="../../../../.gitbook/assets/Xoa_object_container (1).gif" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Sử dụng vStorage API" %}

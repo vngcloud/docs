@@ -8,8 +8,8 @@ Chủ đề này mô tả ghi chú phát hành cho các tính năng của vServe
 
 #### Chủ đề <a href="#thongbaovacapnhat-chude" id="thongbaovacapnhat-chude"></a>
 
-* [2024](https://docs.vngcloud.vn/display/vServer/2024?src=contextnavpagetreemode)
-* [2023](https://docs.vngcloud.vn/display/vServer/2023?src=contextnavpagetreemode)
+* [2024](2024.md)
+* [2023](2023.md)
 
 
 

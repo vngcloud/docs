@@ -19,6 +19,8 @@ Màn hình **Thiết lập Tags** được hiển thị.
 4\. Chọn các nhãn bạn muốn gán cho object vừa chọn, các nhãn được ngăn cách bằng dấu phẩy (,). Chọn **Thêm** sau đó chọn **Cập nhật.**
 
 Sau khi thực hiện 4 bước trên bên, tags đã được thiết lập thành công cho object của bạn. Chúng tôi có giới hạn tổng số ký tự tối đa tất cả các tag của một object không được vượt quá (xem [phần phạm vi và giới hạn object](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648698)) nên chúng tôi khuyến khích bạn cân nhắc kỹ việc lựa chọn tag nào được gắn cho một object cũng như tổng số tag có thể được gắn cho object đó.
+
+<figure><img src="../../../../.gitbook/assets/Thiet_lap_tag.gif" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Sử dụng vStorage API" %}

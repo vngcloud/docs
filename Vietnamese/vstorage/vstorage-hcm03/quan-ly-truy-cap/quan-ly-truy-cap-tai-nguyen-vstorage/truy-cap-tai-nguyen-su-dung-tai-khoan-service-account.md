@@ -35,6 +35,10 @@
 7. Trong **Command Prompt**, thực hiện **trỏ** tới thư mục **s3cmd** vừa **extract**. Cú pháp trỏ thư mục như sau: cd <đường dẫn tới thư mục s3cmd>
 8. Lúc này, bạn đã có thể sử dụng các cú pháp để lấy **danh sách container, tải lên object**, cũng như thực hiện các thao tác khác tại [3rd party softwares](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649900).
 
+<figure><img src="../../../../.gitbook/assets/Tich_hop_s3cmd.gif" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/Su_dung_S3cmd.gif" alt=""><figcaption></figcaption></figure>
+
 Để biết thêm thông tin về cách tích hợp, sử dụng các công cụ khác, vui lòng xem thêm tại [3rd party softwares](https://docs.vngcloud.vn/display/VV/3rd+party+softwares).
 
 \

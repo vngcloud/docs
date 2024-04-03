@@ -28,6 +28,8 @@ Sau khi thực hiện 5 bước trên bên, metadata đã được thiết lập
 Hiện tại chúng tôi đang hỗ trợ 8 loại key metadata mặc định bao gồm: X-Robots-Tag, Cache-Control, X-Delete-At, Content-Disposition, Content-Encoding, Expires, Content-Language, Content-Type.
 
 Chúng tôi có giới hạn tổng số ký tự tối đa tất cả metadata của một object không được vượt quá (xem [phần phạm vi và giới hạn object](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648698)) nên chúng tôi khuyến khích bạn cân nhắc kỹ việc lựa chọn metadata nào được thiết lập cho một object cũng như tổng số metadata có thể được thiết lập cho object đó.
+
+<figure><img src="../../../../.gitbook/assets/Thiet_lap_metadata.gif" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Sử dụng vStorage API" %}

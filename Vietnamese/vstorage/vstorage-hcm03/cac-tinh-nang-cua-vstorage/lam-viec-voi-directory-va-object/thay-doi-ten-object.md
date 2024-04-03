@@ -15,6 +15,8 @@ Bạn cũng có thể thay đổi tên của object mà bạn đã tải lên m�
 4\. Nhập tên object mà bạn muốn thay đổi, tên object cần tuân thủ theo mô tả của chúng tôi tạo [Phạm vi giới hạn object](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648698).
 
 Khi thực hiện thay đổi tên của object, bạn không nên thay đổi phần kiểu tệp tin (ví dụ: abc.pdf, .pdf chính là kiểu tệp tin) trong tên của object. Việc thay đổi phần extension này của tên của object có thể làm thay đổi content type của object đó, điều này có thể gây lỗi khi bạn tải object xuống thiết bị cá nhân.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Doi_ten_object.gif" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title=" Sử dụng vStorage API" %}

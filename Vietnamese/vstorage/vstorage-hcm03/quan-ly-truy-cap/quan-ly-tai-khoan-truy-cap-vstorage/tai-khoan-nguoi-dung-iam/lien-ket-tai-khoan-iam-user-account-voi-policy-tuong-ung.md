@@ -10,3 +10,5 @@ Sau khi bạn đã khởi tạo IAM User Account và Policy mong muốn, tiếp 
 6. Chọn **Attach**.
 
 Sau khi bạn thực hiện 6 bước bên trên, lúc này bạn đã có thể sử dụng Service Account để truy cập vào tài nguyên vStorage. Để biết thêm thông tin, hãy xem tại [Truy cập tài nguyên sử dụng tài khoản người dùng IAM](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648948).
+
+<figure><img src="../../../../../.gitbook/assets/Lien_ket_IAM_User_Account_voi_Policy.gif" alt=""><figcaption></figcaption></figure>

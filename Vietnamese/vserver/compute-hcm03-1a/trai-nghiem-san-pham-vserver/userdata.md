@@ -6,13 +6,13 @@ Mục đích là cung cấp thêm dữ liệu cho Server để tùy chỉnh nhi�
 
 &#x20;VNG Cloud cho phép sử dụng các loại dữ liệu nhiều cách khác nhau, Mỗi loại dữ liệu sẽ được xử lý thường là dòng đầu tiên.
 
-* [Batch](https://docs.vngcloud.vn/display/vServer/UserData#UserData-Batch)
-* [PowerShell](https://docs.vngcloud.vn/display/vServer/UserData#UserData-PowerShell)
-* [Bash](https://docs.vngcloud.vn/display/vServer/UserData#UserData-Bash)
-* [Python](https://docs.vngcloud.vn/display/vServer/UserData#UserData-Python)
-* [Cloud config](https://docs.vngcloud.vn/display/vServer/UserData#UserData-Cloudconfig)
-* [Khởi tạo UserData khi kích hoạt vServer](https://docs.vngcloud.vn/display/vServer/UserData#UserData-Kh%E1%BB%9Fit%E1%BA%A1oUserDatakhik%C3%ADchho%E1%BA%A1tvServerCreateUserDataServer)
-* [Gợi ý điền câu lệnh cho UserData](https://docs.vngcloud.vn/display/vServer/UserData#UserData-G%E1%BB%A3i%C3%BD%C4%91i%E1%BB%81nc%C3%A2ul%E1%BB%87nhchoUserDataSuggestScriptUserData)
+* Batch
+* PowerShell
+* Bash
+* Python
+* Cloud config
+* Khởi tạo UserData khi kích hoạt vServer
+* Gợi ý điền câu lệnh cho UserData
 
 ## **Batch** <a href="#userdata-batch" id="userdata-batch"></a>
 
@@ -168,7 +168,7 @@ Việc thực thi việc đổi tên máy chủ _set\_hostname_ hay chạy các 
 
 * Tại bước cấu hình "**Network setting**" để thực hiện việc cấu hình nhập UserData thì ta sẽ chọn tùy chọn "**UserData**" như hình bên dưới.
 
-![](https://docs.vngcloud.vn/download/attachments/73761115/image2024-3-12\_10-31-40.png?version=1\&modificationDate=1710214301000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/73761115/image2024-3-12_10-31-40.png?version=1&#x26;modificationDate=1710214301000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 * Ta có thể tải lên (upload) file hoặc **điền những câu lệnh vào field nội dung** để thực thi việc cung cấp thông tin user vào Server. Tham khảo ở bên dưới mục "[Gợi ý điền câu lệnh cho UserData](https://docs.vngcloud.vn/display/vServer/UserData#UserData-SuggestScriptUserData)", VNG Cloud cung cấp gợi ý mặc định câu lệnh scripts để tiện việc cấu hình UserData.
 * Nếu thông tin người dùng UserData ở các tools đang sử dụng đã được mã hóa Base64 thì ta sẽ chọn vào "**User Data is base64 encoded**".
@@ -192,7 +192,7 @@ Trong đó với các thông tin:
 
 Kết quả hiển thị sẽ được hiển thị mặc định như sau trên giao diện người dùng:
 
-![](https://docs.vngcloud.vn/download/attachments/73761115/image2024-3-13\_16-54-33.png?version=1\&modificationDate=1710323674000\&api=v2\&effects=border-simple,blur-border)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/73761115/image2024-3-13_16-54-33.png?version=1&#x26;modificationDate=1710323674000&#x26;api=v2&#x26;effects=border-simple,blur-border" alt=""><figcaption></figcaption></figure>
 
 Lưu ý
 

@@ -15,6 +15,8 @@ Bạn cũng có thể sao chép object mà bạn đã tải lên qua các contai
 4\. Chọn container và directory nếu có mà bạn muốn sao chép object tới. Chúng tôi cũng hỗ trợ bạn tạo directory mới nếu directory bạn muốn sao chép tới chưa tồn tại.&#x20;
 
 Bạn có thể sao chép object qua các container trong một project. Hiện tại chúng tôi không hỗ trợ bạn sao chép object qua các project khác nhau.
+
+<figure><img src="../../../../.gitbook/assets/Sao_chep_object.gif" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Sử dụng vStorage API" %}

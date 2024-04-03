@@ -24,6 +24,8 @@ Sau khi tạo container, bạn không thể thay đổi tên của directory. Ch
 
 Sau khi bạn hoàn thành 5 bước được mô tả bên trên, directory đã được tạo. Bạn có thể tải directory lên directory này hoặc chia sẻ, xóa directory.
 
+<figure><img src="../../../../.gitbook/assets/Khoi_tao_directory.gif" alt=""><figcaption></figcaption></figure>
+
 2. **Sử dụng vStorage API**
 
 Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung cấp API cho phép bạn tích hợp với các ứng dụng, công cụ phía bạn của bạn với vStorage để lưu trữ dữ liệu.
@@ -102,6 +104,8 @@ vStorage cũng tương thích với các công cụ phía bạn sử dụng S3 p
 3\. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-3-6\_11-7-16.png?version=1\&modificationDate=1678075637000\&api=v2)hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-2-6\_10-20-54.png?version=1\&modificationDate=1678075522000\&api=v2)tại directory bạn muốn thực hiện xóa và chọn![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-3-6\_11-7-37.png?version=1\&modificationDate=1678075658000\&api=v2).
 
 Sau khi chọn Xóa, hệ thống sẽ tự động chuyển ra màn hình chính, nếu bạn thấy directory vừa thực hiện biến mất khỏi danh sách thì bạn đã xoá thành công. Directory và các directory thuộc directory lúc này đã được xóa vĩnh viễn khỏi hệ thống.
+
+<figure><img src="../../../../.gitbook/assets/Xoa_directory.gif" alt=""><figcaption></figcaption></figure>
 
 2. **Sử dụng vStorage API**
 

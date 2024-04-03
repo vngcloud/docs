@@ -25,3 +25,5 @@
 Sau khi bạn thực hiện 8 bước bên trên, policy cho vStorage đã được khởi tạo. Tiếp theo, bạn hãy gán nó vào IAM User Account theo hướng dẫn tại [Liên kết tài khoản IAM User Account với policy tương ứng](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804818).
 
 Ngoài các bước tạo policy đặc thù cho riêng bạn như trên, chúng tôi cũng cung cấp cho bạn một tập các policy mặc định với các quyền hạn đa dạng. Bạn có thể sử dụng tập policy này và liên kết trực tiếp chúng tới tài khoản IAM User Account. Để biết thêm thông tin về danh sách policy mặc định, tham khảo tại [Tính năng, tài nguyên vStorage và quyền truy cập](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648924).
+
+<figure><img src="../../../../../.gitbook/assets/Khoi_tao_policy.gif" alt=""><figcaption></figcaption></figure>

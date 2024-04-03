@@ -10,6 +10,8 @@
    2. Nhập **Client Secret** tương ứng của **Client ID** vừa nhập. Cặp Client ID và Client Secret được bạn tạo và quản lý thông qua hệ thống vIAM. Bạn có thể chọn [Click here to manage your Client ID.](https://hcm-3.console.vngcloud.vn/iam/service-accounts) để chúng tôi điều hướng bạn tới hệ thống vIAM và chi tiết là các màn hình quản lý Service Account. Chi tiết tham khảo tại [Khởi tạo tài khoản Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804832).
 5. Sau khi hoàn tất chọn cấu hình **Cấp quyền**, chọn **Xác thực** để chuyển tới màn hình **Cấu hình**. Bạn luôn có thể quay lại đây để thay đổi thông tin **Cấp quyền** của mình, sau đó chọn lại **Xác thực** để cập nhật danh sách S3 Rest API theo thông số mới của bạn.&#x20;
 
+<figure><img src="../../../../.gitbook/assets/Tich_hop_vStorage_API.gif" alt=""><figcaption></figcaption></figure>
+
 #### Trải nghiệm vStorage API ngay trên vStorage Portal <a href="#tichhopvstorageapi-trainghiemvstorageapingaytrenvstorageportal" id="tichhopvstorageapi-trainghiemvstorageapingaytrenvstorageportal"></a>
 
 Để trải nghiệm sử dụng vStorage API, bạn cần có ít nhất 1 Client ID, Client Secret( thông tin này lấy tại Service Account). Để tạo Service Account, tham khảo thêm tại [Khởi tạo tài khoản Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804832). Bạn có thể sử dụng Service Account này để tạo (hoặc xóa) nhiều container, container như một đơn vị lưu trữ (giống như một thư mục), trong mỗi container khách hàng có thể upload, get, delete nhiều object tương ứng (object ở đây được hiểu như một file, hoặc một folder con trong container).

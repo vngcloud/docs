@@ -12,3 +12,5 @@ Thực hiện theo các bước bên dưới để đăng nhập vào vStorage v
    Nếu trước đó bạn đã đăng nhập với tư cách người dùng IAM user account trong trình duyệt này, thì trình duyệt của bạn có thể nhớ địa chỉ tài khoản IAM user account. Nếu vậy, bạn sẽ thấy màn hình hiển thị ở bước 3. \
    Sau khi đăng nhập thành công với IAM user account, trên màn hình chính của vStorage sẽ thể hiện loại user mà bạn đang sử dụng để đăng nhập (Root user account hay IAM user account).
 6. Sau khi đăng nhập thành công, bạn có quyền truy cập và thực hiện các tính năng được cung cấp bởi dịch vụ vStorage trên các tài nguyên được cấp quyền cho bạn. Chi tiết về các tính năng vStorage hỗ trợ, bạn vui lòng tham khảo tại [Các tính năng của vStorage](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648407). Nếu tài khoản người dùng IAM của bạn chưa được cấp quyền thực hiện các tính năng của dịch vụ vStorage trên các tài nguyên, bạn vui lòng tham khảo [Phân quyền truy cập thông qua IAM](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648909).
+
+<figure><img src="../../../../.gitbook/assets/Su_dung_IAM.gif" alt=""><figcaption></figcaption></figure>

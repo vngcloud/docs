@@ -22,3 +22,4 @@ Lưu ý sau khi nhấn tạo Swift user, bạn cần **lưu lại cặp Username
 * Khi bạn bật thuộc tính Restriction by IAM của Swift user thành YES (**Restriction by IAM = YES**), Swift user này sẽ được quản lý và kiểm tra quyền hạn bởi hệ thống vIAM. Do đó để có thể sử dụng các Swift user này, bạn cần **liên kết chúng tới một Service Account** để chúng thừa hưởng quyền trên Service Account được liên kết đó. Chi tiết tham khảo tại [Liên kết S3 key, Swift user với tài khoản Service Account tương ứng](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804923).
 {% endhint %}
 
+<figure><img src="../../../../../../.gitbook/assets/Khoi_tao_SwiftUser.gif" alt=""><figcaption></figcaption></figure>

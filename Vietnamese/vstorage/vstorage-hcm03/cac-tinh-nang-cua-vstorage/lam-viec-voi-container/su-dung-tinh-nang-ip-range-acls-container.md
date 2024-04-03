@@ -25,5 +25,7 @@ Sau khi thực hiện 7 bước bên trên, bạn đã thiết lập thành côn
 Nếu bạn muốn tắt thiết lập IP range ACLs cho container của bạn, tức là mọi người dùng có quyền đều có thể truy cập vào tài nguyên mà không cần quan tâm tới địa chỉ IP, hãy lựa chọn **Tất cả IP/Subnet** khi thiết lập IP range ACLs.
 
 Sau khi thiết lập IP range ACLs, các yêu cầu S3/ HTTP (bao gồm các yêu cầu TempURL) đến container từ các IP/ Subnet không hợp lệ sẽ bị từ chối với mã lỗi trả về 403.
+
+<figure><img src="../../../../.gitbook/assets/Su_dung_tinh_nang_IP_range_ACLs_Container.gif" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}

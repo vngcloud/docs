@@ -62,7 +62,7 @@ Hướng dẫn này giúp bạn nhanh chóng khởi chạy **Server** đầu ti�
 
 **Option 3**: Khởi tạo vServer với **MY IMAGES** đã được tạo ra trước đó, nhằm phục vụ cho việc Clone Server đang chạy trên Cloud thành các Server mới hoặc Backup / Restore Server
 
-* Tại tab **My Images**, chọn images tương ứng cần để tạo vServer, chọn **Next**. Hoặc bạn có thể tạo riêng cho mình một Image bằng cách nhấn vào [**đây**](https://docs.vngcloud.vn/display/vServer/Image) _để xem hướng dẫn tạo MY IMAGES_
+* Tại tab **My Images**, chọn images tương ứng cần để tạo vServer, chọn **Next**. Hoặc bạn có thể tạo riêng cho mình một Image bằng cách nhấn vào [**đây**](../image.md) _để xem hướng dẫn tạo MY IMAGES_
 
 5\. Dưới mục **Instance type,** là danh sách các cấu hình Flavor, bạn có thể chọn cấu hình Flavor mong muốn cho Server của mình theo. **iot.v1.small1x1** được chúng tôi đề xuất như một cấu hình cơ bản mặc định để khởi tạo Server
 
@@ -76,9 +76,9 @@ Ngoài ra có thể thêm **Data Volume** vào Server trong quá trình khởi t
 
 \+  Tích vào ô Floating IP để gán Public IP cho Server (Nhấn vào [**đây**](https://docs.vngcloud.vn/display/vServer/Floating+IP) để xem hướng dẫn attach/ detach Floating IP)
 
-\+  **Security group** để quản lý bộ ACL - Access Control List cho Server. (Nhấp vào [**đây**](https://docs.vngcloud.vn/display/vServer/Security+Groups) để xem hướng dẫn tạo và quản lý Security group)
+\+  **Security group** để quản lý bộ ACL - Access Control List cho Server. (Nhấp vào [**đây**](../security/security-groups.md) để xem hướng dẫn tạo và quản lý Security group)
 
-\+  **SSH Key** để import vô Server trong quá trình khởi tạo. (Nhấp vào [**đây**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901) để xem hướng dẫn tạo SSH Key)
+\+  **SSH Key** để import vô Server trong quá trình khởi tạo. (Nhấp vào [**đây**](../security/ssh-key-bo-khoa.md) để xem hướng dẫn tạo SSH Key)
 
 \+  Thông tin **Authentication**: Empty: hệ thống sẽ tự động tạo và gắn password hoặc user tự tinh chỉnh và enable hay disable việc bỏ qua change password lần đầu.
 
@@ -92,4 +92,4 @@ Sau khi điền các thông tin cần thiết để khởi tạo Server, cần x
 
 Trên màn hình danh sách Server, bạn có thể xem trạng thái khởi chạy. Phải mất một thời gian ngắn để một Server khởi chạy, trạng thái ban đầu của nó đang chờ xử lý. Sau khi Server bắt đầu, trạng thái của nó chuyển sang đang chạy. Lưu ý rằng có thể mất vài phút để Server sẵn sàng để bạn có thể kết nối với nó. Kiểm tra xem Server của bạn đã vượt qua kiểm tra trạng thái chưa; bạn có thể xem thông tin này trong cột Kiểm tra trạng thái.
 
-Sau khi khởi tạo thành công Server, và trạng thái Server là **Active**, bạn có thể thực hiện theo hướng dẫn [{Đăng nhập vào Server}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650318) để thực hiện sử dụng Server của mình.
+Sau khi khởi tạo thành công Server, và trạng thái Server là **Active**, bạn có thể thực hiện theo hướng dẫn [{Đăng nhập vào Server}](../server/ket-noi-vao-may-chu-ao/) để thực hiện sử dụng Server của mình.

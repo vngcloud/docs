@@ -16,3 +16,5 @@
 10. Chọn **Back to list** để quay lại màn hình chứa danh sách Service Account.
 
 Sau khi bạn thực hiện 10 bước bên trên, một tài khoản Service Account đã được khởi tạo.
+
+<figure><img src="../../../../../.gitbook/assets/Khoi_tao_Service_Account.gif" alt=""><figcaption></figcaption></figure>

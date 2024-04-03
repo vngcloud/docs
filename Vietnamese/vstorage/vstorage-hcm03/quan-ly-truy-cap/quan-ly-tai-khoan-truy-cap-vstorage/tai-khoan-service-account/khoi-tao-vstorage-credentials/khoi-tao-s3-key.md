@@ -24,3 +24,4 @@ Lưu ý sau khi nhấn tạo S3 key, bạn cần **lưu lại cặp Access Key/S
 
 {% endhint %}
 
+<figure><img src="../../../../../../.gitbook/assets/Khoi_tao_S3key.gif" alt=""><figcaption></figcaption></figure>

@@ -14,10 +14,23 @@ Bạn đã tải object lên một container. Lúc này bạn nhận ra object m
 4. &#x20;Chọn **container** và **directory** nếu có mà bạn muốn di chuyển object tới. Chúng tôi cũng hỗ trợ bạn tạo directory mới nếu directory bạn muốn di chuyển tới chưa tồn tại.&#x20;
 
 Bạn có thể di chuyển object qua các container trong một project. Hiện tại chúng tôi không hỗ trợ bạn di chuyển object qua các project khác nhau.
+
+<figure><img src="../../../../.gitbook/assets/Di_chuyen_object.gif" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="Sử dụng vStorage API" %}
+Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung cấp API cho phép bạn tích hợp với các ứng dụng, công cụ phía người dùng của bạn với vStorage để lưu trữ dữ liệu.
 
+Để di chuyển object qua vStorage API, hãy xem [API Developers](https://docs.vngcloud.vn/display/VV/API+Developers).
+
+\
+
+{% endtab %}
+
+{% tab title=" Sử dụng 3rd party softwares" %}
+vStorage cũng tương thích với các công cụ phía người dùng sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](https://docs.vngcloud.vn/display/VV/3rd+party+softwares) và học cách tích hợp, sử dụng các công cụ này.&#x20;
+
+Để di chuyển object qua 3rd party software, hãy xem [3rd party softwares](https://docs.vngcloud.vn/display/VV/3rd+party+softwares).
 {% endtab %}
 {% endtabs %}
 

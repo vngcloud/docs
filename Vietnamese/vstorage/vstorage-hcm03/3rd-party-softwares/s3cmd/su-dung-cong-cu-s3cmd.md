@@ -67,3 +67,4 @@
 Các segment rác của tệp tin chưa được tải lên thành công sẽ được dọn sạch. Chi tiết tham khảo tại [đây.](https://s3tools.org/usage)&#x20;
 {% endhint %}
 
+<figure><img src="../../../../.gitbook/assets/Su_dung_S3cmd.gif" alt=""><figcaption></figcaption></figure>

@@ -2,7 +2,7 @@
 
 Một Server trong đám mây bao gồm các thành phần cơ bản như vCPU, bộ nhớ, hệ điều hành (OS), cấu hình mạng và khối lượng. Bạn có thể sử dụng các công cụ quản lý do VNG Cloud cung cấp như Cổng thông tin và API để tạo và quản lý các vServer. Bạn cũng có thể thay đổi kích thước các khả năng (chẳng hạn như khả năng tính toán và lưu trữ) các Server của bạn khi yêu cầu thay đổi.
 
-![](https://docs.vngcloud.vn/download/attachments/49647864/image2022-11-14\_13-49-32.png?version=1\&modificationDate=1668408572000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/49647864/image2022-11-14_13-49-32.png?version=1&#x26;modificationDate=1668408572000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 ### **Các loại cấu hình cơ bản** <a href="#server-cacloaicauhinhcoban" id="server-cacloaicauhinhcoban"></a>
 
@@ -23,13 +23,13 @@ Ngoài các cấu hình cơ bản này, bạn có thể tùy chỉnh cấu hình
 
 #### Chủ đề <a href="#server-chude" id="server-chude"></a>
 
-* [Đăng nhập vào Server](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650318\&src=contextnavpagetreemode)
-* [Flavor](https://docs.vngcloud.vn/display/vServer/Flavor?src=contextnavpagetreemode)
-* [Vòng đời máy chủ ảo](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647886\&src=contextnavpagetreemode)
-* [Tạo máy chủ bằng giao diện quản trị](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647963\&src=contextnavpagetreemode)
-* [Kết nối vào máy chủ ảo](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647965\&src=contextnavpagetreemode)
-* [Thay đổi kích thước máy chủ ảo](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647967\&src=contextnavpagetreemode)
-* [Server Group](https://docs.vngcloud.vn/display/vServer/Server+Group?src=contextnavpagetreemode)
-* [Dịch vụ di chuyển máy chủ ảo của VNG Cloud](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649873\&src=contextnavpagetreemode)
+* [Đăng nhập vào Server](ket-noi-vao-may-chu-ao/)
+* [Flavor](flavor.md)
+* [Vòng đời máy chủ ảo](vong-doi-may-chu-ao.md)
+* [Tạo máy chủ bằng giao diện quản trị](tao-may-chu-bang-bang-dieu-khien.md)
+* [Kết nối vào máy chủ ảo](ket-noi-vao-may-chu-ao/)
+* [Thay đổi kích thước máy chủ ảo](thay-doi-kich-thuoc-may-chu-ao.md)
+* [Server Group](../server-group.md)
+* [Dịch vụ di chuyển máy chủ ảo của VNG Cloud](di-chuyen-may-chu-ao.md)
 
 \

@@ -23,6 +23,8 @@ Sau khi bạn đã tạo directory và tải lên object vào container hay tả
 
 * **Object**: màn hình hiển thị thông tin chi tiết của object được chọn bao gồm: **Tên**, **Kích thước,** **Content** **type**, **Sửa đổi lần cuối**, **Đường dẫn**, **Thông tin Checksum**, **Thông tin Phiên bản**.
 * **Directory**: màn hình hiển thị thông tin chi tiết của object được chọn bao gồm: **Tên**, **Content type**, **Đường dẫn**, **Thông tin Phiên bản.**
+
+<figure><img src="../../../../.gitbook/assets/Xem_thong_tin_object_directory.gif" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Sử dụng vStorage API" %}

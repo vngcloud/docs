@@ -36,7 +36,7 @@ Trước khi kết nối máy chủ Windows, bạn cần đảm bảo các yêu 
 
 #### Cách thực hiện <a href="#ketnoivaomaychuao-cachthuchien.1" id="ketnoivaomaychuao-cachthuchien.1"></a>
 
-[Kết nối vào máy chủ Windows sử dụng công cụ Remote Desktop](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650320\&src=contextnavpagetreemode)
+[Kết nối vào máy chủ Windows sử dụng công cụ Remote Desktop](./#ketnoivaomaychuao-ketnoimaychuwindowssudungcongcuremotedesktop)
 
 
 
@@ -57,6 +57,6 @@ Khi thực hiện kết nối vào máy chủ Linux, bạn nên ưu tiên phươ
 
 #### Cách thực hiện <a href="#ketnoivaomaychuao-cachthuchien.2" id="ketnoivaomaychuao-cachthuchien.2"></a>
 
-[Kết nối vào máy chủ Linux bằng công cụ SSH Client](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650301\&src=contextnavpagetreemode)
+[Kết nối vào máy chủ Linux bằng công cụ SSH Client](./#ketnoivaomaychuao-ketnoivaomaychulinuxbangcongcusshclient)
 
 \
