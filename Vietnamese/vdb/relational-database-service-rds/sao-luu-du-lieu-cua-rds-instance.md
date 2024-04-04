@@ -3,8 +3,8 @@
 VNG Cloud vDB hỗ trợ hai cách sao lưu (backup) dữ liệu là: theo nhu cầu (on-demand) và tự động hằng ngày (daily automatic) tại thời điểm được ấn định trước.\
 
 
-* [A. Sao lưu theo nhu cầu (On-demand backup hoặc Manual backup)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723072#Saol%C6%B0ud%E1%BB%AFli%E1%BB%87uc%E1%BB%A7aRDSInstance-A.Saol%C6%B0utheonhuc%E1%BA%A7u\(On-demandbackupho%E1%BA%B7cManualbackup\))
-* [B. Sao lưu tự động theo ngày (Auto-Daily Backup)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723072#Saol%C6%B0ud%E1%BB%AFli%E1%BB%87uc%E1%BB%A7aRDSInstance-B.Saol%C6%B0ut%E1%BB%B1%C4%91%E1%BB%99ngtheong%C3%A0y\(Auto-DailyBackup\))
+* [A. Sao lưu theo nhu cầu (On-demand backup hoặc Manual backup)](sao-luu-du-lieu-cua-rds-instance.md#saoluudulieucuardsinstance-a.saoluutheonhucau-on-demandbackuphoacmanualbackup)
+* [B. Sao lưu tự động theo ngày (Auto-Daily Backup)](sao-luu-du-lieu-cua-rds-instance.md#saoluudulieucuardsinstance-b.saoluutudongtheongay-auto-dailybackup)
 
 ### A. Sao lưu theo nhu cầu (On-demand backup hoặc Manual backup) <a href="#saoluudulieucuardsinstance-a.saoluutheonhucau-on-demandbackuphoacmanualbackup" id="saoluudulieucuardsinstance-a.saoluutheonhucau-on-demandbackuphoacmanualbackup"></a>
 
@@ -61,7 +61,7 @@ vDB hỗ trợ tính năng tự động sao lưu theo ngày tại thời điểm
 * Cấu hình luôn trong lúc khởi tạo RDS Instance.
 * Thay đổi tại giao diện quản lý Database.
 
-Đối với phương án đầu, mời bạn xem lại hướng dẫn Khởi tạo RDS Instance tại [Hướng dẫn khởi tạo RDS Instance](https://docs.vinadata.vn/pages/viewpage.action?pageId=2722985).
+Đối với phương án đầu, mời bạn xem lại hướng dẫn Khởi tạo RDS Instance tại [Hướng dẫn khởi tạo RDS Instance](khoi-tao-rds-instance.md).
 
 Đối với phương án sau, bạn truy cập màn hình quản lý Database, click chọn RDS Instance muốn cấu hình. Sau đó, bạn click chọn **Edit Database**. Tại đây, bạn kéo xuống mục **CHANGE BACKUP SETTINGS** và bạn có thể cấu hình các thông tin:
 
