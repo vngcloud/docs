@@ -2,9 +2,9 @@
 
 Để kết nối với RDS Instance bạn có thể sử dụng **Public Endpoint** (thông qua Internet). Tuy nhiên, cách này tìm ẩn rủi ro về an toàn thông tin. Để tăng cuờng bảo mật, bạn có thể tạo RDS Instance chỉ cho phép kết nối tới Private Endpoint, sau đó truy cập thông qua một vServer chung mạng với RDS Instance này và có Public IP (vServer đóng vai trò Terminal trung gian).
 
-* [Bước 1. Xác định thông tin Endpoint & Port để truy cập: ](https://docs.vngcloud.vn/pages/viewpage.action?pageId=10879572#K%E1%BA%BFtn%E1%BB%91it%E1%BB%9BiRDSInstanceth%C3%B4ngquaSSHTunnel-B%C6%B0%E1%BB%9Bc1.X%C3%A1c%C4%91%E1%BB%8Bnhth%C3%B4ngtinEndpoint\&Port%C4%91%E1%BB%83truyc%E1%BA%ADp:)
-* [Bước 2: Tùy chỉnh Security Group Rules chỉ cho phép truy cập từ nội bộ VPC:](https://docs.vngcloud.vn/pages/viewpage.action?pageId=10879572#K%E1%BA%BFtn%E1%BB%91it%E1%BB%9BiRDSInstanceth%C3%B4ngquaSSHTunnel-B%C6%B0%E1%BB%9Bc2:T%C3%B9ych%E1%BB%89nhSecurityGroupRulesch%E1%BB%89choph%C3%A9ptruyc%E1%BA%ADpt%E1%BB%ABn%E1%BB%99ib%E1%BB%99VPC:)
-* [Bước 3: Cấu hình SSH Tunnel: ](https://docs.vngcloud.vn/pages/viewpage.action?pageId=10879572#K%E1%BA%BFtn%E1%BB%91it%E1%BB%9BiRDSInstanceth%C3%B4ngquaSSHTunnel-B%C6%B0%E1%BB%9Bc3:C%E1%BA%A5uh%C3%ACnhSSHTunnel:)
+* [Bước 1. Xác định thông tin Endpoint & Port để truy cập: ](ket-noi-toi-rds-instance-thong-qua-ssh-tunnel.md#ketnoitoirdsinstancethongquasshtunnel-buoc1.xacdinhthongtinendpoint-and-portdetruycap)
+* [Bước 2: Tùy chỉnh Security Group Rules chỉ cho phép truy cập từ nội bộ VPC:](ket-noi-toi-rds-instance-thong-qua-ssh-tunnel.md#ketnoitoirdsinstancethongquasshtunnel-buoc2-tuychinhsecuritygroupruleschichopheptruycaptunoibovpc)
+* [Bước 3: Cấu hình SSH Tunnel: ](ket-noi-toi-rds-instance-thong-qua-ssh-tunnel.md#ketnoitoirdsinstancethongquasshtunnel-buoc3-cauhinhsshtunnel)
 
 \
 
@@ -105,7 +105,7 @@ VD: với **Workbench**, bạn có thể chọn **Connection Method** là **Stan
 * **SSH Hostname**: bạn nhập **IP:SSH\_Port**, ví dụ như ở đây là **61.28.224.201**, port **234**. Nếu không cấu hình thêm Port, mặc định sẽ nhận Port 22.
 * **SSH Username**: username để bạn ssh, ở đây là **stackops**.
 * **SSH Password, SSH Key File**: tùy vào thiết lập SSH của bạn mà bạn có thể chọn đường dẫn đến SSH Public key hoặc chọn nhập Password.
-* **MySQL Hostname, Port, Username, Password**: tương tự như bài hướng dẫn trước, bạn có thể xem lại tại: [Kết nối tới RDS Instance](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723017)
+* **MySQL Hostname, Port, Username, Password**: tương tự như bài hướng dẫn trước, bạn có thể xem lại tại: [Kết nối tới RDS Instance](./)
 
 sau đó bạn nhấn **Test Connection**.
 
