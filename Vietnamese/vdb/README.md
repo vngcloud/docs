@@ -4,8 +4,8 @@ VNG CLOUD Database as a Service (vDB) là dịch vụ cho phép dễ dàng thi�
 
 vDB gồm nhiều loại dịch vụ cho từng loại cơ sở dữ liệu , hiện nay chúng tôi đang cung cấp:&#x20;
 
-* [Relational Databases Service (RDS)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2722965): bao gồm các cơ sở dữ liệu quan hệ quen thuộc như MySQL, Mariadb, Postgresql.
-* [MemoryStore Database Service (MDS)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13010692): bao gồm các hệ lưu trữ dữ liệu trên bộ nhớ (in-memory) như Redis, Memcached.
+* [Relational Databases Service (RDS)](relational-database-service-rds/): bao gồm các cơ sở dữ liệu quan hệ quen thuộc như MySQL, Mariadb, Postgresql.
+* [MemoryStore Database Service (MDS)](memorystore-database-service-mds/): bao gồm các hệ lưu trữ dữ liệu trên bộ nhớ (in-memory) như Redis, Memcached.
 
 ### Lợi ích <a href="#vdb-database-loiich" id="vdb-database-loiich"></a>
 
