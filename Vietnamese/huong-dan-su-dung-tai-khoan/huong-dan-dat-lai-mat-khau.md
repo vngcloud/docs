@@ -30,10 +30,3 @@ Sau đó, vui lòng kiểm tra lại email, bạn sẽ nhận được email v�
 Sau khi hoàn tất đầy đủ thông tin, nhấn **Đặt lại mật khẩu** để hoàn tất. Bạn sẽ nhận thông báo đã đổi mật khẩu thành công và sẽ được chuyển hướng về trang **Đăng nhập**.
 
 Cuối cùng, đăng nhập vào hệ thống với mật khẩu bạn vừa đặt lại.
-
-\
-
-
-Cảm ơn !
-
-\

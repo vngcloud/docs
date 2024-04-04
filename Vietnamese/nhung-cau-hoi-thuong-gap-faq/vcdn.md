@@ -4,7 +4,7 @@
 
 <summary>[vCDN] Tôi tạo CDN như thế nào ?</summary>
 
-Quý khách vui lòng xem tài liệu theo Link hướng dẫn :[https://docs.vngcloud.vn/pages/viewpage.action?pageId=2721252](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2721252)
+Quý khách vui lòng xem tài liệu theo Link hướng dẫn: [Hướng dẫn khởi tạo](../vcdn/loai-hinh-dich-vu.md)
 
 </details>
 
@@ -20,7 +20,7 @@ Quý khách mua volume CDN để sử dụng, nếu hết dung lượng domain s
 
 <summary>[vCDN] Làm sao để sử dụng livestreaming ?</summary>
 
-Quý khách vui lòng xem tài liệu theo Link hướng dẫn :[https://docs.vngcloud.vn/pages/viewpage.action?pageId=2721252](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2721252)
+Quý khách vui lòng xem tài liệu theo Link hướng dẫn [tại đây](../vcdn/loai-hinh-dich-vu/live-streaming.md)
 
 </details>
 
@@ -68,8 +68,7 @@ User mua volume CDN để sử dụng, nếu hết dung lượng domain sẽ b�
 
 <summary>[vCDN] Tôi có thể xem traffic sử dụng [CDN] của tôi không ?</summary>
 
-Hiện tại VNG Cloud có cung cấp từng chart theo từng domain để xem traffic đang sử dụng. Click chọn vào từng domain để xem chi tiết như sau:\
-[https://docs.vngcloud.vn/pages/viewpage.action?pageId=2721293](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2721293)
+Hiện tại VNG Cloud có cung cấp từng chart theo từng domain để xem traffic đang sử dụng. Click chọn vào từng domain để xem chi tiết [tại đây](../vcdn/bao-cao.md).
 
 </details>
 
@@ -78,7 +77,7 @@ Hiện tại VNG Cloud có cung cấp từng chart theo từng domain để xem 
 <summary>[vCDN] Làm sao tôi [xóa cache] trên [CDN] ?</summary>
 
 Trên portal có nút purge cache cho từng domain riêng, có thể vào để xóa cache trên CDN\
-[https://docs.vngcloud.vn/display/ONVINA/Purge+Cache](https://docs.vngcloud.vn/display/ONVINA/Purge+Cache)
+
 
 </details>
 

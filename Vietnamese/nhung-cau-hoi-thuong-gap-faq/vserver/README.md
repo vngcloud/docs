@@ -92,7 +92,7 @@ Quý khách có thể thực hiện như sau : Thực hiện extend disk trên p
 
 <summary>[vServer]Làm sao để extend disk trong Window ?</summary>
 
-&#x20;[Mở rộng Volume với hệ điều hành Window](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804681\&src=contextnavpagetreemode)Quý khách có thể thực hiện như sau : Thực hiện extend disk trên portal VNG Cloud:
+&#x20;[Mở rộng Volume với hệ điều hành Window](../../vserver/compute-hcm03-1a/volume/mo-rong-volume-voi-he-dieu-hanh-window.md) Quý khách có thể thực hiện như sau : Thực hiện extend disk trên portal VNG Cloud:
 
 </details>
 
@@ -140,7 +140,7 @@ Nếu Server hết hạn, trên giao diện trang chủ sẽ có trạng thái E
 
 <summary>[vServer] Tôi muốn Reset Pass của server ?</summary>
 
-Bạn không thể tự reset password cho Server của mình. Để tiến hành reset password cho Server, vui lòng gởi request tại trang [Hỗ trợ ](https://support.vngcloud.vn/#/app/request-ticket/undefined)của chúng tôi.&#x20;
+Bạn không thể tự reset password cho Server của mình. Để tiến hành reset password cho Server, vui lòng gởi request tại trang [Hỗ trợ ](https://helpdesk.vngcloud.vn/)của chúng tôi.&#x20;
 
 </details>
 
@@ -292,7 +292,7 @@ Wan IP khi xóa đi sẽ không thể lấy lại được. Nếu Bạn muốn g
 
 <summary>[vServer] vServer có giới hạn băng thông (bandwidth, lưu lượng) không? Sử dụng quá băng thông có hiện tượng gì không?</summary>
 
-Hiện tại chúng tôi đang giới hạn băng thông ở mức 100mbps, nếu bạn muốn nâng lên thì vui lòng liên hệ nhân viên kinh doanh hoặc gởi yêu cầu tại trang [Hỗ trợ ](https://support.vngcloud.vn/#/app/request-ticket/undefined)để chúng tôi có thể hỗ trợ bạn tăng bandwidth, lưu ý rằng việc tăng Bandwidth sẽ tốn thêm chi phí của bạn.
+Hiện tại chúng tôi đang giới hạn băng thông ở mức 100mbps, nếu bạn muốn nâng lên thì vui lòng liên hệ nhân viên kinh doanh hoặc gởi yêu cầu tại trang [Hỗ trợ ](https://helpdesk.vngcloud.vn/)để chúng tôi có thể hỗ trợ bạn tăng bandwidth, lưu ý rằng việc tăng Bandwidth sẽ tốn thêm chi phí của bạn.
 
 </details>
 
@@ -357,7 +357,7 @@ Số lượng user tối đa có thể truy cập cùng lúc vào websi
 
 <summary>[vServer] Tại sao tôi không xóa được Certificate và Key cũ, giờ tôi muốn dùng Certificate và Key mới thì làm thế nào ?</summary>
 
-Hiện tại chúng tôi không hỗ trợ xóa Certificate, Key cũ trên Load balancer. Nếu bạn muốn dùng Certificate, Key mới xin vui lòng thực hiện tải lên Certificate mới tại [Trang chủ Certificate](https://portal3.vngcloud.vn/ops/ca/list.html) (Không trùng name Certificate, Key cũ), sau đó vào [Trang chủ Load balancer ](https://portal3.vngcloud.vn/loadbalancers/list.html)để update lại Certificate mới tại trang chi tiết LB.
+Hiện tại chúng tôi không hỗ trợ xóa Certificate, Key cũ trên Load balancer. Nếu bạn muốn dùng Certificate, Key mới xin vui lòng thực hiện tải lên Certificate mới tại [Trang chủ Certificate](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/certificate) (Không trùng name Certificate, Key cũ), sau đó vào [Trang chủ Load balancer ](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)để update lại Certificate mới tại trang chi tiết LB.
 
 </details>
 
@@ -381,7 +381,7 @@ Khi tạo Server ở site VPC mình phải tạo Network trước cho Server (V�
 
 <summary>[vServer] Tôi muốn nâng dung lượng HDD mà sao chỉ được tối đa 200G ?</summary>
 
-Bạn có thể vào phần Storage trên Portal để add thêm Volume tối đa lên tới 10TB cho Server của mình theo hướng dẫn tại trang [Tăng kích thước Volume](https://docs.vngcloud.vn/display/vServer/Volume).
+Bạn có thể vào phần Storage trên Portal để add thêm Volume tối đa lên tới 10TB cho Server của mình theo hướng dẫn tại trang [Tăng kích thước Volume](../../vserver/compute-hcm03-1a/volume/).
 
 </details>
 
@@ -397,7 +397,7 @@ Create image là tạo full tất cả các disk/phân vùng.
 
 <summary>[vServer] Tôi lỡ tay xóa hết các rule trong Security Policy và hiện tại không thể nào ssh vào được server ?</summary>
 
-Bạn vui lòng vào Group Default add lại các rule Ingress và Egress default theo như hướng dẫn sau giúp: [https://docs.vngcloud.vn/pages/viewpage.action?pageId=2719788](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2719788) để có thể ssh vào lại server.
+Bạn vui lòng vào Group Default add lại các rule Ingress và Egress default theo như [hướng dẫn sau](../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md) giúp để có thể ssh vào lại server.
 
 </details>
 
@@ -405,7 +405,7 @@ Bạn vui lòng vào Group Default add lại các rule Ingress và Egress defaul
 
 <summary>[vServer] "vServer: Tôi không tạo thêm được security group? "</summary>
 
-Mặc định 1 user chỉ được phép tạo tối đa 10 security group. Nếu bạn có nhu cầu tạo thêm vui lòng liên hệ bộ phận hỗ trợ kĩ thuật hoặc gửi mail vào [support@vngcloud.vn](mailto:support@vngcloud.vn) để được hỗ trợ, tuy nhiên tối đa là 20 sercurity group.
+Mặc định 1 user chỉ được phép tạo tối đa 10 security group. Nếu bạn có nhu cầu tạo thêm vui lòng liên hệ bộ phận hỗ trợ kĩ thuật hoặc gửi mail vào [https://helpdesk.vngcloud.vn/](https://helpdesk.vngcloud.vn/) để được hỗ trợ, tuy nhiên tối đa là 20 sercurity group.
 
 </details>
 
@@ -552,6 +552,6 @@ Hiện tại VNG Cloud không hỗ trợ tách server sang portal khác
 
 <summary>[vServer] Tại sao tôi lỡ chuyển nhầm farm thì báo lỗi không thể truy cập vào server nữa</summary>
 
-Bạn có thể thử truy cập lại Server. Trường hợp vẫn báo lỗi, vui lòng gởi yêu cầu báo lỗi cho chúng tôi tại trang [Hỗ trợ](https://support.vngcloud.vn/#/app/request-ticket/undefined).
+Bạn có thể thử truy cập lại Server. Trường hợp vẫn báo lỗi, vui lòng gởi yêu cầu báo lỗi cho chúng tôi tại trang [Hỗ trợ](https://helpdesk.vngcloud.vn/).
 
 </details>

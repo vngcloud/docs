@@ -1,8 +1,6 @@
 # Cập nhật thông tin tài khoản
 
-* 1[Cập nhật thông tin tài khoản](https://docs.vngcloud.vn/pages/viewpage.action?pageId=31556041#C%E1%BA%ADpnh%E1%BA%ADtth%C3%B4ngtint%C3%A0ikho%E1%BA%A3n-C%E1%BA%ADpnh%E1%BA%ADtth%C3%B4ngtint%C3%A0ikho%E1%BA%A3n)
-* 2[Trường hợp, "Rút lại sự đồng ý":](https://docs.vngcloud.vn/pages/viewpage.action?pageId=31556041#C%E1%BA%ADpnh%E1%BA%ADtth%C3%B4ngtint%C3%A0ikho%E1%BA%A3n-Tr%C6%B0%E1%BB%9Dngh%E1%BB%A3p,%22R%C3%BAtl%E1%BA%A1is%E1%BB%B1%C4%91%E1%BB%93ng%C3%BD%22:)
-* 3[Trường hợp "Xóa tài khoản"](https://docs.vngcloud.vn/pages/viewpage.action?pageId=31556041#C%E1%BA%ADpnh%E1%BA%ADtth%C3%B4ngtint%C3%A0ikho%E1%BA%A3n-Tr%C6%B0%E1%BB%9Dngh%E1%BB%A3p%22X%C3%B3at%C3%A0ikho%E1%BA%A3n%22)
+
 
 #### **Cập nhật thông tin tài khoản** <a href="#capnhatthongtintaikhoan-capnhatthongtintaikhoan" id="capnhatthongtintaikhoan-capnhatthongtintaikhoan"></a>
 
