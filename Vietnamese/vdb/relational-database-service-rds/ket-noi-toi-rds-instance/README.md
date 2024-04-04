@@ -13,10 +13,10 @@ Hoặc tham khảo bài viết hướng dẫn dưới đây. Bài viết này VN
 \
 
 
-* [Bước 0. Cài đặt client tool để kết nối:](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723017#K%E1%BA%BFtn%E1%BB%91it%E1%BB%9BiRDSInstance-B%C6%B0%E1%BB%9Bc0.C%C3%A0i%C4%91%E1%BA%B7tclienttool%C4%91%E1%BB%83k%E1%BA%BFtn%E1%BB%91i:)
-* [Bước 1. Xác định thông tin Endpoint & Port để truy cập:](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723017#K%E1%BA%BFtn%E1%BB%91it%E1%BB%9BiRDSInstance-B%C6%B0%E1%BB%9Bc1.X%C3%A1c%C4%91%E1%BB%8Bnhth%C3%B4ngtinEndpoint\&Port%C4%91%E1%BB%83truyc%E1%BA%ADp:)
-* [Bước 2: Tùy chỉnh Security Group Rules để bảo vệ DB Instance (tùy chọn)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723017#K%E1%BA%BFtn%E1%BB%91it%E1%BB%9BiRDSInstance-B%C6%B0%E1%BB%9Bc2:T%C3%B9ych%E1%BB%89nhSecurityGroupRules%C4%91%E1%BB%83b%E1%BA%A3ov%E1%BB%87DBInstance\(t%C3%B9ych%E1%BB%8Dn\))
-* [Bước 3. Kết nối bằng các client tools:](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723017#K%E1%BA%BFtn%E1%BB%91it%E1%BB%9BiRDSInstance-B%C6%B0%E1%BB%9Bc3.K%E1%BA%BFtn%E1%BB%91ib%E1%BA%B1ngc%C3%A1cclienttools:)
+* [Bước 0. Cài đặt client tool để kết nối:](./#ketnoitoirdsinstance-buoc0.caidatclienttooldeketnoi)
+* [Bước 1. Xác định thông tin Endpoint & Port để truy cập:](./#ketnoitoirdsinstance-buoc1.xacdinhthongtinendpoint-and-portdetruycap)
+* [Bước 2: Tùy chỉnh Security Group Rules để bảo vệ DB Instance (tùy chọn)](./#ketnoitoirdsinstance-buoc2-tuychinhsecuritygrouprulesdebaovedbinstance-tuychon)
+* [Bước 3. Kết nối bằng các client tools:](./#ketnoitoirdsinstance-buoc3.ketnoibangcacclienttools)
 
 ### Bước 0. Cài đặt client tool để kết nối: <a href="#ketnoitoirdsinstance-buoc0.caidatclienttooldeketnoi" id="ketnoitoirdsinstance-buoc0.caidatclienttooldeketnoi"></a>
 
