@@ -8,9 +8,9 @@ Bạn truy cập dịch vụ vDBaaS và chuyển sang mục Configuration Group 
 
 
 
-* [A - Khởi tạo Configuration Group](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723098#Qu%E1%BA%A3nl%C3%BDc%E1%BA%A5uh%C3%ACnhtrongRDSInstance-A-Kh%E1%BB%9Fit%E1%BA%A1oConfigurationGroup)
-* [B - Chỉnh sửa các biến cấu hình](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723098#Qu%E1%BA%A3nl%C3%BDc%E1%BA%A5uh%C3%ACnhtrongRDSInstance-B-Ch%E1%BB%89nhs%E1%BB%ADac%C3%A1cbi%E1%BA%BFnc%E1%BA%A5uh%C3%ACnh)
-* [C - Liên kết RDS Instance với Configuration Groups](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723098#Qu%E1%BA%A3nl%C3%BDc%E1%BA%A5uh%C3%ACnhtrongRDSInstance-C-Li%C3%AAnk%E1%BA%BFtRDSInstancev%E1%BB%9BiConfigurationGroups)
+* [A - Khởi tạo Configuration Group](quan-ly-cau-hinh-trong-rds-instance.md#quanlycauhinhtrongrdsinstance-a-khoitaoconfigurationgroup)
+* [B - Chỉnh sửa các biến cấu hình](quan-ly-cau-hinh-trong-rds-instance.md#quanlycauhinhtrongrdsinstance-b-chinhsuacacbiencauhinh)
+* [C - Liên kết RDS Instance với Configuration Groups](quan-ly-cau-hinh-trong-rds-instance.md#quanlycauhinhtrongrdsinstance-c-lienketrdsinstancevoiconfigurationgroups)
 
 \
 
@@ -89,7 +89,7 @@ Các RDS Instance đang được liên kết hay chuẩn bị được liên k�
 * Liên kết ngay khi RDS Instance được khởi tạo.
 * Thực hiện thay đổi cấu hình RDS Instance.
 
-Đối với phương án 1, mời bạn xem lại hướng dẫn [Khởi tạo RDS Instance](https://docs.vinadata.vn/pages/viewpage.action?pageId=2722985).
+Đối với phương án 1, mời bạn xem lại hướng dẫn [Khởi tạo RDS Instance](khoi-tao-rds-instance.md).
 
 Đối với phương án 2, bạn có thể thực hiện như sau.
 
