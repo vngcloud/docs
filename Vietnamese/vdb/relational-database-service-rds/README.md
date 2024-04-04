@@ -9,21 +9,20 @@
 \
 
 
-![](https://docs.vngcloud.vn/download/attachments/2722965/image2019-6-24\_11-0-33.png?version=1\&modificationDate=1561348833000\&api=v2)![](https://docs.vngcloud.vn/download/thumbnails/2722965/postgresql-logo.png?version=1\&modificationDate=1589966586000\&api=v2)
+![](https://docs.vngcloud.vn/download/attachments/2722965/image2019-6-24\_11-0-33.png?version=1\&modificationDate=1561348833000\&api=v2)<img src="https://docs.vngcloud.vn/download/thumbnails/2722965/postgresql-logo.png?version=1&#x26;modificationDate=1589966586000&#x26;api=v2" alt="" data-size="original">
 
 #### Bạn hãy truy cập các hướng dẫn sau để bắt đầu trải nghiệm dịch vụ: <a href="#relationaldatabaseservice-rds-banhaytruycapcachuongdansaudebatdautrainghiemdichvu" id="relationaldatabaseservice-rds-banhaytruycapcachuongdansaudebatdautrainghiemdichvu"></a>
 
-* [_Khởi tạo RDS Instance_](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2722985)
-* [_Kết nối tới RDS Instance_](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723017)
-* [_Quản lý thông tin DB Instance_](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723044)
-* [_Sao lưu dữ liệu của RDS Instance_](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723072)
-* [_Khôi phục dữ liệu cho RDS Instance (từ Backup trước đó)_](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723085)
-* [_Quản lý cấu hình trong RDS Instance_](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723098)
-* [_Gia hạn RDS Instance_](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723453)
-* [_Giám sát hoạt động của RDS Instance bằng vMonitor._](https://docs.vngcloud.vn/pages/viewpage.action?pageId=17760701)
-* [_Import dữ liệu vào RDS Instance (MySQL/MariaDB)_](https://docs.vngcloud.vn/pages/viewpage.action?pageId=10880027)
-* [_Cấu trình replication với RDS Instance (MySQL/MariaDB)_](https://docs.vngcloud.vn/pages/viewpage.action?pageId=10880120)
-* [_Cân bằng tải RDS Instance (MySQL/MariaDB)_](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13009438)
-* [_vDB PostgreSQL - Các extension được hỗ trợ_](https://docs.vngcloud.vn/pages/viewpage.action?pageId=17761105)
+* [_Khởi tạo RDS Instance_](khoi-tao-rds-instance.md)
+* [_Kết nối tới RDS Instance_](ket-noi-toi-rds-instance/)
+* [_Quản lý thông tin DB Instance_](quan-ly-thong-tin-rds-instance.md)
+* [_Sao lưu dữ liệu của RDS Instance_](sao-luu-du-lieu-cua-rds-instance.md)
+* [_Khôi phục dữ liệu cho RDS Instance (từ Backup trước đó)_](khoi-phuc-du-lieu-cho-rds-instance.md)
+* [_Quản lý cấu hình trong RDS Instance_](quan-ly-cau-hinh-trong-rds-instance.md)
+* [_Gia hạn RDS Instance_](gia-han-rds-instance.md)
+* [_Giám sát hoạt động của RDS Instance bằng vMonitor._](giam-sat-hoat-dong-vdb-bang-vmonitor-platform.md)
+* [_Import dữ liệu vào RDS Instance (MySQL/MariaDB)_](import-du-lieu-vao-rds-instance-mysql-mariadb-bang-mysqldump.md)
+* [_Cấu hình replication với RDS Instance (MySQL/MariaDB)_](cau-hinh-replication-voi-rds-mysql-mariadb.md)
+* [_vDB PostgreSQL - Các extension được hỗ trợ_](vdb-postgresql-cac-extension-duoc-ho-tro.md)
 
 \
