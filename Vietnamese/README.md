@@ -10,15 +10,13 @@ Chào mừng các bạn đến với trang hỗ trợ khách hàng của VNG Clo
 
 {% tabs %}
 {% tab title="Infrastructure as a Service " %}
-[**vServer - H**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647923)**ệ thống máy chủ ảo thông minh**
+[**vServer - Hệ thống máy chủ ảo thông minh**](vserver/)
 
 * [**vServer HCM03-1A**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647923)
-* [**vServer HCM02**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=22939144)
 
-[**vStorage - Bộ giải pháp lưu trữ toàn diện trên đám mây**](https://docs.vngcloud.vn/x/SwAS)
+[**vStorage - Bộ giải pháp lưu trữ toàn diện trên đám mây**](vstorage/)
 
-* vStorage (Giao diện mới)
-* [vStorage ](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648395)(Giao diện cũ)
+* [vStorage (Giao diện mới)](vstorage/)
 {% endtab %}
 
 {% tab title="Platform as a Service" %}
