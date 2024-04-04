@@ -62,7 +62,7 @@ This guide helps you quickly launch your first **Server,** so it won't cover all
 
 **Option 3**: Initialize vServer with previously created MY IMAGES, to serve Clone Server running on Cloud into new Servers or Backup / Restore Server
 
-* At the **My Images** tab, select the corresponding images needed to create the vServer, select Next. Or you can create your own Image by [**Click here**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=17760802) for instructions on creating MY IMAGES
+* At the **My Images** tab, select the corresponding images needed to create the vServer, select Next.&#x20;
 
 5\. Under section **Instance type**, is a list of Flavor configurations, you can choose the desired Flavor configuration for your Server by. **iot.v1.small1x1** is recommended by us as the default basic configuration for server initialization
 
@@ -74,11 +74,11 @@ In addition, you can add **Data Volume** to the Server during the initialization
 
 \+  Here you can choose **VPC** to grant Private IP to Server and **Subnet** from the list you created earlier, or you can choose [**Click here**](https://hcm-3.console.vngcloud.vn/vserver/network/vpc) to manage your VPCs to create new VPC and Subnet, it should be noted that after creating VPC and Subnet Subnet, it will be displayed at the list page allowing you to choose during Server initialization
 
-\+  Check the box **Floating IP** to assign Public IP to the Server ([**Click here**](https://docs.vngcloud.vn/display/ONVINA/WAN+IP+HCM+03) for instructions on attach/detach WAN IP)
+\+  Check the box **Floating IP** to assign Public IP to the Server&#x20;
 
-\+  **Security group** to manage the ACL - Access Control List for the Server. ([**Click here**](https://docs.vngcloud.vn/display/VSERVERENG/Security+Groups) for instructions on creating and managing a Security group)
+\+  **Security group** to manage the ACL - Access Control List for the Server. ([**Click here**](instance/server-group.md) for instructions on creating and managing a Security group)
 
-\+  **SSH Key** to import to the Server during initialization. ([**Click here**](https://docs.vngcloud.vn/display/ONVINA/SSH+Keys+HCM+03) for instructions)
+\+  **SSH Key** to import to the Server during initialization. ([**Click here**](security/ssh-key-key-pairs.md) for instructions)
 
 \+  **Authentication** Information: Empty: the system will automatically generate and assign a password or the user can manually tweak and enable or disable the bypass of the first password change.
 

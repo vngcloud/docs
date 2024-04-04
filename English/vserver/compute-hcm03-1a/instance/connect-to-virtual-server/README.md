@@ -32,12 +32,9 @@ When making connections to a Linux server, you should prefer the method of using
 * Active Virtual servers need to have a proper network connection, for example using Floating IP to connect to the internet directly
 * A Security Group setting is declared and this security group is attached to the server to be connected to allow smooth traffic. Specific settings such as allow traffic port tcp/234 for SSH protocol
 
-#### How to do it <a href="#connecttovirtualserver-howtodoit.1" id="connecttovirtualserver-howtodoit.1"></a>
+#### How to do it <a href="#connecttovirtualserver-howtodoit.2" id="connecttovirtualserver-howtodoit.2"></a>
 
-[1. SSH login to Linux Server HCM 03](https://docs.vngcloud.vn/display/VSERVERENG/1.+SSH+login+to+Linux+Server+HCM+03?src=contextnavpagetreemode)
-
-\
-
+1. [SSH login to Server Linux HCM03](1.-ssh-login-to-server-linux-hcm-03.md)
 
 ### **Connect to a Windows server using the Remote Desktop tool** <a href="#connecttovirtualserver-connecttoawindowsserverusingtheremotedesktoptool" id="connecttovirtualserver-connecttoawindowsserverusingtheremotedesktoptool"></a>
 
@@ -54,4 +51,4 @@ Before connecting to a Windows server, you need to ensure the following requirem
 
 #### How to do it <a href="#connecttovirtualserver-howtodoit.2" id="connecttovirtualserver-howtodoit.2"></a>
 
-[2. Remote Desktop vào Server Windows HCM 03](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650320\&src=contextnavpagetreemode)
+[2. Remote Desktop vào Server Windows HCM 03](2.-remote-desktop-to-windows-server-hcm-03.md)

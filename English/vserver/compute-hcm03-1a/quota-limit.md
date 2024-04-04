@@ -6,7 +6,7 @@ In addition to checking the limit values, you can also request limit increases f
 
 ### **View resource limits** <a href="#quotalimit-viewresourcelimits" id="quotalimit-viewresourcelimits"></a>
 
-You can view resource limits using the following option: View detailed information on the existing page. However, please note that you can only view detailed information about the limits for each resource, not the current usage level for your resources. To view detailed information about the limit values and the status of resource limit usage, please visit the following link: [Trang Limit](https://hcm-3.console.vngcloud.vn/vserver/limit). In the search box, you can search by the service name you want to see detailed information about the limit.
+You can view resource limits using the following option: View detailed information on the existing page. However, please note that you can only view detailed information about the limits for each resource, not the current usage level for your resources. To view detailed information about the limit values and the status of resource limit usage, please visit the [following link](https://hcm-3.console.vngcloud.vn/vserver/limit) In the search box, you can search by the service name you want to see detailed information about the limit.
 
 ### **Request limit increases** <a href="#quotalimit-requestlimitincreases" id="quotalimit-requestlimitincreases"></a>
 

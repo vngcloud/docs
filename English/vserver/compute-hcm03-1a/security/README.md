@@ -9,4 +9,4 @@ Cloud security at VNG Cloud is the highest priority. As an VNG Cloud customer, y
 * Managing the guest operating system and software deployed to the guest operating system, including updates and security patches.
 * Controlling permissions by configuring the IAM roles and the permissions associated with those roles.
 
-Child page: [SSH Key](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648086), [Security Groups](https://docs.vngcloud.vn/display/VSERVERENG/Security+Group), Network Policy, IAM
+Child page: [SSH Key](ssh-key-key-pairs.md), [Security Groups](security-groups.md), Network Policy, IAM

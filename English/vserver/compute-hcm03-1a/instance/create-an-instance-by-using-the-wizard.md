@@ -2,7 +2,7 @@
 
 Create a virtual server using the initialization process on VNG Cloud
 
-Procedure: [Getting started](https://docs.vngcloud.vn/display/VSERVERENG/Getting+started)
+Procedure: [Getting started](../getting-started.md)
 
 The VNG Cloud portal provides a wizard for creating instances. This wizard lists all configuration information used to create an instance and guides you through creating an instance.
 
@@ -20,7 +20,7 @@ You must select an Images that contain the information required to run instances
 
 | **Image type**          | **Description**                                                                                                                                                                                                     | **Notes or References**                                           |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| OS Image / Public Image | Public images are base images provided by VNG Cloud that are fully tested. These images include Windows Server OS images and mainstream Linux OS images.                                                            | [{Image Page}](https://docs.vngcloud.vn/display/VSERVERENG/Image) |
+| OS Image / Public Image | Public images are base images provided by VNG Cloud that are fully tested. These images include Windows Server OS images and mainstream Linux OS images.                                                            | [{Image Page}](../image.md)                                       |
 | My Image / Custom Image | Customer can create or import custom images. Custom images contain initial system environments, application environments, and software configurations. This eliminates the need for repeated manual configurations. | {Custom image Page}                                               |
 | GPU Image               | Image contains NVIDIA driver or NVIDIA Software that are tested by VNG Cloud. These images include Windows OS and Ubuntu OS images                                                                                  | Customer can select public image then install GPU driver if need. |
 
@@ -42,7 +42,7 @@ You can add more data volumes to instance to increase the capability at this ste
 
 You can make network and security group configurations to allow the instance to communicate with the Internet and other VNG Cloud resources in the VPC network.
 
-A VPC is an isolated network dedicated for your use. You have full control over your VPC. For example, you can specify a private subnet and configure route tables and network policy for the VPC. See more at [{VPC Page}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648036).
+A VPC is an isolated network dedicated for your use. You have full control over your VPC. For example, you can specify a private subnet and configure route tables and network policy for the VPC. See more at [{VPC Page}](../vpc/virtual-private-cloud-vpc.md).
 
 If you have not created a VPC in the availability zone, the system creates a default VPC and subnet to minimize the process.
 
@@ -60,7 +60,7 @@ If you do not want to configure security group-related parameters when you creat
 
 #### Authentication <a href="#createaninstancebyusingthewizard-authentication" id="createaninstancebyusingthewizard-authentication"></a>
 
-It’s recommended to use SSH Key to access your Linux Instance. You can create new SSH Key pair or import your public key to VNG Cloud. See more at [{SSH key page}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648086).
+It’s recommended to use SSH Key to access your Linux Instance. You can create new SSH Key pair or import your public key to VNG Cloud. See more at [{SSH key page}](../security/ssh-key-key-pairs.md).
 
 Additionally, you can provide your manual username and password that will be injected to you instances in order to access.
 
