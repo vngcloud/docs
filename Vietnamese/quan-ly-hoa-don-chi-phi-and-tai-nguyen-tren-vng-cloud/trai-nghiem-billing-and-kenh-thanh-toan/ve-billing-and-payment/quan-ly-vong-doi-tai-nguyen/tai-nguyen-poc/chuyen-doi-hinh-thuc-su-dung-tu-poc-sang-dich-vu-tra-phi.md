@@ -29,7 +29,7 @@ Nhằm giúp người dùng có cái nhìn chi tiết hơn về quá trình trê
 * **Bước 3:** Chọn hành động "**Dừng POC**" đối với cluster vừa tìm được tại Bước 2
 * **Bước 4:** Xác nhận chuyển đổi một lần nữa tại cửa sổ bật lên, lúc này người dùng sẽ được chuyển hướng sang trang thanh toán
   * Kiểm tra thông tin giá tiền tại trang thanh toán **(Check out).** Nhấn **"Continue" / "Tiêp tục"** để tiếp tục quá trình.
-  * Xác nhận thanh toán bằng phương thức **"Hold"**: hiểu thêm về phương thức "Hold" [tại đây](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649319)
+  * Xác nhận thanh toán bằng phương thức **"Hold"**: hiểu thêm về phương thức "Hold" [tại đây](../../thanh-toan/tam-giu-credit.md)
   * Hệ thông tiến hành tạm giữ credit đối với tài nguyên trên, cho 3 ngày sử dụng dịch vụ
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59804267/image2023-11-29_16-50-41.png?version=1&#x26;modificationDate=1701251441000&#x26;api=v2" alt=""><figcaption></figcaption></figure>

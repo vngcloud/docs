@@ -22,7 +22,7 @@ Sử dụng tài liệu này như là một hướng dẫn khôi phục tài ngu
   * 1.2 Chọn tài nguyên cần khôi phục trong thùng rác (trash) tại trang sản phẩm
   * 1.3 Xác nhận khôi phục tài nguyên để chuyển đến bước thanh toán: Tại đây, hệ thống sẽ điều hướng người dùng đến trang thanh toán tài nguyên
 * **Bước 2: Thanh toán tài nguyên**
-  * Xem hướng dẫn chi tiết [**tại đây**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649291)
+  * Xem hướng dẫn chi tiết [**tại đây**](../thanh-toan/)
 * **Bước 3: Kiểm tra thông tin tài nguyên và thông tin thanh toán**
   * 3.1 Kiểm tra thông tin tài nguyên tại trang sản phẩm
   * 3.2 Kiểm tra **thông tin thanh toán, hóa đơn tại**
@@ -35,7 +35,7 @@ Sử dụng tài liệu này như là một hướng dẫn khôi phục tài ngu
 
 Phương thức tính giá tài nguyên đối với trường hợp khôi phục tài nguyên không có sự khác biệt khi thực hiện khởi tạo.
 
-Tham khảo chi tiết tại trang hướng dẫn [khởi tạo tài nguyên, mục hướng dẫn tính giá](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649304).
+Tham khảo chi tiết tại trang hướng dẫn [khởi tạo tài nguyên, mục hướng dẫn tính giá](khoi-tao-tai-nguyen.md).
 
 #### Tại sao cần khôi phục tài nguyên? <a href="#khoiphuctainguyen-taisaocankhoiphuctainguyen" id="khoiphuctainguyen-taisaocankhoiphuctainguyen"></a>
 

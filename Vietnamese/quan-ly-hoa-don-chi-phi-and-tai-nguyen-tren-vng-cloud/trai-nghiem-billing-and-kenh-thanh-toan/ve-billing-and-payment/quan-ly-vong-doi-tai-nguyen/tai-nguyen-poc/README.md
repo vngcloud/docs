@@ -5,7 +5,7 @@ Tài nguyên POC sinh ra nhằm mục đích hỗ trợ người dùng có thể
 Điều kiện sử dụng tài nguyên POC:
 
 * **Đối tượng**: Người dùng trả trước được cấp ví POC
-* **Nguồn tiền:** [**Ví POC**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649317)
+* **Nguồn tiền:** [**Ví POC**](../../thanh-toan/thanh-toan-tai-nguyen-poc.md)
 * **Tài nguyên:** Tất cả các tài nguyên được áp dụng POC
 * **Thời gian sử dụng:** Tùy thuộc vào thời hạn ví POC được cấp.
 
@@ -19,7 +19,7 @@ Tài nguyên POC sinh ra nhằm mục đích hỗ trợ người dùng có thể
   * 1.3 Nhấn chọn sử dụng tài nguyên POC
   * 1.3 Xác nhận sử dụng tài nguyên để chuyển đến bước thanh toán: Tại đây, hệ thống sẽ điều hướng người dùng đến trang thanh toán tài nguyên
 * **Bước 2: Thanh toán tài nguyên bằng ví POC**
-  * Xem hướng dẫn chi tiết [**tại đây**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649317)
+  * Xem hướng dẫn chi tiết [**tại đây**](../../thanh-toan/thanh-toan-tai-nguyen-poc.md)
 * **Bước 3: Hệ thống thực hiện**
   * Cung cấp tài nguyên&#x20;
   * Email thông báo thông tin tài nguyên vừa khởi tạo
@@ -29,13 +29,13 @@ Tài nguyên POC sinh ra nhằm mục đích hỗ trợ người dùng có thể
 * Thời gian sử dụng tài nguyên POC mặc định trùng với thời gian kết thúc ví POC
 * Chỉ được dùng ví POC để thanh toán tài nguyên POC
 * Đối với tài nguyên POC, hệ thống sẽ không phát sinh hóa đơn tài nguyên tương ứng
-* Cách tính giá sử dụng tài nguyên POC tương tự như tài nguyên thường. Tham khảo chi tiết [tại đây](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649304)
+* Cách tính giá sử dụng tài nguyên POC tương tự như tài nguyên thường. Tham khảo chi tiết [tại đây](../khoi-tao-tai-nguyen.md)
 
 #### Thay đổi cấu hình tài nguyên POC <a href="#tainguyenpoc-thaydoicauhinhtainguyenpoc" id="tainguyenpoc-thaydoicauhinhtainguyenpoc"></a>
 
 ***
 
-Quy trình và phương thức tính giá tương tự như khi thay đổi cấu hình khi sử dụng tài nguyên thường. Tham khảo chi tiết [tại đây](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649289)
+Quy trình và phương thức tính giá tương tự như khi thay đổi cấu hình khi sử dụng tài nguyên thường. Tham khảo chi tiết [tại đây](../thay-doi-cau-hinh-tai-nguyen.md)
 
 #### Gia hạn tài nguyên POC <a href="#tainguyenpoc-giahantainguyenpoc" id="tainguyenpoc-giahantainguyenpoc"></a>
 
@@ -43,7 +43,7 @@ Quy trình và phương thức tính giá tương tự như khi thay đổi cấ
 
 Trong trường hợp thời hạn sử dụng ví POC của người dùng được gia hạn thêm sau khi đã khởi tạo tài nguyên POC, người dùng có thể tiến hành gia hạn tài nguyên POC tương ứng với thời gian kết thúc mới của ví POC.
 
-Quy trình và phương thức tính giá tương tự như khi gia hạn tài nguyên thường. Tham khảo chi tiết [tại đây](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649302)
+Quy trình và phương thức tính giá tương tự như khi gia hạn tài nguyên thường. Tham khảo chi tiết [tại đây](../gia-han-tai-nguyen.md)
 
 #### Dừng POC đối với tài nguyên POC <a href="#tainguyenpoc-dungpocdoivoitainguyenpoc" id="tainguyenpoc-dungpocdoivoitainguyenpoc"></a>
 

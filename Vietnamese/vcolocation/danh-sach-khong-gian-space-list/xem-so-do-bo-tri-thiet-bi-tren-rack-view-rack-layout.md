@@ -68,6 +68,6 @@ Một số thông tin sẽ không hiển thị đối với các tủ rack thuê
 
 Các tính năng có trong Space list:
 
-* [Xem ](https://vngctech.atlassian.net/wiki/spaces/VCPUG/pages/879001601)[Xem sơ đồ bố trí thiết bị trên rack (View rack layout)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805717)[sơ đồ bố trí thiết bị trên rack (View rack layout)](https://vngctech.atlassian.net/wiki/spaces/VCPUG/pages/879001601)
-* [Xem thông tin chi tiết của tủ rack (View details)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805721)
-* [Lọc danh sách](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805724)
+* [Xem sơ đồ bố trí thiết bị trên rack (View rack layout)](xem-so-do-bo-tri-thiet-bi-tren-rack-view-rack-layout.md)
+* [Xem thông tin chi tiết của tủ rack (View details)](xem-thong-tin-chi-tiet-cua-tu-rack.md)
+* [Lọc danh sách](loc-danh-sach.md)

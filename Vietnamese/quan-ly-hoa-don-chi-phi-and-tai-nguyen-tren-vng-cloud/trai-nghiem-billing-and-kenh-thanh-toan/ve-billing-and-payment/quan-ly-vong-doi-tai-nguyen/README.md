@@ -52,14 +52,4 @@ Thông qua **mô hình vòng tài nguyên** dưới đây, bạn sẽ có cái n
   * Đối với người dùng trả sau, hóa đơn sẽ được phát sinh tại thời điểm cuối tháng, ghi nhận thông tin sử dụng của tài nguyên đó
   * Trong trường hợp người dùng xoá tài nguyên, thông tin sử dụng cũng sẽ được ghi nhận lại và phát sinh hóa đơn dựa trên thông tin đó
 
-### **Để tìm hiểu chi tiết về hành động người dùng trên tài nguyên, tham khảo thêm tại đây** <a href="#quanlyvongdoitainguyen-detimhieuchitietvehanhdongnguoidungtrentainguyen-thamkhaothemtaiday" id="quanlyvongdoitainguyen-detimhieuchitietvehanhdongnguoidungtrentainguyen-thamkhaothemtaiday"></a>
-
-***
-
-* [Khởi tạo tài nguyên](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649304)
-* [Thay đổi cấu hình tài nguyên](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649289)
-* [Gia hạn tài nguyên](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649302)
-* [Tự động gia hạn tài nguyên](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649295)
-* [Khôi phục tài nguyên](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649323)
-* [Xóa tài nguyên](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649297)
-* [Tài nguyên POC](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649679)
+### &#x20;<a href="#quanlyvongdoitainguyen-detimhieuchitietvehanhdongnguoidungtrentainguyen-thamkhaothemtaiday" id="quanlyvongdoitainguyen-detimhieuchitietvehanhdongnguoidungtrentainguyen-thamkhaothemtaiday"></a>

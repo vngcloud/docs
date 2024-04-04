@@ -1,13 +1,13 @@
 # Thanh toán
 
-Trước khi bắt đầu với tài liệu này, bạn nên nên nắm được khái niệm về [người dùng trả trước và trả sau](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649325) để có thể hiểu rõ hơn về các đối tượng sử dụng tính năng thanh toán.
+Trước khi bắt đầu với tài liệu này, bạn nên nên nắm được khái niệm về [người dùng trả trước và trả sau](../nguoi-dung-tra-truoc-and-tra-sau.md) để có thể hiểu rõ hơn về các đối tượng sử dụng tính năng thanh toán.
 
 Tại VNG Cloud Service, chúng tôi cung cấp nhiều phương thức thanh toán để đáp ứng nhu cầu thanh toán cũng như sử dụng tài nguyên theo nhiều hình thức như:
 
-* [**Thanh toán trực tuyến**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649313)
-* [**Thanh toán tài nguyên POC**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649317)
-* [**Tạm giữ Credit**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649319)
-* [**Thanh toán hóa đơn tự động**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649315)
+* [**Thanh toán trực tuyến**](thanh-toan-truc-tuyen.md)
+* [**Thanh toán tài nguyên POC**](thanh-toan-tai-nguyen-poc.md)
+* [**Tạm giữ Credit**](tam-giu-credit.md)
+* [**Thanh toán hóa đơn tự động**](thanh-toan-hoa-don-tu-dong.md)
 
 #### Ngoài ra, tính năng thanh toán tại VNG Cloud hỗ trợ thanh toán nhiều tài nguyên cùng 1 lúc, do đó: <a href="#thanhtoan-ngoaira-tinhnangthanhtoantaivngcloudhotrothanhtoannhieutainguyencung1luc-dodo" id="thanhtoan-ngoaira-tinhnangthanhtoantaivngcloudhotrothanhtoannhieutainguyencung1luc-dodo"></a>
 
@@ -20,6 +20,6 @@ Tại VNG Cloud Service, chúng tôi cung cấp nhiều phương thức thanh to
   * Trong trường hợp này hệ thống sẽ phát sinh nhiều đầu hóa đơn tương ứng với từng tài nguyên
   * Xem lại lịch sử hóa đơn tại đây: [https://dashboard.console.vngcloud.vn/billing-report](https://dashboard.console.vngcloud.vn/billing-report)
 * **Khi áp dụng Coupon:**&#x20;
-  * Tham khảo chi tiết hướng dẫn sử dụng coupon [tại đây](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59801729)
+  * Tham khảo chi tiết hướng dẫn sử dụng coupon [tại đây](ap-dung-coupon-khi-thanh-toan.md)
 
 \

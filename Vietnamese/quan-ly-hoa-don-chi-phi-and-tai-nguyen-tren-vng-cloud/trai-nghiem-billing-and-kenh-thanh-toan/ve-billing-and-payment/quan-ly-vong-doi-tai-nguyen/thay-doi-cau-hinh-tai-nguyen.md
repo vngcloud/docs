@@ -19,7 +19,7 @@ Sử dụng tài liệu này như là một hướng dẫn thay đổi cấu hì
   * 1.2 Chọn tài nguyên và cấu hình cần sử dụng tại trang sản phẩm
   * 1.3 Xác nhận thay đổi cấu tài nguyên để chuyển đến bước thanh toán: Tại đây, hệ thống sẽ điều hướng người dùng đến trang thanh toán tài nguyên
 * **Bước 2: Thanh toán tài nguyên**
-  * Xem hướng dẫn chi tiết [**tại đây**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649291)
+  * Xem hướng dẫn chi tiết [**tại đây**](../thanh-toan/)
 * **Bước 3: Kiểm tra thông tin tài nguyên và thông tin thanh toán**
   * 3.1 Kiểm tra thông tin tài nguyên tại trang sản phẩm
   * 3.2 Kiểm tra **thông tin thanh toán, hóa đơn tại**

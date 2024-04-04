@@ -71,7 +71,7 @@ Tham khảo chi tiết hơn tại mục: [**Quản lý tài nguyên**](https://d
   * Lịch sử thanh toán sẽ xuất hiện ngay tại [**User Portal, mục Payment history**](https://dashboard.console.vngcloud.vn/payment-history) ngay sau khi người dùng thực hiện thanh toán tài nguyên
 * **Người dùng trả sau**
   * Về cơ bản, người dùng trả sau sẽ có lịch sử thanh toán trong các trường hợp sau:
-    * Hệ thống thanh toán hóa đơn tự động → Tìm hiểu thêm tại phần [**thanh toán hóa đơn tự động**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649315)
+    * Hệ thống thanh toán hóa đơn tự động → Tìm hiểu thêm tại phần [**thanh toán hóa đơn tự động**](thanh-toan/thanh-toan-hoa-don-tu-dong.md)
     * Người dùng chủ động thực hiện thanh toán hóa đơn tại User Portal
 
 #### **Làm sao để thay đổi từ trả trước sang trả sau và ngược lại?** <a href="#nguoidungtratruoc-and-trasau-lamsaodethaydoitutratruocsangtrasauvanguoclai" id="nguoidungtratruoc-and-trasau-lamsaodethaydoitutratruocsangtrasauvanguoclai"></a>

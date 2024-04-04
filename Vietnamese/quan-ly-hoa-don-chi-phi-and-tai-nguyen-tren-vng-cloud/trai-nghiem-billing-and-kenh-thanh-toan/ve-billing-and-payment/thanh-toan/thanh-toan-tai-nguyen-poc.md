@@ -1,6 +1,6 @@
 # Thanh toán tài nguyên POC
 
-Trước khi tìm hiểu phương thức thanh toán tài nguyên POC, bạn nên hiểu rõ các khái niệm cũng các hành động mà người dùng có thể thao tác đối với tài nguyên POC. Tìm hiểu thêm về tài nguyên POC [**tại đây**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649679)**.**
+Trước khi tìm hiểu phương thức thanh toán tài nguyên POC, bạn nên hiểu rõ các khái niệm cũng các hành động mà người dùng có thể thao tác đối với tài nguyên POC. Tìm hiểu thêm về tài nguyên POC [**tại đây**](../quan-ly-vong-doi-tai-nguyen/tai-nguyen-poc/)**.**
 
 Thanh toán tài nguyên POC là một hình thức thanh toán tại VNG Cloud Service, áp dụng đối với:
 

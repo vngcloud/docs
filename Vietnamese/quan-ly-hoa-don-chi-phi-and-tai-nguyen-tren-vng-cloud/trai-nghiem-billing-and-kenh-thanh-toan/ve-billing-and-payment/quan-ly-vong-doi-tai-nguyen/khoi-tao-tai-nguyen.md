@@ -19,14 +19,14 @@ Sử dụng tài liệu này như là một hướng dẫn khởi tạo tài ngu
   * 1.2 Chọn tài nguyên và cấu hình cần sử dụng tại trang sản phẩm
   * 1.3 Xác nhận sử dụng tài nguyên để chuyển đến bước thanh toán: Tại đây, hệ thống sẽ điều hướng người dùng đến trang thanh toán tài nguyên
 * **Bước 2: Thanh toán tài nguyên**
-  * Xem hướng dẫn chi tiết [**tại đây**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649291)
+  * Xem hướng dẫn chi tiết [**tại đây**](../thanh-toan/)
 * **Bước 3: Kiểm tra thông tin tài nguyên và thông tin thanh toán**
   * 3.1 Kiểm tra thông tin tài nguyên tại trang sản phẩm
   * 3.2 Kiểm tra **thông tin thanh toán, hóa đơn tại**
     * **User Portal:** [**https://dashboard.console.vngcloud.vn/**](https://dashboard.console.vngcloud.vn/)
 * **Bước 4: Hệ thống thực hiện**
   * Email thông báo thông tin tài nguyên vừa khởi tạo
-  * Phát sinh hóa đơn tương ứng: Tham khảo thêm cách tính thành tiền cũng như thông tin hóa đơn [**tại đây**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649287)
+  * Phát sinh hóa đơn tương ứng: Tham khảo thêm cách tính thành tiền cũng như thông tin hóa đơn [**tại đây**](../../quan-ly-hoa-don.md)
 
 #### **Hướng dẫn tính giá tài nguyên** <a href="#khoitaotainguyen-huongdantinhgiatainguyen" id="khoitaotainguyen-huongdantinhgiatainguyen"></a>
 

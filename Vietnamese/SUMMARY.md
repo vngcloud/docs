@@ -592,6 +592,7 @@
     * [Transfer dữ liệu từ Amazon S3 tới vStorage](datasync/tinh-huong-su-dung/transfer-du-lieu-tu-amazon-s3-toi-vstorage.md)
     * [Transfer dữ liệu từ vStorage tới vStorage khác account](datasync/tinh-huong-su-dung/transfer-du-lieu-tu-vstorage-toi-vstorage-khac-account.md)
     * [Transfer từ vStorage tới vStorage trên cùng account](datasync/tinh-huong-su-dung/transfer-tu-vstorage-toi-vstorage-tren-cung-account.md)
+* [vNetwork](vnetwork.md)
 * [Identity and Access Management (IAM)](identity-and-access-management-iam.md)
   * [Bắt đầu với IAM](identity-and-access-management-iam/bat-dau-voi-iam.md)
   * [Ứng dụng phổ biến](identity-and-access-management-iam/ung-dung-pho-bien/README.md)

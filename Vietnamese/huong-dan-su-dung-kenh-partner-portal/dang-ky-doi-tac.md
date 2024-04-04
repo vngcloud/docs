@@ -4,7 +4,7 @@
 
 Tài khoản dịch vụ sử dụng để đăng ký đối tác phải thỏa các điều kiện sau
 
-* Tài khoản đã được đăng ký tại portal VNG Cloud, trong trường hợp chưa có tài khoản, tham khảo hướng dẫn [tại đây](https://docs.vngcloud.vn/pages/viewpage.action?pageId=22938001) để đăng ký tài khoản
+* Tài khoản đã được đăng ký tại portal VNG Cloud, trong trường hợp chưa có tài khoản, tham khảo hướng dẫn [tại đây](dang-ky-doi-tac.md) để đăng ký tài khoản
 * Tài khoản sử dụng đăng ký đối tác, không được là tài khoản khách hàng của một đối tác khác
 * Các account đăng ký làm đối tác của VNG Cloud phải thuộc loại tài khoản “Doanh Nghiệp
 
@@ -17,7 +17,7 @@ Tài khoản dịch vụ sử dụng để đăng ký đối tác phải thỏa 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59804974/image2023-7-3_11-13-12.png?version=1&#x26;modificationDate=1688357596000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 * (1): Nếu đã có tài khoản, người dùng nhập username và password để đăng nhập. Username và password là thông tin của account đã được tạo trong portal [vngcloud.vn](http://vngcloud.vn/)
-* (2): Trong trường hợp chưa có tài khoản portal vngcloud, người dùng chọn “Sign up” và tham khảo hướng dẫn [tại đây](https://docs.vngcloud.vn/pages/viewpage.action?pageId=22938001) để đăng ký tài khoản
+* (2): Trong trường hợp chưa có tài khoản portal vngcloud, người dùng chọn “Sign up” và tham khảo hướng dẫn [tại đây](../huong-dan-su-dung-tai-khoan/dang-ky-tai-khoan.md) để đăng ký tài khoản
 
 \
 

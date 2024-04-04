@@ -12,9 +12,9 @@ Tại đây, chúng tôi chia hệ thống làm 3 nhóm chức năng chính:
 
 ***
 
-* [Thanh toán](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649291)
-* [Quản lý hóa đơn](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649287)
-* [Quản lý vòng đời tài nguyên](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649293)
+* [Thanh toán](thanh-toan/)
+* [Quản lý hóa đơn](../quan-ly-hoa-don.md)
+* [Quản lý vòng đời tài nguyên](quan-ly-vong-doi-tai-nguyen/)
 
 #### **Tổng quan quy trình khởi tạo và thanh toán tài nguyên đối với người dùng VNG Cloud Service** <a href="#trainghiembilling-and-payment-tongquanquytrinhkhoitaovathanhtoantainguyendoivoinguoidungvngcloudserv" id="trainghiembilling-and-payment-tongquanquytrinhkhoitaovathanhtoantainguyendoivoinguoidungvngcloudserv"></a>
 
@@ -39,4 +39,4 @@ Tại đây, chúng tôi chia hệ thống làm 3 nhóm chức năng chính:
 
 **Lưu ý: Trên đây là hướng dẫn tham khảo cho người dùng trả trước, đối với người dùng trả sau sẽ có 1 số khác biệt. Tham khảo chi tiết tại mục:**
 
-* [Người dùng trả trước và trả sau](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649325)
+* [Người dùng trả trước và trả sau](nguoi-dung-tra-truoc-and-tra-sau.md)

@@ -6,7 +6,7 @@ Các tính năng chung là các tính năng không thuộc trang chức năng n�
 
 **Danh sách các tính năng chung:**
 
-1. [**Mua Credits**](https://docs.vngcloud.vn/display/VCONSOLE/Mua+Credit)
-2. [**Phân quyền truy cập qua vIAM**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649149)
+1. [**Mua Credits**](mua-credit.md)
+2. [**Phân quyền truy cập qua IAM**](phan-quyen-truy-cap-thong-qua-iam.md)
 
 \

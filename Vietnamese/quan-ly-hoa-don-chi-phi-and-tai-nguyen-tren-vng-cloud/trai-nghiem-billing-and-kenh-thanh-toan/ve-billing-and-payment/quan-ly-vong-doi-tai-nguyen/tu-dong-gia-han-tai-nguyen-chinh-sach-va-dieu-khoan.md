@@ -53,9 +53,9 @@ Tự động gia hạn tài nguyên là **tính năng của hệ thống**, giú
 * Tài nguyên được mặc định **gia hạn thêm 1 tháng**, kể từ thời điểm kết thúc
 * Người dùng cần chuẩn bị đủ số dư credit khả dụng theo như thông báo để hệ thống có thể tiến hành gia hạn
 * Hệ thống chính thức thực hiện **gia hạn trước 3 ngày**, tính từ thời điểm kết thúc tài nguyên
-  * Cách tính giá khi hệ thống tự động gia hạn không khác biệt so với việc người dùng chủ động gia hạn tài nguyên, tham khảo thêm [tại đây](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649302)
+  * Cách tính giá khi hệ thống tự động gia hạn không khác biệt so với việc người dùng chủ động gia hạn tài nguyên, tham khảo thêm [tại đây](gia-han-tai-nguyen.md)
   * Hệ thống gửi thông tin tài nguyên được gia hạn thành công/thất bại đến người dùng
   * Hệ thống phát sinh hóa đơn tương ứng với khoảng thời gian được gia hạn thêm
-* Với các tài nguyên đã kết thúc sẽ không áp dụng tự động gia hạn. Có nghĩa khi tài nguyên được bật tự động gia hạn, nhưng quá trình tự động gia hạn thất bại do thiếu credit, dẫn đến việc tài nguyên bị hết hạn, trong trường hợp này người dùng cần chủ động thực hiện khôi phục tài nguyên để tiếp tục sử dụng dịch vụ. Tham khảo hướng dẫn [Khôi phục tài nguyên](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649323)
+* Với các tài nguyên đã kết thúc sẽ không áp dụng tự động gia hạn. Có nghĩa khi tài nguyên được bật tự động gia hạn, nhưng quá trình tự động gia hạn thất bại do thiếu credit, dẫn đến việc tài nguyên bị hết hạn, trong trường hợp này người dùng cần chủ động thực hiện khôi phục tài nguyên để tiếp tục sử dụng dịch vụ. Tham khảo hướng dẫn [Khôi phục tài nguyên](khoi-phuc-tai-nguyen.md)
 
 \
