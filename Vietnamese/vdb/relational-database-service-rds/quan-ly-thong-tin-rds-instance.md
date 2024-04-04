@@ -6,9 +6,9 @@ VNG Cloud vDB cung cấp các giao diện (dashboard) giúp bạn quản lý RDS
 
 Hãy cùng điểm qua các Dashboard này.
 
-* [A - Giao diện quản lý Database](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723044#Qu%E1%BA%A3nl%C3%BDth%C3%B4ngtinRDSInstance-A-Giaodi%E1%BB%87nqu%E1%BA%A3nl%C3%BDDatabase)
-* [B - Giao diện quản lý Backup](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723044#Qu%E1%BA%A3nl%C3%BDth%C3%B4ngtinRDSInstance-B-Giaodi%E1%BB%87nqu%E1%BA%A3nl%C3%BDBackup)
-* [C- Giao diện quản lý Configuration Group](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723044#Qu%E1%BA%A3nl%C3%BDth%C3%B4ngtinRDSInstance-C-Giaodi%E1%BB%87nqu%E1%BA%A3nl%C3%BDConfigurationGroup)
+* [A - Giao diện quản lý Database](quan-ly-thong-tin-rds-instance.md#quanlythongtinrdsinstance-a-giaodienquanlydatabase)
+* [B - Giao diện quản lý Backup](quan-ly-thong-tin-rds-instance.md#quanlythongtinrdsinstance-b-giaodienquanlybackup)
+* [C- Giao diện quản lý Configuration Group](quan-ly-thong-tin-rds-instance.md#quanlythongtinrdsinstance-c-giaodienquanlyconfigurationgroup)
 
 ### A - Giao diện quản lý Database <a href="#quanlythongtinrdsinstance-a-giaodienquanlydatabase" id="quanlythongtinrdsinstance-a-giaodienquanlydatabase"></a>
 
