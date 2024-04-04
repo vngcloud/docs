@@ -60,7 +60,7 @@ Tại mục **Settings,** bạn lựa chọn:
 \
 
 
-Tại mục **Network & Security**, bạn lựa chọn **Cloud Network** sẽ sử dụng cho RDS Instance này. Mọi RDS Instance đều phải kết nối với một Cloud Network. Nếu chưa có Cloud Network nào, bạn có thể tạo một Cloud Network mới với hướng dẫn sau: [Link](https://docs.vinadata.vn/pages/viewpage.action?pageId=2721227).
+Tại mục **Network & Security**, bạn lựa chọn **Cloud Network** sẽ sử dụng cho RDS Instance này. Mọi RDS Instance đều phải kết nối với một Cloud Network. Nếu chưa có Cloud Network nào, bạn có thể tạo một Cloud Network mới với hướng dẫn sau: [Link](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md).
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/2722985/image2019-6-24_11-33-45.png?version=1&#x26;modificationDate=1561350826000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
