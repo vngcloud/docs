@@ -12,10 +12,10 @@ Container là đối tượng chứa dữ liệu (Object) trong vStorage có th�
 
 4\. Màn hình **Tạo một container** được hiển thị. Nhập **Tên container**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho container của bạn.&#x20;
 
-Sau khi tạo container, bạn không thể thay đổi tên của container. Để biết thêm thông tin về cách đặt tên container, hãy xem [Phạm vi giới hạn container](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648678).
+Sau khi tạo container, bạn không thể thay đổi tên của container. Để biết thêm thông tin về cách đặt tên container, hãy xem [Phạm vi giới hạn container](pham-vi-gioi-han-container.md).
 
 5\. Chọn **Tạo.**
 
-Sau khi bạn hoàn thành 5 bước được mô tả bên trên, container đã được tạo. Tiếp tục sử dụng các tính năng mà chúng tôi cung cấp cho container, bắt đầu với [Tải lên object](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648524).
+Sau khi bạn hoàn thành 5 bước được mô tả bên trên, container đã được tạo. Tiếp tục sử dụng các tính năng mà chúng tôi cung cấp cho container, bắt đầu với [Tải lên object](../lam-viec-voi-directory-va-object/tai-len-tep-tin.md).
 
 <figure><img src="../../../../.gitbook/assets/Khoi_tao_container (1).gif" alt=""><figcaption></figcaption></figure>
