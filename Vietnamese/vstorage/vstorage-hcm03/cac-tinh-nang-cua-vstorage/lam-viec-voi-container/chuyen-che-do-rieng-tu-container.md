@@ -30,7 +30,7 @@ Sau khi bạn hoàn thành 5 bước được mô tả bên trên, tính năng P
 
 Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung cấp API cho phép bạn tích hợp với các ứng dụng, công cụ phía người dùng của bạn với vStorage để lưu trữ dữ liệu.
 
-Để chuyển chế độ riêng tư container qua vStorage API, hãy xem [API Developers](https://docs.vngcloud.vn/display/VV/API+Developers).
+Để chuyển chế độ riêng tư container qua vStorage API, hãy xem [API Developers](../../api-developers/).
 
 </details>
 

@@ -6,7 +6,7 @@ Sau khi bạn khởi tạo container, ở cấu hình mặc định container c�
 
 <summary>Sử dụng vStorage Portal</summary>
 
-Trước khi có thể thực hiện chuyển chế độ công khai container, bạn cần thực hiện phân quyền truy cập ACLs container cho toàn bộ người dùng, chi tiết tham khảo tại [Phân quyền truy cập ACLs container](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648513).
+Trước khi có thể thực hiện chuyển chế độ công khai container, bạn cần thực hiện phân quyền truy cập ACLs container cho toàn bộ người dùng, chi tiết tham khảo tại [Phân quyền truy cập ACLs container](phan-quyen-truy-cap-acls-container.md).
 
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 
@@ -16,7 +16,7 @@ Trước khi có thể thực hiện chuyển chế độ công khai container, 
 
 4\. Màn hình **Chuyển chế độ công khai** được hiển thị. Chọn **Chuyển chế độ công khai.**
 
-Sau khi bạn hoàn thành 4 bước được mô tả bên trên, tính năng Public container đã được bật. Quyền truy cập công khai được cấp cho container và object thông qua danh sách kiểm soát truy cập (ACLs). Cài đặt này cho phép mọi người truy cập vào tất cả các object bên trong container với các quyền truy cập được chỉ định thông qua danh sách kiểm soát truy cập (ACLs). Để xem thêm thông tin về tính năng Thiết lập ACLS, hãy xem [Phân quyền truy cập ACLs container](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648513).
+Sau khi bạn hoàn thành 4 bước được mô tả bên trên, tính năng Public container đã được bật. Quyền truy cập công khai được cấp cho container và object thông qua danh sách kiểm soát truy cập (ACLs). Cài đặt này cho phép mọi người truy cập vào tất cả các object bên trong container với các quyền truy cập được chỉ định thông qua danh sách kiểm soát truy cập (ACLs). Để xem thêm thông tin về tính năng Thiết lập ACLS, hãy xem [Phân quyền truy cập ACLs container](phan-quyen-truy-cap-acls-container.md).
 
 <img src="../../../../.gitbook/assets/Chuyen_che_do_cong_khai_container.gif" alt="" data-size="original">
 
@@ -30,7 +30,7 @@ Sau khi bạn hoàn thành 4 bước được mô tả bên trên, tính năng P
 
 Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung cấp API cho phép bạn tích hợp với các ứng dụng, công cụ phía người dùng của bạn với vStorage để lưu trữ dữ liệu.
 
-Để chuyển chế độ công khai container qua vStorage API, hãy xem [API Developers](https://docs.vngcloud.vn/display/VV/API+Developers).
+Để chuyển chế độ công khai container qua vStorage API, hãy xem [API Developers](../../api-developers/).
 
 </details>
 

@@ -14,13 +14,13 @@ Version là một thuật ngữ được sử dụng để chỉ một phiên b�
 
 4\. Màn hình **Bật versioning** được hiển thị. Nhập **Tên phiên bản containers.**&#x20;
 
-Sau khi tạo container, bạn không thể thay đổi tên của container. Để biết thêm thông tin về cách đặt tên container, hãy xem [Phạm vi giới hạn container](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648678).
+Sau khi tạo container, bạn không thể thay đổi tên của container. Để biết thêm thông tin về cách đặt tên container, hãy xem [Phạm vi giới hạn container](pham-vi-gioi-han-container.md).
 
 5\. Chọn **Bật versioning.**
 
 Sau khi bạn hoàn thành 5 bước được mô tả bên trên, tính năng container versioning đã được bật. Nếu bạn có nhiều container trong 1 project và tất cả container đều cần sử dụng tính năng versioning, bạn nên đặt tên riêng biệt cho các container versioning và không được tạo nhiều hơn 1 container versioning cho 1 container.&#x20;
 
-Để tải về một version object, hãy xem tại [Tải xuống object](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648540).
+Để tải về một version object, hãy xem tại [Tải xuống object](../lam-viec-voi-directory-va-object/tai-xuong-object.md).
 
 <img src="../../../../.gitbook/assets/Su_dung_container_version.gif" alt="" data-size="original">
 
