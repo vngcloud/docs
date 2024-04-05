@@ -21,4 +21,4 @@
 
 #### 3. Hướng dẫn sử dụng <a href="#hethongvstorageportalmoidacosan-3.huongdansudung" id="hethongvstorageportalmoidacosan-3.huongdansudung"></a>
 
-* [https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648395](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648395)
+* [vStorage là gì?](../../vstorage-la-gi/)

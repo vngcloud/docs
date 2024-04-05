@@ -21,6 +21,6 @@
 
 #### 3. Hướng dẫn sử dụng <a href="#themtinhnangtimkiemthongquawildcard-regexchochucnangsearchvalifecycleexpiration-3.huongdansudung" id="themtinhnangtimkiemthongquawildcard-regexchochucnangsearchvalifecycleexpiration-3.huongdansudung"></a>
 
-* [https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553917](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553917)
+* [Tìm kiếm Object/Directory](../../cac-tinh-nang-cua-vstorage/lam-viec-voi-directory-va-object/tim-kiem-object-directory.md)
 
 \

@@ -21,4 +21,5 @@
 
 #### 3. Hướng dẫn sử dụng <a href="#themtinhnangtichhopvstoragevoicongcus3sdk-3.huongdansudung" id="themtinhnangtichhopvstoragevoicongcus3sdk-3.huongdansudung"></a>
 
-* [https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802261](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802261)
+* [S3 SDK](../../3rd-party-softwares/s3-sdk/)
+

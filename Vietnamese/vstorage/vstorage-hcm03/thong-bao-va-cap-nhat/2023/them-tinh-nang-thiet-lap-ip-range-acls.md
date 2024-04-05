@@ -21,5 +21,5 @@
 
 #### 3. Hướng dẫn sử dụng <a href="#themtinhnangthietlapiprangeacls-3.huongdansudung" id="themtinhnangthietlapiprangeacls-3.huongdansudung"></a>
 
-* Set IP Range ACL cho container: [https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802032](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802032)
-* Set IP Range ACL cho project: [https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802027](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802027)
+* Set IP Range ACL cho container: [Link](../../cac-tinh-nang-cua-vstorage/lam-viec-voi-container/su-dung-tinh-nang-ip-range-acls-container.md)
+* Set IP Range ACL cho project: [Link](../../cac-tinh-nang-cua-vstorage/lam-viec-voi-project/su-dung-tinh-nang-ip-range-acls-project.md)

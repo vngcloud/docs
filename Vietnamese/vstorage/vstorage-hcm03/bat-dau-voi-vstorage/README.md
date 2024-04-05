@@ -10,9 +10,9 @@ Sử dụng hướng dẫn này để bắt đầu với vStorage. Bạn sẽ h�
 
 #### Chủ đề  <a href="#batdauvoivstorage-chude" id="batdauvoivstorage-chude"></a>
 
-* [Bước 1: Tạo project đầu tiên](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648630)
-* [Bước 2: Tạo container đầu tiên](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648387)
-* [Bước 3: Tải một object lên container](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648405)
-* [Bước 4: Tải xuống một object từ một container](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648419)
-* [Bước 5: Sao chép object tới một thư mục](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648421)
-* [Bước 6: Xóa object và container](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648424)
+* [Bước 1: Tạo project đầu tiên](buoc-1-tao-project-dau-tien.md)
+* [Bước 2: Tạo container đầu tiên](buoc-2-tao-container-dau-tien.md)
+* [Bước 3: Tải một object lên container](buoc-3-tai-mot-object-len-container.md)
+* [Bước 4: Tải xuống một object từ một container](buoc-4-tai-xuong-mot-object-tu-mot-container.md)
+* [Bước 5: Sao chép object tới một thư mục](buoc-5-sao-chep-object-toi-mot-thu-muc.md)
+* [Bước 6: Xóa object và container](buoc-6-xoa-object-va-container.md)
