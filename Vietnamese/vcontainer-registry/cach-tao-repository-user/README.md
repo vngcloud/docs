@@ -28,10 +28,10 @@ Bạn có thể tạm thời vô hiệu hóa một Repository User bằng cách 
 
 #### Bài viết liên quan <a href="#repositoryuser-baivietlienquan" id="repositoryuser-baivietlienquan"></a>
 
-* [Create Repository User](https://docs.vngcloud.vn/display/ONVINA/Create+Repository+User?src=contextnavpagetreemode)
-* [Edit Information](https://docs.vngcloud.vn/display/ONVINA/Edit+Information?src=contextnavpagetreemode)
-* [Edit attached repositories](https://docs.vngcloud.vn/display/ONVINA/Edit+Attached+Repositories?src=contextnavpagetreemode)
-* [Refresh Secret Key](https://docs.vngcloud.vn/display/ONVINA/Refresh+Secret+Key?src=contextnavpagetreemode)
-* [Change User Status](https://docs.vngcloud.vn/display/ONVINA/Change+User+Status?src=contextnavpagetreemode)
+* [Create Repository User](tao-repository-user.md)
+* [Edit Information](dieu-chinh-thong-tin.md)
+* [Edit attached repositories](chinh-sua-attached-repositories.md)
+* [Refresh Secret Key](cach-refresh-secret-key.md)
+* [Change User Status](cach-thay-doi-user-status.md)
 
 \
