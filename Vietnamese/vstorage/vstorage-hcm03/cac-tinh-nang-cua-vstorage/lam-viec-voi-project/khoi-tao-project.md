@@ -8,7 +8,7 @@ Một Project là một thuật ngữ trên vStorage thể hiện một gói lư
 
 2\. Chọn **region** bạn muốn lưu trữ dữ liệu.
 
-Chọn một region gần bạn để giảm thiểu độ trễ và chi phí cũng như giải quyết các yêu cầu về quy định. Các object được lưu trữ trong một region sẽ không bao giờ rời khỏi region đó trừ khi bạn chuyển chúng sang một region khác. Để biết danh sách các region của vStorage, hãy xem [Hạn mức tài nguyên](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648640).
+Chọn một region gần bạn để giảm thiểu độ trễ và chi phí cũng như giải quyết các yêu cầu về quy định. Các object được lưu trữ trong một region sẽ không bao giờ rời khỏi region đó trừ khi bạn chuyển chúng sang một region khác. Để biết danh sách các region của vStorage, hãy xem [Hạn mức tài nguyên](../../han-muc-tai-nguyen.md).
 
 3\. Chọn **Tạo một project.**
 
@@ -16,11 +16,11 @@ Màn hình **Tạo mới project** được hiển thị.
 
 4\. Trong **Tên project**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho project của bạn.&#x20;
 
-Sau khi tạo project, bạn không thể thay đổi tên của project. Để biết thêm thông tin về cách đặt tên project, hãy xem [Phạm vi giới hạn project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648648).
+Sau khi tạo project, bạn không thể thay đổi tên của project. Để biết thêm thông tin về cách đặt tên project, hãy xem [Phạm vi giới hạn project](pham-vi-gioi-han-project.md).
 
 5\. Chọn **Project type (gói lưu trữ)** theo nhu cầu của bạn.
 
-Chúng tôi cung cấp cho bạn 3 gói lưu trữ Gold, Silver, Archive phù hợp với các nhu cầu lưu trữ dữ liệu khác nhau của bạn. Để biết thêm thông tin về các gói lưu trữ chúng tôi đang cung cấp, hãy xem [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).
+Chúng tôi cung cấp cho bạn 3 gói lưu trữ Gold, Silver, Archive phù hợp với các nhu cầu lưu trữ dữ liệu khác nhau của bạn. Để biết thêm thông tin về các gói lưu trữ chúng tôi đang cung cấp, hãy xem [Cách tính phí](../../cach-tinh-phi/).
 
 6\. Chọn **Quota** lưu trữ theo nhu cầu của bạn.
 
@@ -34,9 +34,9 @@ Quota là kích thước gói lưu trữ tối đa bạn có thể tạo. Đối
 
 10\. Chọn **Tiếp tục thanh toán** và thực hiện thanh toán sau khi chọn phương thức thanh toán phù hợp.
 
-Để biết danh sách các loại hình thức thanh toán của vStorage, hãy xem [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).
+Để biết danh sách các loại hình thức thanh toán của vStorage, hãy xem [Cách tính phí](../../cach-tinh-phi/).
 
-Sau khi bạn hoàn thành 10 bước được mô tả bên trên, project đã được tạo. Tiếp tục sử dụng các tính năng mà chúng tôi cung cấp cho project, bắt đầu với [Khởi tạo container](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648505).
+Sau khi bạn hoàn thành 10 bước được mô tả bên trên, project đã được tạo. Tiếp tục sử dụng các tính năng mà chúng tôi cung cấp cho project, bắt đầu với [Khởi tạo container](../lam-viec-voi-container/khoi-tao-container.md).
 
 
 
