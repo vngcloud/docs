@@ -16,7 +16,7 @@ Bạn đã khởi tạo một container và thực hiện tải lên/ tải xu�
 
 Sau khi chọn Xóa, hệ thống sẽ tự động chuyển ra màn hình chính, nếu bạn thấy container vừa thực hiện biến mất khỏi danh sách thì bạn đã xoá thành công. Container lúc này đã được xóa vĩnh viễn khỏi hệ thống và bạn không thể khôi phục container cũng như các object được lưu trữ trong container. Vì vậy hãy đảm bảo kiểm tra dữ liệu của bạn trước khi thực hiện thao tác này. Nếu container đang được bật versioning thì khi bạn thực hiện xóa container, tất cả object trong container sẽ được chuyển thành một version trong container version. Bạn không thể thực hiện xóa các container segment khi thực hiện xóa container gốc.
 
-Để biết thêm thông tin về container segment, hãy xem tại [Tổng quan container](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648674).
+Để biết thêm thông tin về container segment, hãy xem tại [Tổng quan container](tong-quan-container.md).
 
 <img src="../../../../.gitbook/assets/Xoa_container.gif" alt="" data-size="original">
 
@@ -28,7 +28,7 @@ Sau khi chọn Xóa, hệ thống sẽ tự động chuyển ra màn hình chín
 
 Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung cấp API cho phép bạn tích hợp với các ứng dụng, công cụ phía người dùng của bạn với vStorage để lưu trữ dữ liệu.
 
-Để xóa một container qua vStorage API, hãy xem [API Developers](https://docs.vngcloud.vn/display/VV/API+Developers).
+Để xóa một container qua vStorage API, hãy xem [API Developers](../../api-developers/).
 
 </details>
 
@@ -36,9 +36,9 @@ Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung c�
 
 <summary>Sử dụng 3rd party softwares</summary>
 
-vStorage cũng tương thích với các công cụ phía người dùng sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](https://docs.vngcloud.vn/display/VV/3rd+party+softwares) và học cách tích hợp, sử dụng các công cụ này.&#x20;
+vStorage cũng tương thích với các công cụ phía người dùng sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.&#x20;
 
-Để xóa một container qua 3rd party software, hãy xem [3rd party softwares](https://docs.vngcloud.vn/display/VV/3rd+party+softwares).
+Để xóa một container qua 3rd party software, hãy xem [3rd party softwares](../../3rd-party-softwares/).
 
 \
 

@@ -37,7 +37,7 @@ Sau khi bạn hoàn thành 7 bước được mô tả bên trên, bạn đã ph
 
 Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung cấp API cho phép bạn tích hợp với các ứng dụng, công cụ phía người dùng của bạn với vStorage để lưu trữ dữ liệu.
 
-Để phân quyền truy cập ACLs container qua vStorage API, hãy xem [API Developers](https://docs.vngcloud.vn/display/VV/API+Developers).
+Để phân quyền truy cập ACLs container qua vStorage API, hãy xem [API Developers](../../api-developers/).
 
 </details>
 

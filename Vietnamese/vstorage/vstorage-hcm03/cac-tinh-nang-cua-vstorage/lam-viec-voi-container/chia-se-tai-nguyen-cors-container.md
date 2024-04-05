@@ -32,7 +32,7 @@ CORS chỉ cho thiết lập theo domain xác định ví dụ [https://abc.com.
 
 Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung cấp API cho phép bạn tích hợp với các ứng dụng, công cụ phía người dùng của bạn với vStorage để lưu trữ dữ liệu.
 
-Để chia sẻ tài nguyên CORS container qua vStorage API, hãy xem [API Developers](https://docs.vngcloud.vn/display/VV/API+Developers).
+Để chia sẻ tài nguyên CORS container qua vStorage API, hãy xem [API Developers](../../api-developers/).
 
 </details>
 
