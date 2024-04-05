@@ -17,11 +17,11 @@ Hệ thống sẽ tự động gia hạn 3 ngày trước khi dịch vụ hết 
 
 <summary>Thiết lập tính năng gia hạn tự động khi khởi tạo project</summary>
 
-1. Thực hiện các bước khởi tạo project theo hướng dẫn tại [Khởi tạo project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648428).
+1. Thực hiện các bước khởi tạo project theo hướng dẫn tại [Khởi tạo project](khoi-tao-project.md).
 2. Tại thời điểm thiết lập thông tin về project cần mua, chọn **Gia hạn tự động**.
 3. Chọn **chu kỳ gia hạn tự động**. Chúng tôi cung cấp các chu kỳ gia hạn bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng. Khi bạn thực hiện chọn chu kỳ gia hạn, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ lưu trữ mới và tổng số tiền bạn cần chi trả cho việc gia hạn **project**.
 
-Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).&#x20;
+Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](../../cach-tinh-phi/).&#x20;
 
 Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ mới sau khi gia hạn project sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
 
@@ -40,7 +40,7 @@ _**Video hướng dẫn:**_&#x20;
 3. Màn hình **Bật gia hạn tự động** được hiển thị**.** Chọn **Thời hạn** gia hạn mà bạn mong muốn.&#x20;
 4. Chọn **Đồng ý.**
 
-Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).&#x20;
+Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](../../cach-tinh-phi/).&#x20;
 
 Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ mới sau khi gia hạn project sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
 
@@ -69,7 +69,7 @@ Sau khi bạn thực hiện thành công các bước trên, tính năng gia h�
 
 Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung cấp API cho phép bạn tích hợp với các ứng dụng, công cụ phía người dùng của bạn với vStorage để lưu trữ dữ liệu.
 
-Để gia hạn tự động một project qua vStorage API, hãy xem [API Developers](https://docs.vngcloud.vn/display/VV/API+Developers).
+Để gia hạn tự động một project qua vStorage API, hãy xem [API Developers](../../api-developers/).
 
 </details>
 
