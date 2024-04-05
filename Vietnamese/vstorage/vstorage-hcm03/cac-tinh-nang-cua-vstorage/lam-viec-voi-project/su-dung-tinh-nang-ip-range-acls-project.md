@@ -14,7 +14,7 @@ Tính năng IP range ACLs hỗ trợ cho cả giao thức S3 và HTTP.
 2. Chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/59802027/image2023-5-9\_13-12-33.png?version=1\&modificationDate=1683612754000\&api=v2) tại **project** bạn muốn thiết lập IP range ACLs.
 3. Chọn mục **IP range ACLs**.
 4. Chọn **Thiết lập IP range ACLs**.
-5. Mặc định project mà bạn chọn sẽ được thiết lập trạng thái truy cập là **Tất cả IP/Subnet**. Nếu bạn muốn giới hạn số lượng địa chỉ IP/ Subnet có thể truy cập vào tài nguyên của bạn, hãy chọn **IP/Subnet cụ thể.** Để biết số lượng IP/ Subnet bạn có thể thiết lập trên một project, vui lòng xem [Hạn mức tài nguyên](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648640).
+5. Mặc định project mà bạn chọn sẽ được thiết lập trạng thái truy cập là **Tất cả IP/Subnet**. Nếu bạn muốn giới hạn số lượng địa chỉ IP/ Subnet có thể truy cập vào tài nguyên của bạn, hãy chọn **IP/Subnet cụ thể.** Để biết số lượng IP/ Subnet bạn có thể thiết lập trên một project, vui lòng xem [Hạn mức tài nguyên](../../han-muc-tai-nguyen.md).
 6. Nếu bạn chọn **IP/Subnet cụ thể**, hãy nhập địa chỉ **IP** hoặc **Subnet** (CIDR) (ví dụ: 125.212.100.101 hoặc 125.212.100.0/24) sau đó chọn **Thêm**. Chi tiết tham khảo tại IP address và CIDR ([https://en.wikipedia.org/wiki/Classless\_Inter-Domain\_Routing](https://en.wikipedia.org/wiki/Classless\_Inter-Domain\_Routing)).
 7. **IP/ Subnet** bạn vừa thêm được hiển thị ở danh sách, nếu bạn muốn bỏ **IP/ Subnet** này khỏi danh sách, hãy chọn ![](https://docs.vngcloud.vn/download/thumbnails/59802027/image2023-5-9\_13-17-46.png?version=1\&modificationDate=1683613066000\&api=v2).
 8. Chọn **Cập nhật**.

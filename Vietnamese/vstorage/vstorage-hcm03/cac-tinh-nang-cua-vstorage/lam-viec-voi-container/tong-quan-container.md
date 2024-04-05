@@ -6,6 +6,6 @@ Trong một project sẽ có thể khởi tạo một hoặc nhiều container c
 
 Về mặt triển khai, các project, container, object là tài nguyên của vStorage và chúng tôi cũng cung cấp API để bạn quản lý chúng. Ví dụ: bạn có thể tạo một project, container và tải các object lên bằng cách sử dụng API. Bạn cũng có thể sử dụng giao diện quản trị mà chúng tôi cung cấp hoặc các 3rd party softwares để thực hiện các thao tác này.&#x20;
 
-Phần này mô tả cách làm việc với các container. Để biết thông tin về cách làm việc với các container, hãy xem [Làm việc với container](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648505).
+Phần này mô tả cách làm việc với các container. Để biết thông tin về cách làm việc với các container, hãy xem [Làm việc với container](./).
 
 \

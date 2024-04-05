@@ -20,7 +20,7 @@ Bạn vừa thực hiện xóa một project hoặc một project hết hạn l�
 
 7\. Chọn **Tiếp tục thanh toán** và thực hiện thanh toán sau khi chọn phương thức thanh toán phù hợp.
 
-Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).&#x20;
+Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](../../cach-tinh-phi/).&#x20;
 
 Sau khi bạn thực hiện thành công 7 bước trên, project sẽ được khôi phục với thông tin chu kỳ lưu trữ mới và được cập nhật trên thông tin chung của project mà bạn chọn.
 
