@@ -6,9 +6,9 @@ Bạn truy cập dịch vụ MemoryStore database và chuyển sang mục Config
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/13010785/image2020-2-21_10-54-46.png?version=1&#x26;modificationDate=1582257286000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-* [A - Khởi tạo Configuration Group](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13010785#Qu%E1%BA%A3nl%C3%BDc%E1%BA%A5uh%C3%ACnhMDSInstance-A-Kh%E1%BB%9Fit%E1%BA%A1oConfigurationGroup)
-* [B - Chỉnh sửa các biến cấu hình](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13010785#Qu%E1%BA%A3nl%C3%BDc%E1%BA%A5uh%C3%ACnhMDSInstance-B-Ch%E1%BB%89nhs%E1%BB%ADac%C3%A1cbi%E1%BA%BFnc%E1%BA%A5uh%C3%ACnh)
-* [C - Liên kết MDS Instance với Configuration Groups](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13010785#Qu%E1%BA%A3nl%C3%BDc%E1%BA%A5uh%C3%ACnhMDSInstance-C-Li%C3%AAnk%E1%BA%BFtMDSInstancev%E1%BB%9BiConfigurationGroups)
+* [A - Khởi tạo Configuration Group](quan-ly-cau-hinh-mds-instance.md#quanlycauhinhmdsinstance-a-khoitaoconfigurationgroup)
+* [B - Chỉnh sửa các biến cấu hình](quan-ly-cau-hinh-mds-instance.md#quanlycauhinhmdsinstance-b-chinhsuacacbiencauhinh)
+* [C - Liên kết MDS Instance với Configuration Groups](quan-ly-cau-hinh-mds-instance.md#quanlycauhinhmdsinstance-c-lienketmdsinstancevoiconfigurationgroups)
 
 ### A - Khởi tạo Configuration Group <a href="#quanlycauhinhmdsinstance-a-khoitaoconfigurationgroup" id="quanlycauhinhmdsinstance-a-khoitaoconfigurationgroup"></a>
 

@@ -19,9 +19,9 @@ Nếu sử dụng tool cli, bạn có thể làm theo bài viết sau sử dụn
 
 
 
-* [Bước 1. Xác định thông tin Endpoint & Port để truy cập:](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13010730#K%E1%BA%BFtn%E1%BB%91iMDSInstance-B%C6%B0%E1%BB%9Bc1.X%C3%A1c%C4%91%E1%BB%8Bnhth%C3%B4ngtinEndpoint\&Port%C4%91%E1%BB%83truyc%E1%BA%ADp:)
-* [Bước 2: Tùy chỉnh Security Group Rules để bảo vệ DB Instance (tùy chọn)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13010730#K%E1%BA%BFtn%E1%BB%91iMDSInstance-B%C6%B0%E1%BB%9Bc2:T%C3%B9ych%E1%BB%89nhSecurityGroupRules%C4%91%E1%BB%83b%E1%BA%A3ov%E1%BB%87DBInstance\(t%C3%B9ych%E1%BB%8Dn\))
-* [Bước 3. Kết nối bằng redis-cli](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13010730#K%E1%BA%BFtn%E1%BB%91iMDSInstance-B%C6%B0%E1%BB%9Bc3.K%E1%BA%BFtn%E1%BB%91ib%E1%BA%B1ngredis-cli)
+* [Bước 1. Xác định thông tin Endpoint & Port để truy cập:](ket-noi-mds-instance.md#ketnoimdsinstance-buoc1.xacdinhthongtinendpoint-and-portdetruycap)
+* [Bước 2: Tùy chỉnh Security Group Rules để bảo vệ DB Instance (tùy chọn)](ket-noi-mds-instance.md#ketnoimdsinstance-buoc2-tuychinhsecuritygrouprulesdebaovedbinstance-tuychon)
+* [Bước 3. Kết nối bằng redis-cli](ket-noi-mds-instance.md#ketnoimdsinstance-buoc3.ketnoibangredis-cli)
 
 ### Bước 1. Xác định thông tin Endpoint & Port để truy cập: <a href="#ketnoimdsinstance-buoc1.xacdinhthongtinendpoint-and-portdetruycap" id="ketnoimdsinstance-buoc1.xacdinhthongtinendpoint-and-portdetruycap"></a>
 

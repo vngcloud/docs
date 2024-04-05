@@ -4,8 +4,8 @@ VNG Cloud vDB hỗ trợ hai cách sao lưu (backup) dữ liệu là: theo nhu c
 
 
 
-* [A. Sao lưu theo nhu cầu (On-demand backup hay Manual backup)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13010752#Saol%C6%B0uMDSInstance-A.Saol%C6%B0utheonhuc%E1%BA%A7u\(On-demandbackuphayManualbackup\))
-* [B. Sao lưu tự động theo ngày (Auto-Daily Backup)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13010752#Saol%C6%B0uMDSInstance-B.Saol%C6%B0ut%E1%BB%B1%C4%91%E1%BB%99ngtheong%C3%A0y\(Auto-DailyBackup\))
+* [A. Sao lưu theo nhu cầu (On-demand backup hay Manual backup)](sao-luu-mds-instance.md#saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup)
+* [B. Sao lưu tự động theo ngày (Auto-Daily Backup)](sao-luu-mds-instance.md#saoluumdsinstance-b.saoluutudongtheongay-auto-dailybackup)
 
 ### A. Sao lưu theo nhu cầu (On-demand backup hay Manual backup) <a href="#saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup" id="saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup"></a>
 
@@ -75,7 +75,7 @@ vDBaaS hỗ trợ tính năng tự động sao lưu theo ngày tại thời đi�
 * Cấu hình luôn trong lúc khởi tạo DB Instance.
 * Thay đổi tại giao diện quản lý Database.
 
-Đối với phương án đầu, mời bạn xem lại hướng dẫn Khởi tạo DB Instance tại [Hướng dẫn khởi tạo MDS Instance](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13010707).
+Đối với phương án đầu, mời bạn xem lại hướng dẫn Khởi tạo DB Instance tại [Hướng dẫn khởi tạo MDS Instance](khoi-tao-mds-instance.md).
 
 Đối với phương án sau, bạn truy cập màn hình quản lý Database, click chọn DB Instance muốn cấu hình. Sau đó, bạn click chọn **Edit Database**. Tại đây, bạn kéo xuống mục **CHANGE BACKUP SETTINGS** và bạn có thể cấu hình các thông tin:
 

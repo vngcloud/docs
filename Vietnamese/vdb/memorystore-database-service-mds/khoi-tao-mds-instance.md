@@ -79,7 +79,7 @@ Nếu khởi tạo thành công, DB Instance sẽ có trạng thái **Active**.
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/13010707/Screenshot%20from%202020-02-21%2000-08-32.png?version=1&#x26;modificationDate=1582218598000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-Khi tick chọn DB Instance, bạn có thể xem lại các thông tin cấu hình chi tiết như Flavor, Endpoint & Port để kết nối,... Bạn có thể tham khảo link sau [Quản lý thông tin MDS Instance](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13010741)
+Khi tick chọn DB Instance, bạn có thể xem lại các thông tin cấu hình chi tiết như Flavor, Endpoint & Port để kết nối,... Bạn có thể tham khảo link sau [Quản lý thông tin MDS Instance](quan-ly-thong-tin-mds-instance.md)
 
-Chúc mừng bạn đã khởi tạo thành công DB Instance trên hệ thống VNG Cloud. Mời bạn đến hướng dẫn [kết nối MDS Instance](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13010730) để bắt đầu sử dụng cơ sở dữ liệu.
+Chúc mừng bạn đã khởi tạo thành công DB Instance trên hệ thống VNG Cloud. Mời bạn đến hướng dẫn [kết nối MDS Instance](ket-noi-mds-instance.md) để bắt đầu sử dụng cơ sở dữ liệu.
 

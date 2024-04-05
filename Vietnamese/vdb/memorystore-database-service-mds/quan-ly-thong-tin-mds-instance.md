@@ -6,9 +6,9 @@ VNG Cloud cung cấp các giao diện (dashboard) giúp bạn quản lý các Da
 
 Hãy cùng điểm qua các Dashboard này.
 
-* [A - Giao diện quản lý Database](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13010741#Qu%E1%BA%A3nl%C3%BDth%C3%B4ngtinMDSInstance-A-Giaodi%E1%BB%87nqu%E1%BA%A3nl%C3%BDDatabase)
-* [B - Giao diện quản lý Backup](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13010741#Qu%E1%BA%A3nl%C3%BDth%C3%B4ngtinMDSInstance-B-Giaodi%E1%BB%87nqu%E1%BA%A3nl%C3%BDBackup)
-* [C- Giao diện quản lý Configuration Group](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13010741#Qu%E1%BA%A3nl%C3%BDth%C3%B4ngtinMDSInstance-C-Giaodi%E1%BB%87nqu%E1%BA%A3nl%C3%BDConfigurationGroup)
+* [A - Giao diện quản lý Database](quan-ly-thong-tin-mds-instance.md#quanlythongtinmdsinstance-a-giaodienquanlydatabase)
+* [B - Giao diện quản lý Backup](quan-ly-thong-tin-mds-instance.md#quanlythongtinmdsinstance-b-giaodienquanlybackup)
+* [C- Giao diện quản lý Configuration Group](quan-ly-thong-tin-mds-instance.md#quanlythongtinmdsinstance-c-giaodienquanlyconfigurationgroup)
 
 ### A - Giao diện quản lý Database <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 
