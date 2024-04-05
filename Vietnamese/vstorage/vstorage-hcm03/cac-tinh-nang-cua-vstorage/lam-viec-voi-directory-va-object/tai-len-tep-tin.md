@@ -29,7 +29,7 @@ Lúc này, các tệp tin của bạn đang được hệ thống tải lên, tr
 
 Trong thời gian object đang được tải lên, bạn không thể thực hiện các hành động khác tới container. Khi việc tải lên object hoàn thành, bạn có thể tiếp tục sử dụng các tính năng khác bình thường.&#x20;
 
-Tất cả dữ liệu do bạn tải lên đều thuộc sở hữu của bạn, VNG Cloud sẽ không thể can thiệp hay khôi phục dữ liệu khi bị xóa hay ghi đè bởi lỗi người dùng. Để tránh các các sự cố về ghi đè hay xóa nhầm chúng tôi khuyến khích bạn nên sao lưu phiên bản container (tính năng versioning) để bảo vệ dữ liệu. Để xem chi tiết tính năng versioning, hãy xem [Sử dụng tính năng container versioning](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648511).
+Tất cả dữ liệu do bạn tải lên đều thuộc sở hữu của bạn, VNG Cloud sẽ không thể can thiệp hay khôi phục dữ liệu khi bị xóa hay ghi đè bởi lỗi người dùng. Để tránh các các sự cố về ghi đè hay xóa nhầm chúng tôi khuyến khích bạn nên sao lưu phiên bản container (tính năng versioning) để bảo vệ dữ liệu. Để xem chi tiết tính năng versioning, hãy xem [Sử dụng tính năng container versioning](../lam-viec-voi-container/su-dung-tinh-nang-container-versioning.md).
 
 <img src="../../../../.gitbook/assets/Tai_len_tep_tin (1).gif" alt="" data-size="original">
 
