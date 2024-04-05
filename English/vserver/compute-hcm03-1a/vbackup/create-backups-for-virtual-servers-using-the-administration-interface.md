@@ -6,7 +6,7 @@ On vBackup's dashboard, the protected resources page will list all resources bac
 
 Quan trọng
 
-When you use the vBackup service. In the first time, we will automatically create a default storage at vStorage with 50 GB free space and 1 month shelf life, however to be able to store larger capacity you need to Buy more storage. Backup usage and payment will be stored at vStorage's Gold class, see more backup storage policies and terms here [https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802113](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802113)
+When you use the vBackup service. In the first time, we will automatically create a default storage at vStorage with 50 GB free space and 1 month shelf life, however to be able to store larger capacity you need to Buy more storage. Backup usage and payment will be stored at vStorage's Gold class, see more backup storage policies and terms here
 
 ### **Create backups at the vBackup interface** <a href="#createbackupsforvirtualserversusingtheadministrationinterface-createbackupsatthevbackupinterface" id="createbackupsforvirtualserversusingtheadministrationinterface-createbackupsatthevbackupinterface"></a>
 
