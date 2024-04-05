@@ -4,8 +4,8 @@
 
 Bạn có thể tự thực hiện thông qua các bước sau:
 
-* [1. Dump dữ liệu từ MySQL server của bạn:](https://docs.vngcloud.vn/pages/viewpage.action?pageId=10880027#Importd%E1%BB%AFli%E1%BB%87uv%C3%A0oRDSInstance\(MySQL/Mariadb\)b%E1%BA%B1ngMySQLDump-1.Dumpd%E1%BB%AFli%E1%BB%87ut%E1%BB%ABMySQLserverc%E1%BB%A7ab%E1%BA%A1n:)
-* [2. Import dữ liệu vào RDS Instance.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=10880027#Importd%E1%BB%AFli%E1%BB%87uv%C3%A0oRDSInstance\(MySQL/Mariadb\)b%E1%BA%B1ngMySQLDump-2.Importd%E1%BB%AFli%E1%BB%87uv%C3%A0oRDSInstance.)
+* [1. Dump dữ liệu từ MySQL server của bạn:](import-du-lieu-vao-rds-instance-mysql-mariadb-bang-mysqldump.md#importdulieuvaordsinstance-mysql-mariadb-bangmysqldump-1.dumpdulieutumysqlservercuaban)
+* [2. Import dữ liệu vào RDS Instance.](import-du-lieu-vao-rds-instance-mysql-mariadb-bang-mysqldump.md#importdulieuvaordsinstance-mysql-mariadb-bangmysqldump-2.importdulieuvaordsinstance)
 
 ### 1. Dump dữ liệu từ MySQL server của bạn: <a href="#importdulieuvaordsinstance-mysql-mariadb-bangmysqldump-1.dumpdulieutumysqlservercuaban" id="importdulieuvaordsinstance-mysql-mariadb-bangmysqldump-1.dumpdulieutumysqlservercuaban"></a>
 

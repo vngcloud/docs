@@ -2,11 +2,11 @@
 
 Để dữ liệu giữa MySQL server và RDS Instance đồng bộ hoàn toàn với nhau, bạn có thể cấu hình MySQL Replication. Lúc này, MySQL server của bạn sẽ đóng vai trò **Master**, RDS Instance sẽ đóng vai trò **Slave Read-Only**. Sau khi cấu hình thành công, mọi sự thay đổi trên MySQL server của bạn sẽ được đồng bộ trên RDS Instance thông qua cơ chế **Mysql Asynchronous Replication**.
 
-* [1. Tạo Replication User trên MySQL server của bạn:](https://docs.vngcloud.vn/pages/viewpage.action?pageId=10880120#C%E1%BA%A5uh%C3%ACnhReplicationv%E1%BB%9BiRDS\(MySQL/Mariadb\)-1.T%E1%BA%A1oReplicationUsertr%C3%AAnMySQLserverc%E1%BB%A7ab%E1%BA%A1n:)
-* [2. Kiểm tra trạng thái Binary Log trên DB Server của bạn:](https://docs.vngcloud.vn/pages/viewpage.action?pageId=10880120#C%E1%BA%A5uh%C3%ACnhReplicationv%E1%BB%9BiRDS\(MySQL/Mariadb\)-2.Ki%E1%BB%83mtratr%E1%BA%A1ngth%C3%A1iBinaryLogtr%C3%AAnDBServerc%E1%BB%A7ab%E1%BA%A1n:)
-* [3. Dump dữ liệu từ MySQL server của bạn và Import dữ liệu vào RDS Instance:](https://docs.vngcloud.vn/pages/viewpage.action?pageId=10880120#C%E1%BA%A5uh%C3%ACnhReplicationv%E1%BB%9BiRDS\(MySQL/Mariadb\)-3.Dumpd%E1%BB%AFli%E1%BB%87ut%E1%BB%ABMySQLserverc%E1%BB%A7ab%E1%BA%A1nv%C3%A0Importd%E1%BB%AFli%E1%BB%87uv%C3%A0oRDSInstance:)
-* [4. Ghi nhận Binary Log File và Position trên MySQL server:](https://docs.vngcloud.vn/pages/viewpage.action?pageId=10880120#C%E1%BA%A5uh%C3%ACnhReplicationv%E1%BB%9BiRDS\(MySQL/Mariadb\)-4.Ghinh%E1%BA%ADnBinaryLogFilev%C3%A0Positiontr%C3%AAnMySQLserver:)
-* [5. Cấu hình Replication trên RDS Instance:](https://docs.vngcloud.vn/pages/viewpage.action?pageId=10880120#C%E1%BA%A5uh%C3%ACnhReplicationv%E1%BB%9BiRDS\(MySQL/Mariadb\)-5.C%E1%BA%A5uh%C3%ACnhReplicationtr%C3%AAnRDSInstance:)
+* [1. Tạo Replication User trên MySQL server của bạn:](cau-hinh-replication-voi-rds-mysql-mariadb.md#cauhinhreplicationvoirds-mysql-mariadb-1.taoreplicationusertrenmysqlservercuaban)
+* [2. Kiểm tra trạng thái Binary Log trên DB Server của bạn:](cau-hinh-replication-voi-rds-mysql-mariadb.md#cauhinhreplicationvoirds-mysql-mariadb-2.kiemtratrangthaibinarylogtrendbservercuaban)
+* [3. Dump dữ liệu từ MySQL server của bạn và Import dữ liệu vào RDS Instance:](cau-hinh-replication-voi-rds-mysql-mariadb.md#cauhinhreplicationvoirds-mysql-mariadb-3.dumpdulieutumysqlservercuabanvaimportdulieuvaordsinstance)
+* [4. Ghi nhận Binary Log File và Position trên MySQL server:](cau-hinh-replication-voi-rds-mysql-mariadb.md#cauhinhreplicationvoirds-mysql-mariadb-4.ghinhanbinarylogfilevapositiontrenmysqlserver)
+* [5. Cấu hình Replication trên RDS Instance:](cau-hinh-replication-voi-rds-mysql-mariadb.md#cauhinhreplicationvoirds-mysql-mariadb-5.cauhinhreplicationtrenrdsinstance)
 
 \
 
@@ -63,7 +63,7 @@ Nếu kết quả là **ON**, chúc mừng bạn đã cấu hình Binary Log th�
 
 ### **3. Dump dữ liệu từ MySQL server của bạn và Import dữ liệu vào RDS Instance:** <a href="#cauhinhreplicationvoirds-mysql-mariadb-3.dumpdulieutumysqlservercuabanvaimportdulieuvaordsinstance" id="cauhinhreplicationvoirds-mysql-mariadb-3.dumpdulieutumysqlservercuabanvaimportdulieuvaordsinstance"></a>
 
-Bạn có thể tham khảo hướng dẫn [Import dữ liệu vào RDS Instance datastore MySQL/Mariadb bằng MySQLDump](https://docs.vngcloud.vn/pages/viewpage.action?pageId=10880027).
+Bạn có thể tham khảo hướng dẫn [Import dữ liệu vào RDS Instance datastore MySQL/Mariadb bằng MySQLDump](import-du-lieu-vao-rds-instance-mysql-mariadb-bang-mysqldump.md).
 
 \
 
