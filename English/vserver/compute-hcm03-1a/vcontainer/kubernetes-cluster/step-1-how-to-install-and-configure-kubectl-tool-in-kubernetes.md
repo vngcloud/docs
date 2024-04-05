@@ -2,7 +2,7 @@
 
 The command-line tool in Kubernetes, kubectl, allows you to execute commands in Kubernetes clusters. You can use kubectl to deploy applications, monitor and manage cluster resources, and view logs.
 
-### ![](https://docs.vngcloud.vn/download/attachments/59802429/image2023-5-30\_10-9-48.png?version=1\&modificationDate=1685499893000\&api=v2) <a href="#step1-howtoinstallandconfigurekubectltoolinkubernetes" id="step1-howtoinstallandconfigurekubectltoolinkubernetes"></a>
+<figure><img src="https://docs.vngcloud.vn/download/attachments/59802429/image2023-5-30_10-9-48.png?version=1&#x26;modificationDate=1685499893000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 ### **Before you begin** <a href="#step1-howtoinstallandconfigurekubectltoolinkubernetes-beforeyoubegin" id="step1-howtoinstallandconfigurekubectltoolinkubernetes-beforeyoubegin"></a>
 
