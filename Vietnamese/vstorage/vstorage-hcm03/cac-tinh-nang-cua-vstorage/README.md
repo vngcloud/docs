@@ -14,20 +14,20 @@ Từ mô hình lưu trữ này, chúng tôi cung cấp các tính năng mà bạ
 
 **Làm việc với project**
 
-* [Tổng quan project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648646\&src=contextnavpagetreemode)
-* [Phạm vi giới hạn project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648648\&src=contextnavpagetreemode)
-* [Khởi tạo project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648428\&src=contextnavpagetreemode)
-* [Làm việc với trial project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649749\&src=contextnavpagetreemode)
-* [Xem thông tin project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648432\&src=contextnavpagetreemode)
-* [Tăng giảm hạn mức project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648497\&src=contextnavpagetreemode)
-* [Gia hạn project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648499\&src=contextnavpagetreemode)
-* [Gia hạn tự động project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649654\&src=contextnavpagetreemode)
-* [Xóa project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648494\&src=contextnavpagetreemode)
-* [Khôi phục project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648502\&src=contextnavpagetreemode)
-* [Làm việc với POC project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649751\&src=contextnavpagetreemode)
-* [Sử dụng tính năng IP range ACLs project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802027\&src=contextnavpagetreemode)
-* [Làm việc với vBackup project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802113\&src=contextnavpagetreemode)
-* [Làm việc với Archive clas](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803037\&src=contextnavpagetreemode)s
+* [Tổng quan project](lam-viec-voi-project/tong-quan-project.md)
+* [Phạm vi giới hạn project](lam-viec-voi-project/pham-vi-gioi-han-project.md)
+* [Khởi tạo project](lam-viec-voi-project/khoi-tao-project.md)
+* [Làm việc với trial project](lam-viec-voi-trial-project.md)
+* [Xem thông tin project](lam-viec-voi-project/xem-thong-tin-project.md)
+* [Tăng giảm hạn mức project](lam-viec-voi-project/tang-giam-han-muc-project.md)
+* [Gia hạn project](lam-viec-voi-project/gia-han-project.md)
+* [Gia hạn tự động project](lam-viec-voi-project/gia-han-tu-dong-project.md)
+* [Xóa project](lam-viec-voi-project/xoa-project.md)
+* [Khôi phục project](lam-viec-voi-project/khoi-phuc-project.md)
+* [Làm việc với POC project](lam-viec-voi-poc-project.md)
+* [Sử dụng tính năng IP range ACLs project](lam-viec-voi-project/su-dung-tinh-nang-ip-range-acls-project.md)
+* [Làm việc với vBackup project](lam-viec-voi-vbackup-project.md)
+* [Làm việc với Archive clas](lam-viec-voi-archive-project.md)s
 
 **Làm việc với container**
 

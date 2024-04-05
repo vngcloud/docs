@@ -19,7 +19,7 @@ Bên cạnh đó chúng tôi đang hỗ trợ 3 gói lưu trữ có sẵn bao g�
 * Silver: gói lưu trữ phù hợp với nhu cầu lưu trữ backup, các dữ liệu không có lượng truy cập quá lớn.
 * Archive: gói lưu trữ phù hợp với nhu cầu lưu trữ lâu dài, tối thiểu 6 tháng, ít sử dụng.&#x20;
 
-Cách tính chi phí lưu trữ cho mỗi project được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).
+Cách tính chi phí lưu trữ cho mỗi project được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../cach-tinh-phi/).
 
 _**Video hướng dẫn:**_
 
