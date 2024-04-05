@@ -31,10 +31,10 @@ Lịch sử truy cập của Repository giúp bạn theo dõi tất cả các h�
 
 #### Bài viết liên quan <a href="#repository-baivietlienquan" id="repository-baivietlienquan"></a>
 
-* [Create Repository](https://docs.vngcloud.vn/display/ONVINA/Create+Repository)
-* [Edit Quota Limit](https://docs.vngcloud.vn/display/ONVINA/Edit+Quota+Limit)
-* [Image Management](https://docs.vngcloud.vn/display/ONVINA/Image+Management)
-* [Repository User](https://docs.vngcloud.vn/display/ONVINA/Repository+User)
-* [Repository History](https://docs.vngcloud.vn/display/ONVINA/Repository+History)
+* [Create Repository](cach-tao-repository.md)
+* [Edit Quota Limit](cach-chinh-sua-quota-limit.md)
+* [Image Management](cach-quan-ly-image.md)
+* [Repository User](../cach-tao-repository-user/)
+* [Repository History](xem-lich-su-repository-history.md)
 
 \

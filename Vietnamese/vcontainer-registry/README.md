@@ -22,6 +22,6 @@ VNG Cloud xin giới thiệu đến quý khách hàng dịch vụ mới thuộc 
 
 #### Bài viết liên quan <a href="#vcontainerregistry-baivietlienquan" id="vcontainerregistry-baivietlienquan"></a>
 
-* [Getting Started](https://docs.vngcloud.vn/pages/viewpage.action?pageId=69468902\&src=contextnavpagetreemode)
-* [Repository](https://docs.vngcloud.vn/display/ONVINA/Repository?src=contextnavpagetreemode)
-* [Repository User](https://docs.vngcloud.vn/display/ONVINA/Repository+User?src=contextnavpagetreemode)
+* [Getting Started](bat-dau-voi-vcr.md)
+* [Repository](repository/)
+* [Repository User](cach-tao-repository-user/)

@@ -6,7 +6,7 @@ Trong phần này, chúng ta sẽ tìm hiểu về cách sử dụng và quản 
 
 Để bắt đầu sử dụng Container Registry, bạn cần tìm hiểu trước các hướng dẫn/khái niệm sau:
 
-* Nếu chưa có tài khoản VNG Cloud, người dùng cần đăng ký tài khoản để có thể sử dụng dịch vụ. Tham khảo hướng dẫn [Đăng ký tài khoản](https://docs.vngcloud.vn/pages/viewpage.action?pageId=22938001)
+* Nếu chưa có tài khoản VNG Cloud, người dùng cần đăng ký tài khoản để có thể sử dụng dịch vụ. Tham khảo hướng dẫn [Đăng ký tài khoản](../huong-dan-su-dung-tai-khoan/dang-ky-tai-khoan.md)
 * Tìm hiểu cách **truy cập VNG Cloud Portal** với Root User Account hoặc IAM User Account, tham khảo hướng dẫn [How to Login into VNG Cloud](https://docs-admin.vngcloud.vn/display/ONVINA/How+to+Login+into+VNG+Cloud).
 * **Tải về và cài đặt Docker/Podman hoặc bất kỳ tool nào** trên máy tính local/oncloud dùng để tương tác với Container Registry.
 
