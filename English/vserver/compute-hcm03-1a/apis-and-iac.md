@@ -1,4 +1,4 @@
-# Page 1
+# APIs & IaC
 
 #### VNG Cloud Terraform <a href="#apis-and-iac-vngcloudterraform" id="apis-and-iac-vngcloudterraform"></a>
 
@@ -6,7 +6,7 @@ VNG Cloud provides terraform provider so that users can manage resources through
 
 | Document                                                                            | Description                                                  |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| [Installation](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650381)      | Instructions for installing and configuring Terraform        |
+| Installation                                                                        | Instructions for installing and configuring Terraform        |
 | [References](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs) | Documentation of resources that VNG Cloud Terraform supports |
 
 #### VNG Cloud API <a href="#apis-and-iac-vngcloudapi" id="apis-and-iac-vngcloudapi"></a>

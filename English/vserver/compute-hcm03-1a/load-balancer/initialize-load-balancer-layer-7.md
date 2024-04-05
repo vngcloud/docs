@@ -6,7 +6,7 @@
 
 ### Before start <a href="#initializeloadbalancerlayer7-beforestart" id="initializeloadbalancerlayer7-beforestart"></a>
 
-To create a Load balancer you need to have a network, if you haven't created one you can see the tutorial [Work with VPC - Create a network](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648036)
+To create a Load balancer you need to have a network, if you haven't created one you can see the tutorial [Work with VPC - Create a network](../vpc/virtual-private-cloud-vpc.md)
 
 ### Initialize Load Balancer <a href="#initializeloadbalancerlayer7-initializeloadbalancer" id="initializeloadbalancerlayer7-initializeloadbalancer"></a>
 

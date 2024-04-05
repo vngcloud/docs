@@ -2,14 +2,14 @@
 
 #### **To manage vServer with Terraform, you need to do the following steps:** <a href="#managevserverwithterraform-tomanagevserverwithterraform-youneedtodothefollowingsteps" id="managevserverwithterraform-tomanagevserverwithterraform-youneedtodothefollowingsteps"></a>
 
-**Step 1**: Install Terraform CLI as instructed [here](https://docs.vngcloud.vn/display/VSERVERENG/Install+Terraform)
+**Step 1**: Install Terraform CLI as instructed [here](install-terraform.md)
 
-**Step 2**: To be able to manage vServer with Terraform, you need to create a Service account from the Root account on the IAM homepage (see instructions on how to create a Service account and use [IAM here](https://docs.vngcloud.vn/display/VSERVERENG/Identity+and+Access+Management+\(IAM\)+for+vServer)), in this case you want to create a Server with Terraform requires the following (Policy) permissions:
+**Step 2**: To be able to manage vServer with Terraform, you need to create a Service account from the Root account on the IAM homepage (see instructions on how to create a Service account and use [IAM here](../identity-and-access-management-iam-for-vserver/)), in this case you want to create a Server with Terraform requires the following (Policy) permissions:
 
 * CreateServer
 * GetServer
 
-or you can grant vServerFullAccess permission (should have vServerReadOnlyAccess permission to get resource information after creation). For more information on how to assign permissions to each Resource, the corresponding Action at  [{IAM Authorization Page}](https://docs.vngcloud.vn/display/VSERVERENG/Actions%2C+resources%2C+and+required+conditions+for+vServer+Access+Decentralization).
+or you can grant vServerFullAccess permission (should have vServerReadOnlyAccess permission to get resource information after creation). For more information on how to assign permissions to each Resource, the corresponding Action at  [{IAM Authorization Page}](../identity-and-access-management-iam-for-vserver/actions-resources-and-required-conditions-for-vserver-access-decentralization.md).
 
 > **Note:** Each different resource management action will require different permissions, so it's essential to set up a reasonable set of permissions that fit your business needs.
 
@@ -106,7 +106,7 @@ _chỉ để lại:_
 
 
 
-* **subnet\_id**: specify the subnet id that vServer will be created on, you can get it from [{VPC Tab}](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), if you haven't initialized any subnet you can see the instructions at [{Subnet creation page}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039):
+* **subnet\_id**: specify the subnet id that vServer will be created on, you can get it from [{VPC Tab}](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), if you haven't initialized any subnet you can see the instructions at [{Subnet creation page}](../vpc/virtual-private-cloud-vpc.md):
 
 
 
@@ -119,7 +119,7 @@ _chỉ để lại:_
 
 
 
-* **ssh\_key\_id**: specify the ssh key that will be injected into the vServer, you can get it at [{SSH Keys Tab}](https://hcm-3.console.vngcloud.vn/vserver/v-server/ssh-key), if you haven't initialized any ssh key you can see it at [{SSH key creation page}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901):
+* **ssh\_key\_id**: specify the ssh key that will be injected into the vServer, you can get it at [{SSH Keys Tab}](https://hcm-3.console.vngcloud.vn/vserver/v-server/ssh-key), if you haven't initialized any ssh key you can see it at [{SSH key creation page}](../security/ssh-key-key-pairs.md):
 
 \
 
@@ -128,7 +128,7 @@ _chỉ để lại:_
 
 
 
-* **security\_group\_id\_list**: specify a list of security group ids that need to be attached to vServer, you can get it at [{Security Groups Tab}](https://hcm-3.console.vngcloud.vn/vserver/network/sec-group), if you need to create more security groups you can see it at [{Security Group Creation Page}](https://docs.vngcloud.vn/display/vServer/Security+Groups).
+* **security\_group\_id\_list**: specify a list of security group ids that need to be attached to vServer, you can get it at [{Security Groups Tab}](https://hcm-3.console.vngcloud.vn/vserver/network/sec-group), if you need to create more security groups you can see it at [{Security Group Creation Page}](../instance/server-group.md).
 
 
 

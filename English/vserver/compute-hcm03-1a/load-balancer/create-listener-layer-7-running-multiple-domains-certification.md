@@ -6,7 +6,7 @@ At the Listener initialization step, in the SSL Certificate check box, select th
 
 For example, here the writer chooses 3 certificates: [cert\_domain1.com](http://cert\_domain1.com/), [cert\_domain2.com](http://cert\_domain2.com/), benchmark\_lb
 
-You can refer to how to create vLB, Listener and upload certificate here [Initialize Load Balancer Layer 7](https://docs.vngcloud.vn/display/VSERVERENG/Initialize+Load+Balancer+Layer+7), [Upload Certificates](https://docs.vngcloud.vn/display/VSERVERENG/Upload+Certificates)
+You can refer to how to create vLB, Listener and upload certificate here [Initialize Load Balancer Layer 7](initialize-load-balancer-layer-7.md), [Upload Certificates](upload-certificates.md)
 
 \
 
@@ -18,7 +18,7 @@ You can refer to how to create vLB, Listener and upload certificate here [Initia
 
 \* Note: The Default Certificate that Load Balancer returns (For example, in case the client accesses the served domain, but does not yet exist an SSL Certificate at the Load Balancer's Listener) will be the first SSL Certificate in the selected list, specifically. in this example is:  [cert\_domain1.com](http://cert\_domain1.com/).
 
-The rest of the steps, you still follow the instructions [Initialize Load Balancer Layer 7](https://docs.vngcloud.vn/display/VSERVERENG/Initialize+Load+Balancer+Layer+7)
+The rest of the steps, you still follow the instructions [Initialize Load Balancer Layer 7](initialize-load-balancer-layer-7.md)
 
 After successful initialization, you will have a Listener with the following information:
 

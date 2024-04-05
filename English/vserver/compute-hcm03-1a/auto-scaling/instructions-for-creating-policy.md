@@ -2,14 +2,14 @@
 
 At the Policy management interface, select create Policy
 
-![](https://docs.vngcloud.vn/download/attachments/59802601/image2019-5-23\_23-58-51.png?version=1\&modificationDate=1685005676000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/59802601/image2019-5-23_23-58-51.png?version=1&#x26;modificationDate=1685005676000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 \
 
 
 **Step 1:** At Policy configuration, enter the necessary information
 
-![](https://docs.vngcloud.vn/download/attachments/59802601/image2019-5-23\_23-59-5.png?version=1\&modificationDate=1685005706000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/59802601/image2019-5-23_23-59-5.png?version=1&#x26;modificationDate=1685005706000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 \
 
@@ -20,7 +20,7 @@ At the Policy management interface, select create Policy
 
 Load balancer policy: This policy helps you define load balancer values and automatically add created instances to the respective pool.
 
-![](https://docs.vngcloud.vn/download/attachments/59802601/image2020-6-30\_10-0-17.png?version=1\&modificationDate=1685005736000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/59802601/image2020-6-30_10-0-17.png?version=1&#x26;modificationDate=1685005736000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 You will need to select which Network Load Balancer policy belongs to, then the system will automatically list all Load Balancers belonging to that Network and all Pool IDs of the selected Load Balancer.\
 Policy scaling: Set the properties of the scale instance action. Currently the scaling type only supports the Change\_In\_Capacity form (changing the number of instances) with 2 Event types:\
@@ -36,6 +36,6 @@ After the setup is done, press NEXT to continue
 
 Click configure policy to create a policy
 
-![](https://docs.vngcloud.vn/download/attachments/59802601/image2019-5-23\_23-59-55.png?version=1\&modificationDate=1685005783000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/59802601/image2019-5-23_23-59-55.png?version=1&#x26;modificationDate=1685005783000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 After successful creation, you will see the newly created policy appear in the management interface

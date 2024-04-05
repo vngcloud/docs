@@ -20,11 +20,3 @@ Terraform itself does not have a graphical user interface, instead the user inte
   Working with multiple Cloud Providers simultaneously: We can use Terraform to work with many different compute service providers such as: VNG Cloud, Amazon Web Service, Microsoft Azure, Google Cloud Platform, Kubernetes, VMWare. ..Using Terraform to work with many different services makes managing resources on many other platforms at the same time easier and more convenient.
 
 ***
-
-#### Topic <a href="#terraform-topic" id="terraform-topic"></a>
-
-* [Install Terraform](https://docs.vngcloud.vn/display/VSERVERENG/Install+Terraform?src=contextnavpagetreemode)
-* [Managing vServer with Terraform](https://docs.vngcloud.vn/display/VSERVERENG/Managing+vServer+with+Terraform?src=contextnavpagetreemode)
-* [Reference Document](https://docs.vngcloud.vn/display/VSERVERENG/Reference+Document?src=contextnavpagetreemode)
-
-\

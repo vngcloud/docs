@@ -38,7 +38,7 @@ For example, in this tutorial, the writer uploads 2 new certificates, [cert\_www
 
 \+ The  **DEFAULT ACTION** ta section selects the pool corresponding to the old Listener just deleted in **Step 2**.
 
-\+ Finally, we can change more advanced configurations at the **ADVANCED CONFIGURATION** section (see more [Advanced configuration options here](https://docs.vngcloud.vn/display/VSERVERENG/Configure+Timeout+for+Load+Balancer))
+\+ Finally, we can change more advanced configurations at the **ADVANCED CONFIGURATION** section (see more [Advanced configuration options here](configure-timeout-for-load-balancer.md))
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59802758/image2021-10-27_12-28-48.png?version=1&#x26;modificationDate=1685085894000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 

@@ -1,12 +1,12 @@
 # Identity and Access Management (IAM) for vServer
 
-Identity and access management (IAM) for virtual machines is a system for managing and controlling access to virtual machines (VMs) and their resources in a cloud computing environment. It provides a way to control who can access the virtual machine and what actions they can perform on it. You can learn more about the definition and usage of the IAM service [here](https://docs.vngcloud.vn/display/ONVINA/IAM+-+Identity+and+Access+Management).
+Identity and access management (IAM) for virtual machines is a system for managing and controlling access to virtual machines (VMs) and their resources in a cloud computing environment. It provides a way to control who can access the virtual machine and what actions they can perform on it.&#x20;
 
 Virtual machine IAM typically includes functions such as identity management, authentication, authorization, and auditing. It allows administrators to define policies that specify who can access virtual machines and what actions they can take on virtual machines, such as starting, stopping, or modifying virtual machines.
 
 In a cloud computing environment, IAM for virtual machines is an important security control because virtual machines are often used to store sensitive data and run business-critical applications. By controlling access to these resources, IAM for virtual machines helps ensure the security, integrity, and availability of an organization's data and services.
 
-![](https://docs.vngcloud.vn/download/attachments/59802611/image2023-5-17\_17-31-9.png?version=1\&modificationDate=1685006577000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/59802611/image2023-5-17_17-31-9.png?version=1&#x26;modificationDate=1685006577000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 ### Overview <a href="#identityandaccessmanagement-iam-forvserver-overview" id="identityandaccessmanagement-iam-forvserver-overview"></a>
 
@@ -69,7 +69,7 @@ Create an access policy that specifies what actions each user group or role can 
 \
 
 
-For detailed information and meanings of actions (Actions), resources (Resources), and requirements (Request conditions) to set up a complete set of access policies (Policies), please see the content at [Policy configuration page](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802254)
+For detailed information and meanings of actions (Actions), resources (Resources), and requirements (Request conditions) to set up a complete set of access policies (Policies), please see the content at [Policy configuration page](actions-resources-and-required-conditions-for-vserver-access-decentralization.md)
 
 ***
 
