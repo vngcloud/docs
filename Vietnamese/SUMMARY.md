@@ -73,6 +73,7 @@
         * [Sao lưu và phục hồi hệ thống định kỳ](vserver/compute-hcm03-1a/snapshot/truong-hop-su-dung-snapshot/sao-luu-va-phuc-hoi-he-thong-dinh-ky.md)
         * [Chuyển dữ liệu và ứng dụng giữa các môi trường](vserver/compute-hcm03-1a/snapshot/truong-hop-su-dung-snapshot/chuyen-du-lieu-va-ung-dung-giua-cac-moi-truong.md)
         * [Chống lại cuộc tấn công từ Hacker hoặc nhiễm malware](vserver/compute-hcm03-1a/snapshot/truong-hop-su-dung-snapshot/chong-lai-cuoc-tan-cong-tu-hacker-hoac-nhiem-malware.md)
+      * [Chia sẻ Snapshot](vserver/compute-hcm03-1a/snapshot/chia-se-snapshot.md)
     * [Security](vserver/compute-hcm03-1a/security/README.md)
       * [SSH Key (Bộ khóa)](vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
       * [Security Groups](vserver/compute-hcm03-1a/security/security-groups.md)

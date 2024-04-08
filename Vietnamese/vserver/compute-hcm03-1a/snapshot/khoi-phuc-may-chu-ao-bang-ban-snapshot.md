@@ -41,3 +41,28 @@ Bạn chỉ có thể khôi phục máy chủ ảo với bản Snapshot của Bo
 1. Mở bảng điều khiển vServer tại [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
 2. Trong ngăn điều hướng, chọn **Snapshot**.
 3. Chọn Snapshot của bản Boot Volume tại trang danh sách rồi chọn **Hành động**, nhấn Rollback Server**.**
+
+### **Tạo máy chủ (Server) bằng Snapshot trên Màn hình Tạo Server**  <a href="#khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhtaoserversnapshotcreateserve" id="khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhtaoserversnapshotcreateserve"></a>
+
+1. Đăng nhập và mở bảng điều kiển vServer tại [https://hcm-3.console.vngcloud.vn/vserver](https://hcm-3.console.vngcloud.vn/vserver/);
+2. Trong ngăn điều hướng, chọn **Servers**;
+3. Chọn nút "**Tạo Server**" (Create a Server), để điều hướng tới màn hình Tạo Server;
+4. Để cấu hình Tạo Server bằng trên snapshot. Tại mục "**Cấu hình cơ bản/Image**" chọn Tab "**My snapshot**";
+5. User có thể chọn bản snapshot phù hợp để tạo lại Server với thời điểm tương ứng.
+
+<figure><img src="https://docs.vngcloud.vn/download/attachments/64554116/image2024-3-25_9-46-42.png?version=1&#x26;modificationDate=1711334805000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+
+Lưu ý
+
+Khi cấu hình tạo Server mới bằng Snapshot, user vẫn thực hiện thao tác cấu hình ở các mục khác (Loại cấu hình, volume, Cài đặt mạng, Cài đặt khác) như thông thường, xem hướng dẫn ở link.
+
+### **Tạo máy chủ (Server) bằng Snapshot trên Màn hình Snapshot** <a href="#khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhsnapshot" id="khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhsnapshot"></a>
+
+1. Đăng nhập và mở bảng điều kiển vServer tại [https://hcm-3.console.vngcloud.vn/vserver](https://hcm-3.console.vngcloud.vn/vserver/);
+2. Trong ngăn điều hướng, chọn **Snapshot**;
+3. Tại màn hình danh sách Snapshot, User **click chọn vào một Snapshot Server**, để điều hướng đến màn hình thông tin chi tiết.
+4. Tại màn hình chi tiết của Snapshot Server, User chọn Tab "**Restore Point**".
+5. Sau đó chọn bản Snapshot tương ứng muốn tạo Server, bằng cách click vào nút hành động, chọn "**Tạo server**".
+6. Màn hành điều hướng tới màn hình Tạo Server với tùy chọn file Snapshot đã chọn, và tiếp tục thao tác giống "Tạo Server bằng Snapshot trên Màn hình Tạo Server" như trên./.
+
+<figure><img src="https://docs.vngcloud.vn/download/attachments/64554116/image2024-3-25_10-11-32.png?version=1&#x26;modificationDate=1711336295000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
