@@ -2,7 +2,7 @@
 
 Create a virtual server using the initialization process on VNG Cloud
 
-Procedure: [Getting started](../getting-started.md)
+Procedure: [Getting started](../getting-started/)
 
 The VNG Cloud portal provides a wizard for creating instances. This wizard lists all configuration information used to create an instance and guides you through creating an instance.
 
