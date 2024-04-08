@@ -6,7 +6,13 @@ Its purpose is to provide additional data for the instance to customize it as mu
 
 &#x20;VNG Cloud is able to interpret and use this kind of user specific data in multiple ways. In most of the cases, the thing that indicates of what type is the processed data is usually the first line.
 
-![](http://docs.vngcloud.vn/plugins/servlet/confluence/placeholder/macro?definition=e3RvYzppbmRlbnQ9TuG7mWkgZHVuZ30\&locale=en\_US\&version=2)
+* Batch
+* PowerShell
+* Bash
+* Python
+* Cloud config
+* Initialize UserData when activating vServer
+* Suggestions for filling commands for UserData
 
 ## **Batch**
 
@@ -216,7 +222,7 @@ To type the command lines to provide Userdata to Server, you can implement in Cr
 
 * In step "**Network setting**" to configure UserData, you could select "UserData" option, as shown below:
 
-![](http://docs.vngcloud.vn/download/attachments/73761419/image2024-3-12\_10-31-40.png?version=1\&modificationDate=1710916479000\&api=v2)
+<figure><img src="../../../.gitbook/assets/1 (1).png" alt=""><figcaption></figcaption></figure>
 
 * You able to upload the file or **input the command lines into content field** to execute providing user information to Server. Refer to the section "Suggestions for filling commands for UserData", VNG Cloud provided defaults script command suggestions to configure.
 * If UseData information in the tools being used has been Base64 encoded, you will select it.
@@ -260,13 +266,10 @@ Include:
 
 The result will be displayed by default:
 
-![](http://docs.vngcloud.vn/download/attachments/73761419/image2024-3-13\_16-54-33.png?version=1\&modificationDate=1710916479000\&api=v2\&effects=border-simple,blur-border)
+<figure><img src="../../../.gitbook/assets/2.png" alt=""><figcaption></figcaption></figure>
 
-\
-
-
-| Windows license usage is authenticated according to the IP where the VM purchased the license, then system will active the license. |
-| ----------------------------------------------------------------------------------------------------------------------------------- |
+| <p>Note:</p><p>Windows license usage is authenticated according to the IP where the VM purchased the license, then system will active the license.</p> |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
 \
 
