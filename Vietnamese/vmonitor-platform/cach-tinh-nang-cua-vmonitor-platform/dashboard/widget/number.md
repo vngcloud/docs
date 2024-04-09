@@ -16,7 +16,6 @@
 
 Đối với biểu đồ dạng number, tại mục này bạn chọn Style là ![](http://docs.vngcloud.vn/download/thumbnails/59806972/image2023-8-9\_14-35-24.png?version=1\&modificationDate=1691566524000\&api=v2)
 
-\
 
 
 ![](http://docs.vngcloud.vn/download/attachments/59806972/image2023-8-9\_14-35-39.png?version=1\&modificationDate=1691566540000\&api=v2)
@@ -25,8 +24,8 @@
 
 Chọn loại dữ liệu để vẽ Widget:
 
-* Metrics: xem [Metric query](http://docs.vngcloud.vn/display/VPV/Metric+query) để cấu hình cho loại dữ liệu Metrics.
-* Logs: xem [Log Query](http://docs.vngcloud.vn/display/VPV/Log+Query) để cấu hình cho loại dữ liệu Logs.
+* Metrics: xem [Metric query](../query/metric-query.md) để cấu hình cho loại dữ liệu Metrics.
+* Logs: xem [Log Query](../query/log-query.md) để cấu hình cho loại dữ liệu Logs.
 
 Alias: Bạn có thể đặt Alias cho mỗi câu query, alias này sẽ được hiển thị trên graph và legend, điều này rất hữu ích cho những tên metric, logs hay những câu query có filter (bộ lọc) dài.&#x20;
 

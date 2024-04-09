@@ -10,13 +10,13 @@ Thực hiện mua Metric Quota theo các bước bên dưới:
 2. Chọn **Quota & Usage**.
 3. Chọn **Buy metric quota.**
 4. Chọn **Class** mà bạn có nhu cầu sử dụng**.** Chúng tôi cung cấp cho bạn chọn 1 trong 2 class bao gồm: Basic, Pro.
-5. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Nếu bạn chọn class **Pro**, bạn có thể lựa chọn số lượng host mong muốn bằng cách kéo thả hoặc nhập con số resources bạn mong muốn tại ô Number of resources. dụng. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Metric Quota Class](https://docs.vngcloud.vn/display/VPV/Metric+Quota+Class)
+5. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Nếu bạn chọn class **Pro**, bạn có thể lựa chọn số lượng host mong muốn bằng cách kéo thả hoặc nhập con số resources bạn mong muốn tại ô Number of resources. dụng. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Metric Quota Class](../vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/metric-quota-class.md)
 6. Chọn **Buy Metric Quota**.
 7. Chọn **Chu kỳ** nếu bạn là người dùng trả trước. Chúng tôi cung cấp các chu kỳ trả trước bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng.
 8. Chọn **Continue.**
 9. Thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Metric quota** sẽ được khởi tạo.
 
-Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649904).
+Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../vstorage/vstorage-hcm03/cach-tinh-phi/).
 
 ***
 
@@ -24,7 +24,7 @@ Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai
 
 **Tạo Service Account và gắn policy: vMonitorMetricPush để có đủ quyền đẩy Metric về vMonitor (Có thể bỏ qua bước này nếu đã tạo trước đó)**
 
-Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts),
+Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts)
 
 * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
 * Tìm và chọn **Policy:** **vMonitorMetricPush,** sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vMonitorMetricPush do VNG Cloud tạo ra chỉ chứa chính xác quyền đẩy metric về hệ thống
@@ -70,6 +70,6 @@ Với Dashboard Mặc định này, bạn sẽ có thể xem được các thôn
 3. Nhập **Tên Dashboard.** Theo quy định của chúng tôi, tên Dashboard phải dài từ 1 (tối thiểu) đến 50 (tối đa) ký tự. Tên Dashboard có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), dấu gạch dưới (\_), dấu gạch ngang (-), ký tự (@), ký tự (/).
 4. Chọn **Tạo bản sao**.
 
-Sau khi bản sao của **Dashboard mặc định** được tạo, bạn có thể thêm hoặc xoá, hoặc tùy chỉnh, thay đổi vị trí Widget trong Dashboard bản sao này. Để biết thêm về cách làm việc với Metric nói chung và Metric Dashboard nói chung, hãy xem tại [Metrics](https://docs.vngcloud.vn/display/VPV/Metrics).
+Sau khi bản sao của **Dashboard mặc định** được tạo, bạn có thể thêm hoặc xoá, hoặc tùy chỉnh, thay đổi vị trí Widget trong Dashboard bản sao này. Để biết thêm về cách làm việc với Metric nói chung và Metric Dashboard nói chung, hãy xem tại [Metrics](../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/giam-sat-hoat-dong-lb/metrics.md).
 
 \

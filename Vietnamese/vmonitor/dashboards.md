@@ -6,11 +6,11 @@ vMonitor Platform là giải pháp giám sát toàn diện, bao gồm cả nhu c
 
 Chúng tôi cung cấp hướng dẫn chi tiết các tính năng mà bạn có thể sử dụng để giám sát tài nguyên bao gồm:&#x20;
 
-* [Dashboard](https://docs.vngcloud.vn/display/VPV/Dashboard?src=contextnavpagetreemode)
-* [Notification](https://docs.vngcloud.vn/display/VPV/Notification?src=contextnavpagetreemode)
-* [Alarm](https://docs.vngcloud.vn/display/VPV/Alarm?src=contextnavpagetreemode)
-* [Metrics](https://docs.vngcloud.vn/display/VPV/Metrics?src=contextnavpagetreemode)
-* [Logs](https://docs.vngcloud.vn/display/VPV/Logs?src=contextnavpagetreemode)
-* [Synthetics](https://docs.vngcloud.vn/display/VPV/Synthetics?src=contextnavpagetreemode)
+* [Dashboard](../vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/dashboard/)
+* [Notification](../vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/notification/)
+* [Alarm](../vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/alarm/)
+* [Metrics](../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/giam-sat-hoat-dong-lb/metrics.md)
+* [Logs](../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/giam-sat-hoat-dong-lb/logs.md)
+* [Synthetics](../vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/synthetics/)
 
 \

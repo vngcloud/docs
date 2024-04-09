@@ -12,11 +12,11 @@ Thực hiện tạo project theo các bước bên dưới:
 4. Nhập **Tên Log project.** Theo quy định của chúng tôi, **Tên Log project** phải dài từ 1 (tối thiểu) đến 63 (tối đa) ký tự. **Tên Log project** có thể bao gồm các chữ cái viết thường (a-z), số (0-9), dấu gạch ngang (-). **Tên Log project** phải bắt đầu bằng một chữ cái viết thường và kết thúc bằng một chữ cái viết thường hoặc một chữ số.
 5. Nhập **Mô tả** log project nếu có. Theo quy định của chúng tôi, **Mô tả** có thể dài từ 0 (tối thiểu) đến 300 (tối đa) ký tự. **Mô tả** có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), dấu gạch dưới (\_), khoảng trắng ( ) hoặc dấu gạch ngang (-).
 6. Chọn **Class** mà bạn có nhu cầu sử dụng**.** Chúng tôi cung cấp cho bạn chọn 1 trong 2 class bao gồm: Basic, Pro.
-7. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Nếu bạn chọn class **Pro**, bạn có thể lựa chọn retiontion day và lựa chọn cấu hình log size per day mong muốn bằng cách kéo thả hoặc nhập con số dung lượng bạn mong muốn tại ô Log size per day. dụng. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Log Project Class](https://docs.vngcloud.vn/display/VPV/Log+Project+Class)
+7. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Nếu bạn chọn class **Pro**, bạn có thể lựa chọn retiontion day và lựa chọn cấu hình log size per day mong muốn bằng cách kéo thả hoặc nhập con số dung lượng bạn mong muốn tại ô Log size per day. dụng. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Log Project Class](../vmonitor-platform-la-gi/vmonitor-platform-log-la-gi/log-project-class.md)
 8. Chọn **Buy Log Quota.**
 9. Thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Log project** sẽ được khởi tạo.
 
-Cách tính chi phí cho mỗi gói log project được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649904).
+Cách tính chi phí cho mỗi gói log project được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../vstorage/vstorage-hcm03/cach-tinh-phi/).
 
 ***
 

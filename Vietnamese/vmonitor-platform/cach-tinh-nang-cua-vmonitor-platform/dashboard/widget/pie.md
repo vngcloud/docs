@@ -10,7 +10,7 @@
 
 ### Cấu hình biểu đồ
 
-![](http://docs.vngcloud.vn/download/attachments/59806970/image2023-7-31\_17-1-30.png?version=1\&modificationDate=1690797691000\&api=v2)
+<figure><img src="http://docs.vngcloud.vn/download/attachments/59806970/image2023-7-31_17-1-30.png?version=1&#x26;modificationDate=1690797691000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style&#x20;
 
@@ -26,7 +26,7 @@
 Chọn loại dữ liệu để vẽ Widget:
 
 * **Metrics: không hỗ trợ.**
-* Logs: xem [Log Query](http://docs.vngcloud.vn/display/VPV/Log+Query) để cấu hình cho loại dữ liệu Logs.
+* Logs: xem [Log Query](../query/log-query.md) để cấu hình cho loại dữ liệu Logs.
 
 Alias: Bạn có thể đặt Alias cho mỗi câu query, alias này sẽ được hiển thị trên graph và legend, điều này rất hữu ích cho những tên metric, logs hay những câu query có filter (bộ lọc) dài.&#x20;
 

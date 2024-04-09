@@ -26,7 +26,7 @@
 Chọn loại dữ liệu để vẽ Widget:
 
 * **Metrics: không hỗ trợ.**
-* Logs: xem [Log Query](http://docs.vngcloud.vn/display/VPV/Log+Query) để cấu hình cho loại dữ liệu Logs.
+* Logs: xem [Log Query](../query/log-query.md) để cấu hình cho loại dữ liệu Logs.
 
 Alias: Bạn có thể đặt Alias cho mỗi câu query, alias này sẽ được hiển thị trên graph và legend, điều này rất hữu ích cho những tên metric, logs hay những câu query có filter (bộ lọc) dài.&#x20;
 

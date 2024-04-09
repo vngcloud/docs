@@ -1,6 +1,6 @@
 # Bắt đầu với Synthetic
 
-### [Bước 1: Khởi tạo Synthetic Test quota](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650530) <a href="#batdauvoisynthetics-buoc1-khoitaosynthetictestquota" id="batdauvoisynthetics-buoc1-khoitaosynthetictestquota"></a>
+### Bước 1: Khởi tạo Synthetic Test quota <a href="#batdauvoisynthetics-buoc1-khoitaosynthetictestquota" id="batdauvoisynthetics-buoc1-khoitaosynthetictestquota"></a>
 
 Bắt đầu sử dụng dịch vụ, bạn cần tạo một Synthetic Test quota. Một Synthetic Test quota là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát vận hành với số lượng bài kiểm tra cụ thể mà bạn thực hiện mua trên VNG Cloud. Tại một thời điểm bạn có thể sở hữu một Synthetic Test quota và sử dụng chúng để kiểm tra hoạt động hệ thống của bạn.
 
@@ -10,11 +10,11 @@ Thực hiện tạo project theo các bước bên dưới:
 2. Chọn **Quota & Usage**.
 3. Chọn **Mua Synthetic test quota.**
 4. Chọn **Class** mà bạn có nhu cầu sử dụng**.** Hiện tại chúng tôi chỉ cung cấp class Basic để bạn trải nghiệm
-5. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Synthetic Test Quota Class](https://docs.vngcloud.vn/display/VPV/Synthetic+Test+Quota+Class).
+5. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Synthetic Test Quota Class](../vmonitor-platform-la-gi/vmonitor-platform-synthetic-la-gi/synthetic-test-quota-class.md).
 6. Chọn **Buy Synthetic Test Quota**.
 7. Thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Synthetic test quota** sẽ được khởi tạo.
 
-Cách tính chi phí cho mỗi gói Synthetic Test quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649904).
+Cách tính chi phí cho mỗi gói Synthetic Test quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../vstorage/vstorage-hcm03/cach-tinh-phi/).
 
 ***
 
