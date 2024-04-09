@@ -8,7 +8,7 @@ Một Project là một thuật ngữ trên vStorage thể hiện một gói lư
 
 #### Chủ đề <a href="#lamviecvoiproject-chude" id="lamviecvoiproject-chude"></a>
 
-* [Tổng quan project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648646)
+* [Tổng quan project](tong-quan-project.md)
 * [Phạm vi giới hạn project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648648)
 * [Khởi tạo project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648428)
 * [Làm việc với trial project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649749)
