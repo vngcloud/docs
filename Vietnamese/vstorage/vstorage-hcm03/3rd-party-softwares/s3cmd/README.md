@@ -6,14 +6,14 @@ S3cmd là một công cụ command line miễn phí và client để tải lên,
 
 S3cmd được viết bằng ngôn ngữ lập trình Python. Đây là một dự án mã nguồn mở với giấy phép GNU Public License v2 (GPLv2) và miễn phí cho mục đích sử dụng thương mại và cá nhân. Bạn chỉ cần trả phí Amazon khi sử dụng dịch vụ lưu trữ của họ.
 
-Để giúp bạn có thể cài đặt và cấu hình nhanh chóng công cụ người dùng này, chúng tôi cung cấp một tính năng tích hợp thông qua vStorage Portal. Bạn chỉ cần cung cấp thông tin Region, Project, thông tin chứng thực (vStorage credentials) chính xác và sau đó tải xuống tệp tin cấu hình (configuration file) cho S3cmd về là có thể sử dụng để tệp tin cấu hình này để truy cập đến tài nguyên của bạn trên dịch vụ lưu trữ vStorage. Chi tiết tham khảo tại [Tích hợp công cụ S3cmd với vStorage](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805492).  Sau khi đã truy cập được các tài nguyên (project, container, object, v.v.) của bạn trên dịch vụ vStorage, để làm việc với các tài nguyên này sử dụng công cụ S3cmd, bạn có thể tham khảo thêm các tình huống (use case) sử dụng hay tính năng của S3cmd để làm việc với tài nguyên vStorage. Chi tiết tham khảo tại [Sử dụng công cụ S3cmd](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803926).
+Để giúp bạn có thể cài đặt và cấu hình nhanh chóng công cụ người dùng này, chúng tôi cung cấp một tính năng tích hợp thông qua vStorage Portal. Bạn chỉ cần cung cấp thông tin Region, Project, thông tin chứng thực (vStorage credentials) chính xác và sau đó tải xuống tệp tin cấu hình (configuration file) cho S3cmd về là có thể sử dụng để tệp tin cấu hình này để truy cập đến tài nguyên của bạn trên dịch vụ lưu trữ vStorage. Chi tiết tham khảo tại [Tích hợp công cụ S3cmd với vStorage](tich-hop-cong-cu-s3cmd-voi-vstorage.md).  Sau khi đã truy cập được các tài nguyên (project, container, object, v.v.) của bạn trên dịch vụ vStorage, để làm việc với các tài nguyên này sử dụng công cụ S3cmd, bạn có thể tham khảo thêm các tình huống (use case) sử dụng hay tính năng của S3cmd để làm việc với tài nguyên vStorage. Chi tiết tham khảo tại [Sử dụng công cụ S3cmd](su-dung-cong-cu-s3cmd.md).
 
 ***
 
 #### Chủ đề <a href="#s3cmd-chude" id="s3cmd-chude"></a>
 
-* [Tích hợp công cụ S3cmd với vStorage](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805492)
-* [Sử dụng công cụ S3cmd](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803926)
+* Tích hợp công cụ S3cmd với vStorage
+* Sử dụng công cụ S3cmd
 
 \
 \

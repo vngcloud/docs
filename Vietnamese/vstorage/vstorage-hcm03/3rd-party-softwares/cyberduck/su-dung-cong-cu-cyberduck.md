@@ -5,7 +5,7 @@
 **Tạo một container mới**
 
 1. Tại màn hình chính của **Cyberduck**, nhấn chuột phải tại vùng trang trắng và chọn **New Folder.** Hoặc bạn có thể nhấn tổ hợp phím **Ctrl + Shift + N.**
-2. Nhập tên **container**. Tên container mà bạn nhập phải tuân thủ theo quy định của chúng tôi. Chi tiết tham khảo tại [Phạm vi giới hạn container](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648678)
+2. Nhập tên **container**. Tên container mà bạn nhập phải tuân thủ theo quy định của chúng tôi. Chi tiết tham khảo tại [Phạm vi giới hạn container](../../cac-tinh-nang-cua-vstorage/lam-viec-voi-container/pham-vi-gioi-han-container.md)
 
 <figure><img src="https://contabo.com/blog/wp-content/uploads/2022/12/image-7.png" alt=""><figcaption></figcaption></figure>
 

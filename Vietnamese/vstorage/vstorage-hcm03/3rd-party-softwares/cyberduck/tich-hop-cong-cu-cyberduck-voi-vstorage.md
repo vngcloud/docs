@@ -9,7 +9,7 @@
    1. Chọn một **Region** chứa project mà bạn muốn thực hiện truy xuất dữ liệu tới trong danh sách các Region mà chúng tôi cung cấp.
    2. Chọn một **Project** trong danh sách các project đang tồn tại trong Region mà bạn chọn trước đó. Nếu danh sách project hiển thị chưa đầy đủ, bạn có thể chọn , chúng tôi sẽ tải lại danh sách project mới nhất tại thời điểm bạn thực hiện hành động này.
    3. Chọn một **Access key** trong danh sách các access key đang tồn tại thuộc project mà bạn chọn trước đó.
-   4. Nhập **Secret key** tương ứng của **Access key** vừa chọn. Cặp access key và secret key được bạn tạo và quản lý thông qua hệ thống vIAM. Bạn có thể chọn [Click here to visit vIAM and manage S3 keys](https://hcm-3.console.vngcloud.vn/iam/vstorage-credentials/s3) để chúng tôi điều hướng bạn tới hệ thống vIAM và chi tiết là các màn hình quản lý S3 keys. Để biết thêm thông tin về S3 keys, hãy xem tại [Khởi tạo vStorage Credentials](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804855).
+   4. Nhập **Secret key** tương ứng của **Access key** vừa chọn. Cặp access key và secret key được bạn tạo và quản lý thông qua hệ thống vIAM. Bạn có thể chọn [Click here to visit vIAM and manage S3 keys](https://hcm-3.console.vngcloud.vn/iam/vstorage-credentials/s3) để chúng tôi điều hướng bạn tới hệ thống vIAM và chi tiết là các màn hình quản lý S3 keys. Để biết thêm thông tin về S3 keys, hãy xem tại [Khởi tạo vStorage Credentials](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/).
 5. Sau khi hoàn tất chọn cấu hình **Cấp quyền**, chọn **Tích hợp cyberduck** để chuyển tới màn hình **Cấu hình**. Bạn luôn có thể quay lại đây để thay đổi thông tin **Cấp quyền** của mình, sau đó chọn lại **Tích hợp cyberduck** để cập nhật cách sử dụng theo thông số mới của bạn. Bạn có thể xem hướng dẫn cách cài đặt, cấu hình Cyberduck ngay trên màn hình này. Chi tiết tham khảo thêm tại: [Tích hợp vStorage.](https://vstorage.console.vngcloud.vn/integration/integration)
 6. Chọn **Tải tập tin cấu hình.**
 
@@ -35,6 +35,6 @@
 
 5\. Chọn **Connect**.
 
-6\. Bây giờ **Cyberduck** đã kết nối thành công tới **vStorage**. Bạn đã có thể sử dụng Cyberduck để truy xuất tới vStorage, tham khảo thêm tại [Sử dụng công cụ Cyberduck](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805342).
+6\. Bây giờ **Cyberduck** đã kết nối thành công tới **vStorage**. Bạn đã có thể sử dụng Cyberduck để truy xuất tới vStorage, tham khảo thêm tại [Sử dụng công cụ Cyberduck](su-dung-cong-cu-cyberduck.md).
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59805496/image2023-7-14_14-9-20.png?version=1&#x26;modificationDate=1689318561000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
