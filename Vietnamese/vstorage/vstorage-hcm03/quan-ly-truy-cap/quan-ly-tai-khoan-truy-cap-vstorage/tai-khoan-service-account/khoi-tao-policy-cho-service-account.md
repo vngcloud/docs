@@ -14,7 +14,7 @@ Về mặt tổng quan, việc khởi tạo policy có mối ràng buộc với 
    1. Chọn **Allow permissions**: mặc định hệ thống vIAM sẽ luôn bật tức là cho phép quyền hạn được áp dụng trên policy. Nếu bạn tắt mode này thì hệ thống sẽ từ chối (đảo chiều) quyền hạn tương ứng.
       1. **Allow permissions**: cho phép truy cập theo action đã chọn.&#x20;
       2. **Deny permissions**: từ chối truy cập theo action đã chọn.
-   2. Chọn **All vstorage actions** nếu muốn tạo policy có quyền thực hiện tất cả các hành động trên vStorage. Chi tiết ý nghĩa của các action vui lòng tham khảo tại [Tính năng, tài nguyên vStorage và quyền truy cập](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648924).
+   2. Chọn **All vstorage actions** nếu muốn tạo policy có quyền thực hiện tất cả các hành động trên vStorage. Chi tiết ý nghĩa của các action vui lòng tham khảo tại [Tính năng, tài nguyên vStorage và quyền truy cập](../../quan-ly-truy-cap-tai-nguyen-vstorage/phan-quyen-truy-cap-va-lam-viec-thong-qua-iam/tinh-nang-tai-nguyen-vstorage-va-quyen-truy-cap.md).
 8. Chọn **Resources**:
    1. Chọn **All resources** nếu muốn quyền truy cập đã chọn bên trên được phép truy cập vào mọi tài nguyên trên tài khoản SSO account của bạn.&#x20;
    2. Chọn **Specify resources**: chọn project, container, object cụ thể mà bạn muốn cho phép truy cập tới. Bạn có thể nhập thông tin cho mỗi loại resources này bằng 1 trong những cách sau:&#x20;
@@ -24,8 +24,8 @@ Về mặt tổng quan, việc khởi tạo policy có mối ràng buộc với 
    3. Bạn cũng có thể chọn **Any** để cho phép truy cập tới mọi project, container, object trong tài khoản SSO account của bạn.&#x20;
    4. Chọn **Request conditions:** nhập điều kiện đặc biệt cho policy nếu có.&#x20;
 
-Sau khi bạn thực hiện 8 bước bên trên, policy cho vStorage đã được khởi tạo. Tiếp theo, bạn hãy gán nó vào Service Account theo hướng dẫn tại [Liên kết tài khoản Service Account với policy tương ứng](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804818).
+Sau khi bạn thực hiện 8 bước bên trên, policy cho vStorage đã được khởi tạo. Tiếp theo, bạn hãy gán nó vào Service Account theo hướng dẫn tại [Liên kết tài khoản Service Account với policy tương ứng](lien-ket-tai-khoan-service-account-voi-policy-tuong-ung.md).
 
-Ngoài các bước tạo policy đặc thù cho riêng bạn như trên, chúng tôi cũng cung cấp cho bạn một tập các policy mặc định với các quyền hạn đa dạng. Bạn có thể sử dụng tập policy này và liên kết trực tiếp chúng tới tài khoản Service Account. Để biết thêm thông tin về danh sách policy mặc định, tham khảo tại [Tính năng, tài nguyên vStorage và quyền truy cập](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648924).
+Ngoài các bước tạo policy đặc thù cho riêng bạn như trên, chúng tôi cũng cung cấp cho bạn một tập các policy mặc định với các quyền hạn đa dạng. Bạn có thể sử dụng tập policy này và liên kết trực tiếp chúng tới tài khoản Service Account. Để biết thêm thông tin về danh sách policy mặc định, tham khảo tại [Tính năng, tài nguyên vStorage và quyền truy cập](../../quan-ly-truy-cap-tai-nguyen-vstorage/phan-quyen-truy-cap-va-lam-viec-thong-qua-iam/tinh-nang-tai-nguyen-vstorage-va-quyen-truy-cap.md).
 
 <figure><img src="../../../../../.gitbook/assets/Khoi_tao_policy.gif" alt=""><figcaption></figcaption></figure>

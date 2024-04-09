@@ -19,7 +19,7 @@ Lưu ý sau khi nhấn tạo S3 key, bạn cần **lưu lại cặp Access Key/S
 
 
 * Khi S3 key được tạo ra, mặc định trạng thái Restriction by IAM của S3 key này là NO (**Restriction by IAM = NO**), lúc này bạn có thể sử dụng S3 key này để truy cập tới tài nguyên thuộc project mà bạn chọn khi tạo S3 key, hệ thống vIAM sẽ không thực hiện kiểm tra quyền hạn đối với S3 key này.&#x20;
-* Khi bạn bật thuộc tính Restriction by IAM của S3 key thành YES (**Restriction by IAM = YES**), S3 key này sẽ được quản lý và kiểm tra quyền hạn bởi hệ thống vIAM. Do đó để có thể sử dụng các S3 key này, bạn cần **liên kết chúng tới một Service Account** để chúng thừa hưởng quyền trên Service Account được liên kết đó. Chi tiết tham khảo tại [Liên kết S3 key, Swift user với tài khoản Service Account tương ứng](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804923).
+* Khi bạn bật thuộc tính Restriction by IAM của S3 key thành YES (**Restriction by IAM = YES**), S3 key này sẽ được quản lý và kiểm tra quyền hạn bởi hệ thống vIAM. Do đó để có thể sử dụng các S3 key này, bạn cần **liên kết chúng tới một Service Account** để chúng thừa hưởng quyền trên Service Account được liên kết đó. Chi tiết tham khảo tại [Liên kết S3 key, Swift user với tài khoản Service Account tương ứng](lien-ket-s3-key-swift-user-voi-tai-khoan-service-account-tuong-ung.md).
 
 
 {% endhint %}

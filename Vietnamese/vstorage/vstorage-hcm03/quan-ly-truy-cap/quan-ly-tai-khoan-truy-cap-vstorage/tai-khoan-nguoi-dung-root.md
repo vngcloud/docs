@@ -15,12 +15,12 @@ Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông t
 * Địa chỉ email được sử dụng để tạo tài khoản người dùng Root.
 * Mật khẩu cho của tài khoản người dùng Root.
 
-Để thực hiện đăng nhập sử dụng vStorage với tài khoản Root, hãy xem thêm tại [Truy cập tài nguyên sử dụng tài khoản người dùng Root](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804431).
+Để thực hiện đăng nhập sử dụng vStorage với tài khoản Root, hãy xem thêm tại [Truy cập tài nguyên sử dụng tài khoản người dùng Root](../quan-ly-truy-cap-tai-nguyen-vstorage/truy-cap-tai-nguyen-su-dung-tai-khoan-nguoi-dung-root.md).
 
 ***
 
 #### Hủy tài khoản người dùng Root (Root User Account) <a href="#taikhoannguoidungroot-huytaikhoannguoidungroot-rootuseraccount" id="taikhoannguoidungroot-huytaikhoannguoidungroot-rootuseraccount"></a>
 
-Để hủy tài khoanr Root, bạn cần liên hệ với chúng tôi thông qua việc tạo một ticket yêu cầu hủy tài khoản. Chi tiết xem thêm tại [Hướng dẫn hủy tài khoản](https://docs.vngcloud.vn/pages/viewpage.action?pageId=22938103).
+Để hủy tài khoanr Root, bạn cần liên hệ với chúng tôi thông qua việc tạo một ticket yêu cầu hủy tài khoản. Chi tiết xem thêm tại [Hướng dẫn hủy tài khoản](../../../../huong-dan-su-dung-tai-khoan/huong-dan-huy-tai-khoan.md).
 
 \

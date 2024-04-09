@@ -17,9 +17,9 @@ vStorage Credentials là các cặp key mà cho phép bạn tạo và cấp quy�
 
 #### Chủ đề <a href="#khoitaovstoragecredentials-chude" id="khoitaovstoragecredentials-chude"></a>
 
-* [Khởi tạo S3 key](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804857\&src=contextnavpagetreemode)
-* [Khởi tạo Swift user](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804859\&src=contextnavpagetreemode)
-* [Liên kết S3 key, Swift user với tài khoản Service Account tương ứng](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804923\&src=contextnavpagetreemode)
-* [Hủy S3 key, Swift user](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805160)
+* Khởi tạo S3 key
+* Khởi tạo Swift user
+* Liên kết S3 key, Swift user với tài khoản Service Account tương ứng
+* Hủy S3 key, Swift user
 
 \

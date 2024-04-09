@@ -10,14 +10,14 @@ Service Account là một danh tính mà bạn có thể tạo trong tài khoả
 
 #### Chủ đề <a href="#taikhoanserviceaccount-chude" id="taikhoanserviceaccount-chude"></a>
 
-* [Khởi tạo tài khoản Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804832\&src=contextnavpagetreemode)
-* [Khởi tạo policy cho Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804834\&src=contextnavpagetreemode)
-* [Liên kết tài khoản Service Account với policy tương ứng](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804836\&src=contextnavpagetreemode)
-* [Khởi tạo vStorage Credentials](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804855\&src=contextnavpagetreemode)
-  * [Khởi tạo S3 key](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804857\&src=contextnavpagetreemode)
-  * [Khởi tạo Swift user](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804859\&src=contextnavpagetreemode)
-  * [Liên kết S3 key, Swift user với tài khoản Service Account tương ứng](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804923\&src=contextnavpagetreemode)
-  * [Hủy S3 key, Swift user](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805160)
-* [Hủy tài khoản Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805158)
+* Khởi tạo tài khoản Service Account
+* Khởi tạo policy cho Service Account
+* Liên kết tài khoản Service Account với policy tương ứng
+* Khởi tạo vStorage Credentials
+  * Khởi tạo S3 key
+  * Khởi tạo Swift user
+  * Liên kết S3 key, Swift user với tài khoản Service Account tương ứng
+  * Hủy S3 key, Swift user
+* Hủy tài khoản Service Account
 
 \
