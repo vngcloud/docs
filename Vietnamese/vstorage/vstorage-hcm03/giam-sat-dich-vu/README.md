@@ -15,7 +15,7 @@ Giám sát (monitoring) là một phần quan trọng trong việc duy trì đ�
 
 #### Chủ đề <a href="#giamsatdichvu-chude" id="giamsatdichvu-chude"></a>
 
-* [Giám sát vStorage thông qua metric](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649169)
-* [Giám sát vStorage thông qua log](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649171)
+* Giám sát vStorage thông qua metric
+* Giám sát vStorage thông qua log
 
 \
