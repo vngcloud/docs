@@ -23,8 +23,10 @@
 
 Giả sử ở đây chúng ta chọn dimension key là **hostname,** bạn sẽ thấy các giá trị của variable sẽ có, chính là danh sách tất cả các host trong hệ thống, tại đây bạn có thể chọn **Dynamic by time range** để hệ thống tự động lấy tất cả hostname theo time range bạn chọn, hoặc chọn cố định các hostname như danh sách được hiển thị trong danh sách. Để tối ưu hơn chúng tôi khuyến khích bạn nên sử dụng **Dynamic by time range**
 
-![](http://docs.vngcloud.vn/download/attachments/59807023/image2023-8-16\_11-1-19.png?version=1\&modificationDate=1692158479761\&api=v2)\
+\
 
+
+<figure><img src="http://docs.vngcloud.vn/download/attachments/59807023/image2023-8-16_11-1-19.png?version=1&#x26;modificationDate=1692158479761&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 4\. Để ứng dụng variable này cho các widget, bạn có thể tự thêm bằng cách add/edit widget và thêm vào chỗ filter, hoặc sử dụng tính năng tự động thêm tại đây, khi bạn nhấn + hệ thống sẽ tự thêm tất cả widget trong dashboard sử dụng variable này, tương tự là - sẽ tự động bỏ đi
 
@@ -88,7 +90,9 @@ vMonitor Platform cung cấp cho bạn khả năng tái sử dụng lại một 
 
 1. Tại vùng chứa câu lệnh truy vấn, chọn icon ![](http://docs.vngcloud.vn/download/thumbnails/59807023/image2023-8-14\_14-54-5.png?version=1\&modificationDate=1691999648000\&api=v2)
 
-![](http://docs.vngcloud.vn/download/attachments/59807023/image2023-8-9\_15-55-24.png?version=1\&modificationDate=1691571325000\&api=v2)2. Nhập Query name.
+<figure><img src="http://docs.vngcloud.vn/download/attachments/59807023/image2023-8-9_15-55-24.png?version=1&#x26;modificationDate=1691571325000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+
+2\. Nhập Query name.
 
 3\. Chọn Save
 
@@ -102,7 +106,9 @@ Sau khi bạn đã thực hiện lưu query, bạn có thể tái sử dụng qu
 
 1. Tại vùng chứa câu lệnh truy vấn, chọn biểu tượng![](http://docs.vngcloud.vn/download/thumbnails/59807023/image2023-8-14\_14-58-25.png?version=1\&modificationDate=1691999908000\&api=v2)(biểu tượng này nằm bên cạnh biểu tượng Save query.
 
-![](http://docs.vngcloud.vn/download/attachments/59807023/image2023-8-14\_15-0-12.png?version=1\&modificationDate=1692000015000\&api=v2)2. Lúc này hệ thống hiển thị danh sách query đã lưu, bạn có thể tái sử dụng bằng cách chọn query đó.&#x20;
+<figure><img src="http://docs.vngcloud.vn/download/attachments/59807023/image2023-8-14_15-0-12.png?version=1&#x26;modificationDate=1692000015000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+
+2\. Lúc này hệ thống hiển thị danh sách query đã lưu, bạn có thể tái sử dụng bằng cách chọn query đó.&#x20;
 
 ![](http://docs.vngcloud.vn/download/attachments/59807023/image2023-8-14\_15-0-58.png?version=1\&modificationDate=1692000061000\&api=v2)
 

@@ -20,11 +20,11 @@ Biểu tượng đánh dấu kết quả câu truy vấn đang được ẩn/ hi
 
 ### 4. Log project
 
-**Log project**: lựa chọn **log project** bằng cách tìm kiếm và chọn từ danh sách log project. Danh sách **log project** này bạn có thể xem tại mục **Log/ Log project**, chi tiết tham khảo tại [Làm việc với Log Project](http://docs.vngcloud.vn/pages/viewpage.action?pageId=59807130).
+**Log project**: lựa chọn **log project** bằng cách tìm kiếm và chọn từ danh sách log project. Danh sách **log project** này bạn có thể xem tại mục **Log/ Log project**, chi tiết tham khảo tại [Làm việc với Log Project](../../logs/lam-viec-voi-log-project/).
 
 ### 5. Search log
 
-**Search log**: nơi bạn có thể thực hiện tìm kiếm dữ liệu logs theo điều kiện mà bạn mong muốn. Để biết cách search log, chi tiết tham khảo tại [Log search](http://docs.vngcloud.vn/display/VPV/Log+search).
+**Search log**: nơi bạn có thể thực hiện tìm kiếm dữ liệu logs theo điều kiện mà bạn mong muốn. Để biết cách search log, chi tiết tham khảo tại [Log search](../widget/log-search.md).
 
 ### 6. Alias
 

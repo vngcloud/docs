@@ -2,22 +2,24 @@
 
 Khi bạn tạo **Alarm** cho dữ liệu **logs**, trong phần **Set Alarm Conditions.** Các thành phần tạo nên câu lệnh truy vấn đối với dữ liệu logs bao gồm:&#x20;
 
-![](http://docs.vngcloud.vn/download/attachments/59807082/image2023-8-8\_14-25-48.png?version=1\&modificationDate=1691479548000\&api=v2)\
+\
 
+
+<figure><img src="http://docs.vngcloud.vn/download/attachments/59807082/image2023-8-8_14-25-48.png?version=1&#x26;modificationDate=1691479548000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 Trong đó
 
 ### 1. Log project
 
-**Log project**: lựa chọn **log project** bằng cách tìm kiếm và chọn từ danh sách log project. Danh sách **log project** này bạn có thể xem tại mục **Log/ Log project**, chi tiết tham khảo tại [Làm việc với Log Project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59807130).
+**Log project**: lựa chọn **log project** bằng cách tìm kiếm và chọn từ danh sách log project. Danh sách **log project** này bạn có thể xem tại mục **Log/ Log project**, chi tiết tham khảo tại [Làm việc với Log Project](../logs/lam-viec-voi-log-project/).
 
 ### 2. Save query
 
-Save query: nơi bạn có thể chọn và tái sử dụng các query mà bạn đã tạo và lưu trước đó, chi tiết tham khảo tại [Variable, Save Querying and View](http://docs.vngcloud.vn/display/VPV/Variable%2C+Save+Querying+and+View).
+Save query: nơi bạn có thể chọn và tái sử dụng các query mà bạn đã tạo và lưu trước đó, chi tiết tham khảo tại [Variable, Save Querying and View](../dashboard/variable-save-querying-and-view.md).
 
 ### 3. Search log
 
-**Search log**: nơi bạn có thể thực hiện tìm kiếm dữ liệu logs theo điều kiện mà bạn mong muốn. Để biết cách search log, chi tiết tham khảo tại [Log search](https://docs.vngcloud.vn/display/VPV/Log+search).
+**Search log**: nơi bạn có thể thực hiện tìm kiếm dữ liệu logs theo điều kiện mà bạn mong muốn. Để biết cách search log, chi tiết tham khảo tại [Log search](../dashboard/widget/log-search.md).
 
 ### 4. Statistics
 

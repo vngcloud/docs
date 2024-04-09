@@ -5,7 +5,7 @@
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Notification.**
 3. Chọn **Create a Notification**.
-4. Màn hình **Create Notification** được hiển thị. Nhập **Notification name**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho Notification của bạn. Sau khi tạo Notification, bạn có thể thay đổi tên cho Notification của bạn. Để biết thêm thông tin về cách đặt tên Notification, hãy xem [Notification](https://docs.vngcloud.vn/display/VPV/Notification).
+4. Màn hình **Create Notification** được hiển thị. Nhập **Notification name**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho Notification của bạn. Sau khi tạo Notification, bạn có thể thay đổi tên cho Notification của bạn. Để biết thêm thông tin về cách đặt tên Notification, hãy xem [Notification](../).
 5. Chọn **Notification type** là **Telegram**.
 6. Nhập **Chat ID.** Để lấy thông tin Chat ID của bạn, hãy làm theo hướng dẫn bên dưới:
    1. Mở trình duyệt web của Telegram theo đường dẫn: [https://web.telegram.org/z](https://web.telegram.org/z).

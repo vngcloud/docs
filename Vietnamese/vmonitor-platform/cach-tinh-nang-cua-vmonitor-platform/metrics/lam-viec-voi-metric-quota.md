@@ -14,7 +14,7 @@ Một Metric quota là một thuật ngữ trên vMonitor Platform thể hiện 
 2. Chọn **Quota & Usage**.
 3. Chọn **Buy metric quota.**
 4. Chọn **Class** mà bạn có nhu cầu sử dụng**.** Chúng tôi cung cấp cho bạn chọn 1 trong 2 class bao gồm: Basic, Pro.
-5. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Nếu bạn chọn class **Pro**, bạn có thể lựa chọn số lượng host mong muốn bằng cách kéo thả hoặc nhập con số resources bạn mong muốn tại ô Number of resources. dụng. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Metric Quota Class](https://docs.vngcloud.vn/display/VPV/Metric+Quota+Class)
+5. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Nếu bạn chọn class **Pro**, bạn có thể lựa chọn số lượng host mong muốn bằng cách kéo thả hoặc nhập con số resources bạn mong muốn tại ô Number of resources. dụng. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Metric Quota Class](../../vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/metric-quota-class.md)
 6. Chọn **Buy Metric Quota**.
 7. Chọn **Chu kỳ** nếu bạn là người dùng trả trước. Chúng tôi cung cấp các chu kỳ trả trước bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng.
 8. Chọn **Continue.**
@@ -22,7 +22,7 @@ Một Metric quota là một thuật ngữ trên vMonitor Platform thể hiện 
 
 Tại một thời điểm, bạn chỉ có thể sở hữu một gói metric quota, nếu gói này không phù hợp với nhu cầu sử dụng của bạn, hãy thực hiện **Gia hạn Metric quota** hoặc **Tăng giảm hạn mức Metric quota** theo hướng dẫn của chúng tôi.
 
-Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649904).
+Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 \
 
@@ -52,7 +52,7 @@ Sau khi bạn khởi tạo Metric quota, bạn có thể xem thông tin gói Met
 6. Lựa chọn thời gian mong muốn gia hạn tại cột Period. Khi bạn thực hiện chọn period, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ sử dụng mới và tổng số tiền bạn cần chi trả cho việc gia hạn **gói Metric quota**.
 7. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Metric quota** sẽ được gia hạn.
 
-Cách tính chi phí gia hạn cho mỗi gói Metric quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649904).
+Cách tính chi phí gia hạn cho mỗi gói Metric quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 
@@ -68,7 +68,7 @@ Cách tính chi phí gia hạn cho mỗi gói Metric quota được chúng tôi 
 6. Chọn **Resize.**
 7. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Metric quota** sẽ được tăng hạn mức.
 
-Cách tính chi phí tăng hạn mức cho mỗi gói Metric quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649904).
+Cách tính chi phí tăng hạn mức cho mỗi gói Metric quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 
@@ -84,6 +84,6 @@ Bạn đã khởi tạo một Metric quota ban đầu phù hợp với nhu cầu
 4. Tại gói Metric quota đang sử dụng, chọn **Delete**.
 5. Tại màn hình xác nhận xóa Metric quota, chọn **Delete**.
 
-Sau khi bạn bạn thực hiện xóa gói Metric quota thì gói metric quota bị xóa sẽ biến mất khỏi danh sách gói metric quota của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649904).&#x20;
+Sau khi bạn bạn thực hiện xóa gói Metric quota thì gói metric quota bị xóa sẽ biến mất khỏi danh sách gói metric quota của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](../../cach-tinh-phi.md).&#x20;
 
 Do hành động xóa Metric quota tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.

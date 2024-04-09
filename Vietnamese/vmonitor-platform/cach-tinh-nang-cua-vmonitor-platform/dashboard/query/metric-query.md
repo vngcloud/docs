@@ -24,9 +24,9 @@ Loại query: khung chọn loại dữ liệu. Để vẽ biểu đồ cho metri
 
 #### 5. Filter
 
-**Filter**: metric mà bạn lựa chọn có thể được filter bởi các **dimensions** (ví dụ host,device,...) từ danh sách **dimensions** được hiển thị, bạn có thể chọn nhiều **dimensions** tại đây. Ngoài việc chọn các dimensions có giá trị cố định của metric, tại đây bạn có thể sử dụng các **variable** để filter linh động hơn. Các **variable** này đã được bạn định nghĩa tại **Dashboard** mà bạn đang muốn tạo **Widget**. Để tìm hiểu thêm về **variable**, vui lòng tham khảo tại [Variable, Save Querying and View](http://docs.vngcloud.vn/display/VPV/Variable%2C+Save+Querying+and+View). Ví dụ như ảnh bên dưới, chúng tôi chọn metric win\_swap.Percent\_Usage và chọn điều kiện lọc theo 2 dimension bao gồm: host = ThuyVT2-PC và objectname = Paging\_File.&#x20;
+**Filter**: metric mà bạn lựa chọn có thể được filter bởi các **dimensions** (ví dụ host,device,...) từ danh sách **dimensions** được hiển thị, bạn có thể chọn nhiều **dimensions** tại đây. Ngoài việc chọn các dimensions có giá trị cố định của metric, tại đây bạn có thể sử dụng các **variable** để filter linh động hơn. Các **variable** này đã được bạn định nghĩa tại **Dashboard** mà bạn đang muốn tạo **Widget**. Để tìm hiểu thêm về **variable**, vui lòng tham khảo tại [Variable, Save Querying and View](../variable-save-querying-and-view.md). Ví dụ như ảnh bên dưới, chúng tôi chọn metric win\_swap.Percent\_Usage và chọn điều kiện lọc theo 2 dimension bao gồm: host = ThuyVT2-PC và objectname = Paging\_File.&#x20;
 
-![](http://docs.vngcloud.vn/download/attachments/59807018/2.gif?version=1\&modificationDate=1691031104000\&api=v2)
+<figure><img src="http://docs.vngcloud.vn/download/attachments/59807018/2.gif?version=1&#x26;modificationDate=1691031104000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 #### 6. Statistics
 
@@ -54,4 +54,4 @@ Loại query: khung chọn loại dữ liệu. Để vẽ biểu đồ cho metri
 
 Bạn có thể tham khảo cách tạo một graph với metric dựa trên video bên dưới
 
-![](http://docs.vngcloud.vn/download/attachments/59807018/3.gif?version=1\&modificationDate=1691031107000\&api=v2)
+<figure><img src="http://docs.vngcloud.vn/download/attachments/59807018/3.gif?version=1&#x26;modificationDate=1691031107000&#x26;api=v2" alt=""><figcaption></figcaption></figure>

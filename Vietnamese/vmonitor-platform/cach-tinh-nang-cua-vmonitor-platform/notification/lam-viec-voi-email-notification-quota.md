@@ -51,7 +51,7 @@ Bạn đã khởi tạo Email notification quota với chu kỳ sử dụng ng�
 7. Nhập **Coupon** nếu có và chọn **Apply**.
 8. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Email notification quota** sẽ được gia hạn.
 
-Bạn chỉ có thể gia hạn sử dụng gói Email notification quota trong vòng 7 ngày trước thời điểm hết hạn của gói notification hiện tại. Cách tính chi phí gia hạn cho mỗi gói Email notification quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649904).
+Bạn chỉ có thể gia hạn sử dụng gói Email notification quota trong vòng 7 ngày trước thời điểm hết hạn của gói notification hiện tại. Cách tính chi phí gia hạn cho mỗi gói Email notification quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 
@@ -68,7 +68,7 @@ Bạn chỉ có thể gia hạn sử dụng gói Email notification quota trong 
 7. Nhập **Coupon** nếu có và chọn **Apply**.
 8. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Email notification quota** sẽ được tăng hạn mức.
 
-Cách tính chi phí tăng hạn mức cho mỗi gói Email notification quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649904).
+Cách tính chi phí tăng hạn mức cho mỗi gói Email notification quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 
@@ -84,6 +84,6 @@ Nếu bạn không có nhu cầu sử dụng gói Email notification quota đã 
 4. Tại gói Email notification quota đang sử dụng, chọn **Delete**.
 5. Tại màn hình xác nhận xóa Email notification quota, chọn **Delete**.
 
-Sau khi bạn bạn thực hiện xóa gói Email notification quota thì gói notification bị xóa sẽ biến mất khỏi danh sách gói notification của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649904).&#x20;
+Sau khi bạn bạn thực hiện xóa gói Email notification quota thì gói notification bị xóa sẽ biến mất khỏi danh sách gói notification của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](../../cach-tinh-phi.md).&#x20;
 
 Do hành động xóa Email notification quota tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.&#x20;

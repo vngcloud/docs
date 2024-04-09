@@ -18,7 +18,7 @@ Một SMS Notification quota là một thuật ngữ trên vMonitor Platform th�
 6. Chọn **Period** sử dụng mong muốn. Hiện tại chúng tôi cung cấp cho bạn các chu kỳ sử dụng gói bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng.
 7. Nhập **Coupon** nếu có và chọn **Apply**.
 8. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **SMS notification quota** sẽ được khởi tạo.
-9. Với mỗi tài khoản VNG Cloud, bạn có thể khởi tạo **1 gói SMS notification quota** và sử dụng gói này theo chu kỳ mà bạn đã chọn. 7 ngày trước khi hết hạn gói SMS notification quota này, bạn có thể tiếp tục gia hạn và sử dụng với chu kỳ gia hạn kế tiếp. Bên cạnh đó, trong khoảng thời gian sử dụng gói, bạn cũng có thể thực hiện tăng hạn mức sử dụng của gói theo hướng dẫn bên dưới. Cách tính chi phí cho mỗi gói SMS notification quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649904).
+9. Với mỗi tài khoản VNG Cloud, bạn có thể khởi tạo **1 gói SMS notification quota** và sử dụng gói này theo chu kỳ mà bạn đã chọn. 7 ngày trước khi hết hạn gói SMS notification quota này, bạn có thể tiếp tục gia hạn và sử dụng với chu kỳ gia hạn kế tiếp. Bên cạnh đó, trong khoảng thời gian sử dụng gói, bạn cũng có thể thực hiện tăng hạn mức sử dụng của gói theo hướng dẫn bên dưới. Cách tính chi phí cho mỗi gói SMS notification quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 
@@ -32,9 +32,6 @@ Sau khi bạn khởi tạo SMS Notification Quota, bạn có thể xem thông ti
 4. Hệ thống hiển thị thông tin gói **SMS notification quota** đã được khởi tạo và **Usage** thực tế bạn đang sử dụng của gói **SMS notification quota** đó.&#x20;
 
 ***
-
-\
-
 
 ### Gia hạn SMS Notification Quota
 
@@ -51,7 +48,7 @@ Bạn đã khởi tạo SMS notification quota với chu kỳ sử dụng ngắn
 7. Nhập **Coupon** nếu có và chọn **Apply**.
 8. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **SMS notification quota** sẽ được gia hạn.
 
-Bạn chỉ có thể gia hạn sử dụng gói SMS notification quota trong vòng 7 ngày trước thời điểm hết hạn của gói notification hiện tại. Cách tính chi phí gia hạn cho mỗi gói SMS notification quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649904).
+Bạn chỉ có thể gia hạn sử dụng gói SMS notification quota trong vòng 7 ngày trước thời điểm hết hạn của gói notification hiện tại. Cách tính chi phí gia hạn cho mỗi gói SMS notification quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 
@@ -68,7 +65,7 @@ Bạn chỉ có thể gia hạn sử dụng gói SMS notification quota trong v�
 7. Nhập **Coupon** nếu có và chọn **Apply**.
 8. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **SMS notification quota** sẽ được tăng hạn mức.
 
-Cách tính chi phí tăng hạn mức cho mỗi gói SMS notification quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649904).
+Cách tính chi phí tăng hạn mức cho mỗi gói SMS notification quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 
@@ -84,6 +81,6 @@ Nếu bạn không có nhu cầu sử dụng gói SMS notification quota đã t�
 4. Tại gói SMS notification quota đang sử dụng, chọn **Delete**.
 5. Tại màn hình xác nhận xóa SMS notification quota, chọn **Delete**.
 
-Sau khi bạn bạn thực hiện xóa gói SMS notification quota thì gói notification bị xóa sẽ biến mất khỏi danh sách gói notification của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649904).&#x20;
+Sau khi bạn bạn thực hiện xóa gói SMS notification quota thì gói notification bị xóa sẽ biến mất khỏi danh sách gói notification của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](../../cach-tinh-phi.md).&#x20;
 
 Do hành động xóa SMS notification quota tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.&#x20;

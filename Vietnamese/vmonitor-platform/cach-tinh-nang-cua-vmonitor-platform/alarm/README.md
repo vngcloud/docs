@@ -54,10 +54,12 @@ Mỗi Alarm **chỉ có thể chứa một loại cảnh báo được thiết l
 3. Chọn **Create an Alarm**.
 4. Trong mục **Select an alarm type**, chọn **Metric** nếu bạn muốn thiết lập cảnh báo dựa trên dữ liệu metric hoặc chọn **Log** nếu bạn muốn thiết lập cảnh báo dựa trên dữ liệu log.&#x20;
 
-![](http://docs.vngcloud.vn/download/attachments/49650538/image2023-7-31\_10-18-59.png?version=1\&modificationDate=1690773540000\&api=v2)5. Trong mục **Set alarm conditions**, làm theo hướng dẫn bên dưới nếu bạn muốn thiết lập Alarm cho metric hay log:
+<figure><img src="http://docs.vngcloud.vn/download/attachments/49650538/image2023-7-31_10-18-59.png?version=1&#x26;modificationDate=1690773540000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-* [Metric Alarm](http://docs.vngcloud.vn/display/VPV/Metric+Alarm)
-* [Log Alarm](http://docs.vngcloud.vn/display/VPV/Log+Alarm)
+5\. Trong mục **Set alarm conditions**, làm theo hướng dẫn bên dưới nếu bạn muốn thiết lập Alarm cho metric hay log:
+
+* [Metric Alarm](metric-alarm.md)
+* [Log Alarm](log-alarm.md)
 
 6\. Chọn **Next**.
 
@@ -67,9 +69,9 @@ Mỗi Alarm **chỉ có thể chứa một loại cảnh báo được thiết l
 * **OK**: gửi cảnh báo tới nhóm người nhận khi kết quả alarm nằm trong ngưỡng đã xác định.
 * **Undetermined**: gửi cảnh báo tới nhóm người nhận khi alarm vừa bắt đầu hoặc không có đủ dữ liệu để xác định.&#x20;
 
-![](http://docs.vngcloud.vn/download/attachments/49650538/image2023-7-31\_10-18-22.png?version=1\&modificationDate=1690773504000\&api=v2)
+<figure><img src="http://docs.vngcloud.vn/download/attachments/49650538/image2023-7-31_10-18-22.png?version=1&#x26;modificationDate=1690773504000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-Ở mỗi trạng thái của alarm (In-alarm, OK, Undetermined), bạn có thể chọn một hoặc nhiều notification đã thiết lập tại [Notification](http://docs.vngcloud.vn/display/VPV/Notification). Một người nhận thông báo cũng có thể nhận cảnh báo cho alarm ở tất cả các trạng thái. Chúng tôi không giới hạn số lượng người nhận mà bạn có thể tạo tại notification cũng như số lượng người nhận mà bạn thiết lập trên alarm nhưng số lượng thông báo gửi đi qua các kênh sẽ phụ thuộc vào cấu hình gói metric quota, log project hay SMS notification quota, Email notification quota.
+Ở mỗi trạng thái của alarm (In-alarm, OK, Undetermined), bạn có thể chọn một hoặc nhiều notification đã thiết lập tại [Notification](../notification/). Một người nhận thông báo cũng có thể nhận cảnh báo cho alarm ở tất cả các trạng thái. Chúng tôi không giới hạn số lượng người nhận mà bạn có thể tạo tại notification cũng như số lượng người nhận mà bạn thiết lập trên alarm nhưng số lượng thông báo gửi đi qua các kênh sẽ phụ thuộc vào cấu hình gói metric quota, log project hay SMS notification quota, Email notification quota.
 
 8\. Chọn **Next.**
 
@@ -79,7 +81,7 @@ Mỗi Alarm **chỉ có thể chứa một loại cảnh báo được thiết l
 
 11\. Chọn **Severity** của Alarm. Có 3 mức độ nghiêm trọng được chúng tôi định nghĩa bao gồm: **Thấp, Trung Bình, Cao**. Bạn hãy chọn 1 mức độ theo đánh giá cá nhân của bạn với cảnh báo.
 
-![](http://docs.vngcloud.vn/download/attachments/49650538/image2023-7-31\_10-22-3.png?version=1\&modificationDate=1690773724000\&api=v2)
+<figure><img src="http://docs.vngcloud.vn/download/attachments/49650538/image2023-7-31_10-22-3.png?version=1&#x26;modificationDate=1690773724000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 12\. Chọn **Create**.
 

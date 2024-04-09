@@ -45,11 +45,11 @@ Các quy tắc sau áp dụng cho việc đặt tên Notification trong vMonitor
 
 Mỗi Notification **chỉ có thể chứa một nhóm người dùng với cùng một kênh gửi/ nhận thông báo**. Ví dụ một notification có thể chứa nhóm người nhận [ABC@gmail.com](mailto:ABC@gmail.com), [XYZ@gmail.com](mailto:XYZ@gmail.com) thông qua kênh nhận là Email nhưng notification này không thể chứa nhóm người nhận 123@gmail.com, 0988123123 thông qua kênh nhận cả Email và SMS. Để tạo Notification, hãy làm theo hướng dẫn bên dưới:
 
-* [SMS](https://docs.vngcloud.vn/display/VPV/SMS)
-* [Email](https://docs.vngcloud.vn/display/VPV/Email)
-* [Slack](https://docs.vngcloud.vn/display/VPV/Slack)
-* [Telegram](https://docs.vngcloud.vn/display/VPV/Telegram)
-* [Webhook](https://docs.vngcloud.vn/display/VPV/Webhook)
+* [SMS](sms.md)
+* [Email](email.md)
+* [Slack](slack.md)
+* [Telegram](telegram.md)
+* [Webhook](webhock.md)
 
 Chúng tôi không giới hạn số lượng notification bạn có thể tạo, số lượng thông báo được gửi ra sẽ phụ thuộc vào các thông số quota của gói SMS Notification, Email Notification hoặc quota của gói Metrics, Logs tương ứng.&#x20;
 
@@ -64,11 +64,11 @@ Bạn đã khởi tạo một Notification trên hệ thống của chúng tôi.
 3. Tại notification mà bạn muốn chỉnh sửa, chọn ![](https://docs.vngcloud.vn/download/thumbnails/49650568/image2023-4-19\_11-4-15.png?version=1\&modificationDate=1690532290000\&api=v2).&#x20;
 4. Chỉnh sửa các thông số cho notification mà bạn mong muốn. Các thông số mà bạn có thể chỉnh sửa bao gồm: **Tên Notification**, Loại Notification, Địa chỉ Email, Số điện thoại, Đường dẫn Webhook, ... cũng như các thông số cấu hình chi tiết một notification.&#x20;
 
-Việc chỉnh sửa này tương tự như khi bạn thực hiện tạo mới một Notification theo hướng dẫn tại [Khởi tạo Notification](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650599).
+Việc chỉnh sửa này tương tự như khi bạn thực hiện tạo mới một Notification theo hướng dẫn tại [Khởi tạo Notification](./#lamviecvoinotification-khoitaonotification).
 
 5\. Chọn **Save.**
 
-Sau khi bạn hoàn thành 5 bước được mô tả bên trên, notification đã được cập nhật theo cấu hình mới. Nếu bạn không có nhu cầu sử dụng notification này, hãy làm theo hướng dẫn [Xóa Notification](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650603).
+Sau khi bạn hoàn thành 5 bước được mô tả bên trên, notification đã được cập nhật theo cấu hình mới. Nếu bạn không có nhu cầu sử dụng notification này, hãy làm theo hướng dẫn [Xóa Notification](./#lamviecvoinotification-xoanotification).
 
 ***
 
