@@ -12,6 +12,6 @@ Sau khi bạn đã khởi tạo S3 key, Swift user mong muốn và thiết lập
 6. Tại mục vStorage credential, chọn **Attach.**
 7. Chọn các **S3 key và Swift user** mà bạn mong muốn liên kết tới Service Account đang chọn. Hệ thống vIAM hỗ trợ bạn liên kết nhiều S3 key, Swift user vào một tài khoản Service Account nhưng một S3 key hay một Swift user chỉ có thể gán vào một Service Account.&#x20;
 
-Sau khi bạn thực hiện 7 bước bên trên, lúc này bạn đã có thể sử dụng Service Account để truy cập vào tài nguyên vStorage. Để biết thêm thông tin, hãy xem tại [Truy cập tài nguyên sử dụng tài khoản Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648950).
+Sau khi bạn thực hiện 7 bước bên trên, lúc này bạn đã có thể sử dụng Service Account để truy cập vào tài nguyên vStorage. Để biết thêm thông tin, hãy xem tại [Truy cập tài nguyên sử dụng tài khoản Service Account](../../../quan-ly-truy-cap-tai-nguyen-vstorage/truy-cap-tai-nguyen-su-dung-tai-khoan-service-account.md).
 
 <figure><img src="../../../../../../.gitbook/assets/Lien_ket_S3_key_Swift_user_voi_Service_Account.gif" alt=""><figcaption></figcaption></figure>

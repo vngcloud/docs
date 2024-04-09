@@ -10,7 +10,7 @@
 
 #### Tài khoản vStorage <a href="#quanlytruycaptainguyenvstorage-taikhoanvstorage" id="quanlytruycaptainguyenvstorage-taikhoanvstorage"></a>
 
-Nếu bạn chưa có tài khoản vStorage, bạn vui lòng tham khảo [Quản lý tài khoản truy cập](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648911) để biết về các loại tài khoản được hỗ trợ bởi dịch vụ vStorage cũng như cách thức cấp phát các loại tài khoản này.
+Nếu bạn chưa có tài khoản vStorage, bạn vui lòng tham khảo [Quản lý tài khoản truy cập](../quan-ly-tai-khoan-truy-cap-vstorage/) để biết về các loại tài khoản được hỗ trợ bởi dịch vụ vStorage cũng như cách thức cấp phát các loại tài khoản này.
 
 #### Phân quyền truy cập và làm việc với các tài nguyên cho tài khoản vStorage <a href="#quanlytruycaptainguyenvstorage-phanquyentruycapvalamviecvoicactainguyenchotaikhoanvstorage" id="quanlytruycaptainguyenvstorage-phanquyentruycapvalamviecvoicactainguyenchotaikhoanvstorage"></a>
 
@@ -27,8 +27,8 @@ Khi cấp quyền truy cập tới tài nguyên lưu trữ trên vStorage, bạn
 
 Chi tiết về cách thức phân quyền truy cập và làm việc với các tài nguyên vStorage, vui lòng xem các chủ đề bên dưới:
 
-* [Phân quyền truy cập và làm việc thông qua vStorage](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648906)
-* [Phân quyền truy cập và làm việc thông qua IAM](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648909)
+* [Phân quyền truy cập và làm việc thông qua vStorage](phan-quyen-truy-cap-va-lam-viec-thong-qua-vstorage.md)
+* [Phân quyền truy cập và làm việc thông qua IAM](phan-quyen-truy-cap-va-lam-viec-thong-qua-iam/)
 
 #### Truy cập và làm việc với các tài nguyên vStorage sử dụng tài khoản vStorage <a href="#quanlytruycaptainguyenvstorage-truycapvalamviecvoicactainguyenvstoragesudungtaikhoanvstorage" id="quanlytruycaptainguyenvstorage-truycapvalamviecvoicactainguyenvstoragesudungtaikhoanvstorage"></a>
 

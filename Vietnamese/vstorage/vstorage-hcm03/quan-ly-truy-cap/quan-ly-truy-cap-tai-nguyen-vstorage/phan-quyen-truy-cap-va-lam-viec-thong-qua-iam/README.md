@@ -10,6 +10,6 @@ Các chủ đề trong phần này mô tả các thành phần cơ bản của v
 
 #### Chủ đề <a href="#phanquyentruycapvalamviecthongquaiam-chude" id="phanquyentruycapvalamviecthongquaiam-chude"></a>
 
-* [Tính năng, tài nguyên vStorage và quyền truy cậ](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648924\&src=contextnavpagetreemode)p
+* Tính năng, tài nguyên vStorage và quyền truy cập
 
 \

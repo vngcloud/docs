@@ -7,4 +7,4 @@
 3. Trên danh sách các Service Account đang có, bạn hãy chọn một hoặc nhiều tài khoản Service Account mà bạn muốn hủy bỏ (xóa).
 4. Chọn **Delete**.
 
-Kể từ thời điểm Service Account bị hủy thành công, bạn sẽ không thể sử dụng Service Account này để truy xuất vào vStorage. Hãy thận trọng khi thực hiện thao tác hủy (xóa) tài khoản Service Account bởi bạn sẽ không thể khôi phục tài khoản đã xóa này. Chi tiết hãy tham khảo thêm tại [đây.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805240)
+Kể từ thời điểm Service Account bị hủy thành công, bạn sẽ không thể sử dụng Service Account này để truy xuất vào vStorage. Hãy thận trọng khi thực hiện thao tác hủy (xóa) tài khoản Service Account bởi bạn sẽ không thể khôi phục tài khoản đã xóa này. Chi tiết hãy tham khảo thêm tại [đây.](../../../../../identity-and-access-management-iam.md)
