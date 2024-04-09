@@ -12,19 +12,19 @@ Bạn có thể sử dụng 3 loại tài khoản để truy cập vào vStorage
 
 #### Chủ đề <a href="#quanlytaikhoantruycapvstorage-chude" id="quanlytaikhoantruycapvstorage-chude"></a>
 
-* [Tài khoản người dùng Root](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804313)
-* [Tài khoản người dùng IAM](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804422)
-  * [Khởi tạo tài khoản IAM User Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804814)
-  * [Khởi tạo policy cho IAM User Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804816)
-  * [Liên kết tài khoản IAM User Account với policy tương ứng](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804818)
-  * [Hủy tài khoản IAM User Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805156)
-* [Tài khoản Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804473)
-  * [Khởi tạo tài khoản Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804832)
-  * [Khởi tạo policy cho Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804834)
-  * [Liên kết tài khoản Service Account với policy tương ứng](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804836)
-  * [Khởi tạo vStorage Credentials](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804855)
-    * [Khởi tạo S3 key](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804857)
-    * [Khởi tạo Swift user](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804859)
-    * [Liên kết S3 key, Swift user với tài khoản Service Account tương ứng](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804923)
-    * [Hủy S3 key, Swift user](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805160)
-  * [Hủy tài khoản Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805158)
+* Tài khoản người dùng Root
+* Tài khoản người dùng IAM
+  * Khởi tạo tài khoản IAM User Account
+  * Khởi tạo policy cho IAM User Account
+  * Liên kết tài khoản IAM User Account với policy tương ứng
+  * Hủy tài khoản IAM User Account
+* Tài khoản Service Account
+  * Khởi tạo tài khoản Service Account
+  * Khởi tạo policy cho Service Account
+  * Liên kết tài khoản Service Account với policy tương ứng
+  * Khởi tạo vStorage Credentials
+    * Khởi tạo S3 key
+    * Khởi tạo Swift user
+    * Liên kết S3 key, Swift user với tài khoản Service Account tương ứng
+    * Hủy S3 key, Swift user
+  * Hủy tài khoản Service Account

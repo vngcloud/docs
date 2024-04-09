@@ -1,6 +1,6 @@
 # Làm việc với vBackup project
 
-vBackup project là một loại project được tạo từ chức năng backup nhằm lưu trữ dữ liệu từ hệ thống vBackup khi bạn thực hiện tạo các bản sao lưu (backup) cho Server của bạn từ hệ thống vServer về hệ thống vStorage theo hướng dẫn tại [đây](https://docs.vngcloud.vn/display/vServer/vBackup).
+vBackup project là một loại project được tạo từ chức năng backup nhằm lưu trữ dữ liệu từ hệ thống vBackup khi bạn thực hiện tạo các bản sao lưu (backup) cho Server của bạn từ hệ thống vServer về hệ thống vStorage theo hướng dẫn tại [đây](../../../vserver/compute-hcm03-1a/backup/).
 
 Đối với vBackup project, sẽ có 2 trường hợp xảy ra:&#x20;
 
@@ -52,7 +52,7 @@ Chúng tôi chỉ miễn phí cho bạn dung lượng lưu trữ 50GB ở lớp 
 
 <summary>Xóa backup project còn thời hạn sử dụng</summary>
 
-Sau khi một backup project được khởi tạo lần đầu tiên, lúc này backup project của bạn có dung lượng lưu trữ 50GB với thời hạn lưu trữ là 1 tháng. Từ lần khởi tạo thứ hai, backup project có dung lượng lưu trữ 0GB. Nếu bạn không có nhu cầu sử dụng backup project này, bạn có thể thực hiện xóa chúng theo hướng dẫn tại [Xóa project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648494).
+Sau khi một backup project được khởi tạo lần đầu tiên, lúc này backup project của bạn có dung lượng lưu trữ 50GB với thời hạn lưu trữ là 1 tháng. Từ lần khởi tạo thứ hai, backup project có dung lượng lưu trữ 0GB. Nếu bạn không có nhu cầu sử dụng backup project này, bạn có thể thực hiện xóa chúng theo hướng dẫn tại [Xóa project](lam-viec-voi-project/xoa-project.md).
 
 Lúc này **backup project** bị xóa sẽ nằm trong **Thùng rác**, bạn có thể:
 
@@ -79,7 +79,7 @@ Bạn có thể khôi phục backup project sau khi xóa theo hướng dẫn bê
 
 Sau khi bạn hoàn thành 5 bước được mô tả bên trên, backup project của bạn đã được khôi phục.
 
-Nếu backup project mà bạn thực hiện khôi phục chưa được Gia hạn hay Tăng giảm hạn mức bất kỳ một lần nào thì bạn có thể khôi phục lại backup project này với thông tin thanh toán là 0 VNĐ. Nếu backup project mà bạn thực hiện khôi phục đã được Gia hạn hay Tăng giảm hạn mức ít nhất một lần thì bạn có thể khôi phục lại backup project này với thông tin thanh toán là giá trị tài nguyên được gia hạn hay tăng hạn mức với số ngày sử dụng còn lại tương ứng. Quy trình và phương thức tính giá tương tự như khi khôi phục project thông thường. Chi tiết tham khảo thêm tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).
+Nếu backup project mà bạn thực hiện khôi phục chưa được Gia hạn hay Tăng giảm hạn mức bất kỳ một lần nào thì bạn có thể khôi phục lại backup project này với thông tin thanh toán là 0 VNĐ. Nếu backup project mà bạn thực hiện khôi phục đã được Gia hạn hay Tăng giảm hạn mức ít nhất một lần thì bạn có thể khôi phục lại backup project này với thông tin thanh toán là giá trị tài nguyên được gia hạn hay tăng hạn mức với số ngày sử dụng còn lại tương ứng. Quy trình và phương thức tính giá tương tự như khi khôi phục project thông thường. Chi tiết tham khảo thêm tại [Cách tính phí](../cach-tinh-phi/).
 
 \
 
