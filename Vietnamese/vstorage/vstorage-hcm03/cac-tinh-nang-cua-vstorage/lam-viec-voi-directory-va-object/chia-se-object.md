@@ -5,7 +5,7 @@ Mặc định, tất cả các object trong vStorage là riêng tư. Chỉ chủ
 * **Temporary URL**: sử dụng thông tin chứng thực là tài khoản OpenStack Swift của bạn.&#x20;
 * **Presigned URL**: sử dụng thông tin chứng thực là tài khoản S3 key của bạn.
 
-Khi bạn tạo một Temporary URL hay Presigned URL được chỉ định cho một object của bạn, bạn phải cung cấp thông tin chứng thực bảo mật của mình, sau đó chỉ định tên container, tên object và ngày giờ hết hạn của URL tương ứng. Các URL này chỉ hợp lệ trong khoảng thời gian mà bạn chỉ định trước. Bất kỳ ai nhận được URL này đều có thể Xem hoặc Tải xuống object. Chúng tôi khuyên bạn nên cân nhắc kỹ đối tượng bạn muốn chia sẻ cũng như thời gian bạn muốn chia sẻ tài nguyên của mình đến những đối tượng đó. Để biết thêm chi tiết về cách bảo vệ các URL, hãy xem [Phân quyền truy cập](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648486).
+Khi bạn tạo một Temporary URL hay Presigned URL được chỉ định cho một object của bạn, bạn phải cung cấp thông tin chứng thực bảo mật của mình, sau đó chỉ định tên container, tên object và ngày giờ hết hạn của URL tương ứng. Các URL này chỉ hợp lệ trong khoảng thời gian mà bạn chỉ định trước. Bất kỳ ai nhận được URL này đều có thể Xem hoặc Tải xuống object. Chúng tôi khuyên bạn nên cân nhắc kỹ đối tượng bạn muốn chia sẻ cũng như thời gian bạn muốn chia sẻ tài nguyên của mình đến những đối tượng đó. Để biết thêm chi tiết về cách bảo vệ các URL, hãy xem [Phân quyền truy cập](../../quan-ly-truy-cap/).
 
 Để thực hiện chia sẻ object, hãy làm theo hướng dẫn bên dưới:
 
@@ -25,7 +25,7 @@ Khi bạn tạo một Temporary URL hay Presigned URL được chỉ định cho
 * Nếu **Protocol** là **OpenStack Swift** thì bạn có thể chọn **Mode** là **Download** hoặc **View**.
 * Nếu **Protocol** là **S3** thì mặc định đường dẫn **Presigned URL** sẽ được sử dụng để **View** object.
 
-6\. Nếu bạn chọn Protocol là S3 thì bạn cần nhập thông tin **S3 key** tại đây. Thông tin S3 key có thể lấy tại IAM. Bạn có thể chọn [Nhấn vào đây để vào vIAM và quản lý s3 keys.](https://hcm-3.console.vngcloud.vn/iam/vstorage-credentials/s3) để xem thông tin chi tiết các cặp s3 key đã tạo cũng như tạo mới cặp S3 key để sử dụng. Chi tiết tham khảo thêm tại [Khởi tạo S3 key](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804857).
+6\. Nếu bạn chọn Protocol là S3 thì bạn cần nhập thông tin **S3 key** tại đây. Thông tin S3 key có thể lấy tại IAM. Bạn có thể chọn [Nhấn vào đây để vào vIAM và quản lý s3 keys.](https://hcm-3.console.vngcloud.vn/iam/vstorage-credentials/s3) để xem thông tin chi tiết các cặp s3 key đã tạo cũng như tạo mới cặp S3 key để sử dụng. Chi tiết tham khảo thêm tại [Khởi tạo S3 key](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-s3-key.md).
 
 7\. Nhập **Thời gian hết hạn** bạn muốn chia sẻ object tức là thời gian đường dẫn (Temporary URL) truy cập tới object có hiệu lực. Bạn có thể giới hạn số **ngày**, **giờ**, **phút** mà đường dẫn truy cập tới object tồn tại.&#x20;
 
@@ -39,18 +39,18 @@ Nếu bạn chia sẻ object thông qua Temporary URL hoặc Presigned URL ở c
 * Nếu trình duyệt của bạn không hỗ trợ mở trực tiếp loại object này trên trình duyệt thì chúng tôi tự động chuyển cơ chế chia sẻ object qua Download, hệ thống sẽ tự động tải xuống object này về thiết bị cá nhân của bạn.
 * Chi tiết từng trình duyệt hỗ trợ mở trực tiếp loại object này tham khảo thêm ở : [![](https://fileinfo.com/svg/favicon.svg)FileInfo.com - The File Format Database](https://fileinfo.com/) .
 
-Để chia sẻ toàn bộ object trong một container, thay vì tạo nhiều URL cho từng object, bạn có thể thực hiện chia sẻ toàn bộ Container thông tua tính năng Chuyển chế độ công khai container. Chi tiết xem tại [Chuyển chế độ công khai container](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648685).
+Để chia sẻ toàn bộ object trong một container, thay vì tạo nhiều URL cho từng object, bạn có thể thực hiện chia sẻ toàn bộ Container thông tua tính năng Chuyển chế độ công khai container. Chi tiết xem tại [Chuyển chế độ công khai container](../lam-viec-voi-container/chuyen-che-do-cong-khai-container.md).
 {% endtab %}
 
 {% tab title="Sử dụng vStorage API" %}
 Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung cấp API cho phép bạn tích hợp với các ứng dụng, công cụ phía bạn của bạn với vStorage để lưu trữ dữ liệu.
 
-Để lấy đường dẫn Temporary URL hoặc Presigned URL nhằm chia sẻ object qua vStorage API, hãy xem [API Developers](https://docs.vngcloud.vn/display/VV/API+Developers).
+Để lấy đường dẫn Temporary URL hoặc Presigned URL nhằm chia sẻ object qua vStorage API, hãy xem [API Developers](../../api-developers/).
 {% endtab %}
 
 {% tab title="Sử dụng 3rd party softwares" %}
-vStorage cũng tương thích với các công cụ phía bạn sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](https://docs.vngcloud.vn/display/VV/3rd+party+softwares) và học cách tích hợp, sử dụng các công cụ này.&#x20;
+vStorage cũng tương thích với các công cụ phía bạn sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.&#x20;
 
-Để lấy đường dẫn Temporary URL hoặc Presigned URL nhằm chia sẻ object qua 3rd party software, hãy xem [3rd party softwares](https://docs.vngcloud.vn/display/VV/3rd+party+softwares).
+Để lấy đường dẫn Temporary URL hoặc Presigned URL nhằm chia sẻ object qua 3rd party software, hãy xem [3rd party softwares](../../3rd-party-softwares/).
 {% endtab %}
 {% endtabs %}
