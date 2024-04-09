@@ -2,7 +2,7 @@
 
 A Project is a term in vStorage that represents a storage package with a specific capacity that you purchase on VNG Cloud. At any given time, you can own one or more Projects simultaneously and use them to organize resources for different groups or departments with different purposes.
 
-&#x20;Use vStorage Portal
+Use vStorage Portal
 
 1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
 
@@ -40,8 +40,8 @@ After completing the 10 steps described above, the project has been created. Pro
 
 ***
 
-&#x20;Use vStorage API
+Use vStorage API
 
 In addition to the traditional management interface portal, we also provide APIs that allow you to integrate vStorage with your user-facing applications and tools for data storage.
 
-To create a new project through the vStorage API, please refer to the [API developers](https://docs.vngcloud.vn/display/VSEN/API+developers). ThuyVT2
+To create a new project through the vStorage API, please refer to the [API developers](https://docs.vngcloud.vn/display/VSEN/API+developers).&#x20;
