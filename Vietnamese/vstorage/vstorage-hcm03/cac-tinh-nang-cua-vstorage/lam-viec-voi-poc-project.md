@@ -12,7 +12,7 @@ Sau khi chúng tôi xác nhận đã cung cấp ví POC cho tài khoản của b
 
 2\. Chọn **region** bạn muốn lưu trữ dữ liệu.
 
-Chọn một region gần bạn để giảm thiểu độ trễ và chi phí cũng như giải quyết các yêu cầu về quy định. Các object được lưu trữ trong một region sẽ không bao giờ rời khỏi region đó trừ khi bạn chuyển chúng sang một region khác. Để biết danh sách các region của vStorage, hãy xem [Hạn mức tài nguyên](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648640).
+Chọn một region gần bạn để giảm thiểu độ trễ và chi phí cũng như giải quyết các yêu cầu về quy định. Các object được lưu trữ trong một region sẽ không bao giờ rời khỏi region đó trừ khi bạn chuyển chúng sang một region khác. Để biết danh sách các region của vStorage, hãy xem [Hạn mức tài nguyên](../han-muc-tai-nguyen.md).
 
 3\. Chọn **Tạo một project.**
 
@@ -20,11 +20,11 @@ Màn hình **Tạo mới project** được hiển thị.
 
 4\. Trong **Tên project**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho project của bạn.&#x20;
 
-Sau khi tạo project, bạn không thể thay đổi tên của project. Để biết thêm thông tin về cách đặt tên project, hãy xem [Phạm vi giới hạn project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648648).
+Sau khi tạo project, bạn không thể thay đổi tên của project. Để biết thêm thông tin về cách đặt tên project, hãy xem [Phạm vi giới hạn project](lam-viec-voi-project/pham-vi-gioi-han-project.md).
 
 5\. Chọn **Project type (gói lưu trữ)** theo nhu cầu của bạn.
 
-Chúng tôi cung cấp cho bạn 3 gói lưu trữ Gold, Silver, Archive phù hợp với các nhu cầu lưu trữ dữ liệu khác nhau của bạn. Để biết thêm thông tin về các gói lưu trữ chúng tôi đang cung cấp, hãy xem [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).
+Chúng tôi cung cấp cho bạn 3 gói lưu trữ Gold, Silver, Archive phù hợp với các nhu cầu lưu trữ dữ liệu khác nhau của bạn. Để biết thêm thông tin về các gói lưu trữ chúng tôi đang cung cấp, hãy xem [Cách tính phí](../cach-tinh-phi/).
 
 6\. Chọn **Quota** lưu trữ theo nhu cầu của bạn.
 
@@ -60,7 +60,7 @@ Sau khi bạn khởi tạo một project sử dụng ví POC, lúc này bạn c�
 
 Sau khi bạn hoàn thành 4 bước được mô tả bên trên, project của bạn đã được gia hạn thông qua phương thức thanh toán là ví POC.&#x20;
 
-Quy trình và phương thức tính giá tương tự như khi gia hạn project thông thường. Chi tiết tham khảo thêm tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).
+Quy trình và phương thức tính giá tương tự như khi gia hạn project thông thường. Chi tiết tham khảo thêm tại [Cách tính phí](../cach-tinh-phi/).
 
 </details>
 
@@ -68,7 +68,7 @@ Quy trình và phương thức tính giá tương tự như khi gia hạn projec
 
 <summary>Xóa project sử dụng ví POC</summary>
 
-Sau khi bạn khởi tạo một project sử dụng ví POC, lúc này nếu bạn không có nhu cầu sử dụng project này, bạn có thể thực hiện xóa chúng theo hướng dẫn tại [Xóa project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648494).
+Sau khi bạn khởi tạo một project sử dụng ví POC, lúc này nếu bạn không có nhu cầu sử dụng project này, bạn có thể thực hiện xóa chúng theo hướng dẫn tại [Xóa project](lam-viec-voi-project/xoa-project.md).
 
 Lúc này **project** bị xóa sẽ nằm trong **Thùng rác**, bạn có thể:
 
@@ -95,7 +95,7 @@ Bạn có thể khôi phục project sau khi xóa theo hướng dẫn bên trên
 
 Sau khi bạn hoàn thành 5 bước được mô tả bên trên, project của bạn đã được khôi phục thông qua phương thức thanh toán là ví POC.&#x20;
 
-Quy trình và phương thức tính giá tương tự như khi khôi phục project thông thường. Chi tiết tham khảo thêm tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).
+Quy trình và phương thức tính giá tương tự như khi khôi phục project thông thường. Chi tiết tham khảo thêm tại [Cách tính phí](../cach-tinh-phi/).
 
 </details>
 
@@ -113,8 +113,8 @@ Quy trình và phương thức tính giá tương tự như khi khôi phục pro
 
 Sau khi bạn thực hiện dừng POC thành công thì project của bạn sẽ được chuyển thành loại tài nguyên trả trước và được chuyển vào Thùng rác.
 
-* Nếu bạn thực sự không có nhu cầu sử dụng project này nữa thì bạn có thể thực hiện xóa hoàn toàn project khỏi hệ thống của chúng tôi theo hướng dẫn tại [Xóa project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648494).
-* **Nếu bạn muốn khôi phục project vừa xóa này để tiếp tục sử dụng, hãy làm theo hướng dẫn** [**Khôi phục project**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648502)**. Khi khôi phục project vừa được dừng POC, bạn cần chọn lại chu kỳ gia hạn mới và thực hiện thanh toán tiền thật của bạn (số dư ví credit, ví Momo, ví Zalopay,...).**
+* Nếu bạn thực sự không có nhu cầu sử dụng project này nữa thì bạn có thể thực hiện xóa hoàn toàn project khỏi hệ thống của chúng tôi theo hướng dẫn tại [Xóa project](lam-viec-voi-project/xoa-project.md).
+* **Nếu bạn muốn khôi phục project vừa xóa này để tiếp tục sử dụng, hãy làm theo hướng dẫn** [**Khôi phục project**](lam-viec-voi-project/khoi-phuc-project.md)**. Khi khôi phục project vừa được dừng POC, bạn cần chọn lại chu kỳ gia hạn mới và thực hiện thanh toán tiền thật của bạn (số dư ví credit, ví Momo, ví Zalopay,...).**
 * Bạn cũng không thể bật sử dụng POC sau khi đã thực hiện Dừng POC. Nếu bạn có vướng mắc lúc này, hãy liên hệ với nhân viên Sale hoặc nhân viên hỗ trợ trực tiếp cho bạn hoặc mở một ticket support trên hệ thống của chúng tôi.&#x20;
 
 </details>

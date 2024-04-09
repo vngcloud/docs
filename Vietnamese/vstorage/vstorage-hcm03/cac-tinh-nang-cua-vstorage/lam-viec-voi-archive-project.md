@@ -21,7 +21,7 @@ Với Archive class, tỉ lệ SLA vẫn luôn đảm bảo đạt mức 99.99% 
 * Trong **24 tiếng** đầu tiên kể từ thời điểm bạn tải lên một tệp tin vào **Archive class**, nếu tệp tin đã tải lên của bạn chưa chính xác thì bạn có thể thực hiện xóa chúng. Sau 24 tiếng này, dữ liệu sẽ không được xóa cho đến khi đủ thời gian quy định ít nhất là 6 tháng theo quy định bên dưới.
 * Dữ liệu khi upload lên archive class này sẽ không được xóa cho đến khi đạt đủ thời gian tồn tại ít nhất là **6 tháng**. Chúng tôi vẫn sẽ cho phép bạn thực hiện các hành động khác trên dữ liệu này bao gồm: sao chép, di chuyển, thay đổi tên, chia sẻ, thiết lập tag, thiết lập metadata, tải lên tệp tin thay thế).
 * Archive class cung cấp và hỗ trợ đầy đủ các công cụ để sử dụng bao gồm: **vStorage Portal, vStorage API, 3rd party software**. Tuy nhiên việc xóa dữ liệu chỉ có thể thực hiện thông qua **vStorage Portal**.
-* Với nhu cầu khôi phục dữ liệu: tệp tin sẽ sẵn sàng để download trong vòng **1-12 tiếng**. Chi phí cho các thao tác được quy định rõ ràng khi bạn thực hiện mua tài nguyên, chi tiết xem tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).
+* Với nhu cầu khôi phục dữ liệu: tệp tin sẽ sẵn sàng để download trong vòng **1-12 tiếng**. Chi phí cho các thao tác được quy định rõ ràng khi bạn thực hiện mua tài nguyên, chi tiết xem tại [Cách tính phí](../cach-tinh-phi/).
 
 #### Tips khi sử dụng <a href="#lamviecvoiarchiveproject-tipskhisudung" id="lamviecvoiarchiveproject-tipskhisudung"></a>
 

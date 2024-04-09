@@ -10,7 +10,7 @@ Sau khi chúng tôi xác nhận tài khoản của bạn đã được bật tri
 
 2\. Chọn **region** bạn muốn lưu trữ dữ liệu.
 
-Chọn một region gần bạn để giảm thiểu độ trễ và chi phí cũng như giải quyết các yêu cầu về quy định. Các object được lưu trữ trong một region sẽ không bao giờ rời khỏi region đó trừ khi bạn chuyển chúng sang một region khác. Để biết danh sách các region của vStorage, hãy xem [Hạn mức tài nguyên](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648640).
+Chọn một region gần bạn để giảm thiểu độ trễ và chi phí cũng như giải quyết các yêu cầu về quy định. Các object được lưu trữ trong một region sẽ không bao giờ rời khỏi region đó trừ khi bạn chuyển chúng sang một region khác. Để biết danh sách các region của vStorage, hãy xem [Hạn mức tài nguyên](../han-muc-tai-nguyen.md).
 
 3\. Chọn **Tạo một project.**
 
@@ -18,11 +18,11 @@ Màn hình **Tạo mới project** được hiển thị.
 
 4\. Trong **Tên project**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho project của bạn.&#x20;
 
-Sau khi tạo project, bạn không thể thay đổi tên của project. Để biết thêm thông tin về cách đặt tên project, hãy xem [Phạm vi giới hạn project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648648).
+Sau khi tạo project, bạn không thể thay đổi tên của project. Để biết thêm thông tin về cách đặt tên project, hãy xem [Phạm vi giới hạn project](lam-viec-voi-project/pham-vi-gioi-han-project.md).
 
 5\. Chọn **Project type (gói lưu trữ)** theo nhu cầu của bạn.
 
-Chúng tôi cung cấp cho bạn 3 gói lưu trữ Gold, Silver, Archive phù hợp với các nhu cầu lưu trữ dữ liệu khác nhau của bạn. Để biết thêm thông tin về các gói lưu trữ chúng tôi đang cung cấp, hãy xem [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).
+Chúng tôi cung cấp cho bạn 3 gói lưu trữ Gold, Silver, Archive phù hợp với các nhu cầu lưu trữ dữ liệu khác nhau của bạn. Để biết thêm thông tin về các gói lưu trữ chúng tôi đang cung cấp, hãy xem [Cách tính phí](../cach-tinh-phi/).
 
 6\. Chọn **Quota** lưu trữ theo nhu cầu của bạn.
 
@@ -50,7 +50,7 @@ Sau 7 ngày sử dụng trial project, nếu bạn không thực hiện chuyển
 
 6\. Chọn **Tiếp tục thanh toán** và thực hiện thanh toán sau khi chọn phương thức thanh toán phù hợp.
 
-Để biết danh sách các loại hình thức thanh toán của vStorage, hãy xem [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).&#x20;
+Để biết danh sách các loại hình thức thanh toán của vStorage, hãy xem [Cách tính phí](../cach-tinh-phi/).&#x20;
 
 Sau khi bạn thực hiện thành công 6 bước trên, trial project của bạn sẽ được chuyển thành project thông thường và thông tin này sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
 {% endtab %}
