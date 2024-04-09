@@ -14,7 +14,7 @@ Welcome to VNG Cloud's user guide page. Here you can easily find useful informat
 
 * [vServer HCM03-1A](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647923)
 
-[vStorage - Mul-ti tier cloud storage solution](vstorage.md)
+[vStorage - Mul-ti tier cloud storage solution](vstorage/)
 
 * vStorage (Object Storage, Giao diện mới)
 * [vStorage ](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648395)(Object Storage, Giao diện cũ)
