@@ -12,6 +12,6 @@ Rclone có những lệnh đám mây mạnh mẽ tương đương các lệnh un
 
 #### Chủ đề <a href="#rclone-chude" id="rclone-chude"></a>
 
-* [Tích hợp công cụ Rclone với vStorage](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805507)
-* [Sử dụng công cụ Rclone](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803924)
+* Tích hợp công cụ Rclone với vStorage
+* Sử dụng công cụ Rclone
 
