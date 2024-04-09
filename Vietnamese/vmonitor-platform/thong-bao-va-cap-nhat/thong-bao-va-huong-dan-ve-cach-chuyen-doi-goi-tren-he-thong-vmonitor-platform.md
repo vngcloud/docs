@@ -12,14 +12,14 @@ Từ ngày **29/02/2024**, hệ thống vMonitor Platform sẽ thay đổi cách
 Sẽ có vài lưu ý khi thực hiện chuyển gói trên hệ thống vMonitor Platform mà bạn cần biết, bao gồm:&#x20;
 
 * Các **tier** hiện tại sẽ được chúng tôi chuyển đổi thành các **class**. Cụ thể:
-  * Free tier được chúng tôi chuyển đổi thành Class Basic. Tham khảo thông tin chi tiết cho các class tại [Metric Quota Class](https://docs.vngcloud.vn/display/VPV/Metric+Quota+Class), [Log Project Class](https://docs.vngcloud.vn/display/VPV/Log+Project+Class) và [Synthetic Test Quota Class](https://docs.vngcloud.vn/display/VPV/Synthetic+Test+Quota+Class)
-  * Small/ Medium/ Large,... tier được chúng tôi chuyển đổi thành Class Pro. Tham khảo thông tin chi tiết cho các class tại [Metric Quota Class](https://docs.vngcloud.vn/display/VPV/Metric+Quota+Class), [Log Project Class](https://docs.vngcloud.vn/display/VPV/Log+Project+Class) và [Synthetic Test Quota Class](https://docs.vngcloud.vn/display/VPV/Synthetic+Test+Quota+Class)
+  * Free tier được chúng tôi chuyển đổi thành Class Basic. Tham khảo thông tin chi tiết cho các class tại [Metric Quota Class](../vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/metric-quota-class.md), [Log Project Class](../vmonitor-platform-la-gi/vmonitor-platform-log-la-gi/log-project-class.md) và [Synthetic Test Quota Class](../vmonitor-platform-la-gi/vmonitor-platform-synthetic-la-gi/synthetic-test-quota-class.md)
+  * Small/ Medium/ Large,... tier được chúng tôi chuyển đổi thành Class Pro. Tham khảo thông tin chi tiết cho các class tại [Metric Quota Class](../vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/metric-quota-class.md), [Log Project Class](../vmonitor-platform-la-gi/vmonitor-platform-log-la-gi/log-project-class.md) và [Synthetic Test Quota Class](../vmonitor-platform-la-gi/vmonitor-platform-synthetic-la-gi/synthetic-test-quota-class.md)
 * Với các class **Basic, Pro** mới, chúng tôi sẽ không giới hạn số lượng **alarm** bạn có thể tạo.&#x20;
 * Việc chuyển đổi gói sang dạng mới sẽ hoàn toàn **miễn phí** và **không ảnh hưởng** đến:
   * **Chi phí**: Giá cước của bạn sẽ **giữ nguyên** sau khi chuyển đổi.
   * **Chức năng**: Bạn vẫn sẽ **giữ nguyên** tất cả các chức năng của gói cước hiện tại.
   * **Downtime**: Hệ thống sẽ **không bị gián đoạn** trong quá trình chuyển đổi.
-* Đối với khách hàng cũ, lượng **Email/ SMS** sẽ được chúng tôi tự động thêm vào **free notification quota** tương ứng cho bạn. Bên cạnh đó, chúng tôi cũng có cung cấp các gói SMS/ Email miễn phí, bạn có thể thực hiện mua và sử dụng chúng theo hướng dẫn tại [Làm việc với SMS Notification Quota](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650564) và [Làm việc với Email Notification Quota](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650566).
+* Đối với khách hàng cũ, lượng **Email/ SMS** sẽ được chúng tôi tự động thêm vào **free notification quota** tương ứng cho bạn. Bên cạnh đó, chúng tôi cũng có cung cấp các gói SMS/ Email miễn phí, bạn có thể thực hiện mua và sử dụng chúng theo hướng dẫn tại [Làm việc với SMS Notification Quota](../cach-tinh-nang-cua-vmonitor-platform/notification/lam-viec-voi-sms-notification-quota.md) và [Làm việc với Email Notification Quota](../cach-tinh-nang-cua-vmonitor-platform/notification/lam-viec-voi-email-notification-quota.md).
 {% endhint %}
 
 ***
