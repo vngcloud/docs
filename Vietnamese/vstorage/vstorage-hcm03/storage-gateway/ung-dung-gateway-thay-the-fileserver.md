@@ -42,6 +42,6 @@ Các dữ liệu của bạn sẽ được mã hóa AES-256 và lưu chủ yếu
 * Gateway trên cloud chỉ nên phục vụ nhu cầu CCU <20.&#x20;
 * Ngoài ra bạn có thể tăng trải nghiệm người dùng bằng cách thiết lập thêm SSD để gateway có thể cache nhiều hơn.&#x20;
 
-Để khởi tạo gateway và dùng thử gateway bạn có thể xem chi tiết tại đây: [Storage gateway](https://docs.vngcloud.vn/display/VV/Storage+gateway).
+Để khởi tạo gateway và dùng thử gateway bạn có thể xem chi tiết tại đây: [Storage gateway](./).
 
 \

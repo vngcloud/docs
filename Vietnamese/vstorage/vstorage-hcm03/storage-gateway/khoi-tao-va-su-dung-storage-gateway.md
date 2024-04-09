@@ -66,8 +66,6 @@ Dùng S3:&#x20;
 
 \+ Secret key: lấy trên portal&#x20;
 
-[Hướng dẫn tạo s3 key](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2721352)
-
 &#x20;**2.2 Tạo file share**
 
 Chọn **file share** rồi chọn **create file share**
