@@ -23,8 +23,8 @@ VNG Cloud luôn nỗ lực để nâng cao các biện pháp bảo mật của m
 
 #### Chủ đề <a href="#baomat-security-chude" id="baomat-security-chude"></a>
 
-* [Bảo mật quyền hạn truy cập](https://docs.vngcloud.vn/pages/viewpage.action?pageId=67993685\&src=contextnavpagetreemode)
-* [Bảo mật dữ liệu trên đường truyền](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805456\&src=contextnavpagetreemode)
-* [Bảo mật dữ liệu lưu trữ trên vStorage](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805459\&src=contextnavpagetreemode)
+* Bảo mật quyền hạn truy cập
+* Bảo mật dữ liệu trên đường truyền
+* Bảo mật dữ liệu lưu trữ trên vStorage
 
 \
