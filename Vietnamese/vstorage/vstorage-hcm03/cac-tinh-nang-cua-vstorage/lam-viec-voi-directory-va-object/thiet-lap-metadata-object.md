@@ -27,7 +27,7 @@ Sau khi thực hiện 5 bước trên bên, metadata đã được thiết lập
 
 Hiện tại chúng tôi đang hỗ trợ 8 loại key metadata mặc định bao gồm: X-Robots-Tag, Cache-Control, X-Delete-At, Content-Disposition, Content-Encoding, Expires, Content-Language, Content-Type.
 
-Chúng tôi có giới hạn tổng số ký tự tối đa tất cả metadata của một object không được vượt quá (xem [phần phạm vi và giới hạn object](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648698)) nên chúng tôi khuyến khích bạn cân nhắc kỹ việc lựa chọn metadata nào được thiết lập cho một object cũng như tổng số metadata có thể được thiết lập cho object đó.
+Chúng tôi có giới hạn tổng số ký tự tối đa tất cả metadata của một object không được vượt quá (xem [phạm vi và giới hạn object](pham-vi-gioi-han-object.md)) nên chúng tôi khuyến khích bạn cân nhắc kỹ việc lựa chọn metadata nào được thiết lập cho một object cũng như tổng số metadata có thể được thiết lập cho object đó.
 
 <figure><img src="../../../../.gitbook/assets/Thiet_lap_metadata.gif" alt=""><figcaption></figcaption></figure>
 {% endtab %}
@@ -35,12 +35,12 @@ Chúng tôi có giới hạn tổng số ký tự tối đa tất cả metadata 
 {% tab title="Sử dụng vStorage API" %}
 Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung cấp API cho phép bạn tích hợp với các ứng dụng, công cụ phía người dùng của bạn với vStorage để lưu trữ dữ liệu.
 
-Để thiết lập metadata cho object qua vStorage API, hãy xem [API Developers](https://docs.vngcloud.vn/display/VV/API+Developers).
+Để thiết lập metadata cho object qua vStorage API, hãy xem [API Developers](../../api-developers/).
 {% endtab %}
 
 {% tab title="Sử dụng 3rd party softwares" %}
-vStorage cũng tương thích với các công cụ phía người dùng sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](https://docs.vngcloud.vn/display/VV/3rd+party+softwares) và học cách tích hợp, sử dụng các công cụ này.&#x20;
+vStorage cũng tương thích với các công cụ phía người dùng sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.&#x20;
 
-Để thiết lập metadata cho object qua 3rd party software, hãy xem [3rd party softwares](https://docs.vngcloud.vn/display/VV/3rd+party+softwares).
+Để thiết lập metadata cho object qua 3rd party software, hãy xem [3rd party softwares](../../3rd-party-softwares/).
 {% endtab %}
 {% endtabs %}

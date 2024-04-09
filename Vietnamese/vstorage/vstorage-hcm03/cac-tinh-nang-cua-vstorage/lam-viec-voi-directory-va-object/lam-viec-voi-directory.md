@@ -30,14 +30,14 @@ Sau khi bạn hoàn thành 5 bước được mô tả bên trên, directory đ�
 
 Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung cấp API cho phép bạn tích hợp với các ứng dụng, công cụ phía bạn của bạn với vStorage để lưu trữ dữ liệu.
 
-Để tạo mới một directory qua vStorage API, hãy xem [API Developers](https://docs.vngcloud.vn/display/VV/API+Developers).
+Để tạo mới một directory qua vStorage API, hãy xem [API Developers](../../api-developers/).
 
 \
 3\.  **Sử dụng 3rd party softwares**
 
-vStorage cũng tương thích với các công cụ phía bạn sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](https://docs.vngcloud.vn/display/VV/3rd+party+softwares) và học cách tích hợp, sử dụng các công cụ này.&#x20;
+vStorage cũng tương thích với các công cụ phía bạn sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.&#x20;
 
-Để tạo mới một directory qua 3rd party software, hãy xem [3rd party softwares](https://docs.vngcloud.vn/display/VV/3rd+party+softwares).
+Để tạo mới một directory qua 3rd party software, hãy xem [3rd party softwares](../../3rd-party-softwares/).
 {% endtab %}
 
 {% tab title="Chia sẻ directory" %}
@@ -81,13 +81,13 @@ Khi bạn dán đường dẫn và chọn mở đường dẫn:
 
 Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung cấp API cho phép bạn tích hợp với các ứng dụng, công cụ phía bạn của bạn với vStorage để lưu trữ dữ liệu.
 
-Để lấy đường dẫn TempURL nhằm chia sẻ directory qua vStorage API, hãy xem [API Developers](https://docs.vngcloud.vn/display/VV/API+Developers).
+Để lấy đường dẫn TempURL nhằm chia sẻ directory qua vStorage API, hãy xem [API Developers](../../api-developers/).
 
 3. **Sử dụng 3rd party softwares**
 
-vStorage cũng tương thích với các công cụ phía bạn sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](https://docs.vngcloud.vn/display/VV/3rd+party+softwares) và học cách tích hợp, sử dụng các công cụ này.&#x20;
+vStorage cũng tương thích với các công cụ phía bạn sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.&#x20;
 
-Để lấy đường dẫn TempURL nhằm chia sẻ directory qua 3rd party software, hãy xem [3rd party softwares](https://docs.vngcloud.vn/display/VV/3rd+party+softwares).
+Để lấy đường dẫn TempURL nhằm chia sẻ directory qua 3rd party software, hãy xem [3rd party softwares](../../3rd-party-softwares/).
 
 
 {% endtab %}

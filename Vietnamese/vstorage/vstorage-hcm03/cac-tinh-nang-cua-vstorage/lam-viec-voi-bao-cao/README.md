@@ -15,8 +15,8 @@ vStorage cung cấp cho bạn các báo cáo thống kê lưu trữ và họa đ
 
 #### Chủ đề <a href="#lamviecvoibaocao-chude" id="lamviecvoibaocao-chude"></a>
 
-* [Xem báo cáo tóm tắt trên toàn bộ các region](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648621)
-* [Xem báo cáo tóm tắt trên một region cụ thể](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648617)
-* [Xem báo cáo tóm tắt trên một project cụ thể](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648619)
+* Xem báo cáo tóm tắt trên toàn bộ các region
+* Xem báo cáo tóm tắt trên một region cụ thể
+* Xem báo cáo tóm tắt trên một project cụ thể
 
 \
