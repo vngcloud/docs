@@ -27,4 +27,4 @@ Khi các Resource trên VNG Cloud được tạo, mặc định sẽ có 2 loạ
 | <p><strong>Basic monitoring</strong></p><p>(Mặc định)</p>    | <ul><li>Ở chế độ này, sẽ có một số lượng metric mặc định được đẩy về và lưu trữ trên hệ thống vMonitor Platform. Chi tiết tham khảo bảng thông số chi tiết bên dưới.</li><li>Dữ liệu có sẵn tự động trong khoảng thời gian 1 phút.</li></ul>      |
 | <p><strong>Detailed monitoring</strong></p><p>(Nâng cao)</p> | <ul><li>Ở chế độ này, tất cả các metric đang có trên Resource được đẩy về và lưu trữ trên hệ thống vMonitor Platform. Chi tiết tham khảo bảng thông số chi tiết bên dưới.</li><li>Dữ liệu có sẵn tự động trong khoảng thời gian 1 phút.</li></ul> |
 
-Để biết mỗi loại monitoring bạn có thể làm những gì, vui lòng tham khảo tại [Danh sách Metrics hỗ trợ](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59807097).
+Để biết mỗi loại monitoring bạn có thể làm những gì, vui lòng tham khảo tại [Danh sách Metrics hỗ trợ](danh-sach-metrics-cua-host.md).

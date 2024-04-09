@@ -9,5 +9,5 @@ Hiện tại chúng tôi đang cung cấp một số tính năng giúp bạn b�
 
 VNG Cloud luôn nỗ lực để nâng cao các biện pháp bảo mật của mình để đảm bảo an toàn cho dữ liệu của khách hàng.
 
-* [Bảo mật quyền hạn truy cập](https://docs.vngcloud.vn/pages/viewpage.action?pageId=67993856\&src=contextnavpagetreemode)
-* [Bảo mật dữ liệu trên đường truyền](https://docs.vngcloud.vn/pages/viewpage.action?pageId=67993858\&src=contextnavpagetreemode)
+* [Bảo mật quyền hạn truy cập](../../vstorage/vstorage-hcm03/bao-mat-security/bao-mat-quyen-han-truy-cap.md)
+* [Bảo mật dữ liệu trên đường truyền](bao-mat-du-lieu-tren-duong-truyen.md)

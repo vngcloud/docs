@@ -38,13 +38,13 @@ Các quy tắc sau áp dụng cho việc đặt tên metric trong vStorage:
 4. Nhập **Metric name**. Tên metric phải tuân thủ theo quy định của chúng tôi, chi tiết được mô tả bên trên.
 5. Tạo **Query Definition** bằng cách:&#x20;
    * Tìm kiếm và chọn một **Log** **Project** bạn muốn thực hiện chuyển đổi log qua metric. Màn hình sẽ hiển thị các log ở **Log project** trong vòng 15 phút để bạn xem trước.
-   * Tạo **Log Filter** tìm kiếm log, chọn phép toán (**Operator**), chọn điều kiện nhóm dữ liệu (**Group by**), chi tiết tham khảo tại [Search logs](https://docs.vngcloud.vn/display/VPV/Search+logs).
+   * Tạo **Log Filter** tìm kiếm log, chọn phép toán (**Operator**), chọn điều kiện nhóm dữ liệu (**Group by**), chi tiết tham khảo tại [Search logs](lam-viec-voi-log-search/search-logs.md).
 6. Chọn **Advanced query** nếu bạn mong muốn thiết lập nâng cao cho metric bao gồm: **Event timestamp field, Event timestamp format, Default metric value** trong đó:&#x20;
    * Chọn **Event timestamp field**: field này dùng để đọc thời điểm **event** xảy ra, nếu bạn không chọn thì chúng tôi sẽ lấy thời điểm **processing time**.
    * Chọn **Event timestamp format**: nếu bạn đã chọn **Event timestamp field** trước đó thì field này dùng để định dạng thời gian tương ứng của **Event timestamp field**. Nếu bạn chọn **Event timestamp format** không đúng với loại dữ liệu của **Event timestamp field** thì kết quả **metric** có thể sẽ không đúng.
    * Nhập **Default metric value**: nhập giá trị mặc định của **metric** nếu không có dữ liệu tính toán dựa trên các điều kiện đã nhập phía trên. Bạn có thể nhập số thực từ 0 tới 100.000.000.000.000.
 
-6\. Chọn **Tạo mới**. **Metric** được tạo ra với metric name và **log** dựa trên điều kiện tạo mới mà bạn đã chọn/ nhập. Khi trạng thái của log2metric là **ACTIVE**, lúc này bạn có thể tiếp tục sử dụng **metric** tạo ra này tại [Dashboard](https://docs.vngcloud.vn/display/VPV/Dashboard) và [Metric Alarm](https://docs.vngcloud.vn/display/VPV/Metric+Alarm).
+6\. Chọn **Tạo mới**. **Metric** được tạo ra với metric name và **log** dựa trên điều kiện tạo mới mà bạn đã chọn/ nhập. Khi trạng thái của log2metric là **ACTIVE**, lúc này bạn có thể tiếp tục sử dụng **metric** tạo ra này tại [Dashboard](../dashboard/) và [Metric Alarm](../alarm/metric-alarm.md).
 
 Các **điểm dữ liệu** cho Log2metric vừa tạo được định kỳ tạo ra trong khoảng thời gian 60s**.** Bạn có thể tạo nhiều **metric** cho một **log project** với các **metric name** khác nhau. Trong lần đầu tiên khởi tạo metric từ log, tiến trình khởi tạo có thể sẽ mất một chút thời gian do chúng tôi cần thiết lập nhiều cấu hình cần thiết. Đừng lo lắng vì từ các lần khởi tạo metric tiếp theo, tiến trình này sẽ nhanh hơn rất nhiều.
 

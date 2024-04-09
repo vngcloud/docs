@@ -11,7 +11,7 @@
 
 Để có thể xem Logs của vStorage Project bạn cần nhấn **enable** tại cột **Detailed Monitoring**, hệ thống sẽ hiển thị Popup và bạn cần **chọn Log Project** để chứa logs của vStorage Project này, sau đó nhấn "**enable**". Nếu bạn chưa có bất kì Log Project nào, bạn có thể nhấn "Create a log project" ở popup hoặc qua tab Quota & Usage để tạo Log Project trước.
 
-![](https://docs.vngcloud.vn/download/attachments/59803634/image2023-8-16\_15-20-33.png?version=1\&modificationDate=1692174033000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/59803634/image2023-8-16_15-20-33.png?version=1&#x26;modificationDate=1692174033000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 Sau khi enable bạn sẽ thấy status của vStorage Project này chuyển thành **ACTIVE**, và bạn có thể truy cập vào Log Project vừa chọn để xem logs
 

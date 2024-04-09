@@ -2,8 +2,6 @@
 
 Để đẩy Metric về vMonitor, bạn cần cài đặt Metric Agent trên server, vMonitor sử dụng Telegraf Agent để đẩy metric về hệ thống, hiện tại Telegraf Agent hỗ trợ Service Account của IAM để xác thực và phân quyền, bạn thực hiện các bước bên dưới để thiết lập Telegraf Agent đẩy metrics về vMonitor
 
-Lưu ý bạn cần có Quota Metric, nếu chưa có bạn cần thực hiện mua Quota Metric tại [đây](https://docs.vngcloud.vn/pages/viewpage.action?pageId=31555658).
-
 ### **Telegraf Agent với Service Account** <a href="#windowos-telegrafagentvoiserviceaccount" id="windowos-telegrafagentvoiserviceaccount"></a>
 
 1. **Tạo Service Account và gắn policy: vMonitorMetricPush để có đủ quyền đẩy Metric về vMonitor**
@@ -27,59 +25,38 @@ Lưu ý bạn cần có Quota Metric, nếu chưa có bạn cần thực hiện 
 
 * Sau đó chọn **Run anyway**, để bắt đầu cài agent
 
-\
-
-
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59803970/worddav468312982544d0b0ef8edc2cd437560c.png?version=1&#x26;modificationDate=1691481027000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 * Chọn **Next** để tiếp tục
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59803970/image2023-6-27_16-32-56.png?version=1&#x26;modificationDate=1691481027000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-\
-\
-
-
 * Nhập 2 thông tin **Client\_ID** và **Secret\_Key** đã sao chép ở trên vào 2 trường: **IAM\_CLIENT\_ID** và **IAM\_CLIENT\_SECRET**:&#x20;
-
-\
-
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59803970/image2023-6-27_16-33-25.png?version=1&#x26;modificationDate=1691481027000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 * Để mặc định, chọn Next để tiếp tục, hoặc nếu bạn muốn thay đổi thư mục cài đặt thì thực hiện thay đổi
 
-\
-\
 
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59803970/image2023-6-27_16-34-49.png?version=1&#x26;modificationDate=1691481027000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-* Chọn **Accept the license,** sau đó chọn **Next** để tiếp tục
-
-\
+* Chọn **Accept the license,** sau đó chọn **Next** để tiếp tục\
 
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59803970/image2023-6-27_16-35-6.png?version=1&#x26;modificationDate=1691481027000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 * Để mặc định, chọn **Next** để tiếp tục, hoặc bạn có thể tùy chỉnh shortcut menu name cho agent
 
-\
 
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59803970/image2023-6-27_16-35-30.png?version=1&#x26;modificationDate=1691481027000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 * Chọn **Install** để thực hiện cài đặt
 
-\
-
-
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59803970/image2023-6-27_16-36-10.png?version=1&#x26;modificationDate=1691481027000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 * Chọn **Yes** để thực hiện grant quyền cho agent hoạt động
-
-\
-
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59803970/worddav0578afc8e639abf0bcb73033219454af.png?version=1&#x26;modificationDate=1691481027000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 

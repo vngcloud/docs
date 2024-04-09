@@ -17,8 +17,10 @@ Nếu bạn có nhu cầu lưu trữ dữ liệu log lâu dài hơn những th�
 
 8\. Chọn **Destination**. Bạn có thể chọn 1 trong 2 nơi dữ liệu log được archive bao gồm: **vStorage container** hoặc **S3 compatible**.&#x20;
 
-![](http://docs.vngcloud.vn/download/attachments/49650638/image2023-4-27\_9-55-51.png?version=1\&modificationDate=1682564151000\&api=v2)\
+\
 
+
+<figure><img src="http://docs.vngcloud.vn/download/attachments/49650638/image2023-4-27_9-55-51.png?version=1&#x26;modificationDate=1682564151000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 * **Select a vStorage container**
   * **My container**
@@ -31,7 +33,7 @@ Nếu bạn có nhu cầu lưu trữ dữ liệu log lâu dài hơn những th�
 
 12\. Chọn một **vStorage container** trong danh sách các container mà bạn đang có tại **project** đã chọn trước đó trên hệ thống vStorage. Nếu cần cập nhập danh sách vStorage container hiện tại, hãy chọn ![](http://docs.vngcloud.vn/download/thumbnails/49650638/image2023-4-27\_13-55-2.png?version=1\&modificationDate=1682578502000\&api=v2) để cập nhập mới nhất.
 
-13\. Nhập **Access key** và **Secret key** để xác thực thông tin kết nối tới hệ thống vStorage. Bạn có thể tìm thấy **Access key** và **Secret key** theo hướng dẫn tại [Service Account](http://docs.vngcloud.vn/display/ONVINA/Service+Account) và [Truy cập tài nguyên sử dụng tài khoản Service Account](http://docs.vngcloud.vn/pages/viewpage.action?pageId=49648950).
+13\. Nhập **Access key** và **Secret key** để xác thực thông tin kết nối tới hệ thống vStorage. Bạn có thể tìm thấy **Access key** và **Secret key** theo hướng dẫn tại [Service Account](../../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/) và [Truy cập tài nguyên sử dụng tài khoản Service Account](../../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-truy-cap-tai-nguyen-vstorage/truy-cap-tai-nguyen-su-dung-tai-khoan-service-account.md).
 
 14\. Chọn **Select**.
 
@@ -46,7 +48,7 @@ Nếu bạn có nhu cầu lưu trữ dữ liệu log lâu dài hơn những th�
 
 10\. Nhập tên một **vStorage container** mà bạn muốn thực hiện archive qua.
 
-11\. Nhập **Access key** và **Secret key** để xác thực thông tin kết nối tới hệ thống vStorage. Bạn có thể tìm thấy **Access key** và **Secret key** theo hướng dẫn tại [Service Account](http://docs.vngcloud.vn/display/ONVINA/Service+Account) và [Truy cập tài nguyên sử dụng tài khoản Service Account](http://docs.vngcloud.vn/pages/viewpage.action?pageId=49648950).
+11\. Nhập **Access key** và **Secret key** để xác thực thông tin kết nối tới hệ thống vStorage. Bạn có thể tìm thấy **Access key** và **Secret key** theo hướng dẫn tại [Service Account](../../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/huy-tai-khoan-service-account.md) và [Truy cập tài nguyên sử dụng tài khoản Service Account](../../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-truy-cap-tai-nguyen-vstorage/truy-cap-tai-nguyen-su-dung-tai-khoan-service-account.md).
 
 12\. Chọn **Select**.
 

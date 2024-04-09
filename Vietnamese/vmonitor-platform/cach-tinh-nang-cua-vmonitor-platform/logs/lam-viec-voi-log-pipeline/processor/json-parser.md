@@ -10,7 +10,7 @@ Grok parser là một bộ lọc (filter) giúp phân tích và cấu trúc hóa
 
 Để tạo cấu hình Grok parser, hãy làm theo hướng dẫn bên dưới:&#x20;
 
-1. Tại mục **Processor information**, nhập các thông tin chung cho một processor theo hướng dẫn tại [Processor](http://docs.vngcloud.vn/display/VPV/Processor). Trong nội dung này thì bạn sẽ chọn **Processor type** là **JSON Parser**.
+1. Tại mục **Processor information**, nhập các thông tin chung cho một processor theo hướng dẫn tại [Processor](./). Trong nội dung này thì bạn sẽ chọn **Processor type** là **JSON Parser**.
 2. Tại mục **Parsing rule**, nhập các thông tin sau đây:
 
 2.1 Nhập **Source field**: field chứa logs sẽ cần parse.
@@ -28,11 +28,9 @@ Ví dụ:&#x20;
 \"request_id\":\"1234567890\",\"user_id\":\"vngcloud1\"}
 </code></pre> | <p>{<br>     "timestamp": "2023-07-23T12:34:56Z",<br>     "level": "error",<br>      "message": "There was an error processing the request",<br>      "request_id": "1234567890",<br>      "user_id": "vngcloud1"<br>}</p> |
 
-\
 
 
-![](http://docs.vngcloud.vn/download/attachments/59802006/image2023-8-2\_14-50-36.png?version=1\&modificationDate=1690962638000\&api=v2)\
-
+<figure><img src="http://docs.vngcloud.vn/download/attachments/59802006/image2023-8-2_14-50-36.png?version=1&#x26;modificationDate=1690962638000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 ***
 

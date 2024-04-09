@@ -15,7 +15,7 @@ Infrastructure Host là nơi sẽ liệt kê tất cả Resource mà vMonitor Pl
 
 Với các tài nguyên trên hệ thống đã tự động tạo các default dashboard giúp bạn theo dõi dễ dàng hơn, ngoài ra bạn có thể tự tạo dashboard để vẽ các metric theo ý muốn.
 
-* [Làm việc với vServer-Metric](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803654\&src=contextnavpagetreemode)
-* [Làm việc với vLB-Metric](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803659\&src=contextnavpagetreemode)
-* [Làm việc với vDB-Metric](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803664\&src=contextnavpagetreemode)
-* [Làm việc với vStorage-Metric](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803669\&src=contextnavpagetreemode)
+* [Làm việc với vServer-Metric](lam-viec-voi-vserver-metric.md)
+* [Làm việc với vLB-Metric](lam-viec-voi-vlb-metric.md)
+* [Làm việc với vDB-Metric](lam-viec-voi-vdb-metric.md)
+* [Làm việc với vStorage-Metric](lam-viec-voi-vstorage-metric.md)

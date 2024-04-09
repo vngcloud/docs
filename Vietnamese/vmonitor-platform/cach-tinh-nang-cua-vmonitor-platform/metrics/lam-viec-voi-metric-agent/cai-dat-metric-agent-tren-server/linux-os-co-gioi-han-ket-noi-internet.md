@@ -1,8 +1,6 @@
 # Linux OS có giới hạn kết nối Internet
 
-Hướng dẫn [Cài đặt agent tự động](http://docs.vngcloud.vn/pages/viewpage.action?pageId=49647525) yêu cầu kết nối internet HTTPS đến một vài endpoint để tải về các tài nguyên cần thiết cho việc cài đặt, do đó việc cài đặt có thể không thành công tại server bị giới hạn kết nối internet.
-
-Lưu ý bạn cần có Quota Metric, nếu chưa có bạn cần thực hiện mua Quota Metric tại [đây](https://docs.vngcloud.vn/pages/viewpage.action?pageId=31555658).
+Hướng dẫn [Cài đặt agent tự động](./) yêu cầu kết nối internet HTTPS đến một vài endpoint để tải về các tài nguyên cần thiết cho việc cài đặt, do đó việc cài đặt có thể không thành công tại server bị giới hạn kết nối internet.
 
 ### **Trường hợp server bị giới hạn kết nối ra ngoài internet**
 
@@ -82,7 +80,3 @@ sudo dpkg -i /&#x3C;path_to_file>/telegraf_nightly_amd64.deb
 </code></pre> |
 | ------------------------------------------------------ |
 
-\
-
-
-\

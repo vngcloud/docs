@@ -10,7 +10,7 @@ CSV parser là một bộ lọc (filter) giúp đọc và phân tích dữ liệ
 
 Để tạo cấu hình CSV parser, hãy làm theo hướng dẫn bên dưới:&#x20;
 
-1. Tại mục **Processor information**, nhập các thông tin chung cho một processor theo hướng dẫn tại [Processor](https://docs.vngcloud.vn/display/VPV/Processor). Trong nội dung này thì bạn sẽ chọn **Processor type** là **CSV Parser**.
+1. Tại mục **Processor information**, nhập các thông tin chung cho một processor theo hướng dẫn tại [Processor](./). Trong nội dung này thì bạn sẽ chọn **Processor type** là **CSV Parser**.
 2. Tại mục **Parsing rule**, nhập các thông tin sau đây:
 
 2.1 Nhập **Source field**: field chứa logs sẽ cần parse. Filed logs này cần có định dạng logs là CSV.
@@ -30,8 +30,10 @@ Ví dụ:&#x20;
 </code></pre> | time,action,ip\_address,message | ,         | <p>{<br>     "time": "2020-09-01 10:35:25",<br>     "action": "RESTART",<br>      "ip_address": "192.168.1.3",<br>      "message": "System restarts"<br>}</p> |
 
 \
-![](http://docs.vngcloud.vn/download/attachments/59802002/image2023-8-2\_10-38-5.png?version=1\&modificationDate=1690947486000\&api=v2)\
+\
 
+
+<figure><img src="http://docs.vngcloud.vn/download/attachments/59802002/image2023-8-2_10-38-5.png?version=1&#x26;modificationDate=1690947486000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 ***
 

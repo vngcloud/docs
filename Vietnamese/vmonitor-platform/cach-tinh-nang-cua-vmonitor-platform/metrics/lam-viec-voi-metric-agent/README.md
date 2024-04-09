@@ -8,9 +8,9 @@
 
 ### Cài đặt Metric Agent trên Server
 
-* [Linux OS](http://docs.vngcloud.vn/display/VPV/Linux+OS)
-* [Linux OS có giới hạn kết nối Internet](http://docs.vngcloud.vn/pages/viewpage.action?pageId=59803968)
-* [Window OS](http://docs.vngcloud.vn/display/VPV/Window+OS)
+* [Linux OS](cai-dat-metric-agent-tren-server/linux-os.md)
+* [Linux OS có giới hạn kết nối Internet](cai-dat-metric-agent-tren-server/linux-os-co-gioi-han-ket-noi-internet.md)
+* [Window OS](cai-dat-metric-agent-tren-server/window-os.md)
 
 ***
 

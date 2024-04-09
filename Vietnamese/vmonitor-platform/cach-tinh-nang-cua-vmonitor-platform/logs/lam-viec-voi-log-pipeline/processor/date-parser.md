@@ -10,7 +10,7 @@ Date Parser là một bộ lọc giúp phân tích và chuyển đổi các chu�
 
 Để cáu hình Date Parser, hãy làm theo hướng dẫn bên dưới:&#x20;
 
-1. Tại mục **Processor information**, nhập các thông tin chung cho một processor theo hướng dẫn tại [Processor](https://docs.vngcloud.vn/display/VPV/Processor). Trong nội dung này thì bạn sẽ chọn **Processor type** là **Date Parser**.
+1. Tại mục **Processor information**, nhập các thông tin chung cho một processor theo hướng dẫn tại [Processor](./). Trong nội dung này thì bạn sẽ chọn **Processor type** là **Date Parser**.
 2. Tại mục **Parsing rule**, nhập các thông tin sau đây:
 
 2.1 Nhập **Source field**: field chứa logs sẽ cần parse.
@@ -42,8 +42,10 @@ Ví dụ:&#x20;
 | **Pattern**      | yyyy-MM-dd'T'HH:mm:ss.SSSZ | Định dạng ngày tháng của field **date**.                                 |                                                                             |                                                                                      |
 
 \
-![](http://docs.vngcloud.vn/download/attachments/59802010/image2023-8-2\_14-14-38.png?version=1\&modificationDate=1690960480000\&api=v2)\
+\
 
+
+<figure><img src="http://docs.vngcloud.vn/download/attachments/59802010/image2023-8-2_14-14-38.png?version=1&#x26;modificationDate=1690960480000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 ***
 

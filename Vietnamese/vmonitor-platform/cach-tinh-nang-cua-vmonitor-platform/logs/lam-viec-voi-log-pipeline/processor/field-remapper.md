@@ -10,7 +10,7 @@ Field Remapper là một tính năng cho phép bạn thêm field, xóa field, th
 
 Để sử dụng Field Remapper, hãy làm theo hướng dẫn bên dưới:&#x20;
 
-1. Tại mục **Processor information**, nhập các thông tin chung cho một processor theo hướng dẫn tại [Processor](https://docs.vngcloud.vn/display/VPV/Processor). Trong nội dung này thì bạn sẽ chọn **Processor type** là **Field Remapper**.
+1. Tại mục **Processor information**, nhập các thông tin chung cho một processor theo hướng dẫn tại [Processor](./). Trong nội dung này thì bạn sẽ chọn **Processor type** là **Field Remapper**.
 2. Tại mục **Parsing rule**, nhập các thông tin sau đây:
 
 2.1 **Add fields**: thêm bất kì 1 cặp giá trị nào. Cặp giá trị thêm vào phải theo cấu trúc **Field**, **Value**.&#x20;
@@ -49,8 +49,10 @@ Ví dụ:&#x20;
 | **Convert type**  | <p>Field: agent.id</p><p>Type: Integer</p>          | Chuyển loại dữ liệu của field **agent.id** từ **string** thành **Interger**. |                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                 |
 
 \
-![](http://docs.vngcloud.vn/download/attachments/59802008/image2023-8-2\_13-31-7.png?version=1\&modificationDate=1690957869000\&api=v2)\
+\
 
+
+<figure><img src="http://docs.vngcloud.vn/download/attachments/59802008/image2023-8-2_13-31-7.png?version=1&#x26;modificationDate=1690957869000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 ***
 

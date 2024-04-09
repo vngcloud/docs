@@ -1,6 +1,6 @@
 # Cài đặt Log Agent trên Kubernetes
 
-Trước khi thực hiện cài đặt agent trên các hệ điều hành mà chúng tôi hỗ trợ bên dưới, bạn cần phải tải xuống certificate theo hướng dẫn tại [Khởi tạo Certificate](http://docs.vngcloud.vn/pages/viewpage.action?pageId=59803496). Thông tin hướng dẫn thiết lập agent nằm trong file readme, các script hướng dẫn cũng nằm trong tệp tin certificate được tải về. Sử dụng thông tin này với các hướng dẫn bên dưới để hoàn thành việc thiết lập Agent for Log.
+Trước khi thực hiện cài đặt agent trên các hệ điều hành mà chúng tôi hỗ trợ bên dưới, bạn cần phải tải xuống certificate theo hướng dẫn tại [Khởi tạo Certificate](khoi-tao-certificate.md). Thông tin hướng dẫn thiết lập agent nằm trong file readme, các script hướng dẫn cũng nằm trong tệp tin certificate được tải về. Sử dụng thông tin này với các hướng dẫn bên dưới để hoàn thành việc thiết lập Agent for Log.
 
 #### Cài đặt
 
@@ -514,10 +514,6 @@ spec:
       restartPolicy: Always
 </code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
-\
-
-
-\
 
 
 Trước khi thực hiện cài đặt tác nhân trên các hệ điều hành mà chúng tôi hỗ trợ bên dưới, bạn cần tải xuống chứng chỉ theo hướng dẫn tại Khởi tạo Chứng chỉ. Thông báo hướng dẫn tác nhân thiết lập nằm trong tệp readme, hướng dẫn tập lệnh cũng nằm trong tệp tin chứng chỉ được tải về. Sử dụng thông tin này với các hướng dẫn bên dưới để hoàn thành việc thiết lập Agent for Log.

@@ -12,7 +12,7 @@
   * **Monitoring Status**: trạng thái monitoring của vCDN domain. Nếu bạn chưa bật tính năng Detailed Monitoring thì trạng thái sẽ là **INACTIVE**, nếu bạn đã bật tính năng này và chọn một Log project làm nơi nhận vCDN logs thì trạng thái sẽ là **ACTIVE**, còn nếu vCDN domain đã bị xóa khỏi hệ thống vCDN thì trạng thái sẽ là **DELETED**. Sau 24h, nếu không có logs đổ về thì các vCDN domain có trạng thái monitoring là **DELETED** sẽ bị ẩn khỏi giao diện monitoring của bạn.
   * **Detailed Monitoring**: bật/ tắt (enable/ disable) tính năng theo dõi Logs của từng vCDN domain.
 
-![](https://docs.vngcloud.vn/download/attachments/69468834/image2024-1-9\_14-11-50.png?version=1\&modificationDate=1704784311000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/69468834/image2024-1-9_14-11-50.png?version=1&#x26;modificationDate=1704784311000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 \
 
@@ -25,11 +25,11 @@
 
 * Lúc này hệ thống sẽ hiển thị popup và bạn cần **chọn Log Project** để chứa logs của vCDN domain này, sau đó nhấn nút **Enable**.  Nếu bạn chưa có bất kì Log Project nào, bạn có thể nhấn nút **Create a log project** ở popup hoặc trở lại menu **Quota & Usage** để tạo **Log Project** trước.
 
-![](https://docs.vngcloud.vn/download/attachments/69468834/image2024-1-9\_13-25-20.png?version=1\&modificationDate=1704781521000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/69468834/image2024-1-9_13-25-20.png?version=1&#x26;modificationDate=1704781521000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-* Sau khi bật enable monitoring bạn sẽ thấy status của vCDN domain này chuyển thành **INACTIVE** thành **ACTIVE**, lúc này bạn có thể truy cập vào Log Project vừa chọn để xem logs. Chi tiết tham khảo thêm tại [Làm việc với Log search](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649959).
+* Sau khi bật enable monitoring bạn sẽ thấy status của vCDN domain này chuyển thành **INACTIVE** thành **ACTIVE**, lúc này bạn có thể truy cập vào Log Project vừa chọn để xem logs. Chi tiết tham khảo thêm tại [Làm việc với Log search](../lam-viec-voi-log-search/).
 
-![](https://docs.vngcloud.vn/download/attachments/69468834/image2024-1-9\_14-13-54.png?version=1\&modificationDate=1704784435000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/69468834/image2024-1-9_14-13-54.png?version=1&#x26;modificationDate=1704784435000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -37,7 +37,7 @@
 
 Nếu bạn có nhu cầu thay đổi Log Project chứa Logs, bạn có thể chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/69468834/image2024-1-9\_13-27-31.png?version=1\&modificationDate=1704781652000\&api=v2) và chọn nút **Edit Log Project**. Tại popup **Change Log project**, bạn hãy chọn Log Project mới mà bạn muốn thay đổi và bấm **Save**.
 
-![](https://docs.vngcloud.vn/download/attachments/69468834/image2024-1-9\_13-28-14.png?version=1\&modificationDate=1704781695000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/69468834/image2024-1-9_13-28-14.png?version=1&#x26;modificationDate=1704781695000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -47,7 +47,7 @@ Nếu bạn không còn nhu cầu để xem logs của 1 vCDN domain bất kỳ,
 
 * Lúc này hệ thống sẽ hiển thị popup và bạn cần chọn **Disable** để tắt tính năng đẩy logs từ **vCDN domain** đang chọn về hệ thống vMonitor Platform.
 
-![](https://docs.vngcloud.vn/download/attachments/69468834/image2024-1-9\_13-50-38.png?version=1\&modificationDate=1704783039000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/69468834/image2024-1-9_13-50-38.png?version=1&#x26;modificationDate=1704783039000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 ***
 

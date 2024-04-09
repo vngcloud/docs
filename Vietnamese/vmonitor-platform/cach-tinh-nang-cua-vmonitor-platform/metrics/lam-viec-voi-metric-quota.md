@@ -24,9 +24,6 @@ Tại một thời điểm, bạn chỉ có thể sở hữu một gói metric q
 
 Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
-\
-
-
 ***
 
 ### Xem thông tin Metric quota

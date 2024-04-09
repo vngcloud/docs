@@ -15,16 +15,16 @@ Processor: là những thư viện hỗ trợ bạn parse và enrich dữ liệu
 3. Chọn một **Log pipeline** đang tồn tại.
 4. Tại **Processor group** đang tồn tại và có cấu hình Source và Destination Log project đúng theo mong muốn parser dữ liệu của bạn, chọn **Create a processor.**
 5. Tại mục nhập **Processor information**:
-   * Nhập **Processor name**. Tên Processor phải tuân thủ theo quy định của chúng tôi, chi tiết tham khảo tại [Phạm vi giới hạn Log pipeline](https://docs.vngcloud.vn/pages/createpage.action?spaceKey=VPV\&title=Ph%E1%BA%A1m+vi+gi%E1%BB%9Bi+h%E1%BA%A1n+Log+pipeline\&linkCreation=true\&fromPageId=59801929).
+   * Nhập **Processor name**. Tên Processor phải tuân thủ theo quy định của chúng tôi, chi tiết tham khảo tại Phạm vi giới hạn Log pipeline.
    * Chọn **Processor type**. Chúng tôi cung cấp cho bạn 6 loại processor type bao gồm:&#x20;
-     * [Grok Parser](https://docs.vngcloud.vn/display/VPV/Grok+Parser?src=contextnavpagetreemode)
-     * [JSON Parser](https://docs.vngcloud.vn/display/VPV/JSON+Parser?src=contextnavpagetreemode)
-     * [CSV Parser](https://docs.vngcloud.vn/display/VPV/CSV+Parser?src=contextnavpagetreemode)
-     * [Field Remapper](https://docs.vngcloud.vn/display/VPV/Field+Remapper?src=contextnavpagetreemode)
-     * [Date Parser](https://docs.vngcloud.vn/display/VPV/Date+Parser?src=contextnavpagetreemode)
-     * [GEO IP Parser](https://docs.vngcloud.vn/display/VPV/GEO+IP+Parser?src=contextnavpagetreemode)
-     * [User-agent Parser](https://docs.vngcloud.vn/display/VPV/User-agent+Parser?src=contextnavpagetreemode)
-   * Nhập **Filter** cho log nếu có. Bạn có thể nhập điều kiện lọc cho log bằng một trong 2 cách: **Suggestion mode** hoặc **Editor mode**. Cách sử dụng 2 phương thức này và chuyển đổi qua lại giữa 2 phương thức đã được chúng tôi mô tả ở các tính năng bên trên, để biết thêm thông tin hãy xem tại [Search logs](http://docs.vngcloud.vn/display/VPV/Search+logs).
+     * [Grok Parser](grok-parser/)
+     * [JSON Parser](json-parser.md)
+     * [CSV Parser](csv-parser.md)
+     * [Field Remapper](field-remapper.md)
+     * [Date Parser](date-parser.md)
+     * [GEO IP Parser](geo-ip-parser.md)
+     * [User-agent Parser](user-agent-parser.md)
+   * Nhập **Filter** cho log nếu có. Bạn có thể nhập điều kiện lọc cho log bằng một trong 2 cách: **Suggestion mode** hoặc **Editor mode**. Cách sử dụng 2 phương thức này và chuyển đổi qua lại giữa 2 phương thức đã được chúng tôi mô tả ở các tính năng bên trên, để biết thêm thông tin hãy xem tại [Search logs](../../lam-viec-voi-log-search/search-logs.md).
 
 6\. Tại mục nhập **Parsing rule**, với mỗi Processor type mà bạn lựa chọn hãy làm theo hướng dẫn cụ thể ở mỗi trang bên dưới.
 

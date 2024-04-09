@@ -14,9 +14,8 @@ Trước khi có thể sử dụng 2 loại tài khoản **IAM user account** v�
 * Khởi tạo policy&#x20;
 * Liên kết policy vào tài khoản IAM user account/ Service Account.
 
-Chi tiết tham khảo tại: [IAM for vMonitor](https://docs.vngcloud.vn/display/ONVINA/IAM+for+vMonitor).
+Chi tiết tham khảo tại: [IAM cho vMonitor](https://app.gitbook.com/o/5XJ2I4IOE66RNLOwPBIO/s/xa9vQRxxrqoNMwTbp799/).
 
-\
 
 
 ***
@@ -61,4 +60,4 @@ Chúng tôi cung cấp cho bạn các loại tài nguyên được phép phân q
 
 Sau khi thực hiện khởi tạo tài khoản truy cập vào vMonitor Platform theo hướng dẫn bên trên. Để truy cập vào tài nguyên( Metric quota, Log project,...) của bạn, bạn có thể sử dụng các tài khoản vMonitor Platform bao gồm tài khoản người dùng Root (Root User Account), tài khoản người dùng IAM (IAM User Account) và tài khoản Service Account để truy cập tài nguyên qua các giao diện người dùng (kênh truy cập): vMonitor Platform Portal, API, 3rd party softwares.&#x20;
 
-Chi tiết tham khảo tại: [IAM for vMonitor](https://docs.vngcloud.vn/display/ONVINA/IAM+for+vMonitor).
+Chi tiết tham khảo tại: [IAM cho vMonitor](../identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vmonitor.md).

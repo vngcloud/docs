@@ -19,7 +19,7 @@ Log Pipeline là tính năng cho phép bạn thực hiện parse hay enrich dữ
 * Log Pipeline chứa chỉ 1 Processor Group với Filter là source:nginx, nghĩa là với những logs có trường source:nginx thì mới chạy qua hệ thống Processor Group để parse.
 * Processor Group chứa 3 Processor để parse log thành dữ liệu có cấu trúc và lưu vào destination log project.
 
-![image2022-12-13\_11-53-34.png](https://docs.vngcloud.vn/download/attachments/49648268/image2022-12-13\_11-53-34.png?version=1\&modificationDate=1670907215000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/49648268/image2022-12-13_11-53-34.png?version=1&#x26;modificationDate=1670907215000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 **Log Pipeline 2**: mô hình phức tạp hơn có 1 source log project nhưng dữ liệu parse ra 2 destination log project với các thông tin như bên dưới, dành cho nhu cầu là raw logs của bạn chứa nhiều loại dữ liệu logs khác nhau và bạn muốn parse và lưu trữ ở nhiều destination log project khác nhau
 
@@ -28,7 +28,7 @@ Log Pipeline là tính năng cho phép bạn thực hiện parse hay enrich dữ
 * Log Pipeline chứa 2 Processor Group với Filter là source:nginx và source:apache, tương ứng với dòng logs nào phù hợp với Filter của Group thì sẽ được parse tương ứng với Group đó
 * Processor Group: có 2 Processor Groups tương ứng để parse đúng logs về lưu trữ vào 2 destination log project khác nhau.
 
-![image2022-12-13\_11-53-53.png](https://docs.vngcloud.vn/download/attachments/49648268/image2022-12-13\_11-53-53.png?version=1\&modificationDate=1670907234000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/49648268/image2022-12-13_11-53-53.png?version=1&#x26;modificationDate=1670907234000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 ***
 

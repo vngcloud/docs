@@ -2,8 +2,6 @@
 
 Để đẩy Metric về vMonitor, bạn cần cài đặt Metric Agent trên server, vMonitor sử dụng Telegraf Agent để đẩy metric về hệ thống, hiện tại Telegraf Agent hỗ trợ Service Account của IAM để xác thực và phân quyền, bạn thực hiện các bước bên dưới để thiết lập Telegraf Agent đẩy metrics về vMonitor
 
-Lưu ý bạn cần có Quota Metric, nếu chưa có bạn cần thực hiện mua Quota Metric tại [đây](https://docs.vngcloud.vn/pages/viewpage.action?pageId=31555658).
-
 **Telegraf Agent với Service Account**
 
 1. **Tạo Service Account và gắn policy: vMonitorMetricPush để có đủ quyền đẩy Metric về vMonitor**
@@ -30,15 +28,6 @@ https://raw.githubusercontent.com/vngcloud/vmonitor-metrics-agent/main/install.s
 **3. Sau khi chạy câu lệnh và cài đặt thành công bạn sẽ thấy server ở trang Infrastructure List/Host**&#x20;
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/63767148/image2021-5-17_16-49-13.png?version=1&#x26;modificationDate=1691480997000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
-
-\
-
-
-\
-
 
 ### **Telegraf Agent với API\_KEY (deprecated**): không khuyến cáo sử dụng, sắp tới sẽ dừng hỗ trợ với phương thức này <a href="#linuxos-telegrafagentvoiapi_key-deprecated-khongkhuyencaosudung-saptoisedunghotrovoiphuongthucnay" id="linuxos-telegrafagentvoiapi_key-deprecated-khongkhuyencaosudung-saptoisedunghotrovoiphuongthucnay"></a>
 

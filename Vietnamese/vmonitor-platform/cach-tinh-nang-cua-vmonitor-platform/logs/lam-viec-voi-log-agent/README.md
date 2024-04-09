@@ -13,14 +13,11 @@ Chúng tôi sử dụng giao thức nhận log chuẩn **Kafka** đối với vM
 
 Để làm việc với Log Agent, bạn cần thực hiện theo các bước:
 
-* [Chuẩn bị kết nối đẩy log](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803494\&src=contextnavpagetreemode)
-* [Khởi tạo Certificate](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803496\&src=contextnavpagetreemode)
-* [Cài đặt Log Agent trên các hệ điều hành](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59801611\&src=contextnavpagetreemode)
-  * [CentOS](https://docs.vngcloud.vn/display/VPV/CentOS?src=contextnavpagetreemode)
-  * [Debian/ Ubuntu](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803507\&src=contextnavpagetreemode)
-  * [Windows](https://docs.vngcloud.vn/display/VPV/Windows?src=contextnavpagetreemode)
-* [Cài đặt Log Agent trên docker](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803511\&src=contextnavpagetreemode)
-* [Cài đặt Log Agent trên kubernetes](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803513\&src=contextnavpagetreemode)
+* [Chuẩn bị kết nối đẩy log](chuan-bi-ket-noi-day-log.md)
+* [Khởi tạo Certificate](../../../../vserver/vmarketplace/vmarketplace-giao-dien-cu/network-software-installation/juniper-vsrx-tren-hcm03/khoi-tao-juniper-vsrx.md)
+* [Cài đặt Log Agent trên các hệ điều hành](cai-dat-log-agent-tren-cac-he-dieu-hanh/)
+* [Cài đặt Log Agent trên docker](cai-dat-log-agent-tren-cac-he-dieu-hanh/)
+* [Cài đặt Log Agent trên kubernetes](cai-dat-log-agent-tren-kubernetes.md)
 
 ```
 ```

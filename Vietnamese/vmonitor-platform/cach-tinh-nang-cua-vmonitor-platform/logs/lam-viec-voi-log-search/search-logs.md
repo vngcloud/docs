@@ -8,7 +8,7 @@ Tại **vùng số 2 - nơi để bạn nhập thông tin tìm kiếm log**: ch�
 
 Ví dụ: để filter các bản ghi logs có phương thức HTTP là GET trong vòng 15 phút gần nhất thì bạn chọn query là http\_method.keyword = 'GET' và thiết lập time range là 15m..&#x20;
 
-![](http://docs.vngcloud.vn/download/attachments/59807124/image2023-8-2\_17-39-24.png?version=1\&modificationDate=1690972765000\&api=v2)
+<figure><img src="http://docs.vngcloud.vn/download/attachments/59807124/image2023-8-2_17-39-24.png?version=1&#x26;modificationDate=1690972765000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 \
 
@@ -62,7 +62,7 @@ Sau khi chọn theo **Suggestion mode** hoặc nhập theo **Editor mode**, bạ
 * #### Truy vấn với cho một phần nội dung
   * Bạn có thể tìm kiếm một phần nội dung bằng cách nhập trực tiếp GET vào vùng tìm kiếm. Ví dụ: bạn nhập text GET thì hệ thống sẽ tìm kiếm tất cả các bản ghi logs mà bất kỳ một field dữ kiệu nào xuất hiện chuỗi ký tự này.
 
-![](http://docs.vngcloud.vn/download/attachments/59807124/image2023-8-7\_11-22-30.png?version=1\&modificationDate=1691382151000\&api=v2)
+<figure><img src="http://docs.vngcloud.vn/download/attachments/59807124/image2023-8-7_11-22-30.png?version=1&#x26;modificationDate=1691382151000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 \
 

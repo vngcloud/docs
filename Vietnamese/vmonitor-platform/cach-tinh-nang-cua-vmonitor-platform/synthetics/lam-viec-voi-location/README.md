@@ -9,7 +9,4 @@ Location là nơi mà ở đó sẽ chạy các API Test tới endpoint (URL, ho
 
 ***
 
-#### Chủ đề <a href="#lamviecvoilocation-chude" id="lamviecvoilocation-chude"></a>
-
-* [Public location](https://docs.vngcloud.vn/display/VPV/Public+location)
-* [Private location](https://docs.vngcloud.vn/display/VPV/Private+location)
+#### &#x20;<a href="#lamviecvoilocation-chude" id="lamviecvoilocation-chude"></a>

@@ -12,8 +12,3 @@ Nếu dịch vụ của bạn không hoạt động hoặc hồi đáp chậm h�
 
 ***
 
-#### Chủ đề <a href="#lamviecvoisyntheticapitest-chude" id="lamviecvoisyntheticapitest-chude"></a>
-
-* [API Test với HTTP(s)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803715)
-* [API Test với Ping](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803717)
-* [API Test với TCP](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59803719)

@@ -1,6 +1,6 @@
 # Windows
 
-Trước khi thực hiện cài đặt agent trên các hệ điều hành mà chúng tôi hỗ trợ bên dưới, bạn cần phải tải xuống certificate theo hướng dẫn tại [Khởi tạo Certificate](http://docs.vngcloud.vn/pages/viewpage.action?pageId=59803496). Trong tệp tải xuống sẽ chứa các certificate được sử dụng để xác thực với hệ thống vMonitor Logs. Sử dụng thông tin này với các hướng dẫn bên dưới để hoàn thành việc thiết lập Agent for Log.
+Trước khi thực hiện cài đặt agent trên các hệ điều hành mà chúng tôi hỗ trợ bên dưới, bạn cần phải tải xuống certificate theo hướng dẫn tại [Khởi tạo Certificate](../khoi-tao-certificate.md). Trong tệp tải xuống sẽ chứa các certificate được sử dụng để xác thực với hệ thống vMonitor Logs. Sử dụng thông tin này với các hướng dẫn bên dưới để hoàn thành việc thiết lập Agent for Log.
 
 #### Cài đặt
 

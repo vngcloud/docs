@@ -24,6 +24,6 @@ Tại trang này ở mỗi vStorage Project bạn sẽ thấy các thông tin nh
 
 **Chú ý:** hệ thống vMonitor sẽ mất 1 khoảng thời gian trung bình 5-10 phút (có thể có trường hợp tệ nhất là 20 phút) để cập nhập vStorage Project mới sau khi bạn tạo.
 
-Để xem danh sách metrics tương ứng của mỗi product này, hãy xem tại [Danh sách Metrics hỗ trợ](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59807097).
+Để xem danh sách metrics tương ứng của mỗi product này, hãy xem tại [Danh sách Metrics hỗ trợ](../danh-sach-metrics-ho-tro/).
 
 \

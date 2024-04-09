@@ -10,8 +10,3 @@ vMonitor Synthetic Monitoring là một tập các điều kiện và cấu hìn
 
 ***
 
-#### Chủ đề <a href="#synthetics-chude" id="synthetics-chude"></a>
-
-* [Làm việc với Synthetic test quota](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650656\&src=contextnavpagetreemode)
-* [Làm việc với Synthetic API Test](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650658\&src=contextnavpagetreemode)
-* [Làm việc với Location](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650660\&src=contextnavpagetreemode)

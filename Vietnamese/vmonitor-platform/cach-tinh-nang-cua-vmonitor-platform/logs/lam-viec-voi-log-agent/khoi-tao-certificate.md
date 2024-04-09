@@ -4,7 +4,7 @@ Sau khi mua Log Project, hệ thống sẽ tự động sinh ra certificate cho 
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Chọn **Integration.**
 2. Chọn **Certificate.**
-3. Nếu bạn chưa khởi tạo Log project nào, chọn **New cert** để tạo Certificate mới. Nếu bạn đã khởi tạo Log project thành công từ [Bước 1: Khởi tạo Log project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650521), tại Log project này, chọn **New cert.**
+3. Nếu bạn chưa khởi tạo Log project nào, chọn **New cert** để tạo Certificate mới. Nếu bạn đã khởi tạo Log project thành công từ Bước 1: Khởi tạo Log project, tại Log project này, chọn **New cert.**
 4. Chúng tôi bắt đầu khởi tạo certificate cho Log project của bạn, khi trạng thái certificate là **ACTIVE** nghĩa là certificate này đã sẵn sàng cho bạn sử dụng.&#x20;
 5. Chọn **Tải xuống** để tải thông tin certificate về thiết bị của bạn hoặc chọn **Delete** để xóa Certificate vừa tạo.&#x20;
 

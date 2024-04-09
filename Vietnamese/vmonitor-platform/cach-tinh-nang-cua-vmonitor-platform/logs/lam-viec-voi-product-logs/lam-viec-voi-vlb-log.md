@@ -8,7 +8,7 @@
 * **Monitoring Status**: trạng thái monitoring của vLB. Nếu chưa enable "Detailed Monitoring" thì trạng thái sẽ là INACTIVE, nếu đã enable thì trạng thái là ACTIVE, còn nếu vLB đã bị xóa thì sẽ là DELETED.
 * **Detailed Monitoring**: kích hoạt hay hủy theo dõi Logs của vLB này.
 
-![](https://docs.vngcloud.vn/download/attachments/59803632/image2023-8-16\_15-18-52.png?version=1\&modificationDate=1692173932000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/59803632/image2023-8-16_15-18-52.png?version=1&#x26;modificationDate=1692173932000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 Để kích hoạt theo dõi, bạn cần nhấn **enable** tại cột **Detailed Monitoring.**&#x20;
 
