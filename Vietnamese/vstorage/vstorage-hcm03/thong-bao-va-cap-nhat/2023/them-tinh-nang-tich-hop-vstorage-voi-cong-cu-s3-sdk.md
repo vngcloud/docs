@@ -11,7 +11,7 @@
 
 #### 2. Tính năng cập nhật <a href="#themtinhnangtichhopvstoragevoicongcus3sdk-2.tinhnangcapnhat" id="themtinhnangtichhopvstoragevoicongcus3sdk-2.tinhnangcapnhat"></a>
 
-<table data-header-hidden><thead><tr><th width="43"></th><th width="233"></th><th width="191"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>STT</strong></td><td><strong>Tính năng</strong></td><td><strong>Phạm vi &#x26; giới hạn</strong></td><td><strong>Loại</strong></td><td><strong>Giá trị mang lại</strong></td></tr><tr><td>1</td><td><ul><li>Hỗ trợ người dùng xem cũng như tải về nhanh mã nguồn mẫu hướng dẫn chi tiết cách tích hợp S3 SDK với vStorage thông qua nhiều ngôn ngữ lập trình khác nhau bao gồm: Java, Python, Golang, Ruby, C#, NodeJS.</li></ul></td><td><ul><li>Tính năng hiện tại chỉ hỗ trợ sử dụng trên <strong>vStorage Portal</strong>.</li></ul></td><td>Exhancement</td><td><br></td></tr></tbody></table>
+<table data-header-hidden data-full-width="true"><thead><tr><th width="57"></th><th width="233"></th><th width="191"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>STT</strong></td><td><strong>Tính năng</strong></td><td><strong>Phạm vi &#x26; giới hạn</strong></td><td><strong>Loại</strong></td><td><strong>Giá trị mang lại</strong></td></tr><tr><td>1</td><td><ul><li>Hỗ trợ người dùng xem cũng như tải về nhanh mã nguồn mẫu hướng dẫn chi tiết cách tích hợp S3 SDK với vStorage thông qua nhiều ngôn ngữ lập trình khác nhau bao gồm: Java, Python, Golang, Ruby, C#, NodeJS.</li></ul></td><td><ul><li>Tính năng hiện tại chỉ hỗ trợ sử dụng trên <strong>vStorage Portal</strong>.</li></ul></td><td>Exhancement</td><td><br></td></tr></tbody></table>
 
 **Ghi chú:**
 

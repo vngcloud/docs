@@ -8,6 +8,6 @@ Phần này ghi chú chi tiết các tính năng mới, các cải tiến và c�
 
 #### Chủ đề <a href="#id-2021-chude" id="id-2021-chude"></a>
 
-* [Release Storage gateway 2.0 - Rclone](https://docs.vngcloud.vn/display/VV/Release+Storage+gateway+2.0+-+Rclone)
+* [Release Storage gateway 2.0 - Rclone](release-storage-gateway-2.0-rclone.md)
 
 \
