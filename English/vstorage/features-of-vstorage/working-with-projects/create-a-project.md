@@ -44,4 +44,4 @@ After completing the 10 steps described above, the project has been created. Pro
 
 In addition to the traditional management interface portal, we also provide APIs that allow you to integrate vStorage with your user-facing applications and tools for data storage.
 
-To create a new project through the vStorage API, please refer to the [API developers](https://docs.vngcloud.vn/display/VSEN/API+developers).
+To create a new project through the vStorage API, please refer to the [API developers](https://docs.vngcloud.vn/display/VSEN/API+developers). ThuyVT2
