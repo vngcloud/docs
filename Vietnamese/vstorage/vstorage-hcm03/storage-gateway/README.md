@@ -22,6 +22,6 @@ Mô hình triển khai storage gateway&#x20;
 
 Từ mô hình triển khai Storage Gateway này, chúng tôi cung cấp các tính năng mà bạn có thể sử dụng bao gồm:
 
-* [Khởi tạo và sử dụng Storage Gateway](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650127)
+* Khởi tạo và sử dụng Storage Gateway
 
 \

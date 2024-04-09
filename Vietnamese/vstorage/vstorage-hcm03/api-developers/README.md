@@ -36,6 +36,5 @@ Hãy học cách sử dụng vStorage S3 API và vStorage Swift API theo hướn
 
 #### Chủ đề <a href="#apidevelopers-chude" id="apidevelopers-chude"></a>
 
-* [vStorage API](https://docs.vngcloud.vn/display/VV/vStorage+API)
-* vStorage S3 REST API
-* [vStorage Swift REST API](https://docs.vngcloud.vn/display/VV/vStorage+Swift+REST+API)
+* vStorage API
+* vStorage Swift REST API

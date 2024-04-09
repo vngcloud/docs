@@ -35,7 +35,7 @@ Container05
 
 **Bước 1: Khởi tạo S3 key**
 
-Thực hiện khởi tạo S3 key theo hướng dẫn tại [Khởi tạo S3 key](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804857). Giả sử 2 S3 key được khởi tạo là:
+Thực hiện khởi tạo S3 key theo hướng dẫn tại [Khởi tạo S3 key](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-s3-key.md). Giả sử 2 S3 key được khởi tạo là:
 
 | S3 key name      | **S3key\_User\_Leo**                         | **S3key\_User\_Anne**                        |
 | ---------------- | -------------------------------------------- | -------------------------------------------- |
@@ -60,7 +60,7 @@ Thực hiện khởi tạo S3 key theo hướng dẫn tại [Khởi tạo S3 key
 
 **Bước 2: Khởi tạo tài khoản Service Account**
 
-Thực hiện khởi tạo 2 tài khoản Service Account theo hướng dẫn tại [Khởi tạo tài khoản Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804832). Giả sử 2 tài khoản Service Account được khởi tạo là:
+Thực hiện khởi tạo 2 tài khoản Service Account theo hướng dẫn tại [Khởi tạo tài khoản Service Account](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-tai-khoan-service-account.md). Giả sử 2 tài khoản Service Account được khởi tạo là:
 
 * **SA\_User\_Leo**
 * **SA\_User\_Anne**
@@ -72,7 +72,7 @@ Thực hiện khởi tạo 2 tài khoản Service Account theo hướng dẫn t�
 
 **Bước 3: Khởi tạo policy cho 2 Service Account( SA\_User\_Leo và SA\_User\_Anne)**
 
-Thực hiện khởi tạo policy cho 2 Service Account theo hướng dẫn tại [Khởi tạo policy cho Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804834). Cụ thể:
+Thực hiện khởi tạo policy cho 2 Service Account theo hướng dẫn tại [Khởi tạo policy cho Service Account](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-policy-cho-service-account.md). Cụ thể:
 
 | Thành phần     | Policy cho SA\_User\_Leo                                                                                                | Policy cho SA\_User\_Anne                                                                                                                       |                                                                         |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
@@ -94,7 +94,7 @@ Thực hiện khởi tạo policy cho 2 Service Account theo hướng dẫn tạ
 
 **Bước 3: Liên kết (Gán quyền) tài khoản Service Account với policy tương ứng.**
 
-Thực hiện liên kết (gán quyền) 2 tài khoản Service Account với policy đã tạo ở bước 2 theo hướng dẫn tại [Liên kết tài khoản Service Account với policy tương ứng](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804836)
+Thực hiện liên kết (gán quyền) 2 tài khoản Service Account với policy đã tạo ở bước 2 theo hướng dẫn tại [Liên kết tài khoản Service Account với policy tương ứng](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/lien-ket-tai-khoan-service-account-voi-policy-tuong-ung.md)
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/64554348/image2023-10-13_10-39-44.png?version=1&#x26;modificationDate=1697168386000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
@@ -103,7 +103,7 @@ Thực hiện liên kết (gán quyền) 2 tài khoản Service Account với po
 
 **Bước 4: Tích hợp vStorage với S3 Browser**
 
-Thực hiện tích hợp vStorage với S3 Browser theo hướng dẫn tại [Tích hợp công cụ S3 Browser với vStorage](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805537). Cụ thể:&#x20;
+Thực hiện tích hợp vStorage với S3 Browser theo hướng dẫn tại [Tích hợp công cụ S3 Browser với vStorage](../../3rd-party-softwares/s3-browser/tich-hop-cong-cu-s3-browser-voi-vstorage.md). Cụ thể:&#x20;
 
 | Thành phần              | Nội dung                                                                                                                                                                                                                                                                                                        |                                                                  |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |

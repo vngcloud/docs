@@ -1,6 +1,6 @@
 # Sử dụng vStorage API
 
-Để sử dụng vStorage API, bạn cần có ít nhất 1 Client ID, Client Secret( thông tin này lấy tại Service Account). Để tạo Service Account, tham khảo thêm tại [Khởi tạo tài khoản Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804832). Bạn có thể sử dụng Service Account này để tạo (hoặc xóa) nhiều container, container như một đơn vị lưu trữ (giống như một thư mục), trong mỗi container khách hàng có thể upload, get, delete nhiều object tương ứng (object ở đây được hiểu như một file, hoặc một folder con trong container).
+Để sử dụng vStorage API, bạn cần có ít nhất 1 Client ID, Client Secret( thông tin này lấy tại Service Account). Để tạo Service Account, tham khảo thêm tại [Khởi tạo tài khoản Service Account](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-tai-khoan-service-account.md). Bạn có thể sử dụng Service Account này để tạo (hoặc xóa) nhiều container, container như một đơn vị lưu trữ (giống như một thư mục), trong mỗi container khách hàng có thể upload, get, delete nhiều object tương ứng (object ở đây được hiểu như một file, hoặc một folder con trong container).
 
 **Quy trình cơ bản**: Xác thực -> Tạo project ->Tạo container -> Upload Object
 

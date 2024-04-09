@@ -1,6 +1,6 @@
 # Sử dụng Swift Rest API
 
-Để sử dụng Swift Rest API, bạn cần có ít nhất 1 Swift user. Để tạo swift user, tham khảo thêm tại [Khởi tạo Swift user](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804859). Bạn có thể sử dụng Swif user này để tạo (hoặc xóa) nhiều container, container như một đơn vị lưu trữ (giống như một thư mục), trong mỗi container khách hàng có thể upload, get, delete nhiều object tương ứng (object ở đây được hiểu như một file, hoặc một folder con trong container).
+Để sử dụng Swift Rest API, bạn cần có ít nhất 1 Swift user. Để tạo swift user, tham khảo thêm tại [Khởi tạo Swift user](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-swift-user.md). Bạn có thể sử dụng Swif user này để tạo (hoặc xóa) nhiều container, container như một đơn vị lưu trữ (giống như một thư mục), trong mỗi container khách hàng có thể upload, get, delete nhiều object tương ứng (object ở đây được hiểu như một file, hoặc một folder con trong container).
 
 **Quy trình cơ bản**: Xác thực -> Tạo container -> Upload Object
 

@@ -47,7 +47,7 @@ Thực hiện lấy thông tin access\_key\_id và secret\_access\_key\_id của
 
 **Chuẩn bị thông tin Destination**
 
-Thực hiện lấy thông tin access\_key và secret\_key mà bạn đã khởi tạo để truy cập vào vStorage thông qua vIAM theo hướng dẫn tại [Khởi tạo S3 key](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804857).
+Thực hiện lấy thông tin access\_key và secret\_key mà bạn đã khởi tạo để truy cập vào vStorage thông qua vIAM theo hướng dẫn tại [Khởi tạo S3 key](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-s3-key.md).
 
 ***
 

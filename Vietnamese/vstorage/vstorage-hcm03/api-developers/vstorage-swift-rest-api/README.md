@@ -18,7 +18,7 @@ Tích hợp các ứng dụng, công cụ phía người dùng của bạn với
 
 #### Chủ đề <a href="#vstorageswiftrestapi-chude" id="vstorageswiftrestapi-chude"></a>
 
-* [Tích hợp Swift Rest API](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805631)
-* [Sử dụng Swift Rest API](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805633)
+* Tích hợp Swift Rest API
+* Sử dụng Swift Rest API
 
 \

@@ -35,7 +35,7 @@ Container05
 
 **Bước 1: Khởi tạo S3 key**
 
-Thực hiện khởi tạo S3 key theo hướng dẫn tại [Khởi tạo S3 key](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804857). Giả sử 2 S3 key được khởi tạo là:
+Thực hiện khởi tạo S3 key theo hướng dẫn tại [Khởi tạo S3 key](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-s3-key.md). Giả sử 2 S3 key được khởi tạo là:
 
 | S3 key name      | **S3key\_User\_Leo**                         | **S3key\_User\_Anne**                        |
 | ---------------- | -------------------------------------------- | -------------------------------------------- |
@@ -52,7 +52,7 @@ Thực hiện khởi tạo S3 key theo hướng dẫn tại [Khởi tạo S3 key
 
 **Bước 2: Khởi tạo tài khoản Service Account**
 
-Thực hiện khởi tạo 2 tài khoản Service Account theo hướng dẫn tại [Khởi tạo tài khoản Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804832). Giả sử 2 tài khoản Service Account được khởi tạo là:
+Thực hiện khởi tạo 2 tài khoản Service Account theo hướng dẫn tại [Khởi tạo tài khoản Service Account](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-tai-khoan-service-account.md). Giả sử 2 tài khoản Service Account được khởi tạo là:
 
 * **SA\_User\_Leo**
 * **SA\_User\_Anne**
@@ -65,7 +65,7 @@ Thực hiện khởi tạo 2 tài khoản Service Account theo hướng dẫn t�
 
 **Bước 3: Khởi tạo policy cho 2 Service Account( SA\_User\_Leo và SA\_User\_Anne)**
 
-Thực hiện khởi tạo policy cho 2 Service Account theo hướng dẫn tại [Khởi tạo policy cho Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804834). Cụ thể:
+Thực hiện khởi tạo policy cho 2 Service Account theo hướng dẫn tại [Khởi tạo policy cho Service Account](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-policy-cho-service-account.md). Cụ thể:
 
 | Thành phần | Policy cho SA\_User\_Leo                                                                                                | Policy cho SA\_User\_Anne                                                                                             |                                                                                                                                                                 |
 | ---------- | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -87,7 +87,7 @@ Thực hiện khởi tạo policy cho 2 Service Account theo hướng dẫn tạ
 \
 **Bước 4: Tích hợp vStorage với S3 Browser**
 
-Thực hiện tích hợp vStorage với S3 Browser theo hướng dẫn tại [Tích hợp công cụ S3 Browser với vStorage](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805537). Cụ thể:&#x20;
+Thực hiện tích hợp vStorage với S3 Browser theo hướng dẫn tại [Tích hợp công cụ S3 Browser với vStorage](../../3rd-party-softwares/s3-browser/tich-hop-cong-cu-s3-browser-voi-vstorage.md). Cụ thể:&#x20;
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/64554348/image2023-10-13_10-43-28.png?version=1&#x26;modificationDate=1697168609596&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 

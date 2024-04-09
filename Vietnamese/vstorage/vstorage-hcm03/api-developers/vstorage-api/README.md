@@ -19,5 +19,5 @@ Tích hợp các ứng dụng, công cụ phía người dùng của bạn với
 
 #### Chủ đề <a href="#vstorageapi-chude" id="vstorageapi-chude"></a>
 
-* [Tích hợp vStorage API](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805624)
-* [Sử dụng vStorage API](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805626)
+* Tích hợp vStorage API
+* Sử dụng vStorage API

@@ -6,19 +6,19 @@
 2. Chọn thư mục **Tích hợp.**
 3. Chọn biểu tượng **vStorage API**.
 4. Tại mục **Cấp quyền**, bạn cần điền thông tin cần thiết để cấu hình vStorage API của bạn bao gồm:
-   1. Nhập **Client ID**. Một **Client ID** là một chuỗi ký tự được sử dụng bởi Service API để định danh ứng dụng, đồng thời cũng được dùng để xây dựng "authorization URL" hiển thị phía người dùng. Bạn có thể tạo và quản lý **Client ID** thông qua hệ thống vIAM. **Client ID** sẽ được tự động sinh ra khi bạn tạo mới một **Service Account**. Chi tiết tham khảo tại [Khởi tạo tài khoản Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804832).
-   2. Nhập **Client Secret** tương ứng của **Client ID** vừa nhập. Cặp Client ID và Client Secret được bạn tạo và quản lý thông qua hệ thống vIAM. Bạn có thể chọn [Click here to manage your Client ID.](https://hcm-3.console.vngcloud.vn/iam/service-accounts) để chúng tôi điều hướng bạn tới hệ thống vIAM và chi tiết là các màn hình quản lý Service Account. Chi tiết tham khảo tại [Khởi tạo tài khoản Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804832).
+   1. Nhập **Client ID**. Một **Client ID** là một chuỗi ký tự được sử dụng bởi Service API để định danh ứng dụng, đồng thời cũng được dùng để xây dựng "authorization URL" hiển thị phía người dùng. Bạn có thể tạo và quản lý **Client ID** thông qua hệ thống vIAM. **Client ID** sẽ được tự động sinh ra khi bạn tạo mới một **Service Account**. Chi tiết tham khảo tại [Khởi tạo tài khoản Service Account](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-tai-khoan-service-account.md).
+   2. Nhập **Client Secret** tương ứng của **Client ID** vừa nhập. Cặp Client ID và Client Secret được bạn tạo và quản lý thông qua hệ thống vIAM. Bạn có thể chọn [Click here to manage your Client ID.](https://hcm-3.console.vngcloud.vn/iam/service-accounts) để chúng tôi điều hướng bạn tới hệ thống vIAM và chi tiết là các màn hình quản lý Service Account. Chi tiết tham khảo tại [Khởi tạo tài khoản Service Account](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-tai-khoan-service-account.md).
 5. Sau khi hoàn tất chọn cấu hình **Cấp quyền**, chọn **Xác thực** để chuyển tới màn hình **Cấu hình**. Bạn luôn có thể quay lại đây để thay đổi thông tin **Cấp quyền** của mình, sau đó chọn lại **Xác thực** để cập nhật danh sách S3 Rest API theo thông số mới của bạn.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/Tich_hop_vStorage_API.gif" alt=""><figcaption></figcaption></figure>
 
 #### Trải nghiệm vStorage API ngay trên vStorage Portal <a href="#tichhopvstorageapi-trainghiemvstorageapingaytrenvstorageportal" id="tichhopvstorageapi-trainghiemvstorageapingaytrenvstorageportal"></a>
 
-Để trải nghiệm sử dụng vStorage API, bạn cần có ít nhất 1 Client ID, Client Secret( thông tin này lấy tại Service Account). Để tạo Service Account, tham khảo thêm tại [Khởi tạo tài khoản Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804832). Bạn có thể sử dụng Service Account này để tạo (hoặc xóa) nhiều container, container như một đơn vị lưu trữ (giống như một thư mục), trong mỗi container khách hàng có thể upload, get, delete nhiều object tương ứng (object ở đây được hiểu như một file, hoặc một folder con trong container).
+Để trải nghiệm sử dụng vStorage API, bạn cần có ít nhất 1 Client ID, Client Secret( thông tin này lấy tại Service Account). Để tạo Service Account, tham khảo thêm tại [Khởi tạo tài khoản Service Account](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-tai-khoan-service-account.md). Bạn có thể sử dụng Service Account này để tạo (hoặc xóa) nhiều container, container như một đơn vị lưu trữ (giống như một thư mục), trong mỗi container khách hàng có thể upload, get, delete nhiều object tương ứng (object ở đây được hiểu như một file, hoặc một folder con trong container).
 
 Quy trình cơ bản: Xác thực -> Tạo project ->Tạo container -> Upload Object
 
-Chúng tôi cung cấp cho bạn một giao diện thao tác nhanh với vStorage API, sau khi bạn thực hiện tích hợp theo hướng dẫn tại [Tích hợp vStorage API](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805624), hãy tiếp tục làm theo hướng dẫn:&#x20;
+Chúng tôi cung cấp cho bạn một giao diện thao tác nhanh với vStorage API, sau khi bạn thực hiện tích hợp theo hướng dẫn tại [Tích hợp vStorage API](tich-hop-vstorage-api.md), hãy tiếp tục làm theo hướng dẫn:&#x20;
 
 1. Chọn **Try it out**.
 2. Nhập **đầu vào** cho mỗi API.
@@ -59,4 +59,4 @@ API bên dưới sử dụng để bạn có thể xóa một object trong một
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59805624/image2023-7-17_11-33-32.png?version=1&#x26;modificationDate=1689841631000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-Ngoài cách sử dụng nhanh trên vStorage Portal, bạn có thể sử dụng vStorage API tại thiết bị cá nhân theo hướng dẫn tại [Sử dụng vStorage API](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805626).
+Ngoài cách sử dụng nhanh trên vStorage Portal, bạn có thể sử dụng vStorage API tại thiết bị cá nhân theo hướng dẫn tại [Sử dụng vStorage API](su-dung-vstorage-api.md).
