@@ -16,7 +16,6 @@ Service Account là một danh tính mà bạn có thể tạo trong tài khoả
 6. Xem lại các thiết lập và nhấp **"Create service account"** ở góc phải trên cùng.
 7. Lưu thông tin **Client Secret Key**
 
-\
 
 
 Tips
@@ -42,7 +41,7 @@ Hãy nhớ lưu Client Secret ở một nơi khác vì nó chỉ hiển thị m�
 
 **Tìm hiểu thêm về Trusted Relationship tại đây:**
 
-* [Trusted Relationship](https://docs.vngcloud.vn/display/ONVINA/Trusted+Relationship)
+* [Trusted Relationship](xac-dinh-trusted-relationship.md)
 
 #### 4. Quản lý thông tin xác thực Service Account <a href="#serviceaccounts-4.quanlythongtinxacthucserviceaccount" id="serviceaccounts-4.quanlythongtinxacthucserviceaccount"></a>
 
@@ -62,10 +61,10 @@ Một Service Account bao gồm thông tin xác thực (Client ID và Secret Key
 
 Để gắn S3 Key và Swift user chúng tôi khuyến nghị bạn nên tuân theo các hướng dẫn dưới đây:
 
-* [Understand how vStorage Credential works](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804855)
-* [Learn how to create a S3 key with IAM](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804857)
-* [Learn how to create a Swift user with IAM](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804859)
-* [Learn how to attach S3 Keys & Swift users to a Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804923)
+* [Khởi tạo vStorage Credentials](../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/)
+* [Khởi tạo S3](../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-s3-key.md)
+* [Khởi tạo Swift user](../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-swift-user.md)
+* [Liên kết S3, Swift user](../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/lien-ket-s3-key-swift-user-voi-tai-khoan-service-account-tuong-ung.md)
 
 #### 6. Xóa Service Account? <a href="#serviceaccounts-6.xoaserviceaccount" id="serviceaccounts-6.xoaserviceaccount"></a>
 

@@ -14,7 +14,7 @@ IAM User Account là một thực thể đại diện cho người dùng tương
 
 Nếu bạn có nhân viên cần truy cập vào VNG Cloud, không nên chia sẻ thông tin đăng nhập tài khoản Root User với họ. Thay vào đó, hãy tạo các IAM User Account riêng lẻ trong tài khoản Root User và cấp quyền khác nhau cho từng IAM User Account đó. Tìm hiểu thêm hướng dẫn chi tiết tại:
 
-* [Quản lý User Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59806682).
+* [Quản lý User Account](tai-khoan-user-accounts/).
 
 #### User Group <a href="#iamidentities-usergroup" id="iamidentities-usergroup"></a>
 
