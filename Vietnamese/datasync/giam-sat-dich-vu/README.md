@@ -12,8 +12,3 @@ Giám sát (monitoring) là một phần quan trọng trong việc duy trì đ�
 * Ai nên được thông báo khi có sự cố xảy ra?
 
 ***
-
-#### Chủ đề <a href="#giamsatdichvu-chude" id="giamsatdichvu-chude"></a>
-
-* [Giám sát DataSync thông qua Log](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73761078\&src=contextnavpagetreemode)
-* [Giám sát DataSync thông qua Metric](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73761080\&src=contextnavpagetreemode)

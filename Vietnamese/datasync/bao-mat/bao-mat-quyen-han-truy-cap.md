@@ -8,4 +8,4 @@ Dưới đây là một số lợi ích cụ thể của việc sử dụng IAM 
 * **Giúp ngăn chặn truy cập trái phép vào dữ liệu:** IAM cung cấp các tính năng xác thực và ủy quyền mạnh mẽ để giúp ngăn chặn truy cập trái phép vào dữ liệu.&#x20;
 * **Giúp giảm thiểu rủi ro vi phạm dữ liệu:** Bằng cách sử dụng IAM, các doanh nghiệp có thể giảm thiểu rủi ro vi phạm dữ liệu. IAM giúp bảo vệ dữ liệu khỏi bị truy cập trái phép, điều này có thể dẫn đến vi phạm dữ liệu.
 
-Chi tiết tham khảo thêm tại [Quản lý truy cập](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73760894) và [IAM for DataSync](https://docs.vngcloud.vn/display/ONVINA/IAM+for+vStorage).
+Chi tiết tham khảo thêm tại [Quản lý truy cập](../quan-ly-truy-cap/quan-ly-truy-cap-tai-nguyen-datasync/) và [IAM for DataSync](https://docs.vngcloud.vn/display/ONVINA/IAM+for+vStorage).

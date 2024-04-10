@@ -8,9 +8,3 @@ Nếu doanh nghiệp bạn có nhiều thành viên cần được cấp quyền
 
 ***
 
-#### Chủ đề <a href="#taikhoannguoidungiam-chude" id="taikhoannguoidungiam-chude"></a>
-
-* [Khởi tạo tài khoản IAM User Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73761217\&src=contextnavpagetreemode)
-* [Khởi tạo policy cho IAM User Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73761219\&src=contextnavpagetreemode)
-* [Liên kết tài khoản IAM User Account với policy tương ứng](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73761221\&src=contextnavpagetreemode)
-* [Hủy tài khoản IAM User Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73761223\&src=contextnavpagetreemode)

@@ -423,7 +423,7 @@
           * [Linux OS](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/lam-viec-voi-metric-agent/cai-dat-metric-agent-tren-server/linux-os.md)
           * [Linux OS có giới hạn kết nối Internet](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/lam-viec-voi-metric-agent/cai-dat-metric-agent-tren-server/linux-os-co-gioi-han-ket-noi-internet.md)
           * [Window OS](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/lam-viec-voi-metric-agent/cai-dat-metric-agent-tren-server/window-os.md)
-      * [Làm việc với Metruc Information](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/lam-viec-voi-metruc-information.md)
+      * [Làm việc với Metric Information](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/lam-viec-voi-metric-information.md)
       * [Làm việc với Product Metric](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/lam-viec-voi-product-metric/README.md)
         * [Làm việc với vServer-Metric](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/lam-viec-voi-product-metric/lam-viec-voi-vserver-metric.md)
         * [Làm việc với vLB-Metric](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/lam-viec-voi-product-metric/lam-viec-voi-vlb-metric.md)

@@ -53,7 +53,7 @@ Bắt đầu sử dụng dịch vụ, bạn cần tạo một transfer job. Tron
    4. Chọn **Folder path**: nếu bạn chỉ muốn chuyển dữ liệu của một folder trong container, hãy chọn folder bạn muốn transfer dữ liệu tại mục này. Ví dụ:
       * Để chuyển dữ liệu từ container01/folder01/subfolder02 tới vStorage, bạn cần chọn folder01 sau đó chọn tiếp tới subfolder02.
       * Để chuyển toàn bộ dữ liệu trong container01, hãy để mục này trống.
-   5. Nhập **Access Key/ Secret Key**: nhập access key và secret key của bạn. Cặp S3 key này được tạo và quản lý thông qua IAM, vui lòng tham khảo tại [IAM for vStorage](https://docs.vngcloud.vn/display/ONVINA/IAM+for+vStorage).
+   5. Nhập **Access Key/ Secret Key**: nhập access key và secret key của bạn. Cặp S3 key này được tạo và quản lý thông qua IAM, vui lòng tham khảo tại [IAM cho vStorage](../../identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vstorage.md).
 
 **Bước 4.1:** Sau khi nhập đẩy đủ thông tin tại các mục bên trên, bạn có thể chọn kiểm tra kết nối bằng cách nhấn vào nút **Test connection**. Lúc này, hệ thống của chúng tôi sẽ kiểm tra tính hợp lệ của thông tin và hiển thị kết quả. Nếu kết nối thành công, bạn sẽ nhận được thông báo "**Connection successful**". Nếu kết nối thất bại, bạn sẽ nhận được thông báo lỗi và mô tả chi tiết về lỗi.
 
@@ -72,7 +72,7 @@ Bắt đầu sử dụng dịch vụ, bạn cần tạo một transfer job. Tron
 4. Chọn **Folder path**: nếu bạn chỉ muốn chuyển dữ liệu của một folder trong container, hãy chọn folder bạn muốn transfer dữ liệu tại mục này. Ví dụ:
    * Để chuyển dữ liệu từ container01/folder01/subfolder02 tới vStorage, bạn cần chọn folder01 sau đó chọn tiếp tới subfolder02.
    * Để chuyển toàn bộ dữ liệu trong container01, hãy để mục này trống.
-5. Nhập **Access Key/ Secret Key**: nhập access key và secret key của bạn. Cặp S3 key này được tạo và quản lý thông qua IAM, vui lòng tham khảo tại [IAM for vStorage](https://docs.vngcloud.vn/display/ONVINA/IAM+for+vStorage).
+5. Nhập **Access Key/ Secret Key**: nhập access key và secret key của bạn. Cặp S3 key này được tạo và quản lý thông qua IAM, vui lòng tham khảo tại [IAM cho vStorage](../../identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vstorage.md).
 
 **Bước 5.2:** Sau khi nhập đẩy đủ thông tin tại các mục bên trên, bạn có thể chọn kiểm tra kết nối bằng cách nhấn vào nút **Test connection**. Lúc này, hệ thống của chúng tôi sẽ kiểm tra tính hợp lệ của thông tin và hiển thị kết quả. Nếu kết nối thành công, bạn sẽ nhận được thông báo "**Connection successful**". Nếu kết nối thất bại, bạn sẽ nhận được thông báo lỗi và mô tả chi tiết về lỗi.
 
@@ -110,10 +110,10 @@ Bắt đầu sử dụng dịch vụ, bạn cần tạo một transfer job. Tron
    1. Chọn **Region**: nơi chứa container của bạn. Ví dụ: HCM03, HAN01
    2. Chọn **Project**: project chứa container mà bạn muốn transfer dữ liệu.&#x20;
    3. Chọn **Container**: tên container nguồn của bạn trên vStorage.
-   4. **Access Key/ Secret Key**: nhập access key và secret key của bạn. Cặp S3 key này được tạo và quản lý thông qua IAM, vui lòng tham khảo tại [IAM for vStorage](https://docs.vngcloud.vn/display/ONVINA/IAM+for+vStorage).
+   4. **Access Key/ Secret Key**: nhập access key và secret key của bạn. Cặp S3 key này được tạo và quản lý thông qua IAM, vui lòng tham khảo tại [IAM cho vStorage](../../identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vstorage.md).
 3. Sau khi nhập đẩy đủ thông tin tại các mục bên trên, bạn có thể chọn kiểm tra kết nối bằng cách nhấn vào nút **Test connection**. Lúc này, hệ thống của chúng tôi sẽ kiểm tra tính hợp lệ của thông tin và hiển thị kết quả. Nếu kết nối thành công, bạn sẽ nhận được thông báo "**Connection successful**". Nếu kết nối thất bại, bạn sẽ nhận được thông báo lỗi và mô tả chi tiết về lỗi.
 
-**Bước 6.5:** Chọn **Logging Option** nếu bạn muốn đẩy log transfer về hệ thống vMonitor Platform. Để có thể thực hiện đẩy log, bạn cần tối thiểu 1 log project trên hệ thống vMonitor Platform. Chi tiết tham khảo tại [Làm việc với Log Project](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59807130).
+**Bước 6.5:** Chọn **Logging Option** nếu bạn muốn đẩy log transfer về hệ thống vMonitor Platform. Để có thể thực hiện đẩy log, bạn cần tối thiểu 1 log project trên hệ thống vMonitor Platform. Chi tiết tham khảo tại [Làm việc với Log Project](../../vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/logs/lam-viec-voi-log-project/).
 
 **Bước 6.6:** Chọn **Notification Option** để gửi thông báo tới Email bạn mong muốn khi một transfer job chạy hoàn thành. Bạn có thể nhập email theo đúng định dạng và chọn biểu tượng **Add**.
 

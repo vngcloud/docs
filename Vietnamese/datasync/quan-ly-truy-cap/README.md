@@ -6,8 +6,5 @@ VNG Cloud chịu trách nhiệm bảo vệ cơ sở hạ tầng cơ bản của 
 
 ***
 
-#### Chủ đề <a href="#quanlytruycap-chude" id="quanlytruycap-chude"></a>
 
-* [Quản lý tài khoản truy cập DataSync](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73761211\&src=contextnavpagetreemode)
-* [Quản lý truy cập tài nguyên DataSync](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73761076\&src=contextnavpagetreemode)
 

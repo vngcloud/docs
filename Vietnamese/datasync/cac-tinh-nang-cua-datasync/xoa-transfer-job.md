@@ -13,5 +13,5 @@ Nếu bạn không còn nhu cầu sử dụng transfer job, hãy thực hiện x
 {% hint style="info" %}
 **Chú ý:**
 
-Bạn chỉ có thể xóa Transfer Job khi transfer job đang không chạy. Nếu transfer job của bạn đang chạy hoặc trong hàng đợi, hãy thực hiện Dừng chạy transfer job theo hướng dẫn tại [Dừng chạy Transfer Job](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73761197) trước khi thực hiện xóa chúng.
+Bạn chỉ có thể xóa Transfer Job khi transfer job đang không chạy. Nếu transfer job của bạn đang chạy hoặc trong hàng đợi, hãy thực hiện Dừng chạy transfer job theo hướng dẫn tại [Dừng chạy Transfer Job](dung-chay-transfer-job.md) trước khi thực hiện xóa chúng.
 {% endhint %}

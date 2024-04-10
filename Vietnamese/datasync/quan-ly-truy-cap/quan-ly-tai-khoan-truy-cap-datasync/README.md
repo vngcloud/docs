@@ -9,8 +9,5 @@ Bạn có thể sử dụng 2 loại tài khoản để truy cập vào DataSync
 
 ***
 
-#### Chủ đề <a href="#quanlytaikhoantruycapdatasync-chude" id="quanlytaikhoantruycapdatasync-chude"></a>
 
-* [Tài khoản người dùng Root](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73761213\&src=contextnavpagetreemode)
-* [Tài khoản người dùng IAM](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73761215\&src=contextnavpagetreemode)
 
