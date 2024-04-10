@@ -1,4 +1,4 @@
-# Làm việc với Metruc Information
+# Làm việc với Metric Information
 
 ### Xem danh sách các metrics đang tồn tại
 
