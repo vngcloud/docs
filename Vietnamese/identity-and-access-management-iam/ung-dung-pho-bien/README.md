@@ -4,10 +4,10 @@ Các hướng dẫn sau đây trình bày các bước thực hiện hoàn chỉ
 
 Các hướng dẫn
 
-* [Phân quyền theo chức năng công việc.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805243)
-* [Phân quyền truy cập vào tài nguyên cụ thể](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805265)
-* [Quản lý Resources với Terraform và Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805376)
-* [Sử dụng Deny permission để từ chối truy cập.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805245)
-* [Uỷ quyền truy cập giữa các root user account với Service Account.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805248)
+* [Phân quyền theo chức năng công việc.](phan-quyen-truy-cap-theo-chuc-nang-cong-viec.md)
+* [Phân quyền truy cập vào tài nguyên cụ thể](phan-quyen-truy-cap-vao-tai-nguyen-cu-the.md)
+* [Quản lý Resources với Terraform và Service Account](quan-ly-resources-voi-terraform-va-service-account.md)
+* [Sử dụng Deny permission để từ chối truy cập.](su-dung-deny-permission-de-tu-choi-truy-cap.md)
+* [Uỷ quyền truy cập giữa các root user account với Service Account.](uy-quyen-truy-cap-giua-cac-root-user-accounts-voi-tinh-nang-service-account-impersonate.md)
 
 \

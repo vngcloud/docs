@@ -6,7 +6,7 @@ Trong phần này, chúng ta sẽ tìm hiểu về các khái niệm cơ bản v
 
 Trước khi bắt đầu, mời bạn tham khảo hướng dẫn đăng nhập với Root User Account và IAM User Account tại đây:
 
-* [How to Login into VNG Cloud](https://docs.vngcloud.vn/display/ONVINA/How+to+Login+into+VNG+Cloud)
+* [Cách đăng nhập vào VNG Cloud](cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)
 
 IAM Console là giao diện người dùng dựa trên web, cho phép bạn quản lý IAM User Account, Group, Service Account và Policy trong môi trường điện toán đám mây của bạn. Nó cung cấp giao diện một cách trực quan để kiểm soát quyền truy cập vào các tài nguyên của bạn và cấu hình các thiết lập bảo mật.
 
@@ -42,7 +42,7 @@ IAM User Group là tập hợp các IAM User Account chia sẻ các yêu cầu t
 
 Đăng nhập VNG Cloud với IAM User Account:
 
-* [How to Login into VNG Cloud](https://docs.vngcloud.vn/display/ONVINA/How+to+Login+into+VNG+Cloud)
+* [Cách đăng nhập vào VNG Cloud](cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)
 
 **Cách Tạo IAM User Group?**
 
@@ -94,4 +94,4 @@ Xin chúc mừng! Bạn đã nắm được cách cơ bản để bắt đầu s
 
 Chủ đề
 
-Hướng dẫn đăng nhập VNG Cloud Service: [How to Login into VNG Cloud](https://docs.vngcloud.vn/display/ONVINA/How+to+Login+into+VNG+Cloud)
+Hướng dẫn đăng nhập VNG Cloud Service: [Cách đăng nhập vào VNG Cloud](cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)

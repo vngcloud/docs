@@ -69,14 +69,12 @@ Trong VNG Cloud, bạn có thể cài đặt Identity Provider bằng cách cấ
 Dưới đây là các topic quan trọng mà người dùng cần tìm hiểu thêm về IAM VNG Cloud\
 
 
-* [How to Login into VNG Cloud](https://docs.vngcloud.vn/display/ONVINA/How+to+Login+into+VNG+Cloud)
-* [Get Started with IAM](https://docs.vngcloud.vn/display/ONVINA/Get+Started+with+IAM)
-* [Examples of Common Use Cases](https://docs.vngcloud.vn/display/ONVINA/Example+of+Common+Use+Cases)
-* [How IAM supports VNG Cloud Services](https://docs.vngcloud.vn/display/ONVINA/How+IAM+supports+VNG+Cloud+Services)
-* [IAM Identities](https://docs.vngcloud.vn/display/ONVINA/IAM+Identities)
-* [IAM Access Management](https://docs.vngcloud.vn/display/ONVINA/IAM+Access+Management)
-* [Audit Logs](https://docs.vngcloud.vn/display/ONVINA/Audit+Logs)
-* [Quota & Limitation](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59806601)
-* [IAM New Release](https://docs.vngcloud.vn/display/ONVINA/IAM+new+release)
-* [IAM's FAQ](https://docs.vngcloud.vn/display/ONVINA/IAM's+FAQ)
-* [Trouble Shooting IAM Issues](https://docs.vngcloud.vn/display/ONVINA/Trouble+shooting+IAM+issues)
+* [How to Login into VNG Cloud](identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)
+* [Get Started with IAM](identity-and-access-management-iam/bat-dau-voi-iam.md)
+* [Examples of Common Use Cases](identity-and-access-management-iam/ung-dung-pho-bien/)
+* [How IAM supports VNG Cloud Services](identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/)
+* [IAM Identities](identity-and-access-management-iam/cac-loai-dinh-danh-iam/)
+* [IAM Access Management](identity-and-access-management-iam/quan-ly-truy-cap-iam/)
+* [Audit Logs](identity-and-access-management-iam/quan-ly-audit-logs.md)
+* [Quota & Limitation](identity-and-access-management-iam/gioi-han-su-dung.md)
+
