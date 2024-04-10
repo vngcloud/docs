@@ -82,7 +82,7 @@ Lúc này bạn có thể đăng nhập vào các User Accounts để kiểm tra
 
 Truy cập vào vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), khi chưa đăng nhập bất kì tài khoản nào bạn sẽ được chuyển hướng sang trang sign-in chọn "**Sign-in With IAM User Account**"
 
-<figure><img src="../../.gitbook/assets/image2023-7-12_13-48-49.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image2023-7-12_13-48-49 (1).png" alt=""><figcaption></figcaption></figure>
 
 Điền thông tin root user account email mà IAM user trước đó đã được tạo, thông tin IAM username và password, nhấn **Sign-in with IAM User Account**
 
