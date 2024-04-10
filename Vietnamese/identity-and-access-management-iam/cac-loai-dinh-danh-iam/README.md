@@ -2,7 +2,7 @@
 
 IAM Identities (Định danh IAM) là các thực thể trong hệ thống Quản lý Định danh và Truy cập (IAM) đại diện cho cácIAM User Account, User Group và Service Account. IAM Identities được sử dụng để quản lý quyền truy cập đến tài nguyên và dịch vụ trong môi trường đám mây một cách an toàn. Mỗi IAM Identity có một bộ thông tin đăng nhập duy nhất và các quyền liên kết liên quan xác định các hành động mà chúng có thể thực hiện trên các tài nguyên cụ thể.
 
-![](https://docs.vngcloud.vn/download/attachments/59806590/Identities-Page-1.drawio%20\(1\).png?version=1\&modificationDate=1691474663000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/59806590/Identities-Page-1.drawio%20(1).png?version=1&#x26;modificationDate=1691474663000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 #### Root User Account <a href="#iamidentities-rootuseraccount" id="iamidentities-rootuseraccount"></a>
 
@@ -20,13 +20,13 @@ Nếu bạn có nhân viên cần truy cập vào VNG Cloud, không nên chia s�
 
 IAM User Group là một tập hợp các IAM User Account. IAM User Group giúp đơn giản hóa việc quản lý quyền bằng cách cho phép bạn cấp, thay đổi và loại bỏ quyền truy cập cho nhiều User Account cùng một lúc. Ví dụ, bạn có thể tạo một User Group có tên "Admins" và gán cho Group đó các quyền quản trị. Bất kỳ IAM User Account nào trong Group đều tự động có các quyền được gán cho Group đó. tìm hiểu thêm hướng dẫn chi tiết tại:
 
-* [Quản lý User Group](https://docs.vngcloud.vn/display/ONVINA/User+Groups)
+* [Quản lý User Group](tai-khoan-user-groups.md)
 
 #### Service Account <a href="#iamidentities-serviceaccount" id="iamidentities-serviceaccount"></a>
 
 Service Account là một danh tính bạn có thể tạo trong tài khoản Root User của mình với các quyền cụ thể. Service Account có một số điểm tương đồng với IAM User Account. Cả Server Account và User Account đều là các danh tính với các chính sách quyền xác định những gì danh tính đó có thể và không thể làm với các tài nguyên của VNG Cloud. Tuy nhiên, Service Account là các danh tính được ứng dụng hoặc máy tính sử dụng, không phải là người, để thực hiện các cuộc gọi API được ủy quyền và truy cập vào các tài nguyên cụ thể. Tìm hiểu thêm hướng dẫn chi tiết tại:
 
-* [Quản lý S](https://docs.vngcloud.vn/display/ONVINA/Service+accounts)[ervice Account](https://docs.vngcloud.vn/display/ONVINA/Service+accounts)
+* [Quản lý Service Account](../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-tai-khoan-service-account.md)
 
 #### vStorage credentials <a href="#iamidentities-vstoragecredentials" id="iamidentities-vstoragecredentials"></a>
 
@@ -43,7 +43,7 @@ Service Account là một danh tính bạn có thể tạo trong tài khoản Ro
 
 Tìm thêm hướng dẫn chi tiết về cách sử dụng và áp dụng vStorage credentials trên tài nguyên vStorage tại:
 
-* [Cách hoạt động của vStorage credentials](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804855)
+* [Cách hoạt động của vStorage credentials](./#iamidentities-vstoragecredentials)
 
 #### Identity Provider <a href="#iamidentities-identityprovider" id="iamidentities-identityprovider"></a>
 
@@ -54,15 +54,6 @@ Identity Providers là dịch vụ cho phép người dùng xác thực danh tí
 
 Tìm thêm hướng dẫn chi tiết tại:
 
-* [Quản lý Identity Providers](https://docs.vngcloud.vn/display/ONVINA/Identity+Providers)\
+* [Quản lý Identity Providers](thiet-lap-identity-providers.md)\
 
 
-Các chủ đề liên quan đến IAM Identities
-
-* [Quản lý User Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59806682).
-* [Quản lý User Group](https://docs.vngcloud.vn/display/ONVINA/User+Groups)
-* [Quản lý S](https://docs.vngcloud.vn/display/ONVINA/Service+accounts)[ervice Account](https://docs.vngcloud.vn/display/ONVINA/Service+accounts)
-* [Cách hoạt động của vStorage credentials](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804855)
-* [Quản lý Identity Providers](https://docs.vngcloud.vn/display/ONVINA/Identity+Providers)
-
-\

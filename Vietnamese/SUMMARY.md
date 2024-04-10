@@ -639,6 +639,7 @@
     * [IAM cho vServer](identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vserver.md)
     * [IAM cho vStorage](identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vstorage.md)
     * [IAM cho vMonitor](identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vmonitor.md)
+    * [IAM cho DataSync](identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-datasync.md)
   * [Các loại Định danh IAM](identity-and-access-management-iam/cac-loai-dinh-danh-iam/README.md)
     * [Tài khoản User Accounts](identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/README.md)
       * [Cách đăng nhập vào VNG Cloud](identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)

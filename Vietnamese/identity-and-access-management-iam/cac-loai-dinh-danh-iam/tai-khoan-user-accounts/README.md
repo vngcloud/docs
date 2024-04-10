@@ -68,14 +68,10 @@ Bạn có thể xóa IAM User Account bằng cách làm theo 2 lựa chọn dư�
    4. Nhấp vào nút "**Delete**", một cửa sổ xuất hiện để xác nhận rằng bạn không xóa nhầm tài khoản, sau đó nhấp vào nút "**Confirm**" để hoàn tất quá trình.
 2. **Xóa một IAM User Account:** Chúng tôi khuyên bạn nên truy cập vào chi tiết của IAM User Account và sau đó tiến hành xóa để đảm bảo bạn không xóa nhầm người dùng sai.
 
-\
-
-
 Note
 
 Lưu ý rằng một khi đã xóa, các IAM User Account sẽ không thể khôi phục lại được
 
-\
 
 
 ***
