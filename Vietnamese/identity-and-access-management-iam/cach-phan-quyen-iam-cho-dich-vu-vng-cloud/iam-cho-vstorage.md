@@ -1,4 +1,4 @@
-# IAM for vStorage
+# IAM cho vStorage
 
 IAM là yếu tố cần thiết để bảo vệ tài nguyên trong các dịch vụ của vStorage. Nếu thiếu kiểm soát truy cập đúng đắn, người dùng trái phép có thể truy cập vào dữ liệu nhạy cảm hoặc làm gián đoạn các hoạt động quan trọng. IAM giúp thực thi nguyên tắc đặc quyền tối thiểu, giảm thiểu các bề mặt tấn công tiềm năng và bảo vệ các tài nguyên máy chủ của bạn khỏi việc truy cập trái phép và xâm nhập dữ liệu.
 
@@ -26,7 +26,7 @@ Hướng dẫn này nhằm hướng dẫn người dùng có thể nhanh chóng 
 3. Sau khi đăng nhập, bạn sẽ thấy tổng quan về trang web vStorage.
 4. Thử truy cập vào các trang Storage, Report và Integration bạn sẽ thấy thông báo về quyền bị giới hạn như dưới đây.
 
-![](https://docs.vngcloud.vn/download/attachments/59806586/image2023-8-1\_16-51-34.png?version=1\&modificationDate=1690883495000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/59806586/image2023-8-1_16-51-34.png?version=1&#x26;modificationDate=1690883495000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 Lưu ý
 
@@ -66,8 +66,9 @@ VNG Managed Policy là các Chính Sách IAM (IAM Policy) được tạo mặc �
 
 ### **3. Khám phá chi tiết cách sử dụng IAM cho vStorage** <a href="#iamforvstorage-3.khamphachitietcachsudungiamchovstorage" id="iamforvstorage-3.khamphachitietcachsudungiamchovstorage"></a>
 
-* Tìm hiểu thêm về IAM cho vStorage: [Quản lý định danh và truy cập (IAM) cho vSt](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648486)[orage](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648486)
-* Tìm hiểu thêm về IAM:
-  * IAM Identity: [IAM Identities](https://docs.vngcloud.vn/display/ONVINA/IAM+Identities)
-  * Quản lý Truy cập IAM: [IAM Access Management](https://docs.vngcloud.vn/display/ONVINA/IAM+Access+Management)
-  * Các trường hợp sử dụng thông thường của IAM: [Example of Common Use Cases](https://docs.vngcloud.vn/display/ONVINA/Example+of+Common+Use+Cases)
+* Tìm hiểu thêm về IAM cho vStorage: [Quản lý định danh và truy cập (IAM) cho vSt](iam-cho-vstorage.md)[orage](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648486)
+
+Tìm hiểu thêm về IAM:
+
+* [IAM Identity](../quan-ly-truy-cap-iam/)
+* [Các trường hợp sử dụng thông thường của IAM](../ung-dung-pho-bien/)

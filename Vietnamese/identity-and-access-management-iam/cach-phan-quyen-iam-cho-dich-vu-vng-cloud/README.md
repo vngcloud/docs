@@ -6,7 +6,7 @@ IAM hoạt động bằng cách xác thực danh tính của người dùng và 
 
 Nguyên tắc đặc quyền tối thiểu là yếu tố cơ bản trong IAM, đảm bảo rằng người dùng và dịch vụ chỉ có các quyền tối thiểu cần thiết để thực hiện nhiệm vụ của họ, giảm thiểu nguy cơ truy cập trái phép. Tiếp cận tập trung của IAM tối ưu hóa quản lý truy cập, tăng cường bảo mật và giúp các tổ chức tuân thủ các yêu cầu quy định trong môi trường tính toán đám mây.
 
-![](https://docs.vngcloud.vn/download/attachments/59806582/image2023-5-17\_17-31-9.png?version=1\&modificationDate=1689932521000\&api=v2)
+<figure><img src="https://docs.vngcloud.vn/download/attachments/59806582/image2023-5-17_17-31-9.png?version=1&#x26;modificationDate=1689932521000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 Model quản lý truy cập này bao gồm năm phần chính:
 
@@ -54,6 +54,6 @@ Sau khi xác thực thành công, hệ thống tiến hành quá trình ủy quy
 
 Có ba dòng sản phẩm chính trong hệ thống VNG Cloud, hãy điều hướng đến hướng dẫn chi tiết để biết cách áp dụng IAM với các sản phẩm cụ thể:
 
-1. **vServer:** [IAM for vServer](https://docs.vngcloud.vn/display/ONVINA/IAM+for+vServer)
-2. **vStorage:**[ IAM for vStorage](https://docs.vngcloud.vn/display/ONVINA/IAM+for+vStorage)
-3. **vMonitor:** [IAM for vMonitor](https://docs.vngcloud.vn/display/ONVINA/IAM+for+vMonitor)
+1. **vServer:** [IAM cho vServer](iam-cho-vserver.md)
+2. **vStorage:**[ IAM cho vStorage](iam-cho-vstorage.md)
+3. **vMonitor:** [IAM cho vMonitor](iam-cho-vmonitor.md)
