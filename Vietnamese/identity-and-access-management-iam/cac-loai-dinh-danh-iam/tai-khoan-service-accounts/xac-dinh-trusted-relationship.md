@@ -14,7 +14,9 @@ Trusted relationships giữa các Root User Account được thiết lập thôn
 
 1. Truy cập vào IAM bằng Root User Account A hoặc IAM User Account của Root A đã được phân quyền.
 2. Thêm **Root User Account B là Trusted Partner** cho **Service Account**, theo 1 trong 2 cách sau đây:
-   1. Thêm khi tạo mới Service Account: điền ID của Root User Account vào field như hình bên dưới![](https://docs.vngcloud.vn/download/attachments/63766845/image2023-7-27\_15-13-9.png?version=1\&modificationDate=1691054186000\&api=v2)
+   1.  Thêm khi tạo mới Service Account: điền ID của Root User Account vào field như hình bên dưới
+
+       <figure><img src="https://docs.vngcloud.vn/download/attachments/63766845/image2023-7-27_15-13-9.png?version=1&#x26;modificationDate=1691054186000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
    2. Thêm cho một Service Account đã có: **Truy cập vào Service Account** cần chỉnh sửa → Truy cập vào tab **"Trusted Relationships"** → Nhấp vào nút **"Add trusted relationships"** → Điền **ID của Root User Account B**![](https://docs.vngcloud.vn/download/attachments/63766845/image2023-7-27\_15-19-27.png?version=1\&modificationDate=1691054186000\&api=v2)
 3. Như vậy, bạn đã **thành công ủy quyền truy cập cho Root User Account B** thông qua một Service Account
 
@@ -25,7 +27,7 @@ Trusted relationships giữa các Root User Account được thiết lập thôn
 
 #### 2. Phân quyền Impersonate (mạo danh tài khoản) cho IAM User Account <a href="#trustedrelationship-2.phanquyenimpersonate-maodanhtaikhoan-choiamuseraccount" id="trustedrelationship-2.phanquyenimpersonate-maodanhtaikhoan-choiamuseraccount"></a>
 
-Đầu tiên, chúng tôi khuyến nghị bạn nên tìm hiểu cách [**Quản lý Truy cập (Access Management)**](https://docs.vngcloud.vn/display/ONVINA/IAM+Policies) thông qua **Chính sách (Policy)** trước khi đi sâu vào hướng dẫn bên dưới.
+Đầu tiên, chúng tôi khuyến nghị bạn nên tìm hiểu cách [**Quản lý Truy cập (Access Management)**](../../quan-ly-truy-cap-iam/chinh-sach-vng-managed-policy.md) thông qua **Chính sách (Policy)** trước khi đi sâu vào hướng dẫn bên dưới.
 
 **Để phân quyền Impersonate (mạo danh tài khoản) cho IAM User Account:**
 
@@ -42,6 +44,10 @@ Trusted relationships giữa các Root User Account được thiết lập thôn
 #### 3. IAM User Account thực hiện Impersonate (mạo danh tài khoản) <a href="#trustedrelationship-3.iamuseraccountthuchienimpersonate-maodanhtaikhoan" id="trustedrelationship-3.iamuseraccountthuchienimpersonate-maodanhtaikhoan"></a>
 
 1. Truy cập vào IAM bằng IAM User Account của Root B (tài khoản được ủy quyền ở Bước 2).
-2. Nhấp vào "**Impersonate service account**" trong danh sách thả xuống như hình ảnh dưới đây.![](https://docs.vngcloud.vn/download/thumbnails/63766845/image2023-7-27\_16-59-34.png?version=1\&modificationDate=1691054186000\&api=v2)
-3. Nhập **ID của Service Account** được chia sẻ bởi Root User Account A (ở bước 1) và Tên hiển thị. Sau đó, nhấn vào nút "**Go**" để hoàn tất quy trình. Dưới đây là hình ảnh hướng dẫn:![](https://docs.vngcloud.vn/download/thumbnails/63766845/image2023-7-27\_17-6-36.png?version=1\&modificationDate=1691054186000\&api=v2)
+2.  Nhấp vào "**Impersonate service account**" trong danh sách thả xuống như hình ảnh dưới đây.
+
+    <figure><img src="https://docs.vngcloud.vn/download/thumbnails/63766845/image2023-7-27_16-59-34.png?version=1&#x26;modificationDate=1691054186000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+3.  Nhập **ID của Service Account** được chia sẻ bởi Root User Account A (ở bước 1) và Tên hiển thị. Sau đó, nhấn vào nút "**Go**" để hoàn tất quy trình. Dưới đây là hình ảnh hướng dẫn:
+
+    <figure><img src="https://docs.vngcloud.vn/download/thumbnails/63766845/image2023-7-27_17-6-36.png?version=1&#x26;modificationDate=1691054186000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 4. Sau khi thành công trong việc mạo danh, IAM User Account của Root B có thể thực hiện tất cả các quyền giống như Service Account được chia sẻ bởi Root A. Điều này cho phép IAM User Account được ủy quyền này truy cập vào các tài nguyên và dịch vụ cụ thể mà Service Account được cấp quyền bởi Root A.
