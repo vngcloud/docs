@@ -1,4 +1,4 @@
-# 🏴󠁧󠁢󠁥󠁮󠁧󠁿 VNG Cloud Help Center
+# 🇬🇧 VNG Cloud Help Center
 
 ## Overview
 
