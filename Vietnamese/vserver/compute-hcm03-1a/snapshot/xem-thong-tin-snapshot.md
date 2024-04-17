@@ -1,5 +1,7 @@
 # Xem thông tin Snapshot
 
+Sau khi tạo Snapshot cho máy chủ ảo và ổ đĩa, bạn có thể xem thông tin danh sách Snapshot đã tạo theo hướng dẫn bên dưới:
+
 #### Bảng điều khiển <a href="#xemthongtinsnapshot-bangdieukhien" id="xemthongtinsnapshot-bangdieukhien"></a>
 
 1. Mở bảng điều khiển vServer tại [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
