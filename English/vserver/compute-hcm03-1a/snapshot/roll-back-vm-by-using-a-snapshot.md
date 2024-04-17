@@ -1,67 +1,68 @@
 # Roll back VM by using a snapshot
 
-Bạn có thể khôi phục ổ đĩa ảo hoặc máy chủ ảo bằng các bản Snapshot đã tạo, nội dung bên dưới mô tả cách khôi phục máy chủ ảo bằng các bản Snapshot.
+You can restore virtual disks or virtual servers using previously created snapshots. The following describes how to restore a virtual server using snapshots.
 
-Sử dụng bản Snapshot cho phép bạn khôi phục dữ liệu và hệ thống nhanh chóng sau khi xảy ra sự cố. Điều này giúp giảm thời gian chịu ảnh hưởng của hệ thống. Đồng thời Khôi phục Snapshot là cách an toàn để sao lưu dữ liệu quan trọng của bạn. Nó đảm bảo rằng bạn có thể khôi phục dữ liệu và ổ đĩa trong trường hợp cần thiết, như lỗi phần cứng, lỗi phần mềm hoặc xóa dữ liệu một cách không cẩn thận. So với việc tái cấu hình và khôi phục hệ thống từ đầu, việc sử dụng Snapshot tiết kiệm thời gian và công sức đáng kể.
-
-***
-
-### **Các trường hợp cần khôi phục máy chủ ảo** <a href="#khoiphucmaychuaobangbansnapshot-cactruonghopcankhoiphucmaychuao" id="khoiphucmaychuaobangbansnapshot-cactruonghopcankhoiphucmaychuao"></a>
-
-* **Sự cố hệ thống nghiêm trọng**: Khi máy chủ ảo gặp sự cố nghiêm trọng không thể khắc phục hoặc gây ảnh hưởng lớn đến dịch vụ và dữ liệu, bạn có thể xem xét khôi phục máy chủ ảo từ một bản sao lưu gần đây để khôi phục dịch vụ và dữ liệu.
-* **Lỗi phần mềm cụ thể**: Nếu máy chủ ảo gặp lỗi phần mềm cụ thể hoặc không hoạt động đúng cách sau khi cài đặt hoặc cập nhật phần mềm, bạn có thể khôi phục máy chủ ảo về trạng thái trước khi lỗi xảy ra.
-* **Rủi ro bảo mật**: Nếu máy chủ ảo của bạn bị tấn công mạng hoặc có nghi ngờ về việc xâm nhập, bạn nên xem xét khôi phục máy chủ ảo từ một thời điểm trước khi rủi ro xảy ra để loại bỏ các lỗ hổng bảo mật.
-* **Thử nghiệm và phát triển**: Trong quá trình phát triển ứng dụng hoặc thử nghiệm các cấu hình mới, bạn có thể khôi phục máy chủ ảo về trạng thái ban đầu sau khi thử nghiệm để làm sạch môi trường và chuẩn bị cho các bước thử nghiệm tiếp theo.
-* **Tạo môi trường thử nghiệm**: Nếu bạn cần tạo một môi trường thử nghiệm hoàn toàn mới, bạn có thể khôi phục máy chủ ảo từ bản sao lưu hoặc snapshot để có môi trường làm việc riêng biệt.
-* **Lỗi người dùng cuối**: Nếu người dùng cuối hoặc người quản trị máy chủ ảo của bạn gây ra lỗi nghiêm trọng trên hệ thống, bạn có thể xem xét khôi phục máy chủ ảo để loại bỏ các thay đổi không mong muốn.
-* **Phục hồi dữ liệu nhầm**: Nếu bạn xóa dữ liệu quan trọng hoặc thay đổi sai dữ liệu trên máy chủ ảo, bạn có thể khôi phục máy chủ ảo từ một bản sao lưu gần đây để khôi phục dữ liệu mất mát.
+Using snapshots allows you to quickly restore data and systems after incidents, reducing system downtime. It's a safe way to back up your important data, ensuring that you can recover data and disks as needed, such as in the case of hardware failures, software errors, or accidental data deletion. Compared to reconfiguring and restoring systems from scratch, using snapshots saves significant time and effort.
 
 ***
 
-### **Rủi ro** <a href="#khoiphucmaychuaobangbansnapshot-ruiro" id="khoiphucmaychuaobangbansnapshot-ruiro"></a>
+### **Cases for VM Recovery** <a href="#khoiphucmaychuaobangbansnapshot-cactruonghopcankhoiphucmaychuao" id="khoiphucmaychuaobangbansnapshot-cactruonghopcankhoiphucmaychuao"></a>
 
-* **Dữ liệu lỗi:** Nếu bạn sử dụng một Snapshot đã lỗi hoặc chứa dữ liệu bị hỏng, việc khôi phục có thể đưa ra dữ liệu không đúng hoặc dữ liệu bị hỏng. Điều này đặc biệt quan trọng nếu bạn không kiểm tra Snapshot trước khi sử dụng nó.
-* **Thời gian tạo Snapshot:** Nếu bạn tạo Snapshot không đều đặn hoặc không đủ thường xuyên, bạn có thể mất dữ liệu quan trọng nếu sự cố xảy ra giữa các lần tạo Snapshot. Thời gian cách biệt giữa các Snapshot cũng ảnh hưởng đến khả năng khôi phục dữ liệu.
-* **Chi phí lưu trữ:** Việc duy trì nhiều Snapshot có thể tạo ra chi phí lưu trữ đáng kể. Bạn cần xem xét cân nhắc giữa lợi ích của việc lưu trữ nhiều Snapshot và chi phí tương ứng.
-* **Sự cẩn thận trong quản lý Snapshot:** Quản lý các bản Snapshot đòi hỏi sự cẩn thận để đảm bảo rằng bạn không xóa nhầm các bản sao lưu quan trọng hoặc duy trì quá nhiều bản sao lưu không cần thiết.
+* **Serious System Failures**: When a virtual server encounters a severe, unrecoverable failure that significantly impacts services and data, you may consider restoring the virtual server from a recent backup to restore services and data.
+* **Specific Software Errors:** If the virtual server experiences specific software errors or malfunctions after installation or software updates, you can restore the virtual server to a state before the error occurred.
+* **Security Risks:** If your virtual server is compromised by a network attack or there are suspicions of intrusion, you should consider restoring the virtual server from a point before the risk occurred to eliminate security vulnerabilities.
+* **Testing and Development**: During application development or testing of new configurations, you can restore the virtual server to its initial state after testing to clean up the environment and prepare for further testing steps.
+* **Creating Test Environments**: If you need to create a completely new test environment, you can restore the virtual server from a backup or snapshot to have a separate working environment. End-User Errors: If end users or virtual server administrators cause serious errors in the system, you may consider restoring the virtual server to remove unintended changes.
+* **End-User Errors:** If end users or virtual server administrators cause serious errors in the system, you may consider restoring the virtual server to remove unintended changes.
+* **Data Recovery Mistakes:** If you accidentally delete important data or make incorrect changes to data on the virtual server, you can restore the virtual server from a recent backup to recover lost data.
 
-Việc sử dụng bản Snapshot để khôi phục máy chủ ảo có nhiều lợi ích quan trọng, nhưng cũng đi kèm với những rủi ro cần phải cân nhắc và quản lý một cách cẩn thận. Điều quan trọng là phải thực hiện các biện pháp bảo mật và kiểm tra tính toàn vẹn của Snapshot trước khi thực hiện việc khôi phục dữ liệu.
+***
+
+### **Risks** <a href="#khoiphucmaychuaobangbansnapshot-ruiro" id="khoiphucmaychuaobangbansnapshot-ruiro"></a>
+
+* **Corrupted Data:** If you use a corrupted or damaged snapshot, restoration may result in incorrect or corrupted data. This is particularly important if you don't check the snapshot before using it.
+* **Snapshot Creation Time**: If you create snapshots irregularly or infrequently, you may lose important data if an incident occurs between snapshot creations. The time gap between snapshots also affects data recovery capabilities.
+* **Storage Costs:** Maintaining multiple snapshots can incur significant storage costs. You need to consider the balance between the benefits of storing multiple snapshots and the corresponding costs.
+* **Careful Snapshot Management:** Managing snapshots requires careful attention to ensure you don't accidentally delete important backups or maintain too many unnecessary backups.
+
+Using snapshots to restore VM has many important benefits but also comes with risks that need careful consideration and management. It's important to implement security measures and verify snapshot integrity before performing data recovery."
 
 \
 
 
 ***
 
-Ghi chú
+Notes
 
-Bạn chỉ có thể khôi phục máy chủ ảo với bản Snapshot của Boot Volume.
+You can only restore a virtual server with a Snapshot of the Boot Volume.
 
-### **Khôi phục máy chủ ảo bằng Snapshot trên bảng điều khiển** <a href="#khoiphucmaychuaobangbansnapshot-khoiphucmaychuaobangsnapshottrenbangdieukhien" id="khoiphucmaychuaobangbansnapshot-khoiphucmaychuaobangsnapshottrenbangdieukhien"></a>
+### **Restoring a VM with a Snapshot on the Dashboard** <a href="#khoiphucmaychuaobangbansnapshot-khoiphucmaychuaobangsnapshottrenbangdieukhien" id="khoiphucmaychuaobangbansnapshot-khoiphucmaychuaobangsnapshottrenbangdieukhien"></a>
 
-1. Mở bảng điều khiển vServer tại [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
-2. Trong ngăn điều hướng, chọn **Snapshot**.
-3. Chọn Snapshot của bản Boot Volume tại trang danh sách rồi chọn **Hành động**, nhấn Rollback Server**.**
+1. Open the vServer Dashboard at [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
+2. In the navigation sidebar, select **Snapshot.**
+3. Choose the Snapshot of the Boot Volume on the list page, then select **Actions**, press Rollback Server.
 
-### **Tạo máy chủ (Server) bằng Snapshot trên Màn hình Tạo Server**  <a href="#khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhtaoserversnapshotcreateserve" id="khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhtaoserversnapshotcreateserve"></a>
+### **Create Server with a Snapshot on the Create Server Screen** <a href="#khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhtaoserversnapshotcreateserve" id="khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhtaoserversnapshotcreateserve"></a>
 
-1. Đăng nhập và mở bảng điều kiển vServer tại [https://hcm-3.console.vngcloud.vn/vserver](https://hcm-3.console.vngcloud.vn/vserver/);
-2. Trong ngăn điều hướng, chọn **Servers**;
-3. Chọn nút "**Tạo Server**" (Create a Server), để điều hướng tới màn hình Tạo Server;
-4. Để cấu hình Tạo Server bằng trên snapshot. Tại mục "**Cấu hình cơ bản/Image**" chọn Tab "**My snapshot**";
-5. User có thể chọn bản snapshot phù hợp để tạo lại Server với thời điểm tương ứng.
+1. Log in and open the vServer dashboard at [https://hcm-3.console.vngcloud.vn/vserver](https://hcm-3.console.vngcloud.vn/vserver/);
+2. In the navigation sidebar, select **Server**;
+3. Choose the "**Create a Server**" button to navigate to the Create Server screen;
+4. To configure Creating a Server with the snapshot. In the "**Basic Configuration/Image**" section, select the "**My snapshot**" tab;
+5. Users can select the appropriate snapshot to recreate the Server at the corresponding time.
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/64554116/image2024-3-25_9-46-42.png?version=1&#x26;modificationDate=1711334805000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-Lưu ý
+Note
 
-Khi cấu hình tạo Server mới bằng Snapshot, user vẫn thực hiện thao tác cấu hình ở các mục khác (Loại cấu hình, volume, Cài đặt mạng, Cài đặt khác) như thông thường, xem hướng dẫn ở link.
+When configuring a new Server creation with Snapshot, users still perform configuration operations in other sections (Configuration type, volume, Network settings, Other settings) as usual, see instructions at the link..
 
-### **Tạo máy chủ (Server) bằng Snapshot trên Màn hình Snapshot** <a href="#khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhsnapshot" id="khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhsnapshot"></a>
+### **Create a Server with a Snapshot on the Snapshot Screen** <a href="#khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhsnapshot" id="khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhsnapshot"></a>
 
-1. Đăng nhập và mở bảng điều kiển vServer tại [https://hcm-3.console.vngcloud.vn/vserver](https://hcm-3.console.vngcloud.vn/vserver/);
-2. Trong ngăn điều hướng, chọn **Snapshot**;
-3. Tại màn hình danh sách Snapshot, User **click chọn vào một Snapshot Server**, để điều hướng đến màn hình thông tin chi tiết.
-4. Tại màn hình chi tiết của Snapshot Server, User chọn Tab "**Restore Point**".
-5. Sau đó chọn bản Snapshot tương ứng muốn tạo Server, bằng cách click vào nút hành động, chọn "**Tạo server**".
-6. Màn hành điều hướng tới màn hình Tạo Server với tùy chọn file Snapshot đã chọn, và tiếp tục thao tác giống "Tạo Server bằng Snapshot trên Màn hình Tạo Server" như trên./.
+1. Log in and open the vServer dashboard at [https://hcm-3.console.vngcloud.vn/vserver](https://hcm-3.console.vngcloud.vn/vserver/);
+2. In the navigation sidebar, select **Snapshot**;
+3. On the Snapshot list screen, User **clicks on a Snapshot Server** to navigate to the detailed information screen.
+4. On the detailed screen of the Snapshot Server, User selects the "**Restore Point**" tab.
+5. Then select the corresponding Snapshot version to create the Server, by clicking on the action button, choose "**Create server**".
+6. Navigate to the Create Server screen with the selected Snapshot file option, and continue the operation similar to "Creating a Server with Snapshot on the Create Server Screen" as above../.
 
+<figure><img src="https://docs.vngcloud.vn/download/attachments/64554116/image2024-3-25_10-11-32.png?version=1&#x26;modificationDate=1711336295000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
