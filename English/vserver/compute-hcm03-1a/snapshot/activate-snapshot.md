@@ -9,3 +9,9 @@ Activating the Snapshot service is free. However, after you create a Snapshot, b
 1\. Access the Snapshot dashboard at [https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot](https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot).
 
 2\. On the Snapshot page, locate and click on "**Activate Snapshot service**".
+
+***
+
+### Next step
+
+With the Snapshot service now activated, you can proceed to create snapshots for your servers or virtual disks according to the [Create Snapshot](create-snapshots.md) guide.
