@@ -53,6 +53,6 @@ The snapshot process operates asynchronously. Even though the point-in-time snap
 
 ### **Snapshot Encryption** <a href="#taosnapshot-mahoasnapshot" id="taosnapshot-mahoasnapshot"></a>
 
-Snapshot encryption ensures the security of your data in cloud environments. When snapshots are created from encrypted disks, they are automatically encrypted, safeguarding the data during storage and transmission. This encryption mechanism provides comprehensive protection for both the disk and any related snapshots. For further details, please refer to the documentation on Volume encryption.&#x20;
+Snapshot encryption ensures the security of your data in cloud environments. When snapshots are created from encrypted disks, they are automatically encrypted, safeguarding the data during storage and transmission. This encryption mechanism provides comprehensive protection for both the disk and any related snapshots. For further details, please refer to the documentation on [Volume encryption.](../instance/compute-encryption-volume/)&#x20;
 
 \
