@@ -47,7 +47,7 @@
       * [Roll back VM by using a snapshot](vserver/compute-hcm03-1a/snapshot/roll-back-vm-by-using-a-snapshot.md)
       * [Roll back a disk by using a snapshot](vserver/compute-hcm03-1a/snapshot/roll-back-a-disk-by-using-a-snapshot.md)
       * [Delete Snapshot](vserver/compute-hcm03-1a/snapshot/delete-snapshot.md)
-      * [How to calculate a Snapshot Service Price](vserver/compute-hcm03-1a/snapshot/how-to-calculate-a-snapshot-service-price.md)
+      * [How to calculate a Snapshot Service Charges](vserver/compute-hcm03-1a/snapshot/how-to-calculate-a-snapshot-service-charges.md)
       * [Disable Snapshot Service](vserver/compute-hcm03-1a/snapshot/disable-snapshot-service.md)
       * [UseCase Snapshot](vserver/compute-hcm03-1a/snapshot/usecase-snapshot/README.md)
         * [Disaster Recovery](vserver/compute-hcm03-1a/snapshot/usecase-snapshot/disaster-recovery.md)
