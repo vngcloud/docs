@@ -1,27 +1,27 @@
 # Disable Snapshot Service
 
-Đôi khi, dịch vụ Snapshot cho tài khoản của bạn có thể bị tạm ngừng hoạt động vì một vài lý do cụ thể. Hướng dẫn này sẽ giúp bạn hiểu rõ lý do đằng sau việc tạm ngừng này và cung cấp các bước hướng dẫ
+Sometimes, your Snapshot service may be temporarily suspended for specific reasons. This guide will help you understand the reasons behind this suspension and provide steps to troubleshoot and reactivate the service quickly.
 
-**Nguyên nhân thường gặp**
+**Common Causes:**
 
-1. 1.**Số dư trả trước không đủ**: Nếu bạn là người dùng trả trước, đang sử dụng kế hoạch thanh toán với hình thức tạm giữ credit, và số dư tài khoản của bạn giảm xuống dưới mức ngưỡng yêu cầu, dịch vụ Snapshot có thể bị tạm ngừng hoạt động.
-2. 2.**Vấn đề liên quan đến thanh toán**: Các khoản thanh toán chưa được thực hiện hoặc có sự không rõ ràng về thanh toán có thể dẫn đến tình trạng tạm ngừng dịch vụ.
-3. 3.**Vi phạm chính sách**: Vi phạm các chính sách sử dụng dịch vụ hoặc các điều khoản dịch vụ có thể dẫn đến tạm ngừng dịch vụ Snapshot.
-4. 4.**Sử dụng tài nguyên vượt quá**: Sử dụng quá mức tài nguyên của dịch vụ Snapshot, bao gồm không gian lưu trữ, có thể dẫn đến tình trạng tạm ngừng.
-5. 5.**Vấn đề an ninh**: Các vấn đề liên quan đến bảo mật có thể đòi hỏi tạm ngừng dịch vụ để bảo vệ dữ liệu của bạn và cơ sở hạ tầng của chúng tôi.
+1. **Insufficient Prepaid Balance:** If you are a prepaid user, using a payment plan with credit hold, and your account balance drops below the required threshold, the Snapshot service may be temporarily suspended.
+2. **Payment-related Issues:** Uncompleted payments or unclear payment issues can lead to service suspension.
+3. **Policy Violations:** Violating service usage policies or terms of service may result in Snapshot service suspension.
+4. **Excessive Resource Usage:** Using excessive resources of the Snapshot service, including storage space, can lead to suspension.
+5. **Security Issues:** Security-related issues may require service suspension to protect your data and our infrastructure.
 
-**Bước để khắc phục và Kích hoạt lại dịch vụ Snapshot**
+**Steps to Troubleshoot and Reactivate Snapshot Service:**
 
-Nếu dịch vụ Snapshot của bạn đã bị tạm ngừng, hãy tuân theo các bước sau để khắc phục vấn đề và kích hoạt lại dịch vụ:
+If your Snapshot service has been temporarily suspended, follow these steps to troubleshoot and reactivate the service:
 
-1. 1.**Kiểm tra thông báo**: Kiểm tra email hoặc thông báo tài khoản của bạn để tìm thông điệp liên quan đến việc tạm ngừng dịch vụ Snapshot. Những thông báo này thường cung cấp thông tin cụ thể về vấn đề.
-2. 2.**Xác định nguyên nhân gốc rễ**: Xem xét thông báo để xác định nguyên nhân gốc rễ của tình trạng tạm ngừng. Đó có thể là liên quan đến vấn đề thanh toán, sử dụng tài nguyên hoặc vi phạm chính sách.
-3. 3.**Vấn đề thanh toán**: Nếu tạm ngừng liên quan đến vấn đề thanh toán hoặc không đủ số dư, hãy đảm bảo rằng số dư tài khoản đủ để tiếp tục sử dụng dịch vụ và không còn nợ hóa đơn dịch vụ nào. Khắc phục bất kỳ sai sót về thanh toán nào.
-4. 4.**Quản lý tài nguyên**: Nếu vấn đề liên quan đến việc sử dụng tài nguyên quá mức, hãy xem xét cách quản lý tài nguyên của dịch vụ Snapshot một cách hiệu quả hơn. Có thể bạn cần xóa các bản snapshot không cần thiết hoặc tối ưu hóa việc sử dụng.
-5. 5.**Vi phạm chính sách**: Nếu vi phạm chính sách là nguyên nhân, xem xét lại chính sách sử dụng dịch vụ và các điều khoản dịch vụ. Thực hiện các điều chỉnh cần thiết để tuân thủ các hướng dẫn.
-6. 6.**Liên hệ hỗ trợ**: Nếu bạn không thể tự giải quyết vấn đề, hãy liên hệ với đội ngũ hỗ trợ của chúng tôi (họ có thể cung cấp hướng dẫn và làm sáng tỏ về lý do tạm ngừng dịch vụ) theo các cách sau:
+1. **Check Notifications:** Check your email or account notifications to find messages related to the suspension of the Snapshot service. These notifications often provide specific information about the issue.
+2. **Identify the Root Cause:** Review the notification to determine the root cause of the suspension. It could be related to payment issues, resource usage, or policy violations.
+3. **Payment Issue:** If the suspension is due to payment problems or insufficient balance, ensure that your account balance is sufficient to continue using the service and that there are no outstanding service bill payments. Rectify any payment errors.
+4. **Resource Management:** If the issue is related to excessive resource usage, consider managing the resources of the Snapshot service more effectively. You may need to delete unnecessary snapshots or optimize usage.
+5. **Policy Violation:** If policy violation is the cause, review the service usage policies and terms of service. Make any necessary adjustments to comply with the guidelines.
+6. **Contact Support:** If you are unable to resolve the issue on your own, contact our support team (they can provide guidance and clarification on the reason for the service suspension) using the following methods:
    * Email [**support@vngcloud.vn**](mailto:support@vngcloud.vn) or hotline **19001549 – Ext 3.**
    * Open ticket: [https://vngcloud.vn/en/web/guest/contact](https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fu12870758.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3D6Th82stgZiRII4JWBZ2k-2F8jp0RwIXS6fxA7KQMXjUq8DSCsrmL59yXstoJFgaU1dGY-2FSWg-2FK9UdGxb9Lh9dNFA-3D-3DpvNZ\_Ym-2Fxt4z9Amb7foJoUGq7k-2FFaxzUNhQVDcUTybZdrS2NXAbbCaEQkSCrQOhYjTHUSbv6080NfkWdCEMWKJJF2zpfOBUaPuOIa3OzTC0yp1D9JlA3uof8O-2BtBLR8V2gs8RQIrzb7xDzuI-2FW-2BVnmHahaTWks-2FX1rqpdHNVHwVyZ6vhj-2BZLRAIyEc2XrBxbfG0QrF7-2FsBJLgoViI1e7tTyjc8Q-3D-3D\&data=05%7C01%7Ctult4%40vng.com.vn%7C7e33555fd46c4091057908db827ef130%7C7c112a6e10e24e09afc42e37bc60d821%7C0%7C0%7C638247253964298461%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C\&sdata=VmVhSabKwqQW2lPslozGS3cQzp0jF4ShJuofnhGp%2Fzs%3D\&reserved=0)​
-7. 7.**Kích hoạt lại dịch vụ**: Sau khi bạn đã khắc phục nguyên nhân gốc rễ gây ra việc tạm ngừng dịch vụ, hãy liên hệ với đội ngũ hỗ trợ của chúng tôi để yêu cầu kích hoạt lại dịch vụ Snapshot của bạn. Cung cấp thông tin về các bước bạn đã thực hiện để khắc phục vấn đề.
+7. **Reactivate the Service:** After addressing the root cause of the service suspension, contact our support team to request reactivation of your Snapshot service. Provide information about the steps you have taken to resolve the issue.
 
 \
