@@ -1,3 +1,10 @@
+---
+description: >-
+  From April 19, 2024, VNG Cloud has changed the user guide UI platform. The
+  content remains unchanged which based on docs.vngcloud.vn and continues to be
+  updated in the new UI.
+---
+
 # 🇬🇧 VNG Cloud Help Center
 
 ## Overview
