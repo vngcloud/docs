@@ -1,3 +1,9 @@
+---
+description: >-
+  Từ 19/4/2024, VNG Cloud chuyển đổi nền tảng trang hướng dẫn sử dụng dịch vụ.
+  Các nội dung không thay đổi và vẫn được tiếp tục cập nhật tại giao diện mới.
+---
+
 # 🇻🇳 VNG Cloud Help Center
 
 ## Overview
