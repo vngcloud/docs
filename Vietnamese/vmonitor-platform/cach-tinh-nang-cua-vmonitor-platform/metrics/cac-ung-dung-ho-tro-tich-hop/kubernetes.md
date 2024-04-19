@@ -160,7 +160,7 @@ Mặc định, vMonitor metric agent sẽ có 2 thành phần: deployment dùng 
 | `helm repo add vmonitor https://vngcloud.github.io/helm-charts-vmonitor/helm repo update`  |
 | ------------------------------------------------------------------------------------------ |
 
-* Cài đặt vmonitor-metric-agent từ helm repository, mặc định sẽ được cài đặt ở namespace:default, nếu bạn muốn cài ở namespace khác, thì thêm option –n ở command bên dưới, để lấy **API\_Key** bạn tham khảo hướng dẫn: [Hướng dẫn tạo và lấy API\_KEY](https://docs.vngcloud.vn/pages/viewpage.action?pageId=31555663), bạn có thể thay đổi tên **vng-vmonitor-metric-agent** thành bất kì tên nào bạn muốn và đổi **k8s-cluster-name** thành tên Kubernetes Cluster của bạn
+* Cài đặt vmonitor-metric-agent từ helm repository, mặc định sẽ được cài đặt ở namespace:default, nếu bạn muốn cài ở namespace khác, thì thêm option –n ở command bên dưới, bạn có thể thay đổi tên **vng-vmonitor-metric-agent** thành bất kì tên nào bạn muốn và đổi **k8s-cluster-name** thành tên Kubernetes Cluster của bạn
 
 | `helm install vmonitor-metric-agent --set vmonitor.apiKey=<API_KEY> --set vmonitor.clusterName=k8s-cluster vmonitor/vmonitor-metric-agent`  |
 | ------------------------------------------------------------------------------------------------------------------------------------------- |
