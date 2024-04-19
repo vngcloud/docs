@@ -1,11 +1,6 @@
----
-description: >-
-  Đôi khi, dịch vụ Snapshot cho tài khoản của bạn có thể bị tạm ngừng hoạt động
-  vì một vài lý do cụ thể. Hướng dẫn này sẽ giúp bạn hiểu rõ lý do đằng sau việc
-  tạm ngừng này và cung cấp các bước hướng dẫ
----
-
 # Vô hiệu hóa dịch vụ Snapshot
+
+Đôi khi, dịch vụ Snapshot cho tài khoản của bạn có thể bị tạm ngừng hoạt động vì một vài lý do cụ thể. Hướng dẫn này sẽ giúp bạn hiểu rõ lý do đằng sau việc tạm ngừng này và cung cấp các bước hướng dẫn để khắc phục các vấn đề này, hỗ trợ chúng tôi trong việc kích hoạt lại dịch vụ Snapshot của bạn một cách nhanh chóng.
 
 #### Nguyên nhân thường gặp <a href="#vohieuhoa-dichvusnapshot-nguyennhanthuonggap" id="vohieuhoa-dichvusnapshot-nguyennhanthuonggap"></a>
 
