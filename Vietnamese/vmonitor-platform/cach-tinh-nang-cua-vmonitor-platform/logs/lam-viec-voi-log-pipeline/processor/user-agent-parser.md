@@ -19,22 +19,7 @@ User-agent Parser là một bộ phân tích và xác định các thông tin v�
 
 Ví dụ:&#x20;
 
-| Source log project | Destination log project | user\_agent (field logs mà chúng tôi thực hiện parser)                                              | Kết quả parser                                                                                                                                                                                                                                                                                                      |
-| ------------------ | ----------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| webserver          | webserver-parse         | "user\_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:45.0) Gecko/20100101 Firefox/45.0" | <pre><code>"user_agent_parse": {
-    "os_minor": "11",
-    "name": "Firefox",
-    "version": "45.0",
-    "major": "45",
-    "os_full": "Mac OS X 10.11",
-    "os": "Mac OS X",
-    "os_version": "10.11",
-    "os_name": "Mac OS X",
-    "device": "Mac",
-    "minor": "0",
-    "os_major": "10"
-  },
-</code></pre> |
+<table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>Source log project</td><td>Destination log project</td><td>user_agent (field logs mà chúng tôi thực hiện parser)</td><td>Kết quả parser</td></tr><tr><td>webserver</td><td>webserver-parse</td><td>"user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:45.0) Gecko/20100101 Firefox/45.0"</td><td>"user_agent_parse": { "os_minor": "11", "name": "Firefox", "version": "45.0", "major": "45", "os_full": "Mac OS X 10.11", "os": "Mac OS X", "os_version": "10.11", "os_name": "Mac OS X", "device": "Mac", "minor": "0", "os_major": "10" },</td></tr></tbody></table>
 
 \
 \

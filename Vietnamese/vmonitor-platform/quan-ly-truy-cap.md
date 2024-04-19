@@ -14,7 +14,7 @@ Trước khi có thể sử dụng 2 loại tài khoản **IAM user account** v�
 * Khởi tạo policy&#x20;
 * Liên kết policy vào tài khoản IAM user account/ Service Account.
 
-Chi tiết tham khảo tại: [IAM cho vMonitor](https://app.gitbook.com/o/5XJ2I4IOE66RNLOwPBIO/s/xa9vQRxxrqoNMwTbp799/).
+Chi tiết tham khảo tại: [IAM cho vMonitor](../identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vmonitor.md).
 
 
 
