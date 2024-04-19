@@ -1,4 +1,4 @@
-# Webhock
+# Webhook
 
 Để tạo Notification với kênh gửi/ nhận là Webhook, hãy làm theo hướng dẫn bên dưới:
 

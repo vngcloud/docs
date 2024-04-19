@@ -20,7 +20,7 @@ Một Metric quota là một thuật ngữ trên vMonitor Platform thể hiện 
 8. Chọn **Continue.**
 9. Thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Metric quota** sẽ được khởi tạo.
 
-Tại một thời điểm, bạn chỉ có thể sở hữu một gói metric quota, nếu gói này không phù hợp với nhu cầu sử dụng của bạn, hãy thực hiện **Gia hạn Metric quota** hoặc **Tăng giảm hạn mức Metric quota** theo hướng dẫn của chúng tôi.
+<mark style="color:red;">Tại một thời điểm, bạn chỉ có thể sở hữu một gói metric quota, nếu gói này không phù hợp với nhu cầu sử dụng của bạn, hãy thực hiện</mark> <mark style="color:red;"></mark><mark style="color:red;">**Gia hạn Metric quota**</mark> <mark style="color:red;"></mark><mark style="color:red;">hoặc</mark> <mark style="color:red;"></mark><mark style="color:red;">**Tăng giảm hạn mức Metric quota**</mark> <mark style="color:red;"></mark><mark style="color:red;">theo hướng dẫn của chúng tôi.</mark>
 
 Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
@@ -83,4 +83,4 @@ Bạn đã khởi tạo một Metric quota ban đầu phù hợp với nhu cầu
 
 Sau khi bạn bạn thực hiện xóa gói Metric quota thì gói metric quota bị xóa sẽ biến mất khỏi danh sách gói metric quota của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](../../cach-tinh-phi.md).&#x20;
 
-Do hành động xóa Metric quota tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.
+<mark style="color:red;">Do hành động xóa Metric quota tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.</mark>

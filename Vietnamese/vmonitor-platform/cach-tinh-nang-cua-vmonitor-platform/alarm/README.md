@@ -71,7 +71,7 @@ Mỗi Alarm **chỉ có thể chứa một loại cảnh báo được thiết l
 
 <figure><img src="http://docs.vngcloud.vn/download/attachments/49650538/image2023-7-31_10-18-22.png?version=1&#x26;modificationDate=1690773504000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-Ở mỗi trạng thái của alarm (In-alarm, OK, Undetermined), bạn có thể chọn một hoặc nhiều notification đã thiết lập tại [Notification](../notification/). Một người nhận thông báo cũng có thể nhận cảnh báo cho alarm ở tất cả các trạng thái. Chúng tôi không giới hạn số lượng người nhận mà bạn có thể tạo tại notification cũng như số lượng người nhận mà bạn thiết lập trên alarm nhưng số lượng thông báo gửi đi qua các kênh sẽ phụ thuộc vào cấu hình gói metric quota, log project hay SMS notification quota, Email notification quota.
+<mark style="color:red;">Ở mỗi trạng thái của alarm (In-alarm, OK, Undetermined), bạn có thể chọn một hoặc nhiều notification đã thiết lập tại</mark> [_<mark style="color:red;">**Notification**</mark>_](../notification/)<mark style="color:red;">. Một người nhận thông báo cũng có thể nhận cảnh báo cho alarm ở tất cả các trạng thái. Chúng tôi không giới hạn số lượng người nhận mà bạn có thể tạo tại notification cũng như số lượng người nhận mà bạn thiết lập trên alarm nhưng số lượng thông báo gửi đi qua các kênh sẽ phụ thuộc vào cấu hình gói metric quota, log project hay SMS notification quota, Email notification quota.</mark>
 
 8\. Chọn **Next.**
 
@@ -119,7 +119,7 @@ Khi bạn không có nhu cầu sử dụng một alarm nữa, bạn có thể th
 4. Chọn **Delete**.
 5. Tại màn hình xác nhận xóa alarm, chọn **Delete**.
 
-Sau khi bạn thực hiện xóa thành công thì alarm của bạn sẽ bị xóa hoàn toàn khỏi hệ thống của chúng tôi. Bạn không thể khôi phục lại alarm đã xóa nên hãy lưu ý cẩn thận khi sử dụng tính năng này.&#x20;
+<mark style="color:red;">Sau khi bạn thực hiện xóa thành công thì alarm của bạn sẽ bị xóa hoàn toàn khỏi hệ thống của chúng tôi. Bạn không thể khôi phục lại alarm đã xóa nên hãy lưu ý cẩn thận khi sử dụng tính năng này.</mark>&#x20;
 
 \
 \

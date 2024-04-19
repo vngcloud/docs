@@ -91,4 +91,4 @@ Bạn đã vô hiệu quá một host trong việc đẩy metric về hệ thố
 | Sau khi bạn bạn thực hiện xóa host thì host bị tạm thời bị xóa khỏi danh sách host của bạn tuy nhiên nếu bạn không gỡ Metric Agent trên Server, thì bản ghi monitor Host này sẽ tự động sinh ra ở lần kế tiếp. |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-Để xem danh sách metrics tương ứng của mỗi product này, hãy xem tại [Danh sách Metrics hỗ trợ](http://docs.vngcloud.vn/pages/viewpage.action?pageId=59807097).
+Để xem danh sách metrics tương ứng của mỗi product này, hãy xem tại [Danh sách Metrics hỗ trợ](../danh-sach-metrics-ho-tro/).
