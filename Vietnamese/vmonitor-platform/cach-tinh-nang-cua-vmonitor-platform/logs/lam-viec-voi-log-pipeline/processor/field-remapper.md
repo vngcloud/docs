@@ -23,30 +23,7 @@ Field Remapper là một tính năng cho phép bạn thêm field, xóa field, th
 
 Ví dụ:&#x20;
 
-| Items             | Value                                               | Ý nghĩa                                                                      | Source logs                                                                                                                                                                                                                                                         | Destination logs                                                                                                                                                                                                                                                |
-| ----------------- | --------------------------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Add fields**    | <p>Key: codec</p><p>Value: rubydebug</p>            | Thêm field **codec** với value là **rubydebug** vào destination logs.        | <pre><code>{
-  "@timestamp": "2023-08-02T06:35:08.017Z",
-  "agent.id": "12002",
-  "type": "vMonitor",
-  "agent.hostname": "VNGCLOUD",
-  "date": "2023-08-01T07:45:11.130Z",
-  "client_ip": "45.61.164.120",
-  "esc.version": "-"
-}
-</code></pre><p><br><br><br></p> | <pre><code>{
-  "@timestamp": "2023-08-02T06:35:08.017Z",
-  "agent.id": 12002,
-  "type": "vMonitor",
-  "agent.host": "VNGCLOUD",
-  "date": "2023-08-01T07:45:11.130Z",
-  "client_ip": "45.61.164.120",
-  "codec": "rubydebug"
-}
-</code></pre><p><br><br><br></p> |
-| **Remove fields** | esc.version                                         | Loại bỏ field **esc.version** khỏi destination logs.                         |                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                 |
-| **Rename fields** | <p>Field: agent.hostname</p><p>Name: agent.host</p> | Đổi tên field **agent.hostname** thành **agent.host** tại destination logs.  |                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                 |
-| **Convert type**  | <p>Field: agent.id</p><p>Type: Integer</p>          | Chuyển loại dữ liệu của field **agent.id** từ **string** thành **Interger**. |                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                 |
+<table data-full-width="true"><thead><tr><th>Items</th><th>Value</th><th>Ý nghĩa</th><th>Source logs</th><th>Destination logs</th></tr></thead><tbody><tr><td><strong>Add fields</strong></td><td><p>Key: codec</p><p>Value: rubydebug</p></td><td>Thêm field <strong>codec</strong> với value là <strong>rubydebug</strong> vào destination logs.</td><td>{ "@timestamp": "2023-08-02T06:35:08.017Z", "agent.id": "12002", "type": "vMonitor", "agent.hostname": "VNGCLOUD", "date": "2023-08-01T07:45:11.130Z", "client_ip": "45.61.164.120", "esc.version": "-" }</td><td>{ "@timestamp": "2023-08-02T06:35:08.017Z", "agent.id": "12002", "type": "vMonitor", "agent.hostname": "VNGCLOUD", "date": "2023-08-01T07:45:11.130Z", "client_ip": "45.61.164.120", "esc.version": "-" }</td></tr><tr><td><strong>Remove fields</strong></td><td>esc.version</td><td>Loại bỏ field <strong>esc.version</strong> khỏi destination logs.</td><td>nt</td><td>nt</td></tr><tr><td><strong>Rename fields</strong></td><td><p>Field: agent.hostname</p><p>Name: agent.host</p></td><td>Đổi tên field <strong>agent.hostname</strong> thành <strong>agent.host</strong> tại destination logs.</td><td>nt</td><td>nt</td></tr><tr><td><strong>Convert type</strong></td><td><p>Field: agent.id</p><p>Type: Integer</p></td><td>Chuyển loại dữ liệu của field <strong>agent.id</strong> từ <strong>string</strong> thành <strong>Interger</strong>.</td><td>nt</td><td>nt</td></tr></tbody></table>
 
 \
 \

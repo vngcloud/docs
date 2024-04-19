@@ -27,19 +27,7 @@ Nếu bạn không lựa chọn **Locale** và **Timezone** thì chúng tôi s�
 
 Ví dụ:&#x20;
 
-| Items            | Value                      | Ý nghĩa                                                                  | Source logs                                                                 | Destination logs                                                                     |
-| ---------------- | -------------------------- | ------------------------------------------------------------------------ | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| **Source field** | date                       | Field nguồn cần parser là **date**.                                      | <pre><code>{
-  "date": "Apr 17 09:32:01"
-}
-</code></pre><p><br><br><br></p> | <pre><code>{
-"date": "2023-08-01T07:45:11.130Z", 
-}
-</code></pre><p><br><br><br></p> |
-| **Locate**       | Vietnamese                 | Ngôn ngữ sử dụng là **Vietnamese**.                                      |                                                                             |                                                                                      |
-| **Timezone**     | N/A                        | Múi giờ lấy theo hệ thống.                                               |                                                                             |                                                                                      |
-| **Target field** | date\_parser               | Field được parser sẽ ghi đè vô Destination log ở field **date\_parser**. |                                                                             |                                                                                      |
-| **Pattern**      | yyyy-MM-dd'T'HH:mm:ss.SSSZ | Định dạng ngày tháng của field **date**.                                 |                                                                             |                                                                                      |
+<table data-full-width="true"><thead><tr><th>Items</th><th>Value</th><th>Ý nghĩa</th><th>Source logs</th><th>Destination logs</th></tr></thead><tbody><tr><td><strong>Source field</strong></td><td>date</td><td>Field nguồn cần parser là <strong>date</strong>.</td><td>{ "date":"Apr 17 09:32:01 }</td><td>{"date":"2023-08-01T07:45:11.130Z",}</td></tr><tr><td><strong>Locate</strong></td><td>Vietnamese</td><td>Ngôn ngữ sử dụng là <strong>Vietnamese</strong>.</td><td>nt</td><td>nt</td></tr><tr><td><strong>Timezone</strong></td><td>N/A</td><td>Múi giờ lấy theo hệ thống.</td><td>nt</td><td>nt</td></tr><tr><td><strong>Target field</strong></td><td>date_parser</td><td>Field được parser sẽ ghi đè vô Destination log ở field <strong>date_parser</strong>.</td><td>nt</td><td>nt</td></tr><tr><td><strong>Pattern</strong></td><td>yyyy-MM-dd'T'HH:mm:ss.SSSZ</td><td>Định dạng ngày tháng của field <strong>date</strong>.</td><td>nt</td><td>nt</td></tr></tbody></table>
 
 \
 \

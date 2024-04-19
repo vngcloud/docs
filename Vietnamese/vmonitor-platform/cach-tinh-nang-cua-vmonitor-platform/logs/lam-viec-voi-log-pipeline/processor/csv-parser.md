@@ -23,11 +23,9 @@ CSV parser là một bộ lọc (filter) giúp đọc và phân tích dữ liệ
 
 Ví dụ:&#x20;
 
-| Source log project | Destination log project | Message (field logs mà chúng tôi thực hiện parser)                                  | Columns                         | Seperator | Kết quả parser                                                                                                                                                |
-| ------------------ | ----------------------- | ----------------------------------------------------------------------------------- | ------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| webserver          | webserver-parse         | <pre><code>2020-09-01 10:35:25,RESTART
-,192.168.1.3,"System restarts"
-</code></pre> | time,action,ip\_address,message | ,         | <p>{<br>     "time": "2020-09-01 10:35:25",<br>     "action": "RESTART",<br>      "ip_address": "192.168.1.3",<br>      "message": "System restarts"<br>}</p> |
+| Source log project | Destination log project | Message (field logs mà chúng tôi thực hiện parser) | Columns                         | Seperator | Kết quả parser                                                                                                                                                |
+| ------------------ | ----------------------- | -------------------------------------------------- | ------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| webserver          | webserver-parse         | Message (field logs mà chúng tôi thực hiện parser) | time,action,ip\_address,message | ,         | <p>{<br>     "time": "2020-09-01 10:35:25",<br>     "action": "RESTART",<br>      "ip_address": "192.168.1.3",<br>      "message": "System restarts"<br>}</p> |
 
 \
 \
