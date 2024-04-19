@@ -21,23 +21,20 @@ Welcome to VNG Cloud's user guide page. Here you can easily find useful informat
 
 * [vServer HCM03-1A](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647923)
 
-[vStorage - Mul-ti tier cloud storage solution](vstorage/)
+[**vStorage - Mul-ti tier cloud storage solution**](vstorage/)
 
-* vStorage (Object Storage, Giao diện mới)
-* [vStorage ](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648395)(Object Storage, Giao diện cũ)
-
-\
+* [vStorage (Object Storage, new UI portal)](vstorage/)\
 
 {% endtab %}
 
 {% tab title="Platform as a Service" %}
-[**vMonitor Platform -Active & comprehensive system monitoring**](vmonitor.md)
+[vMonitor Platform -Active & comprehensive system monitoring](vmonitor.md)
 
-[**vDB - Professional database management solution**](vdb.md)
+[vDB - Professional database management solution](vdb.md)
 
-[**K8S - Container management with Kubernets**](vserver/)
+[K8S - Container management with ](vserver/)[Kubernetes](vserver/compute-hcm03-1a/vcontainer/)
 
-[**vCDN: Optimal content delivery network** ](vcdn.md)
+[vCDN: Optimal content delivery network ](vcdn.md)
 {% endtab %}
 
 {% tab title="Software as a Service" %}
