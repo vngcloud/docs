@@ -2,8 +2,8 @@
 
 Hiện tại, hệ thống VKS của chúng tôi đã hỗ trợ bạn nâng cấp Control Plane Version, bạn có thể:
 
-* Nâng cấp Minor Version mới hơn (ví dụ: 1.24 lên 1.25)
-* Nâng cấp Patch Version mới hơn (ví dụ: 1.24.2-VKS.100 lên 1.24.5-VKS.200)
+* Nâng cấp **Minor Version** mới hơn (ví dụ: 1.24 lên 1.25)
+* Nâng cấp **Patch Version** mới hơn (ví dụ: 1.24.2-VKS.100 lên 1.24.5-VKS.200)
 
 **Để thực hiện nâng cấp phiên bản Control Plane, bạn có thể thực hiện theo hướng dẫn sau:**&#x20;
 
@@ -11,18 +11,16 @@ Hiện tại, hệ thống VKS của chúng tôi đã hỗ trợ bạn nâng c�
 
 **Bước 2:** Tại màn hình **Overview**, chọn menu **Kubernetes Cluster.**
 
-**Bước 3:** Chọn biểu tượng ![](https://docs-admin.vngcloud.vn/download/thumbnails/73762015/image2024-4-16\_15-51-55.png?version=1\&modificationDate=1713262579000\&api=v2)và chọn **Upgrade control plane version** để thực hiện nâng cấp version control plane.
+**Bước 3:** Chọn biểu tượng <img src="https://docs-admin.vngcloud.vn/download/thumbnails/73762015/image2024-4-16_15-51-55.png?version=1&#x26;modificationDate=1713262579000&#x26;api=v2" alt="" data-size="line">và chọn **Upgrade control plane version** để thực hiện nâng cấp version control plane.
 
 **Bước 4:** Bạn có thể lựa chọn phiên bản mới cho control plane. Phiên bản mới cần hợp lệ và tương thích với phiên bản hiện tại của cluster. Cụ thể: bạn có thể chọn:
 
-* Nâng cấp Minor Version mới hơn (ví dụ: 1.24 lên 1.25)
-* Nâng cấp Patch Version mới hơn (ví dụ: 1.24.2-VKS.100 lên 1.24.5-VKS.200)
+* Nâng cấp **Minor Version** mới hơn (ví dụ: 1.24 lên 1.25)
+* Nâng cấp **Patch Version** mới hơn (ví dụ: 1.24.2-VKS.100 lên 1.24.5-VKS.200)
 
-**Bước 4:** Hệ thống VKS sẽ thực hiện nâng cấp các thành phần Control Plane của Cluster lên phiên bản mới. Sau khi việc nâng cấp hoàn tất, trạng thái Cluster trở về **ACTIVE**.&#x20;
+**Bước 4:** Hệ thống VKS sẽ thực hiện nâng cấp các thành phần **Control Plane** của **Cluster** lên phiên bản mới. Sau khi việc nâng cấp hoàn tất, trạng thái Cluster trở về **ACTIVE**.&#x20;
 
 {% hint style="info" %}
-
-
 Chú ý:
 
 * Việc nâng cấp Control Plane Version là không bắt buộc và độc lập với việc nâng cấp Node Group Version. Tuy nhiên Control Plane Version và Node Group Version trong cùng một Cluster không được lệch quá 1 minor version. Bên cạnh đó, hệ thống VKS tự động nâng cấp Control Plane Version khi phiên bản K8S Version hiện tại đang sử dụng cho Cluster của bạn quá thời hạn được nhà cung cấp hỗ trợ.

@@ -4,8 +4,8 @@
 
 Để có thể khởi tạo một **Cluster** và **Deploy** một **Workload**, bạn cần:
 
-* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039)&#x20;
-* Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](https://docs-admin.vngcloud.vn/pages/viewpage.action?pageId=49647901)
+* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](../../network/virtual-private-cloud-vpc.md)&#x20;
+* Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](../../network/virtual-private-cloud-vpc.md)
 * Đã cài đặt và cấu hình **kubectl** trên thiết bị của bạn. vui lòng tham khảo tại [đây](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) nếu bạn chưa rõ cách cài đặt và sử dụng kuberctl. Ngoài ra, bạn không nên sử dụng phiên bản kubectl quá cũ, chúng tôi khuyến cáo bạn nên sử dụng phiên bản kubectl sai lệch không quá một phiên bản với version của cluster.
 
 ***
@@ -61,9 +61,15 @@ ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.
 
 ### Khởi tạo Service Account và cài đặt VNGCloud Ingress Controller <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
 
+{% hint style="info" %}
 Chú ý:
 
 Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa **bật option** ![](https://docs-admin.vngcloud.vn/download/thumbnails/73762059/image2024-4-16\_14-19-46.png?version=1\&modificationDate=1713252301000\&api=v2) **, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt VNGCloud Controller Manager** theo hướng dẫn bên dưới. Nếu bạn đã bật option ![](https://docs-admin.vngcloud.vn/download/thumbnails/73762059/image2024-4-16\_14-22-50.png?version=1\&modificationDate=1713252302000\&api=v2), thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt VNGCloud Controller Manager và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
+{% endhint %}
+
+<details>
+
+<summary>Khởi tạo Service Account và cài đặt VNGCloud Ingress Controller</summary>
 
 #### Khởi tạo Service Account <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccount" id="exposemotservicethongquavlblayer7-khoitaoserviceaccount"></a>
 
@@ -104,6 +110,8 @@ Ví dụ như ảnh bên dưới là bạn đã cài đặt thành công vngclou
 NAME                                      READY   STATUS    RESTARTS   AGE
 vngcloud-ingress-controller-0             1/1     Running   0          12s
 ```
+
+</details>
 
 ***
 
@@ -241,7 +249,8 @@ Lúc này, hệ thống vLB sẽ tự động tạo một LB tương ứng với
 
 <figure><img src="https://docs-admin.vngcloud.vn/download/attachments/73762059/image2024-4-15_14-17-42.png?version=1&#x26;modificationDate=1713165463000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-Chú ý:
+{% hint style="info" %}
+Chú ý:&#x20;
 
 * Hiện tại Ingress chỉ hỗ trợ duy nhất TLS port 443 và là điểm kết thúc cho TLS (TLS termination). TLS Secret phải chứa các trường với tên key là tls.crt và tls.key, đây chính là certificate và private key để sử dụng cho TLS. Nếu bạn muốn sử dụng Certificate cho một host, hãy thực hiện tải lên Certificate theo hướng dẫn tại [Upload a certificate](https://docs-admin.vngcloud.vn/display/vServer/Upload+a+certificate) và sử dụng chúng như một annotation. Ví dụ:&#x20;
 
@@ -276,9 +285,7 @@ spec:
                 port:
                   number: 80
 ```
-
-\
-
+{% endhint %}
 
 ***
 
@@ -294,4 +301,4 @@ Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với đ
 
 <figure><img src="https://docs-admin.vngcloud.vn/download/attachments/73762059/image2024-4-15_14-23-55.png?version=1&#x26;modificationDate=1713165836000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-Bạn có thể xem thêm về ALB tại [Working with Application Load Balancer (ALB](https://docs.vngcloud.vn/pages/viewpage.action?pageId=71729330\&src=contextnavpagetreemode)).
+Bạn có thể xem thêm về ALB tại [Working with Application Load Balancer (ALB](../network/working-with-application-load-balancer-alb/)).

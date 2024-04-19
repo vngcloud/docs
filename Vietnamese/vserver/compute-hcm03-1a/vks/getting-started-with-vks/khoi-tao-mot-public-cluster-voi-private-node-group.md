@@ -4,8 +4,8 @@
 
 Để có thể khởi tạo một **Cluster** và **Deploy** một **Workload**, bạn cần:
 
-* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039)&#x20;
-* Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](https://docs-admin.vngcloud.vn/pages/viewpage.action?pageId=49647901)
+* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](../../network/virtual-private-cloud-vpc.md)&#x20;
+* Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](../../security/ssh-key-bo-khoa.md)
 * Đã cài đặt và cấu hình **kubectl** trên thiết bị của bạn. vui lòng tham khảo tại [đây](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) nếu bạn chưa rõ cách cài đặt và sử dụng kuberctl. Ngoài ra, bạn không nên sử dụng phiên bản kubectl quá cũ, chúng tôi khuyến cáo bạn nên sử dụng phiên bản kubectl sai lệch không quá một phiên bản với version của cluster.
 
 ***
@@ -20,7 +20,7 @@
 
 **Bước 2:** Tại màn hình chính, thực hiện tìm kiếm **Pfsense**, tại dịch vụ **Pfsense**, chọn **Launch**.
 
-**Bước 3:** Bạn có thể chỉnh sửa các thông số trong **App Configuration**, **Instance type, Volume settings, Network settings,** và nhập **Priority** cho **External** **Interface** và **Internal** **Interface** tương ứng mà bạn mong muốn. **Bạn cần lựa chọn VPC và Subnet giống với VPC và Subnet mà bạn lựa chọn sử dụng cho Cluster của bạn.** Ngoài ra bạn cũng cần chọn Một Server Group đã tồn tại hoặc chọn Dedicated SOFT ANTI AFFINITY group để chúng tôi tự động tạo một server group mới.&#x20;
+**Bước 3:** Bạn có thể chỉnh sửa các thông số trong **App Configuration**, **Instance type, Volume settings, Network settings,** và nhập **Priority** cho **External** **Interface** và **Internal** **Interface** tương ứng mà bạn mong muốn. **Bạn cần lựa chọn VPC và Subnet giống với VPC và Subnet mà bạn lựa chọn sử dụng cho Cluster của bạn.** Ngoài ra bạn cũng cần chọn Một Server Group đã tồn tại hoặc chọn **Dedicated SOFT ANTI AFFINITY group** để chúng tôi tự động tạo một server group mới.&#x20;
 
 **Bước 4:** Chọn **Create Launch Application.** Hãy chờ vài phút để chúng tôi khởi tạo Pfsense của bạn, trạng thái của Pfsense lúc này là **Creating**.
 
@@ -44,7 +44,7 @@ Sau khi Pfsense được khởi tạo thành công, bạn cần tạo một Rout
 
 **Bước 6**: Chọn **Create** để tạo mới Route table.
 
-**Bước 7:** Chọn ![](https://docs-admin.vngcloud.vn/download/thumbnails/73762068/image2024-4-16\_15-40-3.png?version=1\&modificationDate=1713256805000\&api=v2)tại Route table vừa tạo sau đó chọn **Edit Routes.**
+**Bước 7:** Chọn <img src="https://docs-admin.vngcloud.vn/download/thumbnails/73762068/image2024-4-16_15-40-3.png?version=1&#x26;modificationDate=1713256805000&#x26;api=v2" alt="" data-size="line">tại Route table vừa tạo sau đó chọn **Edit Routes.**
 
 **Bước 8:** Tại phần thêm mới **Route** hãy nhập vào các thông tin: \
 
@@ -66,7 +66,7 @@ Sau khi Pfsense được khởi tạo thành công, bạn cần tạo một Rout
 
 **Bước 3:** Chờ đợi tới khi chúng tôi khởi tạo thành công tài khoản VKS của bạn. Sau khi Activate thành công, bạn hãy chọn **Create a Cluster**
 
-**Bước 4:** Tại màn hình khởi tạo Cluster, chúng tôi đã thiết lập thông tin cho Cluster và một **Default Node Group** cho bạn, bạn có thể giữ các giá trị mặc định này hoặc điều chỉnh các thông số mong muốn cho Cluster và Node Group của bạn tại Cluster Configuration, Default Node Group Configuration, Plugin. **Mặc định chúng tôi sẽ khởi tạo cho bạn một Public Cluster với Public Node Group. Bạn cần thay đổi lựa chọn của bạn thành Private Node Group.**
+**Bước 4:** Tại màn hình khởi tạo Cluster, chúng tôi đã thiết lập thông tin cho Cluster và một **Default Node Group** cho bạn, bạn có thể giữ các giá trị mặc định này hoặc điều chỉnh các thông số mong muốn cho Cluster và Node Group của bạn tại Cluster Configuration, Default Node Group Configuration, Plugin. **Mặc định chúng tôi sẽ khởi tạo cho bạn một Public Cluster với Public Node Group. Bạn cần thay đổi lựa chọn của bạn thành **<mark style="color:red;">**Private Node Group**</mark>**.**
 
 **Bước 5:** Chọn **Create Kubernetes cluster.** Hãy chờ vài phút để chúng tôi khởi tạo Cluster của bạn, trạng thái của Cluster lúc này là **Creating**.
 
@@ -100,9 +100,6 @@ ng-0e10592c-e70e-404d-a4e8-5e3b80f805e4-834b7   Ready      <none>   50m   v1.28.
 ng-0e10592c-e70e-404d-a4e8-5e3b80f805e4-cf652   Ready      <none>   23m   v1.28.8
 ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.8
 ```
-
-\
-
 
 ***
 

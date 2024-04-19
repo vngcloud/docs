@@ -4,8 +4,8 @@
 
 Để có thể khởi tạo một **Cluster** và **Deploy** một **Workload**, bạn cần:
 
-* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039)&#x20;
-* Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](https://docs-admin.vngcloud.vn/pages/viewpage.action?pageId=49647901)
+* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](../../network/virtual-private-cloud-vpc.md)&#x20;
+* Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](../../security/ssh-key-bo-khoa.md)
 * Đã cài đặt và cấu hình **kubectl** trên thiết bị của bạn. vui lòng tham khảo tại [đây](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) nếu bạn chưa rõ cách cài đặt và sử dụng kuberctl. Ngoài ra, bạn không nên sử dụng phiên bản kubectl quá cũ, chúng tôi khuyến cáo bạn nên sử dụng phiên bản kubectl sai lệch không quá một phiên bản với version của cluster.
 
 ***
@@ -36,7 +36,7 @@ Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiệ
 
 **Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
-**Bước 2:** Danh sách Cluster được hiển thị, chọn biểu tượng ![](https://docs-admin.vngcloud.vn/download/thumbnails/73761995/image2024-4-4\_14-37-11.png?version=1\&modificationDate=1712216232000\&api=v2) và chọn **Download Config File** để thực hiện tải xuống file kubeconfig. File này sẽ giúp bạn có toàn quyền truy cập vào Cluster của bạn.
+**Bước 2:** Danh sách Cluster được hiển thị, chọn biểu tượng <img src="https://docs-admin.vngcloud.vn/download/thumbnails/73761995/image2024-4-4_14-37-11.png?version=1&#x26;modificationDate=1712216232000&#x26;api=v2" alt="" data-size="line"> và chọn **Download Config File** để thực hiện tải xuống file kubeconfig. File này sẽ giúp bạn có toàn quyền truy cập vào Cluster của bạn.
 
 **Bước 3**: Đổi tên file này thành config và lưu nó vào thư mục **\~/.kube/config**
 
@@ -56,9 +56,6 @@ ng-0e10592c-e70e-404d-a4e8-5e3b80f805e4-834b7   Ready      <none>   50m   v1.28.
 ng-0e10592c-e70e-404d-a4e8-5e3b80f805e4-cf652   Ready      <none>   23m   v1.28.8
 ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.8
 ```
-
-\
-
 
 ***
 
@@ -184,11 +181,11 @@ Trong đó node\_ip có thể là địa chỉ node\_port của bất kỳ node 
 
 Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://61.28.231.65:31007/](http://61.28.231.65:31007/)
 
-![](https://docs-admin.vngcloud.vn/download/attachments/73761995/image2024-4-4\_11-33-17.png?version=1\&modificationDate=1712205198000\&api=v2)
+<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/73761995/image2024-4-4_11-33-17.png?version=1&#x26;modificationDate=1712205198000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 Nếu bạn muốn expose service này thông qua vLB Layer4, vLB Layer7, vui lòng tham khảo tại:&#x20;
 
-* [Expose một service thông qua vLB Layer4](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73762054\&src=contextnavpagetreemode)
-* [Expose một service thông qua vLB Layer7](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73762059\&src=contextnavpagetreemode)
+* [Expose một service thông qua vLB Layer4](expose-mot-service-thong-qua-vlb-layer4.md)
+* [Expose một service thông qua vLB Layer7](expose-mot-service-thong-qua-vlb-layer7.md)
 
 \

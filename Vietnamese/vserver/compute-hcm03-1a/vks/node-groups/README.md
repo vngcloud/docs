@@ -47,19 +47,19 @@ Node Group là một khái niệm quan trọng trong Kubernetes, dùng để qu�
 
 **Bước 3:** Tại màn hình chứa danh sách Node Group đang có, tại Node Group bạn muốn chỉnh sửa chọn một trong các phương án:&#x20;
 
-* **Resize:**\
+* Tính năng **Resize:** bạn có thể thay đổi\
 
   * Number of nodes:  Nhập vào số lượng Worker node cho Cluster của bạn, lưu ý số lượng node cần lớn hơn hoặc bằng 1 và nhỏ hơn hoặc bằng 100.
-* **Edit Auto Scaling:**\
+* Tính năng **Edit Auto Scaling:** bạn có thể thay đổi\
 
   * Auto Scaling: Bật tính năng tự động mở rộng trong Cluster của bạn. Auto scaling giúp tự động điều chỉnh số lượng pod (đơn vị triển khai ứng dụng) dựa trên nhu cầu sử dụng thực tế, tránh tình trạng lãng phí tài nguyên khi nhu cầu thấp hoặc quá tải khi nhu cầu cao.
     * Minimum node: số node tối thiểu mà Cluster cần có.
     * Maximum node: số node tối đa mà Cluster có thể scale tới.
-* **Edit Upgrade Stratetry:**
+* Tính năng **Edit Upgrade Stratetry:** bạn có thể thay đổi
   * Node Group upgrade stratetry: chiến lược upgrade Node Group. Khi bạn thiết lập Node Group Upgrade Strategy thông qua phương thức Surge upgrade cho một Node Group trong VKS, hệ thống VKS sẽ cập nhật tuần tự để nâng cấp các node, theo thứ tự không xác định[.](https://cloud.google.com/kubernetes-engine/docs/concepts/node-pool-upgrade-strategies.)&#x20;
     * Max surge: giới hạn số lượng node được nâng cấp đồng thời (số lượng node mới (surge) có thể được tạo ra cùng một lúc). Mặc định Max surge = 1 - chỉ nâng cấp một node tại một thời điểm. với maxUnavailable
     * Max unavailable: giới hạn số lượng node không thể truy cập được trong quá trình nâng cấp (số lượng node hiện tại có thể bị gián đoạn cùng một lúc). Mặc định Max unavailable = 0 - đảm bảo tất cả các node đều có thể truy cập được trong quá trình nâng cấp.
-* **Edit Security Group:**
+* Tính năng **Edit Security Group:** bạn có thể thay đổi
   * Node Group Security Setting: Bạn có thể chọn Security Group và SSH Key cho Node Group của bạn.
 
 ***
@@ -67,8 +67,6 @@ Node Group là một khái niệm quan trọng trong Kubernetes, dùng để qu�
 ### Xóa một Node Group <a href="#nodegroups-xoamotnodegroup" id="nodegroups-xoamotnodegroup"></a>
 
 {% hint style="info" %}
-
-
 Chú ý:
 
 Khi không còn nhu cầu sử dụng Node Group, bạn hãy thực hiện xóa chúng để tiết kiệm chi phí.  Khi xoá Node Group, các tài nguyên sau sẽ bị xóa:

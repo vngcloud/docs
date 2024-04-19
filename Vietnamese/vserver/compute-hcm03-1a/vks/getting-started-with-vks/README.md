@@ -17,9 +17,9 @@ Cảm ơn bạn đã sử dụng VNG Cloud!
 
 #### Topic <a href="#gettingstartedwithvks-topic" id="gettingstartedwithvks-topic"></a>
 
-* [Khởi tạo một Public Cluster với Public Node Group](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73761995\&src=contextnavpagetreemode)
-* [Expose một service thông qua vLB Layer4](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73762054\&src=contextnavpagetreemode)
-* [Expose một service thông qua vLB Layer7](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73762059\&src=contextnavpagetreemode)
-* [Khởi tạo một Public Cluster với Private Node Group](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73762068\&src=contextnavpagetreemode)
-* [Nâng cấp Control Plane Version](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73762076\&src=contextnavpagetreemode)
-* [Nâng cấp Node Group Version](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73762196)
+* [Khởi tạo một Public Cluster với Public Node Group](khoi-tao-mot-public-cluster-voi-public-node-group.md)
+* [Expose một service thông qua vLB Layer4](expose-mot-service-thong-qua-vlb-layer4.md)
+* [Expose một service thông qua vLB Layer7](expose-mot-service-thong-qua-vlb-layer7.md)
+* [Khởi tạo một Public Cluster với Private Node Group](khoi-tao-mot-public-cluster-voi-private-node-group.md)
+* [Nâng cấp Control Plane Version](nang-cap-control-plane-version.md)
+* [Nâng cấp Node Group Version](nang-cap-node-group-version.md)

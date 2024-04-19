@@ -4,8 +4,8 @@
 
 Để có thể khởi tạo một **Cluster** và **Deploy** một **Workload**, bạn cần:
 
-* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039)&#x20;
-* Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](https://docs-admin.vngcloud.vn/pages/viewpage.action?pageId=49647901)
+* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](../../network/virtual-private-cloud-vpc.md)&#x20;
+* Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](../../security/ssh-key-bo-khoa.md)
 * Đã cài đặt và cấu hình **kubectl** trên thiết bị của bạn. vui lòng tham khảo tại [đây](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) nếu bạn chưa rõ cách cài đặt và sử dụng kuberctl. Ngoài ra, bạn không nên sử dụng phiên bản kubectl quá cũ, chúng tôi khuyến cáo bạn nên sử dụng phiên bản kubectl sai lệch không quá một phiên bản với version của cluster.
 
 ***
@@ -61,9 +61,15 @@ ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.
 
 ### Khởi tạo Service Account và cài đặt VNGCloud Controller Manager <a href="#exposemotservicethongquavlblayer4-khoitaoserviceaccountvacaidatvngcloudcontrollermanager" id="exposemotservicethongquavlblayer4-khoitaoserviceaccountvacaidatvngcloudcontrollermanager"></a>
 
+{% hint style="info" %}
 Chú ý:
 
 Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa **bật option** ![](https://docs-admin.vngcloud.vn/download/thumbnails/73762054/image2024-4-16\_14-19-46.png?version=1\&modificationDate=1713251989000\&api=v2) **, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt VNGCloud Controller Manager** theo hướng dẫn bên dưới. Nếu bạn đã bật option ![](https://docs-admin.vngcloud.vn/download/thumbnails/73762054/image2024-4-16\_14-22-50.png?version=1\&modificationDate=1713252172000\&api=v2), thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt VNGCloud Controller Manager và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
+{% endhint %}
+
+<details>
+
+<summary>Hướng dẫn khởi tạo Service Account và cài đặt VNGCloud Controller Manager</summary>
 
 #### Khởi tạo Service Account <a href="#exposemotservicethongquavlblayer4-khoitaoserviceaccount" id="exposemotservicethongquavlblayer4-khoitaoserviceaccount"></a>
 
@@ -119,8 +125,10 @@ Ví dụ như ảnh bên dưới là bạn đã cài đặt thành công vngclou
 
 ```
 NAME                                          READY   STATUS    RESTARTS      AGE
-vngcloud-controller-manager-8864c754c-bqhvz   1/1     Running   5 (91s ago)   3m13s
+vngcloud-controller-manager-8864c754c-bqhvz   1/1     Running   5 (91s ago)   3m13sc
 ```
+
+</details>
 
 ***
 
@@ -237,4 +245,4 @@ Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với đ
 
 <figure><img src="https://docs-admin.vngcloud.vn/download/attachments/73762054/image2024-4-15_14-42-34.png?version=1&#x26;modificationDate=1713166954000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-Bạn có thể xem thêm về ALB tại [Working with Network load balancing (NLB)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=71729328\&src=contextnavpagetreemode).&#x20;
+Bạn có thể xem thêm về ALB tại [Working with Network load balancing (NLB)](../network/working-with-network-load-balancing-nlb/).&#x20;
