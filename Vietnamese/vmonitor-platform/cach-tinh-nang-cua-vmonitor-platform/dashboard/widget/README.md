@@ -10,10 +10,10 @@ Widget trong Dashboard là các biểu đồ được sử dụng để trực q
 
 Đối với mỗi loại dữ liệu metric và logs, chúng tôi hỗ trợ các loại biểu đồ như bên dưới. Chọn vào từng loại để xem chi tiết cách tạo một Widget tương ứng.
 
-| Loại dữ liệu | Loại graph hỗ trợ                                                                                                                                                                                                                                                                          |   |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | - |
-| Metric       | <ul><li><a href="line.md">Line</a></li><li><a href="stack-area.md">Stacked area</a></li><li><a href="number.md">Number</a></li></ul>                                                                                                                                                       |   |
-| Logs         | <ul><li><a href="line.md">Line</a></li><li><a href="bar.md">Bar</a></li><li><a href="stack-area.md">Stacked area</a></li><li><a href="pie.md">Pie</a></li><li><a href="number.md">Number</a></li><li><a href="table.md">Table</a></li><li><a href="log-search.md">Log search</a></li></ul> |   |
+| Loại dữ liệu | Loại graph hỗ trợ                                                                                                                                                                                                                                                                          |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Metric       | <ul><li><a href="line.md">Line</a></li><li><a href="stack-area.md">Stacked area</a></li><li><a href="number.md">Number</a></li></ul>                                                                                                                                                       |
+| Logs         | <ul><li><a href="line.md">Line</a></li><li><a href="bar.md">Bar</a></li><li><a href="stack-area.md">Stacked area</a></li><li><a href="pie.md">Pie</a></li><li><a href="number.md">Number</a></li><li><a href="table.md">Table</a></li><li><a href="log-search.md">Log search</a></li></ul> |
 
 ***
 

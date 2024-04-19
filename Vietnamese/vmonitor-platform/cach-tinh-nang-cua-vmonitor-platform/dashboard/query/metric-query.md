@@ -20,7 +20,7 @@ Loại query: khung chọn loại dữ liệu. Để vẽ biểu đồ cho metri
 
 #### 4. Metric name
 
-**Metric**: lựa chọn **metric** bằng cách tìm kiếm và chọn từ danh sách metric. Danh sách **metric** này bạn có thể xem tại mục **Metric Information**, chi tiết tham khảo tại [Làm việc với Metric Information](http://docs.vngcloud.vn/pages/viewpage.action?pageId=49651188).
+**Metric**: lựa chọn **metric** bằng cách tìm kiếm và chọn từ danh sách metric. Danh sách **metric** này bạn có thể xem tại mục **Metric Information**, chi tiết tham khảo tại [Làm việc với Metric Information](../../metrics/lam-viec-voi-metruc-information.md).
 
 #### 5. Filter
 

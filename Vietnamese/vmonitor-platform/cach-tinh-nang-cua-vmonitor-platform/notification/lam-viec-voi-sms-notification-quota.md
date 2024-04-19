@@ -83,4 +83,4 @@ Nếu bạn không có nhu cầu sử dụng gói SMS notification quota đã t�
 
 Sau khi bạn bạn thực hiện xóa gói SMS notification quota thì gói notification bị xóa sẽ biến mất khỏi danh sách gói notification của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](../../cach-tinh-phi.md).&#x20;
 
-Do hành động xóa SMS notification quota tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.&#x20;
+<mark style="color:red;">**Do hành động xóa SMS notification quota tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.**</mark>&#x20;
