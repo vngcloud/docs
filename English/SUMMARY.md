@@ -261,6 +261,7 @@
 * [vNetwork](vnetwork/README.md)
   * [Create Endpoint](vnetwork/create-endpoint.md)
   * [Rename Endpoint](vnetwork/rename-endpoint.md)
+  * [Delete Endpoint](vnetwork/delete-endpoint.md)
 * [Identity and Access Management (IAM)](identity-and-access-management-iam.md)
 * [Billing management](billing-management.md)
 * [vCalculator - Service estimated tool](vcalculator-service-estimated-tool.md)
