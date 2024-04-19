@@ -206,6 +206,7 @@
           * [MTU và “DF flag” best practice on VNG Cloud](vserver/vmarketplace/vmarketplace-giao-dien-cu/network-software-installation/pfsense-tren-hcm03/mtu-va-df-flag-best-practice-on-vng-cloud.md)
     * [vMarketplace - Giao diện mới](vserver/vmarketplace/vmarketplace-giao-dien-moi/README.md)
       * [Third-party integration process](vserver/vmarketplace/vmarketplace-giao-dien-moi/third-party-integration-process.md)
+  * [VKS](vserver/vks.md)
 * [vStorage](vstorage/README.md)
   * [vStorage- HCM03](vstorage/vstorage-hcm03/README.md)
     * [vStorage là gì?](vstorage/vstorage-hcm03/vstorage-la-gi/README.md)
