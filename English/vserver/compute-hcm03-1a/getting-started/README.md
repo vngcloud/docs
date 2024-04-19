@@ -76,7 +76,7 @@ In addition, you can add **Data Volume** to the Server during the initialization
 
 \+  Check the box **Floating IP** to assign Public IP to the Server&#x20;
 
-\+  **Security group** to manage the ACL - Access Control List for the Server. ([**Click here**](../instance/server-group.md) for instructions on creating and managing a Security group)
+\+  **Security group** to manage the ACL - Access Control List for the Server. ([**Click here**](../server-group.md) for instructions on creating and managing a Security group)
 
 \+  **SSH Key** to import to the Server during initialization. ([**Click here**](../security/ssh-key-key-pairs.md) for instructions)
 

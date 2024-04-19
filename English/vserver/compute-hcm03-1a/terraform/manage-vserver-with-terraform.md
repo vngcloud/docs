@@ -128,7 +128,7 @@ _chỉ để lại:_
 
 
 
-* **security\_group\_id\_list**: specify a list of security group ids that need to be attached to vServer, you can get it at [{Security Groups Tab}](https://hcm-3.console.vngcloud.vn/vserver/network/sec-group), if you need to create more security groups you can see it at [{Security Group Creation Page}](../instance/server-group.md).
+* **security\_group\_id\_list**: specify a list of security group ids that need to be attached to vServer, you can get it at [{Security Groups Tab}](https://hcm-3.console.vngcloud.vn/vserver/network/sec-group), if you need to create more security groups you can see it at [{Security Group Creation Page}](../server-group.md).
 
 
 
