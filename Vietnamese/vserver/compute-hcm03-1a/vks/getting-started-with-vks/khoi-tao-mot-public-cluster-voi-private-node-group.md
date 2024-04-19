@@ -1,6 +1,6 @@
-# Khởi tạo một Public Cluster với Public Node Group
+# Khởi tạo một Public Cluster với Private Node Group
 
-### Điều kiện cần <a href="#khoitaomotpublicclustervoipublicnodegroup-dieukiencan" id="khoitaomotpublicclustervoipublicnodegroup-dieukiencan"></a>
+### Điều kiện cần <a href="#khoitaomotpublicclustervoiprivatenodegroup-dieukiencan" id="khoitaomotpublicclustervoiprivatenodegroup-dieukiencan"></a>
 
 Để có thể khởi tạo một **Cluster** và **Deploy** một **Workload**, bạn cần:
 
@@ -10,7 +10,51 @@
 
 ***
 
-### Khởi tạo Cluster <a href="#khoitaomotpublicclustervoipublicnodegroup-khoitaocluster" id="khoitaomotpublicclustervoipublicnodegroup-khoitaocluster"></a>
+### Khởi tạo Pfsense <a href="#khoitaomotpublicclustervoiprivatenodegroup-khoitaopfsense" id="khoitaomotpublicclustervoiprivatenodegroup-khoitaopfsense"></a>
+
+**Pfsense** là một phần mềm mã nguồn mở giúp cấu hình firewall được xây dựng dựa trên hệ điều hành FreeBSD.&#x20;
+
+Để khởi tạo một Pfsense, hãy làm theo các bước bên dưới:
+
+**Bước 1:** Truy cập vào [https://marketplace.console.vngcloud.vn/](https://marketplace.console.vngcloud.vn/)
+
+**Bước 2:** Tại màn hình chính, thực hiện tìm kiếm **Pfsense**, tại dịch vụ **Pfsense**, chọn **Launch**.
+
+**Bước 3:** Bạn có thể chỉnh sửa các thông số trong **App Configuration**, **Instance type, Volume settings, Network settings,** và nhập **Priority** cho **External** **Interface** và **Internal** **Interface** tương ứng mà bạn mong muốn. **Bạn cần lựa chọn VPC và Subnet giống với VPC và Subnet mà bạn lựa chọn sử dụng cho Cluster của bạn.** Ngoài ra bạn cũng cần chọn Một Server Group đã tồn tại hoặc chọn Dedicated SOFT ANTI AFFINITY group để chúng tôi tự động tạo một server group mới.&#x20;
+
+**Bước 4:** Chọn **Create Launch Application.** Hãy chờ vài phút để chúng tôi khởi tạo Pfsense của bạn, trạng thái của Pfsense lúc này là **Creating**.
+
+**Bước 5:** Khi trạng thái **Pfsense** là **Active**, bạn có thể xem thông tin Pfsense bằng cách chọn vào Appication Name tại cột **Name**.
+
+***
+
+### Khởi tạo Route Table <a href="#khoitaomotpublicclustervoiprivatenodegroup-khoitaoroutetable" id="khoitaomotpublicclustervoiprivatenodegroup-khoitaoroutetable"></a>
+
+Sau khi Pfsense được khởi tạo thành công, bạn cần tạo một Route table để kết nối tới các mạng khác nhau. Cụ thể thực hiện theo các bước sau để tạo Route table:
+
+**Bước 1:** Truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/network/route-table](https://hcm-3.console.vngcloud.vn/vserver/network/route-table)
+
+**Bước 2:** Tại thanh menu điều hướng, chọn **Tab Network/ Route table.**
+
+**Bước 3:** Chọn **Create Route table.**&#x20;
+
+**Bước 4: N**hập tên mô tả cho Route table. Tên Route table có thể bao gồm các chữ cái (a-z, A-Z, 0-9, '\_', '-'). Độ dài dữ liệu đầu vào nằm trong khoảng từ 5 đến 50. Nó không được bao gồm khoảng trắng ở đầu hoặc ở cuối.
+
+**Bước 5:** Chọn **VPC** cho Route table của bạn, nếu chưa có VPC cần tạo mới một VPC theo hướng dẫn tại [Trang VPC](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039). **VPC sử dụng để thiết lập Route table phải là VPC được chọn sử dụng cho Pfsense và Cluster của bạn.**
+
+**Bước 6**: Chọn **Create** để tạo mới Route table.
+
+**Bước 7:** Chọn ![](https://docs-admin.vngcloud.vn/download/thumbnails/73762068/image2024-4-16\_15-40-3.png?version=1\&modificationDate=1713256805000\&api=v2)tại Route table vừa tạo sau đó chọn **Edit Routes.**
+
+**Bước 8:** Tại phần thêm mới **Route** hãy nhập vào các thông tin: \
+
+
+* Đối với Destination, hãy nhập **Destination CIDR.**
+* Đối với Target, hãy nhập **Target CIDR.**
+
+***
+
+### Khởi tạo Cluster <a href="#khoitaomotpublicclustervoiprivatenodegroup-khoitaocluster" id="khoitaomotpublicclustervoiprivatenodegroup-khoitaocluster"></a>
 
 **Cluster trong Kubernetes** là một tập hợp gồm một hoặc nhiều máy ảo (VM) được kết nối lại với nhau để chạy các ứng dụng được đóng gói dạng container. Cluster cung cấp một môi trường thống nhất để triển khai, quản lý và vận hành các container trên quy mô lớn.
 
@@ -22,7 +66,7 @@
 
 **Bước 3:** Chờ đợi tới khi chúng tôi khởi tạo thành công tài khoản VKS của bạn. Sau khi Activate thành công, bạn hãy chọn **Create a Cluster**
 
-**Bước 4:** Tại màn hình khởi tạo Cluster, chúng tôi đã thiết lập thông tin cho Cluster và một **Default Node Group** cho bạn, bạn có thể giữ các giá trị mặc định này hoặc điều chỉnh các thông số mong muốn cho Cluster và Node Group của bạn tại Cluster Configuration, Default Node Group Configuration, Plugin. **Mặc định chúng tôi sẽ khởi tạo cho bạn một Public Cluster với Public Node Group.**
+**Bước 4:** Tại màn hình khởi tạo Cluster, chúng tôi đã thiết lập thông tin cho Cluster và một **Default Node Group** cho bạn, bạn có thể giữ các giá trị mặc định này hoặc điều chỉnh các thông số mong muốn cho Cluster và Node Group của bạn tại Cluster Configuration, Default Node Group Configuration, Plugin. **Mặc định chúng tôi sẽ khởi tạo cho bạn một Public Cluster với Public Node Group. Bạn cần thay đổi lựa chọn của bạn thành Private Node Group.**
 
 **Bước 5:** Chọn **Create Kubernetes cluster.** Hãy chờ vài phút để chúng tôi khởi tạo Cluster của bạn, trạng thái của Cluster lúc này là **Creating**.
 
@@ -30,13 +74,13 @@
 
 ***
 
-### Kết nối và kiểm tra thông tin Cluster vừa tạo <a href="#khoitaomotpublicclustervoipublicnodegroup-ketnoivakiemtrathongtinclustervuatao" id="khoitaomotpublicclustervoipublicnodegroup-ketnoivakiemtrathongtinclustervuatao"></a>
+### Kết nối và kiểm tra thông tin Cluster vừa tạo <a href="#khoitaomotpublicclustervoiprivatenodegroup-ketnoivakiemtrathongtinclustervuatao" id="khoitaomotpublicclustervoiprivatenodegroup-ketnoivakiemtrathongtinclustervuatao"></a>
 
 Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiện kết nối và kiểm tra thông tin Cluster vừa tạo theo các bước:&#x20;
 
 **Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
-**Bước 2:** Danh sách Cluster được hiển thị, chọn biểu tượng ![](https://docs-admin.vngcloud.vn/download/thumbnails/73761995/image2024-4-4\_14-37-11.png?version=1\&modificationDate=1712216232000\&api=v2) và chọn **Download Config File** để thực hiện tải xuống file kubeconfig. File này sẽ giúp bạn có toàn quyền truy cập vào Cluster của bạn.
+**Bước 2:** Danh sách Cluster được hiển thị, chọn biểu tượng ![](https://docs-admin.vngcloud.vn/download/thumbnails/73762068/image2024-4-4\_14-37-11.png?version=1\&modificationDate=1712223012000\&api=v2) và chọn **Download config file** để thực hiện tải xuống file kubeconfig. File này sẽ giúp bạn có toàn quyền truy cập vào Cluster của bạn.
 
 **Bước 3**: Đổi tên file này thành config và lưu nó vào thư mục **\~/.kube/config**
 
@@ -62,7 +106,7 @@ ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.
 
 ***
 
-### Deploy một Workload <a href="#khoitaomotpublicclustervoipublicnodegroup-deploymotworkload" id="khoitaomotpublicclustervoipublicnodegroup-deploymotworkload"></a>
+### Deploy một Workload <a href="#khoitaomotpublicclustervoiprivatenodegroup-deploymotworkload" id="khoitaomotpublicclustervoiprivatenodegroup-deploymotworkload"></a>
 
 Sau đây là hướng dẫn để bạn deploy service nginx trên Kubernetes.
 
@@ -157,7 +201,7 @@ nginx-service   ClusterIP   10.96.101.160   <none>        80/TCP    2m7s
 
 **Bước 4: Expose Service ra Internet sử dụng type: NodePort**
 
-* Chạy câu lệnh sau đây để expose nginx-service ra internet:
+* Chạy câu lệnh sau đây để expose nginx-service ra internet thông qua Layer4:&#x20;
 
 ```
 kubectl expose deployment nginx-app --type=NodePort --port=30080 --target-port=80
@@ -184,11 +228,4 @@ Trong đó node\_ip có thể là địa chỉ node\_port của bất kỳ node 
 
 Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://61.28.231.65:31007/](http://61.28.231.65:31007/)
 
-![](https://docs-admin.vngcloud.vn/download/attachments/73761995/image2024-4-4\_11-33-17.png?version=1\&modificationDate=1712205198000\&api=v2)
-
-Nếu bạn muốn expose service này thông qua vLB Layer4, vLB Layer7, vui lòng tham khảo tại:&#x20;
-
-* [Expose một service thông qua vLB Layer4](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73762054\&src=contextnavpagetreemode)
-* [Expose một service thông qua vLB Layer7](https://docs.vngcloud.vn/pages/viewpage.action?pageId=73762059\&src=contextnavpagetreemode)
-
-\
+<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/73762068/image2024-4-4_11-33-17.png?version=1&#x26;modificationDate=1712223012000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
