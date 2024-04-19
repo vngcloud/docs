@@ -413,7 +413,7 @@
         * [Slack](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/notification/lam-viec-voi-notification/slack.md)
         * [Teams](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/notification/lam-viec-voi-notification/teams.md)
         * [Telegram](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/notification/lam-viec-voi-notification/telegram.md)
-        * [Webhock](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/notification/lam-viec-voi-notification/webhock.md)
+        * [Webhook](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/notification/lam-viec-voi-notification/webhook.md)
     * [Alarm](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/alarm/README.md)
       * [Metric Alarm](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/alarm/metric-alarm.md)
       * [Log Alarm](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/alarm/log-alarm.md)

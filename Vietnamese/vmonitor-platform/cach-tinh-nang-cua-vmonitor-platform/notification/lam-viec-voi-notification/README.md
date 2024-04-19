@@ -49,7 +49,7 @@ Mỗi Notification **chỉ có thể chứa một nhóm người dùng với cù
 * [Email](email.md)
 * [Slack](slack.md)
 * [Telegram](telegram.md)
-* [Webhook](webhock.md)
+* [Webhook](webhook.md)
 
 Chúng tôi không giới hạn số lượng notification bạn có thể tạo, số lượng thông báo được gửi ra sẽ phụ thuộc vào các thông số quota của gói SMS Notification, Email Notification hoặc quota của gói Metrics, Logs tương ứng.&#x20;
 

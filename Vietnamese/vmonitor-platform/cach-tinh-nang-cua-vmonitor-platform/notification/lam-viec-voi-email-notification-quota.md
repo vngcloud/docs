@@ -18,7 +18,7 @@ Một Email Notification quota là một thuật ngữ trên vMonitor Platform t
 6. Chọn **Period** sử dụng mong muốn. Hiện tại chúng tôi cung cấp cho bạn các chu kỳ sử dụng gói bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng.
 7. Nhập **Coupon** nếu có và chọn **Apply**.
 8. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Email notification quota** sẽ được khởi tạo.
-9. Với mỗi tài khoản VNG Cloud, bạn có thể khởi tạo **1 gói Email notification quota** và sử dụng gói này theo chu kỳ mà bạn đã chọn. 7 ngày trước khi hết hạn gói Email notification quota này, bạn có thể tiếp tục gia hạn và sử dụng với chu kỳ gia hạn kế tiếp. Bên cạnh đó, trong khoảng thời gian sử dụng gói, bạn cũng có thể thực hiện tăng hạn mức sử dụng của gói theo hướng dẫn bên dưới. Cách tính chi phí cho mỗi gói Email notification quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649904).
+9. Với mỗi tài khoản VNG Cloud, bạn có thể khởi tạo **1 gói Email notification quota** và sử dụng gói này theo chu kỳ mà bạn đã chọn. 7 ngày trước khi hết hạn gói Email notification quota này, bạn có thể tiếp tục gia hạn và sử dụng với chu kỳ gia hạn kế tiếp. Bên cạnh đó, trong khoảng thời gian sử dụng gói, bạn cũng có thể thực hiện tăng hạn mức sử dụng của gói theo hướng dẫn bên dưới. Cách tính chi phí cho mỗi gói Email notification quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 
@@ -86,4 +86,4 @@ Nếu bạn không có nhu cầu sử dụng gói Email notification quota đã 
 
 Sau khi bạn bạn thực hiện xóa gói Email notification quota thì gói notification bị xóa sẽ biến mất khỏi danh sách gói notification của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](../../cach-tinh-phi.md).&#x20;
 
-Do hành động xóa Email notification quota tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.&#x20;
+<mark style="color:red;">**Do hành động xóa Email notification quota tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.**</mark>&#x20;
