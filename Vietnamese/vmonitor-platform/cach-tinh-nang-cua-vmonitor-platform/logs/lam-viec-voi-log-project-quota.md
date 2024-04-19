@@ -82,6 +82,6 @@ Nếu bạn không có nhu cầu sử dụng gói Log project đã tạo, chúng
 
 Sau khi bạn bạn thực hiện xóa gói Log project thì gói Log project bị xóa sẽ biến mất khỏi danh sách gói Log project của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](../../cach-tinh-phi.md).&#x20;
 
-Do hành động xóa Log project tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.&#x20;
+<mark style="color:red;">Do hành động xóa Log project tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.</mark>&#x20;
 
 \

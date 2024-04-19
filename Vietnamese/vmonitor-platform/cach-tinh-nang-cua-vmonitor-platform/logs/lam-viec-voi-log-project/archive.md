@@ -13,7 +13,7 @@ Nếu bạn có nhu cầu lưu trữ dữ liệu log lâu dài hơn những th�
 
 ![](http://docs.vngcloud.vn/download/attachments/49650638/image2023-4-27\_9-50-52.png?version=1\&modificationDate=1682563852000\&api=v2)
 
-7\. Nhập **Filter** cho log nếu bạn có nhu cầu chỉ đồng bộ những dữ liệu mà thoả mãn điều kiện này, còn không chúng tôi sẽ đồng bộ tất cả Log của Log Project đang chọn. Bạn có thể nhập điều kiện lọc cho log bằng một trong 2 cách: **Suggestion mode** hoặc **Editor mode**. Cách sử dụng 2 phương thức này và chuyển đổi qua lại giữa 2 phương thức đã được chúng tôi mô tả ở các tính năng bên trên, để biết thêm thông tin hãy xem tại [Log search](http://docs.vngcloud.vn/display/VPV/Log+search).
+7\. Nhập **Filter** cho log nếu bạn có nhu cầu chỉ đồng bộ những dữ liệu mà thoả mãn điều kiện này, còn không chúng tôi sẽ đồng bộ tất cả Log của Log Project đang chọn. Bạn có thể nhập điều kiện lọc cho log bằng một trong 2 cách: **Suggestion mode** hoặc **Editor mode**. Cách sử dụng 2 phương thức này và chuyển đổi qua lại giữa 2 phương thức đã được chúng tôi mô tả ở các tính năng bên trên, để biết thêm thông tin hãy xem tại [Log search](../../dashboard/widget/log-search.md).
 
 8\. Chọn **Destination**. Bạn có thể chọn 1 trong 2 nơi dữ liệu log được archive bao gồm: **vStorage container** hoặc **S3 compatible**.&#x20;
 
@@ -48,7 +48,7 @@ Nếu bạn có nhu cầu lưu trữ dữ liệu log lâu dài hơn những th�
 
 10\. Nhập tên một **vStorage container** mà bạn muốn thực hiện archive qua.
 
-11\. Nhập **Access key** và **Secret key** để xác thực thông tin kết nối tới hệ thống vStorage. Bạn có thể tìm thấy **Access key** và **Secret key** theo hướng dẫn tại [Service Account](../../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/huy-tai-khoan-service-account.md) và [Truy cập tài nguyên sử dụng tài khoản Service Account](../../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-truy-cap-tai-nguyen-vstorage/truy-cap-tai-nguyen-su-dung-tai-khoan-service-account.md).
+11\. Nhập **Access key** và **Secret key** để xác thực thông tin kết nối tới hệ thống vStorage. Bạn có thể tìm thấy **Access key** và **Secret key** theo hướng dẫn tại [Service Account](../../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/) và [Truy cập tài nguyên sử dụng tài khoản Service Account](../../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-truy-cap-tai-nguyen-vstorage/truy-cap-tai-nguyen-su-dung-tai-khoan-service-account.md).
 
 12\. Chọn **Select**.
 

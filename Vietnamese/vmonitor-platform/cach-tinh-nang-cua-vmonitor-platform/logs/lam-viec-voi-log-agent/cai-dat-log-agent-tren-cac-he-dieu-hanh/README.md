@@ -28,4 +28,4 @@ https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.7.0-windows-x86
 </code></pre> |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-* Sau khi tải agent xong, kết nối này có thể đóng. Bạn vẫn cần duy trì[ kết nối đẩy log](https://vngctech.atlassian.net/wiki/spaces/VP/pages/850100272).
+* Sau khi tải agent xong, kết nối này có thể đóng. Bạn vẫn cần duy trì kết nối đẩy log.
