@@ -6,7 +6,7 @@ An instance is a virtual server in the cloud that includes basic components such
 
 ### **Basic configurations for instance** <a href="#instance-basicconfigurationsforinstance" id="instance-basicconfigurationsforinstance"></a>
 
-You can launch different types of instances from a single Image. An _instance type_ essentially determines the hardware of the host computer used for your instance. Each instance type offers different compute and memory capabilities. Select an instance type based on the amount of memory and computing power that you need for the application or software that you plan to run on the instance. For more information, see [Flavor](flavor.md).
+You can launch different types of instances from a single Image. An _instance type_ essentially determines the hardware of the host computer used for your instance. Each instance type offers different compute and memory capabilities. Select an instance type based on the amount of memory and computing power that you need for the application or software that you plan to run on the instance.&#x20;
 
 Images contain the required information necessary to run ECS instances, such as OSs and initialization data of applications. VNG Cloud provides ready-to-use OS images for Windows Server and several Linux OSs. You can also create or import your own custom images to save time in making repeated configurations. In addition, image providers provide images pre-installed with a variety of runtime environments and software applications in Marketplace. VNG Cloud Marketplace images are suitable for specific scenarios such as website building, application development, and visualized management. You can conveniently select Marketplace images based on their purpose.
 
