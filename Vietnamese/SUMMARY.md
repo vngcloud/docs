@@ -664,6 +664,7 @@
 * [vNetwork](vnetwork.md)
   * [Tạo mới Endpoint](vnetwork/tao-moi-endpoint.md)
   * [Đổi tên Endpoint](vnetwork/doi-ten-endpoint.md)
+  * [Xóa Endpoint](vnetwork/xoa-endpoint.md)
 * [Identity and Access Management (IAM)](identity-and-access-management-iam.md)
   * [Bắt đầu với IAM](identity-and-access-management-iam/bat-dau-voi-iam.md)
   * [Ứng dụng phổ biến](identity-and-access-management-iam/ung-dung-pho-bien/README.md)
