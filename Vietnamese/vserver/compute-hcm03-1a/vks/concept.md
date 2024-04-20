@@ -2,7 +2,7 @@
 
 Bên dưới là các concepts hiện tại VKS đang cung cấp cho bạn:&#x20;
 
-## **1. Public Cluster and Private Node Group**
+## **1. Public Cluster and Public Node Group**
 
 <figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 

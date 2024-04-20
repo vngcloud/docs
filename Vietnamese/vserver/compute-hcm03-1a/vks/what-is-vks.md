@@ -4,7 +4,7 @@ VKS (VNGCloud Kubernetes Service) là một dịch vụ được quản lý trê
 
 <figure><img src="https://media.licdn.com/dms/image/D4E12AQE2lTRiOJ1m4w/article-inline_image-shrink_1500_2232/0/1657985109690?e=1718841600&#x26;v=beta&#x26;t=Wq4ePWjKyKwxhqRuURZsxeKbtm1CtuLKOJSxLSxhhO0" alt=""><figcaption></figcaption></figure>
 
-### Các thành phần chính:  <a href="#whatisvks-cacthanhphanchinh" id="whatisvks-cacthanhphanchinh"></a>
+## Các thành phần chính:  <a href="#whatisvks-cacthanhphanchinh" id="whatisvks-cacthanhphanchinh"></a>
 
 1. **Control Plane:** chịu trách nhiệm quản lý trạng thái tổng thể của cluster và đưa ra các quyết định về cách triển khai và quản lý các ứng dụng. Control Plane gồm các thành phần sau:
    * **kube-api-server:** Tiếp nhận các yêu cầu API từ người dùng và các thành phần khác trong cụm, xử lý các yêu cầu đó và trả về kết quả.
@@ -17,7 +17,7 @@ VKS (VNGCloud Kubernetes Service) là một dịch vụ được quản lý trê
 
 ***
 
-### Những điểm nổi bật của VKS: <a href="#whatisvks-nhungdiemnoibatcuavks" id="whatisvks-nhungdiemnoibatcuavks"></a>
+## Những điểm nổi bật của VKS <a href="#whatisvks-nhungdiemnoibatcuavks" id="whatisvks-nhungdiemnoibatcuavks"></a>
 
 * **Fully Manage Control:**
   * VKS tự động hóa các tác vụ quản lý Kubernetes phức tạp, cho phép bạn tập trung vào việc phát triển ứng dụng.

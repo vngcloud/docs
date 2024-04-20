@@ -45,7 +45,7 @@ Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiệ
 * Chạy câu lệnh sau đây để kiểm tra **node**
 
 ```
-kubectl get node
+kubectl get nodes
 ```
 
 * Nếu kết quả trả về như bên dưới tức là bạn Cluster của bạn được khởi tạo thành công với 3 node như bên dưới.
