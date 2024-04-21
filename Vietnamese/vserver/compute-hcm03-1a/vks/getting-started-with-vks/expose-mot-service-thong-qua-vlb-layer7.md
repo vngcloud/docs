@@ -98,7 +98,7 @@ helm install vngcloud-ingress-controller vks-helm-charts/vngcloud-ingress-contro
   --set cluster.clusterID= <Lấy Cluster ID của cluster mà bạn đã khởi tạo trước đó>
 ```
 
-* Sau khi việc cài đặt hoàn tất, thực hiện kiểm tra trạng thái của vngcloud-Integrate-controller pods:
+* Sau khi việc cài đặt hoàn tất, thực hiện kiểm tra trạng thái của vngcloud-ingress-controller pods:
 
 ```
 kubectl get pods -n kube-system | grep vngcloud-ingress-controller
