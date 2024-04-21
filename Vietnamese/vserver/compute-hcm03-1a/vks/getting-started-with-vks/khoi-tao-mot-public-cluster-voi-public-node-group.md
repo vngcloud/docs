@@ -63,9 +63,9 @@ ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.
 
 Sau đây là hướng dẫn để bạn deploy service nginx trên Kubernetes.
 
-**Bước 1**: **Tạo Deployment cho Nginx app.**
+**Bước 1**: **Tạo Deployment và Service cho Nginx app**
 
-* Tạo file **nginx.yaml** với nội dung sau:
+* Tạo file **nginx-service.yaml** với nội dung sau:
 
 ```
 apiVersion: apps/v1
@@ -87,21 +87,7 @@ spec:
         image: nginx:1.19.1
         ports:
         - containerPort: 80
-```
-
-* Deploy Deployment này bằng lệch:&#x20;
-
-```
-kubectl apply -f nginx.yaml
-```
-
-***
-
-**Bước 2: Tạo Service cho Nginx app**
-
-* Tạo file **nginx-service.yaml** với nội dung sau:
-
-```
+---
 apiVersion: v1
 kind: Service
 metadata:
@@ -115,7 +101,7 @@ spec:
       targetPort: 80
 ```
 
-* Deploy Service này bằng lệch:&#x20;
+* Deploy Deployment này bằng lệch:&#x20;
 
 ```
 kubectl apply -f nginx-service.yaml
@@ -123,36 +109,29 @@ kubectl apply -f nginx-service.yaml
 
 ***
 
-**Bước 3: Kiểm tra thông tin Deployment, Service trước khi expose ra Internet.**
+**Bước 2: Kiểm tra thông tin Deployment, Service trước khi expose ra Internet.**
 
 * Chạy câu lệnh sau đây để kiểm tra **Deployment**
 
 ```
- kubectl get deploy -o wide
+kubectl get svc,deploy,pod -owide
 ```
 
-* Nếu kết quả trả về như bên dưới tức là bạn đã deploy Deployment thành công.
+* Nếu kết quả trả về như bên dưới tức là bạn đã deploy service nginx thành công.
 
 ```
-NAME        READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES         SELECTOR
-nginx-app   1/1     1            1           44m   nginx        nginx:1.19.1   app=nginx
+NAME                    TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE    SELECTOR
+service/kubernetes      ClusterIP   10.96.0.1       <none>        443/TCP   2d4h   <none>
+service/nginx-service   ClusterIP   10.96.178.229   <none>        80/TCP    74s    app=nginx
+
+NAME                        READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES         SELECTOR
+deployment.apps/nginx-app   1/1     1            1           74s   nginx        nginx:1.19.1   app=nginx
+
+NAME                             READY   STATUS    RESTARTS   AGE   IP              NODE                                            NOMINATED NODE   READINESS GATES
+pod/nginx-app-7f45b65946-5pcvz   1/1     Running   0          74s   172.16.24.201   ng-3f06013a-f6a5-47ba-a51f-bc5e9c2b10a7-ecea1   <none>           <none>
 ```
 
-* Chạy câu lệnh sau đây để kiểm tra **Service**
-
-```
-kubectl get service
-```
-
-* Nếu kết quả trả về như bên dưới tức là bạn đã deploy Service thành công.
-
-```
-NAME            TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
-kubernetes      ClusterIP   10.96.0.1       <none>        443/TCP   18h
-nginx-service   ClusterIP   10.96.101.160   <none>        80/TCP    2m7s
-```
-
-**Bước 4: Expose Service ra Internet sử dụng type: NodePort**
+### **Expose Nginx Service ra Internet**
 
 * Chạy câu lệnh sau đây để expose nginx-service ra internet:
 
@@ -163,18 +142,24 @@ kubectl expose deployment nginx-app --type=NodePort --port=30080 --target-port=8
 * Nếu kết quả trả về như bên dưới tức là bạn đã expose Service ra Internet thành công.
 
 ```
-NAME            TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)           AGE
-kubernetes      ClusterIP   10.96.0.1       <none>        443/TCP           18h
-nginx-app       NodePort    10.96.67.32     <none>        30080:31007/TCP   7s
-nginx-service   ClusterIP   10.96.101.160   <none>        80/TCP            21m
+NAME                    TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)           AGE     SELECTOR
+service/kubernetes      ClusterIP   10.96.0.1       <none>        443/TCP           2d4h    <none>
+service/nginx-app       NodePort    10.96.215.192   <none>        30080:31289/TCP   4s      app=nginx
+service/nginx-service   ClusterIP   10.96.178.229   <none>        80/TCP            2m43s   app=nginx
+
+NAME                        READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS   IMAGES         SELECTOR
+deployment.apps/nginx-app   1/1     1            1           2m43s   nginx        nginx:1.19.1   app=nginx
+
+NAME                             READY   STATUS    RESTARTS   AGE     IP              NODE                                            NOMINATED NODE   READINESS GATES
+pod/nginx-app-7f45b65946-5pcvz   1/1     Running   0          2m43s   172.16.24.201   ng-3f06013a-f6a5-47ba-a51f-bc5e9c2b10a7-ecea1   <none>           <none
 ```
 
 ***
 
-**Bước 5: Để truy cập vào app nginx vừa export, bạn có thể sử dụng URL với định dạng:**
+**Để truy cập vào app nginx vừa export, bạn có thể sử dụng URL với định dạng:**
 
 ```
-http://<node_ip>:31007/
+http://<node_ip>:31289/
 ```
 
 Trong đó node\_ip có thể là địa chỉ node\_port của bất kỳ node nào trong cluster. Bạn có thể lấy thông tin External IP của Node tại giao diện vServer. Cụ thể truy cập tại [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server).

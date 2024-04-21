@@ -64,7 +64,7 @@ ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.
 {% hint style="info" %}
 Chú ý:
 
-Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa **bật option** ![](https://docs-admin.vngcloud.vn/download/thumbnails/73762054/image2024-4-16\_14-19-46.png?version=1\&modificationDate=1713251989000\&api=v2) **, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt VNGCloud Controller Manager** theo hướng dẫn bên dưới. Nếu bạn đã bật option ![](https://docs-admin.vngcloud.vn/download/thumbnails/73762054/image2024-4-16\_14-22-50.png?version=1\&modificationDate=1713252172000\&api=v2), thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt VNGCloud Controller Manager và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
+Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa bật option **Enable vLB Native Integration Driver**, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt VNGCloud Controller Manager theo hướng dẫn bên dưới. Nếu bạn đã bật option **Enable vLB Native Integration Driver**, thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt VNGCloud Controller Manager và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
 {% endhint %}
 
 <details>
@@ -136,9 +136,9 @@ vngcloud-controller-manager-8864c754c-bqhvz   1/1     Running   5 (91s ago)   3m
 
 Sau đây là hướng dẫn để bạn deploy service nginx trên Kubernetes.
 
-**Bước 1**: **Tạo Deployment cho Nginx app.**
+**Bước 1**: **Tạo Deployment, Service cho Nginx app.**
 
-* Tạo file **nginx.yaml** với nội dung sau:
+* Tạo file **nginx-service-lb4.yaml** với nội dung sau:
 
 ```
 apiVersion: apps/v1
@@ -160,21 +160,7 @@ spec:
         image: nginx:1.19.1
         ports:
         - containerPort: 80
-```
-
-* Deploy Deployment này bằng lệch:&#x20;
-
-```
-kubectl apply -f nginx.yaml
-```
-
-***
-
-**Bước 2: Tạo Service cho Nginx app**
-
-* Tạo file **nginx-service.yaml** với nội dung sau:
-
-```
+---
 apiVersion: v1
 kind: Service
 metadata:
@@ -192,57 +178,51 @@ spec:
 * Deploy Service này bằng lệch:&#x20;
 
 ```
-kubectl apply -f nginx-service.yaml
+kubectl apply -f nginx-service-lb4.yaml
 ```
 
 ***
 
-**Bước 3: Kiểm tra thông tin Deployment, Service vừa deploy**
+**Bước 2: Kiểm tra thông tin Deployment, Service vừa deploy**
 
 * Chạy câu lệnh sau đây để kiểm tra **Deployment**
 
 ```
- kubectl get deploy -o wide
+kubectl get svc,deploy,pod -owide
 ```
 
 * Nếu kết quả trả về như bên dưới tức là bạn đã deploy Deployment thành công.
 
 ```
-NAME        READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES         SELECTOR
-nginx-app   1/1     1            1           44m   nginx        nginx:1.19.1   app=nginx
+kubectl get svc,deploy,pod -owide
+NAME                    TYPE           CLUSTER-IP      EXTERNAL-IP   PORT(S)           AGE     SELECTOR
+service/kubernetes      ClusterIP      10.96.0.1       <none>        443/TCP           2d4h    <none>
+service/nginx-app       NodePort       10.96.215.192   <none>        30080:31289/TCP   8m12s   app=nginx
+service/nginx-service   LoadBalancer   10.96.179.221   <pending>     80:32624/TCP      2m16s   app=nginx
+
+NAME                        READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS   IMAGES         SELECTOR
+deployment.apps/nginx-app   1/1     1            1           2m16s   nginx        nginx:1.19.1   app=nginx
+
+NAME                             READY   STATUS    RESTARTS   AGE     IP              NODE                                            NOMINATED NODE   READINESS GATES
+pod/nginx-app-7f45b65946-t7d7k   1/1     Running   0          2m16s   172.16.24.202   ng-3f06013a-f6a5-47ba-a51f-bc5e9c2b10a7-ecea1   <none>           <none
 ```
 
-* Chạy câu lệnh sau đây để kiểm tra **Service**
-
-```
-kubectl get service
-```
-
-* Nếu kết quả trả về như bên dưới tức là bạn đã deploy Service thành công.
-
-```
-NAME            TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
-kubernetes      ClusterIP   10.96.0.1       <none>        443/TCP   18h
-nginx-service   ClusterIP   10.96.101.160   <none>        80/TCP    2m7s
-```
-
-\
 
 
-Lúc này, hệ thống vLB sẽ tự động tạo một LB tương ứng với Ingress resource bên trên, ví dụ:&#x20;
+Lúc này, hệ thống vLB sẽ tự động tạo một LB tương ứng cho nginx app đã deployment, ví dụ:&#x20;
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/73762054/image2024-4-15_14-41-0.png?version=1&#x26;modificationDate=1713166861000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-**Bước 4: Để truy cập vào app nginx vừa export, bạn có thể sử dụng URL với định dạng:**
+**Bước 3: Để truy cập vào app nginx vừa export, bạn có thể sử dụng URL với định dạng:**
 
 ```
 http://Endpoint/
 ```
 
-Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao diện vLB. Cụ thể truy cập tại [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb)
+Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao diện vLB. Cụ thể truy cập tại [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb)
 
-Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.129/](http://180.93.181.129/)
+Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.20/](http://180.93.181.20/)
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/73762054/image2024-4-15_14-42-34.png?version=1&#x26;modificationDate=1713166954000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Bạn có thể xem thêm về ALB tại [Working with Network load balancing (NLB)](../network/working-with-network-load-balancing-nlb/).&#x20;

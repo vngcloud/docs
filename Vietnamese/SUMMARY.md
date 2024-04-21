@@ -192,6 +192,7 @@
         * [Khởi tạo một Public Cluster với Public Node Group](vserver/compute-hcm03-1a/vks/getting-started-with-vks/khoi-tao-mot-public-cluster-voi-public-node-group.md)
         * [Expose một service thông qua vLB Layer4](vserver/compute-hcm03-1a/vks/getting-started-with-vks/expose-mot-service-thong-qua-vlb-layer4.md)
         * [Expose một service thông qua vLB Layer7](vserver/compute-hcm03-1a/vks/getting-started-with-vks/expose-mot-service-thong-qua-vlb-layer7.md)
+        * [Integrate with Container Storage Interface (CSI)](vserver/compute-hcm03-1a/vks/getting-started-with-vks/integrate-with-container-storage-interface-csi.md)
         * [Khởi tạo một Public Cluster với Private Node Group](vserver/compute-hcm03-1a/vks/getting-started-with-vks/khoi-tao-mot-public-cluster-voi-private-node-group.md)
         * [Nâng cấp Control Plane Version](vserver/compute-hcm03-1a/vks/getting-started-with-vks/nang-cap-control-plane-version.md)
         * [Nâng cấp Node Group Version](vserver/compute-hcm03-1a/vks/getting-started-with-vks/nang-cap-node-group-version.md)

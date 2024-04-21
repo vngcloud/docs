@@ -1,4 +1,4 @@
-# Expose một service thông qua vLB Layer7
+# Integrate with Container Storage Interface (CSI)
 
 ### Điều kiện cần <a href="#exposemotservicethongquavlblayer7-dieukiencan" id="exposemotservicethongquavlblayer7-dieukiencan"></a>
 
@@ -36,7 +36,7 @@ Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiệ
 
 **Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
-**Bước 2:** Danh sách Cluster được hiển thị, chọn biểu tượng ![](https://docs-admin.vngcloud.vn/download/thumbnails/73762059/image2024-4-4\_14-37-11.png?version=1\&modificationDate=1712222544000\&api=v2) và chọn **Download Config File** để thực hiện tải xuống file kubeconfig. File này sẽ giúp bạn có toàn quyền truy cập vào Cluster của bạn.
+**Bước 2:** Danh sách Cluster được hiển thị, chọn **Download Config File** để thực hiện tải xuống file kubeconfig. File này sẽ giúp bạn có toàn quyền truy cập vào Cluster của bạn.
 
 **Bước 3**: Đổi tên file này thành config và lưu nó vào thư mục **\~/.kube/config**
 
@@ -59,17 +59,17 @@ ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.
 
 ***
 
-### Khởi tạo Service Account và cài đặt VNGCloud Ingress Controller <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
+### Khởi tạo Service Account và cài đặt VNGCloud BlockStorage CSI Driver <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
 
 {% hint style="info" %}
 Chú ý:
 
-Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa bật option **Enable vLB Native Integration Driver**, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt VNGCloud Ingress Controller theo hướng dẫn bên dưới. Nếu bạn đã bật option **Enable vLB Native Integration Driver**, thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt VNGCloud Ingress Controller và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
+Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa bật option **Enable BlockStore Persistent Disk CSI Driver**, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt VNGCloud BlockStorage CSI Driver theo hướng dẫn bên dưới. Nếu bạn đã bật option **Enable BlockStore Persistent Disk CSI Driver**, thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt VNGCloud BlockStorage CSI Driver và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
 {% endhint %}
 
 <details>
 
-<summary>Khởi tạo Service Account và cài đặt VNGCloud Ingress Controller</summary>
+<summary>Khởi tạo Service Account và cài đặt VNGCloud BlockStorage CSI Driver</summary>
 
 #### Khởi tạo Service Account <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccount" id="exposemotservicethongquavlblayer7-khoitaoserviceaccount"></a>
 
@@ -78,7 +78,7 @@ Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, n�
   * Tìm và chọn **Policy:** **vLBFullAccess và Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do VNG Cloud tạo ra, bạn không thể xóa các policy này.
   * Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
 
-#### Cài đặt VNGCloud Ingress Controller <a href="#exposemotservicethongquavlblayer7-caidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-caidatvngcloudingresscontroller"></a>
+#### Cài đặt VNGCloud BlockStorage CSI Driver <a href="#exposemotservicethongquavlblayer7-caidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-caidatvngcloudingresscontroller"></a>
 
 * Cài đặt Helm phiên bản từ 3.0 trở lên. Tham khảo tại [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) để biết cách cài đặt.
 * Thêm repo này vào cluster của bạn qua lệnh:
@@ -91,14 +91,14 @@ helm repo update
 * Thay thế thông tin ClientID, Client Secret và ClusterID của cụm K8S của bạn và tiếp tục chạy:
 
 ```
-helm install vngcloud-ingress-controller vks-helm-charts/vngcloud-ingress-controller \
-  --namespace kube-system \
-  --set cloudConfig.global.clientID= <Lấy ClientID của Service Account được tạo trên IAM theo hướng dẫn bên trên> \
-  --set cloudConfig.global.clientSecret= <Lấy ClientSecret của Service Account được tạo trên IAM theo hướng dẫn bên trên>\
-  --set cluster.clusterID= <Lấy Cluster ID của cluster mà bạn đã khởi tạo trước đó>
+helm install vngcloud-blockstorage-csi-driver vks-helm-charts/vngcloud-blockstorage-csi-driver \
+  --replace --namespace kube-system \
+  --set vngcloudAccessSecret.keyId=${VNGCLOUD_CLIENT_ID} \
+  --set vngcloudAccessSecret.accessKey=${VNGCLOUD_CLIENT_SECRET} \
+  --set vngcloudAccessSecret.vksClusterId=${VNGCLOUD_VKS_CLUSTER_ID}  # Optional
 ```
 
-* Sau khi việc cài đặt hoàn tất, thực hiện kiểm tra trạng thái của vngcloud-Integrate-controller pods:
+* Sau khi việc cài đặt hoàn tất, thực hiện kiểm tra trạng thái của vngcloud-blockstorage-csi-driver pods:
 
 ```
 kubectl get pods -n kube-system | grep vngcloud-ingress-controller
@@ -107,8 +107,10 @@ kubectl get pods -n kube-system | grep vngcloud-ingress-controller
 Ví dụ như ảnh bên dưới là bạn đã cài đặt thành công vngcloud-controller-manager:
 
 ```
-NAME                                      READY   STATUS    RESTARTS   AGE
-vngcloud-ingress-controller-0             1/1     Running   0          12s
+NAME                                           READY   STATUS    RESTARTS       AGE
+vngcloud-csi-controller-56bd7b85f-ctpns        7/7     Running   6 (2d4h ago)   2d4h
+vngcloud-csi-controller-56bd7b85f-npp9n        7/7     Running   2 (2d4h ago)   2d4h
+vngcloud-csi-node-c8r2w                        3/3     Running   0              2d4h
 ```
 
 </details>
@@ -190,94 +192,161 @@ pod/nginx-app-7f45b65946-t7d7k   1/1     Running   0          16s   172.16.24.20
 
 ***
 
-### **Tạo Ingress Resource**
+### **Tạo Persistent Volume**
 
-* Tạo file **nginx-ingress.yaml** với nội dung sau:
+* Tạo file **persistent-volume.yaml** với nội dung sau:
 
 ```
-apiVersion: networking.k8s.io/v1
-kind: Ingress
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
 metadata:
-  name: nginx-ingress
+  name: my-expansion-storage-class                    # [1] The StorageClass name, CAN be changed
+provisioner: bs.csi.vngcloud.vn                       # The VNG-CLOUD CSI driver name
+parameters:
+  type: vtype-bacd68a4-8758-4fb6-a739-b047665e05d5    # The volume type UUID
+  isPOC: "true"
+allowVolumeExpansion: true                            # MUST set this value to turn on volume expansion feature
+---
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: my-expansion-pvc                           # [2] The PVC name, CAN be changed
 spec:
-  ingressClassName: "vngcloud"
-  defaultBackend:
-    service:
-      name: nginx-service
-      port:
-        number: 80
-  rules:
-    - http:
-        paths:
-          - path: /path1
-            pathType: Exact
-            backend:
-              service:
-                name: nginx-service
-                port:
-                  number: 80               
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi                                # [3] The PVC size, CAN be changed, this value MUST be in the valid range of the proper volume type
+  storageClassName: my-expansion-storage-class     # [4] The StorageClass name, MUST be the same as [1]
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx                                      # [5] The Pod name, CAN be changed
+spec:
+  containers:
+    - image: nginx
+      imagePullPolicy: IfNotPresent
+      name: nginx
+      ports:
+        - containerPort: 80
+          protocol: TCP
+      volumeMounts:
+        - mountPath: /var/lib/www/html
+          name: my-volume-name                     # MUST be the same as [6]
+  volumes:
+    - name: my-volume-name                         # [6] The volume name, CAN be changed
+      persistentVolumeClaim:
+        claimName: my-expansion-pvc                # MUST be the same as [2]
+        readOnly: false
 ```
 
 * Chạy câu lệnh sau đây để triển khai Ingress
 
 ```
-kubectl apply -f nginx-ingress.yaml
+kubectl apply -f persistent-volume.yaml
 ```
 
-Lúc này, hệ thống vLB sẽ tự động tạo một LB tương ứng với Ingress resource bên trên, ví dụ:&#x20;
+Lúc này, hệ thống vServer sẽ tự động tạo một Volume tương ứng với file yaml bên trên, ví dụ:&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-Chú ý:&#x20;
-
-* Hiện tại Ingress chỉ hỗ trợ duy nhất TLS port 443 và là điểm kết thúc cho TLS (TLS termination). TLS Secret phải chứa các trường với tên key là tls.crt và tls.key, đây chính là certificate và private key để sử dụng cho TLS. Nếu bạn muốn sử dụng Certificate cho một host, hãy thực hiện tải lên Certificate theo hướng dẫn tại [Upload a certificate](https://docs-admin.vngcloud.vn/display/vServer/Upload+a+certificate) và sử dụng chúng như một annotation. Ví dụ:&#x20;
-
-```
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: example-ingress
-  annotations:
-    # kubernetes.io/ingress.class: "vngcloud" # this annotation is deprecated will cause warning, can use option `ingressClassName` below instead.
-    vks.vngcloud.vn/load-balancer-id: "lb-6cdea8fd-4589-410e-933f-c3bc46fa9d25"
-    vks.vngcloud.vn/certificate-ids: "secret-a6d20ec6-f3e5-499a-981b-b1484e340cec"
-spec:
-  ingressClassName: "vngcloud"
-  defaultBackend:
-    service:
-      name: apache-service
-      port:
-        number: 80
-  tls:
-    - hosts:
-        - host.example.com
-  rules:
-    - host: host.example.com
-      http:
-        paths:
-          - path: /nginx
-            pathType: Exact
-            backend:
-              service:
-                name: nginx-service
-                port:
-                  number: 80
-```
-{% endhint %}
+<figure><img src="../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-**Để truy cập vào app nginx, bạn có thể sử dụng Endpoint của Load Balancer mà hệ thống đã tạo.**&#x20;
+### **Tạo Snapshot**
+
+#### **Cài đặt VNGCloud Snapshot Controller**
+
+* Cài đặt Helm phiên bản từ 3.0 trở lên. Tham khảo tại [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) để biết cách cài đặt.
+* Thêm repo này vào cluster của bạn qua lệnh:
 
 ```
-http://Endpoint/
+helm repo add vks-helm-charts https://vngcloud.github.io/vks-helm-charts
+helm repo update
 ```
 
-Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao diện vLB. Cụ thể truy cập tại&#x20;
+* Tiếp tục chạy:
 
-Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.129/](http://180.93.181.129/)
+```
+helm install vngcloud-snapshot-controller vks-helm-charts/vngcloud-snapshot-controller \
+  --replace --namespace kube-system
+```
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+* Sau khi việc cài đặt hoàn tất, thực hiện kiểm tra trạng thái của vngcloud-blockstorage-csi-driver pods:
 
-Bạn có thể xem thêm về ALB tại [Working with Application Load Balancer (ALB](../network/working-with-application-load-balancer-alb/)).
+```
+kubectl get pods -n kube-system
+```
+
+Ví dụ như ảnh bên dưới là bạn đã cài đặt thành công vngcloud-controller-manager:
+
+<pre><code>NAME                                           READY   STATUS              RESTARTS       AGE
+<strong>
+</strong>snapshot-controller-7fdd984f89-745tg           0/1     ContainerCreating   0              3s
+snapshot-controller-7fdd984f89-k94wq           0/1     ContainerCreating   0              3s
+</code></pre>
+
+#### Tạo file **snapshot.yaml** với nội dung sau:
+
+```
+apiVersion: snapshot.storage.k8s.io/v1
+kind: VolumeSnapshotClass
+metadata:
+  name: my-snapshot-storage-class  # [2] The name of the volume snapshot class, CAN be changed
+driver: bs.csi.vngcloud.vn
+deletionPolicy: Delete
+parameters:
+  force-create: "false"
+---
+
+apiVersion: snapshot.storage.k8s.io/v1
+kind: VolumeSnapshot
+metadata:
+  name: my-snapshot-pvc  # [4] The name of the snapshot, CAN be changed
+spec:
+  volumeSnapshotClassName: my-snapshot-storage-class  # MUST match with [2]
+  source:
+    persistentVolumeClaimName: my-expansion-pvc  # MUST match with [3]
+```
+
+* Chạy câu lệnh sau đây để triển khai Ingress
+
+```
+kubectl apply -f snapshot.yaml
+```
+
+***
+
+### **Kiểm tra PVC và Snapshot vừa tạo**
+
+* Sau khi apply tập tin thành công, bạn có thể kiểm tra danh sách service, pvc thông qua:&#x20;
+
+```
+kubectl get sc,pvc,pod -owide
+```
+
+```
+NAME                                                       PROVISIONER          RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
+storageclass.storage.k8s.io/my-expansion-storage-class     bs.csi.vngcloud.vn   Delete          Immediate           true                   10m
+storageclass.storage.k8s.io/sc-iops-200-retain (default)   bs.csi.vngcloud.vn   Retain          Immediate           false                  2d4h
+
+NAME                                     STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS                 AGE   VOLUMEMODE
+persistentvolumeclaim/my-expansion-pvc   Bound    pvc-14456f4a-ee9e-435d-a94f-5a2e820954e9   20Gi       RWO            my-expansion-storage-class   10m   Filesystem
+
+NAME                             READY   STATUS    RESTARTS   AGE   IP              NODE                                            NOMINATED NODE   READINESS GATES
+pod/nginx                        1/1     Running   0          10m   172.16.24.203   ng-3f06013a-f6a5-47ba-a51f-bc5e9c2b10a7-ecea1   <none>           <none>
+pod/nginx-app-7f45b65946-t7d7k   1/1     Running   0          94m   172.16.24.202   ng-3f06013a-f6a5-47ba-a51f-bc5e9c2b10a7-ecea1   <none>           <none>
+```
+
+***
+
+### Thay đổi thông số IOPS của Persistent Volume vừa tạo
+
+
+
+### Thay đổi Disk Volume của Persistent Volume vừa tạo
+
+### Restore Persistent Volume từ Snapshot
+
