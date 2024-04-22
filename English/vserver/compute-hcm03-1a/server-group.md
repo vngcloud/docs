@@ -23,6 +23,7 @@ Some usage examples of soft anti-affinity and soft affinity group policies.
 You can create a server group with the affinity or anti-affinity policy. This option can not be changed after create.
 
 1. Go to VNG Cloud Portal console, navigate to Server Group page
-2. Create server group with policy that meets your requirement
+2. Create additional Server Groups and choose the appropriate affinity or anti-affinity policy. Once the Server group is created, you cannot change this policy attribute.
+3. You can create virtual servers and select an existing Server Group according to your needs.
 
 \
