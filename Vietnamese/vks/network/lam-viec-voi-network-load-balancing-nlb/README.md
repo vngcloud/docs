@@ -1,8 +1,6 @@
-# Working with Network load balancing (NLB)
+# Làm việc với Network load balancing (NLB)
 
-#### Tổng quan <a href="#workingwithnetworkloadbalancing-nlb-tongquan" id="workingwithnetworkloadbalancing-nlb-tongquan"></a>
-
-#### NLB là gì? <a href="#workingwithnetworkloadbalancing-nlb-nlblagi" id="workingwithnetworkloadbalancing-nlb-nlblagi"></a>
+### NLB là gì? <a href="#workingwithnetworkloadbalancing-nlb-nlblagi" id="workingwithnetworkloadbalancing-nlb-nlblagi"></a>
 
 * &#x20;**Network Load Balancer (NLB)** là một bộ cân bằng tải được cung cấp bởi VNGCloud giúp phân phối lưu lượng truy cập mạng đến nhiều máy chủ back-end (backend servers) trong một nhóm máy tính (instance group). NLB hoạt động ở layer 4 của mô hình OSI, giúp cân bằng tải dựa trên địa chỉ IP và cổng TCP/UDP. Để biết thêm thông tin chi tiết về NLB, vui lòng tham khảo tại [How it works (NLB)](https://docs-admin.vngcloud.vn/pages/viewpage.action?pageId=64553859)
 

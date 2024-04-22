@@ -1,4 +1,4 @@
-# Getting Started with VKS
+# Bắt đầu với VKS
 
 Tính năng này đang trong giai đoạn thử nghiệm Alpha. VNG Cloud đang dần hoàn thiện tính năng này và rất mong muốn nhận được phản hồi từ người dùng để cải thiện chất lượng sản phẩm. Nếu bạn muốn trải nghiệm tính năng mới ra mắt này, vui lòng liên hệ với VNG Cloud qua email [**support@vngcloud.vn**](mailto:support@vngcloud.vn) hoặc hotline **19001549**.
 
@@ -12,14 +12,3 @@ Lưu ý:
 
 Cảm ơn bạn đã sử dụng VNG Cloud!
 {% endhint %}
-
-***
-
-#### Topic <a href="#gettingstartedwithvks-topic" id="gettingstartedwithvks-topic"></a>
-
-* [Khởi tạo một Public Cluster với Public Node Group](khoi-tao-mot-public-cluster-voi-public-node-group.md)
-* [Expose một service thông qua vLB Layer4](expose-mot-service-thong-qua-vlb-layer4.md)
-* [Expose một service thông qua vLB Layer7](expose-mot-service-thong-qua-vlb-layer7.md)
-* [Khởi tạo một Public Cluster với Private Node Group](khoi-tao-mot-public-cluster-voi-private-node-group.md)
-* [Nâng cấp Control Plane Version](nang-cap-control-plane-version.md)
-* [Nâng cấp Node Group Version](nang-cap-node-group-version.md)
