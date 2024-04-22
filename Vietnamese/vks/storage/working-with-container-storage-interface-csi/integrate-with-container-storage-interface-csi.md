@@ -20,9 +20,9 @@ Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, n�
 
 #### Khởi tạo Service Account <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccount" id="exposemotservicethongquavlblayer7-khoitaoserviceaccount"></a>
 
-* Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **vLBFullAccess**, **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts) và thực hiện theo các bước sau:
+* Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy:  **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts) và thực hiện theo các bước sau:
   * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
-  * Tìm và chọn **Policy:** **vLBFullAccess và Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do VNG Cloud tạo ra, bạn không thể xóa các policy này.
+  * Tìm và chọn **Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do VNG Cloud tạo ra, bạn không thể xóa các policy này.
   * Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
 
 #### Cài đặt VNGCloud BlockStorage CSI Driver <a href="#exposemotservicethongquavlblayer7-caidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-caidatvngcloudingresscontroller"></a>
@@ -305,11 +305,99 @@ pod/nginx-app-7f45b65946-t7d7k   1/1     Running   0          94m   172.16.24.20
 
 ### Thay đổi thông số IOPS của Persistent Volume vừa tạo
 
+\
+Để thay đổi thông số IOPS của Persistent Volume vừa tạo, hãy thực hiện theo các bước sau đây:&#x20;
 
+**Bước 1:** Chạy lệnh bên dưới để liệt kê các PVC trong Cluster của bạn
+
+```
+kubectl get persistentvolumes
+```
+
+**Bước 2:** Chỉnh sửa tệp tin YAML của PVC theo lệnh
+
+```
+kubectl edit pvc my-expansion-pvc
+```
+
+* Nếu bạn chưa chỉnh sửa IOPS của Persistent Volume lần nào trước đó, khi bạn chạy lệnh trên, bạn hãy thêm 1 annotation bs.csi.vngcloud.vn/volume-type: "volume-type-id" . Ví dụ: bên dưới tôi đang thay đổi IOPS của Persistent Volume từ 200 (Volume type id = vtype-bacd68a4-8758-4fb6-a739-b047665e05d5) lên 1000 (Volume type id = vtype-85b39362-a360-4bbb-9afa-a36a40cea748)
+
+```
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  annotations:
+    bs.csi.vngcloud.vn/volume-type: "vtype-85b39362-a360-4bbb-9afa-a36a40cea748"
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"PersistentVolumeClaim","metadata":{"annotations":{},"name":"my-expansion-pvc","namespace":"default"},"spec":{"accessModes":["ReadWriteOnce"],"resources":{"requests":{"storage":"20Gi"}},"storageClassName":"my-expansion-storage-class"}}
+    pv.kubernetes.io/bind-completed: "yes"
+    pv.kubernetes.io/bound-by-controller: "yes"
+    volume.beta.kubernetes.io/storage-provisioner: bs.csi.vngcloud.vn
+    volume.kubernetes.io/storage-provisioner: bs.csi.vngcloud.vn
+  creationTimestamp: "2024-04-21T14:16:53Z"
+  finalizers:
+  - kubernetes.io/pvc-protection
+  name: my-expansion-pvc
+  namespace: default
+  resourceVersion: "11041591"
+  uid: 14456f4a-ee9e-435d-a94f-5a2e820954e9
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
+  storageClassName: my-expansion-storage-class
+  volumeMode: Filesystem
+  volumeName: pvc-14456f4a-ee9e-435d-a94f-5a2e820954e9
+status:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 20Gi
+  phase: Bound
+```
+
+* Nếu bạn đã chỉnh sửa IOPS của Persistent Volume lần nào trước đó, khi bạn chạy lệnh trên, tệp tin yaml của bạn đã có sẵn annotation bs.csi.vngcloud.vn/volume-type: "volume-type-id" . Lúc này, hãy chỉnh sửa annotation này về Volume type id có IOPS mà bạn mong muốn.
 
 ### Thay đổi Disk Volume của Persistent Volume vừa tạo
 
+\
+Để thay đổi Disk Volume của Persistent Volume vừa tạo, hãy thực hiện chạy lệnh sau:
 
+Ví dụ: ban đầu PVC được tạo có kích cỡ 20 Gi, hiện tại tôi sẽ tăng nó lên 30Gi
+
+```
+kubectl patch pvc my-expansion-pvc -p '{"spec":{"resources":{"requests":{"storage":"30Gi"}}}}'
+```
+
+{% hint style="info" %}
+Chú ý:
+
+* Bạn chỉ có thể thực hiện tăng Disk Volume mà không thể thực hiện giảm kích thước Disk Volume này.
+{% endhint %}
 
 ### Restore Persistent Volume từ Snapshot
+
+Để khôi phục Persistent Volume từ Snapshot, bạn hãy thực hiện theo các bước sau:
+
+* Tạo file **restore-volume.yaml** với nội dung sau:
+
+```
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: my-restore-pvc  # The name of the PVC, CAN be changed
+spec:
+  storageClassName: my-expansion-storage-class  
+  dataSource:
+    name: my-snapshot-pvc # MUST match with [4] from the section 5.2
+    kind: VolumeSnapshot
+    apiGroup: snapshot.storage.k8s.io
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
+```
 
