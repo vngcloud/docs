@@ -2,33 +2,21 @@
 
 VKS (VNGCloud Kubernetes Service) là một dịch vụ được quản lý trên VNGCloud giúp bạn đơn giản hóa quá trình triển khai và quản lý các ứng dụng dựa trên container. Kubernetes là một nền tảng mã nguồn mở được phát triển bởi Google, được sử dụng rộng rãi để quản lý và triển khai các ứng dụng container trên môi trường phân tán.
 
-<figure><img src="https://media.licdn.com/dms/image/D4E12AQE2lTRiOJ1m4w/article-inline_image-shrink_1500_2232/0/1657985109690?e=1718841600&#x26;v=beta&#x26;t=Wq4ePWjKyKwxhqRuURZsxeKbtm1CtuLKOJSxLSxhhO0" alt=""><figcaption></figcaption></figure>
-
-## Các thành phần chính:  <a href="#whatisvks-cacthanhphanchinh" id="whatisvks-cacthanhphanchinh"></a>
-
-1. **Control Plane:** chịu trách nhiệm quản lý trạng thái tổng thể của cluster và đưa ra các quyết định về cách triển khai và quản lý các ứng dụng. Control Plane gồm các thành phần sau:
-   * **kube-api-server:** Tiếp nhận các yêu cầu API từ người dùng và các thành phần khác trong cụm, xử lý các yêu cầu đó và trả về kết quả.
-   * **kube-controller-manager:** Chạy một số bộ điều khiển chịu trách nhiệm thực hiện các tác vụ quản lý cụm, chẳng hạn như đảm bảo rằng số lượng pod mong muốn cho mỗi triển khai đang được duy trì, cân bằng tải lưu lượng truy cập giữa các pod và quản lý các dịch vụ cụm.
-   * **kube-scheduler:** Chọn nút phù hợp để chạy các pod mới.
-   * **etcd:** Lưu trữ dữ liệu cấu hình cho cụm, bao gồm thông tin về các pod, dịch vụ, nút và các đối tượng Kubernetes khác.
-2. **Worker Node:** chạy các pod, là các đơn vị cơ bản của triển khai Kubernetes. Worker node gồm các thành phần sau:
-   * **Kubelet:** Giao tiếp với máy chủ điều khiển, quản lý các pod trên nút và thực hiện các lệnh từ máy chủ điều khiển.
-   * **Kube-proxy:** Quản lý mạng cho các pod trên nút và đảm bảo rằng chúng có thể giao tiếp với nhau và với thế giới bên ngoài.
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ## Những điểm nổi bật của VKS <a href="#whatisvks-nhungdiemnoibatcuavks" id="whatisvks-nhungdiemnoibatcuavks"></a>
 
-* **Fully Manage Control:**
-  * VKS tự động hóa các tác vụ quản lý Kubernetes phức tạp, cho phép bạn tập trung vào việc phát triển ứng dụng.
-  * VKS hỗ trợ 24/7 từ đội ngũ chuyên gia của VNG Cloud.
-* **Scalability (Khả năng mở rộng):**
-  * VKS tự động mở rộng cụm Kubernetes bằng cách tăng giảm số lượng nodes trong cụm của bạn dựa trên nhu cầu thực tế sử dụng.
-* **Security (Bảo mật):**
-  * VKS tuân thủ các tiêu chuẩn bảo mật quốc tế.
-  * VKS cung cấp các tính năng bảo mật nâng cao để bảo vệ các ứng dụng của bạn.
-* **Focus on applications (Tập trung vào ứng dụng):**
-  * VKS giúp bạn tăng tốc độ phát triển và triển khai ứng dụng thông qua việc bạn chỉ cần tập trung vào việc phát triển ứng dụng, không phải quản lý cơ sở hạ tầng.
+* **Quản lý Control Plane hoàn toàn tự động (Fully Managed control plane):** VKS sẽ giải phóng bạn khỏi gánh nặng quản lý Control Plane của Kubernetes, giúp bạn tập trung vào việc phát triển ứng dụng.
+* **Hỗ trợ các phiên bản Kubernetes mới nhất:** VKS luôn cập nhật những phiên bản Kubernetes mới nhất (minor version từ 1.27, 1.28, 1.29) để đảm bảo bạn luôn tận dụng được những tính năng tiên tiến nhất.
+* **Kubernetes Networking:** VKS tích hợp Calico CNI, mang lại tính hiệu quả và bảo mật cao.
+* **Upgrade seamlessly:** VKS hỗ trợ nâng cấp giữa các phiên bản Kubernetes một cách dễ dàng và nhanh chóng, giúp bạn luôn cập nhật những cải tiến mới nhất.
+* **Scaling & Healing Automatically:** VKS tự động mở rộng Node group khi cần thiết và tự động sửa lỗi khi node gặp vấn đề, giúp bạn tiết kiệm thời gian và công sức quản lý.
+* **Giảm chi phí và nâng cao độ tin cậy:** VKS triển khai Control Plane của Kubernetes ở chế độ sẵn sàng cao và hoàn toàn miễn phí, giúp bạn tiết kiệm chi phí và nâng cao độ tin cậy cho hệ thống.
+* **Tích hợp Blockstore Native (Container Storage Interface - CSI):** VKS cho phép bạn quản lý Blockstore thông qua YAML của Kubernetes, cung cấp lưu trữ bền vững cho container và hỗ trợ các tính năng quan trọng như thay đổi kích thước, thay đổi IOPS và snapshot volume.
+* **Tích hợp Load Balancer (Network Load Balancer, Application Load Balancer) thông qua các driver được tích hợp sẵn như VNGCloud Controller Mananger, VNGCloud Ingress Controller:** VKS cung cấp khả năng quản lý NLB/ALB thông qua YAML của Kubernetes, giúp bạn dễ dàng expose Service trong Kubernetes ra bên ngoài.
+* **Nâng cao bảo mật:** VKS cho phép bạn tạo Private Node Group với chỉ Private IP và kiểm soát quyền truy cập vào cluster thông qua tính năng Whitelist IP, đảm bảo an toàn cho hệ thống của bạn.
 
 **Ngoài ra, VKS còn có các ưu điểm sau:**
 
