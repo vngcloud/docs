@@ -533,6 +533,7 @@
     * [Auto Healing](vks/node-groups/auto-healing.md)
     * [Auto Scaling](vks/node-groups/auto-scaling.md)
     * [Upgrading Node Group Version](vks/node-groups/upgrading-node-group-version.md)
+    * [Lable và Taint](vks/node-groups/lable-va-taint.md)
   * [Network](vks/network/README.md)
     * [Làm việc với Application Load Balancer (ALB)](vks/network/lam-viec-voi-application-load-balancer-alb/README.md)
       * [Ingress for an Application Load Balancer](vks/network/lam-viec-voi-application-load-balancer-alb/ingress-for-an-application-load-balancer.md)
