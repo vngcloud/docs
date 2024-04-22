@@ -39,7 +39,7 @@
         * [Datatransfers Bandwidth Service](vserver/compute-hcm03-1a/vpc/bandwidth/datatransfers-bandwidth-service.md)
         * [Dedicated Bandwidth Service](vserver/compute-hcm03-1a/vpc/bandwidth/dedicated-bandwidth-service.md)
         * [Shared Bandwidth Service](vserver/compute-hcm03-1a/vpc/bandwidth/shared-bandwidth-service.md)
-        * [Page](vserver/compute-hcm03-1a/vpc/bandwidth/page.md)
+        * [Test Internet Speed](vserver/compute-hcm03-1a/vpc/bandwidth/test-internet-speed.md)
         * [Network ACL](vserver/compute-hcm03-1a/vpc/bandwidth/network-acl.md)
     * [Volume](vserver/compute-hcm03-1a/volume/README.md)
       * [Extend volume](vserver/compute-hcm03-1a/volume/extend-volume.md)
