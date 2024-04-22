@@ -41,6 +41,7 @@
         * [Shared Bandwidth Service](vserver/compute-hcm03-1a/vpc/bandwidth/shared-bandwidth-service.md)
         * [Test Internet Speed](vserver/compute-hcm03-1a/vpc/bandwidth/test-internet-speed.md)
         * [Network ACL](vserver/compute-hcm03-1a/vpc/bandwidth/network-acl.md)
+    * [Interconnect](vserver/compute-hcm03-1a/interconnect.md)
     * [Volume](vserver/compute-hcm03-1a/volume/README.md)
       * [Extend volume](vserver/compute-hcm03-1a/volume/extend-volume.md)
       * [Volume Types](vserver/compute-hcm03-1a/volume/volume-types.md)
