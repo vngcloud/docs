@@ -93,14 +93,14 @@ Lúc này, Network ACL của bạn được tạo với thông tin Inbound rule,
 2. Trong menu bên trái, chọn **Network**, sau đó chọn **Network ACLs**.
 3. Tại danh sách các Network ACL đã tạo, chọn vào một **Network ACL**.
 4. Tại mục Inbound rules, chọn **Chỉnh sửa Inbound rules.**
-5. Chọn **Thêm rule** nếu bạn muốn tạo một rule mới, hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/71729239/image2024-2-24\_17-45-8.png?version=1\&modificationDate=1708771510000\&api=v2)nếu bạn muốn **xóa rule** vừa tạo.
+5. Chọn **Thêm rule** nếu bạn muốn tạo một rule mới, hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24\_17-45-8.png?version=1\&modificationDate=1708921940000\&api=v2)nếu bạn muốn **xóa rule** vừa tạo.
 6. Chỉnh sửa **Priority**: nhập trọng số (độ ưu tiên) cho rule. Trọng số của rule không được trùng với số đã có trong Network ACL. Chúng tôi xử lý các rule theo trọng số, bắt đầu từ số thấp nhất tới số cao nhất mà không phân biệt Allow hay Deny. Trọng số tối đa bạn có thể thiết lập là **32766**.
 7. Chỉnh sửa **Protocol**: thêm giao thức truy cập mà bạn mong muốn cho phép/ từ chối đi vào Subnet. Chúng tôi đang cung cấp cho bạn lựa chọn 1 trong 4 phương án: ANY, TCP, UDP, ICMP.
 8. Chỉnh sửa **Port range**: số port hoặc phạm vi port bắt đầu và kết thúc.
 9. Chỉnh sửa **Source**: IP hoặc dải IP/ CIDR mong muốn cho phép/ từ chối truy cập theo Inbound rules.
 10. Chỉnh sửa **Allow**/ **Deny**: cho phép hoặc từ chối lưu lượng được chỉ định.
 11. Nếu bạn muốn thêm nhiều **Inbound rules** khác, tiếp tục chọn **Thêm rule** và thực hiện lặp lại các bước từ số 6, 7, 8, 9,10.&#x20;
-12. Nếu bạn muốn xóa nhiều Inbound rules khác, tiếp tục chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/71729239/image2024-2-24\_17-45-8.png?version=1\&modificationDate=1708771510000\&api=v2)tại các rule cần xóa. **Lưu ý: Bạn không thể sửa đổi hoặc xóa Inbound rule deny mặc định được tạo bởi chúng tôi.**
+12. Nếu bạn muốn xóa nhiều Inbound rules khác, tiếp tục chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24\_17-45-8.png?version=1\&modificationDate=1708921940000\&api=v2)tại các rule cần xóa. **Lưu ý: Bạn không thể sửa đổi hoặc xóa Inbound rule deny mặc định được tạo bởi chúng tôi.**
 13. Chọn **Lưu** để lưu lại các chỉnh sửa đã nhập/ chọn hoặc chọn **Hủy bỏ** để hủy bỏ thay đổi việc chỉnh sửa.
 
 ***
@@ -113,14 +113,14 @@ Lúc này, Network ACL của bạn được tạo với thông tin Inbound rule,
 2. Trong menu bên trái, chọn **Network**, sau đó chọn **Network ACLs**.
 3. Tại danh sách các Network ACL đã tạo, chọn vào một **Network ACL**.
 4. Tại mục Inbound rules, chọn **Chỉnh sửa Outbound rules.**
-5. Chọn **Thêm rule** nếu bạn muốn tạo một rule mới, hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/71729239/image2024-2-24\_17-45-8.png?version=1\&modificationDate=1708771510000\&api=v2)nếu bạn muốn **xóa rule** vừa tạo.
+5. Chọn **Thêm rule** nếu bạn muốn tạo một rule mới, hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24\_17-45-8.png?version=1\&modificationDate=1708921940000\&api=v2)nếu bạn muốn **xóa rule** vừa tạo.
 6. Chỉnh sửa **Priority**: nhập trọng số (độ ưu tiên) cho rule. Trọng số của rule không được trùng với số đã có trong Network ACL. Chúng tôi xử lý các rule theo trọng số, bắt đầu từ số thấp nhất tới số cao nhất mà không phân biệt Allow hay Deny. Trọng số tối đa bạn có thể thiết lập là **32766**.
 7. Chỉnh sửa **Protocol**: thêm giao thức truy cập mà bạn mong muốn cho phép/ từ chối đi ra khỏi Subnet. Chúng tôi đang cung cấp cho bạn lựa chọn 1 trong 4 phương án: ANY, TCP, UDP, ICMP.
 8. Chỉnh sửa **Port range**: số port hoặc phạm vi port bắt đầu và kết thúc.
 9. Chỉnh sửa **Destination**: IP hoặc dải IP/ CIDR mong muốn cho phép/ từ chối truy cập theo Outbound rules.
 10. Chỉnh sửa **Allow**/ **Deny**: cho phép hoặc từ chối lưu lượng được chỉ định.
 11. Nếu bạn muốn thêm nhiều **Outbound rules** khác, tiếp tục chọn **Thêm rule** và thực hiện lặp lại các bước từ số 6, 7, 8, 9,10.&#x20;
-12. Nếu bạn muốn xóa nhiều Outbound rules khác, tiếp tục chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/71729239/image2024-2-24\_17-45-8.png?version=1\&modificationDate=1708771510000\&api=v2)tại các rule cần xóa. **Lưu ý: Bạn không thể sửa đổi hoặc xóa Outbound rule deny mặc định được tạo bởi chúng tôi.**
+12. Nếu bạn muốn xóa nhiều Outbound rules khác, tiếp tục chọn biểu tượng  ![](https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24\_17-45-8.png?version=1\&modificationDate=1708921940000\&api=v2)tại các rule cần xóa. **Lưu ý: Bạn không thể sửa đổi hoặc xóa Outbound rule deny mặc định được tạo bởi chúng tôi.**
 13. Chọn **Lưu** để lưu lại các chỉnh sửa đã nhập/ chọn hoặc chọn **Hủy bỏ** để hủy bỏ thay đổi việc chỉnh sửa.
 
 ***
@@ -136,7 +136,7 @@ Lúc này, Network ACL của bạn được tạo với thông tin Inbound rule,
 3. Tại danh sách các Network ACL đã tạo, chọn vào một **Network ACL**.
 4. Tại mục Subnet association, chọn **Chỉnh sửa Subnet Association.**
 5. Tại màn hình **Chỉnh sửa Subnet Association, bạn có thể liên kết/ bỏ liên kết Subnet vào Network ACL bằng cách:**&#x20;
-   1. Tại mục **Các Subnet** có sẵn, bạn có thể chọn một hoặc nhiều **Subnet** mong muốn liên kết thông qua biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/71729239/image2024-2-24\_18-9-10.png?version=1\&modificationDate=1708772951000\&api=v2).
+   1. Tại mục **Các Subnet** có sẵn, bạn có thể chọn một hoặc nhiều **Subnet** mong muốn liên kết thông qua biểu tượng  ![](https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24\_18-9-10.png?version=1\&modificationDate=1708921940000\&api=v2).
    2. Tại mục **Subnet liên kết**, bạn có thể bỏ liên kết một **Subnet** với **Network ACL** bằng cách chọn vào Subnet muốn bỏ.&#x20;
 6. Chọn **Lưu** để lưu lại các chỉnh sửa đã nhập/ chọn hoặc chọn **Hủy bỏ** để hủy bỏ thay đổi việc chỉnh sửa.
 
@@ -155,5 +155,5 @@ Bạn chỉ có thể xóa Network ACL nếu không có subnet nào được li�
 
 1. Truy cập vào trang chủ của dịch vụ vServer tại đường dẫn: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
 2. Trong menu bên trái, chọn **Network**, sau đó chọn **Network ACLs**.
-3. Tại Network ACL muốn xóa, chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/71729239/image2024-2-24\_18-17-12.png?version=1\&modificationDate=1708773434000\&api=v2).
+3. Tại Network ACL muốn xóa, chọn biểu tượng  ![](https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24\_18-17-12.png?version=1\&modificationDate=1708921940000\&api=v2).
 4. Tại màn hình xác nhận xóa, chọn **Xóa** nếu bạn chắc chắn muốn xóa Network ACLs này hoặc **Hủy bỏ** nếu muốn hủy bỏ việc xóa.
