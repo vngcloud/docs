@@ -225,4 +225,4 @@ Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với đ
 
 <figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Bạn có thể xem thêm về ALB tại [Working with Network load balancing (NLB)](../network/working-with-network-load-balancing-nlb/).&#x20;
+Bạn có thể xem thêm về ALB tại [Working with Network load balancing (NLB)](../network/lam-viec-voi-network-load-balancing-nlb/).&#x20;

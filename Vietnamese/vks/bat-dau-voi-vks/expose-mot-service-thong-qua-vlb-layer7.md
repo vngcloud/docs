@@ -280,4 +280,4 @@ Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với đ
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-Bạn có thể xem thêm về ALB tại [Working with Application Load Balancer (ALB](../network/working-with-application-load-balancer-alb/)).
+Bạn có thể xem thêm về ALB tại [Working with Application Load Balancer (ALB](../network/lam-viec-voi-application-load-balancer-alb/)).
