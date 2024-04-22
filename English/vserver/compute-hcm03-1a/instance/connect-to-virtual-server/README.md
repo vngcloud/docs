@@ -19,22 +19,7 @@ Some cases need to use this connection method to solve, such as:
 3. You will need the server's operating system password to log in.\\
 4. You can also call the keyboard shortcut CTRL+ALT+DEL to restart the server by clicking the Send CtrlAltDel button in the upper right corner
 
-### **Connect to a Linux server using the SSH Client tool** <a href="#connecttovirtualserver-connecttoalinuxserverusingthesshclienttool" id="connecttovirtualserver-connecttoalinuxserverusingthesshclienttool"></a>
-
-Users can use the operating system password or SSH key pair to connect to the server via the SSH protocol.
-
-When making connections to a Linux server, you should prefer the method of using SSH key pairs and tools that support the SSH protocol such as Linux terminal or PuTTY on Windows. This is the most secure and convenient method to connect to the server.
-
-#### Request <a href="#connecttovirtualserver-request" id="connecttovirtualserver-request"></a>
-
-* The SSH key pair must be pre-generated into the declaration in the VM new creation procedure
-* The Linux server that needs to connect to must be
-* Active Virtual servers need to have a proper network connection, for example using Floating IP to connect to the internet directly
-* A Security Group setting is declared and this security group is attached to the server to be connected to allow smooth traffic. Specific settings such as allow traffic port tcp/234 for SSH protocol
-
-#### How to do it <a href="#connecttovirtualserver-howtodoit.2" id="connecttovirtualserver-howtodoit.2"></a>
-
-[SSH login to Server Linux HCM03](1.-ssh-login-to-server-linux-hcm-03.md)
+***
 
 ### **Connect to a Windows server using the Remote Desktop tool** <a href="#connecttovirtualserver-connecttoawindowsserverusingtheremotedesktoptool" id="connecttovirtualserver-connecttoawindowsserverusingtheremotedesktoptool"></a>
 
@@ -52,3 +37,23 @@ Before connecting to a Windows server, you need to ensure the following requirem
 #### How to do it <a href="#connecttovirtualserver-howtodoit.2" id="connecttovirtualserver-howtodoit.2"></a>
 
 [Remote Desktop vào Server Windows HCM 03](2.-remote-desktop-to-windows-server-hcm-03.md)
+
+***
+
+### **Connect to a Linux server using the SSH Client tool** <a href="#connecttovirtualserver-connecttoalinuxserverusingthesshclienttool" id="connecttovirtualserver-connecttoalinuxserverusingthesshclienttool"></a>
+
+Users can use the operating system password or SSH key pair to connect to the server via the SSH protocol.
+
+When making connections to a Linux server, you should prefer the method of using SSH key pairs and tools that support the SSH protocol such as Linux terminal or PuTTY on Windows. This is the most secure and convenient method to connect to the server.
+
+#### Request <a href="#connecttovirtualserver-request" id="connecttovirtualserver-request"></a>
+
+* The SSH key pair must be pre-generated into the declaration in the VM new creation procedure
+* The Linux server that needs to connect to must be
+* Active Virtual servers need to have a proper network connection, for example using Floating IP to connect to the internet directly
+* A Security Group setting is declared and this security group is attached to the server to be connected to allow smooth traffic. Specific settings such as allow traffic port tcp/234 for SSH protocol
+
+#### How to do it <a href="#connecttovirtualserver-howtodoit.2" id="connecttovirtualserver-howtodoit.2"></a>
+
+[SSH login to Server Linux HCM03](1.-ssh-login-to-server-linux-hcm-03.md)
+
