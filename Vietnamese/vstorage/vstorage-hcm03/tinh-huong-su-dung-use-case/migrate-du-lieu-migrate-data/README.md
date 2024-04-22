@@ -1,5 +1,11 @@
 # Migrate dữ liệu (Migrate data)
 
+{% hint style="info" %}
+**Chú ý:**
+
+Nhằm hỗ trợ bạn thực hiện migrate dữ liệu nhanh chóng, chúng tôi đã phát triển công cụ DataSync. Đây là công cụ phát triển bởi **VNG Cloud**, cung cấp sẵn hạ tầng lên tới 1Gbps giúp bạn dễ dàng lập lịch và migrate dữ liệu nhanh chóng. Tham khảo thêm về DataSync tại [datasync](../../../../datasync/ "mention").
+{% endhint %}
+
 Migrate data trong lưu trữ đám mây là quá trình chuyển dữ liệu từ một dịch vụ lưu trữ đám mây sang dịch vụ khác. Điều này có thể được thực hiện vì nhiều lý do, chẳng hạn như:
 
 * **Nâng cấp lên dịch vụ lưu trữ đám mây mới.**
