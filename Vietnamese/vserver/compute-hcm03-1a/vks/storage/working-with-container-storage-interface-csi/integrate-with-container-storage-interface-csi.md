@@ -204,6 +204,20 @@ Lúc này, hệ thống vServer sẽ tự động tạo một Volume tương ứ
 
 ### **Tạo Snapshot**
 
+Snapshot là phương pháp sao lưu giữ liệu với chi phí thấp, thuận tiện và hiệu quả và có thể được sử dụng để tạo image, phục hồi dữ liệu và phân phối các bản sao dữ liệu. Nếu bạn là người dùng mới chưa từng sử dụng dịch vụ Snapshot, bạn cần thực hiện Activate Snapshot Service (Kích hoạt dịch vụ Snapshot) trước khi có thể tạo Snapshot cho Persistent Volume của bạn.
+
+#### **Activate Snapshot Service**
+
+Để có thể tạo Snapshot, bạn cần thực hiện Activate Snapshot Service. Bạn sẽ không bị tính phí khi kích hoạt dịch vụ snapshot. Sau khi bạn tạo snapshot, chi phí sẽ được tính dựa trên dung lượng lưu trữ và thời gian lưu trữ của các bản snapshot này. Thực hiện theo các bước sau đây để kích hoạt dịch vụ Snapshot:
+
+**Bước 1:** Truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot/overview](https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot/overview)
+
+**Bước 2:** Chọn **Activate Snapshot Service**.
+
+Ví dụ:
+
+<figure><img src="../../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+
 #### **Cài đặt VNGCloud Snapshot Controller**
 
 * Cài đặt Helm phiên bản từ 3.0 trở lên. Tham khảo tại [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) để biết cách cài đặt.
