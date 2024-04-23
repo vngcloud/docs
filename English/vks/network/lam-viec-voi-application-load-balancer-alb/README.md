@@ -8,7 +8,7 @@
 
 #### Mô hình triển khai <a href="#workingwithapplicationloadbalancer-alb-mohinhtrienkhai" id="workingwithapplicationloadbalancer-alb-mohinhtrienkhai"></a>
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 **Ngoài các thành phần cơ bản của một cụm K8S và một ALB mà bạn đã biết, trong mô hình này chúng tôi sử dụng:**
 
