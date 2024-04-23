@@ -79,4 +79,4 @@ sudo dpkg -i /&#x3C;path_to_file>/telegraf_nightly_amd64.deb
 | <pre><code>sudo service telegraf restart
 </code></pre> |
 | ------------------------------------------------------ |
-
+.
