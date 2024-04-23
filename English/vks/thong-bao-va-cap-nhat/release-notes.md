@@ -1,21 +1,21 @@
 # Release notes
 
-### \[Alpha Testing] April 17, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
+**\[Alpha Testing] April 17, 2024**
 
-**Chúng tôi vô cùng hân hạnh giới thiệu bản cập nhật mới cho dịch vụ VKS, mang đến cho bạn trải nghiệm quản lý Kubernetes mạnh mẽ và hiệu quả hơn bao giờ hết!**
+**We are thrilled to introduce the latest update to our VKS service, delivering a more powerful and efficient Kubernetes management experience!**
 
-**Điểm nổi bật:**
+**Highlights:**
 
-* **Quản lý Control Plane hoàn toàn tự động (Fully Managed control plane):** VKS sẽ giải phóng bạn khỏi gánh nặng quản lý Control Plane của Kubernetes, giúp bạn tập trung vào việc phát triển ứng dụng.
-* **Hỗ trợ các phiên bản Kubernetes mới nhất:** VKS luôn cập nhật những phiên bản Kubernetes mới nhất (minor version từ 1.27, 1.28, 1.29) để đảm bảo bạn luôn tận dụng được những tính năng tiên tiến nhất.
-* **Kubernetes Networking:** VKS tích hợp Calico CNI, mang lại tính hiệu quả và bảo mật cao.
-* **Upgrade seamlessly:** VKS hỗ trợ nâng cấp giữa các phiên bản Kubernetes một cách dễ dàng và nhanh chóng, giúp bạn luôn cập nhật những cải tiến mới nhất.
-* **Scaling & Healing Automatically:** VKS tự động mở rộng Node group khi cần thiết và tự động sửa lỗi khi node gặp vấn đề, giúp bạn tiết kiệm thời gian và công sức quản lý.
-* **Giảm chi phí và nâng cao độ tin cậy:** VKS triển khai Control Plane của Kubernetes ở chế độ sẵn sàng cao và hoàn toàn miễn phí, giúp bạn tiết kiệm chi phí và nâng cao độ tin cậy cho hệ thống.
-* **Tích hợp Blockstore Native (Container Storage Interface - CSI):** VKS cho phép bạn quản lý Blockstore thông qua YAML của Kubernetes, cung cấp lưu trữ bền vững cho container và hỗ trợ các tính năng quan trọng như thay đổi kích thước, thay đổi IOPS và snapshot volume.
-* **Tích hợp Load Balancer (Network Load Balancer, Application Load Balancer) thông qua các driver được tích hợp sẵn như VNGCloud Controller Mananger, VNGCloud Ingress Controller:** VKS cung cấp khả năng quản lý NLB/ALB thông qua YAML của Kubernetes, giúp bạn dễ dàng expose Service trong Kubernetes ra bên ngoài.
-* **Nâng cao bảo mật:** VKS cho phép bạn tạo Private Node Group với chỉ Private IP và kiểm soát quyền truy cập vào cluster thông qua tính năng Whitelist IP, đảm bảo an toàn cho hệ thống của bạn.
+* **Fully Managed Control Plane:** VKS frees you from the burden of managing the Kubernetes Control Plane, allowing you to focus on application development.
+* **Support for the Latest Kubernetes Versions:** VKS always stays up-to-date with the latest Kubernetes versions (minor versions from 1.27, 1.28, 1.29) to ensure you always benefit from the most advanced features.
+* **Kubernetes Networking:** VKS integrates Calico CNI for high performance and security.
+* **Seamless Upgrades:** VKS supports easy and fast upgrades between Kubernetes versions, keeping you up-to-date with the latest enhancements.
+* **Automatic Scaling & Healing:** VKS automatically scales Node groups when needed and recovers from node failures, saving you time and management effort.
+* **Reduced Costs and Increased Reliability:** VKS deploys the Kubernetes Control Plane in high availability mode and completely free of charge, helping you save costs and enhance system reliability.
+* **Native Blockstore Integration (Container Storage Interface - CSI):** VKS allows you to manage Blockstore through Kubernetes YAML, providing persistent storage for containers and supporting critical features like resizing, changing IOPS, and volume snapshots.
+* **Load Balancer Integration (Network Load Balancer, Application Load Balancer) via Pre-integrated Drivers like VNGCloud Controller Manager, VNGCloud Ingress Controller:** VKS provides NLB/ALB management through Kubernetes YAML, making it easy to expose your Kubernetes Service externally.
+* **Enhanced Security:** VKS allows you to create Private Node Groups with only Private IPs and control access to the cluster through the Whitelist IP feature, ensuring the security of your system.
 
-**Với những tính năng đột phá này, VKS hứa hẹn sẽ mang đến cho bạn trải nghiệm quản lý Kubernetes hoàn toàn mới, giúp bạn tối ưu hóa hiệu quả và tiết kiệm chi phí!**
+**With these groundbreaking features, VKS promises to deliver an entirely new Kubernetes management experience, helping you optimize efficiency and save costs!**
 
-**Hãy liên hệ với chúng tôi để được tư vấn và hỗ trợ thêm!**
+**Contact us for consultation and further support!**
