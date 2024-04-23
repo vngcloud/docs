@@ -1,12 +1,12 @@
 # Create a Public Cluster with Public Node Group Mode
 
-### Prerequisites
+### Điều kiện cần <a href="#khoitaomotpublicclustervoipublicnodegroup-dieukiencan" id="khoitaomotpublicclustervoipublicnodegroup-dieukiencan"></a>
 
-To successfully create a **Cluster** and **Deploy** a **Workload**, you must meet the following prerequisites:
+Để có thể khởi tạo một **Cluster** và **Deploy** một **Workload**, bạn cần:
 
-* Ensure you have at least one **VPC** (Virtual Private Cloud) and one **Subnet** (subnetwork) in an **ACTIVE** state. These network resources are essential for isolating and managing your Kubernetes cluster's resources. If you haven't already created a VPC and Subnet, follow the instructions provided [here](../../vserver/compute-hcm03-1a/vpc/virtual-private-cloud-vpc.md).
-* You must have at least one **SSH** key in an **ACTIVE** state. SSH keys are crucial for secure authentication when accessing your cluster's nodes and managing its components. If you haven't generated an SSH key, follow the instructions provided [here](../../vserver/compute-hcm03-1a/security/ssh-key-key-pairs.md).
-* **Kubectl**, the command-line tool for interacting with Kubernetes clusters, must be installed and configured on your device. Refer to this guide for detailed instructions on installing and using kubectl: [https://kubernetes.io/docs/home/](https://kubernetes.io/docs/home/). It's recommended to use a kubectl version that is not more than one version behind the version of your cluster. This ensures compatibility and avoids potential issues during cluster management.
+* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](broken-reference)&#x20;
+* Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](broken-reference)
+* Đã cài đặt và cấu hình **kubectl** trên thiết bị của bạn. vui lòng tham khảo tại [đây](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) nếu bạn chưa rõ cách cài đặt và sử dụng kuberctl. Ngoài ra, bạn không nên sử dụng phiên bản kubectl quá cũ, chúng tôi khuyến cáo bạn nên sử dụng phiên bản kubectl sai lệch không quá một phiên bản với version của cluster.
 
 ***
 
