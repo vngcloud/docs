@@ -16,8 +16,8 @@ Hướng dẫn [Cài đặt agent tự động](./) yêu cầu kết nối inter
 
 **Allow by IP and Port:**
 
-* IP: 61.28.234.36, Port: 443 - Protocol: HTTPS ( [iamapis.vngcloud.vn](http://iamapis.vngcloud.vn) )
-* IP: 61.28.234.48, Port: 443 - Protocol: HTTPS ( [monitoring-agent.vngcloud.vn](http://monitoring-agent.vngcloud.vn) )
+* IP: 116.118.93.14, Port: 443 - Protocol: HTTPS ( [iamapis.vngcloud.vn](http://iamapis.vngcloud.vn) )
+* IP: 116.118.93.158, Port: 443 - Protocol: HTTPS ( [monitoring-agent.vngcloud.vn](http://monitoring-agent.vngcloud.vn) )
 {% endhint %}
 
 **Tạo Service Account và gắn policy: vMonitorMetricPush để có đủ quyền đẩy Metric về vMonitor (Có thể bỏ qua bước này nếu đã tạo trước đó)**
