@@ -77,7 +77,7 @@ Sau đây là hướng dẫn để bạn deploy service nginx trên Kubernetes.
 
 **Bước 1**: **Tạo Deployment cho Nginx app.**
 
-* Tạo file **nginx-service.yaml** với nội dung sau:
+* Tạo file **nginx-service-lb7.yaml** với nội dung sau:
 
 ```
 apiVersion: apps/v1
@@ -117,7 +117,7 @@ spec:
 * Deploy Deployment này bằng lệch:&#x20;
 
 ```
-kubectl apply -f nginx-service.yaml
+kubectl apply -f nginx-service-lb7.yaml
 ```
 
 ***
