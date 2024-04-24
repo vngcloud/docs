@@ -548,6 +548,7 @@
     * [Làm việc với Container Storage Interface (CSI)](vks/storage/lam-viec-voi-container-storage-interface-csi/README.md)
       * [Integrate with Container Storage Interface (CSI)](vks/storage/lam-viec-voi-container-storage-interface-csi/integrate-with-container-storage-interface-csi.md)
       * [Giới hạn và hạn chế CSI](vks/storage/lam-viec-voi-container-storage-interface-csi/gioi-han-va-han-che-csi.md)
+  * [Security Group](vks/security-group.md)
   * [Giám sát](vks/giam-sat/README.md)
     * [Metrics](vks/giam-sat/metrics.md)
   * [Cách tính giá](vks/cach-tinh-gia.md)
