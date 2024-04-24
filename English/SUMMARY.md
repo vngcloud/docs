@@ -301,6 +301,7 @@
     * [Working with Container Storage Interface (CSI)](vks/storage/lam-viec-voi-container-storage-interface-csi/README.md)
       * [Integrate with Container Storage Interface (CSI)](vks/storage/lam-viec-voi-container-storage-interface-csi/integrate-with-container-storage-interface-csi.md)
       * [Restrictions and Limitations of CSI](vks/storage/lam-viec-voi-container-storage-interface-csi/gioi-han-va-han-che-csi.md)
+  * [Security Group](vks/security-group.md)
   * [Monitoring](vks/giam-sat/README.md)
     * [Metrics](vks/giam-sat/metrics.md)
   * [Pricing](vks/cach-tinh-gia.md)
