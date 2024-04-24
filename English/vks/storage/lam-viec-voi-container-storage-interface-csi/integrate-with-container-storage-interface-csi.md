@@ -9,23 +9,26 @@
 ### Khởi tạo Service Account và cài đặt VNGCloud BlockStorage CSI Driver <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
 
 {% hint style="info" %}
-Chú ý:
+**Chú ý:**
 
-Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa bật option **Enable BlockStore Persistent Disk CSI Driver**, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt VNGCloud BlockStorage CSI Driver theo hướng dẫn bên dưới. Nếu bạn đã bật option **Enable BlockStore Persistent Disk CSI Driver**, thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt VNGCloud BlockStorage CSI Driver và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
+* Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa bật option **Enable BlockStore Persistent Disk CSI Driver**, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt VNGCloud BlockStorage CSI Driver theo hướng dẫn bên dưới. Nếu bạn đã bật option **Enable BlockStore Persistent Disk CSI Driver**, thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt VNGCloud BlockStorage CSI Driver và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
+* <mark style="color:red;">**VNGCloud BlockStorage CSI Driver**</mark> <mark style="color:red;"></mark><mark style="color:red;">chỉ hỗ trợ attach volume với một node (VM) duy nhất trong suốt vòng đời của volume đó. Nếu bạn có nhu cầu ReadWriteMany, bạn có thể cân nhắc sử dụng NFS CSI Driver, vì nó cho phép nhiều nodes có thể Read và Write trên cùng một volume cùng một lúc. Điều này rất hữu ích cho các ứng dụng cần chia sẻ dữ liệu giữa nhiều pods hoặc services trong Kubernetes.</mark>
+
+
 {% endhint %}
 
 <details>
 
 <summary>Khởi tạo Service Account và cài đặt VNGCloud BlockStorage CSI Driver</summary>
 
-#### Khởi tạo Service Account <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccount" id="exposemotservicethongquavlblayer7-khoitaoserviceaccount"></a>
+**Khởi tạo Service Account**
 
-* Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy:  **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts) và thực hiện theo các bước sau:
+* Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts) và thực hiện theo các bước sau:
   * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
   * Tìm và chọn **Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do VNG Cloud tạo ra, bạn không thể xóa các policy này.
   * Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
 
-#### Cài đặt VNGCloud BlockStorage CSI Driver <a href="#exposemotservicethongquavlblayer7-caidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-caidatvngcloudingresscontroller"></a>
+**Cài đặt VNGCloud BlockStorage CSI Driver**
 
 * Cài đặt Helm phiên bản từ 3.0 trở lên. Tham khảo tại [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) để biết cách cài đặt.
 * Thêm repo này vào cluster của bạn qua lệnh:
@@ -106,7 +109,7 @@ spec:
       targetPort: 80
 ```
 
-* Deploy Deployment này bằng lệch:&#x20;
+* Deploy Deployment này bằng lệch:
 
 ```
 kubectl apply -f nginx-service.yaml
@@ -196,9 +199,9 @@ spec:
 kubectl apply -f persistent-volume.yaml
 ```
 
-Lúc này, hệ thống vServer sẽ tự động tạo một Volume tương ứng với file yaml bên trên, ví dụ:&#x20;
+Lúc này, hệ thống vServer sẽ tự động tạo một Volume tương ứng với file yaml bên trên, ví dụ:
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image%20(18).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -216,7 +219,7 @@ Snapshot là phương pháp sao lưu giữ liệu với chi phí thấp, thuận
 
 Ví dụ:
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image%20(19).png" alt=""><figcaption></figcaption></figure>
 
 #### **Cài đặt VNGCloud Snapshot Controller**
 
@@ -243,11 +246,12 @@ kubectl get pods -n kube-system
 
 Ví dụ như ảnh bên dưới là bạn đã cài đặt thành công vngcloud-controller-manager:
 
-<pre><code>NAME                                           READY   STATUS              RESTARTS       AGE
-<strong>
-</strong>snapshot-controller-7fdd984f89-745tg           0/1     ContainerCreating   0              3s
+```
+NAME                                           READY   STATUS              RESTARTS       AGE
+
+snapshot-controller-7fdd984f89-745tg           0/1     ContainerCreating   0              3s
 snapshot-controller-7fdd984f89-k94wq           0/1     ContainerCreating   0              3s
-</code></pre>
+```
 
 #### Tạo file **snapshot.yaml** với nội dung sau:
 
@@ -282,7 +286,7 @@ kubectl apply -f snapshot.yaml
 
 ### **Kiểm tra PVC và Snapshot vừa tạo**
 
-* Sau khi apply tập tin thành công, bạn có thể kiểm tra danh sách service, pvc thông qua:&#x20;
+* Sau khi apply tập tin thành công, bạn có thể kiểm tra danh sách service, pvc thông qua:
 
 ```
 kubectl get sc,pvc,pod -owide
@@ -306,7 +310,7 @@ pod/nginx-app-7f45b65946-t7d7k   1/1     Running   0          94m   172.16.24.20
 ### Thay đổi thông số IOPS của Persistent Volume vừa tạo
 
 \
-Để thay đổi thông số IOPS của Persistent Volume vừa tạo, hãy thực hiện theo các bước sau đây:&#x20;
+Để thay đổi thông số IOPS của Persistent Volume vừa tạo, hãy thực hiện theo các bước sau đây:
 
 **Bước 1:** Chạy lệnh bên dưới để liệt kê các PVC trong Cluster của bạn
 
@@ -400,4 +404,3 @@ spec:
     requests:
       storage: 20Gi
 ```
-
