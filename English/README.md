@@ -38,7 +38,7 @@ Welcome to VNG Cloud's user guide page. Here you can easily find useful informat
 {% endtab %}
 
 {% tab title="Software as a Service" %}
-[**Cloudcam -Smart surveillance solution**](vcloudcam.md)
+[Veka.ai -Smart surveillance solution](vcloudcam.md)
 {% endtab %}
 {% endtabs %}
 

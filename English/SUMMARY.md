@@ -306,7 +306,7 @@
   * [Pricing](vks/cach-tinh-gia.md)
 * [vContainer Registry](vcontainer-registry.md)
 * [vColocation](vcolocation.md)
-* [vCloudcam](vcloudcam.md)
+* [Veka.ai](vcloudcam.md)
 * [vNetwork](vnetwork/README.md)
   * [Create Endpoint](vnetwork/create-endpoint.md)
   * [Rename Endpoint](vnetwork/rename-endpoint.md)
