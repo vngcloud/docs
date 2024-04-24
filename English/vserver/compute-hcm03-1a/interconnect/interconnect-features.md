@@ -1,19 +1,19 @@
 # Interconnect Features
 
-Bạn có thể lựa chọn kết nối trực tiếp đến VNG Cloud theo các hình thức kết nối bên dưới
+You can choose to connect directly to VNG Cloud through the following types of Interconnect connections:
 
 ***
 
-### **Các dạng kết nối Interconnect** <a href="#cactinhnanginterconnect-cacdangketnoiinterconnect" id="cactinhnanginterconnect-cacdangketnoiinterconnect"></a>
+### Interconnect Connection Types <a href="#cactinhnanginterconnect-cacdangketnoiinterconnect" id="cactinhnanginterconnect-cacdangketnoiinterconnect"></a>
 
 Multi-Cloud Interconnect
 
-Giải pháp kết nối và quản lý mạng được áp dụng khi khách hàng sử dụng dịch vụ từ nhiều nhà cung cấp điện toán đám mây khác nhau. Điều này cho phép tổ chức tận dụng và chia sẻ tài nguyên từ nhiều nhà cung cấp một cách dễ dàng và linh hoạt hơn. Tại VNG Cloud, chúng tôi hỗ trợ các kết nối linh hoạt và đa dạng tới các nhà cung cấp đám mây khác như AWS. Điều này giúp khách hàng của chúng tôi tận dụng lợi ích của nhiều nền tảng đám mây mà họ sử dụng.
+A networking solution applied when customers utilize services from various cloud computing providers. This enables organizations to leverage and share resources from multiple providers easily and flexibly. At VNG Cloud, we support flexible and diverse connections to other cloud providers such as AWS. This helps our customers leverage the benefits of multiple cloud platforms they use.
 
 Hybrid Cloud Interconnect
 
-Là dịch vụ kết nối giữa hạ tầng của doanh nghiệp tại các địa điểm địa lý khác nhau (on-premises) với hạ tầng của khách hàng trên VNG Cloud. Điều này cho phép tích hợp môi trường đám mây vào hệ thống mạng hiện có để tạo thành một kiến trúc kết hợp (hybrid architecture), tối ưu hóa việc sử dụng tài nguyên và cung cấp hiệu suất tốt nhất cho các ứng dụng và dịch vụ. Interconnect rất hữu ích khi tổ chức muốn duy trì dữ liệu và ứng dụng tại môi trường on-premises để giữ quyền kiểm soát an ninh và bảo mật, đồng thời sử dụng dịch vụ đám mây để mở rộng và tăng cường tính linh hoạt.
+This service connects an enterprise's infrastructure at different geographical locations (on-premises) with the customer's infrastructure on VNG Cloud. It allows the integration of a cloud environment into the existing network system to create a hybrid architecture, optimizing resource utilization and providing the best performance for applications and services. Interconnect is particularly useful when organizations want to maintain data and applications in an on-premises environment to retain security control, while also using cloud services to expand and enhance flexibility.
 
 VPN Interconnect
 
-Dịch vụ thiết lập mạng riêng ảo (VPN) trên nền tảng Interconnect giúp kết nối bảo mật giữa hai hoặc nhiều mạng riêng ảo VPN khác nhau giữa các môi trường đám mây và hạ tầng làm việc của bạn. Mục tiêu của dịch vụ này là tạo ra một môi trường mạng an toàn, bảo mật và riêng tư để đảm bảo tính an toàn và bảo mật trong quá trình truyền tải dữ liệu giữa các mạng khác nhau. VPN Interconnect là lựa chọn tốt để bảo vệ thông tin quan trọng và duy trì tính riêng tư.
+VPN establishment service on the Interconnect platform helps establish secure connections between different VPN virtual private networks across cloud environments and your working infrastructure. The goal of this service is to create a secure, private network environment to ensure safety and security during data transmission between different networks. VPN Interconnect is a good choice to protect important information and maintain privacy.
