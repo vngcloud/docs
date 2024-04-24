@@ -34,8 +34,8 @@ Hướng dẫn [Cài đặt agent tự động](./) yêu cầu kết nối inter
 
 &#x20;       Chọn một trong những package sau đây tùy vào OS
 
-* RPM package: [https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.1/telegraf-nightly.x86\_64.rpm](https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.1/telegraf-nightly.x86\_64.rpm)&#x20;
-* Deb package: [https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.1/telegraf\_nightly\_amd64.deb](https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.1/telegraf\_nightly\_amd64.deb)
+* RPM package: [https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.2/telegraf-nightly.x86\_64.rpm](https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.2/telegraf-nightly.x86\_64.rpm)&#x20;
+* Deb package: [https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.2/telegraf\_nightly\_amd64.deb](https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.2/telegraf\_nightly\_amd64.deb)
 
 2\.  Chuyển package cài đặt đến server&#x20;
 
@@ -43,40 +43,35 @@ Hướng dẫn [Cài đặt agent tự động](./) yêu cầu kết nối inter
 
 3\.  Tạo thông tin xác thực
 
-| <pre><code>echo -e "IAM_CLIENT_ID=YOUR_IAM_CLIENT_ID_XXXXXXXX\nIAM_CLIENT_SECRET=YOUR_IAM_CLIENT_SECRET_XXXXXXXX\nIAM_URL=https://iamapis.vngcloud.vn/accounts-api/v2/auth/token\nVMONITOR_SITE=monitoring-agent.vngcloud.vn" | sudo tee /etc/default/telegraf
-</code></pre> |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+```
+echo -e "IAM_CLIENT_ID=YOUR_IAM_CLIENT_ID_XXXXXXXX\nIAM_CLIENT_SECRET=YOUR_IAM_CLIENT_SECRET_XXXXXXXX\nIAM_URL=https://iamapis.vngcloud.vn/accounts-api/v2/auth/token\nVMONITOR_SITE=monitoring-agent.vngcloud.vn" | sudo tee /etc/default/telegraf
+```
 
 4\. Thực hiện cài đặt package
 
 &#x20;        Chạy command sau tùy vào OS
 
 * OS: **Centos** - **yum** package manager
-
-| <pre><code>sudo yum localinstall /&#x3C;path_to_file>/telegraf-nightly.x86_64.rpm 
-</code></pre> |
-| ------------------------------------------------------------------------------------------------ |
-
+```
+sudo yum localinstall /<path_to_file>/telegraf-nightly.x86_64.rpm 
+```
 * OS: **Ubuntu, Debian** - **apt** or **dpkg** package manager
-
-| <pre><code># Sử dụng 1 trong 2 command sau
-sudo apt install /&#x3C;path_to_file>/telegraf_nightly_amd64.deb
+```
+# Sử dụng 1 trong 2 command sau
+sudo apt install /<path_to_file>/telegraf_nightly_amd64.deb
 # Hoặc
-sudo dpkg -i /&#x3C;path_to_file>/telegraf_nightly_amd64.deb
-</code></pre> |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+sudo dpkg -i /<path_to_file>/telegraf_nightly_amd64.deb
+
+```
 
 5\. Start metric agent
 
 * **SystemD** service manager&#x20;
-
-| <pre><code>sudo systemctl restart telegraf
-</code></pre> |
-| -------------------------------------------------------- |
-
+```
+sudo systemctl restart telegraf
+```
 * **SysVInit** is the classic initialization process
-
-| <pre><code>sudo service telegraf restart
-</code></pre> |
-| ------------------------------------------------------ |
+```
+sudo service telegraf restart
+```
 .
