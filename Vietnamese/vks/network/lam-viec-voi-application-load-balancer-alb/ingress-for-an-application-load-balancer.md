@@ -107,6 +107,7 @@ metadata:
 spec:
   selector:
     app: nginx 
+  type: NodePort 
   ports:
     - protocol: TCP
       port: 80
@@ -132,16 +133,15 @@ kubectl get svc,deploy,pod -owide
 * Nếu kết quả trả về như bên dưới tức là bạn đã deploy Deployment thành công.
 
 ```
-NAME                    TYPE           CLUSTER-IP      EXTERNAL-IP   PORT(S)           AGE     SELECTOR
-service/kubernetes      ClusterIP      10.96.0.1       <none>        443/TCP           2d4h    <none>
-service/nginx-app       NodePort       10.96.215.192   <none>        30080:31289/TCP   6m12s   app=nginx
-service/nginx-service   LoadBalancer   10.96.179.221   <pending>     80:32624/TCP      16s     app=nginx
+NAME                    TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE     SELECTOR
+service/kubernetes      ClusterIP   10.96.0.1      <none>        443/TCP        5h4m    <none>
+service/nginx-service   NodePort    10.96.25.133   <none>        80:32572/TCP   2m50s   app=nginx
 
-NAME                        READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES         SELECTOR
-deployment.apps/nginx-app   1/1     1            1           16s   nginx        nginx:1.19.1   app=nginx
+NAME                        READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS   IMAGES         SELECTOR
+deployment.apps/nginx-app   1/1     1            1           2m50s   nginx        nginx:1.19.1   app=nginx
 
-NAME                             READY   STATUS    RESTARTS   AGE   IP              NODE                                            NOMINATED NODE   READINESS GATES
-pod/nginx-app-7f45b65946-t7d7k   1/1     Running   0          16s   172.16.24.202   ng-3f06013a-f6a5-47ba-a51f-bc5e9c2b10a7-ecea1   <none>           <none>
+NAME                             READY   STATUS    RESTARTS   AGE     IP            NODE                                            NOMINATED NODE   READINESS GATES
+pod/nginx-app-7f45b65946-6wlgw   1/1     Running   0          2m49s   172.16.54.3   ng-e0fc7245-0c6e-4336-abcc-31a70eeed71d-972a9   <none>           <none>
 ```
 
 ***
