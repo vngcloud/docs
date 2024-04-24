@@ -38,7 +38,7 @@ Chào mừng các bạn đến với trang hỗ trợ khách hàng của VNG Clo
 {% endtab %}
 
 {% tab title="Software as a Service" %}
-[**Cloudcam - Giải pháp Camera trực tuyến**](https://docs.vngcloud.vn/x/FoAp)
+[Veka.ai - Giải pháp Camera trực tuyến](https://help.vcloudcam.vn/#/support-center)
 {% endtab %}
 {% endtabs %}
 
