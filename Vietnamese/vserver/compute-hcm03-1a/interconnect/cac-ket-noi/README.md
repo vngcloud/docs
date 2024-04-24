@@ -11,13 +11,4 @@ Hiện nay chúng tôi đang cung cấp loại kết nối:
 
     <figure><img src="https://docs.vngcloud.vn/download/attachments/64553643/image2023-9-8_14-49-4.png?version=1&#x26;modificationDate=1694159346000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-***
-
-**Chủ đề**
-
-* [Tạo kết nối chuyên dụng (Dedicated)](tao-ket-noi-chuyen-dung-dedicated.md)
-* [Xem thông tin kết nối](xem-thong-tin-ket-noi.md)
-* [Cập nhật kết nối](cap-nhat-ket-noi.md)
-* [Xóa kết nối](xoa-ket-noi.md)
-
 \
