@@ -9,9 +9,10 @@
 ### Khởi tạo Service Account và cài đặt VNGCloud BlockStorage CSI Driver <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
 
 {% hint style="info" %}
-Chú ý:
+**Chú ý:**
 
-Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa bật option **Enable BlockStore Persistent Disk CSI Driver**, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt VNGCloud BlockStorage CSI Driver theo hướng dẫn bên dưới. Nếu bạn đã bật option **Enable BlockStore Persistent Disk CSI Driver**, thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt VNGCloud BlockStorage CSI Driver và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
+* Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa bật option **Enable BlockStore Persistent Disk CSI Driver**, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt VNGCloud BlockStorage CSI Driver theo hướng dẫn bên dưới. Nếu bạn đã bật option **Enable BlockStore Persistent Disk CSI Driver**, thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt VNGCloud BlockStorage CSI Driver và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
+* <mark style="color:red;">**VNGCloud BlockStorage CSI Driver**</mark> <mark style="color:red;"></mark><mark style="color:red;">chỉ hỗ trợ attach volume với một node (VM) duy nhất trong suốt vòng đời của volume đó. Nếu bạn có nhu cầu ReadWriteMany, bạn có thể cân nhắc sử dụng NFS CSI Driver, vì nó cho phép nhiều nodes có thể Read và Write trên cùng một volume cùng một lúc. Điều này rất hữu ích cho các ứng dụng cần chia sẻ dữ liệu giữa nhiều pods hoặc services trong Kubernetes.</mark>
 {% endhint %}
 
 <details>
