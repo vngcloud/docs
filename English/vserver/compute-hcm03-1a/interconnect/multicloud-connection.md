@@ -43,6 +43,6 @@ The multi-cloud connection solution provided by VNG Cloud allows other cloud ser
 
 Using dedicated leased lines to connect VNG Cloud to another cloud service provider helps eliminate the need to use the Internet for transmission. This provides low latency and high bandwidth like transmission through the internal network.
 
-Security and reliability
+#### Security and reliability
 
 Dedicated leased lines provide end-to-end connections. This ensures security and reliability for data transmission over the network.
