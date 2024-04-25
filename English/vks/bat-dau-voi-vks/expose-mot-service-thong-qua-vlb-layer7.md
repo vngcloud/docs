@@ -256,7 +256,7 @@ spec:
     - host: host.example.com
       http:
         paths:
-          - path: /nginx
+          - path: /path1
             pathType: Exact
             backend:
               service:

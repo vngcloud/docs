@@ -161,11 +161,6 @@ metadata:
   name: nginx-ingress
 spec:
   ingressClassName: "vngcloud"
-  defaultBackend:
-    service:
-      name: nginx-service
-      port:
-        number: 80
   rules:
     - http:
         paths:
@@ -219,7 +214,7 @@ spec:
     - host: host.example.com
       http:
         paths:
-          - path: /nginx
+          - path: /path1
             pathType: Exact
             backend:
               service:
