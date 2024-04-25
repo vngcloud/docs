@@ -45,7 +45,7 @@ Bạn có thể kiểm tra lại lable vừa tạo qua lệnh:
 kubectl get nodes --show-labels
 ```
 
-The output is similar to this:
+Ví dụ kết quả cho lệnh này sẽ như sau:
 
 ```shell
 NAME      STATUS    ROLES    AGE     VERSION        LABELS
@@ -67,11 +67,11 @@ metadata:
   name: my-pod
 spec:
   nodeSelector:
-    diskType: ssd
+    disktype: ssd
     region: hcm03
 ```
 
-Trong ví dụ này, Pod `my-pod` chỉ được lên lịch trên các Node có lable `diskType: ssd` và `region: hcm03`.
+Trong ví dụ này, Pod `my-pod` chỉ được lên lịch trên các Node có lable `disktype: ssd` và `region: hcm03`.
 
 * Triển khai Pod trên Cluster của bạn:
 
