@@ -169,7 +169,7 @@ spec:
   rules:
     - http:
         paths:
-          - path: /path1
+          - path: /4
             pathType: Exact
             backend:
               service:
@@ -219,7 +219,7 @@ spec:
     - host: host.example.com
       http:
         paths:
-          - path: /nginx
+          - path: /4
             pathType: Exact
             backend:
               service:
@@ -258,7 +258,7 @@ spec:
     - host: host.example.com
       http:
         paths:
-          - path: /path1
+          - path: /4
             pathType: Exact
             backend:
               service:
@@ -313,7 +313,7 @@ spec:
     - host: example.com
       http:
         paths:
-          - path: /path1
+          - path: /1
             pathType: Exact
             backend:
               service:
@@ -322,7 +322,7 @@ spec:
                   number: 80
     - http:
         paths:
-          - path: /path2
+          - path: /2
             pathType: Exact
             backend:
               service:
