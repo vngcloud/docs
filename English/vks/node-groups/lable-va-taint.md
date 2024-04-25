@@ -54,7 +54,7 @@ worker1   Ready     <none>   1d      v1.13.0        ...,kubernetes.io/hostname=w
 worker2   Ready     <none>   1d      v1.13.0        ...,kubernetes.io/hostname=worker2
 ```
 
-### **Sử dụng Lable với nodeSelector:**
+### **Sử dụng Lable với nodeSelector**
 
 nodeSelector là một tham số được sử dụng trong PodSpec để chỉ định rằng Pod chỉ nên được lên lịch trên các Node có lable cụ thể. Điều này hữu ích khi bạn muốn chạy Pod trên các Node có tài nguyên hoặc thuộc tính cụ thể.
 
