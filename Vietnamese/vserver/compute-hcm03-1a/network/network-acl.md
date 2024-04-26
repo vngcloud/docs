@@ -25,13 +25,7 @@ Network ACL là tính năng giúp bạn kiểm soát lưu lượng truy cập m�
 
 Tham khảo bảng bên dưới để phân biệt giữa Security Group và Network ACL.
 
-| Tính năng     | Security Group                                                                                                                                                                                                                                       | Network ACL                                                                                                                                                                                                                                           |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Mức hoạt động | Mức instance                                                                                                                                                                                                                                         | Mức subnet                                                                                                                                                                                                                                            |
-| Áp dụng cho   | Chỉ áp dụng cho instance được gắn với security group đó.                                                                                                                                                                                             | Áp dụng cho tất cả các instance được triển khai trong subnet được gắn với Network ACL đó.                                                                                                                                                             |
-| Rule          | Chỉ hỗ trợ rule cho phép (Allow) lưu lượng truy cập (traffic) từ **public**.                                                                                                                                                                         | Hỗ trợ cả rule cho phép và từ chối (Allow and Deny) lưu lượng truy cập (traffic) trong **internal**.                                                                                                                                                  |
-| Đánh giá rule | Đánh giá tất cả rule trước khi quyết định cho phép lưu lượng                                                                                                                                                                                         | Đánh giá theo thứ tự, bắt đầu từ rule có số thấp nhất                                                                                                                                                                                                 |
-| Trạng thái    | <p><strong>Stateful:</strong> </p><ul><li>Cho phép <strong>traffic</strong> cụ thể đến instance ở <strong>inbound rule</strong> thì ở <strong>outbound rule</strong> cũng được tự động cho phép traffic đi ra khỏi instance, và ngược lại.</li></ul> | <p><strong>Stateless</strong>: </p><ul><li>Cho phép <strong>traffic</strong> cụ thể đến subnet ở <strong>inbound rule</strong> thì ở <strong>outbound rule</strong> sẽ không được tự động cho phép traffic đi ra khỏi subnet, và ngược lại.</li></ul> |
+<table data-header-hidden><thead><tr><th width="174"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Tính năng</strong></td><td><strong>Security Group</strong></td><td><strong>Network ACL</strong></td></tr><tr><td>Mức hoạt động</td><td>Mức instance</td><td>Mức subnet</td></tr><tr><td>Áp dụng cho</td><td>Chỉ áp dụng cho instance được gắn với security group đó.</td><td>Áp dụng cho tất cả các instance được triển khai trong subnet được gắn với Network ACL đó.</td></tr><tr><td>Rule</td><td>Chỉ hỗ trợ rule cho phép (Allow) lưu lượng truy cập (traffic) từ <strong>public</strong>.</td><td>Hỗ trợ cả rule cho phép và từ chối (Allow and Deny) lưu lượng truy cập (traffic) trong <strong>internal</strong>.</td></tr><tr><td>Đánh giá rule</td><td>Đánh giá tất cả rule trước khi quyết định cho phép lưu lượng</td><td>Đánh giá theo thứ tự, bắt đầu từ rule có số thấp nhất</td></tr><tr><td>Trạng thái</td><td><p><strong>Stateful:</strong> </p><ul><li>Cho phép <strong>traffic</strong> cụ thể đến instance ở <strong>inbound rule</strong> thì ở <strong>outbound rule</strong> cũng được tự động cho phép traffic đi ra khỏi instance, và ngược lại.</li></ul></td><td><p><strong>Stateless</strong>: </p><ul><li>Cho phép <strong>traffic</strong> cụ thể đến subnet ở <strong>inbound rule</strong> thì ở <strong>outbound rule</strong> sẽ không được tự động cho phép traffic đi ra khỏi subnet, và ngược lại.</li></ul></td></tr></tbody></table>
 
 ***
 
@@ -50,20 +44,21 @@ Một Network ACL bao gồm các thành phần cơ bản sau:&#x20;
   * Allow/ Deny: cho phép hoặc từ chối lưu lượng được chỉ định.
 * Subnet
 
-Mỗi Network ACL đều có một 2 inbound rules (1 rule allow và 1 rule deny) và 2 outbound rules (1 rule allow và 1 rule deny) mặc định. **Bạn không thể sửa đổi hoặc xóa rule deny mặc định này.**
+Mỗi Network ACL đều có một 2 inbound rules (1 rule allow và 1 rule deny) và 2 outbound rules (1 rule allow và 1 rule deny) mặc định. <mark style="color:red;">**Bạn không thể sửa đổi hoặc xóa rule deny mặc định này.**</mark>
 
-| Inbound rules      |          |              |                |                 |                |                                     |
-| ------------------ | -------- | ------------ | -------------- | --------------- | -------------- | ----------------------------------- |
-| **Priority**       | **Type** | **Protocol** | **Port range** | **Source**      | **Allow/Deny** | **Ghi chú**                         |
-| 0                  | Inbound  | ANY          | 0-65535        | 0.0.0.0/0       | Allow          | Có thể Xóa/ Chỉnh sửa rule.         |
-| 2000               | Inbound  | ANY          | 0-65535        | 0.0.0.0/0       | Deny           | Không cho phép Xóa/ Chỉnh sửa rule. |
-| **Outbound rules** |          |              |                |                 |                |                                     |
-| **Priority**       | **Type** | **Protocol** | **Port range** | **Destination** | **Allow/Deny** | **Ghi chú**                         |
-| 0                  | Outbound | ANY          | 0-65535        | 0.0.0.0/0       | Allow          | Có thể Xóa/ Chỉnh sửa rule.         |
-| 2000               | Outbound | ANY          | 0-65535        | 0.0.0.0/0       | Deny           | Không cho phép Xóa/ Chỉnh sửa rule. |
+* **Inbound rules:**
 
-\
+| Priority  |         | Protocol | Port range | Source    | Allow/Deny | Ghi chú                             |
+| --------- | ------- | -------- | ---------- | --------- | ---------- | ----------------------------------- |
+| 0         | Inbound | ANY      | 0-65535    | 0.0.0.0/0 | Allow      | Có thể Xóa/ Chỉnh sửa rule.         |
+| 2000      | Inbound | ANY      | 0-65535    | 0.0.0.0/0 | Deny       | Không cho phép Xóa/ Chỉnh sửa rule. |
 
+* **Outbound rules:**
+
+| Priority | Type     | Protocol | Port range | Destination | Allow/Deny | Ghi chú                             |
+| -------- | -------- | -------- | ---------- | ----------- | ---------- | ----------------------------------- |
+| 0        | Outbound | ANY      | 0-65535    | 0.0.0.0/0   | Allow      | Có thể Xóa/ Chỉnh sửa rule.         |
+| 2000     | Outbound | ANY      | 0-65535    | 0.0.0.0/0   | Deny       | Không cho phép Xóa/ Chỉnh sửa rule. |
 
 ***
 
@@ -93,14 +88,14 @@ Lúc này, Network ACL của bạn được tạo với thông tin Inbound rule,
 2. Trong menu bên trái, chọn **Network**, sau đó chọn **Network ACLs**.
 3. Tại danh sách các Network ACL đã tạo, chọn vào một **Network ACL**.
 4. Tại mục Inbound rules, chọn **Chỉnh sửa Inbound rules.**
-5. Chọn **Thêm rule** nếu bạn muốn tạo một rule mới, hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24\_17-45-8.png?version=1\&modificationDate=1708921940000\&api=v2)nếu bạn muốn **xóa rule** vừa tạo.
+5. Chọn **Thêm rule** nếu bạn muốn tạo một rule mới, hoặc chọn biểu tượng <img src="https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24_17-45-8.png?version=1&#x26;modificationDate=1708921940000&#x26;api=v2" alt="" data-size="line">nếu bạn muốn **xóa rule** vừa tạo.
 6. Chỉnh sửa **Priority**: nhập trọng số (độ ưu tiên) cho rule. Trọng số của rule không được trùng với số đã có trong Network ACL. Chúng tôi xử lý các rule theo trọng số, bắt đầu từ số thấp nhất tới số cao nhất mà không phân biệt Allow hay Deny. Trọng số tối đa bạn có thể thiết lập là **32766**.
 7. Chỉnh sửa **Protocol**: thêm giao thức truy cập mà bạn mong muốn cho phép/ từ chối đi vào Subnet. Chúng tôi đang cung cấp cho bạn lựa chọn 1 trong 4 phương án: ANY, TCP, UDP, ICMP.
 8. Chỉnh sửa **Port range**: số port hoặc phạm vi port bắt đầu và kết thúc.
 9. Chỉnh sửa **Source**: IP hoặc dải IP/ CIDR mong muốn cho phép/ từ chối truy cập theo Inbound rules.
 10. Chỉnh sửa **Allow**/ **Deny**: cho phép hoặc từ chối lưu lượng được chỉ định.
 11. Nếu bạn muốn thêm nhiều **Inbound rules** khác, tiếp tục chọn **Thêm rule** và thực hiện lặp lại các bước từ số 6, 7, 8, 9,10.&#x20;
-12. Nếu bạn muốn xóa nhiều Inbound rules khác, tiếp tục chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24\_17-45-8.png?version=1\&modificationDate=1708921940000\&api=v2)tại các rule cần xóa. **Lưu ý: Bạn không thể sửa đổi hoặc xóa Inbound rule deny mặc định được tạo bởi chúng tôi.**
+12. Nếu bạn muốn xóa nhiều Inbound rules khác, tiếp tục chọn biểu tượng <img src="https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24_17-45-8.png?version=1&#x26;modificationDate=1708921940000&#x26;api=v2" alt="" data-size="line">tại các rule cần xóa. <mark style="color:red;">**Lưu ý: Bạn không thể sửa đổi hoặc xóa Inbound rule deny mặc định được tạo bởi chúng tôi.**</mark>
 13. Chọn **Lưu** để lưu lại các chỉnh sửa đã nhập/ chọn hoặc chọn **Hủy bỏ** để hủy bỏ thay đổi việc chỉnh sửa.
 
 ***
@@ -113,14 +108,14 @@ Lúc này, Network ACL của bạn được tạo với thông tin Inbound rule,
 2. Trong menu bên trái, chọn **Network**, sau đó chọn **Network ACLs**.
 3. Tại danh sách các Network ACL đã tạo, chọn vào một **Network ACL**.
 4. Tại mục Inbound rules, chọn **Chỉnh sửa Outbound rules.**
-5. Chọn **Thêm rule** nếu bạn muốn tạo một rule mới, hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24\_17-45-8.png?version=1\&modificationDate=1708921940000\&api=v2)nếu bạn muốn **xóa rule** vừa tạo.
+5. Chọn **Thêm rule** nếu bạn muốn tạo một rule mới, hoặc chọn biểu tượng <img src="https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24_17-45-8.png?version=1&#x26;modificationDate=1708921940000&#x26;api=v2" alt="" data-size="line">nếu bạn muốn **xóa rule** vừa tạo.
 6. Chỉnh sửa **Priority**: nhập trọng số (độ ưu tiên) cho rule. Trọng số của rule không được trùng với số đã có trong Network ACL. Chúng tôi xử lý các rule theo trọng số, bắt đầu từ số thấp nhất tới số cao nhất mà không phân biệt Allow hay Deny. Trọng số tối đa bạn có thể thiết lập là **32766**.
 7. Chỉnh sửa **Protocol**: thêm giao thức truy cập mà bạn mong muốn cho phép/ từ chối đi ra khỏi Subnet. Chúng tôi đang cung cấp cho bạn lựa chọn 1 trong 4 phương án: ANY, TCP, UDP, ICMP.
 8. Chỉnh sửa **Port range**: số port hoặc phạm vi port bắt đầu và kết thúc.
 9. Chỉnh sửa **Destination**: IP hoặc dải IP/ CIDR mong muốn cho phép/ từ chối truy cập theo Outbound rules.
 10. Chỉnh sửa **Allow**/ **Deny**: cho phép hoặc từ chối lưu lượng được chỉ định.
 11. Nếu bạn muốn thêm nhiều **Outbound rules** khác, tiếp tục chọn **Thêm rule** và thực hiện lặp lại các bước từ số 6, 7, 8, 9,10.&#x20;
-12. Nếu bạn muốn xóa nhiều Outbound rules khác, tiếp tục chọn biểu tượng  ![](https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24\_17-45-8.png?version=1\&modificationDate=1708921940000\&api=v2)tại các rule cần xóa. **Lưu ý: Bạn không thể sửa đổi hoặc xóa Outbound rule deny mặc định được tạo bởi chúng tôi.**
+12. Nếu bạn muốn xóa nhiều Outbound rules khác, tiếp tục chọn biểu tượng  <img src="https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24_17-45-8.png?version=1&#x26;modificationDate=1708921940000&#x26;api=v2" alt="" data-size="line">tại các rule cần xóa. <mark style="color:red;">**Lưu ý: Bạn không thể sửa đổi hoặc xóa Outbound rule deny mặc định được tạo bởi chúng tôi.**</mark>
 13. Chọn **Lưu** để lưu lại các chỉnh sửa đã nhập/ chọn hoặc chọn **Hủy bỏ** để hủy bỏ thay đổi việc chỉnh sửa.
 
 ***
@@ -140,10 +135,12 @@ Lúc này, Network ACL của bạn được tạo với thông tin Inbound rule,
    2. Tại mục **Subnet liên kết**, bạn có thể bỏ liên kết một **Subnet** với **Network ACL** bằng cách chọn vào Subnet muốn bỏ.&#x20;
 6. Chọn **Lưu** để lưu lại các chỉnh sửa đã nhập/ chọn hoặc chọn **Hủy bỏ** để hủy bỏ thay đổi việc chỉnh sửa.
 
-Lưu ý
+{% hint style="info" %}
+**Chú ý:**
 
 * Khi bạn liên kết một subnet với một Network ACL mới, các Inbound rules và Outbound rules của Network ACL mới sẽ bắt đầu áp dụng cho lưu lượng đến và đi từ subnet đó.
 * Bạn có thể liên kết một subnet với một Network ACL khác bất cứ lúc nào. Lúc này, chúng tôi sẽ ngắt liên kết cũ và thực hiện liên kết mới theo chỉnh sửa của bạn đảm bảo tại 1 thời điểm một subnet chỉ có thể gắn với một Network ACL. Việc thay đổi liên kết subnet có thể ảnh hưởng đến lưu lượng đến và đi từ subnet đó.
+{% endhint %}
 
 ***
 
@@ -155,5 +152,5 @@ Bạn chỉ có thể xóa Network ACL nếu không có subnet nào được li�
 
 1. Truy cập vào trang chủ của dịch vụ vServer tại đường dẫn: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
 2. Trong menu bên trái, chọn **Network**, sau đó chọn **Network ACLs**.
-3. Tại Network ACL muốn xóa, chọn biểu tượng  ![](https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24\_18-17-12.png?version=1\&modificationDate=1708921940000\&api=v2).
+3. Tại Network ACL muốn xóa, chọn biểu tượng  <img src="https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24_18-17-12.png?version=1&#x26;modificationDate=1708921940000&#x26;api=v2" alt="" data-size="line">.
 4. Tại màn hình xác nhận xóa, chọn **Xóa** nếu bạn chắc chắn muốn xóa Network ACLs này hoặc **Hủy bỏ** nếu muốn hủy bỏ việc xóa.

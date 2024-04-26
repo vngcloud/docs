@@ -9,7 +9,7 @@
 ### Cài đặt Metric Agent trên Server
 
 * [Linux OS](cai-dat-metric-agent-tren-server/linux-os.md)
-* [Linux OS có giới hạn kết nối Internet](cai-dat-metric-agent-tren-server/linux-os-co-gioi-han-ket-noi-internet.md)
+* [Linux OS có giới hạn kết nối Internet](broken-reference)
 * [Window OS](cai-dat-metric-agent-tren-server/window-os.md)
 
 ***
