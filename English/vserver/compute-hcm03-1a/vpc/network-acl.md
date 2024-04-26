@@ -25,7 +25,7 @@ Network ACL is a feature that helps you control network traffic in and out of su
 
 Please refer to the table below to distinguish between Security Group and Network ACL
 
-| Feature                | Security Group                                                                                                                                                                                                                                                       | Network ACL                                                                                                                                                                                                                                                                      |
+| **Feature**            | **Security Group**                                                                                                                                                                                                                                                   | **Network ACL**                                                                                                                                                                                                                                                                  |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Level of operation** | Instance level                                                                                                                                                                                                                                                       | Subnet level                                                                                                                                                                                                                                                                     |
 | **Applies to**         | Only applies to instances associated to that security group.                                                                                                                                                                                                         | Applies to all instances deployed in the subnet associated to that Network ACL.                                                                                                                                                                                                  |
@@ -52,10 +52,16 @@ A Network ACL consists of the following basic components:
 
 Each Network ACL has 2 default inbound rules (1 allow rule and 1 deny rule) and 2 default outbound rules (1 allow rule and 1 deny rule). **You cannot modify or delete these default deny rules.**
 
-<table><thead><tr><th width="123">Inbound rules</th><th></th><th width="98"></th><th width="102"></th><th width="122"></th><th width="80"></th><th></th></tr></thead><tbody><tr><td><strong>Priority</strong></td><td><strong>Type</strong></td><td><strong>Protocol</strong></td><td><strong>Port range</strong></td><td><strong>Source</strong></td><td><strong>Allow/Deny</strong></td><td><strong>Ghi chú</strong></td></tr><tr><td>0</td><td>Inbound</td><td>ANY</td><td>0-65535</td><td>0.0.0.0/0</td><td>Allow</td><td>Can Delete/Edit Inbound rules.</td></tr><tr><td>2000</td><td>Inbound</td><td>ANY</td><td>0-65535</td><td>0.0.0.0/0</td><td>Deny</td><td>Cannot Delete/Edit Inbound rules.</td></tr><tr><td><strong>Outbound rules</strong></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td><strong>Priority</strong></td><td><strong>Type</strong></td><td><strong>Protocol</strong></td><td><strong>Port range</strong></td><td><strong>Destination</strong></td><td><strong>Allow/Deny</strong></td><td><strong>Ghi chú</strong></td></tr><tr><td>0</td><td>Outbound</td><td>ANY</td><td>0-65535</td><td>0.0.0.0/0</td><td>Allow</td><td>Can Delete/Edit Outbound rules.</td></tr><tr><td>2000</td><td>Outbound</td><td>ANY</td><td>0-65535</td><td>0.0.0.0/0</td><td>Deny</td><td>Cannot Delete/Edit Outbound rules.</td></tr></tbody></table>
+* **Inbound rules:**
 
-\
+<table><thead><tr><th width="123">Priority</th><th>Type</th><th width="98">Protocol</th><th width="102">Port range</th><th width="122">Source</th><th width="80">Allow/ Deny</th><th>Ghi chú</th></tr></thead><tbody><tr><td>0</td><td>Inbound</td><td>ANY</td><td>0-65535</td><td>0.0.0.0/0</td><td>Allow</td><td>Can Delete/Edit Inbound rules.</td></tr><tr><td>2000</td><td>Inbound</td><td>ANY</td><td>0-65535</td><td>0.0.0.0/0</td><td>Deny</td><td>Cannot Delete/Edit Inbound rules.</td></tr></tbody></table>
 
+* **Outbound rules:**
+
+| Priority | Type     | Protocol | Port range | Destination | Allow/ Deny | Ghi chú                            |
+| -------- | -------- | -------- | ---------- | ----------- | ----------- | ---------------------------------- |
+| 0        | Outbound | ANY      | 0-65535    | 0.0.0.0/0   | Allow       | Can Delete/Edit Outbound rules.    |
+| 2000     | Outbound | ANY      | 0-65535    | 0.0.0.0/0   | Deny        | Cannot Delete/Edit Outbound rules. |
 
 ***
 
@@ -77,7 +83,7 @@ Your Network ACL is now created with the default Inbound rule and Outbound rule 
 
 ***
 
-Editing the Inbound Rules List
+#### Editing the Inbound Rules List
 
 To edit the Inbound rule list (rules that allow traffic to enter), follow these steps:
 
@@ -85,19 +91,19 @@ To edit the Inbound rule list (rules that allow traffic to enter), follow these 
 2. In the left-hand menu, select **Network**, then select **Network ACLs**.
 3. In the list of created Network ACLs, select a **Network ACL**.
 4. In the **Inbound rules** section, select **Edit Inbound rules**.
-5. Select **Add rule** if you want to create a new rule, or select the icon ![](https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24\_17-45-8.png?version=1\&modificationDate=1708921940000\&api=v2)if you want to **delete** the newly created rule.
+5. Select **Add rule** if you want to create a new rule, or select the icon <img src="https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24_17-45-8.png?version=1&#x26;modificationDate=1708921940000&#x26;api=v2" alt="" data-size="line">if you want to **delete** the newly created rule.
 6. Edit **Priority:** enter the weight (priority) for the rule. The rule weight must not be the same as a number already in the Network ACL. We process rules by weight, starting from the lowest to the highest, regardless of Allow or Deny. The maximum weight you can set is **32766**.
 7. Edit **Protocol:** add the access protocol you want to allow/deny to enter the Subnet. We are providing you with 1 of 4 options: ANY, TCP, UDP, ICMP.
 8. Edit **Port range:** the port number or range of ports to start and end.
 9. Edit **Source:** the desired IP or IP range/CIDR to allow/deny access according to Inbound rules.
 10. Edit **Allow/Deny:** allow or deny the specified traffic.
 11. If you want to add more Inbound rules, continue to select **Add rule** and repeat steps 6, 7, 8, 9, and 10.
-12. If you want to delete multiple Inbound rules, continue to select the icon ![](https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24\_17-45-8.png?version=1\&modificationDate=1708921940000\&api=v2) at the rules you want to delete. **Note: You cannot edit or delete the default Inbound rules deny created by us.**
+12. If you want to delete multiple Inbound rules, continue to select the icon  <img src="https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24_17-45-8.png?version=1&#x26;modificationDate=1708921940000&#x26;api=v2" alt="" data-size="line"> at the rules you want to delete. <mark style="color:red;">**Note: You cannot edit or delete the default Inbound rules deny created by us.**</mark>
 13. Select **Save** to save the entered/selected edits or select **Cancel** to cancel the edit changes.
 
 ***
 
-Editing the Outbound Rules List
+#### Editing the Outbound Rules List
 
 To edit the Outbound rule list (rules that allow traffic to exit), follow these steps:
 
@@ -105,19 +111,19 @@ To edit the Outbound rule list (rules that allow traffic to exit), follow these 
 2. In the left-hand menu, select **Network**, then select **Network ACLs**.
 3. In the list of created Network ACLs, select a **Network ACL**.
 4. In the **Outbound rules** section, select **Edit Outbound rules**.
-5. Select **Add rule** if you want to create a new rule, or select the icon![](https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24\_17-45-8.png?version=1\&modificationDate=1708921940000\&api=v2)if you want to delete the newly created rule.
+5. Select **Add rule** if you want to create a new rule, or select the icon<img src="https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24_17-45-8.png?version=1&#x26;modificationDate=1708921940000&#x26;api=v2" alt="" data-size="line"> if you want to delete the newly created rule.
 6. Edit **Priority:** enter the weight (priority) for the rule. The rule weight must not be the same as a number already in the Network ACL. We process rules by weight, starting from the lowest to the highest, regardless of Allow or Deny. The maximum weight you can set is **32766**.
 7. Edit **Protocol:** add the access protocol you want to allow/deny to exit the Subnet. We are providing you with 1 of 4 options: ANY, TCP, UDP, ICMP.
 8. Edit **Port range:** the port number or range of ports to start and end.
 9. Edit **Destination:** the desired IP or IP range/CIDR to allow/deny access according to Outbound rules.
 10. Edit **Allow/Deny:** allow or deny the specified traffic.
 11. If you want to add more Outbound rules, continue to select **Add rule** and repeat steps 6, 7, 8, 9, and 10.
-12. If you want to delete multiple Outbound rules, continue to select the icon![](https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24\_17-45-8.png?version=1\&modificationDate=1708921940000\&api=v2)at the rules you want to delete. **Note: You cannot edit or delete the default Outbound rules deny created by us.**
+12. If you want to delete multiple Outbound rules, continue to select the icon <img src="https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24_17-45-8.png?version=1&#x26;modificationDate=1708921940000&#x26;api=v2" alt="" data-size="line">at the rules you want to delete. <mark style="color:red;">**Note: You cannot edit or delete the default Outbound rules deny created by us.**</mark>
 13. Select **Save** to save the entered/selected edits or select **Cancel** to cancel the edit changes.
 
 ***
 
-Associating/Disassociating a Subnet with a Network ACL
+#### Associating/Disassociating a Subnet with a Network ACL
 
 To apply the rules of a Network ACL to a specific subnet, you need to associate that subnet with the Network ACL. You can associate a Network ACL with multiple subnets, but a subnet can only be associated with one Network ACL at a time.
 
@@ -128,14 +134,16 @@ To associate a subnet with a Network ACL, follow these steps:
 3. In the list of created Network ACLs, select a **Network ACL**.
 4. In the **Subnet association** section, select **Edit Subnet Association**.
 5. In the Edit Subnet Association screen, you can associate/disassociate a Subnet with a Network ACL by:
-   1. In the **Available Subnets** section, you can select one or more **Subnets** to associate using the icon ![](https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24\_18-9-10.png?version=1\&modificationDate=1708921940000\&api=v2).
+   1. In the **Available Subnets** section, you can select one or more **Subnets** to associate using the icon  <img src="https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24_18-9-10.png?version=1&#x26;modificationDate=1708921940000&#x26;api=v2" alt="" data-size="line">.
    2. In the **Associated Subnets** section, you can disassociate a **Subnet** from the **Network ACL** by selecting the Subnet you want to disassociate.
 6. Select **Save** to save the entered/selected edits or select **Cancel** to cancel the edit changes.
 
-Warning
+{% hint style="info" %}
+**Notes:**
 
 * When you associate a subnet with a new Network ACL, the Inbound rules and Outbound rules of the new Network ACL will start to apply to traffic to and from that subnet.
 * You can associate a subnet with a different Network ACL at any time. At this time, we will disconnect the old association and perform the new association according to your edit, ensuring that at any time a subnet can only be attached to one Network ACL. Changing the subnet association can affect the traffic to and from that subnet.
+{% endhint %}
 
 ***
 
@@ -147,7 +155,7 @@ You can only delete a Network ACL if it is not associated with any subnets. If t
 
 1. Access the vServer service home page at the following link: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
 2. In the left-hand menu, select **Network**, then select **Network ACLs**.
-3. At the Network ACL you want to delete, select the icon ![](https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24\_18-17-12.png?version=1\&modificationDate=1708921940000\&api=v2).
+3. At the Network ACL you want to delete, select the icon <img src="https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24_18-17-12.png?version=1&#x26;modificationDate=1708921940000&#x26;api=v2" alt="" data-size="line">.
 4. In the delete confirmation screen, select **Delete** if you are sure you want to delete this Network ACL, or **Cancel** if you want to cancel the deletion.
 
 \
