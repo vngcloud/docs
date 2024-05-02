@@ -1,164 +1,88 @@
 # vServer
 
-<details>
-
-<summary>[vServer] Tại sao Server restart không lên ?</summary>
+### \[vServer] Tại sao Server restart không lên ?
 
 Bạn vui lòng vào console nhập pass root -> check content /etc/fstab--> edit lại nếu sai
 
-</details>
+### \[vServer] Sao đăng ký account rồi mà chưa nhận được OTP SMS kích hoạt ?
 
-<details>
+Bạn vui lòng kiểm tra lại mã Capcha để get OTP , kiểm tra lại xem số phone có đúng chưa.Nếu vẫn chưa được Bạn vui lòng gọi 19001549 bấm số 2 để được kĩ thuật hổ trợ.
 
-<summary>[vServer] Sao đăng ký account rồi mà chưa nhận được OTP SMS kích hoạt ?</summary>
-
-Bạn vui lòng kiểm tra lại mã Capcha để get OTP , kiểm tra lại xem số phone có đúng chưa.Nếu vẫn chưa được Bạn vui lòng gọi 19001549 bấm số 2 để được kĩ thuật hổ trợ
-
-</details>
-
-<details>
-
-<summary>[vServer] Vì sao ko mở Open Console Server được ?</summary>
+### \[vServer] Vì sao ko mở Open Console Server được ?
 
 Do một số browser chặn popup, chặn java. Bạn vui lòng chọn vào popup để allow java ,sau đó sẽ console server bình thường .
 
-</details>
-
-<details>
-
-<summary>[vServer] Vì sao không SSH đến Server Linux được ?</summary>
+**\[vServer] Vì sao không SSH đến Server Linux được ?**
 
 Ngoài việc điền đúng port 234 (khác port ssh mặc định là 22) thì bạn cần kiểm tra Security Group xem đã allow port 234 chưa.
 
-</details>
-
-<details>
-
-<summary>[vServer] Vì sao không Remote Desktop đến VPS Windows được ?</summary>
+### \[vServer] Vì sao không Remote Desktop đến VPS Windows được ?
 
 Ngoài việc điền đúng port 3490, thì bạn cần kiểm tra Security Group xem đã allow port 3490 chưa.
 
-</details>
-
-<details>
-
-<summary>[vServer] Sao không connect được đến các port đang listen trên VPS được ?</summary>
+### **\[vServer] Sao không connect được đến các port đang listen trên VPS được ?**
 
 Bạn vui lòng kiểm tra lại sercurity group , security group (SEC) trên portal chưa allow port, hoặc allow không đúng group đang apply cho Server.
 
-</details>
-
-<details>
-
-<summary>[vServer] Sao VPS có WANIP mà vô bên trong VPS lại chỉ thấy IP Private ?</summary>
+### \[vServer] Sao VPS có WANIP mà vô bên trong VPS lại chỉ thấy IP Private ?
 
 Hệ thống sử dụng NAT 1- 1 nên user chỉ thấy IP Private, bên trong server listen theo ip private , bên ngoài truy cập bằng IP public
 
-</details>
-
-<details>
-
-<summary>[vServer] Làm sao để enable root login ssh on VPS Linux ?</summary>
+### \[vServer] Làm sao để enable root login ssh on VPS Linux ?
 
 User change quyền ssh trong /etc/ssh/sshd\_config (PermitRootLogin yes),restart ssh service. Khuyến cáo user không nên xài root giảm thiểu việc bị brute-force quyền stackops tương đường quyền root
 
-</details>
-
-<details>
-
-<summary>[vServer] Extend Disk có mất dữ liệu không ?</summary>
+### \[vServer] Extend Disk có mất dữ liệu không ?
 
 Bạn có thể extend disk cho server mà không bị mất dữ liệu
 
-</details>
-
-<details>
-
-<summary>[vServer] Extend Disk có phải reboot Server ko ?</summary>
+### \[vServer] Extend Disk có phải reboot Server ko ?
 
 Tùy trường hợp khác nhau mà máy chủ có thể khởi động lại để mở rộng được dung lượng.
 
-</details>
-
-<details>
-
-<summary>[vServer]Làm sao để extend disk trong Linux ?</summary>
+### \[vServer]Làm sao để extend disk trong Linux ?
 
 Quý khách có thể thực hiện như sau : Thực hiện extend disk trên portal VNG Cloud: [Mở rộng Volume với hệ điều hành Linux](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804637\&src=contextnavpagetreemode)
 
-</details>
-
-<details>
-
-<summary>[vServer]Làm sao để extend disk trong Window ?</summary>
+### \[vServer]Làm sao để extend disk trong Window ?
 
 &#x20;[Mở rộng Volume với hệ điều hành Window](../../vserver/compute-hcm03-1a/volume/mo-rong-volume-voi-he-dieu-hanh-window.md) Quý khách có thể thực hiện như sau : Thực hiện extend disk trên portal VNG Cloud:
 
-</details>
-
-<details>
-
-<summary>[vServer]Tôi cần reinstall lại OS?</summary>
+### \[vServer]Tôi cần reinstall lại OS?
 
 Quý khách có thể xóa để tạo lại Server khác. Hiện tại VNG Cloud chưa hỗ trợ tính năng reinstall OS mới lên Server đã tạo.
 
-</details>
-
-<details>
-
-<summary>[vServer] Làm sao để truy cập vào server sau khi tạo?</summary>
+\[vServer] Làm sao để truy cập vào server sau khi tạo?
 
 Bạn có thể truy cập qua open console trên trang portal vừa tạo. Server linux có thể sử dụng ssh, Server windows có thể xài remote desktop
 
-</details>
+\[vServer] Resize VPS có bị reboot không?
 
-<details>
+Có, nếu resize Server bắt buộc phải reboot server
 
-<summary>[vServer] Resize VPS có bị reboot không?</summary>
-
-Có , nếu resize Server bắt buộc phải reboot server
-
-</details>
-
-<details>
-
-<summary>[vServer] VPS của tôi bị hết hạn và bị xóa, phải làm sao ?</summary>
+\[vServer] VPS của tôi bị hết hạn và bị xóa, phải làm sao ?
 
 Nếu Server hết hạn, trên giao diện trang chủ sẽ có trạng thái Expired, trạng thái này sẽ giữ trong vòng 7 ngày, trường hợp bạn không gia hạn Server sẽ bị xóa vĩnh viễn và không thể khôi phục lại.
 
-</details>
-
-<details>
-
-<summary>[vServer] VPS của tôi bị treo, có thể giúp tôi Reboot ?</summary>
+\[vServer] VPS của tôi bị treo, có thể giúp tôi Reboot ?
 
 Để thực hiện Reboot lại Server, vui lòng xem hướng dẫn tại Trang Reboot Server của bạn.
 
-</details>
-
-<details>
-
-<summary>[vServer] Tôi muốn Reset Pass của server ?</summary>
+\[vServer] Tôi muốn Reset Pass của server ?
 
 Bạn không thể tự reset password cho Server của mình. Để tiến hành reset password cho Server, vui lòng gởi request tại trang [Hỗ trợ ](https://helpdesk.vngcloud.vn/)của chúng tôi.&#x20;
 
-</details>
-
-<details>
-
-<summary>[vServer] Tôi không allow được 1 số port trên Webmin Vserver ?</summary>
+\[vServer] Tôi không allow được 1 số port trên Webmin Vserver ?
 
 Bạn vui lòng kiểm tra lại Security Group trên trang chủ portal đã allow port tương ứng chưa, nếu rồi nhưng vẫn chưa được, vui lòng vào Server kiểm tra port đó đã Listen trên Server chưa.
 
-</details>
-
-<details>
-
-<summary>[vServer] Server tôi không ra internet được ?</summary>
+\[vServer] Server tôi không ra internet được ?
 
 Bạn vui lòng vào restart server lại và setting DNS chỉnh 8.8.8.8.
 
-</details>
+\[vServer] Xin hướng dẫn chuyển vServer từ Farm Simple sang Farm vPC
+
+Hiện tại chúng tôi không còn hỗ trợ Farm Simple.
 
 <details>
 
