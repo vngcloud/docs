@@ -2,7 +2,7 @@
 
 ### \[vServer] Tại sao Server restart không lên ?
 
-Bạn vui lòng vào console nhập pass root -> check content /etc/fstab--> edit lại nếu sai
+Bạn vui lòng vào console nhập pass root -> check content /etc/fstab--> edit lại nếu sai.
 
 ### \[vServer] Sao đăng ký account rồi mà chưa nhận được OTP SMS kích hoạt ?
 
@@ -26,15 +26,15 @@ Bạn vui lòng kiểm tra lại sercurity group , security group (SEC) trên po
 
 ### \[vServer] Sao VPS có WANIP mà vô bên trong VPS lại chỉ thấy IP Private ?
 
-Hệ thống sử dụng NAT 1- 1 nên user chỉ thấy IP Private, bên trong server listen theo ip private , bên ngoài truy cập bằng IP public
+Hệ thống sử dụng NAT 1- 1 nên user chỉ thấy IP Private, bên trong server listen theo ip private , bên ngoài truy cập bằng IP public.
 
 ### \[vServer] Làm sao để enable root login ssh on VPS Linux ?
 
-User change quyền ssh trong /etc/ssh/sshd\_config (PermitRootLogin yes),restart ssh service. Khuyến cáo user không nên xài root giảm thiểu việc bị brute-force quyền stackops tương đường quyền root
+User change quyền ssh trong /etc/ssh/sshd\_config (PermitRootLogin yes),restart ssh service. Khuyến cáo user không nên xài root giảm thiểu việc bị brute-force quyền stackops tương đường quyền root.
 
 ### \[vServer] Extend Disk có mất dữ liệu không ?
 
-Bạn có thể extend disk cho server mà không bị mất dữ liệu
+Bạn có thể extend disk cho server mà không bị mất dữ liệu.
 
 ### \[vServer] Extend Disk có phải reboot Server ko ?
 
@@ -42,135 +42,87 @@ Tùy trường hợp khác nhau mà máy chủ có thể khởi động lại đ
 
 ### \[vServer]Làm sao để extend disk trong Linux ?
 
-Quý khách có thể thực hiện như sau : Thực hiện extend disk trên portal VNG Cloud: [Mở rộng Volume với hệ điều hành Linux](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804637\&src=contextnavpagetreemode)
+Quý khách có thể thực hiện như sau : Thực hiện extend disk trên portal VNG Cloud: [Mở rộng Volume với hệ điều hành Linux](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804637\&src=contextnavpagetreemode).
 
 ### \[vServer]Làm sao để extend disk trong Window ?
 
-&#x20;[Mở rộng Volume với hệ điều hành Window](../../vserver/compute-hcm03-1a/volume/mo-rong-volume-voi-he-dieu-hanh-window.md) Quý khách có thể thực hiện như sau : Thực hiện extend disk trên portal VNG Cloud:
+&#x20;[Mở rộng Volume với hệ điều hành Window](../../vserver/compute-hcm03-1a/volume/mo-rong-volume-voi-he-dieu-hanh-window.md) Quý khách có thể thực hiện như sau :[ Thực hiện extend disk trên portal VNG Cloud](./#vserver-lam-sao-de-extend-disk-trong-window)
 
 ### \[vServer]Tôi cần reinstall lại OS?
 
 Quý khách có thể xóa để tạo lại Server khác. Hiện tại VNG Cloud chưa hỗ trợ tính năng reinstall OS mới lên Server đã tạo.
 
-\[vServer] Làm sao để truy cập vào server sau khi tạo?
+### \[vServer] Làm sao để truy cập vào server sau khi tạo?
 
-Bạn có thể truy cập qua open console trên trang portal vừa tạo. Server linux có thể sử dụng ssh, Server windows có thể xài remote desktop
+Bạn có thể truy cập qua open console trên trang portal vừa tạo. Server linux có thể sử dụng ssh, Server windows có thể xài remote desktop.
 
-\[vServer] Resize VPS có bị reboot không?
+### \[vServer] Resize VPS có bị reboot không?
 
-Có, nếu resize Server bắt buộc phải reboot server
+Có, nếu resize Server bắt buộc phải reboot server.
 
-\[vServer] VPS của tôi bị hết hạn và bị xóa, phải làm sao ?
+### \[vServer] VPS của tôi bị hết hạn và bị xóa, phải làm sao ?
 
 Nếu Server hết hạn, trên giao diện trang chủ sẽ có trạng thái Expired, trạng thái này sẽ giữ trong vòng 7 ngày, trường hợp bạn không gia hạn Server sẽ bị xóa vĩnh viễn và không thể khôi phục lại.
 
-\[vServer] VPS của tôi bị treo, có thể giúp tôi Reboot ?
+### \[vServer] VPS của tôi bị treo, có thể giúp tôi Reboot ?
 
 Để thực hiện Reboot lại Server, vui lòng xem hướng dẫn tại Trang Reboot Server của bạn.
 
-\[vServer] Tôi muốn Reset Pass của server ?
+### \[vServer] Tôi muốn Reset Pass của server ?
 
 Bạn không thể tự reset password cho Server của mình. Để tiến hành reset password cho Server, vui lòng gởi request tại trang [Hỗ trợ ](https://helpdesk.vngcloud.vn/)của chúng tôi.&#x20;
 
-\[vServer] Tôi không allow được 1 số port trên Webmin Vserver ?
+### \[vServer] Tôi không allow được 1 số port trên Webmin Vserver ?
 
 Bạn vui lòng kiểm tra lại Security Group trên trang chủ portal đã allow port tương ứng chưa, nếu rồi nhưng vẫn chưa được, vui lòng vào Server kiểm tra port đó đã Listen trên Server chưa.
 
-\[vServer] Server tôi không ra internet được ?
+### \[vServer] Server tôi không ra internet được ?
 
 Bạn vui lòng vào restart server lại và setting DNS chỉnh 8.8.8.8.
 
-\[vServer] Xin hướng dẫn chuyển vServer từ Farm Simple sang Farm vPC
+### \[vServer] Xin hướng dẫn chuyển vServer từ Farm Simple sang Farm vPC
 
 Hiện tại chúng tôi không còn hỗ trợ Farm Simple.
 
-<details>
-
-<summary>[vServer] Xin hướng dẫn chuyển vServer từ Farm Simple sang Farm vPC</summary>
-
-Hiện tại chúng tôi không còn hỗ trợ Farm Simple.
-
-</details>
-
-<details>
-
-<summary>[vServer] Nhờ hỗ trợ deploy file OVA</summary>
+### \[vServer] Nhờ hỗ trợ deploy file OVA
 
 Deploy lên Cloud Server chỉ hỗ trợ các đuôi file RAW hoặc QCOW2.
 
-</details>
-
-<details>
-
-<summary>[vServer] Tôi muốn kiểm tra lịch sử thanh toán hoặc refund tiền ở đâu ?</summary>
+### \[vServer] Tôi muốn kiểm tra lịch sử thanh toán hoặc refund tiền ở đâu ?
 
 Bạn vui lòng vào phần Account -> Payment Method để xem thông tin.
 
-</details>
-
-<details>
-
-<summary>[vServer] Tại sao tôi không mở port 21 mà IP khác vẫn truy cập được ?</summary>
+### \[vServer] Tại sao tôi không mở port 21 mà IP khác vẫn truy cập được ?
 
 Bạn vui lòng xóa rule 65535, vì rule 65535 là Allow all port.
 
-</details>
-
-<details>
-
-<summary>[vServer] Tại sao tôi không có password của user administator?</summary>
+### \[vServer] Tại sao tôi không có password của user administator?
 
 Khi khởi tạo Server đã disable user admin .Nếu Bạn muốn sử dụng thì Bạn vào managenment để set password và sử dụng user administrator bình thường.
 
-</details>
-
-<details>
-
-<summary>[vServer] Khi tạo Image để backup thì sau khi tạo xong , quản lí Image nằm ở đâu?</summary>
+### \[vServer] Khi tạo Image để backup thì sau khi tạo xong , quản lí Image nằm ở đâu?
 
 Để xem thông tin Image đã tạo, bạn vui lòng truy cập vào [Trang Image](https://hcm-3.console.vngcloud.vn/vserver/block-store/images).
 
-</details>
-
-<details>
-
-<summary>[vServer] Sao không [connect] được đến các [port] đang listen trên VPS được</summary>
+### \[vServer] Sao không \[connect] được đến các \[port] đang listen trên VPS được
 
 Security group (SEC) trên portal chưa allow port, hoặc allow không đúng group đang apply cho Server, Local firewall của user chưa allow port. Login vào Portal. Vào mục Cloud Servers -> Click vào server cần kiểm tra SEC -> Mục Security Group -> Chọn vào Security group đang được apply. Mặc định chiều đi ra (Engress đã được allow all), chiều đi vào cần mở port nào chỉ cần chọn Add rule. Phần Rule để Custom TCP,Direction chọn Ingress để mở cho chiều vào , nhập vào port cần mở . CIDR để mặc định nếu mở tất cả range bên ngoài truy cập vào.
 
-</details>
+### \[vServer] Làm sao để enable \[root login] \[ssh] on VPS \[Linux]
 
-<details>
+Bạn cần change quyền ssh trong /etc/ssh/sshd\_config (PermitRootLogin yes),resstart ssh service, khuyến cáo user không nên xài root, giảm thiểu việc bị brute-force, quyền stackops tương đường quyền root.
 
-<summary>[vServer] Làm sao để enable [root login] [ssh] on VPS [Linux]</summary>
+### \[vServer] Làm sao để truy cập vào server sau khi tạo?
 
-Bạn cần change quyền ssh trong /etc/ssh/sshd\_config (PermitRootLogin yes),resstart ssh service, khuyến cáo user không nên xài root, giảm thiểu việc bị brute-force, quyền stackops tương đường quyền root
+Truy cập qua openconsole trên trang portal vừa tạo và nhập thông tin server để có thể truy cập. Server linux anh/chị có thể sử dụng ssh Server windows anh/chị có thể xài remote desktop.
 
-</details>
+### \[vServer] \[VPS] của tôi không \[ping] được ?
 
-<details>
+Truy cập vào portal phần security group để allow rule ICMP.
 
-<summary>[vServer] Làm sao để truy cập vào server sau khi tạo?</summary>
+### \[vServer] Tôi không \[ssh] / \[remote] vào VPS được ?
 
-Truy cập qua openconsole trên trang portal vừa tạo và nhập thông tin server để có thể truy cập. Server linux anh/chị có thể sử dụng ssh Server windows anh/chị có thể xài remote desktop
-
-</details>
-
-<details>
-
-<summary>[vServer] [VPS] của tôi không [ping] được ?</summary>
-
-Truy cập vào portal phần security group để allow rule ICMP
-
-</details>
-
-<details>
-
-<summary>[vServer] Tôi không [ssh] / [remote] vào VPS được ?</summary>
-
-Có thể truy cập vào portal login console để kiểm tra service ssh, đã allow port trên security group hay chưa, telnet đến port ssh được chưa, ping kiểm tra thử được chưa
-
-</details>
+Có thể truy cập vào portal login console để kiểm tra service ssh, đã allow port trên security group hay chưa, telnet đến port ssh được chưa, ping kiểm tra thử được chưa.
 
 <details>
 
