@@ -77,7 +77,7 @@
     * [Security](vserver/compute-hcm03-1a/security/README.md)
       * [SSH Key (Bộ khóa)](vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
       * [Security Groups](vserver/compute-hcm03-1a/security/security-groups.md)
-    * [Backup](vserver/compute-hcm03-1a/backup/README.md)
+    * [vBackup](vserver/compute-hcm03-1a/backup/README.md)
       * [Tạo bản sao lưu cho máy chủ ảo theo bộ lịch Policy](vserver/compute-hcm03-1a/backup/tao-ban-sao-luu-cho-may-chu-ao-theo-bo-lich-policy.md)
       * [Tạo bản sao lưu ngay lập tức (Backup Now)](vserver/compute-hcm03-1a/backup/tao-ban-sao-luu-ngay-lap-tuc-backup-now.md)
       * [Tự động sao lưu](vserver/compute-hcm03-1a/backup/tu-dong-sao-luu.md)
