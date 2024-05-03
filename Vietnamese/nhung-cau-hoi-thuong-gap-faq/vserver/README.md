@@ -12,7 +12,7 @@ Bạn vui lòng kiểm tra lại mã Capcha để get OTP , kiểm tra lại xem
 
 Do một số browser chặn popup, chặn java. Bạn vui lòng chọn vào popup để allow java ,sau đó sẽ console server bình thường .
 
-**\[vServer] Vì sao không SSH đến Server Linux được ?**
+### **\[vServer] Vì sao không SSH đến Server Linux được ?**
 
 Ngoài việc điền đúng port 234 (khác port ssh mặc định là 22) thì bạn cần kiểm tra Security Group xem đã allow port 234 chưa.
 
