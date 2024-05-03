@@ -124,81 +124,43 @@ Truy cập vào portal phần security group để allow rule ICMP.
 
 Có thể truy cập vào portal login console để kiểm tra service ssh, đã allow port trên security group hay chưa, telnet đến port ssh được chưa, ping kiểm tra thử được chưa.
 
-<details>
+### \[vServer] KH muốn chuyển đổi thông tin account, mail.
 
-<summary>[vServer] KH muốn chuyển đổi thông tin account, mail.</summary>
+Bạn vui lòng tạo ticket và cung cấp thông tin account cần change để VNG Cloud hỗ trợ.
 
-Bạn vui lòng tạo ticket và cung cấp thông tin account cần change để VNG Cloud hỗ trợ nhé.
+### \[vServer] Tôi muốn Reverse DNS từ IP 61.28.X.X sang mail.công ty thì làm thế nào?
 
-</details>
+Bạn vui lòng tạo ticket giúp VNG Cloud và cung cấp thông tin IP server và địa chỉ mail cần reverse dns.
 
-<details>
+### \[vServer] Hỗ trợ support tăng quota
 
-<summary>[vServer] Tôi muốn Reverse DNS từ IP 61.28.X.X sang mail.công ty thì làm thế nào</summary>
+Bạn vui lòng tạo ticket cần hỗ trợ tăng quota và nội dung cần tăng quota nhiêu.
 
-Bạn vui lòng tạo ticket giúp VNG Cloud và cung cấp thông tin IP server và địa chỉ mail cần reverse dns nha
-
-</details>
-
-<details>
-
-<summary>[vServer] Hỗ trợ support tăng quota</summary>
-
-Bạn vui lòng tạo ticket cần hỗ trợ tăng quota và nội dung cần tăng quota nhiêu nhé.
-
-</details>
-
-<details>
-
-<summary>[vServer] Hỗ trợ xem ram, cpu, network</summary>
+### \[vServer] Hỗ trợ xem ram, cpu, network
 
 Hiện tại VNG Cloud có dịch vụ vMonitor đang ở bản beta dùng thử miễn phí có thể monitor các thông số đó. Bạn có thể truy cập vào [trang chủ vServer](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), và xem thông số Ram, Cpu, Network tại trang chi tiết Server/ Tab Monitor hoặc có thể xem trực tiếp [trang chủ vMonitor](https://hcm-3.console.vngcloud.vn/vmonitor/dashboard).
 
-</details>
+### \[vServer] Tôi muốn giữ wanip cũ để cho server mới thì phải làm như thế nào?
 
-<details>
+Wan IP khi xóa đi sẽ không thể lấy lại được. Nếu Bạn muốn giữ wanip thì cần phải detach wanip đó ra sau đó thì attach vào server cần sử dụng.
 
-<summary>[vServer] Tôi muốn giữ wanip cũ để cho server mới thì phải làm như thế nào</summary>
-
-Wan IP khi xóa đi sẽ không thể lấy lại được. Nếu Bạn muốn giữ wanip thì cần phải detach wanip đó ra sau đó thì attach vào server cần sử dụng
-
-</details>
-
-<details>
-
-<summary>[vServer] vServer có giới hạn băng thông (bandwidth, lưu lượng) không? Sử dụng quá băng thông có hiện tượng gì không?</summary>
+### \[vServer] vServer có giới hạn băng thông (bandwidth, lưu lượng) không? Sử dụng quá băng thông có hiện tượng gì không?
 
 Hiện tại chúng tôi đang giới hạn băng thông ở mức 100mbps, nếu bạn muốn nâng lên thì vui lòng liên hệ nhân viên kinh doanh hoặc gởi yêu cầu tại trang [Hỗ trợ ](https://helpdesk.vngcloud.vn/)để chúng tôi có thể hỗ trợ bạn tăng bandwidth, lưu ý rằng việc tăng Bandwidth sẽ tốn thêm chi phí của bạn.
 
-</details>
+### \[vServer] Tôi muốn tăng quota security policy được không?
 
-<details>
+Hiện tại default security policy full 10 . Khách hàng muốn nâng lên thì chỉ hỗ trợ tối đa 20 security policy.
 
-<summary>[vServer] Tôi muốn tăng quota security policy</summary>
-
-Hiện tại default security policy full 10 . Kh muốn nâng lên thì chỉ hỗ trợ tối đa 20 security policy
-
-</details>
-
-<details>
-
-<summary>[vServer] Tôi muốn tạo một server có HDD với volume 1TB được không?</summary>
+### \[vServer] Tôi muốn tạo một server có HDD với volume 1TB được không?
 
 Khi bạn khởi tạo Server mới, chúng tôi sẽ mặc định tạo một phân vùng Root Volume có định dạng SSD và hỗ trợ mức dụng lượng thấp nhất 20GB và tối đa 3000GB, IOPS thấp nhất 200 và tối đa 10000. Vì vậy bạn có thể tùy chọn tạo Server với phân vùng Volume hỗ trợ dung lượng 1TB (1000GB), tuy nhiên cần lưu ý rằng chúng tôi không còn hỗ trợ định dạng HDD cho Volume.
 
-</details>
+### \[vServer] Tôi có thể add bao nhiêu volume trên một server ?
 
-<details>
+Hiện tại Bạn có thể add tối đa 2 volume trên một server . Phân vùng root add volume thấp nhất là 20GB và tối đa là 500GB. Phân vùng mới có thể add volume thấp nhất là 20GB và tối đa là 10TB.
 
-<summary>[vServer] Tôi có thể add bao nhiêu volume trên một server ?</summary>
-
-Hiện tại Bạn có thể add tối đa 2 volume trên một server . Phân vùng root add volume thấp nhất là 20GB và tối đa là 500GB. Phân vùng mới có thể add volume thấp nhất là 20GB và tối đa là 10TB
-
-</details>
-
-<details>
-
-<summary>[vServer] Tôi muốn ssh đến server bằng user root thì làm như thế nào?</summary>
+### \[vServer] Tôi muốn ssh đến server bằng user root thì làm như thế nào?
 
 Bạn vui lòng thao tác theo cú pháp sau :&#x20;
 
@@ -211,15 +173,9 @@ service sshd restart\
 service ssh restart\
 Sau đó dùng user root để kết nối với password, sshkey của user root"
 
-</details>
+### \[vServer] Vì sao server của tôi không thể copy/paste được thông qua giao diện remote desktop?
 
-<details>
-
-<summary>[vServer] Sao server của tôi không thể copy/paste được thông qua giao diện remote desktop</summary>
-
-Kiểm tra giúp xem giúp chế độ Clipboard ở Local Resources của chương trình Remote Desktop có bị mất dấu stick khôngNgoài ra nếu đã bật chế độ Clipboard ở Local Resources rồi mà vẫn bị nhờ Anh/Chị xử lý tiếp như sau:Mở Task Manager ở máy remote đến. Tắt tiến trình (process) rdpclip.exe và sau đó vẫn ở trong Task Manager chọn File -> New Task (Run) nhập rdpclip.exe vào. Bây giờ thử kết nối lại
-
-</details>
+Kiểm tra giúp xem giúp chế độ Clipboard ở Local Resources của chương trình Remote Desktop có bị mất dấu stick khôngNgoài ra nếu đã bật chế độ Clipboard ở Local Resources rồi mà vẫn bị nhờ Anh/Chị xử lý tiếp như sau:Mở Task Manager ở máy remote đến. Tắt tiến trình (process) rdpclip.exe và sau đó vẫn ở trong Task Manager chọn File -> New Task (Run) nhập rdpclip.exe vào. Bây giờ thử kết nối lại.
 
 <details>
 
