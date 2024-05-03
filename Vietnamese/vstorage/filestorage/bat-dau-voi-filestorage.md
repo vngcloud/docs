@@ -14,7 +14,7 @@ Trong phần này, chúng ta sẽ tìm hiểu về cách sử dụng và quản 
 * **Cách 1: Gửi yêu cầu sử dụng dịch vụ thông qua ticket**
   * Bước 1: Chọn dịch vụ File Storage tại trang chủ
     * Tại trang chủ [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/), tại mục **VNG Cloud Service**, chọn **vStorage**, sau đó chọn **File Storage.**
-    * Sau đó, người dùng sẽ được điều hướng đến trang gửi ticket (yêu cầu người dùng phải đăng nhập bằng tài khoản VNG, nếu chưa có tài khoản VNG Cloud, mời tham khảo cách 2)
+    * Sau đó, người dùng sẽ được điều hướng đến trang gửi ticket (yêu cầu người dùng phải đăng nhập bằng tài khoản VNG Cloud, nếu chưa có tài khoản VNG Cloud, mời tham khảo cách 2)
   * Bước 2: Điền thông tin bắt buộc bao gồm
     * Request Category: Hỗ trợ kỹ thuật (Technical Support)
     * Product: Sản phẩm khác (Other)
