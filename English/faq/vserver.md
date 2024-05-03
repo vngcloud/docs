@@ -42,11 +42,11 @@ Depending on the case, the server may need to be restarted to expand the capacit
 
 ### \[vServer] How do I extend the disk in Linux?&#x20;
 
-You can do as follows: Extend the disk on the VNG Cloud portal: Expand Volume with Linux operating system.
+You can do as follows: Extend the disk on the VNG Cloud portal: <mark style="color:blue;">Expand Volume with Linux operating system.</mark>
 
 ### \[vServer] How do I extend the disk in Windows?&#x20;
 
-Expand Volume with the Windows operating system. You can do as follows: Extend the disk on the VNG Cloud portal.
+<mark style="color:blue;">Expand Volume with the Windows operating system</mark>. You can do as follows: Extend the disk on the VNG Cloud portal.
 
 ### \[vServer] Do I need to reinstall the OS?&#x20;
 
@@ -70,7 +70,7 @@ To reboot the Server, please refer to your Server's Reboot page.
 
 ### \[vServer] I want to Reset the Server's password?&#x20;
 
-You cannot reset the password for your Server yourself. To reset the password for the Server, please send a request on our Support page.
+You cannot reset the password for your Server yourself. To reset the password for the Server, please send a request on our <mark style="color:blue;">Support page</mark>.
 
 ### \[vServer] I cannot allow some ports on Webmin vServer?&#x20;
 
@@ -102,13 +102,25 @@ When creating the Server, the admin user is disabled. If you want to use it, you
 
 ### \[vServer] Where is the history of payments or refunds after creating an Image?&#x20;
 
-To view the created Image information, please access the Image page.
+To view the created Image information, please access the <mark style="color:blue;">Image page</mark>.
 
-### \[vServer] Why can't I ping my VPS?&#x20;
+### \[vServer] Why can't I \[connect] to the \[ports] listening on my VPS?
+
+The security group (SEC) on the portal may not have allowed the port, or it may not have allowed the correct group applied to the server. The user's local firewall may not have allowed the port. Log in to the Portal. Go to Cloud Servers -> Click on the server to check the SEC -> Security Group section -> Select the applied Security group. By default, the outbound direction (Egress) has been allowed all, for inbound direction, just need to add the required port. In the Rule section, choose Custom TCP, Direction select Ingress to open for inbound direction, enter the port to be opened. CIDR defaults to all external ranges accessing.
+
+### \[vServer] How to enable \[root login]\[SSH] on VPS \[Linux]?&#x20;
+
+You need to change the SSH permissions in /etc/ssh/sshd\_config (PermitRootLogin yes), restart the SSH service. It is recommended that users avoid using root to minimize the risk of brute-force attacks, and stackops permissions are equivalent to root permissions.
+
+### \[vServer] How to access the server after creation?&#x20;
+
+Access through the open console on the newly created portal and enter the server information to access it. For Linux servers, you can use SSH, for Windows servers, you can use Remote Desktop.
+
+### \[vServer] Why can't I \[ping] my VPS?&#x20;
 
 Please access the portal's security group to allow the ICMP rule.
 
-### \[vServer] I can't SSH / Remote into the VPS?&#x20;
+### \[vServer] I can't \[SSH] / \[Remote] into the VPS?&#x20;
 
 You can check the service SSH on the portal, whether the port is allowed on the security group, whether telnet to the SSH port is working, and whether ping is working.
 
@@ -124,15 +136,15 @@ Please create a ticket for support to increase the quota and specify the amount 
 
 ### \[vServer] Support for viewing RAM, CPU, network?&#x20;
 
-Currently, VNG Cloud has a vMonitor service in beta version for free trial that can monitor these parameters. You can access it on the vServer homepage, and view RAM, CPU, Network information on the Server details page / Monitor tab or directly on the vMonitor homepage.
+Currently, VNG Cloud has a vMonitor service in beta version for free trial that can monitor these parameters. You can access it on the <mark style="color:blue;">vServer homepage</mark>, and view RAM, CPU, Network information on the Server details page / Monitor tab or directly on the <mark style="color:blue;">vMonitor homepage</mark>.
 
 ### \[vServer] How do I keep the old WANIP for the new server?&#x20;
 
 Once the WAN IP is deleted, it cannot be recovered. If you want to keep the WAN IP, you need to detach that WAN IP and then attach it to the server you want to use.
 
-### \[vServer] Does vServer have bandwidth limits?What happens if I exceed the bandwidth?&#x20;
+### \[vServer] Does vServer have bandwidth limits? What happens if I exceed the bandwidth?&#x20;
 
-Currently, we limit the bandwidth to 100mbps. If you want to increase it, please contact the sales staff or send a request on the Support page for us to assist you in increasing the bandwidth. Note that increasing bandwidth will incur additional costs.
+Currently, we limit the bandwidth to 100mbps. If you want to increase it, please contact the sales staff or send a request on the <mark style="color:blue;">Support page</mark> for us to assist you in increasing the bandwidth. Note that increasing bandwidth will incur additional costs.
 
 ### \[vServer] Can I increase the security policy quota?&#x20;
 
@@ -148,7 +160,21 @@ Currently, you can add a maximum of 2 volumes to a server. The root volume parti
 
 ### \[vServer] How do I SSH to the server as root user?&#x20;
 
-Please follow these steps: #Edit /etc/ssh/sshd\_config PermitRootLogin no -->> PermitRootLogin yes #Restart sshd to apply changes #For CentOS service sshd restart #For Ubuntu service ssh restart Then use the root user to connect with password, sshkey of root user.
+Please follow these steps:&#x20;
+
+\#Edit /etc/ssh/sshd\_config
+
+PermitRootLogin no -->> PermitRootLogin yes&#x20;
+
+\#Restart sshd to apply changes&#x20;
+
+\#For CentOS&#x20;
+
+service sshd restart&#x20;
+
+\#For Ubuntu service ssh restart&#x20;
+
+Then use the root user to connect with password, sshkey of root user.
 
 ### \[vServer] Why can't my server copy/paste through the remote desktop interface?&#x20;
 
@@ -157,6 +183,34 @@ Please check if the Clipboard mode in Local Resources of the Remote Desktop prog
 ### \[vServer] What is the maximum number of users that can simultaneously access a website?&#x20;
 
 The maximum number of users that can simultaneously access a website depends not only on the server's configuration but also on the application and optimization of the Customer's system.
+
+### \[vServer] Why can't I delete old Certificates and Keys, and how can I use new Certificates and Keys?&#x20;
+
+Currently, we do not support deleting old Certificates and Keys on the Load Balancer. If you want to use new Certificates and Keys, please upload the new Certificate on the <mark style="color:blue;">Certificate Homepage</mark> (without the same Certificate name as the old one), then go to the <mark style="color:blue;">Load Balancer Homepage</mark> to update the new Certificate details on the LB details page.
+
+### \[vServer] Why can't I telnet to port XYZ? Even though I have allowed the firewall, ACL on the policy group, and checked that port XYZ is listening.&#x20;
+
+When checking the LISTEN port, see if it is listening on 0:0:0:0: XYZ. Some services, when running on a port, only run on localhost 127.0.0.1, so they cannot be telneted from the outside (depending on the service's configuration, adjust this part).
+
+### \[vServer] Why does the system prompt "Please select a network" when I create a server to the payment stage?&#x20;
+
+When creating a Server at the VPC site, you need to create a Network first for the Server (Go to the Network section on the Portal, select Add, then enter the Name -> Create), and then create the Server (it will use that Network class).
+
+### \[vServer] How can I increase the HDD capacity but only get up to 200GB?&#x20;
+
+You can go to the Storage section on the Portal to add additional Volumes, up to a maximum of 10TB for your Server, following the instructions on the <mark style="color:blue;">Volume Size Increase</mark> page.
+
+### \[vServer] Is creating an image always full of all disks or only the C disk (or Root partition)?
+
+Creating an image means creating a full image of all disks/partitions.
+
+### \[vServer] I accidentally deleted all the rules in the Security Policy and now I can't ssh into the server?&#x20;
+
+Please go to the Default Group and re-add the default Ingress and Egress rules as <mark style="color:blue;">instructed</mark> to be able to ssh back into the server.
+
+### \[vServer] "vServer: I can't create additional security groups?"&#x20;
+
+By default, each user is only allowed to create up to 10 security groups. If you need to create more, please contact the technical support department or send an email to [https://helpdesk.vngcloud.vn/](https://helpdesk.vngcloud.vn/) for assistance, however, the maximum is 20 security groups.
 
 ### \[vServer] Why does the console interface keep reporting 'no map for 231' error?&#x20;
 
@@ -196,7 +250,15 @@ Please note that if you make a payment, do not close the browser to avoid errors
 
 ### \[vServer] How do I check the disk read speed IOPS on the server after upgrading?&#x20;
 
-You can refer to the following links for checking: For Linux operating system: [https://arstech.net/how-to-measure-disk-performance-iops-with-fio-in-linux/](https://arstech.net/how-to-measure-disk-performance-iops-with-fio-in-linux/) For Windows operating system: [https://blog.sqlterritory.com/2018/03/27/how-to-use-diskspd-to-check-io-subsystem-performance/](https://blog.sqlterritory.com/2018/03/27/how-to-use-diskspd-to-check-io-subsystem-performance/)
+You can refer to the following links for checking:
+
+&#x20;For Linux operating system:
+
+&#x20;[https://arstech.net/how-to-measure-disk-performance-iops-with-fio-in-linux/](https://arstech.net/how-to-measure-disk-performance-iops-with-fio-in-linux/)&#x20;
+
+For Windows operating system:
+
+&#x20;[https://blog.sqlterritory.com/2018/03/27/how-to-use-diskspd-to-check-io-subsystem-performance/](https://blog.sqlterritory.com/2018/03/27/how-to-use-diskspd-to-check-io-subsystem-performance/)
 
 ### \[vServer] How do I change the OTP receiving phone number?&#x20;
 
@@ -208,13 +270,16 @@ Attach, Detach twice, so the system recognizes it as sdc. Detach and Attach agai
 
 ### \[vServer] Mounting a volume into vServer Windows shows offline.&#x20;
 
-Method 1: Open disk management, right-click the offline disk and select online, then right-click to Initialize Disk, select GPT and click OK, then you can create a partition.&#x20;
+**Method 1:** Open disk management, right-click the offline disk and select online, then right-click to Initialize Disk, select GPT and click OK, then you can create a partition.&#x20;
 
-Method 2: Access Server Manager\File and Storage Services\Volumes\Disks and turn it online, then initialize the disk.
+**Method 2**: Access Server Manager\File and Storage Services\Volumes\Disks and turn it online, then initialize the disk.
 
 ### \[vServer] Information about chip and clock speed of High Performance vServer package.&#x20;
 
-Currently, we support 2 types of chip for High Performance vServer: Intel(R) Xeon(R) Gold 6242 CPU @ 2.80GHz Intel(R) Xeon(R) Gold 6226R CPU @ 2.90GHz
+Currently, we support 2 types of chip for High Performance vServer:&#x20;
+
+* Intel(R) Xeon(R) Gold 6242 CPU @ 2.80GHz&#x20;
+* Intel(R) Xeon(R) Gold 6226R CPU @ 2.90GHz
 
 ### \[vServer] Why does my Windows server RDP report account password has expired?&#x20;
 
@@ -226,5 +291,5 @@ Currently, VNG Cloud does not support splitting servers into another portal.
 
 ### \[vServer] Why does it report unable to access the server if I mistakenly switch farms?&#x20;
 
-You can try to access the server again. If the error still persists, please send a bug report to us through the Support page."
+You can try to access the server again. If the error still persists, please send a bug report to us through the <mark style="color:blue;">Support page</mark>.
 
