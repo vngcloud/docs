@@ -1,4 +1,8 @@
-# Tính năng của dịch vụ
+---
+description: Tính năng của dịch vụ
+---
+
+# Các tính năng của Ceph/Veeam
 
 1. **Sao Lưu và Phục Hồi Dữ Liệu:** Dịch vụ cung cấp khả năng sao lưu tự động và phục hồi dữ liệu nhanh chóng, giúp bảo vệ dữ liệu của bạn khỏi mất mát và tiêu thụ thời gian ít nhất khi có sự cố.
 2. **Hỗ Trợ Định Kỳ:** Cung cấp dịch vụ hỗ trợ định kỳ để giúp người dùng với các câu hỏi hoặc vấn đề kỹ thuật.

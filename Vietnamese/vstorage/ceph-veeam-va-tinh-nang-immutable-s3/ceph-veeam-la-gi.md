@@ -1,4 +1,8 @@
-# Giới thiệu dịch vụ
+---
+description: Giới thiệu dịch vụ
+---
+
+# Ceph/Veeam là gì?
 
 Kết hợp hệ thống Ceph với tính năng Immutable S3 và Veeam là một giải pháp mạnh mẽ cho việc bảo vệ và quản lý dữ liệu trong môi trường cloud của bạn. Ceph, Veeam và tính năng Immutable S3 đều là những công nghệ quan trọng trong lĩnh vực lưu trữ dữ liệu và sao lưu/phục hồi. Dưới đây là một giới thiệu về từng phần:
 
@@ -17,13 +21,5 @@ Kết hợp hệ thống Ceph với tính năng Immutable S3 và Veeam là một
 #### Tích Hợp Ceph/Veeam và Immutable S3
 
 Tích hợp giữa Ceph, Veeam và tính năng Immutable S3 tạo ra một giải pháp mạnh mẽ cho việc sao lưu, phục hồi và bảo vệ dữ liệu. Với việc sử dụng Veeam Backup & Replication để tạo và quản lý các công việc sao lưu và sử dụng tính năng Immutable S3 trên Ceph, người dùng có thể đảm bảo rằng dữ liệu của họ được bảo vệ chặt chẽ và không thể thay đổi trong môi trường lưu trữ đám mây. Điều này cung cấp sự yên tâm và tin cậy khi xử lý các tình huống khẩn cấp và giúp đảm bảo tính toàn vẹn của dữ liệu.
-
-
-
-
-
-
-
-
 
 Bằng cách tuân thủ các bước trong hướng dẫn này, bạn có thể tận dụng tối đa tính năng này để đảm bảo an toàn và tin cậy cho dữ liệu của mình.
