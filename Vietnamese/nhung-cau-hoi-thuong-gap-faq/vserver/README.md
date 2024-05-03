@@ -42,11 +42,11 @@ Tùy trường hợp khác nhau mà máy chủ có thể khởi động lại đ
 
 ### \[vServer]Làm sao để extend disk trong Linux ?
 
-Quý khách có thể thực hiện như sau : Thực hiện extend disk trên portal VNG Cloud:[ Mở rộng Volume với hệ điều hành Linux](../vserver/compute-hcm03-1a/volume/mo-rong-volume-voi-he-dieu-hanh-linux.md).
+Quý khách có thể thực hiện như sau : Thực hiện extend disk trên portal VNG Cloud:[ Mở rộng Volume với hệ điều hành Linux](../../vserver/compute-hcm03-1a/volume/mo-rong-volume-voi-he-dieu-hanh-linux.md).
 
 ### \[vServer]Làm sao để extend disk trong Window ?
 
-&#x20;[Mở rộng Volume với hệ điều hành Window](../vserver/compute-hcm03-1a/volume/mo-rong-volume-voi-he-dieu-hanh-window.md) Quý khách có thể thực hiện như sau :[ Thực hiện extend disk trên portal VNG Cloud](vserver.md#vserver-lam-sao-de-extend-disk-trong-window)
+&#x20;[Mở rộng Volume với hệ điều hành Window](../../vserver/compute-hcm03-1a/volume/mo-rong-volume-voi-he-dieu-hanh-window.md) Quý khách có thể thực hiện như sau :[ Thực hiện extend disk trên portal VNG Cloud](./#vserver-lam-sao-de-extend-disk-trong-window)
 
 ### \[vServer]Tôi cần reinstall lại OS?
 
@@ -195,7 +195,7 @@ Khi tạo Server ở site VPC mình phải tạo Network trước cho Server (V�
 
 ### \[vServer] Tôi muốn nâng dung lượng HDD mà sao chỉ được tối đa 200G ?
 
-Bạn có thể vào phần Storage trên Portal để add thêm Volume tối đa lên tới 10TB cho Server của mình theo hướng dẫn tại trang [Tăng kích thước Volume](../vserver/compute-hcm03-1a/volume/).
+Bạn có thể vào phần Storage trên Portal để add thêm Volume tối đa lên tới 10TB cho Server của mình theo hướng dẫn tại trang [Tăng kích thước Volume](../../vserver/compute-hcm03-1a/volume/).
 
 ### \[vServer] Create image là full các disk luôn hay chỉ có disk C (hay phân vùng Root)?
 
@@ -203,7 +203,7 @@ Create image là tạo full tất cả các disk/phân vùng.
 
 ### \[vServer] Tôi lỡ tay xóa hết các rule trong Security Policy và hiện tại không thể nào ssh vào được server ?
 
-Bạn vui lòng vào Group Default add lại các rule Ingress và Egress default theo như [hướng dẫn sau](../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md) giúp để có thể ssh vào lại server.
+Bạn vui lòng vào Group Default add lại các rule Ingress và Egress default theo như [hướng dẫn sau](../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md) giúp để có thể ssh vào lại server.
 
 ### \[vServer] "vServer: Tôi không tạo thêm được security group? "
 
