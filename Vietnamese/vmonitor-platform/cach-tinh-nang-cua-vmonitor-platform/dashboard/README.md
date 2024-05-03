@@ -59,16 +59,9 @@ Ví dụ minh họa
 2. Chọn thư mục **Dashboard.**
 3. Trên trang hiển thị danh sách **Dashboard** hiển thị, bạn có thể lọc hiển thị danh sách **Dashboard** theo các Loại Dashboard và ý nghĩa được mô tả tại các bảng bên dưới:
 
-| Loại Dashboard  | Mô tả                                                                                                |
-| --------------- | ---------------------------------------------------------------------------------------------------- |
-| All Dashboards  | Tất cả các dashboard đang có                                                                         |
-| All host        | Tất cả các Dashboard được tạo tự động bởi vMonitor Platform khi bạn thiết lập một Host.              |
-| All integration | Tất cả các Dashboard được tạo tự động bởi vMonitor Platform khi bạn thiết lập các ứng dụng tích hợp. |
-| All VNG Cloud   | Tất cả các Dashboard được tạo bởi hệ thống vMonitor Platform cho các Product của VNG Cloud           |
-| Created by you  | Các Dashboard được tạo bởi người sử dụng                                                             |
-| Favourite       | Các Dashboard được đánh dấu là yêu thích.                                                            |
+<table data-header-hidden><thead><tr><th width="194"></th><th></th></tr></thead><tbody><tr><td><strong>Loại Dashboard</strong></td><td><strong>Mô tả</strong></td></tr><tr><td>All Dashboards</td><td>Tất cả các dashboard đang có</td></tr><tr><td>All host</td><td>Tất cả các Dashboard được tạo tự động bởi vMonitor Platform khi bạn thiết lập một Host.</td></tr><tr><td>All integration</td><td>Tất cả các Dashboard được tạo tự động bởi vMonitor Platform khi bạn thiết lập các ứng dụng tích hợp.</td></tr><tr><td>All VNG Cloud</td><td>Tất cả các Dashboard được tạo bởi hệ thống vMonitor Platform cho các Product của VNG Cloud</td></tr><tr><td>Created by you</td><td>Các Dashboard được tạo bởi người sử dụng</td></tr><tr><td>Favourite</td><td>Các Dashboard được đánh dấu là yêu thích.</td></tr></tbody></table>
 
-Bạn có thể đánh dấu 1 **Dashboard tùy chỉnh** là Dashboard yêu thích cũng như bỏ chúng khỏi danh sách yêu thích bằng cách chọn ![](https://docs.vngcloud.vn/download/thumbnails/49650534/image2023-4-19\_16-34-4.png?version=1\&modificationDate=1690511245000\&api=v2)trên mỗi **Dashboard**. Khi biểu tượng trên Dashboard là ![](https://docs.vngcloud.vn/download/thumbnails/49650534/image2023-4-19\_16-34-47.png?version=1\&modificationDate=1690511245000\&api=v2)nghĩa là **Dashboard** đã được thêm vào danh sách yêu thích thành công và ngược lại khi biểu tượng trên **Dashboard** là ![](https://docs.vngcloud.vn/download/thumbnails/49650534/image2023-4-19\_16-35-17.png?version=1\&modificationDate=1690511246000\&api=v2)nghĩa là **Dashboard** chưa được thêm vào danh sách yêu thích thành công.
+Bạn có thể đánh dấu 1 **Dashboard tùy chỉnh** là Dashboard yêu thích cũng như bỏ chúng khỏi danh sách yêu thích bằng cách chọn <img src="../../../.gitbook/assets/image (47).png" alt="" data-size="line">trên mỗi **Dashboard**. Khi biểu tượng trên Dashboard là <img src="../../../.gitbook/assets/image (48).png" alt="" data-size="line">nghĩa là **Dashboard** đã được thêm vào danh sách yêu thích thành công và ngược lại khi biểu tượng trên **Dashboard** là <img src="../../../.gitbook/assets/image (49).png" alt="" data-size="line">nghĩa là **Dashboard** chưa được thêm vào danh sách yêu thích thành công.
 
 ***
 
@@ -78,7 +71,7 @@ Bạn có thể đánh dấu 1 **Dashboard tùy chỉnh** là Dashboard yêu th�
 
 1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
 2. Chọn thư mục **Dashboard.**
-3. Tại **Dashboard** mà bạn muốn thay đổi tên, chọn biểu tượng![](https://docs.vngcloud.vn/download/thumbnails/49650534/image2023-4-19\_15-31-39.png?version=1\&modificationDate=1690511755000\&api=v2).
+3. Tại **Dashboard** mà bạn muốn thay đổi tên, chọn biểu tượng<img src="../../../.gitbook/assets/image (50).png" alt="" data-size="line">
 4. Chọn **Rename**.
 5. Nhập **Dashboard name**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho Dashboard của bạn.&#x20;
 6. Chọn **Save**.
@@ -93,7 +86,7 @@ Bạn chỉ có thể thay đổi tên những Dashboard được tạo bởi ch
 
 1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
 2. Chọn thư mục **Dashboard.**
-3. Tại **Dashboard** mà bạn muốn tạo bản sao, chọn ![](https://docs.vngcloud.vn/download/thumbnails/49650534/image2023-4-19\_15-31-39.png?version=1\&modificationDate=1690511755000\&api=v2).
+3. Tại **Dashboard** mà bạn muốn tạo bản sao, chọn <img src="../../../.gitbook/assets/image (51).png" alt="" data-size="line">
 4. Chọn **Clone Dashboard.**
 5. Nhập **Dashboard name**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho Dashboard của bạn.&#x20;
 6. Chọn **Clone.**
@@ -108,7 +101,7 @@ Khi bạn không có nhu cầu sử dụng một **Dashboard** tùy chỉnh nữ
 
 1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
 2. Chọn thư mục **Dashboard.**
-3. Tại **Dashboard** mà bạn muốn xóa, chọn ![](https://docs.vngcloud.vn/download/thumbnails/49650534/image2023-4-19\_15-31-39.png?version=1\&modificationDate=1690511755000\&api=v2).
+3. Tại **Dashboard** mà bạn muốn xóa, chọn <img src="../../../.gitbook/assets/image (52).png" alt="" data-size="line">
 4. Chọn **Delete**.
 5. Tại màn hình xác nhận xóa Dashboard, chọn **Delete**.
 

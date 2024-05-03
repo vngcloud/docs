@@ -20,7 +20,7 @@ Cách tính chi phí cho mỗi gói log project được chúng tôi công khai 
 
 ***
 
-### Bước 2: Certificate và cài đặt Log Agent trên Server <a href="#batdauvoilogs-buoc2-certificatevacaidatlogagenttrenserver" id="batdauvoilogs-buoc2-certificatevacaidatlogagenttrenserver"></a>
+### Bước 2: Tải xuống Certificate và cài đặt Log Agent trên Server <a href="#batdauvoilogs-buoc2-certificatevacaidatlogagenttrenserver" id="batdauvoilogs-buoc2-certificatevacaidatlogagenttrenserver"></a>
 
 Sau khi mua Log Project, hệ thống sẽ tự động sinh ra certificate cho từng Log Project, certificate này dùng để xác thực Log Agent với hệ thống vMonitor Platform.
 
@@ -38,8 +38,10 @@ Xác định một loại agent mà mình muốn cài và làm theo hưỡng d�
 
 * Nếu sử dụng script chuẩn bị sẵn trong thư mục tải về, chạy lệnh
 
-| `sudo chmod +x filebeat.shsudo ./filebeat.sh <path-to-file-log>` |
-| ---------------------------------------------------------------- |
+```
+sudo chmod +x filebeat.sh
+sudo ./filebeat.sh <path-to-file-log>
+```
 
 ***
 
@@ -51,6 +53,6 @@ Xác định một loại agent mà mình muốn cài và làm theo hưỡng d�
 2. Chọn **Log search**.
 3. Chọn **Log project** nào bạn cần xem và phân tích logs. Vị trí chọn log project được hiển thị như hình bên dưới:
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49649934/image2023-8-2_16-5-28.png?version=1&#x26;modificationDate=1691483719000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;     4\. Tiếp tục thực hiện **tìm kiếm và phân tích logs**.
+4. Tiếp tục thực hiện **tìm kiếm và phân tích logs**.

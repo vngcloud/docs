@@ -10,14 +10,9 @@ Widget trong Dashboard là các biểu đồ được sử dụng để trực q
 
 Đối với mỗi loại dữ liệu metric và logs, chúng tôi hỗ trợ các loại biểu đồ như bên dưới. Chọn vào từng loại để xem chi tiết cách tạo một Widget tương ứng.
 
-| Loại dữ liệu | Loại graph hỗ trợ                                                                                                                                                                                                                                                                          |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Metric       | <ul><li><a href="line.md">Line</a></li><li><a href="stack-area.md">Stacked area</a></li><li><a href="number.md">Number</a></li></ul>                                                                                                                                                       |
-| Logs         | <ul><li><a href="line.md">Line</a></li><li><a href="bar.md">Bar</a></li><li><a href="stack-area.md">Stacked area</a></li><li><a href="pie.md">Pie</a></li><li><a href="number.md">Number</a></li><li><a href="table.md">Table</a></li><li><a href="log-search.md">Log search</a></li></ul> |
+<table><thead><tr><th width="226">Loại dữ liệu</th><th>Loại graph hỗ trợ</th></tr></thead><tbody><tr><td>Metric</td><td><ul><li><a href="line.md">Line</a></li><li><a href="stack-area.md">Stacked area</a></li><li><a href="number.md">Number</a></li></ul></td></tr><tr><td>Logs</td><td><ul><li><a href="line.md">Line</a></li><li><a href="bar.md">Bar</a></li><li><a href="stack-area.md">Stacked area</a></li><li><a href="pie.md">Pie</a></li><li><a href="number.md">Number</a></li><li><a href="table.md">Table</a></li><li><a href="log-search.md">Log search</a></li></ul></td></tr></tbody></table>
 
 ***
-
-###
 
 ### Chỉnh sửa Widget
 
@@ -26,12 +21,9 @@ Bạn đã khởi tạo một Widget trên một Dashboard. Hiện tại Widget 
 1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
 2. Chọn thư mục **Dashboard.**
 3. Chọn **Dashboard** chứa **Widget** mà bạn muốn chính sửa.
-4. Tại **Widget** mà bạn muốn chỉnh sửa, chọn <img src="http://docs.vngcloud.vn/download/thumbnails/59806957/image2023-4-19_11-4-15.png?version=1&#x26;modificationDate=1690513094000&#x26;api=v2" alt="" data-size="line">.&#x20;
+4. Tại **Widget** mà bạn muốn chỉnh sửa, chọn <img src="../../../../.gitbook/assets/image (53).png" alt="" data-size="line">
 5. Chỉnh sửa các thông số cho biểu đồ mà bạn mong muốn. Các thông số mà bạn có thể chỉnh sửa bao gồm: **Graph style (Loại biểu đồ)**, **Graph your data (Biểu đồ dữ liệu của bạn)**, **Fixed time range (Khung thời gian cố định)**, **Configure graph (Cấu hình thuộc tính biểu đồ).**Việc chỉnh sửa này tương tự như khi bạn thực hiện tạo mới một Widget.
 6. Chọn **Save.**
-
-\
-
 
 ***
 
@@ -42,7 +34,7 @@ Bạn đã khởi tạo một Widget trên một Dashboard. Hiện tại bạn k
 1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
 2. Chọn thư mục **Dashboard.**
 3. Chọn **Dashboard** chứa Widget mà bạn muốn xóa.
-4. Tại **Widget** mà bạn muốn xóa, chọn <img src="http://docs.vngcloud.vn/download/thumbnails/59806957/image2023-4-19_15-13-54.png?version=1&#x26;modificationDate=1690512974000&#x26;api=v2" alt="" data-size="line">.&#x20;
+4. Tại **Widget** mà bạn muốn xóa, chọn <img src="../../../../.gitbook/assets/image (54).png" alt="" data-size="line">
 5. Chọn **Delete**.
 6. Tại màn hình xác nhận xóa Widget, chọn **Delete**.
 
@@ -57,5 +49,5 @@ Widget được xóa khỏi Dashboard của bạn cũng như xóa khỏi hệ th
 1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
 2. Chọn thư mục **Dashboard.**
 3. Chọn **Dashboard** chứa Widget mà bạn muốn export thông tin.
-4. Tại **Widget** mà bạn muốn export thông tin, chọn <img src="http://docs.vngcloud.vn/download/thumbnails/59806957/image2023-7-28_10-4-39.png?version=1&#x26;modificationDate=1690513480000&#x26;api=v2" alt="" data-size="line">&#x20;
+4. Tại **Widget** mà bạn muốn export thông tin, chọn **Export Table.**
 5. Chọn **Export as CSV**.

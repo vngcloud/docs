@@ -4,29 +4,26 @@
 
 **Line chart** (biểu đồ đường) là một loại biểu đồ được sử dụng để thể hiện thông tin dữ liệu thay đổi theo thời gian. Line chart được tạo bằng cách vẽ một loạt các điểm và nối chúng với nhau bằng các đoạn thẳng.
 
-![](http://docs.vngcloud.vn/download/attachments/59806964/image2023-8-9\_14-12-26.png?version=1\&modificationDate=1691565147000\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Cấu hình biểu đồ
 
-![](http://docs.vngcloud.vn/download/attachments/59806964/image2023-8-1\_13-7-24.png?version=1\&modificationDate=1690870045000\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style&#x20;
 
-Đối với biểu đồ dạng line, tại mục này bạn chọn Style là ![](http://docs.vngcloud.vn/download/thumbnails/59806964/image2023-8-8\_17-23-3.png?version=1\&modificationDate=1691490183000\&api=v2)
+Đối với biểu đồ dạng line, tại mục này bạn chọn Style là&#x20;
 
-![](http://docs.vngcloud.vn/download/attachments/59806964/image2023-8-16\_9-50-26.png?version=1\&modificationDate=1692154225956\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
 Để thay đổi đường nét và độ mờ của line, bạn có thể điều chỉnh theo các option sau đây:
 
-| Parameter | Options             |
-| --------- | ------------------- |
-| Style     | Solid, Dot, Dash    |
-| Stroke    | Normal, Thin, Thick |
-
-\
-
+| **Parameter** | **Options**         |
+| ------------- | ------------------- |
+| Style         | Solid, Dot, Dash    |
+| Stroke        | Normal, Thin, Thick |
 
 #### 2. Graph your data
 
@@ -45,7 +42,7 @@ Khung thời gian cố định là một thuộc tính của Widget mà bạn c�
 
 Ở mỗi loại biểu đồ Line, Bar, Stacked Area, Pie bạn cần chọn thuộc tính biểu đồ tương ứng. Các thuộc tính được chúng tôi mô tả ở bảng bên dưới:&#x20;
 
-| Parameter         | Options                          |
+| **Parameter**     | **Options**                      |
 | ----------------- | -------------------------------- |
 | Graph legend      | Hidden, Top, Bottom, Left, Right |
 | Connect nulls     | Enable, Disable                  |

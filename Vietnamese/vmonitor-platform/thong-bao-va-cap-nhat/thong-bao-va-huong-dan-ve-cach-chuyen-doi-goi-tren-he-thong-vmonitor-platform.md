@@ -7,8 +7,6 @@ Từ ngày **29/02/2024**, hệ thống vMonitor Platform sẽ thay đổi cách
 {% hint style="info" %}
 **Chú ý:**&#x20;
 
-
-
 Sẽ có vài lưu ý khi thực hiện chuyển gói trên hệ thống vMonitor Platform mà bạn cần biết, bao gồm:&#x20;
 
 * Các **tier** hiện tại sẽ được chúng tôi chuyển đổi thành các **class**. Cụ thể:
@@ -33,19 +31,19 @@ Dưới đây là hướng dẫn chi tiết về cách chuyển đổi gói trê
 * **Bước 3:** Chọn **Usage & Quota** từ menu bên trái.
 * **Bước 4:** Lúc này, bạn sẽ thấy gợi ý chuyển đổi gói trên giao diện của bạn. Chọn **Convert.**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/73760776/image2024-2-28_21-22-1.png?version=1&#x26;modificationDate=1709130122000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 * **Bước 5:** Chúng tôi cung cấp bảng so sánh các thay đổi khi thực hiện Convert, bạn có thể chọn qua từng mục bao gồm: **Metric Quota, Log Project, Paid SMS Notification, Paid Email Notification, Synthetic Test Quota** để xem chi tiết thông số gói dịch vụ của từng loại trước khi thực hiện chuyển đổi. Bạn cần Xác nhận thông tin chuyển đổi và chọn **Convert**.
 
-Quá trình chuyển đổi gói sẽ diễn ra ngay lập tức. Các thông số về Quota/ Usage của sẽ được bảo toàn sau khi bạn thực hiện Convert. Lúc này, màn hình hiển thị theo định dạng gói cước mới như sau:&#x20;
+<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/73760776/image2024-2-28_21-21-4.png?version=1&#x26;modificationDate=1709130065000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+Quá trình chuyển đổi gói sẽ diễn ra ngay lập tức. Các thông số về Quota/ Usage của sẽ được bảo toàn sau khi bạn thực hiện Convert. Lúc này, màn hình hiển thị theo định dạng gói cước mới như sau:
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/73760776/image2024-2-28_21-45-12.png?version=1&#x26;modificationDate=1709131513000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 Trong ví dụ này, tôi đã mua gói Metric Quota, Log Project có tính phí nên khi chuyển đổi, tôi đã tự động được tặng thêm 200 SMS và 200 Email miễn phí trong vòng 6 tháng. Cụ thể:&#x20;
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/73760776/image2024-2-28_21-52-52.png?version=1&#x26;modificationDate=1709131973000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
 Sau khi đã chuyển đổi tài nguyên, bạn có thể tiếp tục thực hiện Tăng/ giảm kích thước, Gia hạn tài nguyên theo các hướng dẫn khác trong tài liệu này.
 

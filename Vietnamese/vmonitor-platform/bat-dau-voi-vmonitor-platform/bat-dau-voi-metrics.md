@@ -10,7 +10,7 @@ Thực hiện mua Metric Quota theo các bước bên dưới:
 2. Chọn **Quota & Usage**.
 3. Chọn **Buy metric quota.**
 4. Chọn **Class** mà bạn có nhu cầu sử dụng**.** Chúng tôi cung cấp cho bạn chọn 1 trong 2 class bao gồm: Basic, Pro.
-5. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Nếu bạn chọn class **Pro**, bạn có thể lựa chọn số lượng host mong muốn bằng cách kéo thả hoặc nhập con số resources bạn mong muốn tại ô Number of resources. dụng. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Metric Quota Class](../vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/metric-quota-class.md)
+5. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Nếu bạn chọn class **Pro**, bạn có thể lựa chọn số lượng host mong muốn bằng cách kéo thả hoặc nhập con số resources bạn mong muốn tại ô Number of resources. dụng. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Metric Quota Class](../vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/metric-quota-class.md).
 6. Chọn **Buy Metric Quota**.
 7. Chọn **Chu kỳ** nếu bạn là người dùng trả trước. Chúng tôi cung cấp các chu kỳ trả trước bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng.
 8. Chọn **Continue.**
@@ -22,13 +22,13 @@ Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai
 
 ### Bước 2: Khởi tạo Service Account <a href="#batdauvoimetrics-buoc2-khoitaoserviceaccount" id="batdauvoimetrics-buoc2-khoitaoserviceaccount"></a>
 
-**Tạo Service Account và gắn policy: vMonitorMetricPush để có đủ quyền đẩy Metric về vMonitor (Có thể bỏ qua bước này nếu đã tạo trước đó)**
+**Tạo Service Account và gắn policy: **<mark style="color:red;">**vMonitorMetricPush**</mark>** để có đủ quyền đẩy Metric về vMonitor (Có thể bỏ qua bước này nếu đã tạo trước đó)**
 
 Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts)
 
-* Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
-* Tìm và chọn **Policy:** **vMonitorMetricPush,** sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vMonitorMetricPush do VNG Cloud tạo ra chỉ chứa chính xác quyền đẩy metric về hệ thống
-* Sau khi tạo thành công bạn cần phải lưu lại Client\_ID và Secret\_Key để thực hiện bước tiếp theo
+1. Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account.
+2. Tìm và chọn **Policy:** **vMonitorMetricPush,** sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vMonitorMetricPush do VNG Cloud tạo ra chỉ chứa chính xác quyền đẩy metric về hệ thống.
+3. Sau khi tạo thành công bạn cần phải lưu lại Client\_ID và Secret\_Key để thực hiện bước tiếp theo
 
 ***
 
@@ -38,9 +38,9 @@ Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai
 
 Sau khi khởi tạo thành công Service Account và đã lưu trữ thông tin Client\_ID, Secret\_key, hãy tiếp tục:
 
-1. &#x20;Thay thế Client\_ID, Secret\_Key vào câu lệnh bên dưới và chạy trên server để cài đặt
+**Thay thế Client\_ID, Secret\_Key vào câu lệnh bên dưới và chạy trên server để cài đặt**
 
-Bạn sử dụng Client\_ID và Secret\_Key đã sao chép ở trên, thay thế theo thứ tự vào các trường **$IAM\_CLIENT\_ID** và **$IAM\_CLIENT\_SECRET** của câu lệnh bên dưới và chạy trên server cần được monitor, lưu ý bạn cần chạy với quyền **root user** của server (nếu không bạn phải thêm sudo ở trước câu lệnh)
+_Bạn sử dụng Client\_ID và Secret\_Key đã sao chép ở trên, thay thế theo thứ tự vào các trường **$IAM\_CLIENT\_ID** và **$IAM\_CLIENT\_SECRET** của câu lệnh bên dưới và chạy trên server cần được monitor, lưu ý bạn cần chạy với quyền **root user** của server (nếu không bạn phải thêm sudo ở trước câu lệnh)_
 
 ```
 VMONITOR_SITE=monitoring-agent.vngcloud.vn \
@@ -54,14 +54,15 @@ https://raw.githubusercontent.com/vngcloud/vmonitor-metrics-agent/main/install.s
 
 ### Bước 4: Xem thông tin Metric thông qua Dashboard <a href="#batdauvoimetrics-buoc4-xemthongtinmetricthongquadashboard" id="batdauvoimetrics-buoc4-xemthongtinmetricthongquadashboard"></a>
 
-Sau khi cài đặt Metric Agent theo hướng dẫn tại Bước 3: Cài đặt Metric Agent trên Server để đẩy metric về vMonitor Platform, chúng tôi sẽ tự động tạo **Dashboard mặc định** cho **Host** này. Để xem Dashboard mặc định này, hãy làm theo hướng dẫn bên dưới:&#x20;
+Sau khi cài đặt Metric Agent theo hướng dẫn tại **Bước 3: Cài đặt Metric Agent trên Server** để đẩy metric về vMonitor Platform, chúng tôi sẽ tự động tạo **Dashboard mặc định** cho **Host** này. Để xem Dashboard mặc định này, hãy làm theo hướng dẫn bên dưới:&#x20;
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Chọn **Infrastructure List/ Host.**
+
+<figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+
 2. Chọn tên **Hostname**. Ví dụ thiết bị **LAP15839** được thiết lập Metric Agent thành công tới hệ thống vMonitor Platform thì dashboard mặc định sẽ có tên: **LAP15839**, bạn chọn dashboard sẽ hiển thị như ảnh:
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49649936/image2023-8-8_15-27-21.png?version=1&#x26;modificationDate=1691483242000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49649936/image2023-4-19_10-19-49.png?version=1&#x26;modificationDate=1691483173000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
 Với Dashboard Mặc định này, bạn sẽ có thể xem được các thông tin metric mà chúng tôi đã vẽ trước cho bạn bao gồm các biểu đồ về thông tin CPU, Memory, Load Avg, Disk, Network. Cũng trên **Dashboard mặc định** này bạn không thể thêm widget hay tuỳ chỉnh dashboard. Để thực hiện thay đổi hay tùy chỉnh Dashboard, bạn cần tạo dashboard mới hoặc **Tạo bản sao** từ **Dashboard mặc định** này ra và Chỉnh sửa. Để tạo bản sao Dashboard, hãy làm theo hướng dẫn bên dưới:&#x20;
 
