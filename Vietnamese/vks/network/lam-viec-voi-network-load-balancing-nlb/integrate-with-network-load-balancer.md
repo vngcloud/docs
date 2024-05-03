@@ -220,7 +220,7 @@ spec:
 
 Lúc này, bạn hãy nhập thông tin Load Balancer ID vào annotation [vks.vngcloud.vn/load-balancer-id](http://vks.vngcloud.vn/load-balancer-id).
 
-* Ví dụ dưới đây là tập tin YAML mẫu để triển khai Nginx với External LoadBalancer sử dụng vngcloud-controller-manager để tự động expose dịch vụ tới internet bằng bộ cân bằng tải L4 sử dụng một NLB có sẵn với ID = lbp-ddbf9313-3f4c-471b-afd5-f6a3305159fc
+* Ví dụ dưới đây là tập tin YAML mẫu để triển khai Nginx với External LoadBalancer sử dụng vngcloud-controller-manager để tự động expose dịch vụ tới internet bằng bộ cân bằng tải L4 sử dụng một NLB có sẵn với ID = lb-2b9d8974-3760-4d60-8203-9671f229fb96
 
 ```
 apiVersion: apps/v1
@@ -250,6 +250,7 @@ metadata:
   annotations:
     vks.vngcloud.vn/load-balancer-name: "my-nginx-service"                  # Name of the load balancer
     vks.vngcloud.vn/package-id: "lbp-ddbf9313-3f4c-471b-afd5-f6a3305159fc"  # ID of the load balancer package
+    vks.vngcloud.vn/load-balancer-id: "lb-2b9d8974-3760-4d60-8203-9671f229fb96"
 spec:
   selector:
     app: nginx
