@@ -335,4 +335,5 @@
   * [View Partner Discount by Deal](partner-portal-user-guide/view-partner-discount-by-deal.md)
   * [View Customer Discount by Deal](partner-portal-user-guide/view-customer-discount-by-deal.md)
 * [Getting start with VNG Cloud account](getting-start-with-vng-cloud-account.md)
-* [FAQ](faq.md)
+* [FAQ](faq/README.md)
+  * [vServer](faq/vserver.md)
