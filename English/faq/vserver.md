@@ -42,11 +42,11 @@ Depending on the case, the server may need to be restarted to expand the capacit
 
 ### \[vServer] How do I extend the disk in Linux?&#x20;
 
-You can do as follows: Extend the disk on the VNG Cloud portal: <mark style="color:blue;">Expand Volume with Linux operating system.</mark>
+You can do as follows: Extend the disk on the VNG Cloud portal: [<mark style="color:blue;">Expand Volume with Linux operating system</mark>](../vserver/compute-hcm03-1a/volume/extend-volume.md)<mark style="color:blue;">.</mark>
 
 ### \[vServer] How do I extend the disk in Windows?&#x20;
 
-<mark style="color:blue;">Expand Volume with the Windows operating system</mark>. You can do as follows: Extend the disk on the VNG Cloud portal.
+[<mark style="color:blue;">Expand Volume with the Windows operating system</mark>](../vserver/compute-hcm03-1a/volume/extend-volume.md). You can do as follows: [Extend the disk on the VNG Cloud portal](vserver.md#vserver-how-do-i-extend-the-disk-in-windows).
 
 ### \[vServer] Do I need to reinstall the OS?&#x20;
 
@@ -70,7 +70,7 @@ To reboot the Server, please refer to your Server's Reboot page.
 
 ### \[vServer] I want to Reset the Server's password?&#x20;
 
-You cannot reset the password for your Server yourself. To reset the password for the Server, please send a request on our <mark style="color:blue;">Support page</mark>.
+You cannot reset the password for your Server yourself. To reset the password for the Server, please send a request on our [<mark style="color:blue;">Support page</mark>](https://helpdesk.vngcloud.vn/portal/en/home).
 
 ### \[vServer] I cannot allow some ports on Webmin vServer?&#x20;
 
@@ -102,7 +102,7 @@ When creating the Server, the admin user is disabled. If you want to use it, you
 
 ### \[vServer] Where is the history of payments or refunds after creating an Image?&#x20;
 
-To view the created Image information, please access the <mark style="color:blue;">Image page</mark>.
+To view the created Image information, please access the [<mark style="color:blue;">Image page</mark>](https://hcm-3.console.vngcloud.vn/vserver/block-store/images).
 
 ### \[vServer] Why can't I \[connect] to the \[ports] listening on my VPS?
 
@@ -136,7 +136,7 @@ Please create a ticket for support to increase the quota and specify the amount 
 
 ### \[vServer] Support for viewing RAM, CPU, network?&#x20;
 
-Currently, VNG Cloud has a vMonitor service in beta version for free trial that can monitor these parameters. You can access it on the <mark style="color:blue;">vServer homepage</mark>, and view RAM, CPU, Network information on the Server details page / Monitor tab or directly on the <mark style="color:blue;">vMonitor homepage</mark>.
+Currently, VNG Cloud has a vMonitor service in beta version for free trial that can monitor these parameters. You can access it on the [<mark style="color:blue;">vServer homepage</mark>](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), and view RAM, CPU, Network information on the Server details page / Monitor tab or directly on the [<mark style="color:blue;">vMonitor homepage</mark>](https://vmonitor.console.vngcloud.vn/dashboard).
 
 ### \[vServer] How do I keep the old WANIP for the new server?&#x20;
 
@@ -144,7 +144,7 @@ Once the WAN IP is deleted, it cannot be recovered. If you want to keep the WAN 
 
 ### \[vServer] Does vServer have bandwidth limits? What happens if I exceed the bandwidth?&#x20;
 
-Currently, we limit the bandwidth to 100mbps. If you want to increase it, please contact the sales staff or send a request on the <mark style="color:blue;">Support page</mark> for us to assist you in increasing the bandwidth. Note that increasing bandwidth will incur additional costs.
+Currently, we limit the bandwidth to 100mbps. If you want to increase it, please contact the sales staff or send a request on the [<mark style="color:blue;">Support page</mark>](https://helpdesk.vngcloud.vn/portal/en/home) for us to assist you in increasing the bandwidth. Note that increasing bandwidth will incur additional costs.
 
 ### \[vServer] Can I increase the security policy quota?&#x20;
 
@@ -186,7 +186,7 @@ The maximum number of users that can simultaneously access a website depends not
 
 ### \[vServer] Why can't I delete old Certificates and Keys, and how can I use new Certificates and Keys?&#x20;
 
-Currently, we do not support deleting old Certificates and Keys on the Load Balancer. If you want to use new Certificates and Keys, please upload the new Certificate on the <mark style="color:blue;">Certificate Homepage</mark> (without the same Certificate name as the old one), then go to the <mark style="color:blue;">Load Balancer Homepage</mark> to update the new Certificate details on the LB details page.
+Currently, we do not support deleting old Certificates and Keys on the Load Balancer. If you want to use new Certificates and Keys, please upload the new Certificate on the [<mark style="color:blue;">Certificate Homepage</mark>](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/certificate) (without the same Certificate name as the old one), then go to the [<mark style="color:blue;">Load Balancer Homepage</mark>](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb) to update the new Certificate details on the LB details page.
 
 ### \[vServer] Why can't I telnet to port XYZ? Even though I have allowed the firewall, ACL on the policy group, and checked that port XYZ is listening.&#x20;
 
@@ -198,7 +198,7 @@ When creating a Server at the VPC site, you need to create a Network first for t
 
 ### \[vServer] How can I increase the HDD capacity but only get up to 200GB?&#x20;
 
-You can go to the Storage section on the Portal to add additional Volumes, up to a maximum of 10TB for your Server, following the instructions on the <mark style="color:blue;">Volume Size Increase</mark> page.
+You can go to the Storage section on the Portal to add additional Volumes, up to a maximum of 10TB for your Server, following the instructions on the [<mark style="color:blue;">Volume Size Increase</mark>](../vserver/compute-hcm03-1a/volume/) page.
 
 ### \[vServer] Is creating an image always full of all disks or only the C disk (or Root partition)?
 
@@ -206,7 +206,7 @@ Creating an image means creating a full image of all disks/partitions.
 
 ### \[vServer] I accidentally deleted all the rules in the Security Policy and now I can't ssh into the server?&#x20;
 
-Please go to the Default Group and re-add the default Ingress and Egress rules as <mark style="color:blue;">instructed</mark> to be able to ssh back into the server.
+Please go to the Default Group and re-add the default Ingress and Egress rules as [<mark style="color:blue;">instructed</mark> ](../vserver/compute-hcm03-1a/security/ssh-key-key-pairs.md)to be able to ssh back into the server.
 
 ### \[vServer] "vServer: I can't create additional security groups?"&#x20;
 
@@ -291,5 +291,5 @@ Currently, VNG Cloud does not support splitting servers into another portal.
 
 ### \[vServer] Why does it report unable to access the server if I mistakenly switch farms?&#x20;
 
-You can try to access the server again. If the error still persists, please send a bug report to us through the <mark style="color:blue;">Support page</mark>.
+You can try to access the server again. If the error still persists, please send a bug report to us through the [<mark style="color:blue;">Support page</mark>](https://helpdesk.vngcloud.vn/portal/en/home).
 
