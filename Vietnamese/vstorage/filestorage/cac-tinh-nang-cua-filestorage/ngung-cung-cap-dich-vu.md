@@ -8,4 +8,6 @@
 
 Về phía người dùng dịch vụ/tài nguyên File Storage, nếu có nhu cầu tiếp tục sử dụng tài nguyên, cần khắc phục các lỗi dẫn đến việc ngừng cung cấp dịch vụ, bao gồm:
 
-* Hết hạn tài nguyên: Đối với trường hợp hết hạn tài nguyên dẫn đến bị ngừng dịch vụ, khách hàng vui lòng&#x20;
+* Hết hạn tài nguyên: Đối với trường hợp hết hạn tài nguyên dẫn đến bị ngừng dịch vụ, khách hàng vui lòng truy cập Trung tâm hỗ trợ VNG Cloud và tạo yêu cầu khôi phục tài nguyên [tại đây](https://helpdesk.vngcloud.vn/portal/en/newticket).
+
+**Lưu ý: Trường hợp tài nguyên bị ngừng dịch vụ quá 7 ngày, VNG Cloud sẽ tiến hành xóa tài nguyên vĩnh viễn, tài nguyên đã xóa vĩnh viễn sẽ không thể khôi phục lại được.**
