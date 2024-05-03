@@ -1,6 +1,6 @@
 # Mở rộng tài nguyên
 
-Trong quá trình sử dụng dịch vụ, VNG Cloud hỗ trợ người dùng mở rộng tài nguyên bằng cách mở rộng dung lượng sử dụng và Throughput. Làm theo hướng dẫn dưới đây để yêu cầu hỗ trợ:
+Trong quá trình sử dụng dịch vụ, VNG Cloud hỗ trợ người dùng mở rộng tài nguyên bằng cách mở rộng dung lượng sử dụng và thông lượng. Làm theo hướng dẫn dưới đây để yêu cầu hỗ trợ:
 
 **Bước 1: Người dùng gửi yêu cầu mở rộng tài nguyên đến đội ngũ hỗ trợ bằng việc gửi ticket:**
 
