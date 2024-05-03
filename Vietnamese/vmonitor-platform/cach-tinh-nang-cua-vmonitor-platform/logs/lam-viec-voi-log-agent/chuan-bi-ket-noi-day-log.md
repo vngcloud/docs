@@ -2,10 +2,7 @@
 
 #### Kết nối từ máy đẩy log tới hệ thống vMontior Platform.
 
-| **Nguồn**      | **Đích**                                                                                                                                                                                                                                           | **Port**  |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| IP máy đẩy log | <p>Dải subnet:<br>116.118.93.130/28, tức<br>116.118.93.128 -> 116.118.93.143</p>                                                                                                                                                                   | 10092 TCP |
-| IP máy đẩy log | <p>Domain:<br><a href="http://hcm01-loghub01.vngcloud.vn">hcm01-loghub01.vngcloud.vn</a> <a href="http://hcm02-loghub01.vngcloud.vn">hcm02-loghub01.vngcloud.vn</a> <a href="http://hcm03-loghub01.vngcloud.vn">hcm03-loghub01.vngcloud.vn</a></p> | 10092 TCP |
+<table data-header-hidden><thead><tr><th width="182"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Nguồn</strong></td><td><strong>Đích</strong></td><td><strong>Port</strong></td></tr><tr><td>IP máy đẩy log</td><td>Dải subnet:<br>116.118.93.130/28, tức<br>116.118.93.128 -> 116.118.93.143</td><td>10092 TCP</td></tr><tr><td>IP máy đẩy log</td><td>Domain:<br><a href="http://hcm01-loghub01.vngcloud.vn">hcm01-loghub01.vngcloud.vn</a> <a href="http://hcm02-loghub01.vngcloud.vn">hcm02-loghub01.vngcloud.vn</a> <a href="http://hcm03-loghub01.vngcloud.vn">hcm03-loghub01.vngcloud.vn</a></td><td>10092 TCP</td></tr></tbody></table>
 
 * Kết nối trên cần mở trong suốt quá trình agent đẩy log
 

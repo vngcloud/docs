@@ -11,16 +11,13 @@ Nếu bạn có nhu cầu lưu trữ dữ liệu log lâu dài hơn những th�
 5. Tại màn hình hiển thị thông tin **Log** **project**, tại tab **Archive**, chọn **Archive**.
 6. Nhập **Archive name** theo quy định của chúng tôi. **Tên Archive** phải dài từ 1 (tối thiểu) tới 63 (tối đa) ký tự. **Tên Archive** có thể bao gồm chữ cái in hoa, in thường (a-z, A-Z), chữ số (0-9) hoặc dấu gạch ngang. **Tên Archive** phải bắt đầu bởi một chữ cái và kết thúc bởi một chữ cái hoặc một chữ số.
 
-![](http://docs.vngcloud.vn/download/attachments/49650638/image2023-4-27\_9-50-52.png?version=1\&modificationDate=1682563852000\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
 
 7\. Nhập **Filter** cho log nếu bạn có nhu cầu chỉ đồng bộ những dữ liệu mà thoả mãn điều kiện này, còn không chúng tôi sẽ đồng bộ tất cả Log của Log Project đang chọn. Bạn có thể nhập điều kiện lọc cho log bằng một trong 2 cách: **Suggestion mode** hoặc **Editor mode**. Cách sử dụng 2 phương thức này và chuyển đổi qua lại giữa 2 phương thức đã được chúng tôi mô tả ở các tính năng bên trên, để biết thêm thông tin hãy xem tại [Log search](../../dashboard/widget/log-search.md).
 
 8\. Chọn **Destination**. Bạn có thể chọn 1 trong 2 nơi dữ liệu log được archive bao gồm: **vStorage container** hoặc **S3 compatible**.&#x20;
 
-\
-
-
-<figure><img src="http://docs.vngcloud.vn/download/attachments/49650638/image2023-4-27_9-55-51.png?version=1&#x26;modificationDate=1682564151000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (160).png" alt=""><figcaption></figcaption></figure>
 
 * **Select a vStorage container**
   * **My container**
