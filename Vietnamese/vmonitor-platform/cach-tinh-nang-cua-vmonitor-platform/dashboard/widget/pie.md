@@ -4,22 +4,19 @@
 
 **Pie chart** là một dạng biểu đồ hình tròn dùng để so sánh các giá trị (thường ở dạng phần trăm) với mức độ tổng thể. Mỗi phần trong biểu đồ biểu diễn số liệu cho một đối tượng nào đó, và có màu sắc hoặc ký hiệu khác nhau. Pie chart thường được dùng khi số lượng thành phân ít và bạn muốn tập trung vào sự khác biệt giữa các thành phần.&#x20;
 
-![](http://docs.vngcloud.vn/download/thumbnails/59806970/image2023-8-9\_14-31-56.png?version=1\&modificationDate=1691566317000\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Cấu hình biểu đồ
 
-<figure><img src="http://docs.vngcloud.vn/download/attachments/59806970/image2023-7-31_17-1-30.png?version=1&#x26;modificationDate=1690797691000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style&#x20;
 
-Đối với biểu đồ dạng pie, tại mục này bạn chọn Style là ![](http://docs.vngcloud.vn/download/thumbnails/59806970/image2023-8-9\_14-32-14.png?version=1\&modificationDate=1691566335000\&api=v2)
+Đối với biểu đồ dạng pie, tại mục này bạn chọn Style là **Pie**
 
-\
-
-
-![](http://docs.vngcloud.vn/download/attachments/59806970/image2023-8-9\_14-32-28.png?version=1\&modificationDate=1691566349000\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (66).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### 2. Graph your data
 
@@ -38,9 +35,9 @@ Khung thời gian cố định là một thuộc tính của Widget mà bạn c�
 
 Ở mỗi loại biểu đồ Line, Bar, Stacked Area, Pie bạn cần chọn thuộc tính biểu đồ tương ứng. Các thuộc tính được chúng tôi mô tả ở bảng bên dưới:&#x20;
 
-| Parameter    | Options                          |
-| ------------ | -------------------------------- |
-| Graph legend | Hidden, Top, Bottom, Left, Right |
-| Data Lable   | Enable/ Disable                  |
+| **Parameter** | **Options**                      |
+| ------------- | -------------------------------- |
+| Graph legend  | Hidden, Top, Bottom, Left, Right |
+| Data Lable    | Enable/ Disable                  |
 
 Chọn **Create** để tạo Widget, nếu có nhu cầu thay đổi tên widget thì bạn có thể thực hiện chỉnh sửa tại **Widget name**.

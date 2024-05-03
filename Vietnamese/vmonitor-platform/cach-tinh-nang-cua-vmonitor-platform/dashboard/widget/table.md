@@ -4,25 +4,19 @@
 
 Table chart với chỉ số tóm tắt là một loại biểu đồ thể hiện các số được tính toán từ một bộ dữ liệu, thay vì thể hiện các số gốc. Thông thường loại biểu đồ này nên được sử dụng khi bạn muốn nhóm dữ liệu theo thời gian sử dụng tính năng Group by.
 
-![](http://docs.vngcloud.vn/download/attachments/59806974/image2023-8-16\_10-49-2.png?version=1\&modificationDate=1692157742000\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Cấu hình biểu đồ
 
-![](http://docs.vngcloud.vn/download/attachments/59806974/image2023-8-1\_13-21-55.png?version=1\&modificationDate=1690870917000\&api=v2)
-
-\
-
+<figure><img src="../../../../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style&#x20;
 
-Đối với biểu đồ dạng table, tại mục này bạn chọn Style là ![](http://docs.vngcloud.vn/download/thumbnails/59806974/image2023-8-9\_14-38-44.png?version=1\&modificationDate=1691566725000\&api=v2)
+Đối với biểu đồ dạng table, tại mục này bạn chọn Style là **Table**
 
-\
-
-
-![](http://docs.vngcloud.vn/download/attachments/59806974/image2023-8-9\_14-39-0.png?version=1\&modificationDate=1691566741000\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (72).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### 2. Graph your data
 

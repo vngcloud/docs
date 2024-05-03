@@ -14,7 +14,7 @@
 
 #### 1. Choose graph style&#x20;
 
-Đối với biểu đồ dạng line, tại mục này bạn chọn Style là&#x20;
+Đối với biểu đồ dạng line, tại mục này bạn chọn Style là **Line**
 
 <figure><img src="../../../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 

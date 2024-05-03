@@ -4,21 +4,19 @@
 
 **Number chart** với chỉ số tóm tắt là một loại biểu đồ thể hiện các số được tính toán từ một bộ dữ liệu, thay vì thể hiện các số gốc.
 
-![](http://docs.vngcloud.vn/download/attachments/59806972/image2023-8-9\_14-35-7.png?version=1\&modificationDate=1691566508000\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Cấu hình biểu đồ
 
-<figure><img src="http://docs.vngcloud.vn/download/attachments/59806972/image2023-8-1_13-17-44.png?version=1&#x26;modificationDate=1690870665000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style&#x20;
 
-Đối với biểu đồ dạng number, tại mục này bạn chọn Style là ![](http://docs.vngcloud.vn/download/thumbnails/59806972/image2023-8-9\_14-35-24.png?version=1\&modificationDate=1691566524000\&api=v2)
+Đối với biểu đồ dạng number, tại mục này bạn chọn Style là **Number**
 
-
-
-![](http://docs.vngcloud.vn/download/attachments/59806972/image2023-8-9\_14-35-39.png?version=1\&modificationDate=1691566540000\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (69).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### 2. Graph your data
 

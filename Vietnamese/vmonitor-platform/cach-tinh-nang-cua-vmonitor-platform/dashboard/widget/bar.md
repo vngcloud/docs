@@ -4,22 +4,19 @@
 
 **Bar chart** (biểu đồ cột) là một loại biểu đồ được sử dụng để so sánh các giá trị của các nhóm hoặc các hạng mục khác nhau. Bar chart trong vMonitor Platform gồm nhiều thanh dọc, mỗi thanh thể hiện một giá trị của một nhóm hoặc một điểm dữ liệu.&#x20;
 
-![](http://docs.vngcloud.vn/download/attachments/59806966/image2023-8-9\_14-24-10.png?version=1\&modificationDate=1691565851000\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Cấu hình biểu đồ
 
-![](http://docs.vngcloud.vn/download/attachments/59806966/image2023-7-31\_16-34-53.png?version=1\&modificationDate=1690796095000\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style&#x20;
 
-Đối với biểu đồ dạng bar, tại mục này bạn chọn Style là ![](http://docs.vngcloud.vn/download/thumbnails/59806966/image2023-8-9\_14-24-37.png?version=1\&modificationDate=1691565878000\&api=v2)
+Đối với biểu đồ dạng bar, tại mục này bạn chọn Style là **Bar**
 
-![](http://docs.vngcloud.vn/download/attachments/59806966/image2023-8-9\_14-24-57.png?version=1\&modificationDate=1691565898000\&api=v2)
-
-\
-
+<figure><img src="../../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Graph your data
 
@@ -38,7 +35,7 @@ Khung thời gian cố định là một thuộc tính của Widget mà bạn c�
 
 Ở mỗi loại biểu đồ Line, Bar, Stacked Area, Pie bạn cần chọn thuộc tính biểu đồ tương ứng. Các thuộc tính được chúng tôi mô tả ở bảng bên dưới:&#x20;
 
-| Parameter         | Options                          |
+| **Parameter**     | **Options**                      |
 | ----------------- | -------------------------------- |
 | Graph legend      | Hidden, Top, Bottom, Left, Right |
 | Connect nulls     | Enable, Disable                  |
@@ -46,8 +43,5 @@ Khung thời gian cố định là một thuộc tính của Widget mà bạn c�
 | Y-axis scale type | Linear, Logarithmic              |
 | Y-axis Max value  | Custom value                     |
 | Y-axis Max value  | Custom value                     |
-
-\
-
 
 Chọn **Create** để tạo Widget, nếu có nhu cầu thay đổi tên widget thì bạn có thể thực hiện chỉnh sửa tại **Widget name**.

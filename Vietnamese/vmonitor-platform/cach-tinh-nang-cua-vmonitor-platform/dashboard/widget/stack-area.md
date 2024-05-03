@@ -4,22 +4,19 @@
 
 **Stacked area** (biểu đồ xếp chồng) là một loại biểu đồ thể hiện sự thay đổi của một giá trị theo thời gian thông qua các vùng được xếp chồng lên nhau. Stacked area thường bao gồm nhiều vùng và mỗi vùng có một màu sắc khác nhau. Chiều cao xếp chồng của đường trên cùng sẽ tương ứng với tổng giá giá trị khi cộng lại của tất cả các nhóm được xếp chồng.
 
-![](http://docs.vngcloud.vn/download/attachments/59806968/image2023-8-9\_14-28-42.png?version=1\&modificationDate=1691566122000\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Cấu hình biểu đồ
 
-![](http://docs.vngcloud.vn/download/attachments/59806968/image2023-7-31\_16-47-24.png?version=1\&modificationDate=1690796846000\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style&#x20;
 
-Đối với biểu đồ dạng stacked area, tại mục này bạn chọn Style là ![](http://docs.vngcloud.vn/download/thumbnails/59806968/image2023-8-9\_14-28-59.png?version=1\&modificationDate=1691566140000\&api=v2)
+Đối với biểu đồ dạng stacked area, tại mục này bạn chọn Style là **Stacked area**
 
-\
-
-
-![](http://docs.vngcloud.vn/download/attachments/59806968/image2023-8-9\_14-29-22.png?version=1\&modificationDate=1691566162000\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (63).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### 2. Graph your data
 
@@ -38,7 +35,7 @@ Khung thời gian cố định là một thuộc tính của Widget mà bạn c�
 
 Ở mỗi loại biểu đồ Line, Bar, Stacked Area, Pie bạn cần chọn thuộc tính biểu đồ tương ứng. Các thuộc tính được chúng tôi mô tả ở bảng bên dưới:&#x20;
 
-| Parameter         | Options                          |
+| **Parameter**     | **Options**                      |
 | ----------------- | -------------------------------- |
 | Graph legend      | Hidden, Top, Bottom, Left, Right |
 | Connect nulls     | Enable, Disable                  |
@@ -48,5 +45,3 @@ Khung thời gian cố định là một thuộc tính của Widget mà bạn c�
 | Y-axis Max value  | Custom value                     |
 
 Chọn **Create** để tạo Widget, nếu có nhu cầu thay đổi tên widget thì bạn có thể thực hiện chỉnh sửa tại **Widget name**.
-
-\
