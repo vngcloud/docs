@@ -19,4 +19,4 @@
 
 9\. Chọn **Create.**&#x20;
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59807035/image2023-8-14_15-8-24.png?version=1&#x26;modificationDate=1692000506000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (103).png" alt="" width="512"><figcaption></figcaption></figure>

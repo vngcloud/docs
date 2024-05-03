@@ -33,9 +33,6 @@ Sau khi bạn khởi tạo Email Notification Quota, bạn có thể xem thông 
 
 ***
 
-\
-
-
 ### Gia hạn Email Notification Quota
 
 Bạn đã khởi tạo Email notification quota với chu kỳ sử dụng ngắn hạn. Hiện tại nhu cầu giám sát của bạn thay đổi và bạn muốn tăng thêm chu kỳ sử dụng gói notification này. Để giải quyết vấn đề nêu trên, bạn có thể thay đổi chu kỳ lưu trữ thông qua tính năng **renew** mà chúng tôi cung cấp.

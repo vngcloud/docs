@@ -12,7 +12,4 @@
 8. Nhập mã **OTP** vào OTP. Mã OTP sẽ có hiệu lực trong vòng **120s**, sau 120s mã OTP này sẽ hết hiệu lực và không thể sử dụng để định danh số điện thoại. Bạn có thể chọn **Gửi lại OTP** để nhận mã mới sau đó tiếp tục nhập mã mới này để định danh.
 9. Chọn **Create.**
 
-\
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59807031/image2023-8-14_15-7-5.png?version=1&#x26;modificationDate=1692000428000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (100).png" alt="" width="511"><figcaption></figcaption></figure>

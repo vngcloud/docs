@@ -2,7 +2,7 @@
 
 Khi bạn tạo các vLB, hệ thống sẽ tự động thu thập các Metric và hiển thị ở tab Infrastructure List/vLB, giúp bạn có thể theo dõi được các vLB trên VNG Cloud hoàn toàn miễn phí
 
-<figure><img src="http://docs.vngcloud.vn/download/attachments/59803659/image2022-9-4_10-59-46.png?version=1&#x26;modificationDate=1686542986000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (148).png" alt=""><figcaption></figcaption></figure>
 
 Tại trang này ở mỗi vLB bạn sẽ thấy các thông tin như sau:
 
@@ -15,10 +15,13 @@ Tại trang này ở mỗi vLB bạn sẽ thấy các thông tin như sau:
 
 &#x20;Khi nhấn vào tên của vLB, bạn sẽ được chuyển sang trang Dashboard, và xem default dashboard của vLB này, quy tắc đặt tên dashboard của vLB sẽ là vLB-hostname-ID (lấy block thứ 3 của ID vLB)
 
-<figure><img src="http://docs.vngcloud.vn/download/attachments/59803659/image2022-9-4_11-1-54.png?version=1&#x26;modificationDate=1686542986000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="http://docs.vngcloud.vn/download/attachments/59803659/image2022-9-4_11-2-36.png?version=1&#x26;modificationDate=1686542986000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
 
-**Chú ý:** hệ thống vMonitor sẽ mất 1 khoảng thời gian trung bình 5-10 phút (có thể có trường hợp tệ nhất là 20 phút) để cập nhập vLB mới sau khi bạn tạo.
+{% hint style="info" %}
+**Chú ý:**
 
-Để xem danh sách metrics tương ứng của mỗi product này, hãy xem tại [Danh sách Metrics hỗ trợ](../danh-sach-metrics-ho-tro/).
+* Hệ thống vMonitor sẽ mất 1 khoảng thời gian trung bình 5-10 phút (có thể có trường hợp tệ nhất là 20 phút) để cập nhập vLB mới sau khi bạn tạo.
+* Để xem danh sách metrics tương ứng của mỗi product này, hãy xem tại [Danh sách Metrics hỗ trợ](../danh-sach-metrics-ho-tro/).
+{% endhint %}

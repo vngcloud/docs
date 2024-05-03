@@ -15,8 +15,10 @@
 
 8\. Chọn **Add header** nếu muốn thêm vùng nhập thông tin **Key**, **Value**.
 
-9\. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/59807037/image2023-7-31\_9-20-49.png?version=1\&modificationDate=1690770050000\&api=v2)nếu muốn xóa cặp **Key, Value** đã nhập.
+9\. Chọn **Xóa** nếu muốn xóa cặp **Key, Value** đã nhập.
 
 10\. Chọn **Create**.
+
+<figure><img src="../../../../.gitbook/assets/image (104).png" alt="" width="510"><figcaption></figcaption></figure>
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59807037/image2023-8-14_15-8-49.png?version=1&#x26;modificationDate=1692000532000&#x26;api=v2" alt=""><figcaption></figcaption></figure>

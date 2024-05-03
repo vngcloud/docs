@@ -2,9 +2,7 @@
 
 Khi bạn tạo các vStorage Project, hệ thống sẽ tự động thu thập các vStorage metric và hiển thị ở tab Infrastructure List/vStorage, giúp bạn có thể theo dõi được các vStorage Project trên VNG Cloud hoàn toàn miễn phí
 
-&#x20;
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59803669/image2023-2-16_10-38-36.png?version=1&#x26;modificationDate=1686543037000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (154).png" alt=""><figcaption></figcaption></figure>
 
 Tại trang này ở mỗi vStorage Project bạn sẽ thấy các thông tin như sau:
 
@@ -15,15 +13,15 @@ Tại trang này ở mỗi vStorage Project bạn sẽ thấy các thông tin nh
 
 &#x20;Khi nhấn vào tên của vStorage Project, bạn sẽ được chuyển sang trang Dashboard, và xem default dashboard của vStorage Project này, quy tắc đặt tên dashboard của vStorage sẽ là vStorage-Project\_Name-ID (lấy block thứ 3 của ID vStorage)
 
-\
+<figure><img src="../../../../.gitbook/assets/image (155).png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../../../../.gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59803669/image2023-2-16_10-30-48.png?version=1&#x26;modificationDate=1686543037000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+**Chú ý:**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59803669/image2023-2-16_10-31-40.png?version=1&#x26;modificationDate=1686543037000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-**Chú ý:** hệ thống vMonitor sẽ mất 1 khoảng thời gian trung bình 5-10 phút (có thể có trường hợp tệ nhất là 20 phút) để cập nhập vStorage Project mới sau khi bạn tạo.
-
-Để xem danh sách metrics tương ứng của mỗi product này, hãy xem tại [Danh sách Metrics hỗ trợ](../danh-sach-metrics-ho-tro/).
+* Hệ thống vMonitor sẽ mất 1 khoảng thời gian trung bình 5-10 phút (có thể có trường hợp tệ nhất là 20 phút) để cập nhập vStorage Project mới sau khi bạn tạo.
+* Để xem danh sách metrics tương ứng của mỗi product này, hãy xem tại [Danh sách Metrics hỗ trợ](../danh-sach-metrics-ho-tro/).
+{% endhint %}
 
 \

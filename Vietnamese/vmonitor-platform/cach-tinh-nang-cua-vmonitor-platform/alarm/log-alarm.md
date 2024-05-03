@@ -2,10 +2,7 @@
 
 Khi bạn tạo **Alarm** cho dữ liệu **logs**, trong phần **Set Alarm Conditions.** Các thành phần tạo nên câu lệnh truy vấn đối với dữ liệu logs bao gồm:&#x20;
 
-\
-
-
-<figure><img src="http://docs.vngcloud.vn/download/attachments/59807082/image2023-8-8_14-25-48.png?version=1&#x26;modificationDate=1691479548000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
 
 Trong đó
 
@@ -57,7 +54,3 @@ Save query: nơi bạn có thể chọn và tái sử dụng các query mà bạ
 ### 9. Time frame
 
 **Time frame**: khoảng thời gian mà dữ liệu sẽ được alarm đánh giá.
-
-Ví dụ ở đây chúng ta cần thiết lập cảnh báo là: Nếu trong timeframe: 1p mà có xuất hiện ít nhất 1 dòng Log có trường host:appserver của project: applog thì ta thiết lập như sau:
-
-![image2021-5-14\_18-41-18.png](https://docs.vngcloud.vn/download/attachments/31555733/image2021-5-14\_18-41-18.png?version=1\&modificationDate=1620992478000\&api=v2)

@@ -61,7 +61,7 @@ Bạn đã khởi tạo một Notification trên hệ thống của chúng tôi.
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Notification.**
-3. Tại notification mà bạn muốn chỉnh sửa, chọn ![](https://docs.vngcloud.vn/download/thumbnails/49650568/image2023-4-19\_11-4-15.png?version=1\&modificationDate=1690532290000\&api=v2).&#x20;
+3. Tại notification mà bạn muốn chỉnh sửa, chọn **Edit**.&#x20;
 4. Chỉnh sửa các thông số cho notification mà bạn mong muốn. Các thông số mà bạn có thể chỉnh sửa bao gồm: **Tên Notification**, Loại Notification, Địa chỉ Email, Số điện thoại, Đường dẫn Webhook, ... cũng như các thông số cấu hình chi tiết một notification.&#x20;
 
 Việc chỉnh sửa này tương tự như khi bạn thực hiện tạo mới một Notification theo hướng dẫn tại [Khởi tạo Notification](./#lamviecvoinotification-khoitaonotification).
@@ -78,7 +78,7 @@ Khi bạn không có nhu cầu sử dụng một notification nữa, bạn có t
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Notification.**
-3. Tại **Notification** mà bạn muốn xóa, chọn ![](https://docs.vngcloud.vn/download/thumbnails/49650568/image2023-4-21\_11-35-8.png?version=1\&modificationDate=1690532291000\&api=v2). Bạn có thể chọn một hoặc nhiều notification để thực hiện xóa ở bước này.
+3. Tại **Notification** mà bạn muốn xóa, chọn **Checkbox Chọn**. Bạn có thể chọn một hoặc nhiều notification để thực hiện xóa ở bước này.
 4. Chọn **Xóa**.
 5. Tại màn hình xác nhận xóa notification, chọn **Xóa**.
 

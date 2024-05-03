@@ -9,7 +9,7 @@
 ### Cài đặt Metric Agent trên Server
 
 * [Linux OS](cai-dat-metric-agent-tren-server/linux-os.md)
-* [Linux OS có giới hạn kết nối Internet](broken-reference)
+* [Linux OS có giới hạn kết nối Internet](cai-dat-metric-agent-tren-server/linux-os-co-gioi-han-ket-noi-internet.md)
 * [Window OS](cai-dat-metric-agent-tren-server/window-os.md)
 
 ***
@@ -32,21 +32,15 @@ Những server cài đặt Metric Agent được gọi là **Host**, sau khi cà
 
 Bạn có thể thiết lập nhiều host cùng đẩy metrics về hệ thống vMonitor Platform bằng cách sử dụng chung một Service Account khi thiết lập Metric Agent. Ví dụ 2 thiết bị LAPTOP-01 và LAPTOP-02 cùng sử dụng một Service Account để đẩy metrics về vMonitor Platform. Số lượng host này được chúng tôi định nghĩa là số lượng resource khi bạn thực hiện mua gói Metric quota.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49647460/image2021-5-17_16-51-2.png?version=1&#x26;modificationDate=1662263426000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
 Khi nhấn vào khung của 1 Host, sẽ có trang xem chi tiết về Host đó, quy tắc đặt tên dashboard cho Host sẽ là hostname của Host:
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49647460/image2021-5-17_16-53-59.png?version=1&#x26;modificationDate=1662263426000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 Đồng thời nhấn vào tên của Host, bạn sẽ được chuyển sang trang Dashboard, và xem default dashboard của Host này.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49647460/image2021-5-17_16-58-15.png?version=1&#x26;modificationDate=1662263426000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+**Chú ý:**
 
-\
-
-
-| Hệ thống vMonitor sẽ mất 1 khoảng thời gian trung bình dưới 1 phút (có thể có trường hợp tệ nhất 5 phút) để cập nhập Host mới sau khi bạn cài Metric Agent. |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+* Hệ thống vMonitor sẽ mất 1 khoảng thời gian trung bình dưới 1 phút (có thể có trường hợp tệ nhất 5 phút) để cập nhập Host mới sau khi bạn cài Metric Agent.
+{% endhint %}
 
 ***
 
@@ -57,9 +51,9 @@ Sau khi bạn thiết lập thành công Metric Agent trên Server, bạn có m�
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Infrastructure list.**
 3. Chọn **Host.**
-4. Chọn biểu tượng <img src="http://docs.vngcloud.vn/download/thumbnails/49650624/image2023-4-24_14-41-43.png?version=1&#x26;modificationDate=1690775292000&#x26;api=v2" alt="" data-size="line"> tại **host** bạn muốn thực hiện vô hiệu quá.
+4. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (112).png" alt="" data-size="line"> tại **host** bạn muốn thực hiện vô hiệu quá.
 5. Màn hình xác nhận vô hiệu quá host hiển thị, chọn **Disable**.
-6. Khi biểu tượng này trở thành <img src="http://docs.vngcloud.vn/download/thumbnails/49650624/image2023-4-24_14-42-53.png?version=1&#x26;modificationDate=1690775293000&#x26;api=v2" alt="" data-size="line">tức là host đã được vô hiệu hóa thành công.&#x20;
+6. Khi biểu tượng này trở thành <img src="../../../../.gitbook/assets/image (111).png" alt="" data-size="line">tức là host đã được vô hiệu hóa thành công.&#x20;
 
 Khi bạn thực hiện vô hiệu quá một host, cấu hình Metric Agent của host được giữ nguyên, bạn có thể bật lại việc giám sát host bất kỳ lúc nào theo hướng dẫn tại Khôi phục Host đang bị vô hiệu hóa. Kể từ thời điểm bạn thực hiện vô hiệu quá host, các thông số metric của host sẽ không được đẩy về và host sẽ không bị ghi nhận là 1 resource trên cấu hình gói Metric quota. Nếu bạn không có nhu cầu giám sát dữ liệu metric trên một host nào đó, bạn cũng có thể thực hiện xóa hoàn toàn thông tin host theo hướng dẫn tại Xóa thông tin Host đã thiết lập thành công Metric Agent.
 
@@ -72,9 +66,9 @@ Bạn đã vô hiệu quá một host trong việc đẩy metric về hệ thố
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Infrastructure list.**
 3. Chọn **Host.**
-4. Chọn biểu tượng <img src="http://docs.vngcloud.vn/download/thumbnails/49650624/image2023-4-24_14-50-32.png?version=1&#x26;modificationDate=1690775322000&#x26;api=v2" alt="" data-size="line"> tại **host** bạn muốn thực hiện khôi phục.
+4. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (111).png" alt="" data-size="line">tại **host** bạn muốn thực hiện khôi phục.
 5. Màn hình xác nhận khôi phục host hiển thị, chọn **Enable**.
-6. Khi biểu tượng này trở thành <img src="http://docs.vngcloud.vn/download/thumbnails/49650624/image2023-4-24_14-51-14.png?version=1&#x26;modificationDate=1690775322000&#x26;api=v2" alt="" data-size="line">tức là host đã được khôi phục thành công. Kể từ thời điểm này, metrics lại tiếp tục được đẩy về.
+6. Khi biểu tượng này trở thành <img src="../../../../.gitbook/assets/image (112).png" alt="" data-size="line">tức là host đã được khôi phục thành công. Kể từ thời điểm này, metrics lại tiếp tục được đẩy về.
 
 ***
 
@@ -85,10 +79,13 @@ Bạn đã vô hiệu quá một host trong việc đẩy metric về hệ thố
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Infrastructure list.**
 3. Chọn **Host.**
-4. Tại host bạn muốn thực hiện xóa, chọn ![](http://docs.vngcloud.vn/download/thumbnails/49650624/image2023-4-24\_15-56-35.png?version=1\&modificationDate=1690775532000\&api=v2).
+4. Tại host bạn muốn thực hiện xóa, chọn **Delete.**
 5. Tại màn hình xác nhận xóa host, chọn **Delete**.
 
-| Sau khi bạn bạn thực hiện xóa host thì host bị tạm thời bị xóa khỏi danh sách host của bạn tuy nhiên nếu bạn không gỡ Metric Agent trên Server, thì bản ghi monitor Host này sẽ tự động sinh ra ở lần kế tiếp. |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+{% hint style="info" %}
+**Chú ý:**
+
+* Sau khi bạn bạn thực hiện xóa host thì host bị tạm thời bị xóa khỏi danh sách host của bạn tuy nhiên nếu bạn không gỡ Metric Agent trên Server, thì bản ghi monitor Host này sẽ tự động sinh ra ở lần kế tiếp.
+{% endhint %}
 
 Để xem danh sách metrics tương ứng của mỗi product này, hãy xem tại [Danh sách Metrics hỗ trợ](../danh-sach-metrics-ho-tro/).

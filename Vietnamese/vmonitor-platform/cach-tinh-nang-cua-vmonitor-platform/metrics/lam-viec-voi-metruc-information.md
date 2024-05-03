@@ -13,7 +13,7 @@ Sau khi bạn thiết lập thành công Metric Agent trên Server hoặc bạn 
 * Metric Unit: đơn vị tính của metric tương ứng.
 * Description: mô tả ý nghĩa của metric tương ứng nếu có.
 
-![](http://docs.vngcloud.vn/download/attachments/49651188/image2023-7-31\_13-28-15.png?version=1\&modificationDate=1690784897000\&api=v2)
+<figure><img src="../../../.gitbook/assets/image (144).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -26,7 +26,7 @@ Sau khi bạn thiết lập thành công Metric Agent trên Server hoặc bạn 
 3. Chọn **Information**.
 4. Chọn vào **metric** mà bạn muốn xem thông tin chi tiết. Lúc này hệ thống sẽ hiển thị **Metadata** và **Dimensions** của metric này.&#x20;
 
-<figure><img src="http://docs.vngcloud.vn/download/attachments/49651188/image2023-7-31_13-29-43.png?version=1&#x26;modificationDate=1690784984000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (145).png" alt="" width="563"><figcaption></figcaption></figure>
 
 * Trong đó**:**
   * **Metadata**
@@ -47,7 +47,7 @@ Bạn có thể chỉnh sửa thông tin metadata của một metric bằng các
 2. Chọn thư mục **Metric.**
 3. Chọn **Information.**
 4. Chọn **Metric** bạn muốn chỉnh sửa.
-5. Tại **Metric** mà bạn muốn chỉnh sửa, chọn ![](http://docs.vngcloud.vn/download/thumbnails/49651188/image2023-4-24\_13-59-30.png?version=1\&modificationDate=1690785247000\&api=v2).&#x20;
+5. Tại **Metric** mà bạn muốn chỉnh sửa, chọn **Edit**
 6. Chỉnh sửa **metadata** của metric mà bạn mong muốn. **Metadata** của metric bao gồm:
 
 * **Unit**: đơn vị tính của metric, bạn có thể chọn 1 trong các giá trị %, bytes, bytes/s, MB, ms, nanosecond, requests/s, seconds, short, short/ms.
@@ -55,6 +55,6 @@ Bạn có thể chỉnh sửa thông tin metadata của một metric bằng các
 
 7\. Chọn **Save.**
 
-8\. Sau khi bạn đã thực hiện thay đổi thông số **metadata** của **metric**, bạn cũng có thể thực hiện khôi phục lại cấu hình **metadata** ban đầu bằng cách chọn ![](http://docs.vngcloud.vn/download/attachments/49651188/image2023-4-24\_13-59-30.png?version=1\&modificationDate=1690785247000\&api=v2)sau đó chọn ![](http://docs.vngcloud.vn/download/thumbnails/49651188/image2023-4-24\_14-20-7.png?version=1\&modificationDate=1690785248000\&api=v2)**.**
+8\. Sau khi bạn đã thực hiện thay đổi thông số **metadata** của **metric**, bạn cũng có thể thực hiện khôi phục lại cấu hình **metadata** ban đầu bằng cách chọn **Edit** sau đó chọn **Reset.**
 
 \

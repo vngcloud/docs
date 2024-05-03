@@ -43,7 +43,7 @@ Sau khi bạn khởi tạo Log project, bạn có thể xem thông tin gói Log 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục **Log**.
-4. Tại gói Log project đang sử dụng, chọn biểu tượng![](http://docs.vngcloud.vn/download/thumbnails/49649957/image2024-2-28\_22-39-59.png?version=1\&modificationDate=1709135240569\&api=v2) sau đó chọn **Renew**.
+4. Tại gói Log project đang sử dụng, chọn biểu tượng <img src="../../../.gitbook/assets/image (157).png" alt="" data-size="line">sau đó chọn **Renew**.
 5. Chọn **Renew**.
 6. Lựa chọn thời gian mong muốn gia hạn tại cột Period. Khi bạn thực hiện chọn period, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ sử dụng mới và tổng số tiền bạn cần chi trả cho việc gia hạn **gói Log project**.
 7. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Log project** sẽ được gia hạn.
@@ -59,7 +59,7 @@ Cách tính chi phí gia hạn cho mỗi gói Log project được chúng tôi c
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục Log.
-4. Tại gói Log project đang sử dụng, chọn biểu tượng![](http://docs.vngcloud.vn/download/thumbnails/49649957/image2024-2-28\_22-39-59.png?version=1\&modificationDate=1709135240569\&api=v2) sau đó chọn **Resize**.
+4. Tại gói Log project đang sử dụng, chọn biểu tượng <img src="../../../.gitbook/assets/image (158).png" alt="" data-size="line">sau đó chọn **Resize**.
 5. Chọn **Log project class** mới mà bạn muốn nâng cấp. Nếu gói log project của bạn đang ở class Basic thì bạn có thể nâng cấp nó lên class Pro. Nếu gói log project của bạn đang ở gói Pro thì bạn có thể nâng cấp nó lên cấu hình cao hơn trong cùng class.&#x20;
 6. Chọn **Resize.**
 7. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Log project** sẽ được tăng hạn mức.
@@ -83,5 +83,3 @@ Nếu bạn không có nhu cầu sử dụng gói Log project đã tạo, chúng
 Sau khi bạn bạn thực hiện xóa gói Log project thì gói Log project bị xóa sẽ biến mất khỏi danh sách gói Log project của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](../../cach-tinh-phi.md).&#x20;
 
 <mark style="color:red;">Do hành động xóa Log project tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.</mark>&#x20;
-
-\

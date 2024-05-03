@@ -8,6 +8,7 @@ Infrastructure Host là nơi sẽ liệt kê tất cả Resource mà vMonitor Pl
 * vServer: là các vServer của VNG Cloud
 * vLB: là các vLB của VNG Cloud
 * vDB: là các vDB của VNG Cloud
+* vStorage: là các storage project của VNG Cloud
 
 ***
 

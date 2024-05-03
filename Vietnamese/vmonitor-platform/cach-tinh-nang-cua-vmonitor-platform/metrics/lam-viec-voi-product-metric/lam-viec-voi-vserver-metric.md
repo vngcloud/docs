@@ -2,7 +2,7 @@
 
 Khi bạn tạo các vServer, hệ thống sẽ tự động thu thập các Metric cơ bản và hiển thị ở tab Infrastructure List/ vServer, giúp bạn có thể theo dõi được các vServer trên VNG Cloud hoàn toàn miễn phí, thông tin monitor các vServer được vMonitor lấy thông qua lớp hypervisor nên một số các metric như Memory Usage sẽ có thể không chính xác và không có metric Disk Usage, để có được các Metric này và đầy đủ hơn bạn sẽ cần sử dụng Metric Agent và cài vào các vServer như hướng dẫn tại [Làm việc với Metric Agent](../lam-viec-voi-metric-agent/).
 
-<figure><img src="http://docs.vngcloud.vn/download/attachments/59803654/image2022-9-4_10-54-43.png?version=1&#x26;modificationDate=1686542939000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
 
 Tại trang này ở mỗi vServer bạn sẽ thấy các thông tin như sau:
 
@@ -15,10 +15,12 @@ Tại trang này ở mỗi vServer bạn sẽ thấy các thông tin như sau:
 
 &#x20;Khi nhấn vào tên của vServer, bạn sẽ được chuyển sang trang Dashboard, và xem default dashboard của vServer này, quy tắc đặt tên dashboard của vServer sẽ là vServer-hostname-ID (lấy block thứ 3 của ID vServer)
 
-<figure><img src="http://docs.vngcloud.vn/download/attachments/59803654/image2022-9-4_10-58-18.png?version=1&#x26;modificationDate=1686542940000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (147).png" alt=""><figcaption></figcaption></figure>
 
-**Chú ý:** hệ thống vMonitor sẽ mất 1 khoảng thời gian trung bình 5-10 phút (có thể có trường hợp tệ nhất là 20 phút) để cập nhập vServer mới sau khi bạn tạo.
+{% hint style="info" %}
+**Chú ý:**
 
-Để xem danh sách metrics tương ứng của mỗi product này, hãy xem tại [Danh sách Metrics hỗ trợ](../danh-sach-metrics-ho-tro/).
-
-Để xem danh sách số liệu tương ứng của từng sản phẩm này, vui lòng xem tại Danh sách số liệu được hỗ trợ.
+* Hệ thống vMonitor sẽ mất 1 khoảng thời gian trung bình 5-10 phút (có thể có trường hợp tệ nhất là 20 phút) để cập nhập vServer mới sau khi bạn tạo.
+* Để xem danh sách metrics tương ứng của mỗi product này, hãy xem tại [Danh sách Metrics hỗ trợ](../danh-sach-metrics-ho-tro/).
+* Để xem danh sách số liệu tương ứng của từng sản phẩm này, vui lòng xem tại Danh sách số liệu được hỗ trợ.
+{% endhint %}
