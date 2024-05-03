@@ -177,145 +177,75 @@ Sau đó dùng user root để kết nối với password, sshkey của user roo
 
 Kiểm tra giúp xem giúp chế độ Clipboard ở Local Resources của chương trình Remote Desktop có bị mất dấu stick khôngNgoài ra nếu đã bật chế độ Clipboard ở Local Resources rồi mà vẫn bị nhờ Anh/Chị xử lý tiếp như sau:Mở Task Manager ở máy remote đến. Tắt tiến trình (process) rdpclip.exe và sau đó vẫn ở trong Task Manager chọn File -> New Task (Run) nhập rdpclip.exe vào. Bây giờ thử kết nối lại.
 
-<details>
+### \[vServer] Số lượng user tối đa có thể truy cập cùng lúc vào website là bao nhiêu?
 
-<summary>[vServer] số lượng user tối đa có thể truy cập cùng lúc vào website là bao nhiêu</summary>
+Số lượng user tối đa có thể truy cập cùng lúc vào website ngoài phụ thuộc vào cấu hình của server sẽ còn phụ thuộc vào ứng dụng và việc tối ưu hệ thống của Khách Hàng.
 
-Số lượng user tối đa có thể truy cập cùng lúc vào website ngoài phụ thuộc vào cấu hình của server sẽ còn phụ thuộc vào ứng dụng và việc tối ưu hệ thống của Khách Hàng
-
-</details>
-
-<details>
-
-<summary>[vServer] Tại sao tôi không xóa được Certificate và Key cũ, giờ tôi muốn dùng Certificate và Key mới thì làm thế nào ?</summary>
+### \[vServer] Tại sao tôi không xóa được Certificate và Key cũ, giờ tôi muốn dùng Certificate và Key mới thì làm thế nào ?
 
 Hiện tại chúng tôi không hỗ trợ xóa Certificate, Key cũ trên Load balancer. Nếu bạn muốn dùng Certificate, Key mới xin vui lòng thực hiện tải lên Certificate mới tại [Trang chủ Certificate](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/certificate) (Không trùng name Certificate, Key cũ), sau đó vào [Trang chủ Load balancer ](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)để update lại Certificate mới tại trang chi tiết LB.
 
-</details>
+### \[vServer] Tại sao tôi không telnet được port XYZ ? Mặc dù tôi đã allow firewall, ACL trên policy group và check status Port XYZ đã listen.
 
-<details>
+Khi check phần LISTEN port này xem đã listen trên 0:0:0:0: XYZ chưa. Do một số service khi chạy port chỉ chạy trên localhost 127.0.0.1 nên không thể telnet được từ bên ngoài ( Tùy vào service chạy vào config của service đó chỉnh lại phần này).
 
-<summary>[vServer] Tại sao tôi không telnet được port XYZ mặc dù tôi đã allow firewall, ACL trên policy group và check status Port XYZ đã listen</summary>
-
-Khi check phần LISTEN port này xem đã listen trên 0:0:0:0: XYZ chưa. Do một số service khi chạy port chỉ chạy trên localhost 127.0.0.1 nên không thể telnet được từ bên ngoài ( Tùy vào service chạy vào config của service đó chỉnh lại phần này)
-
-</details>
-
-<details>
-
-<summary>[vServer] Tại sao khi tôi tạo server tới phần thanh toán hệ thống báo : Please select a network ?</summary>
+### \[vServer] Tại sao khi tôi tạo server tới phần thanh toán hệ thống báo : Please select a network ?
 
 Khi tạo Server ở site VPC mình phải tạo Network trước cho Server (Vào phần Network trên Portal chọn Add rồi nhập Name -> Create) rồi sau đó mới tạo Server được (sẽ sử dụng lớp Network đó).
 
-</details>
-
-<details>
-
-<summary>[vServer] Tôi muốn nâng dung lượng HDD mà sao chỉ được tối đa 200G ?</summary>
+### \[vServer] Tôi muốn nâng dung lượng HDD mà sao chỉ được tối đa 200G ?
 
 Bạn có thể vào phần Storage trên Portal để add thêm Volume tối đa lên tới 10TB cho Server của mình theo hướng dẫn tại trang [Tăng kích thước Volume](../../vserver/compute-hcm03-1a/volume/).
 
-</details>
-
-<details>
-
-<summary>[vServer] Create image là full các disk luôn hay chỉ có disk C ( or phân vùng Root ) thôi</summary>
+### \[vServer] Create image là full các disk luôn hay chỉ có disk C (hay phân vùng Root)?
 
 Create image là tạo full tất cả các disk/phân vùng.
 
-</details>
-
-<details>
-
-<summary>[vServer] Tôi lỡ tay xóa hết các rule trong Security Policy và hiện tại không thể nào ssh vào được server ?</summary>
+### \[vServer] Tôi lỡ tay xóa hết các rule trong Security Policy và hiện tại không thể nào ssh vào được server ?
 
 Bạn vui lòng vào Group Default add lại các rule Ingress và Egress default theo như [hướng dẫn sau](../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md) giúp để có thể ssh vào lại server.
 
-</details>
-
-<details>
-
-<summary>[vServer] "vServer: Tôi không tạo thêm được security group? "</summary>
+### \[vServer] "vServer: Tôi không tạo thêm được security group? "
 
 Mặc định 1 user chỉ được phép tạo tối đa 10 security group. Nếu bạn có nhu cầu tạo thêm vui lòng liên hệ bộ phận hỗ trợ kĩ thuật hoặc gửi mail vào [https://helpdesk.vngcloud.vn/](https://helpdesk.vngcloud.vn/) để được hỗ trợ, tuy nhiên tối đa là 20 sercurity group.
 
-</details>
-
-<details>
-
-<summary>[vServer] Tại sao giao diện console khi đăng nhập cứ báo lỗi no map for 231?</summary>
+### \[vServer] Tại sao giao diện console khi đăng nhập cứ báo lỗi no map for 231?
 
 Bạn có thể tắt unikey sau đó tắt giao diện console và mở lại để nhập password.
 
-</details>
-
-<details>
-
-<summary>[vServer] "Sự khác nhau giữa General v1 Instances và High Performance v2 Instances? Tại sao giá tiền lại chênh nhau "</summary>
+### \[vServer] "Sự khác nhau giữa General v1 Instances và High Performance v2 Instances? Tại sao giá tiền lại chênh nhau "
 
 Hiện chúng tôi không còn phân biệt General và High Performance, mà sẽ chỉ có các Flavor với cấu hình khác nhau.
 
-</details>
-
-<details>
-
-<summary>[vServer] Tôi có thể tạo bao nhiêu snapshot trên 1 volume .</summary>
+### \[vServer] Tôi có thể tạo bao nhiêu snapshot trên 1 volume .
 
 Hiện tại tính năng Snapshot đã bị bỏ, thay vào đó có thể sử dụng Backup Server để thực hiện sao lưu lại Volume.
 
-</details>
-
-<details>
-
-<summary>[vServer] Thời gian create 1 image mất khoảng bao lâu?</summary>
+### \[vServer] Thời gian create 1 image mất khoảng bao lâu?
 
 Thời gian này phụ thuộc vào size của volume, size volume càng lớn thì thời gian khởi tạo Image càng lâu.
 
-</details>
-
-<details>
-
-<summary>[vServer] IOPS có thể nâng lên tối đa bao nhiêu?</summary>
+### \[vServer] IOPS có thể nâng lên tối đa bao nhiêu?
 
 Chúng tôi cho phép bạn nâng tối đa IOPS trong mức từ 200 đến 10000.
 
-</details>
-
-<details>
-
-<summary>[vServer] Tôi có thể add bao nhiêu volume trên một server ?</summary>
+### \[vServer] Tôi có thể add bao nhiêu volume trên một server ?
 
 Hiện tại Bạn có thể thêm tối đa 2 volume trên một server. Phân vùng root volume có thể chọn mức dung lượng thấp nhất là 20GB và tối đa là 3000GB. Phân vùng Data volume có thể chọn mức dung lượng thấp nhất là 20GB và tối đa là 4000.
 
-</details>
-
-<details>
-
-<summary>[vServer] Hiện Remote Desktop chỉ có 2 user truy cập được, nếu user thứ 3 truy cập sẽ văng 2 user đang hoạt động , có cách nào để có thể hơn 2 user không ?</summary>
+### \[vServer] Hiện Remote Desktop chỉ có 2 user truy cập được, nếu user thứ 3 truy cập sẽ văng 2 user đang hoạt động , có cách nào để có thể hơn 2 user không ?
 
 Bạn có thể làm theo hướng dẫn sau: [https://support.managed.com/kb/a1816/how-to-enable-disable-multiple-rdp-sessions-in-windows-2012.aspx](https://support.managed.com/kb/a1816/how-to-enable-disable-multiple-rdp-sessions-in-windows-2012.aspx).
 
-</details>
-
-<details>
-
-<summary>[vServer] Mình muốn rollback server thì phải làm thế nào, do server bị dính virus ?</summary>
+### \[vServer] Mình muốn rollback server thì phải làm thế nào, do server bị dính virus?
 
 Bạn có thể sử dụng tính năng Backup Server trên trang chủ của chúng tôi để thực hiện Rollback Server.
 
-</details>
-
-<details>
-
-<summary>[vServer] Tại sao tôi thanh toán gia hạn server trên portal qua zalopay nhưng đã trừ tiền mà tài khoản vẫn chưa được gia hạn</summary>
+### \[vServer] Tại sao tôi thanh toán gia hạn server trên portal qua zalopay nhưng đã trừ tiền mà tài khoản vẫn chưa được gia hạn?
 
 Bạn lưu ý nếu có thanh toán thì không tắt browser để tránh trường hợp bị lỗi.
 
-</details>
-
-<details>
-
-<summary>[vServer] Tôi muốn kiểm tra tốc độ đọc đĩa IOPS trên server sau khi nâng cấp như thế nào</summary>
+### \[vServer] Tôi muốn kiểm tra tốc độ đọc đĩa IOPS trên server sau khi nâng cấp như thế nào?
 
 Bạn có thể tham khảo link hướng dẫn kiểm tra:
 
@@ -324,66 +254,34 @@ Bạn có thể tham khảo link hướng dẫn kiểm tra:
 Đối với hệ điều hành Window :\
 [https://blog.sqlterritory.com/2018/03/27/how-to-use-diskspd-to-check-io-subsystem-performance/](https://blog.sqlterritory.com/2018/03/27/how-to-use-diskspd-to-check-io-subsystem-performance/)
 
-</details>
-
-<details>
-
-<summary>[vServer]Tôi muốn change thông tin số điện thoại nhận OTP như thế nào</summary>
+### \[vServer]Tôi muốn change thông tin số điện thoại nhận OTP như thế nào?
 
 Bạn có thể đăng nhập vào portal và chọn thay đổi số điện thoại: [https://register.vngcloud.vn/changephonenumber?hl=vi](https://register.vngcloud.vn/changephonenumber?hl=vi)
 
-</details>
-
-<details>
-
-<summary>[vServer] Mount volume vào vServer hiển thị sdc còn trên web portal hiển thị sdb</summary>
+### \[vServer] Mount volume vào vServer hiển thị sdc còn trên web portal hiển thị sdb.
 
 Attach, Detech 2 lần nên hệ thống nhận Sdc. Detach Attach lần nữa thì là sdd. Nếu muốn trả lại sdb : detach volume -> reboot -> attach.
 
-</details>
-
-<details>
-
-<summary>[vServer] Mount volume vào vServer Windows hiển thị offline</summary>
+### \[vServer] Mount volume vào vServer Windows hiển thị offline
 
 **Cách 1** :Mở disk management, phải chuột đĩa offlime và chọn online cho disk đó, sau đó phải chuột chọn Initialized Disk, chọn GPT và nhấn OK, sau đó có thể tạo phân vùng.\
-**Cách 2**: Truy cập vào Server Manager\File and Storage Services\Volumes\Disks và bật online lên và khởi tạo ổ đĩa
+**Cách 2**: Truy cập vào Server Manager\File and Storage Services\Volumes\Disks và bật online lên và khởi tạo ổ đĩa.
 
-</details>
-
-<details>
-
-<summary>[vServer] Thông tin chip và xung nhịp gói High Perfomance vServer</summary>
-
-
+### \[vServer] Thông tin chip và xung nhịp gói High Perfomance vServer
 
 Hiện chúng tôi hỗ trợ 2 loại chip High Performance vServer bao gồm:
 
 * Intel(R) Xeon(R) Gold 6242 CPU @ 2.80GHz
 * Intel(R) Xeon(R) Gold 6226R CPU @ 2.90GHz
 
-</details>
-
-<details>
-
-<summary>[vServer] Tại sao server window của tôi RDP thì lại báo account password has expired?</summary>
+### \[vServer] Tại sao server window của tôi RDP thì lại báo account password has expired?
 
 Bạn vui lòng truy cập vào giao diện console để change password sau đó mới có thể sử dụng RDP
 
-</details>
-
-<details>
-
-<summary>[vServer] Tách vServer ra tài khoản portal khác</summary>
+### \[vServer] Tách vServer ra tài khoản portal khác như thế nào?
 
 Hiện tại VNG Cloud không hỗ trợ tách server sang portal khác
 
-</details>
-
-<details>
-
-<summary>[vServer] Tại sao tôi lỡ chuyển nhầm farm thì báo lỗi không thể truy cập vào server nữa</summary>
+### \[vServer] Tại sao tôi lỡ chuyển nhầm farm thì báo lỗi không thể truy cập vào server nữa?
 
 Bạn có thể thử truy cập lại Server. Trường hợp vẫn báo lỗi, vui lòng gởi yêu cầu báo lỗi cho chúng tôi tại trang [Hỗ trợ](https://helpdesk.vngcloud.vn/).
-
-</details>
