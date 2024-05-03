@@ -42,7 +42,7 @@ Tùy trường hợp khác nhau mà máy chủ có thể khởi động lại đ
 
 ### \[vServer]Làm sao để extend disk trong Linux ?
 
-Quý khách có thể thực hiện như sau : Thực hiện extend disk trên portal VNG Cloud: [Mở rộng Volume với hệ điều hành Linux](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59804637\&src=contextnavpagetreemode).
+Quý khách có thể thực hiện như sau : Thực hiện extend disk trên portal VNG Cloud:[ Mở rộng Volume với hệ điều hành Linux](../../vserver/compute-hcm03-1a/volume/mo-rong-volume-voi-he-dieu-hanh-linux.md).
 
 ### \[vServer]Làm sao để extend disk trong Window ?
 
