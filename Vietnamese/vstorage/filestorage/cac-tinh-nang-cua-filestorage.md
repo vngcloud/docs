@@ -24,11 +24,5 @@ Trong giai đoạn Beta, quản lý hạ tầng lưu trữ sẽ được chuyể
 
 
 
-| Tiêu chí đánh giá          | Giai đoạn Alpha | Giai đoạn Beta  |
-| -------------------------- | --------------- | --------------- |
-| Quản lý bởi                | VNG Cloud       | Người dùng      |
-| Giao thức hỗ trợ           | NFS, SMB        | NFS, SMB, CIFS  |
-| Hệ điều hành               | Window và Linux | Window và Linux |
-| Phân quyền quản lý lưu trữ | Không hỗ trợ    | Có hỗ trợ       |
-|                            |                 |                 |
-|                            |                 |                 |
+<table><thead><tr><th width="315">Tiêu chí đánh giá</th><th>Giai đoạn Alpha</th><th>Giai đoạn Beta</th></tr></thead><tbody><tr><td>Quản lý bởi</td><td>VNG Cloud</td><td>Người dùng</td></tr><tr><td>Giao thức hỗ trợ</td><td>NFS, SMB</td><td>NFS, SMB, CIFS</td></tr><tr><td>Chia sẻ cho nhiều máy chủ</td><td>Có</td><td>Có</td></tr><tr><td>Giới hạn IP kết nối</td><td>Có</td><td>Có</td></tr><tr><td>Hệ điều hành</td><td>Window và Linux</td><td>Window và Linux</td></tr><tr><td>Phân quyền quản lý lưu trữ</td><td>Không</td><td>Có</td></tr><tr><td>Mở rộng dung lượng không gây gián đoạn</td><td>Có</td><td>Có</td></tr><tr><td>Sao lưu và khôi phục</td><td>Có</td><td>Có</td></tr><tr><td>Giám sát liên tục bởi</td><td>VNG Cloud</td><td>Người dùng</td></tr><tr><td>Hiệu suất đọc, ghi dữ liệu</td><td>N/A</td><td>N/A</td></tr><tr><td>Throughput</td><td>200MB/s</td><td>N/A</td></tr><tr><td>Cấp lưu trữ (Storage tier)</td><td>SSD</td><td>N/A</td></tr><tr><td>Hỗ trợ</td><td>Điện thoại, ticket, email 24/7</td><td>Điện thoại, ticket, email 24/7</td></tr></tbody></table>
+
