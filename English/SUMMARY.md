@@ -337,3 +337,7 @@
 * [Getting start with VNG Cloud account](getting-start-with-vng-cloud-account.md)
 * [FAQ](faq/README.md)
   * [vServer](faq/vserver.md)
+  * [vStorage](faq/vstorage.md)
+  * [vCDN](faq/vcdn.md)
+  * [vDB](faq/vdb.md)
+  * [NTP server](faq/ntp-server.md)
