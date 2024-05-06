@@ -6,7 +6,7 @@ Bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều tín
 
 **Tính năng mới:**
 
-* **Hỗ trợ tính năng Whitelist:** VKS cho phép tạo Private Node Group với chỉ Private IP đồng thời cho phép IP nào kết nối tới Cluster thông qua tính năng Whitelist IP.
+* **Hỗ trợ tính năng Whitelist:** VKS cho phép tạo Private Node Group với chỉ Private IP đồng thời cho phép IP nào kết nối tới Cluster thông qua tính năng Whitelist IP. Chi tiết tham khảo thêm tại [Whitelist](../clusters/whitelist.md).
 
 **Cải tiến:**
 
