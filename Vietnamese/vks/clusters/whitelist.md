@@ -2,7 +2,7 @@
 
 ### **Tổng quan**
 
-Tính năng Whitelist IP trên chế độ Private Node Group của VKS cho phép bạn chỉ cho phép các địa chỉ IP cụ thể kết nối đến các node trong Private Node Group của mình. Điều này giúp tăng cường bảo mật cho các ứng dụng và dữ liệu nhạy cảm bằng cách hạn chế truy cập từ các nguồn không xác định.
+Tính năng Whitelist IP trên chế độ Private Node Group của VKS cho phép bạn chỉ cho phép các địa chỉ IP cụ thể kết nối đến Cluster của bạn. Điều này giúp tăng cường bảo mật cho các ứng dụng và dữ liệu nhạy cảm bằng cách hạn chế truy cập từ các nguồn không xác định.
 
 **Lợi ích**
 
@@ -10,38 +10,27 @@ Tính năng Whitelist IP trên chế độ Private Node Group của VKS cho phé
 * **Giảm thiểu rủi ro:** Bằng cách hạn chế truy cập vào các node nhạy cảm, Whitelist IP giúp giảm thiểu rủi ro lây lan vi phạm dữ liệu sang các phần khác của mạng của bạn.
 * **Kiểm soát tốt hơn:** Whitelist IP cho phép bạn kiểm soát chặt chẽ quyền truy cập vào các node của mình, đảm bảo chỉ những người dùng và ứng dụng được ủy quyền mới có thể truy cập.
 
-**Cách sử dụng**
+{% hint style="info" %}
+**Chú ý:**&#x20;
+
+* Whitelist IP chỉ hoạt động khi tất cả các Node Group trong một Cluster đều sử dụng chế độ Private Node Group. Lúc này, bạn có thể sử dụng tính năng Chỉnh sửa Whitelist theo hướng dẫn bên dưới.
+* Nếu Cluster của bạn có bất kỳ Node Group nào ở chế độ Public Node Group, việc thiết lập Whitelist IP sẽ không khả thi.
+{% endhint %}
+
+***
+
+### Chỉnh sửa Whitelist
 
 Để sử dụng tính năng Whitelist IP trên chế độ Private Node Group, bạn cần thực hiện các bước sau:
 
-1. **Tạo Whitelist IP:**
-   * Truy cập trang quản trị VKS.
-   * Chọn Private Node Group mà bạn muốn cấu hình Whitelist IP.
-   * Nhấp vào tab "Whitelist IP".
-   * Nhập địa chỉ IP mà bạn muốn cho phép truy cập vào nhóm.
-   * Nhấp vào nút "Thêm".
-2. **Xóa Whitelist IP:**
-   * Truy cập trang quản trị VKS.
-   * Chọn Private Node Group mà bạn muốn cấu hình Whitelist IP.
-   * Nhấp vào tab "Whitelist IP".
-   * Chọn địa chỉ IP mà bạn muốn xóa khỏi Whitelist.
-   * Nhấp vào nút "Xóa".
+**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
 
-**Lưu ý:**
+**Bước 2:** Tại màn hình **Overview**, chọn menu **Kubernetes Cluster.**
 
-* Whitelist IP chỉ hoạt động với các node có Private IP.
-* Bạn cần đảm bảo rằng tất cả các node trong Private Node Group đều có thể kết nối với nhau.
-* Whitelist IP có thể ảnh hưởng đến hiệu suất của ứng dụng của bạn. Bạn nên thử nghiệm cẩn thận trước khi triển khai trong môi trường sản xuất.
+**Bước 3:** Chọn biểu tượng <img src="https://docs-admin.vngcloud.vn/download/thumbnails/73762015/image2024-4-16_15-51-55.png?version=1&#x26;modificationDate=1713262579000&#x26;api=v2" alt="" data-size="line">và chọn **Edit Whitelist** hoặc chọn biểu tượng **Edit** khi xem chi tiết một Cluster để thực hiện thêm Whitelist cho Cluster của bạn.
 
-**Tài liệu tham khảo**
+**Bước 4:** Lúc này, màn hình **Edit Whitelist** hiển thị, bạn có thể nhập địa chỉ IP mà bạn muốn cho phép truy cập vào Cluster sau đó chọn **Add**.&#x20;
 
-* Tài liệu VKS về Private Node Group \[đã xoá URL không hợp lệ]
-* Blog bài viết về Whitelist IP \[đã xoá URL không hợp lệ]
+**Bước 5:** Lặp lại bước 4 nếu bạn muốn thêm nhiều **Whitelist IP** cho Cluster của bạn.
 
-**Hỗ trợ**
-
-Nếu bạn gặp bất kỳ vấn đề nào khi sử dụng tính năng Whitelist IP, vui lòng liên hệ với bộ phận hỗ trợ của VKS.
-
-**Kết luận**
-
-Whitelist IP là một tính năng mạnh mẽ có thể giúp bạn tăng cường bảo mật cho các ứng dụng và dữ liệu nhạy cảm trên Private Node Group của bạn. Tuy nhiên, điều quan trọng là phải sử dụng tính năng này một cách cẩn thận và cân nhắc tác động đến hiệu suất ứng dụng của bạn.
+**Bước 6:** Chọn **Save** để lưu thông tin hoặc **Cancel** để hủy bỏ việc lưu các thông số này.
