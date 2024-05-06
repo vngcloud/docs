@@ -6,7 +6,7 @@ The latest update for VKS is now available, bringing a variety of new features a
 
 **New Features:**
 
-* **Whitelist:** VKS now enables the creation of Private Node Groups with only Private IPs, while also allowing specific IPs to connect to the cluster through the Whitelist IP feature. For more details, refer to&#x20;
+* **Whitelist:** VKS now enables the creation of Private Node Groups with only Private IPs, while also allowing specific IPs to connect to the cluster through the Whitelist IP feature. For more details, refer to [Whitelist](../clusters/whitelist.md).
 
 **Enhancements:**
 
