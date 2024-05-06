@@ -99,4 +99,5 @@ For Silver/Archive storage classes, request fees are incurred when you interact 
 * POST: Sending metadata information, object content (data) to the server. For example, uploading a file to the server.
 * PUT: Overwriting all information of the object with what is sent to the server. For example, overwriting the content of an object previously uploaded to the server.
 * DELETE: Deleting the object from the server. For example, deleting an object previously uploaded to vStorage.&#x20;
-* You can also refer to our billing guide at Manage Invoices, Expenses & Resources on VNG Cloud for more details.
+
+You can also refer to our billing guide at Manage Invoices, Expenses & Resources on VNG Cloud for more details.
