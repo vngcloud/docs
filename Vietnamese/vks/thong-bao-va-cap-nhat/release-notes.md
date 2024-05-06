@@ -1,6 +1,6 @@
 # Release notes
 
-\[<mark style="color:green;">**Feature**</mark>] May 03, 2024
+## \[<mark style="color:green;">**Feature**</mark>] May 03, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
 
 Bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều tính năng và cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
 
@@ -17,7 +17,7 @@ Nếu bạn gặp bất kỳ vấn đề nào sau khi cập nhật, vui lòng li
 
 ***
 
-\[<mark style="color:green;">**Feature**</mark>] April 17, 2024
+## \[<mark style="color:green;">**Feature**</mark>] April 17, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
 
 **Chúng tôi vô cùng hân hạnh giới thiệu bản cập nhật mới cho dịch vụ VKS, mang đến cho bạn trải nghiệm quản lý Kubernetes mạnh mẽ và hiệu quả hơn bao giờ hết!**
 
