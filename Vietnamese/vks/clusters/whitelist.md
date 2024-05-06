@@ -31,6 +31,6 @@ Tính năng Whitelist IP trên chế độ Private Node Group của VKS cho phé
 
 **Bước 4:** Lúc này, màn hình **Edit Whitelist** hiển thị, bạn có thể nhập địa chỉ IP mà bạn muốn cho phép truy cập vào Cluster sau đó chọn **Add**.&#x20;
 
-**Bước 5:** Lặp lại bước 4 nếu bạn muốn thêm nhiều **Whitelist IP** cho Cluster của bạn.
+**Bước 5:** Lặp lại bước 4 nếu bạn muốn thêm nhiều **Whitelist IP** cho Cluster của bạn. Bạn cũng có thể chọn **Delete** để xóa Whitelist IP mà bạn đã thêm trước đó.
 
 **Bước 6:** Chọn **Save** để lưu thông tin hoặc **Cancel** để hủy bỏ việc lưu các thông số này.
