@@ -780,7 +780,7 @@
   * [Hướng dẫn thay đổi số điện thoại](huong-dan-su-dung-tai-khoan/huong-dan-thay-doi-so-dien-thoai.md)
 * [Những câu hỏi thường gặp (FAQ)](nhung-cau-hoi-thuong-gap-faq/README.md)
   * [vServer](nhung-cau-hoi-thuong-gap-faq/vserver/README.md)
-  * [Storage](nhung-cau-hoi-thuong-gap-faq/storage.md)
+  * [vStorage](nhung-cau-hoi-thuong-gap-faq/storage.md)
   * [vCDN](nhung-cau-hoi-thuong-gap-faq/vcdn.md)
   * [vDB](nhung-cau-hoi-thuong-gap-faq/vdb.md)
   * [NTP server](nhung-cau-hoi-thuong-gap-faq/ntp-server.md)
