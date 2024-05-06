@@ -4,7 +4,7 @@
 
 Service account for partner registration must satisfy these requirements
 
-* Account has been registered on VNG Cloud portal, in case you have not created an account yet, refer to the instruction [here](../getting-start-with-vng-cloud-account.md) to create one
+* Account has been registered on VNG Cloud portal, in case you have not created an account yet, refer to the instruction [here](../getting-start-with-vng-cloud-account/) to create one
 * Account for partner registration must not be customer account of a partner
 * Account for partner registration must be classified as an “Enterprise” account
 
@@ -17,7 +17,7 @@ Service account for partner registration must satisfy these requirements
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59805213/image2023-7-11_17-1-10.png?version=1&#x26;modificationDate=1689069671000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 * (1): If user already created an account, input username and password to sign in. Username and password are information of the account created on [vngcloud.vn](http://vngcloud.vn/) portal.
-* (2): In case user has not created an account yet, select “Sign up” and follow the instruction [here](../getting-start-with-vng-cloud-account.md) to register an account.
+* (2): In case user has not created an account yet, select “Sign up” and follow the instruction [here](../getting-start-with-vng-cloud-account/) to register an account.
 
 **Step 2**: Select “Become a VNG Cloud Partner” to register to be a partner
 
