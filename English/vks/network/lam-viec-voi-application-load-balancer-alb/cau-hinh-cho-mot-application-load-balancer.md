@@ -1,6 +1,6 @@
 # Configure for an Application Load Balancer
 
-Tại trang [Ingress for an Application Load Balancer](https://docs-admin.vngcloud.vn/display/VKSVI/Ingress+for+an+Application+Load+Balancer), chúng tôi đã hướng dẫn bạn cách thực hiện cài đặt Ingress Controller và tạo ingress thông qua Ingress Yaml file. Sau đây là chi tiết các ý nghĩa các thông tin bạn có thể thiết lập cho một Ingress
+Tại trang [Ingress for an Application Load Balancer], chúng tôi đã hướng dẫn bạn cách thực hiện cài đặt Ingress Controller và tạo ingress thông qua Ingress Yaml file. Sau đây là chi tiết các ý nghĩa các thông tin bạn có thể thiết lập cho một Ingress
 
 ### Annotation <a href="#configureforanapplicationloadbalancer-annotation" id="configureforanapplicationloadbalancer-annotation"></a>
 

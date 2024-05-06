@@ -338,7 +338,7 @@ spec:
   * **metadata:** Thông tin mô tả Ingress, bao gồm tên, annotations.&#x20;
   * **spec:** Cấu hình Ingress, bao gồm các rule route traffic theo điều kiện của các incoming request. Tài nguyên Ingress chỉ hỗ trợ các rule để điều hướng HTTP traffic.
 
-Để biết thông tin chung về cách làm việc với tài nguyên Ingress (Ingress Yaml file), hãy xem tại [Configure for an Application Load Balancer](https://docs-admin.vngcloud.vn/display/VKSVI/Configure+for+an+Application+Load+Balancer).
+Để biết thông tin chung về cách làm việc với tài nguyên Ingress (Ingress Yaml file), hãy xem tại [Configure for an Application Load Balancer]).
 
 ***
 

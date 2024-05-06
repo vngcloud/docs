@@ -308,7 +308,7 @@ spec:
   * **metadata:** Thông tin mô tả Ingress, bao gồm tên, annotations.
   * **spec:** Cấu hình điều kiện của các incoming request.
 
-Để biết thông tin chung về cách làm việc với **vngcloud-controller-manager,**, hãy xem tại [Configure for a Network Load Balancer](https://docs-admin.vngcloud.vn/display/VKSVI/Configure+for+a+Network+Load+Balancer).
+Để biết thông tin chung về cách làm việc với **vngcloud-controller-manager,**, hãy xem tại [Configure for a Network Load Balancer].
 
 * Deploy Service này bằng lệch:
 
