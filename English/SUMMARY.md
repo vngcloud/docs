@@ -269,7 +269,7 @@
     * [Create and Use Storage Gateway](vstorage/storage-gateway/create-and-use-storage-gateway.md)
     * [Replacing Fileserver with Gateway Application](vstorage/storage-gateway/replacing-fileserver-with-gateway-application.md)
 * [vCDN](vcdn.md)
-* [vMonitor](vmonitor.md)
+* [vMonitor Platform](vmonitor.md)
 * [vDB](vdb.md)
 * [VKS](vks/README.md)
   * [What is VKS?](vks/vks-la-gi.md)
