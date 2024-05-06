@@ -10,7 +10,7 @@ You purchase CDN volume for usage. If the domain's volume is depleted, it will b
 
 ### \[vCDN] How can I use livestreaming?
 
-Please refer to the documentation at the following link for instructions: <mark style="color:blue;">Livestreaming Guide</mark>
+Please refer to the documentation at the following link for <mark style="color:blue;">here</mark> instructions:
 
 ### \[vCDN] Can I view the traffic using my CDN?
 
@@ -34,7 +34,7 @@ Users purchase CDN volume for usage. If the domain's volume is depleted, it will
 
 ### \[vCDN] Can I view the traffic using my \[CDN]?
 
-Currently, VNG Cloud provides charts for each domain to view the traffic in use. Click on each domain for details here.
+Currently, VNG Cloud provides charts for each domain to view the traffic in use. Click on each domain for details <mark style="color:blue;">here</mark>.
 
 ### \[vCDN] How do I \[clear cache] on \[CDN]?
 
