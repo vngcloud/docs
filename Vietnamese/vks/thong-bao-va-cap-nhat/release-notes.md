@@ -1,6 +1,23 @@
 # Release notes
 
-### \[Alpha Testing] April 17, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
+\[<mark style="color:green;">**Feature**</mark>] May 03, 2024
+
+Bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều tính năng và cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
+
+**Tính năng mới:**
+
+* **Hỗ trợ tính năng Whitelist:** VKS cho phép tạo Private Node Group với chỉ Private IP đồng thời cho phép IP nào kết nối tới Cluster thông qua tính năng Whitelist IP.
+
+**Cải tiến:**
+
+* **Tối ưu hóa hệ thống:** Giúp hệ thống hoạt động trơn tru và hiệu quả hơn.
+* **Sửa lỗi:** Khắc phục một số lỗi nhỏ để mang đến trải nghiệm người dùng tốt hơn.
+
+Nếu bạn gặp bất kỳ vấn đề nào sau khi cập nhật, vui lòng liên hệ với bộ phận hỗ trợ của VKS để được trợ giúp.
+
+***
+
+\[<mark style="color:green;">**Feature**</mark>] April 17, 2024
 
 **Chúng tôi vô cùng hân hạnh giới thiệu bản cập nhật mới cho dịch vụ VKS, mang đến cho bạn trải nghiệm quản lý Kubernetes mạnh mẽ và hiệu quả hơn bao giờ hết!**
 
