@@ -24,13 +24,13 @@ Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, n�
 
 <summary>Hướng dẫn khởi tạo Service Account và cài đặt VNGCloud Controller Manager</summary>
 
-#### Khởi tạo Service Account <a href="#exposemotservicethongquavlblayer4-khoitaoserviceaccount" id="exposemotservicethongquavlblayer4-khoitaoserviceaccount"></a>
+**Khởi tạo Service Account**
 
 * Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **vLBFullAccess**, **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts) và thực hiện theo các bước sau:
   * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
   * Tìm và chọn **Policy:** **vLBFullAccess và Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do VNG Cloud tạo ra, bạn không thể xóa các policy này.
   * Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
-* Gỡ cài đặt cloud-controller-manager&#x20;
+* Gỡ cài đặt cloud-controller-manager
 
 ```
 kubectl get daemonset -n kube-system | grep -i "cloud-controller-manager"
@@ -48,7 +48,7 @@ kubectl get sa -n kube-system | grep -i "cloud-controller-manager"
 kubectl delete sa cloud-controller-manager -n kube-system --force
 ```
 
-#### Cài đặt VNGCloud Controller Manager <a href="#exposemotservicethongquavlblayer4-caidatvngcloudcontrollermanager" id="exposemotservicethongquavlblayer4-caidatvngcloudcontrollermanager"></a>
+**Cài đặt VNGCloud Controller Manager**
 
 * Cài đặt Helm phiên bản từ 3.0 trở lên. Tham khảo tại [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) để biết cách cài đặt.
 * Thêm repo này vào cluster của bạn qua lệnh:
@@ -89,7 +89,7 @@ vngcloud-controller-manager-8864c754c-bqhvz   1/1     Running   5 (91s ago)   3m
 
 #### **1.Nếu bạn chưa có sẵn một Network Load Balancer** đã khởi tạo trước đó trên hệ thống vLB. <a href="#integratewithnetworkloadbalancer-1.neubanchuacosanmotnetworkloadbalancerdakhoitaotruocdotrenhethongv" id="integratewithnetworkloadbalancer-1.neubanchuacosanmotnetworkloadbalancerdakhoitaotruocdotrenhethongv"></a>
 
-Lúc này, bạn cần thực hiện:&#x20;
+Lúc này, bạn cần thực hiện:
 
 **Bước 1**: **Tạo Deployment, Service cho Nginx app.**
 
@@ -306,12 +306,12 @@ spec:
 * Cũng giống như các tài nguyên Kubernetes khác, **vngcloud-controller-manager** có cấu trúc gồm các trường thông tin như sau:
   * **apiVersion:** Phiên bản API cho Ingress.
   * **kind:** Loại tài nguyên, trong trường hợp này là "Service".
-  * **metadata:** Thông tin mô tả Ingress, bao gồm tên, annotations.&#x20;
+  * **metadata:** Thông tin mô tả Ingress, bao gồm tên, annotations.
   * **spec:** Cấu hình điều kiện của các incoming request.
 
-Để biết thông tin chung về cách làm việc với **vngcloud-controller-manager,**, hãy xem tại [Configure for a Network Load Balancer]
+Để biết thông tin chung về cách làm việc với **vngcloud-controller-manager,**, hãy xem tại \[Configure for a Network Load Balancer]
 
-* Deploy Service này bằng lệch:&#x20;
+* Deploy Service này bằng lệch:
 
 ```
 kubectl apply -f nginx-service-lb4.yaml
@@ -341,9 +341,9 @@ NAME                             READY   STATUS              RESTARTS   AGE   IP
 pod/nginx-app-7f45b65946-bmrcf   0/1     ContainerCreating   0          2s    <none>   ng-e0fc7245-0c6e-4336-abcc-31a70eeed71d-46179   <none>           <non
 ```
 
-Lúc này, hệ thống vLB sẽ tự động tạo một LB tương ứng cho nginx app đã deployment, ví dụ:&#x20;
+Lúc này, hệ thống vLB sẽ tự động tạo một LB tương ứng cho nginx app đã deployment, ví dụ:
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3: Để truy cập vào app nginx vừa export, bạn có thể sử dụng URL với định dạng:**
 
@@ -355,4 +355,4 @@ Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao 
 
 Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.20/](http://180.93.181.20/)
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

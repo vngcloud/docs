@@ -58,6 +58,7 @@
       * [Mở rộng Volume với hệ điều hành Window](vserver/compute-hcm03-1a/volume/mo-rong-volume-voi-he-dieu-hanh-window.md)
       * [Volume Types](vserver/compute-hcm03-1a/volume/volume-types.md)
       * [Kiểm tra hiệu suất IOPS](vserver/compute-hcm03-1a/volume/kiem-tra-hieu-suat-iops.md)
+      * [Chuyển đổi Volume Type](vserver/compute-hcm03-1a/volume/chuyen-doi-volume-type.md)
     * [Snapshot](vserver/compute-hcm03-1a/snapshot/README.md)
       * [Kích hoạt Snapshot](vserver/compute-hcm03-1a/snapshot/kich-hoat-snapshot.md)
       * [Tạo Snapshot](vserver/compute-hcm03-1a/snapshot/tao-snapshot.md)
