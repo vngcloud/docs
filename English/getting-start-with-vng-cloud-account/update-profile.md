@@ -1,21 +1,14 @@
 # Update Profile
 
-#### **Cập nhật thông tin tài khoản** <a href="#capnhatthongtintaikhoan-capnhatthongtintaikhoan" id="capnhatthongtintaikhoan-capnhatthongtintaikhoan"></a>
+#### Update account information <a href="#capnhatthongtintaikhoan-capnhatthongtintaikhoan" id="capnhatthongtintaikhoan-capnhatthongtintaikhoan"></a>
 
-**Bước 1:** Chọn chức năng “Cập nhật thông tin tài khoản”
+**Step 1:** Click "Update profile" button.
 
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
+**Step 2:** Update account information.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/31556041/image2023-10-17_15-6-12.png?version=1&#x26;modificationDate=1697529973000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
-
-**Bước 2:** Cập nhật thông tin tài khoản
-
-\
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/31556041/image2023-10-17_15-8-20.png?version=1&#x26;modificationDate=1697530101000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 * Những ô có dấu **\*** bắt buộc phải nhập
 * Sau khi nhập xong, chọn xác nhận vào ô
@@ -27,7 +20,7 @@ và nhập mã bảo vệ&#x20;
 \
 
 
-**Bước 3:** Lưu thông tin tài khoản
+**Step 3:** Lưu thông tin tài khoản
 
 *   Nhấn chọn vào biểu tượng   để kết thúc quá trình cập nhật thông tin
 
@@ -50,13 +43,13 @@ và nhập mã bảo vệ&#x20;
 
 Nếu có yêu cầu thay đổi không cho VNG Cloud thu thập thông tin cá nhân, doanh nghiệp của bạn phục vụ cho việc cung cấp dịch vụ VNG Cloud đến bạn. Bạn có thể chọn chức năng này để xóa thông tin đã đăng ký
 
-**Bước 1**: vào chức năng "**Cập nhật thông tin tài khoản**"
+**Step 1** : vào chức năng "**Cập nhật thông tin tài khoản**"
 
-**Bước 2**: Chọn "**Rút lại sự đồng ý**" ở cuối màn hình
+**Step 2**: Chọn "**Rút lại sự đồng ý**" ở cuối màn hình
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/31556041/image2023-10-17_15-27-26.png?version=1&#x26;modificationDate=1697531247000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-**Bước 3**: Xác nhận yêu cầu
+**Step 3**: Xác nhận yêu cầu
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/31556041/image2023-10-17_15-28-48.png?version=1&#x26;modificationDate=1697531330000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
