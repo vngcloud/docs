@@ -26,6 +26,12 @@
 
 **Bước 5:** Khi trạng thái **Pfsense** là **Active**, bạn có thể xem thông tin Pfsense bằng cách chọn vào Appication Name tại cột **Name**.
 
+{% hint style="info" %}
+**Chú ý:**
+
+* Để được hỗ trợ tốt nhất khi sử dụng pfSense, vui lòng liên hệ với đội ngũ chuyên viên của chúng tôi qua Hotline <mark style="color:green;">**1900 1549**</mark> hoặc email <mark style="color:green;">**support@vngcloud.vn**</mark><mark style="color:green;">.</mark>
+{% endhint %}
+
 ***
 
 ### Khởi tạo Route Table <a href="#khoitaomotpublicclustervoiprivatenodegroup-khoitaoroutetable" id="khoitaomotpublicclustervoiprivatenodegroup-khoitaoroutetable"></a>
