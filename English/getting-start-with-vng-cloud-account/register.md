@@ -26,20 +26,14 @@ Màn hình tương tự như sau:
 
 **Bước 4:** Trong email hướng dẫn, click vào link **Liên kết này** để đến bước tiếp theo.
 
-\
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938001/image2023-10-17_13-48-3.png?version=1&#x26;modificationDate=1697525284000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Sau khi click vào link trong email ở **bước 4**, form đăng ký cuối cùng sẽ được mở ra. Tại đây điền đầy đủ các thông tin vào form đăng ký.
 
 \
 
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938001/image2023-10-17_13-53-3.png?version=1&#x26;modificationDate=1697525584000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 \
 
