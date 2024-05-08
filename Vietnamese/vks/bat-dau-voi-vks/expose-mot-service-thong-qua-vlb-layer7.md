@@ -231,7 +231,7 @@ Lúc này, hệ thống vLB sẽ tự động tạo một LB tương ứng với
 {% hint style="info" %}
 Chú ý:&#x20;
 
-* Hiện tại Ingress chỉ hỗ trợ duy nhất TLS port 443 và là điểm kết thúc cho TLS (TLS termination). TLS Secret phải chứa các trường với tên key là tls.crt và tls.key, đây chính là certificate và private key để sử dụng cho TLS. Nếu bạn muốn sử dụng Certificate cho một host, hãy thực hiện tải lên Certificate theo hướng dẫn tại [Upload a certificate](https://docs-admin.vngcloud.vn/display/vServer/Upload+a+certificate) và sử dụng chúng như một annotation. Ví dụ:&#x20;
+* Hiện tại Ingress chỉ hỗ trợ duy nhất TLS port 443 và là điểm kết thúc cho TLS (TLS termination). TLS Secret phải chứa các trường với tên key là tls.crt và tls.key, đây chính là certificate và private key để sử dụng cho TLS. Nếu bạn muốn sử dụng Certificate cho một host, hãy thực hiện tải lên Certificate theo hướng dẫn tại [Upload a certificate] và sử dụng chúng như một annotation. Ví dụ:&#x20;
 
 ```
 apiVersion: networking.k8s.io/v1

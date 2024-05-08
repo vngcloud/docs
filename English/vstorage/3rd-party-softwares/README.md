@@ -50,19 +50,4 @@ After initializing S3 keys and a Swift account through the vIAM service, collect
 * Information for the Swift account includes username, password, project, and restriction by IAM (if applicable).
 * Service Account details include username, Client ID, and Client Secret.
 
-You can find the configuration information for a created Service Account on the vIAM system. For more information, see [IAM for vStorage](https://docs.vngcloud.vn/display/ONVINA/IAM+for+vStorage)
-
-To access the vStorage storage service using the collected authentication information, refer to the detailed instructions for each tool in the topics below.
-
-***
-
-#### Topic <a href="#id-3rdpartysoftwares-topic" id="id-3rdpartysoftwares-topic"></a>
-
-* [S3cmd](https://docs-admin.vngcloud.vn/display/VSEN/S3cmd?src=contextnavpagetreemode)
-* [Cyberduck](https://docs-admin.vngcloud.vn/display/VSEN/Cyberduck?src=contextnavpagetreemode)
-* [Rclone](https://docs-admin.vngcloud.vn/display/VSEN/Rclone?src=contextnavpagetreemode)
-* [Swift Client](https://docs-admin.vngcloud.vn/display/VSEN/Swift+Client?src=contextnavpagetreemode)
-* [S3 SDK](https://docs-admin.vngcloud.vn/display/VSEN/S3+SDK?src=contextnavpagetreemode)
-* [MinIO Client (MC)](https://docs-admin.vngcloud.vn/pages/viewpage.action?pageId=69468426\&src=contextnavpagetreemode)
-* [S3 Browser](https://docs-admin.vngcloud.vn/display/VSEN/S3+Browser?src=contextnavpagetreemode)
-* [AWS CLI](https://docs-admin.vngcloud.vn/display/VSEN/AWS+CLI?src=contextnavpagetreemode)
+You can find the configuration information for a created Service Account on the vIAM system. For more information, see [IAM for vStorage]
