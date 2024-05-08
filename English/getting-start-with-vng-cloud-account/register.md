@@ -6,33 +6,18 @@
 
 Tại trang chủ VNG Cloud, nhấp chọn chức năng “Đăng ký” như hình:
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938001/image2023-10-17_11-26-34.png?version=1&#x26;modificationDate=1697516795000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Màn hình tương tự như sau:
 
-\
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938001/image2023-10-17_11-28-14.png?version=1&#x26;modificationDate=1697516895000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 2:** Tại trang **'Đăng ký tài khoản'**:
 
 1. Điền đầy đủ các thông tin bao gồm **Email** và **Mã bảo vệ**. Sau đó chọn vào checkbox **Tôi đồng ý với Thỏa Thuận Sử Dụng Dịch vụ và  Chính Sách Bảo vệ Dữ liệu Cá Nhân**.
 2. Click vào nút **Đăng ký** để hoàn tất thông tin đăng ký. Sẽ có một email gửi đến tài khoản email mà bạn đã dùng để đăng ký.
 
-\
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938001/Screen%20Shot%202020-10-19%20at%2011.20.52.png?version=1&#x26;modificationDate=1603081287000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Kiểm tra lại hộp thoại email
 

@@ -185,7 +185,7 @@ Sau khi bạn đã thực hiện triển khai Ingress , Chúng tôi sẽ tự đ
 
 Ví dụ:
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**
@@ -333,7 +333,7 @@ spec:
   * **metadata:** Thông tin mô tả Ingress, bao gồm tên, annotations.
   * **spec:** Cấu hình Ingress, bao gồm các rule route traffic theo điều kiện của các incoming request. Tài nguyên Ingress chỉ hỗ trợ các rule để điều hướng HTTP traffic.
 
-Để biết thông tin chung về cách làm việc với tài nguyên Ingress (Ingress Yaml file), hãy xem tại [Configure for an Application Load Balancer].
+Để biết thông tin chung về cách làm việc với tài nguyên Ingress (Ingress Yaml file), hãy xem tại \[Configure for an Application Load Balancer].
 
 ***
 
@@ -394,4 +394,4 @@ Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao 
 
 Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.129/](http://180.93.181.129/)
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
