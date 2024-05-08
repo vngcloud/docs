@@ -6,11 +6,11 @@
 
 Tại trang chủ VNG Cloud, nhấp chọn chức năng “Đăng ký” như hình:
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Màn hình tương tự như sau:
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 2:** Tại trang **'Đăng ký tài khoản'**:
 
@@ -49,8 +49,6 @@ Click ![](<../.gitbook/assets/image (18).png>) to receive OTP Code nhận OTP đ
 * Nếu người dùng nhập vào số điện thoại và mã quốc gia không phải là Việt Nam. OTP sẽ được gửi vào email đăng ký.
 * Nếu người dùng không nhập số điện thoại, OTP được gửi vào email đăng ký
 
-Người dùng nhập thông tin đăng ký, OTP vào bảng trên & nhấp chọn ![](https://docs.vngcloud.vn/download/thumbnails/22938001/image2021-3-18\_16-19-28.png?version=1\&modificationDate=1616059167000\&api=v2). Khi thông tin nhập liệu đã hợp lệ. Người dùng nhận được thông báo & email xác nhận đăng ký thành công như hình
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938001/image2023-10-17_13-55-51.png?version=1&#x26;modificationDate=1697525753000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+Người dùng nhập thông tin đăng ký, OTP vào bảng trên & nhấp chọn <img src="../.gitbook/assets/image.png" alt="" data-size="line"> . Khi thông tin nhập liệu đã hợp lệ. Người dùng nhận được thông báo & email xác nhận đăng ký thành công.
 
 Các thông tin về email và số điện thoại của khách hàng được VNG Cloud mã hóa theo thuật toán Symmetric AES nhằm đảm bảo an toàn thông tin khách hàng

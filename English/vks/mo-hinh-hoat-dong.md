@@ -4,7 +4,7 @@ Current concepts that VKS provides for you:
 
 ## **1. Public Cluster and Public Node Group**
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When you initialize a **Public Cluster with Public Node Group**, the VKS system will:
 
