@@ -12,9 +12,15 @@
 
 ### Khởi tạo Pfsense <a href="#khoitaomotpublicclustervoiprivatenodegroup-khoitaopfsense" id="khoitaomotpublicclustervoiprivatenodegroup-khoitaopfsense"></a>
 
-**Pfsense** là một phần mềm mã nguồn mở giúp cấu hình firewall được xây dựng dựa trên hệ điều hành FreeBSD.
+**Pfsense** là một phần mềm mã nguồn mở giúp cấu hình firewall được xây dựng dựa trên hệ điều hành FreeBSD.&#x20;
 
-Để khởi tạo một Pfsense, hãy làm theo các bước bên dưới:
+{% hint style="info" %}
+**Chú ý:**
+
+* Để được hỗ trợ tốt nhất khi sử dụng pfSense, vui lòng liên hệ với đội ngũ chuyên viên của chúng tôi qua Hotline <mark style="color:green;">**1900 1549**</mark> hoặc email <mark style="color:green;">**support@vngcloud.vn**</mark><mark style="color:green;">.</mark>
+{% endhint %}
+
+Hoặc để khởi tạo một Pfsense, hãy làm theo các bước bên dưới:
 
 **Bước 1:** Truy cập vào [https://marketplace.console.vngcloud.vn/](https://marketplace.console.vngcloud.vn/)
 
@@ -25,12 +31,6 @@
 **Bước 4:** Chọn **Create Launch Application.** Hãy chờ vài phút để chúng tôi khởi tạo Pfsense của bạn, trạng thái của Pfsense lúc này là **Creating**.
 
 **Bước 5:** Khi trạng thái **Pfsense** là **Active**, bạn có thể xem thông tin Pfsense bằng cách chọn vào Appication Name tại cột **Name**.
-
-{% hint style="info" %}
-**Chú ý:**
-
-* Để được hỗ trợ tốt nhất khi sử dụng pfSense, vui lòng liên hệ với đội ngũ chuyên viên của chúng tôi qua Hotline <mark style="color:green;">**1900 1549**</mark> hoặc email <mark style="color:green;">**support@vngcloud.vn**</mark><mark style="color:green;">.</mark>
-{% endhint %}
 
 ***
 
