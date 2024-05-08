@@ -14,7 +14,13 @@
 
 **Pfsense** là một phần mềm mã nguồn mở giúp cấu hình firewall được xây dựng dựa trên hệ điều hành FreeBSD.&#x20;
 
-Để khởi tạo một Pfsense, hãy làm theo các bước bên dưới:
+{% hint style="info" %}
+**Chú ý:**
+
+* Để được hỗ trợ tốt nhất khi sử dụng pfSense, vui lòng liên hệ với đội ngũ chuyên viên của chúng tôi qua Hotline <mark style="color:green;">**1900 1549**</mark> hoặc email <mark style="color:green;">**support@vngcloud.vn**</mark><mark style="color:green;">.</mark>
+{% endhint %}
+
+Hoặc để khởi tạo một Pfsense, hãy làm theo các bước bên dưới:
 
 **Bước 1:** Truy cập vào [https://marketplace.console.vngcloud.vn/](https://marketplace.console.vngcloud.vn/)
 
@@ -50,12 +56,6 @@ Sau khi Pfsense được khởi tạo thành công, bạn cần tạo một Rout
 
 * Đối với Destination, hãy nhập **Destination CIDR.**
 * Đối với Target, hãy nhập **Target CIDR.**
-
-{% hint style="info" %}
-**Chú ý:**
-
-* Để được hỗ trợ tốt nhất khi sử dụng pfSense, vui lòng liên hệ với đội ngũ chuyên viên của chúng tôi qua Hotline <mark style="color:green;">**1900 1549**</mark> hoặc email <mark style="color:green;">**support@vngcloud.vn**</mark><mark style="color:green;">.</mark>
-{% endhint %}
 
 ***
 
