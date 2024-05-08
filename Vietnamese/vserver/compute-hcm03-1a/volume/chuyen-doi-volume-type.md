@@ -22,7 +22,6 @@ Việc chuyển đổi giữa 2 loại volume trên nhằm mục đích:
 
 Trước khi bắt đầu, người dùng cần điểm qua một vài lưu ý quan trọng như sau:
 
-* Trong quá trình chuyển đổi, dữ liệu trên volume có thể bị ảnh hưởng. Chúng tôi khuyến nghị người dùng nên sao lưu dữ liệu quan trọng trước khi tiến hành chuyển đổi.
 * Quá trình chuyển đổi có thể mất một khoảng thời gian nhất định tùy thuộc vào kích thước và trạng thái của volume.
 * Quá trình chuyển đổi sẽ gồm 4 bước, yêu cầu sự tương tác giữa người dùng giữa các bước. Do đó, vui lòng chú ý thực hiện mọi hành động cần thiết giữa các bước để tiếp tục việc chuyển đổi volume.
 
