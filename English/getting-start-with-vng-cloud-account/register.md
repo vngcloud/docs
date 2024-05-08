@@ -1,34 +1,32 @@
 # Register
 
-### **Hướng dẫn tạo tài khoản:** <a href="#id-dangkytaikhoan-huongdantaotaikhoan" id="id-dangkytaikhoan-huongdantaotaikhoan"></a>
+### Create a account Guide <a href="#id-dangkytaikhoan-huongdantaotaikhoan" id="id-dangkytaikhoan-huongdantaotaikhoan"></a>
 
-**Bước 1:**
-
-Tại trang chủ VNG Cloud, nhấp chọn chức năng “Đăng ký” như hình:
+**Step 1:** At VNG Cloud homepage, Click "Sign up" button as shown in the following screen:
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-Màn hình tương tự như sau:
+Navigate to "Create New Account" screen as shown in the following image:&#x20;
 
 <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 2:** Tại trang **'Đăng ký tài khoản'**:
+**Step 2:** At "Create new account" screen:
 
-1. Điền đầy đủ các thông tin bao gồm **Email** và **Mã bảo vệ**. Sau đó chọn vào checkbox **Tôi đồng ý với Thỏa Thuận Sử Dụng Dịch vụ và  Chính Sách Bảo vệ Dữ liệu Cá Nhân**.
-2. Click vào nút **Đăng ký** để hoàn tất thông tin đăng ký. Sẽ có một email gửi đến tài khoản email mà bạn đã dùng để đăng ký.
+1. Fill in all required information including **Email** and **Security Code**. Then, select the checkbox to **I agree to the Terms and Conditions and Personal Data Protection**.
+2. Click the **Register** button to complete the registration information. An email will be sent to the email account you used to register.
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 3:** Kiểm tra lại hộp thoại email
+**Step 3:** Check your mail inbox
 
-1. Bạn sẽ thấy một email với tiêu đề **VNG CLOUD – Account Verification**. Nếu không tìm thấy bất kỳ email nào như trên, vui lòng kiểm tra lại trong thư mục **Spam.**
-2. Mở email và thực hiện theo hướng dẫn.
+1. You will find an email with the subject **VNG CLOUD – Account Verification**. If you do not find any such email, please check your **Spam** folder.
+2. Open the email and follow the instructions.
 
-**Bước 4:** Trong email hướng dẫn, click vào link **Liên kết này** để đến bước tiếp theo.
+**Step 4:** In the instruction email, click on **this link** to proceed to the next step.
 
 <figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 5:** Sau khi click vào link trong email ở **bước 4**, form đăng ký cuối cùng sẽ được mở ra. Tại đây điền đầy đủ các thông tin vào form đăng ký.
+**Step 5:** After clicking the link in the email from **step 4**, the final registration form will open. Fill in all the required information on the registration form.
 
 \
 
@@ -38,17 +36,17 @@ Màn hình tương tự như sau:
 \
 
 
-* Những thông tin có đánh dấu **\***, người dùng bắt buộc phải nhập. Những thông tin còn lại có thể nhập hoặc không nhập.
-* Khi nhập mật khẩu, người dùng phải nhập theo hướng dẫn của hệ thống
+* Fields marked with an \* are mandatory for users to fill out. Other information is optional.
+* When entering a password, users must follow the system's guidelines.
 
 <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-Click ![](<../.gitbook/assets/image (18).png>) to receive OTP Code nhận OTP đăng ký.
+Click ![](<../.gitbook/assets/image (18).png>) to receive OTP Code .
 
-* Nếu người dùng nhập số điện thoại, và mã quốc gia là Việt Nam (+84), OTP được gửi vào số điện  thoại qua SMS
-* Nếu người dùng nhập vào số điện thoại và mã quốc gia không phải là Việt Nam. OTP sẽ được gửi vào email đăng ký.
-* Nếu người dùng không nhập số điện thoại, OTP được gửi vào email đăng ký
+* If the user enters a phone number and the country code is Vietnam (+84), the OTP will be sent to the phone via SMS.
+* If the user enters a phone number and the country code is not Vietnam, the OTP will be sent to the registered email.
+* If the user does not enter a phone number, the OTP will be sent to the registered email.
 
-Người dùng nhập thông tin đăng ký, OTP vào bảng trên & nhấp chọn <img src="../.gitbook/assets/image.png" alt="" data-size="line"> . Khi thông tin nhập liệu đã hợp lệ. Người dùng nhận được thông báo & email xác nhận đăng ký thành công.
+The user enters registration information and OTP into the form above & clicks <img src="../.gitbook/assets/image.png" alt="" data-size="line"> . Once the data entry is valid, the user receives a notification & an email confirming successful registration.
 
-Các thông tin về email và số điện thoại của khách hàng được VNG Cloud mã hóa theo thuật toán Symmetric AES nhằm đảm bảo an toàn thông tin khách hàng
+Customer email and phone number information is encrypted by VNG Cloud using the Symmetric AES algorithm to ensure customer data security.
