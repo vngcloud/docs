@@ -7,7 +7,7 @@ Bảo mật là một khía cạnh quan trọng của các dịch vụ Mạng ph
 * **Mã Hóa SSL/TLS:** Sử dụng tính năng mã hóa SSL/TLS để bảo vệ dữ liệu trong quá trình truyền, đảm bảo tính riêng tư và toàn vẹn.
 * **Kiểm Soát Truy Cập:** Tận dụng các cơ chế kiểm soát truy cập để quy định ai có thể truy cập nội dung của bạn. Thiết lập giao thức xác thực và cấp quyền cho xác minh người dùng.
   * Xác thực 2 bước (2FA): Tham khảo thêm tại [Thiết lập xác thực 2 lớp](https://docs.vngcloud.vn/pages/viewpage.action?pageId=22938012)
-  * Hạn chế truy cập chỉ cho những người được ủy quyền: Tham khảo thêm tại [IAM](https://docs.vngcloud.vn/display/ONVINA/IAM) và [Security Link](https://docs.vngcloud.vn/display/ONVINA/Security+Link)
+  * Hạn chế truy cập chỉ cho những người được ủy quyền: Tham khảo thêm tại [IAM](cac-tinh-nang-ho-tro/iam.md) và [Security Link](chi-tiet-tinh-nang/security-link.md).
 * **Bảo Vệ DDoS:** Dịch vụ vCDN của chúng tôi bao gồm tính năng bảo vệ DDoS mạnh mẽ để giảm thiểu và chống lại các cuộc tấn công DDoS, đảm bảo sẵn có của dịch vụ.
 * **Cập Nhật Định Kỳ:** Luôn cập nhật các bản vá bảo mật và nâng cấp tính năng để chống lại các lỗ hổng đã biết và nâng cao bảo mật ngay khi phát hiện ra vấn đề.
 * **Giám Sát và Ghi Nhật Ký:** Triển khai các công cụ giám sát toàn diện và cơ chế ghi nhật ký để theo dõi hiệu suất CDN và xác định các sự cố bảo mật tiềm ẩn. Theo dõi mô hình lưu lượng và phân tích nhật ký để phát hiện các hoạt động đáng ngờ (Comming Soon)
