@@ -4,6 +4,8 @@
 
 Dịch vụ phát nội dung trực tiếp như sự kiện, chương trình truyền hình, thể thao đến nhiều người trên nền tảng internet.
 
+<figure><img src="../../.gitbook/assets/Live Streaming_16.9-01.jpg" alt=""><figcaption></figcaption></figure>
+
 #### **Cơ Chế Phân Phối Dữ Liệu** <a href="#livestreaming-cochephanphoidulieu" id="livestreaming-cochephanphoidulieu"></a>
 
 Sử dụng phương pháp [PU](../tong-quan/co-che-phan-phoi-du-lieu/phuong-phap-pull.md)[LL](https://docs.vngcloud.vn/display/ONVINA/Live+Streaming#\_Ph%C6%B0%C6%A1ng\_ph%C3%A1p\_PULL), [PUS](../tong-quan/co-che-phan-phoi-du-lieu/phuong-phap-push.md)[H](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045441) chọn tín hiệu đầu vào và tín hiểu đầu ra, đảm bào đường truyền tốt nhất, ổn định nhất, nhiều điểm truy cấp nhất cho dịch vụ live.
