@@ -2,26 +2,23 @@
 
 **Bước 1:** Truy cập trực tiếp vào đường dẫn [https://register.vngcloud.vn/resetpwd](https://register.vngcloud.vn/resetpwd) hoặc [https://my.vngcloud.vn](https://register.vngcloud.vn/resetpwd) sau đó chọn **Quên mật khẩu?**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938046/image2021-3-18_16-46-15.png?version=1&#x26;modificationDate=1616060774000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (195).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 2:** Nhập thông tin Email bạn đã dùng để đăng ký và Mã bảo vệ. Sau đó nhấn **Đặt lại mật khẩu**.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938046/image2021-3-18_16-46-41.png?version=1&#x26;modificationDate=1616060800000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (196).png" alt=""><figcaption></figcaption></figure>
 
 Bạn sẽ nhận được thông báo như bên dưới.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938046/image2021-3-18_16-46-57.png?version=1&#x26;modificationDate=1616060816000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (197).png" alt=""><figcaption></figcaption></figure>
 
-\
+Vui lòng kiểm tra lại email với tiêu đề **VNG CLOUD - Đặt lại mật khẩu**. Nhấn vào **Liên kết này** để đi đến bước 3.
 
-
-Vui lòng kiểm tra lại email với tiêu đề **VNG CLOUD - Đặt lại mật khẩu**. Nhấn vào **Liên kết này** để đi đến [Bước 3](https://docs.vngcloud.vn/pages/viewpage.action?pageId=22938046#H%C6%B0%E1%BB%9Bngd%E1%BA%ABn%C4%91%E1%BA%B7tl%E1%BA%A1im%E1%BA%ADtkh%E1%BA%A9u-step3)
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938046/image2021-3-18_16-47-36.png?version=1&#x26;modificationDate=1616060855000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Điền đầy đủ thông tin theo yêu cầu. Ở phần **Xác nhận OTP**, vui lòng nhấn vào button **Gửi OTP** để nhận OTP thông qua email bạn đã đăng ký.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938046/image2021-3-18_16-48-13.png?version=1&#x26;modificationDate=1616060892000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
 
 Sau đó, vui lòng kiểm tra lại email, bạn sẽ nhận được email với tiêu đề **VNG CLOUD - Mật khẩu đã thay đổi,** với thông báo đã đổi mật khẩu thành công và sẽ được chuyển hướng về trang **Đăng nhập**.
 
