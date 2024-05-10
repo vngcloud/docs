@@ -23,10 +23,6 @@ Vui lòng kiểm tra lại email với tiêu đề **VNG CLOUD - Đặt lại m�
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/22938046/image2021-3-18_16-48-13.png?version=1&#x26;modificationDate=1616060892000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-Sau đó, vui lòng kiểm tra lại email, bạn sẽ nhận được email với tiêu đề **VNG CLOUD - OTP đặt lại mật khẩu.** Sao chép mã OTP nhận được trong email và dán vào phần **Xác nhận OTP**
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938046/image2021-3-18_16-51-58.png?version=1&#x26;modificationDate=1616061116000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-Sau khi hoàn tất đầy đủ thông tin, nhấn **Đặt lại mật khẩu** để hoàn tất. Bạn sẽ nhận thông báo đã đổi mật khẩu thành công và sẽ được chuyển hướng về trang **Đăng nhập**.
+Sau đó, vui lòng kiểm tra lại email, bạn sẽ nhận được email với tiêu đề **VNG CLOUD - Mật khẩu đã thay đổi,** với thông báo đã đổi mật khẩu thành công và sẽ được chuyển hướng về trang **Đăng nhập**.
 
 Cuối cùng, đăng nhập vào hệ thống với mật khẩu bạn vừa đặt lại.
