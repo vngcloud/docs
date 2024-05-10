@@ -31,6 +31,14 @@ Nếu thỏa mãn 2 điều kiện trên, hệ thống sẽ tăng số node (m�
 * **Bước 1:** Hệ thống VKS tạo node mới theo cấu hình node group hiện tại.
 * **Bước 2:** Hệ thống VKS sẽ deploy các pods đang unscheduling này lên các node mới.
 
+{% hint style="info" %}
+**Chú ý:**
+
+* Khi hệ thống thực hiện Auto Scaling, việc tạo ra node mới có thể gặp lỗi nếu bạn không có đủ credit hoặc bạn đã hết quota để tạo VM trên hệ thống vServer. Để tránh gặp lỗi bên trên, bạn cần:
+  * **Đảm bảo bạn có đủ credit:** Nếu bạn là người dùng trả trước, hãy nạp thêm credit vào tài khoản của bạn.
+  * **Yêu cầu tăng quota:** Bạn có thể yêu cầu tăng quota cho tài khoản của mình tại [đây](https://hcm-3.console.vngcloud.vn/vserver/limit).
+{% endhint %}
+
 #### Cơ chế Scale down: hệ thống VKS thực hiện scale down khi
 
 * Một hoặc nhiều node có tải thấp liên tục trong một khoảng thời gian. Cụ thể node có utilization (độ khả dụng) bao gồm cả request CPU và memory của pod thấp ở mức <mark style="color:red;">**< 50%.**</mark>
