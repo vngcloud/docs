@@ -6,37 +6,37 @@
 
 **Step 2**: Select the "2FA" function.
 
-1. Bật chức năng mong muốn xác thực tương tự như hình.&#x20;
+1. Turn on the desired authentication method as shown in the image.
 
 <figure><img src="https://docs.vngcloud.vn/download/thumbnails/22938012/image2023-10-17_16-38-37.png?version=1&#x26;modificationDate=1697535518000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-Có 2 phương thức để nhận OTP là qua SMS hoặc qua ứng dụng Google Authenticator.
+There are 2 methods to receive OTP: via SMS or through the Google Authenticator app.
 
-&#x20;       1.1 Gửi OTP đến điện thoại (qua SMS): Bạn có thể Bật/Tắt chức năng này thông qua nút bấm ở mục Gửi OTP đến điện thoại.
+&#x20;       1.1 Send OTP to your phone (via SMS): You can Enable/Disable this function through the button in the "Send OTP to phone" section.
 
-**Lưu** **ý:** _Nếu_ _khách_ _hàng_ _**có mã vùng điện thoại khác** Việt Nam (+84) không sử dụng được_ _phương_ _thức SMS._
+**Note:** Customers with **phone country codes different** from Vietnam (+84) cannot use the SMS method.
 
-&#x20;       1.2 Nhận OTP qua ứng dụng Google Authenticator.
+&#x20;       1.2 Receive OTP via the Google Authenticator app.
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/22938012/Screen%20Shot%202020-10-19%20at%2012.06.17.png?version=2&#x26;modificationDate=1603163213000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-* Nhấn vào button **KHỞI TẠO**, bạn sẽ được đưa đến trang Tạo mã Google Authenticator và thực hiện theo các bước hướng dẫn
-* Nhấn vào **Lưu thiết lập** để hoàn tất.
-* Bbạn sẽ nhận được thông báo **Bạn đã hoàn tất** như hình.
+* Click the **INITIATE** button, you will be taken to the Google Authenticator code creation page and follow the instructions.
+* Click **Save Settings** to complete.
+* You will receive a notification that **you have completed** as shown in the image.
 
 \
 
 
 <figure><img src="https://docs.vngcloud.vn/download/thumbnails/22938012/Screen%20Shot%202020-10-20%20at%2009.50.59.png?version=1&#x26;modificationDate=1603162482000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-Ở màn hình **Chứng thực đa yếu tố** chỉ cần Bật/Tắt chức năng theo nhu cầu của bạn, có thể chọn 1 trong 2 hoặc là cả 2. Ở đây chúng tôi có hỗ trợ bạn tạo mã QR code mới, click vào link và làm theo hướng dẫn.
+On the **Multi-Factor Authentication** screen, simply Enable/Disable the function according to your needs, you can choose one of the two or both. Here we support you in creating a new QR code, click on the link and follow the instructions.
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/22938012/Screen%20Shot%202020-10-20%20at%2009.59.47.png?version=2&#x26;modificationDate=1603163157000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-Cuối cùng, nhấn vào nút **Lưu thiết lập** để hoàn tất.
+Finally, click the **Save Settings** button to complete.
 
-**(\*)** Sau khi hoàn tất quá trình đăng ký chứng thực đa yếu tố, ở bước đăng nhập, tuỳ lựa chọn của khách hàng ở trên sẽ có các hình thức xác thực khác nhau.
+**(\*)** After completing the multi-factor authentication registration process, at the login step, depending on the customer's choice above, there will be different authentication methods.
 
-* Đối với nhận OTP qua SMS (chỉ áp dụng với số diện thoại có mã quốc gia (+84) - Việt Nam), chúng tôi sẽ gửi tin nhắn kèm OTP đến số điện thoại mà bạn đã đăng ký, bạn chỉ cần nhập mã được nhận để xác thực Đăng Nhập.
-* Đối với đăng nhập thông qua Google Authenticator. Bạn vui lòng mở ứng dụng Google Authenticator trong máy và sao chép 6 số PIN hiển thị trong ứng dụng và nhập vào form yêu cầu của chúng tôi.
-* Trường hợp chọn xác thực thông qua cả 2 lựa chọn trên. Bạn chỉ đơn giản làm theo 2 thao tác như trên để xác thực Đăng nhập.
+* For receiving OTP via SMS (only applicable to phone numbers with country code (+84) - Vietnam), we will send a message with OTP to the phone number you registered, you just need to enter the received code to authenticate Login.
+* For logging in through Google Authenticator. Please open the Google Authenticator app on your device and copy the 6-digit PIN displayed in the app and enter it into our required form.
+* In the case of choosing authentication through both of the above options. You simply follow the 2 steps above to authenticate Login.
