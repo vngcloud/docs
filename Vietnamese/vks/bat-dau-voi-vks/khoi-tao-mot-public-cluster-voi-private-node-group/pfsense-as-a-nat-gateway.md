@@ -37,12 +37,12 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 <figure><img src="../../../.gitbook/assets/p1.png" alt=""><figcaption></figcaption></figure>
 
-* Để lấy thông tin IP này khách hàng vào phần **Network Interface** của **Pfsense** để xem thông tin
+* Để lấy thông tin IP này, bạn vào phần **Network Interface** của **Pfsense** để xem thông tin
 
 <figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 \
-**Bước 3**: Tiến hành **General Setup**, khách hàng vui lòng thực hiện như bên dưới
+**Bước 3**: Tiến hành **General Setup**, bạn vui lòng thực hiện như bên dưới
 
 <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -52,100 +52,104 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-* Cấu hình cho WAN Interface
+* Cấu hình cho **WAN Interface**
 
 <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-* Thay đổi password vào GUI
+* Thay đổi **password** vào **GUI**
 
 <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-* Tiến hành reload
+* Tiến hành **reload**
 
 <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-* Đã hoàn thành General Setup
+* Đã hoàn thành **General Setup**
 
 <figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 4**: Mở rule trên firewall
+**Bước 4**: Mở **rule** trên **firewall**
 
-* Tiến hành Add rule
+* Tiến hành **Add rule**
 
 <figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-* Khách hàng có thể mở rule như bên dưới để truy cập vào GUI bằng External Interface.
+* Bạn có thể mở rule như bên dưới để truy cập vào GUI bằng **External Interface**.
 
-Lưu ý: Khách hàng nên giới hạn lại Range IP được phép kết nối tới GUI Pfsense để hạn chế user được phép truy cập vào GUI Pfsense
+{% hint style="info" %}
+**Chú ý:**
+
+* Bạn nên giới hạn lại Range IP được phép kết nối tới GUI Pfsense để hạn chế user được phép truy cập vào GUI Pfsense
+{% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-* Chọn save
-* Sau đó chọn Apply change
+* Chọn **Save**
+* Sau đó chọn **Apply change**
 
 <figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 5:** Cấu hình Interface LAN
+**Bước 5:** Cấu hình **Interface LAN**
 
-* Vào phần Interfaces -> Assignments để gắn thêm Interface LAN
+* Vào phần **Interfaces** -> **Assignments** để gắn thêm **Interface LAN**
 
 <figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-* Nhấn vào Add
+* Nhấn vào **Add**
 
 <figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
-* Sau đó nhấn vào Save
+* Sau đó nhấn vào **Save**
 
 <figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
-* Vào phần Interfaces -> Assignments để tiến hành enable LAN Interface
+* Vào phần **Interfaces** -> **Assignments** để tiến hành **enable LAN Interface**
 
 <figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-* Khách hàng thực hiện cấu hình như bên dưới
+* Bạn thực hiện cấu hình như bên dưới
 
 <figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-* Cấu hình IP cho LAN
+* Cấu hình **IP** cho **LAN**
 
 <figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-* Sau đó tiến hành add gateway
+* Sau đó tiến hành **Add gateway**
 
 <figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
-* Tiến hành save lại
+* Tiến hành **Save** lại
 
 **Bước 6**: Xem lại thông tin cấu hình
 
 <figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 7**: Mở rule đi ra Internet cho interface LAN
+**Bước 7**: Mở rule đi ra **Internet** cho **interface LAN**
 
 <figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
-* Tại source khách hàng chọn dải IP được phép đi ra Internet
+* Tại source bạn chọn dải **IP** được phép đi ra **Internet**
 
 <figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 8:** Cấu hình NAT để các vServer có thể đi ra được Internet
+**Bước 8:** Cấu hình **NAT** để các **vServer** có thể đi ra được **Internet**
 
-* Vào mục Firewall -> NAT
+* Vào mục **Firewall** -> **NAT**
 
 <figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
-* Chọn mode NAT sau đó tiến hành cấu hình NAT
+* Chọn mode **NAT** sau đó tiến hành cấu hình **NAT**
 
 <figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
-* Nhấn vào Add để thêm rule
+* Nhấn vào **Add** để thêm **rule**
 
 <figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
-* Chọn source, destination NAT
+* Chọn **source**, **destination NAT**
 
 <figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
