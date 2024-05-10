@@ -28,8 +28,8 @@ Minh họa:
 
 Nếu thỏa mãn 2 điều kiện trên, hệ thống sẽ tăng số node (một hoặc nhiều nodes) để đáp ứng toàn bộ pods đang unscheduling. Quá trình này sẽ được thực hiện ngay lập tức theo 2 bước:
 
-* Bước 1: Hệ thống VKS tạo node mới theo cấu hình node group hiện tại.
-* Bước 2: Hệ thống VKS sẽ deploy các pods đang unscheduling này lên các node mới.
+* **Bước 1:** Hệ thống VKS tạo node mới theo cấu hình node group hiện tại.
+* **Bước 2:** Hệ thống VKS sẽ deploy các pods đang unscheduling này lên các node mới.
 
 #### Cơ chế Scale down: hệ thống VKS thực hiện scale down khi
 
@@ -38,9 +38,9 @@ Nếu thỏa mãn 2 điều kiện trên, hệ thống sẽ tăng số node (m�
 
 Nếu thỏa mãn 2 điều kiện trên, mặc định là trong khoảng 10 phút, node đó sẽ bị xóa đi khỏi Cluster. Quá trình xóa này sẽ bao gồm 3 bước:
 
-* Bước 1: Hệ thống VKS sẽ đánh dấu là node đó là unschedulable.
-* Bước 2: Hệ thống di chuyển (move) toàn bộ pod qua node khác.
-* Bước 3: Sau khi di chuyển tất cả các pod qua node khác thành công, hệ thống VKS sẽ xóa node được đánh dấu.
+* **Bước 1:** Hệ thống VKS sẽ đánh dấu là node đó là unschedulable.
+* **Bước 2:** Hệ thống di chuyển (move) toàn bộ pod qua node khác.
+* **Bước 3:** Sau khi di chuyển tất cả các pod qua node khác thành công, hệ thống VKS sẽ xóa node được đánh dấu.
 
 ***
 
