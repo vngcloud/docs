@@ -4,12 +4,12 @@ VNG Cloud cung cấp 03 dịch vụ Bandwidth cho khách hàng có thể dễ d�
 
 _**Shared Bandwidth:**_ là dịch vụ cung cấp bandwidth network cho nhiều khách hang cùng sử dụng và không cam kết chất lượng. &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 _**Dedicated Bandwidth:**_ là dịch vụ cung cấp bandwidth network Cam kết và đảm bảo chất lượng dịch vụ cho khách hàng với dung lượng theo yêu cầu.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 _**DataTransfers Bandwidth:**_ là dịch vụ cung cấp bandwidth network Cam kết và đảm bảo chất lượng dịch vụ cho khách hàng với dung lượng kết nối là Max ( trong nước  10Gbps, Quốc tế 100Mbps) và tính theo lưu lượng đã sử dụng.
 
-<figure><img src="../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>

@@ -4,7 +4,7 @@ vStorage - VNG Cloud Storage là một dịch vụ lưu trữ dựa trên kiến
 
 vStorage cung cấp 3 lớp lưu trữ là Gold, Silver và Archive. Với lớp lưu trữ Gold, dữ liệu của bạn luôn sẵn sàng để sử dụng với khả năng đáp ứng việc truy xuất ở mức mili giây. Lớp Silver phù hợp cho các dữ liệu ít được truy cập nhưng bạn vẫn muốn dữ liệu luôn ở trạng thái sẵn sàng để dùng bất kỳ lúc nào với chi phí lưu trữ thấp. Cuối cùng là Archive, đây là lớp lưu trữ tiết kiệm nhất phù hợp cho các dữ liệu rất hiếm khi sử dụng nhưng cần phải lưu trữ như hồ sơ bệnh án, log giao dịch v...v...
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

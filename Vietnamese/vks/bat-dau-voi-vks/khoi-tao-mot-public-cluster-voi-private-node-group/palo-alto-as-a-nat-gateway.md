@@ -1,8 +1,20 @@
 # Palo Alto as a NAT Gateway
 
-Để làm việc với Private Node group, bạn có thể chọn sử dụng Palo Alto hoặc Pfsense làm NAT Gateway .Cụ thể:
+Sử dụng hướng dẫn bên dưới dể làm việc với Private Node group thông qua Palo Alto.
 
-## Khởi tạo Palo Alto trên vMarketplace <a href="#toc165621057" id="toc165621057"></a>
+## Điều kiện cần
+
+Để có thể sử dụng Palo Alto làm NAT Gateway cho Cluster trên hệ thống VKS, bạn cần có:
+
+* Một **server (VM) Windows** đã được khởi tạo trên hệ thống **vServer** với cấu hình như sau:
+
+<table><thead><tr><th width="240">Item</th><th>Cấu hình</th></tr></thead><tbody><tr><td>Flavor</td><td>2x4</td></tr><tr><td>Volume</td><td>20 GB</td></tr><tr><td>VPC</td><td>10.76.0.0/16</td></tr><tr><td>Subnet</td><td>10.76.0.4/24</td></tr><tr><td>Network Interface 1</td><td>10.76.0.3</td></tr></tbody></table>
+
+* Một **server (VM) Palo Alto** được khởi tạo trên hệ thống **vMarketPlace** theo hướng dẫn bên dưới với cấu hình như sau:
+
+<table><thead><tr><th width="244">Item</th><th>Cấu hình</th></tr></thead><tbody><tr><td>Flavor</td><td>2x8</td></tr><tr><td>Volume</td><td>60 GB</td></tr><tr><td>VPC</td><td>10.76.0.0/16</td></tr><tr><td>Network Interface 1</td><td>10.76.255.4</td></tr><tr><td>Network Interface 2</td><td>10.76.0.4</td></tr></tbody></table>
+
+## Khởi tạo Palo Alto <a href="#toc165621057" id="toc165621057"></a>
 
 **Bước 1:** Truy cập vào [https://marketplace.console.vngcloud.vn/](https://marketplace.console.vngcloud.vn/)
 
@@ -14,15 +26,15 @@
 
 ***
 
-## Truy cập vào GUI Palo Alto <a href="#toc165621058" id="toc165621058"></a>
+## Cấu hình thông số cho Palo Alto <a href="#toc165621058" id="toc165621058"></a>
 
 **Bước 1:** Sau khi khởi tạo Palo Alto từ vMarketPlace theo hướng dẫn bên trên, bạn có thể truy cập vào giao diện vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) để kiểm tra server chạy Palo Alto đã được khởi tạo xong chưa.
 
-**Bước 2: Sau khi server chạy Palo Alto được khởi tạo thành công, bạn cần truy cập vào** . Để vào GUI của Palo Alto khách hàng cần có 1 vServer chạy Windows. Sau đó khách hàng truy cập vào bằng IP Internal Interface với tên đăng nhập và mật khẩu mặc định là: admin/admin
+**Bước 2: Sau khi server chạy Palo Alto được khởi tạo thành công**. Để vào GUI của Palo Alto khách hàng cần có 1 vServer chạy Windows. Sau đó khách hàng truy cập vào bằng IP Internal Interface với tên đăng nhập và mật khẩu mặc định là: **admin/admin**
 
 Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI của Palo Alto. Khách hàng cần tạo cùng VPC và sử dụng subnet khác với subnet có priority là 1 khi khởi tạo Palo Alto
 
-![](../../../.gitbook/assets/3.png)
+![](<../../../.gitbook/assets/3 (1).png>)
 
 **Bước 3**: Sau khi đăng nhập xong, bạn cần thực hiện thay đổi mật khẩu lần đầu. Hãy nhập mật khẩu mới theo mong muốn của bạn.
 
@@ -30,15 +42,15 @@ Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI c�
 
 * Chọn bút **Add**
 
-![](../../../.gitbook/assets/4.png)
+![](<../../../.gitbook/assets/4 (1).png>)
 
 * Đặt tên cho **Zone**: **Inside** sau đó chọn **OK**
 
-![](../../../.gitbook/assets/5.png)
+![](<../../../.gitbook/assets/5 (1).png>)
 
 * Làm tương tự đối với **Zone Outside**
 
-![](../../../.gitbook/assets/6.png)
+![](<../../../.gitbook/assets/6 (1).png>)
 
 **Bước 5**: Cấu hình cho **External Interface**
 
@@ -46,7 +58,7 @@ Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI c�
 * Virtual Router: **default**
 * Security Zone: **Outside**
 
-![](../../../.gitbook/assets/7.png)
+![](<../../../.gitbook/assets/7 (1).png>)
 
 * Chuyển sang **Tab IPv4** và chọn **Add** để nhập **Static IP** cho **External Interface**
 
@@ -72,54 +84,98 @@ Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI c�
 
 ![](../../../.gitbook/assets/13.png)
 
-**Bước 7:** Tạo static route
+**Bước 7:** Tạo **static route**
 
-* Vào phần Network -> Virtual Routers-> Chọn default-> Chuyển sang mục Static Routes
+* Vào phần **Network** -> **Virtual Routers**-> Chọn **default**-> Chuyển sang mục **Static Routes**
 
 ![](../../../.gitbook/assets/14.png)
 
-* Thực hiện tạo 1 route như hình bên dưới
+* Thực hiện tạo 1 **route** như hình bên dưới
 
 ![](../../../.gitbook/assets/15.png)
 
-Bước 8: Tạo Security Policy Rule
+**Bước 8:** Tạo **Security Policy Rule**
 
-* Vào phần Policies -> Security ->Add
-* Tại tab General, khách hàng cần đặt tên cho rule
+* Vào phần **Policies** -> **Security** ->**Add**
+* Tại tab **General**, khách hàng cần đặt tên cho rule
 
 ![](../../../.gitbook/assets/16.png)
 
-* Tại tab Source, thiết lập các thông tin như Source Zone, Source Address, Source User, Source Device
+* Tại tab **Source**, thiết lập các thông tin như **Source Zone**, **Source Address**, **Source User, Source Device**
 
 ![](../../../.gitbook/assets/17.png)
 
-* Tại tab Destination, thiết lập các thông tin như Destination Zone, Destination Address, Destination Device
+* Tại tab **Destination**, thiết lập các thông tin như **Destination Zone, Destination Address, Destination Device**
 
 ![](../../../.gitbook/assets/18.png)
 
-* Tại tab Application, thiết lập các thông tin như Application, Depend On
+* Tại tab **Application**, thiết lập các thông tin như **Application, Depend On**
 
 ![](../../../.gitbook/assets/19.png)
 
-* Tại tab **Service/URL Category**, thiết lập các thông tin như Service, URL Category
+* Tại tab **Service/URL Category**, thiết lập các thông tin như **Service, URL Category**
 
 ![](../../../.gitbook/assets/20.png)
 
-* Tại tab **Actions**, thiết lập các thông tin như Action, Log, Profile, Other Settings
+* Tại tab **Actions**, thiết lập các thông tin như **Action, Log, Profile, Other Settings**
 
-Bước 9: Tạo rule NAT để các vServer có thể đi ra Internet
+**Bước 9**: Tạo **rule NAT** để các VM có thể đi ra Internet
 
-* Vào phần Policies -> NAT -> Add
-* Tại tab General đặt tên cho NAT rule
-* Tại tab Original Packet chọn Source Zone, Destination Zone, Destination Interface, Service, Source Address, Destination Address
-* Tạo tab Translated Packet thực hiện cấu hình như hình bên dưới
+* Vào phần **Policies** -> **NAT** -> **Add**
 
-Lưu ý: Cần thay đổi IP Address thành địa chỉ Static IP mà khách hàng đã cấu hình ở bước 5
+<figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
 
-Bước 10: Tiến hành Commit
+* Tại tab **General** đặt tên cho **NAT rule**
 
-Bước 11: Cấu hình Route Table trên portal VNG Cloud
+<figure><img src="../../../.gitbook/assets/2.png" alt=""><figcaption></figcaption></figure>
 
-Bước 12: Tiến hành ping 8.8.8.8 hoặc google.com
+* Tại tab **Original Packe**t chọn **Source Zone, Destination Zone, Destination Interface, Service, Source Address, Destination Address**
 
-### &#x20;<a href="#toc165621059" id="toc165621059"></a>
+<figure><img src="../../../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
+
+* Tạo tab **Translated Packet** thực hiện cấu hình như hình bên dưới
+
+Lưu ý: Cần thay đổi **IP Address** thành địa chỉ **Static IP** mà khách hàng đã cấu hình ở bước 5
+
+<figure><img src="../../../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
+
+**Bước 10**: Tiến hành **Commit**
+
+<figure><img src="../../../.gitbook/assets/5.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+## Khởi tạo Route Table <a href="#khoitaomotpublicclustervoiprivatenodegroup-khoitaoroutetable" id="khoitaomotpublicclustervoiprivatenodegroup-khoitaoroutetable"></a>
+
+Sau khi Palo Alto được khởi tạo và cấu hình thành công, bạn cần tạo một Route table để kết nối tới các mạng khác nhau. Cụ thể thực hiện theo các bước sau để tạo Route table:
+
+**Bước 1:** Truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/network/route-table](https://hcm-3.console.vngcloud.vn/vserver/network/route-table)
+
+**Bước 2:** Tại thanh menu điều hướng, chọn **Tab Network/ Route table.**
+
+**Bước 3:** Chọn **Create Route table.**&#x20;
+
+**Bước 4:** Nhập tên mô tả cho Route table. Tên Route table có thể bao gồm các chữ cái (a-z, A-Z, 0-9, '\_', '-'). Độ dài dữ liệu đầu vào nằm trong khoảng từ 5 đến 50. Nó không được bao gồm khoảng trắng ở đầu hoặc ở cuối.
+
+**Bước 5:** Chọn **VPC** cho Route table của bạn, nếu chưa có VPC cần tạo mới một VPC theo hướng dẫn tại [Trang VPC](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039). **VPC sử dụng để thiết lập Route table phải là VPC được chọn sử dụng cho Palo Alto và Cluster của bạn.**
+
+**Bước 6**: Chọn **Create** để tạo mới Route table.
+
+**Bước 7:** Chọn <img src="https://docs-admin.vngcloud.vn/download/thumbnails/73762068/image2024-4-16_15-40-3.png?version=1&#x26;modificationDate=1713256805000&#x26;api=v2" alt="" data-size="line">tại Route table vừa tạo sau đó chọn **Edit Routes.**
+
+**Bước 8:** Tại phần thêm mới **Route** hãy nhập vào các thông tin:&#x20;
+
+* Đối với Destination, hãy nhập **Destination CIDR là 0.0.0.0/0**
+* Đối với Target, hãy nhập **Target CIDR là địa chỉ IP Network Interface 2 của Palo Alto.**
+
+Ví dụ:
+
+<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+## **Kiểm tra kết nối**
+
+* Tiến hành ping 8.8.8.8 hoặc google.com
+
+<figure><img src="../../../.gitbook/assets/7.png" alt=""><figcaption></figcaption></figure>

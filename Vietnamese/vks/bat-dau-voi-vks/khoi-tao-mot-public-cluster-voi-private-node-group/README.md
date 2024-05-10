@@ -10,33 +10,24 @@
 
 ***
 
-### Khởi tạo Pfsense <a href="#khoitaomotpublicclustervoiprivatenodegroup-khoitaopfsense" id="khoitaomotpublicclustervoiprivatenodegroup-khoitaopfsense"></a>
-
-**Pfsense** là một phần mềm mã nguồn mở giúp cấu hình firewall được xây dựng dựa trên hệ điều hành FreeBSD.&#x20;
+### Khởi tạo Palo Alto hoặc Pfsense thay thế cho NAT Gateway <a href="#khoitaomotpublicclustervoiprivatenodegroup-khoitaopfsense" id="khoitaomotpublicclustervoiprivatenodegroup-khoitaopfsense"></a>
 
 {% hint style="info" %}
 **Chú ý:**
 
-* Để được hỗ trợ tốt nhất khi sử dụng pfSense, vui lòng liên hệ với đội ngũ chuyên viên của chúng tôi qua Hotline <mark style="color:green;">**1900 1549**</mark> hoặc email <mark style="color:green;">**support@vngcloud.vn**</mark><mark style="color:green;">.</mark>
+* Để được hỗ trợ tốt nhất khi sử dụng Palo Alto hoặc Pfsense, vui lòng liên hệ với đội ngũ chuyên viên của chúng tôi qua Hotline <mark style="color:green;">**1900 1549**</mark> hoặc email <mark style="color:green;">**support@vngcloud.vn**</mark><mark style="color:green;">.</mark>
 {% endhint %}
 
-Hoặc để khởi tạo một Pfsense, hãy làm theo các bước bên dưới:
+Hoặc bạn có thể chọn sử dụng Palo Alto hoặc Pfsense để làm việc với Private Node Group theo hướng dẫn tại:
 
-**Bước 1:** Truy cập vào [https://marketplace.console.vngcloud.vn/](https://marketplace.console.vngcloud.vn/)
-
-**Bước 2:** Tại màn hình chính, thực hiện tìm kiếm **Pfsense**, tại dịch vụ **Pfsense**, chọn **Launch**.
-
-**Bước 3:** Bạn có thể chỉnh sửa các thông số trong **App Configuration**, **Instance type, Volume settings, Network settings,** và nhập **Priority** cho **External** **Interface** và **Internal** **Interface** tương ứng mà bạn mong muốn. **Bạn cần lựa chọn VPC và Subnet giống với VPC và Subnet mà bạn lựa chọn sử dụng cho Cluster của bạn.** Ngoài ra bạn cũng cần chọn Một Server Group đã tồn tại hoặc chọn **Dedicated SOFT ANTI AFFINITY group** để chúng tôi tự động tạo một server group mới.&#x20;
-
-**Bước 4:** Chọn **Create Launch Application.** Hãy chờ vài phút để chúng tôi khởi tạo Pfsense của bạn, trạng thái của Pfsense lúc này là **Creating**.
-
-**Bước 5:** Khi trạng thái **Pfsense** là **Active**, bạn có thể xem thông tin Pfsense bằng cách chọn vào Appication Name tại cột **Name**.
+* [Palo Alto as a NAT Gateway](palo-alto-as-a-nat-gateway.md)
+* [Pfsense as a NAT Gateway](pfsense-as-a-nat-gateway.md)
 
 ***
 
 ### Khởi tạo Route Table <a href="#khoitaomotpublicclustervoiprivatenodegroup-khoitaoroutetable" id="khoitaomotpublicclustervoiprivatenodegroup-khoitaoroutetable"></a>
 
-Sau khi Pfsense được khởi tạo thành công, bạn cần tạo một Route table để kết nối tới các mạng khác nhau. Cụ thể thực hiện theo các bước sau để tạo Route table:
+Sau khi Palo Alto, Pfsense được khởi tạo thành công, bạn cần tạo một Route table để kết nối tới các mạng khác nhau. Cụ thể thực hiện theo các bước sau để tạo Route table:
 
 **Bước 1:** Truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/network/route-table](https://hcm-3.console.vngcloud.vn/vserver/network/route-table)
 
@@ -46,7 +37,7 @@ Sau khi Pfsense được khởi tạo thành công, bạn cần tạo một Rout
 
 **Bước 4: N**hập tên mô tả cho Route table. Tên Route table có thể bao gồm các chữ cái (a-z, A-Z, 0-9, '\_', '-'). Độ dài dữ liệu đầu vào nằm trong khoảng từ 5 đến 50. Nó không được bao gồm khoảng trắng ở đầu hoặc ở cuối.
 
-**Bước 5:** Chọn **VPC** cho Route table của bạn, nếu chưa có VPC cần tạo mới một VPC theo hướng dẫn tại [Trang VPC](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039). **VPC sử dụng để thiết lập Route table phải là VPC được chọn sử dụng cho Pfsense và Cluster của bạn.**
+**Bước 5:** Chọn **VPC** cho Route table của bạn, nếu chưa có VPC cần tạo mới một VPC theo hướng dẫn tại [Trang VPC](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039). **VPC sử dụng để thiết lập Route table phải là VPC được chọn sử dụng cho Palo Alto hoặc Pfsense và Cluster của bạn.**
 
 **Bước 6**: Chọn **Create** để tạo mới Route table.
 
@@ -54,8 +45,8 @@ Sau khi Pfsense được khởi tạo thành công, bạn cần tạo một Rout
 
 **Bước 8:** Tại phần thêm mới **Route** hãy nhập vào các thông tin:&#x20;
 
-* Đối với Destination, hãy nhập **Destination CIDR.**
-* Đối với Target, hãy nhập **Target CIDR.**
+* Đối với Destination, hãy nhập **Destination CIDR là 0.0.0.0/0**
+* Đối với Target, hãy nhập **Target CIDR là địa chỉ IP Network Interface của Palo Alto hoặc Pfsense tương ứng.**
 
 ***
 
@@ -194,4 +185,4 @@ Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao 
 
 Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.20/](http://180.93.181.20/)
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
