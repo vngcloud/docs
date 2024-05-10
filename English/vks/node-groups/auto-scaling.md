@@ -2,7 +2,7 @@
 
 ### Tổng quan
 
-Auto Scaling cho Cluster là một tính năng trong Kubernetes cho phép tự động điều chỉnh kích thước của cụm (Cluster) cụ thể là số lượng các node trong cụm để đáp ứng nhu cầu sử dụng.&#x20;
+Auto Scaling cho Cluster là một tính năng trong Kubernetes cho phép tự động điều chỉnh kích thước của cụm (Cluster) cụ thể là số lượng các node trong cụm để đáp ứng nhu cầu sử dụng.
 
 Tính năng Auto Scaling có những điểm nổi bật sau:
 
@@ -24,7 +24,7 @@ Khi triển khai các ứng dụng trong môi trường cloud, việc sử dụn
 
 Minh họa:
 
-<figure><img src="../../.gitbook/assets/image (177).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 Nếu thỏa mãn 2 điều kiện trên, hệ thống sẽ tăng số node (một hoặc nhiều nodes) để đáp ứng toàn bộ pods đang unscheduling. Quá trình này sẽ được thực hiện ngay lập tức theo 2 bước:
 
@@ -62,10 +62,10 @@ Trên hệ thống VKS, bạn có thể bật Auto Scaling khi:
 
 Để bật Auto Scaling cho Kubernetes Cluster của bạn vui lòng bật lựa chọn **Enable Auto Scaling,** khi bật lựa chọn này bạn cần nhập:.
 
-* **Minimum node**: số node tối thiểu mà Cluster phải có.&#x20;
+* **Minimum node**: số node tối thiểu mà Cluster phải có.
 * **Maximum node**: số node tối đa mà Cluster có thể scale tới.
-* **Node Group upgrade stratetry**: chiến lược upgrade Node Group. Khi bạn thiết lập **Node Group Upgrade Strategy** thông qua phương thức **Surge upgrade** cho một Node Group trong VKS, hệ thống VKS sẽ cập nhật tuần tự để nâng cấp các node, theo thứ tự không xác định[.](https://cloud.google.com/kubernetes-engine/docs/concepts/node-pool-upgrade-strategies.)&#x20;
-  * **Max surge:** giới hạn số lượng node được nâng cấp đồng thời (số lượng node mới (surge) có thể được tạo ra cùng một lúc). Mặc định **Max surge = 1** - chỉ nâng cấp một node tại một thời điểm.&#x20;
+* **Node Group upgrade stratetry**: chiến lược upgrade Node Group. Khi bạn thiết lập **Node Group Upgrade Strategy** thông qua phương thức **Surge upgrade** cho một Node Group trong VKS, hệ thống VKS sẽ cập nhật tuần tự để nâng cấp các node, theo thứ tự không xác định[.](https://cloud.google.com/kubernetes-engine/docs/concepts/node-pool-upgrade-strategies.)
+  * **Max surge:** giới hạn số lượng node được nâng cấp đồng thời (số lượng node mới (surge) có thể được tạo ra cùng một lúc). Mặc định **Max surge = 1** - chỉ nâng cấp một node tại một thời điểm.
   * **Max unavailable**: giới hạn số lượng node không thể truy cập được trong quá trình nâng cấp (số lượng node hiện tại có thể bị gián đoạn cùng một lúc). Mặc định **Max unavailable = 0** - đảm bảo tất cả các node đều có thể truy cập được trong quá trình nâng cấp.
 
 Ví dụ như hình bên dưới: tôi đã khởi tạo một Node Group với:
@@ -74,7 +74,7 @@ Ví dụ như hình bên dưới: tôi đã khởi tạo một Node Group với:
 * **Minimum node: 1 nodes**
 * **Maximum node: 5 nodes**
 
-Lúc này:&#x20;
+Lúc này:
 
 * Nếu có một hoặc nhiều pod không thể scheduling trên bất kỳ node trên cụm vì lý do thiếu resource và việc thêm 1 node giống với cấu hình node group này có thể xử lý vấn đề thì hệ thống sẽ thực hiện scale up. Với thiết lập này thì hệ thống có thể scale up tối đa lên tới **5 node**.
 * Nếu có 1 node có low utilization (khả dụng) thấp ở mức <mark style="color:red;">**< 50%**</mark> và tất cả các pod của node đó có thể scheduling trên node khác thì hệ thống sẽ thực hiện scale up. Với thiết lập này thì hệ thống có thể scale down xuống mức tối thiểu là **1 node.**
