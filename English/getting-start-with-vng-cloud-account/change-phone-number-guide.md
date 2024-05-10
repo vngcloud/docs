@@ -1,31 +1,16 @@
 # Change Phone Number Guide
 
-**Bước 1**: Đăng nhập vào trang quản trị tài khoản SSO: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/) Trên menu các chức năng quản trị tài khoản, chọn mục **Đổi số điện thoại**
+**Step 1**: Log in to the Single Sign-On account management page: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/). In the account management function menu, select the "**Change Phone Number**" option.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
-Bước 2: Nhập vào số điện thoại mà quý khách muốn đổi. Tiếp đó nhấn **Gửi OTP** để nhận mã OTP từ **Email** mà quý khách đã đăng ký.
-
-\
+**Step 2:** Enter the phone number you want to change to. Then, click "**Send OTP**" to receive the OTP code from the email you have registered.\
 
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938151/image2021-3-18_16-57-23.png?version=1&#x26;modificationDate=1616061442000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
-\
+Our system will send you an email titled "**VNG Cloud - OTP Update Phone Number.**" Copy the OTP code from the email and paste it into the "**Enter OTP**" field.
 
-
-Hệ thống của chúng tôi sẽ gửi cho quý khách email với tiêu đề **VNG Cloud - OTP cập nhật số điện thoại**, sao chép mã OTP trong email và dán vào ô **Nhập OTP**
-
-\
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938151/image2021-3-18_17-0-3.png?version=1&#x26;modificationDate=1616061601000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-Bước 3: Nhập mã bảo vệ và nhấn **Lưu thiết lập** để lưu số điện thoại mới. Quý khách sẽ nhận được thông báo cùng với email đổi số điện thoại thành công tương tự như hình
-
-\
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938151/image2021-3-18_17-1-17.png?version=1&#x26;modificationDate=1616061675000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+**Step 3:** Enter the security code and click "**Save Settings**" to save the new phone number. You will receive a notification along with a successful phone number change email, similar to the image.
 
 .
