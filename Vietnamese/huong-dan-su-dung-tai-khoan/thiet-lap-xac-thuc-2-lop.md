@@ -2,13 +2,13 @@
 
 **Bước 1:** Đăng nhập vào [trang quản trị tài khoản](https://dashboard.console.vngcloud.vn/). Trên menu các chức năng quản trị tài khoản, chọn **"Xác thực 2 lớp".**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938012/image2023-10-17_16-35-17.png?version=1&#x26;modificationDate=1697535318000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 2:** Chọn chức năng “**Xác thực 2 lớp**”**.**
 
-1. Bật chức năng mong muốn xác thực tương tự như hình.&#x20;
+Bật chức năng mong muốn xác thực tương tự như hình.&#x20;
 
-<figure><img src="https://docs.vngcloud.vn/download/thumbnails/22938012/image2023-10-17_16-38-37.png?version=1&#x26;modificationDate=1697535518000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
 
 Có 2 phương thức để nhận OTP là qua SMS hoặc qua ứng dụng Google Authenticator.
 
@@ -18,20 +18,17 @@ Có 2 phương thức để nhận OTP là qua SMS hoặc qua ứng dụng Googl
 
 &#x20;       1.2 Nhận OTP qua ứng dụng Google Authenticator.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938012/Screen%20Shot%202020-10-19%20at%2012.06.17.png?version=2&#x26;modificationDate=1603163213000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (172).png" alt=""><figcaption></figcaption></figure>
 
 * Nhấn vào button **KHỞI TẠO**, bạn sẽ được đưa đến trang Tạo mã Google Authenticator và thực hiện theo các bước hướng dẫn
 * Nhấn vào **Lưu thiết lập** để hoàn tất.
-* Bbạn sẽ nhận được thông báo **Bạn đã hoàn tất** như hình.
+* Bạn sẽ nhận được thông báo **Bạn đã hoàn tất**.
 
-\
-
-
-<figure><img src="https://docs.vngcloud.vn/download/thumbnails/22938012/Screen%20Shot%202020-10-20%20at%2009.50.59.png?version=1&#x26;modificationDate=1603162482000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
 
 Ở màn hình **Chứng thực đa yếu tố** chỉ cần Bật/Tắt chức năng theo nhu cầu của bạn, có thể chọn 1 trong 2 hoặc là cả 2. Ở đây chúng tôi có hỗ trợ bạn tạo mã QR code mới, click vào link và làm theo hướng dẫn.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938012/Screen%20Shot%202020-10-20%20at%2009.59.47.png?version=2&#x26;modificationDate=1603163157000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
 
 Cuối cùng, nhấn vào nút **Lưu thiết lập** để hoàn tất.
 
