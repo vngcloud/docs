@@ -2,7 +2,7 @@
 
 VKS (VNGCloud Kubernetes Service) is a managed service on VNGCloud that simplifies the process of deploying and managing container-based applications. Kubernetes is an open-source platform developed by Google and widely used to manage and deploy container applications in a distributed environment.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
