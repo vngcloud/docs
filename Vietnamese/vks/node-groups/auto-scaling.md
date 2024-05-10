@@ -1,5 +1,7 @@
 # Auto Scaling
 
+### Tổng quan
+
 Auto Scaling cho Cluster là một tính năng trong hệ thống quản lý cụm (cluster management) như Kubernetes, Docker Swarm, hoặc các dịch vụ điện toán đám mây, cho phép tự động điều chỉnh số lượng các node hoặc các tài nguyên trong cụm dựa trên tải công việc và yêu cầu của ứng dụng.
 
 Tính năng Auto Scaling giúp đáp ứng một số vấn đề quan trọng trong việc quản lý cụm:
@@ -37,3 +39,15 @@ Ví dụ như hình bên dưới: tôi đã khởi tạo một Node Group với:
 * **Maximum node: 5 nodes**
 
 <figure><img src="https://docs-admin.vngcloud.vn/download/attachments/73762025/image2024-4-17_11-45-7.png?version=1&#x26;modificationDate=1713329108000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+
+***
+
+### Cơ chế Auto Scaling
+
+#### Cơ chế Scale up:
+
+* Scale up khi có pod không thể scheduling trên bất kỳ node nào vì lý do thiếu resource và việc thêm 1 node giống với cấu hình node group có thể xử lý vấn đề này thì hệ thống sẽ thực hiện scale up. Scale down:
+
+#### Cơ chế Scale down:
+
+* Scale down khi có 1 node có low utilization (khả dụng) thấp ở mức <mark style="color:red;">**< 50%**</mark> và tất cả các pod của node đó có thể scheduling trên node khác.
