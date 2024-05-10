@@ -1,10 +1,10 @@
 # Two-Factor Authentication (2FA)
 
-**Bước 1:** Đăng nhập vào [trang quản trị tài khoản](https://dashboard.console.vngcloud.vn/). Trên menu các chức năng quản trị tài khoản, chọn **"Xác thực 2 lớp".**
+**Step 1**: Log in to the [Account management page](https://dashboard.console.vngcloud.vn/). From the account management functions menu, select "**2FA**".
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/22938012/image2023-10-17_16-35-17.png?version=1&#x26;modificationDate=1697535318000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-**Bước 2:** Chọn chức năng “**Xác thực 2 lớp**”**.**
+**Step 2**: Select the "2FA" function.
 
 1. Bật chức năng mong muốn xác thực tương tự như hình.&#x20;
 
