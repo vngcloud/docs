@@ -30,9 +30,9 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 **Bước 1:** Sau khi khởi tạo Palo Alto từ vMarketPlace theo hướng dẫn bên trên, bạn có thể truy cập vào giao diện vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) để kiểm tra server chạy Palo Alto đã được khởi tạo xong chưa.
 
-**Bước 2: Sau khi server chạy Palo Alto được khởi tạo thành công**. Để vào GUI của Palo Alto khách hàng cần có 1 vServer chạy Windows. Sau đó khách hàng truy cập vào bằng IP Internal Interface với tên đăng nhập và mật khẩu mặc định là: **admin/admin**
+**Bước 2: Sau khi server chạy Palo Alto được khởi tạo thành công**. Để vào GUI của Palo Alto bạn cần có 1 vServer chạy Windows. Sau đó bạn truy cập vào bằng IP Internal Interface với tên đăng nhập và mật khẩu mặc định là: **admin/admin**
 
-Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI của Palo Alto. Khách hàng cần tạo cùng VPC và sử dụng subnet khác với subnet có priority là 1 khi khởi tạo Palo Alto
+Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI của Palo Alto. Bạn cần tạo cùng VPC và sử dụng subnet khác với subnet có priority là 1 khi khởi tạo Palo Alto
 
 ![](<../../../.gitbook/assets/3 (1).png>)
 
@@ -64,7 +64,7 @@ Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI c�
 
 ![](../../../.gitbook/assets/8.png)
 
-* Để lấy thông tin IP này khách hàng vào phần **Network Interface** của **Palo Alto** để xem thông tin
+* Để lấy thông tin IP này bạn vào phần **Network Interface** của **Palo Alto** để xem thông tin
 
 ![](../../../.gitbook/assets/9.png)
 
@@ -76,7 +76,7 @@ Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI c�
 
 ![](../../../.gitbook/assets/11.png)
 
-* Tại tab **IPv4:** khách hàng tiến hành thiết lập **Static IP**
+* Tại tab **IPv4:** bạn tiến hành thiết lập **Static IP**
 
 ![](../../../.gitbook/assets/12.png)
 
@@ -97,7 +97,7 @@ Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI c�
 **Bước 8:** Tạo **Security Policy Rule**
 
 * Vào phần **Policies** -> **Security** ->**Add**
-* Tại tab **General**, khách hàng cần đặt tên cho rule
+* Tại tab **General**, bạn cần đặt tên cho rule
 
 ![](../../../.gitbook/assets/16.png)
 
@@ -135,7 +135,7 @@ Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI c�
 
 * Tạo tab **Translated Packet** thực hiện cấu hình như hình bên dưới
 
-Lưu ý: Cần thay đổi **IP Address** thành địa chỉ **Static IP** mà khách hàng đã cấu hình ở bước 5
+Lưu ý: Cần thay đổi **IP Address** thành địa chỉ **Static IP** mà bạn đã cấu hình ở bước 6
 
 <figure><img src="../../../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
 
