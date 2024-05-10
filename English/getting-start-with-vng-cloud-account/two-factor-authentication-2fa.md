@@ -2,13 +2,13 @@
 
 **Step 1**: Log in to the [Account management page](https://dashboard.console.vngcloud.vn/). From the account management functions menu, select "**2FA**".
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938012/image2023-10-17_16-35-17.png?version=1&#x26;modificationDate=1697535318000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 **Step 2**: Select the "2FA" function.
 
-1. Turn on the desired authentication method as shown in the image.
+Turn on the desired authentication method as shown in the image.
 
-<figure><img src="https://docs.vngcloud.vn/download/thumbnails/22938012/image2023-10-17_16-38-37.png?version=1&#x26;modificationDate=1697535518000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 There are 2 methods to receive OTP: via SMS or through the Google Authenticator app.
 
@@ -18,20 +18,15 @@ There are 2 methods to receive OTP: via SMS or through the Google Authenticator 
 
 &#x20;       1.2 Receive OTP via the Google Authenticator app.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938012/Screen%20Shot%202020-10-19%20at%2012.06.17.png?version=2&#x26;modificationDate=1603163213000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 * Click the **INITIATE** button, you will be taken to the Google Authenticator code creation page and follow the instructions.
 * Click **Save Settings** to complete.
 * You will receive a notification that **you have completed** as shown in the image.
 
-\
-
-
-<figure><img src="https://docs.vngcloud.vn/download/thumbnails/22938012/Screen%20Shot%202020-10-20%20at%2009.50.59.png?version=1&#x26;modificationDate=1603162482000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 On the **Multi-Factor Authentication** screen, simply Enable/Disable the function according to your needs, you can choose one of the two or both. Here we support you in creating a new QR code, click on the link and follow the instructions.
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938012/Screen%20Shot%202020-10-20%20at%2009.59.47.png?version=2&#x26;modificationDate=1603163157000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 Finally, click the **Save Settings** button to complete.
 
