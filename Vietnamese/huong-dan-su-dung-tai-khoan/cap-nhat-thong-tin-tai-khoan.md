@@ -56,15 +56,15 @@ Trong vòng 3 ngày, bạn có thể hủy yêu cầu rút lại sự đồng ý
 
 Trong trường hợp cần xóa tài khoản, bạn cần thực hiện theo thứ tự sau
 
-**Bước 1**: vào chức năng "**Cập nhật thông tin tài khoản**"
+**Bước 1**: Vào chức năng "**Cập nhật thông tin tài khoản**"
 
 **Bước 2**: chọn "**Xóa tài khoản**"
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/31556041/image2023-10-17_16-17-17.png?version=1&#x26;modificationDate=1697534238000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3**: Xác nhận yêu cầu
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/31556041/image2023-10-17_16-19-57.png?version=1&#x26;modificationDate=1697534398000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
 
 Nhập mã bảo vệ và chọn "**Xóa tài khoản**"
 
