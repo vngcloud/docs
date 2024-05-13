@@ -24,7 +24,7 @@ Khi triển khai các ứng dụng trong môi trường cloud, việc sử dụn
 
 Minh họa:
 
-<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 Nếu thỏa mãn 2 điều kiện trên, hệ thống sẽ tăng số node (một hoặc nhiều nodes) để đáp ứng toàn bộ pods đang unscheduling. Quá trình này sẽ được thực hiện ngay lập tức theo 2 bước:
 
