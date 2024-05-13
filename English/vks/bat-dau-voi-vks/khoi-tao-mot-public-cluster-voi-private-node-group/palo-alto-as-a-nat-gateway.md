@@ -34,7 +34,7 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI của Palo Alto. Bạn cần tạo cùng VPC và sử dụng subnet khác với subnet có priority là 1 khi khởi tạo Palo Alto
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3**: Sau khi đăng nhập xong, bạn cần thực hiện thay đổi mật khẩu lần đầu. Hãy nhập mật khẩu mới theo mong muốn của bạn.
 
@@ -42,7 +42,7 @@ Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI c�
 
 * Chọn bút **Add**
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Đặt tên cho **Zone**: **Inside** sau đó chọn **OK**
 

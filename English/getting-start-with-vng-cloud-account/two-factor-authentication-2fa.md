@@ -2,13 +2,13 @@
 
 **Step 1**: Log in to the [Account management page](https://dashboard.console.vngcloud.vn/). From the account management functions menu, select "**2FA**".
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 **Step 2**: Select the "2FA" function.
 
 Turn on the desired authentication method as shown in the image.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 There are 2 methods to receive OTP: via SMS or through the Google Authenticator app.
 
