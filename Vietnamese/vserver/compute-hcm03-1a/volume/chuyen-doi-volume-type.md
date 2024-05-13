@@ -31,8 +31,8 @@ Tham khảo hướng dẫn chi tiết bên dưới để thực hiện chuyển 
 
 * **Bước 0: Cấu hình các thông tin cần chuyển đổi:**
   * 0.1: Truy cập danh sách volume từ portal [tại đây.](https://hcm-3.console.vngcloud.vn/vserver/block-store/volumes)
-  * 0.2: Điều hướng tới volume cần chuyển đổi, nhấn chọn **biểu tượng ba chấm** tại cột **Hành động** <img src="../../../.gitbook/assets/image (2) (1).png" alt="" data-size="original">
-  * 0.3: Tiếp tục nhấn chọn **Migrate Volume** <img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" data-size="line">
+  * 0.2: Điều hướng tới volume cần chuyển đổi, nhấn chọn **biểu tượng ba chấm** tại cột **Hành động** <img src="../../../.gitbook/assets/image (2) (1) (1).png" alt="" data-size="original">
+  * 0.3: Tiếp tục nhấn chọn **Migrate Volume** <img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" data-size="line">
   * 0.4: Tại của sổ chọn thông tin để Migrate, chọn các thông tin sau:
     * Loại: mặc định chọn NVME
     * Kích thước: Dung lượng hiện tại, không được phép thay đổi
@@ -56,7 +56,7 @@ Tham khảo hướng dẫn chi tiết bên dưới để thực hiện chuyển 
 
           _<mark style="color:orange;">**Trường hợp volume đang được sử dụng trong máy ảo (server), người dùng buộc phải thực hiện Tắt Server để có thể nhấn chon Tiếp tục Migrate.**</mark>_&#x20;
 
-          <figure><img src="../../../.gitbook/assets/image (1) (1).png" alt="" width="332"><figcaption></figcaption></figure>
+          <figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt="" width="332"><figcaption></figcaption></figure>
   * **Bước 3: Xác nhận sử dụng volume hoàn tất chuyển đổi**
     *   3.1: Sau khi hoàn tất bước 1, giao diện thực hiện sẽ chuyển sang bước 3/4, và yêu cầu người dùng tương tác. Tham khảo hình minh họa sau:&#x20;
 
@@ -71,8 +71,8 @@ Tham khảo hướng dẫn chi tiết bên dưới để thực hiện chuyển 
 
 * **Bước 0: Cấu hình các thông tin cần chuyển đổi:**
   * 0.1: Truy cập danh sách volume từ portal [tại đây.](https://hcm-3.console.vngcloud.vn/vserver/block-store/volumes)
-  * 0.2: Điều hướng tới volume cần chuyển đổi, nhấn chọn **biểu tượng ba chấm** tại cột **Hành động** <img src="../../../.gitbook/assets/image (2) (1).png" alt="" data-size="original">
-  * 0.3: Tiếp tục nhấn chọn **Migrate Volume** <img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" data-size="line">
+  * 0.2: Điều hướng tới volume cần chuyển đổi, nhấn chọn **biểu tượng ba chấm** tại cột **Hành động** <img src="../../../.gitbook/assets/image (2) (1) (1).png" alt="" data-size="original">
+  * 0.3: Tiếp tục nhấn chọn **Migrate Volume** <img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" data-size="line">
   * 0.4: Tại của sổ chọn thông tin để Migrate, chọn các thông tin sau:
     * Loại: mặc định chọn NVME
       * Kích thước: Dung lượng hiện tại, không được phép thay đổi
@@ -96,7 +96,7 @@ Tham khảo hướng dẫn chi tiết bên dưới để thực hiện chuyển 
 
         _<mark style="color:orange;">**Trường hợp volume đang được sử dụng trong máy ảo (server), người dùng buộc phải thực hiện Tắt Server để có thể nhấn chon Tiếp tục Migrate.**</mark>_&#x20;
 
-        <figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt="" width="324"><figcaption></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="324"><figcaption></figcaption></figure>
 * **Bước 3: Xác nhận sử dụng volume hoàn tất chuyển đổi**
   *   3.1: Sau khi hoàn tất bước 1, giao diện thực hiện sẽ chuyển sang bước 3/4, và yêu cầu người dùng tương tác. Tham khảo hình minh họa sau:&#x20;
 
