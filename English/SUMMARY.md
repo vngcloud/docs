@@ -41,6 +41,7 @@
         * [Datatransfers Bandwidth Service](vserver/compute-hcm03-1a/vpc/bandwidth/datatransfers-bandwidth-service.md)
         * [Dedicated Bandwidth Service](vserver/compute-hcm03-1a/vpc/bandwidth/dedicated-bandwidth-service.md)
         * [Shared Bandwidth Service](vserver/compute-hcm03-1a/vpc/bandwidth/shared-bandwidth-service.md)
+        * [Billing Method](vserver/compute-hcm03-1a/vpc/bandwidth/billing-method.md)
     * [Interconnect](vserver/compute-hcm03-1a/interconnect/README.md)
       * [Starts with Interconnect](vserver/compute-hcm03-1a/interconnect/starts-with-interconnect.md)
       * [Interconnect Features](vserver/compute-hcm03-1a/interconnect/interconnect-features.md)
