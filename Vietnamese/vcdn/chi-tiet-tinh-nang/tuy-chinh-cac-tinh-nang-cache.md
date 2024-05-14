@@ -2,9 +2,7 @@
 
 Hỗ trợ tùy chỉnh các tính năng cache**:** cho phép khách hàng tùy chỉnh các chỉ số cache trên hệ thống và trên browser.
 
-&#x20;   &#x20;
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045500/image2021-11-17_14-9-59.png?version=1&#x26;modificationDate=1637133000000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;    (1): Caching Level: thay đổi tùy chọn loại hình cache trên hệ thống CDN:
 

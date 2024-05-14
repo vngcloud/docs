@@ -8,7 +8,7 @@
 
 Trên vCDN, bạn có thể thiết lập Server Cache Expiration (TTL) từ mức giá trị tối thiểu là 30 phút tới mức giá trị tối đa là 1 ngày mà chúng tôi hỗ trợ.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045467/image2024-1-10_9-49-19.png?version=1&#x26;modificationDate=1704854960000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -16,4 +16,4 @@ Trên vCDN, bạn có thể thiết lập Server Cache Expiration (TTL) từ m�
 
 Trên vCDN, bạn có thể thiết lập Browser Cache Expiration từ mức giá trị tối thiểu là 30 phút tới mức giá trị tối đa là 1 ngày mà chúng tôi hỗ trợ.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045467/image2024-1-10_9-53-32.png?version=1&#x26;modificationDate=1704855212000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>

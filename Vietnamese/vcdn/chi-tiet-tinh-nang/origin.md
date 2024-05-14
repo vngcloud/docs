@@ -4,7 +4,7 @@ Hiện tại, vCDN đang hỗ trợ Multi Origin với các Thuật toán kết 
 
 Khi bạn tạo 1 Web Accelerator CDN, màn hình khởi tạo CDN sẽ bao gồm các thông tin sau:
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045477/image2021-11-17_13-56-23.png?version=1&#x26;modificationDate=1637132184000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (238).png" alt=""><figcaption></figcaption></figure>
 
 Trong đó:
 
@@ -28,12 +28,12 @@ Sau khi nhập xong thông tin Server Origin và click “Add Server”\*, khung
 
 _\* Khi khách hàng nhập thông tin domain chính, hệ thống sẽ tự động thêm các Server Origin dựa theo các bản ghi DNS có sẳn của tên miền vào khung số (8)._
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045477/image2021-11-17_13-58-35.png?version=1&#x26;modificationDate=1637132316000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (239).png" alt=""><figcaption></figcaption></figure>
 
 * Priority – thể hiện mức độ ưu tiên (weight) của Server Origin, số càng cao, độ ưu tiên càng cao.
 * Value: Địa chỉ IPv4 của Origin Servers.
 * Algorithms: Thuật toán phân tải traffic cho Origin Servers.
-* Status: Thể hiện trạng thái ![](https://docs.vngcloud.vn/download/thumbnails/36045477/image2021-11-17\_13-59-15.png?version=1\&modificationDate=1637132356000\&api=v2) (Active) và ![](https://docs.vngcloud.vn/download/thumbnails/36045477/image2021-11-17\_13-59-24.png?version=1\&modificationDate=1637132365000\&api=v2) (Disabled)
+* Status: Thể hiện trạng thái <img src="../../.gitbook/assets/image (240).png" alt="" data-size="line"> (Active) và  <img src="../../.gitbook/assets/image (241).png" alt="" data-size="line">(Disabled)
   * Active: Origin Server sẽ được đưa vào Pool Origin Servers.
   * Disabled: Origin Server sẽ bị loại bỏ khỏi Pool Origin Servers.
 * Hỗ trợ cấu hình các loại mã lỗi để hệ thống tự động thực hiện Fail-Over .

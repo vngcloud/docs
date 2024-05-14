@@ -2,9 +2,7 @@
 
 Cho phép xóa các nội dung đã cache trước đó trên hệ thống CDN
 
-&#x20;  &#x20;
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045585/image2021-11-17_15-16-58.png?version=1&#x26;modificationDate=1637137018000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (265).png" alt=""><figcaption></figcaption></figure>
 
 Tại đây, bạn có thể thực hiện các lựa chọn phù hợp:
 

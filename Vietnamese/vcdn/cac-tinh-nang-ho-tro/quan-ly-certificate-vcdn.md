@@ -2,17 +2,14 @@
 
 Hỗ trợ khách hàng upload SSL Cert và SSL Key bao gồm key ChainCA
 
-\-                                     &#x20;
-
-<figure><img src="https://docs.vngcloud.vn/download/thumbnails/36045579/image2021-11-17_15-13-16.png?version=1&#x26;modificationDate=1637136796000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure>
 
 Sau khi đăng nhập, click vào mục “Certificate” như  hình bên.&#x20;
 
-&#x20;   &#x20;
+<figure><img src="../../.gitbook/assets/image (263).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045579/image2021-11-17_15-13-58.png?version=1&#x26;modificationDate=1637136839000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+Giao diện quản lý Certificate hiện ra với danh sách các certificate gồm các cột:
 
-* Giao diện quản lý Certificate hiện ra với danh sách các certificate gồm các cột:
 * Domain,
 * Issuer (Tên nhà cấp phát chứng chỉ),
 * Valid From (Thời gian hiệu lực của chứng chỉ),
@@ -23,11 +20,7 @@ Sau khi đăng nhập, click vào mục “Certificate” như  hình bên.&#x20
 * Đầu trang, thông tin tóm tắt về số lượng chứng chỉ (Total), số certificate đang được kích hoạt để sẳn sàng sử dụng (Active) và số chứng chỉ đã tạm hủy kích hoạt (Inactive).
 * Để thêm mới/upload certificate, click vào nút “Upload” , giao diện upload ceritificate sẽ như sau:
 
-
-
-&#x20;   &#x20;
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045579/image2021-11-17_15-15-20.png?version=1&#x26;modificationDate=1637136921000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>
 
 (1): Click vào Upload Private Key để tải lên private key của Certificate, hoặc cũng có thể paste private key vào khung textbox bên dưới.
 
@@ -41,9 +34,9 @@ Sau khi nhập/upload đầy đủ thông tin, click “Save and Deploy”(5) đ
 
 Nếu chứng chỉ chưa sẳn sàng để dùng ngay, click “Save as Draf”(4) để lưu trữ.
 
+{% hint style="info" %}
+**Chú ý:**
 
-
-_**Lưu ý:**_
-
-* _vCDN do VNG Cloud cung cấp là dịch vụ phân phối nội dung thông qua giao thức HTTP có hỗ trợ TLS/SSL (HTTPS). Do vậy, các TLS Certificate - được tải lên bởi khách hàng nhằm mục đích mã hóa kênh truyền HTTP giữa người dùng và hệ thống máy chủ CDN - đồng thời được lưu trữ và quản lý bởi khách hàng và VNG Cloud cho đến khi khách hàng thực hiện lệnh xóa thông qua giao diện Web Portal/API._
-* _VNG Cloud cam kết không chia sẻ các TLS Certificate này cho bên thứ ba bất kỳ._
+* vCDN do VNG Cloud cung cấp là dịch vụ phân phối nội dung thông qua giao thức HTTP có hỗ trợ TLS/SSL (HTTPS). Do vậy, các TLS Certificate - được tải lên bởi khách hàng nhằm mục đích mã hóa kênh truyền HTTP giữa người dùng và hệ thống máy chủ CDN - đồng thời được lưu trữ và quản lý bởi khách hàng và VNG Cloud cho đến khi khách hàng thực hiện lệnh xóa thông qua giao diện Web Portal/API.
+* VNG Cloud cam kết không chia sẻ các TLS Certificate này cho bên thứ ba bất kỳ.
+{% endhint %}

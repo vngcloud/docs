@@ -9,4 +9,4 @@ Hiện tại, vCDN đang hỗ trợ bạn kết nối trực tiếp đến origi
 * S3 Signature: loại chữ ký, bạn có thể chọn loại S3 Signature là v2 hoặc v4 tùy theo nhu cầu của bạn.
 * Use SSL: bật/ tắt theo nhu cầu.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045473/image2024-1-10_10-16-7.png?version=1&#x26;modificationDate=1704856568000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>

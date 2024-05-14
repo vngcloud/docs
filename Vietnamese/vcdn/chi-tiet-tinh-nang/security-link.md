@@ -4,7 +4,7 @@
 
 Secure token là các đoạn mã có cấu trúc nhằm bảo vệ nội dung không bị đánh cắp và phát tán trên các nơi khác. Trên vCDN, chúng tôi hỗ trợ bạn có thể thực hiện bật tính năng Secure token khi tạo hoặc chỉnh sửa CDN đã tạo trước đó.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045447/image2021-11-17_13-40-52.png?version=1&#x26;modificationDate=1637131253000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -12,7 +12,7 @@ Secure token là các đoạn mã có cấu trúc nhằm bảo vệ nội dung k
 
 Khi người dùng cuối cần truy cập vào nội dung đã được thiết lập kích hoạt "Secure token" thì yêu cầu này sẽ được hệ thống kiểm tra lại yêu cầu có thỏa công thức hay không, nếu thỏa thì người dùng cuối lấy được nội dung, nếu không thì yêu cầu sẽ bị từ chối.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045447/image2021-11-17_13-41-26.png?version=1&#x26;modificationDate=1637131287000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
 
 Trong đó:&#x20;
 
@@ -38,21 +38,21 @@ Trong đó:&#x20;
 
 #### **Sử dụng tính năng CORS** <a href="#securitylink-sudungtinhnangcors" id="securitylink-sudungtinhnangcors"></a>
 
-CORS là tính năng bảo mật đầu ra của vCDN cho phép truy cập có các cấu hình như: tên miền, địa chỉ IP,  Header, Method, Expose Header truy cập vào Link đầu ra của VCDN.
+CORS là tính năng bảo mật đầu ra của vCDN cho phép truy cập có các cấu hình như: tên miền, địa chỉ IP,  Header, Method, Expose Header truy cập vào Link đầu ra của vCDN.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045447/image2021-11-17_13-45-4.png?version=1&#x26;modificationDate=1637131505000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (227).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 #### **Khởi tạo Whitelist / Blacklist IP** <a href="#securitylink-khoitaowhitelist-blacklistip" id="securitylink-khoitaowhitelist-blacklistip"></a>
 
-Có thể add các danh sách IP của các Origin cho phép truy cập vào link đầu ra (Whitelist IP) .
+Có thể add các danh sách IP của các Origin cho phép truy cập vào link đầu ra (Whitelist IP).
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045447/image2021-11-17_13-46-24.png?version=1&#x26;modificationDate=1637131585000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (228).png" alt=""><figcaption></figcaption></figure>
 
 khóa các IP không cho phép Origin truy cập vào link đầu ra của vCDN (Blacklist IP).
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045447/image2021-11-17_13-46-45.png?version=1&#x26;modificationDate=1637131606000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (229).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -60,11 +60,11 @@ khóa các IP không cho phép Origin truy cập vào link đầu ra của vCDN 
 
 Có thể tạo danh sách những origin ở các quốc gia nào có thể truy cập link đầu ra:
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045447/image2021-11-17_13-48-12.png?version=1&#x26;modificationDate=1637131693000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (230).png" alt=""><figcaption></figcaption></figure>
 
 Không cho phép những Origin ở quốc gia nào truy cập Link đầu ra:
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045447/image2021-11-17_13-48-31.png?version=1&#x26;modificationDate=1637131712000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (231).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -72,8 +72,8 @@ Không cho phép những Origin ở quốc gia nào truy cập Link đầu ra:
 
 Cho phép Origin có domain trong list có thể truy cập link đầu ra:
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045447/image2021-11-17_13-49-40.png?version=1&#x26;modificationDate=1637131781000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
 
 Không cho phép Origin có domain trong danh sách có thể truy cập link đầu ra:
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045447/image2021-11-17_13-50-2.png?version=1&#x26;modificationDate=1637131803000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>

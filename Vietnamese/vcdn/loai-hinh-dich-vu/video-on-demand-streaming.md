@@ -11,6 +11,14 @@ Dịch vụ VOD của VNG Cloud giúp doanh nghiệp:
 * Tăng mức độ hài lòng của khách hàng với dịch vụ.
 * Phân tích dữ liệu đa chiều theo thời gian thực.
 
+***
+
+#### **Sơ đồ hoạt động** <a href="#videoondemandstreaming-cochephanphoidulieu" id="videoondemandstreaming-cochephanphoidulieu"></a>
+
+<figure><img src="../../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
+
+***
+
 #### **Cơ Chế Phân Phối Dữ Liệu** <a href="#videoondemandstreaming-cochephanphoidulieu" id="videoondemandstreaming-cochephanphoidulieu"></a>
 
 * Dữ liệu đầu vào:
@@ -47,24 +55,24 @@ Dịch vụ VOD của VNG Cloud giúp doanh nghiệp:
 
 #### **Hướng dẫn khởi tạo VOD CDN** <a href="#videoondemandstreaming-huongdankhoitaovodcdn" id="videoondemandstreaming-huongdankhoitaovodcdn"></a>
 
-* Bước 1: Tạo VOD CDN bằng cách chọn menu VOD, chọn button Create CDN.
+* **Bước 1:** Tạo VOD CDN bằng cách chọn menu VOD, chọn button Create CDN.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045701/image2023-8-15_11-20-4.png?version=1&#x26;modificationDate=1692073205000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (214).png" alt=""><figcaption></figcaption></figure>
 
-* Bước 2: Tạo CDN
+* **Bước 2**: Tạo CDN
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045701/image2023-8-15_11-21-52.png?version=1&#x26;modificationDate=1692073312000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
 
-* Bước 3: Nhập tên cho CDN.
-* Bước 4: Chọn cấu hình VOD type bao gồm:
+* **Bước 3**: Nhập tên cho CDN.
+* **Bước 4**: Chọn cấu hình VOD type bao gồm:
   * CDN Packaging (Hệ thống vCDN sẽ packaging media từ file video gốc của khách hàng).
   * Origin packaging (Origin của khách hàng tự packaging, vCDN chỉ phục vụ).
   * MP4 (vCDN phục vụ trực tiếp file mp4 gốc từ origin cho end-user).
-* Bước 5: Thời gian "băm" của các file "ts" với loại dịch vụ VoD là CDN Packaging.
-* Tùy chọn các tính năng dịch vụ của VOD
-* Tùy theo người dùng yêu cầu nhập thông tin [chính sách rule cơ bản](../chi-tiet-tinh-nang/chinh-sach-rule-co-ban-pagerule.md) hoặc chính sách rule nâng cao cho CDN.
-* Khi điền các thông tin đúng và đủ thì nhấn button Submit ở cuối cùng giao diện đợi khoản 5 phút cho hệ thống cái đặt CDN cho người dùng.
-* Người dùng có thể truy cập CDN qua vCDN Domain khi đã tạo CDN xong.
+* **Bước 5**: Thời gian "băm" của các file "ts" với loại dịch vụ VoD là CDN Packaging.
+* **Bước 6:** Tùy chọn các tính năng dịch vụ của VOD
+* **Bước 7:** Tùy theo người dùng yêu cầu nhập thông tin [chính sách rule cơ bản](../chi-tiet-tinh-nang/chinh-sach-rule-co-ban-pagerule.md) hoặc chính sách rule nâng cao cho CDN.
+* **Bước 8:** Khi điền các thông tin đúng và đủ thì nhấn button Submit ở cuối cùng giao diện đợi khoản 5 phút cho hệ thống cái đặt CDN cho người dùng.
+* **Bước 9:** Người dùng có thể truy cập CDN qua vCDN Domain khi đã tạo CDN xong.
 
 ***
 

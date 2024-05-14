@@ -28,4 +28,4 @@ CNAME trong CDN là một loại bản ghi DNS (Hệ thống tên miền) đư�
 
 Để sử dụng CNAME trong CDN, bạn có thể thực hiện thiết lập CNAMEs tại trường thông tin CDN Name trên thư mục CDN Info khi thực hiện tạo 1 CDN bất kỳ trên hệ thống vCDN.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045464/image2021-11-17_13-51-40.png?version=1&#x26;modificationDate=1637131901000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>

@@ -2,9 +2,7 @@
 
 Tự động redirect từ HTTP sang HTTPS**:** Cho phép tùy chọn tính năng tự động chuyển kết nối của client từ HTTP sang HTTPS khi client kết nối bằng HTTP đến website
 
-&#x20;  &#x20;
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045505/image2021-11-17_14-11-55.png?version=1&#x26;modificationDate=1637133116000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
 
 (7): Khi bật tùy chọn này, end-user truy cập vào website với giao thức HTTP sẽ được tự động chuyển hướng qua HTTPS.
 

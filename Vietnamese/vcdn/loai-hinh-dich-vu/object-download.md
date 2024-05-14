@@ -4,7 +4,13 @@
 
 Dịch vụ Object Download của VNG Cloud giúp doanh nghiệp: tối ưu chi phí, đảm bảo sự linh hoạt, dễ dàng tương thích với đa dạng thiết bị đầu cuối, từ đó, tăng mức độ hài lòng của khách hàng với dịch vụ với khả năng phân tích dữ liệu đa chiều theo thời gian thực.
 
-<figure><img src="../../.gitbook/assets/Object download-01 1.png" alt=""><figcaption></figcaption></figure>
+***
+
+#### **Sơ đồ hoạt động** <a href="#objectdownload-cochephanphoidulieu" id="objectdownload-cochephanphoidulieu"></a>
+
+<figure><img src="../../.gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure>
+
+***
 
 #### **Cơ Chế Phân Phối Dữ Liệu** <a href="#objectdownload-cochephanphoidulieu" id="objectdownload-cochephanphoidulieu"></a>
 
@@ -34,16 +40,16 @@ Dịch vụ Object Download của VNG Cloud giúp doanh nghiệp: tối ưu chi 
 
 #### **Hướng dẫn khởi tạo Object download CDN** <a href="#objectdownload-huongdankhoitaoobjectdownloadcdn" id="objectdownload-huongdankhoitaoobjectdownloadcdn"></a>
 
-* Bước 1: Chọn menu Object Download, chọn button tạo CDN:
+* **Bước 1:** Chọn menu Object Download, chọn button tạo CDN:
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045710/image2023-8-15_11-29-54.png?version=1&#x26;modificationDate=1692073795000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (217).png" alt=""><figcaption></figcaption></figure>
 
-* Bước 2: Điền thông tin chi tiết, tùy chình tính năng dịch vụ ở màn hình tạo CDN.
+* **Bước 2:** Điền thông tin chi tiết, tùy chình tính năng dịch vụ ở màn hình tạo CDN.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045710/image2023-8-15_11-30-25.png?version=1&#x26;modificationDate=1692073825000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
 
-* Bước 3: Nhập tên CDN.
-* Bước 4: Tùy chỉnh các tính năng của CDN.
-* Bước 5: Tùy theo người dùng yêu cầu nhập thông [tin chính sách rule cơ bản](../chi-tiet-tinh-nang/chinh-sach-rule-co-ban-pagerule.md) hoặc chính sách rule nâng cao cho CDN.
-* Bước 6: Khi điền các thông tin đúng và đủ thì nhấn button Submit ở cuối cùng giao diện đợi khoản 5 phút cho hệ thống cái đặt CDN cho người dùng.
-* Bước 7: Người dùng có thể truy cập CDN qua vCDN Domain khi đã tạo CDN xong.
+* **Bước 3:** Nhập tên CDN.
+* **Bước 4:** Tùy chỉnh các tính năng của CDN.
+* **Bước 5:** Tùy theo người dùng yêu cầu nhập thông [tin chính sách rule cơ bản](../chi-tiet-tinh-nang/chinh-sach-rule-co-ban-pagerule.md) hoặc chính sách rule nâng cao cho CDN.
+* **Bước 6:** Khi điền các thông tin đúng và đủ thì nhấn button Submit ở cuối cùng giao diện đợi khoản 5 phút cho hệ thống cái đặt CDN cho người dùng.
+* **Bước 7:** Người dùng có thể truy cập CDN qua vCDN Domain khi đã tạo CDN xong.

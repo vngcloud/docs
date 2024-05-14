@@ -4,9 +4,7 @@ Bật/Tắt CDN đã tạo: Khách hàng có thể tùy ý bật/tắt CDN đã 
 
 Click vào menu CDN => Web Accelerator, giao diện quản lý CDN Web Accelerator.
 
-&#x20;   &#x20;
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/36045511/image2021-11-17_14-14-41.png?version=1&#x26;modificationDate=1637133282000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (254).png" alt=""><figcaption></figcaption></figure>
 
 Giao diện quản lý Web Accelerator hiện ra với danh sách các CDN gồm các cột:
 
