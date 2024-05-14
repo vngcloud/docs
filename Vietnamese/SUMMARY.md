@@ -38,7 +38,7 @@
         * [Dịch vụ Datatransfers Bandwidth](vserver/compute-hcm03-1a/network/bandwidth-hcm-03/dich-vu-datatransfers-bandwidth.md)
         * [Dịch vụ Dedicated Bandwidth](vserver/compute-hcm03-1a/network/bandwidth-hcm-03/dich-vu-dedicated-bandwidth.md)
         * [Dịch vụ Shared Bandwidth](vserver/compute-hcm03-1a/network/bandwidth-hcm-03/dich-vu-shared-bandwidth.md)
-      * [Phương thức thanh toán](vserver/compute-hcm03-1a/network/phuong-thuc-thanh-toan.md)
+        * [Phương thức thanh toán](vserver/compute-hcm03-1a/network/bandwidth-hcm-03/phuong-thuc-thanh-toan.md)
     * [Interconnect](vserver/compute-hcm03-1a/interconnect/README.md)
       * [Bắt đầu với Interconnect](vserver/compute-hcm03-1a/interconnect/bat-dau-voi-interconnect.md)
       * [Các tính năng Interconnect](vserver/compute-hcm03-1a/interconnect/cac-tinh-nang-interconnect.md)
