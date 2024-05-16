@@ -2,7 +2,7 @@
 
 System Image là bản sao của các hệ điều hành phổ biến hiện nay trên thị trường và đang được VNG Cloud hỗ trợ và duy trì tương thích ở mức tốt nhất với hệ thống ảo hoá đang phát triển. System image cần phải được chỉ định trong quá trình khởi chạy một Server. Bạn có thể khởi chạy nhiều Server từ một System Image duy nhất khi bạn yêu cầu nhiều Server có cùng cấu hình. Sử dụng các System Image khác nhau để khởi chạy các Server khi bạn yêu cầu các Server có cấu hình khác nhau.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49647889/image2022-11-14_13-25-1.png?version=1&#x26;modificationDate=1668407101000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure>
 
 Các image tại VNG Cloud được phân loại thành Image chung, Image riêng và Image từ Marketplace.
 
