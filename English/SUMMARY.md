@@ -19,7 +19,7 @@
       * [Create an instance by using the wizard](vserver/compute-hcm03-1a/instance/create-an-instance-by-using-the-wizard.md)
       * [Resize Instance](vserver/compute-hcm03-1a/instance/resize-instance.md)
       * [Restart VM](vserver/compute-hcm03-1a/instance/restart-vm.md)
-      * [VNG Cloud's virtual server migration service](vserver/compute-hcm03-1a/instance/vng-clouds-virtual-server-migration-service.md)
+      * [Virtual Server Migration](vserver/compute-hcm03-1a/instance/vng-clouds-virtual-server-migration-service.md)
       * [Compute Encryption Volume](vserver/compute-hcm03-1a/instance/compute-encryption-volume/README.md)
         * [Using Compute Encryption Volume](vserver/compute-hcm03-1a/instance/compute-encryption-volume/using-compute-encryption-volume.md)
     * [Server Group](vserver/compute-hcm03-1a/server-group.md)
