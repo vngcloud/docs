@@ -13,19 +13,28 @@ FIPs can be associated with vServer instances. An FIP can be associated only wit
 * The vServer instance is located in a VPC.
 * The vServer instance is located in the same zone as the FIP.
 * The vServer instance is in the **Running** or **Stopped** state.
-* No External Interface are attached
+* No External Interface are attached.
+
+***
 
 ### **Operations** <a href="#floatingip-operations" id="floatingip-operations"></a>
 
-* Create an FIP
-  * You can go to {Floating IP page} to create an FIP and associate the FIP with an vServer instance that is located in a VPC and is not attached with External Interface.
-* Associate an FIP with an vServer instance
-  * You can log on to the {Server page} and associate an FIP with an vServer instance that is located in a VPC and is not attached External Interface.
-  * You can also go to the {Floating IP page} and associate an FIP with an vServer instance that is located in a VPC and is not attached External Interface.
-* Disassociate an FIP from an vServer instance
-  * If your vServer instance no longer needs an FIP, you can disassociate the FIP from the instance in the {Server page}.
-  * You can also disassociate the FIP from the vServer instance on the {Floating IP page}
-* Release an FIP
-  * Billing of an FIP continues after it is disassociated. If you no longer need the FIP, go to the {Floating IP page} to release the FIP
+#### Create an Floating IP
+
+A Floating IP is created along with the Server initialization. However, you can view the list of Floating IPs attached to the Server in the vServer control panel at the following link: [https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip](https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip)
+
+#### Associate an Floating IP with an vServer instance
+
+* You can log on to the [Server page](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) and associate an Floating IP with an vServer instance that is located in a VPC and is not attached External Interface.
+* You can also go to the [Floating IP page](https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip) and associate an Floating IP with an vServer instance that is located in a VPC and is not attached External Interface.
+
+#### Disassociate an Floating IP from an vServer instance
+
+* If your vServer instance no longer needs an Floating IP, you can disassociate the Floating IP from the instance in the [Server page](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server).
+* You can also disassociate the Floating IP from the vServer instance on the [Floating IP page](https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip)
+
+#### Release an Floating IP
+
+* Billing of an Floating IP continues after it is disassociated. If you no longer need the Floating IP, go to the [Floating IP page](https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip) to release the Floating IP
 
 \
