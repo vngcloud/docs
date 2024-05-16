@@ -20,7 +20,7 @@ Use the guide below to create a new Route table:
 2. In the navigation menu, select the **Network/Route table** tab.
 3. Click **Create Route table**.
 4. For **Name**, enter a descriptive name for the Route table. The Route table name can include letters (a-z, A-Z, 0-9, '\_', '-'). The input length should be between 5 and 50 characters. It must not include leading or trailing spaces.
-5. Select a **VPC** for your Route table; if there is no VPC, create a new one according to the instructions on the [VPC page](../virtual-private-cloud-vpc.md).
+5. Select a **VPC** for your Route table; if there is no VPC, create a new one according to the instructions on the [VPC page](virtual-private-cloud-vpc.md).
 6. Click **Create** to create the new Route table.
 
 #### Adding, Deleting, and Editing Routes <a href="#routetable-them-xoa-suaroute" id="routetable-them-xoa-suaroute"></a>
