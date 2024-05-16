@@ -10,7 +10,7 @@
     * [Trải nghiệm sản phẩm vServer](vserver/compute-hcm03-1a/trai-nghiem-san-pham-vserver/README.md)
       * [UserData](vserver/compute-hcm03-1a/trai-nghiem-san-pham-vserver/userdata.md)
     * [Hạn mức tài nguyên](vserver/compute-hcm03-1a/han-muc-tai-nguyen.md)
-    * [Server](vserver/compute-hcm03-1a/server/README.md)
+    * [Instance](vserver/compute-hcm03-1a/server/README.md)
       * [Kết nối vào máy chủ ảo](vserver/compute-hcm03-1a/server/ket-noi-vao-may-chu-ao/README.md)
         * [Kết nối vào máy chủ Windows sử dụng công cụ Remote Desktop (RDP)](vserver/compute-hcm03-1a/server/ket-noi-vao-may-chu-ao/ket-noi-vao-may-chu-windows-su-dung-cong-cu-remote-desktop-rdp.md)
         * [Kết nối vào máy chủ Linux bằng công cụ SSH Client](vserver/compute-hcm03-1a/server/ket-noi-vao-may-chu-ao/ket-noi-vao-may-chu-linux-bang-cong-cu-ssh-client.md)
