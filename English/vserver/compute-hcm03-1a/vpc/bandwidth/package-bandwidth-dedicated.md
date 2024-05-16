@@ -27,21 +27,21 @@ The Dedicated bandwidth package offers customizable speeds tailored to your need
 
 * **Domestic bandwidth package:**
 
-| **Tên Package**    | **Băng thông** | **Mô tả**          |
-| ------------------ | -------------- | ------------------ |
-| Domestic 500 Mbps  | 500 Mbps       | 500 Mbps Domestic  |
-| Domestic 1000 Mbps | 1000 Mbps      | 1000 Mbps Domestic |
-| Domestic 2000 Mbps | 2000 Mbps      | 2000 Mbps Domestic |
+| **Package Name**   | **Bandwidth** | **Description**    |
+| ------------------ | ------------- | ------------------ |
+| Domestic 500 Mbps  | 500 Mbps      | 500 Mbps Domestic  |
+| Domestic 1000 Mbps | 1000 Mbps     | 1000 Mbps Domestic |
+| Domestic 2000 Mbps | 2000 Mbps     | 2000 Mbps Domestic |
 
 
 
 * **International bandwidth package:**
 
-| **Tên Package**       | **Băng thông** | **Mô tả**             |
-| --------------------- | -------------- | --------------------- |
-| International 10 Mbps | 10 Mbps        | 10 Mbps International |
-| International 20 Mbps | 20 Mbps        | 20 Mbps International |
-| International 50 Mbps | 50 Mbps        | 50 Mbps International |
+| **Package Name**      | **Bandwidth** | Description           |
+| --------------------- | ------------- | --------------------- |
+| International 10 Mbps | 10 Mbps       | 10 Mbps International |
+| International 20 Mbps | 20 Mbps       | 20 Mbps International |
+| International 50 Mbps | 50 Mbps       | 50 Mbps International |
 
 **Step 7:** Select **Allocate** and complete the payment steps as with normal resources.
 
