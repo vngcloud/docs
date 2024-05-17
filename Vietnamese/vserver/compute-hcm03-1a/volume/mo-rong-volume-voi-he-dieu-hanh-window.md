@@ -5,7 +5,7 @@ description: >-
   thước.
 ---
 
-# Mở rộng Volume với hệ điều hành Window
+# Mở rộng Volume với hệ điều hành Windows
 
 ### **Mở rộng Volume với hệ điều hành Window** <a href="#morongvolumevoihedieuhanhwindow-morongvolumevoihedieuhanhwindow" id="morongvolumevoihedieuhanhwindow-morongvolumevoihedieuhanhwindow"></a>
 
@@ -65,20 +65,19 @@ Sử dụng quy trình sau để mở rộng hệ thống tệp Windows bằng P
 
 **Để mở rộng hệ thống tệp bằng PowerShell**
 
-1.
-2. Trước khi mở rộng một hệ thống tệp có chứa dữ liệu có giá trị, cách tốt nhất là tạo ảnh chụp nhanh của ổ đĩa chứa nó trong trường hợp bạn cần khôi phục các thay đổi của mình.
-3. Đăng nhập vào phiên bản Windows của bạn bằng Remote Desktop.
-4. Chạy PowerShell với tư cách quản trị viên.
-5. Chạy lệnh `Get-Partition`. PowerShell trả về số phân vùng tương ứng cho từng phân vùng, ký tự ổ đĩa, độ lệch, kích thước và loại. Lưu ý ký tự ổ đĩa của phân vùng để mở rộng.
-6.  Chạy lệnh sau để quét lại đĩa.
+1. Trước khi mở rộng một hệ thống tệp có chứa dữ liệu có giá trị, cách tốt nhất là tạo ảnh chụp nhanh của ổ đĩa chứa nó trong trường hợp bạn cần khôi phục các thay đổi của mình.
+2. Đăng nhập vào phiên bản Windows của bạn bằng Remote Desktop.
+3. Chạy PowerShell với tư cách quản trị viên.
+4. Chạy lệnh `Get-Partition`. PowerShell trả về số phân vùng tương ứng cho từng phân vùng, ký tự ổ đĩa, độ lệch, kích thước và loại. Lưu ý ký tự ổ đĩa của phân vùng để mở rộng.
+5.  Chạy lệnh sau để quét lại đĩa.
 
     | `"rescan"` `\| diskpart` |
     | ------------------------ |
-7.  Chạy lệnh sau, sử dụng ký tự ổ đĩa mà bạn đã lưu ý ở bước 4 thay cho \<ký tự ổ đĩa>. PowerShell trả về kích thước tối thiểu và tối đa của phân vùng được phép, tính bằng byte.
+6.  Chạy lệnh sau, sử dụng ký tự ổ đĩa mà bạn đã lưu ý ở bước 4 thay cho \<ký tự ổ đĩa>. PowerShell trả về kích thước tối thiểu và tối đa của phân vùng được phép, tính bằng byte.
 
     | `Get-PartitionSupportedSize -DriveLetter <drive-letter>` |
     | -------------------------------------------------------- |
-8.  Để mở rộng phân vùng đến một lượng xác định, hãy chạy lệnh sau, nhập kích thước mới của ổ đĩa thay cho \<size>. Bạn có thể nhập kích thước tính bằng KB, MB và GB; ví dụ: 50GB.
+7.  Để mở rộng phân vùng đến một lượng xác định, hãy chạy lệnh sau, nhập kích thước mới của ổ đĩa thay cho \<size>. Bạn có thể nhập kích thước tính bằng KB, MB và GB; ví dụ: 50GB.
 
     | `Resize-Partition -DriveLetter <drive-letter>` `-Size <size>` |
     | ------------------------------------------------------------- |
@@ -101,6 +100,4 @@ Các lệnh PowerShell sau hiển thị dòng lệnh và phản hồi hoàn ch�
 
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59804681/image2023-6-27_16-34-51.png?version=1&#x26;modificationDate=1687858492000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
 

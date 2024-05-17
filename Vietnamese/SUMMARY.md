@@ -57,7 +57,7 @@
         * [Sử dụng kết hợp các phương thức kết nối Interconnect](vserver/compute-hcm03-1a/interconnect/truong-hop-su-dung/su-dung-ket-hop-cac-phuong-thuc-ket-noi-interconnect.md)
     * [Volume](vserver/compute-hcm03-1a/volume/README.md)
       * [Mở rộng Volume với hệ điều hành Linux](vserver/compute-hcm03-1a/volume/mo-rong-volume-voi-he-dieu-hanh-linux.md)
-      * [Mở rộng Volume với hệ điều hành Window](vserver/compute-hcm03-1a/volume/mo-rong-volume-voi-he-dieu-hanh-window.md)
+      * [Mở rộng Volume với hệ điều hành Windows](vserver/compute-hcm03-1a/volume/mo-rong-volume-voi-he-dieu-hanh-window.md)
       * [Volume Types](vserver/compute-hcm03-1a/volume/volume-types.md)
       * [Kiểm tra hiệu suất IOPS](vserver/compute-hcm03-1a/volume/kiem-tra-hieu-suat-iops.md)
       * [Chuyển đổi Volume Type](vserver/compute-hcm03-1a/volume/chuyen-doi-volume-type.md)
