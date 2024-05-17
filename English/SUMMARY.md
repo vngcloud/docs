@@ -56,7 +56,7 @@
         * [VPN Interconnect](vserver/compute-hcm03-1a/interconnect/usecase/vpn-interconnect.md)
         * [Using a combination of Interconnect connection methods](vserver/compute-hcm03-1a/interconnect/usecase/using-a-combination-of-interconnect-connection-methods.md)
     * [Volume](vserver/compute-hcm03-1a/volume/README.md)
-      * [Extend volume](vserver/compute-hcm03-1a/volume/extend-volume.md)
+      * [Extend volume with Linux OS](vserver/compute-hcm03-1a/volume/extend-volume.md)
       * [Volume Types](vserver/compute-hcm03-1a/volume/volume-types.md)
     * [Snapshot](vserver/compute-hcm03-1a/snapshot/README.md)
       * [Activate Snapshot](vserver/compute-hcm03-1a/snapshot/activate-snapshot.md)
