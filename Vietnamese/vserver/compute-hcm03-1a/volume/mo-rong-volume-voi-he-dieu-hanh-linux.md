@@ -26,13 +26,20 @@ Sau khi quá trình tăng dung lượng trên bảng điều khiển hoàn tất
 **a. Kiểm tra ổ đĩa đã được tăng dung lượng hay chưa:**
 
 1. [Kết nối vào Server](../server/ket-noi-vao-may-chu-ao/#ketnoivaomaychuao-ketnoivaomaychulinuxbangcongcusshclient)
-2.  Gõ lệnh **`lsblk`**\
-    Trong đầu ra ví dụ sau, ổ đĩa gốc (disk0) có hai phân vùng (disk01 và disk02), trong khi ổ đĩa bổ sung (disk00) không có phân vùng.
+2. Gõ lệnh **`lsblk`**\
+   Trong đầu ra ví dụ sau, ổ đĩa gốc (disk0) có hai phân vùng (disk01 và disk02), trong khi ổ đĩa bổ sung (disk00) không có phân vùng.
 
-    | `sudo lsblkNAME          MAJ:MIN RM SIZE RO TYPE MOUNTPOINTdisk00        259:0`    `0`  `30G  0` `disk /datadisk0         259:1`    `0`  `16G  0` `disk└─disk0p1     259:2`    `0`   `8G  0` `part /└─disk0p2     259:3`    `0`   `1M  0` `part` |
-    | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+```
+sudo lsblk
+NAME          MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+disk00        259:0    0  30G  0 disk /data
+disk0         259:1    0  16G  0 disk
+└─disk0p1     259:2    0   8G  0 part /
+└─disk0p2     259:3    0   1M  0 part
+```
 
-    Nếu ổ đĩa có một phân vùng, hãy tiếp tục quy trình từ bước sau (2b). Nếu ổ đĩa không có phân vùng, hãy bỏ qua các bước 2b, 2c và 2d, rồi tiếp tục quy trình từ bước 3.
+Nếu ổ đĩa có một phân vùng, hãy tiếp tục quy trình từ bước sau (2b). Nếu ổ đĩa không có phân vùng, hãy bỏ qua các bước 2b, 2c và 2d, rồi tiếp tục quy trình từ bước 3.
+
 3. Kiểm tra xem phân vùng có cần được mở rộng hay không. Trong đầu ra lệnh `lsblk` từ bước trước, hãy so sánh kích thước phân vùng và kích thước ổ đĩa gốc. Nếu kích thước phân vùng nhỏ hơn kích thước ổ đĩa, hãy tiếp tục bước tiếp theo. Nếu kích thước phân vùng bằng kích thước ổ đĩa, thì không thể mở rộng phân vùng.
 
 **b. Tăng dung lượng ổ đĩa bằng câu lệnh:**
@@ -46,35 +53,51 @@ Sau khi quá trình tăng dung lượng trên bảng điều khiển hoàn tất
 
     Lưu ý khoảng cách giữa tên thiết bị (disk0) và số phân vùng (1).
 
-    | `sudo growpart /dev/disk0` `1` |
-    | ------------------------------ |
-2.  Xác minh rằng phân vùng đã được mở rộng. Sử dụng lệnh **`lsblk`**. Kích thước phân vùng bây giờ phải bằng kích thước ổ đĩa.
+```
+sudo growpart /dev/disk0 1
+```
 
-    | `sudo lsblkNAME          MAJ:MIN RM SIZE RO TYPE MOUNTPOINTdisk00`        `259:0`    `0`  `30G  0` `disk /datadisk0`         `259:1`    `0`  `16G  0` `disk└─disk0p1`     `259:2`    `0`  `16G  0` `part /└─disk0p2`     `259:3`    `0`   `1M  0` `part` |
-    | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+2. Xác minh rằng phân vùng đã được mở rộng. Sử dụng lệnh **`lsblk`**. Kích thước phân vùng bây giờ phải bằng kích thước ổ đĩa.
+
+```
+sudo lsblk
+NAME          MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+disk00        259:0    0  30G  0 disk /data
+disk0         259:1    0  16G  0 disk
+└─disk0p1     259:2    0  16G  0 part /
+└─disk0p2     259:3    0   1M  0 part
+```
 
 **c. Mở rộng tập tin hệ thống**
 
-1.  Nhận tên, kích thước, loại và điểm gắn kết cho hệ thống tệp mà bạn cần mở rộng. Sử dụng lệnh **`df -hT`**.\
-    Đầu ra ví dụ sau đây cho thấy hệ thống tệp /dev/disk0p1 có kích thước 8 GB, loại của nó là xfs và điểm gắn kết của nó là /.
+1. Nhận tên, kích thước, loại và điểm gắn kết cho hệ thống tệp mà bạn cần mở rộng. Sử dụng lệnh **`df -hT`**.\
+   Đầu ra ví dụ sau đây cho thấy hệ thống tệp /dev/disk0p1 có kích thước 8 GB, loại của nó là xfs và điểm gắn kết của nó là /.
 
-    | `df -hTFilesystem      Type  Size  Used Avail Use% Mounted on/dev/disk0p1`    `xfs   8.0G  1.6G  6.5G  20% //dev/disk00`     `xfs   8.0G   33M  8.0G   1% /data...` |
-    | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-2.  Các lệnh để mở rộng hệ thống tệp khác nhau tùy thuộc vào loại hệ thống tệp. Chọn lệnh đúng sau đây dựa trên loại hệ thống tệp mà bạn đã lưu ý ở bước trước.\
-    \[**Tệp hệ thống XFS**] Sử dụng lệnh **`xfs_growfs`** và chỉ định điểm gắn kết của hệ thống tệp mà bạn đã lưu ý ở bước trước.
+```
+df -hT
+Filesystem      Type  Size  Used Avail Use% Mounted on
+/dev/disk0p1    xfs   8.0G  1.6G  6.5G  20% /
+/dev/disk00     xfs   8.0G   33M  8.0G   1% /data
+```
 
-    | `sudo xfs_growfs -d /` |
-    | ---------------------- |
+2. Các lệnh để mở rộng hệ thống tệp khác nhau tùy thuộc vào loại hệ thống tệp. Chọn lệnh đúng sau đây dựa trên loại hệ thống tệp mà bạn đã lưu ý ở bước trước.\
+   \[**Tệp hệ thống XFS**] Sử dụng lệnh **`xfs_growfs`** và chỉ định điểm gắn kết của hệ thống tệp mà bạn đã lưu ý ở bước trước.
 
-    Gợi ý
+```
+sudo xfs_growfs -d /
+```
 
-    * xfs\_growfs: /data không phải là hệ thống tệp XFS được gắn kết: Cho biết rằng bạn đã chỉ định điểm gắn kết không chính xác hoặc hệ thống tệp không phải là XFS. Để xác minh điểm gắn kết và loại hệ thống tệp, hãy sử dụng lệnh df -hT.
-    * Kích thước dữ liệu không thay đổi, bỏ qua: Cho biết rằng hệ thống tệp đã mở rộng toàn bộ ổ đĩa. Nếu ổ đĩa không có phân vùng, hãy xác nhận rằng sửa đổi ổ đĩa đã thành công. Nếu ổ đĩa có các phân vùng, hãy đảm bảo rằng phân vùng đó đã được mở rộng như mô tả trong bước b.
+Gợi ý
 
-    \[**Tệp hệ thống Ext4**] Sử dụng lệnh **resize2fs** và chỉ định tên của hệ thống tệp mà bạn đã lưu ý ở bước trước.
+* xfs\_growfs: /data không phải là hệ thống tệp XFS được gắn kết: Cho biết rằng bạn đã chỉ định điểm gắn kết không chính xác hoặc hệ thống tệp không phải là XFS. Để xác minh điểm gắn kết và loại hệ thống tệp, hãy sử dụng lệnh df -hT.
+* Kích thước dữ liệu không thay đổi, bỏ qua: Cho biết rằng hệ thống tệp đã mở rộng toàn bộ ổ đĩa. Nếu ổ đĩa không có phân vùng, hãy xác nhận rằng sửa đổi ổ đĩa đã thành công. Nếu ổ đĩa có các phân vùng, hãy đảm bảo rằng phân vùng đó đã được mở rộng như mô tả trong bước b.
 
-    | `sudo resize2fs /dev/disk0p1` |
-    | ----------------------------- |
+\[**Tệp hệ thống Ext4**] Sử dụng lệnh **resize2fs** và chỉ định tên của hệ thống tệp mà bạn đã lưu ý ở bước trước.
+
+```
+sudo resize2fs /dev/disk0p1
+```
+
 3. Xác minh rằng tập tin hệ thống đã được mở rộng. Sử dụng lệnh **`df -hT`** và xác nhận rằng kích thước hệ thống tệp bằng với kích thước ổ đĩa.
 
 \
