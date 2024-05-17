@@ -1,11 +1,6 @@
----
-description: >-
-  Chủ đề này mô tả cách kiểm tra hiệu suất IOPS của SSD . Thông số kỹ thuật của
-  đĩa và điều kiện kiểm tra ảnh hưởng đến kết quả kiểm tra. Nếu bạn định cấu
-  hình các điều kiện kiểm tra như được mô tả tron
----
-
 # Kiểm tra hiệu suất IOPS
+
+Chủ đề này mô tả cách kiểm tra hiệu suất IOPS của SSD . Thông số kỹ thuật của đĩa và điều kiện kiểm tra ảnh hưởng đến kết quả kiểm tra. Nếu bạn định cấu hình các điều kiện kiểm tra như được mô tả trong ví dụ sau để tận dụng tối đa hiệu suất của hệ thống đa lõi và đồng thời cao, thì bạn có thể nhận được giá trị IOPS là rất cao khi thực hiện kiểm tra Stress test trên SSD.
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/63766877/image2023-8-10_15-38-26.png?version=1&#x26;modificationDate=1691656708000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
@@ -121,3 +116,4 @@ Có thể thấy, VPS test có thể chạy 8 job với  mỗi job có **IOPS =*
 
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/63766877/image2023-8-29_9-54-22.png?version=1&#x26;modificationDate=1693277663000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+
