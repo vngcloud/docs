@@ -21,21 +21,22 @@ Cảnh báo
 
 1. Tạo một Server với ổ đĩa Volume có loại NVME với IOPS 1000 tại trang chủ vServer
 2. Kết nối vào Server của bạn. Để biết thêm thông tin hãy xem hướng dẫn [Kết nối vào máy chủ ảo](../server/ket-noi-vao-may-chu-ao/).
-3.  Chạy lệnh sau để cài đặt FIO:
+3. Chạy lệnh sau để cài đặt FIO:
 
-    | `sudo yum install -y epel-release && yum install -y fio \|\| ( apt-get update && apt-get install -y fio )` |
-    | ---------------------------------------------------------------------------------------------------------- |
-4.  Sử dụng câu lệnh sau để thực hiện đo lường hiệu suất SSD:\
-    Tạo 1 file 4GB, thực hiện việc đọc/ghi đồng thời với blocksize 4KB theo tỉ lệ 75% – 25% (tức 3 đọc/1 ghi) và thực hiện đồng thời 64 tác vụ một lúc. Tỉ lệ 3:1 rất phổ biến và xấp xỉ với các dạng database hiện nay.
+```
+sudo yum install -y epel-release && yum install -y fio || ( apt-get update && apt-get install -y fio )
+```
 
-    | `sudo fio --randrepeat=1` `--ioengine=libaio --direct=1` `--gtod_reduce=1` `--name=TGS --filename=TGS --bs=4k --iodepth=64` `--size=4G --readwrite=randrw --rwmixread=75` `--numjobs=8` |
-    | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-5.  Đây là kết quả sau khi chạy hoàn tất với **numjob = 1**:\
-    \
-    \
+4. Sử dụng câu lệnh sau để thực hiện đo lường hiệu suất SSD:\
+   Tạo 1 file 4GB, thực hiện việc đọc/ghi đồng thời với blocksize 4KB theo tỉ lệ 75% – 25% (tức 3 đọc/1 ghi) và thực hiện đồng thời 64 tác vụ một lúc. Tỉ lệ 3:1 rất phổ biến và xấp xỉ với các dạng database hiện nay.
 
+```
+sudo fio --randrepeat=1 --ioengine=libaio --direct=1 --gtod_reduce=1 --name=TGS --filename=TGS --bs=4k --iodepth=64 --size=4G --readwrite=randrw --rwmixread=75 --numjobs=8
+```
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/63766877/image2023-8-23_14-31-37.png?version=1&#x26;modificationDate=1692775898000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+5. Đây là kết quả sau khi chạy hoàn tất với **numjob = 1**:
+
+<figure><img src="https://docs.vngcloud.vn/download/attachments/63766877/image2023-8-23_14-31-37.png?version=1&#x26;modificationDate=1692775898000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 Có thể thấy, VPS test có thể thực hiện đồng thời **IOPS =** 7**500** tác vụ đọc và**. IOPS = 2506** tác vụ ghi mỗi giây.
 
@@ -43,61 +44,50 @@ Kết quả với **numjob = 8**:
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/63766877/image2023-8-23_16-22-5.png?version=1&#x26;modificationDate=1692782525000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-\
-
-
 <figure><img src="https://docs.vngcloud.vn/download/attachments/63766877/image2023-8-23_16-22-25.png?version=1&#x26;modificationDate=1692782546000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 Có thể thấy, VPS test có thể chạy 8 job với  mỗi job có **IOPS =** **938** tác vụ đọc và **IOPS = 313** tác vụ ghi mỗi giây.
 
 **Kiểm tra hiệu suất random read**
 
-1.  Sử dụng câu lệnh sau để thực hiện đo lường hiệu suất SSD:\
-    Tạo 1 file 4GB, thực hiện việc đọc với tất cả hiệu năng của ổ cứng với blocksize 4KB và thực hiện đồng thời 64 tác vụ một lúc.&#x20;
+1. Sử dụng câu lệnh sau để thực hiện đo lường hiệu suất SSD:\
+   Tạo 1 file 4GB, thực hiện việc đọc với tất cả hiệu năng của ổ cứng với blocksize 4KB và thực hiện đồng thời 64 tác vụ một lúc.&#x20;
 
-    | `sudo fio --randrepeat=1` `--ioengine=libaio --direct=1` `--gtod_reduce=1` `--name=TGS --filename=TGS --bs=4k --iodepth=64` `--size=4G --readwrite=randread --numjobs=8` |
-    | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-2.  Đây là kết quả sau khi chạy hoàn tất với **numjob = 1**:
+```
+sudo fio --randrepeat=1 --ioengine=libaio --direct=1 --gtod_reduce=1 --name=TGS --filename=TGS --bs=4k --iodepth=64 --size=4G --readwrite=randread --numjobs=8
+```
 
+2. Đây là kết quả sau khi chạy hoàn tất với **numjob = 1**:
 
+<figure><img src="https://docs.vngcloud.vn/download/attachments/63766877/image2023-8-23_16-30-23.png?version=1&#x26;modificationDate=1692783024000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-    \
+Có thể thấy, VPS test có thể thực hiện **IOPS = 10.0K (10000)** tác vụ đọc mỗi giây.\
+\
+Kết quả với **numjob = 8**:
 
-
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/63766877/image2023-8-23_16-30-23.png?version=1&#x26;modificationDate=1692783024000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
-
-    Có thể thấy, VPS test có thể thực hiện **IOPS = 10.0K (10000)** tác vụ đọc mỗi giây.\
-    \
-    Kết quả với **numjob = 8**:\
-
-
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/63766877/image2023-8-29_13-32-25.png?version=1&#x26;modificationDate=1693290746000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/download/attachments/63766877/image2023-8-29_13-32-25.png?version=1&#x26;modificationDate=1693290746000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 Có thể thấy, VPS test có thể chạy 8 job với  mỗi job có **IOPS =** 1254 tác vụ đọc mỗi giây.
 
 ### **Kiểm tra hiệu suất random write** <a href="#kiemtrahieusuatiops-kiemtrahieusuatrandomwrite" id="kiemtrahieusuatiops-kiemtrahieusuatrandomwrite"></a>
 
-1.  Sử dụng câu lệnh sau để thực hiện đo lường hiệu suất SSD:\
-    Tạo 1 file 4GB, thực hiện việc ghi với tất cả hiệu năng của ổ cứng với blocksize 4KB và thực hiện đồng thời 64 tác vụ một lúc.&#x20;
+1. Sử dụng câu lệnh sau để thực hiện đo lường hiệu suất SSD:\
+   Tạo 1 file 4GB, thực hiện việc ghi với tất cả hiệu năng của ổ cứng với blocksize 4KB và thực hiện đồng thời 64 tác vụ một lúc.&#x20;
 
-    | `sudo fio --randrepeat=1` `--ioengine=libaio --direct=1` `--gtod_reduce=1` `--name=TGS --filename=TGS --bs=4k --iodepth=64` `--size=4G --readwrite=randwrite --numjobs=8` |
-    | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-2.  Đây là kết quả sau khi chạy hoàn tất với **numjob = 1**:\
-    \
+```
+sudo fio --randrepeat=1 --ioengine=libaio --direct=1 --gtod_reduce=1 --name=TGS --filename=TGS --bs=4k --iodepth=64 --size=4G --readwrite=randwrite --numjobs=8
+```
 
+2. Đây là kết quả sau khi chạy hoàn tất với **numjob = 1**:
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/63766877/image2023-8-23_16-34-58.png?version=1&#x26;modificationDate=1692783299000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-3.  Có thể thấy, VPS test có thể thực hiện. **IOPS =** **10.0K (10000)** tác vụ ghi mỗi giây.\
+<figure><img src="https://docs.vngcloud.vn/download/attachments/63766877/image2023-8-23_16-34-58.png?version=1&#x26;modificationDate=1692783299000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+
+1.  Có thể thấy, VPS test có thể thực hiện. **IOPS =** **10.0K (10000)** tác vụ ghi mỗi giây.\
     \
     Kết quả với **numjob = 8**:\
-    \
 
 
     <figure><img src="https://docs.vngcloud.vn/download/attachments/63766877/image2023-8-30_14-53-48.png?version=1&#x26;modificationDate=1693382029000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
 
 ### **Giám sát hiệu suất ổ đĩa bằng vMonitor** <a href="#kiemtrahieusuatiops-giamsathieusuatodiabangvmonitor" id="kiemtrahieusuatiops-giamsathieusuatodiabangvmonitor"></a>
 
@@ -107,13 +97,7 @@ Có thể thấy, VPS test có thể chạy 8 job với  mỗi job có **IOPS =*
 
     <figure><img src="https://docs.vngcloud.vn/download/attachments/63766877/image2023-8-14_15-19-19.png?version=1&#x26;modificationDate=1692001160000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-
-
-
-
 ### **Kết quả thử nghiệm kiểm tra hiệu suất ổ đĩa VNG Cloud** <a href="#kiemtrahieusuatiops-ketquathunghiemkiemtrahieusuatodiavngcloud" id="kiemtrahieusuatiops-ketquathunghiemkiemtrahieusuatodiavngcloud"></a>
-
-
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/63766877/image2023-8-29_9-54-22.png?version=1&#x26;modificationDate=1693277663000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
