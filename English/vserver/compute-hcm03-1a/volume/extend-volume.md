@@ -29,8 +29,14 @@ After the process of increasing the capacity on the console is complete, the cap
 
 In the following example output, the root drive (disk0) has two partitions (disk01 and disk02), while the additional drive (disk00) has no partitions.
 
-| `sudo lsblkNAME          MAJ:MIN RM SIZE RO TYPE MOUNTPOINTdisk00        259:0`    `0`  `30G  0` `disk /datadisk0         259:1`    `0`  `16G  0` `disk└─disk0p1     259:2`    `0`   `8G  0` `part /└─disk0p2     259:3`    `0`   `1M  0` `part` |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+```
+sudo lsblk
+NAME          MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+disk00        259:0    0  30G  0 disk /data
+disk0         259:1    0  16G  0 disk
+└─disk0p1     259:2    0   8G  0 part /
+└─disk0p2     259:3    0   1M  0 part
+```
 
 If the disk has one partition, proceed with the process from the next step (2b). If the disk has no partitions, skip steps 2b, 2c, and 2d, and continue with the process from step 3.
 
@@ -44,28 +50,40 @@ Example: To expand the partition named disk0p1, use the following command:
 
 Important: Note the space between the device name (disk0) and the partition number (1).
 
-| `sudo growpart /dev/disk0` `1` |
-| ------------------------------ |
+```
+sudo growpart /dev/disk0 1
+```
 
 2. Verify that the partition has been expanded. Use the **`lsblk`** command. The partition size should now match the disk size.
 
-| `sudo lsblkNAME          MAJ:MIN RM SIZE RO TYPE MOUNTPOINTdisk00`        `259:0`    `0`  `30G  0` `disk /datadisk0`         `259:1`    `0`  `16G  0` `disk└─disk0p1`     `259:2`    `0`  `16G  0` `part /└─disk0p2`     `259:3`    `0`   `1M  0` `part` |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+```
+sudo lsblk
+NAME          MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+disk00        259:0    0  30G  0 disk /data
+disk0         259:1    0  16G  0 disk
+└─disk0p1     259:2    0  16G  0 part /
+└─disk0p2     259:3    0   1M  0 part
+```
 
 **c. Expand the File System**
 
 1. Get the name, size, type, and mount point for the file system you need to expand. Use the **`df -hT`** command.\
    The following example output shows that the file system /dev/disk0p1 is 8 GB in size, its type is xfs, and its mount point is /.
 
-| `df -hTFilesystem      Type  Size  Used Avail Use% Mounted on/dev/disk0p1`    `xfs   8.0G  1.6G  6.5G  20% //dev/disk00`     `xfs   8.0G   33M  8.0G   1% /data...` |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+```
+df -hT
+Filesystem      Type  Size  Used Avail Use% Mounted on
+/dev/disk0p1    xfs   8.0G  1.6G  6.5G  20% /
+/dev/disk00     xfs   8.0G   33M  8.0G   1% /data
+```
 
 2.  The commands to expand the file system vary depending on the file system type. Choose the correct command below based on the file system type noted in the previous step.
 
     **\[XFS File System]** Use the **`xfs_growfs`** command and specify the mount point of the file system noted in the previous step.
 
-| `sudo xfs_growfs -d /` |
-| ---------------------- |
+```
+sudo xfs_growfs -d /
+```
 
 Hint:
 
@@ -74,7 +92,8 @@ Hint:
 
 **\[Ext4 File System]** Use the **`resize2fs`** command and specify the name of the file system noted in the previous step.
 
-| `sudo resize2fs /dev/disk0p1` |
-| ----------------------------- |
+```
+sudo resize2fs /dev/disk0p1
+```
 
 3. Verify that the file system has been expanded. Use the `df -hT` command and confirm that the file system size matches the disk size.
