@@ -12,7 +12,7 @@ Sau khi tạo một Transfer Job, bạn có thể bắt đầu chạy task để
 
 **Bước 4:** Chọn biểu tượng <img src="http://docs.vngcloud.vn/download/thumbnails/73761189/image2024-3-14_10-4-28.png?version=1&#x26;modificationDate=1710385469000&#x26;api=v2" alt="" data-size="line"> hoặc chọn biểu tượng <img src="http://docs.vngcloud.vn/download/thumbnails/73761189/image2024-3-14_10-4-58.png?version=1&#x26;modificationDate=1710385499000&#x26;api=v2" alt="" data-size="line">sau đó chọn hành động <img src="http://docs.vngcloud.vn/download/thumbnails/73761189/image2024-3-14_10-5-14.png?version=1&#x26;modificationDate=1710385515000&#x26;api=v2" alt="" data-size="line">
 
-Lúc này bạn có thể chọn vào **transfer job** đó để xem chi tiết về thông số của transfer job khi chạy. Chi tiết tham khảo tại [Theo dõi kết quả chạy Transfer Job](theo-doi-ket-qua-chay-transfer-job.md)
+Lúc này bạn có thể chọn vào **transfer job** đó để xem chi tiết về thông số của transfer job khi chạy. Chi tiết tham khảo tại [Theo dõi kết quả chạy Transfer Job](../theo-doi-ket-qua-chay-transfer-job.md)
 
 {% hint style="info" %}
 **Chú ý:**
