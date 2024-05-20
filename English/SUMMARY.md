@@ -60,6 +60,7 @@
       * [Extend Volume with Windows OS](vserver/compute-hcm03-1a/volume/extend-volume-with-windows-os.md)
       * [Volume Types](vserver/compute-hcm03-1a/volume/volume-types.md)
       * [Check the IOPS performance](vserver/compute-hcm03-1a/volume/check-the-iops-performance.md)
+      * [Convert Volume Type](vserver/compute-hcm03-1a/volume/convert-volume-type.md)
     * [Snapshot](vserver/compute-hcm03-1a/snapshot/README.md)
       * [Activate Snapshot](vserver/compute-hcm03-1a/snapshot/activate-snapshot.md)
       * [Create Snapshots](vserver/compute-hcm03-1a/snapshot/create-snapshots.md)
