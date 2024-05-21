@@ -21,5 +21,8 @@ If you are restoring a VNG Cloud virtual machine, you can perform a Full Restore
 5. Click **Create Volume**
 6. A new volume is created with the configuration of the backup you selected earlier
 
-**Note:**\
+{% hint style="info" %}
+Ghi chú
+
 Regardless of whether you restore a Server or Volume, each restore will create a new one. If you try to restore multiple times for the same resource, there may be multiple duplicate entries for that resource.
+{% endhint %}
