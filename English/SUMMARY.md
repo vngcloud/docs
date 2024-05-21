@@ -134,6 +134,7 @@
     * [Identity and Access Management (IAM) for vServer](vserver/compute-hcm03-1a/identity-and-access-management-iam-for-vserver/README.md)
       * [Actions, resources, and required conditions for vServer Access Decentralization](vserver/compute-hcm03-1a/identity-and-access-management-iam-for-vserver/actions-resources-and-required-conditions-for-vserver-access-decentralization.md)
       * [Use Cases IAM](vserver/compute-hcm03-1a/identity-and-access-management-iam-for-vserver/use-cases-iam.md)
+    * [Pricing](vserver/compute-hcm03-1a/pricing.md)
   * [vMarketplace](vserver/vmarketplace.md)
 * [vStorage](vstorage/README.md)
   * [What is vStorage?](vstorage/what-is-vstorage/README.md)
