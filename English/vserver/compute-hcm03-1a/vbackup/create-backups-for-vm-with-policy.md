@@ -39,6 +39,6 @@ You can quickly create a backup for one or more Servers from the Server list man
 1. Open the Server console at: [Server Console](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server).
 2. Select one or more Servers that need a backup, then click on the toolbar and select "Create Backup."
 3. One or more Backup Servers will be created with the default Policy schedule depending on the number of Servers selected for backup.
-4. After creating a Backup Server, you can wait for the time specified in the Policy schedule for the system to create the Backup file, or you can choose "Backup Now" to create a backup immediately.&#x20;
+4. After creating a Backup Server, you can wait for the time specified in the Policy schedule for the system to create the Backup file, or you can choose "[Backup Now](create-backups-immediately-back-now.md)" to create a backup immediately.&#x20;
 
 \
