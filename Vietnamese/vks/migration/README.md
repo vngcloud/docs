@@ -10,7 +10,7 @@ Trong quá trình migration, các tài nguyên như ổ đĩa, và các dịch v
 
 ### Mô hình tổng quan
 
-<figure><img src="../.gitbook/assets/image (299).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (299).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -18,4 +18,4 @@ Trong quá trình migration, các tài nguyên như ổ đĩa, và các dịch v
 
 #### Sơ đồ hoạt động
 
-<figure><img src="../.gitbook/assets/image (301).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (301).png" alt=""><figcaption></figcaption></figure>
