@@ -16,6 +16,13 @@ Trong quá trình migration, các tài nguyên như ổ đĩa, và các dịch v
 
 ### Các bước thực hiện
 
-#### Sơ đồ hoạt động
-
 <figure><img src="../../.gitbook/assets/image (301).png" alt=""><figcaption></figcaption></figure>
+
+Cụ thể:&#x20;
+
+* **Bước 1:** Prepard target resource
+* **Bước 2**: Migrate resources private outside cluster
+* **Bước 3**: Install Velero tool
+* **Bước 4**: Backup
+* **Bước 5**: Restore
+* **Bước 6**: Update resource config
