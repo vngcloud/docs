@@ -40,7 +40,7 @@ Khi bạn sử dụng dịch vụ vBackup. Trong lần đầu tiên, chúng tôi
 2. Tích chọn một hoặc nhiều Server cần tạo bản sao lưu, sau đó nhấn vào vào thanh công cụ và chọn **Tạo Backup**
 3. Một hoặc nhiều bản Backup Server sẽ được tạo với bộ lịch Policy mặc định tùy theo số lượng Server bạn đã chọn để tạo bản sao lưu
 
-Sau khi tạo Backup Server, bạn có thể đợi tới thời gian trong bộ lịch Policy để hệ thống thực hiện tạo tệp Backup, hoặc có thể lựa chọn Backup Now để tạo bạn Backup ngay taị thời điểm bạn thao tác chọn,. Vui lòng xem hướng dẫn tạo Backup now tại&#x20;
+Sau khi tạo Backup Server, bạn có thể đợi tới thời gian trong bộ lịch Policy để hệ thống thực hiện tạo tệp Backup, hoặc có thể lựa chọn [Backup Now](tao-ban-sao-luu-ngay-lap-tuc-backup-now.md) để tạo bạn Backup ngay taị thời điểm bạn thao tác chọn.
 
 \
 
