@@ -84,7 +84,7 @@
       * [Tạo bản sao lưu cho máy chủ ảo theo bộ lịch Policy](vserver/compute-hcm03-1a/backup/tao-ban-sao-luu-cho-may-chu-ao-theo-bo-lich-policy.md)
       * [Tạo bản sao lưu ngay lập tức (Backup Now)](vserver/compute-hcm03-1a/backup/tao-ban-sao-luu-ngay-lap-tuc-backup-now.md)
       * [Tự động sao lưu](vserver/compute-hcm03-1a/backup/tu-dong-sao-luu.md)
-      * [Thay đổi chính sách sao lưu](vserver/compute-hcm03-1a/backup/thay-doi-chinh-sach-sao-luu.md)
+      * [Changing the Backup Policy](vserver/compute-hcm03-1a/backup/thay-doi-chinh-sach-sao-luu.md)
       * [Khôi phục bản sao lưu](vserver/compute-hcm03-1a/backup/khoi-phuc-ban-sao-luu.md)
       * [Xóa bản sao lưu](vserver/compute-hcm03-1a/backup/xoa-ban-sao-luu.md)
       * [Chính sách sao lưu](vserver/compute-hcm03-1a/backup/chinh-sach-sao-luu/README.md)

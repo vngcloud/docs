@@ -1,27 +1,27 @@
-# Thay đổi chính sách sao lưu
+# Changing the Backup Policy
 
-Bạn có thể thay đổi chính sách sao lưu khác cho Backup Server. Hãy ghi nhớ những điểm sau:
+You can change the backup policy for a Backup Server. Keep the following points in mind:
 
-* Khi bạn đính kèm một chính sách sao lưu vào Backup Server, chính sách này sẽ áp dụng cho tất cả các Volume được đính kèm với Server đó.
-* Bạn chỉ có thể đính kém duy nhất 1 chính sách sao lưu cho Backup Server, nếu bạn muốn thay đổi chính sách khác, hãy tách chính sách sao lưu cũ và đính kèm chính sách sao lưu mới vào.
-* Ngoài những chính sách sao lưu bạn tự tạo, chúng tôi đã tạo sẵn các chính sách sao lưu mặc định với hiệu quả tối ưu, vì thế hãy cân nhắc sử dụng chúng.
+* When you attach a backup policy to a Backup Server, this policy will apply to all Volumes attached to that Server.
+* You can only attach one backup policy to a Backup Server at a time. If you want to change to a different policy, you must detach the old backup policy and attach the new one.
+* In addition to the backup policies you create yourself, we have pre-created default backup policies that are optimized for efficiency, so consider using them.
 
 ***
 
-### **Thay đổi chính sách sao lưu** <a href="#thaydoichinhsachsaoluu-thaydoichinhsachsaoluu" id="thaydoichinhsachsaoluu-thaydoichinhsachsaoluu"></a>
+### Changing the Backup Policy <a href="#thaydoichinhsachsaoluu-thaydoichinhsachsaoluu" id="thaydoichinhsachsaoluu-thaydoichinhsachsaoluu"></a>
 
-Khi đăng nhập vào tài khoản trên bảng điều khiển vServer, bạn có thể đính kèm chính sách sao lưu khi khởi tạo Backup Server, và sau đó, có thể thay đổi lại chính sách sao lưu khác tùy theo nhu cầu sử dụng
+When logged into your account on the vServer console, you can attach a backup policy when creating a Backup Server, and later, you can change the backup policy as needed.
 
-**Quyền tối thiểu**
+**Minimum Permission Required:**
 
-Để thay đổi các chính sách sao lưu, bạn phải có quyền chạy hành động sau:\
+To change backup policies, you must have permission to perform the following action:\
 IAM: UpdateBackupPolicy
 
-**Để thay đổi chính sách sao lưu cho bản Backup Server:**
+**To change the backup policy for a Backup Server:**
 
-1. Đăng nhập vào bảng điều khiển vBackup tại: [https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-server](https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-server). Bạn phải đăng nhập với tư cách người dùng IAM, đảm nhận vai trò IAM account hoặc đăng nhập với tư cách Root user account (không được khuyến nghị) trong tài khoản quản lý của tổ chức.
-2. Tại tab Backup Server, chỉ định Backup Server sau đó hãy chọn **Thay đổi Policy**
-3. Tìm chính sách mà bạn muốn thay đổi, rồi chọn **Áp dụng**, lưu ý rằng: bạn có thể thay đổi Policy đồng thời cho một hoặc nhiều Backup Server.
+1. Log in to the vBackup console at: [vBackup Console](https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-server). You must log in as an IAM user, assume the IAM account role, or log in as the Root user account (not recommended) within the organization's management account.
+2. In the Backup Server tab, specify the Backup Server, then select "**Change Policy**."
+3. Find the policy you want to change to, then select "**Apply**." Note that you can change the policy simultaneously for one or more Backup Servers.
 
 \
 
