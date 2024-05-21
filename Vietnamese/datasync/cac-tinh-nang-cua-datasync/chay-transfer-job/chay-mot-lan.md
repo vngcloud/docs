@@ -17,7 +17,9 @@ Giả sử bạn muốn transfer dữ liệu từ một bucket trên cloud provi
 1. **Xác định thời điểm**: 3:00 AM, 20/05/2024.
 2. **Cấu hình job**:
 
-* **Chọn thời điểm chạy job**: Chọn ngày 20/05/2024, nhập thời điểm 03:00.
+* **Chọn thời điểm chạy job**:&#x20;
+  * Chọn phương án **Chạy một lần**
+  * Chọn ngày 20/05/2024, nhập thời điểm 03:00.
 
 Hệ thống sẽ tự động bắt đầu job vào lúc 3:00 AM, 20/05/2024.
 

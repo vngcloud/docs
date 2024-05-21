@@ -1,2 +1,133 @@
 # Chạy nhiều lần theo lịch trình
 
+Trong hệ thống DataSync, cơ chế chạy lập lịch định kỳ cho các transfer job theo ngày, tuần, hoặc tháng giúp tự động hóa và đảm bảo các tác vụ transfer dữ liệu được thực hiện đều đặn theo một chu kỳ nhất định. Dưới đây là cách hoạt động của các chế độ lập lịch định kỳ này:
+
+**Bước 1: Xác định và cấu hình thời điểm Chạy Transfer Job**:
+
+* Bạn cần xác định thời điểm cụ thể mà bạn muốn transfer job bắt đầu chạy. Thời điểm này có thể được cấu hình dưới dạng ngày giờ cụ thể với điều kiện lớn hơn thời điểm hiện tại (**current datetime**)
+
+**Bước 2: Chạy Transfer Job:**
+
+* Đến thời điểm đã chỉ định, hệ thống DataSync sẽ tự động kích hoạt transfer job và bắt đầu quá trình transfer dữ liệu từ nguồn đến đích theo các thông số đã cấu hình.
+
+### Lập lịch chạy định kỳ theo Ngày
+
+* Transfer job sẽ chạy vào một thời điểm cụ thể hàng ngày.&#x20;
+
+**Ví dụ**
+
+Giả sử bạn muốn thiết lập một transfer job thực hiện transfer dữ liệu từ một bucket trên cloud provider A tới container B trên vStorage theo chu kỳ hằng ngày bắt đầu từ 01/05/2024 tới 30/05/2024 vào lúc 03:00. Quy trình sẽ như sau:
+
+1. **Xác định thời điểm**: 3:00 AM, từ ngày 01/05/2025 tới 30/05/2024.
+2. **Cấu hình job**:
+
+* **Chọn thời điểm chạy job**:&#x20;
+  * Chọn phương án **Chạy lập lịch**
+  * Chu kỳ **Daily**
+  * Chọn **Ngày bắt đầu** là 01/05/2024, nhập thời điểm 03:00.
+  * Chọn **Ngày kết thúc** là 30/05/2024
+
+3. Hằng ngày tính từ 01/05/2024, vào lúc 03:00 hệ thống sẽ thực hiện chạy transfer job của bạn.
+
+{% hint style="info" %}
+**Chú ý:**
+
+Nếu bạn thay đổi thông số ngày giờ hoặc chu kỳ chạy của một transfer job trong hệ thống DataSync, hệ thống sẽ chạy job theo thời gian và chu kỳ mới mà bạn đã chỉ định. Ví dụ:&#x20;
+
+* Hiện tại: bạn đang thiết lập chạy transfer job với các thông số:&#x20;
+  * Ngày bắt đầu: 01/05/2024 , 03:00
+  * Ngày kết thúc: 30/05/2024
+  * Chu kỳ: Daily
+
+\=> tính tới thời điểm hiện tại, lần run transfer job kế tiếp sẽ là vào lúc **22/05/2024 03:00**
+
+* Giả sử, bạn thực hiện thay đổi thông tin này vào ngày 21/05/2024 với thông số như sau:&#x20;
+  * Ngày bắt đầu: 01/05/2024 , 03:00
+  * Ngày kết thúc: 30/05/2024
+  * Chu kỳ: Weekly
+
+\=> Lúc này, thời điểm chạy kế tiếp sẽ là **22/05/2024 03:00 + 7 ngày = 29/05/2024 03:00**
+{% endhint %}
+
+### **Lập lịch chạy định kỳ theo Tuần**
+
+* Transfer job sẽ chạy định kỳ 7 ngày một lần.&#x20;
+
+**Ví dụ**
+
+Giả sử bạn muốn thiết lập một transfer job thực hiện transfer dữ liệu từ một bucket trên cloud provider A tới container B trên vStorage theo chu kỳ 7 ngày 1 lần bắt đầu từ 01/05/2024 tới 30/05/2024 vào lúc 03:00. Quy trình sẽ như sau:
+
+1. **Xác định thời điểm**: 3:00 AM, từ ngày 01/05/2025 tới 30/05/2024.
+2. **Cấu hình job**:
+
+* **Chọn thời điểm chạy job**:&#x20;
+  * Chọn phương án **Chạy lập lịch**
+  * Chu kỳ **Weekly**
+  * Chọn **Ngày bắt đầu** là 01/05/2024, nhập thời điểm 03:00.
+  * Chọn **Ngày kết thúc** là 30/05/2024
+
+3. Vào các ngày 01/05/2024, 08/05/2024, 15/05/2024, 22/05/2024, 29/05/2024 lúc 03:00 hệ thống sẽ thực hiện chạy transfer job của bạn.
+
+{% hint style="info" %}
+**Chú ý:**
+
+Nếu bạn thay đổi thông số ngày giờ hoặc chu kỳ chạy của một transfer job trong hệ thống DataSync, hệ thống sẽ chạy job theo thời gian và chu kỳ mới mà bạn đã chỉ định. Ví dụ:&#x20;
+
+* Hiện tại: bạn đang thiết lập chạy transfer job với các thông số:&#x20;
+  * Ngày bắt đầu: 01/05/2024 , 03:00
+  * Ngày kết thúc: 30/05/2024
+  * Chu kỳ: Weekly
+
+\=> tính tới thời điểm hiện tại, lần run transfer job kế tiếp sẽ là vào lúc **22/05/2024 03:00**
+
+* Giả sử, bạn thực hiện thay đổi thông tin này vào ngày 21/05/2024 với thông số như sau:&#x20;
+  * Ngày bắt đầu: 01/05/2024 , 03:00
+  * Ngày kết thúc: 30/05/2024
+  * Chu kỳ: Daily
+
+\=> Lúc này, thời điểm chạy kế tiếp sẽ là **22/05/2024 03:00 + 1 ngày = 23/05/2024 03:00**
+{% endhint %}
+
+### **Lập lịch chạy định kỳ theo Tháng**
+
+* Transfer job sẽ chạy định kỳ 30 ngày một lần.&#x20;
+
+**Ví dụ**
+
+Giả sử bạn muốn thiết lập một transfer job thực hiện transfer dữ liệu từ một bucket trên cloud provider A tới container B trên vStorage theo chu kỳ 30 ngày  1 lần bắt đầu từ 01/01/2024 tới 30/05/2024 vào lúc 03:00. Quy trình sẽ như sau:
+
+1. **Xác định thời điểm**: 3:00 AM, từ ngày 01/01/2025 tới 30/05/2024.
+2. **Cấu hình job**:
+
+* **Chọn thời điểm chạy job**:&#x20;
+  * Chọn phương án **Chạy lập lịch**
+  * Chu kỳ **Monthly**
+  * Chọn **Ngày bắt đầu** là 01/01/2024, nhập thời điểm 03:00.
+  * Chọn **Ngày kết thúc** là 30/05/2024
+
+3. Vào các ngày 01/01/2024, 30/01/2024, 28/02/2024, 30/03/2024, 29/04/2024, 29/05/2024 lúc 03:00 hệ thống sẽ thực hiện chạy transfer job của bạn.
+
+{% hint style="info" %}
+**Chú ý:**
+
+Nếu bạn thay đổi thông số ngày giờ hoặc chu kỳ chạy của một transfer job trong hệ thống DataSync, hệ thống sẽ chạy job theo thời gian và chu kỳ mới mà bạn đã chỉ định. Ví dụ:&#x20;
+
+* Hiện tại: bạn đang thiết lập chạy transfer job với các thông số:&#x20;
+  * Ngày bắt đầu: 01/05/2024 , 03:00
+  * Ngày kết thúc: 30/05/2024
+  * Chu kỳ: Monthly
+
+\=> tính tới thời điểm hiện tại, lần run transfer job kế tiếp sẽ là vào lúc **22/05/2024 03:00**
+
+* Giả sử, bạn thực hiện thay đổi thông tin này vào ngày 21/05/2024 với thông số như sau:&#x20;
+  * Ngày bắt đầu: 01/05/2024 , 03:00
+  * Ngày kết thúc: 30/05/2024
+  * Chu kỳ: Weekly
+
+\=> Lúc này, thời điểm chạy kế tiếp sẽ là **22/05/2024 03:00 + 1 ngày = 23/05/2024 03:00**
+{% endhint %}
+
+
+
+
+
