@@ -83,6 +83,7 @@
     * [vBackup](vserver/compute-hcm03-1a/vbackup/README.md)
       * [Create backups for VM with policy](vserver/compute-hcm03-1a/vbackup/create-backups-for-vm-with-policy.md)
       * [Create backups immediately (Back now)](vserver/compute-hcm03-1a/vbackup/create-backups-immediately-back-now.md)
+      * [Automatic Backup](vserver/compute-hcm03-1a/vbackup/automatic-backup.md)
       * [Create backups for virtual servers using the administration interface](vserver/compute-hcm03-1a/vbackup/create-backups-for-virtual-servers-using-the-administration-interface.md)
       * [Restore Backup](vserver/compute-hcm03-1a/vbackup/restore-backup.md)
       * [Backup Policies](vserver/compute-hcm03-1a/vbackup/backup-policies/README.md)
