@@ -1,4 +1,4 @@
-# Page
+# Changing the backup policy
 
 You can change the backup policy for a Backup Server. Keep the following points in mind:
 
