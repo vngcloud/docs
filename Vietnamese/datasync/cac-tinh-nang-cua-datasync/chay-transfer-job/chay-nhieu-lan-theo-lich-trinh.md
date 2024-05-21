@@ -90,22 +90,22 @@ Nếu bạn thay đổi thông số ngày giờ hoặc chu kỳ chạy của m�
 
 ### **Lập lịch chạy định kỳ theo Tháng**
 
-* Transfer job sẽ chạy định kỳ 30 ngày một lần.&#x20;
+* Transfer job sẽ chạy định kỳ 1 tháng một lần.&#x20;
 
 **Ví dụ**
 
-Giả sử bạn muốn thiết lập một transfer job thực hiện transfer dữ liệu từ một bucket trên cloud provider A tới container B trên vStorage theo chu kỳ 30 ngày  1 lần bắt đầu từ 01/01/2024 tới 30/05/2024 vào lúc 03:00. Quy trình sẽ như sau:
+Giả sử bạn muốn thiết lập một transfer job thực hiện transfer dữ liệu từ một bucket trên cloud provider A tới container B trên vStorage theo chu kỳ 1 tháng 1 lần bắt đầu từ 01/01/2024 tới 30/06/2024 vào lúc 03:00. Quy trình sẽ như sau:
 
-1. **Xác định thời điểm**: 3:00 AM, từ ngày 01/01/2025 tới 30/05/2024.
+1. **Xác định thời điểm**: 3:00 AM, từ ngày 01/01/2025 tới 30/06/2024.
 2. **Cấu hình job**:
 
 * **Chọn thời điểm chạy job**:&#x20;
   * Chọn phương án **Chạy lập lịch**
   * Chu kỳ **Monthly**
   * Chọn **Ngày bắt đầu** là 01/01/2024, nhập thời điểm 03:00.
-  * Chọn **Ngày kết thúc** là 30/05/2024
+  * Chọn **Ngày kết thúc** là 30/06/2024
 
-3. Vào các ngày 01/01/2024, 30/01/2024, 28/02/2024, 30/03/2024, 29/04/2024, 29/05/2024 lúc 03:00 hệ thống sẽ thực hiện chạy transfer job của bạn.
+3. Vào các ngày 01/01/2024, 01/02/2024, 01/03/2024, 01/04/2024, 01/05/2024, 01/06/2024 lúc 03:00 hệ thống sẽ thực hiện chạy transfer job của bạn.
 
 {% hint style="info" %}
 **Chú ý:**
@@ -114,17 +114,17 @@ Nếu bạn thay đổi thông số ngày giờ hoặc chu kỳ chạy của m�
 
 * Hiện tại: bạn đang thiết lập chạy transfer job với các thông số:&#x20;
   * Ngày bắt đầu: 01/05/2024 , 03:00
-  * Ngày kết thúc: 30/05/2024
+  * Ngày kết thúc: 30/06/2024
   * Chu kỳ: Monthly
 
-\=> tính tới thời điểm hiện tại, lần run transfer job kế tiếp sẽ là vào lúc **22/05/2024 03:00**
+\=> tính tới thời điểm hiện tại, lần run transfer job kế tiếp sẽ là vào lúc **01/06/2024 03:00**
 
 * Giả sử, bạn thực hiện thay đổi thông tin này vào ngày 21/05/2024 với thông số như sau:&#x20;
   * Ngày bắt đầu: 01/05/2024 , 03:00
-  * Ngày kết thúc: 30/05/2024
+  * Ngày kết thúc: 30/06/2024
   * Chu kỳ: Weekly
 
-\=> Lúc này, thời điểm chạy kế tiếp sẽ là **22/05/2024 03:00 + 1 ngày = 23/05/2024 03:00**
+\=> Lúc này, thời điểm chạy kế tiếp sẽ là **01/06/2024 03:00 + 7 ngày = 08/06/2024 03:00**
 {% endhint %}
 
 
