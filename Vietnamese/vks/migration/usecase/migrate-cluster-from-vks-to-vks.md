@@ -1,9 +1,12 @@
-# How to migrate VKS to VKS
+# Migrate Cluster from VKS to VKS
 
-## In both cluster (source and target)
+Để migrate một Cluster từ hệ thống VKS tới hệ thống VKS, hãy thực hiện theo các bước bên dưới:
 
-Create a vStorage Project, Container, IAM Key,...
-Create a file `credentials-velero` with content:
+## Trên cả 2 Cluster (source and target)
+
+* Tạo một vStorage Project, Container làm nơi nhận dữ liệu backup của cụm theo hướng dẫn tại [đây](../../../vstorage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-project/khoi-tao-project.md).
+* Khởi tạo S3 key tương ứng với vStorage Project này theo hướng dẫn tại [đây](../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-s3-key.md).
+* Tạo file credentials-velero với nội dung sau:
 
 ```yaml
 [default]
@@ -11,7 +14,7 @@ aws_access_key_id=<AWS_ACCESS_KEY_ID>
 aws_secret_access_key=<AWS_SECRET_ACCESS_KEY>
 ```
 
-Install velero cli:
+* Cài đặt Velero CLI:
 
 ```bash
 curl -OL https://github.com/vmware-tanzu/velero/releases/download/v1.13.2/velero-v1.13.2-linux-amd64.tar.gz
@@ -19,13 +22,13 @@ tar -xvf velero-v1.13.2-linux-amd64.tar.gz
 cp velero-v1.13.2-linux-amd64/velero /usr/local/bin
 ```
 
-Install velero to cluster:
+* Cài đặt Velero trên 2 cụm của bạn theo lệnh:
 
 ```bash
 velero install --provider aws \
   --plugins velero/velero-plugin-for-aws:v1.9.0,velero/velero-plugin-for-csi:v0.7.0 \
   --secret-file ./credentials-velero \
-  --bucket annd2-01 \
+  --bucket mybucket \
   --backup-location-config region=hcm03,s3ForcePathStyle="true",s3Url=https://hcm03.vstorage.vngcloud.vn \
   --use-node-agent \
   --features=EnableCSI
@@ -34,7 +37,7 @@ velero install --provider aws \
 velero client config set features=EnableCSI
 ```
 
-We have to install Snapshot Controller by VNGCLOUD:
+* Cài đặt plugin VNGCloud Snapshot Controller trên 2 cluster theo lệnh:
 
 ```bash
 helm repo add vks-helm-charts https://vngcloud.github.io/vks-helm-charts
@@ -43,7 +46,7 @@ helm install vngcloud-snapshot-controller vks-helm-charts/vngcloud-snapshot-cont
   --replace --namespace kube-system
 ```
 
-Create new Storage Class
+* Tạo một Storage Class
 
 ```yaml
 apiVersion: storage.k8s.io/v1
@@ -57,9 +60,9 @@ parameters:
 allowVolumeExpansion: true
 ```
 
-## In source cluster
+## Tại Cluster nguồn
 
-Deploy a sample service
+* Bạn có thể triển khai service nginx theo mẫu
 
 ```yaml
 apiVersion: v1
@@ -114,17 +117,14 @@ spec:
           storage: 40Gi
 ```
 
-Modify data
-
 ```bash
 kubectl exec -n annd2 -it web-0 bash
 cd /usr/share/nginx/html
 echo -e "<html>\n<head>\n  <title>Annd2</title>\n</head>\n<body>\n  <h1>Hello, Tantm3</h1>\n</body>\n</html>" > index.html
 ```
 
-Access to Nodeport URL, we will see "Hello, Annd2".
-
-Apply this file to create default Volume Snapshot for every PVC
+* Lúc này, khi bạn truy cập vào Public IP của Node, bạn sẽ thấy "Hello, Annd2".
+* Tiếp tục apply file bên dưới để tạo default Volume Snapshot cho mọi PVC
 
 ```yaml
 apiVersion: snapshot.storage.k8s.io/v1
@@ -140,7 +140,7 @@ deletionPolicy: Delete
 # user can choose the VolumeSnapshotClass by setting annotation velero.io/csi-volumesnapshot-class: "test-snapclass" on PersistentVolumeClaim resource.
 ```
 
-Create backup
+* Thực hiện backup theo cú pháp:
 
 ```bash
 velero backup create tantm3 --include-cluster-scoped-resources="" \
@@ -157,9 +157,9 @@ velero backup create tantm3 --include-cluster-scoped-resources="" \
 velero backup describe tantm3 --details
 ```
 
-## In target cluster
+## Tại Cluster đích
 
-Create restore to another namespace:
+* Thực hiện restore theo lệnh:
 
 ```bash
 velero restore create --from-backup tantm3
