@@ -2,7 +2,7 @@
 
 **Bước 1**: Đăng nhập vào trang quản trị tài khoản SSO: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/) Trên menu các chức năng quản trị tài khoản, chọn mục **Đổi số điện thoại**
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 2**: Nhập vào số điện thoại mà quý khách muốn đổi. Tiếp đó nhấn **Gửi OTP** để nhận mã OTP từ **Email** mà quý khách đã đăng ký.
 
