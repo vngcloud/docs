@@ -31,7 +31,7 @@ velero install \
     --use-node-agent \
     --use-volume-snapshots=false \
     --secret-file ./credentials-velero \
-    --bucket annd2-01 \
+    --bucket mybucket \
     --backup-location-config region=hcm03,s3ForcePathStyle="true",s3Url=https://hcm03.vstorage.vngcloud.vn
 ```
 
@@ -44,13 +44,13 @@ velero install \
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: annd2
+  name: mynamespace
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: nginx
-  namespace: annd2
+  namespace: mynamespace
   labels:
     app: nginx
 spec:
@@ -65,7 +65,7 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: web
-  namespace: annd2
+  namespace: mynamespace
 spec:
   selector:
     matchLabels:
@@ -89,7 +89,7 @@ spec:
   volumeClaimTemplates:
   - metadata:
       name: disk-ssd
-      namespace: annd2
+      namespace: mynamespace
     spec:
       accessModes: [ "ReadWriteOnce" ]
       storageClassName: standard-rwo
@@ -100,27 +100,27 @@ spec:
 ```
 
 ```bash
-kubectl exec -n annd2 -it web-0 bash
+kubectl exec -n mynamespace -it web-0 bash
 cd /usr/share/nginx/html
-echo -e "<html>\n<head>\n  <title>Annd2</title>\n</head>\n<body>\n  <h1>Hello, Tantm3</h1>\n</body>\n</html>" > index.html
+echo -e "<html>\n<head>\n  <title>MyVNGCloud</title>\n</head>\n<body>\n  <h1>Hello, MyVNGCloud</h1>\n</body>\n</html>" > index.html
 ```
 
-* Lúc này, khi bạn truy cập vào Public IP của Node, bạn sẽ thấy "Hello, Annd2".
+* Lúc này, khi bạn truy cập vào Public IP của Node, bạn sẽ thấy "Hello, MyVNGCloud".
 * Đánh dấu Volume bạn muốn backup thông qua lệnh:
 
 ```bash
-kubectl -n annd2 annotate pod/web-0 backup.velero.io/backup-volumes=disk-ssd
+kubectl -n mynamespace annotate pod/web-0 backup.velero.io/backup-volumes=disk-ssd
 ```
 
 * Thực hiện backup theo cú pháp:
 
 ```bash
-velero backup create tantm3 --include-cluster-scoped-resources="" \
+velero backup create mybackup --include-cluster-scoped-resources="" \
     --include-namespace-scoped-resources="*" \
-    --include-namespaces annd2 \
+    --include-namespaces mynamespace \
     --parallel-files-upload 20 --wait
 
-velero backup describe tantm3 --details
+velero backup describe mybackup --details
 ```
 
 ## Tại Cluster đích
@@ -143,7 +143,7 @@ data:
 * Thực hiện restore theo lệnh:
 
 ```bash
-velero restore create --from-backup tantm3
+velero restore create --from-backup mybackup
 ```
 
 {% hint style="info" %}

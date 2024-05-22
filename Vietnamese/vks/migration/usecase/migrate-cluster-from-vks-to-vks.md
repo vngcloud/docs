@@ -69,7 +69,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx
-  namespace: annd2
+  namespace: mynamespace
   labels:
     app: nginx
 spec:
@@ -84,7 +84,7 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: web
-  namespace: annd2
+  namespace: mynamespace
 spec:
   selector:
     matchLabels:
@@ -108,7 +108,7 @@ spec:
   volumeClaimTemplates:
   - metadata:
       name: disk-ssd
-      namespace: annd2
+      namespace: mynamespace
     spec:
       accessModes: [ "ReadWriteOnce" ]
       storageClassName: ssd-3000
@@ -118,12 +118,12 @@ spec:
 ```
 
 ```bash
-kubectl exec -n annd2 -it web-0 bash
+kubectl exec -n mynamespace -it web-0 bash
 cd /usr/share/nginx/html
-echo -e "<html>\n<head>\n  <title>Annd2</title>\n</head>\n<body>\n  <h1>Hello, Tantm3</h1>\n</body>\n</html>" > index.html
+echo -e "<html>\n<head>\n  <title>MyVNGCloud</title>\n</head>\n<body>\n  <h1>Hello, MyVNGCloud</h1>\n</body>\n</html>" > index.html
 ```
 
-* Lúc này, khi bạn truy cập vào Public IP của Node, bạn sẽ thấy "Hello, Annd2".
+* Lúc này, khi bạn truy cập vào Public IP của Node, bạn sẽ thấy "Hello, MyVNGCloud".
 * Tiếp tục apply file bên dưới để tạo default Volume Snapshot cho mọi PVC
 
 ```yaml
@@ -143,18 +143,18 @@ deletionPolicy: Delete
 * Thực hiện backup theo cú pháp:
 
 ```bash
-velero backup create tantm3 --include-cluster-scoped-resources="" \
+velero backup create mybackup --include-cluster-scoped-resources="" \
     --include-namespace-scoped-resources="*" \
-    --include-namespaces annd2 \
+    --include-namespaces mynamespace \
     --wait
 
-# velero backup create tantm3 \
+# velero backup create mybackup \
 #   --exclude-namespaces kube-system,kube-public,kube-node-lease,velero,default \
 #   --wait
 
 # --snapshot-move-data is Specify whether snapshot data should be moved
 
-velero backup describe tantm3 --details
+velero backup describe mybackup --details
 ```
 
 ## Tại Cluster đích
@@ -162,5 +162,5 @@ velero backup describe tantm3 --details
 * Thực hiện restore theo lệnh:
 
 ```bash
-velero restore create --from-backup tantm3
+velero restore create --from-backup mybackup
 ```
