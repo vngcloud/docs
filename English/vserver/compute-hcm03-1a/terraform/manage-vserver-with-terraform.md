@@ -20,13 +20,9 @@ After downloading the Example folder to the computer, the user opens the file [v
 * **Client\_id:** Get at IAM homepage/ Service account - Service account Detail - **Tab Security credentials**
 * **Client\_secret:** Obtained when initializing Service account at IAM homepage or can be reset at IAM homepage/ Service account - Service account Detail - **Tab Security credentials**
 
-\
-\
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59802563/image2023-6-8_16-29-44.png?version=1&#x26;modificationDate=1686558724000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59802563/image2023-6-8_16-29-29.png?version=1&#x26;modificationDate=1686558724000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 | `variable "client_id"` `{  type` `= string  default = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}variable "client_secret"` `{  type` `= string  default = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}` |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -52,24 +48,17 @@ _chỉ để lại:_
 
 * **project\_id**: your project information, you can get it at [{Limit Tab}](https://hcm-3.console.vngcloud.vn/vserver/limit) on vServer Portal, For example: **pro-462803f3-6858-466f-bf05-df2b33faa360**:
 
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59802563/image2023-6-8_17-21-49.png?version=1&#x26;modificationDate=1686558724000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 
 
 * **image\_id**: operating system to initialize vServer eg: **img-b5bf635e-0456-4765-b493-31d5fcfc05aa** (1\_Ubuntu-22.04x64) ... you can see Id list when creating vServer on Portal/ [{System Image Tab}](https://hcm-3.console.vngcloud.vn/vserver/v-server/system-image)
 
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59802563/image2023-6-8_17-25-15.png?version=1&#x26;modificationDate=1686558725000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 * **flavor\_id**: vServer configuration that you will initialize for example: **flav-e2028a81-cc75-47e4-8af1-9eef2f857f84** (s-general-2x4) ,... you can see the list when creating vServer on Portal/ [{Flavors Tab}](https://hcm-3.console.vngcloud.vn/vserver/v-server/flavor).
 
-\
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59802563/image2023-6-8_17-27-19.png?version=1&#x26;modificationDate=1686558725000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 | `variable "project_id"` `{  type`    `= string  default = "pro-462803f3-6858-466f-bf05-df2b33faa360"}variable "s_general_4x8"` `{  type`    `= string  default = "flav-05f97524-0410-46a4-87a8-af92aa759231"}variable "ubuntu_20_04"` `{  type`    `= string  default = "img-a34d639b-e070-46ff-8b91-addf4fac45b4"}` |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -77,10 +66,9 @@ _chỉ để lại:_
 \
 
 
-* **volume\_type\_name**: specify IOPS for root disk and data disk, for example: **SSD-3000**, you can see Volume Type list on vServer Portal/ [{Volume Type Tab}](https://hcm-3.console.vngcloud.vn/vserver/v-server/system-image).\
+* **volume\_type\_name**: specify IOPS for root disk and data disk, for example: **SSD-3000**, you can see Volume Type list on vServer Portal/ [{Volume Type Tab}](https://hcm-3.console.vngcloud.vn/vserver/v-server/system-image).
 
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59802563/image2023-6-9_9-51-3.png?version=1&#x26;modificationDate=1686558725000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 \
 
@@ -100,19 +88,13 @@ _chỉ để lại:_
 
 * **network\_id**: specify the network id that the vServer will be created on, you can get it from the [VPC tab](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), if you haven't initialized any network you can see the instructions [{Network creation page}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039):
 
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59802563/image2023-6-9_9-55-7.png?version=1&#x26;modificationDate=1686558725000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 
 
 * **subnet\_id**: specify the subnet id that vServer will be created on, you can get it from [{VPC Tab}](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), if you haven't initialized any subnet you can see the instructions at [{Subnet creation page}](../vpc/virtual-private-cloud-vpc.md):
 
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59802563/image2023-6-9_9-56-22.png?version=1&#x26;modificationDate=1686558725000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 | `variable "network_id"` `{  type`    `= string  default = "net-22581aed-a65d-4b1e-86d3-102d68e148e0"}variable "subnet_id"` `{  type`    `= string  default = "sub-5f101cba-7ce0-4084-8576-06b8dbfb298a"` |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -121,20 +103,11 @@ _chỉ để lại:_
 
 * **ssh\_key\_id**: specify the ssh key that will be injected into the vServer, you can get it at [{SSH Keys Tab}](https://hcm-3.console.vngcloud.vn/vserver/v-server/ssh-key), if you haven't initialized any ssh key you can see it at [{SSH key creation page}](../security/ssh-key-key-pairs.md):
 
-\
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59802563/image2023-6-9_10-2-58.png?version=1&#x26;modificationDate=1686558725000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 * **security\_group\_id\_list**: specify a list of security group ids that need to be attached to vServer, you can get it at [{Security Groups Tab}](https://hcm-3.console.vngcloud.vn/vserver/network/sec-group), if you need to create more security groups you can see it at [{Security Group Creation Page}](../server-group.md).
 
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59802563/image2023-6-9_10-6-2.png?version=1&#x26;modificationDate=1686558725000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 | `variable "ssh_key_id"` `{  type`    `= string  default = "ssh-b4fbf87a-d9bc-4f04-9ea1-39e086f443de"}variable "security_group_id_list"` `{  type`    `= list(string)  default = [    "secg-28e91c47-11b1-4cc1-8e24-dd174882708d"  ]}` |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -184,4 +157,4 @@ and select **YES** to perform vServer initialization via Terraform
 
 **Step 8**: You can go to the Portal to see the Server being initialized from Terraform:
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59802563/image2023-6-9_10-13-51.png?version=1&#x26;modificationDate=1686558726000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>

@@ -6,7 +6,7 @@ Terraform is an open source infrastructure as a code engine that allows users to
 
 Terraform itself does not have a graphical user interface, instead the user interacts with it using a command line interface. Terraform requires a configured cloud provider account and key along with a Terraform configuration file to execute the infrastructure as code. Additionally, Terraform can operate in a team environment where multiple users can collaborate on the same infrastructure codebase, making it a powerful and flexible tool for infrastructure management. cloud.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59802555/image2023-4-20_16-49-33.png?version=1&#x26;modificationDate=1684998934000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 \
 
