@@ -118,13 +118,13 @@ velero backup create <backup-name> --selector <key>=<value>
 
 * Kiểm tra trạng thái backup thông qua cú pháp
 
-```
+```yaml
 $ velero backup get
 ```
 
 * Kết quả trả về như sau là việc backup đã thành công:
 
-```
+```yaml
 NAME               STATUS      ERRORS   WARNINGS   CREATED                         EXPIRES   STORAGE LOCATION   SELECTOR
 wordpress-backup   Completed   0        0          2021-10-14 15:32:07 +0800 CST   29d       default            <none>
 ```
