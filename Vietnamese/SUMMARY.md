@@ -573,6 +573,7 @@
   * [Security Group](vks/security-group.md)
   * [Migration](vks/migration/README.md)
     * [Các bước thực hiện](vks/migration/cac-buoc-thuc-hien.md)
+    * [Usecase](vks/migration/usecase.md)
   * [Giám sát](vks/giam-sat/README.md)
     * [Metrics](vks/giam-sat/metrics.md)
   * [Cách tính giá](vks/cach-tinh-gia.md)
