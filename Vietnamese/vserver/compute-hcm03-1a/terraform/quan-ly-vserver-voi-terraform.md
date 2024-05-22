@@ -34,7 +34,6 @@ Sau khi tải thư mục Example về máy, người dùng mở file [_**variabl
 * **Client\_id:** Lấy tại trang chủ IAM/ Service account**/ Tab Security credentials**
 * **Client\_secret:** Lấy khi khởi tạo Service account tại trang chủ **IAM** hoặc có thể reset lại tại trang IAM/ Service account**/ Tab Security credentials**
 
-\
 
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/49650384/image2023-6-8_16-29-44.png?version=1&#x26;modificationDate=1686216585000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
