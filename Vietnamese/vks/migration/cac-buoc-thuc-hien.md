@@ -10,7 +10,15 @@ Trên hệ thống VKS, bạn cần thực hiện khởi tạo một Cluster the
 
 ### Migrate resources private outside cluster
 
+Migrating resources private outside cluster (di chuyển tài nguyên riêng tư bên ngoài cụm) là quá trình di chuyển tài nguyên riêng tư nằm trên Cluster nguồn sang một Cluster đích. Ví dụ, bạn có thể có những tài nguyên riêng tư như image, database,... Lúc này, trước khi bắt đầu migrate, bạn cần tự thực hiện việc migrate các tài nguyên này.
 
+#### Migrating Container Images
+
+Tham khảo thêm tại [đây](../../vcontainer-registry/) để thực hiện migrate image giữa 2 Cluster.
+
+#### Migrating Databases and Storage (On-Demand) <a href="#migrating-databases-and-storage-on-demand" id="migrating-databases-and-storage-on-demand"></a>
+
+Bạn có thể sử dụng  Relational **Database Service (RDS)** và **Object Storage Service (OBS)** tùy theo nhu cầu sử dụng của bạn. Sau khi việc migration hoàn tất, hãy nhớ config lại database và storage cho applications của bạn trên VKS Cluster.
 
 ***
 
