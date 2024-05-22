@@ -1,4 +1,4 @@
-# Gói bandwidth Share
+# Gói Bandwidth Share
 
 Gói bandwidth Share là gói bandwidth với tốc độ cao được chia sẻ cho nhiều khách hàng cùng sử dụng. Tốc độ của gói này có thể khác nhau tại các thời điểm trong ngày. **Gói này phù hợp cho các doanh nghiệp nhỏ hoặc các dự án không yêu cầu băng thông lớn và ổn định liên tục**. Nếu bạn chỉ cần băng thông để duy trì các hoạt động cơ bản và không có yêu cầu cao về hiệu suất mạng, đây là lựa chọn hợp lý nhất cho bạn.
 
@@ -39,11 +39,11 @@ Gói bandwidth Share là gói bandwidth với tốc độ cao được chia sẻ
 
 **Bước 3**: Trên danh sách các gói bandwidth có sẵn, chọn vào gói **Share** tùy theo nhu cầu sử dụng của bạn.
 
-**Bước 4**: Chọn biểu tượng <img src="../../../../.gitbook/assets/image (2).png" alt="" data-size="line">sau đó chọn **Thêm IP** hoặc ở màn hình chi tiết gói, tại mục **Danh sách IP**, chọn biểu tượng **Thêm IP.**&#x20;
+**Bước 4**: Chọn biểu tượng <img src="../../../../.gitbook/assets/image (2) (1).png" alt="" data-size="line">sau đó chọn **Thêm IP** hoặc ở màn hình chi tiết gói, tại mục **Danh sách IP**, chọn biểu tượng **Thêm IP.**&#x20;
 
 **Bước 5:** Màn hình **Thêm IP** được hiển thị, bạn có thể lọc danh sách IP theo từng loại bằng cách chọn một trong các phương án tại ô **Loại resource**. Hiện tại chúng tôi đang cung cấp cho bạn các loại resource bao gồm: **K8S, Floating IP, External Interface, vLB.**
 
-**Bước 6**: Chọn một hoặc nhiều IP bằng cách chọn biểu tượng <img src="../../../../.gitbook/assets/image (1).png" alt="" data-size="line">và chọn **Thêm**. tượng **Thêm IP.**&#x20;
+**Bước 6**: Chọn một hoặc nhiều IP bằng cách chọn biểu tượng <img src="../../../../.gitbook/assets/image (1) (1).png" alt="" data-size="line">và chọn **Thêm**. tượng **Thêm IP.**&#x20;
 
 ***
 
@@ -57,7 +57,7 @@ Gói bandwidth Share là gói bandwidth với tốc độ cao được chia sẻ
 
 **Bước 3**: Trên danh sách các gói bandwidth có sẵn, chọn vào gói **Share** tùy theo nhu cầu sử dụng của bạn.
 
-**Bước 4**: Tại mục **Danh sách IP**, chọn biểu tượng <img src="../../../../.gitbook/assets/image (3).png" alt="" data-size="line">tại địa chỉ IP bạn muốn bỏ khỏi gói và chọn biểu tượng <img src="../../../../.gitbook/assets/image (4).png" alt="" data-size="line">.
+**Bước 4**: Tại mục **Danh sách IP**, chọn biểu tượng <img src="../../../../.gitbook/assets/image (3) (1).png" alt="" data-size="line">tại địa chỉ IP bạn muốn bỏ khỏi gói và chọn biểu tượng <img src="../../../../.gitbook/assets/image (4) (1).png" alt="" data-size="line">.
 
 **Bước 5:** Tại màn hình xác nhận xóa IP, chọn **Xóa**.
 

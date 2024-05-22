@@ -6,7 +6,7 @@ Terraform là một cơ sở hạ tầng nguồn mở dưới dạng công cụ 
 
 Bản thân Terraform không có giao diện người dùng đồ họa, thay vào đó người dùng tương tác với nó bằng giao diện dòng lệnh. Terraform yêu cầu tài khoản và khóa của nhà cung cấp đám mây được định cấu hình cùng với tệp cấu hình Terraform để thực thi cơ sở hạ tầng dưới dạng mã. Ngoài ra, Terraform có thể hoạt động trong môi trường nhóm nơi nhiều người dùng có thể cộng tác trên cùng một cơ sở mã cơ sở hạ tầng, khiến nó trở thành một công cụ mạnh mẽ và linh hoạt để quản lý cơ sở hạ tầng đám mây.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49650379/image2023-4-20_16-49-33.png?version=1&#x26;modificationDate=1681984174000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### **Lợi ích mà Terraform mang lại?** <a href="#terraform-loiichmaterraformmanglai" id="terraform-loiichmaterraformmanglai"></a>
 
