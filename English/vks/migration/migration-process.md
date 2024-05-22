@@ -1,6 +1,12 @@
 # Các bước thực hiện
 
+Bên dưới là các bước chung mà bạn cần thực hiện để migrate workload từ một Cluster sang một Cluster khác. Với mỗi trường hợp, có thể có thêm một vài bước. Chúng tôi đã liệt kê các trường hợp phổ biến nhất như sau, bạn có thể tham khảo và làm theo hướng dẫn tại:
 
+* [Migrate Cluster from VKS to VKS](usecase/migrate-cluster-from-vks-to-vks.md)
+* [Migrate Cluster from vContainer to VKS](usecase/migration-cluster-from-vcontainer-to-vks.md)
+* [Migrate Cluster from another platform to VKS](usecase/migrate-cluster-from-other-to-vks.md)
+
+***
 
 ### Chuẩn bị cluster đích (Prepard target resource)
 
@@ -8,23 +14,18 @@ Trên hệ thống VKS, bạn cần thực hiện khởi tạo một Cluster the
 
 ***
 
-### Migrate resources private outside cluster
+### \[Optional] Migrate resources private outside cluster
 
-Migrating resources private outside cluster (di chuyển tài nguyên riêng tư bên ngoài cụm) là quá trình di chuyển tài nguyên riêng tư nằm trên Cluster nguồn sang một Cluster đích. Ví dụ, bạn có thể có những tài nguyên riêng tư như image, database,... Lúc này, trước khi bắt đầu migrate, bạn cần tự thực hiện việc migrate các tài nguyên này.
+Migrating resources private outside cluster (di chuyển tài nguyên riêng tư bên ngoài cụm) là quá trình di chuyển tài nguyên riêng tư nằm trên Cluster nguồn sang một Cluster đích. Ví dụ, bạn có thể có những tài nguyên riêng tư như image, database,... Lúc này, trước khi bắt đầu migrate, bạn cần tự thực hiện việc migrate các tài nguyên này. Ví dụ, nếu bạn cần:
 
-#### Migrating Container Images
-
-Tham khảo thêm tại [đây](../../vcontainer-registry/) để thực hiện migrate image giữa 2 Cluster.
-
-#### Migrating Databases and Storage (On-Demand) <a href="#migrating-databases-and-storage-on-demand" id="migrating-databases-and-storage-on-demand"></a>
-
-Bạn có thể sử dụng  Relational **Database Service (RDS)** và **Object Storage Service (OBS)** tùy theo nhu cầu sử dụng của bạn. Sau khi việc migration hoàn tất, hãy nhớ config lại database và storage cho applications của bạn trên VKS Cluster.
+* Migrating Container Images: vui lòng tham khảo thêm tại [đây](../../vcontainer-registry/) để thực hiện migrate image giữa 2 Cluster.
+* Migrating Databases and Storage (On-Demand): Bạn có thể sử dụng Relational **Database Service (RDS)** và **Object Storage Service (OBS)** tùy theo nhu cầu sử dụng của bạn. Sau khi việc migration hoàn tất, hãy nhớ config lại database và storage cho applications của bạn trên VKS Cluster.
 
 ***
 
 ### Cài đặt Velero trên cả 2 cluster nguồn và cluster đích(Install Velero tool)
 
-Sau khi bạn đã thực hiện migrate các tài nguyên private ngoài cluster, bạn có thể sử dụng công cụ migration để sao lưu (backup) và khôi phục (restore) application trên cluster nguồn và cluster đích.&#x20;
+Sau khi bạn đã thực hiện migrate các tài nguyên private ngoài cluster, bạn có thể sử dụng công cụ migration để sao lưu (backup) và khôi phục (restore) application trên cluster nguồn và cluster đích.
 
 * Tạo một vStorage Project , Container làm nơi nhận dữ liệu backup của cụm theo hướng dẫn tại [đây](../../vstorage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-project/khoi-tao-project.md).
 * Khởi tạo S3 key tương ứng với vStorage Project này theo hướng dẫn tại [đây](../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-s3-key.md).
@@ -39,7 +40,7 @@ aws_access_key_id=<AWS_ACCESS_KEY_ID>
 aws_secret_access_key=<AWS_SECRET_ACCESS_KEY>
 ```
 
-* Cài đặt Velero CLI theo câu lệnh:&#x20;
+* Cài đặt Velero CLI theo câu lệnh:
 
 ```yaml
 curl -OL https://github.com/vmware-tanzu/velero/releases/download/v1.13.2/velero-v1.13.2-linux-amd64.tar.gz
@@ -66,9 +67,9 @@ velero install \
 
 ### Sao lưu (Backup)
 
-Để sao lưu tài nguyên, hãy sử dụng công cụ Velero để tạo đối tượng sao lưu trong cluster nguồn. Velero sẽ thực hiện truy vấn, đóng gói dữ liệu và tải chúng lên một S3 Compatible Object Storage.&#x20;
+Để sao lưu tài nguyên, hãy sử dụng công cụ Velero để tạo đối tượng sao lưu trong cluster nguồn. Velero sẽ thực hiện truy vấn, đóng gói dữ liệu và tải chúng lên một S3 Compatible Object Storage.
 
-* \[Optional] Để sao lưu dữ liệu của storage volume được chỉ định trong pod, hãy thêm annotation vào pod. Ví dụ:
+* **\[Optional]** Để sao lưu dữ liệu của storage volume được chỉ định trong pod, hãy thêm annotation vào pod. Ví dụ:
 
 ```yaml
 kubectl -n <namespace> annotate pod/<pod_name> backup.velero.io/backup-volumes=<volume_name_1>,<volume_name_2>,...
@@ -96,7 +97,7 @@ velero backup describe mybackup --details
 
 ```
 
-Trong đó:&#x20;
+Trong đó:
 
 * `--include-namespaces`: chỉ định namespace bạn muốn backup
 
@@ -135,7 +136,7 @@ wordpress-backup   Completed   0        0          2021-10-14 15:32:07 +0800 CST
 
 Trong quá trình khôi phục tại cluster đích, Velero sẽ thực hiện tải dữ liệu sao lưu xuống cụm mới và triển khai lại tài nguyên dựa trên tệp JSON.
 
-* \[Optional] Velero có thể thay đổi PV/PVC Storage Classes của Persistent Volumes and Persistent Volume Claims trong giai đoạn restore Cluster. Để thiết lập mapping Storage Class, hãy tạo file mapping với namespace: velero theo mẫu:
+* **\[Optional]** Velero có thể thay đổi PV/PVC Storage Classes của Persistent Volumes and Persistent Volume Claims trong giai đoạn restore Cluster. Để thiết lập mapping Storage Class, hãy tạo file mapping với namespace: velero theo mẫu:
 
 ```yaml
 apiVersion: v1
@@ -151,11 +152,10 @@ data:
   <old-storage-class>: <new-storage-class>
 ```
 
-* \[Optional] Thay đổi Pod/ Deployment/ StatefulSet/ DaemonSet/ ReplicaSet/ ReplicationController/ Job/ CronJob Image Repositories theo hướng dẫn tại [đây](https://velero.io/docs/v1.13/restore-reference/).
+* **\[Optional]** Thay đổi Pod/ Deployment/ StatefulSet/ DaemonSet/ ReplicaSet/ ReplicationController/ Job/ CronJob Image Repositories theo hướng dẫn tại [đây](https://velero.io/docs/v1.13/restore-reference/).
 
 ***
 
 ### Update resource config
 
-&#x20;Sau khi tài nguyên của cluster đích được triển khai đúng cách, bạn có thể thực hiện switch traffic cho dịch vụ của bạn. Sau khi xác nhận rằng tất cả các dịch vụ đều chạy bình thường, bạn có thể thực hiện xóa cluster nguồn.
-
+Sau khi tài nguyên của cluster đích được triển khai đúng cách, bạn có thể thực hiện **switch traffic** cho dịch vụ của bạn. Sau khi xác nhận rằng tất cả các dịch vụ đều chạy bình thường, bạn có thể thực hiện xóa cluster nguồn.
