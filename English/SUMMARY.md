@@ -318,7 +318,7 @@
       * [Restrictions and Limitations of CSI](vks/storage/lam-viec-voi-container-storage-interface-csi/gioi-han-va-han-che-csi.md)
   * [Security Group](vks/security-group.md)
   * [Migration](vks/migration/README.md)
-    * [Migration Process](vks/migration/migration-process.md)
+    * [Process](vks/migration/migration-process.md)
     * [Usecase](vks/migration/usecase/README.md)
       * [Migrate Cluster from VKS to VKS](vks/migration/usecase/migrate-cluster-from-vks-to-vks.md)
       * [Migrate Cluster from vContainer to VKS](vks/migration/usecase/migrate-cluster-from-vcontainer-to-vks.md)
