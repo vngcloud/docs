@@ -103,7 +103,7 @@ velero install \
     --use-node-agent \
     --use-volume-snapshots=false \
     --secret-file ./credentials-velero \
-    --bucket mybucket \
+    --bucket mycontainer \
     --backup-location-config region=hcm03,s3ForcePathStyle="true",s3Url=https://hcm03.vstorage.vngcloud.vn
 ```
 

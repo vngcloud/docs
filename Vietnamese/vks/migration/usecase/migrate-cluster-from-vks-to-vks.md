@@ -93,7 +93,7 @@ cp velero-v1.13.2-linux-amd64/velero /usr/local/bin
 velero install --provider aws \
   --plugins velero/velero-plugin-for-aws:v1.9.0,velero/velero-plugin-for-csi:v0.7.0 \
   --secret-file ./credentials-velero \
-  --bucket mybucket \
+  --bucket mycontainer \
   --backup-location-config region=hcm03,s3ForcePathStyle="true",s3Url=https://hcm03.vstorage.vngcloud.vn \
   --use-node-agent \
   --features=EnableCSI
