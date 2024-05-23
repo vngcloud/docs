@@ -154,6 +154,10 @@ data:
 
 * **\[Optional]** Thay đổi Pod/ Deployment/ StatefulSet/ DaemonSet/ ReplicaSet/ ReplicationController/ Job/ CronJob Image Repositories theo hướng dẫn tại [đây](https://velero.io/docs/v1.13/restore-reference/).
 
+```yaml
+velero restore create --from-backup <backup-name>
+```
+
 ***
 
 ### Update resource config
