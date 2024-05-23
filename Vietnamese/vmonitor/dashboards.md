@@ -12,5 +12,3 @@ Chúng tôi cung cấp hướng dẫn chi tiết các tính năng mà bạn có 
 * [Metrics](../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/giam-sat-hoat-dong-lb/metrics.md)
 * [Logs](../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/giam-sat-hoat-dong-lb/logs.md)
 * [Synthetics](../vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/synthetics/)
-
-\

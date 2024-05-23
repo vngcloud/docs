@@ -11,7 +11,7 @@ vMonitor Platform Synthetic (hay còn gọi là Synthetic Monitoring) là công 
 
 ***
 
-#### Các chức năng chính của vMonitor Platform Synthetic <a href="#vmonitorplatformsyntheticlagi-cacchucnangchinhcuavmonitorplatformsynthetic" id="vmonitorplatformsyntheticlagi-cacchucnangchinhcuavmonitorplatformsynthetic"></a>
+## Các chức năng chính của vMonitor Platform Synthetic <a href="#vmonitorplatformsyntheticlagi-cacchucnangchinhcuavmonitorplatformsynthetic" id="vmonitorplatformsyntheticlagi-cacchucnangchinhcuavmonitorplatformsynthetic"></a>
 
 Synthetic Monitoring giúp bạn chủ động theo dõi các dịch vụ quan trọng nhất của mình để chúng luôn sẵn sàng mọi lúc và mọi nơi. Synthetic Monitoring hỗ trợ theo dõi các dịch vụ bằng nhiều giao thức khác nhau bao gồm:
 

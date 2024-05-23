@@ -46,5 +46,3 @@ Trong ví dụ này, tôi đã mua gói Metric Quota, Log Project có tính phí
 <figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
 Sau khi đã chuyển đổi tài nguyên, bạn có thể tiếp tục thực hiện Tăng/ giảm kích thước, Gia hạn tài nguyên theo các hướng dẫn khác trong tài liệu này.
-
-\

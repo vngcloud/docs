@@ -10,7 +10,9 @@ Log Pipeline là tính năng cho phép bạn thực hiện parse hay enrich dữ
 * Processor Group: cho phép bạn chỉ định nơi lấy dữ liệu log (source log project), nơi lưu trữ dữ liệu đã parse (destination log project) và những log nào sẽ được parse khi thoả mãn filter
 * Processor: là những thư viện hỗ trợ bạn parse và enrich dữ liệu, nằm trong Processor Group.
 
-**Mô hình mô tả Log Pipeline**
+***
+
+### **Mô hình mô tả Log Pipeline**
 
 **Log Pipeline 1**: mô hình cơ bản nhất chỉ có 1 source log project và 1 destination log project với các thông tin như bên dưới, dành cho nhu cầu là raw logs chỉ chứa 1 loại dữ liệu logs và bạn chỉ muốn parse tới 1 destination log project
 
@@ -19,7 +21,7 @@ Log Pipeline là tính năng cho phép bạn thực hiện parse hay enrich dữ
 * Log Pipeline chứa chỉ 1 Processor Group với Filter là source:nginx, nghĩa là với những logs có trường source:nginx thì mới chạy qua hệ thống Processor Group để parse.
 * Processor Group chứa 3 Processor để parse log thành dữ liệu có cấu trúc và lưu vào destination log project.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49648268/image2022-12-13_11-53-34.png?version=1&#x26;modificationDate=1670907215000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (314).png" alt=""><figcaption></figcaption></figure>
 
 **Log Pipeline 2**: mô hình phức tạp hơn có 1 source log project nhưng dữ liệu parse ra 2 destination log project với các thông tin như bên dưới, dành cho nhu cầu là raw logs của bạn chứa nhiều loại dữ liệu logs khác nhau và bạn muốn parse và lưu trữ ở nhiều destination log project khác nhau
 
@@ -28,7 +30,7 @@ Log Pipeline là tính năng cho phép bạn thực hiện parse hay enrich dữ
 * Log Pipeline chứa 2 Processor Group với Filter là source:nginx và source:apache, tương ứng với dòng logs nào phù hợp với Filter của Group thì sẽ được parse tương ứng với Group đó
 * Processor Group: có 2 Processor Groups tương ứng để parse đúng logs về lưu trữ vào 2 destination log project khác nhau.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49648268/image2022-12-13_11-53-53.png?version=1&#x26;modificationDate=1670907234000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (315).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -86,7 +88,7 @@ Các quy tắc sau áp dụng cho việc đặt tên Processor trong vMonitor Pl
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Log.**
 3. Chọn **Log pipeline.**
-4. Trong danh sách log pipeline đang có, tại **Log pipeline** mà bạn muốn chỉnh sửa, chọn ![](https://docs.vngcloud.vn/download/thumbnails/49649961/image2023-5-8\_10-2-24.png?version=1\&modificationDate=1690786739000\&api=v2).&#x20;
+4. Trong danh sách log pipeline đang có, tại **Log pipeline** mà bạn muốn chỉnh sửa, chọn <img src="../../../../.gitbook/assets/image (316).png" alt="" data-size="line">.
 5. Chọn **Edit pipeline**.
 6. Chỉnh sửa các thông số cho **Log pipeline** mà bạn mong muốn. Bạn có thể chỉnh sửa tất cả các trường thông tin trong cấu hình một Log pipeline. Việc chỉnh sửa này tương tự như khi bạn thực hiện tạo mới một Log pipeline theo hướng dẫn bên trên.
 7. Chọn **Save.**
@@ -99,7 +101,7 @@ Khi bạn không có nhu cầu sử dụng một Log pipeline tùy chỉnh nữa
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Log.**
-3. Tại **Log pipeline** bạn muốn thực hiện xóa, chọn ![](https://docs.vngcloud.vn/download/thumbnails/49649961/image2023-4-19\_15-31-39.png?version=1\&modificationDate=1690786859000\&api=v2).
+3. Tại **Log pipeline** bạn muốn thực hiện xóa, chọn <img src="../../../../.gitbook/assets/image (317).png" alt="" data-size="line">
 4. Chọn **Delete**.
 5. Tại màn hình xác nhận xóa Log pipeline, chọn **Delete**.
 

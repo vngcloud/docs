@@ -13,19 +13,14 @@ User-agent Parser là một bộ phân tích và xác định các thông tin v�
 1. Tại mục **Processor information**, nhập các thông tin chung cho một processor theo hướng dẫn tại [Processor](./). Trong nội dung này thì bạn sẽ chọn **Processor type** là **User-agent Parser**.
 2. Tại mục **Parsing rule**, nhập các thông tin sau đây:
 
-2.1 Nhập **Source field**: field chứa logs sẽ cần parse.
-
-2.2 Nhập **Target field**: field sẽ được ghi đè bên destination log project, thông thường bạn sẽ không cần nhập thông tin này.
+* Nhập **Source field**: field chứa logs sẽ cần parse.
+* Nhập **Target field**: field sẽ được ghi đè bên destination log project, thông thường bạn sẽ không cần nhập thông tin này.
 
 Ví dụ:&#x20;
 
 <table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>Source log project</td><td>Destination log project</td><td>user_agent (field logs mà chúng tôi thực hiện parser)</td><td>Kết quả parser</td></tr><tr><td>webserver</td><td>webserver-parse</td><td>"user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:45.0) Gecko/20100101 Firefox/45.0"</td><td>"user_agent_parse": { "os_minor": "11", "name": "Firefox", "version": "45.0", "major": "45", "os_full": "Mac OS X 10.11", "os": "Mac OS X", "os_version": "10.11", "os_name": "Mac OS X", "device": "Mac", "minor": "0", "os_major": "10" },</td></tr></tbody></table>
 
-\
-\
-
-
-<figure><img src="http://docs.vngcloud.vn/download/attachments/59802014/image2023-8-2_14-44-32.png?version=1&#x26;modificationDate=1690962273000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (330).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

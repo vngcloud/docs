@@ -13,21 +13,15 @@ GEO IP Parser là một bộ phân tích và xác định vị trí địa lý c
 1. Tại mục **Processor information**, nhập các thông tin chung cho một processor theo hướng dẫn tại [Processor](./). Trong nội dung này thì bạn sẽ chọn **Processor type** là **GEO IP Parser**.
 2. Tại mục **Parsing rule**, nhập các thông tin sau đây:
 
-2.1 Nhập **Source field**: field chứa logs sẽ cần parse.
-
-2.2 Nhập **Database type:** nguồn và định dạng của cơ sở dữ liệu địa chỉ IP và vị trí địa lý. Mặc định hệ thống sẽ chọn **City**, tức là bạn cần phân tích vị trí địa chỉ ở mức độ thành phố. Nếu bạn chọn **ASN** tức là là cơ sở dữ liệu địa chỉ IP và vị trí địa lý dựa trên số hiệu hệ thống tự trị (Autonomous System Number - ASN).
-
-2.3 Nhập **Target field**: field sẽ được ghi đè bên destination log project, thông thường bạn sẽ không cần nhập thông tin này.
+* Nhập **Source field**: field chứa logs sẽ cần parse.
+* Nhập **Database type:** nguồn và định dạng của cơ sở dữ liệu địa chỉ IP và vị trí địa lý. Mặc định hệ thống sẽ chọn **City**, tức là bạn cần phân tích vị trí địa chỉ ở mức độ thành phố. Nếu bạn chọn **ASN** tức là là cơ sở dữ liệu địa chỉ IP và vị trí địa lý dựa trên số hiệu hệ thống tự trị (Autonomous System Number - ASN)
+* Nhập **Target field**: field sẽ được ghi đè bên destination log project, thông thường bạn sẽ không cần nhập thông tin này.
 
 Ví dụ:&#x20;
 
 <table data-full-width="true"><thead><tr><th>Source log project</th><th>Destination log project</th><th>Client_IP (field logs mà chúng tôi thực hiện parser)</th><th>Kết quả parser</th></tr></thead><tbody><tr><td>webserver</td><td>webserver-parse</td><td>"client_ip: "31.184.238.22"</td><td>"client_ip_parse": { "ip": "182.34.27.162", "latitude": 36.0986, "longitude": 120.3719, "country_name": "China", "location": { "lat": 36.0986, "lon": 120.3719 }, "continent_code": "AS", "region_name": "Shandong", "country_code2": "CN", "timezone": "Asia/Shanghai", "country_code3": "CN", "region_code": "SD" },</td></tr></tbody></table>
 
-\
-\
-
-
-<figure><img src="http://docs.vngcloud.vn/download/attachments/59802012/image2023-8-2_14-35-57.png?version=1&#x26;modificationDate=1690961758000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

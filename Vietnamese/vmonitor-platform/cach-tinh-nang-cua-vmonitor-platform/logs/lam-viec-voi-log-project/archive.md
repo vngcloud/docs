@@ -20,33 +20,31 @@ Nếu bạn có nhu cầu lưu trữ dữ liệu log lâu dài hơn những th�
 <figure><img src="../../../../.gitbook/assets/image (160).png" alt=""><figcaption></figcaption></figure>
 
 * **Select a vStorage container**
-  * **My container**
+
+<details>
+
+<summary>My container</summary>
 
 9\. Chọn **My container** nếu bạn muốn chọn vStorage container đang thuộc sở hữu của tài khoản hiện tại. Hoặc chọn **Custom container** nếu bạn muốn chọn vStorage container không thuộc sở hữu của tài khoản hiện tại.
 
-10\. Chọn một **Region**. Nếu bạn muốn xem lại thông tin **Region** và các **vStorage project** cũng như **vStorage container** bạn đang có trên hệ thống vStorage, hãy chọn tại ![](http://docs.vngcloud.vn/download/thumbnails/49650638/image2023-4-27\_13-54-3.png?version=1\&modificationDate=1682578442000\&api=v2)
+10\. Chọn một **Region**. Nếu bạn muốn xem lại thông tin **Region** và các **vStorage project** cũng như **vStorage container** bạn đang có trên hệ thống vStorage, hãy chọn tại **Click here to visit vStorage.**
 
-11\. Chọn một **vStorage project** trong danh sách các project mà bạn đang có tại **Region** đã chọn trước đó trên hệ thống vStorage. Nếu cần cập nhập danh sách vStorage project hiện tại, hãy chọn ![](http://docs.vngcloud.vn/download/thumbnails/49650638/image2023-4-27\_13-55-2.png?version=1\&modificationDate=1682578502000\&api=v2) để cập nhập mới nhất.
+11\. Chọn một **vStorage project** trong danh sách các project mà bạn đang có tại **Region** đã chọn trước đó trên hệ thống vStorage. Nếu cần cập nhập danh sách vStorage project hiện tại, hãy chọn **Reload** để cập nhập mới nhất.
 
-12\. Chọn một **vStorage container** trong danh sách các container mà bạn đang có tại **project** đã chọn trước đó trên hệ thống vStorage. Nếu cần cập nhập danh sách vStorage container hiện tại, hãy chọn ![](http://docs.vngcloud.vn/download/thumbnails/49650638/image2023-4-27\_13-55-2.png?version=1\&modificationDate=1682578502000\&api=v2) để cập nhập mới nhất.
+12\. Chọn một **vStorage container** trong danh sách các container mà bạn đang có tại **project** đã chọn trước đó trên hệ thống vStorage. Nếu cần cập nhập danh sách vStorage container hiện tại, hãy chọn **Reload** để cập nhập mới nhất.
 
 13\. Nhập **Access key** và **Secret key** để xác thực thông tin kết nối tới hệ thống vStorage. Bạn có thể tìm thấy **Access key** và **Secret key** theo hướng dẫn tại [Service Account](../../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/) và [Truy cập tài nguyên sử dụng tài khoản Service Account](../../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-truy-cap-tai-nguyen-vstorage/truy-cap-tai-nguyen-su-dung-tai-khoan-service-account.md).
 
 14\. Chọn **Select**.
 
-![](http://docs.vngcloud.vn/download/attachments/49650638/image2023-4-27\_13-51-54.png?version=1\&modificationDate=1682578314000\&api=v2)
+<img src="../../../../.gitbook/assets/image (309).png" alt="" data-size="original">
 
-\
+</details>
+
+<details>
+
+<summary>Custom container</summary>
 
 
-* **My container**
 
-9\. Chọn một **Region**. Nếu bạn muốn xem lại thông tin **Region** và các **vStorage project** cũng như vStorage container bạn đang có trên hệ thống vStorage, hãy chọn tại ![](http://docs.vngcloud.vn/download/thumbnails/49650638/image2023-4-27\_13-54-3.png?version=1\&modificationDate=1682578442000\&api=v2)
-
-10\. Nhập tên một **vStorage container** mà bạn muốn thực hiện archive qua.
-
-11\. Nhập **Access key** và **Secret key** để xác thực thông tin kết nối tới hệ thống vStorage. Bạn có thể tìm thấy **Access key** và **Secret key** theo hướng dẫn tại [Service Account](../../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/) và [Truy cập tài nguyên sử dụng tài khoản Service Account](../../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-truy-cap-tai-nguyen-vstorage/truy-cap-tai-nguyen-su-dung-tai-khoan-service-account.md).
-
-12\. Chọn **Select**.
-
-![](http://docs.vngcloud.vn/download/attachments/49650638/image2023-4-27\_14-25-49.png?version=1\&modificationDate=1682580349000\&api=v2)
+</details>

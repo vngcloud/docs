@@ -3,7 +3,7 @@
 ### Tổng quan <a href="#lamviecvoilog2metric-tongquan" id="lamviecvoilog2metric-tongquan"></a>
 
 Log2metric là một tính năng cho phép bạn tạo metric theo thời gian thực từ logs. Cách tiếp cận này giúp bạn tối ưu hóa việc lưu trữ log mà không phải hy sinh bất kỳ dữ liệu quan trọng nào. Vì vậy, chi phí của bạn sẽ được giảm.\
-Bạn có thể bắt đầu sử dụng tính năng log2metric bằng cách thiết lập một truy vấn đơn giản và chúng tôi sẽ đánh giá giá trị sau mỗi **60** giây. Ví dụ: bạn muốn đếm số lượng dòng logs có trạng thái lỗi hoặc bạn muốn biết thời gian phản hồi yêu cầu trung bình trong logs của máy chủ web, chỉ cần sử dụng Log2metric. Các metric đầu ra này tương tự như các metric khác, bạn có thể sử dụng để vẽ dashboard và tạo alarm.
+Bạn có thể bắt đầu sử dụng tính năng log2metric bằng cách thiết lập một truy vấn đơn giản và chúng tôi sẽ đánh giá giá trị sau mỗi <mark style="color:red;">**60**</mark> giây. Ví dụ: bạn muốn đếm số lượng dòng logs có trạng thái lỗi hoặc bạn muốn biết thời gian phản hồi yêu cầu trung bình trong logs của máy chủ web, chỉ cần sử dụng Log2metric. Các metric đầu ra này tương tự như các metric khác, bạn có thể sử dụng để vẽ dashboard và tạo alarm.
 
 ***
 
@@ -56,7 +56,7 @@ Các **điểm dữ liệu** cho Log2metric vừa tạo được định kỳ t�
 
 1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
 2. Chọn thư mục **Log**, sau đó chọn menu **Log2metric**.
-3. Tại **Metric** mà bạn muốn chỉnh sửa, chọn ![](https://docs.vngcloud.vn/download/thumbnails/49649963/image2023-4-19\_11-4-15.png?version=1\&modificationDate=1691392518000\&api=v2).&#x20;
+3. Tại **Metric** mà bạn muốn chỉnh sửa, chọn **Edit**.
 4. Chỉnh sửa các thông số cho biểu đồ mà bạn mong muốn. Các thông số mà bạn có thể chỉnh sửa bao gồm: **Log filter, Advanced query**. Việc chỉnh sửa này tương tự như khi bạn thực hiện tạo mới một Widget.
 5. Chọn **Save.**
 
@@ -72,7 +72,7 @@ Bạn đã khởi tạo một metric từ một log project tương ứng. Metri
 
 2\. Chọn thư mục **Log**, sau đó chọn menu **Log2metric**.
 
-3\. Trong danh sách **metric** đang tồn tại, chọn ![](https://docs.vngcloud.vn/download/thumbnails/49649963/image2023-3-24\_15-16-40.png?version=1\&modificationDate=1690790651000\&api=v2) tại **metric** muốn thực hiện xóa sau đó chọn **Delete**.
+3\. Trong danh sách **metric** đang tồn tại, chọn <img src="../../../.gitbook/assets/image (331).png" alt="" data-size="line">  tại **metric** muốn thực hiện xóa sau đó chọn **Delete**.
 
 4\. Chọn **Delete**.
 

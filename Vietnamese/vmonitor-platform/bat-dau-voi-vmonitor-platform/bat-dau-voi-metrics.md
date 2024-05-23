@@ -40,7 +40,7 @@ Sau khi khởi tạo thành công Service Account và đã lưu trữ thông tin
 
 **Thay thế Client\_ID, Secret\_Key vào câu lệnh bên dưới và chạy trên server để cài đặt**
 
-_Bạn sử dụng Client\_ID và Secret\_Key đã sao chép ở trên, thay thế theo thứ tự vào các trường **$IAM\_CLIENT\_ID** và **$IAM\_CLIENT\_SECRET** của câu lệnh bên dưới và chạy trên server cần được monitor, lưu ý bạn cần chạy với quyền **root user** của server (nếu không bạn phải thêm sudo ở trước câu lệnh)_
+Bạn sử dụng Client\_ID và Secret\_Key đã sao chép ở trên, thay thế theo thứ tự vào các trường **$IAM\_CLIENT\_ID** và **$IAM\_CLIENT\_SECRET** của câu lệnh bên dưới và chạy trên server cần được monitor, lưu ý bạn cần chạy với quyền **root user** của server (nếu không bạn phải thêm sudo ở trước câu lệnh)
 
 ```
 VMONITOR_SITE=monitoring-agent.vngcloud.vn \
@@ -72,5 +72,3 @@ Với Dashboard Mặc định này, bạn sẽ có thể xem được các thôn
 4. Chọn **Tạo bản sao**.
 
 Sau khi bản sao của **Dashboard mặc định** được tạo, bạn có thể thêm hoặc xoá, hoặc tùy chỉnh, thay đổi vị trí Widget trong Dashboard bản sao này. Để biết thêm về cách làm việc với Metric nói chung và Metric Dashboard nói chung, hãy xem tại [Metrics](../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/giam-sat-hoat-dong-lb/metrics.md).
-
-\

@@ -62,6 +62,6 @@ Bạn đã khởi tạo một Synthetic test quota ban đầu phù hợp với n
 
 Sau khi bạn bạn thực hiện xóa gói Synthetic test quota thì gói Synthetic test quota bị xóa sẽ biến mất khỏi danh sách gói Synthetic test quota của bạn.&#x20;
 
-Do hành động xóa Synthetic test quota tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.&#x20;
+<mark style="color:red;">Do hành động xóa Synthetic test quota tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.</mark>&#x20;
 
 \

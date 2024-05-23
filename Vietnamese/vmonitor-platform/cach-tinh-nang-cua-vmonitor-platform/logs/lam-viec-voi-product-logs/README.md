@@ -6,6 +6,4 @@ Infrastructure List là nơi sẽ liệt kê các product mà vMonitor Platform 
 
 * vStorage-Log: là nơi quản lý danh sách các vStorage Project mà bạn có thể bật để coi logs trên từng Project.
 * vLB-Log: là nơi quản lý danh sách các vLB instance mà bạn có thể bật để coi logs.
-
-***
-
+* vCDN\_log: là nơi quản lý danh sách các vCDN mà bạn có thể bật để coi logs.

@@ -12,7 +12,7 @@ vMonitor Platform Log là dịch vụ giúp thu thập dữ liệu Log của má
 
 ***
 
-#### Các chức năng chính của vMonitor Platform Log <a href="#vmonitorplatformloglagi-cacchucnangchinhcuavmonitorplatformlog" id="vmonitorplatformloglagi-cacchucnangchinhcuavmonitorplatformlog"></a>
+## Các chức năng chính của vMonitor Platform Log <a href="#vmonitorplatformloglagi-cacchucnangchinhcuavmonitorplatformlog" id="vmonitorplatformloglagi-cacchucnangchinhcuavmonitorplatformlog"></a>
 
 Chúng tôi cung cấp cho bạn các giải pháp hàng đầu bao gồm:
 
@@ -22,5 +22,3 @@ Chúng tôi cung cấp cho bạn các giải pháp hàng đầu bao gồm:
 * Cảnh báo nhanh chóng và kịp thời: cảnh báo kịp thời và tin cậy khi thoả mãn điều kiện.
 * Hệ thống thông báo đa dạng: hệ thống thông báo và phản hồi đa dạng qua Email, Slack, Webhook và SMS.
 * Mô hình triển khai: được triển khai và vận hành bởi những chuyên gia hàng đầu tại VNG Cloud, vMonitor Log có thể thu thập và xử lý lượng dữ liệu lớn lên tới hàng triệu dòng Log trên phút.
-
-\

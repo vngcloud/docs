@@ -21,7 +21,7 @@ Grok parser là một bộ lọc (filter) giúp phân tích và cấu trúc hóa
 
 Ví dụ:&#x20;
 
-<table data-full-width="true"><thead><tr><th>Source log project</th><th>Destination log project</th><th>Message (field logs mà chúng tôi thực hiện parser)</th><th>Rule pattern</th><th>Kết quả parser</th></tr></thead><tbody><tr><td>webserver</td><td>webserver-parse</td><td><p></p><pre><code>87.251.81.179 - 
+<table data-full-width="true"><thead><tr><th width="129">Source log project</th><th width="161">Destination log project</th><th width="195">Message (field logs mà chúng tôi thực hiện parser)</th><th width="198">Rule pattern</th><th>Kết quả parser</th></tr></thead><tbody><tr><td>webserver</td><td>webserver-parse</td><td><p></p><pre><code>87.251.81.179 - 
 - [01/Aug/2023:12:16:39 +0200] 
 "GET /core/themes/theme.inc/?post
 == HTTP/1.0" 200 63388
@@ -29,14 +29,10 @@ Ví dụ:&#x20;
 
 3\. Tại mục **Test rules**, nhập các thông sau sau đây:
 
-&#x20;3.1 Nhập **Log samples** là các dòng logs mẫu để bạn kiểm tra xem rule pattern có parse thành công không.
+* Nhập **Log samples** là các dòng logs mẫu để bạn kiểm tra xem rule pattern có parse thành công không.
+* Nhấn **Test your rules** để xem hệ thống có parse thành công không
 
-&#x20;3.2 Nhấn **Test your rules** để xem hệ thống có parse thành công không
-
-\
-
-
-<figure><img src="http://docs.vngcloud.vn/download/attachments/59802004/image2023-8-1_15-32-11.png?version=1&#x26;modificationDate=1690878733000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (322).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

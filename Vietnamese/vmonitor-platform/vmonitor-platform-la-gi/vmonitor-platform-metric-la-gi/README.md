@@ -6,7 +6,7 @@ vMonitor Platform Metric là dịch vụ giúp liên tục giám sát hiệu su�
 
 ***
 
-#### Các chức năng chính của vMonitor Platform Metric <a href="#vmonitorplatformmetriclagi-cacchucnangchinhcuavmonitorplatformmetric" id="vmonitorplatformmetriclagi-cacchucnangchinhcuavmonitorplatformmetric"></a>
+## Các chức năng chính của vMonitor Platform Metric <a href="#vmonitorplatformmetriclagi-cacchucnangchinhcuavmonitorplatformmetric" id="vmonitorplatformmetriclagi-cacchucnangchinhcuavmonitorplatformmetric"></a>
 
 Chúng tôi cung cấp cho bạn các giải pháp hàng đầu bao gồm:
 

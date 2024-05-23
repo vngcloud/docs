@@ -12,7 +12,7 @@ vMonitor Platform cung cấp 3 nhóm dịch vụ chính là: **Metric, Log, Synt
 
 ***
 
-#### Các chức năng chính của vMonitor Platform <a href="#vmonitorplatformlagi-cacchucnangchinhcuavmonitorplatform" id="vmonitorplatformlagi-cacchucnangchinhcuavmonitorplatform"></a>
+## Các chức năng chính của vMonitor Platform <a href="#vmonitorplatformlagi-cacchucnangchinhcuavmonitorplatform" id="vmonitorplatformlagi-cacchucnangchinhcuavmonitorplatform"></a>
 
 Chúng tôi cung cấp cho bạn các giải pháp hàng đầu bao gồm:
 
@@ -20,6 +20,4 @@ Chúng tôi cung cấp cho bạn các giải pháp hàng đầu bao gồm:
 * Chủ động theo dõi các ứng dụng, dịch vụ và máy chủ quan trọng luôn sẵn sàng với Synthetic
 * Truy xuất và phân tích trên các dữ liệu Log với tính năng Log Search
 * Thiết lập các cảnh báo và kênh thông báo khi có sự cố xảy ra.
-* Lưu trữ dữ liệu lâu dài trên vStorage&#x20;
-
-\
+* Lưu trữ dữ liệu lâu dài trên vStorage.

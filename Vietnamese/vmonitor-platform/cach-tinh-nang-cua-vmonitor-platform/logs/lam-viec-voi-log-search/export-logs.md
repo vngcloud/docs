@@ -11,7 +11,6 @@
       1. Nhập **Widget name**: tên widget phải tuân thủ theo quy định của chúng tôi, chi tiết xem tại [Widget](../../dashboard/widget/).
       2. Chọn **Dashboard** mà bạn muốn chứa Widget này. Bạn chỉ có thể chọn một trong các **Dashboard tùy chỉnh**.
       3. Chọn **Export.** Sau khi thực hiện **export to dashboard**, hệ thống sẽ tự tạo một **widget** với loại biểu đồ **log search** trên **Dashboard** mà người dùng chọn.
-6.
-   1. Download as **CSV**
+6. Download as **CSV**
 
 Khi bạn thực hiện **export** dữ liệu logs ra file CSV, nếu số lượng bản ghi logs nhỏ hơn **10000** bản ghi thì hệ thống sẽ hỗ trợ bạn export dữ liệu này. Nếu số lượng bản ghi logs của bạn đang vượt quá **10000** thì bạn hãy sử dụng tính năng **Export to dashboard** hay thêm điều kiện search log để làm nhỏ số lượng logs lại.

@@ -13,25 +13,18 @@ CSV parser là một bộ lọc (filter) giúp đọc và phân tích dữ liệ
 1. Tại mục **Processor information**, nhập các thông tin chung cho một processor theo hướng dẫn tại [Processor](./). Trong nội dung này thì bạn sẽ chọn **Processor type** là **CSV Parser**.
 2. Tại mục **Parsing rule**, nhập các thông tin sau đây:
 
-2.1 Nhập **Source field**: field chứa logs sẽ cần parse. Filed logs này cần có định dạng logs là CSV.
-
-2.2 Nhập **Target field**: field sẽ được ghi đè bên destination log project, thông thường bạn sẽ không cần nhập thông tin này&#x20;
-
-2.3 Nhập **Columns:** nhập tên các cột theo thứ tự tương ứng trên **Source field,** hệ thống sẽ ánh xạ những tên columns này là các field name tương ứng trên **Destination field.**
-
-2.4 **Separator**: nhập ký tự phân cách giữa các cột tương ứng trên **Source field,** hệ thống mặc định là ký tự ",".
+* Nhập **Source field**: field chứa logs sẽ cần parse. Filed logs này cần có định dạng logs là CSV.
+* Nhập **Target field**: field sẽ được ghi đè bên destination log project, thông thường bạn sẽ không cần nhập thông tin này&#x20;
+* Nhập **Columns:** nhập tên các cột theo thứ tự tương ứng trên **Source field,** hệ thống sẽ ánh xạ những tên columns này là các field name tương ứng trên **Destination field.**
+* **Separator**: nhập ký tự phân cách giữa các cột tương ứng trên **Source field,** hệ thống mặc định là ký tự ",".
 
 Ví dụ:&#x20;
 
-| Source log project | Destination log project | Message (field logs mà chúng tôi thực hiện parser) | Columns                         | Seperator | Kết quả parser                                                                                                                                                |
-| ------------------ | ----------------------- | -------------------------------------------------- | ------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| webserver          | webserver-parse         | Message (field logs mà chúng tôi thực hiện parser) | time,action,ip\_address,message | ,         | <p>{<br>     "time": "2020-09-01 10:35:25",<br>     "action": "RESTART",<br>      "ip_address": "192.168.1.3",<br>      "message": "System restarts"<br>}</p> |
+| **Source log project** | **Destination log project** | **Message (field logs mà chúng tôi thực hiện parser)** | **Columns**                     | **Seperator** | **Kết quả parser**                                                                                                                                            |
+| ---------------------- | --------------------------- | ------------------------------------------------------ | ------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| webserver              | webserver-parse             | Message (field logs mà chúng tôi thực hiện parser)     | time,action,ip\_address,message | ,             | <p>{<br>     "time": "2020-09-01 10:35:25",<br>     "action": "RESTART",<br>      "ip_address": "192.168.1.3",<br>      "message": "System restarts"<br>}</p> |
 
-\
-\
-
-
-<figure><img src="http://docs.vngcloud.vn/download/attachments/59802002/image2023-8-2_10-38-5.png?version=1&#x26;modificationDate=1690947486000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (324).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

@@ -10,7 +10,7 @@ Widget trong Dashboard là các biểu đồ được sử dụng để trực q
 
 Đối với mỗi loại dữ liệu metric và logs, chúng tôi hỗ trợ các loại biểu đồ như bên dưới. Chọn vào từng loại để xem chi tiết cách tạo một Widget tương ứng.
 
-<table><thead><tr><th width="226">Loại dữ liệu</th><th>Loại graph hỗ trợ</th></tr></thead><tbody><tr><td>Metric</td><td><ul><li><a href="line.md">Line</a></li><li><a href="stack-area.md">Stacked area</a></li><li><a href="number.md">Number</a></li></ul></td></tr><tr><td>Logs</td><td><ul><li><a href="line.md">Line</a></li><li><a href="bar.md">Bar</a></li><li><a href="stack-area.md">Stacked area</a></li><li><a href="pie.md">Pie</a></li><li><a href="number.md">Number</a></li><li><a href="table.md">Table</a></li><li><a href="log-search.md">Log search</a></li></ul></td></tr></tbody></table>
+<table><thead><tr><th width="191">Loại dữ liệu</th><th>Loại graph hỗ trợ</th></tr></thead><tbody><tr><td>Metric</td><td><ul><li><a href="line.md">Line</a></li><li><a href="stack-area.md">Stacked area</a></li><li><a href="number.md">Number</a></li></ul></td></tr><tr><td>Logs</td><td><ul><li><a href="line.md">Line</a></li><li><a href="bar.md">Bar</a></li><li><a href="stack-area.md">Stacked area</a></li><li><a href="pie.md">Pie</a></li><li><a href="number.md">Number</a></li><li><a href="table.md">Table</a></li><li><a href="log-search.md">Log search</a></li></ul></td></tr></tbody></table>
 
 ***
 
