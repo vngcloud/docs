@@ -20,7 +20,7 @@ Chào mừng các bạn đến với trang hỗ trợ khách hàng của VNG Clo
 {% tab title="Infrastructure as a Service " %}
 [**vServer - Hệ thống máy chủ ảo thông minh**](vserver/)
 
-* [vServer HCM03-1A](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647923)
+* [vServer HCM03-1A](vserver/)
 
 [**vStorage - Bộ giải pháp lưu trữ toàn diện trên đám mây**](vstorage/)
 
@@ -28,13 +28,13 @@ Chào mừng các bạn đến với trang hỗ trợ khách hàng của VNG Clo
 {% endtab %}
 
 {% tab title="Platform as a Service" %}
-[**vMonitor Platform - Theo dõi toàn diện hệ thống và các tài nguyên trên Cloud**](https://docs.vngcloud.vn/display/ONVINA/vMonitor+Platform)
+[**vMonitor Platform - Theo dõi toàn diện hệ thống và các tài nguyên trên Cloud**](vmonitor/)
 
-[**vCDN - Giải pháp tăng tốc độ phân phối nội dung cho người dùng**](https://docs.vngcloud.vn/x/xABeAQ)
+[**vCDN - Giải pháp tăng tốc độ phân phối nội dung cho người dùng**](vcdn/)
 
-[**vDB - Giải pháp quản lý cơ sở dữ liệu chuyên nghiệp và toàn diện cho doanh nghiệp**](https://docs.vngcloud.vn/x/AYfG)
+[**vDB - Giải pháp quản lý cơ sở dữ liệu chuyên nghiệp và toàn diện cho doanh nghiệp**](vdb/)
 
-**K8S - Quản lý và điều phối Container với Kubernetes**
+[**VKS - Quản lý và điều phối Container với Kubernetes**](vks/)
 {% endtab %}
 
 {% tab title="Software as a Service" %}
