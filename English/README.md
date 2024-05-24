@@ -28,7 +28,7 @@ Welcome to VNG Cloud's user guide page. Here you can easily find useful informat
 {% endtab %}
 
 {% tab title="Platform as a Service" %}
-vMonitor Platform -Active & comprehensive system monitoring
+[vMonitor Platform -Active & comprehensive system monitoring](vmonitor-platform.md)
 
 [vDB - Professional database management solution](vdb.md)
 
