@@ -276,6 +276,7 @@
   * [Storage gateway](vstorage/storage-gateway/README.md)
     * [Create and Use Storage Gateway](vstorage/storage-gateway/create-and-use-storage-gateway.md)
     * [Replacing Fileserver with Gateway Application](vstorage/storage-gateway/replacing-fileserver-with-gateway-application.md)
+* [vMonitor Platform](vmonitor-platform.md)
 * [vCDN](vcdn.md)
 * [vDB](vdb.md)
 * [VKS](vks/README.md)
