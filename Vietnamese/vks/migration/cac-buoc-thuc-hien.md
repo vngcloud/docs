@@ -6,7 +6,7 @@ Bên dưới là các bước chung mà bạn cần thực hiện để migrate 
 * [Migrate Cluster from vContainer to VKS](usecase/migration-cluster-from-vcontainer-to-vks.md)
 * [Migrate Cluster from another platform to VKS](usecase/migrate-cluster-from-other-to-vks.md)
 
-## Chuẩn bị cluster đích (Prepard target resource)
+## Chuẩn bị cluster đích (Prepare target resource)
 
 Trên hệ thống VKS, bạn cần thực hiện khởi tạo một Cluster theo hướng dẫn tại [đây](../clusters/). Đảm bảo rằng cấu hình của cluster đích giống với cấu hình của cluster nguồn.
 
@@ -79,7 +79,9 @@ Link to helper file: [helper.sh](https://raw.githubusercontent.com/anngdinh/vcon
 
 #### 1. Chuyển hostPath volume thành Persistent Volume để có thể backup
 
-Vì velero không hỗ trợ sao lưu hostPath volume, cần phải chuyển thành Persistent Volume.
+Vì velero không hỗ trợ sao lưu hostPath volume, cần phải chuyển thành Persistent Volume. [Link](https://anngdinh.github.io/vcontainer-helm-infra-documentation/helm-charts/migrate/more-usage/troubleshooting.html)
+
+Để list các hostPath đang sử dụng:
 
 ```bash
 ./helper.sh check_hostPath
@@ -87,9 +89,9 @@ Vì velero không hỗ trợ sao lưu hostPath volume, cần phải chuyển th�
 
 #### 2. Mark Persistent Volume to include in backup
 
-All Persistent Volumes' data will be stored in vStorage. Cần thêm annotation cho tất cả pod dùng PV với volume name: `backup.velero.io/backup-volumes=volume1,volume2`
+Tất cả data Persistent Volumes được lưu trữ trên vStorage. Cần thêm annotation cho tất cả pod dùng PV với volume name: `backup.velero.io/backup-volumes=volume1,volume2`
 
-Or using helper. It'll detect all Pod using PVC and print command to run.
+Hoặc có thể tự động tìm các volume bằng cách:
 
 ```bash
 ./helper.sh mark_volume
@@ -97,7 +99,7 @@ Or using helper. It'll detect all Pod using PVC and print command to run.
 
 #### 3. Mark resource in exclude in backup
 
-Because VKS is fully managed cluster, you don't need to include system resource such as: `calico`, `kube-dns`, `kube-scheduler`, `kube-apiserver`,... In addition, some resource in vContainer will be excluded such as: `magnum-auto-healer`, `cluster-autoscaler`, `csi-cinder`,...
+Vì VKS là fully managed cluster, nên không cần backup các resource như: `calico`, `kube-dns`, `kube-scheduler`, `kube-apiserver`,... Ngoài ra, các resource của vContainer như là: `magnum-auto-healer`, `cluster-autoscaler`, `csi-cinder`,... cũng sẽ bỏ qua.
 
 ```bash
 ./helper.sh mark_exclude
@@ -105,7 +107,7 @@ Because VKS is fully managed cluster, you don't need to include system resource 
 
 #### 4. Check label and taint of node
 
-Maybe resource in source cluster using labels and taints to schedule. Make sure these important labels and taints is exist in taget cluster.
+Có thể tài nguyên trong cụm nguồn sử dụng label và taint. Đảm bảo rằng các nhãn và taint quan trọng này tồn tại trong cụm taget.
 
 ```bash
 ./helper.sh check_node_label
@@ -114,7 +116,7 @@ Maybe resource in source cluster using labels and taints to schedule. Make sure 
 
 #### 6. Mapping Storage Class
 
-We need convert Storage Class in source cluster to target cluster. Assume you have 2 Storage Class below:
+Cần chuyển Storage Class trong cụm nguồn tới cụm đích. Giả sử có 2 SC bên dưới:
 
 ```bash
 @ kubectl get sc
@@ -123,7 +125,7 @@ sc-iops-200-retain (default)    csi.vngcloud.vn   Retain          Immediate     
 sc-ssd-10000-delete (default)   csi.vngcloud.vn   Delete          Immediate           true                   14d
 ```
 
-And you want to convert to 2 Storage Class `ssd-200`, `ssd-10000` in target cluster arcordingly, you have to apply this yaml in **target cluster**:
+Và bạn muốn chuyển đổi sang 2 Storage Class `ssd-200`, `ssd-10000` trong target cluster theo thứ tự thì bạn phải áp dụng yaml này trong **target cluster**:
 
 ```yaml
 apiVersion: v1
