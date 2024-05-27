@@ -6,24 +6,25 @@ Bên dưới là các bước chung mà bạn cần thực hiện để migrate 
 * [Migrate Cluster from vContainer to VKS](usecase/migration-cluster-from-vcontainer-to-vks.md)
 * [Migrate Cluster from another platform to VKS](usecase/migrate-cluster-from-other-to-vks.md)
 
-***
-
-### Chuẩn bị cluster đích (Prepard target resource)
+## Chuẩn bị cluster đích (Prepard target resource)
 
 Trên hệ thống VKS, bạn cần thực hiện khởi tạo một Cluster theo hướng dẫn tại [đây](../clusters/). Đảm bảo rằng cấu hình của cluster đích giống với cấu hình của cluster nguồn.
 
-***
+Cần đảo bảo các yêu cầu:
 
-### \[Optional] Migrate resources private outside cluster
+* Lượng resource cần thiết.
+* Boot volume > persistent volume size. (có thể down size sau khi restore thành công)
+* Node labels và node taints giống cluster cũ.
+* Storage Class tương ứng hoặc thay thế.
 
-Migrating resources private outside cluster (di chuyển tài nguyên riêng tư bên ngoài cụm) là quá trình di chuyển tài nguyên riêng tư nằm trên Cluster nguồn sang một Cluster đích. Ví dụ, bạn có thể có những tài nguyên riêng tư như image, database,... Lúc này, trước khi bắt đầu migrate, bạn cần tự thực hiện việc migrate các tài nguyên này. Ví dụ, nếu bạn cần:
+## [Optional] Migrate resources private outside cluster
+
+Migrating resources private outside cluster (di chuyển tài nguyên riêng tư bên ngoài cụm) là quá trình di chuyển tài nguyên riêng tư nằm ngoài Cluster nguồn sang một nơi mà Cluster đích có thể sử dụng. Ví dụ, bạn có thể có những tài nguyên riêng tư như image, database,... Lúc này, trước khi bắt đầu migrate, bạn cần tự thực hiện việc migrate các tài nguyên này. Ví dụ, nếu bạn cần:
 
 * Migrating Container Images: vui lòng tham khảo thêm tại [đây](../../vcontainer-registry/) để thực hiện migrate image giữa 2 Cluster.
 * Migrating Databases and Storage (On-Demand): Bạn có thể sử dụng Relational **Database Service (RDS)** và **Object Storage Service (OBS)** tùy theo nhu cầu sử dụng của bạn. Sau khi việc migration hoàn tất, hãy nhớ config lại database và storage cho applications của bạn trên VKS Cluster.
 
-***
-
-### Cài đặt Velero trên cả 2 cluster nguồn và cluster đích(Install Velero tool)
+## Cài đặt Velero trên cả 2 cluster nguồn và cluster đích (Install Velero tool)
 
 Sau khi bạn đã thực hiện migrate các tài nguyên private ngoài cluster, bạn có thể sử dụng công cụ migration để sao lưu (backup) và khôi phục (restore) application trên cluster nguồn và cluster đích.
 
@@ -36,8 +37,8 @@ Ví dụ, tôi đã khởi tạo một vStorage Project, Container có thông ti
 
 ```yaml
 [default]
-aws_access_key_id=<AWS_ACCESS_KEY_ID>
-aws_secret_access_key=<AWS_SECRET_ACCESS_KEY>
+aws_access_key_id=________CLIENT_ID____________
+aws_secret_access_key=________CLIENT_SECRET____________
 ```
 
 * Cài đặt Velero CLI theo câu lệnh:
@@ -58,85 +59,71 @@ velero install \
     --use-volume-snapshots=false \
     --secret-file ./credentials-velero \
     --bucket my-bucket \
-    --backup-location-config region=hcm03,s3ForcePathStyle="true",s3Url=https://hcm03.vstorage.vngcloud.vn \
-
-# flag `--default-volumes-to-fs-backup` will backup all persistent volume as file system volume
+    --backup-location-config region=hcm03,s3ForcePathStyle="true",s3Url=https://hcm03.vstorage.vngcloud.vn
 ```
 
-***
+## Sao lưu (Backup)
 
-### Sao lưu (Backup)
+### Ingress và Service LoadBalancer
 
-Để sao lưu tài nguyên, hãy sử dụng công cụ Velero để tạo đối tượng sao lưu trong cluster nguồn. Velero sẽ thực hiện truy vấn, đóng gói dữ liệu và tải chúng lên một S3 Compatible Object Storage.
+* Ingress controller
+  * Nếu cụm source đã sử dụng `vngcloud-ingress-controller`: thêm annotation `vks.vngcloud.vn/ignore: true` cho tất cả Ingress resource. Sau khi hoàn thành restore thì xóa annotation này đi.
+  * Những ingress contoller khác sẽ không bị ảnh hưởng, ngoại trừ `nginx-ingress-controller` của vContainer (tạo lại khi qua cụm mới).
+* Cloud controller manager: Chỉ duy nhất 1 CCM có thể chạy trên 1 cụm.
+  * Nếu có ý định sử dụng `vngcloud-controller-manager` trong cụm đích: thêm annotation `vks.vngcloud.vn/ignore: true` cho tất cả Service type LoadBalancer. Sau khi hoàn thành restore thì xóa annotation này đi.
+  * Nếu không, đảm bảo `vngcloud-controller-manager` đã được gỡ bỏ trên cụm VKS.
 
-* **\[Optional]** Để sao lưu dữ liệu của storage volume được chỉ định trong pod, hãy thêm annotation vào pod. Ví dụ:
+### Mark volume to backup and resource unnnecessary
 
-```yaml
-kubectl -n <namespace> annotate pod/<pod_name> backup.velero.io/backup-volumes=<volume_name_1>,<volume_name_2>,...
-# Eg: kubectl annotate pod/wordpress-758fbf6fc7-s7fsr backup.velero.io/backup-volumes=wp-storage
-# Eg: kubectl annotate pod/mysql-5ffdfbc498-c45lh backup.velero.io/backup-volumes=mysql-storage
+Link to helper file: [helper.sh](https://raw.githubusercontent.com/anngdinh/vcontainer-helm-infra-documentation/main/src/helm-charts/migrate/helper.sh). Create a file named `helper.sh` and grant execute permission.
+
+#### 1. Chuyển hostPath volume thành Persistent Volume để có thể backup
+
+Vì velero không hỗ trợ sao lưu hostPath volume, cần phải chuyển thành Persistent Volume.
+
+```bash
+./helper.sh check_hostPath
 ```
 
-* Chạy lệnh dưới để backup dữ liệu cluster của bạn:
+#### 2. Mark Persistent Volume to include in backup
 
-Bạn có thể tạo bản sao lưu mặc định với tất cả tài nguyên hoặc tài nguyên cụ thể hơn bằng cách thêm các cờ này. Chi tiết tham khảo thêm tại [Resource filtering](https://velero.io/docs/v1.13/resource-filtering/).
+All Persistent Volumes' data will be stored in vStorage. Cần thêm annotation cho tất cả pod dùng PV với volume name: `backup.velero.io/backup-volumes=volume1,volume2`
 
-```yaml
-velero backup create mybackup --include-cluster-scoped-resources="" \
-    --include-namespace-scoped-resources="*" \
-    --include-namespaces mynamespace \
-    --wait
+Or using helper. It'll detect all Pod using PVC and print command to run.
 
-# velero backup create mybackup \
-#   --exclude-namespaces kube-system,kube-public,kube-node-lease,velero,default \
-#   --wait
-
-# --snapshot-move-data is Specify whether snapshot data should be moved
-
-velero backup describe mybackup --details
-
+```bash
+./helper.sh mark_volume
 ```
 
-Trong đó:
+#### 3. Mark resource in exclude in backup
 
-* `--include-namespaces`: chỉ định namespace bạn muốn backup
+Because VKS is fully managed cluster, you don't need to include system resource such as: `calico`, `kube-dns`, `kube-scheduler`, `kube-apiserver`,... In addition, some resource in vContainer will be excluded such as: `magnum-auto-healer`, `cluster-autoscaler`, `csi-cinder`,...
 
-```yaml
-velero backup create <backup-name> --include-namespaces <namespace>
+```bash
+./helper.sh mark_exclude
 ```
 
-* `--include-resources`: chỉ định resource cụ thể bạn muốn backup
+#### 4. Check label and taint of node
 
-```yaml
-velero backup create <backup-name> --include-resources deployments
+Maybe resource in source cluster using labels and taints to schedule. Make sure these important labels and taints is exist in taget cluster.
+
+```bash
+./helper.sh check_node_label
+./helper.sh check_node_taint
 ```
 
-* `--selector`: backup resource match với điều kiện chỉ định trước
+#### 6. Mapping Storage Class
 
-```yaml
-velero backup create <backup-name> --selector <key>=<value>
+We need convert Storage Class in source cluster to target cluster. Assume you have 2 Storage Class below:
+
+```bash
+@ kubectl get sc
+NAME                            PROVISIONER       RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
+sc-iops-200-retain (default)    csi.vngcloud.vn   Retain          Immediate           true                   81s
+sc-ssd-10000-delete (default)   csi.vngcloud.vn   Delete          Immediate           true                   14d
 ```
 
-* Kiểm tra trạng thái backup thông qua cú pháp
-
-```yaml
-$ velero backup get
-```
-
-* Kết quả trả về như sau là việc backup đã thành công:
-
-```yaml
-NAME               STATUS      ERRORS   WARNINGS   CREATED                         EXPIRES   STORAGE LOCATION   SELECTOR
-wordpress-backup   Completed   0        0          2021-10-14 15:32:07 +0800 CST   29d       default            <none>
-```
-
-***
-
-### Khôi phục (Restore)
-
-Trong quá trình khôi phục tại cluster đích, Velero sẽ thực hiện tải dữ liệu sao lưu xuống cụm mới và triển khai lại tài nguyên dựa trên tệp JSON.
-
-* **\[Optional]** Velero có thể thay đổi PV/PVC Storage Classes của Persistent Volumes and Persistent Volume Claims trong giai đoạn restore Cluster. Để thiết lập mapping Storage Class, hãy tạo file mapping với namespace: velero theo mẫu:
+And you want to convert to 2 Storage Class `ssd-200`, `ssd-10000` in target cluster arcordingly, you have to apply this yaml in **target cluster**:
 
 ```yaml
 apiVersion: v1
@@ -148,18 +135,44 @@ metadata:
     velero.io/plugin-config: ""
     velero.io/change-storage-class: RestoreItemAction
 data:
-  <old-storage-class>: <new-storage-class>
-  <old-storage-class>: <new-storage-class>
+  sc-iops-200-retain: ssd-200
+  sc-ssd-10000-delete: ssd-10000
 ```
 
-* **\[Optional]** Thay đổi Pod/ Deployment/ StatefulSet/ DaemonSet/ ReplicaSet/ ReplicationController/ Job/ CronJob Image Repositories theo hướng dẫn tại [đây](https://velero.io/docs/v1.13/restore-reference/).
+#### 7. Tạo backup
 
-```yaml
-velero restore create --from-backup <backup-name>
+```bash
+velero backup create wordpress-backup --exclude-namespaces velero \
+    --include-cluster-resources=true \
+    --wait
+
+velero backup describe wordpress-backup --details
 ```
 
-***
+* Kết quả trả về như sau là việc backup đã thành công:
 
-### Update resource config
+```bash
+velero backup get
+NAME               STATUS      ERRORS   WARNINGS   CREATED                         EXPIRES   STORAGE LOCATION   SELECTOR
+wordpress-backup   Completed   0        0          2021-10-14 15:32:07 +0800 CST   29d       default            <none>
+```
 
-Sau khi tài nguyên của cluster đích được triển khai đúng cách, bạn có thể thực hiện **switch traffic** cho dịch vụ của bạn. Sau khi xác nhận rằng tất cả các dịch vụ đều chạy bình thường, bạn có thể thực hiện xóa cluster nguồn.
+## Khôi phục (Restore)
+
+Trong quá trình khôi phục tại cluster đích, Velero sẽ thực hiện tải dữ liệu sao lưu xuống cụm mới và triển khai lại tài nguyên dựa trên tệp JSON.
+
+Get backup:
+
+```bash
+velero backup get
+```
+
+Create restore from backup:
+
+```bash
+velero restore create --from-backup wordpress-backup
+```
+
+## Sau khi khôi phục thành công
+
+Cần xóa các annotation đã gắn của Ingress và Service type LoadBalancer.
