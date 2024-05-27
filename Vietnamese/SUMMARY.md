@@ -550,6 +550,7 @@
     * [Nâng cấp Control Plane Version](vks/bat-dau-voi-vks/nang-cap-control-plane-version.md)
     * [Nâng cấp Node Group Version](vks/bat-dau-voi-vks/nang-cap-node-group-version.md)
   * [Clusters](vks/clusters/README.md)
+    * [Gia hạn tự động các tài nguyên](vks/clusters/gia-han-tu-dong-cac-tai-nguyen.md)
     * [Upgrading Control Plane Version](vks/clusters/upgrading-control-plane-version.md)
     * [Whitelist](vks/clusters/whitelist.md)
   * [Node Groups](vks/node-groups/README.md)
