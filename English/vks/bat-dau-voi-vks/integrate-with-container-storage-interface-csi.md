@@ -204,7 +204,7 @@ metadata:
   name: my-expansion-storage-class                    # [1] The StorageClass name, CAN be changed
 provisioner: bs.csi.vngcloud.vn                       # The VNG-CLOUD CSI driver name
 parameters:
-  type: vtype-bacd68a4-8758-4fb6-a739-b047665e05d5    # The volume type UUID
+  type: vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018    # The volume type UUID
   ispoc: "true"
 allowVolumeExpansion: true                            # MUST set this value to turn on volume expansion feature
 ---
@@ -375,7 +375,7 @@ kubectl get persistentvolumes
 kubectl edit pvc my-expansion-pvc
 ```
 
-* Nếu bạn chưa chỉnh sửa IOPS của Persistent Volume lần nào trước đó, khi bạn chạy lệnh trên, bạn hãy thêm 1 annotation bs.csi.vngcloud.vn/volume-type: "volume-type-id" . Ví dụ: bên dưới tôi đang thay đổi IOPS của Persistent Volume từ 200 (Volume type id = vtype-bacd68a4-8758-4fb6-a739-b047665e05d5) lên 1000 (Volume type id = vtype-85b39362-a360-4bbb-9afa-a36a40cea748)
+* Nếu bạn chưa chỉnh sửa IOPS của Persistent Volume lần nào trước đó, khi bạn chạy lệnh trên, bạn hãy thêm 1 annotation bs.csi.vngcloud.vn/volume-type: "volume-type-id" . Ví dụ: bên dưới tôi đang thay đổi IOPS của Persistent Volume từ 200 (Volume type id = vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018) lên 1000 (Volume type id = vtype-85b39362-a360-4bbb-9afa-a36a40cea748)
 
 ```
 apiVersion: v1
