@@ -10,19 +10,27 @@ Bên dưới là các bước chung mà bạn cần thực hiện để migrate 
 
 Trên hệ thống VKS, bạn cần thực hiện khởi tạo một Cluster theo hướng dẫn tại [đây](../clusters/). Đảm bảo rằng cấu hình của cluster đích giống với cấu hình của cluster nguồn.
 
-Cần đảo bảo các yêu cầu:
+{% hint style="info" %}
+**Chú ý:**
 
-* Lượng resource cần thiết.
+Để việc migrate thành công, trên Cluster đích, bạn cần đảm bảo các yêu cầu sau:
+
+* Lượng resource cần thiết như số lượng node, cấu hình instance của node,...
 * Boot volume > persistent volume size. (có thể down size sau khi restore thành công)
 * Node labels và node taints giống cluster cũ.
 * Storage Class tương ứng hoặc thay thế.
+{% endhint %}
 
-## [Optional] Migrate resources private outside cluster
+***
+
+## \[Optional] Migrate resources private outside cluster
 
 Migrating resources private outside cluster (di chuyển tài nguyên riêng tư bên ngoài cụm) là quá trình di chuyển tài nguyên riêng tư nằm ngoài Cluster nguồn sang một nơi mà Cluster đích có thể sử dụng. Ví dụ, bạn có thể có những tài nguyên riêng tư như image, database,... Lúc này, trước khi bắt đầu migrate, bạn cần tự thực hiện việc migrate các tài nguyên này. Ví dụ, nếu bạn cần:
 
 * Migrating Container Images: vui lòng tham khảo thêm tại [đây](../../vcontainer-registry/) để thực hiện migrate image giữa 2 Cluster.
 * Migrating Databases and Storage (On-Demand): Bạn có thể sử dụng Relational **Database Service (RDS)** và **Object Storage Service (OBS)** tùy theo nhu cầu sử dụng của bạn. Sau khi việc migration hoàn tất, hãy nhớ config lại database và storage cho applications của bạn trên VKS Cluster.
+
+***
 
 ## Cài đặt Velero trên cả 2 cluster nguồn và cluster đích (Install Velero tool)
 
