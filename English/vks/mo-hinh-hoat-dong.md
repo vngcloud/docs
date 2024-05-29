@@ -1,23 +1,24 @@
-# Concept
+# Mô hình hoạt động
 
-Current concepts that VKS provides for you:
+Bên dưới là các concepts hiện tại VKS đang cung cấp cho bạn:&#x20;
 
 ## **1. Public Cluster and Public Node Group**
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-When you initialize a **Public Cluster with Public Node Group**, the VKS system will:
+Khi bạn khởi tạo một **Public Cluster với Public Node Group**, hệ thống VKS sẽ:&#x20;
 
-* Create VMs with Floating IPs (i.e., public IPs). At this point, these VMs (Nodes) can join the K8S cluster directly through this public IP. By using Public Cluster and Public Node Group, you can easily create Kubernetes clusters that are accessible from the internet. This can be useful for applications that need to be accessed from outside, such as web applications or APIs. In other words, using Public Cluster and Public Node Group helps you expand the connectivity of your Kubernetes cluster, allowing applications running on the cluster to be easily accessible from anywhere on the internet, while still ensuring flexibility and centralized management. This increases the accessibility and distribution of your applications to end users.
+* Tạo VM có Floating IP ( tức có IP Public). Lúc này các VM (Node) này có thể join trực tiếp vào cụm K8S thông qua Public IP này. Bằng cách sử dụng Public Cluster và Public Node Group, bạn có thể dễ dàng tạo các cụm Kubernetes và thực hiện expose service mà không cần sử dụng Load Balancer. Việc này sẽ góp phần tiết kiệm chi phí cho cụm của bạn.&#x20;
 
 ## **2. Public Cluster and Private Node Group**
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
-When you initialize a **Public Cluster with Private Node Group**, the VKS system will:
+Khi bạn khởi tạo một **Public Cluster với Private Node Group**, hệ thống VKS sẽ:&#x20;
 
-* Create VMs without Floating IPs (i.e., no public IPs). At this point, these VMs (Nodes) cannot join the K8S cluster directly. For these VMs to join the K8S cluster, you need to use a NAT Gateway (NATGW). NATGW acts as a relay station, allowing VMs to connect to the K8S cluster without a public IP. With VNG Cloud, we recommend using Pfsense as a NATGW for your Cluster. Pfsense will help you manage inbound and outbound traffic effectively, ensuring network security and access management. In other words, using a Private Node Group in a Public Cluster requires a different approach to connect the VMs to the K8S cluster. You cannot access directly from the internet like when using Public Node Group, but you can still manage the connection through a specific NATGW through Pfsense to ensure the security and control of your Kubernetes cluster's network traffic.
+* Tạo VM không có Floating IP ( tức không có IP Public). Lúc này các VM (Node) này không thể join trực tiếp vào cụm K8S. Để các VM này có thể join vào cụm K8S, bạn cần phải sử dụng một NAT Gateway (NATGW). NATGW hoạt động như một trạm chuyển tiếp, cho phép các VM kết nối với cụm K8S mà không cần IP Public. Với VNG Cloud, chúng tôi khuyến cáo bạn sử dụng Pfsense hoặc Palo Alto như một NATGW cho Cluster của bạn. Pfsense sẽ giúp bạn quản lý lưu lượng mạng đến và đi (inbound và outbound traffic) một cách hiệu quả, đảm bảo an ninh mạng và quản lý truy cập. Bên cạnh đó, việc sử dụng Private Node Group sẽ giúp bạn kiểm soát các ứng dụng trong cụm được bảo mật hơn, cụ thể bạn có thể thực hiện giới hạn quyền truy cập control plane thông qua tính năng Whitelist IP.
 
 ## **3. Private Cluster and Private Node Group**
 
 Coming soon.
+
