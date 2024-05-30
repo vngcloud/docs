@@ -24,3 +24,9 @@ Cụ thể:&#x20;
 * **Bước 4**: Sao lưu (Backup): Để sao lưu tài nguyên, hãy sử dụng công cụ Velero để tạo đối tượng sao lưu trong cluster nguồn. Velero sẽ thực hiện truy vấn, đóng gói dữ liệu và tải chúng lên một S3 Compatible Object Storage.&#x20;
 * **Bước 5**: Khôi phục (Restore): Trong quá trình khôi phục tại cluster đích, Velero sẽ thực hiện tải dữ liệu sao lưu xuống cụm mới và triển khai lại tài nguyên dựa trên tệp JSON.
 * **Bước 6 \[Optional]**: Update resource config: Sau khi tài nguyên của cluster đích được triển khai đúng cách, bạn có thể thực hiện **switch traffic** cho dịch vụ của bạn. Sau khi xác nhận rằng tất cả các dịch vụ đều chạy bình thường, bạn có thể thực hiện xóa cluster nguồn.
+
+Bên dưới là hướng dẫn chi tiết các trường hợp phổ biến khi bạn thực hiện migrate workload từ một Cluster sang một Cluster khác, bạn có thể tham khảo và làm theo hướng dẫn tại:
+
+* [Migrate Cluster from VKS to VKS](usecase/migrate-cluster-from-vks-to-vks.md)
+* [Migrate Cluster from vContainer to VKS](usecase/migration-cluster-from-vcontainer-to-vks.md)
+* [Migrate Cluster from another platform to VKS](usecase/migrate-cluster-from-other-to-vks.md)

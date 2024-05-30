@@ -572,7 +572,6 @@
       * [Giới hạn và hạn chế CSI](vks/storage/lam-viec-voi-container-storage-interface-csi/gioi-han-va-han-che-csi.md)
   * [Security Group](vks/security-group.md)
   * [Migration](vks/migration/README.md)
-    * [Các bước thực hiện](vks/migration/cac-buoc-thuc-hien.md)
     * [Usecase](vks/migration/usecase/README.md)
       * [Migrate Cluster from VKS to VKS](vks/migration/usecase/migrate-cluster-from-vks-to-vks.md)
       * [Migration Cluster from vContainer to VKS](vks/migration/usecase/migration-cluster-from-vcontainer-to-vks.md)
