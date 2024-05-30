@@ -1,16 +1,13 @@
-# Pricing
+# Cách tính giá
 
-Tính năng này đang trong giai đoạn thử nghiệm Alpha. VNG Cloud đang dần hoàn thiện tính năng này và rất mong muốn nhận được phản hồi từ người dùng để cải thiện chất lượng sản phẩm. Nếu bạn muốn trải nghiệm tính năng mới ra mắt này, vui lòng liên hệ với VNG Cloud qua email [**support@vngcloud.vn**](mailto:support@vngcloud.vn) hoặc hotline **19001549**.
+Đối với VKS chi phí **Managed Control Plane là hoàn toàn miễn phí.** Bạn chỉ cần chi trả cho các resource khác mà thực tế bạn sử dụng bao gồm:
+
+* Tất cả các node có trong Cluster (VM). Chi tiết cách tính giá của vServer bạn có thể tham khảo thêm tại [đây](../vserver/compute-hcm03-1a/cach-tinh-gia-vserver.md).
+* Load Balancer được integrated vào Cluster của bạn. Chi tiết cách tính giá của Load Balancer bạn có thể tham khảo thêm tại [đây](../vserver/compute-hcm03-1a/cach-tinh-gia-vserver.md).
+* Persistent Volume, Snapshot được integrated vào Cluster của bạn. Chi tiết cách tính giá của Volume bạn có thể tham khảo tại [đây](../vserver/compute-hcm03-1a/cach-tinh-gia-vserver.md).
 
 {% hint style="info" %}
-Chú ý:
+**Chú ý:**
 
-* Trong giai đoạn thử nghiệm, bạn có thể sử dụng kết hợp **số dư ví POC** và **số dư ví Credit** để khởi tạo tài nguyên trên hệ thống VKS. Cụ thể:
-  * **Bạn có thể sử dụng số dư ví POC để khởi tạo Node (VM) và PVC Volume cho Cluster của bạn.**
-  * **Và sử dụng số dư ví Credit mà chúng tôi cung cấp để khởi tạo Snapshot, ALB, NLB tương ứng.**
-* Do đang trong giai đoạn Alpha, tính năng này có thể không ổn định hoặc không có đầy đủ chức năng như phiên bản chính thức.
-* VNG Cloud có thể thay đổi hoặc hủy bỏ tính năng này bất cứ lúc nào mà không cần thông báo trước.
-* Vui lòng sử dụng tính năng này một cách cẩn thận và báo cáo bất kỳ lỗi hoặc vấn đề nào bạn gặp phải cho VNG Cloud.
-
-Cảm ơn bạn đã sử dụng VNG Cloud!
+* Để đảm bảo Cluster của bạn hoạt động ổn định, chúng tôi đã tự động thiết lập Auto-renew cho tất cả các resource trên Cluster của bạn. Trước ngày hết hạn của các resource, hãy đảm bảo số dư credit của bạn đủ để hệ thống có thể thực hiện Auto-renew thành công.
 {% endhint %}
