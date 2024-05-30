@@ -14,7 +14,7 @@ We are pleased to announce the **General Availability** (GA) release of the VNGC
 **Improvements:**
 
 * **Performance:** VKS has optimized the performance of Cluster creation. Specifically, in the Alpha version, the time from when you start creating a Cluster (with Default Node Group) to when the Cluster transitions to **ACTIVE** state is around 4:00s to 4:30s. Currently, this time has been optimized to <mark style="color:red;">**2:30s to 3:00s**</mark> depending on the Cluster and the time you create it.
-* **Manage Image:** VKS will automatically delete unused images when the disk usage reaches the usage limit (usage/quota ratio >= 85%).
+* **Garbage collection of unused containers and images:** VKS will automatically delete unused images when the disk usage reaches the usage limit (usage/quota ratio >= 85%).
 * **In addition**, we have improved a few other issues in this GA release:
   * Changed the way **Node Names** are named to make it easier for you to use and manage your Cluster. Specifically, the Node Name will have additional information Cluster Name, Node Group Name.
   * Removed **User Builder** on User's Worker Node.
