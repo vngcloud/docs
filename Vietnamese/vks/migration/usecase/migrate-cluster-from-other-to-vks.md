@@ -1,8 +1,13 @@
 # Migrate Cluster from another platform to VKS
 
-Để migrate một Cluster từ hệ thống Cloud Provider hoặc On-premise tới hệ thống VKS, hãy thực hiện theo các bước theo tài liệu này. Giả sử, tại Cluster nguồn, tôi đã triển khai một service nginx như sau:&#x20;
+Để migrate một Cluster từ hệ thống Cloud Provider hoặc On-premise tới hệ thống VKS, hãy thực hiện theo các bước theo tài liệu này.&#x20;
 
-* File triển khai:
+## Điều kiện cần
+
+* Tạo một vStorage Project , Container, S3 key, file credential trên hệ thống vStorage.
+* Thực hiện tải xuống helper bash script và grand execute permission cho file này ([velero\_helper.sh](https://raw.githubusercontent.com/vngcloud/velero/main/velero\_helper.sh))
+* (Optional) Triển khai một vài service để kiểm tra tính đúng đắn của việc migrate. Giả sử, tại Cluster nguồn, tôi đã triển khai một service nginx như sau:
+  * File triển khai:
 
 ```yaml
 ---
@@ -103,34 +108,42 @@ velero install \
     --use-node-agent \
     --use-volume-snapshots=false \
     --secret-file ./credentials-velero \
-    --bucket mycontainer \
+    --bucket ______________________________ \
     --backup-location-config region=hcm03,s3ForcePathStyle="true",s3Url=https://hcm03.vstorage.vngcloud.vn
 ```
 
 ***
 
-## Tại Cluster nguồn
+## Đối với Cluster trên Amazon Elastic Kubernetes Service (EKS)
 
-* Đánh dấu Volume bạn muốn backup thông qua lệnh:
+### Tại Cluster nguồn
 
-```bash
-kubectl -n mynamespace annotate pod/web-0 backup.velero.io/backup-volumes=disk-ssd
-```
+*   Annotate các Persistent Volume và lable resource cần loại trừ khỏi bản backup
 
+    ```yaml
+    ./velero_helper.sh mark_volume -c
+    ./velero_helper.sh mark_exclude -c
+    ```
 * Thực hiện backup theo cú pháp:
 
 ```bash
-velero backup create mybackup --include-cluster-scoped-resources="" \
-    --include-namespace-scoped-resources="*" \
-    --include-namespaces mynamespace \
-    --parallel-files-upload 20 --wait
+velero backup create eks-cluster --include-namespaces "" \
+  --include-cluster-resources=true \
+  --wait
 
-velero backup describe mybackup --details
+velero backup create eks-namespace --exclude-namespaces velero \
+    --wait
 ```
+
+{% hint style="info" %}
+**Chú ý:**
+
+* Bạn phải tạo 2 phiên bản backup cho Cluster Resource và Namespace Resource.
+{% endhint %}
 
 ***
 
-## Tại Cluster đích
+### Tại Cluster đích
 
 * Tạo file mapping Storage Class giữa Cluster nguồn và đích:
 
@@ -144,13 +157,79 @@ metadata:
     velero.io/plugin-config: ""
     velero.io/change-storage-class: RestoreItemAction
 data:
-  standard-rwo: sc-iops-200-retain
+  _______old_storage_class_______: _______new_storage_class_______  # <= Adjust here
+  _______old_storage_class_______: _______new_storage_class_______  # <= Adjust here
 ```
 
 * Thực hiện restore theo lệnh:
 
 ```bash
-velero restore create --from-backup mybackup
+velero restore create --item-operation-timeout 1m --from-backup eks-cluster \
+    --exclude-resources="MutatingWebhookConfiguration,ValidatingWebhookConfiguration"
+
+velero restore create --item-operation-timeout 1m --from-backup eks-namespace
+
+velero restore create --item-operation-timeout 1m --from-backup eks-cluster
+```
+
+***
+
+## Đối với Cluster trên Google Kubernetes Engine (GKE)
+
+### Tại Cluster nguồn
+
+*   Annotate các Persistent Volume và lable resource cần loại trừ khỏi bản backup
+
+    ```yaml
+    ./velero_helper.sh mark_volume -c
+    ./velero_helper.sh mark_exclude -c
+    ```
+* Thực hiện backup theo cú pháp:
+
+```bash
+velero backup create gke-cluster --include-namespaces "" \
+  --include-cluster-resources=true \
+  --wait
+
+velero backup create gke-namespace --exclude-namespaces velero \
+    --wait
+```
+
+{% hint style="info" %}
+**Chú ý:**
+
+* Bạn phải tạo 2 phiên bản backup cho Cluster Resource và Namespace Resource.
+{% endhint %}
+
+***
+
+### Tại Cluster đích
+
+* Tạo file mapping Storage Class giữa Cluster nguồn và đích:
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: change-storage-class-config
+  namespace: velero
+  labels:
+    velero.io/plugin-config: ""
+    velero.io/change-storage-class: RestoreItemAction
+data:
+  _______old_storage_class_______: _______new_storage_class_______  # <= Adjust here
+  _______old_storage_class_______: _______new_storage_class_______  # <= Adjust here
+```
+
+* Thực hiện restore theo lệnh:
+
+```bash
+velero restore create --item-operation-timeout 1m --from-backup gke-cluster \
+    --exclude-resources="MutatingWebhookConfiguration,ValidatingWebhookConfiguration"
+
+velero restore create --item-operation-timeout 1m --from-backup gke-namespace
+
+velero restore create --item-operation-timeout 1m --from-backup gke-cluster
 ```
 
 {% hint style="info" %}

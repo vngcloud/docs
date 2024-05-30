@@ -1,8 +1,15 @@
 # Migration Cluster from vContainer to VKS
 
-Để migrate một Cluster từ hệ thống vContainer tới hệ thống VKS, hãy thực hiện theo các bước theo tài liệu này. Giả sử, tại Cluster nguồn, tôi đã triển khai một service nginx như sau:&#x20;
 
-* File triển khai:
+
+Để migrate một Cluster từ hệ thống vContainer tới hệ thống VKS, hãy thực hiện theo các bước theo tài liệu này.&#x20;
+
+## Điều kiện cần
+
+* Tạo một vStorage Project , Container, S3 key, file credential trên hệ thống vStorage.
+* Thực hiện tải xuống helper bash script và grand execute permission cho file này ([velero\_helper.sh](https://raw.githubusercontent.com/vngcloud/velero/main/velero\_helper.sh))
+* (Optional) Triển khai một vài service để kiểm tra tính đúng đắn của việc migrate. Giả sử, tại Cluster nguồn, tôi đã triển khai một service nginx như sau:
+  * File triển khai:
 
 ```yaml
 ---
@@ -103,50 +110,38 @@ velero install \
     --use-volume-snapshots=false \
     --secret-file ./credentials-velero \
     --bucket mycontainer \
-    --backup-location-config region=hcm03,s3ForcePathStyle="true",s3Url=https://hcm03.vstorage.vngcloud.vn \
-    --default-volumes-to-fs-backup
-
-# flag `--default-volumes-to-fs-backup` will backup all persistent volume as file system volume
+    --backup-location-config region=hcm03,s3ForcePathStyle="true",s3Url=https://hcm03.vstorage.vngcloud.vn
 ```
 
 ***
 
 ## Tại Cluster nguồn
 
+*   Annotate các Persistent Volume và lable resource cần loại trừ khỏi bản backup
+
+    ```yaml
+    ./velero_helper.sh mark_volume -c
+    ./velero_helper.sh mark_exclude -c
+    ```
 * Thực hiện backup theo cú pháp:
 
 ```bash
-velero backup create mybackup --include-cluster-scoped-resources="" \
-    --include-namespace-scoped-resources="*" \
-    --include-namespaces mynamespace \
+velero backup create vcontainer-full-backup --exclude-namespaces velero \
+    --include-cluster-resources=true \
     --wait
-
-# velero backup create mybackup \
-#   --exclude-namespaces kube-system,kube-public,kube-node-lease,velero,default \
-#   --wait
-
-velero backup describe mybackup --details
 ```
+
+{% hint style="info" %}
+**Chú ý:**
+
+* Bạn phải tạo 2 phiên bản backup cho Cluster Resource và Namespace Resource.
+{% endhint %}
 
 ***
 
 ## Tại Cluster đích
 
-* Thực hiện tạo một Storage Class mới bằng cách apply file sau:
-
-```yaml
-apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name:  ssd-3000                           # [1] The StorageClass name, CAN be changed
-provisioner: bs.csi.vngcloud.vn                     # The CSI driver name, MUST set this value
-parameters:
-  type: vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018  # Change it to your volume type UUID from portal
-  ispoc: "true"
-allowVolumeExpansion: true
-```
-
-* Tạo file mapping Storage Class giữa Cluster nguồn và đích:
+* Tạo file mapping Storage Class giữa Cluster nguồn và đích, thực hiện apply file này trên Cluster đích của bạn:
 
 ```yaml
 apiVersion: v1
@@ -158,11 +153,12 @@ metadata:
     velero.io/plugin-config: ""
     velero.io/change-storage-class: RestoreItemAction
 data:
-  sc-nvme-5000-delete: ssd-3000
+  _______old_storage_class_______: _______new_storage_class_______  # <= Adjust here
+  _______old_storage_class_______: _______new_storage_class_______  # <= Adjust here
 ```
 
 * Thực hiện restore theo lệnh:
 
 ```bash
-velero restore create --from-backup mybackup
+velero restore create --item-operation-timeout 1m --from-backup vcontainer-full-backup
 ```
