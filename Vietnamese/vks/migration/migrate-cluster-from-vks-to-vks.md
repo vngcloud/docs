@@ -120,8 +120,8 @@ Ví dụ, tôi đã khởi tạo một vStorage Project, Container có thông ti
 
 ```yaml
 [default]
-aws_access_key_id=<AWS_ACCESS_KEY_ID>
-aws_secret_access_key=<AWS_SECRET_ACCESS_KEY>
+aws_access_key_id=________________________
+aws_secret_access_key=________________________
 ```
 
 * Cài đặt Velero CLI:
@@ -138,7 +138,7 @@ cp velero-v1.13.2-linux-amd64/velero /usr/local/bin
 velero install --provider aws \
   --plugins velero/velero-plugin-for-aws:v1.9.0,velero/velero-plugin-for-csi:v0.7.0 \
   --secret-file ./credentials-velero \
-  --bucket mycontainer \
+  --bucket ________________________ \
   --backup-location-config region=hcm03,s3ForcePathStyle="true",s3Url=https://hcm03.vstorage.vngcloud.vn \
   --use-node-agent \
   --features=EnableCSI
@@ -166,10 +166,15 @@ helm install vngcloud-snapshot-controller vks-helm-charts/vngcloud-snapshot-cont
 
 ## Tại Cluster nguồn
 
-* Annotate các Persistent Volume và lable resource cần loại trừ khỏi bản backup
+* Annotate các Persistent Volume cần backup. Mặc định velero sẽ không backup volume. Bạn có thể chạy lệnh dưới để annotate backup tất cả volume.
 
 ```yaml
 ./velero_helper.sh mark_volume -c
+```
+
+* Ngoài ra, bạn có thể đánh dấu không backup các resource của system bằng lệnh sau:
+
+```yaml
 ./velero_helper.sh mark_exclude -c
 ```
 
@@ -198,7 +203,9 @@ velero backup create vks-full-backup \
   --wait
 
 # --snapshot-move-data is Specify whether snapshot data should be moved
+```
 
+```
 velero backup describe vks-full-backup --details
 ```
 

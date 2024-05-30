@@ -120,8 +120,8 @@ Ví dụ, tôi đã khởi tạo một vStorage Project, Container có thông ti
 
 ```yaml
 [default]
-aws_access_key_id=<AWS_ACCESS_KEY_ID>
-aws_secret_access_key=<AWS_SECRET_ACCESS_KEY>
+aws_access_key_id=________________________
+aws_secret_access_key=________________________
 ```
 
 * Cài đặt Velero CLI:
@@ -141,7 +141,7 @@ velero install \
     --use-node-agent \
     --use-volume-snapshots=false \
     --secret-file ./credentials-velero \
-    --bucket mycontainer \
+    --bucket ________________________ \
     --backup-location-config region=hcm03,s3ForcePathStyle="true",s3Url=https://hcm03.vstorage.vngcloud.vn
 ```
 
@@ -149,25 +149,30 @@ velero install \
 
 ## Tại Cluster nguồn
 
-*   Annotate các Persistent Volume và lable resource cần loại trừ khỏi bản backup
+*   Annotate các Persistent Volume cần backup. Mặc định velero sẽ không backup volume. Bạn có thể chạy lệnh dưới để annotate backup tất cả volume.
+
+    <pre class="language-yaml"><code class="lang-yaml"><strong>./velero_helper.sh mark_volume --confirm
+    </strong></code></pre>
+*   Ngoài ra, bạn có thể đánh dấu không backup các resource của system bằng lệnh sau:&#x20;
 
     ```yaml
-    ./velero_helper.sh mark_volume -c
-    ./velero_helper.sh mark_exclude -c
+    ./velero_helper.sh mark_exclude --confirm
     ```
-* Thực hiện backup theo cú pháp:
+
+Chi tiết vui lòng tham khảo tại [đây](gioi-han-va-han-che.md).
+
+* Bạn cần tạo 2 bản backup cho cluster resource và namespace resource để tránh lỗi có thể xảy ra. Thực hiện tạo backup theo cú pháp:
 
 ```bash
-velero backup create vcontainer-full-backup --exclude-namespaces velero \
-    --include-cluster-resources=true \
-    --wait
+velero backup create vcontainer-cluster --include-namespaces "" \
+  --include-cluster-resources=true \
+  --wait
 ```
 
-{% hint style="info" %}
-**Chú ý:**
-
-* Bạn phải tạo 2 phiên bản backup cho Cluster Resource và Namespace Resource.
-{% endhint %}
+```
+velero backup create vcontainer-namespace --exclude-namespaces velero \
+    --wait
+```
 
 ***
 
@@ -189,10 +194,19 @@ data:
   _______old_storage_class_______: _______new_storage_class_______  # <= Adjust here
 ```
 
-* Thực hiện restore theo lệnh:
+* Thực hiện restore theo thứ tự:
 
 ```bash
-velero restore create --item-operation-timeout 1m --from-backup vcontainer-full-backup
+velero restore create --item-operation-timeout 1m --from-backup vcontainer-cluster \
+    --exclude-resources="MutatingWebhookConfiguration,ValidatingWebhookConfiguration"
+```
+
+```
+velero restore create --item-operation-timeout 1m --from-backup vcontainer-namespace
+```
+
+```
+velero restore create --item-operation-timeout 1m --from-backup vcontainer-cluster
 ```
 
 ***

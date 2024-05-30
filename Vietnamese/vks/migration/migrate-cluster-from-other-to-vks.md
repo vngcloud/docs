@@ -120,8 +120,8 @@ Ví dụ, tôi đã khởi tạo một vStorage Project, Container có thông ti
 
 ```yaml
 [default]
-aws_access_key_id=<AWS_ACCESS_KEY_ID>
-aws_secret_access_key=<AWS_SECRET_ACCESS_KEY>
+aws_access_key_id=________________________
+aws_secret_access_key=________________________
 ```
 
 * Cài đặt Velero CLI:
@@ -151,10 +151,14 @@ velero install \
 
 ### Tại Cluster nguồn
 
-*   Annotate các Persistent Volume và lable resource cần loại trừ khỏi bản backup
+*   Annotate các Persistent Volume cần backup. Mặc định velero sẽ không backup volume. Bạn có thể chạy lệnh dưới để annotate backup tất cả volume.
 
     ```yaml
     ./velero_helper.sh mark_volume -c
+    ```
+*   Ngoài ra, bạn có thể đánh dấu không backup các resource của system bằng lệnh sau:&#x20;
+
+    ```yaml
     ./velero_helper.sh mark_exclude -c
     ```
 * Thực hiện backup theo cú pháp:
@@ -163,7 +167,9 @@ velero install \
 velero backup create eks-cluster --include-namespaces "" \
   --include-cluster-resources=true \
   --wait
+```
 
+```
 velero backup create eks-namespace --exclude-namespaces velero \
     --wait
 ```
@@ -199,9 +205,13 @@ data:
 ```bash
 velero restore create --item-operation-timeout 1m --from-backup eks-cluster \
     --exclude-resources="MutatingWebhookConfiguration,ValidatingWebhookConfiguration"
+```
 
+```
 velero restore create --item-operation-timeout 1m --from-backup eks-namespace
+```
 
+```
 velero restore create --item-operation-timeout 1m --from-backup eks-cluster
 ```
 
@@ -215,6 +225,10 @@ velero restore create --item-operation-timeout 1m --from-backup eks-cluster
 
     ```yaml
     ./velero_helper.sh mark_volume -c
+    ```
+*   Ngoài ra, bạn có thể đánh dấu không backup các resource của system bằng lệnh sau:
+
+    ```yaml
     ./velero_helper.sh mark_exclude -c
     ```
 * Thực hiện backup theo cú pháp:
@@ -223,7 +237,9 @@ velero restore create --item-operation-timeout 1m --from-backup eks-cluster
 velero backup create gke-cluster --include-namespaces "" \
   --include-cluster-resources=true \
   --wait
+```
 
+```
 velero backup create gke-namespace --exclude-namespaces velero \
     --wait
 ```
@@ -259,9 +275,13 @@ data:
 ```bash
 velero restore create --item-operation-timeout 1m --from-backup gke-cluster \
     --exclude-resources="MutatingWebhookConfiguration,ValidatingWebhookConfiguration"
+```
 
+```
 velero restore create --item-operation-timeout 1m --from-backup gke-namespace
+```
 
+```
 velero restore create --item-operation-timeout 1m --from-backup gke-cluster
 ```
 
