@@ -27,6 +27,6 @@ Cụ thể:&#x20;
 
 Bên dưới là hướng dẫn chi tiết các trường hợp phổ biến khi bạn thực hiện migrate workload từ một Cluster sang một Cluster khác, bạn có thể tham khảo và làm theo hướng dẫn tại:
 
-* [Migrate Cluster from VKS to VKS](usecase/migrate-cluster-from-vks-to-vks.md)
-* [Migrate Cluster from vContainer to VKS](usecase/migration-cluster-from-vcontainer-to-vks.md)
-* [Migrate Cluster from another platform to VKS](usecase/migrate-cluster-from-other-to-vks.md)
+* [Migrate Cluster from VKS to VKS](migrate-cluster-from-vks-to-vks.md)
+* [Migrate Cluster from vContainer to VKS](migration-cluster-from-vcontainer-to-vks.md)
+* [Migrate Cluster from another platform to VKS](migrate-cluster-from-other-to-vks.md)
