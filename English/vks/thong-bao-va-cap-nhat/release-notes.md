@@ -1,6 +1,6 @@
 # Release notes
 
-## \[<mark style="color:green;">**Feature**</mark>] May 30, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
+## May 30, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
 
 We are pleased to announce the **General Availability** (GA) release of the VNGCloud Kubernetes Service (VKS). In addition to the features we have provided in previous releases, this GA release brings several new features and enhancements to users. Here are the details of the update:
 
@@ -24,7 +24,7 @@ If you encounter any problems with this GA release, please contact VKS support f
 
 ***
 
-## \[<mark style="color:green;">**Feature**</mark>] May 03, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
+## May 03, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
 
 The latest update for VKS is now available, bringing a variety of new features and improvements for users. Here's a detailed breakdown of the update:
 
@@ -41,7 +41,7 @@ If you encounter any issues after updating, please contact VKS support for assis
 
 ***
 
-## **\[**<mark style="color:green;">**Feature**</mark>**] April 17, 2024** <a href="#april_19_2024" id="april_19_2024"></a>
+## **April 17, 2024** <a href="#april_19_2024" id="april_19_2024"></a>
 
 **We are thrilled to introduce the latest update to our VKS service, delivering a more powerful and efficient Kubernetes management experience!**
 
