@@ -1,8 +1,13 @@
 # Migrate Cluster from VKS to VKS
 
-Để migrate một Cluster từ hệ thống VKS tới hệ thống VKS, hãy thực hiện theo các bước theo tài liệu này. Giả sử, tại Cluster nguồn, tôi đã triển khai một service nginx như sau:&#x20;
+Để migrate một Cluster từ hệ thống VKS tới hệ thống VKS, hãy thực hiện theo các bước theo tài liệu này.&#x20;
 
-* File triển khai:
+## Điều kiện cần
+
+* Tạo một vStorage Project , Container, S3 key, file credential trên hệ thống vStorage.
+* Thực hiện tải xuống helper bash script và grand execute permission cho file này ([velero\_helper.sh](https://raw.githubusercontent.com/vngcloud/velero/main/velero\_helper.sh))
+* (Optional) Triển khai một vài service để kiểm tra tính đúng đắn của việc migrate. Giả sử, tại Cluster nguồn, tôi đã triển khai một service nginx như sau:
+  * File triển khai:
 
 ```yaml
 apiVersion: v1
@@ -117,25 +122,18 @@ helm install vngcloud-snapshot-controller vks-helm-charts/vngcloud-snapshot-cont
   --replace --namespace kube-system
 ```
 
-* Tạo một Storage Class
-
-```yaml
-apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name:  ssd-3000                           # [1] The StorageClass name, CAN be changed
-provisioner: bs.csi.vngcloud.vn                     # The CSI driver name, MUST set this value
-parameters:
-  type: vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018  # Change it to your volume type UUID from portal
-  ispoc: "true"
-allowVolumeExpansion: true
-```
-
 ***
 
 ## Tại Cluster nguồn
 
-* Thực hiện apply file bên dưới để tạo default Volume Snapshot cho mọi PVC
+* Annotate các Persistent Volume và lable resource cần loại trừ khỏi bản backup
+
+```yaml
+./velero_helper.sh mark_volume -c
+./velero_helper.sh mark_exclude -c
+```
+
+* Thực hiện apply file bên dưới để tạo default VolumeSnapshotClass:
 
 ```yaml
 apiVersion: snapshot.storage.k8s.io/v1
@@ -154,24 +152,22 @@ deletionPolicy: Delete
 * Thực hiện backup theo cú pháp:
 
 ```bash
-velero backup create mybackup --include-cluster-scoped-resources="" \
-    --include-namespace-scoped-resources="*" \
-    --include-namespaces mynamespace \
-    --wait
-
-# velero backup create mybackup \
-#   --exclude-namespaces kube-system,kube-public,kube-node-lease,velero,default \
-#   --wait
+velero backup create vks-full-backup \
+  --exclude-namespaces velero \
+  --include-cluster-resources=true \
+  --wait
 
 # --snapshot-move-data is Specify whether snapshot data should be moved
 
-velero backup describe mybackup --details
+velero backup describe vks-full-backup --details
 ```
+
+***
 
 ## Tại Cluster đích
 
 * Thực hiện restore theo lệnh:
 
 ```bash
-velero restore create --from-backup mybackup
+velero restore create --from-backup vks-full-backup
 ```
