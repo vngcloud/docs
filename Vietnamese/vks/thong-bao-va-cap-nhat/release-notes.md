@@ -1,23 +1,24 @@
 # Release notes
 
-## \[<mark style="color:green;">**Feature**</mark>] May 29, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
+## \[<mark style="color:green;">**Feature**</mark>] May 30, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
 
 Chúng tôi vô cùng trân trọng thông báo, bản release chính thức (**General Availability**) của dịch vụ VNGCloud Kubernetes Service đã có sẵn. Với bản release chính thức này, ngoài các tính năng mà chúng tôi đã cung cấp trên các bản release trước đó, phiên bản này sẽ mang đến nhiều tính năng và cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
 
 **Tính năng mới:**
 
-* **Re-activate :** VKS cho phép bạn thực hiện yêu cầu hệ thống tự động khởi tạo lại Service Account mặc định khi bạn xóa nhầm hoặc thay đổi thông tin Service Account mặc định đã khởi tạo trước đó.
+* **Re-activate :** VKS cho phép bạn thực hiện yêu cầu hệ thống tự động khởi tạo lại Service Account mặc định khi bạn xóa nhầm hoặc thay đổi thông tin Service Account mặc định đã khởi tạo trước đó. Service Account mặc định là Service Account được hệ thống VKS tự động khởi tạo khi bạn bắt đầu làm việc với VKS, chúng tôi sẽ sử dụng Service Account này để khởi tạo các resource cho Cluster của bạn.
 * **Event History**: VKS sẽ thực hiện hiển thị lịch sử các sự kiện xảy ra khi người dùng làm việc với Cluster hoặc từng Node Group. Đây sẽ là một cách giúp bạn có thể giám sát các hoạt động xảy ra với Cluster của bạn, từ đó hạn chế các hoạt động bất thường xảy ra.
 * **Volume**: VKS đã tích hợp hiển thị danh sách Volume tại Resource Tab, giúp bạn dễ dàng quản lý các Volume đang được attach vào Cluster của bạn.
 * **Load Balancer**: VKS đã tích hợp hiển thị danh sách Load Balancer tại Resource Tab, giúp bạn dễ dàng quản lý các Load Balancer đang được sử dụng cho Cluster của bạn.
 
 **Cải tiến:**
 
-* **Hiệu năng**: VKS đã thực hiện tối ưu hiệu năng khi khởi tạo Cluster. Cụ thể, tại bản Alpha, thời gian khởi tạo Cluster vào khoảng 04:00s tới 04:30s. Hiện tại thời gian này đã được chúng tôi tối ưu về <mark style="color:red;">**02:00 tới 02:30s**</mark> tùy thuộc vào từng Cluster và từng thời điểm mà bạn khởi tạo.
+* **Hiệu năng**: VKS đã thực hiện tối ưu hiệu năng khi khởi tạo Cluster. Cụ thể, tại bản Alpha, thời gian từ khi bắt đầu khởi tạo Cluster (với Default Node Group) tới khi Cluster chuyển trạng thái **ACTIVE** vào khoảng 04:00s tới 04:30s. Hiện tại thời gian này đã được chúng tôi tối ưu về <mark style="color:red;">**02:30s tới 03:00s**</mark> tùy thuộc vào từng Cluster và từng thời điểm mà bạn khởi tạo.
 * **Manage Image**: VKS sẽ tự động xóa các image không được sử dụng khi disk chạm mức giới hạn sử dụng (tỷ lệ usage/ quota >= 85%).
 * **Ngoài ra**, bản GA này được chúng tôi cải thiến một vài vấn đề khác như:&#x20;
-  * Thay đổi quy hoạch **Cluster Name, Node Group Name, Node Name** giúp bạn dễ dàng sử dụng và quản lý Cluster của bạn.
-  * Xóa User Builder trên User's Worker Node.
+  * Thay đổi cách đặt tên **Node Name** giúp bạn dễ dàng sử dụng và quản lý Cluster của bạn. Cụ thể, tên Node Name sẽ có thêm thông tin **Cluster Name**, **Node Group Name**.
+  * Xóa **User Builder** trên User's Worker Node.
+  * Thay đổi cơ chế **SSH** từ Port 22 qua Port 234.
 
 Nếu bạn gặp bất kỳ vấn đề với bản phát hành chính thức này, vui lòng liên hệ với bộ phận hỗ trợ của VKS để được trợ giúp.
 
