@@ -6,7 +6,7 @@ We are pleased to announce the **General Availability** (GA) release of the VNGC
 
 **New Features:**
 
-* **Re-activate:** VKS allows you to make a system request to automatically recreate the default Service Account if you accidentally delete or change the information of the previously created default Service Account. The default Service Account is the Service Account that the VKS system automatically creates when you start working with VKS. We will use this Service Account to create resources for your Cluster.
+* **Re-activate:** VKS allows you to make a system request to automatically recreate the default IAM Service Account if you accidentally delete or change the information of the previously created default IAM Service Account. The default IAM Service Account is the IAM Service Account that the VKS system automatically creates when you start working with VKS. We will use this IAM Service Account to create resources for your Cluster.
 * **Event History:** VKS will display the history of events that occur when users work with a Cluster or Node Group. This will be a way for you to monitor the activities happening to your Cluster, thus limiting abnormal activities from occurring.
 * **Volume:** VKS has integrated a display of the list of Volumes in the Resource Tab, helping you easily manage the Volumes that are attached to your Cluster.
 * **Load Balancer:** VKS has integrated a display of the list of Load Balancers in the Resource Tab, helping you easily manage the Load Balancers that are being used for your Cluster.
