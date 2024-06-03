@@ -68,25 +68,49 @@ Cấu hình Cloud config được hổ trợ, không bao gồm các nội dung r
 
 Ví dụ:
 
-| `#cloud-configwrite_files:   encoding: b64   content: NDI=   path: C:\test   permissions: '0o466'` |
-| -------------------------------------------------------------------------------------------------- |
+<pre><code>#cloud-config
+write_files:   
+    encoding: b64   
+    content: NDI=   
+<strong>    path: C:\test   
+</strong><strong>    permissions: '0o466'
+</strong></code></pre>
 
-| `#cloud-configwrite_files:   -   encoding: b64       content: NDI=       path: C:\b64       permissions: '0644'   -   encoding: base64       content: NDI=       path: C:\b64_1       permissions: '0644'   -   encoding: gzip       content: !!binary \|           H4sIAGUfoFQC/zMxAgCIsCQyAgAAAA==       path: C:\gzip       permissions: '0644'` |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+```
+#cloud-config
+write_files:   
+-   encoding: b64       
+    content: NDI=       
+    path: C:\b64       
+    permissions: '0644'   
+-   encoding: base64       
+    content: NDI=       
+    path: C:\b64_1       
+    permissions: '0644'   
+-   encoding: gzip       
+    content: !!binary |           
+        H4sIAGUfoFQC/zMxAgCIsCQyAgAAAA==       
+    path: C:\gzip       
+    permissions: '0644'
+```
 
 * **set\_timezone**: Thay đổi Múi giờ hệ thống
 
 Ví dụ:
 
-| `#cloud-configset_timezone: Asia/Tbilisi` |
-| ----------------------------------------- |
+```
+#cloud-config
+set_timezone: Asia/Tbilisi
+```
 
 * **set\_hostname**: Thay đổi Tên máy chủ
 
 Ví dụ:
 
-| `#cloud-configset_hostname: newhostname` |
-| ---------------------------------------- |
+```
+#cloud-config
+set_hostname: newhostname
+```
 
 * **groups**: Tạo nhóm nội bộ và thêm những user đang tồn tại vào các nhóm đó.
 
@@ -98,8 +122,11 @@ Danh sách user có thể để trống, nên có thể tạo một nhóm mà kh
 
 Ví dụ:
 
-| `groups:  - windows-group: [user1, user2]  - cloud-users` |
-| --------------------------------------------------------- |
+```
+groups:  
+- windows-group: [user1, user2]  
+- cloud-users
+```
 
 * **users**: Tạo và cấu hình user nội bộ.
 
@@ -116,8 +143,22 @@ Những user được xác định là một danh sách, mỗi thành phần tro
 
 Ví dụ:
 
-| `users:  -    name: Admin  -    name: brian    gecos: 'Brian Cohen'    primary_group: Users    groups: cloud-users    passwd: StrongPassw0rd    inactive: False    expiredate: 2020-10-01    ssh_authorized_keys:      - ssh-rsa AAAB...byV      - ssh-rsa AAAB...ctV` |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+
+```
+users:  
+-    name: Admin  
+-    name: brian    
+gecos: 'Brian Cohen'    
+primary_group: Users    
+groups: cloud-users    
+passwd: StrongPassw0rd    
+inactive: False    
+expiredate: 2020-10-01    
+ssh_authorized_keys:      
+- ssh-rsa AAAB...byV      
+- ssh-rsa AAAB...ctV
+```
 
 * **ntp**: Cấu hình NTP Server, (Network Time Protocol), được định nghĩa với các thuộc tính sau:
 
@@ -129,8 +170,13 @@ Server và pools được gộp chung lại, server là được ưu tiên trư�
 
 Ví dụ:
 
-| `#cloud-configntp:  enabled: True  servers: ['my.ntp.server.local', '192.168.23.2']  pools: ['0.company.pool.ntp.org', '1.company.pool.ntp.org']` |
-| ------------------------------------------------------------------------------------------------------------------------------------------------- |
+```
+#cloud-config
+ntp:  
+enabled: True  
+servers: ['my.ntp.server.local', '192.168.23.2']  
+pools: ['0.company.pool.ntp.org', '1.company.pool.ntp.org']
+```
 
 * **runcmd**: Được chỉ dẫn là nơi có thể chứa danh sách các câu lệnh mà sẽ được thực thi, theo thứ tự được xác định.
 
@@ -139,6 +185,13 @@ Một câu lệnh có thể được xác định là một chuỗi ký tự hay
 Trên Windows, các dòng lệnh được tập hợp lại trong một file và được thực thi với cmd.exe.&#x20;
 
 Ví dụ:
+
+```
+#cloud-config
+runcmd:  
+- 'dir C:\\'  
+- ['echo', '1']
+```
 
 | `#cloud-configruncmd:  - 'dir C:\\'  - ['echo', '1']` |
 | ----------------------------------------------------- |
@@ -164,13 +217,13 @@ Việc thực thi việc đổi tên máy chủ _set\_hostname_ hay chạy các 
 
 ***
 
-Để nhập các dòng lệnh để thực hiện việc cung cấp UserData cho Server thì bạn có thể thực hiện ở bước Khởi tạo Server (Bước 4 ở Trải nghiệm sản phẩm vServer ở [**đây**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647861)) như sau:
+Để nhập các dòng lệnh để thực hiện việc cung cấp UserData cho Server thì bạn có thể thực hiện ở bước Khởi tạo Server (Bước 4 ở Trải nghiệm sản phẩm vServer ở [**đây**](./)) như sau:
 
 * Tại bước cấu hình "**Network setting**" để thực hiện việc cấu hình nhập UserData thì ta sẽ chọn tùy chọn "**UserData**" như hình bên dưới.
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/73761115/image2024-3-12_10-31-40.png?version=1&#x26;modificationDate=1710214301000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-* Ta có thể tải lên (upload) file hoặc **điền những câu lệnh vào field nội dung** để thực thi việc cung cấp thông tin user vào Server. Tham khảo ở bên dưới mục "[Gợi ý điền câu lệnh cho UserData](https://docs.vngcloud.vn/display/vServer/UserData#UserData-SuggestScriptUserData)", VNG Cloud cung cấp gợi ý mặc định câu lệnh scripts để tiện việc cấu hình UserData.
+* Ta có thể tải lên (upload) file hoặc **điền những câu lệnh vào field nội dung** để thực thi việc cung cấp thông tin user vào Server. Tham khảo ở bên dưới mục "[Gợi ý điền câu lệnh cho UserData](userdata.md#userdata-goiydiencaulenhchouserdatasuggestscriptuserdata)", VNG Cloud cung cấp gợi ý mặc định câu lệnh scripts để tiện việc cấu hình UserData.
 * Nếu thông tin người dùng UserData ở các tools đang sử dụng đã được mã hóa Base64 thì ta sẽ chọn vào "**User Data is base64 encoded**".
 
 ## **Gợi ý điền câu lệnh cho UserData** <a href="#userdata-goiydiencaulenhchouserdatasuggestscriptuserdata" id="userdata-goiydiencaulenhchouserdatasuggestscriptuserdata"></a>
@@ -179,16 +232,46 @@ Việc thực thi việc đổi tên máy chủ _set\_hostname_ hay chạy các 
 
 Khi tạo Server Windows, VNG Cloud cung cấp đoạn câu lệnh mặc định (Default Scripts) ngay tại trường User Data, bao gồm cả thông tin bản quyền hệ điều hành Windows mà ta có thể sử dụng ngay:
 
-| `#ps1net user stackops VngP@ssword2` `/logonpasswordchg:yes  /ynet localgroup administrators stackops /addSet-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal*Server\WinStations\RDP-TCP\" -Name PortNumber -Value 3490net stop TermService /ynet start TermService /ynetsh advfirewall firewall add rule name="RDP-3490"` `dir=in action=allow protocol=TCP localport=349032tm /config /syncfromflags:manual /manualpeerlist:time.windows.comw32tm /config /updatew32tm /resync /nowaitcscript.exe slmgr.vbs /ipk N69G4-B89J2-4G8F4-WWYCC-J464Ccscript.exe slmgr.vbs /skms kms.vngcloud.vncscript.exe slmgr.vbs /ato` |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+> `#ps1`
+>
+> `net user stackops VngP@ssword2` `/logonpasswordchg:yes  /y`
+>
+> `net localgroup administrators stackops /add`
+>
+> `Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal*Server\WinStations\RDP-TCP\" -Name PortNumber -Value 3490`
+>
+> `net stop TermService /y`
+>
+> `net start TermService /y`
+>
+> `netsh advfirewall firewall add rule name="RDP-3490"` `dir=in action=allow protocol=TCP localport=3490`
+>
+> `w32tm /config /syncfromflags:manual /manualpeerlist:time.windows.com`
+>
+> `w32tm /config /update`
+>
+> `w32tm /resync /nowait`
+>
+> `cscript.exe slmgr.vbs /ipk N69G4-B89J2-4G8F4-WWYCC-J464C`
+>
+> `cscript.exe slmgr.vbs /skms kms.vngcloud.vnc`
+>
+> `script.exe slmgr.vbs /ato`
 
 Trong đó với các thông tin:
 
 * **stackops VngP@ssword2** : là Username và password của OS;
 * **N69G4-B89J2-4G8F4-WWYCC-J464C** : là key kích hoạt bản quyền (activation key) của OS, hệ thống sẽ tự động tham chiếu (mapping) theo key và OS tương ứng:
 
-| `{  "Windows Server 2016 Standard": "WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY",  "Windows Server 2019 Standard": "N69G4-B89J2-4G8F4-WWYCC-J464C",  "Windows Server 2012 Server Standard": "XC9B7-NBPP2-83J2H-RHMBY-92BT4",  "Windows Server 2012 R2 Server Standard": "D2N9P-3P6X9-2R39C-7RTCD-MDVJX",  "Windows Server 2022 Standard": "VDYBN-27WPP-V4HQT-9VMD4-VMK7H"}` |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+```
+{  
+"Windows Server 2016 Standard": "WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY",
+"Windows Server 2019 Standard": "N69G4-B89J2-4G8F4-WWYCC-J464C",  
+"Windows Server 2012 Server Standard": "XC9B7-NBPP2-83J2H-RHMBY-92BT4",  
+"Windows Server 2012 R2 Server Standard": "D2N9P-3P6X9-2R39C-7RTCD-MDVJX",  
+"Windows Server 2022 Standard": "VDYBN-27WPP-V4HQT-9VMD4-VMK7H"
+  }
+```
 
 Kết quả hiển thị sẽ được hiển thị mặc định như sau trên giao diện người dùng:
 
