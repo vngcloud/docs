@@ -12,7 +12,7 @@ Nhận thấy nhu cầu sử dụng các tài nguyên / dich vụ trả sau củ
 * **Đối tượng áp dụng**:
   * Người dùng trả trước
 * **Tài nguyên / Dịch vụ áp dụng**:&#x20;
-  * Hiên tại đang hỗ trợ vContainer (K8s) và Snapshot
+  * Hiên tại đang hỗ trợ các dịch vụ vContainer (K8s), Snapshot, Repository (vCR), Bandwidth
 * **Nguồn tiền**:
   * VNG Cloud Credit
 * **Tác vụ:**
