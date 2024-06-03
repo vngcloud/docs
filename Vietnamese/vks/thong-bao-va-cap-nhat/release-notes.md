@@ -6,7 +6,7 @@ Chúng tôi vô cùng trân trọng thông báo, bản release chính thức (**
 
 **Tính năng mới:**
 
-* **Re-activate :** VKS cho phép bạn thực hiện yêu cầu hệ thống tự động khởi tạo lại Service Account mặc định khi bạn xóa nhầm hoặc thay đổi thông tin Service Account mặc định đã khởi tạo trước đó. Service Account mặc định là Service Account được hệ thống VKS tự động khởi tạo khi bạn bắt đầu làm việc với VKS, chúng tôi sẽ sử dụng Service Account này để khởi tạo các resource cho Cluster của bạn.
+* **Re-activate :** VKS cho phép bạn thực hiện yêu cầu hệ thống tự động khởi tạo lại IAM Service Account mặc định khi bạn xóa nhầm hoặc thay đổi thông tin IAM Service Account mặc định đã khởi tạo trước đó. IAM Service Account mặc định là IAM Service Account được hệ thống VKS tự động khởi tạo khi bạn bắt đầu làm việc với VKS, chúng tôi sẽ sử dụng IAM Service Account này để khởi tạo các resource cho Cluster của bạn.
 * **Event History**: VKS sẽ thực hiện hiển thị lịch sử các sự kiện xảy ra khi người dùng làm việc với Cluster hoặc từng Node Group. Đây sẽ là một cách giúp bạn có thể giám sát các hoạt động xảy ra với Cluster của bạn, từ đó hạn chế các hoạt động bất thường xảy ra.
 * **Volume**: VKS đã tích hợp hiển thị danh sách Volume tại Resource Tab, giúp bạn dễ dàng quản lý các Volume đang được attach vào Cluster của bạn.
 * **Load Balancer**: VKS đã tích hợp hiển thị danh sách Load Balancer tại Resource Tab, giúp bạn dễ dàng quản lý các Load Balancer đang được sử dụng cho Cluster của bạn.
