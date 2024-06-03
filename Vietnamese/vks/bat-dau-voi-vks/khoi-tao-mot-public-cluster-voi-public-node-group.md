@@ -16,7 +16,7 @@
 
 Để khởi tạo một Cluster, hãy làm theo các bước bên dưới:
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
 
 **Bước 2:** Tại màn hình **Overview**, chọn **Activate.**
 
