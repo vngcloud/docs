@@ -8,6 +8,12 @@
 * Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](../../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
 * Đã cài đặt và cấu hình **kubectl** trên thiết bị của bạn. vui lòng tham khảo tại [đây](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) nếu bạn chưa rõ cách cài đặt và sử dụng kuberctl. Ngoài ra, bạn không nên sử dụng phiên bản kubectl quá cũ, chúng tôi khuyến cáo bạn nên sử dụng phiên bản kubectl sai lệch không quá một phiên bản với version của cluster.
 
+{% hint style="info" %}
+<mark style="color:red;">**Chú ý:**</mark>&#x20;
+
+* <mark style="color:red;">**Để đảm bảo các VM trong các NodeGroup trên subnet có thể đi outbound ra internet và kết nối được tới Control Plane thì bạn bắt buộc phải thiết lập NAT Gateway. Cụ thể tham khảo thêm tại mục bên dưới.**</mark>
+{% endhint %}
+
 ***
 
 ### Khởi tạo Palo Alto hoặc Pfsense thay thế cho NAT Gateway <a href="#khoitaomotpublicclustervoiprivatenodegroup-khoitaopfsense" id="khoitaomotpublicclustervoiprivatenodegroup-khoitaopfsense"></a>
