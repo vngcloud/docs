@@ -5,7 +5,7 @@
 * Select the "**Create an Endpoint**" function
 * Enter the Endpoint information as required, including:
 
-&#x20;        \- **Service Package**: Endpoint package, users can choose one of three values: Standard, Medium, Large.
+&#x20;        \- **Service Package**: The Endpoint service package provides a default configuration of Standard package, users do not need to choose a service package
 
 &#x20;        \- **Endpoint Name**: Tên Endpoint
 
