@@ -22,7 +22,7 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 **Bước 3:** Lúc này, bạn cần thiết lập cấu hình cho **Palo Alto.** Cụ thể, bạn có thể chọn **Volume, IOPS, Network, Security Group** mong muốn. **Bạn cần lựa chọn VPC và Subnet giống với VPC và Subnet mà bạn lựa chọn sử dụng cho Cluster của bạn.** Ngoài ra bạn cũng cần chọn Một Server Group đã tồn tại hoặc chọn **Dedicated SOFT ANTI AFFINITY group** để chúng tôi tự động tạo một server group mới.
 
-**Bước 4:** Tiến hành thanh toán như các tài nguyên bình thường trên VNG Cloud.
+**Bước 4:** Tiến hành thanh toán như các tài nguyên bình thường trên VNG Cloud.&#x20;
 
 ***
 
@@ -34,7 +34,7 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI của Palo Alto. Bạn cần tạo cùng VPC và sử dụng subnet khác với subnet có priority là 1 khi khởi tạo Palo Alto
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+![](<../../../.gitbook/assets/3 (1).png>)
 
 **Bước 3**: Sau khi đăng nhập xong, bạn cần thực hiện thay đổi mật khẩu lần đầu. Hãy nhập mật khẩu mới theo mong muốn của bạn.
 
@@ -42,15 +42,15 @@ Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI c�
 
 * Chọn bút **Add**
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+![](<../../../.gitbook/assets/4 (1).png>)
 
 * Đặt tên cho **Zone**: **Inside** sau đó chọn **OK**
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+![](<../../../.gitbook/assets/5 (1).png>)
 
 * Làm tương tự đối với **Zone Outside**
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+![](<../../../.gitbook/assets/6 (1).png>)
 
 **Bước 5**: Cấu hình cho **External Interface**
 
@@ -58,64 +58,64 @@ Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI c�
 * Virtual Router: **default**
 * Security Zone: **Outside**
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+![](<../../../.gitbook/assets/7 (1).png>)
 
 * Chuyển sang **Tab IPv4** và chọn **Add** để nhập **Static IP** cho **External Interface**
 
-<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+![](../../../.gitbook/assets/8.png)
 
 * Để lấy thông tin IP này bạn vào phần **Network Interface** của **Palo Alto** để xem thông tin
 
-<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+![](../../../.gitbook/assets/9.png)
 
 * Chuyển sang tab **Advanced**, ở phần **MTU** bạn cần chỉnh thành **1400**
 
-<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+![](../../../.gitbook/assets/10.png)
 
 **Bước 6:** Thực hiện cấu hình tương tự cho các **Internal Interface**
 
-<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+![](../../../.gitbook/assets/11.png)
 
 * Tại tab **IPv4:** bạn tiến hành thiết lập **Static IP**
 
-<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+![](../../../.gitbook/assets/12.png)
 
 * Chuyển sang tab **Advanced**, ở phần **MTU** bạn chỉnh thành 1400
 
-<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+![](../../../.gitbook/assets/13.png)
 
 **Bước 7:** Tạo **static route**
 
 * Vào phần **Network** -> **Virtual Routers**-> Chọn **default**-> Chuyển sang mục **Static Routes**
 
-<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+![](../../../.gitbook/assets/14.png)
 
 * Thực hiện tạo 1 **route** như hình bên dưới
 
-<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+![](../../../.gitbook/assets/15.png)
 
 **Bước 8:** Tạo **Security Policy Rule**
 
 * Vào phần **Policies** -> **Security** ->**Add**
 * Tại tab **General**, bạn cần đặt tên cho rule
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+![](../../../.gitbook/assets/16.png)
 
 * Tại tab **Source**, thiết lập các thông tin như **Source Zone**, **Source Address**, **Source User, Source Device**
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+![](../../../.gitbook/assets/17.png)
 
 * Tại tab **Destination**, thiết lập các thông tin như **Destination Zone, Destination Address, Destination Device**
 
-<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+![](../../../.gitbook/assets/18.png)
 
 * Tại tab **Application**, thiết lập các thông tin như **Application, Depend On**
 
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+![](../../../.gitbook/assets/19.png)
 
 * Tại tab **Service/URL Category**, thiết lập các thông tin như **Service, URL Category**
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+![](../../../.gitbook/assets/20.png)
 
 * Tại tab **Actions**, thiết lập các thông tin như **Action, Log, Profile, Other Settings**
 
@@ -123,25 +123,25 @@ Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI c�
 
 * Vào phần **Policies** -> **NAT** -> **Add**
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
 
 * Tại tab **General** đặt tên cho **NAT rule**
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2.png" alt=""><figcaption></figcaption></figure>
 
 * Tại tab **Original Packe**t chọn **Source Zone, Destination Zone, Destination Interface, Service, Source Address, Destination Address**
 
-<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
 
 * Tạo tab **Translated Packet** thực hiện cấu hình như hình bên dưới
 
 Lưu ý: Cần thay đổi **IP Address** thành địa chỉ **Static IP** mà bạn đã cấu hình ở bước 6
 
-<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
 
 **Bước 10**: Tiến hành **Commit**
 
-<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/5.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -153,7 +153,7 @@ Sau khi Palo Alto được khởi tạo và cấu hình thành công, bạn cầ
 
 **Bước 2:** Tại thanh menu điều hướng, chọn **Tab Network/ Route table.**
 
-**Bước 3:** Chọn **Create Route table.**
+**Bước 3:** Chọn **Create Route table.**&#x20;
 
 **Bước 4:** Nhập tên mô tả cho Route table. Tên Route table có thể bao gồm các chữ cái (a-z, A-Z, 0-9, '\_', '-'). Độ dài dữ liệu đầu vào nằm trong khoảng từ 5 đến 50. Nó không được bao gồm khoảng trắng ở đầu hoặc ở cuối.
 
@@ -163,14 +163,14 @@ Sau khi Palo Alto được khởi tạo và cấu hình thành công, bạn cầ
 
 **Bước 7:** Chọn <img src="https://docs-admin.vngcloud.vn/download/thumbnails/73762068/image2024-4-16_15-40-3.png?version=1&#x26;modificationDate=1713256805000&#x26;api=v2" alt="" data-size="line">tại Route table vừa tạo sau đó chọn **Edit Routes.**
 
-**Bước 8:** Tại phần thêm mới **Route** hãy nhập vào các thông tin:
+**Bước 8:** Tại phần thêm mới **Route** hãy nhập vào các thông tin:&#x20;
 
 * Đối với Destination, hãy nhập **Destination CIDR là 0.0.0.0/0**
 * Đối với Target, hãy nhập **Target CIDR là địa chỉ IP Network Interface 2 của Palo Alto.**
 
 Ví dụ:
 
-<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -178,4 +178,4 @@ Ví dụ:
 
 * Tiến hành ping 8.8.8.8 hoặc google.com
 
-<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/7.png" alt=""><figcaption></figcaption></figure>

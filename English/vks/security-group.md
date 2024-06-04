@@ -1,45 +1,45 @@
 # Security Group
 
-Security Groups play a crucial role in safeguarding Kubernetes clusters by controlling inbound and outbound traffic to and from the cluster's nodes. VKS, the Kubernetes service on VNG Cloud, implements default Security Groups to ensure the secure and efficient operation of clusters. These default Security Groups are automatically created during cluster initialization, simplifying the deployment process and providing initial protection for the cluster.
+Security Group đóng vai trò như một firewall giúp bạn kiểm soát lưu lượng truy cập ra vào máy chủ (VM). Trên hệ thống VKS, để đảm bảo cluster hoạt động an toàn và hiệu quả, các Security Group mặc định được thiết lập để cho phép các truy cập cần thiết cho hoạt động nội bộ của cluster. Việc tự động tạo Security Group giúp đơn giản hóa quá trình triển khai cluster và đảm bảo rằng cluster được bảo vệ ngay từ đầu. Cụ thể, khi bạn thực hiện khởi tạo một Cluser, chúng tôi sẽ tự động khởi tạo một vài Security Group với các thông số như sau:&#x20;
 
-### **Default Security Groups in VKS Clusters**
+### Security group mặc định được tạo tự động cho tất cả Cluster
 
-When you create a cluster on VKS, two default Security Groups are automatically created:
+Mỗi Cluster được tạo ra trong hệ thống VKS, chúng tôi sẽ tự động tạo một Security Group. Security group này sẽ bao gồm:
 
 * Inbound:
 
-<table><thead><tr><th width="114">Protocol</th><th width="83">Ether type</th><th width="140">Port range</th><th width="215">Source</th><th>Description</th></tr></thead><tbody><tr><td>TCP</td><td>IPv4</td><td>30000-32767</td><td>The CIDR of the VPC used for your Cluster</td><td>Security group rule used for TCP Node Port Services</td></tr><tr><td>UDP</td><td>IPv4</td><td>30000-32767</td><td>The CIDR of the VPC used for your Cluster</td><td>Security group rule used for UDP Node Port Services</td></tr><tr><td>TCP</td><td>IPv4</td><td>10250</td><td>The External IP of a Load Balancer used for your Cluster.</td><td>Security group rule used for Kubelet API control-plane</td></tr><tr><td>TCP</td><td>IPv4</td><td>10250</td><td>The CIDR of the VPC used for your Cluster</td><td>Security group rule used for Kubelet API control-plane</td></tr><tr><td>TCP</td><td>IPv4</td><td>179</td><td>The CIDR of the VPC used for your Cluster</td><td>Security group rule used for Kubelet API control-plane</td></tr><tr><td>4</td><td>IPv4</td><td>1-65535</td><td>The CIDR of the VPC used for your Cluster</td><td>Security group rule used for Calico IP-in-IP</td></tr><tr><td>TCP</td><td>IPv4</td><td>5473</td><td>The CIDR of the VPC used for your Cluster</td><td>Security group rule used for Calico Typha</td></tr></tbody></table>
+<table><thead><tr><th width="114">Protocol</th><th width="83">Ether type</th><th width="140">Port range</th><th width="215">Source</th><th>Ý nghĩa</th></tr></thead><tbody><tr><td>TCP</td><td>IPv4</td><td>30000-32767</td><td>CIDR của VPC mà bạn sử dụng cho Cluster.</td><td>Security group rule sử dụng cho TCP Node Port Services</td></tr><tr><td>UDP</td><td>IPv4</td><td>30000-32767</td><td>CIDR của VPC mà bạn sử dụng cho Cluster.</td><td>Security group rule sử dụng cho UDP Node Port Services</td></tr><tr><td>TCP</td><td>IPv4</td><td>10250</td><td>External IP của Load Balancer sử dụng cho Cluster.</td><td>Security group rule sử dụng cho Kubelet API control-plane</td></tr><tr><td>TCP</td><td>IPv4</td><td>10250</td><td>CIDR của VPC mà bạn sử dụng cho Cluster.</td><td>Security group rule sử dụng cho Kubelet API control-plane</td></tr><tr><td>TCP</td><td>IPv4</td><td>179</td><td>CIDR của VPC mà bạn sử dụng cho Cluster.</td><td>Security group rule sử dụng cho Kubelet API control-plane</td></tr><tr><td>4</td><td>IPv4</td><td>1-65535</td><td>CIDR của VPC mà bạn sử dụng cho Cluster.</td><td>Security group rule sử dụng cho Calico IP-in-IP</td></tr><tr><td>TCP</td><td>IPv4</td><td>5473</td><td>CIDR của VPC mà bạn sử dụng cho Cluster.</td><td>Security group rule sử dụng cho Calico Typha</td></tr></tbody></table>
 
 * Outbound
 
-<table><thead><tr><th width="114">Protocol</th><th width="131">Ether type</th><th width="126">Port range</th><th width="125">Destination</th><th>Description</th></tr></thead><tbody><tr><td>ANY</td><td>IPv4</td><td>0-65535</td><td>0.0.0.0/0</td><td>Default rule of all Security group</td></tr><tr><td>ANY</td><td>IPv6</td><td>0-65535</td><td>::/0</td><td>Default rule of all Security group</td></tr></tbody></table>
+<table><thead><tr><th width="114">Protocol</th><th width="131">Ether type</th><th width="126">Port range</th><th width="125">Destination</th><th>Ý nghĩa</th></tr></thead><tbody><tr><td>ANY</td><td>IPv4</td><td>0-65535</td><td>0.0.0.0/0</td><td>Rule mặc định của tất cả Security group</td></tr><tr><td>ANY</td><td>IPv6</td><td>0-65535</td><td>::/0</td><td>Rule mặc định của tất cả Security group</td></tr></tbody></table>
 
-### Automatically created using VNGCLOUD Controller Manager
+### Security group được tạo tự động bởi VNGCLOUD Controller Manager&#x20;
 
-When you integrate Network Load Balancer (NLB) with your Kubernetes cluster on VKS using VNGCloud Controller Manager, a Security Group is automatically created to facilitate secure communication between the NLB and the cluster components. Key Features of the Automatically Created Security Group:
-
-* Inbound:
-
-<table><thead><tr><th width="207">Protocol</th><th width="108">Ether type</th><th>Port range</th><th>Source</th></tr></thead><tbody><tr><td>TCP, UDP hoặc ICMP</td><td>IPv4</td><td>Port của Service</td><td>The Subnet Mask of the Subnet used for your Cluster.</td></tr></tbody></table>
-
-* Outbound:
-
-<table><thead><tr><th width="113">Protocol</th><th width="115">Ether type</th><th width="126">Port range</th><th width="127">Destination</th><th>Description</th></tr></thead><tbody><tr><td>ANY</td><td>IPv4</td><td>0-65535</td><td>0.0.0.0/0</td><td>Default rule of all Security group</td></tr><tr><td>ANY</td><td>IPv6</td><td>0-65535</td><td>::/0</td><td>Default rule of all Security group</td></tr></tbody></table>
-
-### Automatically created using VNGCLOUD Ingress Controller
-
-When you integrate Application Load Balancer (ALB) with your Kubernetes cluster on VKS using VNGCloud Ingress Controller, a Security Group is automatically created to facilitate secure communication between the ALB and the cluster components. Key Features of the Automatically Created Security Group:
+Khi bạn sử dụng VNGCloud Controller Manager để tích hợp Network Load Balancer với Cluster trên hệ thống VKS, chúng tôi sẽ tự động tạo một Security Group. Security group này sẽ bao gồm:
 
 * Inbound:
 
-<table><thead><tr><th width="141">Protocol</th><th width="117">Ether type</th><th>Port range</th><th>Source</th></tr></thead><tbody><tr><td>TCP</td><td>IPv4</td><td>Port of Service</td><td>The Subnet Mask of the Subnet used for your Cluster.</td></tr></tbody></table>
+<table><thead><tr><th width="207">Protocol</th><th width="108">Ether type</th><th>Port range</th><th>Source</th></tr></thead><tbody><tr><td>TCP, UDP hoặc ICMP</td><td>IPv4</td><td>Port của Service</td><td>Subnet Mask của Subnet mà bạn sử dụng cho Cluster.</td></tr></tbody></table>
 
 * Outbound:
 
-<table><thead><tr><th width="105">Protocol</th><th width="109">Ether type</th><th width="122">Port range</th><th width="162">Destination</th><th>Description</th></tr></thead><tbody><tr><td>ANY</td><td>IPv4</td><td>0-65535</td><td>0.0.0.0/0</td><td>Default rule of all Security group</td></tr><tr><td>ANY</td><td>IPv6</td><td>0-65535</td><td>::/0</td><td>Default rule of all Security group</td></tr></tbody></table>
+<table><thead><tr><th width="113">Protocol</th><th width="115">Ether type</th><th width="126">Port range</th><th width="127">Destination</th><th>Ý nghĩa</th></tr></thead><tbody><tr><td>ANY</td><td>IPv4</td><td>0-65535</td><td>0.0.0.0/0</td><td>Rule mặc định của tất cả Security group</td></tr><tr><td>ANY</td><td>IPv6</td><td>0-65535</td><td>::/0</td><td>Rule mặc định của tất cả Security group</td></tr></tbody></table>
+
+### Security group được tạo tự động bởi VNGCLOUD Ingress Controller
+
+Khi bạn sử dụng VNGCloud Ingress Controller để tích hợp Application Load Balancer với Cluster trên hệ thống VKS, chúng tôi sẽ tự động tạo một Security Group. Security group này sẽ bao gồm:
+
+* Inbound:
+
+<table><thead><tr><th width="141">Protocol</th><th width="117">Ether type</th><th>Port range</th><th>Source</th></tr></thead><tbody><tr><td>TCP</td><td>IPv4</td><td>Port của Service</td><td>Subnet Mask của Subnet mà bạn sử dụng cho Cluster.</td></tr></tbody></table>
+
+* Outbound:
+
+<table><thead><tr><th width="105">Protocol</th><th width="109">Ether type</th><th width="122">Port range</th><th width="162">Destination</th><th>Ý nghĩa</th></tr></thead><tbody><tr><td>ANY</td><td>IPv4</td><td>0-65535</td><td>0.0.0.0/0</td><td>Rule mặc định của tất cả Security group</td></tr><tr><td>ANY</td><td>IPv6</td><td>0-65535</td><td>::/0</td><td>Rule mặc định của tất cả Security group</td></tr></tbody></table>
 
 {% hint style="info" %}
-**Note:**
+**Chú ý:**
 
-* Default Security Groups are set up to meet the basic security needs of the cluster. If you edit or delete the Security Groups created for the cluster, it may result in connectivity and access issues between nodes in the cluster or the cluster may not function correctly or may not even start. To ensure the stability and security of the cluster, the system will automatically reset Security Groups to default settings after every fixed period of time.
+* Các Security Group mặc định được thiết lập để đáp ứng các nhu cầu bảo mật cơ bản của cluster. Nếu bạn sửa hoặc xóa các Security Group được tạo sẵn cho cluster, có thể dẫn đến các vấn đề về kết nối và truy cập giữa các node trong cluster hoặc cluster có thể không hoạt động chính xác hoặc thậm chí không thể khởi động được. Để đảm bảo tính ổn định và bảo mật của cluster, hệ thống sẽ tự động reset các Security Group về cài đặt mặc định sau mỗi khoảng thời gian cố định.
 {% endhint %}

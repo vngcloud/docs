@@ -161,10 +161,15 @@ metadata:
   name: nginx-ingress
 spec:
   ingressClassName: "vngcloud"
+  defaultBackend:
+    service:
+      name: nginx-service
+      port:
+        number: 80
   rules:
     - http:
         paths:
-          - path: /path1
+          - path: /4
             pathType: Exact
             backend:
               service:
@@ -185,10 +190,10 @@ Sau khi bạn đã thực hiện triển khai Ingress , Chúng tôi sẽ tự đ
 
 Ví dụ:
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Chú ý:**
+Chú ý:
 
 * Hiện tại Ingress chỉ hỗ trợ duy nhất TLS port 443 và là điểm kết thúc cho TLS (TLS termination). TLS Secret phải chứa các trường với tên key là tls.crt và tls.key, đây chính là certificate và private key để sử dụng cho TLS. Nếu bạn muốn sử dụng Certificate cho một host, hãy thực hiện tải lên Certificate theo hướng dẫn tại \[Upload a certificate] và sử dụng chúng như một annotation. Ví dụ:
 
@@ -214,7 +219,7 @@ spec:
     - host: host.example.com
       http:
         paths:
-          - path: /path1
+          - path: /4
             pathType: Exact
             backend:
               service:
@@ -228,7 +233,7 @@ spec:
 
 #### **2.Nếu bạn đã có sẵn một Application Load Balancer** đã khởi tạo trước đó trên hệ thống vLB và bạn muốn tái sử dụng ALB cho cluster của bạn. <a href="#ingressforanapplicationloadbalancer-2.neubandacosanmotapplicationloadbalancerdakhoitaotruocdotrenhet" id="ingressforanapplicationloadbalancer-2.neubandacosanmotapplicationloadbalancerdakhoitaotruocdotrenhet"></a>
 
-Lúc này, khi tạo một Ingress, bạn hãy nhập thông tin Load Balancer ID vào annotation <mark style="color:red;">**vks.vngcloud.vn/load-balancer-id**</mark> hoặc Load Balancer Name vào annotation <mark style="color:red;">**vks.vngcloud.vn/load-balancer-name**</mark>**.** Ví dụ, trong trường hợp này tôi đã tái sử dụng ALB có ID = lb-2b9d8974-3760-4d60-8203-9671f229fb96:
+Lúc này, khi tạo một Ingress, bạn hãy nhập thông tin Load Balancer ID vào annotation <mark style="color:red;">**vks.vngcloud.vn/load-balancer-id**</mark> hoặc Load Balancer Name vào annotation <mark style="color:red;">**vks.vngcloud.vn/load-balancer-name.**</mark> Ví dụ, trong trường hợp này tôi đã tái sử dụng ALB có ID = lb-2b9d8974-3760-4d60-8203-9671f229fb96:
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -253,7 +258,7 @@ spec:
     - host: host.example.com
       http:
         paths:
-          - path: /path1
+          - path: /4
             pathType: Exact
             backend:
               service:
@@ -308,7 +313,7 @@ spec:
     - host: example.com
       http:
         paths:
-          - path: /path1
+          - path: /1
             pathType: Exact
             backend:
               service:
@@ -317,7 +322,7 @@ spec:
                   number: 80
     - http:
         paths:
-          - path: /path2
+          - path: /2
             pathType: Exact
             backend:
               service:
@@ -333,7 +338,7 @@ spec:
   * **metadata:** Thông tin mô tả Ingress, bao gồm tên, annotations.
   * **spec:** Cấu hình Ingress, bao gồm các rule route traffic theo điều kiện của các incoming request. Tài nguyên Ingress chỉ hỗ trợ các rule để điều hướng HTTP traffic.
 
-Để biết thông tin chung về cách làm việc với tài nguyên Ingress (Ingress Yaml file), hãy xem tại \[Configure for an Application Load Balancer].
+Để biết thông tin chung về cách làm việc với tài nguyên Ingress (Ingress Yaml file), hãy xem tại \[Configure for an Application Load Balancer]).
 
 ***
 
@@ -394,4 +399,4 @@ Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao 
 
 Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.129/](http://180.93.181.129/)
 
-<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

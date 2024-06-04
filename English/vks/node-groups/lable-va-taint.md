@@ -1,4 +1,4 @@
-# Lable and Taint
+# Lable và Taint
 
 ### Lable <a href="#label" id="label"></a>
 
@@ -18,7 +18,7 @@ Label là một tính năng quan trọng trong Kubernetes, được sử dụng 
 
 ### **Tạo Lable**
 
-Để tạo Lable cho một Node Group, bạn hãy thực hiện theo hướng dẫn sau:
+Để tạo Lable cho một Node Group, bạn hãy thực hiện theo hướng dẫn sau:&#x20;
 
 **Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
 
@@ -26,7 +26,7 @@ Label là một tính năng quan trọng trong Kubernetes, được sử dụng 
 
 **Bước 3:** Tại màn hình khởi tạo Node Group, chúng tôi đã thiết lập thông tin cho Node Group của bạn. Bạn có thể giữ các giá trị mặc định này hoặc điều chỉnh các thông số mong muốn cho Node Group của bạn. Tại mục **Node Group Metadata Setting,** bạn cần:
 
-* Nhập key cho lable của bạn. Key phải bắt đầu và kết thúc bằng chữ hoặc số và bao gồm các ký tự a-z, A-Z, 0-9, -, \_, . tối đa 253 ký tự. Ngoài ra bạn có thể nhập key là một DNS subdomain ví dụ: [example.com/my-app](http://example.com/my-app)
+* Nhập key cho lable của bạn. Key phải bắt đầu và kết thúc bằng chữ hoặc số và bao gồm các ký tự a-z, A-Z, 0-9, -, \_, . tối đa 253 ký tự. Ngoài ra bạn có thể nhập key là một DNS subdomain ví dụ:  [example.com/my-app](http://example.com/my-app)
 * Nhập value cho key tương ứng này.
 
 **Bước 5:** Chọn **Create Node Group.** Hãy chờ vài phút để chúng tôi khởi tạo Node Group của bạn, trạng thái của Node Group lúc này là **Creating**.
@@ -58,7 +58,7 @@ worker2   Ready     <none>   1d      v1.13.0        ...,kubernetes.io/hostname=w
 
 nodeSelector là một tham số được sử dụng trong PodSpec để chỉ định rằng Pod chỉ nên được lên lịch trên các Node có lable cụ thể. Điều này hữu ích khi bạn muốn chạy Pod trên các Node có tài nguyên hoặc thuộc tính cụ thể.
 
-* Tạo tệp tin **my-pod.yaml** chứa nội dung như sau:
+* Tạo tệp tin **my-pod.yaml** chứa nội dung như sau:&#x20;
 
 ```
 apiVersion: v1
@@ -83,19 +83,19 @@ kubectl -f apply my-pod.yaml
 
 ### Taint
 
-Taint là một tính năng quan trọng trong Kubernetes, đóng vai trò như một cơ chế để đánh dấu các Node và kiểm soát việc lên lịch Pod trên những Node đó. Khác với Label thông thường, Taint được sử dụng để chỉ định các thuộc tính đặc biệt của Node và thực thi các hành động cụ thể khi Pod không đáp ứng các điều kiện được xác định bởi Taint. Cụ thể:
+Taint là một tính năng quan trọng trong Kubernetes, đóng vai trò như một cơ chế để đánh dấu các Node và kiểm soát việc lên lịch Pod trên những Node đó. Khác với Label thông thường, Taint được sử dụng để chỉ định các thuộc tính đặc biệt của Node và thực thi các hành động cụ thể khi Pod không đáp ứng các điều kiện được xác định bởi Taint. Cụ thể:&#x20;
 
-Cụ thể:
+&#x20;Cụ thể:
 
 * **Mỗi Taint bao gồm:**
-  * Key (khoá) là một chuỗi ký tự dùng để xác định tên của taint.
+  * Key (khoá) là một chuỗi ký tự dùng để xác định tên của taint.&#x20;
   * Value (giá trị) là một chuỗi ký tự tùy chọn, cung cấp thông tin chi tiết về taint.
-  * Effect:
+  * Effect:&#x20;
     * **NoSchedule:** Ngăn Pod không có Toleration tương ứng được lên lịch trên Node.
     * **NoExecute:** Cho phép Pod được lên lịch trên Node nhưng Pod sẽ không được thực thi.
     * **PreferNoSchedule:** Kubernetes sẽ cố gắng ưu tiên không lên lịch Pod lên Node có Taint này.
 * **Key và value phải tuân theo các quy tắc đặt tên:** Key và value không được chứa dấu khoảng trắng, ký tự đặc biệt ngoài (-, \_,.).
-* **Toleration:** Để Pod có thể được lên lịch và chạy trên Node có Taint, Pod cần có Toleration tương ứng. Toleration được khai báo trong PodSpec bằng cách sử dụng `tolerations` field. Ví dụ:
+* **Toleration:** Để Pod có thể được lên lịch và chạy trên Node có Taint, Pod cần có Toleration tương ứng. Toleration được khai báo trong PodSpec bằng cách sử dụng `tolerations` field. Ví dụ:&#x20;
 
 ```
 tolerations: - key: node.role.kubernetes.io/master effect: NoSchedule
@@ -109,7 +109,7 @@ tolerations: - key: node.role.kubernetes.io/master effect: NoSchedule
 
 ### **Tạo Taint**
 
-Để tạo Taint cho một Node Group, bạn hãy thực hiện theo hướng dẫn sau:
+Để tạo Taint cho một Node Group, bạn hãy thực hiện theo hướng dẫn sau:&#x20;
 
 **Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
 
@@ -117,7 +117,7 @@ tolerations: - key: node.role.kubernetes.io/master effect: NoSchedule
 
 **Bước 3:** Tại màn hình khởi tạo Node Group, chúng tôi đã thiết lập thông tin cho Node Group của bạn. Bạn có thể giữ các giá trị mặc định này hoặc điều chỉnh các thông số mong muốn cho Node Group của bạn. Tại mục **Node Group Metadata Setting,** bạn cần:
 
-* Nhập key cho taint của bạn. Key phải bắt đầu và kết thúc bằng chữ hoặc số và bao gồm các ký tự a-z, A-Z, 0-9, -, \_, . tối đa 253 ký tự. Ngoài ra bạn có thể nhập key là một DNS subdomain ví dụ: [example.com/my-app](http://example.com/my-app)
+* Nhập key cho taint của bạn. Key phải bắt đầu và kết thúc bằng chữ hoặc số và bao gồm các ký tự a-z, A-Z, 0-9, -, \_, . tối đa 253 ký tự. Ngoài ra bạn có thể nhập key là một DNS subdomain ví dụ:  [example.com/my-app](http://example.com/my-app)
 * Nhập value cho key tương ứng này.
 * Chọn 1 trong 3 loại effect: **NoSchedule, NoExecute, PreferNoSchedule.**
 

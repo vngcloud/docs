@@ -220,7 +220,7 @@ spec:
 
 Lúc này, bạn hãy nhập thông tin Load Balancer ID vào annotation <mark style="color:red;">**vks.vngcloud.vn/load-balancer-id**</mark> hoặc nhập thông tin Load Balancer Name vào annotation <mark style="color:red;">**vks.vngcloud.vn/load-balancer-name**</mark>
 
-* Ví dụ dưới đây là tập tin YAML mẫu để triển khai Nginx với External LoadBalancer sử dụng vngcloud-controller-manager để tự động expose dịch vụ tới internet bằng bộ cân bằng tải L4 sử dụng một NLB có sẵn với ID = lbp-ddbf9313-3f4c-471b-afd5-f6a3305159fc
+* Ví dụ dưới đây là tập tin YAML mẫu để triển khai Nginx với External LoadBalancer sử dụng vngcloud-controller-manager để tự động expose dịch vụ tới internet bằng bộ cân bằng tải L4 sử dụng một NLB có sẵn với ID = lb-2b9d8974-3760-4d60-8203-9671f229fb96
 
 ```
 apiVersion: apps/v1
@@ -250,6 +250,7 @@ metadata:
   annotations:
     vks.vngcloud.vn/load-balancer-name: "my-nginx-service"                  # Name of the load balancer
     vks.vngcloud.vn/package-id: "lbp-ddbf9313-3f4c-471b-afd5-f6a3305159fc"  # ID of the load balancer package
+    vks.vngcloud.vn/load-balancer-id: "lb-2b9d8974-3760-4d60-8203-9671f229fb96"
 spec:
   selector:
     app: nginx
@@ -308,7 +309,7 @@ spec:
   * **metadata:** Thông tin mô tả Ingress, bao gồm tên, annotations.
   * **spec:** Cấu hình điều kiện của các incoming request.
 
-Để biết thông tin chung về cách làm việc với **vngcloud-controller-manager,**, hãy xem tại \[Configure for a Network Load Balancer].
+Để biết thông tin chung về cách làm việc với **vngcloud-controller-manager,**, hãy xem tại \[Configure for a Network Load Balancer]
 
 * Deploy Service này bằng lệch:
 
@@ -342,7 +343,7 @@ pod/nginx-app-7f45b65946-bmrcf   0/1     ContainerCreating   0          2s    <n
 
 Lúc này, hệ thống vLB sẽ tự động tạo một LB tương ứng cho nginx app đã deployment, ví dụ:
 
-<figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3: Để truy cập vào app nginx vừa export, bạn có thể sử dụng URL với định dạng:**
 
@@ -354,4 +355,4 @@ Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao 
 
 Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.20/](http://180.93.181.20/)
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
