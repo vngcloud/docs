@@ -92,4 +92,24 @@ After filling in the necessary information to initialize the Server, it is neces
 
 On the Server list screen, you can see the launch status. It takes a short time for a Server to launch. Its initial state is pending. After the Server starts, its status changes to running. Note that it may take a few minutes for the Server to be ready for you to connect to it. Check if your Server has passed the status check; you can see this information in the Check Status column.
 
-\
+***
+
+### Searching for Created Servers
+
+In cases where users create many virtual machines (VMs), VNG Cloud provides a tool to quickly search for the virtual machines that users have previously created.
+
+**Step 1:** Open the vServer homepage at: [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview)
+
+**Step 2:** Select the **Servers** section to go to the screen listing the created virtual machines.
+
+**Step 3:** Select the **"Search with Suggestion"** box to choose the criteria to search for the specific virtual machine you need:
+
+* **Search by Name**: Search by the name of the Server.
+* **Search by Private IP**: Search by the private IP of the Server.
+* **Search by Public IP**: Search by the public IP of the Server.
+* **Search by Subnet ID**: Search by the Subnet ID where the Server was created.
+* **Search by VPC ID**: Search by the VPC ID where the Server was created.
+* **Search by Tag**: Search by the Tag assigned to the Server at creation.
+
+**Step 4:** Enter the required search information and confirm the search to allow the system to automatically find the servers matching the keywords.
+
