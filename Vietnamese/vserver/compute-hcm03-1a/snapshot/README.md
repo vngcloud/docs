@@ -6,9 +6,11 @@ Mỗi snapshot chứa đầy đủ thông tin cần thiết để khôi phục d
 
 Snapshot cũng hỗ trợ mã hóa dữ liệu một cách toàn diện, đảm bảo tính bảo mật của dữ liệu lưu trữ và giúp tuân thủ các yêu cầu về bảo mật và quyền riêng tư. Bạn có thể tạo snapshot cho các ổ đĩa đã được mã hóa và thể tạo ổ đĩa mới từ các snapshot đã được mã hóa.
 
-Tại VNG Cloud, chúng tôi hỗ trợ việc tạo Snapshot cho cả Server và Volume, giúp đơn giản hóa quá trình tạo Snapshot và phù hợp với mọi nhu cầu sử dụng của bạn. Khi đã tạo Snapshot cho máy chủ ảo và ổ đĩa ảo, bạn có thể sử dụng tính năng Roll Back của chúng tôi để khôi phục lại trạng thái của máy ảo và ổ đĩa ảo đến thời điểm Snapshot được tạo."
+Tại VNG Cloud, chúng tôi hỗ trợ việc tạo Snapshot cho cả Server và Volume, giúp đơn giản hóa quá trình tạo Snapshot và phù hợp với mọi nhu cầu sử dụng của bạn. Khi đã tạo Snapshot cho máy chủ ảo và ổ đĩa ảo, bạn có thể sử dụng tính năng Roll Back của chúng tôi để khôi phục lại trạng thái của máy ảo và ổ đĩa ảo đến thời điểm Snapshot được tạo.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64553870/image2023-10-6_10-10-11.png?version=1&#x26;modificationDate=1696561811000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+Bên cạnh việc khôi phục Roll Back máy chủ từ file snapshot, VNG Cloud cho phép tạo máy chủ mới dựa trên file Snapshot đã tạo. Từ đó, chúng tôi hỗ trợ việc chia sẻ và sử dụng file Snapshot cho người dùng khác trong VNG Cloud, mang đến cho người dùng những trải nghiệm quản lý hệ thống tốt hơn.
+
+<figure><img src="../../../.gitbook/assets/image (382).png" alt="" width="563"><figcaption></figcaption></figure>
 
 
 
@@ -33,10 +35,6 @@ Tổng dung lượng lưu trữ cần thiết cho ba ảnh chụp nhanh ở giai
 Như vậy, bạn đã tạo một chuỗi các ảnh chụp tăng dần, mỗi ảnh chụp chỉ chứa những thay đổi so với ảnh chụp trước đó, giúp tiết kiệm không gian lưu trữ và làm cho quá trình sao lưu và phục hồi dữ liệu hiệu quả hơn.
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/64553870/image2023-10-3_21-18-15.png?version=1&#x26;modificationDate=1696342696000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
-
-
 
 ***
 
