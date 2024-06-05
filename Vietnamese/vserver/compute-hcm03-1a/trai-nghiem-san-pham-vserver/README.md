@@ -93,3 +93,24 @@ Sau khi điền các thông tin cần thiết để khởi tạo Server, cần x
 Trên màn hình danh sách Server, bạn có thể xem trạng thái khởi chạy. Phải mất một thời gian ngắn để một Server khởi chạy, trạng thái ban đầu của nó đang chờ xử lý. Sau khi Server bắt đầu, trạng thái của nó chuyển sang đang chạy. Lưu ý rằng có thể mất vài phút để Server sẵn sàng để bạn có thể kết nối với nó. Kiểm tra xem Server của bạn đã vượt qua kiểm tra trạng thái chưa; bạn có thể xem thông tin này trong cột Kiểm tra trạng thái.
 
 Sau khi khởi tạo thành công Server, và trạng thái Server là **Active**, bạn có thể thực hiện theo hướng dẫn [{Đăng nhập vào Server}](../server/ket-noi-vao-may-chu-ao/) để thực hiện sử dụng Server của mình.
+
+***
+
+### Tìm kiếm Server đã tạo
+
+Trong trường hợp người dùng tạo rất nhiều máy chủ ảo (VM), thì VNG Cloud cung cấp công cụ hỗ trợ tìm kiếm các máy chủ ảo mà người dùng đã tạo trước một cách nhanh chóng.
+
+**Bước 1:** Mở trang chủ vServer tại: [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview)
+
+**Bước 2:** Chọn mục Servers để đến màn hình danh sách các máy chủ ảo đã tạo;
+
+**Bước 3:** Chọn vào ô "Search with Suggestion" để chọn tiêu chí để search đúng máy ảo cần tìm:
+
+* Search by Name: Tìm theo tên của Server;
+* Search by Private IP: Tìm theo private IP của Server;
+* Search by Public IP: Tìm theo public IP của Server;
+* Search by Subnet ID: Tìm theo Subney ID đã tạo Server;
+* Search by VPC ID: Tìm thao VPC ID đả tạo Server;
+* Search by Tag: Tìm Tag của Server lúc khởi tạo;
+
+**Bước 4:** Điền thông tin cần tìm kiếm và xác nhận tìm để hệ thống tự động tra máy chủ phù hợp với từ khóa.

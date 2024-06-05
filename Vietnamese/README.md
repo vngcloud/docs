@@ -18,9 +18,9 @@ Chào mừng các bạn đến với trang hỗ trợ khách hàng của VNG Clo
 
 {% tabs %}
 {% tab title="Infrastructure as a Service " %}
-[**vServer - Hệ thống máy chủ ảo thông minh**](broken-reference)
+[**vServer - Hệ thống máy chủ ảo thông minh**](vserver/)
 
-* [vServer HCM03-1A](broken-reference)
+* [vServer HCM03-1A](vserver/compute-hcm03-1a/vserver-la-gi.md)
 
 [**vStorage - Bộ giải pháp lưu trữ toàn diện trên đám mây**](vstorage/)
 
