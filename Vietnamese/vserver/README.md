@@ -8,3 +8,26 @@ _**Xem hướng dẫn khởi tạo máy chủ nhanh chống với vServer tại 
 
 {% embed url="https://www.youtube.com/watch?v=5T3Ryuj4qQg" %}
 
+### VNG Cloud cung cấp các Region:
+
+* <mark style="color:red;">**HAN-01**</mark> : Tại Hà Nội
+* <mark style="color:red;">**HCM-03**</mark> : Tại Hồ Chí Minh
+
+***
+
+## <mark style="color:red;">Region HAN-01</mark>
+
+### Các Dịch vụ được hỗ trợ trên Region HAN-01:
+
+1/ Compute: Khởi tạo/resize VM;
+
+2/ BlockStore: Khởi tạo Volume, Image, Backups, Snapshots;
+
+3/ Load Balancing: Load Balancers;
+
+4/ Virtual network: Network ACL, Network Interfaces, Route tables, Security Groups, Floating IPs, VIP (virtual IP address), VPC Peering, Interconnects;
+
+***
+
+## <mark style="color:red;">Region HCM-03</mark>
+

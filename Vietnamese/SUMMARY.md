@@ -2,7 +2,7 @@
 
 * [🇻🇳 VNG Cloud Help Center](README.md)
 * [vServer](vserver/README.md)
-  * [Compute (HCM03-1A)](vserver/compute-hcm03-1a/README.md)
+  * [Compute](vserver/compute-hcm03-1a/README.md)
     * [vServer là gì?](vserver/compute-hcm03-1a/vserver-la-gi.md)
     * [Thông báo và cập nhật](vserver/compute-hcm03-1a/thong-bao-va-cap-nhat/README.md)
       * [2024](vserver/compute-hcm03-1a/thong-bao-va-cap-nhat/2024.md)
