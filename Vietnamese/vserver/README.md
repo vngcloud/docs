@@ -17,7 +17,7 @@ _**Xem hướng dẫn khởi tạo máy chủ nhanh chống với vServer tại 
 
 ## <mark style="color:red;">Region HAN-01</mark>
 
-### Các Dịch vụ được hỗ trợ trên Region HAN-01:
+### Các dịch vụ được hỗ trợ trên Region HAN-01:
 
 1/ Compute: Khởi tạo/resize VM;
 
@@ -30,4 +30,18 @@ _**Xem hướng dẫn khởi tạo máy chủ nhanh chống với vServer tại 
 ***
 
 ## <mark style="color:red;">Region HCM-03</mark>
+
+Các dịch vụ được hỗ trợ trên Region HCM-03:
+
+1/ Network: Tạo VPC, Floating IP, External Interface, Endpoint, Security Groups, Virtual IP Addresses, Route tables, Peering, Bandwidths, Interconnects, Network ACL;
+
+2/ Server: Tạo VM, Placement Groups, SSH Keys, System Images, Danh sách các Flavors;
+
+3/ BlockStore: Tạo Volumes, danh sách các loại Volumes và các Images, Backups, Snapshots;
+
+4/ Load Balancing: Tạo Load Balancer, danh sách các LB Packages và tải lên chứng chỉ;
+
+5/ Container: Tạo Kubernetes Clusters, danh sách các Persistent Vloumes;
+
+6/ Các dịch vụ khác như: Container Registry, Auto Scales, Billings.
 
