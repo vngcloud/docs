@@ -4,6 +4,8 @@ Trước khi thực hiện cài đặt agent trên các hệ điều hành mà c
 
 #### Cài đặt
 
+{% tabs %}
+{% tab title="Filebeat" %}
 * Tải image
 
 | <pre><code>docker pull docker.elastic.co/beats/filebeat:8.7.0
@@ -11,10 +13,6 @@ Trước khi thực hiện cài đặt agent trên các hệ điều hành mà c
 | --------------------------------------------------------------------------- |
 
 ***
-
-| <pre><code>docker pull docker.elastic.co/logstash/logstash-oss:8.6.2
-</code></pre> |
-| ---------------------------------------------------------------------------------- |
 
 * [Tải certificate ](https://vngctech.atlassian.net/wiki/spaces/VP/pages/847970312)lấy thông tin xác thực user
 * Nếu sử dụng script chuẩn bị sẵn trong thư mục tải về, chạy lệnh:
@@ -130,8 +128,14 @@ logging.files:
   keepfiles: 7
   permissions: 0644
 </code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+{% endtab %}
 
-***
+{% tab title="Logstash" %}
+* Tải image
+
+| <pre><code><strong>docker pull docker.elastic.co/logstash/logstash-oss:8.6.2
+</strong></code></pre> |
+| --------------------------------------------------------------------------------------------------- |
 
 | <ul><li>File <code>docker-compose.yml</code></li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>version: "3"
 services:
@@ -223,8 +227,16 @@ output {
       }
 }
 </code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+{% endtab %}
+{% endtabs %}
+
+***
 
 #### Quản trị
+
+{% tabs %}
+{% tab title="Filebeat" %}
+
 
 | <ul><li>Stop</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker stop filebeat
 </code></pre></td></tr></tbody></table><ul><li>Reload</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker kill --signal=HUP filebeat
@@ -243,8 +255,10 @@ output {
 </code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | <pre><code>docker rm filebeat
 </code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+{% endtab %}
 
-***
+{% tab title="Logstash" %}
+
 
 | <ul><li>Stop</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker stop logstash
 </code></pre></td></tr></tbody></table><ul><li>Reload</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker kill --signal=HUP logstash
@@ -263,5 +277,9 @@ output {
 </code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | <pre><code>docker rm logstash
 </code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+{% endtab %}
+{% endtabs %}
 
-Trước khi thực hiện cài đặt tác nhân trên các hệ điều hành mà chúng tôi hỗ trợ bên dưới, bạn cần tải xuống chứng chỉ theo hướng dẫn tại Khởi tạo Chứng chỉ. Thông báo hướng dẫn tác nhân thiết lập nằm trong tệp readme, hướng dẫn tập lệnh cũng nằm trong tệp tin chứng chỉ được tải về. Sử dụng thông tin này với các hướng dẫn bên dưới để hoàn thành việc thiết lập Agent for Log.
+***
+
+Trước khi thực hiện cài đặt tác nhân trên các hệ điều hành mà chúng tôi hỗ trợ bên dưới, bạn cần [khoi-tao-certificate.md](khoi-tao-certificate.md "mention"). Thông báo hướng dẫn tác nhân thiết lập nằm trong tệp readme, hướng dẫn tập lệnh cũng nằm trong tệp tin chứng chỉ được tải về. Sử dụng thông tin này với các hướng dẫn bên dưới để hoàn thành việc thiết lập Agent for Log.
