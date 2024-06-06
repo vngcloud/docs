@@ -11,7 +11,7 @@ description: >-
 
 Welcome to VNG Cloud's user guide page. Here you can easily find useful information about how to get start with VNG Cloud's products and services.
 
-<figure><img src=".gitbook/assets/VNG Cloud document.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/315615519_2319394748222909_5836880168315857009_n.jpg" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -28,13 +28,13 @@ Welcome to VNG Cloud's user guide page. Here you can easily find useful informat
 {% endtab %}
 
 {% tab title="Platform as a Service" %}
-[vMonitor Platform -Active & comprehensive system monitoring](vmonitor-platform.md)
+[vMonitor Platform -Active & comprehensive system monitoring](broken-reference)
 
 [vDB - Professional database management solution](vdb.md)
 
 [VKS - Container management with Kubernetes](vks/)
 
-[vCDN: Optimal content delivery network ](vcdn.md)
+[vCDN: Optimal content delivery network ](vcdn/)
 {% endtab %}
 
 {% tab title="Software as a Service" %}

@@ -47,7 +47,7 @@ Please check if you have made the container public. If not, access the project c
 
 ### \[vStorage] How can I connect vCDN and vStorage?
 
-Please configure the connection on the vCDN using the S3 Origin protocol as instructed in the [vCDN](../vcdn.md) guide.
+Please configure the connection on the vCDN using the S3 Origin protocol as instructed in the [vCDN](../vcdn/) guide.
 
 ### \[vStorage] How can I delete unused storage?
 
