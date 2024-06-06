@@ -41,7 +41,7 @@ Bạn cần sửa {phần trong ngoặc} trong các file bên dưới cho phù h
 kind: Namespace
 metadata:
   name: agent-vmonitor-platform
-</code></pre></td></tr></tbody></table><ul><li>File configmap.yml. Ví dụ như cấu hình dưới đây sẽ đẩy tất cả log của pod trong <strong>namespace web-app</strong> về hệ thống</li><li><code>${BOOTSTRAP_SERVERS}, ${TOPIC}</code> đọc tại file <a href="http://info.md/">info.md</a> thư mục certificate đã tải về.</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>apiVersion: v1
+</code></pre></td></tr></tbody></table><ul><li>File configmap.yml. Ví dụ như cấu hình dưới đây sẽ đẩy tất cả log của pod trong <strong>namespace web-app</strong> về hệ thống</li><li><code>{$BOOTSTRAP_SERVERS}, {$TOPIC}</code> đọc tại file <a href="http://info.md/">info.md</a> thư mục certificate đã tải về.</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>apiVersion: v1
 kind: ConfigMap
 metadata:
   name: filebeat
@@ -54,8 +54,8 @@ data:
         - {/var/log/pods/web-app*/*/*.log}
 
     output.kafka:
-      hosts: ${BOOTSTRAP_SERVERS}
-      topic: ${TOPIC}
+      hosts: {$BOOTSTRAP_SERVERS}
+      topic: {$TOPIC}
       partition.round_robin:
         reachable_only: false
       required_acks: 1
