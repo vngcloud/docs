@@ -20,7 +20,7 @@ kubectl apply -f daemonset.yml
 </code></pre> |
 | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-Để pod có thể dọc được log của các pod khác bạn cần sửa máy bạn cần disable selinux, vì cơ chế là agent đọc log lưu trên file. Trên [trang chủ k8s ](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)cũng chỉ định disable selinux với centos\
+Để log gent có thể dọc được log của các pod khác bạn cần sửa máy bạn cần disable selinux. Trên [trang chủ k8s ](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)cũng chỉ định disable selinux với centos\
 Trên các k8s node chạy lệnh:
 
 | <pre><code>setenforce 0
