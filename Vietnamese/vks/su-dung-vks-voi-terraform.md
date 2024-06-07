@@ -28,13 +28,13 @@ Bản thân Terraform không có giao diện người dùng đồ họa, thay v�
 
 ### **Tạo thư mục chứa Terraform file** trên thiết bị của bạn <a href="#quanlyvcontainervoiterraform-taothumucchuaterraformfilevataiexamplefiletuvngcloudrepo" id="quanlyvcontainervoiterraform-taothumucchuaterraformfilevataiexamplefiletuvngcloudrepo"></a>
 
-Sau khi tạo một **Service Account** với policy: **VKSFullAccess,** bạn cần tạo một thư mục trên thiết bị của bạn chứa các terraform file (main.tf, variable.tf) mà bạn có thể tải về từ VNG Cloud repo của chúng tôi tại [đây](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples).
+Sau khi tạo một **Service Account** với policy: **VKSFullAccess,** bạn cần tạo một các terraform file (main.tf, variable.tf) để làm việc với VKS. Bạn có thể tải các file có sẵn này của chúng tôi tại [đây](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples).
 
 ***
 
 ### **Cài đặt thông số trong Terraform file** <a href="#quanlyvcontainervoiterraform-caidatthongsotrongterraformfile" id="quanlyvcontainervoiterraform-caidatthongsotrongterraformfile"></a>
 
-* Trên file variable.tf, bạn cầm thêm thông tin Client\_ID và Client\_Secret đã tạo bên trên. Cụ thể, file variable.tf sẽ có cấu trúc như sau:
+* Trên file **variable.tf**, bạn hãy thêm thông tin Client\_ID và Client\_Secret đã tạo bên trên. Cụ thể, file variable.tf sẽ có cấu trúc như sau:
 
 ```markup
 variable "client_id" {
@@ -47,19 +47,19 @@ variable "client_secret" {
 }
 ```
 
-* Trên file main.tf, bạn cần có thể thêm data theo mẫu để tạo Cluster/ Node Group:
-  * Tạo Cluster my-vks-cluster và Node Group my-vks-node-group:
+* Trên file **main.tf**, bạn cần có thể thêm resource để tạo Cluster/ Node Group:
+  * Tạo Cluster my-vks-cluster và Node Group my-nodegroup độc lập:
 
 ```
 resource "vngcloud_vks_cluster" "primary" {
-  name      = "my-vks-cluster"
+  name      = "my-cluster"
   cidr      = "172.16.0.0/16"
   vpc_id    = "net-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
   subnet_id = "sub-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
 }
 
 resource "vngcloud_vks_cluster_node_group" "primary" {
-  name= "my-vks-node-group"
+  name= "my-nodegroup"
   ssh_key_id= "ssh-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
   cluster_id= vngcloud_vks_cluster.primary.id
 }
@@ -69,31 +69,82 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
 
 ```
 resource "vngcloud_vks_cluster" "primary" {
-  name      = "my-vks-cluster"
+  name      = "my-cluster"
   cidr      = "172.16.0.0/16"
   vpc_id    = "net-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
   subnet_id = "sub-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
   node_group {
-    name= "my-vks-node-group"
+    name= "my-nodegroup"
     ssh_key_id= "ssh-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
   }
 }
 ```
 
-* Tạo Node Group
+Ví dụ, bên dưới là file main.tf tôi dùng để khởi tạo Cluster với các thông số:&#x20;
+
+* Tên Cluster: my-cluster
+* K8S Version: v1.28.8
+* Tên Node Group: my-nodegroup
+* Bật AutoScaling: scale từ 0 tới 5 nodes
 
 ```
+terraform {
+  required_providers {
+    vngcloud = {
+      source  = "vngcloud/vngcloud"
+      version = "1.2.2"
+    }
+  }
+}
+
+provider "vngcloud" {
+  token_url        = "https://iamapis.vngcloud.vn/accounts-api/v2/auth/token"
+  client_id        = var.client_id
+  client_secret    = var.client_secret
+  vserver_base_url = "https://hcm-3.api.vngcloud.vn/vserver/vserver-gateway"
+  vlb_base_url     = "https://hcm-3.api.vngcloud.vn/vserver/vlb-gateway"
+}
+
 resource "vngcloud_vks_cluster" "primary" {
-  name      = "my-vks-cluster"
+  name      = "my-cluster"
+  description = "VNGCLOUD uses terraform"
+  version = "v1.28.8"
   cidr      = "172.16.0.0/16"
-  vpc_id    = "net-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
-  subnet_id = "sub-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
+  enable_private_cluster = false
+  network_type = "CALICO"
+  vpc_id    = "net-70ef12d4-d619-43fc-88f0-1c1511683ed8"
+  subnet_id = "sub-0725ef54-a32e-404c-96f2-34745239c28d"
+  enabled_load_balancer_plugin = true
+  enabled_block_store_csi_plugin = true
 }
 
 resource "vngcloud_vks_cluster_node_group" "primary" {
-  name= "my-vks-node-group"
-  ssh_key_id= "ssh-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
   cluster_id= vngcloud_vks_cluster.primary.id
+  name= "my-nodegroup"
+  auto_scale_config {
+    min_size = 0
+    max_size = 5
+  }
+  upgrade_config {
+    strategy = "SURGE"
+    max_surge = 1
+	max_unavailable = 0
+  }
+  image_id = "img-983d55cf-9b5b-44cf-aa72-23f3b25d43ce"
+  flavor_id = "flav-9e88cfb4-ec31-4ad4-8ba5-243459f6dc4b"
+  disk_size = 20
+  disk_type = "vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018"
+  enable_private_nodes = false
+  ssh_key_id= "ssh-f923c53c-cba7-4131-9f86-175d04ae218b"
+  security_groups = ["secg-faf05344-fbd6-4f10-80a2-cda08d15ba5e"]
+  labels = {
+    "mylabel" = "vngcloud"
+  }
+  taint {
+    key    = "mykey"
+    value  = "myvalue"
+    effect = "PreferNoSchedule"
+  }
 }
 ```
 
@@ -101,13 +152,13 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
 
 ### **Khởi chạy Terraform command** <a href="#quanlyvcontainervoiterraform-khoichayterraformcommand" id="quanlyvcontainervoiterraform-khoichayterraformcommand"></a>
 
-* Sau khi hoàn tất các thông tin trên, để terraform khởi tạo và tải VNG Cloud provider về đồng thời thiết lập các thông tin cần thiết chạy lệnh bên dưới, lưu ý khi chạy cần đứng tại thư mục terraform-provider-vngcloud/ [**examples**](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples)/:&#x20;
+* Sau khi hoàn tất các thông tin trên, thực hiện chạy lệnh bên dưới:
 
 ```
 terraform init
 ```
 
-* Sau đó, bạn để xem những thay đổi sẽ được áp dụng trên những resource mà terraform đang quản lý bạn có thể chạy
+* Sau đó, bạn để xem những thay đổi sẽ được áp dụng trên những resource mà terraform đang quản lý bạn có thể chạy:
 
 ```
 terraform plan
