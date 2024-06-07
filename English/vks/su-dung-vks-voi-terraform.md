@@ -12,7 +12,7 @@ Bản thân Terraform không có giao diện người dùng đồ họa, thay v�
 
 ### **Cài đặt Terraform CLI** <a href="#quanlyvcontainervoiterraform-caidatterraformcli" id="quanlyvcontainervoiterraform-caidatterraformcli"></a>
 
-Để có thể quản lý vContainer với Terraform bạn cần cài đặt Terraform CLI theo hướng dẫn [tại đây](broken-reference).
+Để có thể quản lý vContainer với Terraform bạn cần cài đặt Terraform CLI theo hướng dẫn [tại đây](../vserver/compute-hcm03-1a/terraform/cai-dat-terraform.md).
 
 ***
 
@@ -50,7 +50,7 @@ variable "client_secret" {
 * Trên file **main.tf**, bạn cần có thể thêm resource để tạo Cluster/ Node Group:
   * Tạo Cluster my-vks-cluster và Node Group my-nodegroup độc lập:
 
-```
+```markup
 resource "vngcloud_vks_cluster" "primary" {
   name      = "my-cluster"
   cidr      = "172.16.0.0/16"
@@ -67,7 +67,7 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
 
 * Tạo Cluster với Default Node Group
 
-```
+```markup
 resource "vngcloud_vks_cluster" "primary" {
   name      = "my-cluster"
   cidr      = "172.16.0.0/16"
@@ -80,10 +80,19 @@ resource "vngcloud_vks_cluster" "primary" {
 }
 ```
 
-Ví dụ, bên dưới là file main.tf tôi dùng để khởi tạo Cluster với các thông số:&#x20;
+{% hint style="info" %}
+**Chú ý:**
+
+* Chúng tôi khuyên bạn nên tạo và quản lý các Cluster, Node Group dưới dạng resource riêng biệt, như trong ví dụ bên dưới. Điều này cho phép bạn thêm hoặc xóa các Node Group mà không cần tạo lại toàn bộ Cluster. Nếu bạn khai báo trực tiếp Node Group Default trong tài nguyên vngcloud\_vks\_cluster, bạn không thể xóa chúng mà không tạo lại chính Cluster đó.
+{% endhint %}
+
+<mark style="color:blue;">**Ví dụ 1:**</mark>&#x20;
+
+Bên dưới là file main.tf tôi dùng để khởi tạo Cluster với các thông số:&#x20;
 
 * Tên Cluster: my-cluster
 * K8S Version: v1.28.8
+* Mode: Public Cluster và Public Node Group
 * Tên Node Group: my-nodegroup
 * Bật AutoScaling: scale từ 0 tới 5 nodes
 
@@ -148,7 +157,149 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
 }
 ```
 
-***
+<mark style="color:blue;">**Ví dụ 2**</mark>
+
+Bên dưới là file main.tf tôi dùng để khởi tạo Cluster với các thông số:&#x20;
+
+* Tên Cluster: my-cluster
+* K8S Version: v1.29.1
+* Mode: Public Cluster và Private Node Group
+* Tên Node Group: my-nodegroup
+* Bật AutoScaling: scale từ 0 tới 5 nodes
+
+Đầu tiên, bạn thực hiện apply file main theo cấu trúc sau:
+
+```
+terraform {
+  required_providers {
+    vngcloud = {
+      source  = "vngcloud/vngcloud"
+      version = "1.2.2"
+    }
+  }
+}
+
+provider "vngcloud" {
+  token_url        = "https://iamapis.vngcloud.vn/accounts-api/v2/auth/token"
+  client_id        = var.client_id
+  client_secret    = var.client_secret
+  vserver_base_url = "https://hcm-3.api.vngcloud.vn/vserver/vserver-gateway"
+  vlb_base_url     = "https://hcm-3.api.vngcloud.vn/vserver/vlb-gateway"
+}
+
+resource "vngcloud_vks_cluster" "primary" {
+  name      = "my-cluster"
+  description = "VNGCLOUD uses terraform"
+  version = "v1.29.1"
+  cidr      = "172.16.0.0/16"
+  enable_private_cluster = false
+  network_type = "CALICO"
+  vpc_id    = "net-70ef12d4-d619-43fc-88f0-1c1511683ed8"
+  subnet_id = "sub-0725ef54-a32e-404c-96f2-34745239c28d"
+  enabled_load_balancer_plugin = true
+  enabled_block_store_csi_plugin = true
+}
+
+resource "vngcloud_vks_cluster_node_group" "primary" {
+  cluster_id= vngcloud_vks_cluster.primary.id
+  name= "my-nodegroup"
+  auto_scale_config {
+    min_size = 0
+    max_size = 5
+  }
+  upgrade_config {
+    strategy = "SURGE"
+    max_surge = 1
+	max_unavailable = 0
+  }
+  image_id = "img-108b3a77-ab58-4000-9b3e-190d0b4b07fc"
+  flavor_id = "flav-9e88cfb4-ec31-4ad4-8ba5-243459f6dc4b"
+  disk_size = 20
+  disk_type = "vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018"
+  enable_private_nodes = true
+  ssh_key_id= "ssh-f923c53c-cba7-4131-9f86-175d04ae218b"
+  security_groups = ["secg-faf05344-fbd6-4f10-80a2-cda08d15ba5e"]
+  labels = {
+    "mylabel" = "vngcloud"
+  }
+  taint {
+    key    = "mykey"
+    value  = "myvalue"
+    effect = "PreferNoSchedule"
+  }
+}
+```
+
+Sau đó, nếu bạn cần thêm Whitelist IP cho Control Plane, hãy thêm field này vào file main.tf và thực hiện apply lại file này:&#x20;
+
+```
+terraform {
+  required_providers {
+    vngcloud = {
+      source  = "vngcloud/vngcloud"
+      version = "1.2.2"
+    }
+  }
+}
+
+provider "vngcloud" {
+  token_url        = "https://iamapis.vngcloud.vn/accounts-api/v2/auth/token"
+  client_id        = var.client_id
+  client_secret    = var.client_secret
+  vserver_base_url = "https://hcm-3.api.vngcloud.vn/vserver/vserver-gateway"
+  vlb_base_url     = "https://hcm-3.api.vngcloud.vn/vserver/vlb-gateway"
+}
+
+resource "vngcloud_vks_cluster" "primary" {
+  name      = "my-cluster"
+  description = "VNGCLOUD uses terraform"
+  version = "v1.29.1"
+  cidr      = "172.16.0.0/16"
+  white_list_node_cidr = "172.25.32.1/16"
+  enable_private_cluster = false
+  network_type = "CALICO"
+  vpc_id    = "net-70ef12d4-d619-43fc-88f0-1c1511683ed8"
+  subnet_id = "sub-0725ef54-a32e-404c-96f2-34745239c28d"
+  enabled_load_balancer_plugin = true
+  enabled_block_store_csi_plugin = true
+}
+
+resource "vngcloud_vks_cluster_node_group" "primary" {
+  cluster_id= vngcloud_vks_cluster.primary.id
+  name= "my-nodegroup"
+  auto_scale_config {
+    min_size = 0
+    max_size = 5
+  }
+  upgrade_config {
+    strategy = "SURGE"
+    max_surge = 1
+	max_unavailable = 0
+  }
+  image_id = "img-108b3a77-ab58-4000-9b3e-190d0b4b07fc"
+  flavor_id = "flav-9e88cfb4-ec31-4ad4-8ba5-243459f6dc4b"
+  disk_size = 20
+  disk_type = "vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018"
+  enable_private_nodes = true
+  ssh_key_id= "ssh-f923c53c-cba7-4131-9f86-175d04ae218b"
+  security_groups = ["secg-faf05344-fbd6-4f10-80a2-cda08d15ba5e"]
+  labels = {
+    "mylabel" = "vngcloud"
+  }
+  taint {
+    key    = "mykey"
+    value  = "myvalue"
+    effect = "PreferNoSchedule"
+  }
+}
+```
+
+{% hint style="info" %}
+**Chú ý:**&#x20;
+
+* Để lấy image\_id bạn mong muốn sử dụng, bạn có thể truy cập vào VKS Portal, chọn menu System Image và lấy ID mà bạn mong muốn hoặc lấy thông tin này tại [đây](tham-khao-them/danh-sach-system-image-dang-ho-tro.md).
+* Để lấy flavor\_id bạn mong muốn sử dụng cho Node group của bạn, vui lòng lấy ID tại [đây](tham-khao-them/danh-sach-flavor-dang-ho-tro.md).
+{% endhint %}
 
 ### **Khởi chạy Terraform command** <a href="#quanlyvcontainervoiterraform-khoichayterraformcommand" id="quanlyvcontainervoiterraform-khoichayterraformcommand"></a>
 
