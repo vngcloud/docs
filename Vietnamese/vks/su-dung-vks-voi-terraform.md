@@ -80,6 +80,12 @@ resource "vngcloud_vks_cluster" "primary" {
 }
 ```
 
+{% hint style="info" %}
+**Chú ý:**
+
+* Chúng tôi khuyên bạn nên tạo và quản lý các Cluster, Node Group dưới dạng resource riêng biệt, như trong ví dụ bên dưới. Điều này cho phép bạn thêm hoặc xóa các Node Group mà không cần tạo lại toàn bộ Cluster. Nếu bạn khai báo trực tiếp Node Group Default trong tài nguyên vngcloud\_vks\_cluster, bạn không thể xóa chúng mà không tạo lại chính Cluster đó.
+{% endhint %}
+
 <mark style="color:blue;">**Ví dụ 1:**</mark>&#x20;
 
 Bên dưới là file main.tf tôi dùng để khởi tạo Cluster với các thông số:&#x20;
