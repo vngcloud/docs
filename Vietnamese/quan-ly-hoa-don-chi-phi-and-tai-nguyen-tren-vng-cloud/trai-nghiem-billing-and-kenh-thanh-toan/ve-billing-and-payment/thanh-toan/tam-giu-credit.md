@@ -27,14 +27,13 @@ Nhận thấy nhu cầu sử dụng các tài nguyên / dich vụ trả sau củ
 
 Sau khi khởi tạo tài nguyên thành công, cứ mỗi cuối ngày, hệ thống sẽ tự động tính lại số tiền sử dụng thực tế của ngày hôm đó và tiến hành tạm giữ số credit cần có để sử dụng dịch vụ trong 3 ngày tiếp theo. Tham khảo ví dụ sau:
 
-| Tác vụ                                          | Ước tính số tiền sử dụng dịch vụ trong 3 ngày (1) | Số dư credit khả dụng thực tế (2) | Chi phí sử dụng thực tế mỗi ngày (3) | Số credit cần đặt cọc (4)                        | Số Credit khả dụng còn lại khi thực hiện tác vụ (5) |
-| ----------------------------------------------- | ------------------------------------------------- | --------------------------------- | ------------------------------------ | ------------------------------------------------ | --------------------------------------------------- |
-| Khởi tạo dịch vụ (ngày n) với 2 node 4 volumes  | 1,800,000 VND                                     | 50,000,000 VND                    | N/A                                  | 1,800,000 VND                                    | 50,000,000 - 1,800,000 = 48,200,000 VND             |
-| Ngày n+1 với cấu hình không thay đổi            | 1,800,000 VND                                     | 48,200,000 VND                    | 600,000 VND                          | 600,000 + 1,800,000 = 2,400,000 VND              | 50,000,000 - 2,400,000 = 47,600,000 VND             |
-| Ngày n+2, cấu hình không thay đổi               | 1,800,000 VND                                     | 47,600,000 VND                    | 600,000 VND                          | 600,000\*2 + 1,800,000 = 3,000,000 VND           | 50,000,000 - 3,000,000 = 47,000,000 VND             |
-| Ngày n+3, scale up lên 3 node 6 volume          | 2,700,000 VND                                     | 47,000,000 VND                    | 600,000 VND                          | 600,000\*3 + 2,700,000 = 4,500,000 VND           | 50,000,000 - 4,500,000 = 45,500,000 VND             |
-| Ngày n + 4, giữ nguyên cấu hình 3 node 6 volume | 2,700,000 VND                                     | 45,500,000 VND                    | 900,000 VND                          | 600,000\*3 + 900,000 + 2,700,000 = 5,400,000 VND | 50,000,000 - 5,400,000 = 44,600,000 VND             |
-| Ngày n + 5, xóa cluster, không sử dụng nữa      | 0                                                 | 44,600,000 VND                    | 900,000 VND                          | 600,000\*3 + 900,000\*2 = 3,600,000 VND          | 50,000,000 - 3,600,000 = 46,400,000 VND             |
+| Khởi tạo dịch vụ (ngày n) với 2 node 4 volumes  | 1,800,000 VND | 50,000,000 VND | N/A         | 1,800,000 VND                                    | 50,000,000 - 1,800,000 = 48,200,000 VND |
+| ----------------------------------------------- | ------------- | -------------- | ----------- | ------------------------------------------------ | --------------------------------------- |
+| Ngày n+1 với cấu hình không thay đổi            | 1,800,000 VND | 48,200,000 VND | 600,000 VND | 600,000 + 1,800,000 = 2,400,000 VND              | 50,000,000 - 2,400,000 = 47,600,000 VND |
+| Ngày n+2, cấu hình không thay đổi               | 1,800,000 VND | 47,600,000 VND | 600,000 VND | 600,000\*2 + 1,800,000 = 3,000,000 VND           | 50,000,000 - 3,000,000 = 47,000,000 VND |
+| Ngày n+3, scale up lên 3 node 6 volume          | 2,700,000 VND | 47,000,000 VND | 600,000 VND | 600,000\*3 + 2,700,000 = 4,500,000 VND           | 50,000,000 - 4,500,000 = 45,500,000 VND |
+| Ngày n + 4, giữ nguyên cấu hình 3 node 6 volume | 2,700,000 VND | 45,500,000 VND | 900,000 VND | 600,000\*3 + 900,000 + 2,700,000 = 5,400,000 VND | 50,000,000 - 5,400,000 = 44,600,000 VND |
+| Ngày n + 5, xóa cluster, không sử dụng nữa      | 0             | 44,600,000 VND | 900,000 VND | 600,000\*3 + 900,000\*2 = 3,600,000 VND          | 50,000,000 - 3,600,000 = 46,400,000 VND |
 
 **Giải thích công thức tính:**
 
@@ -82,7 +81,27 @@ Lưu ý (\*)
 * Hệ thống cần tạm giữ phần sử dụng thực tế và cả phần dự đoán sử dụng cho 3 ngày tiếp theo để đảm bảo tính an toàn và xuyên suốt khi sử dụng dịch vụ.
 * Công thức ước tính sử dụng cho 3 ngày tiếp theo được tính như sau: **TotalSnapshotSize \* Đơn giá VND \* 24h \* 3 days**
 
-#### 3. Không đủ số dư credit khả dụng để tạm giữ credit <a href="#tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit" id="tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit"></a>
+#### 3. Tạm giữ credit dịch vụ Bandwidth <a href="#tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit" id="tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit"></a>
+
+Khi người dùng có phát sinh sử dụng gói bandwidth Pay-as-you-go trong kì đối soát, hệ thống sẽ tiến hành tạm giữ credit tương ứng với phần usage thực tế. Tham khảo ví dụ sau:
+
+**Cách tính phí Bandwidth Pay as you go**
+
+Giả sử kỳ đối đối soát sẽ được chốt vào ngày cuối cùng của tháng và đơn giá dịch vụ là 1,000 VND / 1 GB. Khi người dùng có phát sinh sử dụng băng thông Pay as you go, như ví dụ bên dưới:
+
+* Ngày 10 của tháng (là ngày đầu tiên trong tháng phát sinh sử dụng): dùng 5GB
+* Ngày 15 của tháng, dùng thêm 8GB
+* Ngày 17 của tháng, dùng thêm 3GB
+
+Lúc này, hệ thống sẽ tiến hành tạm giữ credit như sau:
+
+* Sáng ngày 11 của tháng: Tạm giữ 5,000 credit (1,000 VND \* 5GB)
+* Sáng ngày 16 của tháng: Tạm giữ 13,000 credit (1,000 VND \* (8+5) GB)
+* Sáng ngày 18 của tháng: Tạm giữ 16,000 credit (1,000 VND \* (5 + 8 + 3) GB)
+
+Đến cuối kỳ đối soát, hệ thống sẽ ra hóa đơn tương ứng và trừ vào phần tạm giữ trước đó. Trong quá trình sử dụng, nếu credit không đủ, hệ thống sẽ ngừng cung cấp dịch vụ theo policy của dịch vụ.
+
+#### 4. Không đủ số dư credit khả dụng để tạm giữ credit <a href="#tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit" id="tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit"></a>
 
 Trường hợp người dùng không đủ số dư credit khả dụng sau khi thực hiện việc đặt cọc credit, hệ thống sẽ:
 
