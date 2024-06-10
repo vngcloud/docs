@@ -48,18 +48,18 @@ variable "client_secret" {
 {% hint style="info" %}
 **Chú ý:**
 
-* Trong file main.tf, để khởi tạo một cluster với một node group thành công, bạn bắt buộc cần nhập thông tin của 4 field sau:
-
-
+* Trong file main.tf, để khởi tạo một cluster với một node group, bạn bắt buộc cần truyền vào các thông số sau: &#x20;
 
 ```hcl
   vpc_id    = "net-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
   subnet_id = "sub-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
-  ssh_key_id= "<Your SSH Key ID>"
+  ssh_key_id= "ssh-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
 ```
 {% endhint %}
 
-```markup
+* File `main.tf` mẫu giúp bạn tạo Cluster và Node Group theo cấu hình bên trên:
+
+```
 terraform {
   required_providers {
     vngcloud = {
@@ -84,8 +84,8 @@ resource "vngcloud_vks_cluster" "primary" {
   cidr      = "172.16.0.0/16"
   enable_private_cluster = false
   network_type = "CALICO"
-  vpc_id    = "<Your VPC ID>"
-  subnet_id = "<Your Subnet ID>"
+  vpc_id    = "net-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
+  subnet_id = "sub-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
   enabled_load_balancer_plugin = true
   enabled_block_store_csi_plugin = true
 }
@@ -108,8 +108,7 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
   disk_size = 20
   disk_type = "vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018"
   enable_private_nodes = false
-  ssh_key_id= "<Your SSH Key ID>"
-  security_groups = ["Your Security Group"]
+  ssh_key_id= "ssh-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
   labels = {
     "mylabel" = "vngcloud"
   }
@@ -129,15 +128,4 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
 
 * Chạy lệnh `terraform apply.` Lệnh này sẽ tạo Cluster Kubernetes theo mô tả trong tệp `main.tf`.
 
-<pre class="language-xml-doc" data-title="" data-overflow="wrap" data-line-numbers><code class="lang-xml-doc">  
-    function greet() {
-      console.log("Hello, World!");
-     <a data-footnote-ref href="#user-content-fn-1"> console.log("Hello, World!");</a>
-    }
-    greet();
-  
-</code></pre>
-
-[^1]: fzdzffd
-
-    vcvcx
+Tham khảo thêm về cách sử dụng Terraform để làm việc với VKS tại [đây](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks\_cluster).
