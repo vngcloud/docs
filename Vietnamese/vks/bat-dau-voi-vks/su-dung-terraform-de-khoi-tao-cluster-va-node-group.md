@@ -129,12 +129,15 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
 
 * Chạy lệnh `terraform apply.` Lệnh này sẽ tạo Cluster Kubernetes theo mô tả trong tệp `main.tf`.
 
-```
-  
+<pre class="language-xml-doc" data-title="" data-overflow="wrap" data-line-numbers><code class="lang-xml-doc">  
     function greet() {
       console.log("Hello, World!");
-      console.log("Hello, World!");
+     <a data-footnote-ref href="#user-content-fn-1"> console.log("Hello, World!");</a>
     }
     greet();
   
-```
+</code></pre>
+
+[^1]: fzdzffd
+
+    vcvcx
