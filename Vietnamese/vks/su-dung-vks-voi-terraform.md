@@ -282,7 +282,6 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
   disk_type = "vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018"
   enable_private_nodes = true
   ssh_key_id= "ssh-f923c53c-cba7-4131-9f86-175d04ae218b"
-  security_groups = ["secg-faf05344-fbd6-4f10-80a2-cda08d15ba5e"]
   labels = {
     "mylabel" = "vngcloud"
   }
