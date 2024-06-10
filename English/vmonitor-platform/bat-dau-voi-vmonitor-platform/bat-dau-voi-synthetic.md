@@ -1,15 +1,15 @@
-# Bắt đầu với Synthetic
+# Getting Start with Synthetic
 
-### Bước 1: Khởi tạo Synthetic Test quota <a href="#batdauvoisynthetics-buoc1-khoitaosynthetictestquota" id="batdauvoisynthetics-buoc1-khoitaosynthetictestquota"></a>
+### Step 1: Create a Synthetic Test quota <a href="#batdauvoisynthetics-buoc1-khoitaosynthetictestquota" id="batdauvoisynthetics-buoc1-khoitaosynthetictestquota"></a>
 
-Bắt đầu sử dụng dịch vụ, bạn cần tạo một Synthetic Test quota. Một Synthetic Test quota là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát vận hành với số lượng bài kiểm tra cụ thể mà bạn thực hiện mua trên VNG Cloud. Tại một thời điểm bạn có thể sở hữu một Synthetic Test quota và sử dụng chúng để kiểm tra hoạt động hệ thống của bạn.
+To start using the service, you need to create a Synthetic Test quota. A Synthetic Test quota is a term on the vMonitor Platform representing a monitoring package with a specific number of tests that you purchase on VNG Cloud. At any given time, you can own one Synthetic Test quota and use it to monitor your system's operations.
 
 Thực hiện tạo project theo các bước bên dưới:
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn **Quota & Usage**.
 3. Chọn **Mua Synthetic test quota.**
-4. Chọn **Class** mà bạn có nhu cầu sử dụng**.** Hiện tại chúng tôi chỉ cung cấp class Basic để bạn trải nghiệm
+4. Chọn **Class** mà bạn có nhu cầu sử dụng\*\*.\*\* Hiện tại chúng tôi chỉ cung cấp class Basic để bạn trải nghiệm
 5. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Synthetic Test Quota Class](../vmonitor-platform-la-gi/vmonitor-platform-synthetic-la-gi/synthetic-test-quota-class.md).
 6. Chọn **Buy Synthetic Test Quota**.
 7. Thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Synthetic test quota** sẽ được khởi tạo.
@@ -24,7 +24,7 @@ API HTTP tests cho phép bạn gửi HTTP(s) requests tới dịch vụ hay ứn
 
 **Để thực hiện tạo API Test với phương thức HTTP(s), hãy làm theo hướng dẫn bên dưới:**
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
+1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)
 2. Chọn thư mục **Synthetic test.**
 3. Chọn **API test.**
 4. Chọn **Create an API test.**
@@ -48,7 +48,7 @@ API HTTP tests cho phép bạn gửi HTTP(s) requests tới dịch vụ hay ứn
 
 <figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
-* **Location**&#x20;
+* **Location**
   * Lựa chọn Location mà ở đó sẽ chạy các HTTP Test tới URL của bạn. HTTP tests có thể chạy từ cả Public Locations (do VNG Cloud quản lý) và Private Locations (do khách hàng tự cài đặt và quản lý) dựa trên nhu cầu của bạn cho việc chạy test từ bên ngoài (internet) hay bên trong mạng của bạn. Public Locations do VNG Cloud quản lý hiện tại có 2 locations là HCM và HN.
 
 <figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>

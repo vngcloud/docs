@@ -1,42 +1,42 @@
-# Bắt đầu với Logs
+# Getting Start with Logs
 
-### Bước 1: Khởi tạo Log project <a href="#batdauvoilogs-buoc1-khoitaologproject" id="batdauvoilogs-buoc1-khoitaologproject"></a>
+### Step 1: Create a Log project <a href="#batdauvoilogs-buoc1-khoitaologproject" id="batdauvoilogs-buoc1-khoitaologproject"></a>
 
-Bắt đầu sử dụng dịch vụ, bạn cần tạo một Log project. Một Log project là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát Logs với dung lượng và thời gian cụ thể mà bạn thực hiện mua trên VNG Cloud. Tại một thời điểm bạn có thể sở hữu một hoặc nhiều Log project song song và sử dụng chúng như một cách tổ chức tài nguyên cho các nhóm hay phòng ban sử dụng với mục đích khác nhau.
+To start using the service, you need to create a Log project. A Log project is a term on the vMonitor Platform that represents a log monitoring package with specific capacity and duration that you purchase on VNG Cloud. At any given time, you can own one or multiple Log projects simultaneously and use them as a way to organize resources for different teams or departments for various purposes.
 
-Thực hiện tạo project theo các bước bên dưới:
+Implement project creation according to the steps below:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn **Quota & Usage**.
-3. Chọn **Mua một log project.**
-4. Nhập **Tên Log project.** Theo quy định của chúng tôi, **Tên Log project** phải dài từ 1 (tối thiểu) đến 63 (tối đa) ký tự. **Tên Log project** có thể bao gồm các chữ cái viết thường (a-z), số (0-9), dấu gạch ngang (-). **Tên Log project** phải bắt đầu bằng một chữ cái viết thường và kết thúc bằng một chữ cái viết thường hoặc một chữ số.
-5. Nhập **Mô tả** log project nếu có. Theo quy định của chúng tôi, **Mô tả** có thể dài từ 0 (tối thiểu) đến 300 (tối đa) ký tự. **Mô tả** có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), dấu gạch dưới (\_), khoảng trắng ( ) hoặc dấu gạch ngang (-).
-6. Chọn **Class** mà bạn có nhu cầu sử dụng**.** Chúng tôi cung cấp cho bạn chọn 1 trong 2 class bao gồm: Basic, Pro.
-7. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Nếu bạn chọn class **Pro**, bạn có thể lựa chọn retiontion day và lựa chọn cấu hình log size per day mong muốn bằng cách kéo thả hoặc nhập con số dung lượng bạn mong muốn tại ô Log size per day. dụng. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Log Project Class](../vmonitor-platform-la-gi/vmonitor-platform-log-la-gi/log-project-class.md).
-8. Chọn **Buy Log Quota.**
-9. Thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Log project** sẽ được khởi tạo.
+1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account yet, sign up for free at here.
+2. Select **Quota & Usage**.
+3. Select **Create a log project.**
+4. Enter **Log project Name**. According to our regulations, **Log project Name** must be 1 (minimum) to 63 (maximum) characters long. **Log project Name** can include lowercase letters (a-z), numbers (0-9), hyphens (-). **Log project Name** must start with a lowercase letter and end with a lowercase letter or a number.
+5. Enter **Log project Description** if there is any. According to our regulations, **Description** can be from 0 (minimum) to 300 (maximum) characters long. **Description** can include uppercase letters, lowercase letters (a-z, A-Z), numbers (0-9), periods (.), underscores (\_), spaces ( ), or hyphens (-).
+6. Choose the **Class** you need to use. We offer you a choice between 2 classes: Basic and Pro.
+7. If you choose the **Basic** class, you will not be able to customize the package configuration. If you choose the **Pro** class, you can select the retention day and configure the desired log size per day by dragging or entering your desired log size in the Log size per day box. For more detailed information about the classes, please refer to the Log Project Class.
+8. Select **Buy Log Quota.**
+9. Perform the **Checkout** steps for the cart, and after successful payment, a **Log Project** will be initiated.
 
-Cách tính chi phí cho mỗi gói log project được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../vstorage/vstorage-hcm03/cach-tinh-phi/).
+The cost calculation for each log project package is publicly available on the VNG Cloud homepage; please refer to the Pricing section.
 
 ***
 
-### Bước 2: Tải xuống Certificate và cài đặt Log Agent trên Server <a href="#batdauvoilogs-buoc2-certificatevacaidatlogagenttrenserver" id="batdauvoilogs-buoc2-certificatevacaidatlogagenttrenserver"></a>
+### Step 2: Download Certificate and install Log Agent on Server <a href="#batdauvoilogs-buoc2-certificatevacaidatlogagenttrenserver" id="batdauvoilogs-buoc2-certificatevacaidatlogagenttrenserver"></a>
 
-Sau khi mua Log Project, hệ thống sẽ tự động sinh ra certificate cho từng Log Project, certificate này dùng để xác thực Log Agent với hệ thống vMonitor Platform.
+After purchasing a Log Project, the system will automatically generate a certificate for each Log Project. This certificate is used to authenticate the Log Agent with the vMonitor Platform.
 
-Thực hiện các bước bên dưới để tải certificate và các scitps cài đặt
+Follow the steps below to download the certificate and installation scripts.
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Chọn **Integration.**
-2. Chọn **Certificate.**
-3. Chọn **Tải xuống** để tải thông tin certificate về server mà bạn muốn đẩy logs về.
+1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Select **Integration.**
+2. Select **Certificate.**
+3. Select **Download** to download the certificate information to the server where you want to push logs.
 
-Sau khi tải xuống, thư mục sẽ chứa các thông tin hướng dẫn thiết lập agent nằm trong file readme, các script hướng dẫn cũng nằm trong tệp tin certificate được tải về. Sử dụng thông tin này với các hướng dẫn bên dưới để hoàn thành việc thiết lập Agent for Log.
+After downloading, the folder will contain setup instructions for the agent in the readme file. The setup scripts are also included in the certificate file that was downloaded. Use this information along with the instructions below to complete the setup of the Agent for Log.
 
-**Cài đặt**
+#### Install
 
-Xác định một loại agent mà mình muốn cài và làm theo hưỡng dẫn của agent đó dưới đây, ở đây chúng tôi hướng dẫn cài đặt Filebeat agent:
+Determine the type of agent you want to install and follow the instructions for that agent below. Here, we guide you through installing the Filebeat agent:
 
-* Nếu sử dụng script chuẩn bị sẵn trong thư mục tải về, chạy lệnh
+* If you use the pre-prepared script in the download folder, run the command
 
 ```
 sudo chmod +x filebeat.sh
@@ -45,14 +45,14 @@ sudo ./filebeat.sh <path-to-file-log>
 
 ***
 
-### Bước 3: Xem thông tin Log thông qua Log search <a href="#batdauvoilogs-buoc3-xemthongtinlogthongqualogsearch" id="batdauvoilogs-buoc3-xemthongtinlogthongqualogsearch"></a>
+### Step 3: View Log through Log search <a href="#batdauvoilogs-buoc3-xemthongtinlogthongqualogsearch" id="batdauvoilogs-buoc3-xemthongtinlogthongqualogsearch"></a>
 
-Để thực hiện tìm kiếm và phân tích log, hãy làm theo hướng dẫn bên dưới:
+To perform log search and analysis, follow the steps below:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Chọn **Log.**
-2. Chọn **Log search**.
-3. Chọn **Log project** nào bạn cần xem và phân tích logs. Vị trí chọn log project được hiển thị như hình bên dưới:
+1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Select **Log.**
+2. Select **Log search**.
+3. Select the **Log project** you need to view and analyze logs from. The location for selecting the log project is shown in the image below:
 
 <figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
-4. Tiếp tục thực hiện **tìm kiếm và phân tích logs**.
+4. Continue to perform log search and analysis.
