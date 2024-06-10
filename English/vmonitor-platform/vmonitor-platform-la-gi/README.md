@@ -1,23 +1,23 @@
-# vMonitor Platform là gì
+# What is vMonitor Platform?
 
-vMonitor Platform cung cấp giải pháp toàn diện về thu thập, phân tích và cảnh báo trên các dữ liệu metric, log, synthetic từ VNG Cloud, các Cloud khác hay môi trường on-premise, Những thông tin này giúp bạn hiểu về các server/application của bạn hoạt động như thế nào và chủ động xác định được các vấn đề mà server/application đang gặp phải.&#x20;
+vMonitor Platform provides comprehensive solutions for collecting, analyzing, and alerting on metrics, logs, and synthetic data from VNG Cloud, other clouds, or on-premise environments. This information helps you understand how your servers/applications are performing and proactively identify any issues they may encounter.
 
-vMonitor Platform cung cấp 3 nhóm dịch vụ chính là: **Metric, Log, Synthetic**&#x20;
+vMonitor Platform provides three main service groups: **Metric, Log, Synthetic**
 
-* **vMonitor Metric** là dịch vụ giúp liên tục giám sát hiệu suất của tất cả tài nguyên trên hệ thống của doanh nghiệp theo thời gian thực, vMonitor metric được xây dựng dành cho người dùng, nhà phát triển, kĩ sư vận hành hay nhà quản lý IT nhằm mục đích theo dõi những tài nguyên trên hạ tầng Cloud của VNG Cloud hay bất cứ nơi nào khác. vMonitor Metric mang lại bức tranh thống nhất về sức khoẻ hệ thống, cho phép thu thập những số liệu, thông tin để phục vụ mục đích theo dõi, tối ưu hoá hệ thống, thiết lập cảnh báo và thông báo khi có sự cố xảy ra.&#x20;
-* **vMonitor Log** là dịch vụ giúp thu thập dữ liệu Log của máy chủ, ứng dụng, hay các thiết bị từ hệ thống của doanh nghiệp theo thời gian thực. vMonitor Log được xây dựng dành cho người dùng, nhà phát triển, kĩ sư vận hành hay nhà quản lý IT nhằm đích lưu trữ, tìm kiếm, phân tích và hỗ trợ xử lý sự cố nhanh chóng trên những dữ liệu Log đã thu thập&#x20;
-* **vMonitor Synthetic** là một tập các điều kiện và cấu hình mà giúp khác bạn chủ động theo dõi các dịch vụ quan trọng nhất của mình để chúng luôn sẵn sàng mọi lúc và mọi nơi. Synthetic API Test hỗ trợ nhiều giao thức như TCP, HTTP(s), Ping.&#x20;
+* **vMonitor Metric** is a service that continuously monitors the performance of all resources in an enterprise system in real-time. Built for users, developers, operations engineers, and IT managers, vMonitor Metric tracks resources on VNG Cloud infrastructure or any other location. It provides a unified view of system health, enabling the collection of metrics and information for monitoring, optimizing, setting up alerts, and notifications in case of incidents.
+* **vMonitor Log** is a service that helps collect log data from servers, applications, or devices within an enterprise's system in real time. vMonitor Log is designed for users, developers, operations engineers, or IT managers to store, search, analyze, and quickly troubleshoot collected log data.
+* **vMonitor Synthetic** là một tập các điều kiện và cấu hình mà giúp khác bạn chủ động theo dõi các dịch vụ quan trọng nhất của mình để chúng luôn sẵn sàng mọi lúc và mọi nơi. Synthetic API Test hỗ trợ nhiều giao thức như TCP, HTTP(s), Ping.
 
 <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-## Các chức năng chính của vMonitor Platform <a href="#vmonitorplatformlagi-cacchucnangchinhcuavmonitorplatform" id="vmonitorplatformlagi-cacchucnangchinhcuavmonitorplatform"></a>
+## The features of vMonitor Platform <a href="#vmonitorplatformlagi-cacchucnangchinhcuavmonitorplatform" id="vmonitorplatformlagi-cacchucnangchinhcuavmonitorplatform"></a>
 
-Chúng tôi cung cấp cho bạn các giải pháp hàng đầu bao gồm:
+We provide you with leading solutions including:
 
-* Thu thập Metric, Log từ server, application trên VNG Cloud, các Cloud khác hay môi trường on-premise.&#x20;
-* Chủ động theo dõi các ứng dụng, dịch vụ và máy chủ quan trọng luôn sẵn sàng với Synthetic
-* Truy xuất và phân tích trên các dữ liệu Log với tính năng Log Search
-* Thiết lập các cảnh báo và kênh thông báo khi có sự cố xảy ra.
-* Lưu trữ dữ liệu lâu dài trên vStorage.
+* Collect Metrics and Logs from servers and applications on VNG Cloud, other Clouds, or on-premises environments.
+* Proactively monitor critical applications, services, and servers' availability with Synthetic.&#x20;
+* Retrieve and analyze log data with Log Search.&#x20;
+* Set up alerts and notification channels for incidents.&#x20;
+* Store long-term data on vStorage.&#x20;

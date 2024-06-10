@@ -30,7 +30,7 @@ Welcome to VNG Cloud's user guide page. Here you can easily find useful informat
 {% tab title="Platform as a Service" %}
 [vMonitor Platform -Active & comprehensive system monitoring](broken-reference)
 
-[vDB - Professional database management solution](vdb.md)
+[vDB - Professional database management solution](vdb/)
 
 [VKS - Container management with Kubernetes](vks/)
 

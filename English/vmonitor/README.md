@@ -1,19 +1,19 @@
 # vMonitor Platform
 
-## vMonitor Platform là gì?
+## What is vMonitor Platform?
 
-vMonitor Platform mang tới một giải pháp toàn diện cho việc thu thập, phân tích và cảnh báo trên dữ liệu Metric và Log từ VNG Cloud, các Cloud khác hay môi trường on-premise. Những thông tin này giúp bạn hiểu rõ hơn về hoạt động của các server/application của bạn và chủ động xác định được các vấn đề mà server/application đang gặp phải.
+vMonitor Platform offers a comprehensive solution for collecting, analyzing, and alerting on Metric and Log data from VNG Cloud, other Clouds, or on-premise environments. This information helps you better understand the operation of your servers/applications and proactively identify issues that your servers/applications are facing.
 
-<figure><img src="../.gitbook/assets/image (344).png" alt=""><figcaption></figcaption></figure>
-
-***
-
-## Các tính năng chính của vMonitor Platform
-
-<figure><img src="../.gitbook/assets/image (341).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-## Tại sao bạn nên lựa chọn vMonitor Platform?
+## The features of vMonitor Platform
 
-<figure><img src="../.gitbook/assets/image (342).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+## Why choose vMonitor Platform?
+
+<figure><img src="../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
