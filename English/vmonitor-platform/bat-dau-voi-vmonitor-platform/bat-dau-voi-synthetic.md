@@ -4,11 +4,11 @@
 
 To start using the service, you need to create a Synthetic Test quota. A Synthetic Test quota is a term on the vMonitor Platform representing a monitoring package with a specific number of tests that you purchase on VNG Cloud. At any given time, you can own one Synthetic Test quota and use it to monitor your system's operations.
 
-Thực hiện tạo project theo các bước bên dưới:
+Follow the steps below to create a project:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn **Quota & Usage**.
-3. Chọn **Mua Synthetic test quota.**
+1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor).&#x20;
+2. Select **Quota & Usage**.
+3. Select **Mua Synthetic test quota.**
 4. Chọn **Class** mà bạn có nhu cầu sử dụng\*\*.\*\* Hiện tại chúng tôi chỉ cung cấp class Basic để bạn trải nghiệm
 5. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Synthetic Test Quota Class](../vmonitor-platform-la-gi/vmonitor-platform-synthetic-la-gi/synthetic-test-quota-class.md).
 6. Chọn **Buy Synthetic Test Quota**.
