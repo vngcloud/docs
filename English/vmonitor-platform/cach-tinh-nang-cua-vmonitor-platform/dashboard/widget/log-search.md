@@ -1,40 +1,38 @@
 # Log search
 
-### Tổng quan
+### Overview
 
-Table chart với chỉ số tóm tắt là một loại biểu đồ thể hiện các số được tính toán từ một bộ dữ liệu, thay vì thể hiện các số gốc. Thông thường loại biểu đồ này nên được sử dụng khi bạn muốn nhóm dữ liệu theo thời gian sử dụng tính năng Group by.
+A summary table chart is a type of chart that displays calculated values from a dataset, rather than showing the raw numbers. Typically, this type of chart should be used when you want to group data over time using the Group by feature.
 
 <figure><img src="../../../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### Cấu hình biểu đồ
+### Widget Configuration
 
 <figure><img src="../../../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
 
-#### 1. Choose graph style&#x20;
+#### 1. Choose graph style
 
-Đối với biểu đồ dạng table, tại mục này bạn chọn Style là **Log search**
+For the table chart, in this section, you select Style as **Log search**
 
 <figure><img src="../../../../.gitbook/assets/image (75).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### 2. Graph your data
 
-Chọn loại dữ liệu để vẽ Widget:
+Select data type to draw Widget:
 
-* **Metrics: không hỗ trợ.**
-* Logs: xem [Log Query](../query/log-query.md) để cấu hình cho loại dữ liệu Logs.
+* **Metrics: No Support.**
+* Logs: refer to Log Query for configuring the Logs data type.
 
-**Mặc định dữ liệu logs được hiển thị ở dạng Full content**. Khi bạn chỉ muốn hiển thị một số lượng field logs nhất định trên biểu đồ, hãy chọn field logs tại&#x20;
+**By default, log data is displayed in Full content view**. If you only want to display a certain number of log fields on the chart, select the log fields at
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59806976/image2023-8-1_13-27-58.png?version=1&#x26;modificationDate=1690871279000&#x26;api=v2" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-Alias: Bạn có thể đặt Alias cho mỗi câu query, alias này sẽ được hiển thị trên graph và legend, điều này rất hữu ích cho những tên metric, logs hay những câu query có filter (bộ lọc) dài.&#x20;
+Alias: You can set an Alias for each query. This alias will be displayed on the graph and legend, which is useful for long metric names, logs, or queries with extensive filters.
 
-Alias: Bạn có thể đặt Alias cho mỗi câu query, alias này sẽ được hiển thị trên graph và legend, điều này rất hữu ích cho những tên metric, logs hay những câu query có filter (bộ lọc) dài.&#x20;
+#### 3. Fixed time range
 
-#### 3. Fixed time range&#x20;
+A fixed time range is an attribute of a Widget that you can set to filter data on the Widget according to a fixed time range, independent of the Dashboard's time range. Each Widget can have its own Fixed time range setting. You can choose one of the time ranges described in the table below. For example, if you select Global time, the data retrieval period displayed on the Widget will match the period you selected on the Dashboard. This means that changing the data retrieval time on the Dashboard will also change the Widget's data retrieval time. This option is recommended. If you select Pass N minutes (N = 5,10,...), the data retrieval period on the Widget will be fixed (unchanged) at 5, 10,... minutes before.
 
-Khung thời gian cố định là một thuộc tính của Widget mà bạn có thể thiết lập để lọc dữ liệu trên Widget theo một khung thời gian cố định mà không phụ thuộc với khung thời gian (time range) của Dashboard. Mỗi Widget đều có thể thiết lập Fixed time range riêng biệt, bạn có thể chọn một trong các khung thời gian được mô tả ở bảng bên dưới. Ví dụ: nếu bạn chọn Global time thì khoảng thời gian lấy dữ liệu trên Widget được hiển thị sẽ được bằng khoảng thời gian mà bạn chọn trên Dashboard. Tức là khi thay đổi thời gian lấy dữ liệu trên Dashboard thì thời gian lấy dữ liệu của Widget sẽ thay đổi theo. Khuyến khích sử dụng lựa chọn này. Nếu bạn chọn Pass N minutes (N = 5,10,...) thì khoảng thời gian lấy dữ liệu trên Widget cố định (không thay đổi) luôn là 5, 10,...phút trước.&#x20;
-
-Chọn **Create** để tạo Widget, nếu có nhu cầu thay đổi tên widget thì bạn có thể thực hiện chỉnh sửa tại **Widget name**.
+Select **Create** to make a Widget. If you need to change the widget name, you can edit it in \*\*Widget name
