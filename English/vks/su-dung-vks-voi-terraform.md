@@ -16,11 +16,11 @@ Bản thân Terraform không có giao diện người dùng đồ họa, thay v�
 
 ***
 
-### **Cấp quyền IAM cho việc sử dụng**  <a href="#quanlyvcontainervoiterraform-capquyeniamchoviecsudung" id="quanlyvcontainervoiterraform-capquyeniamchoviecsudung"></a>
+### **Cấp quyền IAM cho việc sử dụng** <a href="#quanlyvcontainervoiterraform-capquyeniamchoviecsudung" id="quanlyvcontainervoiterraform-capquyeniamchoviecsudung"></a>
 
 Để có thể thực hiện quản lý VKS với Terraform, bạn cần khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **VKSFullAccess**. Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts) và thực hiện theo các bước sau:
 
-* Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account.&#x20;
+* Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account.
 * Tìm và chọn **Policy:** **VKSFullAccess** sau đó nhấn "**Create a Service Account**" để tạo Service Account, **Policy: VKSFullAccess** do VNG Cloud tạo ra, bạn không thể xóa các policy này.
 * Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
 
@@ -86,9 +86,9 @@ resource "vngcloud_vks_cluster" "primary" {
 * Chúng tôi khuyên bạn nên tạo và quản lý các Cluster, Node Group dưới dạng resource riêng biệt, như trong ví dụ bên dưới. Điều này cho phép bạn thêm hoặc xóa các Node Group mà không cần tạo lại toàn bộ Cluster. Nếu bạn khai báo trực tiếp Node Group Default trong tài nguyên vngcloud\_vks\_cluster, bạn không thể xóa chúng mà không tạo lại chính Cluster đó.
 {% endhint %}
 
-<mark style="color:blue;">**Ví dụ 1:**</mark>&#x20;
+<mark style="color:blue;">**Ví dụ 1:**</mark>
 
-Bên dưới là file main.tf tôi dùng để khởi tạo Cluster với các thông số:&#x20;
+Bên dưới là file main.tf tôi dùng để khởi tạo Cluster với các thông số:
 
 * Tên Cluster: my-cluster
 * K8S Version: v1.28.8
@@ -145,7 +145,6 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
   disk_type = "vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018"
   enable_private_nodes = false
   ssh_key_id= "ssh-f923c53c-cba7-4131-9f86-175d04ae218b"
-  security_groups = ["secg-faf05344-fbd6-4f10-80a2-cda08d15ba5e"]
   labels = {
     "mylabel" = "vngcloud"
   }
@@ -159,7 +158,7 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
 
 <mark style="color:blue;">**Ví dụ 2**</mark>
 
-Bên dưới là file main.tf tôi dùng để khởi tạo Cluster với các thông số:&#x20;
+Bên dưới là file main.tf tôi dùng để khởi tạo Cluster với các thông số:
 
 * Tên Cluster: my-cluster
 * K8S Version: v1.29.1
@@ -218,7 +217,6 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
   disk_type = "vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018"
   enable_private_nodes = true
   ssh_key_id= "ssh-f923c53c-cba7-4131-9f86-175d04ae218b"
-  security_groups = ["secg-faf05344-fbd6-4f10-80a2-cda08d15ba5e"]
   labels = {
     "mylabel" = "vngcloud"
   }
@@ -230,7 +228,7 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
 }
 ```
 
-Sau đó, nếu bạn cần thêm Whitelist IP cho Control Plane, hãy thêm field này vào file main.tf và thực hiện apply lại file này:&#x20;
+Sau đó, nếu bạn cần thêm Whitelist IP cho Control Plane, hãy thêm field này vào file main.tf và thực hiện apply lại file này:
 
 ```
 terraform {
@@ -282,7 +280,6 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
   disk_type = "vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018"
   enable_private_nodes = true
   ssh_key_id= "ssh-f923c53c-cba7-4131-9f86-175d04ae218b"
-  security_groups = ["secg-faf05344-fbd6-4f10-80a2-cda08d15ba5e"]
   labels = {
     "mylabel" = "vngcloud"
   }
@@ -295,7 +292,7 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
 ```
 
 {% hint style="info" %}
-**Chú ý:**&#x20;
+**Chú ý:**
 
 * Để lấy image\_id bạn mong muốn sử dụng, bạn có thể truy cập vào VKS Portal, chọn menu System Image và lấy ID mà bạn mong muốn hoặc lấy thông tin này tại [đây](tham-khao-them/danh-sach-system-image-dang-ho-tro.md).
 * Để lấy flavor\_id bạn mong muốn sử dụng cho Node group của bạn, vui lòng lấy ID tại [đây](tham-khao-them/danh-sach-flavor-dang-ho-tro.md).
@@ -328,3 +325,5 @@ terraform apply
 ### **Kiểm tra Cluster vừa tạo trên giao diện VNG Cloud Portal** <a href="#quanlyvcontainervoiterraform-kiemtracontainervuataotrengiaodienvngcloudportal" id="quanlyvcontainervoiterraform-kiemtracontainervuataotrengiaodienvngcloudportal"></a>
 
 Sau khi khởi tạo thành công Terraform, bạn có thể lên VKS Portal để xem thông tin Cluster vừa tạo.
+
+Tham khảo thêm về cách sử dụng Terraform để làm việc với VKS tại [đây](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks\_cluster).
