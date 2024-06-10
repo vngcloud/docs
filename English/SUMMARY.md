@@ -39,7 +39,7 @@
         * [Package Bandwidth Pay As You Go](vserver/compute-hcm03-1a/vpc/bandwidth/dedicated-bandwidth-service.md)
         * [Package Bandwidth Share](vserver/compute-hcm03-1a/vpc/bandwidth/shared-bandwidth-service.md)
         * [Package Bandwidth Dedicated](vserver/compute-hcm03-1a/vpc/bandwidth/package-bandwidth-dedicated.md)
-        * [Billing Method](vserver/compute-hcm03-1a/vpc/bandwidth/billing-method.md)
+        * [Payment Methods](vserver/compute-hcm03-1a/vpc/bandwidth/billing-method.md)
     * [Interconnect](vserver/compute-hcm03-1a/interconnect/README.md)
       * [Starts with Interconnect](vserver/compute-hcm03-1a/interconnect/starts-with-interconnect.md)
       * [Interconnect Features](vserver/compute-hcm03-1a/interconnect/interconnect-features.md)
