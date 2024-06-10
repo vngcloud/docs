@@ -87,7 +87,7 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
   upgrade_config {
     strategy = "SURGE"
     max_surge = 1
-	max_unavailable = 0
+ max_unavailable = 0
   }
   image_id = "img-983d55cf-9b5b-44cf-aa72-23f3b25d43ce"
   flavor_id = "flav-9e88cfb4-ec31-4ad4-8ba5-243459f6dc4b"
@@ -114,3 +114,14 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
 6. **Áp dụng cấu hình Terraform:**
 
 * Chạy lệnh `terraform apply.` Lệnh này sẽ tạo Cluster Kubernetes theo mô tả trong tệp `main.tf`.
+
+<!-- Code block -->
+<pre>
+  <code>
+    function greet() {
+      console.log("Hello, World!");
+      <span style="background-color: #e98172;">console.log("Hello, World!");</span>
+    }
+    greet();
+  </code>
+</pre>
