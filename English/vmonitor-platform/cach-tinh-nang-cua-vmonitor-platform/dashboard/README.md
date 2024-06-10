@@ -1,108 +1,108 @@
 # Dashboard
 
-### Tổng quan <a href="#dashboard-tongquan" id="dashboard-tongquan"></a>
+### Overview <a href="#dashboard-tongquan" id="dashboard-tongquan"></a>
 
-Dashboard là một công cụ trực quan hóa dữ liệu giúp người dùng có thể nhanh chóng tìm ra những thông tin quan trọng và hiểu rõ hơn về dữ liệu. Một Dashboard trong vMonitor Platform là một nhóm các biểu đồ sử dụng để theo dõi tài nguyên của bạn từ một số dịch vụ, ứng dụng, máy chủ nhất định. Nhóm biểu đồ sẽ thể hiện cho bạn thấy sức khỏe của hệ thống một cách rõ ràng.&#x20;
+A Dashboard is a data visualization tool that helps users quickly find important information and better understand the data. A Dashboard in the vMonitor Platform is a group of charts used to monitor your resources from certain services, applications, or servers. The group of charts will clearly show you the health of the system.
 
-Trên hệ thống vMonitor Platform, có 2 loại Dashboard được chúng tôi định nghĩa bao gồm:&#x20;
+On the vMonitor Platform, we define 2 types of Dashboards including:
 
-* **Dashboard mặc định**: là loại Dashboard được tự động tạo bởi hệ thống của chúng tôi ngay khi bạn bật monitoring trong các dịch vụ bạn đang sử dụng hoặc khi bạn thiết lập thành công monitoring các hosts của mình. Đặc điểm của loại Dashboard này là bạn có thể xem, tạo bản sao và không thể thay đổi các thông số cũng như các Widget nằm trong Dashboard.&#x20;
-* **Dashboard tùy chỉnh**: là loại Dashboard được tạo bởi chính bạn. Đặc điểm của loại Dashboard này là bạn có toàn quyền xem, tạo mới, tạo bản sao, chỉnh sửa thông số cũng như thêm bớt hay sắp xếp các Widget nằm trong Dashboard theo ý muốn của mình.&#x20;
+* **Default Dashboard**: This type of Dashboard is automatically created by our system as soon as you enable monitoring for the services you're using or when you successfully set up monitoring for your hosts. The main characteristic of this Dashboard is that you can view, create copies, but cannot modify any parameters or Widgets within the Dashboard.
+* **Custom Dashboard**: This type of Dashboard is created by you. The characteristics of this Dashboard are that you have full control to view, create new ones, duplicate, edit parameters, as well as add, remove, or arrange the Widgets within the Dashboard as you wish.
 
 ***
 
-### Phạm vi giới hạn Dashboard <a href="#dashboard-phamvigioihandashboard" id="dashboard-phamvigioihandashboard"></a>
+### Dashboard Rule <a href="#dashboard-phamvigioihandashboard" id="dashboard-phamvigioihandashboard"></a>
 
-**Quy tắc đặt tên Dashboard**
+**Dashboard naming rules**
 
-Các quy tắc sau áp dụng cho việc đặt tên Dashboard trong vMonitor Platform:
+The following rules apply to naming Dashboards in the vMonitor Platform:
 
-* Tên Dashboard phải dài từ 1 (tối thiểu) đến 50 (tối đa) ký tự.
-* Tên Dashboard chỉ có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), dấu gạch dưới (\_), dấu gạch ngang (-) , ký tự / và ký tự @.
-* Tên Dashboard không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, tên tài khoản, mật khẩu đăng nhập,...).&#x20;
-* Tên Dashboard phải là duy nhất trong một tài khoản VNG Cloud cho đến khi Dashboard đó bị xóa.&#x20;
+* The Dashboard name must be between 1 (minimum) and 50 (maximum) characters in length.
+* The Dashboard name can only include uppercase letters, lowercase letters (a-z, A-Z), numbers (0-9), dots (.), underscores (\_), hyphens (-), slashes (/) and the @ character.&#x20;
+* The Dashboard name should not contain sensitive information (e.g., IP addresses, account names, login passwords,...).&#x20;
+* The Dashboard name must be unique within a VNG Cloud account until it is deleted.&#x20;
 
-Ví dụ minh họa
+Examples:
 
-* Các tên Dashboard ví dụ sau đây hợp lệ và tuân theo các nguyên tắc đặt tên được đề xuất:
+* Here are examples of valid and compliant Dashboard names following the proposed naming conventions:
   * monitor\_host@1
   * logproject-DashboardA
   * ...
-* Các tên Dashboard ví dụ sau đây hợp lệ nhưng chúng tôi không khuyến khích bạn sử dụng:
+* The following Dashboard names are valid but we do not recommend using them:
   * [docexamplewebsite.com](http://docexamplewebsite.com/)
   * 1.1.1.2/10
   * ...
-* Các tên Dashboard ví dụ sau không hợp lệ:
+* Examples of invalid Dashboard names are:
   * Report\_usage\_80\_% (chứa ký tự %)
   * Dashboard\&Report (chứa ký tự &)
   * ...
 
 ***
 
-### Khởi tạo Dashboard <a href="#dashboard-khoitaodashboard" id="dashboard-khoitaodashboard"></a>
+### Create a Dashboard <a href="#dashboard-khoitaodashboard" id="dashboard-khoitaodashboard"></a>
 
-Để khởi tạo một Dashboard, bạn có thể sử dụng vMonitor Platform theo hướng dẫn bên dưới:&#x20;
+To initialize a Dashboard, you can use the vMonitor Platform following the instructions below:
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
-2. Chọn thư mục **Dashboard.**
-3. Chọn **Create a Dashboard.**
-4. Màn hình **Create Dashboard** được hiển thị. Nhập **Dashboard name**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho Dashboard của bạn. Đừng lo lắng, sau khi tạo Dashboard, bạn có thể thay đổi tên cho Dashboard của bạn.&#x20;
-5. chọn **Create**.
-
-***
-
-### Xem danh sách Dashboard <a href="#dashboard-xemdanhsachdashboard" id="dashboard-xemdanhsachdashboard"></a>
-
-Để xem các Dashboards, bạn có thể:&#x20;
-
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
-2. Chọn thư mục **Dashboard.**
-3. Trên trang hiển thị danh sách **Dashboard** hiển thị, bạn có thể lọc hiển thị danh sách **Dashboard** theo các Loại Dashboard và ý nghĩa được mô tả tại các bảng bên dưới:
-
-<table data-header-hidden><thead><tr><th width="194"></th><th></th></tr></thead><tbody><tr><td><strong>Loại Dashboard</strong></td><td><strong>Mô tả</strong></td></tr><tr><td>All Dashboards</td><td>Tất cả các dashboard đang có</td></tr><tr><td>All host</td><td>Tất cả các Dashboard được tạo tự động bởi vMonitor Platform khi bạn thiết lập một Host.</td></tr><tr><td>All integration</td><td>Tất cả các Dashboard được tạo tự động bởi vMonitor Platform khi bạn thiết lập các ứng dụng tích hợp.</td></tr><tr><td>All VNG Cloud</td><td>Tất cả các Dashboard được tạo bởi hệ thống vMonitor Platform cho các Product của VNG Cloud</td></tr><tr><td>Created by you</td><td>Các Dashboard được tạo bởi người sử dụng</td></tr><tr><td>Favourite</td><td>Các Dashboard được đánh dấu là yêu thích.</td></tr></tbody></table>
-
-Bạn có thể đánh dấu 1 **Dashboard tùy chỉnh** là Dashboard yêu thích cũng như bỏ chúng khỏi danh sách yêu thích bằng cách chọn <img src="../../../.gitbook/assets/image (47).png" alt="" data-size="line">trên mỗi **Dashboard**. Khi biểu tượng trên Dashboard là <img src="../../../.gitbook/assets/image (48).png" alt="" data-size="line">nghĩa là **Dashboard** đã được thêm vào danh sách yêu thích thành công và ngược lại khi biểu tượng trên **Dashboard** là <img src="../../../.gitbook/assets/image (49).png" alt="" data-size="line">nghĩa là **Dashboard** chưa được thêm vào danh sách yêu thích thành công.
+1. Login into vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)
+2. Select the menu **Dashboard.**
+3. Select **Create a Dashboard.**
+4. The **Create Dashboard** screen is displayed. Enter **Dashboard name** and ensure it complies with our naming conventions for your Dashboard. Don't worry, after creating the Dashboard, you can change its name if needed.
+5. Select **Create**.
 
 ***
 
-### Thay đổi tên Dashboard <a href="#dashboard-thaydoitendashboard" id="dashboard-thaydoitendashboard"></a>
+### View list of Dashboard <a href="#dashboard-xemdanhsachdashboard" id="dashboard-xemdanhsachdashboard"></a>
 
-Để thay đổi tên của Dashboard là bạn đã tạo trước đó, hãy làm theo hướng dẫn bên dưới:
+To view the Dashboards, you can:
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
-2. Chọn thư mục **Dashboard.**
-3. Tại **Dashboard** mà bạn muốn thay đổi tên, chọn biểu tượng<img src="../../../.gitbook/assets/image (50).png" alt="" data-size="line">
-4. Chọn **Rename**.
-5. Nhập **Dashboard name**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho Dashboard của bạn.&#x20;
-6. Chọn **Save**.
+1. Login into vMonitor Platform.
+2. Select the menu **Dashboard.**
+3. On the **Dashboard** list display page, you can filter the **Dashboard** list according to the types of Dashboard and their meanings as described in the tables below:
 
-Bạn chỉ có thể thay đổi tên những Dashboard được tạo bởi chính bạn. Đối với những **Dashboard mặc định** được tạo tự động bởi hệ thống của chúng tôi, bạn không thể đổi tên mà chỉ có thể tạo bản sao Dashboard.
+<table data-header-hidden><thead><tr><th width="194"></th><th></th></tr></thead><tbody><tr><td><strong>Loại Dashboard</strong></td><td><strong>Description</strong></td></tr><tr><td>All Dashboards</td><td>All existing dashboards</td></tr><tr><td>All host</td><td>All Dashboards are automatically created by the vMonitor Platform when you set up a Host.</td></tr><tr><td>All integration</td><td>All Dashboards are automatically created by the vMonitor Platform when you set up integrated applications.</td></tr><tr><td>All VNG Cloud</td><td>All Dashboards are created by the vMonitor Platform system for VNG Cloud Products.</td></tr><tr><td>Created by you</td><td>Dashboards created by users</td></tr><tr><td>Favourite</td><td>Favorite Dashboards.</td></tr></tbody></table>
 
-***
-
-### Tạo bản sao Dashboard <a href="#dashboard-taobansaodashboard" id="dashboard-taobansaodashboard"></a>
-
-Để tạo bản sao cho một Dashboard, hãy làm theo hướng dẫn bên dưới:
-
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
-2. Chọn thư mục **Dashboard.**
-3. Tại **Dashboard** mà bạn muốn tạo bản sao, chọn <img src="../../../.gitbook/assets/image (51).png" alt="" data-size="line">
-4. Chọn **Clone Dashboard.**
-5. Nhập **Dashboard name**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho Dashboard của bạn.&#x20;
-6. Chọn **Clone.**
-
-Lúc này một **Dashboard** mới với thông số giống như **Dashboard** ban đầu được tạo. Trên **Dashboard** mới này, bạn có thể thực hiện tùy chỉnh các thông số cũng như cấu hình thêm, xóa Widget theo mong muốn.
+The **Dashboard** has not been successfully added to the favorites list. The **Dashboard** has been successfully added to the favorites list and vice versa when the icon <img src="../../../.gitbook/assets/image (105).png" alt="" data-size="line"> on the **Dashboard** is on each **Dashboard**. When the icon on the Dashboard is <img src="../../../.gitbook/assets/image (106).png" alt="" data-size="line">, you can mark a **custom Dashboard** as a favorite or remove it from the favorites list by re-selecting it.
 
 ***
 
-### Xóa Dashboard <a href="#dashboard-xoadashboard" id="dashboard-xoadashboard"></a>
+### Change Dashboard Name <a href="#dashboard-thaydoitendashboard" id="dashboard-thaydoitendashboard"></a>
 
-Khi bạn không có nhu cầu sử dụng một **Dashboard** tùy chỉnh nữa, bạn có thể thực hiện xóa **Dashboard** khỏi hệ thống theo hướng dẫn bên dưới:&#x20;
+To change the name of the Dashboard you created earlier, follow the instructions below:
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
-2. Chọn thư mục **Dashboard.**
-3. Tại **Dashboard** mà bạn muốn xóa, chọn <img src="../../../.gitbook/assets/image (52).png" alt="" data-size="line">
-4. Chọn **Delete**.
-5. Tại màn hình xác nhận xóa Dashboard, chọn **Delete**.
+1. Login into vMonitor Platform.
+2. Select the menu **Dashboard.**
+3. In the **Dashboard** you want to rename, select the icon <img src="../../../.gitbook/assets/image (50).png" alt="" data-size="line">
+4. Select **Rename**.
+5. Input the **Dashboard name**, Please enter a name that complies with our guidelines for your Dashboard.
+6. Select **Save**.
 
-Sau khi bạn thực hiện xóa thành công thì **Dashboard** của bạn sẽ bị xóa hoàn toàn khỏi hệ thống của chúng tôi. Bạn không thể khôi phục lại **Dashboard** đã xóa nên hãy lưu ý cẩn thận khi sử dụng tính năng này.&#x20;
+You can only rename Dashboards created by yourself. For **default Dashboards** automatically generated by our system, you cannot rename them but can create a Dashboard copy.
+
+***
+
+### Clone a Dashboard <a href="#dashboard-taobansaodashboard" id="dashboard-taobansaodashboard"></a>
+
+To create a copy of a Dashboard, follow the instructions below:
+
+1. Login into vMonitor Platform.
+2. Select the menu **Dashboard.**
+3. On **Dashboard** which you wanna clone, chọn <img src="../../../.gitbook/assets/image (51).png" alt="" data-size="line">
+4. Select **Clone Dashboard.**
+5. Input **Dashboard name**, Please enter a name that complies with our guidelines for your Dashboard.
+6. Select **Clone.**
+
+At this point, a new **Dashboard** with the same parameters as the initial **Dashboard** is created. On this new **Dashboard**, you can customize the parameters as well as configure additional settings or delete Widgets as desired.
+
+***
+
+### Delete a Dashboard <a href="#dashboard-xoadashboard" id="dashboard-xoadashboard"></a>
+
+If you no longer need to use a custom **Dashboard**, you can delete it from the system following the instructions below:
+
+1. Login into vMonitor Platform.
+2. Select the menu **Dashboard.**
+3. On **Dashboard** which you wanna delete, select <img src="../../../.gitbook/assets/image (52).png" alt="" data-size="line">
+4. Select **Delete**.
+5. On the Delete Dashboard confirmation screen, select **Delete**.
+
+After you successfully delete, your **Dashboard** will be completely removed from our system. You cannot restore a deleted **Dashboard**, so please use this feature cautiously.
