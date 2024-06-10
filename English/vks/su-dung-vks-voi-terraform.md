@@ -8,35 +8,26 @@ Bản thân Terraform không có giao diện người dùng đồ họa, thay v�
 
 ***
 
-#### Để sử dụng VKS với Terraform, bạn cần làm các bước sau đây: <a href="#quanlyvcontainervoiterraform-dequanlyvcontainervoiterraform-bancanlamcacbuocsauday" id="quanlyvcontainervoiterraform-dequanlyvcontainervoiterraform-bancanlamcacbuocsauday"></a>
+### Các bước thực hiện <a href="#quanlyvcontainervoiterraform-dequanlyvcontainervoiterraform-bancanlamcacbuocsauday" id="quanlyvcontainervoiterraform-dequanlyvcontainervoiterraform-bancanlamcacbuocsauday"></a>
 
-### **Cài đặt Terraform CLI** <a href="#quanlyvcontainervoiterraform-caidatterraformcli" id="quanlyvcontainervoiterraform-caidatterraformcli"></a>
+Để khởi tạo một Cluster Kubernetes bằng Terraform, bạn cần thực hiện các bước sau:
 
-Để có thể quản lý vContainer với Terraform bạn cần cài đặt Terraform CLI theo hướng dẫn [tại đây](../vserver/compute-hcm03-1a/terraform/cai-dat-terraform.md).
+1. **Truy cập IAM Portal** tại [đây](https://iam.console.vngcloud.vn/), thực hiện tạo Service Account với quyền hạn **VKS Full Access**. Cụ thể, tại trang IAM, bạn có thể:
+   * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account.
+   * Tìm và chọn **Policy:** **VKSFullAccess** sau đó nhấn "**Create a Service Account**" để tạo Service Account, **Policy: VKSFullAccess** do VNG Cloud tạo ra, bạn không thể xóa các policy này.
+   * Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
+2. **Truy cập VKS Portal** tại [đây](https://vks.console.vngcloud.vn/overview)**, thực hiện Activate** dịch vụ VKS ở tab **Overview.** Hãy chờ đợi tới khi chúng tôi khởi tạo thành công tài khoản VKS của bạn.
+3. **Cài đặt Terraform:**
+   * Tải xuống và cài đặt Terraform cho hệ điều hành của bạn từ [https://developer.hashicorp.com/terraform/install](https://developer.hashicorp.com/terraform/install).
+4. **Khởi tạo cấu hình Terraform:**
+   * Tạo tệp `variable.tf` và khai báo thông tin Service Account trong file này.
+   * Tạo tệp `main.tf` và định nghĩa các tài nguyên Kubernetes Cluster mà bạn muốn tạo.
 
-***
+Ví dụ:
 
-### **Cấp quyền IAM cho việc sử dụng** <a href="#quanlyvcontainervoiterraform-capquyeniamchoviecsudung" id="quanlyvcontainervoiterraform-capquyeniamchoviecsudung"></a>
+* Tệp `variable.tf:`bạn cần thay thế Client ID và Client Secret đã khởi tạo ở bước 1 ở file này.
 
-Để có thể thực hiện quản lý VKS với Terraform, bạn cần khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **VKSFullAccess**. Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts) và thực hiện theo các bước sau:
-
-* Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account.
-* Tìm và chọn **Policy:** **VKSFullAccess** sau đó nhấn "**Create a Service Account**" để tạo Service Account, **Policy: VKSFullAccess** do VNG Cloud tạo ra, bạn không thể xóa các policy này.
-* Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
-
-***
-
-### **Tạo thư mục chứa Terraform file** trên thiết bị của bạn <a href="#quanlyvcontainervoiterraform-taothumucchuaterraformfilevataiexamplefiletuvngcloudrepo" id="quanlyvcontainervoiterraform-taothumucchuaterraformfilevataiexamplefiletuvngcloudrepo"></a>
-
-Sau khi tạo một **Service Account** với policy: **VKSFullAccess,** bạn cần tạo một các terraform file (main.tf, variable.tf) để làm việc với VKS. Bạn có thể tải các file có sẵn này của chúng tôi tại [đây](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples).
-
-***
-
-### **Cài đặt thông số trong Terraform file** <a href="#quanlyvcontainervoiterraform-caidatthongsotrongterraformfile" id="quanlyvcontainervoiterraform-caidatthongsotrongterraformfile"></a>
-
-* Trên file **variable.tf**, bạn hãy thêm thông tin Client\_ID và Client\_Secret đã tạo bên trên. Cụ thể, file variable.tf sẽ có cấu trúc như sau:
-
-```markup
+```
 variable "client_id" {
   type = string
   default = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
@@ -46,6 +37,8 @@ variable "client_secret" {
   default = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 }
 ```
+
+***
 
 * Trên file **main.tf**, bạn cần có thể thêm resource để tạo Cluster/ Node Group:
   * Tạo Cluster my-vks-cluster và Node Group my-nodegroup độc lập:
@@ -84,6 +77,13 @@ resource "vngcloud_vks_cluster" "primary" {
 **Chú ý:**
 
 * Chúng tôi khuyên bạn nên tạo và quản lý các Cluster, Node Group dưới dạng resource riêng biệt, như trong ví dụ bên dưới. Điều này cho phép bạn thêm hoặc xóa các Node Group mà không cần tạo lại toàn bộ Cluster. Nếu bạn khai báo trực tiếp Node Group Default trong tài nguyên vngcloud\_vks\_cluster, bạn không thể xóa chúng mà không tạo lại chính Cluster đó.
+*   Trong file main.tf, để khởi tạo một cluster với một node group thành công, bạn bắt buộc cần nhập thông tin của 4 field sau:
+
+    ```
+      vpc_id    = "net-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
+      subnet_id = "sub-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
+      ssh_key_id= "ssh-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
+    ```
 {% endhint %}
 
 <mark style="color:blue;">**Ví dụ 1:**</mark>
@@ -121,8 +121,8 @@ resource "vngcloud_vks_cluster" "primary" {
   cidr      = "172.16.0.0/16"
   enable_private_cluster = false
   network_type = "CALICO"
-  vpc_id    = "net-70ef12d4-d619-43fc-88f0-1c1511683ed8"
-  subnet_id = "sub-0725ef54-a32e-404c-96f2-34745239c28d"
+  vpc_id    = "net-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
+  subnet_id = "sub-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
   enabled_load_balancer_plugin = true
   enabled_block_store_csi_plugin = true
 }
@@ -144,7 +144,7 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
   disk_size = 20
   disk_type = "vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018"
   enable_private_nodes = false
-  ssh_key_id= "ssh-f923c53c-cba7-4131-9f86-175d04ae218b"
+  ssh_key_id= "ssh-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
   labels = {
     "mylabel" = "vngcloud"
   }
@@ -193,8 +193,8 @@ resource "vngcloud_vks_cluster" "primary" {
   cidr      = "172.16.0.0/16"
   enable_private_cluster = false
   network_type = "CALICO"
-  vpc_id    = "net-70ef12d4-d619-43fc-88f0-1c1511683ed8"
-  subnet_id = "sub-0725ef54-a32e-404c-96f2-34745239c28d"
+  vpc_id    = "net-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
+  subnet_id = "sub-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
   enabled_load_balancer_plugin = true
   enabled_block_store_csi_plugin = true
 }
@@ -216,7 +216,7 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
   disk_size = 20
   disk_type = "vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018"
   enable_private_nodes = true
-  ssh_key_id= "ssh-f923c53c-cba7-4131-9f86-175d04ae218b"
+  ssh_key_id= "ssh-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
   labels = {
     "mylabel" = "vngcloud"
   }
@@ -256,8 +256,8 @@ resource "vngcloud_vks_cluster" "primary" {
   white_list_node_cidr = "172.25.32.1/16"
   enable_private_cluster = false
   network_type = "CALICO"
-  vpc_id    = "net-70ef12d4-d619-43fc-88f0-1c1511683ed8"
-  subnet_id = "sub-0725ef54-a32e-404c-96f2-34745239c28d"
+  vpc_id    = "net-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
+  subnet_id = "sub-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
   enabled_load_balancer_plugin = true
   enabled_block_store_csi_plugin = true
 }
@@ -279,7 +279,7 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
   disk_size = 20
   disk_type = "vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018"
   enable_private_nodes = true
-  ssh_key_id= "ssh-f923c53c-cba7-4131-9f86-175d04ae218b"
+  ssh_key_id= "ssh-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
   labels = {
     "mylabel" = "vngcloud"
   }
