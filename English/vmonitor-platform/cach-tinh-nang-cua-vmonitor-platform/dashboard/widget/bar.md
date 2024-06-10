@@ -1,39 +1,39 @@
 # Bar
 
-### Tổng quan
+### Overview
 
-**Bar chart** (biểu đồ cột) là một loại biểu đồ được sử dụng để so sánh các giá trị của các nhóm hoặc các hạng mục khác nhau. Bar chart trong vMonitor Platform gồm nhiều thanh dọc, mỗi thanh thể hiện một giá trị của một nhóm hoặc một điểm dữ liệu.&#x20;
+**Bar chart** is a type of chart used to compare values of different groups or categories. In the vMonitor Platform, a bar chart consists of multiple vertical bars, each representing a value of a group or data point.
 
 <figure><img src="../../../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### Cấu hình biểu đồ
+### Widget Configuration
 
 <figure><img src="../../../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
-#### 1. Choose graph style&#x20;
+#### 1. Choose graph style
 
-Đối với biểu đồ dạng bar, tại mục này bạn chọn Style là **Bar**
+For a bar chart, select **Bar** for the Style.
 
 <figure><img src="../../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Graph your data
 
-Chọn loại dữ liệu để vẽ Widget:
+Select data type to draw Widget:
 
-* **Metrics: không hỗ trợ.**
-* Logs: xem [Log Query](../query/log-query.md) để cấu hình cho loại dữ liệu Logs.
+* **Metrics: No Support.**
+* Logs: view Log Query to configure for the type of Logs data.
 
-Alias: Bạn có thể đặt Alias cho mỗi câu query, alias này sẽ được hiển thị trên graph và legend, điều này rất hữu ích cho những tên metric, logs hay những câu query có filter (bộ lọc) dài.&#x20;
+Alias: You can set an Alias for each query; this alias will be displayed on the graph and legend. This is very useful for long metric names, logs, or queries with extensive filters.
 
-#### 3. Fixed time range&#x20;
+#### 3. Fixed time range
 
-Khung thời gian cố định là một thuộc tính của Widget mà bạn có thể thiết lập để lọc dữ liệu trên Widget theo một khung thời gian cố định mà không phụ thuộc với khung thời gian (time range) của Dashboard. Mỗi Widget đều có thể thiết lập Fixed time range riêng biệt, bạn có thể chọn một trong các khung thời gian được mô tả ở bảng bên dưới. Ví dụ: nếu bạn chọn Global time thì khoảng thời gian lấy dữ liệu trên Widget được hiển thị sẽ được bằng khoảng thời gian mà bạn chọn trên Dashboard. Tức là khi thay đổi thời gian lấy dữ liệu trên Dashboard thì thời gian lấy dữ liệu của Widget sẽ thay đổi theo. Khuyến khích sử dụng lựa chọn này. Nếu bạn chọn Pass N minutes (N = 5,10,...) thì khoảng thời gian lấy dữ liệu trên Widget cố định (không thay đổi) luôn là 5, 10,...phút trước.&#x20;
+A fixed time range is an attribute of a Widget that you can set to filter data within the Widget based on a specific time range, independent of the Dashboard's time range. Each Widget can have its own Fixed time range settings, and you can select from the time ranges described in the table below. For example, if you select Global time, the data period displayed on the Widget will match the period selected on the Dashboard. Thus, changing the Dashboard's data period will also alter the Widget's data period accordingly. This option is recommended. If you choose Pass N minutes (N = 5, 10,...), the data period on the Widget remains fixed (unchanged) at 5, 10,...minutes prior.
 
 #### 4. Configure graph
 
-Ở mỗi loại biểu đồ Line, Bar, Stacked Area, Pie bạn cần chọn thuộc tính biểu đồ tương ứng. Các thuộc tính được chúng tôi mô tả ở bảng bên dưới:&#x20;
+For each type of chart: Line, Bar, Stacked Area, Pie, you need to select the corresponding chart attributes. The attributes are described in the table below:
 
 | **Parameter**     | **Options**                      |
 | ----------------- | -------------------------------- |
@@ -44,4 +44,4 @@ Khung thời gian cố định là một thuộc tính của Widget mà bạn c�
 | Y-axis Max value  | Custom value                     |
 | Y-axis Max value  | Custom value                     |
 
-Chọn **Create** để tạo Widget, nếu có nhu cầu thay đổi tên widget thì bạn có thể thực hiện chỉnh sửa tại **Widget name**.
+Select **Create** to create a Widget. If you need to change the widget name, you can edit it in Widget name.

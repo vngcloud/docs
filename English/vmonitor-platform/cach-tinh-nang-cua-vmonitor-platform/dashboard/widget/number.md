@@ -1,34 +1,34 @@
 # Number
 
-### Tổng quan
+### Overview
 
-**Number chart** với chỉ số tóm tắt là một loại biểu đồ thể hiện các số được tính toán từ một bộ dữ liệu, thay vì thể hiện các số gốc.
+**Number chart** with a summary index is a type of chart that displays numbers calculated from a dataset, rather than showing the original numbers.
 
 <figure><img src="../../../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### Cấu hình biểu đồ
+### Widget Configuration
 
 <figure><img src="../../../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
 
-#### 1. Choose graph style&#x20;
+#### 1. Choose graph style
 
-Đối với biểu đồ dạng number, tại mục này bạn chọn Style là **Number**
+For a number chart, at this section, select Style as **Number.**
 
 <figure><img src="../../../../.gitbook/assets/image (69).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### 2. Graph your data
 
-Chọn loại dữ liệu để vẽ Widget:
+Select data type to draw Widget:
 
-* Metrics: xem [Metric query](../query/metric-query.md) để cấu hình cho loại dữ liệu Metrics.
-* Logs: xem [Log Query](../query/log-query.md) để cấu hình cho loại dữ liệu Logs.
+* Metrics: View Metric query to configure the type of Metrics data.
+* Logs: see Log Query for configuration of the Logs data type.
 
-Alias: Bạn có thể đặt Alias cho mỗi câu query, alias này sẽ được hiển thị trên graph và legend, điều này rất hữu ích cho những tên metric, logs hay những câu query có filter (bộ lọc) dài.&#x20;
+Alias: You can set an Alias for each query. This alias will be displayed on the graph and legend, which is very useful for metrics names, logs, or queries with long filters.
 
-#### 3. Fixed time range&#x20;
+#### 3. Fixed time range
 
-Khung thời gian cố định là một thuộc tính của Widget mà bạn có thể thiết lập để lọc dữ liệu trên Widget theo một khung thời gian cố định mà không phụ thuộc với khung thời gian (time range) của Dashboard. Mỗi Widget đều có thể thiết lập Fixed time range riêng biệt, bạn có thể chọn một trong các khung thời gian được mô tả ở bảng bên dưới. Ví dụ: nếu bạn chọn Global time thì khoảng thời gian lấy dữ liệu trên Widget được hiển thị sẽ được bằng khoảng thời gian mà bạn chọn trên Dashboard. Tức là khi thay đổi thời gian lấy dữ liệu trên Dashboard thì thời gian lấy dữ liệu của Widget sẽ thay đổi theo. Khuyến khích sử dụng lựa chọn này. Nếu bạn chọn Pass N minutes (N = 5,10,...) thì khoảng thời gian lấy dữ liệu trên Widget cố định (không thay đổi) luôn là 5, 10,...phút trước.&#x20;
+A fixed time range is an attribute of a Widget that allows you to filter data within the Widget for a set period, independent of the Dashboard's time range. Each Widget can have its own Fixed time range configuration, from the options described in the table below. For example, if you select Global time, the data displayed on the Widget will match the time range chosen on the Dashboard. This means that altering the data time range on the Dashboard will update the Widget's data time range accordingly. This option is recommended. If you select Pass N minutes (N = 5,10,...), the data displayed on the Widget will be fixed to the last 5, 10, etc., minutes, regardless of changes in the Dashboard.
 
-Chọn **Create** để tạo Widget, nếu có nhu cầu thay đổi tên widget thì bạn có thể thực hiện chỉnh sửa tại **Widget name**.
+Select **Create** to create a Widget. If you need to change the widget name, you can edit it at Widget name

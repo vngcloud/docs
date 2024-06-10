@@ -29,18 +29,18 @@ To change the line's weight and transparency, you can adjust using the following
 
 Choose data type to draw Widget:
 
-* Metrics: xem Metric Query để cấu hình cho loại dữ liệu Metrics.
-* Logs: xem Log Query để cấu hình cho loại dữ liệu Logs.
+* Metrics: See Metric Query to configure for the Metrics data type.
+* Logs: refer to Log Query to configure for Logs data.
 
-Alias: Bạn có thể đặt Alias cho mỗi câu query, alias này sẽ được hiển thị trên graph và legend, điều này rất hữu ích cho những tên metric, logs hay những câu query có filter (bộ lọc) dài.
+Alias: You can set an alias for each query. This alias will be displayed on the graph and legend, which is very useful for metric names, logs, or lengthy queries with filters.
 
 #### 3. Fixed time range
 
-Khung thời gian cố định là một thuộc tính của Widget mà bạn có thể thiết lập để lọc dữ liệu trên Widget theo một khung thời gian cố định mà không phụ thuộc với khung thời gian (time range) của Dashboard. Mỗi Widget đều có thể thiết lập Fixed time range riêng biệt, bạn có thể chọn một trong các khung thời gian được mô tả ở bảng bên dưới. Ví dụ: nếu bạn chọn Global time thì khoảng thời gian lấy dữ liệu trên Widget được hiển thị sẽ được bằng khoảng thời gian mà bạn chọn trên Dashboard. Tức là khi thay đổi thời gian lấy dữ liệu trên Dashboard thì thời gian lấy dữ liệu của Widget sẽ thay đổi theo. Khuyến khích sử dụng lựa chọn này. Nếu bạn chọn Pass N minutes (N = 5,10,...) thì khoảng thời gian lấy dữ liệu trên Widget cố định (không thay đổi) luôn là 5, 10,...phút trước.
+Fixed time range is a property of a Widget that you can set to filter data on the Widget according to a fixed time range, independent of the Dashboard's time range. Each Widget can have its own Fixed time range setting, and you can select from the time ranges described in the table below. For example, if you choose Global time, the time range for data displayed on the Widget will match the time range you select on the Dashboard. This means that changing the time range on the Dashboard will also change the time range for data on the Widget. It is recommended to use this option. If you choose Pass N minutes (N = 5,10,...), the data time range on the Widget will be fixed (unchanging) to always be the previous 5, 10,... minutes.
 
 #### 4. Configure graph
 
-Ở mỗi loại biểu đồ Line, Bar, Stacked Area, Pie bạn cần chọn thuộc tính biểu đồ tương ứng. Các thuộc tính được chúng tôi mô tả ở bảng bên dưới:
+For each chart type - Line, Bar, Stacked Area, and Pie - you need to select the corresponding chart attributes. The attributes are described in the table below:
 
 | **Parameter**     | **Options**                      |
 | ----------------- | -------------------------------- |
@@ -51,4 +51,4 @@ Khung thời gian cố định là một thuộc tính của Widget mà bạn c�
 | Y-axis Max value  | Custom value                     |
 | Y-axis Max value  | Custom value                     |
 
-Chọn **Create** để tạo Widget, nếu có nhu cầu thay đổi tên widget thì bạn có thể thực hiện chỉnh sửa tại **Widget name**.
+Select **Create** to generate a Widget. If you need to change the widget name, you can edit it under Widget name.

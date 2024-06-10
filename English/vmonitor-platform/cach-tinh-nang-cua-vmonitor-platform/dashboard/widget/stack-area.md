@@ -1,39 +1,39 @@
 # Stack area
 
-### Tổng quan
+### Overview
 
-**Stacked area** (biểu đồ xếp chồng) là một loại biểu đồ thể hiện sự thay đổi của một giá trị theo thời gian thông qua các vùng được xếp chồng lên nhau. Stacked area thường bao gồm nhiều vùng và mỗi vùng có một màu sắc khác nhau. Chiều cao xếp chồng của đường trên cùng sẽ tương ứng với tổng giá giá trị khi cộng lại của tất cả các nhóm được xếp chồng.
+**Stacked area** chart is a type of graph that shows the change in value over time through stacked regions. A stacked area chart usually comprises multiple regions, each with a different color. The height of the stack at the top line corresponds to the total value when all the stacked groups are combined.
 
 <figure><img src="../../../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### Cấu hình biểu đồ
+### Widget Configuration
 
 <figure><img src="../../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
-#### 1. Choose graph style&#x20;
+#### 1. Choose graph style
 
-Đối với biểu đồ dạng stacked area, tại mục này bạn chọn Style là **Stacked area**
+For a stacked area chart, select Style as Stacked area
 
 <figure><img src="../../../../.gitbook/assets/image (63).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### 2. Graph your data
 
-Chọn loại dữ liệu để vẽ Widget:
+Choose data type to create Widget:
 
-* Metrics: xem [Metric query](../query/metric-query.md) để cấu hình cho loại dữ liệu Metrics.
-* Logs: xem [Log Query](../query/log-query.md) để cấu hình cho loại dữ liệu Logs.
+* Metrics: View the Metric query to configure for the Metrics data type.
+* Logs: See Log Query to configure for the Logs data type.
 
-Alias: Bạn có thể đặt Alias cho mỗi câu query, alias này sẽ được hiển thị trên graph và legend, điều này rất hữu ích cho những tên metric, logs hay những câu query có filter (bộ lọc) dài.&#x20;
+Alias: You can assign an Alias to each query; this alias will be displayed on the graph and legend. This is very useful for long metric names, logs, or queries with extensive filters.
 
-#### 3. Fixed time range&#x20;
+#### 3. Fixed time range
 
-Khung thời gian cố định là một thuộc tính của Widget mà bạn có thể thiết lập để lọc dữ liệu trên Widget theo một khung thời gian cố định mà không phụ thuộc với khung thời gian (time range) của Dashboard. Mỗi Widget đều có thể thiết lập Fixed time range riêng biệt, bạn có thể chọn một trong các khung thời gian được mô tả ở bảng bên dưới. Ví dụ: nếu bạn chọn Global time thì khoảng thời gian lấy dữ liệu trên Widget được hiển thị sẽ được bằng khoảng thời gian mà bạn chọn trên Dashboard. Tức là khi thay đổi thời gian lấy dữ liệu trên Dashboard thì thời gian lấy dữ liệu của Widget sẽ thay đổi theo. Khuyến khích sử dụng lựa chọn này. Nếu bạn chọn Pass N minutes (N = 5,10,...) thì khoảng thời gian lấy dữ liệu trên Widget cố định (không thay đổi) luôn là 5, 10,...phút trước.&#x20;
+Fixed time range is a property of a Widget that you can set to filter data on the Widget according to a fixed time frame, independent of the time range of the Dashboard. Each Widget can have its own Fixed time range setting, and you can choose one of the time frames described in the table below. For example, if you select Global time, the data period displayed on the Widget will match the period you choose on the Dashboard. This means that when you change the data period on the Dashboard, the Widget’s data period will change accordingly. It is recommended to use this option. If you select Pass N minutes (N = 5, 10, ...), the data period on the Widget will always be fixed at the past 5, 10, ... minutes, respectively.
 
 #### 4. Configure graph
 
-Ở mỗi loại biểu đồ Line, Bar, Stacked Area, Pie bạn cần chọn thuộc tính biểu đồ tương ứng. Các thuộc tính được chúng tôi mô tả ở bảng bên dưới:&#x20;
+For each type of chart: Line, Bar, Stacked Area, Pie, you need to select the corresponding chart attributes. The attributes are described in the table below:
 
 | **Parameter**     | **Options**                      |
 | ----------------- | -------------------------------- |
@@ -44,4 +44,4 @@ Khung thời gian cố định là một thuộc tính của Widget mà bạn c�
 | Y-axis Max value  | Custom value                     |
 | Y-axis Max value  | Custom value                     |
 
-Chọn **Create** để tạo Widget, nếu có nhu cầu thay đổi tên widget thì bạn có thể thực hiện chỉnh sửa tại **Widget name**.
+Select **Create** to create a Widget. If you need to change the widget's name, you can edit it in Widget name.
