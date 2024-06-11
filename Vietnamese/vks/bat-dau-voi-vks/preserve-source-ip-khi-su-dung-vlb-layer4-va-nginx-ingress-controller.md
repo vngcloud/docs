@@ -6,22 +6,22 @@
 
 ### Điều kiện cần
 
-* Bạn đã thực hiện khởi tạo Cluster trên hệ thống VKS theo các hướng dẫn tại [đây ](expose-mot-service-thong-qua-vlb-layer4.md)và trên cụm của bạn đã được cài đặt **VNGCloud Controller Manager** với appversion từ **v0.2.1** trở lên. Nếu appversion của bạn thấp hơn version tiêu chuẩn này, bạn có thể thực hiện upgrade theo các hướng dẫn sau:
-  * Đầu tiên, bạn cần lấy release name của **vngcloud-controller-manager** đã cài trên cụm của bạn:&#x20;
+*   Bạn đã thực hiện khởi tạo Cluster trên hệ thống VKS theo các hướng dẫn tại [đây ](expose-mot-service-thong-qua-vlb-layer4.md)và trên cụm của bạn đã được cài đặt **VNGCloud Controller Manager** với appversion từ **v0.2.1** trở lên. Nếu appversion của bạn thấp hơn version tiêu chuẩn này, bạn có thể thực hiện upgrade theo các hướng dẫn sau:
 
-  ```
-  $ helm list -A | grep vngcloud-controller-manager
+    * Đầu tiên, bạn cần lấy release name của **vngcloud-controller-manager** đã cài trên cụm của bạn:
 
-  vngcloud-controller-manager-1716448250          kube-system     10              2024-06-10 17:00:17.866548653 +0700 +07 deployed        vngcloud-controller-manager-0.2.3       v0.2.0
-  ```
+    ```
+    $ helm list -A | grep vngcloud-controller-manager
 
-  * Sau đó, bạn hãy thực hiện upgrade lên version mới nhất thông qua lệnh:&#x20;
+    vngcloud-controller-manager-1716448250          kube-system     10              2024-06-10 17:00:17.866548653 +0700 +07 deployed        vngcloud-controller-manager-0.2.3       v0.2.0
+    ```
 
-  ```
-  helm upgrade vngcloud-controller-manager-1716448250 oci://vcr.vngcloud.vn/81-vks-public/vks-helm-charts/vngcloud-controller-manager \
-    --namespace kube-system
-  ```
+    * Sau đó, bạn hãy thực hiện upgrade lên version mới nhất thông qua lệnh:
 
+    ```
+    helm upgrade vngcloud-controller-manager-1716448250 oci://vcr.vngcloud.vn/81-vks-public/vks-helm-charts/vngcloud-controller-manager \
+      --namespace kube-system
+    ```
 * Tiếp theo, bạn cần thực hiện cài đặt nginx-ingress-controller theo lệnh:
 
 ```
@@ -38,7 +38,7 @@ helm install nginx-ingress-controller oci://ghcr.io/nginxinc/charts/nginx-ingres
 kubectl edit cm -n kube-system nginx-ingress-controller
 ```
 
-* Đoạn mã bạn cần thêm như sau:&#x20;
+* Đoạn mã bạn cần thêm như sau:
 
 ```
 data:
@@ -87,3 +87,10 @@ spec:
         pathType: Exact
 ```
 
+* Sau đó tôi sử dụng IP 103.245.252.75 để curl vào host kkk.example.com như sau:
+
+<figure><img src="../../.gitbook/assets/image (383).png" alt=""><figcaption></figcaption></figure>
+
+* Kết quả log ghi nhận được đã có thông tin Client IP này như hình:&#x20;
+
+<figure><img src="../../.gitbook/assets/image (384).png" alt=""><figcaption></figcaption></figure>
