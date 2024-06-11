@@ -9,18 +9,18 @@
 * Bạn đã thực hiện khởi tạo Cluster trên hệ thống VKS theo các hướng dẫn tại [đây ](expose-mot-service-thong-qua-vlb-layer4.md)và trên cụm của bạn đã được cài đặt **VNGCloud Controller Manager** với appversion từ **v0.2.1** trở lên. Nếu appversion của bạn thấp hơn version tiêu chuẩn này, bạn có thể thực hiện upgrade theo các hướng dẫn sau:
   * Đầu tiên, bạn cần lấy release name của **vngcloud-controller-manager** đã cài trên cụm của bạn:&#x20;
 
-```
-$ helm list -A | grep vngcloud-controller-manager
+  ```
+  $ helm list -A | grep vngcloud-controller-manager
 
-vngcloud-controller-manager-1716448250          kube-system     10              2024-06-10 17:00:17.866548653 +0700 +07 deployed        vngcloud-controller-manager-0.2.3       v0.2.0
-```
+  vngcloud-controller-manager-1716448250          kube-system     10              2024-06-10 17:00:17.866548653 +0700 +07 deployed        vngcloud-controller-manager-0.2.3       v0.2.0
+  ```
 
-* Sau đó, bạn hãy thực hiện upgrade lên version mới nhất thông qua lệnh:&#x20;
+  * Sau đó, bạn hãy thực hiện upgrade lên version mới nhất thông qua lệnh:&#x20;
 
-```
-helm upgrade vngcloud-controller-manager-1716448250 oci://vcr.vngcloud.vn/81-vks-public/vks-helm-charts/vngcloud-controller-manager \
-  --namespace kube-system
-```
+  ```
+  helm upgrade vngcloud-controller-manager-1716448250 oci://vcr.vngcloud.vn/81-vks-public/vks-helm-charts/vngcloud-controller-manager \
+    --namespace kube-system
+  ```
 
 * Tiếp theo, bạn cần thực hiện cài đặt nginx-ingress-controller theo lệnh:
 
