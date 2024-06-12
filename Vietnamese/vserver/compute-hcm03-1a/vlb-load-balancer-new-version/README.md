@@ -1,8 +1,14 @@
 # vLB (Load Balancer) - New Version
 
-Welcome to the Load Balancer User Guide for VNG Cloud Cloud System.
+
 
 Hướng dẫn này được thiết kế nhằm mục đích cung cấp cho người dùng cái nhìn toàn diện và hướng dẫn từng bước để hiệu quả hóa việc sử dụng tính năng Load Balancer và tối ưu hóa tài nguyên đám mây của bạn cũng như việc cải thiện tính khả dụng và hiệu suất của ứng dụng load balancer...
+
+
+
+{% embed url="https://youtu.be/o4EOm0WCiJ0?si=GtDmJ_3-YqL8bIZ6" %}
+Hướng dẫn khởi tạo và quản lý Load Balancer
+{% endembed %}
 
 ### Tổng quan về VNG Cloud load balancer <a href="#vlb-loadbalancer-newversion-tongquanvevngcloudloadbalancer" id="vlb-loadbalancer-newversion-tongquanvevngcloudloadbalancer"></a>
 
