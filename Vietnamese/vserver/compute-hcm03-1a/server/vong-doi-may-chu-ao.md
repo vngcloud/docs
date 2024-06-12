@@ -24,8 +24,6 @@ Bạn có thể bắt đầu việc tắt Server để khắc phục sự cố v
 
 Khi nó chuyển sang trạng thái tắt, bạn có thể sửa đổi các thuộc tính cụ thể của Server.
 
-Bạn không bị tính phí cho trạng thái ngừng hoạt động, nhưng có thể phải trả phí đối với Volume đính kèm.
-
 ### **Terminated** <a href="#vongdoimaychuao-terminated" id="vongdoimaychuao-terminated"></a>
 
 Bạn có thể xóa một Server khi bạn không còn nhu cầu sử dụng, trạng thái này được gọi là kết thúc.
