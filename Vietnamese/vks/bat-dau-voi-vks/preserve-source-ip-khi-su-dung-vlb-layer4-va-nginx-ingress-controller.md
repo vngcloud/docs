@@ -52,10 +52,11 @@ data:
 
 ### Cấu hình vLB Layer 4
 
-* Tiếp theo, bạn cần cấu hình vLB Layer4 cho phép sử dụng proxy protocol cho service Load Balancer Nginx qua lệnh:
+* Tiếp theo, bạn cần cấu hình vLB Layer4 cho phép sử dụng proxy protocol cho service Load Balancer Nginx. Giá trị truyền vào là danh sách các service name trong Load Balancer sử dụng Proxy Protocol.&#x20;
 
 ```
-kubectl annotate service -n kube-system nginx-ingress-controller-controller vks.vngcloud.vn/enable-proxy-protocol="http,https"
+kubectl annotate service -n kube-system nginx-ingress-controller-controller \
+   vks.vngcloud.vn/enable-proxy-protocol="http,https"
 ```
 
 * Cuối cùng, bạn hãy thực hiện kiểm tra NLB trên vLB Portal cho tới khi các Load Balancer này được ACTIVE với đầy đủ listener, pool.
