@@ -2,9 +2,14 @@
 
 Lifecycle là một tính năng do VNG Cloud phát triển cho phép bạn thiết lập các hành động mà vStorage áp dụng cho một container. Chúng tôi định nghĩa 2 loại rule sau đây để hỗ trợ bạn quản lý vòng đời của container:
 
-* Transition rule: Rule hỗ trợ di chuyển object giữa các storage class. Ví dụ bạn có thể thiết lập một lifecycle rule di chuyển object từ storage class Gold qua storage class Silver nếu trong vòng 30 ngày mà object không được truy cập.&#x20;
-* Expiration rule: Rule hỗ trợ xóa các object theo điều kiện ràng buộc.  Ví dụ bạn có thể thiết lập xóa object thuộc storage class Gold sau một khoảng thời gian nhất định kể từ ngày object tồn tại trên hệ thống vStorage.\
+<figure><img src="../../../../.gitbook/assets/image (389).png" alt="" width="563"><figcaption></figcaption></figure>
 
+Trong đó:&#x20;
+
+* Transition rule: Rule hỗ trợ di chuyển object giữa các storage class. Bạn có thể thực hiện thiết lập một hoặc nhiều lifecycle rule di chuyển object nếu trong vòng N ngày mà object không được truy cập.
+  * Từ storage class Gold qua storage class Silver.
+  * Từ storage class Gold qua storage class Archive.&#x20;
+* Expiration rule: Rule hỗ trợ xóa các object theo điều kiện ràng buộc.  Ví dụ bạn có thể thiết lập xóa object thuộc storage class Gold sau một khoảng thời gian nhất định kể từ ngày object tồn tại trên hệ thống vStorage.
 
 {% hint style="info" %}
 **Lưu ý:**
