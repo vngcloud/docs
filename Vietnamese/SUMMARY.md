@@ -1,6 +1,10 @@
 # Table of contents
 
 * [🇻🇳 VNG Cloud Help Center](README.md)
+* [Giới thiệu chung](gioi-thieu-chung/README.md)
+  * [Về VNG Cloud](gioi-thieu-chung/ve-vng-cloud.md)
+  * [Thông báo và cập nhật](gioi-thieu-chung/thong-bao-va-cap-nhat/README.md)
+    * [2024](gioi-thieu-chung/thong-bao-va-cap-nhat/2024.md)
 * [vServer](vserver/README.md)
   * [Compute](vserver/compute-hcm03-1a/README.md)
     * [vServer là gì?](vserver/compute-hcm03-1a/vserver-la-gi.md)
