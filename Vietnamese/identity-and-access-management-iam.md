@@ -1,5 +1,11 @@
 # Identity and Access Management (IAM)
 
+##
+
+{% embed url="https://youtu.be/BvrxB9ZK2T0?si=318ook64-hYEhPCi" %}
+Hướng dẫn phân quyền IAM và tích hợp S3 Browser cho vStorage
+{% endembed %}
+
 #### **1. IAM là gì?** <a href="#identityandaccessmanagement-iam-1.iamlagi" id="identityandaccessmanagement-iam-1.iamlagi"></a>
 
 Quản lý Nhận dạng và Truy cập (Identity and Access Management - IAM) là một công cụ bảo mật quan trọng trong cloud computing, tập trung vào việc quản lý và kiểm soát quyền truy cập đến các tài nguyên khác nhau trong môi trường điện toán đám mây. Nó đảm bảo rằng những cá nhân hoặc dịch vụ sẽ có các quyền thích hợp để truy cập vào các tài nguyên cụ thể, đồng thời bảo vệ chống lại việc truy cập trái phép.
