@@ -24,8 +24,6 @@ You can initiate the shutting down to fix the instance problem & restart the ser
 
 When it enters the shutting down state, you can modify specific attributes of the instance.
 
-You are not billed for the shut-down state, but charges may incur in Block storage volume.
-
 ### **Terminated** <a href="#instancelifecycle-terminated" id="instancelifecycle-terminated"></a>
 
 You can delete an instance when you no longer require it. It is called the termination state of the instance.
