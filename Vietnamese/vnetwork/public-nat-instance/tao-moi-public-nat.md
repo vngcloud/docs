@@ -1,14 +1,14 @@
 # Tạo mới Public NAT
 
 * Người dùng login vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/) với region = HCM
-* Chọn menu “Public NAT Instance” tại thanh menu bên trái màn hình
-* Chọn chức năng “Create a Public NAT”
+* Chọn menu “**Public NAT Instance**” tại thanh menu bên trái màn hình
+* Chọn chức năng “**Create a Public NAT**”
 * Nhập thông tin NAT theo yêu cầu gồm:
-  * [ ] Tên NAT
-  * [ ] Instance (Flavor)
-  * [ ] Volume attach nếu có
-  * [ ] VPC, Subnet
-  * [ ] External Interface
+  * Tên NAT
+  * Instance (Flavor)
+  * Volume attach nếu có
+  * VPC, Subnet
+  * External Interface
 * Kiểm tra thông tin giá dịch vụ tại phần “**Summary**”
 * &#x20;Nhấn “**TẠO PUBLIC NAT**”
 
