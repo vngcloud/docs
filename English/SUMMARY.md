@@ -534,6 +534,7 @@
   * [Public NAT Instance](vnetwork/public-nat-instance/README.md)
     * [Create NAT](vnetwork/public-nat-instance/create-nat.md)
     * [Rename NAT](vnetwork/public-nat-instance/rename-nat.md)
+    * [Delete NAT](vnetwork/public-nat-instance/delete-nat.md)
 * [Identity and Access Management (IAM)](identity-and-access-management-iam.md)
 * [Billing management](billing-management/README.md)
   * [Hold Credit](billing-management/hold-credit.md)
