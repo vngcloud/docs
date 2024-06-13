@@ -1,86 +1,88 @@
-# Làm việc với Metric Quota
+# Work with Metric Quota
 
-### Tổng quan
+### Overview
 
-Một Metric quota là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát Metric với số lượng Resource và thời gian lưu trữ cụ thể mà bạn thực hiện mua trên VNG Cloud. Tại một thời điểm bạn có thể sở hữu một Metric quota và sử dụng chúng để phân tích số liệu từ hệ thống của bạn.
-
-***
-
-### Khởi tạo Metric quota
-
-Để khởi tạo một Metric quota, hãy thực hiện theo các bước bên dưới:
-
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn **Quota & Usage**.
-3. Chọn **Buy metric quota.**
-4. Chọn **Class** mà bạn có nhu cầu sử dụng**.** Chúng tôi cung cấp cho bạn chọn 1 trong 2 class bao gồm: Basic, Pro.
-5. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Nếu bạn chọn class **Pro**, bạn có thể lựa chọn số lượng host mong muốn bằng cách kéo thả hoặc nhập con số resources bạn mong muốn tại ô Number of resources. dụng. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Metric Quota Class](../../vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/metric-quota-class.md)
-6. Chọn **Buy Metric Quota**.
-7. Chọn **Chu kỳ** nếu bạn là người dùng trả trước. Chúng tôi cung cấp các chu kỳ trả trước bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng.
-8. Chọn **Continue.**
-9. Thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Metric quota** sẽ được khởi tạo.
-
-<mark style="color:red;">Tại một thời điểm, bạn chỉ có thể sở hữu một gói metric quota, nếu gói này không phù hợp với nhu cầu sử dụng của bạn, hãy thực hiện</mark> <mark style="color:red;"></mark><mark style="color:red;">**Gia hạn Metric quota**</mark> <mark style="color:red;"></mark><mark style="color:red;">hoặc</mark> <mark style="color:red;"></mark><mark style="color:red;">**Tăng giảm hạn mức Metric quota**</mark> <mark style="color:red;"></mark><mark style="color:red;">theo hướng dẫn của chúng tôi.</mark>
-
-Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+A Metric quota is a term on the vMonitor Platform that represents a monitoring package of Metrics with a specific number of Resources and storage duration that you purchase on VNG Cloud. At any given time, you can own a Metric quota and use it to analyze data from your system.
 
 ***
 
-### Xem thông tin Metric quota
+### Initializing Metric quota
 
-Sau khi bạn khởi tạo Metric quota, bạn có thể xem thông tin gói Metric quota mà bạn vừa thực hiện khởi tạo bằng cách:&#x20;
+To initialize a Metric quota, follow the steps below:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Quota\&Usage.**
-3. Chọn mục **Metric**.
-4. Hệ thống hiển thị thông tin gói **Metric quota** đã được khởi tạo và **Usage** thực tế bạn đang sử dụng của gói **Metric quota** đó. Bạn có thể thực hiện Gia hạn trong vòng 7 ngày trước ngày hết hạn của gói Metric quota hoặc Tăng hạn mức gói lên cao hơn bằng cách chọn **Gia hạn** hoặc **Tăng hạn mức.**&#x20;
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.vngcloud.vn/vmonitor).
+2. Select **Quota & Usage**.
+3. Choose **Buy metric quota**.
+4. Select the Class you need. We offer two classes: Basic and Pro.
+5.  If you choose the **Basic** class, you will not be able to customize the package configuration.
 
-***
+    If you choose the **Pro** class, you can select the desired number of hosts by dragging and dropping or entering the number of resources you want in the **Number of resources** field. For more detailed information about the classes, see [Metric Quota Class](../../vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/metric-quota-class.md).
+6. Select **Buy Metric Quota**.
+7. Choose **the Cycle** if you are a prepaid user. We offer prepaid cycles including 1 month, 3 months, 6 months, 12 months, 24 months, and 36 months.
+8. Select **Continue**.
+9. Follow the steps to check out and, after successful payment, the **Metric quota** will be initialized.
 
-### Gia hạn Metric quota
+<mark style="color:red;">At any given time, you can only own one metric quota package. If this package does not meet your needs, please follow our instructions to</mark> <mark style="color:red;"></mark><mark style="color:red;">**extend the Metric quota**</mark> <mark style="color:red;"></mark><mark style="color:red;">or</mark> <mark style="color:red;"></mark><mark style="color:red;">**adjust the Metric quota limits**</mark><mark style="color:red;">.</mark>&#x20;
 
-Để **gia hạn** một **Metric quota**, bạn có thể:&#x20;
-
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Quota\&Usage.**
-3. Chọn mục **Metric.**
-4. Tại gói Metric quota đang sử dụng, chọn biểu tượng ![](http://docs.vngcloud.vn/download/thumbnails/49650622/image2024-2-28\_22-39-59.png?version=1\&modificationDate=1709134800646\&api=v2) sau đó chọn **Renew**.
-5. Chọn **Renew**.
-6. Lựa chọn thời gian mong muốn gia hạn tại cột Period. Khi bạn thực hiện chọn period, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ sử dụng mới và tổng số tiền bạn cần chi trả cho việc gia hạn **gói Metric quota**.
-7. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Metric quota** sẽ được gia hạn.
-
-Cách tính chi phí gia hạn cho mỗi gói Metric quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+The cost calculation for each metric quota package is publicly available on the VNG Cloud homepage. Please refer to [Pricing](../../cach-tinh-phi.md) for more details.
 
 ***
 
-### Tăng giảm hạn mức Metric quota
+### Viewing Metric quota Information
 
-Để **tăng hạn mức** một **Metric quota**, bạn có thể:&#x20;
+After you initialize a Metric quota, you can view the details of the Metric quota package you have created by following these steps:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Quota\&Usage.**
-3. Chọn mục **Metric**.
-4. Tại gói Metric quota đang sử dụng, chọn biểu tượng![](http://docs.vngcloud.vn/download/thumbnails/49650622/image2024-2-28\_22-39-59.png?version=1\&modificationDate=1709134800646\&api=v2) sau đó chọn **Resize**.
-5. Chọn **Metric quota class** mới mà bạn muốn nâng cấp. Nếu gói metric quota của bạn đang ở class Basic thì bạn có thể nâng cấp nó lên class Pro. Nếu gói metric quota của bạn đang ở gói Pro thì bạn có thể nâng cấp nó lên cấu hình cao hơn trong cùng class.&#x20;
-6. Chọn **Resize.**
-7. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Metric quota** sẽ được tăng hạn mức.
-
-Cách tính chi phí tăng hạn mức cho mỗi gói Metric quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.vngcloud.vn/vmonitor).
+2. Select the **Quota & Usage** folder.
+3. Choose the **Metric** section.
+4. The system will display the information of the initialized **Metric quota** package and the actual **Usage** you are using for that Metric quota package. You can extend the package within 7 days before the expiration date of the Metric quota package or increase the quota limit by selecting **Extend** or **Increase quota limit**.
 
 ***
 
-### Xóa Metric quota
+### Renewing a Metric Quota
 
-Bạn đã khởi tạo một Metric quota ban đầu phù hợp với nhu cầu sử dụng của bạn. Hiện tại nhu cầu kinh doanh của bạn thay đổi, bạn không có nhu cầu sử dụng gói Metric quota đã tạo. Chúng tôi khuyến khích bạn nên xóa gói Metric quota này để tối ưu chi phí.&#x20;
+To renew a Metric quota, you can:
 
-Để **xóa** một **Metric quota**, bạn có thể:&#x20;
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.vngcloud.vn/vmonitor).
+2. Select the **Quota & Usage** folder.
+3. Choose the **Metric** section.
+4. In the current Metric quota package, select the icon ![](<../../../.gitbook/assets/image (107).png>) and then choose **Renew**.
+5. Select **Renew**.
+6. Choose the desired renewal period in the **Period** column. When you select the period, the system will automatically calculate the effective time of the new usage cycle and the total amount you need to pay for the renewal of the **Metric quota** package.
+7. Select **Continue** and proceed with the **checkout** steps. After successful **payment**, the **Metric quota** will be renewed.
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Quota\&Usage.**
-3. Chọn mục **Metric**.
-4. Tại gói Metric quota đang sử dụng, chọn **Delete**.
-5. Tại màn hình xác nhận xóa Metric quota, chọn **Delete**.
+The cost calculation for renewing each Metric quota package is publicly available on the VNG Cloud homepage. Please refer to [Pricing ](../../cach-tinh-phi.md)for more details.
 
-Sau khi bạn bạn thực hiện xóa gói Metric quota thì gói metric quota bị xóa sẽ biến mất khỏi danh sách gói metric quota của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](../../cach-tinh-phi.md).&#x20;
+***
 
-<mark style="color:red;">Do hành động xóa Metric quota tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.</mark>
+### Increasing or Decreasing Metric Quota Limits
+
+To **increase the limit** of a **Metric quota**, you can:
+
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.vngcloud.vn/vmonitor).
+2. Select the **Quota & Usage** folder.
+3. Choose the **Metric** section.
+4. In the current Metric quota package, select the icon ![](http://docs.vngcloud.vn/download/thumbnails/49650622/image2024-2-28\_22-39-59.png?version=1\&modificationDate=1709134800646\&api=v2)and then choose **Resize**.
+5. Choose the new **Metric quota class** you want to upgrade to. If your Metric quota package is currently in the Basic class, you can upgrade it to the Pro class. If your Metric quota package is already in the Pro class, you can upgrade it to a higher configuration within the same class.
+6. Select **Resize**.
+7. Select **Continue** and proceed with the **checkout** steps. After successful payment, the **Metric quota** will have its limit increased.
+
+The cost calculation for increasing the limit of each Metric quota package is publicly available on the VNG Cloud homepage. Please refer to [Pricing ](../../cach-tinh-phi.md)for more details.
+
+***
+
+### Deleting a Metric Quota
+
+You have created an initial Metric quota that suits your needs. However, if your business requirements have changed and you no longer need the created Metric quota package, we encourage you to delete it to optimize costs.
+
+To **delete** a **Metric quota**, you can:
+
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.vngcloud.vn/vmonitor).
+2. Select the **Quota & Usage** folder.
+3. Choose the **Metric** section.
+4. In the current Metric quota package, select **Delete**.
+5. On the Metric quota deletion confirmation screen, select **Delete**.
+
+After you delete the Metric quota package, it will disappear from your list of Metric quota packages. If your resources still have remaining usage time, we will refund the unused balance to your credit wallet. For detailed information on how vMonitor Platform calculates resource refund fees, please refer to [Pricing](../../../vserver/compute-hcm03-1a/pricing.md).
+
+<mark style="color:red;">Since deleting a Metric quota carries risks (resources cannot be restored after deletion), we advise you to carefully consider before proceeding with the deletion.</mark>
