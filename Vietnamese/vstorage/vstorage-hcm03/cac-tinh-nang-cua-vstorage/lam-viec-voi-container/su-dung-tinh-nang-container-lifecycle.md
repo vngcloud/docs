@@ -117,9 +117,5 @@ _Trong vòng 2h kể từ khi lifecycle rule này được tạo, hệ thống v
 * _Xóa các object thuộc container01\_version thỏa mãn điều kiện 60 ngày trở thành phiên bản cũ (tức object tồn tại trong container01\_version đủ 60 ngày)._
 * _Xóa các tệp tin delete marker sinh ra ở container01\_version._&#x20;
 
-<img src="../../../../.gitbook/assets/Su_dung_lifecycle_transition.gif" alt="" data-size="original">
-
-<img src="../../../../.gitbook/assets/Su_dung_lifecycle_expiration.gif" alt="" data-size="original">
-
 </details>
 
