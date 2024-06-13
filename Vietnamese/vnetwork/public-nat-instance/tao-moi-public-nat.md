@@ -9,9 +9,8 @@
   * [ ] Volume attach nếu có
   * [ ] VPC, Subnet
   * [ ] External Interface
-* Chọn VPC muốn tạo service endpoint
-* Kiểm tra thông tin giá dịch vụ tại phần “Summary”
-* &#x20;Nhấn “TẠO PUBLIC NAT”
+* Kiểm tra thông tin giá dịch vụ tại phần “**Summary**”
+* &#x20;Nhấn “**TẠO PUBLIC NAT**”
 
 Khi NAT được tạo thành công, người dùng sẽ thấy NAT xuất hiện trên màn hình danh sách NAT.
 
