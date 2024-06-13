@@ -726,6 +726,7 @@
   * [Public NAT Instance](vnetwork/public-nat-instance/README.md)
     * [Tạo mới Public NAT](vnetwork/public-nat-instance/tao-moi-public-nat.md)
     * [Đổi tên NAT](vnetwork/public-nat-instance/doi-ten-nat.md)
+    * [Xóa NAT](vnetwork/public-nat-instance/xoa-nat.md)
 * [Identity and Access Management (IAM)](identity-and-access-management-iam.md)
   * [Bắt đầu với IAM](identity-and-access-management-iam/bat-dau-voi-iam.md)
   * [Ứng dụng phổ biến](identity-and-access-management-iam/ung-dung-pho-bien/README.md)

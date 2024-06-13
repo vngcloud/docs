@@ -1,0 +1,8 @@
+# Xóa NAT
+
+
+
+* Người dùng login vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/) với region = HCM
+* Tại menu “Public NAT Instance”, tìm và chọn NAT muốn xóa
+* Nhấn phải chuột chọn, menu con “Delete”
+* Trên màn hình xuất hiện cảnh báo “Xóa NAT có thể gây ra một số hậu quả với người dùng”, Người dùng nhấn “**Xóa**” xác nhận xóa NAT.
