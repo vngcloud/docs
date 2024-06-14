@@ -1,16 +1,16 @@
-# Linux OS có giới hạn kết nối Internet
+# Linux OS has internet connection limitations
 
-Hướng dẫn [Cài đặt agent tự động](./) yêu cầu kết nối internet HTTPS đến một vài endpoint để tải về các tài nguyên cần thiết cho việc cài đặt, do đó việc cài đặt có thể không thành công tại server bị giới hạn kết nối internet.
+The [installing Metric agent on Server](./) guide for the agent requires an HTTPS internet connection to several endpoints to download the necessary resources for installation. Therefore, the installation may not succeed on a server with restricted internet access.
 
 {% hint style="info" %}
-**Chú ý:**
+**Notice:**
 
-* Lưu ý bạn cần có Quota Metric, nếu chưa có bạn cần thực hiện mua Quota Metric tại [đây](https://docs.vngcloud.vn/pages/viewpage.action?pageId=31555658).
+* Please note that you need to have a Metric Quota. If you do not have one, you need to purchase a Metric Quota [here](../../lam-viec-voi-metric-quota.md).
 {% endhint %}
 
-### **Trường hợp server bị giới hạn kết nối ra ngoài internet**
+### In the case of a server with restricted internet access
 
-#### **1. Kiểm tra và đảm bảo kết nối đến vMonitor Site**
+#### Check and ensure the connection to the vMonitor Site
 
 {% hint style="info" %}
 **Allow by Endpoints:**
@@ -24,32 +24,32 @@ Hướng dẫn [Cài đặt agent tự động](./) yêu cầu kết nối inter
 * IP: 116.118.93.158, Port: 443 - Protocol: HTTPS ( [monitoring-agent.vngcloud.vn](http://monitoring-agent.vngcloud.vn) )
 {% endhint %}
 
-#### **2. Tạo Service Account**&#x20;
+#### **2. Create Service Account**
 
-Bạn cần tạo một Service Account và gắn policy: vMonitorMetricPush để có đủ quyền đẩy Metric về vMonitor (Có thể bỏ qua bước này nếu đã tạo trước đó)
+You need to create a Service Account and attach the policy: vMonitorMetricPush to have sufficient permissions to push Metrics to vMonitor (You can skip this step if it has already been created).
 
-Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts),
+To create a service account, visit [here](https://iam.console.vngcloud.vn/service-accounts),
 
-* Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
-* Tìm và chọn **Policy:** **vMonitorMetricPush,** sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vMonitorMetricPush do VNG Cloud tạo ra chỉ chứa chính xác quyền đẩy metric về hệ thống
-* Sau khi tạo thành công bạn cần phải lưu lại Client\_ID và Secret\_Key để thực hiện bước tiếp theo
+* Select **"Create a Service Account,**" enter a name for the Service Account, and click **Next Step** to assign permissions to the Service Account.
+* Find and select the **Policy: vMonitorMetricPush**, then click "**Create a Service Account**" to create the Service Account. The Policy: vMonitorMetricPush, created by VNG Cloud, contains the exact permissions needed to push metrics to the system.
+* After successfully creating the Service Account, you need to save the Client\_ID and Secret\_Key for the next step.
 
-#### **3. Tiến hành cài đặt:**
+#### **3.** Proceed with the installation:
 
-3.1 Tải về package cài đặt từ một server khác: Chọn một trong những package sau đây tùy vào OS
+3.1 Download the installation package from another server: Choose one of the following packages depending on the OS
 
 * RPM package: [https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.2/telegraf-nightly.x86\_64.rpm](https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.2/telegraf-nightly.x86\_64.rpm)
 * Deb package: [https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.2/telegraf\_nightly\_amd64.deb](https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.2/telegraf\_nightly\_amd64.deb)
 
-3.2 Chuyển package cài đặt đến server: Có thể sử dụng những tool để chuyển hoặc copy package cài đặt đến server (ví dụ: scp, rsync ....)
+3.2 Transfer the installation package to the server: You can use tools to transfer or copy the installation package to the server (e.g., scp, rsync, etc.).
 
-3.3 Tạo thông tin xác thực
+3.3 Create credentials
 
 ```
 echo -e "IAM_CLIENT_ID=YOUR_IAM_CLIENT_ID_XXXXXXXX\nIAM_CLIENT_SECRET=YOUR_IAM_CLIENT_SECRET_XXXXXXXX\nIAM_URL=https://iamapis.vngcloud.vn/accounts-api/v2/auth/token\nVMONITOR_SITE=monitoring-agent.vngcloud.vn" | sudo tee /etc/default/telegraf
 ```
 
-3.4 Thực hiện cài đặt package: Chạy command sau tùy vào OS
+3.4 Install the package: Run the following command based on the OS
 
 * OS: **Centos** - **yum** package manager
 
@@ -60,9 +60,9 @@ sudo yum localinstall /<path_to_file>/telegraf-nightly.x86_64.rpm 
 * OS: **Ubuntu, Debian** - **apt** or **dpkg** package manager
 
 ```
-# Sử dụng 1 trong 2 command sau
+# use 1 of 2 commands following:
 sudo apt install /<path_to_file>/telegraf_nightly_amd64.deb
-# Hoặc
+# or
 sudo dpkg -i /<path_to_file>/telegraf_nightly_amd64.deb
 
 ```
