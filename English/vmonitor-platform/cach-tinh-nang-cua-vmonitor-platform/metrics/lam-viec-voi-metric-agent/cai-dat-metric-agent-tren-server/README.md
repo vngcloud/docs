@@ -1,8 +1,7 @@
-# Cài đặt Metric Agent trên Server
+# Installing Metric Agent on Server
 
-Metric Agent hỗ trợ cài trên 2 hệ điều hành phổ biến là Linux và Window. Chi tiết cách cài đặt với mỗi hệ điều hành được chúng tôi mô tả trong các mục bên dưới:
+The Metric Agent supports installation on two popular operating systems: Linux and Windows. Detailed installation instructions for each operating system are described in the sections below:
 
 * [Linux OS](linux-os.md)
-* [Linux OS có giới hạn kết nối Internet](linux-os-co-gioi-han-ket-noi-internet.md)
+* [Linux OS has Internt connection limitations](linux-os-co-gioi-han-ket-noi-internet.md)
 * [Window OS](window-os.md)
-
