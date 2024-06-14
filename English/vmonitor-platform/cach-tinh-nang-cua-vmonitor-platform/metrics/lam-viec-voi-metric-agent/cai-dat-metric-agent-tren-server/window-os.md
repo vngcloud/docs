@@ -1,144 +1,144 @@
 # Window OS
 
-Để đẩy Metric về vMonitor, bạn cần cài đặt Metric Agent trên server, vMonitor sử dụng Telegraf Agent để đẩy metric về hệ thống, hiện tại Telegraf Agent hỗ trợ Service Account của IAM để xác thực và phân quyền, bạn thực hiện các bước bên dưới để thiết lập Telegraf Agent đẩy metrics về vMonitor
+To push Metrics to vMonitor, you need to install the Metric Agent on your server. vMonitor uses the Telegraf Agent to push metrics to the system. Currently, the Telegraf Agent supports the IAM Service Account for authentication and authorization. Follow the steps below to set up the Telegraf Agent to push metrics to vMonitor.
 
-### **Telegraf Agent với Service Account** <a href="#windowos-telegrafagentvoiserviceaccount" id="windowos-telegrafagentvoiserviceaccount"></a>
+### **Telegraf Agent with Service Account** <a href="#windowos-telegrafagentvoiserviceaccount" id="windowos-telegrafagentvoiserviceaccount"></a>
 
-1. **Tạo Service Account và gắn policy: vMonitorMetricPush để có đủ quyền đẩy Metric về vMonitor**
+1. **Create a Service Account and attach the policy: vMonitorMetricPush to have sufficient permissions to push Metrics to vMonitor.**
 
-Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts):
+To create a service account, visit [here](https://iam.console.vngcloud.vn/service-accounts).
 
-* Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
-* Tìm và chọn **Policy:** **vMonitorMetricPush,** sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vMonitorMetricPush do VNG Cloud tạo ra chỉ chứa chính xác quyền đẩy metric về hệ thống
-* Sau khi tạo thành công bạn cần phải lưu lại Client\_ID và Secret\_Key để thực hiện bước tiếp theo
+* Select "**Create a Service Account**", enter a name for the Service Account, and click **Next Step** to assign permissions to the Service Account.&#x20;
+* Find and select the **Policy: vMonitorMetricPush**, then click "**Create a Service Account**" to create the Service Account. The Policy: vMonitorMetricPush, created by VNG Cloud, contains the exact permissions needed to push metrics to the system.&#x20;
+* After successfully creating the Service Account, you need to save the Client\_ID and Secret\_Key for the next step.
 
-2\. **Tải bản cài  Agent Installer cho Windows**
+2\. **Download the Agent Installer for Windows**
 
-* Truy cập vào link để thực hiện tải agent installer cho Windows : [https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.1/telegraf-nightly\_windows\_amd64.exe](https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.1/telegraf-nightly\_windows\_amd64.exe)
+* Access this link to load agent installer forWindows : [https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.1/telegraf-nightly\_windows\_amd64.exe](https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.1/telegraf-nightly\_windows\_amd64.exe)
 
-3\. **Cài đặt installer với Client\_ID và Secret\_Key đã sao chép ở trên**
+3\. Install the installer using the Client\_ID and Secret\_Key you copied above.
 
-* Chạy agent installer đã tải ở trên
-* Sau khi nhận thông báo, chọn **More Info**
+* Run the agent installer you downloaded above. A
+* fter receiving the notification, select **More Info**.
+
+<figure><img src="../../../../../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
+
+* Then select **Run anyway** to start installing the agent.
+
+<figure><img src="../../../../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
+
+* Chosse **Next** to continue
+
+<figure><img src="../../../../../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
+
+* Enter the two pieces of information, **Client\_ID** and **Secret\_Key**, you copied above into the fields: **IAM\_CLIENT\_ID** and **IAM\_CLIENT\_SECRET:**
+
+<figure><img src="../../../../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
+
+* Keep the default settings and select Next to continue, or if you want to change the installation directory, make the necessary changes.
+
+<figure><img src="../../../../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
+
+* Select "**Accept the license**," then click **Next** to continue.
 
 <figure><img src="../../../../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
 
-* Sau đó chọn **Run anyway**, để bắt đầu cài agent
+* Keep the default settings and select **Next** to continue, or you can customize the shortcut menu name for the agent.
 
 <figure><img src="../../../../../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
 
-* Chọn **Next** để tiếp tục
+* Select **Install** to begin the installation.
 
 <figure><img src="../../../../../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
 
-* Nhập 2 thông tin **Client\_ID** và **Secret\_Key** đã sao chép ở trên vào 2 trường: **IAM\_CLIENT\_ID** và **IAM\_CLIENT\_SECRET**:&#x20;
+* Select **Yes** to grant permissions for the agent to operate.
 
 <figure><img src="../../../../../.gitbook/assets/image (118).png" alt=""><figcaption></figcaption></figure>
 
-* Để mặc định, chọn Next để tiếp tục, hoặc nếu bạn muốn thay đổi thư mục cài đặt thì thực hiện thay đổi
-
-<figure><img src="../../../../../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
-
-* Chọn **Accept the license,** sau đó chọn **Next** để tiếp tục
+* After the installation process is complete, select **Finish**.
 
 <figure><img src="../../../../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
 
-* Để mặc định, chọn **Next** để tiếp tục, hoặc bạn có thể tùy chỉnh shortcut menu name cho agent
+4.**After successful installation, you will see the server on the Infrastructure List/Host page**.
 
 <figure><img src="../../../../../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
-
-* Chọn **Install** để thực hiện cài đặt
-
-<figure><img src="../../../../../.gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure>
-
-* Chọn **Yes** để thực hiện grant quyền cho agent hoạt động
-
-<figure><img src="../../../../../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
-
-* Sau khi quá trình cài đặt hoàn tất, chọn **Finish**
-
-<figure><img src="../../../../../.gitbook/assets/image (124).png" alt=""><figcaption></figcaption></figure>
-
-4\. **Sau khi cài đặt thành công bạn sẽ thấy server ở trang Infrastructure List/Host**&#x20;
-
-<figure><img src="../../../../../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
 
 ### **Telegraf Agent với API\_KEY (deprecated**) <a href="#windowos-telegrafagentvoiapi_key-deprecated-khongkhuyencaosudung-saptoisedunghotrovoiphuongthucnay" id="windowos-telegrafagentvoiapi_key-deprecated-khongkhuyencaosudung-saptoisedunghotrovoiphuongthucnay"></a>
 
 {% hint style="info" %}
-**Chú ý:**
+**Notice:**
 
-* Chúng tôi khuyến cáo bạn không sử dụng phương thức này, trong thời gian sắp tới hệ thống của chúng tôi sẽ dừng hỗ trợ các API Key này.
+* We do not recommend using this method, as our system will soon stop supporting these API Keys.
 {% endhint %}
 
-B1: Tạo API Key (nếu chưa thực hiện tạo bất kỳ API Key nào trước đó )
+Step 1: Create an API Key (if you have not created any API Key before).
 
-* Truy cập vào portal vMonitor Platform Product: [https://hcm-3.console.vngcloud.vn/vmonitor/](https://hcm-3.console.vngcloud.vn/vmonitor/)
-* Chọn **Intergration** => sau đó chọn phần **API Key**
+* Access the vMonitor Platform Product portal: [https://hcm-3.console.vngcloud.vn/vmonitor/](https://hcm-3.console.vngcloud.vn/vmonitor/)
+* Select **Integration** => then choose **API Key**.
+
+<figure><img src="../../../../../.gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure>
+
+* Select **Create an API Key** to create a new one (if you have not created any API Key before).
+
+<figure><img src="../../../../../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
+
+Step 2: Download Agent Installer
+
+* Access the link to download the agent installer:: [https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.23.0-1.4.0/telegraf-nightly\_windows\_amd64.exe](https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.23.0-1.4.0/telegraf-nightly\_windows\_amd64.exe)
+
+Step 3: Install Agent
+
+* Run the agent installer.
+* After receiving the notification, select **More Info**.
+
+<figure><img src="../../../../../.gitbook/assets/image (124).png" alt=""><figcaption></figcaption></figure>
+
+* Then select **Run anyway** to start installing the agent.
+
+<figure><img src="../../../../../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
+
+* Select **Next** to continue.
+
+<figure><img src="../../../../../.gitbook/assets/image (126).png" alt=""><figcaption></figcaption></figure>
+
+* Return to the vMonitor Platform portal, in the API Key section, select the **copy icon** to copy the API Key information.
 
 <figure><img src="../../../../../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
 
-* Chọn **Create an API Key**, để thực hiện tạo mới (nếu chưa tạo bất kỳ API Key nào trước đó)
+* Paste the API Key information into the **credentials** entry field.
 
 <figure><img src="../../../../../.gitbook/assets/image (128).png" alt=""><figcaption></figcaption></figure>
 
-B2: Download Agent Installer
+* You can customize the installation folder if needed.
 
-* Truy cập vào link để thực hiện tải agent installer: [https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.23.0-1.4.0/telegraf-nightly\_windows\_amd64.exe](https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.23.0-1.4.0/telegraf-nightly\_windows\_amd64.exe)
+<figure><img src="../../../../../.gitbook/assets/image (129).png" alt=""><figcaption></figcaption></figure>
 
-B3: Install Agent
-
-* Chạy agent installer
-* Sau khi nhận thông báo, chọn **More Info**
+* Select **Accept the license**, then click **Next** to continue.
 
 <figure><img src="../../../../../.gitbook/assets/image (130).png" alt=""><figcaption></figcaption></figure>
 
-* Sau đó chọn **Run anyway**, để bắt đầu install agent
+* You can customize the shortcut menu name for the agent, then select **Next** to continue.
 
 <figure><img src="../../../../../.gitbook/assets/image (131).png" alt=""><figcaption></figcaption></figure>
 
-* Chọn **Next** để tiếp tục
-
-<figure><img src="../../../../../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
-
-* Quay về Portal vMonitor Platform, ở phần API Key, **chọn** **biểu** **tượng copy**, để copy thông tin API Key
+* Select **Install** to begin the installation.
 
 <figure><img src="../../../../../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
 
-* Paste thông tin API Key vào phần nhập **Credentials**
+* Select **Yes** to grant permissions for the agent to operate.
 
 <figure><img src="../../../../../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
 
-* Có thể tùy chỉnh installation folder
+* After the installation process is complete, select **Finish**.
 
 <figure><img src="../../../../../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
 
-* Chọn **Accept the license,** sau đó chọn **Next** để tiếp tục
+#### Step 4: Verify Agent Operated <a href="#windowos-b4-kiemtraagentdahoatdong" id="windowos-b4-kiemtraagentdahoatdong"></a>
+
+* Access the vMonitor Platform portal, select **Infrastructure list** => choose **Host**, then check if the hostname of the VM has appeared in the list.
+
+<figure><img src="../../../../../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
+
+* Click on the **hostname** to check the monitoring dashboard.
 
 <figure><img src="../../../../../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
-
-* Có thể tùy chỉnh shortcut menu name cho agent, sau đó chọn **Next** để tiếp tục
-
-<figure><img src="../../../../../.gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
-
-* Chọn **Install** để thực hiện cài đặt
-
-<figure><img src="../../../../../.gitbook/assets/image (139).png" alt=""><figcaption></figcaption></figure>
-
-* Chọn Yes để thực hiện grant quyền cho agent hoạt động
-
-<figure><img src="../../../../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
-
-* Sau khi quá trình cài đặt hoàn tất, chọn **Finish**
-
-<figure><img src="../../../../../.gitbook/assets/image (141).png" alt=""><figcaption></figcaption></figure>
-
-#### B4: Kiểm tra agent đã hoạt động <a href="#windowos-b4-kiemtraagentdahoatdong" id="windowos-b4-kiemtraagentdahoatdong"></a>
-
-* Truy cập vào portal vMonitor Platform, chọn **Infrastructure list** => chọn **Host,** sau đó kiểm tra hostname của VM đã xuất hiện trong danh sách
-
-<figure><img src="../../../../../.gitbook/assets/image (142).png" alt=""><figcaption></figcaption></figure>
-
-* Chọn vào tên **Hostname**, để kiểm tra dashboard monitor
-
-<figure><img src="../../../../../.gitbook/assets/image (143).png" alt=""><figcaption></figcaption></figure>
