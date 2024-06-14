@@ -573,6 +573,7 @@
   * [Node Groups](vks/node-groups/README.md)
     * [Auto Healing](vks/node-groups/auto-healing.md)
     * [Auto Scaling](vks/node-groups/auto-scaling.md)
+    * [Làm việc với NVIDIA GPU NodeGroups](vks/node-groups/lam-viec-voi-nvidia-gpu-nodegroups.md)
     * [Upgrading Node Group Version](vks/node-groups/upgrading-node-group-version.md)
     * [Lable và Taint](vks/node-groups/lable-va-taint.md)
   * [Network](vks/network/README.md)
