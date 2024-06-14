@@ -27,7 +27,7 @@ Select data type to draw Widget:
 
 **By default, log data is displayed in Full content view**. If you only want to display a certain number of log fields on the chart, select the log fields at
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 Alias: You can set an Alias for each query. This alias will be displayed on the graph and legend, which is useful for long metric names, logs, or queries with extensive filters.
 
