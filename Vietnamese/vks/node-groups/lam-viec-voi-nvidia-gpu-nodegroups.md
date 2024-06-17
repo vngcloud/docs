@@ -1,11 +1,6 @@
 # Làm việc với NVIDIA GPU NodeGroups
 
-![](../../images/01.png)
-
-\
-
-
-## User Managed
+## Overview
 
 * The [**NVIDIA GPU Operator**](https://github.com/NVIDIA/gpu-operator) is an operator that simplifies the deployment and management of GPU nodes in Kubernetes clusters. It provides a set of Kubernetes custom resources and controllers that work together to automate the management of GPU resources in a Kubernetes cluster.
 * In this guide, we will show you how to:
@@ -533,13 +528,3 @@
     ![](../../images/nodegroup/23.png)
 
     > * When the `ScaledObject` **Ready** value is `True`, the GPU Nodegroup will be scaled based on the GPU usage.
-
-[**NVIDIA GPU Operator**](https://github.com/NVIDIA/gpu-operator)  là một operator giúp đơn giản hóa việc triển khai và quản lý các node GPU trong các cụm Kubernetes. Nó cung cấp một tập hợp các tài nguyên tùy chỉnh và bộ điều khiển của Kubernetes hoạt động cùng nhau để tự động hóa việc quản lý các tài nguyên GPU trong một cụm Kubernetes.
-
-* In this guide, we will show you how to:
-  * Create a nodegroup with NVIDIA GPUs in a VKS cluster.
-  * Install the NVIDIA GPU Operator in a VKS cluster.
-  * Deploy your GPU workload in a VKS cluster.
-  * Configure GPU Sharing in a VKS cluster.
-  * Monitor GPU resources in a VKS cluster.
-  * Autoscale GPU resources in a VKS cluster.
