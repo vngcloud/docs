@@ -19,12 +19,11 @@ Bạn có thể kết nối dễ dàng với các máy chủ Window được t�
 * **Quy tắc Inbound của nhóm bảo mật được tạo** :&#x20;
   * Đảm bảo rằng nhóm bảo mật được liên kết với phiên bản của bạn cho phép lưu lượng RDP đến (cổng 3389) từ địa chỉ IP của bạn. Nhóm bảo mật mặc định không cho phép lưu lượng RDP đến theo mặc định. Để biết thêm thông tin, hãy xem Cho phép lưu lượng truy cập đến cho các phiên bản Windows của bạn.
 * **Network Interface** của máy chủ cần có một địa chỉ IP Public
-*   **Thông tin kết nối đến** máy chủ: Để biết thông tin kết nối của máy chủ, vui lòng kiểm tra email đã đăng ký:\
+* **Thông tin kết nối đến** máy chủ: Để biết thông tin kết nối của máy chủ, vui lòng kiểm tra email đã đăng ký:
 
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/49650320/worddav389ef71d36ef264e4194036d7469d249.png?version=1&#x26;modificationDate=1681440047000&#x26;api=v2&#x26;effects=border-simple,blur-border" alt=""><figcaption></figcaption></figure>
-
-    **Lưu ý:** Thông tin này là bảo mật và chỉ được gởi cho email đã đăng kí. VNG Cloud không thể can thiệp để phục hồi thông tin login của máy chủ (username/ password/ key) trong mọi tình huống.
+**Lưu ý:** Thông tin này là bảo mật và chỉ được gởi cho email đã đăng kí. VNG Cloud không thể can thiệp để phục hồi thông tin login của máy chủ (username/ password/ key) trong mọi tình huống.
 
 ***
 
