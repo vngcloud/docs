@@ -1,6 +1,6 @@
 # Notification
 
-Hiện tại chúng tôi hỗ trợ bạn 5 nền tảng thông báo notification phổ biến bao gồm:
+Currently, we support 5 common notification platforms including:
 
 * Email
 * SMS
@@ -8,5 +8,4 @@ Hiện tại chúng tôi hỗ trợ bạn 5 nền tảng thông báo notificatio
 * Telegram
 * Webhook
 
-Với mỗi gói **Metric quota** và **Log project**, trong cấu hình gói đã được chúng tôi cung cấp tới bạn một số lượng notfication cụ thể. Đối với hình thức cảnh báo qua Email và SMS sẽ có giới hạn số lượng, nếu bạn có nhu cầu sử dụng nhiều notification hơn cấu hình gói, hãy mua thêm gói notification theo hướng dẫn tại [Làm việc với SMS Notification Quota](lam-viec-voi-sms-notification-quota.md) và [Làm việc với Email Notification Quota](lam-viec-voi-email-notification-quota.md). Đối với hình thức cảnh báo qua Slack, Telegram và Webhook, chúng tôi không giới hạn số lượng notification gửi từ phía VNG Cloud, tuy nhiên vẫn sẽ có những giới hạn từ phía các provider như: Slack, Telegram, Webhook khi gửi quá nhiều tin nhắn tới các provider này.
-
+For each **Metric quota** and **Log project** package, we offer a specific number of notifications within the package configuration. Email and SMS alerts have quantity limits. If you need more notifications than your package includes, please purchase additional notification packages as instructed in Working with SMS Notification Quota and Working with Email Notification Quota. For alerts via Slack, Telegram, and Webhook, there is no limit on the number of notifications sent by VNG Cloud. However, there might be limitations imposed by providers like Slack, Telegram, and Webhook when sending too many messages to these providers.

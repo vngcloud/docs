@@ -71,52 +71,49 @@ To create a **View** for a dashboard, follow the instructions below:
 
 <figure><img src="../../../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
 
-5\. Để quản lý View và Variable bạn có thể nhấn vào hình răng cưa:
+5. To manage Views and Variables, you can click on the gear icon:
+
+<figure><img src="../../../.gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Save query
 
-vMonitor Platform cung cấp cho bạn khả năng tái sử dụng lại một query mà bạn đã tạo trước đó thông qua tính năng Save query mà chúng tôi cung cấp.
+vMonitor Platform provides you the ability to reuse a query that you have previously created through the Save query feature that we offer.
 
 #### Save query
 
-Để lưu một query, hãy làm theo hướng dẫn bên dưới:
+To save a query, follow the instructions below:
 
-1. Tại vùng chứa câu lệnh truy vấn, chọn icon **Save**
+1. In the query command area, click the **Save** icon.
 
-<figure><img src="../../../.gitbook/assets/image%20(94).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
 
-2\. Nhập **Query name**.
+2. Enter the **Query name**.
+3. Select **Save**
 
-3\. Chọn **Save**
+<figure><img src="../../../.gitbook/assets/image (141).png" alt="" width="342"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image%20(95).png" alt="" width="342"><figcaption></figcaption></figure>
+The query is now saved with the memorable name you entered.
 
-Lúc này query đã được lưu trữ với tên gợi nhớ mà bạn nhập.
+### Reuse existing queries
 
-#### Tái sử dụng query đã có
+After you have saved the query, you can reuse this query by:
 
-Sau khi bạn đã thực hiện lưu query, bạn có thể tái sử dụng query này bằng cách:
+1. In the query command area, select the dropdown icon <img src="../../../.gitbook/assets/image (142).png" alt="" data-size="original"> (this icon is located next to the Save query icon).
 
-1. Tại vùng chứa câu lệnh truy vấn, chọn biểu tượng sổ xuống (biểu tượng này nằm bên cạnh biểu tượng Save query.
+<figure><img src="../../../.gitbook/assets/image (143).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image%20(96).png" alt=""><figcaption></figcaption></figure>
+2. At this point, the system displays a list of saved queries, allowing you to reuse them by selecting the desired query.
 
-2. Lúc này hệ thống hiển thị danh sách query đã lưu, bạn có thể tái sử dụng bằng cách chọn query đó.
+<figure><img src="../../../.gitbook/assets/image (144).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image%20(97).png" alt=""><figcaption></figcaption></figure>
+3. You can edit this query and save it as a new independent query from the one you reused by selecting Save as new query.
 
-3\. Bạn có thể chỉnh sửa query này và lưu trữ chúng thành một query mới độc lập với query mà bạn tái sử dụng bằng cách chọn Save as new query.
+<figure><img src="../../../.gitbook/assets/image (145).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image%20(98).png" alt=""><figcaption></figcaption></figure>
+### Query management
 
-#### Quản lý query
+You can view the saved queries or delete a query by selecting Manage saved queries and choosing the **Delete** icon.
 
-Bạn có thể xem các query đang được lưu trữ hoặc xóa một query bằng cách chọn Manage saved queries và chọn biểu tượng **Xóa**
-
-<figure><img src="../../../.gitbook/assets/image%20(99).png" alt="" width="375"><figcaption></figcaption></figure>
-
-\\
-
-\\
+<figure><img src="../../../.gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
