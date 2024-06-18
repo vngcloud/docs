@@ -1,57 +1,51 @@
 # Log query
 
-Khi bạn tạo **Widget** cho dữ liệu **logs**, trong phần **Graph your data**, tạo câu lệnh truy vấn dữ liệu của bạn bằng cách chọn **Add a query**. Mỗi câu lệnh truy vấn sẽ được thể hiện bởi một line, bar, stacked area, pie, number, table hoặc một giao diện log search trên biểu đồ. Các thành phần tạo nên câu lệnh truy vấn đối với dữ liệu logs bao gồm:&#x20;
+When creating a **Widget** for **logs** data, in the **Graph your data** section, create your data query by selecting **Add a query**. Each query will be represented by a line, bar, stacked area, pie, number, table, or a log search interface on the chart. The components that make up a query for log data include:
 
 <figure><img src="../../../../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
 
-Trong đó:
+Including:
 
-### 1. Ẩn/ hiện query
+### 1. Hide/ Unhide query
 
-Biểu tượng đánh dấu kết quả câu truy vấn đang được ẩn/ hiện trên biểu đồ. Để ẩn hiện kết quả câu truy vấn trên biểu đồ, bạn chỉ cần chọn vào biểu tượng này. Khi biểu tượng có màu xanh (giống a trong ảnh) tức là kết quả câu truy vấn đang được hiển thị trên biểu đồ. Khi biểu tượng có màu xám tức là kết quả câu truy vấn không được hiển thị trên biểu đồ.
+Query result indicator is toggled on/off on the chart. To hide or show the query results, simply click on this icon. When the icon is green (like 'a' in the image), the query results are displayed on the chart. When the icon is gray, the query results are not shown on the chart.
 
 ### 2. Color
 
-**Color**: chọn màu sắc cho biểu đồ vẽ trên kết quả câu truy vấn.
+**Color**: choose a color for the chart drawn from the query results.
 
 ### 3. Loại query
 
-**Loại query**: khung chọn loại dữ liệu. Để vẽ biểu đồ cho **logs** thì bạn cần chọn **Log** tại đây.&#x20;
+**Query Type**: data type selection box. To plot a chart for **logs**, you need to select **Log** here.
 
 ### 4. Log project
 
-**Log project**: lựa chọn **log project** bằng cách tìm kiếm và chọn từ danh sách log project. Danh sách **log project** này bạn có thể xem tại mục **Log/ Log project**, chi tiết tham khảo tại [Làm việc với Log Project](../../logs/lam-viec-voi-log-project/).
+**Log project**: Select a **log project** by searching and choosing from the list of log projects. You can view this list in the **Log/Log project** section. For detailed information, refer to Working with Log Project.
 
 ### 5. Search log
 
-**Search log**: nơi bạn có thể thực hiện tìm kiếm dữ liệu logs theo điều kiện mà bạn mong muốn. Để biết cách search log, chi tiết tham khảo tại [Log search](../widget/log-search.md).
+**Search log**: This is where you can perform data log searches based on your desired conditions. For more details on how to search logs, please refer to Log search.
 
 ### 6. Alias
 
-**Alias**: tên gợi nhớ dễ hiểu widget hơn. Hệ thống của chúng tôi sẽ tự động tạo Alias cho biểu đồ của bạn, nếu bạn muốn tự tạo Alias cho riêng mình, hãy chỉnh sửa trường thông tin này.
+**Alias**: A memorable, easy-to-understand name for the widget. Our system will automatically create an Alias for your chart, but if you want to create your own Alias, please edit this field.
 
 ### 7. Statistics
 
-**Statistics**: phép toán để tổng hợp dữ liệu. Có 7 cách tổng hợp mà bạn có thể sử dụng để kết hợp dữ liệu logs của mình trong mỗi nhóm thời gian: count, count unique, sum, avg, min, max, percentiles được mô tả ở bảng bên dưới:&#x20;
+**Statistics**: methods for summarizing data. There are 7 aggregation methods you can use to combine your log data within each time group: count, count unique, sum, avg, min, max, percentiles, described in the table below:
 
-<table data-header-hidden><thead><tr><th width="210"></th><th></th></tr></thead><tbody><tr><td><strong>Phép toán</strong></td><td><strong>Ý nghĩa</strong></td></tr><tr><td>count</td><td>Đếm số lượng bản ghi logs sinh ra.</td></tr><tr><td>count unique</td><td>Đếm số lượng bản ghi logs duy nhất sinh ra dựa trên field được chọn</td></tr><tr><td>sum</td><td>Tổng các giá trị số của một field được chọn trên kết quả logs sinh ra.</td></tr><tr><td>min</td><td>Giá trị nhỏ nhất trong các giá trị số của một field được chọn trên kết quả logs sinh ra.</td></tr><tr><td>max</td><td>Giá trị lớn nhất trong các giá trị số của một field được chọn trên kết quả logs sinh ra.</td></tr><tr><td>percentiles</td><td>Tính phân vị cho một giá trị số của một field được chọn trên kết quả logs sinh ra.</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="210"></th><th></th></tr></thead><tbody><tr><td><strong>Operations</strong></td><td><strong>Meaning</strong></td></tr><tr><td>count</td><td>Count the number of generated log records.</td></tr><tr><td>count unique</td><td>Count the number of unique log records generated based on the selected field.</td></tr><tr><td>sum</td><td>Sum of numerical values from a selected field in the generated logs.</td></tr><tr><td>min</td><td>Find the minimum value in the numerical fields of a selected field from the generated logs.</td></tr><tr><td>max</td><td>The highest value among the numerical values of a selected field generated in the logs.</td></tr><tr><td>percentiles</td><td>Calculate the percentile for a numerical value of a selected field from the generated logs.</td></tr></tbody></table>
 
 ### 8. Statistics field
 
-**Field**: chọn trường thông tin muốn thực hiện phép toán. Đối với phép toán **Count** thì không cần chọn bất kì field nào. Đối với các phép toán còn lại, bạn phải chọn một field có kiểu dữ liệu là **Number** có trong log project để thực hiện phép toán trên giá trị đó.
+**Field**: select the information field on which you want to perform the operation. For the **Count** operation, you don't need to select any field. For other operations, you must select a field with a **Number** data type available in the log project to perform the operation on its value.
 
 ### 9. Group by
 
-**Group by**: bạn có thể nhóm dữ liệu theo các trường thông tin có trong log project.
+**Group by**: you can group data according to the information fields available in the log project.
 
 ### 10. Interval
 
-**Interval**: thuộc tính để bạn xác định khoảng thời gian mà widget sẽ hiển thị giá trị (độ mọn dữ liệu). Bạn có thể chọn các giá trị Second, Minute, Day, v.v. từ các giá trị chúng tôi cung cấp sẵn hoặc bạn cũng có thể nhập trực tiếp giá trị Interval mà bạn mong muốn.
+**Interval**: an attribute that allows you to determine the time period for which the widget will display values (data granularity). You can select values like Second, Minute, Day, etc., from the preset values we provide, or you can directly input the desired Interval value.
 
-Bạn có thể thêm nhiều câu truy vấn vào một biểu đồ, chúng tôi hỗ trợ bạn tạo tối đa 10 câu truy vấn cho một biểu đồ. Nếu bạn có nhiều hơn 2 câu truy vấn trong một biểu đồ, hãy đảm bảo mỗi truy vấn được chọn một màu sắc riêng biệt và khoảng cách dữ liệu giữa các truy vấn không quá chênh lệch. Điều này sẽ giúp biểu đồ của bạn trở nên sinh động hơn.&#x20;
-
-Bạn có thể tham khảo cách tạo một graph với logs dựa trên video bên dưới
-
-<figure><img src="../../../../.gitbook/assets/1.gif" alt=""><figcaption></figcaption></figure>
-
-\
+You can add multiple queries to a chart, we support creating up to 10 queries for a single chart. If you have more than 2 queries in one chart, ensure each query is assigned a distinct color and the data intervals between queries are not too disparate. This will help make your chart more vibrant.
