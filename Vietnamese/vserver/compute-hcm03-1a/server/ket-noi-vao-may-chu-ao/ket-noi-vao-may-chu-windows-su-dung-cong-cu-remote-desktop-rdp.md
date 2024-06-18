@@ -8,8 +8,7 @@ Bạn có thể kết nối dễ dàng với các máy chủ Window được t�
 
 ### **Điều kiện tiên quyết** <a href="#ketnoivaomaychuwindowssudungcongcuremotedesktop-rdp-dieukientienquyet" id="ketnoivaomaychuwindowssudungcongcuremotedesktop-rdp-dieukientienquyet"></a>
 
-**Để có thể kết nối vào máy chủ Window:**\
-
+**Để có thể kết nối vào máy chủ Window:**
 
 * **Cài đặt RDP**:
   * \[Windows] Theo mặc định, Windows sẽ bao gồm RDP Client. Để xác minh, hãy nhập **mstsc** tại cửa sổ Command Prompt. Nếu máy tính của bạn không nhận ra lệnh này, hãy xem trang chủ Windows và tìm kiếm bản tải xuống cho ứng dụng[ Microsoft Remote Desktop](https://www.microsoft.com/vi-vn/windows).
