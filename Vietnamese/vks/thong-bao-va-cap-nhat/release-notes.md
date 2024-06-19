@@ -1,5 +1,15 @@
 # Release notes
 
+## June 19, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
+
+VKS (VNGCloud Kubernetes Service) hân hạnh giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
+
+**Cải tiến:**
+
+* **Nâng cấp tính năng thiết lập kích cỡ PVC (Persistent Volume Claim Size):** Người dùng giờ đây có thể chỉ định kích cỡ tối thiểu cho ổ đĩa CSI là <mark style="color:red;">**1GB**</mark> thay vì kích cỡ tối thiểu là 20GB như trước đây. Chi tiết bạn có thể tham khảo thêm tại [Volume ](../../vserver/compute-hcm03-1a/volume/)và [Integrate with Container Storage Interface](../bat-dau-voi-vks/integrate-with-container-storage-interface-csi.md).
+
+***
+
 ## June 12, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
 
 VKS (VNGCloud Kubernetes Service) hân hạnh giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều tính năng và cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
