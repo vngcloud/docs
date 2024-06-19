@@ -7,6 +7,7 @@ VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất
 **Cải tiến:**
 
 * **Nâng cấp tính năng thiết lập kích cỡ PVC (Persistent Volume Claim Size):** Người dùng giờ đây có thể chỉ định kích cỡ tối thiểu cho ổ đĩa CSI là <mark style="color:red;">**1GB**</mark> thay vì kích cỡ tối thiểu là 20GB như trước đây. Chi tiết bạn có thể tham khảo thêm tại [Volume ](../../vserver/compute-hcm03-1a/volume/)và [Integrate with Container Storage Interface](../bat-dau-voi-vks/integrate-with-container-storage-interface-csi.md).
+* **Nâng cấp Plugin VNGCloud Controller Manager, Plugin VNGCloud Ingress Controller:** cải tiến plugin giúp tránh trùng lặp việc đặt tên Load Balancer.
 
 ***
 
@@ -39,7 +40,7 @@ Chúng tôi vô cùng trân trọng thông báo, bản release chính thức (**
 
 * **Hiệu năng**: VKS đã thực hiện tối ưu hiệu năng khi khởi tạo Cluster. Cụ thể, tại bản Alpha, thời gian từ khi bắt đầu khởi tạo Cluster (với Default Node Group) tới khi Cluster chuyển trạng thái **ACTIVE** vào khoảng 04:00s tới 04:30s. Hiện tại thời gian này đã được chúng tôi tối ưu về <mark style="color:red;">**02:30s tới 03:00s**</mark> tùy thuộc vào từng Cluster và từng thời điểm mà bạn khởi tạo.
 * **Garbage collection of unused containers and images**: VKS sẽ tự động xóa các image không được sử dụng khi disk chạm mức giới hạn sử dụng (tỷ lệ usage/ quota >= 85%).
-* **Ngoài ra**, bản GA này được chúng tôi cải thiến một vài vấn đề khác như:&#x20;
+* **Ngoài ra**, bản GA này được chúng tôi cải thiến một vài vấn đề khác như:
   * Thay đổi cách đặt tên **Node Name** giúp bạn dễ dàng sử dụng và quản lý Cluster của bạn. Cụ thể, tên Node Name sẽ có thêm thông tin **Cluster Name**, **Node Group Name**.
   * Xóa **User Builder** trên User's Worker Node.
   * Thay đổi cơ chế **SSH** từ Port 22 qua Port 234.
