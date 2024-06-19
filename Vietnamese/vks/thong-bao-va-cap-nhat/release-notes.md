@@ -10,6 +10,19 @@ VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất
 * **Thay đổi Storage Class mặc định sử dụng cho Cluster:** thay đổi mặc định từ ổ đĩa loại SSD - IOPS 200 thành mặc định ổ đĩa loại SSD - IOPS 3000 và ổ đĩa loại NVME - IOPS 5000.
 * **Nâng cấp Plugin VNGCloud Controller Manager, Plugin VNGCloud Ingress Controller:** cải tiến plugin giúp tránh trùng lặp việc đặt tên Load Balancer.
 
+{% hint style="info" %}
+**Chú ý:**
+
+Do Storage Class mặc định cũ đã được chúng tôi xóa khỏi hệ thống, nếu bạn muốn tiếp tục sử dụng và thực hiện resize storage class này, bạn có thể:
+
+* **Bước 1**: Tạo Storage Class có tên sc-iops-200-retain với vtype mà bạn mong muốn.
+* **Bước 2**: Resize Storage Class thông qua lệnh:&#x20;
+
+kubectl patch pvc sc-iops-200-retain -p '{"spec":{"resources":{"requests":{"storage":"50Gi"\}}\}}'
+
+Chi tiết tham khảo thêm tại [Integrate with Container Storage Interface](../bat-dau-voi-vks/integrate-with-container-storage-interface-csi.md).
+{% endhint %}
+
 ***
 
 ## June 12, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
