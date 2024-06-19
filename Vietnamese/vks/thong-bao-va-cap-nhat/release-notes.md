@@ -18,7 +18,9 @@ Do Storage Class mặc định cũ đã được chúng tôi xóa khỏi hệ th
 * **Bước 1**: Tạo Storage Class có tên sc-iops-200-retain với vtype mà bạn mong muốn.
 * **Bước 2**: Resize Storage Class thông qua lệnh:&#x20;
 
+```
 kubectl patch pvc sc-iops-200-retain -p '{"spec":{"resources":{"requests":{"storage":"50Gi"\}}\}}'
+```
 
 Chi tiết tham khảo thêm tại [Integrate with Container Storage Interface](../bat-dau-voi-vks/integrate-with-container-storage-interface-csi.md).
 {% endhint %}
