@@ -15,8 +15,8 @@ VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất
 
 Do Storage Class mặc định cũ đã được chúng tôi xóa khỏi hệ thống, nếu bạn muốn tiếp tục sử dụng và thực hiện resize storage class này, bạn có thể:
 
-* **Bước 1**: Tạo Storage Class có tên sc-iops-200-retain với vtype mà bạn mong muốn.
-* **Bước 2**: Resize Storage Class thông qua lệnh:&#x20;
+* Tạo Storage Class có tên sc-iops-200-retain với vtype mà bạn mong muốn.
+* Resize Storage Class thông qua lệnh:
 
 ```
 kubectl patch pvc sc-iops-200-retain -p '{"spec":{"resources":{"requests":{"storage":"50Gi"\}}\}}'
