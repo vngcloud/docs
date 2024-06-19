@@ -2,7 +2,7 @@
 
 ## June 19, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
 
-VKS (VNGCloud Kubernetes Service) hân hạnh giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
+VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
 
 **Cải tiến:**
 
@@ -12,7 +12,7 @@ VKS (VNGCloud Kubernetes Service) hân hạnh giới thiệu bản cập nhật 
 
 ## June 12, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
 
-VKS (VNGCloud Kubernetes Service) hân hạnh giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều tính năng và cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
+VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều tính năng và cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
 
 **Tính năng mới:**
 
@@ -67,7 +67,7 @@ Nếu bạn gặp bất kỳ vấn đề nào sau khi cập nhật, vui lòng li
 
 ## April 17, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
 
-**Chúng tôi vô cùng hân hạnh giới thiệu bản cập nhật mới cho dịch vụ VKS, mang đến cho bạn trải nghiệm quản lý Kubernetes mạnh mẽ và hiệu quả hơn bao giờ hết!**
+**Chúng tôi vô cùng giới thiệu bản cập nhật mới cho dịch vụ VKS, mang đến cho bạn trải nghiệm quản lý Kubernetes mạnh mẽ và hiệu quả hơn bao giờ hết!**
 
 **Điểm nổi bật:**
 
