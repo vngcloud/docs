@@ -25,18 +25,20 @@ Hãy làm theo các bước sau để cài đặt và sử dụng Speedtest CLI:
 
     Speedtest CLI sẽ tự động tìm máy chủ gần nhất để thực hiện kiểm tra và sau đó hiển thị kết quả tốc độ tải xuống và tải lên cũng như độ trễ.\
     \
-
-
     \
     \
 
 
     <figure><img src="https://docs.vngcloud.vn/download/attachments/63766895/image2023-8-9_13-9-55.png?version=1&#x26;modificationDate=1691561396000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/image (425).png" alt=""><figcaption></figcaption></figure>
 5.  Tuy nhiên sau 3 ngày, tốc độ sẽ giảm xuống **Download: 220.46 Mbps/s** và **Upload: 262.51 Mbps/s** như kết quả bên dưới: \
     \
 
 
     <figure><img src="https://docs.vngcloud.vn/download/attachments/63766895/image2023-8-30_15-11-56.png?version=1&#x26;modificationDate=1693383117000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/image (426).png" alt=""><figcaption></figcaption></figure>
 
 ### **Kiểm tra tốc độ Internet bằng Speedtest CLI trên hệ điều hành Unbutu** <a href="#kiemtratocdointernet-kiemtratocdointernetbangspeedtestclitrenhedieuhanhunbutu" id="kiemtratocdointernet-kiemtratocdointernetbangspeedtestclitrenhedieuhanhunbutu"></a>
 
@@ -63,9 +65,9 @@ Hãy làm theo các bước sau để cài đặt và sử dụng Speedtest CLI:
     \
 
 
+    <figure><img src="../../../.gitbook/assets/image2023-8-4_14-38-16.png" alt=""><figcaption></figcaption></figure>
 
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/63766895/image2023-8-4_14-38-16.png?version=1&#x26;modificationDate=1691134696000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 ### **Kiểm tra tốc độ Internet bằng Fast** <a href="#kiemtratocdointernet-kiemtratocdointernetbangfast" id="kiemtratocdointernet-kiemtratocdointernetbangfast"></a>
 
@@ -88,7 +90,7 @@ Fast là công cụ hoàn hảo cho những ai chỉ muốn kiểm tra tốc đ�
 
 
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/63766895/image2023-8-9_10-11-3.png?version=1&#x26;modificationDate=1691550664000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image2023-8-9_10-11-3.png" alt=""><figcaption></figcaption></figure>
 
 ### **Giám sát tốc độ Internet bằng vMonitor trên bảng điều khiển** <a href="#kiemtratocdointernet-giamsattocdointernetbangvmonitortrenbangdieukhien" id="kiemtratocdointernet-giamsattocdointernetbangvmonitortrenbangdieukhien"></a>
 
@@ -96,4 +98,4 @@ Fast là công cụ hoàn hảo cho những ai chỉ muốn kiểm tra tốc đ�
     \
 
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/63766895/image2023-8-14_15-24-20.png?version=1&#x26;modificationDate=1692001461000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (427).png" alt=""><figcaption></figcaption></figure>
