@@ -35,29 +35,29 @@ Bạn có thể kết nối dễ dàng với các máy chủ Window được t�
     \
 
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/49650320/image2023-7-20_14-29-59.png?version=1&#x26;modificationDate=1689838200000&#x26;api=v2&#x26;effects=border-simple,blur-border" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (417).png" alt=""><figcaption></figcaption></figure>
 4. Chọn **Tải xuống tệp RDP**. Trình duyệt của bạn sẽ nhắc bạn mở hoặc lưu tệp RDP. Khi bạn đã hoàn tất tải xuống tệp, hãy chọn **Hoàn thành** để quay lại trang máy chủ:
    * Nếu bạn đã mở tệp RDP, bạn sẽ thấy hộp thoại Kết nối Máy tính Từ xa.
    * Nếu bạn đã lưu tệp RDP, hãy điều hướng đến thư mục tải xuống của bạn và mở tệp RDP để hiển thị hộp thoại.
 5.  Bạn có thể nhận được cảnh báo rằng nhà xuất bản của kết nối từ xa không xác định. Chọn **Kết nối** để tiếp tục kết nối với máy chủ của bạn
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/49650320/image2023-7-20_16-14-21.png?version=1&#x26;modificationDate=1689844461000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (418).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/49650320/image2023-7-20_16-38-43.png?version=1&#x26;modificationDate=1689845924000&#x26;api=v2&#x26;effects=border-simple,blur-border" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (419).png" alt=""><figcaption></figcaption></figure>
 6.  Tài khoản quản trị viên được chọn theo mặc định. Bạn cần sao chép và dán mật khẩu mà bạn đã lưu trước đó vào pop-up đăng nhập (Thông tin này lấy từ mail phía trên), trong đó nhập thông tin **InstanceLogin** vào **Username**, **InstancePassword** vào **Password**:\
 
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/49650320/image2023-7-20_16-41-27.png?version=1&#x26;modificationDate=1689846088000&#x26;api=v2&#x26;effects=border-simple,blur-border" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (420).png" alt=""><figcaption></figcaption></figure>
 7.  Nhấn **OK.** Do tính chất của chứng chỉ tự ký, bạn có thể nhận được cảnh báo rằng chứng chỉ bảo mật không thể được xác thực. Sử dụng các bước sau để xác minh danh tính của máy tính từ xa hoặc chỉ cần chọn **Yes**(Windows) hoặc **Continue** (Mac OS X) nếu bạn tin cậy chứng chỉ.\
 
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/49650320/image2023-7-20_16-45-39.png?version=1&#x26;modificationDate=1689846340000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (421).png" alt=""><figcaption></figcaption></figure>
 8.  Màn hình sẽ hiển thị đang kết nối đến máy chủ Window thành công\
 
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/49650320/image2023-7-20_16-47-59.png?version=1&#x26;modificationDate=1689846480000&#x26;api=v2&#x26;effects=border-simple,blur-border" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (422).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/49650320/image2023-7-20_16-50-25.png?version=1&#x26;modificationDate=1689846626000&#x26;api=v2&#x26;effects=border-simple,blur-border" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (423).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
