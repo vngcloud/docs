@@ -12,8 +12,7 @@
 **Chú ý:**
 
 * Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa bật option **Enable BlockStore Persistent Disk CSI Driver**, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt VNGCloud BlockStorage CSI Driver theo hướng dẫn bên dưới. Nếu bạn đã bật option **Enable BlockStore Persistent Disk CSI Driver**, thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt VNGCloud BlockStorage CSI Driver và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
-* <mark style="color:red;">**VNGCloud BlockStorage CSI Driver**</mark> <mark style="color:red;"></mark><mark style="color:red;">chỉ hỗ trợ attach volume với một node (VM) duy nhất trong suốt vòng đời của volume đó. Nếu bạn có nhu cầu ReadWriteMany, bạn có thể cân nhắc sử dụng NFS CSI Driver, vì nó cho phép nhiều nodes có thể Read và Write trên cùng một volume cùng một lúc. Điều này rất hữu ích cho các ứng dụng cần chia sẻ dữ liệu giữa nhiều pods hoặc services trong Kubernetes.</mark>
-
+* <mark style="color:red;">**VNGCloud BlockStorage CSI Driver**</mark> <mark style="color:red;">chỉ hỗ trợ attach volume với một node (VM) duy nhất trong suốt vòng đời của volume đó. Nếu bạn có nhu cầu ReadWriteMany, bạn có thể cân nhắc sử dụng NFS CSI Driver, vì nó cho phép nhiều nodes có thể Read và Write trên cùng một volume cùng một lúc. Điều này rất hữu ích cho các ứng dụng cần chia sẻ dữ liệu giữa nhiều pods hoặc services trong Kubernetes.</mark>
 {% endhint %}
 
 <details>
@@ -30,37 +29,34 @@
 **Cài đặt VNGCloud BlockStorage CSI Driver**
 
 * Cài đặt Helm phiên bản từ 3.0 trở lên. Tham khảo tại [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) để biết cách cài đặt.
-* Thêm repo này vào cluster của bạn qua lệnh:
+*   Thêm repo này vào cluster của bạn qua lệnh:
 
-  ```bash
-  helm repo add vks-helm-charts https://vngcloud.github.io/vks-helm-charts
-  helm repo update
-  ```
+    ```bash
+    helm repo add vks-helm-charts https://vngcloud.github.io/vks-helm-charts
+    helm repo update
+    ```
+*   Thay thế thông tin ClientID, Client Secret và ClusterID của cụm K8S của bạn và tiếp tục chạy:
 
-* Thay thế thông tin ClientID, Client Secret và ClusterID của cụm K8S của bạn và tiếp tục chạy:
+    ```bash
+    helm install vngcloud-blockstorage-csi-driver vks-helm-charts/vngcloud-blockstorage-csi-driver \
+      --replace --namespace kube-system \
+      --set vngcloudAccessSecret.keyId=${VNGCLOUD_CLIENT_ID} \
+      --set vngcloudAccessSecret.accessKey=${VNGCLOUD_CLIENT_SECRET} \
+      --set vngcloudAccessSecret.vksClusterId=${VNGCLOUD_VKS_CLUSTER_ID}  # Optional
+    ```
+*   Sau khi việc cài đặt hoàn tất, thực hiện kiểm tra trạng thái của vngcloud-blockstorage-csi-driver pods:
 
-  ```bash
-  helm install vngcloud-blockstorage-csi-driver vks-helm-charts/vngcloud-blockstorage-csi-driver \
-    --replace --namespace kube-system \
-    --set vngcloudAccessSecret.keyId=${VNGCLOUD_CLIENT_ID} \
-    --set vngcloudAccessSecret.accessKey=${VNGCLOUD_CLIENT_SECRET} \
-    --set vngcloudAccessSecret.vksClusterId=${VNGCLOUD_VKS_CLUSTER_ID}  # Optional
-  ```
+    ```bash
+    kubectl get pods -n kube-system | grep vngcloud-csi-
+    ```
+*   Ví dụ như ảnh bên dưới là bạn đã cài đặt thành công vngcloud-blockstorage-csi-driver:
 
-* Sau khi việc cài đặt hoàn tất, thực hiện kiểm tra trạng thái của vngcloud-blockstorage-csi-driver pods:
-
-  ```bash
-  kubectl get pods -n kube-system | grep vngcloud-csi-
-  ```
-
-* Ví dụ như ảnh bên dưới là bạn đã cài đặt thành công vngcloud-blockstorage-csi-driver:
-
-  ```bash
-  NAME                                           READY   STATUS    RESTARTS       AGE
-  vngcloud-csi-controller-56bd7b85f-ctpns        7/7     Running   6 (2d4h ago)   2d4h
-  vngcloud-csi-controller-56bd7b85f-npp9n        7/7     Running   2 (2d4h ago)   2d4h
-  vngcloud-csi-node-c8r2w                        3/3     Running   0              2d4h
-  ```
+    ```bash
+    NAME                                           READY   STATUS    RESTARTS       AGE
+    vngcloud-csi-controller-56bd7b85f-ctpns        7/7     Running   6 (2d4h ago)   2d4h
+    vngcloud-csi-controller-56bd7b85f-npp9n        7/7     Running   2 (2d4h ago)   2d4h
+    vngcloud-csi-node-c8r2w                        3/3     Running   0              2d4h
+    ```
 
 </details>
 
@@ -72,135 +68,132 @@ Sau đây là hướng dẫn để bạn deploy service nginx trên Kubernetes.
 
 **Bước 1**: **Tạo Deployment cho Nginx app.**
 
-* Tạo file **nginx-service.yaml** với nội dung sau:
+*   Tạo file **nginx-service.yaml** với nội dung sau:
 
-  ```yaml
-  apiVersion: apps/v1
-  kind: Deployment
-  metadata:
-    name: nginx-app
-  spec:
-    selector:
-      matchLabels:
-        app: nginx
-    replicas: 1
-    template:
-      metadata:
-        labels:
+    ```yaml
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: nginx-app
+    spec:
+      selector:
+        matchLabels:
           app: nginx
-      spec:
-        containers:
-        - name: nginx
-          image: nginx:1.19.1
-          ports:
-          - containerPort: 80
-  ---
-  apiVersion: v1
-  kind: Service
-  metadata:
-    name: nginx-service
-  spec:
-    selector:
-      app: nginx 
-    ports:
-      - protocol: TCP
-        port: 80
-        targetPort: 80
-  ```
+      replicas: 1
+      template:
+        metadata:
+          labels:
+            app: nginx
+        spec:
+          containers:
+          - name: nginx
+            image: nginx:1.19.1
+            ports:
+            - containerPort: 80
+    ---
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: nginx-service
+    spec:
+      selector:
+        app: nginx 
+      ports:
+        - protocol: TCP
+          port: 80
+          targetPort: 80
+    ```
+*   Deploy Deployment này bằng lệch:
 
-* Deploy Deployment này bằng lệch:
-
-  ```bash
-  kubectl apply -f nginx-service.yaml
-  ```
+    ```bash
+    kubectl apply -f nginx-service.yaml
+    ```
 
 ***
 
 **Bước 2: Kiểm tra thông tin Deployment, Service vừa deploy**
 
-* Chạy câu lệnh sau đây để kiểm tra **Deployment**
+*   Chạy câu lệnh sau đây để kiểm tra **Deployment**
 
-  ```bash
-  kubectl get svc,deploy,pod -owide
-  ```
+    ```bash
+    kubectl get svc,deploy,pod -owide
+    ```
+*   Nếu kết quả trả về như bên dưới tức là bạn đã deploy Deployment thành công.
 
-* Nếu kết quả trả về như bên dưới tức là bạn đã deploy Deployment thành công.
+    ```bash
+    NAME                    TYPE           CLUSTER-IP      EXTERNAL-IP   PORT(S)           AGE     SELECTOR
+    service/kubernetes      ClusterIP      10.96.0.1       <none>        443/TCP           2d4h    <none>
+    service/nginx-app       NodePort       10.96.215.192   <none>        30080:31289/TCP   6m12s   app=nginx
+    service/nginx-service   LoadBalancer   10.96.179.221   <pending>     80:32624/TCP      16s     app=nginx
 
-  ```bash
-  NAME                    TYPE           CLUSTER-IP      EXTERNAL-IP   PORT(S)           AGE     SELECTOR
-  service/kubernetes      ClusterIP      10.96.0.1       <none>        443/TCP           2d4h    <none>
-  service/nginx-app       NodePort       10.96.215.192   <none>        30080:31289/TCP   6m12s   app=nginx
-  service/nginx-service   LoadBalancer   10.96.179.221   <pending>     80:32624/TCP      16s     app=nginx
+    NAME                        READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES         SELECTOR
+    deployment.apps/nginx-app   1/1     1            1           16s   nginx        nginx:1.19.1   app=nginx
 
-  NAME                        READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES         SELECTOR
-  deployment.apps/nginx-app   1/1     1            1           16s   nginx        nginx:1.19.1   app=nginx
-
-  NAME                             READY   STATUS    RESTARTS   AGE   IP              NODE                                            NOMINATED NODE   READINESS GATES
-  pod/nginx-app-7f45b65946-t7d7k   1/1     Running   0          16s   172.16.24.202   ng-3f06013a-f6a5-47ba-a51f-bc5e9c2b10a7-ecea1   <none>           <none>
-  ```
+    NAME                             READY   STATUS    RESTARTS   AGE   IP              NODE                                            NOMINATED NODE   READINESS GATES
+    pod/nginx-app-7f45b65946-t7d7k   1/1     Running   0          16s   172.16.24.202   ng-3f06013a-f6a5-47ba-a51f-bc5e9c2b10a7-ecea1   <none>           <none>
+    ```
 
 ***
 
 ### **Tạo Persistent Volume**
 
-* Tạo file **persistent-volume.yaml** với nội dung sau:
+*   Tạo file **persistent-volume.yaml** với nội dung sau:
 
-  ```yaml
-  apiVersion: storage.k8s.io/v1
-  kind: StorageClass
-  metadata:
-    name: my-expansion-storage-class                    # [1] The StorageClass name, CAN be changed
-  provisioner: bs.csi.vngcloud.vn                       # The VNG-CLOUD CSI driver name
-  parameters:
-    type: vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018    # The volume type UUID
-    isPOC: "true"
-  allowVolumeExpansion: true                            # MUST set this value to turn on volume expansion feature
-  ---
+    ```yaml
+    apiVersion: storage.k8s.io/v1
+    kind: StorageClass
+    metadata:
+      name: my-expansion-storage-class                    # [1] The StorageClass name, CAN be changed
+    provisioner: bs.csi.vngcloud.vn                       # The VNG-CLOUD CSI driver name
+    parameters:
+      type: vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018    # The volume type UUID
+      isPOC: "true"
+    allowVolumeExpansion: true                            # MUST set this value to turn on volume expansion feature
+    ---
 
-  apiVersion: v1
-  kind: PersistentVolumeClaim
-  metadata:
-    name: my-expansion-pvc                           # [2] The PVC name, CAN be changed
-  spec:
-    accessModes:
-      - ReadWriteOnce
-    resources:
-      requests:
-        storage: 20Gi                                # [3] The PVC size, CAN be changed, this value MUST be in the valid range of the proper volume type
-    storageClassName: my-expansion-storage-class     # [4] The StorageClass name, MUST be the same as [1]
-  ---
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    metadata:
+      name: my-expansion-pvc                           # [2] The PVC name, CAN be changed
+    spec:
+      accessModes:
+        - ReadWriteOnce
+      resources:
+        requests:
+          storage: 20Gi                                # [3] The PVC size, CAN be changed, this value MUST be in the valid range of the proper volume type
+      storageClassName: my-expansion-storage-class     # [4] The StorageClass name, MUST be the same as [1]
+    ---
 
-  apiVersion: v1
-  kind: Pod
-  metadata:
-    name: nginx                                      # [5] The Pod name, CAN be changed
-  spec:
-    containers:
-      - image: nginx
-        imagePullPolicy: IfNotPresent
-        name: nginx
-        ports:
-          - containerPort: 80
-            protocol: TCP
-        volumeMounts:
-          - mountPath: /var/lib/www/html
-            name: my-volume-name                     # MUST be the same as [6]
-    volumes:
-      - name: my-volume-name                         # [6] The volume name, CAN be changed
-        persistentVolumeClaim:
-          claimName: my-expansion-pvc                # MUST be the same as [2]
-          readOnly: false
-  ```
+    apiVersion: v1
+    kind: Pod
+    metadata:
+      name: nginx                                      # [5] The Pod name, CAN be changed
+    spec:
+      containers:
+        - image: nginx
+          imagePullPolicy: IfNotPresent
+          name: nginx
+          ports:
+            - containerPort: 80
+              protocol: TCP
+          volumeMounts:
+            - mountPath: /var/lib/www/html
+              name: my-volume-name                     # MUST be the same as [6]
+      volumes:
+        - name: my-volume-name                         # [6] The volume name, CAN be changed
+          persistentVolumeClaim:
+            claimName: my-expansion-pvc                # MUST be the same as [2]
+            readOnly: false
+    ```
+*   Chạy câu lệnh sau đây để triển khai 1 Pod sử dụng Persistent Volume
 
-* Chạy câu lệnh sau đây để triển khai 1 Pod sử dụng Persistent Volume
-
-  ```bash
-  kubectl apply -f persistent-volume.yaml
-  ```
+    ```bash
+    kubectl apply -f persistent-volume.yaml
+    ```
 
 Lúc này, hệ thống vServer sẽ tự động tạo một Volume tương ứng với file yaml bên trên, ví dụ:
 
-<figure><img src="../../../.gitbook/assets/image%20(18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (434).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -218,38 +211,36 @@ Snapshot là phương pháp sao lưu giữ liệu với chi phí thấp, thuận
 
 Ví dụ:
 
-<figure><img src="../../../.gitbook/assets/image%20(19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (435).png" alt=""><figcaption></figcaption></figure>
 
 #### **Cài đặt VNGCloud Snapshot Controller**
 
 * Cài đặt Helm phiên bản từ 3.0 trở lên. Tham khảo tại [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) để biết cách cài đặt.
-* Thêm repo này vào cluster của bạn qua lệnh:
+*   Thêm repo này vào cluster của bạn qua lệnh:
 
-  ```bash
-  helm repo add vks-helm-charts https://vngcloud.github.io/vks-helm-charts
-  helm repo update
-  ```
+    ```bash
+    helm repo add vks-helm-charts https://vngcloud.github.io/vks-helm-charts
+    helm repo update
+    ```
+*   Tiếp tục chạy:
 
-* Tiếp tục chạy:
+    ```bash
+    helm install vngcloud-snapshot-controller vks-helm-charts/vngcloud-snapshot-controller \
+      --replace --namespace kube-system
+    ```
+*   Sau khi việc cài đặt hoàn tất, thực hiện kiểm tra trạng thái của vngcloud-blockstorage-csi-driver pods:
 
-  ```bash
-  helm install vngcloud-snapshot-controller vks-helm-charts/vngcloud-snapshot-controller \
-    --replace --namespace kube-system
-  ```
-
-* Sau khi việc cài đặt hoàn tất, thực hiện kiểm tra trạng thái của vngcloud-blockstorage-csi-driver pods:
-
-  ```bash
-  kubectl get pods -n kube-system | grep snapshot-controller
-  ```
+    ```bash
+    kubectl get pods -n kube-system | grep snapshot-controller
+    ```
 
 Ví dụ như ảnh bên dưới là bạn đã cài đặt thành công vngcloud-snapshot-controller:
 
-  ```bash
-  NAME                                           READY   STATUS              RESTARTS       AGE
-  snapshot-controller-7fdd984f89-745tg           0/1     ContainerCreating   0              3s
-  snapshot-controller-7fdd984f89-k94wq           0/1     ContainerCreating   0              3s
-  ```
+```bash
+NAME                                           READY   STATUS              RESTARTS       AGE
+snapshot-controller-7fdd984f89-745tg           0/1     ContainerCreating   0              3s
+snapshot-controller-7fdd984f89-k94wq           0/1     ContainerCreating   0              3s
+```
 
 #### Tạo file **snapshot.yaml** với nội dung sau
 
@@ -284,7 +275,7 @@ kubectl apply -f snapshot.yaml
 
 ### **Kiểm tra PVC và Snapshot vừa tạo**
 
-* Sau khi apply tập tin thành công, bạn có thể kiểm tra danh sách service, pvc thông qua:
+*   Sau khi apply tập tin thành công, bạn có thể kiểm tra danh sách service, pvc thông qua:
 
     ```bash
     kubectl get sc,pvc,pod -owide
@@ -321,44 +312,43 @@ kubectl get persistentvolumes
 kubectl edit pvc my-expansion-pvc
 ```
 
-* Nếu bạn chưa chỉnh sửa IOPS của Persistent Volume lần nào trước đó, khi bạn chạy lệnh trên, bạn hãy thêm 1 annotation bs.csi.vngcloud.vn/volume-type: "volume-type-id" . Ví dụ: bên dưới tôi đang thay đổi IOPS của Persistent Volume từ 200 (Volume type id = vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018) lên 1000 (Volume type id = vtype-85b39362-a360-4bbb-9afa-a36a40cea748)
+*   Nếu bạn chưa chỉnh sửa IOPS của Persistent Volume lần nào trước đó, khi bạn chạy lệnh trên, bạn hãy thêm 1 annotation bs.csi.vngcloud.vn/volume-type: "volume-type-id" . Ví dụ: bên dưới tôi đang thay đổi IOPS của Persistent Volume từ 200 (Volume type id = vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018) lên 1000 (Volume type id = vtype-85b39362-a360-4bbb-9afa-a36a40cea748)
 
-  ```yaml
-  apiVersion: v1
-  kind: PersistentVolumeClaim
-  metadata:
-    annotations:
-      bs.csi.vngcloud.vn/volume-type: "vtype-85b39362-a360-4bbb-9afa-a36a40cea748"
-      kubectl.kubernetes.io/last-applied-configuration: |
-        {"apiVersion":"v1","kind":"PersistentVolumeClaim","metadata":{"annotations":{},"name":"my-expansion-pvc","namespace":"default"},"spec":{"accessModes":["ReadWriteOnce"],"resources":{"requests":{"storage":"20Gi"}},"storageClassName":"my-expansion-storage-class"}}
-      pv.kubernetes.io/bind-completed: "yes"
-      pv.kubernetes.io/bound-by-controller: "yes"
-      volume.beta.kubernetes.io/storage-provisioner: bs.csi.vngcloud.vn
-      volume.kubernetes.io/storage-provisioner: bs.csi.vngcloud.vn
-    creationTimestamp: "2024-04-21T14:16:53Z"
-    finalizers:
-    - kubernetes.io/pvc-protection
-    name: my-expansion-pvc
-    namespace: default
-    resourceVersion: "11041591"
-    uid: 14456f4a-ee9e-435d-a94f-5a2e820954e9
-  spec:
-    accessModes:
-    - ReadWriteOnce
-    resources:
-      requests:
+    ```yaml
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    metadata:
+      annotations:
+        bs.csi.vngcloud.vn/volume-type: "vtype-85b39362-a360-4bbb-9afa-a36a40cea748"
+        kubectl.kubernetes.io/last-applied-configuration: |
+          {"apiVersion":"v1","kind":"PersistentVolumeClaim","metadata":{"annotations":{},"name":"my-expansion-pvc","namespace":"default"},"spec":{"accessModes":["ReadWriteOnce"],"resources":{"requests":{"storage":"20Gi"}},"storageClassName":"my-expansion-storage-class"}}
+        pv.kubernetes.io/bind-completed: "yes"
+        pv.kubernetes.io/bound-by-controller: "yes"
+        volume.beta.kubernetes.io/storage-provisioner: bs.csi.vngcloud.vn
+        volume.kubernetes.io/storage-provisioner: bs.csi.vngcloud.vn
+      creationTimestamp: "2024-04-21T14:16:53Z"
+      finalizers:
+      - kubernetes.io/pvc-protection
+      name: my-expansion-pvc
+      namespace: default
+      resourceVersion: "11041591"
+      uid: 14456f4a-ee9e-435d-a94f-5a2e820954e9
+    spec:
+      accessModes:
+      - ReadWriteOnce
+      resources:
+        requests:
+          storage: 20Gi
+      storageClassName: my-expansion-storage-class
+      volumeMode: Filesystem
+      volumeName: pvc-14456f4a-ee9e-435d-a94f-5a2e820954e9
+    status:
+      accessModes:
+      - ReadWriteOnce
+      capacity:
         storage: 20Gi
-    storageClassName: my-expansion-storage-class
-    volumeMode: Filesystem
-    volumeName: pvc-14456f4a-ee9e-435d-a94f-5a2e820954e9
-  status:
-    accessModes:
-    - ReadWriteOnce
-    capacity:
-      storage: 20Gi
-    phase: Bound
-  ```
-
+      phase: Bound
+    ```
 * Nếu bạn đã chỉnh sửa IOPS của Persistent Volume lần nào trước đó, khi bạn chạy lệnh trên, tệp tin yaml của bạn đã có sẵn annotation bs.csi.vngcloud.vn/volume-type: "volume-type-id" . Lúc này, hãy chỉnh sửa annotation này về Volume type id có IOPS mà bạn mong muốn.
 
 ### Thay đổi Disk Volume của Persistent Volume vừa tạo
@@ -382,22 +372,22 @@ Chú ý:
 
 Để khôi phục Persistent Volume từ Snapshot, bạn hãy thực hiện theo các bước sau:
 
-* Tạo file **restore-volume.yaml** với nội dung sau:
+*   Tạo file **restore-volume.yaml** với nội dung sau:
 
-  ```yaml
-  apiVersion: v1
-  kind: PersistentVolumeClaim
-  metadata:
-    name: my-restore-pvc  # The name of the PVC, CAN be changed
-  spec:
-    storageClassName: my-expansion-storage-class  
-    dataSource:
-      name: my-snapshot-pvc # MUST match with [4] from the section 5.2
-      kind: VolumeSnapshot
-      apiGroup: snapshot.storage.k8s.io
-    accessModes:
-      - ReadWriteOnce
-    resources:
-      requests:
-        storage: 20Gi
-  ```
+    ```yaml
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    metadata:
+      name: my-restore-pvc  # The name of the PVC, CAN be changed
+    spec:
+      storageClassName: my-expansion-storage-class  
+      dataSource:
+        name: my-snapshot-pvc # MUST match with [4] from the section 5.2
+        kind: VolumeSnapshot
+        apiGroup: snapshot.storage.k8s.io
+      accessModes:
+        - ReadWriteOnce
+      resources:
+        requests:
+          storage: 20Gi
+    ```
