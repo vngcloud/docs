@@ -44,10 +44,9 @@ Bạn có thể kết nối dễ dàng với các máy chủ Window được t�
     <figure><img src="../../../../.gitbook/assets/image (418).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/image (419).png" alt=""><figcaption></figcaption></figure>
-6.  Tài khoản quản trị viên được chọn theo mặc định. Bạn cần sao chép và dán mật khẩu mà bạn đã lưu trước đó vào pop-up đăng nhập (Thông tin này lấy từ mail phía trên), trong đó nhập thông tin **InstanceLogin** vào **Username**, **InstancePassword** vào **Password**:\
+6.  Tài khoản quản trị viên được chọn theo mặc định. Bạn cần sao chép và dán mật khẩu mà bạn đã lưu trước đó vào pop-up đăng nhập (Thông tin này lấy từ mail phía trên), trong đó nhập thông tin **InstanceLogin** vào **Username**, **InstancePassword** vào **Password**:
 
-
-    <figure><img src="../../../../.gitbook/assets/image (420).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
 7.  Nhấn **OK.** Do tính chất của chứng chỉ tự ký, bạn có thể nhận được cảnh báo rằng chứng chỉ bảo mật không thể được xác thực. Sử dụng các bước sau để xác minh danh tính của máy tính từ xa hoặc chỉ cần chọn **Yes**(Windows) hoặc **Continue** (Mac OS X) nếu bạn tin cậy chứng chỉ.\
 
 
