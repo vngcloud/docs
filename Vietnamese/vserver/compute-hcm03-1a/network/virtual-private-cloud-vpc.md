@@ -8,7 +8,7 @@ Hơn thế, bạn có thể kết nối nhiều VPC hoặc giữa VPC và hạ t
 
 ### **Kiến trúc VPC** <a href="#virtualprivatecloud-vpc-kientrucvpc" id="virtualprivatecloud-vpc-kientrucvpc"></a>
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49648039/image2023-9-7_11-1-37.png?version=1&#x26;modificationDate=1694059298000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image2023-9-7_11-1-37.png" alt=""><figcaption></figcaption></figure>
 
 VPC là tập hợp nhiều subnet có cùng không gian routing, mỗi VPC được định nghĩa bằng 1 không gian routing riêng biệt. Các Subnets được tách biệt với nhau bằng kỹ thuật tunneling.
 
