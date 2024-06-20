@@ -16,7 +16,7 @@ Sử dụng hướng dẫn sau để thay đổi kích thước Volume trên b�
 1. Mở trình điều khiển vServer tại: [https://hcm-3.console.vngcloud.vn/vserver/block-store/volumes](https://hcm-3.console.vngcloud.vn/vserver/block-store/volumes)
 2. Trên tab VPC/  Volumes, chọn một Volume và nhấn chọn **Hành động**
 3. Sau đó chọn **Mở rộng**
-4. Chọn kích thước và IOPS mới cho Volume, lưu ý kích thuớc của Volume phải lớn hơn hoặc bằng 20 GB và kích thước lớn nhất là 10000 GB, bạn có thể kiểm tra chi phí tăng thêm ở cột bên phải
+4. Chọn kích thước và IOPS mới cho Volume, lưu ý kích thước của Volume phải lớn hơn hoặc bằng 20 GB và kích thước lớn nhất là 10000 GB, bạn có thể kiểm tra chi phí tăng thêm ở cột bên phải
 5. Nhấn **Mở rộng** để hoàn tất
 
 Sau khi quá trình tăng dung lượng trên bảng điều khiển hoàn tất, hãy sử dụng tiện ích Windows Disk Management hoặc PowerShell để mở rộng kích thước ổ đĩa sang kích thước mới của ổ đĩa. Bạn có thể bắt đầu thay đổi kích thước hệ thống tệp ngay sau khi Mở rộng trên bảng điều khiển vServer.
@@ -29,12 +29,9 @@ Sử dụng quy trình sau để mở rộng hệ thống tệp Windows bằng D
    Trước khi mở rộng một hệ thống tệp có chứa dữ liệu có giá trị, cách tốt nhất là tạo ảnh chụp nhanh (Snapshot) của ổ đĩa chứa nó trong trường hợp bạn cần khôi phục các thay đổi của mình.&#x20;
 2. Đăng nhập vào phiên bản Windows của bạn bằng Remote Desktop.
 3.  Trong hộp thoại **Run**, nhập **diskmgmt.msc** và nhấn Enter. Tiện ích **Disk Management** sẽ mở ra.\
-    \
-    \
-    \
 
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/59804681/image2023-6-27_16-12-43.png?version=1&#x26;modificationDate=1687857164000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (429).png" alt=""><figcaption></figcaption></figure>
 4. Trên menu **Disk Management**, chọn **Action**, **Rescan Disks**.
 5.  Mở menu ngữ cảnh (nhấp chuột phải) cho ổ đĩa được mở rộng và chọn **Extend Volume**.
 
@@ -43,21 +40,14 @@ Sử dụng quy trình sau để mở rộng hệ thống tệp Windows bằng D
     Extend Volume có thể bị tắt (chuyển sang màu xám) nếu:
 
     * Không gian chưa phân bổ không liền kề với ổ đĩa. Không gian chưa phân bổ phải liền kề với phía bên phải của ổ đĩa mà bạn muốn mở rộng.
-    * Ổ đĩa sử dụng kiểu phân vùng Bản ghi khởi động chính (MBR) và nó đã có kích thước 2TB. Ổ đĩa sử dụng MBR không thể vượt quá kích thước 2TB.
-
-    \
-    \
-    \
+    * Ổ đĩa sử dụng kiểu phân vùng Bản ghi khởi động chính (MBR) và nó đã có kích thước 2TB. Ổ đĩa sử dụng MBR không thể vượt quá kích thước 2TB.\
 
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/59804681/image2023-6-27_16-16-1.png?version=1&#x26;modificationDate=1687857362000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (430).png" alt=""><figcaption></figcaption></figure>
 6.  Trong trình hướng dẫn **Extend Volume**, chọn **Next**. Đối với **Select the amount of space in MB**, hãy nhập số megabyte để mở rộng âm lượng. Nói chung, bạn chỉ định không gian tối đa có sẵn. Văn bản được đánh dấu bên dưới **Đã chọn** là dung lượng được thêm vào, không phải là kích thước cuối cùng mà ổ đĩa sẽ có. Hoàn thành trình hướng dẫn.\
-    \
-    \
-    \
 
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/59804681/image2023-6-27_16-18-53.png?version=1&#x26;modificationDate=1687857534000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (431).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 2: Mở rộng tệp hệ thống Windows PowerShell**
 
@@ -92,12 +82,8 @@ Sử dụng quy trình sau để mở rộng hệ thống tệp Windows bằng P
     \
 
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/59804681/image2023-6-27_16-34-14.png?version=1&#x26;modificationDate=1687858455000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (432).png" alt=""><figcaption></figcaption></figure>
 
 Các lệnh PowerShell sau hiển thị dòng lệnh và phản hồi hoàn chỉnh để mở rộng hệ thống tệp đến kích thước khả dụng tối đa.
 
-\
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59804681/image2023-6-27_16-34-51.png?version=1&#x26;modificationDate=1687858492000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../.gitbook/assets/image (433).png" alt=""><figcaption></figcaption></figure>
