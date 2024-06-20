@@ -24,9 +24,6 @@ Hãy làm theo các bước sau để cài đặt và sử dụng Speedtest CLI:
     | ----------- |
 
     Speedtest CLI sẽ tự động tìm máy chủ gần nhất để thực hiện kiểm tra và sau đó hiển thị kết quả tốc độ tải xuống và tải lên cũng như độ trễ.\
-    \
-    \
-    \
 
 
     <figure><img src="https://docs.vngcloud.vn/download/attachments/63766895/image2023-8-9_13-9-55.png?version=1&#x26;modificationDate=1691561396000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
