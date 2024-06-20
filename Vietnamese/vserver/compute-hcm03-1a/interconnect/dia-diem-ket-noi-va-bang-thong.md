@@ -4,6 +4,4 @@
 
 Dưới đây là địa điểm nơi mà chúng tôi sẽ thiết lập kết nối Interconnect đến vị trí của bạn
 
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64553600/image2023-9-6_14-24-8.png?version=1&#x26;modificationDate=1693985048000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (428).png" alt=""><figcaption></figcaption></figure>
