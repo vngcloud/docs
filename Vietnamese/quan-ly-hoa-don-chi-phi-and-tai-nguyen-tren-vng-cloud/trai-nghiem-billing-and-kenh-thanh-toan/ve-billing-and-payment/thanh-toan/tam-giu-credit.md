@@ -1,5 +1,7 @@
 # Tạm giữ Credit
 
+## Tổng quan
+
 Tại VNG Cloud Service, có một số tài nguyên / dịch vụ đặc thù chỉ dành cho người dùng trả sau vì một số lý do sau:
 
 * Không thể tính giá thành sử dụng tài nguyên ngay tại thời điểm phát sinh
@@ -23,7 +25,9 @@ Nhận thấy nhu cầu sử dụng các tài nguyên / dich vụ trả sau củ
   * Hệ thống cung cấp tài nguyên theo cấu hình cho người dùng
   * Gửi mail thông báo thông tin tài nguyên (tùy vào đặc thù từng loại tài nguyên mà sẽ có email thông báo hoặc không)
 
-#### 1. Tạm giữ credit dịch vụ vContainer (K8s) <a href="#tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s" id="tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s"></a>
+## Các dịch vụ áp dụng <a href="#tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s" id="tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s"></a>
+
+### 1. Dịch vụ/sản phẩm vContainer (K8s) <a href="#tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s" id="tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s"></a>
 
 Sau khi khởi tạo tài nguyên thành công, cứ mỗi cuối ngày, hệ thống sẽ tự động tính lại số tiền sử dụng thực tế của ngày hôm đó và tiến hành tạm giữ số credit cần có để sử dụng dịch vụ trong 3 ngày tiếp theo. Tham khảo ví dụ sau:
 
@@ -49,7 +53,7 @@ Lưu ý (\*)
 * Chi phí sử dụng tài nguyên sẽ được tính chính xác đến phút, tại thời điểm người dùng thực hiện hành động (khởi tạo, thay đổi cấu hình), trên đây chỉ là ví dụ mang tính chất tham khảo.
 * Khi người dùng thực hiện xóa tài nguyên K8s, hệ thống sẽ giữ lại con số sử dụng thực tế (3,600,000 VND như trên ví dụ), con số này sẽ được dùng để thanh toán hóa đơn vào kì thanh toán hằng tháng
 
-#### 2. Tạm giữ credit dịch vụ Snapshot <a href="#tamgiucredit-2.tamgiucreditdichvusnapshot" id="tamgiucredit-2.tamgiucreditdichvusnapshot"></a>
+### 2. Dịch vụ/sản phẩm Snapshot <a href="#tamgiucredit-2.tamgiucreditdichvusnapshot" id="tamgiucredit-2.tamgiucreditdichvusnapshot"></a>
 
 Lưu ý rằng, tại thời điểm kích hoạt dịch vụ Snapshot lần đầu tiên, người dùng sẽ không bị tính bất kì một khoản chi phí nào. Việc tạm giữ credit chỉ xảy ra mỗi ngày một lần, trong trường hợp tài khoản sử dụng có khởi tạo và lưu trữ các bản dữ liệu Snapshot. Tham khảo hướng dẫn bên dưới để hiểu thêm về cách triển khai tạm giữ credit đối với dịch vụ Snpashot:
 
@@ -57,13 +61,13 @@ Lưu ý rằng, tại thời điểm kích hoạt dịch vụ Snapshot lần đ�
 
 * **Công thức**: Chi phí của việc tạo bản snapshot được tính dựa trên kích thước của bản snapshot (theo đơn vị gigabyte) và thời gian sử dụng của nó (thường được đo bằng giờ).
 * **Thời gian sử dụng**: Người dùng sẽ được tính phí cho thời gian tồn tại của bản snapshot. Thời gian này được ghi nhận theo giờ.
-* **Ví dụ**: Ví dụ, nếu bạn có một bản snapshot có kích thước 100GB và giá đơn vị cho Dịch Vụ Snapshot là 7,7 VND cho mỗi GB-giờ, thì chi phí sẽ được tính như sau:
+* **Ví dụ**: Nếu bạn có một bản snapshot có kích thước 100GB và giá đơn vị cho Dịch Vụ Snapshot là 7,7 VND cho mỗi GB-giờ, thì chi phí sẽ được tính như sau:
   * Theo giờ: 7,7 VND \* 100 GB = 770 VND mỗi giờ.
   * Theo ngày: 770 VND \* 24 = 18,480 VND mỗi ngày.
   * Theo tháng: 18,480 \* 30 = 554,400 VND mỗi tháng.
 * **Lưu ý**: Giá đơn vị được cung cấp chỉ để tham khảo. Thời gian sử dụng thực tế của các bản snapshot được ghi nhận hàng giờ, dựa trên kích thước thực tế của các bản snapshot của bạn.
 
-**Ví dụ cụ thể**
+**Tình huống sử dụng**
 
 * Bước 1: Kích hoạt Snapshot lần đầu tiên (Không mất phí). Ví dụ Kích hoạt lúc 9am
 * Bước 2: Khởi tạo và lưu trữ các bản Snapshot theo nhu cầu sử dụng. Ví dụ như sau:
@@ -77,12 +81,45 @@ Lưu ý rằng, tại thời điểm kích hoạt dịch vụ Snapshot lần đ�
   * Tổng số tiền sử dụng thực tế cho 1 ngày = 231 VND + 3,080 VND = 3,311 VND
   * _Tổng số tiền cần tạm giữ = Số tiền sử dụng thực tế + Ước tính sử dụng cho 3 ngày tiếp theo = 3,311 + (7,7 VND \* 20GB \* 24h \* 3 days) **(\*)** = 14,399 VND_
 
-Lưu ý (\*)
+**Lưu ý (\*)**
 
 * Hệ thống cần tạm giữ phần sử dụng thực tế và cả phần dự đoán sử dụng cho 3 ngày tiếp theo để đảm bảo tính an toàn và xuyên suốt khi sử dụng dịch vụ.
 * Công thức ước tính sử dụng cho 3 ngày tiếp theo được tính như sau: **TotalSnapshotSize \* Đơn giá VND \* 24h \* 3 days**
 
-#### 3. Tạm giữ credit dịch vụ Bandwidth <a href="#tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit" id="tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit"></a>
+### 3. Dịch vụ/sản phẩm Container Registry (vCR) <a href="#tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit" id="tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit"></a>
+
+Việc tạm giữ credit chỉ xảy ra mỗi ngày một lần, trong trường hợp tài khoản sử dụng có khởi tạo và lưu trữ dữ liệu trên các Repository. Tham khảo hướng dẫn bên dưới để hiểu thêm về cách triển khai tạm giữ credit đối với dịch vụ Container Repository (vCR):
+
+**Cách tính phí Repository**
+
+* **Công thức**: Chi phí của các repository được tính dựa trên dung lượng lưu trữ thực tế (theo đơn vị gigabyte) và thời gian sử dụng của nó (thường được đo bằng giờ).
+* **Thời gian sử dụng**: Người dùng sẽ được tính phí cho thời gian tồn tại của dữ liệu (thường là image container) được lưu trữ trên repository. Thời gian này được ghi nhận theo giờ.
+* **Ví dụ**: Nếu bạn có một repository có dung lượng lưu trữ hiện tại là 100GB và giá đơn vị cho Dịch Vụ Repository là 7,7 VND cho mỗi GB-giờ, thì chi phí sẽ được tính như sau:
+  * Theo giờ: 7,7 VND \* 100 GB = 770 VND mỗi giờ.
+  * Theo ngày: 770 VND \* 24 = 18,480 VND mỗi ngày.
+  * Theo tháng: 18,480 \* 30 = 554,400 VND mỗi tháng.
+* **Lưu ý**: Giá đơn vị được cung cấp chỉ để tham khảo. Thời gian lưu trữ thực tế của dữ liệu (image container) trong các repository được ghi nhận hàng giờ, dựa trên kích thước thực tế của các bản snapshot của bạn.
+
+**Tình huống sử dụng**
+
+* Bước 1: Khởi tạo Repository cho mục đích lưu trữ dữ liệu
+* Bước 2: Push/Pull các image container theo nhu cầu sử dụng. Ví dụ như sau:
+  * 10am push 1 image container 10GB -> total dung lượng là 10GB
+  * 1pm push thêm 1 image container 10GB nữa -> total dung lượng lưu trữ là 20GB
+* Bước 3: Hệ thống ghi nhận dung lượng lưu trữ trong Repository mỗi giờ 1 lần
+* Bước 4: Tạm giữ Credit mỗi ngày 1 lần dựa trên sử dụng thực tế. Cụ thể như sau:
+  * Thời gian chạy của hệ thống: 9am ngày hôm sau
+  * 10GB lưu trữ cho 3 giờ sử dụng (từ 10am đến 1pm) = 7,7 \* 10 \* 3 = 231 VND
+  * 20GB lưu trữ cho 20 giờ sử dụng (từ 1pm đến 9am hôm sau) = 7,7 \* 20 \* 20 = 3,080 VND
+  * Tổng số tiền sử dụng thực tế cho 1 ngày = 231 VND + 3,080 VND = 3,311 VND
+  * _Tổng số tiền cần tạm giữ = Số tiền sử dụng thực tế + Ước tính sử dụng cho 3 ngày tiếp theo = 3,311 + (7,7 VND \* 20GB \* 24h \* 3 days) **(\*)** = 14,399 VND_
+
+**Lưu ý (\*)**
+
+* Hệ thống cần tạm giữ phần sử dụng thực tế và cả phần dự đoán sử dụng cho 3 ngày tiếp theo để đảm bảo tính an toàn và xuyên suốt khi sử dụng dịch vụ.
+* Công thức ước tính sử dụng cho 3 ngày tiếp theo được tính như sau: **TotalSize \* Đơn giá VND \* 24h \* 3 days**
+
+### 4. Dịch vụ/sản phẩm Bandwidth <a href="#tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit" id="tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit"></a>
 
 Khi người dùng có phát sinh sử dụng gói bandwidth Pay-as-you-go trong kì đối soát, hệ thống sẽ tiến hành tạm giữ credit tương ứng với phần usage thực tế. Tham khảo ví dụ sau:
 
@@ -102,10 +139,9 @@ Lúc này, hệ thống sẽ tiến hành tạm giữ credit như sau:
 
 Đến cuối kỳ đối soát, hệ thống sẽ ra hóa đơn tương ứng và trừ vào phần tạm giữ trước đó. Trong quá trình sử dụng, nếu credit không đủ, hệ thống sẽ ngừng cung cấp dịch vụ theo policy của dịch vụ.
 
-#### 4. Không đủ số dư credit khả dụng để tạm giữ credit <a href="#tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit" id="tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit"></a>
+### Xử lý khi nợ credit <a href="#tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit" id="tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit"></a>
 
 Trường hợp người dùng không đủ số dư credit khả dụng sau khi thực hiện việc đặt cọc credit, hệ thống sẽ:
 
-* Gửi mail thông báo đến người dùng số thông tin tài nguyên và credit.
-
-Người dùng chủ động nạp thêm credit để tránh việc nợ credit chạm ngưỡng cho phép, gây ảnh hưởng đến quá trình sử dụng dịch vụ
+* Gửi mail thông báo đến người dùng thông tin credit cần tạm giữ (bao gồm tổng số credit và số cần nạp thêm).
+* Người dùng chủ động nạp thêm credit để tránh việc nợ credit chạm ngưỡng cho phép, gây ảnh hưởng đến quá trình sử dụng dịch vụ
