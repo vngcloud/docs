@@ -1,5 +1,56 @@
 # Release notes
 
+## June 25, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
+
+VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
+
+**Cải tiến:**
+
+* **Nâng cấp Plugin VNGCloud Controller Manager, Plugin VNGCloud Ingress Controller:** Các lỗi đã được phát hiện trong các phiên bản trước đã được khắc phục, giúp hệ thống hoạt động mượt mà và tin cậy hơn.&#x20;
+
+***
+
+## June 19, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
+
+VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
+
+**Cải tiến:**
+
+* **Nâng cấp tính năng thiết lập kích cỡ PVC (Persistent Volume Claim Size):** Người dùng giờ đây có thể chỉ định kích cỡ tối thiểu cho ổ đĩa CSI là <mark style="color:red;">**1GB**</mark> thay vì kích cỡ tối thiểu là 20GB như trước đây. Chi tiết bạn có thể tham khảo thêm tại [Volume ](broken-reference)và [Integrate with Container Storage Interface](broken-reference).
+* **Thay đổi Storage Class mặc định sử dụng cho Cluster:** thay đổi mặc định từ ổ đĩa loại SSD - IOPS 200 thành mặc định ổ đĩa loại SSD - IOPS 3000 và ổ đĩa loại NVME - IOPS 5000.
+* **Nâng cấp Plugin VNGCloud Controller Manager, Plugin VNGCloud Ingress Controller:** cải tiến plugin giúp tránh trùng lặp việc đặt tên Load Balancer.
+
+{% hint style="info" %}
+**Chú ý:**
+
+Do Storage Class mặc định cũ đã được chúng tôi xóa khỏi hệ thống, nếu bạn muốn tiếp tục sử dụng và thực hiện resize storage class này, bạn có thể:
+
+* Tạo Storage Class có tên sc-iops-200-retain với Volume Type mà bạn mong muốn.
+* Resize Storage Class thông qua lệnh:
+
+```
+kubectl patch pvc sc-iops-200-retain -p '{"spec":{"resources":{"requests":{"storage":"50Gi"\}}\}}'
+```
+
+Chi tiết tham khảo thêm tại [Integrate with Container Storage Interface](broken-reference).
+{% endhint %}
+
+***
+
+## June 12, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
+
+VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều tính năng và cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
+
+**Tính năng mới:**
+
+* **Hỗ trợ người dùng làm việc với VKS thông qua Terraform:** Người dùng có thể dễ dàng khởi tạo Cluster và Node Group trong VKS bằng Terraform. Chi tiết tham khảo thêm tại [đây](broken-reference).
+
+**Cải tiến:**
+
+* **Nâng cấp Plugin VNGCloud Controller Manager:** Bổ sung Annotation để cấu hình Load Balancer hỗ trợ Proxy Protocol. Chi tiết tham khảo thêm tại [đây](broken-reference).
+
+***
+
 ## May 30, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
 
 Chúng tôi vô cùng trân trọng thông báo, bản release chính thức (**General Availability**) của dịch vụ VNGCloud Kubernetes Service đã có sẵn. Với bản release chính thức này, ngoài các tính năng mà chúng tôi đã cung cấp trên các bản release trước đó, phiên bản này sẽ mang đến nhiều tính năng và cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
@@ -15,7 +66,7 @@ Chúng tôi vô cùng trân trọng thông báo, bản release chính thức (**
 
 * **Hiệu năng**: VKS đã thực hiện tối ưu hiệu năng khi khởi tạo Cluster. Cụ thể, tại bản Alpha, thời gian từ khi bắt đầu khởi tạo Cluster (với Default Node Group) tới khi Cluster chuyển trạng thái **ACTIVE** vào khoảng 04:00s tới 04:30s. Hiện tại thời gian này đã được chúng tôi tối ưu về <mark style="color:red;">**02:30s tới 03:00s**</mark> tùy thuộc vào từng Cluster và từng thời điểm mà bạn khởi tạo.
 * **Garbage collection of unused containers and images**: VKS sẽ tự động xóa các image không được sử dụng khi disk chạm mức giới hạn sử dụng (tỷ lệ usage/ quota >= 85%).
-* **Ngoài ra**, bản GA này được chúng tôi cải thiến một vài vấn đề khác như:&#x20;
+* **Ngoài ra**, bản GA này được chúng tôi cải thiến một vài vấn đề khác như:
   * Thay đổi cách đặt tên **Node Name** giúp bạn dễ dàng sử dụng và quản lý Cluster của bạn. Cụ thể, tên Node Name sẽ có thêm thông tin **Cluster Name**, **Node Group Name**.
   * Xóa **User Builder** trên User's Worker Node.
   * Thay đổi cơ chế **SSH** từ Port 22 qua Port 234.
@@ -30,7 +81,7 @@ Bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều tín
 
 **Tính năng mới:**
 
-* **Hỗ trợ tính năng Whitelist:** VKS cho phép tạo Private Node Group với chỉ Private IP đồng thời cho phép IP nào kết nối tới Cluster thông qua tính năng Whitelist IP. Chi tiết tham khảo thêm tại [Whitelist](../clusters/whitelist.md).
+* **Hỗ trợ tính năng Whitelist:** VKS cho phép tạo Private Node Group với chỉ Private IP đồng thời cho phép IP nào kết nối tới Cluster thông qua tính năng Whitelist IP. Chi tiết tham khảo thêm tại [Whitelist](broken-reference).
 
 **Cải tiến:**
 
