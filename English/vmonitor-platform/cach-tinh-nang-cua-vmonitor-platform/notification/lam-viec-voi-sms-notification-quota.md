@@ -1,4 +1,4 @@
-# Làm việc với SMS Notification Quota
+# Working with SMS Notification Quota
 
 ### Overview
 
@@ -33,9 +33,9 @@ After you initialize the SMS Notification Quota, you can view the information of
 
 ***
 
-### Gia hạn SMS Notification Quota
+### Renew SMS Notification Quota
 
-Bạn đã khởi tạo SMS notification quota với chu kỳ sử dụng ngắn hạn. Hiện tại nhu cầu giám sát của bạn thay đổi và bạn muốn tăng thêm chu kỳ sử dụng gói notification này. Để giải quyết vấn đề nêu trên, bạn có thể thay đổi chu kỳ lưu trữ thông qua tính năng **renew** mà chúng tôi cung cấp.
+You have created an SMS notification quota with a short-term usage cycle. Currently, your monitoring needs have changed, and you want to extend the usage cycle of this notification package. To address this issue, you can change the storage cycle through the **renew** feature that we provide.
 
 Để **gia hạn** một **SMS Notification Quota**, bạn có thể:
 
