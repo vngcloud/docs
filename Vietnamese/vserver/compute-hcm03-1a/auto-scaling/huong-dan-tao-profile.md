@@ -36,7 +36,7 @@ Các thông tin ở bước 2 không bắt buộc, bạn có thể bỏ qua nế
 
 Xem lại các thông tin đã tạo, nếu không có vấn đề gì chọn create profile. Lưu ý: bạn sẽ không bị charge bất kỳ phí gì khi tạo profile.&#x20;
 
-Sau khi tạo thành công, bạn sẽ thấy profile mới tạo hiển thị ở giao diện profile managment &#x20;
+Sau khi tạo thành công, bạn sẽ thấy profile mới tạo hiển thị ở giao diện profile management &#x20;
 
 Nếu bạn muốn xem thông tin chi tiết của profile, nhấp vào ô vuông tickbox bên trái tên profile&#x20;
 
