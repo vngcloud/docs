@@ -20,4 +20,4 @@ Sau khi tạo Snapshot cho máy chủ ảo và ổ đĩa, bạn có thể xem th
    6. Dung lượng Snapshot
    7. Số ngày lưu giữ bản Snapshot
 
-Sau khi xem thông tin các bản Snapshot, bạn có thể thực hiện tạo thêm Snapshot theo hướng dẫn [Tạo Snapshot](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64554084) hoặc xoá bản Snapshot không cần thiết theo hướng dẫn [Xóa Snapshot](xoa-snapshot.md).
+Sau khi xem thông tin các bản Snapshot, bạn có thể thực hiện tạo thêm Snapshot theo hướng dẫn [Tạo Snapshot](tao-snapshot.md) hoặc xoá bản Snapshot không cần thiết theo hướng dẫn [Xóa Snapshot](xoa-snapshot.md).
