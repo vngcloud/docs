@@ -16,17 +16,16 @@ Vui lòng tham khảo sơ đồ mô tả như bên dưới:
 
 ***
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49650202/vContainer-Holding-Guide-Page-1.drawio.png?version=1&#x26;modificationDate=1688454532000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (498).png" alt=""><figcaption></figcaption></figure>
 
 #### Quy trình tạm giữ credit sau mỗi ngày sử dụng <a href="#id-dieukhoansudungdichvuk8s-quytrinhtamgiucreditsaumoingaysudung" id="id-dieukhoansudungdichvuk8s-quytrinhtamgiucreditsaumoingaysudung"></a>
 
 ***
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49650202/vContainer-Holding-Guide-Page-2.drawio.png?version=1&#x26;modificationDate=1688454639000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (499).png" alt=""><figcaption></figcaption></figure>
 
 #### Quy trình chốt và thanh toán hóa đơn <a href="#id-dieukhoansudungdichvuk8s-quytrinhchotvathanhtoanhoadon" id="id-dieukhoansudungdichvuk8s-quytrinhchotvathanhtoanhoadon"></a>
 
 ***
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49650202/vContainer-Holding-Guide-Page-3.drawio.png?version=1&#x26;modificationDate=1688454722000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../../.gitbook/assets/image (500).png" alt=""><figcaption></figcaption></figure>
