@@ -87,7 +87,7 @@ Các bước trên chỉ cho phép chúng ta khởi tạo User account để đ�
 
 ### **Bước 6: Gán chính sách (Policy) vào User account / Group/ Service account** <a href="#quanlydinhdanhvatruycap-iam-chovserver-buoc6-ganchinhsach-policy-vaouseraccount-group-serviceaccount" id="quanlydinhdanhvatruycap-iam-chovserver-buoc6-ganchinhsach-policy-vaouseraccount-group-serviceaccount"></a>
 
-Sau khi tạo chính sách với các quyền phù hợp, người dùng cần gán chính sáchđã tạo cho **User account/ Group/ Service account** phù hợp với các chức năng hoặc trách nhiệm công việc, chỉ định người dùng cho các vai trò dựa trên chức năng công việc của họ, từ đó có thể nhóm các **User account** có quyền giống nhau vào **Group:**
+Sau khi tạo chính sách với các quyền phù hợp, người dùng cần gán chính sách đã tạo cho **User account/ Group/ Service account** phù hợp với các chức năng hoặc trách nhiệm công việc, chỉ định người dùng cho các vai trò dựa trên chức năng công việc của họ, từ đó có thể nhóm các **User account** có quyền giống nhau vào **Group:**
 
 1. **Mở tab User account tại:** [**https://hcm-3.console.vngcloud.vn/iam/user-accounts**](https://hcm-3.console.vngcloud.vn/iam/user-accounts)
 2. Chọn User account muốn gán quyền, sau đó tại trang chi tiết User account chọn **Attach Policies** và lựa chọn chính sách Policy muốn gán cho User account phù hợp với nhu cầu của bạn
