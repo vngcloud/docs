@@ -10,7 +10,7 @@ Bạn không phải trả thêm phí khi sử dụng các Node Group được qu
 
 Để bắt đầu với Kubernetes Cluster mới và Node Group được quản lý, hãy xem [Bắt đầu với Kubernetes – Bảng điều khiển quản lý vServer.](../bat-dau-voi-kubernetes-cluster/)
 
-Để thêm một Node Group được quản lý vào một Cluster hiện có, hãy xem [Tạo Node Group](https://docs.vngcloud.vn/pages/viewpage.action?pageId=63766723).
+Để thêm một Node Group được quản lý vào một Cluster hiện có, hãy xem [Tạo Node Group](tao-node-group.md).
 
 VNG Cloud tuân theo mô hình chia sẻ trách nhiệm đối với các bản vá bảo mật trên các Node Group được quản lý. Khi các Node được quản lý chạy và được tối ưu hóa của VNG Cloud, chúng tôi chịu trách nhiệm xây dựng các phiên bản Image đã vá lỗi khi có lỗi hoặc sự cố được báo cáo. Chúng tôi có thể xuất bản một sửa chữa. Tuy nhiên, bạn chịu trách nhiệm triển khai các phiên bản Image đã vá lỗi này cho các Node Group được quản lý của mình. Khi các nút được quản lý chạy My Image tùy chỉnh, bạn chịu trách nhiệm xây dựng các phiên bản Image đã vá lỗi khi có lỗi hoặc sự cố được báo cáo, sau đó triển khai My Image.&#x20;
 
