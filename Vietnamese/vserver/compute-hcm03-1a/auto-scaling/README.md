@@ -4,7 +4,7 @@ Auto-scaling là dịch vụ tự động tăng thêm hoặc giảm bớt (scale
 
 Các thành phần của Autoscaling &#x20;
 
-**Profile:** Là thiết lập cấu hình mẫu của instance bao gồm Flavor, Volume, Secure group, network. Auto scaling group sẽ dựa trên thiết lập của profile để scale Intance có cấu hình tương ứng. &#x20;
+**Profile:** Là thiết lập cấu hình mẫu của instance bao gồm Flavor, Volume, Secure group, network. Auto scaling group sẽ dựa trên thiết lập của profile để scale Instance có cấu hình tương ứng. &#x20;
 
 Mỗi profile có thể gắn nhiều scaling group, tuy nhiên mỗi scaling group chỉ có thể được gắn với 1 profile duy nhất. &#x20;
 
