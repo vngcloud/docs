@@ -8,7 +8,7 @@ Sau khi khởi tạo thành công Kubernetes Cluster, bạn cần sử dụng Ku
 2. Sau đó chỉ định Cluster và chọn **Action**
 3. Chọn **Lấy file config**
 
-<figure><img src="../../../../../.gitbook/assets/image (466).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (468).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -33,11 +33,7 @@ Sau khi khởi tạo thành công Kubernetes Cluster, bạn cần sử dụng Ku
 
     | `vim config` |
     | ------------ |
-6.  Copy File Config trên Portal download về vào file config trên MAC OS: \
-    \
-
-
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/49650173/Screen%20Shot%202021-05-24%20at%2010.34.41.png?version=1&#x26;modificationDate=1681382380000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+6. Copy File Config trên Portal download về vào file config trên MAC OS:&#x20;
 
 <figure><img src="../../../../../.gitbook/assets/image (467).png" alt=""><figcaption></figcaption></figure>
 
@@ -48,11 +44,9 @@ Sau khi khởi tạo thành công Kubernetes Cluster, bạn cần sử dụng Ku
 1. cd \~/
 2. mkdir .kube
 3. cp \~/Downloads/config.txt \~/.kube/config
-4.  cd. kube\
-    \
+4. cd. kube
 
-
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/49650173/image2023-8-10_15-19-54.png?version=1&#x26;modificationDate=1691655596000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (470).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -63,10 +57,8 @@ Sau khi khởi tạo thành công Kubernetes Cluster, bạn cần sử dụng Ku
 
     | `kubectl get nodes` |
     | ------------------- |
-2.  Giao diện sẽ trả về kết quả như sau:\
-    \
-    \
-    \
-    Như vậy đã hoàn thành việc khởi tạo Containers và kết nối lên Container đó ngay tại PC hoặc Laptop của mình.
+2. Giao diện sẽ trả về kết quả như sau:
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/49650173/Screen%20Shot%202021-05-24%20at%2010.40.43.png?version=1&#x26;modificationDate=1681382380000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (471).png" alt=""><figcaption></figcaption></figure>
+
+Như vậy đã hoàn thành việc khởi tạo Containers và kết nối lên Container đó ngay tại PC hoặc Laptop của mình.
