@@ -5,7 +5,7 @@ VNG Cloud có trách nhiệm đảm bảo tính bảo mật của hạ tầng v�
 An toàn mạnh là ưu tiên hàng đầu tại VNG Cloud. Khách hàng của VNG Cloud sẽ được thừa hưởng các tiêu chuẩn bảo mật tiêu chuẩn nhất dành cho các tổ chức, doanh nghiệp. Trách nhiệm an toàn bảo mật sẽ bao gồm ở cả 2 bên là VNG Cloud và chính khách hàng, có thể kể đến các trách nhiệm của KH như:
 
 * Quản lý việc truy cập mạng đến các máy chủ ảo của khách hàng thông qua quản lý cấu hình VPC và Security group.
-* Quản lý các thông tin tuy cập vào máy chủ ảo như password, private key.
+* Quản lý các thông tin truy cập vào máy chủ ảo như password, private key.
 * Quản lý hệ điều hành của máy chủ ảo cũng như các phần mềm mà KH đang sử dụng, thực hiện vá các lỗi bảo mật theo hướng dẫn.
 * Phân quyền truy cập hệ thống đúng đắn dựa trên IAM cho các tài nguyên của KH tại VNG Cloud.
 
