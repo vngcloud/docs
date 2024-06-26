@@ -31,30 +31,21 @@
 
     \
     Ví Dụ: Case deploy APP echo1:\
-    \
-    \
 
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/49650179/Screen%20Shot%202021-05-24%20at%2010.45.23.png?version=1&#x26;modificationDate=1681382398000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### **Kiểm tra việc deploy** <a href="#buoc4-deployapplicationtrencontainerdakhoitao-kiemtraviecdeploy" id="buoc4-deployapplicationtrencontainerdakhoitao-kiemtraviecdeploy"></a>
 
-1.  Bạn có thể kiểm tra việc triển khai bằng câu lệnh sau:\
-    \
-
+1.  Bạn có thể kiểm tra việc triển khai bằng câu lệnh sau:
 
     | `kubeclt get po -o wide` |
     | ------------------------ |
-2.  Kết quả sẽ trả ra\
-    \
+2. Kết quả sẽ trả ra
 
-
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/49650179/Screen%20Shot%202021-05-24%20at%2010.49.56.png?version=1&#x26;modificationDate=1681382398000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
+<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -65,23 +56,14 @@
     | `kubectl expose deployment deployapp --type=LoadBalancer --port=30309` `--target-port=8085` |
     | ------------------------------------------------------------------------------------------- |
 
-    \
-    \
-
-
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/49650179/Screen%20Shot%202021-05-24%20at%2010.53.14.png?version=1&#x26;modificationDate=1681382398000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 2.  Thực hiện Áp dụng cấu hình lên container:\
-    \
-    \
-    \
 
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/49650179/Screen%20Shot%202021-05-24%20at%2010.57.50.png?version=1&#x26;modificationDate=1681382398000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 3.  Kiểm tra việc access từ ngoài Internet vào Dịch vụ Echo1 với port 30309:\
     \
-    \
-    \
 
 
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/49650179/Screen%20Shot%202021-05-24%20at%2010.58.05.png?version=1&#x26;modificationDate=1681382398000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (472).png" alt=""><figcaption></figcaption></figure>
 4. Như vậy đã hoành thành việc khởi tạo Application và Expose ra ngoài internet
