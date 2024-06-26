@@ -2,7 +2,7 @@
 
 #### Tổng quan <a href="#cname-tongquan" id="cname-tongquan"></a>
 
-CNAME trong CDN là một loại bản ghi DNS (Hệ thống tên miền) được sử dụng để **định hướng lưu lượng truy cập từ tên miền của bạn đến máy chủ CDN**.&#x20;
+CNAME trong CDN là một loại bản ghi DNS (Hệ thống tên miền) được sử dụng để **định hướng lưu lượng truy cập từ tên miền của bạn đến máy chủ CDN**.
 
 ***
 
@@ -28,4 +28,4 @@ CNAME trong CDN là một loại bản ghi DNS (Hệ thống tên miền) đư�
 
 Để sử dụng CNAME trong CDN, bạn có thể thực hiện thiết lập CNAMEs tại trường thông tin CDN Name trên thư mục CDN Info khi thực hiện tạo 1 CDN bất kỳ trên hệ thống vCDN.
 
-<figure><img src="../../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>

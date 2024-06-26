@@ -1,3 +1,3 @@
-# Trạng Thái CDN- Origin
+# State of CDN- Origin
 
-<figure><img src="../../.gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (219).png" alt=""><figcaption></figcaption></figure>

@@ -37,50 +37,50 @@ After you initialize the SMS Notification Quota, you can view the information of
 
 You have created an SMS notification quota with a short-term usage cycle. Currently, your monitoring needs have changed, and you want to extend the usage cycle of this notification package. To address this issue, you can change the storage cycle through the **renew** feature that we provide.
 
-Để **gia hạn** một **SMS Notification Quota**, bạn có thể:
+To **renew** an **SMS Notification Quota**, you can:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Quota\&Usage.**
-3. Chọn **Paid notification usage**.
-4. Tại gói SMS notification quota đang sử dụng, chọn **Renew.**
-5. Chọn **Renew**.
-6. Chọn **Period** sử dụng mà bạn mong muốn gia hạn. Chúng tôi cung cấp các chu kỳ gia hạn bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng. Khi bạn thực hiện chọn chu kỳ gia hạn, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ sử dụng mới và tổng số tiền bạn cần chi trả cho việc gia hạn **gói SMS notification quota**.
-7. Nhập **Coupon** nếu có và chọn **Apply**.
-8. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **SMS notification quota** sẽ được gia hạn.
+1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor).&#x20;
+2. Select the menu **Quota\&Usage.**
+3. Select **Paid notification usage**.
+4. In the SMS notification quota package you are using, select **Renew.**
+5. Select **Renew**.
+6. Select the **Period** you wish to extend. We offer renewal periods including: 1 month, 3 months, 6 months, 12 months, 24 months, 36 months. Once you select the renewal period, the system will automatically calculate the effective time of the new usage period and the total amount you need to pay for the **SMS notification quota** renewal.
+7. Enter the **Coupon** if you want and select **Apply**.
+8. Choose **Continue** and proceed with the **Checkout** steps. After a successful payment, the **SMS notification quota** will be renewed.
 
-Bạn chỉ có thể gia hạn sử dụng gói SMS notification quota trong vòng 7 ngày trước thời điểm hết hạn của gói notification hiện tại. Cách tính chi phí gia hạn cho mỗi gói SMS notification quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
-
-***
-
-### Tăng giảm hạn mức SMS Notification Quota
-
-Để **tăng hạn mức** một **SMS Notification Quota**, bạn có thể:
-
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Quota\&Usage.**
-3. Chọn **Paid notification usage**.
-4. Tại gói SMS notification quota đang sử dụng, chọn **Upgrade**.
-5. Chọn **gói SMS notification quota** mới mà bạn muốn nâng cấp. Gói notification nâng cấp phải đảm bảo điều kiện có cấu hình (số lượng tin nhắn văn bản) trên cấu hình gói (số lượng tin nhắn văn bản) cao hơn cấu hình gói đang sử dụng.
-6. Chọn **Upgrade.**
-7. Nhập **Coupon** nếu có và chọn **Apply**.
-8. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **SMS notification quota** sẽ được tăng hạn mức.
-
-Cách tính chi phí tăng hạn mức cho mỗi gói SMS notification quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+You can only renew your SMS notification quota within 7 days before the current notification package expires. The cost calculation for each SMS notification quota renewal is publicly available on the VNG Cloud homepage; please refer to the Pricing Calculation section.
 
 ***
 
-### Xóa SMS Notification Quota
+### Resize SMS Notification Quota
 
-Nếu bạn không có nhu cầu sử dụng gói SMS notification quota đã tạo. Chúng tôi khuyến khích bạn nên xóa gói SMS notification quota này để tối ưu chi phí.
+To **resize up** an **SMS Notification Quota**, you can:
 
-Để **xóa** một **SMS Notification Quota**, bạn có thể:
+1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor).&#x20;
+2. Select the menu **Quota\&Usage.**
+3. Select **Paid notification usage**.
+4. At the SMS notification quota package in use, select **Upgrade**.
+5. Select the new **SMS notification quota package** you want to upgrade to. The upgraded package must have a configuration (number of text messages) higher than the configuration of the package currently in use.
+6. Select **Upgrade.**
+7. Enter the **Coupon** if you want and select **Apply**.
+8. Select **Continue** and proceed with the steps to **Checkout** your cart. After a successful payment, the **SMS notification quota** will be increased.
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Quota\&Usage.**
-3. Chọn **Paid notification usage**.
-4. Tại gói SMS notification quota đang sử dụng, chọn **Delete**.
-5. Tại màn hình xác nhận xóa SMS notification quota, chọn **Delete**.
+The detailed cost calculation for increasing the quota for each SMS notification package is publicly available on VNG Cloud's homepage. Please refer to the Pricing Calculation for more information.
 
-Sau khi bạn bạn thực hiện xóa gói SMS notification quota thì gói notification bị xóa sẽ biến mất khỏi danh sách gói notification của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](../../cach-tinh-phi.md).
+***
 
-<mark style="color:red;">**Do hành động xóa SMS notification quota tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.**</mark>
+### Delete SMS Notification Quota
+
+If you do not need to use the created SMS notification quota, we recommend deleting this SMS notification quota to optimize costs.
+
+To delete **SMS Notification Quota**, you can:
+
+1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor).&#x20;
+2. Select the menu **Quota\&Usage.**
+3. Select **Paid notification usage**.
+4. At the SMS notification quota package in use, select **Delete**.
+5. At the SMS notification quota deletion confirmation screen, select **Delete**.
+
+After you delete the SMS notification quota package, the deleted notification package will disappear from your notification package list. If your resources still have validity, we will refund the unused balance to your credit wallet. For details on how the vMonitor Platform calculates refund fees, please refer to the Pricing Calculation method.
+
+<mark style="color:red;">**Deleting the SMS notification quota carries significant risks (the resources cannot be recovered after deletion). We strongly advise you to consider carefully before proceeding.**</mark>

@@ -1,8 +1,8 @@
-# Xóa Cache
+# Delete Cache
 
 Cho phép xóa các nội dung đã cache trước đó trên hệ thống CDN
 
-<figure><img src="../../.gitbook/assets/image (265).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure>
 
 Tại đây, bạn có thể thực hiện các lựa chọn phù hợp:
 

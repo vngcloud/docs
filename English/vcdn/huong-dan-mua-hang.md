@@ -1,4 +1,4 @@
-# Hướng dẫn mua hàng
+# Pricing
 
 Hiện tại vCDN hỗ trợ các gói trả trước và trả sau khi sử dụng hệ thống. Với gói trả trước người dùng nạp tiền và mua hàng ở hệ thống, đối với gói trả sau hệ thống sẽ tính toán chi phí người dùng phát sinh trong tháng và thống kê tính toán tiền cho khách hàng hàng tháng. Để vào trang mua hàng người dùng chỉ cần nhấn vào menu Buy More Traffic trên màn hình.
 
@@ -8,7 +8,7 @@ Hiện tại vCDN hỗ trợ các gói trả trước và trả sau khi sử d�
 
 Tùy theo tính năng người dùng có thể mua và lên các gói Basic, Standard, Pro, Enterprice các gói này chỉ app dụng cho dịch vụ Web Accerlerator . Để biết thêm giới hạn và tính năng của từng gói tham khảo link [https://www.vngcloud.vn/en/product/web-accelerator](https://www.vngcloud.vn/en/product/web-accelerator).
 
-<figure><img src="../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (201).png" alt=""><figcaption></figcaption></figure>
 
 Với gói basic người dùng đăng ký vào hệ thống sẽ mặc định áp dụng gói này.
 
@@ -29,7 +29,7 @@ Người dùng có thể nạp tiền và mua các gói và giá như các gói 
 
 Từng loại traffic sẽ có giá thành khác nhau. Đối với loại traffic là trong nước và nhóm standard có giá mua lẻ là 880 VND/ 1GB traffic. Và vCDN có thêm giá theo bậc thang cho user càng mua nhiều giá càng giảm cho user.
 
-<figure><img src="../.gitbook/assets/image (261).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (202).png" alt=""><figcaption></figcaption></figure>
 
 Thông báo hết hạn gói cước:
 

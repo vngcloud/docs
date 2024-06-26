@@ -8,7 +8,7 @@ Web Accelerator là giải pháp giúp tăng tốc độ hiển thị nội dung
 
 #### **Sơ đồ hoạt động** <a href="#webaccelerator-cochephanphoidulieu" id="webaccelerator-cochephanphoidulieu"></a>
 
-<figure><img src="../../.gitbook/assets/image (219).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -35,11 +35,11 @@ Dịch vụ Web Accelerator cache tất cả các đối tượng đi qua nó kh
 
 * **Bước 1:** Chọn menu Web accelerator bạn sẽ vô trang thống kê và chỉnh sửa cho Web Accelerator, Chọn button Create để tạo CDN.
 
-<figure><img src="../../.gitbook/assets/image (220).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
 
 * **Bước 2**: Nhập và tùy chọn tính năng dịch vụ Web Accelerator
 
-<figure><img src="../../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (164).png" alt=""><figcaption></figcaption></figure>
 
 * **Bước 3**: Nhập Domain Name cho CDN khi người dùng nhập domain có sẵn của mình hệ thống sẽ tự tìm và thêm server ở tùy chọn origin. Ví dụ: người dùng có domain “[vnexpress.net](http://vnexpress.net/)” thì khi nhập xong chọn ra một field khác sẽ tự dộng thêm server có IP là “111.65.250.2”.
 * **Bước 4**: Nhập và tùy chỉnh các tính năng dịch vụ.

@@ -1,12 +1,12 @@
-# Quản Lý Certificate vCDN
+# Manage Certificate vCDN
 
 Hỗ trợ khách hàng upload SSL Cert và SSL Key bao gồm key ChainCA
 
-<figure><img src="../../.gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
 
-Sau khi đăng nhập, click vào mục “Certificate” như  hình bên.&#x20;
+Sau khi đăng nhập, click vào mục “Certificate” như hình bên.
 
-<figure><img src="../../.gitbook/assets/image (263).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
 
 Giao diện quản lý Certificate hiện ra với danh sách các certificate gồm các cột:
 
@@ -20,7 +20,7 @@ Giao diện quản lý Certificate hiện ra với danh sách các certificate g
 * Đầu trang, thông tin tóm tắt về số lượng chứng chỉ (Total), số certificate đang được kích hoạt để sẳn sàng sử dụng (Active) và số chứng chỉ đã tạm hủy kích hoạt (Inactive).
 * Để thêm mới/upload certificate, click vào nút “Upload” , giao diện upload ceritificate sẽ như sau:
 
-<figure><img src="../../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (205).png" alt=""><figcaption></figcaption></figure>
 
 (1): Click vào Upload Private Key để tải lên private key của Certificate, hoặc cũng có thể paste private key vào khung textbox bên dưới.
 

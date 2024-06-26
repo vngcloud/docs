@@ -1,3 +1,3 @@
-# Thống Kê IP Gửi Yêu Cầu Tới Hệ Thống CDN (Unique Ips)
+# Unique Ips
 
-<figure><img src="../../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure>

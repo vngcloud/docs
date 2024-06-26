@@ -4,7 +4,7 @@ Bật/Tắt CDN đã tạo: Khách hàng có thể tùy ý bật/tắt CDN đã 
 
 Click vào menu CDN => Web Accelerator, giao diện quản lý CDN Web Accelerator.
 
-<figure><img src="../../.gitbook/assets/image (254).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (196).png" alt=""><figcaption></figcaption></figure>
 
 Giao diện quản lý Web Accelerator hiện ra với danh sách các CDN gồm các cột:
 

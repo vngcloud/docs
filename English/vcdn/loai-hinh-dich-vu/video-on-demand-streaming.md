@@ -15,7 +15,7 @@ Dịch vụ VOD của VNG Cloud giúp doanh nghiệp:
 
 #### **Sơ đồ hoạt động** <a href="#videoondemandstreaming-cochephanphoidulieu" id="videoondemandstreaming-cochephanphoidulieu"></a>
 
-<figure><img src="../../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -57,11 +57,11 @@ Dịch vụ VOD của VNG Cloud giúp doanh nghiệp:
 
 * **Bước 1:** Tạo VOD CDN bằng cách chọn menu VOD, chọn button Create CDN.
 
-<figure><img src="../../.gitbook/assets/image (214).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (157).png" alt=""><figcaption></figcaption></figure>
 
 * **Bước 2**: Tạo CDN
 
-<figure><img src="../../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (158).png" alt=""><figcaption></figcaption></figure>
 
 * **Bước 3**: Nhập tên cho CDN.
 * **Bước 4**: Chọn cấu hình VOD type bao gồm:
@@ -82,5 +82,3 @@ Khi cấu hình CDN xong người dùng có thể truy cập các CDN VoD theo c
 * MP3: https:// \<CDN Domain>/<đường dẫn file MP3 trên origin >.
 * HLS: https:// \<CDN Domain>/<đường dẫn file MP4/SMIL trên origin>/index.m3u8.
 * MpegDash: : https:// \<CDN Domain>/<đường dẫn file manifest trên origin>.
-
-\

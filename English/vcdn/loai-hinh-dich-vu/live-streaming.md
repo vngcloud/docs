@@ -8,7 +8,7 @@ Dịch vụ phát nội dung trực tiếp như sự kiện, chương trình tru
 
 #### Sơ đồ hoạt động
 
-<figure><img src="../../.gitbook/assets/image (207).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
 
 #### **Cơ Chế Phân Phối Dữ Liệu** <a href="#livestreaming-cochephanphoidulieu" id="livestreaming-cochephanphoidulieu"></a>
 
@@ -18,7 +18,7 @@ Sử dụng phương pháp [PU](../tong-quan/co-che-phan-phoi-du-lieu/phuong-pha
 
 #### **Tính Năng Dịch Vụ** <a href="#livestreaming-tinhnangdichvu" id="livestreaming-tinhnangdichvu"></a>
 
-<figure><img src="../../.gitbook/assets/image (208).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>
 
 * Tùy chọn thời chunk size nhằm tối ưu việc caching và phân phối nội dung
 * Hỗ trợ multi [Origin](../chi-tiet-tinh-nang/origin.md) khi tạo CDN.
@@ -35,11 +35,11 @@ Sử dụng phương pháp [PU](../tong-quan/co-che-phan-phoi-du-lieu/phuong-pha
 
 * **Bước 1**: Tạo 1 tín hiệu đầu vào Live Entrypoint hỗ trợ live Streaming.
 
-<figure><img src="../../.gitbook/assets/image (209).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (152).png" alt=""><figcaption></figcaption></figure>
 
 * **Bước 2**: Tạo tín hiệu đầu vào bằng cách điền thông tin tên, tên app, bảo mật tín hiệu đầu vào qua màn hình tạo tín hiều đầu vào (Live Entrypoint).
 
-<figure><img src="../../.gitbook/assets/image (210).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (153).png" alt=""><figcaption></figcaption></figure>
 
 * Trong đó các mục số:
   * (2): Bật/tắt chức năng timeshift cho Live Entrypoint này, mặc định vCDN chỉ hỗ trợ timeshift 30 phút.
@@ -52,11 +52,11 @@ Sử dụng phương pháp [PU](../tong-quan/co-che-phan-phoi-du-lieu/phuong-pha
   * (8): Lựa chọn segment size (thời gian mỗi file nội dung được đóng gói từ tín hiệu RTMP dưới định dạng HLS) cho dịch vụ Live
 * **Bước 3**: Tạo Live Streaming CDN: Chọn menu Live Streaming, nhấn nút tạo CDN (Create):
 
-<figure><img src="../../.gitbook/assets/image (211).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (154).png" alt=""><figcaption></figcaption></figure>
 
 * **Bước 4**: Tạo nội dung và tùy chọn CDN Live Streaming
 
-<figure><img src="../../.gitbook/assets/image (212).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (155).png" alt=""><figcaption></figcaption></figure>
 
 Trong đó:
 
@@ -72,6 +72,6 @@ Trong đó:
 
 Khi tạo cdn xong người dùng có thê cấu hình và truy cập theo Link
 
-&#x20;      \+ Đối với link sử dụng HTTPS là https://\<vCDN Domain>/ \<ChannelName>.
+\+ Đối với link sử dụng HTTPS là https://\<vCDN Domain>/ \<ChannelName>.
 
-&#x20;      \+ Đối với link sử dụng HTTP là https://\<vCDN Domain>/ \<ChannelName>.
+\+ Đối với link sử dụng HTTP là https://\<vCDN Domain>/ \<ChannelName>.
