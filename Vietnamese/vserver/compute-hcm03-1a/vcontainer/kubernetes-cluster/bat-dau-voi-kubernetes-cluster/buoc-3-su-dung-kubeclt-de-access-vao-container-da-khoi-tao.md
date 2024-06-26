@@ -6,15 +6,9 @@ Sau khi khởi tạo thành công Kubernetes Cluster, bạn cần sử dụng Ku
 
 1. Truy cập vào bảng điều khiển Kubernetes Cluster tại: [https://hcm-3.console.vngcloud.vn/vserver/container/cluster](https://hcm-3.console.vngcloud.vn/vserver/container/cluster)
 2. Sau đó chỉ định Cluster và chọn **Action**
-3.  Chọn **Lấy file config**\
-    \
-    \
+3. Chọn **Lấy file config**
 
-
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/49650173/image2023-6-2_10-29-12.png?version=1&#x26;modificationDate=1685676553000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
+<figure><img src="../../../../../.gitbook/assets/image (466).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -45,8 +39,7 @@ Sau khi khởi tạo thành công Kubernetes Cluster, bạn cần sử dụng Ku
 
     <figure><img src="https://docs.vngcloud.vn/download/attachments/49650173/Screen%20Shot%202021-05-24%20at%2010.34.41.png?version=1&#x26;modificationDate=1681382380000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-\
-
+<figure><img src="../../../../../.gitbook/assets/image (467).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

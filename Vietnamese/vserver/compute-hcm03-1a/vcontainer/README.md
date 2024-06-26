@@ -6,9 +6,7 @@ Kubernetes quản lý các cụm phiên bản vServer và chạy các vùng ch�
 
 ### **Kiến trúc Container trên VNG Cloud:**  <a href="#vcontainer-kientruccontainertrenvngcloud" id="vcontainer-kientruccontainertrenvngcloud"></a>
 
-<figure><img src="https://vngcloud.vn/documents/20126/1650480/vng-cloud-product-vcontainer-activity-diagram.jpg" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49650150/image2023-4-26_12-34-4.png?version=1&#x26;modificationDate=1682487245000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (460).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
