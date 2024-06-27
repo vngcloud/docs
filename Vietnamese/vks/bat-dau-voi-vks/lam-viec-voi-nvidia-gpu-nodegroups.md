@@ -32,7 +32,7 @@
     kubectl-view-allocations --version
     ```
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 *   Trên Cluster vừa tạo, thực hiện kiểm tra node trong node group của bạn qua lệnh:&#x20;
 
@@ -40,7 +40,7 @@
     kubectl get nodes -owide
     ```
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -56,7 +56,7 @@
       --set dcgmExporter.serviceMonitor.enabled=true
     ```
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Hệ thống mất khoảng 5 - 10 phút để thực hiện cài đặt operator này, bạn hãy đợi tới khi việc cài đặt hoàn thành. Trong thời gian này, bạn có thể kiểm tra tất cả các pods trong namespace`gpu-operator` đang chạy thông qua lệnh:&#x20;
 
@@ -64,7 +64,7 @@
     kubectl -n gpu-operator get pods -owide
     ```
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Operator sẽ gán label`nvidia.com/gpu`cho node trong node group của bạn, lable này được NVIDIA GPU Operator sử dụng để identify nodes, bạn cũng có thể sử dụng label này để filter những node đang có NVIDIA GPU. Bạn có thể kiểm tra các node được gán nhãn này qua lệnh:&#x20;
 
@@ -74,7 +74,7 @@
 
 Ví dụ, đối với kết quả bên dưới, node trong cụm có label `nvidia.com/gpu`, có nghĩa là node đó có GPU. Các label này cũng cho biết nút này đang sử dụng 1 card GPU RTX 2080Ti, số lượng GPU có sẵn, Bộ nhớ GPU và các thông tin khác.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Trên pod `nvidia-device-plugin-daemonset`trong namespace`gpu-operator`, bạn có thể chạy lệnh `nvidia-smi` để kiểm tra thông tin GPU trên node:
 
@@ -83,7 +83,7 @@ Ví dụ, đối với kết quả bên dưới, node trong cụm có label `nvi
     kubectl -n gpu-operator exec -it $POD_NAME -- nvidia-smi
     ```
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -109,7 +109,7 @@ Ví dụ, đối với kết quả bên dưới, node trong cụm có label `nvi
     kubectl delete deploy cuda-vectoradd
     ```
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Deploy TensorFlow Test
 
@@ -134,7 +134,7 @@ kubectl logs <put-your-tensorflow-gpu-pod-name> --tail 20
 kubectl delete deploy tensorflow-gpu
 ```
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -192,7 +192,7 @@ data:
     -p '{"spec": {"dcgmExporter": {"enabled": false}}}'
   ```
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Verify GPU time-slicing
 
@@ -217,7 +217,7 @@ data:
     kubectl delete deploy time-slicing-verification
     ```
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Multi-process server (MPS)
 
@@ -272,45 +272,49 @@ kubectl patch clusterpolicies.nvidia.com/cluster-policy \
 kubectl -n gpu-operator get pods
 ```
 
-> * Your new configuration will be applied to all nodes in the cluster that have the `nvidia.com/gpu` label.
-> * The configuration is considered successful if the `ClusterPolicy` **STATUS** is `ready`.
-> * Because of the `sharing.mps.resources.replicas` is set to 4, you can deploy up to 4 pods that share the GPU.
-
 #### Verify MPS
 
-*   Until now, we have configured the GPU MPS, now we will deploy 5 pods that share the GPU using `Deployment`, because of only 4 pods can share the GPU, the 5th pod will be in `Pending` state. See file [mps-verification.yaml](https://raw.githubusercontent.com/vngcloud/kubernetes-sample-apps/main/nvidia-gpu/manifest/mps-verification.yaml).
+* Bây giờ, bạn có thể deploy một application có 5 pods sử dụng GPU bằng cách apply yaml theo mẫu [mps-verification.yaml](https://raw.githubusercontent.com/vngcloud/kubernetes-sample-apps/main/nvidia-gpu/manifest/mps-verification.yaml). Bởi vì cấu hình config map thiết lập bên trên đang có replica = 4 nên pod thứ 5 sẽ có trạng thái `Pending` state.&#x20;
+* Lần lượt deploy và verify GPU MPS của bạn qua các lệnh:&#x20;
 
-    ```bash
-    # Apply the manifest
-    kubectl apply -f \
-      https://raw.githubusercontent.com/vngcloud/kubernetes-sample-apps/main/nvidia-gpu/manifest/mps-verification.yaml
+```bash
+# Apply the manifest
+kubectl apply -f \
+  https://raw.githubusercontent.com/vngcloud/kubernetes-sample-apps/main/nvidia-gpu/manifest/mps-verification.yaml
 
-    # Check the pods
-    kubectl get pods
+# Check the pods
+kubectl get pods
 
-    # Check the logs of the TensorFlow pod
-    kubectl logs -l job-name=nbody-sample
+# Check the logs of the TensorFlow pod
+kubectl logs -l job-name=nbody-sample
 
-    # [Optional] Clean the resources
-    kubectl delete job nbody-sample
-    ```
+# [Optional] Clean the resources
+kubectl delete job nbody-sample
+```
 
-    ![](../../images/nodegroup/12.png)
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Chú ý:**
+
+* Trên một node GPU chỉ có thể sử dụng một trong hai chiến lược chia sẻ GPU là Time Slicing hoặc MPS, không thể sử dụng đồng thời cả hai. Lý do là vì cả hai chiến lược đều sử dụng cùng một tài nguyên GPU vật lý, và việc sử dụng cả hai đồng thời sẽ dẫn đến xung đột và hiệu suất không mong muốn.
+* Tuy nhiên, nếu bạn có một node group gồm nhiều node GPU, bạn có thể sử dụng hai chiến lược khác nhau trên hai node riêng biệt. Ví dụ: bạn có thể sử dụng Time Slicing trên một node để chia sẻ GPU và sử dụng MPS trên node còn lại để chia sẻ GPU cho các ứng dụng khác. Chi tiết tham khảo mục bên dưới.
+{% endhint %}
 
 ### Applying Multiple Node-Specific Configurations
 
-* An alternative to applying one cluster-wide configuration is to specify **multiple time-slicing configurations** in the `ConfigMap` and to **apply labels** node-by-node to control which configuration is applied to which nodes.
-* In this guideline, I add a new RTX-4090 into the cluster.
-* This configuration should be greate if your cluster have multiple nodes with different GPU models. For example:
-  * NodeGroup 1 includes the instance of GPU RTX 2080Ti.
-  * NodeGroup 2 includes the instance of GPU RTX 4090.
-* And if you want to run multiple GPU sharing strategies in the same cluster, you can apply multiple configurations to the same node by using labels. For example:
-  * NodeGroup 1 includes the instance of GPU RTX 2080Ti with 4 pods sharing the GPU using time-slicing.
-  * NodeGroup 2 includes the instance of GPU RTX 4090 with 8 pods sharing the GPU using MPS.
+* Nếu bạn có một node group gồm nhiều node GPU, bạn có thể sử dụng hai chiến lược khác nhau trên hai node riêng biệt. Ví dụ: bạn có thể sử dụng Time Slicing trên một node để chia sẻ GPU và sử dụng MPS trên node còn lại để chia sẻ GPU cho các ứng dụng khác. Ví dụ, tôi đã tạo 2 node group trong một Cluster với các thông số như sau:&#x20;
+  * NodeGroup 1 có instance GPU RTX 2080Ti.
+  * NodeGroup 2 có instance GPU RTX 4090.
+
+Hiện tại, bạn mong muốn:&#x20;
+
+* NodeGroup 1 có instance GPU RTX 2080Ti sẽ chạy 4 pods sharing GPU sử dụng time-slicing.
+* NodeGroup 2 có instance GPU RTX 4090 sẽ chạy 8 pods sharing GPU sử dụng MPS.
 
 #### Configure Multiple Node-Specific Configurations
 
-*   To using this feature, you need to update the previous `ConfigMap` with the following settings:
+*   Để sử dụng GPU time-slicing, MPS cho cluster của bạn, bạn cần tạo tệp tin `ConfigMap` theo mẫu bên dưới để định nghĩa cấu hình time-slicing, MPS mong muốn.&#x20;
 
     ```yaml
     apiVersion: v1
@@ -337,43 +341,47 @@ kubectl -n gpu-operator get pods
             - name: nvidia.com/gpu
               replicas: 8                           # Allow the node using this GPU to be shared by 8 pods
     ```
-*   Apply the above configure.
+*   Hoặc bạn có thể chạy câu lệnh bên dưới để apply cấu hình trên cho tất cả các node trong cluster của bạn có lable `nvidia.com/gpu` .
 
     ```bash
     kubectl -n gpu-operator create -f \
       https://raw.githubusercontent.com/vngcloud/kubernetes-sample-apps/main/nvidia-gpu/manifest/multiple-gpu-sharing.yaml
-
-    # Patch the ClusterPolicy
-    kubectl patch clusterpolicies.nvidia.com/cluster-policy \
-      -n gpu-operator --type merge \
-      -p '{"spec": {"devicePlugin": {"config": {"name": "gpu-multi-sharing-config"}}}}'
-
-    # Disable DCGM exporter
-    kubectl patch clusterpolicies.nvidia.com/cluster-policy \
-      -n gpu-operator --type merge \
-      -p '{"spec": {"dcgmExporter": {"enabled": false}}}'
-
-    # Check the ClusterPolicy
-    kubectl get clusterpolicy
     ```
+* Sau đó, sử dụng lệnh `kubectl patch` để patch ClusterPolicy và bật GPU time-slicing, MPS. Lệnh patch chỉ hoạt động khi `ClusterPolicy` có trạng thái `Ready`.
 
-    ![](../../images/nodegroup/13.1.png)
-*   Now, we need to label the node with the name that you specified in the `ConfigMap`:
+```bash
+# Patch the ClusterPolicy
+kubectl patch clusterpolicies.nvidia.com/cluster-policy \
+  -n gpu-operator --type merge \
+  -p '{"spec": {"devicePlugin": {"config": {"name": "gpu-multi-sharing-config"}}}}'
 
-    ```bash
-    # Get the node names
-    kubectl get nodes
+# Disable DCGM exporter
+kubectl patch clusterpolicies.nvidia.com/cluster-policy \
+  -n gpu-operator --type merge \
+  -p '{"spec": {"dcgmExporter": {"enabled": false}}}'
 
-    # Label the node with the name that you specified in the ConfigMap
-    kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-2080ti
-    kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
-    ```
+# Check the ClusterPolicy
+kubectl get clusterpolicy
+```
 
-    ![](../../images/nodegroup/14.png)
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+* Bây giờ, bạn cần thêm label cho node với tên mà bạn chỉ định tại trong file `ConfigMap`:
+
+```bash
+# Get the node names
+kubectl get nodes
+
+# Label the node with the name that you specified in the ConfigMap
+kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-2080ti
+kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
+```
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Verify Multiple Node-Specific Configurations
 
-*   In this example, we will training MNIST model in TensorFlow using the GPU RTX 2080Ti and RTX 4090. The RTX 2080Ti will be shared by 4 pods using time-slicing and the RTX 4090 will be shared by 8 pods using MPS. See file [tensorflow-mnist-sample.yaml](https://github.com/vngcloud/kubernetes-sample-apps/raw/main/nvidia-gpu/manifest/tensorflow-mnist-sample.yaml).
+*   Bên dưới đây là câu lệnh chúng tôi hướng dẫn bạn training MNIST model trong TensorFlow sử dụng 2 node GPU RTX 2080Ti và RTX 4090. Node RTX 2080Ti sẽ được share chung cho 4 pods sử dụng Time-slicing và node RTX 4090 sẽ được share chung cho 8 pods sử dụng MPS. Tham khảo thêm về TensorFlow tại [tensorflow-mnist-sample.yaml](https://github.com/vngcloud/kubernetes-sample-apps/raw/main/nvidia-gpu/manifest/tensorflow-mnist-sample.yaml).
 
     ```bash
     # Apply the manifest
@@ -390,14 +398,14 @@ kubectl -n gpu-operator get pods
     kubectl delete deploy tensorflow-mnist
     ```
 
-    ![](../../images/nodegroup/15.png)
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-    > * The pods are running on the node with the GPU RTX 2080Ti and RTX 4090 within different GPU sharing strategies.
+***
 
-## Monitoring GPU Resources
+## Giám sát hoạt động GPU Resources
 
-* Monitoring NVIDIA GPU resources in a Kubernetes cluster is essential for ensuring optimal performance, efficient resource utilization, and proactive issue resolution. This overview provides a comprehensive guide to setting up and leveraging Prometheus and the NVIDIA Data Center GPU Manager (DCGM) to monitor GPU resources in a Kubernetes environment.
-*   Firstly, we need to install **Prometheus Stack** and **Prometheus Adapter** to integrate with the Kubernetes API server. Execute the following command to install the Prometheus Stack and Prometheus Adapter in your VKS cluster:
+* Giám sát tài nguyên GPU NVIDIA trong cụm Kubernetes là điều cần thiết để đảm bảo hiệu suất tối ưu, sử dụng tài nguyên hiệu quả và giải quyết vấn đề một cách chủ động. Sau đây là hướng dẫn của chúng tôi về việc thiết lập và sử dụng Prometheus và NVIDIA Data Center GPU Manager (DCGM) để giám sát tài nguyên GPU trong môi trường Kubernetes.
+*   Đầu tiên, bạn cần cài đặt **Prometheus Stack** và **Prometheus Adapter** để tích hợp với Kubernetes API server qua lệnh:
 
     ```bash
     # Install Prometheus Stack using Helm
@@ -416,16 +424,18 @@ kubectl -n gpu-operator get pods
       --set prometheus.url=http://${prometheus_service}.prometheus.svc.cluster.local
     ```
 
-    ![](../../images/nodegroup/16.png)
-*   After the installation is complete, execute the following command to check the resources of Prometheus are running:
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+*   Sau khi cài đặt thành công, chạy lệnh bên dưới để kiểm tra các resource Prometheus đang chạy:
 
     ```bash
     # Check the resources of Prometheus are running
     kubectl -n prometheus get all 
     ```
 
-    ![](../../images/nodegroup/17.png)
-*   Now, we need to enable the DCGM exporter to monitor the GPU resources in the VKS cluster. Execute the following command to enable the DCGM exporter in your VKS cluster:
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+*   Tiếp theo, bạn cần chạy lệnh bên dưới để enable DCGM exporter để giám sát GPU resources trên cluster của bạn:
 
     ```bash
     # Enable the DCGM exporter
@@ -438,47 +448,59 @@ kubectl -n gpu-operator get pods
     kubectl get --raw /apis/custom.metrics.k8s.io/v1beta1 | jq -r . | grep DCGM
     ```
 
-    ![](../../images/nodegroup/18.png)
-*   Let's forward the Prometheus Adapter to your local machine to check the GPU metrics by visit [http://localhost:9090](http://localhost:9090):
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-    ```bash
-    # Forward the Prometheus Adapter to your local machine
-    kubectl -n prometheus \
-      port-forward svc/prometheus-stack-kube-prom-prometheus 9090:9090
-    ```
+* Bây giờ, bạn hãy chạy lệnh bên dưới để chuyển Prometheus Adapter tới máy localhost của bạn và sau đó kiểm tra các metrics đã thu thập được thông qua [http://localhost:9090](http://localhost:9090)
 
-    ![](../../images/nodegroup/19.png)
+```bash
+# Forward the Prometheus Adapter to your local machine
+kubectl -n prometheus \
+  port-forward svc/prometheus-stack-kube-prom-prometheus 9090:9090
+```
 
-    ![](../../images/nodegroup/20.png)
-* The following table lists some observable GPU metrics. For details about more metrics, see [Field Identifiers](https://docs.nvidia.com/datacenter/dcgm/latest/dcgm-api/dcgm-api-field-ids.html).
-  *   **Table 1**: Usage
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-      | Metric Name                 | Metric Type | Unit       | Description    |
-      | --------------------------- | ----------- | ---------- | -------------- |
-      | `DCGM_FI_DEV_GPU_UTIL`      | Gauge       | Percentage | GPU usage.     |
-      | `DCGM_FI_DEV_MEM_COPY_UTIL` | Gauge       | Percentage | Memory usage.  |
-      | `DCGM_FI_DEV_ENC_UTIL`      | Gauge       | Percentage | Encoder usage. |
-      | `DCGM_FI_DEV_DEC_UTIL`      | Gauge       | Percentage | Decoder usage. |
-  *   **Table 2**: Memory
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-      | Metric Name           | Metric Type | Unit | Description                                                                                                 |
-      | --------------------- | ----------- | ---- | ----------------------------------------------------------------------------------------------------------- |
-      | `DCGM_FI_DEV_FB_FREE` | Gauge       | MB   | Number of remaining frame buffers. The frame buffer is called VRAM.                                         |
-      | `DCGM_FI_DEV_FB_USED` | Gauge       | MB   | Number of used frame buffers. The value is the same as the value of memory-usage in the nvidia-smi command. |
-  *   **Table 3**: Temperature and power
+* Bên dưới là danh sách một vài GPU Metrics được sử dụng thường xuyên. Tham khảo danh sách GPU metric đầy đủ tại [Field Identifiers](https://docs.nvidia.com/datacenter/dcgm/latest/dcgm-api/dcgm-api-field-ids.html).
+  *   **Bảng 1**: Usage
 
-      | Metric Name               | Metric Type | Unit | Description                            |
-      | ------------------------- | ----------- | ---- | -------------------------------------- |
-      | `DCGM_FI_DEV_GPU_TEMP`    | Gauge       | °C   | Current GPU temperature of the device. |
-      | `DCGM_FI_DEV_POWER_USAGE` | Gauge       | W    | Power usage of the device.             |
+      <table><thead><tr><th width="298">Metric Name</th><th width="105">Metric Type</th><th width="131">Unit</th><th>Description</th></tr></thead><tbody><tr><td><code>DCGM_FI_DEV_GPU_UTIL</code></td><td>Gauge</td><td>Percentage</td><td>GPU usage.</td></tr><tr><td><code>DCGM_FI_DEV_MEM_COPY_UTIL</code></td><td>Gauge</td><td>Percentage</td><td>Memory usage.</td></tr><tr><td><code>DCGM_FI_DEV_ENC_UTIL</code></td><td>Gauge</td><td>Percentage</td><td>Encoder usage.</td></tr><tr><td><code>DCGM_FI_DEV_DEC_UTIL</code></td><td>Gauge</td><td>Percentage</td><td>Decoder usage.</td></tr></tbody></table>
+  *   **Bảng 2**: Memory
+
+      <table><thead><tr><th width="245">Metric Name</th><th width="118">Metric Type</th><th width="74">Unit</th><th>Description</th></tr></thead><tbody><tr><td><code>DCGM_FI_DEV_FB_FREE</code></td><td>Gauge</td><td>MB</td><td>Number of remaining frame buffers. The frame buffer is called VRAM.</td></tr><tr><td><code>DCGM_FI_DEV_FB_USED</code></td><td>Gauge</td><td>MB</td><td>Number of used frame buffers. The value is the same as the value of memory-usage in the nvidia-smi command.</td></tr></tbody></table>
+  *   **Bảng 3**: Temperature and power
+
+      <table><thead><tr><th width="283">Metric Name</th><th width="116">Metric Type</th><th width="62">Unit</th><th>Description</th></tr></thead><tbody><tr><td><code>DCGM_FI_DEV_GPU_TEMP</code></td><td>Gauge</td><td>°C</td><td>Current GPU temperature of the device.</td></tr><tr><td><code>DCGM_FI_DEV_POWER_USAGE</code></td><td>Gauge</td><td>W</td><td>Power usage of the device.</td></tr></tbody></table>
+
+***
 
 ## Autoscaling GPU Resources
 
-* To enable this feature, you **MUST**:
-  * Enable **Autoscale** for GPU Nodegroups that you want to scale on the VKS portal.
-  * Install [**Keda**](https://keda.sh/) using Helm chart in your VKS cluster.
-* In the case you **DO NOT** install Keda in your cluster, **VKS autoscaler** feature will detect the `Pending` pods and scale the GPU Nodegroup automatically. This happens when the number of replicas of the `Deployment` is greater than the number of available GPUs that you configured in the `ConfigMap`.
-*   If you already installed Keda in your cluster, you can use the `ScaledObject` to scale the GPU Nodegroup based on the metrics that you want. For example, you can scale the GPU Nodegroup based on the GPU usage, memory usage, or any other metrics that you want. For example:
+* Để enable autoscaling GPU Resource, bạn cần:
+  * Bật tính năng **Autoscale** cho GPU Nodegroups theo hướng dẫn tại [đây](../node-groups/auto-scaling.md).
+  * Cài đặt [**Keda**](https://keda.sh/) thông qua Helm chart trên Cluster của bạn qua lệnh:
+
+```bash
+helm install --wait kedacore \
+  --namespace keda --create-namespace \
+  oci://vcr.vngcloud.vn/81-vks-public/vks-helm-charts/keda \
+  --version 2.14.2
+
+kubectl -n keda get all
+```
+
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+*   **Nếu BẠN KHÔNG cài đặt Keda trong cụm của mình**, tính năng Auto-scale của VKS sẽ can thiệp vào và:
+
+    * Phát hiện các pod đang ở trạng thái chờ (Pending).
+    * Tự động mở rộng Nodegroup chứa GPU để xử lý các pod này.
+
+    Điều này xảy ra khi **số replica Deployment lớn hơn số GPU khả dụng mà bạn đã cấu hình trong ConfigMap**.
+*   **Nếu BẠN CÓ cài đặt Keda trong cụm của mình**, bạn có thể sử dụng `ScaledObject` để scale GPU Nodegroup dựa trên metrics mà bạn mong muốn. Ví dụ, bạn có thể scale GPU Nodegroup dựa trên GPU usage, memory usage hoặc các metrics khác. Ví dụ:
 
     ```yaml
     apiVersion: keda.sh/v1alpha1
@@ -504,28 +526,18 @@ kubectl -n gpu-operator get pods
             query: sum(DCGM_FI_DEV_MEM_COPY_UTIL) / count(DCGM_FI_DEV_MEM_COPY_UTIL) / 100
             threshold: '0.5'  # Scale the GPU Nodegroup when the GPU memory usage is greater than 50%
     ```
-* The above manifest scales the GPU Nodegroup based on the GPU usage and memory usage. The `query` field specifies the query to fetch the metrics from Prometheus. The `threshold` field specifies the threshold value to scale the GPU Nodegroup. The `minReplicaCount` and `maxReplicaCount` fields specify the minimum and maximum number of replicas that the GPU Nodegroup can scale to.
-*   Now let's install **Keda** in your cluster by executing the below command:
-
-    ```bash
-    helm install --wait kedacore \
-      --namespace keda --create-namespace \
-      oci://vcr.vngcloud.vn/81-vks-public/vks-helm-charts/keda \
-      --version 2.14.2
-
-    kubectl -n keda get all
-    ```
-
-    ![](../../images/nodegroup/21.png)
-
-    ![](../../images/nodegroup/22.png)
-*   Apply [scaling-app.yaml](https://github.com/vngcloud/kubernetes-sample-apps/raw/main/nvidia-gpu/manifest/scaling-app.yaml) manifest to generate resources for testing the autoscaling feature. This manifest run 1 pod of CUDA VectorAdd Test and the GPU Nodegroup will be scaled to 3 when the GPU usage is greater than 50%.
+* Cấu hình này điều chỉnh số lượng GPU trong Nodegroup dựa trên GPU usage và memory usage. Trong đó:
+  * Field`query` chỉ định truy vấn để lấy số liệu từ Prometheus.&#x20;
+  * Field`threshold` chỉ định giá trị ngưỡng để điều chỉnh số lượng GPU trong Nodegroup.&#x20;
+  * Field `minReplicaCount` và `maxReplicaCount` chỉ định số lượng tối thiểu và tối đa mà Nodegroup GPU có thể điều chỉnh đến.
+* Apply [scaling-app.yaml](https://github.com/vngcloud/kubernetes-sample-apps/raw/main/nvidia-gpu/manifest/scaling-app.yaml) manifest to generate resources for testing the autoscaling feature. This manifest run 1 pod of CUDA VectorAdd Test and the GPU Nodegroup will be scaled to 3 when the GPU usage is greater than 50%.
+*   Thực hiện apply tệp tin [scaling-app.yaml](https://github.com/vngcloud/kubernetes-sample-apps/raw/main/nvidia-gpu/manifest/scaling-app.yaml) để generate resources sử dụng verify cho tính năng autoscaling:&#x20;
 
     ```bash
     kubectl apply -f \
       https://github.com/vngcloud/kubernetes-sample-apps/raw/main/nvidia-gpu/manifest/scaling-app.yaml
     ```
-*   Apply [scale-gpu.yaml](https://github.com/vngcloud/kubernetes-sample-apps/raw/main/nvidia-gpu/manifest/scale-gpu.yaml) manifest to create the `ScaleObject` for the above application. This manifest will scale the GPU Nodegroup based on the GPU usage.
+*   Tiếp tục thực hiện apply tệp tin [scale-gpu.yaml](https://github.com/vngcloud/kubernetes-sample-apps/raw/main/nvidia-gpu/manifest/scale-gpu.yaml) để tạo `ScaleObject` cho deplyment của bạn:
 
     ```bash
     kubectl apply -f \
@@ -537,6 +549,6 @@ kubectl -n gpu-operator get pods
     kubectl get scaledobject
     ```
 
-    ![](../../images/nodegroup/23.png)
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-    > * When the `ScaledObject` **Ready** value is `True`, the GPU Nodegroup will be scaled based on the GPU usage.
+* Khi trạng thái `ScaledObject` **Ready** là`True`,  GPU Nodegroup được scale dựa trên GPU usage.
