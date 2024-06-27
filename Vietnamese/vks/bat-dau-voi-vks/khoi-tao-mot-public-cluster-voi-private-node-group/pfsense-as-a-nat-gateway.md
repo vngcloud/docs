@@ -31,7 +31,9 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 ## Cấu hình thông số cho Pfsense <a href="#toc165621058" id="toc165621058"></a>
 
-**Bước 1:** Sau khi khởi tạo Pfsense từ vMarketPlace theo hướng dẫn bên trên, bạn có thể truy cập vào giao diện vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) để kiểm tra server chạy Pfsense đã được khởi tạo xong chưa.
+**Bước 1:** Sau khi khởi tạo Pfsense từ vMarketPlace theo hướng dẫn bên trên, bạn có thể truy cập vào giao diện vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) để kiểm tra server chạy Pfsense đã được khởi tạo xong chưa. <mark style="color:red;">**Tiếp theo, bạn mở rule Any trên Security Group cho server Pfsense vừa tạo. Việc mở rule Any trên Security Group sẽ cho phép tất cả lưu lượng truy cập đến server Pfsense.**</mark>
+
+<figure><img src="../../../.gitbook/assets/image (501).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 2: Sau khi server chạy Pfsense được khởi tạo thành công**. Để vào GUI của Pfsense, bạn cần sử dụng địa chỉ IP của External Interface đăng nhập với Tên đăng nhập và mật khẩu mặc định là **admin/pfsense.**&#x20;
 
@@ -41,8 +43,26 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 <figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
-\
-**Bước 3**: Tiến hành **General Setup**, bạn vui lòng thực hiện như bên dưới
+**Bước 3**: Mở **rule** trên **firewall**
+
+* Tiến hành **Add rule**
+
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+* Bạn có thể mở rule như bên dưới để truy cập vào GUI bằng **External Interface**.
+
+{% hint style="info" %}
+**Chú ý:**
+
+* Bạn nên giới hạn lại Range IP được phép kết nối tới GUI Pfsense để hạn chế user được phép truy cập vào GUI Pfsense
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+* Chọn **Save**
+* Sau đó chọn **Apply change**
+
+**Bước 4**: Tiến hành **General Setup**, bạn vui lòng thực hiện như bên dưới
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -67,27 +87,6 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 * Đã hoàn thành **General Setup**
 
 <figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-**Bước 4**: Mở **rule** trên **firewall**
-
-* Tiến hành **Add rule**
-
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-* Bạn có thể mở rule như bên dưới để truy cập vào GUI bằng **External Interface**.
-
-{% hint style="info" %}
-**Chú ý:**
-
-* Bạn nên giới hạn lại Range IP được phép kết nối tới GUI Pfsense để hạn chế user được phép truy cập vào GUI Pfsense
-{% endhint %}
-
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-* Chọn **Save**
-* Sau đó chọn **Apply change**
-
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Cấu hình **Interface LAN**
 
