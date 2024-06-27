@@ -225,55 +225,56 @@ data:
 
 #### Configure MPS
 
-* Để sử dụng MPS cho cluster của bạn, bạn cần tạo tệp tin `ConfigMap` theo mẫu bên dưới để định nghĩa cấu hình time-slicing. Trong đó:&#x20;
-  * `replicas`: field chỉ định số lượng pods có thể share chung GPU, tối đa bạn có thể thiết lập 48 pods share chung một GPU.
+* Để sử dụng MPS cho cluster của bạn, bạn cần tạo tệp tin `ConfigMap` theo mẫu bên dưới để định nghĩa cấu hình MPS. Trong đó:&#x20;
+  * `replicas`: field chỉ định số lượng pods có thể share chung GPU.
   * name: mặc định nvidia.com/gpu - lable sử dụng để filter node có GPU.
   * minStrategy: mặc định none do GPU hiện tại chưa hỗ trợ MIG.
-*   To enable GPU MPS, you need to update the previous `ConfigMap` with the following settings:
 
-    ```yaml
-    apiVersion: v1
-    kind: ConfigMap
-    metadata:
-      name: gpu-sharing-config
-    data:
-      any-mps: |-
-        version: v1
-        flags:
-          migStrategy: none            # MIG strategy is not used, this field SHOULD depends on your GPU model
-        sharing:
-          mps:                         # Enable MPS for the GPU
-            resources:
-            - name: nvidia.com/gpu     # Only apply for the node with the node.status contains 'nvidia.com/gpu'
-              replicas: 4              # Allow 4 pods to share the GPU
-    ```
-*   Now let's apply this new `ConfigMap` and then patching the `ClusterPolicy` like the way at the GPU time-slicing section.
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gpu-sharing-config
+data:
+  any-mps: |-
+    version: v1
+    flags:
+      migStrategy: none            # MIG strategy is not used, this field SHOULD depends on your GPU model
+    sharing:
+      mps:                         # Enable MPS for the GPU
+        resources:
+        - name: nvidia.com/gpu     # Only apply for the node with the node.status contains 'nvidia.com/gpu'
+          replicas: 4              # Allow 4 pods to share the GPU
+```
+
+*   Hoặc bạn có thể chạy câu lệnh bên dưới để apply cấu hình trên cho tất cả các node trong cluster của bạn có lable `nvidia.com/gpu` .&#x20;
 
     ```bash
     # Delete the old configmap
     kubectl -n gpu-operator delete cm gpu-sharing-config
     kubectl -n gpu-operator create -f \
       https://raw.githubusercontent.com/vngcloud/kubernetes-sample-apps/main/nvidia-gpu/manifest/mps-config-all.yaml
-
-    # Patch the ClusterPolicy
-    kubectl patch clusterpolicies.nvidia.com/cluster-policy \
-      -n gpu-operator --type merge \
-      -p '{"spec": {"devicePlugin": {"config": {"name": "gpu-sharing-config", "default": "any-mps"}}}}'
-
-    # Disable DCGM exporter, MPS not support DCGM exporter
-    kubectl patch clusterpolicies.nvidia.com/cluster-policy \
-      -n gpu-operator --type merge \
-      -p '{"spec": {"dcgmExporter": {"enabled": false}}}'
-
-    # Check MPS server is running or not
-    kubectl -n gpu-operator get pods
     ```
+* Sau đó, sử dụng lệnh `kubectl patch` để patch ClusterPolicy và bật GPU MPS. Lệnh patch chỉ hoạt động khi `ClusterPolicy` có trạng thái `Ready`.
 
-    ![](../../images/nodegroup/11.png)
+```bash
+# Patch the ClusterPolicy
+kubectl patch clusterpolicies.nvidia.com/cluster-policy \
+  -n gpu-operator --type merge \
+  -p '{"spec": {"devicePlugin": {"config": {"name": "gpu-sharing-config", "default": "any-mps"}}}}'
 
-    > * Your new configuration will be applied to all nodes in the cluster that have the `nvidia.com/gpu` label.
-    > * The configuration is considered successful if the `ClusterPolicy` **STATUS** is `ready`.
-    > * Because of the `sharing.mps.resources.replicas` is set to 4, you can deploy up to 4 pods that share the GPU.
+# Disable DCGM exporter, MPS not support DCGM exporter
+kubectl patch clusterpolicies.nvidia.com/cluster-policy \
+  -n gpu-operator --type merge \
+  -p '{"spec": {"dcgmExporter": {"enabled": false}}}'
+
+# Check MPS server is running or not
+kubectl -n gpu-operator get pods
+```
+
+> * Your new configuration will be applied to all nodes in the cluster that have the `nvidia.com/gpu` label.
+> * The configuration is considered successful if the `ClusterPolicy` **STATUS** is `ready`.
+> * Because of the `sharing.mps.resources.replicas` is set to 4, you can deploy up to 4 pods that share the GPU.
 
 #### Verify MPS
 
