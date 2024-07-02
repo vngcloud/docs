@@ -6,11 +6,6 @@
 * Mariadb: 10.1, 10.3, 10.4, 10.5.
 * Postgresql: 10, 12, 13, 15.
 
-\
-
-
-![](https://docs.vngcloud.vn/download/attachments/2722965/image2019-6-24\_11-0-33.png?version=1\&modificationDate=1561348833000\&api=v2)<img src="https://docs.vngcloud.vn/download/thumbnails/2722965/postgresql-logo.png?version=1&#x26;modificationDate=1589966586000&#x26;api=v2" alt="" data-size="original">
-
 #### Bạn hãy truy cập các hướng dẫn sau để bắt đầu trải nghiệm dịch vụ: <a href="#relationaldatabaseservice-rds-banhaytruycapcachuongdansaudebatdautrainghiemdichvu" id="relationaldatabaseservice-rds-banhaytruycapcachuongdansaudebatdautrainghiemdichvu"></a>
 
 * [_Khởi tạo RDS Instance_](khoi-tao-rds-instance.md)
