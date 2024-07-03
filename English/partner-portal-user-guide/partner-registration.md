@@ -24,14 +24,6 @@ When account’s information is valid, user will receive:
 * Awaiting approval status on screen
 * An email announcing partner registration request is awaiting approval
 
-\
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805213/image2023-7-11_17-4-16.png?version=1&#x26;modificationDate=1689069857000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
-
 Within 3 business days, information regarding whether account is activated or rejected will be announced to user via email, this status will be simultaneously displayed on partner portal
 
 In case account is approved, user will be able to sign in to partner portal and perform management tasks here
