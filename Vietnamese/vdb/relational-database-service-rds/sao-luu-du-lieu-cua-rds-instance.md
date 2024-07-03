@@ -8,16 +8,12 @@ VNG Cloud vDB hỗ trợ hai cách sao lưu (backup) dữ liệu là: theo nhu c
 
 ### A. Sao lưu theo nhu cầu (On-demand backup hoặc Manual backup) <a href="#saoluudulieucuardsinstance-a.saoluutheonhucau-on-demandbackuphoacmanualbackup" id="saoluudulieucuardsinstance-a.saoluutheonhucau-on-demandbackuphoacmanualbackup"></a>
 
-Khi bạn có nhu cầu tạo bản backup, bạn truy cập dịch vụ VNG Cloud vDB và chọn đến màn hình quản lý backup. Màn hình này sẽ liệt kê tất cả các bản backup (manual & auto) của tất cả các RDS Instance có trong tài khoản của bạn.
+Khi bạn có nhu cầu tạo bản backup, bạn truy cập đến màn hình quản lý backup cho dịch vụ vDB Relational [tại đây](https://vdb.console.vngcloud.vn/relational/backup). Màn hình này sẽ liệt kê tất cả các bản backup (manual & auto) của tất cả các RDS Instance có trong tài khoản của bạn.
 
-Bạn nhấn vào **Create Backup**
+Để tạo bản sao lưu, bạn nhấn vào nút **Create Backup,** tại màn hình **Create Backup**, bạn lần lượt lựa chọn các thông tin:
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/2723072/image2019-6-24_15-0-48.png?version=1&#x26;modificationDate=1561363249000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-Tại màn hình **Create Backup**, bạn lần lượt lựa chọn các thông tin:
-
-* **Database Instance Name**: chọn RDS Instance mà bạn muốn thực hiện backup.
 * **Backup Name**: đặt tên cho bản backup này.
+* **Database Instance Name**: chọn RDS Instance mà bạn muốn thực hiện backup.
 * **Backup Type**: ở đây bạn có 2 lựa chọn là:
   * **Full Backup**: vDB sẽ backup toàn bộ dữ liệu của bạn.
   * **Incremetal Backup**: vDB sẽ chỉ backup những sự thay đổi trong database của bạn. Dung lượng của bản Incremetal Backup sẽ nhẹ hơn rất nhiều so với một bản Full Backup. Tuy vậy, bản Incremetal Backup đòi hỏi bạn đã tạo ít nhất một bản Full Backup trước đó cho RDS Instance này.
@@ -25,36 +21,17 @@ Tại màn hình **Create Backup**, bạn lần lượt lựa chọn các thông
 
 **Lưu ý**: Incremetal Backup lệ thuộc bản Backup Parent. Nếu bạn xóa Backup Parent, các bản Incremetal Backup của bản Backup đó sẽ bị vô hiệu và bị xóa theo.
 
-Sau khi chắc chắn mọi thông tin đều chính xác, bạn nhấn **Create Backup**.
+Sau khi chắc chắn mọi thông tin đều chính xác, bạn nhấn **Create**.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/2723072/image2019-6-24_15-1-6.png?version=1&#x26;modificationDate=1561363266000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-Nếu hệ thống tiếp nhận thành công, một bản backup sẽ xuất hiện với **Status** là **NEW**.
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/2723072/image2019-6-24_15-1-18.png?version=1&#x26;modificationDate=1561363278000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-Khi được tạo thành công, bản backup sẽ đổi sang **Status** là **COMPLETED**.
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/2723072/image2019-6-24_15-1-33.png?version=1&#x26;modificationDate=1561363294000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-Chúc mừng bạn đã tạo thành công một bản MANUAL BACKUP với vDB.
-
-\
-
+Nếu hệ thống tiếp nhận thành công, một bản backup sẽ xuất hiện với **Status** là **BUILDING**. Khi được tạo thành công, bản backup sẽ đổi sang **Status** là **COMPLETED**.
 
 **Mở rộng**: Ngoài màn hình quản lý Backup, bạn còn có thể tạo bản **Manual Backup** ngay tại màn hình quản lý Database. Khi bạn click chọn một RDS Instance bất kì, bạn chuyển tới thẻ **Backup** và cuộn xuống danh sách **Backup list**. Ở đây sẽ liệt kê tất cả các bản backup (manual & auto) tương ứng với RDS Instance này. Bạn có thể nhấn **Create Backup** để tiến hành tạo bản Manual Backup ngay tại đây.
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/2723072/image2019-6-24_15-1-53.png?version=1&#x26;modificationDate=1561363313000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-Thao tác tiếp theo hoàn toàn tương tự như hướng dẫn ở trên.
 
 ### **B. Sao lưu tự động theo ngày (Auto-Daily Backup)** <a href="#saoluudulieucuardsinstance-b.saoluutudongtheongay-auto-dailybackup" id="saoluudulieucuardsinstance-b.saoluutudongtheongay-auto-dailybackup"></a>
 
 vDB hỗ trợ tính năng tự động sao lưu theo ngày tại thời điểm do bạn ấn định.
 
 Để xem một RDS Instance đã được cấu hình tính năng này chưa, bạn truy cập màn hình quản lý Database. Sau đó, bạn click chọn RDS Instance muốn kiểm tra, chọn thẻ **Backup** và tìm đến mục **Backup Information**. Nếu **Automatic backup** là **Enabled** tức là bạn đã cấu hình tự động sao lưu hàng ngày cho RDS Instance này vào thời điểm **Backup Time** trong ngày.
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/2723072/image2019-6-24_15-2-10.png?version=1&#x26;modificationDate=1561363331000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 Để cấu hình tính năng này, bạn có hai phương án:
 
@@ -63,20 +40,10 @@ vDB hỗ trợ tính năng tự động sao lưu theo ngày tại thời điểm
 
 Đối với phương án đầu, mời bạn xem lại hướng dẫn Khởi tạo RDS Instance tại [Hướng dẫn khởi tạo RDS Instance](khoi-tao-rds-instance.md).
 
-Đối với phương án sau, bạn truy cập màn hình quản lý Database, click chọn RDS Instance muốn cấu hình. Sau đó, bạn click chọn **Edit Database**. Tại đây, bạn kéo xuống mục **CHANGE BACKUP SETTINGS** và bạn có thể cấu hình các thông tin:
+Đối với phương án sau, bạn truy cập màn hình quản lý Database, click chọn RDS Instance muốn cấu hình. Sau đó, bạn click chọn **Edit Database**. Tại đây, bạn kéo xuống mục **BACKUP SETTINGS** và bạn có thể cấu hình các thông tin:
 
 * **Automatic daily backup:** bật tắt tính năng Automatic daily backup.
 * **Backup retention period:** xác định thời gian lưu trữ bản automatic backup. Nhằm giúp bạn tiết kiệm không gian lưu trữ, các bản automatic backup đã quá khoảng thời gian này sẽ bị xóa.
 * **Backup time:** thời điểm quá trình tạo automatic backup diễn ra. VNG Cloud khuyến nghị bạn chọn thời điểm này vào khoảng thời gian thấp điểm nhất đối với hệ thống của bạn.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/2723072/image2019-6-24_15-2-25.png?version=1&#x26;modificationDate=1561363346000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-Sau khi chắc chắn rằng các thông tin đã chính xác, bạn nhấn nút **Save** ở góc trên bên phải và chờ một lát để quá trình thay đổi được thực thi.
-
-Bạn có thể tham khảo video sau:
-
-\
-\
-
-
-\
+Sau khi chắc chắn rằng các thông tin đã chính xác, bạn nhấn nút **Save** và chờ một lát để quá trình thay đổi được thực thi.
