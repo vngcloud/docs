@@ -573,6 +573,7 @@
   * [Clusters](vks/clusters/README.md)
     * [Upgrading Control Plane Version](vks/clusters/upgrading-control-plane-version.md)
     * [Whitelist](vks/clusters/whitelist.md)
+    * [Stop POC](vks/clusters/stop-poc.md)
   * [Node Groups](vks/node-groups/README.md)
     * [Auto Healing](vks/node-groups/auto-healing.md)
     * [Auto Scaling](vks/node-groups/auto-scaling.md)
