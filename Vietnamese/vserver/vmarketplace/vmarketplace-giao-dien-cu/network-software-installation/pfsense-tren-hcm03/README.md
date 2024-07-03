@@ -1,34 +1,29 @@
 # Pfsense trên HCM03
 
-\
-\
-An open-source security solution with a custom kernel based on FreeBSD OS. [pfSense](https://www.pfsense.org/) is one of the leading network firewalls with a commercial level of features.
+Một giải pháp bảo mật mã nguồn mở với một kernel tùy chỉnh dựa trên hệ điều hành FreeBSD. [pfSense ](https://www.pfsense.org/)là một trong những tường lửa mạng hàng đầu với các tính năng ở mức độ thương mại.\
+pfSense có sẵn dưới dạng thiết bị phần cứng, thiết bị ảo và tệp nhị phân có thể tải về (phiên bản cộng đồng).
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938956/Screen%20Shot%202021-01-21%20at%2011.15.38.png?version=1&#x26;modificationDate=1611202654000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+[Tài liệu chi tiết](https://docs.netgate.com/pfsense/en/latest/index.html) của họ, được giải thích rõ ràng và dễ theo dõi. Ở mức độ cao, một số tính năng đáng chú ý của pfSense bao gồm:
 
-pfSense is available as a hardware device, virtual appliance, and downloadable binary (community edition).
+* **Firewall** – Lọc IP/port , giới hạn kết nối, hỗ trợ lớp 2, làm sạch thông tin.
+* **Bảng trạng thái (State table)** – theo mặc định tất cả các quy tắc đều có trạng thái, có nhiều cấu hình khác nhau cho việc xử lý trạng thái.
+* **Cân bằng tải máy chủ** – tích hợp LB để [phân phối tải ](https://geekflare.com/open-source-load-balancer/)giữa nhiều máy chủ phía sau
+* **NAT** (Network address translation) – chuyển tiếp cổng, phản chiếu
+* **HA** (High-availability) – chuyển đổi sang thứ cấp nếu thứ cấp chính thất bại
+* **Multi-WAN** (wide area network) – sử dụng nhiều kết nối internet
+* **VPN** (a virtual private network) – hỗ trợ IPsec và OpenVPN
+* **Báo cáo (Reporting)** – Giữ thông tin sử dụng tài nguyên lịch sử
+* **Giám sát (Monitoring)** – giám sát thời gian thực
+* **DNS Động**– bao gồm nhiều máy client DNS
+* **DHCP** & **Relay** sẳn sàng
 
-I like their extensive [documentation](https://docs.netgate.com/pfsense/en/latest/index.html), well explained, and easy to follow. On a high-level, some of the worth mentioning pfSense features are:
+Nhiều hơn các tính năng của tường lửa thương mại mà bạn có được MIỄN PHÍ.
 
-* **Firewall** – IP/port filtering, limiting connections, layer two capable, scrubbing
-* **State table** – by default all rules are stateful, multiple configurations available for state handling,
-* **Server load balancing** – inbuilt LB to [distribute the load](https://geekflare.com/open-source-load-balancer/) between multiple backend servers
-* **NAT** (Network address translation) – port forwarding, reflection
-* **HA** (High-availability) – failover to secondary if primary fail
-* **Multi-WAN** (wide area network) – use more than one internet connection.
-* **VPN** (a virtual private network) – support IPsec and OpenVPN
-* **Reporting** – Keep historical resources utilization information
-* **Monitoring** – real-time monitoring
-* **Dynamic DNS** – multiple DNS clients are included
-* **DHCP** & **Relay** ready
+Thật tuyệt vời, phải không?
 
-More than some of the commercial firewall features you get in FREE.
+Không chỉ vậy, bạn còn có tùy chọn cài đặt các gói chỉ với một cú nhấp chuột..
 
-Amazing, isn’t it?
-
-Not only that, but you also have an option to install packages with just one click.
-
-Ex:
+Ví dụ:
 
 * **Security** – a stunner, snort, tinc, [nmap](https://geekflare.com/port-scanner-server/), arpwatch
 * **Monitoring** – iftop, ntopng, softflowd, urlsnarf, darkstat, mailreport
@@ -36,4 +31,4 @@ Ex:
 * **Routing** – frr, olsrd, routed, OpenBGPD
 * **Services** – iperf, widentd, syslog-ng, bind, acme, imspector, git, dns-server
 
-pfSense looks promising and worth giving a try. Check out [Kamatera](https://go.cloudwm.com/visit/?bta=35166\&nci=5445) if looking for pfSense hosting.
+pfSense trông rất hứa hẹn và đáng để thử. Kiểm tra [Kamatera](https://www.kamatera.com/services/pfsense/?tcampaign=35166\_477840\&bta=35166\&nci=5445) nếu đang tìm kiếm dịch vụ hosting cho pfSense.
