@@ -86,7 +86,7 @@ Truy cập vào Load Balancer để xem và quản lý thông tin chi tiết
      * Thống kê tổng số Listener trong Load Balancer
      * Thống kê tổng số Pool trong Load Balancer
      * Thống kê số lượng Pool đang hoạt động tốt / Tổng số Pool
-     * Tổng kế số lượng Pool đang hoạt động không tốt / Tổng số Pool
+     * Thống kê số lượng Pool đang hoạt động không tốt / Tổng số Pool
    * **Thông tin chung của Load Balancer**
      * Thông tin tên, định danh Load Balancer&#x20;
      * Cơ chế / Scheme (Internet / Internal)
