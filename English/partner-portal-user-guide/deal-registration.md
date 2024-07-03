@@ -1,23 +1,26 @@
 # DEAL Registration
 
-**Step 1**: Partner signs in to partner portal and come to menu "**Deal**":&#x20;
+#### Steps to Add a Deal
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/67993749/image2023-11-10_10-32-50.png?version=1&#x26;modificationDate=1699587170000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+**Step 1:** The user (Partner admin account) logs into the partner portal and selects the "**Deal**" menu.
 
-**Step 2**: Select "**Add a Deal**"
+**Step 2:** Select "**Add a Deal**"
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/67993749/image2023-11-10_10-33-53.png?version=1&#x26;modificationDate=1699587233000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+**Step 3:** Enter the required information, including:
 
-**Step 3**: input information into the fields required (mark as '**\***'):
+* **Deal Information:** Enter the deal details, including:
+  * Deal name
+  * Deal title
+  * Start and end date of the deal
+  * Expected revenue of the deal
+  * Project name
+  * Customer requirements
+* **Deal Price:** Enter the desired discount level for the deal. This discount level may be adjusted by VNG Cloud upon approval and will be effective when the deal is won. For products without a registered discount, set the discount value to 0%.
+* **Customer Information:** VNG Cloud partners should accurately enter customer information to facilitate deal locking for partner exploitation.
+  * Click "**Add a Customer**" if the user wants to add a new customer to the deal.
+  * A deal can include multiple customers.
+  * Click "-" to remove a customer currently listed.
 
-* 1\) : Deal Information
-* (2): Discount information. This discount level VNG Cloud can update when browsing and will be automatically created for partners when the deal is won. For products that do not register for a discount, users leave the discount value at 0%
-* (3): Customer information. VNG Cloud’s partners should fill in accurate customer information to serve the deal locking process for partners to exploit.”&#x20;
-  * Click " Add a customer", if you want to add a new customer into a deal
-  * Click  "-" to remove the selected customer.
+**Step 4:** Click "**Create Deal**"
 
-**Step 4**: Click "**Create Deal**" to finish the process of Deal registration
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/67993749/image2023-11-10_11-5-34.png?version=1&#x26;modificationDate=1699589134000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-You will receive an email that informs the deal is registered successfully
+The user will receive a notification that the deal has been successfully created and is awaiting processing by VNG Cloud. After the deal is created, the user can check the deal status on the deal list screen.
