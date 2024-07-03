@@ -1,46 +1,25 @@
 # Set Up Discounts for Customers
 
-* User can set up discounts for customers in order to define price for each particular customer. By doing this, when partner’s customer buys VNG Cloud’s services, they will see the price as defined by partner.
+* User/ partner can set up discounts for customers in order to define price for each particular customer. By doing this, when partner’s customer buys VNG Cloud’s services, they will see the price as defined by partner.
 * In case user does not set discounts for their customer, customer will see public price when logging in to VNG Cloud portal to buy services.
 
-**Step 1**: Select “Account” and choose the account to set discount for
+**Step 1:** Select the "**Account**" menu and choose the customer account for which you want to set up a discount. Click on the hyperlink at the customer's name to access the detailed customer information screen.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805285/image2023-7-12_11-6-18.png?version=1&#x26;modificationDate=1689134779000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+**Step 2:** Select the "**Set Discount**" function.
 
-(1): Choose menu\
-(2): Choose the account to set discount for\
-(3): Choose submenu and see account in detail
+**Step 3:** Enter the desired discount information for the customer, detailed by product group:
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805285/image2023-7-12_11-8-8.png?version=1&#x26;modificationDate=1689134889000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+* **Effective From**: Enter the desired start date for the discount, which must be at least 3 working days from the current date.
+* **Effective to**: Enter the discount expiration date, which must be equal to or later than the "**Effective From**".
+* Select the product, discount group, and enter the corresponding discount rate.
+* Click "**Set**".
 
-Select “Set discount”
+The user/ partner will receive a notification on the screen confirming the successful setup of the discount for the customer.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805285/image2023-7-12_11-11-43.png?version=1&#x26;modificationDate=1689135104000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+On the effective date of the discount, it will be activated and applied to orders/bills created within the discount period.
 
-* **Effective from:** Input discount applied date, which must be equal to or larger than current date +3 business days
-* **Effective to:** Input discount expired date, which must be equal to or larger than the “Effective from” date
-* Choose product, discount group and input discount ratio
-* Select “**Set**”
+**Notes:**
 
-User will receive a notification of discounts for customer successfully set as below:
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805285/image2023-7-12_11-13-19.png?version=1&#x26;modificationDate=1689135200000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-When active date comes, this discount will be activated and applied to orders created within the discount period
-
-_**Note:**_
-
-_User needs to consider when setting discounts for customers, compared to the price bought from VNG Cloud_
-
-\
-
-
-To view active discounts as well as discounts waiting to be activated, select “Account”, choose the account to view as below
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805285/image2023-7-12_11-16-4.png?version=1&#x26;modificationDate=1689135364000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-After clicking “View history”, discounts of the chosen account will be displayed
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805285/image2023-7-12_11-17-41.png?version=1&#x26;modificationDate=1689135461000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-Newest discount on top
+* Users/ Partner must consider the discount level for customers in relation to the purchase price from VNG Cloud.
+* To view the current discounts applied and the discounts awaiting active, go to the "**Account**" menu and select the desired account.
+* Click "**View History**" to display the discount history for the selected account.
