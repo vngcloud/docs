@@ -32,7 +32,7 @@ Giả sử bạn muốn thiết lập một transfer job thực hiện transfer 
 {% hint style="info" %}
 **Chú ý:**
 
-Nếu bạn thay đổi thông số ngày giờ hoặc chu kỳ chạy của một transfer job trong hệ thống DataSync, thì:
+Nếu bạn thay đổi chu kỳ chạy của một transfer job trong hệ thống DataSync, thì:
 
 * Thời điểm chạy kế tiếp (next run time) sẽ không thay đổi khi bạn thực hiện cập nhật.
 * Sau khi lần chạy kế tiếp này đã thực hiện, thì lần chạy kế tiếp sẽ dựa theo ngày giờ hoặc chu kỳ mới mà bạn chỉnh sửa cho transfer job của bạn.
@@ -78,21 +78,28 @@ Giả sử bạn muốn thiết lập một transfer job thực hiện transfer 
 {% hint style="info" %}
 **Chú ý:**
 
-Nếu bạn thay đổi thông số ngày giờ hoặc chu kỳ chạy của một transfer job trong hệ thống DataSync, hệ thống sẽ chạy job theo thời gian và chu kỳ mới mà bạn đã chỉ định. Ví dụ:
+Nếu bạn thay đổi chu kỳ chạy của một transfer job trong hệ thống DataSync, thì:
+
+* Thời điểm chạy kế tiếp (next run time) sẽ không thay đổi khi bạn thực hiện cập nhật.
+* Sau khi lần chạy kế tiếp này đã thực hiện, thì lần chạy kế tiếp sẽ dựa theo ngày giờ hoặc chu kỳ mới mà bạn chỉnh sửa cho transfer job của bạn.
+
+**Ví dụ:**
 
 * Hiện tại: bạn đang thiết lập chạy transfer job với các thông số:
   * Ngày bắt đầu: 01/05/2024 , 03:00
   * Ngày kết thúc: 30/05/2024
   * Chu kỳ: Weekly
 
-\=> tính tới thời điểm hiện tại, lần run transfer job kế tiếp sẽ là vào lúc **22/05/2024 03:00**
+\=> tính tới thời điểm hiện tại trước khi chỉnh sửa, lần run transfer job kế tiếp sẽ là vào lúc  **22/05/2024 03:00**
 
 * Giả sử, bạn thực hiện thay đổi thông tin này vào ngày 21/05/2024 với thông số như sau:
   * Ngày bắt đầu: 01/05/2024 , 03:00
   * Ngày kết thúc: 30/05/2024
   * Chu kỳ: Daily
 
-\=> Lúc này, thời điểm chạy kế tiếp sẽ là **22/05/2024 03:00 + 1 ngày = 23/05/2024 03:00**
+\=> Lúc này, thời điểm chạy kế tiếp vẫn sẽ là **22/05/2024 03:00**
+
+\=> Sau lần chạy này, lần chạy kế tiếp sẽ được tính theo chu kỳ mới là **22/05/2024 03:00 + 1 ngày = 23/05/2024 03:00**
 {% endhint %}
 
 ### **Lập lịch chạy định kỳ theo Tháng**
@@ -117,19 +124,26 @@ Giả sử bạn muốn thiết lập một transfer job thực hiện transfer 
 {% hint style="info" %}
 **Chú ý:**
 
-Nếu bạn thay đổi thông số ngày giờ hoặc chu kỳ chạy của một transfer job trong hệ thống DataSync, hệ thống sẽ chạy job theo thời gian và chu kỳ mới mà bạn đã chỉ định. Ví dụ:
+Nếu bạn thay đổi chu kỳ chạy của một transfer job trong hệ thống DataSync, thì:
+
+* Thời điểm chạy kế tiếp (next run time) sẽ không thay đổi khi bạn thực hiện cập nhật.
+* Sau khi lần chạy kế tiếp này đã thực hiện, thì lần chạy kế tiếp sẽ dựa theo ngày giờ hoặc chu kỳ mới mà bạn chỉnh sửa cho transfer job của bạn.
+
+**Ví dụ:**
 
 * Hiện tại: bạn đang thiết lập chạy transfer job với các thông số:
   * Ngày bắt đầu: 01/05/2024 , 03:00
   * Ngày kết thúc: 30/06/2024
   * Chu kỳ: Monthly
 
-\=> tính tới thời điểm hiện tại, lần run transfer job kế tiếp sẽ là vào lúc **01/06/2024 03:00**
+\=> tính tới thời điểm hiện tại trước khi chỉnh sửa, lần run transfer job kế tiếp sẽ là vào lúc  **01/06/2024 03:00**
 
 * Giả sử, bạn thực hiện thay đổi thông tin này vào ngày 21/05/2024 với thông số như sau:
   * Ngày bắt đầu: 01/05/2024 , 03:00
   * Ngày kết thúc: 30/06/2024
   * Chu kỳ: Weekly
 
-\=> Lúc này, thời điểm chạy kế tiếp sẽ là **01/06/2024 03:00 + 7 ngày = 08/06/2024 03:00**
+\=> Lúc này, thời điểm chạy kế tiếp vẫn sẽ là **01/06/2024 03:00**
+
+\=> Sau lần chạy này, lần chạy kế tiếp sẽ được tính theo chu kỳ mới là **01/06/2024 03:00 + 7 ngày = 08/06/2024 03:00**
 {% endhint %}
