@@ -2,9 +2,10 @@
 
 Trước khi tìm hiểu cách Stop POC cho tài nguyên của bạn trên VKS, bạn nên hiểu rõ các khái niệm cũng các hành động mà bạn có thể thao tác đối với tài nguyên POC. Chi tiết tham khảo thêm [tại đây](https://docs.vngcloud.vn/vng-cloud-document/v/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/quan-ly-vong-doi-tai-nguyen/tai-nguyen-poc).&#x20;
 
-**Trong trường hợp người dùng dừng POC trước thời hạn kết thúc tài nguyên POC, hệ thống sẽ:**
+**Trước khi hết hạn sử dụng ví POC, bạn có thể:**
 
-* Tiến hành hoàn phí sử dụng tài nguyên POC còn lại (nếu có) vào ví POC.
+* Xóa Cluster đang POC này và tạo lại Cluster bình thường khác.
+* Gia hạn Cluster đang POC thành Cluster bình thường.
 
 **Để tiếp tục sử dụng tài nguyên vừa dừng POC như một tài nguyên bình thường (với mục đích giữ nguyên cấu hình), người dùng có thể thực hiện:**&#x20;
 
