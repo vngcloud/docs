@@ -34,7 +34,7 @@ _**Lưu ý:** Thông tin này là bảo mật và chỉ được gởi cho email
     **4 -** Nhập lại new password cho user stackops để dùng cho login sau này\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  Kết nối lại đến vServer\
     \
     **1 -** Nhập password mới đã thay đổi ở Bước 2 cho user stackops\
