@@ -15,17 +15,19 @@ Trước khi tìm hiểu cách Stop POC cho tài nguyên của bạn trên VKS, 
 
 <figure><img src="../../.gitbook/assets/image (517).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 3:** Lúc này, màn hình hiển thị danh sách tất cả các Server và Volume thuộc Cluster đang có trạng thái POC. Bạn có thể kiểm tra thông tin sau đó chọn **Stop POC**
+**Bước 3:** Lúc này, màn hình hiển thị danh sách tất cả các Server và Volume thuộc Cluster (<mark style="color:red;">**bao gồm cả Boot Volume và PVC mà bạn attach vào node trong Cluster của bạn)**</mark> đang có trạng thái POC. Bạn có thể kiểm tra thông tin sau đó chọn **Stop POC**
 
-<figure><img src="../../.gitbook/assets/image (518).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (522).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (521).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 4**: Tiến hành thanh toán tài nguyên bằng tiền thật, bạn có thể lựa chọn **Chu kỳ sử dụng mong muốn, bật tắt Tự động gia hạn, nhập Coupon** nếu có và chọn **Continue** để thực hiện Thanh toán tài nguyên
 
-<figure><img src="../../.gitbook/assets/image (519).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (523).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5**: Thực hiện thanh toán bằng số dư credit hoặc qua các hình thức thanh toán khác nếu có.
 
-<figure><img src="../../.gitbook/assets/image (520).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (524).png" alt=""><figcaption></figcaption></figure>
 
 <mark style="color:red;">**Để đảm bảo VKS hoạt động chính xác, việc thực hiện Stop POC cần được tiến hành trên VKS Portal thay vì thực hiện riêng lẻ trên từng resource server hoặc volume trên vServer Portal.**</mark> Nếu bạn đã thực hiện stop POC riêng lẻ cho từng resource trên vServer Portal trước đó, bạn vẫn **cần thực hiện Stop POC** cho Cluster tại VKS Portal, lúc này, màn hình sẽ hiển thị như sau. Bạn hãy nhẫn **Stop** để tắt lựa chọn POC cho Cluster của bạn.
 
