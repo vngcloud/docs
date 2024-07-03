@@ -528,6 +528,7 @@
 * [vContainer Registry](vcontainer-registry.md)
 * [vColocation](vcolocation.md)
 * [Veka.ai](vcloudcam.md)
+* [DataSync](datasync.md)
 * [vNetwork](vnetwork/README.md)
   * [Endpoint](vnetwork/endpoint/README.md)
     * [Create Endpoint](vnetwork/endpoint/create-endpoint.md)
