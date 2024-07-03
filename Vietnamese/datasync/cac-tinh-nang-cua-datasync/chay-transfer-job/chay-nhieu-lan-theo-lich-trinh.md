@@ -35,7 +35,7 @@ Giả sử bạn muốn thiết lập một transfer job thực hiện transfer 
 Nếu bạn thay đổi chu kỳ chạy của một transfer job trong hệ thống DataSync, thì:
 
 * Thời điểm chạy kế tiếp (next run time) sẽ không thay đổi khi bạn thực hiện cập nhật.
-* Sau khi lần chạy kế tiếp này đã thực hiện, thì lần chạy kế tiếp sẽ dựa theo ngày giờ hoặc chu kỳ mới mà bạn chỉnh sửa cho transfer job của bạn.
+* Sau khi lần chạy kế tiếp này đã thực hiện, thì lần chạy kế tiếp sẽ dựa theo chu kỳ mới mà bạn chỉnh sửa cho transfer job của bạn.
 
 **Ví dụ:**
 
@@ -81,7 +81,7 @@ Giả sử bạn muốn thiết lập một transfer job thực hiện transfer 
 Nếu bạn thay đổi chu kỳ chạy của một transfer job trong hệ thống DataSync, thì:
 
 * Thời điểm chạy kế tiếp (next run time) sẽ không thay đổi khi bạn thực hiện cập nhật.
-* Sau khi lần chạy kế tiếp này đã thực hiện, thì lần chạy kế tiếp sẽ dựa theo ngày giờ hoặc chu kỳ mới mà bạn chỉnh sửa cho transfer job của bạn.
+* Sau khi lần chạy kế tiếp này đã thực hiện, thì lần chạy kế tiếp sẽ dựa theo chu kỳ mới mà bạn chỉnh sửa cho transfer job của bạn.
 
 **Ví dụ:**
 
@@ -127,7 +127,7 @@ Giả sử bạn muốn thiết lập một transfer job thực hiện transfer 
 Nếu bạn thay đổi chu kỳ chạy của một transfer job trong hệ thống DataSync, thì:
 
 * Thời điểm chạy kế tiếp (next run time) sẽ không thay đổi khi bạn thực hiện cập nhật.
-* Sau khi lần chạy kế tiếp này đã thực hiện, thì lần chạy kế tiếp sẽ dựa theo ngày giờ hoặc chu kỳ mới mà bạn chỉnh sửa cho transfer job của bạn.
+* Sau khi lần chạy kế tiếp này đã thực hiện, thì lần chạy kế tiếp sẽ dựa theo chu kỳ mới mà bạn chỉnh sửa cho transfer job của bạn.
 
 **Ví dụ:**
 
