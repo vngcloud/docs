@@ -39,7 +39,7 @@ VNG cloud cung cấp giao diện trực quan trong việc quản lý Load Balanc
    * **Chọn Pool Member** từ một danh sách các máy chủ backend khả dụng thuộc Load Balancer Network
    * **Click nút "Gắn / Attach"** để thực hiện việc thêm máy chủ thành viên
 7. **Kiểm tra thông tin khởi tạo: Người dùng có thể kiểm tra thông tin cấu hình và đơn giá trước khi hoàn tất khởi tạo, phần thông tin này sẽ được hiển thị phía bên phải màn hình nhập liệu**
-   * **Tab "Tóm tắt / Summary"**: Kiểm tra làn lượt các thông tin cấu hình Load Balancer, Listener, Pool và Pool Member
+   * **Tab "Tóm tắt / Summary"**: Kiểm tra lần lượt các thông tin cấu hình Load Balancer, Listener, Pool và Pool Member
    * **Tab " Danh sách / Item list":** Kiểm tra thông tin Load Balancer Package và Chi phí
 8. **Hoàn tất khởi tạo: Sau khi hoàn tất việc cấu hình và kiểm tra thông tin, click nút "Tạo load Balancer / Create Load Balancer" để hoàn tất việc khởi tạo.**
    * Đối với người dùng trả trước, bạn sẽ được điều hướng đến trang thanh toán, tại đây bạn cần cung cấp một phương thức thanh toán khả dụng để hoàn tất việc khởi tạo Application Load Balancer. Tham khảo thêm hướng dẫn [Thanh toán trực tuyến](../../../../quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/thanh-toan/thanh-toan-truc-tuyen.md)
@@ -62,7 +62,7 @@ Sử dụng hướng dẫn này để phục vụ cho việc xem danh sách tấ
 
 1. Truy cập vào trang chủ Load Balancer tại đây: [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
 2. Tại trang chủ Load Balancer, một danh sách Load Balancer sẽ xuất hiện bao gồm các thông tin như:
-   * Tên và định danh Load Balancer: Có hỗ trợp sao chép định danh Load Balancer nhằm mục địch sử dụng cho Terraform hoặc các nhu cầu khác
+   * Tên và định danh Load Balancer: Có hỗ trợ sao chép định danh Load Balancer nhằm mục đích sử dụng cho Terraform hoặc các nhu cầu khác
    * Trạng thái Load Balancer: Cho biết trạng thái hiện tại của Load Balancer
    * Các thông tin khác như: Endpoint, Cơ chế (Internet/Internal), Loại (Application/Network), Gói sử dụng, Ngày tạo.
 
@@ -83,10 +83,10 @@ Truy cập vào Load Balancer để xem và quản lý thông tin chi tiết
 1. Nhấn vào Load Balancer cần xem chi tiết tại màn hình danh sách Load Balancer
 2. Hướng dẫn xem thông tin Load Balancer: Tại màn hình chi tiết Load Balancer chia thành 3 phần chính
    * **Thống kê tính khả dụng**
-     * Thống kế tổng số Listener trong Load Balancer
+     * Thống kê tổng số Listener trong Load Balancer
      * Thống kê tổng số Pool trong Load Balancer
      * Thống kê số lượng Pool đang hoạt động tốt / Tổng số Pool
-     * Tổng kê số lượng Pool đang hoạt động không tốt / Tổng số Pool
+     * Tổng kế số lượng Pool đang hoạt động không tốt / Tổng số Pool
    * **Thông tin chung của Load Balancer**
      * Thông tin tên, định danh Load Balancer&#x20;
      * Cơ chế / Scheme (Internet / Internal)
@@ -153,7 +153,7 @@ Có nhiều lý do mà bạn có thể muốn nhân bản một Load Balancer:
      * Thêm/Xóa/Sửa Certificate, SNI cho Listener
      * Remove các Listener không cần thiết đối với Load Balancer mới
 3. Kiểm tra thông tin gói Load Balancer: Thông tin về cấu hình và chi phí tại phần bên phải của cửa sổ bật lên
-4. Xác nhận Duplicate: Sau khi đã chắc chắn, nhấn **chọn nút "Dupliate Load Balancer"** tại góc dưới bên phải của cửa sổ bật lên để kết thúc quá trình Duplicate.
+4. Xác nhận Duplicate: Sau khi đã chắc chắn, nhấn **chọn nút "Duplicate Load Balancer"** tại góc dưới bên phải của cửa sổ bật lên để kết thúc quá trình Duplicate.
 
 Lưu ý
 
