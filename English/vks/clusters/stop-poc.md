@@ -31,4 +31,5 @@ Trước khi tìm hiểu cách Stop POC cho tài nguyên của bạn trên VKS, 
 
 * Để đảm bảo VKS hoạt động chính xác, việc thực hiện Stop POC cần được tiến hành trên VKS Portal thay vì thực hiện riêng lẻ trên từng resource server hoặc volume trên vServer Portal. Nếu bạn đã thực hiện stop POC riêng lẻ cho từng resource trên vServer Portal trước đó, bạn vẫn cần thực hiện Stop POC cho Cluster tại VKS Portal theo hướng dẫn bên trên.
 * Sau khi stop POC trên VKS, nút "Stop POC" sẽ tiếp tục hiển thị nếu vẫn còn resource chưa được Stop POC sau khi thực hiện trên VKS Portal. Bạn có thể tiếp tục chọn và thực hiện Stop POC cho đến khi tất cả các resource được chuyển về resource thật.
+* Hiện tại, VKS chỉ áp dụng thanh toán bằng POC cho Server và Volume và chưa áp dụng thanh toán cho Load Balancer và Snapshot bằng POC. Do đó, bạn không cần thực hiện Stop POC cho hai loại resource Load Balancer và Snapshot này.
 {% endhint %}
