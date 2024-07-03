@@ -11,7 +11,7 @@ Sử dụng hướng dẫn này để thêm mới một HTTPS Listener vào mộ
 5. **Tại cửa sổ thêm mới, cấu hình các thông tin như:**
    * **Tên Listener:** Lưu ý rằng tên Listener không thể thay đổi sau khi khởi tạo
    * **Chọn Giao thức HTTPS và Port** (mặc định hiển thị Port 443 và tăng dần nếu các Port nhỏ hơn đã được sử dụng)
-   * **Chọn Certifiate mặc định**
+   * **Chọn Certificate mặc định**
    * **Chọn danh sách Certificate sử dụng như là SNI:** Lưu ý rằng bạn không thể gỡ bỏ/thay đổi các Certificate dùng cho tính năng SNI một khi hoàn tất khởi tạo HTTPS Listener
    * **Cấu hình request Header** tại phần cấu hình nâng cao: Mặc định điền sẵn X-Fowarded-For, X-Forwarded-Proto, X-Fowarded-Port, có thể bỏ chọn Header nếu không có nhu cầu.
    * **Bật tính năng Client Certificate Authentication:** Client CA là tính năng bảo mật nâng cao của Load Balancer, giúp xác thực ứng dụng khách bằng cách sử dụng Certificate. Tìm hiểu thêm về tính năng [Client Certificate Authentication](client-certificate-authentication.md)

@@ -19,7 +19,7 @@ Tính năng "**Client Certificate Authentication**" là một phần quan trọn
 
 Đối với HTTPS Listener, người dùng có thể chủ động bật/tắt tính năng Client Certificate bất kỳ lúc nào.
 
-**Hướng dẫn bật/tắt Client Certificate Authenticate**
+**Hướng dẫn bật/tắt Client Certificate Authentication**
 
 1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb**](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
 2. **Tại trang chủ Load Balancer, click chọn Load Balancer cần chỉnh sửa.**

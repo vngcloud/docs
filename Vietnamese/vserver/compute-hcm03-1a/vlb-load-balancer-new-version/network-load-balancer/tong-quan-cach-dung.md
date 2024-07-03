@@ -4,7 +4,7 @@ Trong phần này, chúng ta sẽ tìm hiểu về cách sử dụng và quản 
 
 #### Trước khi bắt đầu <a href="#gettingstarted-nlb-truockhibatdau" id="gettingstarted-nlb-truockhibatdau"></a>
 
-* Để bắt đầu sử dụng Network Load Balancer, bạn cần có ít nhất **một Virtal Private Cloud (VPC)**, tham khảo hướng dẫn [Virtual Private Cloud (VPC)](../../network/virtual-private-cloud-vpc.md).
+* Để bắt đầu sử dụng Network Load Balancer, bạn cần có ít nhất **một Virtual Private Cloud (VPC)**, tham khảo hướng dẫn [Virtual Private Cloud (VPC)](../../network/virtual-private-cloud-vpc.md).
 * Tìm hiểu cách **truy cập VNG Cloud Portal** với Root User Account hoặc IAM User Account, tham khảo hướng dẫn [How to Login into VNG Cloud](../../../../identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md).
 * Trong trường hợp người dùng muốn bắt đầu với IAM User Account, tham khảo hướng dẫn [IAM for vServer](../../../../identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vserver.md).
 
@@ -27,7 +27,7 @@ vLB Console là giao diện người dùng dựa trên web, cho phép bạn qu�
 1. **Tại trang chủ Load Balancer, click chọn "Create a Load Balancer".**
 2. **Chọn cấu hình Load Balancer**
    * _**Tên Load Balancer**_**:** Trường hợp người dùng không chủ động điền tên Load Balancer, hệ thống sẽ tự động sinh ra tên Load Balancer.
-   * _**Layer**_**:** Chọn **"Neteork - TCP/UDP"**
+   * _**Layer**_**:** Chọn **"Network - TCP/UDP"**
    * _**Cơ chế/Scheme**_:
      * Chọn **Internet facing** nếu: Cho phép truy cập từ Internet
      * Chọn **Internal** nếu: Chỉ cho phép truy cập với mạng nội bộ
@@ -47,7 +47,7 @@ vLB Console là giao diện người dùng dựa trên web, cho phép bạn qu�
    * **Chọn Pool Member** từ một danh sách các máy chủ backend khả dụng thuộc Load Balancer Network (cùng subnet với LB)
    * **Click nút "Gắn / Attach"** để thực hiện việc thêm máy chủ thành viên
 6. **Kiểm tra thông tin khởi tạo: Người dùng có thể kiểm tra thông tin cấu hình và đơn giá trước khi hoàn tất khởi tạo, phần thông tin này sẽ được hiển thị phía bên phải màn hình nhập liệu**
-   * **Tab "Tóm tắt / Summary"**: Kiểm tra làn lượt các thông tin cấu hình Load Balancer, Listener, Pool và Pool Member
+   * **Tab "Tóm tắt / Summary"**: Kiểm tra lần lượt các thông tin cấu hình Load Balancer, Listener, Pool và Pool Member
    * **Tab " Danh sách / Item list":** Kiểm tra thông tin Load Balancer Package và Chi phí
 7. **Hoàn tất khởi tạo: Sau khi hoàn tất việc cấu hình và kiểm tra thông tin, click nút "Tạo load Balancer / Create Load Balancer" để hoàn tất việc khởi tạo.**
    * Đối với người dùng trả trước, bạn sẽ được điều hướng đến trang thanh toán, tại đây bạn cần cung cấp một phương thức thanh toán khả dụng để hoàn tất việc khởi tạo Application Load Balancer. Tham khảo thêm hướng dẫn [Thanh toán trực tuyến](../../../../quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/thanh-toan/thanh-toan-truc-tuyen.md)
@@ -57,5 +57,5 @@ vLB Console là giao diện người dùng dựa trên web, cho phép bạn qu�
 * Sau khi hoàn tất khởi tạo thành công, hệ thống sẽ điều hướng người dùng đến trang danh sách Load Balancer, tại đây người dùng có thể theo dõi trạng thái khởi tạo Load Balancer từ **Creating (đang khởi tạo)** đến khi **Active (Khởi tạo thành công).**
 * Sau khi khởi tạo thành công, người dùng có thể truy cập vào trang chi tiết Load Balancer để quan sát và kiểm tra tính đúng đắn của Load Balancer.
 
-Trên đây là các hướng dẫn cơ bản trong việc khởi tạo Application Load Balancer một cách nhanh chóng nhất. Ngoài ra, còn có các cấu hình nâng cao cho từng nhu cầu sử dụng Load Balancer khác nhau. Cùng tìm hiểu chi tiết cách hoạt động cũng như các tính năng nâng cao của một Network Load Balancer thông qua chuỗi bài viết đưới đây:
+Trên đây là các hướng dẫn cơ bản trong việc khởi tạo Application Load Balancer một cách nhanh chóng nhất. Ngoài ra, còn có các cấu hình nâng cao cho từng nhu cầu sử dụng Load Balancer khác nhau. Cùng tìm hiểu chi tiết cách hoạt động cũng như các tính năng nâng cao của một Network Load Balancer thông qua chuỗi bài viết dưới đây:
 

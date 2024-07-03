@@ -32,7 +32,7 @@ Trình quản lý Certificate hỗ trợ tải lên và quản lý hai loại Ce
       &#x20;            \---END CERTIFICATE---
   * **Passphrase**: Trong trường hợp khóa riêng (private key) có mật khẩu thì cần nhập mật khẩu của khóa riêng, ngược lại bỏ trống trường này.
   * **Expiration**: Ngày hết hạn của Certificate.
-*   **Nhấn nút "Tải lên / Upload" tại góc dưới bên phải của cửa sổ giao diên để hoàn tất tải lên.**
+*   **Nhấn nút "Tải lên / Upload" tại góc dưới bên phải của cửa sổ giao diện để hoàn tất tải lên.**
 
 
 
