@@ -2,46 +2,28 @@
 
 Partners can complete customer registration process on VNG Cloud portal for the purpose of:
 
-* Officially confirm partner’s customer (after being approved by VNG Cloud)
-* Manage customer’s credits, price lists
+* Officially confirm the agency’s customer (after confirmation from VNG Cloud).
+* Manage customer credits and price lists.
 * Manage revenue according to customer registration
 
-**Step 1:** Select menu -> “Account”
+**Step 1:** Select the "**Account**" menu.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805260/image2023-7-12_10-52-41.png?version=1&#x26;modificationDate=1689133962000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+**Step 2:** Register a Customer Account
 
-Screen displayed as below:
+* Select the "**Add a Customer account**" function.
+* Enter the required information:
+  * **Email Address**: Customer's email address.
+  * **Friendly Name**: Common name of the customer, for easy management by the user.
+  * **Your Role**: The partner’s role for this customer. The system defaults to "Partner" to distinguish from other roles within the system.
+* Click "**Add**" to add the customer to the system.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805260/image2023-7-12_10-54-36.png?version=1&#x26;modificationDate=1689134077000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+When a customer is successfully added on the Partner portal, a request will be sent to the registered customer’s email for confirmation to become the partner’s customer. After the customer’s confirmation, the request will be sent to VNG Cloud for approval, provided the customer is not already a VNG Cloud customer. Once the Partner’s customer is approved by VNG Cloud, the status will be updated to "**Active**"
 
-**Step 2:** Register customer account
+**Notes:**
 
-* Select “Add a customer account”
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805260/image2023-7-12_10-56-4.png?version=1&#x26;modificationDate=1689134165000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-* Fill in the information as required below
-*
-  * Email address: Customer’s email address
-  * Common name: Customer’s common name for reminding purpose of managing users
-  * Your role: User’s role with regard to this customer, system is being set as the default “Partner” to classify other roles inside the system
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805260/image2023-7-12_10-58-3.png?version=1&#x26;modificationDate=1689134283000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-* Select “**Add a customer**” to add the next customer to the input form
-* Select “**Add**” to add customer to the system
-* After successfully adding customer on Partner portal, a requirement will be sent to customer’s email in order to confirm to be partner’s customer
-* After customer’s confirmation step, this requirement will be forwarded to VNG Cloud to approve in case this customer is not currently a VNG Cloud’s customer
-* After partner’s customer is approved, the status will be changed to “Approved”
-
-_**Note:**_
-
-* _Email added must be service account existing in VNG Cloud system (registered account) and satisfy the following requirements:_
-*
-  * _Account added does not currently have credit balance_
-  * _Account added is not currently using VNG Cloud’s services_
-  * _Account added is not currently offered VNG Cloud’s discounts_
-  * _Not currently using POC service from VNG Cloud_
-  * _Account added must be prepaid account_
-
-\
+* The customer email to be added must be an existing service account in the VNG Cloud system (already registered) and meet the following conditions:
+  * The account to be added has no credit balance.
+  * The account to be added is not currently using VNG Cloud services.
+  * The account to be added is not currently receiving any discounts from VNG Cloud.
+  * The account is not in the POC (Proof of Concept) stage for VNG Cloud services.
+  * The account to be added must be a prepaid account.
