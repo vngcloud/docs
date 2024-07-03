@@ -1,6 +1,6 @@
 # View Report on Partner Portal
 
-Partner Portal help users view reports to manage sales and compare statistics
+Partner Portal helps users view reports to manage sales and compare statistics
 
 * Report on credits topped up: view by partner/customer account or all accounts
 * Report on credit usage: view by partner/customer account or all accounts
@@ -8,7 +8,7 @@ Partner Portal help users view reports to manage sales and compare statistics
 * Discount report: view discounts by service account of partner’s customer with flexibility
 * Detailed report and total revenue: view partner’s sales from different aspects and with flexibility
 
-### **Credit report** <a href="#viewreportonpartnerportal-creditreport" id="viewreportonpartnerportal-creditreport"></a>
+### **1. Credit report** <a href="#viewreportonpartnerportal-creditreport" id="viewreportonpartnerportal-creditreport"></a>
 
 **Purpose:**
 
@@ -18,110 +18,70 @@ Partner Portal help users view reports to manage sales and compare statistics
 
 **Steps:**
 
-**Step 1**: Select “Report” -> “Credit report”
+**Step 1**: Select Report Type
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805308/image2023-7-12_11-38-53.png?version=1&#x26;modificationDate=1689136734000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+**Credit Top-up Report:** Lists the amount of credit topped up per transaction for a specific service account.
 
-**Step 2**: Choose type and conditions of report
+**Credit Usage Report:** Lists the amount of credit used by a specific service account.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805308/image2023-7-12_11-40-14.png?version=1&#x26;modificationDate=1689136814000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+**Credit Summary Report:** Summarizes the amount of credit topped up, used, and the corresponding balance for a specific service account.
 
-(1): Choose type of report
+**Step 2:** Select Report Viewing Criteria
 
-* Report on credits topped up: list the number of credits topped up by transactions of the service account defined
-* Report on credit usage: list the number of credits used by the service account defined
-* Total credit report: total of credits topped up, used, and the corresponding balance by the service account defined
+* **Time:** Select the desired time period to view the report.
+* **Type:** Select the type of account to view, including agent accounts, customer accounts, or both.
+* **Account:** Select the specific service account to view or view all service accounts of the selected type.
 
-(2): Choose report’s conditions
+Click "**Export Report**" if you want to export the report to Excel.
 
-* Time: choose desired time to view report
-* Type: choose account type, including partner account, customer account, or both
-* Account: choose a service account to view or view all service accounts by the type chosen above
-
-After completing (1), (2), screen will be displayed as below
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805308/image2023-7-12_11-42-9.png?version=1&#x26;modificationDate=1689136930000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-Description:
-
-* (1): Conditions to view report
-* (2): Report by conditions (1)
-
-Select “Export report” if you want to export into an Excel file
-
-### **Discount report:** <a href="#viewreportonpartnerportal-discountreport" id="viewreportonpartnerportal-discountreport"></a>
+### 2. Discount Report
 
 **Purpose:**
 
-* View discount information by services of the account defined
-* Used for comparing data by period or calculating partner’s revenue
+* View discount information for each service of a specific account.
+* Support data reconciliation for the reporting period or calculate partner revenue.
 
 **Steps:**
 
-**Step 1**: Choose “Report” -> “Discount report”
+**Step 1:** Select the "Reports" / "Discount Report" menu.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805308/image2023-7-12_11-42-56.png?version=1&#x26;modificationDate=1689136977000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+**Step 2:** Select the report type and viewing criteria.
 
-The next screen will be displayed as below:
+**Select Report Type:**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805308/image2023-7-12_13-39-34.png?version=1&#x26;modificationDate=1689143974000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+* **Partner:** View the discounts of the logged-in partner.
+* **Customer:** View the discounts of the customer's service accounts.
 
-**Step 2**: Choose type and conditions of report
+**Select Viewing Criteria:**
 
-(1): Choose type of report
+* **Time:** Select the desired time period to view the report.
+* **Status:** Select the status of the discounts you want to view. For example, if you only want to see the currently applied discounts.
 
-* Partner: View partner’s discount (signing in)
-* Customer: View discount of customer’s service accounts
+Click "**Export Report**" if you want to export the report to Excel.
 
-&#x20;(2): Choose report’s conditions
-
-* Time: choose desired time to view report
-* Status: choose status of discounts. For instance, user wants to view active discounts only
-
-After completing (1), (2), screen will be displayed as below
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805308/image2023-7-12_13-44-29.png?version=1&#x26;modificationDate=1689144269000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-Description:
-
-(1): Type of report
-
-(2): Conditions of report
-
-(3): Report result based on (1), (2)
-
-Select “Export report” if you want to export into an Excel file
-
-### **Revenue report** <a href="#viewreportonpartnerportal-revenuereport" id="viewreportonpartnerportal-revenuereport"></a>
+### 3. Revenue Report
 
 **Purpose:**
 
-* View detailed and total revenue
-* Used for comparing data by report period
+* View detailed and summary revenue.
+* Support data reconciliation for the reporting period.
 
 **Steps:**
 
-**Step 1:** Choose “Report” -> “Revenue report”
+**Step 1:** Select the "Reports" / "Revenue Report" menu.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805308/image2023-7-12_13-46-39.png?version=1&#x26;modificationDate=1689144400000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+**Step 2:** Select the report type and viewing criteria.
 
-**Step 2:** Choose type and conditions of report
+**Select Report Type:**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805308/image2023-7-12_13-50-12.png?version=1&#x26;modificationDate=1689144613000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+* **Detailed Revenue Statement:** Lists detailed revenue of customers and agents according to the selected conditions.
+* **Summary Revenue Report by Service:** Summarizes revenue for the period by service.
+* **Summary Revenue Report:** Summarizes revenue for the period by account.
 
-(1): Choose type of report
+**Select Viewing Criteria:**
 
-* Detailed revenue report: list revenue of customer, partner in detail and by the selected conditions
-* Total revenue report by service: Total revenue in the period – by service
-* Total revenue report by account: Total revenue in the period – by account
+* **Time:** Select the desired time period to view the report.
+* **Type:** Select the type of account to view, including agent accounts, customer accounts, or both.
+* **Account:** Select the specific service account to view or view all service accounts of the selected type.
 
-\
-
-
-&#x20;(2): Choose conditions of report
-
-* Time: choose desired time to view report
-* Type: choose type of account, including partner account, customer account, or both
-* Account: choose a service account or view all service accounts by the type chosen above
-
-Select “Export report” if you want to export into an Excel file
+Click "**Export Report**" if you want to export the report to Excel.
