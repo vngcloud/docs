@@ -7,10 +7,5 @@
 
 **Steps to perform**:
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/67993756/image2023-11-10_11-22-21.png?version=1&#x26;modificationDate=1699590141000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-(1): Select menu "Deal"
-
-(2): Input the conditions that you want to filter
-
-(3): List of deal by the conditions selected in (2).  if there is no condition selected in (2). It will display all deals.
+1. The user/ partner goes to the "**Deal**" menu and selects the conditions for viewing the deal list (if desired).
+2. The system will list the deals according to the selected conditions. If the user leaves the selection conditions blank, the system will list all deals available for the logged-in account.
