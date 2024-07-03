@@ -8,7 +8,6 @@ Các chức năng hỗ trợ đối tác trên partner portal gồm
 
 1. Cho chọn ngôn ngữ trên portal: người dùng có thể chọn tiếng Việt hoặc Tiếng Anh
 2. Xem và cập nhật hồ sơ: người dùng có thể xem và cập nhật một số thông tin sau
-   * Thay đổi mật khẩu
    * Xác thực hai lớp
    * Thay đổi mật khẩu
    * Xem lịch sử đăng nhập
