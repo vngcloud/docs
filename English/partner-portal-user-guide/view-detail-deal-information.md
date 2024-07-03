@@ -1,27 +1,13 @@
 # View Detail Deal Information
 
-**Step 1**: Select Menu "**Deal**"
+**Step 1:** Go to the "**Deal**" menu.
 
-**Step 2**: Looking for a deal that you want to view detail information
+**Step 2:** Find the deal you want to view in detail by entering the required search criteria on the deal list screen, such as deal name, project name, or deal status, etc.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/67993760/image2023-11-10_11-29-11.png?version=1&#x26;modificationDate=1699590551000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+**Step 3:** Click on the hyperlink at the deal name to go to the deal detail screen. On this detail screen, the user can view all information about the deal, including:
 
-(2): Input the conditions you want to find a deal
+* Deal code, deal name, project name, deal duration
+* Discounts on products in the deal
+* Customer information in the deal
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/67993760/image2023-11-10_11-30-48.png?version=1&#x26;modificationDate=1699590648000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-**Step 3**: Click on the hyperlink at the deal title to open the deal detail screen.
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/67993760/image2023-11-10_11-41-54.png?version=1&#x26;modificationDate=1699591314000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-(1): Deal status, and stage Information&#x20;
-
-(2): Detail deal information
-
-(3): Discount information
-
-(4): Customer information
-
-(5): Update information by partner
-
-(6): Attachment Information
+Only deals related to the logged-in account will be listed.
