@@ -2,189 +2,196 @@
 
 ### **AWS** <a href="#pfsense-awscloud-aws" id="pfsense-awscloud-aws"></a>
 
-1. Login to your AWS account and go to **VPC** in the Console
-2. On the sidebar underneath VPN Connections, go to **Customer Gateways**
-   1. Click the **Create Customer Gateway** button
-      * Enter a name for your Gateway (e.g., Seattle Office)
-      * Change **Routing** to **Dynamic**
-      * Enter your **BGP ASN** number (If you don’t have a public one, choose any number between 64512-65534. These are private ASN numbers). Remember this number for later.
-      * Enter the **Public IP of your pfSense box**
-      * Click **Yes, Create**
-3. On the sidebar underneath VPN Connections, go to **Virtual Private Gateways**
-   1. Click the **Create Virtual Private Gateway** button
-      * Enter a name for your Virtual Private Gateway (e.g., Office VPN)
-      * Click **Yes, Create**
-   2. **Select** your newly created VPG and click **Attach to VPC**&#x20;
-      * **Select your VPC** and click **Yes, Attach**
-      *
+1. Đăng nhập vào tài khoản AWS của bạn và truy cập vào **VPC** trong Console
+2. Trong thanh bên, dưới phần Kết nối VPN, vào mục **Customer Gateways**
+   1. Nhấn nút **Create Customer Gateway**&#x20;
+      * Nhập tên cho Gateway (e.g., Seattle Office)
+      * Đổi **Routing** thành **Dynamic**
+      * Nhập số **BGP ASN của bạn** (Nếu bạn không có số công cộng, hãy chọn bất kỳ số nào từ 64512-65534. Đây là các số ASN riêng tư). Ghi nhớ số này để sử dụng sau.
+      * Nhập **Public IP của pfSense box** của bạn
+      * Nhấn chọn **Yes, Create**
+3. Bên dưới VPN Connections, chọn đến **Virtual Private Gateways**
+   1. Nhấn chọn nút **Create Virtual Private Gateway**
+      * Điền tên Virtual Private Gateway (ví dụ Office VPN)
+      * Nhấn **Yes, Create**
+   2.  **Chọn vào VPG** vừa tạo và nhấn chọn **Attach to VPC**&#x20;
 
-          <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-2.53.09-PM-1024x366.png" alt=""><figcaption></figcaption></figure>
-4. On the sidebar underneath Virtual Private Cloud, go to **Route Tables**
-   1. For each Route Table in your target VPC:
-      * Select the Route Table
-      * Hit the **Route Propagation** tab on the bottom pane
-      * You should see your Virtual Private Gateway listed
-      * Hit the **Edit** button and hit the **Propagate Checkbox** and then hit **Save**
-5. On the sidebar underneath VPN Connections, go to **VPN Connections**
-   1. Click the **Create VPN Connection** button
-      * Enter a name for your VPN connection (e.g., Seattle Office VPN)
-      * Select your **Virtual Private Gateway** that we just created.
-      * Select an **Existing Customer Gateway** and select the CGW we created earlier
-      * Select **Dynamic (requires BGP)**
-      *   \
+       * **Chọn VPC** và nhấn **Yes, Attach**
 
 
-          * Click **Yes, Create**
 
-          <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-2.54.38-PM-1024x643.png" alt=""><figcaption></figcaption></figure>
-   2. Select your newly created VPN and click the **Download Configuration** button.
-      * For **Vendor** select **Generic**
-      * Click **Yes, Download**
-      *
+       <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-2.53.09-PM-1024x366.png" alt=""><figcaption></figcaption></figure>
+4. Bên dưới Virtual Private Cloud, chọn tới **Route Tables**
+   1. Tại mỗi Route Table trong VPC:
+      * Chọn Route Table
+      * Chọn Tab **Route Propagation** ở bảng bên dưới&#x20;
+      * Bạn thấy danh sách Virtual Private Gateway
+      * Chọn nút **Edit** và  chọn vào ô **Propagate Checkbox** và sau đó chọn **Save**
+5. Bên dưới VPN Connections, chọn tới **VPN Connections**
+   1.  Nhấn chọn nút  **Create VPN Connection**
 
-          <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-2.55.09-PM-1024x571.png" alt=""><figcaption></figcaption></figure>
-      * Click **Cancel** to close the modal window
-6. **Open** the configuration file you just downloaded. We’ll use the information contained in it to configure pfSense. This will have two VPN connections listed. Whichever one you choose, make sure you’re consistent with it to make sure you are inputting the correct settings in pfSense.
+       * Điền tên kết nối VPN (ví dụ Seattle Office VPN)
+       * Chọn **Virtual Private Gateway** đã tạo.
+       * Chọn **Existing Customer Gateway** và chọn CGW đã tạo trước .
+       * Chọn **Dynamic (requires BGP)**
+       * Chọn **Yes, Create**
+
+       <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-2.54.38-PM-1024x643.png" alt=""><figcaption></figcaption></figure>
+   2.  Chọn VPN vừa tạo VPN sau đó nhấn chọn nút **Download Configuration**.
+
+       * Trường **Vendor** chọn **Generic**
+       * Nhấn chọn **Download**
+
+
+
+       <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-2.55.09-PM-1024x571.png" alt=""><figcaption></figcaption></figure>
+
+       * Chọn  **Cancel** để đóng
+6. **Mở** tệp tin cấu hình đã tải về. Ta sẽ dùng những thông tin chứa trong tệp tin để cấu hình pfSense. Điều này sẽ  có 2 kết nối VPN. Bất cứ kết nố nào bạn chọn, đảm bảo thực hiện nhất quán để chắc nhắn rằng bạn đang nhập đúng trong pfSense.
 7.
 
     <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.16.54-PM-1024x522.png" alt=""><figcaption></figcaption></figure>
 
 ### **pfSense** <a href="#pfsense-awscloud-pfsense" id="pfsense-awscloud-pfsense"></a>
 
-1. Login to pfSense and go to **System -> Package Manager**
-   * Select **Available Packages**
-   * Search for “bgp”
-   * Find the **OpenBGPD** package and hit **Install**, and then **Confirm**
-   * Wait for the install to complete
-2. Go to **Firewall -> Virtual IPs**
-   1. Hit **Add**
-   2. Type: **IP Alias**
-   3. Interface: **Localhost**
-   4. Address: **(your inside IP address)/30**
-      *   In the configuration file you downloaded from AWS, scroll till you find **Inside IP Addresses** and find the **Customer Gateway** IP. This be the Virtual IP we want to put in pfSense. Don’t forget the /30!\
+1. Đăng nhập pfSense và điều hướng đến màn hình **System -> Package Manager**
+   * Chọn **Available Packages**
+   * Tìm kiếm từ khóa “bgp”
+   * Tìm gói **OpenBGPD** và chọn **Install**, sau đó chọn **Confirm**
+   * Đợi  đến khi cài đặt xong.
+2.  Đến màn hình **Firewall -> Virtual IPs**
+
+    1. Chọn **Add**
+    2. Chọn Type: **IP Alias**
+    3. Chọn Interface: **Localhost**
+    4. Chọn Address: **(your inside IP address)/30**
+       *   Trong tệp tin cấu hình bạn tải từ AWS, cuộn tìm đến **Inside IP Addresses**  và tìm IP **Customer Gateway**.  Đây là Virtual IP ta đặt vào pfSense. đừng quên điền /30!\
 
 
-          <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.15.51-PM-1024x312.png" alt=""><figcaption></figcaption></figure>
-   5. Add a description if you want (e.g., AWS VPN Inside Address)
-   6. Leave everything else as the defaults
-   7. Hit **Save** and then **Apply Changes**\
+           <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.15.51-PM-1024x312.png" alt=""><figcaption></figcaption></figure>
+    5. Thêm mô tả nếu bạn muốn ( ví dụ AWS VPN Inside Address);
+    6. Có thể để mọi thông tin ở dạng mặc định;
+    7. Chọn **Save** sau đó chọn **Apply Changes**\
 
-   8.
 
-       <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.13.23-PM-1024x634.png" alt=""><figcaption></figcaption></figure>
-3. Go to **VPN -> IPSec**
-   1. Click **Add P1** (Add Phase 1) _(Note: The next bit of information will be found in the configuration file you downloaded from AWS)_
-      1. In pfSense, set **Remote Gateway** to the IP found in your configuration file:
-         * In the configuration file you downloaded from AWS, scroll till you find **Outside IP Addresses** and find the **Virtual Private Gateway** IP. This be the Public IP we want to put in pfSense for the Remote Gateway.
-      2. In your configuration file, find the section that says **#1: Internet Key Exchange Configuration**. You’ll need to double check the algorithms because they may change, but the rest should be the same.
-         * In pfSense, set **Pre-Shared Key** to the key found in your configuration file
-         * For **Encryption Algorithm** choose **AES** and **128 bits**
-         * Ensure **Hash Algorithm** is set to **SHA1**, **DH Group** is set to **2 (1024 bit)** and **Lifetime (Seconds)** is set to **28800**
-         * Feel free to set a description (e.g., AWS VPN Tunnel #1)
-         * Leave all other settings as their defaults and hit **Save**
-         *
+    <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.13.23-PM-1024x634.png" alt=""><figcaption></figcaption></figure>
+3. Đến màn hình **VPN -> IPSec**
+   1. chọn **Add P1** (Add Phase 1) _( Lưu ý:_ Những thông tin tiếp theo sẽ được tìm thấy trong tệp cấu hình mà bạn đã tải về từ AWS)
+      1. Trọng pfSense, thiết lập **Remote Gateway** với IP tìm thấy trong tệp tin cấu hình:
+         * Trọng tệp tin cấu hình mà bạn đã tải xuống từ AWS, cuộn xuống tới khi tìm thấy **Outside IP Addresses** và tìm IP **Virtual Private Gateway** . Đậy là IP Public ta muốn đưa vào pfSense cho Remote Gateway.
+      2.  Trọng tệp tin cấu hình, tìm đến đoạn nói về **#1: Internet Key Exchange Configuration**. Bạn cần kiểm tra lại các thuật toán vì chúng có thể thay đổi, nhưng phần còn lại nên giống nhau.
 
-             <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.17.27-PM-1024x530.png" alt=""><figcaption></figcaption></figure>
-   2. In pfSense, underneath your newly created VPN, click **Show Phase 2 Entries** and then click **Add P2**
-      1. For **Local Network**, select **Network** and enter your **Inside IP Address** for **Customer Gateway** that’s found in the **#3: Tunnel Interface Configuration** section of the file you downloaded. Don’t forget the /30!
-      2. For **Remote Network**, select **Network** and enter your **Inside IP Address** for **Virtual Private Gateway** that’s found in the **#3: Tunnel Interface Configuration** section of the file you downloaded. Don’t forget the /30!
-      3. Enter a description if you’d like (e.g., AWS VPN Tunnel #1 Phase 2)
-      4. Double check that the following settings match the **#2: IPSec Configuration** section of your downloaded configuration file:
-         * Ensure **Protocol** is set to **ESP**
-         * For **Encryption Algorithms**, ensure that only **AES is checked** and set to **128 bits**
-         * For **Hash Algorithms**, ensure that only **SHA1 is checked**
-         * For **PFS key group**, set **2 (1024 bit)**. This corresponds to the Perfect Forward Secrecy section of the configuration file.
-         * Make sure **Lifetime** is set to **3600** seconds
-      5.  Hit **Save**\
+          * Trong pfSense, thiết lập **Pre-Shared Key** với key được tìm thấy trong tệp tin cấu hình.
+          * Với thuật toán  **Encryption Algorithm** chọn **AES** và **128 bits**
+          * Đảm bảo thuật toán **Hash Algorithm** được thiết lập là **SHA1**, **DH Group** được thiết lập là **2 (1024 bit)** và **Lifetime (Seconds)được thiết lập là** **28800**
+          * Thêm mô tả nếu bạn muốn (ví dụ, AWS VPN Tunnel #1)
+          * Có thể để mọi thông tin ở dạng mặc định và chọn **Save**
+
+
+
+          <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.17.27-PM-1024x530.png" alt=""><figcaption></figcaption></figure>
+   2. Trong pfSense, bên dưới  chỗ VPN vừa tạo, chọn **Show Phase 2 Entries** sau đó chọn **Add P2**
+      1. Đối với **Local Network**, chọn  **Network** và điền **Inside IP Address** vào phần **Customer Gateway** mà được tìm thấy ở đoạn **#3: Tunnel Interface Configuration** của tệp tin đã tải về, đừng quên điền /30.
+      2. Đối với **Remote Network**, chọn **Network** và điền **Inside IP Address** vào phần **Virtual Private Gateway** mà được tìm thấy ở đoạn **#3: Tunnel Interface Configuration** của tệp tin đã tải về, đừng quên điền /30.
+      3. Thêm mô tả nếu bạn muốn  (ví dụ AWS VPN Tunnel #1 Phase 2)
+      4. Kiểm tra lại nhưng cài đặt có giống với đoạn **#2: IPSec Configuration** trong tệp tin đã tải hay không:
+         * Đảm bảo **Protocol** được thiết lập là **ESP**
+         * Với thuật toán **Encryption Algorithms**,đảm bảo chỉ **AES được chọn** và thiết lập **128 bits**
+         * Với thuật toán **Hash Algorithms**, đảm bảo **SHA1 được chọn**
+         * Với **PFS key group**, thiết lập **2 (1024 bit)**. Điều này tương ứng với phần Perfect Forward Secrecy của tập tin cấu hình.
+         * Đảm bảo **Lifetime** thiết lập **3600** giây
+      5.  Chọn **Save**\
 
 
           <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.19.13-PM-1024x924.png" alt=""><figcaption></figcaption></figure>
-   3. In pfSense, underneath your VPN connection, click **Show Phase 2 Entries** and then click **Add P2** again
-      1. Leave **Local Network** as **LAN subnet**
-      2. For **Remote Network** enter your **VPC CIDR Block** (e.g., 172.31.0.0/16)
-      3. Enter a description if you’d like (e.g., AWS VPN Tunnel #1 VPC Subnet)
-      4. Make sure all the **Phase 2 Proposal** settings match those in the last Phase 2 we added
-         * Ensure **Protocol** is set to **ESP**
-         * For **Encryption Algorithms**, ensure that only **AES is checked** and set to **128 bits**
-         * For **Hash Algorithms**, ensure that only **SHA1 is checked**
-         * For **PFS key group**, set **2 (1024 bit)**. This corresponds to the Perfect Forward Secrecy\
-           section of the configuration file.
-         * Make sure **Lifetime** is set to **3600** seconds
-      5. Hit **Save** and then **Apply Changes**
-      6.
+   3.  Trong pfSense, bên dưới chỗ kết nối VPN connection, chọn **Show Phase 2 Entries** và sua đó chọn lại **Add P2**&#x20;
 
-          <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.21.07-PM-1024x923.png" alt=""><figcaption></figcaption></figure>
-4. Go to **Firewall -> Rules**&#x20;
-   1. Select **IPSec** and hit **Add** (Doesn’t matter which button)
-      * Leave all settings as default, except **Protocol** change to **Any**
-      * Hit **Save** and **Apply Changes**
-5. Go to **Services -> OpenBGPD** _(All the following information can be found in the #4 Border Gateway Protocol (BGP) Configuration section of the downloaded configuration file)._
-   1. Under the **Settings** section set the following:
-      1.  Autonomous System (AS) Number: **(The number you set in your Customer Gateway in AWS)**\
+       1. Chọn **Local Network là** **LAN subnet**
+       2. Đối với **Remote Network** điền **VPC CIDR Block** (ví dụ 172.31.0.0/16)
+       3. Thêm mô tả nếu bạn muốn  (ví dụAWS VPN Tunnel #1 VPC Subnet)
+       4. Đảm bảo tất cả thiết lập **Phase 2 Proposal** giống với những các trong Phase 2 ta đã thêm.
+          * Đảm bảo **Protocol** thiết lập **ESP**
+          * Đối với thuật toán **Encryption Algorithms**, đảm bảo chỉ **AES được chọn** và thiết lập là **128 bits**
+          * Đối với thuật toán **Hash Algorithms**, đảm bảo chỉ **SHA1 được chọn**
+          * Đối với **PFS key group**, thiết lập **2 (1024 bit)**. Điều này tương ứng với  Perfect Forward Secrecy của tập tin cấu hình.
+          * Đảm bảo **Lifetime** thiết lập **3600** giây
+       5. chọn **Save** và sau đ1o chọn **Apply Changes**
+
+
+
+       <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.21.07-PM-1024x923.png" alt=""><figcaption></figcaption></figure>
+4. Đến màn hình **Firewall -> Rules**&#x20;
+   1. Chọn  **IPSec** và chọn **Add** (không quan trọng nút nào)
+      * Để như mặc định, ngoại trừ **Protocol** đổi thành **Any**
+      * Chọn **Save** và **Apply Changes**
+5. Đến màn hình **Services -> OpenBGPD** _( Tất cả thông tin sau có thể được tìm thấy ở đoạn   #4 Border Gateway Protocol (BGP) Configuration section của tệp tin cấu hình đã tải)._
+   1. &#x20;Dưới chỗ **Settings** thiết lập như sau:
+      1.  Số Autonomous System (AS): **(Số mà bạn đã thiết lập Customer Gateway iở AWS)**\
 
 
           <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.22.28-PM-1024x421.png" alt=""><figcaption></figcaption></figure>
-      2. Holdtime: **30**
-      3. Listen on IP: **(Your inside IP Address for your Customer Gateway)**
-         * You **don’t** need the /30 here!
-      4. Networks: **(Your local subnet, e.g., 192.168.1.0/24)**
-         * If you wish to add more local subnets to be propagated to AWS, click the **Add** button for as many networks as you have and enter your additional subnet(s)
-      5.  Click **Save**\
+      2. Thiết lập Holdtime: **30**
+      3. Điền IP: **(địa chỉ IP trong Customer Gateway)**
+         * Ta **không** cần /30 ở đây
+      4. Điền Networks: **(Your local subnet, e.g., 192.168.1.0/24)**
+         * Nếu bạn muốn thêm nhiều mạng con cục bộ hơn để được phát tán đến AWS, hãy nhấp vào nút **Add** cho bao nhiêu mạng bạn có và nhập vào các mạng con (subnets) bổ sung của bạn.
+      5.  Chọn **Save**\
 
 
           <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.24.33-PM-1024x823.png" alt=""><figcaption></figcaption></figure>
-   2. Click on **Groups**
-      1. Click **Add**
-      2. Give it a name (e.g., AWS\_VPC)
-      3. Enter the **Remote AS** number found in your configuration file (e.g., 7224)
-      4. Give it a description if you’d like
-      5. Click **Save** and then **Save** again
-      6.
+   2.  Chọn **Groups**
 
-          <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.23.07-PM-1024x587.png" alt=""><figcaption></figcaption></figure>
-   3. Click **Neighbors**
-      1. Click **Add**
-      2. Give it a description if you’d like (e.g., AWS VPC Neighbor)
-      3. For **Neighbor**, enter the **Neighbor IP Address** found in your configuration file
-      4. Make sure **Group** is set to what you named the group in the previous step
-      5.  Leave the rest of the settings as default and hit **Save**\
+       1. Chọn **Add**
+       2. Đặt tên ( ví dụ AWS\_VPC)
+       3. Điền số **Remote AS** trong tệp tin cấu hình ( ví dụ 7224)
+       4. Điền mô tả nếu cần
+       5. Chọn **Save** và sau đó chọn **Save** một lần nữa
+
+
+
+       <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.23.07-PM-1024x587.png" alt=""><figcaption></figcaption></figure>
+   3. Chọn **Neighbors**
+      1. Chọn **Add**
+      2. Điền mô tả nếu cần ( ví dụ AWS VPC Neighbor)
+      3. Đối với **Neighbor**, điền địa chỉ **Neighbor IP Address**  trọng tệp tin cấu hình
+      4. Đảm bảo **Group** đươc thiết lập theo tên nhóm của bước trước
+      5.  Để các cấu hình như mặc định và chọn  **Save**\
           \
 
 
           <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.23.34-PM-1024x627.png" alt=""><figcaption></figcaption></figure>
-6. Go to **Status -> IPsec**
-   1. If your VPN isn’t connected already, click **Connect**
-   2. After a couple of seconds, refresh the page and ensure the VPN status is **ESTABLISHED**. If it’s stuck on CONNECTING, double check your settings and try again.
-   3.
+6.  Đến màn hình **Status -> IPsec**
 
-       <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.37.13-PM-1024x499.png" alt=""><figcaption></figcaption></figure>
-7. Go back to **Services -> OpenBGPD**
-   1. Click **Status**
+    1. Nếu VPN chưa sẳn sàng kết nối, chọn **Connect**
+    2. Sau vài giây, làm mới lại trang và đảm bảo trạng thái VPN  là **ESTABLISHED**. Nếu là  CONNECTING, hãy kiểm tra thiết lập lại một lần nữa.
+
+
+
+    <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.37.13-PM-1024x499.png" alt=""><figcaption></figcaption></figure>
+7. Đến màn hình **Services -> OpenBGPD**
+   1. Chọn **Status**
    2.
 
        <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.25.08-PM-1024x540.png" alt=""><figcaption></figcaption></figure>
-   3. If everything worked right, you should see a connection time on the Up/Down column of the OpenBGPD Summary table and route information being exchanged.&#x20;
+   3. Nếu mọi thức hoạt động đúng, ta thấy được thời gian kết nối ở cột Up/Down của bảng  OpenBGPD Summary và thông tin theo đó được thay đổi.
    4.
 
        <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.25.23-PM-1024x348.png" alt=""><figcaption></figcaption></figure>
 
-### **Testing Connectivity** <a href="#pfsense-awscloud-testingconnectivity" id="pfsense-awscloud-testingconnectivity"></a>
+### **Kiểm tra sự kết nối** <a href="#pfsense-awscloud-testingconnectivity" id="pfsense-awscloud-testingconnectivity"></a>
 
 <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.25.57-PM-1024x350.png" alt=""><figcaption></figcaption></figure>
 
-Back in AWS, we can go check our route tables for our VPC. In the console, inspect a route table. When you click the **Routes** tab, you should now see your routes from pfSense being propagated to AWS. Cool!
+Trở lại AWS, chúng ta có thể kiểm tra các bảng định tuyến cho VPC của mình. Trong bảng điều khiển, kiểm tra một bảng định tuyến. Khi bạn nhấp vào tab **Routes** , bạn nên thấy các định tuyến từ pfSense được phát tán đến AWS.
 
-On your EC2 instances, if your security groups are configured to allow ICMP and/or SSH from your on-prem network, you should be able to ping and/or SSH between instances in your on-prem network and AWS VPC!\
+Trên các máy ảo EC2 của bạn, nếu các nhóm bảo mật (Security Groups) của bạn được cấu hình để cho phép ICMP và/hoặc SSH từ mạng nội bộ của bạn, bạn sẽ có thể ping và/hoặc SSH giữa các thực thể trong mạng nội bộ của bạn và AWS VPC.\
 
 
 <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.28.03-PM-300x139.png" alt=""><figcaption></figcaption></figure>
 
-In my example, I have a Ubuntu VM running in my Vng Cloud network and an EC2 instance running in my VPC. After configuring security groups, I can successfully ping between the two machines!\
-\
+Trong ví dụ , ta có một máy ảo Ubuntu đang chạy trong mạng VNG Cloud của tôi và một máy ảo EC2 đang chạy trong VPC . Sau khi cấu hình các nhóm bảo mật, ta có thể ping thành công giữa hai máy này!\
 
 
 <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.28.48-PM-300x104.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.31.45-PM-300x127.png" alt=""><figcaption></figcaption></figure>
-
-\
