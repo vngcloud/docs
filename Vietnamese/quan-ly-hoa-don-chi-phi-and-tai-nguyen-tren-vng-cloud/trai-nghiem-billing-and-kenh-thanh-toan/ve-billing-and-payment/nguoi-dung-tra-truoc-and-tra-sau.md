@@ -53,7 +53,7 @@ Về cơ bản, các tính năng mà người dùng có thể thực hiện trê
   * Thay đổi cấu hình
   * xóa tài nguyên
 
-Tham khảo chi tiết hơn tại mục: [**Quản lý tài nguyên**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649293)
+Tham khảo chi tiết hơn tại mục: [**Quản lý tài nguyên**](nguoi-dung-tra-truoc-and-tra-sau.md#nguoidungtratruoc-and-trasau-3.quanlytainguyen)
 
 #### 4. Quản lý hóa đơn <a href="#nguoidungtratruoc-and-trasau-4.quanlyhoadon" id="nguoidungtratruoc-and-trasau-4.quanlyhoadon"></a>
 
