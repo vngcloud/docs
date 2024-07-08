@@ -10,9 +10,9 @@
 * Chọn “**Đăng ký chiết khấu**” và nhập % chiết khấu mong muốn cho từng sản phẩm. Những sản phẩm không nhập, hệ thống sẽ hiểu người dùng không yệu cầu chiết khấu cho sản phẩm.
 * Ngày hiệu lực của chiết khấu phải lớn hơn ngày hiện hành +3
 
-Sau khi nhấn “Đăng Ký”, chiết khấu vừa tạo chuyển sang trạng thái “Chờ Duyệt”, đồng thời người dùng nhận được email thông báo việc đăng ký chiết khấu đang được VNG Cloud xem xét.
+Sau khi nhấn “**Đăng Ký**”, chiết khấu vừa tạo chuyển sang trạng thái “Chờ Duyệt”, đồng thời người dùng nhận được email thông báo việc đăng ký chiết khấu đang được VNG Cloud xem xét.
 
-Trong vòng 3 ngày làm việc, chiết khấu vừa đăng ký sẽ được VNG Cloud xem xét duyệt hoặc từ chối. Trạng thái của chiết khấu sẽ được cập nhật ngay trên màn hình này khi có xác nhận của VNG Cloud
+Trong vòng 3 ngày làm việc, chiết khấu vừa đăng ký sẽ được VNG Cloud duyệt hoặc từ chối. Trạng thái của chiết khấu sẽ được cập nhật ngay trên màn hình này khi có xác nhận của VNG Cloud
 
 * Nếu VNG Cloud duyệt chiết khấu đã đăng ký, trạng thái sẽ được chuyển thành “Chờ kích hoạt”.
 * Với những chiết khấu ở trạng thái “Chờ kích hoạt”, khi đến ngày hiệu lực, trạng thái sẽ được chuyển từ “Chờ kích hoạt” sang “Đang có hiệu lực”
