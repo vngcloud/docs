@@ -1,5 +1,5 @@
-# Restrictions and limitations
+# Giới hạn và hạn chế CSI
 
 ## Hạn chế <a href="#restrictionsandlimitations-hanche" id="restrictionsandlimitations-hanche"></a>
 
-* Ngoài mục Kubernetes Cluster, các mục khác như Load Balancer, Volumes cũng được liệt kê bên ngoài mục Kubernetes Cluster, cụ thể là các mục Load Balancer, Volumes trong vServer Portal. Nếu bạn đổi tên hoặc sửa đổi các tài nguyên này (Load Balancer, Volumes) trong vServer Portal, bạn có thể khiến chúng không sử dụng được cho Cluster hoặc khiến cho tài nguyên trên vServer Portal và tài nguyên trên Cluster không được đồng nhất. Để tránh điều này, hãy quản lý tài nguyên cluster của bạn với kubectl.
+* Việc thay đổi tên hoặc kích thước (Rename, Resize Load Balancer, Extend Volume) các tài nguyên như Load Balancer hay Volumes trên vServer Portal có thể gây ra sự không tương thích với tài nguyên trên Kubernetes Cluster. Điều này có thể dẫn đến việc các tài nguyên không hoạt động trên Cluster, tài nguyên bị đồng bộ lại hoặc thông tin tài nguyên giữa vServer Portal và Cluster không khớp. Để ngăn chặn vấn đề này, hãy sử dụng `kubectl`để quản lý tài nguyên của Cluster.
