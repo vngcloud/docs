@@ -1,24 +1,45 @@
-# Kiến Trúc Mạng
+# Network Architecture
 
-Kiến trúc giải pháp CDN của VNG Cloud được xây dựng theo kiến trúc CDN 3.0 của mô hình CDN thế giới, multi-tier để có khả năng mở rộng dễ dàng nhất và đáp ứng các mô hình kinh doanh phức tạp nhất của các nhà cung cấp nội dung và các nhà khai thác kinh doanh dịch vụ giá trị gia tăng trên nền internet, ví dụ bán sỉ CDN (whole sale CDN) hay các nhà khai thác mạng tận dụng mạng CDN để tối ưu hóa traffic, kiểm soát an ninh an toàn mạng ngoài các tính năng chính của CDN được thiết kế là truyền tải nội dung chất lượng cao trên nền internet.\
-Kiến trúc CDN 3.0 được áp dụng với các ứng dụng module hóa tiêu chuẩn và đặc biệt tập trung vào xu hướng phân tích big-data và hệ thống portal quản trị khách hàng thông minh, cho phép sự tương tác ở mức độ cao nhất cho khách hàng trong việc quản trị và giám sát chất lượng của dịch vụ CDN của mình\
-Mô hình CDN được chia làm 3 phân hệ từ Add-On Site, Central Site, Edge Site và tạo kết nối đến các nguồn dữ liệu bên ngoài của khách hàng cũng như truyền dữ liệu đến điểm truy cập cuối của thuê bao (clients):
+VNG Cloud's CDN solution architecture is built according to the CDN 3.0 architecture of the world's multi-tier CDN model to have the easiest scalability and meet the most complex business models of providers. content providers and operators providing value-added services on the internet, for example wholesale CDN (whole sale CDN) or network operators taking advantage of the CDN network to optimize traffic and control security. Network security in addition to the main features of CDN is designed to deliver high quality content on the internet. CDN 3.0 architecture is applied with standard modular applications and especially focuses on big-data analysis trends and smart customer management portal systems, allowing interaction at the highest level for customers. customers in managing and monitoring the quality of their CDN services The CDN model is divided into 3 subsystems from Add-On Site, Central Site, Edge Site and creates connections to customers' external data sources as well as transmits data to the subscriber's end access point (clients). :
 
-* **Content Source:** là nguồn dữ liệu gốc của khách hàng sử dụng dịch vụ CDN. Các nguồn này có thể là:\
-  o Tín hiệu live trực tiếp từ vệ tinh đã được chuyển đổi thành tín hiệu có thể truyền tải trên internet.\
-  o Storage chứa file lưu trữ các nội dung VoD.\
-  o Server chứa nội dung trang web gốc của khách hàng.\
+**Content Source:** This refers to the original data source of the customer using the CDN service. These sources could be:
 
-* **Add-on Site**: là các dịch vụ ngoài hệ thống chức năng chính của CDN (phân phối nội dung) bao gồm các khối chức năng (số lượng add-on services sẽ được phát triển thêm trong tương lai) như:\
-  o Content Store nơi lưu trữ Origin của nội dung dữ liệu của khách hàng.\
-  o Transcoding: Chuyển đổi định dạng, chất lượng nội dung cho cả VoD và Live.\
-  o Các module hỗ trợ tích hợp với các 3rd services trên internet hiện nay như Google, AWS.\
-  o Các dịch vụ khác phát sinh theo nhu cầu khách hàng về sau đều sẽ được đưa vào nhóm Add-on site.\
+* Live signal directly from satellite converted into a signal that can be transmitted over the internet.
+* Storage containing files storing VoD content.
+* Server containing the original content of the customer's website.
 
-* **Central Site**: là khối chịu trách nhiệm phân tải và kiểm soát toàn bộ hoạt động và chuẩn hóa dữ liệu trước khi phục vụ khách hàng đầu cuối. Nhờ vào thiết kế modular nên dễ dàng hỗ trợ mô hình mở rộng ở mọi cấp độ theo yêu cầu của khách hàng.
-* **Edge Site**: là lớp truyền tài nội dung trực tiếp đến khách hàng cuối với nhiệm vụ hoạt động ở hiệu suất cực cao và độ sẵn sàng cao nhất. Đặc biệt với tính năng Edge Cache Sharing (ECS), các server Edge trong cùng một PoP sẽ chia sẽ dữ liệu caching lẫn nhau nhằm tối ưu tối đa dung lượng cache trên toàn hệ thống.
-* **Khối khách hàng cuối kết nối vào hệ thống** hỗ trợ tất cả các mô hình, từ connected TV, đến Set-top-box và các ứng dụng OTT kết cuối như flash hay smartphone, tablet, PC, v.v.\
-  Kiến trúc được áp dụng với các ứng dụng module hóa tiêu chuẩn và đặc biệt tập trung vào xu hướng phân tích fast-data cho phép dữ liệu được cung cấp trên hệ thống gần như tức thời cùng với hệ thống portal quản trị khách hàng thông minh, cho phép sự tương tác ở mức độ cao nhất cho khách hàng trong việc quản trị và giám sát chất lượng của dịch vụ CDN của mình.
+**Add-on Site**: These are services beyond the main features of a CDN (Content Delivery Network) including functional blocks (the number of add-on services will be developed further in the future) such as:
+
+* Content Store: A place for storing the Origin of customer data content.
+* Transcoding: Converts the format and quality of content for both VoD and Live.
+* Modules supporting integration with current third-party services on the internet such as Google and AWS.
+* Other services arising as per customer needs in the future will be included in the Add-on site group.
+
+**End-Customer Block** supports all models, from connected TV, Set-top-box to end-user OTT applications such as flash, smartphone, tablet, PC, etc. The architecture employs standardized modular applications with a particular focus on fast-data analytics, enabling data provision on the system almost instantaneously along with an intelligent customer management portal. This portal allows the highest level of customer interaction in managing and monitoring the quality of their CDN service.
+
+**Edge Site**: is the layer that directly delivers content to end customers, operating at ultra-high efficiency and maximum availability. Particularly with the Edge Cache Sharing (ECS) feature, Edge servers within the same PoP share caching data with each other to optimally maximize cache capacity across the entire system.
+
+**Central Site**: is responsible for load distribution and controlling all operations, standardizing data before serving the end customers. Thanks to its modular design, it easily supports scalable models at all levels based on customer requirements.
+
+Hiện tại vCDN đã cung cấp độ phủ tại 2 điểm chính là Thành Phố Hồ Chí Minh và Hà Nội với số lượng POP là 10, tọa lại tại 4 ISP lớn nhất của Việt Nam là Viettel, VNPT, FPT, Mobifone. Cụ thể như sau:
+
+* **TP. Hồ Chí Minh:**\
+  o FPT Tân Thuận.\
+  o VNPT Trạm 2 137 Pastuer. Điểm mạng lõi cho kết nối toàn bộ miền Nam của VNPT.\
+  o Viettel IDC Hoàng Hoa Thám.\
+  o Vinadata DC Công Viên Phần Mềm Quang Trung.
+* **Hà Nội:**\
+  o FPT DC Phạm Hùng.\
+  o VNPT Nam Thăng Long.\
+  o Viettel IDC Hòa Lạc.
+
+Với tổng băng thông hiện tại lên đến gần 2Tbps và kế hoạch mở rộng thêm đến hơn 5Tbps trong năm 2025.
+
+
+
+
+
+
 
 Hiện tại vCDN đã cung cấp độ phủ tại 2 điểm chính là Thành Phố Hồ Chí Minh và Hà Nội với số lượng POP là 10, tọa lại tại 4 ISP lớn nhất của Việt Nam là Viettel, VNPT, FPT, Mobifone. Cụ thể như sau:
 
