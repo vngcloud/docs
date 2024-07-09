@@ -1,3 +1,3 @@
-# Cơ Chế Phân Phối Dữ Liệu
+# Data Distribution Mechanism
 
-Hệ Thống CDN Dang Sử dụng 2 phương pháp phân phối dữ liệu là PULL với dữ liệu đầu vào, và PUSH cho dữ liệu đầu ra.
+Dang CDN System uses 2 data distribution methods: PULL for input data, and PUSH for output data.

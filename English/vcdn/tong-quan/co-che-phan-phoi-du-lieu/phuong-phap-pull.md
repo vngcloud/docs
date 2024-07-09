@@ -1,13 +1,13 @@
 # PULL
 
-**Tín hiệu đầu vào:**
+**Input signal:**&#x20;
 
-* Hệ thống Media Preparation của VNGCloud sẽ kéo nội dung streaming dưới định dạng HLS/MpegDash đã được packaging trước từ server của khách hàng. Bao gồm cả định dạng hỗ trợ ABR và Multiple Audio.
-* Hệ thống sẽ đưa nội dung đến tất cả các edge trong mạng lưới chủ động để luôn sẵn sàng khi user gọi đến.
-* Người dùng cuối sẽ lấy nội dung với định dạng HLS/MpegDash từ server Edge.
+* VNGCloud's Media Preparation system will pull streaming content in pre-packaged HLS/MpegDash format from the customer's server. Including ABR and Multiple Audio format support.&#x20;
+* The system will proactively deliver content to all edges in the network to always be ready when the user calls.&#x20;
+* The end user will retrieve content in HLS/MpegDash format from the Edge server.
 
 ***
 
-**Tín hiệu đầu ra:**
+**Output signal:**
 
-* Hỗ trợ giao thức HTTPS: mặc định tất cả CDN được tạo ra trên hệ thống đều hỗ trợ SSL trên domain của CDN. Tuy nhiên khách hàng có thể sử dụng tự upload Certificate của riêng mình để sử dụng với tên bất kì (tham khảo tại phần quản lý certificate).
+* Support HTTPS protocol: by default all CDNs created on the system support SSL on the CDN domain. However, customers can upload their own Certificate to use with any name (refer to the certificate management section).

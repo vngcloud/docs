@@ -21,36 +21,19 @@ VNG Cloud's CDN solution architecture is built according to the CDN 3.0 architec
 
 **Central Site**: is responsible for load distribution and controlling all operations, standardizing data before serving the end customers. Thanks to its modular design, it easily supports scalable models at all levels based on customer requirements.
 
-Hiện tại vCDN đã cung cấp độ phủ tại 2 điểm chính là Thành Phố Hồ Chí Minh và Hà Nội với số lượng POP là 10, tọa lại tại 4 ISP lớn nhất của Việt Nam là Viettel, VNPT, FPT, Mobifone. Cụ thể như sau:
+With a current total bandwidth of nearly 2Tbps and plans to expand to over 5Tbps in 2025.
 
-* **TP. Hồ Chí Minh:**\
-  o FPT Tân Thuận.\
-  o VNPT Trạm 2 137 Pastuer. Điểm mạng lõi cho kết nối toàn bộ miền Nam của VNPT.\
-  o Viettel IDC Hoàng Hoa Thám.\
-  o Vinadata DC Công Viên Phần Mềm Quang Trung.
-* **Hà Nội:**\
-  o FPT DC Phạm Hùng.\
-  o VNPT Nam Thăng Long.\
-  o Viettel IDC Hòa Lạc.
+**Hanoi:**
 
-Với tổng băng thông hiện tại lên đến gần 2Tbps và kế hoạch mở rộng thêm đến hơn 5Tbps trong năm 2025.
+* FPT DC Pham Hung.
+* VNPT Nam Thang Long.
+* Viettel IDC Hoa Lac.
 
+**Ho Chi Minh City:**
 
+* FPT Tan Thuan.
+* VNPT Tram 2 137 Pasteur. Core network point for VNPT's entire southern region.
+* Viettel IDC Hoang Hoa Tham.
+* Vinadata DC Quang Trung Software Park.
 
-
-
-
-
-Hiện tại vCDN đã cung cấp độ phủ tại 2 điểm chính là Thành Phố Hồ Chí Minh và Hà Nội với số lượng POP là 10, tọa lại tại 4 ISP lớn nhất của Việt Nam là Viettel, VNPT, FPT, Mobifone. Cụ thể như sau:
-
-* **TP. Hồ Chí Minh:**\
-  o FPT Tân Thuận.\
-  o VNPT Trạm 2 137 Pastuer. Điểm mạng lõi cho kết nối toàn bộ miền Nam của VNPT.\
-  o Viettel IDC Hoàng Hoa Thám.\
-  o Vinadata DC Công Viên Phần Mềm Quang Trung.
-* **Hà Nội:**\
-  o FPT DC Phạm Hùng.\
-  o VNPT Nam Thăng Long.\
-  o Viettel IDC Hòa Lạc.
-
-Với tổng băng thông hiện tại lên đến gần 2Tbps và kế hoạch mở rộng thêm đến hơn 5Tbps trong năm 2025.
+Currently, vCDN provides coverage at two main points, Ho Chi Minh City and Hanoi, with 10 POPs, located at the four largest ISPs in Vietnam: Viettel, VNPT, FPT, and Mobifone.

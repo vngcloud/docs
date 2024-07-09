@@ -1,55 +1,51 @@
 # Video On Demand Streaming
 
-#### **Tổng quan** <a href="#videoondemandstreaming-tongquan" id="videoondemandstreaming-tongquan"></a>
+**Overview**
 
-Đảm bảo trải nghiệm người dùng tốt nhất khi lựa chọn và xem video trên các thiết bị qua internet.
+Ensure the best user experience when selecting and watching videos on devices over the internet. VNG Cloud's VOD service helps businesses:&#x20;
 
-Dịch vụ VOD của VNG Cloud giúp doanh nghiệp:
-
-* Tối ưu chi phí.
-* Đảm bảo sự linh hoạt, dễ dàng tương thích với đa dạng thiết bị đầu cuối.
-* Tăng mức độ hài lòng của khách hàng với dịch vụ.
-* Phân tích dữ liệu đa chiều theo thời gian thực.
+* Cost optimization.&#x20;
+* Ensuring flexibility and easy compatibility with a variety of terminal devices.&#x20;
+* Increase customer satisfaction with service.&#x20;
+* Analyze multidimensional data in real time.
 
 ***
 
-#### **Sơ đồ hoạt động** <a href="#videoondemandstreaming-cochephanphoidulieu" id="videoondemandstreaming-cochephanphoidulieu"></a>
+#### **Model** <a href="#videoondemandstreaming-cochephanphoidulieu" id="videoondemandstreaming-cochephanphoidulieu"></a>
 
 <figure><img src="../../.gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-#### **Cơ Chế Phân Phối Dữ Liệu** <a href="#videoondemandstreaming-cochephanphoidulieu" id="videoondemandstreaming-cochephanphoidulieu"></a>
+**Data Distribution Mechanism**
 
-* Dữ liệu đầu vào:
-  * Hệ thống Media Preparation của VNGCloud sẽ thực hiện kết nối đến server Storage của khách hàng để lấy nội dung dưới định dạng MP4, MP3, HLS, MpegDash (các định dạng hỗ trợ play trên môi trường internet).
-  * Tùy chọn độ dài mỗi media segment khi packaging thành HLS.
-  * Server Media Preparation sẽ tiến hành chuyển đổi file với định dạng MP4, MP3 thành định dạng HLS là định dạng hỗ trợ phát trên các thiết bị OTT. Đối với nội dung trên Origin là HLS/MpegDash thì sẽ để nguyên định dạng như dữ liệu gốc.
-  * Sau khi chuyển đổi định dạng thì sẽ tiến hành chuyển file đến các server Edge.
-* Dữ liệu đầu ra:
-  * Hỗ trợ các chuẩn đầu ra với các loại nội dung như:
-    * MP4: https:// \<CDN Domain>/<đường dẫn file MP4 trên origin>.
-    * HLS: https:// \<CDN Domain>/<đường dẫn file MP4/SMIL trên origin>/index.m3u8.
-    * MpegDash: : https:// \<CDN Domain>/<đường dẫn file manifest trên origin?.
-  * Hỗ trợ giao thức HTTPS: mặc định tất cả CDN được tạo ra trên hệ thống đều hỗ trợ SSL trên domain của CDN. Tuy nhiên khách hàng có thể sử dụng tự upload Certificate của riêng mình để sử dụng với tên bất kì (tham khảo tại phần quản lý certificate).
-  * Hỗ trợ chuẩn play MP4 Progressive: streaming trực tiếp file MP4 từ origin.
-  * Hỗ trợ packaging Adaptive Bitrate thông qua định nghĩa file smil (file đặc tả kỹ thuật của ứng dụng Packaging) được đặt chung với các file MP4 trên server Origin. Hệ thống Media Preparation sẽ tiến hành đọc nội dung của file smil và tiến hành chuyển đổi các file MP4 thành chuẩn HLS hỗ trợ Adaptive Bitrate. Cú pháp link đầu ra dưới dạng:
-    * HLS (smil ABR): https:// \<CDN Domain>/<Đường dẫn tới file smil trên origin>/index.m3u8.
+* Input data:
+  * VNGCloud's Media Preparation system will connect to the customer's Storage server to retrieve content in MP4, MP3, HLS, MpegDash formats (formats that support play on the internet environment).&#x20;
+  * Optional length of each media segment when packaging into HLS.&#x20;
+  * Server Media Preparation will convert files in MP4 and MP3 formats into HLS format, a format that supports playback on OTT devices. For content on Origin that is HLS/MpegDash, the format will remain as the original data.&#x20;
+  * After converting the format, the file will be transferred to Edge servers.
+* Output data:
+  * Supports output standards with content types such as:
+    * MP4: https:// /.&#x20;
+    * HLS: https:// /\<MP4/SMIL file path on origin>/index.m3u8.&#x20;
+    * MpegDash: : https:// /\<manifest file path on origin?.
+  * Support HTTPS protocol: by default all CDNs created on the system support SSL on the CDN domain. However, customers can upload their own Certificate to use with any name (refer to the certificate management section).&#x20;
+  * Support MP4 Progressive play standard: stream MP4 files directly from the origin.&#x20;
+  * Support for Adaptive Bitrate packaging through the definition of a smil file (Packaging application specification file) placed with MP4 files on the Origin server. The Media Preparation system will read the content of the smil file and convert MP4 files into HLS standard that supports Adaptive Bitrate. The output link syntax is as follows:&#x20;
+    * HLS (smil ABR): https:// //index.m3u8.
 
 ***
 
-#### **Tính Năng Dịch Vụ** <a href="#videoondemandstreaming-tinhnangdichvu" id="videoondemandstreaming-tinhnangdichvu"></a>
+#### **Feature** <a href="#videoondemandstreaming-tinhnangdichvu" id="videoondemandstreaming-tinhnangdichvu"></a>
 
-* Hỗ trợ kết nối trực tiếp đến origin là Object Storage thuộc chuẩn [AWS S3](../chi-tiet-tinh-nang/object-storage-s3.md).
-* Tùy chỉnh [cơ chế caching](../chi-tiet-tinh-nang/tuy-chinh-cac-tinh-nang-cache.md) phù hợp với loại nội dung: Caching level.
-* Hỗ trợ [Origin](../chi-tiet-tinh-nang/origin.md) khi tạo CDN.
-* Hỗ trợ [tùy chọn HTTPS](../chi-tiet-tinh-nang/tuy-chon-https-o-origin.md).
-* [Hỗ trợ các tính năng bảo mật link đầu ra](../chi-tiet-tinh-nang/security-link.md):
-* Tùy chỉnh [thời gian cache](../chi-tiet-tinh-nang/thoi-gian-cache.md).
-* Hỗ trợ tự động [redirect từ HTTP sang HTTPS](../chi-tiet-tinh-nang/tu-dong-redirect-tu-http-sang-https.md).
-* Hỗ trợ cơ chế “nhà phát triển” ([Development Mode](../chi-tiet-tinh-nang/development-mode.md))
-* Multi Audio Selection: tính năng hỗ trợ tách Audio trong file MP4 (trong trường hợp có nhiều định dạng Audio trong file), tính năng này được hỗ trợ song song cùng với tính năng Adaptive bitrate bằng file smil. Cú pháp link đầu ra tương tự như tính năng Adaptive Bitrate
-* HLS (smil ABR): https:// \<CDN Domain>/<Đường dẫn tới file smil trên VNGCloud Storage/Origin >/index.m3u8.
+* Supporting direct connection to the origin is Object Storage under the AWS S3 standard.&#x20;
+* Customize the caching mechanism to suit the content type: Caching level.&#x20;
+* Origin support when creating CDN.&#x20;
+* Supports HTTPS option.&#x20;
+* Supports output link security features: Customize cache time.&#x20;
+* Supports automatic redirection from HTTP to HTTPS. Supports "developer" mode (Development Mode)&#x20;
+* Multi Audio Selection: feature that supports separating Audio in MP4 files (in case there are multiple Audio formats in the file), this feature is supported in parallel with the Adaptive bitrate feature using smil files. The output link syntax is similar to the Adaptive Bitrate feature&#x20;
+  * HLS (smil ABR): https:// /\<Path to smil file on VNGCloud Storage/Origin >/index.m3u8.
 
 ***
 
