@@ -1,19 +1,19 @@
 # Server Cache Expiration
 
-**Server Cache Expiration (TTL)** là một cơ chế quan trọng dùng để xác định khoảng thời gian vCDN sẽ lưu trữ tài nguyên của bạn. Trong thời gian này, vCDN sẽ không truy cập vào máy chủ gốc của bạn và phản hồi kết quả từ bộ đệm của vCDN. Lợi ích của việc sử dụng Server Cache Expiration có thể kể đến là:
+**Server Cache Expiration (TTL)** is an important mechanism used to determine how long vCDN will cache your resources. During this time, vCDN will not access your origin server and respond with results from the vCDN cache. The benefits of using Server Cache Expiration include:&#x20;
 
-* Cải thiện hiệu suất
-* Giảm băng thông sử dụng
-* Nâng cao trải nghiệm người dùng.
+* Improve the performance&#x20;
+* Reduce bandwidth usage&#x20;
+* Enhance user experience.&#x20;
 
-Trên vCDN, bạn có thể thiết lập Server Cache Expiration (TTL) từ mức giá trị tối thiểu là 30 phút tới mức giá trị tối đa là 1 ngày mà chúng tôi hỗ trợ.
+On vCDN, you can set Server Cache Expiration (TTL) from the minimum value of 30 minutes to the maximum value of 1 day that we support.
 
 <figure><img src="../../.gitbook/assets/image (179).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-**Browser Cache Expiration** là thời gian vCDN hướng dẫn trình duyệt của khách truy cập lưu vào bộ nhớ đệm các tệp. Trong khoảng thời gian này, trình duyệt tải các tệp từ bộ đệm cục bộ, tăng tốc độ tải trang.
+**Browser Cache Expiration** is the time vCDN instructs the visitor's browser to cache files. During this period, the browser loads files from the local cache, increasing page loading speed.&#x20;
 
-Trên vCDN, bạn có thể thiết lập Browser Cache Expiration từ mức giá trị tối thiểu là 30 phút tới mức giá trị tối đa là 1 ngày mà chúng tôi hỗ trợ.
+On vCDN, you can set Browser Cache Expiration from a minimum value of 30 minutes to a maximum value of 1 day that we support.
 
 <figure><img src="../../.gitbook/assets/image (180).png" alt=""><figcaption></figcaption></figure>

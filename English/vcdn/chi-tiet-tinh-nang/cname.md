@@ -1,31 +1,31 @@
 # CNAME
 
-#### Tổng quan <a href="#cname-tongquan" id="cname-tongquan"></a>
+#### Overview <a href="#cname-tongquan" id="cname-tongquan"></a>
 
-CNAME trong CDN là một loại bản ghi DNS (Hệ thống tên miền) được sử dụng để **định hướng lưu lượng truy cập từ tên miền của bạn đến máy chủ CDN**.
-
-***
-
-**Sơ đồ hoạt động**
-
-1. Khi người dùng truy cập tên miền của bạn, trình duyệt của họ sẽ gửi yêu cầu đến máy chủ DNS.
-2. Máy chủ DNS sẽ tìm kiếm bản ghi CNAME cho tên miền của bạn.
-3. Nếu bản ghi CNAME tồn tại, máy chủ DNS sẽ trả về địa chỉ IP của máy chủ CDN.
-4. Trình duyệt của người dùng sẽ gửi yêu cầu đến máy chủ CDN.
-5. Máy chủ CDN sẽ trả về nội dung được yêu cầu cho trình duyệt.
+A CNAME in CDN is a type of DNS record used to **redirect traffic from your domain to the CDN server**
 
 ***
 
-**Lợi ích của việc sử dụng CNAME trong CDN**
+**Model**
 
-* **Cải thiện hiệu suất:** CDN lưu trữ nội dung của bạn trên nhiều máy chủ trên toàn thế giới. Khi người dùng truy cập nội dung của bạn, họ sẽ được kết nối với máy chủ gần nhất, giúp cải thiện tốc độ tải trang.
-* **Tăng độ tin cậy:** CDN có khả năng chịu lỗi cao. Nếu một máy chủ CDN gặp sự cố, các máy chủ khác sẽ tiếp tục cung cấp nội dung của bạn.
-* **Giảm tải cho máy chủ gốc của bạn:** CDN có thể xử lý một lượng lớn lưu lượng truy cập, giúp giảm tải cho máy chủ gốc của bạn.
+1. When a user visits your domain name, their browser sends a request to the DNS server.&#x20;
+2. The DNS server will look for the CNAME record for your domain name.&#x20;
+3. If a CNAME record exists, the DNS server returns the IP address of the CDN server.&#x20;
+4. The user's browser sends the request to the CDN server.&#x20;
+5. The CDN server will return the requested content to the browser.
 
 ***
 
-**Khởi tạo CDN Name**
+**Benefits of using CNAME in CDN**&#x20;
 
-Để sử dụng CNAME trong CDN, bạn có thể thực hiện thiết lập CNAMEs tại trường thông tin CDN Name trên thư mục CDN Info khi thực hiện tạo 1 CDN bất kỳ trên hệ thống vCDN.
+* **Improved performance**: CDN stores your content on multiple servers worldwide. When users access your content, they will be connected to the nearest server, improving page loading speed.&#x20;
+* **Increased reliability**: CDNs are highly fault-tolerant. If one CDN server goes down, the others will continue to serve your content.&#x20;
+* **Reduce the load on your origin servers**: CDNs can handle large amounts of traffic, helping to reduce the load on your origin servers.
+
+***
+
+**Create a CDN Name**
+
+To use CNAMEs in CDN, you can set up CNAMEs in the CDN Name information field on the CDN Info folder when creating any CDN on the vCDN system.
 
 <figure><img src="../../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>

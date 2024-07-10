@@ -36,9 +36,9 @@ In which:
 
 ***
 
-#### **Sử dụng tính năng CORS** <a href="#securitylink-sudungtinhnangcors" id="securitylink-sudungtinhnangcors"></a>
+#### Use CORS feature&#x20;
 
-CORS là tính năng bảo mật đầu ra của vCDN cho phép truy cập có các cấu hình như: tên miền, địa chỉ IP, Header, Method, Expose Header truy cập vào Link đầu ra của vCDN.
+CORS is the output security feature of vCDN that allows access with configurations such as: domain name, IP address, Header, Method, Expose Header to access the vCDN output link.
 
 <figure><img src="../../.gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
 

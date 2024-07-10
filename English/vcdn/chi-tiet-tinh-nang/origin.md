@@ -1,32 +1,32 @@
 # Origin
 
-Hiện tại, vCDN đang hỗ trợ Multi Origin với các Thuật toán kết nối: **Round Robin, Least Connection, IP Hash và tự động chạy fail-over.**
+Currently, vCDN is supporting Multi Origin with connection algorithms: **Round Robin, Least Connection, IP Hash and automatic fail-over.**&#x20;
 
-Khi bạn tạo 1 Web Accelerator CDN, màn hình khởi tạo CDN sẽ bao gồm các thông tin sau:
+When you create a Web Accelerator CDN, the CDN initialization screen will include the following information:
 
 <figure><img src="../../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
 
-Trong đó:
+In which:
 
-(1): Domain name: nhập Tên domain
+(1): Domain name: Enter the domain name.
 
-(2): CNAMEs: nhập danh sách CNAMEs mong muốn.
+(2): CNAMEs: Enter the list of CNAMEs that you want to use.
 
-(3): Lựa chọn phương thức Origin Load Balancing:
+(3): Choose a method for Origin Load Balancing:
 
 * Round Robin: Hệ thống sẽ tự động điều phối traffic xuống Server Origin của khách hàng với phương thức xoay vòng – đều nhau giữa các servers.
 * Least Connected: Hệ thống sẽ chọn Server Origin có lượng connected thấp nhất để điều phối traffic xuống.
 * IP Hashing: Hệ thống sẽ dựa vào IP Client để điều phối và duy trì kết nối xuống Server Origin.
 
-(4): Thông tin các mã lỗi Origin Server sẽ phản hồi, dựa vào các mã lỗi này hệ thống sẽ nhận biết và điều phối khách hàng qua các Server Origin khác trong pool.
+(4): Origin Server error code information will respond. Based on these error codes, the system will recognize and coordinate customers through other Origin Servers in the pool.&#x20;
 
-(5): Nhập địa chỉ IPv4 Server Origin.
+(5): Enter the IPv4 Server Origin address.&#x20;
 
-(6): Độ ưu tiên (weight) của Server Origin, nhập “0” để thiết lập Server Origin này ở chế độ Backup/Standy, số càng cao độ ưu tiên càng cao.
+(6): Priority (weight) of Server Origin, enter “0” to set this Server Origin in Backup/Standy mode, the higher the number, the higher the priority.&#x20;
 
-Sau khi nhập xong thông tin Server Origin và click “Add Server”\*, khung số (8) sẽ hiện ra danh sách các địa chỉ IP Server Origin và thông tin như hình sau:
+After entering the Server Origin information and clicking “Add Server”\*, frame number (8) will display a list of Server Origin IP addresses and information as shown below:
 
-_\* Khi khách hàng nhập thông tin domain chính, hệ thống sẽ tự động thêm các Server Origin dựa theo các bản ghi DNS có sẳn của tên miền vào khung số (8)._
+_When customers enter main domain information, the system will automatically add Origin Servers based on the domain name's existing DNS records into frame number (8)._
 
 <figure><img src="../../.gitbook/assets/image (183).png" alt=""><figcaption></figcaption></figure>
 
