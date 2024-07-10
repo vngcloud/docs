@@ -2,37 +2,37 @@
 
 #### **Secure Token** <a href="#securitylink-securetoken" id="securitylink-securetoken"></a>
 
-Secure token là các đoạn mã có cấu trúc nhằm bảo vệ nội dung không bị đánh cắp và phát tán trên các nơi khác. Trên vCDN, chúng tôi hỗ trợ bạn có thể thực hiện bật tính năng Secure token khi tạo hoặc chỉnh sửa CDN đã tạo trước đó.
+Secure tokens are structured codes designed to protect content from being stolen and distributed on other platforms. On vCDN, we support enabling the Secure token feature when creating or editing an existing CDN.
 
 <figure><img src="../../.gitbook/assets/image (169).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-#### Sơ đồ hoạt động <a href="#securitylink-sodohoatdong" id="securitylink-sodohoatdong"></a>
+#### Model <a href="#securitylink-sodohoatdong" id="securitylink-sodohoatdong"></a>
 
-Khi người dùng cuối cần truy cập vào nội dung đã được thiết lập kích hoạt "Secure token" thì yêu cầu này sẽ được hệ thống kiểm tra lại yêu cầu có thỏa công thức hay không, nếu thỏa thì người dùng cuối lấy được nội dung, nếu không thì yêu cầu sẽ bị từ chối.
+When the end user needs to access content that has been secured with "Secure token" activation, the system will check whether the request meets the required conditions. If it does, the end user will be granted access to the content; otherwise, the request will be denied.
 
 <figure><img src="../../.gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
 
-Trong đó:
+In which:
 
-* **Passphase**: là key kèm theo công thức bạn đã thiết lập để hệ thống có thể nhận dạng có truy cập đã được cấp quyền.
-* **Include client IP**: là IP của end user request content.
-* Để "Secure token" có thể hoạt động được, người quản trị dịch vụ cần phải tích hợp KEY vào hệ thống. Tùy theo loại Token Type sẽ có công thức generate KEY khác nhau, cụ thể:
-  * **VNG**:
-    * **URL Format**: http(s)://\<domain>/\<token>/\<expiredTime>/\<uri>
-    * **\<token>**: md5(\<Passphare>\<filePath>\<expiredTime>\<clientIP>)
-    * **\<expiredTime>:** Thời gian epochtime hết hạn của URL, tính bằng mili-seconds
-    * **\<filePath>**: /path/to/media/xxx.\[m3u8|ts|mpd|dash] (tức là \<uri> bỏ đi phần xxx.\[m3u8|ts|mpd|dash], trường hợp ví dụ này sẽ là: /path/to/media)
-    * **\<ClientIP>**: IP của client được cấp phép truy cập vào nội dung, chỉ cung cấp trong đường hợp bạn đã chọn bật "Include IP" trong cấu hình của dịch vụ CDN
-    * Ví dụ: [http://abcxyz.vcdn.cloud/cb0a229fa7a81c219c0c0f964f9b6e68/1603691495000/test/index.m3u8](http://abcxyz.vcdn.cloud/cb0a229fa7a81c219c0c0f964f9b6e68/1603691495000/test/index.m3u8)
-  * **SBD**:
-    * **URL Format**: http(s)://\<domain>/\<token>/\<expiredTime>/\<uri>
-    * **\<token>**: md5(\<clientIP>**:\<Passphare>:**\<exiredTime>**:**\<filePath>)
-    * **\<expiredTime>**: Thời gian epochtime hết hạn của URL, tính bằng seconds
-    * **\<filePath>:/path/to/media**/xxx.\[m3u8|ts|mpd|dash] (tức là \<uri> bỏ đi phần xxx.\[m3u8|ts|mpd|dash], trường hợp ví dụ này sẽ là: /path/to/media)
-    * **\<ClientIP>**: IP của client được cấp phép truy cập vào nội dung, chỉ cung cấp trong đường hợp bạn đã chọn bật "Include IP" trong cấu hình của dịch vụ CDN
-  * **Akamai**: Tham khảo hướng dẫn từ document của Akamai tại: [https://learn.akamai.com/en-us/webhelp/adaptive-media-delivery/adaptive-media-delivery-implementation-guide/GUID-041AEFDE-7E25-4AD8-B6C4-73F1B7200F02.html](https://learn.akamai.com/en-us/webhelp/adaptive-media-delivery/adaptive-media-delivery-implementation-guide/GUID-041AEFDE-7E25-4AD8-B6C4-73F1B7200F02.html)
+* **Passphase**: is the key with the formula you have set up so that the system can identify authorized access.&#x20;
+* **Include client IP**: is the IP of the end user requesting content.&#x20;
+* For "Secure token" to work, the service administrator needs to integrate the KEY into the system. Depending on the Token Type, there will be different KEY generation formulas, specifically:
+* **VNG**:
+  * **URL Format**: http(s)://\<domain>/\<token>/\<expiredTime>/\<uri>
+  * **\<token>**: md5(\<Passphare>\<filePath>\<expiredTime>\<clientIP>)
+  * **\<expiredTime>:** Thời gian epochtime hết hạn của URL, tính bằng mili-seconds
+  * **\<filePath>**: /path/to/media/xxx.\[m3u8|ts|mpd|dash] (tức là \<uri> bỏ đi phần xxx.\[m3u8|ts|mpd|dash], trường hợp ví dụ này sẽ là: /path/to/media)
+  * **\<ClientIP>**: IP của client được cấp phép truy cập vào nội dung, chỉ cung cấp trong đường hợp bạn đã chọn bật "Include IP" trong cấu hình của dịch vụ CDN
+  * Ví dụ: [http://abcxyz.vcdn.cloud/cb0a229fa7a81c219c0c0f964f9b6e68/1603691495000/test/index.m3u8](http://abcxyz.vcdn.cloud/cb0a229fa7a81c219c0c0f964f9b6e68/1603691495000/test/index.m3u8)
+* **SBD**:
+  * **URL Format**: http(s)://\<domain>/\<token>/\<expiredTime>/\<uri>
+  * **\<token>**: md5(\<clientIP>**:\<Passphare>:**\<exiredTime>**:**\<filePath>)
+  * **\<expiredTime>**: Thời gian epochtime hết hạn của URL, tính bằng seconds
+  * **\<filePath>:/path/to/media**/xxx.\[m3u8|ts|mpd|dash] (tức là \<uri> bỏ đi phần xxx.\[m3u8|ts|mpd|dash], trường hợp ví dụ này sẽ là: /path/to/media)
+  * **\<ClientIP>**: IP của client được cấp phép truy cập vào nội dung, chỉ cung cấp trong đường hợp bạn đã chọn bật "Include IP" trong cấu hình của dịch vụ CDN
+* **Akamai**: Tham khảo hướng dẫn từ document của Akamai tại: [https://learn.akamai.com/en-us/webhelp/adaptive-media-delivery/adaptive-media-delivery-implementation-guide/GUID-041AEFDE-7E25-4AD8-B6C4-73F1B7200F02.html](https://learn.akamai.com/en-us/webhelp/adaptive-media-delivery/adaptive-media-delivery-implementation-guide/GUID-041AEFDE-7E25-4AD8-B6C4-73F1B7200F02.html)
 
 ***
 

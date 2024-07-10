@@ -1,48 +1,48 @@
 # Web Accelerator
 
-#### **Tổng quan** <a href="#webaccelerator-tongquan" id="webaccelerator-tongquan"></a>
+#### **Overview** <a href="#webaccelerator-tongquan" id="webaccelerator-tongquan"></a>
 
-Web Accelerator là giải pháp giúp tăng tốc độ hiển thị nội dung và trải nghiệm người dùng.
+Web Accelerator is a solution that helps speed up content display and user experience.
 
 ***
 
-#### **Sơ đồ hoạt động** <a href="#webaccelerator-cochephanphoidulieu" id="webaccelerator-cochephanphoidulieu"></a>
+#### **Model** <a href="#webaccelerator-cochephanphoidulieu" id="webaccelerator-cochephanphoidulieu"></a>
 
 <figure><img src="../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-#### **Cơ Chế Phân Phối Dữ Liệu** <a href="#webaccelerator-cochephanphoidulieu" id="webaccelerator-cochephanphoidulieu"></a>
+**Data Distribution Mechanism**
 
-Dịch vụ Web Accelerator cache tất cả các đối tượng đi qua nó không chỉ bao gồm các nội dung tĩnh như Image, javascript, css mà còn có cả HTML code và API. Bên cạnh đó còn thực hiện các cơ chế tự động tối ưu hóa source code và hình ảnh.
-
-***
-
-#### **Tính Năng Dịch Vụ** <a href="#webaccelerator-tinhnangdichvu" id="webaccelerator-tinhnangdichvu"></a>
-
-* Hỗ trợ [CNAME](../chi-tiet-tinh-nang/cname.md).
-* Hỗ trở tùy chỉnh [Origin](../chi-tiet-tinh-nang/origin.md).
-* Hỗ trợ [tối ưu hóa kích thước file thiết bị đầu cuối](../chi-tiet-tinh-nang/toi-uu-hoa-kich-thuoc-file-thiet-bi-dau-cuoi.md).
-* Hỗ trợ chế độ bảo mật [HSTS](../chi-tiet-tinh-nang/tinh-nang-bao-mat-hsts.md).
-* Hỗ trợ tùy chỉnh các [tính năng cache](../chi-tiet-tinh-nang/tuy-chinh-cac-tinh-nang-cache.md).
-* Hỗ trợ [tự động redirect từ HTTP sang HTTPS](../chi-tiet-tinh-nang/tu-dong-redirect-tu-http-sang-https.md).
-* Hỗ trợ [đổi các link HTTP sang HTTPS trong source code](../chi-tiet-tinh-nang/chuyen-doi-cac-link-http-sang-https-trong-source-code.md).
-* Hỗ trợ [chỉnh sửa CDN đã tạo](../chi-tiet-tinh-nang/chinh-sua-cdn-da-tao.md).
+Web Accelerator service caches all objects that pass through it, including not just static content like images, JavaScript, and CSS but also HTML code and API. Additionally, it performs automatic optimization of source code and images.
 
 ***
 
-#### **Cách Tạo Web accelerator CDN** <a href="#webaccelerator-cachtaowebacceleratorcdn" id="webaccelerator-cachtaowebacceleratorcdn"></a>
+#### **Feature** <a href="#webaccelerator-tinhnangdichvu" id="webaccelerator-tinhnangdichvu"></a>
 
-* **Bước 1:** Chọn menu Web accelerator bạn sẽ vô trang thống kê và chỉnh sửa cho Web Accelerator, Chọn button Create để tạo CDN.
+* CNAME support.&#x20;
+* Origin customization support.&#x20;
+* Supports terminal file size optimization.&#x20;
+* Supports HSTS security mode.&#x20;
+* Supports customizing cache features.&#x20;
+* Supports automatic redirection from HTTP to HTTPS.&#x20;
+* Support changing HTTP links to HTTPS in source code.&#x20;
+* Support editing created CDN.
+
+***
+
+#### **Web accelerator CDN Creation Guide** <a href="#webaccelerator-cachtaowebacceleratorcdn" id="webaccelerator-cachtaowebacceleratorcdn"></a>
+
+* **Step 1:** Select the menu Web Accelerator and select the button Create New
 
 <figure><img src="../../.gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
 
-* **Bước 2**: Nhập và tùy chọn tính năng dịch vụ Web Accelerator
+* **Step 2**: Enter the detail information of Web Accelerator
 
 <figure><img src="../../.gitbook/assets/image (164).png" alt=""><figcaption></figcaption></figure>
 
-* **Bước 3**: Nhập Domain Name cho CDN khi người dùng nhập domain có sẵn của mình hệ thống sẽ tự tìm và thêm server ở tùy chọn origin. Ví dụ: người dùng có domain “[vnexpress.net](http://vnexpress.net/)” thì khi nhập xong chọn ra một field khác sẽ tự dộng thêm server có IP là “111.65.250.2”.
-* **Bước 4**: Nhập và tùy chỉnh các tính năng dịch vụ.
-* **Bước 5**: Tùy theo người dùng yêu cầu nhập thông [tin chính sách rule cơ bản](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045518) hoặc [chính sách rule nâng cao](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045523) cho CDN.
-* **Bước 6**: Khi điền các thông tin đúng và đủ thì nhấn button Submit ở cuối cùng giao diện đợi khoản 5 phút cho hệ thống cái đặt CDN cho người dùng.
-* **Bước 7**: Người dùng có thể truy cập CDN qua vCDN Domain khi đã tạo CDN xong.
+* **Step 3:** Enter Domain Name for CDN. When users enter their existing domain, the system will automatically find and add a server in the origin option. For example, if a user has the domain "vnexpress.net", after entering, selecting another field will automatically add a server with IP "111.65.250.2".&#x20;
+* **Step 4:** Import and customize service features.&#x20;
+* **Step 5**: Depending on the user's request, enter basic rule policy information or advanced rule policy information for CDN.&#x20;
+* **Step 6:** When filling in the correct and complete information, press the Submit button at the bottom of the interface and wait about 5 minutes for the system to set the CDN for the user.&#x20;
+* **Step 7:** Users can access the CDN via vCDN Domain once the CDN has been created.

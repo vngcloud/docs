@@ -49,30 +49,30 @@ Ensure the best user experience when selecting and watching videos on devices ov
 
 ***
 
-#### **Hướng dẫn khởi tạo VOD CDN** <a href="#videoondemandstreaming-huongdankhoitaovodcdn" id="videoondemandstreaming-huongdankhoitaovodcdn"></a>
+#### **VOD CDN Creation Guide** <a href="#videoondemandstreaming-huongdankhoitaovodcdn" id="videoondemandstreaming-huongdankhoitaovodcdn"></a>
 
-* **Bước 1:** Tạo VOD CDN bằng cách chọn menu VOD, chọn button Create CDN.
+* **Step 1:** Create VOD CDN via select the menu Video On Demand, select the button **Create New.**
 
 <figure><img src="../../.gitbook/assets/image (157).png" alt=""><figcaption></figcaption></figure>
 
-* **Bước 2**: Tạo CDN
+* **Step 2**: Creata a CDN
 
 <figure><img src="../../.gitbook/assets/image (158).png" alt=""><figcaption></figcaption></figure>
 
-* **Bước 3**: Nhập tên cho CDN.
-* **Bước 4**: Chọn cấu hình VOD type bao gồm:
-  * CDN Packaging (Hệ thống vCDN sẽ packaging media từ file video gốc của khách hàng).
-  * Origin packaging (Origin của khách hàng tự packaging, vCDN chỉ phục vụ).
-  * MP4 (vCDN phục vụ trực tiếp file mp4 gốc từ origin cho end-user).
-* **Bước 5**: Thời gian "băm" của các file "ts" với loại dịch vụ VoD là CDN Packaging.
-* **Bước 6:** Tùy chọn các tính năng dịch vụ của VOD
-* **Bước 7:** Tùy theo người dùng yêu cầu nhập thông tin [chính sách rule cơ bản](../chi-tiet-tinh-nang/chinh-sach-rule-co-ban-pagerule.md) hoặc chính sách rule nâng cao cho CDN.
-* **Bước 8:** Khi điền các thông tin đúng và đủ thì nhấn button Submit ở cuối cùng giao diện đợi khoản 5 phút cho hệ thống cái đặt CDN cho người dùng.
-* **Bước 9:** Người dùng có thể truy cập CDN qua vCDN Domain khi đã tạo CDN xong.
+* **Step 3**: Enter the CDN Name.
+* **Step 4**: Choose the VOD type, includes
+  * CDN Packaging (The vCDN system will package media from the customer's original video file).&#x20;
+  * Origin packaging (customer's own packaging, vCDN only serves).&#x20;
+  * MP4 (vCDN serves the original mp4 file directly from the origin to the end-user).
+* **Step 5**: Select the segment size of the files "ts" with VoD Type is CDN Packaging.&#x20;
+* **Step 6**: Optional VOD service features&#x20;
+* **Step 7**: Depending on the user's request, enter basic rule policy information or advanced rule policy information for CDN.&#x20;
+* **Step 8**: When filling in the correct and complete information, press the Submit button at the bottom of the interface and wait about 5 minutes for the system to set the CDN for the user.&#x20;
+* **Step 9**: Users can access the CDN via vCDN Domain once the CDN has been created..
 
 ***
 
-Khi cấu hình CDN xong người dùng có thể truy cập các CDN VoD theo các link dưới đây:
+Once the CDN configuration is complete, users can access VoD CDNs via the links below:
 
 * MP4: https:// \<CDN Domain>/<đường dẫn file MP4 trên origin>.
 * MP3: https:// \<CDN Domain>/<đường dẫn file MP3 trên origin >.
