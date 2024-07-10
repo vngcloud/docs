@@ -1,15 +1,15 @@
 # Customizing Cache Features
 
-Hỗ trợ tùy chỉnh các tính năng cache\*\*:\*\* cho phép khách hàng tùy chỉnh các chỉ số cache trên hệ thống và trên browser.
+Support to customize cache features\*\*:\*\* allows customers to customize cache indexes on the system and browser.
 
 <figure><img src="../../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
 
-(1): Caching Level: thay đổi tùy chọn loại hình cache trên hệ thống CDN:
+(1): Caching Level: change cache type options on the CDN system:&#x20;
 
-* URL Without Query String Only: Không cache nếu có URL Param trong request.
-* Skip Query String of URL: Loại bỏ URL Param khi tạo Cache.
-* URL With Query String: Cache toàn bộ URL bao gồm cả URL Param.
+* URL Without Query String Only: Do not cache if there is URL Param in the request.&#x20;
+* Skip Query String of URL: Remove URL Param when creating Cache.&#x20;
+* URL With Query String: Cache the entire URL including URL Param.&#x20;
 
-(2): Quy định thời gian dữ liệu cache được lưu trên các Edge Server của vCDN.
+(2): Specify the time cache data is stored on vCDN's Edge Servers.&#x20;
 
-(3): Quy định thời gian cache trên trình duyệt của end-user.
+(3): Specify the cache time on the end-user's browser.

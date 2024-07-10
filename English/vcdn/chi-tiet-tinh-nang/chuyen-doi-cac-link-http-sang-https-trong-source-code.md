@@ -1,7 +1,7 @@
 # Convert from HTTP to HTTPS in source code
 
-Hỗ trợ đổi các link HTTP sang HTTPS trong source code\*\*:\*\* Hệ thống sẽ tự động nhận diện các nguồn http trong source code để chuyển thành HTTPS trước khi chuyển dữ liệu đến người dùng. Khách hàng có thể tùy chọn tính năng này khi khởi tạo CDN hoặc khi chỉnh sửa CDN đã tạo.
+Support changing HTTP links to HTTPS in source code\*\*:\*\* The system will automatically identify http sources in source code to convert to HTTPS before transferring data to the user. Customers can choose this feature when creating a CDN or when editing an already created CDN.
 
 <figure><img src="../../.gitbook/assets/image (195).png" alt=""><figcaption></figcaption></figure>
 
-(8): Nếu website của bạn đang sử dụng giao thức HTTP và trong quá trình chuyển đổi sang HTTPS, trình duyệt sẽ cảnh báo khi trong website còn chứa các link HTTP. Tùy chọn này sẽ giúp thay thế tự động toàn bộ link HTTP thành HTTPS.
+(8): If your website is using the HTTP protocol and is in the process of converting to HTTPS, the browser will warn you when the website still contains HTTP links. This option will help automatically replace all HTTP links to HTTPS.

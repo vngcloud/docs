@@ -1,18 +1,18 @@
 # PageRule
 
-Cho phép khách hàng tùy chọn tạo ra các chính sách Rules thông qua giao diện Portal. Một Rules sẽ được thực thi khi mà có URI request đúng với điều kiện đã được định nghĩa trong Rule.
+Allows customers to optionally create Rules policies through the Portal interface. A Rule will be executed when a request URI matches the conditions defined in the Rule.
 
 <figure><img src="../../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
 
-Chức năng “Pagerules” sẽ giúp khách hàng tối ưu các điều kiện và các tùy chọn để giúp website thể hiện được nhiều mục đích khác nhau.
+The "Pagerules" function will help customers optimize conditions and options to help the website express many different purposes.&#x20;
 
-Để tạo “Pagerules”, click “Create Page Rule”, popup sẽ hiện ra như sau:
+To create “Pagerules”, click “Create Page Rule”, a popup will appear as follows:
 
 <figure><img src="../../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
 
-Tại mục số (1), nhập “URL pattern” cần áp dụng pagerule, hỗ trợ kiểu khai báo “\*” đại diện cho một chuỗi nhiều ký tự. Ví dụ: /trang\_landing\_cu.html.
+In item number (1), enter "URL pattern" to which the pagerule needs to be applied, supporting the "\*" declaration type that represents a string of multiple characters. For example: /page\_landing\_cu.html.&#x20;
 
-Các hành động khi thỏa điều kiện\*\*:\*\* Mỗi Rules khi thỏa điệu kiện đúng URI được request sẽ có thể tùy chọn thực thi một trong khác hành động sau:
+Actions when conditions are met\*\*:\*\* Each Rule that meets the correct condition of the requested URI will have the option to execute one of the following actions:
 
 * Always Use HTTPS
 * Auto Minify

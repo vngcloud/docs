@@ -447,7 +447,7 @@
     * [Customizing Cache Features](vcdn/chi-tiet-tinh-nang/tuy-chinh-cac-tinh-nang-cache.md)
     * [Automatically Redirect from HTTP to HTTPS](vcdn/chi-tiet-tinh-nang/tu-dong-redirect-tu-http-sang-https.md)
     * [Convert from HTTP to HTTPS in source code](vcdn/chi-tiet-tinh-nang/chuyen-doi-cac-link-http-sang-https-trong-source-code.md)
-    * [Chỉnh Sửa CDN Đã Tạo](vcdn/chi-tiet-tinh-nang/chinh-sua-cdn-da-tao.md)
+    * [Edit a CDN](vcdn/chi-tiet-tinh-nang/chinh-sua-cdn-da-tao.md)
     * [HTTPS on ORIGIN](vcdn/chi-tiet-tinh-nang/tuy-chon-https-o-origin.md)
     * [PageRule](vcdn/chi-tiet-tinh-nang/chinh-sach-rule-co-ban-pagerule.md)
   * [Pricing](vcdn/huong-dan-mua-hang.md)

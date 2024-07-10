@@ -1,11 +1,11 @@
 # Automatically Redirect from HTTP to HTTPS
 
-Tự động redirect từ HTTP sang HTTPS\*\*:\*\* Cho phép tùy chọn tính năng tự động chuyển kết nối của client từ HTTP sang HTTPS khi client kết nối bằng HTTP đến website
+Automatically redirect from HTTP to HTTPS\*\*:\*\* Allows the option to automatically switch the client connection from HTTP to HTTPS when the client connects via HTTP to the website
 
 <figure><img src="../../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
 
-(7): Khi bật tùy chọn này, end-user truy cập vào website với giao thức HTTP sẽ được tự động chuyển hướng qua HTTPS.
+(7): When this option is enabled, end-users accessing the website with HTTP protocol will be automatically redirected via HTTPS.&#x20;
 
-(8): Hỗ trợ đổi các link HTTP sang HTTPS trong source code\*\*:\*\* Hệ thống sẽ tự động nhận diện các nguồn http trong source code để chuyển thành HTTPS trước khi chuyển dữ liệu đến người dùng. Khách hàng có thể tùy chọn tính năng này khi khởi tạo CDN hoặc khi chỉnh sửa CDN đã tạo.
+(8): Support changing HTTP links to HTTPS in source code\*\*:\*\* The system will automatically identify http sources in source code to convert to HTTPS before transferring data to the user. Customers can choose this feature when creating a CDN or when editing an already created CDN.&#x20;
 
-(9): Nếu website của bạn đang sử dụng giao thức HTTP và trong quá trình chuyển đổi sang HTTPS, trình duyệt sẽ cảnh báo khi trong website còn chứa các link HTTP. Tùy chọn này sẽ giúp thay thế tự động toàn bộ link HTTP thành HTTPS.
+(9): If your website is using the HTTP protocol and is in the process of converting to HTTPS, the browser will warn you when the website still contains HTTP links. This option will help automatically replace all HTTP links to HTTPS.

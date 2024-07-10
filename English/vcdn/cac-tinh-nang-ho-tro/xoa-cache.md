@@ -1,15 +1,15 @@
 # Delete Cache
 
-Cho phép xóa các nội dung đã cache trước đó trên hệ thống CDN
+Allows deleting previously cached content on the CDN system
 
 <figure><img src="../../.gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure>
 
-Tại đây, bạn có thể thực hiện các lựa chọn phù hợp:
+Here, you can make the appropriate choices:&#x20;
 
-Bạn chọn 1 trong các tùy chọn này:
+You choose 1 of these options:&#x20;
 
-* **All**: sẽ xóa hết tất cả link (tất cả Cache của resources trên CDN)
-* **BEGIN**: Bắt đầu bằng chuỗi nhập vào
-* **END**: Kết thúc bằng chuỗi nhập vào
-* **CONTAIN**: Có chứa chuỗi nhập vào
-* **Fix**: xóa đúng với link được nhập ở ô 2 (URI của resource trên CDN)
+* All: will delete all links (all Cache of resources on CDN)&#x20;
+* BEGIN: Starts with the input string&#x20;
+* END: Ends with the input string&#x20;
+* CONTAIN: Contains the input string&#x20;
+* Fix: correctly delete the link entered in box 2 (URI of the resource on CDN)

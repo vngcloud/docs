@@ -1,7 +1,7 @@
 # API Key
 
-Khởi tạo ra các Authentication Key nhằm mục đích truy cập vào hệ thống API của dịch vụ vCDN mà không cần phải sử dụng Username và password đăng nhập hệ thống.
+Create Authentication Keys for the purpose of accessing the API system of the vCDN service without having to use Username and password to log in to the system.&#x20;
 
-Các API Key này có thể chỉ định thời gian hết hạn của Key. Nhằm giới hạn thời gian hiệu lực mà Key đã được cấp phát.
+These API Keys can specify the Key's expiration time. To limit the validity period for which the Key has been allocated.
 
 <figure><img src="../../.gitbook/assets/image (207).png" alt=""><figcaption></figcaption></figure>

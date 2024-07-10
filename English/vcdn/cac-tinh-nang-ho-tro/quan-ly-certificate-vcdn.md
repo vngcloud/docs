@@ -1,42 +1,40 @@
 # Manage Certificate vCDN
 
-Hỗ trợ khách hàng upload SSL Cert và SSL Key bao gồm key ChainCA
+Support Customers to upload SSL Cert and SSL Key including ChainCA key
 
 <figure><img src="../../.gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
 
-Sau khi đăng nhập, click vào mục “Certificate” như hình bên.
+After logging in, click on “Certificate” as shown below.
 
 <figure><img src="../../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
 
-Giao diện quản lý Certificate hiện ra với danh sách các certificate gồm các cột:
+The Certificate management interface appears with a list of certificates including the following columns:&#x20;
 
-* Domain,
-* Issuer (Tên nhà cấp phát chứng chỉ),
-* Valid From (Thời gian hiệu lực của chứng chỉ),
-* Expires On (Thời hạn của chứng chỉ),
-* CDN Using (Số lượng CDN đang dùng chứng chỉ này, click vào để xem chi tiết),
-* Status: Trạng thái của chứng chỉ đang được kích hoạt hay hủy kích hoạt
-* Các nút Action gồm Edit (Cập nhật chứng chỉ) và Delete (Xóa chứng chỉ)
-* Đầu trang, thông tin tóm tắt về số lượng chứng chỉ (Total), số certificate đang được kích hoạt để sẳn sàng sử dụng (Active) và số chứng chỉ đã tạm hủy kích hoạt (Inactive).
-* Để thêm mới/upload certificate, click vào nút “Upload” , giao diện upload ceritificate sẽ như sau:
+* Domain,&#x20;
+* Issuer (Name of certificate issuer),&#x20;
+* Valid From (Validity period of the certificate),&#x20;
+* Expires On (Certificate Expiration),&#x20;
+* CDN Using (Number of CDNs using this certificate, click to see details),&#x20;
+* Status: The status of the certificate is being activated or deactivated&#x20;
+* Action buttons include Edit (Update certificate) and Delete (Delete certificate)&#x20;
+* At the top of the page, summary information about the number of certificates (Total), the number of certificates that are being activated and ready to use (Active) and the number of certificates that have been temporarily deactivated (Inactive).&#x20;
+* To add/upload a certificate, click the “Upload” button, the certificate upload interface will be as follows:
 
 <figure><img src="../../.gitbook/assets/image (205).png" alt=""><figcaption></figcaption></figure>
 
-(1): Click vào Upload Private Key để tải lên private key của Certificate, hoặc cũng có thể paste private key vào khung textbox bên dưới.
+(1): Click Upload Private Key to upload the Certificate's private key, or you can also paste the private key into the textbox below.&#x20;
 
-(2): Upload Certificate để tải lên file CRT/PEM của Certificate.
+(2): Upload Certificate to upload the CRT/PEM file of the Certificate.&#x20;
 
-(3): Upload CA Root Chain để tải lên thông tin certificate của nhà cung cấp chứng chỉ. Có thể để trống nếu không có thông tin.\*
+(3): Upload CA Root Chain to upload certificate information of the certificate provider. Can be left blank if no information is available.\*
 
-_\* Một số trình duyệt phiên bản cũ có thể báo lỗi Certificate không hợp lệ nếu thiếu thông tin CA Root Chain._
+_Some older browser versions may report an invalid Certificate error if CA Root Chain information is missing._&#x20;
 
-Sau khi nhập/upload đầy đủ thông tin, click “Save and Deploy”(5) để lưu và kích hoạt certificate, sẳn sàng cho các CDN sử dụng.
-
-Nếu chứng chỉ chưa sẳn sàng để dùng ngay, click “Save as Draf”(4) để lưu trữ.
+After entering/uploading all information, click "Save and Deploy"(5) to save and activate the certificate, ready for CDNs to use. If the certificate is not ready to use immediately, click “Save as Draf”(4) to save it.
 
 {% hint style="info" %}
-**Chú ý:**
+**Note:**
 
-* vCDN do VNG Cloud cung cấp là dịch vụ phân phối nội dung thông qua giao thức HTTP có hỗ trợ TLS/SSL (HTTPS). Do vậy, các TLS Certificate - được tải lên bởi khách hàng nhằm mục đích mã hóa kênh truyền HTTP giữa người dùng và hệ thống máy chủ CDN - đồng thời được lưu trữ và quản lý bởi khách hàng và VNG Cloud cho đến khi khách hàng thực hiện lệnh xóa thông qua giao diện Web Portal/API.
-* VNG Cloud cam kết không chia sẻ các TLS Certificate này cho bên thứ ba bất kỳ.
+* vCDN provided by VNG Cloud is a content distribution service via HTTP protocol that supports TLS/SSL (HTTPS). Therefore, TLS Certificates - uploaded by customers for the purpose of encrypting the HTTP transmission channel between the user and the CDN server system - are simultaneously stored and managed by the customer and VNG Cloud until the customer execute the delete command through the Web Portal/API interface.&#x20;
+* VNG Cloud commits not to share these TLS Certificates with any third party.
 {% endhint %}

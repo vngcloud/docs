@@ -1,7 +1,7 @@
 # IAM
 
-Hệ thống phân quyền thứ cấp. Khách hàng có thể ủy quyền quản trị dịch vụ CDN thông qua giao diện Portal cho một bất kì một tài khoản nào khác đã tồn tại trên hệ thống của VNG Cloud.
+Secondary decentralization system. Customers can authorize CDN service administration through the Portal interface to any other account that already exists on VNG Cloud's system.&#x20;
 
-Quyền hạn được cấp phát có thể bao gồm Full Control / Read Only / Access Deny (mặc định) lên từng loại đối tượng cụ thể trên hệ thống.
+Allocated permissions can include Full Control / Read Only / Access Deny (default) on each specific type of object on the system.
 
 <figure><img src="../../.gitbook/assets/image (209).png" alt=""><figcaption></figcaption></figure>

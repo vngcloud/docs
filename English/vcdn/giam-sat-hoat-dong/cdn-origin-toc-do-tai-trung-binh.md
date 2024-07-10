@@ -1,5 +1,5 @@
 # CDN – Average Loading Speed from Origin
 
-Tốc độ tải trung bình mà user tải nội dung từ hệ thống CDN và từ CDN tải dữ liệu trên Origin. Theo dõi được đọ ổn định và chất lượng dịch vụ CDN cung cấp đến người dùng cuối. Nếu có vấn đề suy giảm chất lượng thì sẽ dễ dàng khoanh vùng sự cố tại khu vưc nào.
+Average download speed that users download content from the CDN system and from the CDN download data on Origin. Monitor the stability and quality of CDN services provided to end users. If there is a problem of quality deterioration, it will be easy to localize the problem in any area.
 
 <figure><img src="../../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>

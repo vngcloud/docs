@@ -1,5 +1,5 @@
 # Action History
 
-Ghi nhận lại tất cá các thao tác thực hiện trên hệ thống thông qua giao diện Portal và cả API.
+Record all operations performed on the system through the Portal interface and API.
 
 <figure><img src="../../.gitbook/assets/image (208).png" alt=""><figcaption></figcaption></figure>

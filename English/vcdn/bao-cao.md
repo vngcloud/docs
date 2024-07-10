@@ -1,15 +1,15 @@
 # Report
 
-Cho phép xuất báo cáo từng CDN hoặc tất cả theo khung thời gian được chỉ định.
+Allows exporting reports for each CDN or all according to a specified time frame.&#x20;
 
-Truy cập vào mục Report trên hệ thống Portal
+Access the Report section on the Portal system
 
 <figure><img src="../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
 
-Tùy chọn khung thời gian và dịch vụ bất kì để xuất báo cáo.
+Choose any time frame and service to export reports.
 
 <figure><img src="../.gitbook/assets/image (222).png" alt=""><figcaption></figcaption></figure>
 
-Báo cáo có thể được xem trực tiếp thông qua giao diện Portal hoặc tải file dưới định dạng Excel về máy.
+The report can be viewed directly through the Portal interface or downloaded in Excel format to your computer.
 
 <figure><img src="../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>

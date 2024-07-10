@@ -1,36 +1,36 @@
 # Pricing
 
-Hiện tại vCDN hỗ trợ các gói trả trước và trả sau khi sử dụng hệ thống. Với gói trả trước người dùng nạp tiền và mua hàng ở hệ thống, đối với gói trả sau hệ thống sẽ tính toán chi phí người dùng phát sinh trong tháng và thống kê tính toán tiền cho khách hàng hàng tháng. Để vào trang mua hàng người dùng chỉ cần nhấn vào menu Buy More Traffic trên màn hình.
+Currently vCDN supports prepaid and postpaid packages when using the system. With prepaid packages, users recharge and make purchases in the system. For postpaid packages, the system will calculate user expenses incurred during the month and statistically calculate money for customers monthly. To go to the purchase page, users just need to click on the Buy More Traffic menu on the screen.
 
 ***
 
-## **Gói Tăng Tốc Website** <a href="#huongdanmuahang-goitangtocwebsite" id="huongdanmuahang-goitangtocwebsite"></a>
+## Website Acceleration Package&#x20;
 
-Tùy theo tính năng người dùng có thể mua và lên các gói Basic, Standard, Pro, Enterprice các gói này chỉ app dụng cho dịch vụ Web Accerlerator . Để biết thêm giới hạn và tính năng của từng gói tham khảo link [https://www.vngcloud.vn/en/product/web-accelerator](https://www.vngcloud.vn/en/product/web-accelerator).
+Depending on the features, users can purchase and upgrade to Basic, Standard, Pro, and Enterprice packages. These packages only apply to the Web Accelerator service. To know more about the limitations and features of each package, refer to the link https://www.vngcloud.vn/en/product/web-accelerator
 
 <figure><img src="../.gitbook/assets/image (201).png" alt=""><figcaption></figcaption></figure>
 
-Với gói basic người dùng đăng ký vào hệ thống sẽ mặc định áp dụng gói này.
+With the basic package, users who register to the system will apply this package by default.&#x20;
 
-Gói Standard người dùng sẽ phải trả với giá là 200.000 VND/tháng. Với gói pro giá sẽ là 500.000 VND/tháng và Enterprise là 1.000.000 VND/tháng.
+Standard package users will have to pay for 200,000 VND/month. For the pro package the price will be 500,000 VND/month and for Enterprise it will be 1,000,000 VND/month.&#x20;
 
-Với traffic tiêu thụ hàng tháng của user hệ thống sẽ thống kê và tính toán tiền cho người dùng vào cuối tháng.
+With the user's monthly traffic consumption, the system will make statistics and calculate money for the user at the end of the month.&#x20;
 
-Thông báo hết hạn gói cước:
+Notice of package expiration:&#x20;
 
-* Hệ thống sẽ bắt đầu tự động gửi thông báo đến email đăng ký tài khoản của khách hàng khi còn **7 ngày trước thời điểm hết hạn**
-* Email sẽ được gửi vào 0h hằng ngày từ lúc kích hoạt hệ thống tự động gửi cảnh báo hết hạn gói cước
+* The system will start automatically sending notifications to the customer's account registration email when there are 7 days left before the expiration date.&#x20;
+* Email will be sent at 0:00 every day from the time the system is activated to automatically send package expiration warnings
 
 ***
 
-## **Gói Trả Trước** <a href="#huongdanmuahang-goitratruoc" id="huongdanmuahang-goitratruoc"></a>
+## **Prepaid package** <a href="#huongdanmuahang-goitratruoc" id="huongdanmuahang-goitratruoc"></a>
 
-Người dùng có thể nạp tiền và mua các gói và giá như các gói trả sau, và mua traffic để duy trì và trafic tiêu thụ cho CDN. Có 2 loại traffic là Domestic( áp dụng với CDN trong nước) và International ( áp dụng với CDN quốc tế).
+Users can recharge and purchase packages and prices such as postpaid packages, and buy traffic to maintain and consume traffic for CDN. There are 2 types of traffic: Domestic (applied to domestic CDNs) and International (applied to international CDNs).&#x20;
 
-Từng loại traffic sẽ có giá thành khác nhau. Đối với loại traffic là trong nước và nhóm standard có giá mua lẻ là 880 VND/ 1GB traffic. Và vCDN có thêm giá theo bậc thang cho user càng mua nhiều giá càng giảm cho user.
+Each type of traffic will have different costs. For domestic and standard traffic types, the retail price is 880 VND/ 1GB of traffic. And vCDN has additional tiered prices for users. The more they buy, the lower the price for users.
 
 <figure><img src="../.gitbook/assets/image (202).png" alt=""><figcaption></figcaption></figure>
 
-Thông báo hết hạn gói cước:
+Notice of package expiration:&#x20;
 
-* Hệ thống sẽ bắt đầu tự động gửi thông báo đến email đăng ký tài khoản của khách hàng khi lưu lương traffic còn lại đạt mức **20% và 10%** (tối đa 2 email) của tổng mức traffic ở lần mua cuối cùng
+* The system will start automatically sending notifications to the customer's account registration email when the remaining traffic reaches 20% and 10% (maximum 2 emails) of the total traffic level at the last purchase.
