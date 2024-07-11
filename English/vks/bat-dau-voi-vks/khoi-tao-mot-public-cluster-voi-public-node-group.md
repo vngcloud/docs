@@ -1,10 +1,10 @@
-# Khởi tạo một Public Cluster với Public Node Group
+# Create a Public Cluster with Public Node Group
 
 ### Điều kiện cần <a href="#khoitaomotpublicclustervoipublicnodegroup-dieukiencan" id="khoitaomotpublicclustervoipublicnodegroup-dieukiencan"></a>
 
 Để có thể khởi tạo một **Cluster** và **Deploy** một **Workload**, bạn cần:
 
-* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md)&#x20;
+* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md)
 * Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
 * Đã cài đặt và cấu hình **kubectl** trên thiết bị của bạn. vui lòng tham khảo tại [đây](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) nếu bạn chưa rõ cách cài đặt và sử dụng kuberctl. Ngoài ra, bạn không nên sử dụng phiên bản kubectl quá cũ, chúng tôi khuyến cáo bạn nên sử dụng phiên bản kubectl sai lệch không quá một phiên bản với version của cluster.
 
@@ -32,7 +32,7 @@
 
 ### Kết nối và kiểm tra thông tin Cluster vừa tạo <a href="#khoitaomotpublicclustervoipublicnodegroup-ketnoivakiemtrathongtinclustervuatao" id="khoitaomotpublicclustervoipublicnodegroup-ketnoivakiemtrathongtinclustervuatao"></a>
 
-Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiện kết nối và kiểm tra thông tin Cluster vừa tạo theo các bước:&#x20;
+Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiện kết nối và kiểm tra thông tin Cluster vừa tạo theo các bước:
 
 **Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
@@ -40,7 +40,7 @@ Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiệ
 
 **Bước 3**: Đổi tên file này thành config và lưu nó vào thư mục **\~/.kube/config**
 
-**Bước 4:** Thực hiện kiểm tra Cluster thông qua lệnh:&#x20;
+**Bước 4:** Thực hiện kiểm tra Cluster thông qua lệnh:
 
 * Chạy câu lệnh sau đây để kiểm tra **node**
 
@@ -101,7 +101,7 @@ spec:
       targetPort: 80
 ```
 
-* Deploy Deployment này bằng lệch:&#x20;
+* Deploy Deployment này bằng lệch:
 
 ```
 kubectl apply -f nginx-service.yaml
@@ -168,9 +168,7 @@ Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với đ
 
 <figure><img src="https://docs-admin.vngcloud.vn/download/attachments/73761995/image2024-4-4_11-33-17.png?version=1&#x26;modificationDate=1712205198000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-Nếu bạn muốn expose service này thông qua vLB Layer4, vLB Layer7, vui lòng tham khảo tại:&#x20;
+Nếu bạn muốn expose service này thông qua vLB Layer4, vLB Layer7, vui lòng tham khảo tại:
 
 * [Expose một service thông qua vLB Layer4](expose-mot-service-thong-qua-vlb-layer4.md)
 * [Expose một service thông qua vLB Layer7](expose-mot-service-thong-qua-vlb-layer7.md)
-
-\
