@@ -1,24 +1,24 @@
-# Tài khoản người dùng Root
+# Root User Account
 
-#### Tổng quan <a href="#taikhoannguoidungroot-tongquan" id="taikhoannguoidungroot-tongquan"></a>
+**Overview**
 
-Tài khoản người dùng Root (Root User Account) là tài khoản mà người dùng khởi tạo vào ngày đầu tiên truy cập và sử dụng dịch vụ trên VNG Cloud. Tài khoản Root User Account có đầy đủ quyền truy cập vào tất cả các dịch vụ và tài nguyên của người dùng. Khi tạo tài khoản VNG Cloud, bạn bắt đầu với một danh tính đăng nhập có toàn quyền truy cập vào tất cả các dịch vụ của VNG Cloud và tài nguyên trong tài khoản. Danh tính này được gọi là Root User Account và được truy cập bằng cách đăng nhập bằng địa chỉ email và mật khẩu mà bạn đã sử dụng để tạo tài khoản. Chúng tôi khuyến khích bạn không nên sử dụng tài khoản Root User Account cho các tác vụ hàng ngày của mình và chỉ sử dụng tài khoản này để thực hiện các tác vụ mà chỉ tài khoản Root User Account mới có thể thực hiện.&#x20;
-
-***
-
-#### Khởi tạo tài khoản người dùng Root (Root User Account) <a href="#taikhoannguoidungroot-khoitaotaikhoannguoidungroot-rootuseraccount" id="taikhoannguoidungroot-khoitaotaikhoannguoidungroot-rootuseraccount"></a>
-
-Để khởi tạo tài khoản người dùng Root, bạn vui lòng đăng ký tài khoản tại trang đăng ký [https://register.vngcloud.vn/signup](https://register.vngcloud.vn/signup).&#x20;
-
-Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông tin sau để truy cập và làm việc với tài nguyên sử dụng tài khoản người dùng Root:&#x20;
-
-* Địa chỉ email được sử dụng để tạo tài khoản người dùng Root.
-* Mật khẩu cho của tài khoản người dùng Root.
-
-Để thực hiện đăng nhập sử dụng DataSync với tài khoản Root, hãy xem thêm tại [Truy cập tài nguyên sử dụng tài khoản người dùng Root](../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-truy-cap-tai-nguyen-vstorage/truy-cap-tai-nguyen-su-dung-tai-khoan-nguoi-dung-root.md).
+The Root User Account is the account that users initiate on their first day of accessing and using services on VNG Cloud. The Root User Account has full access rights to all user services and resources. When creating a VNG Cloud account, you begin with a superuser identity with access to all VNG Cloud services and resources within the account. This identity is called the Root User Account and is accessed by logging in with the email address and password used to create the account. We encourage you not to use the Root User Account for your daily tasks and only use it for operations that require the unique capabilities of the Root User Account.
 
 ***
 
-#### Hủy tài khoản người dùng Root (Root User Account) <a href="#taikhoannguoidungroot-huytaikhoannguoidungroot-rootuseraccount" id="taikhoannguoidungroot-huytaikhoannguoidungroot-rootuseraccount"></a>
+**Create a Root User Account**
 
-Để hủy tài khoanr Root, bạn cần liên hệ với chúng tôi thông qua việc tạo một ticket yêu cầu hủy tài khoản. Chi tiết xem thêm tại [Hướng dẫn hủy tài khoản](../../../huong-dan-su-dung-tai-khoan/huong-dan-huy-tai-khoan.md).
+To initialize the Root User Account, please register an account at the registration page: [https://register.vngcloud.vn/signup](https://register.vngcloud.vn/signup]\(https://register.vngcloud.vn/signup\)).
+
+After initializing the Root User Account, gather the following information to access and work with resources using the Root User Account:
+
+* The email address used to create the Root User Account.
+* The password for the Root User Account.
+
+To log in using vStorage with the Root User Account, please refer to the [Access Permissions and Working Through Root User Account](https://docs.vngcloud.vn/display/VSEN/Access+Permissions+and+Working+Through+Root+User+Account).
+
+***
+
+**Terminate the Root User Account**
+
+To terminate the Root account, you need to contact us by creating a ticket requesting account termination. For details, refer to the [Hướng dẫn hủy tài khoản](https://docs.vngcloud.vn/pages/viewpage.action?pageId=22938103).
