@@ -1,17 +1,17 @@
-# Bắt đầu với DataSync
+# Getting Start with DataSync
 
-Nếu bạn chưa sử dụng bất kỳ dịch vụ nào của VNG Cloud (chưa đăng ký tài khoản sử dụng với VNG Cloud), bạn cần đăng ký tài khoản với VNG Cloud Service [tại đây](https://register.vngcloud.vn/signup) để truy cập đến VNGCloud DataSync. Bắt đầu sử dụng dịch vụ, bạn cần tạo một transfer job. Trong DataSync, transfer job là một nhiệm vụ được cấu hình để transfer dữ liệu giữa nguồn và đích. Tại một thời điểm bạn có thể sở hữu một hoặc nhiều Transfer job song song và sử dụng chúng với các mục đích khác nhau.
+If you have not used any VNG Cloud services (have not registered an account with VNG Cloud), you need to register an account with VNG Cloud Service here to access VNGCloud DataSync. To start using the service, you need to create a transfer job. In DataSync, a transfer job is a task configured to transfer data between a source and a destination. At a time you can own one or more Transfer jobs in parallel and use them for different purposes.
 
-**Để sử dụng DataSync, bạn cần thực hiện các bước sau:**
+**Getting Start with DataSync, you can follow these below steps:**
 
-**Bước 1:** Đăng nhập vào [https://datasync.console.vngcloud.vn/](https://datasync.console.vngcloud.vn/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [đây](https://register.vngcloud.vn/signup).
+**Step 1:** Login into [https://datasync.console.vngcloud.vn/](https://datasync.console.vngcloud.vn/). If you don't have an account, register for free at here.
 
-**Bước 2:** Nhấp vào nút **Create a transfer job** để bắt đầu tạo job chuyển đổi dữ liệu.
+**Step 2:** Select the button **Create a transfer job** to create a job uses to transfer data.
 
-**Bước 3:** Nhập **Basic configuration,** bao gồm:&#x20;
+**Step 3:** Enter the **Basic configuration,** includes:
 
-1. Nhập **Job name.** Tên job là duy nhất trên một SSO User Account và tên job có thể dài từ tối thiểu 5 tới 50 ký tự.
-2. Nhập **Job description**: mô tả ngắn gọn về job.&#x20;
+1. Enter the **Job name.** Job name is the only one on a SSO User Account và tên job có thể dài từ tối thiểu 5 tới 50 ký tự.
+2. Nhập **Job description**: mô tả ngắn gọn về job.
 3. Chọn **Source Type** bạn muốn chuyển dữ liệu. VNG Cloud DataSync hiện hỗ trợ 4 loại nguồn:
    * Amazon S3
    * Google Cloud Storage
@@ -19,7 +19,7 @@ Nếu bạn chưa sử dụng bất kỳ dịch vụ nào của VNG Cloud (chưa
    * vStorage
 4. **Destination type**: hiện tại chúng tôi chỉ hỗ trợ 1 loại đích nhận dữ liệu là vStorage.
 
-**Bước 4:** Nhập **Source configuration**, bao gồm:&#x20;
+**Bước 4:** Nhập **Source configuration**, bao gồm:
 
 **Bước 4.1**: Tại ô **Source Information**, bấm **Chọn**. Nếu bạn chọn **Source type** là **vStorage** thì bạn có thể chọn thông tin nguồn trong danh sách được hiển thị sẵn mà chúng tôi cung cấp, nếu khác loại này thì phải nhập thông tin. Cụ thể, với loại nguồn:
 
@@ -32,7 +32,7 @@ Nếu bạn chưa sử dụng bất kỳ dịch vụ nào của VNG Cloud (chưa
 * Để chuyển dữ liệu từ bucket01/folder01/subfolder02 tới vStorage, bạn cần nhập folder01/subfolder02.
 * Để chuyển toàn bộ dữ liệu trong bucket01, hãy để mục này trống.
 
-4. Nhập **Access Key/ Secret Key**: nhập access key và secret key của bạn.&#x20;
+4. Nhập **Access Key/ Secret Key**: nhập access key và secret key của bạn.
 
 **Trường hợp 2: Nếu bạn chọn Source Type là Google Cloud Storage**, bạn cần:
 
@@ -40,7 +40,7 @@ Nếu bạn chưa sử dụng bất kỳ dịch vụ nào của VNG Cloud (chưa
 2. Nhập **Folder path**: nếu bạn chỉ muốn chuyển dữ liệu của một folder trong bucket, hãy nhập đường dẫn folder vào mục này. Ví dụ:
    * Để chuyển dữ liệu từ bucket01/folder01/subfolder02 tới vStorage, bạn cần nhập folder01/subfolder02.
    * Để chuyển toàn bộ dữ liệu trong bucket01, hãy để mục này trống.
-3. Nhập **Access Key/ Secret Key:** nhập access key và secret key của bạn.&#x20;
+3. Nhập **Access Key/ Secret Key:** nhập access key và secret key của bạn.
 
 **Trường hợp 3: Nếu bạn chọn Source Type là S3 compatible Object Storage**, bạn cần:
 
@@ -55,7 +55,7 @@ Nếu bạn chưa sử dụng bất kỳ dịch vụ nào của VNG Cloud (chưa
 **Trường hợp 4: Nếu bạn chọn Source Type là vStorage,** bạn cần:
 
 1. Chọn **Region**: nơi chứa container của bạn. Ví dụ: HCM03, HAN01
-2. Chọn **Project**: project chứa container mà bạn muốn transfer dữ liệu.&#x20;
+2. Chọn **Project**: project chứa container mà bạn muốn transfer dữ liệu.
 3. Chọn **Container**: tên container nguồn của bạn trên vStorage.
 4. Chọn **Folder path**: nếu bạn chỉ muốn chuyển dữ liệu của một folder trong container, hãy chọn folder bạn muốn transfer dữ liệu tại mục này. Ví dụ:
    * Để chuyển dữ liệu từ container01/folder01/subfolder02 tới vStorage, bạn cần chọn folder01 sau đó chọn tiếp tới subfolder02.
@@ -71,10 +71,10 @@ Nếu bạn chưa sử dụng bất kỳ dịch vụ nào của VNG Cloud (chưa
 
 **Bước 5:** Nhập **Destination configuration**, bao gồm:
 
-**Bước 5.1:** Tại ô **Destination Information**, bấm Chọn. Nhập Cấu hình đích, bao gồm: &#x20;
+**Bước 5.1:** Tại ô **Destination Information**, bấm Chọn. Nhập Cấu hình đích, bao gồm:
 
 1. Chọn **Region**: nơi chứa container của bạn. Ví dụ: HCM03, HAN01
-2. Chọn **Project**: project chứa container mà bạn muốn transfer dữ liệu.&#x20;
+2. Chọn **Project**: project chứa container mà bạn muốn transfer dữ liệu.
 3. Chọn **Container**: tên container nguồn của bạn trên vStorage.
 4. Chọn **Folder path**: nếu bạn chỉ muốn chuyển dữ liệu của một folder trong container, hãy chọn folder bạn muốn transfer dữ liệu tại mục này. Ví dụ:
    * Để chuyển dữ liệu từ container01/folder01/subfolder02 tới vStorage, bạn cần chọn folder01 sau đó chọn tiếp tới subfolder02.
@@ -87,12 +87,12 @@ Nếu bạn chưa sử dụng bất kỳ dịch vụ nào của VNG Cloud (chưa
 
 **Bước 6.1: Copy Metadata, Add new tag hoặc Add new metadata**
 
-1. Tại **Copy Metadata** của object: chọn nếu bạn muốn giữ nguyên thông tin mô tả, thuộc tính của dữ liệu.&#x20;
-2. Hoặc bạn có thể gắn tag hoặc metadata mới cho toàn bộ dữ liệu di chuyển bằng cách chọn **Advanced configuration.**&#x20;
-   1. **Trường hợp 1: Gắn thêm tag**: bạn cần nhập tag bạn muốn gán cho cho toàn bộ object được transfer sau đó chọn **Add**. Lặp lại bước trên để gán nhiều tag vào các object này.&#x20;
+1. Tại **Copy Metadata** của object: chọn nếu bạn muốn giữ nguyên thông tin mô tả, thuộc tính của dữ liệu.
+2. Hoặc bạn có thể gắn tag hoặc metadata mới cho toàn bộ dữ liệu di chuyển bằng cách chọn **Advanced configuration.**
+   1. **Trường hợp 1: Gắn thêm tag**: bạn cần nhập tag bạn muốn gán cho cho toàn bộ object được transfer sau đó chọn **Add**. Lặp lại bước trên để gán nhiều tag vào các object này.
    2.  **Trường hợp 2: Gắn thêm metadata**: bạn cần nhập metadata theo cấu trúc key:value mà bạn muốn gán cho cho toàn bộ object được transfer sau đó chọn **Add**. Trong đó:
 
-       1. **Default key (Key mặc định)**: thực hiện chọn key trong danh sách key có sẵn mà chúng tôi cung cấp.&#x20;
+       1. **Default key (Key mặc định)**: thực hiện chọn key trong danh sách key có sẵn mà chúng tôi cung cấp.
        2. **Custom key (Key tùy chỉnh)**: thực hiện tự tạo key tùy chỉnh theo nhu cầu của bạn với tiền tố X-Object-Meta-Vng-.Thêm metadata: chọn 1 trong 2 loại key.
 
        Bạn nhập giá trị **Value** tương ứng với **Key** được chọn hoặc được tạo. Chọn **biểu tượng Add.**
@@ -117,7 +117,7 @@ Nếu bạn chưa sử dụng bất kỳ dịch vụ nào của VNG Cloud (chưa
    2. Nếu bạn chọn **Report type** là **Standard** thì bạn có thể chọn **Report level** là **Successful**, **Failed** hoặc cả **Successful và Failed.**
 2. Chọn Container chứa các report: mặc định là container đích nhận dữ liệu di chuyển của bạn. Bạn có thể thay đổi sang các container khác bằng cách
    1. Chọn **Region**: nơi chứa container của bạn. Ví dụ: HCM03, HAN01
-   2. Chọn **Project**: project chứa container mà bạn muốn transfer dữ liệu.&#x20;
+   2. Chọn **Project**: project chứa container mà bạn muốn transfer dữ liệu.
    3. Chọn **Container**: tên container nguồn của bạn trên vStorage.
    4. **Access Key/ Secret Key**: nhập access key và secret key của bạn. Cặp S3 key này được tạo và quản lý thông qua IAM, vui lòng tham khảo tại [IAM cho vStorage](../identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vstorage.md).
 3. Sau khi nhập đẩy đủ thông tin tại các mục bên trên, bạn có thể chọn kiểm tra kết nối bằng cách nhấn vào nút **Test connection**. Lúc này, hệ thống của chúng tôi sẽ kiểm tra tính hợp lệ của thông tin và hiển thị kết quả. Nếu kết nối thành công, bạn sẽ nhận được thông báo "**Connection successful**". Nếu kết nối thất bại, bạn sẽ nhận được thông báo lỗi và mô tả chi tiết về lỗi.
@@ -127,8 +127,3 @@ Nếu bạn chưa sử dụng bất kỳ dịch vụ nào của VNG Cloud (chưa
 **Bước 6.6:** Chọn **Notification Option** để gửi thông báo tới Email bạn mong muốn khi một transfer job chạy hoàn thành. Bạn có thể nhập email theo đúng định dạng và chọn biểu tượng **Add**.
 
 **Bước 7:** Chọn **Create Transfer Job.**
-
-\
-
-
-\
