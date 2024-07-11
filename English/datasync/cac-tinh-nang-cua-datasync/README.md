@@ -1,14 +1,11 @@
-# Các tính năng của DataSync
+# Features of DataSync
 
-#### Tổng quan
+#### Overview
 
-Với **DataSync**, bạn có thể:
+With **DataSync**, you can:
 
-* **Transfer dữ liệu từ các International Cloud tới VNG Cloud, cụ thể:**&#x20;
-  * Transfer dữ liệu từ Amazon S3, Google Cloud Storage sang vStorage.
-  * Transfer dữ liệu từ bất kỳ S3-compatible Cloud Provider sang vStorage.
-* **Transfer dữ liệu từ On-premise lên VNG Cloud**
-* **Backup lưu dữ liệu của bạn trên vStorage.**
-
-***
-
+* **Transfer data from International Clouds to VNG Cloud, specifically:**
+  * Transfer data from Amazon S3, Google Cloud Storage to vStorage.
+  * Transfer data from any S3-compatible Cloud Provider to vStorage.
+* **Transfer data from On-premise to VNG Cloud.**
+* **Backup your data on vStorage.**

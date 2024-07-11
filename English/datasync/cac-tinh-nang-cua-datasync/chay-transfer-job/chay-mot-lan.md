@@ -1,32 +1,34 @@
-# Chạy một lần
+# Run one time
 
-Trong hệ thống DataSync, chế độ chạy transfer job một lần tại một thời điểm được chỉ định trước (one-time scheduled transfer job) hoạt động theo cách sau:
+In the DataSync system, the one-time scheduled transfer job operates in the following way:&#x20;
 
-**Bước 1: Xác định và cấu hình thời điểm Chạy Transfer Job**:
+**Step 1: Determine and configure when to run Transfer Job:**&#x20;
 
-* Bạn cần xác định thời điểm cụ thể mà bạn muốn transfer job bắt đầu chạy. Thời điểm này có thể được cấu hình dưới dạng ngày giờ cụ thể với điều kiện lớn hơn thời điểm hiện tại (**current datetime**)
+* You need to specify the specific time you want the transfer job to start running.&#x20;
+* This time can be configured as a specific date and time provided it is greater than the current datetime.&#x20;
 
-**Bước 2: Chạy Transfer Job:**
+**Step 2: Run Transfer Job:**&#x20;
 
-* Đến thời điểm đã chỉ định, hệ thống DataSync sẽ tự động kích hoạt transfer job và bắt đầu quá trình transfer dữ liệu từ nguồn đến đích theo các thông số đã cấu hình.
+* At the specified time, the DataSync system will automatically activate the transfer job and begin the process of transferring data from source to destination according to configured parameters.
 
-**Ví dụ**
+**For example**&#x20;
 
-Giả sử bạn muốn transfer dữ liệu từ một bucket trên cloud provider A sang một container trên vstorage vào lúc 3h sáng ngày 20 tháng 5 năm 2024. Quy trình sẽ như sau:
+Suppose you want to transfer data from a bucket on cloud provider A to a container on vstorage at 3:00 a.m. on May 20, 2024. The process will be as follows:
 
-1. **Xác định thời điểm**: 3:00 AM, 20/05/2024.
-2. **Cấu hình job**:
+1. Determine time: 3:00 AM, May 20, 2024.&#x20;
+2. Job configuration:&#x20;
 
-* **Chọn thời điểm chạy job**:&#x20;
-  * Chọn phương án **Chạy một lần**
-  * Chọn ngày 20/05/2024, nhập thời điểm 03:00.
+*   Choose when to run the job:&#x20;
 
-Hệ thống sẽ tự động bắt đầu job vào lúc 3:00 AM, 20/05/2024.
+    * Select the Run once option&#x20;
+    * Select date May 20, 2024, enter time 03:00.&#x20;
+
+    The system will automatically start the job at 3:00 AM, May 20, 2024.
 
 {% hint style="info" %}
-**Chú ý:**
+**Note:**
 
-* Nếu bạn thay đổi thông số ngày giờ chạy của một transfer job trong hệ thống DataSync, hệ thống sẽ chạy job theo thời gian mới mà bạn đã chỉ định. Cụ thể nếu bạn thay đổi ngày giờ thành:
-  * **Thời Điểm Tương Lai**: Nếu thời điểm mới là trong tương lai, job sẽ được chạy vào đúng thời điểm đó mà không cần thêm bất kỳ hành động nào từ phía bạn.
-  * **Thời Điểm Đã Qua**: Nếu bạn thay đổi thời gian chạy job sang một thời điểm đã qua, hệ thống có thể không tự động chạy job. Trong trường hợp này, bạn cần phải thiết lập lại thời gian sang một thời điểm hợp lý hoặc kích hoạt job thủ công.
+* If you change the run date and time parameters of a transfer job in the DataSync system, the system will run the job at the new time you specified. Specifically if you change the date and time to:
+  * Future Time: If the new time is in the future, the job will be run at that exact time without any further action on your part.&#x20;
+  * Past Time: If you change the job run time to a past time, the system may not automatically run the job. In this case, you need to reset the time to a reasonable time or trigger the job manually.
 {% endhint %}
