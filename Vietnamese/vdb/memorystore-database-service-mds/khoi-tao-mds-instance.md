@@ -5,7 +5,7 @@
 Đầu tiên, bạn truy cập đến giao diện dịch vụ vDB qua 2 cách như sau:
 
 * Cách 1: Truy cập trang chủ VNG Cloud tại đường dẫn: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/). Tại giao diện chính, bạn tìm đến dịch vụ **vServer** và chọn dịch vụ **vDB MemoryStore** trong danh sách sản phẩm/dịch vụ vServer.
-* Cách 2: Truy cập trực tiếp đến trang chủ vDB Relational tại đường dẫn: [https://vdb.console.vngcloud.vn/memorystore/database](https://vdb.console.vngcloud.vn/memorystore/database)
+* Cách 2: Truy cập trực tiếp đến trang chủ **vDB MemoryStore** tại đường dẫn: [https://vdb.console.vngcloud.vn/memorystore/database](https://vdb.console.vngcloud.vn/memorystore/database)
 
 ## Khởi tạo MDS instance
 

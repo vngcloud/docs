@@ -7,8 +7,8 @@ VNG Cloud cung cấp các giao diện (dashboard) giúp bạn quản lý các Da
 Hãy cùng điểm qua các Dashboard này.
 
 * [A - Giao diện quản lý Database](quan-ly-thong-tin-mds-instance.md#quanlythongtinmdsinstance-a-giaodienquanlydatabase)
-* [B - Giao diện quản lý Backup](quan-ly-thong-tin-mds-instance.md#quanlythongtinmdsinstance-b-giaodienquanlybackup)
-* [C- Giao diện quản lý Configuration Group](quan-ly-thong-tin-mds-instance.md#quanlythongtinmdsinstance-c-giaodienquanlyconfigurationgroup)
+*
+*
 
 ### A - Giao diện quản lý Database <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 
@@ -48,33 +48,5 @@ Tại vùng số 4, bạn sẽ có 4 tab quản lý:
 
 
 * **BILLING INFORMATION**: cho bạn các thông tin về Billing cho DB Instance này.
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/13010741/image2020-2-21_10-31-55.png?version=1&#x26;modificationDate=1582255916000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
-
-### B - Giao diện quản lý Backup <a href="#quanlythongtinmdsinstance-b-giaodienquanlybackup" id="quanlythongtinmdsinstance-b-giaodienquanlybackup"></a>
-
-Giao diện quản lý Backup cho bạn cái nhìn tổng quan về tất cả các bản Backup hiện có cũng như thông chi tiết cho từng bản Backup (vùng số 3).
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/13010741/image2020-2-21_10-34-59.png?version=1&#x26;modificationDate=1582256099000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-Bạn có thể tạo mới bản Manual Backup thông qua nút **CREATE BACKUP** (Nút số 1). Khi click chọn một Backup, bạn có thể thực hiện các **ACTION** như **RESTORE** (khôi phục lại một DB Instance mới dựa trên bản Backup này), **DELETE** (xóa bản Backup). (Vùng số 2). Cách tạo backup và thực hiện restore bạn xem tiếp tại bài viết sau
-
-
-
-### C- Giao diện quản lý Configuration Group <a href="#quanlythongtinmdsinstance-c-giaodienquanlyconfigurationgroup" id="quanlythongtinmdsinstance-c-giaodienquanlyconfigurationgroup"></a>
-
-Configuration Group là tập hợp các biến cấu hình dịch vụ cơ sở dữ liệu của DB Instance. Thay vì phải sửa file cấu hình và restart dịch vụ như cách truyền thống, khi sử dụng vDBaaS bạn có thể thay đổi chỉ bằng vài thao tác nhanh với Configuration Group. Tiện lợi hơn nữa, một Configuration Group có thể được cấu hình cho nhiều DB Instance. Bạn có thể cấu hình một lần và áp dụng cho hàng loạt DB Instance.
-
-Giao diện quản lý Configuration Group liệt kê tất cả các Configuration Group hiện có cũng như thông tin loại **Database Engine** và **Engine Version** có thể áp dụng Configuration Group này cũng như các DB Instance đang liên kết (**Associated DB Instances**).
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/13010741/image2020-2-21_10-35-41.png?version=1&#x26;modificationDate=1582256142000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
-
-Bạn có thể tạo Configuration Group mới cũng như **DELETE** khi tick chọn từng Configuration Group. Khi bấm vào từng Configuration Group Name, bạn có xem tất cả các biến cấu hình cũng như **EDIT** và áp dụng các biến này (**APPLY CHANGES**) xuống các DB Instance đang được liên kết. Chi tiết cách sử dụng Configuration Group, bạn có thể tham khảo bài viết "Cách sử dụng Configuration Group".
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/13010741/image2020-2-21_10-36-7.png?version=1&#x26;modificationDate=1582256168000&#x26;api=v2" alt=""><figcaption></figcaption></figure>

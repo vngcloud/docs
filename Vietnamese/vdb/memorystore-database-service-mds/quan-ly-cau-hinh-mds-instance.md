@@ -1,4 +1,4 @@
-# Quản lý cấu hình MDS Instance
+# Quản lý cấu hình MDS Instance (Configuration Group)
 
 **Configuration Group** là tập hợp các biến cấu hình dịch vụ cơ sở dữ liệu của MDS Instance. Thay vì phải sửa file cấu hình và restart dịch vụ như cách truyền thống, bạn có thể thay đổi chỉ bằng vài thao tác nhanh với Configuration Group. Tiện lợi hơn nữa, một Configuration Group có thể được cấu hình cho nhiều MDS Instance. Bạn có thể cấu hình một lần và áp dụng cho hàng loạt MDS Instance.
 
@@ -7,6 +7,7 @@ Bạn truy cập dịch vụ MemoryStore database và chuyển sang mục Config
 * [A - Khởi tạo Configuration Group](quan-ly-cau-hinh-mds-instance.md#quanlycauhinhmdsinstance-a-khoitaoconfigurationgroup)
 * [B - Chỉnh sửa các biến cấu hình](quan-ly-cau-hinh-mds-instance.md#quanlycauhinhmdsinstance-b-chinhsuacacbiencauhinh)
 * [C - Liên kết MDS Instance với Configuration Groups](quan-ly-cau-hinh-mds-instance.md#quanlycauhinhmdsinstance-c-lienketmdsinstancevoiconfigurationgroups)
+* [D - Xóa Configuration Group](quan-ly-cau-hinh-mds-instance.md#quanlycauhinhmdsinstance-a-khoitaoconfigurationgroup-1)
 
 ### A - Khởi tạo Configuration Group <a href="#quanlycauhinhmdsinstance-a-khoitaoconfigurationgroup" id="quanlycauhinhmdsinstance-a-khoitaoconfigurationgroup"></a>
 
@@ -58,3 +59,5 @@ Các MDS Instance đang được liên kết hay chuẩn bị được liên k�
 * Khi mọi lựa chọn đã chính xác, bạn nhấn nút **SAVE** ở góc phải trên cùng. Bạn chờ một lát để các biến cấu hình được áp dụng xuống MDS Instance và nếu quá trình thay đổi thành công, MDS Instance sẽ có trạng thái **Active**.
 
 **Lưu ý:** Trong một số truờng hợp, biến cấu hình đòi hỏi cần **Restart** lại dịch vụ Database trên MDS Instance, status của MDS Instance lúc này sẽ là **Restart\_required**. Với VNG Cloud, bạn có thể chủ động thời điểm thực hiện thao tác này. Sau khi đã sao lưu các tác vụ trên MDS Instance, bạn click vào **Action**, chọn **Restart** để hoàn tất quá trình.
+
+### D - Xóa Configuration Group <a href="#quanlycauhinhmdsinstance-a-khoitaoconfigurationgroup" id="quanlycauhinhmdsinstance-a-khoitaoconfigurationgroup"></a>

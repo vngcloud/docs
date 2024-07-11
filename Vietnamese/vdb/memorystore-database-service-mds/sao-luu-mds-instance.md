@@ -1,93 +1,64 @@
-# Sao lưu MDS Instance
+# Quản lý sao lưu MDS Instance (Backup)
 
-VNG Cloud vDB hỗ trợ hai cách sao lưu (backup) dữ liệu là: theo nhu cầu (on-demand) và tự động hằng ngày (daily automatic) tại thời điểm được ấn định trước.
-
-
+Giao diện quản lý Backup cho bạn cái nhìn tổng quan về tất cả các bản Backup hiện có cũng như thông chi tiết cho từng bản Backup. Truy cập giao diện quản lý Backup tại đây: [https://vdb.console.vngcloud.vn/memorystore/backup](https://vdb.console.vngcloud.vn/memorystore/backup)\
+Bạn có thể tạo mới bản **Manual Backup**, **Restore** (khôi phục lại một DB Instance mới dựa trên bản Backup), **Delete** (xóa bản Backup). Tham khảo các hướng dẫn dưới đây về các tính năng quản lý Backup
 
 * [A. Sao lưu theo nhu cầu (On-demand backup hay Manual backup)](sao-luu-mds-instance.md#saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup)
 * [B. Sao lưu tự động theo ngày (Auto-Daily Backup)](sao-luu-mds-instance.md#saoluumdsinstance-b.saoluutudongtheongay-auto-dailybackup)
+* [C. Khôi phục MDS Instance từ bản Backup](sao-luu-mds-instance.md#saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup-1)
+* [D. Xóa bản Backup](sao-luu-mds-instance.md#saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup-2)
 
 ### A. Sao lưu theo nhu cầu (On-demand backup hay Manual backup) <a href="#saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup" id="saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup"></a>
 
 Khi bạn có nhu cầu tạo bản backup, bạn truy cập dịch vụ VNG Cloud và chọn đến màn hình quản lý backup. Màn hình này sẽ liệt kê tất cả các bản backup (manual & auto) của tất cả các DB Instance có trong tài khoản của bạn.
 
-Bạn nhấn vào **Create Backup**
+**Cách 1: Bạn nhấn vào nút Create Backup. Tại màn hình Create Backup, bạn lần lượt lựa chọn các thông tin sau**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/13010752/image2020-2-21_10-39-36.png?version=1&#x26;modificationDate=1582256377000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
-
-Tại màn hình **Create Backup**, bạn lần lượt lựa chọn các thông tin:
-
-* **Database Instance Name**: chọn DB Instance mà bạn muốn thực hiện backup.
 * **Backup Name**: đặt tên cho bản backup này.
+* **Database Instance Name**: chọn DB Instance mà bạn muốn thực hiện backup.
 * **Backup Type**: với MemoryStore bạn có option thực hiện Full Backup.
+* Sau khi chắc chắn mọi thông tin đều chính xác, bạn nhấn **Create**.
+* Nếu hệ thống tiếp nhận thành công, một bản backup sẽ xuất hiện với **Status** là **NEW**. Khi được tạo thành công, bản backup sẽ đổi sang **Status** là **COMPLETED**.
 
-Sau khi chắc chắn mọi thông tin đều chính xác, bạn nhấn **Create Backup**.
+**Cách 2: Ngoài màn hình quản lý Backup, bạn còn có thể tạo bản Manual Backup ngay tại màn hình quản lý Database.**&#x20;
 
-\
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/13010752/image2020-2-21_10-40-15.png?version=1&#x26;modificationDate=1582256416000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-Nếu hệ thống tiếp nhận thành công, một bản backup sẽ xuất hiện với **Status** là **NEW**.
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/13010752/image2020-2-21_10-41-18.png?version=1&#x26;modificationDate=1582256479000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
-
-Khi được tạo thành công, bản backup sẽ đổi sang **Status** là **COMPLETED**.
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/13010752/image2020-2-21_10-41-51.png?version=1&#x26;modificationDate=1582256512000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
-
-Chúc mừng bạn đã tạo thành công một bản MANUAL BACKUP.
-
-\
-
-
-**Mở rộng**: Ngoài màn hình quản lý Backup, bạn còn có thể tạo bản **Manual Backup** ngay tại màn hình quản lý Database. Khi bạn click chọn một DB Instance bất kì, bạn chuyển tới thẻ **Backup** và cuộn xuống danh sách **Backup list**. Ở đây sẽ liệt kê tất cả các bản backup (manual & auto) tương ứng với DB Instance này. Bạn có thể nhấn **Create Backup** để tiến hành tạo bản Manual Backup ngay tại đây.
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/13010752/image2020-2-21_10-42-36.png?version=1&#x26;modificationDate=1582256556000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
-
-Thao tác tiếp theo hoàn toàn tương tự như hướng dẫn ở trên.
+* Nhấn chọn một DB Instance cần tạo Backup, khi đó bạn sẽ được chuyển tới trang chi tiết DB Instance.
+* Tại đây, bạn chuyển tới thẻ **Backup** và cuộn xuống danh sách **Backup list**. Ở đây sẽ liệt kê tất cả các bản backup (manual & auto) tương ứng với DB Instance này. Bạn có thể nhấn **Create Backup** để tiến hành tạo bản **Manual Backup** ngay tại đây.
+* Thao tác tiếp theo hoàn toàn tương tự như hướng dẫn ở cách 1.
 
 ### **B. Sao lưu tự động theo ngày (Auto-Daily Backup)** <a href="#saoluumdsinstance-b.saoluutudongtheongay-auto-dailybackup" id="saoluumdsinstance-b.saoluutudongtheongay-auto-dailybackup"></a>
 
 vDBaaS hỗ trợ tính năng tự động sao lưu theo ngày tại thời điểm do bạn ấn định.
 
-Để xem một DB Instance đã được cấu hình tính năng này chưa, bạn truy cập màn hình quản lý Database. Sau đó, bạn click chọn DB Instance muốn kiểm tra, chọn thẻ **Backup** và tìm đến mục **Backup Information**. Nếu **Automatic backup** là **Enabled** tức là bạn đã cấu hình tự động sao lưu hàng ngày cho DB Instance này vào thời điểm **Backup Time** trong ngày.
+**Để xem một DB Instance đã được cấu hình tính năng này chưa, thao tác như sau:**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/13010752/image2020-2-21_10-43-29.png?version=1&#x26;modificationDate=1582256610000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+* Nhấn chọn một DB Instance cần kiểm tra, khi đó bạn sẽ được chuyển tới trang chi tiết DB Instance.
+* Sau đó, chọn thẻ **Backup** và tìm đến mục **Backup Information**. Nếu **Automatic backup** là **Enabled** tức là bạn đã cấu hình tự động sao lưu hàng ngày cho DB Instance này vào thời điểm **Backup Time** trong ngày.
 
-\
+**Để cấu hình tính năng này, bạn có hai phương án:**
 
+* Cách 1: Cấu hình luôn trong lúc khởi tạo DB Instance. Đối với phương án đầu, mời bạn xem lại hướng dẫn Khởi tạo DB Instance tại [Hướng dẫn khởi tạo MDS Instance](khoi-tao-mds-instance.md).
+* Cách 2: Thay đổi tại giao diện quản lý Database.
+  *   Bạn truy cập màn hình quản lý Database, click chọn DB Instance muốn cấu hình. Sau đó, bạn click chọn **Edit DB Setting**.&#x20;
 
-Để cấu hình tính năng này, bạn có hai phương án:
+      <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+  * Tại đây, bạn kéo xuống mục **Backup settings** và bạn có thể cấu hình các thông tin:
+    * **Automatic daily backup:** bật tắt tính năng Automatic daily backup.
+    * **Backup retention period:** xác định thời gian lưu trữ bản automatic backup. Nhằm giúp bạn tiết kiệm không gian lưu trữ, các bản automatic backup đã quá khoảng thời gian này sẽ bị xóa.
+    * **Backup time:** thời điểm quá trình tạo automatic backup diễn ra. VNG Cloud khuyến nghị bạn chọn thời điểm này vào khoảng thời gian thấp điểm nhất đối với hệ thống của bạn.
+  * Sau khi chắc chắn rằng các thông tin đã chính xác, bạn nhấn nút **Save** ở góc trên bên phải và chờ một lát để quá trình thay đổi được thực thi.
 
-* Cấu hình luôn trong lúc khởi tạo DB Instance.
-* Thay đổi tại giao diện quản lý Database.
+### C. Khôi phục MDS Instance từ bản Backup <a href="#saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup" id="saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup"></a>
 
-Đối với phương án đầu, mời bạn xem lại hướng dẫn Khởi tạo DB Instance tại [Hướng dẫn khởi tạo MDS Instance](khoi-tao-mds-instance.md).
+vDB MemoryStore hỗ trợ bạn **khôi phục (Restore)** lại một MDS Instance mới từ bản sao lưu (Backup) trước đó. Quá trình khôi phục này không phụ thuộc vào cách tạo ra bản backup đó (Manual Backup hay Automactic Daily Backup).
 
-Đối với phương án sau, bạn truy cập màn hình quản lý Database, click chọn DB Instance muốn cấu hình. Sau đó, bạn click chọn **Edit Database**. Tại đây, bạn kéo xuống mục **CHANGE BACKUP SETTINGS** và bạn có thể cấu hình các thông tin:
+Để thực hiện tiến trình khôi phục, bạn truy cập màn hình quản lý Backup [tại đây](https://vdb.console.vngcloud.vn/memorystore/backup) và làm theo hướng dẫn sau:&#x20;
 
-* **Automatic daily backup:** bật tắt tính năng Automatic daily backup.
-* **Backup retention period:** xác định thời gian lưu trữ bản automatic backup. Nhằm giúp bạn tiết kiệm không gian lưu trữ, các bản automatic backup đã quá khoảng thời gian này sẽ bị xóa.
-* **Backup time:** thời điểm quá trình tạo automatic backup diễn ra. VNG Cloud khuyến nghị bạn chọn thời điểm này vào khoảng thời gian thấp điểm nhất đối với hệ thống của bạn.
+*   Nhấn chọn vào bản Backup mà bạn muốn khôi phục, chọn Action **Restore**. Quá trình Restore cũng gần tương tự như quá trình Tạo một MDS Instance mới.&#x20;
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/13010752/image2020-2-21_10-44-6.png?version=1&#x26;modificationDate=1582256647000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+* Tại màn hình khôi phục MDS Instance, bạn cũng có thể lựa chọn các thông tin về cấu hình MDS Instance mới tại các thông tin **Instance flavor, DB instance setting, Network & Security, DB Option và Backup setting.**
+* Sau khi chắc chắn các thông tin đã chính xác, bạn nhấp nút **Restore** ở góc phải trên.
+* Sau đó, bạn quay lại màn hình quản lý Database, sẽ thấy xuất hiện một MDS Instance đang được khởi tạo. Trạng trái của MDS Instance mới này cũng sẽ thay đổi từ **Building/Build** sang **Active** nếu thành công.
 
-\
-
-
-Sau khi chắc chắn rằng các thông tin đã chính xác, bạn nhấn nút **Save** ở góc trên bên phải và chờ một lát để quá trình thay đổi được thực thi.
-
-Bạn có thể tham khảo video sau:
+### D. Xóa bản Backup <a href="#saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup" id="saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup"></a>
