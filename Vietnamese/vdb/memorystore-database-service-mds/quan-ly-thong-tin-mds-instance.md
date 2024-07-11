@@ -1,52 +1,27 @@
-# Quản lý thông tin MDS Instance
+# Quản lý thông tin MDS Instance (Database)
 
-VNG Cloud cung cấp các giao diện (dashboard) giúp bạn quản lý các Database (hay DB Instance), các bản Backup & các Configuration Group một cách hiệu quả và tiện dụng.
+Giao diện quản lý Database cho phép bạn có cái nhìn tổng quát về tất cả các Database (DB Instance) hiện có cũng như thông tin chi tiết cho từng DB Instance. Hãy cùng điểm qua các tính năng có thể thao tác trên MDS Instance
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/13010741/image2020-2-21_10-26-8.png?version=1&#x26;modificationDate=1582255568000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+* [A - Create Read Replica](quan-ly-thong-tin-mds-instance.md#quanlythongtinmdsinstance-a-giaodienquanlydatabase)
+* [B - Promote To Standalone](quan-ly-thong-tin-mds-instance.md#quanlythongtinmdsinstance-a-giaodienquanlydatabase-1)
+* [C - Resize Instance Type](quan-ly-thong-tin-mds-instance.md#quanlythongtinmdsinstance-a-giaodienquanlydatabase-2)
+* [D - Edit Configuration Group](quan-ly-thong-tin-mds-instance.md#quanlythongtinmdsinstance-a-giaodienquanlydatabase-3)
+* [E - Edit DB Setting](quan-ly-thong-tin-mds-instance.md#quanlythongtinmdsinstance-a-giaodienquanlydatabase-4)
+* [F - Start, Shutdown, Reboot](quan-ly-thong-tin-mds-instance.md#quanlythongtinmdsinstance-a-giaodienquanlydatabase-5)
+* [G - Delete MDS](quan-ly-thong-tin-mds-instance.md#quanlythongtinmdsinstance-a-giaodienquanlydatabase-6)
 
-Hãy cùng điểm qua các Dashboard này.
+### A - Create Read Replica <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 
-* [A - Giao diện quản lý Database](quan-ly-thong-tin-mds-instance.md#quanlythongtinmdsinstance-a-giaodienquanlydatabase)
-*
-*
+### B - Promote To Standalone <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 
-### A - Giao diện quản lý Database <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
+### C - Resize Instance Type <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 
-Giao diện quản lý Database cho phép bạn có cái nhìn tổng quát về tất cả các Database (DB Instance) hiện có cũng như thông tin chi tiết cho từng DB Instance. Bạn có thể thực hiện tạo mới một Database khi click chọn **CREATE DATABASE** (Nút số 1).
+### D - Edit Configuration Group <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/13010741/image2020-2-21_10-29-26.png?version=1&#x26;modificationDate=1582255767000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+### E - Edit DB Setting <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 
-\
+### F - Start, Shutdown, Reboot <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 
-
-Khi bạn click chọn từng DB Instance, bạn có thể:
-
-* Thực hiện các **ACTION** quản lý vòng đời của DB Instance như: **START**, **STOP**, **RESTART** hay **DELETE**. (Vùng số 2).
-* Thay đổi các thông tin cấu hình của DB Instance tại **EDIT DATABASE**. (Nút số 3).
-* Xem chi tiết thông tin cấu hình từng DB Instance (Vùng số 4).\
-
-
-Tại vùng số 4, bạn sẽ có 4 tab quản lý:
-
-* **CONFIGURATION**: bao gồm thông tin tổng quan về DB Instance như **DB Name**, loại **Database Engine**, **Engine Version** cũng như thông tin cấu hình tính toán, bộ nhớ và lưu trữ.
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/13010741/image2020-2-21_10-30-39.png?version=1&#x26;modificationDate=1582255839000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
-
-* **CONNECTIVITY & SECURITY:** cho bạn các thông tin về **Endpoint & Port** để kết nối đến. Mọi DB Instance sẽ có một **Private Endpoint** tương ứng với **Cloud Network**. Nếu bạn có chọn **Enable Public Accessibility** trong quá khởi tạo, bạn sẽ có thêm một **Public Endpoint** cho phép truy cập từ Internet. Bên cạnh đó, bạn có thể giới hạn những địa chỉ IP tin cậy mới được truy cập DB Instance thông qua **Security Group Rules**.
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/13010741/image2020-2-21_10-31-15.png?version=1&#x26;modificationDate=1582255876000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
-
-* **BACKUP**: cho bạn thông tin về cấu hình **Daily Automatic Backup** cũng như thời điểm thực hiện **Daily Automatic Backup** (nếu có). Ngoài ra, mục **Backup list** cũng liệt kê toàn bộ các bản Backup tương ứng với DB Instance này. Bạn cũng có thể thực hiện tạo Manual Backup thông qua nút **Create Backup.**
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/13010741/image2020-2-21_10-31-35.png?version=1&#x26;modificationDate=1582255896000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
-
-* **BILLING INFORMATION**: cho bạn các thông tin về Billing cho DB Instance này.
+### G - Delete MDS <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/13010741/image2020-2-21_10-36-7.png?version=1&#x26;modificationDate=1582256168000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
