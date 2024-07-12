@@ -28,7 +28,7 @@ Có 2 loại mục đích cho volume là boot volume và data volume. Với boot
 #### Gắn volume vào VM Instance <a href="#volume-ganvolumevaovminstance" id="volume-ganvolumevaovminstance"></a>
 
 1. Vào VNG Cloud Portal console, đến trang Volume
-2. Chọn data volume cần gắn, vào menu action ở bên phải, chọn **Attach**
+2. Chọn data volume cần gỡ, vào menu action ở bên phải, chọn **Attach**
 3. Chọn máy chủ ảo cần gắn volume, sau khi gắn bạn cần thao tác từ trong máy chủ ảo như tạo partition, format và mount
 
 #### Tháo gỡ volume khỏi VM Instance <a href="#volume-thaogovolumekhoivminstance" id="volume-thaogovolumekhoivminstance"></a>
