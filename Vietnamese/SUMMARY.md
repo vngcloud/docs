@@ -128,7 +128,7 @@
         * [Tạo PersistentVolume(PV) và PersistentVolumeClaim(PVC)](vserver/compute-hcm03-1a/vcontainer/persistent-volume-pv-va-persistent-volume-claim-pvc-voi-vng-cloud/tao-persistentvolume-pv-va-persistentvolumeclaim-pvc.md)
         * [Sử dụng PersistentVolumeClaim](vserver/compute-hcm03-1a/vcontainer/persistent-volume-pv-va-persistent-volume-claim-pvc-voi-vng-cloud/su-dung-persistentvolumeclaim.md)
         * [Xóa PersistentVolume và PersistentVolumeClaim](vserver/compute-hcm03-1a/vcontainer/persistent-volume-pv-va-persistent-volume-claim-pvc-voi-vng-cloud/xoa-persistentvolume-va-persistentvolumeclaim.md)
-    * [vLB (Load Balancer) - New Version](vserver/compute-hcm03-1a/vlb-load-balancer-new-version/README.md)
+    * [vLB (Load Balancer)](vserver/compute-hcm03-1a/vlb-load-balancer-new-version/README.md)
       * [Deployment Mode](vserver/compute-hcm03-1a/vlb-load-balancer-new-version/deployment-mode.md)
       * [Feature Comparison](vserver/compute-hcm03-1a/vlb-load-balancer-new-version/feature-comparison.md)
       * [Application Load Balancer](vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/README.md)
