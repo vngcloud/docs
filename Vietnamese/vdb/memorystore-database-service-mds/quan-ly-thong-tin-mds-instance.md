@@ -12,13 +12,57 @@ Giao diện quản lý Database cho phép bạn có cái nhìn tổng quát về
 
 ### A - Create Read Replica <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 
+Nhằm mở rộng khả năng read scale cho vDB, bạn có thể tạo read replicas cho các DB Instance, hệ thống sẽ tự động thiết lập mô hình master, slave và đồng bộ dữ liệu với cơ chế async, chi tiết các bước làm như sau:
+
+* Đầu tiên bạn chọn DB Instance cần tạo read replicas từ đó, lưu ý chỉ những DB Instance có **role:standalone** hoặc **role:master** mới khởi tạo đc read replicas, chọn **Action** và chọn **Create Read Replica.**
+
+<figure><img src="../../.gitbook/assets/image (526).png" alt=""><figcaption></figcaption></figure>
+
+* Tiếp theo, tại trang khởi tạo, bạn chỉ cần đặt **DB Instance Name** cho read replicas và giữ nguyên các thông tin khác như: flavor, storage type, storage size, backup schedule, tuy nhiên chúng tôi khuyến cáo bạn giữ nguyên các thông tin này giống Master hoặc chọn các thông số cao hơn khi cần thiết.&#x20;
+* Cuối cùng, Nhấn **Create Database** để khởi tạo. Sau khi khởi tạo bạn chờ một khoảng thời gian cho đến khi read replicas đã **Active.**
+
+Vây là bạn đã tạo thành công Read Replica cho vDB hay còn gọi là mô hình master-slave, bạn có thể kiểm tra dữ liệu của master đã được đồng bộ qua slave hay chưa.
+
 ### B - Promote To Standalone <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
+
+Khi bạn mong muốn chuyển 1 read replica thành standalone, bạn có thể sử dụng tính năng **Promote to Standalone** trên Portal, làm theo các bước hướng dẫn bên dưới:
+
+* Đầu tiên, chọn DB Instance có **role: slave**, chọn **Action - Promote to Standalone.**
+
+<figure><img src="../../.gitbook/assets/image (527).png" alt=""><figcaption></figcaption></figure>
+
+* Tiếp theo, nhấn xác nhận **Promote** để hoàn tất quá trình.&#x20;
+
+**Lưu ý:** Trước khi xác nhận promote, chúng tôi khuyến cáo rằng bạn nên dừng việc ghi dữ liệu vào master và đợi đến khi read replica đã đồng bộ toàn bộ dữ liệu, mặc khác sẽ có tỉ lệ read replica không có đủ dữ liệu đã được ghi tại master, chú ý rằng quá trình promotion này có thể mất 1 khoảng thời gian để hoàn thành và sau quá trình này, read replicas sẽ trở thành standalone, và quá trình replication giữa master và slave sẽ dừng lại.
+
+Sau khi promote thành công, read replica đã chuyển thành **role:standalone** và có thể ghi được, đồng thời DB Instance có role master trước đó cũng chuyển thành role:standalone vì không còn ai replicate từ nó nữa
 
 ### C - Resize Instance Type <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 
 ### D - Edit Configuration Group <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 
+Để thay đổi liên kết MDS Instance với Configuration Group đã có, bạn có hai phương án:
+
+* Liên kết ngay khi MDS Instance được khởi tạo.
+* Thực hiện thay đổi cấu hình MDS Instance.
+
+Đối với phương án 1, mời bạn xem lại hướng dẫn [Khởi tạo MDS Instance](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13010707).
+
+Đối với phương án 2, bạn có thể thực hiện như sau:
+
+* Đầu tiên, bạn đến màn hình quản lý Database tại đường dẫn:  [https://vdb.console.vngcloud.vn/memorystore/database](https://vdb.console.vngcloud.vn/memorystore/database)
+* Chọn đến MDS Instance và nhấn **Edit Configuration Group**.
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+* Tại màn hình thay đổi chọn đến Configuration Group muốn áp dụng.
+* Khi mọi lựa chọn đã chính xác, bạn nhấn nút **Save** ở góc phải trên cùng. Bạn chờ một lát để các biến cấu hình được áp dụng xuống MDS Instance và nếu quá trình thay đổi thành công, MDS Instance sẽ có trạng thái **Active**.
+
+**Lưu ý:** Trong một số truờng hợp, biến cấu hình đòi hỏi cần **Restart** lại dịch vụ Database trên MDS Instance, status của MDS Instance lúc này sẽ là **Restart\_required**. Với VNG Cloud, bạn có thể chủ động thời điểm thực hiện thao tác này. Sau khi đã sao lưu các tác vụ trên MDS Instance, bạn click vào **Action**, chọn **Restart** để hoàn tất quá trình.
+
 ### E - Edit DB Setting <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
+
+
 
 ### F - Start, Shutdown, Reboot <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 

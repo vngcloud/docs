@@ -1,8 +1,8 @@
 # Promote Read Relica thành Standalone
 
-Khi bạn mong muốn chuyển 1 read replica thành standalone, bạn có thể sử dụng tính năng Promote to Standalone trên Portal, chọn DB Instance có **role: slave**, chọn **ACTION**
+Khi bạn mong muốn chuyển 1 read replica thành standalone, bạn có thể sử dụng tính năng **Promote to Standalone** trên Portal, chọn DB Instance có **role: slave**, chọn **Action**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/31555997/image2021-6-14_16-27-51.png?version=1&#x26;modificationDate=1623662871000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+
 
 Chọn **Promote to Standalone**
 
