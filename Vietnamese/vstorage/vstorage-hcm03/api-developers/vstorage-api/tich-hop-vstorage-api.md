@@ -39,24 +39,24 @@ Kết quả thực hiện:
   * Project type: Gold class.
   * Region: HCM01.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805624/image2023-7-17_11-26-39.png?version=1&#x26;modificationDate=1689841631000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (549).png" alt=""><figcaption></figcaption></figure>
 
 **2. Tạo container**
 
 API bên dưới sử dụng để bạn có thể khởi tạo một container trong một project.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805624/image2023-7-17_11-27-51.png?version=1&#x26;modificationDate=1689841631000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (550).png" alt=""><figcaption></figcaption></figure>
 
 **3. Xóa một container**
 
 API bên dưới sử dụng để bạn có thể xóa một container trong một project.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805624/image2023-7-17_11-32-37.png?version=1&#x26;modificationDate=1689841631000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (551).png" alt=""><figcaption></figcaption></figure>
 
 **4. Xóa một object**
 
 API bên dưới sử dụng để bạn có thể xóa một object trong một container.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805624/image2023-7-17_11-33-32.png?version=1&#x26;modificationDate=1689841631000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (552).png" alt=""><figcaption></figcaption></figure>
 
 Ngoài cách sử dụng nhanh trên vStorage Portal, bạn có thể sử dụng vStorage API tại thiết bị cá nhân theo hướng dẫn tại [Sử dụng vStorage API](su-dung-vstorage-api.md).

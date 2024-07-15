@@ -1,6 +1,6 @@
 # Khởi tạo tài khoản IAM User Account
 
-Để khởi tạo tài khoản người dùng IAM, trước tiên bạn vui lòng tham khảo hướng dẫn các bước thực hiện tại [đây.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805240) Bên dưới là hướng dẫn chi tiết của chúng tôi nhằm giúp bạn khởi tạo tài khoản người dùng IAM để truy cập vào tài nguyên của vStorage:
+Để khởi tạo tài khoản người dùng IAM, trước tiên bạn vui lòng tham khảo hướng dẫn bên dưới:
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/) với tài khoản Root User Account.
 2. Chọn mục **User Account**.

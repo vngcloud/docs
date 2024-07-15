@@ -20,5 +20,3 @@ Tích hợp các ứng dụng, công cụ phía người dùng của bạn với
 
 * Tích hợp Swift Rest API
 * Sử dụng Swift Rest API
-
-\

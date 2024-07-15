@@ -22,12 +22,6 @@
 
 > `aws --endpoint-url=`[`https://s3.storage.selcloud.ru`](https://s3.storage.selcloud.ru/) `s3 rm s3://BucketName/PathToTheFile/File`
 
-***
-
-#### Một số use case nâng cao <a href="#sudungcongcuawscli-motsousecasenangcao" id="sudungcongcuawscli-motsousecasenangcao"></a>
-
-#### Chú ý khi sử dụng AWS CLI <a href="#sudungcongcuawscli-chuykhisudungawscli" id="sudungcongcuawscli-chuykhisudungawscli"></a>
-
 {% hint style="info" %}
 **Chú ý:**&#x20;
 

@@ -43,9 +43,7 @@ Access Key: f6eb9432193a3cfb9da7834aac5c41c5&#x20;
 
 Secret Key: \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*&#x20;
 
-&#x20;
-
-Bạn cấu hình như sau:&#x20;
+&#x20;Bạn cấu hình như sau:&#x20;
 
 \+ Storage Provider: Other S3 Compatible Service.&#x20;
 
@@ -77,8 +75,5 @@ VD: đuờng link của container container01 như trong hình là:  \
 5\. Bạn điền **URL** này vào **CDN Base URL** và **Document CDN Base URL**.&#x20;
 
 6\. Sau cùng, bạn kéo xuống cuối và chọn **Save Changes**.&#x20;
-
-\
-
 
 </details>

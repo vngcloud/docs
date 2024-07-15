@@ -17,5 +17,3 @@ Ngoài ra, khi bạn thực hiện xóa project trong chu kỳ còn hiệu lực
 
 * Tính phí với người dùng trả trước
 * Tính phí với người dùng trả sau
-
-\

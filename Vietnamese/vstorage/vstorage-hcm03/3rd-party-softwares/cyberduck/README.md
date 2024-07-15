@@ -12,5 +12,3 @@ Cyberduck là một ứng dụng khách mã nguồn mở cho FTP và SFTP, WebDA
 
 * Tích hợp công cụ Cyberduck với vStorage
 * Sử dụng công cụ Cyberduck
-
-\

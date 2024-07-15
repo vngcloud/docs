@@ -30,12 +30,8 @@
 
 > $ rclone copy /home/user/file.txt \<remote\_name>:mybucket
 
-#### Chú ý khi sử dụng Rclone <a href="#sudungcongcurclone-chuykhisudungrclone" id="sudungcongcurclone-chuykhisudungrclone"></a>
-
 {% hint style="info" %}
 **Chú ý:**&#x20;
-
-
 
 1. Không nên sử dụng phiên bản Rclone quá cũ/ quá mới trên các hệ điều hành có phiên bản quá cũ/ quá mới vì có thể gặp lỗi.
 2. Không khuyến khích sử dụng rclone sync vì khi sync sẽ copy **source** sang **destination** và xóa phần khác biệt ở **destination** (khiến **destination** trở thành bản sao của **source**), dễ gây ra sự cố xoá nhầm data nếu truyền sai thông tin **source**, **destination**. Khuyến cáo nên dùng rclone copy.
@@ -58,4 +54,3 @@ Hãy cẩn khi sử dụng tùy chọn (option) max-age trong câu lệnh cleanu
 
 Để biết thêm chi tiết, bạn vui lòng tham khảo tại [https://rclone.org/s3/#cleanup](https://rclone.org/s3/#cleanup).
 {% endhint %}
-

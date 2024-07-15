@@ -44,14 +44,6 @@ Thực hiện khởi tạo S3 key theo hướng dẫn tại [Khởi tạo S3 key
 
 * Thiết lập trạng thái Restriction by IAM = **ON** cho S3 key mà bạn vừa khởi tạo.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554386/image2023-10-13_10-30-34.png?version=1&#x26;modificationDate=1697167834000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554386/image2023-10-13_10-32-59.png?version=1&#x26;modificationDate=1697167980000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
-
 **Bước 2: Khởi tạo tài khoản Service Account**
 
 Thực hiện khởi tạo 2 tài khoản Service Account theo hướng dẫn tại [Khởi tạo tài khoản Service Account](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-tai-khoan-service-account.md). Giả sử 2 tài khoản Service Account được khởi tạo là:
@@ -59,39 +51,18 @@ Thực hiện khởi tạo 2 tài khoản Service Account theo hướng dẫn t�
 * **SA\_User\_Leo**
 * **SA\_User\_Anne**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554386/image2023-10-13_10-34-59.png?version=1&#x26;modificationDate=1697168222000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554386/image2023-10-13_10-35-43.png?version=1&#x26;modificationDate=1697168252000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
 **Bước 3: Khởi tạo policy cho 2 Service Account( SA\_User\_Leo và SA\_User\_Anne)**
 
 Thực hiện khởi tạo policy cho 2 Service Account theo hướng dẫn tại [Khởi tạo policy cho Service Account](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-policy-cho-service-account.md). Cụ thể:
 
 <table><thead><tr><th>Thành phần</th><th width="226">Policy cho SA_User_Leo</th><th width="241">Policy cho SA_User_Anne</th><th></th></tr></thead><tbody><tr><td>Product</td><td>vstorage</td><td>vstorage</td><td></td></tr><tr><td>Action</td><td><ul><li><strong>List</strong></li><li><strong>Read</strong></li></ul><p>(Bao gồm tất cả các actions trong mỗi nhóm)</p></td><td><ul><li><strong>All vstorage actions</strong>. (List, Read, Write)</li></ul><p>(Bao gồm tất cả các actions trong mỗi nhóm)).</p></td><td></td></tr><tr><td>Resource</td><td>Region</td><td><ul><li><strong>HAN01</strong></li></ul></td><td><ul><li><strong>HAN01</strong></li><li><strong>HCM01</strong></li></ul></td></tr><tr><td>Project_ID</td><td><ul><li><strong>Project_ID</strong> của Project01</li></ul></td><td><ul><li><strong>Project_ID</strong> của Project01</li><li><strong>Project_ID</strong> của Project02</li></ul></td><td></td></tr><tr><td>Container name</td><td><ul><li><strong>Container01</strong></li></ul></td><td><ul><li><strong>Container01</strong></li><li><strong>Container02</strong></li></ul></td><td></td></tr><tr><td>Object name</td><td><ul><li><strong>Directory01/object 01.txt</strong></li><li><strong>object03.png</strong></li></ul></td><td><ul><li><strong>Directory01/*</strong></li><li><strong>object04.txt</strong></li><li><strong>Directory02/object06.jpg</strong></li><li><strong>object07.png</strong></li><li><strong>object08.txt</strong></li></ul></td><td></td></tr></tbody></table>
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554330/image2023-10-9_11-9-51.png?version=1&#x26;modificationDate=1697101325215&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554330/image2023-10-9_11-11-30.png?version=1&#x26;modificationDate=1697101326040&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
-
 **Bước 3: Liên kết (Gán quyền) tài khoản Service Account với policy tương ứng.**
 
 Thực hiện liên kết (gán quyền) 2 tài khoản Service Account với policy đã tạo ở bước 2 theo hướng dẫn tại [Liên kết tài khoản Service Account với policy tương ứng](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/lien-ket-tai-khoan-service-account-voi-policy-tuong-ung.md)
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554348/image2023-10-13_10-39-44.png?version=1&#x26;modificationDate=1697168385638&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
 
 **Bước 4: Tích hợp vStorage với S3 Browser**
 
 Thực hiện tích hợp vStorage với S3 Browser theo hướng dẫn tại [Tích hợp công cụ S3 Browser với vStorage](../../3rd-party-softwares/s3-browser/tich-hop-cong-cu-s3-browser-voi-vstorage.md). Cụ thể:&#x20;
 
 <table><thead><tr><th>Thành phần</th><th width="306">Nội dung</th><th></th></tr></thead><tbody><tr><td>Display name</td><td>Tên hiển thị của account.</td><td></td></tr><tr><td>Account type</td><td><strong>S3 Compatible Storage</strong></td><td></td></tr><tr><td>REST Endpoint</td><td>SA_User_Leo</td><td><a href="http://han01.vstorage.vngcloud.vn/">han01.vstorage.vngcloud.vn</a></td></tr><tr><td>SA_User_Anne</td><td><a href="http://hcm01.vstorage.vngcloud.vn/">hcm01.vstorage.vngcloud.vn</a></td><td></td></tr><tr><td>Access Key ID</td><td><strong>Access Key</strong> được tạo ở bước 1.</td><td></td></tr><tr><td>Secret Access Key</td><td><strong>Secret Key</strong> được tạo ở bước 1.</td><td></td></tr><tr><td>Protocol</td><td><strong>Use Secure transfer (SSL/TLS)</strong></td><td></td></tr><tr><td>Signature version</td><td><strong>Signature V4</strong></td><td></td></tr><tr><td>Addressing model</td><td><p>Path Style (Request URL: <a href="https://hcm01.vstorage.vngcloud.vn/">https://hcm01.vstorage.vngcloud.vn</a>/v1/AUTH_{project_id}/{bucket}/{file})</p><p>Virtual hosted style (Request URL: https://{bucket}.<a href="http://hcm01.vstorage.vngcloud.vn/%7Bfile">hcm01.vstorage.vngcloud.vn/{file</a>})</p></td><td></td></tr><tr><td>Override storage region</td><td>SA_User_Leo</td><td><strong>HAN01</strong></td></tr><tr><td>SA_User_Anne</td><td><strong>HCM01</strong></td><td></td></tr></tbody></table>
-
-\

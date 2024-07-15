@@ -40,9 +40,6 @@
 > \<DEST-CONTAINER-NAME>, \<DEST-KEY-NAME>);\
 > s3Client.deleteObject(\<SOURCE-CONTAINER-NAME>, \<SOURCE-KEY-NAME>);
 
-\
-
-
 ***
 
 #### Một số use case nâng cao <a href="#sudungcongcus3sdk-motsousecasenangcao" id="sudungcongcus3sdk-motsousecasenangcao"></a>
@@ -60,8 +57,5 @@
 {% hint style="info" %}
 **Chú ý:**
 
-
-
 * Khi bạn sử dụng S3 SDK để tải lên tệp tin lớn (multipart upload), tệp tin được chia thành nhiều segment để tải lên hệ thống vStorage. Trong quá trình tải của tệp tin, có thể có một số segment được tải lên, một số segment không được tải lên do gặp lỗi như network có vấn đề, hệ thống vStorage đang quá tải, ứng dụng của bạn bị dừng chạy, treo, v.v. Tệp tin khi đó được xem như tải lên không thành công, các segment đã được tải lên được xem như là các incomplete segment hay là segment rác và đang chiếm dụng dung lượng lưu trữ của bạn. Chúng tôi khuyến cáo bạn nên chủ động xóa các segment rác này trong ứng dụng của bạn để tối ưu chi phí và dung lượng lưu trữ của project mà bạn đang sử dụng.
 {% endhint %}
-

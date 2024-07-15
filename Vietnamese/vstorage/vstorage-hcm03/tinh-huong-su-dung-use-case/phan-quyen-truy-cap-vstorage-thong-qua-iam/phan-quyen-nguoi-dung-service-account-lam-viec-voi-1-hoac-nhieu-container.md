@@ -44,24 +44,12 @@ Thực hiện khởi tạo S3 key theo hướng dẫn tại [Khởi tạo S3 key
 
 * Thiết lập trạng thái Restriction by IAM = **ON** cho S3 key mà bạn vừa khởi tạo.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554362/image2023-10-13_10-30-54.png?version=1&#x26;modificationDate=1697167855000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554362/image2023-10-13_10-32-9.png?version=1&#x26;modificationDate=1697167930000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
 **Bước 2: Khởi tạo tài khoản Service Account**
 
 Thực hiện khởi tạo 2 tài khoản Service Account theo hướng dẫn tại [Khởi tạo tài khoản Service Account](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-tai-khoan-service-account.md). Giả sử 2 tài khoản Service Account được khởi tạo là:
 
 * **SA\_User\_Leo**
 * **SA\_User\_Anne**
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554362/image2023-10-13_10-34-59.png?version=1&#x26;modificationDate=1697168241000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554362/image2023-10-13_10-35-43.png?version=1&#x26;modificationDate=1697168271000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 **Bước 3: Khởi tạo policy cho 2 Service Account( SA\_User\_Leo và SA\_User\_Anne)**
 
@@ -76,20 +64,9 @@ Thực hiện khởi tạo policy cho 2 Service Account theo hướng dẫn tạ
 | Resource   | Container name                                                                                                          | **Container01**                                                                                                       | <p></p><ul><li><strong>Container01</strong></li></ul><ul><li><strong>Container02</strong></li></ul>                                                             |
 | Resource   | Object name                                                                                                             | Any                                                                                                                   | Any                                                                                                                                                             |
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554258/image2023-10-9_11-9-51.png?version=1&#x26;modificationDate=1696824593000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554258/image2023-10-9_11-11-30.png?version=1&#x26;modificationDate=1696824692000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554348/image2023-10-13_10-39-44.png?version=1&#x26;modificationDate=1697168385638&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
 **Bước 4: Tích hợp vStorage với S3 Browser**
 
 Thực hiện tích hợp vStorage với S3 Browser theo hướng dẫn tại [Tích hợp công cụ S3 Browser với vStorage](../../3rd-party-softwares/s3-browser/tich-hop-cong-cu-s3-browser-voi-vstorage.md). Cụ thể:&#x20;
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554348/image2023-10-13_10-43-28.png?version=1&#x26;modificationDate=1697168609596&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 | Thành phần              | Nội dung                                                                                                                                                                                                                                                                                                        |                                                                  |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |

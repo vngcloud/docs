@@ -21,7 +21,7 @@
 2. Mở ứng dụng **Cyberduck**.&#x20;
 3. Chọn **Open Connection** hoặc **Bookmark + New Bookmark**.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805496/image2023-7-17_9-23-33.png?version=1&#x26;modificationDate=1689560616000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (530).png" alt=""><figcaption></figcaption></figure>
 
 4\. Nhập thông tin kết nối bao gồm:
 
@@ -29,12 +29,10 @@
 * **Access key**: nhập S3 access key mà bạn tạo từ vIAM cũng chính là thông tin access key lấy từ bước 4 bên trên.
 * **Secret key**: nhập S3 access key mà bạn tạo từ vIAM cũng chính là thông tin access key lấy từ bước 4 bên trên.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805496/image2023-7-14_14-2-53.png?version=1&#x26;modificationDate=1689318174000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../../.gitbook/assets/image (531).png" alt=""><figcaption></figcaption></figure>
 
 5\. Chọn **Connect**.
 
-6\. Bây giờ **Cyberduck** đã kết nối thành công tới **vStorage**. Bạn đã có thể sử dụng Cyberduck để truy xuất tới vStorage, tham khảo thêm tại [Sử dụng công cụ Cyberduck](su-dung-cong-cu-cyberduck.md).
+6\. Bây giờ **Cyberduck** đã kết nối thành công tới **vStorage**. Bạn đã có thể sử dụng Cyberduck để truy xuất tới vStorage, tham khảo thêm tại Sử dụng công cụ Cyberduck.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805496/image2023-7-14_14-9-20.png?version=1&#x26;modificationDate=1689318561000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (532).png" alt=""><figcaption></figcaption></figure>

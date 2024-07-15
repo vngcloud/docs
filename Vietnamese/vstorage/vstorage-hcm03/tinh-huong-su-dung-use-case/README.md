@@ -1,9 +1,5 @@
 # Tình huống sử dụng (use case)
 
-
-
-#### Tổng quan <a href="#tinhhuongsudung-usecase-tongquan" id="tinhhuongsudung-usecase-tongquan"></a>
-
 vStorage có thể được sử dụng cho nhiều nhu cầu lưu trữ khác nhau, bên dưới là một vài ứng dụng phổ biến:
 
 * **Ứng dụng làm media hosting**&#x20;

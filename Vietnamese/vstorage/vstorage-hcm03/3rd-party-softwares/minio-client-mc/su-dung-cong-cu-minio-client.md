@@ -38,12 +38,8 @@
 
 > $ ./mc share upload servername/pathtofile
 
-#### Chú ý khi sử dụng MinIO Client <a href="#sudungcongcuminioclient-chuykhisudungminioclient" id="sudungcongcuminioclient-chuykhisudungminioclient"></a>
-
 {% hint style="info" %}
 **Chú ý:**
-
-
 
 1. Không nên sử dụng phiên bản MinIO Client quá cũ trên các hệ điều hành có phiên bản quá cũ hoặc mới nhất vì có thể gặp lỗi.
 2. MinIO Client (mc) không có hỗ trợ dọn các incomplete segment khi tải object lớn (Multipart upload). Khi bạn sử dụng MinIO Client để tải lên tệp tin lớn (multipart upload), tệp tin được chia thành nhiều segment để tải lên hệ thống vStorage. Trong quá trình tải của tệp tin, có thể có một số segment được tải lên, một số segment không được tải lên do gặp lỗi như network có vấn đề, hệ thống vStorage đang quá tải, MinIO Client của bạn bị dừng chạy, treo, v.v. Tệp tin khi đó được xem như tải lên không thành công, các segment đã được tải lên được xem như là các incomplete segment hay là segment rác và đang chiếm dụng dung lượng lưu trữ của bạn. Hiện tại, MinIO Client chưa hỗ trợ tính năng dọn các segment rác này. Do đó, chúng tôi khuyến nghị bạn nên xem xét kỹ trước khi sử dụng công cụ này.

@@ -9,5 +9,3 @@ Dưới đây là một số lợi ích của việc sử dụng mã hóa đư�
 * **Giúp bảo vệ dữ liệu khỏi bị truy cập trái phép:** Mã hóa đường truyền giúp bảo vệ dữ liệu khỏi bị truy cập trái phép trong quá trình truyền qua mạng. Điều này giúp giảm thiểu rủi ro vi phạm dữ liệu.
 * **Giúp tăng cường tính toàn vẹn của dữ liệu:** Mã hóa đường truyền giúp đảm bảo rằng dữ liệu không bị thay đổi hoặc sửa đổi trong quá trình truyền. Điều này giúp bảo vệ dữ liệu khỏi bị giả mạo hoặc thay đổi.
 * **Giúp đáp ứng các yêu cầu quy định:** Nhiều quy định yêu cầu sử dụng mã hóa để bảo vệ dữ liệu nhạy cảm. Bằng cách sử dụng mã hóa đường truyền, các doanh nghiệp có thể đáp ứng các yêu cầu quy định này.
-
-\

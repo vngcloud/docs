@@ -17,5 +17,3 @@ Giám sát (monitoring) là một phần quan trọng trong việc duy trì đ�
 
 * Giám sát vStorage thông qua metric
 * Giám sát vStorage thông qua log
-
-\

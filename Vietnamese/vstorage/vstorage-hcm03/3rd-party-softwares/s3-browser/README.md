@@ -12,5 +12,3 @@ S3 Browser là trình duyệt được tối ưu hóa cho phép người dùng c
 
 * Tích hợp công cụ S3 Browser với vStorage
 * Sử dụng công cụ S3 Browser
-
-\

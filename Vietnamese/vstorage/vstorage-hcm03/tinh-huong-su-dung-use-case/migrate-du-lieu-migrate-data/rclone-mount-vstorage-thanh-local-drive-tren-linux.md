@@ -36,42 +36,29 @@ Các thông tin bên trên bạn có thể thực hiện lấy theo hướng d�
 * Auth: xem tại [Farm là gì?](../../vstorage-la-gi/farm-la-gi.md)
 * Tenant\_id: thông tin project id, bạn có thể lấy tại vStorage Portal.
 
-\
-
-
 Trước khi mount, bạn kiểm tra kết nối tới vStorage bằng lệnh lsd của rclone với cú pháp:
 
 | `rclone --config=rclone.conf lsd vstorage:` |
 | ------------------------------------------- |
 
-\
-
-
 Nếu bạn đã sử dụng vStorage trước đó, bạn sẽ thấy các container chứa các file mình đã upload lên.
-
-\
-
 
 **3**: Để thực hiện mount, bạn dùng câu lệnh với cú pháp sau:
 
 | `rclone mount --config=rclone.conf vstorage:<container_name> <mount_point> --vfs-cache-mode full --allow-non-empty --allow-other --drive-chunk-size 128M  --max-read-ahead 200M --dir-cache-time 30m --daemon` |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-trong đó:
+Trong đó:
 
-\- **container\_name**: tên container bạn sẽ backup file vào trên vStorage. (nếu chưa có, rclone sẽ tự động sinh ra). Lưu ý, bạn nên đặt một tên khác các container hiện có.
-
-\- **mount\_point**: vùng sẽ mount trên local của bạn.
-
-\
-
+* **container\_name**: tên container bạn sẽ backup file vào trên vStorage. (nếu chưa có, rclone sẽ tự động sinh ra). Lưu ý, bạn nên đặt một tên khác các container hiện có.
+* **mount\_point**: vùng sẽ mount trên local của bạn.
 
 VD: bạn muốn mount container tên **backup** tại đuờng dẫn **/backup** trên máy local:
 
 | `rclone mount --config=/root/.config/rclone/rclone.conf vstorage:backup /backup --vfs-cache-mode full --allow-non-empty --allow-other --drive-chunk-size 128M  --max-read-ahead 200M --dir-cache-time 30m --daemon` |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-Quá trình mount sẽ mất một lúc để hoàn thành. (Khoảng 3').
+Quá trình mount sẽ mất một lúc để hoàn thành. (Khoảng 3 phút).
 
 Để test quá trình mount đã hoàn thành hay chưa, bạn có thể tạo file vào vùng mount trên:
 
@@ -84,7 +71,7 @@ VD: touch /backup/abc
 | `rclone --config=rclone.conf ls vstorage:<container_name>` |
 | ---------------------------------------------------------- |
 
-VD:
+Ví dụ:&#x20;
 
 | `rclone --config=rclone.conf ls vstorage:backup` |
 | ------------------------------------------------ |

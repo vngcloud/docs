@@ -10,11 +10,7 @@ Bên dưới là danh sách các Swift rest API mà chúng tôi cung cấp và h
 
 Thông tin cần cung cấp: username, password, projectId, authentication url
 
-| Url    | /auth/tokens                                                                                                                                                                                                                                              |
-| ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Method | POST                                                                                                                                                                                                                                                      |
-| Header | Content-Type: application/json                                                                                                                                                                                                                            |
-| Body   | { "auth": { "identity": { "methods": \[ "password" ], "password": { "user": { "domain": { "name": "default" }, "name": "{username}", "password": "{password}" } } }, "scope": { "project": { "domain": { "name": "default" }, "id": "{projectId}" } } } } |
+<table data-header-hidden><thead><tr><th width="205"></th><th></th></tr></thead><tbody><tr><td>Url</td><td>/auth/tokens</td></tr><tr><td>Method</td><td>POST</td></tr><tr><td>Header</td><td>Content-Type: application/json</td></tr><tr><td>Body</td><td>{ "auth": { "identity": { "methods": [ "password" ], "password": { "user": { "domain": { "name": "default" }, "name": "{username}", "password": "{password}" } } }, "scope": { "project": { "domain": { "name": "default" }, "id": "{projectId}" } } } }</td></tr></tbody></table>
 
 &#x20;Kết quả trả về cần lưu ý những thông tin sau:
 
@@ -25,10 +21,6 @@ Thông tin cần cung cấp: username, password, projectId, authentication url
 **Header trả về**&#x20;
 
 > "x-subject-token: gAAAAABdAhsbpeT0CLQiUvTgX3TcVua8c7RLFIY074FlLvDWpGp06EV8SRCbuLGzSL5Q2AnfYogSWydNeZc5dWpRbTKxiwGXuP-wAoPPmIGvBctSkkwnhMF8UQXLBmwlIT43Mudc9ZuHgRLqlW1BT3OmhN9ugKTQHyzgCuzBmHqVgtXp6dRJYr0", đây là thông tin token dùng để xác thực cho những request sau.
-
-**Get token dùng POSTMAN thông qua RESTful API**
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805633/image2023-7-17_10-52-57.png?version=1&#x26;modificationDate=1689565979000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 **Chú ý:**
 
@@ -117,10 +109,6 @@ Thông tin cần cung cấp: username, password, projectId, authentication url
 * Nếu request trả về mã code 201 thì bạn đã tạo thành công một container (trong ví dụ trên container được tạo thành công với tên "container\_name").
 * Trong mỗi container bạn có thể upload nhiều object để lưu trữ (Object ở đây ví dụ như hình ảnh, file bất kì hoặc thư mục).&#x20;
 
-**Tạo container dùng POSTMAN thông qua RESTful API**
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805633/image2023-7-17_10-53-18.png?version=1&#x26;modificationDate=1689566000000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
 **Tạo container dùng CURL thông qua RESTful API**
 
 > curl -i -X PUT -H "X-Auth-Token: \<token>" \<storage url>/mycontainer
@@ -145,10 +133,6 @@ Ví dụ cụ thể:
 | Method | PUT                                                                                                                                                                                                                                        | <p><br></p>                                                                            |
 | Header | <p>X-Auth-Token: gAAAAABdAhsbpeT0CLQiUvTgX3TcVua8c7RLFIY074FlLvDWpGp06EV8SRCbuLGzSL5Q2AnfYogSWydNeZc5dWpRbTKxiwGXuP-wAoPPmIGvBctSkkwnhMF8UQXLBmwlIT43Mudc9ZuHgRLqlW1BT3OmhN9ugKTQHyzgCuzBmHqVgtXp6dRJYr0</p><p>Content-Type: image/png</p> | Với hình ảnh có định dạng file png tương ứng Content-Type: image/png                   |
 | Body   | Binary file: choose file                                                                                                                                                                                                                   | Ví dụ trong postman: chọn body binary, rồi chọn file tương ứng với máy tính local.     |
-
-**Tải lên object dùng POSTMAN thông qua RESTful API**
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805633/image2023-7-17_10-53-30.png?version=1&#x26;modificationDate=1689566013000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 **Tải lên object dùng CURL thông qua RESTful API**
 
@@ -192,7 +176,7 @@ Việc chia một large object thành những phần riêng biệt có thể dù
 
 Ví dụ: Upload object _**myobject**_ (10 GB), segment object _**myobject**_ này các segment objects:
 
-*
+* Ví dụ:
   * 00000001 (2GB)
   * 00000002 (2GB)
   * 00000003 (2GB)

@@ -12,5 +12,3 @@ MinIO Client là giải pháp mã nguồn mở dùng để thiết lập Object 
 
 * Tích hợp công cụ MinIO Client với vStorage
 * Sử dụng công cụ MinIO Client
-
-\

@@ -81,7 +81,7 @@ Lúc này **project** bị xóa sẽ nằm trong **Thùng rác**, bạn có th�
 
 <summary>Khôi phục project sử dụng ví POC</summary>
 
-Bạn có thể khôi phục project sau khi xóa theo hướng dẫn bên trên bằng cách:
+DBạn có thể khôi phục project sau khi xóa theo hướng dẫn bên trên bằng cách:
 
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 

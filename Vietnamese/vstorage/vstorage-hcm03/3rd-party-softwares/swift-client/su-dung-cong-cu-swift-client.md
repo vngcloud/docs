@@ -247,12 +247,8 @@ Trong đó, biến \<Value> nhận các giá trị trong bảng sau:
 
 Để hiểu thêm về ACLs của container, vui lòng tham khảo [https://docs.openstack.org/swift/latest/overview\_acl.html](https://docs.openstack.org/swift/latest/overview\_acl.html).
 
-#### Chú ý khi sử dụng SwiftClient <a href="#sudungcongcuswiftclient-chuykhisudungswiftclient" id="sudungcongcuswiftclient-chuykhisudungswiftclient"></a>
-
 {% hint style="info" %}
 **Chú ý:**
-
-
 
 1. Không nên sử dụng phiên bản SwiftClient quá cũ trên các hệ điều hành có phiên bản quá cũ hoặc mới nhất vì có thể gặp lỗi.
 2. SwiftClient Không gây ra incomplete segment (segment rác) trong quá trình tải object lớn (multipart upload).

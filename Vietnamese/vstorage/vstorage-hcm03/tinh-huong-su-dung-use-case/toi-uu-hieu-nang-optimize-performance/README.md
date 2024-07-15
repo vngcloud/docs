@@ -25,5 +25,3 @@ Dưới đây là một số cách sử dụng tối ưu hóa trong lưu trữ �
 * **Sử dụng bộ cân bằng tải:** Bộ cân bằng tải phân phối lưu lượng truy cập trên nhiều máy chủ. Điều này có thể cải thiện hiệu suất của ứng dụng của bạn bằng cách ngăn bất kỳ máy chủ nào trở nên quá tải.
 
 Bằng cách sử dụng các kỹ thuật này, bạn có thể tối ưu hóa hiệu suất của môi trường lưu trữ đám mây của mình và cải thiện tốc độ, độ phản hồi và độ tin cậy của ứng dụng và dữ liệu của mình.
-
-\

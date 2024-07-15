@@ -40,11 +40,6 @@ Thực hiện khởi tạo 2 tài khoản IAM User Account theo hướng dẫn t
 * **IAM\_User\_Leo**
 * **IAM\_User\_Anne**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554330/image2023-9-19_10-59-55.png?version=1&#x26;modificationDate=1697101325000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
-
 **Bước 2: Khởi tạo policy cho 2 IAM User Account( IAM\_User\_Leo và IAM\_User\_Anne)**
 
 Thực hiện khởi tạo policy cho 2 IAM User Account theo hướng dẫn tại [Khởi tạo policy cho IAM User Account](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-nguoi-dung-iam/khoi-tao-policy-cho-iam-user-account.md). Cụ thể:
@@ -58,28 +53,10 @@ Thực hiện khởi tạo policy cho 2 IAM User Account theo hướng dẫn t�
 | Container name | <ul><li><strong>Container01</strong></li></ul>                                                                          | <ul><li><strong>Container01</strong></li><li><strong>Container02</strong></li></ul>                                                                                                                                  |                                                                         |
 | Object name    | <ul><li><strong>Directory01/object 01.txt</strong></li><li><strong>object03.png</strong></li></ul>                      | <ul><li><strong>Directory01/*</strong></li><li><strong>object04.txt</strong></li><li><strong>Directory02/object06.jpg</strong></li><li><strong>object07.png</strong></li><li><strong>object08.txt</strong></li></ul> |                                                                         |
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554330/image2023-10-9_11-9-51.png?version=1&#x26;modificationDate=1697101325000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554330/image2023-10-9_11-11-30.png?version=1&#x26;modificationDate=1697101326000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
-
 **Bước 3: Liên kết (Gán quyền) tài khoản IAM User Account với policy tương ứng.**
 
 Thực hiện liên kết (gán quyền) 2 tài khoản IAM User Account với policy đã tạo ở bước 2 theo hướng dẫn tại [Liên kết tài khoản IAM User Account với policy tương ứng](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-nguoi-dung-iam/lien-ket-tai-khoan-iam-user-account-voi-policy-tuong-ung.md).&#x20;
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554330/image2023-10-9_10-34-15.png?version=1&#x26;modificationDate=1697101326000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554330/image2023-10-9_10-34-34.png?version=1&#x26;modificationDate=1697101326000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
-
 **Bước 4: Truy cập vStorage Portal sử dụng IAM User Account**
 
 Thực hiện truy cập vStorage Portal sử dụng tài khoản IAM User Account theo hướng dẫn tại [Truy cập tài nguyên sử dụng tài khoản người dùng IAM](../../quan-ly-truy-cap/quan-ly-truy-cap-tai-nguyen-vstorage/truy-cap-tai-nguyen-su-dung-tai-khoan-nguoi-dung-iam.md).
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64554330/image2023-10-9_10-35-43.png?version=1&#x26;modificationDate=1697101326000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
