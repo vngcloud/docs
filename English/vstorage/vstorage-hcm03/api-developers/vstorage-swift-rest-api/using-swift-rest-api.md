@@ -22,55 +22,9 @@ Output:
 
 > "url: [https://vos-ss-lab-hcm-sw.vinadata.vn/v1/AUTH\_d6f0078021f4417989d6ba8ae4320dea](https://vos-ss-lab-hcm-sw.vinadata.vn/v1/AUTH\_d6f0078021f4417989d6ba8ae4320dea)" với public interface trong catalog có type "object-store", đây là link dùng cho những request sau này. Trong đó, " _AUTH\_d6f0078021f4417989d6ba8ae4320dea_" tương ứng với một account trong object storage.
 
-**Header trả về**&#x20;
+**Header trả về**
 
 > "x-subject-token: gAAAAABdAhsbpeT0CLQiUvTgX3TcVua8c7RLFIY074FlLvDWpGp06EV8SRCbuLGzSL5Q2AnfYogSWydNeZc5dWpRbTKxiwGXuP-wAoPPmIGvBctSkkwnhMF8UQXLBmwlIT43Mudc9ZuHgRLqlW1BT3OmhN9ugKTQHyzgCuzBmHqVgtXp6dRJYr0", đây là thông tin token dùng để xác thực cho những request sau.
-
-**Get token dùng POSTMAN thông qua RESTful API**
-
-![](https://docs.vngcloud.vn/download/attachments/69468578/image2023-7-17\_10-52-57.png?version=1\&modificationDate=1703572768000\&api=v2)
-
-\
-
-
-\
-
-
-\
-
-
-\
-
-
-\
-
-
-\
-
-
-\
-
-
-\
-
-
-\
-
-
-\
-
-
-\
-
-
-\
-
-
-\
-
-
-\
-
 
 **Chú ý:**
 
@@ -157,10 +111,6 @@ Output:
 * If the request returns a status code of 201, you have successfully created a container (in the example above, the container is successfully created with the name 'container\_name').
 * Within each container, you can upload multiple objects for storage (objects here could be, for example, images, any files, or folders).
 
-**Create a container using POSTMAN through RESTful API**
-
-![](https://docs.vngcloud.vn/download/attachments/69468578/image2023-7-17\_10-53-18.png?version=1\&modificationDate=1703572768000\&api=v2)
-
 **Create a container using CURL through RESTful API**
 
 > curl -i -X PUT -H "X-Auth-Token: \<token>" \<storage url>/mycontainer
@@ -185,10 +135,6 @@ Ví dụ cụ thể:
 | Method | PUT                                                                                                                                                                                                                                        | <p><br></p>                                                                            |
 | Header | <p>X-Auth-Token: gAAAAABdAhsbpeT0CLQiUvTgX3TcVua8c7RLFIY074FlLvDWpGp06EV8SRCbuLGzSL5Q2AnfYogSWydNeZc5dWpRbTKxiwGXuP-wAoPPmIGvBctSkkwnhMF8UQXLBmwlIT43Mudc9ZuHgRLqlW1BT3OmhN9ugKTQHyzgCuzBmHqVgtXp6dRJYr0</p><p>Content-Type: image/png</p> | Với hình ảnh có định dạng file png tương ứng Content-Type: image/png                   |
 | Body   | Binary file: choose file                                                                                                                                                                                                                   | Ví dụ trong postman: chọn body binary, rồi chọn file tương ứng với máy tính local.     |
-
-**Upload an object using POSTMAN through RESTful API**
-
-![](https://docs.vngcloud.vn/download/attachments/69468578/image2023-7-17\_10-53-30.png?version=1\&modificationDate=1703572768000\&api=v2)
 
 **Upload an object using CURL through RESTful API**
 
@@ -248,23 +194,23 @@ Ví dụ: Upload các segment objects của Object _**myobject**_ dùng CURL:
 >
 > http://\<storage\_url>/container/myobject/00000001 --data-binary '00000001'
 >
-> \=> ETAG:  etagoftheobjectsegment1
+> \=> ETAG: etagoftheobjectsegment1
 >
-> curl -X PUT -H 'X-Auth-Token: \<token>'         http://\<storage\_url>/container/myobject/00000002 --data-binary '00000002'
+> curl -X PUT -H 'X-Auth-Token: \<token>' http://\<storage\_url>/container/myobject/00000002 --data-binary '00000002'
 >
-> \=> ETAG:  etagoftheobjectsegment2
+> \=> ETAG: etagoftheobjectsegment2
 >
-> curl -X PUT -H 'X-Auth-Token: \<token>'         http://\<storage\_url>/container/myobject/00000003 --data-binary '00000003'
+> curl -X PUT -H 'X-Auth-Token: \<token>' http://\<storage\_url>/container/myobject/00000003 --data-binary '00000003'
 >
-> \=> ETAG:  etagoftheobjectsegment3
+> \=> ETAG: etagoftheobjectsegment3
 >
-> curl -X PUT -H 'X-Auth-Token: \<token>'         http://\<storage\_url>/container/myobject/00000004 --data-binary '00000004'
+> curl -X PUT -H 'X-Auth-Token: \<token>' http://\<storage\_url>/container/myobject/00000004 --data-binary '00000004'
 >
-> \=> ETAG:  etagoftheobjectsegment4
+> \=> ETAG: etagoftheobjectsegment4
 >
-> curl -X PUT -H 'X-Auth-Token: \<token>'         http://\<storage\_url>/container/myobject/00000005 --data-binary '00000005'
+> curl -X PUT -H 'X-Auth-Token: \<token>' http://\<storage\_url>/container/myobject/00000005 --data-binary '00000005'
 >
-> \=> ETAG:  etagoftheobjectsegment5
+> \=> ETAG: etagoftheobjectsegment5
 
 * **Bước 4: Tạo nội dung Json cho manifest (build manifest content)**
 
@@ -302,25 +248,25 @@ Upload một large object có kích thước là 10 GB với đường dẫn sau
 >
 > \-rw-r--r-- 1 ron ron 100000000 apr 24 18:21 file
 >
-> \-rw-r--r-- 1 ron ron  40000000 apr 24 18:39 xaa
+> \-rw-r--r-- 1 ron ron 40000000 apr 24 18:39 xaa
 >
-> \-rw-r--r-- 1 ron ron  40000000 apr 24 18:39 xab
+> \-rw-r--r-- 1 ron ron 40000000 apr 24 18:39 xab
 >
-> \-rw-r--r-- 1 ron ron  20000000 apr 24 18:39 xac
+> \-rw-r--r-- 1 ron ron 20000000 apr 24 18:39 xac
 
 * **Bước 3: Upload những segment objects trên lên vStorage**
 
 > curl -i -X PUT -H "x-auth-token: ${\<token>}" ${\<storage url>}/mybigfilescontainer\_segments/xaa --data-binary @xaa
 >
-> \=> ETAG:  48e9a108a3ec623652e7988af2f88867
+> \=> ETAG: 48e9a108a3ec623652e7988af2f88867
 >
 > curl -i -X PUT -H "x-auth-token: ${\<token>}" ${\<storage url>}/mybigfilescontainer\_segments/xab --data-binary @xab
 >
-> \=> ETAG:  48e9a108a3ec623652e7988af2f88867
+> \=> ETAG: 48e9a108a3ec623652e7988af2f88867
 >
 > curl -i -X PUT -H "x-auth-token: ${\<token>}" ${\<storage url>}/mybigfilescontainer\_segments/xac --data-binary @xac
 >
-> \=> ETAG:  10e4462c9d0b08e7f0b304c4fbfeafa3
+> \=> ETAG: 10e4462c9d0b08e7f0b304c4fbfeafa3
 
 * **Bước 4: Tạo nội dung Json cho manifest**
 
@@ -328,41 +274,41 @@ Upload một large object có kích thước là 10 GB với đường dẫn sau
 >
 > \[{"path":"/mybigfilescontainer\_segments/xaa",
 >
-> &#x20; "etag":"48e9a108a3ec623652e7988af2f88867",
+> "etag":"48e9a108a3ec623652e7988af2f88867",
 >
-> &#x20; "size\_bytes":4000000000},
+> "size\_bytes":4000000000},
 >
-> &#x20;{"path":"/mybigfilescontainer\_segments/xab",
+> {"path":"/mybigfilescontainer\_segments/xab",
 >
-> &#x20; "etag":"48e9a108a3ec623652e7988af2f88867",
+> "etag":"48e9a108a3ec623652e7988af2f88867",
 >
-> &#x20; "size\_bytes":4000000000},
+> "size\_bytes":4000000000},
 >
-> &#x20;{"path":"/mybigfilescontainer\_segments/xac",
+> {"path":"/mybigfilescontainer\_segments/xac",
 >
-> &#x20; "etag":"10e4462c9d0b08e7f0b304c4fbfeafa3",
+> "etag":"10e4462c9d0b08e7f0b304c4fbfeafa3",
 >
-> &#x20; "size\_bytes":2000000000}]
+> "size\_bytes":2000000000}]
 
 * **Bước 5: Upload nội dung Json của manifest lên vStorage**
 
 > curl -i -X PUT -H "X-Auth-Token: ${\<token>}" ${\<storage url>}/mybigfilescontainer/file?multipart-manifest=put -d '\[{"path":"/mybigfilescontainer\_segments/xaa",
 >
-> &#x20; "etag":"48e9a108a3ec623652e7988af2f88867",
+> "etag":"48e9a108a3ec623652e7988af2f88867",
 >
-> &#x20; "size\_bytes":4000000000},
+> "size\_bytes":4000000000},
 >
-> &#x20;{"path":"/mybigfilescontainer\_segments/xab",
+> {"path":"/mybigfilescontainer\_segments/xab",
 >
-> &#x20; "etag":"48e9a108a3ec623652e7988af2f88867",
+> "etag":"48e9a108a3ec623652e7988af2f88867",
 >
-> &#x20; "size\_bytes":4000000000},
+> "size\_bytes":4000000000},
 >
-> &#x20;{"path":"/mybigfilescontainer\_segments/xac",
+> {"path":"/mybigfilescontainer\_segments/xac",
 >
-> &#x20; "etag":"10e4462c9d0b08e7f0b304c4fbfeafa3",
+> "etag":"10e4462c9d0b08e7f0b304c4fbfeafa3",
 >
-> &#x20; "size\_bytes":2000000000}]'
+> "size\_bytes":2000000000}]'
 
 * **Upload large object dùng Swift client tool**
 
@@ -370,11 +316,11 @@ Việc upload một large object dùng Swift client tool rất đơn giản, v�
 
 > Ví dụ: swift --os-auth-url [https://api.example.com/v3](https://api.example.com/v3) --auth-version 3\\
 >
-> &#x20;   \--os-project-name project1 --os-project-domain-name domain1 \\
+> \--os-project-name project1 --os-project-domain-name domain1 \\
 >
-> &#x20;   \--os-username user --os-user-domain-name domain1 \\
+> \--os-username user --os-user-domain-name domain1 \\
 >
-> &#x20;   \--os-password password upload test\_container -S 1073741824 large\_file
+> \--os-password password upload test\_container -S 1073741824 large\_file
 
 #### 5. Download an object <a href="#usingswiftrestapi-5.downloadanobject" id="usingswiftrestapi-5.downloadanobject"></a>
 
@@ -485,7 +431,7 @@ Việc upload một large object dùng Swift client tool rất đơn giản, v�
 
 > curl -i -X COPY -H "X-Auth-Token: \<token>" -H "Destination: anothercontainer/myobject" \<storage url>/mycontainer/myobject
 >
-> curl -v -i -X COPY -H "Destination: lifecycle/test.txt"  -H "X-Auth-Token: gAAAAABdQQ8uIM6CWmA85hKi6MtOvuGP1qok8OJzp0-h74QAn9ptncjT16sg0pxxilUSCPgFeb9NKpNfmkD9kDLYRAPkymOB9wlNWNTkiz20m2uZpCeTIDUpPMO110rSXBMaE8Gszq9BLiKFyuHVmTEKeyoQ3qEFxitXilEwIg201IRtbJFiCa0" \\
+> curl -v -i -X COPY -H "Destination: lifecycle/test.txt" -H "X-Auth-Token: gAAAAABdQQ8uIM6CWmA85hKi6MtOvuGP1qok8OJzp0-h74QAn9ptncjT16sg0pxxilUSCPgFeb9NKpNfmkD9kDLYRAPkymOB9wlNWNTkiz20m2uZpCeTIDUpPMO110rSXBMaE8Gszq9BLiKFyuHVmTEKeyoQ3qEFxitXilEwIg201IRtbJFiCa0" \\
 >
 > [https://\<vStorage endpoint>/v1/AUTH\_a5bf65ca71594d85a60dc73cf9fc8399/test\_lifecycle/test.txt](https://sw-hcm-1.vinadata.vn/v1/AUTH\_a5bf65ca71594d85a60dc73cf9fc8399/test\_lifecycle/test.txt)
 
@@ -535,7 +481,7 @@ Việc upload một large object dùng Swift client tool rất đơn giản, v�
 >
 > curl -i -X DELETE -H "X-Auth-Token: \<token>" \<storage url>/mycontainer/myobject
 >
-> curl -v -i -X COPY -H "Destination: lifecycle/new\_test.txt"  -H "X-Auth-Token: gAAAAABdQQ8uIM6CWmA85hKi6MtOvuGP1qok8OJzp0-h74QAn9ptncjT16sg0pxxilUSCPgFeb9NKpNfmkD9kDLYRAPkymOB9wlNWNTkiz20m2uZpCeTIDUpPMO110rSXBMaE8Gszq9BLiKFyuHVmTEKeyoQ3qEFxitXilEwIg201IRtbJFiCa0" \\
+> curl -v -i -X COPY -H "Destination: lifecycle/new\_test.txt" -H "X-Auth-Token: gAAAAABdQQ8uIM6CWmA85hKi6MtOvuGP1qok8OJzp0-h74QAn9ptncjT16sg0pxxilUSCPgFeb9NKpNfmkD9kDLYRAPkymOB9wlNWNTkiz20m2uZpCeTIDUpPMO110rSXBMaE8Gszq9BLiKFyuHVmTEKeyoQ3qEFxitXilEwIg201IRtbJFiCa0" \\
 >
 > [https://\<vStorage endpoint>/v1/AUTH\_a5bf65ca71594d85a60dc73cf9fc8399/test\_lifecycle/test.txt](https://sw-hcm-1.vinadata.vn/v1/AUTH\_a5bf65ca71594d85a60dc73cf9fc8399/test\_lifecycle/test.txt)
 >
@@ -607,7 +553,7 @@ Việc upload một large object dùng Swift client tool rất đơn giản, v�
 
 \+ Tạo tempurl dựa trên secret key đó.
 
-**Get secret key từ giá trị của field **_**X-Account-Meta-Temp-URL-Key**_** của meta-data của container dùng CURL thông qua RESTful API**
+**Get secret key từ giá trị của field \_X-Account-Meta-Temp-URL-Key**\_\*\* của meta-data của container dùng CURL thông qua RESTful API\*\*
 
 > curl -s -S -X GET -H "X-Auth-Token: \<token>" \<storage url>/mycontainer
 >
@@ -631,7 +577,7 @@ Việc upload một large object dùng Swift client tool rất đơn giản, v�
 >
 > key=${secret\_key}
 >
-> sig=\`printf '%s\n%s\n%s' $method $expires $fullpath  | openssl sha1 -hmac $key | awk '{print $2}'\`
+> sig=\`printf '%s\n%s\n%s' $method $expires $fullpath | openssl sha1 -hmac $key | awk '{print $2}'\`
 >
 > \# print the URL
 >

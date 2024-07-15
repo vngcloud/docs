@@ -1,4 +1,4 @@
-# Expose một service thông qua vLB Layer4
+# Expose a service through vLB Layer4
 
 ### Điều kiện cần <a href="#exposemotservicethongquavlblayer4-dieukiencan" id="exposemotservicethongquavlblayer4-dieukiencan"></a>
 
@@ -207,7 +207,7 @@ pod/nginx-app-7f45b65946-bmrcf   0/1     ContainerCreating   0          2s    <n
 
 Lúc này, hệ thống vLB sẽ tự động tạo một LB tương ứng cho nginx app đã deployment, ví dụ:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3: Để truy cập vào app nginx vừa export, bạn có thể sử dụng URL với định dạng:**
 

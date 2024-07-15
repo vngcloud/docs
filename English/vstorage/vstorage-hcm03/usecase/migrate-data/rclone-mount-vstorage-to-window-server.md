@@ -7,8 +7,5 @@ To perform an upload to vStorage using Rclone on the Windows operating system, r
 **Note:**
 
 * If you encounter a missing winfsp package error, as shown below, you can download the package from this link: [https://github.com/billziss-gh/winfsp/releases/tag/v1.4.19049](https://github.com/billziss-gh/winfsp/releases/tag/v1.4.19049).
-
-&#x20;![](https://docs.vngcloud.vn/download/attachments/69468586/image2019-11-28\_17-55-37.png?version=1\&modificationDate=1703573420000\&api=v2)
-
 * You don't need to create the local\_path directory on the local machine before mounting.
 * Rclone does not support background mode, so you should not close the command prompt while using it.

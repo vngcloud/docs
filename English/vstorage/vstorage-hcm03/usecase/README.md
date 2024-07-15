@@ -1,7 +1,5 @@
 # Usecase
 
-#### Overview
-
 vStorage can be used for various storage needs. Here are some common applications:
 
 **Media hosting applications:**
@@ -21,14 +19,3 @@ vStorage can be used to host apps, content, and game clients for users to downlo
 **File server storage applications:**
 
 For centralized storage with shared permissions in the cloud, the simplest way is to build a server gateway with vStorage. The server gateway acts as an intermediary for data transfer, meeting fast access requirements thanks to the server-side cache, while the main data is stored in vStorage to optimize storage costs.
-
-***
-
-#### Topic
-
-* [Migrate data](https://docs-admin.vngcloud.vn/display/VSEN/Migrate+data?src=contextnavpagetreemode)
-* [Optimize performance](https://docs-admin.vngcloud.vn/display/VSEN/Optimize+performance?src=contextnavpagetreemode)
-* [Optimize cost](https://docs-admin.vngcloud.vn/display/VSEN/Optimize+cost?src=contextnavpagetreemode)
-* [Other solutions](https://docs-admin.vngcloud.vn/display/VSEN/Other+solutions?src=contextnavpagetreemode)
-
-![](https://chrome-extension/bpggmmljdiliancllaapiggllnkbjocb/logo/48.png)

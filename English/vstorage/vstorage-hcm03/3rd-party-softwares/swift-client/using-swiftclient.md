@@ -2,17 +2,17 @@
 
 #### Common usecase <a href="#usingswiftclient-commonusecase" id="usingswiftclient-commonusecase"></a>
 
-**Get token** &#x20;
+**Get token**
 
-> swift auth &#x20;
+> swift auth
 >
-> export OS\_STORAGE\_URL=[https://hcm.vstorage.vnglab.com/v1/AUTH\_afa7086fbef044938dbb7d8d328d452a](https://hcm.vstorage.vnglab.com/v1/AUTH\_afa7086fbef044938dbb7d8d328d452a)&#x20;
+> export OS\_STORAGE\_URL=[https://hcm.vstorage.vnglab.com/v1/AUTH\_afa7086fbef044938dbb7d8d328d452a](https://hcm.vstorage.vnglab.com/v1/AUTH\_afa7086fbef044938dbb7d8d328d452a)
 >
 > export OS\_AUTH\_TOKEN=gAAAAABjsYvUCXdVOkJo6EttO7WIVKrqnkbc2\_nUU59RGBbzsOo4rbSra5RayTBtC\_CJzosiJzZkOj77\_nqLt-NcaShU47ggANr8dm9TGvHTY48mphfnZPRyAuFFEr4LiG7zNlJBkOxqbBPR7kDbJIpuVKTodupASxhQAYgaKP0s20zE4C77kC8
 
 When using the SwiftClient tool, it's possible to omit exporting OS\_STORAGE\_URL and OS\_AUTH\_TOKEN. However, the request time will be longer because for each request or operation, a new token needs to be obtained. Therefore, it is recommended to export these variables for reuse multiple times.
 
-**Verify project(account)'s metadata information** &#x20;
+**Verify project(account)'s metadata information**
 
 > swift stat
 >
@@ -91,72 +91,71 @@ When using the SwiftClient tool, it's possible to omit exporting OS\_STORAGE\_UR
 
 **Thiết lập custom metadata (user metadata) cho project (account)**
 
-> Swift post –m “my\_custom\_metadata:abc”&#x20;
+> Swift post –m “my\_custom\_metadata:abc”
 
 **Liệt kê danh sách các container thuộc một project (account)**
 
-> swift list&#x20;
+> swift list
 
 **Tạo một container mới**
 
 > swift post \<container\_name>
 
-**Xóa container** &#x20;
+**Xóa container**
 
 > swift delete container
 
-**Truy xuất thông tin metadata của một container** &#x20;
+**Truy xuất thông tin metadata của một container**
 
-> swift stat my\_container&#x20;
+> swift stat my\_container
 >
-> \
+> \\
 >
+> Account: AUTH\_afa7086fbef044938dbb7d8d328d452a
 >
-> &#x20;              Account: AUTH\_afa7086fbef044938dbb7d8d328d452a&#x20;
+> Container: my\_container
 >
-> &#x20;            Container: my\_container&#x20;
+> Objects: 0
 >
-> &#x20;              Objects: 0&#x20;
+> Bytes: 0
 >
-> &#x20;                Bytes: 0&#x20;
+> Read ACL:
 >
-> &#x20;             Read ACL:&#x20;
+> Write ACL:
 >
-> &#x20;            Write ACL:&#x20;
+> Sync To:
 >
-> &#x20;              Sync To:&#x20;
+> Sync Key:
 >
-> &#x20;             Sync Key:&#x20;
+> Last-Modified: Sun, 01 Jan 2023 13:30:13 GMT
 >
-> &#x20;        Last-Modified: Sun, 01 Jan 2023 13:30:13 GMT&#x20;
+> Accept-Ranges: bytes
 >
-> &#x20;        Accept-Ranges: bytes&#x20;
+> Vary: Accept
 >
-> &#x20;                 Vary: Accept&#x20;
+> Server: vngcloud
 >
-> &#x20;               Server: vngcloud&#x20;
+> X-Storage-Policy: gold
 >
-> &#x20;     X-Storage-Policy: gold&#x20;
+> Connection: keep-alive
 >
-> &#x20;           Connection: keep-alive&#x20;
+> X-Timestamp: 1672579812.82240
 >
-> &#x20;          X-Timestamp: 1672579812.82240&#x20;
+> X-Trans-Id: tx0caa6b4d82d54f9c95548-0063b18b1a
 >
-> &#x20;           X-Trans-Id: tx0caa6b4d82d54f9c95548-0063b18b1a&#x20;
+> X-Container-Sharding: False
 >
-> &#x20; X-Container-Sharding: False&#x20;
+> Content-Type: text/plain; charset=utf-8
 >
-> &#x20;         Content-Type: text/plain; charset=utf-8&#x20;
+> X-Openstack-Request-Id: tx0caa6b4d82d54f9c95548-0063b18b1a
 >
-> X-Openstack-Request-Id: tx0caa6b4d82d54f9c95548-0063b18b1a&#x20;
->
-> &#x20;   X-Vngcloud-Backend: 03/backend\_hcm\_vstorage\_vnglab&#x20;
+> X-Vngcloud-Backend: 03/backend\_hcm\_vstorage\_vnglab
 
 **Thiết lập metadata cho container**
 
 > swift post container -m \<key:value>
 
-**Liệt kê danh sách các object của một container**&#x20;
+**Liệt kê danh sách các object của một container**
 
 > swift list \<container\_name>
 
@@ -220,18 +219,15 @@ Tạo tempURL là kỹ thuật tạo ra đường dẫn public cho một object 
 >
 > Saving to: ‘file1?temp\_url\_sig=1fe9fbcdb9d6683eef8658a18aa97c7090525cec\&temp\_url\_expires=1672595887’
 >
-> \
->
+> \\
 >
 > file1?temp\_url\_sig=1fe9 100%\[===============================>] 11.61M 16.1MB/s in 0.7s
 >
-> \
->
+> \\
 >
 > 2023-01-01 23:58:43 (16.1 MB/s) - ‘file1?temp\_url\_sig=1fe9fbcdb9d6683eef8658a18aa97c7090525cec\&temp\_url\_expires=1672595887’ saved \[12174069/12174069]
 
-\
-
+\\
 
 Tương tự ta có thể tạo đường dẫn tạm để cho user upload bằng cách đổi method thành "PUT".
 
@@ -243,18 +239,18 @@ Tương tự ta có thể tạo đường dẫn tạm để cho user upload bằ
 
 Trong đó, biến \<Value> nhận các giá trị trong bảng sau:
 
-| **Value**                                                                                                                                   | **Description**                                                                                                                                                                                                                                                                                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| .r:\*                                                                                                                                       | Any user has access to objects. No token is required in the request.                                                                                                                                                                                                                                                                                                                         |
-| <p>.r:&#x3C;referrer> </p><p>(Exp: .r: <a href="http://example.org/referring_page">http://example.org/referring_page</a>) </p>              | <p>The referrer is granted access to objects. The referrer is identified by the Referer request header in the request. No token is required. </p><p>Exp:  </p><p><br></p><p>GET /wiki/Referrer HTTP/1.1 Host: <a href="http://de.wikipedia.org/">http://de.wikipedia.org</a>  Referer: <a href="http://example.org/referring_page">http://example.org/referring_page</a> </p>                |
-| <p>.r:-&#x3C;referrer> </p><p>(Exp: .r: -<a href="http://example.org/referring_page">http://example.org/referring_page</a>) </p><p><br></p> | <p>This syntax (with “-” prepended to the referrer) is supported. However, it does not deny access if another element (e.g., .r:*) grants access. </p><p>Exp: </p><p><br></p><p>GET /wiki/Referrer HTTP/1.1 Host: <a href="http://de.wikipedia.org/">http://de.wikipedia.org</a>  Referer: <a href="http://example.org/referring_page">http://example.org/referring_page</a> </p><p><br></p> |
-| .rlistings                                                                                                                                  | Any user can perform a HEAD or GET operation on the container provided the user also has read access on objects (e.g., also has .r:\* or .r:\<referrer>. No token is required.                                                                                                                                                                                                               |
+| **Value**                                                                                                                                 | **Description**                                                                                                                                                                                                                                                                                                                                                                          |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| .r:\*                                                                                                                                     | Any user has access to objects. No token is required in the request.                                                                                                                                                                                                                                                                                                                     |
+| <p>.r:&#x3C;referrer></p><p>(Exp: .r: <a href="http://example.org/referring_page">http://example.org/referring_page</a>)</p>              | <p>The referrer is granted access to objects. The referrer is identified by the Referer request header in the request. No token is required.</p><p>Exp:</p><p><br></p><p>GET /wiki/Referrer HTTP/1.1 Host: <a href="http://de.wikipedia.org/">http://de.wikipedia.org</a> Referer: <a href="http://example.org/referring_page">http://example.org/referring_page</a></p>                 |
+| <p>.r:-&#x3C;referrer></p><p>(Exp: .r: -<a href="http://example.org/referring_page">http://example.org/referring_page</a>)</p><p><br></p> | <p>This syntax (with “-” prepended to the referrer) is supported. However, it does not deny access if another element (e.g., .r:*) grants access.</p><p>Exp:</p><p><br></p><p>GET /wiki/Referrer HTTP/1.1 Host: <a href="http://de.wikipedia.org/">http://de.wikipedia.org</a> Referer: <a href="http://example.org/referring_page">http://example.org/referring_page</a></p><p><br></p> |
+| .rlistings                                                                                                                                | Any user can perform a HEAD or GET operation on the container provided the user also has read access on objects (e.g., also has .r:\* or .r:\<referrer>. No token is required.                                                                                                                                                                                                           |
 
 Để hiểu thêm về ACLs của container, vui lòng tham khảo [https://docs.openstack.org/swift/latest/overview\_acl.html](https://docs.openstack.org/swift/latest/overview\_acl.html).
 
-#### Chú ý khi sử dụng SwiftClient <a href="#usingswiftclient-chuykhisudungswiftclient" id="usingswiftclient-chuykhisudungswiftclient"></a>
-
+{% hint style="info" %}
 **Chú ý:**
 
-1. Không nên sử dụng phiên bản SwiftClient quá cũ trên các hệ điều hành có phiên bản quá cũ hoặc mới nhất vì có thể gặp lỗi.
-2. SwiftClient Không gây ra incomplete segment (segment rác) trong quá trình tải object lớn (multipart upload).
+* Không nên sử dụng phiên bản SwiftClient quá cũ trên các hệ điều hành có phiên bản quá cũ hoặc mới nhất vì có thể gặp lỗi.
+* SwiftClient Không gây ra incomplete segment (segment rác) trong quá trình tải object lớn (multipart upload).
+{% endhint %}

@@ -6,9 +6,7 @@ Your data is encrypted with AES-256 and primarily stored in vStorage, ensuring i
 
 **Model:**
 
-![](https://docs.vngcloud.vn/download/attachments/69468555/image2021-4-20\_11-18-23.png?version=1\&modificationDate=1703558582000\&api=v2)
-
-***
+<figure><img src="../../../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
 
 **Feature**
 
@@ -31,7 +29,7 @@ Your data is encrypted with AES-256 and primarily stored in vStorage, ensuring i
 
 ***
 
-**Tips:**&#x20;
+**Tips:**
 
 * It is advisable to place the gateway on-premise to optimize costs, access speed, and overall user experience.
 * The minimum configuration for the gateway should be 4 CPUs x 8 GB RAM x 100 SSD.

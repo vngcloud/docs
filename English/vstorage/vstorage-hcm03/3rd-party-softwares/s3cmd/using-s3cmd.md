@@ -62,5 +62,3 @@
 > Example: s3cmd abortmp s3://s3cmd-container/2gb-video.mp4 MWRmNjBhNWUtZGMwNy00YjNiLThhOTgtMWFmYmIxYzI0OTE
 
 The garbage segments of the file that have not been successfully uploaded will be cleaned up. For more details, refer to \[here]\(#).
-
-\

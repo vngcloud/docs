@@ -8,7 +8,7 @@ For a detailed list of vStorage API, refer to [https://docs.api.vngcloud.vn/serv
 
 Below is an example using vStorage API to create a new container in a project:
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/69468571/image2023-7-20_15-43-46.png?version=1&#x26;modificationDate=1703571826000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 In which:
 

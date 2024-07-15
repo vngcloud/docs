@@ -22,7 +22,7 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 **Bước 3:** Lúc này, bạn cần thiết lập cấu hình cho **Palo Alto.** Cụ thể, bạn có thể chọn **Volume, IOPS, Network, Security Group** mong muốn. **Bạn cần lựa chọn VPC và Subnet giống với VPC và Subnet mà bạn lựa chọn sử dụng cho Cluster của bạn.** Ngoài ra bạn cũng cần chọn Một Server Group đã tồn tại hoặc chọn **Dedicated SOFT ANTI AFFINITY group** để chúng tôi tự động tạo một server group mới.
 
-**Bước 4:** Tiến hành thanh toán như các tài nguyên bình thường trên VNG Cloud.&#x20;
+**Bước 4:** Tiến hành thanh toán như các tài nguyên bình thường trên VNG Cloud.
 
 ***
 
@@ -34,7 +34,7 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI của Palo Alto. Bạn cần tạo cùng VPC và sử dụng subnet khác với subnet có priority là 1 khi khởi tạo Palo Alto
 
-![](<../../../.gitbook/assets/3 (1).png>)
+![](../../../.gitbook/assets/3%20\(1\).png)
 
 **Bước 3**: Sau khi đăng nhập xong, bạn cần thực hiện thay đổi mật khẩu lần đầu. Hãy nhập mật khẩu mới theo mong muốn của bạn.
 
@@ -42,15 +42,15 @@ Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI c�
 
 * Chọn bút **Add**
 
-![](<../../../.gitbook/assets/4 (1).png>)
+![](../../../.gitbook/assets/4%20\(1\).png)
 
 * Đặt tên cho **Zone**: **Inside** sau đó chọn **OK**
 
-![](<../../../.gitbook/assets/5 (1).png>)
+![](../../../.gitbook/assets/5%20\(1\).png)
 
 * Làm tương tự đối với **Zone Outside**
 
-![](<../../../.gitbook/assets/6 (1).png>)
+![](../../../.gitbook/assets/6%20\(1\).png)
 
 **Bước 5**: Cấu hình cho **External Interface**
 
@@ -58,7 +58,7 @@ Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI c�
 * Virtual Router: **default**
 * Security Zone: **Outside**
 
-![](<../../../.gitbook/assets/7 (1).png>)
+![](../../../.gitbook/assets/7%20\(1\).png)
 
 * Chuyển sang **Tab IPv4** và chọn **Add** để nhập **Static IP** cho **External Interface**
 
@@ -153,7 +153,7 @@ Sau khi Palo Alto được khởi tạo và cấu hình thành công, bạn cầ
 
 **Bước 2:** Tại thanh menu điều hướng, chọn **Tab Network/ Route table.**
 
-**Bước 3:** Chọn **Create Route table.**&#x20;
+**Bước 3:** Chọn **Create Route table.**
 
 **Bước 4:** Nhập tên mô tả cho Route table. Tên Route table có thể bao gồm các chữ cái (a-z, A-Z, 0-9, '\_', '-'). Độ dài dữ liệu đầu vào nằm trong khoảng từ 5 đến 50. Nó không được bao gồm khoảng trắng ở đầu hoặc ở cuối.
 
@@ -163,14 +163,14 @@ Sau khi Palo Alto được khởi tạo và cấu hình thành công, bạn cầ
 
 **Bước 7:** Chọn <img src="https://docs-admin.vngcloud.vn/download/thumbnails/73762068/image2024-4-16_15-40-3.png?version=1&#x26;modificationDate=1713256805000&#x26;api=v2" alt="" data-size="line">tại Route table vừa tạo sau đó chọn **Edit Routes.**
 
-**Bước 8:** Tại phần thêm mới **Route** hãy nhập vào các thông tin:&#x20;
+**Bước 8:** Tại phần thêm mới **Route** hãy nhập vào các thông tin:
 
 * Đối với Destination, hãy nhập **Destination CIDR là 0.0.0.0/0**
 * Đối với Target, hãy nhập **Target CIDR là địa chỉ IP Network Interface 2 của Palo Alto.**
 
 Ví dụ:
 
-<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

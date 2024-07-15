@@ -1,7 +1,5 @@
 # Security
 
-#### Overview <a href="#security-overview" id="security-overview"></a>
-
 VNG Cloud is responsible for ensuring the security of the physical and virtual infrastructure that it provides for its services. In addition, VNG also provides services that allow customers to deploy their own security functions for their systems hosted at VNG Cloud.
 
 Security is a top priority at VNG Cloud. VNG Cloud customers will benefit from the most standard security standards for organizations and businesses. The responsibility for security will lie with both VNG Cloud and the customer, including the following customer responsibilities:
@@ -18,13 +16,3 @@ To protect customer information and data that customers store on the vStorage se
   * **Client-side encryption**: In this mechanism, the user is responsible for managing the key and workload of the encryption process. Data will be encrypted on the user's server or application layer.
 
 VNG Cloud is always striving to improve its security measures to ensure the safety of customer data.
-
-***
-
-#### Topic <a href="#security-topic" id="security-topic"></a>
-
-* [Access Control](https://docs-admin.vngcloud.vn/display/VSEN/Access+Control?src=contextnavpagetreemode)
-* [Data in Transit Security](https://docs-admin.vngcloud.vn/display/VSEN/Data+in+Transit+Security?src=contextnavpagetreemode)
-* [Data Security stored on vStorage](https://docs-admin.vngcloud.vn/display/VSEN/Data+Security+stored+on+vStorage?src=contextnavpagetreemode)
-
-\

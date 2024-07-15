@@ -18,26 +18,21 @@ To view detailed instructions on integrating the Cyberduck tool with vStorage, p
 #### **Continue with the following steps to complete the integration of S3cmd with vStorage:** <a href="#integratingcyberduckwithvstorage-continuewiththefollowingstepstocompletetheintegrationofs3cmdwithvst" id="integratingcyberduckwithvstorage-continuewiththefollowingstepstocompletetheintegrationofs3cmdwithvst"></a>
 
 1. Download the **Cyberduck** tool [https://cyberduck.io/download/](https://cyberduck.io/download/).
-2. Open the **Cyberduck** application**.**
+2. Open the **Cyberduck** application\*\*.\*\*
 3. Choose **Open Connection** or **Bookmark + New Bookmark**.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/69468437/image2023-7-17_9-23-33.png?version=1&#x26;modificationDate=1703484919000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-4\. Enter the connection information, including:
+4. Enter the connection information, including:
 
 * **Protocol**: VNG HCM01 - AWS4. When you select this method, the Server, Port, and URL information will be automatically recorded and displayed.
 * **Access key**: Enter the S3 access key you created from vIAM, which is also the access key information obtained from step 4 above.
 * **Secret key**: Enter the S3 access key you created from vIAM, which is also the access key information obtained from step 4 above.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/69468437/image2023-7-14_14-2-53.png?version=1&#x26;modificationDate=1703484919000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 5\. Choose **Connect**.
 
 6\. Now, Cyberduck has successfully connected to vStorage. You can now use Cyberduck to access vStorage, refer to the guide at \[Using Cyberduck Tool]\(#).
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/69468437/image2023-7-14_14-9-20.png?version=1&#x26;modificationDate=1703484920000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>

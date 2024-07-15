@@ -1,7 +1,5 @@
 # API developers
 
-#### Overview <a href="#apidevelopers-overview" id="apidevelopers-overview"></a>
-
 API is an abbreviation for Application Programming Interface, which is a method of connecting with other libraries and applications. When working with APIs, you may need to work with mechanisms or objects such as API key, HTTPS, TLS, CORS, etc. Below, we briefly describe these mechanisms or objects.
 
 **What is API Key?**
@@ -30,10 +28,3 @@ In addition to the **vStorage Portal** and **3rd party software** that vStorage 
 * vStorage Swift REST API
 
 Learn how to use the vStorage S3 API and vStorage Swift API in detail on each corresponding page.
-
-***
-
-#### Topic <a href="#apidevelopers-topic" id="apidevelopers-topic"></a>
-
-* [vStorage API](https://docs-admin.vngcloud.vn/display/VV/vStorage+API)
-* [vStorage Swift REST API](https://docs-admin.vngcloud.vn/display/VV/vStorage+Swift+REST+API)

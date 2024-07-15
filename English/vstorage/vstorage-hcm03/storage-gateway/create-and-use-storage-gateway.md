@@ -1,90 +1,73 @@
 # Create and Use Storage Gateway
 
-#### Create storage gateway <a href="#createandusestoragegateway-createstoragegateway" id="createandusestoragegateway-createstoragegateway"></a>
+**Hướng dẫn khởi tạo storage gateway**
 
-1. On VNG Cloud console portal, choose **Storage Gateway**
+1. Truy cập trang chủ VNGCloud tại [đây](https://dashboard.console.vngcloud.vn/). Chọn Service: **vStorage**, sau đó chọn **Storage Gateway**:
 
-&#x20; ![](https://docs.vngcloud.vn/download/attachments/69468545/image2023-12-26\_9-25-29.png?version=1\&modificationDate=1703557531000\&api=v2)2. On vStorage Gateway Portal, choose **Go to vMarketPlace**
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Frcir0HyPBZPsnCfVV2Bj%252Fimage.png%3Falt%3Dmedia%26token%3D6052f33c-dc01-417e-b73a-1a11de19ffcf&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=6ee619cb&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-&#x20;![](https://docs.vngcloud.vn/download/attachments/69468545/image2020-7-14\_7-33-14.png?version=1\&modificationDate=1703557683000\&api=v2)
+1. Tại trang vMarketplace, chọn **Launch on Computer Engine**
 
-3\. After that, you should lauch VM and setting information
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fv2jqhe7z3POx4bFx1Q5n%252Fimage.png%3Falt%3Dmedia%26token%3Ddae869f2-f6ba-4285-ace5-cd5b0e485754&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=8c968905&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-&#x20;![](https://docs.vngcloud.vn/download/attachments/69468545/image2020-7-14\_7-33-31.png?version=1\&modificationDate=1703557684000\&api=v2)
+1. Bạn nhập thông tin App mong muốn, lựa chọn Instance phù hợp, lựa chọn loại ổ đĩa và kích thước phù hợp, sau đó chọn network, security mong muốn và chọn **Launch Application**
 
-4\. Dùng browser truy cập vào WAN IP của VM đã tạo: Đăng nhập với tài khoản được gửi về email đăng ký vngcloud (lần đăng nhập đầu tiên sẽ đổi lại password mặc định)&#x20;
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FJDvQxCBJq8iF7CEB4Ncp%252Fimage.png%3Falt%3Dmedia%26token%3D4582a638-64d0-4e1d-9ca6-5865abc730c0&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=3ff0bf5f&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-&#x20;![](https://docs.vngcloud.vn/download/attachments/69468545/image2020-7-14\_7-34-2.png?version=1\&modificationDate=1703557684000\&api=v2)
+Sau khi bạn Launch Application thành công, hệ thống sẽ thực hiện khởi tạo một server tương ứng. Sau khi VM được tạo thành công, bạn hãy truy cập vào địa chỉ External IP của VM và thực hiện đăng nhập với thông tin đăng nhập đã được gửi về email của bạn (lần đăng nhập đầu tiên sẽ đổi lại password mặc định).
 
-\* Lưu ý: Security Groups cần mở thêm các port sau để share được dữ liệu:
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fo3YkbqWClgG28OFR3htL%252Fimage.png%3Falt%3Dmedia%26token%3Db95a55b4-b37a-4e55-baf0-036ab000faab&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=7e375025&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-\- port web: 80,443&#x20;
+**Chú ý:**
 
-\- port share:
+Security Groups cần mở thêm các port sau để share được dữ liệu:
 
-\+ port 445,139: nếu sử dụng SMB
+* port web: 80,443
+* port share:
+  * port 445,139: nếu sử dụng SMB
+  * port 111,2049,34567: nếu sử dụng NFS
 
-\+ port 111,2049,34567: nếu sử dụng NFS
+***
 
-#### 2. Tạo file share  <a href="#createandusestoragegateway-2.taofileshare" id="createandusestoragegateway-2.taofileshare"></a>
+**Hướng dẫn tạo file share**
 
-**2.1 Tạo credential**
+1. **Tạo credential**
 
-**Credential** chọn **create credentials:**&#x20;
+Tại mục **Credential** chọn C**reate credentials:**
 
-&#x20;![](https://docs.vngcloud.vn/download/attachments/69468545/image2020-7-14\_7-35-36.png?version=1\&modificationDate=1703557684000\&api=v2)
+Trong đó:
 
-Trong đó:&#x20;
+* Credential name: nhập tên credential mong muốn.
+* Region: chọn Region chứa project mà bạn muốn thực hiện lưu trữ trên vStorage.
+* Project ID
+* Provider: bạn có thể chọn sử dụng S3 key hoặc Swift user tùy chọn.
+  * Nếu dùng Swift, bạn cần nhập username và password.
+  * Nếu dùng S3 key, bạn cần nhập Access key và Secret key.
 
-\- Region: region của project vstorage lấy trên portal&#x20;
+Những thông tin này bạn có thể tạo cũng như lấy thông tin trên vStorage Portal và IAM Portal.
 
-\- Project ID: lấy trên portal&#x20;
+1. **Tạo file share**
 
-\- Provider: chọn S3 hoặc Swift&#x20;
+Chọn **file share** rồi chọn C**reate file share**
 
-Nếu dùng Swift&#x20;
+Trong đó:
 
-\+ username: thông tin vstorage trong mail lúc tạo vstorage đầu tiên&#x20;
+* Volume Information:
+  * vStorage Credential: chọn credential đã tạo bên trên.
+  * Container: chọn một container trong danh sách container trong project đã được khai báo sử dụng.
+* Permission:
+  * nfs: phân quyền theo IP, chúng tôi sẽ sử dụng IP để phân quyền, bạn cần nhập IP và chọn quyền tương ứng
+  * smb: phân quyền theo User, chúng tôi sẽ sử dụng User để phân quyền, bạn cần chọn User và chọn quyền tương ứng
 
-\+ password: trong mail&#x20;
+Chọn **Create** và đợi hoàn tất việc tạo File Share. Bạn cũng có thể xem thêm thông tin mount trong mục **Mount**
 
-Dùng S3:&#x20;
+<figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
-\+ Access key: lấy trên portal&#x20;
+<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
-\+ Secret key: lấy trên portal&#x20;
+<figure><img src="../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
-[Hướng dẫn tạo s3 key](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2721352)
-
-&#x20;**2.2 Tạo file share**
-
-Chọn **file share** rồi chọn **create file share**
-
-![](https://docs.vngcloud.vn/download/attachments/69468545/image2020-7-14\_7-46-27.png?version=1\&modificationDate=1703557684000\&api=v2)
-
-Chú thích:
-
-\- vStorage Credential: chọn credential đã tạo bên trên
-
-\- Container:  list container trong project credential (Lưu ý: Container có khoảng trắng / ký tự đặc biệt thì gateway sẽ không nhìn thấy,)
-
-\- cache: sử dụng local dish làm cache để tăng hiệu suất (mặc định là 1GB)
-
-\- client: hỗ trợ nfs và smb
-
-\+ nfs: sử dụng ip để phân quyền, nhập ip và chọn qyền tương ứng
-
-\+ smb: chon user đã tạo ở user
-
-Nhấn create và đợi hoàn tất
-
-![](https://docs.vngcloud.vn/download/attachments/69468545/image2020-7-14\_7-55-5.png?version=1\&modificationDate=1703557684000\&api=v2)
-
-Có thể xem thêm thông tin mount trong **Mount**
-
-![](https://docs.vngcloud.vn/download/attachments/69468545/image2020-7-14\_7-56-19.png?version=1\&modificationDate=1703557684000\&api=v2)
-
-#### 3. Client kết nối và sử dụng file share <a href="#createandusestoragegateway-3.clientketnoivasudungfileshare" id="createandusestoragegateway-3.clientketnoivasudungfileshare"></a>
+**3. Client kết nối và sử dụng file share**
 
 **3.1 Client nfs**
 
@@ -96,6 +79,8 @@ Trên UI gateway File Share -> Show Commands -> nfs -> copy -> dán lệnh vào 
 
 Trên window: Trên UI gateway **File Share -> Show Commands -> smb -> window -> copy -> dán vào search của window -> nhập user/password**
 
-Trên máy linhx, cài dặt client:  _apt install cifs-utils_&#x20;
+Trên máy linhx, cài dặt client: _apt install cifs-utils_
 
 Trên UI gateway **File Share -> Show Commands -> smb -> window -> copy -> dán vào terminal -> nhập user/password**
+
+[PreviousStorage gateway](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vstorage/vstorage-hcm03/storage-gateway)[Next](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vstorage/vstorage-hcm03/storage-gateway/ung-dung-gateway-thay-the-fileserver)

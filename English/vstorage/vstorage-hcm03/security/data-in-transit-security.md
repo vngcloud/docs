@@ -9,5 +9,3 @@ Here are some of the benefits of using in-transit encryption to secure data on v
 * **Helps protect data from unauthorized access:** In-transit encryption helps protect data from unauthorized access during transmission over a network. This helps reduce the risk of data breaches.
 * **Helps ensure data integrity:** In-transit encryption helps ensure that data is not changed or modified during transmission. This helps protect data from being tampered with or altered.
 * **Helps meet regulatory requirements:** Many regulations require the use of encryption to protect sensitive data. By using in-transit encryption, businesses can meet these regulatory requirements.
-
-\

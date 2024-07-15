@@ -9,5 +9,3 @@ Here are some of the specific benefits of using IAM to secure data on vStorage:
 * **Helps reduce the risk of data breaches**: By using IAM, businesses can reduce the risk of data breaches. IAM helps protect data from unauthorized access, which can lead to data breaches.
 
 For more details, please refer to Access Management and IAM for vStorage.
-
-\

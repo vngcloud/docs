@@ -39,26 +39,24 @@ Result:
   * Project type: Gold class.
   * Region: HCM01.
 
-![](https://docs.vngcloud.vn/download/attachments/69468565/image2023-7-17\_11-26-39.png?version=1\&modificationDate=1703571651000\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 **2. Create a container**
 
 The following API is used to initialize a container within a project.
 
-![](https://docs.vngcloud.vn/download/attachments/69468565/image2023-7-17\_11-27-51.png?version=1\&modificationDate=1703571651000\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 **3. Delete a container**
 
 The following API is used to delete a container within a project.
 
-![](https://docs.vngcloud.vn/download/attachments/69468565/image2023-7-17\_11-32-37.png?version=1\&modificationDate=1703571651000\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 **4. Delete an object**
 
 The following API is used to delete an object within a container.
 
-![](https://docs.vngcloud.vn/download/attachments/69468565/image2023-7-17\_11-33-32.png?version=1\&modificationDate=1703571651000\&api=v2)
+<figure><img src="../../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 In addition to the quick usage on the vStorage Portal, you can use the vStorage API on personal devices following the instructions in \[Use vStorage API]\(Link to the relevant documentation).
-
-\
