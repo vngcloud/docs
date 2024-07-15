@@ -39,6 +39,15 @@ Sau khi promote thành công, read replica đã chuyển thành **role:standalon
 
 ### C - Resize Instance Type <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 
+Để thay đổi cấu hình flavor MDS cho phù hợp hơn với nhu cầu sử dụng thực tế, bạn làm theo các hướng dẫn dưới đây:
+
+* Đầu tiên, chọn MDS Instance cần thay đổi, nhấp vào nút **Action**, chọn **“Thay Đổi Cấu Hình”** / **"Resize Instance Type".**
+
+<figure><img src="../../.gitbook/assets/image (558).png" alt=""><figcaption></figcaption></figure>
+
+* Tiếp theo, một trình chỉnh sửa sẽ hiển thị cho phép bạn chọn cấu hình flavor mới, xem xét giá cấu hình mới và hiện tại ở phía bên phải trước khi xác nhận.
+* Cuối cùng, nhấn **"Resize" / "Thay đổi"** để xác nhận quá trình. Bạn chờ một lát để hệ thống thực hiện các bước cần thiết, khi MDS Instance thay đổi cấu hình thành công sẽ có trạng thái **Active**.
+
 ### D - Edit Configuration Group <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 
 Để thay đổi liên kết MDS Instance với Configuration Group đã có, bạn có hai phương án:
@@ -62,10 +71,28 @@ Sau khi promote thành công, read replica đã chuyển thành **role:standalon
 
 ### E - Edit DB Setting <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 
+Sửa đổi Cài đặt DB cho phép bạn thay đổi **Mật khẩu Maste**r, **Khả năng Truy cập Công khai** và **Cài đặt Sao lưu**. Để làm điều này, chọn database cần sửa đổi, nhấp vào nút **“Edit DB Setting”** ở góc trên bên phải (tham khảo hình bên dưới).
 
+<figure><img src="../../.gitbook/assets/image (560).png" alt=""><figcaption></figcaption></figure>
+
+Một trình chỉnh sửa sẽ hiển thị để thay đổi Cài đặt DB của bạn, bao gồm:
+
+* Bật/Tắt master password khi truy cập vào MDS Instance.
+* Bật/Tắt khả năng truy cập công khai (Public accessibility)
+* Bật/Tắt cài đặt tự động sao lưu.
+
+Lưu ý: Đối với MDS Instance **role:slave**, việc bật/tắt master password phụ thuộc vào MDS Instance **role:master**, nếu MDS Instance role:master bật master password, thì toàn bộ db role:slave của db role:master sẽ bật password, và ngược lại, khi db role:master tắt password, toàn bộ db role:slave của db role:master sẽ tắt password.
 
 ### F - Start, Shutdown, Reboot <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 
+Các hành động Start, Shutdown và Reboot giúp bạn tối ưu hóa việc sử dụng tài nguyên MDS Instance. Thực hiện các hành động này khi cần thiết, để thực hiện, bạn chọn MDS Instance cần thay đổi, chọn Action và nhấp vào nút “Start” / “Reboot” / “Shutdown” tùy vào mục đích sử dụng.
+
+<figure><img src="../../.gitbook/assets/image (559).png" alt=""><figcaption></figcaption></figure>
+
 ### G - Delete MDS <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
+
+Chức năng **"Xóa"** cho phép người dùng xóa vĩnh viễn một MDS Instance khỏi hệ thống, đảm bảo loại bỏ hoàn toàn database, dữ liệu, cấu hình và bất kỳ phụ thuộc nào liên quan. VNG Cloud khuyến nghị bạn nên cho phép hệ thống của chúng tôi tạo bản sao lưu cuối cùng của cơ sở dữ liệu trước khi xóa nó để bảo vệ và phục hồi dữ liệu bằng cách chọn vào ô **“Tạo bản sao lưu cuối cùng”** trước khi xác nhận xóa.
+
+Lưu ý: Sau khi hoàn tất quá trình xóa, nếu MDS Instance được chỉ định xóa là **role:master,** thì khi xóa thành công, toàn bộ db **role:slave** của master được xóa sẽ promote lên standalone.
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/13010741/image2020-2-21_10-36-7.png?version=1&#x26;modificationDate=1582256168000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
