@@ -37,14 +37,3 @@ To access your resources (project, container, object, report, etc.) on the vStor
 | 1  | Root User Account | vStorage Portal                                                  | You cannot use this account to access vStorage service resources through channels other than vStorage Portal.                                                                               |
 | 2  | IAM User Account  | vStorage Portal                                                  | You cannot use this account to access vStorage service resources through channels other than vStorage Portal.                                                                               |
 | 3  | Service Account   | vStorage API, Swift/ s3 client tool, Swift Rest API, S3 Rest API | You cannot use this account to access resources through the vStorage Portal. Additionally, you can use this account to integrate with the vStorage service from your software applications. |
-
-***
-
-#### Topic <a href="#managingaccesstovstorageresources-topic" id="managingaccesstovstorageresources-topic"></a>
-
-* [Access Permissions and Working Through vStorage](https://docs-admin.vngcloud.vn/display/VSEN/Access+Permissions+and+Working+Through+vStorage?src=contextnavpagetreemode)
-* [Access Permissions and Working Through IAM](https://docs-admin.vngcloud.vn/display/VSEN/Access+Permissions+and+Working+Through+IAM?src=contextnavpagetreemode)
-  * [Features, vStorage Resources, and Access Permissions](https://docs-admin.vngcloud.vn/display/VSEN/Features%2C+vStorage+Resources%2C+and+Access+Permissions?src=contextnavpagetreemode)
-* [Access Permissions and Working Through Root User Account](https://docs-admin.vngcloud.vn/display/VSEN/Access+Permissions+and+Working+Through+Root+User+Account?src=contextnavpagetreemode)
-* [Access Permissions and Working Through IAM User Account](https://docs-admin.vngcloud.vn/display/VSEN/Access+Permissions+and+Working+Through+IAM+User+Account?src=contextnavpagetreemode)
-* [Access Permissions and Working Through ](https://docs-admin.vngcloud.vn/display/VSEN/Access+Permissions+and+Working+Through+Service+Account?src=contextnavpagetreemode)
