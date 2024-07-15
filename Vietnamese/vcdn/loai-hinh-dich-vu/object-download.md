@@ -26,15 +26,15 @@ Dịch vụ Object Download của VNG Cloud giúp doanh nghiệp: tối ưu chi 
 
 #### **Tính Năng Dịch Vụ** <a href="#objectdownload-tinhnangdichvu" id="objectdownload-tinhnangdichvu"></a>
 
-* Các tính năng [bảo mật link đầu ra](../chi-tiet-tinh-nang/security-link.md).
-* Tùy chỉnh [cơ chế caching](../chi-tiet-tinh-nang/tuy-chinh-cac-tinh-nang-cache.md) phù hợp với loại nội dung.
-* Hỗ trợ [CNAME](../chi-tiet-tinh-nang/cname.md) cho CDN.
-* Hỗ trợ tính năng bảo mật [HSTS](../chi-tiet-tinh-nang/tinh-nang-bao-mat-hsts.md).
-* Tùy chỉnh [thời gian cache](../chi-tiet-tinh-nang/thoi-gian-cache.md) tối đa.
-* Hỗ trợ cơ chế “nhà phát triển” ([Development Mode](../chi-tiet-tinh-nang/development-mode.md)).
-* Hỗ trợ tùy chỉnh [Origin](../chi-tiet-tinh-nang/origin.md).
-* Hỗ trợ [tùy chọn HTTPS](../chi-tiet-tinh-nang/tuy-chon-https-o-origin.md) khi kết nối đến Origin.
-* Hỗ trợ kết nối trực tiếp đến origin là [Object Storage thuộc chuẩn AWS S3](object-download.md).
+* Các tính năng bảo mật link đầu ra.
+* Tùy chỉnh cơ chế caching phù hợp với loại nội dung.
+* Hỗ trợ CNAME cho CDN.
+* Hỗ trợ tính năng bảo mật HSTS.
+* Tùy chỉnh thời gian cache tối đa.
+* Hỗ trợ cơ chế “nhà phát triển” (Development Mode).
+* Hỗ trợ tùy chỉnh Origin.
+* Hỗ trợ tùy chọn HTTPS khi kết nối đến Origin.
+* Hỗ trợ kết nối trực tiếp đến origin là Object Storage thuộc chuẩn AWS S3.
 
 ***
 
@@ -50,6 +50,6 @@ Dịch vụ Object Download của VNG Cloud giúp doanh nghiệp: tối ưu chi 
 
 * **Bước 3:** Nhập tên CDN.
 * **Bước 4:** Tùy chỉnh các tính năng của CDN.
-* **Bước 5:** Tùy theo người dùng yêu cầu nhập thông [tin chính sách rule cơ bản](../chi-tiet-tinh-nang/chinh-sach-rule-co-ban-pagerule.md) hoặc chính sách rule nâng cao cho CDN.
+* **Bước 5:** Tùy theo người dùng yêu cầu nhập thông tin chính sách rule cơ bản hoặc chính sách rule nâng cao cho CDN.
 * **Bước 6:** Khi điền các thông tin đúng và đủ thì nhấn button Submit ở cuối cùng giao diện đợi khoản 5 phút cho hệ thống cái đặt CDN cho người dùng.
 * **Bước 7:** Người dùng có thể truy cập CDN qua vCDN Domain khi đã tạo CDN xong.

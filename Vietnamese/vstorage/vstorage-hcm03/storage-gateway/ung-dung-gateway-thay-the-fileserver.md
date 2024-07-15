@@ -4,11 +4,9 @@ Một trong những ứng dụng phổ biến của storage gateway là sử d�
 
 Các dữ liệu của bạn sẽ được mã hóa AES-256 và lưu chủ yếu tại vStorage, nhờ vậy dữ liệu được bảo vệ an toàn theo các cơ chế bảo mật của vStorage như Replication 3 bản trên 3 server vật lý khác nhau, Tính năng lưu phiên bản bảo vệ dữ liệu bị mất do các lỗi upload đè do trùng tên hoặc xóa nhầm. Đặc biệt khi dữ liệu của bạn đủ lớn, việc sử dụng gateway và vStorage sẽ tiết kiệm chi phí lưu trữ đáng kể nhờ chi phí thấp của vStorage so với việc lưu trên một ổ đĩa SSD thông thưởng.&#x20;
 
-**Mô hình**&#x20;
+**Mô hình**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49648993/image2021-4-20_11-18-23.png?version=1&#x26;modificationDate=1675845508000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-***
+<figure><img src="../../../.gitbook/assets/image (566).png" alt=""><figcaption></figcaption></figure>
 
 **Tính năng**&#x20;
 
@@ -43,5 +41,3 @@ Các dữ liệu của bạn sẽ được mã hóa AES-256 và lưu chủ yếu
 * Ngoài ra bạn có thể tăng trải nghiệm người dùng bằng cách thiết lập thêm SSD để gateway có thể cache nhiều hơn.&#x20;
 
 Để khởi tạo gateway và dùng thử gateway bạn có thể xem chi tiết tại đây: [Storage gateway](./).
-
-\

@@ -1,2 +1,0 @@
-# Hiệu suất dịch vụ
-

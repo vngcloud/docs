@@ -14,7 +14,9 @@
 
 <figure><img src="../../../.gitbook/assets/image (557).png" alt=""><figcaption></figcaption></figure>
 
-Sau khi Application được tạo thành công, sẽ có email thông tin VM gửi về tài khoản của bạn. Dùng browser truy cập vào WAN IP của VM đã tạo: Đăng nhập với tài khoản được gửi về email đăng ký vngcloud (lần đăng nhập đầu tiên sẽ đổi lại password mặc định)
+Sau khi bạn Launch Application thành công, hệ thống sẽ thực hiện khởi tạo một server tương ứng. Sau khi VM được tạo thành công, bạn hãy truy cập vào địa chỉ External IP của VM và thực hiện đăng nhập với thông tin đăng nhập đã được gửi về email của bạn (lần đăng nhập đầu tiên sẽ đổi lại password mặc định).
+
+<figure><img src="../../../.gitbook/assets/image (561).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**
@@ -31,51 +33,41 @@ Security Groups cần mở thêm các port sau để share được dữ liệu:
 
 #### Hướng dẫn tạo file share  <a href="#khoitaovasudungstoragegateway-2.taofileshare" id="khoitaovasudungstoragegateway-2.taofileshare"></a>
 
-**2.1 Tạo credential**
+1. **Tạo credential**
 
-**Credential** chọn **create credentials:**&#x20;
+Tại mục **Credential** chọn C**reate credentials:**&#x20;
 
 Trong đó:&#x20;
 
-\- Region: region của project vstorage lấy trên portal&#x20;
+* Credential name: nhập tên credential mong muốn.
+* Region: chọn Region chứa project mà bạn muốn thực hiện lưu trữ trên vStorage.
+* Project ID
+* Provider: bạn có thể chọn sử dụng S3 key hoặc Swift user tùy chọn.
+  * Nếu dùng Swift, bạn cần nhập username và password.
+  * Nếu dùng S3 key, bạn cần nhập Access key và Secret key.
 
-\- Project ID: lấy trên portal&#x20;
+Những thông tin này bạn có thể tạo cũng như lấy thông tin trên vStorage Portal và IAM Portal.&#x20;
 
-\- Provider: chọn S3 hoặc Swift&#x20;
+2. **Tạo file share**
 
-Nếu dùng Swift&#x20;
+Chọn **file share** rồi chọn C**reate file share**
 
-\+ username: thông tin vstorage trong mail lúc tạo vstorage đầu tiên&#x20;
+Trong đó:
 
-\+ password: trong mail&#x20;
+* Volume Information:
+  * vStorage Credential: chọn credential đã tạo bên trên.
+  * Container: chọn một container trong danh sách container trong project đã được khai báo sử dụng.
+* Permission:
+  * nfs: phân quyền theo IP, chúng tôi sẽ sử dụng IP để phân quyền, bạn cần nhập IP và chọn quyền tương ứng
+  * smb: phân quyền theo User, chúng tôi sẽ sử dụng User để phân quyền, bạn cần chọn User và chọn quyền tương ứng
 
-Dùng S3:&#x20;
+Chọn **Create** và đợi hoàn tất việc tạo File Share. Bạn cũng có thể xem thêm thông tin mount trong mục **Mount**
 
-\+ Access key: lấy trên portal&#x20;
+<figure><img src="../../../.gitbook/assets/image (562).png" alt=""><figcaption></figcaption></figure>
 
-\+ Secret key: lấy trên portal&#x20;
+<figure><img src="../../../.gitbook/assets/image (565).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;**2.2 Tạo file share**
-
-Chọn **file share** rồi chọn **create file share**
-
-Chú thích:
-
-\- vStorage Credential: chọn credential đã tạo bên trên
-
-\- Container:  list container trong project credential (Lưu ý: Container có khoảng trắng / ký tự đặc biệt thì gateway sẽ không nhìn thấy,)
-
-\- cache: sử dụng local dish làm cache để tăng hiệu suất (mặc định là 1GB)
-
-\- client: hỗ trợ nfs và smb
-
-\+ nfs: sử dụng ip để phân quyền, nhập ip và chọn qyền tương ứng
-
-\+ smb: chon user đã tạo ở user
-
-Nhấn create và đợi hoàn tất
-
-Có thể xem thêm thông tin mount trong **Mount**
+<figure><img src="../../../.gitbook/assets/image (564).png" alt=""><figcaption></figcaption></figure>
 
 #### 3. Client kết nối và sử dụng file share <a href="#khoitaovasudungstoragegateway-3.clientketnoivasudungfileshare" id="khoitaovasudungstoragegateway-3.clientketnoivasudungfileshare"></a>
 

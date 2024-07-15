@@ -1,2 +1,0 @@
-# Người dùng Linux
-

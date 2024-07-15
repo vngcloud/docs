@@ -7,4 +7,4 @@
 3. Trên danh sach các IAM User Account đang có, bạn hãy chọn một hoặc nhiều tài khoản người dùng IAM mà bạn muốn hủy bỏ (xóa).
 4. Chọn **Delete**.
 
-Kể từ thời điểm IAM User Account bị hủy thành công, bạn sẽ không thể sử dụng IAM User Account này để truy xuất vào DataSync. Hãy thận trọng khi thực hiện thao tác hủy (xóa) tài khoản IAM User Account bởi bạn sẽ không thể khôi phục tài khoản đã xóa này. Chi tiết hãy tham khảo thêm tại [đây.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805240)
+Kể từ thời điểm IAM User Account bị hủy thành công, bạn sẽ không thể sử dụng IAM User Account này để truy xuất vào DataSync. Hãy thận trọng khi thực hiện thao tác hủy (xóa) tài khoản IAM User Account bởi bạn sẽ không thể khôi phục tài khoản đã xóa này.
