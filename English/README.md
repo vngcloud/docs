@@ -21,9 +21,9 @@ Welcome to VNG Cloud's user guide page. Here you can easily find useful informat
 
 * [vServer HCM03-1A](vserver/)
 
-[**vStorage - Mul-ti tier cloud storage solution**](vstorage/)
+[**vStorage - Mul-ti tier cloud storage solution**](vstorage/vstorage-hcm03/)
 
-* [vStorage (Object Storage, new UI portal)](vstorage/)\
+* [vStorage (Object Storage, new UI portal)](vstorage/vstorage-hcm03/)\
 
 {% endtab %}
 

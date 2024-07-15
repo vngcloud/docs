@@ -9,7 +9,7 @@ However, what you need to do now is create a Backup job for your resource follow
 {% hint style="info" %}
 Important
 
-When you use the vBackup service for the first time, we will automatically create a default storage location on vStorage with 50 GB of free storage and a usage period of 1 month. However, to store more data, you will need to purchase additional storage capacity. The usage and payment for backup storage will be in the Gold class tier of vStorage. For more information on storage policies and terms, see [here](../../../vstorage/features-of-vstorage/working-with-vbackup-project.md).
+When you use the vBackup service for the first time, we will automatically create a default storage location on vStorage with 50 GB of free storage and a usage period of 1 month. However, to store more data, you will need to purchase additional storage capacity. The usage and payment for backup storage will be in the Gold class tier of vStorage. For more information on storage policies and terms, see [here](broken-reference).
 {% endhint %}
 
 ### Creating a Backup Based on Policy Schedule in the vBackup Interface <a href="#taobansaoluuchomaychuaotheobolichpolicy-taobansaoluutheobolichpolicytaigiaodienvbackup" id="taobansaoluuchomaychuaotheobolichpolicy-taobansaoluutheobolichpolicytaigiaodienvbackup"></a>

@@ -14,7 +14,7 @@ The Token represents the Username/Password across the entire vStorage project, t
 
 ### \[vStorage] How can I recover a project from the vStorage service?
 
-Please refer to the documentation at the [Renew a Project ](../vstorage/features-of-vstorage/working-with-projects/renew-a-project.md)Link.
+Please refer to the documentation at the [Renew a Project ](broken-reference)Link.
 
 ### \[vStorage] I can't download objects from the vStorage storage service, it reports error 400.
 
@@ -35,7 +35,7 @@ Currently, vStorage is compatible with user-side tools such as:
 * GUI-based user tools: Cyberduck, S3 Browser
 * CLI-based user tools: Swift CLI, Rclone, S3cmd, Duplicity
 
-&#x20;Please refer to the documentation on working with [3rd party softwares](../vstorage/3rd-party-softwares/) for more details.
+&#x20;Please refer to the documentation on working with [3rd party softwares](broken-reference) for more details.
 
 ### \[vStorage] Why do I see my project missing when I check vStorage?
 
@@ -43,7 +43,7 @@ Please double-check if you are in the correct region where you initialized the p
 
 ### \[vStorage] Why do I get an "Unauthorized" error when accessing my uploaded storage file?
 
-Please check if you have made the container public. If not, access the project containing the container you want to upload files to, then switch the container to public mode as instructed in the [Make Container Public](../vstorage/features-of-vstorage/working-with-containers/make-container-public.md) and[ Make Container Private](../vstorage/features-of-vstorage/working-with-containers/make-container-private.md) guides.
+Please check if you have made the container public. If not, access the project containing the container you want to upload files to, then switch the container to public mode as instructed in the [Make Container Public](broken-reference) and[ Make Container Private](broken-reference) guides.
 
 ### \[vStorage] How can I connect vCDN and vStorage?
 
@@ -51,7 +51,7 @@ Please configure the connection on the vCDN using the S3 Origin protocol as inst
 
 ### \[vStorage] How can I delete unused storage?
 
-Please access the administration page and delete the projects that are no longer needed. If your account is prepaid and the project still has usage time remaining, when you delete the project, you will be refunded the unused amount based on the actual number of days you did not use the project on the project's storage cycle that you initially purchased. This refunded amount will be added to your credit wallet balance. For details, refer to the [Delete a Project ](../vstorage/features-of-vstorage/working-with-projects/delete-a-project.md)guide.
+Please access the administration page and delete the projects that are no longer needed. If your account is prepaid and the project still has usage time remaining, when you delete the project, you will be refunded the unused amount based on the actual number of days you did not use the project on the project's storage cycle that you initially purchased. This refunded amount will be added to your credit wallet balance. For details, refer to the [Delete a Project ](broken-reference)guide.
 
 ### \[vStorage] When I upload files to my storage, I get an error and can't view MP4 files. Files under 10MB can be viewed.
 
@@ -59,7 +59,7 @@ There could be various reasons for this error, but the quickest solution is to d
 
 ### \[vStorage] I've just created storage on vngcloud, how do I upload files or folders?
 
-Please refer to the upload file guide at [Upload Objects](../vstorage/features-of-vstorage/working-with-directories-and-objects/upload-objects.md) and the folder operation guide at [Create Folder](../vstorage/features-of-vstorage/working-with-directories-and-objects/working-with-directories.md).
+Please refer to the upload file guide at [Upload Objects](broken-reference) and the folder operation guide at [Create Folder](broken-reference).
 
 ### \[vStorage] Accessing the API reports a 404 error.
 
@@ -69,30 +69,30 @@ There could be many reasons for a 404 error, and one possible cause is an incorr
 
 Currently, vStorage supports access control management through:
 
-* Root user account on the vStorage service. See [Root User Accoun](../vstorage/identity-and-access-management/managing-vstorage-access-account/root-user-account.md)t for details.
-* IAM user account on the vStorage service. See[ Identity and Access Management](../vstorage/identity-and-access-management/) for details.
+* Root user account on the vStorage service. See [Root User Accoun](broken-reference)t for details.
+* IAM user account on the vStorage service. See[ Identity and Access Management](broken-reference) for details.
 
-IAM (limits access to vStorage through the vIAM system according to specified policies), IP range ACLs (limits access to vStorage projects or containers from certain IP addresses defined through IP/Subnet lists set in metadata at project or container level, or both levels), and vStorage Credentials (allows you to create key pairs that you can use through 3rd party software to access vStorage projects/containers). See [Identity and Access Management](../vstorage/identity-and-access-management/) for details.
+IAM (limits access to vStorage through the vIAM system according to specified policies), IP range ACLs (limits access to vStorage projects or containers from certain IP addresses defined through IP/Subnet lists set in metadata at project or container level, or both levels), and vStorage Credentials (allows you to create key pairs that you can use through 3rd party software to access vStorage projects/containers). See [Identity and Access Management](broken-reference) for details.
 
 ### \[vStorage] Can I grant permissions on each directory, each object, or do I have to grant permissions on all objects within a container?
 
-You can grant permissions at the object/directory/container levels through the vStorage IAM feature. See [Access Permissions and Woking thourgh IAM](../vstorage/identity-and-access-management/managing-access-to-vstorage-resources/access-permissions-and-working-through-iam/) for details.
+You can grant permissions at the object/directory/container levels through the vStorage IAM feature. See [Access Permissions and Woking thourgh IAM](broken-reference) for details.
 
 ### \[vStorage] Can I mount vStorage as a hard drive on vServer for use as a data volume?
 
-You can use 3rd party software like Rclone/S3cmd to set up vStorage mount for use as a network drive. See the guides[ here](../vstorage/usecase/migrate-data/rclone-mount-vstorage-to-window-server.md) or [here](../vstorage/usecase/migrate-data/rclone-mount-vstorage-to-local-drive-on-linux-skip-to-end-of-metadata.md) if you are using Linux.
+You can use 3rd party software like Rclone/S3cmd to set up vStorage mount for use as a network drive. See the guides[ here](broken-reference) or [here](broken-reference) if you are using Linux.
 
 ### \[vStorage] Where can I view actual monthly traffic and requests? Is real-time support available?
 
-You can view traffic and request information as per the instructions in [Viewing Project Properties](../vstorage/features-of-vstorage/working-with-projects/viewing-project-properties.md).
+You can view traffic and request information as per the instructions in [Viewing Project Properties](broken-reference).
 
 ### \[vStorage] What types of traffic are considered international traffic in the vStorage service?
 
-Traffic leaving the territory of Vietnam is considered international traffic. You can view traffic information as per the instructions in[ Viewing Project Properties.](../vstorage/features-of-vstorage/working-with-projects/viewing-project-properties.md)
+Traffic leaving the territory of Vietnam is considered international traffic. You can view traffic information as per the instructions in[ Viewing Project Properties.](broken-reference)
 
 ### \[vStorage] How are vStorage request fees calculated?
 
-For Silver/Archive storage classes, request fees are incurred when you interact with objects. When these request volumes exceed the free tier (predefined by us and displayed on the interface when you [create a project](../vstorage/features-of-vstorage/working-with-projects/create-a-project.md)), the excess request volumes will be accumulated and billed as additional charges on a bill for exceeding the limit at the end of the month. Request-based actions include:
+For Silver/Archive storage classes, request fees are incurred when you interact with objects. When these request volumes exceed the free tier (predefined by us and displayed on the interface when you [create a project](broken-reference)), the excess request volumes will be accumulated and billed as additional charges on a bill for exceeding the limit at the end of the month. Request-based actions include:
 
 * GET: Used to retrieve information from the server based on the provided URL. For example, retrieving metadata of account lists, containers, objects, or retrieving the content of objects.
 * HEAD: Similar to GET but the response does not include a body, only HTTP headers. For example, Content-Type, Accept-Encoding, Accept-Charset.
