@@ -61,10 +61,10 @@ Một Service Account bao gồm thông tin xác thực (Client ID và Secret Key
 
 Để gắn S3 Key và Swift user chúng tôi khuyến nghị bạn nên tuân theo các hướng dẫn dưới đây:
 
-* [Khởi tạo vStorage Credentials](../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/)
-* [Khởi tạo S3](../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-s3-key.md)
-* [Khởi tạo Swift user](../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-swift-user.md)
-* [Liên kết S3, Swift user](../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/lien-ket-s3-key-swift-user-voi-tai-khoan-service-account-tuong-ung.md)
+* [Khởi tạo vStorage Credentials](../../../vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/)
+* [Khởi tạo S3](../../../vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-s3-key.md)
+* [Khởi tạo Swift user](../../../vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-swift-user.md)
+* [Liên kết S3, Swift user](../../../vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/lien-ket-s3-key-swift-user-voi-tai-khoan-service-account-tuong-ung.md)
 
 #### 6. Xóa Service Account? <a href="#serviceaccounts-6.xoaserviceaccount" id="serviceaccounts-6.xoaserviceaccount"></a>
 

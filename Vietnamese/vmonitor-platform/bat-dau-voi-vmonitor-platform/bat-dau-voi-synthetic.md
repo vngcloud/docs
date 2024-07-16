@@ -14,7 +14,7 @@ Thực hiện tạo project theo các bước bên dưới:
 6. Chọn **Buy Synthetic Test Quota**.
 7. Thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Synthetic test quota** sẽ được khởi tạo.
 
-Cách tính chi phí cho mỗi gói Synthetic Test quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../vstorage/vstorage-hcm03/cach-tinh-phi/).
+Cách tính chi phí cho mỗi gói Synthetic Test quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../vstorage/object-storage/vstorage-hcm03/cach-tinh-phi/).
 
 ***
 

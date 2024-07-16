@@ -2,7 +2,7 @@
 
 Giải pháp lưu trữ linh hoạt, an toàn cùng với khả năng đáp ứng nhu cầu truy xuất dữ liệu nhanh.
 
-[Tài liệu HDSD vStorage](vstorage-hcm03/vstorage-la-gi/)
+[Tài liệu HDSD vStorage](object-storage/vstorage-hcm03/vstorage-la-gi/)
 
 Video hướng dẫn khởi tạo project trên vStorage
 

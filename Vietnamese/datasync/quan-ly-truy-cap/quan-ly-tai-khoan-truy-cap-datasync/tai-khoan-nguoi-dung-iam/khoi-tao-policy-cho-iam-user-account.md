@@ -22,6 +22,6 @@
    3. Bạn cũng có thể chọn **Any** để cho phép truy cập tới mọi project, container, object trong tài khoản SSO account của bạn.&#x20;
    4. Chọn **Request conditions:** nhập điều kiện đặc biệt cho policy nếu có.&#x20;
 
-Sau khi bạn thực hiện 8 bước bên trên, policy cho DataSync đã được khởi tạo. Tiếp theo, bạn hãy gán nó vào IAM User Account theo hướng dẫn tại [Liên kết tài khoản IAM User Account với policy tương ứng](../../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-nguoi-dung-iam/lien-ket-tai-khoan-iam-user-account-voi-policy-tuong-ung.md).
+Sau khi bạn thực hiện 8 bước bên trên, policy cho DataSync đã được khởi tạo. Tiếp theo, bạn hãy gán nó vào IAM User Account theo hướng dẫn tại [Liên kết tài khoản IAM User Account với policy tương ứng](../../../../vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-nguoi-dung-iam/lien-ket-tai-khoan-iam-user-account-voi-policy-tuong-ung.md).
 
 Ngoài các bước tạo policy đặc thù cho riêng bạn như trên, chúng tôi cũng cung cấp cho bạn một tập các policy mặc định với các quyền hạn đa dạng. Bạn có thể sử dụng tập policy này và liên kết trực tiếp chúng tới tài khoản IAM User Account. Để biết thêm thông tin về danh sách policy mặc định, tham khảo tại [Tính năng, tài nguyên DataSync và quyền truy cập](../../quan-ly-truy-cap-tai-nguyen-datasync/tinh-nang-tai-nguyen-datasync-va-quyen-truy-cap.md).

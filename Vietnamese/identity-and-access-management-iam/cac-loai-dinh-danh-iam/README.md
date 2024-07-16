@@ -26,7 +26,7 @@ IAM User Group là một tập hợp các IAM User Account. IAM User Group giúp
 
 Service Account là một danh tính bạn có thể tạo trong tài khoản Root User của mình với các quyền cụ thể. Service Account có một số điểm tương đồng với IAM User Account. Cả Server Account và User Account đều là các danh tính với các chính sách quyền xác định những gì danh tính đó có thể và không thể làm với các tài nguyên của VNG Cloud. Tuy nhiên, Service Account là các danh tính được ứng dụng hoặc máy tính sử dụng, không phải là người, để thực hiện các cuộc gọi API được ủy quyền và truy cập vào các tài nguyên cụ thể. Tìm hiểu thêm hướng dẫn chi tiết tại:
 
-* [Quản lý Service Account](../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-tai-khoan-service-account.md)
+* [Quản lý Service Account](../../vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-tai-khoan-service-account.md)
 
 #### vStorage credentials <a href="#iamidentities-vstoragecredentials" id="iamidentities-vstoragecredentials"></a>
 

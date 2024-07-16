@@ -1,6 +1,6 @@
 # Migration Cluster from vContainer to VKS
 
-Để migrate một Cluster từ hệ thống vContainer tới hệ thống VKS, hãy thực hiện theo các bước theo tài liệu này.&#x20;
+Để migrate một Cluster từ hệ thống vContainer tới hệ thống VKS, hãy thực hiện theo các bước theo tài liệu này.
 
 ## Điều kiện cần
 
@@ -107,115 +107,110 @@ Migrating resources private outside cluster (di chuyển tài nguyên riêng tư
 
 Sau khi bạn đã thực hiện migrate các tài nguyên private ngoài cluster, bạn có thể sử dụng công cụ migration để sao lưu (backup) và khôi phục (restore) application trên cluster nguồn và cluster đích.
 
-* Tạo một **vStorage Project, Container** làm nơi nhận dữ liệu backup của cụm theo hướng dẫn tại [đây](../../vstorage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-project/khoi-tao-project.md).
-* Khởi tạo S3 key tương ứng với vStorage Project này theo hướng dẫn tại [đây](../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-s3-key.md).
+* Tạo một **vStorage Project, Container** làm nơi nhận dữ liệu backup của cụm theo hướng dẫn tại [đây](../../vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-project/khoi-tao-project.md).
+* Khởi tạo S3 key tương ứng với vStorage Project này theo hướng dẫn tại [đây](../../vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-s3-key.md).
 
 Ví dụ, tôi đã khởi tạo một vStorage Project, Container có thông tin sau: Region: HCM03, Container: mycontainer, Endpoint: [https://hcm03.vstorage.vngcloud.vn](https://hcm03.vstorage.vngcloud.vn).
 
 ### Trên cả 2 Cluster (source and target)
 
-* Tạo file **credentials-velero** với nội dung sau:
+*   Tạo file **credentials-velero** với nội dung sau:
 
-  ```yaml
-  [default]
-  aws_access_key_id=________________________
-  aws_secret_access_key=________________________
-  ```
+    ```yaml
+    [default]
+    aws_access_key_id=________________________
+    aws_secret_access_key=________________________
+    ```
+*   Cài đặt Velero CLI:
 
-* Cài đặt Velero CLI:
+    ```bash
+    curl -OL https://github.com/vmware-tanzu/velero/releases/download/v1.13.2/velero-v1.13.2-linux-amd64.tar.gz
+    tar -xvf velero-v1.13.2-linux-amd64.tar.gz
+    cp velero-v1.13.2-linux-amd64/velero /usr/local/bin
+    ```
+*   Cài đặt Velero trên 2 cụm của bạn theo lệnh:
 
-  ```bash
-  curl -OL https://github.com/vmware-tanzu/velero/releases/download/v1.13.2/velero-v1.13.2-linux-amd64.tar.gz
-  tar -xvf velero-v1.13.2-linux-amd64.tar.gz
-  cp velero-v1.13.2-linux-amd64/velero /usr/local/bin
-  ```
-
-* Cài đặt Velero trên 2 cụm của bạn theo lệnh:
-
-  ```bash
-  velero install \
-      --provider aws \
-      --plugins velero/velero-plugin-for-aws:v1.9.0 \
-      --use-node-agent \
-      --use-volume-snapshots=false \
-      --secret-file ./credentials-velero \
-      --bucket ________________________ \
-      --backup-location-config region=hcm03,s3ForcePathStyle="true",s3Url=https://hcm03.vstorage.vngcloud.vn
-  ```
+    ```bash
+    velero install \
+        --provider aws \
+        --plugins velero/velero-plugin-for-aws:v1.9.0 \
+        --use-node-agent \
+        --use-volume-snapshots=false \
+        --secret-file ./credentials-velero \
+        --bucket ________________________ \
+        --backup-location-config region=hcm03,s3ForcePathStyle="true",s3Url=https://hcm03.vstorage.vngcloud.vn
+    ```
 
 ***
 
 ## Tại Cluster nguồn
 
-* Annotate các Persistent Volume cần backup. Mặc định velero sẽ không backup volume. Bạn có thể chạy lệnh dưới để annotate backup tất cả volume.
+*   Annotate các Persistent Volume cần backup. Mặc định velero sẽ không backup volume. Bạn có thể chạy lệnh dưới để annotate backup tất cả volume.
 
-     ```bash
+    ```bash
     ./velero_helper.sh mark_volume --confirm
     ```
-
-* Ngoài ra, bạn có thể đánh dấu không backup các resource của system bằng lệnh sau:&#x20;
+*   Ngoài ra, bạn có thể đánh dấu không backup các resource của system bằng lệnh sau:
 
     ```bash
     ./velero_helper.sh mark_exclude --confirm
     ```
 
-  Chi tiết vui lòng tham khảo tại [đây](gioi-han-va-han-che.md).
+    Chi tiết vui lòng tham khảo tại [đây](gioi-han-va-han-che.md).
+*   Bạn cần tạo 2 bản backup cho cluster resource và namespace resource để tránh lỗi có thể xảy ra. Thực hiện tạo backup theo cú pháp:
 
-* Bạn cần tạo 2 bản backup cho cluster resource và namespace resource để tránh lỗi có thể xảy ra. Thực hiện tạo backup theo cú pháp:
-
-  ```bash
-  velero backup create vcontainer-cluster --include-namespaces "" \
-    --include-cluster-resources=true \
-    --wait
-  ```
-
-  ```bash
-  velero backup create vcontainer-namespace --exclude-namespaces velero \
+    ```bash
+    velero backup create vcontainer-cluster --include-namespaces "" \
+      --include-cluster-resources=true \
       --wait
-  ```
+    ```
+
+    ```bash
+    velero backup create vcontainer-namespace --exclude-namespaces velero \
+        --wait
+    ```
 
 ***
 
 ## Tại Cluster đích
 
-* Tạo file mapping Storage Class giữa Cluster nguồn và đích, thực hiện apply file này trên Cluster đích của bạn:
+*   Tạo file mapping Storage Class giữa Cluster nguồn và đích, thực hiện apply file này trên Cluster đích của bạn:
 
-  ```yaml
-  apiVersion: v1
-  kind: ConfigMap
-  metadata:
-    name: change-storage-class-config
-    namespace: velero
-    labels:
-      velero.io/plugin-config: ""
-      velero.io/change-storage-class: RestoreItemAction
-  data:
-    _______old_storage_class_______: _______new_storage_class_______  # <= Adjust here
-    _______old_storage_class_______: _______new_storage_class_______  # <= Adjust here
-  ```
+    ```yaml
+    apiVersion: v1
+    kind: ConfigMap
+    metadata:
+      name: change-storage-class-config
+      namespace: velero
+      labels:
+        velero.io/plugin-config: ""
+        velero.io/change-storage-class: RestoreItemAction
+    data:
+      _______old_storage_class_______: _______new_storage_class_______  # <= Adjust here
+      _______old_storage_class_______: _______new_storage_class_______  # <= Adjust here
+    ```
+*   Thực hiện restore theo thứ tự:
 
-* Thực hiện restore theo thứ tự:
+    ```bash
+    velero restore create --item-operation-timeout 1m --from-backup vcontainer-cluster \
+        --exclude-resources="MutatingWebhookConfiguration,ValidatingWebhookConfiguration"
+    ```
 
-  ```bash
-  velero restore create --item-operation-timeout 1m --from-backup vcontainer-cluster \
-      --exclude-resources="MutatingWebhookConfiguration,ValidatingWebhookConfiguration"
-  ```
+    ```bash
+    velero restore create --item-operation-timeout 1m --from-backup vcontainer-namespace
+    ```
 
-  ```bash
-  velero restore create --item-operation-timeout 1m --from-backup vcontainer-namespace
-  ```
-
-  ```bash
-  velero restore create --item-operation-timeout 1m --from-backup vcontainer-cluster
-  ```
+    ```bash
+    velero restore create --item-operation-timeout 1m --from-backup vcontainer-cluster
+    ```
 
 ***
 
 ## Update resource config
 
-* Đối với các cụm vContainer có sử dụng nginx-ingress-controller có attach Network Load Balancer , khi migrate cụm qua VKS, bạn cần thực hiện đổi Service Nginx từ type Node Port sang type Load Balancer thông qua lệnh:&#x20;
+*   Đối với các cụm vContainer có sử dụng nginx-ingress-controller có attach Network Load Balancer , khi migrate cụm qua VKS, bạn cần thực hiện đổi Service Nginx từ type Node Port sang type Load Balancer thông qua lệnh:
 
-  ```bash
-  kubectl patch service -n kube-system vcontainer-ingress-nginx-controller \
-        -p '{"spec": {"type": "LoadBalancer"}}'
-  ```
+    ```bash
+    kubectl patch service -n kube-system vcontainer-ingress-nginx-controller \
+          -p '{"spec": {"type": "LoadBalancer"}}'
+    ```

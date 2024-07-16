@@ -15,7 +15,7 @@ Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông t
 * Địa chỉ email được sử dụng để tạo tài khoản người dùng Root.
 * Mật khẩu cho của tài khoản người dùng Root.
 
-Để thực hiện đăng nhập sử dụng DataSync với tài khoản Root, hãy xem thêm tại [Truy cập tài nguyên sử dụng tài khoản người dùng Root](../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-truy-cap-tai-nguyen-vstorage/truy-cap-tai-nguyen-su-dung-tai-khoan-nguoi-dung-root.md).
+Để thực hiện đăng nhập sử dụng DataSync với tài khoản Root, hãy xem thêm tại [Truy cập tài nguyên sử dụng tài khoản người dùng Root](../../../vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-truy-cap-tai-nguyen-vstorage/truy-cap-tai-nguyen-su-dung-tai-khoan-nguoi-dung-root.md).
 
 ***
 
