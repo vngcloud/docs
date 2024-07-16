@@ -11,10 +11,19 @@ Tính năng Whitelist IP trên chế độ Private Node Group của VKS cho phé
 * **Kiểm soát tốt hơn:** Whitelist IP cho phép bạn kiểm soát chặt chẽ quyền truy cập vào các node của mình, đảm bảo chỉ những người dùng và ứng dụng được ủy quyền mới có thể truy cập.
 
 {% hint style="info" %}
-**Chú ý:**&#x20;
+#### Khuyến nghị về Sử dụng Whitelist trong Các Mô Hình Cluster:
 
-* Whitelist IP chỉ hoạt động khi tất cả các Node Group trong một Cluster đều sử dụng chế độ Private Node Group. Lúc này, bạn có thể sử dụng tính năng Chỉnh sửa Whitelist theo hướng dẫn bên dưới.
-* Nếu Cluster của bạn có bất kỳ Node Group nào ở chế độ Public Node Group, việc thiết lập Whitelist IP sẽ không khả thi.
+**1. Public Cluster Chỉ Bao Gồm Public Node Group**
+
+* **Khuyến nghị**: Không khuyến khích sử dụng whitelist.
+* Nếu bạn có nhu cầu sử dụng Whitelist IP vì security, vui lòng allow danh sách IP Range Public của vServer theo danh sách sau:&#x20;
+
+**2. Public Cluster Bao Gồm Private Node Group Đi Qua NAT Gateway (Pfsense, PaloAlto)**
+
+* **Khuyến nghị**: Có thể sử dụng tính năng whitelist.
+* Cần thực hiện Whitelist thêm IP của NAT Gateway.
+
+**3. Private Cluster Bao Gồm Public Node Group hoặc Private Node Group (Coming soon)**
 {% endhint %}
 
 ***
