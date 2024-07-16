@@ -6,7 +6,7 @@ Your data is encrypted with AES-256 and primarily stored in vStorage, ensuring i
 
 **Model:**
 
-<figure><img src="../../../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
 
 **Feature**
 

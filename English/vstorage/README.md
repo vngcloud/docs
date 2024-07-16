@@ -2,7 +2,7 @@
 
 Flexible, secure storage solution with the ability to meet fast data retrieval needs.&#x20;
 
-[vStorage User Manual ](vstorage-hcm03/)
+[vStorage User Manual ](object-storage/vstorage-hcm03/)
 
 Video instructions for project creation on vStorage
 
