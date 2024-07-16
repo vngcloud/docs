@@ -26,7 +26,7 @@
       * [Di chuyển máy chủ ảo](vserver/compute-hcm03-1a/server/di-chuyen-may-chu-ao.md)
       * [Compute Encryption Volume](vserver/compute-hcm03-1a/server/compute-encryption-volume/README.md)
         * [Sử dụng Compute Encryption Volume](vserver/compute-hcm03-1a/server/compute-encryption-volume/su-dung-compute-encryption-volume.md)
-    * [Server Group](vserver/compute-hcm03-1a/server-group.md)
+    * [Placement Group](vserver/compute-hcm03-1a/server-group.md)
     * [Image](vserver/compute-hcm03-1a/image.md)
     * [Network](vserver/compute-hcm03-1a/network/README.md)
       * [Virtual Private Cloud (VPC)](vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md)
