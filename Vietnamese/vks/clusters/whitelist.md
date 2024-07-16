@@ -11,12 +11,13 @@ Tính năng Whitelist IP trên chế độ Private Node Group của VKS cho phé
 * **Kiểm soát tốt hơn:** Whitelist IP cho phép bạn kiểm soát chặt chẽ quyền truy cập vào các node của mình, đảm bảo chỉ những người dùng và ứng dụng được ủy quyền mới có thể truy cập.
 
 {% hint style="info" %}
-#### Khuyến nghị về Sử dụng Whitelist trong Các Mô Hình Cluster:
+**Khuyến nghị về Sử dụng Whitelist trong Các Mô Hình Cluster:**
 
 **1. Public Cluster Chỉ Bao Gồm Public Node Group**
 
 * **Khuyến nghị**: Không khuyến khích sử dụng whitelist.
-* Nếu bạn có nhu cầu sử dụng Whitelist IP vì security, vui lòng allow danh sách IP Range Public của vServer theo danh sách sau:&#x20;
+*   Nếu bạn có nhu cầu sử dụng Whitelist IP vì security, vui lòng allow danh sách IP Range Public của vServer theo danh sách sau:
+
     ```bash
     103.245.249.0/24
     103.245.251.0/24
@@ -33,6 +34,7 @@ Tính năng Whitelist IP trên chế độ Private Node Group của VKS cho phé
     61.28.235.0/24
     61.28.236.0/24
     61.28.238.0/24
+    180.93.183.0/24
     ```
 
 **2. Public Cluster Bao Gồm Private Node Group Đi Qua NAT Gateway (Pfsense, PaloAlto)**
@@ -55,7 +57,7 @@ Tính năng Whitelist IP trên chế độ Private Node Group của VKS cho phé
 
 **Bước 3:** Chọn biểu tượng <img src="https://docs-admin.vngcloud.vn/download/thumbnails/73762015/image2024-4-16_15-51-55.png?version=1&#x26;modificationDate=1713262579000&#x26;api=v2" alt="" data-size="line">và chọn **Edit Whitelist** hoặc chọn biểu tượng **Edit** khi xem chi tiết một Cluster để thực hiện thêm Whitelist cho Cluster của bạn.
 
-**Bước 4:** Lúc này, màn hình **Edit Whitelist** hiển thị, bạn có thể nhập địa chỉ IP mà bạn muốn cho phép truy cập vào Cluster sau đó chọn **Add**.&#x20;
+**Bước 4:** Lúc này, màn hình **Edit Whitelist** hiển thị, bạn có thể nhập địa chỉ IP mà bạn muốn cho phép truy cập vào Cluster sau đó chọn **Add**.
 
 **Bước 5:** Lặp lại bước 4 nếu bạn muốn thêm nhiều **Whitelist IP** cho Cluster của bạn. Bạn cũng có thể chọn **Delete** để xóa Whitelist IP mà bạn đã thêm trước đó.
 
