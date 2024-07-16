@@ -17,6 +17,23 @@ Tính năng Whitelist IP trên chế độ Private Node Group của VKS cho phé
 
 * **Khuyến nghị**: Không khuyến khích sử dụng whitelist.
 * Nếu bạn có nhu cầu sử dụng Whitelist IP vì security, vui lòng allow danh sách IP Range Public của vServer theo danh sách sau:&#x20;
+    ```bash
+    103.245.249.0/24
+    103.245.251.0/24
+    116.118.95.0/24
+    58.84.1.0/24
+    58.84.2.0/24
+    61.28.226.0/24
+    61.28.227.0/24
+    61.28.229.0/24
+    61.28.230.0/24
+    61.28.231.0/24
+    180.93.182.0/24
+    61.28.233.0/24
+    61.28.235.0/24
+    61.28.236.0/24
+    61.28.238.0/24
+    ```
 
 **2. Public Cluster Bao Gồm Private Node Group Đi Qua NAT Gateway (Pfsense, PaloAlto)**
 
