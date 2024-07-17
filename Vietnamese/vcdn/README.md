@@ -1,7 +1,5 @@
 # vCDN
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22937796/image2019-5-23_22-54-40.png?version=1&#x26;modificationDate=1601630656000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
 **vCDN** (**VNG Cloud Content Delivery Network**) là mạng phân phối nội dung được phát triển bởi **VNG Cloud**. Với các máy chủ được bố trí chiến lược ở nhiều địa điểm, và trang bị băng thông cực cao, vCDN giúp tăng nhanh tốc độ của website và ứng dụng mobile. Điều này giúp nâng cao trải nghiệm người dùng và tăng sự hài lòng của khách hàng.
 
 <figure><img src="../.gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
@@ -24,5 +22,3 @@ Bên cạnh đó, **vCDN** hiện cung cấp 4 dịch vụ như sau:
 * **Object Download**: Sử dụng để cải thiện tốc độ download các file tĩnh, các file update cho hệ thống của bạn&#x20;
 * **VOD (Video on Demand):** Sử dụng khi có nhu cầu stream video. Ví dụ : Web chiếu phim online
 * **Livestream:** Sử dụng cho nhu cầu trình chiếu (live-stream) trực tiếp. Ví dụ: phim ảnh, thể thao, game-show, quảng cáo bán hàng v..v.
-
-\

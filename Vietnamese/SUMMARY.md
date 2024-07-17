@@ -642,6 +642,8 @@
     * [Video On Demand Streaming](vcdn/loai-hinh-dich-vu/video-on-demand-streaming.md)
     * [Object Download](vcdn/loai-hinh-dich-vu/object-download.md)
     * [Web Accelerator](vcdn/loai-hinh-dich-vu/web-accelerator.md)
+    * [Transcoding](vcdn/loai-hinh-dich-vu/transcoding/README.md)
+      * [Sử dụng tính năng transcoding thông qua Sigma Streaming](vcdn/loai-hinh-dich-vu/transcoding/su-dung-tinh-nang-transcoding-thong-qua-sigma-streaming.md)
     * [Sử dụng ứng dụng OBS Studio để push luồng Live Stream](vcdn/loai-hinh-dich-vu/su-dung-ung-dung-obs-studio-de-push-luong-live-stream.md)
   * [Chi tiết tính năng](vcdn/chi-tiet-tinh-nang.md)
     * [Security Link](vcdn/chi-tiet-tinh-nang/security-link.md)
