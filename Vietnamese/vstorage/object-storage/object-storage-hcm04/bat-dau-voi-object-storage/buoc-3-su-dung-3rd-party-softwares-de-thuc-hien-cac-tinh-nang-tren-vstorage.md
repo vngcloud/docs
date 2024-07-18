@@ -6,15 +6,15 @@ Bên dưới là hướng dẫn cho một số use case thông thường bạn c
 
 ### **Tạo / Xóa bucket**
 
-* Thực hiện tạo xóa bucket bằng cách chọn nút New bucket, lúc này bạn thực hiện nhập Bucket name và chọn Create new bucket.
+* Thực hiện tạo xóa bucket bằng cách chọn nút **New bucket**, lúc này bạn thực hiện nhập **Bucket name** và chọn **Create new bucket.**
 
 ### **Upload / Download file**
 
-* Sau khi đã tạo bucket, bạn chọn vào bucket cần tải file lên/ xuống. Tiếp theo, bạn chọn Upload/ Download tùy theo nhu cầu.
+* Sau khi đã tạo bucket, bạn chọn vào bucket cần tải file lên/ xuống. Tiếp theo, bạn chọn **Upload/ Download** tùy theo nhu cầu tải lên/ xuống của bạn.
 
 ### **Tạo / Xóa Folder**
 
-* Bạn cũng có thể tạo/ xóa folder bằng cách chọn New Folder hoặc Delete.
+* Bạn cũng có thể tạo/ xóa folder bằng cách chọn **New Folder** hoặc **Delete**.
 
 <figure><img src="../../../../.gitbook/assets/image (589).png" alt=""><figcaption></figcaption></figure>
 
@@ -26,26 +26,72 @@ Tiếp theo đây là các hướng dẫn cho các tính năng nâng cao bạn c
 
 ### **ACL**
 
+**ACL** là tính năng trên S3 cho phép bạn kiểm soát quyền truy cập cho từng object trong bucket S3 của bạn. Tính năng này sẽ xác định người dùng hoặc nhóm người dùng nào có thể truy cập object và các thao tác họ có thể thực hiện, chẳng hạn như tải xuống, tải lên, xóa hoặc ghi đè object.
+
 Để thiết lập ACL cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn Edit Permission (ACL) . Trong phần permission, hãy check chọn quyền hạn bạn mong muốn cấp cho người dùng. Chi tiết tham khảo thêm tại [https://s3browser.com/share-s3-bucket-edit-acls.aspx](https://s3browser.com/share-s3-bucket-edit-acls.aspx)
 
 <figure><img src="../../../../.gitbook/assets/image (590).png" alt=""><figcaption></figcaption></figure>
 
 ### **SSE-S3**
 
-SSE-S3 (Server-Side Encryption with S3 Managed Keys) là tính năng mã hóa dữ liệu phía máy chủ do Amazon S3 cung cấp. Với SSE-S3, dữ liệu của bạn được mã hóa tự động khi được tải lên S3 và được giải mã tự động khi bạn tải xuống. Hiện tại tính năng này chưa có sẵn, **nếu bạn có nhu cầu sử dụng, hãy gửi yêu cầu sử dụng dịch vụ thông qua ticket tới VNGCloud.**
+SSE-S3 (Server-Side Encryption with S3 Managed Keys) là tính năng mã hóa dữ liệu phía máy chủ do Amazon S3 cung cấp. Với SSE-S3, dữ liệu của bạn được mã hóa tự động khi được tải lên S3 và được giải mã tự động khi bạn tải xuống. **Để thực hiện được tính năng này trên S3 Browser, bạn cần sử dụng S3 Browser phiên bản Pro. Nếu ứng dụng của bạn hiện không hỗ trợ cho việc thực hiện tính năng, vui lòng gửi yêu cầu sử dụng tính năng thông qua ticket tới VNGCloud.** Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-server-side-encryption.aspx](https://s3browser.com/amazon-s3-server-side-encryption.aspx)
 
 ### **SSE-C**
 
-**SSE-C** (Server-Side Encryption with Customer-Provided Keys) là tính năng mã hóa dữ liệu phía máy chủ do Amazon S3 cung cấp. Giống như SSE-S3, SSE-C mã hóa dữ liệu của bạn tự động khi được tải lên S3 và giải mã tự động khi bạn tải xuống. Tuy nhiên, với SSE-C, bạn cung cấp và quản lý khóa mã hóa của riêng mình, thay vì sử dụng khóa do AWS quản lý. Hiện tại tính năng này chưa có sẵn, **nếu bạn có nhu cầu sử dụng, hãy gửi yêu cầu sử dụng dịch vụ thông qua ticket tới VNGCloud.**
+**SSE-C** (Server-Side Encryption with Customer-Provided Keys) là tính năng mã hóa dữ liệu phía máy chủ do Amazon S3 cung cấp. Giống như SSE-S3, SSE-C mã hóa dữ liệu của bạn tự động khi được tải lên S3 và giải mã tự động khi bạn tải xuống. Tuy nhiên, với SSE-C, bạn cung cấp và quản lý khóa mã hóa của riêng mình, thay vì sử dụng khóa do AWS quản lý. **Để thực hiện được tính năng này trên S3 Browser, bạn cần sử dụng S3 Browser phiên bản Pro. Nếu ứng dụng của bạn hiện không hỗ trợ cho việc thực hiện tính năng, vui lòng gửi yêu cầu sử dụng tính năng thông qua ticket tới VNGCloud.** Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-server-side-encryption.aspx](https://s3browser.com/amazon-s3-server-side-encryption.aspx)
 
 ### **Object Locked**
 
+**Object Lock** là tính năng giúp bảo vệ dữ liệu của bạn khỏi bị xóa hoặc ghi đè trong một khoảng thời gian cố định hoặc vô thời hạn. Tính năng này sử dụng model **WORM** (Write Once, Read Many), nghĩa là sau khi một object được tải lên S3 và được locked, object đó không thể bị xóa hoặc thay đổi bởi bất kỳ ai, kể cả người dùng root.
 
+Để thiết lập Object Locked cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn Object Locked (ACL). Bạn có thể thiết lập object locked ở cả 2 mode Retention và Legal Hold thông qua S3 Browser. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-object-lock.aspx](https://s3browser.com/amazon-s3-object-lock.aspx)
 
-1. **Versioning**
-2. **Lifecycle rotation**
-3. **Lifecycle transit (No)**
-4. **CORS**
-5. **IP range ACLs**
-6. **Public/ Private bucket**
-7. **Bucket policy**
+<figure><img src="../../../../.gitbook/assets/image (592).png" alt=""><figcaption></figcaption></figure>
+
+### **Versioning**
+
+Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá khứ của các object được lưu trữ trong một bucket. Bạn có thể sử dụng tính năng versioning để lưu giữ, truy xuất và khôi phục mọi phiên bản của object được lưu trữ trong bucket của bạn. Khi bật tính năng Versioning, khi thực hiện tải lên/ xóa một object thì thay vì xóa hẳn object khỏi hệ thống, chúng tôi sẽ chuyển các object bị xóa hoặc bị ghi đè sang phiên bản versioning. Từ đó bạn có thể dễ dàng khôi phục lại các object bị xóa nhầm hoặc tải về các phiên bản cũ của dữ liệu khi có nhu cầu sử dụng.
+
+Để thiết lập Versioning cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn Edit Versioning Settings (ACL). Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-versioning.aspx](https://s3browser.com/amazon-s3-versioning.aspx)
+
+<figure><img src="../../../../.gitbook/assets/image (594).png" alt=""><figcaption></figcaption></figure>
+
+### **Lifecycle rotation**
+
+**Lifecycle rotation** là một tính năng quản lý vòng đời của các đối tượng (objects) trong một bucket. Tính năng này cho phép bạn tự động hóa các hành động như xóa các đối tượng sau một khoảng thời gian nhất định.
+
+Để thiết lập Lifecycle rotation cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn Lifecycle Configuration. Chi tiết tham khảo thêm tại [https://s3browser.com/bucket-lifecycle-configuration.aspx](https://s3browser.com/bucket-lifecycle-configuration.aspx)
+
+<figure><img src="../../../../.gitbook/assets/image (595).png" alt=""><figcaption></figcaption></figure>
+
+### **Lifecycle transit**
+
+Hiện tại trên region HCM04 chúng tôi chỉ hỗ trợ bạn tạo Project với Storage Class **Instant Archive Type**. Do chỉ có 1 storage class duy nhất nên hiện tại tính năng Lifecycle transit sẽ không hoạt động.&#x20;
+
+### **CORS**
+
+CORS (Cross-Origin Resource Sharing) là cơ chế bảo mật cho phép các trang web được lưu trữ trên một tên miền truy cập tài nguyên từ tên miền khác. Khi bạn sử dụng S3 để lưu trữ nội dung tĩnh và muốn truy cập nội dung đó từ trang web được lưu trữ trên tên miền khác, bạn cần cấu hình CORS cho bucket S3 của mình.
+
+Để thiết lập CORS cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn CORS Configuration. Chi tiết tham khảo thêm tại [https://s3browser.com/s3-bucket-cors-configuration.aspx](https://s3browser.com/s3-bucket-cors-configuration.aspx)
+
+<figure><img src="../../../../.gitbook/assets/image (596).png" alt=""><figcaption></figcaption></figure>
+
+### **IP range ACLs**
+
+IP Range ACLs là tính năng cho phép người dùng có thể chủ động kích hoạt chế độ an toàn ở mức network internet - giới hạn khả năng truy cập vào project hoặc container của vStorage từ một số nguồn địa chỉ IP được xác định thông qua danh sách IP/ Subnet thiết lập trên metadata ở cấp project hoặc container hoặc cả hai cấp. **Hiện tại S3 Browser đang chưa hỗ trợ thiết lập tính năng này. Nếu bạn có nhu cầu sử dụng tính năng này, vui lòng gửi yêu cầu sử dụng tính năng thông qua ticket tới VNGCloud.**&#x20;
+
+### **Public/ Private bucket**
+
+**Public bucket** là tính năng cho phép người dùng chia sẻ công khai bucket trên môi trường điện toán đám mây. Người dùng từ ngoài internet có thể truy cập vào bucket thông qua đường dẫn URL mà không cần chứng thực quyền truy cập với hệ thống. Quyền truy cập công khai tiềm ẩn rủi ro bảo mật, vì vậy nếu kịch bản của bạn không yêu cầu quyền truy cập đó, chúng tôi khuyên bạn không nên cho phép quyền truy cập công khai đối với bucket. Tại bất kỳ thời điểm nào bạn không muốn công khai bucketđó nữa thì có thể chuyển chế độ riêng tư cho bucket.
+
+Để thiết lập chế độ công khai cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn Public Access block Configuration. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-public-access-block-configuration.aspx](https://s3browser.com/amazon-s3-public-access-block-configuration.aspx)
+
+<figure><img src="../../../../.gitbook/assets/image (597).png" alt=""><figcaption></figcaption></figure>
+
+### **Bucket policy**
+
+**Bucket Policy** là một loại chính sách truy cập được sử dụng để kiểm soát quyền truy cập vào một bucket S3 cụ thể. Nó cho phép bạn xác định người dùng hoặc nhóm nào có thể truy cập bucket và các thao tác họ có thể thực hiện, chẳng hạn như tải lên, tải xuống, xóa hoặc liệt kê các object trong bucket.
+
+Để thiết lập policy một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn Public Access block Configuration. Chi tiết tham khảo thêm tại [https://s3browser.com/working-with-amazon-s3-bucket-policies.aspx?v=11.7.5\&fam=x64#amazon-s3-bucket-policies-examples](https://s3browser.com/working-with-amazon-s3-bucket-policies.aspx?v=11.7.5\&fam=x64#amazon-s3-bucket-policies-examples)
+
+<figure><img src="../../../../.gitbook/assets/image (598).png" alt=""><figcaption></figcaption></figure>
