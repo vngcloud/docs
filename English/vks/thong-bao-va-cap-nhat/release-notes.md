@@ -1,5 +1,15 @@
 # Release notes
 
+## July 18, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
+
+VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
+
+**Cải tiến:**
+
+* **Nâng cấp Plugin VNGCloud BlockStorage CSI Driver:** Các lỗi đã được phát hiện trong các phiên bản trước đã được khắc phục, giúp hệ thống hoạt động mượt mà và tin cậy hơn.
+
+***
+
 ## July 17, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
 
 VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều cải tiến cho người dùng. Dưới đây là chi tiết về bản cập nhật:
