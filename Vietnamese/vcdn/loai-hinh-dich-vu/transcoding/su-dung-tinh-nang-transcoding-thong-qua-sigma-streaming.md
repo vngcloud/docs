@@ -40,17 +40,40 @@ mà bạn mong muốn sử dụng cho server của bạn. Ngoài ra bạn cũng 
 
 Lúc này, hệ thống vServer sẽ khởi tạo một Server tương ứng với cấu hình mà bạn lựa chọn. Hãy chờ đợi tới khi việc tạo server hoàn thành và tiếp tục các bước sau đây.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ### Cấu hình thông số cho Sigma
 
-**Bước 1:** Sau khi khởi tạo Sigma từ vMarketPlace theo hướng dẫn bên trên, bạn có thể truy cập vào giao diện vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) để kiểm tra server chạy Sigma đã được khởi tạo xong chưa. **Tiếp theo, bạn mở các sau trên Security Group cho server Sigma vừa tạo.**
+**Bước 1:** Sau khi khởi tạo Sigma từ vMarketPlace theo hướng dẫn bên trên, bạn có thể truy cập vào giao diện vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) để kiểm tra server chạy Sigma đã được khởi tạo xong chưa. **Tiếp theo, bạn cần mở các sau trên Security Group cho server Sigma vừa tạo.**&#x20;
 
 * 4000 (TCP): Portal
 * 8080 (TCP): HTTP origin (nginx)
 * 1935 (TCP): RTMP
 * 10080 (UDP): optional cho SRT protocol
 
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+**Bước 2:** Sau khi server chạy Sigma được khởi tạo thành công. Để vào GUI của Sigma, bạn cần sử dụng địa chỉ IP của External Interface và truy cập tại link: _**http://VM\_External\_IP:4000**_
+
+**Bước 3:** Tại GUI của Sigma, bạn chọn nút **Register Server**
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+Bước 4: Bạn nhập Email/ Password nếu có hoặc chọn Đăng nhập nhanh với Github hoặc Google. Ở đây, tôi lựa chọn đăng nhập với tài khoản Google
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Bước 5: Sau khi hệ thống thực hiện authentiation thành công, bạn cần nhập các thông tin cơ bản cho Sigma bao gồm:
+
+* Name
+* Phone Number
+* Role
+* Company
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 
-**Sau khi server chạy Sigma được khởi tạo thành công**. Để vào GUI của Sigma, bạn cần sử dụng địa chỉ IP của External Interface và truy cập tại link: _http://VM\_External\_IP:4000_.
+
+**Bước 6:** Nhập server name. Server name này bạn có thể lấy từ portal VNGCloud. Ví dụ
+
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
