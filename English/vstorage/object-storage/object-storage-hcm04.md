@@ -1,2 +1,0 @@
-# Object storage (HCM04)
-
