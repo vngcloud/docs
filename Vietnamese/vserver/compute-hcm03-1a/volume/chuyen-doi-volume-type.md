@@ -109,7 +109,7 @@ _Mục đích của bước này là để sao lưu dữ liệu được ghi m�
 
 _<mark style="color:orange;">**Trường hợp volume đang được sử dụng trong máy ảo (server), người dùng buộc phải thực hiện Tắt Server để có thể nhấn chon Tiếp tục Migrate.**</mark>_&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3: Xác nhận sử dụng volume hoàn tất chuyển đổi**
 

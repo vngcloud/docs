@@ -648,7 +648,7 @@
       * [Các trường hợp sử dụng](vcdn/loai-hinh-dich-vu/transcoding-va-cac-tinh-nang-nang-cao/cac-truong-hop-su-dung/README.md)
         * [Tạo kênh Live Transcode](vcdn/loai-hinh-dich-vu/transcoding-va-cac-tinh-nang-nang-cao/cac-truong-hop-su-dung/tao-kenh-live-transcode.md)
         * [Live Transcode kết hợp record để phát VOD về sau.](vcdn/loai-hinh-dich-vu/transcoding-va-cac-tinh-nang-nang-cao/cac-truong-hop-su-dung/live-transcode-ket-hop-record-de-phat-vod-ve-sau..md)
-        * [Tạo kênh Restream đồng thời lên nhiều nền tảng Facebook, Youtube](vcdn/loai-hinh-dich-vu/transcoding-va-cac-tinh-nang-nang-cao/cac-truong-hop-su-dung/tao-kenh-restream-dong-thoi-len-nhieu-nen-tang-facebook-youtube.md)
+        * [Tạo kênh Restream đồng thời lên nhiều nền tảng (RTMP)](vcdn/loai-hinh-dich-vu/transcoding-va-cac-tinh-nang-nang-cao/cac-truong-hop-su-dung/tao-kenh-restream-dong-thoi-len-nhieu-nen-tang-rtmp.md)
         * [Transcode file video (MP4)](vcdn/loai-hinh-dich-vu/transcoding-va-cac-tinh-nang-nang-cao/cac-truong-hop-su-dung/transcode-file-video-mp4.md)
     * [Sử dụng ứng dụng OBS Studio để push luồng Live Stream](vcdn/loai-hinh-dich-vu/su-dung-ung-dung-obs-studio-de-push-luong-live-stream.md)
   * [Chi tiết tính năng](vcdn/chi-tiet-tinh-nang.md)

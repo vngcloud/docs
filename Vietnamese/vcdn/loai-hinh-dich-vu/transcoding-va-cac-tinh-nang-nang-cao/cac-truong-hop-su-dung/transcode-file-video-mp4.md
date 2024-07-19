@@ -55,11 +55,11 @@ Thành phần thực hiện:&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (658).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 6:** Chọn loại file nguồn cần transcode. Bạn cần nhập vào link [URL](https://han01.vstorage.vngcloud.vn/v1/AUTH\_210ff69ad18d4bfa9920b165ef8ddef4/con\_01/big\_buck\_bunny\_720p\_30mb.mp4) của file nguồn đã được upload lên dịch vụ S3. Ví dụ với vStorage, URL của object sẽ có định dạng tương tự: [https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_123456/cont\_01/pexels\_videos\_1390942%20(2160p).mp4](https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_bcd882dd104f40cb8e20f1cd6bb0b4c6/cont\_01/pexels\_videos\_1390942%20\(2160p\).mp4)
+**Bước 6:** Chọn loại file nguồn cần transcode. Bạn cần nhập vào link [URL](https://han01.vstorage.vngcloud.vn/v1/AUTH\_210ff69ad18d4bfa9920b165ef8ddef4/con\_01/big\_buck\_bunny\_720p\_30mb.mp4) của file nguồn đã được upload lên dịch vụ S3. Ví dụ với vStorage, URL của object sẽ có định dạng tương tự: [https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_123456/cont\_01/pexels\_videos\_1390942%20(2160p).mp4](https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_bcd882dd104f40cb8e20f1cd6bb0b4c6/cont\_01/pexels\_videos\_1390942%20\(2160p\).mp4)**Chú ý: bạn cần thực hiện chuyển chế độ công khai (Make Public) cho container/ bucket trên vStorage hoặc Bất kỳ dịch vụ S3 để Sigma có thể truy cập vào link này.**
 
 <figure><img src="../../../../.gitbook/assets/image (660).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 7:** Tại mục **Destination**, chọn kiểu output Third-party Storage -> Generic S3 để lưu file kết quả
+**Bước 7:** Tại mục **Destination**, chọn kiểu output **Third-party Storage** -> **Generic S3** để lưu file kết quả
 
 <figure><img src="../../../../.gitbook/assets/image (661).png" alt=""><figcaption></figcaption></figure>
 

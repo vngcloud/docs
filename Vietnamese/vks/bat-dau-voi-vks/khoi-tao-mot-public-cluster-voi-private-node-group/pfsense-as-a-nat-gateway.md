@@ -92,11 +92,11 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 * Vào phần **Interfaces** -> **Assignments** để gắn thêm **Interface LAN**
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Nhấn vào **Add**
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Sau đó nhấn vào **Save**
 

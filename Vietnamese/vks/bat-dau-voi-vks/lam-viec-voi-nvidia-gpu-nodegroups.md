@@ -32,7 +32,7 @@
     kubectl-view-allocations --version
     ```
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Trên Cluster vừa tạo, thực hiện kiểm tra node trong node group của bạn qua lệnh:&#x20;
 
@@ -549,6 +549,6 @@ kubectl -n keda get all
     kubectl get scaledobject
     ```
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Khi trạng thái `ScaledObject` **Ready** là`True`,  GPU Nodegroup được scale dựa trên GPU usage.
