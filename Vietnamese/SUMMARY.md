@@ -384,7 +384,6 @@
         * [Khởi tạo và sử dụng Storage Gateway](vstorage/object-storage/vstorage-hcm03/storage-gateway/khoi-tao-va-su-dung-storage-gateway.md)
         * [Ứng dụng gateway thay thế Fileserver](vstorage/object-storage/vstorage-hcm03/storage-gateway/ung-dung-gateway-thay-the-fileserver.md)
     * [Object storage (HCM04)](vstorage/object-storage/object-storage-hcm04/README.md)
-      * [Object storage là gì?](vstorage/object-storage/object-storage-hcm04/object-storage-la-gi.md)
       * [Bắt đầu với Object storage](vstorage/object-storage/object-storage-hcm04/bat-dau-voi-object-storage/README.md)
         * [Bước 1: Khởi tạo project](vstorage/object-storage/object-storage-hcm04/bat-dau-voi-object-storage/buoc-1-khoi-tao-project.md)
         * [Bước 2: Khởi tạo S3 key](vstorage/object-storage/object-storage-hcm04/bat-dau-voi-object-storage/buoc-2-khoi-tao-s3-key.md)
