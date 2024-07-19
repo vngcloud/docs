@@ -44,7 +44,11 @@ SSE-S3 (Server-Side Encryption with S3 Managed Keys) là tính năng mã hóa d�
 
 **Object Lock** là tính năng giúp bảo vệ dữ liệu của bạn khỏi bị xóa hoặc ghi đè trong một khoảng thời gian cố định hoặc vô thời hạn. Tính năng này sử dụng model **WORM** (Write Once, Read Many), nghĩa là sau khi một object được tải lên S3 và được locked, object đó không thể bị xóa hoặc thay đổi bởi bất kỳ ai, kể cả người dùng root.
 
-Để thiết lập Object Locked cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn Object Locked (ACL). Bạn có thể thiết lập object locked ở cả 2 mode Retention và Legal Hold thông qua S3 Browser. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-object-lock.aspx](https://s3browser.com/amazon-s3-object-lock.aspx)
+Để thiết lập Object Locked cho một bucket bằng S3 Browser, khi khởi tạo một bucket mới, bạn cần chọn phương án **Enable S3 Objected Lock.**&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (623).png" alt=""><figcaption></figcaption></figure>
+
+Tiếp theo, khi bucket được tạo thành công, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Object Locked**. Bạn có thể thiết lập object locked ở cả 2 mode **Retention** và **Legal Hold** thông qua S3 Browser. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-object-lock.aspx](https://s3browser.com/amazon-s3-object-lock.aspx)
 
 <figure><img src="../../../../.gitbook/assets/image (592).png" alt=""><figcaption></figcaption></figure>
 
@@ -52,7 +56,7 @@ SSE-S3 (Server-Side Encryption with S3 Managed Keys) là tính năng mã hóa d�
 
 Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá khứ của các object được lưu trữ trong một bucket. Bạn có thể sử dụng tính năng versioning để lưu giữ, truy xuất và khôi phục mọi phiên bản của object được lưu trữ trong bucket của bạn. Khi bật tính năng Versioning, khi thực hiện tải lên/ xóa một object thì thay vì xóa hẳn object khỏi hệ thống, chúng tôi sẽ chuyển các object bị xóa hoặc bị ghi đè sang phiên bản versioning. Từ đó bạn có thể dễ dàng khôi phục lại các object bị xóa nhầm hoặc tải về các phiên bản cũ của dữ liệu khi có nhu cầu sử dụng.
 
-Để thiết lập Versioning cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn Edit Versioning Settings (ACL). Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-versioning.aspx](https://s3browser.com/amazon-s3-versioning.aspx)
+Để thiết lập Versioning cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Edit Versioning Settings**. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-versioning.aspx](https://s3browser.com/amazon-s3-versioning.aspx)
 
 <figure><img src="../../../../.gitbook/assets/image (594).png" alt=""><figcaption></figcaption></figure>
 
@@ -60,7 +64,7 @@ Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá
 
 **Lifecycle rotation** là một tính năng quản lý vòng đời của các đối tượng (objects) trong một bucket. Tính năng này cho phép bạn tự động hóa các hành động như xóa các đối tượng sau một khoảng thời gian nhất định.
 
-Để thiết lập Lifecycle rotation cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn Lifecycle Configuration. Chi tiết tham khảo thêm tại [https://s3browser.com/bucket-lifecycle-configuration.aspx](https://s3browser.com/bucket-lifecycle-configuration.aspx)
+Để thiết lập Lifecycle rotation cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Lifecycle Configuration**. Chi tiết tham khảo thêm tại [https://s3browser.com/bucket-lifecycle-configuration.aspx](https://s3browser.com/bucket-lifecycle-configuration.aspx)
 
 <figure><img src="../../../../.gitbook/assets/image (595).png" alt=""><figcaption></figcaption></figure>
 
@@ -72,7 +76,7 @@ Hiện tại trên region HCM04 chúng tôi chỉ hỗ trợ bạn tạo Project
 
 CORS (Cross-Origin Resource Sharing) là cơ chế bảo mật cho phép các trang web được lưu trữ trên một tên miền truy cập tài nguyên từ tên miền khác. Khi bạn sử dụng S3 để lưu trữ nội dung tĩnh và muốn truy cập nội dung đó từ trang web được lưu trữ trên tên miền khác, bạn cần cấu hình CORS cho bucket S3 của mình.
 
-Để thiết lập CORS cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn CORS Configuration. Chi tiết tham khảo thêm tại [https://s3browser.com/s3-bucket-cors-configuration.aspx](https://s3browser.com/s3-bucket-cors-configuration.aspx)
+Để thiết lập CORS cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **CORS Configuration**. Chi tiết tham khảo thêm tại [https://s3browser.com/s3-bucket-cors-configuration.aspx](https://s3browser.com/s3-bucket-cors-configuration.aspx)
 
 <figure><img src="../../../../.gitbook/assets/image (596).png" alt=""><figcaption></figcaption></figure>
 
@@ -84,7 +88,7 @@ IP Range ACLs là tính năng cho phép người dùng có thể chủ động k
 
 **Public bucket** là tính năng cho phép người dùng chia sẻ công khai bucket trên môi trường điện toán đám mây. Người dùng từ ngoài internet có thể truy cập vào bucket thông qua đường dẫn URL mà không cần chứng thực quyền truy cập với hệ thống. Quyền truy cập công khai tiềm ẩn rủi ro bảo mật, vì vậy nếu kịch bản của bạn không yêu cầu quyền truy cập đó, chúng tôi khuyên bạn không nên cho phép quyền truy cập công khai đối với bucket. Tại bất kỳ thời điểm nào bạn không muốn công khai bucketđó nữa thì có thể chuyển chế độ riêng tư cho bucket.
 
-Để thiết lập chế độ công khai cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn Public Access block Configuration. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-public-access-block-configuration.aspx](https://s3browser.com/amazon-s3-public-access-block-configuration.aspx)
+Để thiết lập chế độ công khai cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Public Access block Configuration**. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-public-access-block-configuration.aspx](https://s3browser.com/amazon-s3-public-access-block-configuration.aspx)
 
 <figure><img src="../../../../.gitbook/assets/image (597).png" alt=""><figcaption></figcaption></figure>
 
@@ -92,6 +96,6 @@ IP Range ACLs là tính năng cho phép người dùng có thể chủ động k
 
 **Bucket Policy** là một loại chính sách truy cập được sử dụng để kiểm soát quyền truy cập vào một bucket S3 cụ thể. Nó cho phép bạn xác định người dùng hoặc nhóm nào có thể truy cập bucket và các thao tác họ có thể thực hiện, chẳng hạn như tải lên, tải xuống, xóa hoặc liệt kê các object trong bucket.
 
-Để thiết lập policy một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn Public Access block Configuration. Chi tiết tham khảo thêm tại [https://s3browser.com/working-with-amazon-s3-bucket-policies.aspx?v=11.7.5\&fam=x64#amazon-s3-bucket-policies-examples](https://s3browser.com/working-with-amazon-s3-bucket-policies.aspx?v=11.7.5\&fam=x64#amazon-s3-bucket-policies-examples)
+Để thiết lập policy một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Edit Bucket Policy**. Chi tiết tham khảo thêm tại [https://s3browser.com/working-with-amazon-s3-bucket-policies.aspx?v=11.7.5\&fam=x64#amazon-s3-bucket-policies-examples](https://s3browser.com/working-with-amazon-s3-bucket-policies.aspx?v=11.7.5\&fam=x64#amazon-s3-bucket-policies-examples)
 
 <figure><img src="../../../../.gitbook/assets/image (598).png" alt=""><figcaption></figcaption></figure>
