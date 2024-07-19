@@ -642,7 +642,7 @@
     * [Video On Demand Streaming](vcdn/loai-hinh-dich-vu/video-on-demand-streaming.md)
     * [Object Download](vcdn/loai-hinh-dich-vu/object-download.md)
     * [Web Accelerator](vcdn/loai-hinh-dich-vu/web-accelerator.md)
-    * [Transcoding và các tính năng nâng cao](vcdn/loai-hinh-dich-vu/transcoding-va-cac-tinh-nang-nang-cao/README.md)
+    * [Transcoding và các tính năng nâng cao](vcdn/loai-hinh-dich-vu/transcoding/README.md)
       * [Mô hình hoạt động](vcdn/loai-hinh-dich-vu/transcoding-va-cac-tinh-nang-nang-cao/mo-hinh-hoat-dong.md)
       * [Cài đặt Sigma Media Server](vcdn/loai-hinh-dich-vu/transcoding-va-cac-tinh-nang-nang-cao/cai-dat-sigma-media-server.md)
       * [Các trường hợp sử dụng](vcdn/loai-hinh-dich-vu/transcoding-va-cac-tinh-nang-nang-cao/cac-truong-hop-su-dung/README.md)
