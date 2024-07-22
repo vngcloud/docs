@@ -213,5 +213,10 @@ Ví dụ, tôi đã khởi tạo một vStorage Project, Container có thông ti
 * Thực hiện restore theo lệnh:
 
   ```bash
+  velero restore create --from-backup vks-full-backup \
+      --exclude-resources="MutatingWebhookConfiguration,ValidatingWebhookConfiguration"
+  ```
+
+  ```bash
   velero restore create --from-backup vks-full-backup
   ```
