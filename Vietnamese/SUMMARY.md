@@ -688,6 +688,7 @@
     * [Quản Lý Và Theo Dõi Các Tín Hiệu Được Đẩy Đến Hệ Thống Live Entrypoint](vcdn/giam-sat-hoat-dong/quan-ly-va-theo-doi-cac-tin-hieu-duoc-day-den-he-thong-live-entrypoint.md)
   * [Báo cáo](vcdn/bao-cao.md)
   * [Security (vCDN)](vcdn/security-vcdn.md)
+  * [API developers](vcdn/api-developers.md)
 * [Veka.ai](vcloudcam.md)
 * [vColocation](vcolocation/README.md)
   * [Truy cập vào vColo customer portal](vcolocation/truy-cap-vao-vcolo-customer-portal.md)
