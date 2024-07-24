@@ -197,7 +197,7 @@ Chú ý:
 
 * Hiện tại Ingress chỉ hỗ trợ duy nhất TLS port 443 và là điểm kết thúc cho TLS (TLS termination). TLS Secret phải chứa các trường với tên key là tls.crt và tls.key, đây chính là certificate và private key để sử dụng cho TLS. Nếu bạn muốn sử dụng Certificate cho một host, hãy thực hiện tải lên Certificate theo hướng dẫn tại \[Upload a certificate] và sử dụng chúng như một annotation. Ví dụ:
 
-```
+```yaml
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -227,15 +227,16 @@ spec:
                 port:
                   number: 80
 ```
+
 {% endhint %}
 
 ***
 
 #### **2.Nếu bạn đã có sẵn một Application Load Balancer** đã khởi tạo trước đó trên hệ thống vLB và bạn muốn tái sử dụng ALB cho cluster của bạn. <a href="#ingressforanapplicationloadbalancer-2.neubandacosanmotapplicationloadbalancerdakhoitaotruocdotrenhet" id="ingressforanapplicationloadbalancer-2.neubandacosanmotapplicationloadbalancerdakhoitaotruocdotrenhet"></a>
 
-Lúc này, khi tạo một Ingress, bạn hãy nhập thông tin Load Balancer ID vào annotation <mark style="color:red;">**vks.vngcloud.vn/load-balancer-id**</mark> hoặc Load Balancer Name vào annotation <mark style="color:red;">**vks.vngcloud.vn/load-balancer-name.**</mark> Ví dụ, trong trường hợp này tôi đã tái sử dụng ALB có ID = lb-2b9d8974-3760-4d60-8203-9671f229fb96:
+Lúc này, khi tạo một Ingress, bạn hãy nhập thông tin Load Balancer ID vào annotation <mark style="color:red;">**vks.vngcloud.vn/load-balancer-id**</mark>. Ví dụ, trong trường hợp này tôi đã tái sử dụng ALB có ID = lb-2b9d8974-3760-4d60-8203-9671f229fb96:
 
-```
+```yaml
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -377,11 +378,11 @@ Rules:
   ----        ----  --------
   *
               /path1   nginx-service:80 (172.16.24.202:80)
-Annotations:  vks.vngcloud.vn/load-balancer-name: vks-k8s-6d2acb-default-nginx-ingr-897e5
+Annotations:  vks.vngcloud.vn/load-balancer-id: lb-6cdea8fd-4589-410e-933f-c3bc46fa9d25
 Events:       <none>
 ```
 
-*   Để cập nhật nginx-ingress hiện có, ta có thể thực hiện bằng cách cập nhật Ingress Yaml file như sau:
+* Để cập nhật nginx-ingress hiện có, ta có thể thực hiện bằng cách cập nhật Ingress Yaml file như sau:
 
     ```
     kubectl edit ingress nginx-ingress

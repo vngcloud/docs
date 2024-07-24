@@ -227,6 +227,7 @@ spec:
                 port:
                   number: 80
 ```
+
 {% endhint %}
 
 ***
@@ -377,11 +378,11 @@ Rules:
   ----        ----  --------
   *
               /path1   nginx-service:80 (172.16.24.202:80)
-Annotations:  vks.vngcloud.vn/load-balancer-name: vks-k8s-6d2acb-default-nginx-ingr-897e5
+Annotations:  vks.vngcloud.vn/load-balancer-id: lb-6cdea8fd-4589-410e-933f-c3bc46fa9d25
 Events:       <none>
 ```
 
-*   Để cập nhật nginx-ingress hiện có, ta có thể thực hiện bằng cách cập nhật Ingress Yaml file như sau:
+* Để cập nhật nginx-ingress hiện có, ta có thể thực hiện bằng cách cập nhật Ingress Yaml file như sau:
 
     ```
     kubectl edit ingress nginx-ingress

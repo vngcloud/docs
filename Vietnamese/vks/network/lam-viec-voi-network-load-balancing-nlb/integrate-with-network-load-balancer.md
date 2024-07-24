@@ -246,7 +246,6 @@ apiVersion: v1
 metadata:
   name: external-http-nginx-service
   annotations:
-    vks.vngcloud.vn/load-balancer-name: "my-nginx-service"                  # Name of the load balancer
     vks.vngcloud.vn/package-id: "lbp-ddbf9313-3f4c-471b-afd5-f6a3305159fc"  # ID of the load balancer package
     vks.vngcloud.vn/load-balancer-id: "lb-2b9d8974-3760-4d60-8203-9671f229fb96"
 spec:
