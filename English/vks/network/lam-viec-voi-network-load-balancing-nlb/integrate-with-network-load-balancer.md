@@ -159,7 +159,7 @@ kind: Service
 metadata:
   name: internal-http-apache2-service
   annotations:
-    vks.vngcloud.vn/internal-load-balancer: "true"  # MUST set like this to create an internal loadbalancer
+    vks.vngcloud.vn/scheme: "internal"              # MUST set like this to create an internal loadbalancer
 spec:
   selector:
     app: apache2
