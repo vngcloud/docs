@@ -74,7 +74,7 @@
 
 Ví dụ, đối với kết quả bên dưới, node trong cụm có label `nvidia.com/gpu`, có nghĩa là node đó có GPU. Các label này cũng cho biết nút này đang sử dụng 1 card GPU RTX 2080Ti, số lượng GPU có sẵn, Bộ nhớ GPU và các thông tin khác.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Trên pod `nvidia-device-plugin-daemonset`trong namespace`gpu-operator`, bạn có thể chạy lệnh `nvidia-smi` để kiểm tra thông tin GPU trên node:
 
@@ -292,7 +292,7 @@ kubectl logs -l job-name=nbody-sample
 kubectl delete job nbody-sample
 ```
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**
@@ -424,7 +424,7 @@ kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
       --set prometheus.url=http://${prometheus_service}.prometheus.svc.cluster.local
     ```
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Sau khi cài đặt thành công, chạy lệnh bên dưới để kiểm tra các resource Prometheus đang chạy:
 
@@ -433,7 +433,7 @@ kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
     kubectl -n prometheus get all 
     ```
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Tiếp theo, bạn cần chạy lệnh bên dưới để enable DCGM exporter để giám sát GPU resources trên cluster của bạn:
 

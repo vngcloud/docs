@@ -61,7 +61,7 @@ Gói bandwidth Pay As You Go là gói bandwidth mà bạn cần chi trả tiền
 
 **Bước 3**: Trên danh sách các gói bandwidth có sẵn, chọn vào gói **PAYG-ALL, PAYG-DOMESTIC, PAYG-INTERNATIONAL** tùy theo nhu cầu sử dụng của bạn.
 
-**Bước 4**: Tại mục **Danh sách IP**, chọn biểu tượng <img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">tại địa chỉ IP bạn muốn bỏ khỏi gói và chọn biểu tượng <img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">.
+**Bước 4**: Tại mục **Danh sách IP**, chọn biểu tượng <img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">tại địa chỉ IP bạn muốn bỏ khỏi gói và chọn biểu tượng <img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">.
 
 **Bước 5:** Tại màn hình xác nhận xóa IP, chọn **Xóa**.
 

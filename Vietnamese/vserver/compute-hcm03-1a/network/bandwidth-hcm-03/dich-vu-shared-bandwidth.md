@@ -57,7 +57,7 @@ Gói bandwidth Share là gói bandwidth với tốc độ cao được chia sẻ
 
 **Bước 3**: Trên danh sách các gói bandwidth có sẵn, chọn vào gói **Share** tùy theo nhu cầu sử dụng của bạn.
 
-**Bước 4**: Tại mục **Danh sách IP**, chọn biểu tượng <img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">tại địa chỉ IP bạn muốn bỏ khỏi gói và chọn biểu tượng <img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">.
+**Bước 4**: Tại mục **Danh sách IP**, chọn biểu tượng <img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">tại địa chỉ IP bạn muốn bỏ khỏi gói và chọn biểu tượng <img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">.
 
 **Bước 5:** Tại màn hình xác nhận xóa IP, chọn **Xóa**.
 

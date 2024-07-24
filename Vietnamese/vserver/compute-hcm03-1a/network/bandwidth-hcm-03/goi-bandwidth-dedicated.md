@@ -92,7 +92,7 @@ Gói bandwidth Dedicated là gói bandwidth với tốc độ tùy chọn của 
 
 **Bước 3**: Trên danh sách các gói bandwidth có sẵn, chọn vào gói **Dedicated** tùy theo nhu cầu sử dụng của bạn.
 
-**Bước 4**: Tại mục **Danh sách IP**, chọn biểu tượng <img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">tại địa chỉ IP bạn muốn bỏ khỏi gói và chọn biểu tượng <img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">.
+**Bước 4**: Tại mục **Danh sách IP**, chọn biểu tượng <img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">tại địa chỉ IP bạn muốn bỏ khỏi gói và chọn biểu tượng <img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">.
 
 **Bước 5:** Tại màn hình xác nhận xóa IP, chọn **Xóa**.
 
@@ -114,7 +114,7 @@ Gói bandwidth Dedicated là gói bandwidth với tốc độ tùy chọn của 
 
 **Bước 3**: Trên danh sách các gói bandwidth có sẵn, chọn vào gói **Dedicated** tùy theo nhu cầu thay đổi của bạn.
 
-**Bước 4**: Chọn biểu tượng <img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">tại **Dedicated** **bandwidth** bạn muốn thay đổi gói và chọn **Resize**
+**Bước 4**: Chọn biểu tượng <img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">tại **Dedicated** **bandwidth** bạn muốn thay đổi gói và chọn **Resize**
 
 **Bước 5:** Tại màn hình **Resize bandwidth**, chọn gói **Domestic bandwidth** hoặc **International bandwidth** mà bạn muốn thay đổi.&#x20;
 

@@ -60,7 +60,7 @@
 2.  Thực hiện Áp dụng cấu hình lên container:\
 
 
-    <figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  Kiểm tra việc access từ ngoài Internet vào Dịch vụ Echo1 với port 30309:\
     \
 

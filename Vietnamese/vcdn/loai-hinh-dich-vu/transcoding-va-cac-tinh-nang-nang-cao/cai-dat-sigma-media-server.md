@@ -67,14 +67,14 @@ Lúc này, hệ thống **vServer** sẽ khởi tạo một Server tương ứng
 * Cài đặt **Data Dir** bằng cách chọn vào nút Pick
 * Chọn **Submit**.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 8**: Tại màn hình cảnh báo việc deploy server, bạn chọn **Yes**
 
 **Bước 9:** Tiếp tục chọn **Done**, lúc này màn hình sẽ hiển thị như sau, bạn hãy tiếp tục bấm chọn **App Editor.**
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Sau khi truy cập vào **Portal Sigma Media**, bạn sẽ thấy thông tin server đã tạo trước đó từ **vMarketplace** và thông tin **License** tương ứng.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>

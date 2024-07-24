@@ -61,7 +61,7 @@ Nếu bạn đã tạo một SSH Key Pair trên portal VNGCLOUD (_Nhấp vào_ [
 3.  Kết nối lại đến vServer\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -71,7 +71,7 @@ _**Phương án 1**_**: Login SSH bằng password**
 
 1.  Sử dụng Putty của Windows để kết nối đến vServer
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. Thay đổi password cho user stackops ở lần đầu tiên login
