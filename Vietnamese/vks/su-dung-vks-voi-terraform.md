@@ -90,10 +90,11 @@ resource "vngcloud_vks_cluster" "primary" {
 
 Bên dưới là file main.tf tôi dùng để khởi tạo Cluster với các thông số:
 
-* Tên Cluster: my-cluster
-* K8S Version: v1.28.8
+* Tên Cluster: cluster-demo
+* K8S Version: v1.29.1
 * Mode: Public Cluster và Public Node Group
-* Tên Node Group: my-nodegroup
+* Tên Node Group: nodegroup1
+* Intial Node: 3
 * Bật AutoScaling: scale từ 0 tới 5 nodes
 
 ```
@@ -115,21 +116,22 @@ provider "vngcloud" {
 }
 
 resource "vngcloud_vks_cluster" "primary" {
-  name      = "my-cluster"
-  description = "VNGCLOUD uses terraform"
-  version = "v1.28.8"
+  name      = "cluster-demo"
+  description = "Cluster create via terraform"
+  version = "v1.29.1"
   cidr      = "172.16.0.0/16"
   enable_private_cluster = false
   network_type = "CALICO"
-  vpc_id    = "net-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
-  subnet_id = "sub-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
+  vpc_id    = "net-70ef12d4-d619-43fc-88f0-1c1511683123"
+  subnet_id = "sub-0725ef54-a32e-404c-96f2-34745239c123"
   enabled_load_balancer_plugin = true
   enabled_block_store_csi_plugin = true
 }
 
 resource "vngcloud_vks_cluster_node_group" "primary" {
-  cluster_id= vngcloud_vks_cluster.primary.id
-  name= "my-nodegroup"
+  cluster_id = vngcloud_vks_cluster.primary.id
+  name = "nodegroup1"
+  num_nodes = 3
   auto_scale_config {
     min_size = 0
     max_size = 5
@@ -137,20 +139,21 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
   upgrade_config {
     strategy = "SURGE"
     max_surge = 1
-	max_unavailable = 0
+    max_unavailable = 0
   }
-  image_id = "img-983d55cf-9b5b-44cf-aa72-23f3b25d43ce"
-  flavor_id = "flav-9e88cfb4-ec31-4ad4-8ba5-243459f6dc4b"
-  disk_size = 20
+  image_id = "img-108b3a77-ab58-4000-9b3e-190d0b4b07fc"
+  flavor_id = "flav-9e88cfb4-ec31-4ad4-8ba5-243459f6d123"
+  disk_size = 50
   disk_type = "vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018"
   enable_private_nodes = false
-  ssh_key_id= "ssh-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
+  ssh_key_id= "ssh-f923c53c-cba7-4131-9f86-175d04ae2123"
+  security_groups = ["secg-faf05344-fbd6-4f10-80a2-cda08d15ba5e"]
   labels = {
-    "mylabel" = "vngcloud"
+    "test" = "terraform"
   }
   taint {
-    key    = "mykey"
-    value  = "myvalue"
+    key    = "key1"
+    value  = "value1"
     effect = "PreferNoSchedule"
   }
 }
@@ -164,6 +167,7 @@ Bên dưới là file main.tf tôi dùng để khởi tạo Cluster với các t
 * K8S Version: v1.29.1
 * Mode: Public Cluster và Private Node Group
 * Tên Node Group: my-nodegroup
+* Intial Node: 3 nodes
 * Bật AutoScaling: scale từ 0 tới 5 nodes
 
 Đầu tiên, bạn thực hiện apply file main theo cấu trúc sau:
@@ -202,6 +206,7 @@ resource "vngcloud_vks_cluster" "primary" {
 resource "vngcloud_vks_cluster_node_group" "primary" {
   cluster_id= vngcloud_vks_cluster.primary.id
   name= "my-nodegroup"
+  num_nodes = 3
   auto_scale_config {
     min_size = 0
     max_size = 5
@@ -265,6 +270,7 @@ resource "vngcloud_vks_cluster" "primary" {
 resource "vngcloud_vks_cluster_node_group" "primary" {
   cluster_id= vngcloud_vks_cluster.primary.id
   name= "my-nodegroup"
+  num_nodes = 3
   auto_scale_config {
     min_size = 0
     max_size = 5
