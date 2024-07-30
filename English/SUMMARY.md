@@ -105,6 +105,7 @@
         * [K8S Flavor](vserver/compute-hcm03-1a/vcontainer/kubernetes-cluster/k8s-flavor.md)
       * [Use Persistent Volume (PV) and Persistent Volume Claim (PVC) with VNG Cloud](vserver/compute-hcm03-1a/vcontainer/use-persistent-volume-pv-and-persistent-volume-claim-pvc-with-vng-cloud.md)
     * [Load Balancer](vserver/compute-hcm03-1a/load-balancer/README.md)
+      * [Deployment mode](vserver/compute-hcm03-1a/load-balancer/deployment-mode.md)
       * [Initialize Load Balancer Layer 7](vserver/compute-hcm03-1a/load-balancer/initialize-load-balancer-layer-7.md)
       * [Load Balancer Management](vserver/compute-hcm03-1a/load-balancer/load-balancer-management.md)
       * [Upload Certificates](vserver/compute-hcm03-1a/load-balancer/upload-certificates.md)
