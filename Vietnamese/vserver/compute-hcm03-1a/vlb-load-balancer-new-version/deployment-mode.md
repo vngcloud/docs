@@ -2,14 +2,11 @@
 
 Trong môi trường điện toán đám mây của VNG Cloud, chúng tôi cung cấp hai loại Load Balancer riêng biệt: Application Load Balancer và Network Load Balancer. Các Load Balancer này đóng một vai trò quan trọng trong việc tối ưu hóa hiệu suất, tính khả dụng và khả năng mở rộng của ứng dụng của bằng cách phân phối lưu lượng mạng đến các máy chủ backend một cách hiệu quả. Mỗi loại Load Balancer được tùy chỉnh cho các tình huống sử dụng cụ thể, cung cấp các tính năng độc đáo để đáp ứng các yêu cầu đa dạng của kiến trúc IT hiện đại.
 
-**Tổng quan mô hình triển khai Load Balancer tại VNG Cloud như sau:**
+**Tổng quan mô hình triển khai Load Balancer tại VNG Cloud như sau**
 
-\
+<figure><img src="../../../.gitbook/assets/64553488 (1).png" alt=""><figcaption></figcaption></figure>
 
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/64553364/overview.drawio.png?version=1&#x26;modificationDate=1693286486000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-**Model quản lý Load Balancer bao gồm các component chính như sau:**
+**Model quản lý Load Balancer bao gồm các component chính như sau**
 
 * **Layer:** Hỗ trợ 2 loại chính, bao gồm:
   * _Application Load Balancer:_ Application layer Load Balancer định tuyến lưu lượng dựa trên yêu cầu HTTP/HTTPS, cho phép phân tích dữ liệu cấp ứng dụng như HTTP Header và Cookie. Lý tưởng cho các ứng dụng web có yêu cầu định tuyến phức tạp hoặc nhu cầu định tuyến dựa trên nội dung.
