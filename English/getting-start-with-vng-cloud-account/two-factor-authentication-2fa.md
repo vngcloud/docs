@@ -8,7 +8,7 @@
 
 Turn on the desired authentication method as shown in the image.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 There are 2 methods to receive OTP: via SMS or through the Google Authenticator app.
 
@@ -18,13 +18,13 @@ There are 2 methods to receive OTP: via SMS or through the Google Authenticator 
 
 &#x20;       1.2 Receive OTP via the Google Authenticator app.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click the **INITIATE** button, you will be taken to the Google Authenticator code creation page and follow the instructions.
 * Click **Save Settings** to complete.
 * You will receive a notification that **you have completed** as shown in the image.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 On the **Multi-Factor Authentication** screen, simply Enable/Disable the function according to your needs, you can choose one of the two or both. Here we support you in creating a new QR code, click on the link and follow the instructions.
 
