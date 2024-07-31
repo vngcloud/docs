@@ -558,6 +558,7 @@
     * [Quản lý thông tin MDS Instance (Database)](vdb/memorystore-database-service-mds/quan-ly-thong-tin-mds-instance.md)
     * [Quản lý cấu hình MDS Instance (Configuration Group)](vdb/memorystore-database-service-mds/quan-ly-cau-hinh-mds-instance.md)
     * [Quản lý sao lưu MDS Instance (Backup)](vdb/memorystore-database-service-mds/sao-luu-mds-instance.md)
+  * [Kafka Cluster (KDS)](vdb/kafka-cluster-kds.md)
   * [Billing Information](vdb/billing-information.md)
   * [Security (Bảo mật)](vdb/security-bao-mat.md)
 * [VKS](vks/README.md)
