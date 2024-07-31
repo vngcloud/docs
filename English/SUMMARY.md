@@ -111,6 +111,7 @@
         * [Page 1](vserver/compute-hcm03-1a/load-balancer/application-load-balancer/page-1.md)
         * [How it works (ALB)](vserver/compute-hcm03-1a/load-balancer/application-load-balancer/how-it-works-alb.md)
         * [Getting Started](vserver/compute-hcm03-1a/load-balancer/application-load-balancer/getting-started.md)
+        * [Manage Load balancer](vserver/compute-hcm03-1a/load-balancer/application-load-balancer/manage-load-balancer.md)
       * [Initialize Load Balancer Layer 7](vserver/compute-hcm03-1a/load-balancer/initialize-load-balancer-layer-7.md)
       * [Load Balancer Management](vserver/compute-hcm03-1a/load-balancer/load-balancer-management.md)
       * [Upload Certificates](vserver/compute-hcm03-1a/load-balancer/upload-certificates.md)
