@@ -1,4 +1,4 @@
-# Bắt đầu với IAM
+# Getting Start with IAM
 
 Trong phần này, chúng ta sẽ tìm hiểu về các khái niệm cơ bản về Quản lý Định Danh và Truy cập (Identity and Access Management - IAM) và cách bắt đầu quản lý quyền truy cập vào các tài nguyên đám mây một cách an toàn.
 
@@ -88,10 +88,3 @@ Quyền truy cập IAM xác định những hành động mà các thực thể 
 Hãy nhớ tuân thủ nguyên tắc đặc quyền tối thiểu khi gán quyền cho các thực thể IAM, chỉ cấp quyền tối thiểu cần thiết cho IAM User Account, Group và Service Account thực hiện nhiệm vụ của họ.
 
 Xin chúc mừng! Bạn đã nắm được cách cơ bản để bắt đầu sử dụng IAM. Bạn có thể tạo IAM User Account, Group và Service Account, và gán quyền cho họ thông qua các chính sách IAM để kiểm soát quyền truy cập vào các tài nguyên đám mây của bạn. Tiếp theo, chúng ta sẽ tìm hiểu sâu hơn về việc viết các tùy chỉnh cho IAM Policies để kiểm soát truy cập chi tiết hơn.
-
-\
-
-
-Chủ đề
-
-Hướng dẫn đăng nhập VNG Cloud Service: [Cách đăng nhập vào VNG Cloud](cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)

@@ -2,8 +2,6 @@
 
 IAM Identities (Định danh IAM) là các thực thể trong hệ thống Quản lý Định danh và Truy cập (IAM) đại diện cho cácIAM User Account, User Group và Service Account. IAM Identities được sử dụng để quản lý quyền truy cập đến tài nguyên và dịch vụ trong môi trường đám mây một cách an toàn. Mỗi IAM Identity có một bộ thông tin đăng nhập duy nhất và các quyền liên kết liên quan xác định các hành động mà chúng có thể thực hiện trên các tài nguyên cụ thể.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59806590/Identities-Page-1.drawio%20(1).png?version=1&#x26;modificationDate=1691474663000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
 #### Root User Account <a href="#iamidentities-rootuseraccount" id="iamidentities-rootuseraccount"></a>
 
 Root User Account là một thực thể bạn tạo đầu tiên trong VNG Cloud và sử dụng, mặc định có quyền truy cập đầy đủ vào tất cả các sản phẩm/dịch vụ và tài nguyên của VNG Cloud trong tài khoản đó.
@@ -54,6 +52,4 @@ Identity Providers là dịch vụ cho phép người dùng xác thực danh tí
 
 Tìm thêm hướng dẫn chi tiết tại:
 
-* [Quản lý Identity Providers](thiet-lap-identity-providers.md)\
-
-
+* [Quản lý Identity Providers](thiet-lap-identity-providers.md)\\
