@@ -25,7 +25,7 @@ Recognizing the increasing demand for postpaid resources/services from prepaid u
 
 After successfully initializing the resources, the system will automatically calculate the actual amount of money used each day and hold the necessary amount of credit for the user to use the service in the next three days. Refer to the following example **the use of vContainer (K8s) Service**:
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Insufficient available credit balance to hold credit&#x20;
 

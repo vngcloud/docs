@@ -20,9 +20,9 @@ After downloading the Example folder to the computer, the user opens the file [v
 * **Client\_id:** Get at IAM homepage/ Service account - Service account Detail - **Tab Security credentials**
 * **Client\_secret:** Obtained when initializing Service account at IAM homepage or can be reset at IAM homepage/ Service account - Service account Detail - **Tab Security credentials**
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```
 variable "client_id" {  
@@ -68,11 +68,11 @@ source = "./modules/vng-cloud-vlb" }
 
 
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **subnet\_id**: specify the subnet id that vServer will be created on, you can get it from [{VPC Tab}](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), if you haven't initialized any subnet you can see the instructions at [{Subnet creation page}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039):
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```
 variable "project_id" {  
