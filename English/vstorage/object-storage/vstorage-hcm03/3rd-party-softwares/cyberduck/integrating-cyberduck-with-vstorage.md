@@ -21,7 +21,7 @@ To view detailed instructions on integrating the Cyberduck tool with vStorage, p
 2. Open the **Cyberduck** application\*\*.\*\*
 3. Choose **Open Connection** or **Bookmark + New Bookmark**.
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Enter the connection information, including:
 
