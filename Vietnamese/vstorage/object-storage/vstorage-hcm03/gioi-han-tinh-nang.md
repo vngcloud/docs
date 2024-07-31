@@ -1,4 +1,4 @@
-# Giới hạn tính năn
+# Giới hạn tính năng
 
 Bảng bên dưới là các giới hạn của vStorage đối với một số tính năng, vui lòng tham khảo để sử dụng&#x20;
 

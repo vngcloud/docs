@@ -345,7 +345,7 @@
           * [Tích hợp công cụ AWS CLI với vStorage](vstorage/object-storage/vstorage-hcm03/3rd-party-softwares/aws-cli/tich-hop-cong-cu-aws-cli-voi-vstorage.md)
           * [Sử dụng công cụ AWS CLI](vstorage/object-storage/vstorage-hcm03/3rd-party-softwares/aws-cli/su-dung-cong-cu-aws-cli.md)
       * [Hạn mức tài nguyên](vstorage/object-storage/vstorage-hcm03/han-muc-tai-nguyen.md)
-      * [Giới hạn tính năn](vstorage/object-storage/vstorage-hcm03/gioi-han-tinh-nan.md)
+      * [Giới hạn tính năng](vstorage/object-storage/vstorage-hcm03/gioi-han-tinh-nang.md)
       * [Cách tính phí](vstorage/object-storage/vstorage-hcm03/cach-tinh-phi/README.md)
         * [Tính phí với người dùng trả trước](vstorage/object-storage/vstorage-hcm03/cach-tinh-phi/tinh-phi-voi-nguoi-dung-tra-truoc.md)
         * [Tính phí với người dùng trả sau](vstorage/object-storage/vstorage-hcm03/cach-tinh-phi/tinh-phi-voi-nguoi-dung-tra-sau.md)
