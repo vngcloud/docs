@@ -4,7 +4,7 @@ In the VNG Cloud environment, we offer two distinct types of Load Balancers: App
 
 ## Overview of Load Balancer Deployment Models in VNG Cloud
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/64553488.png" alt=""><figcaption></figcaption></figure>
 
 The Load Balancer management model consists of the following key components:
 
