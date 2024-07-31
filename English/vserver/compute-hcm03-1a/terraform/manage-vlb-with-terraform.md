@@ -4,7 +4,7 @@
 
 **Step 1**: Install Terraform CLI as instructed [here](install-terraform.md)
 
-**Step 2**: To be able to manage vServer with Terraform, you need to create a Service account from the Root account on the IAM homepage (see instructions on how to create a Service account and use [IAM here](../../../identity-and-access-management-iam.md)), in this case you want to create a Load Balancer with Terraform requires the following (Policy) permissions:
+**Step 2**: To be able to manage vServer with Terraform, you need to create a Service account from the Root account on the IAM homepage (see instructions on how to create a Service account and use [IAM here](../../../identity-and-access-management-iam/)), in this case you want to create a Load Balancer with Terraform requires the following (Policy) permissions:
 
 * CreateLoadBalancer
 * GetLoadBalancer

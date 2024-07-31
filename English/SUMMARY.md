@@ -513,7 +513,6 @@
     * [Management and Monitoring of Signals Pushed to the Live Entrypoint System](vcdn/giam-sat-hoat-dong/quan-ly-va-theo-doi-cac-tin-hieu-duoc-day-den-he-thong-live-entrypoint.md)
   * [Report](vcdn/bao-cao.md)
   * [Security (vCDN)](vcdn/security-vcdn.md)
-* [vDB](vdb.md)
 * [VKS](vks/README.md)
   * [What is VKS?](vks/vks-la-gi.md)
   * [How VKS works?](vks/mo-hinh-hoat-dong.md)
