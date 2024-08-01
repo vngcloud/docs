@@ -66,7 +66,7 @@ VNG Managed Policy là các Chính Sách IAM (IAM Policy) được tạo mặc �
 
 ### **3. Khám phá chi tiết cách sử dụng IAM cho vStorage** <a href="#iamforvstorage-3.khamphachitietcachsudungiamchovstorage" id="iamforvstorage-3.khamphachitietcachsudungiamchovstorage"></a>
 
-* Tìm hiểu thêm về IAM cho vStorage: [Quản lý định danh và truy cập (IAM) cho vSt](iam-cho-vstorage.md)[orage](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648486)
+* Tìm hiểu thêm về IAM cho vStorage: [Quản lý định danh và truy cập (IAM) cho vStorage](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap)
 
 Tìm hiểu thêm về IAM:
 
