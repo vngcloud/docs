@@ -1,9 +1,39 @@
 # Object storage (HCM04)
 
-VNGCloud giới thiệu tới bạn **Region HCM04** mới cho dịch vụ vStorage. Những tính năng nổi bật tại region này bao gồm:
+VNGCloud introduces to you the new **HCM04** **Region** for vStorage services. The standout features of this region include:
 
-* **Hiệu suất cao**: Region HCM04 được thiết kế để đáp ứng nhu cầu xử lý khối lượng truy cập lớn với tốc độ 10.000 request/giây trên mỗi IP, điều này mang lại hiệu suất vượt trội, giúp tối ưu hóa hoạt động của các ứng dụng và dịch vụ của bạn.
-* **Bảo mật nâng cao**: Region HCM04 cung cấp các cơ chế mã hóa như SSE-S3, SSE-C đảm bảo an toàn tuyệt đối cho dữ liệu của khách hàng.
-* **Gói cước mới - Instant Archive:** Đặc biệt, tại region HCM04, chúng tôi giới thiệu gói cước mới Instant Archive với chi phí thấp hơn, giúp khách hàng tiết kiệm chi phí lưu trữ dữ liệu dài hạn mà không phát sinh chi phí ẩn và vẫn đáp ứng đầy đủ tiêu chí cho việc lưu trữ backup.&#x20;
+* **High performance**: The HCM04 Region is designed to meet the needs of processing large traffic volumes with a speed of 10,000 requests per second per IP, providing exceptional performance that optimizes the operation of your applications and services.
+* **Enhanced security:** The HCM04 Region offers encryption mechanisms such as SSE-S3 and SSE-C that ensure absolute safety for customer data.
+* **New pricing plan - Instant Archive**: Notably, in the HCM04 region, we introduce the new Instant Archive pricing plan with lower costs, helping customers save on long-term data storage without incurring hidden fees while still fully meeting the criteria for backup storage..
 
-Bắt đầu với vStorage tại Region HCM04 theo hướng dẫn tại [đây](https://app.gitbook.com/o/5XJ2I4IOE66RNLOwPBIO/s/xa9vQRxxrqoNMwTbp799/).
+***
+
+## **Farm** <a href="#farm" id="farm"></a>
+
+Farm is a term specifically used for vStorage, a farm is defined by us as a system that includes infrastructure, services, etc. deployed at a specific location within the 2 regions of Hanoi and Ho Chi Minh City with the purpose of providing vStorage storage services. For the 2 farms HCM03, HAN01, the specific parameters for each farm are provided by us as follows:
+
+<table data-full-width="true"><thead><tr><th width="115">Farm</th><th width="255">Farm ID</th><th width="309">vStorage endpoint</th><th>Mục đích sử dụng</th></tr></thead><tbody><tr><td>HCM04</td><td>8b1e9c9b-7123-54a5-ua8f-2d67d71c9204</td><td>https://hcm04.vstorage.vngcloud.vn</td><td>Farm phục vụ đa mục đích với hiệu suất cao và được dùng chung cho dữ liệu lưu trữ tại Region Hồ Chí Minh.</td></tr></tbody></table>
+
+***
+
+## Resource quota <a href="#han-muc-tai-nguyen" id="han-muc-tai-nguyen"></a>
+
+The tables below list the maximum values for storage resources on your vStorage.
+
+#### Bandwidth <a href="#bandwidth" id="bandwidth"></a>
+
+<table data-full-width="true"><thead><tr><th>Farm</th><th>Download BW Domestic</th><th>Download BW International</th><th>Upload BW Domestic</th><th>Upload BW International</th></tr></thead><tbody><tr><td>HCM04</td><td>10Gbps shared</td><td>TBA</td><td>10Gbps shared</td><td>TBA</td></tr></tbody></table>
+
+#### Request per limit <a href="#request-per-limit" id="request-per-limit"></a>
+
+* Per IP
+
+<table data-full-width="true"><thead><tr><th>Storage Class</th><th>Request all types</th><th>Put request</th><th>Get request</th></tr></thead><tbody><tr><td>Instant Archive</td><td>TBA</td><td>TBA</td><td>TBA</td></tr></tbody></table>
+
+* Per path
+
+<table data-full-width="true"><thead><tr><th>Storage Class</th><th>Request all types</th><th>Put request</th><th>Get request</th></tr></thead><tbody><tr><td>Instant Archive</td><td>TBA</td><td>TBA</td><td>TBA</td></tr></tbody></table>
+
+#### Others <a href="#cac-han-muc-khac" id="cac-han-muc-khac"></a>
+
+<table data-full-width="true"><thead><tr><th>Item</th><th>Limit</th></tr></thead><tbody><tr><td>Number of object per container/ bucket</td><td>600 millions</td></tr><tr><td>Number of container/ bucket per project</td><td>Unlimited</td></tr></tbody></table>
