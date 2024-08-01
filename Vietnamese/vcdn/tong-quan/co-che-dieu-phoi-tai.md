@@ -17,3 +17,5 @@ Hệ thống vCDN Request Router sẽ quyết định gửi lại IP Server tố
 * Trong trường hợp POP thuộc ISP tại khu vực của người dùng bị sự cố hoặc quá tải, sẽ chuyển đến POP của ISP khác đang có khả năng phục vụ tại khu vực đó.&#x20;
 
 Với người dùng các ISP nhỏ như CMC, SPT, SCTV, Netnam sẽ được điều phối ưu tiên lưu lượng về POP của VNG Cloud tại Công Viên Phần Mềm Quang Trung vì tại đây VNG Cloud đã thực hiện peering trực tiếp tới mỗi ISP như trên. Việc này đảm bảo phục vụ tốt cho tất cả người dùng cuối.
+
+**Đối với traffic Domectic (trong nước) thông thường, VNG hiện không cam kết tốc độ với traffic đến từ quốc tế. Quý khách hàng tham khảo thêm dịch vụ vCDN quốc tế mà VNGCloud cung cấp để có chất lượng tốt nhất với traffic quốc tế hoặc liên hệ support@vng.com.vn để được hướng dẫn thêm.**
