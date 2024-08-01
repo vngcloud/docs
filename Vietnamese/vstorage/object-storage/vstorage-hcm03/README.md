@@ -1,7 +1,5 @@
 # Object storage (HCM03, HAN01)
 
-## **Object Storage (HCM03, HAN01)**
-
 **Lưu trữ đối tượng** (hay còn gọi là **Object Storage**, **Cloud Storage**) là một hình thức lưu trữ dữ liệu dưới dạng các đơn vị riêng biệt gọi là **đối tượng (object)**. Mỗi đối tượng bao gồm dữ liệu thực tế (như hình ảnh, video, tệp) cùng với metadata cung cấp thông tin về đối tượng đó.
 
 #### Lợi ích của Object Storage:

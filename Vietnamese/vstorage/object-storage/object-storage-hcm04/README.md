@@ -1,7 +1,5 @@
 # Object storage (HCM04)
 
-## **Object Storage (HCM04)**
-
 VNGCloud giới thiệu tới bạn **Region HCM04** mới cho dịch vụ vStorage. Những tính năng nổi bật tại region này bao gồm:
 
 * **Hiệu suất cao**: Region HCM04 được thiết kế để đáp ứng nhu cầu xử lý khối lượng truy cập lớn với tốc độ 10.000 request/giây trên mỗi IP, điều này mang lại hiệu suất vượt trội, giúp tối ưu hóa hoạt động của các ứng dụng và dịch vụ của bạn.
