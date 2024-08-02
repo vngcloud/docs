@@ -12,7 +12,7 @@ vMarketplace là nơi tổng hợp nhiều ứng dụng phổ biến phù hợp 
 
 ## Quy trình tích hợp <a href="#third-partyintegrationprocess-quytrinhtichhop" id="third-partyintegrationprocess-quytrinhtichhop"></a>
 
-<figure><img src="../../../.gitbook/assets/71729271.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/71729271.png" alt=""><figcaption></figcaption></figure>
 
 * Bước 1: Đối tác cài đặt môi trường, kiểm thử tính khả dụng của ứng dụng trên môi trường VNG Cloud và một số tài liệu cần thiết
 * Bước 2: VNG Cloud đóng gói image theo yêu cầu, tài liệu mà đối tác cung cấp

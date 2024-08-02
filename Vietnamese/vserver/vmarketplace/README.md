@@ -1,11 +1,22 @@
 # vMarketplace
 
-Là nơi tổng hợp nhiều ứng dụng phổ biến phù hợp cho các nghành khác nhau như giải trí, ngân hàng, bất động sản, bán lẻ, sản xuất. Các ứng dụng được vMarketplace hỗ trợ build sẵn thành các image, giúp người dùng bỏ qua các bước tìm kiếm và cài đặt rườm ra để có thể triển khai máy chủ ảo một cách nhanh nhất chỉ qua hai bước [Khởi tạo và cài đặt ứng dụng](vmarketplace-giao-dien-cu/application-software-installation-skip-to-end-of-metadatago-to-start-of-metadata/khoi-tao-va-cai-dat-ung-dung.md)
+Chào mừng bạn đến với **vMarketplace - VNG cloud**, một trung tâm cung cấp các giải pháp đám mây của chúng tôi nhằm tối ưu hóa quy trình truy cập của bạn đến nhiều ứng dụng và dịch vụ từ bên thứ ba. Khám phá vMarketplace để mang lại những giải pháp sáng tạo, nhằm nâng cao và mở rộng khả năng cơ sở hạ tầng đám mây của bạn. Tìm hiểu, lựa chọn, và tích hợp một loạt các công cụ, ứng dụng và dịch vụ từ **vMarketplace** đáp ứng những yêu cầu đặc biệt của doanh nghiệp.&#x20;
 
-&#x20;vMarketplace hiện tại đang cung cấp danh sách các ứng dụng như sau&#x20;
+#### Danh sách ứng dụng <a href="#vmarketplace-newversion-danhsachungdung" id="vmarketplace-newversion-danhsachungdung"></a>
 
-<table data-header-hidden><thead><tr><th width="53"></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>STT</td><td>Ứng dụng</td><td>Phiên bản</td><td>Phân loại</td><td>Port cần mở</td></tr><tr><td>STT</td><td>Ứng dụng</td><td>Phiên bản</td><td>Phân loại</td><td>Port cần mở</td></tr><tr><td>1</td><td>activemq</td><td>v5.14.3</td><td>message server, Developer tools</td><td>8161;61616;61613</td></tr><tr><td>2</td><td>dokuwiki</td><td>v20180422b</td><td>Blog &#x26; CMS</td><td>80;443</td></tr><tr><td>4</td><td>drupal</td><td>v8.6.11</td><td>Blog &#x26; CMS</td><td>80;443</td></tr><tr><td>5</td><td>ghost</td><td>v2.19.3</td><td>Blog &#x26; CMS</td><td>80</td></tr><tr><td>6</td><td>gitlab</td><td>vlatest</td><td>Developer Tools</td><td>80;443;22</td></tr><tr><td>7</td><td>jenkins</td><td>v2.164.1</td><td>Developer Tools</td><td>80;443;50000</td></tr><tr><td>8</td><td>joomla</td><td>v3.9.4</td><td>Blog &#x26; CMS</td><td>80;443</td></tr><tr><td>9</td><td>magento</td><td>v2.3.0</td><td>e-Commerce</td><td>80;443</td></tr><tr><td>10</td><td>mariadb</td><td>v10.1.38</td><td>database</td><td>3306</td></tr><tr><td>11</td><td>mediawiki</td><td>v1.32.0</td><td>Blog &#x26; CMS</td><td>80;443</td></tr><tr><td>12</td><td>mongodb</td><td>v4.0.6</td><td>database</td><td>27017</td></tr><tr><td>13</td><td>mysql</td><td>v8.0</td><td>database</td><td>3306</td></tr><tr><td>14</td><td>odoo</td><td>v12.0.20190318</td><td>ERP</td><td>80;443</td></tr><tr><td>15</td><td>opencart</td><td>v3.0.3-1</td><td>e-Commerce</td><td>80;443</td></tr><tr><td>16</td><td>postgresql</td><td>v9.4</td><td>database</td><td>5432</td></tr><tr><td>17</td><td>rabbitmq</td><td>v3.7.13</td><td>message server, Developer tools</td><td>4369;5672;25672;15672</td></tr><tr><td>18</td><td>redis</td><td>v5.0</td><td>database</td><td>6379</td></tr><tr><td>19</td><td>redmine</td><td>v4.0.2</td><td>Project management</td><td>80</td></tr><tr><td>20</td><td>wordpress</td><td>v5.1.1</td><td>Blog &#x26; CMS</td><td>80;443</td></tr><tr><td>21</td><td>wordpressnginx</td><td>v5.1.1</td><td>Blog &#x26; CMS</td><td>80;443</td></tr></tbody></table>
+| No. | Application           | Version     | Category             |
+| --- | --------------------- | ----------- | -------------------- |
+| 1   | Peplink SD-WAN        | <p><br></p> | Networking           |
+| 2   | 3CX                   | <p><br></p> | Networking           |
+| 3   | VyOS                  | <p><br></p> | Networking           |
+| 4   | CheckPoint            | <p><br></p> | Networking, Security |
+| 5   | Checkpoint Management | <p><br></p> | Networking, Security |
+| 6   | vSRX                  | <p><br></p> | Security             |
+| 7   | FortiGate             | <p><br></p> | Security             |
+| 8   | Pfsense               | <p><br></p> | Security             |
+| 9   | ASAv                  | <p><br></p> | Security             |
+| 10  | Palo Alto             | <p><br></p> | Security             |
+| 11  | Storage Gateway       | <p><br></p> | Storage & Backup     |
+| 12  | Filecloud             | <p><br></p> | Storage & Backup     |
 
-**Lưu ý:**&#x20;
-
-* VNG Cloud chỉ chuẩn bị sẵn bản build phù hợp với máy chủ ảo vServer, giúp cắt giảm các bước rườm rà khi cài đặt, trong quá trình sử dụng các **vấn đề liên quan đến ứng dụng** sẽ không nằm trong phạm vi hỗ trợ của VNG Cloud.&#x20;
+#### &#x20;<a href="#vmarketplace-newversion-chudelienquan" id="vmarketplace-newversion-chudelienquan"></a>
