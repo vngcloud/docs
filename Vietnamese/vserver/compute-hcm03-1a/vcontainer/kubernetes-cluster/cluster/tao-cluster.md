@@ -8,7 +8,7 @@ Chủ đề này cung cấp thông tin tổng quan về các tùy chọn khả d
 
 * Một VPC hiện có và các Subnet đáp ứng các yêu cầu của K8S. Trước khi bạn triển khai một Cluster để sử dụng trong sản xuất, chúng tôi khuyên bạn nên hiểu rõ về VPC và các yêu cầu Subnet. Nếu không có VPC và Subnet, bạn có thể tạo chúng trên giao diện của vServer.
 * Công cụ dòng lệnh kubectl được cài đặt trên thiết bị của bạn. Phiên bản có thể giống hoặc tối đa một phiên bản nhỏ sớm hơn hoặc muộn hơn phiên bản Kubernetes của Cluster của bạn. Ví dụ: nếu phiên bản Cluster của bạn là 1.23.16, thì bạn có thể sử dụng phiên bản kubectl 1.22, 1.23 hoặc 1.24 cùng với phiên bản đó.
-* Nếu bạn đang sử dụng Kubernetes Cluster trong lớp mạng pfsense hay Fortigate, bạn cần Config MTU cho các loại FW về 1450 theo hướng dẫn [MTU và “DF flag” best practice on VNG Cloud](../../../../vmarketplace/vmarketplace-giao-dien-cu/network-software-installation/pfsense-tren-hcm03/mtu-va-df-flag-best-practice-on-vng-cloud.md).
+* Nếu bạn đang sử dụng Kubernetes Cluster trong lớp mạng pfsense hay Fortigate, bạn cần Config MTU cho các loại FW về 1450 theo hướng dẫn [MTU và “DF flag” best practice on VNG Cloud](broken-reference).
 * Tài khoản IAM chính có quyền tạo và mô tả K8S. Để biết thêm thông tin, hãy xem phần [Phân quyền IAM cho vServer](../../../quan-ly-dinh-danh-va-truy-cap-iam-cho-vserver/cac-hanh-dong-tai-nguyen-va-dieu-kien-can-cho-phan-quyen-truy-cap-vserver.md).
 
 ***

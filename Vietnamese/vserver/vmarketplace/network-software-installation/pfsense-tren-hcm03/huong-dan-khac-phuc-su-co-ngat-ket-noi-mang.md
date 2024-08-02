@@ -28,19 +28,17 @@ Lỗi khởi động lại bộ định tuyến có thể xảy ra do nhiều ng
 
 * **Bước 1: Truy cập vào giao diện quản lý của pfsense, chọn tab interfaces và cấu hình lần lượt cho mạng WAN và LAN**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59804336/image.png?version=1&#x26;modificationDate=1687233249000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (684).png" alt=""><figcaption></figcaption></figure>
 
-* **Bước 2: Cấu hình mạng WAN**
-  * Tại mục _**General Configuration**_: ở thuộc tính **IPv4 Configuration Type**, chọn "Static IPv4" **(1)**
-  * Tại mục _**Static IPv4 Configuration**_: ở thuộc tính _**IPv4 Address**_, nhập IP public của server pfsense (thông tin xem tại website vServer) với subnet /26 **(2 và 3)**
-  * Tiếp theo, chọn _**Add new gateway**_ với IP gateway tùy thuộc vào IP public lúc khởi tạo **(4)**
-  * Cuối cùng, nhấn _**Save**_ để lưu lại cấu hình vừa chọn **(5)**
+*   **Bước 2: Cấu hình mạng WAN**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59804336/image%20(1).png?version=1&#x26;modificationDate=1687233450000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
+    * Tại mục _**General Configuration**_: ở thuộc tính **IPv4 Configuration Type**, chọn "Static IPv4" **(1)**
+    * Tại mục _**Static IPv4 Configuration**_: ở thuộc tính _**IPv4 Address**_, nhập IP public của server pfsense (thông tin xem tại website vServer) với subnet /26 **(2 và 3)**
+    * Tiếp theo, chọn _**Add new gateway**_ với IP gateway tùy thuộc vào IP public lúc khởi tạo **(4)**
+    * Cuối cùng, nhấn _**Save**_ để lưu lại cấu hình vừa chọn **(5)**\
 
 
+    <figure><img src="../../../../.gitbook/assets/59804344.png" alt=""><figcaption></figcaption></figure>
 * **Bước 3: Cấu hình mạng LAN** (Tương tự cấu hình mạng WAN)
   * Tại mục _**General Configuration**_: ở thuộc tính **IPv4 Configuration Type**, chọn "Static IPv4" **(1)**
   * Tại mục _**Static IPv4 Configuration**_: ở thuộc tính _**IPv4 Address**_, nhập IP private của server pfsense (thông tin xem tại website vServer) với subnet /24 **(2 và 3)**
@@ -48,5 +46,3 @@ Lỗi khởi động lại bộ định tuyến có thể xảy ra do nhiều ng
   * Cuối cùng, nhấn _**Save**_ để lưu lại cấu hình vừa chọn **(5)**
 
 _(\*) Lưu ý: Trong trường hợp đã làm theo hướng dẫn trên, nhưng vẫn chưa khắc phục được sự cố, vui lòng liên hệ bộ phận hỗ trợ của chúng tôi để được hướng dẫn dẫn chi tiết._
-
-\

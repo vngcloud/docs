@@ -1,55 +1,65 @@
 # Khởi tạo Pfsense trên HCM03
 
-Bước 1 : Vào marketPlace để chọn Pfsense&#x20;
+## Khởi tạo Pfsense
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938978/Screen%20Shot%202021-01-21%20at%2011.21.00.png?version=1&#x26;modificationDate=1611203217000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+Để khởi chạy ứng dụng, làm theo các bước sau:
 
-Bước 2 : Chọn Pfsense để cài đăt
+**Bước 1: Chọn tên và phiên bản ứng dụng**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938978/Screen%20Shot%202021-01-21%20at%2011.15.38.png?version=1&#x26;modificationDate=1611203227000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+**Bước 2: Chọn loại máy ảo (Instance type)** (sự kết hợp giữa CPU x RAM x GPU)
 
-Bước 3 : chọn cấu hình cho Pfsense&#x20;
+**Bước 3: Chọn cài đặt ổ đĩa (Volume)**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938978/Screen%20Shot%202021-01-21%20at%2011.27.59.png?version=1&#x26;modificationDate=1611203682000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+**Bước 4: Chọn cài đặt mạng (Network)** bao gồm các hành động sau:
 
-Bước 4: Cấu hình interface thông qua Console&#x20;
+* Chọn VPC cho ứng dụng
+* Chọn thứ tự ưu tiên cho các giao diện mạng Bên ngoài và Bên trong: Lưu ý rằng các giao diện này sẽ được sắp xếp chính xác theo thứ tự người dùng nhập vào
+* Chọn cài đặt bảo mật (Security): Chọn **Tạo mới nhóm bảo mật (New security group rules)** để tạo một nhóm mới với các tham số cụ thể cho ứng dụng của bạn, hoặc chọn **Nhóm bảo mật hiện có (Existing security group)** để kế thừa các quy tắc từ nhóm hiện tại
 
-4.1 : assign Interface :
+**Bước 5: Chọn cài đặt nhóm máy chủ (Server Group)**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938978/Screen%20Shot%202021-01-21%20at%2008.44.04.png?version=1&#x26;modificationDate=1611203731000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+* Để kích hoạt tính năng sẵn sàng cao (HA) cho các máy chủ tường lửa của bạn, hãy chọn **Dedicated SOFT ANTI AFFINITY group** để tạo một nhóm máy chủ mới cho ứng dụng tường lửa của bạn, hoặc chọn **Existing server group** nếu nó đã tồn tại
 
-4.2 : Assigne WAN : vtnet0 ; LAN : vtnet1
+Sau khi máy ảo đã được cấp phát, hãy sửa đổi **Nhóm Bảo mật** để mở các cổng sau cho máy ảo:
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938978/Screen%20Shot%202021-01-21%20at%2008.44.24.png?version=1&#x26;modificationDate=1611203732000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+* Truy cập qua vServer Console (từ webportal), Theo mặc định, mật khẩu để trống.&#x20;
+* Cấu hình truy cập SSH/Web (từ webportal) Theo mặc định, bạn sẽ đăng nhập bằng mật khẩu trống, sau đó ứng dụng sẽ chuyển hướng bạn đến trang thay đổi mật khẩu, vui lòng thay đổi mật khẩu ngay lập tức (Để Mật khẩu cũ trống).&#x20;
 
-WAN : vtnet0
+**Lưu ý: Ứng dụng Marketplace sẽ khởi tạo trong vài phút.**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938978/Screen%20Shot%202021-01-21%20at%2008.44.50.png?version=1&#x26;modificationDate=1611203732000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+## Cấu hình interface thông qua Console&#x20;
 
-LAN : vtnet1
+* Assign Interface
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938978/Screen%20Shot%202021-01-21%20at%2008.45.11.png?version=1&#x26;modificationDate=1611203732000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (675).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938978/Screen%20Shot%202021-01-21%20at%2008.45.18.png?version=1&#x26;modificationDate=1611203732000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+* Assigne WAN : vtnet0 ; LAN : vtnet1
 
-4.3 : Gán IP vào mạng LAN&#x20;
+<figure><img src="../../../../.gitbook/assets/image (676).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938978/Screen%20Shot%202021-01-21%20at%2008.45.44.png?version=1&#x26;modificationDate=1611203732000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+* WAN : vtnet0
 
-Lấy IP được cấp trên Portal để gán vào LAN interface :
+<figure><img src="../../../../.gitbook/assets/image (677).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938978/Screen%20Shot%202021-01-21%20at%2008.46.19.png?version=1&#x26;modificationDate=1611203733000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+* LAN : vtnet1
 
-Gán IP vào interface&#x20;
+<figure><img src="../../../../.gitbook/assets/image (678).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938978/Screen%20Shot%202021-01-21%20at%2008.46.43.png?version=1&#x26;modificationDate=1611203733000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (679).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938978/Screen%20Shot%202021-01-21%20at%2008.47.00.png?version=1&#x26;modificationDate=1611203733000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+* Gán IP vào mạng LAN
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938978/Screen%20Shot%202021-01-21%20at%2008.47.08.png?version=1&#x26;modificationDate=1611203734000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (680).png" alt=""><figcaption></figcaption></figure>
 
-IP Local Pfsense là https://LocalIP/
+* Lấy IP được cấp trên Portal để gán vào LAN interface
+* Gán IP vào interface
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22938978/Screen%20Shot%202021-01-21%20at%2008.47.18.png?version=1&#x26;modificationDate=1611203734000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (681).png" alt=""><figcaption></figcaption></figure>
 
-Bước 5 : Cấu hình Pfsense ban đầu : access vào https//local\_IP/ và tiến hành step by step cấu hình :&#x20;
+<figure><img src="../../../../.gitbook/assets/image (682).png" alt=""><figcaption></figcaption></figure>
+
+* IP Local Pfsense là https://LocalIP/
+
+<figure><img src="../../../../.gitbook/assets/image (683).png" alt=""><figcaption></figcaption></figure>
+
+* Cấu hình Pfsense ban đầu : access vào https//local\_IP/ và tiến hành step by step cấu hình :&#x20;

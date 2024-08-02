@@ -1,30 +1,26 @@
 # Khởi tạo và cài đặt ứng dụng
 
-vMarketplace cung cấp nhiều ứng dụng (app) đã được build sẵn giúp bạn có thể ngay lập tức khởi tạo và cài đặt lên vServer chỉ trong vài bước
+vMarketplace cung cấp nhiều ứng dụng (app) đã được build sẵn giúp bạn có thể ngay lập tức khởi tạo và cài đặt lên vServer chỉ trong vài bước.  Để khởi chạy ứng dụng, làm theo các bước sau:
 
-**Bước 1**: Vào giao diện marketplace [https://marketplace.console.vngcloud.vn/overview](https://marketplace.console.vngcloud.vn/overview)
+**Bước 1: Chọn tên và phiên bản ứng dụng**
 
-**Bước 2:** Nhấn chọn ứng dụng cần cài đặt
+**Bước 2: Chọn loại máy ảo (Instance type)** (sự kết hợp giữa CPU x RAM x GPU)
 
-**Bước 3:** Chọn launch on compute engine.
+**Bước 3: Chọn cài đặt ổ đĩa (Volume)**
 
-**Bước 4:** Cấu hình server&#x20;
+**Bước 4: Chọn cài đặt mạng (Network)** bao gồm các hành động sau:
 
-* App name: Mặc định sẽ là tên app và phiên bản, đây cũng là tên server sau khi khởi tạo.&#x20;
-* OS Image: Hệ điều hành của server&#x20;
-* Flavor: Mặc định các app đều tương thích với cấu hình nhỏ nhất của Server (1 Core & 1 Ram).&#x20;
-* Volume: Ổ đĩa boot, tối thiểu 20GB
-* Network setting: Chọn 1 network theo nhu cầu.&#x20;
-* Security setting: Hiện tại marketplace chỉ cho chọn 1 security group là default. Để đảm bảo có thể kết nối đến app mình đã chọn, bạn cần mở Port (xem cách mở tại [Access & Security](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2719788)) theo yêu cầu từng app (xem danh sách port theo app tại [vMarketplace](https://docs.vngcloud.vn/display/ONVINA/vMarketplace)).
+* Chọn VPC cho ứng dụng
+* Chọn thứ tự ưu tiên cho các giao diện mạng Bên ngoài và Bên trong: Lưu ý rằng các giao diện này sẽ được sắp xếp chính xác theo thứ tự người dùng nhập vào
+* Chọn cài đặt bảo mật (Security): Chọn **Tạo mới nhóm bảo mật (New security group rules)** để tạo một nhóm mới với các tham số cụ thể cho ứng dụng của bạn, hoặc chọn **Nhóm bảo mật hiện có (Existing security group)** để kế thừa các quy tắc từ nhóm hiện tại
 
-**Bước 5:** Kiểm tra lại thông tin và thực hiện thanh toán&#x20;
+**Bước 5: Chọn cài đặt nhóm máy chủ (Server Group)**
 
-Chi phí sử dụng marketplace sẽ bao gồm chi phí license của app (nếu có) và chi phí vServer (Flavor + Volume). Hiện tại 100% các app của marketplace đều miễn phí&#x20;
+* Để kích hoạt tính năng sẵn sàng cao (HA) cho các máy chủ tường lửa của bạn, hãy chọn **Dedicated SOFT ANTI AFFINITY group** để tạo một nhóm máy chủ mới cho ứng dụng tường lửa của bạn, hoặc chọn **Existing server group** nếu nó đã tồn tại
 
-Sau khi thanh toán xong, bạn sẽ được redirect về giao diện quản lý vServer, vui lòng đợi 5-10p để server được khởi tạo và app được cài đặt thành công.
+Sau khi máy ảo đã được cấp phát, hãy sửa đổi **Nhóm Bảo mật** để mở các cổng sau cho máy ảo:
 
-**Bước 6:** Sau khi hoàn tất cài đặt, bạn có thể thử truy cập ip của ứng dụng để kiểm tra.
+* Truy cập qua vServer Console (từ webportal), Theo mặc định, mật khẩu để trống.&#x20;
+* Cấu hình truy cập SSH/Web (từ webportal) Theo mặc định, bạn sẽ đăng nhập bằng mật khẩu trống, sau đó ứng dụng sẽ chuyển hướng bạn đến trang thay đổi mật khẩu, vui lòng thay đổi mật khẩu ngay lập tức (Để Mật khẩu cũ trống).&#x20;
 
-Lưu ý: nếu không truy cập được vui lòng kiểm tra lại security group đã cho phép truy cập port tương ứng của app chưa.&#x20;
-
-Sau khi truy cập được ứng dụng thành công là đã hoàn tất.
+**Lưu ý: Ứng dụng Marketplace sẽ khởi tạo trong vài phút.**

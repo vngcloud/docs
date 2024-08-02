@@ -1,29 +1,11 @@
 # Cho Phép Routing đi qua Pfsense
 
-Bước 1 : Kiểm tra ID của VPC&#x20;
+Bước 1 : Kiểm tra ID của VPC ứng dụng vSRX của bạn.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22939084/Screen%20Shot%202021-01-22%20at%2009.09.19.png?version=1&#x26;modificationDate=1611282459000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+Bước 2 : vào Route table theo đường dẫn: [https://hcm-3.console.vngcloud.vn/vserver/network/route-table](https://hcm-3.console.vngcloud.vn/vserver/network/route-table)
 
-Bước 2 : vào Route table&#x20;
+Bước 3: Thực hiện Edit Route.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22939084/Screen%20Shot%202021-01-22%20at%2009.09.44.png?version=1&#x26;modificationDate=1611282459000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+Bước 4: Gán Subnet và chọn Gateway cho phép subnet đi qua.
 
-Bước 3: Thực hiện Edit Route&#x20;
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22939084/Screen%20Shot%202021-01-22%20at%2009.09.55.png?version=1&#x26;modificationDate=1611282459000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-Bước 4: Gán Subnet và chọn Gateway cho phép subnet đi qua&#x20;
-
-\
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22939084/Screen%20Shot%202021-01-22%20at%2009.10.13.png?version=1&#x26;modificationDate=1611282459000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-
-
-Bước 5: Chọn Gateway \
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/22939084/Screen%20Shot%202021-01-22%20at%2009.10.25.png?version=1&#x26;modificationDate=1611282460000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
+Bước 5: Chọn Gateway.

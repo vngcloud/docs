@@ -1,2 +1,0 @@
-# vMarketplace - Giao diện cũ
-
