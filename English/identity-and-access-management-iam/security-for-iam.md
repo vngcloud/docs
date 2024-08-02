@@ -6,7 +6,7 @@ User, Group, Service Account, Policy là các tài nguyên định nghĩa trên 
 
 Bảo mật trên hệ thống Quản lý Nhận dạng và Truy cập (Identity and Access Management - IAM) là một vấn đề quan trọng đối với các doanh nghiệp và tổ chức. IAM là một giải pháp giúp quản lý và bảo vệ danh tính, quyền truy cập và tài nguyên của người dùng trên các hệ thống, ứng dụng và dịch vụ. IAM cung cấp các chức năng như xác thực, ủy quyền, phân quyền, kiểm soát truy cập, đồng bộ hóa danh tính, quản lý danh tính,...
 
-Các tiêu chuẩn bảo mật được áp dụng trên IAM bao gồm:&#x20;
+Các tiêu chuẩn bảo mật được áp dụng trên IAM bao gồm:
 
 * Nguyên tắc nhất quán: đảm bảo rằng các chính sách và quy trình IAM được áp dụng nhất quán trên toàn bộ hệ thống.
 * Nguyên tắc cần thiết: chỉ cấp cho người dùng những quyền truy cập cần thiết cho công việc của họ, không nhiều hơn, không ít hơn.
@@ -23,5 +23,3 @@ Bằng cách tuân thủ các nguyên tắc và tiêu chuẩn bảo mật trên,
 * **Bảo mật các thông tin nhạy cảm trên IAM:** VNG Cloud sẽ chịu trách nhiệm mã hóa các thông tin nhạy cảm tại máy chủ lưu trữ của mình. Dữ liệu sẽ được mã hóa bằng một key do VNG Cloud cung cấp.
 
 VNG Cloud luôn nỗ lực để nâng cao các biện pháp bảo mật của mình để đảm bảo an toàn cho khách hàng.
-
-\

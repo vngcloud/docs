@@ -1,14 +1,14 @@
 # Getting Start with IAM
 
-Trong phần này, chúng ta sẽ tìm hiểu về các khái niệm cơ bản về Quản lý Định Danh và Truy cập (Identity and Access Management - IAM) và cách bắt đầu quản lý quyền truy cập vào các tài nguyên đám mây một cách an toàn.
+In this section, we will explore the basic concepts of Identity and Access Management (IAM) and how to start managing access to cloud resources securely.
 
-#### 1. Truy cập IAM Console <a href="#getstartedwithiam-1.truycapiamconsole" id="getstartedwithiam-1.truycapiamconsole"></a>
+1. **Accessing the IAM Console**
 
-Trước khi bắt đầu, mời bạn tham khảo hướng dẫn đăng nhập với Root User Account và IAM User Account tại đây:
+Before we begin, please refer to the login guide with the Root User Account and IAM User Account here:
 
-* [Cách đăng nhập vào VNG Cloud](cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)
+* [How to login to VNG Cloud](cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)
 
-IAM Console là giao diện người dùng dựa trên web, cho phép bạn quản lý IAM User Account, Group, Service Account và Policy trong môi trường điện toán đám mây của bạn. Nó cung cấp giao diện một cách trực quan để kiểm soát quyền truy cập vào các tài nguyên của bạn và cấu hình các thiết lập bảo mật.
+IAM Console is a web-based user interface that allows you to manage IAM User Accounts, Groups, Service Accounts, and Policies in your cloud computing environment. It provides a visual interface to control access to your resources and configure security settings.
 
 **Cách truy cập Bảng điều khiển IAM?**
 

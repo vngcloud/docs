@@ -1,6 +1,6 @@
-# Phân quyền truy cập vào tài nguyên cụ thể
+# Access control to specific resources
 
-Khi có nhu cầu phân quyền cụ thể trên từng tài nguyên, bạn cần tạo Policy và chỉ định chính xác Resource . Ở hướng dẫn này chúng tôi sẽ hướng dẫn bạn phân quyền trên từng server của vServer, ví dụ khi bạn có 2 servers là: web1-server, db-server, **và bạn muốn User: System1 đầy đủ quyền trên tất cả Resources của vServer, nhưng chỉ đầy đủ quyền trên Resource:server là web1-server, không cho phép thao tác vào server quan trọng là db-server**. Mô hình sẽ như bên dưới:
+When there is a need for specific permission delegations on each resource, you need to create a Policy and accurately assign the Resource. In this guide, we will instruct you on how to grant permissions on each server of the vServer, for example, when you have 2 servers: web1-server and db-server, and you want User: System1 to have full rights over all Resources of the vServer, but only full rights over the Resource: server web1-server, not allowing any operations on the important server db-server. The model will be as below:
 
 <figure><img src="../../.gitbook/assets/iam-specific-resource.drawio.png" alt=""><figcaption></figcaption></figure>
 
@@ -20,7 +20,7 @@ Chi tiết các bước như sau
 
 **Bước 1: Tạo User: System1 nếu chưa có User Account (lưu ý rằng nếu đã có sẵn User: System1, cần đảo bảo User: System1 không có quyền gì hoặc không có các quyền chồng lấn với hướng dẫn)**
 
-Tiến hành tạo User Account bằng cách truy cập vào tab User Account ở trang quản lý IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/user-accounts), nhấn **Create a User Account,** điền thông tin Username và Password, sau đó nhấn **Create User Account**&#x20;
+Tiến hành tạo User Account bằng cách truy cập vào tab User Account ở trang quản lý IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/user-accounts), nhấn **Create a User Account,** điền thông tin Username và Password, sau đó nhấn **Create User Account**
 
 <figure><img src="../../.gitbook/assets/image2023-7-12_15-18-33.png" alt=""><figcaption></figcaption></figure>
 
@@ -105,8 +105,3 @@ Thực hiện tắt server db-server không thành công:
 <figure><img src="../../.gitbook/assets/image2023-7-12_16-1-28.png" alt=""><figcaption></figcaption></figure>
 
 Như vậy là bạn đã hoàn thành việc phân quyền cho User: System1 đầy đủ quyền trên tất cả Resources của vServer, nhưng chỉ đẩy đủ quyền trên Resource:server là: web1-server, không cho phép thao tác vào server quan trọng là db-server
-
-\
-
-
-\

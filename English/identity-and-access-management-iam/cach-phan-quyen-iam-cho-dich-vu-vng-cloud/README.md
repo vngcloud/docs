@@ -1,12 +1,10 @@
-# Cách phân quyền IAM cho dịch vụ VNG Cloud
+# IAM for VNG Cloud's Services
 
 #### 1. Cách IAM hoạt động <a href="#howiamsupportsvngcloudservices-1.cachiamhoatdong" id="howiamsupportsvngcloudservices-1.cachiamhoatdong"></a>
 
 IAM hoạt động bằng cách xác thực danh tính của người dùng và sau đó ủy quyền quyền truy cập dựa trên các Policies liên kết với IAM User Accounts, User Groups và Service Accounts. Khi người dùng gửi yêu cầu truy cập vào tài nguyên cụ thể hoặc thực hiện một hành động, IAM kiểm tra các chính sách liên kết để xác định xem người dùng được phép thực hiện hành động đó hay không.
 
 Nguyên tắc đặc quyền tối thiểu là yếu tố cơ bản trong IAM, đảm bảo rằng người dùng và dịch vụ chỉ có các quyền tối thiểu cần thiết để thực hiện nhiệm vụ của họ, giảm thiểu nguy cơ truy cập trái phép. Tiếp cận tập trung của IAM tối ưu hóa quản lý truy cập, tăng cường bảo mật và giúp các tổ chức tuân thủ các yêu cầu quy định trong môi trường tính toán đám mây.
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59806582/image2023-5-17_17-31-9.png?version=1&#x26;modificationDate=1689932521000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 Model quản lý truy cập này bao gồm năm phần chính:
 

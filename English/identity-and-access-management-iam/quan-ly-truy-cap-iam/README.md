@@ -1,15 +1,15 @@
-# Quản lý Truy cập IAM
+# IAM Access Management
 
-Quản lý Truy cập IAM cho phép bạn kiểm soát người có thể truy cập các nguồn tài nguyên đám mây của bạn và các hành động họ có thể thực hiện trên các tài nguyên đó. IAM Policies là các tài liệu JSON xác định các quyền và quy tắc truy cập tài nguyên cho các định danh IAM (IAM User Account, User Group và Service Account). Hướng dẫn này sẽ hướng dẫn bạn tạo và quản lý IAM Policies để kiểm soát truy cập vào tài nguyên của bạn một cách hiệu quả.
+IAM Access Management lets you control who can access your cloud resources and what actions they can perform on those resources. IAM Policies are JSON documents that define resource access rights and rules for IAM identities (IAM User Accounts, User Groups, and Service Accounts). This guide will walk you through creating and managing IAM Policies to effectively control access to your resources.
 
-#### Khái niệm và Thuật ngữ <a href="#iamaccessmanagement-khainiemvathuatngu" id="iamaccessmanagement-khainiemvathuatngu"></a>
+**Concepts and Terms**&#x20;
 
-* **Permission và Policy:** Quyền xác định các hành động cụ thể mà một thân nhận được phép thực hiện trên tài nguyên. Chính sách là các tập hợp quyền được biểu thị dưới dạng tài liệu JSON. Những chính sách này được gắn kết với các tài khoản người dùng IAM, nhóm và tài khoản dịch vụ để cấp hoặc từ chối quyền truy cập vào các tài nguyên khác nhau. Mỗi chính sách chứa các khai báo xác định các hành động được phép hoặc từ chối, tài nguyên và các điều kiện tùy chọn.
-* **Access control:** Kiểm soát truy cập là việc thực hiện các quyền dựa trên chính sách. Khi một thân nhận khởi tạo một yêu cầu thực hiện một hành động, hệ thống sẽ kiểm tra các chính sách liên quan để xác định xem hành động được yêu cầu có được phép hay không. Nếu các chính sách cấp quyền cho các quyền cần thiết, hành động sẽ được ủy quyền; nếu không, nó sẽ bị từ chối.
-* **Resource-Based Authorization:** Trong IAM, ủy quyền thường liên quan đến tài nguyên, có nghĩa là quyền được định nghĩa liên quan đến các tài nguyên cụ thể. Các tài nguyên này có thể là dịch vụ cụ thể, thùng, cơ sở dữ liệu, tệp hoặc bất kỳ tài sản số nào khác trong hệ thống. Ủy quyền dựa trên tài nguyên đảm bảo rằng các thân nhận chỉ có thể truy cập tài nguyên mà họ đã được cấp quyền một cách rõ ràng.
-* **Granular Control:** IAM cung cấp kiểm soát chi tiết về việc ủy quyền. Người quản trị có thể xác định các Permission và Policy cụ thể, không chỉ loại hành động mà thực thể có thể thực hiện mà còn các điều kiện mà hành động đó được phép thực hiện trong trường hợp cụ thể.
-* **Dynamic Authorization:** Các Permissions và Policies có thể được điều chỉnh linh hoạt để thích ứng với các yêu cầu và tình huống thay đổi. Điều này cho phép người quản trị dễ dàng cấp hoặc thu hồi quyền truy cập khi cần, mà không cần sự can thiệp thủ công phức tạp.
-* **Least Privilege Principle:** Nguyên tắc đặc quyền tối thiểu là một khái niệm cơ bản trong ủy quyền IAM. Nó khẳng định rằng các thực thể chỉ nên được cấp quyền tối thiểu cần thiết để thực hiện các hành động của họ. Điều này giảm thiểu tác động tiềm năng của các vi phạm bảo mật và giới hạn việc tiết lộ tài nguyên nhạy cảm.
+* **Permissions and Policy**: Permissions define specific actions that a recipient is allowed to perform on a resource. Policies are sets of permissions represented as JSON documents. These policies are associated with IAM user accounts, groups, and service accounts to grant or deny access to various resources. Each policy contains declarations that define actions that are allowed or denied, resources, and optional conditions.&#x20;
+* **Access control:** Access control is the implementation of permissions based on policies. When a recipient initiates a request to perform an action, the system checks the relevant policies to determine whether the requested action is allowed. If the policies grant the required permissions, the action is authorized; otherwise, it is denied.&#x20;
+* **Resource-Based Authorization:** In IAM, authorization is often resource-based, meaning that permissions are defined in relation to specific resources. These resources can be specific services, buckets, databases, files, or any other digital asset in the system. Resource-based authorization ensures that recipients can only access resources for which they have been explicitly authorized.
+* **Granular Control:** IAM provides granular control over authorization. Administrators can define specific Permissions and Policies, not only the types of actions an entity can perform, but also the conditions under which that action is allowed in a given case.&#x20;
+* **Dynamic Authorization:** Permissions and Policies can be dynamically adjusted to adapt to changing requirements and situations. This allows administrators to easily grant or revoke access as needed, without the need for complex manual intervention.&#x20;
+* **Least Privilege Principle:** The principle of least privilege is a fundamental concept in IAM authorization. It states that entities should only be granted the minimum permissions necessary to perform their actions. This minimizes the potential impact of security breaches and limits the exposure of sensitive resources.
 
 #### Hiểu về IAM Policy <a href="#iamaccessmanagement-hieuveiampolicy" id="iamaccessmanagement-hieuveiampolicy"></a>
 
@@ -26,12 +26,7 @@ Các sản phẩm/service thuộc VNG Cloud như: vServer, vStorage, vMonitor, v
 Tại mục Action, bạn có thể chỉ định các hành động (**được cấp phép** hoặc **từ chối truy cập**) trên các tài nguyên được áp dụng:
 
 * Để **cấp phép truy cập** các Action trên Resource, chọn **Allow Permission**
-
-![](https://docs.vngcloud.vn/download/attachments/59806592/image2023-8-3\_9-40-43.png?version=1\&modificationDate=1691030444000\&api=v2)
-
 * Để **từ chối truy cập** các Action trên Resource, chọn **Deny Permission**
-
-![](https://docs.vngcloud.vn/download/attachments/59806592/image2023-8-3\_9-41-42.png?version=1\&modificationDate=1691030503000\&api=v2)
 
 **Có ba loại cấp độ truy cập, bao gồm:**
 

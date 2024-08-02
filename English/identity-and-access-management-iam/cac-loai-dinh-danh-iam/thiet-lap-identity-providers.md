@@ -1,8 +1,6 @@
-# Thiết lập Identity Providers
+# Identity Providers
 
-Identity Provider là tính năng cho phép bạn quản lý tài nguyên trên VNG Cloud với tập người dùng trên hệ thống xác thực của doanh nghiệp, giúp doanh nghiệp quản lý tập trung user và không cần phải tạo thêm các IAM user accounts trên VNG Cloud.  IAM hỗ trợ giao thức SAML2.0 để giao tiếp với các hệ thống xác thực, hiện tại mới chỉ hỗ trợ với Azure AD.
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59806696/Identities-IDP.drawio%20(1).png?version=1&#x26;modificationDate=1691474720000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+Identity Provider là tính năng cho phép bạn quản lý tài nguyên trên VNG Cloud với tập người dùng trên hệ thống xác thực của doanh nghiệp, giúp doanh nghiệp quản lý tập trung user và không cần phải tạo thêm các IAM user accounts trên VNG Cloud. IAM hỗ trợ giao thức SAML2.0 để giao tiếp với các hệ thống xác thực, hiện tại mới chỉ hỗ trợ với Azure AD.
 
 ### **Tại sao cần sử dụng Identity Provider?** <a href="#identityproviders-taisaocansudungidentityprovider" id="identityproviders-taisaocansudungidentityprovider"></a>
 
@@ -12,7 +10,7 @@ Identity Provider là tính năng cho phép bạn quản lý tài nguyên trên 
 
 * **Doanh nghiệp A** có 10 nhân viên, được quản lý thông qua tài khoản microsoft với tên **nhanvien1 → nhanvien10.**
 * **Doanh nghiệp A** được cơ cấu thành 3 phòng ban, bao gồm: **Phòng Hành Chính - Kế Toán, Phòng IT và Phòng Kinh Doanh.**
-* **Doanh nghiệp A** có sử dụng dịch vụ điện toán đám mây của VNG Cloud**,** bao gồm**: vServer, vStorage và vMonitor.**
+* **Doanh nghiệp A** có sử dụng dịch vụ điện toán đám mây của VNG Cloud\*\*,\*\* bao gồm\*\*: vServer, vStorage và vMonitor.\*\*
 
 **Nhu cầu**
 
@@ -58,7 +56,7 @@ Sau khi có được thông tin Login URL từ Azure AD, bạn tiếp tục thi�
 
 1. Truy cập đến IAM Identity Provider với URL: [https://hcm-3.console.vngcloud.vn/iam/identity-providers](https://hcm-3.console.vngcloud.vn/iam/identity-providers)
 2. Chọn **Add an Identity Provider**
-3. Điền các thông tin cho Identity Provider bao gồm:&#x20;
+3. Điền các thông tin cho Identity Provider bao gồm:
    * **Provider Name:** tên của Identity Provider
    * **Provider Type:** để mặc định, hiện tại chỉ hỗ trợ SAML
    * **Vendor:** để mặc định, hiện tại chỉ hỗ trợ Azure AD
@@ -91,8 +89,6 @@ Sau khi tạo xong, tài khoản doanh nghiệp có thể **sử dụng đườn
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59806696/image2023-6-13_14-35-57.png?version=1&#x26;modificationDate=1690519768000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-
-
 Lưu ý
 
 * **nhanvien1 và nhanvien2** chỉ có thể đăng nhập vào hệ thống VNG Cloud thông qua URL đăng nhập.
@@ -100,4 +96,3 @@ Lưu ý
 * **IAM User Account** được khởi tạo tương ứng với **nhanvien1 và nhanvien2** mặc định sẽ không có quyền gì trên hệ thống VNG Cloud. Do đó, Root User Account đại diện cho doanh nghiệp cần truy cập vào IAM Console để tiến hành phân quyền truy cập cho 2 IAM User Account này.
 * Sau khi phân quyền thành công, nhanvien1 và nhanvien2 có thể truy cập vào hệ thống **VNG Cloud (vServer, vStorage và vMonitor)**
 {% endhint %}
-

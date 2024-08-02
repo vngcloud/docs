@@ -1,20 +1,20 @@
-# Phân quyền truy cập theo chức năng công việc
+# Access control by job function
 
-Khi phân quyền truy cập các tài nguyên, các công ty thường sẽ phân quyền dựa trên chức năng công việc của các thành viên, sẽ có 2 loại chức năng công việc chính trong một công ty IT là **System Administrator**, và **Developer**. Tài liệu hướng dẫn này sẽ hướng dẫn cách để bạn phân quyền cho 2 nhóm chức năng công việc được quyền truy cập các sản phẩm vServer, vStorage như thế nào.
+When assigning access rights to resources, companies often allocate permissions based on the job functions of team members. There are two main job functions in an IT company: System Administrator and Developer. This guide will explain how to grant permissions for the two job function groups to access vServer and vStorage products.
 
-Trước tiên về quyền truy cập của 2 nhóm chức năng công việc trên, sẽ được định nghĩa như sau:
+First, the access rights of the two job function groups will be defined as follows:
 
-* **System Administrator**: chịu trách nhiệm quản lý toàn bộ tài nguyên trên Cloud, nên được cấp đẩy đủ quyền của vServer, vStorage sẽ tương ứng với các managed policy đã được VNG Cloud tạo sẵn: vServerFullAccess, vStorageFullAccess
-* **Developer**: chỉ cần xem được các tài nguyên trên Cloud, nên chỉ cần cấp quyền read-only của vServer, vStorage sẽ tương ứng với các managed policy đã được VNG Cloud tạo sẵn: vServerReadOnlyAccess, vStorageReadOnlyAccess.
+* System Administrator: responsible for managing all resources on the Cloud, so they should be granted full permissions for vServer and vStorage, corresponding to the managed policies that have been pre-created by VNG Cloud: vServerFullAccess, vStorageFullAccess.
+* Developer: only needs to view the resources on the Cloud, so they only require read-only access for vServer and vStorage, corresponding to the managed policies that have been pre-created by VNG Cloud: vServerReadOnlyAccess, vStorageReadOnlyAccess.
 
-Để quản lý việc phân quyền cho nhiều thành viên trong công ty dễ dàng hơn, chúng ta sẽ tổ chức thêm **2 User Groups với tên là: SystemAdmin và Developer**, với những thành viên có chức năng công việc giống nhau thì sẽ được gắn vào User Groups tương ứng để được hưởng quyền đã cấp cho User Groups. Với việc quản lý bằng User Groups sẽ giúp bạn linh động thay đổi quyền khi cần thiết, hay khi có các thành viên thay đổi chức năng công việc.tr
+To manage the allocation of permissions for many members in the company more easily, we will also organize two User Groups named: SystemAdmin and Developer, with members having the same job function grouped into the corresponding User Groups to benefit from the permissions granted to those User Groups. Managing through User Groups will allow you to flexibly change permissions when necessary or when team members change job functions.
 
-Với cách tổ chức như trên chúng ta sẽ có bảng thống kê chi tiết như sau:
+With the organization as above, we will have a detailed statistical table as follows:
 
-| **Chức năng công việc** | **User Group** | **Permission**                                            | **Mô tả**                                |
-| ----------------------- | -------------- | --------------------------------------------------------- | ---------------------------------------- |
-| System Administrator    | SystemAdmin    | <p>vServerFullAccess</p><p>vStorageFullAccess</p>         | Đầy đủ quyền trên vServer, vStorage      |
-| Developer               | Developer      | <p>vServerReadOnlyAccess</p><p>vStorageReadOnlyAccess</p> | Chỉ xem thông tin trên vServer, vStorage |
+| **Function**         | **User Group** | **Permission**                                            | **Description**                          |
+| -------------------- | -------------- | --------------------------------------------------------- | ---------------------------------------- |
+| System Administrator | SystemAdmin    | <p>vServerFullAccess</p><p>vStorageFullAccess</p>         | Đầy đủ quyền trên vServer, vStorage      |
+| Developer            | Developer      | <p>vServerReadOnlyAccess</p><p>vStorageReadOnlyAccess</p> | Chỉ xem thông tin trên vServer, vStorage |
 
 Tương ứng ta sẽ có mô hình tổ chức như bên dưới:
 
@@ -50,7 +50,7 @@ Như vậy bạn đã hoàn thành việc tạo 2 User Groups: SystemAdmin và D
 
 **Bước 2: Tạo User Account (System1, System2, Developer1, Developer2) và gắn vào các User Group tương ứng**
 
-Tiến hành tạo các User Account bằng cách truy cập vào tab User Account ở trang quản lý IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/user-accounts), nhấn **Create a User Account,** điền thông tin Username và Password, sau đó nhấn **Create User Account** (lưu ý để hướng dẫn ngắn gọn ở đây chúng tôi tạo 4 user account cùng chung 1 password, khuyến cáo bạn nên tạo các user account riêng lẻ và  có password khác nhau, hoặc đổi password khi sử dụng):
+Tiến hành tạo các User Account bằng cách truy cập vào tab User Account ở trang quản lý IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/user-accounts), nhấn **Create a User Account,** điền thông tin Username và Password, sau đó nhấn **Create User Account** (lưu ý để hướng dẫn ngắn gọn ở đây chúng tôi tạo 4 user account cùng chung 1 password, khuyến cáo bạn nên tạo các user account riêng lẻ và có password khác nhau, hoặc đổi password khi sử dụng):
 
 <figure><img src="../../.gitbook/assets/image2023-7-12_13-23-4.png" alt=""><figcaption></figcaption></figure>
 
@@ -58,7 +58,7 @@ Sau khi tạo thành công các User Accounts, sẽ được liệt kê ở tran
 
 <figure><img src="../../.gitbook/assets/image2023-7-12_13-33-2.png" alt=""><figcaption></figcaption></figure>
 
-Để thêm các User: System1, System2, Developer1, Developer2  vào Group: SystemAdmin, Developer bạn có thể thực hiện ở từng User Account hoặc Group, ở đây chúng tôi sẽ hướng dẫn thêm User Account ở Group, bạn qua tab Group nhấn vào **tên của Group** để vào chi tiết của Group, như ở đây là Group: SystemAdmin
+Để thêm các User: System1, System2, Developer1, Developer2 vào Group: SystemAdmin, Developer bạn có thể thực hiện ở từng User Account hoặc Group, ở đây chúng tôi sẽ hướng dẫn thêm User Account ở Group, bạn qua tab Group nhấn vào **tên của Group** để vào chi tiết của Group, như ở đây là Group: SystemAdmin
 
 <figure><img src="../../.gitbook/assets/image2023-7-12_13-37-11 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -97,5 +97,3 @@ Làm các bước tương tự trên để đăng nhập vào User: Developer1, 
 <figure><img src="../../.gitbook/assets/image2023-7-12_13-59-54.png" alt=""><figcaption></figcaption></figure>
 
 Như vậy bạn đã hoàn thành việc phân quyền truy cập theo các chức năng công việc, lúc này việc cấp quyền cho các thành viên mới, bạn chỉ cần tạo User Account và thêm vào Group, để thay đổi quyền bạn chỉ cần thay đổi Policy tại các Group giúp việc quản lý truy cập tài nguyên trên VNG Cloud trở nên dễ dàng hơn.
-
-\
