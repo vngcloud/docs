@@ -1,6 +1,6 @@
-# Quản lý truy cập qua Policy
+# Access Management via Policy
 
-IAM Policy là các tài liệu JSON xác định các quyền và quy tắc truy cập tài nguyên.  Policy này được gắn kèm với IAM User Account, User Group và Service Account để kiểm soát hành động mà họ có thể thực hiện trên các tài nguyên cụ thể. IAM Policy tuân thủ nguyên tắc "cho phép" hoặc "từ chối", tức là chúng rõ ràng cấp quyền hoặc từ chối truy cập tài nguyên và hành động.
+IAM Policies are JSON documents that define permissions and rules for accessing resources. These policies are attached to IAM User Accounts, User Groups, and Service Accounts to control the actions they can perform on specific resources. IAM Policies adhere to the "allow" or "deny" principle, meaning they explicitly grant or deny access to resources and actions.
 
 #### 1. Tạo Chính Sách (Policy) <a href="#customermanagedpolicy-1.taochinhsach-policy" id="customermanagedpolicy-1.taochinhsach-policy"></a>
 
@@ -40,17 +40,14 @@ IAM Policy là các tài liệu JSON xác định các quyền và quy tắc tru
 
 Example JSON Expand source
 
-&#x20;**Giải thích JSON Attribute**
+**Giải thích JSON Attribute**
 
 * **Statement: Policy**
-* Mỗi object trong Statement tương ứng với **1 Rule**, bao gồm:\
-
+* Mỗi object trong Statement tương ứng với **1 Rule**, bao gồm:\\
   * **Effect:** Allow / Deny Permission
   * **Action:** Danh sách Action được cấp phép/từ chối trên Resource
   * **Resource:** Danh sách Resource sẽ áp dụng các Actions ở trên
   * **Conditon:** Request conditions
-
-
 
 Mối quan hệ giữa Visual editor và JSON
 

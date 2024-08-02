@@ -1,56 +1,52 @@
 # IAM for VNG Cloud's Services
 
-#### 1. Cách IAM hoạt động <a href="#howiamsupportsvngcloudservices-1.cachiamhoatdong" id="howiamsupportsvngcloudservices-1.cachiamhoatdong"></a>
+1. **How IAM Works**&#x20;
 
-IAM hoạt động bằng cách xác thực danh tính của người dùng và sau đó ủy quyền quyền truy cập dựa trên các Policies liên kết với IAM User Accounts, User Groups và Service Accounts. Khi người dùng gửi yêu cầu truy cập vào tài nguyên cụ thể hoặc thực hiện một hành động, IAM kiểm tra các chính sách liên kết để xác định xem người dùng được phép thực hiện hành động đó hay không.
+IAM works by authenticating a user's identity and then authorizing access based on the Policies associated with IAM User Accounts, User Groups, and Service Accounts. When a user submits a request to access a specific resource or perform an action, IAM checks the associated policies to determine whether the user is authorized to perform that action.&#x20;
 
-Nguyên tắc đặc quyền tối thiểu là yếu tố cơ bản trong IAM, đảm bảo rằng người dùng và dịch vụ chỉ có các quyền tối thiểu cần thiết để thực hiện nhiệm vụ của họ, giảm thiểu nguy cơ truy cập trái phép. Tiếp cận tập trung của IAM tối ưu hóa quản lý truy cập, tăng cường bảo mật và giúp các tổ chức tuân thủ các yêu cầu quy định trong môi trường tính toán đám mây.
+The principle of least privilege is fundamental to IAM, ensuring that users and services have only the minimum permissions necessary to perform their tasks, minimizing the risk of unauthorized access. IAM's centralized approach optimizes access management, enhances security, and helps organizations comply with regulatory requirements in cloud computing environments. This access management model consists of five main parts:
 
-Model quản lý truy cập này bao gồm năm phần chính:
+1. **Principal**
 
-**1. Principal**
+An entity (principal) refers to an object that can request access to resources in the VNG Cloud system. An entity can represent different types of objects such as User Account, Service Account, and IDP (Identity Provider).
 
-Một thực thể (principal) đề cập đến một đối tượng có thể yêu cầu quyền truy cập vào tài nguyên trong hệ thống VNG Cloud. Thực thể có thể đại diện cho các loại đối tượng khác nhau như User Account, Service Account và IDP (Identity Provider).
-
-* **User Account:** IAM User Account đại diện cho các danh tính riêng lẻ liên kết với Root User Account. Mỗi người dùng có một tập hợp duy nhất các thông tin chứng thực bảo mật như tên người dùng và mật khẩu hoặc khóa truy cập. Người dùng được xác thực để truy cập vào các tài nguyên và dịch vụ đám mây.
-* **Service Account:** Service Account là một danh tính bạn có thể tạo trong tài khoản Root User của mình với các quyền cụ thể. Khác với User Account, Service Account là các danh tính được ứng dụng hoặc máy tính sử dụng, không phải là người dùng, để thực hiện các cuộc gọi API được ủy quyền và truy cập vào các tài nguyên cụ thể.
-* **IDP:** Identity Provider phép bạn quản lý tài nguyên trên VNG Cloud với tập người dùng trên hệ thống xác thực của doanh nghiệp, giúp doanh nghiệp quản lý tập trung user và không cần phải tạo thêm các IAM User Accounts trên VNG Cloud
-* **User Group:** User Group là tập hợp các User Account có yêu cầu truy cập tương tự. Việc nhóm hóa User Account giúp đơn giản hóa quản lý quyền bằng cách cấp quyền cho một nhóm thay vì từng User Account riêng lẻ. Điều này cải thiện tính nhất quán và hiệu quả trong kiểm soát truy cập.
+* User Account: IAM User Account represents individual identities associated with a Root User Account. Each user has a unique set of security credentials such as a username and password or access key. Users are authenticated to access cloud resources and services.
+* Service Account: A Service Account is an identity you can create in your Root User account with specific permissions. Unlike User Accounts, Service Accounts are identities used by applications or computers, not users, to make authorized API calls and access specific resources. IDP: Identity Provider allows you to manage resources on VNG Cloud with a set of users on the enterprise authentication system, helping enterprises centrally manage users and without having to create additional IAM User Accounts on VNG Cloud User Group: User Group is a collection of User Accounts with similar access requirements. Grouping User Accounts simplifies permission management by granting permissions to a group instead of each individual User Account. This improves consistency and efficiency in access control.
 
 **2. Request**
 
-Khái niệm "**Request**" liên quan đến các yêu cầu hoạt động cụ thể mà một thực thể đang cố gắng thực hiện trên các tài nguyên trong hệ thống. Mỗi request bao gồm các phần chính: "**Actions**" (Hành động), "**Resources**" (Tài nguyên), "**Principal**" (Thực thể) và "**Request Information**" (Thông tin yêu cầu).
+The concept of "Request" refers to the specific operational requests that an entity is trying to perform on resources in the system. Each request consists of the following main parts: "Actions", "Resources", "Principal" and "Request Information".&#x20;
 
-* **Actions**: Đây là các hoạt động cụ thể mà thực thể có thể thực hiện trên tài nguyên. Các hành động có thể là tương tác với tài nguyên như đọc, ghi, cập nhật, xóa và nhiều hành động khác.
-* **Resources**: Đây là các đối tượng hoặc tài sản bị ảnh hưởng bởi các actions trên. Tài nguyên có thể là các dịch vụ cụ thể như server, load balancer, metric,... hoặc bất kỳ tài sản số nào khác trong hệ thống. Việc định nghĩa tài nguyên xác định phạm vi mà hành động có thể tác động.
-* **Principal:** Khi một thực thể khởi tạo một yêu cầu, hệ thống sẽ kiểm tra xem hành động được yêu cầu có được phép hay không dựa trên các **Policies** được liên kết với thực thể đó và tài nguyên. Nếu các **Policies** cho phép, yêu cầu sẽ được thực hiện; nếu không, yêu cầu sẽ bị từ chối. Điều này giúp đảm bảo rằng truy cập đến các tài nguyên được kiểm soát và bảo mật theo cách tối ưu nhất.
-* **Request information:** Đây là các thông tin liên quan đến yêu cầu mà thực thể đang thực hiện. Thông tin này có thể bao gồm các thông tin như địa chỉ IP của người yêu cầu, thời gian yêu cầu được gửi và các dữ liệu thêm khác liên quan đến ngữ cảnh của yêu cầu.
+* Actions: These are the specific operations that an entity can perform on a resource. Actions can be interactions with the resource such as reading, writing, updating, deleting and many other actions.
+* Resources: These are the objects or assets affected by the above actions. Resources can be specific services such as servers, load balancers, metrics, ... or any other digital assets in the system. The definition of a resource determines the scope that the action can impact.&#x20;
+* Principal: When an entity initiates a request, the system checks to see if the requested action is allowed based on the Policies associated with that entity and the resource. If the Policies allow it, the request is carried out; otherwise, the request is denied. This helps ensure that access to resources is controlled and secured in the most optimal way.&#x20;
+* Request information: This is information related to the request that the entity is making. This information may include information such as the requester's IP address, the time the request was sent, and other additional data relevant to the context of the request.
 
 **3. Policy**
 
-IAM Policy là các tài liệu JSON xác định các quyền và quy tắc truy cập tài nguyên. Policy được gắn kèm vào các thực thể để kiểm soát hành động mà họ có thể thực hiện trên các tài nguyên cụ thể. Các Policies này tuân thủ nguyên tắc "cho phép" hoặc "từ chối" và quy định các hành động được cho phép hoặc từ chối đối với một thực thể cụ thể.
+IAM Policies are JSON documents that define permissions and access rules for resources. Policies are attached to entities to control the actions they can perform on specific resources. These Policies follow the "allow" or "deny" principle and specify the actions that are allowed or denied for a specific entity.
 
 **4. Authentication**
 
-Authentication (Xác thực) là quá trình xác thực thực thể bằng thông tin đăng nhập của nó để gửi yêu cầu tới VNG Cloud . Thực thể cần cung cấp thông tin xác thực, chẳng hạn như tên đăng nhập và mật khẩu, để chứng minh danh tính của họ. Thông tin xác thực cần cung cấp để xác thực từ phía IAM Console đối với từng đối tượng bao gồm:
+Authentication is the process of authenticating an entity using its credentials to send a request to VNG Cloud. The entity needs to provide authentication information, such as a username and password, to prove their identity. The authentication information required for authentication from the IAM Console side for each entity includes:
 
-* **Root User Account**: Địa chỉ email và mật khẩu
-* **IAM User Account**: Tên định danh và mật khẩu
-* **Service Account:** Client ID và Secret key
-* **IDP:** Đăng nhập thông qua đường dẫn và được cấp quyền truy cập tương tự như một IAM User Account
+* Root User Account: Email address and password&#x20;
+* IAM User Account: Identifier and password&#x20;
+* Service Account: Client ID and Secret key&#x20;
+* IDP: Log in via the link and be granted the same access as an IAM User Account
 
 **5. Authorization**
 
-Sau khi xác thực thành công, hệ thống tiến hành quá trình ủy quyền, hay quyết định xem thực thể có quyền thực hiện hành động đặc biệt nào đó trên tài nguyên cụ thể hay không. Quá trình này đảm bảo rằng chỉ những thực thể được ủy quyền mới có thể thực hiện các hành động trên tài nguyên.
+After successful authentication, the system performs the authorization process, or decides whether an entity has the right to perform a particular action on a particular resource. This process ensures that only authorized entities can perform actions on the resource.
 
-* **Root User Account**: Mặc định có đầy đủ (không giới hạn) quyền truy cập vào tất cả các sản phẩm/dịch vụ và các tài nguyên thuộc các sản phẩm/dịch vụ đó.
-* **IAM User Account**: Mặc định không có quyền (từ chối truy cập) trên các tài nguyên thuộc sản phẩm/dịch vụ VNG Cloud. Đối tượng phải được ủy quyền dựa trên tập Policies được gắn kèm để thực hiện hành động cụ thể trên các tài nguyên cụ thể.
-* **Service Account:** Tương tự như IAM User Account, Service Account mặc định không có quyền (từ chối truy cập) trên các tài nguyên thuộc sản phẩm/dịch vụ VNG Cloud. Đối tượng phải được ủy quyền dựa trên tập Policies được gắn kèm để thực hiện hành động cụ thể trên các tài nguyên cụ thể.
-* **IDP:** Khi thiết lập Identity thành công giữa VNG Cloud (Service Provider) và bên thứ 3 (Identity Providers), đối tượng có thể truy cập vào hệ thống VNG Clound thông qua đường dẫn đăng nhập. Đối tượng truy cập được xem như là các IAM User Account và mặc định không có quyền (từ chối truy cập) trên các tài nguyên thuộc sản phẩm/dịch vụ VNG Cloud. Đối tượng phải được ủy quyền dựa trên tập Policies được gắn kèm để thực hiện hành động cụ thể trên các tài nguyên cụ thể.
+* Root User Account: By default, it has full (unlimited) access to all products/services and resources under those products/services.&#x20;
+* IAM User Account: By default, it has no rights (denies access) on resources under VNG Cloud products/services. The subject must be authorized based on the attached Policies set to perform specific actions on specific resources.&#x20;
+* Service Account: Similar to IAM User Account, Service Account by default has no rights (denies access) on resources under VNG Cloud products/services. The subject must be authorized based on the attached Policies set to perform specific actions on specific resources.&#x20;
+* IDP: When Identity is successfully established between VNG Cloud (Service Provider) and the third party (Identity Providers), the subject can access the VNG Cloud system through the login link. Access objects are considered as IAM User Accounts and by default have no rights (denied access) on resources of VNG Cloud products/services. Objects must be authorized based on the attached Policies set to perform specific actions on specific resources.
 
-#### 2. Các Dịch vụ trong hệ thống VNG Cloud <a href="#howiamsupportsvngcloudservices-2.cacdichvutronghethongvngcloud" id="howiamsupportsvngcloudservices-2.cacdichvutronghethongvngcloud"></a>
+#### 2. Services in VNG Cloud System  <a href="#howiamsupportsvngcloudservices-2.cacdichvutronghethongvngcloud" id="howiamsupportsvngcloudservices-2.cacdichvutronghethongvngcloud"></a>
 
-Có ba dòng sản phẩm chính trong hệ thống VNG Cloud, hãy điều hướng đến hướng dẫn chi tiết để biết cách áp dụng IAM với các sản phẩm cụ thể:
+#### There are three main product lines in VNG Cloud system, please navigate to detailed instructions to know how to apply IAM with specific products: <a href="#howiamsupportsvngcloudservices-2.cacdichvutronghethongvngcloud" id="howiamsupportsvngcloudservices-2.cacdichvutronghethongvngcloud"></a>
 
 1. **vServer:** [IAM cho vServer](iam-cho-vserver.md)
 2. **vStorage:**[ IAM cho vStorage](iam-cho-vstorage.md)

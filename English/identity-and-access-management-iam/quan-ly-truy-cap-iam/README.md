@@ -11,52 +11,49 @@ IAM Access Management lets you control who can access your cloud resources and w
 * **Dynamic Authorization:** Permissions and Policies can be dynamically adjusted to adapt to changing requirements and situations. This allows administrators to easily grant or revoke access as needed, without the need for complex manual intervention.&#x20;
 * **Least Privilege Principle:** The principle of least privilege is a fundamental concept in IAM authorization. It states that entities should only be granted the minimum permissions necessary to perform their actions. This minimizes the potential impact of security breaches and limits the exposure of sensitive resources.
 
-#### Hiểu về IAM Policy <a href="#iamaccessmanagement-hieuveiampolicy" id="iamaccessmanagement-hieuveiampolicy"></a>
+#### About IAM Policy <a href="#iamaccessmanagement-hieuveiampolicy" id="iamaccessmanagement-hieuveiampolicy"></a>
 
-Mỗi chính sách bao gồm một hoặc nhiều câu lệnh, và mỗi câu lệnh chứa các phần tử "Effect" (Cho phép hoặc Từ chối), "Action" (Các hành động trên Resource), "Resource" (Các tài nguyên VNG Cloud) và các phần tử "Condition" tùy chọn.
+Each policy includes one or more statements, and each statement contains the elements "Effect" (Allow or Deny), "Action" (Actions on the Resource), "Resource" (VNG Cloud resources), and optional "Condition" elements.
 
 **Product/Service**
 
-Việc chỉ định Product/Service khi khởi tạo một Policy là bắt buộc, giúp bạn giới hạn tập quyền lên một nhóm Resources thuộc một Prodcut/Service nhất định, giúp việc vận hành hoạt động một cách mượt mà và an toàn.
+Specifying Product/Service when creating a Policy is mandatory, helping you limit permissions to a group of Resources under a specific Product/Service, ensuring smooth and safe operation.
 
-Các sản phẩm/service thuộc VNG Cloud như: vServer, vStorage, vMonitor, vLB, vConsole, IAM,...
+VNG Cloud products/services include: vServer, vStorage, vMonitor, vLB, vConsole, IAM, etc.
 
 **Action**
 
-Tại mục Action, bạn có thể chỉ định các hành động (**được cấp phép** hoặc **từ chối truy cập**) trên các tài nguyên được áp dụng:
+In the Action section, you can specify the actions (grant or deny access) on the applied resources:
 
-* Để **cấp phép truy cập** các Action trên Resource, chọn **Allow Permission**
-* Để **từ chối truy cập** các Action trên Resource, chọn **Deny Permission**
+* To grant access to **Actions on a Resource**, select **Allow Permission**&#x20;
+* To deny access to **Actions on a Resource**, select **Deny Permission**
 
-**Có ba loại cấp độ truy cập, bao gồm:**
+There are three types of access levels, including:&#x20;
 
-* **List:** Cấp độ này liệt kê tất cả các quyền liên quan đến xem danh sách tài nguyên thuộc Product đã chọn. Bạn có thể chọn **Tất cả / các hành động cụ thể**.
-* **Write**: Cấp độ này liệt kê tất cả các quyền liên quan đến các hành động thay đổi tài nguyên thuộc Product đã chọn, chẳng hạn như Tạo, Cập nhật, Tải lên, Gia hạn và các hành động khác. Bạn có thể chọn tất cả / các hành động cụ thể ở cấp độ này.
-* **Read**: Cấp độ này liệt kê tất cả các quyền liên quan đến xem thông tin chi tiết của tài nguyên thuộc Product đã chọn. Bạn có thể chọn tất cả / các hành động cụ thể ở cấp độ này.
+* **List**: This level lists all permissions related to viewing the list of resources under the selected Product. You can select All / specific actions.&#x20;
+* **Write**: This level lists all permissions related to actions that change resources under the selected Product, such as Create, Update, Upload, Renew and other actions. You can select all / specific actions at this level.&#x20;
+* **Read**: This level lists all permissions related to viewing detailed information of resources under the selected Product. You can select all / specific actions at this level.
 
 **Resource**
 
-Có một số cách linh hoạt để bạn chỉ định các tài nguyên được áp dụng các Action (được cấp phép hoặc từ chối truy cập), bao gồm:
+There are several flexible ways for you to specify the resources to which Actions apply (grant or deny access), including:&#x20;
 
-* Tất cả các tài nguyên
-* Các tài nguyên cụ thể: Đối với mỗi loại tài nguyên thuộc Product đã chọn, bạn có thể chọn tất cả / các tài nguyên cụ thể (dựa trên ID tài nguyên) thuộc loại đó.
+* All resources
+* Specific resources: For each resource type in the selected Product, you can select all / specific resources (based on resource ID) of that type.
 
 **Request conditions**
 
-Các Request conditions trong Policy là các điều kiện tùy chọn mà bạn có thể đặt để quy định Policy đó sẽ áp dụng như thế nào cho trên các đối tượng (IAM User Account, Service Account, Group). Có nhiều loại điều kiện bạn có thể cài đặt để áp dụng lên Policy của mình, và điều chỉnh thời gian áp dụng chính sách là một trong số đó. Điều này cho phép bạn điều chỉnh khi nào chính sách sẽ có hiệu lực và khi nào nó sẽ bị hủy bỏ đối với một hoặc nhiều hành động cụ thể mà người dùng hoặc dịch vụ đang thực hiện.
+Request conditions in a Policy are optional conditions that you can set to govern how the Policy will apply to objects (IAM User Account, Service Account, Group). There are many types of conditions you can set to apply to your Policy, and adjusting the policy application time is one of them. This allows you to regulate when the policy will take effect and when it will be revoked for a specific action or actions that a user or service is taking.&#x20;
 
-Ví dụ, bạn có thể sử dụng Request conditions để quy định rằng một chính sách chỉ sẽ áp dụng vào các ngày cụ thể hoặc chỉ trong khoảng thời gian nhất định. Điều này có thể hữu ích trong việc quản lý quyền truy cập dựa trên thời gian, ngày lễ, sự kiện đặc biệt hoặc các tình huống cụ thể khác mà bạn muốn kiểm soát.
+For example, you can use Request conditions to specify that a policy will only apply on specific days or only during a certain time period. This can be useful for managing access based on time, holidays, special events, or other specific situations that you want to control.
 
 **Rules**
 
-Một chính sách (Policies) sẽ bao gồm nhiều Rule. Mỗi Rule sẽ bao gồm đầy đủ các thành phần như Product, Action, Resource và Request conditions. Việc có nhiều Rule trong một Policy giúp bạn áp dụng các tập quyền hạn khác nhau, lên từng tập resource khác nhau.
+A policy will include many Rules. Each Rule will include all components such as Product, Action, Resource and Request conditions. Having many Rules in a Policy helps you apply different sets of permissions to different sets of resources.
 
-#### Phân loại Chính Sách (Policy) <a href="#iamaccessmanagement-phanloaichinhsach-policy" id="iamaccessmanagement-phanloaichinhsach-policy"></a>
+#### Policy <a href="#iamaccessmanagement-phanloaichinhsach-policy" id="iamaccessmanagement-phanloaichinhsach-policy"></a>
 
-Tại VNG Cloud Service, chúng tôi hỗ trợ 2 loại Chính Sách (Policy), bao gồm:
+At VNG Cloud Service, we support 2 types of Policies, including:
 
-* **VNG Managed Policy:** Là các Chính Sách IAM (IAM Policy) được tạo mặc định bởi hệ thống IAM VNG Cloud. Các Chính Sách này được quản lý bởi chính VNG Cloud nhằm mục đích hỗ trợ người dùng trong việc cài đặt nhanh chóng các quyền truy cập cần thiết cho các tài khoản người dùng IAM đối với các tài nguyên của từng Product cụ thể
-* **Customer Policy:** Là các Chính Sách IAM (IAM Policy) được tạo bởi Root user (hoặc IAM user nếu có quyền). Các Chính Sách này được quản lý trực tiếp bởi người dùng và có thể điều chỉnh bất cứ lúc nào tùy thuộc vào nhu cầu sử dụng.
-* Tìm hiểu thêm và 2 loại Policy tại đây:
-  * [VNG Managed Policy](https://docs.vngcloud.vn/display/ONVINA/VNG+Cloud+Manage+Policies)
-  * [Customer Managed Policy](https://docs.vngcloud.vn/display/ONVINA/Customer+Managed+Policies)
+* **VNG Managed Policy:** These are IAM Policies created by default by the VNG Cloud IAM system. These Policies are managed by VNG Cloud itself to support users in quickly setting up the necessary access rights for IAM user accounts to resources of each specific Product&#x20;
+* **Customer Policy:** These are IAM Policies created by the Root user (or IAM user if they have permission). These Policies are managed directly by the user and can be adjusted at any time depending on usage needs.
