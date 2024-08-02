@@ -1,25 +1,15 @@
-# Giới hạn sử dụng
+# Limitation
 
-Trong hệ thống IAM (Quản lý danh tính và Truy cập) của VNG Cloud, có một số hạn chế về số lượng  đối tượng IAM có thể sử dụng trong hệ thống. Những hạn chế này được thiết lập để đảm bảo việc phân bổ tài nguyên hiệu quả và ngăn ngừa việc lạm dụng hoặc tiêu thụ tài nguyên quá mức. Những hạn chế này sẽ thay đổi tùy thuộc vào đối tượng đang được sử dụng. Dưới đây là một số điểm chính để giới thiệu về những hạn chế này:
+In VNG Cloud's IAM (Identity and Access Management) system, there are some restrictions on the number of IAM objects that can be used in the system. These restrictions are set to ensure efficient resource allocation and prevent overuse or overconsumption of resources. These restrictions will vary depending on the object being used. Here are some key points to introduce these restrictions:
 
-* Truy cập IAM Console để xem Quota & Limitation tại đây: [https://hcm-3.console.vngcloud.vn/iam/quotas](https://hcm-3.console.vngcloud.vn/iam/quotas)
+* Access to IAM Console to see Quota & Limitation at here: [https://hcm-3.console.vngcloud.vn/iam/quotas](https://hcm-3.console.vngcloud.vn/iam/quotas)
 
-#### Danh sách IAM Limitation <a href="#quota-and-limitation-danhsachiamlimitation" id="quota-and-limitation-danhsachiamlimitation"></a>
+#### List of IAM Limitation <a href="#quota-and-limitation-danhsachiamlimitation" id="quota-and-limitation-danhsachiamlimitation"></a>
 
-Mặc định, IAM VNG Cloud Service sẽ đặt ra giới hạn cho các thuộc tính như bên dưới:
+By default, IAM VNG Cloud Service will set limits for the attributes as below:
 
-| Thuộc tính        | Giới hạn | Mô tả                                                                |
-| ----------------- | -------- | -------------------------------------------------------------------- |
-| User Account      | 20       | Giới hạn trên số lượng IAM User Account có thể có thuộc 1 Root User  |
-| Group             | 20       | Giới hạn trên số lượng User Group có thể có thuộc 1 Root User        |
-| Service Account   | 20       | Giới hạn trên số lượng Service Account có thể có thuộc 1 Root User   |
-| Policy            | 20       | Giới hạn trên số lượng Policy có thể có thuộc 1 Root User            |
-| Identity Provider | 5        | Giới hạn trên số lượng Identity Provider có thể có thuộc 1 Root User |
+<table><thead><tr><th width="203">Name</th><th width="142">Current Limit</th><th>Description</th></tr></thead><tbody><tr><td>User Account</td><td>20</td><td>Number of IAM User Accounts can belong to a Root User</td></tr><tr><td>Group</td><td>20</td><td>Number of User Groups can belong to a Root User</td></tr><tr><td>Service Account</td><td>20</td><td>Number of Service Accounts can belong to a Root User</td></tr><tr><td>Policy</td><td>20</td><td>Number of Policies can belong to a Root User</td></tr><tr><td>Identity Provider</td><td>5</td><td>Number of Identity Providers can belong to a Root User</td></tr></tbody></table>
 
-#### Thay đổi IAM Limitation <a href="#quota-and-limitation-thaydoiiamlimitation" id="quota-and-limitation-thaydoiiamlimitation"></a>
+#### Change the IAM Limitation <a href="#quota-and-limitation-thaydoiiamlimitation" id="quota-and-limitation-thaydoiiamlimitation"></a>
 
-Hiện tại, IAM Console chưa hỗ trợ người dùng tự điều chỉnh các thuộc tính giới hạn này.
-
-Trường hợp có nhu cầu thay đổi, người dùng chủ động tạo ticket để được hỗ trợ thêm tại đây: [https://support.vngcloud.vn/#/app/dashboard](https://support.vngcloud.vn/#/app/dashboard)
-
-\
+Currently, IAM Console does not support users to adjust these limit attributes themselves. In case there is a need to change, users can proactively create a ticket for further support here:[https://support.vngcloud.vn/#/app/dashboard](https://support.vngcloud.vn/#/app/dashboard)

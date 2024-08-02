@@ -1,13 +1,13 @@
-# Quản lý Audit Logs
+# Audit Logs Management
 
-Cloud Audit Logs là tính năng ghi lại tất cả các hoạt động quản trị và truy cập trên tài nguyên VNG Cloud của bạn. Audit Logs sẽ giúp bạn trả lời những câu hỏi: "**Ai đã làm gì, nơi nào và khi nào?**"  trên các tài nguyên VNG Cloud cùng với mức độ minh bạch như trên môi trường On-premise của bạn. Việc bật tính năng Audit Logs sẽ giúp bạn theo dõi, rà soát và đảm bảo bảo mật cho các tài nguyên trên VNG Cloud.
+Cloud Audit Logs is a feature that records all administrative and access activities on your VNG Cloud resources. Audit Logs helps you answer the questions: "**Who did what, where, and when?**" on VNG Cloud resources with the same level of transparency as your on-premise environment. Enabling Audit Logs allows you to monitor, review, and ensure the security of your VNG Cloud resources.
 
-#### **1. Các loại Audit Logs** <a href="#auditlogs-1.cacloaiauditlogs" id="auditlogs-1.cacloaiauditlogs"></a>
+#### **1. Type of Audit Logs** <a href="#auditlogs-1.cacloaiauditlogs" id="auditlogs-1.cacloaiauditlogs"></a>
 
-Cloud Audit Logs cung cấp các loại Audit Logs như bên dưới đây, tuỳ vào các products hay services mà sẽ hỗ trợ loại audit logs nào:
+Cloud Audit Logs provide the following types of Audit Logs below; depending on the product or service, the supported audit log type may vary:
 
 * **Admin Activity Audit Logs**: chứa tất cả các logs cho những hành động mà thay đổi tài nguyên (Create, Update, Delete) trên VNG Cloud. Ví dụ như là: những logs khi người dùng tạo vServer hay xoá security group. Gọi tắt là **ADMIN\_WRITE**
-* **Data Access Audit Logs** (coming soon): chứa tất cả các logs cho những hành động mà đọc thông tin cấu hình của tài nguyên, cũng như những hành động mà tạo, xoá, sửa và đọc dữ liệu của tài nguyên. Dữ liệu của tài nguyên là những dữ liệu của người dùng đưa lên trên VNG Cloud, ví dụ như là các object của vStorage. Cụ thể chia 3 loại như bên dưới:&#x20;
+* **Data Access Audit Logs** (coming soon): chứa tất cả các logs cho những hành động mà đọc thông tin cấu hình của tài nguyên, cũng như những hành động mà tạo, xoá, sửa và đọc dữ liệu của tài nguyên. Dữ liệu của tài nguyên là những dữ liệu của người dùng đưa lên trên VNG Cloud, ví dụ như là các object của vStorage. Cụ thể chia 3 loại như bên dưới:
   * **ADMIN\_READ**: hành động đọc thông tin cấu hình của tài nguyên. Ví dụ như là: liệt kê danh sách vServer hay xem chi tiết một vServer
   * **DATA\_WRITE**: hành động tạo, xoá, sửa dữ liệu của tài nguyên. Ví dụ như là: tải object lên vStorage hay là xoá object trên vStorage
   * **DATA\_READ**: hành động đọc dữ liệu của tài nguyên. Ví dụ như là: liệt kê danh sách objects của vStorage
@@ -22,7 +22,7 @@ Cloud Audit Logs cung cấp các loại Audit Logs như bên dưới đây, tu�
 
 YES : đã hỗ trợ đầy đủ loại audit logs này
 
-PARTIAL YES :  đã hỗ trợ nhưng chưa đầy đủ&#x20;
+PARTIAL YES : đã hỗ trợ nhưng chưa đầy đủ
 
 COMING SOON : có loại audit logs này và sẽ hỗ trợ sắp tới
 
@@ -39,8 +39,6 @@ Mặc định VNG Cloud sẽ không bật sẵn tính năng Audit Logs, khách h
 
 Ví dụ bạn chọn cả 2 loại Audit Logs đang được hỗ trợ, bạn sẽ thấy màn hình như bên dưới, đối với 2 loại ADMIN\_WRITE và SYSTEM\_EVENT khi được kích hoạt sẽ áp dụng cho tất cả product/services đang được hỗ trợ theo như bảng trên
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59806595/image2023-6-19_17-31-59.png?version=1&#x26;modificationDate=1690877516000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
 Khi đã kích hoạt Audit Logs, hệ thống sẽ bắt đầu lưu các Audit Logs kể từ thời điểm kích hoạt (không có quá khứ), và tự động tạo **Log Project: required** bên phía **vMonitor Logs** để lưu trữ, **Log Project: required** sẽ hoàn toàn miễn phí và lưu trữ các Audit Logs trong vòng **90 ngày**. Đồng thời khi đã kích hoạt 2 loại Audit Logs: ADMIN\_WRITE VÀ SYSTEM\_EVENT, thì bạn sẽ không thể tắt tính năng này đi, hệ thống sẽ luôn luôn lưu trữ tất cả hành động thuộc 2 loại Audit Logs này.
 
 #### **4. Xem các Audit Logs đã kích hoạt** <a href="#auditlogs-4.xemcacauditlogsdakichhoat" id="auditlogs-4.xemcacauditlogsdakichhoat"></a>
@@ -50,12 +48,7 @@ Khi đã kích hoạt Audit Logs, hệ thống sẽ bắt đầu lưu các Audit
 1. Truy cập mục Log Search của vMonitor Logs: [https://hcm-3.console.vngcloud.vn/vmonitor/log/search](https://hcm-3.console.vngcloud.vn/vmonitor/log/search)
 2. Chọn **Log Project: required** để xem các Audit Logs đã được lưu trữ. Ví dụ như hình dưới đây là hành động 1 root user account tạo Security Group thuộc vServer tại thời điểm 19/06/2023 17:51:57 đã được ghi nhận lại.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59806595/image2023-6-19_18-8-35.png?version=1&#x26;modificationDate=1690877516000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
-
-#### **3. Cấu trúc và định dạng các Audit Logs** <a href="#auditlogs-3.cautrucvadinhdangcacauditlogs" id="auditlogs-3.cautrucvadinhdangcacauditlogs"></a>
+**3. Cấu trúc và định dạng các Audit Logs**
 
 Mỗi dòng Audit Logs sẽ có thể có các field như bên dưới
 
@@ -63,7 +56,7 @@ Mỗi dòng Audit Logs sẽ có thể có các field như bên dưới
 * **logId**: UUID để phân biệt từng dòng log
 * **source**: nơi sinh ra dòng log, và đặc tả rõ đó là loại logs gì, ví dụ nếu dòng logs được sinh ra từ audit logs và loại là ADMIN\_WRITE thì nội dung sẽ là source: cloud\_audit/admin\_write
 * **serviceName**: thông tin sản phẩm/dịch vụ được theo dõi, ví dụ dòng Audit Logs này là của vServer thì nội dung sẽ là serviceName: vserver
-* **resource**: thông tin chi tiết và cụ thể tài nguyên nào được theo dõi, sẽ gồm 2 fields con là: type và labels&#x20;
+* **resource**: thông tin chi tiết và cụ thể tài nguyên nào được theo dõi, sẽ gồm 2 fields con là: type và labels
   * **type**: thông tin resource nào của product, ví dụ nếu là dòng logs liên quan server sẽ là type: vserver\_server
   * **labels**: tên và ID của resource hay các thông tin khác của resource
   * Ví dụ ở dưới là resource server của vServer có serverID: ins-b019f5d0-1234-41ba-1234-851f9ef39003
@@ -76,7 +69,7 @@ Mỗi dòng Audit Logs sẽ có thể có các field như bên dưới
 | <p><code>"jsonPayload":{</code><br><code>"authenticationInfo":{</code><br><code>"rootUserAccountId":12345,</code><br><code>"userType":"root-user"</code><br><code>},</code><br><code>"serviceName":"vserver"</code><br><code>"action":"vserver:DeleteServer",</code><br><code>"resource":"vserver::12345:server/ins-b019f5d0-1234-41ba-1234-851f9ef39003",</code><br><code>"request":{},</code><br><code>"requestMetadata":{},</code><br><code>"response":{}</code><br><code>},</code></p> |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
-* &#x20;Với ví dụ bên dưới, bạn có thể thấy userType: iam-user là IAM user account có ID: e6d39955-e4c3-1234-1234-84d82ea554bf thuộc root user account có ID: 12345 đang thực hiện hành động SearchLogs với Log Project có ID: bbb5f6ef-1234-49a1-1234-b41332376fef. Tương tự với serviceAccount bạn cũng sẽ thấy userType: user-sa.
+* Với ví dụ bên dưới, bạn có thể thấy userType: iam-user là IAM user account có ID: e6d39955-e4c3-1234-1234-84d82ea554bf thuộc root user account có ID: 12345 đang thực hiện hành động SearchLogs với Log Project có ID: bbb5f6ef-1234-49a1-1234-b41332376fef. Tương tự với serviceAccount bạn cũng sẽ thấy userType: user-sa.
 
 | <p><code>"jsonPayload":{</code><br><code>"authenticationInfo":{</code><br><code>"userType":"iam-user",</code><br><code>"rootUserAccountId":12345,</code><br><code>"userAccount":"e6d39955-e4c3-1234-1234-84d82ea554bf"</code><br><code>},</code><br><code>"serviceName":"vmonitor",</code><br><code>"action":"vmonitor:SearchLogs",</code><br><code>"resource":"vmonitor::12345:log-project/bbb5f6ef-1234-49a1-1234-b41332376fef",</code><br><code>"request":{},</code><br><code>"requestMetadata":{},</code><br><code>"response":{}</code><br><code>},</code></p> |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
