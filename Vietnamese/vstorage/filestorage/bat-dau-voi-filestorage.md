@@ -11,10 +11,10 @@ Trong phần này, chúng ta sẽ tìm hiểu về cách sử dụng và quản 
 
 ### Người dùng gửi yêu cầu sử dụng dịch vụ File Storage
 
-* **Cách 1: Gửi yêu cầu sử dụng dịch vụ thông qua ticket**
+* **Cách 1: Gửi yêu cầu sử dụng dịch vụ thông qua** [**ticket**](https://helpdesk.vngcloud.vn/portal/en/newticket?departmentId=854860000000006907\&layoutId=854860000000074011)
   * Bước 1: Chọn dịch vụ File Storage tại trang chủ
     * Tại trang chủ [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/), tại mục **VNG Cloud Service**, chọn **vStorage**, sau đó chọn **File Storage.**
-    * Sau đó, người dùng sẽ được điều hướng đến trang gửi ticket (yêu cầu người dùng phải đăng nhập bằng tài khoản VNG Cloud, nếu chưa có tài khoản VNG Cloud, mời tham khảo cách 2)
+    * Sau đó, người dùng sẽ được điều hướng đến trang gửi ticket (yêu cầu người dùng phải đăng nhập bằng tài khoản VNG Cloud, nếu chưa có tài khoản VNG Cloud, mời tham khảo cách 2) theo đường dẫn [https://helpdesk.vngcloud.vn/portal/en/newticket?departmentId=854860000000006907\&layoutId=854860000000074011](https://helpdesk.vngcloud.vn/portal/en/newticket?departmentId=854860000000006907\&layoutId=854860000000074011)
   * Bước 2: Điền thông tin bắt buộc bao gồm
     * Request Category: Hỗ trợ kỹ thuật (Technical Support)
     * Product: Sản phẩm khác (Other)
@@ -31,7 +31,7 @@ Trong phần này, chúng ta sẽ tìm hiểu về cách sử dụng và quản 
   * Tên tài nguyên (từ khách hàng cung cấp)
   * Định danh tài nguyên
   * Dung lượng sử dụng (mặc định 1TB)
-  * Thông lượng (mặc định 200MB/s)
+  * Thông lượng (mặc định 20Gbps share)
   * Danh sách địa chỉ IP được phép kết nối đền tài nguyên File Storage (từ khách hàng cung cấp)
   * Thời gian sử dụng dịch vụ (mặc định 1 tháng kể từ khi khởi tạo thành công)
 * Bước 3: VNG Cloud Gửi email thông tin tài nguyên vừa cung cấp đến khách hàng

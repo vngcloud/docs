@@ -27,7 +27,7 @@
   * Tên tài nguyên (từ khách hàng cung cấp)
   * Định danh tài nguyên
   * Dung lượng sử dụng (mặc định 1TB)
-  * Thông lượng (mặc định 200MB/s)
+  * Thông lượng (mặc định 20Gbps share)
   * Danh sách địa chỉ IP được phép kết nối đền tài nguyên File Storage (từ khách hàng cung cấp)
   * Thời gian sử dụng dịch vụ (mặc định 1 tháng kể từ khi khởi tạo thành công)
 * Bước 3: VNG Cloud Gửi email thông tin tài nguyên vừa cung cấp đến khách hàng
