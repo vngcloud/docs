@@ -6,7 +6,7 @@
   * [Product Updates (All)](overview/product-updates-all/README.md)
     * [2024](overview/product-updates-all/2024.md)
 * [vServer](vserver/README.md)
-  * [Compute (HCM03)](vserver/compute-hcm03-1a/README.md)
+  * [Compute](vserver/compute-hcm03-1a/README.md)
     * [What is vServer?](vserver/compute-hcm03-1a/what-is-vserver.md)
     * [Announcements and updates](vserver/compute-hcm03-1a/announcements-and-updates/README.md)
       * [2024](vserver/compute-hcm03-1a/announcements-and-updates/2024.md)
