@@ -1,41 +1,37 @@
 # Stop POC
 
-Trước khi tìm hiểu cách Stop POC cho tài nguyên của bạn trên VKS, bạn nên hiểu rõ các khái niệm cũng các hành động mà bạn có thể thao tác đối với tài nguyên POC. Chi tiết tham khảo thêm [tại đây](https://docs.vngcloud.vn/vng-cloud-document/v/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/quan-ly-vong-doi-tai-nguyen/tai-nguyen-poc).&#x20;
+Before learning how to Stop POC for your resources on VKS, you should clearly understand the concepts and actions you can take on POC resources. For more details, refer [here](https://docs.vngcloud.vn/vng-cloud-document/v/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/quan-ly-vong-doi-tai-nguyen/tai-nguyen-poc) .
 
-**Trước khi hết hạn sử dụng ví POC cho Cluster, bạn có hai lựa chọn chính:**
+**Before your POC wallet for Cluster expires, you have two main options:**
 
-* Xóa Cluster đang POC này và tạo lại Cluster bình thường khác.
-* Thực hiện Stop POC để gia hạn Cluster đang POC thành Cluster bình thường.
+* Delete this POC Cluster and recreate another normal Cluster.
+* Perform Stop POC to renew the POC Cluster into a normal Cluster.
 
-**Để tiếp tục sử dụng tài nguyên vừa dừng POC như một tài nguyên bình thường (với mục đích giữ nguyên cấu hình), người dùng có thể thực hiện:**&#x20;
+**To continue using the resource that just stopped POC as a normal resource (for the purpose of keeping the configuration intact), the user can do:**
 
-**Bước 1:** Truy cập vào [VKS Portal](https://vks.console.vngcloud.vn/k8s-cluster), chọn Cluster mà bạn muốn Stop POC.
+**Step 1:** Access [VKS Portal](https://vks.console.vngcloud.vn/k8s-cluster) , select the Cluster where you want to Stop POC.
 
-**Bước 2:** Chọn nút **Stop POC** phía trên góc phải màn hình.
+**Step 2:** Select the **Stop POC** button on the top right corner of the screen.
 
-<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252FpfruVD7gRlq4Wh1Y6Gtk%252Fimage.png%3Falt%3Dmedia%26token%3Dcededf5a-1c49-4dd8-8d6f-ec11c7c767c8&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=c04f0731&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-**Bước 3:** Lúc này, màn hình hiển thị danh sách tất cả các Server và Volume thuộc Cluster (<mark style="color:red;">**bao gồm cả Boot Volume và PVC mà bạn attach vào node trong Cluster của bạn)**</mark> đang có trạng thái POC. Bạn có thể kiểm tra thông tin sau đó chọn **Stop POC**
+**Step 3:** At this time, the screen displays a list of all Servers and Volumes in the Cluster ( **including the Boot Volume and PVC that you attached to the node in your Cluster)** that have POC status. You can check the information then select **Stop POC**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252Fw16qab1QEjCdG5g6eec0%252Fimage.png%3Falt%3Dmedia%26token%3D70a44312-fb8f-4849-8b3b-2d1ca50e74ce&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=94da8eda&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+**Step 4** : Proceed to pay for resources with real money, you can select **the desired usage cycle, turn on and off Auto-renew, enter Coupon** if available and select **Continue** to make Resource Payment
 
-**Bước 4**: Tiến hành thanh toán tài nguyên bằng tiền thật, bạn có thể lựa chọn **Chu kỳ sử dụng mong muốn, bật tắt Tự động gia hạn, nhập Coupon** nếu có và chọn **Continue** để thực hiện Thanh toán tài nguyên
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252FThz0n36JDLF67s09vEDh%252Fimage.png%3Falt%3Dmedia%26token%3De7710865-a83f-4c24-8446-2a21b0041625&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=65a25c33&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+**Step 5** : Make payment using credit balance or other forms of payment if available.
 
-**Bước 5**: Thực hiện thanh toán bằng số dư credit hoặc qua các hình thức thanh toán khác nếu có.
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252FqoEayKltx0kYxI6gz7HJ%252Fimage.png%3Falt%3Dmedia%26token%3Dadef3c84-9734-426c-b62d-9697da8c9896&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=ba64fd8a&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+**To ensure VKS works correctly, Stop POC implementation needs to be performed on VKS Portal instead of doing it individually on each resource server or volume on vServer Portal.** If you have previously performed an individual POC stop for each resource on vServer Portal, you still **need to perform a POC Stop** for the Cluster at VKS Portal. At this time, the screen will display as follows. Please press **Stop** to turn off the POC option for your Cluster.
 
-<mark style="color:red;">**Để đảm bảo VKS hoạt động chính xác, việc thực hiện Stop POC cần được tiến hành trên VKS Portal thay vì thực hiện riêng lẻ trên từng resource server hoặc volume trên vServer Portal.**</mark> Nếu bạn đã thực hiện stop POC riêng lẻ cho từng resource trên vServer Portal trước đó, bạn vẫn **cần thực hiện Stop POC** cho Cluster tại VKS Portal, lúc này, màn hình sẽ hiển thị như sau. Bạn hãy nhẫn **Stop** để tắt lựa chọn POC cho Cluster của bạn.
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252FjXKXT8x32vWWcPdnDXJ1%252Fimage.png%3Falt%3Dmedia%26token%3D7a469b1a-438c-4d23-a58e-ff48ba51f6ab&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=bb9fa80d&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt="" width="386"><figcaption></figcaption></figure>
+**Attention:**
 
-{% hint style="info" %}
-**Chú ý:**&#x20;
-
-* Sau khi stop POC trên VKS, nút "Stop POC" sẽ tiếp tục hiển thị nếu vẫn còn resource chưa được Stop POC sau khi thực hiện trên VKS Portal. Bạn có thể tiếp tục chọn và thực hiện Stop POC cho đến khi tất cả các resource được chuyển về resource thật.
-* Hiện tại, VKS chỉ áp dụng thanh toán bằng POC cho Server và Volume và chưa áp dụng thanh toán cho Load Balancer và Snapshot bằng POC. Do đó, bạn không cần thực hiện Stop POC cho hai loại resource Load Balancer và Snapshot này.
-{% endhint %}
+* After stopping POC on VKS, the "Stop POC" button will continue to display if there are still resources that have not been Stop POC after doing so on VKS Portal. You can continue to select and execute Stop POC until all resources are converted to real resources.
+* Currently, VKS only applies payment by POC for Server and Volume and has not yet applied payment for Load Balancer and Snapshot by POC. Therefore, you do not need to perform Stop POC for these two resource types Load Balancer and Snapshot.

@@ -1,99 +1,75 @@
 # Integrate with Network Load Balancer
 
-Để tích hợp một Network Load Balancer với một Kubernetes cluster, bạn có thể sử dụng một Service với type là [LoadBalancer](loadbalancerhttps://www.airplane.dev/blog/kubernetes-load-balancer). Khi bạn tạo một Service như vậy, VNGCloud Controller Manager sẽ tự động một NLB để chuyển tiếp lưu lượng đến các pod trên node của bạ[n](nhttps://www.airplane.dev/blog/kubernetes-load-balancer). Bạn cũng có thể sử dụng các annotation để tùy chỉnh các thuộc tính của Network Load Balancer, như port, protocol,...
+To integrate a Network Load Balancer with a Kubernetes cluster, you can use a Service with type [LoadBalancer](loadbalancerhttps://www.airplane.dev/blog/kubernetes-load-balancer) . When you create such a Service, VNGCloud Controller Manager will automatically create an NLB to forward traffic to pods on your [node](nhttps://www.airplane.dev/blog/kubernetes-load-balancer) . You can also use annotations to customize Network Load Balancer properties, such as port, protocol,...
 
-### Chuẩn bị <a href="#integratewithnetworkloadbalancer-chuanbi" id="integratewithnetworkloadbalancer-chuanbi"></a>
+#### Prepare <a href="#integratewithnetworkloadbalancer-chuanbi" id="integratewithnetworkloadbalancer-chuanbi"></a>
 
-* Tạo một Kubernetes cluster trên VNGCloud, hoặc sử dụng một cluster đã có. Lưu ý: đảm bảo bạn đã tải xuống cluster configuration file sau khi cluster được khởi tạo thành công và truy cập vào cluster của bạn.
-* Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **vLBFullAccess**, **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts) và thực hiện theo các bước sau:
-  * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
-  * Tìm và chọn **Policy:** **vLBFullAccess và Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do VNG Cloud tạo ra, bạn không thể xóa các policy này.
-  * Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
+* Create a Kubernetes cluster on VNGCloud, or use an existing cluster. Note: make sure you have downloaded the cluster configuration file once the cluster has been successfully initialized and accessed your cluster.
+* Create or use a **service account** created on IAM and attach policy: **vLBFullAccess** , **vServerFullAccess** . To create a service account, go here [and](https://hcm-3.console.vngcloud.vn/iam/service-accounts) follow these steps:
+  * Select " **Create a Service Account** ", enter a name for the Service Account and click **Next Step** to assign permissions to the Service Account
+  * Find and select **Policy: vLBFullAccess and Policy: vServerFullAccess** , then click " **Create a Service Account** " to create Service Account, Policy: vLBFullAccess and Policy: vServerFullAccess created by VNG Cloud, you cannot delete these policies.
+  * After successful creation, you need to save **the Client\_ID** and **Secret\_Key** of the Service Account to perform the next step.
 
 ***
 
-### Khởi tạo Service Account và cài đặt VNGCloud Controller Manager <a href="#exposemotservicethongquavlblayer4-khoitaoserviceaccountvacaidatvngcloudcontrollermanager" id="exposemotservicethongquavlblayer4-khoitaoserviceaccountvacaidatvngcloudcontrollermanager"></a>
+#### Create Service Account and install VNGCloud Controller Manager <a href="#exposemotservicethongquavlblayer4-khoitaoserviceaccountvacaidatvngcloudcontrollermanager" id="exposemotservicethongquavlblayer4-khoitaoserviceaccountvacaidatvngcloudcontrollermanager"></a>
 
-{% hint style="info" %}
-Chú ý:
+Attention:
 
-Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa bật option **Enable vLB Native Integration Driver**, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt VNGCloud Controller Manager theo hướng dẫn bên dưới. Nếu bạn đã bật option **Enable vLB Native Integration Driver**, thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt VNGCloud Controller Manager và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
-{% endhint %}
+When you initialize the Cluster according to the instructions above, if you have not enabled the **Enable vLB Native Integration Driver** option , by default we will not pre-install this plugin into your Cluster. You need to manually create Service Account and install VNGCloud Controller Manager according to the instructions below. If you have enabled the **Enable vLB Native Integration Driver** option , then we have pre-installed this plugin into your Cluster, skip the Service Account Initialization step, install VNGCloud Controller Manager and continue following the instructions from Deploy once. Workload.
 
 <details>
 
-<summary>Hướng dẫn khởi tạo Service Account và cài đặt VNGCloud Controller Manager</summary>
+<summary>Instructions for creating Service Account and installing VNGCloud Controller Manager</summary>
 
-**Khởi tạo Service Account**
-
-* Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **vLBFullAccess**, **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts) và thực hiện theo các bước sau:
-  * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
-  * Tìm và chọn **Policy:** **vLBFullAccess và Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do VNG Cloud tạo ra, bạn không thể xóa các policy này.
-  * Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
-* Gỡ cài đặt cloud-controller-manager
+*
+  *
+  *
+  *
+*
 
 ```
-kubectl get daemonset -n kube-system | grep -i "cloud-controller-manager"
-
-# if your output is similar to the following, you MUST delete the old plugin
-kubectl delete daemonset cloud-controller-manager -n kube-system --force
 ```
 
-* Bên cạnh đó, bạn có thể xóa Service Account đang sử dụng cho cloud-controller-manager vừa gỡ
+*
 
 ```
-kubectl get sa -n kube-system | grep -i "cloud-controller-manager"
-
-# if your output is similar to the above, you MUST delete this service account
-kubectl delete sa cloud-controller-manager -n kube-system --force
 ```
 
-**Cài đặt VNGCloud Controller Manager**
-
-* Cài đặt Helm phiên bản từ 3.0 trở lên. Tham khảo tại [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) để biết cách cài đặt.
-* Thêm repo này vào cluster của bạn qua lệnh:
+*
+*
 
 ```
-helm repo add vks-helm-charts https://vngcloud.github.io/vks-helm-charts
-helm repo update
 ```
 
-* Thay thế thông tin ClientID, Client Secret và ClusterID của cụm K8S của bạn và tiếp tục chạy:
+*
 
 ```
-helm install  vngcloud-controller-manager vks-helm-charts/vngcloud-controller-manager --replace \
-  --namespace kube-system \
-  --set cloudConfig.global.clientID= <Lấy ClientID của Service Account được tạo trên IAM theo hướng dẫn bên trên> \
-  --set cloudConfig.global.clientSecret= <Lấy ClientSecret của Service Account được tạo trên IAM theo hướng dẫn bên trên>\
-  --set cluster.clusterID= <Lấy Cluster ID của cluster mà bạn đã khởi tạo trước đó>
 ```
 
-* Sau khi việc cài đặt hoàn tất, thực hiện kiểm tra trạng thái của vngcloud-Integrate-controller pods:
+*
 
 ```
-kubectl get pods -n kube-system | grep vngcloud-controller-manager
 ```
 
-Ví dụ như ảnh bên dưới là bạn đã cài đặt thành công vngcloud-controller-manager:
-
 ```
-NAME                                          READY   STATUS    RESTARTS      AGE
-vngcloud-controller-manager-8864c754c-bqhvz   1/1     Running   5 (91s ago)   3m13sc
 ```
 
 </details>
 
 ***
 
-### Deploy một Workload <a href="#exposemotservicethongquavlblayer4-deploymotworkload" id="exposemotservicethongquavlblayer4-deploymotworkload"></a>
+#### Deploy a Workload <a href="#exposemotservicethongquavlblayer4-deploymotworkload" id="exposemotservicethongquavlblayer4-deploymotworkload"></a>
 
-#### **1.Nếu bạn chưa có sẵn một Network Load Balancer** đã khởi tạo trước đó trên hệ thống vLB. <a href="#integratewithnetworkloadbalancer-1.neubanchuacosanmotnetworkloadbalancerdakhoitaotruocdotrenhethongv" id="integratewithnetworkloadbalancer-1.neubanchuacosanmotnetworkloadbalancerdakhoitaotruocdotrenhethongv"></a>
+**1.If you do not have a previously initialized Network Load Balancer available on the vLB system.**
 
-Lúc này, bạn cần thực hiện:
+At this point, you need to do:
 
-**Bước 1**: **Tạo Deployment, Service cho Nginx app.**
+**Step 1** : **Create Deployment, Service for Nginx app.**
 
-* Tạo file **nginx-service-lb4.yaml** với nội dung sau:
+* Create **nginx-service-lb4.yaml** file with the following content:
+
+Copy
 
 ```
 apiVersion: apps/v1
@@ -130,7 +106,9 @@ spec:
       targetPort: 80
 ```
 
-* Hoặc sử dụng file mấu sau đây để deploy HTTP Apache Service với Internal LoadBalancer cho phép truy cập nội bộ trên cổng 8080:
+* Or use the following script file to deploy HTTP Apache Service with Internal LoadBalancer allowing internal access on port 8080:
+
+Copy
 
 ```
 apiVersion: apps/v1
@@ -171,7 +149,9 @@ spec:
       targetPort: 80
 ```
 
-* Hoặc tập tin YAML mẫu để tạo Deployment và Service cho ứng dụng máy chủ UDP trong một cụm Kubernetes:
+* Or sample YAML file to create Deployment and Service for a UDP server application in a Kubernetes cluster:
+
+Copy
 
 ```
 apiVersion: apps/v1
@@ -213,14 +193,13 @@ spec:
     protocol: UDP
   selector:
     name: udp-server
-
 ```
 
-#### **2.Nếu bạn đã có sẵn một Network Load Balancer** đã khởi tạo trước đó trên hệ thống vLB và bạn muốn tái sử dụng NLB cho cluster của bạn. <a href="#integratewithnetworkloadbalancer-2.neubandacosanmotnetworkloadbalancerdakhoitaotruocdotrenhethongvlb" id="integratewithnetworkloadbalancer-2.neubandacosanmotnetworkloadbalancerdakhoitaotruocdotrenhethongvlb"></a>
+**2.If you already have a previously initialized Network Load Balancer on the vLB system and you want to reuse the NLB for your cluster.**
 
-Lúc này, bạn hãy nhập thông tin Load Balancer ID vào annotation <mark style="color:red;">**vks.vngcloud.vn/load-balancer-id**</mark>.
+At this point, please enter the Load Balancer ID information into the **vks.vngcloud.vn/load-balancer-id annotation.** The example below is a sample YAML file to deploy Nginx with External LoadBalancer using vngcloud-controller-manager to automatically expose the service to the internet using an L4 load balancer using an available NLB with ID = lb-2b9d8974- 3760-4d60-8203-9671f229fb96
 
-* Ví dụ dưới đây là tập tin YAML mẫu để triển khai Nginx với External LoadBalancer sử dụng vngcloud-controller-manager để tự động expose dịch vụ tới internet bằng bộ cân bằng tải L4 sử dụng một NLB có sẵn với ID = lb-2b9d8974-3760-4d60-8203-9671f229fb96
+Copy
 
 ```
 apiVersion: apps/v1
@@ -260,9 +239,11 @@ spec:
     targetPort: 80
 ```
 
-#### **3.Sau khi một NLB mới đã được chúng tôi tự động khởi tạo**, lúc này bạn có thể thực hiện <a href="#integratewithnetworkloadbalancer-3.saukhimotnlbmoidaduocchungtoitudongkhoitao-lucnaybancothethuchien" id="integratewithnetworkloadbalancer-3.saukhimotnlbmoidaduocchungtoitudongkhoitao-lucnaybancothethuchien"></a>
+**3.Once a new NLB has been automatically created by us , you can now proceed**
 
-* Chỉnh sửa cấu hình NLB của bạn theo hướng dẫn cụ thể tại [Configure for a Network Load Balancer](https://docs.vngcloud.vn/display/VKSVI/Configure+for+a+Network+Load+Balancer). Ví dụ như bên dưới, tôi đã thực hiện chỉnh sửa protocol và port như sau:
+* Edit your NLB configuration according to the specific instructions at [Configure for a Network Load Balancer](https://docs.vngcloud.vn/display/VKSVI/Configure+for+a+Network+Load+Balancer) . For example below, I have edited the protocol and port as follows:
+
+Copy
 
 ```
 apiVersion: apps/v1
@@ -302,15 +283,17 @@ spec:
       targetPort: 80
 ```
 
-* Cũng giống như các tài nguyên Kubernetes khác, **vngcloud-controller-manager** có cấu trúc gồm các trường thông tin như sau:
-  * **apiVersion:** Phiên bản API cho Ingress.
-  * **kind:** Loại tài nguyên, trong trường hợp này là "Service".
-  * **metadata:** Thông tin mô tả Ingress, bao gồm tên, annotations.
-  * **spec:** Cấu hình điều kiện của các incoming request.
+* Like other Kubernetes resources, **vngcloud-controller-manager** has a structure including the following information fields:
+  * **apiVersion:** API version for Ingress.
+  * **kind:** Resource type, in this case "Service".
+  * **metadata:** Information describing Ingress, including name, annotations.
+  * **spec:** Configure the conditions of incoming requests.
 
-Để biết thông tin chung về cách làm việc với **vngcloud-controller-manager,**, hãy xem tại \[Configure for a Network Load Balancer]
+For general information about working with **vngcloud-controller-manager,** see \[Configure for a Network Load Balancer]
 
-* Deploy Service này bằng lệch:
+* Deploy this Service using:
+
+Copy
 
 ```
 kubectl apply -f nginx-service-lb4.yaml
@@ -318,15 +301,19 @@ kubectl apply -f nginx-service-lb4.yaml
 
 ***
 
-### **Kiểm tra thông tin Deployment, Service vừa deploy**
+#### **Check Deployment and Service information just deployed** <a href="#kiem-tra-thong-tin-deployment-service-vua-deploy" id="kiem-tra-thong-tin-deployment-service-vua-deploy"></a>
 
-* Chạy câu lệnh sau đây để kiểm tra **Deployment**
+* Run the following command to test **Deployment**
+
+Copy
 
 ```
 kubectl get svc,deploy,pod -owide
 ```
 
-* Nếu kết quả trả về như bên dưới tức là bạn đã deploy Deployment thành công.
+* If the results are returned as below, it means you have deployed Deployment successfully.
+
+Copy
 
 ```
 NAME                    TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE     SELECTOR
@@ -340,18 +327,20 @@ NAME                             READY   STATUS              RESTARTS   AGE   IP
 pod/nginx-app-7f45b65946-bmrcf   0/1     ContainerCreating   0          2s    <none>   ng-e0fc7245-0c6e-4336-abcc-31a70eeed71d-46179   <none>           <non
 ```
 
-Lúc này, hệ thống vLB sẽ tự động tạo một LB tương ứng cho nginx app đã deployment, ví dụ:
+At this point, the vLB system will automatically create a corresponding LB for the deployed nginx app, for example:
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FzD11c32iEIzE2hnbzbrv%252Fimage.png%3Falt%3Dmedia%26token%3D8010e3b8-fb5b-428a-9940-e7ff245895d2&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=58607080&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-**Bước 3: Để truy cập vào app nginx vừa export, bạn có thể sử dụng URL với định dạng:**
+**Step 3: To access the just exported nginx app, you can use the URL with the format:**
+
+Copy
 
 ```
 http://Endpoint/
 ```
 
-Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao diện vLB. Cụ thể truy cập tại [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb)
+You can get Load Balancer Public Endpoint information at the vLB interface. Specifically, access at [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb)
 
-Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.20/](http://180.93.181.20/)
+For example, below I have successfully accessed the nginx app with the address: [http://180.93.181.20/](http://180.93.181.20/)
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FWRLfY9NlcRgvi7B2c3b7%252Fimage.png%3Falt%3Dmedia%26token%3D9aea9889-1f6f-478a-889e-8b936c2b3bb6&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b1f9d46b&#x26;sv=1" alt=""><figcaption></figcaption></figure>

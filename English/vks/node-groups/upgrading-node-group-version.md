@@ -1,48 +1,46 @@
 # Upgrading Node Group Version
 
-Hiện tại, hệ thống VKS của chúng tôi đã hỗ trợ bạn nâng cấp Node Group Version, bạn có thể nâng cấp Node Group Version lên:
+Currently, our VKS system has supported you to upgrade Node Group Version, you can upgrade Node Group Version to:
 
-* **Control Plane Version** (Ví dụ nâng cấp từ 1.24 (Node Group version hiện tại) lên 1.25 (Control Plane Version hiện tại), nhưng không thể nâng cấp lên các phiên bản khác.
+* **Control Plane Version** (For example upgrade from 1.24 (current Node Group version) to 1.25 (current Control Plane Version), but cannot upgrade to other versions.
 
-**Để thực hiện nâng cấp phiên bản Node Group Version, bạn có thể thực hiện theo hướng dẫn sau:**&#x20;
+**To perform a Node Group Version upgrade, you can follow these instructions:**
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
 
-**Bước 2:** Tại màn hình **Overview**, chọn menu **Kubernetes Cluster.** Chọn vào một **Cluster** mà bạn muốn nâng cấp **Node Group Version**.
+**Step 2: At the Overview** screen , select the **Kubernetes Cluster menu.** Select a **Cluster** where you want to upgrade **Node Group Version** .
 
-**Bước 3:** Chọn biểu tượng ![](https://docs-admin.vngcloud.vn/download/thumbnails/73762021/image2024-4-16\_15-51-55.png?version=1\&modificationDate=1713262603000\&api=v2)và chọn **Upgrade Node Group version** để thực hiện nâng cấp version node group.
+**Step 3:** Select icon![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F73762021%2Fimage2024-4-16\_15-51-55.png%3Fversion%3D1%26modificationDate%3D1713262603000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=d01905fa\&sv=1)and select **Upgrade Node Group version** to upgrade the node group version.
 
-**Bước 4:** Bạn có thể lựa chọn phiên bản mới cho tất cả các Node Group. Phiên bản mới cần hợp lệ và tương thích với phiên bản hiện tại của cluster. Cụ thể: bạn có thể chọn:
+**Step 4:** You can select the new version for all Node Groups. The new version needs to be valid and compatible with the current version of the cluster. Specifically: you can choose:
 
-* Nâng cấp Node Group sao cho về cùng version với Control Plane Version (ví dụ: 1.24 lên 1.25)
+* Upgrade Node Group to the same version as Control Plane Version (for example: 1.24 to 1.25)
 
-**Bước 5:** Hệ thống VKS sẽ thực hiện nâng cấp tất cả các Node Group lên version của Control Plane. Sau khi việc nâng cấp hoàn tất, trạng thái Node Group trở về **ACTIVE**.&#x20;
+**Step 5:** The VKS system will upgrade all Node Groups to the Control Plane version. After the upgrade is complete, the Node Group status returns to **ACTIVE** .
 
-{% hint style="info" %}
-Chú ý:
+Attention:
 
-* Việc nâng cấp Node Group Version là không bắt buộc và độc lập với việc nâng cấp Control Plane Version. Tuy nhiên tất cả các Node Group trong một Cluster sẽ được nâng cấp trong cùng một lần, cũng như Control Plane Version và Node Group Version trong cùng một Cluster không được lệch quá 1 minor version. Bên cạnh đó, hệ thống VKS tự động nâng cấp Node Group Version khi phiên bản K8S Version hiện tại đang sử dụng cho Cluster của bạn quá thời hạn được nhà cung cấp hỗ trợ.
-* Trong quá trình nâng cấp Node Group Version, bạn không thể thực hiện các hành động khác trên Node Group của bạn.&#x20;
-* Bên dưới là một vài lưu ý trước, trong và sau quá trình nâng cấp, vui lòng tham khảo thêm:&#x20;
+* Upgrading Node Group Version is optional and independent of upgrading Control Plane Version. However, all Node Groups in a Cluster will be upgraded at the same time, as well as Control Plane Version and Node Group Version in the same Cluster cannot differ by more than 1 minor version. Besides, the VKS system automatically upgrades the Node Group Version when the current K8S Version being used for your Cluster exceeds the supplier's support period.
+* During the Node Group Version upgrade, you cannot perform other actions on your Node Group.
+* Below are a few notes before, during and after the upgrade process, please refer to:
 
-**Trước khi thực hiện:**
+**Before getting into work:**
 
-* Kiểm tra phiên bản hiện tại: Truy cập Releases để tham khảo danh sách các phiên bản được hỗ trợ. Chọn phiên bản mới hợp lệ và tương thích với phiên bản hiện tại của cluster.
-* Đảm bảo tính sẵn sàng của Node Group: Node Group phải đang ở trạng thái hoạt động (ACTIVE) và tất cả các node phải HEALTHY.
-* Ngừng các tác vụ đang chạy: Ngừng các tác vụ đang chạy trên cluster để tránh ảnh hưởng đến quá trình nâng cấp.
+* Check the current version: Visit Releases for a list of supported versions. Select a new version that is valid and compatible with the current version of the cluster.
+* Ensure Node Group availability: Node Group must be in active state (ACTIVE) and all nodes must be HEALTHY.
+* Stop running tasks: Stop running tasks on the cluster to avoid affecting the upgrade process.
 
-**Trong khi thực hiện:**
+**While doing:**
 
-* Theo dõi trạng thái Node Group: Theo dõi trạng thái Node Group trong quá trình nâng cấp. Trạng thái Node Group sẽ chuyển sang UPDATING và sau khi hoàn tất sẽ trở về ACTIVE.
-* Kiểm tra nhật ký hệ thống: Kiểm tra nhật ký hệ thống để phát hiện bất kỳ lỗi hoặc cảnh báo nào trong quá trình nâng cấp.
+* Monitor Node Group status: Monitor Node Group status during the upgrade process. The Node Group status will change to UPDATING and after completion will return to ACTIVE.
+* Check system log: Check the system log for any errors or warnings during the upgrade process.
 
-**Sau khi thực hiện:**
+**After implementation:**
 
-* Kiểm tra tính sẵn sàng của Node Group: Xác nhận rằng Node Group đã được nâng cấp thành công và tất cả các node đang hoạt động bình thường.
-* Kiểm tra các ứng dụng: Kiểm tra các ứng dụng đang chạy trên cluster để đảm bảo chúng hoạt động bình thường sau khi nâng cấp.
+* Check Node Group Availability: Confirm that the Node Group has been upgraded successfully and all nodes are operating normally.
+* Test applications: Test applications running on the cluster to ensure they work properly after the upgrade.
 
-**Lưu ý:**
+**Note:**
 
-* Việc nâng cấp Node Group Version có thể mất một khoảng thời gian tùy thuộc vào kích thước và độ phức tạp của Node Group.
-* Trong một số trường hợp hiếm gặp, việc nâng cấp Node Group Version có thể thất bại. Nếu điều này xảy ra, hệ thống VKS sẽ tự động rollback cluster về phiên bản hiện tại.
-{% endhint %}
+* Upgrading Node Group Version may take some time depending on the size and complexity of the Node Group.
+* In some rare cases, upgrading Node Group Version may fail. If this happens, the VKS system will automatically rollback the cluster to the current version.

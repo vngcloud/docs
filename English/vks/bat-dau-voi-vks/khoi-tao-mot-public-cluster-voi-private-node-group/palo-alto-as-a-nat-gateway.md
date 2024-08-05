@@ -1,181 +1,191 @@
 # Palo Alto as a NAT Gateway
 
-Sử dụng hướng dẫn bên dưới dể làm việc với Private Node group thông qua Palo Alto.
+Use the instructions below to work with a Private Node group through Palo Alto.
 
-## Điều kiện cần
+### Prerequisites <a href="#dieu-kien-can" id="dieu-kien-can"></a>
 
-Để có thể sử dụng Palo Alto làm NAT Gateway cho Cluster trên hệ thống VKS, bạn cần có:
+To be able to use Palo Alto as NAT Gateway for Cluster on VKS system, you need:
 
-* Một **server (VM) Windows** đã được khởi tạo trên hệ thống **vServer** với cấu hình như sau:
+* A **Windows server (VM)** has been initialized on the **vServer** system with the following configuration:
 
-<table><thead><tr><th width="240">Item</th><th>Cấu hình</th></tr></thead><tbody><tr><td>Flavor</td><td>2x4</td></tr><tr><td>Volume</td><td>20 GB</td></tr><tr><td>VPC</td><td>10.76.0.0/16</td></tr><tr><td>Subnet</td><td>10.76.0.4/24</td></tr><tr><td>Network Interface 1</td><td>10.76.0.3</td></tr></tbody></table>
+| Item                | Configuration |
+| ------------------- | ------------- |
+| Flavor              | 2x4           |
+| Volume              | 20GB          |
+| VPC                 | 10.76.0.0/16  |
+| Subnet              | 10.76.0.4/24  |
+| Network Interface 1 | 10.76.0.3     |
 
-* Một **server (VM) Palo Alto** được khởi tạo trên hệ thống **vMarketPlace** theo hướng dẫn bên dưới với cấu hình như sau:
+* A **Palo Alto server (VM)** is initialized on the **vMarketPlace** system according to the instructions below with the following configuration:
 
-<table><thead><tr><th width="244">Item</th><th>Cấu hình</th></tr></thead><tbody><tr><td>Flavor</td><td>2x8</td></tr><tr><td>Volume</td><td>60 GB</td></tr><tr><td>VPC</td><td>10.76.0.0/16</td></tr><tr><td>Network Interface 1</td><td>10.76.255.4</td></tr><tr><td>Network Interface 2</td><td>10.76.0.4</td></tr></tbody></table>
+| Item                | Configuration |
+| ------------------- | ------------- |
+| Flavor              | 2x8           |
+| Volume              | 60GB          |
+| VPC                 | 10.76.0.0/16  |
+| Network Interface 1 | 10.76.255.4   |
+| Network Interface 2 | 10.76.0.4     |
 
-## Khởi tạo Palo Alto <a href="#toc165621057" id="toc165621057"></a>
+### Initialize Palo Alto <a href="#toc165621057" id="toc165621057"></a>
 
-**Bước 1:** Truy cập vào [https://marketplace.console.vngcloud.vn/](https://marketplace.console.vngcloud.vn/)
+**Step 1:** Visit [https://marketplace.console.vngcloud.vn/](https://marketplace.console.vngcloud.vn/)
 
-**Bước 2:** Tại màn hình chính, thực hiện tìm kiếm **Palo Alto**, tại dịch vụ **Palo Alto**, chọn **Launch**.
+**Step 2:** At the main screen, search for **Palo Alto , at Palo Alto** services , select **Launch** .
 
-**Bước 3:** Lúc này, bạn cần thiết lập cấu hình cho **Palo Alto.** Cụ thể, bạn có thể chọn **Volume, IOPS, Network, Security Group** mong muốn. **Bạn cần lựa chọn VPC và Subnet giống với VPC và Subnet mà bạn lựa chọn sử dụng cho Cluster của bạn.** Ngoài ra bạn cũng cần chọn Một Server Group đã tồn tại hoặc chọn **Dedicated SOFT ANTI AFFINITY group** để chúng tôi tự động tạo một server group mới.
+**Step 3:** Now, you need to configure **Palo Alto.** Specifically, you can select the desired **Volume, IOPS, Network, Security Group . You need to choose the same VPC and Subnet as the VPC and Subnet you choose to use for your Cluster.** In addition, you also need to select an existing Server Group or select **Dedicated SOFT ANTI AFFINITY group** so we can automatically create a new server group.
 
-**Bước 4:** Tiến hành thanh toán như các tài nguyên bình thường trên VNG Cloud.
+**Step 4:** Proceed to pay like normal resources on VNG Cloud.
 
 ***
 
-## Cấu hình thông số cho Palo Alto <a href="#toc165621058" id="toc165621058"></a>
+### Configure parameters for Palo Alto <a href="#toc165621058" id="toc165621058"></a>
 
-**Bước 1:** Sau khi khởi tạo Palo Alto từ vMarketPlace theo hướng dẫn bên trên, bạn có thể truy cập vào giao diện vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) để kiểm tra server chạy Palo Alto đã được khởi tạo xong chưa.
+**Step 1:** After initializing Palo Alto from vMarketPlace according to the instructions above, you can access the vServer interface here [to](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) check if the server running Palo Alto has been initialized.
 
-**Bước 2: Sau khi server chạy Palo Alto được khởi tạo thành công**. Để vào GUI của Palo Alto bạn cần có 1 vServer chạy Windows. Sau đó bạn truy cập vào bằng IP Internal Interface với tên đăng nhập và mật khẩu mặc định là: **admin/admin**
+**Step 2: After the server running Palo Alto is successfully initialized** . To access the Palo Alto GUI you need a vServer running Windows. Then you access it using IP Internal Interface with the default login name and password: **admin/admin**
 
-Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI của Palo Alto. Bạn cần tạo cùng VPC và sử dụng subnet khác với subnet có priority là 1 khi khởi tạo Palo Alto
+Note: Go to the Network section of vServer Windows to access the Palo Alto GUI. You need to create the same VPC and use a different subnet than the subnet with priority 1 when initializing Palo Alto
 
-![](../../../.gitbook/assets/3%20\(1\).png)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F3%2520%281%29.png\&width=768\&dpr=4\&quality=100\&sign=22583bd2\&sv=1)
 
-**Bước 3**: Sau khi đăng nhập xong, bạn cần thực hiện thay đổi mật khẩu lần đầu. Hãy nhập mật khẩu mới theo mong muốn của bạn.
+**Step 3** : After logging in, you need to change your password for the first time. Please enter a new password according to your wishes.
 
-**Bước 4:** Bạn cần tiến hành khởi tạo 1 Zone Inside và 1 Zone Outside theo hướng dẫn bên dưới:
+**Step 4:** You need to create 1 Zone Inside and 1 Zone Outside according to the instructions below:
 
-* Chọn bút **Add**
+* Select **Add pen**
 
-![](../../../.gitbook/assets/4%20\(1\).png)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F4%2520%281%29.png\&width=768\&dpr=4\&quality=100\&sign=54f22251\&sv=1)
 
-* Đặt tên cho **Zone**: **Inside** sau đó chọn **OK**
+* Name **the Zone** : **Inside** then select **OK**
 
-![](../../../.gitbook/assets/5%20\(1\).png)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F5%2520%281%29.png\&width=768\&dpr=4\&quality=100\&sign=7a4cb488\&sv=1)
 
-* Làm tương tự đối với **Zone Outside**
+* Do the same for **Zone Outside**
 
-![](../../../.gitbook/assets/6%20\(1\).png)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F6%2520%281%29.png\&width=768\&dpr=4\&quality=100\&sign=38d93427\&sv=1)
 
-**Bước 5**: Cấu hình cho **External Interface**
+**Step 5** : Configure **External Interface**
 
 * Interface Type: **Layer 3**
 * Virtual Router: **default**
 * Security Zone: **Outside**
 
-![](../../../.gitbook/assets/7%20\(1\).png)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F7%2520%281%29.png\&width=768\&dpr=4\&quality=100\&sign=5920afc6\&sv=1)
 
-* Chuyển sang **Tab IPv4** và chọn **Add** để nhập **Static IP** cho **External Interface**
+* Switch to **IPv4 Tab** and select **Add** to enter **Static IP** for **External Interface**
 
-![](../../../.gitbook/assets/8.png)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F8.png\&width=768\&dpr=4\&quality=100\&sign=1a486112\&sv=1)
 
-* Để lấy thông tin IP này bạn vào phần **Network Interface** của **Palo Alto** để xem thông tin
+* To get this IP information, go to **Palo Alto** 's **Network Interface** section to view the information
 
-![](../../../.gitbook/assets/9.png)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F9.png\&width=768\&dpr=4\&quality=100\&sign=545a180b\&sv=1)
 
-* Chuyển sang tab **Advanced**, ở phần **MTU** bạn cần chỉnh thành **1400**
+* Switch to the **Advanced** tab , in the **MTU** section you need to set it to **1400**
 
-![](../../../.gitbook/assets/10.png)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F10.png\&width=768\&dpr=4\&quality=100\&sign=246ea00f\&sv=1)
 
-**Bước 6:** Thực hiện cấu hình tương tự cho các **Internal Interface**
+**Step 6:** Perform similar configuration for **Internal Interfaces**
 
-![](../../../.gitbook/assets/11.png)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F11.png\&width=768\&dpr=4\&quality=100\&sign=f8152556\&sv=1)
 
-* Tại tab **IPv4:** bạn tiến hành thiết lập **Static IP**
+* At the **IPv4 tab:** you proceed to set up **Static IP**
 
-![](../../../.gitbook/assets/12.png)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F12.png\&width=768\&dpr=4\&quality=100\&sign=52419b31\&sv=1)
 
-* Chuyển sang tab **Advanced**, ở phần **MTU** bạn chỉnh thành 1400
+* Switch to the **Advanced** tab , in the **MTU** section , set it to 1400
 
-![](../../../.gitbook/assets/13.png)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F13.png\&width=768\&dpr=4\&quality=100\&sign=fa9cf8f8\&sv=1)
 
-**Bước 7:** Tạo **static route**
+**Step 7:** Create **static route**
 
-* Vào phần **Network** -> **Virtual Routers**-> Chọn **default**-> Chuyển sang mục **Static Routes**
+* Go to **Network** -> **Virtual Routers** -> Select **default** -> Switch to **Static Routes**
 
-![](../../../.gitbook/assets/14.png)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F14.png\&width=768\&dpr=4\&quality=100\&sign=82b0bfc3\&sv=1)
 
-* Thực hiện tạo 1 **route** như hình bên dưới
+* Create a **route** as shown below
 
-![](../../../.gitbook/assets/15.png)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F15.png\&width=768\&dpr=4\&quality=100\&sign=463fabaa\&sv=1)
 
-**Bước 8:** Tạo **Security Policy Rule**
+**Step 8:** Create **Security Policy Rule**
 
-* Vào phần **Policies** -> **Security** ->**Add**
-* Tại tab **General**, bạn cần đặt tên cho rule
+* Go to **Policies** -> **Security** -> **Add**
+* On the **General** tab , you need to name the rule
 
-![](../../../.gitbook/assets/16.png)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F16.png\&width=768\&dpr=4\&quality=100\&sign=57cbbb25\&sv=1)
 
-* Tại tab **Source**, thiết lập các thông tin như **Source Zone**, **Source Address**, **Source User, Source Device**
+* At the **Source** tab , set information such as **Source Zone** , **Source Address** , **Source User, Source Device**
 
-![](../../../.gitbook/assets/17.png)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F17.png\&width=768\&dpr=4\&quality=100\&sign=c887edbc\&sv=1)
 
-* Tại tab **Destination**, thiết lập các thông tin như **Destination Zone, Destination Address, Destination Device**
+* At the **Destination** tab , set information such as **Destination Zone, Destination Address, Destination Device**
 
-![](../../../.gitbook/assets/18.png)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F18.png\&width=768\&dpr=4\&quality=100\&sign=dfafb617\&sv=1)
 
-* Tại tab **Application**, thiết lập các thông tin như **Application, Depend On**
+* At the **Application** tab , set information such as **Application, Depend On**
 
-![](../../../.gitbook/assets/19.png)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F19.png\&width=768\&dpr=4\&quality=100\&sign=d8384a1e\&sv=1)
 
-* Tại tab **Service/URL Category**, thiết lập các thông tin như **Service, URL Category**
+* At the **Service/URL Category** tab , set information such as **Service, URL Category**
 
-![](../../../.gitbook/assets/20.png)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F20.png\&width=768\&dpr=4\&quality=100\&sign=c64de03a\&sv=1)
 
-* Tại tab **Actions**, thiết lập các thông tin như **Action, Log, Profile, Other Settings**
+* At the **Actions** tab , set information such as **Action, Log, Profile, Other Settings**
 
-**Bước 9**: Tạo **rule NAT** để các VM có thể đi ra Internet
+**Step 9** : Create **a NAT rule** so that VMs can go out to the Internet
 
-* Vào phần **Policies** -> **NAT** -> **Add**
+* Go to **Policies** -> **NAT** -> **Add**
 
-<figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252Fgit-blob-d34e711b6b3fa0d758cc77f0c470d2c8c5465b0b%252F1.png%3Falt%3Dmedia\&width=768\&dpr=4\&quality=100\&sign=c7f2da58\&sv=1)
 
-* Tại tab **General** đặt tên cho **NAT rule**
+* On the **General** tab , name **the NAT rule**
 
-<figure><img src="../../../.gitbook/assets/2.png" alt=""><figcaption></figcaption></figure>
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252Fgit-blob-62814b880ed26021a79b49040b9e4833b6dd1b64%252F2.png%3Falt%3Dmedia\&width=768\&dpr=4\&quality=100\&sign=324a9aec\&sv=1)
 
-* Tại tab **Original Packe**t chọn **Source Zone, Destination Zone, Destination Interface, Service, Source Address, Destination Address**
+* At the **Original Packet** tab, select **Source Zone, Destination Zone, Destination Interface, Service, Source Address, Destination Address**
 
-<figure><img src="../../../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F3.png\&width=768\&dpr=4\&quality=100\&sign=9cc73b65\&sv=1)
 
-* Tạo tab **Translated Packet** thực hiện cấu hình như hình bên dưới
+* Create the **Translated Packet** tab and perform configuration as shown below
 
-Lưu ý: Cần thay đổi **IP Address** thành địa chỉ **Static IP** mà bạn đã cấu hình ở bước 6
+Note: Need to change **the IP Address to the Static IP** address that you configured in step 6
 
-<figure><img src="../../../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F4.png\&width=768\&dpr=4\&quality=100\&sign=9bd19b96\&sv=1)
 
-**Bước 10**: Tiến hành **Commit**
+**Step 10** : Proceed **to Commit**
 
-<figure><img src="../../../.gitbook/assets/5.png" alt=""><figcaption></figcaption></figure>
-
-***
-
-## Khởi tạo Route Table <a href="#khoitaomotpublicclustervoiprivatenodegroup-khoitaoroutetable" id="khoitaomotpublicclustervoiprivatenodegroup-khoitaoroutetable"></a>
-
-Sau khi Palo Alto được khởi tạo và cấu hình thành công, bạn cần tạo một Route table để kết nối tới các mạng khác nhau. Cụ thể thực hiện theo các bước sau để tạo Route table:
-
-**Bước 1:** Truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/network/route-table](https://hcm-3.console.vngcloud.vn/vserver/network/route-table)
-
-**Bước 2:** Tại thanh menu điều hướng, chọn **Tab Network/ Route table.**
-
-**Bước 3:** Chọn **Create Route table.**
-
-**Bước 4:** Nhập tên mô tả cho Route table. Tên Route table có thể bao gồm các chữ cái (a-z, A-Z, 0-9, '\_', '-'). Độ dài dữ liệu đầu vào nằm trong khoảng từ 5 đến 50. Nó không được bao gồm khoảng trắng ở đầu hoặc ở cuối.
-
-**Bước 5:** Chọn **VPC** cho Route table của bạn, nếu chưa có VPC cần tạo mới một VPC theo hướng dẫn tại [Trang VPC](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039). **VPC sử dụng để thiết lập Route table phải là VPC được chọn sử dụng cho Palo Alto và Cluster của bạn.**
-
-**Bước 6**: Chọn **Create** để tạo mới Route table.
-
-**Bước 7:** Chọn <img src="https://docs-admin.vngcloud.vn/download/thumbnails/73762068/image2024-4-16_15-40-3.png?version=1&#x26;modificationDate=1713256805000&#x26;api=v2" alt="" data-size="line">tại Route table vừa tạo sau đó chọn **Edit Routes.**
-
-**Bước 8:** Tại phần thêm mới **Route** hãy nhập vào các thông tin:
-
-* Đối với Destination, hãy nhập **Destination CIDR là 0.0.0.0/0**
-* Đối với Target, hãy nhập **Target CIDR là địa chỉ IP Network Interface 2 của Palo Alto.**
-
-Ví dụ:
-
-<figure><img src="../../../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F5.png\&width=768\&dpr=4\&quality=100\&sign=5058084f\&sv=1)
 
 ***
 
-## **Kiểm tra kết nối**
+### Initialize Route Table <a href="#khoitaomotpublicclustervoiprivatenodegroup-khoitaoroutetable" id="khoitaomotpublicclustervoiprivatenodegroup-khoitaoroutetable"></a>
 
-* Tiến hành ping 8.8.8.8 hoặc google.com
+After Palo Alto is successfully initialized and configured, you need to create a Route table to connect to different networks. Specifically, follow these steps to create a Route table:
 
-<figure><img src="../../../.gitbook/assets/7.png" alt=""><figcaption></figcaption></figure>
+**Step 1:** Visit [https://hcm-3.console.vngcloud.vn/vserver/network/route-table](https://hcm-3.console.vngcloud.vn/vserver/network/route-table)
+
+**Step 2:** In the navigation menu bar, select **Network Tab/ Route table.**
+
+**Step 3:** Select **Create Route table.**
+
+**Step 4:** Enter a descriptive name for the Route table. Route table names can include letters (az, AZ, 0-9, '\_', '-'). The input data length is between 5 and 50. It must not include leading or trailing spaces.
+
+**Step 5:** Select **VPC** for your Route table. If you do not have a VPC, you need to create a new VPC according to the instructions on [the VPC Page](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039) . **The VPC used to set up the Route table must be the VPC selected for your Palo Alto and Cluster.**
+
+**Step 6** : Select **Create** to create a new Route table.
+
+**Step 7:** Select ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F73762068%2Fimage2024-4-16\_15-40-3.png%3Fversion%3D1%26modificationDate%3D1713256805000%26api%3Dv2\&width=40\&dpr=4\&quality=100\&sign=7bf6e57b\&sv=1)the newly created Route table then select **Edit Routes.**
+
+**Step 8:** In the add new **Route** section , enter the following information:
+
+* For Destination, enter **Destination CIDR as 0.0.0.0/0**
+* For Target, enter **Target CIDR as the Palo Alto Network Interface 2 IP address.**
+
+For example:
+
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252Fgit-blob-f2ce363bb830cb7e3607f230606d1987bc481d93%252Fimage.png%3Falt%3Dmedia\&width=768\&dpr=4\&quality=100\&sign=2d80b393\&sv=1)
+
+***
+
+### **Checking connection** <a href="#kiem-tra-ket-noi" id="kiem-tra-ket-noi"></a>
+
+* Proceed to ping 8.8.8.8 or google.com

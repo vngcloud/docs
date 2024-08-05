@@ -1,24 +1,25 @@
 # Whitelist
 
-### **Tổng quan**
+#### O**verview** <a href="#tong-quan" id="tong-quan"></a>
 
-Tính năng Whitelist IP trên chế độ Private Node Group của VKS cho phép bạn chỉ cho phép các địa chỉ IP cụ thể kết nối đến Cluster của bạn. Điều này giúp tăng cường bảo mật cho các ứng dụng và dữ liệu nhạy cảm bằng cách hạn chế truy cập từ các nguồn không xác định.
+The IP Whitelist feature on VKS's Private Node Group mode allows you to only allow specific IP addresses to connect to your Cluster. This helps increase security for applications and sensitive data by restricting access from unknown sources.
 
-**Lợi ích**
+**Benefit**
 
-* **Tăng cường bảo mật:** Whitelist IP giúp bảo vệ dữ liệu và ứng dụng của bạn khỏi các mối đe dọa tiềm ẩn trên mạng công cộng, chẳng hạn như tấn công mạng và vi phạm dữ liệu.
-* **Giảm thiểu rủi ro:** Bằng cách hạn chế truy cập vào các node nhạy cảm, Whitelist IP giúp giảm thiểu rủi ro lây lan vi phạm dữ liệu sang các phần khác của mạng của bạn.
-* **Kiểm soát tốt hơn:** Whitelist IP cho phép bạn kiểm soát chặt chẽ quyền truy cập vào các node của mình, đảm bảo chỉ những người dùng và ứng dụng được ủy quyền mới có thể truy cập.
+* **Enhanced security:** IP Whitelist helps protect your data and applications from potential threats on public networks, such as cyberattacks and data breaches.
+* **Minimize risk:** By restricting access to sensitive nodes, Whitelist IP helps minimize the risk of spreading a data breach to other parts of your network.
+* **Greater control:** Whitelist IP allows you to tightly control access to your nodes, ensuring only authorized users and applications can access.
 
-{% hint style="info" %}
-**Khuyến nghị về Sử dụng Whitelist trong Các Mô Hình Cluster:**
+**Recommendations for Using Whitelist in Cluster Models:**
 
-**1. Public Cluster Chỉ Bao Gồm Public Node Group**
+**1. Public Cluster Only Includes Public Node Group**
 
-* **Khuyến nghị**: Không khuyến khích sử dụng whitelist.
-*   Nếu bạn có nhu cầu sử dụng Whitelist IP vì security, vui lòng allow danh sách IP Range Public của vServer theo danh sách sau:
+* **Recommendation** : Not recommended to use whitelist.
+*   If you need to use Whitelist IP for security, please allow vServer's IP Range Public list according to the following list:
 
-    ```bash
+    Copy
+
+    ```
     103.245.249.0/24
     103.245.251.0/24
     116.118.95.0/24
@@ -37,28 +38,27 @@ Tính năng Whitelist IP trên chế độ Private Node Group của VKS cho phé
     180.93.183.0/24
     ```
 
-**2. Public Cluster Bao Gồm Private Node Group Đi Qua NAT Gateway (Pfsense, PaloAlto)**
+**2. Public Cluster Includes Private Node Group Going Through NAT Gateway (Pfsense, PaloAlto)**
 
-* **Khuyến nghị**: Có thể sử dụng tính năng whitelist.
-* Cần thực hiện Whitelist thêm IP của NAT Gateway.
+* **Recommendation** : Can use whitelist feature.
+* Need to whitelist additional IP of NAT Gateway.
 
-**3. Private Cluster Bao Gồm Public Node Group hoặc Private Node Group (Coming soon)**
-{% endhint %}
+**3. Private Cluster Includes Public Node Group or Private Node Group (Coming soon)**
 
 ***
 
-### Chỉnh sửa Whitelist
+#### Edit Whitelist <a href="#chinh-sua-whitelist" id="chinh-sua-whitelist"></a>
 
-Để sử dụng tính năng Whitelist IP trên chế độ Private Node Group, bạn cần thực hiện các bước sau:
+To use the IP Whitelist feature on Private Node Group mode, you need to perform the following steps:
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
 
-**Bước 2:** Tại màn hình **Overview**, chọn menu **Kubernetes Cluster.**
+**Step 2: At the Overview** screen , select the **Kubernetes Cluster menu.**
 
-**Bước 3:** Chọn biểu tượng <img src="https://docs-admin.vngcloud.vn/download/thumbnails/73762015/image2024-4-16_15-51-55.png?version=1&#x26;modificationDate=1713262579000&#x26;api=v2" alt="" data-size="line">và chọn **Edit Whitelist** hoặc chọn biểu tượng **Edit** khi xem chi tiết một Cluster để thực hiện thêm Whitelist cho Cluster của bạn.
+**Step 3:** Select the icon ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F73762015%2Fimage2024-4-16\_15-51-55.png%3Fversion%3D1%26modificationDate%3D1713262579000%26api%3Dv2\&width=40\&dpr=4\&quality=100\&sign=10c09f1b\&sv=1)and select **Edit Whitelist or select the Edit** icon when viewing details of a Cluster to add a Whitelist to your Cluster.
 
-**Bước 4:** Lúc này, màn hình **Edit Whitelist** hiển thị, bạn có thể nhập địa chỉ IP mà bạn muốn cho phép truy cập vào Cluster sau đó chọn **Add**.
+**Step 4:** Now, the **Edit Whitelist** screen displays, you can enter the IP address you want to allow access to the Cluster then select **Add** .
 
-**Bước 5:** Lặp lại bước 4 nếu bạn muốn thêm nhiều **Whitelist IP** cho Cluster của bạn. Bạn cũng có thể chọn **Delete** để xóa Whitelist IP mà bạn đã thêm trước đó.
+**Step 5:** Repeat step 4 if you want to add more **Whitelist IPs** to your Cluster. You can also select **Delete** to delete the Whitelist IP you added previously.
 
-**Bước 6:** Chọn **Save** để lưu thông tin hoặc **Cancel** để hủy bỏ việc lưu các thông số này.
+**Step 6:** Select **Save** to save the information or **Cancel** to cancel saving these parameters.

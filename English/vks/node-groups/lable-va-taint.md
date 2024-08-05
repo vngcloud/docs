@@ -1,64 +1,72 @@
-# Lable và Taint
+# Lable and Taint
 
-### Lable <a href="#label" id="label"></a>
+#### Lable <a href="#label" id="label"></a>
 
-Label là một tính năng quan trọng trong Kubernetes, được sử dụng để tổ chức và quản lý các đối tượng một cách hiệu quả. Bạn có thể gán các cặp key-value cho các đối tượng Kubernetes như Pod, Node, Service, Deployment, v.v. Cụ thể:
+Labels are an important feature in Kubernetes, used to organize and manage objects effectively. You can assign key-value pairs to Kubernetes objects such as Pod, Node, Service, Deployment, etc. Specifically:
 
-* **Mỗi Lable là một cặp key-value:** Key (khoá) là một chuỗi ký tự dùng để xác định tên của lable. Value (giá trị) là một chuỗi ký tự tùy chọn, cung cấp thông tin chi tiết về lable.
-* **Key và value phải tuân theo các quy tắc đặt tên:** Key và value không được chứa dấu khoảng trắng, ký tự đặc biệt ngoài (-, \_,.).
-* Lable có thể được sử dụng cho nhiều mục đích khác nhau, bao gồm:
-  * Phân loại các đối tượng dựa trên các tiêu chí như environment, version, status, v.v.
-  * Theo dõi và quản lý các đối tượng trong cụm Kubernetes.
+* **Each Lable is a key-value pair:** Key is a string of characters used to identify the name of the label. Value is an optional character string that provides detailed information about the label.
+* **Keys and values ​​must follow the naming rules:** Keys and values ​​must not contain spaces or special characters other than (-, \_,.).
+* Lable can be used for a variety of purposes, including:
+  * Classify objects based on criteria such as environment, version, status, etc
+  * Monitor and manage objects in a Kubernetes cluster.
 
-**Ví dụ:**
+**For example:**
 
-* `app: nginx` - Lable này cho biết đối tượng có liên quan đến ứng dụng Nginx.
-* `environment: production` - Lable này cho biết đối tượng thuộc về môi trường production.
-* `version: 1.7.2` - Lable này cho biết đối tượng có liên quan đến phiên bản 1.7.2.
+* `app: nginx`- This label indicates the object is related to the Nginx application.
+* `environment: production`- This label indicates that the object belongs to the production environment.
+* `version: 1.7.2`- This label indicates the object is related to version 1.7.2.
 
-### **Tạo Lable**
+#### **Create Label** <a href="#tao-lable" id="tao-lable"></a>
 
-Để tạo Lable cho một Node Group, bạn hãy thực hiện theo hướng dẫn sau:&#x20;
+To create a Lable for a Node Group, follow these instructions:
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
 
-**Bước 2:** Tại Cluster đã khởi tạo trước đó, hãy chọn **Create a Node group.**
+**Step 2:** At the previously created Cluster, select **Create a Node group.**
 
-**Bước 3:** Tại màn hình khởi tạo Node Group, chúng tôi đã thiết lập thông tin cho Node Group của bạn. Bạn có thể giữ các giá trị mặc định này hoặc điều chỉnh các thông số mong muốn cho Node Group của bạn. Tại mục **Node Group Metadata Setting,** bạn cần:
+**Step 3:** At the Node Group initialization screen, we have set up information for your Node Group. You can keep these default values ​​or adjust the desired parameters for your Node Group. In the **Node Group Metadata Setting section,** you need:
 
-* Nhập key cho lable của bạn. Key phải bắt đầu và kết thúc bằng chữ hoặc số và bao gồm các ký tự a-z, A-Z, 0-9, -, \_, . tối đa 253 ký tự. Ngoài ra bạn có thể nhập key là một DNS subdomain ví dụ:  [example.com/my-app](http://example.com/my-app)
-* Nhập value cho key tương ứng này.
+* Enter the key for your label. The key must begin and end with letters or numbers and include the characters az, AZ, 0-9, -, \_, . Maximum 253 characters. Alternatively, you can enter the key as a DNS subdomain, for example: [example.com/my-app](http://example.com/my-app)
+* Enter the value for this corresponding key.
 
-**Bước 5:** Chọn **Create Node Group.** Hãy chờ vài phút để chúng tôi khởi tạo Node Group của bạn, trạng thái của Node Group lúc này là **Creating**.
+**Step 5:** Select **Create Node Group.** Please wait a few minutes for us to initialize your Node Group. The status of the Node Group is currently **Creating** .
 
-**Bước 6:** Khi trạng thái **Node Group** là **Active**, bạn có thể xem thông tin Node Group bằng cách chọn vào **Node Group Name** tại màn hình chính.
+**Step 6: When the Node Group** status is **Active** , you can view Node Group information by selecting **Node Group Name** on the main screen.
 
-Hoặc bạn có thể tạo Lable thông qua kubectl theo câu lệnh:
+Or you can create Lable through kubectl with the command:
+
+Copy
 
 ```
 kubectl label nodes my-node1 disktype=ssd
 ```
 
-Bạn có thể kiểm tra lại lable vừa tạo qua lệnh:
+You can check the newly created label again with the command:
+
+Copy
 
 ```
 kubectl get nodes --show-labels
 ```
 
-Ví dụ kết quả cho lệnh này sẽ như sau:
+For example the result for this command would be as follows:
 
-```shell
+Copy
+
+```
 NAME      STATUS    ROLES    AGE     VERSION        LABELS
 worker0   Ready     <none>   1d      v1.13.0        ...,disktype=ssd,kubernetes.io/hostname=worker0
 worker1   Ready     <none>   1d      v1.13.0        ...,kubernetes.io/hostname=worker1
 worker2   Ready     <none>   1d      v1.13.0        ...,kubernetes.io/hostname=worker2
 ```
 
-### **Sử dụng Lable với nodeSelector**
+#### **Use Lable with nodeSelector** <a href="#su-dung-lable-voi-nodeselector" id="su-dung-lable-voi-nodeselector"></a>
 
-nodeSelector là một tham số được sử dụng trong PodSpec để chỉ định rằng Pod chỉ nên được lên lịch trên các Node có lable cụ thể. Điều này hữu ích khi bạn muốn chạy Pod trên các Node có tài nguyên hoặc thuộc tính cụ thể.
+nodeSelector is a parameter used in PodSpec to specify that Pods should only be scheduled on Nodes with a specific label. This is useful when you want to run Pods on Nodes with specific resources or properties.
 
-* Tạo tệp tin **my-pod.yaml** chứa nội dung như sau:&#x20;
+* **Create a my-pod.yaml** file containing the following content:
+
+Copy
 
 ```
 apiVersion: v1
@@ -71,9 +79,11 @@ spec:
     region: hcm03
 ```
 
-Trong ví dụ này, Pod `my-pod` chỉ được lên lịch trên các Node có lable `disktype: ssd` và `region: hcm03`.
+In this example, the Pod `my-pod`is scheduled only on Nodes with label `disktype: ssd`and `region: hcm03`.
 
-* Triển khai Pod trên Cluster của bạn:
+* Deploy Pod on your Cluster:
+
+Copy
 
 ```
 kubectl -f apply my-pod.yaml
@@ -81,65 +91,73 @@ kubectl -f apply my-pod.yaml
 
 ***
 
-### Taint
+#### Taint <a href="#taint" id="taint"></a>
 
-Taint là một tính năng quan trọng trong Kubernetes, đóng vai trò như một cơ chế để đánh dấu các Node và kiểm soát việc lên lịch Pod trên những Node đó. Khác với Label thông thường, Taint được sử dụng để chỉ định các thuộc tính đặc biệt của Node và thực thi các hành động cụ thể khi Pod không đáp ứng các điều kiện được xác định bởi Taint. Cụ thể:&#x20;
+Taint is an important feature in Kubernetes, serving as a mechanism to tag Nodes and control Pod scheduling on those Nodes. Different from regular Label, Taint is used to specify special properties of Node and execute specific actions when Pod does not meet the conditions defined by Taint. Specifically:
 
-&#x20;Cụ thể:
+Specifically:
 
-* **Mỗi Taint bao gồm:**
-  * Key (khoá) là một chuỗi ký tự dùng để xác định tên của taint.&#x20;
-  * Value (giá trị) là một chuỗi ký tự tùy chọn, cung cấp thông tin chi tiết về taint.
-  * Effect:&#x20;
-    * **NoSchedule:** Ngăn Pod không có Toleration tương ứng được lên lịch trên Node.
-    * **NoExecute:** Cho phép Pod được lên lịch trên Node nhưng Pod sẽ không được thực thi.
-    * **PreferNoSchedule:** Kubernetes sẽ cố gắng ưu tiên không lên lịch Pod lên Node có Taint này.
-* **Key và value phải tuân theo các quy tắc đặt tên:** Key và value không được chứa dấu khoảng trắng, ký tự đặc biệt ngoài (-, \_,.).
-* **Toleration:** Để Pod có thể được lên lịch và chạy trên Node có Taint, Pod cần có Toleration tương ứng. Toleration được khai báo trong PodSpec bằng cách sử dụng `tolerations` field. Ví dụ:&#x20;
+* **Each Taint includes:**
+  * Key is a string of characters used to identify the name of the taint.
+  * Value is an optional character string that provides detailed information about the taint.
+  * Effect:
+    * **NoSchedule:** Prevent Pods from having a corresponding Toleration scheduled on the Node.
+    * **NoExecute:** Allows the Pod to be scheduled on the Node but the Pod will not be executed.
+    * **PreferNoSchedule:** Kubernetes will try to prioritize not scheduling the Pod to the Node with this Taint.
+* **Keys and values ​​must follow the naming rules:** Keys and values ​​must not contain spaces or special characters other than (-, \_,.).
+* **Toleration:** In order for a Pod to be scheduled and run on a Node with Taint, the Pod needs to have a corresponding Toleration. Toleration is declared in PodSpec using `tolerations`field. For example:
+
+Copy
 
 ```
 tolerations: - key: node.role.kubernetes.io/master effect: NoSchedule
 ```
 
-* **Mối quan hệ giữa Taint và Toleration:** Khi Kubernetes lên lịch Pod, Kubernetes sẽ so khớp các Taint của Node với các Toleration của Pod. Pod chỉ được lên lịch trên Node nếu có Toleration cho tất cả các Taint của Node đó.
+* **Relationship between Taint and Toleration:** When Kubernetes schedules a Pod, Kubernetes matches the Node's Taints with the Pod's Tolerations. Pods are only scheduled on a Node if there is Toleration for all Taints of that Node.
 
-**Ví dụ:**
+**For example:**
 
-* node.role.kubernetes.io/master:NoSchedule - ngăn các Pod thông thường được chạy trên Node này.
+* node.role.kubernetes.io/master:NoSchedule - prevents regular Pods from being run on this Node.
 
-### **Tạo Taint**
+#### **Create Taints** <a href="#tao-taint" id="tao-taint"></a>
 
-Để tạo Taint cho một Node Group, bạn hãy thực hiện theo hướng dẫn sau:&#x20;
+To create a Taint for a Node Group, follow these instructions:
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
 
-**Bước 2:** Tại Cluster đã khởi tạo trước đó, hãy chọn **Create a Node group.**
+**Step 2:** At the previously created Cluster, select **Create a Node group.**
 
-**Bước 3:** Tại màn hình khởi tạo Node Group, chúng tôi đã thiết lập thông tin cho Node Group của bạn. Bạn có thể giữ các giá trị mặc định này hoặc điều chỉnh các thông số mong muốn cho Node Group của bạn. Tại mục **Node Group Metadata Setting,** bạn cần:
+**Step 3:** At the Node Group initialization screen, we have set up information for your Node Group. You can keep these default values ​​or adjust the desired parameters for your Node Group. In the **Node Group Metadata Setting section,** you need:
 
-* Nhập key cho taint của bạn. Key phải bắt đầu và kết thúc bằng chữ hoặc số và bao gồm các ký tự a-z, A-Z, 0-9, -, \_, . tối đa 253 ký tự. Ngoài ra bạn có thể nhập key là một DNS subdomain ví dụ:  [example.com/my-app](http://example.com/my-app)
-* Nhập value cho key tương ứng này.
-* Chọn 1 trong 3 loại effect: **NoSchedule, NoExecute, PreferNoSchedule.**
+* Enter the key for your taint. The key must begin and end with letters or numbers and include the characters az, AZ, 0-9, -, \_, . Maximum 253 characters. Alternatively, you can enter the key as a DNS subdomain, for example: [example.com/my-app](http://example.com/my-app)
+* Enter the value for this corresponding key.
+* Choose 1 of 3 effect types: **NoSchedule, NoExecute, PreferNoSchedule.**
 
-**Bước 5:** Chọn **Create Node Group.** Hãy chờ vài phút để chúng tôi khởi tạo Node Group của bạn, trạng thái của Node Group lúc này là **Creating**.
+**Step 5:** Select **Create Node Group.** Please wait a few minutes for us to initialize your Node Group. The status of the Node Group is currently **Creating** .
 
-**Bước 6:** Khi trạng thái **Node Group** là **Active**, bạn có thể xem thông tin Node Group bằng cách chọn vào **Node Group Name** tại màn hình chính.
+**Step 6: When the Node Group** status is **Active** , you can view Node Group information by selecting **Node Group Name** on the main screen.
 
-Hoặc bạn có thể tạo Taint thông qua kubectl theo câu lệnh:
+Or you can create Taint through kubectl with the command:
+
+Copy
 
 ```
 kubectl taint node my-node node.role.kubernetes.io/master:NoSchedule.
 ```
 
-**Ví dụ sử dụng Taint:**
+**Taint usage example:**
 
-Giả sử bạn có một Node `master` được sử dụng cho mục đích quản lý và bạn muốn ngăn các Pod thông thường được chạy trên Node này. Bạn có thể sử dụng Taint như sau:
+Suppose you have a Node `master`used for management purposes and you want to prevent regular Pods from being run on this Node. You can use Taint as follows:
+
+Copy
 
 ```
 kubectl taint node my-master node.role.kubernetes.io/master:NoSchedule
 ```
 
-Để Pod có thể chạy trên Node `master`, Pod cần có Toleration tương ứng:
+In order for Pod to run on Node `master`, the Pod needs to have the corresponding Toleration:
+
+Copy
 
 ```
 apiVersion: v1

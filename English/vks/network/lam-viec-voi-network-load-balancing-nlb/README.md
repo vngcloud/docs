@@ -1,12 +1,12 @@
 # Working with Network load balancing (NLB)
 
-### NLB là gì? <a href="#workingwithnetworkloadbalancing-nlb-nlblagi" id="workingwithnetworkloadbalancing-nlb-nlblagi"></a>
+#### What is NLB? <a href="#workingwithnetworkloadbalancing-nlb-nlblagi" id="workingwithnetworkloadbalancing-nlb-nlblagi"></a>
 
-* **Network Load Balancer (NLB)** là một bộ cân bằng tải được cung cấp bởi VNGCloud giúp phân phối lưu lượng truy cập mạng đến nhiều máy chủ back-end (backend servers) trong một nhóm máy tính (instance group). NLB hoạt động ở layer 4 của mô hình OSI, giúp cân bằng tải dựa trên địa chỉ IP và cổng TCP/UDP. Để biết thêm thông tin chi tiết về NLB, vui lòng tham khảo tại \[How it works (NLB)]
+* **Network Load Balancer (NLB)** is a load balancer provided by VNGCloud that helps distribute network traffic to multiple back-end servers in a computer group (instance group). NLB operates at layer 4 of the OSI model, providing load balancing based on IP addresses and TCP/UDP ports. For more detailed information about NLB, please refer to \[How it works (NLB)]
 
-#### Mô hình triển khai <a href="#workingwithnetworkloadbalancing-nlb-mohinhtrienkhai" id="workingwithnetworkloadbalancing-nlb-mohinhtrienkhai"></a>
+**Model deployment**
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FVYBtJjEoUNgDi1f5J9vL%252Fimage.png%3Falt%3Dmedia%26token%3D554a2d62-320e-48d1-a884-3c7cce589071&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=d7f786ac&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-* **vngcloud-controller-manager**: VNG Cloud Controller Manager là một bộ điều khiển chạy trên các cụm Kubernetes được triển khai trên VNG Cloud. Nó chịu trách nhiệm cho việc quản lý các tài nguyên VNG Cloud cho các cụm Kubernetes, bao gồm:
-  * **Tạo và quản lý Network Load Balancer (NLB)** cho các Service Kubernetes có service type = Load Balancer.
+* **vngcloud-controller-manager** : VNG Cloud Controller Manager is a controller that runs on Kubernetes clusters deployed on VNG Cloud. It is responsible for managing VNG Cloud resources for Kubernetes clusters, including:
+  * **Create and manage Network Load Balancer (NLB)** for Kubernetes Services with service type = Load Balancer.

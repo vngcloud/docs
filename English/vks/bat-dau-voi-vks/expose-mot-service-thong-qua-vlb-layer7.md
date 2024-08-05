@@ -1,54 +1,54 @@
 # Expose a service through vLB Layer7
 
-### Prerequisites  <a href="#khoitaomotpublicclustervoipublicnodegroup-dieukiencan" id="khoitaomotpublicclustervoipublicnodegroup-dieukiencan"></a>
+## Prerequisites <a href="#khoitaomotpublicclustervoipublicnodegroup-dieukiencan" id="khoitaomotpublicclustervoipublicnodegroup-dieukiencan"></a>
 
 To be able to initialize a Cluster and Deploy a Workload, you need:
 
-* Have at least 1 VPC and 1 Subnet in ACTIVE state. If you do not have any VPC, Subnet, please initialize VPC, Subnet according to the instructions here.&#x20;
-* Have at least 1 SSH key in ACTIVE state. If you do not have any SSH key, please initialize SSH key according to the instructions here.&#x20;
+* Have at least 1 VPC and 1 Subnet in ACTIVE state. If you do not have any VPC, Subnet, please initialize VPC, Subnet according to the instructions here.
+* Have at least 1 SSH key in ACTIVE state. If you do not have any SSH key, please initialize SSH key according to the instructions here.
 * Have installed and configured kubectl on your device. Please refer here if you do not know how to install and use kuberctl. In addition, you should not use a kubectl version that is too old, we recommend that you use a kubectl version that is no more than one version different from the cluster version.
 
 ***
 
-### Khởi tạo Cluster <a href="#exposemotservicethongquavlblayer7-khoitaocluster" id="exposemotservicethongquavlblayer7-khoitaocluster"></a>
+## Initialize Cluster <a href="#exposemotservicethongquavlblayer7-khoitaocluster" id="exposemotservicethongquavlblayer7-khoitaocluster"></a>
 
-**Cluster trong Kubernetes** là một tập hợp gồm một hoặc nhiều máy ảo (VM) được kết nối lại với nhau để chạy các ứng dụng được đóng gói dạng container. Cluster cung cấp một môi trường thống nhất để triển khai, quản lý và vận hành các container trên quy mô lớn.
+**A cluster in Kubernetes** is a collection of one or more virtual machines (VMs) connected together to run containerized applications. Cluster provides a unified environment to deploy, manage, and operate containers at scale.
 
-Để khởi tạo một Cluster, hãy làm theo các bước bên dưới:
+To initialize a Cluster, follow the steps below:
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
 
-**Bước 2:** Tại màn hình **Overview**, chọn **Activate.**
+**Step 2: At the Overview** screen , select **Activate.**
 
-**Bước 3:** Chờ đợi tới khi chúng tôi khởi tạo thành công tài khoản VKS của bạn. Sau khi Activate thành công, bạn hãy chọn **Create a Cluster**
+**Step 3:** Wait until we successfully create your VKS account. After Activate successfully, select **Create a Cluster**
 
-**Bước 4:** Tại màn hình khởi tạo Cluster, chúng tôi đã thiết lập thông tin cho Cluster và một **Default Node Group** cho bạn, bạn có thể giữ các giá trị mặc định này hoặc điều chỉnh các thông số mong muốn cho Cluster và Node Group của bạn tại Cluster Configuration, Default Node Group Configuration, Plugin. **Khi bạn chọn bật option**![](https://docs-admin.vngcloud.vn/download/thumbnails/73762059/image2024-4-16\_14-18-22.png?version=1\&modificationDate=1713252320000\&api=v2) **, mặc định chúng tôi sẽ cài sẵn plugin này vào Cluster của bạn.**
+**Step 4:** At the Cluster initialization screen, we have set up information for the Cluster and a **Default Node Group** for you. You can keep these default values ​​or adjust the desired parameters for the Cluster and Node Group at Cluster Configuration, Default Node Group Configuration, Plugin. **When you choose to enable option**![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F73762059%2Fimage2024-4-16\_14-18-22.png%3Fversion%3D1%26modificationDate%3D1713252320000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=fc29a090\&sv=1) **, by default we will pre-install this plugin into your Cluster.**
 
-**Bước 5:** Chọn **Create Kubernetes cluster.** Hãy chờ vài phút để chúng tôi khởi tạo Cluster của bạn, trạng thái của Cluster lúc này là **Creating**.
+**Step 5:** Select **Create Kubernetes cluster.** Please wait a few minutes for us to initialize your Cluster, the Cluster's status is now **Creating** .
 
-**Bước 6:** Khi trạng thái **Cluster** là **Active**, bạn có thể xem thông tin Cluster, thông tin Node Group bằng cách chọn vào Cluster Name tại cột **Name**.
+**Step 6: When the Cluster** status is **Active** , you can view Cluster information and Node Group information by selecting Cluster Name in the **Name** column .
 
 ***
 
-### Kết nối và kiểm tra thông tin Cluster vừa tạo <a href="#exposemotservicethongquavlblayer7-ketnoivakiemtrathongtinclustervuatao" id="exposemotservicethongquavlblayer7-ketnoivakiemtrathongtinclustervuatao"></a>
+## Connect and check the newly created Cluster information <a href="#exposemotservicethongquavlblayer7-ketnoivakiemtrathongtinclustervuatao" id="exposemotservicethongquavlblayer7-ketnoivakiemtrathongtinclustervuatao"></a>
 
-Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiện kết nối và kiểm tra thông tin Cluster vừa tạo theo các bước:
+After the Cluster is successfully initialized, you can connect and check the newly created Cluster information by following these steps:
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
-**Bước 2:** Danh sách Cluster được hiển thị, chọn biểu tượng ![](https://docs-admin.vngcloud.vn/download/thumbnails/73762059/image2024-4-4\_14-37-11.png?version=1\&modificationDate=1712222544000\&api=v2) và chọn **Download Config File** để thực hiện tải xuống file kubeconfig. File này sẽ giúp bạn có toàn quyền truy cập vào Cluster của bạn.
+**Step 2:** The Cluster list is displayed, select the icon![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F73762059%2Fimage2024-4-4\_14-37-11.png%3Fversion%3D1%26modificationDate%3D1712222544000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=87ec4908\&sv=1)and select **Download Config File** to download the kubeconfig file. This file will give you full access to your Cluster.
 
-**Bước 3**: Đổi tên file này thành config và lưu nó vào thư mục **\~/.kube/config**
+**Step 3** : Rename this file to config and save it to the **\~/.kube/config directory**
 
-**Bước 4:** Thực hiện kiểm tra Cluster thông qua lệnh:
+**Step 4:** Perform Cluster check via command:
 
-* Chạy câu lệnh sau đây để kiểm tra **node**
+* Run the following command to test **node**
 
 ```
 kubectl get nodes
 ```
 
-* Nếu kết quả trả về như bên dưới tức là bạn Cluster của bạn được khởi tạo thành công với 3 node như bên dưới.
+* If the results are returned as below, it means your Cluster was successfully initialized with 3 nodes as below.
 
 ```
 NAME                                            STATUS     ROLES    AGE   VERSION
@@ -59,69 +59,53 @@ ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.
 
 ***
 
-### Khởi tạo Service Account và cài đặt VNGCloud Ingress Controller <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
+#### Create Service Account and install VNGCloud Ingress Controller <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
 
-{% hint style="info" %}
-Chú ý:
+Attention:
 
-Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa bật option **Enable vLB Native Integration Driver**, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt VNGCloud Ingress Controller theo hướng dẫn bên dưới. Nếu bạn đã bật option **Enable vLB Native Integration Driver**, thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt VNGCloud Ingress Controller và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
-{% endhint %}
+When you initialize the Cluster according to the instructions above, if you have not enabled the **Enable vLB Native Integration Driver** option , by default we will not pre-install this plugin into your Cluster. You need to manually create Service Account and install VNGCloud Ingress Controller according to the instructions below. If you have enabled the **Enable vLB Native Integration Driver** option , then we have pre-installed this plugin into your Cluster, skip the Service Account Initialization step, install VNGCloud Ingress Controller and continue following the instructions from Deploy once. Workload.
 
 <details>
 
-<summary>Khởi tạo Service Account và cài đặt VNGCloud Ingress Controller</summary>
+<summary>Create Service Account and install VNGCloud Ingress Controller</summary>
 
-**Khởi tạo Service Account**
+*
+  *
+  *
+  *
 
-* Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **vLBFullAccess**, **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts) và thực hiện theo các bước sau:
-  * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
-  * Tìm và chọn **Policy:** **vLBFullAccess và Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do VNG Cloud tạo ra, bạn không thể xóa các policy này.
-  * Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
+<!---->
 
-**Cài đặt VNGCloud Ingress Controller**
-
-* Cài đặt Helm phiên bản từ 3.0 trở lên. Tham khảo tại [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) để biết cách cài đặt.
-* Thêm repo này vào cluster của bạn qua lệnh:
+*
+*
 
 ```
-helm repo add vks-helm-charts https://vngcloud.github.io/vks-helm-charts
-helm repo update
 ```
 
-* Thay thế thông tin ClientID, Client Secret và ClusterID của cụm K8S của bạn và tiếp tục chạy:
+*
 
 ```
-helm install vngcloud-ingress-controller vks-helm-charts/vngcloud-ingress-controller \
-  --namespace kube-system \
-  --set cloudConfig.global.clientID= <Lấy ClientID của Service Account được tạo trên IAM theo hướng dẫn bên trên> \
-  --set cloudConfig.global.clientSecret= <Lấy ClientSecret của Service Account được tạo trên IAM theo hướng dẫn bên trên>\
-  --set cluster.clusterID= <Lấy Cluster ID của cluster mà bạn đã khởi tạo trước đó>
 ```
 
-* Sau khi việc cài đặt hoàn tất, thực hiện kiểm tra trạng thái của vngcloud-ingress-controller pods:
+*
 
 ```
-kubectl get pods -n kube-system | grep vngcloud-ingress-controller
 ```
 
-Ví dụ như ảnh bên dưới là bạn đã cài đặt thành công vngcloud-controller-manager:
-
 ```
-NAME                                      READY   STATUS    RESTARTS   AGE
-vngcloud-ingress-controller-0             1/1     Running   0          12s
 ```
 
 </details>
 
 ***
 
-### Deploy một Workload <a href="#exposemotservicethongquavlblayer7-deploymotworkload" id="exposemotservicethongquavlblayer7-deploymotworkload"></a>
+## Deploy a Workload <a href="#exposemotservicethongquavlblayer7-deploymotworkload" id="exposemotservicethongquavlblayer7-deploymotworkload"></a>
 
-Sau đây là hướng dẫn để bạn deploy service nginx trên Kubernetes.
+The following is a guide for you to deploy the nginx service on Kubernetes.
 
-**Bước 1**: **Tạo Deployment cho Nginx app.**
+**Step 1** : **Create Deployment for Nginx app.**
 
-* Tạo file **nginx-service-lb7.yaml** với nội dung sau:
+* Create **nginx-service-lb7.yaml** file with the following content:
 
 ```
 apiVersion: apps/v1
@@ -158,7 +142,7 @@ spec:
       targetPort: 80
 ```
 
-* Deploy Deployment này bằng lệch:
+* Deploy This deployment equals:
 
 ```
 kubectl apply -f nginx-service-lb7.yaml
@@ -166,15 +150,15 @@ kubectl apply -f nginx-service-lb7.yaml
 
 ***
 
-**Bước 2: Kiểm tra thông tin Deployment, Service vừa deploy**
+**Step 2: Check the Deployment and Service information just deployed**
 
-* Chạy câu lệnh sau đây để kiểm tra **Deployment**
+* Run the following command to test **Deployment**
 
 ```
 kubectl get svc,deploy,pod -owide
 ```
 
-* Nếu kết quả trả về như bên dưới tức là bạn đã deploy Deployment thành công.
+* If the results are returned as below, it means you have deployed Deployment successfully.
 
 ```
 NAME                    TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE     SELECTOR
@@ -190,9 +174,9 @@ pod/nginx-app-7f45b65946-6wlgw   1/1     Running   0          2m49s   172.16.54.
 
 ***
 
-### **Tạo Ingress Resource**
+#### **Create Ingress Resource** <a href="#tao-ingress-resource" id="tao-ingress-resource"></a>
 
-* Tạo file **nginx-ingress.yaml** với nội dung sau:
+* Create **nginx-ingress.yaml** file with the following content:
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -218,20 +202,17 @@ spec:
                   number: 80               
 ```
 
-* Chạy câu lệnh sau đây để triển khai Ingress
+* Run the following command to deploy Ingress
 
 ```
 kubectl apply -f nginx-ingress.yaml
 ```
 
-Lúc này, hệ thống vLB sẽ tự động tạo một LB tương ứng với Ingress resource bên trên, ví dụ:
+At this time, the vLB system will automatically create a LB corresponding to the Ingress resource above, for example:
 
-<figure><img src="../../.gitbook/assets/image%20(2)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1).png" alt=""><figcaption></figcaption></figure>
+Attention:
 
-{% hint style="info" %}
-Chú ý:
-
-* Hiện tại Ingress chỉ hỗ trợ duy nhất TLS port 443 và là điểm kết thúc cho TLS (TLS termination). TLS Secret phải chứa các trường với tên key là tls.crt và tls.key, đây chính là certificate và private key để sử dụng cho TLS. Nếu bạn muốn sử dụng Certificate cho một host, hãy thực hiện tải lên Certificate theo hướng dẫn tại \[Upload a certificate] và sử dụng chúng như một annotation. Ví dụ:
+* Currently Ingress only supports TLS port 443 and is the termination point for TLS (TLS termination). TLS Secret must contain fields with key names tls.crt and tls.key, which are the certificate and private key to use for TLS. If you want to use a Certificate for a host, please upload the Certificate according to the instructions at \[Upload a certificate] and use them as an annotation. For example:
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -264,26 +245,23 @@ spec:
                 port:
                   number: 80
 ```
-{% endhint %}
 
 ***
 
-**Để truy cập vào app nginx, bạn có thể sử dụng Endpoint của Load Balancer mà hệ thống đã tạo.**
+**To access the nginx app, you can use the Load Balancer Endpoint that the system has created.**
 
 ```
 http://Endpoint/
 ```
 
-Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao diện vLB. Cụ thể truy cập tại
+You can get Load Balancer Public Endpoint information at the vLB interface. Specifically, access at
 
-Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.129/](http://180.93.181.129/)
+For example, below I have successfully accessed the nginx app with the address: [http://180.93.181.129/](http://180.93.181.129/)
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252Fgit-blob-bc223a3341c276f0df9f3aa5a40d57e8b5de81be%252Fimage.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f2b921e0&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-Bạn có thể xem thêm về ALB tại [Working with Application Load Balancer (ALB](../network/lam-viec-voi-application-load-balancer-alb/)).
+You can see more about ALB at [Working with Application Load Balancer (ALB](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vks/network/lam-viec-voi-application-load-balancer-alb) ).
 
-{% hint style="info" %}
-**Chú ý:**
+**Attention:**
 
-* Việc thay đổi tên hoặc kích thước (Rename, Resize) tài nguyên Load Balancer trên vServer Portal có thể gây ra sự không tương thích với tài nguyên trên Kubernetes Cluster. Điều này có thể dẫn đến việc các tài nguyên không hoạt động trên Cluster, hoặc tài nguyên bị đồng bộ lại hoặc thông tin tài nguyên giữa vServer Portal và Cluster không khớp. Để ngăn chặn vấn đề này, hãy sử dụng `kubectl`để quản lý tài nguyên của Cluster.
-{% endhint %}
+* Changing the name or size (Rename, Resize) of the Load Balancer resource on vServer Portal can cause incompatibility with resources on the Kubernetes Cluster. This can lead to resources becoming inactive on the Cluster, or resources being resynchronized, or resource information between vServer Portal and the Cluster not matching. To prevent this problem, use `kubectl`Cluster resource management.

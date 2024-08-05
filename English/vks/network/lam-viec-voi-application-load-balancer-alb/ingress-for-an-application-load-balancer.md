@@ -1,83 +1,69 @@
 # Ingress for an Application Load Balancer
 
-Để cho tài nguyên Ingress (Ingress Yaml file) có thể hoạt động được, cluster phải có 1 VNGCloud Ingress Controller đang chạy. Không giống các loại Controller khác được chạy như là 1 phần của **kube-controller-manager**. VNGCloud Ingress Controller không được tự động khởi động cùng với cluster. Hãy làm theo hướng dẫn sau đây để cài đặt VNGCloud Ingress Controller cũng như làm việc với Ingress Yaml file.
+In order for the Ingress resource (Ingress Yaml file) to work, the cluster must have a running VNGCloud Ingress Controller. Unlike other Controller types that run as part of **kube-controller-manager** . VNGCloud Ingress Controller is not automatically started with the cluster. Please follow the instructions below to install VNGCloud Ingress Controller as well as work with Ingress Yaml files.
 
-### Chuẩn bị <a href="#ingressforanapplicationloadbalancer-chuanbi" id="ingressforanapplicationloadbalancer-chuanbi"></a>
+#### Prepare <a href="#ingressforanapplicationloadbalancer-chuanbi" id="ingressforanapplicationloadbalancer-chuanbi"></a>
 
-* Tạo một Kubernetes cluster trên VNGCloud, hoặc sử dụng một cluster đã có. Lưu ý: đảm bảo bạn đã tải xuống cluster configuration file sau khi cluster được khởi tạo thành công và truy cập vào cluster của bạn.
-* Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **vLBFullAccess**, **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts) và thực hiện theo các bước sau:
-  * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
-  * Tìm và chọn **Policy:** **vLBFullAccess và Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do VNG Cloud tạo ra, bạn không thể xóa các policy này.
-  * Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
-* Thay đổi thông tin **Security Group** để cho phép các ALB có thể kết nối được tới các Node trong Node Group của bạn. Bạn cần thay đổi chúng trên vServer Portal khi:
-  * Security Group được gắn vào **Cluster/Node Group** của bạn **khác với thông số mặc định** mà chúng tôi đã tạo.
-  * Bạn cần **thay đổi mức độ bảo mật** cho Cluster của mình hoặc bạn cần **mở thêm cổng** cho các dịch vụ cụ thể hoạt động trên Cluster. Chi tiết tham khảo tại [đây.](https://docs.vngcloud.vn/display/vServer/Security+Groups)
+* Create a Kubernetes cluster on VNGCloud, or use an existing cluster. Note: make sure you have downloaded the cluster configuration file once the cluster has been successfully initialized and accessed your cluster.
+* Create or use a **service account** created on IAM and attach policy: **vLBFullAccess** , **vServerFullAccess** . To create a service account, go here [and](https://hcm-3.console.vngcloud.vn/iam/service-accounts) follow these steps:
+  * Select " **Create a Service Account** ", enter a name for the Service Account and click **Next Step** to assign permissions to the Service Account
+  * Find and select **Policy: vLBFullAccess and Policy: vServerFullAccess** , then click " **Create a Service Account** " to create Service Account, Policy: vLBFullAccess and Policy: vServerFullAccess created by VNG Cloud, you cannot delete these policies.
+  * After successful creation, you need to save **the Client\_ID** and **Secret\_Key** of the Service Account to perform the next step.
+* Change **the Security Group** information to allow ALBs to connect to Nodes in your Node Group. You need to change them on vServer Portal when:
+  * The Security Group attached to your **Cluster/Node Group is different from the default parameters** we created.
+  * You need **to change the security level** for your Cluster or you need to **open more ports** for specific services to operate on the Cluster. Details information here [.](https://docs.vngcloud.vn/display/vServer/Security+Groups)
 
 ***
 
-### Khởi tạo Service Account và cài đặt VNGCloud Ingress Controller <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
+#### Create Service Account and install VNGCloud Ingress Controller <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
 
-{% hint style="info" %}
-Chú ý:
+Attention:
 
-Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa bật option **Enable vLB Native Integration Driver**, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt VNGCloud Ingress Controller theo hướng dẫn bên dưới. Nếu bạn đã bật option **Enable vLB Native Integration Driver**, thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt VNGCloud Ingress Controller và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
-{% endhint %}
+When you initialize the Cluster according to the instructions above, if you have not enabled the **Enable vLB Native Integration Driver** option , by default we will not pre-install this plugin into your Cluster. You need to manually create Service Account and install VNGCloud Ingress Controller according to the instructions below. If you have enabled the **Enable vLB Native Integration Driver** option , then we have pre-installed this plugin into your Cluster, skip the Service Account Initialization step, install VNGCloud Ingress Controller and continue following the instructions from Deploy once. Workload.
 
 <details>
 
-<summary>Khởi tạo Service Account và cài đặt VNGCloud Ingress Controller</summary>
+<summary>Create Service Account and install VNGCloud Ingress Controller</summary>
 
-**Khởi tạo Service Account**
+*
+  *
+  *
+  *
 
-* Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **vLBFullAccess**, **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts) và thực hiện theo các bước sau:
-  * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
-  * Tìm và chọn **Policy:** **vLBFullAccess và Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do VNG Cloud tạo ra, bạn không thể xóa các policy này.
-  * Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
+<!---->
 
-**Cài đặt VNGCloud Ingress Controller**
-
-* Cài đặt Helm phiên bản từ 3.0 trở lên. Tham khảo tại [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) để biết cách cài đặt.
-* Thêm repo này vào cluster của bạn qua lệnh:
+*
+*
 
 ```
-helm repo add vks-helm-charts https://vngcloud.github.io/vks-helm-charts
-helm repo update
 ```
 
-* Thay thế thông tin ClientID, Client Secret và ClusterID của cụm K8S của bạn và tiếp tục chạy:
+*
 
 ```
-helm install vngcloud-ingress-controller vks-helm-charts/vngcloud-ingress-controller \
-  --namespace kube-system \
-  --set cloudConfig.global.clientID= <Lấy ClientID của Service Account được tạo trên IAM theo hướng dẫn bên trên> \
-  --set cloudConfig.global.clientSecret= <Lấy ClientSecret của Service Account được tạo trên IAM theo hướng dẫn bên trên>\
-  --set cluster.clusterID= <Lấy Cluster ID của cluster mà bạn đã khởi tạo trước đó>
 ```
 
-* Sau khi việc cài đặt hoàn tất, thực hiện kiểm tra trạng thái của vngcloud-ingress-controller pods:
+*
 
 ```
-kubectl get pods -n kube-system | grep vngcloud-ingress-controller
 ```
 
-Ví dụ như ảnh bên dưới là bạn đã cài đặt thành công vngcloud-controller-manager:
-
 ```
-NAME                                      READY   STATUS    RESTARTS   AGE
-vngcloud-ingress-controller-0             1/1     Running   0          12s
 ```
 
 </details>
 
 ***
 
-### Deploy một Workload <a href="#exposemotservicethongquavlblayer7-deploymotworkload" id="exposemotservicethongquavlblayer7-deploymotworkload"></a>
+#### Deploy a Workload <a href="#exposemotservicethongquavlblayer7-deploymotworkload" id="exposemotservicethongquavlblayer7-deploymotworkload"></a>
 
-Sau đây là hướng dẫn để bạn deploy service nginx trên Kubernetes.
+The following is a guide for you to deploy the nginx service on Kubernetes.
 
-**Bước 1**: **Tạo Deployment cho Nginx app.**
+**Step 1** : **Create Deployment for Nginx app.**
 
-* Tạo file **nginx-service-lb7.yaml** với nội dung sau:
+* Create **nginx-service-lb7.yaml** file with the following content:
+
+Copy
 
 ```
 apiVersion: apps/v1
@@ -114,7 +100,9 @@ spec:
       targetPort: 80
 ```
 
-* Deploy Deployment này bằng lệch:
+* Deploy This deployment equals:
+
+Copy
 
 ```
 kubectl apply -f nginx-service-lb7.yaml
@@ -122,15 +110,19 @@ kubectl apply -f nginx-service-lb7.yaml
 
 ***
 
-**Bước 2: Kiểm tra thông tin Deployment, Service vừa deploy**
+**Step 2: Check the Deployment and Service information just deployed**
 
-* Chạy câu lệnh sau đây để kiểm tra **Deployment**
+* Run the following command to test **Deployment**
+
+Copy
 
 ```
 kubectl get svc,deploy,pod -owide
 ```
 
-* Nếu kết quả trả về như bên dưới tức là bạn đã deploy Deployment thành công.
+* If the results are returned as below, it means you have deployed Deployment successfully.
+
+Copy
 
 ```
 NAME                    TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE     SELECTOR
@@ -146,13 +138,15 @@ pod/nginx-app-7f45b65946-6wlgw   1/1     Running   0          2m49s   172.16.54.
 
 ***
 
-### **Tạo Ingress Resource**
+#### **Create Ingress Resource** <a href="#tao-ingress-resource" id="tao-ingress-resource"></a>
 
-#### **1.Nếu bạn chưa có sẵn một Application Load Balancer nào** đã khởi tạo trước đó trên hệ thống vLB. <a href="#ingressforanapplicationloadbalancer-1.neubanchuacosanmotapplicationloadbalancernaodakhoitaotruocdotr" id="ingressforanapplicationloadbalancer-1.neubanchuacosanmotapplicationloadbalancernaodakhoitaotruocdotr"></a>
+**1.If you do not have an Application Load Balancer previously created on the vLB system.**
 
-Lúc này, khi tạo một Ingress, bạn hãy để trống thông tin Load Balancer ID tại annotation [vks.vngcloud.vn/load-balancer-id](http://vks.vngcloud.vn/load-balancer-id).
+Now, when creating an Ingress, leave the Load Balancer ID information blank at the [vks.vngcloud.vn/load-balancer-id](http://vks.vngcloud.vn/load-balancer-id) annotation .
 
-* Ví dụ, giả sử bạn đã deployment một service có tên nginx-service. Lúc này, bạn có thể tạo file **nginx-ingress.yaml** như sau:
+* For example, suppose you have deployed a service named nginx-service. At this point, you can create the **nginx-ingress.yaml** file as follows:
+
+Copy
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -178,26 +172,34 @@ spec:
                   number: 80               
 ```
 
-* Chạy câu lệnh sau đây để triển khai Ingress
+* Run the following command to deploy Ingress
+
+Copy
 
 ```
 kubectl apply -f nginx-ingress.yaml
 ```
 
-Sau khi bạn đã thực hiện triển khai Ingress , Chúng tôi sẽ tự động tạo 1 ALB trên cluster của bạn. ALB này sẽ hiển thị trên vLB Portal, chi tiết truy cập tại [đây.](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb) ALB này sẽ có thông tin mặc định:
+Once you have deployed Ingress, we will automatically create an ALB on your cluster. This ALB will be displayed on vLB Portal, details can be accessed here [.](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb) This ALB will have default information:
 
-<table data-header-hidden><thead><tr><th width="177"></th><th width="120"></th><th></th></tr></thead><tbody><tr><td><strong>Thành phần</strong></td><td><strong>Số lượng</strong></td><td><strong>Thuộc tính</strong></td></tr><tr><td>ALB Package</td><td>1</td><td>VNG ALB_Small</td></tr><tr><td>Listener</td><td>2</td><td><ul><li>1 listener với protocol HTTP và port 80</li><li>1 listener với protocol HTTPS và port 443</li></ul></td></tr><tr><td>Pool</td><td>1</td><td><ul><li>1 pool default protocol HTTP và algorithm ROUND ROBIN</li></ul></td></tr><tr><td>Health Check</td><td>1</td><td><ul><li>Sử dụng TCP để health check các member.</li></ul></td></tr></tbody></table>
+| **Ingredient** | **Quantity** | **Properties**                                                                                                  |
+| -------------- | ------------ | --------------------------------------------------------------------------------------------------------------- |
+| ALB Package    | first        | VNG ALB\_Small                                                                                                  |
+| Listener       | 2            | <ul><li>1 listener with HTTP protocol and port 80</li><li>1 listener with HTTPS protocol and port 443</li></ul> |
+| Pool           | first        | <ul><li>1 pool default HTTP protocol and ROUND ROBIN algorithm</li></ul>                                        |
+| Health Check   | first        | <ul><li>Use TCP to check health of members.</li></ul>                                                           |
 
-Ví dụ:
+For example:
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FgLlYv2XB4ILWcMpCCcMV%252Fimage.png%3Falt%3Dmedia%26token%3Da554fc67-7a6d-4199-b007-72a50e777a60\&width=768\&dpr=4\&quality=100\&sign=ef4760e7\&sv=1)
 
-{% hint style="info" %}
-Chú ý:
+Attention:
 
-* Hiện tại Ingress chỉ hỗ trợ duy nhất TLS port 443 và là điểm kết thúc cho TLS (TLS termination). TLS Secret phải chứa các trường với tên key là tls.crt và tls.key, đây chính là certificate và private key để sử dụng cho TLS. Nếu bạn muốn sử dụng Certificate cho một host, hãy thực hiện tải lên Certificate theo hướng dẫn tại \[Upload a certificate] và sử dụng chúng như một annotation. Ví dụ:
+* Currently Ingress only supports TLS port 443 and is the termination point for TLS (TLS termination). TLS Secret must contain fields with key names tls.crt and tls.key, which are the certificate and private key to use for TLS. If you want to use a Certificate for a host, please upload the Certificate according to the instructions at \[Upload a certificate] and use them as an annotation. For example:
 
-```yaml
+Copy
+
+```
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -227,15 +229,16 @@ spec:
                 port:
                   number: 80
 ```
-{% endhint %}
 
 ***
 
-#### **2.Nếu bạn đã có sẵn một Application Load Balancer** đã khởi tạo trước đó trên hệ thống vLB và bạn muốn tái sử dụng ALB cho cluster của bạn. <a href="#ingressforanapplicationloadbalancer-2.neubandacosanmotapplicationloadbalancerdakhoitaotruocdotrenhet" id="ingressforanapplicationloadbalancer-2.neubandacosanmotapplicationloadbalancerdakhoitaotruocdotrenhet"></a>
+**2.If you already have a previously initialized Application Load Balancer on the vLB system and you want to reuse the ALB for your cluster.**
 
-Lúc này, khi tạo một Ingress, bạn hãy nhập thông tin Load Balancer ID vào annotation <mark style="color:red;">**vks.vngcloud.vn/load-balancer-id**</mark>. Ví dụ, trong trường hợp này tôi đã tái sử dụng ALB có ID = lb-2b9d8974-3760-4d60-8203-9671f229fb96:
+Now, when creating an Ingress, enter the Load Balancer ID information into the **vks.vngcloud.vn/load-balancer-id annotation.** For example, in this case I reused the ALB with ID = lb-2b9d8974-3760-4d60-8203-9671f229fb96:
 
-```yaml
+Copy
+
+```
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -267,29 +270,29 @@ spec:
                   number: 80
 ```
 
-* Sau khi bạn đã thực hiện tạo ingress theo hướng dẫn tại [Ingress for an Application Load Balancer](https://docs.vngcloud.vn/display/VKSVI/Ingress+for+an+Application+Load+Balancer). Nếu:
-  * ALB của bạn đang có sẵn 2 listener trong đó:
-    * 1 listener có cấu hình protocol HTTP và port 80
-    * 1 listener có cấu hình protocol HTTPS và port 443 thì chúng tôi sẽ sử dụng 2 listener này.
-  * ALB của bạn chưa có một trong hai hoặc cả 2 listener có cấu hình trên, chúng tôi sẽ tự động khởi tạo chúng.
+* After you have created ingress according to the instructions at [Ingress for an Application Load Balancer](https://docs.vngcloud.vn/display/VKSVI/Ingress+for+an+Application+Load+Balancer) . If:
+  * Your ALB currently has 2 listeners in it:
+    * 1 listener has HTTP protocol configuration and port 80
+    * If a listener has HTTPS protocol configuration and port 443, we will use these 2 listeners.
+  * Your ALB does not have either or both listeners with the above configuration, we will automatically create them.
 
-{% hint style="info" %}
-Chú ý:
+Attention:
 
-Nếu ALB của bạn có:
+If your ALB has:
 
-* 1 listener có cấu hình protocol HTTP và port 443
-* Hoặc 1 listener có cấu hình protocol HTTPS và portal 80
+* 1 listener has HTTP protocol configuration and port 443
+* Or a listener configured with HTTPS protocol and portal 80
 
-thì khi tạo Ingress sẽ xảy ra lỗi. Lúc này, bạn cần chỉnh sửa lại thông tin listener hợp lệ trên hệ thống vLB và thực hiện tạo lại ingress.
-{% endhint %}
+then when creating Ingress an error will occur. At this point, you need to edit valid listener information on the vLB system and recreate ingress.
 
 ***
 
-#### **3. Sau khi tạo ingress thành công với một ALB**, bạn có thể thực hiện <a href="#ingressforanapplicationloadbalancer-3.saukhitaoingressthanhcongvoimotalb-bancothethuchien" id="ingressforanapplicationloadbalancer-3.saukhitaoingressthanhcongvoimotalb-bancothethuchien"></a>
+**3. After successfully creating ingress with an ALB , you are good to go**
 
-* Chỉnh sửa cấu hình ingress của bạn theo hướng dẫn cụ thể tại [Configure for an Application Load Balancer](https://docs.vngcloud.vn/display/VKSVI/Configure+for+an+Application+Load+Balancer).
-* Hoặc bạn có thể thêm/ sửa/ xóa policy trong ALB của bạn bằng các chỉnh sửa các thông số sau trong tài nguyên ingress (Ingress Yaml file). Ví dụ như bên dưới, tôi đã thực hiện thiết lập **2 rule** như sau:
+* Edit your ingress configuration according to the specific instructions at [Configure for an Application Load Balancer](https://docs.vngcloud.vn/display/VKSVI/Configure+for+an+Application+Load+Balancer) .
+* Or you can add/edit/delete policies in your ALB by editing the following parameters in the ingress resource (Ingress Yaml file). For example, below, I have set up **2 rules** as follows:
+
+Copy
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -331,39 +334,47 @@ spec:
                   number: 80
 ```
 
-* Cũng giống như các tài nguyên Kubernetes khác, Ingress có cấu trúc gồm các trường thông tin như sau:
-  * **apiVersion:** Phiên bản API cho Ingress.
-  * **kind:** Loại tài nguyên, trong trường hợp này là "Ingress".
-  * **ingressClassName**: bạn cần chỉ định giá trị field này là "vngcloud" để sử dụng vngcloud-ingress-controller.
-  * **metadata:** Thông tin mô tả Ingress, bao gồm tên, annotations.
-  * **spec:** Cấu hình Ingress, bao gồm các rule route traffic theo điều kiện của các incoming request. Tài nguyên Ingress chỉ hỗ trợ các rule để điều hướng HTTP traffic.
+* Like other Kubernetes resources, Ingress has a structure including the following information fields:
+  * **apiVersion:** API version for Ingress.
+  * **kind:** Resource type, in this case "Ingress".
+  * **ingressClassName** : you need to specify this field value as "vngcloud" to use vngcloud-ingress-controller.
+  * **metadata:** Information describing Ingress, including name, annotations.
+  * **spec:** Ingress configuration, including traffic route rules according to the conditions of incoming requests. Ingress resources only support rules to direct HTTP traffic.
 
-Để biết thông tin chung về cách làm việc với tài nguyên Ingress (Ingress Yaml file), hãy xem tại \[Configure for an Application Load Balancer]).
+For general information about working with Ingress resources (Ingress Yaml files), see \[Configure for an Application Load Balancer]).
 
 ***
 
-### Kiểm tra, chỉnh sửa Ingress resource đã tạo <a href="#ingressforanapplicationloadbalancer-trienkhaiingress" id="ingressforanapplicationloadbalancer-trienkhaiingress"></a>
+#### Check and edit the created Ingress resource <a href="#ingressforanapplicationloadbalancer-trienkhaiingress" id="ingressforanapplicationloadbalancer-trienkhaiingress"></a>
 
-* Sau khi tạo ingress thành công, bạn có thể xem danh sách ingress qua lệnh
+* After successfully creating ingress, you can view the ingress list via command
+
+Copy
 
 ```
 kubectl get ingress
 ```
 
-Ví dụ, bên dưới chúng tôi đã tạo thành công nginx-ingress:
+For example, below we have successfully created nginx-ingress:
+
+Copy
 
 ```
 NAME            CLASS      HOSTS   ADDRESS          PORTS   AGE
 nginx-ingress   vngcloud   *       180.93.181.129   80      103m
 ```
 
-* Hoặc xem chi tiết một ingress bằng cách
+* Or view details of an ingress by
+
+Copy
 
 ```
 kubectl describe ingress nginx-ingress
 ```
 
-Ví dụ, bên dưới là thông tin chi tiết của nginx-ingress mà tôi đã tạo:
+For example, below are the details of nginx-ingress that I created:
+
+Copy
 
 ```
 Name:             nginx-ingress
@@ -381,7 +392,9 @@ Annotations:  vks.vngcloud.vn/load-balancer-id: lb-6cdea8fd-4589-410e-933f-c3bc4
 Events:       <none>
 ```
 
-*   Để cập nhật nginx-ingress hiện có, ta có thể thực hiện bằng cách cập nhật Ingress Yaml file như sau:
+*   To update an existing nginx-ingress, we can do so by updating the Ingress Yaml file as follows:
+
+    Copy
 
     ```
     kubectl edit ingress nginx-ingress
@@ -389,14 +402,16 @@ Events:       <none>
 
 ***
 
-**Để truy cập vào app nginx, bạn có thể sử dụng Endpoint của Load Balancer mà hệ thống đã tạo.**
+**To access the nginx app, you can use the Load Balancer Endpoint that the system has created.**
+
+Copy
 
 ```
 http://Endpoint/
 ```
 
-Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao diện vLB. Cụ thể truy cập tại
+You can get Load Balancer Public Endpoint information at the vLB interface. Specifically, access at
 
-Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.129/](http://180.93.181.129/)
+For example, below I have successfully accessed the nginx app with the address: [http://180.93.181.129/](http://180.93.181.129/)
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FA0m2HnZCZDt45tSSBcU1%252Fimage.png%3Falt%3Dmedia%26token%3D8531eccd-bbe2-4ba3-a1f9-2e69e7258118&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9e883d90&#x26;sv=1" alt=""><figcaption></figcaption></figure>

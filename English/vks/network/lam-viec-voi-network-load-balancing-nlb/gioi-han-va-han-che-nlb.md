@@ -1,14 +1,14 @@
-# Giới hạn và hạn chế NLB
+# NLB Limitation
 
-## Giới hạn <a href="#restrictionsandlimitationsnlb-gioihan" id="restrictionsandlimitationsnlb-gioihan"></a>
+### Limit <a href="#restrictionsandlimitationsnlb-gioihan" id="restrictionsandlimitationsnlb-gioihan"></a>
 
-Một vài lưu ý về giới hạn của việc intergrate a NLB vào một cluster:
+A few notes about the limitations of integrating an NLB into a cluster:
 
-* Một NLB có thể được sử dụng chung cho nhiều cluster nhưng phải đảm bảo các cluster này có chung **Subnet**.
-* Một NLB có thể bao gồm nhiều listener, nhiều pool, nhiều policy. Các giới hạn về số lượng listener, số lượng pool, số lượng policy vui lòng tham khảo tại [Hạn mức tài nguyên](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802094).
+* One NLB can be used for many clusters but must ensure these clusters have the same **Subnet** .
+* An NLB can include many listeners, many pools, and many policies. For limits on the number of listeners, number of pools, number of policies, please refer to [Resource Limits](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802094) .
 
 ***
 
-## Hạn chế <a href="#restrictionsandlimitationsnlb-hanche" id="restrictionsandlimitationsnlb-hanche"></a>
+### Limit <a href="#restrictionsandlimitationsnlb-hanche" id="restrictionsandlimitationsnlb-hanche"></a>
 
-* Việc thay đổi tên hoặc kích thước (Rename, Resize) tài nguyên Load Balancer trên vServer Portal có thể gây ra sự không tương thích với tài nguyên trên Kubernetes Cluster. Điều này có thể dẫn đến việc các tài nguyên không hoạt động trên Cluster, hoặc tài nguyên bị đồng bộ lại hoặc thông tin tài nguyên giữa vServer Portal và Cluster không khớp. Để ngăn chặn vấn đề này, hãy sử dụng `kubectl`để quản lý tài nguyên của Cluster.
+* Changing the name or size (Rename, Resize) of the Load Balancer resource on vServer Portal can cause incompatibility with resources on the Kubernetes Cluster. This can lead to resources becoming inactive on the Cluster, or resources being resynchronized, or resource information between vServer Portal and the Cluster not matching. To prevent this problem, use `kubectl`Cluster resource management.

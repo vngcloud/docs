@@ -4,11 +4,11 @@ Preserve Source IP when using vLB Layer 4 and Nginx Ingress Controller in Kubern
 
 ***
 
-### Điều kiện cần
+## Prerequisites <a href="#dieu-kien-can" id="dieu-kien-can"></a>
 
-*   Bạn đã thực hiện khởi tạo Cluster trên hệ thống VKS theo các hướng dẫn tại [đây ](expose-mot-service-thong-qua-vlb-layer4.md)và trên cụm của bạn đã được cài đặt **VNGCloud Controller Manager** với appversion từ **v0.2.1** trở lên. Nếu appversion của bạn thấp hơn version tiêu chuẩn này, bạn có thể thực hiện upgrade theo các hướng dẫn sau:
+*   You have initialized the Cluster on the VKS system according to the instructions here [and ](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4)**VNGCloud Controller Manager** has been installed on your cluster with appversion from **v0.2.1** or higher. If your appversion is lower than this standard version, you can perform the upgrade according to the following instructions:
 
-    * Đầu tiên, bạn cần lấy release name của **vngcloud-controller-manager** đã cài trên cụm của bạn:
+    * First, you need to get the release name of **vngcloud-controller-manager** installed on your cluster:
 
     ```
     $ helm list -A | grep vngcloud-controller-manager
@@ -16,13 +16,13 @@ Preserve Source IP when using vLB Layer 4 and Nginx Ingress Controller in Kubern
     vngcloud-controller-manager-1716448250          kube-system     10              2024-06-10 17:00:17.866548653 +0700 +07 deployed        vngcloud-controller-manager-0.2.3       v0.2.0
     ```
 
-    * Sau đó, bạn hãy thực hiện upgrade lên version mới nhất thông qua lệnh:
+    * Then, please upgrade to the latest version via the command:
 
     ```
     helm upgrade vngcloud-controller-manager-1716448250 oci://vcr.vngcloud.vn/81-vks-public/vks-helm-charts/vngcloud-controller-manager \
       --namespace kube-system
     ```
-* Tiếp theo, bạn cần thực hiện cài đặt nginx-ingress-controller theo lệnh:
+* Next, you need to install nginx-ingress-controller with the command:
 
 ```
 helm install nginx-ingress-controller oci://ghcr.io/nginxinc/charts/nginx-ingress --namespace kube-system
@@ -30,15 +30,15 @@ helm install nginx-ingress-controller oci://ghcr.io/nginxinc/charts/nginx-ingres
 
 ***
 
-### **Cấu hình ConfigMap cho Nginx Ingress Controller**
+## **ConfigMap for Nginx Ingress Controller** <a href="#cau-hinh-configmap-cho-nginx-ingress-controller" id="cau-hinh-configmap-cho-nginx-ingress-controller"></a>
 
-* Thêm vào ConfigMap của Nginx Ingress Controller các thiết lập để kích hoạt proxy protocol thông qua lệnh:
+* Add to Nginx Ingress Controller's ConfigMap the settings to enable proxy protocol via command:
 
 ```
 kubectl edit cm -n kube-system nginx-ingress-controller
 ```
 
-* Đoạn mã bạn cần thêm như sau:
+* The code you need to add is as follows:
 
 ```
 data:
@@ -50,21 +50,25 @@ data:
 
 ***
 
-### Cấu hình vLB Layer 4
+## Configure vLB Layer 4 <a href="#cau-hinh-vlb-layer-4" id="cau-hinh-vlb-layer-4"></a>
 
-* Tiếp theo, bạn cần cấu hình vLB Layer4 cho phép sử dụng proxy protocol cho service Load Balancer Nginx qua lệnh:
+* Next, you need to configure vLB Layer4 to allow the use of proxy protocol for the Load Balancer Nginx service via the command:
+
+Copy
 
 ```
 kubectl annotate service -n kube-system nginx-ingress-controller-controller vks.vngcloud.vn/enable-proxy-protocol="http,https"
 ```
 
-* Cuối cùng, bạn hãy thực hiện kiểm tra NLB trên vLB Portal cho tới khi các Load Balancer này được ACTIVE với đầy đủ listener, pool.
+* Finally, please perform NLB testing on vLB Portal until these Load Balancers are ACTIVE with full listener and pool.
 
 ***
 
-### Cách sử dụng
+## Using <a href="#cach-su-dung" id="cach-su-dung"></a>
 
-* Giả sử, bạn có một service prometheus-node-exporter với port 9100 trong namespace default, bạn có thể apply yaml sau để có thể truy cập thông qua NLB
+* Suppose, you have a service prometheus-node-exporter with port 9100 in the default namespace, you can apply the following yaml to make it accessible via NLB
+
+Copy
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -87,10 +91,5 @@ spec:
         pathType: Exact
 ```
 
-* Sau đó tôi sử dụng IP 103.245.252.75 để curl vào host kkk.example.com như sau:
-
-<figure><img src="../../.gitbook/assets/image%20(383).png" alt=""><figcaption></figcaption></figure>
-
-* Kết quả log ghi nhận được đã có thông tin Client IP này như hình:
-
-<figure><img src="../../.gitbook/assets/image%20(384).png" alt=""><figcaption></figcaption></figure>
+* Then I use IP 103.245.252.75 to curl to host kkk.example.com as follows:
+* The recorded log result has this Client IP information as shown:

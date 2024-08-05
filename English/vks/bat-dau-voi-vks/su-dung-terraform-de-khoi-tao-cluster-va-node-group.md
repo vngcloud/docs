@@ -1,31 +1,33 @@
-# Sử dụng Terraform để khởi tạo Cluster và Node Group
+# Use Terraform to create a Cluster and Node Group
 
-### Tổng quan
+## Overview <a href="#tong-quan" id="tong-quan"></a>
 
-Terraform là một công cụ mã nguồn mở được sử dụng để tự động hóa việc cung cấp và quản lý cơ sở hạ tầng như máy ảo, mạng, lưu trữ và Kubernetes.
+Terraform is an open source tool used to automate the provisioning and management of infrastructure such as virtual machines, networking, storage, and Kubernetes.
 
-Với Terraform, bạn có thể mô tả cơ sở hạ tầng mong muốn bằng mã, sau đó Terraform sẽ thực hiện các thao tác cần thiết để tạo hoặc cập nhật cơ sở hạ tầng cho phù hợp với mô tả của bạn.
+With Terraform, you can describe your desired infrastructure in code, then Terraform will perform the necessary operations to create or update the infrastructure to match your description.
 
 ***
 
-### **Khởi tạo Cluster và Node Group**
+## **Initialize Cluster and Node Group** <a href="#khoi-tao-cluster-va-node-group" id="khoi-tao-cluster-va-node-group"></a>
 
-Để khởi tạo một Cluster Kubernetes bằng Terraform, bạn cần thực hiện các bước sau:
+To initialize a Kubernetes Cluster using Terraform, you need to perform the following steps:
 
-1. **Truy cập IAM Portal** tại [đây](https://iam.console.vngcloud.vn/), thực hiện tạo Service Account với quyền hạn **VKS Full Access**. Cụ thể, tại trang IAM, bạn có thể:
-   * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account.
-   * Tìm và chọn **Policy:** **VKSFullAccess** sau đó nhấn "**Create a Service Account**" để tạo Service Account, **Policy: VKSFullAccess** do VNG Cloud tạo ra, bạn không thể xóa các policy này.
-   * Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
-2. **Truy cập VKS Portal** tại [đây](https://vks.console.vngcloud.vn/overview)**, thực hiện Activate** dịch vụ VKS ở tab **Overview.** Hãy chờ đợi tới khi chúng tôi khởi tạo thành công tài khoản VKS của bạn.
-3. **Cài đặt Terraform:**
-   * Tải xuống và cài đặt Terraform cho hệ điều hành của bạn từ [https://developer.hashicorp.com/terraform/install](https://developer.hashicorp.com/terraform/install).
-4. **Khởi tạo cấu hình Terraform:**
-   * Tạo tệp `variable.tf` và khai báo thông tin Service Account trong file này.
-   * Tạo tệp `main.tf` và định nghĩa các tài nguyên Kubernetes Cluster mà bạn muốn tạo.
+1. **Access the IAM Portal** here , create a Service Account with [VKS ](https://iam.console.vngcloud.vn/)**Full Access** authority . Specifically, at the IAM site, you can:
+   * Select " **Create a Service Account** ", enter a name for the Service Account and click **Next Step** to assign permissions to the Service Account.
+   * Find and select **Policy: VKSFullAccess** then click " **Create a Service Account** " to create a Service Account, **Policy: VKSFullAccess** is created by VNG Cloud, you cannot delete these policies.
+   * After successful creation, you need to save **the Client\_ID** and **Secret\_Key** of the Service Account to perform the next step.
+2. **Access the VKS Portal** here **, Activate** [the](https://vks.console.vngcloud.vn/overview) VKS service on the **Overview tab.** Please wait until we successfully create your VKS account.
+3. **Install Terraform:**
+   * Download and install Terraform for your operating system from [https://developer.hashicorp.com/terraform/install](https://developer.hashicorp.com/terraform/install) .
+4. **Initialize Terraform configuration:**
+   * Create a file `variable.tf`and declare Service Account information in this file.
+   * Create a file `main.tf`and define the Kubernetes Cluster resources you want to create.
 
-Ví dụ:
+For example:
 
-* Tệp `variable.tf:`bạn cần thay thế Client ID và Client Secret đã khởi tạo ở bước 1 ở file này.
+* The file `variable.tf:`you need to replace the Client ID and Client Secret created in step 1 in this file.
+
+Copy
 
 ```
 variable "client_id" {
@@ -38,26 +40,28 @@ variable "client_secret" {
 }
 ```
 
-* Tệp `main.tf:` trong ví dụ này tôi thực hiện khởi tạo một Cluster và một Node Group có thông tin sau:
-  * Tên Cluster: my-cluster
+* The file `main.tf:`in this example I initialize a Cluster and a Node Group has the following information:
+  * Cluster name: my-cluster
   * K8S Version: v1.28.8
-  * Mode: Public Cluster và Public Node Group
-  * Tên Node Group: my-nodegroup
-  * Bật AutoScaling: scale từ 0 tới 5 nodes
+  * Mode: Public Cluster and Public Node Group
+  * Node Group name: my-nodegroup
+  * Turn on AutoScaling: scale from 0 to 5 nodes
 
-{% hint style="info" %}
-**Chú ý:**
+**Attention:**
 
-* Trong file main.tf, để khởi tạo một cluster với một node group, bạn bắt buộc cần truyền vào các thông số sau: &#x20;
+* In the main.tf file, to initialize a cluster with a node group, you must pass in the following parameters:
 
-```hcl
+Copy
+
+```
   vpc_id    = "net-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
   subnet_id = "sub-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
   ssh_key_id= "ssh-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
 ```
-{% endhint %}
 
-* File `main.tf` mẫu giúp bạn tạo Cluster và Node Group theo cấu hình bên trên:
+* The sample file `main.tf`helps you create Cluster and Node Group according to the configuration above:
+
+Copy
 
 ```
 terraform {
@@ -120,12 +124,12 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
 }
 ```
 
-5. **Khởi tạo Terraform:**
+1. **Initialize Terraform:**
 
-* Chạy lệnh `terraform init.`Lệnh này sẽ tải xuống các plugin cần thiết và khởi tạo trạng thái Terraform.
+* Run the command `terraform init.`This command will download the necessary plugins and initialize the Terraform state.
 
-6. **Áp dụng cấu hình Terraform:**
+1. **Apply Terraform configuration:**
 
-* Chạy lệnh `terraform apply.` Lệnh này sẽ tạo Cluster Kubernetes theo mô tả trong tệp `main.tf`.
+* Run command `terraform apply.`This command will create a Kubernetes Cluster as described in the `main.tf`.
 
-Tham khảo thêm về cách sử dụng Terraform để làm việc với VKS tại [đây](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks\_cluster).
+See more about how to use Terraform to work with VKS [here](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks\_cluster) .

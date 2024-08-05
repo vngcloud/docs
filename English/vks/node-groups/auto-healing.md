@@ -1,39 +1,37 @@
 # Auto Healing
 
-### Tổng quan
+#### Overview <a href="#tong-quan" id="tong-quan"></a>
 
-Trên hệ thống VKS, tính năng Auto Healing được apply cho mỗi Node Group và luôn luôn ở trạng thái bật. Việc bật tính năng tự phục hồi (self-healing) trong Kubernetes mang lại nhiều lợi ích quan trọng, giúp đảm bảo tính sẵn sàng và độ tin cậy cao cho ứng dụng của bạn.&#x20;
+On the VKS system, the Auto Healing feature is applied to each Node Group and is always on. Enabling self-healing in Kubernetes provides many important benefits, helping to ensure high availability and reliability for your applications.
 
-Tính năng Auto Healing có những điểm nổi bật sau:
+The Auto Healing feature has the following highlights:
 
-* **Tự động phát hiện lỗi:** Kubernetes có thể tự động phát hiện các node bị lỗi hoặc gặp sự cố thông qua việc theo dõi trạng thái của các node. Một số dấu hiệu cho thấy node bị lỗi bao gồm: node báo cáo trạng thái "NotReady", node không thể ping được, node bị lỗi phần cứng, v.v.
-* **Tự động khởi động lại node:** Khi một node bị phát hiện lỗi, Kubernetes sẽ tự động khởi động lại node. Việc khởi động lại node có thể giúp khắc phục các lỗi tạm thời và đưa node trở lại trạng thái hoạt động bình thường.
-* **Giảm thiểu sự can thiệp thủ công:** Auto Healing giúp giảm thiểu sự can thiệp thủ công của người quản trị viên hệ thống, tiết kiệm thời gian và công sức.
-* **Cải thiện hiệu quả hoạt động:** Auto Healing giúp cải thiện hiệu quả hoạt động của hệ thống bằng cách đảm bảo rằng các node luôn hoạt động bình thường.
-
-***
-
-### Cơ chế hoạt động
-
-#### Cơ chế Auto Healing: hệ thống VKS thực hiện kích hoạt auto healing khi
-
-* Node báo cáo trạng thái **NotReady** trong các lần kiểm tra liên tiếp trong khoảng thời gian **10 phút**.
-
-Nếu thỏa mãn điều kiện trên, hệ thống sẽ ngay lập tức thực hiện auto healing. Quá trình này được thực hiện theo 2 bước:
-
-* **Bước 1:** Hệ thống VKS thực hiện drain node, tức là di chuyển tất cả các pod đang chạy trên node NotReady này sang các node khác trong node group trước khi gỡ bỏ node đó khỏi node group.&#x20;
-* **Bước 2:** Hệ thống sẽ tạo lại node mới với cấu hình đã được thiết lập trên node group và thực hiện join node này vào cụm. Nếu sau khi khởi động lại, node vẫn báo cáo trạng thái "NotReady", hệ thống sẽ tiếp tục khởi động lại node cho đến khi node trở lại trạng thái hoạt động bình thường.&#x20;
-
-{% hint style="info" %}
-**Chú ý:**
-
-* Khi hệ thống thực hiện Auto Healing, việc tạo ra node mới có thể gặp lỗi nếu bạn không có đủ credit hoặc bạn đã hết quota để tạo VM trên hệ thống vServer. Lúc này, mỗi 30 phút thì hệ thống sẽ thực hiện khởi động lại node cho đến khi node trở lại trạng thái hoạt động bình thường. Để tránh gặp lỗi bên trên, bạn cần:
-  * **Đảm bảo bạn có đủ credit:** Nếu bạn là người dùng trả trước, hãy nạp thêm credit vào tài khoản của bạn.
-  * **Yêu cầu tăng quota:** Bạn có thể yêu cầu tăng quota cho tài khoản của mình tại [đây](https://hcm-3.console.vngcloud.vn/vserver/limit).
-{% endhint %}
+* **Automatic error detection:** Kubernetes can automatically detect failed or problematic nodes through monitoring the status of the nodes. Some signs that a node is failing include: node reporting "NotReady" status, node unable to be pinged, node experiencing hardware failure, etc.
+* **Automatically restart the node:** When a node detects an error, Kubernetes will automatically restart the node. Restarting the node can help fix temporary errors and return the node to normal operation.
+* **Minimize manual intervention:** Auto Healing helps minimize manual intervention by system administrators, saving time and effort.
+* **Improved performance:** Auto Healing helps improve system performance by ensuring that nodes always operate normally.
 
 ***
 
-### Bật Auto Healing
+#### Mechanism of action <a href="#co-che-hoat-dong" id="co-che-hoat-dong"></a>
 
-Hiện tại, tính năng Auto Healing được apply cho mỗi Node Group và luôn luôn ở trạng thái **bật**. Bạn không cần thao tác bật thủ công khi khởi tạo Cluster cũng như Node Group.
+**Auto Healing mechanism: VKS system activates auto healing when**
+
+* The Node reports the **NotReady** status on consecutive checks at **10 minute** intervals .
+
+If the above conditions are met, the system will immediately perform auto healing. This process is performed in 2 steps:
+
+* **Step 1:** The VKS system drains the node, which means moving all pods running on this NotReady node to other nodes in the node group before removing that node from the node group.
+* **Step 2:** The system will recreate a new node with the configuration set up on the node group and join this node to the cluster. If after rebooting, the node still reports a "NotReady" status, the system will continue to reboot the node until the node returns to its normal operating state.
+
+**Attention:**
+
+* When the system performs Auto Healing, creating a new node may encounter an error if you do not have enough credits or you have run out of quota to create a VM on the vServer system. At this time, every 30 minutes the system will restart the node until the node returns to normal operating status. To avoid the error above, you need to:
+  * **Make sure you have enough credits:** If you're a prepaid user, add more credits to your account.
+  * **Request a quota increase:** You can request a quota increase for your account [here](https://hcm-3.console.vngcloud.vn/vserver/limit) .
+
+***
+
+#### Turn on Auto Healing <a href="#bat-auto-healing" id="bat-auto-healing"></a>
+
+Currently, the Auto Healing feature is applied to each Node Group and is always **on** . You do not need to manually enable it when initializing the Cluster or Node Group.

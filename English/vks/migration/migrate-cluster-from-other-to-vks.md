@@ -1,12 +1,17 @@
 # Migrate Cluster from another platform to VKS
 
-Để migrate một Cluster từ hệ thống Cloud Provider hoặc On-premise tới hệ thống VKS, hãy thực hiện theo các bước theo tài liệu này.
+To migrate a Cluster from the Cloud Provider or On-premise system to the VKS system, follow the steps in this document.
 
-## Pre-required
+### Prerequisites <a href="#dieu-kien-can" id="dieu-kien-can"></a>
 
-* Do download helper bash script and grand execute permission for this file ([velero\_helper.sh](https://raw.githubusercontent.com/vngcloud/velero/main/velero\_helper.sh))
-* (Optional) Deploy some services to test the correctness of the migration. Suppose, in the source Cluster, I have deployed an nginx service as follows:
-*   ```yaml
+* **Perform download helper bash script and grand execute permission for this file** ([ velero\_helper.sh](https://raw.githubusercontent.com/vngcloud/velero/main/velero\_helper.sh) )
+*   (Optional) Deploy some services to check the correctness of the migration. Suppose, at the source Cluster, I have deployed an nginx service as follows:
+
+    * Deployment files:
+
+    Copy
+
+    ```
     apiVersion: v1
     kind: Service
     metadata:
@@ -59,80 +64,79 @@
               storage: 40Gi
     ```
 
-    ```bash
+    Copy
+
+    ```
     kubectl exec -n mynamespace -it web-0 bash
     cd /usr/share/nginx/html
     echo -e "<html>\n<head>\n  <title>MyVNGCloud</title>\n</head>\n<body>\n  <h1>Hello, MyVNGCloud</h1>\n</body>\n</html>" > index.html
     ```
-* Lúc này, khi bạn truy cập vào Public IP của Node, bạn sẽ thấy "Hello, MyVNGCloud".
+* Now, when you access Node's Public IP, you will see "Hello, MyVNGCloud".
 
 ***
 
-## Prepare target resource
+### Prepare target cluster (Prepare target resource) <a href="#chuan-bi-cluster-dich-prepare-target-resource" id="chuan-bi-cluster-dich-prepare-target-resource"></a>
 
-On the VKS system, you need to initialize a Cluster according to the instructions here. Make sure that the configuration of the destination cluster is the same as the configuration of the source cluster.
+On the VKS system, you need to initialize a Cluster according to the instructions [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/clusters) . Make sure that the destination cluster's configuration is the same as the source cluster's configuration.
 
-{% hint style="info" %}
-**Note:**
+**Attention:**
 
-For successful migration, on the destination Cluster, you need to ensure the following requirements:&#x20;
+For the migration to be successful, on the target Cluster, you need to ensure the following requirements:
 
-* Necessary resources such as number of nodes, node instance configuration,...&#x20;
-* Node labels and node taints are the same as the old cluster.&#x20;
-* Corresponding or replaced Storage Class.
-{% endhint %}
+* The amount of resources needed such as number of nodes, node instance configuration,...
+* Node labels and node taints are the same as the old cluster.
+* Corresponding or alternative Storage Class.
 
 ***
 
-## \[Optional] Migrate resources private outside cluster
+### \[Optional] Migrate private resources outside cluster <a href="#optional-migrate-resources-private-outside-cluster" id="optional-migrate-resources-private-outside-cluster"></a>
 
-Migrating private resources outside cluster is the process of moving private resources outside the source cluster to a place where the destination cluster can use them. For example, you may have private resources such as images, databases, etc. Now, before starting the migration, you need to migrate these resources yourself. For example, if you need to:
+Migrating private resources outside cluster (moving private resources outside the cluster) is the process of moving private resources outside the source Cluster to a place that the destination Cluster can use. For example, you may have private resources such as images, databases, etc. Now, before starting to migrate, you need to migrate these resources yourself. For example, if you need:
 
-* Migrate Container Images: you can migrate images to VNGCloud Container Registry via the instructions here.&#x20;
-* Migrate Databases: you can use Relational Database Service (RDS) and Object Storage Service (OBS) depending on your usage needs. After the migration is complete, remember to reconfigure the database for your applications on VKS Cluster.&#x20;
-* Migrate Storage: you can use NFS Server of vServer.
+* Migrate Container Images: you can migrate images to VNGCloud Container Registry through instructions [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vcontainer-registry) .
+* Migrate Databases: you can use **Relational Database Service (RDS)** and **Object Storage Service (OBS)** depending on your needs. After the migration is complete, remember to reconfigure the database for your applications on VKS Cluster.
+* Migrate Storage: you can use vServer's **NFS Server** .
 
-{% hint style="info" %}
-**Note:**
+**Attention:**
 
-* After you migrate resources outside the Cluster, you need to make sure the destination Cluster can connect to these migrated resources.
-{% endhint %}
+* After you migrate resources outside the Cluster, you need to ensure the target Cluster can connect to these migrated resources.
 
 ***
 
-## Install Velero tool
+### Install Velero on both source and destination clusters (Install Velero tool) <a href="#cai-dat-velero-tren-ca-2-cluster-nguon-va-cluster-dich-install-velero-tool" id="cai-dat-velero-tren-ca-2-cluster-nguon-va-cluster-dich-install-velero-tool"></a>
 
-For example, I have created a vStorage Project with the following Container information:
+After you have migrated private resources outside the cluster, you can use the migration tool to backup and restore the application on the source cluster and target cluster.
 
-* **Region:** HCM03
-* **Container:** mycontainer
-* **Endpoint:** https://hcm03.vstorage.vngcloud.vn
+* Create a **vStorage Project, Container** to receive the cluster's backup data according to instructions [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-project/khoi-tao-project) .
+* Create an S3 key corresponding to this vStorage Project according to the instructions [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-s3-key) .
 
-Initialize the corresponding S3 key for this vStorage Project as instructed [here](https://hcm03.vstorage.vngcloud.vn).
+For example, I have initialized a vStorage Project, Container with the following information: Region: HCM03, Container: mycontainer, Endpoint: [https://hcm03.vstorage.vngcloud.vn](https://hcm03.vstorage.vngcloud.vn/) .
 
-Create a **vStorage Project, Container** as the destination for backup data of the cluster as instructed [here](https://hcm03.vstorage.vngcloud.vn).
+#### On both Clusters (source and target) <a href="#tren-ca-2-cluster-source-and-target" id="tren-ca-2-cluster-source-and-target"></a>
 
-After migrating private resources outside the cluster, you can use migration tools to back up and restore applications on both the source and destination clusters.
+*   Create file **credentials-velero** with the following content:
 
-### Trên cả 2 Cluster (source and target)
+    Copy
 
-*   Tạo file **credentials-velero** với nội dung sau:
-
-    ```yaml
+    ```
     [default]
     aws_access_key_id=________________________
     aws_secret_access_key=________________________
     ```
-*   Cài đặt Velero CLI:
+*   Install Velero CLI:
 
-    ```bash
+    Copy
+
+    ```
     curl -OL https://github.com/vmware-tanzu/velero/releases/download/v1.13.2/velero-v1.13.2-linux-amd64.tar.gz
     tar -xvf velero-v1.13.2-linux-amd64.tar.gz
     cp velero-v1.13.2-linux-amd64/velero /usr/local/bin
     ```
-*   Cài đặt Velero trên 2 cụm của bạn theo lệnh:
+*   Install Velero on your 2 clusters with the command:
 
-    ```bash
+    Copy
+
+    ```
     velero install \
         --provider aws \
         --plugins velero/velero-plugin-for-aws:v1.9.0 \
@@ -145,46 +149,54 @@ After migrating private resources outside the cluster, you can use migration too
 
 ***
 
-## Cluster on Amazon Elastic Kubernetes Service (EKS)
+### For Clusters on Amazon Elastic Kubernetes Service (EKS) <a href="#doi-voi-cluster-tren-amazon-elastic-kubernetes-service-eks" id="doi-voi-cluster-tren-amazon-elastic-kubernetes-service-eks"></a>
 
-### On Source Cluster
+#### At the source Cluster <a href="#tai-cluster-nguon" id="tai-cluster-nguon"></a>
 
-*   Annotate các Persistent Volume cần backup. Mặc định velero sẽ không backup volume. Bạn có thể chạy lệnh dưới để annotate backup tất cả volume.
+*   Annotate the Persistent Volumes that need to be backed up. By default, Velero will not backup volume. You can run the command below to annotate backup of all volumes.
 
-    ```yaml
+    Copy
+
+    ```
     ./velero_helper.sh mark_volume -c
     ```
-*   Ngoài ra, bạn có thể đánh dấu không backup các resource của system bằng lệnh sau:
+*   Additionally, you can mark not to backup system resources with the following command:
 
-    ```yaml
+    Copy
+
+    ```
     ./velero_helper.sh mark_exclude -c
     ```
-*   Thực hiện backup theo cú pháp:
+*   Perform backup according to the syntax:
 
-    ```bash
+    Copy
+
+    ```
     velero backup create eks-cluster --include-namespaces "" \
       --include-cluster-resources=true \
       --wait
     ```
 
-    ```bash
+    Copy
+
+    ```
     velero backup create eks-namespace --exclude-namespaces velero \
         --wait
     ```
 
-{% hint style="info" %}
-**Note:**
+**Attention:**
 
-* Bạn phải tạo 2 phiên bản backup cho Cluster Resource và Namespace Resource.
-{% endhint %}
+* You must create 2 backup versions for Cluster Resource and Namespace Resource.
 
 ***
 
-### On Destination Cluster
+#### At the destination Cluster <a href="#tai-cluster-dich" id="tai-cluster-dich"></a>
 
-*   Tạo file mapping Storage Class giữa Cluster nguồn và đích:
+*   Create a Storage Class mapping file between source and destination Cluster:
 
-    ```yaml
+    Copy
+
+    ```
     apiVersion: v1
     kind: ConfigMap
     metadata:
@@ -197,63 +209,77 @@ After migrating private resources outside the cluster, you can use migration too
       _______old_storage_class_______: _______new_storage_class_______  # <= Adjust here
       _______old_storage_class_______: _______new_storage_class_______  # <= Adjust here
     ```
-*   Thực hiện restore theo lệnh:
+*   Perform restore according to the command:
 
-    ```bash
+    Copy
+
+    ```
     velero restore create --item-operation-timeout 1m --from-backup eks-cluster \
         --exclude-resources="MutatingWebhookConfiguration,ValidatingWebhookConfiguration"
     ```
 
-    ```bash
+    Copy
+
+    ```
     velero restore create --item-operation-timeout 1m --from-backup eks-namespace
     ```
 
-    ```bash
+    Copy
+
+    ```
     velero restore create --item-operation-timeout 1m --from-backup eks-cluster
     ```
 
 ***
 
-## Cluster on Google Kubernetes Engine (GKE)
+### For Cluster on Google Kubernetes Engine (GKE) <a href="#doi-voi-cluster-tren-google-kubernetes-engine-gke" id="doi-voi-cluster-tren-google-kubernetes-engine-gke"></a>
 
-### On Source Cluster
+#### At the source Cluster <a href="#tai-cluster-nguon-1" id="tai-cluster-nguon-1"></a>
 
-*   Annotate các Persistent Volume và lable resource cần loại trừ khỏi bản backup
+*   Annotate the Persistent Volumes and label resources that need to be excluded from the backup
 
-    ```yaml
+    Copy
+
+    ```
     ./velero_helper.sh mark_volume -c
     ```
-*   Ngoài ra, bạn có thể đánh dấu không backup các resource của system bằng lệnh sau:
+*   Additionally, you can mark not to backup system resources with the following command:
 
-    ```yaml
+    Copy
+
+    ```
     ./velero_helper.sh mark_exclude -c
     ```
-*   Thực hiện backup theo cú pháp:
+*   Perform backup according to the syntax:
 
-    ```bash
+    Copy
+
+    ```
     velero backup create gke-cluster --include-namespaces "" \
       --include-cluster-resources=true \
       --wait
     ```
 
-    ```bash
+    Copy
+
+    ```
     velero backup create gke-namespace --exclude-namespaces velero \
         --wait
     ```
 
-{% hint style="info" %}
-**Chú ý:**
+**Attention:**
 
-* Bạn phải tạo 2 phiên bản backup cho Cluster Resource và Namespace Resource.
-{% endhint %}
+* You must create 2 backup versions for Cluster Resource and Namespace Resource.
 
 ***
 
-### On Destination Cluster
+#### At the destination Cluster <a href="#tai-cluster-dich-1" id="tai-cluster-dich-1"></a>
 
-*   Tạo file mapping Storage Class giữa Cluster nguồn và đích:
+*   Create a Storage Class mapping file between source and destination Cluster:
 
-    ```yaml
+    Copy
+
+    ```
     apiVersion: v1
     kind: ConfigMap
     metadata:
@@ -266,24 +292,28 @@ After migrating private resources outside the cluster, you can use migration too
       _______old_storage_class_______: _______new_storage_class_______  # <= Adjust here
       _______old_storage_class_______: _______new_storage_class_______  # <= Adjust here
     ```
-*   Thực hiện restore theo lệnh:
+*   Perform restore according to the command:
 
-    ```bash
+    Copy
+
+    ```
     velero restore create --item-operation-timeout 1m --from-backup gke-cluster \
         --exclude-resources="MutatingWebhookConfiguration,ValidatingWebhookConfiguration"
     ```
 
-    ```bash
+    Copy
+
+    ```
     velero restore create --item-operation-timeout 1m --from-backup gke-namespace
     ```
 
-    ```bash
+    Copy
+
+    ```
     velero restore create --item-operation-timeout 1m --from-backup gke-cluster
     ```
 
-{% hint style="info" %}
-**Note:**
+**Attention:**
 
-* Google Kubernetes Engine (GKE) does not allow deploying daemonset on all nodes. However, Velero only needs to deploy daemonset on PV-mounted nodes. The solution to this problem is that you can adjust the taint and toleration of daemonset to deploy it only on PV-mounted nodes.&#x20;
-* You can change the default resource requirements cpu:500m and mem:512M during the installation step or adjust it when deploying yaml.
-{% endhint %}
+* Google Kubernetes Engine (GKE) does not allow daemonset deployment on all nodes. However, Velero only needs to deploy the daemonset on the node with the PV mount. The solution to this problem is that you can adjust the taint and toleration of the daemonset to only deploy it on the node with the PV mount.
+* You can change the default resource request `cpu:500m`and `mem:512M`in the installation step or make adjustments when deploying the yaml.

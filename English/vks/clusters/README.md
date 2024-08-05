@@ -1,103 +1,101 @@
 # Clusters
 
-**Cluster trong Kubernetes** là một tập hợp gồm một hoặc nhiều máy ảo (VM) được kết nối lại với nhau để chạy các ứng dụng được đóng gói dạng container. Cluster cung cấp một môi trường thống nhất để triển khai, quản lý và vận hành các container trên quy mô lớn.
+**A cluster in Kubernetes** is a collection of one or more virtual machines (VMs) connected together to run containerized applications. Cluster provides a unified environment to deploy, manage, and operate containers at scale.
 
-### Điều kiện cần: <a href="#clusters-dieukiencan" id="clusters-dieukiencan"></a>
+#### Prerequisites: <a href="#clusters-dieukiencan" id="clusters-dieukiencan"></a>
 
-Để có thể khởi tạo một **Cluster** và **Deploy** một **Workload**, bạn cần:
+To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
-* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md)&#x20;
-* Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
-* Đã cài đặt và cấu hình **kubectl** trên thiết bị của bạn. vui lòng tham khảo tại [đây](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) nếu bạn chưa rõ cách cài đặt và sử dụng kuberctl. Ngoài ra, bạn không nên sử dụng phiên bản kubectl quá cũ, chúng tôi khuyến cáo bạn nên sử dụng phiên bản kubectl sai lệch không quá một phiên bản với version của cluster.
+* There is at least 1 **VPC** and 1 **Subnet in ACTIVE** state . If you do not have a VPC or Subnet yet, please create a VPC and Subnet according to the instructions here [.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md)
+* There is at least 1 **SSH key in ACTIVE** state . If you do not have any SSH key, please create an SSH key according to the instructions here [.](../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
+* Installed and configured **kubectl** on your device. Please refer here [if](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) you are not sure how to install and use kuberctl. In addition, you should not use a kubectl version that is too old, we recommend that you use a kubectl version that is no more than one version different from the cluster version.
 
 ***
 
-### Khởi tạo Cluster <a href="#clusters-khoitaocluster" id="clusters-khoitaocluster"></a>
+## Initialize Cluster <a href="#clusters-khoitaocluster" id="clusters-khoitaocluster"></a>
 
-Để khởi tạo một Cluster, hãy làm theo các bước bên dưới:
+To initialize a Cluster, follow the steps below:
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
 
-**Bước 2:** Tại màn hình **Overview**, chọn **Activate.**
+**Step 2: At the Overview** screen , select **Activate.**
 
-**Bước 3:** Chờ đợi tới khi chúng tôi khởi tạo thành công tài khoản VKS của bạn. Sau khi Activate thành công, bạn hãy chọn **Create a Cluster.**
+**Step 3:** Wait until we successfully create your VKS account. After Activate successfully, select **Create a Cluster.**
 
-**Bước 4:** Tại màn hình khởi tạo Cluster, chúng tôi đã thiết lập thông tin cho Cluster và một **Default Node Group** cho bạn, bạn có thể giữ các giá trị mặc định này hoặc điều chỉnh các thông số mong muốn cho Cluster và Node Group của bạn tại Cluster Configuration, Default Node Group Configuration, Plugin.&#x20;
+**Step 4:** At the Cluster initialization screen, we have set up information for the Cluster and a **Default Node Group** for you. You can keep these default values ​​or adjust the desired parameters for the Cluster and Node Group at Cluster Configuration, Default Node Group Configuration, Plugin.
 
 * Cluster Configuration:
-  * Cluster Information:&#x20;
-    * **Cluster Name:** Tên cho Cluster của bạn. Tên chỉ có thể chứa các ký tự chữ và số (a-z, A-Z, 0-9, '\_', '-'). Độ dài dữ liệu đầu vào của bạn phải từ 5 đến 50. Tên phải là duy nhất trong Khu vực và tài khoản VNG Cloud mà bạn đang tạo Cluster.
-    * **Kubernetes Version:** Phiên bản Kubernetes sẽ sử dụng cho Cluster của bạn. Chúng tôi khuyên bạn nên chọn phiên bản mới nhất, trừ khi bạn cần phiên bản cũ hơn.
-    * **Description:** Nhập vào thông tin bạn muốn ghi chú cho Cluster nhằm tạo dấu hiệu riêng cho việc quản lý chúng dễ dàng hơn trong tương lai.
+  * Cluster Information:
+    * **Cluster Name:** Name for your Cluster. The name can only contain alphanumeric characters (az, AZ, 0-9, '\_', '-'). Your input data length must be from 5 to 50. The name must be unique within the Region and VNG Cloud account you are creating the Cluster for.
+    * **Kubernetes Version:** The version of Kubernetes that will be used for your Cluster. We recommend that you choose the latest version, unless you need an older version.
+    * **Description:** Enter the information you want to note for the Cluster to create a separate mark for easier management in the future.
   * Network Setting:
-    * **Network type, Encapsulation Mode** được tự chọn mặc định bởi hệ thống và bạn không thể thay đổi chúng, tuy nhiên bạn có thể nhập lại thông số **Calico CIDR** (lưu ý IP phải là riêng tư và có thể chọn theo các tùy chọn sau (10.0.0.0 - 10.255.0.0 / 172.16.0.0 - 172.24.0.0 / 192.168.0.0)
-    * **VPC:** Chọn một VPC hiện có đáp ứng các yêu cầu của K8S để tạo Cluster của bạn. Trước khi chọn một VPC, chúng tôi khuyên bạn nên làm quen với tất cả các yêu cầu và cân nhắc trong VPC cũng như các yêu cầu và cân nhắc về Subnet. Bạn không thể thay đổi VPC nào bạn muốn sử dụng sau khi tạo Cluster. Nếu không có VPC nào được liệt kê, trước tiên bạn cần tạo một VPC. Để biết thêm thông tin, hãy xem [**Tạo VPC**](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md)**.**
-    * **Subnet:** Theo mặc định, tất cả các mạng con khả dụng trong VPC được chỉ định trong trường trước đó sẽ được chọn ngẫu nhiên ở thứ tự đầu tiên, bạn có thể chọn lại Subnet khác, tuy nhiên chỉ được chọn duy nhất 1.
+    * **Network type, Encapsulation Mode** are selected by default by the system and you cannot change them, however you can re-enter **Calico CIDR** parameters (note that IP must be private and can be selected according to the following options ( 10.0.0.0 - 10.255.0.0 / 172.16.0.0 - 172.24.0.0 / 192.168.0.0)
+    * **VPC:** Select an existing VPC that meets K8S requirements to create your Cluster. Before choosing a VPC, we recommend that you familiarize yourself with all VPC requirements and considerations as well as Subnet requirements and considerations. You cannot change which VPC you want to use after creating the Cluster. If no VPC is listed, you need to create one first. For more information, see [**Create a VPC**](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md) **.**
+    * **Subnet:** By default, all available subnets in the VPC specified in the previous field will be randomly selected in the first order, you can choose another Subnet again, but only 1 can be selected.
 * Default Node group Configuration:
   * Node Group Information:
-    * **Node Group Name**: Tên gợi nhớ cho Node Group của bạn.&#x20;
-    * **Number of nodes:** Nhập vào số lượng Worker node cho Cluster của bạn, lưu ý số lượng node cần lớn hơn hoặc bằng 1 và nhỏ hơn hoặc bằng 100.
+    * **Node Group Name** : A memorable name for your Node Group.
+    * **Number of nodes:** Enter the number of Worker nodes for your Cluster, note that the number of nodes needs to be greater than or equal to 1 and less than or equal to 100.
   * Node Group Automation Setting:
-    * **Auto Healing:** Mặc định chúng tôi sẽ bật tính năng HA trong Cluster của bạn. Khi có node hoặc pod bị lỗi, Kubernetes sẽ tự động khởi động lại hoặc tạo mới pod để thay thế, đảm bảo ứng dụng của bạn luôn hoạt động mà không bị gián đoạn.
-    * **Auto Scaling:** Bật tính năng tự động mở rộng trong Cluster của bạn. Auto scaling giúp tự động điều chỉnh số lượng pod (đơn vị triển khai ứng dụng) dựa trên nhu cầu sử dụng thực tế, tránh tình trạng lãng phí tài nguyên khi nhu cầu thấp hoặc quá tải khi nhu cầu cao.
-      * **Minimum node**: số node tối thiểu mà Cluster cần có.
-      * **Maximum node**: số node tối đa mà Cluster có thể scale tới.
-    * Node Group upgrade stratetry: chiến lược upgrade Node Group. Khi bạn thiết lập **Node Group Upgrade Strategy** thông qua phương thức **Surge upgrade** cho một Node Group trong VKS, hệ thống VKS sẽ cập nhật tuần tự để nâng cấp các node, theo thứ tự không xác định[.](https://cloud.google.com/kubernetes-engine/docs/concepts/node-pool-upgrade-strategies.)&#x20;
-      * **Max surge:** giới hạn số lượng node được nâng cấp đồng thời (số lượng node mới (surge) có thể được tạo ra cùng một lúc). Mặc định **Max surge = 1** - chỉ nâng cấp một node tại một thời điểm. với maxUnavailable
-      * **Max unavailable**: giới hạn số lượng node không thể truy cập được trong quá trình nâng cấp (số lượng node hiện tại có thể bị gián đoạn cùng một lúc). Mặc định **Max unavailable = 0** - đảm bảo tất cả các node đều có thể truy cập được trong quá trình nâng cấp.
+    * **Auto Healing:** By default we will enable the HA feature in your Cluster. When a node or pod fails, Kubernetes will automatically restart or create a new pod to replace it, ensuring your application always operates without interruption.
+    * **Auto Scaling:** Enable auto-scaling in your Cluster. Auto scaling helps automatically adjust the number of pods (application deployment units) based on actual usage needs, avoiding wasting resources when demand is low or overloading when demand is high.
+      * **Minimum node** : minimum number of nodes that the Cluster needs to have.
+      * **Maximum node** : maximum number of nodes that the Cluster can scale to.
+    * Node Group upgrade strategy: Node Group upgrade strategy. When you set up **a Node Group Upgrade Strategy** via the **Surge upgrade** method for a Node Group in VKS, the VKS system will update sequentially to upgrade the nodes, in an unspecified order [.](https://cloud.google.com/kubernetes-engine/docs/concepts/node-pool-upgrade-strategies.)
+      * **Max surge:** limits the number of nodes that can be upgraded simultaneously (the number of new nodes (surge) that can be created at the same time). Default **Max surge = 1** - upgrade only one node at a time. with maxUnavailable
+      * **Max unavailable** : limits the number of nodes that cannot be reached during the upgrade (the number of existing nodes that can be offline at the same time). Default **Max unavailable = 0** - ensures all nodes are accessible during the upgrade.
   * Node Group Setting:
-    * **Image**: mặc định chúng tôi cung cấp 1 loại Image là Ubuntu with containerd.
-    * **Instance type**: chọn loại phiên bản cấu hình phù hợp cho Worker node theo nhu cầu sử dụng của bạn.
-  * Node Group Volume Setting: **Cấu hình Boot Volume** – Các thông số được cài đặt mặc định bởi hệ thống giúp tối ưu cho Cluster của bạn
-  * Node Group Network Setting: Bạn có thể lựa chọn **Public Node Group** hoặc **Private Node Group** tùy theo nhu cầu sử dụng Cluster của bạn.
-  * Node Group Security Setting: Bạn có thể chọn **Security Group và SSH Key** cho Node Group của bạn.
-  * Node Group Metadata Setting: Bạn có thể nhập **Metadata** tương ứng cho Node Group.
-* Plugin
-  * **Enable BlockStore Persistent Disk CSI Driver**: bật để chúng tôi tự động cài đặt CSI Controller trên Cluster của bạn.
-  * **Enable vLB Native Integration Driver**: bật để chúng tôi tự động cài đặt LB Controller trên Cluster của bạn.
+    * **Image** : By default we provide one type of Image, Ubuntu with containerd.
+    * **Instance type** : select the appropriate configuration instance type for the Worker node according to your usage needs.
+  * Node Group Volume Setting: **Boot Volume Configuration** – Parameters are set by default by the system to help optimize your Cluster
+  * Node Group Network Setting: You can choose **Public Node Group** or **Private Node Group** depending on your Cluster usage needs.
+  * Node Group Security Setting: You can choose **Security Group and SSH Key** for your Node Group.
+  * Node Group Metadata Setting: You can enter the corresponding **Metadata for the Node Group.**
+* Plugins
+  * **Enable BlockStore Persistent Disk CSI Driver** : enable us to automatically install CSI Controller on your Cluster.
+  * **Enable vLB Native Integration Driver** : enable us to automatically install LB Controller on your Cluster.
 
-**Bước 5:** Chọn **Create Kubernetes cluster.** Hãy chờ vài phút để chúng tôi khởi tạo Cluster của bạn, trạng thái của Cluster lúc này là **Creating**.
+**Step 5:** Select **Create Kubernetes cluster.** Please wait a few minutes for us to initialize your Cluster, the Cluster's status is now **Creating** .
 
-**Bước 6:** Khi trạng thái **Cluster** là **Active**, bạn có thể xem thông tin Cluster, thông tin Node Group bằng cách chọn vào Cluster Name tại cột **Name**.
-
-***
-
-### Tải xuống tệp tin Kube Config <a href="#clusters-taixuongteptinkubeconfig" id="clusters-taixuongteptinkubeconfig"></a>
-
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
-
-**Bước 2:** Tại màn hình **Overview**, chọn menu **Kubernetes Cluster.**
-
-**Bước 3:** Tại **Cluster** đã tạo thành công, chọn biểu tượng <img src="https://docs-admin.vngcloud.vn/download/thumbnails/71729305/image2024-4-16_16-41-12.png?version=1&#x26;modificationDate=1713260474000&#x26;api=v2" alt="" data-size="line">**và** chọn **Download Config File.**
-
-**Bước 4:** File config sẽ được lưu về máy, lúc này bạn có thể sử dụng Kubectl để quản lý Cluster của bạn trên thiết bị cá nhân của mình.
+**Step 6: When the Cluster** status is **Active** , you can view Cluster information and Node Group information by selecting Cluster Name in the **Name** column .
 
 ***
 
-### Xóa một Cluster <a href="#clusters-xoamotcluster" id="clusters-xoamotcluster"></a>
+#### Download the Kube Config file <a href="#clusters-taixuongteptinkubeconfig" id="clusters-taixuongteptinkubeconfig"></a>
 
-{% hint style="info" %}
-Chú ý:
+**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
 
-**Khi không còn nhu cầu sử dụng Kubernetes Cluster, bạn nên xóa các tài nguyên được liên kết với cụm đó để không phải chịu bất kỳ chi phí không cần thiết nào. Khi xoá Kubernetes Cluster các tài nguyên sau sẽ bị xóa:**
+**Step 2: At the Overview** screen , select the **Kubernetes Cluster menu.**
 
-* Control Plane Resource của Cluster.
-* Tất cả các node có trong Cluster (VM)
-* Tất cả các Pod nào đang chạy trên các node.
-* Security Group mặc định tạo cho Cluster đó.
-* Load Balancer mặc định tạo cho Cluster đó.
+**Step 3:** In the successfully created **Cluster , select the icon and** select **Download Config File.**![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F71729305%2Fimage2024-4-16\_16-41-12.png%3Fversion%3D1%26modificationDate%3D1713260474000%26api%3Dv2\&width=40\&dpr=4\&quality=100\&sign=95404067\&sv=1)
+
+**Step 4:** The config file will be saved to your computer, now you can use Kubectl to manage your Cluster on your personal device.
+
+***
+
+#### Delete a Cluster <a href="#clusters-xoamotcluster" id="clusters-xoamotcluster"></a>
+
+Attention:
+
+**When you no longer need to use a Kubernetes Cluster, you should delete the resources associated with that cluster so you don't incur any unnecessary costs. When deleting a Kubernetes Cluster the following resources will be deleted:**
+
+* Control Plane Resource of the Cluster.
+* All nodes in the Cluster (VM)
+* Which Pods are all running on the nodes.
+* The default Security Group is created for that Cluster.
+* The default Load Balancer is created for that Cluster.
 * ETCD.
 
-**Hệ thống có thể không xóa các tài nguyên sau:**
+**The system may not delete the following resources:**
 
-* Load Balancer được integrated vào Cluster bởi bạn.
-* Persistent Volume được integrated vào Cluster bởi bạn.
-{% endhint %}
+* The Load Balancer is integrated into the Cluster by you.
+* Persistent Volume is integrated into the Cluster by you.
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
 
-**Bước 2:** Tại màn hình **Overview**, chọn menu **Kubernetes Cluster.**
+**Step 2: At the Overview** screen , select the **Kubernetes Cluster menu.**
 
-**Bước 3:** Tại **Cluster** đã tạo thành công, chọn cluster muốn xóa và chọn **Delete**
+**Step 3:** In the successfully created **Cluster , select the cluster you want to delete and select Delete**
 
-**Bước 4:** Chọn **Delete** để xóa hoàn toàn Cluster của bạn.
+**Step 4:** Select **Delete** to completely delete your Cluster.
