@@ -1,18 +1,18 @@
 # Integrate with Container Storage Interface (CSI)
 
-Để integrate CSI với Kubernetes cluser, hãy làm theo các bước sau đây:
+To integrate CSI with Kubernetes cluster, follow these steps:
 
-### Chuẩn bị <a href="#integratewithcontainerstorageinterface-csi-chuanbi" id="integratewithcontainerstorageinterface-csi-chuanbi"></a>
+### Prepare <a href="#integratewithcontainerstorageinterface-csi-chuanbi" id="integratewithcontainerstorageinterface-csi-chuanbi"></a>
 
-* Tạo một Kubernetes cluster trên VNGCloud, hoặc sử dụng một cluster đã có. Lưu ý: đảm bảo bạn đã tải xuống cluster configuration file sau khi cluster được khởi tạo thành công và truy cập vào cluster của bạn.
+* Create a Kubernetes cluster on VNGCloud, or use an existing cluster. Note: make sure you have downloaded the cluster configuration file after the cluster is successfully initialized and access your cluster.
 
-### Khởi tạo Service Account và cài đặt VNGCloud BlockStorage CSI Driver <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
+### Create Service Account and install VNG Cloud Block Storage CSI Driver
 
 {% hint style="info" %}
-**Chú ý:**
+**Note:**
 
-* Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa bật option **Enable BlockStore Persistent Disk CSI Driver**, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt VNGCloud BlockStorage CSI Driver theo hướng dẫn bên dưới. Nếu bạn đã bật option **Enable BlockStore Persistent Disk CSI Driver**, thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt VNGCloud BlockStorage CSI Driver và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
-* <mark style="color:red;">**VNGCloud BlockStorage CSI Driver**</mark> <mark style="color:red;">chỉ hỗ trợ attach volume với một node (VM) duy nhất trong suốt vòng đời của volume đó. Nếu bạn có nhu cầu ReadWriteMany, bạn có thể cân nhắc sử dụng NFS CSI Driver, vì nó cho phép nhiều nodes có thể Read và Write trên cùng một volume cùng một lúc. Điều này rất hữu ích cho các ứng dụng cần chia sẻ dữ liệu giữa nhiều pods hoặc services trong Kubernetes.</mark>
+* When you initialize the Cluster according to the instructions above, if you have not enabled the Enable BlockStore Persistent Disk CSI Driver option, we will not install this plugin into your Cluster by default. You need to initialize the Service Account and install the VNGCloud BlockStorage CSI Driver yourself according to the instructions below. If you have enabled the Enable BlockStore Persistent Disk CSI Driver option, we have already installed this plugin into your Cluster, skip the Initialize Service Account step, install the VNGCloud BlockStorage CSI Driver and continue following the instructions from Deploy a Workload.&#x20;
+* VNGCloud BlockStorage CSI Driver only supports attaching volumes to a single node (VM) throughout the life of that volume. If you have ReadWriteMany needs, you can consider using the NFS CSI Driver, as it allows multiple nodes to Read and Write on the same volume at the same time. This is very useful for applications that need to share data between multiple pods or services in Kubernetes.
 {% endhint %}
 
 <details>
@@ -62,7 +62,7 @@
 
 ***
 
-### Deploy một Workload <a href="#exposemotservicethongquavlblayer7-deploymotworkload" id="exposemotservicethongquavlblayer7-deploymotworkload"></a>
+### Deploy a Workload <a href="#exposemotservicethongquavlblayer7-deploymotworkload" id="exposemotservicethongquavlblayer7-deploymotworkload"></a>
 
 Sau đây là hướng dẫn để bạn deploy service nginx trên Kubernetes.
 

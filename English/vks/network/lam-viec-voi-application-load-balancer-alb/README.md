@@ -1,15 +1,11 @@
-# Làm việc với Application Load Balancer (ALB)
+# Working with Application Load Balancer (ALB)
 
-#### Tổng quan <a href="#workingwithapplicationloadbalancer-alb-tongquan" id="workingwithapplicationloadbalancer-alb-tongquan"></a>
+#### Overview <a href="#workingwithapplicationloadbalancer-alb-tongquan" id="workingwithapplicationloadbalancer-alb-tongquan"></a>
 
-#### ALB là gì? <a href="#workingwithapplicationloadbalancer-alb-alblagi" id="workingwithapplicationloadbalancer-alb-alblagi"></a>
+#### What is ALB? <a href="#workingwithapplicationloadbalancer-alb-alblagi" id="workingwithapplicationloadbalancer-alb-alblagi"></a>
 
-* Application Load Balancer (ALB) là một công cụ trong hạ tầng mạng và máy chủ được sử dụng để phân phối lưu lượng mạng đến nhiều máy chủ hoặc máy ảo để cải thiện hiệu suất và khả năng sẵn sàng của các ứng dụng. ALB hoạt động ở tầng ứng dụng, cho phép phân phối lưu lượng dựa trên nhiều yếu tố như loại yêu cầu, trạng thái của máy chủ và thuật toán phân phối tải. ALB cung cấp khả năng route nâng cao, cho phép điều hướng lưu lượng dựa trên các Host hay Path Header. Nó cũng hỗ trợ tính năng duy trì phiên, giúp duy trì liên tục phiên của người dùng đối với cùng một máy chủ. Điều này rất hữu ích cho các ứng dụng yêu cầu sự nhất quán trong quá trình tương tác của người dùng. Để biết thêm thông tin chi tiết về ALB, vui lòng tham khảo tại \[How it works (ALB)]
+* Application Load Balancer (ALB) is a tool in network and server infrastructure used to distribute network traffic to multiple servers or virtual machines to improve the performance and availability of applications. ALB operates at the application layer, allowing traffic distribution based on many factors such as request type, server state, and load distribution algorithm. ALB provides advanced routing capabilities, allowing traffic to be directed based on Host or Path Header. It also supports session persistence, which helps maintain user sessions to the same server. This is useful for applications that require consistency in user interactions. For more information about ALB, please refer to \[How it works (ALB)]
 
-#### Mô hình triển khai <a href="#workingwithapplicationloadbalancer-alb-mohinhtrienkhai" id="workingwithapplicationloadbalancer-alb-mohinhtrienkhai"></a>
+In addition to the basic components of a K8S cluster and an ALB that you already know, in this model we use:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-**Ngoài các thành phần cơ bản của một cụm K8S và một ALB mà bạn đã biết, trong mô hình này chúng tôi sử dụng:**
-
-* **Ingress**: là tài nguyên trong Kubernetes được cấu hình để cho các Services có thể truy cập được từ bên ngoài k8s cluster thông qua URL, ngoài ra cũng có thể cân bằng tải traffic, hỗ trợ kết nối SSL/TLS và cung cấp virtual hosting dựa theo tên. Một Ingress không expose tùy tiện các protocol ngoài HTTP và HTTPS. **Ingress** đóng vai trò như một điểm vào duy nhất cho các request HTTP và HTTPS từ bên ngoài cluster đến các service bên trong. Việc route traffic được kiểm soát bởi các quy tắc (rule) được định nghĩa trong tài nguyên Ingress (Ingress Yaml File). Một Ingress được quản lý bởi **VNGCloud Ingress Controller:** là một ứng dụng chạy trong cluster và quản lý các tài nguyên Ingress dựa trên Ingress Yaml File do khách hàng định nghĩa
+* Ingress: is a resource in Kubernetes that is configured to make Services accessible from outside the k8s cluster via URL, and can also load balance traffic, support SSL/TLS connections and provide virtual hosting based on names. An Ingress does not arbitrarily expose protocols other than HTTP and HTTPS. Ingress acts as a single entry point for HTTP and HTTPS requests from outside the cluster to internal services. Traffic routing is controlled by rules defined in the Ingress resource (Ingress Yaml File). An Ingress is managed by VNGCloud Ingress Controller: is an application that runs in the cluster and manages Ingress resources based on the Ingress Yaml File defined by the customer

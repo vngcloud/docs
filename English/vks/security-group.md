@@ -1,10 +1,10 @@
 # Security Group
 
-Security Group đóng vai trò như một firewall giúp bạn kiểm soát lưu lượng truy cập ra vào máy chủ (VM). Trên hệ thống VKS, để đảm bảo cluster hoạt động an toàn và hiệu quả, các Security Group mặc định được thiết lập để cho phép các truy cập cần thiết cho hoạt động nội bộ của cluster. Việc tự động tạo Security Group giúp đơn giản hóa quá trình triển khai cluster và đảm bảo rằng cluster được bảo vệ ngay từ đầu. Cụ thể, khi bạn thực hiện khởi tạo một Cluser, chúng tôi sẽ tự động khởi tạo một vài Security Group với các thông số như sau:&#x20;
+Security Group acts as a firewall to help you control traffic in and out of the server (VM). On the VKS system, to ensure the cluster operates safely and efficiently, default Security Groups are set up to allow access necessary for the internal operation of the cluster. Automatically creating Security Groups simplifies the cluster deployment process and ensures that the cluster is protected from the start. Specifically, when you initialize a Cluser, we will automatically initialize a few Security Groups with the following parameters:
 
-### Security group mặc định được tạo tự động cho tất cả Cluster
+### Default Security group is automatically created for all Clusters&#x20;
 
-Mỗi Cluster được tạo ra trong hệ thống VKS, chúng tôi sẽ tự động tạo một Security Group. Security group này sẽ bao gồm:
+For each Cluster created in the VKS system, we will automatically create a Security Group. This Security group will include:
 
 * Inbound:
 
@@ -14,9 +14,9 @@ Mỗi Cluster được tạo ra trong hệ thống VKS, chúng tôi sẽ tự đ
 
 <table><thead><tr><th width="114">Protocol</th><th width="131">Ether type</th><th width="126">Port range</th><th width="125">Destination</th><th>Ý nghĩa</th></tr></thead><tbody><tr><td>ANY</td><td>IPv4</td><td>0-65535</td><td>0.0.0.0/0</td><td>Rule mặc định của tất cả Security group</td></tr><tr><td>ANY</td><td>IPv6</td><td>0-65535</td><td>::/0</td><td>Rule mặc định của tất cả Security group</td></tr></tbody></table>
 
-### Security group được tạo tự động bởi VNGCLOUD Controller Manager&#x20;
+### Security group is automatically created by VNGCLOUD Controller Manager&#x20;
 
-Khi bạn sử dụng VNGCloud Controller Manager để tích hợp Network Load Balancer với Cluster trên hệ thống VKS, chúng tôi sẽ tự động tạo một Security Group. Security group này sẽ bao gồm:
+When you use VNGCloud Controller Manager to integrate Network Load Balancer with Cluster on VKS system, we will automatically create a Security Group. This Security group will include:
 
 * Inbound:
 
@@ -26,9 +26,9 @@ Khi bạn sử dụng VNGCloud Controller Manager để tích hợp Network Load
 
 <table><thead><tr><th width="113">Protocol</th><th width="115">Ether type</th><th width="126">Port range</th><th width="127">Destination</th><th>Ý nghĩa</th></tr></thead><tbody><tr><td>ANY</td><td>IPv4</td><td>0-65535</td><td>0.0.0.0/0</td><td>Rule mặc định của tất cả Security group</td></tr><tr><td>ANY</td><td>IPv6</td><td>0-65535</td><td>::/0</td><td>Rule mặc định của tất cả Security group</td></tr></tbody></table>
 
-### Security group được tạo tự động bởi VNGCLOUD Ingress Controller
+### **Security group is automatically created by VNGCLOUD Ingress Controller**&#x20;
 
-Khi bạn sử dụng VNGCloud Ingress Controller để tích hợp Application Load Balancer với Cluster trên hệ thống VKS, chúng tôi sẽ tự động tạo một Security Group. Security group này sẽ bao gồm:
+When you use VNGCloud Ingress Controller to integrate Application Load Balancer with Cluster on VKS system, we will automatically create a Security Group. This Security group will include:
 
 * Inbound:
 
@@ -39,7 +39,7 @@ Khi bạn sử dụng VNGCloud Ingress Controller để tích hợp Application 
 <table><thead><tr><th width="105">Protocol</th><th width="109">Ether type</th><th width="122">Port range</th><th width="162">Destination</th><th>Ý nghĩa</th></tr></thead><tbody><tr><td>ANY</td><td>IPv4</td><td>0-65535</td><td>0.0.0.0/0</td><td>Rule mặc định của tất cả Security group</td></tr><tr><td>ANY</td><td>IPv6</td><td>0-65535</td><td>::/0</td><td>Rule mặc định của tất cả Security group</td></tr></tbody></table>
 
 {% hint style="info" %}
-**Chú ý:**
+**Note:**
 
-* Các Security Group mặc định được thiết lập để đáp ứng các nhu cầu bảo mật cơ bản của cluster. Nếu bạn sửa hoặc xóa các Security Group được tạo sẵn cho cluster, có thể dẫn đến các vấn đề về kết nối và truy cập giữa các node trong cluster hoặc cluster có thể không hoạt động chính xác hoặc thậm chí không thể khởi động được. Để đảm bảo tính ổn định và bảo mật của cluster, hệ thống sẽ tự động reset các Security Group về cài đặt mặc định sau mỗi khoảng thời gian cố định.
+* The default Security Groups are set up to meet the basic security needs of the cluster. If you modify or delete the Security Groups that are created for the cluster, it may lead to connectivity and access problems between nodes in the cluster or the cluster may not function properly or even fail to start. To ensure the stability and security of the cluster, the system will automatically reset the Security Groups to the default settings after a fixed period of time.
 {% endhint %}

@@ -8,17 +8,26 @@ Migration from one cluster to another is the process of transferring data, appli
 
 ### How it works?
 
-Cụ thể:
+**Step 1: Prepare the Target Cluster**
 
-* **Bước 1:** Chuẩn bị cluster đích (Prepard target resource): trên hệ thống VKS, bạn cần thực hiện khởi tạo một Cluster theo hướng dẫn tại [đây](../clusters/). Đảm bảo rằng cấu hình của cluster đích giống với cấu hình của cluster nguồn.
-* **Bước 2 \[Optional]**: Nếu cluster của bạn có các tài nguyên riêng tư như image, database, storage...Lúc này, trước khi bắt đầu migrate, bạn cần **chủ động tự thực hiện** việc migrate các tài nguyên này.
-* **Bước 3**: Cài đặt Velero trên cả 2 cluster nguồn và cluster đích(Install Velero tool): sau khi bạn đã thực hiện migrate các tài nguyên private ngoài cluster, bạn có thể sử dụng công cụ migration để sao lưu (backup) và khôi phục (restore) application trên cluster nguồn và cluster đích.
-* **Bước 4**: Sao lưu (Backup): Để sao lưu tài nguyên, hãy sử dụng công cụ Velero để tạo đối tượng sao lưu trong cluster nguồn. Velero sẽ thực hiện truy vấn, đóng gói dữ liệu và tải chúng lên một S3 Compatible Object Storage.
-* **Bước 5**: Khôi phục (Restore): Trong quá trình khôi phục tại cluster đích, Velero sẽ thực hiện tải dữ liệu sao lưu xuống cụm mới và triển khai lại tài nguyên dựa trên tệp JSON.
-* **Bước 6 \[Optional]**: Update resource config: Sau khi tài nguyên của cluster đích được triển khai đúng cách, bạn có thể thực hiện **switch traffic** cho dịch vụ của bạn. Sau khi xác nhận rằng tất cả các dịch vụ đều chạy bình thường, bạn có thể thực hiện xóa cluster nguồn.
+On the VKS system, you need to create a new Cluster following the instructions here. Ensure that the configuration of the target cluster matches the source cluster.
 
-Bên dưới là hướng dẫn chi tiết các trường hợp phổ biến khi bạn thực hiện migrate workload từ một Cluster sang một Cluster khác, bạn có thể tham khảo và làm theo hướng dẫn tại:
+#### Step 2 \[Optional]: Migrate Private Resources
 
-* [Migrate Cluster from VKS to VKS](migrate-cluster-from-vks-to-vks.md)
-* [Migrate Cluster from vContainer to VKS](migration-cluster-from-vcontainer-to-vks.md)
-* [Migrate Cluster from another platform to VKS](migrate-cluster-from-other-to-vks.md)
+If your cluster has private resources such as images, databases, or storage, you need to manually migrate these resources before starting the migration process.
+
+#### Step 3: Install Velero on Both Clusters
+
+After migrating any private resources outside the cluster, you can use the Velero migration tool to backup and restore applications between the source and target clusters.
+
+#### Step 4: Backup
+
+To back up resources, use Velero to create a backup object in the source cluster. Velero will query, package, and upload the data to an S3-compatible object storage.
+
+#### Step 5: Restore
+
+During the restore process on the target cluster, Velero will download the backup data to the new cluster and redeploy the resources based on the JSON file.
+
+#### Step 6 \[Optional]: Update Resource Config
+
+Once the resources on the target cluster are deployed successfully, you can switch the traffic for your services. After confirming that all services are running normally, you can delete the source cluster.
