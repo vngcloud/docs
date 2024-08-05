@@ -1,2 +1,0 @@
-# Khôi phục MDS Instance
-
