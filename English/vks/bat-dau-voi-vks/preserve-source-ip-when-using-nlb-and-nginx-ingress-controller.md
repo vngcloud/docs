@@ -1,6 +1,6 @@
-# Preserve Source IP khi sử dụng vLB Layer4 và Nginx Ingress Controller
+# Preserve Source IP when using NLB and Nginx Ingress Controller
 
-**Preserve Source IP** khi sử dụng vLB Layer 4 và Nginx Ingress Controller trong Kubernetes là quá trình duy trì địa chỉ IP gốc của client khi traffic được chuyển tiếp qua load balancer và vào cụm Kubernetes. Điều này rất quan trọng trong một số trường hợp khi bạn cần các thông tin chi tiết về kết nối của client, chẳng hạn như địa chỉ IP gốc và port gốc của client, để có thể thực hiện các quyết định xử lý traffic hoặc logging chính xác. Bên dưới là hướng dẫn cụ thể của chúng tôi để giúp bạn có thể thực hiện usecase này.
+Preserve Source IP when using vLB Layer 4 and Nginx Ingress Controller in Kubernetes is the process of maintaining the original IP address of the client as traffic is forwarded through the load balancer and into the Kubernetes cluster. This is important in some cases where you need detailed information about the client connection, such as the original IP address and the original port of the client, to be able to make accurate traffic handling or logging decisions. Below is our specific guide to help you implement this usecase.
 
 ***
 
@@ -89,8 +89,8 @@ spec:
 
 * Sau đó tôi sử dụng IP 103.245.252.75 để curl vào host kkk.example.com như sau:
 
-<figure><img src="../../.gitbook/assets/image (383).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image%20(383).png" alt=""><figcaption></figcaption></figure>
 
-* Kết quả log ghi nhận được đã có thông tin Client IP này như hình:&#x20;
+* Kết quả log ghi nhận được đã có thông tin Client IP này như hình:
 
-<figure><img src="../../.gitbook/assets/image (384).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image%20(384).png" alt=""><figcaption></figcaption></figure>

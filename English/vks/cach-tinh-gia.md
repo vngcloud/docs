@@ -1,13 +1,15 @@
-# Cách tính giá
+# Charging Fee
 
-Đối với VKS chi phí **Managed Control Plane là hoàn toàn miễn phí.** Bạn chỉ cần chi trả cho các resource khác mà thực tế bạn sử dụng bao gồm:
+For VKS, the cost of Managed Control Plane is completely free. You only need to pay for other resources that you actually use, including: All nodes in the Cluster (VM).&#x20;
 
-* Tất cả các node có trong Cluster (VM). Chi tiết cách tính giá của vServer bạn có thể tham khảo thêm tại [đây](../vserver/compute-hcm03-1a/cach-tinh-gia-vserver.md).
-* Load Balancer được integrated vào Cluster của bạn. Chi tiết cách tính giá của Load Balancer bạn có thể tham khảo thêm tại [đây](../vserver/compute-hcm03-1a/cach-tinh-gia-vserver.md).
-* Persistent Volume, Snapshot được integrated vào Cluster của bạn. Chi tiết cách tính giá của Volume bạn có thể tham khảo tại [đây](../vserver/compute-hcm03-1a/cach-tinh-gia-vserver.md).
+For details on how to calculate the price of vServer, you can refer to here.&#x20;
 
-{% hint style="info" %}
-**Chú ý:**
+Load Balancer is integrated into your Cluster.&#x20;
 
-* Để đảm bảo Cluster của bạn hoạt động ổn định, chúng tôi đã tự động thiết lập Auto-renew cho tất cả các resource trên Cluster của bạn. Trước ngày hết hạn của các resource, hãy đảm bảo số dư credit của bạn đủ để hệ thống có thể thực hiện Auto-renew thành công.
-{% endhint %}
+For details on how to calculate the price of Load Balancer, you can refer to here.&#x20;
+
+Persistent Volume, Snapshot is integrated into your Cluster.&#x20;
+
+For details on how to calculate the price of Volume, you can refer to here.&#x20;
+
+Note: To ensure your Cluster operates stably, we have automatically set up Auto-renew for all resources on your Cluster. Before the expiration date of the resources, make sure your credit balance is sufficient for the system to perform Auto-renew successfully.

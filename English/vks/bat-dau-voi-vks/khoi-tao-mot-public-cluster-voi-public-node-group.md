@@ -1,36 +1,30 @@
 # Create a Public Cluster with Public Node Group
 
-### Điều kiện cần <a href="#khoitaomotpublicclustervoipublicnodegroup-dieukiencan" id="khoitaomotpublicclustervoipublicnodegroup-dieukiencan"></a>
+### Prerequisites  <a href="#khoitaomotpublicclustervoipublicnodegroup-dieukiencan" id="khoitaomotpublicclustervoipublicnodegroup-dieukiencan"></a>
 
-Để có thể khởi tạo một **Cluster** và **Deploy** một **Workload**, bạn cần:
+To be able to initialize a Cluster and Deploy a Workload, you need:
 
-* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md)
-* Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
-* Đã cài đặt và cấu hình **kubectl** trên thiết bị của bạn. vui lòng tham khảo tại [đây](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) nếu bạn chưa rõ cách cài đặt và sử dụng kuberctl. Ngoài ra, bạn không nên sử dụng phiên bản kubectl quá cũ, chúng tôi khuyến cáo bạn nên sử dụng phiên bản kubectl sai lệch không quá một phiên bản với version của cluster.
-
-***
-
-### Khởi tạo Cluster <a href="#khoitaomotpublicclustervoipublicnodegroup-khoitaocluster" id="khoitaomotpublicclustervoipublicnodegroup-khoitaocluster"></a>
-
-**Cluster trong Kubernetes** là một tập hợp gồm một hoặc nhiều máy ảo (VM) được kết nối lại với nhau để chạy các ứng dụng được đóng gói dạng container. Cluster cung cấp một môi trường thống nhất để triển khai, quản lý và vận hành các container trên quy mô lớn.
-
-Để khởi tạo một Cluster, hãy làm theo các bước bên dưới:
-
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
-
-**Bước 2:** Tại màn hình **Overview**, chọn **Activate.**
-
-**Bước 3:** Chờ đợi tới khi chúng tôi khởi tạo thành công tài khoản VKS của bạn. Sau khi Activate thành công, bạn hãy chọn **Create a Cluster**
-
-**Bước 4:** Tại màn hình khởi tạo Cluster, chúng tôi đã thiết lập thông tin cho Cluster và một **Default Node Group** cho bạn, bạn có thể giữ các giá trị mặc định này hoặc điều chỉnh các thông số mong muốn cho Cluster và Node Group của bạn tại Cluster Configuration, Default Node Group Configuration, Plugin. **Mặc định chúng tôi sẽ khởi tạo cho bạn một Public Cluster với Public Node Group.**
-
-**Bước 5:** Chọn **Create Kubernetes cluster.** Hãy chờ vài phút để chúng tôi khởi tạo Cluster của bạn, trạng thái của Cluster lúc này là **Creating**.
-
-**Bước 6:** Khi trạng thái **Cluster** là **Active**, bạn có thể xem thông tin Cluster, thông tin Node Group bằng cách chọn vào Cluster Name tại cột **Name**.
+* Have at least 1 VPC and 1 Subnet in ACTIVE state. If you do not have any VPC, Subnet, please initialize VPC, Subnet according to the instructions here.&#x20;
+* Have at least 1 SSH key in ACTIVE state. If you do not have any SSH key, please initialize SSH key according to the instructions here.&#x20;
+* Have installed and configured kubectl on your device. Please refer here if you do not know how to install and use kuberctl. In addition, you should not use a kubectl version that is too old, we recommend that you use a kubectl version that is no more than one version different from the cluster version.
 
 ***
 
-### Kết nối và kiểm tra thông tin Cluster vừa tạo <a href="#khoitaomotpublicclustervoipublicnodegroup-ketnoivakiemtrathongtinclustervuatao" id="khoitaomotpublicclustervoipublicnodegroup-ketnoivakiemtrathongtinclustervuatao"></a>
+### Create a Cluster <a href="#khoitaomotpublicclustervoipublicnodegroup-khoitaocluster" id="khoitaomotpublicclustervoipublicnodegroup-khoitaocluster"></a>
+
+A cluster in Kubernetes is a collection of one or more virtual machines (VMs) connected together to run containerized applications. Clusters provide a unified environment for deploying, managing, and operating containers at scale.
+
+To initialize a Cluster, follow the steps below:\
+Step 1: Go to https://vks.console.vngcloud.vn/overview\
+Step 2: On the Overview screen, select Activate.\
+Step 3: Wait until we successfully initialize your VKS account. After successful Activation, select Create a Cluster\
+Step 4: On the Cluster initialization screen, we have set up the information for the Cluster and a Default Node Group for you; you can keep these default values or adjust the desired parameters for your Cluster and Node Group in Cluster Configuration, Default Node Group Configuration, Plugin. By default, we will initialize a Public Cluster with a Public Node Group for you.\
+Step 5: Select Create Kubernetes cluster. Please wait a few minutes for us to initialize your Cluster; the status of the Cluster at this time is Creating.\
+Step 6: When the Cluster status is Active, you can view the Cluster information, Node Group information by clicking on the Cluster Name in the Name column.
+
+***
+
+### Connect to a Cluster <a href="#khoitaomotpublicclustervoipublicnodegroup-ketnoivakiemtrathongtinclustervuatao" id="khoitaomotpublicclustervoipublicnodegroup-ketnoivakiemtrathongtinclustervuatao"></a>
 
 Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiện kết nối và kiểm tra thông tin Cluster vừa tạo theo các bước:
 
