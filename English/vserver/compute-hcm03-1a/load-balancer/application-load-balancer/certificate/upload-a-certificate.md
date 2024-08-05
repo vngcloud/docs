@@ -18,11 +18,11 @@ The Certificate Manager supports uploading and managing two types of certificate
 
        * **Certificate Content:** Paste your server certificate domain (usually with the \*.crt extension) in PEM format.
 
-       ![](<../../../../../.gitbook/assets/image (5) (1).png>)
+       ![](<../../../../../.gitbook/assets/image (5) (1) (1).png>)
 
        * **Private Key:** Paste the private key of the certificate (usually with the \*.key extension) in PEM format.
 
-       &#x20;![](<../../../../../.gitbook/assets/image (1) (1) (1).png>)
+       &#x20;![](<../../../../../.gitbook/assets/image (1) (1) (1) (1).png>)
 
        * **Certificate Chain:** Paste the certificate chain, including the server certificate and any intermediate certificates (if applicable), in PEM format.
          *   **Important:** Ensure the chain is in the correct order:
@@ -47,6 +47,6 @@ The Certificate Manager supports uploading and managing two types of certificate
 
        * **Certificate Content:** Paste your CA certificate (usually with the \*.crt extension) in PEM format.&#x20;
 
-       ![](<../../../../../.gitbook/assets/image (2) (1) (1).png>)
+       ![](<../../../../../.gitbook/assets/image (2) (1) (1) (1).png>)
    * **Expiration:** The expiration date of the certificate.
 4. **Click "Upload":** Click the "Upload" button in the bottom right corner to complete the upload.

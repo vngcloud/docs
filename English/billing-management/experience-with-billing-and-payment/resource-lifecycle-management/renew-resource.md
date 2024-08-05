@@ -28,6 +28,6 @@ When extending resources, the default start time will be calculated from the end
 
 The price displayed at the payment step when extending vServer resources (similarly applied to other resources) is calculated as follows:
 
-<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 From the example above, when renewing the resource for an additional 60 days, the end date of the resource will be updated to June 6, 2023, and the user will need to pay an additional amount of 362,000 VND to complete the extension process.
