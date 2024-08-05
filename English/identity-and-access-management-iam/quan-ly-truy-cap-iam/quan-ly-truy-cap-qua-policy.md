@@ -2,87 +2,63 @@
 
 IAM Policies are JSON documents that define permissions and rules for accessing resources. These policies are attached to IAM User Accounts, User Groups, and Service Accounts to control the actions they can perform on specific resources. IAM Policies adhere to the "allow" or "deny" principle, meaning they explicitly grant or deny access to resources and actions.
 
-#### 1. Tạo Chính Sách (Policy) <a href="#customermanagedpolicy-1.taochinhsach-policy" id="customermanagedpolicy-1.taochinhsach-policy"></a>
+#### 1. Create a Policy (Policy) <a href="#customermanagedpolicy-1.taochinhsach-policy" id="customermanagedpolicy-1.taochinhsach-policy"></a>
 
-**Để khởi tạo Chính Sách (Policy), bạn cần thực hiện các hướng dẫn sau:**
+**To create a Policy, follow these steps:**
 
-1. Truy cập IAM Console: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/)
-2. Nhấp vào **"Policy"** trong menu bên trái.
-3. Nhấp vào **"Create a policy."**
-4. Cung cấp tên chính sách và mô tả tùy chọn.
-5. Nhấp vào **"Next step"** để tiếp tục cấu hình quyền.
-6. Mặc định, giao diện sẽ hiển thị tab **"Visual editor."** Sử dụng tính năng Visual editor để tiếp tục quá trình khởi tạo.
-7. Chọn một **Product** cụ thể trong hệ thống VNG Cloud cần cấu hình.
-8. Chỉ định các **Actions** được phép trên tài nguyên của sản phẩm.
-9. Chọn các tài nguyên áp dụng các hành động **(Tất cả các tài nguyên / Tài nguyên cụ thể**).
-10. Cung cấp các **điều kiện tùy chọn** khi áp dụng.
-11. Để thêm tập Actions mới áp dụng trên tập Resource mới trong cùng 1 Policy, bạn nhấn chọn **"Add Rule"** như hình bên dưới, và tiếp tục thực hiện các hướng dẫn từ bước 6 → 9.
-
-    <figure><img src="https://docs.vngcloud.vn/download/attachments/59806947/image2023-8-1_14-12-28.png?version=1&#x26;modificationDate=1690873949000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-12. Xem lại các thiết lập và nhấp vào **"Create policy."**
+1. Access the IAM Console: https://hcm-3.console.vngcloud.vn/iam/
+2. Click on "Policy" in the left menu.
+3. Click on "Create a policy.
+4. Provide the policy name and optional description.
+5. Click on "Next step" to continue configuring permissions.
+6. By default, the interface will display the "Visual editor" tab. Use the Visual editor feature to continue the initialization process.
+7. Select a specific Product in the VNG Cloud system that needs configuration.
+8. Specify the allowed Actions on the resources of the product.
+9. Select the resources for which the actions apply (All resources / Specific resource).
+10. Provide optional conditions when applying.
+11. To add a new set of Actions to apply to a new set of Resources within the same Policy, click on "Add Rule" as shown below, and continue to follow the instructions from step 6 → 9.
+12. Review the settings and click on "Create policy."
 
 {% hint style="info" %}
-**Lưu ý**
+**Note**
 
-Để các Policies hoạt động đúng chức năng của nó, bạn cần gán chúng vào một đối tượng cụ thể (IAM user account, Service account, Group), tham khảo hướng dẫn dưới đây cho việc quản lý sử dụng Policy.
+For Policies to function properly, you need to assign them to a specific object (IAM user account, Service account, Group), refer to the instructions below for Policy usage management.
 {% endhint %}
 
-#### 2. Tạo và Chỉnh sửa Policy với JSON <a href="#customermanagedpolicy-2.taovachinhsuapolicyvoijson" id="customermanagedpolicy-2.taovachinhsuapolicyvoijson"></a>
+#### 2. Create and Edit Policy với JSON <a href="#customermanagedpolicy-2.taovachinhsuapolicyvoijson" id="customermanagedpolicy-2.taovachinhsuapolicyvoijson"></a>
 
-**Bên cạnh việc khởi tạo và chỉnh sửa Policy với Visual editor, bạn cũng có thể sử dụng tab "JSON" để khởi tạo/chỉnh sửa Policy . Sử dụng hướng dẫn dưới đây để biết thêm chi tiết:**
+**In addition to creating and editing Policies with the Visual editor, you can also use the "JSON" tab to create/edit Policies.**&#x20;
 
-* Dưới đây là JSON mẫu tương ứng khi chọn:
-  * **Product:** vMonitor
-  * **Effect:** Allow Permission
-  * **Action:** All vMonitor actions
-  * **Resource:** All resources
-  * **Request conditions:** Không cài đặt
+Use the instructions below for more details:&#x20;
+
+Here is the corresponding sample JSON when selecting:&#x20;
+
+* Product: vMonitor Effect: Allow Permission&#x20;
+* Action: All vMonitor actions&#x20;
+* Resource: All resources&#x20;
+* Request conditions: Not installed
 
 Example JSON Expand source
 
-**Giải thích JSON Attribute**
+JSON Attribute Explanation&#x20;
 
-* **Statement: Policy**
-* Mỗi object trong Statement tương ứng với **1 Rule**, bao gồm:\\
-  * **Effect:** Allow / Deny Permission
-  * **Action:** Danh sách Action được cấp phép/từ chối trên Resource
-  * **Resource:** Danh sách Resource sẽ áp dụng các Actions ở trên
-  * **Conditon:** Request conditions
+* Statement: Policy&#x20;
+* Each object in the Statement corresponds to a Rule, including:\
 
-Mối quan hệ giữa Visual editor và JSON
+  * Effect: Allow / Deny Permission&#x20;
+  * Action: List of Actions allowed / denied on the Resource&#x20;
+  * Resource: List of Resources that will apply the above&#x20;
+  * Actions Conditon: Request conditions
 
-* **Visual editor** và **JSON** là 2 trình cỉnh sửa Policy, được cung cấp bởi IAM VNG Cloud Services.
-* Một khi Tạo/Chỉnh sửa policy từ Visual editor/JSON thì dữ liệu đề được tự động cập nhật giữa 2 tab.
-* Để rút gọn quá trình **khởi tạo/chỉnh sửa Policy**, bạn có thể sử dụng qua lại giữa 2 tính năng **Visual editor/JSON**
-* Lưu ý rằng mọi hành động/chỉnh sửa từ 2 tab đều được đồng bộ với tab còn lại.
+Relationship between Visual editor and JSON&#x20;
 
-#### 3. Quản lý sử dụng Policy <a href="#customermanagedpolicy-3.quanlysudungpolicy" id="customermanagedpolicy-3.quanlysudungpolicy"></a>
-
-**Để gán Policy cho IAM user account, Group và Service Account, bạn cần làm theo các hướng dẫn sau:**
-
-1. Truy cập vào Policy cần quản lý
-2. Tại trang thông tin chi tiết của Policy, nhấn chọn tab **"Policy usage".**
-3. Để gán Policy vào các đối tượng cần áp dụng, nhấn nút **"Attach"** ngay phía trên bên phải, một popup sẽ hiện ra cho phép bạn chọn các đối tượng cần áp dụng.
-4. Tại popup, thực hiện:
-   1. Nhấn tab **"User"** và Chọn các IAM User Accounts sẽ áp dụng Policy này.
-   2. Nhấn tab **"Group"** và Chọn các User Group sẽ áp dụng Policy này.
-   3. Nhấn tab **"Service Account"** và Chọn các Service Account sẽ áp dụng Poliy này.
-5. Xem lại các đối tượng áp dụng và nhấn nút **"Add"** để hoàn tất quá trình.
-6. Bạn có thể xem lại danh sách các đối tượng vừa được gán bằng cách nhấn vào tab **"User", "Group", "Service Account".**
-
-#### **4. Xóa Policy** <a href="#customermanagedpolicy-4.xoapolicy" id="customermanagedpolicy-4.xoapolicy"></a>
-
-**Bạn có thể xóa Policy bằng cách tuân theo 2 tùy chọn dưới đây:**
-
-1. **Xóa nhiều Policy cùng một lúc:**
-   * Truy cập vào IAM với Root User Account / IAM User Account.
-   * Nhấp vào **"Policy"** trong menu bên trái.
-   * Chọn các Policies mà bạn muốn xóa (một nút "**Delete**" sẽ được bật ở góc trên bên phải khi bạn chọn ít nhất một Policy).
-   * Nhấp vào nút "**Delete**" (Xóa), một hộp thoại xác nhận sẽ xuất hiện để đảm bảo bạn không xóa nhầm tài khoản, sau đó nhấp vào nút "**Confirm**" (Xác nhận) để hoàn tất quy trình.
-2. **Xóa một Policy:** Chúng tôi khuyến nghị bạn nên truy cập vào thông tin chi tiết của Policy và xem lại phần thông tin **"Policy usage"** trước khi thực hiện xóa, để đảm bảo bạn không xóa nhầm Policy.
+* Visual editor and JSON are 2 Policy editors, provided by IAM VNG Cloud Services.&#x20;
+* Once you Create/Edit a policy from Visual editor/JSON, the data will be automatically updated between the 2 tabs.&#x20;
+* To shorten the process of creating/editing a Policy, you can use the Visual editor/JSON feature back and forth&#x20;
+* Note that all actions/edits from the 2 tabs are synchronized with the remaining tab.
 
 {% hint style="info" %}
-**Lưu ý**
+**Note**
 
-Để hạn chế việc xóa nhầm Policy đang sử dụng bới các đối tượng IAM, chúng tôi khuyên bạn nên gỡ đính kèm Policy khỏi các đối tượng IAM thay vì xóa trực tiếp. Vì một khi Policy bị xóa sẽ không thể khôi phục lại được.
+To avoid accidentally deleting a Policy that is being used by IAM objects, we recommend that you unattach the Policy from the IAM objects instead of deleting it directly. Once a Policy is deleted, it cannot be restored.
 {% endhint %}

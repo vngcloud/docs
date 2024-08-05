@@ -20,80 +20,43 @@ Tương ứng ta sẽ có mô hình tổ chức như bên dưới:
 
 <figure><img src="../../.gitbook/assets/iam-jobs-function.drawio (4).png" alt=""><figcaption></figcaption></figure>
 
-Để thiết lập IAM theo mô hình trên chúng ta sẽ có các bước như sau:
+**To set up IAM according to the above model, we will have the following steps:**&#x20;
 
-**Bước 1**: Tạo User Groups (SystemAdmin, Developer) và gắn các managed policy tương ứng
+Step 1: Create User Groups (SystemAdmin, Developer) and attach the corresponding managed policies
 
-**Bước 2**: Tạo User Account (System1, System2, Developer1, Developer2) và gắn vào các User Group tương ứng
+&#x20;Step 2: Create User Accounts (System1, System2, Developer1, Developer2) and attach them to the corresponding User Groups&#x20;
 
-**Bước 3**: Đăng nhập các User Accounts để kiểm tra quyền
+Step 3: Log in to the User Accounts to check the rights&#x20;
 
-Chi tiết hướng dẫn các bước
+Detailed instructions for the steps&#x20;
 
-**Bước 1: Tạo User Groups (SystemAdmin, Developer) và gắn các managed policy tương ứng**
+Step 1: Create User Groups (SystemAdmin, Developer) and attach the corresponding managed policies Access the Group tab on the IAM management page here, click "Create a Group" and fill in the group name information as SystemAdmin, click Next step to go to the Policy attachment step
 
-Truy cập vào tab Group ở trang quản lý IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/user-groups), nhấn "**Create a Group**" và điền thông tin tên group là SystemAdmin, nhấn **Next step** để tới bước gắn Policy
+Search and attach 2 managed policies vServerFullAccess and vStorageFullAccess to group: SystemAdmin, then click Create Group to create&#x20;
 
-<figure><img src="../../.gitbook/assets/image2023-7-12_13-11-7 (2).png" alt=""><figcaption></figcaption></figure>
+Follow the steps above when creating group: Developer, select managed policy vServerReadOnlyAccess and vStorageReadOnlyAccess&#x20;
 
-Tìm kiếm và gắn 2 managed policy là vServerFullAccess và vStorageFullAccess cho group: SystemAdmin, sau đó nhấn **Create Group** để tạo
+Thus you have completed creating 2 User Groups: SystemAdmin and Developer with full rights as defined
 
-<figure><img src="../../.gitbook/assets/image2023-7-12_13-14-33.png" alt=""><figcaption></figcaption></figure>
+**Step 2: Create User Accounts (System1, System2, Developer1, Developer2) and attach them to the corresponding User Groups**
 
-Làm tương tự các bước ở trên khi tạo group: Developer, chọn managed policy là vServerReadOnlyAccess và vStorageReadOnlyAccess
+Create User Accounts by accessing the User Account tab on the IAM management page here, click Create a User Account, fill in the Username and Password information, then click Create User Account (note that for a brief guide here we create 4 user accounts with the same password, we recommend that you create separate user accounts with different passwords, or change the password when using):&#x20;
 
-<figure><img src="../../.gitbook/assets/image2023-7-12_13-18-8.png" alt=""><figcaption></figcaption></figure>
+After successfully creating User Accounts, they will be listed on the User Account page as below To add Users: System1, System2, Developer1, Developer2 to Group: SystemAdmin, Developer you can do it for each User Account or Group, here we will guide you to add User Accounts in Group, you go to the Group tab and click on the name of the Group to go to the Group details, as here is Group: SystemAdmin&#x20;
 
-Như vậy bạn đã hoàn thành việc tạo 2 User Groups: SystemAdmin và Developer có đầy đủ quyền như đã định nghĩa
+Select the User tab Click Add Users, a popup will appear, you select User: System1, System2 and Click Add: To add User: Developer1, Developer2 to Group: Developer, you do the same steps as above:&#x20;
 
-<figure><img src="../../.gitbook/assets/image2023-7-12_13-19-30.png" alt=""><figcaption></figcaption></figure>
+So you have completed creating User Accounts and adding them to the corresponding Group, now the User Accounts will inherit all the rights that the Group has.
 
-**Bước 2: Tạo User Account (System1, System2, Developer1, Developer2) và gắn vào các User Group tương ứng**
+**Step 3: Log in to User Accounts to check permissions**\
+At this point, you can log into the User Accounts to check permissions. Here we will attempt to log in to 2 Users: System1, Developer1 to perform some actions on the vServer to check permissions.
 
-Tiến hành tạo các User Account bằng cách truy cập vào tab User Account ở trang quản lý IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/user-accounts), nhấn **Create a User Account,** điền thông tin Username và Password, sau đó nhấn **Create User Account** (lưu ý để hướng dẫn ngắn gọn ở đây chúng tôi tạo 4 user account cùng chung 1 password, khuyến cáo bạn nên tạo các user account riêng lẻ và có password khác nhau, hoặc đổi password khi sử dụng):
+Access the vServer here; when not logged into any account, you will be redirected to the sign-in page, select "Sign-in With IAM User Account."
 
-<figure><img src="../../.gitbook/assets/image2023-7-12_13-23-4.png" alt=""><figcaption></figcaption></figure>
+Fill in the root user account email that was created previously by the IAM user, the IAM username, and password, then click Sign-in with IAM User Account.
 
-Sau khi tạo thành công các User Accounts, sẽ được liệt kê ở trang User Account như bên dưới
+At this point, you will see User: System1 has full rights on the vServer, you can perform actions such as creating a new Server or changing Server information to check permissions; for example, below is User: System1 successfully starting a Server.
 
-<figure><img src="../../.gitbook/assets/image2023-7-12_13-33-2.png" alt=""><figcaption></figcaption></figure>
+Follow the same steps to log in to User: Developer1; at this point, you will see User: Developer1 only has permission to view the vServer information and cannot interact with or change the Server. For example, below is User: Developer1 trying to start a Server but being denied.
 
-Để thêm các User: System1, System2, Developer1, Developer2 vào Group: SystemAdmin, Developer bạn có thể thực hiện ở từng User Account hoặc Group, ở đây chúng tôi sẽ hướng dẫn thêm User Account ở Group, bạn qua tab Group nhấn vào **tên của Group** để vào chi tiết của Group, như ở đây là Group: SystemAdmin
-
-<figure><img src="../../.gitbook/assets/image2023-7-12_13-37-11 (1).png" alt=""><figcaption></figcaption></figure>
-
-Chọn tab **User**
-
-<figure><img src="../../.gitbook/assets/image2023-7-12_13-37-52.png" alt=""><figcaption></figcaption></figure>
-
-Nhấn A**dd Users**, một popup sẽ hiển thị lên, bạn chọn User: System1, System2 và nhấn **Add:**
-
-<figure><img src="../../.gitbook/assets/image2023-7-12_13-40-25.png" alt=""><figcaption></figcaption></figure>
-
-Để thêm User: Developer1, Developer2 vào Group: Developer, bạn làm tương tự các bước như trên:
-
-<figure><img src="../../.gitbook/assets/image2023-7-12_13-42-39.png" alt=""><figcaption></figcaption></figure>
-
-Vậy là bạn đã hoàn thành việc tạo các User Accounts và thêm chúng vào Group tương ứng, lúc này các User Accounts sẽ được thừa kế đầy đủ các quyền mà Group đang có.
-
-**Bước 3: Đăng nhập các User Accounts để kiểm tra quyền**
-
-Lúc này bạn có thể đăng nhập vào các User Accounts để kiểm tra quyền, tại đây chúng tôi sẽ thử đăng nhập vào 2 User: System1, Developer1 để thực hiện một số thao tác trên vServer để kiểm tra quyền
-
-Truy cập vào vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), khi chưa đăng nhập bất kì tài khoản nào bạn sẽ được chuyển hướng sang trang sign-in chọn "**Sign-in With IAM User Account**"
-
-<figure><img src="../../.gitbook/assets/image2023-7-12_13-48-49 (1).png" alt=""><figcaption></figcaption></figure>
-
-Điền thông tin root user account email mà IAM user trước đó đã được tạo, thông tin IAM username và password, nhấn **Sign-in with IAM User Account**
-
-<figure><img src="../../.gitbook/assets/image2023-7-12_13-50-7.png" alt=""><figcaption></figcaption></figure>
-
-Lúc này bạn sẽ thấy User: System1 có toàn quyền trên vServer, bạn có thể thực hiện việc tạo mới Server hay thay đổi thông tin Server để kiểm tra quyền, ví dụ bên dưới là User: System1 đang khởi động 1 Server thành công
-
-<figure><img src="../../.gitbook/assets/image2023-7-12_13-56-36.png" alt=""><figcaption></figcaption></figure>
-
-Làm các bước tương tự trên để đăng nhập vào User: Developer1, lúc này bạn sẽ thấy User: Developer1 chỉ có quyền xem thông tin vServer, không thể tương tác thay đổi Server, ví dụ bên dưới là User: Developer1 đang muốn khởi động 1 Server nhưng bị từ chối thực hiện
-
-<figure><img src="../../.gitbook/assets/image2023-7-12_13-59-54.png" alt=""><figcaption></figcaption></figure>
-
-Như vậy bạn đã hoàn thành việc phân quyền truy cập theo các chức năng công việc, lúc này việc cấp quyền cho các thành viên mới, bạn chỉ cần tạo User Account và thêm vào Group, để thay đổi quyền bạn chỉ cần thay đổi Policy tại các Group giúp việc quản lý truy cập tài nguyên trên VNG Cloud trở nên dễ dàng hơn.
+Thus, you have completed the process of assigning access rights according to job functions. Now, to grant permissions to new members, you just need to create a User Account and add it to a Group. To change permissions, you just need to change the Policy in the Groups, which makes managing access to resources on VNG Cloud much easier.

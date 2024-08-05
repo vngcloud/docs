@@ -1,68 +1,63 @@
-# Tài khoản User Groups
+# User Groups
 
-#### Quản lý User Group <a href="#usergroups-quanlyusergroup" id="usergroups-quanlyusergroup"></a>
+**Managing User Groups**&#x20;
 
-IAM User Group là một tập hợp các IAM User Account. IAM User Group giúp đơn giản hóa việc quản lý quyền bằng cách cho phép bạn cấp, thay đổi và gỡ bỏ quyền cho nhiều IAM User Account cùng một lúc. Ví dụ, bạn có thể tạo một IAM User Group có tên là "Quản trị viên" và cấp quyền quản trị cho nhóm đó. Bất kỳ IAM User Account nào trong nhóm đều tự động có các quyền được gán cho nhóm.
+An IAM User Group is a collection of IAM User Accounts. IAM User Groups simplify permissions management by allowing you to grant, change, and remove permissions to multiple IAM User Accounts at once. For example, you can create an IAM User Group called "Administrators" and grant administrative permissions to that group. Any IAM User Account in the group automatically has the permissions assigned to the group.
 
-\
+**How to create an IAM User Group?**&#x20;
 
+To create a new IAM User Group:&#x20;
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/63766769/Identities-User%20Group.drawio%20(1).png?version=1&#x26;modificationDate=1691474619000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+1. Go to IAM Console: https://hcm-3.console.vngcloud.vn/iam/&#x20;
+2. Click "Group" in the left menu.&#x20;
+3. Click "Create a group".&#x20;
+4. Provide a group name and optional description.&#x20;
+5. Assign relevant IAM Policies to the group to define the group's permissions.
+6. Review the settings and click "Create group".
 
-**1. Cách tạo một IAM User Group?**
+**How to assign Permissions to IAM User Group?**&#x20;
 
-Để tạo một IAM User Group mới:
+You can assign Policies to a Group while creating a new IAM User Group, or assign Policies to an existing IAM User Group. To assign Policies to an existing Group:&#x20;
 
-1. Truy cập vào IAM Console: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/)
-2. Nhấp vào "**Group**" trong menu bên trái.
-3. Nhấp vào "**Create a group**".
-4. Cung cấp tên nhóm và mô tả tùy chọn.
-5. Gán các IAM Policies liên quan cho nhóm để xác định các quyền của nhóm.
-6. Xem lại các thiết lập và nhấp vào "**Create group**".
+1. Go to IAM Console - Groups page with URL: https://hcm-3.console.vngcloud.vn/iam/user-groups&#x20;
+2. Log in as a Root User Account or a User Account with access rights.&#x20;
+3. You need to provide a username/email and password when logging in.&#x20;
+4. Search for an IAM User Group by entering its name in the search box and selecting the correct IAM User Group in the search results.&#x20;
+5. By default, you will see the "Permission" tab on the IAM User Group details page.&#x20;
+6. Click the "Attach Policies" button, then you will see a window appear containing all Policies.&#x20;
+7. Search for the Policies you want to assign by typing the exact name of the Policies in the search box.&#x20;
+8. Select the Policies you want to assign from the search results and click the "Attach" button in the lower right corner of the popup.&#x20;
+9. Now, your IAM User Group will have all the permissions contained in the assigned Policies and ensure that all IAM User Accounts in the Groups inherit all these Permissions.
 
-**2. Cách gán Quyền cho IAM User Group?**
+**3.How to assign an IAM User Account to an IAM User Group?**&#x20;
 
-Bạn có thể gán Policies cho một Group trong quá trình tạo IAM User Group mới, hoặc gán Policies cho một IAM User Group đã tồn tại. Để gán Policies cho một Group đã tồn tại:
+You can assign an IAM User Account to an IAM User Group while creating a new IAM User Group, or assign an IAM User Account to an existing IAM User Group. To assign an IAM User Account to an existing IAM User Group:&#x20;
 
-1. Truy cập vào IAM Console - Trang Group với URL: [https://hcm-3.console.vngcloud.vn/iam/user-groups](https://hcm-3.console.vngcloud.vn/iam/user-groups)
-2. Đăng nhập với tư cách là tài khoản Người dùng Gốc (Root User Account) hoặc User Account được cấp quyền truy cập. Bạn cần cung cấp tên người dùng/email và mật khẩu khi đăng nhập.
-3. Tìm kiếm IAM User Group bằng cách nhập tên của nó vào ô tìm kiếm và chọn IAM User Group đúng trong kết quả tìm kiếm.
-4. Mặc định, bạn sẽ thấy tab "**Permission**" tại trang thông tin chi tiết của IAM User Group.
-5. Nhấp vào nút "**Attach Policies**", sau đó bạn sẽ thấy một cửa sổ xuất hiện chứa tất cả Policies.
-6. Tìm kiếm các Policies cần gán bằng cách nhập tên chính xác củaPolicies vào ô tìm kiếm.
-7. Chọn Policies cần gán tại kết quả tìm kiếm và nhấn nút "**Attach**" ở góc dưới bên phải của popup.
-8. Bây giờ, IAM User Group của bạn sẽ có tất cả các quyền chứa trong các Policies đã gán và đảm bảo rằng tất cả IAM User Account trong Groups đều kế thừa tất cả các Quyền này.
+1. Go to IAM Console - Groups page with the URL: https://hcm-3.console.vngcloud.vn/iam/user-groups&#x20;
+2. Log in as a Root User Account or a User Account with access rights.&#x20;
+3. You need to provide a username/email and password when logging in.&#x20;
+4. Search for an IAM User Group by entering its name in the search box and selecting the correct IAM User Group from the search results.&#x20;
+5. Click on the "User" tab on the IAM User Group details page.&#x20;
+6. Click on the "Add user" button, then you will see a window appear containing all your IAM User Accounts.&#x20;
+7. Select IAM User Account and click the "Add" button in the bottom right corner of the popup.&#x20;
+8. Now, your IAM User Accounts will inherit all Group Permissions.
 
-**3. Cách gán IAM User Account vào IAM User Group?**
+**4. Delete IAM User Group?**&#x20;
 
-Bạn có thể gán IAM User Account vào một IAM User Group trong quá trình tạo IAM User Group mới, hoặc gán IAM User Account vào một IAM User Group đã tồn tại. Để gán IAM User Account vào một IAM User Group đã tồn tại:
+You can delete IAM User Group by doing the following 2 options:&#x20;
 
-1. Truy cập vào IAM Console - Trang Group với URL: [https://hcm-3.console.vngcloud.vn/iam/user-groups](https://hcm-3.console.vngcloud.vn/iam/user-groups)
-2. Đăng nhập với tư cách là tài khoản Người dùng Gốc (Root User Account) hoặc User Account được cấp quyền truy cập. Bạn cần cung cấp tên người dùng/email và mật khẩu khi đăng nhập.
-3. Tìm kiếm IAM User Group bằng cách nhập tên của nó vào ô tìm kiếm và chọn IAM User Group đúng trong kết quả tìm kiếm.
-4. Nhấp vào tab **"User"** tại trang thông tin chi tiết của IAM User Group.
-5. Nhấp vào nút "**Add user**", sau đó bạn sẽ thấy một cửa sổ xuất hiện chứa tất cả IAM User Account của bạn.
-6. Chọn IAM User Account và nhấp vào nút "**Add**" ở góc dưới bên phải của popup.
-7. Bây giờ, các IAM User Account của bạn sẽ kế thừa tất cả các Quyền của Group.
+1. Delete multiple IAM User Groups at once:&#x20;
 
-**4. Xóa IAM User Group?**
+* Go to IAM Console with Root account or IAM User Account granted access Click "Group" in the left menu.&#x20;
+* Select the IAM User Group you want to delete (a "Delete" button will be enabled in the upper right corner when you select at least one group).&#x20;
+* Click the "Delete" button, a confirmation window will appear to make sure you don't delete the wrong Group, then click the "Confirm" button to complete the process.
 
-Bạn có thể xóa IAM User Group bằng cách thực hiện 2 tùy chọn sau:
-
-1. **Xóa nhiều IAM User Group cùng một lúc:**&#x20;
-   1. Truy cập vào IAM Console với tài khoản Root hoặc IAM User Account được cấp quyền truy cập
-   2. Nhấp vào "Group" trong menu bên trái.
-   3. Chọn IAM User Group mà bạn muốn xóa (một nút "**Delete**" sẽ được bật ở góc trên bên phải khi bạn chọn ít nhất một nhóm).
-   4. Nhấp vào nút "**Delete**", một cửa sổ xác nhận sẽ xuất hiện để đảm bảo bạn không xóa nhầm Group, sau đó nhấp vào nút "**Confirm**" để hoàn tất quy trình.
-2. **Xóa một IAM User Group:** Chúng tôi đề xuất bạn nên truy cập vào chi tiết của IAM User Group và sau đó thực hiện xóa nó để đảm bảo bạn không xóa nhầm Group.
+2. Delete an IAM User Group: We recommend you to access the details of the IAM User Group and then delete it to make sure you don't delete the wrong Group.
 
 {% hint style="info" %}
 **Note**
 
-* Nhớ rằng khi bạn xác nhận việc xóa IAM User Group, thì Group đó không thể khôi phục lại được.
-* Hãy xem xét và gán các Policies mới cho các IAM User Account thuộc về những IAM User Group đã bị xóa, để đảm bảo rằng các IAM User Account vẫn hoạt động đúng cách.
+*   Remember that once you confirm deletion of an IAM User Group, that Group cannot be restored.
+
+    Review and assign new Policies to the IAM User Accounts that belong to the deleted IAM User Groups, to ensure that the IAM User Accounts continue to function properly.
 {% endhint %}
-
-
-
-\

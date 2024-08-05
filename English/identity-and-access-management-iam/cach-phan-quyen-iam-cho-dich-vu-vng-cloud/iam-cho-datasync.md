@@ -1,3 +1,4 @@
-# IAM cho DataSync
+# IAM for DataSync
 
-### **Khám phá chi tiết cách sử dụng** [**IAM cho DataSync**](../../datasync/quan-ly-truy-cap/) <a href="#iamforvmonitor-3.khamphachitietcachsudungiamchovmonitorplatform" id="iamforvmonitor-3.khamphachitietcachsudungiamchovmonitorplatform"></a>
+**IAM for DataSync**\
+Explore the details on how to use it.

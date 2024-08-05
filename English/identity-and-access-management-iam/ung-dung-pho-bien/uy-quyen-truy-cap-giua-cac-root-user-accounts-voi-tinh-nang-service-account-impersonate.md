@@ -3,91 +3,68 @@
 When there is a need to delegate permissions to an IAM User Account of a Root User Account to access resources in another Root User Account, you need to use the Impersonate feature of the Service Account. For example, if you have resources from the vServer in Root User Account B, and you want User Account: System1 from Root User Account A to have management rights over all vServer resources of Root User Account B, you would use the Impersonate feature of the Service Account, modeled as follows:\
 To set up IAM according to the model above, we will have 2 setup stages in 2 Root User Accounts as follows:
 
-**Giai đoạn 1**: Thiết lập tại Root User Account B (người muốn chia sẻ quyền)
+**Step 1: Set up at Root User Account B (the person who wants to share the rights)**&#x20;
 
-* **Bước 1.1**: Tạo Service Account AllowAccessFromRootUserAccountA, gắn quyền vServerFullAccess và thiết lập Trust với Root User Account A
+* Step 1.1: Create Service Account AllowAccessFromRootUserAccountA, attach vServerFullAccess rights and set up Trust with Root User Account A&#x20;
 
-**Giai đoạn 2**: Thiết lập tại Root User Account A (người được uỷ quyền)
+**Step 2: Set up at Root User Account A (the authorized person)**&#x20;
 
-* **Bước 2.1**: Tạo User: System1 nếu chưa có User Account (lưu ý rằng nếu đã có sẵn User: System1, cần đảo bảo User: System1 không có quyền gì hoặc không có các quyền chồng lấn với hướng dẫn)
-* **Bước 2.2**: Tạo Policy: ImpersonateToRootUserAccountB để cấp quyền impersonate cho Service Account đã tạo ở giai đoạn 1
-* **Bước 2.3**: Gắn Policy: ImpersonateToRootUserAccountB cho User: System1 để cho phép System1 có quyền sử dụng Service Account đã tạo ở giai đoạn 1
-* **Bước 2.4**: Đăng nhập và kiểm tra quyền của User: System1
+* Step 2.1: Create User: System1 if there is no User Account (note that if there is already User: System1, make sure User: System1 does not have any rights or does not have rights that overlap with the instructions)&#x20;
+* Step 2.2: Create Policy: ImpersonateToRootUserAccountB to grant impersonate rights to the Service Account created in step 1&#x20;
+* Step 2.3: Attach Policy: ImpersonateToRootUserAccountB to User: System1 to allow System1 to have the right to use the Service Account created in step 1 Step 2.4: Log in and check the rights of User: System1
 
-Trước tiên để thực hiện theo chi tiết hướng dẫn bên dưới bạn cần thu thập thông tin user ID của 2 Root User Account, để có thể lấy thông thông tin User ID, bạn nhấn vào tên email ở góc trên bên phải như hình bên dưới
+First, to follow the detailed instructions below, you need to collect the user ID information of 2 Root User Accounts. To get the User ID information, click on the email name in the upper right corner as shown below. The information of 2 Root User Accounts in this guide is as follows.
 
-Thông tin của 2 Root User Account ở hướng dẫn này như sau
+**Root User Account A has Email: demoiaas@vng.com.vn, User ID: 53461.**
 
-**Root User Account A có Email: demoiaas@vng.com.vn, User ID: 53461**
+**Root User Account B has Email: iaas.dev4@vng.com.vn, User ID: 60108.**
 
-**Root User Account B có Email: iaas.dev4@vng.com.vn, User ID: 60108**
+Detailed steps are as follows.
 
-Chi tiết các bước như sau
+**Stage 1: Set up at Root User Account B (the person who wants to share rights).**
 
-**Giai đoạn 1: Thiết lập tại Root User Account B (người muốn chia sẻ quyền)**
+* Step 1.1: Create Service Account AllowAccessFromRootUserAccountA, attach vServerFullAccess rights and set up Trust with Root User Account A.
 
-**Bước 1.1: Tạo Service Account AllowAccessFromRootUserAccountA, gắn quyền vServerFullAccess và thiết lập Trust với Root User Account A**
+To create a Service Account, go to the Service Account tab on the IAM page here, click Create a Service Account, name the Service Account: AllowAccessFromRootUserAccountA and click Add a root user account to set up establish&#x20;
 
-Để tạo Service Account bạn qua tab Service Account ở trang IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts), nhấn **Create a Service Account**, **đặt tên** cho Service Account: AllowAccessFromRootUserAccountA và nhấn vào **Add a root user account** để thiết lập Trust với Root User Account A
+Trust with Root User Account A Fill in the User ID information of Root User Account A to establish Trust between Root User Account A and this Service Account, click Next step Search and select policy: vServerFullAccess, click Create Service Account to create Save the Client ID and Secret Key information of the Service Account if you need to use this Service Account directly.&#x20;
 
-Điền thông tin User ID của Root User Account A để thiết lập **Trust** giữa Root User Account A và Service Account này, nhấn **Next step**
+Save the Service Account ID information to set up in phase 2&#x20;
 
-Tìm kiếm và **chọn policy: vServerFullAccess, nhấn Create Service Account** để tạo
+Thus, you have successfully created Service Account: AllowAccessFromRootUserAccountA, with vServerFullAccess rights and established Trust with Root User Account A, with this Trust establishment, Root User Account A can grant permission to 1 IAM User belonging to Root User Account A to have the right to use Service Account: AllowAccessFromRootUserAccountA to manage vServer belonging to Root User Account B.
 
-Lưu lại thông tin Client ID và Secret Key của Service Account nếu có nhu cầu sử dụng trực tiếp Service Account này.
+**Step 2: Set up at Root User Account A (authorized person)**&#x20;
 
-Lưu lại thông tin Service Account ID để thiết lập ở giai đoạn 2
+* Step 2.1: Create User: System1 if there is no User Account (note that if there is already a User: System1, make sure User: System1 has no rights or does not have rights that overlap with the instructions)&#x20;
 
-Như vậy là bạn đã tạo thành công Service Account: **AllowAccessFromRootUserAccountA,** có quyền vServerFullAccess và thiết lập **Trust** với Root User Account A, với việc thiết lập Trust này, Root User Account A có thể cấp quyền cho 1 IAM User thuộc Root User Account A có quyền sử dụng Service Account: **AllowAccessFromRootUserAccountA** để quản lý vServer thuộc Root User Account B.
+Proceed to create a User Account by accessing the User Account tab on the IAM management page here, click Create a User Account, fill in the Username and Password information, then click Create User Account&#x20;
 
-**Giai đoạn 2: Thiết lập tại Root User Account A (người được uỷ quyền)**
+After successfully creating a User Account, it will be listed on the User Account page as below&#x20;
 
-**Bước 2.1: Tạo User: System1 nếu chưa có User Account (lưu ý rằng nếu đã có sẵn User: System1, cần đảo bảo User: System1 không có quyền gì hoặc không có các quyền chồng lấn với hướng dẫn)**
+* Step 2.2: Create Policy: ImpersonateToRootUserAccountB to grant impersonate rights to the Service Account created in step 1&#x20;
 
-Tiến hành tạo User Account bằng cách truy cập vào tab User Account ở trang quản lý IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/user-accounts), nhấn **Create a User Account,** điền thông tin Username và Password, sau đó nhấn **Create User Account**
+To create a Policy, go to the Policy tab on the IAM page here, click Create a Policy, name the Policy: ImpersonateToRootUserAccountB and click Next step Select Product: iam, search and select action:&#x20;
 
-Sau khi tạo thành công User Account, sẽ được liệt kê ở trang User Account như bên dưới
+ImpersonateServiceAccount&#x20;
 
-**Bước 2.2: Tạo Policy: ImpersonateToRootUserAccountB để cấp quyền impersonate cho Service Account đã tạo ở giai đoạn 1**
+Then in the Resource section, click on the arrow at Resource to select Resource information, click Add a service-account to add the User ID of Root User Account B and the Service Account ID of AllowAccessFromRootUserAccountA that were collected in phase 1 Enter the User ID information of Root User Account B and the Service Account ID of AllowAccessFromRootUserAccountA that were collected in phase 1 into the Popup that is displayed
 
-Để tạo Policy bạn qua tab Policy ở trang IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/policies), nhấn **Create a Policy**, **đặt tên** cho Policy: **ImpersonateToRootUserAccountB** và nhấn **Next step**
+Then click Create Policy to create Policy Thus, you have completed creating a Policy to allow Impersonate Service Account: AllowAccessFromRootUserAccountA of User Account B&#x20;
 
-Chọn **Product**: **iam, tìm kiếm và chọn action: ImpersonateServiceAccount**
+* Step 2.3: Attach Policy: ImpersonateToRootUserAccountB to User: System1 to allow System1 to have the right to use the Service Account created in phase 1&#x20;
 
-Sau đó tại mục **Resource,** nhấn vào **mũi tên chỗ Resource** để chọn thông tin Resource, nhấn **Add a service-account** để thêm User ID của Root User Account B và Service Account ID của AllowAccessFromRootUserAccountA mà đã thu thập ở giai đoạn 1
+After successfully creating Policy: ImpersonateToRootUserAccountB, you proceed to attach this Policy to User: System1, you can do it in User Account or Policy, here we will guide in Policy, click on the name of the Policy to go to the Policy details page:
 
-**Điền thông tin User ID** của Root User Account B và **Service Account ID** của AllowAccessFromRootUserAccountA mà đã thu thập ở giai đoạn 1 vào Popup đc hiển thị lên
+Select the Policy usage tab and click Attach to add User: System1 Select User: System1 and click Add After adding User: System1 to Policy: ImpersonateToRootUserAccountB, you will see the information as below, Now User: System1 has the right to Impersonate Service Account: AllowAccessFromRootUserAccountA to manage Servers belonging to User Account B
 
-Sau đó nhấn **Create Policy** để tạo Policy
+* Step 2.4: Log in and perform Impersonate to check the rights of User: System1&#x20;
 
-Như vậy bạn đã hoàn thành việc tạo Policy cho phép Impersonate Service Account: AllowAccessFromRootUserAccountA của User Account B
+Now you can log in to User: System1 to check the rights Access vServer here, when you have not logged in to any account, you will be redirected to the sign-in page, select "Sign-in With IAM User Account" Fill in the root user account email information that User: System1 previously created, the IAM username and password information of User: System1, click Sign-in with IAM User Account&#x20;
 
-**Bước 2.3: Gắn Policy: ImpersonateToRootUserAccountB cho User: System1 để cho phép System1 có quyền sử dụng Service Account đã tạo ở giai đoạn 1**
+Perform Impersonate via Service Account: AllowAccessFromRootUserAccountA by clicking on the email in the upper right corner and selecting Impersonate service account&#x20;
 
-Sau khi tạo thành công Policy: ImpersonateToRootUserAccountB, bạn tiến hành gắn Policy này cho User: System1, bạn có thể thực hiện ở User Account hoặc Policy, ở đây chúng tôi sẽ hướng dẫn ở Policy, **nhấn vào tên của Policy** để vào trang chi tiết Policy:
+Enter the Service Account ID of the Service Account: AllowAccessFromRootUserAccountA and the display name when Impersonate, select Go to perform Impersonate&#x20;
 
-**Chọn tab Policy usage** và **nhấn Attach** để thêm User: System1
+Now you see that User: System1 has successfully performed Impersonate through Root User Account B (email information: iaas.dev4@vng.com.vn, Account ID: 60108) with Service Account: AllowAccessFromRootUserAccountA And has full rights on vServer, below is System1 is shutting down 1 server&#x20;
 
-**Chọn User: System1** và **nhấn Add**
-
-Sau khi thêm User: System1 vào Policy: ImpersonateToRootUserAccountB, bạn sẽ thấy thông tin như bên dưới,
-
-Lúc này User: System1 đã có quyền để có thể Impersonate Service Account: AllowAccessFromRootUserAccountA để quản lý các Server thuộc User Account B
-
-**Bước 2.4: Đăng nhập và thực hiện Impersonate để kiểm tra quyền của User: System1**
-
-Lúc này bạn có thể đăng nhập vào User: System1 để kiểm tra quyền
-
-Truy cập vào vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), khi chưa đăng nhập bất kì tài khoản nào bạn sẽ được chuyển hướng sang trang sign-in chọn "**Sign-in With IAM User Account**"
-
-Điền thông tin root user account email mà User: System1 trước đó đã được tạo, thông tin IAM username và password của User: System1, nhấn **Sign-in with IAM User Account**
-
-Thực hiện Impersonate qua Service Account: AllowAccessFromRootUserAccountA bằng cấp **nhấn vào email** ở góc trên bên phải và chọn **Impersonate service account**
-
-**Điền Service account ID** của Service Account: AllowAccessFromRootUserAccountA và **tên hiển thị khi Impersonate**, **chọn Go** để thực hiện Impersonate
-
-Lúc này bạn thấy User: System1 đã thực hiện thành công việc Impersonate qua Root User Account B (thông tin email: iaas.dev4@vng.com.vn, Account ID: 60108) với Service Account: AllowAccessFromRootUserAccountA
-
-Và có đầy đủ quyền trên vServer, ở bên dưới là System1 đang tắt 1 server
-
-Như vậy là bạn đã thực hiện thành công việc thiết lập cho phép User: System1 thuộc Root User Account A có đầy đủ quyền quản lý vServer của Root User Account B.
+Thus, you have successfully performed the setup to allow User: System1 belonging to Root User Account A to have full rights to manage vServer of Root User Account B.

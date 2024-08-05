@@ -4,104 +4,65 @@ When there is a need for specific permission delegations on each resource, you n
 
 <figure><img src="../../.gitbook/assets/iam-specific-resource.drawio.png" alt=""><figcaption></figcaption></figure>
 
-Để thiết lập IAM theo mô hình trên chúng ta sẽ có các bước như sau:
+**To set up IAM according to the model above, we will have the following steps:**\
+**Step 1: Create User: System1 if there is no User Account (note that if User: System1 already exists, ensure that User: System1 has no permissions or overlapping permissions with the guidance)**
 
-**Bước 1**: Tạo User: System1 nếu chưa có User Account (lưu ý rằng nếu đã có sẵn User: System1, cần đảo bảo User: System1 không có quyền gì hoặc không có các quyền chồng lấn với hướng dẫn)
+**Step 2: Retrieve the ID information of the web server web1-server**
 
-**Bước 2**: Lấy thông tin ID của server web1-server
+**Step 3: Create a Policy named vServerFullAccessWebServers that allows full access to all resources of vServer, but only full permissions on web1-server**
 
-**Bước 3**: Tạo Policy với tên vServerFullAccessWebServers cho phép truy cập toàn bộ Resource của vServer, nhưng chỉ đầy đủ quyền trên web1-server
+**Step 4: Attach Policy: vServerFullAccessWebServers to User: System1**
 
-**Bước 4**: Gắn Policy: vServerFullAccessWebServers cho User: System1
+**Step 5: Log in and check the permissions of User: System1**
 
-**Bước 5**: Đăng nhập và kiểm tra quyền của User: System1
+The details of the steps are as follows
 
-Chi tiết các bước như sau
+Step 1: Create User: System1 if there is no User Account (note that if User: System1 already exists, ensure that User: System1 has no permissions or overlapping permissions with the guidance)\
+Proceed to create a User Account by accessing the User Account tab in the IAM management page here, clicking Create a User Account, filling in the Username and Password information, and then clicking Create User Account
 
-**Bước 1: Tạo User: System1 nếu chưa có User Account (lưu ý rằng nếu đã có sẵn User: System1, cần đảo bảo User: System1 không có quyền gì hoặc không có các quyền chồng lấn với hướng dẫn)**
+After successfully creating the User Account, it will be listed on the User Account page as shown below
 
-Tiến hành tạo User Account bằng cách truy cập vào tab User Account ở trang quản lý IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/user-accounts), nhấn **Create a User Account,** điền thông tin Username và Password, sau đó nhấn **Create User Account**
+Step 2: Retrieve the ID information of the server web1-server
 
-<figure><img src="../../.gitbook/assets/image2023-7-12_15-18-33.png" alt=""><figcaption></figcaption></figure>
+Access the server management page here to obtain the server ID information, click Copy ID on the web1-server to get the ID, and save it for use in the next steps
 
-Sau khi tạo thành công User Account, sẽ được liệt kê ở trang User Account như bên dưới
+Step 3: Create a Policy named vServerFullAccessWebServers that allows access to all Resources of vServer, but with full permissions only on web1-server
 
-<figure><img src="../../.gitbook/assets/image2023-7-12_15-19-37.png" alt=""><figcaption></figcaption></figure>
+To create the Policy, go to the Policy tab on the IAM page here, click Create a Policy, name the Policy: vServerFullAccessWebServers and click Next step
 
-**Bước 2: Lấy thông tin ID của server web1-server**
+Select Product: vserver and Actions: All vserver actions to select all actions of vServer
 
-Truy cập vào trang quản lý server tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) để lấy thông tin server ID, nhấn **Copy ID** tại server web1-server để lấy ID, lưu lại để sử dụng cho các bước tiếp theo
+Then in the Resource section, click the arrow next to Resource to select Resource information, choose Any for other types of Resources, and for Resource: server, click Add a server to specify which server is allowed to operate
 
-<figure><img src="../../.gitbook/assets/image2023-7-12_16-25-13.png" alt=""><figcaption></figcaption></figure>
+A popup will appear where you fill in the server ID information of web1-server, click Add to include it\
+At this point, you will see that Resource: server contains the server ID of web1-server, if you want to add more server IDs, continue clicking Add a server to include them. Then click Create Policy to create the Policy
 
-**Bước 3: Tạo Policy với tên vServerFullAccessWebServers cho phép truy cập toàn bộ Resource của vServer, nhưng chỉ đầy đủ quyền trên web1-server**
+Step 4: Attach Policy: vServerFullAccessWebServers to User: System1
 
-Để tạo Policy bạn qua tab Policy ở trang IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/policies), nhấn **Create a Policy**, **đặt tên** cho Policy: vServerFullAccessWebServers và nhấn **Next step**
+After successfully creating Policy: vServerFullAccessWebServers, you proceed to attach this Policy to User: System1. You can do this in either User Account or Policy; here we will guide you through Policy. Click on the name of the Policy to go to the Policy details page:
 
-<figure><img src="../../.gitbook/assets/image2023-7-12_15-22-45.png" alt=""><figcaption></figcaption></figure>
+Select the Policy usage tab and click Attach to add User: System1
 
-Chọn **Product**: **vserver** và **Actions**: **All vserver actions** để chọn tất cả cả actions của vServer
+Select User: System1 and click Add
 
-<figure><img src="../../.gitbook/assets/image2023-7-12_15-24-23.png" alt=""><figcaption></figcaption></figure>
+After adding User: System1 to Policy: vServerFullAccessWebServer, you will see information as below
 
-Sau đó tại mục **Resource,** nhấn vào **mũi tên chỗ Resource** để chọn thông tin Resource, bạn chọn **Any** cho các loại Resource khác, còn **Resource: server** bạn nhấn **Add a server** để thêm cụ thể server nào được phép thao tác
+Step 5: Log in and check the permissions of User: System1
 
-<figure><img src="../../.gitbook/assets/image2023-7-12_15-36-37.png" alt=""><figcaption></figcaption></figure>
+At this point, you can log in to User: System1 to check permissions
 
-Popup hiển thị bạn **điền thông tin server ID của web1-server**, nhấn **Add** để thêm.
+Access the vServer here, when you have not logged into any account, you will be redirected to the sign-in page, choose "Sign-in With IAM User Account"
 
-<figure><img src="../../.gitbook/assets/image2023-7-12_15-37-46.png" alt=""><figcaption></figcaption></figure>
+Enter the root user account email that User: System1 was previously created with, the IAM username and password of User: System1, and click Sign-in with IAM User Account
 
-Lúc này bạn sẽ thấy thông tin Resouce: server đã có server ID của web1-server, nếu muốn thêm nhiều server ID khác bạn tiếp tục nhấn Add a server để thêm. Sau đó nhấn **Create Policy** để tạo Policy
+At this point, you will see User: System1 has full rights on server web1-server and other Resources of vServer.
 
-<figure><img src="../../.gitbook/assets/image2023-7-12_15-39-6.png" alt=""><figcaption></figcaption></figure>
+Successfully accessed the details page of web1-server
 
-**Bước 4: Gắn Policy: vServerFullAccessWebServers cho User: System1**
+Successfully turned off server web1-server:
 
-Sau khi tạo thành công Policy: vServerFullAccessWebServers, bạn tiến hành gắn Policy này cho User: System1, bạn có thể thực hiện ở User Account hoặc Policy, ở đây chúng tôi sẽ hướng dẫn ở Policy, **nhấn vào tên của Policy** để vào trang chi tiết Policy:
+Failed to access the details page of db-server:
 
-<figure><img src="../../.gitbook/assets/image2023-7-12_15-46-16.png" alt=""><figcaption></figcaption></figure>
+Failed to turn off server db-server:
 
-**Chọn tab Policy usage** và **nhấn Attach** để thêm User: System1
-
-<figure><img src="../../.gitbook/assets/image2023-7-12_15-46-46.png" alt=""><figcaption></figcaption></figure>
-
-**Chọn User: System1** và **nhấn Add**
-
-<figure><img src="../../.gitbook/assets/image2023-7-12_15-48-3.png" alt=""><figcaption></figcaption></figure>
-
-Sau khi thêm User: System1 vào Policy: vServerFullAccessWebServer, bạn sẽ thấy thông tin như bên dưới
-
-<figure><img src="../../.gitbook/assets/image2023-7-12_15-49-17.png" alt=""><figcaption></figcaption></figure>
-
-**Bước 5**: Đăng nhập và kiểm tra quyền của User: System1
-
-Lúc này bạn có thể đăng nhập vào User: System1 để kiểm tra quyền
-
-Truy cập vào vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), khi chưa đăng nhập bất kì tài khoản nào bạn sẽ được chuyển hướng sang trang sign-in chọn "**Sign-in With IAM User Account**"
-
-<figure><img src="../../.gitbook/assets/image2023-7-12_13-48-49.png" alt=""><figcaption></figcaption></figure>
-
-Điền thông tin root user account email mà User: System1 trước đó đã được tạo, thông tin IAM username và password của User: System1, nhấn **Sign-in with IAM User Account**
-
-<figure><img src="../../.gitbook/assets/image2023-7-12_15-56-13.png" alt=""><figcaption></figcaption></figure>
-
-Lúc này bạn sẽ thấy User: System1 sẽ có toàn quyền trên server web1-server và các Resource khác của vServer.
-
-Truy cập trang chi tiết của web1-server thành công
-
-<figure><img src="../../.gitbook/assets/image2023-7-12_15-58-35.png" alt=""><figcaption></figcaption></figure>
-
-Thực hiện tắt server web1-server thành công:
-
-<figure><img src="../../.gitbook/assets/image2023-7-12_15-59-35.png" alt=""><figcaption></figcaption></figure>
-
-Truy cập trang chi tiết của db-server không thành công:
-
-<figure><img src="../../.gitbook/assets/image2023-7-12_16-0-35 (1).png" alt=""><figcaption></figcaption></figure>
-
-Thực hiện tắt server db-server không thành công:
-
-<figure><img src="../../.gitbook/assets/image2023-7-12_16-1-28.png" alt=""><figcaption></figcaption></figure>
-
-Như vậy là bạn đã hoàn thành việc phân quyền cho User: System1 đầy đủ quyền trên tất cả Resources của vServer, nhưng chỉ đẩy đủ quyền trên Resource:server là: web1-server, không cho phép thao tác vào server quan trọng là db-server
+Thus, you have completed the assignment of permissions for User: System1 with full rights on all Resources of vServer, but only full rights on Resource: server which is: web1-server, not allowing operations on the important server which is db-server

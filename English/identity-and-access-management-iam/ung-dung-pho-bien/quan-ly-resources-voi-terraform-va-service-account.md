@@ -1,7 +1,3 @@
 # Managing Resources with Terraform and Service Account
 
-Để quản lý các Resource với API và Terraform, bạn cần phải sử dụng cặp Client\_ID, Secret\_ID của Service Account, bạn có thể theo các hướng dẫn tại đây
-
-* [Quản lý vServer với Terraform](../../vserver/compute-hcm03-1a/terraform/quan-ly-vserver-voi-terraform.md)
-* [Quản lý vLB với Terraform](../../vserver/compute-hcm03-1a/terraform/quan-ly-vlb-voi-terraform.md)
-* [Quản lý vContainer với Terraform](../../vserver/compute-hcm03-1a/terraform/quan-ly-vcontainer-voi-terraform.md)
+To manage resources with API and Terraform, you need to use the Service Account's Client\_ID and Secret\_ID pair. You can follow the instructions here.

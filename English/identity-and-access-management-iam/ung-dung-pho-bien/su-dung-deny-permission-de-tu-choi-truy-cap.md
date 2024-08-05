@@ -1,60 +1,61 @@
 # Use Deny permission to deny access
 
-Khi có nhu cầu phân quyền truy cập cho phép tất cả action chỉ trừ một vài action cụ thể, bạn cần tạo Policy và sử dụng Deny Permission để đơn giản hoá trong việc phân quyền . Ở hướng dẫn này chúng tôi sẽ hướng dẫn bạn **phân quyền cho phép User: System1 được thực hiện tất cả action của vServer (Full Access), nhưng không cho phép thực hiện action:Delete trên Resource:server**, **để đảm bảo User: System1 không xoá bất kì servers nào**. Mô hình sẽ như bên dưới:
+When there is a need to grant access permissions that allow all actions except for a few specific actions, you need to create a Policy and use Deny Permission to simplify the permission assignment. In this guide, we will instruct you on how to grant permissions allowing&#x20;
 
-Để thiết lập IAM theo mô hình trên chúng ta sẽ có các bước như sau:
+* User: System1 to perform all actions of vServer (Full Access), but not to perform the action: Delete on Resource: server, to ensure User: System1 does not delete any servers. The model will be as follows:\
+  To set up IAM according to the above model, we will have the following steps:
 
-**Bước 1**: Tạo User: System1 nếu chưa có User Account (lưu ý rằng nếu đã có sẵn User: System1, cần đảo bảo User: System1 không có quyền gì hoặc không có các quyền chồng lấn với hướng dẫn)
+**Step 1: Create User: System1 if there is no User Account (note that if User: System1 already exists, make sure User: System1 has no permissions or does not have conflicting permissions with the guide)**
 
-**Bước 2**: Tạo Policy với tên vServerFullAccessExceptDeleteServer cho phép truy cập toàn bộ Resource của vServer, nhưng không cho phép Delete Server
+**Step 2: Create a Policy named vServerFullAccessExceptDeleteServer that allows access to all Resources of vServer but does not allow Delete Server**
 
-**Bước 3**: Gắn Policy: vServerFullAccessExceptDeleteServer cho User: System1
+**Step 3: Attach Policy: vServerFullAccessExceptDeleteServer to User: System1**
 
-**Bước 4**: Đăng nhập và kiểm tra quyền của User: System1
+**Step 4: Log in and check the permissions of User: System1**
 
-Chi tiết các bước như sau
+Details of the steps are as follows
 
-**Bước 1: Tạo User: System1 nếu chưa có User Account (lưu ý rằng nếu đã có sẵn User: System1, cần đảo bảo User: System1 không có quyền gì hoặc không có các quyền chồng lấn với hướng dẫn)**
+Step 1: Create User: System1 if there is no User Account (note that if User: System1 already exists, make sure User: System1 has no permissions or does not have conflicting permissions with the guide)\
+Proceed to create a User Account by accessing the User Account tab on the IAM management page here, click Create a User Account, fill in the Username and Password information, then click Create User Account
 
-Tiến hành tạo User Account bằng cách truy cập vào tab User Account ở trang quản lý IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/user-accounts), nhấn **Create a User Account,** điền thông tin Username và Password, sau đó nhấn **Create User Account**
+After successfully creating the User Account, it will be listed on the User Account page as below.
 
-Sau khi tạo thành công User Account, sẽ được liệt kê ở trang User Account như bên dưới.\\
+Step 2: Create a Policy named vServerFullAccessExceptDeleteServer that allows access to all Resources of vServer but does not allow Delete Server
 
-**Bước 2: Tạo Policy với tên vServerFullAccessExceptDeleteServer cho phép truy cập toàn bộ Resource của vServer, nhưng không cho phép Delete Server**
+To create a Policy, go to the Policy tab on the IAM page here, click Create a Policy, name the Policy: vServerFullAccessExceptDeleteServer and click Next step
 
-Để tạo Policy bạn qua tab Policy ở trang IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/policies), nhấn **Create a Policy**, **đặt tên** cho Policy: **vServerFullAccessExceptDeleteServer** và nhấn **Next step**
-
-Nhấn chọn JSON để chuyển sang chế độ JSON và tạo Policy với đoạn JSON có sẵn. Sử dụng đoạn JSON dưới đây và sao chép vào Policy
+Click JSON to switch to JSON mode and create the Policy with the provided JSON snippet. Use the JSON snippet below and copy it into the Policy
 
 | `{ "statements": [ { "effect": "allow", "actions": [ "vserver:*" ], "resources": [ "*" ], "condition": {} }, { "effect": "deny", "actions": [ "vserver:DeleteServer" ], "resources": [ "*" ], "condition": {} } ]}` |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-Nhấn **Create policy** để tạo Policy
+Press Create policy to create a Policy
 
-**Bước 3**: Gắn Policy: vServerFullAccessExceptDeleteServer cho User: System1
+Step 3: Attach Policy: vServerFullAccessExceptDeleteServer to User: System1\
+After successfully creating the Policy: vServerFullAccessExceptDeleteServer, you proceed to attach this Policy to User: System1, you can do this in User Account or Policy, here we will guide you in Policy, click on the name of the Policy to go to the Policy detail page
 
-Sau khi tạo thành công Policy: vServerFullAccessExceptDeleteServer, bạn tiến hành gắn Policy này cho User: System1, bạn có thể thực hiện ở User Account hoặc Policy, ở đây chúng tôi sẽ hướng dẫn ở Policy, **nhấn vào tên của Policy** để vào trang chi tiết Policy
+Select the Policy usage tab and press Attach to add User: System1
 
-**Chọn tab Policy usage** và **nhấn Attach** để thêm User: System1
+Select User: System1 and press Add
 
-**Chọn User: System1** và **nhấn Add**
+After adding User: System1 to Policy: vServerFullAccessExceptDeleteServer, you will see the information as below
 
-Sau khi thêm User: System1 vào Policy: vServerFullAccessExceptDeleteServer, bạn sẽ thấy thông tin như bên dưới
+Step 4: Log in and check the permissions of User: System1
 
-**Bước 4**: Đăng nhập và kiểm tra quyền của User: System1
+At this point you can log in as User: System1 to check the permissions
 
-Lúc này bạn có thể đăng nhập vào User: System1 để kiểm tra quyền
+Access the vServer here, when not logged into any account you will be redirected to the sign-in page select "Sign-in With IAM User Account"
 
-Truy cập vào vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), khi chưa đăng nhập bất kì tài khoản nào bạn sẽ được chuyển hướng sang trang sign-in chọn "**Sign-in With IAM User Account**"
+Enter the root user account email that User: System1 was previously created, the IAM username and password of User: System1, press Sign-in with IAM User Account
 
-Điền thông tin root user account email mà User: System1 trước đó đã được tạo, thông tin IAM username và password của User: System1, nhấn **Sign-in with IAM User Account**
+At this moment you will see User: System1 will have full rights on the vServer but cannot delete any&#x20;
 
-Lúc này bạn sẽ thấy User: System1 sẽ có toàn quyền trên vServer nhưng không thể xoá được bất kì Resource: server nào
+Resource: server
 
-Truy cập trang chi tiết của web1-server thành công
+Successfully access the detail page of web1-server
 
-Thực hiện tắt server web1-server thành công:
+Successfully turn off the web1-server:
 
-Nhưng không thể xoá server web1-server
+But cannot delete the web1-server
 
-Như vậy là bạn đã hoàn thành việc phân quyền cho phép User: System1 được thực hiện tất cả action của vServer (Full Access), nhưng không cho phép thực hiện action:Delete trên Resource:server, để đảm bảo User: System1 không xoá bất kì servers nào.
+Thus you have completed the authorization allowing User: System1 to perform all actions of the vServer (Full Access), but not allowing the action: Delete on Resource: server, to ensure User: System1 does not delete any servers.
