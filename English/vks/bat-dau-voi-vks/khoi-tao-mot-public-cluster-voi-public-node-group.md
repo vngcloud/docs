@@ -166,8 +166,6 @@ Trong đó node\_ip có thể là địa chỉ node\_port của bất kỳ node 
 
 Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://61.28.231.65:31007/](http://61.28.231.65:31007/)
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/73761995/image2024-4-4_11-33-17.png?version=1&#x26;modificationDate=1712205198000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
 Nếu bạn muốn expose service này thông qua vLB Layer4, vLB Layer7, vui lòng tham khảo tại:
 
 * [Expose một service thông qua vLB Layer4](expose-mot-service-thong-qua-vlb-layer4.md)
