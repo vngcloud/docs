@@ -2,7 +2,7 @@
 
 Cho phép bạn xem được các thống kê tổng quan về tình trạng hệ thống, bao gồm công suất điện, nhiệt độ, độ ẩm,…
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805710/screencapture-stg-vcolo-console-vngcloud-tech-dashboard-2023-06-19-09_41_32-20230619-024144.png?version=1&#x26;modificationDate=1689563344000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Thống kê không gian thuê <a href="#thongke-dashboard-thongkekhonggianthue" id="thongke-dashboard-thongkekhonggianthue"></a>
 

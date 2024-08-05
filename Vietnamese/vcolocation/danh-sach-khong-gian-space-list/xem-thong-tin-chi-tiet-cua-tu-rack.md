@@ -2,14 +2,11 @@
 
 Bằng cách nhấn nút “**View detail**“ trên mỗi dòng của **Space list**, bạn có thể xem thông tin chi tiết của tủ rack.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805721/vColo%20-%20Space%20-%20Row%20hover.png?version=1&#x26;modificationDate=1689740078000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 #### **Tại giao diện Rack detail, bạn có thể xem được các thông tin:** <a href="#xemthongtinchitietcuaturack-taigiaodienrackdetail-bancothexemduoccacthongtin" id="xemthongtinchitietcuaturack-taigiaodienrackdetail-bancothexemduoccacthongtin"></a>
 
-\
-
-
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805721/image-20230619-074511.png?version=1&#x26;modificationDate=1689563888000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 **Basic information:** thông tin về định danh của tủ Rack.
 

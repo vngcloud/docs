@@ -2,11 +2,11 @@
 
 Bạn có thể xem Rack layout (sơ đồ bố trí thiết bị trên rack) bằng cách chọn tủ rack cần xem và bấm nút “View rack layout“ phía trên đầu của danh sách (ứng dụng hỗ trợ xem rack layout của 10 tủ rack cùng một lúc).
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805717/image-20230619-030312.png?version=1&#x26;modificationDate=1689563611000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 #### **Trong giao diện Rack layout, bạn có thể:** <a href="#xemsodobotrithietbitrenrack-viewracklayout-tronggiaodienracklayout-bancothe" id="xemsodobotrithietbitrenrack-viewracklayout-tronggiaodienracklayout-bancothe"></a>
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805717/image-20230619-021322.png?version=1&#x26;modificationDate=1689563639000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 #### **Xem vị trí lắp đặt của thiết bị trên tủ rack** <a href="#xemsodobotrithietbitrenrack-viewracklayout-xemvitrilapdatcuathietbitrenturack" id="xemsodobotrithietbitrenrack-viewracklayout-xemvitrilapdatcuathietbitrenturack"></a>
 

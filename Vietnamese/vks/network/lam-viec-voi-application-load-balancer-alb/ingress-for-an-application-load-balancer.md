@@ -190,7 +190,7 @@ Sau khi bạn đã thực hiện triển khai Ingress , Chúng tôi sẽ tự đ
 
 Ví dụ:
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Chú ý:
@@ -227,14 +227,13 @@ spec:
                 port:
                   number: 80
 ```
-
 {% endhint %}
 
 ***
 
 #### **2.Nếu bạn đã có sẵn một Application Load Balancer** đã khởi tạo trước đó trên hệ thống vLB và bạn muốn tái sử dụng ALB cho cluster của bạn. <a href="#ingressforanapplicationloadbalancer-2.neubandacosanmotapplicationloadbalancerdakhoitaotruocdotrenhet" id="ingressforanapplicationloadbalancer-2.neubandacosanmotapplicationloadbalancerdakhoitaotruocdotrenhet"></a>
 
-Lúc này, khi tạo một Ingress, bạn hãy nhập thông tin Load Balancer ID vào annotation <mark style="color:red;">**vks.vngcloud.vn/load-balancer-id**</mark><mark style="color:red;">**.**</mark> Ví dụ, trong trường hợp này tôi đã tái sử dụng ALB có ID = lb-2b9d8974-3760-4d60-8203-9671f229fb96:
+Lúc này, khi tạo một Ingress, bạn hãy nhập thông tin Load Balancer ID vào annotation <mark style="color:red;">**vks.vngcloud.vn/load-balancer-id.**</mark> Ví dụ, trong trường hợp này tôi đã tái sử dụng ALB có ID = lb-2b9d8974-3760-4d60-8203-9671f229fb96:
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -382,7 +381,7 @@ Annotations:  vks.vngcloud.vn/load-balancer-id: lb-6cdea8fd-4589-410e-933f-c3bc4
 Events:       <none>
 ```
 
-* Để cập nhật nginx-ingress hiện có, ta có thể thực hiện bằng cách cập nhật Ingress Yaml file như sau:
+*   Để cập nhật nginx-ingress hiện có, ta có thể thực hiện bằng cách cập nhật Ingress Yaml file như sau:
 
     ```
     kubectl edit ingress nginx-ingress
@@ -400,4 +399,4 @@ Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao 
 
 Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.129/](http://180.93.181.129/)
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

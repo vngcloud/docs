@@ -2,7 +2,7 @@
 
 Danh sách cho phép user lọc theo Site hoặc theo tình trạng sở hữu của tủ rack
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805724/image-20230619-024842.png?version=1&#x26;modificationDate=1689564170000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 Dưới đây là chú thích về các loại tình trạng sở hữu của tủ rack:
 

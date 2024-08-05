@@ -2,11 +2,11 @@
 
 Tại trang quản lý yêu cầu, click **Open Ticket** để tạo ticket mới
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805735/image-20230619-041344%20(1).png?version=1&#x26;modificationDate=1689564661000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 **Giao diện nhập thông tin của yêu cầu:**
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805735/image-20230619-042418.png?version=1&#x26;modificationDate=1689564681000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 **Chú thích các bước:**
 

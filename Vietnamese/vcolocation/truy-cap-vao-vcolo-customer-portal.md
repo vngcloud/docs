@@ -6,7 +6,7 @@ Bạn cần **đăng ký tài khoản** và **kích hoạt tài khoản** sử d
 2. Sau khi có tài khoản, hãy liên hệ với bộ phận hỗ trợ KH của VNG Cloud để được kích hoạt tài khoản dịch vụ vColo
 3. Tiến hành đăng nhập theo hướng dẫn sau:
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/59805707/image-20230619-061804.png?version=1&#x26;modificationDate=1689563226000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 * Mở trình duyệt web và truy cập vào địa chỉ: [vcolo.vngcloud.vn](https://vcolo.vngcloud.vn/).
 * Chọn **SIGN IN WITH ROOT USER ACCOUNT** _(hệ thống chưa hỗ trợ đăng nhập bằng tài khoản IAM)_
