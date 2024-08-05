@@ -14,7 +14,7 @@ To use a Coupon, simply follow these steps:
 * In cases where users use a Coupon when paying for an order with multiple resources, the Coupon value will be divided among the resources based on the value of the resources on the total order.
 * Below is an example of applying a 150,000 VND Coupon for a single payment consisting of multiple resources:
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 → **The total initial order amount** is 1,500,000 VND.&#x20;
 
