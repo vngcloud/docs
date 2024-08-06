@@ -40,13 +40,15 @@ To be able to use Palo Alto as NAT Gateway for Cluster on VKS system, you need:
 
 ### Configure parameters for Palo Alto <a href="#toc165621058" id="toc165621058"></a>
 
-**Step 1:** After initializing Palo Alto from vMarketPlace according to the instructions above, you can access the vServer interface here [to](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) check if the server running Palo Alto has been initialized.
+**Step 1:** After initializing Palo Alto from vMarketPlace according to the instructions above, you can access the vServer interface here [to](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) check if the server running Palo Alto has been initialized. **Next, open the Any rule on the Security Group for the Palo Alto server you just created. Opening the Any rule on the Security Group will allow all traffic to the Palo Alto server.**
+
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FMo5Y0pu0O6CEU5CvUNE0%252Fimage.png%3Falt%3Dmedia%26token%3Dd9fc371d-1c8b-4d6a-9922-a1d179a182de&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=46b79f8b&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 **Step 2: After the server running Palo Alto is successfully initialized** . To access the Palo Alto GUI you need a vServer running Windows. Then you access it using IP Internal Interface with the default login name and password: **admin/admin**
 
 Note: Go to the Network section of vServer Windows to access the Palo Alto GUI. You need to create the same VPC and use a different subnet than the subnet with priority 1 when initializing Palo Alto
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F3%2520%281%29.png\&width=768\&dpr=4\&quality=100\&sign=22583bd2\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FfTVtgpMAHJkTjDwWbvcS%252F3.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=92961540&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 **Step 3** : After logging in, you need to change your password for the first time. Please enter a new password according to your wishes.
 
@@ -54,15 +56,15 @@ Note: Go to the Network section of vServer Windows to access the Palo Alto GUI. 
 
 * Select **Add pen**
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F4%2520%281%29.png\&width=768\&dpr=4\&quality=100\&sign=54f22251\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fsxq4KiD45CiFnLvgvT97%252F4.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=969d833&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 * Name **the Zone** : **Inside** then select **OK**
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F5%2520%281%29.png\&width=768\&dpr=4\&quality=100\&sign=7a4cb488\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fij66Mg6hfFyQgW8NUYMz%252F5.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=1a7196e&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 * Do the same for **Zone Outside**
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F6%2520%281%29.png\&width=768\&dpr=4\&quality=100\&sign=38d93427\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FmT4jxTevbstzFMq2cSH4%252F6.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=7e4a6d68&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 **Step 5** : Configure **External Interface**
 
@@ -70,64 +72,64 @@ Note: Go to the Network section of vServer Windows to access the Palo Alto GUI. 
 * Virtual Router: **default**
 * Security Zone: **Outside**
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F7%2520%281%29.png\&width=768\&dpr=4\&quality=100\&sign=5920afc6\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fl5BvtPhJ4aj6rKsqXgav%252F7.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=18b67d6b&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 * Switch to **IPv4 Tab** and select **Add** to enter **Static IP** for **External Interface**
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F8.png\&width=768\&dpr=4\&quality=100\&sign=1a486112\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FmwD1RHw4lPsQaEmYKnVU%252F8.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=cf3bab43&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 * To get this IP information, go to **Palo Alto** 's **Network Interface** section to view the information
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F9.png\&width=768\&dpr=4\&quality=100\&sign=545a180b\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FJlcTU3IM66mh4dJwBjah%252F9.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=d6b3e068&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 * Switch to the **Advanced** tab , in the **MTU** section you need to set it to **1400**
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F10.png\&width=768\&dpr=4\&quality=100\&sign=246ea00f\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F0gt8OgqCeBCYCiWAm8AZ%252F10.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=cc092e02&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 **Step 6:** Perform similar configuration for **Internal Interfaces**
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F11.png\&width=768\&dpr=4\&quality=100\&sign=f8152556\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fd7wHzLfZrljuSwLYpnpd%252F11.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=82dfc359&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 * At the **IPv4 tab:** you proceed to set up **Static IP**
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F12.png\&width=768\&dpr=4\&quality=100\&sign=52419b31\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FpfcMwq9l6fvqTA2lUDg4%252F12.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=7073aa9f&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 * Switch to the **Advanced** tab , in the **MTU** section , set it to 1400
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F13.png\&width=768\&dpr=4\&quality=100\&sign=fa9cf8f8\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FXAw0reWRA2mDWUp9WZ9a%252F13.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=95c732cd&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 **Step 7:** Create **static route**
 
 * Go to **Network** -> **Virtual Routers** -> Select **default** -> Switch to **Static Routes**
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F14.png\&width=768\&dpr=4\&quality=100\&sign=82b0bfc3\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FA2aQgd5pd9pZ3JWhJNwP%252F14.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=7342857f&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 * Create a **route** as shown below
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F15.png\&width=768\&dpr=4\&quality=100\&sign=463fabaa\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FvsC8tROTQ0mky8obky6b%252F15.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=d174dfe1&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 **Step 8:** Create **Security Policy Rule**
 
 * Go to **Policies** -> **Security** -> **Add**
 * On the **General** tab , you need to name the rule
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F16.png\&width=768\&dpr=4\&quality=100\&sign=57cbbb25\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FpP5eixJyZZX8E3Yuy27v%252F16.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=96e75460&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 * At the **Source** tab , set information such as **Source Zone** , **Source Address** , **Source User, Source Device**
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F17.png\&width=768\&dpr=4\&quality=100\&sign=c887edbc\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F3lYCwAmMy1TITH5QHtes%252F17.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=1663e1d&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 * At the **Destination** tab , set information such as **Destination Zone, Destination Address, Destination Device**
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F18.png\&width=768\&dpr=4\&quality=100\&sign=dfafb617\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fp97uUTeexfwVJTpg5fVf%252F18.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b59c89f3&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 * At the **Application** tab , set information such as **Application, Depend On**
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F19.png\&width=768\&dpr=4\&quality=100\&sign=d8384a1e\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FVgqawaODEexO0NIST1Jo%252F19.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=27c690c6&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 * At the **Service/URL Category** tab , set information such as **Service, URL Category**
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F20.png\&width=768\&dpr=4\&quality=100\&sign=c64de03a\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FjbBinxnlUQBJi1CXOnGI%252F20.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=ace2fee&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 * At the **Actions** tab , set information such as **Action, Log, Profile, Other Settings**
 
@@ -135,25 +137,25 @@ Note: Go to the Network section of vServer Windows to access the Palo Alto GUI. 
 
 * Go to **Policies** -> **NAT** -> **Add**
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252Fgit-blob-d34e711b6b3fa0d758cc77f0c470d2c8c5465b0b%252F1.png%3Falt%3Dmedia\&width=768\&dpr=4\&quality=100\&sign=c7f2da58\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FTHEB8RlsXB5l68dXBjeb%252F1.png%3Falt%3Dmedia%26token%3D8b48e79d-32ba-4020-94ca-759a10058400&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=3aebed9e&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 * On the **General** tab , name **the NAT rule**
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252Fgit-blob-62814b880ed26021a79b49040b9e4833b6dd1b64%252F2.png%3Falt%3Dmedia\&width=768\&dpr=4\&quality=100\&sign=324a9aec\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F7l4Ou8TlDHWIGRvSdXiY%252F2.png%3Falt%3Dmedia%26token%3D2cdc3921-6586-47c4-ba77-7d8f44dee23c&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=ce1152e6&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 * At the **Original Packet** tab, select **Source Zone, Destination Zone, Destination Interface, Service, Source Address, Destination Address**
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F3.png\&width=768\&dpr=4\&quality=100\&sign=9cc73b65\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FjRLcya4QZ1uIpMlp6ct6%252F3.png%3Falt%3Dmedia%26token%3Db7676618-4884-48b5-9543-9d8e50200cc1&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=dcfbd716&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 * Create the **Translated Packet** tab and perform configuration as shown below
 
 Note: Need to change **the IP Address to the Static IP** address that you configured in step 6
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F4.png\&width=768\&dpr=4\&quality=100\&sign=9bd19b96\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F6HxruDAG2Dl9ewMJyH7I%252F4.png%3Falt%3Dmedia%26token%3D4505b24f-84d4-4a05-85d8-87a429251401&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=67371524&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 **Step 10** : Proceed **to Commit**
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2F5.png\&width=768\&dpr=4\&quality=100\&sign=5058084f\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FfnOw3psNPa0oobJ7jCqo%252F5.png%3Falt%3Dmedia%26token%3Da2137701-c8d7-4049-a548-23ce1acad88f&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=5a58522f&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -182,10 +184,12 @@ After Palo Alto is successfully initialized and configured, you need to create a
 
 For example:
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252Fgit-blob-f2ce363bb830cb7e3607f230606d1987bc481d93%252Fimage.png%3Falt%3Dmedia\&width=768\&dpr=4\&quality=100\&sign=2d80b393\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FZc60y0UEzBvPiuxzVD7R%252Fimage.png%3Falt%3Dmedia%26token%3D69bc0216-92aa-44a6-b572-11374f16e0d7&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=7788e4b1&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### **Checking connection** <a href="#kiem-tra-ket-noi" id="kiem-tra-ket-noi"></a>
 
 * Proceed to ping 8.8.8.8 or google.com
+
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F1L08GGz5kd3i8A4h6VK7%252F7.png%3Falt%3Dmedia%26token%3Dd1959dff-38d1-49a8-a30b-718a1ec6ae77&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=fbc0270&#x26;sv=1" alt=""><figcaption></figcaption></figure>
