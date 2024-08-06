@@ -1,60 +1,57 @@
-# Làm việc với Metric Information
+# Working with Metric Information
 
-### Xem danh sách các metrics đang tồn tại
+## View a list of existing metrics <a href="#xem-danh-sach-cac-metrics-dang-ton-tai" id="xem-danh-sach-cac-metrics-dang-ton-tai"></a>
 
-Sau khi bạn thiết lập thành công Metric Agent trên Server hoặc bạn đã sử dụng các Product Metric khác, lúc này bạn có thể xem thông tin các thông số metrics được đẩy về hệ thống vMonitor Platform bằng cách:
+After you have successfully set up the Metric Agent on the Server or you have used other Product Metrics, you can now view the metrics information pushed to the vMonitor Platform system by:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Metric.**
-3. Chọn **Information**.
-4. Hệ thống hiển thị danh sách các **metrics** được đẩy về trong đó:&#x20;
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+2. Select the Metric folder **.**
+3. Select **Information** .
+4. The system displays a list of **metrics** pushed in:
 
-* Metric name: tên của metric được đẩy về.&#x20;
-* Metric Unit: đơn vị tính của metric tương ứng.
-* Description: mô tả ý nghĩa của metric tương ứng nếu có.
+* Metric name: name of the metric to be pushed.
+* Metric Unit: calculation unit of the corresponding metric.
+* Description: describes the meaning of the corresponding metric, if any.
 
-<figure><img src="../../../.gitbook/assets/image (144).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F7PDo4GLn6lbgjDRwNOzo%252Fimage.png%3Falt%3Dmedia%26token%3D6a41a686-445e-47a6-b1ca-8b8b6602fe21&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=30d50803&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### Xem thông tin chi tiết metric
+## View detailed metric information <a href="#xem-thong-tin-chi-tiet-metric" id="xem-thong-tin-chi-tiet-metric"></a>
 
-Để xem thông tin chi tiết một metric được đẩy về vMonitor Platform, hãy làm theo hướng dẫn bên dưới:&#x20;
+To view detailed information about a metric pushed to vMonitor Platform, follow the instructions below:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Metric.**
-3. Chọn **Information**.
-4. Chọn vào **metric** mà bạn muốn xem thông tin chi tiết. Lúc này hệ thống sẽ hiển thị **Metadata** và **Dimensions** của metric này.&#x20;
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+2. Select the Metric folder **.**
+3. Select **Information** .
+4. Select **the metric** for which you want to see detailed information. The system will now display **Metadata** and **Dimensions** of this metric.
 
-<figure><img src="../../../.gitbook/assets/image (145).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FCG1JU5deDtHPs9V2lRA7%252Fimage.png%3Falt%3Dmedia%26token%3De8e9eada-e976-42b3-b1c2-3d9c02231b3b&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=d4a1e918&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-* Trong đó**:**
+* In there **:**
   * **Metadata**
-    * Unit: đơn vị số liệu của metric. Bạn có thể chỉnh sửa đơn vị tính này về một trong các giá trị mà chúng tôi cung cấp bao gồm: %, bytes, bytes/s, MB, ms, nanosecond, requests/s, seconds, short, short/ms.
-    * Description: mô tả ý nghĩa hoặc đặc điểm của metric.
-*
-  * **Dimensions**: các thông tin về đặc điểm hoặc nguồn của metrics và được quản lý dưới dạng key-value.
-    * Dimension key: khóa của dimension: dimension key là duy nhất trên một metric.
-    * Dimension value: giá trị tương ứng của dimention key, 1 dimension key có thể có nhiều dimension value.
+    * Unit: metric unit of metric. You can edit this unit to one of the values ​​we provide including: %, bytes, bytes/s, MB, ms, nanosecond, requests/s, seconds, short, short/ms.
+    * Description: describes the meaning or characteristics of the metric.
+  * **Dimensions** : information about the characteristics or sources of metrics and is managed as key-value.
+    * Dimension key: key of dimension: dimension key is unique on a metric.
+      * Dimension value: corresponding value of dimension key, 1 dimension key can have many dimension values.
 
 ***
 
-### Chỉnh sửa thông tin metric
+## Edit metric information <a href="#chinh-sua-thong-tin-metric" id="chinh-sua-thong-tin-metric"></a>
 
-Bạn có thể chỉnh sửa thông tin metadata của một metric bằng cách:&#x20;
+You can edit a metric's metadata information by:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Metric.**
-3. Chọn **Information.**
-4. Chọn **Metric** bạn muốn chỉnh sửa.
-5. Tại **Metric** mà bạn muốn chỉnh sửa, chọn **Edit**
-6. Chỉnh sửa **metadata** của metric mà bạn mong muốn. **Metadata** của metric bao gồm:
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+2. Select the Metric folder **.**
+3. Select **Information.**
+4. Select **the Metric** you want to edit.
+5. At **the Metric** you want to edit, select **Edit**
+6. Edit **the metadata** of the metrics you desire. Metric **metadata** includes:
 
-* **Unit**: đơn vị tính của metric, bạn có thể chọn 1 trong các giá trị %, bytes, bytes/s, MB, ms, nanosecond, requests/s, seconds, short, short/ms.
-* **Description**: nhập mô tả ý nghĩa hoặc đặc điểm của metric.
+* **Unit** : metric unit, you can choose one of the values ​​%, bytes, bytes/s, MB, ms, nanosecond, requests/s, seconds, short, short/ms.
+* **Description** : enter a description of the meaning or characteristics of the metric.
 
-7\. Chọn **Save.**
+7\. Select **Save.**
 
-8\. Sau khi bạn đã thực hiện thay đổi thông số **metadata** của **metric**, bạn cũng có thể thực hiện khôi phục lại cấu hình **metadata** ban đầu bằng cách chọn **Edit** sau đó chọn **Reset.**
-
-\
+8\. After you have made changes to **the metric** 's **metadata** parameters , you can also restore the original **metadata configuration by selecting Edit** then **Reset.**

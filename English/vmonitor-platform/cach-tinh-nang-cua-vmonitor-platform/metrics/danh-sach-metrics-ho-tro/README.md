@@ -1,27 +1,27 @@
-# Danh sách Metrics hỗ trợ
+# Supported Metrics List
 
-### Linux/ Windows metrics <a href="#danhsachmetricshotro-linux-windowsmetrics" id="danhsachmetricshotro-linux-windowsmetrics"></a>
+## Linux/Windows metrics <a href="#danhsachmetricshotro-linux-windowsmetrics" id="danhsachmetricshotro-linux-windowsmetrics"></a>
 
-Metric Agent của vMonitor Platform được xây dựng dựa trên phần mêm mã nguồn mỡ Telegraf, mặc định khi cài đặt Metric Agent, chúng tôi sẽ mở sẵn các input plugin như:&#x20;
+vMonitor Platform's Metric Agent is built based on Telegraf software. By default, when installing Metric Agent, we will open plugin inputs such as:
 
-* system
-* disk
+* system. system
+* disk. disk
 * kernel
 * net
 * diskio
-* mem
-* processes
+* meme
+* processes. processes
 * swap
 * cpu
 
-Bạn có thể xem thông tin chi tiết các Metric, Unit của các plugin trên tại [đây](https://github.com/influxdata/telegraf/tree/master/plugins/inputs), đồng thời bạn có thể mở thêm các input plugin để đẩy thêm Metric về vMonitor.
+You can see detailed information about the Metrics and Units of the above plugins here [,](https://github.com/influxdata/telegraf/tree/master/plugins/inputs) and you can open additional plugin inputs to push more Metrics to vMonitor.
 
 ***
 
-### Product metrics <a href="#danhsachmetricshotro-productmetrics" id="danhsachmetricshotro-productmetrics"></a>
+## Product metrics <a href="#danhsachmetricshotro-productmetrics" id="danhsachmetricshotro-productmetrics"></a>
 
-Khi các Resource trên VNG Cloud được tạo, mặc định sẽ có 2 loại monitor: Basic và Detail
+When Resources on VNG Cloud are created, by default there will be 2 types of monitors: Basic and Detail
 
-<table data-header-hidden><thead><tr><th width="204"></th><th></th></tr></thead><tbody><tr><td><strong>Monitoring type</strong></td><td><strong>Mô tả</strong></td></tr><tr><td><p><strong>Basic monitoring</strong></p><p>(Mặc định)</p></td><td><ul><li>Ở chế độ này, sẽ có một số lượng metric mặc định được đẩy về và lưu trữ trên hệ thống vMonitor Platform. Chi tiết tham khảo bảng thông số chi tiết bên dưới.</li><li>Dữ liệu có sẵn tự động trong khoảng thời gian 1 phút.</li></ul></td></tr><tr><td><p><strong>Detailed monitoring</strong></p><p>(Nâng cao)</p></td><td><ul><li>Ở chế độ này, tất cả các metric đang có trên Resource được đẩy về và lưu trữ trên hệ thống vMonitor Platform. Chi tiết tham khảo bảng thông số chi tiết bên dưới.</li><li>Dữ liệu có sẵn tự động trong khoảng thời gian 1 phút.</li></ul></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="225"></th><th></th></tr></thead><tbody><tr><td><strong>Monitoring type</strong></td><td><strong>Describe</strong></td></tr><tr><td><p><strong>Basic monitoring</strong></p><p>(Default)</p></td><td><ul><li>In this mode, a number of default metrics will be pushed and stored on the vMonitor Platform system. For details, refer to the detailed parameter table below.</li><li>Data is available automatically at 1 minute intervals.</li></ul></td></tr><tr><td><p><strong>Detailed monitoring</strong></p><p>(Advanced)</p></td><td><ul><li>In this mode, all existing metrics on the Resource are pushed and stored on the vMonitor Platform system. For details, refer to the detailed parameter table below.</li><li>Data is available automatically at 1 minute intervals.</li></ul></td></tr></tbody></table>
 
-Để biết mỗi loại monitoring bạn có thể làm những gì, vui lòng tham khảo tại [Danh sách Metrics hỗ trợ](danh-sach-metrics-cua-host.md).
+To know what each type of monitoring can do, please refer to [the List of Supported Metrics](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/metrics/danh-sach-metrics-ho-tro/danh-sach-metrics-cua-host) .

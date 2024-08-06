@@ -424,7 +424,7 @@
         * [Working with vLB-Metric](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/lam-viec-voi-product-metric/lam-viec-voi-vlb-metric.md)
         * [Working with vDB-Metric](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/lam-viec-voi-product-metric/lam-viec-voi-vdb-metric.md)
         * [Working with vStorage-Metric](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/lam-viec-voi-product-metric/lam-viec-voi-vstorage-metric.md)
-      * [Applications that support integration](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/cac-ung-dung-ho-tro-tich-hop/README.md)
+      * [Applications support integration](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/cac-ung-dung-ho-tro-tich-hop/README.md)
         * [Kubernetes](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/cac-ung-dung-ho-tro-tich-hop/kubernetes.md)
       * [Supported Metrics List](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/danh-sach-metrics-ho-tro/README.md)
         * [List Host's metrics](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/danh-sach-metrics-ho-tro/danh-sach-metrics-cua-host.md)

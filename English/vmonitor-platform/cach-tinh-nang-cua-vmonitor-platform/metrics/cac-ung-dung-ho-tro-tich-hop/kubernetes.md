@@ -1,28 +1,28 @@
 # Kubernetes
 
-### Cài đặt Metric Agent tại Kubernetes Cluster <a href="#kubernetes-caidatmetricagenttaikubernetescluster" id="kubernetes-caidatmetricagenttaikubernetescluster"></a>
+## Install Metric Agent at Kubernetes Cluster <a href="#kubernetes-caidatmetricagenttaikubernetescluster" id="kubernetes-caidatmetricagenttaikubernetescluster"></a>
 
-Bạn có thể cài đặt vMonitor Platform Metric Agent vào Kubernetes Cluster để thu thập và đẩy metric về vMonitor Platform site, sau đó sử dụng các tính năng tại vMonitor Platform để quản lý tập trung tài nguyên và theo dõi hoạt động bất thường của Kubernetes Cluster.
+You can install vMonitor Platform Metric Agent into your Kubernetes Cluster to collect and push metrics to the vMonitor Platform site, then use the features at vMonitor Platform to centrally manage resources and monitor unusual activity of your Kubernetes Cluster. .
 
 ***
 
-#### **Cài đặt Metric Agent sử dụng Helm** <a href="#kubernetes-caidatmetricagentsudunghelm" id="kubernetes-caidatmetricagentsudunghelm"></a>
+## **Install Metric Agent using Helm**
 
-#### **Các bước chuẩn bị trước khi cài đặt** <a href="#kubernetes-cacbuocchuanbitruockhicaidat" id="kubernetes-cacbuocchuanbitruockhicaidat"></a>
+### **Preparation steps before installation**
 
-&#x20;      1\. Kiểm tra bạn đã có Metric Quota và quota chưa chạm mức giới hạn, nếu chưa có bạn cần thực hiện mua Quota Metric tại [đây](https://vmonitor.console.vngcloud.vn/quota-usages/metric).
+1\. Check that you have the Metric Quota and that your quota has not reached the limit. If you do not have it, you need to buy the Metric Quota [here](https://vmonitor.console.vngcloud.vn/quota-usages/metric) .
 
-&#x20;      **2. Tạo Service Account và gắn policy: vMonitorMetricPush để có đủ quyền đẩy Metric về vMonitor Platform.** Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts), sau đó thực hiện các bước sau:
+**2. Create a Service Account and attach policy: vMonitorMetricPush to have enough rights to push Metric to vMonitor Platform.** To create a service account, go here [,](https://hcm-3.console.vngcloud.vn/iam/service-accounts) then perform the following steps:
 
-* Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
-* Tìm và chọn **Policy:** **vMonitorMetricPush,** sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vMonitorMetricPush do VNG Cloud tạo ra chỉ chứa chính xác quyền đẩy metric về hệ thống
-* Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** để thực hiện bước tiếp theo.
+* Select " **Create a Service Account** ", enter a name for the Service Account and click **Next Step** to assign permissions to the Service Account
+* Find and select **Policy: vMonitorMetricPush,** then click " **Create a Service Account** " to create a Service Account, Policy: vMonitorMetricPush created by VNG Cloud only contains the correct permission to push metrics to the system.
+* After successful creation, you need to save **the Client\_ID** and **Secret\_Key** to perform the next step.
 
-#### Cài đặt helm tại Debian/Ubuntu server <a href="#kubernetes-caidathelmtaidebian-ubuntuserver" id="kubernetes-caidathelmtaidebian-ubuntuserver"></a>
+### **Install helm on Debian/Ubuntu server**
 
-&#x20;       1\. Bạn cần cài đặt Helm trên server **có kubeconfig chứa đủ quyền** để tương tác Kubernetes Cluster.
+1\. You need to install Helm on a server **with kubeconfig containing enough permissions** to interact with the Kubernetes Cluster.
 
-* Kiểm tra quyền bằng **command kubectl**:
+* Check permissions with **kubectl command** :
 
 ```
 # Lệnh dùng để kiểm tra quyền tương tác tất cả resource tại namespace default
@@ -34,11 +34,11 @@ kubectl auth can-i create clusterrole
 kubectl auth can-i create clusterrolebinding
 ```
 
-* Nếu kết quả các command trên là **YES** thì bạn đã đủ quyền.
+* If the result of the above commands is **YES** , then you have enough rights.
 
-&#x20;       2\. Tiến hành cài đặt Helm
+2\. Proceed to install Helm
 
-* Thực hiện những command sau:
+* Execute the following commands:
 
 ```
 curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null 
@@ -48,7 +48,7 @@ sudo apt-get update
 sudo apt-get install helm 
 ```
 
-* Kiểm tra Helm đã cài đặt thành công
+* Check that Helm has been installed successfully
 
 ```
 helm version
@@ -56,34 +56,34 @@ helm version
 # version.BuildInfo{Version:"v3.11.0", GitCommit:"472c5736ab01133de504a826bd9ee12cbe4e7904", GitTreeState:"clean", GoVersion:"go1.18.10"}
 ```
 
-#### Để cài đặt Helm tại các hệ điều hành khác, vui lòng tham khảo hướng dẫn cài đặt tại đây: [Install Helm Through Package Managers](https://helm.sh/docs/intro/install/#through-package-managers).
+**To install Helm on other operating systems, please refer to the installation instructions here:** [**Install Helm Through Package Managers**](https://helm.sh/docs/intro/install/#through-package-managers) **.**
 
-&#x20;       3\. Một số lưu ý thêm về Helm: (tham khảo chi tiết tại: [helm docs](https://helm.sh/docs/helm/helm/))
+3\. Some additional notes about Helm: (see details at: [helm docs](https://helm.sh/docs/helm/helm/) )
 
-* Helm sẽ dùng kubeconfig để tương tác với cluster, mặc định helm sẽ dùng config ở đường dẫn: "\~/.kube/config"
-* Nếu cần thay đổi đường dẫn tới kubeconfig ta có thể sử dụng 2 cách:
-  * Với mỗi command helm bạn có thể thêm option --kubeconfig: ví dụ helm install --kubeconfig \<path\_to\_kubeconfig>
-  * Khai báo biến môi trường: KUBECONFIG
+* Helm will use kubeconfig to interact with the cluster, by default helm will use config in the path: "\~/.kube/config"
+* If we need to change the path to kubeconfig we can use 2 ways:
+  * To each helm command you can add the --kubeconfig option: for example helm install --kubeconfig \<path\_to\_kubeconfig>
+  * Declare environment variable: KUBECONFIG
 
 ***
 
-#### Cài đặt Metric Agent <a href="#kubernetes-caidatmetricagent" id="kubernetes-caidatmetricagent"></a>
+## **Install Metric Agent**
 
-Mặc định khi cài đặt vMonitor Platform Metric Agent sẽ có 2 thành phần:
+By default, when installing vMonitor Platform Metric Agent, there will be 2 components:
 
-* **Deployment Agent kube-state-metrics**: thu thập metric từng resource của k8s cluster (pod, daemonset, deployment, replicaset, ....)
-* **Daemonset** **Agent**: thu thập metrics từng node k8s cluster (CPU, Memory usage, ...)
+* **Deployment Agent kube-state-metrics** : collect metrics for each resource of k8s cluster (pod, daemonset, deployment, replicaset, ....)
+* **Daemonset Agent** : collect metrics for each k8s cluster node (CPU, Memory usage, ...)
 
-&#x20;       1\. Thêm Helm vMonitor Platform Repo theo lệnh
+1\. Add Helm vMonitor Platform Repo as command
 
 ```
 helm repo add vmonitor-platform https://vngcloud.github.io/helm-charts-vmonitor
 helm repo update
 ```
 
-&#x20;       2\. Cài đặt chart
+2\. Install charts
 
-* Cài đặt tại **namespace default** (thêm cờ **-n \<namespace\_chỉ\_định>** để cài đặt agent tại namespace khác)
+* Install at **default namespace** (add flag **-n \<namespace\_specified>** to install agent at another namespace)
 
 ```
 helm install vmonitor-metric-agent vmonitor-platform/vmonitor-metric-agent \
@@ -92,31 +92,31 @@ helm install vmonitor-metric-agent vmonitor-platform/vmonitor-metric-agent \
  --set vmonitor.clusterName=<CLUSTER_NAME> 
 ```
 
-* Trong đó:&#x20;
-  * \<YOUR\_CLIENT\_ID\_XXXXXXXXXXXXXXXXXXX>, \<YOUR\_CLIENT\_SECRET\_XXXXXXXXXXXXXXX>: Thông tin service account đã tạo ở bước chuẩn bị
-  * &#x20;\<CLUSTER\_NAME>: Thông tin này sẽ dùng để lọc các host của k8s cluster trong trường hợp có nhiều cluster để theo dõi
-* Kiểm tra việc install agent thành công qua lệnh
+* In there:
+  * \<YOUR\_CLIENT\_ID\_XXXXXXXXXXXXXXXXXXX>, \<YOUR\_CLIENT\_SECRET\_XXXXXXXXXXXXXXX>: Service account information created in the preparation step
+  * \<CLUSTER\_NAME>: This information will be used to filter hosts of k8s cluster in case there are many clusters to monitor
+* Check the successful installation of the agent via command
 
 ```
 # Chạy command và đảm bảo output là các pods ở trạng thái running
 kubectl get pod | grep "vmonitor-metric-agent"
 ```
 
-**Sau khi cài đặt hoàn tất, metric theo dõi kubernetes đã được đẩy về vMonitor Platform site , bạn có thể tiến hành lên vMonitor Platform để vẽ các dashboard, widget.**
+**After installation is complete, kubernetes tracking metrics have been pushed to the vMonitor Platform site, you can proceed to vMonitor Platform to draw dashboards and widgets.**
 
 ***
 
-#### Gỡ cài đặt Metric Agent <a href="#kubernetes-gocaidatmetricagent" id="kubernetes-gocaidatmetricagent"></a>
+## **Uninstall Metric Agent**
 
-Thực hiện command sau để xóa các k8s resources liên quan đã cài đặt:
+Execute the following command to delete the installed related k8s resources:
 
 ```
 helm uninstall vmonitor-metric-agent
 ```
 
-#### Cài đặt Metric Agent không sử dụng kube-state-metrics <a href="#kubernetes-caidatmetricagentkhongsudungkube-state-metrics" id="kubernetes-caidatmetricagentkhongsudungkube-state-metrics"></a>
+**Metric Agent installation does not use kube-state-metrics**
 
-* Cài đặt tại **namespace default** (thêm cờ **-n \<namespace\_chỉ\_định>** để cài đặt agent tại namespace khác)
+* Install at **default namespace** (add flag **-n \<namespace\_specified>** to install agent at another namespace)
 
 ```
 helm install vmonitor-metric-agent vmonitor-platform/vmonitor-metric-agent \
@@ -129,13 +129,13 @@ helm install vmonitor-metric-agent vmonitor-platform/vmonitor-metric-agent \
 
 ***
 
-### Monitor Kubernetes (K8S) tại vMonitor Platform  <a href="#kubernetes-monitorkubernetes-k8s-taivmonitorplatform" id="kubernetes-monitorkubernetes-k8s-taivmonitorplatform"></a>
+## Monitor Kubernetes (K8S) at vMonitor Platform <a href="#kubernetes-monitorkubernetes-k8s-taivmonitorplatform" id="kubernetes-monitorkubernetes-k8s-taivmonitorplatform"></a>
 
-Để thực hiện monitor Kubernetes (K8S) tại vMonitor Platform, vui lòng thực hiện theo hướng dẫn bên dưới:
+To perform a Kubernetes (K8S) monitor at vMonitor Platform, please follow the instructions below:
 
-**Bước 1**: Cài đặt helm từ API đối với **hệ điều hành Debian/Ubuntu,** bạn nên cài đặt Helm trên máy có kubeconfig và có đủ quyền để truy cập lên Kubernetes Cluster bạn cần theo dõi
+**Step 1** : Install helm from API for **Debian/Ubuntu operating system,** you should install Helm on the machine with kubeconfig and have enough rights to access the Kubernetes Cluster you need to monitor
 
-* Thực hiện những command sau&#x20;
+* Execute the following commands
 
 ```
 curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null 
@@ -145,23 +145,23 @@ sudo apt-get update
 sudo apt-get install helm 
 ```
 
-**Đối với những hệ điều hành khác** có thể tham khảo hướng dẫn cài đặt tại đây: [Install Helm Through Package Managers](https://helm.sh/docs/intro/install/#through-package-managers)&#x20;
+**For other operating systems** , you can refer to the installation instructions here: [Install Helm Through Package Managers](https://helm.sh/docs/intro/install/#through-package-managers)
 
-* Kiểm tra helm đã được cài đặt thành công bằng lệnh
+* Check that helm has been installed successfully with the command
 
 ```
 helm version 
 ```
 
-**Bước 2**: Kiểm tra quyền tương tác với cluster k8s
+**Step 2** : Check permissions to interact with k8s cluster
 
-* Một số lưu ý về helm: (tham khảo chi tiết tại: [helm docs](https://helm.sh/docs/helm/helm/))
-  * Helm sẽ dùng kubeconfig để tương tác với cluster, mặc định helm sẽ dùng config ở đường dẫn: "\~/.kube/config"
-  * Nếu cần thay đổi đường dẫn tới kubeconfig ta có thể sử dụng 2 cách:
-    * Với mỗi command helm ta thêm option --kubeconfig: ví dụ helm install --kubeconfig \<path\_to\_kubeconfig>
-    * Khai báo biến môi trường: KUBECONFIG
-* Kiểm tra quyền:
-  * Sử dụng command kubectl:
+* Some notes about helm: (see details at: [helm docs](https://helm.sh/docs/helm/helm/) )
+  * Helm will use kubeconfig to interact with the cluster, by default helm will use config in the path: "\~/.kube/config"
+  * If we need to change the path to kubeconfig we can use 2 ways:
+    * For each helm command, add the --kubeconfig option: for example, helm install --kubeconfig \<path\_to\_kubeconfig>
+    * Declare environment variable: KUBECONFIG
+* Check permissions:
+  * Use the kubectl command:
 
 ```
 # Lệnh dùng để kiểm tra quyền tương tác tất cả resource tại namespace default
@@ -173,9 +173,9 @@ kubectl auth can-i create clusterrole
 kubectl auth can-i create clusterrolebinding
 ```
 
-Nếu kết quả các command trên ra YES thì bạn đã đủ quyền để thực hiện các bước tiếp theo
+If the results of the above commands are YES, then you have enough rights to perform the next steps
 
-**Bước 3**: Cài đặt kube-state-metrics bằng helm
+**Step 3** : Install kube-state-metrics using helm
 
 ```
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts 
@@ -183,53 +183,51 @@ helm repo update
 helm install -n kube-system kube-state-metrics prometheus-community/kube-state-metrics --set image.tag="v2.7.0" 
 ```
 
-* Kiểm tra install kube-state-metrics thành công
+* Check that the installation of kube-state-metrics was successful
 
 ```
 # Chạy command và đảm bảo output là các pods ở trạng thái running
 kubectl get pod -n kube-system | grep kube-state-metrics
 ```
 
-{% hint style="info" %}
-**Chú ý:**
+**Attention:**
 
-* Hiện tại vMonitor metric agent chỉ hỗ trợ kube-state-metrics version <= v2.7.0.
-{% endhint %}
+* Currently vMonitor metric agent only supports kube-state-metrics version <= v2.7.0.
 
-**Bước 4**: Cài đặt vmonitor metric agent bằng helm&#x20;
+**Step 4** : Install vmonitor metric agent using helm
 
-Mặc định, vMonitor metric agent sẽ có 2 thành phần: deployment dùng để thu thập kube-state-metrics và thành phần daemonset để thu thập metrics từng node k8s&#x20;
+By default, vMonitor metric agent will have 2 components: deployment used to collect kube-state-metrics and daemonset component to collect metrics for each k8s node
 
-* Thêm vMonitor helm repository
+* Add vMonitor helm repository
 
 ```
 helm repo add vmonitor https://vngcloud.github.io/helm-charts-vmonitor/
 helm repo update 
 ```
 
-* Cài đặt vmonitor-metric-agent từ helm repository, mặc định sẽ được cài đặt ở namespace:default, nếu bạn muốn cài ở namespace khác, thì thêm option –n ở command bên dưới, bạn có thể thay đổi tên **vng-vmonitor-metric-agent** thành bất kì tên nào bạn muốn và đổi **k8s-cluster-name** thành tên Kubernetes Cluster của bạn
+* Install vmonitor-metric-agent from the helm repository, by default it will be installed in namespace:default, if you want to install in another namespace, add the –n option in the command below, you can change the name **vng-vmonitor- metric-agent** to whatever name you want and change **k8s-cluster-name** to your Kubernetes Cluster name
 
 ```
 helm install vmonitor-metric-agent --set vmonitor.apiKey=<API_KEY> --set vmonitor.clusterName=k8s-cluster vmonitor/vmonitor-metric-agent 
 ```
 
-* Kiểm tra việc install agent thành công
+* Check that the agent installation was successful
 
 ```
 # Chạy command và đảm bảo output là các pods ở trạng thái running
 kubectl get pod | grep "vmonitor-metric-agent"
 ```
 
-**Bước 5: sau khi cài đặt xong tất cả metric theo dõi kubernetes đã được đẩy về, bạn có thể tiến hành lên vMonitor để vẽ các dashboard, widget.**
+**Step 5: After installing all kubernetes tracking metrics have been pushed, you can proceed to vMonitor to draw dashboards and widgets.**
 
-* Nếu không còn nhu cầu sử dụng vmonitor metric agent bạn có thể thực hiện gỡ cài đặt bằng command bên dưới
+* If you no longer need to use vmonitor metric agent, you can uninstall it with the command below
 
 ```
 helm uninstall vmonitor-metric-agent
 ```
 
 {% hint style="info" %}
-**Chú ý:**
+**Attention:**
 
-* Khi monitor Kubernetes với vMonitor Platform, hiện tại bạn chỉ bị tính tiền số lượng Host vào Quota, số lượng Host sẽ được tính bằng số lượng kubelet worker node bạn đang có cộng thêm 1. Số lượng Container trên mỗi Host sẽ chưa được tính vào thời điểm này.&#x20;
+* When monitoring Kubernetes with vMonitor Platform, you are currently only charged for the number of Hosts into the Quota, the number of Hosts will be calculated by the number of kubelet worker nodes you have plus 1. The number of Containers per Host will not be counted. this moment.
 {% endhint %}

@@ -1,26 +1,26 @@
-# Làm việc với vServer-Metric
+# Working with vServer-Metric
 
-Khi bạn tạo các vServer, hệ thống sẽ tự động thu thập các Metric cơ bản và hiển thị ở tab Infrastructure List/ vServer, giúp bạn có thể theo dõi được các vServer trên VNG Cloud hoàn toàn miễn phí, thông tin monitor các vServer được vMonitor lấy thông qua lớp hypervisor nên một số các metric như Memory Usage sẽ có thể không chính xác và không có metric Disk Usage, để có được các Metric này và đầy đủ hơn bạn sẽ cần sử dụng Metric Agent và cài vào các vServer như hướng dẫn tại [Làm việc với Metric Agent](../lam-viec-voi-metric-agent/).
+When you create vServers, the system will automatically collect basic metrics and display them in the Infrastructure List/vServer tab, allowing you to monitor vServers on VNG Cloud completely free of charge. VServer monitoring information is provided. vMonitor is taken through the hypervisor layer so some metrics such as Memory Usage may not be accurate and there is no Disk Usage metric. To get these metrics and be more complete you will need to use Metric Agent and install it on vServers like instructions at [Working with Metric Agent](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/metrics/lam-viec-voi-metric-agent) .
 
-<figure><img src="../../../../.gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FL8sYpKlseELLqTDL0pGI%252Fimage.png%3Falt%3Dmedia%26token%3D1f961a98-6ee2-4945-b012-1c2bb4bca1af&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=af472389&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-Tại trang này ở mỗi vServer bạn sẽ thấy các thông tin như sau:
+On this page for each vServer you will see the following information:
 
-* **Host**: tên và ID của vServer
-* **Status**: trạng thái của vServer
-* **CPU**: thông tin CPU hiện tại
-* **Memory**: thông tin Memory hiện tại
-* **Load**: thông tin Load hiện tại
-* **Detailed Monitoring**: mặc định sẽ là tắt, khi bạn có nhu cầu cần vẽ các Metric khác ngoài các Metric mà dashboard mặc định chúng tôi đã vẽ và tạo các Alarm để cảnh báo với tài nguyên này, thì bạn cần bật tính năng này lên. Để bật tính năng này bạn cần mua gói Metric Quota (gói có phí hay miễn phí đều được), tuy nhiên bạn sẽ không bị tính là 1 Host khi bật và hoàn toàn miễn phí, chỉ khi tạo Alarm là sẽ bị tính Alarm quota.
+* **Host** : name and ID of vServer
+* **Status** : status of vServer
+* **CPU** : current CPU information
+* **Memory** : current Memory information
+* **Load** : current Load information
+* **Detailed Monitoring** : the default will be off. When you need to draw metrics other than the metrics that the default dashboard we have drawn and create Alarms to warn about this resource, you need to turn this feature on. . To enable this feature, you need to purchase the Metric Quota package (paid or free packages are available), however you will not be counted as a Host when enabled and it is completely free, only when creating an Alarm will the Alarm quota be charged. .
 
-&#x20;Khi nhấn vào tên của vServer, bạn sẽ được chuyển sang trang Dashboard, và xem default dashboard của vServer này, quy tắc đặt tên dashboard của vServer sẽ là vServer-hostname-ID (lấy block thứ 3 của ID vServer)
+When you click on the name of the vServer, you will be redirected to the Dashboard page, and see the default dashboard of this vServer. The vServer dashboard naming rule will be vServer-hostname-ID (get the 3rd block of vServer ID).
 
-<figure><img src="../../../../.gitbook/assets/image (147).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fl0JoHESoKtZLIiijnNP3%252Fimage.png%3Falt%3Dmedia%26token%3D82a94cbd-4cf6-4315-8c8e-da881d8631ab&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=547a893d&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Chú ý:**
+**Attention:**
 
-* Hệ thống vMonitor sẽ mất 1 khoảng thời gian trung bình 5-10 phút (có thể có trường hợp tệ nhất là 20 phút) để cập nhập vServer mới sau khi bạn tạo.
-* Để xem danh sách metrics tương ứng của mỗi product này, hãy xem tại [Danh sách Metrics hỗ trợ](../danh-sach-metrics-ho-tro/).
-* Để xem danh sách số liệu tương ứng của từng sản phẩm này, vui lòng xem tại Danh sách số liệu được hỗ trợ.
+* The vMonitor system will take an average of 5-10 minutes (the worst case may be 20 minutes) to update the new vServer after you create it.
+* To see the corresponding list of metrics for each of these products, see [List of Supported Metrics](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/metrics/danh-sach-metrics-ho-tro) .
+* To see a list of the respective metrics for each of these products, please see Supported Metrics List.
 {% endhint %}

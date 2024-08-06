@@ -1,27 +1,25 @@
-# Làm việc với vStorage-Metric
+# Working with vStorage-Metric
 
-Khi bạn tạo các vStorage Project, hệ thống sẽ tự động thu thập các vStorage metric và hiển thị ở tab Infrastructure List/vStorage, giúp bạn có thể theo dõi được các vStorage Project trên VNG Cloud hoàn toàn miễn phí
+When you create vStorage Projects, the system will automatically collect vStorage metrics and display them in the Infrastructure List/vStorage tab, allowing you to track vStorage Projects on VNG Cloud completely free of charge.
 
-<figure><img src="../../../../.gitbook/assets/image (154).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fz8gVc1pi4GlcrabKqDJ9%252Fimage.png%3Falt%3Dmedia%26token%3D25b7f092-9653-4643-8090-4d926a3adcaf&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=369c9a14&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-Tại trang này ở mỗi vStorage Project bạn sẽ thấy các thông tin như sau:
+On this page for each vStorage Project you will see the following information:
 
-* **Host**: tên và ID của vStorage Project
-* **Status**: trạng thái về monitor của vStorage Project, UP là đang có dữ liệu, UNDERTERMINE là trong vòng 5p chưa có dữ liệu mới
-* **Usage**: thông tin về usage/quota của vStorage Project
-* **Detailed Monitoring**: mặc định sẽ là tắt, khi bạn có nhu cầu cần vẽ các vStorage metric khác ngoài các Metric mà dashboard mặc định chúng tôi đã vẽ và tạo các Alarm để cảnh báo với tài nguyên này, thì bạn cần bật tính năng này lên. Để bật tính năng này bạn cần mua gói Metric Quota (gói có phí hay miễn phí đều được), tuy nhiên bạn sẽ không bị tính là 1 Host khi bật và hoàn toàn miễn phí, chỉ khi tạo Alarm là sẽ bị tính vào Alarm quota.
+* **Host** : name and ID of vStorage Project
+* **Status** : vStorage Project monitor status, UP means there is data, UNDERTERMINE means there is no new data within 5 minutes
+* **Usage** : information about usage/quota of vStorage Project
+* **Detailed Monitoring** : the default will be off. When you need to draw vStorage metrics other than the metrics that the default dashboard we have drawn and create Alarms to warn about this resource, you need to turn on this feature. go up. To enable this feature, you need to purchase the Metric Quota package (paid or free packages are fine), however you will not be counted as a Host when enabled and it is completely free, only when creating an Alarm will it be counted in the Alarm. quota. quota.
 
-&#x20;Khi nhấn vào tên của vStorage Project, bạn sẽ được chuyển sang trang Dashboard, và xem default dashboard của vStorage Project này, quy tắc đặt tên dashboard của vStorage sẽ là vStorage-Project\_Name-ID (lấy block thứ 3 của ID vStorage)
+When you click on the name of vStorage Project, you will be redirected to the Dashboard page, and see the default dashboard of this vStorage Project. The vStorage dashboard naming rule will be vStorage-Project\_Name-ID (get the 3rd block of vStorage ID)
 
-<figure><img src="../../../../.gitbook/assets/image (155).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FNjCfE34JluwfcfyC2GWt%252Fimage.png%3Falt%3Dmedia%26token%3D56c135ac-c5e7-4274-833f-d86c6473da0a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=6820018f&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fsldr8GcyzHg2858BSrRk%252Fimage.png%3Falt%3Dmedia%26token%3Db2af4512-25cf-47a1-9929-9754aaded657&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=5a299281&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Chú ý:**
+**Attention:**
 
-* Hệ thống vMonitor sẽ mất 1 khoảng thời gian trung bình 5-10 phút (có thể có trường hợp tệ nhất là 20 phút) để cập nhập vStorage Project mới sau khi bạn tạo.
-* Để xem danh sách metrics tương ứng của mỗi product này, hãy xem tại [Danh sách Metrics hỗ trợ](../danh-sach-metrics-ho-tro/).
+* The vMonitor system will take an average of 5-10 minutes (the worst case can be 20 minutes) to update the new vStorage Project after you create it.
+* To see the corresponding list of metrics for each of these products, see [List of Supported Metrics](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/metrics/danh-sach-metrics-ho-tro) .
 {% endhint %}
-
-\

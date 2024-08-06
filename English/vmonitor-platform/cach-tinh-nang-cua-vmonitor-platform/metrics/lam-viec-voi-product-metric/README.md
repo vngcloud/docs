@@ -1,22 +1,22 @@
-# Làm việc với Product Metric
+# Working with Product Metric
 
-#### Tổng quan <a href="#lamviecvoiproductmetric-tongquan" id="lamviecvoiproductmetric-tongquan"></a>
+## Overview
 
-Infrastructure Host là nơi sẽ liệt kê tất cả Resource mà vMonitor Platform đang theo dõi, các Resource có thể là các tài nguyên như bên dưới:
+Infrastructure Host is where all the Resources that vMonitor Platform is monitoring will be listed. Resources can be resources like below:
 
-* Host: là các server được cài Metric Agent
-* vServer: là các vServer của VNG Cloud
-* vLB: là các vLB của VNG Cloud
-* vDB: là các vDB của VNG Cloud
-* vStorage: là các storage project của VNG Cloud
+* Host: are servers installed with Metric Agent
+* vServer: are vServers of VNG Cloud
+* vLB: are vLBs of VNG Cloud
+* vDB: are vDBs of VNG Cloud
+* vStorage: are storage projects of VNG Cloud
 
 ***
 
-#### Chủ đề <a href="#lamviecvoiproductmetric-chude" id="lamviecvoiproductmetric-chude"></a>
+## **Topic**
 
-Với các tài nguyên trên hệ thống đã tự động tạo các default dashboard giúp bạn theo dõi dễ dàng hơn, ngoài ra bạn có thể tự tạo dashboard để vẽ các metric theo ý muốn.
+With the resources on the system, default dashboards are automatically created to help you monitor more easily. In addition, you can create your own dashboard to draw metrics as you like.
 
-* [Làm việc với vServer-Metric](lam-viec-voi-vserver-metric.md)
-* [Làm việc với vLB-Metric](lam-viec-voi-vlb-metric.md)
-* [Làm việc với vDB-Metric](lam-viec-voi-vdb-metric.md)
-* [Làm việc với vStorage-Metric](lam-viec-voi-vstorage-metric.md)
+* [Working with vServer-Metric](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/metrics/lam-viec-voi-product-metric/lam-viec-voi-vserver-metric)
+* [Works with vLB-Metric](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/metrics/lam-viec-voi-product-metric/lam-viec-voi-vlb-metric)
+* [Working with vDB-Metric](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/metrics/lam-viec-voi-product-metric/lam-viec-voi-vdb-metric)
+* [Working with vStorage-Metric](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/metrics/lam-viec-voi-product-metric/lam-viec-voi-vstorage-metric)
