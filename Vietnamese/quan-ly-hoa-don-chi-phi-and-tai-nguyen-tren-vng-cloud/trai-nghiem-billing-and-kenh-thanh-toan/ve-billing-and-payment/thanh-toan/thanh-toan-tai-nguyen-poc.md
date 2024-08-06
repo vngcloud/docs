@@ -7,7 +7,15 @@ Thanh toán tài nguyên POC là một hình thức thanh toán tại VNG Cloud 
 * **Đối tượng**:
   * Người dùng trả trước
 * **Tài nguyên / Dich vụ**:
-  * Các tài nguyên được áp dụng POC theo thỏa thuận
+
+Các tài nguyên được áp dụng POC theo thỏa thuận. Ví POC hiện đã hỗ trợ các tài nguyên dịch vụ:
+
+vServer : Server, Volume, Elastic IP, LB, K8S, VKS, Snapshot, vCR, vDB, Marketplace, BW&#x20;
+
+vStorage: Project, Backup
+
+vMonitor
+
 * **Nguồn tiền**:
   * Ví POC
 * **Tác vụ**:
