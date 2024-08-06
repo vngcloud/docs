@@ -6,7 +6,7 @@
 
 **Veeam** hỗ trợ nhiều nền tảng ảo hóa khác nhau, cũng như nhiều nền tảng lưu trữ dữ liệu và điện toán đám mây. Điểm mạnh của Veeam là khả năng tích hợp cao, dễ dàng quản lý, và cung cấp khả năng phục hồi dữ liệu nhanh chóng để đảm bảo tính liên tục cho doanh nghiệp.
 
-Hệ thống lưu trữ của **VNG Cloud** cũng là dịch vụ mà được nhiều doanh nghiệp sử dụng để sao lưu dữ liệu, nhất là việc tích hợp sao lưu dữ liệu cùng Veeam. Do đó, hệ thống VNG Cloud mang đến những hỗ trợ tính năng để hỗ trợ cho khách hàng được sao lưu một các bảo mật và an toàn toàn nhất.
+Hệ thống lưu trữ của **VNG Cloud** cũng là dịch vụ mà được nhiều doanh nghiệp sử dụng để sao lưu dữ liệu, nhất là việc tích hợp sao lưu dữ liệu cùng Veeam. Do đó, hệ thống VNG Cloud mang đến những hỗ trợ tính năng để hỗ trợ cho khách hàng được sao lưu một cách bảo mật và an toàn nhất.
 
 ***
 
