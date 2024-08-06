@@ -33,8 +33,8 @@ resource "vngcloud_vserver_server" "server"{
 {% hint style="warning" %}
 **Ghi chú**
 
-* Với thông tin truyền thay đổi (Resize) thì vẫn truyền thuộc tính is\_poc về hệ thống của VNG Cloud.
-* Nếu không truyền is\_poc thì user sẽ sử dụng ví thường;
+* Với thông tin truyền thay đổi (Resize) thì vẫn truyền thuộc tính <mark style="color:blue;">is\_poc</mark> về hệ thống của VNG Cloud.
+* Nếu không truyền <mark style="color:blue;">is\_poc</mark> thì user sẽ sử dụng ví thường;
 * Trường hợp ngừng sử dụng ví POC và sau đó server bị hết hạn sử dụng, tuy nhiên Server chưa tắt liền mà hệ thống VNG sẽ định kỳ có job quét (11h hàng ngày) để xét tắt các Server bị hết hạn, do đó trước 11h user có thể nạp credit để thanh toán sử dụng tiếp Server
 {% endhint %}
 
