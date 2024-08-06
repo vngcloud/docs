@@ -1,21 +1,21 @@
-# Bảo mật dữ liệu trên đường truyền
+# Data Security During Transmission
 
-**HTTPS là gì?**
+**What is HTTPS?**
 
-HTTPS là viết tắt của "Hypertext Transfer Protocol Secure". Đây là một giao thức truyền tải an toàn được sử dụng để truyền dữ liệu trên Internet. HTTPS sử dụng mã hóa để bảo vệ dữ liệu khỏi bị đọc bởi những người không được phép.
+HTTPS stands for "Hypertext Transfer Protocol Secure". This is a secure transmission protocol used to transmit data on the Internet. HTTPS uses encryption to protect data from being read by unauthorized people.
 
-**HTTPS trên vMonitor Platform**
+**HTTPS on vMonitor Platform**
 
-vMonitor Platform sử dụng HTTPS để bảo mật dữ liệu metrics và logs của bạn khi chúng đang được truyền từ ứng dụng của bạn đến hệ thống của chúng tôi. Điều này giúp ngăn chặn dữ liệu nhạy cảm của bạn bị đọc bởi những người không được phép, chẳng hạn như tin tặc.
+vMonitor Platform uses HTTPS to secure your metrics and logs data as it is being transmitted from your application to our system. This helps prevent your sensitive data from being read by unauthorized people, such as hackers.
 
-**Cách bật HTTPS trên vMonitor Platform**
+**How to enable HTTPS on vMonitor Platform**
 
-Để bật HTTPS trên vMonitor Platform, bạn cần tạo một chứng chỉ SSL/TLS. Bạn có thể tạo chứng chỉ SSL/TLS của riêng mình hoặc sử dụng chứng chỉ SSL/TLS từ một nhà cung cấp chứng chỉ đáng tin cậy. Sau khi bạn có chứng chỉ SSL/TLS, bạn cần cấu hình ứng dụng của mình để sử dụng HTTPS khi kết nối với vMonitor Platform. Bạn có thể làm điều này bằng cách sử dụng các cài đặt bảo mật trong ứng dụng của mình.
+To enable HTTPS on vMonitor Platform, you need to create an SSL/TLS certificate. You can create your own SSL/TLS certificate or use an SSL/TLS certificate from a trusted certificate provider. Once you have an SSL/TLS certificate, you need to configure your application to use HTTPS when connecting to vMonitor Platform. You can do this using the security settings in your application.
 
-**Lợi ích của việc sử dụng HTTPS trên vMonitor Platform**
+**Benefits of using HTTPS on vMonitor Platform**
 
-Sử dụng HTTPS trên vMonitor Platform mang lại một số lợi ích, bao gồm:
+Using HTTPS on vMonitor Platform provides several benefits, including:
 
-* Bảo vệ dữ liệu metrics và logs nhạy cảm của bạn khỏi bị đọc bởi những người không được phép.
-* Tăng cường bảo mật cho ứng dụng của bạn.
-* Tuân thủ các yêu cầu bảo mật đã được quy định.
+* Protect your sensitive metrics and logs data from being read by unauthorized people.
+* Enhance your application security.
+* Comply with established security requirements.

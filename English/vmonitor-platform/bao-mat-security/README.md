@@ -1,13 +1,8 @@
-# Bảo mật (Security)
+# Security
 
-Bảo mật trong ứng dụng vMonitor Platform là việc đảm bảo dữ liệu và tài nguyên của bạn được bảo vệ khỏi các mối đe dọa tiềm ẩn.&#x20;
+Security in vMonitor Platform applications is about ensuring your data and resources are protected from potential threats.
 
-Hiện tại chúng tôi đang cung cấp một số tính năng giúp bạn bảo vệ dữ liệu metrics và logs mà bạn lưu trữ và sử dụng trên hệ thống vMonitor Platform, bao gồm:
+We are currently providing a number of features to help you protect metrics and logs data that you store and use on the vMonitor Platform system, including:
 
-* **Bảo mật quyền hạn truy cập:** VNG Cloud sử dụng IAM để quản lý quyền truy cập của người dùng vào các tài nguyên vMonitor Platform. IAM cho phép các doanh nghiệp tạo và quản lý các chính sách truy cập cho từng tài nguyên mà người dùng mong muốn. Điều này giúp đảm bảo rằng chỉ những người có quyền truy cập cần thiết mới có thể truy cập vào dữ liệu.
-* **Bảo mật dữ liệu trên đường truyền:** VNG Cloud sử dụng HTTPS để mã hóa dữ liệu trên đường truyền. HTTPS là một giao thức bảo mật dựa trên HTTP, sử dụng mã hóa TLS/SSL để bảo vệ dữ liệu trong quá trình truyền.
-
-VNG Cloud luôn nỗ lực để nâng cao các biện pháp bảo mật của mình để đảm bảo an toàn cho dữ liệu của khách hàng.
-
-* [Bảo mật quyền hạn truy cập](../../vstorage/vstorage-hcm03/bao-mat-security/bao-mat-quyen-han-truy-cap.md)
-* [Bảo mật dữ liệu trên đường truyền](bao-mat-du-lieu-tren-duong-truyen.md)
+* **Secure access permissions:** VNG Cloud uses IAM to manage user access to vMonitor Platform resources. IAM allows businesses to create and manage access policies for each resource desired by users. This helps ensure that only those with the necessary permissions can access the data.
+* **Secure data in transit:** VNG Cloud uses HTTPS to encrypt data in transit. HTTPS is an HTTP-based security protocol that uses TLS/SSL encryption to protect data during transmission.

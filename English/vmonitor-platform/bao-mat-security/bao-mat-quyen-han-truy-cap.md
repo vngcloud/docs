@@ -1,11 +1,11 @@
-# Bảo mật quyền hạn truy cập
+# Access Permissions Security
 
-Để đảm bảo an toàn về quyền hạn truy cập tới dữ liệu metrics, logs trên vMonitor Platform, chúng tôi đang sử dụng giải pháp phân quyền là dịch vụ **Quản lý danh tính và truy cập (IAM)**. Dịch vụ **Quản lý danh tính và truy cập (IAM)** là một giải pháp phân quyền hiệu quả để đảm bảo an toàn về quyền hạn truy cập tới dữ liệu trên VNG Cloud nói chung và vMonitor Platform nói riêng. Bằng cách sử dụng IAM, doanh nghiệp có thể đảm bảo rằng chỉ những người dùng có quyền truy cập cần thiết mới có thể truy cập vào dữ liệu của họ. Điều này giúp bảo vệ dữ liệu khỏi bị truy cập trái phép.
+To ensure secure access to metrics and logs data on vMonitor Platform, we are using a decentralized solution called **Identity and Access Management (IAM)** service . **Identity and Access Management (IAM)** service is an effective decentralization solution to ensure secure access to data on VNG Cloud in general and vMonitor Platform in particular. By using IAM, businesses can ensure that only users with the necessary permissions can access their data. This helps protect data from unauthorized access.
 
-Dưới đây là một số lợi ích cụ thể của việc sử dụng IAM để bảo mật dữ liệu trên vMonitor Platform:
+Here are some specific benefits of using IAM to secure data on vMonitor Platform:
 
-* **Giúp đảm bảo rằng chỉ những người dùng có quyền truy cập cần thiết mới có thể truy cập vào dữ liệu:** IAM cho phép các doanh nghiệp tạo và quản lý các chính sách truy cập cho từng tài nguyên của vMonitor Platform. Điều này giúp đảm bảo rằng chỉ những người dùng cần truy cập vào dữ liệu cụ thể mới có thể truy cập được.
-* **Giúp ngăn chặn truy cập trái phép vào dữ liệu:** IAM cung cấp các tính năng xác thực và ủy quyền mạnh mẽ để giúp ngăn chặn truy cập trái phép vào dữ liệu.&#x20;
-* **Giúp giảm thiểu rủi ro vi phạm dữ liệu:** Bằng cách sử dụng IAM, các doanh nghiệp có thể giảm thiểu rủi ro vi phạm dữ liệu. IAM giúp bảo vệ dữ liệu khỏi bị truy cập trái phép, điều này có thể dẫn đến vi phạm dữ liệu.
+* **Help ensure that only users with the necessary permissions can access data:** IAM allows businesses to create and manage access policies for each vMonitor Platform resource. This helps ensure that only users who need to access specific data have access.
+* **Help prevent unauthorized access to data:** IAM provides strong authentication and authorization features to help prevent unauthorized access to data.
+* **Helps minimize data breach risk:** By using IAM, businesses can minimize data breach risk. IAM helps protect data from unauthorized access, which could lead to a data breach.
 
-Chi tiết tham khảo thêm tại [IAM cho vMonitor](../../identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vstorage.md).
+For more details, please refer to [IAM for vMonitor](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vstorage) .
