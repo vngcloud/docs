@@ -1,26 +1,25 @@
-# Làm việc với Log2metric
+# Working with Log2metric
 
-### Tổng quan <a href="#lamviecvoilog2metric-tongquan" id="lamviecvoilog2metric-tongquan"></a>
+## Overview <a href="#lamviecvoilog2metric-tongquan" id="lamviecvoilog2metric-tongquan"></a>
 
-Log2metric là một tính năng cho phép bạn tạo metric theo thời gian thực từ logs. Cách tiếp cận này giúp bạn tối ưu hóa việc lưu trữ log mà không phải hy sinh bất kỳ dữ liệu quan trọng nào. Vì vậy, chi phí của bạn sẽ được giảm.\
-Bạn có thể bắt đầu sử dụng tính năng log2metric bằng cách thiết lập một truy vấn đơn giản và chúng tôi sẽ đánh giá giá trị sau mỗi <mark style="color:red;">**60**</mark> giây. Ví dụ: bạn muốn đếm số lượng dòng logs có trạng thái lỗi hoặc bạn muốn biết thời gian phản hồi yêu cầu trung bình trong logs của máy chủ web, chỉ cần sử dụng Log2metric. Các metric đầu ra này tương tự như các metric khác, bạn có thể sử dụng để vẽ dashboard và tạo alarm.
+Log2metric is a feature that allows you to create real-time metrics from logs. This approach helps you optimize log storage without sacrificing any important data. So your costs will be reduced. You can start using log2metric by setting up a simple query and we'll evaluate the value every **60** seconds. For example, you want to count the number of log lines with an error status, or you want to know the average request response time in your web server's logs, just use Log2metric. These output metrics are similar to other metrics you can use to draw dashboards and create alarms.
 
 ***
 
-### Phạm vi giới hạn Log2metric <a href="#lamviecvoilog2metric-phamvigioihanlog2metric" id="lamviecvoilog2metric-phamvigioihanlog2metric"></a>
+## Log2metric limited range <a href="#lamviecvoilog2metric-phamvigioihanlog2metric" id="lamviecvoilog2metric-phamvigioihanlog2metric"></a>
 
-#### Quy tắc đặt tên Metric name: <a href="#lamviecvoilog2metric-quytacdattenmetricname" id="lamviecvoilog2metric-quytacdattenmetricname"></a>
+**Metric name naming rules:**
 
-Các quy tắc sau áp dụng cho việc đặt tên metric trong vStorage:
+The following rules apply to metric naming in vStorage:
 
-* Tên metric phải dài từ 3 (tối thiểu) đến 50 (tối đa) ký tự.
-* Tên metric phải có ký tự đầu là kiểu alphanumerics (a-z, A-Z) hoặc dấu underscores (\_). Các ký tự tiếp theo là kiểu alphanumerics (a-z, 0-9), dấu underscores (\_), dấu minuses (-), dấu periods (.) hoặc dấu slashes ( / ).
-* Tên metric không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, tên tài khoản, mật khẩu đăng nhập,...).
-* Tên metric phải là duy nhất trên một tài khoản VNG Cloud cho đến khi metric đó bị xóa.&#x20;
+* The metric name must be between 3 (minimum) and 50 (maximum) characters long.
+* The metric name must have the first character alphanumerics (az, AZ) or underscores (\_). The following characters are alphanumerics (az, 0-9), underscores (\_), minuses (-), periods (.) or slashes ( / ).
+* The metric name should not contain sensitive information (eg IP address, account name, login password,...).
+* The metric name must be unique on a VNG Cloud account until that metric is deleted.
 
-#### Ví dụ minh họa <a href="#lamviecvoilog2metric-viduminhhoa" id="lamviecvoilog2metric-viduminhhoa"></a>
+**Illustration**
 
-* Các tên metric ví dụ sau đây hợp lệ và tuân theo các nguyên tắc đặt tên được đề xuất:
+* The following example metric names are valid and follow recommended naming guidelines:
   * cpu.time\_system
   * mem.active
   * disk.free
@@ -28,54 +27,52 @@ Các quy tắc sau áp dụng cho việc đặt tên metric trong vStorage:
 
 ***
 
-### Khởi tạo metric <a href="#lamviecvoilog2metric-khoitaometric" id="lamviecvoilog2metric-khoitaometric"></a>
+## Initialize metrics <a href="#lamviecvoilog2metric-khoitaometric" id="lamviecvoilog2metric-khoitaometric"></a>
 
-Để khởi tạo một metric từ log của bạn, hãy làm theo hướng dẫn bên dưới:
+To generate a metric from your log, follow the instructions below:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor/).
-2. Chọn thư mục **Log**, sau đó chọn menu **Log2metric**.
-3. Chọn **Create a Metric**.
-4. Nhập **Metric name**. Tên metric phải tuân thủ theo quy định của chúng tôi, chi tiết được mô tả bên trên.
-5. Tạo **Query Definition** bằng cách:&#x20;
-   * Tìm kiếm và chọn một **Log** **Project** bạn muốn thực hiện chuyển đổi log qua metric. Màn hình sẽ hiển thị các log ở **Log project** trong vòng 15 phút để bạn xem trước.
-   * Tạo **Log Filter** tìm kiếm log, chọn phép toán (**Operator**), chọn điều kiện nhóm dữ liệu (**Group by**), chi tiết tham khảo tại [Search logs](lam-viec-voi-log-search/search-logs.md).
-6. Chọn **Advanced query** nếu bạn mong muốn thiết lập nâng cao cho metric bao gồm: **Event timestamp field, Event timestamp format, Default metric value** trong đó:&#x20;
-   * Chọn **Event timestamp field**: field này dùng để đọc thời điểm **event** xảy ra, nếu bạn không chọn thì chúng tôi sẽ lấy thời điểm **processing time**.
-   * Chọn **Event timestamp format**: nếu bạn đã chọn **Event timestamp field** trước đó thì field này dùng để định dạng thời gian tương ứng của **Event timestamp field**. Nếu bạn chọn **Event timestamp format** không đúng với loại dữ liệu của **Event timestamp field** thì kết quả **metric** có thể sẽ không đúng.
-   * Nhập **Default metric value**: nhập giá trị mặc định của **metric** nếu không có dữ liệu tính toán dựa trên các điều kiện đã nhập phía trên. Bạn có thể nhập số thực từ 0 tới 100.000.000.000.000.
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor/) .
+2. **Select the Log** folder , then select the **Log2metric** menu .
+3. Select **Create a Metric** .
+4. Enter **Metric name** . Metric names must comply with our rules, detailed above.
+5. Create **Query Definition** by:
+   * Search and select a **Log Project** you want to convert log to metric. The screen will display the logs in **the Log project** within 15 minutes for you to preview.
+   * Create **Log Filter** to search for logs, select operations ( **Operator** ), select data grouping conditions ( **Group by** ), refer to [Search logs](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/logs/lam-viec-voi-log-search/search-logs) for details .
+6. Select **Advanced query** if you want to set up advanced metrics including: **Event timestamp field, Event timestamp format, Default metric value** in which:
+   * Select **Event timestamp field** : This field is used to read the time **the event** occurred. If you do not select it, we will take the **processing time** .
+   * Select **Event timestamp format** : if you have selected **the Event timestamp field** before, this field is used to format the corresponding time of **the Event timestamp field** . If you choose **the Event timestamp format** that is not correct for the data type of **the Event timestamp field , the metric** result may not be correct.
+   * Enter **Default metric value** : enter the default value of **the metric** if there is no calculated data based on the conditions entered above. You can enter real numbers from 0 to 100,000,000,000,000.
 
-6\. Chọn **Tạo mới**. **Metric** được tạo ra với metric name và **log** dựa trên điều kiện tạo mới mà bạn đã chọn/ nhập. Khi trạng thái của log2metric là **ACTIVE**, lúc này bạn có thể tiếp tục sử dụng **metric** tạo ra này tại [Dashboard](../dashboard/) và [Metric Alarm](../alarm/metric-alarm.md).
+6\. Select **Create new** . **The metric** is created with the metric name and **log** based on the new creation condition you selected/entered. When the status of log2metric is **ACTIVE** , you can now continue to use this generated **metric in** [the Dashboard](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/dashboard) and [Metric Alarm](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/alarm/metric-alarm) .
 
-Các **điểm dữ liệu** cho Log2metric vừa tạo được định kỳ tạo ra trong khoảng thời gian 60s**.** Bạn có thể tạo nhiều **metric** cho một **log project** với các **metric name** khác nhau. Trong lần đầu tiên khởi tạo metric từ log, tiến trình khởi tạo có thể sẽ mất một chút thời gian do chúng tôi cần thiết lập nhiều cấu hình cần thiết. Đừng lo lắng vì từ các lần khởi tạo metric tiếp theo, tiến trình này sẽ nhanh hơn rất nhiều.
-
-***
-
-### Chỉnh sửa metric <a href="#lamviecvoilog2metric-chinhsuametric" id="lamviecvoilog2metric-chinhsuametric"></a>
-
-Để chỉnh sửa metric đã được tạo từ logs trước đó, hãy làm theo hướng dẫn bên dưới:&#x20;
-
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
-2. Chọn thư mục **Log**, sau đó chọn menu **Log2metric**.
-3. Tại **Metric** mà bạn muốn chỉnh sửa, chọn **Edit**.
-4. Chỉnh sửa các thông số cho biểu đồ mà bạn mong muốn. Các thông số mà bạn có thể chỉnh sửa bao gồm: **Log filter, Advanced query**. Việc chỉnh sửa này tương tự như khi bạn thực hiện tạo mới một Widget.
-5. Chọn **Save.**
+The **data points** for the newly created Log2metric are periodically generated at 60s intervals **.** You can create multiple **metrics** for a **log project** with different **metric names** . The first time you initialize a metric from the log, the initialization process may take some time because we need to set up a lot of necessary configuration. Don't worry because from the next metric initializations, this process will be much faster.
 
 ***
 
-### Xóa metric <a href="#lamviecvoilog2metric-xoametric" id="lamviecvoilog2metric-xoametric"></a>
+## Edit metrics <a href="#lamviecvoilog2metric-chinhsuametric" id="lamviecvoilog2metric-chinhsuametric"></a>
 
-Bạn đã khởi tạo một metric từ một log project tương ứng. Metric này đã được bạn sử dụng tại vMonitor Dashboard, vMonitor Alarm. Hiện tại bạn không có nhu cầu sử dụng metric này. Chúng tôi khuyến khích bạn nên xóa metric này để tối ưu chi phí cho Metric quota.
+To edit metrics that were previously created from logs, follow the instructions below:
 
-Để xóa một project, bạn hãy làm theo hướng dẫn:&#x20;
+1. Log in to vMonitor Platform [here.](https://hcm-3.console.vngcloud.vn/vmonitor)
+2. **Select the Log** folder , then select the **Log2metric** menu .
+3. At **the Metric** you want to edit, select **Edit** .
+4. Edit the chart parameters as you desire. Parameters that you can edit include: **Log filter, Advanced query** . This editing is similar to when you create a new Widget.
+5. Select **Save.**
 
-1\. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor/).
+***
 
-2\. Chọn thư mục **Log**, sau đó chọn menu **Log2metric**.
+## Delete metrics <a href="#lamviecvoilog2metric-xoametric" id="lamviecvoilog2metric-xoametric"></a>
 
-3\. Trong danh sách **metric** đang tồn tại, chọn <img src="../../../.gitbook/assets/image (331).png" alt="" data-size="line">  tại **metric** muốn thực hiện xóa sau đó chọn **Delete**.
+You have initialized a metric from a corresponding log project. This metric has been used by you in vMonitor Dashboard, vMonitor Alarm. Currently you do not need to use this metric. We recommend that you delete this metric to optimize Metric quota costs.
 
-4\. Chọn **Delete**.
+To delete a project, follow these instructions:
 
-Sau khi bạn thực hiện 4 bước bên trên để xóa metric thì chúng tôi bắt đầu chạy tiến trình xóa metric của bạn. Trạng thái của metric lúc này là Đang xóa. Tại thời điểm này, metric vẫn chưa được cập nhật xóa ở vMonitor Dashboard cũng như vMonitor Alarm. Tới thời điểm chúng tôi thông báo cho bạn metric đã xóa thành công, thì lúc này metric sẽ bị xóa ở phía Log2Metric nhưng metric name đó vẫn tồn tại phía hệ thống vMonitor Platform - Metric. Do đó nếu Widget đang sử dụng metric bị xóa thì biểu đồ được vẽ từ metric sẽ không có dữ liệu mới (biểu đồ vẫn giữ nguyên hiện trạng, tính năng và dữ liệu cũ trước thời điểm xóa metric) và bạn vẫn có thể thêm mới Widget khác với metric đã bị xóa này.
+1\. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor/) .
 
-\
+**2. Select the Log** folder , then select the **Log2metric** menu .
+
+3\. In the list of existing **metrics**![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FLYHslWyx45GFqWXwFOpi%252Fimage.png%3Falt%3Dmedia%26token%3D68527325-aa58-43e6-af78-6a146e85c8ba\&width=35\&dpr=4\&quality=100\&sign=406fbad6\&sv=1) , select **the metric** you want to delete, then select **Delete** .
+
+4\. Select **Delete** .
+
+After you complete the 4 steps above to delete metrics, we will start the process of deleting your metrics. The status of the metric is currently Deleting. At this time, metrics have not been updated or deleted in vMonitor Dashboard or vMonitor Alarm. By the time we notify you that the metric has been successfully deleted, the metric will be deleted on the Log2Metric side but that metric name still exists on the vMonitor Platform - Metric system side. Therefore, if the Widget using the metric is deleted, the chart drawn from the metric will not have new data (the chart will retain its current status, features and old data before deleting the metric) and you can still add more. new Widget other than this removed metric.

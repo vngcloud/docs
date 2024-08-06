@@ -20,15 +20,15 @@ API HTTP tests allow you to send HTTP request(s) to your service or application 
 
     ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fattachments%2F59803715%2Fimage2022-8-29\_16-20-38.png%3Fversion%3D1%26modificationDate%3D1686544451000%26api%3Dv2\&width=768\&dpr=4\&quality=100\&sign=c3ead0cc\&sv=1)
 
-    <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 * After filling in the Test Information, you can choose **Run Test or Test Again** if you have previously tested, you can see returned information such as status code, header and body.
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Test Assertion**
   * Assertion defines what you expect the API Test result to be, if the returned result meets what you define API Test will show the URL you are testing as successful, and vice versa API Test will show the URL you are testing test is failed. The system will automatically add the Assertion status code for you after you Run the test, you need to define at least one Assertion for the API test. In addition to the Assertion status code that the system automatically adds, you can add any other Assertion that we support as below: Response time, Header, Body, Certificate
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   **Location**
 
@@ -36,7 +36,7 @@ API HTTP tests allow you to send HTTP request(s) to your service or application 
 
     ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fattachments%2F59803715%2Fimage2022-8-29\_16-42-28.png%3Fversion%3D1%26modificationDate%3D1686544452000%26api%3Dv2\&width=768\&dpr=4\&quality=100\&sign=4b6253a4\&sv=1)
 
-    <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 * **Alarm conditions:** Set up alarm conditions to define the cases where you want the test to fail and trigger the alarm.
   * **Interval** : how often API Test will test once, default will be 1p
   * **Time of failure** : how many consecutive failures will alert
@@ -44,16 +44,16 @@ API HTTP tests allow you to send HTTP request(s) to your service or application 
   * For example, when you select Time of failure: 1 and Locations with failure: 2, it will be understood as: you will be warned if the Test fails 1 time in a row from 2 out of 2 locations.
   * **Notifications** : you choose notification channels when switching to In-alarm, Up or Undertermine states, the system will notify according to this list.
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 6\. Then press the " **Create** " button to initialize the API test. After creating, you will see the API test is in Undertermine state, until the next inteval the Test API will be updated to the correct state.
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 * API Test has entered the Up state when the URL is working properly
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 * You can see details about API Test:
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>

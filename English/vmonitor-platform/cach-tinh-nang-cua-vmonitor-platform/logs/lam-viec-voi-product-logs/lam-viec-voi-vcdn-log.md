@@ -1,55 +1,55 @@
-# Làm việc với vCDN-Log
+# Working with vCDN-Log
 
-### Tổng quan <a href="#lamviecvoivcdn-log-tongquan" id="lamviecvoivcdn-log-tongquan"></a>
+## Overview <a href="#lamviecvoivcdn-log-tongquan" id="lamviecvoivcdn-log-tongquan"></a>
 
-**vCDN Log Monitoring** là hệ thống tích hợp giữa **vCDN** và **vMonitor Platform** giúp người dùng giám sát tài nguyên trên vCDN thông qua việc đồng bộ, thu thập và lọc thông tin tại từng **CDN domain** của người dùng. Để bật/ tắt (enable/ disable) tính năng đẩy logs từ **vCDN** về hệ thống vMonitor Platform, trước tiên bạn hãy truy cập tại [đây.](https://hcm-3.console.vngcloud.vn/vmonitor) Sau đó chọn thư mục **Infrastructure list/vCDN - Log.** Tại đây, bạn có thể xem danh sách tất cả các **vCDN domain** mà bạn có trên tài khoản của bạn.
+**vCDN Log Monitoring** is an integrated system between **vCDN** and **vMonitor Platform** that helps users monitor resources on vCDN through synchronizing, collecting and filtering information at each user's **CDN domain** . To enable/disable the feature of pushing logs from **vCDN** to the vMonitor Platform system, first visit here [.](https://hcm-3.console.vngcloud.vn/vmonitor) Then select **the Infrastructure list/vCDN - Log folder.** Here, you can see a list of all the **vCDN domains** you have on your account.
 
-* Tại màn hình này, bạn sẽ thấy các cột thông tin cơ bản như:
-  * **vCDN domains**: tên domain của CDN.
-  * **Domain type**: loại domain. Hiện tại, chúng tôi đang hỗ trợ bạn đẩy và giám sát logs của 4 loại hình dịch vụ trên vCDN bao gồm: **Web Accelerator, Object Download, Video on Demand, Live Streaming.**
-  * **Log Project**: log project trên vMonitor Platform và là nơi sẽ chứa logs vCDN domain đổ về khi bạn bật tính năng **Detail Monitoring**.
-  * **Log Project Usage**: thông tin về mức độ sử dụng của Log Project mà bạn đã thiết lập làm nơi nhận vCDN logs này.
-  * **Monitoring Status**: trạng thái monitoring của vCDN domain. Nếu bạn chưa bật tính năng Detailed Monitoring thì trạng thái sẽ là **INACTIVE**, nếu bạn đã bật tính năng này và chọn một Log project làm nơi nhận vCDN logs thì trạng thái sẽ là **ACTIVE**, còn nếu vCDN domain đã bị xóa khỏi hệ thống vCDN thì trạng thái sẽ là **DELETED**. Sau 24h, nếu không có logs đổ về thì các vCDN domain có trạng thái monitoring là **DELETED** sẽ bị ẩn khỏi giao diện monitoring của bạn.
-  * **Detailed Monitoring**: bật/ tắt (enable/ disable) tính năng theo dõi Logs của từng vCDN domain.
+* On this screen, you will see basic information columns such as:
+  * **vCDN domains** : domain name of CDN.
+  * **Domain type** : domain type. Currently, we are supporting you to push and monitor logs of 4 types of services on vCDN including: **Web Accelerator, Object Download, Video on Demand, Live Streaming.**
+  * **Log Project : log project on vMonitor Platform and is where the vCDN domain logs will be stored when you turn on the Detail Monitoring** feature .
+  * **Log Project Usage** : information about the usage level of the Log Project that you have set up to receive vCDN logs.
+  * **Monitoring Status** : monitoring status of vCDN domain. If you have not enabled the Detailed Monitoring feature, the status will be **INACTIVE** , if you have enabled this feature and selected a Log project as the place to receive vCDN logs, the status will be **ACTIVE** , and if the vCDN domain has been deleted from the vCDN system then the status will be **DELETED** . After 24 hours, if there are no logs coming in, vCDN domains with a monitoring status of **DELETED** will be hidden from your monitoring interface.
+  * **Detailed Monitoring** : enable/disable the Logs monitoring feature of each vCDN domain.
 
-<figure><img src="../../../../.gitbook/assets/image (334).png" alt=""><figcaption></figcaption></figure>
-
-***
-
-### Bật (enable) tính năng Detailed Monitoring <a href="#lamviecvoivcdn-log-bat-enable-tinhnangdetailedmonitoring" id="lamviecvoivcdn-log-bat-enable-tinhnangdetailedmonitoring"></a>
-
-Để bật (enable) tính năng theo dõi logs của từng vCDN domain, bạn cần nhấn vào biểu tượng **Enable** tại cột **Detailed Monitoring:**&#x20;
-
-* Lúc này hệ thống sẽ hiển thị popup và bạn cần **chọn Log Project** để chứa logs của vCDN domain này, sau đó nhấn nút **Enable**.  Nếu bạn chưa có bất kì Log Project nào, bạn có thể nhấn nút **Create a log project** ở popup hoặc trở lại menu **Quota & Usage** để tạo **Log Project** trước.
-
-<figure><img src="../../../../.gitbook/assets/image (335).png" alt="" width="375"><figcaption></figcaption></figure>
-
-* Sau khi bật enable monitoring bạn sẽ thấy status của vCDN domain này chuyển thành **INACTIVE** thành **ACTIVE**, lúc này bạn có thể truy cập vào Log Project vừa chọn để xem logs. Chi tiết tham khảo thêm tại [Làm việc với Log search](../lam-viec-voi-log-search/).
-
-<figure><img src="../../../../.gitbook/assets/image (336).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FiyQ4bcMpmFcflyJ2PT04%252Fimage.png%3Falt%3Dmedia%26token%3D1f08daef-4539-4530-a3ad-f583f070fe96&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=82a08826&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### Chỉnh sửa Log project nhận vCDN logs <a href="#lamviecvoivcdn-log-chinhsualogprojectnhanvcdnlogs" id="lamviecvoivcdn-log-chinhsualogprojectnhanvcdnlogs"></a>
+## Turn on the Detailed Monitoring feature <a href="#lamviecvoivcdn-log-bat-enable-tinhnangdetailedmonitoring" id="lamviecvoivcdn-log-bat-enable-tinhnangdetailedmonitoring"></a>
 
-Nếu bạn có nhu cầu thay đổi Log Project chứa Logs, bạn có thể chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/69468834/image2024-1-9\_13-27-31.png?version=1\&modificationDate=1704781652000\&api=v2) và chọn nút **Edit Log Project**. Tại popup **Change Log project**, bạn hãy chọn Log Project mới mà bạn muốn thay đổi và bấm **Save**.
+To enable the logs monitoring feature of each vCDN domain, you need to click the **Enable** icon in the **Detailed Monitoring column:**
 
-<figure><img src="../../../../.gitbook/assets/image (337).png" alt="" width="375"><figcaption></figcaption></figure>
+* At this point, the system will display a popup and you need **to select Log Project** to contain the logs of this vCDN domain, then press the **Enable** button . If you don't have any Log Project yet, you can click the **Create a log project** button in the popup or return to the **Quota & Usage** menu to create **a Log Project** first.
 
-***
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FwMTZbAXzN71MFkixORMB%252Fimage.png%3Falt%3Dmedia%26token%3D750105cb-eb79-4fbe-beac-9799d1dede43&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f72f5e08&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-### Tắt tính năng Detail Monitoring <a href="#lamviecvoivcdn-log-tattinhnangdetailmonitoring" id="lamviecvoivcdn-log-tattinhnangdetailmonitoring"></a>
+* After enabling enable monitoring, you will see the status of this vCDN domain change from **INACTIVE** to **ACTIVE** , now you can access the Log Project you just selected to view the logs. For more details, refer to [Working with Log search](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/logs/lam-viec-voi-log-search) .
 
-Nếu bạn không còn nhu cầu để xem logs của 1 vCDN domain bất kỳ, bạn cần nhấn vào biểu tượng **Disable** tại cột **Detailed Monitoring**:
-
-* Lúc này hệ thống sẽ hiển thị popup và bạn cần chọn **Disable** để tắt tính năng đẩy logs từ **vCDN domain** đang chọn về hệ thống vMonitor Platform.
-
-<figure><img src="../../../../.gitbook/assets/image (338).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FbAMrZrVzx3UuRD9msTxv%252Fimage.png%3Falt%3Dmedia%26token%3D19374484-43ea-458e-81af-88f002978c2f&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=49c6f914&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### Một số chú ý: <a href="#lamviecvoivcdn-log-motsochuy" id="lamviecvoivcdn-log-motsochuy"></a>
+## Edit Log project to receive vCDN logs <a href="#lamviecvoivcdn-log-chinhsualogprojectnhanvcdnlogs" id="lamviecvoivcdn-log-chinhsualogprojectnhanvcdnlogs"></a>
 
-* vCDN domain sau khi được tạo sẽ mất tối đa **5 phút** để có thể đồng bộ về vMonitor Platform.
-* Kể từ thời điểm bật Detail monitoring cho một vCDN domain, sẽ mất một khoảng thời gian (có thể từ **5 phút - 10 phút**) để logs có thể xuất hiện tại hệ thống vMonitor Platform. (Thông số này tùy thuộc vào độ trễ đẩy logs của hệ thống vCDN).
-* Kể từ thời điểm xóa một vCDN domain trên hệ thống vMonitor Platform, trong vòng **24h** thì chúng tôi sẽ xóa hoàn toàn vCDN domain của bạn khỏi hệ thống vMonitor Platform.
+If you need to change the Log Project containing Logs, you can select the icon![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs.vngcloud.vn%2Fdownload%2Fthumbnails%2F69468834%2Fimage2024-1-9\_13-27-31.png%3Fversion%3D1%26modificationDate%3D1704781652000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=f96a07ea\&sv=1)and select the **Edit Log Project** button . At **the Change Log project** popup , select the new Log Project you want to change and click **Save** .
+
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FgSZV0t9KkjqBtQUBt37x%252Fimage.png%3Falt%3Dmedia%26token%3Dbce05ae5-e7f9-41ae-8e77-624a7fe293c7&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=38e014d6&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+
+***
+
+## Turn off the Detail Monitoring feature <a href="#lamviecvoivcdn-log-tattinhnangdetailmonitoring" id="lamviecvoivcdn-log-tattinhnangdetailmonitoring"></a>
+
+If you no longer need to view logs of any vCDN domain, you need to click the **Disable** icon in the **Detailed Monitoring** column :
+
+* At this time, the system will display a popup and you need to select **Disable** to turn off the feature of pushing logs from the selected **vCDN domain to the vMonitor Platform system.**
+
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F3FMtbPL3O6up8GmxNGk6%252Fimage.png%3Falt%3Dmedia%26token%3D15114fbd-0cb3-4e38-9275-739aba84a45a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=56b6ce8e&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+
+***
+
+## Some notes: <a href="#lamviecvoivcdn-log-motsochuy" id="lamviecvoivcdn-log-motsochuy"></a>
+
+* Once created, vCDN domain will take up to **5 minutes** to synchronize to vMonitor Platform.
+* From the moment Detail monitoring is turned on for a vCDN domain, it will take some time (possibly from **5 minutes - 10 minutes** ) for logs to appear in the vMonitor Platform system. (This parameter depends on the logs push delay of the vCDN system).
+* From the moment we delete a vCDN domain on the vMonitor Platform system, within **24 hours** we will completely delete your vCDN domain from the vMonitor Platform system.

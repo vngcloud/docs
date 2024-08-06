@@ -2,11 +2,11 @@
 
 Know the exact location of the device on the rack, the devices are distinguished by different colors according to the type of device: Server, Network device, Data panel, Shelf, and Other (other device types).
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### In the rack layout page, you can:
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### View the ownership status of Rack Units
 

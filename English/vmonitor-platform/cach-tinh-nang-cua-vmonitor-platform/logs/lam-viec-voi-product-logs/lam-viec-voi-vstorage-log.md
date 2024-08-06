@@ -1,26 +1,26 @@
-# Làm việc với vStorage-Log
+# Working with vStorage-Log
 
-Để có thể xem được log của vStorage Project bạn truy cập vào vMonitor, sau đó vào **Infrastructure list/vStorage Log**, tại đây hệ thống vMonitor đã tự động đồng bộ tất cả vStorage Project ở 2 Region: HCM và HN về. Tại màn hình này, mỗi vStorage Project bạn sẽ thấy các cột thông tin cơ bản như:
+To be able to view the vStorage Project log, you access vMonitor, then go to **Infrastructure list/vStorage Log** , where the vMonitor system has automatically synchronized all vStorage Projects in 2 Regions: HCM and Hanoi. On this screen, for each vStorage Project you will see basic information columns such as:
 
-* **vStorage project**: tên của vStorage Project
-* **vStorage region**: region của vStorage Project
-* **Log Project**: log project sẽ chứ logs của vStorage Project khi bạn enable "Detailed Monitoring"
-* **Log Project Usage**: thông tin về mức độ sử dụng của Log Project mà đã được gắn vào vStorage Project này
-* **Monitoring Status**: trạng thái monitoring của vStorage Project, nếu chưa enable "Detailed Monitoring" thì trạng thái sẽ là INACTIVE, nếu đã enable thì trạng thái là ACTIVE và bạn có thể vào Log Project được gắn để xem vStorage Logs
-* **Detailed Monitoring**: bật tắt theo dõi Logs của vStorage Project.
+* **vStorage project** : name of vStorage Project
+* **vStorage region** : region of vStorage Project
+* **Log Project** : the project log will contain vStorage Project logs when you enable "Detailed Monitoring"
+* **Log Project Usage** : information about the usage level of the Log Project that has been attached to this vStorage Project
+* **Monitoring Status** : monitoring status of vStorage Project, if "Detailed Monitoring" has not been enabled then the status will be INACTIVE, if enabled then the status is ACTIVE and you can go to the attached Project Log to view vStorage Logs
+* **Detailed Monitoring** : toggle vStorage Project Logs monitoring on and off.
 
-Để có thể xem Logs của vStorage Project bạn cần nhấn **enable** tại cột **Detailed Monitoring**, hệ thống sẽ hiển thị Popup và bạn cần **chọn Log Project** để chứa logs của vStorage Project này, sau đó nhấn "**enable**". Nếu bạn chưa có bất kì Log Project nào, bạn có thể nhấn "Create a log project" ở popup hoặc qua tab Quota & Usage để tạo Log Project trước.
+To be able to view vStorage Project Logs, you need to click **enable** in the **Detailed Monitoring** column , the system will display a Popup and you need **to select Log Project** to contain the logs of this vStorage Project, then click " **enable** ". If you don't have any Log Project yet, you can click "Create a log project" in the popup or go through the Quota & Usage tab to create a Log Project first.
 
-<figure><img src="../../../../.gitbook/assets/image (333).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FGgItm1mi0sIAYpOqkgvc%252Fimage.png%3Falt%3Dmedia%26token%3D7cea2f5c-efbf-4a10-b3ff-409ffc855cbb&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=77de0533&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-Sau khi enable bạn sẽ thấy status của vStorage Project này chuyển thành **ACTIVE**, và bạn có thể truy cập vào Log Project vừa chọn để xem logs
+After enabling, you will see the status of this vStorage Project change to **ACTIVE** , and you can access the Log Project you just selected to view the logs.
 
-Nếu có nhu cầu thay đổi Log Project chứa Logs, bạn có thể chọn nút 3 chấm và chọn "**Edit Log Project**" để thay đổi.
+If you need to change the Log Project containing Logs, you can select the 3-dot button and select " **Edit Log Project** " to change.
 
-Nếu không còn nhu cầu để xem logs của vStorage Project thì bạn có thể **disable** ở cột **Detailed Monitoring**.
+If you no longer need to view vStorage Project logs, you can **disable the Detailed Monitoring** column .
 
 ***
 
-## **Một số chú ý:**
+### **Some notes:** <a href="#mot-so-chu-y" id="mot-so-chu-y"></a>
 
-* vStorage Project sau khi được tạo từ vStorage Portal, sẽ mất khoảng vào phút (tối đa 10 phút) để có thể đồng bộ về vMonitor
+* After vStorage Project is created from vStorage Portal, it will take about minutes (maximum 10 minutes) to synchronize to vMonitor.

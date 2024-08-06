@@ -1,42 +1,42 @@
 # Grok Parser
 
-### Tổng quan
+## Overview <a href="#tong-quan" id="tong-quan"></a>
 
-Grok parser là một bộ lọc (filter) giúp phân tích và cấu trúc hóa dữ liệu không có cấu trúc. Grok parser sử dụng các pattern (mẫu) để parser dữ liệu logs.
+Grok parser is a filter that helps analyze and structure unstructured data. Grok parser uses patterns to parse log data.
 
 ***
 
-### Cấu hình Grok parser
+## Configure Grok parser <a href="#cau-hinh-grok-parser" id="cau-hinh-grok-parser"></a>
 
-Để tạo cấu hình Grok parser, hãy làm theo hướng dẫn bên dưới:&#x20;
+To create a Grok parser configuration, follow the instructions below:
 
-1. Tại mục **Processor information**, nhập các thông tin chung cho một processor theo hướng dẫn tại [Processor](../). Trong nội dung này thì bạn sẽ chọn **Processor type** là **Grok Parser**.
-2. Tại mục **Parsing rule**, nhập các thông tin sau đây:
+1. In the **Processor information** section , enter general information for a processor according to the instructions at [Processor](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/logs/lam-viec-voi-log-pipeline/processor) . In this content, you will choose **Processor type** as **Grok Parser** .
+2. In the **Parsing rule** section , enter the following information:
 
-2.1 Nhập **Source field**: field chứa logs sẽ cần parse.
+2.1 Enter **Source field** : field contains logs that will need to be parsed.
 
-2.2 Nhập **Target field**: field sẽ được ghi đè bên destination log project, thông thường bạn sẽ không cần nhập thông tin này&#x20;
+2.2 Enter **Target field** : field will be overwritten in destination log project, normally you will not need to enter this information
 
-2.3 Nhập **Rule pattern**: chứa grok pattern để matching với source field và parse ra theo cấu trúc.&#x20;
+2.3 Enter **Rule pattern** : contains grok pattern to match source field and parse out according to structure.
 
-Ví dụ:&#x20;
+For example:
 
-<table data-full-width="true"><thead><tr><th width="129">Source log project</th><th width="161">Destination log project</th><th width="195">Message (field logs mà chúng tôi thực hiện parser)</th><th width="198">Rule pattern</th><th>Kết quả parser</th></tr></thead><tbody><tr><td>webserver</td><td>webserver-parse</td><td><p></p><pre><code>87.251.81.179 - 
+<table data-full-width="true"><thead><tr><th width="129">Source log project</th><th width="161">Destination log project</th><th width="195">Message (field logs mà chúng tôi thực hiện parser)</th><th width="198">Rule pattern</th><th>Kết quả parser</th></tr></thead><tbody><tr><td>webserver</td><td>webserver-parse</td><td><pre><code>87.251.81.179 - 
 - [01/Aug/2023:12:16:39 +0200] 
 "GET /core/themes/theme.inc/?post
 == HTTP/1.0" 200 63388
 </code></pre></td><td>%{IP:client_ip} %{USER:ident} %{USER:auth} \[%{HTTPDATE:timestamp}\] "%{WORD:http_method} %{URIPATHPARAM:request} HTTP/%{NUMBER:http_version}" %{NUMBER:response_code} %{NUMBER:response_size}</td><td>{<br>"request": "/core/themes/theme.inc/?post==",<br>"MONTH": "Aug",<br>"response_code": "200",<br>"IPV6": null,<br>"auth": "-",<br>"HOUR": "12",<br>"ident": "-",<br>"IPV4": "87.251.81.179",<br>"BASE10NUM": [<br>"1.0",<br>"200",<br>"63388"<br>],<br>"http_version": "1.0",<br>"TIME": "12:16:39",<br>"URIQUERY": "post==",<br>"INT": "+0200",<br>"response_size": "63388",<br>"http_method": "GET",<br>"YEAR": "2023",<br>"URIPATH": "/core/themes/theme.inc/",<br>"USERNAME": [<br>"-",<br>"-"<br>],<br>"client_ip": "87.251.81.179",<br>"MINUTE": "16",<br>"SECOND": "39",<br>"MONTHDAY": "01",<br>"timestamp": "01/Aug/2023:12:16:39 +0200"<br>}</td></tr></tbody></table>
 
-3\. Tại mục **Test rules**, nhập các thông sau sau đây:
+3\. In the **Test rules** section , enter the following information:
 
-* Nhập **Log samples** là các dòng logs mẫu để bạn kiểm tra xem rule pattern có parse thành công không.
-* Nhấn **Test your rules** để xem hệ thống có parse thành công không
+* Enter **Log samples** as sample log lines so you can check if the rule pattern is parsed successfully.
+* Click **Test your rules** to see if the system parses successfully
 
-<figure><img src="../../../../../../.gitbook/assets/image (322).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fo8vatjJuVewSVSjfGCX3%252Fimage.png%3Falt%3Dmedia%26token%3De2955d05-07b6-4a16-8a13-e489d4f22a86&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=502ed872&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### Lưu trữ và tái sử dụng Parsing rule
+#### Store and reuse Parsing rules <a href="#luu-tru-va-tai-su-dung-parsing-rule" id="luu-tru-va-tai-su-dung-parsing-rule"></a>
 
-* Bạn có thể lưu trữ một parsing rule bằng cách tích chọn vào **Save this rule**, sau đó nhập tên gợi nhớ cho parsing rule mà bạn muốn lưu trữ. Tên gợi nhớ có chiều dài tối thiểu là 5 ký tự, chiều dài tối đa là 255 ký tự và chỉ có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), khoảng trắng ( ), dấu gạch dưới (\_), dấu gạch ngang (-) và ký tự @.
-* Sau khi parsing rule đã được lưu trữ, trong các lần tạo processor kế tiếp bạn có thể tái sử dụng rule này bằng cách chọn **Rule presets** tại mục Pasing rule.&#x20;
+* You can store a parsing rule by checking **Save this rule** , then entering a memorable name for the parsing rule you want to store. The mnemonic name has a minimum length of 5 characters, a maximum length of 255 characters and can only include upper and lower case letters (az, AZ), numbers (0-9), and dots (.), space ( ), underscore (\_), hyphen (-), and the @ character.
+* After the parsing rule has been stored, in subsequent processor creations you can reuse this rule by selecting **Rule presets** in the Pasing rule section.

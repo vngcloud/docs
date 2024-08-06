@@ -33,8 +33,6 @@ To create a processor group, follow the instructions below:
 4. **Enter Filter** conditions for the log if any. You can enter filter conditions for the log in one of two ways: **Suggestion mode** or **Editor mode** . How to use these two methods and switch back and forth between the two methods has been described in the [Search logs](https://docs-admin.vngcloud.vn/display/VPV/Search+logs) features .
 5. Select **Create.**
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fattachments%2F49650043%2Fimage2023-7-31\_14-9-40.png%3Fversion%3D1%26modificationDate%3D1690787381000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=182a9f84\&sv=1)
-
 </details>
 
 <details>
@@ -43,9 +41,9 @@ To create a processor group, follow the instructions below:
 
 Currently, VNG Cloud supports libraries for two popular applications: **Apache and Nginx** . Once you select **Process Group Library** , continue with the steps below to complete creating the processor group
 
-1. Select ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F49650043%2Fimage2023-3-27\_9-48-38.png%3Fversion%3D1%26modificationDate%3D1679885318000%26api%3Dv2\&width=40\&dpr=4\&quality=100\&sign=a2c0b2ac\&sv=1)( **Duplicate this group)** to create a Processor Group from this Library.
+1. Select ( **Duplicate this group)** to create a Processor Group from this Library.
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fattachments%2F49650043%2Fimage2023-8-2\_15-6-24.png%3Fversion%3D1%26modificationDate%3D1690963585000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=da712c61\&sv=1)
+<!---->
 
 1. Enter information including:
 
@@ -56,22 +54,16 @@ Currently, VNG Cloud supports libraries for two popular applications: **Apache a
 
 1. Select **Duplicate** .
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fattachments%2F49650043%2Fimage2023-8-2\_15-2-28.png%3Fversion%3D1%26modificationDate%3D1690963350000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=742ce32d\&sv=1)
-
 After you successfully copy:
 
 * For the **Apache** library , the system will automatically create **3 Processor** types: **Grok Parser, GeoIP Parse, User-Agent Parser** . If these parser configurations are not what you want, you can edit these **Processors** according to the instructions at [Processor](https://docs-admin.vngcloud.vn/display/VPV/Processor) .
 * For the **Nginx** library , the system will automatically create **4 Processor** types: **Grok Parser, Field Remapper Parser, GeoIP Parse, Date Parser** . If these parser configurations are not what you want, you can edit these **Processors** according to the instructions at [Processor](https://docs-admin.vngcloud.vn/display/VPV/Processor) .
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fattachments%2F49650043%2Fimage2023-8-2\_15-8-35.png%3Fversion%3D1%26modificationDate%3D1690963717000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=3ee0362\&sv=1)
-
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fattachments%2F49650043%2Fimage2023-8-2\_15-9-10.png%3Fversion%3D1%26modificationDate%3D1690963751000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=ce49a75c\&sv=1)
-
 </details>
 
 ***
 
-#### Edit Processor Groups <a href="#chinh-sua-processor-groups" id="chinh-sua-processor-groups"></a>
+## Edit Processor Groups <a href="#chinh-sua-processor-groups" id="chinh-sua-processor-groups"></a>
 
 To edit Processor group in Log pipeline, follow the instructions below
 
@@ -86,7 +78,7 @@ To edit Processor group in Log pipeline, follow the instructions below
 
 ***
 
-#### Delete Processor Groups <a href="#xoa-processor-groups" id="xoa-processor-groups"></a>
+## Delete Processor Groups <a href="#xoa-processor-groups" id="xoa-processor-groups"></a>
 
 When you no longer need to use a custom Processor group, you can delete the Processor group from the system according to the instructions below:
 

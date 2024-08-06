@@ -1,23 +1,23 @@
 # JSON Parser
 
-### Tổng quan
+### Overview
 
-Grok parser là một bộ lọc (filter) giúp phân tích và cấu trúc hóa dữ liệu có định dạng JSON. Json parser sử dụng thư viện Json để chuyển đổi một field chứa JSON thành một cấu trúc dữ liệu thực trong logs.
+Grok parser is a filter that helps parse and structure data in JSON format. The Json parser uses the Json library to convert a field containing JSON into an actual data structure in the logs.
 
 ***
 
-### Cấu hình JSON parser
+## Configure JSON parser <a href="#cau-hinh-json-parser" id="cau-hinh-json-parser"></a>
 
-Để tạo cấu hình Grok parser, hãy làm theo hướng dẫn bên dưới:
+To create a Grok parser configuration, follow the instructions below:
 
-1. Tại mục **Processor information**, nhập các thông tin chung cho một processor theo hướng dẫn tại [Processor](./). Trong nội dung này thì bạn sẽ chọn **Processor type** là **JSON Parser**.
-2. Tại mục **Parsing rule**, nhập các thông tin sau đây:
+1. In the **Processor information** section , enter general information for a processor according to the instructions in [Processor](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/logs/lam-viec-voi-log-pipeline/processor) . In this content, you will choose **Processor type** as **JSON Parser** .
+2. In the **Parsing rule** section , enter the following information:
 
-* Nhập **Source field**: field chứa logs sẽ cần parse.
-* Nhập **Target field**: field sẽ được ghi đè bên destination log project, thông thường bạn sẽ không cần nhập thông tin này.
-* Chọn **Skip on invalid JSON** nếu bạn muốn bỏ qua parser source field không đúng định dạng logs là JSON.
+* Enter **Source field** : field containing logs that will need to be parsed.
+* Enter **Target field** : field will be overwritten in destination log project, normally you will not need to enter this information.
+* Select **Skip on invalid JSON** if you want to ignore parser source fields that are not properly formatted logs as JSON.
 
-Ví dụ:
+For example:
 
 | Source log project                                 | Destination log project                                                                                                                                                                        | Message (field logs mà chúng tôi thực hiện parser)                            | Kết quả parser |
 | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | -------------- |
@@ -27,11 +27,9 @@ Ví dụ:
 | "request\_id":"1234567890","user\_id":"vngcloud1"} |                                                                                                                                                                                                |                                                                               |                |
 |                                                    | <p>{<br>"timestamp": "2023-07-23T12:34:56Z",<br>"level": "error",<br>"message": "There was an error processing the request",<br>"request_id": "1234567890",<br>"user_id": "vngcloud1"<br>}</p> |                                                                               |                |
 
-<figure><img src="../../../../../.gitbook/assets/image%20(323).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-***
+## Store and reuse Parsing rules <a href="#luu-tru-va-tai-su-dung-parsing-rule" id="luu-tru-va-tai-su-dung-parsing-rule"></a>
 
-### Lưu trữ và tái sử dụng Parsing rule
-
-* Bạn có thể lưu trữ một parsing rule bằng cách tích chọn vào **Save this rule**, sau đó nhập tên gợi nhớ cho parsing rule mà bạn muốn lưu trữ. Tên gợi nhớ có chiều dài tối thiểu là 5 ký tự, chiều dài tối đa là 255 ký tự và chỉ có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), khoảng trắng ( ), dấu gạch dưới (\_), dấu gạch ngang (-) và ký tự @.
-* Sau khi parsing rule đã được lưu trữ, trong các lần tạo processor kế tiếp bạn có thể tái sử dụng rule này bằng cách chọn **Rule presets** tại mục Pasing rule. .
+* You can store a parsing rule by checking **Save this rule** , then entering a memorable name for the parsing rule you want to store. The mnemonic name has a minimum length of 5 characters, a maximum length of 255 characters and can only include upper and lower case letters (az, AZ), numbers (0-9), and dots (.), space ( ), underscore (\_), hyphen (-), and the @ character.
+* After the parsing rule has been stored, in subsequent processor creations you can reuse this rule by selecting **Rule presets** in the Pasing rule section.&#x20;

@@ -1,30 +1,30 @@
-# Làm việc với vLB-Log
+# Working with vLB-Log
 
-Để xem được logs của vLB bạn truy cập vào vMonitor Platform tại [link](https://hcm-3.console.vngcloud.vn/vmonitor), sau đó vào mục **Infrastructure list/vLB Log.** Tại đây, bạn có thể xem danh sách tất cả vLB trên HCM03 của bạn. Tại màn hình này, bạn sẽ thấy các cột thông tin cơ bản như:
+To view vLB logs, access vMonitor Platform at [the link](https://hcm-3.console.vngcloud.vn/vmonitor) , then go to **Infrastructure list/vLB Log.** Here you can see a list of all vLBs on your HCM03. On this screen, you will see basic information columns such as:
 
-* **vLB Project**: tên của vLB.
-* **Log Project**: log project sẽ chứa logs của vLB khi bạn enable "Detailed Monitoring".
-* **Log Project Usage**: thông tin về mức độ sử dụng của Log Project mà bạn đã gắn vào vLB này.
-* **Monitoring Status**: trạng thái monitoring của vLB. Nếu chưa enable "Detailed Monitoring" thì trạng thái sẽ là INACTIVE, nếu đã enable thì trạng thái là ACTIVE, còn nếu vLB đã bị xóa thì sẽ là DELETED.
-* **Detailed Monitoring**: kích hoạt hay hủy theo dõi Logs của vLB này.
+* **vLB Project** : name of vLB.
+* **Log Project** : log project will contain vLB logs when you enable "Detailed Monitoring".
+* **Log Project Usage** : information about the usage level of the Log Project that you have attached to this vLB.
+* **Monitoring Status** : monitoring status of vLB. If "Detailed Monitoring" has not been enabled, the status will be INACTIVE, if enabled, the status will be ACTIVE, and if vLB has been deleted, it will be DELETED.
+* **Detailed Monitoring** : enable or disable monitoring of Logs of this vLB.
 
-<figure><img src="../../../../.gitbook/assets/image (332).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FDpanZuQOFYSchmvjqYgq%252Fimage.png%3Falt%3Dmedia%26token%3Db83f8d09-82ce-4f5c-a437-b309a76932d5&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b0948de&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-Để kích hoạt theo dõi, bạn cần nhấn **enable** tại cột **Detailed Monitoring.**&#x20;
+To enable monitoring, you need to click **enable** in the **Detailed Monitoring column.**
 
-Hệ thống sẽ hiển thị Popup và bạn cần **chọn Log Project** để chứa logs của vLB này, sau đó nhấn "**enable**".  Nếu bạn chưa có bất kì Log Project nào, bạn có thể nhấn "Create a log project" ở popup hoặc qua tab Quota & Usage để tạo Log Project trước.
+The system will display a Popup and you need **to select Log Project** to contain the logs of this vLB, then click " **enable** ". If you don't have any Log Project yet, you can click "Create a log project" in the popup or go through the Quota & Usage tab to create a Log Project first.
 
-Sau khi enable bạn sẽ thấy status của vLB  này chuyển thành **ACTIVE**, và bạn có thể truy cập vào Log Project vừa chọn để xem logs.
+After enabling, you will see the status of this vLB change to **ACTIVE** , and you can access the Log Project you just selected to view the logs.
 
-Nếu có nhu cầu thay đổi Log Project chứa Logs, bạn có thể chọn nút 3 chấm và chọn "**Edit Log Project**" để thay đổi.
+If you need to change the Log Project containing Logs, you can select the 3-dot button and select " **Edit Log Project** " to change.
 
-Nếu không còn nhu cầu để xem logs của vLB  thì bạn có thể **disable** ở cột **Detailed Monitoring**.
+If you no longer need to view vLB logs, you can **disable the Detailed Monitoring** column .
 
 ***
 
-## Các fields dữ liệu: <a href="#lamviecvoivlb-log-cacfieldsdulieu" id="lamviecvoivlb-log-cacfieldsdulieu"></a>
+### Data fields: <a href="#lamviecvoivlb-log-cacfieldsdulieu" id="lamviecvoivlb-log-cacfieldsdulieu"></a>
 
-Đối với Application Load Balancer, bạn sẽ xem được HTTP Access Logs với các fields:
+For Application Load Balancer, you will see HTTP Access Logs with the fields:
 
 * httpRequest.clientIp
 * httpRequest.clientPort
@@ -37,7 +37,7 @@ Nếu không còn nhu cầu để xem logs của vLB  thì bạn có thể **dis
 * httpRequest.userAgent
 * httpRequest.referer
 
-Đối với Network Load Balancer, bạn sẽ xem được TCP Connection Logs với các fields:
+For Network Load Balancer, you will see TCP Connection Logs with the fields:
 
 * jsonPayload.connection.clientIp
 * jsonPayload.connection.clientPort
@@ -47,6 +47,6 @@ Nếu không còn nhu cầu để xem logs của vLB  thì bạn có thể **dis
 
 ***
 
-### Một số chú ý: <a href="#lamviecvoivlb-log-motsochuy" id="lamviecvoivlb-log-motsochuy"></a>
+#### Some notes: <a href="#lamviecvoivlb-log-motsochuy" id="lamviecvoivlb-log-motsochuy"></a>
 
-* vLB sau khi được tạo sẽ mất khoảng vào phút (tối đa 10 phút) để có thể đồng bộ về vMonitor Platform.
+* After being created, the vLB will take about minutes (maximum 10 minutes) to synchronize to vMonitor Platform.

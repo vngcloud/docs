@@ -1,9 +1,9 @@
-# Làm việc với Product Logs
+# Working with Product Logs
 
-#### Tổng quan <a href="#lamviecvoiproductlogs-tongquan" id="lamviecvoiproductlogs-tongquan"></a>
+**Overview**
 
-Infrastructure List là nơi sẽ liệt kê các product mà vMonitor Platform Logs hỗ trợ tích hợp logs, các product có hỗ trợ logs được liệt kê bên dưới
+Infrastructure List is where products that vMonitor Platform Logs support log integration will be listed. Products that support logs are listed below.
 
-* vStorage-Log: là nơi quản lý danh sách các vStorage Project mà bạn có thể bật để coi logs trên từng Project.
-* vLB-Log: là nơi quản lý danh sách các vLB instance mà bạn có thể bật để coi logs.
-* vCDN\_log: là nơi quản lý danh sách các vCDN mà bạn có thể bật để coi logs.
+* vStorage-Log: is the place to manage the list of vStorage Projects that you can enable to view logs on each Project.
+* vLB-Log: is the place to manage the list of vLB instances that you can enable to view logs.
+* vCDN\_log: is the place to manage the list of vCDNs that you can enable to view logs.
