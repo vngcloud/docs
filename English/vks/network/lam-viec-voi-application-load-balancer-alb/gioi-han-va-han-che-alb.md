@@ -1,6 +1,6 @@
 # ALB Limitation
 
-### Limit <a href="#restrictionsandlimitationsalb-gioihan" id="restrictionsandlimitationsalb-gioihan"></a>
+### Note <a href="#restrictionsandlimitationsalb-gioihan" id="restrictionsandlimitationsalb-gioihan"></a>
 
 A few notes about the limitations of ingressing an ALB into a cluster:
 

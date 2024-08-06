@@ -12,7 +12,7 @@ The IP Whitelist feature on VKS's Private Node Group mode allows you to only all
 
 **Recommendations for Using Whitelist in Cluster Models:**
 
-**1. Public Cluster Only Includes Public Node Group**
+## **1. Public Cluster Only Includes Public Node Group**
 
 * **Recommendation** : Not recommended to use whitelist.
 *   If you need to use Whitelist IP for security, please allow vServer's IP Range Public list according to the following list:
@@ -38,16 +38,16 @@ The IP Whitelist feature on VKS's Private Node Group mode allows you to only all
     180.93.183.0/24
     ```
 
-**2. Public Cluster Includes Private Node Group Going Through NAT Gateway (Pfsense, PaloAlto)**
+## **2. Public Cluster Includes Private Node Group Going Through NAT Gateway (Pfsense, PaloAlto)**
 
 * **Recommendation** : Can use whitelist feature.
 * Need to whitelist additional IP of NAT Gateway.
 
-**3. Private Cluster Includes Public Node Group or Private Node Group (Coming soon)**
+## **3. Private Cluster Includes Public Node Group or Private Node Group (Coming soon)**
 
 ***
 
-#### Edit Whitelist <a href="#chinh-sua-whitelist" id="chinh-sua-whitelist"></a>
+## Edit Whitelist <a href="#chinh-sua-whitelist" id="chinh-sua-whitelist"></a>
 
 To use the IP Whitelist feature on Private Node Group mode, you need to perform the following steps:
 

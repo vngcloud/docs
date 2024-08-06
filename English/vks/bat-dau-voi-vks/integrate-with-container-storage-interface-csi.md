@@ -4,8 +4,8 @@
 
 To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
-* There is at least 1 **VPC** and 1 **Subnet in ACTIVE** state . If you do not have a VPC or Subnet yet, please create a VPC or Subnet according to the instructions here [.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md)
-* There is at least 1 **SSH key in ACTIVE** state . If you do not have any SSH key, please create an SSH key according to the instructions here [.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md)
+* There is at least 1 **VPC** and 1 **Subnet in ACTIVE** state . If you do not have a VPC or Subnet yet, please create a VPC or Subnet according to the instructions here [.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc)
+* There is at least 1 **SSH key in ACTIVE** state . If you do not have any SSH key, please create an SSH key according to the instructions here [.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc)
 * Installed and configured **kubectl** on your device. Please refer here [if](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) you are not sure how to install and use kuberctl. In addition, you should not use a kubectl version that is too old, we recommend that you use a kubectl version that is no more than one version different from the cluster version.
 
 ***
@@ -44,15 +44,11 @@ After the Cluster is successfully initialized, you can connect and check the new
 
 * Run the following command to test **node**
 
-Copy
-
 ```
 kubectl get nodes
 ```
 
 * If the results are returned as below, it means your Cluster was successfully initialized with 3 nodes as below.
-
-Copy
 
 ```
 NAME                                            STATUS     ROLES    AGE   VERSION
@@ -65,39 +61,57 @@ ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.
 
 ## Create Service Account and install VNGCloud BlockStorage CSI Driver <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
 
+{% hint style="info" %}
 **Attention:**
 
 * When you initialize the Cluster according to the instructions above, if you have not enabled the **Enable BlockStore Persistent Disk CSI Driver** option , by default we will not pre-install this plugin into your Cluster. You need to manually create Service Account and install VNGCloud BlockStorage CSI Driver according to the instructions below. If you have enabled the **Enable BlockStore Persistent Disk CSI Driver** option , we have pre-installed this plugin into your Cluster, skip the Service Account Initialization step, install VNGCloud BlockStorage CSI Driver and continue following the instructions from now on. Deploy a Workload.
-* **VNGCloud BlockStorage CSI Driver** only supports attaching volumes to a single node (VM) throughout the life of that volume. If you have a need for ReadWriteMany, you may consider using the NFS CSI Driver, as it allows multiple nodes to Read and Write on the same volume at the same time. This is very useful for applications that need to share data between multiple pods or services in Kubernetes.
+* <mark style="color:red;">**VNGCloud BlockStorage CSI Driver**</mark> <mark style="color:red;"></mark><mark style="color:red;">only supports attaching volumes to a single node (VM) throughout the life of that volume. If you have a need for ReadWriteMany, you may consider using the NFS CSI Driver, as it allows multiple nodes to Read and Write on the same volume at the same time. This is very useful for applications that need to share data between multiple pods or services in Kubernetes.</mark>
+{% endhint %}
 
 <details>
 
 <summary>Create Service Account and install VNGCloud BlockStorage CSI Driver</summary>
 
-*
-  *
-  *
-  *
+**Initialize Service Account**
 
-<!---->
+* Create or use a **service account** created on IAM and attach policy: **vServerFullAccess** . To create a service account, go here [and](https://hcm-3.console.vngcloud.vn/iam/service-accounts) follow these steps:
+  * Select " **Create a Service Account** ", enter a name for the Service Account and click **Next Step** to assign permissions to the Service Account
+  * Find and select **Policy: vServerFullAccess** , then click " **Create a Service Account** " to create a Service Account, Policy: vLBFullAccess and Policy: vServerFullAccess are created by VNG Cloud, you cannot delete these policies.
+  * After successful creation, you need to save **the Client\_ID** and **Secret\_Key** of the Service Account to perform the next step.
 
-*
-*
+**Install VNGCloud BlockStorage CSI Driver**
 
-```
-```
-
-*
+* Install Helm version 3.0 or higher. Refer to [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) for instructions on how to install.
+* Add this repo to your cluster via the command:
 
 ```
+helm repo add vks-helm-charts https://vngcloud.github.io/vks-helm-charts
+helm repo update
 ```
 
-*
+* Replace your K8S cluster's ClientID, Client Secret, and ClusterID information and continue running:
 
 ```
+helm install vngcloud-blockstorage-csi-driver vks-helm-charts/vngcloud-blockstorage-csi-driver \
+  --replace --namespace kube-system \
+  --set vngcloudAccessSecret.keyId=${VNGCLOUD_CLIENT_ID} \
+  --set vngcloudAccessSecret.accessKey=${VNGCLOUD_CLIENT_SECRET} \
+  --set vngcloudAccessSecret.vksClusterId=${VNGCLOUD_VKS_CLUSTER_ID}  # Optional
 ```
 
+* After the installation is complete, check the status of vngcloud-blockstorage-csi-driver pods:
+
 ```
+kubectl get pods -n kube-system | grep vngcloud-ingress-controller
+```
+
+For example, in the image below you have successfully installed vngcloud-controller-manager:
+
+```
+NAME                                           READY   STATUS    RESTARTS       AGE
+vngcloud-csi-controller-56bd7b85f-ctpns        7/7     Running   6 (2d4h ago)   2d4h
+vngcloud-csi-controller-56bd7b85f-npp9n        7/7     Running   2 (2d4h ago)   2d4h
+vngcloud-csi-node-c8r2w                        3/3     Running   0              2d4h
 ```
 
 </details>
@@ -108,11 +122,9 @@ ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.
 
 The following is a guide for you to deploy the nginx service on Kubernetes.
 
-**Step 1** : **Create Deployment for Nginx app.**
+### **Step 1** : **Create Deployment for Nginx app.**
 
 * Create **nginx-service.yaml** file with the following content:
-
-Copy
 
 ```
 apiVersion: apps/v1
@@ -150,27 +162,21 @@ spec:
 
 * Deploy This deployment equals:
 
-Copy
-
 ```
 kubectl apply -f nginx-service.yaml
 ```
 
 ***
 
-**Step 2: Check the Deployment and Service information just deployed**
+### **Step 2: Check the Deployment and Service information just deployed**
 
 * Run the following command to test **Deployment**
-
-Copy
 
 ```
 kubectl get svc,deploy,pod -owide
 ```
 
 * If the results are returned as below, it means you have deployed Deployment successfully.
-
-Copy
 
 ```
 NAME                    TYPE           CLUSTER-IP      EXTERNAL-IP   PORT(S)           AGE     SELECTOR
@@ -187,11 +193,9 @@ pod/nginx-app-7f45b65946-t7d7k   1/1     Running   0          16s   172.16.24.20
 
 ***
 
-#### **Create Persistent Volume** <a href="#tao-persistent-volume" id="tao-persistent-volume"></a>
+### **Create Persistent Volume** <a href="#tao-persistent-volume" id="tao-persistent-volume"></a>
 
 * Create a **persistent-volume.yaml** file with the following content:
-
-Copy
 
 ```
 apiVersion: storage.k8s.io/v1
@@ -242,23 +246,21 @@ spec:
 
 * Run the following command to deploy Ingress
 
-Copy
-
 ```
 kubectl apply -f persistent-volume.yaml
 ```
 
 At this time, the vServer system will automatically create a Volume corresponding to the yaml file above, for example:
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252Fgit-blob-583f937fd10590c3757256908ca0448beaa756cb%252Fimage.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=46e2e194&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F2RVCZQAJhjhzc9qOqmbj%252Fimage.png%3Falt%3Dmedia%26token%3D224b485d-4329-4e9f-9985-d2497487b6b8&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e1d45b44&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 ***
 
-#### **Create Snapshots** <a href="#tao-snapshot" id="tao-snapshot"></a>
+### **Create Snapshots** <a href="#tao-snapshot" id="tao-snapshot"></a>
 
-Snapshot is a low-cost, convenient and effective data backup method and can be used to create images, restore data and distribute copies of data. If you are a new user who has never used the Snapshot service, you will need to Activate Snapshot Service before you can create Snapshots for your Persistent Volume.
+Snapshot is a low-cost, convenient and effective data backup method and can be used to create images, restore data and distribute copies of data. If you are a new user who has never used the Snapshot service, you will need to Activate Snapshot Service before you can create a Snapshot for your Persistent Volume.
 
-**Activate Snapshot Service**
+#### **Activate Snapshot Service**
 
 To be able to create Snapshots, you need to perform Activate Snapshot Service. You will not be charged for activating the snapshot service. After you create snapshots, costs will be calculated based on the storage capacity and storage time of these snapshots. Follow these steps to enable the Snapshot service:
 
@@ -268,14 +270,12 @@ To be able to create Snapshots, you need to perform Activate Snapshot Service. Y
 
 For example:
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252Fgit-blob-82cccdb7ebdaaa1bd31ac5318c7d5e34dc9fd7b4%252Fimage.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=97c30a1&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fx41j2x2uwsgwWzbbwR7B%252Fimage.png%3Falt%3Dmedia%26token%3D305b5f52-1046-44c0-8e89-60bd841bdc9a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=c3002c37&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-**Install VNGCloud Snapshot Controller**
+#### **Install VNGCloud Snapshot Controller**
 
 * Install Helm version 3.0 or higher. Refer to [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) for instructions on how to install.
 * Add this repo to your cluster via the command:
-
-Copy
 
 ```
 helm repo add vks-helm-charts https://vngcloud.github.io/vks-helm-charts
@@ -284,8 +284,6 @@ helm repo update
 
 * Continue running:
 
-Copy
-
 ```
 helm install vngcloud-snapshot-controller vks-helm-charts/vngcloud-snapshot-controller \
   --replace --namespace kube-system
@@ -293,15 +291,11 @@ helm install vngcloud-snapshot-controller vks-helm-charts/vngcloud-snapshot-cont
 
 * After the installation is complete, check the status of vngcloud-blockstorage-csi-driver pods:
 
-Copy
-
 ```
 kubectl get pods -n kube-system
 ```
 
 For example, in the image below you have successfully installed vngcloud-controller-manager:
-
-Copy
 
 ```
 NAME                                           READY   STATUS              RESTARTS       AGE
@@ -310,9 +304,7 @@ snapshot-controller-7fdd984f89-745tg           0/1     ContainerCreating   0    
 snapshot-controller-7fdd984f89-k94wq           0/1     ContainerCreating   0              3s
 ```
 
-**Create a snapshot.yaml file with the following content:**
-
-Copy
+#### **Create a snapshot.yaml file with the following content:**
 
 ```
 apiVersion: snapshot.storage.k8s.io/v1
@@ -337,8 +329,6 @@ spec:
 
 * Run the following command to deploy Ingress
 
-Copy
-
 ```
 kubectl apply -f snapshot.yaml
 ```
@@ -349,13 +339,9 @@ kubectl apply -f snapshot.yaml
 
 * After applying the file successfully, you can check the service and pvc list via:
 
-Copy
-
 ```
 kubectl get sc,pvc,pod -owide
 ```
-
-Copy
 
 ```
 NAME                                                       PROVISIONER          RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
@@ -372,13 +358,11 @@ pod/nginx-app-7f45b65946-t7d7k   1/1     Running   0          94m   172.16.24.20
 
 ***
 
-#### Change the IOPS parameters of the newly created Persistent Volume <a href="#thay-doi-thong-so-iops-cua-persistent-volume-vua-tao" id="thay-doi-thong-so-iops-cua-persistent-volume-vua-tao"></a>
+### Change the IOPS parameters of the newly created Persistent Volume <a href="#thay-doi-thong-so-iops-cua-persistent-volume-vua-tao" id="thay-doi-thong-so-iops-cua-persistent-volume-vua-tao"></a>
 
 To change the IOPS parameters of the newly created Persistent Volume, follow these steps:
 
 **Step 1:** Run the command below to list the PVCs in your Cluster
-
-Copy
 
 ```
 kubectl get persistentvolumes
@@ -386,15 +370,11 @@ kubectl get persistentvolumes
 
 **Step 2:** Edit the PVC YAML file according to the command
 
-Copy
-
 ```
 kubectl edit pvc my-expansion-pvc
 ```
 
-* If you have not edited the IOPS of the Persistent Volume before, when you run the above command, add an annotation bs.csi.vngcloud.vn/volume-type: "volume-type-id" . For example, below I am changing the IOPS of a Persistent Volume from 200 (Volume type id = vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018) to 1000 (Volume type id = vtype-85b39362-a360-4bbb-9afa-a36a40cea748 )
-
-Copy
+* If you have not edited the IOPS of the Persistent Volume before, when you run the above command, add an annotation bs.csi.vngcloud.vn/volume-type: "volume-type-id" . For example, below I am changing the Persistent Volume IOPS from 200 (Volume type id = vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018) to 1000 (Volume type id = vtype-85b39362-a360-4bbb-9afa-a36a40cea748 )
 
 ```
 apiVersion: v1
@@ -434,29 +414,27 @@ status:
 
 * If you have edited the IOPS of the Persistent Volume before, when you run the above command, your yaml file will already have the annotation bs.csi.vngcloud.vn/volume-type: "volume-type-id" . Now, edit this annotation to the Volume type id with the IOPS you desire.
 
-#### Change the Disk Volume of the newly created Persistent Volume <a href="#thay-doi-disk-volume-cua-persistent-volume-vua-tao" id="thay-doi-disk-volume-cua-persistent-volume-vua-tao"></a>
+### Change the Disk Volume of the newly created Persistent Volume <a href="#thay-doi-disk-volume-cua-persistent-volume-vua-tao" id="thay-doi-disk-volume-cua-persistent-volume-vua-tao"></a>
 
 To change the Disk Volume of the newly created Persistent Volume, run the following command:
 
 For example, initially the PVC created was 20 Gi in size, now I will increase it to 30 Gi
 
-Copy
-
 ```
 kubectl patch pvc my-expansion-pvc -p '{"spec":{"resources":{"requests":{"storage":"30Gi"}}}}'
 ```
 
-Attention:
+{% hint style="info" %}
+**Attention:**
 
 * You can only increase Disk Volume but cannot reduce Disk Volume size.
+{% endhint %}
 
 #### Restore Persistent Volume from Snapshot <a href="#restore-persistent-volume-tu-snapshot" id="restore-persistent-volume-tu-snapshot"></a>
 
 To restore Persistent Volume from Snapshot, follow these steps:
 
 * Create file **restore-volume.yaml** with the following content:
-
-Copy
 
 ```
 apiVersion: v1

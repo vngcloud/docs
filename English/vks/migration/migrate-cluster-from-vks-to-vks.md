@@ -4,11 +4,9 @@ To migrate a Cluster from the VKS system to the VKS system, follow the steps in 
 
 ### Prerequisites <a href="#dieu-kien-can" id="dieu-kien-can"></a>
 
-* **Perform download helper bash script and grand execute permission for this file** ([ velero\_helper.sh](https://raw.githubusercontent.com/vngcloud/velero/main/velero\_helper.sh) )
+* <mark style="color:red;">**Perform download helper bash script and grand execute permission for this file**</mark> <mark style="color:red;"></mark><mark style="color:red;">(</mark>[ <mark style="color:red;">velero\_helper.sh</mark>](https://raw.githubusercontent.com/vngcloud/velero/main/velero\_helper.sh) <mark style="color:red;">)</mark>
 * (Optional) Deploy some services to check the correctness of the migration. Suppose, at the source Cluster, I have deployed an nginx service as follows:
   *   Deployment files:
-
-      Copy
 
       ```
       apiVersion: v1
@@ -78,6 +76,7 @@ To migrate a Cluster from the VKS system to the VKS system, follow the steps in 
 
 On the VKS system, you need to initialize a Cluster according to the instructions [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/clusters) . Make sure that the destination cluster's configuration is the same as the source cluster's configuration.
 
+{% hint style="info" %}
 **Attention:**
 
 For the migration to be successful, on the target Cluster, you need to ensure the following requirements:
@@ -85,6 +84,7 @@ For the migration to be successful, on the target Cluster, you need to ensure th
 * The amount of resources needed such as number of nodes, node instance configuration,...
 * Node labels and node taints are the same as the old cluster.
 * Corresponding or alternative Storage Class.
+{% endhint %}
 
 ***
 
@@ -96,9 +96,11 @@ Migrating private resources outside cluster (moving private resources outside th
 * Migrate Databases: you can use **Relational Database Service (RDS)** and **Object Storage Service (OBS)** depending on your needs. After the migration is complete, remember to reconfigure the database for your applications on VKS Cluster.
 * Migrate Storage: you can use vServer's **NFS Server** .
 
+{% hint style="info" %}
 **Attention:**
 
 * After you migrate resources outside the Cluster, you need to ensure the target Cluster can connect to these migrated resources.
+{% endhint %}
 
 ***
 
@@ -115,7 +117,7 @@ For example, I have initialized a vStorage Project, Container with the following
 
 *   Create file **credentials-velero** with the following content:
 
-    Copy
+
 
     ```
     [default]
@@ -124,7 +126,7 @@ For example, I have initialized a vStorage Project, Container with the following
     ```
 *   Install Velero CLI:
 
-    Copy
+
 
     ```
     curl -OL https://github.com/vmware-tanzu/velero/releases/download/v1.13.2/velero-v1.13.2-linux-amd64.tar.gz
@@ -133,7 +135,7 @@ For example, I have initialized a vStorage Project, Container with the following
     ```
 *   Install Velero on your 2 clusters with the command:
 
-    Copy
+
 
     ```
     velero install --provider aws \
@@ -145,15 +147,18 @@ For example, I have initialized a vStorage Project, Container with the following
       --features=EnableCSI
     ```
 
-    Copy
+
 
     ```
     velero client config set features=EnableCSI
     ```
 
+{% hint style="info" %}
 **Attention:**
 
 * When you perform a cluster migration from VKS to VKS, we recommend that you use **Snapshot** to migrate your Volume from the source cluster to the destination cluster.
+{% endhint %}
+
 *   Install the **VNGCloud Snapshot Controller** plugin on 2 clusters with the command:
 
     Copy
@@ -171,21 +176,21 @@ For example, I have initialized a vStorage Project, Container with the following
 
 *   Annotate the Persistent Volumes that need to be backed up. By default, Velero will not backup volume. You can run the command below to annotate backup of all volumes.
 
-    Copy
+
 
     ```
     ./velero_helper.sh mark_volume -c
     ```
 *   Additionally, you can mark not to backup system resources with the following command:
 
-    Copy
+
 
     ```
     ./velero_helper.sh mark_exclude -c
     ```
 *   Apply the file below to create the default VolumeSnapshotClass:
 
-    Copy
+
 
     ```
     apiVersion: snapshot.storage.k8s.io/v1
@@ -202,7 +207,7 @@ For example, I have initialized a vStorage Project, Container with the following
     ```
 *   Perform backup according to the syntax:
 
-    Copy
+
 
     ```
     velero backup create vks-full-backup \
@@ -211,7 +216,7 @@ For example, I have initialized a vStorage Project, Container with the following
       --wait
     ```
 
-    Copy
+
 
     ```
     velero backup describe vks-full-backup --details
@@ -223,14 +228,14 @@ For example, I have initialized a vStorage Project, Container with the following
 
 *   Perform restore according to the command:
 
-    Copy
+
 
     ```
     velero restore create --from-backup vks-full-backup \
         --exclude-resources="MutatingWebhookConfiguration,ValidatingWebhookConfiguration"
     ```
 
-    Copy
+
 
     ```
     velero restore create --from-backup vks-full-backup

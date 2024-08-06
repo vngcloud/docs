@@ -38,7 +38,7 @@ The amount on the invoice is the amount that the user needs to pay to use a spec
 
 For example, the formula for calculating the invoice value when initiating a Server including information is:
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **For postpaid users**&#x20;
 

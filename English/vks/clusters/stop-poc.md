@@ -31,7 +31,9 @@ Before learning how to Stop POC for your resources on VKS, you should clearly un
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252FjXKXT8x32vWWcPdnDXJ1%252Fimage.png%3Falt%3Dmedia%26token%3D7a469b1a-438c-4d23-a58e-ff48ba51f6ab&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=bb9fa80d&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
 **Attention:**
 
 * After stopping POC on VKS, the "Stop POC" button will continue to display if there are still resources that have not been Stop POC after doing so on VKS Portal. You can continue to select and execute Stop POC until all resources are converted to real resources.
-* Currently, VKS only applies payment by POC for Server and Volume and has not yet applied payment for Load Balancer and Snapshot by POC. Therefore, you do not need to perform Stop POC for these two resource types Load Balancer and Snapshot.
+* Currently, VKS only applies payment by POC for Server and Volume and has not yet applied payment for Load Balancer and Snapshot by POC. Therefore, you do not need to perform Stop POC for these two resource types Load Balancer and Snapshot.c
+{% endhint %}

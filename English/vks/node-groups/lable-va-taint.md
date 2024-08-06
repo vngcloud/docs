@@ -1,6 +1,6 @@
 # Lable and Taint
 
-#### Lable <a href="#label" id="label"></a>
+## Lable <a href="#label" id="label"></a>
 
 Labels are an important feature in Kubernetes, used to organize and manage objects effectively. You can assign key-value pairs to Kubernetes objects such as Pod, Node, Service, Deployment, etc. Specifically:
 
@@ -16,7 +16,7 @@ Labels are an important feature in Kubernetes, used to organize and manage objec
 * `environment: production`- This label indicates that the object belongs to the production environment.
 * `version: 1.7.2`- This label indicates the object is related to version 1.7.2.
 
-#### **Create Label** <a href="#tao-lable" id="tao-lable"></a>
+### **Create Label** <a href="#tao-lable" id="tao-lable"></a>
 
 To create a Lable for a Node Group, follow these instructions:
 
@@ -35,23 +35,17 @@ To create a Lable for a Node Group, follow these instructions:
 
 Or you can create Lable through kubectl with the command:
 
-Copy
-
 ```
 kubectl label nodes my-node1 disktype=ssd
 ```
 
 You can check the newly created label again with the command:
 
-Copy
-
 ```
 kubectl get nodes --show-labels
 ```
 
 For example the result for this command would be as follows:
-
-Copy
 
 ```
 NAME      STATUS    ROLES    AGE     VERSION        LABELS
@@ -60,13 +54,11 @@ worker1   Ready     <none>   1d      v1.13.0        ...,kubernetes.io/hostname=w
 worker2   Ready     <none>   1d      v1.13.0        ...,kubernetes.io/hostname=worker2
 ```
 
-#### **Use Lable with nodeSelector** <a href="#su-dung-lable-voi-nodeselector" id="su-dung-lable-voi-nodeselector"></a>
+### **Use Lable with nodeSelector** <a href="#su-dung-lable-voi-nodeselector" id="su-dung-lable-voi-nodeselector"></a>
 
 nodeSelector is a parameter used in PodSpec to specify that Pods should only be scheduled on Nodes with a specific label. This is useful when you want to run Pods on Nodes with specific resources or properties.
 
 * **Create a my-pod.yaml** file containing the following content:
-
-Copy
 
 ```
 apiVersion: v1
@@ -83,15 +75,13 @@ In this example, the Pod `my-pod`is scheduled only on Nodes with label `disktype
 
 * Deploy Pod on your Cluster:
 
-Copy
-
 ```
 kubectl -f apply my-pod.yaml
 ```
 
 ***
 
-#### Taint <a href="#taint" id="taint"></a>
+## Taint <a href="#taint" id="taint"></a>
 
 Taint is an important feature in Kubernetes, serving as a mechanism to tag Nodes and control Pod scheduling on those Nodes. Different from regular Label, Taint is used to specify special properties of Node and execute specific actions when Pod does not meet the conditions defined by Taint. Specifically:
 
@@ -107,8 +97,6 @@ Specifically:
 * **Keys and values ​​must follow the naming rules:** Keys and values ​​must not contain spaces or special characters other than (-, \_,.).
 * **Toleration:** In order for a Pod to be scheduled and run on a Node with Taint, the Pod needs to have a corresponding Toleration. Toleration is declared in PodSpec using `tolerations`field. For example:
 
-Copy
-
 ```
 tolerations: - key: node.role.kubernetes.io/master effect: NoSchedule
 ```
@@ -119,7 +107,7 @@ tolerations: - key: node.role.kubernetes.io/master effect: NoSchedule
 
 * node.role.kubernetes.io/master:NoSchedule - prevents regular Pods from being run on this Node.
 
-#### **Create Taints** <a href="#tao-taint" id="tao-taint"></a>
+### **Create Taints** <a href="#tao-taint" id="tao-taint"></a>
 
 To create a Taint for a Node Group, follow these instructions:
 
@@ -139,8 +127,6 @@ To create a Taint for a Node Group, follow these instructions:
 
 Or you can create Taint through kubectl with the command:
 
-Copy
-
 ```
 kubectl taint node my-node node.role.kubernetes.io/master:NoSchedule.
 ```
@@ -149,15 +135,11 @@ kubectl taint node my-node node.role.kubernetes.io/master:NoSchedule.
 
 Suppose you have a Node `master`used for management purposes and you want to prevent regular Pods from being run on this Node. You can use Taint as follows:
 
-Copy
-
 ```
 kubectl taint node my-master node.role.kubernetes.io/master:NoSchedule
 ```
 
 In order for Pod to run on Node `master`, the Pod needs to have the corresponding Toleration:
-
-Copy
 
 ```
 apiVersion: v1

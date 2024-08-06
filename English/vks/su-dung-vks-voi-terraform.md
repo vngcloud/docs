@@ -1,6 +1,6 @@
 # Working VKS with Terraform
 
-#### What is Terraform? <a href="#terraform-la-gi" id="terraform-la-gi"></a>
+## What is Terraform? <a href="#terraform-la-gi" id="terraform-la-gi"></a>
 
 Terraform is an open source infrastructure as code tool that allows users to manage their infrastructure easily and efficiently across different cloud platforms, such as VNG Cloud, AWS, Google Cloud and Azure. Terraform Server refers to the instance of the Terraform engine running on a specific server or machine. This is where infrastructure code is written and executed, allowing users to create, modify, and destroy resources on the cloud platform.
 
@@ -8,7 +8,7 @@ Terraform itself does not have a graphical user interface, instead users interac
 
 ***
 
-#### Implementation steps <a href="#quanlyvcontainervoiterraform-dequanlyvcontainervoiterraform-bancanlamcacbuocsauday" id="quanlyvcontainervoiterraform-dequanlyvcontainervoiterraform-bancanlamcacbuocsauday"></a>
+## Implementation steps <a href="#quanlyvcontainervoiterraform-dequanlyvcontainervoiterraform-bancanlamcacbuocsauday" id="quanlyvcontainervoiterraform-dequanlyvcontainervoiterraform-bancanlamcacbuocsauday"></a>
 
 To initialize a Kubernetes Cluster using Terraform, you need to perform the following steps:
 
@@ -27,8 +27,6 @@ For example:
 
 * The file `variable.tf:`you need to replace the Client ID and Client Secret created in step 1 in this file.
 
-Copy
-
 ```
 variable "client_id" {
   type = string
@@ -44,8 +42,6 @@ variable "client_secret" {
 
 * On the **main.tf** file , you need to be able to add resources to create a Cluster/ Node Group:
   * Create independent Cluster my-vks-cluster and Node Group my-nodegroup:
-
-Copy
 
 ```
 resource "vngcloud_vks_cluster" "primary" {
@@ -64,8 +60,6 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
 
 * Create Cluster with Default Node Group
 
-Copy
-
 ```
 resource "vngcloud_vks_cluster" "primary" {
   name      = "my-cluster"
@@ -79,18 +73,18 @@ resource "vngcloud_vks_cluster" "primary" {
 }
 ```
 
+{% hint style="info" %}
 **Attention:**
 
 * We recommend that you create and manage Clusters and Node Groups as separate resources, as in the example below. This allows you to add or remove Node Groups without recreating the entire Cluster. If you declare Node Group Default directly in the vngcloud\_vks\_cluster resource, you cannot delete them without recreating the Cluster itself.
 *   In the main.tf file, to successfully create a cluster with a node group, you must enter information in the following 4 fields:
-
-    Copy
 
     ```
       vpc_id    = "net-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
       subnet_id = "sub-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
       ssh_key_id= "ssh-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
     ```
+{% endhint %}
 
 **Example 1:**
 
@@ -102,8 +96,6 @@ Below is the main.tf file I used to initialize the Cluster with the following pa
 * Node Group name: nodegroup1
 * Initial Node: 3
 * Turn on AutoScaling: scale from 0 to 5 nodes
-
-Copy
 
 ```
 terraform {
@@ -180,8 +172,6 @@ Below is the main.tf file I used to initialize the Cluster with the following pa
 
 First, apply the main file according to the following structure:
 
-Copy
-
 ```
 terraform {
   required_providers {
@@ -245,8 +235,6 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
 
 Then, if you need to add Whitelist IP for Control Plane, add this field to the main.tf file and reapply this file:
 
-Copy
-
 ```
 terraform {
   required_providers {
@@ -309,16 +297,16 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
 }
 ```
 
+{% hint style="info" %}
 **Attention:**
 
 * To get the image\_id you want to use, you can access VKS Portal, select System Image menu and get the ID you want or get this information [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/tham-khao-them/danh-sach-system-image-dang-ho-tro) .
 * To get the flavor\_id you want to use for your Node group, please get the ID [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/tham-khao-them/danh-sach-flavor-dang-ho-tro) .
+{% endhint %}
 
 #### **Launch Terraform command** <a href="#quanlyvcontainervoiterraform-khoichayterraformcommand" id="quanlyvcontainervoiterraform-khoichayterraformcommand"></a>
 
 * After completing the above information, run the command below:
-
-Copy
 
 ```
 terraform init
@@ -326,15 +314,11 @@ terraform init
 
 * Then, to see the changes that will be applied to the resources that terraform is managing, you can run:
 
-Copy
-
 ```
 terraform plan
 ```
 
 * Finally, you choose to run the command line:
-
-Copy
 
 ```
 terraform apply
@@ -344,7 +328,7 @@ terraform apply
 
 ***
 
-#### **Check the newly created Cluster on the VNG Cloud Portal interface** <a href="#quanlyvcontainervoiterraform-kiemtracontainervuataotrengiaodienvngcloudportal" id="quanlyvcontainervoiterraform-kiemtracontainervuataotrengiaodienvngcloudportal"></a>
+## **Check the newly created Cluster on the VNG Cloud Portal interface** <a href="#quanlyvcontainervoiterraform-kiemtracontainervuataotrengiaodienvngcloudportal" id="quanlyvcontainervoiterraform-kiemtracontainervuataotrengiaodienvngcloudportal"></a>
 
 After successfully initializing Terraform, you can go to VKS Portal to view the newly created Cluster information.
 

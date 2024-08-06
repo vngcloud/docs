@@ -1,12 +1,12 @@
 # Expose a service through vLB Layer7
 
-## Prerequisites <a href="#khoitaomotpublicclustervoipublicnodegroup-dieukiencan" id="khoitaomotpublicclustervoipublicnodegroup-dieukiencan"></a>
+## Prerequisites <a href="#exposemotservicethongquavlblayer7-dieukiencan" id="exposemotservicethongquavlblayer7-dieukiencan"></a>
 
-To be able to initialize a Cluster and Deploy a Workload, you need:
+To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
-* Have at least 1 VPC and 1 Subnet in ACTIVE state. If you do not have any VPC, Subnet, please initialize VPC, Subnet according to the instructions here.
-* Have at least 1 SSH key in ACTIVE state. If you do not have any SSH key, please initialize SSH key according to the instructions here.
-* Have installed and configured kubectl on your device. Please refer here if you do not know how to install and use kuberctl. In addition, you should not use a kubectl version that is too old, we recommend that you use a kubectl version that is no more than one version different from the cluster version.
+* There is at least 1 **VPC** and 1 **Subnet in ACTIVE** state . If you do not have a VPC or Subnet yet, please create a VPC or Subnet according to the instructions here [.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc)
+* There is at least 1 **SSH key in ACTIVE** state . If you do not have any SSH key, please create an SSH key according to the instructions here [.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc)
+* Installed and configured **kubectl** on your device. Please refer here [if](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) you are not sure how to install and use kuberctl. In addition, you should not use a kubectl version that is too old, we recommend that you use a kubectl version that is no more than one version different from the cluster version.
 
 ***
 
@@ -59,40 +59,56 @@ ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.
 
 ***
 
-#### Create Service Account and install VNGCloud Ingress Controller <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
+## Create Service Account and install VNGCloud Ingress Controller <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
 
-Attention:
+{% hint style="info" %}
+**Attention:**
 
 When you initialize the Cluster according to the instructions above, if you have not enabled the **Enable vLB Native Integration Driver** option , by default we will not pre-install this plugin into your Cluster. You need to manually create Service Account and install VNGCloud Ingress Controller according to the instructions below. If you have enabled the **Enable vLB Native Integration Driver** option , then we have pre-installed this plugin into your Cluster, skip the Service Account Initialization step, install VNGCloud Ingress Controller and continue following the instructions from Deploy once. Workload.
+{% endhint %}
 
 <details>
 
 <summary>Create Service Account and install VNGCloud Ingress Controller</summary>
 
-*
-  *
-  *
-  *
+**Initialize Service Account**
 
-<!---->
+* Create or use a **service account** created on IAM and attach policy: **vLBFullAccess** , **vServerFullAccess** . To create a service account, go here [and](https://hcm-3.console.vngcloud.vn/iam/service-accounts) follow these steps:
+  * Select " **Create a Service Account** ", enter a name for the Service Account and click **Next Step** to assign permissions to the Service Account
+  * Find and select **Policy: vLBFullAccess and Policy: vServerFullAccess** , then click " **Create a Service Account** " to create Service Account, Policy: vLBFullAccess and Policy: vServerFullAccess created by VNG Cloud, you cannot delete these policies.
+  * After successful creation, you need to save **the Client\_ID** and **Secret\_Key** of the Service Account to perform the next step.
 
-*
-*
+**Install VNGCloud Ingress Controller**
 
-```
-```
-
-*
+* Install Helm version 3.0 or higher. Refer to [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) for instructions on how to install.
+* Add this repo to your cluster via the command:
 
 ```
+helm repo add vks-helm-charts https://vngcloud.github.io/vks-helm-charts
+helm repo update
 ```
 
-*
+* Replace your K8S cluster's ClientID, Client Secret, and ClusterID information and continue running:
 
 ```
+helm install vngcloud-ingress-controller vks-helm-charts/vngcloud-ingress-controller \
+  --namespace kube-system \
+  --set cloudConfig.global.clientID= <Lấy ClientID của Service Account được tạo trên IAM theo hướng dẫn bên trên> \
+  --set cloudConfig.global.clientSecret= <Lấy ClientSecret của Service Account được tạo trên IAM theo hướng dẫn bên trên>\
+  --set cluster.clusterID= <Lấy Cluster ID của cluster mà bạn đã khởi tạo trước đó>
 ```
 
+* After the installation is complete, check the status of vngcloud-ingress-controller pods:
+
 ```
+kubectl get pods -n kube-system | grep vngcloud-ingress-controller
+```
+
+For example, in the image below you have successfully installed vngcloud-controller-manager:
+
+```
+NAME                                      READY   STATUS    RESTARTS   AGE
+vngcloud-ingress-controller-0             1/1     Running   0          12s
 ```
 
 </details>
@@ -103,7 +119,7 @@ When you initialize the Cluster according to the instructions above, if you have
 
 The following is a guide for you to deploy the nginx service on Kubernetes.
 
-**Step 1** : **Create Deployment for Nginx app.**
+### **Step 1** : **Create Deployment for Nginx app.**
 
 * Create **nginx-service-lb7.yaml** file with the following content:
 
@@ -150,7 +166,7 @@ kubectl apply -f nginx-service-lb7.yaml
 
 ***
 
-**Step 2: Check the Deployment and Service information just deployed**
+### **Step 2: Check the Deployment and Service information just deployed**
 
 * Run the following command to test **Deployment**
 
@@ -174,7 +190,7 @@ pod/nginx-app-7f45b65946-6wlgw   1/1     Running   0          2m49s   172.16.54.
 
 ***
 
-#### **Create Ingress Resource** <a href="#tao-ingress-resource" id="tao-ingress-resource"></a>
+### **Create Ingress Resource** <a href="#tao-ingress-resource" id="tao-ingress-resource"></a>
 
 * Create **nginx-ingress.yaml** file with the following content:
 
@@ -210,9 +226,13 @@ kubectl apply -f nginx-ingress.yaml
 
 At this time, the vLB system will automatically create a LB corresponding to the Ingress resource above, for example:
 
-Attention:
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FgLlYv2XB4ILWcMpCCcMV%252Fimage.png%3Falt%3Dmedia%26token%3Da554fc67-7a6d-4199-b007-72a50e777a60&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=ef4760e7&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Attention:**
 
 * Currently Ingress only supports TLS port 443 and is the termination point for TLS (TLS termination). TLS Secret must contain fields with key names tls.crt and tls.key, which are the certificate and private key to use for TLS. If you want to use a Certificate for a host, please upload the Certificate according to the instructions at \[Upload a certificate] and use them as an annotation. For example:
+{% endhint %}
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -248,7 +268,7 @@ spec:
 
 ***
 
-**To access the nginx app, you can use the Load Balancer Endpoint that the system has created.**
+### **To access the nginx app, you can use the Load Balancer Endpoint that the system has created.**
 
 ```
 http://Endpoint/
@@ -258,10 +278,12 @@ You can get Load Balancer Public Endpoint information at the vLB interface. Spec
 
 For example, below I have successfully accessed the nginx app with the address: [http://180.93.181.129/](http://180.93.181.129/)
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252Fgit-blob-bc223a3341c276f0df9f3aa5a40d57e8b5de81be%252Fimage.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f2b921e0&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FA0m2HnZCZDt45tSSBcU1%252Fimage.png%3Falt%3Dmedia%26token%3D8531eccd-bbe2-4ba3-a1f9-2e69e7258118&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9e883d90&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-You can see more about ALB at [Working with Application Load Balancer (ALB](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vks/network/lam-viec-voi-application-load-balancer-alb) ).
+You can see more about ALB at [Working with Application Load Balancer (ALB](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/network/lam-viec-voi-application-load-balancer-alb) ).
 
+{% hint style="info" %}
 **Attention:**
 
 * Changing the name or size (Rename, Resize) of the Load Balancer resource on vServer Portal can cause incompatibility with resources on the Kubernetes Cluster. This can lead to resources becoming inactive on the Cluster, or resources being resynchronized, or resource information between vServer Portal and the Cluster not matching. To prevent this problem, use `kubectl`Cluster resource management.
+{% endhint %}

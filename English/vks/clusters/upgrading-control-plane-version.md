@@ -20,7 +20,8 @@ Currently, our VKS system has supported you to upgrade Control Plane Version, yo
 
 **Step 4:** The VKS system will upgrade the **Control Plane** components of **the Cluster** to the new version. After the upgrade is complete, the Cluster state returns to **ACTIVE** .
 
-Attention:
+{% hint style="info" %}
+**Attention:**
 
 * Upgrading Control Plane Version is optional and independent of upgrading Node Group Version. However, Control Plane Version and Node Group Version in the same Cluster cannot differ by more than 1 minor version. Besides, the VKS system automatically upgrades Control Plane Version when the current K8S Version used for your Cluster exceeds the supplier's support period.
 * During the Control Plane Version upgrade, you cannot perform other actions on your Cluster.
@@ -47,3 +48,4 @@ Attention:
 
 * Upgrading Control Plane Version may take some time depending on the size and complexity of the cluster.
 * In some rare cases, the Control Plane Version upgrade may fail. If this happens, the VKS system will automatically rollback the cluster to the current version.
+{% endhint %}

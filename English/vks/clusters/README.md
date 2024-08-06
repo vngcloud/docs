@@ -2,7 +2,7 @@
 
 **A cluster in Kubernetes** is a collection of one or more virtual machines (VMs) connected together to run containerized applications. Cluster provides a unified environment to deploy, manage, and operate containers at scale.
 
-#### Prerequisites: <a href="#clusters-dieukiencan" id="clusters-dieukiencan"></a>
+## Prerequisites: <a href="#clusters-dieukiencan" id="clusters-dieukiencan"></a>
 
 To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
@@ -62,7 +62,7 @@ To initialize a Cluster, follow the steps below:
 
 ***
 
-#### Download the Kube Config file <a href="#clusters-taixuongteptinkubeconfig" id="clusters-taixuongteptinkubeconfig"></a>
+## Download the Kube Config file <a href="#clusters-taixuongteptinkubeconfig" id="clusters-taixuongteptinkubeconfig"></a>
 
 **Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
 
@@ -74,9 +74,10 @@ To initialize a Cluster, follow the steps below:
 
 ***
 
-#### Delete a Cluster <a href="#clusters-xoamotcluster" id="clusters-xoamotcluster"></a>
+## Delete a Cluster <a href="#clusters-xoamotcluster" id="clusters-xoamotcluster"></a>
 
-Attention:
+{% hint style="info" %}
+**Attention**:
 
 **When you no longer need to use a Kubernetes Cluster, you should delete the resources associated with that cluster so you don't incur any unnecessary costs. When deleting a Kubernetes Cluster the following resources will be deleted:**
 
@@ -91,6 +92,7 @@ Attention:
 
 * The Load Balancer is integrated into the Cluster by you.
 * Persistent Volume is integrated into the Cluster by you.
+{% endhint %}
 
 **Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
 

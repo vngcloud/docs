@@ -2,7 +2,7 @@
 
 You can install vMonitor Platform Metric Agent into your Kubernetes Cluster to collect and push metrics to the vMonitor Platform site, then use the features at vMonitor Platform to centrally manage resources and monitor unusual activity of your Kubernetes Cluster. .
 
-#### **Install Metric Agent using Helm** <a href="#metrics-caidatmetricagentsudunghelm" id="metrics-caidatmetricagentsudunghelm"></a>
+## **Install Metric Agent using Helm** <a href="#metrics-caidatmetricagentsudunghelm" id="metrics-caidatmetricagentsudunghelm"></a>
 
 **Preparation steps before installation**
 
@@ -24,8 +24,6 @@ To create a service account, go here [,](https://hcm-3.console.vngcloud.vn/iam/s
 
 Kube checks permission
 
-Copy
-
 ```
 # Lệnh dùng để kiểm tra quyền tương tác tất cả resource tại namespace default
 kubectl auth can-i '*' '*'
@@ -42,8 +40,6 @@ kubectl auth can-i create clusterrolebinding
 
 * Execute the following commands:
 
-Copy
-
 ```
 curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null 
 sudo apt-get install apt-transport-https --yes 
@@ -53,8 +49,6 @@ sudo apt-get install helm 
 ```
 
 * Check that Helm has been installed successfully
-
-Copy
 
 ```
 helm version
@@ -82,8 +76,6 @@ By default, when installing vMonitor Platform Metric Agent, there will be 2 comp
 
 1\. Add Helm vMonitor Platform Repo
 
-Copy
-
 ```
 helm repo add vmonitor-platform https://vngcloud.github.io/helm-charts-vmonitor
 helm repo update
@@ -93,8 +85,6 @@ helm repo update
 
 * Check and delete related resources before installation to avoid conflicts
 
-Copy
-
 ```
 # Get Clusterrole vmonitor metric agent
 kubectl get clusterrole | grep vmonitor-metric-agent
@@ -103,8 +93,6 @@ kubectl delete clusterrole vmonitor-metric-agent
 ```
 
 * Install at **default namespace** (add flag **-n \<namespace\_specified>** to install agent at another namespace)
-
-Copy
 
 ```
 helm install vmonitor-metric-agent vmonitor-platform/vmonitor-metric-agent \
@@ -117,16 +105,12 @@ helm install vmonitor-metric-agent vmonitor-platform/vmonitor-metric-agent \
 * \<CLUSTER\_NAME>: This information will be used to filter hosts of k8s cluster in case there are many clusters to monitor
 * Check that the agent installation was successful
 
-Copy
-
 ```
 # Chạy command và đảm bảo output là các pods ở trạng thái running
 kubectl get pod | grep "vmonitor-metric-agent"
 ```
 
 * If the pods agent is not in running state, use the corresponding command to check for errors
-
-Copy
 
 ```
 # Chạy command nếu pod ở trạng thái Pending
@@ -142,8 +126,6 @@ kubectl logs <vmonitor-metric-agent-node-name>
 
 Execute the following command to delete the installed related k8s resources:
 
-Copy
-
 ```
 helm uninstall vmonitor-metric-agent
 ```
@@ -151,8 +133,6 @@ helm uninstall vmonitor-metric-agent
 **Metric Agent installation does not use kube-state-metrics**
 
 * Install at **default namespace** (add flag **-n \<namespace\_specified>** to install agent at another namespace)
-
-Copy
 
 ```
 helm install vmonitor-metric-agent vmonitor-platform/vmonitor-metric-agent \

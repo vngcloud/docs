@@ -2,7 +2,7 @@
 
 In order for the Ingress resource (Ingress Yaml file) to work, the cluster must have a running VNGCloud Ingress Controller. Unlike other Controller types that run as part of **kube-controller-manager** . VNGCloud Ingress Controller is not automatically started with the cluster. Please follow the instructions below to install VNGCloud Ingress Controller as well as work with Ingress Yaml files.
 
-#### Prepare <a href="#ingressforanapplicationloadbalancer-chuanbi" id="ingressforanapplicationloadbalancer-chuanbi"></a>
+## Prepare <a href="#ingressforanapplicationloadbalancer-chuanbi" id="ingressforanapplicationloadbalancer-chuanbi"></a>
 
 * Create a Kubernetes cluster on VNGCloud, or use an existing cluster. Note: make sure you have downloaded the cluster configuration file once the cluster has been successfully initialized and accessed your cluster.
 * Create or use a **service account** created on IAM and attach policy: **vLBFullAccess** , **vServerFullAccess** . To create a service account, go here [and](https://hcm-3.console.vngcloud.vn/iam/service-accounts) follow these steps:
@@ -15,55 +15,69 @@ In order for the Ingress resource (Ingress Yaml file) to work, the cluster must 
 
 ***
 
-#### Create Service Account and install VNGCloud Ingress Controller <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
+## Create Service Account and install VNGCloud Ingress Controller <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
 
-Attention:
+{% hint style="info" %}
+**Attention:**
 
 When you initialize the Cluster according to the instructions above, if you have not enabled the **Enable vLB Native Integration Driver** option , by default we will not pre-install this plugin into your Cluster. You need to manually create Service Account and install VNGCloud Ingress Controller according to the instructions below. If you have enabled the **Enable vLB Native Integration Driver** option , then we have pre-installed this plugin into your Cluster, skip the Service Account Initialization step, install VNGCloud Ingress Controller and continue following the instructions from Deploy once. Workload.
+{% endhint %}
 
 <details>
 
 <summary>Create Service Account and install VNGCloud Ingress Controller</summary>
 
-*
-  *
-  *
-  *
+**Initialize Service Account**
 
-<!---->
+* Create or use a **service account** created on IAM and attach policy: **vLBFullAccess** , **vServerFullAccess** . To create a service account, go here [and](https://hcm-3.console.vngcloud.vn/iam/service-accounts) follow these steps:
+  * Select " **Create a Service Account** ", enter a name for the Service Account and click **Next Step** to assign permissions to the Service Account
+  * Find and select **Policy: vLBFullAccess and Policy: vServerFullAccess** , then click " **Create a Service Account** " to create Service Account, Policy: vLBFullAccess and Policy: vServerFullAccess created by VNG Cloud, you cannot delete these policies.
+  * After successful creation, you need to save **the Client\_ID** and **Secret\_Key** of the Service Account to perform the next step.
 
-*
-*
+**Install VNGCloud Ingress Controller**
 
-```
-```
-
-*
+* Install Helm version 3.0 or higher. Refer to [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) for instructions on how to install.
+* Add this repo to your cluster via the command:
 
 ```
+helm repo add vks-helm-charts https://vngcloud.github.io/vks-helm-charts
+helm repo update
 ```
 
-*
+* Replace your K8S cluster's ClientID, Client Secret, and ClusterID information and continue running:
 
 ```
+helm install vngcloud-ingress-controller vks-helm-charts/vngcloud-ingress-controller \
+  --namespace kube-system \
+  --set cloudConfig.global.clientID= <Lấy ClientID của Service Account được tạo trên IAM theo hướng dẫn bên trên> \
+  --set cloudConfig.global.clientSecret= <Lấy ClientSecret của Service Account được tạo trên IAM theo hướng dẫn bên trên>\
+  --set cluster.clusterID= <Lấy Cluster ID của cluster mà bạn đã khởi tạo trước đó>
 ```
 
+* After the installation is complete, check the status of vngcloud-ingress-controller pods:
+
 ```
+kubectl get pods -n kube-system | grep vngcloud-ingress-controller
+```
+
+For example, in the image below you have successfully installed vngcloud-controller-manager:
+
+```
+NAME                                      READY   STATUS    RESTARTS   AGE
+vngcloud-ingress-controller-0             1/1     Running   0          12s
 ```
 
 </details>
 
 ***
 
-#### Deploy a Workload <a href="#exposemotservicethongquavlblayer7-deploymotworkload" id="exposemotservicethongquavlblayer7-deploymotworkload"></a>
+## Deploy a Workload <a href="#exposemotservicethongquavlblayer7-deploymotworkload" id="exposemotservicethongquavlblayer7-deploymotworkload"></a>
 
 The following is a guide for you to deploy the nginx service on Kubernetes.
 
-**Step 1** : **Create Deployment for Nginx app.**
+### **Step 1** : **Create Deployment for Nginx app.**
 
 * Create **nginx-service-lb7.yaml** file with the following content:
-
-Copy
 
 ```
 apiVersion: apps/v1
@@ -102,27 +116,21 @@ spec:
 
 * Deploy This deployment equals:
 
-Copy
-
 ```
 kubectl apply -f nginx-service-lb7.yaml
 ```
 
 ***
 
-**Step 2: Check the Deployment and Service information just deployed**
+### **Step 2: Check the Deployment and Service information just deployed**
 
 * Run the following command to test **Deployment**
-
-Copy
 
 ```
 kubectl get svc,deploy,pod -owide
 ```
 
 * If the results are returned as below, it means you have deployed Deployment successfully.
-
-Copy
 
 ```
 NAME                    TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE     SELECTOR
@@ -138,15 +146,13 @@ pod/nginx-app-7f45b65946-6wlgw   1/1     Running   0          2m49s   172.16.54.
 
 ***
 
-#### **Create Ingress Resource** <a href="#tao-ingress-resource" id="tao-ingress-resource"></a>
+### **Step 3: Create Ingress Resource** <a href="#tao-ingress-resource" id="tao-ingress-resource"></a>
 
 **1.If you do not have an Application Load Balancer previously created on the vLB system.**
 
 Now, when creating an Ingress, leave the Load Balancer ID information blank at the [vks.vngcloud.vn/load-balancer-id](http://vks.vngcloud.vn/load-balancer-id) annotation .
 
 * For example, suppose you have deployed a service named nginx-service. At this point, you can create the **nginx-ingress.yaml** file as follows:
-
-Copy
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -174,8 +180,6 @@ spec:
 
 * Run the following command to deploy Ingress
 
-Copy
-
 ```
 kubectl apply -f nginx-ingress.yaml
 ```
@@ -191,13 +195,13 @@ Once you have deployed Ingress, we will automatically create an ALB on your clus
 
 For example:
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FgLlYv2XB4ILWcMpCCcMV%252Fimage.png%3Falt%3Dmedia%26token%3Da554fc67-7a6d-4199-b007-72a50e777a60\&width=768\&dpr=4\&quality=100\&sign=ef4760e7\&sv=1)
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FgLlYv2XB4ILWcMpCCcMV%252Fimage.png%3Falt%3Dmedia%26token%3Da554fc67-7a6d-4199-b007-72a50e777a60&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=ef4760e7&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-Attention:
+{% hint style="info" %}
+**Attention**:
 
 * Currently Ingress only supports TLS port 443 and is the termination point for TLS (TLS termination). TLS Secret must contain fields with key names tls.crt and tls.key, which are the certificate and private key to use for TLS. If you want to use a Certificate for a host, please upload the Certificate according to the instructions at \[Upload a certificate] and use them as an annotation. For example:
-
-Copy
+{% endhint %}
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -235,8 +239,6 @@ spec:
 **2.If you already have a previously initialized Application Load Balancer on the vLB system and you want to reuse the ALB for your cluster.**
 
 Now, when creating an Ingress, enter the Load Balancer ID information into the **vks.vngcloud.vn/load-balancer-id annotation.** For example, in this case I reused the ALB with ID = lb-2b9d8974-3760-4d60-8203-9671f229fb96:
-
-Copy
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -276,7 +278,8 @@ spec:
     * If a listener has HTTPS protocol configuration and port 443, we will use these 2 listeners.
   * Your ALB does not have either or both listeners with the above configuration, we will automatically create them.
 
-Attention:
+{% hint style="info" %}
+**Attention**:
 
 If your ALB has:
 
@@ -284,6 +287,7 @@ If your ALB has:
 * Or a listener configured with HTTPS protocol and portal 80
 
 then when creating Ingress an error will occur. At this point, you need to edit valid listener information on the vLB system and recreate ingress.
+{% endhint %}
 
 ***
 
@@ -291,8 +295,6 @@ then when creating Ingress an error will occur. At this point, you need to edit 
 
 * Edit your ingress configuration according to the specific instructions at [Configure for an Application Load Balancer](https://docs.vngcloud.vn/display/VKSVI/Configure+for+an+Application+Load+Balancer) .
 * Or you can add/edit/delete policies in your ALB by editing the following parameters in the ingress resource (Ingress Yaml file). For example, below, I have set up **2 rules** as follows:
-
-Copy
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -345,19 +347,15 @@ For general information about working with Ingress resources (Ingress Yaml files
 
 ***
 
-#### Check and edit the created Ingress resource <a href="#ingressforanapplicationloadbalancer-trienkhaiingress" id="ingressforanapplicationloadbalancer-trienkhaiingress"></a>
+### Step 4: Check and edit the created Ingress resource <a href="#ingressforanapplicationloadbalancer-trienkhaiingress" id="ingressforanapplicationloadbalancer-trienkhaiingress"></a>
 
 * After successfully creating ingress, you can view the ingress list via command
-
-Copy
 
 ```
 kubectl get ingress
 ```
 
 For example, below we have successfully created nginx-ingress:
-
-Copy
 
 ```
 NAME            CLASS      HOSTS   ADDRESS          PORTS   AGE
@@ -366,15 +364,11 @@ nginx-ingress   vngcloud   *       180.93.181.129   80      103m
 
 * Or view details of an ingress by
 
-Copy
-
 ```
 kubectl describe ingress nginx-ingress
 ```
 
 For example, below are the details of nginx-ingress that I created:
-
-Copy
 
 ```
 Name:             nginx-ingress
@@ -402,9 +396,7 @@ Events:       <none>
 
 ***
 
-**To access the nginx app, you can use the Load Balancer Endpoint that the system has created.**
-
-Copy
+### **Step 5: To access the nginx app, you can use the Load Balancer Endpoint that the system has created.**
 
 ```
 http://Endpoint/

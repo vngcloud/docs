@@ -4,12 +4,10 @@ To migrate a Cluster from the Cloud Provider or On-premise system to the VKS sys
 
 ### Prerequisites <a href="#dieu-kien-can" id="dieu-kien-can"></a>
 
-* **Perform download helper bash script and grand execute permission for this file** ([ velero\_helper.sh](https://raw.githubusercontent.com/vngcloud/velero/main/velero\_helper.sh) )
+* <mark style="color:red;">**Perform download helper bash script and grand execute permission for this file**</mark> ([ velero\_helper.sh](https://raw.githubusercontent.com/vngcloud/velero/main/velero\_helper.sh) )
 *   (Optional) Deploy some services to check the correctness of the migration. Suppose, at the source Cluster, I have deployed an nginx service as follows:
 
     * Deployment files:
-
-    Copy
 
     ```
     apiVersion: v1
@@ -64,7 +62,7 @@ To migrate a Cluster from the Cloud Provider or On-premise system to the VKS sys
               storage: 40Gi
     ```
 
-    Copy
+
 
     ```
     kubectl exec -n mynamespace -it web-0 bash
@@ -79,6 +77,7 @@ To migrate a Cluster from the Cloud Provider or On-premise system to the VKS sys
 
 On the VKS system, you need to initialize a Cluster according to the instructions [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/clusters) . Make sure that the destination cluster's configuration is the same as the source cluster's configuration.
 
+{% hint style="info" %}
 **Attention:**
 
 For the migration to be successful, on the target Cluster, you need to ensure the following requirements:
@@ -86,6 +85,7 @@ For the migration to be successful, on the target Cluster, you need to ensure th
 * The amount of resources needed such as number of nodes, node instance configuration,...
 * Node labels and node taints are the same as the old cluster.
 * Corresponding or alternative Storage Class.
+{% endhint %}
 
 ***
 
@@ -97,9 +97,11 @@ Migrating private resources outside cluster (moving private resources outside th
 * Migrate Databases: you can use **Relational Database Service (RDS)** and **Object Storage Service (OBS)** depending on your needs. After the migration is complete, remember to reconfigure the database for your applications on VKS Cluster.
 * Migrate Storage: you can use vServer's **NFS Server** .
 
+{% hint style="info" %}
 **Attention:**
 
 * After you migrate resources outside the Cluster, you need to ensure the target Cluster can connect to these migrated resources.
+{% endhint %}
 
 ***
 
@@ -116,7 +118,7 @@ For example, I have initialized a vStorage Project, Container with the following
 
 *   Create file **credentials-velero** with the following content:
 
-    Copy
+
 
     ```
     [default]
@@ -125,7 +127,7 @@ For example, I have initialized a vStorage Project, Container with the following
     ```
 *   Install Velero CLI:
 
-    Copy
+
 
     ```
     curl -OL https://github.com/vmware-tanzu/velero/releases/download/v1.13.2/velero-v1.13.2-linux-amd64.tar.gz
@@ -134,7 +136,7 @@ For example, I have initialized a vStorage Project, Container with the following
     ```
 *   Install Velero on your 2 clusters with the command:
 
-    Copy
+
 
     ```
     velero install \
@@ -155,21 +157,21 @@ For example, I have initialized a vStorage Project, Container with the following
 
 *   Annotate the Persistent Volumes that need to be backed up. By default, Velero will not backup volume. You can run the command below to annotate backup of all volumes.
 
-    Copy
+
 
     ```
     ./velero_helper.sh mark_volume -c
     ```
 *   Additionally, you can mark not to backup system resources with the following command:
 
-    Copy
+
 
     ```
     ./velero_helper.sh mark_exclude -c
     ```
 *   Perform backup according to the syntax:
 
-    Copy
+
 
     ```
     velero backup create eks-cluster --include-namespaces "" \
@@ -177,16 +179,18 @@ For example, I have initialized a vStorage Project, Container with the following
       --wait
     ```
 
-    Copy
+
 
     ```
     velero backup create eks-namespace --exclude-namespaces velero \
         --wait
     ```
 
+{% hint style="info" %}
 **Attention:**
 
 * You must create 2 backup versions for Cluster Resource and Namespace Resource.
+{% endhint %}
 
 ***
 
@@ -194,7 +198,7 @@ For example, I have initialized a vStorage Project, Container with the following
 
 *   Create a Storage Class mapping file between source and destination Cluster:
 
-    Copy
+
 
     ```
     apiVersion: v1
@@ -211,20 +215,20 @@ For example, I have initialized a vStorage Project, Container with the following
     ```
 *   Perform restore according to the command:
 
-    Copy
+
 
     ```
     velero restore create --item-operation-timeout 1m --from-backup eks-cluster \
         --exclude-resources="MutatingWebhookConfiguration,ValidatingWebhookConfiguration"
     ```
 
-    Copy
+
 
     ```
     velero restore create --item-operation-timeout 1m --from-backup eks-namespace
     ```
 
-    Copy
+
 
     ```
     velero restore create --item-operation-timeout 1m --from-backup eks-cluster
@@ -238,21 +242,21 @@ For example, I have initialized a vStorage Project, Container with the following
 
 *   Annotate the Persistent Volumes and label resources that need to be excluded from the backup
 
-    Copy
+
 
     ```
     ./velero_helper.sh mark_volume -c
     ```
 *   Additionally, you can mark not to backup system resources with the following command:
 
-    Copy
+
 
     ```
     ./velero_helper.sh mark_exclude -c
     ```
 *   Perform backup according to the syntax:
 
-    Copy
+
 
     ```
     velero backup create gke-cluster --include-namespaces "" \
@@ -260,24 +264,26 @@ For example, I have initialized a vStorage Project, Container with the following
       --wait
     ```
 
-    Copy
+
 
     ```
     velero backup create gke-namespace --exclude-namespaces velero \
         --wait
     ```
 
+{% hint style="info" %}
 **Attention:**
 
 * You must create 2 backup versions for Cluster Resource and Namespace Resource.
+{% endhint %}
 
 ***
 
-#### At the destination Cluster <a href="#tai-cluster-dich-1" id="tai-cluster-dich-1"></a>
+### At the destination Cluster <a href="#tai-cluster-dich-1" id="tai-cluster-dich-1"></a>
 
 *   Create a Storage Class mapping file between source and destination Cluster:
 
-    Copy
+
 
     ```
     apiVersion: v1
@@ -294,26 +300,28 @@ For example, I have initialized a vStorage Project, Container with the following
     ```
 *   Perform restore according to the command:
 
-    Copy
+
 
     ```
     velero restore create --item-operation-timeout 1m --from-backup gke-cluster \
         --exclude-resources="MutatingWebhookConfiguration,ValidatingWebhookConfiguration"
     ```
 
-    Copy
+
 
     ```
     velero restore create --item-operation-timeout 1m --from-backup gke-namespace
     ```
 
-    Copy
+
 
     ```
     velero restore create --item-operation-timeout 1m --from-backup gke-cluster
     ```
 
+{% hint style="info" %}
 **Attention:**
 
 * Google Kubernetes Engine (GKE) does not allow daemonset deployment on all nodes. However, Velero only needs to deploy the daemonset on the node with the PV mount. The solution to this problem is that you can adjust the taint and toleration of the daemonset to only deploy it on the node with the PV mount.
 * You can change the default resource request `cpu:500m`and `mem:512M`in the installation step or make adjustments when deploying the yaml.
+{% endhint %}

@@ -18,7 +18,8 @@ Currently, our VKS system has supported you to upgrade Node Group Version, you c
 
 **Step 5:** The VKS system will upgrade all Node Groups to the Control Plane version. After the upgrade is complete, the Node Group status returns to **ACTIVE** .
 
-Attention:
+{% hint style="info" %}
+**Attention:**
 
 * Upgrading Node Group Version is optional and independent of upgrading Control Plane Version. However, all Node Groups in a Cluster will be upgraded at the same time, as well as Control Plane Version and Node Group Version in the same Cluster cannot differ by more than 1 minor version. Besides, the VKS system automatically upgrades the Node Group Version when the current K8S Version being used for your Cluster exceeds the supplier's support period.
 * During the Node Group Version upgrade, you cannot perform other actions on your Node Group.
@@ -44,3 +45,4 @@ Attention:
 
 * Upgrading Node Group Version may take some time depending on the size and complexity of the Node Group.
 * In some rare cases, upgrading Node Group Version may fail. If this happens, the VKS system will automatically rollback the cluster to the current version.
+{% endhint %}

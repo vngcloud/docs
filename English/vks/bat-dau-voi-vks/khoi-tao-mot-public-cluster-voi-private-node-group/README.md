@@ -4,26 +4,30 @@
 
 To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
-* There is at least 1 **VPC** and 1 **Subnet in ACTIVE** state . If you do not have a VPC or Subnet yet, please create a VPC or Subnet according to the instructions here [.](../../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md)
-* There is at least 1 **SSH key in ACTIVE** state . If you do not have any SSH key, please create an SSH key according to the instructions here [.](../../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
+* There is at least 1 **VPC** and 1 **Subnet in ACTIVE** state . If you do not have a VPC or Subnet yet, please create a VPC or Subnet according to the instructions here [.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc)
+* There is at least 1 **SSH key in ACTIVE** state . If you do not have any SSH key, please create an SSH key according to the instructions here [.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/security/ssh-key-bo-khoa)
 * Installed and configured **kubectl** on your device. Please refer here [if](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) you are not sure how to install and use kuberctl. In addition, you should not use a kubectl version that is too old, we recommend that you use a kubectl version that is no more than one version different from the cluster version.
 
+{% hint style="info" %}
 **Attention:**
 
 * **To ensure that VMs in NodeGroups on the subnet can go outbound to the internet and connect to the Control Plane, you must set up a NAT Gateway. For more details, please refer to the section below.**
+{% endhint %}
 
 ***
 
 ## Create Palo Alto or Pfsense as an alternative to NAT Gateway <a href="#khoitaomotpublicclustervoiprivatenodegroup-khoitaopfsense" id="khoitaomotpublicclustervoiprivatenodegroup-khoitaopfsense"></a>
 
+{% hint style="info" %}
 **Attention:**
 
-* For the best support when using Palo Alto or Pfsense, please contact our team of experts via Hotline **1900 1549** or email **support@vngcloud.vn** .
+* For the best support when using Palo Alto or Pfsense, please contact our team of experts via Hotline **1900 1549** or email **support@vngcloud.vn**
+{% endhint %}
 
 Or you can choose to use Palo Alto or Pfsense to work with Private Node Group according to instructions at:
 
-* [Palo Alto as a NAT Gateway](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vks/bat-dau-voi-vks/khoi-tao-mot-public-cluster-voi-private-node-group/palo-alto-as-a-nat-gateway)
-* [Pfsense as a NAT Gateway](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vks/bat-dau-voi-vks/khoi-tao-mot-public-cluster-voi-private-node-group/pfsense-as-a-nat-gateway)
+* [Palo Alto as a NAT Gateway](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/khoi-tao-mot-public-cluster-voi-private-node-group/palo-alto-as-a-nat-gateway)
+* [Pfsense as a NAT Gateway](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/khoi-tao-mot-public-cluster-voi-private-node-group/pfsense-as-a-nat-gateway)
 
 ***
 
@@ -86,15 +90,11 @@ After the Cluster is successfully initialized, you can connect and check the new
 
 * Run the following command to test **node**
 
-Copy
-
 ```
 kubectl get nodes
 ```
 
 * If the results are returned as below, it means your Cluster was successfully initialized with 3 nodes as below.
-
-Copy
 
 ```
 NAME                                            STATUS     ROLES    AGE   VERSION
@@ -109,11 +109,9 @@ ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.
 
 The following is a guide for you to deploy the nginx service on Kubernetes.
 
-**Step 1** : **Create Deployment for Nginx app.**
+### **Step 1** : **Create Deployment for Nginx app.**
 
 *   Create **nginx-service-lb4.yaml** file with the following content:
-
-    Copy
 
     ```
     apiVersion: apps/v1
@@ -152,46 +150,38 @@ The following is a guide for you to deploy the nginx service on Kubernetes.
 
     * Deploy This deployment equals:
 
-    Copy
-
     ```
     kubectl apply -f nginx-service-lb4.yaml
     ```
 
-    ***
 
-    **Step 2: Check Deployment and Service information before exposing it to the Internet.**
 
-    * Run the following command to test **Deployment**
+### **Step 2: Check Deployment and Service information before exposing it to the Internet.**
 
-    Copy
+* Run the following command to test **Deployment**
 
-    ```
-    kubectl get svc,deploy,pod -owide
-    ```
+```
+kubectl get svc,deploy,pod -owide
+```
 
-    * If the results are returned as below, it means you have successfully deployed the nginx service.
+* If the results are returned as below, it means you have successfully deployed the nginx service.
 
-    Copy
+```
+NAME                    TYPE           CLUSTER-IP      EXTERNAL-IP   PORT(S)           AGE     SELECTOR
+service/kubernetes      ClusterIP      10.96.0.1       <none>        443/TCP           2d4h    <none>
+service/nginx-app       NodePort       10.96.215.192   <none>        30080:31289/TCP   8m12s   app=nginx
+service/nginx-service   LoadBalancer   10.96.179.221   <pending>     80:32624/TCP      2m16s   app=nginx
 
-    ```
-    NAME                    TYPE           CLUSTER-IP      EXTERNAL-IP   PORT(S)           AGE     SELECTOR
-    service/kubernetes      ClusterIP      10.96.0.1       <none>        443/TCP           2d4h    <none>
-    service/nginx-app       NodePort       10.96.215.192   <none>        30080:31289/TCP   8m12s   app=nginx
-    service/nginx-service   LoadBalancer   10.96.179.221   <pending>     80:32624/TCP      2m16s   app=nginx
+NAME                        READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS   IMAGES         SELECTOR
+deployment.apps/nginx-app   1/1     1            1           2m16s   nginx        nginx:1.19.1   app=nginx
 
-    NAME                        READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS   IMAGES         SELECTOR
-    deployment.apps/nginx-app   1/1     1            1           2m16s   nginx        nginx:1.19.1   app=nginx
-
-    NAME                             READY   STATUS    RESTARTS   AGE     IP              NODE                                            NOMINATED NODE   READINESS GATES
-    pod/nginx-app-7f45b65946-t7d7k   1/1     Running   0          2m16s   172.16.24.202   ng-3f06013a-f6a5-47ba-a51f-bc5e9c2b10a7-ecea1   <none>           <none
-    ```
+NAME                             READY   STATUS    RESTARTS   AGE     IP              NODE                                            NOMINATED NODE   READINESS GATES
+pod/nginx-app-7f45b65946-t7d7k   1/1     Running   0          2m16s   172.16.24.202   ng-3f06013a-f6a5-47ba-a51f-bc5e9c2b10a7-ecea1   <none>           <none
+```
 
 ***
 
-**Step 3: To access the just exported nginx app, you can use the URL with the format:**
-
-Copy
+### **Step 3: To access the just exported nginx app, you can use the URL with the format:**
 
 ```
 http://Endpoint/
@@ -200,3 +190,5 @@ http://Endpoint/
 You can get Load Balancer Public Endpoint information at the vLB interface. Specifically, access at [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb)
 
 For example, below I have successfully accessed the nginx app with the address: [http://180.93.181.20/](http://180.93.181.20/)
+
+<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FWRLfY9NlcRgvi7B2c3b7%252Fimage.png%3Falt%3Dmedia%26token%3D9aea9889-1f6f-478a-889e-8b936c2b3bb6&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b1f9d46b&#x26;sv=1" alt=""><figcaption></figcaption></figure>

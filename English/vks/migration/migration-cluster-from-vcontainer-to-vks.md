@@ -4,11 +4,9 @@ To migrate a Cluster from vContainer system to VKS system, follow the steps in t
 
 ### Prerequisites <a href="#dieu-kien-can" id="dieu-kien-can"></a>
 
-* **Perform download helper bash script and grand execute permission for this file** ([ velero\_helper.sh](https://raw.githubusercontent.com/vngcloud/velero/main/velero\_helper.sh) )
+* <mark style="color:red;">**Perform download helper bash script and grand execute permission for this file**</mark> ([ velero\_helper.sh](https://raw.githubusercontent.com/vngcloud/velero/main/velero\_helper.sh) )
 * (Optional) Deploy some services to check the correctness of the migration. Suppose, at the source Cluster, I have deployed an nginx service as follows:
   * Deployment files:
-
-Copy
 
 ```
 apiVersion: v1
@@ -63,7 +61,7 @@ spec:
           storage: 40Gi
 ```
 
-Copy
+
 
 ```
 kubectl exec -n mynamespace -it web-0 bash
@@ -79,6 +77,7 @@ echo -e "<html>\n<head>\n  <title>MyVNGCloud</title>\n</head>\n<body>\n  <h1>Hel
 
 On the VKS system, you need to initialize a Cluster according to the instructions [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/clusters) . Make sure that the destination cluster's configuration is the same as the source cluster's configuration.
 
+{% hint style="info" %}
 **Attention:**
 
 For the migration to be successful, on the target Cluster, you need to ensure the following requirements:
@@ -86,6 +85,7 @@ For the migration to be successful, on the target Cluster, you need to ensure th
 * The amount of resources needed such as number of nodes, node instance configuration,...
 * Node labels and node taints are the same as the old cluster.
 * Corresponding or alternative Storage Class.
+{% endhint %}
 
 ***
 
@@ -97,9 +97,11 @@ Migrating private resources outside cluster (moving private resources outside th
 * Migrate Databases: you can use **Relational Database Service (RDS)** and **Object Storage Service (OBS)** depending on your needs. After the migration is complete, remember to reconfigure the database for your applications on VKS Cluster.
 * Migrate Storage: you can use vServer's **NFS Server** .
 
+{% hint style="info" %}
 **Attention:**
 
 * After you migrate resources outside the Cluster, you need to ensure the target Cluster can connect to these migrated resources.
+{% endhint %}
 
 ***
 
@@ -116,7 +118,7 @@ For example, I have initialized a vStorage Project, Container with the following
 
 *   Create file **credentials-velero** with the following content:
 
-    Copy
+
 
     ```
     [default]
@@ -125,7 +127,7 @@ For example, I have initialized a vStorage Project, Container with the following
     ```
 *   Install Velero CLI:
 
-    Copy
+
 
     ```
     curl -OL https://github.com/vmware-tanzu/velero/releases/download/v1.13.2/velero-v1.13.2-linux-amd64.tar.gz
@@ -134,7 +136,7 @@ For example, I have initialized a vStorage Project, Container with the following
     ```
 *   Install Velero on your 2 clusters with the command:
 
-    Copy
+
 
     ```
     velero install \
@@ -153,14 +155,14 @@ For example, I have initialized a vStorage Project, Container with the following
 
 *   Annotate the Persistent Volumes that need to be backed up. By default, Velero will not backup volume. You can run the command below to annotate backup of all volumes.
 
-    Copy
+
 
     ```
     ./velero_helper.sh mark_volume --confirm
     ```
 *   Additionally, you can mark not to backup system resources with the following command:
 
-    Copy
+
 
     ```
     ./velero_helper.sh mark_exclude --confirm
@@ -169,7 +171,7 @@ For example, I have initialized a vStorage Project, Container with the following
     For details, please refer [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/migration/gioi-han-va-han-che) .
 *   You need to create 2 backups for cluster resource and namespace resource to avoid possible errors. Create backup according to the syntax:
 
-    Copy
+
 
     ```
     velero backup create vcontainer-cluster --include-namespaces "" \
@@ -177,7 +179,7 @@ For example, I have initialized a vStorage Project, Container with the following
       --wait
     ```
 
-    Copy
+
 
     ```
     velero backup create vcontainer-namespace --exclude-namespaces velero \
@@ -190,7 +192,7 @@ For example, I have initialized a vStorage Project, Container with the following
 
 *   Create a Storage Class mapping file between source and destination Cluster, apply this file on your destination Cluster:
 
-    Copy
+
 
     ```
     apiVersion: v1
@@ -207,20 +209,20 @@ For example, I have initialized a vStorage Project, Container with the following
     ```
 *   Perform restore in order:
 
-    Copy
+
 
     ```
     velero restore create --item-operation-timeout 1m --from-backup vcontainer-cluster \
         --exclude-resources="MutatingWebhookConfiguration,ValidatingWebhookConfiguration"
     ```
 
-    Copy
+
 
     ```
     velero restore create --item-operation-timeout 1m --from-backup vcontainer-namespace
     ```
 
-    Copy
+
 
     ```
     velero restore create --item-operation-timeout 1m --from-backup vcontainer-cluster

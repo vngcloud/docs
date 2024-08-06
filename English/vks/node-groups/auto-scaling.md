@@ -1,6 +1,6 @@
 # Auto Scaling
 
-#### Overview <a href="#tong-quan" id="tong-quan"></a>
+## Overview <a href="#tong-quan" id="tong-quan"></a>
 
 Auto Scaling for Cluster is a feature in Kubernetes that allows automatically adjusting the size of the cluster, specifically the number of nodes in the cluster to meet usage needs.
 
@@ -15,29 +15,31 @@ When deploying applications in a cloud environment, using Auto Scaling helps opt
 
 ***
 
-#### Mechanism of action <a href="#co-che-hoat-dong" id="co-che-hoat-dong"></a>
+## Mechanism of action <a href="#co-che-hoat-dong" id="co-che-hoat-dong"></a>
 
-**Scale up mechanism: the Procuracy system performs scale up when**
+### **Scale up mechanism: the Procuracy system performs scale up when**
 
 * Pods cannot be scheduled on any existing node due to lack of resources.
 * Adding 1 more node similar to the current node group configuration is useful and can handle this resource shortage problem.
 
 Illustration:
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fgithub.com%2Fvngcloud%2Fdocs%2Fblob%2Fmain%2FEnglish%2F.gitbook%2Fassets%2Fimage%2520%28177%29.png\&width=768\&dpr=4\&quality=100\&sign=df9312f4\&sv=1)
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 If the above two conditions are met, the system will increase the number of nodes (one or more nodes) to accommodate all unscheduling pods. This process will be done immediately in 2 steps:
 
 * **Step 1:** The VKS system creates a new node according to the current node group configuration.
 * **Step 2:** The VKS system will deploy these unscheduling pods to new nodes.
 
+{% hint style="info" %}
 **Attention:**
 
 * When the system performs Auto Scaling, creating a new node may encounter an error if you do not have enough credits or you have run out of quota to create a VM on the vServer system. To avoid the error above, you need to:
   * **Make sure you have enough credits:** If you're a prepaid user, add more credits to your account.
   * **Request a quota increase:** You can request a quota increase for your account [here](https://hcm-3.console.vngcloud.vn/vserver/limit) .
+{% endhint %}
 
-**Scale down mechanism: the Procuracy system performs scale down when**
+### **Scale down mechanism: the Procuracy system performs scale down when**
 
 * One or more nodes have continuously low load over a period of time. Specifically, the node has low utilization (availability) including CPU and memory requests of the pod at **< 50%.**
 * All existing pods of that node, can be moved to another node without any problem.
@@ -50,7 +52,7 @@ If the above two conditions are met, by default within about 10 minutes, that no
 
 ***
 
-#### **Turn on Auto Scaling** <a href="#autoscaling-batautoscaling" id="autoscaling-batautoscaling"></a>
+## **Turn on Auto Scaling** <a href="#autoscaling-batautoscaling" id="autoscaling-batautoscaling"></a>
 
 On the VKS system, you can turn on Auto Scaling when:
 

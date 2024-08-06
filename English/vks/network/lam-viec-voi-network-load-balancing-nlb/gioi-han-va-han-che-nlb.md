@@ -1,6 +1,6 @@
 # NLB Limitation
 
-### Limit <a href="#restrictionsandlimitationsnlb-gioihan" id="restrictionsandlimitationsnlb-gioihan"></a>
+### Note <a href="#restrictionsandlimitationsnlb-gioihan" id="restrictionsandlimitationsnlb-gioihan"></a>
 
 A few notes about the limitations of integrating an NLB into a cluster:
 

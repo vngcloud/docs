@@ -2,7 +2,7 @@
 
 To integrate a Network Load Balancer with a Kubernetes cluster, you can use a Service with type [LoadBalancer](loadbalancerhttps://www.airplane.dev/blog/kubernetes-load-balancer) . When you create such a Service, VNGCloud Controller Manager will automatically create an NLB to forward traffic to pods on your [node](nhttps://www.airplane.dev/blog/kubernetes-load-balancer) . You can also use annotations to customize Network Load Balancer properties, such as port, protocol,...
 
-#### Prepare <a href="#integratewithnetworkloadbalancer-chuanbi" id="integratewithnetworkloadbalancer-chuanbi"></a>
+## Prepare <a href="#integratewithnetworkloadbalancer-chuanbi" id="integratewithnetworkloadbalancer-chuanbi"></a>
 
 * Create a Kubernetes cluster on VNGCloud, or use an existing cluster. Note: make sure you have downloaded the cluster configuration file once the cluster has been successfully initialized and accessed your cluster.
 * Create or use a **service account** created on IAM and attach policy: **vLBFullAccess** , **vServerFullAccess** . To create a service account, go here [and](https://hcm-3.console.vngcloud.vn/iam/service-accounts) follow these steps:
@@ -12,64 +12,88 @@ To integrate a Network Load Balancer with a Kubernetes cluster, you can use a Se
 
 ***
 
-#### Create Service Account and install VNGCloud Controller Manager <a href="#exposemotservicethongquavlblayer4-khoitaoserviceaccountvacaidatvngcloudcontrollermanager" id="exposemotservicethongquavlblayer4-khoitaoserviceaccountvacaidatvngcloudcontrollermanager"></a>
+## Create Service Account and install VNGCloud Controller Manager <a href="#exposemotservicethongquavlblayer4-khoitaoserviceaccountvacaidatvngcloudcontrollermanager" id="exposemotservicethongquavlblayer4-khoitaoserviceaccountvacaidatvngcloudcontrollermanager"></a>
 
-Attention:
+{% hint style="info" %}
+**Attention:**
 
 When you initialize the Cluster according to the instructions above, if you have not enabled the **Enable vLB Native Integration Driver** option , by default we will not pre-install this plugin into your Cluster. You need to manually create Service Account and install VNGCloud Controller Manager according to the instructions below. If you have enabled the **Enable vLB Native Integration Driver** option , then we have pre-installed this plugin into your Cluster, skip the Service Account Initialization step, install VNGCloud Controller Manager and continue following the instructions from Deploy once. Workload.
+{% endhint %}
 
 <details>
 
 <summary>Instructions for creating Service Account and installing VNGCloud Controller Manager</summary>
 
-*
-  *
-  *
-  *
-*
+**Initialize Service Account**
+
+* Create or use a **service account** created on IAM and attach policy: **vLBFullAccess** , **vServerFullAccess** . To create a service account, go here [and](https://hcm-3.console.vngcloud.vn/iam/service-accounts) follow these steps:
+  * Select " **Create a Service Account** ", enter a name for the Service Account and click **Next Step** to assign permissions to the Service Account
+  * Find and select **Policy: vLBFullAccess and Policy: vServerFullAccess** , then click " **Create a Service Account** " to create Service Account, Policy: vLBFullAccess and Policy: vServerFullAccess created by VNG Cloud, you cannot delete these policies.
+  * After successful creation, you need to save **the Client\_ID** and **Secret\_Key** of the Service Account to perform the next step.
+* Uninstall cloud-controller-manager
 
 ```
+kubectl get daemonset -n kube-system | grep -i "cloud-controller-manager"
+
+# if your output is similar to the following, you MUST delete the old plugin
+kubectl delete daemonset cloud-controller-manager -n kube-system --force
 ```
 
-*
+* Besides, you can delete the Service Account being used for the cloud-controller-manager you just removed
 
 ```
+kubectl get sa -n kube-system | grep -i "cloud-controller-manager"
+
+# if your output is similar to the above, you MUST delete this service account
+kubectl delete sa cloud-controller-manager -n kube-system --force
 ```
 
-*
-*
+**Install VNGCloud Controller Manager**
+
+* Install Helm version 3.0 or higher. Refer to [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) for instructions on how to install.
+* Add this repo to your cluster via the command:
 
 ```
+helm repo add vks-helm-charts https://vngcloud.github.io/vks-helm-charts
+helm repo update
 ```
 
-*
+* Replace your K8S cluster's ClientID, Client Secret, and ClusterID information and continue running:
 
 ```
+helm install  vngcloud-controller-manager vks-helm-charts/vngcloud-controller-manager --replace \
+  --namespace kube-system \
+  --set cloudConfig.global.clientID= <Lấy ClientID của Service Account được tạo trên IAM theo hướng dẫn bên trên> \
+  --set cloudConfig.global.clientSecret= <Lấy ClientSecret của Service Account được tạo trên IAM theo hướng dẫn bên trên>\
+  --set cluster.clusterID= <Lấy Cluster ID của cluster mà bạn đã khởi tạo trước đó>
 ```
 
-*
+* After the installation is complete, check the status of vngcloud-Integrate-controller pods:
 
 ```
+kubectl get pods -n kube-system | grep vngcloud-controller-manager
 ```
 
+For example, in the image below you have successfully installed vngcloud-controller-manager:
+
 ```
+NAME                                          READY   STATUS    RESTARTS      AGE
+vngcloud-controller-manager-8864c754c-bqhvz   1/1     Running   5 (91s ago)   3m13sc
 ```
 
 </details>
 
 ***
 
-#### Deploy a Workload <a href="#exposemotservicethongquavlblayer4-deploymotworkload" id="exposemotservicethongquavlblayer4-deploymotworkload"></a>
+## Deploy a Workload <a href="#exposemotservicethongquavlblayer4-deploymotworkload" id="exposemotservicethongquavlblayer4-deploymotworkload"></a>
 
 **1.If you do not have a previously initialized Network Load Balancer available on the vLB system.**
 
 At this point, you need to do:
 
-**Step 1** : **Create Deployment, Service for Nginx app.**
+### **Step 1** : **Create Deployment, Service for Nginx app.**
 
 * Create **nginx-service-lb4.yaml** file with the following content:
-
-Copy
 
 ```
 apiVersion: apps/v1
@@ -107,8 +131,6 @@ spec:
 ```
 
 * Or use the following script file to deploy HTTP Apache Service with Internal LoadBalancer allowing internal access on port 8080:
-
-Copy
 
 ```
 apiVersion: apps/v1
@@ -150,8 +172,6 @@ spec:
 ```
 
 * Or sample YAML file to create Deployment and Service for a UDP server application in a Kubernetes cluster:
-
-Copy
 
 ```
 apiVersion: apps/v1
@@ -199,8 +219,6 @@ spec:
 
 At this point, please enter the Load Balancer ID information into the **vks.vngcloud.vn/load-balancer-id annotation.** The example below is a sample YAML file to deploy Nginx with External LoadBalancer using vngcloud-controller-manager to automatically expose the service to the internet using an L4 load balancer using an available NLB with ID = lb-2b9d8974- 3760-4d60-8203-9671f229fb96
 
-Copy
-
 ```
 apiVersion: apps/v1
 kind: Deployment
@@ -242,8 +260,6 @@ spec:
 **3.Once a new NLB has been automatically created by us , you can now proceed**
 
 * Edit your NLB configuration according to the specific instructions at [Configure for a Network Load Balancer](https://docs.vngcloud.vn/display/VKSVI/Configure+for+a+Network+Load+Balancer) . For example below, I have edited the protocol and port as follows:
-
-Copy
 
 ```
 apiVersion: apps/v1
@@ -293,27 +309,21 @@ For general information about working with **vngcloud-controller-manager,** see 
 
 * Deploy this Service using:
 
-Copy
-
 ```
 kubectl apply -f nginx-service-lb4.yaml
 ```
 
 ***
 
-#### **Check Deployment and Service information just deployed** <a href="#kiem-tra-thong-tin-deployment-service-vua-deploy" id="kiem-tra-thong-tin-deployment-service-vua-deploy"></a>
+### **Step 2: Check Deployment and Service information just deployed** <a href="#kiem-tra-thong-tin-deployment-service-vua-deploy" id="kiem-tra-thong-tin-deployment-service-vua-deploy"></a>
 
 * Run the following command to test **Deployment**
-
-Copy
 
 ```
 kubectl get svc,deploy,pod -owide
 ```
 
 * If the results are returned as below, it means you have deployed Deployment successfully.
-
-Copy
 
 ```
 NAME                    TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE     SELECTOR
@@ -331,9 +341,7 @@ At this point, the vLB system will automatically create a corresponding LB for t
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FzD11c32iEIzE2hnbzbrv%252Fimage.png%3Falt%3Dmedia%26token%3D8010e3b8-fb5b-428a-9940-e7ff245895d2&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=58607080&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-**Step 3: To access the just exported nginx app, you can use the URL with the format:**
-
-Copy
+### **Step 3: To access the just exported nginx app, you can use the URL with the format:**
 
 ```
 http://Endpoint/

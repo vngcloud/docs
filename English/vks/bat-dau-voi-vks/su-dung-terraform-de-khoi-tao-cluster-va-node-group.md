@@ -27,8 +27,6 @@ For example:
 
 * The file `variable.tf:`you need to replace the Client ID and Client Secret created in step 1 in this file.
 
-Copy
-
 ```
 variable "client_id" {
   type = string
@@ -51,8 +49,6 @@ variable "client_secret" {
 
 * In the main.tf file, to initialize a cluster with a node group, you must pass in the following parameters:
 
-Copy
-
 ```
   vpc_id    = "net-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
   subnet_id = "sub-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
@@ -60,8 +56,6 @@ Copy
 ```
 
 * The sample file `main.tf`helps you create Cluster and Node Group according to the configuration above:
-
-Copy
 
 ```
 terraform {
