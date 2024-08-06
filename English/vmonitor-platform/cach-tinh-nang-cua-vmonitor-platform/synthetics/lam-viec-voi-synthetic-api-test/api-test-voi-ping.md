@@ -1,55 +1,49 @@
-# API Test với Ping
+# API Test with Ping
 
-API Ping tests cho phép bạn gửi ICMP packet tới server hay các thiết bị của bạn, cho phép bạn theo dõi tính sẵn sàng của server hay các thiết bị và chuẩn đoán về các sự cố về mạng.
+The Ping tests API allows you to send ICMP packets to your server or devices, allowing you to monitor the availability of the server or devices and diagnose network problems.
 
-**Để thực hiện tạo API Test với phương thức Ping, hãy làm theo hướng dẫn bên dưới:**
+**To perform API Test creation with Ping method, follow the instructions below:**
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
-2. Chọn thư mục **Synthetic test.**
-3. Chọn **API test.**
-4. Chọn **Create an API test.**
-5. Nhập các thông tin bao gồm:
+1. Log in to vMonitor Platform [here.](https://hcm-3.console.vngcloud.vn/vmonitor)
+2. Select the Synthetic test folder **.**
+3. Select **API test.**
+4. Select **Create an API test.**
+5. Enter information including:
 
-* **Test Information: định nghĩa các thông tin cơ bản, chọn Ping method và chỉ định hostname cần kiểm tra**
-  * **Test name:** tên của API test
-  * **Test type**: giao thức kiểm tra, bạn chọn Ping
-  * **Hostname:** lựa chọn server hay thiết bị bạn cần kiểm tra, có thể là tên miền hay địa chỉ IP
+* **Test Information: define basic information, select Ping method and specify hostname to test**
+  * **Test name:** name of the API test
+  * **Test type** : test protocol, you choose Ping
+  * **Hostname:** select the server or device you need to check, can be domain name or IP address
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59803717/image2022-8-29_17-11-57.png?version=1&#x26;modificationDate=1686544467000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-* Sau khi điền các Test Information bạn có thể chọn **Run Test hoặc Test Again** nếu bạn đã Test trước đó để kiểm tra, bạn có thể thấy các thông tin trả về như Ping có thành công hay không, tỉ lệ packet loss hay packet latency
+* After filling in the Test Information, you can choose **Run Test or Test Again** if you have tested before to check, you can see returned information such as whether Ping was successful or not, packet loss rate or packet latency.
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59803717/image2022-8-29_17-13-38.png?version=1&#x26;modificationDate=1686544467000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 * **Test Assertion**
-  * Assertion định nghĩa những gì bạn kì vọng về kết quả API Test, nếu kết quả trả về thoả những gì bạn định nghĩa API Test sẽ thể hiện hostname bạn đang kiểm tra là thành công, và ngược lại API Test sẽ thể hiện hostname bạn đang kiểm tra là thất bại. Hệ thống sẽ tự động thêm Assertion status code cho bạn sau khi bạn Run test, bạn cần định nghĩa ít nhất một Assertion cho API test
+  * Assertion defines what you expect about the API Test results. If the returned results meet what you define, API Test will show that the hostname you are testing is successful, and vice versa, API Test will show that the hostname you are testing is successful. test is failed. The system will automatically add the Assertion status code for you after you Run the test, you need to define at least one Assertion for the API test.
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59803717/image2022-8-29_17-19-32.png?version=1&#x26;modificationDate=1686544468000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-\
+* **Location**
+  * Select the Location that will run Ping Tests to your hostname. Ping tests can be run from both Public Locations (managed by VNG Cloud) and Private Locations (installed and managed by customers) based on your needs for running tests from outside (internet) or inside the network. your. Public Locations managed by VNG Cloud currently has 2 locations: HCM and Hanoi.
 
+<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-* **Location**&#x20;
-  * Lựa chọn Location mà ở đó sẽ chạy các Ping Test tới hostname của bạn. Ping tests có thể chạy từ cả Public Locations (do VNG Cloud quản lý) và Private Locations (do khách hàng tự cài đặt và quản lý) dựa trên nhu cầu của bạn cho việc chạy test từ bên ngoài (internet) hay bên trong mạng của bạn. Public Locations do VNG Cloud quản lý hiện tại có 2 locations là HCM và HN.
+* **Alarm conditions:** Set up alarm conditions to define the cases where you want the test to fail and trigger the alarm.
+  * **Interval** : how often API Test will test once, default will be 1p
+  * **Time of failure** : how many consecutive failures will alert
+  * **Locations with failure** : how many locations fail to warn
+  * For example, when you select Time of failure: 1 and Locations with failure: 2, it will be understood as: you will be warned if the Test fails 1 time in a row from 2 out of 2 locations.
+  * **Notifications** : you choose notification channels when switching to In-alarm, Up or Undertermine states, the system will notify according to this list.
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59803717/image2022-8-29_16-42-28.png?version=1&#x26;modificationDate=1686544468000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-* **Alarm conditions:** Thiết lập điều kiện cảnh báo để xác định các trường hợp mà bạn muốn kiểm tra không thành công và kích hoạt cảnh báo.
-  * **Interval**: bao lâu API Test sẽ kiểm tra một lần, mặc định sẽ là 1p
-  * **Time of failure**: bao nhiêu lần thất bại liên tiếp sẽ cảnh báo
-  * **Locations with failure**: bao nhiêu location thất bại mới cảnh báo
-  * Ví dụ khi bạn chọn Time of failure: 1 và Locations with failure: 2, sẽ được hiểu là: bạn sẽ được cảnh báo nếu Test thất bại 1 lần liên tiếp từ 2 trên 2 locations.
-  * **Notifications**: bạn chọn các kênh thông báo khi chuyển qua các trạng thái In-alarm, Up hay Undertermine, Hệ thống sẽ thông báo theo danh sách này.
+6\. Then press the " **Create** " button to initialize the API test. After creating, you will see the API test is in Undertermine state, until the next inteval the Test API will be updated to the correct state.
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59803717/image2022-8-29_16-51-21.png?version=1&#x26;modificationDate=1686544468000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
-\
+* API Test has entered the Up state when the hostname is working normally
 
-
-6\. Sau đó nhấn nút "**Create**" để khởi tạo API test. Sau khi tạo xong bạn sẽ thấy API test đang ở trạng thái Undertermine, cho đến khi inteval tiếp theo API Test sẽ được cập nhập trạng thái chính xác
-
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59803717/image2022-8-29_17-24-38.png?version=1&#x26;modificationDate=1686544468000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-* API Test đã chuyển thành trạng thái Up khi hostname đang hoạt động bình thường
-
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59803717/image2022-8-29_17-26-16.png?version=1&#x26;modificationDate=1686544468000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>

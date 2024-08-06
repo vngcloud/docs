@@ -1,14 +1,14 @@
-# Khởi tạo Certificate
+# Create a Certificate
 
-Sau khi mua Log Project, hệ thống sẽ tự động sinh ra certificate cho từng Log Project, certificate này dùng để xác thực Log Agent với hệ thống vMonitor Platform. Để tạo mới hay tải xuống một certificate, hãy làm theo các bước bên dưới:
+After purchasing Log Project, the system will automatically generate a certificate for each Log Project, this certificate is used to authenticate Log Agent with the vMonitor Platform system. To create or download a certificate, follow the steps below:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Chọn **Integration.**
-2. Chọn **Certificate.**
-3. Nếu bạn chưa khởi tạo Log project nào, chọn **New cert** để tạo Certificate mới. Nếu bạn đã khởi tạo Log project thành công từ Bước 1: Khởi tạo Log project, tại Log project này, chọn **New cert.**
-4. Chúng tôi bắt đầu khởi tạo certificate cho Log project của bạn, khi trạng thái certificate là **ACTIVE** nghĩa là certificate này đã sẵn sàng cho bạn sử dụng.&#x20;
-5. Chọn **Tải xuống** để tải thông tin certificate về thiết bị của bạn hoặc chọn **Delete** để xóa Certificate vừa tạo.&#x20;
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) .
+2. Select **Integration -> c** select **Certificate.**
+3. If you have not created any Log project, select **New cert** to create a new Certificate. If you have successfully created the Log project from [Create Log project](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/logs/lam-viec-voi-log-project-quota) , in this Log project, select **New cert.**
+4. We start creating a certificate for your Log project. When the certificate status is **ACTIVE,** it means this certificate is ready for you to use.
+5. Select **Download** to download certificate information to your device or select **Delete** to delete the newly created Certificate.
 
-Sau khi tải về và giải nén, bạn sẽ thấy các tệp tin certificate và các câu lệnh hướng dẫn cài đặt theo từng môi trường và từng loại agent giúp bạn dễ dàng thiết lập bước đầu:
+After downloading and unpacking, you will see certificate files and installation instructions for each environment and agent type to help you easily set up the initial steps:
 
 | <pre><code>/Linux
 │   ├── Filebeat               // Bộ cài cho agent filebeat , môi trường Linux
@@ -25,5 +25,3 @@ Sau khi tải về và giải nén, bạn sẽ thấy các tệp tin certificate
 /Kubernetes                    // Bộ cài cho môi trường Kubernetes
 </code></pre> |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
-\

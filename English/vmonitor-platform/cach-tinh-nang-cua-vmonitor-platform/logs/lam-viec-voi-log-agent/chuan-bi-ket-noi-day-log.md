@@ -1,18 +1,21 @@
-# Chuẩn bị kết nối đẩy log
+# Prepare to initiate log push connection
 
-#### Kết nối từ máy đẩy log tới hệ thống vMontior Platform.
+**Connect from the log pusher to the vMontior Platform system.**
 
-<table data-header-hidden><thead><tr><th width="182"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Nguồn</strong></td><td><strong>Đích</strong></td><td><strong>Port</strong></td></tr><tr><td>IP máy đẩy log</td><td>Dải subnet:<br>116.118.93.130/28, tức<br>116.118.93.128 -> 116.118.93.143</td><td>10092 TCP</td></tr><tr><td>IP máy đẩy log</td><td>Domain:<br><a href="http://hcm01-loghub01.vngcloud.vn">hcm01-loghub01.vngcloud.vn</a> <a href="http://hcm02-loghub01.vngcloud.vn">hcm02-loghub01.vngcloud.vn</a> <a href="http://hcm03-loghub01.vngcloud.vn">hcm03-loghub01.vngcloud.vn</a></td><td>10092 TCP</td></tr></tbody></table>
+| **Source**    | **Destination**                                                                                                                                                                                            | **Port**  |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| Log pusher IP | Subnet range: 116.118.93.130/28, i.e. 116.118.93.128 -> 116.118.93.143                                                                                                                                     | 10092 TCP |
+| Log pusher IP | Domain: [hcm01-loghub01.vngcloud.vn ](http://hcm01-loghub01.vngcloud.vn/)[hcm02-loghub01.vngcloud.vn ](http://hcm02-loghub01.vngcloud.vn/)[hcm03-loghub01.vngcloud.vn](http://hcm03-loghub01.vngcloud.vn/) | 10092 TCP |
 
-* Kết nối trên cần mở trong suốt quá trình agent đẩy log
+* The above connection needs to be open during the agent pushing logs
 
-Nếu các máy cần thu thập log có máy không thể mở kết nối trực tiếp trên. Tham khảo sử dụng mô hình [collector](https://opentelemetry.io/docs/collector/) để đẩy qua một host trung gian.
+If the machines need to collect logs, some machines cannot open a direct connection. Refer to using the [collector](https://opentelemetry.io/docs/collector/) model to push through an intermediate host.
 
 ***
 
-#### Phân giải domain
+**Domain resolution**
 
-Do dữ liệu kênh truyền được **bảo mật** bằng chuẩn mã hóa SSL. Nếu máy đẩy log có khả năng truy vấn DNS public thì không vấn đề gì. Tuy nhiên nếu không (có thể gặp trong môi trường on-premise) thì bạn cần thêm phân giải domain theo bảng sau:
+Because the transmission channel data is **secured** by SSL encryption standard. If the log pusher is capable of querying public DNS, there is no problem. However, if not (which may occur in an on-premise environment), you need to add domain resolution according to the following table:
 
 | <pre><code># IP---------------| Domain
 116.118.93.131      hcm01-loghub01.vngcloud.vn 
@@ -23,5 +26,3 @@ Do dữ liệu kênh truyền được **bảo mật** bằng chuẩn mã hóa S
 116.118.93.136      hcm06-loghub01.vngcloud.vn
 </code></pre> |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-
-\

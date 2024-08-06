@@ -1,9 +1,8 @@
-# Làm việc với Log Project
+# Working with Log Project
 
-Với một Log project, bạn có thể thực hiện:
+With each Log project, you can:
 
 * [Archive](archive.md)
 * [Refill](refill.md)
 * [Log mapping](log-mapping.md)
 * [Field mapping](field-mapping.md)
-

@@ -1,52 +1,48 @@
 # Search logs
 
-### Cách sử dụng <a href="#searchlogs-cachsudung" id="searchlogs-cachsudung"></a>
+#### Using <a href="#searchlogs-cachsudung" id="searchlogs-cachsudung"></a>
 
-Tại **vùng số 2 - nơi để bạn nhập thông tin tìm kiếm log**: chúng tôi hỗ trợ bạn 2 phương thức tìm kiếm là **Suggestion mode và Editor mode.**
+In **area 2 - where you enter log search information** : we support you with 2 search methods: **Suggestion mode and Editor mode.**
 
-* **Suggestion mode** (mặc định): chúng tôi sẽ hiển thị gợi ý tất cả các fields của logs đổ về để bạn chọn (nên chọn các field có hậu tố là keyword để chúng tôi có thể gợi ý luôn được giá trị đang có sẵn của field cho bạn). Việc tìm kiếm sẽ có kết quả chính xác nhất khi bạn nhập đúng cú pháp **Fields \<Toán tử> Value**.
+* **Suggestion mode** (default): we will display suggestions for all the fields of the incoming logs for you to choose from (you should choose fields with the suffix keyword so we can always suggest the available value of the logs). field for you). The search will have the most accurate results when you enter the correct **Fields \<Operator> Value** syntax .
 
-Ví dụ: để filter các bản ghi logs có phương thức HTTP là GET trong vòng 15 phút gần nhất thì bạn chọn query là http\_method.keyword = 'GET' và thiết lập time range là 15m..&#x20;
+For example, to filter log records with HTTP method GET within the last 15 minutes, select query as http\_method.keyword = 'GET' and set time range to 15m..
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59807124/image2023-8-2_17-39-24.png?version=1&#x26;modificationDate=1690972765000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
-* **Editor mode**: mặc định khi bạn search logs, chúng tôi sẽ bật **Suggestion mode**. Để sử dụng Editor mode, bạn hãy chọn vào biểu tượng <img src="https://docs-admin.vngcloud.vn/download/thumbnails/59807124/image2023-8-7_11-14-17.png?version=1&#x26;modificationDate=1691381658000&#x26;api=v2" alt="" data-size="line">, khi màn hình hiển thị <img src="https://docs-admin.vngcloud.vn/download/thumbnails/59807124/image2023-8-7_11-14-46.png?version=1&#x26;modificationDate=1691381687000&#x26;api=v2" alt="" data-size="line"> tức là bạn đã có thể bắt đầu nhập filter thông qua Editor mode. Cú pháp nhập query giống với Suggestion mode là **Fields \<Toán tử> Value.** Ví dụ: bạn nhập http\_method.keyword = "GET" thì hệ thống sẽ tìm kiếm tất cả các bản ghi logs mà field http\_method.keyword = "GET".
+* **Editor mode** : by default when you search logs, we will enable **Suggestion mode** . To use Editor mode, select the icon **Edit**. When the screen displays **Search log entries with Editor mode**, you can start entering filters through Editor mode. The syntax for entering a query is similar to Suggestion mode: **Fields \<Operator> Value.** For example, if you enter http\_method.keyword = "GET", the system will search for all log records with field http\_method.keyword = "GET".
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59807124/image2023-8-9_13-26-7.png?version=1&#x26;modificationDate=1691562368000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
-Sau khi chọn theo **Suggestion mode** hoặc nhập theo **Editor mode**, bạn có thể :
+After selecting **Suggestion mode** or importing in **Editor mode** , you can:
 
-* Nhấn **Enter** hoặc chọn biểu tượng <img src="https://docs-admin.vngcloud.vn/download/thumbnails/59807124/image2023-8-7_13-28-51.png?version=1&#x26;modificationDate=1691389732000&#x26;api=v2" alt="" data-size="line"> để thực hiện tìm kiếm logs.
-* Chọn biểu tượng <img src="https://docs-admin.vngcloud.vn/download/thumbnails/59807124/image2023-8-7_13-29-31.png?version=1&#x26;modificationDate=1691389771000&#x26;api=v2" alt="" data-size="line"> nếu bạn muốn xóa tất cả điều kiện filter đã nhập/ chọn.
+* Press **Enter** or select the icon **Search** to perform a search for logs.
+* Select this icon **Close** if you want to delete all entered/selected filter conditions.
 
 ***
 
-### Tình huống sử dụng <a href="#searchlogs-tinhhuongsudung" id="searchlogs-tinhhuongsudung"></a>
+#### Usage situations <a href="#searchlogs-tinhhuongsudung" id="searchlogs-tinhhuongsudung"></a>
 
-* #### Cú pháp đơn giản (single query) <a href="#searchlogs-cuphapdongian-singlequery" id="searchlogs-cuphapdongian-singlequery"></a>
-  * Để tìm kiếm logs, bạn cần chọn/ nhập theo cú pháp  **Fields \<Toán tử> Value. Trong đó:**&#x20;
-    * **Field**: danh sách các fields trong log project mà bạn đang chọn.
-    * **Operator**: chúng tôi cung cấp cho bạn các phép toán được mô tả ở bảng bên dưới:&#x20;
-    * **Value**: giá trị của field được gợi ý hoặc do bạn tự nhập.
+* **Simple syntax (single query)**
+  * **To search for logs, you need to select/enter according to the Fields \<Operator> Value** syntax . **In there:**
+    * **Field** : list of fields in the log project you are selecting.
+    * **Operator** : we provide you with the operations described in the table below:
+    * **Value** : the value of the field is suggested or you enter yourself.
 
-<table data-header-hidden><thead><tr><th width="141"></th><th width="276"></th><th></th></tr></thead><tbody><tr><td><p><strong>Phép toán</strong></p><p><strong>(Operator)</strong></p></td><td><strong>Mô tả</strong></td><td><strong>Ví dụ minh họa</strong></td></tr><tr><td>=</td><td>equal some value </td><td>host = "ABC" - Hệ thống sẽ tìm các bản ghi logs có field host= "ABC".</td></tr><tr><td>!=</td><td>not equal some value</td><td>host != "ABC" - Hệ thống sẽ tìm các bản ghi logs có field type khác "ABC".</td></tr><tr><td>:*</td><td>exists is any form</td><td>type.keyword :* - Hệ thống sẽ tìm các bản ghi logs có tồn tại field host. (Có tồn tại tức là có xuất hiện field host trong dòng log, bất kể value của field host là gì).</td></tr><tr><td>!:*</td><td>not exists</td><td>type.keyword !:* - Hệ thống sẽ tìm các bản ghi logs không tồn tại field host. (Không tồn tại tức là không xuất hiện field host trong dòng log).</td></tr><tr><td>&#x3C;</td><td>less than some value</td><td>@timestamp &#x3C; "1690772380191" - Hệ thống sẽ tìm các bản ghi logs có field timestamp nhỏ hơn giá trị 1690772380191.</td></tr><tr><td>></td><td>greater than some value</td><td>@timestamp > "1690772380191" - Hệ thống sẽ tìm các bản ghi logs có field timestamp lớn hơn giá trị 1690772380191.</td></tr><tr><td>&#x3C;=</td><td>less than or equal to some value</td><td>@timestamp &#x3C;= "1690772380191" - Hệ thống sẽ tìm các bản ghi logs có field timestamp nhỏ hơn hoặc bằng giá trị 1690772380191.</td></tr><tr><td>>=</td><td>greater than equal to some value</td><td>@timestamp >= "1690772380191" - Hệ thống sẽ tìm các bản ghi logs có field timestamp lớn hơn hoặc bằng giá trị 1690772380191.</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="136"></th><th width="238"></th><th></th></tr></thead><tbody><tr><td><p><strong>Math</strong></p><p><strong>(Operator)</strong></p></td><td><strong>Describe</strong></td><td><strong>Illustration</strong></td></tr><tr><td>=</td><td>equal some value</td><td>host = "ABC" - The system will find log records with field host = "ABC".</td></tr><tr><td>!=</td><td>not equal some value</td><td>host != "ABC" - The system will look for log records with field types other than "ABC".</td></tr><tr><td>:*</td><td>exists is any form</td><td>type.keyword :* - The system will find log records where the host field exists. (Existence means the host field appears in the log line, regardless of the value of the host field).</td></tr><tr><td>!:*</td><td>not exists</td><td>type.keyword !:* - The system will find log records that do not exist in the host field. (Non-existent means the host field does not appear in the log line).</td></tr><tr><td>&#x3C;</td><td>less than some value</td><td>@timestamp &#x3C; "1690772380191" - The system will find log records with timestamp field less than the value 1690772380191.</td></tr><tr><td>></td><td>greater than some value</td><td>@timestamp > "1690772380191" - The system will find log records with timestamp field greater than the value 1690772380191.</td></tr><tr><td>&#x3C;=</td><td>less than or equal to some value</td><td>@timestamp &#x3C;= "1690772380191" - The system will find log records with timestamp field less than or equal to the value 1690772380191.</td></tr><tr><td>>=</td><td>greater than equal to some value</td><td>@timestamp >= "1690772380191" - The system will find log records with timestamp field greater than or equal to the value 1690772380191.</td></tr></tbody></table>
 
-* #### Cú pháp phức tạp (complex query với boolean operator) <a href="#searchlogs-cuphapphuctap-complexqueryvoibooleanoperator" id="searchlogs-cuphapphuctap-complexqueryvoibooleanoperator"></a>
-  * Bạn có thể kết hợp nhiều Single query vào thành một Complex query theo cú pháp **Field \<Toán tử> Value \<AND/OR> Field \<Toán tử> Value... Trong đó:**&#x20;
-    * **Field**: danh sách các fields trong log project mà bạn đang chọn.
-    * **Operator**: chúng tôi cung cấp cho bạn các phép toán được mô tả ở bảng bên trên.
-    * **Value**: giá trị của field được gợi ý hoặc do bạn tự nhập.
-    * **Boolean operator**: chúng tôi cung cấp cho bạn các phép toán nối được mô tả ở bảng bên dưới:&#x20;
+* **Complex syntax (complex query with boolean operator)**
+  * You can combine multiple Single queries into a Complex query using the syntax **Field \<Operator> Value \<AND/OR> Field \<Operator> Value... In which:**
+    * **Field** : list of fields in the log project you are selecting.
+    * **Operator** : we provide you with the operations described in the table above.
+    * **Value** : the value of the field is suggested or you enter yourself.
+    * **Boolean operator** : we provide you the concatenation operations described in the table below:
 
-<table data-header-hidden><thead><tr><th width="163"></th><th width="202"></th><th></th></tr></thead><tbody><tr><td><p><strong>Phép toán nối</strong></p><p><strong>(Operator)</strong></p></td><td><strong>Mô tả</strong></td><td><strong>Ví dụ minh họa</strong></td></tr><tr><td>AND</td><td>equal some value </td><td>http_method.keyword = "POST" AND response_code.keyword = "404" - Hệ thống sẽ tìm các bản ghi logs có field http_method.keyword = "POST" và field response_code.keyword = "404."</td></tr><tr><td>OR</td><td>not equal some value</td><td>http_method.keyword = "POST" OR response_code.keyword = "404" - Hệ thống sẽ tìm các bản ghi logs có field http_method.keyword = "POST" hoặc field response_code.keyword = "404."</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="162"></th><th width="215"></th><th></th></tr></thead><tbody><tr><td><p><strong>Concatenation operation</strong></p><p><strong>(Operator)</strong></p></td><td><strong>Describe</strong></td><td><strong>Illustration</strong></td></tr><tr><td>AND</td><td>equal some value</td><td>http_method.keyword = "POST" AND response_code.keyword = "404" - The system will look for log records with field http_method.keyword = "POST" and field response_code.keyword = "404."</td></tr><tr><td>OR</td><td>not equal some value</td><td>http_method.keyword = "POST" OR response_code.keyword = "404" - The system will look for log records with field http_method.keyword = "POST" or field response_code.keyword = "404."</td></tr></tbody></table>
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59807124/image2023-8-7_13-24-21.png?version=1&#x26;modificationDate=1691389462000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59807124/image2023-8-7_13-26-42.png?version=1&#x26;modificationDate=1691389602000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+* **Query with for a piece of content**
+  * You can search for a piece of content by entering GET directly into the search field. For example, if you enter the text GET, the system will search all log records in which any data field appears this string of characters.
 
-* #### Truy vấn với cho một phần nội dung <a href="#searchlogs-truyvanvoichomotphannoidung" id="searchlogs-truyvanvoichomotphannoidung"></a>
-  * Bạn có thể tìm kiếm một phần nội dung bằng cách nhập trực tiếp GET vào vùng tìm kiếm. Ví dụ: bạn nhập text GET thì hệ thống sẽ tìm kiếm tất cả các bản ghi logs mà bất kỳ một field dữ kiệu nào xuất hiện chuỗi ký tự này.
-
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59807124/image2023-8-7_11-22-30.png?version=1&#x26;modificationDate=1691382151000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
+<figure><img src="../../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>

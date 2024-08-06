@@ -1,39 +1,39 @@
 # Processor Groups
 
-### Tổng quan
+## Overview <a href="#tong-quan" id="tong-quan"></a>
 
-Processor Group: cho phép bạn chỉ định nơi lấy dữ liệu log (source log project), nơi lưu trữ dữ liệu đã parse (destination log project) và những log nào sẽ được parse khi thoả mãn filter.
+Processor Group: allows you to specify where to get log data (source log project), where to store parsed data (destination log project) and which logs will be parsed when the filter is satisfied.
 
 ***
 
-### Khởi tạo Processor Groups
+## Initialize Processor Groups <a href="#khoi-tao-processor-groups" id="khoi-tao-processor-groups"></a>
 
-Processor Group: cho phép bạn chỉ định nơi lấy dữ liệu log (source log project), nơi lưu trữ dữ liệu đã parse (destination log project) và những log nào sẽ được parse khi thoả mãn filter.
+Processor Group: allows you to specify where to get log data (source log project), where to store parsed data (destination log project) and which logs will be parsed when the filter is satisfied.
 
-Để tạo processor group, hãy làm theo hướng dẫn bên dưới:
+To create a processor group, follow the instructions below:
 
-1\. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor/).
+1\. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor/) .
 
-2\. Chọn thư mục **Log**, sau đó chọn menu **Log pipeline**.
+**2. Select the Log** folder , then select the **Log pipeline** menu .
 
-3\. Chọn một **Log pipeline** đã được tạo trước đó.
+3\. Select a previously created **Log pipeline .**
 
-4\. Chọn **Create a processor group** hoặc **Process Group Library** trong đó:
+4\. Select **Create a processor group** or **Process Group Library** in which:
 
-* **Create a processor group**: tạo mới hoàn toàn processor group.
-* **Process Group Library**: tạo processor group từ những thư viện có sẵn do VNG Cloud hỗ trợ.
+* **Create a processor group** : create a completely new processor group.
+* **Process Group Library** : create processor group from available libraries supported by VNG Cloud.
 
 <details>
 
-<summary>Tạo một processor group</summary>
+<summary>Create a processor group</summary>
 
-1. Nhập tên processor **Group name**. Tên Group name phải tuân thủ theo quy định của chúng tôi, chi tiết xem tại [Phạm vi giới hạn Log pipeline](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650030).
-2. Nhập **Description** cho processor group này.
-3. Chọn **Source** và **Destination log project** mà bạn muốn thực hiện pipeline trong danh sách các log project đang tồn tại trên account của bạn. <mark style="color:red;">**Source log project và Destination log project không thể là cùng một log project mà bắt buộc bạn phải chọn chúng là những log project khác biệt. Nếu Destination log project đã có dữ liệu thì việc tạo luồng pipeline cho project này có thể gây mất đồng bộ dữ liệu.**</mark>
-4. Nhập điều kiện **Filter** cho log nếu có. Bạn có thể nhập điều kiện lọc cho log bằng một trong 2 cách: **Suggestion mode** hoặc **Editor mode**. Cách sử dụng 2 phương thức này và chuyển đổi qua lại giữa 2 phương thức đã được chúng tôi mô tả ở các tính năng [Search logs](https://docs-admin.vngcloud.vn/display/VPV/Search+logs).
-5. Chọn **Create.**
+1. Enter the processor **Group name** . The Group name must comply with our regulations, for details see [Log pipeline limit scope](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650030) .
+2. Enter **a Description** for this processor group.
+3. Select **the Source** and **Destination log project** you want to pipeline from the list of existing log projects on your account. **Source log project and Destination log project cannot be the same log project, you must choose them as different log projects. If the Destination log project already has data, creating a pipeline for this project may cause data loss.**
+4. **Enter Filter** conditions for the log if any. You can enter filter conditions for the log in one of two ways: **Suggestion mode** or **Editor mode** . How to use these two methods and switch back and forth between the two methods has been described in the [Search logs](https://docs-admin.vngcloud.vn/display/VPV/Search+logs) features .
+5. Select **Create.**
 
-<img src="https://docs-admin.vngcloud.vn/download/attachments/49650043/image2023-7-31_14-9-40.png?version=1&#x26;modificationDate=1690787381000&#x26;api=v2" alt="" data-size="original">
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fattachments%2F49650043%2Fimage2023-7-31\_14-9-40.png%3Fversion%3D1%26modificationDate%3D1690787381000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=182a9f84\&sv=1)
 
 </details>
 
@@ -41,63 +41,61 @@ Processor Group: cho phép bạn chỉ định nơi lấy dữ liệu log (sourc
 
 <summary>Process Group Library</summary>
 
-Hiện tại VNG Cloud hỗ trợ thư viện cho 2 ứng dụng phổ biến là **Apache, Nginx**. Khi bạn chọn **Process Group Library**, tiếp tục thực hiện các bước dưới đây để hoàn thành tạo processor group
+Currently, VNG Cloud supports libraries for two popular applications: **Apache and Nginx** . Once you select **Process Group Library** , continue with the steps below to complete creating the processor group
 
-1. Chọn <img src="https://docs-admin.vngcloud.vn/download/thumbnails/49650043/image2023-3-27_9-48-38.png?version=1&#x26;modificationDate=1679885318000&#x26;api=v2" alt="" data-size="line">(**Duplicate this group)** để tạo Processor Group từ Library này.
+1. Select ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F49650043%2Fimage2023-3-27\_9-48-38.png%3Fversion%3D1%26modificationDate%3D1679885318000%26api%3Dv2\&width=40\&dpr=4\&quality=100\&sign=a2c0b2ac\&sv=1)( **Duplicate this group)** to create a Processor Group from this Library.
 
-<img src="https://docs-admin.vngcloud.vn/download/attachments/49650043/image2023-8-2_15-6-24.png?version=1&#x26;modificationDate=1690963585000&#x26;api=v2" alt="" data-size="original">
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fattachments%2F49650043%2Fimage2023-8-2\_15-6-24.png%3Fversion%3D1%26modificationDate%3D1690963585000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=da712c61\&sv=1)
 
-2. Nhập các thông tin bao gồm:
+1. Enter information including:
 
-* **Group name**: nhập tên processor group. Tên group phải tuân thủ theo quy định của chúng tôi, chi tiết xem tại [Phạm vi giới hạn Log pipeline](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650030).
-* **Description**: nhập mô tả processor group này
-* Chọn **Source** và **Destination log project** mà bạn muốn thực hiện pipeline trong danh sách các log project đang tồn tại trên account của bạn. <mark style="color:red;">**Source log project và Destination log project không thể là cùng một log project mà bắt buộc bạn phải chọn chúng là những log project khác biệt. Nếu Destination log project đã có dữ liệu thì việc tạo luồng pipeline cho project này có thể gây mất đồng bộ dữ liệu.**</mark>
-* Nhập điều kiện **Filter** cho log nếu có. Bạn có thể nhập điều kiện lọc cho log bằng một trong 2 cách: **Suggestion mode** hoặc **Editor mode**. Cách sử dụng 2 phương thức này và chuyển đổi qua lại giữa 2 phương thức đã được chúng tôi mô tả ở các tính năng [Search logs](https://docs-admin.vngcloud.vn/display/VPV/Search+logs).
+* **Group name** : enter the processor group name. The group name must comply with our regulations, for details see [Log pipeline limit scope](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650030) .
+* **Description** : enter a description of this processor group
+* Select **the Source** and **Destination log project** you want to pipeline from the list of existing log projects on your account. **Source log project and Destination log project cannot be the same log project, you must choose them as different log projects. If the Destination log project already has data, creating a pipeline for this project may cause data loss.**
+* **Enter Filter** conditions for the log if any. You can enter filter conditions for the log in one of two ways: **Suggestion mode** or **Editor mode** . How to use these two methods and switch back and forth between the two methods has been described in the [Search logs](https://docs-admin.vngcloud.vn/display/VPV/Search+logs) features .
 
-3. Chọn **Duplicate**.
+1. Select **Duplicate** .
 
-<img src="https://docs-admin.vngcloud.vn/download/attachments/49650043/image2023-8-2_15-2-28.png?version=1&#x26;modificationDate=1690963350000&#x26;api=v2" alt="" data-size="original">
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fattachments%2F49650043%2Fimage2023-8-2\_15-2-28.png%3Fversion%3D1%26modificationDate%3D1690963350000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=742ce32d\&sv=1)
 
-Sau khi bạn sao chép thành công:
+After you successfully copy:
 
-* Đối với thư viện **Apache**, hệ thống sẽ tự tạo một **3 Processor** loại: **Grok Parser, GeoIP Parse, User-Agent Parser**. Nếu các cấu hình parser này chưa như bạn mong muốn, bạn có thể chỉnh sửa các **Processor** này theo hướng dẫn tại [Processor](https://docs-admin.vngcloud.vn/display/VPV/Processor).
-* Đối với thư viện **Nginx**, hệ thống sẽ tự tạo một **4 Processor** loại: **Grok Parser, Field Remapper Parser, GeoIP Parse, Date Parser**. Nếu các cấu hình parser này chưa như bạn mong muốn, bạn có thể chỉnh sửa các **Processor** này theo hướng dẫn tại [Processor](https://docs-admin.vngcloud.vn/display/VPV/Processor).
+* For the **Apache** library , the system will automatically create **3 Processor** types: **Grok Parser, GeoIP Parse, User-Agent Parser** . If these parser configurations are not what you want, you can edit these **Processors** according to the instructions at [Processor](https://docs-admin.vngcloud.vn/display/VPV/Processor) .
+* For the **Nginx** library , the system will automatically create **4 Processor** types: **Grok Parser, Field Remapper Parser, GeoIP Parse, Date Parser** . If these parser configurations are not what you want, you can edit these **Processors** according to the instructions at [Processor](https://docs-admin.vngcloud.vn/display/VPV/Processor) .
 
-<img src="https://docs-admin.vngcloud.vn/download/attachments/49650043/image2023-8-2_15-8-35.png?version=1&#x26;modificationDate=1690963717000&#x26;api=v2" alt="" data-size="original">
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fattachments%2F49650043%2Fimage2023-8-2\_15-8-35.png%3Fversion%3D1%26modificationDate%3D1690963717000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=3ee0362\&sv=1)
 
-<img src="https://docs-admin.vngcloud.vn/download/attachments/49650043/image2023-8-2_15-9-10.png?version=1&#x26;modificationDate=1690963751000&#x26;api=v2" alt="" data-size="original">
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fattachments%2F49650043%2Fimage2023-8-2\_15-9-10.png%3Fversion%3D1%26modificationDate%3D1690963751000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=ce49a75c\&sv=1)
 
 </details>
 
 ***
 
-### Chỉnh sửa Processor Groups
+#### Edit Processor Groups <a href="#chinh-sua-processor-groups" id="chinh-sua-processor-groups"></a>
 
-Để chỉnh sửa Processor group trong Log pipeline, hãy làm theo hướng dẫn bên dưới
+To edit Processor group in Log pipeline, follow the instructions below
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Log.**
-3. Chọn **Log pipeline.**
-4. Trong danh sách log pipeline đang có, chọn **Log pipeline** chứa **Processor group** mà bạn muốn chỉnh sửa.
-5. Tại **Processor group** mà bạn muốn chỉnh sửa, chọn <img src="../../../../.gitbook/assets/image%20(319).png" alt="" data-size="line">
-6. Chọn **Edit group**.
-7. Chỉnh sửa các thông số cho **Processor group** mà bạn mong muốn. Bạn có thể chỉnh sửa tất cả các trường thông tin trong cấu hình một processor group. Việc chỉnh sửa này tương tự như khi bạn thực hiện tạo mới một Processor group theo hướng dẫn bên trên.
-8. Chọn **Save.**
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+2. Select the Log folder **.**
+3. Select **Log pipeline.**
+4. In the list of available log pipelines, select **the Log pipeline** containing **the Processor group** you want to edit.
+5. At **the Processor group** you want to edit, select![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FhUSfl2B8MBXpOcUq9h0q%252Fimage.png%3Falt%3Dmedia%26token%3D3939ab59-81e2-48cb-8dd1-498ce9007e29\&width=32\&dpr=4\&quality=100\&sign=b31ddedf\&sv=1)
+6. Select **Edit group** .
+7. Edit the parameters for **the Processor group** you desire. You can edit all information fields in a processor group configuration. This editing is similar to when you create a new Processor group according to the instructions above.
+8. Select **Save.**
 
 ***
 
-### Xóa Processor Groups
+#### Delete Processor Groups <a href="#xoa-processor-groups" id="xoa-processor-groups"></a>
 
-Khi bạn không có nhu cầu sử dụng một Processor group tùy chỉnh nữa, bạn có thể thực hiện xóa Processor group khỏi hệ thống theo hướng dẫn bên dưới:
+When you no longer need to use a custom Processor group, you can delete the Processor group from the system according to the instructions below:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Log.**
-3. Chọn **Log pipeline** chứa processor group mà bạn muốn thực hiện xóa.
-4. Chọn **Processor group.**
-5. Tại **Processor group** mà bạn muốn xóa, chọn <img src="../../../../.gitbook/assets/image%20(318).png" alt="" data-size="line">
-6. Chọn **Delete**.
-7. Tại màn hình xác nhận xóa Processor group, chọn **Delete**.
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+2. Select the Log folder **.**
+3. Select **the Log pipeline** containing the processor group you want to delete.
+4. Select **Processor group.**
+5. At **the Processor group** you want to delete, select![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FM0htYOlkZQzClLStnGpq%252Fimage.png%3Falt%3Dmedia%26token%3D978b5221-e697-4b44-80fb-671aba835d4b\&width=32\&dpr=4\&quality=100\&sign=ee49d6de\&sv=1)
+6. Select **Delete** .
+7. At the Processor group deletion confirmation screen, select **Delete** .
 
-Sau khi bạn thực hiện xóa thành công thì Processor group của bạn sẽ bị xóa hoàn toàn khỏi hệ thống của chúng tôi đồng thời tất cả các processor bên trong một processor group cũng sẽ bị xóa. Bạn không thể khôi phục lại Processor group đã xóa nên hãy lưu ý cẩn thận khi sử dụng tính năng này.
-
-\\
+After you successfully delete, your Processor group will be completely deleted from our system and all processors within a processor group will also be deleted. You cannot restore a deleted Processor group, so be careful when using this feature.

@@ -1,19 +1,19 @@
 # Field mapping
 
-Nếu Log mapping mang ý nghĩa là quy định lại về định danh của một số field trong dữ liệu log thì Field mapping là tính năng mà chúng tôi cung cấp nhằm giúp bạn **điều chỉnh kiểu dữ liệu của các field từ log đổ về** hệ thống vMonitor Platform.&#x20;
+If Log mapping means redefining the identification of some fields in log data, then Field mapping is a feature that we provide to help you **adjust the data type of fields from the log to** the vMonitor system. Platform.
 
-Để thay đổi loại dữ liệu phù hợp với các field từ log đổ về, hãy làm theo hướng dẫn bên dưới:&#x20;
+To change the data type to match the fields from the log, follow the instructions below:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Log**.
-3. Chọn **Field mapping.**
-4. Chúng tôi sẽ cho phép bạn chỉnh sửa kiểu dữ liệu nếu kiểu dữ liệu ban đầu của field là loại **Number** hoặc **Date**. Loại dữ liệu ban đầu ghi nhận từ log được hiển thị tại cột **Type**. Chọn <img src="https://docs-admin.vngcloud.vn/download/thumbnails/49650644/image2023-4-27_9-37-38.png?version=1&#x26;modificationDate=1682563058000&#x26;api=v2" alt="" data-size="line">.
-5. Nếu bạn chỉnh sửa trên field có loại dữ liệu **Number**, hệ thống hiển thị màn hình **Chỉnh sửa field**. Chọn **Format** phù hợp với field mà bạn đang chọn:
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+2. **Select the Log** folder .
+3. Select **Field mapping.**
+4. We will allow you to edit the data type if the field's original data type is of type **Number** or **Date** . The type of data initially recorded from the log is displayed in the **Type** column . Select ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F49650644%2Fimage2023-4-27\_9-37-38.png%3Fversion%3D1%26modificationDate%3D1682563058000%26api%3Dv2\&width=40\&dpr=4\&quality=100\&sign=33ff9ee\&sv=1).
+5. If you edit on a field with data type **Number** , the system displays the **Edit field** screen . Select **the Format** appropriate to the field you are selecting:
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/49650644/image2023-4-27_9-39-32.png?version=1&#x26;modificationDate=1682563172000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
-6\. Nếu bạn chỉnh sửa trên field có loại dữ liệu **Date**, hệ thống hiển thị màn hình **Chỉnh sửa field**. Chọn **Format** và **Date format** **pattern** phù hợp với field mà bạn đang chọn:
+6\. If you edit on a field with data type **Date** , the system displays the **Edit field** screen . Select **the Format** and **Date format pattern** appropriate to the field you are selecting:
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/49650644/image2023-4-27_9-41-40.png?version=1&#x26;modificationDate=1682563300000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
-7\. Chọn **Save**.
+7\. Select **Save** .

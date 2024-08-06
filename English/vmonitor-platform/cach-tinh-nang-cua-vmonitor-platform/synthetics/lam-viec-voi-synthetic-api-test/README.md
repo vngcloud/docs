@@ -1,9 +1,9 @@
-# Làm việc với Synthetic API Test
+# Working with Synthetic API Test
 
-Synthetic API Test giúp bạn chủ động theo dõi các dịch vụ quan trọng nhất của mình để chúng luôn sẵn sàng mọi lúc và mọi nơi. API Test hỗ trợ theo dõi các dịch vụ bạn bằng nhiều giao thức khác nhau bao gồm:
+Synthetic API Test helps you proactively monitor your most important services so they are available anytime and anywhere. API Test supports monitoring of your services using many different protocols including:
 
-* **HTTP(s)**: giúp bạn kiểm tra các website hay các dịch vụ chạy với HTTP(s)
-* **TCP**: giúp bạn kiểm tra các dịch vụ chạy TCP
-* **Ping**: giúp bạn kiểm tra các server hay thiết bị với Ping
+* **HTTP(s)** : helps you test websites or services running with HTTP(s)
+* **TCP** : helps you test services running TCP
+* **Ping** : helps you check servers or devices with Ping
 
-Nếu dịch vụ của bạn không hoạt động hoặc hồi đáp chậm hơn những gì bạn kì vọng, API Test có thể cảnh báo cho bạn với các kênh mà Notification đang hỗ trợ như Email, SMS, Slack hay Telegram.
+If your service is down or responding slower than you expected, API Test can alert you with channels that Notification supports such as Email, SMS, Slack or Telegram.

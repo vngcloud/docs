@@ -12,7 +12,7 @@ When you create a **Public Cluster with Public Node Group**, the VKS system will
 
 ## **2. Public Cluster and Private Node Group**
 
-<figure><img src="../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When you initialize a **Public Cluster with a Private Node Group**, the VKS system will:
 

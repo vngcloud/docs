@@ -1,6 +1,6 @@
-# Làm việc với Location
+# Working with Location
 
-Location là nơi mà ở đó sẽ chạy các API Test tới endpoint (URL, hostname) của bạn. Có 2 loại Location là Public Location và Private Location có những đặc điểm như sau:
+Location is the place where API Tests will run to your endpoint (URL, hostname). There are 2 types of Location: Public Location and Private Location with the following characteristics:
 
-* Public Location: là các locations do VNG Cloud quản lý, sử dụng cho nhu cầu kiểm tra các endpoint có thể truy cập bằng internet
-* Private location: là các locations do bạn tự cài đặt và quản lý, sử dụng cho nhu cầu kiểm tra các endpoint nằm trong mạng nội bộ, không truy cập được từ internet.&#x20;
+* Public Location: are locations managed by VNG Cloud, used for testing endpoints that can be accessed via the internet
+* Private location: are locations that you install and manage yourself, used for testing endpoints located on the internal network, not accessible from the internet.

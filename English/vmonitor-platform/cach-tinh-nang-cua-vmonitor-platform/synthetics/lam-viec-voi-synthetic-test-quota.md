@@ -1,67 +1,64 @@
-# Làm việc với Synthetic Test Quota
+# Working with Synthetic Test Quota
 
-### Tổng quan <a href="#lamviecvoisynthetictestquota-tongquan" id="lamviecvoisynthetictestquota-tongquan"></a>
+## Overview <a href="#lamviecvoisynthetictestquota-tongquan" id="lamviecvoisynthetictestquota-tongquan"></a>
 
-Một Synthetic test quota là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát thông qua API với số lượng API test và alarm cụ thể mà bạn thực hiện mua sắm trên VNG Cloud. Tại một thời điểm bạn chỉ có thể sở hữu một Synthetic test quota và sử dụng chúng như một cách tổ ức tài nguyên cho các nhóm hay phòng ban sử dụng với mục đích khác nhau.
-
-***
-
-### Khởi tạo Synthetic Test Quota <a href="#lamviecvoisynthetictestquota-khoitaosynthetictestquota" id="lamviecvoisynthetictestquota-khoitaosynthetictestquota"></a>
-
-Để khởi tạo Synthetic test quota, vui lòng thực hiện theo các bước bên dưới:
-
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn **Quota & Usage**.
-3. Chọn **Buy Synthetic test quota.**
-4. Tiếp tục chọn **Buy Synthetic test quota.**
-
-Nhằm thuận tiện cho quá trình dùng thử sản phẩm, chúng tôi cung cấp cho bạn một Free Tier với Package 10 API test, bạn có thể mua gói Synthetic test quota này với giá 0 VNĐ và sử dụng chúng trong chu kỳ 1 tháng. 7 ngày trước khi hết hạn package free này, bạn có thể tiếp tục gia hạn và sử dụng với chu kỳ 1 tháng kế tiếp.&#x20;
+A Synthetic test quota is a term on vMonitor Platform that represents a monitoring package via API with a specific number of API tests and alarms that you purchase on VNG Cloud. You can only own one Synthetic test quota at a time and use them as a way to organize resources for groups or departments to use for different purposes.
 
 ***
 
-### Xem thông tin Synthetic Test Quota <a href="#lamviecvoisynthetictestquota-xemthongtinsynthetictestquota" id="lamviecvoisynthetictestquota-xemthongtinsynthetictestquota"></a>
+## Initialize Synthetic Test Quota <a href="#lamviecvoisynthetictestquota-khoitaosynthetictestquota" id="lamviecvoisynthetictestquota-khoitaosynthetictestquota"></a>
 
-Sau khi bạn khởi tạo Synthetic test quota, bạn có thể xem thông tin gói Synthetic test quota mà bạn vừa thực hiện khởi tạo bằng cách:&#x20;
+To initialize Synthetic test quota, please follow the steps below:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Quota\&Usage.**
-3. Chọn **Synthetic test usage**.
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+2. Select **Quota & Usage** .
+3. Select **Buy Synthetic test quota.**
+4. Continue selecting **Buy Synthetic test quota.**
 
-Hệ thống hiển thị thông tin gói **Synthetic test quota** đã được khởi tạo và **usage** thực tế bạn đang sử dụng của gói **Synthetic test quota** đó. Bạn có thể thực hiện Gia hạn trong vòng 7 ngày trước ngày hết hạn của gói Synthetic test quota bằng cách chọn **Renew.**\
-
-
-***
-
-### Gia hạn Synthetic Test Quota <a href="#lamviecvoisynthetictestquota-giahansynthetictestquota" id="lamviecvoisynthetictestquota-giahansynthetictestquota"></a>
-
-Bạn đã khởi tạo Synthetic test quota với chu kỳ sử dụng mặc định 1 tháng. Hiện tại đã gần tới thời điểm gói Synthetic test quota hết hạn và bạn có nhu cầu tiếp tục sử dụng gói này trong thời gian kế tiếp. Để giải quyết vấn đề nêu trên, bạn có thể gia hạn chu kỳ sử dụng gói thông qua tính năng **renew** mà chúng tôi cung cấp.
-
-Để **gia hạn** một **Synthetic test quota**, bạn có thể:&#x20;
-
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Quota\&Usage.**
-3. Chọn **Synthetic test usage**.
-4. Tại gói Synthetic test quota đang sử dụng, chọn **Renew**.
-5. Tiếp tục chọn **Renew.**
-
-Bạn chỉ có thể gia hạn sử dụng gói Synthetic test quota trong vòng 7 ngày trước thời điểm hết hạn của gói Synthetic test quota hiện tại.
+To facilitate the product trial process, we provide you with a Free Tier with Package 10 API test, you can buy this Synthetic test quota package for 0 VND and use them for a period of 1 month. 7 days before the expiration of this free package, you can continue to renew and use it for the next 1 month.
 
 ***
 
-### Xóa Synthetic Test Quota <a href="#lamviecvoisynthetictestquota-xoasynthetictestquota" id="lamviecvoisynthetictestquota-xoasynthetictestquota"></a>
+## View Synthetic Test Quota information <a href="#lamviecvoisynthetictestquota-xemthongtinsynthetictestquota" id="lamviecvoisynthetictestquota-xemthongtinsynthetictestquota"></a>
 
-Bạn đã khởi tạo một Synthetic test quota ban đầu phù hợp với nhu cầu sử dụng của bạn. Nếu bạn không có nhu cầu sử dụng gói Synthetic test quota đã tạo, chúng tôi khuyến khích bạn nên xóa gói Synthetic test quota này để tối ưu chi phí.&#x20;
+After you initialize the Synthetic test quota, you can view the Synthetic test quota package information that you just created by:
 
-Để **xóa** một **Synthetic test quota**, bạn có thể:&#x20;
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+2. **Select the Quota\&Usage** folder .
+3. Select **Synthetic test usage** .
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Quota\&Usage.**
-3. Chọn **Synthetic test usage**.
-4. Tại gói Synthetic test quota đang sử dụng, chọn **Xóa**.
-5. Tại màn hình xác nhận xóa Synthetic test quota, chọn **Xóa**.
+The system displays information about the **Synthetic test quota** package that has been created and the actual **usage** you are using of that **Synthetic test quota** package . You can renew within 7 days before the expiration date of the Synthetic test quota package by selecting **Renew.**
 
-Sau khi bạn bạn thực hiện xóa gói Synthetic test quota thì gói Synthetic test quota bị xóa sẽ biến mất khỏi danh sách gói Synthetic test quota của bạn.&#x20;
+***
 
-<mark style="color:red;">Do hành động xóa Synthetic test quota tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.</mark>&#x20;
+## Synthetic Test Quota Extension <a href="#lamviecvoisynthetictestquota-giahansynthetictestquota" id="lamviecvoisynthetictestquota-giahansynthetictestquota"></a>
 
-\
+You have initialized the Synthetic test quota with a default usage cycle of 1 month. It's almost time for the Synthetic test quota package to expire and you need to continue using this package in the future. To solve the above problem, you can extend the package usage cycle through the **renew** feature that we provide.
+
+To **extend** a **Synthetic test quota** , you can:
+
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+2. **Select the Quota\&Usage** folder .
+3. Select **Synthetic test usage** .
+4. In the Synthetic test quota package being used, select **Renew** .
+5. Continue selecting **Renew.**
+
+You can only renew your Synthetic test quota package within 7 days before the expiration date of the current Synthetic test quota package.
+
+***
+
+## Delete Synthetic Test Quota <a href="#lamviecvoisynthetictestquota-xoasynthetictestquota" id="lamviecvoisynthetictestquota-xoasynthetictestquota"></a>
+
+You have created an initial Synthetic test quota that suits your needs. If you do not need to use the created Synthetic test quota package, we encourage you to delete this Synthetic test quota package to optimize costs.
+
+To **delete** a **Synthetic test quota** , you can:
+
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+2. **Select the Quota\&Usage** folder .
+3. Select **Synthetic test usage** .
+4. In the Synthetic test quota package being used, select **Delete** .
+5. At the Synthetic test quota deletion confirmation screen, select **Delete** .
+
+After you delete the Synthetic test quota package, the deleted Synthetic test quota package will disappear from your list of Synthetic test quota packages.
+
+<mark style="color:red;">Because deleting Synthetic test quota is potentially risky (resources cannot be restored after deletion), we recommend that you consider carefully before deleting.</mark>

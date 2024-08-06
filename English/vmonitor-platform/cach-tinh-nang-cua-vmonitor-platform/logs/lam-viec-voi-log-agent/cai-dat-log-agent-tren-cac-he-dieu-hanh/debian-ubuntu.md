@@ -1,399 +1,104 @@
 # Debian/ Ubuntu
 
-Trước khi thực hiện cài đặt agent trên các hệ điều hành mà chúng tôi hỗ trợ bên dưới, bạn cần phải tải xuống certificate theo hướng dẫn tại [Khởi tạo Certificate](../khoi-tao-certificate.md). Thông tin hướng dẫn thiết lập agent nằm trong file readme, các script hướng dẫn cũng nằm trong tệp tin certificate được tải về. Sử dụng thông tin này với các hướng dẫn bên dưới để hoàn thành việc thiết lập Agent for Log.
+Before installing the agent on the operating systems we support below, you need to download the certificate according to the instructions at [Initialize Certificate](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/logs/lam-viec-voi-log-agent/khoi-tao-certificate) . Information on setting up the agent is in the readme file, and the instruction scripts are also in the downloaded certificate file. Use this information with the instructions below to complete Agent for Log setup.
 
-#### Cài đặt
+**Setting**
 
-Xác định một loại agent mà mình muốn cài và làm theo hưỡng dẫn của agent đó dưới đây:
+Determine the type of agent you want to install and follow that agent's instructions below:
 
-|
+FilebeatLogstash
 
-* Nếu sử dụng script chuẩn bị sẵn trong thư mục tải về, chạy lệnh
+If using a script prepared in the download folder, run the command
 
-| <pre><code>sudo chmod +x filebeat.sh
-sudo ./filebeat.sh &#x3C;path-to-file-log>
-</code></pre> |
-| --------------------------------------------------------------------------------------------- |
+```
+sudo chmod +x filebeat.sh
+sudo ./filebeat.sh <path-to-file-log>
+```
 
-* Nếu cài thủ công, chạy lệnh
+If installing manually, run the command
 
-| <pre><code>curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.7.1-amd64.deb
+```
+curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.7.1-amd64.deb
 sudo dpkg -i filebeat-8.7.1-amd64.deb
-
-
-
-
-
-</code></pre> |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|                                                                                                                                                               |
-| <pre><code>sudo chmod +x filebeat.sh
-</code></pre>                                                                                                            |
-| sudo ./filebeat.sh \<path-to-file-log>                                                                                                                        |
-|                                                                                                                                                               |
-| <pre><code>curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.7.1-amd64.deb
-</code></pre>                                            |
-| sudo dpkg -i filebeat-8.7.1-amd64.deb                                                                                                                         |
-|                                                                                                                                                               |
+```
 
 ***
 
-|
+Next you need to configure agent log. The configuration files below have been prepared by us in the script when downloading the certificate. The description below helps readers imagine what it would be like if we created a manual.
 
-* Nếu sử dụng script chuẩn bị sẵn trong thư mục tải về, chạy lệnh
+**Configuration**
 
-| <pre><code>sudo chmod +x logstash.sh
-sudo ./logstash.sh &#x3C;path-to-file-log>
-</code></pre> |
-| --------------------------------------------------------------------------------------------- |
+FilebeatLogstash
 
-* Nếu cài thủ công, chạy lệnh
-
-| <pre><code>Cài java (>8): sudo apt-get install openjdk-8-jre-headless -y
-Cài Logstash: curl -LO  https://artifacts.elastic.co/downloads/logstash/logstash-8.6.2-amd64.deb
-sudo dpkg -i logstash-8.6.2-amd64.deb
-
-
-
-
-
-</code></pre> |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|                                                                                                                                                                                                                                    |
-| <pre><code>sudo chmod +x logstash.sh
-</code></pre>                                                                                                                                                                                 |
-| sudo ./logstash.sh \<path-to-file-log>                                                                                                                                                                                             |
-|                                                                                                                                                                                                                                    |
-| <pre><code>Cài java (>8): sudo apt-get install openjdk-8-jre-headless -y
-</code></pre>                                                                                                                                             |
-| Cài Logstash: curl -LO https://artifacts.elastic.co/downloads/logstash/logstash-8.6.2-amd64.deb                                                                                                                                    |
-
-```
-		  sudo dpkg -i logstash-8.6.2-amd64.deb
-```
-
-|
-
-Tiếp theo bạn cần cấu hình agent log. Các file cấu hình dưới đều đã được chúng tôi chuẩn bị sẵn tại script khi tải certificate về, mô tả dưới đây giúp người đọc hình dung được nếu tạo manual sẽ thế nào.
-
-#### Cấu hình
-
-|
-
-* File `/etc/filebeat/filebeat.yml.` Cấu hình dưới đây sẽ lấy tất cả log trong file `/var/log/app.log` đẩy về vMonitor Platform:
-
-| <pre><code>filebeat.inputs:
-
-type: log
-paths:
-
-/var/log/app.log
-
-
-
-output.kafka:
-hosts: ["$BOOTSTRAP_SERVERS"]
-topic: "$TOPIC"
-partition.round_robin:
-reachable_only: false
-required_acks: 1
-compression: gzip
-max_message_bytes: 1000000
-ssl.certificate_authorities:
-- $PATH_FILE_VNG_TRUST_PEM
-ssl.certificate: "$PATH_FILE_USER_CER_PEM"
-ssl.key: "$PATH_FILE_USER_KEY_PEM"
-ssl.verification_mode: "none"
-logging.level: info
-logging.to_files: true
-logging.files:
-path: /var/log/filebeat
-name: filebeat
-keepfiles: 7
-permissions: 0644
-</code></pre> |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
-* Trong đó:
-  * Tại `input` đường dẫn tới file log
-  * Tại `output` , các biến cần điền bạn lấy từ bước tải certicate ở trên:
-    * `$BOOTSTRAP_SERVERS, $TOPIC` lấy trong file [info.md](http://info.md/)
-    * `$PATH_FILE_VNG_TRUST_PEM,$PATH_FILE_USER_CER_PEM,$PATH_FILE_USER_KEY_PEM` là đường dẫn tới file VNG.trust.pem user.cer.pem user.key.pem
-* Đọc thêm cấu hình nâng cao khác tại [![](https://www.elastic.co/favicon-16x16.png)Configure Filebeat | Filebeat Reference \[8.8\] | Elastic](https://www.elastic.co/guide/en/beats/filebeat/current/configuring-howto-filebeat.html)
-
-\| | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | |
+The configuration file `/etc/filebeat/filebeat.yml.`below will retrieve all logs in the file `/var/log/app.log`and push it to vMonitor Platform:
 
 ```
 filebeat.inputs:
-
-type: log
-paths:
-
-/var/log/app.log
-
-
+- type: log
+  paths:
+    - /var/log/app.log
 
 output.kafka:
-hosts: ["$BOOTSTRAP_SERVERS"]
-topic: "$TOPIC"
-partition.round_robin:
-reachable_only: false
-required_acks: 1
-compression: gzip
-max_message_bytes: 1000000
-ssl.certificate_authorities:
-- $PATH_FILE_VNG_TRUST_PEM
-ssl.certificate: "$PATH_FILE_USER_CER_PEM"
-ssl.key: "$PATH_FILE_USER_KEY_PEM"
-ssl.verification_mode: "none"
+  hosts: ["$BOOTSTRAP_SERVERS"]
+  topic: "$TOPIC"
+  partition.round_robin:
+    reachable_only: false
+  required_acks: 1
+  compression: gzip
+  max_message_bytes: 1000000
+  ssl.certificate_authorities:
+    - $PATH_FILE_VNG_TRUST_PEM
+  ssl.certificate: "$PATH_FILE_USER_CER_PEM"
+  ssl.key: "$PATH_FILE_USER_KEY_PEM"
+  ssl.verification_mode: "none"
 logging.level: info
 logging.to_files: true
 logging.files:
-path: /var/log/filebeat
-name: filebeat
-keepfiles: 7
-permissions: 0644
+  path: /var/log/filebeat
+  name: filebeat
+  keepfiles: 7
+  permissions: 0644
 ```
 
-|
+* In there:
+  * At `input`the path to the log file
+  * At `output`, the variables you need to fill in are taken from the certificate download step above:
+    * `$BOOTSTRAP_SERVERS, $TOPIC`taken from file [info.md](http://info.md/)
+    * `$PATH_FILE_VNG_TRUST_PEM,$PATH_FILE_USER_CER_PEM,$PATH_FILE_USER_KEY_PEM`is the path to the file VNG.trust.pem user.cer.pem user.key.pem
+* Read more advanced configurations at[![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fwww.elastic.co%2Ffavicon-16x16.png\&width=300\&dpr=4\&quality=100\&sign=2f0b66d1\&sv=1)Configure Filebeat | Filebeat Reference \[8.8\] | Elastic](https://www.elastic.co/guide/en/beats/filebeat/current/configuring-howto-filebeat.html)
 
 ***
 
-|
+**Administration**
 
-* File `/etc/logstash/conf.d/logstash.conf.` Cấu hình dưới đây sẽ lấy tất cả log trong file `/var/log/app.log` đẩy về vMonitor Platform:
+If installed manually, by default the agent log after installation will **not** automatically turn on, you should check the start and enable (start automatically with the machine) for them.
 
-| <pre><code>input {
-file {
-start_position => "beginning"
-path => [ "/var/log/app.log" ]
-}
-}
-output {
-kafka {
-codec => json
-bootstrap_servers => "$BOOTSTRAP_SERVERS"
-topic_id => "$TOPIC"
-security_protocol => "SSL"
-ssl_truststore_location => "$PATH_FILE_VNG_TRUST"
-ssl_truststore_password => "$TRUTSTORE_PASS"
-ssl_keystore_location => "$PATH_FILE_USER_KEY"
-ssl_keystore_password => "$USER_PASS"
-ssl_key_password => "$USER_PASS"
-ssl_endpoint_identification_algorithm => ""
-}
-}
-</code></pre> |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+FilebeatLogstash
 
-* Trong đó: tại `input` , nếu như muốn lấy thêm log tại các file khác, cấu hình thêm như sau
-
-| <pre><code>input {
-file {
-start_position => "beginning"
-path => [ "/var/log/app.log" , "/var/log/backend.log", "/var/log/cmd/*.log"]
-}
-}
-</code></pre> |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-
-* Tại `output` , các biến cần điền bạn lấy từ bước tải certicate ở trên:
-  * `$BOOTSTRAP_SERVERS, $TOPIC, $TRUTSTORE_PASS, $USER_PASS` lấy trong file [info.md](http://info.md/)
-  * `$PATH_FILE_VNG_TRUST, $PATH_FILE_USER_KEY` là đường dẫn tới file VNG.trust, user.key
-* Đọc thêm cấu hình nâng cao khác tại [![](https://www.elastic.co/favicon-16x16.png)Setting Up and Running Logstash | Logstash Reference \[8.8\] | Elastic](https://www.elastic.co/guide/en/logstash/current/setup-logstash.html)
-
-\| | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | |
-
-```
-input {
-file {
-start_position => "beginning"
-path => [ "/var/log/app.log" ]
-}
-}
-output {
-kafka {
-codec => json
-bootstrap_servers => "$BOOTSTRAP_SERVERS"
-topic_id => "$TOPIC"
-security_protocol => "SSL"
-ssl_truststore_location => "$PATH_FILE_VNG_TRUST"
-ssl_truststore_password => "$TRUTSTORE_PASS"
-ssl_keystore_location => "$PATH_FILE_USER_KEY"
-ssl_keystore_password => "$USER_PASS"
-ssl_key_password => "$USER_PASS"
-ssl_endpoint_identification_algorithm => ""
-}
-}
-```
-
-\| |
-
-```
-input {
-file {
-start_position => "beginning"
-path => [ "/var/log/app.log" , "/var/log/backend.log", "/var/log/cmd/*.log"]
-}
-}
-```
-
-|
-
-#### Quản trị
-
-Nếu cài thủ công, mặc định agent log sau khi cài sẽ **không** tự động bật, bạn kiểm tra việc khởi động (start) và enable (tự khởi động cùng máy) cho chúng.
-
-|
-
-* Start
-
-| <pre><code>systemctl start filebeat
-</code></pre> |
-| ------------------------------------------------- |
-
-* Enable
-
-| <pre><code>systemctl enable filebeat
-</code></pre> |
-| -------------------------------------------------- |
-
-* Stop
-
-| <pre><code>systemctl stop filebeat
-</code></pre> |
-| ------------------------------------------------ |
-
-* Reload
-
-| <pre><code>systemctl reload filebeat
-</code></pre> |
-| -------------------------------------------------- |
-
-* Restart
-
-| <pre><code>systemctl restart filebeat
-</code></pre> |
-| --------------------------------------------------- |
-
-* Observe
-
-| <pre><code>systemctl status filebeat
+| <ul><li>Start</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl start filebeat
+</code></pre></td></tr></tbody></table><ul><li>Enable</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl enable filebeat
+</code></pre></td></tr></tbody></table><ul><li>Stop</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl stop filebeat
+</code></pre></td></tr></tbody></table><ul><li>Reload</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl reload filebeat
+</code></pre></td></tr></tbody></table><ul><li>Restart</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl restart filebeat
+</code></pre></td></tr></tbody></table><ul><li>Observe</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl status filebeat
 journalctl -f --unit filebeat
 tail -f /var/log/filebeat
-</code></pre> |
-| ---------------------------------------------------------------------------------------------------------- |
-
-* Uninstall
-
-| <pre><code>apt remove --purge filebeat
-
-
-
-
-
-</code></pre> |
-| --------------------------------------------------------- |
-|                                                           |
-| <pre><code>systemctl start filebeat
-</code></pre>         |
-|                                                           |
-| <pre><code>systemctl enable filebeat
-</code></pre>        |
-|                                                           |
-| <pre><code>systemctl stop filebeat
-</code></pre>          |
-|                                                           |
-| <pre><code>systemctl reload filebeat
-</code></pre>        |
-|                                                           |
-| <pre><code>systemctl restart filebeat
-</code></pre>       |
-|                                                           |
-| <pre><code>systemctl status filebeat
-</code></pre>        |
-| journalctl -f --unit filebeat                             |
-| tail -f /var/log/filebeat                                 |
-|                                                           |
-| <pre><code>apt remove --purge filebeat
-</code></pre>      |
-|                                                           |
-
-***
-
-|
-
-* Start
-
-| <pre><code>systemctl start logstash
-</code></pre> |
-| ------------------------------------------------- |
-
-* Enable
-
-| <pre><code>systemctl enable logstash
-</code></pre> |
-| -------------------------------------------------- |
-
-* Stop
-
-| <pre><code>systemctl stop logstash
-</code></pre> |
-| ------------------------------------------------ |
-
-* Reload
-
-| <pre><code>systemctl reload logstash
-</code></pre> |
-| -------------------------------------------------- |
-
-* Restart
-
-| <pre><code>systemctl restart logstash
-</code></pre> |
-| --------------------------------------------------- |
-
-* Observe
-
-| <pre><code>systemctl status logstash
-journalctl -f --unit logstash
-tail -f /var/log/logstash
-</code></pre> |
-| ---------------------------------------------------------------------------------------------------------- |
-
-* Uninstall
-
-| <pre><code>apt remove --purge logstash
-
-
-
-
-
-</code></pre> |
-| --------------------------------------------------------- |
-|                                                           |
-| <pre><code>systemctl start logstash
-</code></pre>         |
-|                                                           |
-| <pre><code>systemctl enable logstash
-</code></pre>        |
-|                                                           |
-| <pre><code>systemctl stop logstash
-</code></pre>          |
-|                                                           |
-| <pre><code>systemctl reload logstash
-</code></pre>        |
-|                                                           |
-| <pre><code>systemctl restart logstash
-</code></pre>       |
-|                                                           |
-| <pre><code>systemctl status logstash
-</code></pre>        |
-| journalctl -f --unit logstash                             |
-| tail -f /var/log/logstash                                 |
-|                                                           |
-| <pre><code>apt remove --purge logstash
-</code></pre>      |
-|                                                           |
-
-\\
+</code></pre></td></tr></tbody></table><ul><li>Uninstall</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>tapt remove --purge filebeat
+</code></pre></td></tr></tbody></table> |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p></p><pre><code>systemctl start filebeat
+</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| <p></p><pre><code>systemctl enable filebeat
+</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| <p></p><pre><code>systemctl stop filebeat
+</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| <p></p><pre><code>systemctl reload filebeat
+</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| <p></p><pre><code>systemctl restart filebeat
+</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| <p></p><pre><code>systemctl status filebeat
+journalctl -f --unit filebeat
+tail -f /var/log/filebeat
+</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| <p></p><pre><code>tapt remove --purge filebeat
+</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |

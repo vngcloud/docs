@@ -1,85 +1,85 @@
-# Làm việc với Log Project Quota
+# Working with Log Project Quota
 
-### Tổng quan
+## Overview <a href="#tong-quan" id="tong-quan"></a>
 
-Một Log project là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát Logs với dung lượng và thời gian cụ thể mà bạn thực hiện mua trên VNG Cloud. Tại một thời điểm bạn có thể sở hữu một hoặc nhiều Log project song song và sử dụng chúng như một cách tổ chức tài nguyên cho các nhóm hay phòng ban sử dụng với mục đích khác nhau.
-
-***
-
-### Khởi tạo Log project quota
-
-Để khởi tạo một log project, hãy thực hiện theo các bước bên dưới:
-
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn **Quota & Usage**.
-3. Chọn **Buy a log project.**
-4. Nhập **Log project name.** Theo quy định của chúng tôi, tên log project phải dài từ 1 (tối thiểu) đến 63 (tối đa) ký tự. **Log project name** có thể bao gồm các chữ cái viết thường (a-z), số (0-9), dấu gạch ngang (-). **Log project name** phải bắt đầu bằng một chữ cái viết thường và kết thúc bằng một chữ cái viết thường hoặc một chữ số.
-5. Nhập **Description** log project nếu có. Theo quy định của chúng tôi, mô tả có thể dài từ 0 (tối thiểu) đến 300 (tối đa) ký tự. **Description** có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), dấu gạch dưới (\_), khoảng trắng ( ) hoặc dấu gạch ngang (-).
-6. Chọn **Class** mà bạn có nhu cầu sử dụng**.** Chúng tôi cung cấp cho bạn chọn 1 trong 2 class bao gồm: Basic, Pro.
-7. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Nếu bạn chọn class **Pro**, bạn có thể lựa chọn retiontion day và lựa chọn cấu hình log size per day mong muốn bằng cách kéo thả hoặc nhập con số dung lượng bạn mong muốn tại ô Log size per day. dụng. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Log Project Class](../../vmonitor-platform-la-gi/vmonitor-platform-log-la-gi/log-project-class.md)
-8. Chọn **Buy Log Quota.**
-9. Chọn **Period** nếu bạn là người dùng trả trước. Chúng tôi cung cấp các chu kỳ trả trước bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng.
-10. Chọn **Continue** và tiếp thực thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Log project** sẽ được khởi tạo.
-
-Cách tính chi phí cho mỗi gói log project được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+A Log project is a term on vMonitor Platform that represents a Logs monitoring package with a specific capacity and time that you purchase on VNG Cloud. At a time you can own one or more Log projects in parallel and use them as a way to organize resources for groups or departments to use for different purposes.
 
 ***
 
-### Xem thông tin Log project quota
+## Initialize Log project quota <a href="#khoi-tao-log-project-quota" id="khoi-tao-log-project-quota"></a>
 
-Sau khi bạn khởi tạo Log project, bạn có thể xem thông tin gói Log project mà bạn vừa thực hiện khởi tạo bằng cách:&#x20;
+To initialize a log project, follow the steps below:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Quota\&Usage.**
-3. Chọn mục **Log**.
-4. Hệ thống hiển thị thông tin gói **Log project** đã được khởi tạo và **usage** thực tế bạn đang sử dụng của gói **Log project** đó. Bạn có thể thực hiện Gia hạn trong vòng 7 ngày trước ngày hết hạn của gói Log project hoặc Tăng hạn mức gói lên cao hơn bằng cách chọn **Gia hạn** hoặc **Tăng hạn mức.**&#x20;
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+2. Select **Quota & Usage** .
+3. Select **Buy a log project.**
+4. Enter **Log project name.** According to our regulations, the project log name must be from 1 (minimum) to 63 (maximum) characters long. **The log project name** can include lowercase letters (az), numbers (0-9), hyphens (-). **The log project name** must begin with a lowercase letter and end with a lowercase letter or a number.
+5. Enter **Description** log project if available. According to our regulations, descriptions can be from 0 (minimum) to 300 (maximum) characters. **Description** can include uppercase letters, lowercase letters (az, AZ), numbers (0-9), periods (.), underscores (\_), spaces ( ) or hyphens (-). .
+6. Select **the Class** you want to use **.** We offer you to choose 1 of 2 classes including: Basic, Pro.
+7. If you choose the **Basic** class , you will not be able to customize the package configuration. If you choose the **Pro** class , you can select retiontion day and choose the desired log size per day configuration by dragging and dropping or entering the desired capacity number in the Log size per day box. use. For more detailed information about class information, see [Log Project Class](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/vmonitor-platform-la-gi/vmonitor-platform-log-la-gi/log-project-class)
+8. Select **Buy Log Quota.**
+9. Select **Period** if you are a prepaid user. We offer prepayment cycles including: 1 month, 3 months, 6 months, 12 months, 24 months, 36 months.
+10. Select **Continue** and continue performing the steps **to Check out** the shopping cart and after successful payment **Log project** will be created.
 
-***
-
-### Gia hạn Log project quota
-
-Để **gia hạn** một **Log project**, bạn có thể:&#x20;
-
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Quota\&Usage.**
-3. Chọn mục **Log**.
-4. Tại gói Log project đang sử dụng, chọn biểu tượng <img src="../../../.gitbook/assets/image (157).png" alt="" data-size="line">sau đó chọn **Renew**.
-5. Chọn **Renew**.
-6. Lựa chọn thời gian mong muốn gia hạn tại cột Period. Khi bạn thực hiện chọn period, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ sử dụng mới và tổng số tiền bạn cần chi trả cho việc gia hạn **gói Log project**.
-7. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Log project** sẽ được gia hạn.
-
-Cách tính chi phí gia hạn cho mỗi gói Log project được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+We publicize the cost calculation for each log project package on VNG Cloud's homepage, see [How to calculate fees](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/cach-tinh-phi) .
 
 ***
 
-### Tăng giảm hạn mức Log project quota
+## View Log project quota information <a href="#xem-thong-tin-log-project-quota" id="xem-thong-tin-log-project-quota"></a>
 
-Để **tăng hạn mức** một **Log project**, bạn có thể:&#x20;
+After you initialize the Log project, you can view the Log project package information that you just created by:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Quota\&Usage.**
-3. Chọn mục Log.
-4. Tại gói Log project đang sử dụng, chọn biểu tượng <img src="../../../.gitbook/assets/image (158).png" alt="" data-size="line">sau đó chọn **Resize**.
-5. Chọn **Log project class** mới mà bạn muốn nâng cấp. Nếu gói log project của bạn đang ở class Basic thì bạn có thể nâng cấp nó lên class Pro. Nếu gói log project của bạn đang ở gói Pro thì bạn có thể nâng cấp nó lên cấu hình cao hơn trong cùng class.&#x20;
-6. Chọn **Resize.**
-7. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Log project** sẽ được tăng hạn mức.
-
-Cách tính chi phí tăng hạn mức cho mỗi gói Log project được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+2. **Select the Quota\&Usage** folder .
+3. Select **Log** .
+4. The system displays the **Log project** package information that has been created and the actual **usage** you are using of that **Log project** package . You can renew within 7 days before the expiration date of the Log project package or increase the package limit to a higher level by selecting **Renew** or **Increase limit.**
 
 ***
 
-### Xóa Log project quota
+## Extend Log project quota <a href="#gia-han-log-project-quota" id="gia-han-log-project-quota"></a>
 
-Nếu bạn không có nhu cầu sử dụng gói Log project đã tạo, chúng tôi khuyến khích bạn nên xóa gói Log project này để tối ưu chi phí.&#x20;
+To **renew** a **Log project** , you can:
 
-Để **xóa** một **Log project**, bạn có thể:&#x20;
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+2. **Select the Quota\&Usage** folder .
+3. Select **Log** .
+4. At the Log project package being used, select the icon ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FZdlWblK2S3hEJjD7Fjm1%252Fimage.png%3Falt%3Dmedia%26token%3D8de99894-a975-420f-afb2-6772d1a8eaa6\&width=22\&dpr=4\&quality=100\&sign=6b9b065a\&sv=1)then select **Renew** .
+5. Select **Renew** .
+6. Select the desired extension period in the Period column. When you select a period, the system will automatically calculate the validity period of the new usage period and the total amount you need to pay for renewing the **Log project package** .
+7. Select **Continue** and continue with the steps. **Check out** the shopping cart and after successful payment, **the Log project** will be renewed.
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Quota\&Usage.**
-3. Chọn mục **Log**.
-4. Tại gói Log project đang sử dụng, chọn **Delete**.
-5. Tại màn hình xác nhận xóa Log project, chọn **Delete**.
+How to calculate the renewal cost for each Log project package is publicized on the homepage of VNG Cloud, see [How to calculate fees](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/cach-tinh-phi) .
 
-Sau khi bạn bạn thực hiện xóa gói Log project thì gói Log project bị xóa sẽ biến mất khỏi danh sách gói Log project của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](../../cach-tinh-phi.md).&#x20;
+***
 
-<mark style="color:red;">Do hành động xóa Log project tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.</mark>&#x20;
+## Increase or decrease the Log project quota <a href="#tang-giam-han-muc-log-project-quota" id="tang-giam-han-muc-log-project-quota"></a>
+
+To **increase the limit of** a **Log project** , you can:
+
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+2. **Select the Quota\&Usage** folder .
+3. Select Log.
+4. At the Log project package being used, select the icon ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FvyfBd81KPAolelFLhsPk%252Fimage.png%3Falt%3Dmedia%26token%3D90a7d2a2-9e5b-461d-8c4b-1baf99874c78\&width=22\&dpr=4\&quality=100\&sign=5c83c52e\&sv=1)then select **Resize** .
+5. Select the new **Log project class** you want to upgrade. If your log project package is in the Basic class, you can upgrade it to the Pro class. If your log project package is in the Pro package, you can upgrade it to a higher configuration in the same class.
+6. Select **Resize.**
+7. Select **Continue** and continue with the cart **checkout** steps and after successful payment **the Log project** limit will be increased.
+
+How to calculate the cost of increasing the limit for each Log project package is publicized on the homepage of VNG Cloud, see [How to calculate fees](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/cach-tinh-phi) .
+
+***
+
+## Delete Log project quota <a href="#xoa-log-project-quota" id="xoa-log-project-quota"></a>
+
+If you do not need to use the created Log project package, we encourage you to delete this Log project package to optimize costs.
+
+To **delete** a **Log project** , you can:
+
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+2. **Select the Quota\&Usage** folder .
+3. Select **Log** .
+4. In the Log project package being used, select **Delete** .
+5. At the Log project deletion confirmation screen, select **Delete** .
+
+After you delete the Log project package, the deleted Log project package will disappear from your Log project package list. If your resources are still valid, we will reimburse you for the unused balance via your credit wallet balance. For details on how vMonitor Platform calculates resource chargeback fees, see [How it is calculated](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/cach-tinh-phi) .
+
+Because deleting a Log project is potentially risky (resources cannot be restored after deletion), we recommend that you consider carefully before deleting

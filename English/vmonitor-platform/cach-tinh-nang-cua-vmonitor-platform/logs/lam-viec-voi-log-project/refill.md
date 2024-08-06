@@ -1,29 +1,29 @@
 # Refill
 
-Sau một thời gian bạn sử dụng tính năng Archive mà chúng tôi cung cấp, dữ liệu log đã được định kỳ đẩy về storage tương ứng mà bạn chọn. Nếu bạn có nhu cầu tìm kiếm và phân tích dữ liệu log được lưu trữ tại storage này, bạn có thể đưa chúng trở lại bằng tính năng Refill mà chúng tôi cung cấp. <mark style="color:red;">**Để thuận tiện nhất, chúng tôi khuyến khích bạn nên tạo một Log project mới (ngắn hạn hay dài hạn tùy thuộc vào nhu cầu của bạn) để xử lý dữ liệu log được refill này thay vì sử dụng lại một Log project đã tạo trước đó. Chúng tôi sẽ cho phép bạn cấu hình refill logs data đến các logs project empty và chưa được cấu hình cho bất cứ hoạt động refill nào trước đó.**</mark>
+After a period of time when you use the Archive feature that we provide, log data will be periodically pushed to the corresponding storage you choose. If you need to search and analyze log data stored in this storage, you can bring them back using the Refill feature we provide. **For maximum convenience, we recommend that you create a new Log project (short or long term depending on your needs) to process this refilled log data instead of reusing a previously created Log project. there. We will allow you to configure refill logs data to project logs that are empty and have not been configured for any previous refill operations.**
 
-Để sử dụng tính năng Refill, hãy làm theo hướng dẫn bên dưới:
+To use the Refill feature, follow the instructions below:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
-2. Chọn thư mục **Log**.
-3. Chọn **Log project.**
-4. Chọn **Log project name** mà bạn muốn thực hiện **Refill** vào, dữ liệu sau khi refill sẽ được lưu trữ trong Log Project này.
-5. Tại màn hình hiển thị thông tin **Log** **project**, tại tab **Refill**, chọn **Refill**.
-6. Nhập **Refill name** theo quy định của chúng tôi. **Tên Refill** phải dài từ 1 (tối thiểu) tới 63 (tối đa) ký tự. **Tên Archive** có thể bao gồm chữ cái in hoa, in thường (a-z, A-Z), chữ số (0-9) hoặc dấu gạch ngang. **Tên Archive** phải bắt đầu bởi một chữ cái và kết thúc bởi một chữ cái hoặc một chữ số.
+1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+2. **Select the Log** folder .
+3. Select **Log project.**
+4. Select **the Log project name** that you want to perform **the Refill** in, the data after refilling will be stored in this Log Project.
+5. **At the Log project** information display screen , on the **Refill** tab , select **Refill** .
+6. Enter **Refill name** according to our regulations. **Refill name** must be from 1 (minimum) to 63 (maximum) characters long. **Archive names** can include uppercase letters, lowercase letters (az, AZ), numbers (0-9) or hyphens. **The Archive name** must begin with a letter and end with a letter or a number.
 
-<figure><img src="../../../../.gitbook/assets/image (310).png" alt=""><figcaption></figcaption></figure>
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FwPUfUPI0ytgzC40CSfj0%252Fimage.png%3Falt%3Dmedia%26token%3Df691e965-1b01-4ff7-b227-b911f5914416\&width=768\&dpr=4\&quality=100\&sign=d8b40093\&sv=1)
 
-7\. Chọn **Source**. Source tại đây là nguồn dữ liệu đã được archive trước đó mà bạn đã tạo.
+7\. Select **Source** . The source here is the previously archived data source that you created.
 
-Tuỳ vào việc dữ liệu bạn đã archive ở đâu, bạn có thể chọn 1 trong 3 nơi dữ liệu log được archive bao gồm: nguồn **archive** đã tạo trước đó,  **vStorage container** hoặc **S3 compatible**.&#x20;
+Depending on where you have archived the data, you can choose 1 of 3 places where the log data is archived including: previously created **archive source, vStorage container** or **S3 compatible** .
 
-<figure><img src="../../../../.gitbook/assets/image (311).png" alt=""><figcaption></figcaption></figure>
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FXWW0SNRzbgVmuWbst2wK%252Fimage.png%3Falt%3Dmedia%26token%3Db0ecdc1d-be32-4e1c-a84b-b0b4a960ad7a\&width=768\&dpr=4\&quality=100\&sign=d535cf0d\&sv=1)
 
 <details>
 
 <summary>Choose an archive</summary>
 
-Chọn một cấu hình **archive** đã tạo trước đó trong danh sách các cấu hình **archive** đang tồn tại trên hệ thống vMonitor Platform trong tài khoản Root User account hiện tại của bạn, hệ thống sẽ tự động điền đầy đủ các thông tin để có thể lấy được dữ liệu Logs
+**Select a previously created archive** configuration in the list of existing **archive** configurations on the vMonitor Platform system in your current Root User account, the system will automatically fill in all the information to retrieve it. Get Logs data
 
 </details>
 
@@ -31,26 +31,26 @@ Chọn một cấu hình **archive** đã tạo trước đó trong danh sách c
 
 <summary>Select a vStorage container</summary>
 
-Chọn **My container** nếu bạn muốn chọn vStorage container thuộc sở hữu của tài khoản bạn đang cần archive. Hoặc chọn **Custom container** nếu bạn muốn chọn vStorage container không thuộc sở hữu của tài khoản bạn đang cần archive.
+Select **My container** if you want to select the vStorage container owned by the account you are archiving. Or select **Custom container** if you want to choose a vStorage container that is not owned by the account you are archiving.
 
-* My container
+* My containers
 
-1. Chọn một **Region**. Nếu bạn muốn xem lại thông tin **Region** và các **vStorage project** cũng như **vStorage container** bạn đang có trên hệ thống vStorage, hãy chọn tại ![](https://docs-admin.vngcloud.vn/download/thumbnails/49650640/image2023-4-27\_13-54-3.png?version=1\&modificationDate=1683512577000\&api=v2)
-2. Chọn một **vStorage project** trong danh sách các project mà bạn đang có tại **Region** đã chọn trước đó trên hệ thống vStorage. Nếu danh sách vStorage project hiển thị cho bạn hiển thị đúng danh sách project tại thời điểm hiện tại, hãy chọn ![](https://docs-admin.vngcloud.vn/download/thumbnails/49650640/image2023-4-27\_13-55-2.png?version=1\&modificationDate=1683512577000\&api=v2).
-3. Chọn một **vStorage container** trong danh sách các container mà bạn đang có tại **project** đã chọn trước đó trên hệ thống vStorage. Nếu danh sách vStorage container hiển thị cho bạn hiển thị đúng danh sách container tại thời điểm hiện tại, hãy chọn ![](https://docs-admin.vngcloud.vn/download/thumbnails/49650640/image2023-4-27\_13-55-2.png?version=1\&modificationDate=1683512577000\&api=v2).
-4. Nhập **Access key** và **Secret key** để xác thực thông tin kết nối tới hệ thống vStorage. Bạn có thể tìm thấy **Access key** và **Secret key** theo hướng dẫn tại [Service Account](https://docs.vngcloud.vn/display/ONVINA/Service+Account) và [Sử dụng Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648950).
-5. Chọn **Select**.
+1. Select a **Region** . If you want to review **Region** information and **vStorage projects** as well as **vStorage containers** you currently have on the vStorage system, please select at![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F49650640%2Fimage2023-4-27\_13-54-3.png%3Fversion%3D1%26modificationDate%3D1683512577000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=52bd7cd\&sv=1)
+2. Select a **vStorage project** in the list of projects you have in the previously selected **Region** on the vStorage system. If the list of vStorage projects shown to you shows the correct list of projects at the current time, select it![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F49650640%2Fimage2023-4-27\_13-55-2.png%3Fversion%3D1%26modificationDate%3D1683512577000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=54da5471\&sv=1).
+3. Select a **vStorage container** in the list of containers you currently have in the previously selected **project** on the vStorage system. If the list of containers vStorage shows you shows the correct list of containers at the current time, select it![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F49650640%2Fimage2023-4-27\_13-55-2.png%3Fversion%3D1%26modificationDate%3D1683512577000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=54da5471\&sv=1).
+4. Enter **the Access key** and **Secret key** to authenticate connection information to the vStorage system. You can find **the Access key** and **Secret key** according to the instructions at [Service Account](https://docs.vngcloud.vn/display/ONVINA/Service+Account) and [Using Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648950) .
+5. Select **Select** .
 
-![](<../../../../.gitbook/assets/image (312).png>)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fk9cHknxvZsLykiBSKO4U%252Fimage.png%3Falt%3Dmedia%26token%3D16639a44-6666-44df-bad3-0d6c6cdfcac3\&width=300\&dpr=4\&quality=100\&sign=4b470916\&sv=1)
 
-* Custom container
+* Custom containers
 
-1. Chọn một **Region**. Nếu bạn muốn xem lại thông tin **Region** và các **vStorage project** cũng như vStorage container bạn đang có trên hệ thống vStorage, hãy chọn tại ![](https://docs-admin.vngcloud.vn/download/thumbnails/49650640/image2023-4-27\_13-54-3.png?version=1\&modificationDate=1683512577000\&api=v2)
-2. Nhập tên một **vStorage container** mà bạn muốn thực hiện archive qua.
-3. Nhập **Access key** và **Secret key** để xác thực thông tin kết nối tới hệ thống vStorage. Bạn có thể tìm thấy **Access key** và **Secret key** theo hướng dẫn tại [Service Account](https://docs.vngcloud.vn/display/ONVINA/Service+Account) và [Sử dụng Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648950).
-4. Chọn **Select**.
+1. Select a **Region** . If you want to review **Region** information and **vStorage projects** as well as vStorage containers you currently have on the vStorage system, please select at![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F49650640%2Fimage2023-4-27\_13-54-3.png%3Fversion%3D1%26modificationDate%3D1683512577000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=52bd7cd\&sv=1)
+2. Enter the name of the **vStorage container** you want to archive through.
+3. Enter **the Access key** and **Secret key** to authenticate connection information to the vStorage system. You can find **the Access key** and **Secret key** according to the instructions at [Service Account](https://docs.vngcloud.vn/display/ONVINA/Service+Account) and [Using Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648950) .
+4. Select **Select** .
 
-![](<../../../../.gitbook/assets/image (313).png>)
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FpjuVgdGKky75c9JSPMN4%252Fimage.png%3Falt%3Dmedia%26token%3Ddbb6f7a2-513c-4baa-a3e8-3f24ee378b86\&width=300\&dpr=4\&quality=100\&sign=2d56e34c\&sv=1)
 
 </details>
 
@@ -58,20 +58,16 @@ Chọn **My container** nếu bạn muốn chọn vStorage container thuộc s�
 
 <summary>Select an S3 compatible</summary>
 
+8\. Select **Next** to continue choosing refill configuration.
 
+9\. Enter **Filter** for log if any. You can enter filtering conditions for the log using the **Suggestion mode** or **Editor mode** method . For more information see [Log search](https://docs-admin.vngcloud.vn/display/VPV/Log+search) .
+
+10\. Select **Time range** by selecting![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F49650640%2Fimage2023-5-8\_9-30-18.png%3Fversion%3D1%26modificationDate%3D1683513020000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=687ac046\&sv=1)then select or enter the desired refill time frame.
+
+11\. If you want to change the **Refill information** , you can select **Previous** then you can make changes to the information according to your needs. If you have already configured the refill information, select **Refill** to begin.
+
+![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fattachments%2F49650640%2FScreen%2520Shot%25202022-07-11%2520at%252010.57.52.png%3Fversion%3D1%26modificationDate%3D1682490125000%26api%3Dv2\&width=768\&dpr=4\&quality=100\&sign=7a08419d\&sv=1)
+
+12\. **The refill process** will begin until the status “Finished” is displayed. You can check the refilled data on the log search page like other log projects.
 
 </details>
-
-8\. Chọn **Next** để tiếp tục chọn cấu hình cho refill.
-
-9\. Nhập **Filter** cho log nếu có. Bạn có thể nhập điều kiện lọc cho log bằng phương thức **Suggestion mode** hoặc **Editor mode**. Để biết thêm thông tin hãy xem tại [Log search](https://docs-admin.vngcloud.vn/display/VPV/Log+search).
-
-10\. Chọn **Time range** bằng cách chọn ![](https://docs-admin.vngcloud.vn/download/thumbnails/49650640/image2023-5-8\_9-30-18.png?version=1\&modificationDate=1683513020000\&api=v2)sau đó chọn hoặc nhập khung thời gian mong muốn refill.
-
-11\. Nếu bạn muốn thay đổi thông tin **Refill information**, bạn có thể chọn **Previous** sau đó bạn có thể thực hiện thay đổi thông tin theo nhu cầu của bạn. Nếu bạn đã cấu hình xong thông tin cho refill, chọn **Refill** để bắt đầu.
-
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/49650640/Screen%20Shot%202022-07-11%20at%2010.57.52.png?version=1&#x26;modificationDate=1682490125000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-12\. **Process refill** sẽ bắt đầu thực hiện cho đến khi báo status “Finished”. Bạn có thể check data đã được refill ở trang log search như các project log khác.
-
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/49650640/Screen%20Shot%202022-07-11%20at%2011.22.07.png?version=1&#x26;modificationDate=1682490125000&#x26;api=v2" alt=""><figcaption></figcaption></figure>

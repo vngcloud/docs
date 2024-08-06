@@ -1,60 +1,59 @@
-# API Test với HTTP(s)
+# API Test with HTTP(s)
 
-API HTTP tests cho phép bạn gửi HTTP(s) requests tới dịch vụ hay ứng dụng của bạn để **xác minh phản hồi hay các điều kiện xác định** như "status code, header hay body content" mà bạn đã thiết lập khi tạo API test
+API HTTP tests allow you to send HTTP request(s) to your service or application to **verify the response or specified conditions** such as "status code, header or body content" that you set when creating the API test
 
-**Để thực hiện tạo API Test với phương thức HTTP(s), hãy làm theo hướng dẫn bên dưới:**
+**To perform API Test creation with HTTP(s) method, follow the instructions below:**
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
-2. Chọn thư mục **Synthetic test.**
-3. Chọn **API test.**
-4. Chọn **Create an API test.**
-5. Nhập các thông tin bao gồm:
+1. Log in to vMonitor Platform [here.](https://hcm-3.console.vngcloud.vn/vmonitor)
+2. Select the Synthetic test folder **.**
+3. Select **API test.**
+4. Select **Create an API test.**
+5. Enter information including:
 
-* **Test Information: định nghĩa các thông tin cơ bản, chọn HTTP method và chỉ định URL cần kiểm tra**
-  * **Test name:** tên của API test
-  * **Test type**: giao thức kiểm tra, bạn chọn HTTP(s)
-  * **Verify** ssl: lựa chọn có kiểm tra ssl hay không (True hay False)
-  * **Method:** lựa chọn method sẽ kiểm tra endpoint của bạn (Get, Post, Put, Delete)
-  * **URL**: điền thông tin dịch vụ bạn muốn kiểm tra, ví dụ [https://google.com](https://google.com/)
+*   **Test Information: define basic information, select HTTP method and specify URL to test**
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59803715/image2022-8-29_16-20-38.png?version=1&#x26;modificationDate=1686544451000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+    * **Test name:** name of the API test
+    * **Test type** : test protocol, you choose HTTP(s)
+    * **Verify** ssl: choose whether to check ssl or not (True or False)
+    * **Method:** select the method that will test your endpoint (Get, Post, Put, Delete)
+    * **URL** : fill in the service information you want to check, for example [https://google.com](https://google.com/)
 
-* Sau khi điền các Test Information bạn có thể chọn **Run Test hoặc Test Again** nếu bạn đã Test trước đó để kiểm tra, bạn có thể thấy các thông tin trả về như status code, header và body
+    ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fattachments%2F59803715%2Fimage2022-8-29\_16-20-38.png%3Fversion%3D1%26modificationDate%3D1686544451000%26api%3Dv2\&width=768\&dpr=4\&quality=100\&sign=c3ead0cc\&sv=1)
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59803715/image2022-8-29_16-21-33.png?version=1&#x26;modificationDate=1686544451000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+* After filling in the Test Information, you can choose **Run Test or Test Again** if you have previously tested, you can see returned information such as status code, header and body.
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Test Assertion**
-  * Assertion định nghĩa những gì bạn kì vọng về kết quả API Test, nếu kết quả trả về thoả những gì bạn định nghĩa API Test sẽ thể hiện URL bạn đang kiểm tra là thành công, và ngược lại API Test sẽ thể hiện URL bạn đang kiểm tra là thất bại. Hệ thống sẽ tự động thêm Assertion status code cho bạn sau khi bạn Run test, bạn cần định nghĩa ít nhất một Assertion cho API test. Ngoài Assertion status code hệ thống tự thêm, bạn có thể thêm bất kì các Assertion khác mà chúng tôi hỗ trợ như bên dưới: Response time, Header, Body, Certificate
+  * Assertion defines what you expect the API Test result to be, if the returned result meets what you define API Test will show the URL you are testing as successful, and vice versa API Test will show the URL you are testing test is failed. The system will automatically add the Assertion status code for you after you Run the test, you need to define at least one Assertion for the API test. In addition to the Assertion status code that the system automatically adds, you can add any other Assertion that we support as below: Response time, Header, Body, Certificate
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59803715/image2022-8-29_16-33-28.png?version=1&#x26;modificationDate=1686544451000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-\
+*   **Location**
 
+    * Select the Location that will run HTTP Tests to your URL. HTTP tests can be run from both Public Locations (managed by VNG Cloud) and Private Locations (installed and managed by customers) based on your needs for running tests from outside (internet) or inside the network. your. Public Locations managed by VNG Cloud currently has 2 locations: HCM and Hanoi.
 
-* **Location**&#x20;
-  * Lựa chọn Location mà ở đó sẽ chạy các HTTP Test tới URL của bạn. HTTP tests có thể chạy từ cả Public Locations (do VNG Cloud quản lý) và Private Locations (do khách hàng tự cài đặt và quản lý) dựa trên nhu cầu của bạn cho việc chạy test từ bên ngoài (internet) hay bên trong mạng của bạn. Public Locations do VNG Cloud quản lý hiện tại có 2 locations là HCM và HN.
+    ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fattachments%2F59803715%2Fimage2022-8-29\_16-42-28.png%3Fversion%3D1%26modificationDate%3D1686544452000%26api%3Dv2\&width=768\&dpr=4\&quality=100\&sign=4b6253a4\&sv=1)
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59803715/image2022-8-29_16-42-28.png?version=1&#x26;modificationDate=1686544452000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+* **Alarm conditions:** Set up alarm conditions to define the cases where you want the test to fail and trigger the alarm.
+  * **Interval** : how often API Test will test once, default will be 1p
+  * **Time of failure** : how many consecutive failures will alert
+  * **Locations with failure** : how many locations fail to warn
+  * For example, when you select Time of failure: 1 and Locations with failure: 2, it will be understood as: you will be warned if the Test fails 1 time in a row from 2 out of 2 locations.
+  * **Notifications** : you choose notification channels when switching to In-alarm, Up or Undertermine states, the system will notify according to this list.
 
-* **Alarm conditions:** Thiết lập điều kiện cảnh báo để xác định các trường hợp mà bạn muốn kiểm tra không thành công và kích hoạt cảnh báo.
-  * **Interval**: bao lâu API Test sẽ kiểm tra một lần, mặc định sẽ là 1p
-  * **Time of failure**: bao nhiêu lần thất bại liên tiếp sẽ cảnh báo
-  * **Locations with failure**: bao nhiêu location thất bại mới cảnh báo
-  * Ví dụ khi bạn chọn Time of failure: 1 và Locations with failure: 2, sẽ được hiểu là: bạn sẽ được cảnh báo nếu Test thất bại 1 lần liên tiếp từ 2 trên 2 locations.
-  * **Notifications**: bạn chọn các kênh thông báo khi chuyển qua các trạng thái In-alarm, Up hay Undertermine, Hệ thống sẽ thông báo theo danh sách này.
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59803715/image2022-8-29_16-51-21.png?version=1&#x26;modificationDate=1686544452000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+6\. Then press the " **Create** " button to initialize the API test. After creating, you will see the API test is in Undertermine state, until the next inteval the Test API will be updated to the correct state.
 
-6\. Sau đó nhấn nút "**Create**" để khởi tạo API test. Sau khi tạo xong bạn sẽ thấy API test đang ở trạng thái Undertermine, cho đến khi inteval tiếp theo API Test sẽ được cập nhập trạng thái chính xác
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59803715/image2022-8-29_16-59-44.png?version=1&#x26;modificationDate=1686544452000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+* API Test has entered the Up state when the URL is working properly
 
-* API Test đã chuyển thành trạng thái Up khi URL đang hoạt động bình thường
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59803715/image2022-8-29_17-2-45.png?version=1&#x26;modificationDate=1686544452000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+* You can see details about API Test:
 
-* Bạn có thể xem chi tiết về API Test:
-
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59803715/image2022-8-29_17-3-46.png?version=1&#x26;modificationDate=1686544452000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
