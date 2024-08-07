@@ -1,61 +1,62 @@
 # Use Deny permission to deny access
 
-When there is a need to grant access permissions that allow all actions except for a few specific actions, you need to create a Policy and use Deny Permission to simplify the permission assignment. In this guide, we will instruct you on how to grant permissions allowing&#x20;
+When you need to decentralize access to allow all actions except a few specific actions, you need to create a Policy and use Deny Permission to simplify decentralization. In this tutorial, we will guide you **to grant permissions to User: System1 to perform all vServer actions (Full Access), but not to allow action:Delete on Resource:server** , **to ensure User: System1 Do not delete any servers** . The model will look like below:
 
-* User: System1 to perform all actions of vServer (Full Access), but not to perform the action: Delete on Resource: server, to ensure User: System1 does not delete any servers. The model will be as follows:\
-  To set up IAM according to the above model, we will have the following steps:
+To set up IAM according to the above model, we will have the following steps:
 
-**Step 1: Create User: System1 if there is no User Account (note that if User: System1 already exists, make sure User: System1 has no permissions or does not have conflicting permissions with the guide)**
+**Step 1** : Create User: System1 if you do not have a User Account (note that if you already have User: System1, make sure User: System1 does not have any rights or does not have rights that overlap with the instructions)
 
-**Step 2: Create a Policy named vServerFullAccessExceptDeleteServer that allows access to all Resources of vServer but does not allow Delete Server**
+**Step 2** : Create a Policy with the name vServerFullAccessExceptDeleteServer that allows access to the entire vServer Resource, but does not allow Delete Server
 
-**Step 3: Attach Policy: vServerFullAccessExceptDeleteServer to User: System1**
+**Step 3** : Attach Policy: vServerFullAccessExceptDeleteServer to User: System1
 
-**Step 4: Log in and check the permissions of User: System1**
+**Step 4** : Log in and check the rights of User: System1
 
-Details of the steps are as follows
+Detailed steps are as follows
 
-Step 1: Create User: System1 if there is no User Account (note that if User: System1 already exists, make sure User: System1 has no permissions or does not have conflicting permissions with the guide)\
-Proceed to create a User Account by accessing the User Account tab on the IAM management page here, click Create a User Account, fill in the Username and Password information, then click Create User Account
+**Step 1: Create User: System1 if you do not have a User Account (note that if you already have User: System1, make sure User: System1 does not have any rights or does not have rights that overlap with the instructions)**
 
-After successfully creating the User Account, it will be listed on the User Account page as below.
+Create a User Account by accessing the User Account tab on the IAM management page here [,](https://hcm-3.console.vngcloud.vn/iam/user-accounts) clicking **Create a User Account,** filling in Username and Password information, then clicking **Create User Account**
 
-Step 2: Create a Policy named vServerFullAccessExceptDeleteServer that allows access to all Resources of vServer but does not allow Delete Server
+After successfully creating a User Account, it will be listed on the User Account page as below
 
-To create a Policy, go to the Policy tab on the IAM page here, click Create a Policy, name the Policy: vServerFullAccessExceptDeleteServer and click Next step
+**Step 2: Create a Policy with the name vServerFullAccessExceptDeleteServer that allows access to all resources of vServer, but does not allow Delete Server**
 
-Click JSON to switch to JSON mode and create the Policy with the provided JSON snippet. Use the JSON snippet below and copy it into the Policy
+To create a Policy, go to the Policy tab on the IAM page here [,](https://hcm-3.console.vngcloud.vn/iam/policies) click **Create a Policy** , **name** the Policy: **vServerFullAccessExceptDeleteServer** and click **Next step**
+
+Click JSON to switch to JSON mode and create a Policy with the available JSON segment
+
+Use the JSON snippet below and copy it into Policy
 
 | `{ "statements": [ { "effect": "allow", "actions": [ "vserver:*" ], "resources": [ "*" ], "condition": {} }, { "effect": "deny", "actions": [ "vserver:DeleteServer" ], "resources": [ "*" ], "condition": {} } ]}` |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-Press Create policy to create a Policy
+Click **Create policy** to create Policy
 
-Step 3: Attach Policy: vServerFullAccessExceptDeleteServer to User: System1\
-After successfully creating the Policy: vServerFullAccessExceptDeleteServer, you proceed to attach this Policy to User: System1, you can do this in User Account or Policy, here we will guide you in Policy, click on the name of the Policy to go to the Policy detail page
+**Step 3** : Attach Policy: vServerFullAccessExceptDeleteServer to User: System1
 
-Select the Policy usage tab and press Attach to add User: System1
+After successfully creating Policy: vServerFullAccessExceptDeleteServer, you proceed to attach this Policy to User: System1, you can do it in User Account or Policy, here we will guide in Policy, **click on the name of the Policy** to go to the details page. Policy details:
 
-Select User: System1 and press Add
+**Select the Policy usage tab** and **click Attach** to add User: System1
 
-After adding User: System1 to Policy: vServerFullAccessExceptDeleteServer, you will see the information as below
+**Select User: System1** and **click Add**
 
-Step 4: Log in and check the permissions of User: System1
+After adding User: System1 to Policy: vServerFullAccessExceptDeleteServer, you will see information like below
 
-At this point you can log in as User: System1 to check the permissions
+**Step 4** : Log in and check the rights of User: System1
 
-Access the vServer here, when not logged into any account you will be redirected to the sign-in page select "Sign-in With IAM User Account"
+Now you can log in to User: System1 to check permissions
 
-Enter the root user account email that User: System1 was previously created, the IAM username and password of User: System1, press Sign-in with IAM User Account
+Access vServer here [,](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) without logging into any account you will be redirected to the sign-in page, select " **Sign-in With IAM User Account** "
 
-At this moment you will see User: System1 will have full rights on the vServer but cannot delete any&#x20;
+Fill in the root user email account information that User: System1 was previously created, IAM username and password information of User: System1, click **Sign-in with IAM User Account**
 
-Resource: server
+At this point you will see that User: System1 will have full rights on vServer but cannot delete any Resource: server
 
-Successfully access the detail page of web1-server
+Accessed web1-server's detail page successfully
 
-Successfully turn off the web1-server:
+Successfully shutdown web1-server:
 
-But cannot delete the web1-server
+But the server web1-server cannot be deleted
 
-Thus you have completed the authorization allowing User: System1 to perform all actions of the vServer (Full Access), but not allowing the action: Delete on Resource: server, to ensure User: System1 does not delete any servers.
+So you have completed the authorization allowing User: System1 to perform all vServer actions (Full Access), but not allowing action:Delete to be performed on Resource:server, to ensure User: System1 is not deleted. any servers.
