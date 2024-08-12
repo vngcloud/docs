@@ -357,7 +357,7 @@
     * [Charging Fee](vstorage/filestorage/cach-tinh-phi.md)
     * [Announcements and Updates](vstorage/filestorage/thong-bao-va-cap-nhat.md)
   * [Backup with Veeam](vstorage/backup-voi-veeam/README.md)
-    * [Bắt đầu với Veeam](vstorage/backup-voi-veeam/bat-dau-voi-veeam/README.md)
+    * [Getting started with Veeam](vstorage/backup-voi-veeam/bat-dau-voi-veeam/README.md)
       * [Step 1: Install Veeam Backup & Replication](vstorage/backup-voi-veeam/bat-dau-voi-veeam/buoc-1-cai-dat-veeam-backup-and-replication.md)
       * [Bước 2: Khởi tạo Repository](vstorage/backup-voi-veeam/bat-dau-voi-veeam/buoc-2-khoi-tao-repository.md)
       * [Bước 3: Tạo Job backup](vstorage/backup-voi-veeam/bat-dau-voi-veeam/buoc-3-tao-job-backup.md)
