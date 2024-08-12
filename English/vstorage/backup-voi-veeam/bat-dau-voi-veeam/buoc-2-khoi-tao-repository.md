@@ -77,11 +77,11 @@ Updating
 
 * Service Point: [https://hcm03-encrypt-vstorage.vngcloud.vn](https://hcm03-encrypt-vstorage.vngcloud.vn)&#x20;
 * Region: **HCM03**&#x20;
-* Credentials: click "Add" to enter "**Access key**" and "**Secret key**". To create the key, refer to the guide on creating an S3 key.
+* Credentials: click "Add" to enter "**Access key**" and "**Secret key**". To create the key, refer to the guide on creating an [S3 key](../../object-storage/vstorage-hcm03/identity-and-access-management/managing-vstorage-access-account/service-account/vstorage-credentials/create-a-s3-key.md).
 
 <figure><img src="../../../.gitbook/assets/image (6).png" alt="" width="563"><figcaption></figcaption></figure>
 
-**Step 7:** In the "Bucket" step, users select a previously created Container on vStorage (see the guide to creating a Container here). At the same time, users choose or create a new folder to store the backup data into that folder. Then click "Next".
+**Step 7:** In the "Bucket" step, users select a previously created Container on vStorage (see the guide to creating a Container[ here](../../object-storage/vstorage-hcm03/features-of-vstorage/working-with-containers/create-a-container.md)). At the same time, users choose or create a new folder to store the backup data into that folder. Then click "Next".
 
 <figure><img src="../../../.gitbook/assets/image (7).png" alt="" width="563"><figcaption></figcaption></figure>
 
