@@ -79,11 +79,11 @@ Các Repository phải có cấu hình Immutable giống nhau và cùng loại O
 
 * Service Point: **https://hcm03-encrypt-vstorage.vngcloud.vn**
 * Region: **HCM03**
-* Credentials: nhấn "Add" để nhập "**Access key**" và "**Secret key**" . Để tạo key, có thể khảo bài hướng dẫn <mark style="color:blue;">**Khởi tạo S3 key**</mark>.
+* Credentials: nhấn "Add" để nhập "**Access key**" và "**Secret key**" . Để tạo key, có thể khảo bài hướng dẫn [<mark style="color:blue;">**Khởi tạo S3 key**</mark>](../../object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-s3-key.md).
 
 <figure><img src="../../../.gitbook/assets/image (352).png" alt="" width="563"><figcaption></figcaption></figure>
 
-**Bước 7:** Tại bước "**Bucket**", người dùng chọn Container đã tạo trước trên vStorage (xem hướng dẫn tạo Container ở <mark style="color:blue;">**đây**</mark>). Đồng thời người dùng **chọn** hoặc **tạo mới folder** để lưu trữ dữ liệu backup vào folder đó. Sau đó nhấn "Next".
+**Bước 7:** Tại bước "**Bucket**", người dùng chọn Container đã tạo trước trên vStorage (xem hướng dẫn tạo Container ở [<mark style="color:blue;">**đây**</mark>](../../object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/khoi-tao-container.md)). Đồng thời người dùng **chọn** hoặc **tạo mới folder** để lưu trữ dữ liệu backup vào folder đó. Sau đó nhấn "Next".
 
 <figure><img src="../../../.gitbook/assets/image (353).png" alt="" width="563"><figcaption></figcaption></figure>
 
