@@ -1,65 +1,63 @@
-# Bước 4: Phục hồi dữ liệu trên Veeam
+# Step 4: Data Recovery on Veeam
 
-Bạn đã tạo được Repository và Job trên phần mềm Veeam Backup & Replication. Bây giờ bạn đã có thể  thực hiện phục hồi dữ liệu khi có sự cố xảy ra với những cấu hình tr6en Veeam đã tạo.
+You have created a Repository and a Job in the Veeam Backup & Replication software. Now you can perform data recovery in case of incidents with the configurations created on Veeam.
 
-### Thực hiện Phục hồi dự liệu theo những bước sau:
+### Follow these steps to perform data recovery:
 
-1. Tại **Home**, chọn mục **Backups/Object Storage,** chọn Job đã backup , chọn máy Computer). Nhấn chuột phải chọn "**Restore guest files**" rồi chọn "Microsoft Windows" **;**
-2. Tại màn hình "File Level Restore", tại Tab "**Restore Point**", bạn chọn thời điểm backup phù hợp muốn lấy lại dữ liệu, sau đó nhấn "**Next**".
-3. Tại màn hình "Reason", điền lý do cần phục hồi dữ liệu, sau đó nhấn "**Next**".
-4. Tại tab "Summary", sau đó nhấn "**Browse**".
-5. Màn hình giao diện Backup Browse hiện ra, chọn đến folder cần restore dữ liệu;
-6. Chọn Nút "**Restore**" trên thanh menu, chọn "**Overwrite**";
-7. Hệ thống tự động chạy phục hồi dữ liệu, sau khi phục hồi hoàn tất thì nhấn "**Close**".
-
-***
-
-### Video hướng dẫn cài đặt&#x20;
-
-Đang cập nhật.
+1. At **Home**, select **Backups/Object Storage**, select the backed-up Job, choose the Computer. Right-click and select "**Restore guest files**" then choose "Microsoft Windows";
+2. In the "File Level Restore" screen, in the "**Restore Point**" tab, select the appropriate backup point from which you want to retrieve data, then click "**Next**".
+3. In the "Reason" screen, enter the reason for data recovery, then click "**Next**".
+4. In the "Summary" tab, then click "**Browse**".
+5. The Backup Browse interface appears, navigate to the folder where data needs to be restored;
+6. Click the "**Restore**" button on the menu bar, select "**Overwrite**";
+7. The system automatically performs data recovery, after the recovery is complete, click "**Close**".
 
 ***
 
-### Ví dụ hướng dẫn Phục hồi dữ liệu với Phiên bản Veeam Backup & Replication 12
+### Installation guide video
 
-Hướng dẫn sau đây để phục hồi (restore) lại dữ liệu khi gặp sự cố sự cố mất file
+Updating
 
-Ở đây Dữ liệu ở Mục E:\Backup\_Veem có dữ liệu "Backup File" bị hỏng (hoặc bị mất) để phục hồi thì thực hiện các bước sau:
+***
 
-<figure><img src="../../../.gitbook/assets/image (372).png" alt="" width="260"><figcaption></figcaption></figure>
+### Example: Guide to Data Recovery with Veeam Backup & Replication version 12&#x20;
 
-**Bước 1:** Tại **Home**, chọn mục **Backups/Object Storage**
+The following guide is to restore data in case of a file loss incident.
 
-Tại đây, người dùng chọn Job đã backup cho folder đã backup, sau đó chọn máy (Computer) mà Job chạy backup. Nhấn chuột phải chọn "**Restore guest files**" rồi chọn "**Microsoft Windows**".
+Here, the data in the folder E:\Backup\_Veem contains "Backup File" that is corrupted (or lost). To recover it, follow these steps:
 
-<figure><img src="../../../.gitbook/assets/image (373).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt="" width="260"><figcaption></figcaption></figure>
 
-**Bước 2:** Giao diện "**File Level Restore**" hiện ra, tại Tab "**Restore Point**", tất cả thời điểm đã backup sẽ liệt kê, người dùng chỉ chọn thời điểm backup phù hợp muốn lấy lại dữ liệu. Sau đó nhấn "**Next**".
+1. At **Home**, select the **Backups/Object Storage** category.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (374).png" alt="" width="559"><figcaption></figcaption></figure>
+Here, the user selects the Job that backed up the folder, then selects the computer on which the Job ran the backup. Right-click and select "**Restore guest files**" then choose "**Microsoft Windows**".
 
-**Bước 3:** Tại tab "**Reason**", người dùng có thể điền mô tả lý do cần restore phục hồi file. sau đó nhấn "**Next**".
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (375).png" alt="" width="559"><figcaption></figcaption></figure>
+2. The "**File Level Restore**" interface appears, in the "**Restore Point**" tab, all backup points will be listed, the user only selects the backup point appropriate to retrieve the data. Then click "**Next**".
 
-**Bước 4:** Tại tab "**Summary**", hiển thị tổng kết những thông tin phục hồi dữ liệu. Sau đó nhấn "**Browse**".
+<figure><img src="../../../.gitbook/assets/image (2).png" alt="" width="559"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (376).png" alt=""><figcaption></figcaption></figure>
+3. In the "**Reason**" tab, the user can fill in a description of why the file needs to be restored. Then click "**Next**".
 
-**Bước 5:** Màn hình giao diện Backup Browse hiện ra, chọn đến folder cần restore dữ liệu. (Có thể thấy được "file đã mất" cần phục hồi có trong phần backup.
+<figure><img src="../../../.gitbook/assets/image (3).png" alt="" width="559"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (378).png" alt="" width="563"><figcaption></figcaption></figure>
+4. In the "**Summary**" tab, a summary of the data recovery information is displayed. Then click "**Browse**".
 
-**Bước 6:** Chọn Nút "**Restore**" trên thanh menu, chọn "**Overwrite**" (chép đè lên những đang tồn tại).
+<figure><img src="../../../.gitbook/assets/image (4).png" alt="" width="561"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (379).png" alt="" width="258"><figcaption></figcaption></figure>
+5. The Backup Browse interface appears, navigate to the folder where data needs to be restored. (You can see the "lost file" that needs to be recovered is in the backup.
 
-**Bước 7**: Hệ thống tự động chạy phục hồi dữ liệu:
+<figure><img src="../../../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (380).png" alt="" width="563"><figcaption></figcaption></figure>
+6. Click the "**Restore**" button on the menu bar, choose "**Overwrite**" (to overwrite the existing files).
 
-**Bước 8**: Khi hệ thống xử lý hoàn tất, người dùng có thể thấy "file đã mất" được phục hồi thành công .
+<figure><img src="../../../.gitbook/assets/image (6).png" alt="" width="258"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (381).png" alt="" width="563"><figcaption></figcaption></figure>
+7. The system automatically performs data recovery:
 
-Hoàn tất việc phục hồi dữ liệu.
+<figure><img src="../../../.gitbook/assets/image (7).png" alt="" width="563"><figcaption></figcaption></figure>
+
+8. When the system has completed processing, the user can see that the "lost file" has been successfully restored. Complete the data recovery process.
+
+<figure><img src="../../../.gitbook/assets/image (269).png" alt="" width="563"><figcaption></figcaption></figure>

@@ -26,7 +26,7 @@
 2. On the object you want to delete, right-click, then choose **Delete**.
 3. On the confirmation delete screen, proceed to select **Delete**.
 
-<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Advanced usecase <a href="#usingcyberduck-advancedusecase" id="usingcyberduck-advancedusecase"></a>
 

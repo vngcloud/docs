@@ -15,7 +15,7 @@ The Ping tests API allows you to send ICMP packets to your server or devices, al
   * **Test type** : test protocol, you choose Ping
   * **Hostname:** select the server or device you need to check, can be domain name or IP address
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * After filling in the Test Information, you can choose **Run Test or Test Again** if you have tested before to check, you can see returned information such as whether Ping was successful or not, packet loss rate or packet latency.
 
