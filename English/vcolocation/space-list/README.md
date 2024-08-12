@@ -2,7 +2,7 @@
 
 List all racks, rack units and cages that you have rented (or reserved for you). Here you can view detailed information or view the layout of equipment placed in the racks.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Features in Space list:
 

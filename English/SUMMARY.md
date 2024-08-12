@@ -359,7 +359,7 @@
   * [Backup with Veeam](vstorage/backup-voi-veeam/README.md)
     * [Getting started with Veeam](vstorage/backup-voi-veeam/bat-dau-voi-veeam/README.md)
       * [Step 1: Install Veeam Backup & Replication](vstorage/backup-voi-veeam/bat-dau-voi-veeam/buoc-1-cai-dat-veeam-backup-and-replication.md)
-      * [Bước 2: Khởi tạo Repository](vstorage/backup-voi-veeam/bat-dau-voi-veeam/buoc-2-khoi-tao-repository.md)
+      * [Step 2: Initialize Repository](vstorage/backup-voi-veeam/bat-dau-voi-veeam/buoc-2-khoi-tao-repository.md)
       * [Bước 3: Tạo Job backup](vstorage/backup-voi-veeam/bat-dau-voi-veeam/buoc-3-tao-job-backup.md)
       * [Bước 4: Phục hồi dữ liệu trên Veeam](vstorage/backup-voi-veeam/bat-dau-voi-veeam/buoc-4-phuc-hoi-du-lieu-tren-veeam.md)
     * [Các tính năng của Veeam](vstorage/backup-voi-veeam/cac-tinh-nang-cua-veeam.md)
