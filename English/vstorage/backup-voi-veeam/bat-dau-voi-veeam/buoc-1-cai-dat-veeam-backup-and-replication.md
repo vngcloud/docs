@@ -23,13 +23,13 @@ Updating.
 
 ***
 
-### Ví dụ hướng dẫn cài đặt Phiên bản Veeam Backup & Replication 12
+### Example: Installation guide Veeam Backup & Replication version 12
 
 1. After customers download the Veeam Backup & Replication installer (or contact the VNG Cloud technical team for assistance in downloading the software), they should select the Veeam setup file and click Install to begin the installation process.
 
 <figure><img src="../../../.gitbook/assets/image (245).png" alt="" width="465"><figcaption></figcaption></figure>
 
-2. Click on "**Install Veeam Backup & Replication**"
+2. Click on "**Install Veeam Backup & Replication**";
 
 <figure><img src="../../../.gitbook/assets/image (246).png" alt="" width="470"><figcaption></figcaption></figure>
 
