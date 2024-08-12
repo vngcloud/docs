@@ -1,70 +1,71 @@
-# Bước 1: Cài đặt Veeam Backup & Replication
+# Step 1: Install Veeam Backup & Replication
 
-Để được sao lưu và phục hồi dữ liệu, thì phần mềm Veeam Backup & Replication cần được cài đặt, khi đã cài đặt thành công thì bạn mới thực hiện được những chức năng sao lưu và phục hồi dữ liệu.
+To ensure data backup and recovery , the Veeam Backup $ Replication software needs to be installed. Only after a successful installation, you perform the functions of data backup and recovery.
 
-### Thực hiện Cài đặt Veeam Backup & Replication theo những bước sau:
+### Follow these steps  to install Veeam Backup & Replication:
 
-1. Chọn file Setup cài đặt, sau đó click **Install** để bắt đầu quá trình cài đặt;
-2. Nhấn chọn "**Install Veeam Backup & Replication**";
-3. Nhấn "**I Accept**" với các thông tin thỏa thuận về bản quyền và điều khoản sử dụng của phần mềm;
-4. Nhập thông tin license (nếu có), sau đó nhấn "**Next**";
-5. Nhập thông tin **User Account** , sau đó nhấn "**Next**";
-6. Nhập thông tin **Database**, sau đó nhấn "**Next**";
-7. Chọn đường dẫn cho data lưu trữ, sau đó nhấn "**Next**";
-8. Chỉ định service port, sau đó nhấn "**Next**";
-9. Nhấn "**Install**" để bắt đầu quá trình cài đặt phần mềm;
-10. Nhấn "**Finish**" để hoàn tất quá trình cài đặt.
+1. Select the Setup installation file, then click **Install** to start the installation process;
+2. Click on "**Install Veeam Backup & Replication**";
+3. Click "**I Accept**" to agree to the software's license agreement and terms of use;
+4. Enter the license information (if available), then click "**Next**";
+5. Enter **User Account** information, then click "**Next**";
+6. Enter **Database** information, then click "**Next**";
+7. Choose the path for data storage, then click "**Next**";
+8. Specify the service port, then click "**Next**";
+9. Click "**Install**" to begin the software installation process;
+10. Click "**Finish**" to complete the installation.
 
 ***
 
-### Video hướng dẫn cài đặt&#x20;
+### Installation guide video
 
-Đang cập nhật.
+Updating.
 
 ***
 
 ### Ví dụ hướng dẫn cài đặt Phiên bản Veeam Backup & Replication 12
 
-1. Sau khi khách hàng tải bộ cài Veeam Backup & Replication (hoặc liên hệ đội ngũ kỹ thuật VNG Cloud để được hỗ trợ tải phần mềm). Khách hàng nhấn chọn file Setup cài đặt Veeam, click Install để bắt đầu quá trình cài đặt.
+1. After customers download the Veeam Backup & Replication installer (or contact the VNG Cloud technical team for assistance in downloading the software), they should select the Veeam setup file and click Install to begin the installation process.
 
-<figure><img src="../../../.gitbook/assets/image (405).png" alt="" width="465"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (245).png" alt="" width="465"><figcaption></figcaption></figure>
 
-2. Nhấn chọn "**Install Veeam Backup & Replication**"&#x20;
+2. Click on "**Install Veeam Backup & Replication**"
 
-<figure><img src="../../../.gitbook/assets/image (407).png" alt="" width="470"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (246).png" alt="" width="470"><figcaption></figcaption></figure>
 
-3. Phần mềm kiểm tra, nếu thiết bị đang cài đã cài Veeam trước đó thì có thể Repair hoặc Remove Veeam, nếu thiết bị chưa cài Veeam thì đến bước 4.
+3. The software checks, if the device already has Veeam installed; if so, you can Repair or Remove Veeam. If the device does not have Veeam installed, proceed to step 4.
 
-<figure><img src="../../../.gitbook/assets/image (408).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (247).png" alt="" width="234"><figcaption></figcaption></figure>
 
-4. Phần mềm Veeam Backup & Replication khuyến Khách hàng đọc thông tin thỏa thuận về bản quyền và điều khoản sử dụng của phần mềm, nếu đồng ý khách hàng có thể nhấn "**I Accept**" (Tôi đồng ý) để tiếp tục.
+4. Veeam Backup & Replication software advises customers to read the information regarding the software's license agreement and terms of use. If they agree, customers can click "**I Accept**" to continue.
 
-<figure><img src="../../../.gitbook/assets/image (409).png" alt="" width="476"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (248).png" alt="" width="476"><figcaption></figcaption></figure>
 
-5. Nhập thông tin license (cho phép có thể nhập license sau), khách hàng có thể nhấn "**Next**"
+5. Enter the license information (option to enter the license later), customers can click "**Next**."
 
-<figure><img src="../../../.gitbook/assets/image (410).png" alt="" width="476"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (249).png" alt="" width="476"><figcaption></figcaption></figure>
 
-6. Nhập thông tin Local System Account hoặc chỉ định account có quyền account trên Server, sau đó nhấn "Next".
+6. Enter the Local System Account information or specify an account with server permissions, then click "**Next**".
 
-<figure><img src="../../../.gitbook/assets/image (411).png" alt="" width="476"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (250).png" alt="" width="476"><figcaption></figcaption></figure>
 
-7. Nhập thông tin SQL server-DB của Veeam, sau đó nhấn "**Next**"
+7. Enter the SQL server-DB information for Veeam, then click "**Next**."
 
-<figure><img src="../../../.gitbook/assets/image (412).png" alt="" width="476"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (251).png" alt="" width="476"><figcaption></figcaption></figure>
 
-8. Khách hàng có thể chọn đường dẫn cho data lưu trữ, sau đó nhấn "**Next**"
+8. Customers can choose the path for data storage, then click "**Next**."
 
-<figure><img src="../../../.gitbook/assets/image (413).png" alt="" width="475"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (252).png" alt="" width="475"><figcaption></figcaption></figure>
 
-9. Khách hàng chỉ định service port, sau đó nhấn "**Next**"
+9. Customers specify the service port, then click "**Next**."
 
-<figure><img src="../../../.gitbook/assets/image (414).png" alt="" width="476"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (253).png" alt="" width="476"><figcaption></figcaption></figure>
 
-10. Khách kiểm tra lại thông tin đã được lựa chọn để cài đặt, sau đó nhấn "**Install**" để bắt đầu quá trình cài đặt phần mềm.
+10. Customers should review the information they have selected for installation, then click "**Install**" to begin the software installation process.
 
-<figure><img src="../../../.gitbook/assets/image (415).png" alt="" width="478"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (254).png" alt="" width="478"><figcaption></figcaption></figure>
 
-11. Nhấn "**Finish**" để hoàn tất quá trình cài đặt Veeam Backup & Replication. Khách hàng có thể mở phần mềm và bắt đầu sử dụng.
+10. Click "**Finish**" to complete the installation process of Veeam Backup & Replication. Customers can then open the software and begin using it.
 
-<figure><img src="../../../.gitbook/assets/image (416).png" alt="" width="467"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (255).png" alt="" width="467"><figcaption></figcaption></figure>
+
