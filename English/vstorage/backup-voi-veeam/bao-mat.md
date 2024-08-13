@@ -1,71 +1,67 @@
-# Bảo mật
+# Security
 
-## Tổng quan <a href="#baomat-security-tongquan" id="baomat-security-tongquan"></a>
+## Overview <a href="#baomat-security-tongquan" id="baomat-security-tongquan"></a>
 
-VNG Cloud có trách nhiệm đảm bảo tính bảo mật của hạ tầng vật lý cũng như hạ tầng ảo hóa đang cung cấp cho các dịch vụ của VNG Cloud. Ngoài ra VNG cũng cung cấp các dịch vụ cho phép khách hàng tự triển khai các chức năng bảo mật cho hệ thống của khách hàng đặt tại VNG Cloud.
+VNG Cloud is responsible for ensuring the security of both its physical and virtual infrastructure that supports VNG Cloud services. Additionally, VNG provides services that allow customers to deploy their security functions for systems hosted on VNG Cloud.
 
-Do đó, việc sao lưu dữ liệu với phần mềm Veeam cũng đảm bảo an toàn vả giảm rủi ro xâm phạm trong quá trình sao lưu định kỳ, những biện pháp kiểm soát bảo mật như:
+Therefore, backing up data with Veeam software also ensures safety and reduces the risk of intrusion during regular backup processes, with security control measures such as:
 
-* Bảo mật kênh truyền khi sao lưu
-* Phân quyền truy cập dữ liệu&#x20;
-* Xác thực đa yếu tố (Multi-factor authentification)
-* Mã hóa dữ liệu khi sao lưu trên đường truyền (Data encryption);
-* Kiểm soát và ghi Logs (Audit & Logging)
-
-***
-
-## Bảo mật kênh truyền khi sao lưu
-
-Để bảo mật kênh truyền cho sao lưu , cần xem xét các khuyên nghị sau:
-
-* Sử dụng phân hoạch mạng (segmentation): Tạo ra các chính sách phân hoạch mạng để kiểm soát lưu lượng, hạn chế truy cập vào các hạ tầng sao lưu nhạy cảm. Đảm bảo chỉ những cổng (ports) được sử dụng mới được mở;
-* Cô lập lưu lượng sao lưu: Sử dụng một mạng cô lập để truyền dữ liệu giữa các thành phần hạ tầng sao lưu:
-* Vô hiệu quá các giao thức mạng lỗi thời như: SSL 2.0, SSL 3.0, TLS 1.0, TLS 1.1, SMB 1.0, LLMNR, NetBIOS.
+* Secure transmission channels during backups
+* Data access control
+* Multi-factor authentication (MFA)
+* Data encryption during transmission
+* Control and audit logging
 
 ***
 
-## Phân quyền truy cập&#x20;
+## Secure Transmission Channels During Backups
 
-Quyền quản trị máy chỉ sao lưu cho phép người dùng truy cập vào các thành phần hạ tầng sao lưu. Nếu tin tặc có những quyền này, thì họ sẽ phá hoại được hầu hết cả dữ liệu và bản sao lưu. Để giảm thiểu rủi ro Veeam phân quyền các tài khoản để hoạt động quản trị các dữ liệu sao lưu. Xem thêm phần <mark style="color:blue;">Quản lý truy cập</mark>
+To secure transmission channels for backups, consider the following recommendations:
 
-***
-
-## **Xác thực đa yếu tố**
-
-Phần mềm Veeam hỗ trợ xác thực đa yếu tố (Multi-Factor Authentification - MFA)  để xác thực người dùng, với mã OTP được tạo ra trong ứng dụng xác thực trên thiết bị di động được sử dụng như phương thức xác minh. Kết hợp với thông tin đăng nha6p và mật khẩu, thì tạo ra một môi trường an toàn hơn và bảo vệ tài khoản người dùng khỏi những xâm phạm độc hại.
-
-**Kích hoạt chức năng MFA:**
-
-1. Đăng nhập vào Veeam với vai trò Administrator;
-2. Chọn mục User and Roles, màn hình Security hiện lên;
-3. Màn hình liệt kê danh sách User or Group với Role tương ứng;
-4. Chọn tùy chọn "Enable Multi-factor Autentification (MFA)
-5. Nhấn OK để hoàn tất việc kích hoạt MFA.
+* Use network segmentation: Create network segmentation policies to control traffic and restrict access to sensitive backup infrastructures. Ensure that only necessary ports are open.
+* Isolate backup traffic: Use an isolated network for data transmission between backup infrastructure components.
+* Disable outdated network protocols such as SSL 2.0, SSL 3.0, TLS 1.0, TLS 1.1, SMB 1.0, LLMNR, NetBIOS.
 
 ***
 
-## **Mã hóa dữ liệu trên đường truyền**
+## Data Access Control
 
-Khi truyền Khi cấu hình job tự động sao lưu dữ liệu, nếu bật tính năng mã hóa và nén dữ liệu, thì từ phía nguồn dữ liệu sẽ nén dữ liệu trước sau đó mã hóa khá khối dữ liệu đã nén.
-
-Các dữ liệu sau khi mã hóa thì không thể đọc được, với sự hỗ trợ của của thuật toán mã hóa và khóa bí mật (secret key), nên tin tặc không thể mở được hay đọc được dữ liệu đã mã hóa. Chỉ có người nhận biết khóa bí mật (secret key) mới giải mã để xem được dữ liệu.
-
-Việc mã hóa dữ liệu ở những hoạt động sau:
-
-* Chạy Job sao lưu dữ liệu;
-* Chạy Job sao lưu log các giao dịch;
-* Chạy Job sao chép sao lưu;
+Administrative rights on backup machines only allow user access to backup infrastructure components. If hackers obtain these rights, they can compromise most data and backups. To minimize risk, Veeam segments accounts for backup data management. See the [Access Management](quan-ly-truy-cap.md) section for more details.
 
 ***
 
-## Kiểm soát và ghi Logs
+## Multi-factor Authentication
 
-Veeam cung cấp khả năng ghi lại Logs tất cả hoạt động đã thực hiện, chẳng hạn như các tác vụ sao lưu dữ liệu hay phục hồi khi có sự cố.
+Veeam software supports Multi-Factor Authentication (MFA) to authenticate users, with OTPs generated in an authentication app on mobile devices used as a verification method. Combined with login information and passwords, this creates a safer environment and protects user accounts from malicious attacks.&#x20;
+
+**Activating MFA:**
+
+1. Log into Veeam as an Administrator;
+2. Select the User and Roles, the Security screen appears;
+3. The screen lists Users or Groups with corresponding Roles;
+4. Choose the option "Enable Multi-factor Authentication (MFA)";
+5. Click OK to complete the activation of MFA.
+
+***
+
+## Data Encryption During Transmission
+
+When configuring automatic backup jobs, if data encryption and compression features are enabled, the data source will first compress the data and then encrypt the compressed data blocks. Once encrypted, the data becomes unreadable, and with the support of encryption algorithms and a secret key, hackers cannot open or read the encrypted data. Only those who know the secret key can decrypt and view the data. Data encryption activities include:
+
+* Running data backup jobs;
+* Running transaction log backup jobs;
+* Running backup copy jobs;
+
+***
+
+## Control and Logging
+
+Veeam provides the capability to log all activities performed, such as data backup tasks or recovery actions in case of incidents.
 
 {% hint style="info" %}
-**Ví dụ:**
+**For example:**
 
-Danh sách các tập tin được phục hồi trong các lần Restore. Kết quả của việc kiểm tra các hoạt động như vậy được trữ dưới dạng tập tin \*.csv gọi là audit logs.
+* The list of files restored during Restores. The results of such activity checks are stored in a \*.csv file called audit logs.
 {% endhint %}
 
-Bạn có thể chỉ định thư mục nơi các Logs kiểm tra sẽ được lưu trữ. Theo mặc định, các tệp nhật ký được lưu trữ trong thư mục sau: %ProgramData%\Veeam\Backup\Audit.
+You can specify the directory where the audit logs will be stored. By default, log files are stored in the following directory: %ProgramData%\Veeam\Backup\Audit.
