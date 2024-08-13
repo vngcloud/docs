@@ -4,7 +4,7 @@
 
 Trong thời đại số, dữ liệu là tài sản quý giá của mọi doanh nghiệp. Việc mất dữ liệu không chỉ gây gián đoạn hoạt động kinh doanh mà còn có thể dẫn đến những tổn thất tài chính nghiêm trọng.&#x20;
 
-Chính vì vậy, việc sao lưu (Backup) và phục hồi sau thảm họa (Disaster RRecovery - DR) là những yếu tố không thể thiếu trong chiến lược bảo vệ dữ liệu của bất kỳ tổ chức nào.
+Chính vì vậy, việc sao lưu (Backup) và phục hồi sau thảm họa (Disaster Recovery - DR) là những yếu tố không thể thiếu trong chiến lược bảo vệ dữ liệu của bất kỳ tổ chức nào.
 
 VNG Cloud Backup Center là giải pháp toàn diện, tập trung các tính năng Backup (sao lưu) và DR cho tất cả các dịch vụ Cloud của bạn. Với Backup Center, bạn có thể dễ dàng quản lý và bảo vệ dữ liệu của mình, đồng thời đảm bảo tính liên tục của hoạt động kinh doanh trong mọi tình huống.
 
