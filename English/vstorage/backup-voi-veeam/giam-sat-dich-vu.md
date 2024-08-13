@@ -1,35 +1,37 @@
-# Giám sát dịch vụ
+# Monitoring Service
 
-## Tổng quan
+## Overview
 
-Việc giám sát và theo dõi các hoạt động sao lưu và phục hồi dữ liệu là một phần quan trọng trong các giải pháp lưu trữ. Khi sử dụng Veeam các quá trình đang thực hiện đồng bộ (chạy job) hay phục hồi dữ liệu, Veeam đều trực quan hiển thị tiến trình xử lý và thông báo kết quả. Bên cạnh đó, để bạn giám sát việc sao lưu backup và phục hồi với những lần đã sao lưu và phục hồi dữ liệu, bạn có thể sử dụng chức năng History của Veeam và để trực quan việc quản lý dữ liệu lưu trữ có thể dùng S3 Browser để giám sát các dữ liệu đã lưu trữ:
 
-* **History:** Theo dõi việc sao lưu và phục hồi;
-* **Versions & Event Log:** Giám sát các phiên bản và các tương tác với dữ liệu đã backup.
+
+Monitoring and tracking backup and data recovery activities is an important part of storage solutions. When using Veeam, processes such as synchronization (running jobs) or data recovery are visually displayed with progress updates and result notifications. Additionally, to monitor backup activities and recoveries from past backups and recoveries, you can use Veeam's History function, and for a visual management of stored data, you can use S3 Browser to monitor the stored data:
+
+* **History:** Tracks backup and recovery activities.
+* **Versions & Event Log:** Monitors versions and interactions with the backed-up data.
 
 ***
 
-## History - Theo dõi sao lưu và phục hồi&#x20;
+## History - Tracking backups and recoveries
 
-Đây là chức năng trong Veeam Backup & Replication, hiển thị các số liệu thống kê cho các hoạt động được thực hiện với Veeam:
+This is a feature in Veeam Backup & Replication that displays statistics for activities performed with Veeam:
 
-* Job: Liệt kê tất cả các Job với thông tin thời điểm sao lưu dữ liệu gần nhất của job đó (cho biết đã backup thành công hay thất bại);
-* Restore: Lịch sử tất cả những lần phục hồi dữ liệu (cho biết đã phục hồi thành công hay thất bại);
-* System: Lịch sử tất cả các phiên lưu trữ trong cơ sở dữ liệu cấu hình;
+* Job: Lists all jobs with information on the most recent data backup time for that job (indicating whether the backup was successful or failed);
+* Restore: History of all data recovery attempts (indicating whether recovery was successful or failed);
+* System: History of all sessions stored in the configuration database;
 
 ## Versions & Event Log
 
-Để kiểm tra các phiên bản dữ liệu backup, bạn có thể xem tại Storage đã sao lưu dữ liệu (vStorage, AWS...). Ở bài viết này đề cập đến một cách đơn giản khác để theo dõi những thông tin này là trên S3 Browser.
+To check backup data versions, you can view them in the storage where data has been backed up (vStorage, AWS, etc.). This article mentions another simple way to monitor this information on the S3 Browser.
 
-Sau khi đã cài đặt và truy cập vào Tài khoản Lưu trữ, tại Bucket/Container mà đã sao lưu dữ liệu, bạn có thể thấy các tab cần thiết cho việc theo dõi việc sao lưu:
+After installing and accessing the Storage Account, at the Bucket/Container where data has been backed up, you can see the necessary tabs for tracking backup activities:
 
-* Versions: Liệt kê tất cả phiên bản của dữ liệu sao lưu và cho biết cả thời điểm sao lưu dữ liệu đó là lúc nào;
-* Event Log: Liệt kê tất cả các tác vụ mà đã cập nhật bucket/container thành công.
+* Versions: Lists all versions of the backed-up data and indicates when each data backup occurred;
+* Event Log: Lists all tasks that have successfully updated the bucket/container.
 
-**Ví dụ:**
+**Example**
 
-Trường hợp đã bật **Immutable** để bảo vệ dữ liệu;
+In cases where **Immutable** has been enabled to protect data;&#x20;
 
-Khi đó nếu có sự cố dữ liệu, như xóa mất một version, thì tại Event Log ghi nhận tác vụ "Detele" nhưng cũng sẽ ghi nhận "Access Denied" từ chối việc xóa dữ liệu.
+If there is a data incident, such as deleting a version, then the Event Log records a "Delete" task but will also record "Access Denied" denying the data deletion.
 
-Lúc này với vai trò quản trị, bạn có thể thấy toàn bộ version còn tồn tại và các tác vụ thực hiện tương tác với dữ liệu sao lưu.
+&#x20;At this point, as an administrator, you can see all existing versions and the tasks performed interacting with the backed-up data.
