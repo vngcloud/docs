@@ -1,52 +1,48 @@
-# Tình huống sử dụng (use case)
+# Use case
 
-## Tổng quan
+## Overview
 
-Các trường hợp Sao lưu dữ liệu sử dụng với Veeam thường được sử dụng với các trường hợp nhua sau:
+Data backup scenarios using Veeam are typically used in the following cases:
 
-* Sao lưu dữ liệu;
-* Khôi phục dữ liệu đã mất;
-* Bảo vệ chống Ransomware;
-* Quản lý nhiều Repository sao lưu.
+* Data Backup;
+* &#x20;Data Recovery;&#x20;
+* Ransomware Protection;&#x20;
+* Managing Multiple Backup Repositories.
 
 ***
 
-## Sao lưu dữ liệu&#x20;
+## Data Backup
 
-Giả sử Doanh nghiệp ABC một số tệp tin và thư mục quan trọng về tài chính trên máy chủ của hệ thống công ty. Do đó, họ cần sao lưu bảo vệ những tài liệu nhạy cảm này đến một nơi lưu trữ an toàn khác như trên vStorage (hoặc trên hệ thống Ceph hay AWS) ngoài máy chủ đang có.
+Suppose ABC Corporation has important financial files and folders on their company system server. Therefore, they need to back up these sensitive documents to another secure storage location such as on vStorage (or on systems like Ceph or AWS) outside the existing server.&#x20;
 
-Sử dụng Veeam để sao lưu dữ liệu:
+Using Veeam for data backup:
 
-* Thiết lập kho lưu trữ (repository) trên Veeam;
-* Thiết lập job định kỳ sao lưu các dữ liệu đó;
-* Có thể kiểm tra phiên bản lần cập nhật gần nhất trên Veeam.
+* Set up a storage repository on Veeam;
+* Set up a regular backup job for these data;
+* You can check the most recent update version on Veeam.
 
-## Khôi phục dữ liệu đã mất
+## Data Recovery
 
-Giả sử Doanh nghiệp ABC đã sử dụng Veeam để sao lưu định kỳ các dữ liệu quan trọng. Nhưng đến một hôm hệ thống máy chủ bị sự cố nghiêm trọng và mất một số dữ liệu đã lưu trên máy chủ.
+Suppose ABC Corporation has been using Veeam for regular backups of critical data. However, one day the server system experiences a severe problem and some data stored on the server is lost. Using Veeam for data recovery:
 
-Sử dụng Veeam để khôi phục dữ liệu đã mất:
+* Select the job that performed the backup of the data to the storage locations;
+* In the list of backup points of the job, choose the appropriate time point to recover data (usually the last time the job was run).
 
-* Chọn job đã thực hiện backup các dữ liệu đến các nơi lưu trữ;
-* Trong danh sách các thời điểm backup của Job thì chọn thời điểm phù hợp cần phục hồi dữ liệu (thường là thời điểm cuối cùng mà job đã chạy);
+## Ransomware Protection
 
-## Bảo vệ chống Ransomware
+Suppose ABC Corporation has important documents that need to be stored and is aware of the potential risk of data destruction by Ransomware. The company really wants the data backed up and measures in place to ensure it is safe from dangerous agents like Ransomware. Using Veeam in conjunction with Storage supporting the Object Lock feature:
 
-Giả sử Doanh nghiệp ABC có những tài liệu lưu trữ quan trọng cần lưu trữ, cũng như doanh nghiệp ý thức được sự nguy cơ gây phá hoại dữ liệu của Ransomware. Doanh nghiệp thật sự muốn dữ liệu được sao lưu và có biện pháp đảm bảo dữ liệu được an toàn khỏi những tác nhân nguy hiểm như Ransomware.&#x20;
+* The storage needs to create a Bucket/Container that supports Object Lock;
+* When creating a Repository, select the option "Make recent backups immutable for (30) days" to activate Immutable to protect against Ransomware;
+* The Immutable feature protects backups from being deleted or altered for a certain period.
 
-Sử dụng Veeam phối hợp với Storage có hỗ trợ tính năng Object Lock:
+## Managing Multiple Backup Repositories
 
-* Storage cần tạo Bucket/Container có hỗ trợ Object Lock;
-* Khi tạo Repository, chọn tùy chọn "Make recent backups immutable for (30) days" để kích hoạt Immutable để chống Ransomware;
-* Tính năng Immutable bảo vệ các bạn sao lưu khỏi bị xóa hoặc thay đổi trong khoảng thời gian nhất định.
+Suppose ABC Corporation has been using Veeam for data backup, but now the company has multiple backup repositories spread across various storage locations and is facing difficulties in managing and optimizing storage space.&#x20;
 
-## Quản lý nhiều Repository sao lưu &#x20;
+Using Veeam with the Scale-out Backup Repository (SOBR) feature:
 
-Giả sử Doanh nghiệp ABC đã sử dụng Veeam để sao lưu dữ liệu, nhưng hiện doanh nghiệp này có nhiều repository sao lưu phân tán trên nhiều nơi lưu trữ khác nhau, và đng gặp khó khăn trong việc quản lý và tối ưu hóa không gian lưu trữ.
-
-Sử dụng Veeam với tính năng Scale-out Backup  Repository (SOBR):
-
-* Thiết lập các Repository riêng lẻ ở các nơi như bình thường;
-* Tạo một Scale-out Repositories, thêm các Repository riêng lẻ vào SOBR;
-* Doanh nghiệp tạo job với SOBR và chỉ quản lý trên 1 Repository duy nhất là SOBR;
-* Nếu một repository gặp sự cố, dữ liệu có thể được truy cập từ các repository khác trong SOBR.&#x20;
+* Set up individual Repositories in places as usual;
+* Create a Scale-out Repositories, adding individual Repositories to SOBR;
+* The company creates jobs with SOBR and only manages a single Repository, which is SOBR;
+* If one repository encounters a problem, data can be accessed from other repositories within the SOBR.
