@@ -430,6 +430,7 @@
     * [Server Disaster Recovery (SDR)](backup-center/disaster-recovery-center-drc/server-disaster-recovery-sdr/README.md)
       * [Bắt đầu với SDR](backup-center/disaster-recovery-center-drc/server-disaster-recovery-sdr/bat-dau-voi-sdr.md)
       * [Quản lý SDR](backup-center/disaster-recovery-center-drc/server-disaster-recovery-sdr/quan-ly-sdr/README.md)
+        * [Tự động kích hoạt Snapshot](backup-center/disaster-recovery-center-drc/server-disaster-recovery-sdr/quan-ly-sdr/tu-dong-kich-hoat-snapshot.md)
         * [Thêm máy chủ (Attach a Server)](backup-center/disaster-recovery-center-drc/server-disaster-recovery-sdr/quan-ly-sdr/them-may-chu-attach-a-server.md)
         * [Start Replication](backup-center/disaster-recovery-center-drc/server-disaster-recovery-sdr/quan-ly-sdr/start-replication.md)
         * [Sao chép định kỳ và Recovery Point](backup-center/disaster-recovery-center-drc/server-disaster-recovery-sdr/quan-ly-sdr/sao-chep-dinh-ky-va-recovery-point.md)
