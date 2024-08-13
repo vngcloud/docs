@@ -1,4 +1,4 @@
-# Cách quản lý Load Balancer (NLB)
+# Quản lý Load Balancer (NLB)
 
 VNG cloud cung cấp giao diện trực quan trong việc quản lý Load Balancer, bao gồm các tính năng quan trọng như:
 
@@ -24,6 +24,7 @@ VNG cloud cung cấp giao diện trực quan trong việc quản lý Load Balanc
      * Chọn **Internet facing** nếu: Cho phép truy cập từ Internet
      * Chọn **Internal** nếu: Chỉ cho phép truy cập với mạng nội bộ
    * _**Load Balancer Package**_: Chọn gói khởi tạo phù hợp với nhu cầu và mục đích sử dụng, lưu ý rằng gói này là yếu tố chính dùng để tính chi phí khởi tạo và vận hành Load Balancer của bạn. Gói này có thể thay đổi trong quá trình sử dụng.
+   * **Auto-scale:** Chọn bật/tắt tính năng auto-scale số lượng LB. Xem chi tiết tính năng auto-scale [tại đây.](../auto-scaling.md)
    * _**Cài đặt Network**_**: Chọn Virtual Private Cloud (VPC) và Subnet** có sẵn từ danh sách VPC của bạn, trường hợp khởi tạo VPC, tham khảo hướng dẫn [Virtual Private Cloud (VPC)](../../network/virtual-private-cloud-vpc.md).
 4. **Chọn cấu hình Listener**
    * **Tên Listener:** Trường hợp người dùng không chủ động điền tên Listener, hệ thống sẽ tự động sinh ra tên Listener.
