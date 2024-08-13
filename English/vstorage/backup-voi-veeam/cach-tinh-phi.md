@@ -1,16 +1,17 @@
-# Cách tính phí
+# Charging Fee
 
-## Tổng quan
+## Overview
 
-Với nhu cầu khách hàng muốn backup lưu trữ dữ liệu lên VNG Cloud, thì khách hàng sẽ phải trả phí dựa trên 2 yếu tố là:
+For customers who want to backup and store data on VNG Cloud, they will have to pay based on two factors:
 
-* Khách hàng phải có bản quyền **License Veeam Backup & Replication**;
-* Trả chi phí do **dung lượng lưu trữ** trên Storage. Việc tính phí dung lượng lưu trữ.
+Customers must have a **Veeam Backup & Replication license**.
+
+Pay costs based on the **Storage Capacity** on the Storage. The storage capacity fee calculation.
 
 {% hint style="info" %}
-**Cách tính phí**
+**Fee Calculation**
 
-Chi phí sử dụng = Giá License của Veeam  + Giá lưu trữ trên Storage&#x20;
+Usage cost = Veeam License price + Storage cost
 {% endhint %}
 
-VNG Cung cấp toàn bộ license của veeam, chi phí tính theo từng workload (vm , saas, database v.v..) mà Khách hàng cần bảo vệ. Thông tin chi tiết vui lòng liên hệ VNG để được hướng dẫn thêm về license.
+VNG provides the complete Veeam license, with costs calculated per workload (VM, SaaS, database, etc.) that the customer needs to protect. For detailed information, please contact VNG for further guidance on licensing.
