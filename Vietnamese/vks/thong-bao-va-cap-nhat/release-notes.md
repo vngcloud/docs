@@ -1,5 +1,15 @@
 # Release notes
 
+## Aug 13, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
+
+VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
+
+**Cải tiến:**
+
+* **Event History**: VKS đã bổ sung thêm các sự kiện của **Auto Scaling** và **Auto Healing.** Giờ đây, với Event History, bạn có thể theo dõi từng thay đổi xảy ra trong Cluster, từ việc tự động điều chỉnh quy mô (Auto Scaling) cho đến việc tự động phục hồi (Auto Healing). Các event này giúp tăng cường khả năng giám sát và quản lý cụm Kubernetes của bạn.&#x20;
+
+***
+
 ## Aug 01, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
 VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều tính năng và cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
