@@ -1,6 +1,6 @@
 # Release notes
 
-## Aug 13, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
+### Aug 13, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
 VKS (VNGCloud Kubernetes Service) introduces the latest update to the existing VKS, bringing many new improvements to users. Here are the details about the update:
 
