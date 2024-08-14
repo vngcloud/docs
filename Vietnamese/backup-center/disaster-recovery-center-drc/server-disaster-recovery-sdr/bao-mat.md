@@ -10,9 +10,7 @@ Bảo mật là một yếu tố quan trọng trong việc triển khai và sử
 
 **2. Mã hóa Dữ liệu (Data Encryption)**
 
-* **Mã hóa trong quá trình truyền:** DRC sử dụng các giao thức mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền giữa máy chủ chính và máy chủ dự phòng.
 * **Mã hóa khi lưu trữ:** Dữ liệu được lưu trữ trên các hệ thống lưu trữ đám mây an toàn của VNG Cloud, sử dụng các công nghệ mã hóa tiên tiến để bảo vệ dữ liệu khi nghỉ.
-* **Quản lý khóa mã hóa:** Nếu bạn sử dụng khóa mã hóa của riêng mình (customer-managed keys), hãy đảm bảo quản lý và bảo vệ các khóa này một cách an toàn.
 
 **3. Phân vùng Mạng và Bảo mật Mạng (Network Segmentation & Security)**
 
