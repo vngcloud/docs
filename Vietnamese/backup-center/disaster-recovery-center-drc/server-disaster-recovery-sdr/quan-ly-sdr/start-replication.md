@@ -27,6 +27,12 @@ Sau khi thêm máy chủ thành công, làm theo hướng dẫn dưới đây đ
       * **Lưu ý:** Nhóm này phải thuộc cùng vùng (region) với vùng đặt máy chủ dự phòng. Điều này đảm bảo rằng các máy chủ trong placement group được đặt gần nhau về mặt vật lý, giúp tối ưu hóa hiệu suất truyền dữ liệu.
 3. Nhấn nút **"Start Replication"** để bắt đầu quá trình sao chép dữ liệu.
 
+**Lưu ý khi tạo máy chủ dự phòng**
+
+* **Trạng thái mặc định:** Máy chủ dự phòng được tạo ra mặc định ở trạng thái **tắt (shutdown)**. Điều này nhằm mục đích phục vụ cho quá trình sao chép dữ liệu và giúp bạn tiết kiệm chi phí. Trong trạng thái tắt, bạn sẽ **không bị tính phí** sử dụng máy chủ dự phòng.
+* **Tính phí khi khởi động:** Tuy nhiên, nếu bạn **khởi động (start)** máy chủ dự phòng, bạn sẽ bắt đầu bị tính phí sử dụng máy chủ theo cấu hình đã chọn.
+* **Ảnh hưởng đến sao chép:** Lưu ý rằng khi bạn khởi động máy chủ dự phòng, quá trình sao chép dữ liệu trên máy chủ đó sẽ bị **lỗi**. Điều này là do máy chủ dự phòng cần ở trạng thái tắt để hệ thống có thể thực hiện sao chép một cách an toàn và hiệu quả.
+
 ## Full Replication
 
 Sau khi nhấn "**Start Replication**" hệ thống sẽ tiến hành các quy trình như sau:
