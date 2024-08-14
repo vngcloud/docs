@@ -1,6 +1,10 @@
 # Auto Scaling
 
-Tính năng Auto Scaling cho phép vLB tự động điều chỉnh số lượng Slave dựa trên lưu lượng truy cập, giúp tối ưu hóa hiệu suất và chi phí.
+Tính năng Auto Scaling cho phép vLB tự động điều chỉnh số lượng Slave dựa trên lưu lượng truy cập, giúp tối ưu hóa hiệu suất và chi phí. Auto Scaling giúp bạn:
+
+* **Tối ưu hóa hiệu suất:** Đảm bảo vLB luôn có đủ tài nguyên để xử lý lưu lượng truy cập, tránh tình trạng quá tải.
+* **Tiết kiệm chi phí:** Tự động giảm số lượng Slave khi lưu lượng thấp, giúp bạn tiết kiệm chi phí.
+* **Đơn giản hóa quản lý:** Không cần phải theo dõi và điều chỉnh quy mô vLB thủ công.
 
 **Bật Auto Scaling**
 
@@ -19,21 +23,17 @@ Tính năng Auto Scaling cho phép vLB tự động điều chỉnh số lượn
 
 * **Tính năng Resize bị vô hiệu hóa:** Đối với các vLB đã bật Auto Scaling, bạn không thể thay đổi gói dịch vụ (resize) thủ công.
 * **Trạng thái Scaling:** Trong quá trình mở rộng hoặc thu hẹp quy mô LB, trạng thái của LB sẽ chuyển từ "Active" sang "Scaling in/Scaling out". Sau khi hoàn tất, trạng thái sẽ trở lại "Active".
-* **Thời gian Scaling:** Thời gian để scale lên hoặc xuống 1 LB role Slave là khoảng 2-8 phút, tùy thuộc vào số lượng listener của LB đó.
+* **Thời gian Scaling:** Thời gian để scale lên hoặc xuống 1 LB role Slave là khoảng 5-10 phút, kể từ thời điểm connection vượt ngưỡng cho phép, tùy thuộc vào số lượng listener của LB đó.
+* **Phân giải CNAME**: Đối với các LB bật tính năng auto scale, hệ thống sẽ tự động tạo tên miền cho cụm LB theo template `lb_name-{userid}.region.vlb.vngcloud.vn`. Sau đó, người dùng cần chủ động cập nhật bản ghi CNAME để trỏ tên miền riêng đến tên miền của LB. Khi có sự thay đổi về số lượng LB slave (scale up/down), hệ thống sẽ tự động cập nhật bản ghi DNS tương ứng với tên miền LB.
 
 **Xem lịch sử Scaling**
 
 * Truy cập trang chi tiết của LB .
 * Chọn tab "Scale History" để xem lịch sử các lần mở rộng/thu hẹp quy mô và số lượng LB Slave hiện tại. Giải thích ý nghĩa các trường thông tin như sau
-  * Event type: Hành động Scale in hoặc Scale out
-  * Adjustment number: Số lượng LB trước khi scale
-  * Total number: Số lượng LB sau khi scale
-  * Scale at: Thời gian hoàn tất quá trình scale.
+  * **Event type:** Hành động Scale in hoặc Scale out
+  * **Adjustment number:** Số lượng LB sẽ thay đổi. Ví dụ Adjustment number là 1, Event type  là Scale out, thì hành động Scale out này sẽ scale thêm 1 LB role Slave
+  * **Total number:** Số lượng LB sau khi scale
+  * **Scale at:** Thời gian hoàn tất quá trình scale.
 
-**Tóm tắt**
 
-Auto Scaling giúp bạn:
 
-* **Tối ưu hóa hiệu suất:** Đảm bảo vLB luôn có đủ tài nguyên để xử lý lưu lượng truy cập, tránh tình trạng quá tải.
-* **Tiết kiệm chi phí:** Tự động giảm số lượng Slave khi lưu lượng thấp, giúp bạn tiết kiệm chi phí.
-* **Đơn giản hóa quản lý:** Không cần phải theo dõi và điều chỉnh quy mô vLB thủ công.
