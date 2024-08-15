@@ -16,12 +16,6 @@ sudo apt-get -y update && sudo apt-get install nfs-common
 sudo yum update && sudo yum install nfs-utils
 ```
 
-* **Đối với SUSE:**
-
-```
-sudo zypper update && sudo zypper -n install nfs-client
-```
-
 **Bước 2:** Tạo thư mục mount:
 
 * Ví dụ lệnh bên dưới tôi đã tạo thư mục /mnt/nfs
@@ -30,7 +24,9 @@ sudo zypper update && sudo zypper -n install nfs-client
 sudo mkdir -p /mnt/nfs
 ```
 
-**Bước 3:** Mount FileStore volume:&#x20;
+**Bước 3:** Mount FileStorage volume:&#x20;
+
+* Ví dụ lệnh bên dưới tôi mount FileStorage có name = demo\_test với thư mục mount = /mnt/nfs
 
 <pre><code><strong>sudo mount -t nfs -o vers=4,hard,timeo=600,retrans=3,rsize=1048576,wsize=1048576,resvport,async hcm04.efs.vngcloud.vn:/demo_test /mnt/nfs/
 </strong></code></pre>
