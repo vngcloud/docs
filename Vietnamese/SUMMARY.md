@@ -596,6 +596,7 @@
     * [Expose một service thông qua vLB Layer7](vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer7.md)
     * [Preserve Source IP khi sử dụng vLB Layer4 và Nginx Ingress Controller](vks/bat-dau-voi-vks/preserve-source-ip-khi-su-dung-vlb-layer4-va-nginx-ingress-controller.md)
     * [Integrate with Container Storage Interface (CSI)](vks/bat-dau-voi-vks/integrate-with-container-storage-interface-csi.md)
+    * [Khởi tạo một Private Cluster](vks/bat-dau-voi-vks/khoi-tao-mot-private-cluster.md)
     * [Khởi tạo một Public Cluster với Private Node Group](vks/bat-dau-voi-vks/khoi-tao-mot-public-cluster-voi-private-node-group/README.md)
       * [Palo Alto as a NAT Gateway](vks/bat-dau-voi-vks/khoi-tao-mot-public-cluster-voi-private-node-group/palo-alto-as-a-nat-gateway.md)
       * [Pfsense as a NAT Gateway](vks/bat-dau-voi-vks/khoi-tao-mot-public-cluster-voi-private-node-group/pfsense-as-a-nat-gateway.md)
