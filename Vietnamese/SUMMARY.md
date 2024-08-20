@@ -451,7 +451,7 @@
 * [vMonitor Platform](vmonitor/README.md)
   * [vMonitor Platform là gì](vmonitor-platform/vmonitor-platform-la-gi/README.md)
     * [vMonitor Platform Metric là gì?](vmonitor-platform/vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/README.md)
-      * [Metric Quota Class](vmonitor-platform/vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/metric-quota-class.md)
+      * [Metric Class](vmonitor-platform/vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/metric-quota-class.md)
     * [vMonitor Platform Log là gì?](vmonitor-platform/vmonitor-platform-la-gi/vmonitor-platform-log-la-gi/README.md)
       * [Log Project Class](vmonitor-platform/vmonitor-platform-la-gi/vmonitor-platform-log-la-gi/log-project-class.md)
     * [vMonitor Platform Synthetic là gì?](vmonitor-platform/vmonitor-platform-la-gi/vmonitor-platform-synthetic-la-gi/README.md)

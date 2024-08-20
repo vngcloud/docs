@@ -1,6 +1,6 @@
 # Khởi tạo một Private Cluster
 
-Các private cluster không sử dụng địa chỉ External IP cho các node. Điều này có nghĩa là người dùng từ internet không thể trực tiếp kết nối với các node trong cluster. Private Cluster là lựa chọn lý tưởng cho các dịch vụ yêu cầu kiểm soát truy cập chặt chẽ, đảm bảo tuân thủ các quy định về bảo mật và quyền riêng tư dữ liệu.
+Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Public IP để giao tiếp giữa nodes và control plane. Để nâng cao bảo mật cho cluster của bạn, chúng tôi đã cho ra mất mô hình private cluster. Các private cluster không sử dụng địa chỉ External IP cho các node. Điều này có nghĩa là người dùng từ internet không thể trực tiếp kết nối với các node trong cluster. Private Cluster là lựa chọn lý tưởng cho các dịch vụ yêu cầu kiểm soát truy cập chặt chẽ, đảm bảo tuân thủ các quy định về bảo mật và quyền riêng tư dữ liệu.
 
 ### Model <a href="#khoitaomotpublicclustervoiprivatenodegroup-dieukiencan" id="khoitaomotpublicclustervoiprivatenodegroup-dieukiencan"></a>
 
@@ -20,9 +20,9 @@ Các private cluster không sử dụng địa chỉ External IP cho các node. 
 {% hint style="info" %}
 **Warning:**
 
-* <mark style="color:red;background-color:red;">**Không xóa Service Endpoint**</mark>: Để đảm bảo hoạt động ổn định của cluster, bạn không nên xóa 4 service endpoint đã được tạo sẵn. Nếu vô tình xóa hoặc chỉnh sửa 4 endpoint này, trong vòng tối đa 5 phút, hệ thống sẽ tự động tạo lại nhưng có thể gây gián đoạn đến các dịch vụ đang chạy. Lúc này, do service endpoint tạo lại có thể đã thay đổi Endpoint IP so với ban đầu nên để cluster hoạt động được, bạn cần thực hiện thêm Endpoint IP một cách thủ công cho những server đang chạy trước đó.
-* <mark style="color:red;background-color:red;">**Tái sử dụng Service Endpoint:**</mark> Các service endpoint có thể được nhiều private cluster cùng sử dụng. Khi các private cluster chung VPC thì chúng tôi sẽ tái sử dụng chúng cho các cluster này.&#x20;
-* <mark style="color:red;background-color:red;">**Xóa Service Endpoint tự động:**</mark> Khi bạn xóa cluster, nếu không còn cluster nào tái sử dụng các service endpoint này, hệ thống sẽ tự động xóa chúng.
+* <mark style="color:red;background-color:red;">**Không xóa Private Service Endpoint**</mark>: Để đảm bảo hoạt động ổn định của cluster, bạn không nên xóa 4 service endpoint đã được tạo sẵn. Nếu vô tình xóa hoặc chỉnh sửa 4 endpoint này, trong vòng tối đa 5 phút, hệ thống sẽ tự động tạo lại nhưng có thể gây gián đoạn đến các dịch vụ đang chạy. Lúc này, do service endpoint tạo lại có thể đã thay đổi Endpoint IP so với ban đầu nên để cluster hoạt động được, bạn cần thực hiện thêm Endpoint IP một cách thủ công cho những server đang chạy trước đó.
+* <mark style="color:red;background-color:red;">**Tái sử dụng Private Service Endpoint:**</mark> Các service endpoint có thể được nhiều private cluster cùng sử dụng. Khi các private cluster chung VPC thì chúng tôi sẽ tái sử dụng chúng cho các cluster này.&#x20;
+* <mark style="color:red;background-color:red;">**Xóa Private Service Endpoint tự động:**</mark> Khi bạn xóa cluster, nếu không còn cluster nào tái sử dụng các service endpoint này, hệ thống sẽ tự động xóa chúng.
 {% endhint %}
 
 ***
@@ -55,6 +55,12 @@ Các private cluster không sử dụng địa chỉ External IP cho các node. 
 
 **Bước 6:** Khi trạng thái **Cluster** là **Active**, bạn có thể xem thông tin Cluster, thông tin Node Group bằng cách chọn vào Cluster Name tại cột **Name**.
 
+{% hint style="info" %}
+**Một số chú ý:**
+
+* Một Cluster có thể có nhiều Node Group, mỗi Node Group có thể hoạt động ở mode Public/ Private tùy theo nhu cầu của bạn.&#x20;
+{% endhint %}
+
 ***
 
 ### Kết nối và kiểm tra thông tin Cluster vừa tạo <a href="#khoitaomotpublicclustervoiprivatenodegroup-ketnoivakiemtrathongtinclustervuatao" id="khoitaomotpublicclustervoiprivatenodegroup-ketnoivakiemtrathongtinclustervuatao"></a>
@@ -67,7 +73,7 @@ Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiệ
 
 **Bước 3**: Đổi tên file này thành config và lưu nó vào thư mục **\~/.kube/config**
 
-**Bước 4:** Thực hiện kiểm tra Cluster thông qua lệnh:&#x20;
+**Bước 4:** Tại địa chỉ IP trong VPC đã tạo, bạn có thể thực hiện kiểm tra Cluster thông qua lệnh:&#x20;
 
 * Chạy câu lệnh sau đây để kiểm tra **node**
 
@@ -90,7 +96,21 @@ ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.
 
 Sau đây là hướng dẫn để bạn deploy service nginx trên Kubernetes.
 
-**Bước 1**: **Tạo Deployment cho Nginx app.**
+#### **Bước 1: Sử dụng Docker để Pull Image nginx**&#x20;
+
+```
+docker pull nginx:latest
+```
+
+* Sau đó push image nginx lên vCR:
+
+```
+docker tag nginx:latest <your-vcontainer-registry>/<path>/nginx:<tag>
+```
+
+Chi tiết tham khảo thêm hướng dẫn tại [đây](../../vcontainer-registry/truong-hop-su-dung/pull-va-push-image-voi-docker.md).
+
+#### **Bước 2**: **Tạo Deployment cho Nginx app.**
 
 *   Tạo file **nginx-service-lb4.yaml** với nội dung sau:
 
