@@ -13,7 +13,7 @@ Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Pub
 * **Private Load Balancer**: Được quản lý bởi VNG Cloud, chịu trách nhiệm giúp các Private Node giao tiếp với Control Plane.
 * **Private Service Endpoint**: Khi bạn tạo một private cluster, hệ thống tự động tạo 4 endpoints giúp kết nối với các dịch vụ khác trên VNG Cloud bao gồm:
   * **Endpoint** để kết nối tới dịch vụ **IAM** (Endpoint Name: vks-iam-endpoint-...)
-  * **Endpoint** để kết nối tới dịch vụ **vMonitor Platform** (Endpoint Name: vks-vmonitor-endpoint-...)
+  * **Endpoint** để kết nối tới dịch vụ **vCR** (Endpoint Name: vks-vcr-endpoint-...)
   * **Endpoint** để kết nối tới dịch vụ **vServer** (Endpoint Name: vks-vserver-endpoint-...)
   * **Endpoint** để kết nối tới dịch vụ **vStorage** (Endpoint Name: vks-vstorage-endpoint-...)
 
