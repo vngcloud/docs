@@ -7,7 +7,6 @@
   * Tên NAT
   * Gói dịch vụ
   * VPC, Subnet
-  * External Interface
 * Kiểm tra thông tin giá dịch vụ tại phần “**Summary**”
 * &#x20;Nhấn “**TẠO PUBLIC NAT**”
 
@@ -19,6 +18,7 @@ _ip route add 0.0.0.0/0 via 10.0.0.100 dev eth0_
 
 _ip route add \<internet\_ip> via \<nat\_gateway\_ip> dev \<interface>_
 
+_<mark style="color:blue;">Lưu ý:</mark>_
 
+_<mark style="color:blue;">Public interface của NAT được tạo tự động khi NAT được tạo thành công, người dùng có thể cấu hình public IP vào các gói bandwidth đã mua (nếu có) để tăng băng thông cho NAT.</mark>_
 
-*
