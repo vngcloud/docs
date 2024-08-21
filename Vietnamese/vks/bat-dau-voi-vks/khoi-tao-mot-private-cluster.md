@@ -17,6 +17,10 @@ Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Pub
   * **Endpoint** để kết nối tới dịch vụ **vServer** (Endpoint Name: vks-vserver-endpoint-...)
   * **Endpoint** để kết nối tới dịch vụ **vStorage** (Endpoint Name: vks-vstorage-endpoint-...)
 
+Bạn có thể xem thông tin 4 private service endpoint thông qua portal vServer theo đường dẫn tại [đây](https://hcm-3.console.vngcloud.vn/vserver/vnetwork/endpoint/list).&#x20;
+
+<figure><img src="../../.gitbook/assets/image (701).png" alt=""><figcaption></figcaption></figure>
+
 {% hint style="info" %}
 **Warning:**
 
