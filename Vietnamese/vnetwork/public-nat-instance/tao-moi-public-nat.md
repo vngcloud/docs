@@ -5,8 +5,7 @@
 * Chọn chức năng “**Create a Public NAT**”
 * Nhập thông tin NAT theo yêu cầu gồm:
   * Tên NAT
-  * Instance (Flavor)
-  * Volume attach nếu có
+  * Gói dịch vụ
   * VPC, Subnet
   * External Interface
 * Kiểm tra thông tin giá dịch vụ tại phần “**Summary**”
@@ -14,11 +13,12 @@
 
 Khi NAT được tạo thành công, người dùng sẽ thấy NAT xuất hiện trên màn hình danh sách NAT.
 
-Người dùng cần thực hiện bước cấu hình các VM nào sẽ đi qua NAT ra internet theo hướng dẫn trên màn hình chi tiết NAT.
+Người dùng cần thực hiện bước cấu hình các VM nào sẽ đi qua NAT bằng cách sử dụng NAT IP gateway. Dưới đây là ví dụ add route trên VM với OS Linux:
 
-_<mark style="color:blue;">Lưu ý:</mark>_ &#x20;
+_ip route add 0.0.0.0/0 via 10.0.0.100 dev eth0_
 
-* _<mark style="color:blue;">Người dùng có thể vào danh sách Server tại trang “Server” để thực hiện các chức năng hỗ trợ cho server trên NAT.</mark>_ &#x20;
-* _<mark style="color:blue;">Khi detach External Interface của NAT, các kết nối ra internet sẽ không hoạt động.</mark>_
-* _<mark style="color:blue;">Khi detach External Interface hiện hành của NAT và Attach một</mark>_ _<mark style="color:blue;">External Interface mới vào NAT, Bạn phải re-config lại VPC/ VM theo IP của external interface mới vừa được attach vào.</mark>_
-* _<mark style="color:blue;">Khi người dùng thay đổi vNetwork Image một cách có chủ đích, NAT sẽ không còn hoạt động.</mark>_
+_ip route add \<internet\_ip> via \<nat\_gateway\_ip> dev \<interface>_
+
+
+
+*
