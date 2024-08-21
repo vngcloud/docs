@@ -306,3 +306,9 @@ Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với đ
 
 <figure><img src="../../.gitbook/assets/image (700).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+**Một vài chú ý khác:**
+
+* Bên trên là ví dụ hướng dẫn bạn thực hiện expose một service thông qua vLB Layer 4, bạn có thể thực hiện expose service thông qua vLB Layer 7 theo hướng dẫn tại [đây](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer7).
+* Bạn có thể sử dụng tính năng WhiteList để giới hạn Subnet trong VPC có thể truy cập vào kube-api. Chi tiết cách sử dụng tính năng Whitelist vui lòng tham khảo tại [đây](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vks/clusters/whitelist).
+{% endhint %}
