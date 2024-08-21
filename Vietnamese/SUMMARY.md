@@ -606,6 +606,7 @@
   * [Thông báo và cập nhật](vks/thong-bao-va-cap-nhat/README.md)
     * [Release notes](vks/thong-bao-va-cap-nhat/release-notes.md)
   * [Bắt đầu với VKS](vks/bat-dau-voi-vks/README.md)
+    * [Hướng dẫn cài đặt và cấu hình công cụ kubectl trong Kubernetes](vks/bat-dau-voi-vks/huong-dan-cai-dat-va-cau-hinh-cong-cu-kubectl-trong-kubernetes.md)
     * [Khởi tạo một Public Cluster với Public Node Group](vks/bat-dau-voi-vks/khoi-tao-mot-public-cluster-voi-public-node-group.md)
     * [Expose một service thông qua vLB Layer4](vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4.md)
     * [Expose một service thông qua vLB Layer7](vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer7.md)

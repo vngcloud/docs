@@ -49,16 +49,19 @@ Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Pub
 
 **Bước 3:** Chờ đợi tới khi chúng tôi khởi tạo thành công tài khoản VKS của bạn. Sau khi Activate thành công, bạn hãy chọn **Create a Cluster**
 
-**Bước 4:** Tại màn hình khởi tạo Cluster, chúng tôi đã thiết lập thông tin cho Cluster và một **Default Node Group** cho bạn, bạn có thể giữ các giá trị mặc định này hoặc điều chỉnh các thông số mong muốn cho Cluster và Node Group của bạn tại Cluster Configuration, Default Node Group Configuration, Plugin. <mark style="color:red;">**Mặc định chúng tôi sẽ khởi tạo cho bạn một Public Cluster. Bạn cần thay đổi lựa chọn của bạn thành Private Cluster.**</mark>
+**Bước 4:** Tại màn hình khởi tạo Cluster, chúng tôi đã thiết lập thông tin cho Cluster và một **Default Node Group** cho bạn, bạn có thể giữ các giá trị mặc định này hoặc điều chỉnh các thông số mong muốn cho Cluster và Node Group của bạn tại Cluster Configuration, Default Node Group Configuration, Plugin.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (693).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Chọn **Create Kubernetes cluster.** Hãy chờ vài phút để chúng tôi khởi tạo Cluster của bạn, trạng thái của Cluster lúc này là **Creating**.
 
 **Bước 6:** Khi trạng thái **Cluster** là **Active**, bạn có thể xem thông tin Cluster, thông tin Node Group bằng cách chọn vào Cluster Name tại cột **Name**.
 
 {% hint style="info" %}
-**Một số chú ý:**
+**Warning:**
 
-* Một Cluster có thể có nhiều Node Group, mỗi Node Group có thể hoạt động ở mode Public/ Private tùy theo nhu cầu của bạn.&#x20;
+* **Một Cluster** có thể có **nhiều Node Group**, mỗi Node Group có thể hoạt động ở mode Public/ Private tùy theo nhu cầu của bạn.&#x20;
+* Do **Cluster** của bạn được khởi tạo ở chế độ **Private**, để có thể truy cập vào **kube-api** của Control Plane thì bạn cần **đứng trong VPC** mà bạn chọn sử dụng cho Cluster của bạn.&#x20;
 {% endhint %}
 
 ***
@@ -73,7 +76,57 @@ Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiệ
 
 **Bước 3**: Đổi tên file này thành config và lưu nó vào thư mục **\~/.kube/config**
 
-**Bước 4:** Tại địa chỉ IP trong VPC đã tạo, bạn có thể thực hiện kiểm tra Cluster thông qua lệnh:&#x20;
+**Bước 4:** Do Cluster của bạn được khởi tạo ở chế độ Private, để có thể truy cập vào kube-api, bạn cần đứng trong VPC mà bạn đã chọn sử dụng cho Cluster của bạn. Ví dụ, khi bạn không đứng ở VPC và thực hiện get nodes, kết quả sẽ hiển thị như sau:&#x20;
+
+```
+kubectl get nodes
+E0821 14:27:03.793829   23348 memcache.go:265] couldn't get current server API group list: Get "https://10.7.8.9:6443/api?timeout=32s": dial tcp 10.7.8.9:6443: connectex: No connection could be made because the target machine actively refused it.
+E0821 14:27:05.866230   23348 memcache.go:265] couldn't get current server API group list: Get "https://10.7.8.9:6443/api?timeout=32s": dial tcp 10.7.8.9:6443: connectex: No connection could be made because the target machine actively refused it.
+E0821 14:27:07.922272   23348 memcache.go:265] couldn't get current server API group list: Get "https://10.7.8.9:6443/api?timeout=32s": dial tcp 10.7.8.9:6443: connectex: No connection could be made because the target machine actively refused it.
+E0821 14:27:09.989832   23348 memcache.go:265] couldn't get current server API group list: Get "https://10.7.8.9:6443/api?timeout=32s": dial tcp 10.7.8.9:6443: connectex: No connection could be made because the target machine actively refused it.
+E0821 14:27:12.055864   23348 memcache.go:265] couldn't get current server API group list: Get "https://10.7.8.9:6443/api?timeout=32s": dial tcp 10.7.8.9:6443: connectex: No connection could be made because the target machine actively refused it.
+Unable to connect to the server: dial tcp 10.7.8.9:6443: connectex: No connection could be made because the target machine actively refused it.
+```
+
+Trong ví dụ bên dưới tôi sẽ đứng tại một server có VPC cùng với VPC được sử dụng cho Cluster. Bạn có thể thực hiện SSH vào server theo hướng dẫn tại [đây](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/server/ket-noi-vao-may-chu-ao/ket-noi-vao-may-chu-linux-bang-cong-cu-ssh-client). Sau khi SSH vào server, hãy cài đặt kubectl theo hướng dẫn tại [đây](huong-dan-cai-dat-va-cau-hinh-cong-cu-kubectl-trong-kubernetes.md).&#x20;
+
+* Ví dụ, tôi đang sử dụng một server linux để thực hiện get nodes, tôi có thể cài đặt kubectl qua lệnh:&#x20;
+
+```
+sudo snap install kubectl --classic
+```
+
+* Sau đó, tôi kiểm tra kubectl qua lệnh:&#x20;
+
+```
+kubectl version
+```
+
+* Tạo thư mục .`kube` qua lệnh:&#x20;
+
+```
+mkdir -p .kube
+```
+
+* Sau đó, bạn hãy nhập file kubeconfig qua lệnh:&#x20;
+
+```
+vim .kube/config
+```
+
+* Sau đó, bạn nhập **:wq** để lưu file kubeconfig và thoát vim.
+* Chạy câu lệnh sau đây để kiểm tra **cluster**
+
+```
+kubectl get svc
+```
+
+* Bạn sẽ thấy kết quả trả về tương tự sau:&#x20;
+
+```
+NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   10m
+```
 
 * Chạy câu lệnh sau đây để kiểm tra **node**
 
@@ -81,108 +134,167 @@ Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiệ
 kubectl get nodes
 ```
 
-* Nếu kết quả trả về như bên dưới tức là bạn Cluster của bạn được khởi tạo thành công với 3 node như bên dưới.
+* Nếu kết quả trả về như bên dưới tức là bạn Cluster của bạn được khởi tạo thành công với 1 node như bên dưới.
 
 ```
-NAME                                            STATUS     ROLES    AGE   VERSION
-ng-0e10592c-e70e-404d-a4e8-5e3b80f805e4-834b7   Ready      <none>   50m   v1.28.8
-ng-0e10592c-e70e-404d-a4e8-5e3b80f805e4-cf652   Ready      <none>   23m   v1.28.8
-ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.8
+NAME                                    STATUS   ROLES    AGE     VERSION
+vks-demo-cluster-nodegroup-demo-7c9aa   Ready    <none>   8m11s   v1.28.8
+```
+
+***
+
+### Sử dụng Docker để Pull/Push image <a href="#khoitaomotpublicclustervoiprivatenodegroup-deploymotworkload" id="khoitaomotpublicclustervoiprivatenodegroup-deploymotworkload"></a>
+
+Do Private Cluster chỉ có thể kết nối private tới hệ thống vContainer Registry (vCR) và không thể kết nối ra các Container Registry khác ngoài internet, nên bạn cần pull/ push image về vCR để sử dụng theo hướng dẫn sau đây:&#x20;
+
+#### **Bước 1: Cài đặt Docker**
+
+* Thực hiện cài đặt docker theo hướng dẫn tại [đây](https://docs.docker.com/engine/install/).
+
+#### **Bước 2: Khởi tạo Public Repository và Repository User trên vContainer Registry Portal:**&#x20;
+
+* Đăng nhập portal vCR tại đường dẫn: [https://vcr.console.vngcloud.vn/list](https://vcr.console.vngcloud.vn/list)
+* Thực hiện khởi tạo Repositoryvà Repository theo hướng dẫn tại [đây](../../vcontainer-registry/repository/). Ví dụ trong hình dưới, tôi đã khởi tạo demo\_repo với demo\_user có thể pull/ push image:&#x20;
+
+<figure><img src="../../.gitbook/assets/image (697).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (698).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Warning:**
+
+* Nếu bạn mong muốn khởi tạo Private Reposity, để pull image từ Private Reposity, bạn cần tạo secret key theo hướng dẫn tại [đây](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/).
+{% endhint %}
+
+**Bước 3:** Thực hiện pull image nginx về theo lệnh:&#x20;
+
+```
+docker pull nginx:latest
+```
+
+**Bươc 4:** Thực hiện login vào vCR qua lệnh:
+
+```
+docker login vcr.vngcloud.vn -u <repository_user>
+```
+
+* Ví dụ, câu lệnh dưới tôi sử dụng để login vào repo demo:
+
+```
+docker login vcr.vngcloud.vn -u 53461-user_demo
+```
+
+**Bước 5:** Gán tag cho image nginx
+
+```
+docker tag SOURCE_IMAGE[:TAG] vcr.vngcloud.vn/REPO_NAME/IMAGE[:TAG]
+```
+
+* Ví dụ, câu lệnh dưới tôi sử dụng để gán tag cho image nginx:&#x20;
+
+```
+docker tag nginx:latest vcr.vngcloud.vn/53461-repo_demo/nginx-demo:latest
+```
+
+**Bước 6:** Thực hiện push image lên repo qua lệnh:&#x20;
+
+```
+docker push vcr.vngcloud.vn/REPO_NAME/IMAGE[:TAG]
+```
+
+* Ví dụ, câu lệnh dưới tôi sử dụng để push image lên demo\_repo:
+
+```
+docker push vcr.vngcloud.vn/53461-repo_demo/nginx-demo:latest
 ```
 
 ***
 
 ### Deploy một Workload <a href="#khoitaomotpublicclustervoiprivatenodegroup-deploymotworkload" id="khoitaomotpublicclustervoiprivatenodegroup-deploymotworkload"></a>
 
-Sau đây là hướng dẫn để bạn deploy service nginx trên Kubernetes.
+Sau đây là hướng dẫn để bạn deploy service nginx và expose service này qua Network Load Balancer
 
-#### **Bước 1: Sử dụng Docker để Pull Image nginx**&#x20;
-
-```
-docker pull nginx:latest
-```
-
-* Sau đó push image nginx lên vCR:
+#### **Bước 1: Thực hiện tạo file nginx-service-lb4.yaml qua lệnh:**
 
 ```
-docker tag nginx:latest <your-vcontainer-registry>/<path>/nginx:<tag>
+vi nginx.yaml
 ```
 
-Chi tiết tham khảo thêm hướng dẫn tại [đây](../../vcontainer-registry/truong-hop-su-dung/pull-va-push-image-voi-docker.md).
+Sau đó, bạn hãy nhập nội dung cho file này như sau: bạn cần thay image bằng đường dẫn image lưu trên vCR mà bạn đã push ở bước bên trên:&#x20;
 
-#### **Bước 2**: **Tạo Deployment cho Nginx app.**
-
-*   Tạo file **nginx-service-lb4.yaml** với nội dung sau:
-
-    ```
-    apiVersion: apps/v1
-    kind: Deployment
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-app
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  replicas: 1
+  template:
     metadata:
-      name: nginx-app
-    spec:
-      selector:
-        matchLabels:
-          app: nginx
-      replicas: 1
-      template:
-        metadata:
-          labels:
-            app: nginx
-        spec:
-          containers:
-          - name: nginx
-            image: nginx:1.19.1
-            ports:
-            - containerPort: 80
-    ---
-    apiVersion: v1
-    kind: Service
-    metadata:
-      name: nginx-service
-    spec:
-      selector:
+      labels:
         app: nginx
-      type: LoadBalancer 
-      ports:
-        - protocol: TCP
-          port: 80
-          targetPort: 80
-    ```
+    spec:
+      containers:
+      - name: nginx
+        image: vcr.vngcloud.vn/53461-repo_demo/nginx-demo:latest
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  selector:
+    app: nginx
+  type: LoadBalancer 
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+```
 
-    * Deploy Deployment này bằng lệch:&#x20;
+* Nhập **:wq** để lưu tệp tin này.
+* Deploy Deployment này bằng lệch:&#x20;
 
-    ```
-    kubectl apply -f nginx-service-lb4.yaml
-    ```
-
-    ***
-
-    **Bước 2: Kiểm tra thông tin Deployment, Service trước khi expose ra Internet.**
-
-    * Chạy câu lệnh sau đây để kiểm tra **Deployment**
-
-    ```
-    kubectl get svc,deploy,pod -owide
-    ```
-
-    * Nếu kết quả trả về như bên dưới tức là bạn đã deploy service nginx thành công.
-
-    ```
-    NAME                    TYPE           CLUSTER-IP      EXTERNAL-IP   PORT(S)           AGE     SELECTOR
-    service/kubernetes      ClusterIP      10.96.0.1       <none>        443/TCP           2d4h    <none>
-    service/nginx-app       NodePort       10.96.215.192   <none>        30080:31289/TCP   8m12s   app=nginx
-    service/nginx-service   LoadBalancer   10.96.179.221   <pending>     80:32624/TCP      2m16s   app=nginx
-
-    NAME                        READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS   IMAGES         SELECTOR
-    deployment.apps/nginx-app   1/1     1            1           2m16s   nginx        nginx:1.19.1   app=nginx
-
-    NAME                             READY   STATUS    RESTARTS   AGE     IP              NODE                                            NOMINATED NODE   READINESS GATES
-    pod/nginx-app-7f45b65946-t7d7k   1/1     Running   0          2m16s   172.16.24.202   ng-3f06013a-f6a5-47ba-a51f-bc5e9c2b10a7-ecea1   <none>           <none
-    ```
+```
+kubectl apply -f nginx-service-lb4.yaml
+```
 
 ***
 
-**Bước 3: Để truy cập vào app nginx vừa export, bạn có thể sử dụng URL với định dạng:**
+**Bước 2: Kiểm tra thông tin Deployment, Service trước khi expose ra Internet.**
+
+* Chạy câu lệnh sau đây để kiểm tra **Deployment**
+
+```
+kubectl get svc,deploy,pod -owide
+```
+
+* Nếu kết quả trả về như bên dưới tức là bạn đã deploy service nginx thành công.
+
+```
+NAME                    TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)        AGE     SELECTOR
+service/kubernetes      ClusterIP      10.96.0.1      <none>           443/TCP        91m     <none>
+service/nginx-service   LoadBalancer   10.96.81.236   116.118.88.236   80:32333/TCP   3m32s   app=nginx
+
+NAME                        READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS   IMAGES                                              SELECTOR
+deployment.apps/nginx-app   1/1     1            1           3m32s   nginx        vcr.vngcloud.vn/53461-repo_demo/nginx-demo:latest   app=nginx
+
+NAME                             READY   STATUS    RESTARTS   AGE     IP             NODE                                    NOMINATED NODE   READINESS GATES
+pod/nginx-app-56bbc8fdd8-4pz68   1/1     Running   0          3m32s   172.16.4.207   vks-demo-cluster-nodegroup-demo-7c9aa   <none>           <none>
+```
+
+***
+
+Lúc này, hệ thống vLB sẽ khởi tạo môt Network Load Balancer, bạn có thể xem thông tin LB này thông qua portal vLB tại [đây](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb).&#x20;
+
+<figure><img src="../../.gitbook/assets/image (699).png" alt=""><figcaption></figcaption></figure>
+
+**Bước 3: Để truy cập vào app nginx vừa export, bạn có thể sử dụng Endpoint của Load Balancer URL với định dạng:**
 
 ```
 http://Endpoint/
@@ -190,4 +302,7 @@ http://Endpoint/
 
 Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao diện vLB. Cụ thể truy cập tại [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb)
 
-Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.20/](http://180.93.181.20/)
+Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://116.118.88.236/](http://116.118.88.236/)
+
+<figure><img src="../../.gitbook/assets/image (700).png" alt=""><figcaption></figcaption></figure>
+
