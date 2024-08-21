@@ -13,7 +13,7 @@ _\*Yêu cầu máy tính đã cài Docker engine (như Docker Desktop)_
 | “docker tag SOURCE\_IMAGE\[:TAG] vcr.vngcloud.vn/96000-sdkimage/IMAGE\[:TAG]” docker tag 09042024/hello-world vcr.vngcloud.vn/96000-sdkimage/hello-world:first |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Login bằng user/pass Repo
 
@@ -22,7 +22,7 @@ _\*Yêu cầu máy tính đã cài Docker engine (như Docker Desktop)_
 
 Với user là 96000-khaivt (xem trên portal) và pass là secret key khi tạo user
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Push image lên Repo:
 
