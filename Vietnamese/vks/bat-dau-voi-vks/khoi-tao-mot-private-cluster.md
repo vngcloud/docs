@@ -10,7 +10,7 @@ Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Pub
 
 * **Control plane**: Được quản lý bởi VNG Cloud, chịu trách nhiệm điều phối và quản lý toàn bộ cluster.
 * **Nodes**: Các Node trong Cluster khi được tạo ra sẽ chỉ có internal IP và không thể đi ra public internet. Nếu muốn node truy cập được internet, bạn cần sử dụng NAT Gateway. Chi tiết tham khảo thêm tại [đây](khoi-tao-mot-public-cluster-voi-private-node-group/pfsense-as-a-nat-gateway.md).
-* **Private Load Balancer**: Được quản lý bởi VNG Cloud, giúp phân phối traffic truy cập từ VKS đến các dịch vụ khác trên VNG Cloud như IAM, vMonitor Platform, vServer, vStorage.
+* **Private Load Balancer**: Được quản lý bởi VNG Cloud, chịu trách nhiệm giúp các Private Node giao tiếp với Control Plane.
 * **Private Service Endpoint**: Khi bạn tạo một private cluster, hệ thống tự động tạo 4 endpoints giúp kết nối với các dịch vụ khác trên VNG Cloud bao gồm:
   * **Endpoint** để kết nối tới dịch vụ **IAM** (Endpoint Name: vks-iam-endpoint-...)
   * **Endpoint** để kết nối tới dịch vụ **vMonitor Platform** (Endpoint Name: vks-vmonitor-endpoint-...)
