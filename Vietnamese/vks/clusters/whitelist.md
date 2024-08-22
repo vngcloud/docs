@@ -42,7 +42,9 @@ Tính năng Whitelist IP trên chế độ Private Node Group của VKS cho phé
 * **Khuyến nghị**: Có thể sử dụng tính năng whitelist.
 * Cần thực hiện Whitelist thêm IP của NAT Gateway.
 
-**3. Private Cluster Bao Gồm Public Node Group hoặc Private Node Group (Coming soon)**
+**3. Private Cluster Bao Gồm Public Node Group hoặc Private Node Group**&#x20;
+
+* **Khuyến nghị:** Có thể sử dụng tính năng whitelist.
 {% endhint %}
 
 ***
@@ -55,7 +57,7 @@ Tính năng Whitelist IP trên chế độ Private Node Group của VKS cho phé
 
 **Bước 2:** Tại màn hình **Overview**, chọn menu **Kubernetes Cluster.**
 
-**Bước 3:** Chọn biểu tượng <img src="https://docs-admin.vngcloud.vn/download/thumbnails/73762015/image2024-4-16_15-51-55.png?version=1&#x26;modificationDate=1713262579000&#x26;api=v2" alt="" data-size="line">và chọn **Edit Whitelist** hoặc chọn biểu tượng **Edit** khi xem chi tiết một Cluster để thực hiện thêm Whitelist cho Cluster của bạn.
+**Bước 3:** Chọn biểu tượng **Action** và chọn **Edit Whitelist** hoặc chọn biểu tượng **Edit** khi xem chi tiết một Cluster để thực hiện thêm Whitelist cho Cluster của bạn.
 
 **Bước 4:** Lúc này, màn hình **Edit Whitelist** hiển thị, bạn có thể nhập địa chỉ IP mà bạn muốn cho phép truy cập vào Cluster sau đó chọn **Add**.
 

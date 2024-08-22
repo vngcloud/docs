@@ -4,8 +4,8 @@
 
 Để có thể khởi tạo một **Cluster** và **Deploy** một **Workload**, bạn cần:
 
-* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md)&#x20;
-* Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
+* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](../../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md)&#x20;
+* Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](../../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
 * Đã cài đặt và cấu hình **kubectl** trên thiết bị của bạn. vui lòng tham khảo tại [đây](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) nếu bạn chưa rõ cách cài đặt và sử dụng kuberctl. Ngoài ra, bạn không nên sử dụng phiên bản kubectl quá cũ, chúng tôi khuyến cáo bạn nên sử dụng phiên bản kubectl sai lệch không quá một phiên bản với version của cluster.
 
 ***
@@ -166,11 +166,9 @@ Trong đó node\_ip có thể là địa chỉ node\_port của bất kỳ node 
 
 Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://61.28.231.65:31007/](http://61.28.231.65:31007/)
 
-<figure><img src="https://docs-admin.vngcloud.vn/download/attachments/73761995/image2024-4-4_11-33-17.png?version=1&#x26;modificationDate=1712205198000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (702).png" alt=""><figcaption></figcaption></figure>
 
 Nếu bạn muốn expose service này thông qua vLB Layer4, vLB Layer7, vui lòng tham khảo tại:&#x20;
 
-* [Expose một service thông qua vLB Layer4](expose-mot-service-thong-qua-vlb-layer4.md)
-* [Expose một service thông qua vLB Layer7](expose-mot-service-thong-qua-vlb-layer7.md)
-
-\
+* [Expose một service thông qua vLB Layer4](../expose-mot-service-thong-qua-vlb-layer4.md)
+* [Expose một service thông qua vLB Layer7](../expose-mot-service-thong-qua-vlb-layer7.md)

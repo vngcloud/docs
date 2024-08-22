@@ -67,7 +67,7 @@ Node Group là một khái niệm quan trọng trong Kubernetes, dùng để qu�
 ### Xóa một Node Group <a href="#nodegroups-xoamotnodegroup" id="nodegroups-xoamotnodegroup"></a>
 
 {% hint style="info" %}
-Chú ý:
+**Chú ý:**
 
 Khi không còn nhu cầu sử dụng Node Group, bạn hãy thực hiện xóa chúng để tiết kiệm chi phí.  Khi xoá Node Group, các tài nguyên sau sẽ bị xóa:
 
@@ -81,5 +81,3 @@ Khi không còn nhu cầu sử dụng Node Group, bạn hãy thực hiện xóa 
 **Bước 3:** Tại **Cluster** đã tạo thành công, chọn Node Group bạn muốn xóa và chọn **Delete.**
 
 **Bước 4:** Chọn **Delete** để xóa hoàn toàn **Node Group** của bạn.
-
-\

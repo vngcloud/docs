@@ -21,9 +21,7 @@ Hiện tại, hệ thống VKS của chúng tôi đã hỗ trợ bạn nâng c�
 **Bước 4:** Hệ thống VKS sẽ thực hiện nâng cấp các thành phần Control Plane của Cluster lên phiên bản mới. Sau khi việc nâng cấp hoàn tất, trạng thái (status) Cluster trở về **ACTIVE**.&#x20;
 
 {% hint style="info" %}
-
-
-Chú ý:
+**Chú ý:**
 
 * Việc nâng cấp Control Plane Version là không bắt buộc và độc lập với việc nâng cấp Node Group Version. Tuy nhiên Control Plane Version và Node Group Version trong cùng một Cluster không được lệch quá 1 minor version. Bên cạnh đó, hệ thống VKS tự động nâng cấp Control Plane Version khi phiên bản K8S Version hiện tại đang sử dụng cho Cluster của bạn quá thời hạn được nhà cung cấp hỗ trợ.
 * Trong quá trình nâng cấp Control Plane Version, bạn không thể thực hiện các hành động khác trên Cluster của bạn.&#x20;

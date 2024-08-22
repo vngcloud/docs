@@ -1,10 +1,8 @@
-# Mô hình hoạt động
-
-Bên dưới là các concepts hiện tại VKS đang cung cấp cho bạn:
+# Public Cluster và Private Cluster
 
 ## **1. Public Cluster**
 
-<figure><img src="../.gitbook/assets/image (692).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (692).png" alt=""><figcaption></figcaption></figure>
 
 Khi bạn khởi tạo một **Public Cluster với Public Node Group**, hệ thống VKS sẽ:
 
@@ -16,7 +14,7 @@ Khi bạn khởi tạo một **Public Cluster với Private Node Group**, hệ t
 
 ## **2. Private Cluster**
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Khi bạn khởi tạo một **Public Cluster với Public/ Private Node Group**, hệ thống VKS sẽ:
 

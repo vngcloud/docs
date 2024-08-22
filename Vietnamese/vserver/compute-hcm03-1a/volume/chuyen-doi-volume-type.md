@@ -53,7 +53,7 @@ _Mục đích của bước này là để sao lưu dữ liệu được ghi m�
 
 * 2.1: Sau khi hoàn tất bước 1, giao diện thực hiện sẽ chuyển sang bước 2/4, và yêu cầu người dùng tương tác. Tham khảo hình minh họa sau:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 2.2: Nhấn chọn **Yêu cầu hành động** để tiếp tục quá trình Migrate. Một cửa sổ Migrate volume sẽ hiển thị, nhấn **Tiếp tục** để xác nhận thực hiện. Quá trình này sẽ gây gián đoạn dịch vụ trên volume hiện tại, thời gian gián đoạn sẽ tùy thuộc vào độ lớn dữ liệu thay đổi trong khoảng thời gian thực hiện bước 1. Trạng thái Migrate sẽ hiển thị như sau:&#x20;
 
