@@ -5,9 +5,11 @@
 * Chọn chức năng “**Create an Endpoint**”
 * Nhập thông tin **Endpoint** theo yêu cầu gồm:
 
-&#x20;         \- **Service Package**: Gói dịch vụ Endpoint cung cấp mặc định cấu hình 1 gói Standard, người dùng không cần chọn gói dịch vụ
+&#x20;         \- **Tên Endpoint**: Tên Endpoint
 
-&#x20;         \- **Endpoint Name**: Tên Endpoint
+&#x20;         \- **Chọn dịch vụ**: Chọn một dịch vụ của VNG Cloud mà Endpoint kết nối đến trong danh sách các dịch vụ vServer, vStorage, vMonitor, vCR, IAM.     &#x20;
+
+&#x20;         \- **Service Package**: Gói dịch vụ Endpoint cung cấp mặc định cấu hình 1 gói Standard, người dùng không cần chọn gói dịch vụ
 
 * Chọn VPC muốn tạo service endpoint
 * Kiểm tra thông tin giá dịch vụ tại “**Summary**”
