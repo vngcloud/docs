@@ -5,9 +5,11 @@
 * Select the "**Create an Endpoint**" function
 * Enter the Endpoint information as required, including:
 
-&#x20;        \- **Service Package**: The Endpoint service package provides a default configuration of Standard package, users do not need to choose a service package
+&#x20;  \- **Endpoint Name**: Name of Endpoint        &#x20;
 
-&#x20;        \- **Endpoint Name**: Tên Endpoint
+&#x20;  \- **Service Package**: The Endpoint service package provides a default configuration of Standard package, users do not need to choose a service package
+
+&#x20;  \- **Service Selection**: The services of VNG Cloud to which the endpoint connects, choose a value from the list consisting vServer, vStorage, vMonitor, vCR, IAM
 
 * Select the VPC to create Service Endpoint
 * Check the service price information in the "**Summary**" section
