@@ -11,7 +11,7 @@
 
 &#x20;         \- **Service Package**: Gói dịch vụ Endpoint cung cấp mặc định cấu hình 1 gói Standard, người dùng không cần chọn gói dịch vụ
 
-* Chọn VPC muốn tạo service endpoint
+* Chọn VPC, Subnet muốn kết nối với các dịch vụ của VNG Cloud qua service endpoint
 * Kiểm tra thông tin giá dịch vụ tại “**Summary**”
 * Nhấn “**CREATE ENDPOINT**”
 
