@@ -11,7 +11,7 @@
 
 &#x20;  \- **Service Selection**: The services of VNG Cloud to which the endpoint connects, choose a value from the list consisting vServer, vStorage, vMonitor, vCR, IAM
 
-* Select the VPC to create Service Endpoint
+* Select the VPC and subnet you want to connect with VNG Cloud services through the service endpoint.
 * Check the service price information in the "**Summary**" section
 * Click on “**CREATE ENDPOINT**”
 
