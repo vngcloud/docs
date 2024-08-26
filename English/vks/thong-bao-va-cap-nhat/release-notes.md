@@ -1,15 +1,5 @@
 # Release notes
 
-### Aug 26, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
-
-VKS (VNGCloud Kubernetes Service) introduces the latest update to the existing VKS, bringing many new features to users. Here are the details about the update:
-
-**New features:**
-
-* **Private Cluster:** Previously, public clusters on VKS were using Public IP addresses to communicate between nodes and control plane. To enhance the security of your cluster, we have introduced the private cluster model. Private clusters do not use External IP addresses for nodes. This means that users from the internet cannot directly connect to nodes in the cluster. Private Cluster is the ideal choice for services that require strict access control, ensuring compliance with security and data privacy regulations. For more details, refer [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/khoi-tao-mot-private-cluster).
-
-***
-
 ## Aug 13, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
 VKS (VNGCloud Kubernetes Service) introduces the latest update to the existing VKS, bringing many new improvements to users. Here are the details about the update:
