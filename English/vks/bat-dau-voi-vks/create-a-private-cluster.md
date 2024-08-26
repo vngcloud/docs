@@ -24,7 +24,14 @@ You can view information about the 4 private service endpoints through the vServ
 {% hint style="info" %}
 **Warning:**
 
-* <mark style="color:red;background-color:red;">**Do not delete Private Service Endpoints**</mark> <mark style="color:red;background-color:red;"></mark><mark style="color:red;background-color:red;">:</mark> To ensure stable operation of the cluster, you should not delete the 4 pre-created service endpoints. If you accidentally delete or edit these 4 endpoints, within a maximum of 5 minutes, the system will automatically recreate them but may cause disruption to running services. At this time, because the recreated service endpoint may have changed the Endpoint IP compared to the original, in order for the cluster to work, you need to manually add Endpoint IP to the previously running servers.
+* <mark style="color:red;background-color:red;">**Do not delete Private Service Endpoints**</mark> <mark style="color:red;background-color:red;"></mark><mark style="color:red;background-color:red;">:</mark> To ensure stable operation of the cluster, you should not delete the 4 pre-created service endpoints. If you accidentally delete or edit these 4 endpoints, within a maximum of 5 minutes, the system will automatically recreate them but may cause disruption to running services. At this time, because the recreated service endpoint may have changed the Endpoint IP compared to the original, in order for the cluster to work, you need to manually add Endpoint IP to the previously running servers via command:
+  ```
+  vks-bootstraper add-host -i <IP> -d <DOMAIN>
+  ```
+  Example, if you delete private service endpoint of vCR, you must add host via command:
+  ```
+  vks-boostraper add-host -i 10.10.10.10 -d vcr.vngcloud.vn
+  ```
 * <mark style="color:red;background-color:red;">**Reuse Private Service Endpoints**</mark>**:** Service endpoints can be used by multiple private clusters. When private clusters share a VPC, we will reuse them for these clusters.
 * <mark style="color:red;background-color:red;">**Delete Private Service Endpoints automatically:**</mark> When you delete a cluster, if there are no more clusters that reuse these service endpoints, the system will automatically delete them.
 {% endhint %}
