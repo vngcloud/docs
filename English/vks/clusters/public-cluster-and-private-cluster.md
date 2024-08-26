@@ -1,6 +1,4 @@
-# How VKS works?
-
-Below are the current concepts being provided to you by VKS:
+# Public Cluster and Private Cluster
 
 ## **1. Public Cluster** <a href="#id-1.-public-cluster" id="id-1.-public-cluster"></a>
 

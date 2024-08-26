@@ -43,7 +43,9 @@ The IP Whitelist feature on VKS's Private Node Group mode allows you to only all
 * **Recommendation** : Can use whitelist feature.
 * Need to whitelist additional IP of NAT Gateway.
 
-## **3. Private Cluster Includes Public Node Group or Private Node Group (Coming soon)**
+## **3. Private Cluster Includes Public Node Group or Private Node Group**&#x20;
+
+* **Recommendation:** Can use whitelist feature.
 
 ***
 
