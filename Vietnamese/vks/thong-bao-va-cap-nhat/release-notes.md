@@ -1,5 +1,18 @@
 # Release notes
 
+## Aug 26, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
+
+VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
+
+**Cải tiến:**
+
+* **Kubernetes Version**: VKS đã bổ sung các image mới nhằm tối ưu hóa size, feature, network,...so với các image cũ. Việc xây dựng các image này cũng nhằm phục vụ cho cả hai loại cluster là Public và Private mà VKS sắp ra mắt. Cụ thể, trong bản phát hành này, chúng tôi đã bổ sung thêm các image sau:
+  * Ubuntu-22.kube\_v1.27.12-vks.1724605200
+  * Ubuntu-22.kube\_v1.28.8-vks.1724605200
+  * Ubuntu-22.kube\_v1.29.1-vks.1724605200
+
+***
+
 ## Aug 13, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
 VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
