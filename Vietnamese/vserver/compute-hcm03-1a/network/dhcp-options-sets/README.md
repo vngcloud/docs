@@ -7,9 +7,9 @@ Chức năng DHCP (Dynamic Host Configuration Protocol) Options Sets cho phép b
 **Một số lưu ý khi cấu hình DHCP options set:**
 
 * Một DHCP option set được gán với chỉ 1 VPC được deploy trong region của DHCP tạo ra;
-* Một DHCP option set được gán với nhiều VPC;
-* Một VPC chỉ được gán vào một DHCP;
-* Có giới hạn số lượng chỉ gán được 10 VPCs vào DHCP options set (không tăng giới hạn sử dụng được)
+* **Một DHCP option set** được cho phép **gán với nhiều VPC**;
+* **Một VPC chỉ** được **gán vào một DHCP**;
+* Có giới hạn số lượng chỉ gán được **10 VPCs vào DHCP options set** (không tăng giới hạn sử dụng được)
 
 ***
 
