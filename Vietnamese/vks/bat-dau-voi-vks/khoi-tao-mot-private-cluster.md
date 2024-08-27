@@ -6,7 +6,7 @@ Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Pub
 
 <figure><img src="../../.gitbook/assets/image (691).png" alt=""><figcaption></figcaption></figure>
 
-**Thành phần**        &#x20;
+**Thành phần**
 
 * **Control plane**: Được quản lý bởi VNG Cloud, chịu trách nhiệm điều phối và quản lý toàn bộ cluster.
 * **Nodes**: Các Node trong Cluster khi được tạo ra sẽ chỉ có internal IP và không thể đi ra public internet. Nếu muốn node truy cập được internet, bạn cần sử dụng NAT Gateway. Chi tiết tham khảo thêm tại [đây](khoi-tao-mot-public-cluster/khoi-tao-mot-public-cluster-voi-private-node-group/pfsense-as-a-nat-gateway.md).
@@ -17,23 +17,27 @@ Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Pub
   * **Endpoint** để kết nối tới dịch vụ **vServer** (Endpoint Name: vks-vserver-endpoint-...)
   * **Endpoint** để kết nối tới dịch vụ **vStorage** (Endpoint Name: vks-vstorage-endpoint-...)
 
-Bạn có thể xem thông tin 4 private service endpoint thông qua portal vServer theo đường dẫn tại [đây](https://hcm-3.console.vngcloud.vn/vserver/vnetwork/endpoint/list).&#x20;
+Bạn có thể xem thông tin 4 private service endpoint thông qua portal vServer theo đường dẫn tại [đây](https://hcm-3.console.vngcloud.vn/vserver/vnetwork/endpoint/list).
 
 <figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Warning:**
 
-* <mark style="color:red;background-color:red;">**Không xóa Private Service Endpoint**</mark>: Để đảm bảo hoạt động ổn định của cluster, bạn không nên xóa 4 service endpoint đã được tạo sẵn. Nếu vô tình xóa hoặc chỉnh sửa 4 endpoint này, trong vòng tối đa 5 phút, hệ thống sẽ tự động tạo lại nhưng có thể gây gián đoạn đến các dịch vụ đang chạy. Lúc này, do service endpoint tạo lại có thể đã thay đổi Endpoint IP so với ban đầu nên để cluster hoạt động được, bạn cần thực hiện thêm Endpoint IP một cách thủ công cho những server đang chạy trước đó thông qua câu lệnh:&#x20;
-  ```
-  vks-bootstraper add-host -i <IP> -d <DOMAIN>
-  ```
-  Ví dụ, nếu bạn xóa private service endpoint của vCR thì bạn cần add host qua lệnh: 
-  ```
-  vks-boostraper add-host -i 10.10.10.10 -d vcr.vngcloud.vn
-  ```
-* <mark style="color:red;background-color:red;">**Tái sử dụng Private Service Endpoint:**</mark> Các service endpoint có thể được nhiều private cluster cùng sử dụng. Khi các private cluster chung VPC thì chúng tôi sẽ tái sử dụng chúng cho các cluster này.&#x20;
+*   <mark style="color:red;background-color:red;">**Không xóa Private Service Endpoint**</mark>: Để đảm bảo hoạt động ổn định của cluster, bạn không nên xóa 4 service endpoint đã được tạo sẵn. Nếu vô tình xóa hoặc chỉnh sửa 4 endpoint này, trong vòng tối đa 5 phút, hệ thống sẽ tự động tạo lại nhưng có thể gây gián đoạn đến các dịch vụ đang chạy. Lúc này, do service endpoint tạo lại có thể đã thay đổi Endpoint IP so với ban đầu nên để cluster hoạt động được, bạn cần thực hiện thêm Endpoint IP một cách thủ công cho những server đang chạy trước đó thông qua câu lệnh:
+
+    ```
+    vks-bootstraper add-host -i <IP> -d <DOMAIN>
+    ```
+
+    Ví dụ, nếu bạn xóa private service endpoint của vCR thì bạn cần add host qua lệnh:
+
+    ```
+    vks-boostraper add-host -i 10.10.10.10 -d vcr.vngcloud.vn
+    ```
+* <mark style="color:red;background-color:red;">**Tái sử dụng Private Service Endpoint:**</mark> Các service endpoint có thể được nhiều private cluster cùng sử dụng. Khi các private cluster chung VPC thì chúng tôi sẽ tái sử dụng chúng cho các cluster này.
 * <mark style="color:red;background-color:red;">**Xóa Private Service Endpoint tự động:**</mark> Khi bạn xóa cluster, nếu không còn cluster nào tái sử dụng các service endpoint này, hệ thống sẽ tự động xóa chúng.
+* <mark style="color:red;background-color:red;">**Chi phí sử dụng Private Service Endpoint:**</mark> Việc sử dụng private cluster sẽ phát sinh thêm chi phí cho 4 private service endpoint, nhưng nó mang lại nhiều lợi ích về bảo mật cho dự án của bạn. Bạn hãy cân nhắc kỹ lưỡng các yếu tố để đưa ra quyết định sử dụng public hay private cho cluster của mình.
 {% endhint %}
 
 ***
@@ -42,7 +46,7 @@ Bạn có thể xem thông tin 4 private service endpoint thông qua portal vSer
 
 Để có thể khởi tạo một **Cluster** và **Deploy** một **Workload**, bạn cần:
 
-* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md)&#x20;
+* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md)
 * Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
 * Đã cài đặt và cấu hình **kubectl** trên thiết bị của bạn. vui lòng tham khảo tại [đây](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) nếu bạn chưa rõ cách cài đặt và sử dụng kuberctl. Ngoài ra, bạn không nên sử dụng phiên bản kubectl quá cũ, chúng tôi khuyến cáo bạn nên sử dụng phiên bản kubectl sai lệch không quá một phiên bản với version của cluster.
 
@@ -60,7 +64,7 @@ Bạn có thể xem thông tin 4 private service endpoint thông qua portal vSer
 
 **Bước 3:** Chờ đợi tới khi chúng tôi khởi tạo thành công tài khoản VKS của bạn. Sau khi Activate thành công, bạn hãy chọn **Create a Cluster**
 
-**Bước 4:** Tại màn hình khởi tạo Cluster, chúng tôi đã thiết lập thông tin cho Cluster và một **Default Node Group** cho bạn, bạn có thể giữ các giá trị mặc định này hoặc điều chỉnh các thông số mong muốn cho Cluster và Node Group của bạn tại Cluster Configuration, Default Node Group Configuration, Plugin.&#x20;
+**Bước 4:** Tại màn hình khởi tạo Cluster, chúng tôi đã thiết lập thông tin cho Cluster và một **Default Node Group** cho bạn, bạn có thể giữ các giá trị mặc định này hoặc điều chỉnh các thông số mong muốn cho Cluster và Node Group của bạn tại Cluster Configuration, Default Node Group Configuration, Plugin.
 
 <figure><img src="../../.gitbook/assets/image (693).png" alt=""><figcaption></figcaption></figure>
 
@@ -71,15 +75,15 @@ Bạn có thể xem thông tin 4 private service endpoint thông qua portal vSer
 {% hint style="info" %}
 **Warning:**
 
-* **Một Cluster** có thể có **nhiều Node Group**, mỗi Node Group có thể hoạt động ở mode Public/ Private tùy theo nhu cầu của bạn.&#x20;
-* Do **Cluster** của bạn được khởi tạo ở chế độ **Private**, để có thể truy cập vào **kube-api** của Control Plane thì bạn cần **đứng trong VPC** mà bạn chọn sử dụng cho Cluster của bạn.&#x20;
+* **Một Cluster** có thể có **nhiều Node Group**, mỗi Node Group có thể hoạt động ở mode Public/ Private tùy theo nhu cầu của bạn.
+* Do **Cluster** của bạn được khởi tạo ở chế độ **Private**, để có thể truy cập vào **kube-api** của Control Plane thì bạn cần **đứng trong VPC** mà bạn chọn sử dụng cho Cluster của bạn.
 {% endhint %}
 
 ***
 
 ### Kết nối và kiểm tra thông tin Cluster vừa tạo <a href="#khoitaomotpublicclustervoiprivatenodegroup-ketnoivakiemtrathongtinclustervuatao" id="khoitaomotpublicclustervoiprivatenodegroup-ketnoivakiemtrathongtinclustervuatao"></a>
 
-Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiện kết nối và kiểm tra thông tin Cluster vừa tạo theo các bước:&#x20;
+Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiện kết nối và kiểm tra thông tin Cluster vừa tạo theo các bước:
 
 **Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
@@ -87,7 +91,7 @@ Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiệ
 
 **Bước 3**: Đổi tên file này thành config và lưu nó vào thư mục **\~/.kube/config**
 
-**Bước 4:** Do Cluster của bạn được khởi tạo ở chế độ Private, để có thể truy cập vào kube-api, bạn cần đứng trong VPC mà bạn đã chọn sử dụng cho Cluster của bạn. Ví dụ, khi bạn không đứng ở VPC và thực hiện get nodes, kết quả sẽ hiển thị như sau:&#x20;
+**Bước 4:** Do Cluster của bạn được khởi tạo ở chế độ Private, để có thể truy cập vào kube-api, bạn cần đứng trong VPC mà bạn đã chọn sử dụng cho Cluster của bạn. Ví dụ, khi bạn không đứng ở VPC và thực hiện get nodes, kết quả sẽ hiển thị như sau:
 
 ```
 kubectl get nodes
@@ -99,27 +103,27 @@ E0821 14:27:12.055864   23348 memcache.go:265] couldn't get current server API g
 Unable to connect to the server: dial tcp 10.7.8.9:6443: connectex: No connection could be made because the target machine actively refused it.
 ```
 
-Trong ví dụ bên dưới tôi sẽ đứng tại một server có VPC cùng với VPC được sử dụng cho Cluster. Bạn có thể thực hiện SSH vào server theo hướng dẫn tại [đây](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/server/ket-noi-vao-may-chu-ao/ket-noi-vao-may-chu-linux-bang-cong-cu-ssh-client). Sau khi SSH vào server, hãy cài đặt kubectl theo hướng dẫn tại [đây](huong-dan-cai-dat-va-cau-hinh-cong-cu-kubectl-trong-kubernetes.md).&#x20;
+Trong ví dụ bên dưới tôi sẽ đứng tại một server có VPC cùng với VPC được sử dụng cho Cluster. Bạn có thể thực hiện SSH vào server theo hướng dẫn tại [đây](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/server/ket-noi-vao-may-chu-ao/ket-noi-vao-may-chu-linux-bang-cong-cu-ssh-client). Sau khi SSH vào server, hãy cài đặt kubectl theo hướng dẫn tại [đây](huong-dan-cai-dat-va-cau-hinh-cong-cu-kubectl-trong-kubernetes.md).
 
-* Ví dụ, tôi đang sử dụng một server linux để thực hiện get nodes, tôi có thể cài đặt kubectl qua lệnh:&#x20;
+* Ví dụ, tôi đang sử dụng một server linux để thực hiện get nodes, tôi có thể cài đặt kubectl qua lệnh:
 
 ```
 sudo snap install kubectl --classic
 ```
 
-* Sau đó, tôi kiểm tra kubectl qua lệnh:&#x20;
+* Sau đó, tôi kiểm tra kubectl qua lệnh:
 
 ```
 kubectl version
 ```
 
-* Tạo thư mục .`kube` qua lệnh:&#x20;
+* Tạo thư mục .`kube` qua lệnh:
 
 ```
 mkdir -p .kube
 ```
 
-* Sau đó, bạn hãy nhập file kubeconfig qua lệnh:&#x20;
+* Sau đó, bạn hãy nhập file kubeconfig qua lệnh:
 
 ```
 vim .kube/config
@@ -132,7 +136,7 @@ vim .kube/config
 kubectl get svc
 ```
 
-* Bạn sẽ thấy kết quả trả về tương tự sau:&#x20;
+* Bạn sẽ thấy kết quả trả về tương tự sau:
 
 ```
 NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
@@ -156,16 +160,16 @@ vks-demo-cluster-nodegroup-demo-7c9aa   Ready    <none>   8m11s   v1.28.8
 
 ### Sử dụng Docker để Pull/Push image <a href="#khoitaomotpublicclustervoiprivatenodegroup-deploymotworkload" id="khoitaomotpublicclustervoiprivatenodegroup-deploymotworkload"></a>
 
-Do Private Cluster chỉ có thể kết nối private tới hệ thống vContainer Registry (vCR) và không thể kết nối ra các Container Registry khác ngoài internet, nên bạn cần pull/ push image về vCR để sử dụng theo hướng dẫn sau đây:&#x20;
+Do Private Cluster chỉ có thể kết nối private tới hệ thống vContainer Registry (vCR) và không thể kết nối ra các Container Registry khác ngoài internet, nên bạn cần pull/ push image về vCR để sử dụng theo hướng dẫn sau đây:
 
 #### **Bước 1: Cài đặt Docker**
 
 * Thực hiện cài đặt docker theo hướng dẫn tại [đây](https://docs.docker.com/engine/install/).
 
-#### **Bước 2: Khởi tạo Public Repository và Repository User trên vContainer Registry Portal:**&#x20;
+#### **Bước 2: Khởi tạo Public Repository và Repository User trên vContainer Registry Portal:**
 
 * Đăng nhập portal vCR tại đường dẫn: [https://vcr.console.vngcloud.vn/list](https://vcr.console.vngcloud.vn/list)
-* Thực hiện khởi tạo Repositoryvà Repository theo hướng dẫn tại [đây](../../vcontainer-registry/repository/). Ví dụ trong hình dưới, tôi đã khởi tạo demo\_repo với demo\_user có thể pull/ push image:&#x20;
+* Thực hiện khởi tạo Repositoryvà Repository theo hướng dẫn tại [đây](../../vcontainer-registry/repository/). Ví dụ trong hình dưới, tôi đã khởi tạo demo\_repo với demo\_user có thể pull/ push image:
 
 <figure><img src="../../.gitbook/assets/image (697).png" alt=""><figcaption></figcaption></figure>
 
@@ -177,7 +181,7 @@ Do Private Cluster chỉ có thể kết nối private tới hệ thống vConta
 * Nếu bạn mong muốn khởi tạo Private Reposity, để pull image từ Private Reposity, bạn cần tạo secret key theo hướng dẫn tại [đây](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/).
 {% endhint %}
 
-**Bước 3:** Thực hiện pull image nginx về theo lệnh:&#x20;
+**Bước 3:** Thực hiện pull image nginx về theo lệnh:
 
 ```
 docker pull nginx:latest
@@ -201,13 +205,13 @@ docker login vcr.vngcloud.vn -u 53461-user_demo
 docker tag SOURCE_IMAGE[:TAG] vcr.vngcloud.vn/REPO_NAME/IMAGE[:TAG]
 ```
 
-* Ví dụ, câu lệnh dưới tôi sử dụng để gán tag cho image nginx:&#x20;
+* Ví dụ, câu lệnh dưới tôi sử dụng để gán tag cho image nginx:
 
 ```
 docker tag nginx:latest vcr.vngcloud.vn/53461-repo_demo/nginx-demo:latest
 ```
 
-**Bước 6:** Thực hiện push image lên repo qua lệnh:&#x20;
+**Bước 6:** Thực hiện push image lên repo qua lệnh:
 
 ```
 docker push vcr.vngcloud.vn/REPO_NAME/IMAGE[:TAG]
@@ -231,7 +235,7 @@ Sau đây là hướng dẫn để bạn deploy service nginx và expose service
 vi nginx.yaml
 ```
 
-Sau đó, bạn hãy nhập nội dung cho file này như sau: bạn cần thay image bằng đường dẫn image lưu trên vCR mà bạn đã push ở bước bên trên:&#x20;
+Sau đó, bạn hãy nhập nội dung cho file này như sau: bạn cần thay image bằng đường dẫn image lưu trên vCR mà bạn đã push ở bước bên trên:
 
 ```
 apiVersion: apps/v1
@@ -269,7 +273,7 @@ spec:
 ```
 
 * Nhập **:wq** để lưu tệp tin này.
-* Deploy Deployment này bằng lệch:&#x20;
+* Deploy Deployment này bằng lệch:
 
 ```
 kubectl apply -f nginx-service-lb4.yaml
@@ -301,7 +305,7 @@ pod/nginx-app-56bbc8fdd8-4pz68   1/1     Running   0          3m32s   172.16.4.2
 
 ***
 
-Lúc này, hệ thống vLB sẽ khởi tạo môt Network Load Balancer, bạn có thể xem thông tin LB này thông qua portal vLB tại [đây](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb).&#x20;
+Lúc này, hệ thống vLB sẽ khởi tạo môt Network Load Balancer, bạn có thể xem thông tin LB này thông qua portal vLB tại [đây](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb).
 
 <figure><img src="../../.gitbook/assets/image (699).png" alt=""><figcaption></figcaption></figure>
 
@@ -321,5 +325,5 @@ Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với đ
 **Một vài chú ý khác:**
 
 * Bên trên là ví dụ hướng dẫn bạn thực hiện expose một service thông qua vLB Layer 4, bạn có thể thực hiện expose service thông qua vLB Layer 7 theo hướng dẫn tại [đây](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer7).
-* Bạn có thể sử dụng tính năng WhiteList để giới hạn Subnet trong VPC có thể truy cập vào kube-api. Chi tiết cách sử dụng tính năng Whitelist vui lòng tham khảo tại [đây](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vks/clusters/whitelist).
+* Để đảm bảo private cluster hoạt động hiệu quả, chúng tôi đã tự động thêm Subnet mà bạn chọn sử dụng cho Cluster vào danh sách Whitelist của cụm. Bạn có thể sử dụng tính năng Whitelist để giới hạn các Subnet trong VPC có quyền truy cập vào kube-api. Chi tiết cách sử dụng tính năng Whitelist vui lòng tham khảo tại [đây](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vks/clusters/whitelist).
 {% endhint %}
