@@ -12,7 +12,7 @@
 
 Khi NAT được tạo thành công, người dùng sẽ thấy NAT xuất hiện trên màn hình danh sách NAT.
 
-Người dùng cần thực hiện bước cấu hình các VM nào sẽ đi qua NAT bằng cách sử dụng NAT IP gateway theo cú pháp _ip route add \<internet\_ip> via \<nat\_gateway\_ip> dev \<interface>_
+Người dùng cần thực hiện bước cấu hình các VM nào sẽ đi qua NAT bằng cách sử dụng NAT IP gateway theo cú pháp của OS Linux _ip route add \<internet\_ip> via \<nat\_gateway\_ip> dev \<interface>_
 
 * \<Internet IP>: IP internet, ví dụ : 0.0.0.0/0
 * \<nat\_gateway\_ip>: IP gate way được cung cấp trên màn hình chi tiết thông tin NAT sau khi NAT được tạo thành công
