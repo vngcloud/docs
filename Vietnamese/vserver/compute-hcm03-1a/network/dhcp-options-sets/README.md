@@ -40,7 +40,7 @@ DNS Server IP cho phép **điền tối đa là 4 IP** (có thể điền thêm 
 Hệ thống **giới hạn cho phép tạo 10 DHCP options sets** và không cho phép chỉnh sửa giới hạn sử dụng.
 {% endhint %}
 
-6. Sau khi thiết lập hoàn tất, chọn nút "Create" để hoàn thành việc thiết lập.
+6. Sau khi thiết lập hoàn tất, chọn nút "**Create**" để hoàn thành việc thiết lập.
 
 ***
 
