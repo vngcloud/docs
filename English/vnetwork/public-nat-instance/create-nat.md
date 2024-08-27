@@ -10,7 +10,9 @@
 * Check the service pricing information in the "**Summary**" section.
 * Click **"CREATE A PUBLIC NAT"**.
 
-When the NAT is successfully created, you will see it appear on the NAT list. The user needs to configure which VMs will go through NAT by using the NAT IP gateway with the syntax _`ip route add <internet_ip> via <nat_gateway_ip> dev <interface>`._
+When the NAT is successfully created, it will appear on the NAT list. The user needs to configure which VMs will use NAT by specifying the NAT IP gateway, using the sample syntax for Linux.&#x20;
+
+_`ip route add <internet_ip> via <nat_gateway_ip> dev <interface>`._
 
 In this context:
 
