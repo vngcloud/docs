@@ -14,7 +14,9 @@ vServer : Server, Volume, Elastic IP, LB, K8S, VKS, Snapshot, vCR, vDB, Marketpl
 
 vStorage: Project, Backup
 
-vMonitor
+vMonitor: Metric, Log
+
+Terraform: Support khởi tạo POC cho VM từ Terraform
 
 * **Nguồn tiền**:
   * Ví POC
