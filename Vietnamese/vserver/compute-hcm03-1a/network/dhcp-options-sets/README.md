@@ -9,7 +9,7 @@ Chức năng DHCP (Dynamic Host Configuration Protocol) Options Sets cho phép b
 * Một DHCP option set được gán với chỉ 1 VPC được deploy trong region của DHCP tạo ra;
 * **Một DHCP option set** được cho phép **gán với nhiều VPC**;
 * **Một VPC chỉ** được **gán vào một DHCP**;
-* Có giới hạn số lượng chỉ gán được **10 VPCs vào DHCP options set** (không tăng giới hạn sử dụng được)
+* Có giới hạn số lượng tạo **10 DHCP options set** (không tăng giới hạn sử dụng được)
 
 ***
 
@@ -29,15 +29,13 @@ Với hướng dẫn này sẽ giúp bạn cách tạo ra một DHCP Options set
   * Chọn nút "**Set to Optimize**" để tùy chọn điền DNS Server IP;
   * Lưu ý, nếu bạn không dùng DNS mặc định, có thể bạn sẽ truy cập thất bại vào các dịch vụ VNG Cloud.
 
-{% hint style="success" %}
+{% hint style="info" %}
 **DNS server IP mặc định (default) mà VNG cloud cung cấp:**
 
 * 10.166.12.196
 * 10.166.12.197
 
 DNS Server IP cho phép **điền tối đa là 4 IP** (có thể điền thêm 2 IP nếu vẫn sử dụng 2 IP default của hệ thống)
-
-Hệ thống **giới hạn cho phép tạo 10 DHCP options sets** và không cho phép chỉnh sửa giới hạn sử dụng.
 {% endhint %}
 
 6. Sau khi thiết lập hoàn tất, chọn nút "**Create**" để hoàn thành việc thiết lập.
