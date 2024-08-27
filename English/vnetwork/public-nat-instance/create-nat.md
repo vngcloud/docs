@@ -22,7 +22,7 @@ In this context:
 
 Below is an example of adding a route on a VM with Linux OS using the syntax above: _`ip route add 0.0.0.0/0 via 10.0.0.100 dev eth0`._
 
-If the route file already contains the route that is being added, the user must remove the existing route from the file in order to add the route to NAT.
+In case there is already an existing route to the internet through a different gateway IP, the user must remove the current route and add a new route to the NAT gateway IP.
 
 _<mark style="color:blue;">**Note:**</mark>_
 
