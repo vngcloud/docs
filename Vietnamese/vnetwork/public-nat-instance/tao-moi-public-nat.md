@@ -22,7 +22,7 @@ _`ip route add <internet_ip> via <nat_gateway_ip> dev <interface>`._
 
 Dưới đây là ví dụ add route trên VM với OS Linux theo cú pháp ở trên: _ip route add 0.0.0.0/0 via 10.0.0.100 dev eth0_
 
-Trong trường hợp file route tồn tại route đang được add, người dùng phải remove route hiện tại trong file để add được route đến NAT.&#x20;
+Trong trường hợp đã tồn tại route ra internet thông qua một gateway IP khác thì người dùng phải phải remove route hiện tại và add route mới đến NAT gateway IP.&#x20;
 
 _<mark style="color:blue;">Lưu ý:</mark>_
 
