@@ -29,13 +29,15 @@ Với hướng dẫn này sẽ giúp bạn cách tạo ra một DHCP Options set
   * Chọn nút "**Set to Optimize**" để tùy chọn điền DNS Server IP;
   * Lưu ý, nếu bạn không dùng DNS mặc định, có thể bạn sẽ truy cập thất bại vào các dịch vụ VNG Cloud.
 
-{% hint style="success" %}
+{% hint style="danger" %}
 **DNS server IP mặc định (default) mà VNG cloud cung cấp:**
 
 * 10.166.12.196
 * 10.166.12.197
 
 DNS Server IP cho phép **điền tối đa là 4 IP** (có thể điền thêm 2 IP nếu vẫn sử dụng 2 IP default của hệ thống)
+
+Hệ thống **giới hạn cho phép tạo 10 DHCP options sets** và không cho phép chỉnh sửa giới hạn sử dụng.
 {% endhint %}
 
 6. Sau khi thiết lập hoàn tất, chọn nút "Create" để hoàn thành việc thiết lập.
