@@ -20,9 +20,9 @@ _`ip route add <internet_ip> via <nat_gateway_ip> dev <interface>`._
 * `<nat_gateway_ip>`: IP gate way được cung cấp trên màn hình chi tiết thông tin NAT sau khi NAT được tạo thành công
 * dev `<interface>`: Device private interface của VM kết nối với NAT&#x20;
 
-Dưới đây là ví dụ add route trên VM với OS Linux theo cú pháp ở trên: _ip route add 0.0.0.0/0 via 10.0.0.100 dev eth0_
+Dưới đây là ví dụ add route trên VM với OS Linux theo cú pháp ở trên:&#x20;
 
-Route ra internet đã tồn tại có thể làm xung đột khi bạn cấu hình thêm route qua NAT. Để giải quyết vấn đề này, bạn cần phải xóa route hiện tại bằng lệnh `ip route delete <existing_gateway_ip>`, sau đó thêm lại route qua NAT bằng lệnh `ip route add 0.0.0.0/0 via <nat_gateway_ip> dev <interface>`. Việc này đảm bảo rằng tất cả lưu lượng internet của VM sẽ đi qua NAT gateway mới cấu hình.
+_ip route add 0.0.0.0/0 via 10.0.0.100 dev eth0_
 
 **Trong trường hợp đã tồn tại route ra internet thông qua một gateway IP khác thì người dùng phải phải remove route hiện tại và add route mới đến NAT gateway IP.**&#x20;
 
