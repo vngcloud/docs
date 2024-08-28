@@ -28,7 +28,7 @@ Below is an example of adding a route on a VM with Linux OS using the syntax abo
 
 _<mark style="color:purple;">Here is an example of an internet route that already exists through a different gateway IP on Linux OS</mark>_
 
-<figure><img src="../../.gitbook/assets/image (270).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (273).png" alt=""><figcaption></figcaption></figure>
 
 _<mark style="color:purple;">After deleting the existing route on the VM, add the route to the internet through NAT.</mark>_
 
@@ -41,6 +41,6 @@ _<mark style="color:purple;">The result is successful as shown in the screenshot
 _<mark style="color:blue;">**Note:**</mark>_
 
 * _<mark style="color:blue;">The NAT's public interface is created automatically when the NAT is successfully established. Users can configure the public IP addresses into</mark>_ [_<mark style="color:blue;">purchased bandwidth</mark>_](https://docs.vngcloud.vn/vng-cloud-document/vserver/compute-hcm03-1a/vpc/bandwidth/datatransfers-bandwidth-service) _<mark style="color:blue;">packages (if available) to increase the bandwidth for the NAT.</mark>_
-* _<mark style="color:blue;">NAT only connects to the internet through ports 80, 443, and ICMP packets. If you need support for other requests, please contact the VNG Cloud hotline.</mark>_
+* _<mark style="color:blue;">NAT only connects to the internet through ports 53, 80, 443, and ICMP packets. If you need support for other requests, please contact the VNG Cloud hotline.</mark>_
 * _<mark style="color:blue;">If DNS resolution is needed, users must ensure that the route above is correctly configured to go through the NAT gateway for the IP resolver.</mark>_
 
