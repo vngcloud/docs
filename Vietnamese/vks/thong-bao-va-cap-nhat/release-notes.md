@@ -1,5 +1,15 @@
 # Release notes
 
+## Aug 28, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
+
+VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều tính năng mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
+
+**Tính năng mới:**
+
+* **Private Cluster:** Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Public IP để giao tiếp giữa nodes và control plane. Để nâng cao bảo mật cho cluster của bạn, chúng tôi đã cho ra mắt mô hình private cluster. Các private cluster không sử dụng địa chỉ External IP cho các node. Điều này có nghĩa là người dùng từ internet không thể trực tiếp kết nối với các node trong cluster. Private Cluster là lựa chọn lý tưởng cho các dịch vụ yêu cầu kiểm soát truy cập chặt chẽ, đảm bảo tuân thủ các quy định về bảo mật và quyền riêng tư dữ liệu. Chi tiết tham khảo thêm tại [đây](../bat-dau-voi-vks/khoi-tao-mot-private-cluster.md).
+
+***
+
 ## Aug 26, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
 VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
@@ -10,6 +20,12 @@ VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất
   * Ubuntu-22.kube\_v1.27.12-vks.1724605200
   * Ubuntu-22.kube\_v1.28.8-vks.1724605200
   * Ubuntu-22.kube\_v1.29.1-vks.1724605200
+
+{% hint style="info" %}
+**Chú ý:**
+
+* Để khởi tạo một **Private Cluster**, bạn cần chọn sử dụng một trong 3 image mới này. Đối với Public Cluster, bạn có thể chọn sử dụng bất kỳ image cũ hoặc mới tùy theo nhu cầu của bạn.&#x20;
+{% endhint %}
 
 ***
 
