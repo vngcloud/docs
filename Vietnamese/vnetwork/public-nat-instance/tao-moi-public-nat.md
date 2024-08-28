@@ -16,13 +16,13 @@ Người dùng cần thực hiện bước cấu hình các VM nào sẽ đi qua
 
 _`ip route add <internet_ip> via <nat_gateway_ip> dev <interface>`._
 
-* `<internet_ip>`: IP internet, ví dụ : 0.0.0.0/0
+* `<internet_ip>`: IP internet, ví dụ : 0.0.0.0/0 hoặc default
 * `<nat_gateway_ip>`: IP gate way được cung cấp trên màn hình chi tiết thông tin NAT sau khi NAT được tạo thành công
 * dev `<interface>`: Device private interface của VM kết nối với NAT&#x20;
 
 Dưới đây là ví dụ add route trên VM với OS Linux theo cú pháp ở trên:&#x20;
 
-_ip route add 0.0.0.0/0 via 10.0.0.100 dev eth0_
+_`ip route add 0.0.0.0/0 via 10.0.0.100 dev eth0`_
 
 **Trong trường hợp đã tồn tại route ra internet thông qua một gateway IP khác thì người dùng phải phải remove route hiện tại và add route mới đến NAT gateway IP.**&#x20;
 
