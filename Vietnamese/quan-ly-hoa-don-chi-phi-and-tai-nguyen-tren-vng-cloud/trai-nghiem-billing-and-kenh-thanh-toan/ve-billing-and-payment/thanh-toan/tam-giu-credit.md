@@ -125,17 +125,27 @@ Khi người dùng có phát sinh sử dụng gói bandwidth Pay-as-you-go trong
 
 **Cách tính phí Bandwidth Pay as you go**
 
-Giả sử kỳ đối đối soát sẽ được chốt vào ngày cuối cùng của tháng và đơn giá dịch vụ là 1,000 VND / 1 GB. Khi người dùng có phát sinh sử dụng băng thông Pay as you go, như ví dụ bên dưới:
+Giả sử kỳ đối đối soát sẽ được chốt vào ngày cuối cùng của tháng và đơn giá dịch vụ là 1,000 VND / 1 GB. Khi người dùng có phát sinh sử dụng băng thông Pay as you go cho 2 địa chỉ IP, như ví dụ bên dưới:
 
-* Ngày 10 của tháng (là ngày đầu tiên trong tháng phát sinh sử dụng): dùng 5GB
-* Ngày 15 của tháng, dùng thêm 8GB
-* Ngày 17 của tháng, dùng thêm 3GB
+* **Địa chỉ IP 103.245.251.6**
 
-Lúc này, hệ thống sẽ tiến hành tạm giữ credit như sau:
+| Thời gian                                                          | Usage ghi nhận                      | Usage tính phí | Số credit tạm giữ                           |
+| ------------------------------------------------------------------ | ----------------------------------- | -------------- | ------------------------------------------- |
+| Ngày 10 của tháng (là ngày đầu tiên trong tháng phát sinh sử dụng) | 5,56 GB                             | 5 GB           | 5,000 credit (1,000 VND \* 5GB)             |
+| Ngày 15 của tháng                                                  | dùng thêm 8,25 GB ->  tổng 13,81 GB | 13 GB          | 13,000 credit (1,000 VND \* (8+5) GB)       |
+| Ngày 17 của tháng                                                  | dùng thêm 3GB -> tổng 16,81 GB      | 16 GB          | 16,000 credit (1,000 VND \* (5 + 8 + 3) GB) |
 
-* Sáng ngày 11 của tháng: Tạm giữ 5,000 credit (1,000 VND \* 5GB)
-* Sáng ngày 16 của tháng: Tạm giữ 13,000 credit (1,000 VND \* (8+5) GB)
-* Sáng ngày 18 của tháng: Tạm giữ 16,000 credit (1,000 VND \* (5 + 8 + 3) GB)
+* **Địa chỉ IP 116.118.95.65**
+
+| Thời gian                                                         | Usage ghi nhận                      | Usage tính phí | Số credit tạm giữ                           |
+| ----------------------------------------------------------------- | ----------------------------------- | -------------- | ------------------------------------------- |
+| Ngày 1 của tháng (là ngày đầu tiên trong tháng phát sinh sử dụng) | 5 GB                                | 5 GB           | 5,000 credit (1,000 VND \* 5GB)             |
+| Ngày 15 của tháng                                                 | dùng thêm 7,75 GB ->  tổng 12,75 GB | 12 GB          | 12,000 credit (1,000 VND \* (7+5) GB)       |
+| Ngày 20 của tháng                                                 | dùng thêm 3GB -> tổng 15,75 GB      | 15 GB          | 15,000 credit (1,000 VND \* (5 + 7 + 3) GB) |
+
+Lúc này, tổng số credit tạm giữ dựa trên usage của các IP sử dụng băng thông như sau:
+
+* Tổng credti tạm giữ = usage trên IP **103.245.251.6 +** usage trên IP **116.118.95.65** = 16,000 + 15,000 = 31,000 credit
 
 Đến cuối kỳ đối soát, hệ thống sẽ ra hóa đơn tương ứng và trừ vào phần tạm giữ trước đó. Trong quá trình sử dụng, nếu credit không đủ, hệ thống sẽ ngừng cung cấp dịch vụ theo policy của dịch vụ.
 
