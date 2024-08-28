@@ -6,7 +6,7 @@ VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất
 
 **Tính năng mới:**
 
-* **Private Cluster:** Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Public IP để giao tiếp giữa nodes và control plane. Để nâng cao bảo mật cho cluster của bạn, chúng tôi đã cho ra mắt mô hình private cluster. Các private cluster không sử dụng địa chỉ External IP cho các node. Điều này có nghĩa là người dùng từ internet không thể trực tiếp kết nối với các node trong cluster. Private Cluster là lựa chọn lý tưởng cho các dịch vụ yêu cầu kiểm soát truy cập chặt chẽ, đảm bảo tuân thủ các quy định về bảo mật và quyền riêng tư dữ liệu. Chi tiết tham khảo thêm tại [đây](../bat-dau-voi-vks/khoi-tao-mot-private-cluster.md).
+* **Private Cluster:** Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Public IP để giao tiếp giữa nodes và control plane. Để nâng cao bảo mật cho cluster của bạn, chúng tôi đã cho ra mắt mô hình private cluster. Các private cluster không sử dụng địa chỉ External IP cho các node. Điều này có nghĩa là người dùng từ internet không thể trực tiếp kết nối với các node trong cluster. Private Cluster là lựa chọn lý tưởng cho **các dịch vụ yêu cầu kiểm soát truy cập chặt chẽ, đảm bảo tuân thủ các quy định về bảo mật và quyền riêng tư dữ liệu**. Chi tiết 2 mô hình hoạt động của Cluster, bạn có thể tham khảo thêm tại [đây ](../mo-hinh-hoat-dong.md)và tham khảo các bước khởi tạo một private Cluster tại [đây](../bat-dau-voi-vks/khoi-tao-mot-private-cluster.md).
 
 ***
 
