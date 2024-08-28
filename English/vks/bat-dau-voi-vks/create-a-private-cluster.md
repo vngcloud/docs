@@ -1,6 +1,6 @@
 # Create a Private Cluster
 
-Previously, public clusters on VKS were using Public IP addresses to communicate between nodes and control plane. To enhance the security of your cluster, we have introduced the private cluster model. Private clusters do not use External IP addresses for nodes. This means that users from the internet cannot directly connect to nodes in the cluster. Private Cluster is the ideal choice for services that require strict access control, ensuring compliance with security and data privacy regulations.
+Previously, public clusters on VKS were using Public IP addresses to communicate between nodes and the control plane. To improve the security of your cluster, we have launched the private cluster model. The Private Cluster feature helps your K8S cluster to be as secure as possible, all connections are completely private from the connection between nodes to the control plane, the connection from the client to the control plane, or the connection from nodes to other products and services in VNG Cloud such as: vStorage, vCR, vMonitor, VNGCloud APIs,... Private Cluster is the ideal choice for services that require strict access control, ensuring compliance with regulations on security and data privacy.
 
 ## Model <a href="#khoitaomotpublicclustervoiprivatenodegroup-dieukiencan" id="khoitaomotpublicclustervoiprivatenodegroup-dieukiencan"></a>
 
