@@ -20,12 +20,27 @@ In this context:
 * `<nat_gateway_ip>` is the IP address of the NAT gateway.
 * `<interface>` is the network interface that will be used for this route.
 
-Below is an example of adding a route on a VM with Linux OS using the syntax above: _`ip route add 0.0.0.0/0 via 10.0.0.100 dev eth0`._
+Below is an example of adding a route on a VM with Linux OS using the syntax above:
 
-In case there is already an existing route to the internet through a different gateway IP, the user must remove the current route and add a new route to the NAT gateway IP.
+&#x20;_`ip route add 0.0.0.0/0 via 10.0.0.100 dev eth0`._
+
+**In case there is already an existing route to the internet through a different gateway IP, the user must remove the current route and add a new route to the NAT gateway IP.**
+
+_<mark style="color:purple;">Here is an example of an internet route that already exists through a different gateway IP on Linux OS</mark>_
+
+<figure><img src="../../.gitbook/assets/image (270).png" alt=""><figcaption></figcaption></figure>
+
+_<mark style="color:purple;">After deleting the existing route on the VM, add the route to the internet through NAT.</mark>_
+
+<figure><img src="../../.gitbook/assets/image (271).png" alt=""><figcaption></figcaption></figure>
+
+_<mark style="color:purple;">The result is successful as shown in the screenshot.</mark>_
+
+<figure><img src="../../.gitbook/assets/image (272).png" alt=""><figcaption></figcaption></figure>
 
 _<mark style="color:blue;">**Note:**</mark>_
 
 * _<mark style="color:blue;">The NAT's public interface is created automatically when the NAT is successfully established. Users can configure the public IP addresses into</mark>_ [_<mark style="color:blue;">purchased bandwidth</mark>_](https://docs.vngcloud.vn/vng-cloud-document/vserver/compute-hcm03-1a/vpc/bandwidth/datatransfers-bandwidth-service) _<mark style="color:blue;">packages (if available) to increase the bandwidth for the NAT.</mark>_
-* _<mark style="color:blue;">The NAT only connects to the internet through ports 80 and 443.</mark>_
+* _<mark style="color:blue;">NAT only connects to the internet through ports 80, 443, and ICMP packets. If you need support for other requests, please contact the VNG Cloud hotline.</mark>_
+* _<mark style="color:blue;">If DNS resolution is needed, users must ensure that the route above is correctly configured to go through the NAT gateway for the IP resolver.</mark>_
 
