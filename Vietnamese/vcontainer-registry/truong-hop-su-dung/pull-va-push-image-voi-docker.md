@@ -13,7 +13,7 @@ _\*Yêu cầu máy tính đã cài Docker engine (như Docker Desktop)_
 | “docker tag SOURCE\_IMAGE\[:TAG] vcr.vngcloud.vn/96000-sdkimage/IMAGE\[:TAG]” docker tag 09042024/hello-world vcr.vngcloud.vn/96000-sdkimage/hello-world:first |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Login bằng user/pass Repo
 
