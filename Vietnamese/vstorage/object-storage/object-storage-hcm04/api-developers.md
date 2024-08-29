@@ -187,16 +187,18 @@ Quản lý quyền truy cập cho các bucket và đối tượng.
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 * **GET Bucket Make Public:** Lấy thông tin bucket public hay private.
-* Đường dẫn: `GET /<bucket-name>/?publicAccessBlock`
-* Ví dụ: `GET`[`https://hcm04.vstorage.vngcloud.vn/demobucket01/?publicAccessBlock`](https://hcm04.vstorage.vngcloud.vn/demobucket01/?publicAccessBlock)
-*   Hoặc Curl qua lệnh:&#x20;
+  * Đường dẫn: `GET /<bucket-name>/?publicAccessBlock`
+  * Ví dụ: `GET`[`https://hcm04.vstorage.vngcloud.vn/demobucket01/?publicAccessBlock`](https://hcm04.vstorage.vngcloud.vn/demobucket01/?publicAccessBlock)
+  *   Hoặc Curl qua lệnh:&#x20;
 
-    ```
-    curl --location 'https://hcm04.vstorage.vngcloud.vn/demobucket01/?publicAccessBlock=null' \
-    --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
-    --header 'X-Amz-Date: 20240829T063914Z' \
-    --header 'Authorization: AWS4-HMAC-SHA256 Credential=9c9624d2ac082b98e6925444ab497746/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=041a0737e3e204ca2941069a3bab021ad54a8eb837fcbfd2ff8d2a3dd647d060'
-    ```
+      ```
+      curl --location 'https://hcm04.vstorage.vngcloud.vn/demobucket01/?publicAccessBlock=null' \
+      --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
+      --header 'X-Amz-Date: 20240829T063914Z' \
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=9c9624d2ac082b98e6925444ab497746/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=041a0737e3e204ca2941069a3bab021ad54a8eb837fcbfd2ff8d2a3dd647d060'
+      ```
+
+<figure><img src="../../../.gitbook/assets/image (742).png" alt=""><figcaption></figcaption></figure>
 
 ### **3. API Quản Lý Phiên Bản (Versioning)**
 
@@ -371,10 +373,38 @@ Quản lý truy cập và sử dụng S3 như một dịch vụ lưu trữ trang
 
 ### **6. API Object Locked**
 
+{% hint style="info" %}
+**Chú ý:**
+
+* Để thiết lập Object Locked cho một bucket, khi khởi tạo bucket, bạn cần thêm parameter **x-amz-bucket-object-lock-enabled = true**.
+{% endhint %}
+
 Thiết lập Object Locked thông qua API.
 
-* **PUT Bucket Object Locked**:
-* GET Bucket Object Locked:
+*   **Update Object Locked Configuration:** Được sử dụng để tải lên các đối tượng vào một bucket.
+
+    * Đường dẫn: `PUT /<bucket-name>?object-lock`
+    * Ví dụ: `PUT` [`https://hcm04.vstorage.vngcloud.vn/demoobjectlocked?object-lock`](https://hcm04.vstorage.vngcloud.vn/demoobjectlocked?object-lock)
+    *   Hoặc Curl tạo qua lệnh:&#x20;
+
+        ```
+        curl --location --request PUT 'https://hcm04.vstorage.vngcloud.vn/demoobjectlocked?object-lock=null' \
+        --header 'Content-MD5: frQ6AD8WUb/ZlO+2+AKIlw==' \
+        --header 'X-Amz-Content-Sha256: beaead3198f7da1e70d03ab969765e0821b24fc913697e929e726aeaebf0eba3' \
+        --header 'X-Amz-Date: 20240829T085503Z' \
+        --header 'Authorization: AWS4-HMAC-SHA256 Credential=c65bce455f431914fe5f39c28e8d56f7/20240829/HCM04/s3/aws4_request, SignedHeaders=content-length;content-md5;content-type;host;x-amz-content-sha256;x-amz-date, Signature=f39c72fe719ac44ea493df3013534510ea44d5f75360186532b514fe38139a8c' \
+        --data '<ObjectLockConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/"> 
+            <ObjectLockEnabled>Enabled</ObjectLockEnabled>
+            <Rule>
+                <DefaultRetention> 
+                    <Mode>COMPLIANCE</Mode>
+                    <Days>1</Days>
+                </DefaultRetention>
+            </Rule>
+        </ObjectLockConfiguration>'
+        ```
+
+    <figure><img src="../../../.gitbook/assets/image (743).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
