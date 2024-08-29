@@ -19,7 +19,7 @@ Hiện tại, hệ thống VKS của chúng tôi đã hỗ trợ bạn nâng c�
 **Bước 5:** Hệ thống VKS sẽ thực hiện nâng cấp tất cả các Node Group lên version của Control Plane. Sau khi việc nâng cấp hoàn tất, trạng thái Node Group trở về **ACTIVE**.&#x20;
 
 {% hint style="info" %}
-Chú ý:
+**Chú ý:**
 
 * Việc nâng cấp Node Group Version là không bắt buộc và độc lập với việc nâng cấp Control Plane Version. Tuy nhiên tất cả các Node Group trong một Cluster sẽ được nâng cấp trong cùng một lần, cũng như Control Plane Version và Node Group Version trong cùng một Cluster không được lệch quá 1 minor version. Bên cạnh đó, hệ thống VKS tự động nâng cấp Node Group Version khi phiên bản K8S Version hiện tại đang sử dụng cho Cluster của bạn quá thời hạn được nhà cung cấp hỗ trợ.
 * Trong quá trình nâng cấp Node Group Version, bạn không thể thực hiện các hành động khác trên Node Group của bạn.&#x20;
@@ -46,3 +46,9 @@ Chú ý:
 * Việc nâng cấp Node Group Version có thể mất một khoảng thời gian tùy thuộc vào kích thước và độ phức tạp của Node Group.
 * Trong một số trường hợp hiếm gặp, việc nâng cấp Node Group Version có thể thất bại. Nếu điều này xảy ra, hệ thống VKS sẽ tự động rollback cluster về phiên bản hiện tại.
 {% endhint %}
+
+Ngoài ra, bạn cần chú ý thêm trường thông tin:&#x20;
+
+* Node Group upgrade stratetry: chiến lược upgrade Node Group. Khi bạn thiết lập Node Group Upgrade Strategy thông qua phương thức Surge upgrade cho một Node Group trong VKS, hệ thống VKS sẽ cập nhật tuần tự để nâng cấp các node, theo thứ tự không xác định.
+  * Max surge: giới hạn số lượng node được nâng cấp đồng thời (số lượng node mới (surge) có thể được tạo ra cùng một lúc). Mặc định Max surge = 1 - chỉ nâng cấp một node tại một thời điểm. với maxUnavailable
+  * Max unavailable: giới hạn số lượng node không thể truy cập được trong quá trình nâng cấp (số lượng node hiện tại có thể bị gián đoạn cùng một lúc). Mặc định Max unavailable = 0 - đảm bảo tất cả các node đều có thể truy cập được trong quá trình nâng cấp.
