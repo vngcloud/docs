@@ -60,7 +60,7 @@ Những API này cho phép bạn quản lý các bucket
   *   Hoặc Curl qua lệnh:&#x20;
 
       ```
-      curl --location --request DELETE 'DELETE https://hcm04.vstorage.vngcloud.vn/demobucket' \
+      curl --location --request DELETE 'https://hcm04.vstorage.vngcloud.vn/demobucket' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T041239Z' \
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=e164da98dd0564eea205ec8624d701d8809afab7ab57867e45a3beb227f8a71d'
