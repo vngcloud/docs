@@ -77,7 +77,12 @@ SSE-S3 (Server-Side Encryption with S3 Managed Keys) là tính năng mã hóa d�
 
 ### **Object Locked**
 
-**Object Lock** là tính năng giúp bảo vệ dữ liệu của bạn khỏi bị xóa hoặc ghi đè trong một khoảng thời gian cố định hoặc vô thời hạn. Tính năng này sử dụng model **WORM** (Write Once, Read Many), nghĩa là sau khi một object được tải lên S3 và được locked, object đó không thể bị xóa hoặc thay đổi bởi bất kỳ ai, kể cả người dùng root.
+**Object Lock** là tính năng giúp bảo vệ dữ liệu của bạn khỏi bị xóa hoặc ghi đè trong một khoảng thời gian cố định hoặc vô thời hạn. Tính năng này sử dụng model **WORM** (Write Once, Read Many), nghĩa là sau khi một object được tải lên S3 và được locked, object đó không thể bị xóa hoặc thay đổi bởi bất kỳ ai, kể cả người dùng root. Hiện tại, trên region HCM04, chúng tôi đã hỗ trợ bạn thiết lập Object Locked ở 2 mode Compliance, Legal Hold và chưa hỗ trợ mode Governance. Nếu bạn sử dụng 3rd party software để thiết lập Object Locked ở mode Governance này thì S3 key được tạo ra sẽ có full quyền xóa các object version trên bucket của bạn. Cụ thể:
+
+* **Retention mode**: ngăn chặn việc xóa và ghi đè object version trong một khoảng thời gian nhất định. Trong Retention period sẽ có 2 mode:
+  * **Compliance mode (đã hỗ trợ)**: bất kỳ người dùng hoặc admin,…nào cũng không thể ghi đè object version được locked. Khi hết thời gian được thiết lập trước, người dùng có thể thực hiện xóa hoặc ghi đè object bình thường.
+  * **Governance mode (coming soon)**: chỉ những người dùng có quyền đặc biệt (có quyền ByPassGovernance), chẳng hạn như người dùng root hoặc S3 Key không bật Restriction by IAM mới có thể xóa hoặc ghi đè object.
+* **Legal Hold:** ngăn chặn việc xóa và ghi đè object version vô thời hạn tới khi nào người dùng disable. Mode này hoạt động độc lập với Retention period. Người dùng có quyền PutObjectLegalHold có thể thực hiện thêm hoặc remove legal hold cho object.
 
 Để thiết lập Object Locked cho một bucket bằng S3 Browser, khi khởi tạo một bucket mới, bạn cần chọn phương án **Enable S3 Objected Lock.**&#x20;
 
