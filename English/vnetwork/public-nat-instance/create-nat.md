@@ -28,7 +28,7 @@ Below is an example of adding a route on a VM with Linux OS using the syntax abo
 
 _<mark style="color:purple;">Here is an example of an internet route that already exists through a different gateway IP on Linux OS</mark>_
 
-<figure><img src="../../.gitbook/assets/image (273).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (274).png" alt=""><figcaption></figcaption></figure>
 
 _<mark style="color:purple;">After deleting the existing route on the VM, add the route to the internet through NAT.</mark>_
 
