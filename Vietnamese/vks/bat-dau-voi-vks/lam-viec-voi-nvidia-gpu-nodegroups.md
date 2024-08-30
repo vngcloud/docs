@@ -40,7 +40,7 @@
     kubectl get nodes -owide
     ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -56,7 +56,7 @@
       --set dcgmExporter.serviceMonitor.enabled=true
     ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Hệ thống mất khoảng 5 - 10 phút để thực hiện cài đặt operator này, bạn hãy đợi tới khi việc cài đặt hoàn thành. Trong thời gian này, bạn có thể kiểm tra tất cả các pods trong namespace`gpu-operator` đang chạy thông qua lệnh:&#x20;
 
@@ -64,7 +64,7 @@
     kubectl -n gpu-operator get pods -owide
     ```
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Operator sẽ gán label`nvidia.com/gpu`cho node trong node group của bạn, lable này được NVIDIA GPU Operator sử dụng để identify nodes, bạn cũng có thể sử dụng label này để filter những node đang có NVIDIA GPU. Bạn có thể kiểm tra các node được gán nhãn này qua lệnh:&#x20;
 
@@ -364,7 +364,7 @@ kubectl patch clusterpolicies.nvidia.com/cluster-policy \
 kubectl get clusterpolicy
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Bây giờ, bạn cần thêm label cho node với tên mà bạn chỉ định tại trong file `ConfigMap`:
 
@@ -377,7 +377,7 @@ kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-2080ti
 kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
 ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Verify Multiple Node-Specific Configurations
 
@@ -398,7 +398,7 @@ kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
     kubectl delete deploy tensorflow-mnist
     ```
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -424,7 +424,7 @@ kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
       --set prometheus.url=http://${prometheus_service}.prometheus.svc.cluster.local
     ```
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Sau khi cài đặt thành công, chạy lệnh bên dưới để kiểm tra các resource Prometheus đang chạy:
 
