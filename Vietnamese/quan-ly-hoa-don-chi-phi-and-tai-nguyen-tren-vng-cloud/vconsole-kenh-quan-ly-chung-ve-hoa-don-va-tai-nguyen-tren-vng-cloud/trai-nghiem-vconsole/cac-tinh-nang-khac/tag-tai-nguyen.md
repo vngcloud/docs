@@ -20,7 +20,7 @@
 
 ### **1. Gắn tag cho tài nguyên**
 
-**Bước 1:** Truy cập vào trang thống kê tài nguyên tại đây: [https://stg-dashboard.console.vngcloud.tech/resource](https://stg-dashboard.console.vngcloud.tech/resource)
+**Bước 1:** Truy cập vào trang thống kê tài nguyên tại đây: [https://dashboard.console.vngcloud.vn/resource](https://dashboard.console.vngcloud.vn/resource)
 
 **Bước 2:** Chọn một hoặc nhiều tài nguyên bạn muốn gắn tag (hình bên dưới)
 
@@ -41,7 +41,7 @@ Một cửa sổ giao diện sẽ mở ra cho phép bạn thêm hoặc xóa thô
 
 ### **2. Tìm kiếm tài nguyên theo tag**
 
-**Bước 1:** Truy cập vào trang thống kê tài nguyên tại đây: [https://stg-dashboard.console.vngcloud.tech/resource](https://stg-dashboard.console.vngcloud.tech/resource)
+**Bước 1:** Truy cập vào trang thống kê tài nguyên tại đây: [https://dashboard.console.vngcloud.vn/resource](https://dashboard.console.vngcloud.vn/resource)
 
 **Bước 2:** Tìm đến ô tìm kiếm như hình bên dưới:
 
