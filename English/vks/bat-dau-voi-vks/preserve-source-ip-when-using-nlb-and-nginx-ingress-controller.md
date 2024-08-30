@@ -90,8 +90,8 @@ spec:
 
 * Then I use IP 103.245.252.75 to curl to host kkk.example.com as follows:
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fhst5Uls0MCZoQpvo1vdD%252Fimage.png%3Falt%3Dmedia%26token%3D80ceb211-3d89-4312-8cfc-1011349f7f66&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=60eb3102&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
 
 * The recorded log result has this Client IP information as shown:
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FjD8kypf94CVhjQVp9N17%252Fimage.png%3Falt%3Dmedia%26token%3D9c29421a-c026-4467-84dc-c7de53e2fccb&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f11ecfbc&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
