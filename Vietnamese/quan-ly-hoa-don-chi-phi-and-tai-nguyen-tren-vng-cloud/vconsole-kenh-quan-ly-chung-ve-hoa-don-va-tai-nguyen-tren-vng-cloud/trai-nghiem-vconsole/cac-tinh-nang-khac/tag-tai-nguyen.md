@@ -54,7 +54,7 @@ Một cửa sổ giao diện sẽ mở ra cho phép bạn thêm hoặc xóa thô
 **Lưu ý:**
 
 * **Giá trị tag:** Giá trị tag phải chính xác và tuân theo định dạng đã được quy định.
-* **Phần quyền:** Quyền hạn của người dùng sẽ ảnh hưởng đến khả năng tạo, sửa và xóa tag.
+* **Phần quyền:** Chỉ có Root User mới có thể thêm mới, chỉnh sửa trên tag tài nguyên. IAM User chỉ được phép xem.
 
 ### 3. Đồng bộ thông tin tag vào hóa đơn
 
