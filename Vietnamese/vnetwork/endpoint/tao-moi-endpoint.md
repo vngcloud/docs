@@ -1,5 +1,13 @@
 # Tạo mới Endpoint
 
+
+
+{% hint style="danger" %}
+**Lưu ý quan trọng:**
+
+_<mark style="color:blue;">Tại cùng một region, tương ứng với một VPC người dùng chỉ được tạo một Endpoint kết nối đến một dịch vụ của VNG Cloud xác định (vd: vStorage)</mark>_
+{% endhint %}
+
 * Người dùng login vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/) với region = HCM
 * Chọn menu “**Endpoint**” tại thanh menu bên trái màn hình
 * Chọn chức năng “**Create an Endpoint**”
@@ -17,4 +25,3 @@
 
 &#x20;Người dùng sẽ chờ hệ thống tạo Endpoint cho đến khi hoàn tất. Khi Endpoint được tạo thành công, trên màn hình danh sách Endpoint, người dùng thấy Endpoint xuất hiện tại đây.
 
-_<mark style="color:blue;">Lưu ý</mark>_<mark style="color:blue;">:</mark> <mark style="color:blue;"></mark>_<mark style="color:blue;">tại cùng một region, tương ứng với một VPC người dùng chỉ được tạo một Endpoint kết nối đến một dịch vụ của VNG Cloud xác định (vd: vStorage)</mark>_
