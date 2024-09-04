@@ -1,5 +1,13 @@
 # Create Endpoint
 
+
+
+{% hint style="danger" %}
+**Important**
+
+_<mark style="color:blue;">In the same region, corresponding to one VPC, users are only allowed to create one Endpoint connecting to a specified VNG Cloud service (e.g., vStorage)</mark>_
+{% endhint %}
+
 * Users log in to the link [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/), region = HCM
 * Select the "**Endpoint**" menu from the left-hand menu bar.
 * Select the "**Create an Endpoint**" function
@@ -17,4 +25,3 @@
 
 Users will wait for the system to create the Endpoint until it is completed. When the Endpoint is successfully created, users will see the Endpoint appears on the Endpoint list screen.
 
-_<mark style="color:blue;">**Note**</mark><mark style="color:blue;">: In the same region, corresponding to one VPC, users are only allowed to create one Endpoint connecting to a specified VNG Cloud service (e.g., vStorage)</mark>_
