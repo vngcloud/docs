@@ -1,5 +1,11 @@
 # Teams
 
+{% hint style="info" %}
+**Chú ý:**&#x20;
+
+* Microsoft Teams dừng support Office 365 connector, vì vậy, không thể tạo mới kênh notify qua Teams trên vMonitor. Team vMonitor Platform đang thay đổi phương thức theo đề suất của Microsoft và sẽ update lại sớm nhất.&#x20;
+{% endhint %}
+
 Để tạo Notification với kênh gửi/ nhận là Webhook, hãy làm theo hướng dẫn bên dưới:
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
