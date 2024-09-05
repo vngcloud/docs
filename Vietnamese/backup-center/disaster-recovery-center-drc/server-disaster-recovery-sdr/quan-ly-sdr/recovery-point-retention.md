@@ -12,11 +12,11 @@ DRC cung cấp ba loại chính sách Retention Recovery Point: Daily, Weekly v�
 
 * **Thời gian thực hiện:** 00h00m mỗi ngày (đảm bảo chạy sau job tạo point)
 * **Quy tắc lưu trữ:**
-  * Khi tạo một Point Daily mới, toàn bộ recovery point & snapshot tương ứng với point đó của ngày hôm trước sẽ được giữ lại.
-  * Từ ngày hôm kia trở về trước, chỉ giữ lại các point & snapshot có đánh dấu "contain Daily" (thường là point lúc 0h00m của ngày đó).
-* **Ví dụ:** Vào lúc 0h00m ngày 20:
-  * Toàn bộ point của ngày 19 sẽ được giữ lại.
-  * Từ ngày 18 trở về trước, các point và snapshot sẽ bị xóa, chỉ giữ lại point có đánh dấu "contain Daily" (là point lúc 0h00m ngày 18).
+  * Khi tạo một Point Daily mới thứ \[n], toàn bộ recovery point & snapshot tương ứng với ngày thứ \[n] và ngày thứ \[n-1] sẽ được giữ lại.
+  * Từ ngày thứ \[n-2], chỉ giữ lại các point & snapshot có đánh dấu "contain Daily" (thường là point lúc 0h00m của ngày đó).
+* **Ví dụ:** Vào lúc 0h00m ngày thứ 3:
+  * Toàn bộ point của ngày 2 sẽ được giữ lại.
+  * Từ ngày thứ 1 trở về trước, các point và snapshot sẽ bị xóa, chỉ giữ lại point có đánh dấu "contain Daily" (là point lúc 0h00m ngày thứ 1).
 
 ## Weekly
 
