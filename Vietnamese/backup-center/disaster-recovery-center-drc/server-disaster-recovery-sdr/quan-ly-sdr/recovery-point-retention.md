@@ -6,7 +6,7 @@ Dưới đây là mô tả chi tiết về các chính sách Retention Recovery 
 
 **Mô tả Retention Recovery Point của DRC**
 
-DRC cung cấp ba loại chính sách Retention Recovery Point: Daily, Weekly và giới hạn tổng số Point được phép lưu trữ.
+DRC áp dụng chính sách Retention Recovery Point như sau: Daily, Weekly, thời gian lưu trữ và giới hạn tổng số Point được phép lưu trữ.
 
 ## Daily
 
@@ -27,6 +27,12 @@ DRC cung cấp ba loại chính sách Retention Recovery Point: Daily, Weekly v�
 **Ví dụ:**
 
 * Khi tạo đến point Weekly thứ 3, các point Daily của tuần thứ 1 sẽ bị xóa, chỉ giữ lại point được đánh dấu là "Weekly".
+
+## Tổng thời gian lưu trữ
+
+* **Quy tắc lưu trữ:**
+  * Recovery point được lưu trữ tại DRC tối đa là 30 ngày.
+  * Các point có thời gian lưu trữ vượt quá 30 ngày sẽ được hệ thống xóa tự động.
 
 ## Total Point
 

@@ -7,7 +7,6 @@ description: Chi phí sử dụng Server Disaster Recovery
 Khi sử dụng dịch vụ Server Disaster Recovery (SDR), các khoản phí sau sẽ được tính:
 
 * **Ổ đĩa dự phòng (Shadow Volume):** Phí sử dụng các ổ đĩa gắn liền với máy chủ dự phòng, tính theo dung lượng và loại ổ đĩa (SSD hoặc NVMe).
-* **Điểm khôi phục (Recovery Point):** Phí lưu trữ các bản sao snapshot (ảnh chụp nhanh) của dữ liệu, được tạo ra định kỳ trong quá trình sao chép.
 * **Đường truyền cross-region:** Phí sử dụng đường truyền mạng để sao chép dữ liệu giữa các vùng (region) khác nhau, trong trường hợp bạn sử dụng tính năng DR cross-region.
 * **Máy chủ kiểm tra chuyển đổi dự phòng (Test Failover Server):** Khi thực hiện kiểm tra chuyển đổi dự phòng (Test Failover), một máy ảo mới sẽ được tạo ra tạm thời. Bạn sẽ phải trả các khoản phí tương tự như máy chủ dự phòng và ổ đĩa dự phòng cho máy ảo này trong thời gian kiểm tra.
 
@@ -19,11 +18,11 @@ Khi sử dụng dịch vụ Server Disaster Recovery (SDR), các khoản phí sa
 
 **Lưu ý:**
 
-* Chi phí cụ thể có thể thay đổi tùy thuộc vào cấu hình máy chủ, loại ổ đĩa, số lượng điểm khôi phục và lượng dữ liệu được sao chép.
+* Chi phí cụ thể có thể thay đổi tùy thuộc vào cấu hình máy chủ, loại ổ đĩa và lượng dữ liệu được sao chép.
 * Bạn có thể xem chi tiết về giá dịch vụ SDR trên trang web của VNG Cloud hoặc liên hệ với đội ngũ hỗ trợ để được tư vấn cụ thể.
 
 **Tóm tắt:**
 
-* Các dịch vụ tại Server Disaster Recovery sẽ được tính phí dựa trên việc sử dụng ổ đĩa dự phòng, điểm khôi phục và đường truyền cross-region.
+* Các dịch vụ tại Server Disaster Recovery sẽ được tính phí dựa trên việc sử dụng ổ đĩa dự phòng và đường truyền cross-region.
 * Khi thực hiện Test Failover, bạn cũng sẽ phải trả phí cho máy ảo tạm thời được tạo ra.
 * Người dùng trả trước cần có đủ credit để sử dụng các tính năng Start Replication và Test Failover.
