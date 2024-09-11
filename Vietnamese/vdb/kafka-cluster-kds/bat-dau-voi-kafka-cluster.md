@@ -65,29 +65,29 @@ Tham khảo hướng dẫn đăng nhập vào VNG Cloud [tại đây](../../iden
 
 Có nhiều cách kết nối tới cụm Kafka, hướng dẫn sau sẽ giới thiệu bạn cách kết nối đến cụm kafka thông qua private client.
 
+Lưu ý: Hướng dẫn cài đặt dưới đây được thực hiện trên server client unbuntu 22.04.
+
 1. Khởi tạo Server. Xem hướng dẫn chi tiết khởi tạo server [tại đây](../../vserver/compute-hcm03-1a/server/tao-may-chu-bang-bang-dieu-khien.md).
 2. Kết nối đến server vừa khởi tạo. Xem hướng dẫn chi tiết [tại đây.](../../vserver/compute-hcm03-1a/server/ket-noi-vao-may-chu-ao/)
 3. Cài đặt Java và các package cần thiết trên server với lệnh sau:
 
-````
 ```bash
 sudo apt-get update && sudo apt-get install default-jre tar unzip -y
 ```
-````
 
 4. Tiếp theo, tải Apache Kafka với lệnh sau:
 
-````
 ```bash
 wget https://archive.apache.org/dist/kafka/{Your Kafka Cluster Version}/kafka_2.13-{Your Kafka Cluster Version}.tgz
 tar -xzf kafka_2.13-{YOUR MSK VERSION}.tgz
 ```
-Example:
+
+Example
+
 ```bash
 wget https://archive.apache.org/dist/kafka/3.7.0/kafka_2.13-3.7.0.tgz
 tar -xzf kafka_2.13-3.7.0.tgz
 ```
-````
 
 5.  Tiếp theo, tải về các chứng chỉ TLS để truy cập đến cụm Kafka.&#x20;
 
@@ -96,17 +96,17 @@ tar -xzf kafka_2.13-3.7.0.tgz
 
 Lưu ý: User ID sẽ là tên thư mục sau khi giải nén chứng chỉ vừa tải về
 
-````
 ```bash
 unzip vng-manage-key.zip 
 cd {User ID}/mtls
 ```
-Example:
+
+Example
+
 ```bash
 unzip vng-manage-key.zip
 cd user-4436a54a-feaa-4afd-bfe7-4bd3d2cae33a/mtls/
 ```
-````
 
 7. Cho phép truy cập đến cụm Kafka
 
@@ -125,29 +125,29 @@ Lưu ý: Port 9094 với mTLS và 9096 với SASL
 
 Sau khi cho phép truy cập từ máy khách đến cụm Kafka, kết nối tới máy khách đã khởi tạo trước đó, và thực hiện lệnh sau:
 
-````
 ```bash
 {Path To Your Kafka Installation}/bin/kafka-console-producer.sh --bootstrap-server {Your Kafka Cluster Private endpoint}  --producer.config config.properties  --topic {Your Kafka Topic}
 ```
-Example:
+
+Example
+
 ```bash
 /home/stackops/kafka_2.13-3.7.0/bin/kafka-console-producer.sh --bootstrap-server 10.5.0.6:9094,10.5.0.3:9094,10.5.0.5:9094 --producer.config config.properties --topic kafka-cluster-tutorial
 ```
-````
 
 9. Consume message từ Kafka topic
 
 Sau khi cho phép truy cập từ máy khách đến cụm Kafka, kết nối tới máy khách đã khởi tạo trước đó, và thực hiện lệnh sau:
 
-````
 ```bash
 {Path To Your Kafka Installation}/bin/kafka-console-consumer.sh --bootstrap-server {Your Kafka Cluster Private endpoint} --consumer.config config.properties  --topic {Your Kafka Topic}  --from-beginning
 ```
-Example:
+
+Example
+
 ```bash
 /home/stackops/kafka_2.13-3.7.0/bin/kafka-console-consumer.sh --bootstrap-server 10.5.0.6:9094,10.5.0.3:9094,10.5.0.5:9094 --consumer.config  config.properties   --topic kafka-cluster-tutorial    --from-beginning
 ```
-````
 
 ## Bước 6: Xóa Cụm Kafka
 
