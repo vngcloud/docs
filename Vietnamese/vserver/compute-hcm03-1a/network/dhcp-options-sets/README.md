@@ -2,7 +2,7 @@
 
 ## Tổng quan
 
-Chức năng DHCP (Dynamic Host Configuration Protocol) Options Sets cho phép bạn cấu hình địa chỉ DNS server IP cho máy chủ ảo (VM) của vServer trong VPC. Trước khi bạn có thể sử dụng DHCP options set, bạn phải có trước địa chỉ DNS server IP, sau đó bạn có thể gán (Associate) DHCP options sets với VPC. Sau khi DHCP options set được gán vào VPC, nếu tạo máy ảo VM có VPC sẽ sử dụng DHCP options set vừa tạo, thì sau khi DHCP options set được đồng bộ với các máy chủ VM, máy chủ đó cũng sẽ sử dụng DHCP option set đó.
+Chức năng **DHCP** (Dynamic Host Configuration Protocol) Options Sets cho phép bạn cấu hình địa chỉ DNS server IP cho máy chủ ảo (VM) của vServer trong VPC. Trước khi bạn có thể sử dụng DHCP options set, bạn phải có trước địa chỉ DNS server IP, sau đó bạn có thể gán (Associate) DHCP options sets với VPC. Sau khi DHCP options set được gán vào VPC, nếu tạo máy ảo VM có VPC sẽ sử dụng DHCP options set vừa tạo, thì sau khi DHCP options set được đồng bộ với các máy chủ VM, máy chủ đó cũng sẽ sử dụng DHCP option set đó.
 
 **Một số lưu ý khi cấu hình DHCP options set:**
 
@@ -10,6 +10,15 @@ Chức năng DHCP (Dynamic Host Configuration Protocol) Options Sets cho phép b
 * **Một DHCP option set** được cho phép **gán với nhiều VPC**;
 * **Một VPC chỉ** được **gán vào một DHCP**;
 * Có giới hạn số lượng tạo **10 DHCP options set** (không tăng giới hạn sử dụng được)
+
+{% hint style="info" %}
+**Lưu ý:**
+
+Sau khi cấu hình DNS cho máy ảo VM xong, để làm mới việc sử dụng DHCP trên VM, bạn có thể thực hiệm bằng cách khởi động lại VM (restart), hoặc đợi cho đến khi tự hết thời hạn sử dụng, hoặc chủ động chạy câu lệnh sau để thực hiện:
+
+* **Với máy chủ Linux**: gõ câu lệnh _<mark style="background-color:orange;">sudo dhclient -r && sudo dhclient</mark>_
+* **Với máy chủ Windows Server**: gõ câu lệnh _<mark style="background-color:orange;">ipconfig /renew</mark>_
+{% endhint %}
 
 ***
 
@@ -39,6 +48,8 @@ DNS Server IP cho phép **điền tối đa là 4 IP** (có thể điền thêm 
 {% endhint %}
 
 6. Sau khi thiết lập hoàn tất, chọn nút "**Create**" để hoàn thành việc thiết lập.
+
+
 
 ***
 
