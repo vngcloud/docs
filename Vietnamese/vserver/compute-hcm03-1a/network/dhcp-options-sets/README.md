@@ -28,8 +28,14 @@ Với hướng dẫn này sẽ giúp bạn cách tạo ra một DHCP Options set
 
 1. Đăng nhập vào VNG Cloud, chọn đến dịch vụ vServer;
 2. Tại màn hình vServer, chọn vùng (region) phù hợp;
-3. Trên thanh menu bên tay trái, chọn **DHCP options sets**;
+3. Trên thanh menu bên tay trái, chọn **DHCPs**;
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
 4. Tại giao diện màn hình danh sách DHCP options sets, chọn nút **Create a DHCP Options Set**;
+
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
 5. Tại Trang tạo DHCP options set, hãy những thông số sau:
 
 * **DHCP Option Set name**: Điền tên cho DHCP options set này;
@@ -47,9 +53,11 @@ Với hướng dẫn này sẽ giúp bạn cách tạo ra một DHCP Options set
 DNS Server IP cho phép **điền tối đa là 4 IP** (có thể điền thêm 2 IP nếu vẫn sử dụng 2 IP default của hệ thống)
 {% endhint %}
 
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
 6. Sau khi thiết lập hoàn tất, chọn nút "**Create**" để hoàn thành việc thiết lập.
 
-
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -59,10 +67,19 @@ Sau khi tạo được DHCP options set, cần thực hiện việc gán VPC và
 
 1. Đăng nhập vào VNG Cloud, chọn đến dịch vụ vServer;
 2. Tại màn hình vServer, chọn vùng (region) phù hợp;
-3. Trên thanh menu bên tay trái, chọn **DHCP options sets**;
+3. Trên thanh menu bên tay trái, chọn **DHCPs**;
 4. Chọn một bộ DHCP đã tạo trước, để vào màn hình thông tin chi tiết;
 5. Tại màn hình thông tin chi tiết, ở Tab Associated VPCs liệt kê tất cả VPC được gán vào;
-6. Nhấn vào nút "**Associate**", màn hình liệt kê tất cả các VPC, chọn VPC cần gán sau đó nhấn nút "**Associate**".
+
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+6. Nhấn vào nút "**Associate**", màn hình liệt kê tất cả các VPC, chọn VPC cần gán sau đó nhấn nút "**Associate**".&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+Sau khi gán thành công thì thông tin VPC được gán sẽ hiển thị ở màn hình danh sách VPC được gán vào DHCP.
+
+<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -74,9 +91,12 @@ Trong quá trình sử dụng DHCP options set, người dùng có thể xóa DH
 
 1. Đăng nhập vào VNG Cloud, chọn đến dịch vụ vServer;
 2. Tại màn hình vServer, chọn vùng (region) phù hợp;
-3. Trên thanh menu bên tay trái, chọn **DHCP options sets**;
+3. Trên thanh menu bên tay trái, chọn **DHCPs**;
 4. Chọn một bộ DHCP đã tạo trước và muốn xóa, để vào màn hình thông tin chi tiết;
-5. Tại màn hình thông tin chi tiết, ở Tab Associated VPCs liệt kê tất cả VPC được gán vào, người dùng chọn tất cả các VPC đã gán và nhấn chọn "Detach"  để gỡ VPC ra;
+5. Tại màn hình thông tin chi tiết, ở Tab Associated VPCs liệt kê tất cả VPC được gán vào, người dùng chọn tất cả các VPC đã gán và nhấn chọn "**Detach**"  để gỡ VPC ra;
+
+<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
 6. Nhấn xác nhận gỡ tất cả VPC khỏi DHCP options set.
 
 ### Bước 2: Xóa DHCP options set
@@ -84,3 +104,5 @@ Trong quá trình sử dụng DHCP options set, người dùng có thể xóa DH
 1. Sau khi gỡ tất cả VPC khỏi DHCP option set, người dùng quay trở lại màn hình danh sách DHCP options set;
 2. Tại DHCP muốn xóa, nhấn chọn hành động "Delete" để thực hiện việc xóa;
 3. Xác nhận xóa DHCP options set. Khi đã xóa DHCP options set thì không thể phục hồi được.
+
+<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
