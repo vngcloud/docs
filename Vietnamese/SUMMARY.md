@@ -30,7 +30,7 @@
     * [Image](vserver/compute-hcm03-1a/image.md)
     * [Network](vserver/compute-hcm03-1a/network/README.md)
       * [Virtual Private Cloud (VPC)](vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md)
-      * [DHCP options sets](vserver/compute-hcm03-1a/network/dhcp-options-sets/README.md)
+      * [Bộ tùy chọn DHCP](vserver/compute-hcm03-1a/network/dhcp-options-sets/README.md)
         * [DNS Server IP Address](vserver/compute-hcm03-1a/network/dhcp-options-sets/dns-server-ip-address.md)
       * [Instance IP Address](vserver/compute-hcm03-1a/network/instance-ip-address.md)
       * [Floating IP](vserver/compute-hcm03-1a/network/floating-ip.md)

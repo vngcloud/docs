@@ -1,8 +1,8 @@
-# DHCP options sets
+# Bộ tùy chọn DHCP
 
 ## Tổng quan
 
-Chức năng **DHCP** (Dynamic Host Configuration Protocol) Options Sets cho phép bạn cấu hình địa chỉ DNS server IP cho máy chủ ảo (VM) của vServer trong VPC. Trước khi bạn có thể sử dụng DHCP options set, bạn phải có trước địa chỉ DNS server IP, sau đó bạn có thể gán (Associate) DHCP options sets với VPC. Sau khi DHCP options set được gán vào VPC, nếu tạo máy ảo VM có VPC sẽ sử dụng DHCP options set vừa tạo, thì sau khi DHCP options set được đồng bộ với các máy chủ VM, máy chủ đó cũng sẽ sử dụng DHCP option set đó.
+Chức năng Bộ tùy chọn **DHCP** (Dynamic Host Configuration Protocol) hay DHCP Options Sets cho phép bạn cấu hình địa chỉ DNS server IP cho máy chủ ảo (VM) của vServer trong VPC. Trước khi bạn có thể sử dụng DHCP options set, bạn phải có trước địa chỉ DNS server IP, sau đó bạn có thể gán (Associate) DHCP options sets với VPC. Sau khi DHCP options set được gán vào VPC, nếu tạo máy ảo VM có VPC sẽ sử dụng DHCP options set vừa tạo, thì sau khi DHCP options set được đồng bộ với các máy chủ VM, máy chủ đó cũng sẽ sử dụng DHCP option set đó.
 
 **Một số lưu ý khi cấu hình DHCP options set:**
 
