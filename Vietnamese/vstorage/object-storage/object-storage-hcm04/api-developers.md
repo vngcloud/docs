@@ -463,7 +463,7 @@ Thiết lập Object Locked thông qua API.
 * Để xóa một object version, bạn cần thêm param versionId vào API này. Ví dụ, để xóa object test.txt có version-id = "z3-o0S5HEC6-XsjEjuHoRwoE-F6X1IF", bạn có thể curl theo lệnh:&#x20;
 
 ```
-curl --location --request DELETE 'https://hcm04.vstorage.vngcloud.vn/thuyvt233/test.txt?versionId=z3-o0S5HEC6-XsjEjuHoRwoE-F6X1IF' \
+curl --location --request DELETE 'https://hcm04.vstorage.vngcloud.vn/demobucket/test.txt?versionId=z3-o0S5HEC6-XsjEjuHoRwoE-F6X1IF' \
 --header 'x-amz-bypass-governance-retention: true' \
 --header 'versionId: z3-o0S5HEC6-XsjEjuHoRwoE-F6X1IF' \
 --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
