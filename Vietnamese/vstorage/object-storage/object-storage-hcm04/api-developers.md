@@ -458,6 +458,19 @@ Thiết lập Object Locked thông qua API.
 
 <figure><img src="../../../.gitbook/assets/image (739).png" alt=""><figcaption></figcaption></figure>
 
+**Chú ý:**
+
+* Để xóa một object version, bạn cần thêm param versionId vào API này. Ví dụ, để xóa object test.txt có version-id = "z3-o0S5HEC6-XsjEjuHoRwoE-F6X1IF", bạn có thể curl theo lệnh:&#x20;
+
+```
+curl --location --request DELETE 'https://hcm04.vstorage.vngcloud.vn/thuyvt233/test.txt?versionId=z3-o0S5HEC6-XsjEjuHoRwoE-F6X1IF' \
+--header 'x-amz-bypass-governance-retention: true' \
+--header 'versionId: z3-o0S5HEC6-XsjEjuHoRwoE-F6X1IF' \
+--header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
+--header 'X-Amz-Date: 20240911T065412Z' \
+--header 'Authorization: AWS4-HMAC-SHA256 Credential=b98adf996bb003a1bd79748c5e779ccd/20240911/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-bypass-governance-retention;x-amz-content-sha256;x-amz-date, Signature=6a69759b132a6be8f609fb66bca41f06a33e560ca4ff012de01351cc7bcbd05e'
+```
+
 * **HEAD Object**: Truy vấn metadata của đối tượng mà không cần tải về nội dung.
   * Đường dẫn: `HEAD /<bucket-name>/<object-key>`
   * Ví dụ: `HEAD`[`https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt`](https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt)
