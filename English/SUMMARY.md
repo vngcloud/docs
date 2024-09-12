@@ -167,7 +167,7 @@
       * [Manage vContainer with Terraform](vserver/compute-hcm03-1a/terraform/manage-vcontainer-with-terraform.md)
       * [Manage vLB with Terraform](vserver/compute-hcm03-1a/terraform/manage-vlb-with-terraform.md)
       * [Reference Document](vserver/compute-hcm03-1a/terraform/reference-document.md)
-      * [Argument Intergration with Terreform](vserver/compute-hcm03-1a/terraform/argument-intergration-with-terreform.md)
+      * [Argument Intergration with Terraform](vserver/compute-hcm03-1a/terraform/argument-intergration-with-terreform.md)
     * [Identity and Access Management (IAM) for vServer](vserver/compute-hcm03-1a/identity-and-access-management-iam-for-vserver/README.md)
       * [Actions, resources, and required conditions for vServer Access Decentralization](vserver/compute-hcm03-1a/identity-and-access-management-iam-for-vserver/actions-resources-and-required-conditions-for-vserver-access-decentralization.md)
       * [Use Cases IAM](vserver/compute-hcm03-1a/identity-and-access-management-iam-for-vserver/use-cases-iam.md)

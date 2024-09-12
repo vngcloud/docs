@@ -1,4 +1,4 @@
-# Argument Intergration with Terreform
+# Argument Intergration with Terraform
 
 {% hint style="info" %}
 **Content**
@@ -7,7 +7,7 @@
 * [Attributes transfer to Terreform](argument-intergration-with-terreform.md#argumentintergrationwithterreform-attributestransfertoterreform)
 {% endhint %}
 
-## **Arguments tranfer from Terreform** <a href="#argumentintergrationwithterreform-argumentstranferfromterreform" id="argumentintergrationwithterreform-argumentstranferfromterreform"></a>
+## **Arguments tranfer from Terraform** <a href="#argumentintergrationwithterreform-argumentstranferfromterreform" id="argumentintergrationwithterreform-argumentstranferfromterreform"></a>
 
 ***
 
@@ -44,14 +44,14 @@ resource "vngcloud_vserver_server" "server"{
 {% hint style="info" %}
 **Important**
 
-When a resource is expired and status be Terminated, if User would like to renew a resource, **User must to implement Renew in User Portal when using Terreform**, due to Terreform does not have the ability to renew.
+When a resource is expired and status be Terminated, if User would like to renew a resource, **User must to implement Renew in User Portal when using Terraform**, due to Terraform does not have the ability to renew.
 {% endhint %}
 
-## Attributes transfer to Terreform <a href="#argumentintergrationwithterreform-attributestransfertoterreform" id="argumentintergrationwithterreform-attributestransfertoterreform"></a>
+## Attributes transfer to Terraform <a href="#argumentintergrationwithterreform-attributestransfertoterreform" id="argumentintergrationwithterreform-attributestransfertoterreform"></a>
 
 ***
 
-When VNG Cloud System has recorded all arguments above from Terreform, the following attributes are exported:
+When VNG Cloud System has recorded all arguments above from Terraform, the following attributes are exported:
 
 * **id** STRING : ID of this Server
 * **external\_interfaces:** (List of Map of String) List of Network external interface. It included:
