@@ -1,12 +1,12 @@
-# Thông số tích hợp với Terreform
+# Thông số tích hợp với Terraform
 
 \
 Nội dung
 
-* [Những thông số truyền từ Terreform](thong-so-tich-hop-voi-terreform.md#thongsotichhopvoiterreform-nhungthongsotruyentuterreform)
-* [Những thuộc tính truyền cho Terreform](thong-so-tich-hop-voi-terreform.md#thongsotichhopvoiterreform-nhungthuoctinhtruyenchoterreform)
+* [Những thông số truyền từ Terraform](thong-so-tich-hop-voi-terreform.md#thongsotichhopvoiterreform-nhungthongsotruyentuterreform)
+* [Những thuộc tính truyền cho Terraform](thong-so-tich-hop-voi-terreform.md#thongsotichhopvoiterreform-nhungthuoctinhtruyenchoterreform)
 
-## Những thông số truyền từ Terreform <a href="#thongsotichhopvoiterreform-nhungthongsotruyentuterreform" id="thongsotichhopvoiterreform-nhungthongsotruyentuterreform"></a>
+## Những thông số truyền từ Terraform <a href="#thongsotichhopvoiterreform-nhungthongsotruyentuterreform" id="thongsotichhopvoiterreform-nhungthongsotruyentuterreform"></a>
 
 ### Mẫu truyền ví dụ <a href="#thongsotichhopvoiterreform-mautruyenvidu" id="thongsotichhopvoiterreform-mautruyenvidu"></a>
 
@@ -41,14 +41,14 @@ resource "vngcloud_vserver_server" "server"{
 {% hint style="info" %}
 **Lưu ý**
 
-Khi Server đã hết hạn và trạng thái là Kết thúc (Terminated). Nếu User muốn gia hạn (renew) tài nguyên (resource) thì **User phải vào User Portal để gia hạn nếu sử dụng Terreform**, vì Terreform không có chức năng gia hạn.
+Khi Server đã hết hạn và trạng thái là Kết thúc (Terminated). Nếu User muốn gia hạn (renew) tài nguyên (resource) thì **User phải vào User Portal để gia hạn nếu sử dụng Terraform**, vì Terraform không có chức năng gia hạn.
 {% endhint %}
 
-## **Những thuộc tính truyền cho Terreform** <a href="#thongsotichhopvoiterreform-nhungthuoctinhtruyenchoterreform" id="thongsotichhopvoiterreform-nhungthuoctinhtruyenchoterreform"></a>
+## **Những thuộc tính truyền cho Terraform** <a href="#thongsotichhopvoiterreform-nhungthuoctinhtruyenchoterreform" id="thongsotichhopvoiterreform-nhungthuoctinhtruyenchoterreform"></a>
 
 ***
 
-Sau khi VNG Cloud ghi nhận các thông số truyền từ Terreform, sẽ có những thuộc tính sau được xuất ra cho Terreform cho user sử dụng:
+Sau khi VNG Cloud ghi nhận các thông số truyền từ Terraform, sẽ có những thuộc tính sau được xuất ra cho Terreform cho user sử dụng:
 
 * **id** STRING : Mã định danh của Server này;
 * **external\_interfaces:** Danh sách các thông tin của Network External:

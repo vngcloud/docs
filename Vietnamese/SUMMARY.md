@@ -191,7 +191,7 @@
       * [Quản lý vContainer với Terraform](vserver/compute-hcm03-1a/terraform/quan-ly-vcontainer-voi-terraform.md)
       * [Quản lý vLB với Terraform](vserver/compute-hcm03-1a/terraform/quan-ly-vlb-voi-terraform.md)
       * [Tài liệu tham chiếu](vserver/compute-hcm03-1a/terraform/tai-lieu-tham-chieu.md)
-      * [Thông số tích hợp với Terreform](vserver/compute-hcm03-1a/terraform/thong-so-tich-hop-voi-terreform.md)
+      * [Thông số tích hợp với Terraform](vserver/compute-hcm03-1a/terraform/thong-so-tich-hop-voi-terreform.md)
     * [Quản lý định danh và truy cập (IAM) cho vServer](vserver/compute-hcm03-1a/quan-ly-dinh-danh-va-truy-cap-iam-cho-vserver/README.md)
       * [Các hành động, tài nguyên và điều kiện cần cho Phân quyền truy cập vServer](vserver/compute-hcm03-1a/quan-ly-dinh-danh-va-truy-cap-iam-cho-vserver/cac-hanh-dong-tai-nguyen-va-dieu-kien-can-cho-phan-quyen-truy-cap-vserver.md)
       * [Các trường hợp sử dụng IAM](vserver/compute-hcm03-1a/quan-ly-dinh-danh-va-truy-cap-iam-cho-vserver/cac-truong-hop-su-dung-iam.md)
