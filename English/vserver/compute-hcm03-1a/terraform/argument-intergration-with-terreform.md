@@ -3,11 +3,11 @@
 {% hint style="info" %}
 **Content**
 
-* [Arguments tranfer from Terreform](argument-intergration-with-terreform.md#argumentintergrationwithterreform-argumentstranferfromterreform)
-* [Attributes transfer to Terreform](argument-intergration-with-terreform.md#argumentintergrationwithterreform-attributestransfertoterreform)
+* [Arguments tranfer from Terraform](argument-intergration-with-terreform.md#argumentintergrationwithterreform-argumentstranferfromterreform)
+* [Attributes transfer to Terraform](argument-intergration-with-terreform.md#argumentintergrationwithterreform-attributestransfertoterreform)
 {% endhint %}
 
-## **Arguments tranfer from Terraform** <a href="#argumentintergrationwithterreform-argumentstranferfromterreform" id="argumentintergrationwithterreform-argumentstranferfromterreform"></a>
+## **Arguments transfer from Terraform** <a href="#argumentintergrationwithterreform-argumentstranferfromterreform" id="argumentintergrationwithterreform-argumentstranferfromterreform"></a>
 
 ***
 
