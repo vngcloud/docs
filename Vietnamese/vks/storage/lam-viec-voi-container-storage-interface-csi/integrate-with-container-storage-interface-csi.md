@@ -147,7 +147,6 @@ Sau đây là hướng dẫn để bạn deploy service nginx trên Kubernetes.
     provisioner: bs.csi.vngcloud.vn                       # The VNG-CLOUD CSI driver name
     parameters:
       type: vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018    # The volume type UUID
-      isPOC: "true"
     allowVolumeExpansion: true                            # MUST set this value to turn on volume expansion feature
     ---
 
