@@ -692,6 +692,7 @@
     * [Create NAT](vnetwork/public-nat-instance/create-nat.md)
     * [Rename NAT](vnetwork/public-nat-instance/rename-nat.md)
     * [Delete NAT](vnetwork/public-nat-instance/delete-nat.md)
+* [Service Health](service-health.md)
 * [Identity and Access Management (IAM)](identity-and-access-management-iam/README.md)
   * [Getting Start with IAM](identity-and-access-management-iam/bat-dau-voi-iam.md)
   * [Common Usecases](identity-and-access-management-iam/ung-dung-pho-bien/README.md)
