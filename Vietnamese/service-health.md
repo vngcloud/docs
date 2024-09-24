@@ -44,7 +44,6 @@
 
 * Di chuyển vào khu vực mong muốn, rê chuột đến khi hiện chú thích”Xem tất cả”, nhấn chuột lần nữ để hiện bảng danh sách các sự cố
 * Rê chuột đến cột “Tên sự cố”, nhấn chuột vào tên sự cố muốn xem chi tiết.
-* Tại bảng chi tiết sự cố, người dùng cũng có thể xem sự cố khác của cùng dịch vụ, bằng cách nhấn chọn vào khu vực “**Các sự cố khác**”
 
 **Cách 2**
 
@@ -52,8 +51,7 @@
 * Nhập khoảng thời gian mong muốn tra cứu
 * Tại ô tìm kiếm: nhập tên dịch vụ mong muốn, nếu không nhập tại bảng chi tiết sẽ hiển thị toàn bộ dịch vụ của VNG Cloud
 * Nhấn vào biểu tượng tìm kiếm
-* Di chuyển đến ngày có màu cam hoặc xám, nhấn chuột để vào màn hình chi tiết sự cố
-* Tại bảng chi tiết sự cố, người dùng cũng có thể xem sự cố khác của cùng dịch vụ, bằng cách nhấn chọn vào khu vực “Các sự cố khác”-         &#x20;
+* Di chuyển đến ngày có màu cam hoặc xám, nhấn chuột để vào màn hình chi tiết sự cố       &#x20;
 
 ### Tìm kiếm thông tin
 
@@ -61,17 +59,11 @@
 _Tại bảng chi tiết sự cố, người dùng cũng có thể xem sự cố khác của cùng dịch vụ, bằng cách nhấn chọn vào khu vực “Các sự cố khác”_
 {% endhint %}
 
-*   Người dùng có thể tìm kiếm thông tin về
-
-    o   Tên sự cố
-
-    o   Mã sự cố
-
-    o   Hoặc tên dịch vụ
+* Người dùng có thể tìm kiếm thông tin theo "Dịch vụ".  &#x20;
 *   Thao tác
 
     o   Di chuyển chuột đến khu vực tìm kiếm và nhấn chuột vào khu vực này
 
-    o   Chọn 1 trong các điều kiện tìm trong danh sách
+    o   Chọn "Dịch vụ"
 
-    o   Nhập nội dung muốn tìm theo điều kiện đã chọn và nhấn enter, hoặc thực hiện theo hướng dẫn trên bảng tìm kiếm
+    o   Nhập tên dịch vụ và nhấn enter, hoặc thực hiện theo hướng dẫn trên bảng tìm kiếm
