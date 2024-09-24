@@ -5,9 +5,7 @@
 * Cung cấp thông tin về tình trạng sức khỏe của các dịch vụ VNG Cloud.
 * Người dùng VNG Cloud có thể chủ động vào trang “[Service Health](https://health.vngcloud.vn/)”để kiểm tra sức khỏe dịch vụ VNG Cloud đang sử dụng mà không cần đăng nhập hoặc đăng ký tài khoản sử dụng.
 
-
-
-### **Xem bảng sức khỏe dịch vụ VNG Cloud – Service Health**
+### **Xem bảng sức khỏe dịch vụ VNG Cloud**
 
 * Vào trang [https://health.vngcloud.vn/](https://health.vngcloud.vn/)
 * Thông tin về sức khỏe dịch vụ đang thể hiện 14 ngày gần nhất, các sự cố hoặc vấn đề dịch vụ được liệt kê theo thời gian mặc định 14 ngày, người dùng có thể chọn xem
