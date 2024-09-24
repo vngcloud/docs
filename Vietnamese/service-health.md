@@ -2,7 +2,7 @@
 
 
 
-* Cung cấp trạng thái sức khỏe các dịch vụ của VNG Cloud.
+* Cung cấp thông tin về tình trạng sức khỏe của các dịch vụ VNG Cloud.
 * Người dùng VNG Cloud có thể chủ động vào trang “[Service Health](https://health.vngcloud.vn/)”để kiểm tra sức khỏe dịch vụ VNG Cloud đang sử dụng mà không cần đăng nhập hoặc đăng ký tài khoản sử dụng.
 
 
