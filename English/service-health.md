@@ -19,7 +19,7 @@
 
 ### View incident details
 
-#### **Method 1:**
+#### **Method 1**
 
 * Locate the general information section and click on one of the following areas based on the user’s desired priority:
   * Total Issues
