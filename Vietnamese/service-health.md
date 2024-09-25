@@ -30,7 +30,7 @@
 
 ### **Xem chi tiết sự cố**
 
-#### Cách 1**:**&#x20;
+#### Cách 1&#x20;
 
 * Định vị tại phần thông tin tổng quát, nhấn vào một trong những khu vực sau theo mức độ ưu tiên mong muốn của người dùng
 
