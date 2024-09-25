@@ -1,7 +1,7 @@
 # Service Health
 
 * Provide information about the health status of VNG Cloud services.
-* VNG Cloud users can proactively visit the "[Service Health](https://health.vngcloud.vn/)" page to check the health of the VNG Cloud services they are using without
+* VNG Cloud users can proactively visit the "[Service Health](https://health.vngcloud.vn/)" page to check the health of the VNG Cloud services they are using without needing to log in or register for an account.
 
 ### View the VNG Cloud Service Health Dashboard
 
