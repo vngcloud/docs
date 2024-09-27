@@ -2,13 +2,7 @@
 
 ## Tổng quan
 
-**CNI (Container Network Interface) Cilium VPC Native Routing** là một cơ chế giúp Kubernetes quản lý mạng mà không cần sử dụng overlay networks. Thay vì dùng các lớp mạng ảo, **CNI Cilium VPC Native Routing** tận dụng khả năng routing trực tiếp từ VPC (Virtual Private Cloud) của các nhà cung cấp dịch vụ đám mây để tối ưu hóa việc truyền dữ liệu giữa các node và pod trong cụm Kubernetes. Việc sử dụng CNI Cilium VPC Native Routing sẽ đem lại nhiều lợi ích cho bạn, trong đó:&#x20;
-
-* **Hiệu suất mạng cao hơn**: Sử dụng native VPC routing loại bỏ các bước encapsulation/decapsulation khi truyền tải dữ liệu qua mạng overlay, từ đó giảm thiểu độ trễ và tăng hiệu suất mạng.
-* **Giảm độ phức tạp**: Không cần phải thiết lập và quản lý các overlay networks phức tạp như VXLAN. Mỗi pod có thể sử dụng địa chỉ IP gốc của VPC.
-* **Quản lý và mở rộng dễ dàng**: Do không sử dụng overlay, việc quản lý mạng dựa trên native VPC giúp dễ dàng hơn trong việc mở rộng cluster mà không cần phải thay đổi cấu trúc mạng.
-* **Khả năng tương thích cao**: Tận dụng chính hệ thống định tuyến của VPC giúp cụm Kubernetes tương thích tốt hơn với các dịch vụ mạng khác của nhà cung cấp đám mây.
-* **Bảo mật tốt hơn với eBPF**: Cilium sử dụng eBPF để theo dõi và kiểm soát luồng dữ liệu một cách linh hoạt, có thể thực hiện các chính sách bảo mật chi tiết mà không cần phụ thuộc vào địa chỉ IP.
+**CNI (Container Network Interface) Cilium VPC Native Routing** là một cơ chế giúp Kubernetes quản lý mạng mà không cần sử dụng overlay networks. Thay vì dùng các lớp mạng ảo, **CNI Cilium VPC Native Routing** tận dụng khả năng routing trực tiếp từ VPC (Virtual Private Cloud) của các nhà cung cấp dịch vụ đám mây để tối ưu hóa việc truyền dữ liệu giữa các node và pod trong cụm Kubernetes.&#x20;
 
 ***
 
@@ -18,23 +12,7 @@ Trên VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** hoạ
 
 <figure><img src="../../../.gitbook/assets/image (754).png" alt=""><figcaption></figcaption></figure>
 
-**Các thành phần chính**:&#x20;
-
-* **Cluster, Node**: là cluster và nodes chạy Cilium VPC Native Routing sử dụng eBPF để quản lý lưu lượng mạng giữa các pod.
-* **Pod CIDR:** dải địa chỉ IP dùng cho các pod trong một node. Trong hình:
-  * **Node 1** có CIDR là `192.168.240.0/24`.
-  * **Node 2** có CIDR là `192.168.241.0/24`.
-* **Pod**: là các pod chạy trong một **network namespace** riêng, và có một interface ảo riêng (`eth0`) với địa chỉ IP riêng trong phạm vi pod CIDR của node. Trong hình, cả hai node đều chạy các pod chứa ứng dụng **Nginx**.
-  * **Pod Nginx trên Node 1** có địa chỉ IP `192.168.240.1`
-  * **Pod Nginx trên Node 2** có địa chỉ `192.168.241.1`
-* **lcx**: là mạng ảo sử dụng để pod được kết nối với node. Trong hình:
-  * **Trên Node 1**, `lxc01` kết nối với `eth0` của pod Nginx.
-* **cilium\_host** và **eBPF**: Mỗi node có một network đặc biệt gọi là **cilium\_host**, và Cilium sử dụng **eBPF** để quản lý lưu lượng mạng giữa các pod. **eBPF** cho phép Cilium quản lý mạng ở mức kernel, làm cho việc xử lý gói tin hiệu quả hơn.
-* **Underlying Network**: là mạng vật lý mà các node kết nối với nhau, trong hình:&#x20;
-  * Dải IP chính (Primary IP range) là `192.168.0.0/24`&#x20;
-  * Dải IP phụ (Secondary IP range) `192.168.240.0/20` dùng cho pod.
-
-**Mối quan hệ giữa các thành phần:**
+**Trong đó:**
 
 * Mỗi **Node** có một dải địa chỉ IP riêng cho các pod (Pod CIDR). Các pod trong mỗi node sử dụng địa chỉ từ CIDR này và giao tiếp qua mạng ảo.
 * **Cilium** và **eBPF** thực hiện quản lý mạng cho tất cả các pod trên mỗi node, bao gồm việc xử lý lưu lượng đi từ pod này đến pod khác, hoặc từ node này sang node khác. Khi cần, eBPF thực hiện **masquerading** để ẩn địa chỉ IP nội bộ của pod khi giao tiếp với mạng ngoài.
@@ -46,7 +24,7 @@ Trên VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** hoạ
 
 Để có thể khởi tạo một **Cluster** và **Deploy** một **Workload**, bạn cần:
 
-* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc) Tại Subnet đã tạo, bạn đảm bảo đã nhập đầy đủ **Primary CIDR, Secondary CIDR**, trong đó:&#x20;
+* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc) Tại **Subnet** đã tạo, bạn đảm bảo đã nhập đầy đủ **Primary CIDR, Secondary CIDR**, trong đó:&#x20;
   * **Primary CIDR**: :Đây là dải địa chỉ IP chính của subnet. Mọi địa chỉ IP nội bộ của các máy ảo (VM) trong subnet này sẽ được lấy từ dải địa chỉ này. Giả sử, nếu bạn đặt Primary CIDR là 10.1.0.0/16, các địa chỉ IP của các VM sẽ nằm trong khoảng từ 10.1.0.1 đến 10.1.255.254.
   * **Secondary CIDR**: Đây là dải địa chỉ IP phụ, được sử dụng để cung cấp thêm địa chỉ IP cho các mục đích cụ thể như alias IP ranges hoặc để phân chia các dịch vụ khác nhau trong cùng một subnet. Giả sử bạn có thể thêm một Secondary CIDR là 10.2.0.0/20 để sử dụng cho các dịch vụ hoặc ứng dụng khác nhau mà không cần tạo thêm subnet mới.
 
@@ -81,12 +59,15 @@ Trên VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** hoạ
 
 <figure><img src="../../../.gitbook/assets/image (758).png" alt="" width="563"><figcaption></figcaption></figure>
 
-**Giả sử, theo lựa chọn bên trên, kết quả tính toán số lượng pod và node như sau:**
+Giả sử, khi khởi tạo cluster, tôi lựa chọn:&#x20;
 
-* **Secondary IP range**: **10.111.160.0/20** (tổng cộng có 4096 địa chỉ IP cho các pod).
-* **Node CIDR mask size**: Các giá trị có thể chọn từ **/20** đến **/26**.
+* **VPC**: 10.111.0.0/16
+* **Subnet:**&#x20;
+  * **Primary IP Range:** 10.111.0.0/24
+  * **Secondary IP Range:**10.111.160.0/20
+* **Node CIDR mask size:** Các giá trị có thể chọn từ **/20** đến **/26**.
 
-<table><thead><tr><th width="123">Node CIDR mask size</th><th width="148">Số lượng IP cho mỗi node</th><th width="145">Số lượng node có thể tạo trong dải /20 (4096 IP)</th><th>Số lượng IP phân bổ cho pod trên mỗi node</th><th>Số lượng pod thực tế có thể tạo</th></tr></thead><tbody><tr><td><strong>/20</strong></td><td>4096</td><td>1</td><td>4096 </td><td>2048</td></tr><tr><td><strong>/21</strong></td><td>2048</td><td>2</td><td>2048</td><td>1024</td></tr><tr><td><strong>/22</strong></td><td>1024</td><td>4</td><td>1024</td><td>512</td></tr><tr><td><strong>/23</strong></td><td>512</td><td>8</td><td>512</td><td>256</td></tr><tr><td><strong>/24</strong></td><td>256</td><td>16</td><td>256 </td><td>128</td></tr><tr><td><strong>/25</strong></td><td>128</td><td>32</td><td>128</td><td>64</td></tr><tr><td><strong>/26</strong></td><td>64</td><td>64</td><td>64</td><td>32</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Node CIDR mask size</th><th>Số lượng IP cho mỗi node</th><th>Số lượng node có thể tạo trong dải /20 (4096 IP)</th><th>Số lượng IP phân bổ cho pod trên mỗi node</th><th>Số lượng pod thực tế có thể tạo</th></tr></thead><tbody><tr><td><strong>/20</strong></td><td>4096</td><td>1</td><td>4096 </td><td>2048</td></tr><tr><td><strong>/21</strong></td><td>2048</td><td>2</td><td>2048</td><td>1024</td></tr><tr><td><strong>/22</strong></td><td>1024</td><td>4</td><td>1024</td><td>512</td></tr><tr><td><strong>/23</strong></td><td>512</td><td>8</td><td>512</td><td>256</td></tr><tr><td><strong>/24</strong></td><td>256</td><td>16</td><td>256 </td><td>128</td></tr><tr><td><strong>/25</strong></td><td>128</td><td>32</td><td>128</td><td>64</td></tr><tr><td><strong>/26</strong></td><td>64</td><td>64</td><td>64</td><td>32</td></tr></tbody></table>
 
 Do đó:&#x20;
 
@@ -98,12 +79,14 @@ Do đó:&#x20;
 {% hint style="info" %}
 **Chú ý:**&#x20;
 
-Khi không đủ địa chỉ IP trong **Node CIDR range** hoặc **Secondary IP range** để tạo thêm node, cụ thể:
-
-* Nếu bạn **không thể sử dụng Node mới do** hết dải địa chỉ IP trong **Secondary IP range**. Lúc này, các node mới vẫn sẽ được tạo và được join vào cụm nhưng bạn không thể sử dụng chúng. Các pod được yêu cầu khởi chạy trên node mới này sẽ bị kẹt trong trạng thái "**ContainerCreating**" do không thể tìm thấy node phù hợp để triển khai. **Giải pháp**: Bạn cần mở rộng dải **Secondary IP range** (nếu hạ tầng mạng của bạn cho phép) hoặc điều chỉnh cấu hình của cluster (tăng số node CIDR).
-* **Không đủ địa chỉ IP cho Pod**: Nếu một node được khởi tạo nhưng không còn đủ địa chỉ IP để cấp phát cho các pod mới, các pod sẽ không thể khởi chạy trên node đó. VKS sẽ **không** phân bổ thêm pod cho node đó, và pod sẽ rơi vào trạng thái "**ContainerCreating**" cho đến khi có tài nguyên hoặc IP khả dụng.**Giải pháp**: Bạn có thể:
-  * **Tăng số lượng node** để giảm tải và tăng lượng IP cho các pod.
-  * **Tối ưu lại Node CIDR mask size** để mỗi node có nhiều IP hơn.
+* **Chỉ một loại networktype:** Trong một cluster, bạn chỉ có thể sử dụng một trong ba loại networktype: Calico Overlay, Cilium Overlay, hoặc Cilium VPC Native Routing
+* **Multiple subnet cho một cluster:** VKS hỗ trợ việc sử dụng nhiều subnet cho một cluster. Điều này cho phép bạn cấu hình mỗi node group trong cluster nằm ở các subnet khác nhau trong cùng một VPC, giúp tối ưu hóa việc phân bổ tài nguyên và quản lý mạng.
+* **Cilium VPC Native Routing và Secondary IP Range**: Khi sử dụng Cilium VPC Native Routing cho một cluster, bạn có thể sử dụng nhiều Secondary IP Range. Tuy nhiên, mỗi Secondary IP Range chỉ có thể được sử dụng bởi một cluster duy nhất. Điều này giúp tránh xung đột địa chỉ IP và đảm bảo tính nhất quán trong quản lý mạng.
+* Khi không đủ địa chỉ IP trong **Node CIDR range** hoặc **Secondary IP range** để tạo thêm node, cụ thể:
+  * Nếu bạn **không thể sử dụng Node mới do** hết dải địa chỉ IP trong **Secondary IP range**. Lúc này, các node mới vẫn sẽ được tạo và được join vào cụm nhưng bạn không thể sử dụng chúng. Các pod được yêu cầu khởi chạy trên node mới này sẽ bị kẹt trong trạng thái "**ContainerCreating**" do không thể tìm thấy node phù hợp để triển khai. **Giải pháp**: Bạn cần mở rộng dải **Secondary IP range** (nếu hạ tầng mạng của bạn cho phép) hoặc điều chỉnh cấu hình của cluster (tăng số node CIDR).
+  * **Không đủ địa chỉ IP cho Pod**: Nếu một node được khởi tạo nhưng không còn đủ địa chỉ IP để cấp phát cho các pod mới, các pod sẽ không thể khởi chạy trên node đó. VKS sẽ **không** phân bổ thêm pod cho node đó, và pod sẽ rơi vào trạng thái "**ContainerCreating**" cho đến khi có tài nguyên hoặc IP khả dụng.**Giải pháp**: Bạn có thể:
+    * **Tăng số lượng node** để giảm tải và tăng lượng IP cho các pod.
+    * **Tối ưu lại Node CIDR mask size** để mỗi node có nhiều IP hơn.
 {% endhint %}
 
 **Bước 5:** Chọn **Create Kubernetes cluster.** Hãy chờ vài phút để chúng tôi khởi tạo Cluster của bạn, trạng thái của Cluster lúc này là **Creating**.
@@ -139,15 +122,15 @@ vks-cluster-democilium-nodegroup-558f4-63344   Ready    <none>   5m45s   v1.28.8
 vks-cluster-democilium-nodegroup-558f4-e6e4d   Ready    <none>   6m24s   v1.28.8
 ```
 
-* Tiếp tục thực hiện chạy lệnh sau đây để kiểm tra các pod đã được triển khai trên namespace kube-system của bạn:&#x20;
+* Tiếp tục thCtyực hiện chạy lệnh sau đây để kiểm tra các **pod** đã được triển khai trên namespace kube-system của bạn:&#x20;
 
 ```
 k get pods -A
 ```
 
-* Nếu kết quả trả về như bên dưới tức là các pods hỗ trợ chạy Cilium VPC Native đã được chạy thành công:
+* Nếu kết quả trả về như bên dưới tức là các **pods** hỗ trợ chạy Cilium VPC Native đã được chạy thành công:
 
-```
+```bash
 NAMESPACE     NAME                                          READY   STATUS    RESTARTS        AGE
 kube-system   cilium-envoy-2g22l                            1/1     Running   0               6m41s
 kube-system   cilium-envoy-h9mjb                            1/1     Running   0               5m53s
@@ -173,9 +156,9 @@ kube-system   vngcloud-csi-node-gx7zd                       3/3     Running   2 
 kube-system   vngcloud-ingress-controller-0                 1/1     Running   1 (5m55s ago)   11m
 ```
 
-**Bước 2: Triển khai deployment nginx trên cluster vừa khởi tạo:**&#x20;
+**Bước 2: Triển khai nginx trên cluster vừa khởi tạo:**&#x20;
 
-* Thực hiện khởi tạo tệp tin nginx-deployment.yaml với nội dung tương tự bên dưới:&#x20;
+* Thực hiện khởi tạo tệp tin **nginx-deployment.yaml** với nội dung tương tự bên dưới:&#x20;
 
 ```
 apiVersion: apps/v1
@@ -205,7 +188,7 @@ spec:
 kubectl apply -f nginx-deployment.yaml
 ```
 
-**Bước 3: Kiểm tra các pod nginx đã được triển khai và địa chỉ IP tương ứng**
+**Bước 3: Kiểm tra các pod nginx đã được triển khai và địa chỉ IP được gán cho mỗi pod**
 
 * Thực hiện kiểm tra các pod qua lệnh:&#x20;
 
@@ -213,31 +196,32 @@ kubectl apply -f nginx-deployment.yaml
 kubectl get pods -o wide
 ```
 
-*   Bạn có thể quan sát bên dưới, các pod nginx được chạy trên các IP 10.111.16x.xxx thỏa mãn điều kiện VPC, Subnet, Secondary IP mà bạn đã chọn bên trên.
+* Bạn có thể quan sát bên dưới, các **pod nginx** được gán các IP 10.111.16x.x thỏa mãn điều kiện **Secondary IP range và Node CIDR mask size** mà chúng tôi đã chỉ định bên trên:
 
-    ```bash
-    NAME                         READY   STATUS    RESTARTS   AGE   IP               NODE                                           
-    nginx-app-7c79c4bf97-6v88s   1/1     Running   0          31s   10.111.161.53    vks-cluster-democilium-nodegroup-558f4-39206   
-    nginx-app-7c79c4bf97-754m7   1/1     Running   0          31s   10.111.161.1     vks-cluster-democilium-nodegroup-558f4-39206   
-    nginx-app-7c79c4bf97-9tjw7   1/1     Running   0          31s   10.111.160.212   vks-cluster-democilium-nodegroup-558f4-63344   
-    nginx-app-7c79c4bf97-c6vx7   1/1     Running   0          31s   10.111.160.46    vks-cluster-democilium-nodegroup-558f4-e6e4d   
-    nginx-app-7c79c4bf97-c7nch   1/1     Running   0          31s   10.111.161.3     vks-cluster-democilium-nodegroup-558f4-39206   
-    nginx-app-7c79c4bf97-cggfq   1/1     Running   0          31s   10.111.161.74    vks-cluster-democilium-nodegroup-558f4-39206   
-    nginx-app-7c79c4bf97-cz4xc   1/1     Running   0          31s   10.111.160.115   vks-cluster-democilium-nodegroup-558f4-e6e4d   
-    nginx-app-7c79c4bf97-d84rb   1/1     Running   0          31s   10.111.160.152   vks-cluster-democilium-nodegroup-558f4-63344   
-    nginx-app-7c79c4bf97-dbmt7   1/1     Running   0          31s   10.111.160.184   vks-cluster-democilium-nodegroup-558f4-63344   
-    nginx-app-7c79c4bf97-gtx8b   1/1     Running   0          31s   10.111.161.57    vks-cluster-democilium-nodegroup-558f4-39206   
-    nginx-app-7c79c4bf97-km7tx   1/1     Running   0          31s   10.111.160.94    vks-cluster-democilium-nodegroup-558f4-e6e4d   
-    nginx-app-7c79c4bf97-lmk7c   1/1     Running   0          31s   10.111.161.26    vks-cluster-democilium-nodegroup-558f4-39206   
-    nginx-app-7c79c4bf97-mc24h   1/1     Running   0          31s   10.111.160.98    vks-cluster-democilium-nodegroup-558f4-e6e4d   
-    nginx-app-7c79c4bf97-n4zvf   1/1     Running   0          31s   10.111.160.204   vks-cluster-democilium-nodegroup-558f4-63344   
-    nginx-app-7c79c4bf97-n84tc   1/1     Running   0          31s   10.111.161.106   vks-cluster-democilium-nodegroup-558f4-39206   
-    nginx-app-7c79c4bf97-qtjjx   1/1     Running   0          31s   10.111.160.32    vks-cluster-democilium-nodegroup-558f4-e6e4d   
-    nginx-app-7c79c4bf97-rp4bt   1/1     Running   0          31s   10.111.160.202   vks-cluster-democilium-nodegroup-558f4-63344   
-    nginx-app-7c79c4bf97-sk7tf   1/1     Running   0          31s   10.111.160.196   vks-cluster-democilium-nodegroup-558f4-63344   
-    nginx-app-7c79c4bf97-x8jxm   1/1     Running   0          31s   10.111.160.135   vks-cluster-democilium-nodegroup-558f4-63344   
-    nginx-app-7c79c4bf97-zlstg   1/1     Running   0          31s   10.111.160.121   vks-cluster-democilium-nodegroup-558f4-e6e4d 
-    ```
+```
+NAME                         READY   STATUS    RESTARTS   AGE   IP               NODE                                           
+nginx-app-7c79c4bf97-6v88s   1/1     Running   0          31s   10.111.161.53    vks-cluster-democilium-nodegroup-558f4-39206   
+nginx-app-7c79c4bf97-754m7   1/1     Running   0          31s   10.111.161.1     vks-cluster-democilium-nodegroup-558f4-39206   
+nginx-app-7c79c4bf97-9tjw7   1/1     Running   0          31s   10.111.160.212   vks-cluster-democilium-nodegroup-558f4-63344   
+nginx-app-7c79c4bf97-c6vx7   1/1     Running   0          31s   10.111.160.46    vks-cluster-democilium-nodegroup-558f4-e6e4d   
+nginx-app-7c79c4bf97-c7nch   1/1     Running   0          31s   10.111.161.3     vks-cluster-democilium-nodegroup-558f4-39206   
+nginx-app-7c79c4bf97-cggfq   1/1     Running   0          31s   10.111.161.74    vks-cluster-democilium-nodegroup-558f4-39206   
+nginx-app-7c79c4bf97-cz4xc   1/1     Running   0          31s   10.111.160.115   vks-cluster-democilium-nodegroup-558f4-e6e4d   
+nginx-app-7c79c4bf97-d84rb   1/1     Running   0          31s   10.111.160.152   vks-cluster-democilium-nodegroup-558f4-63344   
+nginx-app-7c79c4bf97-dbmt7   1/1     Running   0          31s   10.111.160.184   vks-cluster-democilium-nodegroup-558f4-63344   
+nginx-app-7c79c4bf97-gtx8b   1/1     Running   0          31s   10.111.161.57    vks-cluster-democilium-nodegroup-558f4-39206   
+nginx-app-7c79c4bf97-km7tx   1/1     Running   0          31s   10.111.160.94    vks-cluster-democilium-nodegroup-558f4-e6e4d   
+nginx-app-7c79c4bf97-lmk7c   1/1     Running   0          31s   10.111.161.26    vks-cluster-democilium-nodegroup-558f4-39206   
+nginx-app-7c79c4bf97-mc24h   1/1     Running   0          31s   10.111.160.98    vks-cluster-democilium-nodegroup-558f4-e6e4d   
+nginx-app-7c79c4bf97-n4zvf   1/1     Running   0          31s   10.111.160.204   vks-cluster-democilium-nodegroup-558f4-63344   
+nginx-app-7c79c4bf97-n84tc   1/1     Running   0          31s   10.111.161.106   vks-cluster-democilium-nodegroup-558f4-39206   
+nginx-app-7c79c4bf97-qtjjx   1/1     Running   0          31s   10.111.160.32    vks-cluster-democilium-nodegroup-558f4-e6e4d   
+nginx-app-7c79c4bf97-rp4bt   1/1     Running   0          31s   10.111.160.202   vks-cluster-democilium-nodegroup-558f4-63344   
+nginx-app-7c79c4bf97-sk7tf   1/1     Running   0          31s   10.111.160.196   vks-cluster-democilium-nodegroup-558f4-63344   
+nginx-app-7c79c4bf97-x8jxm   1/1     Running   0          31s   10.111.160.135   vks-cluster-democilium-nodegroup-558f4-63344   
+nginx-app-7c79c4bf97-zlstg   1/1     Running   0          31s   10.111.160.121   vks-cluster-democilium-nodegroup-558f4-e6e4d 
+```
+
 * Bạn cũng có thể thực hiện xem mô tả chi tiết mỗi pod để kiểm tra thông tin pod này qua lệnh:&#x20;
 
 ```
@@ -247,12 +231,13 @@ kubectl describe pod nginx-app-7c79c4bf97-6v88s
 **Bước 4: Bạn có thể thực hiện một vài bước để kiểm tra chuyên sâu việc hoạt động của Cilium. Cụ thể:**
 
 * Đầu tiên, bạn cần cài đặt Cilium CLI theo hướng dẫn tại [đây](https://docs.cilium.io/en/stable/gettingstarted/k8s-install-default/#install-the-cilium-cli).
-*   Sau khi cài đặt Cilium CLS, thực hiện kiểm tra trạng thái của Cilium trong cluster của bạn qua lệnh:&#x20;
+* Sau khi cài đặt Cilium CLS, thực hiện kiểm tra **trạng thái** của Cilium trong cluster của bạn qua lệnh:
 
-    ```bash
-    cilium status wait
-    ```
-* Nếu kết quả hiển thị như bên dưới tức là Cilium đang hoạt động đúng:
+```bash
+cilium status wait
+```
+
+* Nếu kết quả hiển thị như bên dưới tức là **Cilium** đang **hoạt động đúng và đầy đủ**:
 
 ```
     /¯¯\
@@ -282,15 +267,15 @@ Image versions         cilium             vcr.vngcloud.vn/81-vks-public/cilium/c
                        cilium-operator    vcr.vngcloud.vn/81-vks-public/cilium/operator-generic:v1.16.1: 2
 ```
 
-**Bước 5: Kiểm tra kết nối của**&#x20;
+**Bước 5: Bạn có thể thực hiện healthy check kiểm tra Cilium trong cluster của bạn**
 
-* Chạy lệnh
+* Chạy lệnh sau để thực hiện healthy check
 
 ```
 kubectl -n kube-system exec ds/cilium -- cilium-health status --probe
 ```
 
-* Kết quả
+* Kết quả tham khảo
 
 ```
 Probe time:   2024-09-26T07:11:57Z
@@ -318,9 +303,11 @@ Nodes:
       HTTP to agent:   OK, RTT=1.090877ms
 ```
 
+Ngoài ra, bạn cũng có thể thực hiện thêm các bài kiểm tra kết nối End-to-End hoặc kiểm tra Network performance theo hướng dẫn tại [End-To-End Connectivity Testing](https://docs.cilium.io/en/stable/contributing/testing/e2e/) hoặc [Network Performance Test](https://docs.cilium.io/en/stable/contributing/testing/e2e/#network-performance-test).
+
 **Bước 6: Kiểm tra kết nối giữa các Pod**
 
-* Thực hiện kiểm tra kết nối giữa các pod, đảm bảo rằng các pod có thể giao tiếp qua địa chỉ IP của VPC mà không cần qua overlay networks. Ví dụ bên dưới tôi thực hiện ping từ pod nginx-app-7c79c4bf97-6v88s có địa chỉ IP: 10.111.161.53 tới một server trong cùng VPC có địa chỉ IP: 10.111.0.10:&#x20;
+* Thực hiện kiểm tra kết nối giữa các pod, đảm bảo rằng các **pod có thể giao tiếp qua địa chỉ IP của VPC mà không cần qua overlay networks**. Ví dụ bên dưới tôi thực hiện ping từ pod nginx-app-7c79c4bf97-6v88s có địa chỉ IP: 10.111.161.53 tới một server trong cùng VPC có địa chỉ IP: 10.111.0.10:&#x20;
 
 ```bash
 kubectl exec -it nginx-app-7c79c4bf97-6v88s -- ping 10.111.0.10
@@ -334,14 +321,7 @@ PING 10.111.0.10 (10.111.0.10): 56 data bytes
 64 bytes from 10.111.0.10: seq=1 ttl=62 time=0.541 ms
 64 bytes from 10.111.0.10: seq=2 ttl=62 time=0.472 ms
 64 bytes from 10.111.0.10: seq=3 ttl=62 time=0.463 ms
-^C
 --- 10.111.0.10 ping statistics ---
 4 packets transmitted, 4 packets received, 0% packet loss
 round-trip min/avg/max = 0.463/1.200/3.327 ms
 ```
-
-{% hint style="info" %}
-**Một vài lưu ý khi sử dụng CNI Cilium VPC Native Routing:**
-
-*
-{% endhint %}
