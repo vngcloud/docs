@@ -202,9 +202,3 @@ nginx-app-7c79c4bf97-xrqwx   1/1     Running   0          49s   172.16.67.197   
 ```
 kubectl describe pod nginx-app-7c79c4bf97-2xbwd
 ```
-
-{% hint style="info" %}
-**Một vài lưu ý khi sử dụng Calico Overlay:**
-
-*
-{% endhint %}

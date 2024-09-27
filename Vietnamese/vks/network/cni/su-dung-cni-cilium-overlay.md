@@ -194,9 +194,3 @@ nginx-app-7c79c4bf97-zxx87   1/1     Running   0          83s   172.16.0.212   v
 ```
 kubectl describe pod nginx-app-7c79c4bf97-4lcbn
 ```
-
-{% hint style="info" %}
-**Một vài lưu ý khi sử dụng Cilium Overlay:**
-
-*
-{% endhint %}
