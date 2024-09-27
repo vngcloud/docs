@@ -44,7 +44,7 @@ Billing Dashboard cung cấp cho bạn cái nhìn tổng quan về các DB cloud
   * Nhấp vào nút "Stop POC" để chuyển dang sử dụng thường.
   * Bật/tắt công tắc "Tự động gia hạn" để quản lý tính năng này.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Lưu ý quan trọng:**
 

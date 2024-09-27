@@ -438,6 +438,7 @@
       * [Tạo Backup Plan (Backup Server)](backup-center/backup-coming-soon/backup-server/tao-backup-plan-backup-server.md)
       * [Tạo Backup Server Point](backup-center/backup-coming-soon/backup-server/tao-backup-server-point.md)
       * [Quản lý Backup Server Point](backup-center/backup-coming-soon/backup-server/quan-ly-backup-server-point.md)
+      * [Khôi phục tài nguyên](backup-center/backup-coming-soon/backup-server/khoi-phuc-tai-nguyen.md)
     * [Backup Policy](backup-center/backup-coming-soon/backup-policy.md)
     * [Cách tính phí](backup-center/backup-coming-soon/cach-tinh-phi.md)
   * [Disaster Recovery Center (DRC)](backup-center/disaster-recovery-center-drc/README.md)

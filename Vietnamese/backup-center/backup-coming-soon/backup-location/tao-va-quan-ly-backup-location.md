@@ -61,7 +61,7 @@ Người dùng có thể bật tính năng soft delete trong lúc khởi tạo b
 * **Truy cập vào Backup Location:** Tìm và chọn Backup Location muốn bật tính năng Soft Delete.
 *   **Bật Soft Delete:** Tìm và bật tùy chọn "Edit Soft Delete".&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (752).png" alt=""><figcaption></figcaption></figure>
 * **Cấu hình thời gian giữ dữ liệu:** Nhập số ngày muốn giữ dữ liệu trong thùng rác ảo.
 * **Lưu:** Nhấp vào nút "Lưu" để hoàn tất.
 
@@ -94,7 +94,7 @@ Người dùng có thể bật tính năng soft delete trong lúc khởi tạo b
 * **Truy cập vào Backup Location:** Tìm và chọn Backup Location muốn bật tính năng Location Lock.
 *   **Bật Location Lock:** Nhấp vào nút "Configure Location lock", một cửa số giao diện sẽ hiện lên cho phép bạn điền các thông tin cần thiết.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (752).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (752) (1).png" alt=""><figcaption></figcaption></figure>
 * **Điền thông tin:** Điền các thông tin cấu hình cần thiết
   * **Thời gian giữ dữ liệu tối thiểu (Min retention day):** Thời gian ngắn nhất mà bản sao lưu phải được giữ lại.
   * **Thời gian giữ dữ liệu tối đa (Max retention day):** Thời gian dài nhất mà bản sao lưu được giữ lại.

@@ -74,11 +74,11 @@ Gói bandwidth Dedicated là gói bandwidth với tốc độ tùy chọn của 
 
 **Bước 3**: Trên danh sách các gói bandwidth có sẵn, chọn vào gói **Dedicated** tùy theo nhu cầu sử dụng của bạn.
 
-**Bước 4**: Chọn biểu tượng <img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">sau đó chọn **Thêm IP** hoặc ở màn hình chi tiết gói, tại mục **Danh sách IP**, chọn biểu tượng **Thêm IP.**&#x20;
+**Bước 4**: Chọn biểu tượng <img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">sau đó chọn **Thêm IP** hoặc ở màn hình chi tiết gói, tại mục **Danh sách IP**, chọn biểu tượng **Thêm IP.**&#x20;
 
 **Bước 5:** Màn hình **Thêm IP** được hiển thị, bạn có thể lọc danh sách IP theo từng loại bằng cách chọn một trong các phương án tại ô **Loại resource**. Hiện tại chúng tôi đang cung cấp cho bạn các loại resource bao gồm: **K8S, Floating IP, External Interface, vLB.**
 
-**Bước 6**: Chọn một hoặc nhiều IP bằng cách chọn biểu tượng <img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">và chọn **Thêm**. tượng **Thêm IP.**&#x20;
+**Bước 6**: Chọn một hoặc nhiều IP bằng cách chọn biểu tượng <img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">và chọn **Thêm**. tượng **Thêm IP.**&#x20;
 
 ***
 
