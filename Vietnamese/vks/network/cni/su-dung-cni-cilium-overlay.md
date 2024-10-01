@@ -76,13 +76,13 @@ Bên dưới là hướng dẫn triển khai một deployment nginx và kiểm t
 
 * Chạy câu lệnh sau đây để kiểm tra **node**
 
-```
+```bash
 kubectl get nodes
 ```
 
 * Nếu kết quả trả về như bên dưới tức là bạn Cluster của bạn được khởi tạo thành công với 3 node:
 
-```
+```bash
 NAME                                   STATUS   ROLES    AGE     VERSION
 vks-cluster-02-nodegroup-7fb09-3a594   Ready    <none>   5m48s   v1.29.1
 vks-cluster-02-nodegroup-7fb09-3cb67   Ready    <none>   5m34s   v1.29.1
@@ -91,13 +91,13 @@ vks-cluster-02-nodegroup-7fb09-430aa   Ready    <none>   5m52s   v1.29.1
 
 * Tiếp tục thực hiện chạy lệnh sau đây để kiểm tra các **pod** đã được triển khai trên namespace kube-system của bạn:&#x20;
 
-```
+```bash
 k get pods -A
 ```
 
 * Nếu kết quả trả về như bên dưới tức là các pods hỗ trợ chạy **Cilium Overlay** đã được chạy thành công:
 
-```
+```bash
 NAMESPACE     NAME                                           READY   STATUS    RESTARTS        AGE
 kube-system   cilium-8xtwz                                   1/1     Running   1 (5m36s ago)   6m7s
 kube-system   cilium-cpxvv                                   1/1     Running   0               5m53s
@@ -127,7 +127,7 @@ kube-system   vngcloud-ingress-controller-0                  1/1     Running   1
 
 * Thực hiện khởi tạo tệp tin **nginx-deployment.yaml** với nội dung tương tự bên dưới:&#x20;
 
-```
+```bash
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -151,7 +151,7 @@ spec:
 
 * Thực hiện triển khai deployment này qua lệnh:&#x20;
 
-```
+```bash
 kubectl apply -f nginx-deployment.yaml
 ```
 
@@ -159,7 +159,7 @@ kubectl apply -f nginx-deployment.yaml
 
 * Thực hiện kiểm tra các pod qua lệnh:&#x20;
 
-```
+```bash
 kubectl get pods -o wide
 ```
 
@@ -191,6 +191,6 @@ nginx-app-7c79c4bf97-zxx87   1/1     Running   0          83s   172.16.0.212   v
 
 * Bạn cũng có thể thực hiện xem mô tả chi tiết mỗi pod để kiểm tra thông tin pod này qua lệnh:&#x20;
 
-```
+```bash
 kubectl describe pod nginx-app-7c79c4bf97-4lcbn
 ```

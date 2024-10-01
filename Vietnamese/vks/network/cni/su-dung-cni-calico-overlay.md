@@ -75,13 +75,13 @@ Bên dưới là hướng dẫn triển khai một deployment nginx và kiểm t
 
 * Chạy câu lệnh sau đây để kiểm tra **node**
 
-```
+```bash
 kubectl get nodes
 ```
 
 * Nếu kết quả trả về như bên dưới tức là bạn Cluster của bạn được khởi tạo thành công với 5 node:
 
-```
+```bash
 NAME                                  STATUS   ROLES    AGE   VERSION
 vks-cluster01-nodegroup-536d9-452f1   Ready    <none>   15h   v1.28.8
 vks-cluster01-nodegroup-998b1-14f64   Ready    <none>   16h   v1.28.8
@@ -98,7 +98,7 @@ k get pods -A
 
 * Nếu kết quả trả về như bên dưới tức là các pods hỗ trợ chạy **Calico Overlay** đã được chạy thành công:
 
-```
+```bash
 NAMESPACE     NAME                                           READY   STATUS    RESTARTS   AGE
 kube-system   calico-kube-controllers-868b574465-wbxlx       1/1     Running   0          19h
 kube-system   calico-node-65ql2                              1/1     Running   0          16h
@@ -135,7 +135,7 @@ kube-system   vngcloud-ingress-controller-0                  1/1     Running   0
 
 * Thực hiện khởi tạo tệp tin **nginx-deployment.yaml** với nội dung tương tự bên dưới:&#x20;
 
-```
+```bash
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -159,7 +159,7 @@ spec:
 
 * Thực hiện triển khai deployment này qua lệnh:&#x20;
 
-```
+```bash
 kubectl apply -f nginx-deployment.yaml
 ```
 
@@ -167,7 +167,7 @@ kubectl apply -f nginx-deployment.yaml
 
 * Thực hiện kiểm tra các **pod** qua lệnh:&#x20;
 
-```
+```bash
 kubectl get pods -o wide
 ```
 
@@ -199,6 +199,6 @@ nginx-app-7c79c4bf97-xrqwx   1/1     Running   0          49s   172.16.67.197   
 
 * Bạn cũng có thể thực hiện xem mô tả chi tiết mỗi pod để kiểm tra thông tin pod này qua lệnh:&#x20;
 
-```
+```bash
 kubectl describe pod nginx-app-7c79c4bf97-2xbwd
 ```

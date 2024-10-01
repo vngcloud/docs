@@ -109,13 +109,13 @@ Bên dưới là hướng dẫn triển khai một deployment nginx và kiểm t
 
 * Chạy câu lệnh sau đây để kiểm tra **node**
 
-```
+```bash
 kubectl get nodes
 ```
 
 * Nếu kết quả trả về như bên dưới tức là bạn Cluster của bạn được khởi tạo thành công với 3 node:
 
-```
+```bash
 NAME                                           STATUS   ROLES    AGE     VERSION
 vks-cluster-democilium-nodegroup-558f4-39206   Ready    <none>   5m35s   v1.28.8
 vks-cluster-democilium-nodegroup-558f4-63344   Ready    <none>   5m45s   v1.28.8
@@ -124,7 +124,7 @@ vks-cluster-democilium-nodegroup-558f4-e6e4d   Ready    <none>   6m24s   v1.28.8
 
 * Tiếp tục thCtyực hiện chạy lệnh sau đây để kiểm tra các **pod** đã được triển khai trên namespace kube-system của bạn:&#x20;
 
-```
+```bash
 k get pods -A
 ```
 
@@ -160,7 +160,7 @@ kube-system   vngcloud-ingress-controller-0                 1/1     Running   1 
 
 * Thực hiện khởi tạo tệp tin **nginx-deployment.yaml** với nội dung tương tự bên dưới:&#x20;
 
-```
+```bash
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -184,7 +184,7 @@ spec:
 
 * Thực hiện triển khai deployment này qua lệnh:&#x20;
 
-```
+```bash
 kubectl apply -f nginx-deployment.yaml
 ```
 
@@ -192,13 +192,13 @@ kubectl apply -f nginx-deployment.yaml
 
 * Thực hiện kiểm tra các pod qua lệnh:&#x20;
 
-```
+```bash
 kubectl get pods -o wide
 ```
 
 * Bạn có thể quan sát bên dưới, các **pod nginx** được gán các IP 10.111.16x.x thỏa mãn điều kiện **Secondary IP range và Node CIDR mask size** mà chúng tôi đã chỉ định bên trên:
 
-```
+```bash
 NAME                         READY   STATUS    RESTARTS   AGE   IP               NODE                                           
 nginx-app-7c79c4bf97-6v88s   1/1     Running   0          31s   10.111.161.53    vks-cluster-democilium-nodegroup-558f4-39206   
 nginx-app-7c79c4bf97-754m7   1/1     Running   0          31s   10.111.161.1     vks-cluster-democilium-nodegroup-558f4-39206   
@@ -224,7 +224,7 @@ nginx-app-7c79c4bf97-zlstg   1/1     Running   0          31s   10.111.160.121  
 
 * Bạn cũng có thể thực hiện xem mô tả chi tiết mỗi pod để kiểm tra thông tin pod này qua lệnh:&#x20;
 
-```
+```bash
 kubectl describe pod nginx-app-7c79c4bf97-6v88s
 ```
 
@@ -239,7 +239,7 @@ cilium status wait
 
 * Nếu kết quả hiển thị như bên dưới tức là **Cilium** đang **hoạt động đúng và đầy đủ**:
 
-```
+```bash
     /¯¯\
  /¯¯\__/¯¯\    Cilium:             OK
  \__/¯¯\__/    Operator:           OK
@@ -271,13 +271,13 @@ Image versions         cilium             vcr.vngcloud.vn/81-vks-public/cilium/c
 
 * Chạy lệnh sau để thực hiện healthy check
 
-```
+```bash
 kubectl -n kube-system exec ds/cilium -- cilium-health status --probe
 ```
 
 * Kết quả tham khảo
 
-```
+```bash
 Probe time:   2024-09-26T07:11:57Z
 Nodes:
   vks-cluster-democilium-nodegroup-558f4-e6e4d (localhost):
@@ -315,7 +315,7 @@ kubectl exec -it nginx-app-7c79c4bf97-6v88s -- ping 10.111.0.10
 
 * Nếu kết quả như sau tức là kết nối đã thông:&#x20;
 
-```
+```bash
 PING 10.111.0.10 (10.111.0.10): 56 data bytes
 64 bytes from 10.111.0.10: seq=0 ttl=62 time=3.327 ms
 64 bytes from 10.111.0.10: seq=1 ttl=62 time=0.541 ms
@@ -325,3 +325,11 @@ PING 10.111.0.10 (10.111.0.10): 56 data bytes
 4 packets transmitted, 4 packets received, 0% packet loss
 round-trip min/avg/max = 0.463/1.200/3.327 ms
 ```
+
+Với **Cilium VPC Native Routing**, các kết nối bao gồm:
+
+* **Kết nối trong cùng một VPC**: Các node trong cùng một VPC sẽ kết nối trực tiếp với nhau.
+* **Kết nối giữa các VPC khác nhau**: Sử dụng VPC Peering để kết nối các node giữa các VPC khác nhau.
+* **Kết nối tới hạ tầng bên ngoài:** Sử dụng các giải pháp kết nối mạng như VPN site-to-site hoặc Direct Connect để kết nối từ các node trong VPC tới các hạ tầng bên ngoài (On Cloud, On-premise).
+
+Điều này giúp duy trì một hạ tầng mạng liên tục, linh hoạt và bảo mật trong môi trường multi-cloud hoặc hybrid-cloud.
