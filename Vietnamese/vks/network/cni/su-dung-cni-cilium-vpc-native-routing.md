@@ -325,11 +325,3 @@ PING 10.111.0.10 (10.111.0.10): 56 data bytes
 4 packets transmitted, 4 packets received, 0% packet loss
 round-trip min/avg/max = 0.463/1.200/3.327 ms
 ```
-
-Với **Cilium VPC Native Routing**, các kết nối bao gồm:
-
-* **Kết nối trong cùng một VPC**: Các node trong cùng một VPC sẽ kết nối trực tiếp với nhau.
-* **Kết nối giữa các VPC khác nhau**: Sử dụng VPC Peering để kết nối các node giữa các VPC khác nhau.
-* **Kết nối tới hạ tầng bên ngoài:** Sử dụng các giải pháp kết nối mạng như VPN site-to-site hoặc Direct Connect để kết nối từ các node trong VPC tới các hạ tầng bên ngoài (On Cloud, On-premise).
-
-Điều này giúp duy trì một hạ tầng mạng liên tục, linh hoạt và bảo mật trong môi trường multi-cloud hoặc hybrid-cloud.
