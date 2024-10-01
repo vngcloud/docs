@@ -10,14 +10,14 @@
 
 Trên VKS, **Cilium Overlay** hoạt động theo mô hình sau:
 
-<figure><img src="../../../.gitbook/assets/image (763).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image_2024-10-01_10-09-19.png" alt=""><figcaption></figcaption></figure>
 
 **Trong đó:**
 
 * **Pod (eth0)** -> **lxc01/lxc02**: Các Pod giao tiếp thông qua mạng ảo được tạo bởi Cilium.
 * **lxc01/lxc02** -> **cilium\_host**: Các gói tin từ các Pod được chuyển đến `cilium_host`, là lớp trung gian giữa mạng của Pod và mạng vật lý.
 * **cilium\_host** -> **ens3**: Sau khi được xử lý bởi Cilium (và eBPF), các gói tin được gửi đến mạng vật lý thông qua `ens3`.
-* **ens3** -> **Underlying Network**: Cuối cùng, các gói tin được truyền qua mạng vật lý để đến các node khác hoặc ra khỏi cluster.
+* **ens3** -> **VPC Network**: Cuối cùng, các gói tin được truyền qua mạng vật lý để đến các node khác hoặc ra khỏi cluster.
 
 ***
 

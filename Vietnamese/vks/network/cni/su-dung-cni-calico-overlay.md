@@ -10,12 +10,12 @@
 
 Trên VKS, **Calico Overlay** hoạt động theo mô hình sau:
 
-<figure><img src="../../../.gitbook/assets/image (760).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image_2024-10-01_10-10-08.png" alt=""><figcaption></figcaption></figure>
 
 **Trong đó:**
 
 * **Các pod** trên mỗi node giao tiếp với nhau thông qua **cali interface** và **bridge cni0**.
-* Khi các pod cần giao tiếp với các pod trên các node khác, gói tin sẽ được gói (encapsulated) vào trong gói overlay và gửi qua **mạng vật lý (Underlay Network)**.
+* Khi các pod cần giao tiếp với các pod trên các node khác, gói tin sẽ được gói (encapsulated) vào trong gói overlay và gửi qua **mạng vật lý (VPC Network)**.
 * **Calico** trên mỗi node chịu trách nhiệm thực hiện gói hóa (encapsulation) và giải gói (decapsulation) để các pod có thể liên lạc xuyên qua các node khác nhau.
 
 ***

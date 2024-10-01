@@ -10,7 +10,7 @@
 
 Trên VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** hoạt động theo mô hình sau:
 
-<figure><img src="../../../.gitbook/assets/image (754).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image_2024-10-01_10-09-47.png" alt=""><figcaption></figcaption></figure>
 
 **Trong đó:**
 
