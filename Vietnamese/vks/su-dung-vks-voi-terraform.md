@@ -302,9 +302,12 @@ Tham khảo thêm về cách sử dụng Terraform để làm việc với VKS t
 * Khi bạn đã tạo cluster và node group trên VKS qua Terraform, nếu bạn thay đổi một trong bốn field sau: **flavor\_id, disk\_size, disk\_type, enable\_private\_nodes**, hệ thống sẽ xóa node group cũ và tạo node group mới với cấu hình tương ứng. Việc xóa sẽ được thực hiện trước khi tạo node group mới.
 * Để chỉ định hệ thống tạo node group mới rồi mới thực hiện xóa node group cũ, bạn có thể thêm tham số `lifecycle { create_before_destroy = true }`vào file main.tf của bạn. Cụ thể:&#x20;
 
-resource "vngcloud\_vks\_cluster\_node\_group" "example" {
-
-## ...
-
-lifecycle { create\_before\_destroy = true } }
-{% endhint %}
+```
+resource "vngcloud_vks_cluster_node_group" "example" {
+  # ...
+ 
+  lifecycle {
+    create_before_destroy = true
+  }
+}
+```
