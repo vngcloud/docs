@@ -22,3 +22,11 @@ VKS (VNGCloud Kubernetes Service) là một dịch vụ được quản lý trê
 
 * Dễ sử dụng: VKS cung cấp giao diện đơn giản và dễ sử dụng.
 * Chi phí hợp lý: VKS cung cấp mức giá cạnh tranh cho các dịch vụ của mình.
+
+***
+
+### **Region** <a href="#farm" id="farm"></a>
+
+Hiện tại, trên VKS, chúng tôi đang cung cấp cho bạn 2 cơ sở hạ tầng riêng biệt được đặt tại Hà Nội và Hồ Chí Minh. Bạn có thể lựa chọn sử dụng VKS trên mỗi region tùy thuộc vào vị trí và nhu cầu thực tế của bạn. Đối với 2 farm HCM03, HAN01, các thông số cụ thể cho mỗi region được chúng tôi cung cấp như sau:
+
+<table><thead><tr><th width="140">Farm</th><th>Domain</th></tr></thead><tbody><tr><td>HCM03</td><td><a href="https://vks.console.vngcloud.vn/overview">https://vks.console.vngcloud.vn</a></td></tr><tr><td>HAN01</td><td><a href="https://vks-han-1.console.vngcloud.vn/overview">https://vks-han-1.console.vngcloud.vn</a></td></tr></tbody></table>
