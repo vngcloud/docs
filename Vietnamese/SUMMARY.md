@@ -596,6 +596,7 @@
     * [Quản lý cấu hình MDS Instance (Configuration Group)](vdb/memorystore-database-service-mds/quan-ly-cau-hinh-mds-instance.md)
     * [Quản lý sao lưu MDS Instance (Backup)](vdb/memorystore-database-service-mds/sao-luu-mds-instance.md)
   * [Kafka Cluster (KDS)](vdb/kafka-cluster-kds/README.md)
+    * [Thông báo và cập nhật](vdb/kafka-cluster-kds/thong-bao-va-cap-nhat.md)
     * [Cách thức hoạt động](vdb/kafka-cluster-kds/cach-thuc-hoat-dong.md)
     * [Bắt đầu với Kafka Cluster](vdb/kafka-cluster-kds/bat-dau-voi-kafka-cluster.md)
     * [Quản lý Kafka Cluster](vdb/kafka-cluster-kds/quan-ly-kafka-cluster/README.md)
