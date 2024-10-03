@@ -16,7 +16,7 @@ Protocol Proxy là một protocol đặc thù cho phép Load Balanacer chuyển 
 
 **+** Cấu hình thêm tham số **proxy\_protocol** tại **server {}** block**:**
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 \+ Xác định Load Balancer IP nơi mình nhận traffic Proxy Protocol tại **server {}** block với cấu hình **set\_real\_ip\_from**
 
@@ -25,31 +25,31 @@ Protocol Proxy là một protocol đặc thù cho phép Load Balanacer chuyển 
 
 VD: ở đây IP của vLB đang là 103.245.248.204.&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 \+ Cấu hình thay đổi IP của Load balancer với IP của client, được lấy từ Proxy Protocol Header tại **server {}** block với cấu hình **real\_ip\_header** và tham số **proxy\_protocol**
 
 | `real_ip_header proxy_protocol;` |
 | -------------------------------- |
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Bước 4:** Cấu hình Header để lấy giá trị xuất log tại **http {}** block với cấu hình **proxy\_set\_header**
 
 | <p><code>proxy_set_header X-Real-IP       $proxy_protocol_addr;</code><br><code>proxy_set_header X-Forwarded-For $proxy_protocol_addr;</code></p> |
 | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Bước 5:** Cấu hình Custom log với giá trị Client IP (Optional nếu bạn cần xuất log nginx kèm theo log client ip).
 
 Định nghĩa log\_format custom có kèm theo Client IP
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Thêm trong block **server{}** **access\_log** với log\_format là **custom** trên.
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Bước 6:** Kiểm thử cấu hình và restart nginx để hoàn tất bằng command
 
@@ -63,4 +63,4 @@ Nếu không có errror, bạn tiến hành restart nginx.
 
 * **Bước 7**: Thực hiện gửi request và kiểm tra log ra sẽ thấy IP Client xuất hiện trong log file:
 
-<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

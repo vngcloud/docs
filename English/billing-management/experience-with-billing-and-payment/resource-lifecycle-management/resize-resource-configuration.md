@@ -28,7 +28,7 @@ The resource configuration change feature applies to:&#x20;
 
 The displayed price at the payment step when changing vServer resource configurations (similarly applied to other resources) is calculated as follows:
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Note: Unused resource values are calculated accurately to the minute Some services may not be eligible for refunds depending on the usage terms of each product (vServer, vStorage, vMonitor).
 

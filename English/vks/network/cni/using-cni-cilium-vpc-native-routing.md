@@ -10,7 +10,7 @@
 
 On VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** operates according to the following model:
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FyoU1zDLXTWNV9c62Obt9%252Fimage_2024-10-01_10-09-47.png%3Falt%3Dmedia%26token%3D9de9debf-605b-4317-ba2b-c86b0cdf4d0d&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a36b7b4b&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 **In there:**
 
@@ -34,9 +34,9 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
     * **Primary CIDR** : :This is the primary IP address range of the subnet. All internal IP addresses of virtual machines (VMs) in this subnet will be taken from this address range. For example, if you set Primary CIDR to 10.1.0.0/16, the IP addresses of the VMs will be in the range of 10.1.0.1 to 10.1.255.254.
     * **Secondary CIDR** : This is a secondary IP address range, used to provide additional IP addresses for specific purposes such as alias IP ranges or to separate different services within the same subnet. Suppose you can add a Secondary CIDR of 10.2.0.0/20 to use for different services or applications without creating a new subnet.
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FzH7PNSeL7wSM0EZsqJoO%252Fimage.png%3Falt%3Dmedia%26token%3D83355da0-afea-4c57-88e4-3375b27df934&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a12371d9&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FhxwIgVPIfOwOOTiY1XUT%252Fimage.png%3Falt%3Dmedia%26token%3D86ea6408-54d8-4bc6-ac65-65b523abd902&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=d9bddd0a&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**
@@ -71,7 +71,7 @@ To initialize a Cluster, follow the steps below:
 
 #### **Calculating the number of IPs for pods and nodes:** <a href="#cac-tinh-toan-so-luong-ip-cho-pod-va-node" id="cac-tinh-toan-so-luong-ip-cho-pod-va-node"></a>
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FQVtrc52DJRsunpampc0k%252Fimage.png%3Falt%3Dmedia%26token%3De3836639-12d9-4fc5-84db-f173bac51c8b&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f8b13afc&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Suppose, when initializing the cluster, I choose:
 
@@ -96,7 +96,7 @@ Therefore:
 * **The larger the node CIDR mask size** (eg **/20** , **/21** ), the fewer nodes you will have but each node will have more IPs for pods.
 * **Smaller node CIDR mask size** (eg **/24** , **/25** ), you can create more nodes but each node will have less IP addresses for pods.
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FAvHmqPepXT9iF8yaOg0Y%252Fimage.png%3Falt%3Dmedia%26token%3Dc46ad4a0-f590-46bc-8642-ffe20d7503ad&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=774192a8&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**

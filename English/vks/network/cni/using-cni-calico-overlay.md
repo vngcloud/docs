@@ -1,6 +1,6 @@
 # Using CNI Calico Overlay
 
-## Overview <a href="#tong-quan" id="tong-quan"></a>
+Overview
 
 **The CNI Calico Overlay** in VKS is a type of **overlay network** that uses **IP-in-IP encapsulation** to create an overlay network. This allows pods to communicate with each other without changing the underlying physical network configuration. Pods will receive IP addresses from the IP address range configured for Calico, which is usually different from the IP address of your VPC or subnet.
 
@@ -10,7 +10,7 @@
 
 On VKS, **Calico Overlay** works according to the following model:
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FpGqHh6GaqbV8lvp06Zoz%252Fimage_2024-10-01_10-10-08.png%3Falt%3Dmedia%26token%3Db3336aa8-919a-45bb-8d45-b36325593603&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a5e005d8&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 **In there:**
 
@@ -46,7 +46,7 @@ To initialize a Cluster, follow the steps below:
 
 <table data-header-hidden><thead><tr><th width="205"></th><th></th><th></th></tr></thead><tbody><tr><td>Field</td><td>Meaning</td><td>Illustrative example</td></tr><tr><td><strong>VPC</strong></td><td>The IP address range that the Cluster nodes will use to communicate.</td><td>In the picture, we choose VPC with IP range <strong>10.111.0.0/16</strong> , corresponding to <strong>65536 IPs</strong></td></tr><tr><td><strong>Subnet</strong></td><td>A smaller IP address range belonging to the VPC. Each node in the Cluster will be assigned an IP from this Subnet. The Subnet must be within the IP range of the selected VPC.</td><td>In the picture, we choose Subnet with <strong>Primary IP range</strong> of <strong>10.111.0.0/24</strong> , corresponding to <strong>256 IPs</strong></td></tr><tr><td><strong>IP-IP encapsulation mode</strong></td><td>IP-IP encapsulation mode in VKS is Always</td><td><strong>In the figure, we select Always</strong> mode to always encapsulate packets.</td></tr><tr><td><strong>CIDR</strong></td><td>The virtual network range that the pods will use</td><td>In the picture, we choose the virtual network range as <code>172.16.0.0/16</code>. The pods will get IP from this IP range.</td></tr></tbody></table>
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FtkxO8JcXwtQ9esOyAJtc%252Fimage.png%3Falt%3Dmedia%26token%3Da056321a-fbe1-4c3f-8cd0-dbec15fea167&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=357e4946&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**

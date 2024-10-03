@@ -1,6 +1,6 @@
 # Using CNI Cilium Overlay
 
-## Overview <a href="#tong-quan" id="tong-quan"></a>
+Overview
 
 **CNI Cilium Overlay** in VKS is a type of **overlay network** that uses **eBPF (extended Berkeley Packet Filter)** to enhance network performance and security. Compared to solutions like **Calico Overlay** , Cilium offers higher performance thanks to its ability to process traffic directly in the kernel using eBPF. In addition, Calico often uses **iptables** to manage traffic, while Cilium with eBPF can handle network policies and application-specific behaviors (Layer 7).
 
@@ -10,7 +10,7 @@
 
 On VKS, **Cilium Overlay** works according to the following model:
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F7HxKMrnF8LOgMAIECSrP%252Fimage_2024-10-01_10-09-19.png%3Falt%3Dmedia%26token%3Dd7b615d7-e710-4bd5-b054-90b4fbae6098&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=5735602a&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 **In there:**
 
@@ -52,7 +52,7 @@ To initialize a Cluster, follow the steps below:
 | **IP-IP encapsulation mode** | IP-IP encapsulation mode in VKS is Always                                                                                                                                      | **In the figure, we select Always** mode to always encapsulate packets.                                          |
 | **CIDR**                     | The virtual network range that the pods will use                                                                                                                               | In the picture, we choose the virtual network range as `172.16.0.0/16`. The pods will get IP from this IP range. |
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FshJhop9CTs6oXssGNhwj%252Fimage.png%3Falt%3Dmedia%26token%3Dede7c6a9-8df5-4043-9bd6-b03b702ab632&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=4f7b95d&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**
