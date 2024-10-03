@@ -4,7 +4,7 @@
 
 ## 1. Process <a href="#id-1.-quy-trinh" id="id-1.-quy-trinh"></a>
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F5pkB09JxQjqrrA8Ob4PK%252Funknown.png%3Falt%3Dmedia%26token%3Dbdab12c5-a483-4c61-8847-ea177401ce46&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=cc1ddf26&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (293).png" alt=""><figcaption></figcaption></figure>
 
 **Process of migrating from vContainer to vKS (Customer + VNG Cloud)**
 
