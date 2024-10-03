@@ -29,6 +29,6 @@
 **Note:**
 
 * On the Cross Connect list screen, you can see the newly created Cross Connect with the status '<mark style="color:blue;">**Provisioning**</mark>' (which means the system is establishing the connection).
-* During the setup process for this Cross Connect, the system requires time to authenticate between the two regions, so it may take up to 20 minutes to complete. Once the system finishes processing, the status will automatically change to '<mark style="color:blue;">**Active**</mark>.'
+* During the setup process for this Cross Connect, the system requires time to authenticate between the two regions, so it <mark style="color:blue;">**may take up to 20 minutes to complete**</mark>. Once the system finishes processing, the status will automatically change to '<mark style="color:blue;">**Active**</mark>.'
 * At this point, the user can proceed to [create a VPC connection](create-a-vpc-connection.md) between the two regions.
 {% endhint %}

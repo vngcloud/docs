@@ -702,7 +702,7 @@
     * [Delete Cross Connect](vnetwork/cross-connect/delete-cross-connect.md)
     * [Bandwidth Packages](vnetwork/cross-connect/bandwidth-packages.md)
     * [VPC Connection Conditions](vnetwork/cross-connect/vpc-connection-conditions.md)
-    * [Use Case](vnetwork/cross-connect/use-case.md)
+    * [UseCase](vnetwork/cross-connect/usecase.md)
 * [Service Health](service-health.md)
 * [Identity and Access Management (IAM)](identity-and-access-management-iam/README.md)
   * [Getting Start with IAM](identity-and-access-management-iam/bat-dau-voi-iam.md)
