@@ -1,22 +1,23 @@
 # Sử dụng tính năng container lifecycle
 
-Lifecycle là một tính năng do VNG Cloud phát triển cho phép bạn thiết lập các hành động mà vStorage áp dụng cho một container. Chúng tôi định nghĩa 2 loại rule sau đây để hỗ trợ bạn quản lý vòng đời của container:
+**Lifecycle** là một tính năng do VNG Cloud phát triển cho phép bạn thiết lập các hành động mà vStorage áp dụng cho một container. Chúng tôi định nghĩa 2 loại rule sau đây để hỗ trợ bạn quản lý vòng đời của container:
 
 <figure><img src="../../../../../.gitbook/assets/image (389).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Trong đó:&#x20;
 
-* Transition rule: Rule hỗ trợ di chuyển object giữa các storage class. Bạn có thể thực hiện thiết lập một hoặc nhiều lifecycle rule di chuyển object nếu trong vòng N ngày mà object không được truy cập.
-  * Từ storage class Gold qua storage class Silver.
-  * Từ storage class Gold qua storage class Archive.&#x20;
-* Expiration rule: Rule hỗ trợ xóa các object theo điều kiện ràng buộc.  Bạn có thể thực hiện thiết lập một hoặc nhiều lifecycle rule xóa object sau một khoảng thời gian nhất định kể từ ngày object tồn tại trên hệ thống vStorage. Bạn có thể thiết lập lifecycle để:
-  * Xóa object thuộc Storage Class Gold.
-  * Xóa object thuộc Storage Class Silver.
+* **Transition rule:** Rule hỗ trợ di chuyển object giữa các storage class. Bạn có thể thực hiện thiết lập một hoặc nhiều lifecycle rule di chuyển object nếu trong vòng N ngày mà object không được truy cập.
+  * Từ storage class **Gold** qua storage class **Silver**.
+  * Từ storage class **Gold** qua storage class **Archive**.&#x20;
+* **Expiration rule**: Rule hỗ trợ xóa các object theo điều kiện ràng buộc.  Bạn có thể thực hiện thiết lập một hoặc nhiều lifecycle rule xóa object sau một khoảng thời gian nhất định kể từ ngày object tồn tại trên hệ thống vStorage. Bạn có thể thiết lập lifecycle để:
+  * Xóa object thuộc Storage Class **Gold**.
+  * Xóa object thuộc Storage Class **Silver**.
 
 {% hint style="info" %}
 **Lưu ý:**
 
 * Việc xử lý object trong một lần chạy lifecycle rule phụ thuộc vào **số lượng object** trong container được thiết lập lifecycle rule của bạn và **workload** của hệ thống chúng tôi. Nếu container có **nhiều object** hoặc hệ thống có tải cao, việc xử lý sẽ **chậm và kéo dài qua các ngày kế tiếp**. Nếu container có **ít object** hoặc hệ thống có tải thấp, việc xử lý sẽ **nhanh và có thể hoàn thành trong một ngày**. Để đảm bảo việc xử lý object diễn ra hiệu quả và nhanh chóng, bạn nên chia nhỏ các lần chạy lifecycle rule và sử dụng Bộ lọc (Filter) để giảm thiểu số lượng object cần xử lý.
+* Về khả năng xử lý, hệ thống có thể chuyển tối đa <mark style="color:red;">**500,000**</mark> object mỗi ngày. Tuy nhiên, tốc độ xử lý còn phụ thuộc vào số lượng object trong container và tải của hệ thống tại thời điểm đó
 * Bạn chỉ có thể tạo lifecycle rule thuộc 1 trong 2 loại (transition, expiration) trên 1 container ở 1 project bất kỳ. Ví dụ nếu bạn đã thiết lập một lifecycle rule loại transition cho container01 thì bạn không thể thiết lập một lifecycle rule khác loại expiration cho container01 nữa và ngược lại.&#x20;
 * Nếu bạn thiết lập lifecycle rule loại transition cho 1 container thì bạn chỉ có thể tạo tối đa 1 transition rule.&#x20;
 * Nếu bạn thiết lập lifecycle rule loại expiration cho 1 container thì bạn có thể tạo tối đa 10 expiration rule.
