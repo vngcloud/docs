@@ -24,9 +24,19 @@ Trên VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** hoạ
 
 Để có thể khởi tạo một **Cluster** và **Deploy** một **Workload**, bạn cần:
 
-* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc) Tại **Subnet** đã tạo, bạn đảm bảo đã nhập đầy đủ **Primary CIDR, Secondary CIDR**, trong đó:&#x20;
-  * **Primary CIDR**: :Đây là dải địa chỉ IP chính của subnet. Mọi địa chỉ IP nội bộ của các máy ảo (VM) trong subnet này sẽ được lấy từ dải địa chỉ này. Giả sử, nếu bạn đặt Primary CIDR là 10.1.0.0/16, các địa chỉ IP của các VM sẽ nằm trong khoảng từ 10.1.0.1 đến 10.1.255.254.
-  * **Secondary CIDR**: Đây là dải địa chỉ IP phụ, được sử dụng để cung cấp thêm địa chỉ IP cho các mục đích cụ thể như alias IP ranges hoặc để phân chia các dịch vụ khác nhau trong cùng một subnet. Giả sử bạn có thể thêm một Secondary CIDR là 10.2.0.0/20 để sử dụng cho các dịch vụ hoặc ứng dụng khác nhau mà không cần tạo thêm subnet mới.
+* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn bên dưới:&#x20;
+  * Bước 1: Truy cập vào trang chủ vServer tại link [https://hcm-3.console.vngcloud.vn/vserver](https://hcm-3.console.vngcloud.vn/vserver)
+  * Bước 2: Chọn menu **VPCs** ở menu bên trái màn hình.
+  * Bước 3: Tại đây, nếu bạn chưa có VPC nào, vui lòng chọn Create VPC bằng cách nhập VPC name và định nghĩa dãy CIDR/16 mong muốn.
+  * Bước 4: Sau khi đã có ít nhất 1 VPC, để tạo subnet, bạn cần chọn View Detail để mở rộng bảng điều khiển ở phía dưới, trong đó có mục Subnet.
+  * Bước 5: Tại mục Subnet, chọn Add Subnet. Lúc này, bạn cần nhập:
+    * Subnet name: tên gợi nhớ của subnet
+    * **Primary CIDR**: :Đây là dải địa chỉ IP chính của subnet. Mọi địa chỉ IP nội bộ của các máy ảo (VM) trong subnet này sẽ được lấy từ dải địa chỉ này. Giả sử, nếu bạn đặt Primary CIDR là 10.1.0.0/16, các địa chỉ IP của các VM sẽ nằm trong khoảng từ 10.1.0.1 đến 10.1.255.254.
+    * **Secondary CIDR**: Đây là dải địa chỉ IP phụ, được sử dụng để cung cấp thêm địa chỉ IP cho các mục đích cụ thể như alias IP ranges hoặc để phân chia các dịch vụ khác nhau trong cùng một subnet. Giả sử bạn có thể thêm một Secondary CIDR là 10.2.0.0/20 để sử dụng cho các dịch vụ hoặc ứng dụng khác nhau mà không cần tạo thêm subnet mới.
+
+<figure><img src="../../../.gitbook/assets/image (776).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (777).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**

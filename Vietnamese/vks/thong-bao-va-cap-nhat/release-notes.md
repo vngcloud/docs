@@ -1,5 +1,28 @@
 # Release notes
 
+## Oct 03, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
+
+VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng và cải tiến cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Triển khai Region mới:**&#x20;
+
+* Bên cạnh Region HCM03, VKS hiện đã hỗ trợ thêm Region HAN01. Việc bổ sung này giúp khách hàng có thêm lựa chọn trong việc triển khai ứng dụng, đặc biệt hữu ích cho các doanh nghiệp có yêu cầu về vị trí đặt dữ liệu.&#x20;
+
+**Tính năng mới:**
+
+* **Network Type: Cilium Overlay, Cilium VPC Native Routing:** Ngoài Calico Overlay, bản phát hành lần này chúng tôi đã bổ sung hai loại mạng mới: Cilium Overlay và Cilium VPC Native Routing. Cilium Overlay cho phép bạn xây dựng mạng overlay linh hoạt, trong khi Cilium VPC Native Routing tích hợp chặt chẽ với VPC của VNG Cloud, giúp tối ưu hiệu suất và bảo mật cho ứng dụng của bạn. Chi tiết tham khảo thêm tại [đây](../network/cni/).
+
+**Cải tiến:**
+
+* **Multiple Subnet cho Cluster trên VKS:** VKS giờ đây hỗ trợ sử dụng nhiều subnet cho một cluster. Điều này cho phép bạn cấu hình từng node group trong cluster nằm ở các subnet khác nhau trong cùng một VPC, tối ưu hóa việc phân bổ tài nguyên và quản lý mạng.
+* **Chỉnh sửa Labels/Taints trên cụm VKS hiện có:** Với khả năng chỉnh sửa trực tiếp Labels/Taints trên cụm VKS đã triển khai, bạn có thể điều khiển việc lên lịch Pod, áp dụng các chính sách khác nhau cho các Node Group, và tùy chỉnh quy tắc lựa chọn node cho các ứng dụng. Điều này giúp quản lý và phân loại tài nguyên hiệu quả hơn.
+* **Enable/Disable lựa chọn sử dụng Private Service Endpoint:** Trước đây, khi tạo private cluster trên VKS, việc tạo private service endpoint là bắt buộc. Giờ đây, bạn có thể dễ dàng bật/tắt tính năng này, cho phép các dịch vụ trong cụm VKS giao tiếp qua địa chỉ IP nội bộ, tăng cường bảo mật và giảm thiểu rủi ro tấn công từ bên ngoài.
+* **Enable/Disable lựa chọn mã hóa Volume:** Tính năng mã hóa Volume cho phép bạn bảo vệ dữ liệu nhạy cảm được lưu trữ trong các Persistent Volume của cụm VKS. Việc này đảm bảo an toàn dữ liệu và tuân thủ các quy định về bảo vệ thông tin. Giờ đây, bạn có thể bật/tắt tính năng mã hóa cho từng Volume theo nhu cầu.
+
+***
+
+
+
 ## Aug 28, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
 VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều tính năng mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
