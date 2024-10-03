@@ -1,5 +1,28 @@
 # Release notes
 
+## Oct 03, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
+
+VKS (VNGCloud Kubernetes Service) has just released its latest update, bringing many features and improvements to users. Here are the highlights of the update:
+
+**New Region:**
+
+* In addition to Region HCM03, VKS now supports Region HAN01. This addition gives customers more options in deploying applications, especially useful for businesses with data location requirements.
+
+**New features:**
+
+* **Network Type: Cilium Overlay, Cilium VPC Native Routing:** In addition to Calico Overlay, this release we have added two new network types: Cilium Overlay and Cilium VPC Native Routing. Cilium Overlay allows you to build flexible overlay networks, while Cilium VPC Native Routing integrates tightly with VNG Cloud's VPC, optimizing performance and security for your applications. For more details, please refer [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vks/network/cni) .
+
+**Improve:**
+
+* **Multiple Subnets for Clusters on VKS:** VKS now supports using multiple subnets for a cluster. This allows you to configure each node group in the cluster to be located on different subnets within the same VPC, optimizing resource allocation and network management.
+* **Edit Labels/Taints on an existing VKS cluster:** With the ability to directly edit Labels/Taints on a deployed VKS cluster, you can control Pod scheduling, apply different policies to Node Groups, and customize node selection rules for applications. This helps manage and classify resources more efficiently.
+* **Enable/Disable Private Service Endpoint usage option:** Previously, when creating a private cluster on VKS, creating a private service endpoint was required. Now, you can easily enable/disable this feature, allowing services in the VKS cluster to communicate via internal IP addresses, enhancing security and minimizing the risk of external attacks.
+* **Enable/Disable Volume Encryption Option:** Volume encryption feature allows you to protect sensitive data stored in the Persistent Volumes of the VKS cluster. This ensures data security and compliance with information protection regulations. Now, you can enable/disable encryption for each Volume as needed.
+
+***
+
+
+
 ## Aug 28, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
 VKS (VNGCloud Kubernetes Service) introduces the latest update to the existing VKS, bringing many new features to users. Here are the details about the update:

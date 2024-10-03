@@ -2,10 +2,7 @@
 
 vServer - VNG Cloud Service is a virtual server service provided by VNG that allows you to easily deploy all types of servers with high performance including applications, services and data stored remotely to your computer quickly in the cloud computing environment, Help meet all customer needs without having to invest upfront in hardware. Cloud servers are also very flexible in that they are scalable and easily set up in minutes, in addition to providing other advanced services and tools such as VPC (Virtual Private Cloud), vLB (LoadBalancing as a service), vAS (AutoScaling), Cloud Firewall (using Juniper's vSRX), vContainer, vBackup... to support users in the most optimal way.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49647923/image2023-4-12_15-46-8.png?version=1&#x26;modificationDate=1681289169000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
-\
-
+<figure><img src="../../.gitbook/assets/image (292).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
