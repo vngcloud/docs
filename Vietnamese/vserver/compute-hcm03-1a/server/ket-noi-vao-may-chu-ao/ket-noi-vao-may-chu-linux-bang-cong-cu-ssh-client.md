@@ -107,7 +107,7 @@ Nếu bạn đã tạo một SSH Key Pair trên portal VNGCLOUD (_Nhấp vào_ [
 
     <figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 3.  Thay đổi password cho user stackops ở lần đầu tiên login\
     \
     **1 -** Nhập password của user stackops với nội dung là **instancePassword** email\
@@ -115,7 +115,7 @@ Nếu bạn đã tạo một SSH Key Pair trên portal VNGCLOUD (_Nhấp vào_ [
     **3 -** Nhập lại new password cho user stackops để dùng cho login sau này\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 4.  Kết nối lại đến vServer\
 
 

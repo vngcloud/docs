@@ -24,7 +24,7 @@
 
 **Bước 2:** Chọn một hoặc nhiều tài nguyên bạn muốn gắn tag (hình bên dưới)
 
-<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Nhấn vào nút "Quản lý thẻ" hoặc biểu tượng thẻ tại phần table header.
 

@@ -53,6 +53,6 @@ sudo ./filebeat.sh <path-to-file-log>
 2. Chọn **Log search**.
 3. Chọn **Log project** nào bạn cần xem và phân tích logs. Vị trí chọn log project được hiển thị như hình bên dưới:
 
-<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (37) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Tiếp tục thực hiện **tìm kiếm và phân tích logs**.

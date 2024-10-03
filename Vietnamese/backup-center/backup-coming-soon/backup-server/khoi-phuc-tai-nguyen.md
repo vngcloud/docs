@@ -15,15 +15,15 @@ Hướng dẫn này sẽ giúp bạn thực hiện quá trình khôi phục tài
 2. Chọn Backup Server cần khôi phục. Bạn có thể nhấn vào ô tìm kiếm, nhập tên backup server cần tìm. ![](<../../../.gitbook/assets/image (767).png>)
 3.  Tại trang chi tiết của Backup Server, nhấn chọn tab Restore Point. Tại đây, bạn sẽ thấy danh sách các bản backup server point đã tạo.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 4. Chọn bản sao lưu cần khôi phục và nhấn restore cho 2 trường hợp sau:
 
 *   **Chọn backup server point:** Nếu muốn khôi phục toàn bộ máy chủ, hãy chọn backup server point mong muốn và nhấn restore.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 *   **Chọn backup volume point:** Nếu chỉ muốn khôi phục một volume cụ thể, hãy chọn backup server point chứa volume đó, sau đó chọn backup volume point cần khôi phục và nhấn restore.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 5. Sau khi nhấn Restore, hệ thống sẽ điều hướng người dùng đến trang khởi tạo Server hoặc Volume để tiến hành cấu hình các thông số cần thiết. Nhấn khởi tạo để bắt đầu quá trình khôi phục.
 

@@ -58,11 +58,11 @@ Sau khi cài đặt Metric Agent theo hướng dẫn tại **Bước 3: Cài đ�
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Chọn **Infrastructure List/ Host.**
 
-<figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Chọn tên **Hostname**. Ví dụ thiết bị **LAP15839** được thiết lập Metric Agent thành công tới hệ thống vMonitor Platform thì dashboard mặc định sẽ có tên: **LAP15839**, bạn chọn dashboard sẽ hiển thị như ảnh:
 
-<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36) (1).png" alt=""><figcaption></figcaption></figure>
 
 Với Dashboard Mặc định này, bạn sẽ có thể xem được các thông tin metric mà chúng tôi đã vẽ trước cho bạn bao gồm các biểu đồ về thông tin CPU, Memory, Load Avg, Disk, Network. Cũng trên **Dashboard mặc định** này bạn không thể thêm widget hay tuỳ chỉnh dashboard. Để thực hiện thay đổi hay tùy chỉnh Dashboard, bạn cần tạo dashboard mới hoặc **Tạo bản sao** từ **Dashboard mặc định** này ra và Chỉnh sửa. Để tạo bản sao Dashboard, hãy làm theo hướng dẫn bên dưới:&#x20;
 

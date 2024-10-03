@@ -100,11 +100,11 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 * Sau đó nhấn vào **Save**
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Vào phần **Interfaces** -> **Assignments** để tiến hành **enable LAN Interface**
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Bạn thực hiện cấu hình như bên dưới
 

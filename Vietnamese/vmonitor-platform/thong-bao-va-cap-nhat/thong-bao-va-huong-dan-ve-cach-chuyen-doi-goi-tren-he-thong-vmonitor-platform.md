@@ -43,6 +43,6 @@ Quá trình chuyển đổi gói sẽ diễn ra ngay lập tức. Các thông s�
 
 Trong ví dụ này, tôi đã mua gói Metric Quota, Log Project có tính phí nên khi chuyển đổi, tôi đã tự động được tặng thêm 200 SMS và 200 Email miễn phí trong vòng 6 tháng. Cụ thể:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
 
 Sau khi đã chuyển đổi tài nguyên, bạn có thể tiếp tục thực hiện Tăng/ giảm kích thước, Gia hạn tài nguyên theo các hướng dẫn khác trong tài liệu này.
