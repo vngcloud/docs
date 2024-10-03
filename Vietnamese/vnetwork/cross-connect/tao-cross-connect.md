@@ -29,7 +29,7 @@
 **Lưu ý:**
 
 * Tại màn hình danh sách Cross Connect, có thể thấy Cross Connect vừa tạo với trạng thái "<mark style="color:blue;">**Provisioning**</mark>" (là trạng thái hệ thống đang thiết lập kết nối);
-* Quá trình thiết lập tuyến Cross Connect này, hệ thống cần nhiều thời gian để thực hiện xác thực giữa hai vùng, do đó có thể mất tối đa 20 phút để xử lý, sau khi hệ thống xử lý xong thì trạng thái sẽ tự động chuyển thành "<mark style="color:blue;">**Active**</mark>".
+* Quá trình thiết lập tuyến Cross Connect này, hệ thống cần nhiều thời gian để thực hiện xác thực giữa hai vùng, do đó có thể <mark style="color:blue;">**mất tối đa 20 phút để xử lý**</mark>, sau khi hệ thống xử lý xong thì trạng thái sẽ tự động chuyển thành "<mark style="color:blue;">**Active**</mark>".
 * Lúc này người dùng có thể thực hiện thiết lập [Tạo kết nối VPC giữa hai vùng](tao-ket-noi-vpc.md).
 {% endhint %}
 

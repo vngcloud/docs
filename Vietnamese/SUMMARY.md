@@ -822,7 +822,7 @@
     * [Thay đổi gói băng thông](vnetwork/cross-connect/thay-doi-goi-bang-thong.md)
     * [Các gói Băng thông](vnetwork/cross-connect/cac-goi-bang-thong.md)
     * [Kiểm tra điều kiện kết nối VPC](vnetwork/cross-connect/kiem-tra-dieu-kien-ket-noi-vpc.md)
-    * [Trường hợp sử dụng (Use Case)](vnetwork/cross-connect/truong-hop-su-dung-use-case.md)
+    * [Trường hợp sử dụng (UseCase)](vnetwork/cross-connect/truong-hop-su-dung-usecase.md)
 * [Service Health](service-health.md)
 * [Identity and Access Management (IAM)](identity-and-access-management-iam.md)
   * [Bắt đầu với IAM](identity-and-access-management-iam/bat-dau-voi-iam.md)
