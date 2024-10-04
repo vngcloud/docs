@@ -79,22 +79,13 @@ Suppose, when initializing the cluster, I choose:
 * **Subnet:**
   * **Primary IP Range:** 10.111.0.0/24
   * **Secondary IP Range:** 10.111.160.0/20
-* **Node CIDR mask size:** Selectable values ​​range from **/20** to **/26** .
+* **Node CIDR mask size:** Selectable values ​​range from **/24** to **/26** .
 
 | **Node CIDR mask size** | **Number of IPs per node** | **Number of nodes that can be created in the /20 range (4096 IPs)** | **Number of IPs allocated to pods on each node** | **Actual number of pods that can be created** |
 | ----------------------- | -------------------------- | ------------------------------------------------------------------- | ------------------------------------------------ | --------------------------------------------- |
-| **/20**                 | 4096                       | 1                                                                   | 4096                                             | 2048                                          |
-| **/21**                 | 2048                       | 2                                                                   | 2048                                             | 1024                                          |
-| **/22**                 | 1024                       | 4                                                                   | 1024                                             | 512                                           |
-| **/23**                 | 512                        | 8                                                                   | 512                                              | 256                                           |
 | **/24**                 | 256                        | 16                                                                  | 256                                              | 128                                           |
 | **/25**                 | 128                        | 32                                                                  | 128                                              | 64                                            |
 | **/26**                 | 64                         | 64                                                                  | 64                                               | 32                                            |
-
-Therefore:
-
-* **The larger the node CIDR mask size** (eg **/20** , **/21** ), the fewer nodes you will have but each node will have more IPs for pods.
-* **Smaller node CIDR mask size** (eg **/24** , **/25** ), you can create more nodes but each node will have less IP addresses for pods.
 
 <figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
