@@ -440,7 +440,7 @@
       * [Quản lý Backup Server Point](backup-center/backup-coming-soon/backup-server/quan-ly-backup-server-point.md)
       * [Khôi phục tài nguyên](backup-center/backup-coming-soon/backup-server/khoi-phuc-tai-nguyen.md)
       * [Thay đổi backup policy](backup-center/backup-coming-soon/backup-server/thay-doi-backup-policy.md)
-      * [Page 1](backup-center/backup-coming-soon/backup-server/page-1.md)
+      * [Thay đổi backup location](backup-center/backup-coming-soon/backup-server/thay-doi-backup-location.md)
     * [Backup Policy](backup-center/backup-coming-soon/backup-policy.md)
     * [Cách tính phí](backup-center/backup-coming-soon/cach-tinh-phi.md)
     * [Tình huống sử dụng](backup-center/backup-coming-soon/tinh-huong-su-dung/README.md)
