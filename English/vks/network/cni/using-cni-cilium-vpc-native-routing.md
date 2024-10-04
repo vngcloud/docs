@@ -32,7 +32,7 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
   * **Step 5**: In the **Subnet** section, select **Add Subnet**. Now, you need to enter:
     * **Subnet name**: the subnet's mnemonic name
     * **Primary CIDR** : :This is the primary IP address range of the subnet. All internal IP addresses of virtual machines (VMs) in this subnet will be taken from this address range. For example, if you set Primary CIDR to 10.1.0.0/16, the IP addresses of the VMs will be in the range of 10.1.0.1 to 10.1.255.254.
-    * **Secondary CIDR** : This is a secondary IP address range, used to provide additional IP addresses for specific purposes such as alias IP ranges or to separate different services within the same subnet. Suppose you can add a Secondary CIDR of 10.2.0.0/20 to use for different services or applications without creating a new subnet.
+    * **Secondary CIDR** : This is a secondary IP address range, used to provide additional IP addresses or to separate different services within the same subnet. Each Node has a private IP address range for its pods (Pod CIDR). The pods in each node use addresses from this CIDR and communicate over the virtual network.
 
 <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
@@ -42,9 +42,10 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 **Attention:**
 
 * The IP address ranges of **Primary CIDR** and **Secondary CIDR** cannot overlap. This means that the address range of **Secondary CIDR** must be outside the range of **Primary CIDR** and vice versa. For example, if Primary CIDR is 10.1.0.0/16, then Secondary CIDR cannot be 10.1.0.0/20 because it is within the range of Primary CIDR. Instead, you can use a different address range like 10.2.0.0/20.
+{% endhint %}
+
 * There is at least 1 **SSH key in ACTIVE** state . If you do not have any SSH key, please initialize SSH key following the instructions here [.](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/security/ssh-key-bo-khoa)
 * **kubectl** installed and configured on your device. please refer here [if](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) you are not sure how to install and use kuberctl. In addition, you should not use an outdated version of kubectl, we recommend that you use a kubectl version that is no more than one version different from the cluster version.
-{% endhint %}
 
 ***
 
@@ -96,10 +97,7 @@ Suppose, when initializing the cluster, I choose:
 * **Multiple subnets for a cluster:** VKS supports the use of multiple subnets for a cluster. This allows you to configure each node group in the cluster to be located on different subnets within the same VPC, helping to optimize resource allocation and network management.
 * **Cilium VPC Native Routing and Secondary IP Range** : When using Cilium VPC Native Routing for a cluster, you can use multiple Secondary IP Ranges. However, each Secondary IP Range can only be used by a single cluster. This helps avoid IP address conflicts and ensures consistency in network management.
 * When there are not enough IP addresses in **the Node CIDR range** or **Secondary IP range** to create more nodes, specifically:
-  * If you **cannot use the new Node because of** running out of IP addresses in **the Secondary IP range** . At this time, new nodes will still be created and joined to the cluster but you cannot use them. The pods that are required to launch on this new node will be stuck in the " **ContainerCreating** " state because they cannot find a suitable node to deploy. **Solution** : You need to expand the **Secondary IP range** (if your network infrastructure allows) or adjust the cluster configuration (increase the number of CIDR nodes).
-  * **Not enough IP addresses for Pods** : If a node is initialized but does not have enough IP addresses to allocate to new pods, pods will not be able to launch on that node. VKS will **not allocate more pods to that node, and the pod will enter the " ContainerCreating** " state until resources or IPs are available. **Solution** : You can:
-    * **Increase the number of nodes** to reduce load and increase the amount of IP for pods.
-    * **Optimize Node CIDR mask size** so that each node has more IPs.
+  * If you **cannot use the new Node because of** running out of IP addresses in **the Secondary IP range** . At this time, new nodes will still be created and joined to the cluster but you cannot use them. The pods that are required to launch on this new node will be stuck in the " **ContainerCreating** " state because no suitable node can be found to deploy. At this time, you need to create a new node group with a secondary IP range that is not used on any cluster.
 {% endhint %}
 
 **Step 5:** Select **Create Kubernetes cluster.** Please wait a few minutes for us to initialize your Cluster, the status of the Cluster is now **Creating** .
@@ -114,7 +112,7 @@ Below are instructions for deploying an nginx deployment and testing IP assignme
 
 **Step 1:** Access [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
-**Step 2:** The Cluster list is displayed, select the icon Download and select **Download Config File** to download the kubeconfig file. This file will give you full access to your Cluster.
+**Step 2:** The Cluster list is displayed, select the icon **Download** and select **Download Config File** to download the kubeconfig file. This file will give you full access to your Cluster.
 
 **Step 3** : Rename this file to config and save it to the **\~/.kube/config folder**
 
@@ -141,7 +139,7 @@ vks-cluster-democilium-nodegroup-558f4-e6e4d   Ready    <none>   6m24s   v1.28.8
 k get pods -A
 ```
 
-* If the result is as below, it means that the **pods** supporting Cilium VPC Native have been successfully run:
+* If the result is as below, it means that the **pods** supporting Cilium VPC Native have been running:
 
 ```bash
 NAMESPACE     NAME                                          READY   STATUS    RESTARTS        AGE
