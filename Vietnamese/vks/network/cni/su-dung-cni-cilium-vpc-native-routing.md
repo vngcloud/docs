@@ -75,14 +75,9 @@ Giả sử, khi khởi tạo cluster, tôi lựa chọn:&#x20;
 * **Subnet:**&#x20;
   * **Primary IP Range:** 10.111.0.0/24
   * **Secondary IP Range:**10.111.160.0/20
-* **Node CIDR mask size:** Các giá trị có thể chọn từ **/20** đến **/26**.
+* **Node CIDR mask size:** Các giá trị có thể chọn từ **/24** đến **/26**.
 
-<table data-full-width="true"><thead><tr><th>Node CIDR mask size</th><th>Số lượng IP cho mỗi node</th><th>Số lượng node có thể tạo trong dải /20 (4096 IP)</th><th>Số lượng IP phân bổ cho pod trên mỗi node</th><th>Số lượng pod thực tế có thể tạo</th></tr></thead><tbody><tr><td><strong>/20</strong></td><td>4096</td><td>1</td><td>4096 </td><td>2048</td></tr><tr><td><strong>/21</strong></td><td>2048</td><td>2</td><td>2048</td><td>1024</td></tr><tr><td><strong>/22</strong></td><td>1024</td><td>4</td><td>1024</td><td>512</td></tr><tr><td><strong>/23</strong></td><td>512</td><td>8</td><td>512</td><td>256</td></tr><tr><td><strong>/24</strong></td><td>256</td><td>16</td><td>256 </td><td>128</td></tr><tr><td><strong>/25</strong></td><td>128</td><td>32</td><td>128</td><td>64</td></tr><tr><td><strong>/26</strong></td><td>64</td><td>64</td><td>64</td><td>32</td></tr></tbody></table>
-
-Do đó:&#x20;
-
-* **Node CIDR mask size** càng lớn (ví dụ **/20**, **/21**), bạn sẽ có ít node nhưng mỗi node sẽ có nhiều IP hơn cho các pod.
-* **Node CIDR mask size** nhỏ hơn (ví dụ **/24**, **/25**), bạn có thể tạo nhiều node hơn nhưng mỗi node sẽ có ít địa chỉ IP hơn cho pod.
+<table data-full-width="true"><thead><tr><th>Node CIDR mask size</th><th>Số lượng IP cho mỗi node</th><th>Số lượng node có thể tạo trong dải /20 (4096 IP)</th><th>Số lượng IP phân bổ cho pod trên mỗi node</th><th>Số lượng pod thực tế có thể tạo</th></tr></thead><tbody><tr><td><strong>/24</strong></td><td>256</td><td>16</td><td>256 </td><td>128</td></tr><tr><td><strong>/25</strong></td><td>128</td><td>32</td><td>128</td><td>64</td></tr><tr><td><strong>/26</strong></td><td>64</td><td>64</td><td>64</td><td>32</td></tr></tbody></table>
 
 <figure><img src="../../../.gitbook/assets/image (755).png" alt=""><figcaption></figcaption></figure>
 
