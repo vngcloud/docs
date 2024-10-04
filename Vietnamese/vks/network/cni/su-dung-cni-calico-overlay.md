@@ -93,10 +93,10 @@ vks-cluster01-nodegroup01-9102e       Ready    <none>   19h   v1.28.8
 * Tiếp tục thực hiện chạy lệnh sau đây để kiểm tra các **pod** đã được triển khai trên namespace kube-system của bạn:&#x20;
 
 ```
-k get pods -A
+kubectl get pods -A
 ```
 
-* Nếu kết quả trả về như bên dưới tức là các pods hỗ trợ chạy **Calico Overlay** đã được chạy thành công:
+* Nếu kết quả trả về như bên dưới tức là các **pods** hỗ trợ chạy **Calico Overlay** đã running:
 
 ```bash
 NAMESPACE     NAME                                           READY   STATUS    RESTARTS   AGE

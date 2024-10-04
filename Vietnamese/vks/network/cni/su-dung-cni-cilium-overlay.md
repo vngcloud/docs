@@ -92,10 +92,10 @@ vks-cluster-02-nodegroup-7fb09-430aa   Ready    <none>   5m52s   v1.29.1
 * Tiếp tục thực hiện chạy lệnh sau đây để kiểm tra các **pod** đã được triển khai trên namespace kube-system của bạn:&#x20;
 
 ```bash
-k get pods -A
+kubectl get pods -A
 ```
 
-* Nếu kết quả trả về như bên dưới tức là các pods hỗ trợ chạy **Cilium Overlay** đã được chạy thành công:
+* Nếu kết quả trả về như bên dưới tức là các **pods** hỗ trợ chạy **Cilium Overlay** đã được running:
 
 ```bash
 NAMESPACE     NAME                                           READY   STATUS    RESTARTS        AGE
