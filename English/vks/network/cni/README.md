@@ -25,6 +25,12 @@ This helps maintain a continuous, flexible, and secure network infrastructure in
 
 Currently, VKS is providing 3 popular CNI plugins: Calico Overlay, Cilium Overlay, Cilium VPC Native Routing. In which:
 
-* **Calico Overlay:** Suitable for environments that require **high performance** and compatibility with multiple infrastructures.
-* **Cilium Overlay** : Optimized for applications that require **strong security,** helping to improve performance, security, and scalability.
-* **Cilium VPC Native Routing: Ideal for VPC** environments , optimize performance and manage IPs directly from the VPC.
+* **Calico Overlay** : Uses overlay model through tunneling ( **IP-in-IP** ). Compatible with many infrastructures but performance can be affected by tunnel **overhead .**
+* **Cilium Overlay** : Also uses the overlay model but has strong integration with **eBPF** , which improves performance, security, and scalability.
+* **Cilium VPC Native Routing** : Uses **eBPF** and **no overlay required** , leveraging the routing capabilities of the VPC infrastructure, providing the best performance and scalability.
+
+**When to use Calico Overlay** : simple to use, does not require too high performance.
+
+**When to use Cilium Overlay** : simple to use, does not require too high performance but requires intensive monitoring (Hubble).
+
+**When to use Cilium VPC Native Routing** : high performance requirements, easy **connectivity to external systems** , and in-depth monitoring needs (Hubble).
