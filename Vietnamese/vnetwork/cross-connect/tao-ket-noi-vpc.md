@@ -23,7 +23,7 @@
 
 <figure><img src="../../.gitbook/assets/image (785).png" alt=""><figcaption><p>Mô tả thực hiện ghép cặp giữa hai VPC</p></figcaption></figure>
 
-**Bước 7**: Sau khi chọn cặp VPC kết nối, hẫy nhấn "<mark style="color:blue;">**Thêm**</mark>" để thêm mới cặp kết nối VPC.&#x20;
+**Bước 7**: Sau khi chọn cặp VPC kết nối, hẫy nhấn "<mark style="color:blue;">**Thêm**</mark>" để thêm mới cặp kết nối VPC. Sau đó, hệ thống thực hiện kết nối, nếu thành công thì trạng thái là 'Active'. Ngoài ra, số lượng kết nối VPC được tăng lên và thể hiện ở màn hình danh sách Cross Connect.
 
 <figure><img src="../../.gitbook/assets/image (786).png" alt=""><figcaption><p>Kết quả trạng thái kết nối của cặp VPC vừa kết nối</p></figcaption></figure>
 
