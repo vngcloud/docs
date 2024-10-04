@@ -124,13 +124,13 @@ vks-cluster-democilium-nodegroup-558f4-63344   Ready    <none>   5m45s   v1.28.8
 vks-cluster-democilium-nodegroup-558f4-e6e4d   Ready    <none>   6m24s   v1.28.8
 ```
 
-* Tiếp tục thCtyực hiện chạy lệnh sau đây để kiểm tra các **pod** đã được triển khai trên namespace kube-system của bạn:&#x20;
+* Tiếp tục thực hiện chạy lệnh sau đây để kiểm tra các **pod** đã được triển khai trên namespace kube-system của bạn:&#x20;
 
 ```bash
-k get pods -A
+kubectl get pods -A
 ```
 
-* Nếu kết quả trả về như bên dưới tức là các **pods** hỗ trợ chạy Cilium VPC Native đã được chạy thành công:
+* Nếu kết quả trả về như bên dưới tức là trạng thái các **pods** hỗ trợ chạy Cilium VPC Native đều thành công (**Running**):
 
 ```bash
 NAMESPACE     NAME                                          READY   STATUS    RESTARTS        AGE
@@ -233,7 +233,7 @@ kubectl describe pod nginx-app-7c79c4bf97-6v88s
 **Bước 4: Bạn có thể thực hiện một vài bước để kiểm tra chuyên sâu việc hoạt động của Cilium. Cụ thể:**
 
 * Đầu tiên, bạn cần cài đặt Cilium CLI theo hướng dẫn tại [đây](https://docs.cilium.io/en/stable/gettingstarted/k8s-install-default/#install-the-cilium-cli).
-* Sau khi cài đặt Cilium CLS, thực hiện kiểm tra **trạng thái** của Cilium trong cluster của bạn qua lệnh:
+* Sau khi cài đặt Cilium CLI, thực hiện kiểm tra **trạng thái** của Cilium trong cluster của bạn qua lệnh:
 
 ```bash
 cilium status wait
@@ -271,13 +271,13 @@ Image versions         cilium             vcr.vngcloud.vn/81-vks-public/cilium/c
 
 **Bước 5: Bạn có thể thực hiện healthy check kiểm tra Cilium trong cluster của bạn**
 
-* Chạy lệnh sau để thực hiện healthy check
+* Chạy lệnh sau để thực hiện healthy check:
 
 ```bash
 kubectl -n kube-system exec ds/cilium -- cilium-health status --probe
 ```
 
-* Kết quả tham khảo
+* Kết quả healthy check mong muốn sẽ như sau:
 
 ```bash
 Probe time:   2024-09-26T07:11:57Z
