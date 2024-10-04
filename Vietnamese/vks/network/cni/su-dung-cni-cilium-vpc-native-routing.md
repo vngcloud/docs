@@ -88,10 +88,7 @@ Giả sử, khi khởi tạo cluster, tôi lựa chọn:&#x20;
 * **Multiple subnet cho một cluster:** VKS hỗ trợ việc sử dụng nhiều subnet cho một cluster. Điều này cho phép bạn cấu hình mỗi node group trong cluster nằm ở các subnet khác nhau trong cùng một VPC, giúp tối ưu hóa việc phân bổ tài nguyên và quản lý mạng.
 * **Cilium VPC Native Routing và Secondary IP Range**: Khi sử dụng Cilium VPC Native Routing cho một cluster, bạn có thể sử dụng nhiều Secondary IP Range. Tuy nhiên, mỗi Secondary IP Range chỉ có thể được sử dụng bởi một cluster duy nhất. Điều này giúp tránh xung đột địa chỉ IP và đảm bảo tính nhất quán trong quản lý mạng.
 * Khi không đủ địa chỉ IP trong **Node CIDR range** hoặc **Secondary IP range** để tạo thêm node, cụ thể:
-  * Nếu bạn **không thể sử dụng Node mới do** hết dải địa chỉ IP trong **Secondary IP range**. Lúc này, các node mới vẫn sẽ được tạo và được join vào cụm nhưng bạn không thể sử dụng chúng. Các pod được yêu cầu khởi chạy trên node mới này sẽ bị kẹt trong trạng thái "**ContainerCreating**" do không thể tìm thấy node phù hợp để triển khai. **Giải pháp**: Bạn cần mở rộng dải **Secondary IP range** (nếu hạ tầng mạng của bạn cho phép) hoặc điều chỉnh cấu hình của cluster (tăng số node CIDR).
-  * **Không đủ địa chỉ IP cho Pod**: Nếu một node được khởi tạo nhưng không còn đủ địa chỉ IP để cấp phát cho các pod mới, các pod sẽ không thể khởi chạy trên node đó. VKS sẽ **không** phân bổ thêm pod cho node đó, và pod sẽ rơi vào trạng thái "**ContainerCreating**" cho đến khi có tài nguyên hoặc IP khả dụng.**Giải pháp**: Bạn có thể:
-    * **Tăng số lượng node** để giảm tải và tăng lượng IP cho các pod.
-    * **Tối ưu lại Node CIDR mask size** để mỗi node có nhiều IP hơn.
+  * Nếu bạn **không thể sử dụng Node mới do** hết dải địa chỉ IP trong **Secondary IP range**. Lúc này, các node mới vẫn sẽ được tạo và được join vào cụm nhưng bạn không thể sử dụng chúng. Các pod được yêu cầu khởi chạy trên node mới này sẽ bị kẹt trong trạng thái "**ContainerCreating**" do không thể tìm thấy node phù hợp để triển khai. Lúc này, bạn cần tạo node group mới với secondary range IP chưa được sử dụng trên cluster nào.&#x20;
 {% endhint %}
 
 **Bước 5:** Chọn **Create Kubernetes cluster.** Hãy chờ vài phút để chúng tôi khởi tạo Cluster của bạn, trạng thái của Cluster lúc này là **Creating**.
@@ -106,7 +103,7 @@ Bên dưới là hướng dẫn triển khai một deployment nginx và kiểm t
 
 **Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
-**Bước 2:** Danh sách Cluster được hiển thị, chọn biểu tượng ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F73761995%2Fimage2024-4-4\_14-37-11.png%3Fversion%3D1%26modificationDate%3D1712216232000%26api%3Dv2\&width=40\&dpr=4\&quality=100\&sign=7c12e1b3\&sv=1) và chọn **Download Config File** để thực hiện tải xuống file kubeconfig. File này sẽ giúp bạn có toàn quyền truy cập vào Cluster của bạn.
+**Bước 2:** Danh sách Cluster được hiển thị, chọn biểu tượng **Download** và chọn **Download Config File** để thực hiện tải xuống file kubeconfig. File này sẽ giúp bạn có toàn quyền truy cập vào Cluster của bạn.
 
 **Bước 3**: Đổi tên file này thành config và lưu nó vào thư mục **\~/.kube/config**
 
