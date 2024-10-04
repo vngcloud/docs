@@ -54,7 +54,7 @@ Trên region HCM04, chúng tôi cung cấp cho bạn các tính năng phân quy�
 
 <summary>Chuyển chế độ công khai bucket</summary>
 
-Bạn có thể chuyển chế độ của bucket từ riêng tư thành công khai để cho phép bất kỳ ai cũng có thể truy cập vào bucket để xem, tải xuống, tải lên tất cả tệp tin, object thuộc bucket được công khai. Để biết thêm thông tin, hãy xem tại [Làm việc với bucket](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/)
+Bạn có thể chuyển chế độ của bucket từ riêng tư thành công khai để cho phép bất kỳ ai cũng có thể truy cập vào bucket để xem, tải xuống, tải lên tất cả tệp tin, object thuộc bucket được công khai. Để biết thêm thông tin, hãy xem tại [Làm việc với bucket](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket.md)
 
 </details>
 
@@ -62,7 +62,7 @@ Bạn có thể chuyển chế độ của bucket từ riêng tư thành công k
 
 <summary>Chuyển chế độ riêng tư container</summary>
 
-Bạn có thể chuyển chế độ của bucket từ công khai thành riêng tư để dừng việc chia sẻ công khai bucket trên môi trường điện toán đám mây. Bạn sẽ không thể truy cập vào bucket thông qua đường dẫn URL mà cần chứng thực quyền truy cập. Để biết thêm thông tin, hãy xem tại [Làm việc với bucket](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/)
+Bạn có thể chuyển chế độ của bucket từ công khai thành riêng tư để dừng việc chia sẻ công khai bucket trên môi trường điện toán đám mây. Bạn sẽ không thể truy cập vào bucket thông qua đường dẫn URL mà cần chứng thực quyền truy cập. Để biết thêm thông tin, hãy xem tại [Làm việc với bucket](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket.md)
 
 </details>
 
@@ -70,7 +70,7 @@ Bạn có thể chuyển chế độ của bucket từ công khai thành riêng 
 
 <summary>Phân quyền truy cập ACLs container</summary>
 
-Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho 1 hoặc tất cả Root user khác. (Root user được cấp quyền truy cập qua ACLS phải là tài khoản được cấp quyền trên hệ thống VNG Cloud của chúng tôi). Để biết thêm thông tin, hãy xem tại [Làm việc với bucket](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/)
+Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho 1 hoặc tất cả Root user khác. (Root user được cấp quyền truy cập qua ACLS phải là tài khoản được cấp quyền trên hệ thống VNG Cloud của chúng tôi). Để biết thêm thông tin, hãy xem tại [Làm việc với bucket](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket.md)
 
 </details>
 
@@ -78,7 +78,7 @@ Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho 1 hoặc t�
 
 <summary>Chia sẻ tài nguyên CORS</summary>
 
-Bạn có thể cho phép một website truy cập vào tài nguyên trên container. Để biết thêm thông tin, hãy xem tại [Làm việc với bucket](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/)
+Bạn có thể cho phép một website truy cập vào tài nguyên trên container. Để biết thêm thông tin, hãy xem tại [Làm việc với bucket](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket.md)
 
 </details>
 
@@ -86,6 +86,6 @@ Bạn có thể cho phép một website truy cập vào tài nguyên trên conta
 
 <summary>Chia sẻ object qua TempURL</summary>
 
-Bạn có thể chia sẻ việc truy cập vào 1 hoặc nhiều object thông qua đường dẫn TempURL. Để biết thêm thông tin, hãy xem tại [Làm việc với ](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/)[object.](cac-tinh-nang-cua-object-storage/lam-viec-voi-object-va-directory.md)
+Bạn có thể chia sẻ việc truy cập vào 1 hoặc nhiều object thông qua đường dẫn TempURL. Để biết thêm thông tin, hãy xem tại [Làm việc với ](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket.md)[object.](cac-tinh-nang-cua-object-storage/lam-viec-voi-object-va-directory.md)
 
 </details>
