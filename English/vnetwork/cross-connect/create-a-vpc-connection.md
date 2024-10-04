@@ -10,20 +10,24 @@
 
 **Step 4**: On the Cross Connect list screen, click on the previously created Cross Connect;
 
-**Step 5**: On the Cross Connect detail screen, in the Connections tab, click '**Add VPC's Connections**' to create a VPC connection between the two regions;
+<figure><img src="../../.gitbook/assets/image (294).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image11.png" alt=""><figcaption></figcaption></figure>
+**Step 5**: On the Cross Connect detail screen, in the Connections tab, click '**Add More Connections**' to create a VPC connection between the two regions;
 
-**Step 6**: On the **Add VPC's Connections** screen:
+<figure><img src="../../.gitbook/assets/image (295).png" alt=""><figcaption></figcaption></figure>
+
+**Step 6**: On the **Add more VPC's Connections** screen:
 
 * The user must first select the **Requester's VPC**;
 * The system will check connection conditions based on the selected Requester's VPC and display the available **Accepter's VPCs** that can be connected;
 
-<figure><img src="../../.gitbook/assets/image22.avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (296).png" alt=""><figcaption></figcaption></figure>
 
 **Step 7**: After selecting the VPC pair to connect, click **Add** to create the new VPC connection pair.
 
-<figure><img src="../../.gitbook/assets/image33.avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (297).png" alt=""><figcaption><p>Describe the pairing process between two VPCs.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (298).png" alt=""><figcaption><p>The result is the connection status of the newly connected VPC pair.</p></figcaption></figure>
 
 {% hint style="info" %}
 **Note:**
