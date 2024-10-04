@@ -23,7 +23,7 @@
 
 <figure><img src="../../.gitbook/assets/image (296).png" alt=""><figcaption></figcaption></figure>
 
-**Step 7**: After selecting the VPC pair to connect, click **Add** to create the new VPC connection pair.
+**Step 7**: After selecting the VPC pair to connect, click 'Add' to create a new VPC connection pair. The system will then establish the connection, and if successful, the status will be 'Active.' Additionally, the number of VPC connections will increase and be displayed on the Cross Connect list screen.
 
 <figure><img src="../../.gitbook/assets/image (297).png" alt=""><figcaption><p>Describe the pairing process between two VPCs.</p></figcaption></figure>
 
