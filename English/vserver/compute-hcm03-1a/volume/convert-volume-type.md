@@ -34,7 +34,7 @@ Refer to the detailed guide below to convert the disk from SSD to NVMe.
 **Step 0: Configure the Conversion Information:**&#x20;
 
 * 0.1: Access the volume list from the portal [here](https://hcm-3.console.vngcloud.vn/vserver/block-store/volumes).&#x20;
-* 0.2: Navigate to the volume to be converted, click the **three-dot icon** in the **Action** column. ![](<../../../.gitbook/assets/image (74).png>)
+* 0.2: Navigate to the volume to be converted, click the **three-dot icon** in the **Action** column.&#x20;
 * 0.3: Click "**Migrate Volume**."&#x20;
 * 0.4: In the window, select the following information for migration:
   * Type: Default to NVMe.
@@ -45,9 +45,9 @@ Refer to the detailed guide below to convert the disk from SSD to NVMe.
 **Step 1: Initiate Migration (No Downtime)**&#x20;
 
 * The system creates a new volume with the configuration selected in step 0.4, then backs up data from the current volume to the new volume.&#x20;
-* Processing time depends on the size and configuration of each volume. During this step, users can still write data to the volume without any downtime.&#x20;
+*   Processing time depends on the size and configuration of each volume. During this step, users can still write data to the volume without any downtime.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2: Initiate Differential Migration (With Downtime)**&#x20;
 
@@ -55,21 +55,21 @@ The purpose of this step is to back up new/changed data during step 1.&#x20;
 
 2.1: After completing step 1, the interface proceeds to step 2/4, requiring user interaction. Refer to the illustration below:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-2.2: Click "Action Required" to continue the migration process. A "Migrate Volume" window will appear; click "Continue" to confirm. This process will interrupt services on the current volume. The downtime depends on the amount of data changed during step 1. The migration status will appear as follows:
+2.2: Click "Action Required" to continue the migration process. A "Migrate Volume" window will appear; click "Continue" to confirm. This process will interrupt services on the current volume. The downtime depends on the amount of data changed during step 1. The migration status will appear as follows:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-_<mark style="color:orange;">**If the volume is in use on a virtual server, users must shut down the server to continue the migration.**</mark>_
+_<mark style="color:orange;">**If the volume is in use on a virtual server, users must shut down the server to continue the migration.**</mark>_&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (78).png" alt="" width="539"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3: Confirm Use of the Fully Converted Volume**&#x20;
 
 3.1: After completing step 1, the interface proceeds to step 3/4, requiring user interaction. Refer to the illustration below:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 3.2: Click "Action Required." A "Migrate Volume" window will appear, allowing users to confirm two actions:&#x20;
 
@@ -84,7 +84,7 @@ Refer to the detailed guide below to convert the disk from NVMe to SSD.
 **Step 0: Configure the Conversion Information:**&#x20;
 
 * 0.1: Access the volume list from the portal [here](https://hcm-3.console.vngcloud.vn/vserver/block-store/volumes).&#x20;
-* 0.2: Navigate to the volume to be converted, click the **three-dot** icon in the **Action** column. ![](<../../../.gitbook/assets/image (80).png>)
+* 0.2: Navigate to the volume to be converted, click the **three-dot** icon in the **Action** column.&#x20;
 * 0.3: Click "**Migrate Volume**"&#x20;
 * 0.4: In the window, select the following information for migration:
   * Type: Default to SSD.
@@ -95,34 +95,30 @@ Refer to the detailed guide below to convert the disk from NVMe to SSD.
 **Step 1: Initiate Migration (No Downtime)**&#x20;
 
 * The system creates a new volume with the configuration selected in step 0.4, then backs up data from the current volume to the new volume.&#x20;
-* Processing time depends on the size and configuration of each volume. During this step, users can still write data to the volume without any downtime.
+*   Processing time depends on the size and configuration of each volume. During this step, users can still write data to the volume without any downtime.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
-
-
+    <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2: Initiate Differential Migration (With Downtime)**&#x20;
 
 The purpose of this step is to back up new/changed data during step 1.&#x20;
 
-* 2.1: After completing step 1, the interface proceeds to step 2/4, requiring user interaction. Refer to the illustration below:&#x20;
+*   2.1: After completing step 1, the interface proceeds to step 2/4, requiring user interaction. Refer to the illustration below:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+*   2.2: Click "Action Required" to continue the migration process. A "Migrate Volume" window will appear; click "Continue" to confirm. This process will interrupt services on the current volume. The downtime depends on the amount of data changed during step 1. The migration status will appear as follows:&#x20;
 
-* 2.2: Click "Action Required" to continue the migration process. A "Migrate Volume" window will appear; click "Continue" to confirm. This process will interrupt services on the current volume. The downtime depends on the amount of data changed during step 1. The migration status will appear as follows:
+    <figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
+_<mark style="color:orange;">**If the volume is in use on a virtual server, users must shut down the server to continue the migration.**</mark>_&#x20;
 
-_<mark style="color:orange;">**If the volume is in use on a virtual server, users must shut down the server to continue the migration.**</mark>_
-
-<figure><img src="../../../.gitbook/assets/image (84).png" alt="" width="523"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3: Confirm Use of the Fully Converted Volume**&#x20;
 
-* 3.1: After completing step 1, the interface proceeds to step 3/4, requiring user interaction. Refer to the illustration below:&#x20;
+*   3.1: After completing step 1, the interface proceeds to step 3/4, requiring user interaction. Refer to the illustration below:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
-
+    <figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 * 3.2: Click "Action Required." A "Migrate Volume" window will appear, allowing users to confirm two actions:&#x20;
   * 3.2.1: **Delete Old Volume:** The system will complete the update of the new volume, and services on the volume will resume as usual. Note that snapshots related to the volume before the update will be permanently deleted.&#x20;
   * 3.2.2: **Restore:** Restore the volume to its pre-migration state. Data on the volume will be updated to the point before initiating the differential migration (step 2).

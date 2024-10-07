@@ -8,7 +8,7 @@
 
 Model:
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **In addition to the basic components of a K8S cluster and an ALB that you already know, in this model we use:**&#x20;
 

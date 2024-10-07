@@ -18,7 +18,7 @@ Through the resource lifecycle model below, you will have an overview of the sta
 * **Active → Deleted:** The user deletes the resource.&#x20;
 * **Suspense → Deleted:** The resource has expired, and after a period of time in the trash, it will be permanently deleted and cannot be restored.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Postpaid user actions on resources
 
