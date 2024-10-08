@@ -700,6 +700,7 @@
     * [Create Cross Connect](vnetwork/cross-connect/create-cross-connect.md)
     * [Create a VPC Connection](vnetwork/cross-connect/create-a-vpc-connection.md)
     * [Delete Cross Connect](vnetwork/cross-connect/delete-cross-connect.md)
+    * [Resize Bandwidth](vnetwork/cross-connect/resize-bandwidth.md)
     * [Bandwidth Packages](vnetwork/cross-connect/bandwidth-packages.md)
     * [VPC Connection Conditions](vnetwork/cross-connect/vpc-connection-conditions.md)
     * [UseCase](vnetwork/cross-connect/usecase.md)
