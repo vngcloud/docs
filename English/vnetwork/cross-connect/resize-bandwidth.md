@@ -39,6 +39,6 @@ The detailed steps to make the change are as follows:
 * If switching to a package with **lower bandwidth than the current one**, the system will automatically calculate **the refund amount** (if applicable) for the user when reducing the bandwidth.
 {% endhint %}
 
-**Step 6:** After selecting the appropriate package, users can view a summary of the additional costs or the refund amount in case of selecting a lower bandwidth package. Press the "<mark style="color:blue;">**Resize Package**</mark>" button to complete. You will need to wait until the status of Cross Connect changes from '<mark style="color:blue;">**Changing**</mark>' back to **'**<mark style="color:blue;">**Active**</mark>'.
+**Step 6:** After selecting the appropriate package, users can view a summary of the additional costs or the refund amount in case of selecting a lower bandwidth package. Press the "<mark style="color:blue;">**Resize Package**</mark>" button to complete. When the status of CrossConnect changes from '<mark style="color:blue;">**Changing**</mark>' back to '<mark style="color:blue;">**Active**</mark>', the bandwidth resize process is completed.
 
 <figure><img src="../../.gitbook/assets/image (299).png" alt=""><figcaption></figcaption></figure>
