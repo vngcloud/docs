@@ -39,7 +39,7 @@ Lưu ý:
 * Trường hợp thay đổi với gói có **Băng thông nhỏ hơn gói hiện tại** đang sử dụng, hệ thống sẽ tự động tính **phí hoàn lại (refund)** mà người dùng khi giảm Băng thông.
 {% endhint %}
 
-**Bước 6:** Sau khi chọn gói phù hợp cần thay đổi, người dùng có thể xem tóm tắt chi phí phát sinh hoặc chi phí được hoàn lại trong trường hợp gói băng thông nhỏ hơn. Nhấn nút "Thay đổi gói" để hoàn thành. Bạn cần chờ cho đến khi trạng thái của CrossConnect từ '<mark style="color:blue;">**Changing**</mark>' trở lại '<mark style="color:blue;">**Active**</mark>**'**.
+**Bước 6:** Sau khi chọn gói phù hợp cần thay đổi, người dùng có thể xem tóm tắt chi phí phát sinh hoặc chi phí được hoàn lại trong trường hợp gói băng thông nhỏ hơn. Nhấn nút "Thay đổi gói" để hoàn thành. Khi trạng thái của CrossConnect từ '<mark style="color:blue;">**Changing**</mark>' trở lại '<mark style="color:blue;">**Active**</mark>**'** thì quá trình thay đổi băng thông hoàn tất.
 
 <figure><img src="../../.gitbook/assets/image (791).png" alt=""><figcaption></figcaption></figure>
 
