@@ -396,6 +396,7 @@
         * [Làm việc với bucket](vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket.md)
           * [Sử dụng tính năng Event notification](vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/su-dung-tinh-nang-event-notification.md)
           * [Sử dụng tính năng CORS](vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/su-dung-tinh-nang-cors.md)
+          * [Sử dụng tính năng Lifecycle](vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/su-dung-tinh-nang-lifecycle.md)
         * [Làm việc với object và directory](vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-object-va-directory.md)
         * [Làm việc với báo cáo](vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-bao-cao.md)
       * [Hạn mức tài nguyên](vstorage/object-storage/object-storage-hcm04/han-muc-tai-nguyen.md)
