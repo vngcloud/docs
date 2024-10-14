@@ -88,7 +88,7 @@ resource "vngcloud_vks_cluster" "primary" {
 
 ***
 
-### <mark style="color:blue;">Các ví dụ tham khảo</mark>&#x20;
+### <mark style="color:blue;">Các ví dụ tham khảo</mark>
 
 #### Example Usage 1 - Create a Cluster with Network type CALICO OVERLAY and a Node Group with AutoScale Mode
 
@@ -296,11 +296,50 @@ Sau khi khởi tạo thành công Terraform, bạn có thể lên VKS Portal đ�
 
 Tham khảo thêm về cách sử dụng Terraform để làm việc với VKS tại [đây](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks\_cluster).
 
-{% hint style="info" %}
-**Một vài lưu ý khi sử dụng VKS với Terraform:**
+### **Một số lưu ý khi sử dụng VKS với Terraform:**
 
-* Khi bạn đã tạo cluster và node group trên VKS qua Terraform, nếu bạn thay đổi một trong bốn field sau: **flavor\_id, disk\_size, disk\_type, enable\_private\_nodes**, hệ thống sẽ xóa node group cũ và tạo node group mới với cấu hình tương ứng. Việc xóa sẽ được thực hiện trước khi tạo node group mới.
-* Để chỉ định hệ thống tạo node group mới rồi mới thực hiện xóa node group cũ, bạn có thể thêm tham số `lifecycle { create_before_destroy = true }`vào file main.tf của bạn. Cụ thể:&#x20;
+Khi sử dụng **Terraform** để khởi tạo **Cluster** và **Node Group** trên hệ thống VKS, nếu bạn thay đổi một trong các field sau, hệ thống sẽ tự động xóa Node Group/ Cluster và thực hiện khởi tạo lại Node Group/ Cluster theo thông số mới tương ứng. Việc xóa sẽ được thực hiện trước khi tạo Node Group/ Cluster mới.
+
+* Đỗi với resource `vngcloud_vks_cluster`, các field khi bạn thay đổi hệ thống sẽ xóa Cluster và tạo lại bao gồm:
+  * `name`&#x20;
+  * `description`&#x20;
+  * `enable_private_cluster`&#x20;
+  * `network_type`&#x20;
+  * `vpc_id`&#x20;
+  * `subnet_id`&#x20;
+  * `cidr`&#x20;
+  * `enabled_load_balancer_plugin`&#x20;
+  * `enabled_block_store_csi_plugin`&#x20;
+  * `node_group`&#x20;
+  * `secondary_subnets`&#x20;
+  * `node_netmask_size`
+* Đỗi với resource `vngcloud_vks_cluster_node_group`, các field khi bạn thay đổi hệ thống sẽ xóa Cluster và tạo lại bao gồm:
+  * `cluster_id`&#x20;
+  * `name`&#x20;
+  * `flavor_id`&#x20;
+  * `disk_size`&#x20;
+  * `disk_type`&#x20;
+  * `enable_private_nodes`&#x20;
+  * `ssh_key_id`&#x20;
+  * `secondary_subnets`&#x20;
+  * `enabled_encryption_volume`&#x20;
+  * `subnet_id`
+
+Để chỉ định hệ thống tạo cluster/node group mới rồi mới thực hiện xóa cluster/ node group cũ, bạn có thể thêm tham số `lifecycle { create_before_destroy = true }`vào file main.tf của bạn. Cụ thể:
+
+* Đỗi với resource `vngcloud_vks_cluster`
+
+```
+resource "vngcloud_vks_cluster" "example" {
+  # ...
+ 
+  lifecycle {
+    create_before_destroy = true
+  }
+}
+```
+
+* Đỗi với resource `vngcloud_vks_cluster_node_group`
 
 ```
 resource "vngcloud_vks_cluster_node_group" "example" {
