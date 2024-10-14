@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **DHCP** (Dynamic Host Configuration Protocol) eature allows you to configure the DNS server IP address for virtual machines (VM) in a vServer within a VPC. Before you can use a DHCP options set, you must first have the DNS server IP address, after which you can associate the DHCP options set with a VPC. Once a DHCP options set is associated with a VPC, if a VM is created within the VPC using that DHCP options set, the VM will also use that DHCP options set after synchronization.
+The **DHCP** (Dynamic Host Configuration Protocol) feature allows you to configure the DNS server IP address for virtual machines (VM) in a vServer within a VPC. Before you can use a DHCP options set, you must first have the DNS server IP address, after which you can associate the DHCP options set with a VPC. Once a DHCP options set is associated with a VPC, if a VM is created within the VPC using that DHCP options set, the VM will also use that DHCP options set after synchronization.
 
 **Some notes when configuring a DHCP options set:**
 
