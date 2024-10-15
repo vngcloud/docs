@@ -28,7 +28,7 @@ The detailed steps to make the change are as follows:
 
 **Step 4:** Find the Cross Connect that you want to change the Bandwidth for, select the 'Actions' button, then click '**Resize**';
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 5:** The '**Resize Package**' screen will display all the packages that the user can switch to. Select the package you want to change.
 
