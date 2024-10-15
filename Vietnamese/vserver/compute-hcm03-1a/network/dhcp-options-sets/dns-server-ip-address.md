@@ -1,9 +1,12 @@
 # DNS Server IP Address
 
-Những địa chỉ IP của VNG Cloud mặc định cho sử dụng trong DHCP options sets là:
+Những địa chỉ IP của VNG Cloud mặc định cho sử dụng trong DHCP options sets của **Region HCM** là:
 
 * <mark style="color:blue;">**10.166.12.196**</mark>&#x20;
 * <mark style="color:blue;">**10.166.12.197**</mark>&#x20;
+
+Những địa chỉ IP của VNG Cloud mặc định cho sử dụng trong DHCP options sets của **Region HAN** là:
+
 * <mark style="color:blue;">**10.236.10.196**</mark>
 * <mark style="color:blue;">**10.236.10.197**</mark>
 
