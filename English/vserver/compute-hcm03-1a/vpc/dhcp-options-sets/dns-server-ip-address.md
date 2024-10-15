@@ -1,9 +1,12 @@
 # DNS Server IP Address
 
-The default IP addresses of VNG Cloud for use in DHCP options sets are:
+The default IP addresses of VNG Cloud for use in DHCP options sets of **HCM Region** are:
 
 * <mark style="color:blue;">**10.166.12.196**</mark>&#x20;
 * <mark style="color:blue;">**10.166.12.197**</mark>&#x20;
+
+The default IP addresses of VNG Cloud for use in DHCP options sets of **HAN Region** are:
+
 * <mark style="color:blue;">**10.236.10.196**</mark>
 * <mark style="color:blue;">**10.236.10.197**</mark>
 
