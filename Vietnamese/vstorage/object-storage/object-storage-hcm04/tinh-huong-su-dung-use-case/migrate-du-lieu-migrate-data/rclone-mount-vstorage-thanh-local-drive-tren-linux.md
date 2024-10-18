@@ -37,7 +37,7 @@ Sau đó, bạn tải và cài đặt **version mới** như hướng dẫn ở 
 
 * Thực hiện tạo file rclone.conf theo mẫu bên dưới, thông tin access\_key\_id và secret\_access\_key bạn có thể lấy tại vStorage Portal:
 
-```
+```bash
 [vstorage]
 type = s3
 provider = Other
@@ -48,7 +48,7 @@ endpoint = https://hcm04.vstorage.vngcloud.vn
 
 * Trước khi mount, bạn kiểm tra kết nối tới vStorage bằng lệnh lsd của rclone với cú pháp:
 
-```
+```bash
 rclone --config=rclone.conf lsd vstorage:
 ```
 
