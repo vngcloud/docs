@@ -1,10 +1,6 @@
----
-hidden: true
----
-
 # Resize Bandwidth
 
-In case the current bandwidth does not meet the needs of the Cross Connect service, users can change the bandwidth by switching the Bandwidth Package.
+In case the current bandwidth does not meet the needs of the Cross Connect service, users can change the bandwidth by Rezing the Bandwidth Package.
 
 **Changing the Bandwidth Package**
 
