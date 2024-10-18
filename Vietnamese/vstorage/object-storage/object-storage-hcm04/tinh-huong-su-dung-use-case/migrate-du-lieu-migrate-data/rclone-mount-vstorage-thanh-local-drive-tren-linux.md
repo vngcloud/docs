@@ -52,7 +52,7 @@ endpoint = https://hcm04.vstorage.vngcloud.vn
 rclone --config=rclone.conf lsd vstorage:
 ```
 
-Nếu bạn đã sử dụng vStorage trước đó, bạn sẽ thấy các container chứa các file mình đã upload lên.
+Nếu bạn đã sử dụng vStorage trước đó, bạn sẽ thấy các bucket chứa các file mình đã upload lên.
 
 ## 3. Thực hiện mount
 
@@ -83,7 +83,7 @@ VD: touch /backup/abc
 * Để kiểm tra quá trình sync đã thành công, bạn dùng lệnh **ls** của rclone để kiểm tra:
 
 ```bash
- rclone --config=rclone.conf ls vstorage:<container_name>
+ rclone --config=rclone.conf ls vstorage:<bucket_name>
 ```
 
 Ví dụ:

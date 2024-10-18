@@ -23,6 +23,8 @@ secret_access_key = <<Lấy thông tin từ vStorage Portal>>
 endpoint = https://hcm04.vstorage.vngcloud.vn
 ```
 
+## 3. Thực hiện mount
+
 * Tiếp theo, bạn có thể sử dụng Rclone với CMD hoặc PowerShell
   *   Để list danh sách object trong một bucket, hãy sử dụng lệnh:&#x20;
 
