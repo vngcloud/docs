@@ -1,10 +1,6 @@
----
-hidden: true
----
-
 # Thay đổi gói băng thông
 
-Trong trường hợp bằng thông không đáp ứng được nhu cầu của dịch vụ Cross Connect, người dùng có thể thay đổi băng thông bằng cách thay đổi Gói Bằng thông.
+Trong trường hợp bằng thông không đáp ứng được nhu cầu của dịch vụ Cross Connect, người dùng có thể thay đổi băng thông bằng cách thay đổi Gói Bằng thông (Resize).
 
 ### **Thay đổi Gói Băng Thông** <a href="#thaydoikichthuocmaychuao-thaydoiflavor" id="thaydoikichthuocmaychuao-thaydoiflavor"></a>
 
