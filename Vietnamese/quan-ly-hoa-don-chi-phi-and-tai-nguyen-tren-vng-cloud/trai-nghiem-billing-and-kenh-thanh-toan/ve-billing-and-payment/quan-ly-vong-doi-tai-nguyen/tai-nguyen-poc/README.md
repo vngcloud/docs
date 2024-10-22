@@ -9,7 +9,7 @@ Tài nguyên POC sinh ra nhằm mục đích hỗ trợ người dùng có thể
 * **Tài nguyên:** Tất cả các tài nguyên được áp dụng POC
 * **Thời gian sử dụng:** Tùy thuộc vào thời hạn ví POC được cấp.
 
-#### Khởi tạo tài nguyên POC <a href="#tainguyenpoc-khoitaotainguyenpoc" id="tainguyenpoc-khoitaotainguyenpoc"></a>
+## Khởi tạo tài nguyên POC <a href="#tainguyenpoc-khoitaotainguyenpoc" id="tainguyenpoc-khoitaotainguyenpoc"></a>
 
 ***
 
@@ -24,14 +24,14 @@ Tài nguyên POC sinh ra nhằm mục đích hỗ trợ người dùng có thể
   * Cung cấp tài nguyên&#x20;
   * Email thông báo thông tin tài nguyên vừa khởi tạo
 
-#### Một số lưu ý khi khởi tạo tài nguyên POC <a href="#tainguyenpoc-motsoluuykhikhoitaotainguyenpoc" id="tainguyenpoc-motsoluuykhikhoitaotainguyenpoc"></a>
+**Một số lưu ý khi khởi tạo tài nguyên POC**
 
 * Thời gian sử dụng tài nguyên POC mặc định trùng với thời gian kết thúc ví POC
 * Chỉ được dùng ví POC để thanh toán tài nguyên POC
 * Đối với tài nguyên POC, hệ thống sẽ không phát sinh hóa đơn tài nguyên tương ứng
 * Cách tính giá sử dụng tài nguyên POC tương tự như tài nguyên thường. Tham khảo chi tiết [tại đây](../khoi-tao-tai-nguyen.md)
 
-#### Thay đổi cấu hình tài nguyên POC <a href="#tainguyenpoc-thaydoicauhinhtainguyenpoc" id="tainguyenpoc-thaydoicauhinhtainguyenpoc"></a>
+## Thay đổi cấu hình tài nguyên POC <a href="#tainguyenpoc-thaydoicauhinhtainguyenpoc" id="tainguyenpoc-thaydoicauhinhtainguyenpoc"></a>
 
 ***
 
@@ -45,7 +45,7 @@ Trong trường hợp thời hạn sử dụng ví POC của người dùng đư
 
 Quy trình và phương thức tính giá tương tự như khi gia hạn tài nguyên thường. Tham khảo chi tiết [tại đây](../gia-han-tai-nguyen.md)
 
-#### Dừng POC đối với tài nguyên POC <a href="#tainguyenpoc-dungpocdoivoitainguyenpoc" id="tainguyenpoc-dungpocdoivoitainguyenpoc"></a>
+## Dừng POC đối với tài nguyên POC <a href="#tainguyenpoc-dungpocdoivoitainguyenpoc" id="tainguyenpoc-dungpocdoivoitainguyenpoc"></a>
 
 ***
 
@@ -60,11 +60,13 @@ Quy trình và phương thức tính giá tương tự như khi gia hạn tài n
 
 Đối với cả 2 tác vụ trên, tài nguyên sẽ được tính là tài nguyên thường và người dùng phải tiến hành thanh toán phí sử dụng tài nguyên thông qua các hình thức khác ngoài ví POC
 
-#### Hết thời gian sử dụng ví POC <a href="#tainguyenpoc-hetthoigiansudungvipoc" id="tainguyenpoc-hetthoigiansudungvipoc"></a>
+## Hết thời gian sử dụng ví POC <a href="#tainguyenpoc-hetthoigiansudungvipoc" id="tainguyenpoc-hetthoigiansudungvipoc"></a>
 
 ***
 
 Tại thời điểm hết hạn sử dụng ví POC, hệ thống sẽ:
 
-* Dừng POC đối với tất cả tài nguyên POC đang sử dụng: Quy trình xử lý tương tự như khi người dùng chủ động dừng POC trên tài nguyên
+* Dừng POC đối với tất cả tài nguyên POC đang sử dụng
+  * Đối với các tài nguyên áp dụng **tạm giữ credit**, khi dừng POC sẽ dừng cung cấp dịch vụ và xóa luôn tài nguyên POC đó. Do đó, quý khách hàng cần chủ động dừng POC trước thời hạn kết thúc để đảm bảo tiếp tục sử dụng tài nguyên. [Danh sách dịch vụ áp dụng tạm giữ credit tại đây](../../thanh-toan/tam-giu-credit.md).
+  * Đối với các tài nguyên áp dụng hình thức trả trước từ ví POC, hệ thống sẽ tạm giữ tài nguyên trong vòng 7 ngày trước khi xóa vĩnh viễn, quý khách có thể vào khôi phục lại nếu có nhu cầu sử dụng tiếp
 * Tắt ví POC: Người dùng sẽ không được phép sử dùng tài nguyên dưới hình thức POC cho đến khi ví POC được bật trở lại
