@@ -1,6 +1,6 @@
 # Cross Connect
 
-## Tổng quan
+Tổng quan
 
 **Cross Connect** là một kết nối mạng giữa hai VPC với nhau cho phép bạn định tuyến lưu lượng giữ chúng bằng cách sử dụng địa chỉ IPv4 riêng kết nối đến các region khác nhau. Các máy chủ ảo (VM) có gán VPC có thể liên kết giao tiếp nếu tất cả có cùng một kết nối với nhau ở những vùng khác nhau.
 
@@ -16,7 +16,7 @@ Region HCM03 có các VPC:
 
 * HCM-VPC01 (10.10.0.0/16);
 * HCM-VPC02 (10.11.0.0/16);
-* HCM-VPC03 (10.14.0.0/16);
+* HCM-VPC03 (10.12.0.0/16);
 
 Region HAN01 có các VPC:
 
@@ -30,7 +30,7 @@ Thực hiện việc tạo Cross Connect 1 để tạo tuyền kết nối giữ
 * HCM-VPC01 kết nối với HAN-VPC02;
 * HCM-VPC02 kết nối với HAN-VPC02;
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Sơ đồ kết nối cơ bản của một tuyền Cross Connect giữa HCM03 và HAN01</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Sơ đồ kết nối cơ bản của một tuyền Cross Connect giữa HCM03 và HAN01</p></figcaption></figure>
 
 ***
 
