@@ -30,7 +30,7 @@
 
 Một cửa sổ giao diện sẽ mở ra cho phép bạn thêm hoặc xóa thông tin thẻ của tài nguyên, cụ thể như sau:
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 1. **Tag mặc định:** Tài nguyên sẽ được tự động gắn tag `vng.createdBy` với giá trị là định danh của IAM User hoặc Root User đã tạo tài nguyên và không được phép xóa tag này.
 2. **Tag tùy chỉnh:**

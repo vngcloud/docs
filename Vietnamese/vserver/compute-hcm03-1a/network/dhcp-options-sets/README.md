@@ -95,7 +95,7 @@ Trong quá trình sử dụng DHCP options set, người dùng có thể xóa DH
 4. Chọn một bộ DHCP đã tạo trước và muốn xóa, để vào màn hình thông tin chi tiết;
 5. Tại màn hình thông tin chi tiết, ở Tab Associated VPCs liệt kê tất cả VPC được gán vào, người dùng chọn tất cả các VPC đã gán và nhấn chọn "**Detach**"  để gỡ VPC ra;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Nhấn xác nhận gỡ tất cả VPC khỏi DHCP options set.
 

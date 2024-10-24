@@ -2,7 +2,7 @@
 
 Cho phép bạn xem được các thống kê tổng quan về tình trạng hệ thống, bao gồm công suất điện, nhiệt độ, độ ẩm,…
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Thống kê không gian thuê <a href="#thongke-dashboard-thongkekhonggianthue" id="thongke-dashboard-thongkekhonggianthue"></a>
 
