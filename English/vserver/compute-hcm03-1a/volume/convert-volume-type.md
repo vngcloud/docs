@@ -47,7 +47,7 @@ Refer to the detailed guide below to convert the disk from SSD to NVMe.
 * The system creates a new volume with the configuration selected in step 0.4, then backs up data from the current volume to the new volume.&#x20;
 *   Processing time depends on the size and configuration of each volume. During this step, users can still write data to the volume without any downtime.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2: Initiate Differential Migration (With Downtime)**&#x20;
 
