@@ -1,6 +1,6 @@
 # Cross Connect
 
-Tổng quan
+## Tổng quan
 
 **Cross Connect** là một kết nối mạng giữa hai VPC với nhau cho phép bạn định tuyến lưu lượng giữ chúng bằng cách sử dụng địa chỉ IPv4 riêng kết nối đến các region khác nhau. Các máy chủ ảo (VM) có gán VPC có thể liên kết giao tiếp nếu tất cả có cùng một kết nối với nhau ở những vùng khác nhau.
 
