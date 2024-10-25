@@ -8,7 +8,7 @@
 
 **Bước 3:** Màn hình được điều hướng tới màn hình Danh sách Cross Connect;
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 4:** Tại màn hình danh sách các Cross Connect, nhấn chọn "<mark style="color:blue;">**Tạo Cross Connect**</mark>";
 
@@ -19,7 +19,7 @@
 * <mark style="color:blue;">**Cấu hình Cross Connect**</mark>: Chọn Requester (mặc định theo vùng đang cấu hình) và Accepter là hai region cần kết nối giao tiếp với nhau;
 * <mark style="color:blue;">**Cấu hình Băng thông:**</mark> Chọn gói băng thông phù hợp với nhu cầu.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 6:** Tại bên phải màn hình, xem tổng chi phí gói Băng thông đã chọn, sau đó nhấn chọn "<mark style="color:blue;">**Tạo**</mark>" đề xác nhận và tiến hành thanh toán;
 

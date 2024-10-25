@@ -4,6 +4,10 @@
 
 Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên VNG Cloud. **Với Region HCM04, tại  một thời điểm **<mark style="color:red;">**bạn chỉ có thể sở hữu một Project**</mark>** và sử dụng chúng để tổ chức lưu trữ dữ liệu của bạn.**
 
+***
+
+
+
 ## **Phạm vi giới hạn project**
 
 **Quy tắc đặt tên project**
@@ -30,6 +34,8 @@ Các quy tắc sau áp dụng cho việc đặt tên project trong vStorage:
   * project\_1/2022 (chứa ký tự /)
   * ...
 
+***
+
 ## Khởi tạo project
 
 Thực hiện tạo project theo các bước bên dưới:
@@ -42,7 +48,9 @@ Thực hiện tạo project theo các bước bên dưới:
 6. Chọn **Period** và chọn/bỏ chọn **Auto-renew** theo nhu cầu của bạn.
 7. Thực hiện các bước **Thanh toán** giỏ hàng và **Project** của bạn sẽ được khởi tạo.
 
-<figure><img src="../../../../.gitbook/assets/image (600).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ## Xem thông tin project
 
@@ -60,7 +68,9 @@ Bạn có thể xem và sử dụng các thuộc tính cho project bao gồm th�
 * **History**: Cung cấp thông tin lịch sử tác động tới project bao gồm loại hành động, trạng thái hành động, thời gian hành động xảy ra và mô tả chi tiết hành động nếu có.
 * **Connection Information**: Cung cấp các câu lệnh và tệp tin cấu hình để kết nối project với S3.
 
-<figure><img src="../../../../.gitbook/assets/image (602).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ## Tăng giảm hạn mức project
 
@@ -79,6 +89,8 @@ Sau khi bạn thực hiện thành công 6 bước trên, giá trị tổng **qu
 
 <figure><img src="../../../../.gitbook/assets/image (603).png" alt=""><figcaption></figcaption></figure>
 
+***
+
 ## Gia hạn project
 
 Bạn đã khởi tạo project với chu kỳ lưu trữ ngắn hạn. Hiện tại nhu cầu kinh doanh của bạn thay đổi và bạn muốn tăng thêm chu kỳ lưu trữ này. Để giải quyết vấn đề này, bạn có thể thay đổi chu kỳ lưu trữ thông qua tính năng renew mà chúng tôi cung cấp.
@@ -86,12 +98,14 @@ Bạn đã khởi tạo project với chu kỳ lưu trữ ngắn hạn. Hiện t
 Để renew một project, bạn có thể:
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn checkbox tại project bạn muốn tăng giảm hạn mức và chọn biểu tượng <img src="../../../../.gitbook/assets/image (606).png" alt="" data-size="line"> hoặc bạn cũng có thể chọn biểu tượng <img src="../../../../.gitbook/assets/image (605).png" alt="" data-size="line"> sau đó chọn Renew.
-3. Chọn Period lưu trữ mong muốn gia hạn. Chúng tôi cung cấp các chu kỳ lưu trữ bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng. Khi bạn thực hiện chọn chu kỳ gia hạn, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ lưu trữ mới và tổng số tiền bạn cần chi trả cho việc gia hạn **project**.
+2. Chọn checkbox tại **project** bạn muốn tăng giảm hạn mức và chọn biểu tượng <img src="../../../../.gitbook/assets/image (606).png" alt="" data-size="line"> hoặc bạn cũng có thể chọn biểu tượng <img src="../../../../.gitbook/assets/image (605).png" alt="" data-size="line"> sau đó chọn **Renew**.
+3. Chọn Period lưu trữ mong muốn gia hạn. Chúng tôi cung cấp các chu kỳ lưu trữ bao gồm: **1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng**. Khi bạn thực hiện chọn chu kỳ gia hạn, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ lưu trữ mới và tổng số tiền bạn cần chi trả cho việc gia hạn **project**.
 4. Chọn **Thanh toán** sau khi kiểm tra giỏ hàng và hình thức thanh toán.
 5. Chọn **Tiếp tục thanh toán** và thực hiện thanh toán sau khi chọn phương thức thanh toán phù hợp.
 
 Sau khi bạn thực hiện thành công 5 bước trên, chu kỳ lưu trữ mới sau khi gia hạn project sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
+
+***
 
 ## Gia hạn tự động project
 
@@ -146,6 +160,8 @@ Sau khi bạn thực hiện thành công các bước trên, tính năng gia h�
 
 </details>
 
+***
+
 ## Xóa project
 
 Bạn đã khởi tạo một project với gói lưu trữ phù hợp. Hiện tại nhu cầu kinh doanh của bạn thay đổi, bạn không có nhu cầu sử dụng project đã tạo. Chúng tôi khuyến khích bạn nên xóa project để tối ưu chi phí.
@@ -161,6 +177,8 @@ Sau khi bạn bạn thực hiện xóa project thì project bị xóa sẽ biế
 Khi bạn thực hiện xóa project trước thời hạn lưu trữ ban đầu, chúng tôi sẽ thực hiện bồi hoàn cho bạn cũng như khi bạn khôi phục project, chúng tôi cũng sẽ tính phí khôi phục. Chi tiết cách vStorage tính phí bồi hoàn và khôi phục project, hãy xem Cách tính phí.
 
 Do hành động xóa project tiềm ẩn nhiều rủi ro nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận cũng như tạo một phiên bản dự phòng của project trước khi thực hiện xóa.
+
+***
 
 ## Khôi phục project
 
@@ -178,6 +196,8 @@ Bạn vừa thực hiện xóa một project hoặc một project hết hạn l�
 Sau khi bạn thực hiện thành công 6 bước trên, project sẽ được khôi phục với thông tin chu kỳ lưu trữ mới và được cập nhật trên thông tin chung của project mà bạn chọn.
 
 Khi project bị đưa vào Thùng rác bạn sẽ không thể tải lên/ tải xuống hoặc thực hiện các hành động tới object được nữa. Chúng tôi khuyến cáo bạn hãy gia hạn hoặc sao lưu toàn bộ dữ liệu trong project trước ngày hết hạn.
+
+***
 
 ## Tăng dung lượng tự động (Auto-scale Quota)
 
@@ -204,6 +224,8 @@ Tính năng Tự động tăng dung lượng lưu trữ (Auto-scale Quota) trên
 * Người dùng cần đảm bảo có **đủ số dư credit** cho tài khoản (trả trước) trước khi thực hiện Auto-scale.
 * Nếu việc tăng dung lượng **thất bại**, người dùng sẽ nhận được thông báo qua email. Sau hai lần thực hiện auto-scale thất bại liên tiếp, hệ thống của chúng tôi sẽ ngừng gửi thông báo qua email cho bạn. Bạn cần chủ động truy cập vào vStorage để thực hiện resize project thủ công theo hướng dẫn bên trên.
 {% endhint %}
+
+***
 
 ## Thực hiện POC project
 
@@ -305,6 +327,8 @@ Tại thời điểm hết hạn sử dụng ví POC, chúng tôi sẽ:
 * **Tắt ví POC**: bạn sẽ không được phép sử dụng tài nguyên dưới hình thức POC cho đến khi ví POC được bật trở lại.
 
 </details>
+
+***
 
 ## Thực hiện trial project
 
