@@ -40,6 +40,14 @@ Ví dụ: hình bên trên, tôi cấu hình giữ 60 ngày,&#x20;
 * Nếu ngày tôi tải lên object là 25/10/2024. Như vậy, object này sẽ được giữ tới **25/10/2024 + 60 ngày = 24/12/2024**
 * Nếu ngày tôi tải lên object là 01/11/2024. Như vậy, object này sẽ được giữ tới **25/10/2024 + 60 ngày = 31/12/2024**
 
+***
+
+## Governance Mode
+
+* <mark style="color:red;">**Hiện tại, chúng tôi chưa hỗ trợ mode Governance**</mark><mark style="color:red;">.</mark> Nếu bạn sử dụng 3rd party software để thiết lập Object Locked ở mode Governance này thì S3 key được tạo ra sẽ có full quyền xóa các object version trên bucket của bạn.&#x20;
+
+***
+
 ## **Legal Hold**
 
 * Chúng tôi đang phát triển thêm giao diện sử dụng mode Legal Hold. Hiện tại, nếu bạn có nhu cầu sử dụng mode này, vui lòng thực hiện qua 3rd party software.
