@@ -52,25 +52,9 @@ Trên region HCM04, chúng tôi cung cấp cho bạn các tính năng phân quy�
 
 <details>
 
-<summary>Chuyển chế độ công khai bucket</summary>
+<summary>Phân quyền truy cập ACLs  </summary>
 
-Bạn có thể chuyển chế độ của bucket từ riêng tư thành công khai để cho phép bất kỳ ai cũng có thể truy cập vào bucket để xem, tải xuống, tải lên tất cả tệp tin, object thuộc bucket được công khai. Để biết thêm thông tin, hãy xem tại [Làm việc với bucket](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket.md)
-
-</details>
-
-<details>
-
-<summary>Chuyển chế độ riêng tư container</summary>
-
-Bạn có thể chuyển chế độ của bucket từ công khai thành riêng tư để dừng việc chia sẻ công khai bucket trên môi trường điện toán đám mây. Bạn sẽ không thể truy cập vào bucket thông qua đường dẫn URL mà cần chứng thực quyền truy cập. Để biết thêm thông tin, hãy xem tại [Làm việc với bucket](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket.md)
-
-</details>
-
-<details>
-
-<summary>Phân quyền truy cập ACLs container</summary>
-
-Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho 1 hoặc tất cả Root user khác. (Root user được cấp quyền truy cập qua ACLS phải là tài khoản được cấp quyền trên hệ thống VNG Cloud của chúng tôi). Để biết thêm thông tin, hãy xem tại [Làm việc với bucket](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket.md)
+Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho 1 hoặc tất cả Root user khác. (Root user được cấp quyền truy cập qua ACLS phải là tài khoản được cấp quyền trên hệ thống VNG Cloud của chúng tôi). Để biết thêm thông tin, hãy xem tại [Sử dụng tính năng ACLs.](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-acls.md)
 
 </details>
 
@@ -78,14 +62,22 @@ Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho 1 hoặc t�
 
 <summary>Chia sẻ tài nguyên CORS</summary>
 
-Bạn có thể cho phép một website truy cập vào tài nguyên trên container. Để biết thêm thông tin, hãy xem tại [Làm việc với bucket](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket.md)
+Bạn có thể cho phép một website truy cập vào tài nguyên trên bucket. Để biết thêm thông tin, hãy xem tại[ Sử dụng tính năng CORS.](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-cors.md)
 
 </details>
 
 <details>
 
-<summary>Chia sẻ object qua TempURL</summary>
+<summary>Phân quyền thông qua Bucket policy</summary>
 
-Bạn có thể chia sẻ việc truy cập vào 1 hoặc nhiều object thông qua đường dẫn TempURL. Để biết thêm thông tin, hãy xem tại [Làm việc với ](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket.md)[object.](cac-tinh-nang-cua-object-storage/lam-viec-voi-object-va-directory.md)
+Bạn có thể quản lý quyền truy cập vào bucket của bạn thông qua các quy tắc dạng JSON. Để biết thêm thông tin, hãy xem tại [Sử dụng tính năng Bucket Policy.](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-bucket-policy.md)
+
+</details>
+
+<details>
+
+<summary>Chia sẻ object</summary>
+
+Bạn có thể chia sẻ một object cho một ngươi dùng khác hoặc chia sẻ công khai. Để biết thêm thông tin, hãy xem tại [Chia sẻ object](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-object-va-directory)
 
 </details>

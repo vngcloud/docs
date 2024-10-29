@@ -2,7 +2,7 @@
 
 Liệt kê danh sách các tủ rack, rack unit và lồng (cage) mà bạn đã thuê (hoặc được để dành cho bạn), tại đây bạn có thể xem thông tin chi tiết hoặc có thể xem sơ đồ bố trí thiết bị đặt trong các tủ rack.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Các tính năng có trong Space list:
 
