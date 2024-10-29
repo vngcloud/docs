@@ -80,10 +80,6 @@ CORS (Cross-Origin Resource Sharing) là cơ chế bảo mật cho phép các tr
 
 <figure><img src="../../../../.gitbook/assets/image (596).png" alt=""><figcaption></figcaption></figure>
 
-### **IP range ACLs**
-
-IP Range ACLs là tính năng cho phép người dùng có thể chủ động kích hoạt chế độ an toàn ở mức network internet - giới hạn khả năng truy cập vào project hoặc container của vStorage từ một số nguồn địa chỉ IP được xác định thông qua danh sách IP/ Subnet thiết lập trên metadata ở cấp project hoặc container hoặc cả hai cấp. **Hiện tại S3 Browser đang chưa hỗ trợ thiết lập tính năng này. Nếu bạn có nhu cầu sử dụng tính năng này, vui lòng gửi yêu cầu sử dụng tính năng thông qua ticket tới VNGCloud.**&#x20;
-
 ### **Public/ Private bucket**
 
 **Public bucket** là tính năng cho phép người dùng chia sẻ công khai bucket trên môi trường điện toán đám mây. Người dùng từ ngoài internet có thể truy cập vào bucket thông qua đường dẫn URL mà không cần chứng thực quyền truy cập với hệ thống. Quyền truy cập công khai tiềm ẩn rủi ro bảo mật, vì vậy nếu kịch bản của bạn không yêu cầu quyền truy cập đó, chúng tôi khuyên bạn không nên cho phép quyền truy cập công khai đối với bucket. Tại bất kỳ thời điểm nào bạn không muốn công khai bucketđó nữa thì có thể chuyển chế độ riêng tư cho bucket.

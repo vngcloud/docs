@@ -1,6 +1,6 @@
 # Bước 3: Tải lên/ tải xuống objects
 
-Sau khi tạo bucket, lúc này bạn có thể tải các object lên container. Object được tải lên ngoài dữ liệu gốc của tệp tin còn có thêm thông tin metadata mô tả chi tiết về tệp tin này. Object có thể là bất kỳ loại tệp nào: văn bản, hình ảnh, video,…
+Sau khi tạo bucket, lúc này bạn có thể tải các object lên bucket. Object được tải lên ngoài dữ liệu gốc của tệp tin còn có thêm thông tin metadata mô tả chi tiết về tệp tin này. Object có thể là bất kỳ loại tệp nào: văn bản, hình ảnh, video,…
 
 Để tải object lên một bucket, vui lòng thực hiện theo các bước bên dưới:
 
