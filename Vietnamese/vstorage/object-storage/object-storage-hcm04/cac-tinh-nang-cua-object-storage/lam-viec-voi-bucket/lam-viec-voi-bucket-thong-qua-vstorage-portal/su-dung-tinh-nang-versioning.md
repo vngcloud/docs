@@ -10,7 +10,7 @@ Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá
 
 3\. Chọn biểu tượng **Action** và chọn **Configure versioning**
 
-<figure><img src="../../../../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (801).png" alt=""><figcaption></figcaption></figure>
 
 4\. Tại màn hình xác nhận bật versioning, vui lòng chọn **Enable versioning**.
 

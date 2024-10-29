@@ -19,17 +19,17 @@ Sau khi đã bật Object Lock cho bucket, bạn có thể thiết lập Object 
 
 1\. Tại bucket cần thiết lập object lock, chọn **Action** và chọn **Configure object lock retention**
 
-<figure><img src="../../../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (802).png" alt=""><figcaption></figcaption></figure>
 
 2\. Tại màn hình Configure object lock retention, chọn **Enable Object Lock retention policy**
 
-<figure><img src="../../../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (803).png" alt=""><figcaption></figcaption></figure>
 
 3\. Tại mục **Retention Mode**: hiện tại chúng tôi chỉ hỗ trợ **Compliance Mode** (mode này sẽ bảo vệ object version đối với việc thay đổi hay xóa cho đến khi hết thời gian giữ).
 
 4\. Tại mục **Retention Period**: bạn hãy chọn thời gian mong muốn giữ cho các object thuộc bucket của bạn. Ví dụ bạn chọn 30 ngày, 60 ngày, 1000 ngày,...
 
-<figure><img src="../../../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (804).png" alt=""><figcaption></figcaption></figure>
 
 5\. Chọn **Update.**
 
@@ -50,4 +50,22 @@ Ví dụ: hình bên trên, tôi cấu hình giữ 60 ngày,&#x20;
 
 ## **Legal Hold**
 
-* Chúng tôi đang phát triển thêm giao diện sử dụng mode Legal Hold. Hiện tại, nếu bạn có nhu cầu sử dụng mode này, vui lòng thực hiện qua 3rd party software.
+Tính năng **Object Legal Hold** trên vStorage cho phép bạn giữ một version của object không bị xóa hoặc ghi đè. Khi tính năng này được bật, bất kỳ ai, kể cả Root User Account, đều không thể xóa hoặc chỉnh sửa object đó cho đến khi legal hold được tắt.
+
+Sau khi đã bật Object Lock cho bucket, bạn có thể thiết lập Object Lock loại **Legal Hold** cho từng object trong bucket theo các bước sau:&#x20;
+
+1\. Tại object cần thiết lập object lock, chọn **Action** và chọn **Enable object legal hold**
+
+<figure><img src="../../../../../../.gitbook/assets/image (805).png" alt=""><figcaption></figcaption></figure>
+
+2\. Tại màn hình Enable object legal hold, chọn **Enable**
+
+<figure><img src="../../../../../../.gitbook/assets/image (806).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Chú ý:**
+
+* Legal hold chỉ áp dụng cho từng version của object, nên nếu bật cho một version cụ thể, các version khác vẫn có thể bị chỉnh sửa hoặc xóa.
+* Tính năng này khác với **Retention Policy** vì chỉ dừng việc xóa hoặc chỉnh sửa object chứ không có thời gian kết thúc.
+{% endhint %}
+
