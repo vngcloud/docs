@@ -27,7 +27,7 @@ Các bảng sau đây liệt kê các giá trị tối đa cho tài nguyên lưu
 
 ### Bandwidth <a href="#bandwidth" id="bandwidth"></a>
 
-<table data-full-width="true"><thead><tr><th>Farm</th><th>Download BW Domestic</th><th>Download BW International</th><th>Upload BW Domestic</th><th>Upload BW International</th></tr></thead><tbody><tr><td>HAN01</td><td>10Gbps shared</td><td>TBA</td><td>10Gbps shared</td><td>TBA</td></tr><tr><td>HCM03</td><td>10Gbps shared</td><td>TBA</td><td>10Gbps shared</td><td>TBA</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Farm</th><th>Download BW Domestic</th><th>Download BW International</th><th>Upload BW Domestic</th><th>Upload BW International</th></tr></thead><tbody><tr><td>HAN01</td><td>10Gbps shared</td><td>300Mbps </td><td>10Gbps shared</td><td>300Mbps </td></tr><tr><td>HCM03</td><td>10Gbps shared</td><td>300Mbps </td><td>10Gbps shared</td><td>300Mbps </td></tr></tbody></table>
 
 ### Request per limit <a href="#request-per-limit" id="request-per-limit"></a>
 
