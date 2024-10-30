@@ -37,11 +37,11 @@ Các bảng sau đây liệt kê các giá trị tối đa cho tài nguyên lưu
 
 * Per IP
 
-<table data-full-width="true"><thead><tr><th width="167">Storage Class</th><th width="361">Request all types</th><th width="283">Put request</th><th>Get request</th></tr></thead><tbody><tr><td>Gold</td><td>2500 request/s/IP</td><td>TBA</td><td>TBA</td></tr><tr><td>Silver</td><td>2500 request/s/IP</td><td>TBA</td><td>TBA</td></tr><tr><td>Archive</td><td>2500 request/s/IP</td><td>TBA</td><td>TBA</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="167">Storage Class</th><th width="232">Request all types</th><th width="283">Put request</th><th>Get request</th></tr></thead><tbody><tr><td>Gold</td><td>2500 request/s/IP</td><td>1000 request/s/IP</td><td>1500 request/s/IP</td></tr><tr><td>Silver</td><td>2500 request/s/IP</td><td>1000 request/s/IP</td><td>1500 request/s/IP</td></tr><tr><td>Archive</td><td>2500 request/s/IP</td><td>1000 request/s/IP</td><td>1500 request/s/IP</td></tr></tbody></table>
 
 * Per path
 
-<table data-full-width="true"><thead><tr><th width="171">Storage Class</th><th width="358">Request all types</th><th width="285">Put request</th><th>Get request</th></tr></thead><tbody><tr><td>Gold</td><td>2500 request/s/IP</td><td>TBA</td><td>TBA</td></tr><tr><td>Silver</td><td>2500 request/s/IP</td><td>TBA</td><td>TBA</td></tr><tr><td>Archive</td><td>2500 request/s/IP</td><td>TBA</td><td>TBA</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="171">Storage Class</th><th width="229">Request all types</th><th width="285">Put request</th><th>Get request</th></tr></thead><tbody><tr><td>Gold</td><td>2500 request/s/path</td><td>1000 request/s/path</td><td>1500 request/s/path</td></tr><tr><td>Silver</td><td>2500 request/s/path</td><td>1000 request/s/path</td><td>1500 request/s/path</td></tr><tr><td>Archive</td><td>2500 request/s/path</td><td>1000 request/s/path</td><td>1500 request/s/path</td></tr></tbody></table>
 
 ### Các hạn mức khác
 
