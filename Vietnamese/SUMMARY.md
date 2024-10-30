@@ -833,6 +833,7 @@
     * [Tạo mới Public NAT](vnetwork/public-nat-instance/tao-moi-public-nat.md)
     * [Đổi tên NAT](vnetwork/public-nat-instance/doi-ten-nat.md)
     * [Xóa NAT](vnetwork/public-nat-instance/xoa-nat.md)
+    * [Thêm/ Xóa NAT Port](vnetwork/public-nat-instance/them-xoa-nat-port.md)
   * [Cross Connect](vnetwork/cross-connect/README.md)
     * [Tạo Cross Connect](vnetwork/cross-connect/tao-cross-connect.md)
     * [Tạo kết nối VPC](vnetwork/cross-connect/tao-ket-noi-vpc.md)
