@@ -254,9 +254,9 @@ Khi tạo Server Windows, VNG Cloud cung cấp đoạn câu lệnh mặc định
 >
 > `cscript.exe slmgr.vbs /ipk N69G4-B89J2-4G8F4-WWYCC-J464C`
 >
-> `cscript.exe slmgr.vbs /skms kms.vngcloud.vnc`
+> `cscript.exe slmgr.vbs /skms kms.vngcloud.vn`
 >
-> `script.exe slmgr.vbs /ato`
+> `cscript.exe slmgr.vbs /ato`
 
 Trong đó với các thông tin:
 
