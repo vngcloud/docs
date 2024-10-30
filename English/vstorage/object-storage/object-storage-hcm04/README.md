@@ -28,11 +28,11 @@ The tables below list the maximum values for storage resources on your vStorage.
 
 * Per IP
 
-<table data-full-width="true"><thead><tr><th>Storage Class</th><th>Request all types</th><th>Put request</th><th>Get request</th></tr></thead><tbody><tr><td>Instant Archive</td><td>TBA</td><td>TBA</td><td>TBA</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Storage Class</th><th>Request all types</th><th>Put request</th><th>Get request</th></tr></thead><tbody><tr><td>Instant Archive</td><td>2500 request/s/IP</td><td>1000 request/s/IP</td><td>1500 request/s/IP</td></tr></tbody></table>
 
 * Per path
 
-<table data-full-width="true"><thead><tr><th>Storage Class</th><th>Request all types</th><th>Put request</th><th>Get request</th></tr></thead><tbody><tr><td>Instant Archive</td><td>TBA</td><td>TBA</td><td>TBA</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Storage Class</th><th>Request all types</th><th>Put request</th><th>Get request</th></tr></thead><tbody><tr><td>Instant Archive</td><td>2500 request/s/path</td><td>1000 request/s/path</td><td>1500 request/s/path</td></tr></tbody></table>
 
 #### Others <a href="#cac-han-muc-khac" id="cac-han-muc-khac"></a>
 
