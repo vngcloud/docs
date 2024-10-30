@@ -696,6 +696,7 @@
     * [Create NAT](vnetwork/public-nat-instance/create-nat.md)
     * [Rename NAT](vnetwork/public-nat-instance/rename-nat.md)
     * [Delete NAT](vnetwork/public-nat-instance/delete-nat.md)
+    * [Add/ Remove NAT Port](vnetwork/public-nat-instance/add-remove-nat-port.md)
   * [Cross Connect](vnetwork/cross-connect/README.md)
     * [Create Cross Connect](vnetwork/cross-connect/create-cross-connect.md)
     * [Create a VPC Connection](vnetwork/cross-connect/create-a-vpc-connection.md)
