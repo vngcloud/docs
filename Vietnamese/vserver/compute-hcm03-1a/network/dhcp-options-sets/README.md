@@ -14,7 +14,7 @@ Chức năng Bộ tùy chọn **DHCP** (Dynamic Host Configuration Protocol) hay
 {% hint style="info" %}
 **Lưu ý:**
 
-Sau khi cấu hình DNS cho máy ảo VM xong, để làm mới việc sử dụng DHCP trên VM, bạn có thể thực hiệm bằng cách khởi động lại VM (restart), hoặc đợi cho đến khi tự hết thời hạn sử dụng, hoặc chủ động chạy câu lệnh sau để thực hiện:
+Sau khi cấu hình DNS cho máy ảo VM xong, để làm mới việc sử dụng DHCP trên VM, bạn có thể thực hiện bằng cách khởi động lại VM (restart), hoặc đợi cho đến khi tự hết thời hạn sử dụng, hoặc chủ động chạy câu lệnh sau để thực hiện:
 
 * **Với máy chủ Linux**: gõ câu lệnh _<mark style="background-color:orange;">sudo dhclient -r && sudo dhclient</mark>_
 * **Với máy chủ Windows Server**: gõ câu lệnh _<mark style="background-color:orange;">ipconfig /renew</mark>_
