@@ -48,7 +48,7 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 * **kubectl** installed and configured on your device. please refer here [if](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) you are not sure how to install and use kuberctl. In addition, you should not use an outdated version of kubectl, we recommend that you use a kubectl version that is no more than one version different from the cluster version.
 
 {% hint style="info" %}
-**Hint:**
+**Attention:**
 
 * When using Cilium's native routing mode, it is crucial to configure **Security Groups** correctly to allow necessary connections. For example, when running an NGINX pod on a node, you must permit traffic on port 80 to ensure requests from other nodes can connect. This configuration is not required when using the network overlay mode.
 {% endhint %}
