@@ -1,8 +1,12 @@
-# Migration Cluster from vContainer to VKS
+# Migration Cluster từ vContainer tới VKS
 
-**Công cụ sử dụng: Velero + vStorage (s3)**&#x20;
+Để migrate một Cluster từ hệ thống vContainer tới hệ thống VKS, hãy thực hiện theo các bước theo tài liệu này.
 
-## 1. Quy trình&#x20;
+## Điều kiện cần
+
+* <mark style="color:red;">**Thực hiện tải xuống helper bash script và grand execute permission cho file này**</mark> ([velero\_helper.sh](https://raw.githubusercontent.com/vngcloud/velero/main/velero\_helper.sh))
+
+## Quy trình thực hiện
 
 &#x20;
 
@@ -29,7 +33,9 @@
 
 **Step 6**: Thực hiện kiểm tra và những điều chỉnh&#x20;
 
-## 2. Lưu ý quan trọng:&#x20;
+***
+
+## Lưu ý quan trọng:&#x20;
 
 ### <mark style="color:red;">1. Mapping StorageClass trên vKS cluster</mark>&#x20;
 
@@ -143,7 +149,9 @@ Thực hiện copy data sang một folder mới (ví dụ /var, /opt, /tmp, ...)
 cp -R /mnt/data /var 
 ```
 
-## 3. Các bước thực hiện chi tiết&#x20;
+***
+
+## Các bước thực hiện chi tiết&#x20;
 
 ### Bước 1: Cài đặt Velero trên cả 2 cluster (vContainer và vKS)&#x20;
 
