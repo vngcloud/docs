@@ -47,6 +47,14 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 * There is at least 1 **SSH key in ACTIVE** state . If you do not have any SSH key, please initialize SSH key following the instructions here [.](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/security/ssh-key-bo-khoa)
 * **kubectl** installed and configured on your device. please refer here [if](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) you are not sure how to install and use kuberctl. In addition, you should not use an outdated version of kubectl, we recommend that you use a kubectl version that is no more than one version different from the cluster version.
 
+{% hint style="info" %}
+**Hint:**
+
+* When using Cilium's native routing mode, it is crucial to configure **Security Groups** correctly to allow necessary connections. For example, when running an NGINX pod on a node, you must permit traffic on port 80 to ensure requests from other nodes can connect. This configuration is not required when using the network overlay mode.
+{% endhint %}
+
+
+
 ***
 
 ## **Create a Cluster using CNI Cilium VPC Native Routing** <a href="#khoi-tao-mot-cluster-su-dung-cni-cilium-vpc-native-routing" id="khoi-tao-mot-cluster-su-dung-cni-cilium-vpc-native-routing"></a>
