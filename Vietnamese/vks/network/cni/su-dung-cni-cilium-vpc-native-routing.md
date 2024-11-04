@@ -47,6 +47,14 @@ Trên VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** hoạ
 * Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/security/ssh-key-bo-khoa)
 * Đã cài đặt và cấu hình **kubectl** trên thiết bị của bạn. vui lòng tham khảo tại [đây](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) nếu bạn chưa rõ cách cài đặt và sử dụng kuberctl. Ngoài ra, bạn không nên sử dụng phiên bản kubectl quá cũ, chúng tôi khuyến cáo bạn nên sử dụng phiên bản kubectl sai lệch không quá một phiên bản với version của cluster.
 
+{% hint style="info" %}
+**Chú ý:**
+
+* Khi bạn sử dụng loại network Cilium Native Routing cho cluster của bạn, bạn cần thực hiện cấu hình các **Security Groups** cho phép các kết nối cần thiết. Ví dụ, khi bạn chạy một NGINX pod trên một node, bạn phải cho phép traffic trên port 80 để đảm bảo các requests từ các node khác có thể kết nối tới. Việc cấu hình này chỉ bắt buộc nếu bạn sử dụng Cilium Native Routing, đối với Calico Overlay và Cilium Overlay thì việc cấu hình Security Groups này là không cần thiết.
+{% endhint %}
+
+
+
 ***
 
 ## **Khởi tạo một Cluster sử dụng CNI Cilium VPC Native Routing**
