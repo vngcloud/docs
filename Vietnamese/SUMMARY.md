@@ -650,6 +650,7 @@
     * [Expose một service thông qua vLB Layer4](vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4.md)
     * [Expose một service thông qua vLB Layer7](vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer7.md)
     * [Preserve Source IP khi sử dụng vLB Layer4 và Nginx Ingress Controller](vks/bat-dau-voi-vks/preserve-source-ip-khi-su-dung-vlb-layer4-va-nginx-ingress-controller.md)
+    * [Preserve Source IP khi sử dụng vLB Layer4 và Istio Ingress Gateway](vks/bat-dau-voi-vks/preserve-source-ip-khi-su-dung-vlb-layer4-va-nginx-ingress-controller-1.md)
     * [Integrate with Container Storage Interface (CSI)](vks/bat-dau-voi-vks/integrate-with-container-storage-interface-csi.md)
     * [Nâng cấp Control Plane Version](vks/bat-dau-voi-vks/nang-cap-control-plane-version.md)
     * [Nâng cấp Node Group Version](vks/bat-dau-voi-vks/nang-cap-node-group-version.md)
