@@ -9,15 +9,15 @@
 
 \-        Nhập thông tin cấu hình Key gồm: Loại key, Key Usage và Key Spec
 
-\-        Nguồn Key Material: Người dùng chọn nguồn = KMS
+\-        Nguồn Key Material: Người dùng chọn nguồn = VNGCLOUD
 
-&#x20;               a.      KMS: Key material được tạo trên VNG Cloud KMS
+&#x20;               a.      VNGCLOUD: Key material được tạo trên VNG Cloud KMS
 
 &#x20;               b.     External: Người dùng tự quản lý Key Material và import vào VNG Cloud KMS cho việc sử dụng trong các dịch vụ của VNG Cloud.
 
 * Nhấn “Tạo Key” để thực hiện tạo Key.
 
-&#x20; \- Với Key có nguồn key material = KMS, sau khi tạo thành công, Key có status = “Đang hoạt động”.
+&#x20; \- Với Key có nguồn key material = VNGCLOUD, sau khi tạo thành công, Key có status = “Đang hoạt động”.
 
 &#x20; \- Với Key có nguồn key material = External sau khi tạo thành công, Key có status = Pending Import. Bước tiếp theo thực hiện theo hướng dẫn ở phần “Chờ nhập nội dung key”.
 
