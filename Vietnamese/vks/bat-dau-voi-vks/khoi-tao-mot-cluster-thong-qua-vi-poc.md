@@ -307,7 +307,7 @@ spec:
 
 * Chạy câu lệnh sau đây để triển khai Ingress
 
-```
+```bash
 kubectl apply -f snapshot.yaml
 ```
 
@@ -317,11 +317,11 @@ kubectl apply -f snapshot.yaml
 
 * Sau khi apply tập tin thành công, bạn có thể kiểm tra danh sách service, pvc thông qua:
 
-```
+```bash
 kubectl get sc,pvc,pod -owide
 ```
 
-```
+```bash
 NAME                                                       PROVISIONER          RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
 storageclass.storage.k8s.io/my-expansion-storage-class     bs.csi.vngcloud.vn   Delete          Immediate           true                   10m
 storageclass.storage.k8s.io/sc-iops-200-retain (default)   bs.csi.vngcloud.vn   Retain          Immediate           false                  2d4h
@@ -343,19 +343,19 @@ pod/nginx-app-7f45b65946-t7d7k   1/1     Running   0          94m   172.16.24.20
 
 **Bước 1:** Chạy lệnh bên dưới để liệt kê các PVC trong Cluster của bạn
 
-```
+```bash
 kubectl get persistentvolumes
 ```
 
 **Bước 2:** Chỉnh sửa tệp tin YAML của PVC theo lệnh
 
-```
+```bash
 kubectl edit pvc my-expansion-pvc
 ```
 
 * Nếu bạn chưa chỉnh sửa IOPS của Persistent Volume lần nào trước đó, khi bạn chạy lệnh trên, bạn hãy thêm 1 annotation bs.csi.vngcloud.vn/volume-type: "volume-type-id" . Ví dụ: bên dưới tôi đang thay đổi IOPS của Persistent Volume từ 200 (Volume type id = vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018) lên 1000 (Volume type id = vtype-85b39362-a360-4bbb-9afa-a36a40cea748)
 
-```
+```bash
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -400,12 +400,12 @@ status:
 
 Ví dụ: ban đầu PVC được tạo có kích cỡ 20 Gi, hiện tại tôi sẽ tăng nó lên 30Gi
 
-```
+```bash
 kubectl patch pvc my-expansion-pvc -p '{"spec":{"resources":{"requests":{"storage":"30Gi"}}}}'
 ```
 
 {% hint style="info" %}
-Chú ý:
+**Chú ý:**
 
 * Bạn chỉ có thể thực hiện tăng Disk Volume mà không thể thực hiện giảm kích thước Disk Volume này.
 {% endhint %}
@@ -416,7 +416,7 @@ Chú ý:
 
 * Tạo file **restore-volume.yaml** với nội dung sau:
 
-```
+```bash
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
