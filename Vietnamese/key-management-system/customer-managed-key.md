@@ -54,6 +54,10 @@ Trong trường hợp không có gói key nào đang active, người dùng khô
 
 ### Import Key Material
 
+{% hint style="warning" %}
+Người dùng có thể import key material nhiều lần tuy nhiên key material phải giống nhau giữa các lần import
+{% endhint %}
+
 &#x20;VNG Cloud KMS hỗ trợ import nội dung key (key Material) của hai loại khóa&#x20;
 
 * Khóa đồng bộ (Symmetric Key)&#x20;
