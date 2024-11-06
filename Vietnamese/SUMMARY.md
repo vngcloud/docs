@@ -684,6 +684,7 @@
       * [Integrate with Container Storage Interface (CSI)](vks/storage/lam-viec-voi-container-storage-interface-csi/integrate-with-container-storage-interface-csi.md)
       * [Giới hạn và hạn chế CSI](vks/storage/lam-viec-voi-container-storage-interface-csi/gioi-han-va-han-che-csi.md)
   * [Security Group](vks/security-group.md)
+  * [Upgrade Kubernetes Version](vks/upgrade-kubernetes-version.md)
   * [Migration](vks/migration/README.md)
     * [Migrate Cluster từ VKS tới VKS](vks/migration/migrate-cluster-from-vks-to-vks.md)
     * [Migration Cluster từ vContainer tới VKS](vks/migration/migration-cluster-from-vcontainer-to-vks.md)
