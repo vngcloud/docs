@@ -195,7 +195,7 @@ metadata:
 provisioner: bs.csi.vngcloud.vn                       # The VNG-CLOUD CSI driver name
 parameters:
   type: vtype-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    # The volume type UUID
-  isPOC: "true"                                       # Tam số chỉ định Volume được tạo sẽ bằng ví POC
+  isPOC: "true"                                       # Tham số chỉ định Volume được tạo sẽ bằng ví POC
 allowVolumeExpansion: true                            # MUST set this value to turn on volume expansion feature
 ---
 
