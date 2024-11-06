@@ -109,11 +109,11 @@ kubectl apply -f config.yaml
 kubectl -n istio-system logs -l app=istio-ingressgateway -f
 ```
 
-```
+```bash
 kubectl logs -l app=echo-server -f -c istio-proxy
 ```
 
-```
+```bash
 kubectl logs -l app=echo-server -f
 ```
 
@@ -133,7 +133,7 @@ Kết quả nhận được thông qua log: tất cả request tới đều có 
 
 * Tiếp theo, bạn cần cấu hình vLB Layer4 cho phép sử dụng proxy protocol cho service Load Balancer Istio Gateway.&#x20;
 
-```
+```bash
 kubectl annotate service -n istio-system istio-ingressgateway vks.vngcloud.vn/enable-proxy-protocol="*"
 ```
 
@@ -143,7 +143,7 @@ kubectl annotate service -n istio-system istio-ingressgateway vks.vngcloud.vn/en
 
 * Tiếp theo, bạn cần cấu hình Istio Gateway Pod nhận `proxy protocol`
 
-```
+```bash
 kubectl patch deployment istio-ingressgateway -n istio-system -p '{"spec":{"template":{"metadata":{"annotations":{"proxy.istio.io/config":"{\"gatewayTopology\":{\"proxyProtocol\":{}}}"}}}}}'
 ```
 
