@@ -27,7 +27,7 @@ Trước khi tìm hiểu cách Stop POC cho tài nguyên của bạn trên VKS, 
 
 * Khi bạn khởi tạo Cluster và chọn sử dụng ví POC, chúng tôi đã tự động tạo Control Plane, Node, Volume và Private Service Endpoint (nếu bạn chọn sử dụng) thông qua ví POC. Đối với các tài nguyên khác như&#x20;
   * **PVC:** khi thực hiện khởi tạo qua yaml, bạn vui lòng thêm tham số `isPOC: "true"` vào file yaml này. Tham khảo ví dụ bên dưới.
-  * **LoadBalancer:** khi thực hiện khởi tạo qua yaml, bạn vui lòng thêm `annotation vks.vngcloud.vn/is-poc: "true"` vào file yaml này. Tham khảo ví dụ bên dưới.
+  * **LoadBalancer:** khi thực hiện khởi tạo qua yaml, bạn vui lòng thêm annotation `vks.vngcloud.vn/isPOC: "true"` vào file yaml này. Tham khảo ví dụ bên dưới.
 * Do các resource **Load Balancer** và **PVC** được quản lý thông qua YAML, sau khi Stop POC, nếu trong file YAML của bạn vẫn có tham số `isPOC : true`, hệ thống sẽ tự động tạo lại các resource này thông qua ví POC. Để tạo Load Balancer và PVC tiếp theo bằng tiền thật, vui lòng thay đổi tham số isPOC thành false. (`isPOC : false`).
 {% endhint %}
 
@@ -86,7 +86,7 @@ metadata:
   name: nginx-service
   namespace: default
   annotations:
-    vks.vngcloud.vn/is-poc: "true"
+    vks.vngcloud.vn/isPOC: "true"
 spec:
   ports:
     - port: 80
@@ -104,7 +104,7 @@ metadata:
   name: webapp-02
   namespace: default
   annotations:
-    vks.vngcloud.vn/is-poc: "true"
+    vks.vngcloud.vn/isPOC: "true"
 spec:
   ingressClassName: vngcloud
   defaultBackend:
