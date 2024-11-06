@@ -6,15 +6,15 @@
 * Choose "Create Key" and follow the on-screen instructions to create the key:
 * Enter key information including: Key Name, Description, Tags.
 * Enter key configuration details including: Key Type, Key Usage, and Key Spec.
-* Key Material Origin: Users select the Origin = KMS.
+* Key Material Origin: Users select the Origin = VNGCLOUD.
 
-&#x20;   \-        KMS: Key material created on VNG Cloud KMS.
+&#x20;   \-        VNGCLOUD: Key material created on VNG Cloud KMS.
 
 &#x20;   \-        External: Users manage the Key Material yourselves and import it into VNG Cloud KMS for use in VNG Cloud services.
 
 * Click "Create Key" to create the key.
 
-&#x20;   \-   For keys with key material source = KMS, upon successful creation, the key status will be "Active"
+&#x20;   \-   For keys with key material source = VNGCLOUD, upon successful creation, the key status will be "Active"
 
 &#x20;   \-   For keys with key material source = External, upon successful creation, the key status will be "Pending Import" The next step is to follow the instructions in the section "Wait for Key Material Import."
 
