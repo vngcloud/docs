@@ -33,9 +33,9 @@ Users can only delete keys of the type "Customer Managed Key."
 * Click "Delete"
 * The key will change to the status "Pending Deletion" The key will be removed from the system after the waiting period expires. If changing your mind, you can use the "Cancel Deletion" function.
 
-Cancel deletion
+### Cancel deletion
 
-### For keys that are in the pending deletion stage, you can change your decision by using the "Cancel Key Deletion" function.
+For keys that are in the pending deletion stage, you can change your decision by using the "Cancel Key Deletion" function.
 
 * Go to the "Customer keys" menu, find and select the key with the status "Pending Deletion"
 * Click "Cancel Deletion"
@@ -52,6 +52,12 @@ Applicable to cases where Disable keys need to be used.
 If there are no active key packages, users cannot enable a key that is in the "Disable" status.
 
 ### Import Key Material
+
+
+
+{% hint style="warning" %}
+Users can import key material multiple times; however, the key material must be the same across all imports.
+{% endhint %}
 
 VNG Cloud KMS supports importing key material for two types of keys:
 
