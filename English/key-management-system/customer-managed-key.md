@@ -53,8 +53,6 @@ If there are no active key packages, users cannot enable a key that is in the "D
 
 ### Import Key Material
 
-
-
 {% hint style="warning" %}
 Users can import key material multiple times; however, the key material must be the same across all imports.
 {% endhint %}
@@ -126,8 +124,6 @@ openssl genpkey -algorithm RSA -out my_private_key.pem -pkeyopt rsa_keygen_bits:
 &#x20;Step 3: Encrypt the AES key with the RSA public key.
 
 3.1 Wrapping algorithm: RSA-AES-KEY-WRAP-SHA-256&#x20;
-
-&#x20;// Some code
 
 ```
 openssl pkeyutl -encrypt -inkey WrappingPublicKey.pem -pubin -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256 -in aes_key.bin -out aes_key_wrapped.bin
