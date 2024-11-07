@@ -11,16 +11,17 @@ Speech-to-Text (STT) transcription is a technology that converts spoken language
 
 #### Step-by-Step Guide to Speech-to-Text Transcription <a href="#step-by-step-guide-to-speech-to-text-transcription" id="step-by-step-guide-to-speech-to-text-transcription"></a>
 
-1. **Upload Your Audio File:**
+1. **Access to the Speech-to-Text Portal:** [https://ai-speech-text.console.vngcloud.vn/stt](https://ai-speech-text.console.vngcloud.vn/stt)
+2. **Upload Your Audio File:**
    * Select the audio file you want to transcribe from your device.
    * Ensure the audio file format is supported (e.g., MP3, WAV, etc.).
-2. **Select Audio Encoding Type:**
+3. **Select Audio Encoding Type:**
    * Choose the correct encoding type for your audio file. This information is often available in the file properties or metadata. Common encoding types include MP3 and WAV.
-3. **Select Language:**
+4. **Select Language:**
    * Choose "Vietnamese" as the language for the transcription. This will help the system accurately recognize and transcribe the spoken language.
-4. **Start the Transcription Process:**
+5. **Start the Transcription Process:**
    * Click the "Turn speech to text" button to initiate transcription.
-5. **Review and Edit the Transcription:**
+6. **Review and Edit the Transcription:**
    * Once the transcription is complete, review the generated text for accuracy.
    * Edit and correct any errors or inaccuracies as needed.
 
@@ -30,21 +31,22 @@ Text-to-Speech (TTS) transcription is a technology that converts written text in
 
 #### Step-by-Step Guide to Text-to-Speech Transcription: <a href="#step-by-step-guide-to-text-to-speech-transcription" id="step-by-step-guide-to-text-to-speech-transcription"></a>
 
-1. **Select the Text-to-Speech Engine:**
+1. **Access to the Text-to-Speech Portal**: [https://ai-speech-text.console.vngcloud.vn/tts](https://ai-speech-text.console.vngcloud.vn/tts)
+2. **Select the Text-to-Speech Engine:**
    * Choose the "Standard Mode" engine for general-purpose text-to-speech.
-2. **Input or Upload Your Text:**
+3. **Input or Upload Your Text:**
    * **Direct Input:** Type your text directly into the text box provided.
    * **File Upload:** Upload a text file containing the text you want to convert.
-3. **Select the Language:**
+4. **Select the Language:**
    * Choose "Vietnamese" as the language for the synthesized speech.
-4. **Customize the Audio Voice:**
+5. **Customize the Audio Voice:**
    * Select the desired voice from the available options. You can choose between male and female voices, and adjust the voice's tone and speed.
-5. **Adjust Audio Speed and Encoding:**
+6. **Adjust Audio Speed and Encoding:**
    * **Audio Speed:** Set the desired speed of the synthesized speech.
    * **Audio Encoding:** Choose the appropriate audio format (e.g., MP3, WAV) and encoding settings.
-6. **Start the Transcription Process:**
+7. **Start the Transcription Process:**
    * Click the "Turn text to speech" button to initiate the text-to-speech process.
-7. **Download the Audio File:**
+8. **Download the Audio File:**
    * Once the process is complete, download the generated audio file.
 
 ## Pricing Model
