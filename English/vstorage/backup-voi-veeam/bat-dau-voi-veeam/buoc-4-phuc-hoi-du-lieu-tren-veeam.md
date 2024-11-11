@@ -32,7 +32,7 @@ Here, the data in the folder E:\Backup\_Veem contains "Backup File" that is corr
 
 Here, the user selects the Job that backed up the folder, then selects the computer on which the Job ran the backup. Right-click and select "**Restore guest files**" then choose "**Microsoft Windows**".
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 2. The "**File Level Restore**" interface appears, in the "**Restore Point**" tab, all backup points will be listed, the user only selects the backup point appropriate to retrieve the data. Then click "**Next**".
 
