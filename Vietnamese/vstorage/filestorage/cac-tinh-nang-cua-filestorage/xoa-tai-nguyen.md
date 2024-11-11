@@ -1,20 +1,9 @@
 # Xóa tài nguyên
 
-Khi không có nhu cầu khởi tạo tài nguyên, để tránh bị phát sinh chi phí không cần thiết, VNG Cloud khuyến nghị người dùng xóa tài nguyên, làm theo hướng dẫn bên dưới để xóa tài nguyên:
+Bạn đã khởi tạo một file storage với dung lượng lưu trữ phù hợp. Hiện tại, nhu cầu kinh doanh của bạn thay đổi, bạn không có nhu cầu sử dụng file storage đã tạo. Chúng tôi khuyến khích bạn nên xóa file storage để tối ưu chi phí.
 
-**Bước 1: Người dùng gửi yêu cầu xóa tài nguyên đến đội ngũ hỗ trợ bằng việc gửi ticket:**
+Để xóa một file storage, bạn có thể:
 
-* 1.1: Truy cập đến trang ticket
-* 1.2: Điền thông tin bắt buộc bao gồm
-  * Request Category: Hỗ trợ kỹ thuật (Technical Support)
-  * Product: Sản phẩm khác (Other)
-  * Ticket information (Subject): Xóa tài nguyên File Storage
-  * Description: Định danh tài nguyên
+**Bước 1:** Đăng nhập vào [https://efs.console.vngcloud.vn/overview](https://efs.console.vngcloud.vn/overview)
 
-**Bước 2: VNG Cloud xử lý yêu cầu xóa tài nguyên**
-
-* 2.1: VNG Cloud liên hệ khách hàng để xác nhận yêu cầu.
-* 2.2:  VNG Cloud xóa tài nguyên.
-* 2.3: VNG Cloud gửi email xác nhận đến khách hàng.
-
-Lưu ý: Tài nguyên đã xóa (bao gồm dữ liệu được lưu trữ trên tài nguyên) sẽ không thể khôi phục.
+**Bước 2:** Chọn biểu tượng ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FkcyUBgpsSXeMN2pcVWWi%252Fimage.png%3Falt%3Dmedia%26token%3D94a5949b-5b8c-4780-9b32-9fa7175fab46\&width=21\&dpr=4\&quality=100\&sign=cb000b7a\&sv=1)tại file storage bạn muốn thực hiện xóa. Chọn **Delete**.

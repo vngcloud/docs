@@ -10,7 +10,7 @@
 
 3\. Chọn biểu tượng **Action** và chọn **Set CORS.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\. Tại đây, bạn hãy nhập file CORS configuration. CORS Configuration trong vStorage là một file JSON với một danh sách các quy tắc (rules) mà bạn muốn áp dụng. Mỗi quy tắc sẽ bao gồm:&#x20;
 
@@ -20,7 +20,7 @@
 * **ExposeHeaders**: Các header mà ứng dụng có thể thấy trong response từ S3.
 * **MaxAgeSeconds**: Thời gian tính bằng giây mà trình duyệt nên lưu trữ kết quả của request trước khi gửi request khác.
 
-<figure><img src="../../../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 5\. Chọn **Update** để lưu lại cấu hình đã thiết lập cho CORS.
 

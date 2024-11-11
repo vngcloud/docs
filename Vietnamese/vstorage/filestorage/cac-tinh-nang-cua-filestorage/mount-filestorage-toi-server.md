@@ -6,13 +6,13 @@ Các bước thực hiện mount FileStorage tới một server qua giao thức 
 
 * **Đối với Debian/Ubuntu:**
 
-```
+```bash
 sudo apt-get -y update && sudo apt-get install nfs-common
 ```
 
 * **Đối với Red Hat Enterprise Linux/CentOS:**
 
-```
+```bash
 sudo yum update && sudo yum install nfs-utils
 ```
 
@@ -20,7 +20,7 @@ sudo yum update && sudo yum install nfs-utils
 
 * Ví dụ lệnh bên dưới tôi đã tạo thư mục /mnt/nfs
 
-```
+```bash
 sudo mkdir -p /mnt/nfs
 ```
 
@@ -28,12 +28,12 @@ sudo mkdir -p /mnt/nfs
 
 * Ví dụ lệnh bên dưới tôi mount FileStorage có name = demo\_test với thư mục mount = /mnt/nfs
 
-<pre><code><strong>sudo mount -t nfs -o vers=4.1,hard,timeo=600,retrans=3,rsize=1048576,wsize=1048576,resvport,async hcm04.efs.vngcloud.vn:/demo_test /mnt/nfs/
+<pre class="language-bash"><code class="lang-bash"><strong>sudo mount -t nfs -o vers=4.1,hard,timeo=600,retrans=3,rsize=1048576,wsize=1048576,resvport,async hcm04.efs.vngcloud.vn:/demo_test /mnt/nfs/
 </strong></code></pre>
 
 **Bước 4**: Kiểm tra mount:
 
-```
+```bash
 df -h
 ```
 

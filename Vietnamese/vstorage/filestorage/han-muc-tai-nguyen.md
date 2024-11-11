@@ -6,4 +6,4 @@ Sản phẩm File Storage thiết lập hạn mức tài nguyên để đảm b�
 
 Tham khảo bảng sau đây cho các giá trị tối đa cho tài nguyên File Storage của bạn.
 
-<table><thead><tr><th width="99">STT</th><th>Thuộc tính</th><th>Mặc định</th><th>Cho phép điều chỉnh</th></tr></thead><tbody><tr><td>1</td><td>Dung lượng lưu trữ trên 1 tài nguyên</td><td>10TB</td><td>Có</td></tr><tr><td>2</td><td>Thông lượng đến tài nguyên</td><td>200Mb/s</td><td>Có</td></tr><tr><td>3</td><td>Số lượng tài nguyên</td><td>10</td><td>Có</td></tr></tbody></table>
+<table><thead><tr><th width="99">STT</th><th>Thuộc tính</th><th>Mặc định</th><th>Có thể điều chỉnh tùy theo nhu cầu</th></tr></thead><tbody><tr><td>1</td><td>File Storage/ 1 SSO User Account</td><td>5</td><td>Có</td></tr><tr><td>2</td><td>Min Quota (Min Capacity)</td><td>1 TB</td><td>Không</td></tr><tr><td>3</td><td>Max Quota (Max Capacity)</td><td>50 TB</td><td>Có</td></tr><tr><td>4</td><td>Min Usage</td><td>1 TB</td><td>Không</td></tr></tbody></table>

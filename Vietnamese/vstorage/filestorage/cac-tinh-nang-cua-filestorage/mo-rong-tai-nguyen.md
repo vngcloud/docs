@@ -1,25 +1,15 @@
 # Mở rộng tài nguyên
 
-Trong quá trình sử dụng dịch vụ, VNG Cloud hỗ trợ người dùng mở rộng tài nguyên bằng cách mở rộng dung lượng sử dụng và thông lượng. Làm theo hướng dẫn dưới đây để yêu cầu hỗ trợ:
+Bạn đã khởi tạo **File storage** với lượng max quota ban đầu phù hợp với nhu cầu lưu trữ. Hiện tại nhu cầu kinh doanh của bạn thay đổi mà dung lượng cũ không đáp ứng được. Để giải quyết vấn đề này, bạn có thể thay đổi quota lưu trữ thông qua tính năng **Resize** mà chúng tôi cung cấp.
 
-**Bước 1: Người dùng gửi yêu cầu mở rộng tài nguyên đến đội ngũ hỗ trợ bằng việc gửi ticket:**
+Để thay đổi quota cho một **File storage**, bạn có thể:
 
-* 1.1: Truy cập đến trang ticket
-* 1.2: Điền thông tin bắt buộc bao gồm
-  * Request Category: Hỗ trợ kỹ thuật (Technical Support)
-  * Product: Sản phẩm khác (Other)
-  * Ticket information (Subject): Mở rộng tài nguyên File Storage
-  * Description: Định danh tài nguyên, Yêu cầu mở rộng dung lượng đến (TB), Yêu cầu mở rộng thông lượng đến (Mb/s)
+**Bước 1:** Đăng nhập vào [https://efs.console.vngcloud.vn/overview](https://efs.console.vngcloud.vn/overview)
 
-**Bước 2: VNG Cloud xử lý yêu cầu mở rộng tài nguyên**
+**Bước 2:** Chọn checkbox tại file storage bạn muốn tăng quota và chọn biểu tượng ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FklArErUf8YJCZgjw6j8E%252Fimage.png%3Falt%3Dmedia%26token%3D8bf06cfe-52c0-4060-837b-caa420fea819\&width=41\&dpr=4\&quality=100\&sign=fde900f0\&sv=1)hoặc bạn cũng có thể chọn biểu tượng ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FrxitUMM9JIncMgn4JDAK%252Fimage.png%3Falt%3Dmedia%26token%3D7baaf770-23ce-478c-816f-bd324ab4ddee\&width=27\&dpr=4\&quality=100\&sign=5b654b0\&sv=1) sau đó chọn Resize.
 
-* 2.1: VNG Cloud liên hệ khách hàng để xác nhận yêu cầu sử dụng.
-* 2.2: VNG Cloud mở rộng tài nguyên theo yêu cầu từ khách hàng.
-* 2.3: VNG Cloud gửi email thông tin tài nguyên vừa cung cấp đến khách hàng.
+**Bước 3:** Màn hình **Resize file storage** được hiển thị**.** Chọn **quota** lưu trữ mong muốn tăng thêm, quota mới phải lớn hơn quota hiện tại của file storage.
 
-**Bước 3: Người dùng xác nhận**
+**Bước 4:** Chọn **Resize file storage.**
 
-* 3.1: Người dùng kiểm tra thông tin tài nguyên vừa cung cấp (hướng dẫn trong phần đính kèm)
-* 3.2: Gửi email xác nhận tài nguyên cung cấp cho người dùng là đúng theo yêu cầu.
-
-Lưu ý: Tài nguyên đã được mở rộng sẽ không hỗ trợ giảm xuống (đối với cả dung lượng và thông lượng)
+Sau khi bạn thực hiện thành công 4 bước trên, giá trị tổng **quota** mới sau khi thay đổi sẽ được cập nhật trên thông tin chung của file storage mà bạn chọn.

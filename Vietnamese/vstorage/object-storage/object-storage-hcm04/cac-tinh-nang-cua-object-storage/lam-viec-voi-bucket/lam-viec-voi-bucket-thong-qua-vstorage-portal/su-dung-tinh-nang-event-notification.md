@@ -8,7 +8,7 @@
 
 3\. Chọn biểu tượng **Action** và chọn **Configure event notification.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\. Chọn **Create an Event notification**.
 
@@ -34,7 +34,7 @@
     * Cấu trúc thư mục và tên file: `[Bucket]/[YYYY]/[MM]/[DD]/[YYYY]-[MM]-[DD]-[hh]-[mm]`.
     * Ví dụ: `bucketB/2023/03/01/2023-03-01-21-32`&#x20;
 
-<figure><img src="../../../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
