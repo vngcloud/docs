@@ -31,7 +31,7 @@ To help users have a more detailed view of the above process, below are the step
 * **Step 5:** After successful payment, users will be redirected to the vServer website to check information and continue using resources.
 
 {% hint style="info" %}
-**Chú ý:**
+**Hint:**
 
 * For resources belonging to the K8s/vContainer service group, the system will not issue invoices at the time of conversion, but invoices will be recorded in the monthly reconciliation period of this service based on actual usage costs.
 * Converting cluster resources to paid services means converting the entire persistent volume (initialized during the cluster POC process) to paid services at the same time.
