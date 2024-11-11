@@ -6,7 +6,7 @@
 
 **Bước 1:** Truy cập vào [https://efs.console.vngcloud.vn/overview](https://efs.console.vngcloud.vn/overview)
 
-**Bước 2:** Chọn mục **File Storage** sau đó chọn **Create a File storage**.
+**Bước 2:** Chọn mục **File Storage** sau đó chọn **Create a File storage.**
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
