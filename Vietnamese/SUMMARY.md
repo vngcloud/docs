@@ -421,7 +421,7 @@
   * [Filestorage](vstorage/filestorage/README.md)
     * [FileStorage là gì?](vstorage/filestorage/filestorage-la-gi.md)
     * [Thông báo và cập nhật](vstorage/filestorage/thong-bao-va-cap-nhat.md)
-    * [Bắt đầu với FileStorage](vstorage/filestorage/bat-dau-voi-filestorage/README.md)
+    * [Bắt đầu với FileStorage](vstorage/filestorage/bat-dau-voi-filestorage.md)
       * [Khởi tạo một Public NFS File Storage](vstorage/filestorage/bat-dau-voi-filestorage/khoi-tao-mot-public-nfs-file-storage.md)
       * [Khởi tạo một Private NFS File Storage (Coming soon)](vstorage/filestorage/bat-dau-voi-filestorage/khoi-tao-mot-private-nfs-file-storage-coming-soon.md)
       * [Khởi tạo một Private SMB File Storage (Coming soon)](vstorage/filestorage/bat-dau-voi-filestorage/khoi-tao-mot-private-smb-file-storage-coming-soon.md)
