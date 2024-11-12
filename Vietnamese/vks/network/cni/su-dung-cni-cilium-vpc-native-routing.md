@@ -31,7 +31,7 @@ Trên VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** hoạ
   * **Bước 4**: Sau khi đã có ít nhất 1 VPC, để tạo subnet, bạn cần chọn **View Detail** để mở rộng bảng điều khiển ở phía dưới, trong đó có mục **Subnet**.
   * **Bước 5:** Tại mục **Subnet**, chọn **Add Subnet.** Lúc này, bạn cần nhập:
     * **Subnet name**: tên gợi nhớ của subnet
-    * **Primary CIDR**: :Đây là dải địa chỉ IP chính của subnet. Mọi địa chỉ IP nội bộ của các máy ảo (VM) trong subnet này sẽ được lấy từ dải địa chỉ này. Giả sử, nếu bạn đặt Primary CIDR là 10.1.0.0/16, các địa chỉ IP của các VM sẽ nằm trong khoảng từ 10.1.0.1 đến 10.1.255.254.
+    * **Primary CIDR**: Đây là dải địa chỉ IP chính của subnet. Mọi địa chỉ IP nội bộ của các máy ảo (VM) trong subnet này sẽ được lấy từ dải địa chỉ này. Giả sử, nếu bạn đặt Primary CIDR là 10.1.0.0/24, các địa chỉ IP của các VM sẽ nằm trong khoảng từ 10.1.0.1 đến 10.1.0.254.
     * **Secondary CIDR**: Đây là dải địa chỉ IP phụ, được sử dụng để cung cấp thêm địa chỉ IP hoặc để phân chia các dịch vụ khác nhau trong cùng một subnet. Mỗi Node có một dải địa chỉ IP riêng cho các pod (Pod CIDR). Các pod trong mỗi node sử dụng địa chỉ từ CIDR này và giao tiếp qua mạng ảo.
 
 <figure><img src="../../../.gitbook/assets/image (776).png" alt=""><figcaption></figcaption></figure>
@@ -41,7 +41,7 @@ Trên VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** hoạ
 {% hint style="info" %}
 **Chú ý:**
 
-* Các dải địa chỉ IP của **Primary CIDR** và **Secondary CIDR** không được trùng lặp. Điều này có nghĩa là dải địa chỉ của **Secondary CIDR** phải nằm ngoài phạm vi của **Primary CIDR** và ngược lại. Giả sử, nếu Primary CIDR là 10.1.0.0/16, thì Secondary CIDR không thể là 10.1.0.0/20 vì nó nằm trong phạm vi của Primary CIDR. Thay vào đó, bạn có thể sử dụng một dải địa chỉ khác như 10.2.0.0/20.
+* Các dải địa chỉ IP của **Primary CIDR** và **Secondary CIDR** không được trùng lặp. Điều này có nghĩa là dải địa chỉ của **Secondary CIDR** phải nằm ngoài phạm vi của **Primary CIDR** và ngược lại. Giả sử, nếu Primary CIDR là 10.1.0.0/24, thì Secondary CIDR không thể là 10.1.0.0/20 vì nó nằm trong phạm vi của Primary CIDR. Thay vào đó, bạn có thể sử dụng một dải địa chỉ khác như 10.1.16.0/20.
 {% endhint %}
 
 * Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/security/ssh-key-bo-khoa)

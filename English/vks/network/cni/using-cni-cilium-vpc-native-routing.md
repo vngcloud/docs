@@ -31,7 +31,7 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
   * **Step 4**: After having at least 1 VPC, to create a subnet, you need to select **View Detail** to expand the control panel at the bottom, including the **Subnet** section.
   * **Step 5**: In the **Subnet** section, select **Add Subnet**. Now, you need to enter:
     * **Subnet name**: the subnet's mnemonic name
-    * **Primary CIDR** : :This is the primary IP address range of the subnet. All internal IP addresses of virtual machines (VMs) in this subnet will be taken from this address range. For example, if you set Primary CIDR to 10.1.0.0/16, the IP addresses of the VMs will be in the range of 10.1.0.1 to 10.1.255.254.
+    * **Primary CIDR** : :This is the primary IP address range of the subnet. All internal IP addresses of virtual machines (VMs) in this subnet will be taken from this address range. For example, if you set Primary CIDR to 10.1.0.0/24, the IP addresses of the VMs will be in the range of 10.1.0.1 to 10.1.0.254.
     * **Secondary CIDR** : This is a secondary IP address range, used to provide additional IP addresses or to separate different services within the same subnet. Each Node has a private IP address range for its pods (Pod CIDR). The pods in each node use addresses from this CIDR and communicate over the virtual network.
 
 <figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
@@ -41,7 +41,7 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 {% hint style="info" %}
 **Attention:**
 
-* The IP address ranges of **Primary CIDR** and **Secondary CIDR** cannot overlap. This means that the address range of **Secondary CIDR** must be outside the range of **Primary CIDR** and vice versa. For example, if Primary CIDR is 10.1.0.0/16, then Secondary CIDR cannot be 10.1.0.0/20 because it is within the range of Primary CIDR. Instead, you can use a different address range like 10.2.0.0/20.
+* The IP address ranges of **Primary CIDR** and **Secondary CIDR** cannot overlap. This means that the address range of **Secondary CIDR** must be outside the range of **Primary CIDR** and vice versa. For example, if Primary CIDR is 10.1.0.0/24, then Secondary CIDR cannot be 10.1.0.0/20 because it is within the range of Primary CIDR. Instead, you can use a different address range like 10.1.16.0/20.
 {% endhint %}
 
 * There is at least 1 **SSH key in ACTIVE** state . If you do not have any SSH key, please initialize SSH key following the instructions here [.](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/security/ssh-key-bo-khoa)
