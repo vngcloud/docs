@@ -15,9 +15,9 @@ Cách tính phí File Storage áp dụng chung cho cả 2 hình thức thanh to�
 
 _<mark style="background-color:green;">Ví dụ: Bạn là KH sử dụng File Storage, bạn đã khởi tạo 3 file storage và sử dụng trong tháng với thông số:</mark>_&#x20;
 
-* _<mark style="background-color:green;">File Storage A: Max quota = 1 TB, Usage = 48 GB => Do Usage trong tháng < 50 GB nên bạn sẽ không phát sinh chi phí trên file storage này.</mark>_
-* _<mark style="background-color:green;">File Storage B: Max quota = 1 TB, Usage = 60 GB => Do ngoài 50 GB miễn phí, KH đã sử dụng 60 - 50 = 10 GB nên mức Usage hệ thống ghi nhận để tính toán là 1 TB (1024 GB).</mark>_
-* _<mark style="background-color:green;">File Storage C: Max quota = 2 GB, Usage trong tháng = 1100 GB => Do ngoài 50 GB miễn phí, KH đã sử dụng 1100 - 50 = 1050 GB nên mức Usage hệ thống ghi nhận để tính toán là 1050 GB.</mark>_
+* _<mark style="background-color:green;">File Storage A: Max quota = 1 TB, Usage trong toàn tháng = 48 GB => Do Usage trong tháng < 50 GB nên bạn sẽ không phát sinh chi phí trên file storage này.</mark>_
+* _<mark style="background-color:green;">File Storage B: Max quota = 1 TB, Usage trong toàn tháng = 60 GB => Do ngoài 50 GB miễn phí, KH đã sử dụng 60 - 50 = 10 GB nên mức Usage hệ thống ghi nhận để tính toán là 1 TB (1024 GB).</mark>_
+* _<mark style="background-color:green;">File Storage C: Max quota = 2 GB, Usage trong toàn tháng = 1100 GB => Do ngoài 50 GB miễn phí, KH đã sử dụng 1100 - 50 = 1050 GB nên mức Usage hệ thống ghi nhận để tính toán là 1050 GB.</mark>_
 
 ### **Phương thức thanh toán trả trước**
 
