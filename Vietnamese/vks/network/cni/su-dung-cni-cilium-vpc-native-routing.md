@@ -53,8 +53,6 @@ Trên VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** hoạ
 * Khi bạn sử dụng loại network Cilium Native Routing cho cluster của bạn, bạn cần thực hiện cấu hình các **Security Groups** cho phép các kết nối cần thiết. Ví dụ, khi bạn chạy một NGINX pod trên một node, bạn phải cho phép traffic trên port 80 để đảm bảo các requests từ các node khác có thể kết nối tới. Việc cấu hình này chỉ bắt buộc nếu bạn sử dụng Cilium Native Routing, đối với Calico Overlay và Cilium Overlay thì việc cấu hình Security Groups này là không cần thiết.
 {% endhint %}
 
-
-
 ***
 
 ## **Khởi tạo một Cluster sử dụng CNI Cilium VPC Native Routing**
@@ -82,7 +80,7 @@ Giả sử, khi khởi tạo cluster, tôi lựa chọn:&#x20;
 * **VPC**: 10.111.0.0/16
 * **Subnet:**&#x20;
   * **Primary IP Range:** 10.111.0.0/24
-  * **Secondary IP Range:**10.111.160.0/20
+  * **Secondary IP Range:** 10.111.160.0/20
 * **Node CIDR mask size:** Các giá trị có thể chọn từ **/24** đến **/26**.
 
 <table data-full-width="true"><thead><tr><th>Node CIDR mask size</th><th>Số lượng IP cho mỗi node</th><th>Số lượng node có thể tạo trong dải /20 (4096 IP)</th><th>Số lượng IP phân bổ cho pod trên mỗi node</th><th>Số lượng pod thực tế có thể tạo</th></tr></thead><tbody><tr><td><strong>/24</strong></td><td>256</td><td>16</td><td>256 </td><td>128</td></tr><tr><td><strong>/25</strong></td><td>128</td><td>32</td><td>128</td><td>64</td></tr><tr><td><strong>/26</strong></td><td>64</td><td>64</td><td>64</td><td>32</td></tr></tbody></table>

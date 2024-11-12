@@ -53,8 +53,6 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 * When using Cilium's native routing mode, it is crucial to configure **Security Groups** correctly to allow necessary connections. For example, when running an NGINX pod on a node, you must permit traffic on port 80 to ensure requests from other nodes can connect. This configuration is not required when using the network overlay mode.
 {% endhint %}
 
-
-
 ***
 
 ## **Create a Cluster using CNI Cilium VPC Native Routing** <a href="#khoi-tao-mot-cluster-su-dung-cni-cilium-vpc-native-routing" id="khoi-tao-mot-cluster-su-dung-cni-cilium-vpc-native-routing"></a>
