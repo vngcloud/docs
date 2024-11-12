@@ -702,6 +702,7 @@
     * [Danh sách Flavor đang hỗ trợ](vks/tham-khao-them/danh-sach-flavor-dang-ho-tro.md)
     * [Danh sách System Image đang hỗ trợ](vks/tham-khao-them/danh-sach-system-image-dang-ho-tro.md)
     * [Test](vks/tham-khao-them/test.md)
+* [Global load balancer](global-load-balancer.md)
 * [vContainer Registry](vcontainer-registry/README.md)
   * [Bắt đầu với vCR](vcontainer-registry/bat-dau-voi-vcr.md)
   * [Repository](vcontainer-registry/repository/README.md)
