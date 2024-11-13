@@ -41,7 +41,7 @@ Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông t
 7. Chọn **Copy** để sao chép mật khẩu. Bạn bắt buộc phải thu thập được thông tin này để có thể truy cập vào File Storage sử dụng IAM User Account.
 8. Chọn **Create User Account.**
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (4).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -70,7 +70,7 @@ Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông t
 
 Sau khi bạn thực hiện 8 bước bên trên, policy cho file storage đã được khởi tạo. Tiếp theo, bạn hãy gán nó vào IAM User Account.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (4).png" alt=""><figcaption></figcaption></figure>
 
 **Liên kết tài khoản IAM User Account với policy tương ứng**
 

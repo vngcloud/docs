@@ -11,7 +11,7 @@
 * _<mark style="color:blue;">Trong trường hợp muốn phân giải DNS, người dùng phải đảm bảo</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**route**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">ở trên được cấu hình chính xác đi qua gateway NAT cho IP Resolver</mark>_
 {% endhint %}
 
-* Người dùng login vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/) với region = HCM
+* Người dùng login vào [https://hcm-3-vnetwork.console.vngcloud.vn/nat/list](https://hcm-3-vnetwork.console.vngcloud.vn/nat/list) với region = HCM
 * Chọn menu “**Public NAT Instance**” tại thanh menu bên trái màn hình
 * Chọn chức năng “**Create a Public NAT**”
 * Nhập thông tin NAT theo yêu cầu gồm:
