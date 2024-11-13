@@ -40,7 +40,7 @@ Máy chủ ảo có thể được gắn nhiều Volume lưu trữ dữ liệu k
 
 Người dùng có thể tạo thông tin Network và Security Group phù hợp để quản lý giao tiếp giữa các máy chủ ảo trong môi trường Network VPC.
 
-VPC là một không mang mạng riêng ảo. Người dùng có toàn quyền quản lý thông tin VPC này từ việc đặt range IP đến điều chỉnh routing hoặc điều khiển chính sách network trong VPC. Xem thêm tại [{Trang VPC}](../network/virtual-private-cloud-vpc.md).
+VPC là một không mang mạng riêng ảo. Người dùng có toàn quyền quản lý thông tin VPC này từ việc đặt range IP đến điều chỉnh routing hoặc điều khiển chính sách network trong VPC. Xem thêm tại [{Trang VPC}](../network/virtual-private-cloud-vpc/).
 
 Nếu bạn chưa từng tạo VPC trước đây, hệ thống sẽ tự động tạo trước VPC và subnet mặc định để nhanh chóng sử dụng tiếp trong quá trình khởi tạo máy chủ ảo.
 

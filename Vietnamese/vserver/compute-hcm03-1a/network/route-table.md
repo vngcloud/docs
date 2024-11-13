@@ -20,7 +20,7 @@ Sử dụng hướng dẫn bên dưới để tạo mới một Route table
 2. Tại thanh menu điều hướng, chọn **Tab Network/ Route table.**
 3. Nhấn **Tạo Route table.**
 4. Đối với **Tên** hãy nhập tên mô tả cho Route table. Tên Route table có thể bao gồm các chữ cái (a-z, A-Z, 0-9, '\_', '-'). Độ dài dữ liệu đầu vào nằm trong khoảng từ 5 đến 50. Nó không được bao gồm khoảng trắng ở đầu hoặc ở cuối.
-5. Chọn **VPC** cho Route table của bạn, nếu chưa có VPC cần tạo mới một VPC theo hướng dẫn tại [Trang VPC](virtual-private-cloud-vpc.md).
+5. Chọn **VPC** cho Route table của bạn, nếu chưa có VPC cần tạo mới một VPC theo hướng dẫn tại [Trang VPC](virtual-private-cloud-vpc/).
 6. Nhấn **Create** để tạo mới Route table.
 
 #### **Thêm, xoá, sửa Route**  <a href="#routetable-them-xoa-suaroute" id="routetable-them-xoa-suaroute"></a>

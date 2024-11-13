@@ -74,7 +74,7 @@ Ngoài ra có thể thêm **Data Volume** vào Server trong quá trình khởi t
 
 \+  Tại đây có thể chọn **VPC** để cấp Private IP cho Server và **Subnet** từ danh sách bạn đã tạo trước đó, hoặc có thể nhấn vào [**đây**](https://hcm-3.console.vngcloud.vn/vserver/network/vpc) để tạo mới VPC và Subnet, cần lưu ý ràng sau khi tạo VPC và Subnet, nó sẽ hiển thị tại trang danh sách cho phép bạn chọn trong quá trình khởi tạo Server
 
-\+  Tích vào ô Floating IP để gán Public IP cho Server (Nhấn vào [**đây**](../network/floating-ip.md) để xem hướng dẫn attach/ detach Floating IP)
+\+  Tích vào ô Floating IP để gán Public IP cho Server (Nhấn vào [**đây**](../network/floating-ip/) để xem hướng dẫn attach/ detach Floating IP)
 
 \+  **Security group** để quản lý bộ ACL - Access Control List cho Server. (Nhấp vào [**đây**](../security/security-groups.md) để xem hướng dẫn tạo và quản lý Security group)
 

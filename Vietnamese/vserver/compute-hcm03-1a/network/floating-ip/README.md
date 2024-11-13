@@ -33,8 +33,6 @@ Floating IP được tạo kèm khi khởi tạo Server, tuy nhiên bạn có th
 * Nếu bản sao vServer của bạn không cần FIP nữa, bạn có thể tách FIP khỏi bản sao trong [Trang Server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server).
 * Bạn cũng có thể tách FIP khỏi phiên bản vServer trên [Trang Floating IP](https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip).
 
-#### **Phát hành Floating IP** <a href="#floatingip-phathanhfloatingip" id="floatingip-phathanhfloatingip"></a>
 
-* Việc thanh toán FIP vẫn tiếp tục sau khi nó được tách ra. Nếu bạn không cần FIP nữa, hãy truy cập [Trang Floating IP](https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip) để giải phóng FIP.
 
 \

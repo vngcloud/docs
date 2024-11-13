@@ -20,7 +20,7 @@ Tại giao diện quản lý Database, bạn click chọn **Create Database**. Q
   * **Yêu cầu mật khẩu**: bật yêu cầu mật khẩu để quản trị database instance này nếu muốn.
   * **Mật khẩu**: Trường hợp bật yêu cầu mật khẩu, bần cần nhập vào mật khẩu của mình. VNG Cloud khuyến nghị bạn đặt password đủ mạnh và lưu trữ password này tại nơi an toàn. Để đảm bảo an toàn thông tin, password cần thỏa tất cả yêu cầu tối thiểu độ dài, ký tự cho phép, ký tự đặc biệt,...
 * **Bước 4 Mạng và bảo mật:**Tại mục **Network & Security**, bạn lựa chọn&#x20;
-  * **Cloud Network (VPC & Subnet)** sẽ sử dụng cho MDS Instance này. Mọi RDS Instance đều phải kết nối với một Cloud Network. Nếu chưa có Cloud Network nào, bạn có thể tạo một Cloud Network mới với hướng dẫn[ tại đây](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md).
+  * **Cloud Network (VPC & Subnet)** sẽ sử dụng cho MDS Instance này. Mọi RDS Instance đều phải kết nối với một Cloud Network. Nếu chưa có Cloud Network nào, bạn có thể tạo một Cloud Network mới với hướng dẫn[ tại đây](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/).
   * **Truy cập công khai:** Nếu bạn muốn MDS Instance có IP Public và có thể truy cập từ ngoài Internet, bạn cần bật tính năng **Truy cập công khai** (**Public Accessbility)**, nếu bạn muốn MDS Instance chỉ có IP Private và chỉ những Cloud Servers mới có thể truy cập được thì bạn cần tắt tính năng Public Accessibility.
 
 **Lưu ý**: Để tăng cường bảo mật, VNG Cloud cho phép bạn giới hạn các địa chỉ IP tin cậy được phép truy cập vào mỗi MDS Instance thông qua **Security Group Rules**.
