@@ -39,10 +39,10 @@ Create VPN Connections:
 * VPNGW-01 of HCM03 <> Router of On-Premise;
 * VPNGW-02 of HCM03 <> Router of On-Premise.
 
-Từ đó đồng nghĩa với việc hệ thống mạng kết nối với nhau sau khi:
+After finishing create VPN between above connections:
 
-* VPC1 của HCM03 có route table ghi nhận  VPC là 172.16.0.0/16 của HAN01 và 192.168.1.0/24 của hệ thống On-Premise;
-* VPC2 của HCM03 có route table ghi nhận  VPC là 192.168.1.0/24 và 192.168.2.0/24 của hệ thống On-Premise;
+* HCM03 VPC01 includes route 172.16.0.0/16 of HAN01 and 192.168.1.0/24 of On-Premise System.
+* HCM03 VPC02 includes route 192.168.1.0/24 and 192.168.2.0/24 of On-Premise System.
 
 
 
