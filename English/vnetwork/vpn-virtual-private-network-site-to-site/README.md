@@ -46,7 +46,7 @@ Từ đó đồng nghĩa với việc hệ thống mạng kết nối với nhau
 
 
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Basic Diagram VPN</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption><p>Basic Diagram VPN</p></figcaption></figure>
 
 ***
 

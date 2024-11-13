@@ -24,7 +24,7 @@ When deploying applications in a cloud environment, using Auto Scaling helps opt
 
 Illustration:
 
-<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (37) (1).png" alt=""><figcaption></figcaption></figure>
 
 If the above two conditions are met, the system will increase the number of nodes (one or more nodes) to accommodate all unscheduling pods. This process will be done immediately in 2 steps:
 

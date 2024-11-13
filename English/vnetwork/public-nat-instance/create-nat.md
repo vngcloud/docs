@@ -11,7 +11,7 @@
 * _<mark style="color:blue;">If DNS resolution is needed, users must ensure that the route above is correctly configured to go through the NAT gateway for the IP resolver.</mark>_
 {% endhint %}
 
-* Log in to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/) with region set to HCM.
+* Log in to [https://hcm-3-vnetwork.console.vngcloud.vn/nat/list](https://hcm-3-vnetwork.console.vngcloud.vn/nat/list) with region set to HCM.
 * Select the **"Public NAT Instance"** menu from the top-left-hand menu bar.
 * Choose the **"Create a Public NAT"** function.
 * Enter the required NAT information, including:

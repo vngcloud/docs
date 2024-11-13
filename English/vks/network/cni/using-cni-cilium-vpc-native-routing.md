@@ -10,7 +10,7 @@
 
 On VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** operates according to the following model:
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **In there:**
 

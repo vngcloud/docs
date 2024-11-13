@@ -22,7 +22,7 @@ After downloading the Example folder to the computer, the user opens the file [v
 * **Client\_id:** Get at IAM homepage/ Service account - Service account Detail - **Tab Security credentials**
 * **Client\_secret:** Obtained when initializing Service account at IAM homepage or can be reset at IAM homepage/ Service account - Service account Detail - **Tab Security credentials**
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```
 
@@ -36,7 +36,7 @@ type = string
 default = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}
 ```
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 4:** Check the file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/main.tf) information again (follow the path  examples/ [main.tf](http://main.tf/)), in this case you need to delete the lines below:
 
@@ -86,7 +86,7 @@ source = "./modules/vng-cloud-k8s" }
 
 * **project\_id**: your project information, you can get it at [{Limit Tab}](https://hcm-3.console.vngcloud.vn/vserver/limit) on vServer Portal, For example: **pro-462803f3-6858-466f-bf05-df2b33faa360**:
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **image\_id**: operating system to initialize vServer eg: **img-b5bf635e-0456-4765-b493-31d5fcfc05aa** (1\_Ubuntu-22.04x64) ... you can see Id list when creating vServer on Portal/ [{System Image Tab}](https://hcm-3.console.vngcloud.vn/vserver/v-server/system-image)
 
@@ -154,7 +154,7 @@ default = "sub-5f101cba-7ce0-4084-8576-06b8dbfb298a" }
 
 * **ssh\_key\_id**: specify the ssh key that will be injected into the vServer, you can get it at [{SSH Keys Tab}](https://hcm-3.console.vngcloud.vn/vserver/v-server/ssh-key), if you haven't initialized any ssh key you can see it at [{SSH key creation page}](../security/ssh-key-key-pairs.md):
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **security\_group\_id\_list**: specify a list of security group ids that need to be attached to vServer, you can get it at [{Security Groups Tab}](https://hcm-3.console.vngcloud.vn/vserver/network/sec-group), if you need to create more security groups you can see it at [{Security Group Creation Page}](../server-group.md).
 
@@ -169,7 +169,7 @@ default = [    "secg-28e91c47-11b1-4cc1-8e24-dd174882708d"  ]
 }
 ```
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 6**: Check the file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/modules/vng-cloud-vserver/main.tf)  information (follow the path _**erraform-provider-vngcloud/examples/modules/vng-cloud-k8s/**_[_**main.tf**_](http://main.tf/)), in the file we have some commands available: **Create K8S**, **Create Cluster Node Group, Change Cluster for SecGroup, Attach Load Balancer for K8s...,** in this case to Create K8S you just need to leave the **Create K8S** resource follow the instructions below:
 

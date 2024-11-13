@@ -38,12 +38,12 @@ The Ping tests API allows you to send ICMP packets to your server or devices, al
   * For example, when you select Time of failure: 1 and Locations with failure: 2, it will be understood as: you will be warned if the Test fails 1 time in a row from 2 out of 2 locations.
   * **Notifications** : you choose notification channels when switching to In-alarm, Up or Undertermine states, the system will notify according to this list.
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6\. Then press the " **Create** " button to initialize the API test. After creating, you will see the API test is in Undertermine state, until the next inteval the Test API will be updated to the correct state.
 
-<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 * API Test has entered the Up state when the hostname is working normally
 
-<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>

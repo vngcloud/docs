@@ -24,7 +24,7 @@ To minimize the impact of network disconnections caused by router restart errors
 
 **Step 1: Access the pfSense management interface, select the "Interfaces" tab, and configure the WAN and LAN networks one by one.**
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2: Configure the WAN network**
 

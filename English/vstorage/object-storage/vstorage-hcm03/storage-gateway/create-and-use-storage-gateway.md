@@ -61,11 +61,11 @@ Trong đó:
 
 Chọn **Create** và đợi hoàn tất việc tạo File Share. Bạn cũng có thể xem thêm thông tin mount trong mục **Mount**
 
-<figure><img src="../../../../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (30) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (31) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (32) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **3. Client kết nối và sử dụng file share**
 

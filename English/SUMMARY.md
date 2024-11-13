@@ -750,6 +750,7 @@
     * [Change VPN Bandwidth](vnetwork/vpn-virtual-private-network-site-to-site/change-vpn-bandwidth.md)
     * [VPN Packages](vnetwork/vpn-virtual-private-network-site-to-site/vpn-packages.md)
     * [Delete VPN](vnetwork/vpn-virtual-private-network-site-to-site/delete-vpn.md)
+    * [Demo Site-to-Site VPN](vnetwork/vpn-virtual-private-network-site-to-site/demo-site-to-site-vpn.md)
 * [Service Health](service-health.md)
 * [Identity and Access Management (IAM)](identity-and-access-management-iam/README.md)
   * [Getting Start with IAM](identity-and-access-management-iam/bat-dau-voi-iam.md)

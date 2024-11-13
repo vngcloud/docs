@@ -69,7 +69,7 @@ _<mark style="color:orange;">**If the volume is in use on a virtual server, user
 
 3.1: After completing step 1, the interface proceeds to step 3/4, requiring user interaction. Refer to the illustration below:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
 
 3.2: Click "Action Required." A "Migrate Volume" window will appear, allowing users to confirm two actions:&#x20;
 
@@ -97,7 +97,7 @@ Refer to the detailed guide below to convert the disk from NVMe to SSD.
 * The system creates a new volume with the configuration selected in step 0.4, then backs up data from the current volume to the new volume.&#x20;
 *   Processing time depends on the size and configuration of each volume. During this step, users can still write data to the volume without any downtime.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2: Initiate Differential Migration (With Downtime)**&#x20;
 
@@ -105,20 +105,20 @@ The purpose of this step is to back up new/changed data during step 1.&#x20;
 
 *   2.1: After completing step 1, the interface proceeds to step 2/4, requiring user interaction. Refer to the illustration below:&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 *   2.2: Click "Action Required" to continue the migration process. A "Migrate Volume" window will appear; click "Continue" to confirm. This process will interrupt services on the current volume. The downtime depends on the amount of data changed during step 1. The migration status will appear as follows:&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (9) (2).png" alt=""><figcaption></figcaption></figure>
 
 _<mark style="color:orange;">**If the volume is in use on a virtual server, users must shut down the server to continue the migration.**</mark>_&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3: Confirm Use of the Fully Converted Volume**&#x20;
 
 *   3.1: After completing step 1, the interface proceeds to step 3/4, requiring user interaction. Refer to the illustration below:&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (11) (2).png" alt=""><figcaption></figcaption></figure>
 * 3.2: Click "Action Required." A "Migrate Volume" window will appear, allowing users to confirm two actions:&#x20;
   * 3.2.1: **Delete Old Volume:** The system will complete the update of the new volume, and services on the volume will resume as usual. Note that snapshots related to the volume before the update will be permanently deleted.&#x20;
   * 3.2.2: **Restore:** Restore the volume to its pre-migration state. Data on the volume will be updated to the point before initiating the differential migration (step 2).

@@ -35,7 +35,7 @@ In addition to attaching pool members through backend servers, you can also atta
    6. **Review Pool Members:** Review the list of pool members in the "Attached Servers & Instances" section.
    7. **Save Changes:** Click "Save" to finalize the pool member edits.
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Important Notes:**
 
