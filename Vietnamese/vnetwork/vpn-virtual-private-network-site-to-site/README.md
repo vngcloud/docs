@@ -1,4 +1,10 @@
-# Site-to-Site VPN
+---
+description: >-
+  VPN Site to Site là một mô hình kết nối VPN dùng để liên kết hai hay nhiều
+  mạng riêng tư thông qua liên kết mã bảo mật và an toàn.
+---
+
+# VPN (Virtual Private Network) Site-to-Site
 
 ## Tổng quan
 

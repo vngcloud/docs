@@ -19,7 +19,7 @@ Trong quá trình sử dụng, người dùng vẫn có thể xóa VPN. Tuy nhi�
 **Bước 3: Xác nhận xoá**
 
 {% hint style="info" %}
-**Status of VPN:**
+**Trạng thái VPN:**
 
 * Tại trang Danh sách VPN sẽ thấy Trạng thái của VPN vừa xoá chuyển sang "<mark style="color:blue;">**Deleting**</mark>" (Hệ thống đang xử lý).
 * Sau khi hoàn thành tác vụ, VPN vừa xoá sẽ không xuát hiện trên trang Danh sách nữa.

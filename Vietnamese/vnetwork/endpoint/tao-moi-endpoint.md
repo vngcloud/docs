@@ -8,7 +8,7 @@
 _<mark style="color:blue;">Tại cùng một region, tương ứng với một VPC người dùng chỉ được tạo một Endpoint kết nối đến một dịch vụ của VNG Cloud xác định (vd: vStorage)</mark>_
 {% endhint %}
 
-* Người dùng login vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/) với region = HCM
+* Người dùng login vào  [https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list](https://hcm-3-vnetwork.console.vngcloud.vn/nat/list)  với region = HCM
 * Chọn menu “**Endpoint**” tại thanh menu bên trái màn hình
 * Chọn chức năng “**Create an Endpoint**”
 * Nhập thông tin **Endpoint** theo yêu cầu gồm:
