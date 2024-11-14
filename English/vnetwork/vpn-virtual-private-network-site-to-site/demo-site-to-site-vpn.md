@@ -1,6 +1,19 @@
+---
+description: >-
+  VPN Site to Site là một mô hình kết nối VPN dùng để liên kết hai hay nhiều
+  mạng riêng tư thông qua liên kết mã bảo mật và an toàn.
+---
+
 # Demo Site-to-Site VPN
 
-### 1.    Create Remote Site VPN (using pfsens)
+Below is a demonstration of how to connect two LAN networks via the internet secured by a VPN connection (two VPN at 2 site)
+
+* Site A: VPC 10.1.0.0/16 with VPN server using PFsense of VNG Cloud Market Place.
+* Site B: VPC 10.200.0.0/16 with VPN server using VNG Cloud VPN Site-To-Site Service
+
+
+
+## 1.    Create Remote Site VPN (using pfsens)
 
 ### a.      Create pfsense server
 
@@ -9,11 +22,11 @@
 * Choose Flavor (example 2x4)
 * Network Settings: External Interface Priority = 1
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>vMarket Placer - pfSense </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>vMarket Placer - pfSense </p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Request Pfsense - Config Network</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Request Pfsense - Config Network</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Request Pfsense - Config Network</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Request Pfsense - Config Network</p></figcaption></figure>
 
 ### b.    Access pfsense Dashboard
 
@@ -21,7 +34,7 @@
 * Show detail Created Server and open new Url with IP Public https://\<FixedIp>.
 * Login with default user admin/pfsense
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Server List</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Server List</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Server Detail</p></figcaption></figure>
 
@@ -75,11 +88,7 @@
 
 ### a. Create VPN
 
-
-
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption><p>VNGCloud VPN - Create</p></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption><p>VNGCloud VPN - Create</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>VNGCloud VPN creates</p></figcaption></figure>
 
 ### b. Detail VPN
 
@@ -129,7 +138,11 @@
 
 <figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
+<div data-full-width="true">
+
 <figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 ### f.      Check Status IPSec
 

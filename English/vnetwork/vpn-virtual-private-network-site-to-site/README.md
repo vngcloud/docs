@@ -8,7 +8,7 @@ description: >-
 
 ## Overview
 
-Default, the VMs are created in a VPC that cannot communicate with a remote private network. Therefore, to access the remote private network from a VPC, the VNGCloud private VPN service creates a **Virtual Private Network (VPN) Site-to-Site** and configures routing traffic through this connection. Besides that, this connection is a secure connection and safe cause using the **IPSEC** algorithm for authentication and encrypting data at 2 terminal VPNs local and remote.
+Default, the VMs are created in a VPC that cannot communicate with a remote private network. Therefore, to access the remote private network from a VPC, the VNGCloud private VPN service creates a **Virtual Private Network (VPN) Site-to-Site** and configures routing traffic through this connection. Besides that, this connection is secure connection and safe cause using the **IPSEC** algorithm for authentication and encrypting data at two terminal VPNs local and remote.
 
 Connection Site-to-Site VPN supports connecting with Protocol Internet Protocol security (IPsec).
 
