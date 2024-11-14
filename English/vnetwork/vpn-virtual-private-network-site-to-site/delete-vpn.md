@@ -1,7 +1,7 @@
 ---
 description: >-
-  VPN Site to Site là một mô hình kết nối VPN dùng để liên kết hai hay nhiều
-  mạng riêng tư thông qua liên kết mã bảo mật và an toàn.
+  VPN Site-To-Site is a private connection to communicate between two or more
+  private network through a secure connection and safety.
 ---
 
 # Delete VPN

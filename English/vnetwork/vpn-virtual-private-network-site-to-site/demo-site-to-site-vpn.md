@@ -1,7 +1,7 @@
 ---
 description: >-
-  VPN Site to Site là một mô hình kết nối VPN dùng để liên kết hai hay nhiều
-  mạng riêng tư thông qua liên kết mã bảo mật và an toàn.
+  VPN Site-To-Site is a private connection to communicate between two or more
+  private network through a secure connection and safety.
 ---
 
 # Demo Site-to-Site VPN
@@ -10,8 +10,6 @@ Below is a demonstration of how to connect two LAN networks via the internet sec
 
 * Site A: VPC 10.1.0.0/16 with VPN server using PFsense of VNG Cloud Market Place.
 * Site B: VPC 10.200.0.0/16 with VPN server using VNG Cloud VPN Site-To-Site Service
-
-
 
 ## 1.    Create Remote Site VPN (using pfsens)
 
