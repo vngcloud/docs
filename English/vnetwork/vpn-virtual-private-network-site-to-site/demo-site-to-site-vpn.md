@@ -6,14 +6,16 @@ description: >-
 
 # Demo Site-to-Site VPN
 
-Below is a demonstration of how to connect two LAN networks via the internet secured by a VPN connection (two VPN at 2 site)
+Below is a demonstration of how to connect two LAN networks via the internet secured by a VPN connection (two VPNs at 2 sites)
 
 * Site A: VPC 10.1.0.0/16 with VPN server using PFsense of VNG Cloud Market Place.
 * Site B: VPC 10.200.0.0/16 with VPN server using VNG Cloud VPN Site-To-Site Service
 
-## 1.    Create Remote Site VPN (using pfsens)
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Demostration</p></figcaption></figure>
 
-### a.      Create pfsense server
+## 1.    Create a Remote Site VPN (using PFsense)
+
+### a.      Create PFsense server
 
 * Access link [https://marketplace.console.vngcloud.vn/overview](https://marketplace.console.vngcloud.vn/overview)
 * Click Launch
@@ -22,13 +24,13 @@ Below is a demonstration of how to connect two LAN networks via the internet sec
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>vMarket Placer - pfSense </p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Request Pfsense - Config Network</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Request Pfsense - Config Network</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Request Pfsense - Config Network</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Request Pfsense - Config Network</p></figcaption></figure>
 
-### b.    Access pfsense Dashboard
+### b.    Access PFsense Dashboard
 
-* Go to vserver page
+* Go to vServer page
 * Show detail Created Server and open new Url with IP Public https://\<FixedIp>.
 * Login with default user admin/pfsense
 
@@ -62,7 +64,7 @@ Below is a demonstration of how to connect two LAN networks via the internet sec
 
 <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-**-**          Access  to Assign Interface LAN 10.1.0.0/24. [**https://61.28.239.244/interfaces\_assign.php**](https://61.28.239.244/interfaces\_assign.php)
+**-**          Access to Assign Interface LAN 10.1.0.0/24. [**https://61.28.239.244/interfaces\_assign.php**](https://61.28.239.244/interfaces\_assign.php)
 
 <figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption><p>pfSense Interface Assignments - Add LAN Interface</p></figcaption></figure>
 
@@ -82,11 +84,11 @@ Below is a demonstration of how to connect two LAN networks via the internet sec
 
 <figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption><p>pfSense Firewall IPSec</p></figcaption></figure>
 
-## 2. Create Local Site VPN (using VNGCloud VPN)
+## 2. Create a Local Site VPN (using VNGCloud VPN)
 
 ### a. Create VPN
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>VNGCloud VPN creates</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>VNGCloud VPN creates</p></figcaption></figure>
 
 ### b. Detail VPN
 

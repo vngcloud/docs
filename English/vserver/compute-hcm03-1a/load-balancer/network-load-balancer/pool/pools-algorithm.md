@@ -6,7 +6,7 @@ The load balancing algorithm determines which member (server) is chosen for each
 
 1.  **Round Robin**
 
-    Round Robin is a simple algorithm that selects members (servers) in a sequential order. The Load Balancer starts with the first member in its list for the first request, then moves down the list in order, starting again at the top when it reaches the last member. ![](<../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+    Round Robin is a simple algorithm that selects members (servers) in a sequential order. The Load Balancer starts with the first member in its list for the first request, then moves down the list in order, starting again at the top when it reaches the last member. ![](<../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 2.  **Least Connections**
 
     Requests are directed to the server with the fewest active connections at the current time. This algorithm is considered dynamic, as it constantly tracks the number of active connections on each server.
