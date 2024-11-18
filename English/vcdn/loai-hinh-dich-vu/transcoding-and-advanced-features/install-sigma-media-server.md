@@ -20,6 +20,8 @@ that you want to use for your server. You also need to select an existing Server
 
 **Step 4:** Proceed **to payment** as normal resources on VNG Cloud.
 
+<figure><img src="../../../.gitbook/assets/image (308).png" alt=""><figcaption></figcaption></figure>
+
 **At this point, the vServer** system will initialize a Server corresponding to the configuration you selected. Please wait until the server creation is complete and continue with the following steps.
 
 {% include "../../../.gitbook/includes/untitled (1).md" %}
