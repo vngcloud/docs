@@ -16,7 +16,7 @@ Protocol Proxy là một protocol đặc thù cho phép Load Balanacer chuyển 
 
 **+** Cấu hình thêm tham số **proxy\_protocol** tại **server {}** block**:**
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 \+ Xác định Load Balancer IP nơi mình nhận traffic Proxy Protocol tại **server {}** block với cấu hình **set\_real\_ip\_from**
 
