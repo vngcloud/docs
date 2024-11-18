@@ -4,13 +4,13 @@
 
 **Line chart** is a type of chart used to display data changes over time. A line chart is created by plotting a series of points and connecting them with straight lines.
 
-<figure><img src="../../../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (55) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Widget Configuration
 
-<figure><img src="../../../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (56) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style
 

@@ -4,15 +4,15 @@
 
 * First, you access the Figma application, select the **App management** menu then select **the Credential tab:**
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FZRNS0qTtcF0qF74wXSlr%252Fimage.png%3Falt%3Dmedia%26token%3Df1d2d071-2dbf-4759-b2e0-a70b1745a0ca&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=bb9ed51c&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
 * Next, you enter **the Username** and select the corresponding permission **group** (here you group the **Sigma Livestream Full** permission ):
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F0kzsCs1F9obsluOgveq7%252Fimage.png%3Falt%3Dmedia%26token%3Dca1883a2-df48-458d-aa28-52b8acfc1ab4&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=2582b9dc&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
-* After you select **Submit , the Sigma** system will generate **a Username** and **Secret Key** . You need to save this password or download the **credential** file by selecting **Download as .env file** .
+* After you select **Submit , the Sigma** system will generate **a Username** and **Secret Key** . You need to save this password or download the **credential** file by selecting **Download as .env file**.
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FxUMiqevtVz602FMrutNi%252Fimage.png%3Falt%3Dmedia%26token%3Dc25d20a3-ed93-475b-939f-fe4852165efc&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a23935e&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (309).png" alt=""><figcaption></figcaption></figure>
 
 * After having **Username** and **Secret Key** , you use **Base64Encode** tool to create **token for Authorization** header with the following syntax:
 
@@ -22,7 +22,7 @@ Authorization: Basic Base64Encode(<Username>:<Secret Key>)
 
 * Finally, you get **App ID** information by selecting the **App management menu,** selecting the **General** tab , then you can see **App ID** information as shown below.
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FbRtqxsdqO1CemO72Hzqo%252Fimage.png%3Falt%3Dmedia%26token%3D98a3bd0b-6f9e-4678-abce-f718e453d3c9&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9ef4bd31&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (310).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. API Create live transcode channel <a href="#id-2.-api-tao-kenh-live-transcode" id="id-2.-api-tao-kenh-live-transcode"></a>
 

@@ -10,7 +10,7 @@
 
 #### **Implementation solution:**
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FLjEo5oooeUCuCbafXlg9%252Fimage.png%3Falt%3Dmedia%26token%3Dd1355722-1c5a-4a79-9b66-c03e0888dee1&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=317d28e7&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
 **Ingredients:**
 
@@ -37,59 +37,59 @@ First, you need to install Sigma Media Server following the steps [here](https:/
 
 **Step 1:** After successfully installing Sigma Media Server, access [https://portal.sigma.video/apps](https://portal.sigma.video/apps) with the email you previously registered to use the service.
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FVJd3YOTI1IjxOeJTOL3r%252Fimage.png%3Falt%3Dmedia%26token%3D6e752a0c-5155-41b2-9da6-f7482c5e27aa&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b90d8203&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2:** Select the **Product** drop-down menu and select **Media VOD**
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F2KoYqqKoeyC8EbTw6M6b%252Fimage.png%3Falt%3Dmedia%26token%3Df406d181-d71c-4702-a340-480a6994d5e7&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=374ad7a1&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3:** Continue to select the **VOD tab**
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FJ522aFAjJ0JcpOU7e7g3%252Fimage.png%3Falt%3Dmedia%26token%3D122b3174-d1db-4432-a676-52b670d72254&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=8077b6cf&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 **Step 4:** Select the **Add** button in the right corner to create a transcoding job
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FhCD7WH8RpxGXYmm8UA6o%252Fimage.png%3Falt%3Dmedia%26token%3Da7c9b882-1faa-4ad6-984e-52daa456605f&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=69f5ccd&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
 **Step 5:** Select a **server** to execute the transcoding job, by default the Sigma Media Server that you previously initialized on **vMarketPlace** will be selected.
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FQoCRaKpUnEIq62DV8rTF%252Fimage.png%3Falt%3Dmedia%26token%3D86125564-34b0-45ce-8a52-abc1ff97b0e9&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=48bf729d&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
 **Step 6:** Select the type of source file to transcode. You need to enter the URL [of](https://han01.vstorage.vngcloud.vn/v1/AUTH\_210ff69ad18d4bfa9920b165ef8ddef4/con\_01/big\_buck\_bunny\_720p\_30mb.mp4) the source file that has been uploaded to the S3 service. For example, with vStorage, the object URL will have a similar format: [https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_123456/cont\_01/pexels\_videos\_1390942%20(2160p).mp4 ](https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_bcd882dd104f40cb8e20f1cd6bb0b4c6/cont\_01/pexels\_videos\_1390942%20\(2160p\).mp4)**Note: you need to make the container/bucket public (Make Public) on vStorage or any S3 service so that Sigma can access this link.**
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FLHrxIlXg4xJg1QIAvTUU%252Fimage.png%3Falt%3Dmedia%26token%3Da178a111-53b6-4a75-8eb7-ebf047b3263f&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=ff4641c1&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
 **Step 7:** In the **Destination** section , select the output type **Third-party Storage** -> **Generic S3** to save the result file.
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FsDyYwmFzJXnR4RnoiNs0%252Fimage.png%3Falt%3Dmedia%26token%3Da5281d45-24a9-4dc7-a439-e3141b7e1839&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=6fd643ca&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 **Step 8** : Configure your S3 information
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FcTlbWARCAg2eVyM7pXqO%252Fimage.png%3Falt%3Dmedia%26token%3D1bfe96f0-20ca-42ce-8968-f11f93f32738&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=fdf9a3ad&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
 **Step 9:** Configure input **profiles**
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F2DWeKOU6yIV99tkqjKPB%252Fimage.png%3Falt%3Dmedia%26token%3D784c5dda-081f-45ad-a427-06807bbdb262&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=5097270c&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 **Step 10:** Configure output **profiles**
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fc6CBBYBj4CI6cQlyHuiX%252Fimage.png%3Falt%3Dmedia%26token%3Da9bc6a11-0bfa-415f-8cb9-eb308a022861&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=dde81225&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
 **Step 11:** In this scenario we will Select **HLS**
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fou1VfUv0efVfH795iRuF%252Fimage.png%3Falt%3Dmedia%26token%3Dd2823979-0cb7-4a94-a9b3-745c8ae9b437&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=1cdbed33&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
 **Step 12: Configure HLS** parameters
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F1B8IYdN9WWCBzXqAJugA%252Fimage.png%3Falt%3Dmedia%26token%3D0771da54-66a2-4045-a271-1c0a864b5f05&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=4f8bd7df&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
 
 **Step 13:** Click **Create Job** to start transcoding
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FBFhXO7KHunzX16Sloel4%252Fimage.png%3Falt%3Dmedia%26token%3Ddd42c435-806c-4dd6-929d-32180ceeecde&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=166aa4d8&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
 **Step 14** : Return to the VOD tab, we will see the processing %, or error messages if any of the created jobs.
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FiS1aJ3RgbdXVx724OrUo%252Fimage.png%3Falt%3Dmedia%26token%3Dedf94df5-f3ba-404b-8b36-240d79df0719&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b9e1e431&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
 
 ## Initialize and configure the vCDN service. <a href="#khoi-tao-va-cau-hinh-dich-vu-vcdn" id="khoi-tao-va-cau-hinh-dich-vu-vcdn"></a>
 
@@ -99,6 +99,6 @@ First, you need to install Sigma Media Server following the steps [here](https:/
 
 **Step 3 :** Select CDN **Origin** as **S3**
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FhCBUa9xErsljuG5pM2me%252Fimage.png%3Falt%3Dmedia%26token%3D6c2faebe-d83b-4e36-8b8d-de4bb50d6725&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=d9e2b83b&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 After the transcoding process is successful, you can access the resulting video using the following CDN link: <mark style="color:blue;">**https://\<CDN Domain>/sigma-vod/\<transcode\_job\_id>/master.m3u8**</mark>

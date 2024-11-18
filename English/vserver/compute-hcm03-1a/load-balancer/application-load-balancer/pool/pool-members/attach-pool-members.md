@@ -17,7 +17,7 @@ This guide will walk you through the process of adding members to a pool in your
 8. **Review Pool Members:** Review the list of pool members in the "Attached Servers & Instances" section.
 9. **Save Changes:** Click "Save" to finalize the pool member edits.
 
-<figure><img src="../../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Attaching/Updating Members as IP Addresses
 
@@ -35,7 +35,7 @@ In addition to attaching pool members through backend servers, you can also atta
    6. **Review Pool Members:** Review the list of pool members in the "Attached Servers & Instances" section.
    7. **Save Changes:** Click "Save" to finalize the pool member edits.
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Important Notes:**
 

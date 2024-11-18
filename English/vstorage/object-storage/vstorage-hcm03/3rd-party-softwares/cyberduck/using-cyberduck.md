@@ -26,7 +26,7 @@
 2. On the object you want to delete, right-click, then choose **Delete**.
 3. On the confirmation delete screen, proceed to select **Delete**.
 
-<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Advanced usecase <a href="#usingcyberduck-advancedusecase" id="usingcyberduck-advancedusecase"></a>
 
@@ -36,9 +36,9 @@
 2. For the object you want to share, right-click, then choose **Copy URL** if you want to copy the Presign URL or choose **Open URL** if you want to open the Presign URL directly in the browser.
 3. Choose one of the methods for the **Presign URL** that you prefer.
 
-<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
