@@ -46,7 +46,7 @@ Tài nguyên POC sinh ra nhằm mục đích hỗ trợ người dùng có thể
 
 * Khi bạn khởi tạo Cluster và chọn sử dụng ví POC, chúng tôi đã tự động tạo Control Plane, Node, Volume và Private Service Endpoint (nếu bạn chọn sử dụng) thông qua ví POC. Đối với các tài nguyên khác như
   * **PVC:** khi thực hiện khởi tạo qua yaml, bạn vui lòng thêm tham số `isPOC: "true"` vào file yaml này. Tham khảo ví dụ bên dưới.
-  * **LoadBalancer:** khi thực hiện khởi tạo qua yaml, bạn vui lòng thêm `annotation vks.vngcloud.vn/is-poc: "true"` vào file yaml này. Tham khảo ví dụ bên dưới.
+  * **LoadBalancer:** khi thực hiện khởi tạo qua yaml, bạn vui lòng thêm `annotation vks.vngcloud.vn/isPOC: "true"` vào file yaml này. Tham khảo ví dụ bên dưới.
 * Do các resource **Load Balancer** và **PVC** được quản lý thông qua YAML, sau khi Stop POC, nếu trong file YAML của bạn vẫn có tham số `isPOC : true`, trong trường hợp bạn xóa Load Balancer từ Portal vLB và xóa tham số`load-balancer-id` trong yaml, lúc này hệ thống sẽ tự động tạo lại các resource này thông qua ví POC. Để tạo Load Balancer và PVC khác bằng tiền thật, vui lòng thay đổi tham số isPOC thành false. (`isPOC : false`). Chúng tôi khuyến cáo bạn nên thực hiện điều chỉnh tham số này trước khi thực hiện Stop POC cho Cluster của bạn.
 {% endhint %}
 

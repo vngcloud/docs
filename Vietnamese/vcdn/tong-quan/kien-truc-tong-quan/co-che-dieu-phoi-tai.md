@@ -9,7 +9,7 @@
 
 Minh họa:
 
-<figure><img src="../../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
 
 Hệ thống vCDN Request Router sẽ quyết định gửi lại IP Server tốt nhất khả thi cho user tại thời điểm đó. Cụ thể Rules điều phối sẽ được thực hiện như sau (ưu tiên từ trên xuống dưới):
 
