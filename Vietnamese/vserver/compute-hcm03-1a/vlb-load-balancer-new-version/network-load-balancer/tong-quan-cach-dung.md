@@ -58,5 +58,3 @@ vLB Console là giao diện người dùng dựa trên web, cho phép bạn qu�
 * Sau khi hoàn tất khởi tạo thành công, hệ thống sẽ điều hướng người dùng đến trang danh sách Load Balancer, tại đây người dùng có thể theo dõi trạng thái khởi tạo Load Balancer từ **Creating (đang khởi tạo)** đến khi **Active (Khởi tạo thành công).**
 * Sau khi khởi tạo thành công, người dùng có thể truy cập vào trang chi tiết Load Balancer để quan sát và kiểm tra tính đúng đắn của Load Balancer.
 
-Trên đây là các hướng dẫn cơ bản trong việc khởi tạo Application Load Balancer một cách nhanh chóng nhất. Ngoài ra, còn có các cấu hình nâng cao cho từng nhu cầu sử dụng Load Balancer khác nhau. Cùng tìm hiểu chi tiết cách hoạt động cũng như các tính năng nâng cao của một Network Load Balancer thông qua chuỗi bài viết dưới đây:
-

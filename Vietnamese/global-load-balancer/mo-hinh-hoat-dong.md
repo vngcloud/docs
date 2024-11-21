@@ -2,7 +2,7 @@
 
 GLB là một công cụ quan trọng để đảm bảo hiệu suất và độ sẵn sàng của các ứng dụng web trên quy mô toàn cầu. Bằng cách phân phối lưu lượng đến các máy chủ phù hợp, GLB giúp giảm thiểu độ trễ, tăng cường khả năng phục hồi và cải thiện trải nghiệm người dùng. Dưới đây là ví dụ về mô hình hoạt động của GLB.
 
-<figure><img src="../.gitbook/assets/GLB.drawio.png" alt=""><figcaption><p>Mô hình hoạt động</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/GLB-Overview.drawio (1).png" alt=""><figcaption><p>Mô hình hoạt động</p></figcaption></figure>
 
 1. **Phân phối địa lý:** Bạn triển khai các máy chủ ứng dụng của mình ở nhiều vùng địa lý khác nhau (ví dụ: HCM-03, HAN-01)
 2. **Cấu hình GLB:** Bạn cần thiết lập một GLB để quản lý việc phân phối lưu lượng đến các máy chủ này. GLB sẽ theo dõi tình trạng của từng máy chủ và tình hình mạng.

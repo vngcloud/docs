@@ -1,2 +1,0 @@
-# Tạo Network GLB
-
