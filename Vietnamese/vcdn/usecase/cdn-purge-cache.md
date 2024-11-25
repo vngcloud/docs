@@ -32,7 +32,9 @@ Sau đây là mô tả chi tiết các bước thực hiện Purge Cache trên C
 
 &#x20;Chi tiết mỗi loại bạn vui lòng tham khảo hướng dẫn bên dưới:
 
-## 1.    Purge Cache By ALL.
+## Chi tiết
+
+### 1.    Purge Cache By ALL.
 
 Purge by ALL: sẽ xóa hết tất cả link (tất cả Cache của resources trên CDN).
 
@@ -56,7 +58,7 @@ Purge by ALL: sẽ xóa hết tất cả link (tất cả Cache của resources 
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-## 2.    Purge Cache By BEGIN
+### 2.    Purge Cache By BEGIN
 
 Purge by BEGIN: Sẽ xóa hết các resource đang được Cache ở CDN bắt đầu bằng ký tự nhập vào.
 
@@ -78,7 +80,7 @@ Purge by BEGIN: Sẽ xóa hết các resource đang được Cache ở CDN bắt
 
 &#x20;
 
-## 3.    Purge Cache By CONTAIN
+### 3.    Purge Cache By CONTAIN
 
 Purge by CONTAIN: Sẽ xóa hết các resource đang được Cache ở CDN có chuỗi ký tự nhập vào.
 
@@ -98,7 +100,7 @@ Purge by CONTAIN: Sẽ xóa hết các resource đang được Cache ở CDN có
 
 <figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-## 4.    Purge Cache By END.
+### 4.    Purge Cache By END.
 
 Purge by END: Sẽ xóa hết các resource đang được Cache ở vCDN kết thúc chuỗi ký tự nhập vào.
 
@@ -116,7 +118,7 @@ Purge by END: Sẽ xóa hết các resource đang được Cache ở vCDN kết 
 
 <figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-## 5.    Purge Cache By URI(s).
+### 5.    Purge Cache By URI(s).
 
 Purge by URI(s): Sẽ xóa đúng với link được chỉ định.
 
