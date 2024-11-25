@@ -33,7 +33,7 @@ description: >-
   * &#x20;**IKE Policy**: Cấu hình các config cho phase 1 của VPN IPSEC (Config tại 2 bên phải trùng nhau thì VPN mới hoạt động).
   * **IPsec Policy**: Cấu hình các config cho phase 2 của VPN IPSEC (Config tại 2 bên phải trùng nhau thì VPN mới hoạt động).
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (5).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Tại bên phải màn hình, xem tổng chi phí gói VPN đã chọn, sau đó nhấn chọn "<mark style="color:blue;">**Tạo mới kết nối VPN**</mark>" đề xác nhận và tiến hành thanh toán;
 
@@ -46,11 +46,11 @@ description: >-
 * Sau khi hệ thống xử lý xong thì trạng thái sẽ tự động chuyển thành "<mark style="color:blue;">**Active**</mark>".
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>VPN List</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (5).png" alt=""><figcaption><p>VPN List</p></figcaption></figure>
 
 **Bước 7:** Trên màn hình list VPN sẽ xuất hiện VPN vừa mới tạo,  click vào VPN name để vào trang detail.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>VPN Detail</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (5).png" alt=""><figcaption><p>VPN Detail</p></figcaption></figure>
 
 **Bước 8:** Tạo Route Rule để điều hướng các request đến Remote LAN CIDR đi qua VPN thông qua **Private Gateway IP** _(Detail Page)._
 
@@ -59,7 +59,7 @@ Truy cập vServer Router Tables để  thêm cấu hình điều hướng đế
 * Destination: Remote Private CIDR.
 * Target: Local Private Gateway.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>VPN Detail - Page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (5).png" alt=""><figcaption><p>VPN Detail - Page</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Update Route Table</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (5).png" alt=""><figcaption><p>Update Route Table</p></figcaption></figure>
 

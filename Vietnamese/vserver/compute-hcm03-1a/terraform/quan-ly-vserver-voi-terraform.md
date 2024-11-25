@@ -31,8 +31,8 @@ Sau khi cấp quyền IAM cho account cần sử dụng Terraform, bạn cần t
 
 Sau khi tải thư mục Example về máy, người dùng mở file [_**variable.tf**_](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/variable.tf) _(theo đường dẫn **/examples/variable.tf**),_ sau đó thay đổi các thông tin cần thiết như sau:
 
-* **Client\_id:** Lấy tại trang chủ IAM/ Service account**/ Tab Security credentials**
-* **Client\_secret:** Lấy khi khởi tạo Service account tại trang chủ **IAM** hoặc có thể reset lại tại trang IAM/ Service account**/ Tab Security credentials**
+* **Client\_id:** Lấy tại trang chủ IAM/ Service accoun&#x74;**/ Tab Security credentials**
+* **Client\_secret:** Lấy khi khởi tạo Service account tại trang chủ **IAM** hoặc có thể reset lại tại trang IAM/ Service accoun&#x74;**/ Tab Security credentials**
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -41,7 +41,7 @@ Sau khi tải thư mục Example về máy, người dùng mở file [_**variabl
 | `variable "client_id"` `{  type` `= string  default = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}variable "client_secret"` `{  type` `= string  default = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}` |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-**Bước 4:** Kiểm tra lại thông tin file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/main.tf) _**(**theo đường dẫn **examples/main.tf)**_**,** trường hợp này bạn cần xóa đi các dóng bên dưới:
+**Bước 4:** Kiểm tra lại thông tin file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/main.tf) _**(**&#x74;heo đường dẫn **examples/main.tf)**_**,** trường hợp này bạn cần xóa đi các dóng bên dưới:
 
 * _module "k8s" { source = "./modules/vng-cloud-k8s" }_
 * _module "vlb" { source = "./modules/vng-cloud-vlb" }_
@@ -49,8 +49,8 @@ Sau khi tải thư mục Example về máy, người dùng mở file [_**variabl
 _chỉ để lại:_
 
 * _module "vserver" {_\
-  _source = "./modules/vng-cloud-vserver"_\
-  _}_
+  &#xNAN;_&#x73;ource = "./modules/vng-cloud-vserver"_\
+  &#xNAN;_}_
 
 | `terraform {  required_providers {    vngcloud = {      source`  `= "vngcloud/vngcloud"      version = "1.1.0"    }  }  #  backend "s3" {  #    skip_credentials_validation = true  #    skip_metadata_api_check = true  #    skip_region_validation = true  #    bucket = "bucket-name"  #    endpoint = "`[`https://hcm01.vstorage.vngcloud.vn/`](https://hcm01.vstorage.vngcloud.vn/)`"  #    key = "terraform.tfstate"  #    region = "HCM01"  #    access_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  #    secret_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  #  }}` `provider "vngcloud"` `{  token_url        = "`[`https://iamapis.vngcloud.vn/accounts-api/v2/auth/token`](https://iamapis.vngcloud.vn/accounts-api/v2/auth/token)`"  client_id        = var.client_id  client_secret    = var.client_secret  vserver_base_url = "`[`https://hcm-3.api.vngcloud.vn/vserver/vserver-gateway`](https://hcm-3.api.vngcloud.vn/vserver/vserver-gateway)`"  vlb_base_url = "`[`https://hcm-3.api.vngcloud.vn/vserver/vlb-gateway`](https://hcm-3.api.vngcloud.vn/vserver/vlb-gateway)`"}` `module "vserver"` `{  source` `= "./modules/vng-cloud-vserver"}` |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -99,11 +99,11 @@ _chỉ để lại:_
 
 * **ssh\_key\_id**: chỉ định ssh key sẽ được inject vào vServer, bạn có thể lấy ở [{Tab SSH Keys}](https://hcm-3.console.vngcloud.vn/vserver/v-server/ssh-key), nếu chưa khởi tạo bất kì ssh key nào bạn có thể xem tại [{](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[T](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[rang tạo SSH key](../security/ssh-key-bo-khoa.md)[}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901):&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **security\_group\_id\_list**: chỉ định danh sách security group id cần gắn vào vServer, bạn có thể lấy ở [{Tab Security Groups}](https://hcm-3.console.vngcloud.vn/vserver/network/sec-group), nếu cần tạo thêm security group bạn có thể xem tại [{Trang tạo Security Group}](../security/security-groups.md)
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | `variable "ssh_key_id"` `{  type`    `= string  default = "ssh-b4fbf87a-d9bc-4f04-9ea1-39e086f443de"}variable "security_group_id_list"` `{  type`    `= list(string)  default = [    "secg-28e91c47-11b1-4cc1-8e24-dd174882708d"  ]}` |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -146,4 +146,4 @@ và chọn **YES** để thực hiện việc khởi tạo vServer thông qua Te
 
 **Bước 8**: Bạn có thể lên [Portal ](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)để xem Server đang được khởi tạo từ Terraform:
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -2,7 +2,7 @@
 
 ## Tổng quan
 
-Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên VNG Cloud. **Với Region HCM04, tại  một thời điểm **<mark style="color:red;">**bạn chỉ có thể sở hữu một Project**</mark>** và sử dụng chúng để tổ chức lưu trữ dữ liệu của bạn.**
+Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên VNG Cloud. **Với Region HCM04, tại  một thời điểm&#x20;**<mark style="color:red;">**bạn chỉ có thể sở hữu một Project**</mark>**&#x20;và sử dụng chúng để tổ chức lưu trữ dữ liệu của bạn.**
 
 ***
 
@@ -80,7 +80,7 @@ Bạn đã khởi tạo project với lượng quota ban đầu phù hợp với
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 2. Chọn checkbox tại project bạn muốn tăng giảm hạn mức và chọn biểu tượng <img src="../../../../.gitbook/assets/image (604).png" alt="" data-size="line">hoặc bạn cũng có thể chọn biểu tượng <img src="../../../../.gitbook/assets/image (605).png" alt="" data-size="line"> sau đó chọn Resize.
-3. Màn hình **Resize project** được hiển thị**.** Chọn **quota** lưu trữ mong muốn tăng thêm, **quota** lưu trữ bạn có thể tăng thêm hoặc giảm đi đến mức tối đa hoặc tối thiểu bằng **quota** lưu trữ mà gói lưu trữ cung cấp. Bạn không thể điều chỉnh **quota** lưu trữ nhỏ hơn hoặc vượt quá giá trị này.
+3. Màn hình **Resize project** được hiển th&#x1ECB;**.** Chọn **quota** lưu trữ mong muốn tăng thêm, **quota** lưu trữ bạn có thể tăng thêm hoặc giảm đi đến mức tối đa hoặc tối thiểu bằng **quota** lưu trữ mà gói lưu trữ cung cấp. Bạn không thể điều chỉnh **quota** lưu trữ nhỏ hơn hoặc vượt quá giá trị này.
 4. Chọn **Resize project.**
 5. Chọn **Thanh toán** sau khi kiểm tra giỏ hàng và hình thức thanh toán.
 6. Chọn **Tiếp tục thanh toán** và thực hiện thanh toán sau khi chọn phương thức thanh toán phù hợp.
@@ -140,7 +140,7 @@ Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (607).png" alt="" data-size="line"> tại **project** bạn muốn thực hiện thiết lập gia hạn tự động. Chọn Enable Auto-renew.
-3. Màn hình **Enable Auto-renew** được hiển thị**.** Chọn **Period** gia hạn mà bạn mong muốn.&#x20;
+3. Màn hình **Enable Auto-renew** được hiển th&#x1ECB;**.** Chọn **Period** gia hạn mà bạn mong muốn.&#x20;
 4. Chọn **OK.**
 
 Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ mới sau khi gia hạn project sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
@@ -153,7 +153,7 @@ Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (609).png" alt="" data-size="line"> tại **project** bạn muốn thực hiện tắt thiết lập gia hạn tự động. Chọn **Disable Auto-renew.**
-3. Màn hình **Disable Auto-renew** được hiển thị**.**&#x20;
+3. Màn hình **Disable Auto-renew** được hiển th&#x1ECB;**.**&#x20;
 4. Chọn **OK.**
 
 Sau khi bạn thực hiện thành công các bước trên, tính năng gia hạn tự động cho project đã được tắt.

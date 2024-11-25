@@ -12,7 +12,7 @@ Identity Provider là tính năng cho phép bạn quản lý tài nguyên trên 
 
 * **Doanh nghiệp A** có 10 nhân viên, được quản lý thông qua tài khoản microsoft với tên **nhanvien1 → nhanvien10.**
 * **Doanh nghiệp A** được cơ cấu thành 3 phòng ban, bao gồm: **Phòng Hành Chính - Kế Toán, Phòng IT và Phòng Kinh Doanh.**
-* **Doanh nghiệp A** có sử dụng dịch vụ điện toán đám mây của VNG Cloud**,** bao gồm**: vServer, vStorage và vMonitor.**
+* **Doanh nghiệp A** có sử dụng dịch vụ điện toán đám mây của VNG Clou&#x64;**,** bao gồ&#x6D;**: vServer, vStorage và vMonitor.**
 
 **Nhu cầu**
 

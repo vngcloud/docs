@@ -12,7 +12,7 @@ Chức năng “Pagerules” sẽ giúp khách hàng tối ưu các điều ki�
 
 Tại mục số (1), nhập “URL pattern” cần áp dụng pagerule, hỗ trợ kiểu khai báo “\*” đại diện cho một chuỗi nhiều ký tự. Ví dụ: /trang\_landing\_cu.html.
 
-Các hành động khi thỏa điều kiện**:** Mỗi Rules khi thỏa điệu kiện đúng URI được request sẽ có thể tùy chọn thực thi một trong khác hành động sau:
+Các hành động khi thỏa điều kiệ&#x6E;**:** Mỗi Rules khi thỏa điệu kiện đúng URI được request sẽ có thể tùy chọn thực thi một trong khác hành động sau:
 
 * Always Use HTTPS&#x20;
 * Auto Minify&#x20;

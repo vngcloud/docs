@@ -49,7 +49,7 @@ Tiếp theo bạn cần Tạo nhóm người (Group) dùng dựa trên vai trò 
 1. Mở tab Group tại [https://hcm-3.console.vngcloud.vn/iam/user-groups](https://hcm-3.console.vngcloud.vn/iam/user-groups).
 2. Chọn **Create a group.**
 3. Nhập tên Group vào mục **Name** (Tên phải dài từ 1 đến 50 ký tự và chỉ có thể bao gồm các chữ cái, số, dấu gạch dưới (\_), dấu chấm (.), dấu gạch nối (-) và dấu cách), sau đó nhập thông tin ghi chú tại mục **Description.**
-4. Chuyển sang bước kế tiếp và gán chính sách (Policy) phù hợp cho nhóm người dùng tại mục **Policy (**Nếu chưa có Policy cần tạo Policy theo hướng dẫn **Bước 5)**, sau đó chỉ định người dùng thích hợp vào nhóm tại mục **User**, với các User được thêm vào nhóm sẽ có quyền trên Policy đã chọn trong Group
+4. Chuyển sang bước kế tiếp và gán chính sách (Policy) phù hợp cho nhóm người dùng tại mục **Policy (**&#x4E;ếu chưa có Policy cần tạo Policy theo hướng dẫn **Bước 5)**, sau đó chỉ định người dùng thích hợp vào nhóm tại mục **User**, với các User được thêm vào nhóm sẽ có quyền trên Policy đã chọn trong Group
 
 ***
 

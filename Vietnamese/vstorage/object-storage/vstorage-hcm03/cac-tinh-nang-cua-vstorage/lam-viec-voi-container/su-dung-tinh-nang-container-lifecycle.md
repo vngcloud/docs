@@ -30,7 +30,7 @@ Trong đó:&#x20;
 3. Chọn biểu tượng <img src="../../../../../.gitbook/assets/image (390).png" alt="" data-size="line">hoặc chọn biểu tượng <img src="../../../../../.gitbook/assets/image (391).png" alt="" data-size="line">tại **container** bạn muốn thực hiện sử dụng tính năng container lifecycle và chọn <img src="../../../../../.gitbook/assets/image (392).png" alt="" data-size="line">.
 4. Màn hình **Lifecycle** được hiển thị. Chọn **Tạo một quy tắc lifecycle**.
 5. Nhập **Tên quy tắc Lifecycle**. Tên quy tắc Lifecycle mà chúng tôi cho phép bạn nhập bao gồm các chữ cái (a-z, A-Z, 0-9, '\_', '-'). Độ dài **Tên quy tắc Lifecycle** của bạn phải nằm trong khoảng từ 5 đến 50.
-6. Chọn **Loại quy tắc** và nhập **Mô tả quy tắc** nếu có**.** Chúng tôi cung cấp cho bạn 2 loại quy tắc bao gồm**:**&#x20;
+6. Chọn **Loại quy tắc** và nhập **Mô tả quy tắc** nếu c&#xF3;**.** Chúng tôi cung cấp cho bạn 2 loại quy tắc bao gồ&#x6D;**:**&#x20;
    1. Transition: Rule hỗ trợ di chuyển object giữa các storage class.&#x20;
    2. Expiration: Rule hỗ trợ xóa các object theo điều kiện ràng buộc.&#x20;
 7. Nhập **Bộ lọc**. Bộ lọc này được áp dụng cho một lifecycle rule cụ thể. **Mỗi lifecycle rule chỉ được đặt 1 bộ lọc duy nhất, nếu bạn muốn áp dụng quy tắc lifecycle mà bạn đang tạo lên tất cả các object thuộc container này, hãy nhập giá trị '\*' vào trường thông tin này.** Hoặc bạn có thể lọc các object mong muốn áp dụng lifecycle rule thông qua các phương thức sau:
@@ -90,11 +90,7 @@ Expiration rule sẽ xóa các object thuộc container theo các điều kiện
 
 * **Expire phiên bản hiện tại của các object (Expire current version of objects):** sử dụng khi bạn muốn thiết lập xóa object thuộc container gốc đang thiết lập lifecycle rule sau một khoảng thời gian kể từ ngày object tồn tại trên hệ thống vStorage. Rule này áp dụng cho việc xóa object ở các container không phải versioning. Khi bạn chọn thiết lập này, bạn cần nhập số ngày kể từ khi khởi tạo object.
 
-<!---->
-
-* **Xóa vĩnh viễn các phiên bản trước đó (Permanently delete previous versions):** sử dụng khi bạn muốn thiết lập xóa object thuộc container version tương ứng của container gốc đang thiết lập lifecycle rule sau một khoảng thời gian kể từ lúc object version được sinh ra. Rule này áp dụng cho việc xóa object ở container versioning. Khi bạn chọn thiết lập này, bạn cần nhập số ngày kể từ khi object trở thành phiên bản cũ (tức object tồn tại trong container version).
-
-<!---->
+- **Xóa vĩnh viễn các phiên bản trước đó (Permanently delete previous versions):** sử dụng khi bạn muốn thiết lập xóa object thuộc container version tương ứng của container gốc đang thiết lập lifecycle rule sau một khoảng thời gian kể từ lúc object version được sinh ra. Rule này áp dụng cho việc xóa object ở container versioning. Khi bạn chọn thiết lập này, bạn cần nhập số ngày kể từ khi object trở thành phiên bản cũ (tức object tồn tại trong container version).
 
 * **Expire các object được đánh dấu là xóa (Expire marked-deleted objects):** sử dụng khi bạn muốn thiết lập xóa các tệp tin delete marked sinh ra trong các container version. (Tệp tin delete marked là các tệp tin sinh ra khi bạn thực hiện xóa object thuộc container gốc mà container gốc này đã được bật versioning). Rule này áp dụng cho việc xóa object ở container versioning.
 

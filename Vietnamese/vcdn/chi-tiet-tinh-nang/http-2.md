@@ -10,7 +10,7 @@ Hỗ trợ HTTP/2: Hỗ trợ chuẩn giao tiếp HTTP/2 khi bật chế độ c
 
 &#x20;   _Chức năng \[Add New] sẽ chuyển tới trang Upload Certificate._
 
-Hỗ trợ HSTS**:** Hỗ trợ chế độ bảo mật HSTS. Khách hàng có thể tùy chọn chế độ này khi tạo CDN hoặc chỉnh sửa CDN đã tạo.  &#x20;
+Hỗ trợ HST&#x53;**:** Hỗ trợ chế độ bảo mật HSTS. Khách hàng có thể tùy chọn chế độ này khi tạo CDN hoặc chỉnh sửa CDN đã tạo.  &#x20;
 
 <figure><img src="../../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
 

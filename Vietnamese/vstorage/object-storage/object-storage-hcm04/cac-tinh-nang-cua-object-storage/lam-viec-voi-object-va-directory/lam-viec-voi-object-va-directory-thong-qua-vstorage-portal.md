@@ -117,7 +117,7 @@ Hiện tại chúng tôi đang hỗ trợ 8 loại key metadata mặc định ba
 
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 
-2\. Chọn **project, bucket** sau đó chọn các **object** bạn muốn thực hiện xóa**.**
+2\. Chọn **project, bucket** sau đó chọn các **object** bạn muốn thực hiện xó&#x61;**.**
 
 2\. Chọn biểu tượng **Action** sau đó chọn **Delete**
 

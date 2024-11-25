@@ -26,5 +26,5 @@ Người dùng có thể kích hoạt backup plan (backup server) cùng với vi
 3.  Tại trang tạo mới Server bạn có thể tích chọn vào ô **Enable Backup** tại mục **Other settings.**&#x20;
 
     <figure><img src="../../../.gitbook/assets/image (766).png" alt=""><figcaption></figcaption></figure>
-4. Sau đó khi Server được tạo**,** một backup plan (backup server) sẽ được tạo kèm với backup policy và backup location mặc định. Có nghĩa, việc tạo bản backup và vị trí lưu trữ đối với server này sẽ phụ thuộc vào backup policy và backup location mặc định. Bạn có thể tùy ý thay đổi backup policy và backup location sau đó.
+4. Sau đó khi Server được tạ&#x6F;**,** một backup plan (backup server) sẽ được tạo kèm với backup policy và backup location mặc định. Có nghĩa, việc tạo bản backup và vị trí lưu trữ đối với server này sẽ phụ thuộc vào backup policy và backup location mặc định. Bạn có thể tùy ý thay đổi backup policy và backup location sau đó.
 

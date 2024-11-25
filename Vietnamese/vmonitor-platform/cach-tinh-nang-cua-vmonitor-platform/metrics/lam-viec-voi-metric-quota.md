@@ -13,7 +13,7 @@ Một Metric quota là một thuật ngữ trên vMonitor Platform thể hiện 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn **Quota & Usage**.
 3. Chọn **Buy metric quota.**
-4. Chọn **Class** mà bạn có nhu cầu sử dụng**.** Chúng tôi cung cấp cho bạn chọn 1 trong 2 class bao gồm: Basic, Pro.
+4. Chọn **Class** mà bạn có nhu cầu sử dụn&#x67;**.** Chúng tôi cung cấp cho bạn chọn 1 trong 2 class bao gồm: Basic, Pro.
 5. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Nếu bạn chọn class **Pro**, bạn có thể lựa chọn số lượng host mong muốn bằng cách kéo thả hoặc nhập con số resources bạn mong muốn tại ô Number of resources. dụng. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Metric Quota Class](../../vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/metric-quota-class.md)
 6. Chọn **Buy Metric Quota**.
 7. Chọn **Chu kỳ** nếu bạn là người dùng trả trước. Chúng tôi cung cấp các chu kỳ trả trước bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng.
@@ -44,7 +44,7 @@ Sau khi bạn khởi tạo Metric quota, bạn có thể xem thông tin gói Met
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục **Metric.**
-4. Tại gói Metric quota đang sử dụng, chọn biểu tượng ![](http://docs.vngcloud.vn/download/thumbnails/49650622/image2024-2-28\_22-39-59.png?version=1\&modificationDate=1709134800646\&api=v2) sau đó chọn **Renew**.
+4. Tại gói Metric quota đang sử dụng, chọn biểu tượng ![](http://docs.vngcloud.vn/download/thumbnails/49650622/image2024-2-28_22-39-59.png?version=1\&modificationDate=1709134800646\&api=v2) sau đó chọn **Renew**.
 5. Chọn **Renew**.
 6. Lựa chọn thời gian mong muốn gia hạn tại cột Period. Khi bạn thực hiện chọn period, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ sử dụng mới và tổng số tiền bạn cần chi trả cho việc gia hạn **gói Metric quota**.
 7. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Metric quota** sẽ được gia hạn.
@@ -60,7 +60,7 @@ Cách tính chi phí gia hạn cho mỗi gói Metric quota được chúng tôi 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục **Metric**.
-4. Tại gói Metric quota đang sử dụng, chọn biểu tượng![](http://docs.vngcloud.vn/download/thumbnails/49650622/image2024-2-28\_22-39-59.png?version=1\&modificationDate=1709134800646\&api=v2) sau đó chọn **Resize**.
+4. Tại gói Metric quota đang sử dụng, chọn biểu tượng![](http://docs.vngcloud.vn/download/thumbnails/49650622/image2024-2-28_22-39-59.png?version=1\&modificationDate=1709134800646\&api=v2) sau đó chọn **Resize**.
 5. Chọn **Metric quota class** mới mà bạn muốn nâng cấp. Nếu gói metric quota của bạn đang ở class Basic thì bạn có thể nâng cấp nó lên class Pro. Nếu gói metric quota của bạn đang ở gói Pro thì bạn có thể nâng cấp nó lên cấu hình cao hơn trong cùng class.&#x20;
 6. Chọn **Resize.**
 7. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Metric quota** sẽ được tăng hạn mức.

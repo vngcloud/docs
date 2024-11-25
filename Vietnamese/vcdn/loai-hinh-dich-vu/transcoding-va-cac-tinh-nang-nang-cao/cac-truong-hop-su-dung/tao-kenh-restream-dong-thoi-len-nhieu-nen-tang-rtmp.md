@@ -42,11 +42,11 @@
 
 **Bước 9:** Tiếp theo, bạn cấu hình các luồng nhận stream mà bạn mong muốn stream tới
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 10:** Nhập thông tin **RTMP** sau đó nhấn **Submit**
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Tương tự như trên, quý khách có thể stream đồng thời tới nhiều RTMP khác bằng cách thêm cấu hình tại mục Target.**
 

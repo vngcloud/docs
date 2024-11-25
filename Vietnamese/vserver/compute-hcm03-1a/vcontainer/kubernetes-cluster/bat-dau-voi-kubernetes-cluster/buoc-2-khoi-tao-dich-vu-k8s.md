@@ -42,6 +42,6 @@ Chủ đề này cung cấp thông tin tổng quan về các tùy chọn khả d
    * **Loại Network, Chế độ Encapsulation** được tự chọn mặc định bởi hệ thống và bạn không thể thay đổi chúng, tuy nhiên bạn có thể nhập lại thông số **Calico CIDR** (lưu ý IP phải là riêng tư và có thể chọn theo các tùy chọn sau (10.0.0.0 - 10.255.0.0 / 172.16.0.0 - 172.24.0.0 / 192.168.0.0)
    * **Subnets** – Theo mặc định, tất cả các mạng con khả dụng trong VPC được chỉ định trong trường trước đó sẽ được chọn ngẫu nhiên ở thứ tự đầu tiên, bạn có thể chọn lại Subnet khác, tuy nhiên chỉ được chọn duy nhất 1.
    * SSH keys - để Import vô Kubernetes trong quá trình khởi tạo (Nhấp vào [**đây**](../../../security/ssh-key-bo-khoa.md) để xem hướng dẫn tạo SSH Key)
-8. Sau khi điền các thông tin cần thiết để khởi tạo K8S, cần xem lại tóm tắt các thông tin thanh toán tại tab **Summary** phía bên trái màn hình và thông tin thanh toán chi tiết các mục tại tab **Item list,** nếu cần hay thực hiện thay đổi**.** Khi bạn đã hài lòng hãy chọn **Tạo Kubernetes Cluster** để xác nhận khởi tạo Cluster của bạn. Trường Trạng thái hiển thị **Creating** khi Cluster được cung cấp.
+8. Sau khi điền các thông tin cần thiết để khởi tạo K8S, cần xem lại tóm tắt các thông tin thanh toán tại tab **Summary** phía bên trái màn hình và thông tin thanh toán chi tiết các mục tại tab **Item list,** nếu cần hay thực hiện thay đổ&#x69;**.** Khi bạn đã hài lòng hãy chọn **Tạo Kubernetes Cluster** để xác nhận khởi tạo Cluster của bạn. Trường Trạng thái hiển thị **Creating** khi Cluster được cung cấp.
 
 \

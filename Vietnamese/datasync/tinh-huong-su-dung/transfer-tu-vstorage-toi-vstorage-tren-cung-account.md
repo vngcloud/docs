@@ -41,7 +41,7 @@ Giả sử tôi đang sử dụng vStorage, nơi lưu trữ dữ liệu chính c
 
 **Bước 3:** Nhập **Basic configuration,** bao gồm:&#x20;
 
-1. Nhập **Job name.**Ví dụ: Transfercungaccount
+1. Nhập **Job name.**&#x56;í dụ: Transfercungaccount
 2. Chọn **Source Type** là vStorage.
 
 **Bước 4:** Nhập **Source configuration**, bao gồm:&#x20;

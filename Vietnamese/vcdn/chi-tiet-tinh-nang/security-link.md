@@ -28,7 +28,7 @@ Trong đó:&#x20;
     * Ví dụ: [http://abcxyz.vcdn.cloud/cb0a229fa7a81c219c0c0f964f9b6e68/1603691495000/test/index.m3u8](http://abcxyz.vcdn.cloud/cb0a229fa7a81c219c0c0f964f9b6e68/1603691495000/test/index.m3u8)
   * **SBD**:
     * **URL Format**: http(s)://\<domain>/\<token>/\<expiredTime>/\<uri>
-    * **\<token>**: md5(\<clientIP>**:<**Passphare>**:**\<exiredTime>**:**\<filePath>)
+    * **\<token>**: md5(\<clientIP>**:<**&#x50;assphare>**:**\<exiredTime>**:**\<filePath>)
     * **\<expiredTime>**: Thời gian epochtime hết hạn của URL, tính bằng seconds
     * **\<filePath>:/path/to/media**/xxx.\[m3u8|ts|mpd|dash] (tức là \<uri> bỏ đi phần xxx.\[m3u8|ts|mpd|dash], trường hợp ví dụ này sẽ là: /path/to/media)
     * **\<ClientIP>**: IP của client được cấp phép truy cập vào nội dung, chỉ cung cấp trong đường hợp bạn đã chọn bật "Include IP" trong cấu hình của dịch vụ CDN

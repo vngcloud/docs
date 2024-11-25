@@ -7,9 +7,9 @@
   * **Governance mode (coming soon)**: chỉ những người dùng có quyền đặc biệt (có quyền ByPassGovernance), chẳng hạn như người dùng root hoặc S3 Key không bật Restriction by IAM mới có thể xóa hoặc ghi đè object.
 * **Legal Hold:** ngăn chặn việc xóa và ghi đè object version vô thời hạn tới khi nào người dùng disable. Mode này hoạt động độc lập với Retention period. Người dùng có quyền PutObjectLegalHold có thể thực hiện thêm hoặc remove legal hold cho object.
 
-Để thiết lập Object Locked cho một bucket bằng S3 Browser, khi khởi tạo một bucket mới, bạn cần chọn phương án **Enable S3 Objected Lock. **<mark style="color:red;">**Hãy nhớ rằng bạn sẽ không thể bật Object Lock cho bucket đã tồn tại.**</mark>
+Để thiết lập Object Locked cho một bucket bằng S3 Browser, khi khởi tạo một bucket mới, bạn cần chọn phương án **Enable S3 Objected Lock.&#x20;**<mark style="color:red;">**Hãy nhớ rằng bạn sẽ không thể bật Object Lock cho bucket đã tồn tại.**</mark>
 
-<figure><img src="../../../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 Sau khi bucket đã được tạo thành công, để cấu hình thông số cụ thể cho tính năng object lock, vui lòng làm theo các bước bên dưới:&#x20;
 

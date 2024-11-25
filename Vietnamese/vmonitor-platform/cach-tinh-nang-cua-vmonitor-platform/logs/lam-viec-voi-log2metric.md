@@ -46,7 +46,7 @@ Các quy tắc sau áp dụng cho việc đặt tên metric trong vStorage:
 
 6\. Chọn **Tạo mới**. **Metric** được tạo ra với metric name và **log** dựa trên điều kiện tạo mới mà bạn đã chọn/ nhập. Khi trạng thái của log2metric là **ACTIVE**, lúc này bạn có thể tiếp tục sử dụng **metric** tạo ra này tại [Dashboard](../dashboard/) và [Metric Alarm](../alarm/metric-alarm.md).
 
-Các **điểm dữ liệu** cho Log2metric vừa tạo được định kỳ tạo ra trong khoảng thời gian 60s**.** Bạn có thể tạo nhiều **metric** cho một **log project** với các **metric name** khác nhau. Trong lần đầu tiên khởi tạo metric từ log, tiến trình khởi tạo có thể sẽ mất một chút thời gian do chúng tôi cần thiết lập nhiều cấu hình cần thiết. Đừng lo lắng vì từ các lần khởi tạo metric tiếp theo, tiến trình này sẽ nhanh hơn rất nhiều.
+Các **điểm dữ liệu** cho Log2metric vừa tạo được định kỳ tạo ra trong khoảng thời gian 60&#x73;**.** Bạn có thể tạo nhiều **metric** cho một **log project** với các **metric name** khác nhau. Trong lần đầu tiên khởi tạo metric từ log, tiến trình khởi tạo có thể sẽ mất một chút thời gian do chúng tôi cần thiết lập nhiều cấu hình cần thiết. Đừng lo lắng vì từ các lần khởi tạo metric tiếp theo, tiến trình này sẽ nhanh hơn rất nhiều.
 
 ***
 

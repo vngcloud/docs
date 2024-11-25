@@ -32,7 +32,7 @@ Bạn có thể thêm, xóa và sửa đổi các Route trong Route table của 
 1. Mở trang chủ vServer tại: [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview).
 2. Tại thành menu điều hướng, chọn **Tab Network/ Route table.**
 3. Chọn một Route table, nhấn **Chỉnh sửa Routes.**
-4.  Sau đó tại phần thêm mới **Route** hãy nhập vào các thông tin bên dưới**:**\
+4.  Sau đó tại phần thêm mới **Route** hãy nhập vào các thông tin bên dướ&#x69;**:**\
 
 
     | Destination      | `Target`      |

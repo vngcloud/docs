@@ -40,7 +40,7 @@ Giả sử tôi đang sử dụng Amazon S3 làm nơi lưu trữ dữ liệu, hi
 
 **Bước 3:** Nhập **Basic configuration,** bao gồm:&#x20;
 
-1. Nhập **Job name.**Ví dụ: Transfer from S3
+1. Nhập **Job name.**&#x56;í dụ: Transfer from S3
 2. Chọn **Source Type** là Amazon S3.
 
 **Bước 4:** Nhập **Source configuration**, bao gồm:&#x20;

@@ -9,7 +9,7 @@ Thực hiện mua Metric Quota theo các bước bên dưới:
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn **Quota & Usage**.
 3. Chọn **Buy metric quota.**
-4. Chọn **Class** mà bạn có nhu cầu sử dụng**.** Chúng tôi cung cấp cho bạn chọn 1 trong 2 class bao gồm: Basic, Pro.
+4. Chọn **Class** mà bạn có nhu cầu sử dụn&#x67;**.** Chúng tôi cung cấp cho bạn chọn 1 trong 2 class bao gồm: Basic, Pro.
 5. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Nếu bạn chọn class **Pro**, bạn có thể lựa chọn số lượng host mong muốn bằng cách kéo thả hoặc nhập con số resources bạn mong muốn tại ô Number of resources. dụng. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Metric Quota Class](../vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/metric-quota-class.md).
 6. Chọn **Buy Metric Quota**.
 7. Chọn **Chu kỳ** nếu bạn là người dùng trả trước. Chúng tôi cung cấp các chu kỳ trả trước bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng.
@@ -22,7 +22,7 @@ Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai
 
 ### Bước 2: Khởi tạo Service Account <a href="#batdauvoimetrics-buoc2-khoitaoserviceaccount" id="batdauvoimetrics-buoc2-khoitaoserviceaccount"></a>
 
-**Tạo Service Account và gắn policy: **<mark style="color:red;">**vMonitorMetricPush**</mark>** để có đủ quyền đẩy Metric về vMonitor (Có thể bỏ qua bước này nếu đã tạo trước đó)**
+**Tạo Service Account và gắn policy:&#x20;**<mark style="color:red;">**vMonitorMetricPush**</mark>**&#x20;để có đủ quyền đẩy Metric về vMonitor (Có thể bỏ qua bước này nếu đã tạo trước đó)**
 
 Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts)
 

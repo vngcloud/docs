@@ -19,8 +19,8 @@ _apt install -y cephadm_\
 ·         In CentOS Stream:
 
 _dnf search release-ceph_\
-_dnf install --assumeyes centos-release-ceph-quincy_\
-_dnf install --assumeyes cephadm_
+&#xNAN;_&#x64;nf install --assumeyes centos-release-ceph-quincy_\
+&#xNAN;_&#x64;nf install --assumeyes cephadm_
 
 Step3: Create cephadmin user, pull ceph component images
 
@@ -84,7 +84,7 @@ cephadm shell lsmcli ldl
 
 &#x20;
 
-![](file:///C:/Users/LAP14997-local/AppData/Local/Packages/oice\_16\_974fa576\_32c1d314\_195d/AC/Temp/msohtmlclip1/01/clip\_image002.png)
+![](file:///C:/Users/LAP14997-local/AppData/Local/Packages/oice_16_974fa576_32c1d314_195d/AC/Temp/msohtmlclip1/01/clip_image002.png)
 
 &#x20;
 
@@ -93,7 +93,7 @@ cephadm shell lsmcli ldl
 
 &#x20;
 
-![](file:///C:/Users/LAP14997-local/AppData/Local/Packages/oice\_16\_974fa576\_32c1d314\_195d/AC/Temp/msohtmlclip1/01/clip\_image004.png)
+![](file:///C:/Users/LAP14997-local/AppData/Local/Packages/oice_16_974fa576_32c1d314_195d/AC/Temp/msohtmlclip1/01/clip_image004.png)
 
 ·         Apply osd spec
 
@@ -101,7 +101,7 @@ _ceph orch apply -i osd\_spec.yaml_
 
 &#x20;
 
-![](file:///C:/Users/LAP14997-local/AppData/Local/Packages/oice\_16\_974fa576\_32c1d314\_195d/AC/Temp/msohtmlclip1/01/clip\_image005.png)
+![](file:///C:/Users/LAP14997-local/AppData/Local/Packages/oice_16_974fa576_32c1d314_195d/AC/Temp/msohtmlclip1/01/clip_image005.png)
 
 &#x20;
 

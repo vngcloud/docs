@@ -33,7 +33,7 @@ Tổ chức có nhiều văn phòng hoặc chi nhánh và muốn xây dựng k�
 {% endtab %}
 
 {% tab title="Ứng dụng Đòi hỏi Băng thông Lớn" %}
-Các ứng dụng yêu cầu băng thông lớn, chẳng hạn như ứng dụng video trực tuyến hoặc dự án khoa học tính toán, thường sử dụng Interconnect để có được băng thông cao và đáng tin cậy hơn so với Internet công cộng**.**
+Các ứng dụng yêu cầu băng thông lớn, chẳng hạn như ứng dụng video trực tuyến hoặc dự án khoa học tính toán, thường sử dụng Interconnect để có được băng thông cao và đáng tin cậy hơn so với Internet công cộn&#x67;**.**
 {% endtab %}
 
 {% tab title="Thiết lập hệ thống mạng kết hợp" %}

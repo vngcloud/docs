@@ -46,7 +46,7 @@ Từ đó đồng nghĩa với việc hệ thống mạng kết nối với nhau
 
 
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Sơ đồ kết nối cơ bản giữa hai site bằng đường IPsec VPN</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (5).png" alt=""><figcaption><p>Sơ đồ kết nối cơ bản giữa hai site bằng đường IPsec VPN</p></figcaption></figure>
 
 ***
 

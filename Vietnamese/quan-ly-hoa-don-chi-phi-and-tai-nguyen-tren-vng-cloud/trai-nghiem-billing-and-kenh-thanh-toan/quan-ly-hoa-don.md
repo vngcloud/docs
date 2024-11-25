@@ -32,7 +32,7 @@ Hóa đơn được khởi tạo trong các trường hợp sau:
 
 ***
 
-**Thông tin trên hóa đơn** bao gồm các thông tin chính tương ứng với 1 tài nguyên cụ thể**:**
+**Thông tin trên hóa đơn** bao gồm các thông tin chính tương ứng với 1 tài nguyên cụ th&#x1EC3;**:**
 
 * Mã hóa đơn
 * Ngày tạo hóa đơn

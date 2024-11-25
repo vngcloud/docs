@@ -28,7 +28,7 @@ Sau khi bạn thiết lập thành công Metric Agent trên Server hoặc bạn 
 
 <figure><img src="../../../.gitbook/assets/image (145).png" alt="" width="563"><figcaption></figcaption></figure>
 
-* Trong đó**:**
+* Trong đ&#xF3;**:**
   * **Metadata**
     * Unit: đơn vị số liệu của metric. Bạn có thể chỉnh sửa đơn vị tính này về một trong các giá trị mà chúng tôi cung cấp bao gồm: %, bytes, bytes/s, MB, ms, nanosecond, requests/s, seconds, short, short/ms.
     * Description: mô tả ý nghĩa hoặc đặc điểm của metric.

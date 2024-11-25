@@ -25,4 +25,4 @@ Bạn chỉ có thể khôi phục ổ đĩa ảo với bản Snapshot của Dat
 
 1. Mở bảng điều khiển vServer tại [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
 2. Trong ngăn điều hướng, chọn **Snapshot**.
-3. Chọn Snapshot của bản Data Volume tại trang danh sách rồi chọn **Hành động**, nhấn Rollback Volume**.**
+3. Chọn Snapshot của bản Data Volume tại trang danh sách rồi chọn **Hành động**, nhấn Rollback Volum&#x65;**.**

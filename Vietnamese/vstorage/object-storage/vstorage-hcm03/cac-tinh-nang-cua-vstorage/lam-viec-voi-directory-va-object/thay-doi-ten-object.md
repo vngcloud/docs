@@ -8,9 +8,9 @@ Bạn cũng có thể thay đổi tên của object mà bạn đã tải lên m�
 {% tab title=" Sử dụng vStorage Portal" %}
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 
-2\. Chọn **project, container** sau đó chọn các **object** bạn muốn thực hiện đổi tên**.**
+2\. Chọn **project, container** sau đó chọn các **object** bạn muốn thực hiện đổi tê&#x6E;**.**
 
-3\. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648530/image2023-3-6\_10-56-24.png?version=1\&modificationDate=1678074986000\&api=v2)hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648530/image2023-2-6\_10-20-54.png?version=1\&modificationDate=1678074993000\&api=v2)tại **object** bạn muốn thực hiện đổi tên và chọn![](https://docs.vngcloud.vn/download/thumbnails/49648530/image2023-3-6\_10-56-49.png?version=1\&modificationDate=1678075010000\&api=v2)**.**
+3\. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648530/image2023-3-6_10-56-24.png?version=1\&modificationDate=1678074986000\&api=v2)hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648530/image2023-2-6_10-20-54.png?version=1\&modificationDate=1678074993000\&api=v2)tại **object** bạn muốn thực hiện đổi tên và chọn![](https://docs.vngcloud.vn/download/thumbnails/49648530/image2023-3-6_10-56-49.png?version=1\&modificationDate=1678075010000\&api=v2)**.**
 
 4\. Nhập tên object mà bạn muốn thay đổi, tên object cần tuân thủ theo mô tả của chúng tôi tạo [Phạm vi giới hạn object](pham-vi-gioi-han-object.md).
 

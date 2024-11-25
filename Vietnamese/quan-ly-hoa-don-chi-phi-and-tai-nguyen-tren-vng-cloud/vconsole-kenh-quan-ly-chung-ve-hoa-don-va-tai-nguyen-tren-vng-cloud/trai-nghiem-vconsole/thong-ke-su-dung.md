@@ -38,7 +38,7 @@ _Để trích xuất dữ liệu lịch sử thanh toán, người dùng cần:_
 Kết quả tìm kiếm được thể hiện dựa trên các tiêu chí tìm kiếm áp dụng ở "Thanh công cụ tìm kiếm", bao gồm các thông tin chính như:
 
 * **Mã hóa đơn:** Mã định danh hóa đơn
-* **Ngày tạo:**Ngày phát sinh hóa đơn
+* **Ngày tạo:**&#x4E;gày phát sinh hóa đơn
 * **Trạng thái:** Trạng thái hóa đơn (Paid / Partial\_Paid / Unpaid)
 * **Tên tài nguyên:** Tên tài nguyên sử dụng
 * **Tài nguyên ID:** Mã định danh tài nguyên

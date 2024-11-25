@@ -4,7 +4,7 @@
 
 #### **1. Chuẩn bị yaml file để tạo PV và PVC**  <a href="#taopersistentvolume-pv-vapersistentvolumeclaim-pvc-1.chuanbiyamlfiledetaopvvapvc" id="taopersistentvolume-pv-vapersistentvolumeclaim-pvc-1.chuanbiyamlfiledetaopvvapvc"></a>
 
-_**nginx-pvc.yaml**_** ---** \
+_**nginx-pvc.yaml**_**&#x20;---** \
 
 
 | `piVersion:` `v1` `kind:` `PersistentVolumeClaim` `metadata:`  `name:` `nginx-pvc` `spec:`  `accessModes:`  `- ReadWriteOnce` `resources:`  `requests:`  `storage:` `2Gi`  |

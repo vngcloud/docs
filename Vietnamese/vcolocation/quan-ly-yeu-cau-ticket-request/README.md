@@ -8,4 +8,4 @@ Tính năng này cho phép bạn gửi các yêu cầu cần hỗ trợ liên qu
 
 **Giao diện trang quản lý yêu cầu**
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

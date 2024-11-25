@@ -3,7 +3,7 @@
 Khi bạn khởi tạo một project, nếu bạn là người dùng trả sau thì mặc định bạn có thể mua project để sử dụng mà không cần thanh toán giá trị gói lưu trữ ngay tại thời điểm mua. Mỗi cuối tháng chúng tôi sẽ cung cấp tới bạn một hóa đơn chứa thông tin sử dụng tài nguyên và chi phí phát sinh trên tài nguyên mà bạn sử dụng thực tế. Thông tin sử dụng tài nguyên bao gồm:&#x20;
 
 * **Mã hóa đơn:** Mã định danh hóa đơn.
-* **Ngày tạo:**Ngày phát sinh hóa đơn.
+* **Ngày tạo:**&#x4E;gày phát sinh hóa đơn.
 * **Trạng thái:** Trạng thái hóa đơn (Paid / Partial\_Paid / Unpaid).
 * **Tên tài nguyên:** Tên tài nguyên sử dụng.
 * **Tài nguyên ID:** Mã định danh tài nguyên.

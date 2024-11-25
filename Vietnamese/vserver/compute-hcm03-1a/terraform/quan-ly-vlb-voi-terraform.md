@@ -17,8 +17,8 @@ hoặc bạn có thể cấp quyền **vLBFullAccess** (nên có quyền **vLBRe
 
 Sau khi tải thư mục Example về máy, người dùng mở file [_**variable.tf**_](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/variable.tf) _(theo đường dẫn **terraform-providder-vngcloud/ examples/** ),_ sau đó thay đổi các thông tin cần thiết như sau:
 
-* **Client\_id:** Lấy tại trang chủ IAM/ Service account**/ Tab Security credentials**
-* **Client\_secret:** Lấy khi khởi tạo Service account tại trang chủ **IAM** hoặc có thể reset lại tại trang IAM/ Service account**/ Tab Security credentials**
+* **Client\_id:** Lấy tại trang chủ IAM/ Service accoun&#x74;**/ Tab Security credentials**
+* **Client\_secret:** Lấy khi khởi tạo Service account tại trang chủ **IAM** hoặc có thể reset lại tại trang IAM/ Service accoun&#x74;**/ Tab Security credentials**
 
 <figure><img src="../../../.gitbook/assets/image (303).png" alt=""><figcaption></figcaption></figure>
 
@@ -35,7 +35,7 @@ default = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 }
 ```
 
-**Bước 4:** Kiểm tra lại thông tin file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/main.tf) _**(**theo đường dẫn **terraform-providder-vngcloud/ examples/ )**_**,** trường hợp này bạn cần xóa đi các dòng bên dưới:
+**Bước 4:** Kiểm tra lại thông tin file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/main.tf) _**(**&#x74;heo đường dẫn **terraform-providder-vngcloud/ examples/ )**_**,** trường hợp này bạn cần xóa đi các dòng bên dưới:
 
 * _module "vserver" {source = "./modules/vng-cloud-vserver"}_
 * module "k8s" {source = "./modules/vng-cloud-k8s" }

@@ -37,4 +37,4 @@ _\* Khi khách hàng nhập thông tin domain chính, hệ thống sẽ tự đ�
   * Active: Origin Server sẽ được đưa vào Pool Origin Servers.
   * Disabled: Origin Server sẽ bị loại bỏ khỏi Pool Origin Servers.
 * Hỗ trợ cấu hình các loại mã lỗi để hệ thống tự động thực hiện Fail-Over .
-* Origin**:** cho phép khách hàng tự chỉ định các loại mã lỗi khi chạy theo mode Fail-Over.
+* Origi&#x6E;**:** cho phép khách hàng tự chỉ định các loại mã lỗi khi chạy theo mode Fail-Over.

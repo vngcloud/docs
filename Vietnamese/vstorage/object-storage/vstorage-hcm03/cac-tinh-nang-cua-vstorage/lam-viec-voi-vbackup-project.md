@@ -17,7 +17,7 @@ Sau khi một backup project được khởi tạo lần đầu tiên, lúc này
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 2. Chọn biểu tượng \<update khi lên guide>tại **project** bạn muốn thực hiện thay đổi quota. Chọn **Thay đổi quota.**
-3. Màn hình **Thay đổi quota** được hiển thị**.** Chọn **quota** lưu trữ mong muốn tăng thêm, **quota** lưu trữ bạn có thể tăng thêm hoặc giảm đi đến mức tối đa hoặc tối thiểu bằng **quota** lưu trữ mà gói lưu trữ cung cấp. Bạn không thể điều chỉnh **quota** lưu trữ nhỏ hơn hoặc vượt quá giá trị này.
+3. Màn hình **Thay đổi quota** được hiển th&#x1ECB;**.** Chọn **quota** lưu trữ mong muốn tăng thêm, **quota** lưu trữ bạn có thể tăng thêm hoặc giảm đi đến mức tối đa hoặc tối thiểu bằng **quota** lưu trữ mà gói lưu trữ cung cấp. Bạn không thể điều chỉnh **quota** lưu trữ nhỏ hơn hoặc vượt quá giá trị này.
 4. Chọn **Thay đổi quota project.**
 5. Thực hiện các bước **thanh toán giỏ hàng** nếu bạn là người dùng trả trước hoặc chọn **Thay đổi quota project** nếu bạn là người dùng trả sau.
 

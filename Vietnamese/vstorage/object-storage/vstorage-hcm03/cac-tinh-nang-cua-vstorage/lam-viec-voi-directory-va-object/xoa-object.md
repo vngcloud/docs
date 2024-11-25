@@ -6,9 +6,9 @@
 {% tab title=" Sử dụng vStorage Portal" %}
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 
-2\. Chọn **project, container** sau đó chọn các **object** bạn muốn thực hiện xóa**.**
+2\. Chọn **project, container** sau đó chọn các **object** bạn muốn thực hiện xó&#x61;**.**
 
-2\. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648534/image2023-3-6\_11-3-40.png?version=1\&modificationDate=1678075421000\&api=v2)hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648534/image2023-2-6\_10-20-54.png?version=1\&modificationDate=1678075363000\&api=v2)tại object bạn muốn thực hiện xóa và chọn![](https://docs.vngcloud.vn/download/attachments/49648534/image2023-3-6\_11-4-15.png?version=1\&modificationDate=1678075456000\&api=v2).
+2\. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648534/image2023-3-6_11-3-40.png?version=1\&modificationDate=1678075421000\&api=v2)hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648534/image2023-2-6_10-20-54.png?version=1\&modificationDate=1678075363000\&api=v2)tại object bạn muốn thực hiện xóa và chọn![](https://docs.vngcloud.vn/download/attachments/49648534/image2023-3-6_11-4-15.png?version=1\&modificationDate=1678075456000\&api=v2).
 
 Sau khi chọn Xóa, hệ thống sẽ tự động chuyển ra màn hình chính, nếu bạn thấy object vừa thực hiện biến mất khỏi danh sách thì bạn đã xoá thành công. Object lúc này đã được xóa vĩnh viễn khỏi hệ thống.
 

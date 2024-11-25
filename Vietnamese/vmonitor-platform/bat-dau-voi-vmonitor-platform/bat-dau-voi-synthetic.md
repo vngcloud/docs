@@ -9,7 +9,7 @@ Thực hiện tạo project theo các bước bên dưới:
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn **Quota & Usage**.
 3. Chọn **Mua Synthetic test quota.**
-4. Chọn **Class** mà bạn có nhu cầu sử dụng**.** Hiện tại chúng tôi chỉ cung cấp class Basic để bạn trải nghiệm
+4. Chọn **Class** mà bạn có nhu cầu sử dụn&#x67;**.** Hiện tại chúng tôi chỉ cung cấp class Basic để bạn trải nghiệm
 5. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Synthetic Test Quota Class](../vmonitor-platform-la-gi/vmonitor-platform-synthetic-la-gi/synthetic-test-quota-class.md).
 6. Chọn **Buy Synthetic Test Quota**.
 7. Thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Synthetic test quota** sẽ được khởi tạo.

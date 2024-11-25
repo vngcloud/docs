@@ -58,7 +58,7 @@ Taylor Smith được tuyển dụng với vị trí của người quản lý d
 5. Ở mục **Account user name,** Alex nhập **Tên** cho User account là **Sysad01**
 6. Nhập mật khẩu cho User account tại mục **Account password**
 7. Sau đó nhấn **Create User Account**.\
-   Tại đây **Alex** tạo User account riêng biệt cho **Taylor** bao gồm các thông tin sau**:**\
+   Tại đây **Alex** tạo User account riêng biệt cho **Taylor** bao gồm các thông tin sa&#x75;**:**\
    **User account:** Username: **Sysad01 ;** Pasword: **Asddehj**\
 
 
@@ -106,7 +106,7 @@ Nhân viên Johnson Miles và Scott Enzi gia nhập công ty với tư cách m�
 4. Ở mục **Account user name,** Alex nhập **Tên** cho User account là **Dev01**
 5. Nhập mật khẩu cho User account tại mục **Account password**
 6. Sau đó nhấn **Create User Account**.\
-   Tại đây **Alex** tạo 2 User account riêng biệt cho **Johnson Miles** và **Scott Enzi** bao gồm các thông tin sau**:**\
+   Tại đây **Alex** tạo 2 User account riêng biệt cho **Johnson Miles** và **Scott Enzi** bao gồm các thông tin sa&#x75;**:**\
    **User account 1:** Username: **Dev01 ;** Pasword: **Asddehj1**\
    **User account 2:** Username: **Dev02 ;** Pasword: **Aseeeghe2**
 
@@ -158,7 +158,7 @@ Sau khi tạo 2 User account: Dev01, Dev02, Alex đã cấp quyền sử dụng 
 4. Ở mục **Account user name,** Alex nhập **Tên** cho User account là **Supo01**
 5. Nhập mật khẩu cho User account tại mục **Account password**
 6. Sau đó nhấn **Create User Account**.\
-   Tại đây **Alex** tạo User account riêng biệt cho **Taylor** bao gồm các thông tin sau**:**\
+   Tại đây **Alex** tạo User account riêng biệt cho **Taylor** bao gồm các thông tin sa&#x75;**:**\
    **User account:** Username: **Supo01 ;** Pasword: **Asddehj3**
 
 #### **Bước 2: Tạo nhóm người dùng Group**  <a href="#cactruonghopsudungiam-buoc2-taonhomnguoidunggroup.2" id="cactruonghopsudungiam-buoc2-taonhomnguoidunggroup.2"></a>

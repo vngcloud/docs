@@ -15,7 +15,7 @@ Một Log project là một thuật ngữ trên vMonitor Platform thể hiện m
 3. Chọn **Buy a log project.**
 4. Nhập **Log project name.** Theo quy định của chúng tôi, tên log project phải dài từ 1 (tối thiểu) đến 63 (tối đa) ký tự. **Log project name** có thể bao gồm các chữ cái viết thường (a-z), số (0-9), dấu gạch ngang (-). **Log project name** phải bắt đầu bằng một chữ cái viết thường và kết thúc bằng một chữ cái viết thường hoặc một chữ số.
 5. Nhập **Description** log project nếu có. Theo quy định của chúng tôi, mô tả có thể dài từ 0 (tối thiểu) đến 300 (tối đa) ký tự. **Description** có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), dấu gạch dưới (\_), khoảng trắng ( ) hoặc dấu gạch ngang (-).
-6. Chọn **Class** mà bạn có nhu cầu sử dụng**.** Chúng tôi cung cấp cho bạn chọn 1 trong 2 class bao gồm: Basic, Pro.
+6. Chọn **Class** mà bạn có nhu cầu sử dụn&#x67;**.** Chúng tôi cung cấp cho bạn chọn 1 trong 2 class bao gồm: Basic, Pro.
 7. Nếu bạn chọn class **Basic**, bạn sẽ không thể thực hiện tùy chỉnh cấu hình gói. Nếu bạn chọn class **Pro**, bạn có thể lựa chọn retiontion day và lựa chọn cấu hình log size per day mong muốn bằng cách kéo thả hoặc nhập con số dung lượng bạn mong muốn tại ô Log size per day. dụng. Để biết thêm thông tin chi tiết về thông tin các class, hãy xem [Log Project Class](../../vmonitor-platform-la-gi/vmonitor-platform-log-la-gi/log-project-class.md)
 8. Chọn **Buy Log Quota.**
 9. Chọn **Period** nếu bạn là người dùng trả trước. Chúng tôi cung cấp các chu kỳ trả trước bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng.

@@ -16,7 +16,7 @@ description: >-
 
 ### <mark style="color:blue;">**\[**</mark><mark style="color:blue;">Mã lỗi 2017</mark><mark style="color:blue;">**]**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">CIDR bị trùng lấp ở hai đầu site khi tạo kết nối</mark>
 
-<figure><img src="../../.gitbook/assets/image (822).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (822) (1).png" alt=""><figcaption></figcaption></figure>
 
 Từ hình mô tả trên ta thấy rằng:
 

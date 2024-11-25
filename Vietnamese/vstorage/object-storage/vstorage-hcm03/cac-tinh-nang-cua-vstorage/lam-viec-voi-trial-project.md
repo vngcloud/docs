@@ -40,9 +40,9 @@ Sau 7 ngày sử dụng trial project, nếu bạn không thực hiện chuyển
 
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 
-2\. Chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49649749/image2023-3-6\_10-2-51.png?version=1\&modificationDate=1678786413000\&api=v2)tại **trial project** bạn muốn thực hiện chuyển thành project thông thường. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49649749/image2023-3-14\_16-38-33.png?version=1\&modificationDate=1678786713000\&api=v2).
+2\. Chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49649749/image2023-3-6_10-2-51.png?version=1\&modificationDate=1678786413000\&api=v2)tại **trial project** bạn muốn thực hiện chuyển thành project thông thường. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49649749/image2023-3-14_16-38-33.png?version=1\&modificationDate=1678786713000\&api=v2).
 
-3\. Màn hình **Mua tài nguyên** được hiển thị**.** Chọn **Chu kỳ** lưu trữ mong muốn mua. Chúng tôi cung cấp các chu kỳ lưu trữ bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng. Khi bạn thực hiện chọn **Chu kỳ** gia hạn, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ lưu trữ mới và tổng số tiền bạn cần chi trả cho việc chuyển trial project thành project thông thường.
+3\. Màn hình **Mua tài nguyên** được hiển th&#x1ECB;**.** Chọn **Chu kỳ** lưu trữ mong muốn mua. Chúng tôi cung cấp các chu kỳ lưu trữ bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng. Khi bạn thực hiện chọn **Chu kỳ** gia hạn, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ lưu trữ mới và tổng số tiền bạn cần chi trả cho việc chuyển trial project thành project thông thường.
 
 4\. Chọn **Mua ngay**.
 

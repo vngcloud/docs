@@ -24,7 +24,7 @@ Protocol Proxy là một protocol đặc thù cho phép Load Balanacer chuyển 
 
 * **Bước 3:** Cấu hình bật Proxy Protocol tại Virtual Host:
 
-**+** Cấu hình thêm tham số **proxy\_protocol** tại **server {}** block**:**
+**+** Cấu hình thêm tham số **proxy\_protocol** tại **server {}** bloc&#x6B;**:**
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/64553636/image2021-10-27_11-48-12.png?version=1&#x26;modificationDate=1699597645000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 

@@ -40,7 +40,7 @@ Bạn chỉ có thể khôi phục máy chủ ảo với bản Snapshot của Bo
 
 1. Mở bảng điều khiển vServer tại [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
 2. Trong ngăn điều hướng, chọn **Snapshot**.
-3. Chọn Snapshot của bản Boot Volume tại trang danh sách rồi chọn **Hành động**, nhấn Rollback Server**.**
+3. Chọn Snapshot của bản Boot Volume tại trang danh sách rồi chọn **Hành động**, nhấn Rollback Serve&#x72;**.**
 
 ### **Tạo máy chủ (Server) bằng Snapshot trên Màn hình Tạo Server**  <a href="#khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhtaoserversnapshotcreateserve" id="khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhtaoserversnapshotcreateserve"></a>
 

@@ -6,7 +6,7 @@ _\*Yêu cầu máy tính đã cài Docker engine (như Docker Desktop)_
 
 Đầu tiên để có thể push image thì ta cần có sẵn 1 Repository trên vCR, ví dụ ta đã tạo sẵn 1 repo như sau:
 
-<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Để push image lên Repo, trước tiên ta cần gắn tag cho image
 
@@ -26,8 +26,8 @@ Với user là 96000-khaivt (xem trên portal) và pass là secret key khi tạo
 
 * Push image lên Repo:
 
-| ![](file:///C:/Users/LAP14383-local/AppData/Local/Packages/oice\_16\_974fa576\_32c1d314\_3436/AC/Temp/msohtmlclip1/01/clip\_image005.gif)    docker push vcr.vngcloud.vn/96000-sdkimage/IMAGE\[:TAG] docker push vcr.vngcloud.vn/96000-sdkimage/hello-world:first |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](file:///C:/Users/LAP14383-local/AppData/Local/Packages/oice_16_974fa576_32c1d314_3436/AC/Temp/msohtmlclip1/01/clip_image005.gif)    docker push vcr.vngcloud.vn/96000-sdkimage/IMAGE\[:TAG] docker push vcr.vngcloud.vn/96000-sdkimage/hello-world:first |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

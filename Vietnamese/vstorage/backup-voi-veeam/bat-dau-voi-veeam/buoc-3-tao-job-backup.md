@@ -6,9 +6,9 @@ Sau khi đã <mark style="color:blue;">Khởi tạo Repository,</mark> bạn s�
 
 1. Tại mục "Inventory", chọn "**Backup Job**", chọn loại computer phù hợp;
 2. Tại màn hình "Job Mode", nhấn "**Next**";
-3. Tại màn hình "Name**"**, bạn có thể đặt tên cho Job, sau đó nhấn "**Next".**
-4. Tại màn hình "Computer**"**, chọn computer muốn sao lưu, sau đó nhấn "**Next"**.
-5. Tại màn hình "Backup Mode**"**,  chọn mode sau đó nhấn "**Next**"; \
+3. Tại màn hình "Nam&#x65;**"**, bạn có thể đặt tên cho Job, sau đó nhấn "**Next".**
+4. Tại màn hình "Compute&#x72;**"**, chọn computer muốn sao lưu, sau đó nhấn "**Next"**.
+5. Tại màn hình "Backup Mod&#x65;**"**,  chọn mode sau đó nhấn "**Next**"; \
    \- Chọn mode: "**Entire Computer**" để sao lưu toàn bộ máy tính, nếu chọn mode này có thể bỏ qua bước 6.\
    \- Chọn mode: "**File level backup (slower)**" để sao lưu file hoặc folder được chọn, nếu chọn mode này thì đi tiếp bước 6.
 6. Tại màn hình "Object", chọn đối tượng cần sao lưu, sau đó nhấn "**Next**";

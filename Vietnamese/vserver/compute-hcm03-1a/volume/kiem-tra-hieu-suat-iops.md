@@ -38,7 +38,7 @@ sudo fio --randrepeat=1 --ioengine=libaio --direct=1 --gtod_reduce=1 --name=TGS 
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/63766877/image2023-8-23_14-31-37.png?version=1&#x26;modificationDate=1692775898000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-Có thể thấy, VPS test có thể thực hiện đồng thời **IOPS =** 7**500** tác vụ đọc và**. IOPS = 2506** tác vụ ghi mỗi giây.
+Có thể thấy, VPS test có thể thực hiện đồng thời **IOPS =** 7**500** tác vụ đọc v&#xE0;**. IOPS = 2506** tác vụ ghi mỗi giây.
 
 Kết quả với **numjob = 8**:
 

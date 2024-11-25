@@ -18,7 +18,7 @@ Từ hình mô tả trên ta thấy rằng:
 * Sau đó, tại thời điểm sau đó (T+1) thì hệ thống không cho phép việc tạo kết nối giữa HCM-VPC01 và HAN-VPC01 nữa, do đã tạo trước đó trong cùng một Cross Connect.
 * Việc tạo cặp kết nối HCM-VPC01 đến HAN-VPC01 ở một Cross Connect khác vào thời điểm khác (T+2) cũng không thực hiện được, do hệ thống cũng sẽ kiểm tra việc một cặp VPC có đã tồn tại ở khác Cross Connect hay không.&#x20;
 
-### <mark style="color:blue;">**\[Mã lỗi 2011] Trùng CIDR của một kết nối VPC trong Cross Connect ở**</mark>** **<mark style="color:blue;background-color:red;">**Requester**</mark>
+### <mark style="color:blue;">**\[Mã lỗi 2011] Trùng CIDR của một kết nối VPC trong Cross Connect ở**</mark>**&#x20;**<mark style="color:blue;background-color:red;">**Requester**</mark>
 
 <figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
@@ -27,7 +27,7 @@ Từ hình mô tả trên ta thấy rằng:
 * Tại thời điểm T, người dùng có thể tạo thành công kết nối HCM-VPC02 đến HAN-VPC01 giữa hai vùng thông qua Cross Connect 1.
 * Sau đó, tại thời điểm sau đó (T+1) thì hệ thống không cho phép việc tạo kết nối HCM-VPC03 đến HAN-VPC03, do có CIDR 10.15.0.0/16 của HCM-VPC02 (đã kết nối với HAN-VPC01 trước đó) **trùng với CIDR của HAN-VPC03** mà HCM-VPC03 đang muốn kết nối đến.
 
-### <mark style="color:blue;">**\[Mã lỗi 2013] Trùng CIDR của một kết nối VPC trong Cross Connect ở**</mark>** **<mark style="color:blue;background-color:red;">**Accepter**</mark>
+### <mark style="color:blue;">**\[Mã lỗi 2013] Trùng CIDR của một kết nối VPC trong Cross Connect ở**</mark>**&#x20;**<mark style="color:blue;background-color:red;">**Accepter**</mark>
 
 <figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 

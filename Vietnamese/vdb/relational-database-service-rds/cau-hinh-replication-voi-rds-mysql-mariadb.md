@@ -33,7 +33,7 @@ VD: bạn tạo user 'rep'@'%' với password 'abcd1234' và gán Global Privile
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/10880120/Screenshot%20from%202019-11-08%2011-15-34.png?version=3&#x26;modificationDate=1573186809000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-Nếu kết quả là **OFF**, bạn có thể bật **binary log** bằng cách thêm trong file cấu hình **my.cnf (**đuờng dẫn mặc định thuờng là **/etc/mysql/my.cnf)** các giá trị sau:
+Nếu kết quả là **OFF**, bạn có thể bật **binary log** bằng cách thêm trong file cấu hình **my.cnf (**&#x111;uờng dẫn mặc định thuờng là **/etc/mysql/my.cnf)** các giá trị sau:
 
 | `[mysqld]` `log-bin=bin.log` `log-bin-index=bin-log.index` `max_binlog_size=100M` `binlog_format=row` |
 | ----------------------------------------------------------------------------------------------------- |

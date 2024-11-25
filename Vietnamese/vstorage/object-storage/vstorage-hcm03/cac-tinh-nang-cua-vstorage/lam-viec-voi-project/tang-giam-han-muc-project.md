@@ -8,9 +8,9 @@ Bạn đã khởi tạo project với lượng quota ban đầu phù hợp với
 
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 
-2\. Chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648497/image2023-3-6\_10-2-51.png?version=1\&modificationDate=1678071772000\&api=v2)tại **project** bạn muốn thực hiện thay đổi quota. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648497/image2023-3-6\_10-3-4.png?version=1\&modificationDate=1678071785000\&api=v2).
+2\. Chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648497/image2023-3-6_10-2-51.png?version=1\&modificationDate=1678071772000\&api=v2)tại **project** bạn muốn thực hiện thay đổi quota. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648497/image2023-3-6_10-3-4.png?version=1\&modificationDate=1678071785000\&api=v2).
 
-3\. Màn hình **Thay đổi quota** được hiển thị**.** Chọn **quota** lưu trữ mong muốn tăng thêm, **quota** lưu trữ bạn có thể tăng thêm hoặc giảm đi đến mức tối đa hoặc tối thiểu bằng **quota** lưu trữ mà gói lưu trữ cung cấp. Bạn không thể điều chỉnh **quota** lưu trữ nhỏ hơn hoặc vượt quá giá trị này.
+3\. Màn hình **Thay đổi quota** được hiển th&#x1ECB;**.** Chọn **quota** lưu trữ mong muốn tăng thêm, **quota** lưu trữ bạn có thể tăng thêm hoặc giảm đi đến mức tối đa hoặc tối thiểu bằng **quota** lưu trữ mà gói lưu trữ cung cấp. Bạn không thể điều chỉnh **quota** lưu trữ nhỏ hơn hoặc vượt quá giá trị này.
 
 4\. Chọn **Thay đổi quota**.
 

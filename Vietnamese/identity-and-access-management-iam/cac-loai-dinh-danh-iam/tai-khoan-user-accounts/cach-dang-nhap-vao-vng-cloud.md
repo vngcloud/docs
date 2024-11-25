@@ -24,7 +24,7 @@ Tại VNG Cloud Service, người dùng có thể truy cập đến các website
 <figure><img src="https://docs.vngcloud.vn/download/attachments/63766843/image2023-8-4_16-39-10.png?version=1&#x26;modificationDate=1691141951000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
 * Chọn **"SIGN IN WITH IAM USER ACCOUNT"**
-* Một giao diện đăng nhập sẽ hiển thị cho bạn nhập **Root email (**tương ứng với Root User Account**), Username (**tương ứng với IAM User Account name**) và Password.**
+* Một giao diện đăng nhập sẽ hiển thị cho bạn nhập **Root email (**&#x74;ương ứng với Root User Accoun&#x74;**), Username (**&#x74;ương ứng với IAM User Account nam&#x65;**) và Password.**
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/63766843/image2023-8-4_17-16-15.png?version=1&#x26;modificationDate=1691144176000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 

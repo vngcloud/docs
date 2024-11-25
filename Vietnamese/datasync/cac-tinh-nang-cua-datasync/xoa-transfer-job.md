@@ -4,7 +4,7 @@ Nếu bạn không còn nhu cầu sử dụng transfer job, hãy thực hiện x
 
 **Bước 1:** Truy cập vào [https://datasync.console.vngcloud.vn/](https://datasync.console.vngcloud.vn/transfer-job/list)
 
-**Bước 2:**Tại menu bên trái, chọn mục **Transfer Job**.&#x20;
+**Bước 2:**&#x54;ại menu bên trái, chọn mục **Transfer Job**.&#x20;
 
 **Bước 3:** Trên danh sách các transfer job đã tạo, hãy chọn một **Transfer Job** mà bạn muốn xóa.
 

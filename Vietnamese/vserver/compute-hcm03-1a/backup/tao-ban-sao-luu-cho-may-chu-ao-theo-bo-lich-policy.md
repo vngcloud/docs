@@ -31,8 +31,8 @@ Khi bạn sử dụng dịch vụ vBackup. Trong lần đầu tiên, chúng tôi
 
 1. Ngoài cách tạo bản sao lưu tại giao diện vBackup, bạn cũng có thể tùy chọn tạo bản sao lưu khi tạo mới Server. Thực hiện mở bảng điều khiển Server tại [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)
 2. Chọn **Tạo mới một Server**
-3. Trang tạo mới Server sẽ hiển thị**,** tại đây bạn có thể tích chọn vào ô tạo Backup Server tại mục **Cài đặt Khác**
-4. Sau đó khi Server được tạo**,** một bản Backup Server sẽ được tạo kèm cùng với bộ lịch Policy mặc định và hiển thị tại trang danh sách Backup Server
+3. Trang tạo mới Server sẽ hiển th&#x1ECB;**,** tại đây bạn có thể tích chọn vào ô tạo Backup Server tại mục **Cài đặt Khác**
+4. Sau đó khi Server được tạ&#x6F;**,** một bản Backup Server sẽ được tạo kèm cùng với bộ lịch Policy mặc định và hiển thị tại trang danh sách Backup Server
 
 ### **Tạo bản sao lưu theo bộ lịch Policy tại trang danh sách Server** <a href="#taobansaoluuchomaychuaotheobolichpolicy-taobansaoluutheobolichpolicytaitrangdanhsachserver" id="taobansaoluuchomaychuaotheobolichpolicy-taobansaoluutheobolichpolicytaitrangdanhsachserver"></a>
 

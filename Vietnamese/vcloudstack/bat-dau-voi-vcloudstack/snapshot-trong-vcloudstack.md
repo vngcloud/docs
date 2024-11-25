@@ -42,7 +42,7 @@ vCloudStack hỗ trợ việc tạo Snapshot cho cả Server và Volume, giúp �
 
 **Bước 2:** Chọn tạo **Snapshot**
 
-**Bước 3:** Chọn Snapshot của bản Boot Volume tại trang danh sách rồi chọn **Hành động**, nhấn Rollback Server**.**
+**Bước 3:** Chọn Snapshot của bản Boot Volume tại trang danh sách rồi chọn **Hành động**, nhấn Rollback Serve&#x72;**.**
 
 ### **Tạo máy chủ (Server) bằng Snapshot trên Màn hình Tạo Server**  <a href="#khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhtaoserversnapshotcreateserve" id="khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhtaoserversnapshotcreateserve"></a>
 
@@ -80,7 +80,7 @@ vCloudStack hỗ trợ việc tạo Snapshot cho cả Server và Volume, giúp �
 
 **Bước 2:** Trong ngăn điều hướng, chọn **Snapshot**;
 
-**Bước 3:** Chọn Snapshot của bản Data Volume tại trang danh sách rồi chọn **Hành động**, nhấn Rollback Volume**.**
+**Bước 3:** Chọn Snapshot của bản Data Volume tại trang danh sách rồi chọn **Hành động**, nhấn Rollback Volum&#x65;**.**
 
 ### **Xoá Snapshot Volume tại trang danh sách Snapshot trên bảng điều khiển** <a href="#xoasnapshot-xoasnapshotvolumetaitrangdanhsachsnapshottrenbangdieukhien" id="xoasnapshot-xoasnapshotvolumetaitrangdanhsachsnapshottrenbangdieukhien"></a>
 

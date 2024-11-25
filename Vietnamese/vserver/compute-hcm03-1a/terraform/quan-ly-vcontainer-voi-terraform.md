@@ -32,9 +32,9 @@ Sau khi cấp quyền IAM cho account cần sử dụng Terraform, bạn cần t
 ### **Cài đặt thông số trong Terraform file** <a href="#quanlyvcontainervoiterraform-caidatthongsotrongterraformfile" id="quanlyvcontainervoiterraform-caidatthongsotrongterraformfile"></a>
 
 1.  Sau khi tải thư mục Example về máy, mở file [_**variable.tf**_](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/variable.tf) _(theo đường dẫn **/examples/ variable.tf**),_ sau đó thay đổi các thông tin cần thiết như sau:\
-    **Client\_id:** Lấy tại trang chủ IAM/ Service account**/ Tab Security credentials**
+    **Client\_id:** Lấy tại trang chủ IAM/ Service accoun&#x74;**/ Tab Security credentials**
 
-    **Client\_secret:** Lấy khi khởi tạo Service account tại trang chủ **IAM** hoặc có thể reset lại tại trang IAM/ Service account**/ Tab Security credentials**
+    **Client\_secret:** Lấy khi khởi tạo Service account tại trang chủ **IAM** hoặc có thể reset lại tại trang IAM/ Service accoun&#x74;**/ Tab Security credentials**
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -52,10 +52,10 @@ default = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}
 
 
 
-2. Kiểm tra lại thông tin file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/main.tf) _**(**theo đường dẫn **examples/main.tf)**_**,** trường hợp này bạn cần xóa đi các dòng bên dưới:
+2. Kiểm tra lại thông tin file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/main.tf) _**(**&#x74;heo đường dẫn **examples/main.tf)**_**,** trường hợp này bạn cần xóa đi các dòng bên dưới:
 
 * _module "vserver" {source = "./modules/vng-cloud-vserver"_\
-  _}_
+  &#xNAN;_}_
 * _module "vlb" { source = "./modules/vng-cloud-vlb" }_
 
 _Chỉ để lại:_
@@ -167,7 +167,7 @@ default = "sub-5f101cba-7ce0-4084-8576-06b8dbfb298a" }
 *   **ssh\_key\_id**: chỉ định ssh key sẽ được inject vào vServer, bạn có thể lấy ở [{Tab SSH Keys}](https://hcm-3.console.vngcloud.vn/vserver/v-server/ssh-key), nếu chưa khởi tạo bất kì ssh key nào bạn có thể xem tại [{](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[T](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[rang tạo SSH key](../security/ssh-key-bo-khoa.md)[}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901): \
 
 
-    <figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * **security\_group\_id\_list**: chỉ định danh sách security group id cần gắn vào vServer, bạn có thể lấy ở [{Tab Security Groups}](https://hcm-3.console.vngcloud.vn/vserver/network/sec-group), nếu cần tạo thêm security group bạn có thể xem tại [{Trang tạo Security Group}](../security/security-groups.md):
 
 ```
@@ -181,7 +181,7 @@ default = [    "secg-28e91c47-11b1-4cc1-8e24-dd174882708d"  ]
 }
 ```
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Kiểm tra lại thông tin file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/modules/vng-cloud-k8s/main.tf) _(theo đường dẫn **terraform-provider-vngcloud/examples/modules/vng-cloud-k8s/main.tf**)_, trong file chúng tôi để sẵn một số câu lệnh: **Create K8S**, **Create Cluster Node Group, Change Cluster for SecGroup, Attach Load Balancer for K8s...,** trường hợp này để Tạo mới K8S bạn chỉ  cần để lại resource **Create K8S** theo hướng dẫn bên dưới:
 
@@ -284,4 +284,4 @@ If you ever set or change modules or backend configuration for Terraform,rerun t
 
 Sau khi khởi tạo thành công Terraform, bạn có thể lên Portal để xem thông tin Container vừa tạo:
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

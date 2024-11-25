@@ -32,7 +32,7 @@
     kubectl-view-allocations --version
     ```
 
-<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Trên Cluster vừa tạo, thực hiện kiểm tra node trong node group của bạn qua lệnh:&#x20;
 
@@ -217,11 +217,11 @@ data:
     kubectl delete deploy time-slicing-verification
     ```
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Multi-process server (MPS)
 
-* **NVIDIA Multi-Process Server (MPS)** là một giải pháp thay thế và tương thích nhị phân cho giao diện lập trình ứng dụng CUDA (API). Kiến trúc runtime của MPS được thiết kế để cho phép các ứng dụng CUDA đa quy trình hợp tác, thường là các tác vụ MPI, tận dụng khả năng Hyper-Q trên các GPU NVIDIA mới nhất (Kepler và sau đó). Hyper-Q cho phép các kernel CUDA được xử lý đồng thời trên cùng một GPU, điều này có thể mang lại lợi ích về hiệu suất khi dung lượng tính toán GPU không được sử dụng đầy đủ bởi một quy trình ứng dụng duy nhất. Bạn có thể tham khảo thêm về MPS tại [Multi-Process Service (MPS)](https://docs.nvidia.com/deploy/pdf/CUDA\_Multi\_Process\_Service\_Overview.pdf).
+* **NVIDIA Multi-Process Server (MPS)** là một giải pháp thay thế và tương thích nhị phân cho giao diện lập trình ứng dụng CUDA (API). Kiến trúc runtime của MPS được thiết kế để cho phép các ứng dụng CUDA đa quy trình hợp tác, thường là các tác vụ MPI, tận dụng khả năng Hyper-Q trên các GPU NVIDIA mới nhất (Kepler và sau đó). Hyper-Q cho phép các kernel CUDA được xử lý đồng thời trên cùng một GPU, điều này có thể mang lại lợi ích về hiệu suất khi dung lượng tính toán GPU không được sử dụng đầy đủ bởi một quy trình ứng dụng duy nhất. Bạn có thể tham khảo thêm về MPS tại [Multi-Process Service (MPS)](https://docs.nvidia.com/deploy/pdf/CUDA_Multi_Process_Service_Overview.pdf).
 
 #### Configure MPS
 
@@ -492,7 +492,7 @@ kubectl -n keda get all
 
 <figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   **Nếu BẠN KHÔNG cài đặt Keda trong cụm của mình**, tính năng Auto-scale của VKS sẽ can thiệp vào và:
 
@@ -549,6 +549,6 @@ kubectl -n keda get all
     kubectl get scaledobject
     ```
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Khi trạng thái `ScaledObject` **Ready** là`True`,  GPU Nodegroup được scale dựa trên GPU usage.

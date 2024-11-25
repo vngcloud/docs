@@ -78,7 +78,7 @@ Hệ thống vCDN cung cấp các chuẩn phát phổ biến, hỗ trợ giao th
 ## **Tính Năng Dịch Vụ** <a href="#videoondemandstreaming-tinhnangdichvu" id="videoondemandstreaming-tinhnangdichvu"></a>
 
 * **Hỗ trợ kết nối trực tiếp đến Origin:** Hệ thống vCDN hỗ trợ kết nối trực tiếp đến các nguồn dữ liệu dạng Object Storage sử dụng chuẩn giao thức S3-compatible. Điều này giúp khách hàng dễ dàng tích hợp dữ liệu từ các dịch vụ lưu trữ đám mây phổ biến hoặc từ vStorage.
-* **Tùy chỉnh cơ chế caching:**cho phép người dùng cấu hình mức độ caching dữ liệu tại các Edge Server, phù hợp với từng loại nội dung.
+* **Tùy chỉnh cơ chế caching:**&#x63;ho phép người dùng cấu hình mức độ caching dữ liệu tại các Edge Server, phù hợp với từng loại nội dung.
 * **Hỗ trợ Origin khi tạo CDN:** Hệ thống vCDN cho phép định nghĩa nguồn dữ liệu từ Object Storage hoặc Origin Server do khách hàng chỉ định. Điều này cung cấp sự linh hoạt trong việc tích hợp dữ liệu từ nhiều nguồn khác nhau.
 * **Hỗ trợ HTTPS:** Mặc định tất cả các CDN được tạo ra đều hỗ trợ HTTPS để bảo mật dữ liệu. Người dùng cũng có thể **tự upload chứng chỉ SSL** để sử dụng với domain riêng.
 * **Tự động Redirect từ HTTP sang HTTPS**: Hỗ trợ tính năng tự động chuyển hướng tất cả các yêu cầu HTTP sang HTTPS nhằm tăng cường bảo mật và cải thiện trải nghiệm người dùng.
@@ -104,6 +104,9 @@ Hệ thống vCDN cung cấp các chuẩn phát phổ biến, hỗ trợ giao th
 
 1. Truy cập vào vCDN Portal tại [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
 2. Chọn mục **Video On Demand**, sau đó chọn **Create new.**
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 3. Tiếp tục thực hiện nhập/chọn:&#x20;
 
 * **CDN Info:**&#x20;
@@ -113,6 +116,9 @@ Hệ thống vCDN cung cấp các chuẩn phát phổ biến, hỗ trợ giao th
     * **Origin Packaging:** Origin của khách hàng tự packaging, vCDN chỉ phục vụ
     * **MP4:** vCDN phục vụ trực tiếp file mp4 gốc từ origin cho end-user
   * **Segment Size:** Chọn thời gian "băm" của các file "ts" với loại dịch vụ VoD là CDN Packaging.
+
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
 * **Origin:**&#x20;
   * **HTTP Origin**: Server hỗ trợ giao thức HTTP.
     * **Fail-Over Error Code:** Danh sách các mã lỗi HTTP (ví dụ: 500, 502, 503, 504) mà nếu xảy ra sẽ kích hoạt chuyển đổi dự phòng (fail-over) đến Origin khác.
@@ -131,31 +137,41 @@ Hệ thống vCDN cung cấp các chuẩn phát phổ biến, hỗ trợ giao th
   * **Host Origin**: Dữ liệu từ một host cụ thể.
     * **Origin Host Header:** Header được gửi tới Origin Server trong yêu cầu HTTP.
     * **Use SSL:** Kích hoạt SSL để mã hóa kết nối với Host Origin.
-    * **Host Origin:**
+    * **Host Origin**
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
 *   **Security:**
 
     * **HTTPS (HTTP/2)**: Bật hoặc tắt chế độ bảo mật HTTPS cho luồng CDN. Bạn có thể tạo mới một **Certificate** bằng cách chọn **Add new**.
-    * **Always Use HTTPS:**
+    * **Always Use HTTPS:** Bật hoặc tắt tính năng tự động chuyển hướng tất cả các yêu cầu HTTP sang HTTPS nhằm tăng cường bảo mật và cải thiện trải nghiệm người dùng.
     * **Minimum TLS Version**: Phiên bản thấp nhất của giao thức TLS được phép sử dụng. Chúng tôi đang hỗ trợ các giao thức TLS 1.0, TLS 1.1, TLS 1.2, TLS 1.3. Bạn hãy chọn sử dụng các phiên bản cao (TLS 1.2 hoặc 1.3) để đảm bảo tính bảo mật.
     * **Token Configuration**:
       * **Token Type**: Chọn loại token dùng để xác thực người xem. Bạn có thể chọn token type Akamai, SBD hoặc VNG.
 
-    <figure><img src="../../.gitbook/assets/image (840).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
     * **Access Filter:**
       * **IP Address CIDR**: Giới hạn cho phép/ từ chối truy cập dựa trên địa chỉ IP bằng cách chọn **Allow**/ **Block** và nhập địa chỉ IP hoặc CIDR tương ứng.
       * **HTTP Referer**: Giới hạn cho phép/ từ chối truy cập từ các website cụ thể bằng cách chọn **Allow/ Block** và nhập domain tương ứng.
-      * **Geo Location:** Giới hạn cho phép, từ chối truy cập theo quốc gia/khu vực bằng cách chọn **Allow/ Block** và nhập mã Geo Location tương ứng. Bạn có thể tham khảo giá trị country code tương ứng tại [https://en.wikipedia.org/wiki/List\_of\_ISO\_3166\_country\_codes](https://en.wikipedia.org/wiki/List\_of\_ISO\_3166\_country\_codes).
+      * **Geo Location:** Giới hạn cho phép, từ chối truy cập theo quốc gia/khu vực bằng cách chọn **Allow/ Block** và nhập mã Geo Location tương ứng. Bạn có thể tham khảo giá trị country code tương ứng tại [https://en.wikipedia.org/wiki/List\_of\_ISO\_3166\_country\_codes](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
     * **CORS Configuration**
       * **Simple**: Khi chọn Simple, bạn chỉ cần chỉ định các domain cụ thể được phép truy cập thông qua **Allow Origin.**
       * **Advance**: Khi chọn Advance, ngoài việc chỉ định domain cụ thể, bạn cần cấu hình chi tiết hơn về **Allow Header, Allow Method, Expose Header, Allow Credentials** được phép.
 
     <figure><img src="../../.gitbook/assets/image (841).png" alt=""><figcaption></figcaption></figure>
 
-    * **Caching**
-      * **Caching Level**: Xác định mức độ cache của CDN.
+    * **Caching:**
+      * **Caching Level**: Xác định mức độ cache của CDN. Với VOD, vCDN đang cung cấp 3 mức độ cache bao gồm: URL without query string only, Skip Query String of URL, URL With Query String.
+      * **Server Cache Expiration (TTL):** Khoảng thời gian mà hệ thống vCDN sẽ lưu trữ tài nguyên của bạn trong bộ nhớ cache. Trong khoảng thời gian này, hệ thống vCDN sẽ không truy cập server gốc mà phản hồi yêu cầu từ bộ nhớ cache của vCDN. Bạn có thể chọn thời gian này từ 30 phút cho tới 1 năm tùy theo nhu cầu cho hệ thống của bạn.
+      * **Browser Cache Expiration:** Thời gian vCDN yêu cầu trình duyệt của người dùng lưu trữ tệp trong bộ nhớ cache cục bộ.&#x20;
+      * **Development mode:** Chế độ nhà phát triển. Tính năng này cho phép tạm thời tắt caching tại Edge Server để hỗ trợ giai đoạn thử nghiệm hoặc kiểm tra nội dung trong khi phát triển. Mọi yêu cầu sẽ được trả về trực tiếp từ Origin, giúp cập nhật nội dung ngay lập tức mà không cần xóa cache.
 
-    <figure><img src="../../.gitbook/assets/image (842).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Page Rules:** Tính năng này giúp khách hàng tối ưu các điều kiện và các tùy chọn để giúp website thể hiện được nhiều mục đích khác nhau. Để tạo Page rules, vui lòng chọn **Create Page Rule**, popup sẽ hiện ra, lúc này bạn cần chọn:&#x20;
       * **URL pattern:** cần áp dụng pagerule, hỗ trợ kiểu khai báo “\*” đại diện cho một chuỗi nhiều ký tự. Ví dụ: /trang\_landing\_cu.html. Sau khi nhập URL pattern, bạn hãy chọn **Add new rule**. Mỗi Rules khi thỏa điệu kiện đúng URI được request sẽ có thể tùy chọn thực thi một trong các hành động sau:
@@ -175,17 +191,34 @@ Hệ thống vCDN cung cấp các chuẩn phát phổ biến, hỗ trợ giao th
 
     <figure><img src="../../.gitbook/assets/image (844).png" alt="" width="375"><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (845).png" alt="" width="349"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2).png" alt="" width="348"><figcaption></figcaption></figure>
 
-    4. Chọn Submit để hoàn thành việc tạo Live Stream.
+    4. Chọn **Submit** để hoàn thành việc tạo VOD.
 
-***
+### **Bước 2: Truy cập VOD**
 
-Khi cấu hình CDN xong người dùng có thể truy cập các CDN VoD theo các link dưới đây:
+Sau khi bạn đã thực hiện khởi tạo xong VOD, bạn có thể truy cập các CDN VOD theo các link dưới đây:
 
-* MP4: https:// \<CDN Domain>/<đường dẫn file MP4 trên origin>.
-* MP3: https:// \<CDN Domain>/<đường dẫn file MP3 trên origin >.
-* HLS: https:// \<CDN Domain>/<đường dẫn file MP4/SMIL trên origin>/index.m3u8.
-* MpegDash: : https:// \<CDN Domain>/<đường dẫn file manifest trên origin>.
+* **MP4:**&#x20;
 
-\
+```
+https:// <CDN Domain>/<đường dẫn file MP4 trên origin>
+```
+
+* **MP3:**&#x20;
+
+```
+https:// <CDN Domain>/<đường dẫn file MP3 trên origin >
+```
+
+* **HLS:**&#x20;
+
+```
+https:// <CDN Domain>/<đường dẫn file MP4/SMIL trên origin>/index.m3u8
+```
+
+* MpegDash:&#x20;
+
+```
+https:// <CDN Domain>/<đường dẫn file manifest trên origin>
+```

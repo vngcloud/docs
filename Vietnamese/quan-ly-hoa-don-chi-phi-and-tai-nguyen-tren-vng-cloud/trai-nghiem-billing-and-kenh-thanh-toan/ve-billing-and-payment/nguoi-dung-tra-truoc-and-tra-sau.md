@@ -2,7 +2,7 @@
 
 Sử dụng tài liệu này để hiểu rõ hơn về các hình thức sử dụng tài nguyên theo loại người dùng. Ở cấp độ VGN Cloud Service, chúng tôi hỗ trợ 2 loại người dùng chính:
 
-* **Người dùng trả trước:** Là người dùng phải thanh toán chi phí sử dụng tài nguyên trước khi được phép sử dụng**.** Thanh toán chi phí sử dụng tài nguyên theo cấu hình và thời gian muốn sử dụng (Cần xác định thời điểm ngừng sử dụng tài nguyên).
+* **Người dùng trả trước:** Là người dùng phải thanh toán chi phí sử dụng tài nguyên trước khi được phép sử dụn&#x67;**.** Thanh toán chi phí sử dụng tài nguyên theo cấu hình và thời gian muốn sử dụng (Cần xác định thời điểm ngừng sử dụng tài nguyên).
 * **Người dùng trả sau:** Là người dùng được phép sử dụng tài nguyên trước và trả tiền sau, dựa trên chi phí sử dụng tài nguyên thực tế. Số tiền phải chi trả sẽ được chốt định kỳ mỗi cuối tháng cho đến khi người dùng không sử dụng tài nguyên nữa.
 
 Cùng điểm qua một số khác biệt về khái niệm cũng như quyền hạn và chức năng giữa 2 loại người dùng này đối với các dịch vụ VNG Cloud như:

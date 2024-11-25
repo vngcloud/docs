@@ -57,7 +57,7 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 * Bạn nên giới hạn lại Range IP được phép kết nối tới GUI Pfsense để hạn chế user được phép truy cập vào GUI Pfsense
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Chọn **Save**
 * Sau đó chọn **Apply change**
@@ -92,23 +92,23 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 * Vào phần **Interfaces** -> **Assignments** để gắn thêm **Interface LAN**
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Nhấn vào **Add**
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Sau đó nhấn vào **Save**
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Vào phần **Interfaces** -> **Assignments** để tiến hành **enable LAN Interface**
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Bạn thực hiện cấu hình như bên dưới
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Cấu hình **IP** cho **LAN**
 
@@ -128,21 +128,21 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 **Bước 6**: Xem lại thông tin cấu hình
 
-<figure><img src="../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 7**: Mở rule đi ra **Internet** cho **interface LAN**
 
-<figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Tại source bạn chọn dải **IP** được phép đi ra **Internet**
 
-<figure><img src="../../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 8:** Cấu hình **NAT** để các **vServer** có thể đi ra được **Internet**
 
 * Vào mục **Firewall** -> **NAT**
 
-<figure><img src="../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Chọn mode **NAT** sau đó tiến hành cấu hình **NAT**
 
