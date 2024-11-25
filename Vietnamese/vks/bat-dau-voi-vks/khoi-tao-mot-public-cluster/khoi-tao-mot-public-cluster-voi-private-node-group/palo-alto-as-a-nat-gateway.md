@@ -36,7 +36,7 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI của Palo Alto. Bạn cần tạo cùng VPC và sử dụng subnet khác với subnet có priority là 1 khi khởi tạo Palo Alto
 
-![](<../../../../.gitbook/assets/3 (1).png>)
+![](<../../../../.gitbook/assets/3 (1) (1).png>)
 
 **Bước 3**: Sau khi đăng nhập xong, bạn cần thực hiện thay đổi mật khẩu lần đầu. Hãy nhập mật khẩu mới theo mong muốn của bạn.
 
@@ -125,15 +125,15 @@ Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI c�
 
 * Vào phần **Policies** -> **NAT** -> **Add**
 
-<figure><img src="../../../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/1 (1).png" alt=""><figcaption></figcaption></figure>
 
 * Tại tab **General** đặt tên cho **NAT rule**
 
-<figure><img src="../../../../.gitbook/assets/2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/2 (1).png" alt=""><figcaption></figcaption></figure>
 
 * Tại tab **Original Packe**t chọn **Source Zone, Destination Zone, Destination Interface, Service, Source Address, Destination Address**
 
-<figure><img src="../../../../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/3 (1).png" alt=""><figcaption></figcaption></figure>
 
 * Tạo tab **Translated Packet** thực hiện cấu hình như hình bên dưới
 

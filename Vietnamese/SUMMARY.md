@@ -780,6 +780,8 @@
     * [API Key](vcdn/cac-tinh-nang-ho-tro/api-key.md)
     * [Lịch Sử Hoạt Động](vcdn/cac-tinh-nang-ho-tro/lich-su-hoat-dong.md)
     * [IAM](vcdn/cac-tinh-nang-ho-tro/iam.md)
+  * [Usecase](vcdn/usecase/README.md)
+    * [CDN Purge Cache](vcdn/usecase/cdn-purge-cache.md)
   * [Giám sát hoạt động](vcdn/giam-sat-hoat-dong/README.md)
     * [Tổng Lưu Lượng Theo Tháng](vcdn/giam-sat-hoat-dong/tong-luu-luong-theo-thang.md)
     * [CDN – Origin Request/s](vcdn/giam-sat-hoat-dong/cdn-origin-request-s.md)

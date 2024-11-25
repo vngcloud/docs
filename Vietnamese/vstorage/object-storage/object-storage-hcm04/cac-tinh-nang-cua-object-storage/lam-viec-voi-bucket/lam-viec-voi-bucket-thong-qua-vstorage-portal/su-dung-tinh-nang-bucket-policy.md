@@ -10,7 +10,7 @@ Tính năng **Bucket Policy** trên vStorage là một công cụ mạnh mẽ gi
 
 3\. Chọn biểu tượng **Action** và chọn **Configure policy.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\. Tại đây, bạn có thể chọn cấu hình cho từng **Statement** ở bên trái hoặc trực tiếp chỉnh sửa file JSON ở cột bên phải. Cụ thể cấu trúc một Bucket Policy bao gồm:
 
@@ -22,7 +22,7 @@ Tính năng **Bucket Policy** trên vStorage là một công cụ mạnh mẽ gi
   * **Resource**: Các bucket và object cụ thể bị ảnh hưởng bởi policy (dùng ARN để định danh tài nguyên).
   * **Condition**: (Tùy chọn) Điều kiện cụ thể giới hạn quyền truy cập.
 
-<figure><img src="../../../../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\. Chọn **Save** để lưu lại cấu hình Bucket Policy.
 

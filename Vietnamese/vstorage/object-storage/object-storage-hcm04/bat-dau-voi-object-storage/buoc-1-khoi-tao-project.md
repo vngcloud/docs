@@ -1,6 +1,6 @@
 # Bước 1: Khởi tạo project
 
-Bắt đầu sử dụng dịch vụ, bạn cần tạo một project. Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên VNG Cloud. **Với Region HCM04, tại  một thời điểm **<mark style="color:red;">**bạn chỉ có thể sở hữu một Project**</mark>** và sử dụng chúng để tổ chức lưu trữ dữ liệu của bạn.**
+Bắt đầu sử dụng dịch vụ, bạn cần tạo một project. Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên VNG Cloud. **Với Region HCM04, tại  một thời điểm&#x20;**<mark style="color:red;">**bạn chỉ có thể sở hữu một Project**</mark>**&#x20;và sử dụng chúng để tổ chức lưu trữ dữ liệu của bạn.**
 
 Thực hiện tạo project theo các bước bên dưới:
 
@@ -12,4 +12,4 @@ Thực hiện tạo project theo các bước bên dưới:
 6. Chọn **Period** và chọn/bỏ chọn **Auto-renew** theo nhu cầu của bạn.
 7. Thực hiện các bước **Thanh toán** giỏ hàng và **Project** của bạn sẽ được khởi tạo.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
