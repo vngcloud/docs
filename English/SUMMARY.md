@@ -655,6 +655,8 @@
     * [API Key](vcdn/cac-tinh-nang-ho-tro/api-key.md)
     * [Action History](vcdn/cac-tinh-nang-ho-tro/lich-su-hoat-dong.md)
     * [IAM](vcdn/cac-tinh-nang-ho-tro/iam.md)
+  * [Usecase](vcdn/usecase/README.md)
+    * [CDN Purge Cache](vcdn/usecase/cdn-purge-cache.md)
   * [Monitoring](vcdn/giam-sat-hoat-dong/README.md)
     * [Traffic Consuming](vcdn/giam-sat-hoat-dong/tong-luu-luong-theo-thang.md)
     * [CDN – Origin Request/s](vcdn/giam-sat-hoat-dong/cdn-origin-request-s.md)

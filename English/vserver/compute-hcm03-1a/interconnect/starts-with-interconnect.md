@@ -17,7 +17,7 @@ If you want to connect from your premises, you need to work with us to select a 
 
 During deployment, we will proceed based on:
 
-**Dedicated Connection:**Exclusive access to the cross-connect, providing 1 Gbps or 10 Gbps bandwidth options (depending on the available bandwidth at your Direct Connect location). Multiple logical virtual interfaces can be created for each physical connection at selected Interconnect locations.
+**Dedicated Connection:**&#x45;xclusive access to the cross-connect, providing 1 Gbps or 10 Gbps bandwidth options (depending on the available bandwidth at your Direct Connect location). Multiple logical virtual interfaces can be created for each physical connection at selected Interconnect locations.
 
 Next, set up the virtual connection type in one of the following ways:
 

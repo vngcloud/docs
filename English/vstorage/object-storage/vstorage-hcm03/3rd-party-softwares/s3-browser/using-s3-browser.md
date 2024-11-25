@@ -8,19 +8,19 @@ On the interface, you can easily see and perform various operations, including:
 * **Upload/Download file**
 * **Create/Delete Folder, File**
 
-<figure><img src="../../../../../.gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (16) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Below are some commonly used advanced configurations:
 
 1. **Tools → Options**
 
-<figure><img src="../../../../../.gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (17) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. **General**
 
 * **Enable Multipart uploads with part size**: depending on the file size, consider the size for each part to ensure it does not exceed 1000 parts (the maximum number of parts that vStorage supports for each file).
 
-<figure><img src="../../../../../.gitbook/assets/image (18) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Bandwidth Throttling:**
 

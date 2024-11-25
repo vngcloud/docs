@@ -8,4 +8,4 @@ To access this feature, click on "Request ticket" in the main menu to be redirec
 
 #### Request Management Page Interface
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

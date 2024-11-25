@@ -14,11 +14,11 @@ In this article, we will learn how to use and manage a Network Load Balancer (AL
 
 **Step 2:** Configure Load Balancer
 
-* _**Load Balancer Name**_** :** If the user does not actively fill in the Load Balancer name, the system will automatically generate the Load Balancer name.
-* _**Layer**_** :** Select **"Network - TCP/UDP"**
+* _**Load Balancer Name**_**&#x20;:** If the user does not actively fill in the Load Balancer name, the system will automatically generate the Load Balancer name.
+* _**Layer**_**&#x20;:** Select **"Network - TCP/UDP"**
 * **Tags:** Fill in the Tags and values ​​to mark the Load Balancer to create
 * _**Load Balancer Package**_ : Choose the initialization package that suits your needs and purposes, note that this package is the main factor used to initialize and operate your Load Balancer.
-* _**Network Settings**_** : Select an** available Network (VPC) from your network list. If you have not initialized a VPC, refer to the Network Configuration guide .
+* _**Network Settings**_**&#x20;: Select an** available Network (VPC) from your network list. If you have not initialized a VPC, refer to the Network Configuration guide .
 
 {% hint style="info" %}
 vCloudStack service only applies **the Internal Scheme mechanism** , which only allows access to the internal network, so the default system configuration is with the Internal mechanism.

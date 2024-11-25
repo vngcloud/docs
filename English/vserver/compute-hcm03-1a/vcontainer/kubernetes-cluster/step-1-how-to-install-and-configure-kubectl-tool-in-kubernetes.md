@@ -99,12 +99,12 @@ If you are on Windows and using the package manager [Powershell Gallery](https:/
 1.  Execute the following installation commands (make sure you define  DownloadLocation yourself):\
     `Install-Script -Name install-kubectl -Scope CurrentUser -Force`\
     `install-kubectl.ps1 [-DownloadLocation <path>]`\
-    _**Note:** If you do not define DownloadLocation, kubectl  will be installed in the user's temp directory._
+    &#xNAN;_**Note:** If you do not define DownloadLocation, kubectl  will be installed in the user's temp directory._
 
     The installation will generate `$HOME/.kube` and instructions for creating the configuration file
 2. Make sure that the version you have installed is the latest:\
    `kubectl version`\
-   _**Note:** Update of the installation will be performed when rerunning the commands from step 1._
+   &#xNAN;_**Note:** Update of the installation will be performed when rerunning the commands from step 1._
 
 #### Install on Windows using Chocolatey or Scoop <a href="#step1-howtoinstallandconfigurekubectltoolinkubernetes-installonwindowsusingchocolateyorscoop" id="step1-howtoinstallandconfigurekubectltoolinkubernetes-installonwindowsusingchocolateyorscoop"></a>
 
@@ -125,7 +125,7 @@ To install kubectl on Windows you can use the package manager [Chocolatey](https
    `cd .kube`
 5. Configure kubectl to use a remote Kubernetes cluster:\
    `New-Item config -type file`\
-   _**Note:** Edit the configuration file with a text editor, such as Notepad._
+   &#xNAN;_**Note:** Edit the configuration file with a text editor, such as Notepad._
 
 #### Download from part of Google Cloud SDK <a href="#step1-howtoinstallandconfigurekubectltoolinkubernetes-downloadfrompartofgooglecloudsdk" id="step1-howtoinstallandconfigurekubectltoolinkubernetes-downloadfrompartofgooglecloudsdk"></a>
 

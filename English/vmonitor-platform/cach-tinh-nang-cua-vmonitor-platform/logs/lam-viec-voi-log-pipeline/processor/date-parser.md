@@ -23,7 +23,7 @@ For example:
 
 <table data-full-width="true"><thead><tr><th>Items</th><th>Value</th><th>Meaning</th><th>Source logs</th><th>Destination logs</th></tr></thead><tbody><tr><td><strong>Source field</strong></td><td>date</td><td>Field nguồn cần parser là <strong>date</strong>.</td><td>{ "date":"Apr 17 09:32:01 }</td><td>{"date":"2023-08-01T07:45:11.130Z",}</td></tr><tr><td><strong>Locate</strong></td><td>Vietnamese</td><td>Ngôn ngữ sử dụng là <strong>Vietnamese</strong>.</td><td>nt</td><td>nt</td></tr><tr><td><strong>Timezone</strong></td><td>N/A</td><td>Múi giờ lấy theo hệ thống.</td><td>nt</td><td>nt</td></tr><tr><td><strong>Target field</strong></td><td>date_parser</td><td>Field được parser sẽ ghi đè vô Destination log ở field <strong>date_parser</strong>.</td><td>nt</td><td>nt</td></tr><tr><td><strong>Pattern</strong></td><td>yyyy-MM-dd'T'HH:mm:ss.SSSZ</td><td>Định dạng ngày tháng của field <strong>date</strong>.</td><td>nt</td><td>nt</td></tr></tbody></table>
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Store and reuse Parsing rules <a href="#luu-tru-va-tai-su-dung-parsing-rule" id="luu-tru-va-tai-su-dung-parsing-rule"></a>
 

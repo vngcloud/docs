@@ -9,7 +9,7 @@
 
 ![](https://contabo.com/blog/wp-content/uploads/2022/12/image-7.png)
 
-![](https://docs.vngcloud.vn/download/attachments/69468442/image2023-7-14\_14-15-57.png?version=1\&modificationDate=1703485380000\&api=v2)
+![](https://docs.vngcloud.vn/download/attachments/69468442/image2023-7-14_14-15-57.png?version=1\&modificationDate=1703485380000\&api=v2)
 
 **Upload an object into a container**
 
@@ -26,7 +26,7 @@
 2. On the object you want to delete, right-click, then choose **Delete**.
 3. On the confirmation delete screen, proceed to select **Delete**.
 
-<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Advanced usecase <a href="#usingcyberduck-advancedusecase" id="usingcyberduck-advancedusecase"></a>
 
@@ -36,9 +36,9 @@
 2. For the object you want to share, right-click, then choose **Copy URL** if you want to copy the Presign URL or choose **Open URL** if you want to open the Presign URL directly in the browser.
 3. Choose one of the methods for the **Presign URL** that you prefer.
 
-<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

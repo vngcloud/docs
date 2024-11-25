@@ -13,7 +13,7 @@ In the scaling group configuration, enter the necessary information
 * Max capcity: The maximum number of instances. When using the receiver to scale automatically, the Min / Max index will ensure that the instance does not go out of the number you want.
 * Timeout: The unit is seconds (s), if the group creation time exceeds the Timeout, this group will be faulty, normally you do not need to adjust this parameter.\
   If you already have a pre-made policy and want to attach it, you can click Advance and select it in the policy list. You can skip this section and add it later.\
-  _**Note:** if you have created a policy but do not see it in the Policy list, you can review and change the selection of the Type policy section. The policy list displays only those policies that match the selected policy type_
+  &#xNAN;_**Note:** if you have created a policy but do not see it in the Policy list, you can review and change the selection of the Type policy section. The policy list displays only those policies that match the selected policy type_
 
 **Step 2:** Click next to go to the Summary interface, here please check the information you have entered again. Note that you cannot change the profile & group name after creating the group successfully
 

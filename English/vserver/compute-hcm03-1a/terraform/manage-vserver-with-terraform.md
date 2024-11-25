@@ -35,8 +35,8 @@ After downloading the Example folder to the computer, the user opens the file [v
 _chỉ để lại:_
 
 * _module "vserver" {_\
-  _source = "./modules/vng-cloud-vserver"_\
-  _}_
+  &#xNAN;_&#x73;ource = "./modules/vng-cloud-vserver"_\
+  &#xNAN;_}_
 
 
 

@@ -10,7 +10,7 @@
 
 On VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** operates according to the following model:
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **In there:**
 
@@ -34,9 +34,9 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
     * **Primary CIDR** : :This is the primary IP address range of the subnet. All internal IP addresses of virtual machines (VMs) in this subnet will be taken from this address range. For example, if you set Primary CIDR to 10.1.0.0/24, the IP addresses of the VMs will be in the range of 10.1.0.1 to 10.1.0.254.
     * **Secondary CIDR** : This is a secondary IP address range, used to provide additional IP addresses or to separate different services within the same subnet. Each Node has a private IP address range for its pods (Pod CIDR). The pods in each node use addresses from this CIDR and communicate over the virtual network.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**
@@ -78,7 +78,7 @@ To initialize a Cluster, follow the steps below:
 
 #### **Calculating the number of IPs for pods and nodes:** <a href="#cac-tinh-toan-so-luong-ip-cho-pod-va-node" id="cac-tinh-toan-so-luong-ip-cho-pod-va-node"></a>
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Suppose, when initializing the cluster, I choose:
 
@@ -94,7 +94,7 @@ Suppose, when initializing the cluster, I choose:
 | **/25**                 | 128                        | 32                                                                  | 128                                              | 64                                            |
 | **/26**                 | 64                         | 64                                                                  | 64                                               | 32                                            |
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**

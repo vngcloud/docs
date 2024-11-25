@@ -15,7 +15,7 @@ This topic provides an overview of available options and describes what to consi
 
 1. Open the vServer console at: [https://hcm-3.console.vngcloud.vn/vserver/container/cluster](https://hcm-3.console.vngcloud.vn/vserver/container/cluster).
 2. Choose **Create a Kubernetes Cluster**
-3. On the Cluster **basic configuration settings** page**,** enter the following fields:\
+3. On the Cluster **basic configuration settings** pag&#x65;**,** enter the following fields:\
 
    * **Name** – Name for your Cluster. It must be unique in your VNG Cloud account. Names can only contain alphanumeric characters (a-z, A-Z, 0-9, '\_', '-'). Your input data length should be between 5 and 50. The name must be unique in the Region and VNG Cloud account you are creating the Cluster for.
    * **Kubernetes version** – The Kubernetes instance to use for your Cluster. We recommend choosing the latest version, unless you need an older version.

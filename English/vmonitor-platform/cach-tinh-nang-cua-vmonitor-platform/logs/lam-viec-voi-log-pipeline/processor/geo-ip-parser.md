@@ -21,7 +21,7 @@ For example:
 
 <table data-full-width="true"><thead><tr><th>Source log project</th><th>Destination log project</th><th>Client_IP (field logs mà chúng tôi thực hiện parser)</th><th>Parser result</th></tr></thead><tbody><tr><td>webserver</td><td>webserver-parse</td><td>"client_ip: "31.184.238.22"</td><td>"client_ip_parse": { "ip": "182.34.27.162", "latitude": 36.0986, "longitude": 120.3719, "country_name": "China", "location": { "lat": 36.0986, "lon": 120.3719 }, "continent_code": "AS", "region_name": "Shandong", "country_code2": "CN", "timezone": "Asia/Shanghai", "country_code3": "CN", "region_code": "SD" },</td></tr></tbody></table>
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Store and reuse Parsing rules <a href="#luu-tru-va-tai-su-dung-parsing-rule" id="luu-tru-va-tai-su-dung-parsing-rule"></a>
 

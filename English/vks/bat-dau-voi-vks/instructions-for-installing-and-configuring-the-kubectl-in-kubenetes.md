@@ -358,7 +358,7 @@ However, the kubectl completion script depends on [**the bash-completion**](http
 brew install bash-completion@2
 ```
 
-1. From the output of this command, add the following to **`~/.bashrc`**your file: export BASH\_COMPLETION\_COMPAT\_DIR="/usr/local/etc/bash\_completion.d"
+1. From the output of this command, add the following to **`~/.bashrc`**&#x79;our file: export BASH\_COMPLETION\_COMPAT\_DIR="/usr/local/etc/bash\_completion.d"
 
 ```
 export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"

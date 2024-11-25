@@ -34,7 +34,7 @@ API HTTP tests allow you to send HTTP(s) requests to your service or application
   * **Test name:** name of API test
   * **Test type**: testing protocol, you choose HTTP(s)
   * **Verify** **ssl**: Choose whether to check SSL (True or False)
-  * **Method:**Choose a method to check your endpoint (Get, Post, Put, Delete)
+  * **Method:**&#x43;hoose a method to check your endpoint (Get, Post, Put, Delete)
   * **URL**: Fill in the service information you want to check, for example [https://google.com](https://google.com/)
 
 <figure><img src="../../.gitbook/assets/image (38) (1).png" alt=""><figcaption></figcaption></figure>
