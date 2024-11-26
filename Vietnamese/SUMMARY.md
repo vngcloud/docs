@@ -950,6 +950,7 @@
         * [Mua Credit](quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/vconsole-kenh-quan-ly-chung-ve-hoa-don-va-tai-nguyen-tren-vng-cloud/trai-nghiem-vconsole/cac-tinh-nang-khac/mua-credit.md)
         * [Phân quyền truy cập thông qua IAM](quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/vconsole-kenh-quan-ly-chung-ve-hoa-don-va-tai-nguyen-tren-vng-cloud/trai-nghiem-vconsole/cac-tinh-nang-khac/phan-quyen-truy-cap-thong-qua-iam.md)
         * [Tag tài nguyên](quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/vconsole-kenh-quan-ly-chung-ve-hoa-don-va-tai-nguyen-tren-vng-cloud/trai-nghiem-vconsole/cac-tinh-nang-khac/tag-tai-nguyen.md)
+        * [Đồng bộ thời gian kết thúc](quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/vconsole-kenh-quan-ly-chung-ve-hoa-don-va-tai-nguyen-tren-vng-cloud/trai-nghiem-vconsole/cac-tinh-nang-khac/dong-bo-thoi-gian-ket-thuc.md)
   * [Trải nghiệm Billing & Kênh thanh toán](quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/README.md)
     * [Về Billing & Payment](quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/README.md)
       * [Người dùng trả trước & trả sau](quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/nguoi-dung-tra-truoc-and-tra-sau.md)
