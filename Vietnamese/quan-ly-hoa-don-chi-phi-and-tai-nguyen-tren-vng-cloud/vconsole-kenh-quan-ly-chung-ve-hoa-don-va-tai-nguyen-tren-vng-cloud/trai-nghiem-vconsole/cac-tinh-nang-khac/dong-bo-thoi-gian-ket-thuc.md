@@ -29,7 +29,7 @@ Với tính năng đồng bộ ngày kết thúc, bạn có thể quản lý t�
 4. **Thiết lập ngày kết thúc mới:**
    * Bước 1: Chọn ngày và giờ hết hạn mới cần áp dụng cho các tài nguyên
    * Bước 2: Xem lại các chi phí phát sinh cho từng tài nguyên, tương ứng với thời gian hạn thêm
-   *   Bước 3: Nhấn Match end time / Đống bộ gia hạn để xác nhận thực hiện gia hạn
+   *   Bước 3: Nhấn Match end time / Đồng bộ gia hạn để xác nhận thực hiện gia hạn
 
        <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 5. **Thực hiện thanh toán tại trang thanh toán để hoàn tất quá trình:**
