@@ -16,4 +16,4 @@ Trước khi có thể lưu trữ dữ liệu trong vStorage, bạn phải tạo
 * Khi bạn chọn **Enable Object Locked**, chúng tôi sẽ tự động bật tính năng **Object version** cho bucket của bạn.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

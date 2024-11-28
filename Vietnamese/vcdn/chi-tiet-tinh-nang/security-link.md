@@ -1,14 +1,14 @@
 # Security Link
 
-#### **Secure Token** <a href="#securitylink-securetoken" id="securitylink-securetoken"></a>
+## **Secure Token** <a href="#securitylink-securetoken" id="securitylink-securetoken"></a>
 
 Secure token là các đoạn mã có cấu trúc nhằm bảo vệ nội dung không bị đánh cắp và phát tán trên các nơi khác. Trên vCDN, chúng tôi hỗ trợ bạn có thể thực hiện bật tính năng Secure token khi tạo hoặc chỉnh sửa CDN đã tạo trước đó.
 
-<figure><img src="../../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-#### Sơ đồ hoạt động <a href="#securitylink-sodohoatdong" id="securitylink-sodohoatdong"></a>
+## Sơ đồ hoạt động <a href="#securitylink-sodohoatdong" id="securitylink-sodohoatdong"></a>
 
 Khi người dùng cuối cần truy cập vào nội dung đã được thiết lập kích hoạt "Secure token" thì yêu cầu này sẽ được hệ thống kiểm tra lại yêu cầu có thỏa công thức hay không, nếu thỏa thì người dùng cuối lấy được nội dung, nếu không thì yêu cầu sẽ bị từ chối.
 
@@ -32,48 +32,49 @@ Trong đó:&#x20;
     * **\<expiredTime>**: Thời gian epochtime hết hạn của URL, tính bằng seconds
     * **\<filePath>:/path/to/media**/xxx.\[m3u8|ts|mpd|dash] (tức là \<uri> bỏ đi phần xxx.\[m3u8|ts|mpd|dash], trường hợp ví dụ này sẽ là: /path/to/media)
     * **\<ClientIP>**: IP của client được cấp phép truy cập vào nội dung, chỉ cung cấp trong đường hợp bạn đã chọn bật "Include IP" trong cấu hình của dịch vụ CDN
-  * **Akamai**: Tham khảo hướng dẫn từ document của Akamai tại: [https://learn.akamai.com/en-us/webhelp/adaptive-media-delivery/adaptive-media-delivery-implementation-guide/GUID-041AEFDE-7E25-4AD8-B6C4-73F1B7200F02.html](https://learn.akamai.com/en-us/webhelp/adaptive-media-delivery/adaptive-media-delivery-implementation-guide/GUID-041AEFDE-7E25-4AD8-B6C4-73F1B7200F02.html)&#x20;
+  * **Akamai**:&#x20;
+    * Tham khảo hướng dẫn từ document của Akamai tại: [https://learn.akamai.com/en-us/webhelp/adaptive-media-delivery/adaptive-media-delivery-implementation-guide/GUID-041AEFDE-7E25-4AD8-B6C4-73F1B7200F02.html](https://learn.akamai.com/en-us/webhelp/adaptive-media-delivery/adaptive-media-delivery-implementation-guide/GUID-041AEFDE-7E25-4AD8-B6C4-73F1B7200F02.html)&#x20;
 
 ***
 
-#### **Sử dụng tính năng CORS** <a href="#securitylink-sudungtinhnangcors" id="securitylink-sudungtinhnangcors"></a>
+## **Sử dụng tính năng CORS** <a href="#securitylink-sudungtinhnangcors" id="securitylink-sudungtinhnangcors"></a>
 
 CORS là tính năng bảo mật đầu ra của vCDN cho phép truy cập có các cấu hình như: tên miền, địa chỉ IP,  Header, Method, Expose Header truy cập vào Link đầu ra của vCDN.
 
-<figure><img src="../../.gitbook/assets/image (227).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-#### **Khởi tạo Whitelist / Blacklist IP** <a href="#securitylink-khoitaowhitelist-blacklistip" id="securitylink-khoitaowhitelist-blacklistip"></a>
+## **Khởi tạo Whitelist / Blacklist IP** <a href="#securitylink-khoitaowhitelist-blacklistip" id="securitylink-khoitaowhitelist-blacklistip"></a>
 
-Có thể add các danh sách IP của các Origin cho phép truy cập vào link đầu ra (Whitelist IP).
+* **WhiteList IP:** Bạn có thể add các danh sách IP của các Origin cho phép truy cập vào link đầu ra bằng cách chọn **Allow** và nhập **IP Address** hoặc **CIDR** mà bạn mong muốn:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (228).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-khóa các IP không cho phép Origin truy cập vào link đầu ra của vCDN (Blacklist IP).
+* **BlackList IP:** Bên cạnh đó, bạn cũng có thể khóa các IP không cho phép Origin truy cập vào link đầu ra của vCDN:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (229).png" alt=""><figcaption></figcaption></figure>
-
-***
-
-#### **Geo Block** <a href="#securitylink-geoblock" id="securitylink-geoblock"></a>
-
-Có thể tạo danh sách những origin ở các quốc gia nào có thể truy cập link đầu ra:
-
-<figure><img src="../../.gitbook/assets/image (230).png" alt=""><figcaption></figcaption></figure>
-
-Không cho phép những Origin ở quốc gia nào truy cập Link đầu ra:
-
-<figure><img src="../../.gitbook/assets/image (231).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-#### **HTTP Referer Block** <a href="#securitylink-httprefererblock" id="securitylink-httprefererblock"></a>
+## **Geo Block** <a href="#securitylink-geoblock" id="securitylink-geoblock"></a>
 
-Cho phép Origin có domain trong list có thể truy cập link đầu ra:
+* Ngoài ra, bạn có thể tạo danh sách những origin ở các quốc gia nào có thể truy cập link đầu ra bằng cách chọn **Allow** và nhập **mã quốc gia** mong muốn:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-Không cho phép Origin có domain trong danh sách có thể truy cập link đầu ra:
+* Bạn cũng có thể thiết lập không cho phép những Origin ở quốc gia nào truy cập link đầu ra bằng cách chọn **Block** và nhập **mã quốc gia** mong muốn:
 
-<figure><img src="../../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+## **HTTP Referer Block** <a href="#securitylink-httprefererblock" id="securitylink-httprefererblock"></a>
+
+* Bạn có thể cho phép Origin có domain trong list có thể truy cập link đầu ra bằng cách chọn **Allow** và nhập **domain** mong muốn:&#x20;
+
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+* Sau cùng, bạn có thể không cho phép Origin có domain trong danh sách có thể truy cập link đầu ra bằng cách chọn **Block** và nhập **domain** mong muốn:
+
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
