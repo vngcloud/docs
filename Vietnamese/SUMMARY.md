@@ -488,6 +488,7 @@
       * [Bảo mật](backup-center/disaster-recovery-center-drc/server-disaster-recovery-sdr/bao-mat.md)
       * [Giám sát dịch vụ](backup-center/disaster-recovery-center-drc/server-disaster-recovery-sdr/giam-sat-dich-vu.md)
       * [Giới hạn dịch vụ](backup-center/disaster-recovery-center-drc/server-disaster-recovery-sdr/gioi-han-dich-vu.md)
+  * [Server Migration](backup-center/server-migration.md)
 * [vMonitor Platform](vmonitor/README.md)
   * [vMonitor Platform là gì](vmonitor-platform/vmonitor-platform-la-gi/README.md)
     * [vMonitor Platform Metric là gì?](vmonitor-platform/vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/README.md)
