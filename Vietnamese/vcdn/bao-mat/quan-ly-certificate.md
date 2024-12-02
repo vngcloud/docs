@@ -18,7 +18,7 @@ Tính năng **Quản lý Certificate** trên dịch vụ vCDN cho phép khách h
 
 **Bước 2:** Chọn mục **Certificate**, sau đó chọn **Upload.**
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Chọn vào nút **Upload Private Key** để tải lên private key của Certificate, hoặc cũng có thể paste private key vào khung bên dưới.
 

@@ -693,7 +693,6 @@
     * [Phiên bản hỗ trợ Kubernetes](vks/upgrade-kubernetes-version/phien-ban-ho-tro-kubernetes.md)
     * [Manually Upgrade](vks/upgrade-kubernetes-version/manually-upgrade.md)
     * [Automatically Upgrade](vks/upgrade-kubernetes-version/automatically-upgrade.md)
-    * [Force Upgrade](vks/upgrade-kubernetes-version/force-upgrade.md)
   * [Migration](vks/migration/README.md)
     * [Migrate Cluster từ VKS tới VKS](vks/migration/migrate-cluster-from-vks-to-vks.md)
     * [Migration Cluster từ vContainer tới VKS](vks/migration/migration-cluster-from-vcontainer-to-vks.md)

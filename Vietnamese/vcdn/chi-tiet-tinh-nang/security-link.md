@@ -41,7 +41,7 @@ Trong đó:&#x20;
 
 CORS là tính năng bảo mật đầu ra của vCDN cho phép truy cập có các cấu hình như: tên miền, địa chỉ IP,  Header, Method, Expose Header truy cập vào Link đầu ra của vCDN.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -49,11 +49,11 @@ CORS là tính năng bảo mật đầu ra của vCDN cho phép truy cập có c
 
 * **WhiteList IP:** Bạn có thể add các danh sách IP của các Origin cho phép truy cập vào link đầu ra bằng cách chọn **Allow** và nhập **IP Address** hoặc **CIDR** mà bạn mong muốn:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **BlackList IP:** Bên cạnh đó, bạn cũng có thể khóa các IP không cho phép Origin truy cập vào link đầu ra của vCDN:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
