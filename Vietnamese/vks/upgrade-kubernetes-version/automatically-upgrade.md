@@ -6,13 +6,13 @@
 
 **1. Required Upgrades (Nâng cấp bắt buộc)**
 
-* **Mục đích**: Các nâng cấp bắt buộc nhằm bảo vệ cụm khỏi các rủi ro liên quan đến bảo mật, ổn định và việc sử dụng các phiên bản K8S không còn được hỗ trợ.
+* **Mục đích**: Các nâng cấp bắt buộc nhằm bảo vệ cụm khỏi các rủi ro liên quan đến bảo mật, ổn định và việc sử dụng các phiên bản Kubernetes không còn được hỗ trợ.
 * **Cụ thể**: hệ thống VKS sẽ thực hiện upgrade cluster trong các trường hợp:
   * **End-of-Life (EOL) Upgrades**: Cập nhật Cluster lên các phiên bản mới hơn khi phiên bản hiện tại của Cluster sắp hết hạn.
   * **Security Upgrades**: Vá các lỗ hổng bảo mật, đảm bảo an toàn dữ liệu.
   * **Stability Upgrades**: Sửa các lỗi nghiêm trọng ảnh hưởng đến sự ổn định của hệ thống.
 * **Thời gian thực hiện**:
-  * Các nâng cấp này sẽ được hệ thống VKS tự động thực hiện <mark style="color:red;">**sau 8 giờ tối vào bất kỳ ngày nào**</mark> nếu cần, nhằm giảm thiểu ảnh hưởng đến người dùng. Chúng tôi sẽ thông báo cho bạn về các nâng cấp này trong thời gian sớm nhất.
+  * Các nâng cấp này sẽ được hệ thống VKS tự động thực hiện <mark style="color:red;">**sau 8 giờ tối vào bất kỳ ngày nào**</mark> nếu cần, nhằm giảm thiểu ảnh hưởng đến bạn. Chúng tôi sẽ thông báo cho bạn về các nâng cấp này trong thời gian sớm nhất.
 
 **2. Regular Upgrades (Nâng cấp thông thường)**
 
@@ -22,9 +22,9 @@
   * **Patch Version Upgrades**: Vá lỗi nhỏ và cải thiện hiệu suất. Ví dụ, nếu cluster hiện tại đang sử dụng phiên bản 1.29.1, hệ thống sẽ tự động nâng cấp lên phiên bản 1.29.2.
 *   **Thời gian thực hiện**:
 
-    * Người dùng có thể tự cấu hình lịch trình nâng cấp thông qua **VKS Portal** theo hướng dẫn dưới đây. Sau khi người dùng chọn lịch auto-upgrade qua VKS Portal, hệ thống sẽ **bắt đầu thực hiện nâng cấp sau ít nhất&#x20;**<mark style="color:red;">**7 ngày**</mark> kể từ ngày hiện tại. Thời gian này giúp bạn có đủ thời gian để chuẩn bị và kiểm tra trước khi nâng cấp diễn ra.
-    * Hệ thống sẽ **lặp lại với khoảng cách 7 ngày** kể từ lần nâng cấp trước đó và tuân theo các ngày đã được người dùng chọn.
-    * **Trước mỗi lần nâng cấp**, hệ thống sẽ gửi một **email thông báo** cho người dùng trước 6 ngày tính tới thời điểm chạy auto-upgrade thực tế. Trong email, chúng tôi sẽ nêu rõ thời gian cụ thể mà việc auto-upgrade sẽ diễn ra.
+    * Bạn có thể tự cấu hình lịch trình nâng cấp thông qua **VKS Portal** theo hướng dẫn dưới đây. Sau khi bạn chọn lịch auto-upgrade qua VKS Portal, hệ thống sẽ **bắt đầu thực hiện nâng cấp sau ít nhất&#x20;**<mark style="color:red;">**7 ngày**</mark> kể từ ngày hiện tại. Thời gian này giúp bạn có đủ thời gian để chuẩn bị và kiểm tra trước khi nâng cấp diễn ra.
+    * Hệ thống sẽ **lặp lại với khoảng cách 7 ngày** kể từ lần nâng cấp trước đó và tuân theo các ngày đã được bạn chọn.
+    * **Trước mỗi lần nâng cấp**, hệ thống sẽ gửi một **email thông báo** cho bạn trước 6 ngày tính tới thời điểm chạy auto-upgrade thực tế. Trong email, chúng tôi sẽ nêu rõ thời gian cụ thể mà việc auto-upgrade sẽ diễn ra.
     * Nếu **chọn nhiều ngày trong tuần** (như Thứ Hai, Thứ Năm), hệ thống sẽ tính toán chu kỳ nâng cấp 7 ngày cho từng ngày đã chọn, không ảnh hưởng đến các ngày khác.
 
     _Vui lòng tham khảo 2 ví dụ bên dưới để hiểu rõ cách hệ thống VKS thực hiện chạy Regular Upgrade._
@@ -35,7 +35,7 @@
 
 Giả sử _**Hôm nay là Thứ Hai (02/12/2024)**_
 
-* _Người dùng chọn auto-upgrade vào **Thứ Ba, 08:00 PM**._
+* _Bạn chọn auto-upgrade vào **Thứ Ba, 08:00 PM**._
 * _Lịch trình hoạt động của hệ thống sẽ như sau:_
   * _**Ngày 04/12/2024 (Thứ Tư)**: Gửi email thông báo lịch nâng cấp **lần 1**._
   * _**Ngày 10/12/2024 (Thứ Ba, 08:00 PM)**: Thực hiện **auto-upgrade lần 1**._
@@ -52,7 +52,7 @@ Giả sử _**Hôm nay là Thứ Hai (02/12/2024)**_
 
 _Giả sử **Hôm nay là Thứ Ba (03/12/2024)**_
 
-* _Người dùng chọn auto-upgrade vào **Thứ Hai và Thứ Năm, 12:00 PM**._
+* _Bạn chọn auto-upgrade vào **Thứ Hai và Thứ Năm, 12:00 PM**._
 * _Lịch trình hoạt động của hệ thống sẽ như sau:_
 
 _**Lịch Thứ Năm (12:00 PM)**:_
@@ -78,7 +78,7 @@ _**Lịch Thứ Hai(12:00 PM)**:_
 {% hint style="info" %}
 **Chú ý:**
 
-* Hệ thống VKS **sẽ cố gắng thực hiện nâng cấp** theo lịch trình mà người dùng đã cấu hình qua **VKS Portal**. Tuy nhiên, tùy thuộc vào tải của hệ thống, **một số lần nâng cấp có thể bị hoãn** hoặc không thực hiện đúng như lịch. Khi đó, hệ thống sẽ tự động chuyển lịch nâng cấp sang **thời điểm thích hợp tiếp theo**, chính là chu kỳ lặp lại 7 ngày tiếp theo.
+* Hệ thống VKS **sẽ cố gắng thực hiện nâng cấp** theo lịch trình mà bạn đã cấu hình qua **VKS Portal**. Tuy nhiên, tùy thuộc vào tải của hệ thống, **một số lần nâng cấp có thể bị hoãn** hoặc không thực hiện đúng như lịch. Khi đó, hệ thống sẽ tự động chuyển lịch nâng cấp sang **thời điểm thích hợp tiếp theo**, chính là chu kỳ lặp lại 7 ngày tiếp theo.
 {% endhint %}
 
 ***
@@ -121,7 +121,7 @@ Trên hệ thống VKS, required upgrades bao gồm **End-of-Life (EOL) Upgrades
 * Cluster đang sử dụng phiên bản Kubernetes vẫn nằm trong danh sách được hỗ trợ.
 * Tránh các vấn đề nghiêm trọng có thể gây rủi ro đến bảo mật hoặc dữ liệu.
 
-Trước khi thực hiện Required Upgrade, hệ thống sẽ gửi email thông báo chi tiết cho người dùng, bao gồm:
+Trước khi thực hiện Required Upgrade, hệ thống sẽ gửi email thông báo chi tiết cho bạn, bao gồm:
 
 * Thông tin Cluster/ Node Group dự kiến được nâng cấp.
 * Phiên bản hiện tại và Phiên bản nâng cấp dự kiến.
@@ -129,15 +129,15 @@ Trước khi thực hiện Required Upgrade, hệ thống sẽ gửi email thôn
 
 Sau khi nâng cấp hoàn tất, hệ thống sẽ gửi email xác nhận tình trạng cluster và các thay đổi liên quan.
 
-Riêng đối với trường hợp Force Upgrade, khi phát hiện ra K8S version của bạn sắp hết hạn hỗ trợ. Chúng tôi sẽ gửi email thông báo cho bạn trước **60 ngày, 30 ngày, 7 ngày và 1 ngày**. Trong thời gian này, bạn có thể thực hiện nâng cấp thủ công phiên bản Kubernetes theo hướng dẫn tại [đây](https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fu12870758.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3Du001.vda61hAEHzraUZiFEAx2oFVwlFdN4LK9jzTWVipAv4Ks2IHGnkvYOFwnYGbrLakFycDoYbAVN5NzCOJfc8btlUf0C77d9kMqanNkpXeqyOed2Za4v-2B9srFvWJWYzR6wccSV5_dyDPiFevWkF3IFJSeHahtiBTRoMTaCXpghDa7DsTdVrJTPv7hvyDghooxcnmQyXMrLB4L-2B-2BRR3LAy-2Bz6SXuE-2BEmWbsFDbRxo0f-2FN4wIKearThhV4M6FLKHonBeu0NWgCtLmGYir0vP35-2BfHkuoCPFU4btgSBv-2FAq3VqaabRH3XftKYUfBwlBM0joi6BHgcDV-2FczRMF3Wi9RCszUWj5PYkw-3D-3D\&data=05%7C02%7Cthuyvt2%40vng.com.vn%7C84fe08d3a6524d2196c608dd08435432%7C7c112a6e10e24e09afc42e37bc60d821%7C0%7C0%7C638675807483573382%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C\&sdata=O2rFFsH4CpQe54CPzNRB2IAidvE7jhn4j6tl3vjuNlA%3D\&reserved=0). Sau thời gian này, nếu bạn không thực hiện nâng cấp thủ công, chúng tôi sẽ tiến hành force upgrade lên phiên bản Kubernetes được hỗ trợ gần nhất. Tùy thuộc vào workload của bạn mà quá trình nâng cấp có thể gây gián đoạn dịch vụ trong khoảng thời gian khác nhau. Vui lòng tham khảo mục bên dưới để biết chi tiết.
+Riêng đối với trường hợp Force Upgrade, khi phát hiện ra Kubernetes version của bạn sắp hết hạn hỗ trợ. Chúng tôi sẽ gửi email thông báo cho bạn trước **60 ngày, 30 ngày, 7 ngày và 1 ngày**. Trong thời gian này, bạn có thể thực hiện nâng cấp thủ công phiên bản Kubernetes theo hướng dẫn tại [đây](https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fu12870758.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3Du001.vda61hAEHzraUZiFEAx2oFVwlFdN4LK9jzTWVipAv4Ks2IHGnkvYOFwnYGbrLakFycDoYbAVN5NzCOJfc8btlUf0C77d9kMqanNkpXeqyOed2Za4v-2B9srFvWJWYzR6wccSV5_dyDPiFevWkF3IFJSeHahtiBTRoMTaCXpghDa7DsTdVrJTPv7hvyDghooxcnmQyXMrLB4L-2B-2BRR3LAy-2Bz6SXuE-2BEmWbsFDbRxo0f-2FN4wIKearThhV4M6FLKHonBeu0NWgCtLmGYir0vP35-2BfHkuoCPFU4btgSBv-2FAq3VqaabRH3XftKYUfBwlBM0joi6BHgcDV-2FczRMF3Wi9RCszUWj5PYkw-3D-3D\&data=05%7C02%7Cthuyvt2%40vng.com.vn%7C84fe08d3a6524d2196c608dd08435432%7C7c112a6e10e24e09afc42e37bc60d821%7C0%7C0%7C638675807483573382%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C\&sdata=O2rFFsH4CpQe54CPzNRB2IAidvE7jhn4j6tl3vjuNlA%3D\&reserved=0). Sau thời gian này, nếu bạn không thực hiện nâng cấp thủ công, chúng tôi sẽ tiến hành force upgrade lên phiên bản Kubernetes được hỗ trợ gần nhất. Tùy thuộc vào workload của bạn mà quá trình nâng cấp có thể gây gián đoạn dịch vụ trong khoảng thời gian khác nhau. Vui lòng tham khảo mục bên dưới để biết chi tiết.
 
 ***
 
 ### **Regular Upgrades**
 
-Regular Upgrades bao gồm các nâng cấp **Minor** và **Patch** nhằm cải thiện hiệu năng, tính năng mới, và sửa các lỗi nhỏ trong hệ thống Kubernetes. Người dùng có thể tự cấu hình lịch Regular Upgrades thông qua **VKS Portal**. Hệ thống sẽ cố gắng thực hiện nâng cấp trong cluster theo ngày, giờ mà bạn đã chỉ định.&#x20;
+Regular Upgrades bao gồm các nâng cấp **Minor** và **Patch** nhằm cải thiện hiệu năng, tính năng mới, và sửa các lỗi nhỏ trong hệ thống Kubernetes. Bạn có thể tự cấu hình lịch Regular Upgrades thông qua **VKS Portal**. Hệ thống sẽ cố gắng thực hiện nâng cấp trong cluster theo ngày, giờ mà bạn đã chỉ định.&#x20;
 
-Trước khi thực hiện Regular Upgrade, hệ thống sẽ gửi email thông báo chi tiết cho người dùng, bao gồm:
+Trước khi thực hiện Regular Upgrade, hệ thống sẽ gửi email thông báo chi tiết cho bạn, bao gồm:
 
 * Thông tin Cluster/ Node Group dự kiến được nâng cấp.
 * Phiên bản hiện tại và Phiên bản nâng cấp dự kiến.
