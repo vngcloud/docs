@@ -7,17 +7,16 @@ Dịch vụ File Storage cung cấp hai phương thức thanh toán để phục
 
 ## **Cách Tính Phí File Storage**
 
-Cách tính phí File Storage áp dụng chung cho cả 2 hình thức thanh toán, bao gồm Trả Trước và Trả Sau.
+* File Storage được tính phí dựa trên dung lượng thực tế bạn sử dụng và thời gian lưu trữ của chúng.
+  * Nếu bạn sử dụng ít hơn 1TB mỗi tháng, dung lượng sẽ được tính tối thiểu 1TB.&#x20;
+  * Nếu vượt quá 1TB, bạn sẽ trả phí dựa trên dung lượng thực tế đã sử dụng.&#x20;
+    * Ví dụ:
+      * Nếu Usage của bạn là 51 GB, bạn sẽ cần trả phí là 1 TB
+      * Nếu Usage của bạn là 1.1 TB, bạn sẽ cần trả phí là 1.1 TB
 
-* **Đầu tiên, bạn sẽ được miễn phí sử dụng 50 GB/ 1 File Storage/ 1 Tháng.**
-* **Tiếp theo, chi phí của việc sử dụng File Storage được tính dựa trên usage thực tế mà người dùng sử dụng trên File Storage đó.**
-* **Giá trị Usage nhỏ nhất hệ thống ghi nhận là 1 TB, nếu cuối tháng, Usage của bạn sau khi đã trừ đi 50 GB Free có giá trị < 1 TB, hệ thống sẽ ghi nhận usage này là 1 TB và tính toán hóa đơn trên giá trị này.**
+**Phí File Storage fee là 58.3 VND / 1 GB / 1 ngày (Đã bao gồm VAT)**
 
-_<mark style="background-color:green;">Ví dụ: Bạn là KH sử dụng File Storage, bạn đã khởi tạo 3 file storage và sử dụng trong tháng với thông số:</mark>_&#x20;
-
-* _<mark style="background-color:green;">File Storage A: Max quota = 1 TB, Usage trong toàn tháng = 48 GB => Do Usage trong tháng < 50 GB nên bạn sẽ không phát sinh chi phí trên file storage này.</mark>_
-* _<mark style="background-color:green;">File Storage B: Max quota = 1 TB, Usage trong toàn tháng = 60 GB => Do ngoài 50 GB miễn phí, KH đã sử dụng 60 - 50 = 10 GB nên mức Usage hệ thống ghi nhận để tính toán là 1 TB (1024 GB).</mark>_
-* _<mark style="background-color:green;">File Storage C: Max quota = 2 GB, Usage trong toàn tháng = 1100 GB => Do ngoài 50 GB miễn phí, KH đã sử dụng 1100 - 50 = 1050 GB nên mức Usage hệ thống ghi nhận để tính toán là 1050 GB.</mark>_
+Ngoài ra, VKS sẽ miễn phí 50 GB dung lượng cho Public NFS File Storage đầu tiên tính tới 31/12/2024.
 
 ### **Phương thức thanh toán trả trước**
 
