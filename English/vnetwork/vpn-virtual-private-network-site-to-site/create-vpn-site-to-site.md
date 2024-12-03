@@ -8,15 +8,15 @@ description: >-
 
 Create VPN Step By Step
 
-**Step 1:** Access VNG Cloud successfully, at the main dashboard, select **vNetwork** Service to redirect to vNetwork Dashboard or click here to access HCM03 vNetwork Dashboard [https://hcm-3-vnetwork.console.vngcloud.vn/overview](https://hcm-3-vnetwork.console.vngcloud.vn/overview)
+#### **Step 1:** Access the VPN Creation Page from the vNetwork Dashboard
 
-**Step 2:** On the left menu of the vNetwork Dashboard, choose the VPN Site To Site Menu, the VPN list will be shown at the center.
-
-**Step 3:** Click "<mark style="color:blue;">**Create new VPN Connection**</mark>";
+* Access VNG Cloud successfully, at the main dashboard, select **vNetwork** Service to redirect to vNetwork Dashboard or click here to access HCM03 vNetwork Dashboard [https://hcm-3-vnetwork.console.vngcloud.vn/overview](https://hcm-3-vnetwork.console.vngcloud.vn/overview)
+* On the left menu of the vNetwork Dashboard, choose the VPN Site To Site Menu, the VPN list will be shown at the center.
+* Click "<mark style="color:blue;">**Create new VPN Connection**</mark>";
 
 <figure><img src="../../.gitbook/assets/1 (2).png" alt=""><figcaption></figcaption></figure>
 
-**Step 4:** At the Creation View, fill in the information with the instructions below:
+#### **Step 2:** At the Creation View, fill in the information with the instructions below:
 
 * <mark style="color:blue;">**VPN Name**</mark>: Fill in the Name of the VPN.
 * <mark style="color:blue;">**Select VPN Package**</mark>: Select a suitable VPN package that meets expectations.
@@ -31,30 +31,31 @@ Create VPN Step By Step
 
 
     <figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Create VPN</p></figcaption></figure>
-* Beside that Component <mark style="color:blue;">**Algorithm Configuration**</mark> defines factors for a basic VPN connection, currently, VNGCloud supports the default config in the below pic. _The customer can customize it on the nearest day_
-  * &#x20;**IKE Policy**: Configure for Phase 1 of VPN IPSEC (Config at 2 sites must be the same).
-  * **IPsec Policy**: Configure for Phase 2 of VPN IPSEC  (Config at 2 sites must be the same).
+* Besides that Component <mark style="color:blue;">**Algorithm Configuration**</mark> defines factors for a basic VPN connection, currently, VNGCloud supports the default config in the below pic. _The customer can customize it on the nearest day_
+  * &#x20;**IKE Policy**: Configure for Phase 1 of VPN IPSEC (the Configuration at both sites must be the same).
+  * **IPsec Policy**: Configure for Phase 2 of VPN IPSEC  (the Configuration at both sites must be the same).
 
 <figure><img src="../../.gitbook/assets/image (300).png" alt=""><figcaption></figcaption></figure>
 
-**Step 5:** On the right side of the Create Page, review carefully the price of the selected VPN Package, click <mark style="color:blue;">**"Create A VPN Connection"**</mark> to confirm, and go to the checkout page
+* On the right side of the Create Page, review carefully the price of the selected VPN Package, click <mark style="color:blue;">**"Create A VPN Connection"**</mark> to confirm, and go to the checkout page
 
-**Step 6:** After checkout successfully, the system will start creating a connection with the above VPN input information and redirect to the VPN List Page [https://hcm-3-vnetwork.console.vngcloud.vn/vpn/list](https://hcm-3-vnetwork.console.vngcloud.vn/vpn/list)
+_-> After checkout successfully, the system will start creating a connection with the above VPN input information and redirect to the VPN List Page_ [_https://hcm-3-vnetwork.console.vngcloud.vn/vpn/list_](https://hcm-3-vnetwork.console.vngcloud.vn/vpn/list)
 
 {% hint style="success" %}
 **Status of VPN Initialization:**
 
 * At VPN List could see the VPN just created with "<mark style="color:blue;">**Provisioning**</mark>" status (the system is processing);
 * After finishing status will be changed to "<mark style="color:blue;">**Active**</mark>" automatically.
+* Provisioning time for one VPN is around 3 to 5 minutes, it takes long time to initial IPSEC service and the Default Tunnel Connection
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (301).png" alt=""><figcaption><p>VPN List</p></figcaption></figure>
 
-**Step 7:** Verify Created VPN by clicking Name of VPN to jump to Detail Page
+#### **Step 3:** Verify Created VPN by clicking Name of VPN to jump to the Detail Page
 
 <figure><img src="../../.gitbook/assets/image (302).png" alt=""><figcaption><p>VPN Detail</p></figcaption></figure>
 
-**Step 8:** Create a Route to route traffic to remote LAN CIDR through VPN **Private Gateway IP** _(view at Detail Page)_
+#### **Step 4:** Create a Route to route traffic to remote LAN CIDR through VPN **Private Gateway IP** _(view at Detail Page)_
 
 Access vServer Router Tables to config routing for VPN [https://hcm-3.console.vngcloud.vn/vserver/network/route-table](https://hcm-3.console.vngcloud.vn/vserver/network/route-table)
 
