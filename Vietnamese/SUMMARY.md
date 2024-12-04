@@ -754,7 +754,7 @@
         * [Live Transcode kết hợp record để phát VOD về sau.](vcdn/loai-hinh-dich-vu/transcoding-va-cac-tinh-nang-nang-cao/cac-truong-hop-su-dung/live-transcode-ket-hop-record-de-phat-vod-ve-sau..md)
         * [Tạo kênh Restream đồng thời lên nhiều nền tảng (RTMP)](vcdn/loai-hinh-dich-vu/transcoding-va-cac-tinh-nang-nang-cao/cac-truong-hop-su-dung/tao-kenh-restream-dong-thoi-len-nhieu-nen-tang-rtmp.md)
         * [Transcode file video (MP4)](vcdn/loai-hinh-dich-vu/transcoding-va-cac-tinh-nang-nang-cao/cac-truong-hop-su-dung/transcode-file-video-mp4.md)
-      * [API developers](vcdn/loai-hinh-dich-vu/transcoding/api-developers.md)
+      * [Sigma API developers](vcdn/loai-hinh-dich-vu/transcoding/api-developers.md)
     * [Sử dụng ứng dụng OBS Studio để push luồng Live Stream](vcdn/loai-hinh-dich-vu/su-dung-ung-dung-obs-studio-de-push-luong-live-stream.md)
   * [Chi tiết tính năng](vcdn/chi-tiet-tinh-nang.md)
     * [Security Link](vcdn/chi-tiet-tinh-nang/security-link.md)
