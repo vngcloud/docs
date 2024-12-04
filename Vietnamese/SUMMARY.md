@@ -778,7 +778,6 @@
   * [Báo cáo](vcdn/bao-cao.md)
   * [Bảo mật](vcdn/bao-mat/README.md)
     * [Quản lý Certificate](vcdn/bao-mat/quan-ly-certificate.md)
-  * [Security (vCDN)](vcdn/security-vcdn.md)
 * [vCloudStack](vcloudstack/README.md)
   * [Bắt đầu với vCloudStack](vcloudstack/bat-dau-voi-vcloudstack/README.md)
     * [Tổng quan các tính năng](vcloudstack/bat-dau-voi-vcloudstack/tong-quan-cac-tinh-nang.md)

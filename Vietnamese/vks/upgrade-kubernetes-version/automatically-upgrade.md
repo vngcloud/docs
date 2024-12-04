@@ -22,10 +22,10 @@
   * **Patch Version Upgrades**: Vá lỗi nhỏ và cải thiện hiệu suất. Ví dụ, nếu cluster hiện tại đang sử dụng phiên bản 1.29.1, hệ thống sẽ tự động nâng cấp lên phiên bản 1.29.2.
 *   **Thời gian thực hiện**:
 
-    * Bạn có thể tự cấu hình lịch trình nâng cấp thông qua **VKS Portal** theo hướng dẫn dưới đây. Sau khi bạn chọn lịch auto-upgrade qua VKS Portal, hệ thống sẽ **bắt đầu thực hiện nâng cấp sau ít nhất&#x20;**<mark style="color:red;">**7 ngày**</mark> kể từ ngày hiện tại. Thời gian này giúp bạn có đủ thời gian để chuẩn bị và kiểm tra trước khi nâng cấp diễn ra.
-    * Hệ thống sẽ **lặp lại với khoảng cách 7 ngày** kể từ lần nâng cấp trước đó và tuân theo các ngày đã được bạn chọn.
+    * Bạn có thể tự cấu hình lịch trình nâng cấp thông qua **VKS Portal** theo hướng dẫn dưới đây. Sau khi bạn chọn lịch auto-upgrade qua VKS Portal, hệ thống sẽ **bắt đầu thực hiện nâng cấp sau ít nhất&#x20;**<mark style="color:red;">**6 ngày**</mark> kể từ ngày hiện tại. Thời gian này giúp bạn có đủ thời gian để chuẩn bị và kiểm tra trước khi nâng cấp diễn ra.
+    * Hệ thống sẽ **lặp lại cho các tuần kế tiếp** kể từ lần nâng cấp trước đó và tuân theo các ngày đã được bạn chọn.
     * **Trước mỗi lần nâng cấp**, hệ thống sẽ gửi một **email thông báo** cho bạn trước 6 ngày tính tới thời điểm chạy auto-upgrade thực tế. Trong email, chúng tôi sẽ nêu rõ thời gian cụ thể mà việc auto-upgrade sẽ diễn ra.
-    * Nếu **chọn nhiều ngày trong tuần** (như Thứ Hai, Thứ Năm), hệ thống sẽ tính toán chu kỳ nâng cấp 7 ngày cho từng ngày đã chọn, không ảnh hưởng đến các ngày khác.
+    * Nếu **chọn nhiều ngày trong tuần** (như Thứ Hai, Thứ Năm), hệ thống sẽ tính toán chu kỳ nâng cấp cho các ngày đã chọn, không ảnh hưởng đến các ngày khác.
 
     _Vui lòng tham khảo 2 ví dụ bên dưới để hiểu rõ cách hệ thống VKS thực hiện chạy Regular Upgrade._
 
@@ -38,11 +38,11 @@ Giả sử _**Hôm nay là Thứ Hai (02/12/2024)**_
 * _Bạn chọn auto-upgrade vào **Thứ Ba, 08:00 PM**._
 * _Lịch trình hoạt động của hệ thống sẽ như sau:_
   * _**Ngày 04/12/2024 (Thứ Tư)**: Gửi email thông báo lịch nâng cấp **lần 1**._
-  * _**Ngày 10/12/2024 (Thứ Ba, 08:00 PM)**: Thực hiện **auto-upgrade lần 1**._
+  * _**Ngày 10/12/2024 (Thứ Ba, 08:00 PM)**: Thực hiện **auto-upgrade lần 1 thành công.**_
   * _**Ngày 11/12/2024 (Thứ Tư)**: Gửi email thông báo lịch nâng cấp **lần 2**._
-  * _**Ngày 17/12/2024 (Thứ Ba, 08:00 PM)**: Thực hiện **auto-upgrade lần 2**._
+  * _**Ngày 17/12/2024 (Thứ Ba, 08:00 PM)**: Thực hiện **auto-upgrade lần 2 thành công.**_
   * _**Ngày 18/12/2024 (Thứ Tư)**: Gửi email thông báo lịch nâng cấp **lần 3**._
-  * _**Ngày 24/12/2024 (Thứ Ba, 08:00 PM)**: Thực hiện **auto-upgrade lần 3**, và tiếp tục lặp lại._
+  * _**Ngày 24/12/2024 (Thứ Ba, 08:00 PM)**: Thực hiện **auto-upgrade lần 3 thành công**, và tiếp tục lặp lại._
 
 </details>
 
@@ -58,27 +58,27 @@ _Giả sử **Hôm nay là Thứ Ba (03/12/2024)**_
 _**Lịch Thứ Năm (12:00 PM)**:_
 
 * _**Ngày 06/12/2024 (Thứ Sáu)**: Gửi email thông báo lịch nâng cấp **lần 1**._
-* _**Ngày 12/12/2024 (Thứ Năm, 12:00 PM)**: Thực hiện **auto-upgrade lần 1**._
+* _**Ngày 12/12/2024 (Thứ Năm, 12:00 PM)**: Thực hiện **auto-upgrade lần 1 thành công.**._
 * _**Ngày 13/12/2024 (Thứ Sáu)**: Gửi email thông báo lịch nâng cấp **lần 2**._
-* _**Ngày 19/12/2024 (Thứ Năm, 12:00 PM)**: Thực hiện **auto-upgrade lần 2**._
+* _**Ngày 19/12/2024 (Thứ Năm, 12:00 PM)**: Thực hiện **auto-upgrade lần 2 thành công.**._
 * _**Ngày 20/12/2024 (Thứ Sáu)**: Gửi email thông báo lịch nâng cấp **lần 3**._
-* _**Ngày 26/12/2024 (Thứ Năm, 12:00 PM)**: Thực hiện **auto-upgrade lần 3,** và tiếp tục lặp lại._
+* _**Ngày 26/12/2024 (Thứ Năm, 12:00 PM)**: Thực hiện **auto-upgrade lần 3 thành công,** và tiếp tục lặp lại._
 
 _**Lịch Thứ Hai(12:00 PM)**:_
 
 * _**Ngày 10/12/2024 (Thứ Ba)**: Gửi email thông báo lịch nâng cấp **lần 1**._
-* _**Ngày 16/12/2024 (Thứ Hai, 12:00 PM)**: Thực hiện **auto-upgrade lần 4**._
+* _**Ngày 16/12/2024 (Thứ Hai, 12:00 PM)**: Thực hiện **auto-upgrade lần 1 thành công.**._
 * _**Ngày 17/12/2024 (Thứ Ba)**: Gửi email thông báo lịch nâng cấp **lần 2**._
-* _**Ngày 23/12/2024 (Thứ Hai, 12:00 PM)**: Thực hiện **auto-upgrade lần 2.**_
+* _**Ngày 23/12/2024 (Thứ Hai, 12:00 PM)**: Thực hiện **auto-upgrade lần 2 thành công..**_
 * _**Ngày 24/12/2024 (Thứ Ba)**: Gửi email thông báo lịch nâng cấp **lần 3**._
-* _**Ngày 30/12/2024 (Thứ Hai, 12:00 PM)**: Thực hiện **auto-upgrade lần 3,** và tiếp tục lặp lại._
+* _**Ngày 30/12/2024 (Thứ Hai, 12:00 PM)**: Thực hiện **auto-upgrade lần 3 thành công,** và tiếp tục lặp lại._
 
 </details>
 
 {% hint style="info" %}
 **Chú ý:**
 
-* Hệ thống VKS **sẽ cố gắng thực hiện nâng cấp** theo lịch trình mà bạn đã cấu hình qua **VKS Portal**. Tuy nhiên, tùy thuộc vào tải của hệ thống, **một số lần nâng cấp có thể bị hoãn** hoặc không thực hiện đúng như lịch. Khi đó, hệ thống sẽ tự động chuyển lịch nâng cấp sang **thời điểm thích hợp tiếp theo**, chính là chu kỳ lặp lại 7 ngày tiếp theo.
+* Hệ thống VKS **sẽ cố gắng thực hiện nâng cấp** theo lịch trình mà bạn đã cấu hình qua **VKS Portal**. Tuy nhiên, tùy thuộc vào tải của hệ thống, **một số lần nâng cấp có thể bị hoãn** hoặc không thực hiện đúng như lịch. Khi đó, hệ thống sẽ tự động chuyển lịch nâng cấp sang **thời điểm thích hợp tiếp theo**, chính là chu kỳ lặp lại trong tuần tiếp theo.
 {% endhint %}
 
 ***
