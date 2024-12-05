@@ -1,6 +1,6 @@
 # Gói Bandwidth VNG Dedicated
 
-Gói bandwidth VNG Dedicated là gói bandwidth miễn phí mặc định với tốc độ tiêu chuẩn dành cho tất cả khách hàng. Ở gói này, chúng tôi sẽ cung cấp cho bạn băng thông trong nước lên tới 200Mbps và băng thông quốc tế lên tới 4Mbps. **Mặc định, tất cả IP của bạn sẽ được áp dụng tiêu chuẩn bandwidth của gói này.**&#x20;
+Gói bandwidth VNG Dedicated là gói bandwidth miễn phí mặc định với tốc độ tiêu chuẩn dành cho tất cả khách hàng. Ở gói này, chúng tôi sẽ cung cấp cho bạn băng thông trong nước lên tới 300Mbps và băng thông quốc tế lên tới 5Mbps. **Mặc định, tất cả IP của bạn sẽ được áp dụng tiêu chuẩn bandwidth của gói này.**&#x20;
 
 ### Xem thông tin chi tiết gói
 
