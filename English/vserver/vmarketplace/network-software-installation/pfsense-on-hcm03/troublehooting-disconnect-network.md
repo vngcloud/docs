@@ -24,7 +24,7 @@ To minimize the impact of network disconnections caused by router restart errors
 
 **Step 1: Access the pfSense management interface, select the "Interfaces" tab, and configure the WAN and LAN networks one by one.**
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2: Configure the WAN network**
 
@@ -33,7 +33,7 @@ To minimize the impact of network disconnections caused by router restart errors
 * Next, select "Add new gateway" with the gateway IP depending on the public IP at the time of creation (4).
 * Finally, click "Save" to save the selected configuration (5).
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3: Configure the LAN network (Similar to WAN configuration)**
 

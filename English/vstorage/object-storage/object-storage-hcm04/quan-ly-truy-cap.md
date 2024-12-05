@@ -1,91 +1,81 @@
 # Access Management
 
-## Tài khoản truy cập
+## Access account <a href="#tai-khoan-truy-cap" id="tai-khoan-truy-cap"></a>
 
-Trên region HCM04, bạn có thể sử dụng 2 loại tài khoản để truy cập vào vStorage. Chi tiết 2 loại này bao gồm:
+In region HCM04, you can use 2 types of accounts to access vStorage. Details of these 2 types include:
 
-* **Root user account:** Là tài khoản [khởi tạo đầu tiên](https://register.vngcloud.vn/signup) để truy cập vào VNG Cloud với đầy đủ quyền truy cập vào tất cả dịch vụ tài nguyên trên VNG Cloud.
-* **S3 key:** Là cặp s3 key có access key và secret key được vStorage tích hợp để có tính tương thích với các client tool của S3 như s3cmd, s3 SDK,...
+* **Root user account: Is the** [first initial](https://register.vngcloud.vn/signup) account to access VNG Cloud with full access to all resource services on VNG Cloud.
+* **S3 key:** Is a pair of s3 keys with access key and secret key integrated by vStorage for compatibility with S3 client tools such as s3cmd, s3 SDK,...
 
-### Root user account
+### Root user account <a href="#root-user-account" id="root-user-account"></a>
 
-**Khởi tạo tài khoản người dùng Root (Root User Account)**
+#### **Create Root User Account**
 
-Để khởi tạo tài khoản người dùng Root, bạn vui lòng đăng ký tài khoản tại trang đăng ký [https://register.vngcloud.vn/signup](https://register.vngcloud.vn/signup).
+To create a Root user account, please register an account at the registration page [https://register.vngcloud.vn/signup](https://register.vngcloud.vn/signup) .
 
-Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông tin sau để truy cập và làm việc với tài nguyên sử dụng tài khoản người dùng Root:
+After you create a Root user account, you collect the following information to access and work with resources using the Root user account:
 
-* Địa chỉ email được sử dụng để tạo tài khoản người dùng Root.
-* Mật khẩu cho của tài khoản người dùng Root.
+* The email address used to create the Root user account.
+* Password for the Root user account.
 
-Để thực hiện đăng nhập sử dụng vStorage với tài khoản Root, hãy xem thêm tại [Truy cập tài nguyên sử dụng tài khoản người dùng Root](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-truy-cap-tai-nguyen-vstorage/truy-cap-tai-nguyen-su-dung-tai-khoan-nguoi-dung-root).
+To log in to vStorage with the Root account, see [Accessing resources using the Root user account](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-truy-cap-tai-nguyen-vstorage/truy-cap-tai-nguyen-su-dung-tai-khoan-nguoi-dung-root) .
 
 ***
 
-**Hủy tài khoản người dùng Root (Root User Account)**
+#### **Cancel Root User Account**
 
-Để hủy tài khoanr Root, bạn cần liên hệ với chúng tôi thông qua việc tạo một ticket yêu cầu hủy tài khoản. Chi tiết xem thêm tại [Hướng dẫn hủy tài khoản](https://docs.vngcloud.vn/vng-cloud-document/v/vn/huong-dan-su-dung-tai-khoan/huong-dan-huy-tai-khoan).
+To cancel your Root account, you need to contact us by creating a ticket to request account cancellation. For more details, see [Account Cancellation Instructions](https://docs.vngcloud.vn/vng-cloud-document/v/vn/huong-dan-su-dung-tai-khoan/huong-dan-huy-tai-khoan) .
 
-### S3 key
+### S3 key <a href="#s3-key" id="s3-key"></a>
 
-Để khởi tạo S3 key, làm theo hướng dẫn bên dưới:
+To initialize an S3 key, follow the instructions below:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn **Region HCM04.**
-3. Chọn biểu tượng <img src="../../../.gitbook/assets/image%20(581).png" alt="" data-size="line"> tại project mà bạn vừa khởi tạo sau đó chọn mục S3 key.
-4. Tại mục S3 key, chọn **Generate S3 key**.
-5. Chọn **Copy** hoặc **Download** để tải xuống thông tin Access Key/Secret Key mà bạn vừa khởi tạo.
+1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+2. Select **Region HCM04.**
+3. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FzBejUW7ARqXZMMLNJPI2%252Fimage.png%3Falt%3Dmedia%26token%3D67d600f9-d645-434f-b403-be01af3603e0\&width=37\&dpr=4\&quality=100\&sign=46e8d333\&sv=2)in the project you just created and then select the S3 key item.
+4. In the S3 key section, select **Generate S3 key** .
+5. Select **Copy** or **Download** to download the Access Key/Secret Key information you just generated.
 
-<figure><img src="../../../.gitbook/assets/image%20(582).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image%20(583).png" alt=""><figcaption></figcaption></figure>
+![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FpeK1OHEtz5jcXW5k9c8F%252Fimage.png%3Falt%3Dmedia%26token%3D00782bb7-32ee-47e5-8f6e-a15cfe606155\&width=768\&dpr=4\&quality=100\&sign=c5389514\&sv=2)![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FdQZHbhKQU50qaLir3Vax%252Fimage.png%3Falt%3Dmedia%26token%3D7cf6496e-0c94-4dbf-ab68-584081d619a4\&width=768\&dpr=4\&quality=100\&sign=288ea5d5\&sv=2)
 
 {% hint style="info" %}
-**Chú ý:**
+**Attention:**
 
-* Sau khi nhấn tạo S3 key, bạn cần **lưu lại cặp Access Key/Secret Key** để sử dụng, nếu bạn không lưu trữ ngay lúc này thì sau đó không thể lấy được Secret Key của Access Key này.
+* After clicking create S3 key, you need to **save the Access Key/Secret Key pair** for use. If you do not save it now, you will not be able to get the Secret Key of this Access Key later.
 {% endhint %}
 
-## Quản lý truy cập
+## Access Management <a href="#quan-ly-truy-cap" id="quan-ly-truy-cap"></a>
 
-Trên region HCM04, chúng tôi cung cấp cho bạn các tính năng phân quyền truy cập riêng lẻ tới từng bucket hoặc object được mô tả qua sơ đồ bên dưới. Chi tiết bao gồm:
+On region HCM04, we provide you with individual access permissions to each bucket or object as described in the diagram below. Details include:
 
 <details>
 
-<summary>Chuyển chế độ công khai bucket</summary>
+<summary>ACLs access permissions </summary>
 
-Bạn có thể chuyển chế độ của bucket từ riêng tư thành công khai để cho phép bất kỳ ai cũng có thể truy cập vào bucket để xem, tải xuống, tải lên tất cả tệp tin, object thuộc bucket được công khai. Để biết thêm thông tin, hãy xem tại [Làm việc với bucket](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/)
+You can grant Read, Write or Read and Write permissions to 1 or all other Root users. (Root users granted access via ACLS must be authorized accounts on our VNG Cloud system). For more information, see Using [ACLs.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-acls)
 
 </details>
 
 <details>
 
-<summary>Chuyển chế độ riêng tư container</summary>
+<summary>CORS resource sharing</summary>
 
-Bạn có thể chuyển chế độ của bucket từ công khai thành riêng tư để dừng việc chia sẻ công khai bucket trên môi trường điện toán đám mây. Bạn sẽ không thể truy cập vào bucket thông qua đường dẫn URL mà cần chứng thực quyền truy cập. Để biết thêm thông tin, hãy xem tại [Làm việc với bucket](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/)
-
-</details>
-
-<details>
-
-<summary>Phân quyền truy cập ACLs container</summary>
-
-Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho 1 hoặc tất cả Root user khác. (Root user được cấp quyền truy cập qua ACLS phải là tài khoản được cấp quyền trên hệ thống VNG Cloud của chúng tôi). Để biết thêm thông tin, hãy xem tại [Làm việc với bucket](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/)
+You can allow a website to access resources in the bucket. For more information, see [Using CORS.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-cors)
 
 </details>
 
 <details>
 
-<summary>Chia sẻ tài nguyên CORS</summary>
+<summary>Decentralization via Bucket policy</summary>
 
-Bạn có thể cho phép một website truy cập vào tài nguyên trên container. Để biết thêm thông tin, hãy xem tại [Làm việc với bucket](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/)
+You can manage access to your buckets through JSON rules. For more information, see [Using Bucket Policy.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-bucket-policy)
 
 </details>
 
 <details>
 
-<summary>Chia sẻ object qua TempURL</summary>
+<summary>Share object</summary>
 
-Bạn có thể chia sẻ việc truy cập vào 1 hoặc nhiều object thông qua đường dẫn TempURL. Để biết thêm thông tin, hãy xem tại [Làm việc với ](cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/)[object.](cac-tinh-nang-cua-object-storage/lam-viec-voi-object-va-directory.md)
+You can share an object with another user or share it publicly. For more information, see [Sharing objects.](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-object-va-directory)
 
 </details>

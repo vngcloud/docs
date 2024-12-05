@@ -9,7 +9,7 @@
 
 **To set up Object Locked for a bucket using S3 Browser, when creating a new bucket, you need to select the Enable S3 Objected Lock** option . <mark style="color:red;">**Kee**</mark>**p in mind that you will not be able to enable Object Lock for an existing bucket.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once the bucket has been successfully created, to configure specific parameters for the object lock feature, please follow the steps below:
 
@@ -19,17 +19,17 @@ Once you have enabled Object Lock for the bucket, you can set up Object Lock for
 
 1\. In the bucket where object lock needs to be set up, select **Action** and select **Configure object lock retention**
 
-<figure><img src="../../../../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (36) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\. On the Configure object lock retention screen, select **Enable Object Lock retention policy**
 
-<figure><img src="../../../../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (37) (1).png" alt=""><figcaption></figcaption></figure>
 
 3\. In **Retention Mode** : currently we only support **Compliance Mode** (this mode will protect the object version from changes or deletion until the retention period expires).
 
 4\. In the **Retention Period** section : select the desired time to keep the objects in your bucket. For example, you choose 30 days, 60 days, 1000 days,...
 
-<figure><img src="../../../../../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (38) (1).png" alt=""><figcaption></figcaption></figure>
 
 5\. Select **Update.**
 
@@ -56,7 +56,7 @@ After enabling Object Lock for the bucket, you can set up **Legal Hold** Object 
 
 1\. At the object that needs to set object lock, select **Action** and select **Enable object legal hold**
 
-<figure><img src="../../../../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (39) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\. On the Enable object legal hold screen, select **Enable**
 

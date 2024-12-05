@@ -6,7 +6,7 @@ You need to register an account and activate it to use the vColo service before 
 2. After you have an account, contact VNG Cloud customer support to activate your vColo service account.
 3. Proceed to log in by following the instructions below:
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Open a web browser and go to: vcolo.vngcloud.vn.
 * Select SIGN IN WITH ROOT USER ACCOUNT (the system does not currently support login with IAM accounts).

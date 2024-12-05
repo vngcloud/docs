@@ -30,7 +30,7 @@ Create VPN Step By Step
 
 
 
-    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Create VPN</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Create VPN</p></figcaption></figure>
 * Besides that Component <mark style="color:blue;">**Algorithm Configuration**</mark> defines factors for a basic VPN connection, currently, VNGCloud supports the default config in the below pic. _The customer can customize it on the nearest day_
   * &#x20;**IKE Policy**: Configure for Phase 1 of VPN IPSEC (the Configuration at both sites must be the same).
   * **IPsec Policy**: Configure for Phase 2 of VPN IPSEC  (the Configuration at both sites must be the same).

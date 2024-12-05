@@ -51,9 +51,9 @@ After successfully setting up the Metric Agent on your server, you have a certai
 1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.vngcloud.vn/vmonitor).
 2. Select the **Infrastructure list** folder.
 3. Choose **Host**.
-4. Select the icon  ![](<../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)  on the host you want to disable.
+4. Select the icon  ![](<../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)  on the host you want to disable.
 5. On the host disable confirmation screen, select **Disable**.
-6. When the icon changes to ![](<../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>), the host has been successfully disabled.
+6. When the icon changes to ![](<../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>), the host has been successfully disabled.
 
 When you disable a host, the Metric Agent configuration on the host remains unchanged, and you can re-enable host monitoring at any time following the instructions in Restore Disabled Host. From the moment you disable a host, its metrics will no longer be pushed, and the host will not be counted as a resource in the Metric quota configuration. If you no longer need to monitor metric data on a host, you can also completely delete the host information by following the instructions in Delete Host Information with Successfully Set Up Metric Agent.
 
@@ -66,9 +66,9 @@ You have disabled a host from pushing metrics to our system, and the metric data
 1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.vngcloud.vn/vmonitor).
 2. Select the **Infrastructure list** folder.
 3. Choose **Host**.
-4. Select the icon ![](<../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>) on the host you want to restore.
+4. Select the icon ![](<../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>) on the host you want to restore.
 5. On the host restore confirmation screen, select **Enable**.
-6. When the icon changes to  ![](<../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)  , the host has been successfully restored. From this point, metrics will start being pushed again.
+6. When the icon changes to  ![](<../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)  , the host has been successfully restored. From this point, metrics will start being pushed again.
 
 ***
 
