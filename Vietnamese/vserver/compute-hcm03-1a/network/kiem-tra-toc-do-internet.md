@@ -96,3 +96,19 @@ Fast là công cụ hoàn hảo cho những ai chỉ muốn kiểm tra tốc đ�
 
 
     <figure><img src="../../../.gitbook/assets/image (427).png" alt=""><figcaption></figcaption></figure>
+
+
+
+### SpeedTest Quốc Tế
+
+| Country                 | City        | Provider               | Host                                                           | ID     | CLI                 | Status updated 30-Oct-2024 |
+| ----------------------- | ----------- | ---------------------- | -------------------------------------------------------------- | ------ | ------------------- | -------------------------- |
+| Republic of Singapore   | Singapore   | MyRepublic             | speedtest.myrepublic.com.sg:8080                               | 5935   | speedtest -s 5935   | Activate                   |
+| Republic of Singapore   | Singapore   | NewMedia Express       | [www.speedtest.com.sg:8080](https://www.speedtest.com.sg:8080) | 367    | speedtest -s 367    | Activate                   |
+| Republic of Singapore   | Singapore   | PT FirstMedia          | sg-speedtest.fast.net.id:8080                                  | 7556   | speedtest -s 7556   | Activate                   |
+| Republic of Singapore   | Singapore   | StarHub Mobile Pte Ltd | co2speedtest1.starhub.com:8080                                 | 4235   | speedtest -s 4235   | Activate                   |
+| Singapore               | Singapore   | Singtel                | speedtest.singnet.com.sg:8080                                  | 13623  | speedtest -s 13623  | Activate                   |
+| Republic of Singapore   | Singapore   | Viewqwest Pte Ltd      | speedtest10.vqbn.com:8080                                      | 2054   | speedtest -s 2054   | Activate                   |
+| _Republic of Singapore_ | _Singapore_ | _M1 Limited_           | _m1speedtest1.m1net.com.sg:8080_                               | _7311_ | _speedtest -s 7311_ | _Activate_                 |
+
+&#x20;
