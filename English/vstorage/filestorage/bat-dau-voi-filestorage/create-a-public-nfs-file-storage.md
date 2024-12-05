@@ -35,7 +35,7 @@ For example, in the picture, I only allow IP 192.168.1.100 to have RO rights and
 
 ***
 
-### Get mount guide information <a href="#lay-thong-tin-mount-guide" id="lay-thong-tin-mount-guide"></a>
+## Get mount guide information <a href="#lay-thong-tin-mount-guide" id="lay-thong-tin-mount-guide"></a>
 
 After the system has finished initializing your File Storage, to get the mount guide, please select **Action** then select **Mount Guide**
 

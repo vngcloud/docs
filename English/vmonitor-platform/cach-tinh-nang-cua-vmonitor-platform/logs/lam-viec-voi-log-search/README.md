@@ -17,7 +17,7 @@ To perform log search and analysis, follow the instructions below:
 2. Select **Log search** .
 3. Select which **Log project** you need to view and analyze logs. The location to select the project log is displayed as shown below:
 
-<figure><img src="../../../../.gitbook/assets/image (32) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (32) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In there:
 

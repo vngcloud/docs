@@ -1,5 +1,5 @@
-# Các tính năng của Object Storage
+# Features of Object Storage
 
-Trên region HCM04 của vStorage, một object là một tập tin và bất kỳ metadata nào mô tả tập tin đó. Một bucket là một thùng chứa cho các objects. Để lưu trữ dữ liệu của bạn trong vStorage, trước tiên bạn tạo một project và chỉ định tên project, gói lưu trữ cũng thông qua vStorage Portal. Sau đó bạn cần sử dụng 3rd party softwares để kết nối và tạo một hoặc nhiều bucket bên trên project vừa tạo. Lúc này, bạn tải object của mình lên bucket đó dưới dạng object trong vStorage. Mô hình tổ chức lưu trữ của vStorage được chúng tôi mô tả bên dưới.
+In the HCM04 region of vStorage, an object is a file and any metadata that describes that file. A bucket is a container for objects. To store your data in vStorage, you first create a project and specify the project name and storage package through the vStorage Portal. You then need to use 3rd party softwares to connect and create one or more buckets on top of the newly created project. At this point, you upload your object to that bucket as an object in vStorage. The vStorage storage organization model is described below.
 
-<figure><img src="../../../../.gitbook/assets/image (599).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>

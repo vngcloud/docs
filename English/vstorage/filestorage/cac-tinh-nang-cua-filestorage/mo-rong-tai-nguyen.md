@@ -1,25 +1,15 @@
-# Mở rộng tài nguyên
+# Resize a File Storage
 
-Trong quá trình sử dụng dịch vụ, VNG Cloud hỗ trợ người dùng mở rộng tài nguyên bằng cách mở rộng dung lượng sử dụng và thông lượng. Làm theo hướng dẫn dưới đây để yêu cầu hỗ trợ:
+You have created **File storage** with the initial maximum quota that suits your storage needs. Now your business needs have changed and the old capacity cannot meet them. To solve this problem, you can change the storage quota through the **Resize** feature that we provide.
 
-**Bước 1: Người dùng gửi yêu cầu mở rộng tài nguyên đến đội ngũ hỗ trợ bằng việc gửi ticket:**
+To change the quota for a **File storage** , you can:
 
-* 1.1: Truy cập đến trang ticket
-* 1.2: Điền thông tin bắt buộc bao gồm
-  * Request Category: Hỗ trợ kỹ thuật (Technical Support)
-  * Product: Sản phẩm khác (Other)
-  * Ticket information (Subject): Mở rộng tài nguyên File Storage
-  * Description: Định danh tài nguyên, Yêu cầu mở rộng dung lượng đến (TB), Yêu cầu mở rộng thông lượng đến (Mb/s)
+**Step 1:** Log in to [https://efs.console.vngcloud.vn/overview](https://efs.console.vngcloud.vn/overview)
 
-**Bước 2: VNG Cloud xử lý yêu cầu mở rộng tài nguyên**
+**Step 2:** Select the checkbox at the storage file you want to increase quota and select the icon **Resize.**
 
-* 2.1: VNG Cloud liên hệ khách hàng để xác nhận yêu cầu sử dụng.
-* 2.2: VNG Cloud mở rộng tài nguyên theo yêu cầu từ khách hàng.
-* 2.3: VNG Cloud gửi email thông tin tài nguyên vừa cung cấp đến khách hàng.
+**Step 3: The Resize file storage** screen is displayed **.** Select the storage **quota** you want to increase, the new quota must be larger than the current quota of the file storage.
 
-**Bước 3: Người dùng xác nhận**
+**Step 4:** Select **Resize file storage.**
 
-* 3.1: Người dùng kiểm tra thông tin tài nguyên vừa cung cấp (hướng dẫn trong phần đính kèm)
-* 3.2: Gửi email xác nhận tài nguyên cung cấp cho người dùng là đúng theo yêu cầu.
-
-Lưu ý: Tài nguyên đã được mở rộng sẽ không hỗ trợ giảm xuống (đối với cả dung lượng và thông lượng)
+After you successfully complete the above 4 steps, the new total **quota** value after change will be updated on the general information of the file storage you selected.

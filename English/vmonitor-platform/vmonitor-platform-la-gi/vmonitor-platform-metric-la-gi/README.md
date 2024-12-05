@@ -2,7 +2,7 @@
 
 vMonitor Platform Metric is a service that continuously monitors the performance of all resources on an enterprise system in real-time. vMonitor Platform Metric is built for users, developers, operations engineers, and IT managers to monitor resources on VNG Cloud infrastructure or any other location. vMonitor Platform Metric provides a unified picture of system health, allowing for the collection of metrics and information to serve the purposes of monitoring, system optimization, setting alerts, and notifying when incidents occur.
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

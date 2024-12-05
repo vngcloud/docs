@@ -1,101 +1,97 @@
-# Bước 4: Sử dụng 3rd party softwares để thực hiện các tính năng trên vStorage
+# Step 6: Use 3rd party softwares to action on vStorage
 
-## Các usecase cơ bản
+## Basic use cases <a href="#cac-usecase-co-ban" id="cac-usecase-co-ban"></a>
 
-Bên dưới là hướng dẫn cho một số use case thông thường bạn có thể thực hiện trên S3 Browser:
+Below are instructions for some common use cases you can perform on S3 Browser:
 
-### **Tạo / Xóa bucket**
+### **Create / Delete bucket** <a href="#tao-xoa-bucket" id="tao-xoa-bucket"></a>
 
-* Thực hiện tạo xóa bucket bằng cách chọn nút **New bucket**, lúc này bạn thực hiện nhập **Bucket name** và chọn **Create new bucket.**
+* Create and delete a bucket by selecting the **New bucket** button . Now enter **the Bucket name** and select **Create new bucket.**
 
-### **Upload / Download file**
+### **Upload / Download file** <a href="#upload-download-file" id="upload-download-file"></a>
 
-* Sau khi đã tạo bucket, bạn chọn vào bucket cần tải file lên/ xuống. Tiếp theo, bạn chọn **Upload/ Download** tùy theo nhu cầu tải lên/ xuống của bạn.
+* After creating a bucket, select the bucket you want to upload/download files to. Next, select **Upload/Download** depending on your upload/download needs.
 
-### **Tạo / Xóa Folder**
+### **Create / Delete Folder** <a href="#tao-xoa-folder" id="tao-xoa-folder"></a>
 
-* Bạn cũng có thể tạo/ xóa folder bằng cách chọn **New Folder** hoặc **Delete**.
+* You can also create/delete folders by selecting **New Folder** or **Delete** .
 
-<figure><img src="../../../../.gitbook/assets/image (589).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-## Các usecase nâng cao
+## Advanced use cases <a href="#cac-usecase-nang-cao" id="cac-usecase-nang-cao"></a>
 
-Tiếp theo đây là các hướng dẫn cho các tính năng nâng cao bạn có thể thực hiện trên S3 Browser:
+Here are instructions for advanced features you can do on S3 Browser:
 
-### **ACL**
+### **ACL** <a href="#acl" id="acl"></a>
 
-**ACL** là tính năng trên S3 cho phép bạn kiểm soát quyền truy cập cho từng object trong bucket S3 của bạn. Tính năng này sẽ xác định người dùng hoặc nhóm người dùng nào có thể truy cập object và các thao tác họ có thể thực hiện, chẳng hạn như tải xuống, tải lên, xóa hoặc ghi đè object.
+**ACLs** are a feature on S3 that allows you to control access permissions for each object in your S3 bucket. They define which users or groups of users can access the object and what actions they can perform, such as downloading, uploading, deleting, or overwriting the object.
 
-Để thiết lập ACL cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn Edit Permission (ACL) . Trong phần permission, hãy check chọn quyền hạn bạn mong muốn cấp cho người dùng. Chi tiết tham khảo thêm tại [https://s3browser.com/share-s3-bucket-edit-acls.aspx](https://s3browser.com/share-s3-bucket-edit-acls.aspx)
+To set up ACL for a bucket using S3 Browser, right-click on the bucket, then select Edit Permission (ACL). In the permission section, check the permissions you want to grant to the user. For more details, see [https://s3browser.com/share-s3-bucket-edit-acls.aspx](https://s3browser.com/share-s3-bucket-edit-acls.aspx)
 
-<figure><img src="../../../../.gitbook/assets/image (590).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
-### **SSE-S3**
+### **SSE-S3** <a href="#sse-s3" id="sse-s3"></a>
 
-SSE-S3 (Server-Side Encryption with S3 Managed Keys) là tính năng mã hóa dữ liệu phía máy chủ do Amazon S3 cung cấp. Với SSE-S3, dữ liệu của bạn được mã hóa tự động khi được tải lên S3 và được giải mã tự động khi bạn tải xuống. **Để thực hiện được tính năng này trên S3 Browser, bạn cần sử dụng S3 Browser phiên bản Pro. Nếu ứng dụng của bạn hiện không hỗ trợ cho việc thực hiện tính năng, vui lòng gửi yêu cầu sử dụng tính năng thông qua ticket tới VNGCloud.** Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-server-side-encryption.aspx](https://s3browser.com/amazon-s3-server-side-encryption.aspx)
+SSE-S3 (Server-Side Encryption with S3 Managed Keys) is a server-side data encryption feature provided by Amazon S3. With SSE-S3, your data is automatically encrypted when uploaded to S3 and automatically decrypted when you download it. **To implement this feature on S3 Browser, you need to use S3 Browser Pro version. If your application does not currently support the implementation of the feature, please submit a request to use the feature via a ticket to VNGCloud.** For more details, please visit [https://s3browser.com/amazon-s3-server-side-encryption.aspx](https://s3browser.com/amazon-s3-server-side-encryption.aspx)
 
-### **SSE-C**
+### **SSE-C** <a href="#sse-c" id="sse-c"></a>
 
-**SSE-C** (Server-Side Encryption with Customer-Provided Keys) là tính năng mã hóa dữ liệu phía máy chủ do Amazon S3 cung cấp. Giống như SSE-S3, SSE-C mã hóa dữ liệu của bạn tự động khi được tải lên S3 và giải mã tự động khi bạn tải xuống. Tuy nhiên, với SSE-C, bạn cung cấp và quản lý khóa mã hóa của riêng mình, thay vì sử dụng khóa do AWS quản lý. **Để thực hiện được tính năng này trên S3 Browser, bạn cần sử dụng S3 Browser phiên bản Pro. Nếu ứng dụng của bạn hiện không hỗ trợ cho việc thực hiện tính năng, vui lòng gửi yêu cầu sử dụng tính năng thông qua ticket tới VNGCloud.** Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-server-side-encryption.aspx](https://s3browser.com/amazon-s3-server-side-encryption.aspx)
+**SSE-C** (Server-Side Encryption with Customer-Provided Keys) is a server-side data encryption feature provided by Amazon S3. Like SSE-S3, SSE-C encrypts your data automatically when it is uploaded to S3 and decrypts it automatically when you download it. However, with SSE-C, you provide and manage your own encryption keys, instead of using keys managed by AWS. **To implement this feature on S3 Browser, you need to use S3 Browser Pro. If your application does not currently support the implementation of the feature, please submit a request to use the feature via a ticket to VNGCloud.** For more details, please visit [https://s3browser.com/amazon-s3-server-side-encryption.aspx](https://s3browser.com/amazon-s3-server-side-encryption.aspx)
 
-### **Object Locked**
+### **Object Locked** <a href="#object-locked" id="object-locked"></a>
 
-**Object Lock** là tính năng giúp bảo vệ dữ liệu của bạn khỏi bị xóa hoặc ghi đè trong một khoảng thời gian cố định hoặc vô thời hạn. Tính năng này sử dụng model **WORM** (Write Once, Read Many), nghĩa là sau khi một object được tải lên S3 và được locked, object đó không thể bị xóa hoặc thay đổi bởi bất kỳ ai, kể cả người dùng root.
+**Object Lock** is a feature that protects your data from being deleted or overwritten for a fixed period of time or indefinitely. It uses the **WORM** (Write Once, Read Many) model, which means that once an object is uploaded to S3 and locked, it cannot be deleted or changed by anyone, including the root user.
 
-Để thiết lập Object Locked cho một bucket bằng S3 Browser, khi khởi tạo một bucket mới, bạn cần chọn phương án **Enable S3 Objected Lock.**&#x20;
+To set up Object Locked for a bucket using S3 Browser, when creating a new bucket, you need to select the **Enable S3 Objected Lock option.**
 
-<figure><img src="../../../../.gitbook/assets/image (623).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
-Tiếp theo, khi bucket được tạo thành công, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Object Locked**. Bạn có thể thiết lập object locked ở cả 2 mode **Retention** và **Legal Hold** thông qua S3 Browser. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-object-lock.aspx](https://s3browser.com/amazon-s3-object-lock.aspx)
+Next, when the bucket is successfully created, right-click on the bucket, then select **Object Locked** . You can set the object locked in both **Retention** and **Legal Hold** modes through S3 Browser. For more details, please visit [https://s3browser.com/amazon-s3-object-lock.aspx](https://s3browser.com/amazon-s3-object-lock.aspx)
 
-<figure><img src="../../../../.gitbook/assets/image (592).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
-### **Versioning**
+### **Versioning** <a href="#versioning" id="versioning"></a>
 
-Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá khứ của các object được lưu trữ trong một bucket. Bạn có thể sử dụng tính năng versioning để lưu giữ, truy xuất và khôi phục mọi phiên bản của object được lưu trữ trong bucket của bạn. Khi bật tính năng Versioning, khi thực hiện tải lên/ xóa một object thì thay vì xóa hẳn object khỏi hệ thống, chúng tôi sẽ chuyển các object bị xóa hoặc bị ghi đè sang phiên bản versioning. Từ đó bạn có thể dễ dàng khôi phục lại các object bị xóa nhầm hoặc tải về các phiên bản cũ của dữ liệu khi có nhu cầu sử dụng.
+Versioning is a feature that supports storing multiple past versions of objects stored in a bucket. You can use versioning to save, retrieve, and restore any version of an object stored in your bucket. When versioning is enabled, when uploading/deleting an object, instead of deleting the object from the system, we will move the deleted or overwritten objects to the versioning version. From there, you can easily restore mistakenly deleted objects or download old versions of data when needed.
 
-Để thiết lập Versioning cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Edit Versioning Settings**. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-versioning.aspx](https://s3browser.com/amazon-s3-versioning.aspx)
+To set up Versioning for a bucket using S3 Browser, right-click on the bucket, then select **Edit Versioning Settings** . For more details, see [https://s3browser.com/amazon-s3-versioning.aspx](https://s3browser.com/amazon-s3-versioning.aspx)
 
-<figure><img src="../../../../.gitbook/assets/image (594).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
-### **Lifecycle rotation**
+### **Lifecycle rotation** <a href="#lifecycle-rotation" id="lifecycle-rotation"></a>
 
-**Lifecycle rotation** là một tính năng quản lý vòng đời của các đối tượng (objects) trong một bucket. Tính năng này cho phép bạn tự động hóa các hành động như xóa các đối tượng sau một khoảng thời gian nhất định.
+**Lifecycle rotation** is a feature that manages the lifecycle of objects in a bucket. This feature allows you to automate actions such as deleting objects after a certain period of time.
 
-Để thiết lập Lifecycle rotation cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Lifecycle Configuration**. Chi tiết tham khảo thêm tại [https://s3browser.com/bucket-lifecycle-configuration.aspx](https://s3browser.com/bucket-lifecycle-configuration.aspx)
+To set up Lifecycle rotation for a bucket using S3 Browser, right-click on the bucket, then select **Lifecycle Configuration** . For more details, see [https://s3browser.com/bucket-lifecycle-configuration.aspx](https://s3browser.com/bucket-lifecycle-configuration.aspx)
 
-<figure><img src="../../../../.gitbook/assets/image (595).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
-### **Lifecycle transit**
+### **Lifecycle transit** <a href="#lifecycle-transit" id="lifecycle-transit"></a>
 
-Hiện tại trên region HCM04 chúng tôi chỉ hỗ trợ bạn tạo Project với Storage Class **Instant Archive Type**. Do chỉ có 1 storage class duy nhất nên hiện tại tính năng Lifecycle transit sẽ không hoạt động.&#x20;
+Currently on region HCM04 we only support you to create Project with Storage Class **Instant Archive Type** . Because there is only 1 storage class, currently the Lifecycle transit feature will not work.
 
-### **CORS**
+### **CORS** <a href="#cors" id="cors"></a>
 
-CORS (Cross-Origin Resource Sharing) là cơ chế bảo mật cho phép các trang web được lưu trữ trên một tên miền truy cập tài nguyên từ tên miền khác. Khi bạn sử dụng S3 để lưu trữ nội dung tĩnh và muốn truy cập nội dung đó từ trang web được lưu trữ trên tên miền khác, bạn cần cấu hình CORS cho bucket S3 của mình.
+CORS (Cross-Origin Resource Sharing) is a security mechanism that allows websites hosted on one domain to access resources from another domain. When you use S3 to host static content and want to access that content from a website hosted on another domain, you need to configure CORS for your S3 bucket.
 
-Để thiết lập CORS cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **CORS Configuration**. Chi tiết tham khảo thêm tại [https://s3browser.com/s3-bucket-cors-configuration.aspx](https://s3browser.com/s3-bucket-cors-configuration.aspx)
+To set up CORS for a bucket using S3 Browser, right-click on the bucket, then select **CORS Configuration** . For more details, see [https://s3browser.com/s3-bucket-cors-configuration.aspx](https://s3browser.com/s3-bucket-cors-configuration.aspx)
 
-<figure><img src="../../../../.gitbook/assets/image (596).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-### **IP range ACLs**
+### **Public/ Private bucket** <a href="#public-private-bucket" id="public-private-bucket"></a>
 
-IP Range ACLs là tính năng cho phép người dùng có thể chủ động kích hoạt chế độ an toàn ở mức network internet - giới hạn khả năng truy cập vào project hoặc container của vStorage từ một số nguồn địa chỉ IP được xác định thông qua danh sách IP/ Subnet thiết lập trên metadata ở cấp project hoặc container hoặc cả hai cấp. **Hiện tại S3 Browser đang chưa hỗ trợ thiết lập tính năng này. Nếu bạn có nhu cầu sử dụng tính năng này, vui lòng gửi yêu cầu sử dụng tính năng thông qua ticket tới VNGCloud.**&#x20;
+**Public buckets** are a feature that allows users to share buckets publicly in the cloud. Users from outside the internet can access the bucket through a URL without having to authenticate access to the system. Public access poses a security risk, so if your scenario does not require such access, we recommend that you do not enable public access to the bucket. At any point, if you no longer want the bucket to be public, you can make the bucket private.
 
-### **Public/ Private bucket**
+To set a bucket to public using S3 Browser, right-click on the bucket, then select **Public Access block Configuration** . For more details, see [https://s3browser.com/amazon-s3-public-access-block-configuration.aspx](https://s3browser.com/amazon-s3-public-access-block-configuration.aspx)
 
-**Public bucket** là tính năng cho phép người dùng chia sẻ công khai bucket trên môi trường điện toán đám mây. Người dùng từ ngoài internet có thể truy cập vào bucket thông qua đường dẫn URL mà không cần chứng thực quyền truy cập với hệ thống. Quyền truy cập công khai tiềm ẩn rủi ro bảo mật, vì vậy nếu kịch bản của bạn không yêu cầu quyền truy cập đó, chúng tôi khuyên bạn không nên cho phép quyền truy cập công khai đối với bucket. Tại bất kỳ thời điểm nào bạn không muốn công khai bucketđó nữa thì có thể chuyển chế độ riêng tư cho bucket.
+<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-Để thiết lập chế độ công khai cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Public Access block Configuration**. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-public-access-block-configuration.aspx](https://s3browser.com/amazon-s3-public-access-block-configuration.aspx)
+### **Bucket policy** <a href="#bucket-policy" id="bucket-policy"></a>
 
-<figure><img src="../../../../.gitbook/assets/image (597).png" alt=""><figcaption></figcaption></figure>
+**A Bucket Policy** is a type of access policy used to control access to a specific S3 bucket. It allows you to define which users or groups can access the bucket and what operations they can perform, such as uploading, downloading, deleting, or listing objects in the bucket.
 
-### **Bucket policy**
+To set up a bucket policy using S3 Browser, right-click on the bucket, then select **Edit Bucket Policy** . For more details, see [https://s3browser.com/working-with-amazon-s3-bucket-policies.aspx?v=11.7.5\&fam=x64#amazon-s3-bucket-policies-examples](https://s3browser.com/working-with-amazon-s3-bucket-policies.aspx?v=11.7.5\&fam=x64#amazon-s3-bucket-policies-examples)
 
-**Bucket Policy** là một loại chính sách truy cập được sử dụng để kiểm soát quyền truy cập vào một bucket S3 cụ thể. Nó cho phép bạn xác định người dùng hoặc nhóm nào có thể truy cập bucket và các thao tác họ có thể thực hiện, chẳng hạn như tải lên, tải xuống, xóa hoặc liệt kê các object trong bucket.
-
-Để thiết lập policy một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Edit Bucket Policy**. Chi tiết tham khảo thêm tại [https://s3browser.com/working-with-amazon-s3-bucket-policies.aspx?v=11.7.5\&fam=x64#amazon-s3-bucket-policies-examples](https://s3browser.com/working-with-amazon-s3-bucket-policies.aspx?v=11.7.5\&fam=x64#amazon-s3-bucket-policies-examples)
-
-<figure><img src="../../../../.gitbook/assets/image (598).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>

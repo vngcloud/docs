@@ -1,38 +1,48 @@
-# Khởi tạo tài nguyên
+# Create a File Storage
 
-### Người dùng gửi yêu cầu sử dụng dịch vụ File Storage
+To initialize a File Storage on the File Storage system, you can follow these steps:
 
-* **Cách 1: Gửi yêu cầu sử dụng dịch vụ thông qua ticket**
-  * Bước 1: Chọn dịch vụ File Storage tại trang chủ
-    * Tại trang chủ [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/), tại mục **VNG Cloud Service**, chọn **vStorage**, sau đó chọn **File Storage.**
-    * Sau đó, người dùng sẽ được điều hướng đến trang gửi ticket (yêu cầu người dùng phải đăng nhập bằng tài khoản VNG Cloud, nếu chưa có tài khoản VNG Cloud, mời tham khảo cách 2)
-  * Bước 2: Điền thông tin bắt buộc bao gồm
-    * Request Category: Hỗ trợ kỹ thuật (Technical Support)
-    * Product: Sản phẩm khác (Other)
-    * Ticket information (Subject): Hỗ trợ File Storage
-    * Description: Tên file storage, VPC, danh sách địa chỉ IP được phép kết nối
-* **Cách 2: Gửi yêu cầu sử dụng đến đội ngũ hỗ trợ (Điện thoại, Email) với nội dung**
-  * Tiêu đề: Hỗ trợ kỹ thuật File Storage
-  * Nội dung: Tên file storage, Dung lượng sử dụng, VPC, danh sách địa chỉ IP được phép kết nối
+## Initialize File Storage <a href="#khoi-tao-file-storage" id="khoi-tao-file-storage"></a>
 
-**Lưu ý:**&#x20;
+**Step 1:** Go to [https://efs.console.vngcloud.vn/overview](https://efs.console.vngcloud.vn/overview)
 
-* Để bắt đầu sử dụng FileStorage, người dùng cần có ít nhất **một Virtal Private Cloud (VPC)**, tham khảo hướng dẫn [Virtual Private Cloud (VPC)](../../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md).
-* Tìm hiểu cách **truy cập VNG Cloud Portal** với Root User Account hoặc IAM User Account, tham khảo hướng dẫn [How to Login into VNG Cloud](../../../identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md).
+**Step 2:** Select **File Storage** then select **Create a File storage.**
 
-### VNG Cloud xử lý yêu cầu
+<figure><img src="../../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
-* Bước 1: VNG Cloud liên hệ khách hàng để xác nhận, tư vấn, cũng như rõ hơn về nhu cầu sử dụng
-* Bước 2: VNG Cloud cung cấp dịch vụ đến khách hàng, bao gồm các thông tin
-  * Tên tài nguyên (từ khách hàng cung cấp)
-  * Định danh tài nguyên
-  * Dung lượng sử dụng (mặc định 1TB)
-  * Thông lượng (mặc định 200MB/s)
-  * Danh sách địa chỉ IP được phép kết nối đền tài nguyên File Storage (từ khách hàng cung cấp)
-  * Thời gian sử dụng dịch vụ (mặc định 1 tháng kể từ khi khởi tạo thành công)
-* Bước 3: VNG Cloud Gửi email thông tin tài nguyên vừa cung cấp đến khách hàng
+**Step 3:** At the File Storage initialization screen, you need to enter/select:
 
-### Người dùng xác nhận
+* **File Storage name:** the descriptive name of the storage file. The file name must be between 5 and 50 characters long and can include the characters a-z, AZ, 0-9, '-', '\_'
+* **Description** : enter a description for the storage file.
+* **File storage type:** select the type of drive you want to use. Currently we only provide **Standard HDD drive type.**
+* **Protocol:** select the protocol you want. We currently support:
+  * **NFS** : v4.0, 4.1
+  * **SMB** : v2.0+ (coming soon)
+* **Tag:** you can add tags to mark file storage as needed.
 
-* Bước 1: Người dùng kiểm tra thông tin tài nguyên vừa cung cấp (hướng dẫn trong phần đính kèm)
-* Bước 2: Gửi email xác nhận tài nguyên File Storage cung cấp cho người dùng là đúng theo yêu cầu
+<figure><img src="../../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+
+* **File Storage Max quota:** in the file storage initialization step, you need to set a maximum quota limit for that file storage. This quota means the limit of storage capacity that the file storage can use, helping to manage resources effectively. <mark style="color:red;">**The minimum quota you need to choose is 1 TB and the maximum quota we provide is 50 TB**</mark>**.** If you need to use more than 50 TB for a file storage, please contact us.
+* **Network type** : select the network type you want. Currently, we support:
+  * **Public** : all access is public, you can use this storage file for VMs, K8S on-premise, on VNG Cloud or resources from other sources.
+  * **Private: coming soon.**
+* **Permission:** configure IP-based access permissions
+  * **No one:** No IP is allowed to access.
+  * **All:** Allow all IPs to have RO (Read-Only) or RW (Read-Write) access.
+  * **Restricted:** Only allow specific IPs to access with RO or RW permissions.
+
+<figure><img src="../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+
+For example, in the picture, I only allow IP 192.168.1.100 to have RO rights and IP 192.168.1.101 to have RW rights
+
+**Step 5:** Select **Create File Storage.**
+
+***
+
+## Get mount guide information <a href="#lay-thong-tin-mount-guide" id="lay-thong-tin-mount-guide"></a>
+
+After the system has finished initializing your File Storage, to get the mount guide, please select **Action** then select **Mount Guide**
+
+<figure><img src="../../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>

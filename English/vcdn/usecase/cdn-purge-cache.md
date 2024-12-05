@@ -19,15 +19,15 @@ Here is a detailed description of the steps to perform Purge Cache on CDN:
     * [https://tuleemu0l7obj.vcdn.cloud/purge\_lab/demo1.txt](https://tuleemu0l7obj.vcdn.cloud/purge_lab/demo1.txt)
     * ....
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 * When CDN has cached we will see the header `X-Cache: HIT` and `X-Cache-Version: $Thời_gian_timestamp_lưu_cache`in CDN
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * For files that are not cached in CDN the header will be in the form `X-Cache: MISS`and `X-Cache-Version: $Thời_gian_ timestamp_lưu_cache`in CDN
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 For details of each type, please refer to the instructions below:
 
@@ -37,69 +37,69 @@ For details of each type, please refer to the instructions below:
 
 Purge by ALL: will delete all links (all Cache of resources on CDN).
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Before Purge Cache the files were cached in CDN
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Change the contents of the files, then refresh the browser. Because the files have been cached in CDN, when changing in Origin, the files in CDN have not been changed.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Proceed to Purge Cache: Select the corresponding **Service** and **CDN and Purge by ALL**
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 * After Purge cache CDN calls back to Origin to get the latest content.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Purge Cache By BEGIN <a href="#id-2.-purge-cache-by-begin" id="id-2.-purge-cache-by-begin"></a>
 
 Purge by BEGIN: Will delete all resources currently cached in CDN starting with the entered character.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Similar to Purge by ALL, before Purge Cache, the files have been cached in CDN. Proceed to Purge Cache: Select **Service** and corresponding **CDN and Purge by BEGIN** . At URI enter: `/purge_lab/text*`(delete cache of all text\* files in vCDN).
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 * After Purge the file `/purge_lab/text*`is checked and called back to Origin to get the latest content.
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Since the files `/purge_lab/demo*`are not purged, the content is still fetched from the CDN Cache.
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Purge Cache By CONTAIN <a href="#id-3.-purge-cache-by-contain" id="id-3.-purge-cache-by-contain"></a>
 
 Purge by CONTAIN: Will delete all resources currently cached in CDN that contain the entered string.
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Similar to Purge by ALL, before Purge Cache, the files have been cached in CDN. Proceed to Purge Cache: Select **Service** and corresponding **CDN and Purge by CONTAIN** . At URI enter: `/*demo*` (clear cache of all \*demo\* files currently cached in vCDN).
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 * After Purge Cache the files `/purge_lab/demo1.txt`... Were called back to Origin to get new content.
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Files `/purge_lab/text1.txt`... Still get content from Cache in CDN
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 4. Purge Cache By END. <a href="#id-4.-purge-cache-by-end" id="id-4.-purge-cache-by-end"></a>
 
 Purge by END: Will delete all resources that are being cached in vCDN at the end of the input string.
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Similar to Purge by ALL, before Purge Cache, the files have been cached in CDN. Proceed to Purge Cache: Select **Service** and corresponding **CDN and Purge by END** . At URI enter: `/*1.txt` (clear cache of all \*1.txt files currently cached in CDN).
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 * After Purge Cache the files `/*1.txt`... Were called back to Origin to get new content.
 

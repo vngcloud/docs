@@ -21,7 +21,7 @@ You have created a Widget on a Dashboard. Currently, this Widget does not meet y
 1. Login into vMonitor Platform.
 2. Select the menu **Dashboard.**
 3. Select **Dashboard** includes **Widget** which you want to edit.
-4. On **Widget** which you wanna edit, select <img src="../../../../.gitbook/assets/image (53) (1).png" alt="" data-size="line">
+4. On **Widget** which you wanna edit, select <img src="../../../../.gitbook/assets/image (53) (1) (1).png" alt="" data-size="line">
 5. Adjust the parameters for the chart as you wish. The parameters you can modify include: **Graph style**, **Graph your data**, **Fixed time range**, **Configure graph attributes**. This adjustment process is similar to creating a new Widget.
 6. Select **Save.**
 

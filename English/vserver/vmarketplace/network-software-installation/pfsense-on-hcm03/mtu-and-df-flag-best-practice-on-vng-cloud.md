@@ -19,7 +19,7 @@ Therefore, VNG Cloud encourages customers to proactively reduce the MTU value du
 2. Change the VM's MTU (for VMs using custom flavors not following the standard VNG Cloud) to 1450 (or smaller if needed).
    *   PFSense: WEB UI - Interfaces - WAN - MTU = 1450&#x20;
 
-       <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    *   FortiGate CLI:Bash
 
        ```
@@ -31,7 +31,7 @@ Therefore, VNG Cloud encourages customers to proactively reduce the MTU value du
        end
        ```
 
-       <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="260"><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="260"><figcaption></figcaption></figure>
    *   Ubuntu/LinuxBash
 
        ```

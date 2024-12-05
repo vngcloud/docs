@@ -12,7 +12,7 @@ VNGCloud introduces to you the new **HCM04** **Region** for vStorage services. T
 
 Farm is a term specifically used for vStorage, a farm is defined by us as a system that includes infrastructure, services, etc. deployed at a specific location within the 2 regions of Hanoi and Ho Chi Minh City with the purpose of providing vStorage storage services. For the 2 farms HCM03, HAN01, the specific parameters for each farm are provided by us as follows:
 
-<table data-full-width="true"><thead><tr><th width="115">Farm</th><th width="255">Farm ID</th><th width="309">vStorage endpoint</th><th>Mục đích sử dụng</th></tr></thead><tbody><tr><td>HCM04</td><td>8b1e9c9b-7123-54a5-ua8f-2d67d71c9204</td><td>https://hcm04.vstorage.vngcloud.vn</td><td>Farm phục vụ đa mục đích với hiệu suất cao và được dùng chung cho dữ liệu lưu trữ tại Region Hồ Chí Minh.</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="115">Farm</th><th width="255">Farm ID</th><th width="309">vStorage endpoint</th><th>Mục đích sử dụng</th></tr></thead><tbody><tr><td>HCM04</td><td>8b1e9c9b-7123-54a5-ua8f-2d67d71c9204</td><td>https://hcm04.vstorage.vngcloud.vn</td><td>Multi-purpose server farm with high performance and shared storage in Ho Chi Minh City Region.</td></tr></tbody></table>
 
 ***
 

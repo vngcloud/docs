@@ -1,311 +1,342 @@
-# Làm việc với project
+# Working with project
 
-## Tổng quan
+After you successfully complete the above steps, the automatic renewal feature for the project has been turned off.
 
-Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên VNG Cloud. **Với Region HCM04, tại  một thời điểm **<mark style="color:red;">**bạn chỉ có thể sở hữu một Project**</mark>** và sử dụng chúng để tổ chức lưu trữ dữ liệu của bạn.**
+1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+2. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FEedDoSjQC1v0i4G6OKT6%252Fimage.png%3Falt%3Dmedia%26token%3D5270bd91-5976-4b49-9747-6c848e043f7e\&width=32\&dpr=4\&quality=100\&sign=e2bdf3ba\&sv=2)in **the project** you want to disable auto-renew. Select **Disable Auto-renew.**
+3. **The Disable Auto-renew** screen is displayed **.**
+4. Select **OK.**
 
-## **Phạm vi giới hạn project**
+## Overview <a href="#tong-quan" id="tong-quan"></a>
 
-**Quy tắc đặt tên project**
+A Project is a term on vStorage that represents a storage package with a specific capacity that you purchase on VNG Cloud. <mark style="color:red;">**With Region HCM04, at a time you can only own one Project and use them to organize your data storage.**</mark>
 
-Các quy tắc sau áp dụng cho việc đặt tên project trong vStorage:
+***
 
-* Tên project phải dài từ 1 (tối thiểu) đến 40 (tối đa) ký tự.
-* Tên project chỉ có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), khoảng trắng ( ), dấu gạch dưới (\_), dấu gạch ngang (-) và ký tự @.
-* Tên project không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, tên tài khoản, mật khẩu đăng nhập,...).
-* Tên project phải là duy nhất trên một tài khoản VNG Cloud trong hoặc ngoài một region cho đến khi project đó bị xóa. Chúng tôi khuyến khích tên dự án hoặc sản phẩm của doanh nghiệp bạn được sử dụng như tên của project lưu trữ trong vStorage.
+## **Project scope** <a href="#pham-vi-gioi-han-project" id="pham-vi-gioi-han-project"></a>
 
-**Ví dụ minh họa**
+### **Project naming rules**
 
-* Các tên project ví dụ sau đây hợp lệ và tuân theo các nguyên tắc đặt tên được đề xuất:
+The following rules apply to project naming in vStorage:
+
+* Project name must be between 1 (minimum) and 40 (maximum) characters long.
+* Project names can only contain uppercase and lowercase letters (a-z, A-Z), numbers (0-9), periods (.), spaces ( ), underscores (\_), hyphens (-), and the @ character.
+* Project names should not contain sensitive information (e.g. IP addresses, account names, login passwords, etc.).
+* The project name must be unique across a VNG Cloud account within or across regions until the project is deleted. We recommend that your business project or product name be used as the name of the project stored in vStorage.
+
+### **Example**
+
+* The following example project names are valid and follow the recommended naming guidelines:
   * project du an 1
-  * du-an-nam-2022
+  * project-2022
   * ...
-* Các tên project ví dụ sau đây hợp lệ nhưng chúng tôi không khuyến khích bạn sử dụng:
+* The following example project names are valid but we do not recommend using them:
   * [docexamplewebsite.com](http://docexamplewebsite.com/)
   * [www.docexamplewebsite.com](http://www.docexamplewebsite.com/)
   * ...
-* Các tên project ví dụ sau không hợp lệ:
-  * Du an dat hieu qua 80 % (chứa ký tự %)
-  * project\_1/2022 (chứa ký tự /)
+* The following example project names are invalid:
+  * Project efficiency 80% (contains %)
+  * project\_1/2022 (contains / character)
   * ...
 
-## Khởi tạo project
+***
 
-Thực hiện tạo project theo các bước bên dưới:
+## Create a project <a href="#khoi-tao-project" id="khoi-tao-project"></a>
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [đây](https://register.vngcloud.vn/signup).
-2. Chọn **Region HCM04.**
-3. Chọn **Tạo một Project.**
-4. Nhập **Project Name** và chọn **Project type** (gói) lưu trữ phù hợp theo nhu cầu. Hiện tại ở region HCM04, chúng tôi sẽ cung cấp cho bạn gói lưu trữ **Instant Archive Type**. Với gói lưu trữ này, bạn sẽ có lượng Traffic miễn phí bằng 2 lần lượng Quota mà bạn chọn sử dụng và lượng Request hoàn toàn miễn phí. Để biết thêm thông tin chi tiết về cách tính giá, vui lòng tham khảo thêm tại [Cách tính phí.](../cach-tinh-phi.md)
-5. Chọn **Quota** (dung lượng lưu trữ) mà bạn mong muốn.
-6. Chọn **Period** và chọn/bỏ chọn **Auto-renew** theo nhu cầu của bạn.
-7. Thực hiện các bước **Thanh toán** giỏ hàng và **Project** của bạn sẽ được khởi tạo.
+Create a project by following the steps below:
 
-<figure><img src="../../../../.gitbook/assets/image (600).png" alt=""><figcaption></figcaption></figure>
+1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+2. Select **Region HCM04.**
+3. Select **Create a Project.**
+4. Enter **Project Name** and select the appropriate **Project type (package) according to your needs. Currently in region HCM04, we will provide you with the Instant Archive Type** package . With this package, you will have free Traffic equal to 2 times the Quota you choose to use and the Request amount is completely free. For more information on pricing, please refer to [Pricing.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/object-storage-hcm04/cach-tinh-phi)
+5. Select **the Quota** (storage capacity) you want.
+6. Select **Period** and check/uncheck **Auto-renew** according to your needs.
+7. **Go through the Checkout** steps and your **Project** will be created.
 
-## Xem thông tin project
+<figure><img src="../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
-Bạn có thể xem và sử dụng các thuộc tính cho project bao gồm thông tin chung của project, các cặp S3 key được tạo, cấu hình auto-scale nếu có, lịch sử tác động cũng như thông tin kết nối project với S3,...
+***
 
-Để xem các thuộc tính cho một project, bạn có thể:
+## View project information <a href="#xem-thong-tin-project" id="xem-thong-tin-project"></a>
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn/storage](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn **Region: HCM04**
-3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (601).png" alt="" data-size="line">tại **project** bạn muốn xem chi tiết.
-4. Trên trang hiển thị thông tin chi tiết **project**, bạn có thể xem và sử dụng các thuộc tính cho project
+You can view and use properties for the project including general project information, generated S3 key pairs, auto-scaling configuration if any, impact history as well as project connection information to S3,...
 
-* **Information**: Cung cấp các thông tin chung của project như Tổng quota, Tổng usage, Project type, Account URL, Project Owner.&#x20;
-* **S3 key**: Cung cấp thông tin các cặp S3 key được khởi tạo cho project từ vStorage Portal. Để khởi tạo S3 key, vui lòng tham khảo thêm tại đây.
-* **History**: Cung cấp thông tin lịch sử tác động tới project bao gồm loại hành động, trạng thái hành động, thời gian hành động xảy ra và mô tả chi tiết hành động nếu có.
-* **Connection Information**: Cung cấp các câu lệnh và tệp tin cấu hình để kết nối project với S3.
+To view the properties for a project, you can:
 
-<figure><img src="../../../../.gitbook/assets/image (602).png" alt=""><figcaption></figcaption></figure>
+1. Log in to [https://vstorage.console.vngcloud.vn/storage](https://vstorage.console.vngcloud.vn/storage/list) .
+2. Select **Region: HCM04**
+3. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FUezdPyPY1knPTFpXbLOa%252Fimage.png%3Falt%3Dmedia%26token%3Df6613ac8-8cb7-4055-91fe-8676327c00ae\&width=40\&dpr=4\&quality=100\&sign=66c02356\&sv=2)in **the project** you want to see details.
+4. **On the project** details page , you can view and use properties for the project.
 
-## Tăng giảm hạn mức project
+* **Information** : Provides general project information such as Total quota, Total usage, Project type, Account URL, Project Owner.
+* **S3 key** : Provides information about S3 key pairs that are initialized for the project from vStorage Portal. To initialize S3 key, please refer here.
+* **History** : Provides historical information affecting the project including action type, action status, time the action occurred, and a detailed description of the action if available.
+* **Connection Information** : Provides commands and configuration files to connect the project to S3.
 
-Bạn đã khởi tạo project với lượng quota ban đầu phù hợp với nhu cầu lưu trữ. Hiện tại nhu cầu kinh doanh của bạn thay đổi mà dung lượng cũ không đáp ứng được. Để giải quyết vấn đề này, bạn có thể thay đổi quota lưu trữ thông qua tính năng Thay đổi quota mà chúng tôi cung cấp.
+<figure><img src="../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
-Để thay đổi quota cho một project, bạn có thể:
+***
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn checkbox tại project bạn muốn tăng giảm hạn mức và chọn biểu tượng <img src="../../../../.gitbook/assets/image (604).png" alt="" data-size="line">hoặc bạn cũng có thể chọn biểu tượng <img src="../../../../.gitbook/assets/image (605).png" alt="" data-size="line"> sau đó chọn Resize.
-3. Màn hình **Resize project** được hiển thị**.** Chọn **quota** lưu trữ mong muốn tăng thêm, **quota** lưu trữ bạn có thể tăng thêm hoặc giảm đi đến mức tối đa hoặc tối thiểu bằng **quota** lưu trữ mà gói lưu trữ cung cấp. Bạn không thể điều chỉnh **quota** lưu trữ nhỏ hơn hoặc vượt quá giá trị này.
-4. Chọn **Resize project.**
-5. Chọn **Thanh toán** sau khi kiểm tra giỏ hàng và hình thức thanh toán.
-6. Chọn **Tiếp tục thanh toán** và thực hiện thanh toán sau khi chọn phương thức thanh toán phù hợp.
+## Resize a project <a href="#tang-giam-han-muc-project" id="tang-giam-han-muc-project"></a>
 
-Sau khi bạn thực hiện thành công 6 bước trên, giá trị tổng **quota** mới sau khi thay đổi sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
+You have initialized the project with an initial quota that matches your storage needs. Now your business needs have changed and the old capacity cannot meet them. To solve this problem, you can change the storage quota through the Change Quota feature that we provide.
 
-<figure><img src="../../../../.gitbook/assets/image (603).png" alt=""><figcaption></figcaption></figure>
+To change the quota for a project, you can:
 
-## Gia hạn project
+1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+2. Select the checkbox at the project you want to increase or decrease the limit and select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FklArErUf8YJCZgjw6j8E%252Fimage.png%3Falt%3Dmedia%26token%3D8bf06cfe-52c0-4060-837b-caa420fea819\&width=41\&dpr=4\&quality=100\&sign=cc455acd\&sv=2)or you can also select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FrxitUMM9JIncMgn4JDAK%252Fimage.png%3Falt%3Dmedia%26token%3D7baaf770-23ce-478c-816f-bd324ab4ddee\&width=27\&dpr=4\&quality=100\&sign=4695600d\&sv=2)then select Resize.
+3. **The Resize project** screen is displayed **.** Select the storage **quota you want to increase, the storage quota** you can increase or decrease to the maximum or minimum **quota** provided by the hosting package. You cannot adjust the storage **quota** to be smaller or larger than this value.
+4. Select **Resize project.**
+5. Select **Checkout** after reviewing your shopping cart and payment method.
+6. Select **Continue to checkout** and make payment after choosing the appropriate payment method.
 
-Bạn đã khởi tạo project với chu kỳ lưu trữ ngắn hạn. Hiện tại nhu cầu kinh doanh của bạn thay đổi và bạn muốn tăng thêm chu kỳ lưu trữ này. Để giải quyết vấn đề này, bạn có thể thay đổi chu kỳ lưu trữ thông qua tính năng renew mà chúng tôi cung cấp.
+After you successfully complete the above 6 steps, the new total **quota** value after change will be updated on the general information of the project you selected.
 
-Để renew một project, bạn có thể:
+<figure><img src="../../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn checkbox tại project bạn muốn tăng giảm hạn mức và chọn biểu tượng <img src="../../../../.gitbook/assets/image (606).png" alt="" data-size="line"> hoặc bạn cũng có thể chọn biểu tượng <img src="../../../../.gitbook/assets/image (605).png" alt="" data-size="line"> sau đó chọn Renew.
-3. Chọn Period lưu trữ mong muốn gia hạn. Chúng tôi cung cấp các chu kỳ lưu trữ bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng. Khi bạn thực hiện chọn chu kỳ gia hạn, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ lưu trữ mới và tổng số tiền bạn cần chi trả cho việc gia hạn **project**.
-4. Chọn **Thanh toán** sau khi kiểm tra giỏ hàng và hình thức thanh toán.
-5. Chọn **Tiếp tục thanh toán** và thực hiện thanh toán sau khi chọn phương thức thanh toán phù hợp.
+***
 
-Sau khi bạn thực hiện thành công 5 bước trên, chu kỳ lưu trữ mới sau khi gia hạn project sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
+## Renew a project <a href="#gia-han-project" id="gia-han-project"></a>
 
-## Gia hạn tự động project
+You have started your project with a short retention period. Now your business needs have changed and you want to increase this retention period. To solve this problem, you can change the retention period through the renew feature we provide.
 
-Ngoài cách gia hạn một project theo các thủ công thì chúng tôi cũng hỗ trợ bạn thiết lập gia hạn tự động thông qua tính năng Auto-renew.
+To renew a project, you can:
 
-Tính năng gia hạn tự động là tính năng hệ thống hỗ trợ tự động gia hạn các dịch vụ khi hết hạn được dễ dàng hơn cho những khách hàng trả trước. Khách hàng không cần phải lo lắng khi nào dịch vụ bị hết hạn để truy cập vào vStorage Portal gia hạn, thanh toán,...
+1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+2. Select the checkbox at **the project** you want to increase or decrease the limit and select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F1HTMWIvPjqwnOkYKUU7v%252Fimage.png%3Falt%3Dmedia%26token%3De30c9175-97b4-4ab3-8645-57e51c206768\&width=38\&dpr=4\&quality=100\&sign=92bed989\&sv=2)or you can also select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FrxitUMM9JIncMgn4JDAK%252Fimage.png%3Falt%3Dmedia%26token%3D7baaf770-23ce-478c-816f-bd324ab4ddee\&width=27\&dpr=4\&quality=100\&sign=4695600d\&sv=2)then select **Renew** .
+3. Select the desired storage period to renew. We offer storage periods of **1 month, 3 months, 6 months, 12 months, 24 months, 36 months . When you select a renewal period, the system will automatically calculate the effective time of the new storage period and the total amount you need to pay for project** renewal .
+4. Select **Checkout** after reviewing your shopping cart and payment method.
+5. Select **Continue to checkout** and make payment after choosing the appropriate payment method.
 
-Trước khi dịch vụ hết hạn 7 ngày hệ thống sẽ gửi mail thông báo về việc tự động gia hạn dịch vụ. Trong vòng 7 ngày này, mỗi ngày bạn sẽ nhận được 1 email thông báo.
+After you successfully complete the above 5 steps, the new retention period after project renewal will be updated on the general information of the project you selected.
 
-Hệ thống sẽ tự động gia hạn 3 ngày trước khi dịch vụ hết hạn:
+***
 
-* Nếu đủ credit sẽ tiến hành gia hạn tất cả các dịch vụ. Khi gia hạn thành công hay thất bại, chúng tôi sẽ gửi email chứa thông tin gia hạn thành công/ thất bại cho bạn. Lịch sử thanh toán gia hạn dịch vụ cũng sẽ được chúng tôi lưu trữ trên hệ thống vConsole. Để biết thêm thông tin, hãy truy cập [Dashboard vConsole](https://dashboard.console.vngcloud.vn/payment-history).
-* Nếu không đủ credit, hệ thống sẽ cố gắng gia hạn những dịch cho đến khi không còn đủ credit. Khi gia hạn thành công hay thất bại, chúng tôi sẽ gửi email chứa thông tin gia hạn thành công/ thất bại cho bạn. Lịch sử thanh toán gia hạn dịch vụ cũng sẽ được chúng tôi lưu trữ trên hệ thống vConsole. Để biết thêm thông tin, hãy truy cập [Dashboard vConsole](https://dashboard.console.vngcloud.vn/payment-history).
+## Auto-renew a project <a href="#gia-han-tu-dong-project" id="gia-han-tu-dong-project"></a>
+
+In addition to manually renewing a project, we also support you to set up automatic renewal through the Auto-renew feature.
+
+The automatic renewal feature is a system feature that supports automatic renewal of expired services more easily for prepaid customers. Customers do not need to worry about when the service expires to access the vStorage Portal to renew, pay,...
+
+7 days before the service expires, the system will send an email notification about the automatic service renewal. During these 7 days, you will receive 1 notification email each day.
+
+The system will automatically renew 3 days before the service expires:
+
+* If you have enough credits, all services will be renewed. When the renewal is successful or failed, we will send you an email containing information about the successful/failed renewal. The service renewal payment history will also be stored on the vConsole system. For more information, visit [the vConsole Dashboard](https://dashboard.console.vngcloud.vn/payment-history) .
+* If there are not enough credits, the system will try to renew the services until there are no more credits. When the renewal is successful or failed, we will send you an email containing the successful/failed renewal information. The service renewal payment history will also be stored on the vConsole system. For more information, visit the vConsole [Dashboard](https://dashboard.console.vngcloud.vn/payment-history) .
 
 <details>
 
-<summary>Thiết lập tính năng gia hạn tự động khi khởi tạo project</summary>
+<summary>Set up auto-renewal when creating a project</summary>
 
-1. Thực hiện các bước khởi tạo project theo hướng dẫn tại [Khởi tạo project](../../vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-project/khoi-tao-project.md).
-2. Tại thời điểm thiết lập thông tin về project cần mua, chọn **Gia hạn tự động**.
-3. Chọn **chu kỳ gia hạn tự động**. Chúng tôi cung cấp các chu kỳ gia hạn bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng. Khi bạn thực hiện chọn chu kỳ gia hạn, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ lưu trữ mới và tổng số tiền bạn cần chi trả cho việc gia hạn **project**.
+1. Follow the steps to initialize the project as instructed in [Initializing the project](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-project/khoi-tao-project) .
+2. At the time of setting up information about the project to be purchased, select **Auto Renew** .
+3. Select **the automatic renewal cycle** . We offer renewal cycles including: 1 month, 3 months, 6 months, 12 months, 24 months, 36 months. When you select the renewal cycle, the system will automatically calculate the validity period of the new storage cycle and the total amount you need to pay for the **project** renewal .
 
-Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](../../vstorage-hcm03/cach-tinh-phi/).&#x20;
+For a list of vStorage payment types and how project renewals are charged, see [How Charges Are Charged](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/cach-tinh-phi) .
 
-Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ mới sau khi gia hạn project sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
+After you successfully complete the above steps, the new retention period after project renewal will be updated on the general information of the project you selected.
 
 </details>
 
 <details>
 
-<summary>Thiết lập tính năng gia hạn tự động trên project đã được khởi tạo trước đó</summary>
+<summary>Set up auto-renewal on previously created projects</summary>
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (607).png" alt="" data-size="line"> tại **project** bạn muốn thực hiện thiết lập gia hạn tự động. Chọn Enable Auto-renew.
-3. Màn hình **Enable Auto-renew** được hiển thị**.** Chọn **Period** gia hạn mà bạn mong muốn.&#x20;
-4. Chọn **OK.**
+1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+2. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FK4egjGi7BcVc4LoWfjmV%252Fimage.png%3Falt%3Dmedia%26token%3D5b4d93e0-8bd9-4970-a85e-e3564c780054\&width=40\&dpr=4\&quality=100\&sign=4fa90d8e\&sv=2)at **the project** you want to perform auto-renew setup. Select Enable Auto-renew.
+3. **The Enable Auto-renew** screen is displayed **.** Select the renewal **Period** you want.
+4. Select **OK.**
 
-Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ mới sau khi gia hạn project sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
+After you successfully complete the above steps, the new retention period after project renewal will be updated on the general information of the project you selected.
 
 </details>
 
 <details>
 
-<summary>Gỡ bỏ tính năng gia hạn tự động trên một project đã được thiết lập gia hạn tự động trước đó</summary>
+<summary>Remove auto-renewal on a project that was previously set to auto-renewal</summary>
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (609).png" alt="" data-size="line"> tại **project** bạn muốn thực hiện tắt thiết lập gia hạn tự động. Chọn **Disable Auto-renew.**
-3. Màn hình **Disable Auto-renew** được hiển thị**.**&#x20;
-4. Chọn **OK.**
+1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+2. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FEedDoSjQC1v0i4G6OKT6%252Fimage.png%3Falt%3Dmedia%26token%3D5270bd91-5976-4b49-9747-6c848e043f7e\&width=32\&dpr=4\&quality=100\&sign=e2bdf3ba\&sv=2)in **the project** you want to disable auto-renew. Select **Disable Auto-renew.**
+3. **The Disable Auto-renew** screen is displayed **.**
+4. Select **OK.**
 
-Sau khi bạn thực hiện thành công các bước trên, tính năng gia hạn tự động cho project đã được tắt.
+After you successfully complete the above steps, the automatic renewal feature for the project has been turned off.
 
 </details>
 
-## Xóa project
+***
 
-Bạn đã khởi tạo một project với gói lưu trữ phù hợp. Hiện tại nhu cầu kinh doanh của bạn thay đổi, bạn không có nhu cầu sử dụng project đã tạo. Chúng tôi khuyến khích bạn nên xóa project để tối ưu chi phí.
+## Delete project <a href="#xoa-project" id="xoa-project"></a>
 
-Để xóa một project, bạn có thể:
+You have created a project with the appropriate hosting package. Now your business needs have changed and you no longer need the project. We recommend that you delete the project to optimize costs.
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (610).png" alt="" data-size="line">tại project bạn muốn thực hiện xóa. Chọn **Delete**.
-3. Nhập chuỗi ký tự **delete me** và chọn **Delete.**
+To delete a project, you can:
 
-Sau khi bạn bạn thực hiện xóa project thì project bị xóa sẽ biến mất khỏi danh sách project của bạn. Lúc này project bị xóa sẽ nằm trong **Thùng rác**, project bị xóa của bạn sẽ được lưu trữ tại **Thùng rác** trong vòng 7 ngày mà không mất phí. Trong 7 ngày này bạn có thể khôi phục lại project bị xóa. Để khôi phục, hãy xem hướng dẫn tại mục Khôi phục project. Nếu sau 7 ngày mà bạn không thực hiện khôi phục project thì project cùng các dữ liệu bên trong sẽ bị xóa hoàn toàn khỏi hệ thống và không thể khôi phục lại được nữa.
+1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+2. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FkcyUBgpsSXeMN2pcVWWi%252Fimage.png%3Falt%3Dmedia%26token%3D94a5949b-5b8c-4780-9b32-9fa7175fab46\&width=21\&dpr=4\&quality=100\&sign=f4d132ff\&sv=2)in the project you want to delete. Select **Delete** .
+3. Enter the string **delete me** and select **Delete.**
 
-Khi bạn thực hiện xóa project trước thời hạn lưu trữ ban đầu, chúng tôi sẽ thực hiện bồi hoàn cho bạn cũng như khi bạn khôi phục project, chúng tôi cũng sẽ tính phí khôi phục. Chi tiết cách vStorage tính phí bồi hoàn và khôi phục project, hãy xem Cách tính phí.
+After you delete the project, the deleted project will disappear from your project list. At this time, the deleted project will be in **the Trash** , your deleted project will be stored in **the Trash** for 7 days without any charge. During these 7 days, you can restore the deleted project. To restore, see the instructions in the Restore project section. If after 7 days you do not restore the project, the project and all data inside will be completely deleted from the system and cannot be restored.
 
-Do hành động xóa project tiềm ẩn nhiều rủi ro nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận cũng như tạo một phiên bản dự phòng của project trước khi thực hiện xóa.
+If you delete a project before the initial retention period, we will refund you, and if you restore a project, we will also charge you a restore fee. For details on how vStorage charges for project refunds and restores, see How it's Charged.
 
-## Khôi phục project
+Because deleting a project is risky, we recommend that you consider carefully and create a backup version of the project before deleting it.
 
-Bạn vừa thực hiện xóa một project hoặc một project hết hạn lưu trữ. Lúc này project sẽ bị đưa vào thư mục Thùng rác và lưu trữ tại đây trong 7 ngày, sau 7 ngày project sẽ bị xóa vĩnh viễn và không thể khôi phục. Trong 7 ngày này bạn phát hiện mình đã xóa nhầm hoặc bạn muốn tiếp tục sử dụng project đã hết hạn lưu trữ. Để giải quyết vấn đề này, chúng tôi cung cấp cho bạn tính năng khôi phục lại project bị xóa.
+***
 
-Để khôi phục một project bị xóa, bạn có thể:
+## Restore project <a href="#khoi-phuc-project" id="khoi-phuc-project"></a>
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn menu **Trash.**
-3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (611).png" alt="" data-size="line">trên **project** muốn thực hiện khôi phục.
-4. Chọn **Restore**.
-5. Chọn **Thanh toán** sau khi kiểm tra giỏ hàng và hình thức thanh toán.
-6. Chọn **Tiếp tục thanh toán** và thực hiện thanh toán sau khi chọn phương thức thanh toán phù hợp.
+You have just deleted a project or a project has expired. The project will be moved to the Trash folder and stored here for 7 days. After 7 days, the project will be permanently deleted and cannot be restored. During these 7 days, you discover that you have deleted the wrong project or you want to continue using the expired project. To solve this problem, we provide you with the feature to restore the deleted project.
 
-Sau khi bạn thực hiện thành công 6 bước trên, project sẽ được khôi phục với thông tin chu kỳ lưu trữ mới và được cập nhật trên thông tin chung của project mà bạn chọn.
+To restore a deleted project, you can:
 
-Khi project bị đưa vào Thùng rác bạn sẽ không thể tải lên/ tải xuống hoặc thực hiện các hành động tới object được nữa. Chúng tôi khuyến cáo bạn hãy gia hạn hoặc sao lưu toàn bộ dữ liệu trong project trước ngày hết hạn.
+1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+2. Select the **Trash menu.**
+3. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FDlgeznS53kbV3N5Z0anW%252Fimage.png%3Falt%3Dmedia%26token%3Db8930b0f-2868-41cd-a579-963559041d26\&width=49\&dpr=4\&quality=100\&sign=889ec58d\&sv=2)on **the project** you want to restore.
+4. Select **Restore** .
+5. Select **Checkout** after reviewing your shopping cart and payment method.
+6. Select **Continue to checkout** and make payment after choosing the appropriate payment method.
 
-## Tăng dung lượng tự động (Auto-scale Quota)
+After you successfully complete the above 6 steps, the project will be restored with new archive cycle information and updated on the general information of the project you selected.
 
-Tính năng Tự động tăng dung lượng lưu trữ (Auto-scale Quota) trên vStorage cho phép bạn thiết lập tự động mở rộng dung lượng lưu trữ dựa trên mức sử dụng và nhu cầu của bạn. Hướng dẫn này sẽ cung cấp chi tiết cách thức cấu hình và quản lý tính năng này thông qua vStorage Portal.
+When a project is moved to the Trash, you will no longer be able to upload/download or perform actions on objects. We recommend that you renew or back up all data in the project before the expiration date.
 
-Để thiết lập tăng dung lượng tự động cho một project, bạn có thể:
+***
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Tại project cần thiết lập Auto-scale Quota, chọn biểu tượng <img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fxle5SMO5J6MplFpJZC74%252Fimage.png%3Falt%3Dmedia%26token%3De9cdb754-9a75-4868-90bf-67e670048eb5&#x26;width=27&#x26;dpr=4&#x26;quality=100&#x26;sign=1f9a3808&#x26;sv=1" alt="" data-size="line"> sau đó chọn mục **Auto-scale** và tiếp tục chọn **Configure Auto-scale** hoặc chọn biểu tượng <img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fs6DACNvZx3OSJhJDO654%252Fimage.png%3Falt%3Dmedia%26token%3D3164ca6e-fc29-4fd0-b88a-34a960d4cde0&#x26;width=29&#x26;dpr=4&#x26;quality=100&#x26;sign=aa473973&#x26;sv=1" alt="" data-size="line"> sau đó chọn **Set Auto-scale**.
-3. Tại màn hình cấu hình **Auto-scale**, thực hiện thiết lập các thông số cần thiết cho **Auto Scale**. Cụ thể:
+## Auto-scale Quota <a href="#tang-dung-luong-tu-dong-auto-scale-quota" id="tang-dung-luong-tu-dong-auto-scale-quota"></a>
 
-* **Thiết lập Quota Unit:** bạn có thể chọn 1 trong hai loại đơn vị bao gồm **GB** hoặc **Percent**.
-* **Thiết lập Quota Threshold hoặc Quota Remain:** Nếu bạn chọn **Quota Unit** là **Percent**, tại đây bạn sẽ nhập phần trăm ngưỡng sử dụng mà khi đạt tới thì hệ thống sẽ kích hoạt việc tăng quota. Nếu bạn chọn **Quota Unit** là **GB**, tại đây bạn sẽ nhập lượng quota còn lại mà khi đạt tới hệ thống cũng sẽ kích hoạt việc tăng quota.
-* **Thiết lập Mức Tăng Quota**: nhập mức tăng mong muốn theo **GB** hoặc **Percent**.
+The Auto-scale Quota feature in vStorage allows you to set up automatic storage expansion based on your usage and needs. This guide will provide details on how to configure and manage this feature through the vStorage Portal.
 
-4. Chọn nhận thông báo qua **email** khi tăng quota thành công nếu muốn.
-5. Bật tính năng **Auto-scale** tại biểu tượng <img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FjlLW0mG9Z7he3tym9yeH%252Fimage.png%3Falt%3Dmedia%26token%3D247a3e39-731f-4fdb-a2f4-08b6bf8bbf2d&#x26;width=64&#x26;dpr=4&#x26;quality=100&#x26;sign=44906aa4&#x26;sv=1" alt="" data-size="line">. Khi biểu tượng này trở thành <img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FVGMWqFlP5OOPvrycdMrg%252Fimage.png%3Falt%3Dmedia%26token%3D94d216a5-2e33-489e-884d-f837683920c6&#x26;width=59&#x26;dpr=4&#x26;quality=100&#x26;sign=38683327&#x26;sv=1" alt="" data-size="line">tức là bạn đã bật **Auto-scale** thành công.
+To set up automatic growth for a project, you can:
+
+1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+2. In the project that needs to set Auto-scale Quota, select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs.vngcloud.vn%2F%7Egitbook%2Fimage%3Furl%3Dhttps%253A%252F%252F3672463924-files.gitbook.io%252F%257E%252Ffiles%252Fv0%252Fb%252Fgitbook-x-prod.appspot.com%252Fo%252Fspaces%25252FB0NrrrdJdpYOYzRkbWp5%25252Fuploads%25252Fxle5SMO5J6MplFpJZC74%25252Fimage.png%253Falt%253Dmedia%2526token%253De9cdb754-9a75-4868-90bf-67e670048eb5%26width%3D27%26dpr%3D4%26quality%3D100%26sign%3D1f9a3808%26sv%3D1\&width=27\&dpr=4\&quality=100\&sign=66330d1\&sv=2)then select **Auto-scale** and continue to select **Configure Auto-scale** or select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs.vngcloud.vn%2F%7Egitbook%2Fimage%3Furl%3Dhttps%253A%252F%252F3672463924-files.gitbook.io%252F%257E%252Ffiles%252Fv0%252Fb%252Fgitbook-x-prod.appspot.com%252Fo%252Fspaces%25252FB0NrrrdJdpYOYzRkbWp5%25252Fuploads%25252Fs6DACNvZx3OSJhJDO654%25252Fimage.png%253Falt%253Dmedia%2526token%253D3164ca6e-fc29-4fd0-b88a-34a960d4cde0%26width%3D29%26dpr%3D4%26quality%3D100%26sign%3Daa473973%26sv%3D1\&width=29\&dpr=4\&quality=100\&sign=6440465f\&sv=2)then select **Set Auto-scale** .
+3. **At the Auto-scale** configuration screen , set up the necessary parameters for **Auto Scale** . Specifically:
+
+* **Set Quota Unit:** you can choose 1 of 2 types of units including **GB** or **Percent** .
+* **Set Quota Threshold or Quota Remain:** If you choose **Quota Unit** as **Percent** , here you will enter the percentage of usage threshold that when reached will trigger the quota increase. If you choose **Quota Unit** as **GB** , here you will enter the remaining quota that when reached will trigger the quota increase.
+* **Set Quota Increment Level** : enter desired increment level in **GB** or **Percent** .
+
+1. **Choose to receive email** notification when quota increase is successful if desired.
+2. Enable **Auto-scale** at the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs.vngcloud.vn%2F%7Egitbook%2Fimage%3Furl%3Dhttps%253A%252F%252F3672463924-files.gitbook.io%252F%257E%252Ffiles%252Fv0%252Fb%252Fgitbook-x-prod.appspot.com%252Fo%252Fspaces%25252FB0NrrrdJdpYOYzRkbWp5%25252Fuploads%25252FjlLW0mG9Z7he3tym9yeH%25252Fimage.png%253Falt%253Dmedia%2526token%253D247a3e39-731f-4fdb-a2f4-08b6bf8bbf2d%26width%3D64%26dpr%3D4%26quality%3D100%26sign%3D44906aa4%26sv%3D1\&width=64\&dpr=4\&quality=100\&sign=f80a3317\&sv=2). When this icon becomes , ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs.vngcloud.vn%2F%7Egitbook%2Fimage%3Furl%3Dhttps%253A%252F%252F3672463924-files.gitbook.io%252F%257E%252Ffiles%252Fv0%252Fb%252Fgitbook-x-prod.appspot.com%252Fo%252Fspaces%25252FB0NrrrdJdpYOYzRkbWp5%25252Fuploads%25252FVGMWqFlP5OOPvrycdMrg%25252Fimage.png%253Falt%253Dmedia%2526token%253D94d216a5-2e33-489e-884d-f837683920c6%26width%3D59%26dpr%3D4%26quality%3D100%26sign%3D38683327%26sv%3D1\&width=59\&dpr=4\&quality=100\&sign=a00223b5\&sv=2)it means you have successfully enabled **Auto-scale .**
 
 {% hint style="info" %}
-**Chú ý:**
+**Attention:**
 
-* **Hệ thống vStorage** sẽ thực hiện kiểm tra project có/ không đủ điều kiện được auto-scale theo chu kỳ mỗi **5 phút** để tự động tăng dung lượng dựa trên ngưỡng đã thiết lập.
-* Giá cước áp dụng theo bảng giá **vStorage tiêu chuẩn**, tính năng chỉ thực hiện tăng dung lượng mà không làm thay đổi Storage Class.
-* Người dùng cần đảm bảo có **đủ số dư credit** cho tài khoản (trả trước) trước khi thực hiện Auto-scale.
-* Nếu việc tăng dung lượng **thất bại**, người dùng sẽ nhận được thông báo qua email. Sau hai lần thực hiện auto-scale thất bại liên tiếp, hệ thống của chúng tôi sẽ ngừng gửi thông báo qua email cho bạn. Bạn cần chủ động truy cập vào vStorage để thực hiện resize project thủ công theo hướng dẫn bên trên.
+* **The vStorage system will perform a 5-minute** auto-scaling check to automatically increase capacity based on the set threshold.
+* The price is applied according to the **standard vStorage** price list , the feature only increases capacity without changing the Storage Class.
+* Users need to ensure that they have **sufficient credit balance** for their account (prepaid) before performing Auto-scaling.
+* If the capacity increase **fails** , the user will receive an email notification. After two consecutive auto-scaling failures, our system will stop sending email notifications to you. You need to proactively access vStorage to manually resize the project according to the instructions above.
 {% endhint %}
 
-## Thực hiện POC project
+***
 
-Khi bạn là người dùng trên hệ thống vStorage, mặc định bạn sẽ không thể thực hiện POC project. POC là chương trình giúp khách hàng có thể trải nghiệm dịch vụ thông qua giá trị (bằng credit trong ví POC) được VNG Cloud cung cấp cho khách hàng. Thông thường, ví POC sẽ được cấp thông qua các chương trình khuyến mãi, các chương trình chiến dịch quảng bá của VNG Cloud. Qua đó, khách hàng có thể tự trải nghiệm tạo một số dịch vụ nhất định trong khoảng thời gian quy định. Để thực hiện POC project, bạn hãy liên hệ với nhân viên Sale hoặc nhân viên hỗ trợ trực tiếp cho bạn hoặc mở một ticket support trên hệ thống của chúng tôi. Ví POC được cấp có giá trị nhất định được dùng trong khoảng thời gian quy định tùy theo chính sách của công ty. Hết thời gian hiệu lực, bạn có thể yêu cầu gia hạn thời hạn sử dụng ví POC hoặc trả thêm chi phí để duy trì dịch vụ.
+## Create a POC project <a href="#thuc-hien-poc-project" id="thuc-hien-poc-project"></a>
 
-Sau khi chúng tôi xác nhận đã cung cấp ví POC cho tài khoản của bạn, để sử dụng ví POC hãy làm theo hướng dẫn bên dưới:
+When you are a user on the vStorage system, by default you will not be able to perform POC projects. POC is a program that helps customers experience the service through the value (in credit in the POC wallet) provided by VNG Cloud to customers. Normally, POC wallets will be granted through promotional programs, promotional campaigns of VNG Cloud. Thereby, customers can experience creating certain services within a specified period of time. To perform POC projects, please contact the Sales staff or the staff who directly supports you or open a support ticket on our system. The POC wallet granted has a certain value and is used within a specified period of time depending on the company's policy. After the validity period expires, you can request to extend the POC wallet's usage period or pay an additional fee to maintain the service.
+
+Once we confirm that we have provided a POC wallet to your account, to use the POC wallet please follow the instructions below:
 
 <details>
 
-<summary>Khởi tạo project sử dụng số dư ví POC</summary>
+<summary>Create a project using POC wallet balance</summary>
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn **region HCM04.**
-3. Chọn **Tạo một project.**
-4. Màn hình **Tạo mới project** được hiển thị. Trong **Tên project**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho project của bạn.
-5. Chọn **Quota** lưu trữ theo nhu cầu của bạn.Quota là kích thước gói lưu trữ tối đa bạn có thể tạo. Đối với mỗi gói lưu trữ, chúng tôi đã cung cấp 1 kích thước tối thiểu và tối đa để bạn có thể lựa chọn thay đổi dựa trên nhu cầu thực tế.
-6. Tắt chọn **Bật gia hạn tự động**. Lúc này chúng tôi hiển thị lựa chọn **PoC**.
-7. Chọn **PoC**.
-8. Chọn **Tạo một project.**
-9. Chọn **Checkout PoC** sau khi kiểm tra thông tin giỏ hàng.
+1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+2. Select **region HCM04.**
+3. Select **Create a project.**
+4. **The Create New Project** screen is displayed. In **Project Name** , enter a name that complies with our regulations for your project.
+5. Choose a hosting **Quota** according to your needs. Quota is the maximum hosting package size you can create. For each hosting package, we have provided a minimum and maximum size so you can choose to change based on your actual needs.
+6. **Turn off the Enable auto-renewal** option . Now we show the **PoC** option .
+7. Select **PoC** .
+8. Select **Create a project.**
+9. Select **Checkout PoC** after reviewing your cart information.
 
-Sau khi bạn hoàn thành 9 bước được mô tả bên trên, project của bạn đã được tạo thông qua phương thức thanh toán là ví POC. **Project** này có tiền tố là **\[POC]. Mặc định project này sẽ có ngày bắt đầu là thời gian tạo project và ngày kết thúc là thời gian hết hạn sử dụng ví POC mà bạn được cung cấp.**
+After you complete the 9 steps described above, your project has been created through the payment method of POC wallet. This **project** has the prefix **\[POC]. By default, this project will have a start date as the project creation time and an end date as the expiration date of the POC wallet you were provided.**
 
-Thời gian sử dụng tài nguyên POC mặc định trùng với thời gian kết thúc ví POC. Chúng tôi chỉ hỗ trợ bạn sử dụng ví POC để thanh toán tài nguyên POC. Đối với tài nguyên POC, cách tính giá sử dụng tài nguyên POC tương tự như tài nguyên thường. Chi tiết tham khảo thêm tại Cách tính phí.
+The default POC resource usage time coincides with the POC wallet expiration time. We only support you to use the POC wallet to pay for POC resources. For POC resources, the price of POC resource usage is calculated similarly to that of regular resources. For more details, please refer to How to calculate fees.
 
 </details>
 
 <details>
 
-<summary>Gia hạn project sử dụng ví POC</summary>
+<summary>Renew a project using POC wallet</summary>
 
-Sau khi bạn khởi tạo một project sử dụng ví POC, lúc này bạn có thể tiếp tục gia hạn sử dụng project cũng bằng cách sử dụng ví Poc. Chi tiết hãy làm theo các bước sau:
+After you create a project using POC wallet, you can continue to extend the project using Poc wallet. For details, follow these steps:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (620).png" alt="" data-size="line">tại **project** bạn muốn thực hiện gia hạn. Chọn **Gia hạn.**
-3. **Bạn có thể gia hạn project sử dụng ví POC nếu bạn đã gia hạn thời gian sử dụng ví POC. Sau khi bạn gia hạn thời gian sử dụng ví POC thì thời gian bạn có thể gia hạn project là quãng thời gian từ ngày kết thúc hiện tại tới ngày hết hạn mới của ví POC**. Để tăng thời gian sử dụng ví POC, bạn hãy liên hệ với nhân viên Sale hoặc nhân viên hỗ trợ trực tiếp cho bạn hoặc mở một ticket support trên hệ thống của chúng tôi. Chọn **Gia hạn**.
-4. Chọn **Checkout PoC**.
+1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+2. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FygA5fq4dzy9Rq5tPOgx2%252Fimage.png%3Falt%3Dmedia%26token%3D721a82c5-eb44-4657-9af9-82d2129a5c2d\&width=22\&dpr=4\&quality=100\&sign=856d143c\&sv=2)at **the project** you want to renew. Select **Renew.**
+3. **You can extend the project using POC wallet if you have extended the POC wallet usage period. After you extend the POC wallet usage period, the time you can extend the project is the period from the current end date to the new expiration date of the POC wallet** . To extend the POC wallet usage period, please contact the Sales staff or the staff who directly supports you or open a support ticket on our system. Select **Extend** .
+4. Select **Checkout PoC** .
 
-Sau khi bạn hoàn thành 4 bước được mô tả bên trên, project của bạn đã được gia hạn thông qua phương thức thanh toán là ví POC.&#x20;
+Once you complete the 4 steps described above, your project has been renewed via the POC wallet payment method.
 
-Quy trình và phương thức tính giá tương tự như khi gia hạn project thông thường. Chi tiết tham khảo thêm tại Cách tính phí.
-
-</details>
-
-<details>
-
-<summary>Xóa project sử dụng ví POC</summary>
-
-Sau khi bạn khởi tạo một project sử dụng ví POC, lúc này nếu bạn không có nhu cầu sử dụng project này, bạn có thể thực hiện xóa chúng theo hướng dẫn tại Xóa project.
-
-Lúc này **project** bị xóa sẽ nằm trong **Thùng rác**, bạn có thể:
-
-* **Xóa** **hoàn toàn** project khỏi vStorage bằng cách chọn **Xóa**.
-* **Khôi phục** lại project sử dụng ví POC theo hướng dẫn ngay bên dưới.
+The process and pricing method are similar to regular project extensions. For more details, please refer to How to calculate fees.
 
 </details>
 
 <details>
 
-<summary>Khôi phục project sử dụng ví POC</summary>
+<summary>Delete project using POC wallet</summary>
 
-Bạn có thể khôi phục project sau khi xóa theo hướng dẫn bên trên bằng cách:
+After you initialize a project using POC wallet, if you no longer need to use this project, you can delete it according to the instructions at Delete project.
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn menu **Thùng rác.**
-3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (621).png" alt="" data-size="line"> trên **project** muốn thực hiện khôi phục.
-4. **Bạn có thể gia hạn project sử dụng ví POC với khoảng thời gian gia hạn tính từ ngày thực hiện xóa project tới ngày kết thúc thời gian sử dụng ví POC.** Để tăng thời gian sử dụng ví POC, bạn hãy liên hệ với nhân viên Sale hoặc nhân viên hỗ trợ trực tiếp cho bạn hoặc mở một ticket support trên hệ thống của chúng tôi. Chọn **Khôi phục.**
-5. Chọn **Checkout PoC**.
+Now the deleted **project will be in the Trash** , you can:
 
-Sau khi bạn hoàn thành 5 bước được mô tả bên trên, project của bạn đã được khôi phục thông qua phương thức thanh toán là ví POC.&#x20;
-
-Quy trình và phương thức tính giá tương tự như khi khôi phục project thông thường. Chi tiết tham khảo thêm tại Cách tính phí.
+* **Completely remove** the project from vStorage by selecting **Delete** .
+* **Restore** the project using the POC wallet following the instructions below.
 
 </details>
 
 <details>
 
-<summary>Dừng POC trước thời hạn</summary>
+<summary>Restore project using POC wallet</summary>
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (622).png" alt="" data-size="line">tại **project** bạn muốn thực hiện dừng POC. Chọn **Dừng POC**.
-3. Chọn **Dừng POC**.&#x20;
+You can restore the project after deleting it following the instructions above by:
 
-Sau khi bạn thực hiện dừng POC thành công thì project của bạn sẽ được chuyển thành loại tài nguyên trả trước và được chuyển vào Thùng rác.
+1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+2. Select the **Trash menu.**
+3. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FTNUCCTbtOupVO9pAzoS4%252Fimage.png%3Falt%3Dmedia%26token%3Da8d327e5-1832-4487-bfb0-433b1ccd94a0\&width=49\&dpr=4\&quality=100\&sign=67ac08c6\&sv=2)on **the project** you want to restore.
+4. **You can extend the project using POC wallet with the extension period from the date of project deletion to the end date of POC wallet usage.** To extend the POC wallet usage period, please contact the Sales staff or the staff who directly supports you or open a support ticket on our system. Select **Restore.**
+5. Select **Checkout PoC** .
 
-* Nếu bạn thực sự không có nhu cầu sử dụng project này nữa thì bạn có thể thực hiện xóa hoàn toàn project khỏi hệ thống của chúng tôi theo hướng dẫn tại Xóa project.
-* **Nếu bạn muốn khôi phục project vừa xóa này để tiếp tục sử dụng, hãy làm theo hướng dẫn Khôi phục project. Khi khôi phục project vừa được dừng POC, bạn cần chọn lại chu kỳ gia hạn mới và thực hiện thanh toán tiền thật của bạn (số dư ví credit, ví Momo, ví Zalopay,...).**
-* Bạn cũng không thể bật sử dụng POC sau khi đã thực hiện Dừng POC. Nếu bạn có vướng mắc lúc này, hãy liên hệ với nhân viên Sale hoặc nhân viên hỗ trợ trực tiếp cho bạn hoặc mở một ticket support trên hệ thống của chúng tôi.&#x20;
+Once you complete the 5 steps described above, your project has been restored via the POC wallet as your payment method.
+
+The process and pricing are similar to normal project recovery. For more details, see How to Calculate Fees.
 
 </details>
 
 <details>
 
-<summary>Hết thời hạn thực hiện POC</summary>
+<summary>Stop POC a project</summary>
 
-Tại thời điểm hết hạn sử dụng ví POC, chúng tôi sẽ:
+1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
 
-* **Dừng POC** đối với tất cả tài nguyên POC đang sử dụng. Quy trình xử lý tương tự như khi bạn chủ động dừng POC trên tài nguyên.
-* **Tắt ví POC**: bạn sẽ không được phép sử dụng tài nguyên dưới hình thức POC cho đến khi ví POC được bật trở lại.
+2) Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F7MKwglc67piWKdxGb7Jc%252Fimage.png%3Falt%3Dmedia%26token%3Dc06c8276-677f-4192-8a54-20bc35c657c7\&width=25\&dpr=4\&quality=100\&sign=c1b8c293\&sv=2)at **the project** you want to stop POC. Select **Stop POC** .
+
+3. Select **Stop POC** .
+
+Once you successfully stop the POC, your project will be converted to a prepaid resource type and moved to the Trash.
+
+* If you really don't need to use this project anymore, you can completely delete the project from our system following the instructions at Delete project.
+* **If you want to restore this deleted project to continue using it, follow the instructions to Restore Project. When restoring a project that has just been stopped from POC, you need to select a new renewal cycle and make a payment with your real money (credit wallet balance, Momo wallet, Zalopay wallet,...).**
+* You also cannot enable POC usage after you have performed POC Stop. If you have any problems at this point, please contact your Sales or support staff directly or open a support ticket on our system.
 
 </details>
 
-## Thực hiện trial project
+<details>
 
-Hiện tại, với region HCM04 chúng tôi chưa hỗ trợ bạn có thể thực hiện tạo project trial. Tính năng này sẽ được chúng tôi phát triển trong các version tiếp theo.
+<summary>POC implementation deadline expired</summary>
+
+At the time of POC wallet expiry, we will:
+
+* **Stop the POC** for all POC resources in use. The process is similar to when you actively stop the POC on a resource.
+* **Disable POC wallet** : you will not be allowed to use resources in POC form until the POC wallet is enabled again.
+
+</details>
+
+***
+
+## Create a trial project <a href="#thuc-hien-trial-project" id="thuc-hien-trial-project"></a>
+
+Currently, with region HCM04 we do not support you to create trial project. This feature will be developed in the next versions.

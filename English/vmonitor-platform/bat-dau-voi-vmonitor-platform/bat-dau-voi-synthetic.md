@@ -37,21 +37,21 @@ API HTTP tests allow you to send HTTP(s) requests to your service or application
   * **Method:**&#x43;hoose a method to check your endpoint (Get, Post, Put, Delete)
   * **URL**: Fill in the service information you want to check, for example [https://google.com](https://google.com/)
 
-<figure><img src="../../.gitbook/assets/image (38) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (38) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * After filling in the Test Information, you can select **Run Test or Test Again** if you have tested before to check. You can see the returned information such as status code, header, and body.
 
-<figure><img src="../../.gitbook/assets/image (39) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (39) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Test Assertion**
   * Assertions define what you expect from the API Test results. If the returned results match your definition, the API Test will indicate that the URL being tested is successful; otherwise, it will indicate failure. The system will automatically add an assertion for the status code after you run the test; you need to define at least one assertion for the API test. In addition to the status code assertion automatically added by the system, you can add any other assertions we support, such as Response Time, Header, Body, and Certificate.
 
-<figure><img src="../../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (40) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Location**
   * Select a Location to run HTTP Tests to your URL. HTTP tests can be executed from both Public Locations (managed by VNG Cloud) and Private Locations (self-installed and managed by customers) based on your need to run tests from outside (internet) or inside your network. Public Locations managed by VNG Cloud currently include two locations: HCM and HN.
 
-<figure><img src="../../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (41) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   **Alarm conditions:** Set up alarm conditions to identify scenarios where the checks fail and trigger an alert.
 
@@ -63,16 +63,16 @@ API HTTP tests allow you to send HTTP(s) requests to your service or application
 
     * **Notifications**: choose notification channels for when the status changes to In-alarm, Up, or Undetermined. The system will notify according to this list.
 
-<figure><img src="../../.gitbook/assets/image (42) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (42) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Then click the "**Create**" button to create an API test. Once created, you will see the API test in an Undetermined state. The status will be updated accurately in the next interval.
 
-<figure><img src="../../.gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (43) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The API Test has changed to the Up status when the URL is functioning normally.
 
-<figure><img src="../../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (44) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * To view details about the API Test:
 
-<figure><img src="../../.gitbook/assets/image (45) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (45) (1) (1).png" alt=""><figcaption></figcaption></figure>
