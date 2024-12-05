@@ -97,7 +97,7 @@ Fast is a perfect tool for those who just want to check download speed in a very
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/63766895/image2023-8-14_15-24-20.png?version=1&#x26;modificationDate=1692001461000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-### SpeedTest International Localtion
+### SpeedTest International Location
 
 &#x20;
 
