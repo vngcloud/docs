@@ -1,6 +1,6 @@
 # Package Bandwidth VNG Dedicated
 
-The VNG Dedicated bandwidth package is the default free package with standard speed for all customers. In this package, we provide up to 200Mbps domestic bandwidth and up to 4Mbps international bandwidth. **By default, all your IP addresses will adhere to this package's bandwidth standards.**
+The VNG Dedicated bandwidth package is the default free package with standard speed for all customers. In this package, we provide up to 300Mbps domestic bandwidth and up to 5Mbps international bandwidth. **By default, all your IP addresses will adhere to this package's bandwidth standards.**
 
 ### **View Detailed Package Information**
 
