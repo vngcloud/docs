@@ -286,34 +286,30 @@ Lifecycle management for buckets and objects:
   * For example: `GET`[`https://hcm04.vstorage.vngcloud.vn/demobucket?lifecycle`](https://hcm04.vstorage.vngcloud.vn/demobucket?lifecycle)
   *   Or Curl via command:
 
-      Copy
-
-      ```
+      ```bash
       curl --location 'https://hcm04.vstorage.vngcloud.vn/demobucket?lifecycle=null' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T042134Z' \
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=31f4e56f55429f271348de461934dc4c495856330d333559fa6e9ae983800fbd'
       ```
 
-
+<figure><img src="../../../.gitbook/assets/image (335).png" alt=""><figcaption></figcaption></figure>
 
 * **DELETE Bucket Lifecycle** : Deletes the lifecycle rules set for the bucket.
   * Path:`DELETE /<bucket-name>?lifecycle`
   * For example:`DELETE`[`https://hcm04.vstorage.vngcloud.vn/demobucket?lifecycle`](https://hcm04.vstorage.vngcloud.vn/demobucket?lifecycle)
   *   Or Curl via command:
 
-      Copy
-
-      ```
+      ```bash
       curl --location --request DELETE 'https://hcm04.vstorage.vngcloud.vn/demobucket?lifecycle=null' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T042209Z' \
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=c4ab9fbfa8ca73af115142e0a78103e0292e87af6b70a214f21fe020535c3db0'
       ```
 
-![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F0oSSagdAoJ0Nfw4r3bOB%252Fimage.png%3Falt%3Dmedia%26token%3D86ebd23f-bd94-49db-976a-8c01c13e5e34\&width=768\&dpr=4\&quality=100\&sign=b52e47b9\&sv=2)
+<figure><img src="../../../.gitbook/assets/image (336).png" alt=""><figcaption></figcaption></figure>
 
-#### **5. CORS API** <a href="#id-5.-api-cors" id="id-5.-api-cors"></a>
+### **5. CORS API** <a href="#id-5.-api-cors" id="id-5.-api-cors"></a>
 
 Manage access and use S3 as a static website hosting service.
 
@@ -322,9 +318,7 @@ Manage access and use S3 as a static website hosting service.
   * For example: `PUT`[`https://hcm04.vstorage.vngcloud.vn/demobucket?cors`](https://hcm04.vstorage.vngcloud.vn/demobucket?cors)
   *   Or Curl via command:
 
-      Copy
-
-      ```
+      ```bash
       curl --location --request PUT 'https://hcm04.vstorage.vngcloud.vn/demobucket?cors=null' \
       --header 'Content-Type: application/xml' \
       --header 'X-Amz-Content-Sha256: beaead3198f7da1e70d03ab969765e0821b24fc913697e929e726aeaebf0eba3' \
@@ -345,47 +339,45 @@ Manage access and use S3 as a static website hosting service.
       '
       ```
 
-![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FOlWcns3xTo614xko9TDT%252Fimage.png%3Falt%3Dmedia%26token%3D6978e12b-0c54-4ed9-9741-5be6d0950c02\&width=768\&dpr=4\&quality=100\&sign=cc2d0a8b\&sv=2)
+<figure><img src="../../../.gitbook/assets/image (337).png" alt=""><figcaption></figcaption></figure>
 
 * **GET Bucket Website** : Get the bucket's website configuration.
   * Path:`GET /<bucket-name>?cors`
   * For example:`GET`[`https://hcm04.vstorage.vngcloud.vn/demobucket?cors`](https://hcm04.vstorage.vngcloud.vn/demobucket?cors)
   *   Or Curl via command:
 
-      Copy
-
-      ```
+      ```bash
       curl --location 'https://hcm04.vstorage.vngcloud.vn/demobucket?cors=null' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T042406Z' \
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=7632d687924e286195d06f4024d2307c91ccb6df49f6da27328acdd63da63458'
       ```
 
-![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FTqIVKujnwkCC4FajhJnL%252Fimage.png%3Falt%3Dmedia%26token%3Db55aaeb0-6a75-4a34-8660-94cf4cfaef00\&width=768\&dpr=4\&quality=100\&sign=a7b75349\&sv=2)
+<figure><img src="../../../.gitbook/assets/image (338).png" alt=""><figcaption></figcaption></figure>
 
 * **DELETE Bucket Website** : Deletes the bucket's website configuration.
   * Path:`DELETE /<bucket-name>?website`
   * For example:`DELETE`[`https://hcm04.vstorage.vngcloud.vn/demobucket?cors`](https://hcm04.vstorage.vngcloud.vn/demobucket?cors)
   *   Or Curl via command:
 
-      Copy
-
-      ```
+      ```bash
       curl --location --request DELETE 'https://hcm04.vstorage.vngcloud.vn/demobucket?cors=null' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T042453Z' \
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=78fdf2ff9a9ec36927431dc1f42a8d5fdcb8fd4a1a2c48794cd45c555de3d6b9'
       ```
 
-![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FsoKlbdLDiuvEKuqIGseE%252Fimage.png%3Falt%3Dmedia%26token%3D5f7cfed8-28fa-4e91-84a5-f4ba2295a01e\&width=768\&dpr=4\&quality=100\&sign=b3ab887b\&sv=2)
+<figure><img src="../../../.gitbook/assets/image (339).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-#### **6. API Object Locked** <a href="#id-6.-api-object-locked" id="id-6.-api-object-locked"></a>
+### **6. API Object Locked** <a href="#id-6.-api-object-locked" id="id-6.-api-object-locked"></a>
 
+{% hint style="info" %}
 **Attention:**
 
 * To set Object Locked for a bucket, when initializing the bucket, you need to add the parameter **x-amz-bucket-object-lock-enabled = true** .
+{% endhint %}
 
 Set Object Locked via API.
 
@@ -395,9 +387,7 @@ Set Object Locked via API.
     * For example:`PUT` [`https://hcm04.vstorage.vngcloud.vn/demoobjectlocked?object-lock`](https://hcm04.vstorage.vngcloud.vn/demoobjectlocked?object-lock)
     *   Or Curl created via command:
 
-        Copy
-
-        ```
+        ```bash
         curl --location --request PUT 'https://hcm04.vstorage.vngcloud.vn/demoobjectlocked?object-lock=null' \
         --header 'Content-MD5: frQ6AD8WUb/ZlO+2+AKIlw==' \
         --header 'X-Amz-Content-Sha256: beaead3198f7da1e70d03ab969765e0821b24fc913697e929e726aeaebf0eba3' \
@@ -414,11 +404,11 @@ Set Object Locked via API.
         </ObjectLockConfiguration>'
         ```
 
-    ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FO6iyOtVMio0OZNyBy3Lg%252Fimage.png%3Falt%3Dmedia%26token%3Dc0d20c89-21d9-479e-803a-6a06e0505adc\&width=768\&dpr=4\&quality=100\&sign=52c7f421\&sv=2)
+    <figure><img src="../../../.gitbook/assets/image (340).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### Working with Objects <a href="#lam-viec-voi-object" id="lam-viec-voi-object"></a>
+## Working with Objects <a href="#lam-viec-voi-object" id="lam-viec-voi-object"></a>
 
 These are the basic APIs for manipulating objects (files) in S3.
 
@@ -427,9 +417,7 @@ These are the basic APIs for manipulating objects (files) in S3.
   * For example:`PUT`[`https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt`](https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt)
   *   Or Curl via command:
 
-      Copy
-
-      ```
+      ```bash
       curl --location --request PUT 'https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt' \
       --header 'Content-MD5: h6xLdLBQrPaV94Ve6q8WPQ==' \
       --header 'Content-Type: text/plain' \
@@ -439,32 +427,28 @@ These are the basic APIs for manipulating objects (files) in S3.
       --data 'datatest'
       ```
 
-![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fm4eZnDkyoJXDTc4CFvbL%252Fimage.png%3Falt%3Dmedia%26token%3D6ac8e939-f1cf-48b3-9e14-94236e8b8099\&width=768\&dpr=4\&quality=100\&sign=f0569f05\&sv=2)
+<figure><img src="../../../.gitbook/assets/image (341).png" alt=""><figcaption></figcaption></figure>
 
 * **GET Object** : Get an object from S3.
   * Path:`GET /<bucket-name>/<object-key>`
   * For example:`GET` [`https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt`](https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt)
   *   Or Curl via command:
 
-      Copy
-
-      ```
+      ```bash
       curl --location 'https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T042558Z' \
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=5d1d085388c0464652e30d68b894e4ff1a6ade86c8f04eed4f9fba7c5968676d'
       ```
 
-![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FSHzQFHJrOiW3OoyIyHFE%252Fimage.png%3Falt%3Dmedia%26token%3Db4c19304-7aae-4a2d-8ddb-8339e0aa1e62\&width=768\&dpr=4\&quality=100\&sign=cc33df28\&sv=2)
+<figure><img src="../../../.gitbook/assets/image (342).png" alt=""><figcaption></figcaption></figure>
 
 * **DELETE Object** : Delete an object from S3.
   * Path:`DELETE /<bucket-name>/<object-key>`
   * For example:`DELETE` [`https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt`](https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt)
   *   Or Curl via command:
 
-      Copy
-
-      ```
+      ```bash
       curl --location --request DELETE 'https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt' \
       --header 'x-amz-bypass-governance-retention: true' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
@@ -472,15 +456,13 @@ These are the basic APIs for manipulating objects (files) in S3.
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-bypass-governance-retention;x-amz-content-sha256;x-amz-date, Signature=54babdc95afd251946a37352d569f825cc5bce8c7b900c0c03874fb3554fdf6c'
       ```
 
-![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FFPZSKkNSXsDDEFb9O0ka%252Fimage.png%3Falt%3Dmedia%26token%3D1aca9f10-1de4-41d5-886c-580c95b8a504\&width=768\&dpr=4\&quality=100\&sign=263a2f32\&sv=2)
+<figure><img src="../../../.gitbook/assets/image (343).png" alt=""><figcaption></figcaption></figure>
 
 **Attention:**
 
 * To delete a version object, you need to add the versionId param to this API. For example, to delete the test.txt object with version-id = "z3-o0S5HEC6-XsjEjuHoRwoE-F6X1IF", you can curl the following command:
 
-Copy
-
-```
+```bash
 curl --location --request DELETE 'https://hcm04.vstorage.vngcloud.vn/demobucket/test.txt?versionId=z3-o0S5HEC6-XsjEjuHoRwoE-F6X1IF' \
 --header 'x-amz-bypass-governance-retention: true' \
 --header 'versionId: z3-o0S5HEC6-XsjEjuHoRwoE-F6X1IF' \
@@ -494,25 +476,21 @@ curl --location --request DELETE 'https://hcm04.vstorage.vngcloud.vn/demobucket/
   * For example:`HEAD`[`https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt`](https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt)
   *   Or Curl via command:
 
-      Copy
-
-      ```
+      ```bash
       curl --location --head 'https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T042639Z' \
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=0fe5fc5caca290919c3782c74f793c0f7cfe36f4f2c7829de8b895bab51ac7d1'
       ```
 
-![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FENl57U4RwFYxDLlPx8a1%252Fimage.png%3Falt%3Dmedia%26token%3Dfbb8aa85-83bc-4b7d-92aa-934737bbdfa7\&width=768\&dpr=4\&quality=100\&sign=785a32cb\&sv=2)
+<figure><img src="../../../.gitbook/assets/image (345).png" alt=""><figcaption></figcaption></figure>
 
 * **COPY Object** : Copy an object from one S3 location to another.
   * Request: `PUT /<destination-bucket>/<destination-object-key>`with header `x-amz-copy-source`.
   * For example:`PUT` [`https://hcm04.vstorage.vngcloud.vn/demobucket01/demoobject.txt`](https://hcm04.vstorage.vngcloud.vn/demobucket01/demoobject.txt)
   * Or Curl via command:
 
-Copy
-
-```
+```bash
 curl --location --request PUT 'https://hcm04.vstorage.vngcloud.vn/demobucket01/demoobject.txt' \
 --header 'x-amz-copy-source: /demobucket/demoobject.txt' \
 --header 'x-amz-object-lock-legal-hold: OFF' \
@@ -521,4 +499,4 @@ curl --location --request PUT 'https://hcm04.vstorage.vngcloud.vn/demobucket01/d
 --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-copy-source;x-amz-date;x-amz-object-lock-legal-hold, Signature=bf53eedc8b407de21d94c73191940f2257a6c9759f411e844c912de3c2b26ee9'
 ```
 
-![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FuBlsEv4hIW176RYpVQnN%252Fimage.png%3Falt%3Dmedia%26token%3D906838d5-1d2b-487a-a661-e33082dceea3\&width=768\&dpr=4\&quality=100\&sign=695f2ade\&sv=2)[PreviousAccess Management](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/object-storage-hcm04/quan-ly-truy-cap)[Next](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/object-storage-hcm04/tinh-huong-su-dung-use-case)
+<figure><img src="../../../.gitbook/assets/image (346).png" alt=""><figcaption></figcaption></figure>

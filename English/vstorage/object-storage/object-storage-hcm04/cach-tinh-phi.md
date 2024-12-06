@@ -1,12 +1,12 @@
-# Cách tính phí
+# Charging Fee
 
-Hiện tại chúng tôi đang hỗ trợ 2 loại người dùng: trả trước và trả sau với 1 loại gói lưu trữ: **Instant Archive Type**. Khi bạn tạo mới một project, chúng tôi hỗ trợ bạn thay đổi quota của gói lưu trữ tới một giá trị nhất định.
+We currently support 2 types of users: prepaid and postpaid with 1 type of storage package: **Instant Archive Type** . When you create a new project, we support you to change the quota of the storage package to a certain value.
 
-* Ban đầu khi bạn đăng ký tài khoản VNG Cloud thành công, mặc định chúng tôi xếp bạn vào loại người dùng trả trước. Tức là bạn cần trả tiền mua gói lưu trữ sau đó mới có thể sử dụng dịch vụ và gói lưu trữ sẽ có thời hạn tùy theo chu kỳ mà bạn chọn.
-* Nếu bạn có nhu cầu và đảm bảo một vài điều kiện về các chỉ số chi tiêu, chúng tôi có thể hỗ trợ chuyển hình thức người dùng từ trả trước sang trả sau. Tức bạn không cần trả tiền khi mua gói lưu trữ, giá trị hóa đơn mỗi tháng sẽ tính dựa trên dung lượng, request,... thực tế mà bạn sử dụng.
+* Initially, when you successfully register for a VNG Cloud account, we classify you as a prepaid user by default. That means you need to pay for a storage package before you can use the service and the storage package will have a duration depending on the cycle you choose.
+* If you have the need and ensure some conditions on spending indicators, we can support the conversion of user form from prepaid to postpaid. That means you do not need to pay when purchasing a storage package, the monthly invoice value will be calculated based on the actual capacity, requests,... that you use.
 
-Bạn có thể lựa chọn hình thức phù hợp để tối ưu chi phí lưu trữ của bạn hay đơn vị của bạn. Chi tiết tham khảo thêm tại: [Quản lý hóa đơn, chi phí & tài nguyên trên VNG Cloud](https://docs.vngcloud.vn/vng-cloud-document/v/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud).
+You can choose the appropriate form to optimize your or your unit's storage costs. For more details, please refer to: [Manage invoices, costs & resources on VNG Cloud](https://docs.vngcloud.vn/vng-cloud-document/v/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud) .
 
-Ngoài ra, khi bạn thực hiện xóa project trong chu kỳ còn hiệu lực của project mà bạn đã mua trước đó, chúng tôi sẽ hoàn trả lại cho bạn số tiền thực tế dựa trên số tài nguyên bạn chưa sử dụng trong chu kỳ đã thanh toán. Chi tiết tham khảo thêm tại: [Quản lý hóa đơn, chi phí & tài nguyên trên VNG Cloud](https://docs.vngcloud.vn/vng-cloud-document/v/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud).
+In addition, when you delete a project during the active cycle of the project you purchased before, we will refund you the actual amount based on the number of resources you have not used in the paid cycle. For more details, please refer to: [Manage invoices, costs & resources on VNG Cloud](https://docs.vngcloud.vn/vng-cloud-document/v/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud) .
 
-Chi tiết tham khảo thêm tại [đây](../vstorage-hcm03/cach-tinh-phi/).
+For more details, please refer [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/cach-tinh-phi) .
