@@ -2,7 +2,7 @@
 
 When creating a **Widget** for **logs** data, in the **Graph your data** section, create your data query by selecting **Add a query**. Each query will be represented by a line, bar, stacked area, pie, number, table, or a log search interface on the chart. The components that make up a query for log data include:
 
-<figure><img src="../../../../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (80) (1).png" alt=""><figcaption></figcaption></figure>
 
 Including:
 

@@ -24,7 +24,7 @@ For example:
 | ---------------------- | --------------------------- | ------------------------------------------------------ | ------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | webserver              | webserver-parse             | Message (field logs mà chúng tôi thực hiện parser)     | time,action,ip\_address,message | ,             | <p>{<br>"time": "2020-09-01 10:35:25",<br>"action": "RESTART",<br>"ip_address": "192.168.1.3",<br>"message": "System restarts"<br>}</p> |
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Store and reuse Parsing rules <a href="#luu-tru-va-tai-su-dung-parsing-rule" id="luu-tru-va-tai-su-dung-parsing-rule"></a>
 

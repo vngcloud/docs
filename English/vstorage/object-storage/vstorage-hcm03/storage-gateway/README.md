@@ -4,7 +4,7 @@ Storage Gateway is a service that provides a connection gateway between customer
 
 Deployment Model of Storage Gateway:
 
-<figure><img src="../../../../.gitbook/assets/image (29) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (29) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Storage Gateway is built on either one vServer or on-premise server.
 * The Storage Gateway acts as an intermediary between end-users and vStorage for upload/download tasks. Data resides on the cache (block disk), enabling quick access for end-users.

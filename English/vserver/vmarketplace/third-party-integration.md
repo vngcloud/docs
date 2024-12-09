@@ -10,7 +10,7 @@ vMarketplace is a comprehensive hub for popular applications across various indu
 
 ### Integration Process
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Preparation:** The partner sets up the environment, tests the application's usability on the VNG Cloud environment, and prepares necessary documentation.
 2. **Image Packaging:** VNG Cloud packages the image based on the partner's requirements and provided documentation.

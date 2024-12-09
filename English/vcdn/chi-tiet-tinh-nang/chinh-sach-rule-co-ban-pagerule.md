@@ -1,42 +1,59 @@
-# PageRule
+# Page Rule
 
-Allows customers to optionally create Rules policies through the Portal interface. A Rule will be executed when a request URI matches the conditions defined in the Rule.
+## Overview <a href="#tong-quan" id="tong-quan"></a>
 
-<figure><img src="../../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
+**Page Rules** are a powerful tool in the vCDN system that allows you to customize how the CDN handles requests to your website based on predefined rules. With Page Rules, you can apply specific settings to one or more URLs, helping to optimize performance, enhance security, or improve user experience.
 
-The "Pagerules" function will help customers optimize conditions and options to help the website express many different purposes.&#x20;
+## Detail <a href="#chi-tiet" id="chi-tiet"></a>
 
-To create “Pagerules”, click “Create Page Rule”, a popup will appear as follows:
+When initializing Live Stream, Object Download,... you can initialize Page Rule by selecting **Create Page Rule** . A Rule will be executed when there is a URI request that matches the conditions defined in the Rule.
 
-<figure><img src="../../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (375).png" alt=""><figcaption></figcaption></figure>
 
-In item number (1), enter "URL pattern" to which the pagerule needs to be applied, supporting the "\*" declaration type that represents a string of multiple characters. For example: /page\_landing\_cu.html.&#x20;
+After you select Create Page Rule, the screen displays as follows:
 
-Actions when conditions are met\*\*:\*\* Each Rule that meets the correct condition of the requested URI will have the option to execute one of the following actions:
+<figure><img src="../../.gitbook/assets/image (376).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* Always Use HTTPS
-* Auto Minify
-* Automatic HTTPS Rewrites
-* Server Cache TTL
-* Browser Cache TTL
-* Bypass Cache by Cookie
-* Bypass Cache By Device Type
-* Forwarding URL
-* Add Response Header
-* Brotli
-* Gzip
-* Origin Override
+In there:
 
-Mỗi “Rule” sẽ có các hành động “action” khác nhau được thể hiện ở bảng dưới đây.
+* **URL Pattern:** enter the URL pattern to apply Page Rule, vCDN supports the declaration type “\*” representing a string of multiple characters. For example: /trang\_landing\_cu.html
+* **Actions when conditions are met:** Each Rule when the condition is met for the requested URI can optionally execute one of the following actions:
+  * Always Use HTTPS
+  * Auto Minify
+  * Automatic HTTPS Rewrites
+  * Server Cache TTL
+  * Browser Cache TTL
+  * Bypass Cache by Cookie
+  * Bypass Cache By Device Type
+  * Forwarding URL
+  * Add Response Header
+  * Brotli
+  * Gzip
+  * Origin Override
 
-<figure><img src="../../.gitbook/assets/image (200).png" alt=""><figcaption></figcaption></figure>
+For details, please refer to the table below.
 
-“Order” nhằm sắp xếp vị trí các rule, số càng nhỏ, ưu tiên thực hiện càng lớn.
+Each Page Rule will have different actions shown in the table below. “Order” is to arrange the position of the rules, the smaller the number, the higher the priority of execution.
 
-Sau khi tạo xong, click “Save changes” để cập nhật thay đổi.
+<figure><img src="../../.gitbook/assets/image (377).png" alt="" width="279"><figcaption></figcaption></figure>
+
+Once created, select **Save changes** to update the changes.
 
 ***
 
-Bảng mô tả các loại hành động:
+The table describes the action types:
 
-<table data-header-hidden><thead><tr><th width="79"></th><th width="115"></th><th width="155"></th><th></th></tr></thead><tbody><tr><td><strong>STT</strong></td><td><strong>Rule</strong></td><td><strong>Action</strong></td><td><strong>Mô tả</strong></td></tr><tr><td>1</td><td>Always Use HTTPS</td><td>ON/OFF</td><td>Bật/Tắt tùy chọn “Luôn sử dụng giao thức HTTPS” trên trang chỉ định.</td></tr><tr><td>2</td><td>Auto Minify</td><td>Javascript / CSS / HTML</td><td>Tùy chọn ghi đè chức năng minify trên trang chỉ định.</td></tr><tr><td>3</td><td>Automatic HTTPS Rewrites</td><td>ON/OFF</td><td>Bật tắt tính năng tự động replace các URL HTTP thành HTTPS trong trang chỉ định.</td></tr><tr><td>4</td><td>Server Cache TTL</td><td><br></td><td>Tùy chọn lại thời gian lưu cache trên các Edge Servers hoặc “Bypass Cache” trên trang chỉ định.</td></tr><tr><td>5</td><td>Browser Cache TTL</td><td><br></td><td>Tương tự “Server Cache TTL”, nhưng là quy định thời gian cache trên trình duyệt End-user.</td></tr><tr><td>6</td><td>Bypass Cache By Cookie</td><td>Nhập giá trị “cookie_name” và “cookie_value”</td><td><p>Nếu có cookie được chỉ định từ end-user gửi lên, hệ thống sẽ thực hiện lệnh bypass cache trên trang chỉ định.</p><p>Nếu giá trị “cookie_value” là rỗng, hệ thống chỉ xét nếu tồn tại “cookie_name” và không quan tâm giá trị của “cookie_value”</p></td></tr><tr><td>7</td><td>Bypass Cache By Device Type</td><td>Nhập các giá trị “Agent Text”, hỗ trợ nhiều giá trị, phân cách bởi dấu “Tab” hoặc “Enter”</td><td>Nếu trình duyệt end-user sử dụng có thông tin giống một trong các Agent Text, hệ thống sẽ tự bypass cache trên trang chỉ định.</td></tr><tr><td>8</td><td>Forwarding URL</td><td>Mã chuyển hướng (301/302) và URL đích.</td><td>Tự chuyển hướng URL được chỉ định về URL đích mới.</td></tr><tr><td>9</td><td>Host Header Override</td><td>Header_name và header_value</td><td>Tự động add thêm header trả về cho trình duyệt end-user trên trang được chỉ định.</td></tr><tr><td>10</td><td>Brotli</td><td>ON/OFF</td><td>Tùy chọn bật/tắt Brotli trên trang được chỉ định.</td></tr><tr><td>11</td><td>Gzip</td><td>ON/OFF</td><td>Tùy chọn bật/tắt Gzip trên trang được chỉ định.</td></tr><tr><td>12</td><td>Resolve Origin Override</td><td>IP New Origin</td><td>Tùy chọn thay đổi IP Server Origin ở trang chỉ định.*</td></tr></tbody></table>
+| **Rule**                        | **Action**                                                                            | **Describe**                                                                                                                                                                                                                                                                       |
+| ------------------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Always Use HTTPS**            | ON/OFF                                                                                | Enable/Disable “Always use HTTPS protocol” option on the specified page.                                                                                                                                                                                                           |
+| **Auto Minify**                 | Javascript / CSS / HTML                                                               | Option to override minify function on specified page.                                                                                                                                                                                                                              |
+| **Automatic HTTPS Rewrites**    | ON/OFF                                                                                | Enable or disable the feature to automatically replace HTTP URLs to HTTPS in the specified page.                                                                                                                                                                                   |
+| **Server Cache TTL**            |                                                                                       | Re-select cache time on Edge Servers or “Bypass Cache” on specified page.                                                                                                                                                                                                          |
+| **Browser Cache TTL**           |                                                                                       | Similar to “Server Cache TTL”, but specifies the cache time on the End-user browser.                                                                                                                                                                                               |
+| **Bypass Cache By Cookie**      | Enter the values ​​“cookie\_name” and “cookie\_value”                                 | <p>If there is a cookie specified from the end-user, the system will perform the bypass cache command on the specified page.</p><p>If the “cookie_value” value is empty, the system only considers if “cookie_name” exists and does not care about the value of “cookie_value”</p> |
+| **Bypass Cache By Device Type** | Enter “Agent Text” values, multiple values ​​supported, separated by “Tab” or “Enter” | If the end-user browser used has information that matches one of the Agent Texts, the system will automatically bypass the cache on the specified page.                                                                                                                            |
+| **Forwarding URL**              | Redirect code (301/302) and destination URL.                                          | Automatically redirects the specified URL to the new destination URL.                                                                                                                                                                                                              |
+| **Host Header Override**        | Header\_name and header\_value                                                        | Automatically add headers returned to end-user browsers on specified pages.                                                                                                                                                                                                        |
+| **Brotli**                      | ON/OFF                                                                                | Brotli enable/disable option on specified page.                                                                                                                                                                                                                                    |
+| **Gzip**                        | ON/OFF                                                                                | Option to enable/disable Gzip on specified page.                                                                                                                                                                                                                                   |
+| **Resolve Origin Override**     | IP New Origin                                                                         | Option to change Origin Server IP on specified page.\*                                                                                                                                                                                                                             |

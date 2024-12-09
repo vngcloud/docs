@@ -1,18 +1,25 @@
 # Using OBS Studio to Push Live Stream
 
-After creating the service in the Live Entrypoint section, you can use a software to push livestream like OBS Studio:
+Below is a guide to using the OBS Studio application to push Live Stream.
 
-<figure><img src="../../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
+**Step 1** : First, you need to initialize a **Live Entrypoint** and a **Live Stream** on the vCDN system according to the instructions here [.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vcdn/loai-hinh-dich-vu/live-streaming) You can skip this step if you already have a **Live Entrypoint** and a **Live Stream.**
 
-* **Step 1**: Open OBS and select Settings
+{% hint style="info" %}
+**Attention:**
 
-<figure><img src="../../.gitbook/assets/image (167).png" alt=""><figcaption></figcaption></figure>
+* When initializing Live Entrypoint, in the Publish IPs section, you need to remove the IP address 0.0.0.0 and enter the User Name and Password you want to use.
+{% endhint %}
 
-* **Step 2:** On Settings, select Stream on the left tab. In which:
-  * Service: Custom...
-  * Server: [rtmp://vnpt.entrypoint.vcdn.live/xxxxxxxxxxxxxxxx/](rtmp://vnpt.entrypoint.vcdn.live/thongnh5bece1176ba5bb5c3bedff42/) (Live EP domain được cung cấp khi bạn tạo và LiveApp của các bạn có thể tìm thấy tại mục cấu hình Live Entrypoint)
-  * Stream Key: demo1?u=xxxxxx\&p=xxxxxxx (Channel (demo1) bạn có thể nhập tùy ý| Username & password bạn nhập lúc khởi tạo Live Entrypoint)
+**Step 2** : Open the OBS app on your device and select **Settings**
 
-<figure><img src="../../.gitbook/assets/image (168).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
 
-After creating a Live CDN domain mapped with the Live App that has pushed the stream, the created link view will have the following form [https://domaincdn.vcdn.cloud/demo1/index.m3u8](https://mudeqtttpiliv.vcdn.cloud/demo1/index.m3u8).
+**Step 3:** On the Settings page, continue to select **Stream** in the left Tab. In which:
+
+* **Service** : Custom...
+* **Server** : `rtmp://vnpt.entrypoint.vcdn.live/xxxxxxxxxxxxxxxx/`(Live EP domain is provided when you create and your LiveApp can be found in Live Entrypoint configuration)
+* **Stream Key** : `demo1?u=xxxxxx&p=xxxxxxx` (Channel (demo1) you can enter as you like | Username and password you entered when initializing Live Entrypoint)
+
+<figure><img src="../../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
+
+**Step 4:** After creating a Live CDN domain mapped to the Live App that has pushed the stream, the view link created will look like this:`https://domaincdn.vcdn.cloud/demo1/index.m3u8.`

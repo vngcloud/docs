@@ -43,7 +43,7 @@ The Share bandwidth package offers high-speed bandwidth shared among multiple cu
 
 **Step 5**: The **Add IP** screen will be displayed. You can filter the list of IP addresses by type by selecting an option in the **Resource Type** field. Currently, we provide the following resource types: **K8S, Floating IP, External Interface, vLB.**
 
-**Step 6**: Select one or more IP addresses by selecting the icon ![](<../../../../.gitbook/assets/image (67).png>)and then choosing **Add**.
+**Step 6**: Select one or more IP addresses by selecting the icon ![](<../../../../.gitbook/assets/image (67) (1).png>)and then choosing **Add**.
 
 ***
 
@@ -57,7 +57,7 @@ To remove IP addresses from the package, follow these steps:
 
 **Step 3**: From the list of available bandwidth packages, select the **Share** package according to your usage needs.
 
-**Step 4**: Under the **IP List** section, select the icon ![](<../../../../.gitbook/assets/image (68).png>)next to the IP address you want to remove from the package and choose the icon ![](<../../../../.gitbook/assets/image (69).png>)
+**Step 4**: Under the **IP List** section, select the icon ![](<../../../../.gitbook/assets/image (68) (1).png>)next to the IP address you want to remove from the package and choose the icon ![](<../../../../.gitbook/assets/image (69) (1).png>)
 
 **Step 5**: On the IP removal confirmation screen, select **Delete**.
 

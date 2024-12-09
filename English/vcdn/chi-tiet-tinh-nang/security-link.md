@@ -1,79 +1,80 @@
 # Security Link
 
-#### **Secure Token** <a href="#securitylink-securetoken" id="securitylink-securetoken"></a>
+## **Secure Token** <a href="#securitylink-securetoken" id="securitylink-securetoken"></a>
 
-Secure tokens are structured codes designed to protect content from being stolen and distributed on other platforms. On vCDN, we support enabling the Secure token feature when creating or editing an existing CDN.
+Secure tokens are structured codes that protect content from being stolen and distributed elsewhere. On vCDN, we support you to enable the Secure token feature when creating or editing a previously created CDN.
 
-<figure><img src="../../.gitbook/assets/image (169).png" alt=""><figcaption></figcaption></figure>
-
-***
-
-#### Model <a href="#securitylink-sodohoatdong" id="securitylink-sodohoatdong"></a>
-
-When the end user needs to access content that has been secured with "Secure token" activation, the system will check whether the request meets the required conditions. If it does, the end user will be granted access to the content; otherwise, the request will be denied.
-
-<figure><img src="../../.gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
-
-In which:
-
-* **Passphase**: is the key with the formula you have set up so that the system can identify authorized access.&#x20;
-* **Include client IP**: is the IP of the end user requesting content.&#x20;
-* For "Secure token" to work, the service administrator needs to integrate the KEY into the system. Depending on the Token Type, there will be different KEY generation formulas, specifically:
-* **VNG**:
-  * **URL Format**: http(s)://\<domain>/\<token>/\<expiredTime>/\<uri>
-  * **\<token>**: md5(\<Passphare>\<filePath>\<expiredTime>\<clientIP>)
-  * **\<expiredTime>:** Thời gian epochtime hết hạn của URL, tính bằng mili-seconds
-  * **\<filePath>**: /path/to/media/xxx.\[m3u8|ts|mpd|dash] (tức là \<uri> bỏ đi phần xxx.\[m3u8|ts|mpd|dash], trường hợp ví dụ này sẽ là: /path/to/media)
-  * **\<ClientIP>**: IP của client được cấp phép truy cập vào nội dung, chỉ cung cấp trong đường hợp bạn đã chọn bật "Include IP" trong cấu hình của dịch vụ CDN
-  * Ví dụ: [http://abcxyz.vcdn.cloud/cb0a229fa7a81c219c0c0f964f9b6e68/1603691495000/test/index.m3u8](http://abcxyz.vcdn.cloud/cb0a229fa7a81c219c0c0f964f9b6e68/1603691495000/test/index.m3u8)
-* **SBD**:
-  * **URL Format**: http(s)://\<domain>/\<token>/\<expiredTime>/\<uri>
-  * **\<token>**: md5(\<clientIP>**:\<Passphare>:**\<exiredTime>**:**\<filePath>)
-  * **\<expiredTime>**: Thời gian epochtime hết hạn của URL, tính bằng seconds
-  * **\<filePath>:/path/to/media**/xxx.\[m3u8|ts|mpd|dash] (tức là \<uri> bỏ đi phần xxx.\[m3u8|ts|mpd|dash], trường hợp ví dụ này sẽ là: /path/to/media)
-  * **\<ClientIP>**: IP của client được cấp phép truy cập vào nội dung, chỉ cung cấp trong đường hợp bạn đã chọn bật "Include IP" trong cấu hình của dịch vụ CDN
-* **Akamai**: Tham khảo hướng dẫn từ document của Akamai tại: [https://learn.akamai.com/en-us/webhelp/adaptive-media-delivery/adaptive-media-delivery-implementation-guide/GUID-041AEFDE-7E25-4AD8-B6C4-73F1B7200F02.html](https://learn.akamai.com/en-us/webhelp/adaptive-media-delivery/adaptive-media-delivery-implementation-guide/GUID-041AEFDE-7E25-4AD8-B6C4-73F1B7200F02.html)
+<figure><img src="../../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-#### Use CORS feature&#x20;
+## Operational diagram <a href="#securitylink-sodohoatdong" id="securitylink-sodohoatdong"></a>
 
-CORS is the output security feature of vCDN that allows access with configurations such as: domain name, IP address, Header, Method, Expose Header to access the vCDN output link.
+When the end user needs to access the content that has been set to activate the "Secure token", the system will check the request to see if it satisfies the formula or not. If it satisfies, the end user can get the content. If not, the request will be rejected.
 
-<figure><img src="../../.gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
 
-***
+In there:
 
-#### **Khởi tạo Whitelist / Blacklist IP** <a href="#securitylink-khoitaowhitelist-blacklistip" id="securitylink-khoitaowhitelist-blacklistip"></a>
-
-Có thể add các danh sách IP của các Origin cho phép truy cập vào link đầu ra (Whitelist IP).
-
-<figure><img src="../../.gitbook/assets/image (172).png" alt=""><figcaption></figcaption></figure>
-
-khóa các IP không cho phép Origin truy cập vào link đầu ra của vCDN (Blacklist IP).
-
-<figure><img src="../../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
-
-***
-
-#### **Geo Block** <a href="#securitylink-geoblock" id="securitylink-geoblock"></a>
-
-Có thể tạo danh sách những origin ở các quốc gia nào có thể truy cập link đầu ra:
-
-<figure><img src="../../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
-
-Không cho phép những Origin ở quốc gia nào truy cập Link đầu ra:
-
-<figure><img src="../../.gitbook/assets/image (175).png" alt=""><figcaption></figcaption></figure>
+* **Passphase** : is the key that comes with the formula you have set up so that the system can recognize that access has been granted.
+* **Include client IP** : is the IP of the end user requesting content.
+* For "Secure token" to work, the service administrator needs to integrate KEY into the system. Depending on the Token Type, there will be different KEY generation formulas, specifically:
+  * **VNG** :
+    * **URL Format** : http(s)://\<domain>/\<token>/\<expiredTime>/\<uri>
+    * **\<token>** : md5(\<Passphare>\<filePath>\<expiredTime>\<clientIP>)
+    * **\<expiredTime>:** The URL's expiration epochtime, in milliseconds
+    * **\<filePath>** : /path/to/media/xxx.\[m3u8|ts|mpd|dash] (ie \<uri> leaves out the xxx.\[m3u8|ts|mpd|dash] part, in this example it would be: /path/to/media)
+    * **\<ClientIP>** : The IP of the client that is authorized to access the content, provided only in case you have selected to enable "Include IP" in the CDN service configuration
+    * Example: [http://abcxyz.vcdn.cloud/cb0a229fa7a81c219c0c0f964f9b6e68/1603691495000/test/index.m3u8](http://abcxyz.vcdn.cloud/cb0a229fa7a81c219c0c0f964f9b6e68/1603691495000/test/index.m3u8)
+  * **SBD** :
+    * **URL Format** : http(s)://\<domain>/\<token>/\<expiredTime>/\<uri>
+    * **\<token>** : md5(\<clientIP> **:<** Passphare> **:** \<exiredTime> **:** \<filePath>)
+    * **\<expiredTime>** : The URL's expiration epochtime, in seconds
+    * **\<filePath>:/path/to/media** /xxx.\[m3u8|ts|mpd|dash] (ie \<uri> leaves out the xxx.\[m3u8|ts|mpd|dash], in this example it would be: /path/to/media)
+    * **\<ClientIP>** : The IP of the client that is authorized to access the content, provided only in case you have selected to enable "Include IP" in the CDN service configuration
+  * **Akamai** :
+    * Refer to the instructions from Akamai's document at: [https://learn.akamai.com/en-us/webhelp/adaptive-media-delivery/adaptive-media-delivery-implementation-guide/GUID-041AEFDE-7E25-4AD8-B6C4-73F1B7200F02.html](https://learn.akamai.com/en-us/webhelp/adaptive-media-delivery/adaptive-media-delivery-implementation-guide/GUID-041AEFDE-7E25-4AD8-B6C4-73F1B7200F02.html)
 
 ***
 
-#### **HTTP Referer Block** <a href="#securitylink-httprefererblock" id="securitylink-httprefererblock"></a>
+## **Using CORS feature** <a href="#securitylink-sudungtinhnangcors" id="securitylink-sudungtinhnangcors"></a>
 
-Cho phép Origin có domain trong list có thể truy cập link đầu ra:
+CORS is a vCDN output security feature that allows access with configurations such as: domain name, IP address, Header, Method, Expose Header to access the vCDN output Link.
 
-<figure><img src="../../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
 
-Không cho phép Origin có domain trong danh sách có thể truy cập link đầu ra:
+***
 
-<figure><img src="../../.gitbook/assets/image (177).png" alt=""><figcaption></figcaption></figure>
+## **Create a Whitelist / Blacklist IP** <a href="#securitylink-khoitaowhitelist-blacklistip" id="securitylink-khoitaowhitelist-blacklistip"></a>
+
+* **WhiteList IP:** You can add IP lists of Origins that are allowed to access the output link by selecting **Allow** and entering **the IP Address** or **CIDR** you want:
+
+<figure><img src="../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+
+* **BlackList IP:** In addition, you can also block IPs that do not allow Origin to access the output link of vCDN:
+
+<figure><img src="../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+## **Geo Block** <a href="#securitylink-geoblock" id="securitylink-geoblock"></a>
+
+* Additionally, you can create a list of origins in which countries the output link can be accessed by selecting **Allow** and entering the desired **country code :**
+
+<figure><img src="../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+
+* You can also set to not allow Origins in a certain country to access the output link by selecting **Block** and entering the desired **country code :**
+
+<figure><img src="../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+## **HTTP Referer Block** <a href="#securitylink-httprefererblock" id="securitylink-httprefererblock"></a>
+
+* You can allow Origins with domains in the list to access the output link by selecting **Allow** and entering the desired **domain :**
+
+<figure><img src="../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+
+* Finally, you can disallow Origin to have domains in the list that can access the output link by selecting **Block** and entering the desired **domain :**
+
+<figure><img src="../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>

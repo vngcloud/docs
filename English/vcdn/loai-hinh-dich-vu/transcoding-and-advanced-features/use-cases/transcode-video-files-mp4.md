@@ -10,7 +10,7 @@
 
 #### **Implementation solution:**
 
-<figure><img src="../../../../.gitbook/assets/image (38) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (38) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Ingredients:**
 
@@ -37,59 +37,59 @@ First, you need to install Sigma Media Server following the steps [here](https:/
 
 **Step 1:** After successfully installing Sigma Media Server, access [https://portal.sigma.video/apps](https://portal.sigma.video/apps) with the email you previously registered to use the service.
 
-<figure><img src="../../../../.gitbook/assets/image (39) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (39) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2:** Select the **Product** drop-down menu and select **Media VOD**
 
-<figure><img src="../../../../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (40) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3:** Continue to select the **VOD tab**
 
-<figure><img src="../../../../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (41) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 4:** Select the **Add** button in the right corner to create a transcoding job
 
-<figure><img src="../../../../.gitbook/assets/image (42) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (42) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 5:** Select a **server** to execute the transcoding job, by default the Sigma Media Server that you previously initialized on **vMarketPlace** will be selected.
 
-<figure><img src="../../../../.gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (43) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 6:** Select the type of source file to transcode. You need to enter the URL [of](https://han01.vstorage.vngcloud.vn/v1/AUTH_210ff69ad18d4bfa9920b165ef8ddef4/con_01/big_buck_bunny_720p_30mb.mp4) the source file that has been uploaded to the S3 service. For example, with vStorage, the object URL will have a similar format: [https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_123456/cont\_01/pexels\_videos\_1390942%20(2160p).mp4 ](https://hcm03.vstorage.vngcloud.vn/v1/AUTH_bcd882dd104f40cb8e20f1cd6bb0b4c6/cont_01/pexels_videos_1390942%20\(2160p\).mp4)**Note: you need to make the container/bucket public (Make Public) on vStorage or any S3 service so that Sigma can access this link.**
 
-<figure><img src="../../../../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (44) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 7:** In the **Destination** section , select the output type **Third-party Storage** -> **Generic S3** to save the result file.
 
-<figure><img src="../../../../.gitbook/assets/image (45) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (45) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 8** : Configure your S3 information
 
-<figure><img src="../../../../.gitbook/assets/image (46) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (46) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 9:** Configure input **profiles**
 
-<figure><img src="../../../../.gitbook/assets/image (47) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (47) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 10:** Configure output **profiles**
 
-<figure><img src="../../../../.gitbook/assets/image (48) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (48) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 11:** In this scenario we will Select **HLS**
 
-<figure><img src="../../../../.gitbook/assets/image (49) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (49) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 12: Configure HLS** parameters
 
-<figure><img src="../../../../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (51) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 13:** Click **Create Job** to start transcoding
 
-<figure><img src="../../../../.gitbook/assets/image (50) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (50) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 14** : Return to the VOD tab, we will see the processing %, or error messages if any of the created jobs.
 
-<figure><img src="../../../../.gitbook/assets/image (52) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (52) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Initialize and configure the vCDN service. <a href="#khoi-tao-va-cau-hinh-dich-vu-vcdn" id="khoi-tao-va-cau-hinh-dich-vu-vcdn"></a>
 
@@ -99,6 +99,6 @@ First, you need to install Sigma Media Server following the steps [here](https:/
 
 **Step 3 :** Select CDN **Origin** as **S3**
 
-<figure><img src="../../../../.gitbook/assets/image (53) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (53) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After the transcoding process is successful, you can access the resulting video using the following CDN link: <mark style="color:blue;">**https://\<CDN Domain>/sigma-vod/\<transcode\_job\_id>/master.m3u8**</mark>

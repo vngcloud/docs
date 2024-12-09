@@ -10,7 +10,7 @@
 
 **3. Select the Action** icon and select **Configure policy.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\. Here, you can choose the configuration for each **Statement** on the left or directly edit the JSON file in the right column. Specifically, the structure of a Bucket Policy includes:
 
@@ -22,7 +22,7 @@
   * **Resource** : Specific buckets and objects affected by the policy (using ARN to identify resources).
   * **Condition** : (Optional) Specific condition that restricts access.
 
-<figure><img src="../../../../../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (42) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\. Select **Save** to save the Bucket Policy configuration.
 

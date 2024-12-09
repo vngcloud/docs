@@ -71,7 +71,7 @@ To change the name of the Dashboard you created earlier, follow the instructions
 
 1. Login into vMonitor Platform.
 2. Select the menu **Dashboard.**
-3. In the **Dashboard** you want to rename, select the icon <img src="../../../.gitbook/assets/image (50) (1) (1).png" alt="" data-size="line">
+3. In the **Dashboard** you want to rename, select the icon <img src="../../../.gitbook/assets/image (50) (1) (1) (1).png" alt="" data-size="line">
 4. Select **Rename**.
 5. Input the **Dashboard name**, Please enter a name that complies with our guidelines for your Dashboard.
 6. Select **Save**.
@@ -86,7 +86,7 @@ To create a copy of a Dashboard, follow the instructions below:
 
 1. Login into vMonitor Platform.
 2. Select the menu **Dashboard.**
-3. On **Dashboard** which you wanna clone, chọn <img src="../../../.gitbook/assets/image (51) (1) (1).png" alt="" data-size="line">
+3. On **Dashboard** which you wanna clone, chọn <img src="../../../.gitbook/assets/image (51) (1) (1) (1).png" alt="" data-size="line">
 4. Select **Clone Dashboard.**
 5. Input **Dashboard name**, Please enter a name that complies with our guidelines for your Dashboard.
 6. Select **Clone.**
@@ -101,7 +101,7 @@ If you no longer need to use a custom **Dashboard**, you can delete it from the 
 
 1. Login into vMonitor Platform.
 2. Select the menu **Dashboard.**
-3. On **Dashboard** which you wanna delete, select <img src="../../../.gitbook/assets/image (52) (1) (1).png" alt="" data-size="line">
+3. On **Dashboard** which you wanna delete, select <img src="../../../.gitbook/assets/image (52) (1) (1) (1).png" alt="" data-size="line">
 4. Select **Delete**.
 5. On the Delete Dashboard confirmation screen, select **Delete**.
 

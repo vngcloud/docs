@@ -4,19 +4,19 @@
 
 **Bar chart** is a type of chart used to compare values of different groups or categories. In the vMonitor Platform, a bar chart consists of multiple vertical bars, each representing a value of a group or data point.
 
-<figure><img src="../../../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (58) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Widget Configuration
 
-<figure><img src="../../../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (59) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style
 
 For a bar chart, select **Bar** for the Style.
 
-<figure><img src="../../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (60) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Graph your data
 

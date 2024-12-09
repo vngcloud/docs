@@ -13,11 +13,11 @@ With VNG Cloud, we currently offer four bandwidth packages for customers to choo
   * **PAYG-INTERNATIONAL**: This package applies to international bandwidth usage. You will pay for the amount of bandwidth used beyond the free limit dedicated to international traffic. In this package, domestic traffic will follow the default package configuration. **This package is suitable for businesses or individuals with high international bandwidth needs but low domestic bandwidth.**
 * **Share**: This is a high-speed shared bandwidth package for multiple customers to use. The speed of this package may vary at different times of the day. **This package is suitable for small businesses or projects that do not require large and consistently stable bandwidth**. If you only need bandwidth to maintain basic operations without high network performance requirements, this is the most reasonable choice for you.
 
-<figure><img src="../../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (60) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Dedicated**: This is a bandwidth package with a customizable speed of your own. With this package, we commit to ensuring the service quality for customers with the required capacity. **This package is suitable for businesses or projects that need large and stable bandwidth, such as websites with high traffic, applications requiring fast and continuous network connections, or online services needing to ensure user experience quality.**
 
-<figure><img src="../../../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (61) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

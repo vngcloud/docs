@@ -1,19 +1,19 @@
-# Server Cache Expiration
+# Cache Time
 
-**Server Cache Expiration (TTL)** is an important mechanism used to determine how long vCDN will cache your resources. During this time, vCDN will not access your origin server and respond with results from the vCDN cache. The benefits of using Server Cache Expiration include:&#x20;
+## **Overview** <a href="#tong-quan" id="tong-quan"></a>
 
-* Improve the performance&#x20;
-* Reduce bandwidth usage&#x20;
-* Enhance user experience.&#x20;
+* **Server Cache Expiration (TTL)** is an important mechanism used to determine how long vCDN will cache your resources. During this time, vCDN will not access your origin server and respond with results from the vCDN cache. The benefits of using Server Cache Expiration include:
+  * Improve performance
+  * Reduce bandwidth usage
+  * Enhance user experience.
+* **Browser Cache Expiration** is the time vCDN instructs a visitor's browser to cache files. During this time, the browser loads files from the local cache, speeding up page loads.
 
-On vCDN, you can set Server Cache Expiration (TTL) from the minimum value of 30 minutes to the maximum value of 1 day that we support.
+## Detail <a href="#chi-tiet" id="chi-tiet"></a>
 
-<figure><img src="../../.gitbook/assets/image (179).png" alt=""><figcaption></figcaption></figure>
+* **Server Cache Expiration (TTL):** On vCDN, you can set Server Cache Expiration (TTL) from a minimum value of 30 minutes to a maximum value of 1 day that we support.
 
-***
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-**Browser Cache Expiration** is the time vCDN instructs the visitor's browser to cache files. During this period, the browser loads files from the local cache, increasing page loading speed.&#x20;
+* **Browser Cache Expiration:** On vCDN, you can set Browser Cache Expiration from a minimum value of 30 minutes to a maximum value of 1 day that we support.
 
-On vCDN, you can set Browser Cache Expiration from a minimum value of 30 minutes to a maximum value of 1 day that we support.
-
-<figure><img src="../../.gitbook/assets/image (180).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>

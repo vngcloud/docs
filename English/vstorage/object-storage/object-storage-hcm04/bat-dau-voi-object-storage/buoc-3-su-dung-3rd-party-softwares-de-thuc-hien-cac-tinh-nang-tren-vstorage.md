@@ -16,7 +16,7 @@ Below are instructions for some common use cases you can perform on S3 Browser:
 
 * You can also create/delete folders by selecting **New Folder** or **Delete** .
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -30,7 +30,7 @@ Here are instructions for advanced features you can do on S3 Browser:
 
 To set up ACL for a bucket using S3 Browser, right-click on the bucket, then select Edit Permission (ACL). In the permission section, check the permissions you want to grant to the user. For more details, see [https://s3browser.com/share-s3-bucket-edit-acls.aspx](https://s3browser.com/share-s3-bucket-edit-acls.aspx)
 
-<figure><img src="../../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **SSE-S3** <a href="#sse-s3" id="sse-s3"></a>
 
@@ -46,11 +46,11 @@ SSE-S3 (Server-Side Encryption with S3 Managed Keys) is a server-side data encry
 
 To set up Object Locked for a bucket using S3 Browser, when creating a new bucket, you need to select the **Enable S3 Objected Lock option.**
 
-<figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Next, when the bucket is successfully created, right-click on the bucket, then select **Object Locked** . You can set the object locked in both **Retention** and **Legal Hold** modes through S3 Browser. For more details, please visit [https://s3browser.com/amazon-s3-object-lock.aspx](https://s3browser.com/amazon-s3-object-lock.aspx)
 
-<figure><img src="../../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Versioning** <a href="#versioning" id="versioning"></a>
 
@@ -58,7 +58,7 @@ Versioning is a feature that supports storing multiple past versions of objects 
 
 To set up Versioning for a bucket using S3 Browser, right-click on the bucket, then select **Edit Versioning Settings** . For more details, see [https://s3browser.com/amazon-s3-versioning.aspx](https://s3browser.com/amazon-s3-versioning.aspx)
 
-<figure><img src="../../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Lifecycle rotation** <a href="#lifecycle-rotation" id="lifecycle-rotation"></a>
 
@@ -66,7 +66,7 @@ To set up Versioning for a bucket using S3 Browser, right-click on the bucket, t
 
 To set up Lifecycle rotation for a bucket using S3 Browser, right-click on the bucket, then select **Lifecycle Configuration** . For more details, see [https://s3browser.com/bucket-lifecycle-configuration.aspx](https://s3browser.com/bucket-lifecycle-configuration.aspx)
 
-<figure><img src="../../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Lifecycle transit** <a href="#lifecycle-transit" id="lifecycle-transit"></a>
 
@@ -78,7 +78,7 @@ CORS (Cross-Origin Resource Sharing) is a security mechanism that allows website
 
 To set up CORS for a bucket using S3 Browser, right-click on the bucket, then select **CORS Configuration** . For more details, see [https://s3browser.com/s3-bucket-cors-configuration.aspx](https://s3browser.com/s3-bucket-cors-configuration.aspx)
 
-<figure><img src="../../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Public/ Private bucket** <a href="#public-private-bucket" id="public-private-bucket"></a>
 
@@ -86,7 +86,7 @@ To set up CORS for a bucket using S3 Browser, right-click on the bucket, then se
 
 To set a bucket to public using S3 Browser, right-click on the bucket, then select **Public Access block Configuration** . For more details, see [https://s3browser.com/amazon-s3-public-access-block-configuration.aspx](https://s3browser.com/amazon-s3-public-access-block-configuration.aspx)
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Bucket policy** <a href="#bucket-policy" id="bucket-policy"></a>
 
@@ -94,4 +94,4 @@ To set a bucket to public using S3 Browser, right-click on the bucket, then sele
 
 To set up a bucket policy using S3 Browser, right-click on the bucket, then select **Edit Bucket Policy** . For more details, see [https://s3browser.com/working-with-amazon-s3-bucket-policies.aspx?v=11.7.5\&fam=x64#amazon-s3-bucket-policies-examples](https://s3browser.com/working-with-amazon-s3-bucket-policies.aspx?v=11.7.5\&fam=x64#amazon-s3-bucket-policies-examples)
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
