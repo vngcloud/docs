@@ -607,7 +607,7 @@
     * [System Image](vks/tham-khao-them/danh-sach-system-image-dang-ho-tro.md)
 * [vDB](vdb/README.md)
   * [Relational Database Service (RDS)](vdb/relational-database-service-rds/README.md)
-    * [Khởi tạo RDS Instance](vdb/relational-database-service-rds/khoi-tao-rds-instance.md)
+    * [Create a RDS Instance](vdb/relational-database-service-rds/khoi-tao-rds-instance.md)
     * [Kết nối tới RDS Instance](vdb/relational-database-service-rds/ket-noi-toi-rds-instance/README.md)
       * [Kết nối tới RDS Instance thông qua SSH Tunnel](vdb/relational-database-service-rds/ket-noi-toi-rds-instance/ket-noi-toi-rds-instance-thong-qua-ssh-tunnel.md)
     * [Quản lý thông tin RDS Instance](vdb/relational-database-service-rds/quan-ly-thong-tin-rds-instance.md)
