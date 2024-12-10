@@ -48,14 +48,14 @@ Dịch vụ Object Download của VNG Cloud giúp doanh nghiệp: tối ưu chi 
 1. Truy cập vào vCDN Portal tại [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
 2. Chọn mục **Object Download**, sau đó chọn **Create new.**
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Tiếp tục thực hiện nhập/chọn:&#x20;
 
 * **CDN Info:**&#x20;
   * **CDN Name:** Nhập tên định danh cho CDN mà bạn muốn tạo.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin:**&#x20;
   * **HTTP Origin**: Server hỗ trợ giao thức HTTP.
@@ -77,11 +77,11 @@ Dịch vụ Object Download của VNG Cloud giúp doanh nghiệp: tối ưu chi 
     * **Use SSL:** Kích hoạt SSL để mã hóa kết nối với Host Origin.
     * **Host Origin**
 
-<figure><img src="../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   **Security:**
 
@@ -93,14 +93,14 @@ Dịch vụ Object Download của VNG Cloud giúp doanh nghiệp: tối ưu chi 
     * **Relative Canonical URL:** Một URL canonical cho phép bạn thông báo cho các công cụ tìm kiếm rằng các URL tương tự thực sự là cùng một nội dung. Điều này hữu ích khi bạn có sản phẩm hoặc nội dung có thể được tìm thấy trên nhiều URL hoặc thậm chí nhiều trang web.&#x20;
     * **No-Sniff Header:** Gửi header "X-Content-Type-Options: nosniff" để ngăn Internet Explorer và Google Chrome không kiểm tra MIME khác với Content-Type đã khai báo.
 
-    <figure><img src="../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Token Configuration**:
       * **Token Type**: Chọn loại token dùng để xác thực người xem. Bạn có thể chọn token type Akamai, SBD hoặc VNG.
 
-    <figure><img src="../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Access Filter:**
       * **IP Address CIDR**: Giới hạn cho phép/ từ chối truy cập dựa trên địa chỉ IP bằng cách chọn **Allow**/ **Block** và nhập địa chỉ IP hoặc CIDR tương ứng.
@@ -116,7 +116,7 @@ Dịch vụ Object Download của VNG Cloud giúp doanh nghiệp: tối ưu chi 
     * **Small Object:** Khi bạn bật option này, nếu nội dung có kích thước lớn, **Origin Gateway** sẽ chia nội dung thành các request nhỏ (5MB) và tải đồng thời (byte-range download). Điều này giúp tăng tốc độ tải và phục vụ người dùng ngay khi nhận được dữ liệu đầu tiên.
     * **Minimum TLS Version**: Phiên bản thấp nhất của giao thức TLS được phép sử dụng. Chúng tôi đang hỗ trợ các giao thức TLS 1.0, TLS 1.1, TLS 1.2, TLS 1.3. Bạn hãy chọn sử dụng các phiên bản cao (TLS 1.2 hoặc 1.3) để đảm bảo tính bảo mật.
 
-    <figure><img src="../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (18) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Caching:**
       * **Caching Level**: Xác định mức độ cache của CDN. Với VOD, vCDN đang cung cấp 3 mức độ cache bao gồm: URL without query string only, Skip Query String of URL, URL With Query String.
@@ -124,7 +124,7 @@ Dịch vụ Object Download của VNG Cloud giúp doanh nghiệp: tối ưu chi 
       * **Browser Cache Expiration:** Thời gian vCDN yêu cầu trình duyệt của người dùng lưu trữ tệp trong bộ nhớ cache cục bộ.&#x20;
       * **Development mode:** Chế độ nhà phát triển. Tính năng này cho phép tạm thời tắt caching tại Edge Server để hỗ trợ giai đoạn thử nghiệm hoặc kiểm tra nội dung trong khi phát triển. Mọi yêu cầu sẽ được trả về trực tiếp từ Origin, giúp cập nhật nội dung ngay lập tức mà không cần xóa cache.
 
-    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Page Rules:** Tính năng này giúp khách hàng tối ưu các điều kiện và các tùy chọn để giúp website thể hiện được nhiều mục đích khác nhau. Để tạo Page rules, vui lòng chọn **Create Page Rule**, popup sẽ hiện ra, lúc này bạn cần chọn:&#x20;
       * **URL pattern:** cần áp dụng pagerule, hỗ trợ kiểu khai báo “\*” đại diện cho một chuỗi nhiều ký tự. Ví dụ: /trang\_landing\_cu.html. Sau khi nhập URL pattern, bạn hãy chọn **Add new rule**. Mỗi Rules khi thỏa điệu kiện đúng URI được request sẽ có thể tùy chọn thực thi một trong các hành động sau:
@@ -144,7 +144,7 @@ Dịch vụ Object Download của VNG Cloud giúp doanh nghiệp: tối ưu chi 
 
     <figure><img src="../../.gitbook/assets/image (844).png" alt="" width="375"><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt="" width="348"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt="" width="348"><figcaption></figcaption></figure>
 
     4. Chọn **Submit** để hoàn thành việc tạo Object Download.
 

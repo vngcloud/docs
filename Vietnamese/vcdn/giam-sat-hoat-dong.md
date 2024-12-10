@@ -34,11 +34,11 @@ Các loại biểu đồ/ báo cáo chúng tôi cung cấp cho bạn bao gồm:&
 
 * **Traffic Consuming:**
 
-<figure><img src="../.gitbook/assets/image (846).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (846) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin Request/s**:&#x20;
 
-<figure><img src="../.gitbook/assets/image (847).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (847) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin Traffic Consuming/s (GB/s)**:
 

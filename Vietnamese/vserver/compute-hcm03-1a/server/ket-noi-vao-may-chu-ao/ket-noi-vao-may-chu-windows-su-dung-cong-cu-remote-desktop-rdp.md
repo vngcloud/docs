@@ -21,7 +21,7 @@ Bạn có thể kết nối dễ dàng với các máy chủ Window được t�
 * **Network Interface** của máy chủ cần có một địa chỉ IP Public
 * **Thông tin kết nối đến** máy chủ: Để biết thông tin kết nối của máy chủ, vui lòng kiểm tra email đã đăng ký:
 
-<figure><img src="../../../../.gitbook/assets/image (17) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Lưu ý:** Thông tin này là bảo mật và chỉ được gởi cho email đã đăng kí. VNG Cloud không thể can thiệp để phục hồi thông tin login của máy chủ (username/ password/ key) trong mọi tình huống.
 

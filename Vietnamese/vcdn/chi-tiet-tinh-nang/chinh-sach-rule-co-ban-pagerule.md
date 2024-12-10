@@ -8,7 +8,7 @@
 
 Khi khởi tạo Live Stream, Object Download,...bạn có thể khởi tạo Page Rule bằng cách chọn **Create Page Rule**. Một Rules sẽ được thực thi khi mà có URI request đúng với điều kiện đã được định nghĩa trong Rule.
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 Sau khi bạn chọn Create Page Rule, màn hình hiển thị như sau:
 

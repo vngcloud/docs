@@ -52,8 +52,8 @@ Từ đó đồng nghĩa với việc hệ thống mạng kết nối với nhau
 
 VNG Cloud cung cấp cho người dùng dịch vụ VPN có thể thực hiện các tác vụ như sau:
 
-* [Tạo kết nối Site-to-Site VPN](tao-ket-noi-site-to-site-vpn.md)
-* [Kiểm tra điều kiện kết nối VPN](kiem-tra-dieu-kien-ket-noi-vpn.md)
+* [Tạo kết nối Site-to-Site VPN](tao-ket-noi-site-to-site-vpn/)
+* [Kiểm tra điều kiện kết nối VPN](tao-ket-noi-site-to-site-vpn/kiem-tra-dieu-kien-ket-noi-vpn.md)
 * [Thay đổi thông tin Bandwidth](thay-doi-thong-tin-bandwidth.md)
 * [Xoá VPN](xoa-cross-connect.md)
 * [Các gói VPN](cac-goi-bang-thong.md)
