@@ -52,8 +52,8 @@ After finishing create VPN between above connections:
 
 VNG Cloud provides users VPN service with the below actions:
 
-* [Create VPN Site-to-Site](create-vpn-site-to-site.md)
-* [VPN Connect Condition](vpn-connect-condition.md)
+* [Create VPN Site-to-Site](create-vpn-site-to-site/)
+* [VPN Connect Condition](create-vpn-site-to-site/vpn-connect-condition.md)
 * [Change VPN Bandwidth](change-vpn-bandwidth.md)
 * [VPN Packages](vpn-packages.md)
 * [Delete VPN](delete-vpn.md)

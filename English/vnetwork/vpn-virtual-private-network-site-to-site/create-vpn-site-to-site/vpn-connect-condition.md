@@ -16,7 +16,7 @@ Between 2 sites, to create a valid VPN Connection, need to satisfy the below con
 
 ### <mark style="color:blue;">**\[**</mark><mark style="color:blue;">Code 2017</mark><mark style="color:blue;">**]**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">Overlapping CIDR in two sites</mark>
 
-<figure><img src="../../.gitbook/assets/image (304).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (304).png" alt=""><figcaption></figcaption></figure>
 
 Not be able to create VPN connect above picture
 
@@ -28,7 +28,7 @@ _-> Cannot create VPN connection_
 
 ### <mark style="color:blue;">**\[Code**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">2023</mark><mark style="color:blue;">**]**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">The newly created RemoteSite Subnet overlaps with a previously created RemoteSite Subnet.:</mark>
 
-<figure><img src="../../.gitbook/assets/image (305).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (305).png" alt=""><figcaption></figcaption></figure>
 
 Example
 

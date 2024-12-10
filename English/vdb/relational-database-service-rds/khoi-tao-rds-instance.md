@@ -2,14 +2,14 @@
 
 To initialize RDS Instacne, you can refer to the detailed steps in the instructions below.
 
-### Access vDB Portal <a href="#truy-cap-vdb-portal" id="truy-cap-vdb-portal"></a>
+## Access vDB Portal <a href="#truy-cap-vdb-portal" id="truy-cap-vdb-portal"></a>
 
 First, you access the vDB service interface in 2 ways as follows:
 
 * Method 1: Access the VNG Cloud homepage at the link: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/) . At the main interface, you find the **vServer service and select the vDB Relational** service in the list of vServer products/services.
 * Method 2: Directly access the vDB Relational homepage at the link: [https://vdb.console.vngcloud.vn/relational/database](https://vdb.console.vngcloud.vn/relational/database)
 
-### Initialize RDS instance <a href="#khoi-tao-rds-instance" id="khoi-tao-rds-instance"></a>
+## Initialize RDS instance <a href="#khoi-tao-rds-instance" id="khoi-tao-rds-instance"></a>
 
 At the Database management interface, click **Create Database** . The initialization process will go through 6 parts as instructed below:
 
