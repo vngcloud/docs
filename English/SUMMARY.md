@@ -787,7 +787,7 @@
     * [VPN Packages](vnetwork/vpn-virtual-private-network-site-to-site/vpn-packages.md)
     * [Delete VPN](vnetwork/vpn-virtual-private-network-site-to-site/delete-vpn.md)
     * [Demo Site-to-Site VPN](vnetwork/vpn-virtual-private-network-site-to-site/demo-site-to-site-vpn.md)
-    * [Page](vnetwork/vpn-virtual-private-network-site-to-site/page.md)
+    * [FAQ](vnetwork/vpn-virtual-private-network-site-to-site/faq.md)
 * [Key Management System](key-management-system/README.md)
   * [Customer Managed Key](key-management-system/customer-managed-key.md)
   * [VNG Cloud Managed Key](key-management-system/vng-cloud-managed-key.md)
