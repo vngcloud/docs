@@ -10,10 +10,10 @@
 
 ## Detail <a href="#chi-tiet" id="chi-tiet"></a>
 
-* **Server Cache Expiration (TTL):** On vCDN, you can set Server Cache Expiration (TTL) from a minimum value of 30 minutes to a maximum value of 1 day that we support.
+* **Server Cache Expiration (TTL):** On vCDN, you can set Server Cache Expiration (TTL) from a minimum value of 30 minutes to a maximum value of 1 year that we support.
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-* **Browser Cache Expiration:** On vCDN, you can set Browser Cache Expiration from a minimum value of 30 minutes to a maximum value of 1 day that we support.
+* **Browser Cache Expiration:** On vCDN, you can set Browser Cache Expiration from a minimum value of 30 minutes to a maximum value of 1 year that we support.
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
