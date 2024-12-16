@@ -251,7 +251,7 @@ kubectl apply -f persistent-volume.yaml
 
 Lúc này, hệ thống vServer sẽ tự động tạo một Volume tương ứng với file yaml bên trên, ví dụ:
 
-<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -269,7 +269,7 @@ Snapshot là phương pháp sao lưu giữ liệu với chi phí thấp, thuận
 
 Ví dụ:
 
-<figure><img src="../../.gitbook/assets/image (19) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Cài đặt VNGCloud Snapshot Controller**
 

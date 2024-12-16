@@ -16,7 +16,7 @@ description: >-
 
 <figure><img src="../../../.gitbook/assets/1 (2).png" alt=""><figcaption><p>VPN List</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>VPN Detail Tunnel</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>VPN Detail Tunnel</p></figcaption></figure>
 
 ## Thêm Kết nối
 
@@ -36,13 +36,13 @@ Nhấn nút kế bên Tên để thay đổi tên
 
 
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Thay đổi cấu hình Kết nối
 
 Nhấn vào biểu tượng bên dưới để vào trang chỉnh sửa Connect. Xem thông tin cấu hình [tại đây](./#cau-hinh-default-tunnel)
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Edit Tunnel Configuration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Edit Tunnel Configuration</p></figcaption></figure>
 
 ## Xoá kết nối
 

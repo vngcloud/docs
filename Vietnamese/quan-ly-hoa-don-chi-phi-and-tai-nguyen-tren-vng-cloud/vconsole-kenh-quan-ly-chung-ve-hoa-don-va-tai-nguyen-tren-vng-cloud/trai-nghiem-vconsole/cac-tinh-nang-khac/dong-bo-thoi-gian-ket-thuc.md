@@ -25,16 +25,16 @@ Với tính năng đồng bộ ngày kết thúc, bạn có thể quản lý t�
      * Hoặc, bạn có thể chọn "Chọn tất cả" để điều chỉnh cho toàn bộ tài nguyên.
    *   **Bước 3: Nhấn chọn hành động Match end time / Đồng bộ thời gian kết thúc**&#x20;
 
-       <figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 4. **Thiết lập ngày kết thúc mới:**
    * Bước 1: Chọn ngày và giờ hết hạn mới cần áp dụng cho các tài nguyên
    * Bước 2: Xem lại các chi phí phát sinh cho từng tài nguyên, tương ứng với thời gian hạn thêm
    *   Bước 3: Nhấn Match end time / Đồng bộ gia hạn để xác nhận thực hiện gia hạn
 
-       <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5. **Thực hiện thanh toán tại trang thanh toán để hoàn tất quá trình:**
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Lưu ý:**
 
