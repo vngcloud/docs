@@ -1,5 +1,30 @@
 # Release notes
 
+## Dec 5, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
+
+VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing many new features to users. Here are the highlights of the update:
+
+**New features:**
+
+* **Force-Upgrade, Auto-Upgrade** : Automatically upgrade the Kubernetes version for the cluster/node group on schedule or when the current version is about to expire. For more details, please refer [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vks/upgrade-kubernetes-version/automatically-upgrade) .
+
+***
+
+## Oct 23, 2024 <a href="#april_19_2024-3-1" id="april_19_2024-3-1"></a>
+
+VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing many improvements to users. Here are the highlights of the update:
+
+**Improve:**
+
+* **Support POC/ Stop POC for Cluster** : Users can now perform POC/ Stop POC for resources on VKS such as Server, Volume, Load Balancer, Endpoint. This feature brings high flexibility to users who want to experience VKS. For more details, please refer [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vks/clusters/stop-poc) .
+* **Upgrade VNGCloud BlockStorage CSI Driver Plugin:** Bugs discovered in previous versions have been fixed, making the system run smoother and more reliably.
+* **Freely choose/edit configuration with/without using VNGCloud Controller Manager plugin, VNGCloud Ingress Controller plugin on existing VKS cluster:** The ability to customize plugin configuration allows users to optimize the VKS cluster according to their specific needs. This helps increase flexibility and meet the special requirements of each application.
+* **Additionally,** in this update, we have also fixed some minor bugs to provide a better user experience.
+
+
+
+***
+
 ## Oct 03, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
 VKS (VNGCloud Kubernetes Service) has just released its latest update, bringing many features and improvements to users. Here are the highlights of the update:
@@ -78,7 +103,7 @@ VKS (VNGCloud Kubernetes Service) introduces the latest update to the existing V
 
 **Improve:**
 
-* **Upgrade VKS management through Terraform:** Users can **simultaneously** adjust the number of nodes and change the number of nodes for autoscale (Minimum/ Maximum node Autoscale) right during the configuration editing process. With the ability to adjust multiple parameters at the same time, managing a Kubernetes cluster becomes more flexible and convenient. For more details, see examples [here](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks\_cluster) .
+* **Upgrade VKS management through Terraform:** Users can **simultaneously** adjust the number of nodes and change the number of nodes for autoscale (Minimum/ Maximum node Autoscale) right during the configuration editing process. With the ability to adjust multiple parameters at the same time, managing a Kubernetes cluster becomes more flexible and convenient. For more details, see examples [here](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster) .
 
 ***
 
