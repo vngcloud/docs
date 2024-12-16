@@ -1,5 +1,15 @@
 # Release notes
 
+## Dec 5, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
+
+VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Tính năng mới:**
+
+* **Force-Upgrade, Auto-Upgrade**: Tự động nâng cấp phiên bản Kubernetes cho cluster/ node group theo lịch trình hoặc khi phiên bản hiện tại sắp hết hạn.. Chi tiết tham khảo thêm tại [đây](../upgrade-kubernetes-version/automatically-upgrade.md).
+
+***
+
 ## Oct 23, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
 VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều cải tiến cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
@@ -93,7 +103,7 @@ VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất
 
 **Cải tiến:**
 
-* **Nâng cấp quản lý VKS thông qua Terraform:** Người dùng có thể **đồng thời** điều chỉnh số lượng node (Number of nodes) và thay đổi số lượng node cho autoscale (Minimum/ Maximum node Autoscale) ngay trong quá trình chỉnh sửa cấu hình. Với khả năng điều chỉnh nhiều thông số cùng lúc, việc quản lý cụm Kubernetes trở nên linh hoạt và thuận tiện hơn. Chi tiết tham khảo thêm ví dụ tại [đây](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks\_cluster).
+* **Nâng cấp quản lý VKS thông qua Terraform:** Người dùng có thể **đồng thời** điều chỉnh số lượng node (Number of nodes) và thay đổi số lượng node cho autoscale (Minimum/ Maximum node Autoscale) ngay trong quá trình chỉnh sửa cấu hình. Với khả năng điều chỉnh nhiều thông số cùng lúc, việc quản lý cụm Kubernetes trở nên linh hoạt và thuận tiện hơn. Chi tiết tham khảo thêm ví dụ tại [đây](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
 
 ***
 
