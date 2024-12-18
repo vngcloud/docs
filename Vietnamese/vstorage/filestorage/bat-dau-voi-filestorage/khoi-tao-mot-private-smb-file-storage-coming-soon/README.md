@@ -105,6 +105,9 @@ Trên Windows Server, bạn có thể map file storage SMB thông qua giao diệ
 
 1. **Mở File Explorer.**
 2. Nhấp chuột phải vào **This PC** và chọn **Map network drive**.
+
+<figure><img src="../../../../.gitbook/assets/image (874).png" alt=""><figcaption></figcaption></figure>
+
 3. Trong cửa sổ **Map Network Drive**:
 
 * **Drive letter**: Chọn một ký tự ổ đĩa (VD: `Z:`).
@@ -113,6 +116,8 @@ Trên Windows Server, bạn có thể map file storage SMB thông qua giao diệ
   * **Username**: Tên tài khoản bạn đã tạo trên file storage SMB trước đó.
   * **Password**: Mật khẩu tương ứng.
 * Nhấn **Finish** để hoàn tất.
+
+<figure><img src="../../../../.gitbook/assets/image (875).png" alt=""><figcaption></figcaption></figure>
 
 **Qua dòng lệnh:**
 
@@ -132,8 +137,6 @@ Ví dụ:
 ```cmd
 net use Z: \\10.210.2.5\share /user:admin_password_123
 ```
-
-<figure><img src="../../../../.gitbook/assets/image (8).png" alt="" width="353"><figcaption></figcaption></figure>
 
 4. Chọn Finish, sau khi hoàn tất, bạn có thể kiểm tra trong **File Explorer** để thấy ổ đĩa được map.
 

@@ -25,15 +25,32 @@ Trước khi có thể thực hiện khởi tạo Windows server, hãy đảm b�
 
 <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
+***
+
 ## Khởi tạo Active Directory trên Windows Server
 
+Đầu tiên, bạn cần đảm bảo Đảm bảo bạn đã cài đặt và cấu hình Windows Server (ví dụ: Windows Server 2016, 2019, hoặc 2022).
 
+### Cài đặt và cấu hình DNS Server
 
+Để cài đặt và cấu hình DNS Server trên Windows Server, bạn có thể làm theo các bước sau:
 
+1. Từ màn hình **Desktop**, bạn mở **Start** menu và chọn **Server Manager**
+2. Chọn mục **All Servers,** chọn chuột phải sau đó chọn **Add roles and Features**
 
+<figure><img src="../../../../.gitbook/assets/image (872).png" alt=""><figcaption></figcaption></figure>
 
+3. **Tại trang Before you begin, nhấn Next**
+4. Tại trang Select install
 
+* Trong **Server Manager**, nhấn **Manage** > **Add Roles and Features**.
+* Trong wizard:
+  * **Installation Type**: Chọn **Role-based or feature-based installation**.
+  * **Server Selection**: Chọn server hiện tại.
+  * **Server Roles**: Tick chọn **DNS Server**.
+  * Nhấn **Next** và **Install** để cài đặt.
 
+\--tobecontinued
 
 ## Kết nối tới Windows server vừa khởi tạo
 
