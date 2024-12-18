@@ -79,9 +79,9 @@ Sau khi bạn đã khởi tạo Service Account và Policy mong muốn, tiếp t
 4. Tiếp tục chọn **Bucket** bạn muốn thực hiện phân quyền cho Service Account.
 5. Chọn biểu tượng **Action** và chọn **Configure policy.**
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (870).png" alt=""><figcaption></figcaption></figure>
 
-4\. Tại đây, bạn có thể chọn cấu hình cho từng **Statement** ở bên trái hoặc trực tiếp chỉnh sửa file JSON ở cột bên phải. Cụ thể cấu trúc một Bucket Policy bao gồm:
+6. Tại đây, bạn có thể chọn cấu hình cho từng **Statement** ở bên trái hoặc trực tiếp chỉnh sửa file JSON ở cột bên phải. Cụ thể cấu trúc một Bucket Policy bao gồm:
 
 * **Version**: Xác định phiên bản của Bucket Policy (nên dùng `"2012-10-17"`).
 * **Statement**: Mỗi chính sách sẽ có một hoặc nhiều **Statement** (mục đích cụ thể của policy).

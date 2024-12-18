@@ -79,9 +79,9 @@ Sau khi bạn đã khởi tạo IAM User Account và Policy mong muốn, tiếp 
 4. Tiếp tục chọn **Bucket** bạn muốn thực hiện phân quyền cho IAM User Account.
 5. Chọn biểu tượng **Action** và chọn **Configure policy.**
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (868).png" alt=""><figcaption></figcaption></figure>
 
-4\. Tại đây, bạn có thể chọn cấu hình cho từng **Statement** ở bên trái hoặc trực tiếp chỉnh sửa file JSON ở cột bên phải. Cụ thể cấu trúc một Bucket Policy bao gồm:
+6. Tại đây, bạn có thể chọn cấu hình cho từng **Statement** ở bên trái hoặc trực tiếp chỉnh sửa file JSON ở cột bên phải. Cụ thể cấu trúc một Bucket Policy bao gồm:
 
 * **Version**: Xác định phiên bản của Bucket Policy (nên dùng `"2012-10-17"`).
 * **Statement**: Mỗi chính sách sẽ có một hoặc nhiều **Statement** (mục đích cụ thể của policy).
@@ -93,7 +93,7 @@ Sau khi bạn đã khởi tạo IAM User Account và Policy mong muốn, tiếp 
 
 5\. Chọn **Save** để lưu lại cấu hình Bucket Policy.
 
-<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (869).png" alt=""><figcaption></figcaption></figure>
 
 ## Thực hiện truy cập vào vStorage thông qua IAM User Account
 
