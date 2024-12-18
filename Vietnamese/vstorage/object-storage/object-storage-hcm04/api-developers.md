@@ -2,7 +2,30 @@
 
 Object Storage (HCM04) cung cấp một loạt API để quản lý dữ liệu và tương tác với các tài nguyên lưu trữ đám mây của bạn. Dưới đây là một tóm tắt về các loại API chính mà chúng tôi đang cung cấp:
 
-## Authentication
+* **vStorage API:** bạn có thể sử dụng **Service Account** để authenticate và làm việc với **project, bucket, object, report** thông qua API.
+* **S3 API**: bạn có thể sử dụng **S3 keys** để authenticate và làm việc với **bucket, object** thông qua API.
+
+## vStorage API - Authentication
+
+Thực hiện theo các bước bên dưới làm việc với vStorage thông qua Service Account
+
+1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list)
+2. Chọn thư mục **Integration.**
+3. Chọn biểu tượng **vStorage API**.
+4. Tại mục **Authentication**, bạn cần điền thông tin cần thiết để cấu hình vStorage API của bạn bao gồm:
+   1. Nhập **Client ID**. Một **Client ID** là một chuỗi ký tự được sử dụng bởi Service API để định danh ứng dụng, đồng thời cũng được dùng để xây dựng "authorization URL" hiển thị phía người dùng. Bạn có thể tạo và quản lý **Client ID** thông qua hệ thống vIAM. **Client ID** sẽ được tự động sinh ra khi bạn tạo mới một **Service Account**.&#x20;
+   2. Nhập **Client Secret** tương ứng của **Client ID** vừa nhập. Cặp Client ID và Client Secret được bạn tạo và quản lý thông qua hệ thống vIAM. Bạn có thể chọn [Click here to manage your Client ID.](https://hcm-3.console.vngcloud.vn/iam/service-accounts) để chúng tôi điều hướng bạn tới hệ thống vIAM và chi tiết là các màn hình quản lý Service Account.
+5. Sau khi hoàn tất chọn cấu hình **xác thực**, chọn **Authentication** để chuyển tới màn hình **Configuration. Tại đây bạn có thể sử dụng trực tiếp các vStorage API hoặc bạn có thể sử dụng API thông qua Postman**. Bạn luôn có thể quay lại đây để thay đổi thông tin **Cấp quyền** của mình, sau đó chọn lại **Xác thực** để cập nhật danh sách S3 Rest API theo thông số mới của bạn.
+
+Chi tiết, vui lòng tham khảo thêm tại [https://docs.api.vngcloud.vn/service-docs/vstorage-api.html](https://docs.api.vngcloud.vn/service-docs/vstorage-api.html).
+
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FB0NrrrdJdpYOYzRkbWp5%2Fuploads%2F3Bm1GCocOTozYC0ZjyB5%2Fimage.png?alt=media&#x26;token=99dcde88-341a-4963-85f1-b4d29b2f8eee" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FB0NrrrdJdpYOYzRkbWp5%2Fuploads%2Fm7v0Vxj3wqwag1B0xOzL%2Fimage.png?alt=media&#x26;token=3c96fc92-fa50-4fe2-b808-df2492e9ee49" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FB0NrrrdJdpYOYzRkbWp5%2Fuploads%2F1HUAVlEfS4AaFY8azlHn%2Fimage.png?alt=media&#x26;token=e40ce520-d442-4435-b86f-950246c3d70b" alt=""><figcaption></figcaption></figure>
+
+## S3 API - Authentication
 
 * Type: AWS Signature
 * Access Key: khởi tạo và lấy thông tin trên vStorage Portal.
