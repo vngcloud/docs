@@ -8,4 +8,4 @@ Chi tiết:
 
 * [Khởi tạo một Public NFS File Storage](bat-dau-voi-filestorage/khoi-tao-mot-public-nfs-file-storage.md)
 * [Khởi tạo một Private NFS File Storage (Coming soon)](bat-dau-voi-filestorage/khoi-tao-mot-private-nfs-file-storage-coming-soon.md)
-* [Khởi tạo một Private SMB File Storage (Coming soon)](bat-dau-voi-filestorage/khoi-tao-mot-private-smb-file-storage-coming-soon.md)
+* [Khởi tạo một Private SMB File Storage (Coming soon)](bat-dau-voi-filestorage/khoi-tao-mot-private-smb-file-storage-coming-soon/)

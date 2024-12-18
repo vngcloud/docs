@@ -23,7 +23,9 @@ Trước khi có thể thực hiện khởi tạo Windows server, hãy đảm b�
 13. Ở mục **Other Settings**, có thể tùy chọn server Group hoặc không theo nhu cầu sử dụng. Bạn có thể gán Server vào các Group trước đó đã tạo (Với các thuộc tính như cùng Compute Host hay khác Compute Host)
 14. Chọn **Launch Server** và thực hiện các bước thanh toán để hoàn thành việc khởi tạo server
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ## Kết nối tới Windows server vừa khởi tạo
 
@@ -33,7 +35,7 @@ Trước khi có thể thực hiện khởi tạo Windows server, hãy đảm b�
 2. Chọn **Server** cần kết nối, sau đó chọn **Action, tiếp tục chọn Connect**
 3. Trên trang Kết nối tới máy chủ, chọn tab **RDP (Window)**
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 4. Chọn **Tải xuống tệp RDP**. Trình duyệt của bạn sẽ nhắc bạn mở hoặc lưu tệp RDP. Khi bạn đã hoàn tất tải xuống tệp, hãy chọn **Hoàn thành** để quay lại trang máy chủ:
 
@@ -44,7 +46,7 @@ Trước khi có thể thực hiện khởi tạo Windows server, hãy đảm b�
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FfuEO8mrahhrFz1w6mUJN%252Fimage.png%3Falt%3Dmedia%26token%3D0a210d8e-cfe1-4fe8-9d9a-cefa8a87194d&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=79b6565d&#x26;sv=2" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt="" width="275"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt="" width="275"><figcaption></figcaption></figure>
 
 6. Tài khoản quản trị viên được chọn theo mặc định. Bạn cần sao chép và dán mật khẩu mà bạn đã lưu trước đó vào pop-up đăng nhập (Thông tin này lấy từ email), trong đó nhập thông tin **InstanceLogin** vào **Username**, **InstancePassword** vào **Password**:
 
@@ -56,9 +58,9 @@ Trước khi có thể thực hiện khởi tạo Windows server, hãy đảm b�
 
 8. Màn hình sẽ hiển thị đang kết nối đến máy chủ Window thành công
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt="" width="272"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt="" width="272"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ***
 
@@ -68,7 +70,7 @@ Trước khi có thể thực hiện khởi tạo Windows server, hãy đảm b�
 
 **Bước 2:** Chọn mục **File Storage** sau đó chọn **Create a File storage.**
 
-<figure><img src="../../../.gitbook/assets/image (818).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (818).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Tại màn hình khởi tạo File Storage, bạn cần nhập/ chọn:&#x20;
 
@@ -78,18 +80,18 @@ Trước khi có thể thực hiện khởi tạo Windows server, hãy đảm b�
 * **Protocol:** chọn NFS và version NFS mà bạn mong muốn
 * **Tag:** bạn có thể thêm các tag để đánh dầu file storage theo nhu cầu.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 * **File Storage Max quota:** trong bước khởi tạo file storage, bạn cần đặt một giới hạn quota tối đa cho file storage đó. Quota này có ý nghĩa chính là giới hạn dung lượng lưu trữ mà file storage có thể sử dụng, giúp quản lý tài nguyên hiệu quả. <mark style="color:red;">**Mức quota tối thiểu bạn cần chọn là 1 TB và mức quota tối đa chúng tôi cung cấp là 50 TB.**</mark> Nếu bạn có nhu cấu sử dụng nhiều hơn 50 TB cho một file storage, vui lòng liên hệ với chúng tôi.
 * **Network type**: đối với loại file SMB, network type bắt buộc phải là Private.&#x20;
 * **Window Authentication: c**ấu hình quyền truy cập thông qua **Basic Authentication** hoặc **Active Directory Authentication**
   * **Basic Authentication:** Nếu Windows server của bạn không có Active Directory hoặc bạn muốn quản lý quyền truy cập đơn giản thông qua username và password, bạn có thể sử dụng Basic authentication, chúng tôi hỗ trợ bạn tạo tối đa 10 tài khoản username/password để truy cập file storage.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 * **Active Directory Authentication:** Nếu Windows server của bạn sử dụng Active Directory để quản lý người dùng và quyền truy cập, thì AD Authentication sẽ dễ dàng tích hợp và quản lý tập trung. Bạn có thể xác thực thông qua Active Directory domain name, DNS server IP addresses, Username, Password trên Active Directory của bạn.
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Chọn **Create File Storage.**
 
@@ -131,7 +133,7 @@ Ví dụ:
 net use Z: \\10.210.2.5\share /user:admin_password_123
 ```
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt="" width="353"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8).png" alt="" width="353"><figcaption></figcaption></figure>
 
 4. Chọn Finish, sau khi hoàn tất, bạn có thể kiểm tra trong **File Explorer** để thấy ổ đĩa được map.
 
@@ -169,3 +171,13 @@ Sau khi bạn đã **map File Storage SMB** vào Windows Server thành công, b�
    * Mở **File Explorer** (phím tắt: **Windows + E**).
    * Điều hướng đến ổ đĩa SMB (VD: `Z:`).
    * Tìm và mở file `testfile.txt` mà bạn vừa lưu để xác minh nội dung
+
+{% hint style="info" %}
+**Chú ý:**&#x20;
+
+Security Groups trên Windows server cần mở thêm các port sau để share được dữ liệu:
+
+* Với File Storage NFS: mở thêm port **2049**
+* Với File Storage SMB có Basic Authentication: mở thêm port **445**
+* Với File Storage SMB Có Active Directory Authentication: mở thêm list port để có thể kết nối được từ File Storage đến AD.
+{% endhint %}
