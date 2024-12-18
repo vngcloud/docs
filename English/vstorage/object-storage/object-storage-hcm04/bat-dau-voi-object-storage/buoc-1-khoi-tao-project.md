@@ -12,4 +12,4 @@ Create a project by following the steps below:
 6. Select **Period** and check/uncheck **Auto-renew** according to your needs.
 7. **Go through the Checkout** steps and your **Project** will be created.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -22,7 +22,7 @@ that you want to use for your server. You also need to select an existing Server
 
 **At this point, the vServer** system will initialize a Server corresponding to the configuration you selected. Please wait until the server creation is complete and continue with the following steps.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -35,7 +35,7 @@ that you want to use for your server. You also need to select an existing Server
 * 1935 (TCP): RTMP
 * 10080 (UDP): optional for SRT protocol
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2:** After the Sigma server is successfully initialized. To access the Sigma GUI, you need to use the External Interface IP address and access the link: _**http://VM\_External\_IP:4000**_
 

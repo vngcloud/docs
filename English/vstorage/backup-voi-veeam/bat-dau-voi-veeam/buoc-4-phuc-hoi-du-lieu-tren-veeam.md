@@ -32,15 +32,15 @@ Here, the data in the folder E:\Backup\_Veem contains "Backup File" that is corr
 
 Here, the user selects the Job that backed up the folder, then selects the computer on which the Job ran the backup. Right-click and select "**Restore guest files**" then choose "**Microsoft Windows**".
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 2. The "**File Level Restore**" interface appears, in the "**Restore Point**" tab, all backup points will be listed, the user only selects the backup point appropriate to retrieve the data. Then click "**Next**".
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="559"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="559"><figcaption></figcaption></figure>
 
 3. In the "**Reason**" tab, the user can fill in a description of why the file needs to be restored. Then click "**Next**".
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="559"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="559"><figcaption></figcaption></figure>
 
 4. In the "**Summary**" tab, a summary of the data recovery information is displayed. Then click "**Browse**".
 

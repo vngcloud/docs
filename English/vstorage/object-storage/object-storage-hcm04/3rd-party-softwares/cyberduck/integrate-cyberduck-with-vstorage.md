@@ -24,11 +24,11 @@ To see instructions for integrating Cyberduck with vStorage, you can do so via t
 
 4\. Enter connection information including:
 
-* **Protocol** : VNG HCM01 - AWS4. When you choose this method, Server, Port, URL information will be automatically recorded and displayed.
-* **Access key** : enter the S3 access key you created from vIAM, which is also the access key information taken from step 4 above.
-* **Secret key** : enter the S3 access key you created from vIAM, which is also the access key information taken from step 4 above.
+* **Protocol** : HCM04. When you choose this method, Server, Port, URL information will be automatically recorded and displayed.
+* **Access key** : enter the S3 access key you created from vStorage, which is also the access key information taken from step 4 above.
+* **Secret key** : enter the S3 access key you created from vStorage, which is also the access key information taken from step 4 above.
 
-<figure><img src="../../../../../.gitbook/assets/image (427).png" alt="" width="320"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 5\. Select **Connect** .
 
