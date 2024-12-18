@@ -449,7 +449,7 @@
     * [Bắt đầu với FileStorage](vstorage/filestorage/bat-dau-voi-filestorage.md)
       * [Khởi tạo một Public NFS File Storage](vstorage/filestorage/bat-dau-voi-filestorage/khoi-tao-mot-public-nfs-file-storage.md)
       * [Khởi tạo một Private NFS File Storage (Coming soon)](vstorage/filestorage/bat-dau-voi-filestorage/khoi-tao-mot-private-nfs-file-storage-coming-soon.md)
-      * [Khởi tạo một Private SMB File Storage (Coming soon)](vstorage/filestorage/bat-dau-voi-filestorage/khoi-tao-mot-private-smb-file-storage-coming-soon.md)
+      * [Khởi tạo một Private SMB File Storage](vstorage/filestorage/bat-dau-voi-filestorage/khoi-tao-mot-private-smb-file-storage-coming-soon.md)
     * [Các tính năng của FileStorage](vstorage/filestorage/cac-tinh-nang-cua-filestorage/README.md)
       * [Khởi tạo File Storage](vstorage/filestorage/cac-tinh-nang-cua-filestorage/khoi-tao-tai-nguyen.md)
       * [Mount FileStorage tới server](vstorage/filestorage/cac-tinh-nang-cua-filestorage/mount-filestorage-toi-server.md)
