@@ -46,7 +46,7 @@ After finishing create VPN between above connections:
 
 
 
-<figure><img src="../../.gitbook/assets/image (37) (1) (1) (1) (1).png" alt=""><figcaption><p>Basic Diagram VPN</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (37) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Basic Diagram VPN</p></figcaption></figure>
 
 ***
 

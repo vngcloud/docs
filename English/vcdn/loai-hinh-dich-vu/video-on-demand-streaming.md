@@ -15,7 +15,7 @@ VNG Cloud's VOD service helps businesses:
 
 ## **Model** <a href="#videoondemandstreaming-cochephanphoidulieu" id="videoondemandstreaming-cochephanphoidulieu"></a>
 
-<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (27) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -104,7 +104,7 @@ First, you need to initialize a VOD following these instructions:
 1. Access vCDN Portal at [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
 2. Select **Video On Demand** , then select **Create new.**
 
-<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Continue to enter/select:
 
@@ -116,7 +116,7 @@ First, you need to initialize a VOD following these instructions:
     * **MP4:** vCDN serves original mp4 files directly from origin to end-user
   * **Segment Size:** Select the "hash" time of "ts" files with VoD service type as CDN Packaging.
 
-<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin:**
   * **HTTP Origin** : Server supports HTTP protocol.
@@ -138,11 +138,11 @@ First, you need to initialize a VOD following these instructions:
     * **Use SSL:** Enable SSL to encrypt the connection to Host Origin.
     * **Host Origin**
 
-<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   **Security:**
 
@@ -152,7 +152,7 @@ First, you need to initialize a VOD following these instructions:
     * **Token Configuration** :
       * **Token Type** : Select the token type used to authenticate viewers. You can choose token type Akamai, SBD or VNG.
 
-    <figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Access Filter:**
       * **IP Address CIDR** : Limit access based on IP address by selecting **Allow** / **Block** and entering the corresponding IP address or CIDR.
@@ -162,7 +162,7 @@ First, you need to initialize a VOD following these instructions:
       * **Simple** : When selecting Simple, you only need to specify specific domains that are allowed access through **Allow Origin.**
       * **Advance** : When selecting Advance, in addition to specifying a specific domain, you need to configure more details about **Allow Header, Allow Method, Expose Header, Allow Credentials** allowed.
 
-    <figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (34) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Caching:**
       * **Caching Level** : Determines the CDN cache level. With VOD, vCDN is providing 3 cache levels including: URL without query string only, Skip Query String of URL, URL With Query String.
@@ -170,7 +170,7 @@ First, you need to initialize a VOD following these instructions:
       * **Browser Cache Expiration:** The time vCDN asks the user's browser to cache files locally.
       * **Development mode:** This feature allows you to temporarily disable caching on the Edge Server to support testing or testing content during development. All requests will be returned directly from Origin, allowing content to be updated immediately without clearing the cache.
 
-    <figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Page Rules:** This feature helps customers optimize conditions and options to help the website demonstrate many different purposes. To create Page rules, please select **Create Page Rule** , a popup will appear, now you need to select:
       * **URL pattern:** need to apply pagerule, support declaration type “\*” represents a string of characters. For example: /trang\_landing\_cu.html. After entering URL pattern, select **Add new rule** . Each Rule when satisfying the condition of the requested URI will be able to optionally execute one of the following actions:
@@ -186,13 +186,13 @@ First, you need to initialize a VOD following these instructions:
         * Deny Access
       * Select **Save changes** to save the changes.
 
-    <figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (36) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
-    <figure><img src="../../.gitbook/assets/image (38).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (38) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (39).png" alt="" width="348"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (39) (1).png" alt="" width="348"><figcaption></figcaption></figure>
 
 
 

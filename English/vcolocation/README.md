@@ -6,13 +6,13 @@
 
 The vColo Customer Portal is an automated data center space rental management platform provided by VNG Cloud. It offers an intuitive and convenient interface for customers to manage and monitor their resources, including power usage, environmental parameters, equipment layout diagrams, equipment lists, assets, and more.
 
-<figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Site map <a href="#vcolocation-sitemap" id="vcolocation-sitemap"></a>
 
 ***
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Danh sách tính năng <a href="#vcolocation-danhsachtinhnang" id="vcolocation-danhsachtinhnang"></a>
 

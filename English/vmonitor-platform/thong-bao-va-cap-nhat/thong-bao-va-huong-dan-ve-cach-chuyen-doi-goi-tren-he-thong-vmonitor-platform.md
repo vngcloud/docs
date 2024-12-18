@@ -45,6 +45,6 @@ The package conversion process will occur immediately. The Quota/Usage parameter
 
 In this example, I purchased the Metric Quota package. The Log Project incurs additional charges, so when converted, I automatically received an additional 200 SMS and 200 Email credits free for 6 months. Details:
 
-<figure><img src="../../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After converting the resource, you can continue to perform resizing and extending the resource according to other instructions in this document.

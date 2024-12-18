@@ -9,7 +9,7 @@ To upload an object to a bucket, please follow the steps below:
 3. Select **Choose files to upload** or drag the files from your personal device you want to upload into this area.
 4. After dragging or selecting one or more files into this area. Select **Upload** .
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**
@@ -25,4 +25,4 @@ To download one or more objects, please follow the steps below:
 2. Select the **objects** you want to download.
 3. Select the action icon, then select the **Download button**
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

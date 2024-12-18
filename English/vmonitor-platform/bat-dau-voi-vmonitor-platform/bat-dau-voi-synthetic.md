@@ -37,11 +37,11 @@ API HTTP tests allow you to send HTTP(s) requests to your service or application
   * **Method:**&#x43;hoose a method to check your endpoint (Get, Post, Put, Delete)
   * **URL**: Fill in the service information you want to check, for example [https://google.com](https://google.com/)
 
-<figure><img src="../../.gitbook/assets/image (38) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (38) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * After filling in the Test Information, you can select **Run Test or Test Again** if you have tested before to check. You can see the returned information such as status code, header, and body.
 
-<figure><img src="../../.gitbook/assets/image (39) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (39) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Test Assertion**
   * Assertions define what you expect from the API Test results. If the returned results match your definition, the API Test will indicate that the URL being tested is successful; otherwise, it will indicate failure. The system will automatically add an assertion for the status code after you run the test; you need to define at least one assertion for the API test. In addition to the status code assertion automatically added by the system, you can add any other assertions we support, such as Response Time, Header, Body, and Certificate.
