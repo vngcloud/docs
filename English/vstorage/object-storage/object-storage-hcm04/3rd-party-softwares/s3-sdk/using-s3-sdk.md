@@ -2,29 +2,29 @@
 
 ## Some common use cases (examples for languages: Java & AWS SDK library) <a href="#sudungcongcus3sdk-motsousecasethongthuong-vidudoivoingonngu-java-and-thuvienawssdk" id="sudungcongcus3sdk-motsousecasethongthuong-vidudoivoingonngu-java-and-thuvienawssdk"></a>
 
-**Create a new container**
+**Create a new bucket**
 
 > s3Client.createBucket(\<CONTAINER-NAME>);
 
-**Get a list of all objects in a container**
+**Get a list of all objects in a bucket**
 
 > ObjectListing objectListing = s3Client.listObjects(\<CONTAINER-NAME>); for (S3ObjectSummary os : objectListing.getObjectSummaries()) { System.out.println(os.getKey()); }
 
-**Upload files to a container**
+**Upload files to a bucket**
 
 > s3Client.putObject(\<CONTAINER-NAME>, \<KEY-NAME>, new File(\<PATH-TO-LOCAL-FILE>));
 
-**Delete an object in a container**
+**Delete an object in a bucket**
 
 > s3Client.deleteObject(\<CONTAINER-NAME>, \<KEY-NAME>);
 
-**Delete a container**
+**Delete a bucket**
 
 > ObjectListing objectListing = s3Client.listObjects(\<CONTAINER-NAME>);
 >
-> if (CollectionUtils.isNotEmpty(objectListing.getObjectSummaries())) { String\[] objkeyArr = objectListing.getObjectSummaries().stream().map(S3ObjectSummary::getKey) .toArray(String\[]::new); DeleteObjectsRequest delObjReq = new DeleteObjectsRequest(container).withKeys(objkeyArr); s3Client.deleteObjects(delObjReq); }
+> if (CollectionUtils.isNotEmpty(objectListing.getObjectSummaries())) { String\[] objkeyArr = objectListing.getObjectSummaries().stream().map(S3ObjectSummary::getKey) .toArray(String\[]::new); DeleteObjectsRequest delObjReq = new DeleteObjectsRequest(bucket).withKeys(objkeyArr); s3Client.deleteObjects(delObjReq); }
 >
-> s3Client.deleteBucket(container);
+> s3Client.deleteBucket(bucket);
 
 **Move an object**
 
@@ -34,11 +34,11 @@
 
 ## Some advanced use cases <a href="#sudungcongcus3sdk-motsousecasenangcao" id="sudungcongcus3sdk-motsousecasenangcao"></a>
 
-**Switch container public mode**
+**Switch bucket public mode**
 
 > s3Client.setBucketAcl(\<CONTAINER-NAME>, CannedAccessControlList.PublicRead);
 
-**Switch container privacy mode**
+**Switch bucket privacy mode**
 
 > s3Client.setBucketAcl(\<CONTAINER-NAME>, CannedAccessControlList.Private);
 

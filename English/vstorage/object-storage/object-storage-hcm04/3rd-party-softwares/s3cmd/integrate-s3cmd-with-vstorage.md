@@ -21,6 +21,6 @@ To see the instructions for integrating the S3cmd tool with vStorage, you can do
 5. **Extract** the downloaded **S3cmd** application file .
 6. Open **Command Prompt on your computer or press Windows + R** key combination then type **cmd** and press **Enter.**
 7. In **Command Prompt** , point to the **s3cmd** folder you just **extracted . The syntax for pointing** to the folder is as follows: cd \<path to the s3cmd folder>
-8. At this point, you can use syntax to get **a list of containers, upload objects** , and perform other operations on [3rd party softwares](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/3rd-party-softwares) .
+8. At this point, you can use syntax to get **a list of buckets, upload objects** , and perform other operations on [3rd party softwares](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/3rd-party-softwares) .
 
 <figure><img src="../../../../../.gitbook/assets/image (425).png" alt=""><figcaption></figcaption></figure>

@@ -2,23 +2,23 @@
 
 ## Một số use case thông thường <a href="#sudungcongcus3cmd-motsousecasethongthuong" id="sudungcongcus3cmd-motsousecasethongthuong"></a>
 
-**Lấy danh sách tất cả container**
+**Lấy danh sách tất cả bucket**
 
 > $ s3cmd ls
 
-**Tạo một container mới**
+**Tạo một bucket mới**
 
 > $ s3cmd mb s3://BUCKET
 
-**Lấy danh sách tất cả object trong một container**
+**Lấy danh sách tất cả object trong một bucket**
 
 > $ s3cmd la
 
-**Tải lên tệp tin vào một container** &#x20;
+**Tải lên tệp tin vào một bucket** &#x20;
 
 > s3cmd put FILE \[FILE...] s3://BUCKET\[/PREFIX]
 
-**Xóa một object trong một container**
+**Xóa một object trong một bucket**
 
 > s3cmd del s3://BUCKET/OBJECT
 
@@ -32,7 +32,7 @@
 
 ## Một số use case nâng cao <a href="#sudungcongcus3cmd-motsousecasenangcao" id="sudungcongcus3cmd-motsousecasenangcao"></a>
 
-**Truy xuất presign URL cho một container trong một khoảng thời gian cố định**
+**Truy xuất presign URL cho một bucket trong một khoảng thời gian cố định**
 
 > s3cmd signurl s3://BUCKET/OBJECT \<expiry\_epoch|+expiry\_offset>
 
@@ -60,7 +60,7 @@
 
 > s3cmd abortmp s3://BUCKET/OBJECT Id
 >
-> Ví dụ: s3cmd abortmp s3://s3cmd-container/2gb-video.mp4 MWRmNjBhNWUtZGMwNy00YjNiLThhOTgtMWFmYmIxYzI0OTE
+> Ví dụ: s3cmd abortmp s3://s3cmd-bucket/2gb-video.mp4 MWRmNjBhNWUtZGMwNy00YjNiLThhOTgtMWFmYmIxYzI0OTE
 
 Các segment rác của tệp tin chưa được tải lên thành công sẽ được dọn sạch. Chi tiết tham khảo tại [đây.](https://s3tools.org/usage)&#x20;
 {% endhint %}

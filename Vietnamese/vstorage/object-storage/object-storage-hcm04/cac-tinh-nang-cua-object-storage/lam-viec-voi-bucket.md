@@ -10,7 +10,7 @@ Về mặt triển khai, các project, bucket, object là tài nguyên của vSt
 
 ## Phạm vi giới hạn bucket
 
-#### Quy tắc đặt tên bucket <a href="#phamvigioihancontainer-quytacdattencontainer" id="phamvigioihancontainer-quytacdattencontainer"></a>
+#### Quy tắc đặt tên bucket <a href="#phamvigioihanbucket-quytacdattenbucket" id="phamvigioihanbucket-quytacdattenbucket"></a>
 
 Các quy tắc sau áp dụng cho việc đặt tên bucket trong vStorage:
 
@@ -19,7 +19,7 @@ Các quy tắc sau áp dụng cho việc đặt tên bucket trong vStorage:
 * Tên bucket không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, tên tài khoản, mật khẩu đăng nhập,...). Chúng tôi khuyến cáo bạn nên đặt tên bucket bằng các chữ cái viết thường, chữ số và không có các ký tự cụ thể như #, @, $, %, ?, /, \`, \~ ... Nếu bạn thực sự cần đặt tên với các ký tự viết hoa, vui lòng lưu ý rằng, bạn có thể gặp một số vấn đề khi làm việc với các 3rd party softwares được hỗ trợ từ các nhà cung cấp khác.
 * Tên bucket phải là duy nhất trong một project cho đến khi bucket đó bị xóa.&#x20;
 
-#### Ví dụ minh họa <a href="#phamvigioihancontainer-viduminhhoa" id="phamvigioihancontainer-viduminhhoa"></a>
+#### Ví dụ minh họa <a href="#phamvigioihanbucket-viduminhhoa" id="phamvigioihanbucket-viduminhhoa"></a>
 
 * Các tên bucket ví dụ sau đây hợp lệ và tuân theo các nguyên tắc đặt tên được đề xuất:
   * bucketexample1

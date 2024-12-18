@@ -2,27 +2,27 @@
 
 ## Một số use case thông thường <a href="#sudungcongcucyberduck-motsousecasethongthuong" id="sudungcongcucyberduck-motsousecasethongthuong"></a>
 
-**Tạo một container mới**
+**Tạo một bucket mới**
 
 1. Tại màn hình chính của **Cyberduck**, nhấn chuột phải tại vùng trang trắng và chọn **New Folder.** Hoặc bạn có thể nhấn tổ hợp phím **Ctrl + Shift + N.**
-2. Nhập tên **container**. Tên container mà bạn nhập phải tuân thủ theo quy định của chúng tôi. Chi tiết tham khảo tại [Phạm vi giới hạn container](../../../vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/pham-vi-gioi-han-container.md)
+2. Nhập tên **bucket**. Tên bucket mà bạn nhập phải tuân thủ theo quy định của chúng tôi. Chi tiết tham khảo tại [Phạm vi giới hạn bucket](../../../vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-bucket/pham-vi-gioi-han-bucket.md)
 
 <figure><img src="https://contabo.com/blog/wp-content/uploads/2022/12/image-7.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59805342/image2023-7-14_14-15-57.png?version=1&#x26;modificationDate=1689318958000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-**Tải lên tệp tin vào một container** &#x20;
+**Tải lên tệp tin vào một bucket** &#x20;
 
-1. Tại màn hình chính của **Cyberduck**, chọn **container** mà bạn muốn tải tệp tin lên.
+1. Tại màn hình chính của **Cyberduck**, chọn **bucket** mà bạn muốn tải tệp tin lên.
 2. Chọn **Upload**.
 3. Chọn tệp tin hay thư mục từ máy của bạn sau đó chọn **Choose**.
 4. Tiến trình tải tệp tin lên bắt đầu. Khi tải lên hoàn thành, Cyberduck sẽ thông báo tệp tin được tải lên Thành công.
 
 <figure><img src="https://contabo.com/blog/wp-content/uploads/2022/12/image-9.png" alt=""><figcaption></figcaption></figure>
 
-**Xóa một object trong một container**
+**Xóa một object trong một bucket**
 
-1. Tại màn hình chính của **Cyberduck**, chọn **container chứa object** mà bạn muốn xóa.
+1. Tại màn hình chính của **Cyberduck**, chọn **bucket chứa object** mà bạn muốn xóa.
 2. Tại object bạn muốn xóa, chọn chuột phải sau đó chọn **Delete**.
 
 <figure><img src="../../../../../.gitbook/assets/image (533).png" alt=""><figcaption></figcaption></figure>
@@ -35,7 +35,7 @@
 
 **Chia sẻ object thông qua Presign URL**
 
-1. Tại màn hình chính của **Cyberduck**, chọn **container chứa object** mà bạn muốn chia sẻ qua Presign URL.
+1. Tại màn hình chính của **Cyberduck**, chọn **bucket chứa object** mà bạn muốn chia sẻ qua Presign URL.
 2. Tại object bạn muốn chia sẻ, chọn chuột phải sau đó chọn **Copy URL** nếu bạn muốn sao chép Presign URL hoặc chọn **Open URL** nếu bạn muốnmở trực tiếp Presign URL trên trình duyệt.
 
 <figure><img src="../../../../../.gitbook/assets/image (534).png" alt=""><figcaption></figcaption></figure>

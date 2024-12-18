@@ -21,6 +21,6 @@
 5. **Extract** tệp tin ứng dụng **S3cmd** vừa tải xuống.
 6. Mở **Command Prompt** trên máy tính hoặc nhấn tổ hợp phím **Windows + R** sau đó nhập **cmd** và nhấn **Enter.**
 7. Trong **Command Prompt**, thực hiện **trỏ** tới thư mục **s3cmd** vừa **extract**. Cú pháp trỏ thư mục như sau: cd <đường dẫn tới thư mục s3cmd>
-8. Lúc này, bạn đã có thể sử dụng các cú pháp để lấy **danh sách container, tải lên object**, cũng như thực hiện các thao tác khác tại [3rd party softwares](../../../vstorage-hcm03/3rd-party-softwares/).
+8. Lúc này, bạn đã có thể sử dụng các cú pháp để lấy **danh sách bucket, tải lên object**, cũng như thực hiện các thao tác khác tại [3rd party softwares](../../../vstorage-hcm03/3rd-party-softwares/).
 
 <figure><img src="../../../../../.gitbook/assets/image (865).png" alt=""><figcaption></figcaption></figure>

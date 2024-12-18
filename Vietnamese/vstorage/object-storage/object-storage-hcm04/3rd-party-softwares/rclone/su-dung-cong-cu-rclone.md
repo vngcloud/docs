@@ -2,19 +2,19 @@
 
 ## Một số use case thông thường <a href="#sudungcongcurclone-motsousecasethongthuong" id="sudungcongcurclone-motsousecasethongthuong"></a>
 
-**Lấy danh sách tất cả container**
+**Lấy danh sách tất cả bucket**
 
 > $ rclone lsd \<remote\_name>:
 
-**Tạo một container mới**
+**Tạo một bucket mới**
 
 > $ rclone mkdir \<remote\_name>:mybucket
 
-**Lấy danh sách tất cả object trong một container**
+**Lấy danh sách tất cả object trong một bucket**
 
 > $ rclone ls \<remote\_name>:mybucket
 
-**Tải xuống tệp tin `file.txt` từ một container**
+**Tải xuống tệp tin `file.txt` từ một bucket**
 
 > $ rclone copy \<remote\_name>:mybucket/file.txt fichier.txt
 
@@ -22,7 +22,7 @@
 
 ## Một số use case nâng cao <a href="#sudungcongcurclone-motsousecasenangcao" id="sudungcongcurclone-motsousecasenangcao"></a>
 
-**Đồng bộ thư mục `/home/user/documents` với một container**
+**Đồng bộ thư mục `/home/user/documents` với một bucket**
 
 > $ rclone sync /home/user/documents \<remote\_name>:mybucket
 
@@ -35,7 +35,7 @@
 
 1. Không nên sử dụng phiên bản Rclone quá cũ/ quá mới trên các hệ điều hành có phiên bản quá cũ/ quá mới vì có thể gặp lỗi.
 2. Không khuyến khích sử dụng rclone sync vì khi sync sẽ copy **source** sang **destination** và xóa phần khác biệt ở **destination** (khiến **destination** trở thành bản sao của **source**), dễ gây ra sự cố xoá nhầm data nếu truyền sai thông tin **source**, **destination**. Khuyến cáo nên dùng rclone copy.
-3. &#x20;Có vài vấn đề khi dùng rclone mount để mount các vStorage container (bucket) thành local directory để sử dụng:\
+3. &#x20;Có vài vấn đề khi dùng rclone mount để mount các vStorage bucket (bucket) thành local directory để sử dụng:\
    \+ Không thể copy, rename, move\
    \+ Không thể listing nhanh chóng\
    \+ Không phân quyền như trên các loại filesystem truyền thống: rwx, uid, gid,...

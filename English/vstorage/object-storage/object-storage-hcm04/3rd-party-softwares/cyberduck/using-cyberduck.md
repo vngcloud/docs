@@ -2,25 +2,25 @@
 
 ## Some common use cases <a href="#sudungcongcucyberduck-motsousecasethongthuong" id="sudungcongcucyberduck-motsousecasethongthuong"></a>
 
-**Create a new container**
+**Create a new bucket**
 
 1. **On the Cyberduck** main screen , right-click on the blank page area and select **New Folder.** Or you can press **Ctrl + Shift + N.**
-2. Enter a **container** name . The container name you enter must comply with our regulations. For details, please refer to [Container Limits .](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/pham-vi-gioi-han-container)
+2. Enter a **bucket** name . The bucket name you enter must comply with our regulations. For details, please refer to [Container Limits .](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-bucket/pham-vi-gioi-han-bucket)
 
 <figure><img src="../../../../../.gitbook/assets/image (429).png" alt=""><figcaption></figcaption></figure>
 
-**Upload files to a container**
+**Upload files to a bucket**
 
-1. **On the Cyberduck** main screen , select **the container** you want to upload the file to.
+1. **On the Cyberduck** main screen , select **the bucket** you want to upload the file to.
 2. Select **Upload** .
 3. Select a file or folder from your computer then select **Choose** .
 4. The file upload process begins. When the upload is complete, Cyberduck will notify you that the file was uploaded Successfully.
 
 <figure><img src="../../../../../.gitbook/assets/image (431).png" alt=""><figcaption></figcaption></figure>
 
-**Delete an object in a container**
+**Delete an object in a bucket**
 
-1. **On the Cyberduck** main screen , select **the container containing the object** you want to delete.
+1. **On the Cyberduck** main screen , select **the bucket containing the object** you want to delete.
 2. At the object you want to delete, right-click and then select **Delete** .
 
 <figure><img src="../../../../../.gitbook/assets/image (433).png" alt=""><figcaption></figcaption></figure>
@@ -33,7 +33,7 @@
 
 **Share objects via Presigned URL**
 
-1. **On the Cyberduck** main screen , select **the container containing the object** you want to share via Presigned URL.
+1. **On the Cyberduck** main screen , select **the bucket containing the object** you want to share via Presigned URL.
 2. At the object you want to share, right-click then select **Copy URL** if you want to copy the Presign URL or select **Open URL** if you want to open the Presign URL directly on the browser.
 3. Select one of the methods for **Presign URL** that you want.
 

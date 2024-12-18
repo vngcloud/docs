@@ -23,7 +23,7 @@ Bên dưới là danh sách các ngôn ngữ, thư viện và phiên bản (vers
 
 a. **Thiết lập cho hướng dẫn này**: Chứa các hướng dẫn về cài đặt và kết nối the**o ngôn ngữ và thư viện mà bạn chọn.**
 
-b. **Viết code**: Chứa mã nguồn tích hợp cho từng tính năng khi **Làm việc với container** và **Làm việc với object** theo **ngôn ngữ** và **thư viện** mà bạn chọn.
+b. **Viết code**: Chứa mã nguồn tích hợp cho từng tính năng khi **Làm việc với bucket** và **Làm việc với object** theo **ngôn ngữ** và **thư viện** mà bạn chọn.
 
 c. **Build và deployment**: Chứa hướng dẫn xây dựng và khởi chạy S3 SDK theo **ngôn ngữ** và **thư viện** mà bạn chọn.
 

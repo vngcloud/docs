@@ -21,7 +21,7 @@ Below is a list of languages, libraries and their corresponding versions that we
 
 a. **Setup for this guide** : Contains instructions for installation and connection in **the language and library of your choice.**
 
-b. **Write code** : Contains integrated source code for each feature when **Working with containers** and **Working with objects** in **the language** and **library** of your choice.
+b. **Write code** : Contains integrated source code for each feature when **Working with buckets** and **Working with objects** in **the language** and **library** of your choice.
 
 c. **Build and deployment** : Contains instructions for building and launching the S3 SDK in **the language** and **libraries** of your choice.
 
