@@ -22,7 +22,7 @@ The Certificate Manager supports uploading and managing two types of certificate
 
        * **Private Key:** Paste the private key of the certificate (usually with the \*.key extension) in PEM format.
 
-       &#x20;![](<../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+       &#x20;![](<../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
        * **Certificate Chain:** Paste the certificate chain, including the server certificate and any intermediate certificates (if applicable), in PEM format.
          *   **Important:** Ensure the chain is in the correct order:

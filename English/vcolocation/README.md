@@ -12,7 +12,7 @@ The vColo Customer Portal is an automated data center space rental management pl
 
 ***
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Danh sách tính năng <a href="#vcolocation-danhsachtinhnang" id="vcolocation-danhsachtinhnang"></a>
 

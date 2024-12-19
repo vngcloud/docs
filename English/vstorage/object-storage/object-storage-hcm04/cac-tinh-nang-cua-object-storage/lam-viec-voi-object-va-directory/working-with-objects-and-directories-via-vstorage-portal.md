@@ -27,7 +27,7 @@ To download one or more objects, please follow the steps below:
 2. Select the **objects** you want to download.
 3. Select the action icon, then select the **Download button**
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Search object/folder <a href="#tim-kiem-object-folder" id="tim-kiem-object-folder"></a>
 
