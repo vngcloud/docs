@@ -43,14 +43,14 @@ layout:
 * **Remote Private CIDR**:  Điền Dải địa chỉ IP LAN của server OnPremise pfsense.
 * Tùy chọn **Pre-shared Key**: Là mật khẩu, keys mà VPN VNGCloud và Remote VPN OnPremise(Ví dụ: PFsense) sẽ dùng để auth cho nhau (Pre-shared Key – PSK phải giống nhau trên cả 2 bên). _Nếu không tích chọn_  _**"Used Your Pre-shared Key"** hệ thống sẽ tự sinh ra PSK_
 
-<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>VPN Basic Configuration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption><p>VPN Basic Configuration</p></figcaption></figure>
 
 * Bên cạnh đó có mục <mark style="color:blue;">**Cấu hình thuật toán**</mark> cho kết nới VPN, được thiết lập với hai cấu hình chính được thiết lập mặc định. Các cấu hình IPSEC hỗ trợ có thểm xem [tại đây](cac-cau-hinh-ho-tro.md)
   * &#x20;**IKE Policy**: Cấu hình các config cho phase 1 của VPN IPSEC (Config tại 2 bên phải trùng nhau thì VPN mới hoạt động).
   * **IPsec Policy**: Cấu hình các config cho phase 2 của VPN IPSEC (Config tại 2 bên phải trùng nhau thì VPN mới hoạt động).
 * Tại bên phải màn hình, xem tổng chi phí gói VPN đã chọn, sau đó nhấn chọn <mark style="color:blue;">**"Tạo mới kết nối VPN"**</mark> đề xác nhận và tiến hành thanh toán;
 
-<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p>VPN Tunnel Configuration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption><p>VPN Tunnel Configuration</p></figcaption></figure>
 
 _-> Sau khi thanh toán thành công, hệ thống sẽ xử lý kết nối thành công tuyến VPN vừa tạo và chuyển về màn hình danh sách VPN_ [_https://hcm-3-vnetwork.console.vngcloud.vn/vpn/list_](https://hcm-3-vnetwork.console.vngcloud.vn/vpn/list)
 
@@ -66,11 +66,11 @@ _-> Sau khi thanh toán thành công, hệ thống sẽ xử lý kết nối th�
 
 ## **Bước 3:** Kiểm tra lại thông tin VPN vừa tạo, bằng cách click vào VPN để chuyển qua trang Detail.
 
-<figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p>VPN Detail - Local Configuration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption><p>VPN Detail - Local Configuration</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption><p>VPN Detail - Default Tunnel</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption><p>VPN Detail - Default Tunnel</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption><p>VPN Detail - Tags</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption><p>VPN Detail - Tags</p></figcaption></figure>
 
 ## **Bước 4:** Tạo Route Rule để điều hướng các request đến Remote LAN CIDR đi qua VPN thông qua **Private Gateway IP** _(Detail Page)._
 
@@ -79,7 +79,7 @@ Truy cập vServer Router Tables để  thêm cấu hình điều hướng đế
 * Destination: Remote Private CIDR.
 * Target: Local Private Gateway.
 
-<figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption><p>VPN Detail - VPN Gateway</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption><p>VPN Detail - VPN Gateway</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (3) (5).png" alt=""><figcaption><p>Update Route Table</p></figcaption></figure>
 

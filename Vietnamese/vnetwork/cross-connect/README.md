@@ -28,7 +28,7 @@ Thực hiện việc tạo Cross Connect 1 để tạo tuyền kết nối giữ
 * HCM-VPC01 kết nối với HAN-VPC02;
 * HCM-VPC02 kết nối với HAN-VPC02;
 
-<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sơ đồ kết nối cơ bản của một tuyền Cross Connect giữa HCM03 và HAN01</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sơ đồ kết nối cơ bản của một tuyền Cross Connect giữa HCM03 và HAN01</p></figcaption></figure>
 
 ***
 

@@ -8,7 +8,7 @@ Tính năng **Tự động Redirect từ HTTP sang HTTPS** là một giải phá
 
 Khi khởi tạo một Web Accelerator, bạn có thể cấu hình tự động Redirect từ HTTP qua HTTPS thông qua:
 
-<figure><img src="../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Trong đó:&#x20;
 
