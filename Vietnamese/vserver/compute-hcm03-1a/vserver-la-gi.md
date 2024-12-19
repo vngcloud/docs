@@ -2,7 +2,7 @@
 
 vServer - VNG Cloud Service là dịch vụ máy chủ ảo do VNG cung cấp cho phép bạn dễ dàng triển khai tất cả các loại máy chủ với hiệu suất cao bao gồm các ứng dụng, dịch vụ và dữ liệu lưu trữ từ xa cho máy tính một cách nhanh chóng trên môi trường điện toán đám mây, giúp đáp ứng mọi nhu cầu của khách hàng mà không cần phải đầu tư trước vào phần cứng. Máy chủ đám mây cũng rất linh hoạt ở chỗ chúng có thể mở rộng và được thiết lập dễ dàng chỉ trong vài phút, ngoài ra chúng tôi còn cung cấp các dịch vụ và công cụ tiên tiến khác như VPC (Virtual Private Cloud), vLB (LoadBalancing as a service), Cloud Firewall (sử dụng vSRX của Juniper), vContainer, vBackup ... để hỗ trợ người dùng một cách tối ưu nhất.
 
-<figure><img src="../../.gitbook/assets/image (772).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (876).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
