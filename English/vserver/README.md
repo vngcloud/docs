@@ -2,7 +2,7 @@
 
 ## Overview
 
-vServer is a virtual server service provided by VNG Cloud. vServer allows for the easy creation of server types such as High Performance and GPU, quickly meeting all customer needs. Additionally, vServer offers services and tools to enhance operational quality, such as vVPC (Virtual Private Cloud), vLB (Load Balancing as a Service), vAS (Autoscaling), Cloud Firewall (using Juniper's vSRX), and more.
+vServer is a virtual server service provided by VNG Cloud. vServer allows for the easy creation of server types such as High Performance and GPU, quickly meeting all customer needs. Additionally, vServer offers services and tools to enhance operational quality, such as vVPC (Virtual Private Cloud), vLB (Load Balancing as a Service), Cloud Firewall (using Juniper's vSRX), and more.
 
 _**View the quick start guide for creating a server with vServer here:**_
 
@@ -19,13 +19,17 @@ _**View the quick start guide for creating a server with vServer here:**_
 
 ### Services supported in Region HAN-01:
 
-1/ Compute: Create/resize VMs
+1/ Network: Create VPC, Floating IP, External Interface, Security Groups, Virtual IP Addresses, Route Tables, Peering, Interconnects, Network ACL
 
-2/ BlockStore: Create Volumes, Images, Backups, Snapshots
+2/ Server: Create VMs, Placement Groups, SSH Keys, System Images, Flavors List
 
-3/ Load Balancing: Load Balancers
+3/ BlockStore: Create Volumes, list of Volume types, Images, Backups, Snapshots
 
-4/ Virtual Network: Network ACL, Network Interfaces, Route Tables, Security Groups, Floating IPs, VIP (Virtual IP Address), VPC Peering, Interconnects
+4/ Load Balancing: Create Load Balancer, list of LB Packages, and upload certificates
+
+5/ Container: VKS
+
+6/ Other Services: Billings
 
 ***
 
@@ -41,7 +45,7 @@ _**View the quick start guide for creating a server with vServer here:**_
 
 4/ Load Balancing: Create Load Balancer, list of LB Packages, and upload certificates
 
-5/ Container: Create Kubernetes Clusters, list of Persistent Volumes
+5/ Container: VKS
 
-6/ Other Services: Container Registry, Auto Scales, Billings
+6/ Other Services: Container Registry, Billings
 
