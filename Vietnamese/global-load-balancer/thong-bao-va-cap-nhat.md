@@ -29,5 +29,5 @@ Trong khi Load Balancer truyền thống chỉ tập trung vào việc phân ph�
 
 4. **Tài liệu hướng dẫn sử dụng**
 
-* Bắt đầu với GLB
+* [Bắt đầu với GLB](network-glb/bat-dau-voi-network-glb.md)
 
