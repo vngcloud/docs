@@ -14,19 +14,22 @@ Chức năng Bộ tùy chọn **DHCP** (Dynamic Host Configuration Protocol) hay
 {% hint style="info" %}
 **Lưu ý:**
 
-Sau khi cấu hình DNS cho máy ảo VM xong, để làm mới việc sử dụng DHCP trên VM, bạn có thể thực hiện bằng cách khởi động lại VM (restart), hoặc chủ động chạy câu lệnh sau để thực hiện:
+Sau khi cấu hình DNS cho máy ảo VM xong, để làm mới việc sử dụng DHCP trên VM, các VM cần các <mark style="background-color:orange;">enable dhcp:true trong network config</mark>, sau đó, bạn có thể thao tác cập nhật dhcp theo 2 cách:
+
+**Cách 1: Khởi động lại VM (restart)**
+
+**Cách 2: Chủ động chạy câu lệnh sau để thực hiện:**
 
 * **Với máy chủ Linux**: gõ các lệnh sau
 
 ```bash
-ip link set eth0 down;ip link set eth0 up
 sudo dhclient -r && sudo dhclient
 resolvectl status
 ```
 
-_Ghi chú: eth0 là card mặc định, nếu bạn tùy chỉnh qua interface khác thì trước khi chạy các lệnh trên, chạy lệnh sudo trước và thay thế cho đúng giá trị._
+_Ghi chú: eth0 là card mặc định, nếu bạn tùy chỉnh qua interface khác thì lưu ý thay thế cho đúng card._
 
-* **Với máy chủ Windows Server**: gõ câu lệnh&#x20;
+* &#x20;**Với máy chủ Windows Server**: gõ câu lệnh
 
 ```bash
 ipconfig /renew
