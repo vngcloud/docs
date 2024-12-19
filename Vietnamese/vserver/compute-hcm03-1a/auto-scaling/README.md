@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Auto Scaling
 
 Auto-scaling là dịch vụ tự động tăng thêm hoặc giảm bớt (scale) máy chủ (VM) theo điều kiện do user đặt ra. Auto-scaling đảm bảo tính sẵn sàng cao của hệ thống mà vẫn tối ưu chi phí &#x20;
