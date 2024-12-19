@@ -8,7 +8,7 @@
 
 **Bước 2:** Chọn mục **File Storage** sau đó chọn **Create a File storage**.
 
-<figure><img src="../../../../.gitbook/assets/image (818).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (818).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Tại màn hình khởi tạo File Storage, bạn cần nhập/ chọn:&#x20;
 

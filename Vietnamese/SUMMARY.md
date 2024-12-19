@@ -453,7 +453,7 @@
         * [Khởi tạo một Private SMB File Storage không có Active Directory](vstorage/filestorage/bat-dau-voi-filestorage/khoi-tao-mot-private-smb-file-storage-coming-soon/khoi-tao-mot-private-smb-file-storage-khong-co-active-directory.md)
         * [Khởi tạo một Private SMB File Storage có Active Directory](vstorage/filestorage/bat-dau-voi-filestorage/khoi-tao-mot-private-smb-file-storage-coming-soon/khoi-tao-mot-private-smb-file-storage-co-active-directory.md)
     * [Các tính năng của FileStorage](vstorage/filestorage/cac-tinh-nang-cua-filestorage/README.md)
-      * [Khởi tạo File Storage](vstorage/filestorage/cac-tinh-nang-cua-filestorage/khoi-tao-tai-nguyen/README.md)
+      * [Khởi tạo File Storage](vstorage/filestorage/cac-tinh-nang-cua-filestorage/khoi-tao-tai-nguyen.md)
         * [Khởi tạo File Storage NFS](vstorage/filestorage/cac-tinh-nang-cua-filestorage/khoi-tao-tai-nguyen/khoi-tao-file-storage-nfs.md)
         * [Khởi tạo SMB File Storage không có AD](vstorage/filestorage/cac-tinh-nang-cua-filestorage/khoi-tao-tai-nguyen/khoi-tao-smb-file-storage-khong-co-ad.md)
         * [Khởi tạo SMB File Storage có AD](vstorage/filestorage/cac-tinh-nang-cua-filestorage/khoi-tao-tai-nguyen/khoi-tao-smb-file-storage-co-ad.md)
