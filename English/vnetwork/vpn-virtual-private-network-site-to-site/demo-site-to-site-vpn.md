@@ -11,7 +11,7 @@ Below is a demonstration of how to connect two LAN networks via the internet sec
 * Site A: VPC 10.1.0.0/16 with VPN server using PFsense of VNG Cloud Market Place.
 * Site B: VPC 10.200.0.0/16 with VPN server using VNG Cloud VPN Site-To-Site Service
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Demostration</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Demostration</p></figcaption></figure>
 
 ## 1.    Create a Remote Site VPN (using PFsense)
 
@@ -24,7 +24,7 @@ Below is a demonstration of how to connect two LAN networks via the internet sec
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>vMarket Placer - pfSense </p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Request Pfsense - Config Network</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Request Pfsense - Config Network</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Request Pfsense - Config Network</p></figcaption></figure>
 

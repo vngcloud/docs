@@ -46,7 +46,7 @@ To initialize a Cluster, follow the steps below:
 
 <table data-header-hidden><thead><tr><th width="205"></th><th></th><th></th></tr></thead><tbody><tr><td>Field</td><td>Meaning</td><td>Illustrative example</td></tr><tr><td><strong>VPC</strong></td><td>The IP address range that the Cluster nodes will use to communicate.</td><td>In the picture, we choose VPC with IP range <strong>10.111.0.0/16</strong> , corresponding to <strong>65536 IPs</strong></td></tr><tr><td><strong>Subnet</strong></td><td>A smaller IP address range belonging to the VPC. Each node in the Cluster will be assigned an IP from this Subnet. The Subnet must be within the IP range of the selected VPC.</td><td>In the picture, we choose Subnet with <strong>Primary IP range</strong> of <strong>10.111.0.0/24</strong> , corresponding to <strong>256 IPs</strong></td></tr><tr><td><strong>IP-IP encapsulation mode</strong></td><td>IP-IP encapsulation mode in VKS is Always</td><td><strong>In the figure, we select Always</strong> mode to always encapsulate packets.</td></tr><tr><td><strong>CIDR</strong></td><td>The virtual network range that the pods will use</td><td>In the picture, we choose the virtual network range as <code>172.16.0.0/16</code>. The pods will get IP from this IP range.</td></tr></tbody></table>
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**

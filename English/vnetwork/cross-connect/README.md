@@ -27,7 +27,7 @@ Perform the creation of Cross Connect 1 to establish a connection between the Ho
 * HCM-VPC01 connects with HAN-VPC02;
 * HCM-VPC02 connects with HAN-VPC02.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>A basic connection diagram of a Cross Connect link between HCM03 and HAN01.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>A basic connection diagram of a Cross Connect link between HCM03 and HAN01.</p></figcaption></figure>
 
 ***
 

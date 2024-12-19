@@ -70,7 +70,7 @@ To initialize a policy used to access File Storage resources, follow the steps b
 
 After you have completed the above 8 steps, the file storage policy has been created. Next, you need to assign it to your IAM User Account.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Attach IAM User Account with corresponding policy**
 

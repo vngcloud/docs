@@ -13,7 +13,7 @@
 
 b. For **IAM User Account** and **Service Account : you can get vStorage User ID** information in **Identity and Access Management**
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Continue to select **the Bucket** you want to perform ACLs setup.
 5. **Select the Action** icon and select **Set ACLs.**

@@ -4,8 +4,6 @@ vServer - VNG Cloud Service is a virtual server service provided by VNG that all
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-***
-
 ### **Main functions of vServer** <a href="#whatisvserver-mainfunctionsofvserver" id="whatisvserver-mainfunctionsofvserver"></a>
 
 vServer service provides you with leading solutions including:
