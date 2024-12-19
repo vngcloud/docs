@@ -26,7 +26,7 @@
       * [Migrate Instance](vserver/compute-hcm03-1a/instance/vng-clouds-virtual-server-migration-service.md)
       * [Compute Encryption Volume](vserver/compute-hcm03-1a/instance/compute-encryption-volume/README.md)
         * [Using Compute Encryption Volume](vserver/compute-hcm03-1a/instance/compute-encryption-volume/using-compute-encryption-volume.md)
-    * [Server Group](vserver/compute-hcm03-1a/server-group.md)
+    * [Placement Group](vserver/compute-hcm03-1a/server-group.md)
     * [Image](vserver/compute-hcm03-1a/image.md)
     * [Network](vserver/compute-hcm03-1a/vpc/README.md)
       * [Virtual Private Cloud (VPC)](vserver/compute-hcm03-1a/vpc/virtual-private-cloud-vpc.md)
