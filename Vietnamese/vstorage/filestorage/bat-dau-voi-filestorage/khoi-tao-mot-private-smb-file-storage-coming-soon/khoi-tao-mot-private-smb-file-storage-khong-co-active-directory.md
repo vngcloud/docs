@@ -69,6 +69,19 @@ Security Groups trên Windows server cần mở thêm các port sau để share 
 
 <figure><img src="../../../../.gitbook/assets/image (896).png" alt="" width="563"><figcaption></figcaption></figure>
 
+7. Ngoài ra, bạn cần đảm bảo Windows server của bạn đã có địa chỉ IP tĩnh, bạn có thể&#x20;
+   * **Kiểm tra và mở cấu hình mạng của VM bằng cách:**
+     * Truy cập **Control Panel > Network & Internet > Network Connections**.
+     * Chọn **Ethernet adapter**, nhấp chuột phải và chọn **Properties**.
+   * **Thiết lập địa chỉ IP tĩnh (Static IP):**
+     * Trong màn hình **Properties**, chọn **Internet Protocol Version 4 (TCP/IPv4)** rồi bấm nút **Properties**.
+     * Chọn **Use the following IP address** để thiết lập địa chỉ IP tĩnh.
+     * Cung cấp thông tin địa chỉ:
+       * **IP Address:** địa chỉ fix IP của VM.
+       * **Subnet Mask:** Subnet tương ứng, ví dụ: 255.255.255.0
+
+<figure><img src="../../../../.gitbook/assets/image (915).png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ## Khởi tạo File Storage
