@@ -2,7 +2,7 @@
 
 ## Tổng quan
 
-vServer là dịch vụ cung cấp máy chủ ảo được cung cấp bởi VNG Cloud. vServer cho phép dễ dàng khởi tạo các dòng Server như High Performance, GPU đáp ứng nhanh chóng mọi nhu cầu của khách hàng. Ngoài ra, vServer còn cung cấp các dịch vụ, công cụ hỗ trợ nâng cao chất lượng hoạt động như vVPC (Virtual Private Cloud), vLB (Load balancing as a services), vAS (Autoscaling), Cloud Firewall (Sử dụng vSRX của Juniper),...
+vServer là dịch vụ cung cấp máy chủ ảo được cung cấp bởi VNG Cloud. vServer cho phép dễ dàng khởi tạo các dòng Server như High Performance, GPU đáp ứng nhanh chóng mọi nhu cầu của khách hàng. Ngoài ra, vServer còn cung cấp các dịch vụ, công cụ hỗ trợ nâng cao chất lượng hoạt động như vVPC (Virtual Private Cloud), vLB (Load balancing as a services), Cloud Firewall (Sử dụng vSRX của Juniper),...
 
 _**Xem hướng dẫn khởi tạo máy chủ nhanh chống với vServer tại đây:**_
 
@@ -19,13 +19,17 @@ _**Xem hướng dẫn khởi tạo máy chủ nhanh chống với vServer tại 
 
 ### Các dịch vụ được hỗ trợ trên Region HAN-01:
 
-1/ Compute: Khởi tạo/resize VM;
+1/ Network: Tạo VPC, Floating IP, External Interface, Security Groups, Virtual IP Addresses, Route tables, Peering, Interconnects, Network ACL;
 
-2/ BlockStore: Khởi tạo Volume, Image, Backups, Snapshots;
+2/ Server: Tạo VM, Placement Groups, SSH Keys, System Images, Danh sách các Flavors;
 
-3/ Load Balancing: Load Balancers;
+3/ BlockStore: Tạo Volumes, danh sách các loại Volumes và các Images, Backups, Snapshots;
 
-4/ Virtual network: Network ACL, Network Interfaces, Route tables, Security Groups, Floating IPs, VIP (virtual IP address), VPC Peering, Interconnects;
+4/ Load Balancing: Tạo Load Balancer, danh sách các LB Packages và tải lên chứng chỉ;
+
+5/ Container: VKS
+
+6/ Các dịch vụ khác như: Billings.
 
 ***
 
@@ -41,7 +45,7 @@ Các dịch vụ được hỗ trợ trên Region HCM-03:
 
 4/ Load Balancing: Tạo Load Balancer, danh sách các LB Packages và tải lên chứng chỉ;
 
-5/ Container: Tạo Kubernetes Clusters, danh sách các Persistent Vloumes;
+5/ Container: VKS
 
-6/ Các dịch vụ khác như: Container Registry, Auto Scales, Billings.
+6/ Các dịch vụ khác như: Container Registry, Billings.
 
