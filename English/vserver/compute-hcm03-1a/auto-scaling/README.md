@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Auto Scaling
 
 Auto-scaling is a service that automatically increases or decreases (scale) the server (VM) according to the conditions set by the user. Auto-scaling ensures high system availability while optimizing costs

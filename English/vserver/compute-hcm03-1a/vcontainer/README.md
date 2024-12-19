@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # vContainer
 
 Container service on VNG CLOUD is a Kubernetes-based service that ensures high efficiency for businesses by running container applications on the Cloud.
