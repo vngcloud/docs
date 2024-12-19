@@ -155,11 +155,7 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 
 <figure><img src="../../../../.gitbook/assets/image (11).png" alt="" width="509"><figcaption></figcaption></figure>
 
-5. Tại màn hình **Active Directory Zone Replication Scope:** chọn **To all DNS servers running on domain controllers in this domain: \<domainname>** sau đó chọn **Next**
-
-<figure><img src="../../../../.gitbook/assets/image (12).png" alt="" width="509"><figcaption></figcaption></figure>
-
-6. Tại màn hình **Zone Name**: nhập tên domain của bạn và chọn **Next**. Ví dụ: `example.local`.
+5. Tại màn hình **Zone Name**: nhập tên domain của bạn và chọn **Next**. Ví dụ: `example.local`.
 
 <figure><img src="../../../../.gitbook/assets/image (13).png" alt="" width="509"><figcaption></figcaption></figure>
 
