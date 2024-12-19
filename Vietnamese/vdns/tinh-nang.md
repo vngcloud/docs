@@ -15,7 +15,7 @@ vDNS là dịch vụ DNS được thiết kế đặc biệt cho môi trường 
 * Đây là bước tiên quyết để sử dụng các tính năng khác của vDNS trong VPC.
 
 {% hint style="info" %}
-**Lưu ý quan trọng:** Việc kích hoạt Private DNS _có thể dẫn đến việc thay đổi DHCP Option Set_ của các VM trong mạng. Do đó, sau khi kích hoạt, bạn _cần cập nhật DHCP_ cho các VM để chúng nhận được cấu hình DNS mới. Vui lòng tham khảo hướng dẫn cập nhật DHCP tại đây.
+**Lưu ý quan trọng:** Việc kích hoạt Private DNS _dẫn đến việc thay đổi DHCP Option Set_ của các VM trong mạng. Do đó, sau khi kích hoạt, bạn _cần cập nhật DHCP_ cho các VM để chúng nhận được cấu hình DNS mới. Vui lòng tham khảo hướng dẫn cập nhật DHCP [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vserver/compute-hcm03-1a/network/dhcp-options-sets#tong-quan).
 {% endhint %}
 
 ## **Tạo Hosted Zone**&#x20;
