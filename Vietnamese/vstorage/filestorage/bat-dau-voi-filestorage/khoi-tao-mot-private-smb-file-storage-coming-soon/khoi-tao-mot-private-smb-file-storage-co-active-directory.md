@@ -191,7 +191,30 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 
 <figure><img src="../../../../.gitbook/assets/image (18).png" alt="" width="349"><figcaption></figcaption></figure>
 
-12. Tạo **Reverse Loopup Zone: bạn có thể tạo một IPv4 Reserve Lookup Zone**&#x20;
+### Tạo một Reverse Lookup Zone
+
+Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển domain thành địa chỉ IP. Cụ thể các bước thực hiện như sau:
+
+1. Thực hiện mở **DNS Manager** bằng cách chọn **Tools**, sau đó chọn **DNS**
+
+<figure><img src="../../../../.gitbook/assets/image (917).png" alt="" width="336"><figcaption></figcaption></figure>
+
+1. Trong DNS Manager, chọn vào DNS đang có và tiếp tục nhấp chuột phải vào **Forward Lookup Zones** và chọn **New Zone**
+
+<figure><img src="../../../../.gitbook/assets/image (918).png" alt=""><figcaption></figcaption></figure>
+
+1. Màn hình Tạo zone mới hiển thị, tiếp tục chọn **Next**
+2. Tại màn hình **Zone Type**: chọn **Primary zone,** sau đó chọn **Next**
+3. Tại màn hình **Active Directory Zone Replication Scope:** chọn **To all DNS servers running on domain controllers in this domain: \<domainname>** sau đó chọn **Next**
+4. Tại màn hình **Zone Name**: nhập tên domain của bạn và chọn **Next**. Ví dụ: `example.local`.
+5. Tại màn hình **Dynamic Update**: Chọn **Do not allow dynamic updates**, sau đó chọn **Next**
+6. Chọn **Finish** để hoàn thành việc tạo New Zone
+7. Sau khi chọn **Finish**, bạn sẽ thấy forwarding lookup zone trên màn hình chính như hình
+8. Sau khi tạo zone, bạn cần thêm bản ghi cho **Domain Controller** bằng cách chọn vào **Zone** vừa tạo, nhần chuột phải và chọn **New Host (A or AAAA)**
+9. Tại màn hình **New Host,** bạn cần:
+   1. **Name**: Nhập tên Windows server của bạn (VD: `demo-smb`).
+   2. **IP Address**: Nhập địa chỉ IP tĩnh của Domain Controller (VD: `10.50.3.3`).
+   3. Nhấn **Add Host**.
 
 ### Kiểm tra DNS name&#x20;
 
