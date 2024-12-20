@@ -113,11 +113,11 @@ Cụ thể, vui lòng thực hiện theo các bước bên dưới:
 
 4. Tại trang **Installation Type**: Chọn **Role-based or feature-based installation** sau đó chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5. Tại mục **Server Selection**: bạn chọn **Select a server from the server pool** và **chọn server hiện tại** sau đó chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. Tại mục **Server Roles**: Tick chọn **DNS Server** sau đó nhấn **Next** và **Install** để cài đặt.
 
@@ -159,6 +159,10 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 
 <figure><img src="../../../../.gitbook/assets/image (13).png" alt="" width="509"><figcaption></figcaption></figure>
 
+6. Tại màn hình **Zone File**, chọn **Next**
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 7. Tại màn hình **Dynamic Update**: Chọn **Do not allow dynamic updates**, sau đó chọn **Next**
 
 <figure><img src="../../../../.gitbook/assets/image (14).png" alt="" width="509"><figcaption></figcaption></figure>
@@ -181,7 +185,13 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 * **IP Address**: Nhập địa chỉ IP tĩnh của Domain Controller (VD: `10.50.3.3`).
 * Nhấn **Add Host**.
 
+11. Nếu bạn chọn **Create associated pointer (PTR) record**, bạn cần phải tạo một **Reverse Loopup Zone**, các bước khởi tạo tương tự tạo **Forward Lookup Zone**.
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="../../../../.gitbook/assets/image (18).png" alt="" width="349"><figcaption></figcaption></figure>
+
+12. Tạo **Reverse Loopup Zone: bạn có thể tạo một IPv4 Reserve Lookup Zone**&#x20;
 
 ### Kiểm tra DNS name&#x20;
 
@@ -224,7 +234,7 @@ nsloopup demo_windows_server.example.local
 
 5. Tại mục **Server Selection**: bạn chọn **Select a server from the server pool** và **chọn server hiện tại** sau đó chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. Tại mục **Server Roles**: Tick chọn **Active Directory Domain Services.**
 
