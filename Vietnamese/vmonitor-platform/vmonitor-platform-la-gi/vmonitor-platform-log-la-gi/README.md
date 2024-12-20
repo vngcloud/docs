@@ -14,7 +14,7 @@ vMonitor Platform Log là dịch vụ giúp thu thập dữ liệu Log của má
 * Bảo mật toàn diện & độ tin cậy cao: vMonitor Log đảm bảo các log của doanh nghiệp không mất theo thời gian hoặc bị sử dụng bởi những người dùng không có quyền. Hệ thống vMonitor Log đi kèm với các tuỳ chọn kiểm soát truy cập cho mỗi người dùng, chức năng sao lưu tự động và lưu trữ các dữ liệu lịch sử, doanh nghiệp có thể tìm thấy log cần, ngay cả khi log đó không còn ở nguồn ban đầu, chỉ cần có quyền truy cập phù hợp.
 * Tối ưu hoá phân tích dữ liệu: vMonitor Log cho phép doanh nghiệp phân tích dữ liệu tốt hơn với nhiều lực chọn trực quan, giúp doanh nghiệp hiểu rõ xu hướng, đảm bảo tuân thủ SLA cũng như xác định và giải các sự cố một các hiệu quả hơn.
 
-<figure><img src="../../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

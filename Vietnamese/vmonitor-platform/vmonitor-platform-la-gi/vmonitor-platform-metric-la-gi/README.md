@@ -2,7 +2,7 @@
 
 vMonitor Platform Metric là dịch vụ giúp liên tục giám sát hiệu suất của tất cả tài nguyên trên hệ thống của doanh nghiệp theo thời gian thực. vMonitor Platform Metric được xây dựng dành cho người dùng, nhà phát triển, kĩ sư vận hành hay nhà quản lý IT nhằm mục đích theo dõi những tài nguyên trên hạ tầng Cloud của VNG Cloud hay bất cứ nơi nào khác. vMonitor Platform Metric mang lại bức tranh thống nhất về sức khoẻ hệ thống, cho phép thu thập những số liệu, thông tin để phục vụ mục đích theo dõi, tối ưu hoá hệ thống, thiết lập cảnh báo và thông báo khi có sự cố xảy ra.
 
-<figure><img src="../../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

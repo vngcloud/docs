@@ -17,7 +17,7 @@ Với VNG Cloud, chúng tôi hiện tại cung cấp 4 gói băng thông cho kh�
 
 * **Dedicated**: Gói băng thông với tốc độ tùy chọn của riêng bạn. Với gói này, chúng tôi cam kết và đảm bảo chất lượng dịch vụ cho khách hàng với dung lượng theo yêu cầu. **Gói này phù hợp cho các doanh nghiệp hoặc dự án cần băng thông lớn và ổn định, ví dụ như các trang web có lượng truy cập cao, các ứng dụng đòi hỏi kết nối mạng nhanh và liên tục, hoặc các dịch vụ trực tuyến cần đảm bảo chất lượng trải nghiệm người dùng.**
 
-<figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**

@@ -192,4 +192,4 @@ CORS (Cross-Origin Resource Sharing) là cơ chế bảo mật cho phép các tr
 
 Kể từ thời điểm S3 key bị hủy thành công, bạn sẽ không thể sử dụng S3 key này để truy xuất vào vStorage. Hãy thận trọng khi thực hiện thao tác hủy (xóa) tài khoản S3 bởi bạn sẽ không thể khôi phục tài khoản đã xóa này.
 
-<figure><img src="../../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>

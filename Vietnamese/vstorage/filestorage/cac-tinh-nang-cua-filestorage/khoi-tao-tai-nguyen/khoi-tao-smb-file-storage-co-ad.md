@@ -43,11 +43,11 @@ Cụ thể, vui lòng thực hiện theo các bước bên dưới:
 
 8. Tại trang **Confirmation**, kiểm tra lại các lựa chọn của bạn và nhấn Install để bắt đầu cài đặt DNS Server
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 9. Sau khi việc cài đặt hoàn tất, bạn hãy nhấn **Close**.
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Tạo một Forward Lookup Zone&#x20;
 
@@ -55,43 +55,43 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 
 1. Thực hiện mở **DNS Manager** bằng cách chọn **Tools**, sau đó chọn **DNS**
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt="" width="336"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt="" width="336"><figcaption></figcaption></figure>
 
 2. Trong DNS Manager, chọn vào DNS đang có và tiếp tục nhấp chuột phải vào **Forward Lookup Zones** và chọn **New Zone**
 
-<figure><img src="../../../../.gitbook/assets/image (8).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 3. Màn hình Tạo zone mới hiển thị, tiếp tục chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (9).png" alt="" width="514"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (6).png" alt="" width="514"><figcaption></figcaption></figure>
 
 4. Tại màn hình **Zone Type**: chọn **Primary zone,** sau đó chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (11).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (4).png" alt="" width="509"><figcaption></figcaption></figure>
 
 5. Tại màn hình **Active Directory Zone Replication Scope:** chọn **To all DNS servers running on domain controllers in this domain: \<domainname>** sau đó chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (12).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (4).png" alt="" width="509"><figcaption></figcaption></figure>
 
 6. Tại màn hình **Zone Name**: nhập tên domain của bạn và chọn **Next**. Ví dụ: `example.local`.
 
-<figure><img src="../../../../.gitbook/assets/image (13).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (4).png" alt="" width="509"><figcaption></figcaption></figure>
 
 7. Tại màn hình **Dynamic Update**: Chọn **Do not allow dynamic updates**, sau đó chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (14).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (3).png" alt="" width="509"><figcaption></figcaption></figure>
 
 8. Chọn **Finish** để hoàn thành việc tạo New Zone
 
-<figure><img src="../../../../.gitbook/assets/image (15).png" alt="" width="508"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (3).png" alt="" width="508"><figcaption></figcaption></figure>
 
 9. Sau khi chọn **Finish**, bạn sẽ thấy forwarding lookup zone trên màn hình chính như hình
 
-<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16) (2).png" alt=""><figcaption></figcaption></figure>
 
 10. Sau khi tạo zone, bạn cần thêm bản ghi cho **Domain Controller** bằng cách chọn vào **Zone** vừa tạo, nhần chuột phải và chọn **New Host (A or AAAA)**
 
-<figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17) (2).png" alt=""><figcaption></figcaption></figure>
 
 11. Tại màn hình **New Host,** bạn cần:
 
@@ -99,7 +99,7 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 * **IP Address**: Nhập địa chỉ IP tĩnh của Domain Controller (VD: `10.50.3.3`).
 * Nhấn **Add Host**.
 
-<figure><img src="../../../../.gitbook/assets/image (18).png" alt="" width="349"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18) (2).png" alt="" width="349"><figcaption></figcaption></figure>
 
 ### Kiểm tra DNS name&#x20;
 
@@ -115,13 +115,13 @@ Ví dụ:&#x20;
 nslookup example.local
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (19).png" alt="" width="234"><figcaption><p><br></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (2).png" alt="" width="234"><figcaption><p><br></p></figcaption></figure>
 
 ```bash
 nsloopup demo_windows_server.example.local
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (20).png" alt="" width="377"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (20) (2).png" alt="" width="377"><figcaption></figcaption></figure>
 
 ### Cài đặt và cấu hình Active Directory Domain Services
 
@@ -221,7 +221,7 @@ nsloopup demo_windows_server.example.local
 * **Protocol:** chọn NFS và version NFS mà bạn mong muốn
 * **Tag:** bạn có thể thêm các tag để đánh dầu file storage theo nhu cầu.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 * **File Storage Max quota:** trong bước khởi tạo file storage, bạn cần đặt một giới hạn quota tối đa cho file storage đó. Quota này có ý nghĩa chính là giới hạn dung lượng lưu trữ mà file storage có thể sử dụng, giúp quản lý tài nguyên hiệu quả. <mark style="color:red;">**Mức quota tối thiểu bạn cần chọn là 1 TB và mức quota tối đa chúng tôi cung cấp là 50 TB.**</mark> Nếu bạn có nhu cấu sử dụng nhiều hơn 50 TB cho một file storage, vui lòng liên hệ với chúng tôi.
 * **Network type**: đối với loại file SMB, network type bắt buộc phải là Private. Lúc này, bạn cần chọn **VPC**, **Subnet** mà bạn đã khởi tạo từ vServer Portal.
@@ -236,7 +236,7 @@ nsloopup demo_windows_server.example.local
     * **Password**: Mật khẩu bạn đã tạo bên trên, ví dụ: 123456789aA@
     * **Confirm Password:** Xác nhận mật khẩu, ví dụ: 123456789aA@
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Chọn **Create File Storage.**
 

@@ -79,7 +79,7 @@ Sau khi bạn đã khởi tạo IAM User Account và Policy mong muốn, tiếp 
 4. Tiếp tục chọn **Bucket** bạn muốn thực hiện phân quyền cho IAM User Account.
 5. Chọn biểu tượng **Action** và chọn **Configure policy.**
 
-<figure><img src="../../../../.gitbook/assets/image (868).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (868) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Tại đây, bạn có thể chọn cấu hình cho từng **Statement** ở bên trái hoặc trực tiếp chỉnh sửa file JSON ở cột bên phải. Cụ thể cấu trúc một Bucket Policy bao gồm:
 

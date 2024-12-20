@@ -1,6 +1,6 @@
 # Khởi tạo một Private SMB File Storage có Active Directory
 
-&#x20;khởi tạo một SMB (Server Message Block) trên hệ thống File Storage, bạn có thể làm theo các bước sau:
+&#x20;Để khởi tạo một SMB (Server Message Block) trên hệ thống File Storage, bạn có thể làm theo các bước sau:
 
 ## Khởi tạo Windows server on vServer
 
@@ -29,7 +29,7 @@ Trước khi có thể thực hiện khởi tạo Windows server, hãy đảm b�
 13. Ở mục **Other Settings**, có thể tùy chọn server Group hoặc không theo nhu cầu sử dụng. Bạn có thể gán Server vào các Group trước đó đã tạo (Với các thuộc tính như cùng Compute Host hay khác Compute Host)
 14. Chọn **Launch Server** và thực hiện các bước thanh toán để hoàn thành việc khởi tạo server
 
-<img src="../../../../.gitbook/assets/image (21).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (21) (2).png" alt="" data-size="original">
 
 </details>
 
@@ -47,46 +47,54 @@ Security Groups trên Windows server cần mở thêm các port sau để share 
 
 ## Kết nối tới Windows server vừa khởi tạo
 
+Dưới đây là hướng dẫn cơ bản cho việc kết nối tới Windows server trên vServer, nếu bạn đã sử dụng Console trực tiếp trên vServer Portal, vui lòng bỏ qua bước này.
+
+<details>
+
+<summary>Kết nối tới Windows server </summary>
+
 **Để có thể kết nối vào máy chủ Window, trước tiên, bạn cần cài đặt RDP:** Theo mặc định, Windows sẽ bao gồm RDP Client. Để xác minh, hãy nhập **mstsc** tại cửa sổ Command Prompt. Nếu máy tính của bạn không nhận ra lệnh này, hãy xem trang chủ Windows và tìm kiếm bản tải xuống cho ứng dụng[ Microsoft Remote Desktop](https://www.microsoft.com/vi-vn/windows).
 
 1. Truy cập vào trang quản lý Server tại trình điều khiển của chúng tôi tại: [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)
 2. Chọn **Server** cần kết nối, sau đó chọn **Action, tiếp tục chọn Connect**
 3. Trên trang **Connect to Server**, chọn tab **RDP (Window)**
 
-<figure><img src="../../../../.gitbook/assets/image (894).png" alt="" width="563"><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (894).png" alt="" data-size="original">
 
 4. Chọn **Download RDP File**. Trình duyệt của bạn sẽ nhắc bạn mở hoặc lưu tệp RDP. Khi bạn đã hoàn tất tải xuống tệp, hãy chọn **Done** để quay lại trang máy chủ:
 5. Thực hiện mở tệp tin đã tải xuống để thực hiện remote tới Windows server. Chọn **Connect** để tiếp tục kết nối với máy chủ của bạn
 
-<figure><img src="../../../../.gitbook/assets/image (895).png" alt="" width="537"><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (895).png" alt="" data-size="original">
 
 6. Tài khoản quản trị viên được chọn theo mặc định. Bạn cần sao chép và dán mật khẩu mà bạn đã lưu trước đó vào pop-up đăng nhập (Thông tin này lấy từ email), trong đó nhập thông tin **InstanceLogin** vào **Username**, **InstancePassword** vào **Password.**
 7. Chọn **OK.** Do tính chất của chứng chỉ tự ký, bạn có thể nhận được cảnh báo rằng chứng chỉ bảo mật không thể được xác thực. Sử dụng các bước sau để xác minh danh tính của máy tính từ xa hoặc chỉ cần chọn **Yes** (Windows) hoặc **Continue** (Mac OS X) nếu bạn tin cậy chứng chỉ.
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FNH1l2utiMi3RJxfBoknu%252Fimage.png%3Falt%3Dmedia%26token%3Db50838b8-d830-4273-a67f-6ccfe237ccf4&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f64057f4&#x26;sv=2" alt="" width="563"><figcaption></figcaption></figure>
+<img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FNH1l2utiMi3RJxfBoknu%252Fimage.png%3Falt%3Dmedia%26token%3Db50838b8-d830-4273-a67f-6ccfe237ccf4&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f64057f4&#x26;sv=2" alt="" data-size="original">
 
 8. Màn hình sẽ hiển thị đang kết nối đến máy chủ **Window** thành công
 
-<figure><img src="../../../../.gitbook/assets/image (896).png" alt="" width="563"><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (896).png" alt="" data-size="original">
 
-9. Ngoài ra, bạn cần đảm bảo Windows server của bạn đã có địa chỉ IP tĩnh, bạn có thể&#x20;
+</details>
 
-* **Kiểm tra và mở cấu hình mạng của VM bằng cách:**
+
+
+Sau khi bạn đã kết nối được vào Windows server, bạn cần đảm bảo Windows server của bạn đã có địa chỉ IP tĩnh, bạn có thể kiểm tra và cấu hình IP tĩnh theo hướng dẫn sau:&#x20;
+
+* **Kiểm tra cấu hình mạng của VM bằng cách:**
   * Truy cập **Control Panel > Network & Internet > Network Connections**.
   * Chọn **Ethernet adapter**, nhấp chuột phải và chọn **Properties**.
 * **Thiết lập địa chỉ IP tĩnh (Static IP):**
   * Trong màn hình **Properties**, chọn **Internet Protocol Version 4 (TCP/IPv4)** rồi bấm nút **Properties**.
   * Chọn **Use the following IP address** để thiết lập địa chỉ IP tĩnh.
   * Cung cấp thông tin địa chỉ:
-    * **IP Address:** địa chỉ fix IP của VM.
-    * **Subnet Mask:** Subnet tương ứng, ví dụ: 255.255.255.0
-    * **Preferred DNS server:** địa chỉ IP của DNS Domain
+    * **IP Address:** địa chỉ IP tĩnh của VM.
+    * **Subnet Mask:** Subnet tương ứng, ví dụ: 255.0.0.0
+    * **Preferred DNS server:** địa chỉ IP của DNS Domain (thường cũng chính là địa chỉ IP tĩnh của VM)  (bạn có thể bổ sung sau khi đã khởi tạo DNS domain theo hướng dẫn bên dưới)
 
-<figure><img src="../../../../.gitbook/assets/image (916).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 ***
-
-
 
 ## Khởi tạo Active Directory trên Windows Server
 
@@ -94,6 +102,8 @@ Security Groups trên Windows server cần mở thêm các port sau để share 
 
 * **Cài đặt và cấu hình DNS Server**
 * **Tạo Forward Lookup Zone**
+* **Tạo Reverse Lookup Zone**
+* **Kiểm tra DNS Name**
 * **Cài đặt và cấu hình Active Directory**
 
 Cụ thể, vui lòng thực hiện theo các bước bên dưới:
@@ -117,7 +127,7 @@ Cụ thể, vui lòng thực hiện theo các bước bên dưới:
 
 5. Tại mục **Server Selection**: bạn chọn **Select a server from the server pool** và **chọn server hiện tại** sau đó chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. Tại mục **Server Roles**: Tick chọn **DNS Server** sau đó nhấn **Next** và **Install** để cài đặt.
 
@@ -129,11 +139,11 @@ Cụ thể, vui lòng thực hiện theo các bước bên dưới:
 
 8. Tại trang **Confirmation**, kiểm tra lại các lựa chọn của bạn và nhấn Install để bắt đầu cài đặt DNS Server
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 9. Sau khi việc cài đặt hoàn tất, bạn hãy nhấn **Close**.
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Tạo một Forward Lookup Zone&#x20;
 
@@ -141,80 +151,104 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 
 1. Thực hiện mở **DNS Manager** bằng cách chọn **Tools**, sau đó chọn **DNS**
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt="" width="336"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt="" width="336"><figcaption></figcaption></figure>
 
 2. Trong DNS Manager, chọn vào DNS đang có và tiếp tục nhấp chuột phải vào **Forward Lookup Zones** và chọn **New Zone**
 
-<figure><img src="../../../../.gitbook/assets/image (8).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 3. Màn hình Tạo zone mới hiển thị, tiếp tục chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (9).png" alt="" width="514"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (6).png" alt="" width="514"><figcaption></figcaption></figure>
 
 4. Tại màn hình **Zone Type**: chọn **Primary zone,** sau đó chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (11).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (4).png" alt="" width="509"><figcaption></figcaption></figure>
 
-5. Tại màn hình **Zone Name**: nhập tên domain của bạn và chọn **Next**. Ví dụ: `example.local`.
+5. Tại màn hình **Zone Name**: nhập tên domain của bạn và chọn **Next**. Ví dụ: `example.local`. <mark style="color:red;">**Hãy ghi nhớ domain này do đây chính là DNS domain bạn cần sử dụng để khởi tạo AD và nhập thông tin khi tạo File Storage trên hệ thống File Storage Portal.**</mark>
 
-<figure><img src="../../../../.gitbook/assets/image (13).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (4).png" alt="" width="509"><figcaption></figcaption></figure>
 
 6. Tại màn hình **Zone File**, chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 7. Tại màn hình **Dynamic Update**: Chọn **Do not allow dynamic updates**, sau đó chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (14).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (3).png" alt="" width="509"><figcaption></figcaption></figure>
 
 8. Chọn **Finish** để hoàn thành việc tạo New Zone
 
-<figure><img src="../../../../.gitbook/assets/image (15).png" alt="" width="508"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (3).png" alt="" width="508"><figcaption></figcaption></figure>
 
 9. Sau khi chọn **Finish**, bạn sẽ thấy forwarding lookup zone trên màn hình chính như hình
 
-<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16) (2).png" alt=""><figcaption></figcaption></figure>
 
 10. Sau khi tạo zone, bạn cần thêm bản ghi cho **Domain Controller** bằng cách chọn vào **Zone** vừa tạo, nhần chuột phải và chọn **New Host (A or AAAA)**
 
-<figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17) (2).png" alt=""><figcaption></figcaption></figure>
 
 11. Tại màn hình **New Host,** bạn cần:
 
 * **Name**: Nhập tên Windows server của bạn (VD: `demo-smb`).
-* **IP Address**: Nhập địa chỉ IP tĩnh của Domain Controller (VD: `10.50.3.3`).
+* **IP Address**: Nhập địa chỉ IP tĩnh của Domain Controller (VD: `10.50.3.9`).
 * Nhấn **Add Host**.
 
 11. Nếu bạn chọn **Create associated pointer (PTR) record**, bạn cần phải tạo một **Reverse Loopup Zone**, các bước khởi tạo tương tự tạo **Forward Lookup Zone**.
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/image (18).png" alt="" width="349"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 ### Tạo một Reverse Lookup Zone
 
-Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển domain thành địa chỉ IP. Cụ thể các bước thực hiện như sau:
+Tiếp theo, bạn sẽ cần tạo một Reverse Lookup Zone để chuyển IP thành domain. Cụ thể các bước thực hiện như sau:
 
 1. Thực hiện mở **DNS Manager** bằng cách chọn **Tools**, sau đó chọn **DNS**
 
 <figure><img src="../../../../.gitbook/assets/image (917).png" alt="" width="336"><figcaption></figcaption></figure>
 
-1. Trong DNS Manager, chọn vào DNS đang có và tiếp tục nhấp chuột phải vào **Forward Lookup Zones** và chọn **New Zone**
+2. Trong DNS Manager, chọn vào DNS đang có và tiếp tục nhấp chuột phải vào **Reverse Lookup Zones** và chọn **New Zone**
 
-<figure><img src="../../../../.gitbook/assets/image (918).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-1. Màn hình Tạo zone mới hiển thị, tiếp tục chọn **Next**
-2. Tại màn hình **Zone Type**: chọn **Primary zone,** sau đó chọn **Next**
-3. Tại màn hình **Active Directory Zone Replication Scope:** chọn **To all DNS servers running on domain controllers in this domain: \<domainname>** sau đó chọn **Next**
-4. Tại màn hình **Zone Name**: nhập tên domain của bạn và chọn **Next**. Ví dụ: `example.local`.
-5. Tại màn hình **Dynamic Update**: Chọn **Do not allow dynamic updates**, sau đó chọn **Next**
-6. Chọn **Finish** để hoàn thành việc tạo New Zone
-7. Sau khi chọn **Finish**, bạn sẽ thấy forwarding lookup zone trên màn hình chính như hình
-8. Sau khi tạo zone, bạn cần thêm bản ghi cho **Domain Controller** bằng cách chọn vào **Zone** vừa tạo, nhần chuột phải và chọn **New Host (A or AAAA)**
-9. Tại màn hình **New Host,** bạn cần:
-   1. **Name**: Nhập tên Windows server của bạn (VD: `demo-smb`).
-   2. **IP Address**: Nhập địa chỉ IP tĩnh của Domain Controller (VD: `10.50.3.3`).
-   3. Nhấn **Add Host**.
+3. Tại màn hình **Zone Type**: chọn **Primary zone,** sau đó chọn **Next**
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+4. Màn hình Tạo zone mới hiển thị, chọn **IPv4 Reverse Lookup Zone** tiếp tục chọn **Next**
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+5. Tại màn hình **Reverse Lookup Zone Name**: nhập Network ID, Network ID tại đây chính là subnet của IP mà bạn cần thực hiện reverse lookup và chọn **Next**. Ví dụ: `10.50.3`.
+
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+6. Tại màn hình **Zone File**, bạn có thể tạo Zone File mới hoặc chọn 1 Zone File đã có sẵn, sau đó chọn **Next**
+
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+7. Tại màn hình **Dynamic Update**: Chọn **Do not allow dynamic updates**, sau đó chọn **Next**
+
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+8. Chọn **Finish** để hoàn thành việc tạo New Zone
+
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+9. Sau khi chọn **Finish**, bạn sẽ thấy Reverse lookup zone trên màn hình chính như hình
+
+<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
+10. Sau khi tạo xong **reverse lookup zone**, bạn cần tạo **Pointer (PTR)** bằng cách chọn vào **Zone** vừa tạo, nhần chuột phải và chọn **New Pointer (PTR)**
+
+<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+11. Tại màn hình **New Resource Record,** bạn cần:
+    1. **Host IP Address**: Nhập địa chỉ IP tĩnh của Domain Controller (VD: `10.50.3.9`).
+    2. **Host Name:** Nhập tên Windows server của bạn (VD: `demo-smb`).
+    3. Nhấn **OK**.
+
+<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 ### Kiểm tra DNS name&#x20;
 
@@ -222,21 +256,32 @@ Trên Windows server của bạn, mở Command Prompt và chạy:
 
 ```bash
 nslookup <DNS Domain>
+hoặc
+nslookup <IP Address>
 ```
 
 Ví dụ:&#x20;
 
 ```bash
 nslookup example.local
+hoặc
+nslookup 10.50.3.9
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (19).png" alt="" width="234"><figcaption><p><br></p></figcaption></figure>
+Kết quả hiển thị ví dụ như sau:&#x20;
 
 ```bash
-nsloopup demo_windows_server.example.local
-```
+nslookup example.local
+---
+Server: demo-smb
+Address: 10.50.3.9
+Name: example.local
 
-<figure><img src="../../../../.gitbook/assets/image (20).png" alt="" width="377"><figcaption></figcaption></figure>
+nslookup 10.50.3.9
+---
+Server: demo-smb
+Address: 10.50.3.9
+```
 
 ### Cài đặt và cấu hình Active Directory Domain Services
 
@@ -257,11 +302,11 @@ nsloopup demo_windows_server.example.local
 
 5. Tại mục **Server Selection**: bạn chọn **Select a server from the server pool** và **chọn server hiện tại** sau đó chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. Tại mục **Server Roles**: Tick chọn **Active Directory Domain Services.**
 
-<figure><img src="../../../../.gitbook/assets/image (881).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18).png" alt="" width="563"><figcaption></figcaption></figure>
 
 7. Lúc này, bạn sẽ được nhắc thêm các tính năng cần thiết cho Active Directory, chọn **Add Features** nếu bạn đồng ý với các mặc định, sau đó chọn **Next**
 
@@ -284,7 +329,7 @@ nsloopup demo_windows_server.example.local
 
 <figure><img src="../../../../.gitbook/assets/image (885).png" alt="" width="563"><figcaption></figcaption></figure>
 
-13. Tại màn hình **Deployment Configuration**, bạn có thể chọn một domain nếu bạn đã có sắn hoặc chọn **Add a new forest** và nhập domain name để tạo mới domain sau đó chọn **Next**
+13. Tại màn hình **Deployment Configuration**, chọn **Add a new forest** sau đó nhập **DNS domain name** đã tạo (<mark style="color:red;">**chính là Zone name đã tạo tại bước Tạo một Forward Lookup Zone**</mark>) sau đó chọn **Next**
 
 <figure><img src="../../../../.gitbook/assets/image (887).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -296,7 +341,7 @@ nsloopup demo_windows_server.example.local
 
 <figure><img src="../../../../.gitbook/assets/image (889).png" alt="" width="563"><figcaption></figcaption></figure>
 
-16. Tại mục **Additional Options**, bạn hãy kiểm tra lại **NetBIOS name** và thay đổi nếu bạn thấy cần thiết sau đó chọn **Next**
+16. Tại mục **Additional Options**, bạn hãy kiểm tra lại **NetBIOS name** và thay đổi nếu bạn thấy cần thiết sau đó chọn **Next. NetBIOS domain name** là domain rút gọn của Root domain name,&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (890).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -336,7 +381,7 @@ nsloopup demo_windows_server.example.local
 * **Protocol:** chọn NFS và version NFS mà bạn mong muốn
 * **Tag:** bạn có thể thêm các tag để đánh dầu file storage theo nhu cầu.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 * **File Storage Max quota:** trong bước khởi tạo file storage, bạn cần đặt một giới hạn quota tối đa cho file storage đó. Quota này có ý nghĩa chính là giới hạn dung lượng lưu trữ mà file storage có thể sử dụng, giúp quản lý tài nguyên hiệu quả. <mark style="color:red;">**Mức quota tối thiểu bạn cần chọn là 1 TB và mức quota tối đa chúng tôi cung cấp là 50 TB.**</mark> Nếu bạn có nhu cấu sử dụng nhiều hơn 50 TB cho một file storage, vui lòng liên hệ với chúng tôi.
 * **Network type**: đối với loại file SMB, network type bắt buộc phải là Private. Lúc này, bạn cần chọn **VPC**, **Subnet** mà bạn đã khởi tạo từ vServer Portal.
@@ -345,15 +390,19 @@ nsloopup demo_windows_server.example.local
 
 * **Window Authentication: c**ấu hình quyền truy cập thông qua **Active Directory Authentication**
   * **Active Directory Authentication:** Nếu Windows server của bạn sử dụng Active Directory để quản lý người dùng và quyền truy cập, thì AD Authentication sẽ dễ dàng tích hợp và quản lý tập trung. Bạn có thể xác thực thông qua Active Directory domain name, DNS server IP addresses, Username, Password trên Active Directory của bạn. Ví dụ, ứng với Avtive Directory đã tạo bên trên, tôi sẽ nhập vào:
-    * **Active Directory domain name**: Domain bạn tạo bên trên, ví dụ: example.local
-    * **DNS server IP Address**: Địa chỉ IP DNS Server, ví dụ: 10.50.3.3
-    * **Username:** Tên tài khoản admin, ví dụ Administrator
-    * **Password**: Mật khẩu bạn đã tạo bên trên, ví dụ: 123456789aA@
-    * **Confirm Password:** Xác nhận mật khẩu, ví dụ: 123456789aA@
+    * **Active Directory domain name**: Chính là **Root domain name** bạn đã tạo ở bước **Cài đặt và cấu hình Active Directory Domain Services**. Ví dụ: `example.local`
+    * **DNS server IP Address**: Địa chỉ địa chỉ IP DNS Server, thường cũng chính là địa chỉ IP tĩnh của VM, ví dụ: `10.50.3.9.` Nếu bạn có 2 DNS IP, bạn có thể nhập theo mẫu `10.50.3.3,10.50.3.9`
+    * **Username:** Tên tài khoản admin, ví dụ `Administrator`
+    * **Password**: Mật khẩu bạn đã tạo ở bước **Cài đặt và cấu hình Active Directory Domain Services**, ví dụ: `123456789aA@`
+    * **Confirm Password:** Xác nhận mật khẩu, ví dụ: `123456789aA@`
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Chọn **Create File Storage.**
+
+**Bước 6:** Sau khi hệ thống khởi tạo xong File Storage SMB, bạn có thể lấy thông tin **File Storage IP Address** tại phần thông tin chi tiết của File Storage và tiếp tục thực hiện các bước bên dưới
+
+<figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -366,10 +415,19 @@ Trên Windows Server, bạn có thể map file storage SMB thông qua giao diệ
 1. **Mở File Explorer.**
 2. Nhấp chuột phải vào **This PC** và chọn **Map network drive**.
 3. Trong cửa sổ **Map Network Drive**:
+   1. **Drive letter**: Chọn một ký tự ổ đĩa (VD: `Z:`).
+   2. **Folder**: Nhập đường dẫn SMB share, ví dụ: `\\<File Storage IP Address>\<File Storage Name>`. Ví dụ `\\10.50.3.8\demo-smb`.
+   3. Chọn **Finish**, sau khi hoàn tất, bạn có thể kiểm tra trong **File Explorer** để thấy ổ đĩa được map.
 
-* **Drive letter**: Chọn một ký tự ổ đĩa (VD: `Z:`).
-* **Folder**: Nhập đường dẫn SMB share, ví dụ: `\\<File Storage IP Address>\<File Storage Name>`. Ví dụ `\\10.210.2.5\demo-smb`.
-* Nhấn **Finish** để hoàn tất.
+<figure><img src="../../../../.gitbook/assets/image (22).png" alt="" width="563"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (23).png" alt="" width="501"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Chú ý:**
+
+* Để tự động map file storage SMB mỗi lần khởi động Windows Server, bạn có thể lưu thông tin khi map qua giao diện bằng cách tích vào ô **Reconnect at sign-in** trước khi nhấn **Finish**.
+{% endhint %}
 
 ### **Qua dòng lệnh**
 
@@ -385,32 +443,21 @@ net use Z: \\<File Storage IP Address>\<File Storage Name>
 Ví dụ:
 
 ```cmd
-net use Z: \\10.210.2.5\demo-smb
+net use Z: \\10.50.3.8\demo-smb
 ```
-
-4. Chọn Finish, sau khi hoàn tất, bạn có thể kiểm tra trong **File Explorer** để thấy ổ đĩa được map.
-
-<figure><img src="../../../../.gitbook/assets/image (902).png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-**Chú ý:**
-
-* Để tự động map file storage SMB mỗi lần khởi động Windows Server, bạn có thể lưu thông tin khi map qua giao diện bằng cách tích vào ô **Reconnect at sign-in** trước khi nhấn **Finish**.
-{% endhint %}
 
 ### Qua trực tiếp File Explorer
 
 Đơn giản hơn, bạn cũng có thể truy cập trực tiếp tới File Storage SMB qua File Explorer qua các bước:
 
-* **Mở File Explorer**:
-  * Nhấn tổ hợp phím **Windows + E** hoặc nhấp vào biểu tượng File Explorer.
-* **Nhập UNC Path**:
-  *   Trên thanh địa chỉ, nhập đường dẫn UNC đến file share. Ví dụ:
+1. Mở **File Explorer**: Nhấn tổ hợp phím **Windows + E** hoặc nhấp vào biểu tượng File Explorer.
+2. Nhập **UNC Path**: Trên thanh địa chỉ, nhập đường dẫn UNC đến file share. Ví dụ:
 
-      ```
-      \\10.210.2.5\demo-smb
-      ```
-* **Nhấn Enter**.
+```
+\\10.50.3.8\demo-smb
+```
+
+3. Nhấn **Enter**.
 
 ***
 

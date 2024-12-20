@@ -136,21 +136,21 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 * Tại source bạn chọn dải **IP** được phép đi ra **Internet**
 
-<figure><img src="../../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 8:** Cấu hình **NAT** để các **vServer** có thể đi ra được **Internet**
 
 * Vào mục **Firewall** -> **NAT**
 
-<figure><img src="../../../../.gitbook/assets/image (23) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Chọn mode **NAT** sau đó tiến hành cấu hình **NAT**
 
-<figure><img src="../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Nhấn vào **Add** để thêm **rule**
 
-<figure><img src="../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Chọn **source**, **destination NAT**
 
