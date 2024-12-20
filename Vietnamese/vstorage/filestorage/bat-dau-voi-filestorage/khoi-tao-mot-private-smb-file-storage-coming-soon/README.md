@@ -2,7 +2,7 @@
 
 ## Tổng quan
 
-SMB (Server Message Block) là giao thức phổ biến được sử dụng để chia sẻ tệp, thư mục và máy in trong mạng. Việc triển khai SMB có thể sử dụng hai phương thức xác thực chính: **Basic Authentication** và **Active Directory (AD) Authentication**. Dưới đây là sự khác biệt và ứng dụng của mỗi phương thức.
+SMB (Server Message Block) là giao thức phổ biến được sử dụng để chia sẻ tệp, thư mục trên môi trường Windows server, việc triển khai SMB có thể sử dụng hai phương thức xác thực chính: **Basic Authentication** và **Active Directory (AD) Authentication**. Dưới đây là sự khác biệt và ứng dụng của mỗi phương thức.
 
 ## Chi tiết
 

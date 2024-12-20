@@ -1,6 +1,6 @@
 # Khởi tạo một Private SMB File Storage không có Active Directory
 
-Để khởi tạo một SMB (Server Message Block) trên hệ thống File Storage, bạn có thể làm theo các bước sau:
+Để khởi tạo một SMB (Server Message Block) không có Active Directory trên hệ thống File Storage, bạn có thể làm theo các bước sau:
 
 ## Khởi tạo Windows server on vServer
 
@@ -47,40 +47,49 @@ Security Groups trên Windows server cần mở thêm các port sau để share 
 
 ## Kết nối tới Windows server vừa khởi tạo
 
+Dưới đây là hướng dẫn cơ bản cho việc kết nối tới Windows server trên vServer, nếu bạn đã sử dụng Console trực tiếp trên vServer Portal, vui lòng bỏ qua bước này.
+
+<details>
+
+<summary>Kết nối tới Windows server </summary>
+
 **Để có thể kết nối vào máy chủ Window, trước tiên, bạn cần cài đặt RDP:** Theo mặc định, Windows sẽ bao gồm RDP Client. Để xác minh, hãy nhập **mstsc** tại cửa sổ Command Prompt. Nếu máy tính của bạn không nhận ra lệnh này, hãy xem trang chủ Windows và tìm kiếm bản tải xuống cho ứng dụng[ Microsoft Remote Desktop](https://www.microsoft.com/vi-vn/windows).
 
 1. Truy cập vào trang quản lý Server tại trình điều khiển của chúng tôi tại: [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)
 2. Chọn **Server** cần kết nối, sau đó chọn **Action, tiếp tục chọn Connect**
 3. Trên trang **Connect to Server**, chọn tab **RDP (Window)**
 
-<figure><img src="../../../../.gitbook/assets/image (894).png" alt="" width="563"><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (894).png" alt="" data-size="original">
 
-2. Chọn **Download RDP File**. Trình duyệt của bạn sẽ nhắc bạn mở hoặc lưu tệp RDP. Khi bạn đã hoàn tất tải xuống tệp, hãy chọn **Done** để quay lại trang máy chủ:
-3. Thực hiện mở tệp tin đã tải xuống để thực hiện remote tới Windows server. Chọn **Connect** để tiếp tục kết nối với máy chủ của bạn
+4. Chọn **Download RDP File**. Trình duyệt của bạn sẽ nhắc bạn mở hoặc lưu tệp RDP. Khi bạn đã hoàn tất tải xuống tệp, hãy chọn **Done** để quay lại trang máy chủ:
+5. Thực hiện mở tệp tin đã tải xuống để thực hiện remote tới Windows server. Chọn **Connect** để tiếp tục kết nối với máy chủ của bạn
 
-<figure><img src="../../../../.gitbook/assets/image (895).png" alt="" width="537"><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (895).png" alt="" data-size="original">
 
-4. Tài khoản quản trị viên được chọn theo mặc định. Bạn cần sao chép và dán mật khẩu mà bạn đã lưu trước đó vào pop-up đăng nhập (Thông tin này lấy từ email), trong đó nhập thông tin **InstanceLogin** vào **Username**, **InstancePassword** vào **Password.**
-5. Chọn **OK.** Do tính chất của chứng chỉ tự ký, bạn có thể nhận được cảnh báo rằng chứng chỉ bảo mật không thể được xác thực. Sử dụng các bước sau để xác minh danh tính của máy tính từ xa hoặc chỉ cần chọn **Yes** (Windows) hoặc **Continue** (Mac OS X) nếu bạn tin cậy chứng chỉ.
+6. Tài khoản quản trị viên được chọn theo mặc định. Bạn cần sao chép và dán mật khẩu mà bạn đã lưu trước đó vào pop-up đăng nhập (Thông tin này lấy từ email), trong đó nhập thông tin **InstanceLogin** vào **Username**, **InstancePassword** vào **Password.**
+7. Chọn **OK.** Do tính chất của chứng chỉ tự ký, bạn có thể nhận được cảnh báo rằng chứng chỉ bảo mật không thể được xác thực. Sử dụng các bước sau để xác minh danh tính của máy tính từ xa hoặc chỉ cần chọn **Yes** (Windows) hoặc **Continue** (Mac OS X) nếu bạn tin cậy chứng chỉ.
 
-<figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FNH1l2utiMi3RJxfBoknu%252Fimage.png%3Falt%3Dmedia%26token%3Db50838b8-d830-4273-a67f-6ccfe237ccf4&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f64057f4&#x26;sv=2" alt="" width="563"><figcaption></figcaption></figure>
+<img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FNH1l2utiMi3RJxfBoknu%252Fimage.png%3Falt%3Dmedia%26token%3Db50838b8-d830-4273-a67f-6ccfe237ccf4&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f64057f4&#x26;sv=2" alt="" data-size="original">
 
-6. Màn hình sẽ hiển thị đang kết nối đến máy chủ **Window** thành công
+8. Màn hình sẽ hiển thị đang kết nối đến máy chủ **Window** thành công
 
-<figure><img src="../../../../.gitbook/assets/image (896).png" alt="" width="563"><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (896).png" alt="" data-size="original">
 
-7. Ngoài ra, bạn cần đảm bảo Windows server của bạn đã có địa chỉ IP tĩnh, bạn có thể&#x20;
-   * **Kiểm tra và mở cấu hình mạng của VM bằng cách:**
-     * Truy cập **Control Panel > Network & Internet > Network Connections**.
-     * Chọn **Ethernet adapter**, nhấp chuột phải và chọn **Properties**.
-   * **Thiết lập địa chỉ IP tĩnh (Static IP):**
-     * Trong màn hình **Properties**, chọn **Internet Protocol Version 4 (TCP/IPv4)** rồi bấm nút **Properties**.
-     * Chọn **Use the following IP address** để thiết lập địa chỉ IP tĩnh.
-     * Cung cấp thông tin địa chỉ:
-       * **IP Address:** địa chỉ fix IP của VM.
-       * **Subnet Mask:** Subnet tương ứng, ví dụ: 255.255.255.0
+</details>
 
-<figure><img src="../../../../.gitbook/assets/image (915).png" alt=""><figcaption></figcaption></figure>
+Sau khi bạn đã kết nối được vào Windows server, bạn cần đảm bảo Windows server của bạn đã có địa chỉ IP tĩnh, bạn có thể kiểm tra và cấu hình IP tĩnh theo hướng dẫn sau:&#x20;
+
+* **Kiểm tra cấu hình mạng của VM bằng cách:**
+  * Truy cập **Control Panel > Network & Internet > Network Connections**.
+  * Chọn **Ethernet adapter**, nhấp chuột phải và chọn **Properties**.
+* **Thiết lập địa chỉ IP tĩnh (Static IP):**
+  * Trong màn hình **Properties**, chọn **Internet Protocol Version 4 (TCP/IPv4)** rồi bấm nút **Properties**.
+  * Chọn **Use the following IP address** để thiết lập địa chỉ IP tĩnh.
+  * Cung cấp thông tin địa chỉ:
+    * **IP Address:** địa chỉ IP tĩnh của VM.
+    * **Subnet Mask:** Subnet tương ứng, ví dụ: 255.0.0.0
+
+<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -89,8 +98,6 @@ Security Groups trên Windows server cần mở thêm các port sau để share 
 **Bước 1:** Truy cập vào [https://efs.console.vngcloud.vn/overview](https://efs.console.vngcloud.vn/overview)
 
 **Bước 2:** Chọn mục **File Storage** sau đó chọn **Create a File storage.**
-
-<figure><img src="../../../../.gitbook/assets/image (818).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Tại màn hình khởi tạo File Storage, bạn cần nhập/ chọn:&#x20;
 
@@ -107,16 +114,20 @@ Security Groups trên Windows server cần mở thêm các port sau để share 
 
 <figure><img src="../../../../.gitbook/assets/image (904).png" alt=""><figcaption></figcaption></figure>
 
-* **Window Authentication: c**ấu hình quyền truy cập thông qua **Basic Authentication** hoặc **Active Directory Authentication**
+* **Window Authentication: c**ấu hình quyền truy cập thông qua **Basic Authentication**
   * **Basic Authentication:** Nếu Windows server của bạn không có Active Directory hoặc bạn muốn quản lý quyền truy cập đơn giản thông qua username và password, bạn có thể sử dụng Basic authentication, chúng tôi hỗ trợ bạn tạo tối đa 10 tài khoản username/password để truy cập file storage.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Chọn **Create File Storage.**
 
+**Bước 6:** Sau khi hệ thống khởi tạo xong File Storage SMB, bạn có thể lấy thông tin **File Storage IP Address** tại phần thông tin chi tiết của File Storage và tiếp tục thực hiện các bước bên dưới
+
+<figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+
 ***
 
-## Map File Storage vừa khởi tạo tới Windows server
+## Map File Storage vừa khởi tạo tới Windows server&#x20;
 
 Trên Windows Server, bạn có thể map file storage SMB thông qua giao diện hoặc dòng lệnh.
 
@@ -124,19 +135,14 @@ Trên Windows Server, bạn có thể map file storage SMB thông qua giao diệ
 
 1. **Mở File Explorer.**
 2. Nhấp chuột phải vào **This PC** và chọn **Map network drive**.
-
-<figure><img src="../../../../.gitbook/assets/image (874).png" alt=""><figcaption></figcaption></figure>
-
 3. Trong cửa sổ **Map Network Drive**:
+   1. **Drive letter**: Chọn một ký tự ổ đĩa (VD: `Z:`).
+   2. **Folder**: Nhập đường dẫn SMB share, ví dụ: `\\<File Storage IP Address>\<File Storage Name>`. Ví dụ `\\10.50.3.8\demo-smb`.
+   3. Chọn **Finish**, sau khi hoàn tất, bạn có thể kiểm tra trong **File Explorer** để thấy ổ đĩa được map.
 
-* **Drive letter**: Chọn một ký tự ổ đĩa (VD: `Z:`).
-* **Folder**: Nhập đường dẫn SMB share, ví dụ: `\\<File Storage IP Address>\<File Storage Name>`. Ví dụ `\\10.210.2.5\demo-smb`.
-* Tiếp tục nhập thông tin đăng nhập:
-  * **Username**: Tên tài khoản bạn đã tạo trên file storage SMB trước đó.
-  * **Password**: Mật khẩu tương ứng.
-* Nhấn **Finish** để hoàn tất.
+<figure><img src="../../../../.gitbook/assets/image (22).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (875).png" alt="" width="503"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23).png" alt="" width="501"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**
@@ -149,33 +155,30 @@ Trên Windows Server, bạn có thể map file storage SMB thông qua giao diệ
 Sử dụng lệnh sau trong **Command Prompt** hoặc **PowerShell**:
 
 ```cmd
-net use Z: \\<File Storage IP Address>\<File Storage Name> /user:USERNAME PASSWORD
+net use Z: \\<File Storage IP Address>\<File Storage Name> 
 ```
 
 * **Z:**: Là ký tự ổ đĩa mà bạn muốn gắn.
 * **\\\\\<File Storage IP Address>\\\<File Storage Name>**: Đường dẫn File Storage SMB.
-* **USERNAME**: Tên tài khoản bạn đã tạo trên file storage SMB trước đó.
-* **PASSWORD**: Mật khẩu tương ứng.
 
 Ví dụ:
 
 ```cmd
-net use Z: \\10.210.2.5\demo-smb /user:admin password_123
+net use Z: \\10.50.3.8\demo-smb
 ```
 
 ### Qua trực tiếp File Explorer
 
 Đơn giản hơn, bạn cũng có thể truy cập trực tiếp tới File Storage SMB qua File Explorer qua các bước:
 
-* **Mở File Explorer**:
-  * Nhấn tổ hợp phím **Windows + E** hoặc nhấp vào biểu tượng File Explorer.
-* **Nhập UNC Path**:
-  *   Trên thanh địa chỉ, nhập đường dẫn UNC đến file share. Ví dụ:
+1. Mở **File Explorer**: Nhấn tổ hợp phím **Windows + E** hoặc nhấp vào biểu tượng File Explorer.
+2. Nhập **UNC Path**: Trên thanh địa chỉ, nhập đường dẫn UNC đến file share. Ví dụ:
 
-      ```
-      \\10.210.2.5\demo-smb
-      ```
-* **Nhấn Enter** và nhập **username/ mật khẩu**.
+```
+\\10.50.3.8\demo-smb
+```
+
+3. Nhấn **Enter**.
 
 ***
 

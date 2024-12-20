@@ -1,6 +1,6 @@
 # Khởi tạo một Private NFS File Storage
 
-Để khởi tạo một NFS (Network File System) trên hệ thống File Storage, bạn có thể làm theo các bước sau:
+Để khởi tạo một Private NFS (Network File System) trên hệ thống File Storage, bạn có thể làm theo các bước sau:
 
 ## Khởi tạo File Storage
 
