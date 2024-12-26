@@ -23,9 +23,9 @@ Nếu doanh nghiệp bạn có nhiều thành viên cần được cấp quyền
 7. Chọn **Copy** để sao chép mật khẩu. Bạn bắt buộc phải thu thập được thông tin này để có thể truy cập vào vStorage sử dụng IAM User Account.
 8. Chọn **Create User Account.**
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -49,7 +49,7 @@ Nếu doanh nghiệp bạn có nhiều thành viên cần được cấp quyền
 8. Chọn **Resources**: chọn **All resources.**&#x20;
 9. Chọn **Request conditions:** nhập điều kiện đặc biệt cho policy nếu có.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Attach IAM Policy vào IAM User Account
 
