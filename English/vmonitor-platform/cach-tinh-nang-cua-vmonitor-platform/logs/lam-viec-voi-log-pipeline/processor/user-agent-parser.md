@@ -20,7 +20,7 @@ For example:
 
 <table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Source log project</strong></td><td><strong>Destination log project</strong></td><td><strong>user_agent (field logs that we parser)</strong></td><td><strong>Parser result</strong></td></tr><tr><td>webserver</td><td>webserver-parse</td><td>"user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:45.0) Gecko/20100101 Firefox/45.0"</td><td>"user_agent_parse": { "os_minor": "11", "name": "Firefox", "version": "45.0", "major": "45", "os_full": "Mac OS X 10.11", "os": "Mac OS X", "os_version": "10.11", "os_name": "Mac OS X", "device": "Mac", "minor": "0", "os_major": "10" },</td></tr></tbody></table>
 
-<figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Store and reuse Parsing rules <a href="#luu-tru-va-tai-su-dung-parsing-rule" id="luu-tru-va-tai-su-dung-parsing-rule"></a>
 

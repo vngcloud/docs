@@ -8,7 +8,7 @@
 
 To connect directly to origin via the specified domain name, enter/select the following parameters:
 
-<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin Host Header:** Header sent to the Origin Server in the HTTP request.
 * **Use SSL:** Enable SSL to encrypt the connection to Host Origin.

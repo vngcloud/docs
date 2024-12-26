@@ -4,19 +4,19 @@
 
 **Pie chart** is a type of circular chart used to compare values (usually in percentage form) with the overall level. Each section in the chart represents data for a specific item and is distinguished by different colors or symbols. Pie charts are commonly used when there are few components, and you want to focus on the differences between them.
 
-<figure><img src="../../../../.gitbook/assets/image (64) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (64) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Widget Configuration
 
-<figure><img src="../../../../.gitbook/assets/image (65) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (65) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style
 
 For a pie chart, select **Pie** as the Style.
 
-<figure><img src="../../../../.gitbook/assets/image (66) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (66) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### 2. Graph your data
 

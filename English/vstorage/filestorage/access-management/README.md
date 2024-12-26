@@ -41,7 +41,7 @@ To create an IAM user account, please first refer to the instructions below:
 7. Select **Copy** to copy the password. You must collect this information to access File Storage using an IAM User Account.
 8. Select **Create User Account.**
 
-<figure><img src="../../../.gitbook/assets/image (39) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (39) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -70,7 +70,7 @@ To initialize a policy used to access File Storage resources, follow the steps b
 
 After you have completed the above 8 steps, the file storage policy has been created. Next, you need to assign it to your IAM User Account.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Attach IAM User Account with corresponding policy**
 

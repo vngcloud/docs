@@ -4,11 +4,11 @@
 
 * First, you access the Figma application, select the **App management** menu then select **the Credential tab:**
 
-<figure><img src="../../../.gitbook/assets/image (54) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (54) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Next, you enter **the Username** and select the corresponding permission **group** (here you group the **Sigma Livestream Full** permission ):
 
-<figure><img src="../../../.gitbook/assets/image (55) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (55) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * After you select **Submit , the Sigma** system will generate **a Username** and **Secret Key** . You need to save this password or download the **credential** file by selecting **Download as .env file**.
 

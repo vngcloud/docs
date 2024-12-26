@@ -80,7 +80,7 @@ The Dedicated bandwidth package offers customizable speeds tailored to your need
 
 **Step 5:** The **Add IP** screen will be displayed. You can filter the list of IP addresses by type by selecting an option in the **Resource Type** field. Currently, we provide the following resource types: **K8S, Floating IP, External Interface, vLB.**
 
-**Step 6:** Select one or more IP addresses by selecting the icon ![](<../../../../.gitbook/assets/image (70) (1).png>) and then choosing **Add**.
+**Step 6:** Select one or more IP addresses by selecting the icon ![](<../../../../.gitbook/assets/image (70) (1) (1).png>) and then choosing **Add**.
 
 ***
 
@@ -92,7 +92,7 @@ The Dedicated bandwidth package offers customizable speeds tailored to your need
 
 **Step 3:** From the list of available bandwidth packages, select the **Dedicated** package according to your usage needs.
 
-**Step 4:** Under the **IP List** section, select the icon ![](<../../../../.gitbook/assets/image (71) (1).png>) next to the **IP address** you want to remove from the package and choose the icon ![](<../../../../.gitbook/assets/image (72) (1).png>)
+**Step 4:** Under the **IP List** section, select the icon ![](<../../../../.gitbook/assets/image (71) (1) (1).png>) next to the **IP address** you want to remove from the package and choose the icon ![](<../../../../.gitbook/assets/image (72) (1) (1).png>)
 
 **Step 5:** On the IP removal confirmation screen, select **Delete**.
 

@@ -8,7 +8,7 @@
 
 When initializing a Web Accelerator, to optimize file size, you can choose the configuration in the **File Size Optimization** section . Specifically:
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   **Image Optimizer** : Automatically optimizes the capacity and size of images on the website, the system will automatically compress, resize and convert image formats based on the terminal device. The same original image, if the device supports Webp images (the best image compression standard currently provided by Google), will be automatically converted to Webp. If the terminal device is a small-screen mobile device, the image will be resized to fit the small-screen device without changing the image quality to increase image loading speed and enhance user experience.
 

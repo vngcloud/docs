@@ -8,7 +8,7 @@ Web Accelerator is a solution to speed up content display and user experience.
 
 ## **Model** <a href="#webaccelerator-cochephanphoidulieu" id="webaccelerator-cochephanphoidulieu"></a>
 
-<figure><img src="../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (55) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -44,7 +44,7 @@ First, you need to initialize a Web Accelerator following these instructions:
 * **CDN Info:**
   * **CDN Name:** Enter the identifier name for the CDN you want to create.
 
-<figure><img src="../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (56) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **HTTP Origin** : Server supports HTTP protocol.
   * **Fail-Over Error Code:** List of HTTP error codes (e.g. 500, 502, 503, 504) that, if encountered, will trigger a fail-over to another Origin.
@@ -53,7 +53,7 @@ First, you need to initialize a Web Accelerator following these instructions:
   * **IP Address:** The IP address of the Origin Server (e.g. IPv4 like 1.1.1.1 or IPv6).
   * **Weight:** Defines the priority of each Origin Server when load balancing (the higher the value, the more traffic received).
 
-<figure><img src="../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (57) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Crypto:**
   * **HTTPS (HTTP/2)** : Enable or disable HTTPS security for the CDN stream. You can create a new **Certificate** by selecting **Add new** .
@@ -64,9 +64,9 @@ First, you need to initialize a Web Accelerator following these instructions:
   * **Relative Canonical URL:** A canonical URL allows you to tell search engines that similar URLs are actually the same content. This is useful when you have a product or content that can be found on multiple URLs or even multiple websites.
   * **No-Sniff Header:** Send the "X-Content-Type-Options: nosniff" header to prevent Internet Explorer and Google Chrome from checking MIME types other than the declared Content-Type.
 
-<figure><img src="../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (60) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (61) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Caching:**
   * **Caching Level** : Determines the CDN cache level. With VOD, vCDN is providing 3 cache levels including: URL without query string only, Skip Query String of URL, URL With Query String.
@@ -74,7 +74,7 @@ First, you need to initialize a Web Accelerator following these instructions:
   * **Browser Cache Expiration:** The time vCDN asks the user's browser to cache files locally.
   * **Development mode:** This feature allows you to temporarily disable caching on the Edge Server to support testing or testing content during development. All requests will be returned directly from Origin, allowing content to be updated immediately without clearing the cache.
 
-<figure><img src="../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (62) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **File Size Optimization:**
   * **Image Optimizer:** Optimize image size and format, thereby reducing page load time and traffic.
@@ -100,11 +100,11 @@ First, you need to initialize a Web Accelerator following these instructions:
       * Deny Access
     * Select **Save changes** to save the changes.
 
-    <figure><img src="../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (63) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (64).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (64) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (65).png" alt="" width="348"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (65) (1).png" alt="" width="348"><figcaption></figcaption></figure>
 
 4. Select **Submit** to complete creating the Web Accelerator.
 

@@ -8,7 +8,7 @@ VNG Cloud's Object Download service helps businesses: optimize costs, ensure fle
 
 ## **Model** <a href="#objectdownload-cochephanphoidulieu" id="objectdownload-cochephanphoidulieu"></a>
 
-<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -48,14 +48,14 @@ First, you need to initialize an Object Download according to the following inst
 1. Access vCDN Portal at [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
 2. Select **Object Download** , then select **Create new.**
 
-<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Continue to enter/select:
 
 * **CDN Info:**
   * **CDN Name:** Enter the identifier name for the CDN you want to create.
 
-<figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (42) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin:**
   * **HTTP Origin** : Server supports HTTP protocol.
@@ -77,11 +77,11 @@ First, you need to initialize an Object Download according to the following inst
     * **Use SSL:** Enable SSL to encrypt the connection to Host Origin.
     * **Host Origin**
 
-<figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (45) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   **Security:**
 
@@ -93,14 +93,14 @@ First, you need to initialize an Object Download according to the following inst
     * **Relative Canonical URL:** A canonical URL allows you to tell search engines that similar URLs are actually the same content. This is useful when you have a product or content that can be found on multiple URLs or even multiple websites.
     * **No-Sniff Header:** Send the "X-Content-Type-Options: nosniff" header to prevent Internet Explorer and Google Chrome from checking MIME types other than the declared Content-Type.
 
-    <figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (46) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (47) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Token Configuration** :
       * **Token Type** : Select the token type used to authenticate viewers. You can choose token type Akamai, SBD or VNG.
 
-    <figure><img src="../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (48) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Access Filter:**
       * **IP Address CIDR** : Limit access based on IP address by selecting **Allow** / **Block** and entering the corresponding IP address or CIDR.
@@ -110,13 +110,13 @@ First, you need to initialize an Object Download according to the following inst
       * **Simple** : When selecting Simple, you only need to specify specific domains that are allowed access through **Allow Origin.**
       * **Advance** : When selecting Advance, in addition to specifying a specific domain, you need to configure more details about **Allow Header, Allow Method, Expose Header, Allow Credentials** allowed.
 
-    <figure><img src="../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (49) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Always Use HTTPS:** Enable or disable automatic redirection of all HTTP requests to HTTPS for increased security and improved user experience.
     * **Small Object:** When you enable this option, if the content is large, **Origin Gateway** will split the content into small requests (5MB) and download them simultaneously (byte-range download). This helps to speed up the download and serve the user as soon as the first data is received.
     * **Minimum TLS Version** : The lowest version of the TLS protocol allowed. We support TLS 1.0, TLS 1.1, TLS 1.2, TLS 1.3 protocols. Please choose to use higher versions (TLS 1.2 or 1.3) to ensure security.
 
-    <figure><img src="../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (50) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Caching:**
       * **Caching Level** : Determines the CDN cache level. With VOD, vCDN is providing 3 cache levels including: URL without query string only, Skip Query String of URL, URL With Query String.
@@ -124,7 +124,7 @@ First, you need to initialize an Object Download according to the following inst
       * **Browser Cache Expiration:** The time vCDN asks the user's browser to cache files locally.
       * **Development mode:** This feature allows you to temporarily disable caching on the Edge Server to support testing or testing content during development. All requests will be returned directly from Origin, allowing content to be updated immediately without clearing the cache.
 
-    <figure><img src="../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Page Rules:** This feature helps customers optimize conditions and options to help the website demonstrate many different purposes. To create Page rules, please select **Create Page Rule** , a popup will appear, now you need to select:
       * **URL pattern:** need to apply pagerule, support declaration type “\*” represents a string of characters. For example: /trang\_landing\_cu.html. After entering URL pattern, select **Add new rule** . Each Rule when satisfying the condition of the requested URI will be able to optionally execute one of the following actions:
@@ -140,11 +140,11 @@ First, you need to initialize an Object Download according to the following inst
         * Deny Access
       * Select **Save changes** to save the changes.
 
-    <figure><img src="../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (52) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (53).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (53) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (54).png" alt="" width="348"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (54) (1).png" alt="" width="348"><figcaption></figcaption></figure>
 
 4. Select **Submit** to complete the creation of the Object Download.
 

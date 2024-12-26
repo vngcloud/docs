@@ -25,7 +25,7 @@ To create a Service Account, follow the steps below:
 
 After you complete the 10 steps above, a Service Account has been created.
 
-<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -49,7 +49,7 @@ To initialize a policy used to access vStorage resources, follow the steps below
 8. Select **Resources** : select **All resources.**
 9. Select **Request conditions:** enter special conditions for the policy if any.
 
-<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Attach IAM Policy to Service Account <a href="#attach-iam-policy-vao-service-account" id="attach-iam-policy-vao-service-account"></a>
 
@@ -62,7 +62,7 @@ Once you have created the desired Service Account and Policy, you will need to l
 5. Select the **policies** you want. The vIAM system supports you to assign multiple policies to a Service Account. If these policies contain independent permissions, they will complement each other (ie the permission list is merged). On the contrary, if these policies contain conflicting permissions, you will not be able to access the corresponding resources according to this permission list (ie the permission list is merged and when conflicting, they will cancel each other out).
 6. Select **Attach** .
 
-<figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -74,12 +74,12 @@ To grant access to bucket/object for Service Account, you need to grant permissi
 2. Select icon![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F2Ye0SwJ9LL3dubdbJhKn%252Fimage.png%3Falt%3Dmedia%26token%3Dcee711e0-ec36-4c9d-ab5f-c8537e348626\&width=300\&dpr=4\&quality=100\&sign=d8575ee1\&sv=2)in the project containing the bucket you want to grant permissions to.
 3. In the **Identity and Access Management** section , copy the **vStorage User ID** information in the **List of Service Account** section .
 
-<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Continue to select **the Bucket** you want to assign permissions to the Service Account.
 2. **Select the Action** icon and select **Configure policy.**
 
-<figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Here, you can choose the configuration for each **Statement** on the left or directly edit the JSON file in the right column. Specifically, the structure of a Bucket Policy includes:
 
@@ -93,7 +93,7 @@ To grant access to bucket/object for Service Account, you need to grant permissi
 
 5\. Select **Save** to save the Bucket Policy configuration.
 
-<figure><img src="../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -111,11 +111,11 @@ Follow the steps below to work with vStorage via Service Account
 
 For details, please refer to [https://docs.api.vngcloud.vn/service-docs/vstorage-api.html](https://docs.api.vngcloud.vn/service-docs/vstorage-api.html) .
 
-<figure><img src="../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

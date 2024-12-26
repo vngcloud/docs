@@ -2,7 +2,7 @@
 
 System Image is a copy of the current popular operating systems on the market and is supported and maintained by VNG Cloud at the best level with the developing virtualization system. The system image needs to be specified during the initialization of a Server. You can launch multiple Servers from a single System Image when you require multiple Servers with the same configuration. Use different System Image to launch the Servers when you require the Servers with different configuration.
 
-<figure><img src="../../.gitbook/assets/image (73) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (73) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 VNG Cloud images are classified into public images, custom images, and Marketplace images based on image sources.
 

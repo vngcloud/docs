@@ -53,7 +53,7 @@ Create a project by following the steps below:
 6. Select **Period** and check/uncheck **Auto-renew** according to your needs.
 7. **Go through the Checkout** steps and your **Project** will be created.
 
-<figure><img src="../../../../.gitbook/assets/image (24) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (24) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -73,7 +73,7 @@ To view the properties for a project, you can:
 * **History** : Provides historical information affecting the project including action type, action status, time the action occurred, and a detailed description of the action if available.
 * **Connection Information** : Provides commands and configuration files to connect the project to S3.
 
-<figure><img src="../../../../.gitbook/assets/image (25) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (25) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -92,7 +92,7 @@ To change the quota for a project, you can:
 
 After you successfully complete the above 6 steps, the new total **quota** value after change will be updated on the general information of the project you selected.
 
-<figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

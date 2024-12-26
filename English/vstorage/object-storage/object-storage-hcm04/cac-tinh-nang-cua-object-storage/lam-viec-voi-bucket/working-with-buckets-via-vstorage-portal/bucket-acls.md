@@ -9,16 +9,16 @@
 3. If you want to delegate bucket permissions to a **Root User Account** or another **IAM User Account** or **Service Account** , you need to know the **vStorage User ID** of the user you want to delegate permissions to:
    1. For **Root User Account : you can get vStorage User ID** information right on the **project** information page as shown below.
 
-<figure><img src="../../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 b. For **IAM User Account** and **Service Account : you can get vStorage User ID** information in **Identity and Access Management**
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Continue to select **the Bucket** you want to perform ACLs setup.
 5. **Select the Action** icon and select **Set ACLs.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (43) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\. Here, you can select user sets and corresponding access rights. Specifically:
 
@@ -33,7 +33,7 @@ b. For **IAM User Account** and **Service Account : you can get vStorage User ID
 
 * **In addition, the ReadBucketACL, WriteBucketACL, ReadObjectACL, WriteObjectACL permissions:** Allow users to view information/update the ACLs configuration of the bucket or object.
 
-<figure><img src="../../../../../../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (44) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5\. Select **Update** to save the configuration set for ACLs.
 
@@ -47,7 +47,7 @@ b. For **IAM User Account** and **Service Account : you can get vStorage User ID
 * Select **the List** action to grant permission to list objects in the bucket to all users.
 * Select **Save** .
 
-<figure><img src="../../../../../../.gitbook/assets/image (45) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (45) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Example 2: Grant FULL\_CONTROL permission to another vStorage account** <a href="#v-jga-d-xym-2-cp-r5s-quyn-sv5a-full_control-cho-mt-79s-ti-jia-khon-ir5a-vstorage-khc-fla" id="v-jga-d-xym-2-cp-r5s-quyn-sv5a-full_control-cho-mt-79s-ti-jia-khon-ir5a-vstorage-khc-fla"></a>
 
@@ -58,11 +58,11 @@ Attention:
 * Select **the List, Write** action to grant permission to list objects in the bucket and upload objects to this bucket.
 * Select **Save** .
 
-<figure><img src="../../../../../../.gitbook/assets/image (46) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (46) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * As shown above, I have assigned the above working permission `bucket001` to the user `vngclouddemo-123456`. Now, the user `vngclouddemo-123456`can use the feature `Add external bucket`to add this shared bucket to your bucket list:
 
-<figure><img src="../../../../../../.gitbook/assets/image (47) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (47) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**

@@ -1,6 +1,6 @@
 # Create a Public NFS File Storage
 
-To create an NFS (Network File System) on the File Storage system, you can follow these steps:
+To create a Private NFS (Network File System) on the File Storage system, you can follow these steps:
 
 ## Create a File Storage <a href="#khoi-tao-file-storage" id="khoi-tao-file-storage"></a>
 
@@ -8,7 +8,7 @@ To create an NFS (Network File System) on the File Storage system, you can follo
 
 **Step 2:** Select **File Storage** then select **Create a File storage.**
 
-<figure><img src="../../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3:** At the File Storage initialization screen, you need to enter/select:
 
@@ -18,7 +18,7 @@ To create an NFS (Network File System) on the File Storage system, you can follo
 * **Protocol:** select NFS and the NFS version you want
 * **Tag:** you can add tags to mark file storage as needed.
 
-<figure><img src="../../../.gitbook/assets/image (318).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 * **File Storage Max quota:** in the file storage initialization step, you need to set a maximum quota limit for that file storage. This quota means the limit of storage capacity that the file storage can use, helping to manage resources effectively. **The minimum quota you need to choose is 1 TB and the maximum quota we provide is 50 TB.** If you need to use more than 50 TB for a file storage, please contact us.
 * **Network type** : select the network type you want. In this example, you can choose Public.
@@ -27,9 +27,7 @@ To create an NFS (Network File System) on the File Storage system, you can follo
   * **All:** Allow all IPs to have RO (Read-Only) or RW (Read-Write) access.
   * **Restricted:** Only allow specific IPs to access with RO or RW permissions.
 
-<figure><img src="../../../.gitbook/assets/image (319).png" alt=""><figcaption></figcaption></figure>
-
-For example, in the picture, I only allow IP 192.168.1.100 to have RO rights and IP 192.168.1.101 to have RW rights
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 5:** Select **Create File Storage.**
 
@@ -39,9 +37,9 @@ For example, in the picture, I only allow IP 192.168.1.100 to have RO rights and
 
 After the system has finished initializing your File Storage, to get the mount guide, please select **Action** then select **Mount Guide**
 
-<figure><img src="../../../.gitbook/assets/image (320).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (324).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

@@ -8,11 +8,11 @@ In **area 2 - where you enter log search information** : we support you with 2 s
 
 For example, to filter log records with HTTP method GET within the last 15 minutes, select query as http\_method.keyword = 'GET' and set time range to 15m..
 
-<figure><img src="../../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Editor mode** : by default when you search logs, we will enable **Suggestion mode** . To use Editor mode, select the icon **Edit**. When the screen displays **Search log entries with Editor mode**, you can start entering filters through Editor mode. The syntax for entering a query is similar to Suggestion mode: **Fields \<Operator> Value.** For example, if you enter http\_method.keyword = "GET", the system will search for all log records with field http\_method.keyword = "GET".
 
-<figure><img src="../../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After selecting **Suggestion mode** or importing in **Editor mode** , you can:
 
@@ -40,9 +40,9 @@ After selecting **Suggestion mode** or importing in **Editor mode** , you can:
 
 <table data-header-hidden><thead><tr><th width="162"></th><th width="215"></th><th></th></tr></thead><tbody><tr><td><p><strong>Concatenation operation</strong></p><p><strong>(Operator)</strong></p></td><td><strong>Describe</strong></td><td><strong>Illustration</strong></td></tr><tr><td>AND</td><td>equal some value</td><td>http_method.keyword = "POST" AND response_code.keyword = "404" - The system will look for log records with field http_method.keyword = "POST" and field response_code.keyword = "404."</td></tr><tr><td>OR</td><td>not equal some value</td><td>http_method.keyword = "POST" OR response_code.keyword = "404" - The system will look for log records with field http_method.keyword = "POST" or field response_code.keyword = "404."</td></tr></tbody></table>
 
-<figure><img src="../../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Query with for a piece of content**
   * You can search for a piece of content by entering GET directly into the search field. For example, if you enter the text GET, the system will search all log records in which any data field appears this string of characters.
 
-<figure><img src="../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

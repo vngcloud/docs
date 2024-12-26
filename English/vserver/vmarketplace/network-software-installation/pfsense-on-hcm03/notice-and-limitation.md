@@ -6,7 +6,7 @@ The default MTU of Pfsense is 1500. You need to adjust this parameter to match t
 
 **Step 1: Access the pfSense management interface, select the "Interfaces" tab, and configure the WAN (or LAN in use) network one by one.**
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2: In the MTU section, enter the value 1450.**
 

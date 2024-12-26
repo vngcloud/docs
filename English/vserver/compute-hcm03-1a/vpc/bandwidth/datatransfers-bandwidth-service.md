@@ -41,8 +41,8 @@ The VNG Dedicated bandwidth package is the default free package with standard sp
 
 **Step 3**: From the list of available bandwidth packages, select the **VNG Dedicated** package.
 
-**Step 4**: Select the icon <img src="../../../../.gitbook/assets/image (62) (1).png" alt="" data-size="line"> and then choose **Add IP**, or on the package detail screen, under the **IP List** section, select the **Add IP icon**.
+**Step 4**: Select the icon <img src="../../../../.gitbook/assets/image (62) (1) (1).png" alt="" data-size="line"> and then choose **Add IP**, or on the package detail screen, under the **IP List** section, select the **Add IP icon**.
 
 **Step 5**: The **Add IP** screen will be displayed. You can filter the list of IP addresses by type by selecting an option in the **Resource Type** field. Currently, we provide the following resource types: **K8S, Floating IP, External Interface, vLB.**
 
-**Step 6**: Select one or more IP addresses by selecting the icon <img src="../../../../.gitbook/assets/image (63) (1).png" alt="" data-size="line">and then choosing **Add**.
+**Step 6**: Select one or more IP addresses by selecting the icon <img src="../../../../.gitbook/assets/image (63) (1) (1).png" alt="" data-size="line">and then choosing **Add**.

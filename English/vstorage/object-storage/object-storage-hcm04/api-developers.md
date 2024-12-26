@@ -19,9 +19,9 @@ Follow the steps below to work with vStorage via Service Account
 
 For details, please refer to [https://docs.api.vngcloud.vn/service-docs/vstorage-api.html](https://docs.api.vngcloud.vn/service-docs/vstorage-api.html) .
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (444).png" alt=""><figcaption></figcaption></figure>
 
@@ -35,9 +35,9 @@ For details, please refer to [https://docs.api.vngcloud.vn/service-docs/vstorage
 
 For example:
 
-<figure><img src="../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -60,7 +60,7 @@ These APIs allow you to manage buckets.
     --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=8b4d67b37ab0ba0c6bb42df8d6451fdb48aba5874a0717798aeee9f4c57b8fe9'
     ```
 
-<figure><img src="../../../.gitbook/assets/image (25) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   **List Buckets** : List all buckets belonging to the user.
 
@@ -75,7 +75,7 @@ These APIs allow you to manage buckets.
     --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=997d9b761262a6827002384dd9ba21b777ec4f26e84dedd164a5866bf78d348a'
     ```
 
-<figure><img src="../../../.gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Delete Bucket** : Delete a bucket (only if the bucket is empty).
   * Path:`DELETE /<bucket-name>`
@@ -89,7 +89,7 @@ These APIs allow you to manage buckets.
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=e164da98dd0564eea205ec8624d701d8809afab7ab57867e45a3beb227f8a71d'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (27) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (27) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **GET Bucket (List Objects)** : List objects in a bucket.
   * Path:`GET /<bucket-name>`
@@ -103,7 +103,7 @@ These APIs allow you to manage buckets.
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=7481242fb41364a753658d7db3b2e95c4b2e10458987e14584dc297330ea7dab'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (28) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **HEAD Bucket** : Check for existence and access to bucket.
   * Path:`HEAD /<bucket-name>`
@@ -117,7 +117,7 @@ These APIs allow you to manage buckets.
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=425119560f45bd0cd7a5a58f6835d189e0cc3d7907cdd72bfd84bd6d88f59ae9'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (29) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (29) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **2. Access Control APIs** <a href="#id-2.-api-kiem-soat-truy-cap-access-control-apis" id="id-2.-api-kiem-soat-truy-cap-access-control-apis"></a>
 
@@ -135,7 +135,7 @@ Manage access rights for buckets and objects.
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=fd112a35fed96929de946f9c48d050c8f15ca1249ae549d7b86664adde8d81cd'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (30) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (30) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **PUT Bucket ACL** : Set ACL for bucket.
   * Path:`PUT /<bucket-name>?acl`
@@ -172,7 +172,7 @@ Manage access rights for buckets and objects.
       '
       ```
 
-<figure><img src="../../../.gitbook/assets/image (31) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **GET Object ACL** : Get the ACL of an object.
   * Path:`GET /<bucket-name>/<object-key>?acl`
@@ -186,7 +186,7 @@ Manage access rights for buckets and objects.
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=eb53bff6d55ade68e688ea5af5b44ff9da9afb7b361e5e60563f6d0f3e4c763b'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (32) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (32) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **PUT Bucket Make Public:** Set up a Public Bucket
   * Path:`GET /<bucket-name>/?publicAccessBlock`
@@ -207,7 +207,7 @@ Manage access rights for buckets and objects.
       </PublicAccessBlockConfiguration>'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (33) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (33) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **GET Bucket Make Public:** Get public or private bucket information.
   * Path:`GET /<bucket-name>/?publicAccessBlock`
@@ -221,7 +221,7 @@ Manage access rights for buckets and objects.
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=9c9624d2ac082b98e6925444ab497746/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=041a0737e3e204ca2941069a3bab021ad54a8eb837fcbfd2ff8d2a3dd647d060'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (34) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **3. Versioning API** <a href="#id-3.-api-quan-ly-phien-ban-versioning" id="id-3.-api-quan-ly-phien-ban-versioning"></a>
 
@@ -243,7 +243,7 @@ Manage versions of objects in buckets.
       </VersioningConfiguration>'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (35) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (35) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **GET Bucket Versioning** : Check the bucket versioning status.
   * Path:`GET /<bucket-name>?versioning`
@@ -257,7 +257,7 @@ Manage versions of objects in buckets.
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=b45886dbf42a0a6d613a465e38e33f6e59b548c27f361798ea168335fe8243e3'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (36) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (36) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **GET Object Versions** : List versions of objects in the bucket.
   * Path:`GET /<bucket-name>?versions`
@@ -271,7 +271,7 @@ Manage versions of objects in buckets.
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=1b4454bcc74c22d919121588f4c26ccc921b69544510ae65de3fdb1c5c9ac274'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (37) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (37) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **4. API Lifecycle** <a href="#id-4.-api-lifecycle" id="id-4.-api-lifecycle"></a>
 
@@ -302,7 +302,7 @@ Lifecycle management for buckets and objects:
       </LifecycleConfiguration>'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (38) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (38) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **GET Bucket Lifecycle** : Get bucket lifecycle rule information.
   * Path:`GET /<bucket-name>?lifecycle`

@@ -4,19 +4,19 @@
 
 **Line chart** is a type of chart used to display data changes over time. A line chart is created by plotting a series of points and connecting them with straight lines.
 
-<figure><img src="../../../../.gitbook/assets/image (55) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (55) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Widget Configuration
 
-<figure><img src="../../../../.gitbook/assets/image (56) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (56) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style
 
 For a line chart, select **Line** as the Style in this section.
 
-<figure><img src="../../../../.gitbook/assets/image (57) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (57) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To change the line's weight and transparency, you can adjust using the following options:
 

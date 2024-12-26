@@ -12,13 +12,13 @@ Users can still delete a VPN. However, to delete it, the following steps must be
 
 Access VNG Cloud successfully, at the main dashboard, select **vNetwork** Service to redirect to vNetwork Dashboard or click here to access HCM03 vNetwork Dashboard [https://hcm-3-vnetwork.console.vngcloud.vn/overview](https://hcm-3-vnetwork.console.vngcloud.vn/overview)
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>VPN List</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>VPN List</p></figcaption></figure>
 
 ## **Delete VPN**
 
 **For the VPN that want to delete, click the 'Delete' action to perform the deletion**&#x20;
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Confirm to start deleting**
 

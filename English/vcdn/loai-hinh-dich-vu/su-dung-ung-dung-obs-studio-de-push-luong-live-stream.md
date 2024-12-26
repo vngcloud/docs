@@ -12,7 +12,7 @@ Below is a guide to using the OBS Studio application to push Live Stream.
 
 **Step 2** : Open the OBS app on your device and select **Settings**
 
-<figure><img src="../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (68) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3:** On the Settings page, continue to select **Stream** in the left Tab. In which:
 
@@ -20,6 +20,6 @@ Below is a guide to using the OBS Studio application to push Live Stream.
 * **Server** : `rtmp://vnpt.entrypoint.vcdn.live/xxxxxxxxxxxxxxxx/`(Live EP domain is provided when you create and your LiveApp can be found in Live Entrypoint configuration)
 * **Stream Key** : `demo1?u=xxxxxx&p=xxxxxxx` (Channel (demo1) you can enter as you like | Username and password you entered when initializing Live Entrypoint)
 
-<figure><img src="../../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (69) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 4:** After creating a Live CDN domain mapped to the Live App that has pushed the stream, the view link created will look like this:`https://domaincdn.vcdn.cloud/demo1/index.m3u8.`

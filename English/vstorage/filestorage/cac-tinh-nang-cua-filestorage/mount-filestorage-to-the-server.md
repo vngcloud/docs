@@ -1,41 +1,17 @@
-# Mount FileStorage to the server
+# Edit a File Storage
 
-Steps to mount FileStorage to a server via **NFS protocol:**
+On each storage file, you can edit some parameters, specifically:
 
-**Step 1:** Update package list and install NFS client:
+* **For NFS file storage** : Allow editing access rights (ACL) directly on the file by selecting **Edit** on the storage file you want to edit. However, editing ACL can cause disruption to this storage File for up to **10 seconds** . <mark style="color:red;">**Performing this action frequently will cause disruption to your storage File.**</mark>
 
-* **For Debian/Ubuntu:**
+<figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
 
-```
-sudo apt-get -y update && sudo apt-get install nfs-common
-```
+<figure><img src="../../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
 
-* **For Red Hat Enterprise Linux/CentOS:**
+* **For SMB file storage using Basic Authentication** : Allows operations such as adding new accounts, disabling, changing passwords, or deleting created authentication accounts.
 
-```
-sudo yum update && sudo yum install nfs-utils
-```
+<figure><img src="../../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
 
-**Step 2:** Create mount directory:
+<figure><img src="../../../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
 
-* For the command example below I have created the directory /mnt/nfs
-
-```
-sudo mkdir -p /mnt/nfs
-```
-
-**Step 3:** Mount FileStorage volume:
-
-* For example, the command below I mount FileStorage with name = demo\_test with mount directory = /mnt/nfs
-
-```
-sudo mount -t nfs -o vers=4,hard,timeo=600,retrans=3,rsize=1048576,wsize=1048576,resvport,async hcm04.efs.vngcloud.vn:/demo_test /mnt/nfs/
-```
-
-**Step 4** : Check mount:
-
-```
-df -h
-```
-
-These steps will help you mount a FileStorage file share on your server.
+* **For SMB storage files using AD Authentication** : Do not allow changes to Active Directory information; if changes are needed, <mark style="color:red;">**a new storage file should be created to ensure system stability.**</mark>

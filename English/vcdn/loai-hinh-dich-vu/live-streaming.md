@@ -8,7 +8,7 @@ The service supports broadcasting live content such as events, TV shows, and spo
 
 ## Model <a href="#so-do-hoat-dong" id="so-do-hoat-dong"></a>
 
-<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -44,7 +44,7 @@ First, you need to initialize a Live Entrypoint following these instructions:
 1. Access vCDN Portal at [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
 2. Select **Live Entrypoint** , then select **Create new.**
 
-<figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Continue to enter/select:
 
@@ -70,9 +70,9 @@ First, you need to initialize a Live Entrypoint following these instructions:
 
 4. Select **Submit** .
 
-<figure><img src="../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Step 2: Create a Live Streaming** <a href="#buoc-2-tao-live-streaming" id="buoc-2-tao-live-streaming"></a>
 
@@ -81,7 +81,7 @@ Next, you need to initiate a Live Streaming following the instructions below:
 1. Access vCDN Portal at [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
 2. Select **Live Streaming** , then select **Create new.**
 
-<figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Continue to enter/select:
 
@@ -91,13 +91,13 @@ Next, you need to initiate a Live Streaming following the instructions below:
     * **CDN Packaging** : The system will handle the "packaging" of content directly on the CDN. Choose CDN Packaging if you want the system to optimize processing time and reduce load from the source.
     * **Origin Packaging** : Package the content at the source (Origin), then the CDN only delivers it.
 
-<figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **CDN Configuration**
   * **Live Entrypoint** : Select the Live Entrypoint created from **step 1** as the data source.
   * **Channel:** Identifier of the live channel on the system.
 
-<figure><img src="../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Security:**
   * **HTTPS (HTTP/2)** : Enable or disable HTTPS security for the CDN stream. You can create a new **Certificate** by selecting **Add new** .
@@ -105,7 +105,7 @@ Next, you need to initiate a Live Streaming following the instructions below:
   * **Token Configuration** :
     * **Token Type** : Select the token type used to authenticate viewers. You can choose token type Akamai, SBD or VNG.
 
-<figure><img src="../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Access Filter:**
   * **IP Address CIDR** : Limit access based on IP address by selecting **Allow** / **Block** and entering the corresponding IP address or CIDR.
@@ -115,12 +115,12 @@ Next, you need to initiate a Live Streaming following the instructions below:
   * **Simple** : When selecting Simple, you only need to specify specific domains that are allowed access through **Allow Origin.**
   * **Advance** : When selecting Advance, in addition to specifying a specific domain, you need to configure more details about **Allow Header, Allow Method, Expose Header, Allow Credentials** allowed.
 
-<figure><img src="../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Caching**
   * **Caching Level** : Determines the CDN cache level.
 
-<figure><img src="../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Page Rules:** This feature helps customers optimize conditions and options to help the website demonstrate many different purposes. To create Page rules, please select **Create Page Rule** , a popup will appear, now you need to select:
   * **URL pattern:** need to apply pagerule, support declaration type “\*” represents a string of characters. For example: /trang\_landing\_cu.html. After entering URL pattern, select **Add new rule** . Each Rule when satisfying the condition of the requested URI will be able to optionally execute one of the following actions:
@@ -130,11 +130,11 @@ Next, you need to initiate a Live Streaming following the instructions below:
     * Deny Access
   * Select **Save changes** to save the changes.
 
-<figure><img src="../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (25) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (25) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (26) (1).png" alt="" width="349"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (26) (1) (1).png" alt="" width="349"><figcaption></figcaption></figure>
 
 
 

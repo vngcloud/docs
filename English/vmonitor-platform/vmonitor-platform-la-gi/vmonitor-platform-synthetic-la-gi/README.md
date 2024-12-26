@@ -7,7 +7,7 @@ vMonitor Platform Synthetic (also known as Synthetic Monitoring) is a tool that 
 * Monitor servers, web/apps in all environments, including private environments: For businesses with high network security requirements, Synthetic Monitoring allows the installation of a Synthetic private worker (an application set up within the enterprise infrastructure) to monitor internal infrastructures and applications.
 * Achieve performance goals: Most organizations have Service Level Objectives (SLOs) or other standards that they expect their applications to meet. Synthetic Monitoring allows you to continuously track whether you are meeting those goals and identify where deviations are occurring, helping you to make appropriate adjustments.
 
-<figure><img src="../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

@@ -4,7 +4,7 @@
 
 Secure tokens are structured codes that protect content from being stolen and distributed elsewhere. On vCDN, we support you to enable the Secure token feature when creating or editing a previously created CDN.
 
-<figure><img src="../../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (70) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -12,7 +12,7 @@ Secure tokens are structured codes that protect content from being stolen and di
 
 When the end user needs to access the content that has been set to activate the "Secure token", the system will check the request to see if it satisfies the formula or not. If it satisfies, the end user can get the content. If not, the request will be rejected.
 
-<figure><img src="../../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (71) (1).png" alt=""><figcaption></figcaption></figure>
 
 In there:
 
@@ -41,7 +41,7 @@ In there:
 
 CORS is a vCDN output security feature that allows access with configurations such as: domain name, IP address, Header, Method, Expose Header to access the vCDN output Link.
 
-<figure><img src="../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (72) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -49,11 +49,11 @@ CORS is a vCDN output security feature that allows access with configurations su
 
 * **WhiteList IP:** You can add IP lists of Origins that are allowed to access the output link by selecting **Allow** and entering **the IP Address** or **CIDR** you want:
 
-<figure><img src="../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (73) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **BlackList IP:** In addition, you can also block IPs that do not allow Origin to access the output link of vCDN:
 
-<figure><img src="../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (74) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -61,11 +61,11 @@ CORS is a vCDN output security feature that allows access with configurations su
 
 * Additionally, you can create a list of origins in which countries the output link can be accessed by selecting **Allow** and entering the desired **country code :**
 
-<figure><img src="../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (75) (1).png" alt=""><figcaption></figcaption></figure>
 
 * You can also set to not allow Origins in a certain country to access the output link by selecting **Block** and entering the desired **country code :**
 
-<figure><img src="../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (76) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -73,8 +73,8 @@ CORS is a vCDN output security feature that allows access with configurations su
 
 * You can allow Origins with domains in the list to access the output link by selecting **Allow** and entering the desired **domain :**
 
-<figure><img src="../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (77) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Finally, you can disallow Origin to have domains in the list that can access the output link by selecting **Block** and entering the desired **domain :**
 
-<figure><img src="../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (78) (1).png" alt=""><figcaption></figcaption></figure>
