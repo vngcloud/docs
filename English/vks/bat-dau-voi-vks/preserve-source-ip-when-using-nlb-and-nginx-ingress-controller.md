@@ -38,7 +38,7 @@ helm install nginx-ingress-controller oci://ghcr.io/nginxinc/charts/nginx-ingres
 kubectl edit cm -n kube-system nginx-ingress-controller
 ```
 
-* The code you need to add is as follows:
+* If you arenot using <code>cert-manager</code>, the code you need to add is as follows:
 
 ```
 data:
@@ -46,6 +46,17 @@ data:
   real-ip-header: proxy_protocol
   real-ip-recursive: "True"
   set-real-ip-from: 0.0.0.0/0
+```
+
+* If you are using <code>cert-manager</code>, the code you need to add is as follows:
+
+```
+data:
+  proxy-protocol: "True"
+  real-ip-header: proxy_protocol
+  real-ip-recursive: "True"
+  set-real-ip-from: 0.0.0.0/0
+  use-proxy-protocol: "True"
 ```
 
 ***

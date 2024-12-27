@@ -38,7 +38,7 @@ helm install nginx-ingress-controller oci://ghcr.io/nginxinc/charts/nginx-ingres
 kubectl edit cm -n kube-system nginx-ingress-controller
 ```
 
-* Đoạn mã bạn cần thêm như sau:
+* Nếu bạn không sử dụng <code>cert-manager</code>, bạn cần thêm đoạn code sau vào tệp tin ConfigMap:
 
 ```
 data:
@@ -46,6 +46,17 @@ data:
   real-ip-header: proxy_protocol
   real-ip-recursive: "True"
   set-real-ip-from: 0.0.0.0/0
+```
+
+* Nếu bạn có sử dụng <code>cert-manager</code>, bạn cần thêm đoạn code sau vào tệp tin ConfigMap:
+
+```
+data:
+  proxy-protocol: "True"
+  real-ip-header: proxy_protocol
+  real-ip-recursive: "True"
+  set-real-ip-from: 0.0.0.0/0
+  use-proxy-protocol: "True"
 ```
 
 ***
