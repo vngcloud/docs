@@ -14,21 +14,23 @@ Sử dụng tài liệu này để hiểu thêm về tính năng tự động gi
 
 **2.2 Đối với các sản phẩm, dịch vụ vServer**
 
-* **Bật "Tự động gia hạn" khi khởi tạo**
-  * Bước 1: Cấu hình thông tin dịch vụ tại trang sản phẩm → Nhấn "Khởi tạo" để chuyển đến trang thanh toán
-  *   Bước 2: Tại trang thanh toán, tick vào "Auto-renew" để bật tính năng tự động gia hạn
+*   **Bật "Tự động gia hạn" khi khởi tạo**
 
-      <figure><img src="https://docs.vngcloud.vn/download/attachments/49649295/image2023-12-12_10-49-53.png?version=1&#x26;modificationDate=1702352993000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+    * Bước 1: Cấu hình thông tin dịch vụ tại trang sản phẩm → Nhấn "**Khởi tạo**" để chuyển đến trang thanh toán
+    * Bước 2: Tại trang thanh toán, tick vào "**Auto-renew**" để bật tính năng tự động gia hạn
+
+    <figure><img src="../../../../.gitbook/assets/image (919).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="https://docs.vngcloud.vn/download/attachments/49649295/image2023-12-12_10-49-53.png?version=1&#x26;modificationDate=1702352993000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 * **Bật/Tắt trong quá trình sử dụng dịch vụ**\
 
   * Bước 1: Điều hướng đến trang Resource Billing trong dịch vụ vServer: [https://hcm-3.console.vngcloud.vn/vserver/billing](https://hcm-3.console.vngcloud.vn/vserver/billing)
-  *   Bước 2: Nhấn vào biểu tượng ba chấm tại vị trí tài nguyên cần thực hiện thay đổi. Xem hình bên dưới
+  * Bước 2: Nhấn vào biểu tượng ba chấm tại vị trí tài nguyên cần thực hiện thay đổi. Xem hình bên dưới
+    * Chọn **"Tự động gia hạn"** để bật tính năng tự động gia hạn nếu chưa bật khi khởi tạo
+    * Chọn **"Cập nhật tự động gia hạn"** để điều chỉnh thời gian sử dụng tài nguyên được áp dụng khi hệ thống thực hiện tự động gia hạn
+    * Chọn **"Tắt tự động gia hạn"** để tắt tính năng tự động gia hạn nếu không có nhu cầu
 
-      * Chọn **"Tự động gia hạn"** để bật tính năng tự động gia hạn nếu chưa bật khi khởi tạo
-      * Chọn **"Cập nhật tự động gia hạn"** để điều chỉnh thời gian sử dụng tài nguyên được áp dụng khi hệ thống thực hiện tự động gia hạn
-      * Chọn **"Tắt tự động gia hạn"** để tắt tính năng tự động gia hạn nếu không có nhu cầu
-
-      <figure><img src="https://docs.vngcloud.vn/download/attachments/49649295/image2023-12-12_11-10-15.png?version=1&#x26;modificationDate=1702354215000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (920).png" alt=""><figcaption></figcaption></figure>
 
 **2.3 Đối với sản phẩm, dịch vụ vMonitor**
 
@@ -36,12 +38,9 @@ Sử dụng tài liệu này để hiểu thêm về tính năng tự động gi
   * Bước 1: Cấu hình thông tin dịch vụ tại trang sản phẩm → Nhấn "Khởi tạo" để chuyển đến trang thanh toán
   * Bước 2: Tại trang thanh toán, tick vào "Auto-renew" để bật tính năng tự động gia hạn
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49649295/image2023-12-22_11-43-34.png?version=1&#x26;modificationDate=1703220215000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (921).png" alt=""><figcaption></figcaption></figure>
 
-\
-
-
-![(star)](https://docs.vngcloud.vn/s/en\_US/8100/e533a30abc9e1cf90ba3519e12647de186f0ee76/\_/images/icons/emoticons/star\_yellow.svg) _Lưu ý: Hiện tại các dịch vụ trong sản phẩm vMonitor chưa hỗ trợ tắt tự động gia hạn khi người dùng bật lúc khởi tạo. Để tắt tự động gia hạn khi không có nhu cầu, vui lòng liên hệ đội ngũ 247 để hỗ trợ thêm._
+_Lưu ý: Hiện tại các dịch vụ trong sản phẩm vMonitor chưa hỗ trợ tắt tự động gia hạn khi người dùng bật lúc khởi tạo. Để tắt tự động gia hạn khi không có nhu cầu, vui lòng liên hệ đội ngũ 247 để hỗ trợ thêm._
 
 #### **3. Quy trình tự động gia hạn tài nguyên** <a href="#tudonggiahantainguyen-chinhsachvadieukhoan-3.quytrinhtudonggiahantainguyen" id="tudonggiahantainguyen-chinhsachvadieukhoan-3.quytrinhtudonggiahantainguyen"></a>
 
@@ -57,5 +56,3 @@ Tự động gia hạn tài nguyên là **tính năng của hệ thống**, giú
   * Hệ thống gửi thông tin tài nguyên được gia hạn thành công/thất bại đến người dùng
   * Hệ thống phát sinh hóa đơn tương ứng với khoảng thời gian được gia hạn thêm
 * Với các tài nguyên đã kết thúc sẽ không áp dụng tự động gia hạn. Có nghĩa khi tài nguyên được bật tự động gia hạn, nhưng quá trình tự động gia hạn thất bại do thiếu credit, dẫn đến việc tài nguyên bị hết hạn, trong trường hợp này người dùng cần chủ động thực hiện khôi phục tài nguyên để tiếp tục sử dụng dịch vụ. Tham khảo hướng dẫn [Khôi phục tài nguyên](khoi-phuc-tai-nguyen.md)
-
-\
