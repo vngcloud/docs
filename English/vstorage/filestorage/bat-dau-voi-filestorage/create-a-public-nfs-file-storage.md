@@ -27,7 +27,7 @@ To create a Private NFS (Network File System) on the File Storage system, you ca
   * **All:** Allow all IPs to have RO (Read-Only) or RW (Read-Write) access.
   * **Restricted:** Only allow specific IPs to access with RO or RW permissions.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 5:** Select **Create File Storage.**
 
@@ -37,9 +37,9 @@ To create a Private NFS (Network File System) on the File Storage system, you ca
 
 After the system has finished initializing your File Storage, to get the mount guide, please select **Action** then select **Mount Guide**
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

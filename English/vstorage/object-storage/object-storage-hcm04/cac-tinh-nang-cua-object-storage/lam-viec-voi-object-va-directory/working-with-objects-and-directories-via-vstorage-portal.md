@@ -27,7 +27,7 @@ To download one or more objects, please follow the steps below:
 2. Select the **objects** you want to download.
 3. Select the action icon, then select the **Download button**
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Search object/folder <a href="#tim-kiem-object-folder" id="tim-kiem-object-folder"></a>
 
@@ -37,7 +37,7 @@ To search for an object/ folder, please follow the steps below:
 2. In the **Find objects by prefix** box , you can search for objects/folders by prefix by entering the character string that is the prefix you want to search for.
 3. Press **Enter or select the Search** icon
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Move object <a href="#di-chuyen-object" id="di-chuyen-object"></a>
 

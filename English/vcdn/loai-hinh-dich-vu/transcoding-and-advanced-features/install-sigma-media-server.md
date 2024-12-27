@@ -22,7 +22,7 @@ that you want to use for your server. You also need to select an existing Server
 
 **At this point, the vServer** system will initialize a Server corresponding to the configuration you selected. Please wait until the server creation is complete and continue with the following steps.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

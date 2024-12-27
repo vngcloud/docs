@@ -19,4 +19,4 @@ vCDN's "Developer" mode is a special feature that allows developers to test, deb
 
 * On vCDN, to enable/disable Developer mode, you can select **Enable/Disable** in Development mode:
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -27,7 +27,7 @@ For example:
 | "request\_id":"1234567890","user\_id":"vngcloud1"} |                                                                                                                                                                                                |                                                                               |                |
 |                                                    | <p>{<br>"timestamp": "2023-07-23T12:34:56Z",<br>"level": "error",<br>"message": "There was an error processing the request",<br>"request_id": "1234567890",<br>"user_id": "vngcloud1"<br>}</p> |                                                                               |                |
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Store and reuse Parsing rules <a href="#luu-tru-va-tai-su-dung-parsing-rule" id="luu-tru-va-tai-su-dung-parsing-rule"></a>
 

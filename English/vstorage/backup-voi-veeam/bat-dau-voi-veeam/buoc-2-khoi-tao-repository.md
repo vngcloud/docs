@@ -59,11 +59,11 @@ Updating
 
 **Step 2:** Select "**Backup Infrastructure**", then "**Backup Repositories**", click the "**Add Repository**" button to start setting up the Repository:
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="477"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="477"><figcaption></figcaption></figure>
 
 **Step 3**: In the Add Backup Repository screen, select the "**Object storage**" option.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="423"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="423"><figcaption></figcaption></figure>
 
 **Step 4:** In the Object Storage screen, choose the "**S3 Compatible**" option or select the appropriate object choice for backup.
 
