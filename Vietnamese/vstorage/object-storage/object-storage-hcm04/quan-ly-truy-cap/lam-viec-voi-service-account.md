@@ -49,7 +49,7 @@ Sau khi bạn thực hiện 10 bước bên trên, một tài khoản Service Ac
 8. Chọn **Resources**: chọn **All resources.**&#x20;
 9. Chọn **Request conditions:** nhập điều kiện đặc biệt cho policy nếu có.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Attach IAM Policy vào Service Account
 
