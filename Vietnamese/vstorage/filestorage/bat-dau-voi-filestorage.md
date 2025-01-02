@@ -8,4 +8,4 @@ Sử dụng hướng dẫn này để bắt đầu với File Storage. Bạn s�
 * [Khởi tạo một Private NFS File Storage](bat-dau-voi-filestorage/khoi-tao-mot-private-nfs-file-storage-coming-soon.md)
 * [Khởi tạo một Private SMB File Storage](bat-dau-voi-filestorage/khoi-tao-mot-private-smb-file-storage-coming-soon/)
   * [Khởi tạo một Private SMB File Storage không có Active Directory](bat-dau-voi-filestorage/khoi-tao-mot-private-smb-file-storage-coming-soon/khoi-tao-mot-private-smb-file-storage-khong-co-active-directory.md)
-  * [Khởi tạo một Private SMB File Storage có Active Directory](bat-dau-voi-filestorage/khoi-tao-mot-private-smb-file-storage-coming-soon/khoi-tao-mot-private-smb-file-storage-co-active-directory/)
+  * [Khởi tạo một Private SMB File Storage có Active Directory](bat-dau-voi-filestorage/khoi-tao-mot-private-smb-file-storage-coming-soon/khoi-tao-mot-private-smb-file-storage-co-active-directory.md)

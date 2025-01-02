@@ -1,8 +1,16 @@
-# Kiểm tra kết nối từ Active Directory Domain Controller, DNS Server trong VPC của bạn
+# Kiểm tra kết nối của Active Directory Domain Controller, DNS Server trong VPC của bạn
+
+## Tổng quan
+
+Khi bạn thực hiện mapping File Storage với **Windows Server** có tích hợp **Active Directory**, cần đảm bảo rằng **Active Directory Domain Controller** và **DNS Server** của bạn đã được kết nối trên VPC/ Subnet của bạn. Với SMB File Storage, hệ thống vStorage đã tự động mở các port cần thiết cho việc kết nối trong VPC/ Subnet của bạn. Đối với Active Directory Domain Controller, DNS Server, bạn cần thực hiện mở các kết nối theo mô tả trong hình bên dưới:&#x20;
+
+
+
+<figure><img src="../../../../../.gitbook/assets/image (922).png" alt="" width="563"><figcaption></figcaption></figure>
+
+***
 
 ## Hướng dẫn kiểm tra kết nối
-
-Khi bạn thực hiện mapping File Storage với **Windows Server** có tích hợp **Active Directory**, cần đảm bảo rằng **Active Directory Domain Controller** và **DNS Server** của bạn đã được kết nối đúng với **VPC** và **Subnet**.
 
 Giả sử, bạn đã khởi tạo:&#x20;
 
