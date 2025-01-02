@@ -33,7 +33,7 @@ b. Đối với **IAM User Account** và **Service Account**: bạn có thể l�
 
 * **Ngoài ra, các quyền ReadBucketACL, WriteBucketACL, ReadObjectACL, WriteObjectACL:** Cho phép người dùng có thể xem thông tin/ cập nhật cấu hình ACLs của bucket hoặc object.
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Chọn **Update** để lưu lại cấu hình đã thiết lập cho ACLs.
 

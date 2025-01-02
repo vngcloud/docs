@@ -31,7 +31,7 @@ Với tính năng đồng bộ ngày kết thúc, bạn có thể quản lý t�
    * Bước 2: Xem lại các chi phí phát sinh cho từng tài nguyên, tương ứng với thời gian hạn thêm
    *   Bước 3: Nhấn Match end time / Đồng bộ gia hạn để xác nhận thực hiện gia hạn
 
-       <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5. **Thực hiện thanh toán tại trang thanh toán để hoàn tất quá trình:**
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
