@@ -66,7 +66,7 @@ Purge by BEGIN: Sẽ xóa hết các resource đang được Cache ở CDN bắt
 
 * Tương tự như Purge by ALL, trước khi Purge Cache các file đã được Cache ở CDN. Tiến hành Purge Cache: Chọn **Service** và **CDN** tương ứng và **Purge by BEGIN**. Tại URI nhập: `/purge_lab/text*` (xóa cache tất cả các file text\* ở vCDN).
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Sau khi Purge kiểm tra file `/purge_lab/text*` đã được gọi về Origin để lấy nội dung mới nhất.
 

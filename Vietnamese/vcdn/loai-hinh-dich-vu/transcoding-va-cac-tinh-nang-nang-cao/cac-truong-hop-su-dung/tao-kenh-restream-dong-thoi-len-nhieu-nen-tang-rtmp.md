@@ -26,7 +26,7 @@
 
 **Bước 5:** Tại màn hình **Create Input Transcode**, bạn chọn kiểu đầu vào **RTMP** như sau:
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 6:** Sau khi đóng màn hình **Create** bên trên, hệ thống sẽ hiển thị **danh sách** các đầu vào của kênh. Tại đây, bạn cần **chọn** các đầu vào tương ứng:
 

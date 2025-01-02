@@ -125,7 +125,7 @@ default = "img-a34d639b-e070-46ff-8b91-addf4fac45b4"
 * **volume\_type\_name**: chỉ định IOPS cho root disk và data disk, ví dụ: **SSD-3000, SSD-200, SSD-400,** bạn có thể xem danh sách Volume Type trên vServer Portal/ [{Tab Volume Type}](https://hcm-3.console.vngcloud.vn/vserver/v-server/system-image)\
 
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **root\_disk\_size**: chỉ định dung lượng ổ root disk, ví dụ: **20**
 * **data\_disk\_size**: chỉ định dung lượng ổ root disk, ví dụ: **50**

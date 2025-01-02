@@ -78,7 +78,7 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 * Thay đổi **password** vào **GUI**
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Tiến hành **reload**
 
@@ -112,7 +112,7 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 * Cấu hình **IP** cho **LAN**
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Sau đó tiến hành **Add a new gateway:** tiến hành nhập **Gateway cho LAN Interface**
 

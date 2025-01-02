@@ -38,9 +38,9 @@ Trước khi có thể thực hiện khởi tạo Windows server, hãy đảm b�
 
 Security Groups trên Windows server cần mở thêm các port sau để share được dữ liệu:
 
-* Với File Storage NFS: mở thêm port **2049**
-* Với File Storage SMB có Basic Authentication: mở thêm port **445**
-* Với File Storage SMB Có Active Directory Authentication: mở thêm list port để có thể kết nối được từ File Storage đến AD.
+* Với File Storage NFS: **Outbound** cần mở thêm port **2049**
+* Với File Storage SMB có Basic Authentication: **Outbound** cần mở thêm port **445**
+* Với File Storage SMB Có Active Directory Authentication: **Inbound** cần mở thêm list port để có thể kết nối được từ File Storage đến AD.
 {% endhint %}
 
 ***
@@ -151,7 +151,7 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 
 1. Thực hiện mở **DNS Manager** bằng cách chọn **Tools**, sau đó chọn **DNS**
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt="" width="336"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (2).png" alt="" width="336"><figcaption></figcaption></figure>
 
 2. Trong DNS Manager, chọn vào DNS đang có và tiếp tục nhấp chuột phải vào **Forward Lookup Zones** và chọn **New Zone**
 
@@ -173,9 +173,13 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 
 <figure><img src="../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
-7. Tại màn hình **Dynamic Update**: Chọn **Do not allow dynamic updates**, sau đó chọn **Next**
+7. Tại màn hình **Dynamic Update**: Chọn:
 
-<figure><img src="../../../../.gitbook/assets/image (14) (3).png" alt="" width="509"><figcaption></figcaption></figure>
+* **Allow only secure dynamic updates (Recommended for Active Directory):** nếu bạn đã có sẵn **Active Directory** integrate với **zone** của bạn. Nếu bạn chọn phương án này, <mark style="background-color:blue;">Window servers sẽ tự động tạo một</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**Reverse Lookup Zone**</mark><mark style="background-color:blue;">, bạn có thể bỏ qua các bước tại</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**Tạo một Reverse Lookup Zone**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">bên dưới.</mark>
+* **Do not allow dynamic updates:** nếu bạn chưa có sẵn **Active Directory** nào integrate với **zone** của bạn. Nếu bạn chọn phương án này, bạn cần thực hiện <mark style="background-color:orange;">tạo Reverse Lookup Zone thủ công</mark> theo hướng dẫn bên dưới.&#x20;
+* Sau đó, bạn chọn **Next.**&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt="" width="509"><figcaption></figcaption></figure>
 
 8. Chọn **Finish** để hoàn thành việc tạo New Zone
 
@@ -191,64 +195,74 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 
 11. Tại màn hình **New Host,** bạn cần:
 
-* **Name**: Nhập tên Windows server của bạn (VD: `demo-smb`).
+* **Name**: Nhập tên Windows server của bạn (VD: `demo-server-smb`).
 * **IP Address**: Nhập địa chỉ IP tĩnh của Domain Controller (VD: `10.50.3.9`).
 * Nhấn **Add Host**.
 
 11. Nếu bạn chọn **Create associated pointer (PTR) record**, bạn cần phải tạo một **Reverse Loopup Zone**, các bước khởi tạo tương tự tạo **Forward Lookup Zone**.
 
-<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="347"><figcaption></figcaption></figure>
 
 ### Tạo một Reverse Lookup Zone
+
+Nếu bạn chưa có sẵn **Active Directory** nào integrate với **zone** của bạn hoặc bạn muốn tự quản lý Reverse Lookup Zone, bạn có thể thực hiện tạo Reverse Lookup Zone theo hướng dẫn sau.
+
+<details>
+
+<summary>Khởi tạo Reverse Lookup Zone </summary>
 
 Tiếp theo, bạn sẽ cần tạo một Reverse Lookup Zone để chuyển IP thành domain. Cụ thể các bước thực hiện như sau:
 
 1. Thực hiện mở **DNS Manager** bằng cách chọn **Tools**, sau đó chọn **DNS**
 
-<figure><img src="../../../../.gitbook/assets/image (917).png" alt="" width="336"><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (917).png" alt="" data-size="original">
 
 2. Trong DNS Manager, chọn vào DNS đang có và tiếp tục nhấp chuột phải vào **Reverse Lookup Zones** và chọn **New Zone**
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt="" data-size="original">
 
 3. Tại màn hình **Zone Type**: chọn **Primary zone,** sau đó chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt="" data-size="original">
 
 4. Màn hình Tạo zone mới hiển thị, chọn **IPv4 Reverse Lookup Zone** tiếp tục chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (4) (1) (1).png" alt="" data-size="original">
 
 5. Tại màn hình **Reverse Lookup Zone Name**: nhập Network ID, Network ID tại đây chính là subnet của IP mà bạn cần thực hiện reverse lookup và chọn **Next**. Ví dụ: `10.50.3`.
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt="" data-size="original">
 
 6. Tại màn hình **Zone File**, bạn có thể tạo Zone File mới hoặc chọn 1 Zone File đã có sẵn, sau đó chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt="" data-size="original">
 
 7. Tại màn hình **Dynamic Update**: Chọn **Do not allow dynamic updates**, sau đó chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt="" data-size="original">
 
 8. Chọn **Finish** để hoàn thành việc tạo New Zone
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (7) (1).png" alt="" data-size="original">
 
 9. Sau khi chọn **Finish**, bạn sẽ thấy Reverse lookup zone trên màn hình chính như hình
 
-<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (11).png" alt="" data-size="original">
 
 10. Sau khi tạo xong **reverse lookup zone**, bạn cần tạo **Pointer (PTR)** bằng cách chọn vào **Zone** vừa tạo, nhần chuột phải và chọn **New Pointer (PTR)**
 
-<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (16).png" alt="" data-size="original">
 
 11. Tại màn hình **New Resource Record,** bạn cần:
     1. **Host IP Address**: Nhập địa chỉ IP tĩnh của Domain Controller (VD: `10.50.3.9`).
     2. **Host Name:** Nhập tên Windows server của bạn (VD: `demo-smb`).
     3. Nhấn **OK**.
 
-<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (10).png" alt="" data-size="original">
+
+
+
+</details>
 
 ### Kiểm tra DNS name&#x20;
 
@@ -390,13 +404,15 @@ Address: 10.50.3.9
 
 * **Window Authentication: c**ấu hình quyền truy cập thông qua **Active Directory Authentication**
   * **Active Directory Authentication:** Nếu Windows server của bạn sử dụng Active Directory để quản lý người dùng và quyền truy cập, thì AD Authentication sẽ dễ dàng tích hợp và quản lý tập trung. Bạn có thể xác thực thông qua Active Directory domain name, DNS server IP addresses, Username, Password trên Active Directory của bạn. Ví dụ, ứng với Avtive Directory đã tạo bên trên, tôi sẽ nhập vào:
-    * **Active Directory domain name**: Chính là **Root domain name** bạn đã tạo ở bước **Cài đặt và cấu hình Active Directory Domain Services**. Ví dụ: `example.local`
+    * **Active Directory domain name**:&#x20;
+      * <mark style="background-color:blue;">Nếu Window server của bạn chỉ có</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**1 Active Directory**</mark><mark style="background-color:blue;">, nếu DNS domain name của bạn là</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">`example.local`</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">và tên của máy chủ Active Directory là</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">`demo-server-smb`</mark><mark style="background-color:blue;">, thì</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**Active Directory Domain Name**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">của bạn sẽ là</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">`example.local`</mark>
+      * <mark style="background-color:blue;">Nếu Window server của bạn có</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**nhiều Active Directory**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">và tất cả chúng đều sử dụng DNS domain name</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">`example.local`</mark><mark style="background-color:blue;">, thì</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**Active Directory Domain Name**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">của bạn sẽ là</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">`demo-server-smb.example.local.`</mark><mark style="background-color:blue;">Việc này giúp tránh xung đột tên miền khi bạn có nhiều AD.</mark>
     * **DNS server IP Address**: Địa chỉ địa chỉ IP DNS Server, thường cũng chính là địa chỉ IP tĩnh của VM, ví dụ: `10.50.3.9.` Nếu bạn có 2 DNS IP, bạn có thể nhập theo mẫu `10.50.3.3,10.50.3.9`
     * **Username:** Tên tài khoản admin, ví dụ `Administrator`
     * **Password**: Mật khẩu bạn đã tạo ở bước **Cài đặt và cấu hình Active Directory Domain Services**, ví dụ: `123456789aA@`
     * **Confirm Password:** Xác nhận mật khẩu, ví dụ: `123456789aA@`
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Chọn **Create File Storage.**
 

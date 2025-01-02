@@ -68,7 +68,7 @@ _chỉ để lại:_
 
 * **flavor\_id**: cấu hình vServer mà bạn sẽ khởi tạo ví dụ: flav-e2028a81-cc75-47e4-8af1-9eef2f857f84 (s-general-2x4) ,... bạn có thể xem danh sách khi tạo vServer trên Portal/ [{Tab Flavors}](https://hcm-3.console.vngcloud.vn/vserver/v-server/flavor).
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | `variable "project_id"` `{  type`    `= string  default = "pro-462803f3-6858-466f-bf05-df2b33faa360"}variable "s_general_4x8"` `{  type`    `= string  default = "flav-05f97524-0410-46a4-87a8-af92aa759231"}variable "ubuntu_20_04"` `{  type`    `= string  default = "img-a34d639b-e070-46ff-8b91-addf4fac45b4"}` |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

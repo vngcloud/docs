@@ -151,7 +151,7 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 
 1. Thực hiện mở **DNS Manager** bằng cách chọn **Tools**, sau đó chọn **DNS**
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt="" width="336"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (2).png" alt="" width="336"><figcaption></figcaption></figure>
 
 2. Trong DNS Manager, chọn vào DNS đang có và tiếp tục nhấp chuột phải vào **Forward Lookup Zones** và chọn **New Zone**
 
@@ -229,11 +229,11 @@ Tiếp theo, bạn sẽ cần tạo một Reverse Lookup Zone để chuyển IP 
 
 7. Tại màn hình **Dynamic Update**: Chọn **Do not allow dynamic updates**, sau đó chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Chọn **Finish** để hoàn thành việc tạo New Zone
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 9. Sau khi chọn **Finish**, bạn sẽ thấy Reverse lookup zone trên màn hình chính như hình
 
@@ -396,7 +396,7 @@ Address: 10.50.3.9
     * **Password**: Mật khẩu bạn đã tạo ở bước **Cài đặt và cấu hình Active Directory Domain Services**, ví dụ: `123456789aA@`
     * **Confirm Password:** Xác nhận mật khẩu, ví dụ: `123456789aA@`
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Chọn **Create File Storage.**
 

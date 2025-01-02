@@ -83,7 +83,7 @@ Ví dụ, đối với kết quả bên dưới, node trong cụm có label `nvi
     kubectl -n gpu-operator exec -it $POD_NAME -- nvidia-smi
     ```
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -448,7 +448,7 @@ kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
     kubectl get --raw /apis/custom.metrics.k8s.io/v1beta1 | jq -r . | grep DCGM
     ```
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Bây giờ, bạn hãy chạy lệnh bên dưới để chuyển Prometheus Adapter tới máy localhost của bạn và sau đó kiểm tra các metrics đã thu thập được thông qua [http://localhost:9090](http://localhost:9090)
 

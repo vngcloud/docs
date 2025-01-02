@@ -4,7 +4,7 @@
 
 Để kiểm tra hiệu suất IOPS (Input/Output Operations Per Second) trên một Volume, bạn có thể sử dụng công cụ `fio.`
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Cảnh báo**
@@ -32,7 +32,7 @@ Bên dưới là hướng dẫn chi tiết và kết quả mẫu cho 3 bài test
 
 1. Tạo một server với ổ đĩa Volume loại **NVME** với IOPS **5000** tại trang chủ vServer:
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt="" width="563"><figcaption></figcaption></figure>
 
 2. **Kết nối vào Server** của bạn. Để biết thêm thông tin hãy xem hướng dẫn [Kết nối vào máy chủ ảo](../server/ket-noi-vao-may-chu-ao/).
 3. Chạy lệnh sau để cài đặt **FIO**:
@@ -116,7 +116,6 @@ TGS: (g=0): rw=randrw, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioe
 ...
 fio-3.28
 Starting 8 processes
-TGS: Laying out IO file (1 file / 4096MiB)
 Jobs: 1 (f=1): [_(1),m(1),_(6)][100.0%][r=14.5MiB/s,w=4960KiB/s][r=3719,w=1240 IOPS][eta 00m:00s]
 TGS: (groupid=0, jobs=1): err= 0: pid=1454: Fri Dec 27 08:37:31 2024
   read: IOPS=474, BW=1899KiB/s (1944kB/s)(3070MiB/1655679msec)
@@ -542,11 +541,11 @@ Hiện tại, hệ thống vServer và vMonitor Platform đã tích hợp sẵn 
 2. Chọn mục **Dashboard**, sau đó chọn **All VNG Cloud**
 3. Tiếp tục tìm và chọn vào **Dashboard** chứa tên server của bạn, tên **Dashboard** này sẽ có định dạng: `vServer-tên-server-xxxx`
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 4. Tại màn hình chi tiết **Dashboard**, bạn có thể thấy biểu đồ thể hiện thông số IOPS tại biểu đồ bên dưới:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
