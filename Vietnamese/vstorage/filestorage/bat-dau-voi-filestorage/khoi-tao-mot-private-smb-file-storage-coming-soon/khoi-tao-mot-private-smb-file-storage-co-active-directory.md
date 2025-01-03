@@ -92,7 +92,7 @@ Sau khi bạn đã kết nối được vào Windows server, bạn cần đảm 
     * **Subnet Mask:** Subnet tương ứng, ví dụ: 255.0.0.0
     * **Preferred DNS server:** địa chỉ IP của DNS Domain (thường cũng chính là địa chỉ IP tĩnh của VM)  (bạn có thể bổ sung sau khi đã khởi tạo DNS domain theo hướng dẫn bên dưới)
 
-<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (923).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
