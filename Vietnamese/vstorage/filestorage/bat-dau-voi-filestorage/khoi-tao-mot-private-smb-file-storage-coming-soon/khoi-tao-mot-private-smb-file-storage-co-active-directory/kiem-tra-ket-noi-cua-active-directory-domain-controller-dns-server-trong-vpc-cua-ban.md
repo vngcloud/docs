@@ -31,6 +31,7 @@ Giả sử, bạn đã khởi tạo:&#x20;
   * **Server name**: `my-window-server`
   * **DNS Domain**: `example.local`
   * **DA Domain Name**: `example.local`
+  * AD\_NETBIOS\_NAME=EXAMPLE
   * **DNS server IP addresses**: `10.50.3.10`
   * **Security Group**: Đã/ Chưa mở một số port cần thiết.
 * **SMB File Storage**:
@@ -93,7 +94,8 @@ Usage: /usr/local/sbin/efs_check.sh [option...] {--install-packages|--check-dns|
 <pre class="language-bash"><code class="lang-bash">export \
 HOST_NAME=&#x3C;Bất kỳ tên nào mà bạn mong muốn> \
 <strong>AD_DOMAIN_NAME=&#x3C;AD Domain name đã tạo> \
-</strong>IP_DNS=&#x3C;DNS server IP addresses> \
+</strong>AD_NETBIOS_NAME=&#x3C;NetBIOS bạn đã tạo cho AD của bạn> \
+IP_DNS=&#x3C;DNS server IP addresses> \
 USER_NAME=&#x3C;Username> \
 USER_PASS=&#x3C;Password>
 </code></pre>
@@ -104,6 +106,7 @@ Ví dụ:
 export \
 HOST_NAME="VNG-CHECK-CONNECT" \ -- Nhập tối đa 15 ký tự
 AD_DOMAIN_NAME="example.local" \
+AD_NETBIOS_NAME="VNGCLOUD" \
 IP_DNS="10.50.3.10" \
 USER_NAME="Administrator" \
 USER_PASS="987654321aA@"
