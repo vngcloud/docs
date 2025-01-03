@@ -104,7 +104,7 @@ Bên dưới là hướng dẫn thực hiện cập nhật Upgrade Policy trên 
 * **Chọn một hoặc nhiều ngày** trong tuần mà hệ thống VKS có thể thực hiện auto-upgrade (ví dụ: Monday, Tuesday, ...).
 * **Chọn một mốc thời gian** cụ thể mà bạn mong muốn hệ thống VKS thực hiện auto-upgrade (ví dụ: 20:00 (08:00 PM - theo múi giờ UTC+07:00)
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Chọn **Create Kubernetes cluster/ Update Cluster.** Hãy chờ vài phút để chúng tôi khởi tạo/ chỉnh sửa Cluster của bạn, trạng thái của Cluster lúc này là **Creating/ Updating**.
 

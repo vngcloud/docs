@@ -9,7 +9,7 @@ Sau khi tạo bucket, lúc này bạn có thể tải các object lên bucket. O
 3. Chọn **Choose files to upload** hoặc kéo tệp tin từ thiết bị cá nhân của bạn muốn tải lên vào vùng này.
 4. Sau khi kéo hoặc chọn một hay nhiều tệp tin vào vùng này. Chọn **Upload**.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**

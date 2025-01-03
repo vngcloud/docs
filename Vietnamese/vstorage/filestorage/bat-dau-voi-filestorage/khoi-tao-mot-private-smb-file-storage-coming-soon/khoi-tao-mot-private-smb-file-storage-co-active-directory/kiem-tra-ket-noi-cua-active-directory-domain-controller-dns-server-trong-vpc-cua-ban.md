@@ -2,11 +2,24 @@
 
 ## Tổng quan
 
-Khi bạn thực hiện mapping File Storage với **Windows Server** có tích hợp **Active Directory**, cần đảm bảo rằng **Active Directory Domain Controller** và **DNS Server** của bạn đã được kết nối trên VPC/ Subnet của bạn. Với SMB File Storage, hệ thống vStorage đã tự động mở các port cần thiết cho việc kết nối trong VPC/ Subnet của bạn. Đối với Active Directory Domain Controller, DNS Server, bạn cần thực hiện mở các kết nối theo mô tả trong hình bên dưới:&#x20;
+Khi bạn thực hiện mapping File Storage với **Windows Server** có tích hợp **Active Directory**, để việc mapping diễn ra thành công, bạn cần đảm bảo rằng **Active Directory Domain Controller** và **DNS Server** của bạn đã được kết nối trên **VPC/ Subnet** của bạn.&#x20;
+
+* Với SMB File Storage, hệ thống vStorage đã tự động mở các port cần thiết cho việc kết nối trong VPC/ Subnet của bạn.&#x20;
+* Với Active Directory Domain Controller, DNS Server, bạn cần thực hiện mở các kết nối theo mô tả trong hình bên dưới:&#x20;
 
 
 
 <figure><img src="../../../../../.gitbook/assets/image (922).png" alt="" width="563"><figcaption></figcaption></figure>
+
+Tham khảo thêm danh sách port bên dưới để xác định chính xác các port bạn cần mở.&#x20;
+
+***
+
+## Danh sách các Port cần thiết để kết nối DNS Server, Active Directory tới VPC&#x20;
+
+Bên dưới là toàn bộ các port cần thiết mà bạn cần mở trong **Security Group** để đảm bảo kết nối thông suốt giữa DNS Server, Active Directory, và VPC của bạn:
+
+<table data-header-hidden><thead><tr><th></th><th width="207"></th><th></th></tr></thead><tbody><tr><td><strong>Service</strong></td><td><strong>Port</strong></td><td><strong>Protocol</strong></td></tr><tr><td>DNS *</td><td>53</td><td>tcp/udp</td></tr><tr><td>Kerberos</td><td>88</td><td>tcp/udp</td></tr><tr><td>ntp **</td><td>123</td><td>udp</td></tr><tr><td>End Point Mapper (DCE/RPC Locator Service)</td><td>135</td><td>tcp</td></tr><tr><td>NetBIOS Name Service</td><td>137</td><td>udp</td></tr><tr><td>NetBIOS Datagram</td><td>138</td><td>udp</td></tr><tr><td>NetBIOS Session</td><td>139</td><td>tcp</td></tr><tr><td>LDAP</td><td>389</td><td>tcp/udp</td></tr><tr><td>SMB over TCP</td><td>445</td><td>tcp</td></tr><tr><td>Kerberos kpasswd</td><td>464</td><td>tcp/udp</td></tr><tr><td>LDAPS ***</td><td>636</td><td>tcp</td></tr><tr><td>Global Catalog</td><td>3268</td><td>tcp</td></tr><tr><td>Global Catalog SSL ***</td><td>3269</td><td>tcp</td></tr><tr><td>Dynamic RPC Ports ****</td><td>49152-65535</td><td>tcp</td></tr></tbody></table>
 
 ***
 
@@ -17,8 +30,7 @@ Giả sử, bạn đã khởi tạo:&#x20;
 * **Windows Server**:
   * **Server name**: `my-window-server`
   * **DNS Domain**: `example.local`
-  * **DA Domain Name**: `my-window-server.example.local`
-  * **Forward Lookup Zone Name**: `example.local`
+  * **DA Domain Name**: `example.local`
   * **DNS server IP addresses**: `10.50.3.10`
   * **Security Group**: Đã/ Chưa mở một số port cần thiết.
 * **SMB File Storage**:
@@ -32,7 +44,7 @@ Bạn có thể kiểm tra việc kết nối này theo hướng dẫn sau:&#x20
 
 ### **Bước 2: Tạo CentOS Server**
 
-* Chọn **Create a Server** và khởi tạo một server **CentOS** chạy **RockyOS phiên bản 8.0 trở lên**.
+* Chọn **Create a Server** và khởi tạo một server **CentOS** chạy <mark style="color:red;">**RockyOS phiên bản 9.0 trở lên**</mark><mark style="color:red;">.</mark>
 * Server này cần thuộc **cùng VPC và Subnet** với Windows Server của bạn.
 * Mở quyền ra ngoài internet trong **Security Group** cho server.
 
@@ -78,21 +90,20 @@ Usage: /usr/local/sbin/efs_check.sh [option...] {--install-packages|--check-dns|
 
 * Cấu hình thông tin cần thiết cho script bằng lệnh:&#x20;
 
-```bash
-export \
-HOST_NAME=<Bất kỳ tên nào mà bạn mong muốn> \
-DOMAIN_NAME=<Forward Lookup Zone Name> \
-IP_DNS=<DNS server IP addresses> \
-USER_NAME=<Username> \
-USER_PASS=<Password>
-```
+<pre class="language-bash"><code class="lang-bash">export \
+HOST_NAME=&#x3C;Bất kỳ tên nào mà bạn mong muốn> \
+<strong>AD_DOMAIN_NAME=&#x3C;AD Domain name đã tạo> \
+</strong>IP_DNS=&#x3C;DNS server IP addresses> \
+USER_NAME=&#x3C;Username> \
+USER_PASS=&#x3C;Password>
+</code></pre>
 
 Ví dụ:
 
 ```bash
 export \
-HOST_NAME="VNG-CHECK-CONNECT" \
-DOMAIN_NAME="example.local" \
+HOST_NAME="VNG-CHECK-CONNECT" \ -- Nhập tối đa 15 ký tự
+AD_DOMAIN_NAME="example.local" \
 IP_DNS="10.50.3.10" \
 USER_NAME="Administrator" \
 USER_PASS="987654321aA@"
@@ -177,27 +188,3 @@ Chú ý:&#x20;
   * Thực hiện lại các bước từ đầu để đảm bảo kiểm tra độc lập và chính xác.
 * **Trường hợp kiểm tra thất bại (check fail):** Trong trường hợp kiểm tra thất bại, bạn **có thể sử dụng lại CentOS server** để kiểm tra kết nối trên chính DNS Server, AD đã kiểm tra trước đó sau khi đã cập nhật thêm các port trong **Security Group**.
 {% endhint %}
-
-***
-
-## Danh sách các Port cần thiết để kết nối DNS Server, Active Directory tới VPC&#x20;
-
-Bên dưới là toàn bộ các port cần thiết mà bạn cần mở trong **Security Group** để đảm bảo kết nối thông suốt giữa DNS Server, Active Directory, và VPC của bạn:
-
-| **Service**                                | **Port**    | **Protocol** |
-| ------------------------------------------ | ----------- | ------------ |
-| DNS \*                                     | 53          | tcp/udp      |
-| Kerberos                                   | 88          | tcp/udp      |
-| ntp \*\*                                   | 123         | udp          |
-| End Point Mapper (DCE/RPC Locator Service) | 135         | tcp          |
-| NetBIOS Name Service                       | 137         | udp          |
-| NetBIOS Datagram                           | 138         | udp          |
-| NetBIOS Session                            | 139         | tcp          |
-| LDAP                                       | 389         | tcp/udp      |
-| SMB over TCP                               | 445         | tcp          |
-| Kerberos kpasswd                           | 464         | tcp/udp      |
-| LDAPS \*\*\*                               | 636         | tcp          |
-| Global Catalog                             | 3268        | tcp          |
-| Global Catalog SSL \*\*\*                  | 3269        | tcp          |
-| Dynamic RPC Ports \*\*\*\*                 | 49152-65535 | tcp          |
-

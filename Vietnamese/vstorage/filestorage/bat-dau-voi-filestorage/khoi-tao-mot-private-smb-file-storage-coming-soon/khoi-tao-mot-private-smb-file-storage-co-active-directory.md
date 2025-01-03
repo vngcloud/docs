@@ -98,6 +98,12 @@ Sau khi bạn đã kết nối được vào Windows server, bạn cần đảm 
 
 ## Khởi tạo Active Directory trên Windows Server
 
+{% hint style="info" %}
+**Chú ý:**&#x20;
+
+* Bạn bắt buộc cần sử dụng Administrator để thực hiện khởi tạo DNS Server cũng như Active Directory Domain Service theo hướng dẫn ở các bước bên dưới.
+{% endhint %}
+
 Để khởi tạo được Active Directory trên Windows Server, bạn cần thực hiện:
 
 * **Cài đặt và cấu hình DNS Server**
@@ -165,7 +171,7 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 
 <figure><img src="../../../../.gitbook/assets/image (11) (4).png" alt="" width="509"><figcaption></figcaption></figure>
 
-5. Tại màn hình **Zone Name**: nhập tên domain của bạn và chọn **Next**. Ví dụ: `example.local`. <mark style="color:red;">**Hãy ghi nhớ domain này do đây chính là DNS domain bạn cần sử dụng để khởi tạo AD và nhập thông tin khi tạo File Storage trên hệ thống File Storage Portal.**</mark>
+5. Tại màn hình **Zone Name**: nhập tên domain của bạn và chọn **Next**. Ví dụ: `example.local`
 
 <figure><img src="../../../../.gitbook/assets/image (13) (4).png" alt="" width="509"><figcaption></figcaption></figure>
 
@@ -179,7 +185,7 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 * **Do not allow dynamic updates:** nếu bạn chưa có sẵn **Active Directory** nào integrate với **zone** của bạn. Nếu bạn chọn phương án này, bạn cần thực hiện <mark style="background-color:orange;">tạo Reverse Lookup Zone thủ công</mark> theo hướng dẫn bên dưới.&#x20;
 * Sau đó, bạn chọn **Next.**&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt="" width="509"><figcaption></figcaption></figure>
 
 8. Chọn **Finish** để hoàn thành việc tạo New Zone
 
@@ -201,7 +207,7 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 
 11. Nếu bạn chọn **Create associated pointer (PTR) record**, bạn cần phải tạo một **Reverse Loopup Zone**, các bước khởi tạo tương tự tạo **Forward Lookup Zone**.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt="" width="347"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt="" width="347"><figcaption></figcaption></figure>
 
 ### Tạo một Reverse Lookup Zone
 
@@ -379,6 +385,22 @@ Address: 10.50.3.9
 * Bạn có thể thực hiện phân quyền cho tài khoản AD hoặc nhóm thông qua tính năng cấp quyền truy cập qua Group Policy hoặc ACL. Cụ thể, tham khảo thêm tại [đây](https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/active-directory-overview).
 {% endhint %}
 
+### Lấy thông tin DNS Domain Name, AD Domain Name
+
+Bạn có thể sử dụng câu lệnh bên dưới để lấy thông tin DNS Domain Name, AD Domain Name đã khởi tạo, bạn có thể sử dụng PowerShell trên window servers thông qua lệnh:&#x20;
+
+* Lấy thông tin **DNS Domain Name:**&#x20;
+
+```powershell
+Get-DnsClientGlobalSetting
+```
+
+* Lấy thông tin **AD Domain Name:**&#x20;
+
+```powershell
+(Get-WmiObject Win32_ComputerSystem).Domain
+```
+
 ***
 
 ## Khởi tạo File Storage
@@ -404,10 +426,8 @@ Address: 10.50.3.9
 
 * **Window Authentication: c**ấu hình quyền truy cập thông qua **Active Directory Authentication**
   * **Active Directory Authentication:** Nếu Windows server của bạn sử dụng Active Directory để quản lý người dùng và quyền truy cập, thì AD Authentication sẽ dễ dàng tích hợp và quản lý tập trung. Bạn có thể xác thực thông qua Active Directory domain name, DNS server IP addresses, Username, Password trên Active Directory của bạn. Ví dụ, ứng với Avtive Directory đã tạo bên trên, tôi sẽ nhập vào:
-    * **Active Directory domain name**:&#x20;
-      * <mark style="background-color:blue;">Nếu Window server của bạn chỉ có</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**1 Active Directory**</mark><mark style="background-color:blue;">, nếu DNS domain name của bạn là</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">`example.local`</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">và tên của máy chủ Active Directory là</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">`demo-server-smb`</mark><mark style="background-color:blue;">, thì</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**Active Directory Domain Name**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">của bạn sẽ là</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">`example.local`</mark>
-      * <mark style="background-color:blue;">Nếu Window server của bạn có</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**nhiều Active Directory**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">và tất cả chúng đều sử dụng DNS domain name</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">`example.local`</mark><mark style="background-color:blue;">, thì</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**Active Directory Domain Name**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">của bạn sẽ là</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">`demo-server-smb.example.local.`</mark><mark style="background-color:blue;">Việc này giúp tránh xung đột tên miền khi bạn có nhiều AD.</mark>
-    * **DNS server IP Address**: Địa chỉ địa chỉ IP DNS Server, thường cũng chính là địa chỉ IP tĩnh của VM, ví dụ: `10.50.3.9.` Nếu bạn có 2 DNS IP, bạn có thể nhập theo mẫu `10.50.3.3,10.50.3.9`
+    * **Active Directory domain name**: nhập thông tin AD Domain name của bạn, bạn có thể lấy thông tin này theo hướng dẫn ở bên trên. Ví dụ `example.local`
+    * **DNS server IP Address**: Địa chỉ địa chỉ IP DNS Server, thường cũng chính là địa chỉ IP tĩnh của VM, ví dụ: `10.50.3.9.`Nếu bạn có 2 DNS IP, bạn có thể nhập theo mẫu `10.50.3.3,10.50.3.9`
     * **Username:** Tên tài khoản admin, ví dụ `Administrator`
     * **Password**: Mật khẩu bạn đã tạo ở bước **Cài đặt và cấu hình Active Directory Domain Services**, ví dụ: `123456789aA@`
     * **Confirm Password:** Xác nhận mật khẩu, ví dụ: `123456789aA@`
