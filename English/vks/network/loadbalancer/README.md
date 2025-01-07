@@ -33,7 +33,7 @@ The VNG Cloud Load Balancer Controller simplifies the deployment and management 
   * Find and select **Policy: vLBFullAccess and Policy: vServerFullAccess** , then click "**Create a Service Account**" to create Service Account, Policy: vLBFullAccess and Policy: vServerFullAccess created by VNG Cloud, you cannot delete these policies.
   * After successful creation, you need to save **the Client\_ID** and **Secret\_Key** of the Service Account to perform the next step.
 
-#### Install VNGCloud Ingress Controller
+#### Install VNGCloud LoadBalancer Controller
 
 * Install Helm version 3.0 or higher. Refer to [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) for instructions on how to install.
 

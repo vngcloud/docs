@@ -38,3 +38,15 @@ spec:
                 port:
                   number: 80
 ```
+
+New annotations for NLB and ALB:
+
+- `vks.vngcloud.vn/is-poc`: `true` or `false` (default: `false`). If `true`, the LoadBalancer will be created in the POC.
+- `vks.vngcloud.vn/enable-autoscale`: `true` or `false` (default: `false`). If `true`, the LoadBalancer will be created with autoscale.
+- `vks.vngcloud.vn/ignore`: `true` or `false` (default: `false`). If `true`, the operator will not manage the resource `Service` and `Ingress`. Any changes to the resource will be ignored and LoadBalancer will not be updated.
+
+New annotations for ALB only:
+
+- `vks.vngcloud.vn/implementation-specific-params`:
+- `vks.vngcloud.vn/header`: `string`, default: "".
+- `vks.vngcloud.vn/client-certificate-id`: `string`, default: "".
