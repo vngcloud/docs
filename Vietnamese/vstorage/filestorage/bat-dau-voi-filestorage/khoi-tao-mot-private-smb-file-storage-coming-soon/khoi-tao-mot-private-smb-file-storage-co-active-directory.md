@@ -77,9 +77,7 @@ Dưới đây là hướng dẫn cơ bản cho việc kết nối tới Windows 
 
 </details>
 
-
-
-Sau khi bạn đã kết nối được vào Windows server, bạn cần đảm bảo Windows server của bạn đã có địa chỉ IP tĩnh, bạn có thể kiểm tra và cấu hình IP tĩnh theo hướng dẫn sau:&#x20;
+<mark style="background-color:red;">Sau khi bạn đã kết nối được vào Windows server, bạn cần đảm bảo Windows server của bạn đã có địa chỉ IP tĩnh, bạn có thể kiểm tra và cấu hình IP tĩnh theo hướng dẫn sau:</mark>&#x20;
 
 * **Kiểm tra cấu hình mạng của VM bằng cách:**
   * Truy cập **Control Panel > Network & Internet > Network Connections**.
@@ -89,7 +87,8 @@ Sau khi bạn đã kết nối được vào Windows server, bạn cần đảm 
   * Chọn **Use the following IP address** để thiết lập địa chỉ IP tĩnh.
   * Cung cấp thông tin địa chỉ:
     * **IP Address:** địa chỉ IP tĩnh của VM.
-    * **Subnet Mask:** Subnet tương ứng, ví dụ: 255.0.0.0
+    * **Subnet Mask:** Subnet mask tương ứng, ví dụ nếu Subnet của bạn có CIDR: /24 thì Subnet Mask cần nhập là `255.255.255.0`.
+    * **Default gateway:** địa chỉ default gateway phải nằm cùng trong Network với IP tĩnh của VM, và dựa trên Subnet Mask. Ví dụ: IP tĩnh là `10.50.3.9`, Subnet Mask là `255.255.255.0` thì Default gateway có thể là `10.50.3.1`
     * **Preferred DNS server:** địa chỉ IP của DNS Domain (thường cũng chính là địa chỉ IP tĩnh của VM)  (bạn có thể bổ sung sau khi đã khởi tạo DNS domain theo hướng dẫn bên dưới)
 
 <figure><img src="../../../../.gitbook/assets/image (923).png" alt=""><figcaption></figcaption></figure>
