@@ -6,22 +6,7 @@
 
 ### Điều kiện cần
 
-*   Bạn đã thực hiện khởi tạo Cluster trên hệ thống VKS theo các hướng dẫn tại [đây ](./)và trên cụm của bạn đã được cài đặt **VNGCloud Controller Manager** với appversion từ **v0.2.1** trở lên. Nếu appversion của bạn thấp hơn version tiêu chuẩn này, bạn có thể thực hiện upgrade theo các hướng dẫn sau:
-
-    * Đầu tiên, bạn cần lấy release name của **vngcloud-controller-manager** đã cài trên cụm của bạn:
-
-    ```
-    $ helm list -A | grep vngcloud-controller-manager
-
-    vngcloud-controller-manager-1716448250          kube-system     10              2024-06-10 17:00:17.866548653 +0700 +07 deployed        vngcloud-controller-manager-0.2.3       v0.2.0
-    ```
-
-    * Sau đó, bạn hãy thực hiện upgrade lên version mới nhất thông qua lệnh:
-
-    ```
-    helm upgrade vngcloud-controller-manager-1716448250 oci://vcr.vngcloud.vn/81-vks-public/vks-helm-charts/vngcloud-controller-manager \
-      --namespace kube-system
-    ```
+* Bạn đã thực hiện khởi tạo Cluster trên hệ thống VKS theo các hướng dẫn tại [đây ](./)và trên cụm của bạn đã được cài đặt **VNGCloud LoadBalancer Controller.**
 * Tiếp theo, bạn cần thực hiện cài đặt nginx-ingress-controller theo lệnh:
 
 ```
@@ -38,7 +23,7 @@ helm install nginx-ingress-controller oci://ghcr.io/nginxinc/charts/nginx-ingres
 kubectl edit cm -n kube-system nginx-ingress-controller
 ```
 
-* Nếu bạn không sử dụng <code>cert-manager</code>, bạn cần thêm đoạn code sau vào tệp tin ConfigMap:
+* Nếu bạn không sử dụng `cert-manager`, bạn cần thêm đoạn code sau vào tệp tin ConfigMap:
 
 ```
 data:
@@ -48,7 +33,7 @@ data:
   set-real-ip-from: 0.0.0.0/0
 ```
 
-* Nếu bạn có sử dụng <code>cert-manager</code>, bạn cần thêm đoạn code sau vào tệp tin ConfigMap:
+* Nếu bạn có sử dụng `cert-manager`, bạn cần thêm đoạn code sau vào tệp tin ConfigMap:
 
 ```
 data:
@@ -63,7 +48,7 @@ data:
 
 ### Cấu hình vLB Layer 4
 
-* Tiếp theo, bạn cần cấu hình vLB Layer4 cho phép sử dụng proxy protocol cho service Load Balancer Nginx. Giá trị truyền vào là danh sách các service name trong Load Balancer sử dụng Proxy Protocol.&#x20;
+* Tiếp theo, bạn cần cấu hình vLB Layer4 cho phép sử dụng proxy protocol cho service Load Balancer Nginx. Giá trị truyền vào là danh sách các service name trong Load Balancer sử dụng Proxy Protocol.
 
 ```
 kubectl annotate service -n kube-system nginx-ingress-controller-controller \
@@ -103,6 +88,6 @@ spec:
 
 <figure><img src="../../../.gitbook/assets/image (383).png" alt=""><figcaption></figcaption></figure>
 
-* Kết quả log ghi nhận được đã có thông tin Client IP này như hình:&#x20;
+* Kết quả log ghi nhận được đã có thông tin Client IP này như hình:
 
 <figure><img src="../../../.gitbook/assets/image (384).png" alt=""><figcaption></figcaption></figure>

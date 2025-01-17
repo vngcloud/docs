@@ -4,7 +4,7 @@
 
 Một vài lưu ý về giới hạn của việc intergrate a NLB vào một cluster:&#x20;
 
-* Một NLB có thể được sử dụng chung cho nhiều cluster nhưng phải đảm bảo các cluster này có chung **Subnet**.
+* Một NLB có thể được sử dụng chung cho nhiều cluster nhưng phải đảm bảo các cluster này có chung **VPC**.
 * Một NLB có thể bao gồm nhiều listener, nhiều pool, nhiều policy. Các giới hạn về số lượng listener, số lượng pool, số lượng policy vui lòng tham khảo tại [Hạn mức tài nguyên](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59802094).
 
 ***
