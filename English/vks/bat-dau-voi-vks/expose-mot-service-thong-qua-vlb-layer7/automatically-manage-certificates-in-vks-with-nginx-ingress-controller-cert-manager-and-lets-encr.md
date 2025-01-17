@@ -59,7 +59,7 @@ Issuer is the component that helps Cert-Manager communicate with Let's Encrypt t
     spec:
       acme:
         server: https://acme-staging-v02.api.letsencrypt.org/directory
-        email: your-email@example.com                                           # Change to your email
+        email: ______________________ # Change to your email
         privateKeySecretRef:
           name: letsencrypt-staging
         solvers:
@@ -82,7 +82,7 @@ Issuer is the component that helps Cert-Manager communicate with Let's Encrypt t
     ```bash
     Status:
       Acme:
-        Uri:  https://acme-staging-v02.api.letsencrypt.org/acme/acct/7374163
+        Uri:  https://acme-staging-v02.api.letsencrypt.org/acme/acct/...
       Conditions:
         Last Transition Time:  ...
         Message:               The ACME account was registered with the ACME server
@@ -104,10 +104,10 @@ Issuer is the component that helps Cert-Manager communicate with Let's Encrypt t
       ingressClassName: nginx
       tls:
       - hosts:
-        - ______________________                   # Change to your domain
+        - ______________________ # Change to your domain
         secretName: quickstart-example-tls
       rules:
-      - host: ______________________               # Change to your domain
+      - host: ______________________ # Change to your domain
         http:
           paths:
           - path: /
@@ -124,7 +124,7 @@ Issuer is the component that helps Cert-Manager communicate with Let's Encrypt t
     kubectl get certificate
 
     NAME                     READY   SECRET                   AGE
-    quickstart-example-tls   True    quickstart-example-tls   16m     # Ready should be True
+    quickstart-example-tls   True    quickstart-example-tls   16m # Ready should be True
     ```
 7.  Check certificate details:
 
@@ -161,7 +161,7 @@ Issuer is the component that helps Cert-Manager communicate with Let's Encrypt t
     Status:
       Acme:
         Order:
-          URL:  https://acme-staging-v02.api.letsencrypt.org/acme/order/7374163/13665676
+          URL:  https://acme-staging-v02.api.letsencrypt.org/acme/order/...
       Conditions:
         Last Transition Time:  2018-11-17T18:05:57Z
         Message:               Certificate issued successfully
@@ -207,7 +207,7 @@ Issuer is the component that helps Cert-Manager communicate with Let's Encrypt t
     spec:
       acme:
         server: https://acme-v02.api.letsencrypt.org/directory
-        email: ______________________                                 # Change to your email
+        email: ______________________ # Change to your email
         privateKeySecretRef:
           name: letsencrypt-prod
         solvers:
@@ -233,16 +233,16 @@ Issuer is the component that helps Cert-Manager communicate with Let's Encrypt t
     metadata:
       name: go-httpbin
       annotations:
-        cert-manager.io/issuer: "letsencrypt-prod"  # Change to letsencrypt-prod
+        cert-manager.io/issuer: "letsencrypt-prod"
         acme.cert-manager.io/http01-edit-in-place: "true"
     spec:
       ingressClassName: nginx
       tls:
       - hosts:
-        - ______________________                   # Change to your domain
+        - ______________________ # Change to your domain
         secretName: quickstart-example-tls
       rules:
-      - host: ______________________               # Change to your domain
+      - host: ______________________ # Change to your domain
         http:
           paths:
           - path: /
@@ -252,21 +252,6 @@ Issuer is the component that helps Cert-Manager communicate with Let's Encrypt t
                 name: clusterip
                 port:
                   number: 80
-    ```
-5.  Check certificate via command:
-
-    ```bash
-    kubectl get certificate
-    ```
-6.  Check certificate details:
-
-    ```bash
-    kubectl describe certificate quickstart-example-tls
-    ```
-7.  Check connection to domain via command:
-
-    ```bash
-    curl -kivL -H 'http://_____IP_____'
     ```
 
 </details>
