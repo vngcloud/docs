@@ -684,7 +684,7 @@
     * [Khởi tạo một Private Cluster](vks/bat-dau-voi-vks/khoi-tao-mot-private-cluster.md)
     * [Expose một service thông qua vLB Layer4](vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4/README.md)
       * [Preserve Source IP khi sử dụng vLB Layer4 và Nginx Ingress Controller](vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4/preserve-source-ip-khi-su-dung-vlb-layer4-va-nginx-ingress-controller.md)
-    * [Expose một service thông qua vLB Layer7](vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer7/README.md)
+    * [Expose một service thông qua vLB Layer7](vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer7.md)
       * [Tự động quản lý Certificate trong VKS với Nginx Ingress Controller, Cert-Manager, và Let's Encrypt](vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer7/tu-dong-quan-ly-certificate-trong-vks-voi-nginx-ingress-controller-cert-manager-va-lets-encrypt.md)
     * [Integrate with Container Storage Interface (CSI)](vks/bat-dau-voi-vks/integrate-with-container-storage-interface-csi.md)
     * [Khởi tạo một Cluster thông qua ví POC](vks/bat-dau-voi-vks/khoi-tao-mot-cluster-thong-qua-vi-poc.md)

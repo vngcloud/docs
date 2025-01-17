@@ -5,11 +5,11 @@
 * Bạn đã thực hiện khởi tạo Cluster trên hệ thống VKS theo các hướng dẫn tại [đây ](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4)và trên cụm của bạn đã được cài đặt **VNGCloud LoadBalancer Controller.**
 * Tiếp theo, hãy đảm bảo bận có một **domain** đã được đăng ký và sử dụng.
 * Cuối cùng, bạn cần một địa chỉ **email** để thực hiện kiểm tra việc quản lý Certificate.
-*   Tiếp theo, bạn cần thực hiện cài đặt nginx-ingress-controller theo lệnh:
+* Tiếp theo, bạn cần thực hiện cài đặt nginx-ingress-controller theo lệnh:
 
-    ```
-    helm install nginx-ingress-controller oci://ghcr.io/nginxinc/charts/nginx-ingress --namespace kube-system
-    ```
+```bash
+helm install nginx-ingress-controller oci://ghcr.io/nginxinc/charts/nginx-ingress --namespace kube-system
+```
 
 ***
 
@@ -37,7 +37,7 @@ helm install \
 
 Bạn hãy thực hiện deploy một sample app, ví dụ:
 
-```
+```bash
 kubectl create deployment echo-server --image=mccutchen/go-httpbin
 kubectl expose deployment echo-server --name=clusterip --port=80 --target-port=8080 --type=ClusterIP
 ```
