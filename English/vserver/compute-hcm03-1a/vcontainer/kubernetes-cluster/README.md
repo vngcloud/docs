@@ -6,7 +6,7 @@ Kubernetes Cluster is a distributed system consisting of multiple nodes working 
 
 A Kubernetes Cluster consists of the following main components:
 
-* **Master Node**: Is the control center of the Kubernetes cluster, where the entire system is managed and controlled. The Master Node contains components such as the Kubernetes API Server, Scheduler, and Controller Manager.
+* **Master Node**: Is the control center of the Kubernetes cluster, where the entire system is managed and controlled. The Master Node contains components such as the Kubernetes API Server, Scheduler, and LoadBalancer Controller.
 * **Minion Node**: The servers that do the actual work of the container application. Each Worker Node runs one or more pods to contain containers. The main components on the Worker Node include Kubernetes Kubelet (communicating with Master Node), Container Runtime (like Docker) and kube-proxy (managing proxy network).
 * **Pod**: The smallest unit in Kubernetes, containing one or more containers that share network and storage resources. Each Pod has a unique IP address and is scheduled to be deployed on Worker Nodes.
 * **Service**: Represents a collection of Pods, providing a unique IP address and domain name for external access to the Pods. Services help ensure scalability and manageability of applications in the Kubernetes Cluster.

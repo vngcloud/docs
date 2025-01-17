@@ -18,7 +18,7 @@ VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing 
 
 * **Support POC/ Stop POC for Cluster** : Users can now perform POC/ Stop POC for resources on VKS such as Server, Volume, Load Balancer, Endpoint. This feature brings high flexibility to users who want to experience VKS. For more details, please refer [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vks/clusters/stop-poc) .
 * **Upgrade VNGCloud BlockStorage CSI Driver Plugin:** Bugs discovered in previous versions have been fixed, making the system run smoother and more reliably.
-* **Freely choose/edit configuration with/without using VNGCloud Controller Manager plugin, VNGCloud Ingress Controller plugin on existing VKS cluster:** The ability to customize plugin configuration allows users to optimize the VKS cluster according to their specific needs. This helps increase flexibility and meet the special requirements of each application.
+* **Freely choose/edit configuration with/without using VNGCloud LoadBalancer Controller plugin, VNGCloud LoadBalancer Controller plugin on existing VKS cluster:** The ability to customize plugin configuration allows users to optimize the VKS cluster according to their specific needs. This helps increase flexibility and meet the special requirements of each application.
 * **Additionally,** in this update, we have also fixed some minor bugs to provide a better user experience.
 
 
@@ -113,7 +113,7 @@ VKS (VNGCloud Kubernetes Service) introduces the latest update to the existing V
 
 **Improve:**
 
-* **Upgrade VNGCloud Controller Manager Plugin, VNGCloud Ingress Controller Plugin:** Errors discovered in previous versions have been fixed, helping the system operate smoother and more reliably.
+* **Upgrade VNGCloud LoadBalancer Controller Plugin, VNGCloud LoadBalancer Controller Plugin:** Errors discovered in previous versions have been fixed, helping the system operate smoother and more reliably.
 
 ***
 
@@ -160,7 +160,7 @@ VKS (VNGCloud Kubernetes Service) introduces the latest update to the existing V
 
 **Improve:**
 
-* **Upgrade VNGCloud Controller Manager Plugin, VNGCloud Ingress Controller Plugin:** Errors discovered in previous versions have been fixed, helping the system operate smoother and more reliably.
+* **Upgrade VNGCloud LoadBalancer Controller Plugin, VNGCloud LoadBalancer Controller Plugin:** Errors discovered in previous versions have been fixed, helping the system operate smoother and more reliably.
 
 ***
 
@@ -172,7 +172,7 @@ VKS (VNGCloud Kubernetes Service) introduces the latest update to the existing V
 
 * **Upgrade PVC size setting feature (Persistent Volume Claim Size):** Users can now specify the minimum size for CSI drives to be **1GB** instead of the minimum size of 20GB as before. For more details, you can refer to Volume and Integrate with Container Storage Interface .
 * **Change the default Storage Class used for Cluster:** change the default from SSD type drives - IOPS 200 to the default SSD type drives - IOPS 3000.
-* **Upgrade VNGCloud Controller Manager Plugin, VNGCloud Ingress Controller Plugin:** plugin improvements help avoid duplicate Load Balancer naming.
+* **Upgrade VNGCloud LoadBalancer Controller Plugin, VNGCloud LoadBalancer Controller Plugin:** plugin improvements help avoid duplicate Load Balancer naming.
 
 **Attention:**
 
@@ -201,7 +201,7 @@ VKS (VNGCloud Kubernetes Service) introduces the latest update to the already av
 
 **Improve:**
 
-* **Upgrade VNGCloud Controller Manager Plugin:** Add Annotation to configure Load Balancer to support Proxy Protocol. For more details, refer [here](../bat-dau-voi-vks/preserve-source-ip-khi-su-dung-vlb-layer4-va-nginx-ingress-controller.md) .
+* **Upgrade VNGCloud LoadBalancer Controller Plugin:** Add Annotation to configure Load Balancer to support Proxy Protocol. For more details, refer [here](../bat-dau-voi-vks/preserve-source-ip-khi-su-dung-vlb-layer4-va-nginx-ingress-controller.md) .
 
 ***
 
@@ -259,7 +259,7 @@ If you encounter any problems after updating, please contact VKS support for ass
 * **Scaling & Healing Automatically:** VKS automatically expands the Node group when necessary and automatically fixes errors when the node has problems, helping you save time and effort on management.
 * **Reduce costs and improve reliability:** VKS deploys Control Plane of Kubernetes in high availability mode and is completely free, helping you save costs and improve system reliability.
 * **Blockstore Native (Container Storage Interface - CSI) integration:** VKS allows you to manage Blockstore through Kubernetes' YAML, providing persistent storage for containers and supporting important features such as resizing, IOPS scaling and snapshot volumes.
-* **Integrate Load Balancer (Network Load Balancer, Application Load Balancer) through built-in drivers such as VNGCloud Controller Mananger, VNGCloud Ingress Controller:** VKS provides the ability to manage NLB/ALB through YAML of Kubernetes, making it easy for you expose Service in Kubernetes to the outside.
+* **Integrate Load Balancer (Network Load Balancer, Application Load Balancer) through built-in drivers such as VNGCloud Controller Mananger, VNGCloud LoadBalancer Controller:** VKS provides the ability to manage NLB/ALB through YAML of Kubernetes, making it easy for you expose Service in Kubernetes to the outside.
 * **Enhance security:** VKS allows you to create a Private Node Group with only Private IP and control access to the cluster through the IP Whitelist feature, ensuring the safety of your system.
 
 **With these breakthrough features, VKS promises to bring you a completely new Kubernetes management experience, helping you optimize efficiency and save costs!**

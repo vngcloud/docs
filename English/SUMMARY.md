@@ -584,7 +584,7 @@
     * [Create a Private Cluster](vks/bat-dau-voi-vks/create-a-private-cluster.md)
     * [Expose a service through vLB Layer4](vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4.md)
     * [Expose a service through vLB Layer7](vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer7.md)
-    * [Preserve Source IP when using NLB and Nginx Ingress Controller](vks/bat-dau-voi-vks/preserve-source-ip-when-using-nlb-and-nginx-ingress-controller.md)
+    * [Preserve Source IP when using NLB and Nginx LoadBalancer Controller](vks/bat-dau-voi-vks/preserve-source-ip-when-using-nlb-and-nginx-ingress-controller.md)
     * [Integrate with Container Storage Interface (CSI)](vks/bat-dau-voi-vks/integrate-with-container-storage-interface-csi.md)
     * [Upgrading Control Plane Version](vks/bat-dau-voi-vks/nang-cap-control-plane-version.md)
     * [Upgrading Node Group Version](vks/bat-dau-voi-vks/nang-cap-node-group-version.md)

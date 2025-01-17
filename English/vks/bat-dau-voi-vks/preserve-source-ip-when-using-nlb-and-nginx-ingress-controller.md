@@ -1,12 +1,12 @@
-# Preserve Source IP when using NLB and Nginx Ingress Controller
+# Preserve Source IP when using NLB and Nginx LoadBalancer Controller
 
-**Preserve Source IP** when using vLB Layer 4 and Nginx Ingress Controller in Kubernetes is the process of maintaining the client's original IP address when traffic is forwarded through the load balancer and into the Kubernetes cluster. This is important in some cases when you need detailed information about the client's connection, such as the client's original IP address and root port, to be able to make traffic handling or logging decisions. Exactly. Below are our specific instructions to help you implement this usecase.
+**Preserve Source IP** when using vLB Layer 4 and Nginx LoadBalancer Controller in Kubernetes is the process of maintaining the client's original IP address when traffic is forwarded through the load balancer and into the Kubernetes cluster. This is important in some cases when you need detailed information about the client's connection, such as the client's original IP address and root port, to be able to make traffic handling or logging decisions. Exactly. Below are our specific instructions to help you implement this usecase.
 
 ***
 
 ## Prerequisites <a href="#dieu-kien-can" id="dieu-kien-can"></a>
 
-*   You have initialized the Cluster on the VKS system according to the instructions here [and ](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4)**VNGCloud Controller Manager** has been installed on your cluster with appversion from **v0.2.1** or higher. If your appversion is lower than this standard version, you can perform the upgrade according to the following instructions:
+*   You have initialized the Cluster on the VKS system according to the instructions here [and ](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4)**VNGCloud LoadBalancer Controller** has been installed on your cluster with appversion from **v0.2.1** or higher. If your appversion is lower than this standard version, you can perform the upgrade according to the following instructions:
 
     * First, you need to get the release name of **vngcloud-controller-manager** installed on your cluster:
 
@@ -30,9 +30,9 @@ helm install nginx-ingress-controller oci://ghcr.io/nginxinc/charts/nginx-ingres
 
 ***
 
-## **ConfigMap for Nginx Ingress Controller** <a href="#cau-hinh-configmap-cho-nginx-ingress-controller" id="cau-hinh-configmap-cho-nginx-ingress-controller"></a>
+## **ConfigMap for Nginx LoadBalancer Controller** <a href="#cau-hinh-configmap-cho-nginx-ingress-controller" id="cau-hinh-configmap-cho-nginx-ingress-controller"></a>
 
-* Add to Nginx Ingress Controller's ConfigMap the settings to enable proxy protocol via command:
+* Add to Nginx LoadBalancer Controller's ConfigMap the settings to enable proxy protocol via command:
 
 ```
 kubectl edit cm -n kube-system nginx-ingress-controller

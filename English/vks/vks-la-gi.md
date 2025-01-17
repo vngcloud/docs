@@ -15,7 +15,7 @@ VKS (VNGCloud Kubernetes Service) is a managed service on VNGCloud that simplifi
 * **Scaling & Healing Automatically**: VKS automatically scales the Node group when needed and repairs issues when nodes encounter problems, saving you time and effort in management.
 * **Reduce costs and enhance reliability**: VKS deploys the Kubernetes Control Plane in a highly available mode and completely for free, helping you save costs and improve system reliability.
 * **Integration of Native Blockstore (Container Storage Interface - CSI):** VKS allows you to manage Blockstore through Kubernetes YAML, providing persistent storage for containers and supporting important features such as resizing, changing IOPS, and snapshotting volumes.
-* **Integration of Load Balancer (Network Load Balancer, Application Load Balancer)** through built-in drivers such as VNGCloud Controller Manager, VNGCloud Ingress Controller: VKS provides the capability to manage NLB/ALB through Kubernetes YAML, making it easy to expose Services in Kubernetes to the outside.
+* **Integration of Load Balancer (Network Load Balancer, Application Load Balancer)** through built-in drivers such as VNGCloud LoadBalancer Controller, VNGCloud LoadBalancer Controller: VKS provides the capability to manage NLB/ALB through Kubernetes YAML, making it easy to expose Services in Kubernetes to the outside.
 * **Enhanced security**: VKS allows you to create Private Node Groups with only Private IPs and control access to the cluster via the IP Whitelist feature, ensuring the safety of your system.
 
 In addition, VKS has the following advantages:

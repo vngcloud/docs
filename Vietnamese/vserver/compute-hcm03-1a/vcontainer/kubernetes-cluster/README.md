@@ -9,7 +9,7 @@ Một Kubernetes Cluster bao gồm các thành phần chính sau:
 1. **Master Node:** Master node là trung tâm điều khiển của Kubernetes cluster. Nó quản lý và giám sát toàn bộ hệ thống. Master node chứa các thành phần sau:
    * **API Server:** API Server là trung tâm giao tiếp của toàn bộ hệ thống. Nó cung cấp các giao diện API để tương tác với Kubernetes cluster, cho phép bạn thao tác bằng dòng lệnh kubectl hoặc các công cụ quản lý khác.
    * **Scheduler:** Scheduler là thành phần quản lý việc lập lịch triển khai các Pod (nhóm các container liên quan đến nhau) lên các node của cluster. Nhiệm vụ của nó là tìm node phù hợp và phân phối các Pod vào node đó.
-   * **Controller Manager:** Controller Manager điều khiển các thành phần của hệ thống, đảm bảo trạng thái thực tế của cluster tương thích với trạng thái mong muốn. Ví dụ, Replication Controller đảm bảo số lượng Pod được định nghĩa của một ứng dụng luôn được duy trì.
+   * **LoadBalancer Controller:** LoadBalancer Controller điều khiển các thành phần của hệ thống, đảm bảo trạng thái thực tế của cluster tương thích với trạng thái mong muốn. Ví dụ, Replication Controller đảm bảo số lượng Pod được định nghĩa của một ứng dụng luôn được duy trì.
    * **ETCD:** ETCD là cơ sở dữ liệu phân tán chịu trách nhiệm lưu trữ trạng thái của toàn bộ cluster, bao gồm cấu hình, trạng thái của các Pods và các đối tượng khác.
 2. **Minion (Node/Worker Node):** Minion là các máy tính thành viên trong cluster, nơi các ứng dụng và dịch vụ Kubernetes thực sự được triển khai và chạy. Minion chứa các thành phần sau:
    * **Kubelet:** Kubelet là thành phần chạy trên mỗi minion, quản lý các container và Pod trên node đó. Nó liên lạc với API Server để báo cáo trạng thái của node và nhận các yêu cầu triển khai Pod.

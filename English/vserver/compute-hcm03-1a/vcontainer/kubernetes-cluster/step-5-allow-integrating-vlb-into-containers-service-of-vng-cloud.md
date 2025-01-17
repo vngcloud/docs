@@ -21,7 +21,7 @@
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59802513/image2023-6-2_13-17-14.png?version=1&#x26;modificationDate=1685693599000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-_Note: Như ở trên, chúng ta sẽ tạo 1 Listener trên Port 80. Nếu muốn sử dụng TLS cho website, có thể tạo thêm Listener trên Port 443 và cấu hình TLS ở Ingress Controller. Bài này sẽ chỉ triển khai với Listener Port 80._\
+_Note: Như ở trên, chúng ta sẽ tạo 1 Listener trên Port 80. Nếu muốn sử dụng TLS cho website, có thể tạo thêm Listener trên Port 443 và cấu hình TLS ở LoadBalancer Controller. Bài này sẽ chỉ triển khai với Listener Port 80._\
 \
 
 
@@ -41,7 +41,7 @@ _Note: Như ở trên, chúng ta sẽ tạo 1 Listener trên Port 80. Nếu mu�
 \
 
 
-_Note: When creating vContainer, we can choose Enable Ingress Controller to create cluster with Ingress Controller already deployed. To use the Ingress Controller with the right features according to the needs of the application, in this article, we will not select Enable Ingress Controller but will implement the Nginx Ingress Controller yourself, so you need to disable Ingress Control when initializing K8S._
+_Note: When creating vContainer, we can choose Enable LoadBalancer Controller to create cluster with LoadBalancer Controller already deployed. To use the LoadBalancer Controller with the right features according to the needs of the application, in this article, we will not select Enable LoadBalancer Controller but will implement the Nginx LoadBalancer Controller yourself, so you need to disable Ingress Control when initializing K8S._
 
 4\. Check the cluster initialization and download the config file to access the cluster:
 
@@ -52,7 +52,7 @@ _Note: When creating vContainer, we can choose Enable Ingress Controller to crea
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59802513/image2023-6-2_13-55-56.png?version=1&#x26;modificationDate=1685693600000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-#### Step 2: Deploy Nginx Ingress Controller <a href="#step5-allowintegratingvlbintocontainersserviceofvngcloud-step2-deploynginxingresscontroller" id="step5-allowintegratingvlbintocontainersserviceofvngcloud-step2-deploynginxingresscontroller"></a>
+#### Step 2: Deploy Nginx LoadBalancer Controller <a href="#step5-allowintegratingvlbintocontainersserviceofvngcloud-step2-deploynginxingresscontroller" id="step5-allowintegratingvlbintocontainersserviceofvngcloud-step2-deploynginxingresscontroller"></a>
 
 1.  Go to [https://kubernetes.github.io/ingress-nginx/deploy/#bare-metal-clusters](https://kubernetes.github.io/ingress-nginx/deploy/#bare-metal-clusters)\
     \
@@ -60,7 +60,7 @@ _Note: When creating vContainer, we can choose Enable Ingress Controller to crea
 
 
     <figure><img src="https://docs.vngcloud.vn/download/attachments/59802513/image2023-6-6_11-29-54.png?version=1&#x26;modificationDate=1686041063000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-2.  Copy and run the above command to deploy Nginx Ingress Controller:\
+2.  Copy and run the above command to deploy Nginx LoadBalancer Controller:\
     \
 
 
@@ -69,7 +69,7 @@ _Note: When creating vContainer, we can choose Enable Ingress Controller to crea
     \
     \
     \
-    → So we have successfully deployed Nginx Ingress Controller.\
+    → So we have successfully deployed Nginx LoadBalancer Controller.\
     Service ingress-nginx-controller is initialized with Type: NodePort and listens on Port: 30398, 31873 of Minion Nodes.
 
     <figure><img src="https://docs.vngcloud.vn/download/attachments/59802513/image2023-6-2_14-3-26.png?version=1&#x26;modificationDate=1685693601000&#x26;api=v2" alt=""><figcaption></figcaption></figure>

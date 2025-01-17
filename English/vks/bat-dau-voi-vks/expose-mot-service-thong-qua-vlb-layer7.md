@@ -59,17 +59,17 @@ ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.
 
 ***
 
-## Create Service Account and install VNGCloud Ingress Controller <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
+## Create Service Account and install VNGCloud LoadBalancer Controller <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
 
 {% hint style="info" %}
 **Attention:**
 
-When you initialize the Cluster according to the instructions above, if you have not enabled the **Enable vLB Native Integration Driver** option , by default we will not pre-install this plugin into your Cluster. You need to manually create Service Account and install VNGCloud Ingress Controller according to the instructions below. If you have enabled the **Enable vLB Native Integration Driver** option , then we have pre-installed this plugin into your Cluster, skip the Service Account Initialization step, install VNGCloud Ingress Controller and continue following the instructions from Deploy once. Workload.
+When you initialize the Cluster according to the instructions above, if you have not enabled the **Enable vLB Native Integration Driver** option , by default we will not pre-install this plugin into your Cluster. You need to manually create Service Account and install VNGCloud LoadBalancer Controller according to the instructions below. If you have enabled the **Enable vLB Native Integration Driver** option , then we have pre-installed this plugin into your Cluster, skip the Service Account Initialization step, install VNGCloud LoadBalancer Controller and continue following the instructions from Deploy once. Workload.
 {% endhint %}
 
 <details>
 
-<summary>Create Service Account and install VNGCloud Ingress Controller</summary>
+<summary>Create Service Account and install VNGCloud LoadBalancer Controller</summary>
 
 **Initialize Service Account**
 
@@ -78,37 +78,30 @@ When you initialize the Cluster according to the instructions above, if you have
   * Find and select **Policy: vLBFullAccess and Policy: vServerFullAccess** , then click " **Create a Service Account** " to create Service Account, Policy: vLBFullAccess and Policy: vServerFullAccess created by VNG Cloud, you cannot delete these policies.
   * After successful creation, you need to save **the Client\_ID** and **Secret\_Key** of the Service Account to perform the next step.
 
-**Install VNGCloud Ingress Controller**
+**Install VNGCloud LoadBalancer Controller**
 
 * Install Helm version 3.0 or higher. Refer to [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) for instructions on how to install.
-* Add this repo to your cluster via the command:
-
-```
-helm repo add vks-helm-charts https://vngcloud.github.io/vks-helm-charts
-helm repo update
-```
 
 * Replace your K8S cluster's ClientID, Client Secret, and ClusterID information and continue running:
 
 ```
-helm install vngcloud-ingress-controller vks-helm-charts/vngcloud-ingress-controller \
+helm install vngcloud-load-balancer-controller oci://vcr.vngcloud.vn/81-vks-public/vks-helm-charts/vngcloud-load-balancer-controller \
   --namespace kube-system \
-  --set cloudConfig.global.clientID= <Lấy ClientID của Service Account được tạo trên IAM theo hướng dẫn bên trên> \
-  --set cloudConfig.global.clientSecret= <Lấy ClientSecret của Service Account được tạo trên IAM theo hướng dẫn bên trên>\
-  --set cluster.clusterID= <Lấy Cluster ID của cluster mà bạn đã khởi tạo trước đó>
+  --set mysecret.global.clientID= __________________ \
+  --set mysecret.global.clientSecret= __________________
 ```
 
-* After the installation is complete, check the status of vngcloud-ingress-controller pods:
+* After the installation is complete, check the status of pods:
 
 ```
-kubectl get pods -n kube-system | grep vngcloud-ingress-controller
+kubectl -n kube-system get pod -l app.kubernetes.io/name=vngcloud-load-balancer-controller
 ```
 
-For example, in the image below you have successfully installed vngcloud-controller-manager:
+For example, in the image below you have successfully installed:
 
 ```
-NAME                                      READY   STATUS    RESTARTS   AGE
-vngcloud-ingress-controller-0             1/1     Running   0          12s
+NAME                                                              READY   STATUS    RESTARTS   AGE
+vngcloud-load-balancer-controller-1736217866-manager-77599vrxpz   1/1     Running   0          4h24m
 ```
 
 </details>

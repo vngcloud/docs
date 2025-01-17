@@ -1,6 +1,6 @@
 # Configure for a Network Load Balancer
 
-On the \[Integrate with Network Load Balancer] page, we have shown you how to install VNGCloud Controller Manager, create and apply yaml file. The following are detailed meanings of the information you can set in the yaml file:
+On the \[Integrate with Network Load Balancer] page, we have shown you how to install VNGCloud LoadBalancer Controller, create and apply yaml file. The following are detailed meanings of the information you can set in the yaml file:
 
 ## Annotations <a href="#configureforanetworkloadbalancer-annotation" id="configureforanetworkloadbalancer-annotation"></a>
 

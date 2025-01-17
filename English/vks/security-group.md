@@ -25,9 +25,9 @@ For each Cluster created in the VKS system, we will automatically create a Secur
 | ANY      | IPv4       | 0-65535    | 0.0.0.0/0   | Default rule of all Security groups |
 | ANY      | IPv6       | 0-65535    | ::/0        | Default rule of all Security groups |
 
-#### Security group is automatically created by VNGCLOUD Controller Manager <a href="#security-group-duoc-tao-tu-dong-boi-vngcloud-controller-manager" id="security-group-duoc-tao-tu-dong-boi-vngcloud-controller-manager"></a>
+#### Security group is automatically created by VNGCLOUD LoadBalancer Controller <a href="#security-group-duoc-tao-tu-dong-boi-vngcloud-controller-manager" id="security-group-duoc-tao-tu-dong-boi-vngcloud-controller-manager"></a>
 
-When you use VNGCloud Controller Manager to integrate Network Load Balancer with Cluster on VKS system, we will automatically create a Security Group. This security group will include:
+When you use VNGCloud LoadBalancer Controller to integrate Network Load Balancer with Cluster on VKS system, we will automatically create a Security Group. This security group will include:
 
 * Inbound:
 
@@ -42,9 +42,9 @@ When you use VNGCloud Controller Manager to integrate Network Load Balancer with
 | ANY      | IPv4       | 0-65535    | 0.0.0.0/0   | Default rule of all Security groups |
 | ANY      | IPv6       | 0-65535    | ::/0        | Default rule of all Security groups |
 
-#### Security group is automatically created by VNGCLOUD Ingress Controller <a href="#security-group-duoc-tao-tu-dong-boi-vngcloud-ingress-controller" id="security-group-duoc-tao-tu-dong-boi-vngcloud-ingress-controller"></a>
+#### Security group is automatically created by VNGCLOUD LoadBalancer Controller <a href="#security-group-duoc-tao-tu-dong-boi-vngcloud-ingress-controller" id="security-group-duoc-tao-tu-dong-boi-vngcloud-ingress-controller"></a>
 
-When you use VNGCloud Ingress Controller to integrate Application Load Balancer with Cluster on VKS system, we will automatically create a Security Group. This security group will include:
+When you use VNGCloud LoadBalancer Controller to integrate Application Load Balancer with Cluster on VKS system, we will automatically create a Security Group. This security group will include:
 
 * Inbound:
 

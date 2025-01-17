@@ -2,9 +2,9 @@
 
 **Ingress:** Ingress trong Kubernetes là một nguồn thông tin quy định cách dữ liệu từ bên ngoài được chuyển tiếp đến các dịch vụ (Service) bên trong cluster. Nó cung cấp một cách tiêu chuẩn để quản lý việc truy cập vào các dịch vụ của ứng dụng từ bên ngoài. Ingress định tuyến các yêu cầu HTTP và HTTPS đến các Service, giúp điều hướng lưu lượng mạng một cách hiệu quả trong cluster.
 
-**Ingress Controller:** Ingress Controller là một thành phần của Kubernetes có nhiệm vụ thực hiện các quy tắc được định nghĩa trong Ingress và thực hiện việc chuyển tiếp các yêu cầu đến các Service tương ứng trong cluster. Ingress Controller là một loại cụm (cluster) của riêng nó, chịu trách nhiệm quản lý và xử lý các yêu cầu từ bên ngoài và định tuyến chúng đến các Service thích hợp bên trong cụm.
+**LoadBalancer Controller:** LoadBalancer Controller là một thành phần của Kubernetes có nhiệm vụ thực hiện các quy tắc được định nghĩa trong Ingress và thực hiện việc chuyển tiếp các yêu cầu đến các Service tương ứng trong cluster. LoadBalancer Controller là một loại cụm (cluster) của riêng nó, chịu trách nhiệm quản lý và xử lý các yêu cầu từ bên ngoài và định tuyến chúng đến các Service thích hợp bên trong cụm.
 
-"Ingress Control Clusters" là một kiến trúc hoặc cấu hình trong Kubernetes mà sử dụng một hoặc nhiều Ingress Controllers để quản lý việc định tuyến và điều hướng lưu lượng mạng từ bên ngoài vào các dịch vụ trong cluster. Mục tiêu chính của Ingress Control Clusters là tạo một cơ chế tiêu chuẩn để điều hướng các yêu cầu HTTP/HTTPS đến các ứng dụng và dịch vụ trong môi trường Kubernetes một cách linh hoạt và hiệu quả.
+"Ingress Control Clusters" là một kiến trúc hoặc cấu hình trong Kubernetes mà sử dụng một hoặc nhiều LoadBalancer Controllers để quản lý việc định tuyến và điều hướng lưu lượng mạng từ bên ngoài vào các dịch vụ trong cluster. Mục tiêu chính của Ingress Control Clusters là tạo một cơ chế tiêu chuẩn để điều hướng các yêu cầu HTTP/HTTPS đến các ứng dụng và dịch vụ trong môi trường Kubernetes một cách linh hoạt và hiệu quả.
 
 Các đặc điểm và lợi ích của Ingress Control bao gồm:
 

@@ -1,6 +1,6 @@
 # Configure for an Application Load Balancer
 
-On the \[Ingress for an Application Load Balancer] page, we have shown you how to install the Ingress Controller and create ingress via the Ingress Yaml file. The following are detailed meanings of the information you can set for an Ingress
+On the \[Ingress for an Application Load Balancer] page, we have shown you how to install the LoadBalancer Controller and create ingress via the Ingress Yaml file. The following are detailed meanings of the information you can set for an Ingress
 
 ## Annotations <a href="#configureforanapplicationloadbalancer-annotation" id="configureforanapplicationloadbalancer-annotation"></a>
 
@@ -12,7 +12,7 @@ Use the annotations below when creating ingress to customize the Load Balancer t
 
 ## IngressClassName <a href="#configureforanapplicationloadbalancer-ingressclassname" id="configureforanapplicationloadbalancer-ingressclassname"></a>
 
-The Ingress installed by the VNGCloud Ingress Controller will have the information IngressClassName = "vngcloud". You may not change this information.
+The Ingress installed by the VNGCloud LoadBalancer Controller will have the information IngressClassName = "vngcloud". You may not change this information.
 
 ***
 

@@ -191,7 +191,7 @@ velero install \
 ./velero_helper.sh mark_exclude --confirm 
 ```
 
-* Annotate other resources (not marked in the velero\_helper.sh file), such as CSI, Ingress Controller, or other resources that you do not want to migrate (note that you need to label all resources of objects that do not need to be backed up).
+* Annotate other resources (not marked in the velero\_helper.sh file), such as CSI, LoadBalancer Controller, or other resources that you do not want to migrate (note that you need to label all resources of objects that do not need to be backed up).
   * For example, an application includes DaemonSet, Deployment, Pod, ... then it is necessary to mark labels for all those resources.
 
 ```bash

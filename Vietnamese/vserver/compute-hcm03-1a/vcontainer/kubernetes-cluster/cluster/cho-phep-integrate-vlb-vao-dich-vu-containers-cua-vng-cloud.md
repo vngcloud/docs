@@ -18,7 +18,7 @@
 
 <figure><img src="../../../../../.gitbook/assets/image (474).png" alt=""><figcaption></figcaption></figure>
 
-_Note: Như ở trên, chúng ta sẽ tạo 1 Listener trên Port 80. Nếu muốn sử dụng TLS cho website, có thể tạo thêm Listener trên Port 443 và cấu hình TLS ở Ingress Controller. Bài này sẽ chỉ triển khai với Listener Port 80._
+_Note: Như ở trên, chúng ta sẽ tạo 1 Listener trên Port 80. Nếu muốn sử dụng TLS cho website, có thể tạo thêm Listener trên Port 443 và cấu hình TLS ở LoadBalancer Controller. Bài này sẽ chỉ triển khai với Listener Port 80._
 
 <figure><img src="../../../../../.gitbook/assets/image (476).png" alt=""><figcaption></figcaption></figure>
 
@@ -30,7 +30,7 @@ _Note: Như ở trên, chúng ta sẽ tạo 1 Listener trên Port 80. Nếu mu�
 
 <figure><img src="../../../../../.gitbook/assets/image (478).png" alt=""><figcaption></figcaption></figure>
 
-_Note: Khi tạo vContainer, chúng ta có thể chọn Enable Ingress Controller để tạo cluster với Ingress Controller đã được triển khai sẵn. Để sử dụng Ingress Controller với những tính năng phù hợp theo nhu cầu của ứng dụng, trong bài viết này sẽ không chọn Enable Ingress Controller mà sẽ tự triển khai Nginx Ingress Controller, vì thế bạn cần tắt Ingress Control khi khởi tạo K8S._
+_Note: Khi tạo vContainer, chúng ta có thể chọn Enable LoadBalancer Controller để tạo cluster với LoadBalancer Controller đã được triển khai sẵn. Để sử dụng LoadBalancer Controller với những tính năng phù hợp theo nhu cầu của ứng dụng, trong bài viết này sẽ không chọn Enable LoadBalancer Controller mà sẽ tự triển khai Nginx LoadBalancer Controller, vì thế bạn cần tắt Ingress Control khi khởi tạo K8S._
 
 1.4 Kiểm tra việc khởi tạo cluster và tải config file để access cluster:
 
@@ -38,18 +38,18 @@ _Note: Khi tạo vContainer, chúng ta có thể chọn Enable Ingress Controlle
 
 <figure><img src="../../../../../.gitbook/assets/image (481).png" alt=""><figcaption></figcaption></figure>
 
-#### 2. Triển khai Nginx Ingress Controller <a href="#chophepintegratevlbvaodichvucontainerscuavngcloud-2.trienkhainginxingresscontroller" id="chophepintegratevlbvaodichvucontainerscuavngcloud-2.trienkhainginxingresscontroller"></a>
+#### 2. Triển khai Nginx LoadBalancer Controller <a href="#chophepintegratevlbvaodichvucontainerscuavngcloud-2.trienkhainginxingresscontroller" id="chophepintegratevlbvaodichvucontainerscuavngcloud-2.trienkhainginxingresscontroller"></a>
 
 2.1 Truy cập [https://kubernetes.github.io/ingress-nginx/deploy/#bare-metal-clusters](https://kubernetes.github.io/ingress-nginx/deploy/#bare-metal-clusters)
 
 <figure><img src="../../../../../.gitbook/assets/image (483).png" alt=""><figcaption></figcaption></figure>
 
-2.2 Copy và chạy command trên để triển khai Nginx Ingress Controller:
+2.2 Copy và chạy command trên để triển khai Nginx LoadBalancer Controller:
 
 <figure><img src="../../../../../.gitbook/assets/image (485).png" alt=""><figcaption></figcaption></figure>
 
 2.3 Kiểm tra:\
-→ Như vậy chúng ta đã triển khai thành công Nginx Ingress Controller.
+→ Như vậy chúng ta đã triển khai thành công Nginx LoadBalancer Controller.
 
 <figure><img src="../../../../../.gitbook/assets/image (486).png" alt=""><figcaption></figcaption></figure>
 

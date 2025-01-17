@@ -14,9 +14,9 @@ Mỗi Cluster được tạo ra trong hệ thống VKS, chúng tôi sẽ tự đ
 
 <table><thead><tr><th width="114">Protocol</th><th width="131">Ether type</th><th width="126">Port range</th><th width="125">Destination</th><th>Ý nghĩa</th></tr></thead><tbody><tr><td>ANY</td><td>IPv4</td><td>0-65535</td><td>0.0.0.0/0</td><td>Rule mặc định của tất cả Security group</td></tr><tr><td>ANY</td><td>IPv6</td><td>0-65535</td><td>::/0</td><td>Rule mặc định của tất cả Security group</td></tr></tbody></table>
 
-### Security group được tạo tự động bởi VNGCLOUD Controller Manager&#x20;
+### Security group được tạo tự động bởi VNGCLOUD LoadBalancer Controller&#x20;
 
-Khi bạn sử dụng VNGCloud Controller Manager để tích hợp Network Load Balancer với Cluster trên hệ thống VKS, chúng tôi sẽ tự động tạo một Security Group. Security group này sẽ bao gồm:
+Khi bạn sử dụng VNGCloud LoadBalancer Controller để tích hợp Network Load Balancer với Cluster trên hệ thống VKS, chúng tôi sẽ tự động tạo một Security Group. Security group này sẽ bao gồm:
 
 * Inbound:
 
