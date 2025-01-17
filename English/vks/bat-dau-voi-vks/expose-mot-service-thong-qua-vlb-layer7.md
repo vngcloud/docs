@@ -22,7 +22,7 @@ To initialize a Cluster, follow the steps below:
 
 **Step 3:** Wait until we successfully create your VKS account. After Activate successfully, select **Create a Cluster**
 
-**Step 4:** At the Cluster initialization screen, we have set up information for the Cluster and a **Default Node Group** for you. You can keep these default values ​​or adjust the desired parameters for the Cluster and Node Group at Cluster Configuration, Default Node Group Configuration, Plugin. **When you choose to enable option**![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F73762059%2Fimage2024-4-16\_14-18-22.png%3Fversion%3D1%26modificationDate%3D1713252320000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=fc29a090\&sv=1) **, by default we will pre-install this plugin into your Cluster.**
+**Step 4:** At the Cluster initialization screen, we have set up information for the Cluster and a **Default Node Group** for you. You can keep these default values ​​or adjust the desired parameters for the Cluster and Node Group at Cluster Configuration, Default Node Group Configuration, Plugin. **When you choose to enable option**![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F73762059%2Fimage2024-4-16_14-18-22.png%3Fversion%3D1%26modificationDate%3D1713252320000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=fc29a090\&sv=1) **, by default we will pre-install this plugin into your Cluster.**
 
 **Step 5:** Select **Create Kubernetes cluster.** Please wait a few minutes for us to initialize your Cluster, the Cluster's status is now **Creating** .
 
@@ -36,7 +36,7 @@ After the Cluster is successfully initialized, you can connect and check the new
 
 **Step 1:** Visit [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
-**Step 2:** The Cluster list is displayed, select the icon![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F73762059%2Fimage2024-4-4\_14-37-11.png%3Fversion%3D1%26modificationDate%3D1712222544000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=87ec4908\&sv=1)and select **Download Config File** to download the kubeconfig file. This file will give you full access to your Cluster.
+**Step 2:** The Cluster list is displayed, select the icon![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F73762059%2Fimage2024-4-4_14-37-11.png%3Fversion%3D1%26modificationDate%3D1712222544000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=87ec4908\&sv=1)and select **Download Config File** to download the kubeconfig file. This file will give you full access to your Cluster.
 
 **Step 3** : Rename this file to config and save it to the **\~/.kube/config directory**
 
@@ -81,7 +81,6 @@ When you initialize the Cluster according to the instructions above, if you have
 **Install VNGCloud LoadBalancer Controller**
 
 * Install Helm version 3.0 or higher. Refer to [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) for instructions on how to install.
-
 * Replace your K8S cluster's ClientID, Client Secret, and ClusterID information and continue running:
 
 ```

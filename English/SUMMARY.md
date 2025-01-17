@@ -583,7 +583,7 @@
         * [Pfsense as a NAT Gateway](vks/bat-dau-voi-vks/create-a-public-cluster/khoi-tao-mot-public-cluster-voi-private-node-group/pfsense-as-a-nat-gateway.md)
     * [Create a Private Cluster](vks/bat-dau-voi-vks/create-a-private-cluster.md)
     * [Expose a service through vLB Layer4](vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4.md)
-    * [Expose a service through vLB Layer7](vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer7/README.md)
+    * [Expose a service through vLB Layer7](vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer7.md)
       * [Automatically manage Certificates in VKS with Nginx Ingress Controller, Cert-Manager, and Let's Encr](vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer7/automatically-manage-certificates-in-vks-with-nginx-ingress-controller-cert-manager-and-lets-encr.md)
     * [Preserve Source IP when using NLB and Nginx LoadBalancer Controller](vks/bat-dau-voi-vks/preserve-source-ip-when-using-nlb-and-nginx-ingress-controller.md)
     * [Integrate with Container Storage Interface (CSI)](vks/bat-dau-voi-vks/integrate-with-container-storage-interface-csi.md)

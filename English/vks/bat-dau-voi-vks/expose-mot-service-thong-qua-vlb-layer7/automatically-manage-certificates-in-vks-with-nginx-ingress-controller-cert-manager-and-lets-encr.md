@@ -1,29 +1,25 @@
 # Automatically manage Certificates in VKS with Nginx Ingress Controller, Cert-Manager, and Let's Encr
 
-Necessary conditions
+## Necessary conditions <a href="#dieu-kien-can" id="dieu-kien-can"></a>
 
 * You have initialized the Cluster on the VKS system according to the instructions here [and](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4) the VNGCloud LoadBalancer Controller has been installed on your cluster **.**
 * Next, make sure you have a **domain** registered and in use.
 * Finally, you need an **email** address to perform the Certificate management test.
 * Next, you need to install nginx-ingress-controller with the command:
 
-Copy
-
-```
+```bash
 helm install nginx-ingress-controller oci://ghcr.io/nginxinc/charts/nginx-ingress --namespace kube-system
 ```
 
 ***
 
-### **Install Cert-Manager** <a href="#cai-dat-cert-manager" id="cai-dat-cert-manager"></a>
+## **Install Cert-Manager** <a href="#cai-dat-cert-manager" id="cai-dat-cert-manager"></a>
 
 **Cert-Manager** is responsible for automatically issuing and renewing certificates from **Let's Encrypt.**
 
 * Use **Helm** to install Cert-Manager via command:
 
-Copy
-
-```
+```bash
 helm install \
   cert-manager jetstack/cert-manager \
   --namespace cert-manager \
@@ -34,20 +30,18 @@ helm install \
 
 ***
 
-### **Steps to follow** <a href="#cac-buoc-thuc-hien" id="cac-buoc-thuc-hien"></a>
+## **Steps to follow** <a href="#cac-buoc-thuc-hien" id="cac-buoc-thuc-hien"></a>
 
-#### **Deploy sample app** <a href="#deploy-sample-app" id="deploy-sample-app"></a>
+### **Deploy sample app** <a href="#deploy-sample-app" id="deploy-sample-app"></a>
 
 Let's deploy a sample app, for example:
 
-Copy
-
-```
+```bash
 kubectl create deployment echo-server --image=mccutchen/go-httpbin
 kubectl expose deployment echo-server --name=clusterip --port=80 --target-port=8080 --type=ClusterIP
 ```
 
-#### **Issuer Configuration** <a href="#cau-hinh-issuer" id="cau-hinh-issuer"></a>
+### **Issuer Configuration** <a href="#cau-hinh-issuer" id="cau-hinh-issuer"></a>
 
 Issuer is the component that helps Cert-Manager communicate with Let's Encrypt to issue certificates.
 
