@@ -272,17 +272,7 @@ Issuer là thành phần giúp Cert-Manager giao tiếp với Let's Encrypt đ�
 7)  Kiểm tra kết nối đến domain qua lệnh:
 
     ```bash
-    curl -kivL -H 'Host: ______DOMAIN______' 'http://_____IP_____'
-    ```
-
-    &#x20;
-8)  Bạn cũng có thể thực hiện xóa các resource thử nghiệm qua lệnh:
-
-    ```bash
-    kubectl delete ingress go-httpbin
-    kubectl delete issuer letsencrypt-staging
-    kubectl delete secret quickstart-example-tls
-    kubectl delete secret letsencrypt-staging
+    curl -kivL -H 'http://_____IP_____'
     ```
 
 </details>
