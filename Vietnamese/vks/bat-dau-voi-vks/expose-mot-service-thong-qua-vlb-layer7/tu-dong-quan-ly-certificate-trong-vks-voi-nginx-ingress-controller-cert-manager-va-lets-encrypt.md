@@ -60,7 +60,7 @@ Issuer là thành phần giúp Cert-Manager giao tiếp với Let's Encrypt đ�
     spec:
       acme:
         server: https://acme-staging-v02.api.letsencrypt.org/directory
-        email: your-email@example.com                                           # Change to your email
+        email:  ______________________ # Change to your email
         privateKeySecretRef:
           name: letsencrypt-staging
         solvers:
@@ -84,7 +84,7 @@ Issuer là thành phần giúp Cert-Manager giao tiếp với Let's Encrypt đ�
     ```bash
     Status:
       Acme:
-        Uri:  https://acme-staging-v02.api.letsencrypt.org/acme/acct/7374163
+        Uri:  https://acme-staging-v02.api.letsencrypt.org/acme/acct/...
       Conditions:
         Last Transition Time:  ...
         Message:               The ACME account was registered with the ACME server
@@ -106,10 +106,10 @@ Issuer là thành phần giúp Cert-Manager giao tiếp với Let's Encrypt đ�
       ingressClassName: nginx
       tls:
       - hosts:
-        - ______________________                   # Change to your domain
+        - ______________________ # Change to your domain
         secretName: quickstart-example-tls
       rules:
-      - host: ______________________               # Change to your domain
+      - host: ______________________ # Change to your domain
         http:
           paths:
           - path: /
@@ -163,7 +163,7 @@ Issuer là thành phần giúp Cert-Manager giao tiếp với Let's Encrypt đ�
     Status:
       Acme:
         Order:
-          URL:  https://acme-staging-v02.api.letsencrypt.org/acme/order/7374163/13665676
+          URL:  https://acme-staging-v02.api.letsencrypt.org/acme/order/...
       Conditions:
         Last Transition Time:  2018-11-17T18:05:57Z
         Message:               Certificate issued successfully
@@ -212,7 +212,7 @@ Issuer là thành phần giúp Cert-Manager giao tiếp với Let's Encrypt đ�
     spec:
       acme:
         server: https://acme-v02.api.letsencrypt.org/directory
-        email: ______________________                                 # Change to your email
+        email: ______________________ # Change to your email
         privateKeySecretRef:
           name: letsencrypt-prod
         solvers:
@@ -245,10 +245,10 @@ Issuer là thành phần giúp Cert-Manager giao tiếp với Let's Encrypt đ�
       ingressClassName: nginx
       tls:
       - hosts:
-        - ______________________                   # Change to your domain
+        - ______________________ # Change to your domain
         secretName: quickstart-example-tls
       rules:
-      - host: ______________________               # Change to your domain
+      - host: ______________________ # Change to your domain
         http:
           paths:
           - path: /
@@ -258,21 +258,6 @@ Issuer là thành phần giúp Cert-Manager giao tiếp với Let's Encrypt đ�
                 name: clusterip
                 port:
                   number: 80
-    ```
-5)  Kiểm tra certificate qua lệnh:
-
-    ```bash
-    kubectl get certificate
-    ```
-6)  Kiểm tra thông tin chi tiết certificate:
-
-    ```bash
-    kubectl describe certificate quickstart-example-tls
-    ```
-7)  Kiểm tra kết nối đến domain qua lệnh:
-
-    ```bash
-    curl -kivL -H 'http://_____IP_____'
     ```
 
 </details>
