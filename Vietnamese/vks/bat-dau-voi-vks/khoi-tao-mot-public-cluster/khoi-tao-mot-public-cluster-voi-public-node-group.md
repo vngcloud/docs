@@ -171,4 +171,4 @@ Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với đ
 Nếu bạn muốn expose service này thông qua vLB Layer4, vLB Layer7, vui lòng tham khảo tại:&#x20;
 
 * [Expose một service thông qua vLB Layer4](../expose-mot-service-thong-qua-vlb-layer4/)
-* [Expose một service thông qua vLB Layer7](../expose-mot-service-thong-qua-vlb-layer7.md)
+* [Expose một service thông qua vLB Layer7](../expose-mot-service-thong-qua-vlb-layer7/)
