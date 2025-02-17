@@ -14,7 +14,7 @@ Tính năng Auto Scaling cho phép vLB tự động điều chỉnh số lượn
 
 <figure><img src="../../.gitbook/assets/image.png" alt="" width="196"><figcaption></figcaption></figure>
 
-* Nếu LoadBalancer của bạn được khởi tạo tự động thông qua hệ thống VKS, vui lòng thêm annotation `vks.vngcloud.vn/enable-autoscale: true` vào file yaml, ví dụ:
+* Nếu LoadBalancer của bạn được khởi tạo tự động thông qua hệ thống VKS, vui lòng thêm annotation `vks.vngcloud.vn/enable-autoscale: true` ngay khi tạo service LoadBalancer hay Ingress với Class vngcloud. Việc cập nhật annotation này sau khi LoadBalancer này đã được tạo sẽ không có tác dụng. Ví dụ:
 
 ```yaml
 // For NLB
@@ -90,8 +90,8 @@ spec:
 * Chính sách dựa trên tỷ lệ phần trăm kết nối đang hoạt động (active connection) so với giới hạn kết nối tối đa (max connection).
   * **Scaling out (Mở rộng):**
     * Khi đạt ngưỡng 80% active connection/max connection trong 3 phút liên tục, hệ thống sẽ tự động thêm 1 LB thành viên.
-* **Scaling in (Thu hẹp):**
-  * Khi ngưỡng giảm xuống dưới 20% active connection/max connection trong 3 phút liên tục, hệ thống sẽ tự động xóa 1 LB thành viên.
+  * **Scaling in (Thu hẹp):**
+    * Khi ngưỡng giảm xuống dưới 20% active connection/max connection trong 3 phút liên tục, hệ thống sẽ tự động xóa 1 LB thành viên.
 
 {% hint style="info" %}
 **Chú ý:**
