@@ -713,6 +713,7 @@
       * [Sử dụng CNI Calico Overlay](vks/network/cni/su-dung-cni-calico-overlay.md)
       * [Sử dụng CNI Cilium Overlay](vks/network/cni/su-dung-cni-cilium-overlay.md)
       * [Sử dụng CNI Cilium VPC Native Routing](vks/network/cni/su-dung-cni-cilium-vpc-native-routing.md)
+    * [Auto Scaling](vks/network/auto-scaling.md)
   * [Storage](vks/storage/README.md)
     * [Làm việc với Container Storage Interface (CSI)](vks/storage/lam-viec-voi-container-storage-interface-csi/README.md)
       * [Integrate with Container Storage Interface (CSI)](vks/storage/lam-viec-voi-container-storage-interface-csi/integrate-with-container-storage-interface-csi.md)
