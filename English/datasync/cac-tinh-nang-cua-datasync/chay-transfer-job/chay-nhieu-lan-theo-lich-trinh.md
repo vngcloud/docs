@@ -1,149 +1,149 @@
-# Chạy nhiều lần theo lịch trình
+# Run schedule
 
-Trong hệ thống DataSync, cơ chế chạy lập lịch định kỳ cho các transfer job theo ngày, tuần, hoặc tháng giúp tự động hóa và đảm bảo các tác vụ transfer dữ liệu được thực hiện đều đặn theo một chu kỳ nhất định. Dưới đây là cách hoạt động của các chế độ lập lịch định kỳ này:
+In the DataSync system, the mechanism to run periodic schedules for transfer jobs on a daily, weekly, or monthly basis helps to automate and ensure that data transfer tasks are performed regularly on a certain cycle. Here is how these periodic scheduling modes work:
 
-**Bước 1: Xác định và cấu hình thời điểm Chạy Transfer Job**:
+**Step 1: Determine and configure when to run Transfer Job** :
 
-* Bạn cần xác định thời điểm cụ thể mà bạn muốn transfer job bắt đầu chạy. Thời điểm này có thể được cấu hình dưới dạng ngày giờ cụ thể với điều kiện lớn hơn thời điểm hiện tại (**current datetime**)
+* You need to specify the specific time at which you want the transfer job to start running. This time can be configured as a specific date and time with the condition that it is greater than the current **datetime** .
 
-**Bước 2: Chạy Transfer Job:**
+**Step 2: Run Transfer Job:**
 
-* Đến thời điểm đã chỉ định, hệ thống DataSync sẽ tự động kích hoạt transfer job và bắt đầu quá trình transfer dữ liệu từ nguồn đến đích theo các thông số đã cấu hình.
+* At the specified time, the DataSync system will automatically trigger the transfer job and start the process of transferring data from source to destination according to the configured parameters.
 
-### Lập lịch chạy định kỳ theo Ngày
+## Schedule a recurring run by Day <a href="#lap-lich-chay-dinh-ky-theo-ngay" id="lap-lich-chay-dinh-ky-theo-ngay"></a>
 
-* Transfer job sẽ chạy vào một thời điểm cụ thể hàng ngày.
+* The transfer job will run at a specific time every day.
 
-**Ví dụ**
+**For example**
 
-Giả sử bạn muốn thiết lập một transfer job thực hiện transfer dữ liệu từ một bucket trên cloud provider A tới container B trên vStorage theo chu kỳ hằng ngày bắt đầu từ 01/05/2024 tới 30/05/2024 vào lúc 03:00. Quy trình sẽ như sau:
+Suppose you want to set up a transfer job to transfer data from a bucket on cloud provider A to container B on vStorage on a daily basis starting from 01/05/2024 to 30/05/2024 at 03:00. The process would be as follows:
 
-1. **Xác định thời điểm**: 3:00 AM, từ ngày 01/05/2025 tới 30/05/2024.
-2. **Cấu hình job**:
+1. **Time** : 3:00 AM, from 01/05/2025 to 30/05/2024.
+2. **Job configuration** :
 
-* **Chọn thời điểm chạy job**:
-  * Chọn phương án **Chạy lập lịch**
-  * Chu kỳ **Daily**
-  * Chọn **Ngày bắt đầu** là 01/05/2024, nhập thời điểm 03:00.
-  * Chọn **Ngày kết thúc** là 30/05/2024
+* **Select when to run the job** :
+  * **Select the Run Schedule** option
+  * **Daily** Cycle
+  * Select **Start date** as 01/05/2024, enter time 03:00.
+  * Select **End Date** as 05/30/2024
 
-3. Hằng ngày tính từ 01/05/2024, vào lúc 03:00 hệ thống sẽ thực hiện chạy transfer job của bạn.
+1. Every day from 01/05/2024, at 03:00 the system will run your transfer job.
 
 {% hint style="info" %}
-**Chú ý:**
+**Attention:**
 
-Nếu bạn thay đổi chu kỳ chạy của một transfer job trong hệ thống DataSync, thì:
+If you change the run cycle of a transfer job in the DataSync system, then:
 
-* Thời điểm chạy kế tiếp (next run time) sẽ không thay đổi khi bạn thực hiện cập nhật.
-* Sau khi lần chạy kế tiếp này đã thực hiện, thì lần chạy kế tiếp sẽ dựa theo chu kỳ mới mà bạn chỉnh sửa cho transfer job của bạn.
+* The next run time will not change when you perform an update.
+* After this next run has been executed, the next run will be based on the new cycle you edited for your transfer job.
 
-**Ví dụ:**
+**For example:**
 
-* Hiện tại, bạn đang thiết lập chạy transfer job với các thông số:
-  * Ngày bắt đầu: 01/05/2024 , 03:00
-  * Ngày kết thúc: 30/05/2024
-  * Chu kỳ: Daily
+* Currently, you are setting up to run the transfer job with the following parameters:
+  * Start date: 01/05/2024 , 03:00
+  * End date: 30/05/2024
+  * Period: Daily
 
-\=> tính tới thời điểm hiện tại trước khi chỉnh sửa, lần run transfer job kế tiếp sẽ là vào lúc **22/05/2024 03:00**
+\=> as of now before editing, the next transfer job run will be at **05/22/2024 03:00**
 
-* Giả sử, bạn thực hiện thay đổi thông tin này vào ngày 21/05/2024 với thông số như sau:
-  * Ngày bắt đầu: 01/05/2024 , 03:00
-  * Ngày kết thúc: 30/05/2024
-  * Chu kỳ: Weekly
+* Suppose you make this change on 21/05/2024 with the following parameters:
+  * Start date: 01/05/2024 , 03:00
+  * End date: 30/05/2024
+  * Period: Weekly
 
-\=> Lúc này, thời điểm chạy kế tiếp vẫn sẽ là **22/05/2024 03:00**
+\=> At this time, the next run time will still be **05/22/2024 03:00**
 
-\=> Sau lần chạy này, lần chạy kế tiếp sẽ được tính theo chu kỳ mới là **22/05/2024 03:00 + 7 ngày = 29/05/2024 03:00**
+\=> After this run, the next run will be calculated according to the new cycle of **05/22/2024 03:00 + 7 days = 05/29/2024 03:00**
 {% endhint %}
 
-### **Lập lịch chạy định kỳ theo Tuần**
+## **Schedule regular runs by week** <a href="#lap-lich-chay-dinh-ky-theo-tuan" id="lap-lich-chay-dinh-ky-theo-tuan"></a>
 
-* Transfer job sẽ chạy định kỳ 7 ngày một lần.
+* Transfer job will run periodically every 7 days.
 
-**Ví dụ**
+**For example**
 
-Giả sử bạn muốn thiết lập một transfer job thực hiện transfer dữ liệu từ một bucket trên cloud provider A tới container B trên vStorage theo chu kỳ 7 ngày 1 lần bắt đầu từ 01/05/2024 tới 30/05/2024 vào lúc 03:00. Quy trình sẽ như sau:
+Suppose you want to set up a transfer job to transfer data from a bucket on cloud provider A to container B on vStorage every 7 days starting from 01/05/2024 to 30/05/2024 at 03:00. The process would be as follows:
 
-1. **Xác định thời điểm**: 3:00 AM, từ ngày 01/05/2025 tới 30/05/2024.
-2. **Cấu hình job**:
+1. **Time** : 3:00 AM, from 01/05/2025 to 30/05/2024.
+2. **Job configuration** :
 
-* **Chọn thời điểm chạy job**:
-  * Chọn phương án **Chạy lập lịch**
-  * Chu kỳ **Weekly**
-  * Chọn **Ngày bắt đầu** là 01/05/2024, nhập thời điểm 03:00.
-  * Chọn **Ngày kết thúc** là 30/05/2024
+* **Select when to run the job** :
+  * **Select the Run Schedule** option
+  * **Weekly** Cycle
+  * Select **Start date** as 01/05/2024, enter time 03:00.
+  * Select **End Date** as 05/30/2024
 
-3. Vào các ngày 01/05/2024, 08/05/2024, 15/05/2024, 22/05/2024, 29/05/2024 lúc 03:00 hệ thống sẽ thực hiện chạy transfer job của bạn.
+1. On 05/01/2024, 05/08/2024, 05/15/2024, 05/22/2024, 05/29/2024 at 03:00 the system will run your transfer job.
 
 {% hint style="info" %}
-**Chú ý:**
+**Attention:**
 
-Nếu bạn thay đổi chu kỳ chạy của một transfer job trong hệ thống DataSync, thì:
+If you change the run cycle of a transfer job in the DataSync system, then:
 
-* Thời điểm chạy kế tiếp (next run time) sẽ không thay đổi khi bạn thực hiện cập nhật.
-* Sau khi lần chạy kế tiếp này đã thực hiện, thì lần chạy kế tiếp sẽ dựa theo chu kỳ mới mà bạn chỉnh sửa cho transfer job của bạn.
+* The next run time will not change when you perform an update.
+* After this next run has been executed, the next run will be based on the new cycle you edited for your transfer job.
 
-**Ví dụ:**
+**For example:**
 
-* Hiện tại: bạn đang thiết lập chạy transfer job với các thông số:
-  * Ngày bắt đầu: 01/05/2024 , 03:00
-  * Ngày kết thúc: 30/05/2024
-  * Chu kỳ: Weekly
+* Currently: you are setting up to run a transfer job with the following parameters:
+  * Start date: 01/05/2024 , 03:00
+  * End date: 30/05/2024
+  * Period: Weekly
 
-\=> tính tới thời điểm hiện tại trước khi chỉnh sửa, lần run transfer job kế tiếp sẽ là vào lúc  **22/05/2024 03:00**
+\=> as of now before editing, the next transfer job run will be at **05/22/2024 03:00**
 
-* Giả sử, bạn thực hiện thay đổi thông tin này vào ngày 21/05/2024 với thông số như sau:
-  * Ngày bắt đầu: 01/05/2024 , 03:00
-  * Ngày kết thúc: 30/05/2024
-  * Chu kỳ: Daily
+* Suppose you make this change on 21/05/2024 with the following parameters:
+  * Start date: 01/05/2024 , 03:00
+  * End date: 30/05/2024
+  * Period: Daily
 
-\=> Lúc này, thời điểm chạy kế tiếp vẫn sẽ là **22/05/2024 03:00**
+\=> At this time, the next run time will still be **05/22/2024 03:00**
 
-\=> Sau lần chạy này, lần chạy kế tiếp sẽ được tính theo chu kỳ mới là **22/05/2024 03:00 + 1 ngày = 23/05/2024 03:00**
+\=> After this run, the next run will be calculated according to the new cycle of **05/22/2024 03:00 + 1 day = 05/23/2024 03:00**
 {% endhint %}
 
-### **Lập lịch chạy định kỳ theo Tháng**
+## **Schedule a monthly run** <a href="#lap-lich-chay-dinh-ky-theo-thang" id="lap-lich-chay-dinh-ky-theo-thang"></a>
 
-* Transfer job sẽ chạy định kỳ 1 tháng một lần.
+* Transfer job will run periodically once a month.
 
-**Ví dụ**
+**For example**
 
-Giả sử bạn muốn thiết lập một transfer job thực hiện transfer dữ liệu từ một bucket trên cloud provider A tới container B trên vStorage theo chu kỳ 1 tháng 1 lần bắt đầu từ 01/01/2024 tới 30/06/2024 vào lúc 03:00. Quy trình sẽ như sau:
+Suppose you want to set up a transfer job to transfer data from a bucket on cloud provider A to container B on vStorage every month starting from 01/01/2024 to 30/06/2024 at 03:00. The process will be as follows:
 
-1. **Xác định thời điểm**: 3:00 AM, từ ngày 01/01/2025 tới 30/06/2024.
-2. **Cấu hình job**:
+1. **Time** : 3:00 AM, from 01/01/2025 to 06/30/2024.
+2. **Job configuration** :
 
-* **Chọn thời điểm chạy job**:
-  * Chọn phương án **Chạy lập lịch**
-  * Chu kỳ **Monthly**
-  * Chọn **Ngày bắt đầu** là 01/01/2024, nhập thời điểm 03:00.
-  * Chọn **Ngày kết thúc** là 30/06/2024
+* **Select when to run the job** :
+  * **Select the Run Schedule** option
+  * **Monthly** Cycle
+  * Select **Start date** as 01/01/2024, enter time 03:00.
+  * Select **End Date** as 06/30/2024
 
-3. Vào các ngày 01/01/2024, 01/02/2024, 01/03/2024, 01/04/2024, 01/05/2024, 01/06/2024 lúc 03:00 hệ thống sẽ thực hiện chạy transfer job của bạn.
+1. On 01/01/2024, 01/02/2024, 01/03/2024, 01/04/2024, 01/05/2024, 01/06/2024 at 03:00 the system will run your transfer job.
 
 {% hint style="info" %}
-**Chú ý:**
+**Attention:**
 
-Nếu bạn thay đổi chu kỳ chạy của một transfer job trong hệ thống DataSync, thì:
+If you change the run cycle of a transfer job in the DataSync system, then:
 
-* Thời điểm chạy kế tiếp (next run time) sẽ không thay đổi khi bạn thực hiện cập nhật.
-* Sau khi lần chạy kế tiếp này đã thực hiện, thì lần chạy kế tiếp sẽ dựa theo chu kỳ mới mà bạn chỉnh sửa cho transfer job của bạn.
+* The next run time will not change when you perform an update.
+* After this next run has been executed, the next run will be based on the new cycle you edited for your transfer job.
 
-**Ví dụ:**
+**For example:**
 
-* Hiện tại: bạn đang thiết lập chạy transfer job với các thông số:
-  * Ngày bắt đầu: 01/05/2024 , 03:00
-  * Ngày kết thúc: 30/06/2024
-  * Chu kỳ: Monthly
+* Currently: you are setting up to run a transfer job with the following parameters:
+  * Start date: 01/05/2024 , 03:00
+  * End date: 30/06/2024
+  * Period: Monthly
 
-\=> tính tới thời điểm hiện tại trước khi chỉnh sửa, lần run transfer job kế tiếp sẽ là vào lúc  **01/06/2024 03:00**
+\=> as of now before editing, the next transfer job run will be at **06/01/2024 03:00**
 
-* Giả sử, bạn thực hiện thay đổi thông tin này vào ngày 21/05/2024 với thông số như sau:
-  * Ngày bắt đầu: 01/05/2024 , 03:00
-  * Ngày kết thúc: 30/06/2024
-  * Chu kỳ: Weekly
+* Suppose you make this change on 21/05/2024 with the following parameters:
+  * Start date: 01/05/2024 , 03:00
+  * End date: 30/06/2024
+  * Period: Weekly
 
-\=> Lúc này, thời điểm chạy kế tiếp vẫn sẽ là **01/06/2024 03:00**
+\=> At this time, the next run time will still be **06/01/2024 03:00**
 
-\=> Sau lần chạy này, lần chạy kế tiếp sẽ được tính theo chu kỳ mới là **01/06/2024 03:00 + 7 ngày = 08/06/2024 03:00**
+\=> After this run, the next run will be calculated according to the new cycle of **06/01/2024 03:00 + 7 days = 06/08/2024 03:00**
 {% endhint %}

@@ -317,7 +317,7 @@
         * [Data Security stored on vStorage](vstorage/object-storage/vstorage-hcm03/security/data-security-stored-on-vstorage.md)
       * [Usecase](vstorage/object-storage/vstorage-hcm03/usecase/README.md)
         * [Migrate data](vstorage/object-storage/vstorage-hcm03/usecase/migrate-data/README.md)
-          * [\[Rclone\] Mount vStorage thành Local Drive trên Linux](vstorage/object-storage/vstorage-hcm03/usecase/migrate-data/rclone-mount-vstorage-to-local-drive-on-linux-skip-to-end-of-metadata.md)
+          * [\[Rclone\] Mount vStorage as Local Drive on Linux](vstorage/object-storage/vstorage-hcm03/usecase/migrate-data/rclone-mount-vstorage-to-local-drive-on-linux-skip-to-end-of-metadata.md)
           * [\[Rclone\] Mount vStorage to Window server](vstorage/object-storage/vstorage-hcm03/usecase/migrate-data/rclone-mount-vstorage-to-window-server.md)
           * [\[Rclone\] Sync data from AWS S3 to vStorage](vstorage/object-storage/vstorage-hcm03/usecase/migrate-data/rclone-sync-data-from-aws-s3-to-vstorage.md)
         * [Optimize performance](vstorage/object-storage/vstorage-hcm03/usecase/optimize-performance.md)

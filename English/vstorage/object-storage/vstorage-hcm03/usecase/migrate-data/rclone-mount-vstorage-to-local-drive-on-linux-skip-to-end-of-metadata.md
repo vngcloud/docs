@@ -1,82 +1,96 @@
-# \[Rclone] Mount vStorage thành Local Drive trên Linux
+# \[Rclone] Mount vStorage as Local Drive on Linux
 
-Để thực hiện Mount vStorage thành Local Drive trên Linux sử dụng Rclone, hãy làm theo hướng dẫn sau:
+To Mount vStorage to Local Drive on Linux using Rclone, follow these instructions:
 
-**1:** Tải & cài đặt **rclone** theo hướng dẫn sau:
+**1:** Download & install **rclone** according to the following instructions:
 
-Với CentOS 7:
+With CentOS 7:
 
-| `curl https://`[`rclone.org/install.sh`](http://rclone.org/install.sh) `\| sudo bash` `sudo yum install fuse -y` |
-| ---------------------------------------------------------------------------------------------------------------- |
+`curl https://`[`rclone.org/install.sh`](http://rclone.org/install.sh) `| sudo bash` `sudo yum install fuse -y`
 
-Với các OS khác: bạn tham khảo link download tại: [https://downloads.rclone.org/v1.55.1/](https://downloads.rclone.org/v1.55.1/)
+For other OS: you can refer to the download link at: [https://downloads.rclone.org/v1.55.1/](https://downloads.rclone.org/v1.55.1/)
 
-**Lưu ý:** Nếu rclone của bạn đang sử dụng **version cũ < 1.50** (Để kiểm tra version, bạn dùng lệnh **rclone version**), bạn nên upgrade xuống **rclone version mới** theo cách sau:
+**Note:** If your rclone is using **an old version < 1.50** (To check the version, use the command **rclone version** ), you should upgrade to **the new rclone version** as follows:
 
-* Nếu bạn cài theo script: curl [https://rclone.org/install.sh](https://rclone.org/install.sh) | sudo bash.
+* If you install by script: curl [https://rclone.org/install.sh](https://rclone.org/install.sh) | sudo bash.
 
-| `sudo rm /usr/bin/rclone` `sudo rm /usr/local/share/man/man1/rclone.1` |
-| ---------------------------------------------------------------------- |
+`sudo rm /usr/bin/rclone` `sudo rm /usr/local/share/man/man1/rclone.1`
 
-* Nếu bạn cài theo repo của OS, bạn có thể:
+* If you install from OS repo, you can:
 
-| `yum remove rclone` |
-| ------------------- |
+`yum remove rclone`
 
-Sau đó, bạn tải và cài đặt **version mới** như hướng dẫn ở trên.
+Then, you download and install **the new version** as instructed above.
 
-**2:** Tạo file chứng thực rclone.conf theo mẫu sau:
+**2:** Create a certificate file rclone.conf according to the following template:
 
-| <p><code>[vstorage]</code></p><p><code>type = swift</code></p><p><code>env_auth = false</code></p><p><code>auth_version = 3</code></p><p><code>user = ******</code></p><p><code>key = ******</code></p><p><code>auth =</code> <a href="https://hcm.auth.vstorage.vngcloud.vn/v3tenant_id"><code>https://hcm.auth.vstorage.vngcloud.vn/v3</code></a></p><p><a href="https://hcm.auth.vstorage.vngcloud.vn/v3tenant_id"><code>tenant_id</code></a> <code>= 410ded5c02674846b534ff7b4a894c2e</code></p><p><code>endpoint_type = public</code></p><p><code>tenant_domain = default</code></p><p><code>domain = default</code></p><p><code>location_constraint = HCM01</code></p><p><code>region = HCM01</code></p> |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+`[vstorage]`
 
-Các thông tin bên trên bạn có thể thực hiện lấy theo hướng dẫn tại [Tích hợp công cụ Rclone với vStorage](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vstorage/vstorage-hcm03/3rd-party-softwares/rclone/tich-hop-cong-cu-rclone-voi-vstorage). Trong đó:
+`type = swift`
 
-* User/ Key: thông tin Swift user bạn khởi tạo từ IAM.
-* Auth: xem tại [Farm là gì?](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vstorage/vstorage-hcm03/vstorage-la-gi/farm-la-gi)
-* Tenant\_id: thông tin project id, bạn có thể lấy tại vStorage Portal.
+`env_auth = false`
 
-Trước khi mount, bạn kiểm tra kết nối tới vStorage bằng lệnh lsd của rclone với cú pháp:
+`auth_version = 3`
 
-| `rclone --config=rclone.conf lsd vstorage:` |
-| ------------------------------------------- |
+`user = ******`
 
-Nếu bạn đã sử dụng vStorage trước đó, bạn sẽ thấy các container chứa các file mình đã upload lên.
+`key = ******`
 
-**3**: Để thực hiện mount, bạn dùng câu lệnh với cú pháp sau:
+`auth =` [`https://hcm.auth.vstorage.vngcloud.vn/v3`](https://hcm.auth.vstorage.vngcloud.vn/v3tenant_id)
 
-| `rclone mount --config=rclone.conf vstorage:<container_name> <mount_point> --vfs-cache-mode full --allow-non-empty --allow-other --drive-chunk-size 128M --max-read-ahead 200M --dir-cache-time 30m --daemon` |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+[`tenant_id`](https://hcm.auth.vstorage.vngcloud.vn/v3tenant_id) `= 410ded5c02674846b534ff7b4a894c2e`
 
-Trong đó:
+`endpoint_type = public`
 
-* **container\_name**: tên container bạn sẽ backup file vào trên vStorage. (nếu chưa có, rclone sẽ tự động sinh ra). Lưu ý, bạn nên đặt một tên khác các container hiện có.
-* **mount\_point**: vùng sẽ mount trên local của bạn.
+`tenant_domain = default`
 
-VD: bạn muốn mount container tên **backup** tại đuờng dẫn **/backup** trên máy local:
+`domain = default`
 
-| `rclone mount --config=/root/.config/rclone/rclone.conf vstorage:backup /backup --vfs-cache-mode full --allow-non-empty --allow-other --drive-chunk-size 128M --max-read-ahead 200M --dir-cache-time 30m --daemon` |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+`location_constraint = HCM01`
 
-Quá trình mount sẽ mất một lúc để hoàn thành. (Khoảng 3 phút).
+`region = HCM01`
 
-Để test quá trình mount đã hoàn thành hay chưa, bạn có thể tạo file vào vùng mount trên:
+You can get the above information according to the instructions at [Integrating Rclone tool with vStorage](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vstorage/vstorage-hcm03/3rd-party-softwares/rclone/tich-hop-cong-cu-rclone-voi-vstorage) . In which:
 
-VD: touch /backup/abc
+* User/ Key: Swift user information you created from IAM.
+* Auth: see [what is Farm?](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vstorage/vstorage-hcm03/vstorage-la-gi/farm-la-gi)
+* Tenant\_id: project id information, you can get it at vStorage Portal.
 
-Đợi một lúc để quá trình sync dữ liệu diễn ra (tùy dung dung lượng file của bạn mà quá trình này sẽ nhanh hay chậm).
+Before mounting, you check the connection to vStorage using rclone's lsd command with the syntax:
 
-Để check quá trình sync đã thành công, bạn dùng lệnh **ls** của rclone để kiểm tra:
+`rclone --config=rclone.conf lsd vstorage:`
 
-| `rclone --config=rclone.conf ls vstorage:<container_name>` |
-| ---------------------------------------------------------- |
+If you have used vStorage before, you will see containers containing the files you have uploaded.
 
-Ví dụ:
+**3** : To mount, use the command with the following syntax:
 
-| `rclone --config=rclone.conf ls vstorage:backup` |
-| ------------------------------------------------ |
+`rclone mount --config=rclone.conf vstorage:<container_name> <mount_point> --vfs-cache-mode full --allow-non-empty --allow-other --drive-chunk-size 128M --max-read-ahead 200M --dir-cache-time 30m --daemon`
 
-Để unmount, bạn dùng lệnh sau:
+In there:
 
-| `fusermount -uz <mount_point>` |
-| ------------------------------ |
+* **container\_name** : the name of the container you will backup files to on vStorage. (if not, rclone will automatically generate it). Note, you should set a different name from the existing containers.
+* **mount\_point** : the area to mount on your local.
+
+For example: you want to mount a container named **backup** at the path **/backup** on your local machine:
+
+`rclone mount --config=/root/.config/rclone/rclone.conf vstorage:backup /backup --vfs-cache-mode full --allow-non-empty --allow-other --drive-chunk-size 128M --max-read-ahead 200M --dir-cache-time 30m --daemon`
+
+The mounting process will take a while to complete. (About 3 minutes).
+
+To test whether the mount process is complete or not, you can create a file in the mount area above:
+
+Example: touch /backup/abc
+
+Wait a moment for the data sync process to take place (depending on the size of your file, this process will be fast or slow).
+
+To check if the sync process was successful, use rclone's **ls** command to check:
+
+`rclone --config=rclone.conf ls vstorage:<container_name>`
+
+For example:
+
+`rclone --config=rclone.conf ls vstorage:backup`
+
+To unmount, use the following command:
+
+`fusermount -uz <mount_point>`
