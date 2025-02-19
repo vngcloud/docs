@@ -2,8 +2,6 @@
 
 Một Server chuyển đổi qua các trạng thái khác nhau từ thời điểm được tạo đến thời điểm kết thúc.
 
-<figure><img src="https://docs.vngcloud.vn/download/attachments/49647886/image2022-11-14_13-22-56.png?version=1&#x26;modificationDate=1668406977000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-
 ### **Provisioning** <a href="#vongdoimaychuao-provisioning" id="vongdoimaychuao-provisioning"></a>
 
 Trong giai đoạn này, các cá thể được chuẩn bị để đi vào trạng thái đang chạy. Các tài nguyên máy tính được cấp phát và cấu hình ở giai đoạn này.
@@ -18,7 +16,7 @@ Bạn được phép lập hóa đơn cho các Server trong giai đoạn đang c
 
 ### **Shutting Down** <a href="#vongdoimaychuao-shuttingdown" id="vongdoimaychuao-shuttingdown"></a>
 
-Trong một số trường hợp, khi bạn không thể kiếm tra trạng thái Server hoặc nó không chạy như mong đợi, Server sẵn sàng để có thể bị tắt đi.
+Trong một số trường hợp, khi bạn không thể kiểm tra trạng thái Server hoặc nó không chạy như mong đợi, Server sẵn sàng để có thể bị tắt đi.
 
 Bạn có thể bắt đầu việc tắt Server để khắc phục sự cố và khởi động lại dịch vụ này khi đã sẵn sàng.
 

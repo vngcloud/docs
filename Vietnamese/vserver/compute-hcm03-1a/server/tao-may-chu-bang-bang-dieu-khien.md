@@ -68,4 +68,4 @@ Bạn có thể chọn tính năng Server Group để tạo ràng buộc về v�
 
 ### **Kết quả** <a href="#taomaychubangbangdieukhien-ketqua" id="taomaychubangbangdieukhien-ketqua"></a>
 
-Sau khi máy chủ ảo được tạo ra, bạn vào trang Instance để kiểu tra trạng thái của máy chủ. Trạng thái Running báo hiệu máy chủ đã sẵn sàng để sử dụng. Bạn cũng sẽ nhận được thông tin tuy cập qua email.
+Sau khi máy chủ ảo được tạo ra, bạn vào trang Instance để kiểm tra trạng thái của máy chủ. Trạng thái Running báo hiệu máy chủ đã sẵn sàng để sử dụng. Bạn cũng sẽ nhận được thông tin truy cập qua email.
