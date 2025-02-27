@@ -29,7 +29,7 @@ Before you can perform Windows server initialization, make sure you initialize V
 13. In **Other Settings** , you can choose Server Group or not according to your needs. You can assign Server to previously created Groups (With properties such as same Compute Host or different Compute Host)
 14. Select **Launch Server** and follow the payment steps to complete the server initialization.
 
-![](<../../../../.gitbook/assets/image (10).png>)
+![](<../../../../.gitbook/assets/image (10) (3).png>)
 
 </details>
 
@@ -59,7 +59,7 @@ Below is a basic guide for connecting to Windows server on vServer, if you have 
 2. Select **the Server** you want to connect to, then select **Action, then select Connect.**
 3. On the **Connect to Server** page , select **the RDP (Window) tab**
 
-![](<../../../../.gitbook/assets/image (11).png>)
+![](<../../../../.gitbook/assets/image (11) (3).png>)
 
 4. Select **Download RDP File** . Your browser will prompt you to open or save the RDP file. When you've finished downloading the file, select **Done** to return to the server page:
 

@@ -618,6 +618,8 @@
     * [Load Balancer](vks/network/loadbalancer/README.md)
       * [Using Network Load Balancer](vks/network/loadbalancer/nlb.md)
       * [Using Application Load Balancer](vks/network/loadbalancer/alb.md)
+    * [Auto Scaling](vks/network/auto-scaling.md)
+    * [Fleet Management](vks/network/fleet-management.md)
   * [Storage](vks/storage/README.md)
     * [Working with Container Storage Interface (CSI)](vks/storage/lam-viec-voi-container-storage-interface-csi/README.md)
       * [Integrate with Container Storage Interface (CSI)](vks/storage/lam-viec-voi-container-storage-interface-csi/integrate-with-container-storage-interface-csi.md)
