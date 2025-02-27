@@ -17,7 +17,7 @@ Fleet Management là tính năng giúp gom nhóm các Kubernetes cluster trên n
 
 ***
 
-## Hướng dẫn sử dụng Fleet trên VKS
+## Tạo fleet
 
 Thực hiện theo hướng dẫn sau đây để tạo một Fleet và quản lý phân phối traffic với GLB:
 
@@ -232,7 +232,7 @@ Nếu không cần sử dụng một cluster trong Fleet nữa, bạn có thể 
 
 ***
 
-## Thay đổi host cluster trong một Fleet
+## Thay đổi host cluster trong một fleet
 
 Sau khi tạo Fleet, bạn có thể chỉnh sửa cấu hình của nó:
 
@@ -243,7 +243,7 @@ Sau khi tạo Fleet, bạn có thể chỉnh sửa cấu hình của nó:
 
 ***
 
-## Xóa một Fleet
+## Xóa một fleet
 
 Khi không còn cần sử dụng Fleet, bạn có thể xóa nó bằng cách:
 
