@@ -1,5 +1,14 @@
 # Create a Public NFS File Storage
 
+<figure><img src="../../../.gitbook/assets/image (447).png" alt=""><figcaption></figcaption></figure>
+
+* **File Storage Max quota:** in the file storage initialization step, you need to set a maximum quota limit for that file storage. This quota means the limit of storage capacity that the file storage can use, helping to manage resources effectively. <mark style="color:red;">**The minimum quota you need to choose is 1 TB and the maximum quota we provide is 50 TB.**</mark> If you need to use more than 50 TB for a file storage, please contact us.
+* **Network type** : select the network type you want. In this example, you can choose Public.
+* **Permission:** configure IP-based access permissions
+  * **No one:** No IP is allowed to access.
+  * **All:** Allow all IPs to have RO (Read-Only) or RW (Read-Write) access.
+  * **Restricted:** Only allow specific IPs to access with RO or RW permissions.
+
 To create a Private NFS (Network File System) on the File Storage system, you can follow these steps:
 
 ## Create a File Storage <a href="#khoi-tao-file-storage" id="khoi-tao-file-storage"></a>
