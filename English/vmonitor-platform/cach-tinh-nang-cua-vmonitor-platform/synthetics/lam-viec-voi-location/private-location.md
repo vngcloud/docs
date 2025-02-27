@@ -1,6 +1,6 @@
 # Private location
 
-rivate Locations allows you to monitor applications/services located on your internal network or any private endpoints that are not accessible from the internet.
+Private Locations allows you to monitor applications/services located on your internal network or any private endpoints that are not accessible from the internet.
 
 **To create a Private Location, follow the instructions below:**
 

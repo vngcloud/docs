@@ -4,9 +4,9 @@ description: >-
   private network through a secure connection and safety.
 ---
 
-# Add/Update/Delete more Site (Phase1)
+# Add/Update/Delete more Tunnel
 
-&#x20;After successfully creating a VPN with the default tunnel configuration. Users can add more sites with a default tunnel to allow connecting more remote LAN CIDR from VPN Local VPC.
+After successfully creating a VPN with the default tunnel configuration. Users can add more sites to allow connecting more remote LAN CIDR from VPN Local VPC.
 
 ## Access a VPN detail
 

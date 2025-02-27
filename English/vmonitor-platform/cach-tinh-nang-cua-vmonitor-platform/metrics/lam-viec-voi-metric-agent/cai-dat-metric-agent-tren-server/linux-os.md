@@ -18,7 +18,7 @@ To create a service account, visit [this link](https://hcm-3.console.vngcloud.vn
 * Find and select the policy: **vMonitorMetricPush**, then click **Create a Service Account**. This policy, created by VNG Cloud, contains the exact permissions needed to push metrics to the system.
 * After successfully creating the Service Account, save the **Client\_ID** and **Secret\_Key** for the next step.
 
-2. **Thay thế Client\_ID, Secret\_Key vào câu lệnh bên dưới và chạy trên server để cài đặt**
+2. **Replacing Client\_ID, Secret\_Key into the inline command and running on the server to install:**
 
 Use the Client\_ID and Secret\_Key you copied above, replacing them in the corresponding **$IAM\_CLIENT\_ID** and **$IAM\_CLIENT\_SECRET** fields in the command below. Run this command on the server that needs to be monitored, making sure to execute it with **root user** privileges (if not, prepend sudo to the command).
 
