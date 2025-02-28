@@ -105,6 +105,17 @@ metadata:
   namespace: default
 ```
 
+Lúc này, hệ thống sẽ tạo mới một vGLB trên hệ thống vGLB, bạn có thể kiểm tra vGLB được tạo tai [đây](https://glb.console.vngcloud.vn/glb/list).&#x20;
+
+<figure><img src="../../.gitbook/assets/image (944).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Chú ý:**
+
+* Một **vGLB** chỉ có thể được sử dụng cho **một Fleet duy nhất**.
+* Tuy nhiên, nếu bạn có một vGLB **chưa được sử dụng trong bất kỳ Fleet nào**, bạn có thể **tái sử dụng** nó bằng cách **thêm annotation vào file YAML** khi tạo vGLB.
+{% endhint %}
+
 **Bước 12:** Áp dụng cấu hình GLB bằng lệnh:
 
 ```bash
@@ -264,8 +275,6 @@ Khi không còn cần sử dụng Fleet, bạn có thể xóa nó bằng cách:
 **Bước 3:** Nhấn **"Delete"** và xác nhận.
 
 <figure><img src="../../.gitbook/assets/image (943).png" alt=""><figcaption></figcaption></figure>
-
-Việc xóa một Fleet **không xóa các cluster bên trong nó**.
 
 {% hint style="info" %}
 **Chú ý:**
