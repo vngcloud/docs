@@ -43,12 +43,18 @@ Thực hiện theo hướng dẫn sau đây để tạo một Fleet và quản l
 
 <figure><img src="../../.gitbook/assets/image (933).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 10:** Thực hiện triển khai một service trên host cluster.&#x20;
+**Bước 10:** Thực hiện triển khai một service trên host cluster. Đầu tiên, bạn cần tải **KubeConfig** của **Host Cluster** về và thực hiện kết nối tới host cluster này. Sau khi tải xuống file **KubeConfig** và cập nhật thành file **config** trong thư mục `~/.kube`, bạn có thể kiểm tra kết nối tới cluster bằng lệnh:
+
+```bash
+kubectl get nodes
+```
+
+Tiếp theo, hãy thực hiện triển khai một service, trong đó:
 
 * Với Traffic Flow: **East West Traffic Management with Multi Cluster Service**: bạn có thể tạo service type **LoadBalancer, NodePort hoặc ClusterIP.**
 * Với Traffic Flow: **North South Trafic Management with GLB**: bạn có thể tạo service type **LoadBalance hoặc NodePort**.
 
-Ví dụ bên dưới, tôi tạo một service nginx loại LoadBalancer tại namespace default:
+Ví dụ bên dưới, tôi tạo một file `nginx.yaml` chứa service nginx loại LoadBalancer tại namespace `default`:
 
 ```yaml
 apiVersion: apps/v1
@@ -85,7 +91,11 @@ spec:
       targetPort: 80
 ```
 
-**Bước 11:** Thực hiện tạo service GLB thông qua YAML mẫu sau:
+```bash
+kubectl apply -f nginx.yaml
+```
+
+**Bước 11:** Thực hiện tạo file `glb-nginx.yaml` chứa service GLB thông qua YAML mẫu sau:
 
 ```yaml
 apiVersion: vks.vngcloud.vn/v1alpha1
@@ -260,9 +270,9 @@ Việc xóa một Fleet **không xóa các cluster bên trong nó**.
 {% hint style="info" %}
 **Chú ý:**
 
-* Mỗi Fleet cần có ít nhất **một host cluster**, các cluster còn lại sẽ đóng vai trò là **member cluster**. Bạn có thể thêm hoặc bớt member cluster sau khi Fleet đã được tạo.
-* Mỗi cluster chỉ có thể thuộc về một Fleet tại một thời điểm.
-* Không thể xóa một cluster nếu nó đang là host cluster trong một Fleet. Phải chuyển vai trò host sang cluster khác trước khi xóa.
-* Nếu bạn muốn sử dụng Private cluster cho Fleet, bạn cần tạo NAT để các cluster có thể kết nối được tới GLB do hiện tại chúng tôi chưa hỗ trợ Private Endpoint tới GLB.
-* Xóa một Fleet không xóa các cluster bên trong nó.
+* Mỗi Fleet cần có ít nhất **một host cluster**, các cluster còn lại sẽ đóng vai trò là **member cluster**. Sau khi Fleet được tạo, bạn có thể **thêm/bớt member cluster** hoặc **thay đổi host cluster**.
+* Một cluster không thể đăng ký vào **nhiều Fleet cùng lúc**. Nếu muốn đổi Fleet, bạn cần **gỡ đăng ký (Unregister) khỏi Fleet cũ** trước khi thêm vào Fleet mới.
+* Không thể xóa một cluster nếu nó đang là host cluster trong một Fleet. Nếu bạn muốn xóa một cluster đang là **host**, bạn cần **chuyển vai trò host sang cluster khác** trước khi xóa cluster đó. Nếu không có host cluster, Fleet sẽ không hoạt động đúng cách.
+* Nếu bạn muốn sử dụng Private cluster cho Fleet, bạn **bắt buộc phải thiết lập NAT** để giao tiếp với GLB do hiện tại chúng tôi chưa hỗ trợ Private Service Endpoint tới GLB.
+* Khi xóa một Fleet, **các cluster bên trong Fleet vẫn tồn tại** và có thể được sử dụng độc lập hoặc thêm vào Fleet khác.
 {% endhint %}
