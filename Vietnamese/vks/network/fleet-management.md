@@ -142,31 +142,20 @@ nginx-service   fl-cadc9e8c-0930-44aa-a37f-cb330a8c4af9   glb-09108dcc-5d3d-4067
 
 **Bước 14:** Lấy địa chỉ IP hoặc hostname của GLB để truy cập service bằng lệnh:
 
-```bash
-kubectl get svc nginx-service -n default
-```
-
-Bạn sẽ thấy phần External IP hoặc hostname, đây là địa chỉ để truy cập vào service từ bên ngoài.
-
-Ví dụ:&#x20;
-
-```bash
-NAME            TYPE           CLUSTER-IP     EXTERNAL-IP           PORT(S)        AGE
-nginx-service   LoadBalancer   10.96.155.25   49.213.65.86.nip.io   80:30342/TCP   4h36m
-```
+<figure><img src="../../.gitbook/assets/image (945).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 15:** Kiểm tra khả năng hoạt động của Fleet bằng cách gửi request đến GLB:
 
 ```sh
-curl http://<EXTERNAL-IP>
+curl http://<GLB_Endpoint>
 ```
 
-Thay `<EXTERNAL-IP>` bằng địa chỉ IP hoặc hostname lấy được từ bước trên.
+Thay `<GLB_Endpoint>` bằng địa chỉ IP hoặc hostname lấy được từ bước trên.
 
 Ví dụ:&#x20;
 
 ```bash
-curl http://49.213.65.86.nip.io
+curl http://vks-fl-25757a5-default-nginx-serv-33a00-53461-38e3a.glb.vngcloud.vn
 StatusCode        : 200
 StatusDescription : OK
 Content           : <!DOCTYPE html>
@@ -186,25 +175,22 @@ RawContent        : HTTP/1.1 200 OK
                     Accept-Ranges: bytes
                     Content-Length: 612
                     Content-Type: text/html
-                    Date: Thu, 27 Feb 2025 08:53:15 GMT
+                    Date: Fri, 28 Feb 2025 08:48:50 GMT
                     ETag: "5e9efe7d-264"
                     Last-Modified: Tue, 21 Apr 2020 ...
 Forms             : {}
-Headers           : {[Connection, keep-alive], [Accept-Ranges, bytes], [Content-Length, 612], [Content-Type,
-                    text/html]...}
+Headers           : {[Connection, keep-alive], [Accept-Ranges, bytes], [Content-Length, 612], [Content-Type, text/html]...}
 Images            : {}
 InputFields       : {}
-Links             : {@{innerHTML=nginx.org; innerText=nginx.org; outerHTML=<A href="http://nginx.org/">nginx.org</A>;
-                    outerText=nginx.org; tagName=A; href=http://nginx.org/}, @{innerHTML=nginx.com;
-                    innerText=nginx.com; outerHTML=<A href="http://nginx.com/">nginx.com</A>; outerText=nginx.com;
-                    tagName=A; href=http://nginx.com/}}
+Links             : {@{innerHTML=nginx.org; innerText=nginx.org; outerHTML=<A href="http://nginx.org/">nginx.org</A>; outerText=nginx.org; tagName=A; href=http://nginx.org/}, @{innerHTML=nginx.com;    
+                    innerText=nginx.com; outerHTML=<A href="http://nginx.com/">nginx.com</A>; outerText=nginx.com; tagName=A; href=http://nginx.com/}}
 ParsedHtml        : mshtml.HTMLDocumentClass
 RawContentLength  : 612
 ```
 
 Hoặc truy cập trực tiếp như ảnh:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (935).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (946).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 16:** Thử nghiệm failover bằng cách tắt backend service trong một cluster và quan sát cách traffic được phân phối sang cluster khác trong Fleet:
 
