@@ -62,7 +62,7 @@ Inference giúp doanh nghiệp triển khai mô hình AI và **chuyển mô hìn
 
 ***
 
-### **4. Cách AI Platform Hoạt Động**
+### **3. Cách AI Platform Hoạt Động**
 
 AI Engineer sử dụng **Notebook** để lập trình và chạy thử nghiệm AI. Dữ liệu, mô hình AI được lưu trên **Network Volume**. Khi đã có mô hình ban đầu, AI Engineer sử dụng **Model Tuning** để tối ưu hiệu suất mô hình. Mô hình AI sau khi huấn luyện sẽ được lưu trữ trong **Model Registry** để dễ dàng kiểm soát phiên bản. Khi mô hình sẵn sàng, AI Engineer triển khai nó trên **Inference**, giúp tạo API AI. Ứng dụng (web, mobile, chatbot) có thể gọi API từ Inference để sử dụng AI.
 
