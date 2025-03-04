@@ -667,6 +667,7 @@
       * [Xóa Kafka Cluster](vdb/kafka-cluster-kds/quan-ly-kafka-cluster/xoa-kafka-cluster.md)
       * [Giới hạn tài nguyên](vdb/kafka-cluster-kds/quan-ly-kafka-cluster/gioi-han-tai-nguyen.md)
       * [Cách tính phí](vdb/kafka-cluster-kds/quan-ly-kafka-cluster/cach-tinh-phi.md)
+  * [OpenSearch Cluster (ODS)](vdb/opensearch-cluster-ods.md)
   * [Billing Information](vdb/billing-information.md)
   * [Security (Bảo mật)](vdb/security-bao-mat.md)
 * [VKS](vks/README.md)
