@@ -1,2 +1,0 @@
-# vMonitor Platform
-

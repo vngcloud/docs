@@ -1,3 +1,0 @@
-# Logs
-
-Logs are pieces of information that record system activities. These pieces of information include information such as time, user name, IP address, system access activities and many other information depending on each system. Operators use logs to monitor activities on their systems, thereby detecting and identifying the source of system problems, detecting and identifying secret accesses, monitoring user activities as well as access data, providing information to system administrators about events and activities that may be significant to system security, from which operators can analyze and evaluate the system most accurately.

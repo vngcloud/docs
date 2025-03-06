@@ -1,5 +1,0 @@
-# Applications support integration
-
-Kubernetes (often abbreviated as "K8s") is an open source system for automating the deployment, management, and scaling of container applications. It was initially developed by Google and later transferred to the Cloud Native Computing Foundation (CNCF) for maintenance and development. Kubernetes allows you to manage a large number of containers running on a distributed computer network. It helps you efficiently create, deploy, scale, and manage containerized applications, while providing self-healing, load balancing, and auto-scaling capabilities. Kubernetes is well-suited for deploying and managing complex applications, especially in cloud environments. It helps automate many aspects of application management, minimizing manual work and increasing system scalability and stability.
-
-To learn how to integrate Kubernetes with vMonitor Platform, see [Kubernetes](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/metrics/cac-ung-dung-ho-tro-tich-hop/kubernetes) .

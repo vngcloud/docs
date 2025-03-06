@@ -1,5 +1,0 @@
-# Kubernetes versions
-
-Currently, the VKS system is providing you with 3 Kubernetes versions including:
-
-<table data-header-hidden><thead><tr><th width="160"></th><th width="152"></th><th></th></tr></thead><tbody><tr><td><strong>Version</strong></td><td><strong>Timeline</strong></td><td><strong>Attachment</strong></td></tr><tr><td>Vesion 1.29.1</td><td>2025-02-28</td><td><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v1291">https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v1291</a></td></tr><tr><td>Version 1.28.8</td><td>2024-10-28</td><td><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v1288">https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v1288</a></td></tr><tr><td>Version 1.27.12</td><td>2024-06-28</td><td><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.27.md#v12712">https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.27.md#v12712</a></td></tr></tbody></table>

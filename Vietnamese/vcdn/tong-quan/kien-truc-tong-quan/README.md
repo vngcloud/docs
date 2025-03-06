@@ -1,2 +1,0 @@
-# Kiến trúc tổng quan
-

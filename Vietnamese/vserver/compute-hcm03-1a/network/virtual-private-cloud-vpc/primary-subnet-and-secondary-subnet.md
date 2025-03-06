@@ -1,2 +1,0 @@
-# Primary Subnet & Secondary Subnet
-

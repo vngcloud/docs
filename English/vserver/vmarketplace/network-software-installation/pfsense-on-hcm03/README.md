@@ -1,2 +1,0 @@
-# Pfsense on HCM03
-

@@ -1,2 +1,0 @@
-# Using S3cmd
-
