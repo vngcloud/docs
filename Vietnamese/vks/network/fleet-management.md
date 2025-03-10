@@ -1,6 +1,6 @@
 # Fleet Management
 
-## Tổng quan
+Tổng quan
 
 Fleet Management là tính năng giúp gom nhóm các Kubernetes cluster trên nhiều **zone/region**, cho phép quản lý traffic linh hoạt giữa các cluster. Khi sử dụng **Global Load Balancer (GLB)**, có hai cơ chế phân phối traffic chính:
 
@@ -105,6 +105,14 @@ metadata:
   namespace: default
 ```
 
+**Bước 12:** Áp dụng cấu hình GLB bằng lệnh:
+
+```bash
+kubectl apply -f glb-nginx.yaml
+```
+
+Thay `glb-nginx.yaml` bằng tên file YAML của bạn.
+
 Lúc này, hệ thống sẽ tạo mới một vGLB trên hệ thống vGLB, bạn có thể kiểm tra vGLB được tạo tai [đây](https://glb.console.vngcloud.vn/glb/list).&#x20;
 
 <figure><img src="../../.gitbook/assets/image (944).png" alt=""><figcaption></figcaption></figure>
@@ -115,14 +123,6 @@ Lúc này, hệ thống sẽ tạo mới một vGLB trên hệ thống vGLB, b�
 * Một **vGLB** chỉ có thể được sử dụng cho **một Fleet duy nhất**.
 * Tuy nhiên, nếu bạn có một vGLB **chưa được sử dụng trong bất kỳ Fleet nào**, bạn có thể **tái sử dụng** nó bằng cách **thêm annotation vào file YAML** khi tạo vGLB.
 {% endhint %}
-
-**Bước 12:** Áp dụng cấu hình GLB bằng lệnh:
-
-```bash
-kubectl apply -f glb-nginx.yaml
-```
-
-Thay `glb-nginx.yaml` bằng tên file YAML của bạn.
 
 **Bước 13:** Kiểm tra trạng thái của GLB bằng lệnh:
 
@@ -192,7 +192,207 @@ Hoặc truy cập trực tiếp như ảnh:&#x20;
 
 <figure><img src="../../.gitbook/assets/image (946).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 16:** Thử nghiệm failover bằng cách tắt backend service trong một cluster và quan sát cách traffic được phân phối sang cluster khác trong Fleet:
+**Bước 16:** Thử nghiệm kiểm tra cách phân phối **North-South Traffic với GLB.**&#x20;
+
+Giả sử, bạn đã khởi tạo Fleet với 2 cluster trên 2 region HAN, HCM và chọn Flow Traffic là GLB. Các bước chung để thực hiện thử nghiệm như sau:&#x20;
+
+1. Đầu tiên, trên Host Cluster, bạn cần deploy glb-nginx.yaml để tạo GLB qua lệnh:&#x20;
+
+```
+kubectl apply -f glb-nginx.yaml
+```
+
+2. Tiếp theo, trên từng Cluster A, B bạn hãy tạo deploy service nginx nhưng bạn cần sửa lại output của service là Hello Nginx HAN, Hello Nginx HCM để dễ quan sát cách traffic được phân phối.&#x20;
+
+* **Trên Cluster A thuộc Region HCM:**
+  * Tạo file `nginx-configmap.yaml` và `nginx.yaml` theo mấu,  triển khai chúng trên cluster A:
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-custom-page
+  namespace: default
+data:
+  index.html: |
+    Hello Nginx HCM
+```
+
+```bash
+kubectl apply -f nginx-configmap.yaml
+```
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-app
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
+          volumeMounts:
+            - name: nginx-html
+              mountPath: /usr/share/nginx/html/
+      volumes:
+        - name: nginx-html
+          configMap:
+            name: nginx-custom-page
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  selector:
+    app: nginx
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+```
+
+```
+kubectl apply -f nginx.yaml
+```
+
+* **Trên Cluster B thuộc Region HAN:**
+  * Tạo file `nginx-configmap.yaml` và `nginx.yaml` theo mấu,  triển khai chúng trên cluster A:
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-custom-page
+  namespace: default
+data:
+  index.html: |
+    Hello Nginx HAN
+```
+
+```bash
+kubectl apply -f nginx-configmap.yaml
+```
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-app
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
+          volumeMounts:
+            - name: nginx-html
+              mountPath: /usr/share/nginx/html/
+      volumes:
+        - name: nginx-html
+          configMap:
+            name: nginx-custom-page
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  selector:
+    app: nginx
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+```
+
+```
+kubectl apply -f nginx.yaml
+```
+
+3. Cuối cùng, trên ClusterA, B, bạn hãy thực hiện curl vào GLB\_Domain.
+
+* **Trên Cluster A thuộc Region HCM:**
+
+```bash
+curl vks-fl-c4289d0-default-nginx-serv-82e59-53461-93a04.glb.vngcloud.vn
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : Hello Nginx HCM
+
+RawContent        : HTTP/1.1 200 OK
+                    Connection: keep-alive
+                    Accept-Ranges: bytes
+                    Content-Length: 16
+                    Content-Type: text/html
+                    Date: Mon, 10 Mar 2025 03:48:46 GMT
+InputFields       : {}
+Links             : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 16
+
+
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 16
+```
+
+* **Trên Cluster B thuộc Region HAN:**
+
+```bash
+curl vks-fl-c4289d0-default-nginx-serv-82e59-53461-93a04.glb.vngcloud.vn
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : Hello Nginx HAN
+
+RawContent        : HTTP/1.1 200 OK
+                    Connection: keep-alive
+                    Accept-Ranges: bytes
+                    Content-Length: 16
+                    Content-Type: text/html
+                    Date: Mon, 10 Mar 2025 03:48:46 GMT
+InputFields       : {}
+Links             : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 16
+
+
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 16
+```
+
+**Bước 17:** Thử nghiệm failover bằng cách tắt backend service trong một cluster và quan sát cách traffic được phân phối sang cluster khác trong Fleet:
 
 **Test Traffic Flow MCS (East-West):**
 
@@ -201,11 +401,6 @@ kubectl scale deployment nginx-app --replicas=0 -n default
 ```
 
 * Sau đó, kiểm tra truy cập lại GLB để xác nhận rằng traffic đã được chuyển đến cluster khác.
-* Coming soon
-
-**Test North-South Traffic với GLB:**
-
-* Coming soon
 
 Sau khi hoàn thành các bước trên, bạn đã thiết lập thành công Fleet Management trên VKS với Global Load Balancer để quản lý traffic giữa các cluster hiệu quả.
 
