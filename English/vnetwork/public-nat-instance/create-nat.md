@@ -7,7 +7,7 @@
 
 * _<mark style="color:blue;">NAT and VM going through NAT to the internet must be on the same subnet</mark>_
 * _<mark style="color:blue;">The NAT's public interface is created automatically when the NAT is successfully established. Users can configure the public IP addresses into</mark>_ [_<mark style="color:blue;">purchased bandwidth</mark>_](https://docs.vngcloud.vn/vng-cloud-document/vserver/compute-hcm03-1a/vpc/bandwidth/datatransfers-bandwidth-service) _<mark style="color:blue;">packages (if available) to increase the bandwidth for the NAT.</mark>_
-* _<mark style="color:blue;">NAT only connects to the internet through ports 53, 80, 443, and ICMP packets. If you need support for other requests, please contact the VNG Cloud hotline.</mark>_
+* _<mark style="color:blue;">NAT only connects to the internet through ports 53, 80, 443, and ICMP packets.</mark>_ [_<mark style="color:blue;">Read here</mark>_](add-remove-nat-port.md) _<mark style="color:blue;">to allow more port Inbound for your NAT</mark>_
 * _<mark style="color:blue;">If DNS resolution is needed, users must ensure that the route above is correctly configured to go through the NAT gateway for the IP resolver.</mark>_
 {% endhint %}
 
