@@ -1,6 +1,6 @@
 # Fleet Management
 
-Tổng quan
+## Tổng quan
 
 Fleet Management là tính năng giúp gom nhóm các Kubernetes cluster trên nhiều **zone/region**, cho phép quản lý traffic linh hoạt giữa các cluster. Khi sử dụng **Global Load Balancer (GLB)**, có hai cơ chế phân phối traffic chính:
 
@@ -45,7 +45,7 @@ Thực hiện theo hướng dẫn sau đây để tạo một Fleet và quản l
 
 **Bước 10:** Thực hiện triển khai một service trên host cluster. Đầu tiên, bạn cần tải **KubeConfig** của **Host Cluster** về và thực hiện kết nối tới host cluster này. Sau khi tải xuống file **KubeConfig** và cập nhật thành file **config** trong thư mục `~/.kube`, bạn có thể kiểm tra kết nối tới cluster bằng lệnh:
 
-```bash
+```actionscript
 kubectl get nodes
 ```
 
@@ -91,7 +91,7 @@ spec:
       targetPort: 80
 ```
 
-```bash
+```actionscript
 kubectl apply -f nginx.yaml
 ```
 
@@ -107,7 +107,7 @@ metadata:
 
 **Bước 12:** Áp dụng cấu hình GLB bằng lệnh:
 
-```bash
+```actionscript
 kubectl apply -f glb-nginx.yaml
 ```
 
@@ -126,7 +126,7 @@ Lúc này, hệ thống sẽ tạo mới một vGLB trên hệ thống vGLB, b�
 
 **Bước 13:** Kiểm tra trạng thái của GLB bằng lệnh:
 
-```bash
+```actionscript
 kubectl get vngcloudgloballoadbalancer -n default
 ```
 
@@ -134,7 +134,7 @@ Bạn sẽ thấy danh sách các GLB đã tạo cùng với trạng thái của
 
 Ví dụ:&#x20;
 
-```bash
+```yaml
 NAME            FLEET ID                                  GLB ID                                     ADDRESS
                                                    AGE
 nginx-service   fl-cadc9e8c-0930-44aa-a37f-cb330a8c4af9   glb-09108dcc-5d3d-4067-8700-02941acd7d68   vks-fl-cadc9e8-default-nginx-serv-33be0-53461-2354c.glb.vngcloud.vn   4h30m
@@ -154,7 +154,7 @@ Thay `<GLB_Endpoint>` bằng địa chỉ IP hoặc hostname lấy được từ
 
 Ví dụ:&#x20;
 
-```bash
+```sh
 curl http://vks-fl-25757a5-default-nginx-serv-33a00-53461-38e3a.glb.vngcloud.vn
 StatusCode        : 200
 StatusDescription : OK
@@ -198,7 +198,7 @@ Giả sử, bạn đã khởi tạo Fleet với 2 cluster trên 2 region HAN, HC
 
 1. Đầu tiên, trên Host Cluster, bạn cần deploy glb-nginx.yaml để tạo GLB qua lệnh:&#x20;
 
-```
+```actionscript
 kubectl apply -f glb-nginx.yaml
 ```
 
@@ -218,7 +218,7 @@ data:
     Hello Nginx HCM
 ```
 
-```bash
+```actionscript
 kubectl apply -f nginx-configmap.yaml
 ```
 
@@ -263,7 +263,7 @@ spec:
       targetPort: 80
 ```
 
-```
+```actionscript
 kubectl apply -f nginx.yaml
 ```
 
@@ -281,7 +281,7 @@ data:
     Hello Nginx HAN
 ```
 
-```bash
+```actionscript
 kubectl apply -f nginx-configmap.yaml
 ```
 
@@ -326,7 +326,7 @@ spec:
       targetPort: 80
 ```
 
-```
+```actionscript
 kubectl apply -f nginx.yaml
 ```
 
@@ -334,37 +334,37 @@ kubectl apply -f nginx.yaml
 
 * **Trên Cluster A thuộc Region HCM:**
 
-```bash
+```actionscript
 kubectl get pod   
 NAME                           READY   STATUS    RESTARTS   AGE
 nginx-app-5dc57d48b6-phtz4     1/1     Running   0          23m
 ```
 
-```bash
+```actionscript
 kubectl exec nginx-app-5dc57d48b6-phtz4 -it -- curl vks-fl-c4289d0-default-nginx-serv-82e59-53461-93a04.glb.vngcloud.vn
 ```
 
 Kết quả curl sẽ như sau:
 
-```
+```yaml
 Hello Nginx HCM
 ```
 
 * **Trên Cluster B thuộc Region HAN:**
 
-```bash
+```actionscript
 kubectl get pod
 NAME                         READY   STATUS    RESTARTS   AGE
 nginx-app-5dc57d48b6-tvc5f   1/1     Running   0          16h
 ```
 
-```bash
+```actionscript
 kubectl exec nginx-app-5dc57d48b6-tvc5f -it -- curl vks-fl-c4289d0-default-nginx-serv-82e59-53461-93a04.glb.vngcloud.vn
 ```
 
 Kết quả curl sẽ như sau:
 
-```bash
+```actionscript
 Hello Nginx HAN
 ```
 
@@ -374,13 +374,13 @@ Hello Nginx HAN
 
 * Ví dụ trên Cluster thuộc Region HAN, tôi thực hiện scale deployment theo lệnh:&#x20;
 
-```bash
+```actionscript
 kubectl scale deployment nginx-app --replicas=0 -n default
 ```
 
 * Lúc này, traffic sẽ được chuyển toàn bộ qua cluster thuộc Region HCM, bạn có thể kiểm tra bằng cách curl tới GLB Endpoint:
 
-```bash
+```actionscript
 curl vks-fl-c4289d0-default-nginx-serv-82e59-53461-93a04.glb.vngcloud.vn
 ```
 
