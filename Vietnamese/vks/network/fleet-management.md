@@ -335,72 +335,60 @@ kubectl apply -f nginx.yaml
 * **Trên Cluster A thuộc Region HCM:**
 
 ```bash
-curl vks-fl-c4289d0-default-nginx-serv-82e59-53461-93a04.glb.vngcloud.vn
+kubectl get pod   
+NAME                           READY   STATUS    RESTARTS   AGE
+nginx-app-5dc57d48b6-phtz4     1/1     Running   0          23m
+```
 
+```bash
+kubectl exec nginx-app-5dc57d48b6-phtz4 -it -- curl vks-fl-c4289d0-default-nginx-serv-82e59-53461-93a04.glb.vngcloud.vn
+```
 
-StatusCode        : 200
-StatusDescription : OK
-Content           : Hello Nginx HCM
+Kết quả curl sẽ như sau:
 
-RawContent        : HTTP/1.1 200 OK
-                    Connection: keep-alive
-                    Accept-Ranges: bytes
-                    Content-Length: 16
-                    Content-Type: text/html
-                    Date: Mon, 10 Mar 2025 03:48:46 GMT
-InputFields       : {}
-Links             : {}
-InputFields       : {}
-Links             : {}
-ParsedHtml        : mshtml.HTMLDocumentClass
-RawContentLength  : 16
-
-
-InputFields       : {}
-Links             : {}
-ParsedHtml        : mshtml.HTMLDocumentClass
-RawContentLength  : 16
+```
+Hello Nginx HCM
 ```
 
 * **Trên Cluster B thuộc Region HAN:**
 
 ```bash
-curl vks-fl-c4289d0-default-nginx-serv-82e59-53461-93a04.glb.vngcloud.vn
+kubectl get pod
+NAME                         READY   STATUS    RESTARTS   AGE
+nginx-app-5dc57d48b6-tvc5f   1/1     Running   0          16h
+```
 
+```bash
+kubectl exec nginx-app-5dc57d48b6-tvc5f -it -- curl vks-fl-c4289d0-default-nginx-serv-82e59-53461-93a04.glb.vngcloud.vn
+```
 
-StatusCode        : 200
-StatusDescription : OK
-Content           : Hello Nginx HAN
+Kết quả curl sẽ như sau:
 
-RawContent        : HTTP/1.1 200 OK
-                    Connection: keep-alive
-                    Accept-Ranges: bytes
-                    Content-Length: 16
-                    Content-Type: text/html
-                    Date: Mon, 10 Mar 2025 03:48:46 GMT
-InputFields       : {}
-Links             : {}
-InputFields       : {}
-Links             : {}
-ParsedHtml        : mshtml.HTMLDocumentClass
-RawContentLength  : 16
-
-
-InputFields       : {}
-Links             : {}
-ParsedHtml        : mshtml.HTMLDocumentClass
-RawContentLength  : 16
+```bash
+Hello Nginx HAN
 ```
 
 **Bước 17:** Thử nghiệm failover bằng cách tắt backend service trong một cluster và quan sát cách traffic được phân phối sang cluster khác trong Fleet:
 
 **Test Traffic Flow MCS (East-West):**
 
+* Ví dụ trên Cluster thuộc Region HAN, tôi thực hiện scale deployment theo lệnh:&#x20;
+
 ```bash
 kubectl scale deployment nginx-app --replicas=0 -n default
 ```
 
-* Sau đó, kiểm tra truy cập lại GLB để xác nhận rằng traffic đã được chuyển đến cluster khác.
+* Lúc này, traffic sẽ được chuyển toàn bộ qua cluster thuộc Region HCM, bạn có thể kiểm tra bằng cách curl tới GLB Endpoint:
+
+```bash
+curl vks-fl-c4289d0-default-nginx-serv-82e59-53461-93a04.glb.vngcloud.vn
+```
+
+Kết quả curl sẽ như sau:
+
+```bash
+Hello Nginx HCM
+```
 
 Sau khi hoàn thành các bước trên, bạn đã thiết lập thành công Fleet Management trên VKS với Global Load Balancer để quản lý traffic giữa các cluster hiệu quả.
 
