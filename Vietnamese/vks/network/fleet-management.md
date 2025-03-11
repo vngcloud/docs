@@ -192,7 +192,7 @@ Hoặc truy cập trực tiếp như ảnh:&#x20;
 
 <figure><img src="../../.gitbook/assets/image (946).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 16:** Thử nghiệm kiểm tra cách phân phối **North-South Traffic với GLB.**&#x20;
+### **Kiểm tra North-South Traffic với GLB**
 
 Giả sử, bạn đã khởi tạo Fleet với 2 cluster trên 2 region HAN, HCM và chọn Flow Traffic là GLB. Các bước chung để thực hiện thử nghiệm như sau:&#x20;
 
@@ -368,9 +368,9 @@ Kết quả curl sẽ như sau:
 Hello Nginx HAN
 ```
 
-**Bước 17:** Thử nghiệm failover bằng cách tắt backend service trong một cluster và quan sát cách traffic được phân phối sang cluster khác trong Fleet:
+### **Kiểm tra** East-West Traffic với MCS
 
-**Test Traffic Flow MCS (East-West):**
+Thử nghiệm failover bằng cách tắt backend service trong một cluster và quan sát cách traffic được phân phối sang cluster khác trong Fleet:
 
 * Ví dụ trên Cluster thuộc Region HAN, tôi thực hiện scale deployment theo lệnh:&#x20;
 
