@@ -10,7 +10,7 @@ Fleet Management is a feature that helps group Kubernetes clusters across multip
     * **Support for clusters with Network Type:**&#x20;
 
     ✅ Calico Overlay ✅ Cilium Overlay ✅ Cilium VPC Native
-2.  **East-West Traffic Management with GLB**
+2.  **East-West Traffic Management with MCS**
 
     * **How it works** : If a backend service in a cluster fails, traffic will **failover** to the backends of other clusters in **the fleet** , ensuring **no downtime** .
     * **Only supports clusters with Network Type** :&#x20;
