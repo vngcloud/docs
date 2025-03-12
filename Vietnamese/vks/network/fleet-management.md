@@ -10,7 +10,7 @@ Fleet Management là tính năng giúp gom nhóm các Kubernetes cluster trên n
      ✅ Calico Overlay\
      ✅ Cilium Overlay\
      ✅ Cilium VPC Native
-2. **East-West Traffic Management với GLB**
+2. **East-West Traffic Management với MCS**
    * **Cách hoạt động**: Nếu một backend service trong một cluster gặp sự cố, traffic sẽ **failover** sang backend của các cluster khác trong **fleet**, đảm bảo **không bị downtime**.
    * **Chỉ hỗ trợ cho cluster có Network Type**:\
      ✅ Cilium VPC Native
