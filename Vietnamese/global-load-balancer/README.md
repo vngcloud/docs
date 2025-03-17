@@ -1,6 +1,6 @@
 # Global load balancer
 
-Global Load Balancer (GLB) là một công cụ phân phối lưu lượng mạng trên quy mô đa vùng địa lý. Khác với Load Balancer truyền thống chỉ hoạt động trong một vùng (region) hoặc một mạng cục bộ, GLB có khả năng phân phối lưu lượng đến các máy chủ nằm rải rác trên nhiều vùng địa lý khác nhau.
+testing-Global Load Balancer (GLB) là một công cụ phân phối lưu lượng mạng trên quy mô đa vùng địa lý. Khác với Load Balancer truyền thống chỉ hoạt động trong một vùng (region) hoặc một mạng cục bộ, GLB có khả năng phân phối lưu lượng đến các máy chủ nằm rải rác trên nhiều vùng địa lý khác nhau.
 
 ## Tại sao nên sử dụng GLB?
 
