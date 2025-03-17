@@ -1,5 +1,51 @@
 # Release notes
 
+## Mar 5, 2025 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
+
+VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing many new features to users. Here are the highlights of the update:
+
+**New features:**
+
+* **Support Container-Optimized OS with containerd for HCM region** – Previously, VKS only supported **Ubuntu with containerd** . Now, customers can use **Container-Optimized OS with containerd** as the node group image for node groups when deploying Kubernetes version **v1.29.1, v1.30.5** in HCM region.
+
+***
+
+## Feb 27, 2025 <a href="#april_19_2024-3-1" id="april_19_2024-3-1"></a>
+
+VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing many new features to users. Here are the highlights of the update:
+
+**New features:**
+
+* **Fleet management** : allows grouping Kubernetes clusters across multiple **zones/regions** , helping to flexibly manage traffic between clusters. This feature supports:
+  * **North-South Traffic Management with Global Load Balancer (GLB)** : Manage inbound/outbound traffic between clusters. Supports **Calico Overlay, Cilium Overlay, and Cilium VPC Native** .
+  * **East-West Traffic Management with Multi Cluster Service (MCS)** : Manage internal traffic between clusters, only supports **Cilium VPC Native** .
+
+For details, please refer to the user manual [here ](../network/fleet-management.md).
+
+***
+
+## Jan 20, 2025 <a href="#april_19_2024-3-2" id="april_19_2024-3-2"></a>
+
+VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing many new features to users. Here are the highlights of the update:
+
+**New features:**
+
+* **Support Container-Optimized OS with containerd for BKK zone** – Previously, VKS only supported **Ubuntu with containerd** . Now, customers can use **Container-Optimized OS with containerd** as the node group image for node groups when deploying Kubernetes version **v1.29.1, v1.30.5** in BKK zone.
+
+***
+
+## Jan 2, 2025 <a href="#april_19_2024-3-3" id="april_19_2024-3-3"></a>
+
+VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing many new features to users. Here are the highlights of the update:
+
+**New features:**
+
+* **Kubernetes v1.30 Support:** This version is in **Release Channel: Rapid** , for testing purposes. VKS does not commit to an SLA for this version.
+* **Container-Optimized OS with containerd support for HAN region** – Previously, VKS only supported **Ubuntu with containerd** . Now, customers can use **Container-Optimized OS with containerd** as the node group image for node groups when deploying Kubernetes v1.29.1 **, v1.30.5** in HAN region.
+* **Upgrade Insight** – Provides detailed information about Kubernetes version upgrades, helping users assess risk, impact, and plan upgrades effectively.
+
+***
+
 ## Dec 5, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
 VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing many new features to users. Here are the highlights of the update:
@@ -20,8 +66,6 @@ VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing 
 * **Upgrade VNGCloud BlockStorage CSI Driver Plugin:** Bugs discovered in previous versions have been fixed, making the system run smoother and more reliably.
 * **Freely choose/edit configuration with/without using VNGCloud LoadBalancer Controller plugin, VNGCloud LoadBalancer Controller plugin on existing VKS cluster:** The ability to customize plugin configuration allows users to optimize the VKS cluster according to their specific needs. This helps increase flexibility and meet the special requirements of each application.
 * **Additionally,** in this update, we have also fixed some minor bugs to provide a better user experience.
-
-
 
 ***
 
@@ -45,8 +89,6 @@ VKS (VNGCloud Kubernetes Service) has just released its latest update, bringing 
 * **Enable/Disable Volume Encryption Option:** Volume encryption feature allows you to protect sensitive data stored in the Persistent Volumes of the VKS cluster. This ensures data security and compliance with information protection regulations. Now, you can enable/disable encryption for each Volume as needed.
 
 ***
-
-
 
 ## Aug 28, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
