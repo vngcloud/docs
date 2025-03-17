@@ -1,5 +1,51 @@
 # Release notes
 
+## Mar 5, 2025 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
+
+VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Tính năng mới:**
+
+* **Hỗ trợ Container-Optimized OS with containerd cho region HCM**– Trước đây, VKS chỉ hỗ trợ **Ubuntu with containerd**. Giờ đây, khách hàng có thể sử dụng **Container-Optimized OS with containerd** làm node group image cho node group khi triển khai Kubernetes phiên bản **v1.29.1, v1.30.5** tại region HCM.
+
+***
+
+## Feb 27, 2025 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
+
+VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Tính năng mới:**
+
+* **Fleet management**: cho phép gom nhóm các Kubernetes cluster trên nhiều **zone/region**, giúp quản lý traffic linh hoạt giữa các cluster. Tính năng này hỗ trợ:
+  * **North-South Traffic Management với Global Load Balancer (GLB)**: Quản lý traffic vào/ra giữa các cluster. Hỗ trợ **Calico Overlay, Cilium Overlay, và Cilium VPC Native**.
+  * **East-West Traffic Management với Multi Cluster Service (MCS)**: Quản lý traffic nội bộ giữa các cluster, chỉ hỗ trợ **Cilium VPC Native**.
+
+Chi tiết vui lòng tham khảo tài liệu hướng dẫn sử dụng tại [đây](../network/fleet-management.md).
+
+***
+
+## Jan 20, 2025 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
+
+VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Tính năng mới:**
+
+* **Hỗ trợ Container-Optimized OS with containerd cho zone BKK** – Trước đây, VKS chỉ hỗ trợ **Ubuntu with containerd**. Giờ đây, khách hàng có thể sử dụng **Container-Optimized OS with containerd** làm node group image cho node group khi triển khai Kubernetes phiên bản **v1.29.1, v1.30.5** tại zone BKK.
+
+***
+
+## Jan 2, 2025 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
+
+VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Tính năng mới:**
+
+* **Hỗ trợ Kubernetes v1.30:** Phiên bản này thuộc **Release Channel: Rapid**, dành cho mục đích thử nghiệm. VKS không cam kết SLA cho phiên bản này.
+* **Hỗ trợ Container-Optimized OS with containerd cho region HAN** – Trước đây, VKS chỉ hỗ trợ **Ubuntu with containerd**. Giờ đây, khách hàng có thể sử dụng **Container-Optimized OS with containerd** làm node group image cho node group khi triển khai Kubernetes phiên bản **v1.29.1, v1.30.5** tại region HAN.
+* **Upgrade Insight** – Cung cấp thông tin chi tiết về quá trình nâng cấp phiên bản Kubernetes, giúp người dùng đánh giá rủi ro, tác động và kế hoạch nâng cấp một cách hiệu quả.
+
+***
+
 ## Dec 5, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
 VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
@@ -17,21 +63,19 @@ VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất
 **Cải tiến:**
 
 * **Hỗ trợ POC/ Stop POC cho Cluster**: Người dùng giờ đây có thể thực hiện POC/ Stop POC cho các tài nguyên trên VKS như Server, Volume, Load Balancer, Endpoint. Tính năng này mang đến sự linh hoạt cao cho người dùng khi muốn trải nghiệm với VKS. Chi tiết tham khảo thêm tại [đây](../clusters/stop-poc.md).
-* **Nâng cấp Plugin VNGCloud BlockStorage CSI Driver:** Các lỗi đã được phát hiện trong các phiên bản trước đã được khắc phục, giúp hệ thống hoạt động mượt mà và tin cậy hơn.&#x20;
+* **Nâng cấp Plugin VNGCloud BlockStorage CSI Driver:** Các lỗi đã được phát hiện trong các phiên bản trước đã được khắc phục, giúp hệ thống hoạt động mượt mà và tin cậy hơn.
 * **Tự do lựa chọn/ chỉnh sửa cấu hình có/ không sử dụng plugin VNGCloud LoadBalancer Controller, Plugin VNGCloud Ingress Controller trên cụm VKS hiện có:** Khả năng tùy chỉnh cấu hình plugin cho phép người dùng tối ưu hóa cụm VKS theo nhu cầu cụ thể của mình. Điều này giúp tăng tính linh hoạt và đáp ứng các yêu cầu đặc biệt của từng ứng dụng.
 * **Ngoài ra,** trong bản cập nhật này, chúng tôi cũng đã khắc phục một số lỗi nhỏ để mang đến trải nghiệm người dùng tốt hơn.
 
 ***
 
-
-
 ## Oct 03, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
 VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng và cải tiến cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
 
-**Triển khai Region mới:**&#x20;
+**Triển khai Region mới:**
 
-* Bên cạnh Region HCM03, VKS hiện đã hỗ trợ thêm Region HAN01. Việc bổ sung này giúp khách hàng có thêm lựa chọn trong việc triển khai ứng dụng, đặc biệt hữu ích cho các doanh nghiệp có yêu cầu về vị trí đặt dữ liệu.&#x20;
+* Bên cạnh Region HCM03, VKS hiện đã hỗ trợ thêm Region HAN01. Việc bổ sung này giúp khách hàng có thêm lựa chọn trong việc triển khai ứng dụng, đặc biệt hữu ích cho các doanh nghiệp có yêu cầu về vị trí đặt dữ liệu.
 
 **Tính năng mới:**
 
@@ -45,8 +89,6 @@ VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất
 * **Enable/Disable lựa chọn mã hóa Volume:** Tính năng mã hóa Volume cho phép bạn bảo vệ dữ liệu nhạy cảm được lưu trữ trong các Persistent Volume của cụm VKS. Việc này đảm bảo an toàn dữ liệu và tuân thủ các quy định về bảo vệ thông tin. Giờ đây, bạn có thể bật/tắt tính năng mã hóa cho từng Volume theo nhu cầu.
 
 ***
-
-
 
 ## Aug 28, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
@@ -72,7 +114,7 @@ VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất
 {% hint style="info" %}
 **Chú ý:**
 
-* Để khởi tạo một **Private Cluster**, bạn cần chọn sử dụng một trong 3 image mới này. Đối với Public Cluster, bạn có thể chọn sử dụng bất kỳ image cũ hoặc mới tùy theo nhu cầu của bạn.&#x20;
+* Để khởi tạo một **Private Cluster**, bạn cần chọn sử dụng một trong 3 image mới này. Đối với Public Cluster, bạn có thể chọn sử dụng bất kỳ image cũ hoặc mới tùy theo nhu cầu của bạn.
 {% endhint %}
 
 ***
@@ -83,7 +125,7 @@ VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất
 
 **Cải tiến:**
 
-* **Event History**: VKS đã bổ sung thêm các sự kiện của **Auto Scaling** và **Auto Healing.** Giờ đây, với Event History, bạn có thể theo dõi từng thay đổi xảy ra trong Cluster, từ việc tự động điều chỉnh quy mô (Auto Scaling) cho đến việc tự động phục hồi (Auto Healing). Các event này giúp tăng cường khả năng giám sát và quản lý cụm Kubernetes của bạn.&#x20;
+* **Event History**: VKS đã bổ sung thêm các sự kiện của **Auto Scaling** và **Auto Healing.** Giờ đây, với Event History, bạn có thể theo dõi từng thay đổi xảy ra trong Cluster, từ việc tự động điều chỉnh quy mô (Auto Scaling) cho đến việc tự động phục hồi (Auto Healing). Các event này giúp tăng cường khả năng giám sát và quản lý cụm Kubernetes của bạn.
 
 ***
 
@@ -170,7 +212,7 @@ VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất
 
 **Cải tiến:**
 
-* **Nâng cấp tính năng thiết lập kích cỡ PVC (Persistent Volume Claim Size):** Người dùng giờ đây có thể chỉ định kích cỡ tối thiểu cho ổ đĩa CSI là <mark style="color:red;">**1GB**</mark> thay vì kích cỡ tối thiểu là 20GB như trước đây. Chi tiết bạn có thể tham khảo thêm tại [Volume ](broken-reference)và [Integrate with Container Storage Interface](broken-reference).
+* **Nâng cấp tính năng thiết lập kích cỡ PVC (Persistent Volume Claim Size):** Người dùng giờ đây có thể chỉ định kích cỡ tối thiểu cho ổ đĩa CSI là <mark style="color:red;">**1GB**</mark> thay vì kích cỡ tối thiểu là 20GB như trước đây. Chi tiết bạn có thể tham khảo thêm tại [Volume ](broken-reference/)và [Integrate with Container Storage Interface](broken-reference/).
 * **Thay đổi Storage Class mặc định sử dụng cho Cluster:** thay đổi mặc định từ ổ đĩa loại SSD - IOPS 200 thành mặc định ổ đĩa loại SSD - IOPS 3000.
 * **Nâng cấp Plugin VNGCloud LoadBalancer Controller, Plugin VNGCloud Ingress Controller:** cải tiến plugin giúp tránh trùng lặp việc đặt tên Load Balancer.
 
@@ -186,7 +228,7 @@ Do Storage Class mặc định cũ đã được chúng tôi xóa khỏi hệ th
 kubectl patch pvc sc-iops-200-retain -p '{"spec":{"resources":{"requests":{"storage":"50Gi"\}}\}}'
 ```
 
-Chi tiết tham khảo thêm tại [Integrate with Container Storage Interface](broken-reference).
+Chi tiết tham khảo thêm tại [Integrate with Container Storage Interface](broken-reference/).
 {% endhint %}
 
 ***
@@ -197,7 +239,7 @@ VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất
 
 **Tính năng mới:**
 
-* **Hỗ trợ người dùng làm việc với VKS thông qua Terraform:** Người dùng có thể dễ dàng khởi tạo Cluster và Node Group trong VKS bằng Terraform. Chi tiết tham khảo thêm tại [đây](broken-reference).
+* **Hỗ trợ người dùng làm việc với VKS thông qua Terraform:** Người dùng có thể dễ dàng khởi tạo Cluster và Node Group trong VKS bằng Terraform. Chi tiết tham khảo thêm tại [đây](broken-reference/).
 
 **Cải tiến:**
 
@@ -235,7 +277,7 @@ Bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều tín
 
 **Tính năng mới:**
 
-* **Hỗ trợ tính năng Whitelist:** VKS cho phép tạo Private Node Group với chỉ Private IP đồng thời cho phép IP nào kết nối tới Cluster thông qua tính năng Whitelist IP. Chi tiết tham khảo thêm tại [Whitelist](broken-reference).
+* **Hỗ trợ tính năng Whitelist:** VKS cho phép tạo Private Node Group với chỉ Private IP đồng thời cho phép IP nào kết nối tới Cluster thông qua tính năng Whitelist IP. Chi tiết tham khảo thêm tại [Whitelist](broken-reference/).
 
 **Cải tiến:**
 
