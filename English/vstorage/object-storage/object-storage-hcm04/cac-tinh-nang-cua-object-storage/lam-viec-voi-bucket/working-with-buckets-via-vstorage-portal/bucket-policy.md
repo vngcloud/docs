@@ -78,7 +78,7 @@ _Only users with vStorage user IDs in the file are allowed to upload ( `s3:PutOb
 
 ***
 
-### **Example 3: Block all vStorage Users (except Root User Account) from acting on buckets and objects** <a href="#vi-du-3-chan-tat-ca-vstorage-user-tru-root-user-account-action-vao-bucket-va-object" id="vi-du-3-chan-tat-ca-vstorage-user-tru-root-user-account-action-vao-bucket-va-object"></a>
+### **Example 3: Block all vStorage Users (include Root User Account) from acting on buckets and objects** <a href="#vi-du-3-chan-tat-ca-vstorage-user-tru-root-user-account-action-vao-bucket-va-object" id="vi-du-3-chan-tat-ca-vstorage-user-tru-root-user-account-action-vao-bucket-va-object"></a>
 
 ```bash
 {
@@ -99,7 +99,7 @@ _Only users with vStorage user IDs in the file are allowed to upload ( `s3:PutOb
 }
 ```
 
-_Do not allow anyone other than the Root User to work with buckets and objects._
+_Do not allow anyone (include Root User) to work with buckets and objects._
 
 ### **Example 4: Only grant permission to users using IP address 10.0.0.1 to be able to take action to get object information** <a href="#vi-du-4-chi-cap-quyen-cho-nguoi-dung-su-dung-dia-chi-ip-10.0.0.1-moi-co-the-action-lay-thong-tin-obj" id="vi-du-4-chi-cap-quyen-cho-nguoi-dung-su-dung-dia-chi-ip-10.0.0.1-moi-co-the-action-lay-thong-tin-obj"></a>
 
