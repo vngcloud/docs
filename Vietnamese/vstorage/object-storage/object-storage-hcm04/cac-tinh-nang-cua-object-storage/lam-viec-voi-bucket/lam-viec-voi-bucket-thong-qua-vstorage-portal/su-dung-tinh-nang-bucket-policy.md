@@ -79,7 +79,7 @@ _Chỉ cho phép người dùng có vStorage user ID trong file được quyền
 
 ***
 
-### **Ví dụ 3: Chặn tất cả vStorage User (trừ Root User Account) action vào bucket và object**
+### **Ví dụ 3: Chặn tất cả vStorage User (bao gồm cả Root User Account) action vào bucket và object**
 
 ```json
 {
@@ -100,7 +100,7 @@ _Chỉ cho phép người dùng có vStorage user ID trong file được quyền
 }
 ```
 
-_Không cho phép ai ngoài Root User làm việc với bucket và object._
+_Không cho phép ai kể cả Root User làm việc với bucket và object._
 
 ### **Ví dụ 4: Chỉ cấp quyền cho người dùng sử dụng địa chỉ IP 10.0.0.1 mới có thể action lấy thông tin object**
 
