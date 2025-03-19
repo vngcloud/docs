@@ -79,7 +79,7 @@ _Chỉ cho phép người dùng có vStorage user ID trong file được quyền
 
 ***
 
-### **Ví dụ 3: Chặn tất cả vStorage User (bao gồm cả Root User Account) action vào bucket và object**
+### **Ví dụ 3: Chặn tất cả vStorage User (trừ Root User Account) action vào bucket và object**
 
 ```json
 {
