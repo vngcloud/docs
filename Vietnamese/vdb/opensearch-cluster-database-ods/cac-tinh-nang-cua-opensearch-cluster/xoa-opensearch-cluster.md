@@ -1,0 +1,2 @@
+# Xóa OpenSearch Cluster
+

@@ -1,0 +1,2 @@
+# Khởi tạo OpenSearch Cluster
+
