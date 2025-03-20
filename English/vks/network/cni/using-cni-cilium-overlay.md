@@ -52,7 +52,7 @@ To initialize a Cluster, follow the steps below:
 | **IP-IP encapsulation mode** | IP-IP encapsulation mode in VKS is Always                                                                                                                                      | **In the figure, we select Always** mode to always encapsulate packets.                                          |
 | **CIDR**                     | The virtual network range that the pods will use                                                                                                                               | In the picture, we choose the virtual network range as `172.16.0.0/16`. The pods will get IP from this IP range. |
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**

@@ -55,7 +55,7 @@ Updating
 
 **Step 1**: Access using the software;
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="342"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="342"><figcaption></figcaption></figure>
 
 **Step 2:** Select "**Backup Infrastructure**", then "**Backup Repositories**", click the "**Add Repository**" button to start setting up the Repository:
 
@@ -67,11 +67,11 @@ Updating
 
 **Step 4:** In the Object Storage screen, choose the "**S3 Compatible**" option or select the appropriate object choice for backup.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="430"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="430"><figcaption></figcaption></figure>
 
 **Step 5:** Navigate to the "New Object Storage Repository" screen to start creating the Repository (backup location). In the "**Name**" step, users set the name and description for the Repository. Then click "**Next**".
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Step 6:** In the "**Account**" step, users fill in the following information and press "Next":&#x20;
 
@@ -79,15 +79,15 @@ Updating
 * Region: **HCM03**&#x20;
 * Credentials: click "Add" to enter "**Access key**" and "**Secret key**". To create the key, refer to the guide on creating an [S3 key](../../object-storage/vstorage-hcm03/identity-and-access-management/managing-vstorage-access-account/service-account/vstorage-credentials/create-a-s3-key.md).
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Step 7:** In the "Bucket" step, users select a previously created Container on vStorage (see the guide to creating a Container[ here](../../object-storage/vstorage-hcm03/features-of-vstorage/working-with-containers/create-a-container.md)). At the same time, users choose or create a new folder to store the backup data into that folder. Then click "Next".
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Note:** Users need to select the option: "Make recent backups <mark style="color:red;">**immutable**</mark> for 30 days". With this option, it helps protect the copy from risks and prevents modification or deletion of the backup over a certain period, ensuring a clean backup copy is always available for system restoration in case of attack or incident.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="464"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="464"><figcaption></figcaption></figure>
 
 **Step 8:** In the "**Mount Server**" screen, users can choose the server needed to backup data, then click "**Next**".
 

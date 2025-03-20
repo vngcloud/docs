@@ -13,7 +13,7 @@ To integrate the S3 Browser tool with vStorage, you can follow the instructions 
 1. Download the S3 Browser user tool here [https://s3browser.com/download.aspx](https://s3browser.com/download.aspx) .
 2. Open the S3 Browser app **.** Select the Account folder **, then select Add new account**
 
-<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt="" width="443"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt="" width="443"><figcaption></figcaption></figure>
 
 3. The Add New Account screen appears, now you enter the following information:
 

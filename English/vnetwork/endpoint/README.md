@@ -4,3 +4,4 @@ VNG Cloud Endpoint is the private connection point between VPC and VNG Cloud ser
 
 * HCM-03: vServer, vStorage, vMonitor, vCR, IAM
 * HCM-04: vStorage
+* Veeam

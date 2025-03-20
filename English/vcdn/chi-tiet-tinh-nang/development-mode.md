@@ -2,7 +2,7 @@
 
 Currently, vCDN supports “Development Mode”. This mechanism will allow all requests to bypass the cache and go directly to the origin to check the data at the origin directly:
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Overview <a href="#tong-quan" id="tong-quan"></a>
 

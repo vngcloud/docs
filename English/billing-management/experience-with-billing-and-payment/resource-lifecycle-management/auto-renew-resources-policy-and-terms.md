@@ -35,7 +35,7 @@ Use this document to learn more about the auto-renewal feature. It will detail t
   * Step 1: Configure service information on the product page → Click "Initialize" to go to the payment page
   * Step 2: On the payment page, tick "Auto-renew" to enable auto-renewal
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 _Note: Currently, services in vMonitor products do not support turning off automatic renewal when users turn it on at initialization. To turn off automatic renewal when not needed, please contact the 247 team for further support._
 

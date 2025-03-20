@@ -35,17 +35,17 @@ that you want to use for your server. You also need to select an existing Server
 * 1935 (TCP): RTMP
 * 10080 (UDP): optional for SRT protocol
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2:** After the Sigma server is successfully initialized. To access the Sigma GUI, you need to use the External Interface IP address and access the link: _**http://VM\_External\_IP:4000**_
 
 **Step 3:** At Sigma's GUI, select the **Register Server** button
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 4:** Enter **Email/ Password** if you have one or choose **Quick Login** with **Github** or **Google** . Here, I choose to log in with my Google account.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 5** : After the system successfully performs **authentication** , you need to enter basic information for Sigma including:
 
@@ -54,7 +54,7 @@ that you want to use for your server. You also need to select an existing Server
 * **Role**
 * **Company**
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 6:** Enter **the server name** . You can get this server name from the VNGCloud portal. In the example below, I use the Demo\_Sigma server created earlier.
 

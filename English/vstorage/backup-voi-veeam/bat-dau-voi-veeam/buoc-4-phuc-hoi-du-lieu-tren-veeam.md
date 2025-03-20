@@ -40,23 +40,23 @@ Here, the user selects the Job that backed up the folder, then selects the compu
 
 3. In the "**Reason**" tab, the user can fill in a description of why the file needs to be restored. Then click "**Next**".
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="559"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="559"><figcaption></figcaption></figure>
 
 4. In the "**Summary**" tab, a summary of the data recovery information is displayed. Then click "**Browse**".
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="561"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="561"><figcaption></figcaption></figure>
 
 5. The Backup Browse interface appears, navigate to the folder where data needs to be restored. (You can see the "lost file" that needs to be recovered is in the backup.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. Click the "**Restore**" button on the menu bar, choose "**Overwrite**" (to overwrite the existing files).
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="258"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="258"><figcaption></figcaption></figure>
 
 7. The system automatically performs data recovery:
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8. When the system has completed processing, the user can see that the "lost file" has been successfully restored. Complete the data recovery process.
 

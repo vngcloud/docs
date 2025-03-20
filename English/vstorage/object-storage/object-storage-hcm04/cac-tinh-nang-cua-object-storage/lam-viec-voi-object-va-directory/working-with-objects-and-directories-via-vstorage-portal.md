@@ -46,7 +46,7 @@ To move an object, please follow the steps below:
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** containing the object you want to move.
 2. **Select the Action** icon and select **Move**
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Select **the bucket** and **directory** (if any) that you want to move the object to. We also support you to create a new directory if the directory you want to move to does not exist.
 
@@ -59,7 +59,7 @@ To copy an object, please follow the steps below:
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** containing the object you want to copy.
 2. **Select the Action** icon and select **Copy.**
 
-<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Select **the bucket** and **directory** (if any) that you want to copy the object to. We also support you to create a new directory if the directory you want to copy to does not exist.
 
@@ -72,7 +72,7 @@ To rename an object, please follow the steps below:
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** containing the object you want to rename.
 2. **Select the Action** icon and select **Rename.**
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Enter the name of the object you want to change, the object name must comply with our description.
 
@@ -88,7 +88,7 @@ To share an object in a bucket, you can follow the steps below:
 4. Enter **the Expiration time** you want to share the object: the time the access link to the object is valid. You can limit the number of **days** , **hours** , and **minutes** that the access link to the object exists.
 5. Select **Generate**
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Set up metadata object <a href="#thiet-lap-metadata-object" id="thiet-lap-metadata-object"></a>
 
@@ -97,7 +97,7 @@ To set metadata for an object, please follow the steps below:
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** containing the object you want to set metadata for.
 2. **Select the Action** icon and select **Metadata.**
 
-<figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. **The Metadata Setup** screen is displayed.
 4. We provide you with two methods of setting metadata including:
@@ -121,7 +121,7 @@ To delete one or more objects, you can:
 
 **2. Select the Action** icon then select **Delete**
 
-<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After selecting Delete, the system will automatically switch to the main screen. If you see the object you just performed disappears from the list, you have successfully deleted it. The object has now been permanently deleted from the system. Once an object has been deleted from the vStorage system, you cannot restore that object.
 

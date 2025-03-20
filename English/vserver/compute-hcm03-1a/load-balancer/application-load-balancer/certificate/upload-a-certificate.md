@@ -18,7 +18,7 @@ The Certificate Manager supports uploading and managing two types of certificate
 
        * **Certificate Content:** Paste your server certificate domain (usually with the \*.crt extension) in PEM format.
 
-       ![](<../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+       ![](<../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
        * **Private Key:** Paste the private key of the certificate (usually with the \*.key extension) in PEM format.
 

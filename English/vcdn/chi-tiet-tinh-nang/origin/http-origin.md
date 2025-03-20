@@ -8,7 +8,7 @@ Currently, vCDN supports HTTP Origin with connection algorithms: **Round Robin, 
 
 When you create a Web Accelerator, Object Download, or Video On Demand, the CDN initialization screen will include the following information:
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In there:
 
@@ -25,14 +25,14 @@ After entering the Server Origin information and selecting **Add Server** , the 
 
 _\* When the customer enters the main domain information, the system will automatically add the Origin Servers based on the available DNS records of the domain name into the number box as shown below._
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In there:
 
 * **Priority** – represents the priority level (weight) of the Origin Server, the higher the number, the higher the priority.
 * **Value** : IPv4 address of Origin Servers.
 * **Algorithms** : Algorithms for distributing traffic to Origin Servers.
-* **Status** : Shows the status ![](<../../../.gitbook/assets/image (6) (1) (1).png>) (**Active** ) and ![](<../../../.gitbook/assets/image (7) (1) (1).png>)(**Disabled** )
+* **Status** : Shows the status ![](<../../../.gitbook/assets/image (6) (1) (1) (1).png>) (**Active** ) and ![](<../../../.gitbook/assets/image (7) (1) (1) (1).png>)(**Disabled** )
   * **Active** : Origin Server will be added to Pool Origin Servers.
   * **Disabled** : The Origin Server will be removed from the Origin Servers Pool.
 * Support configuring error codes for the system to automatically perform Fail-Over.

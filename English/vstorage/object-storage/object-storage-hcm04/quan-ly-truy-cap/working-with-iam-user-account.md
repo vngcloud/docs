@@ -23,9 +23,9 @@ To create an IAM user account, please first refer to the instructions below:
 7. Select **Copy** to copy the password. You must collect this information to access vStorage using an IAM User Account.
 8. Select **Create User Account.**
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Assign permissions to work with the project to the IAM User Account <a href="#phan-quyen-lam-viec-voi-project-vstorage-api-cho-service-account" id="phan-quyen-lam-viec-voi-project-vstorage-api-cho-service-account"></a>
 
@@ -47,7 +47,7 @@ To initialize a policy used to access vStorage resources, follow the steps below
 8. Select **Resources** : select **All resources.**
 9. Select **Request conditions:** enter special conditions for the policy if any.
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Attach IAM Policy to IAM User Account <a href="#attach-iam-policy-vao-iam-user-account" id="attach-iam-policy-vao-iam-user-account"></a>
 
@@ -60,7 +60,7 @@ Once you have created the desired IAM User Account and Policy, you will need to 
 5. Select the **policies** you want. The vIAM system supports you to assign multiple policies to an IAM User Account. If these policies contain independent permissions, they will complement each other (ie the permission list is merged). On the contrary, if these policies contain conflicting permissions, you will not be able to access the corresponding resources according to this permission list (ie the permission list is merged and when conflicting, they will cancel each other out).
 6. Select **Attach** .
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
