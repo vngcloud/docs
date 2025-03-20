@@ -1,3 +1,7 @@
+---
+description: VNG Cloud Endpoint là điểm kết nối giữa VPC với các dịch vụ của VNG Cloud
+---
+
 # Xóa Endpoint
 
 * Người dùng login vào [https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list](https://hcm-3-vnetwork.console.vngcloud.vn/nat/list) với region = HCM
