@@ -44,7 +44,7 @@
 <figure><img src="../../../.gitbook/assets/image (957).png" alt=""><figcaption></figcaption></figure>
 
 * **Plugins**
-  * **Plugin:** hiện tại, vDB đã tự động cài đặt trong OpenSearch Cluster của bạn các plugin phổ biến trong mục **Bundled Plugins**, ví dụ kNN. Bạn có thể tham khảo danh sách các plugin mặc định có sẵn tại [đây](../cac-tinh-nang-cua-opensearch-cluster/lam-viec-voi-plugin/cac-plugins-mac-dinh.md). Ngoài ra, bạn cũng có thể lựa chọn cài đặt thêm các plugin khác bằng cách chọn plugin tại mục **Additional Plugins**. Tham khảo danh sách các plugin có thể cài đặt theo lựa chọn của bạn tại [đây](../cac-tinh-nang-cua-opensearch-cluster/lam-viec-voi-plugin/cac-plugin-tuy-chon-bo-sung.md).
+  * **Plugin:** hiện tại, vDB đã tự động cài đặt trong OpenSearch Cluster của bạn các plugin phổ biến trong mục **Bundled Plugins**, ví dụ kNN. Bạn có thể tham khảo danh sách các plugin mặc định có sẵn tại [đây](broken-reference). Ngoài ra, bạn cũng có thể lựa chọn cài đặt thêm các plugin khác bằng cách chọn plugin tại mục **Additional Plugins**. Tham khảo danh sách các plugin có thể cài đặt theo lựa chọn của bạn tại [đây](broken-reference).
 
 <figure><img src="../../../.gitbook/assets/image (958).png" alt=""><figcaption></figcaption></figure>
 

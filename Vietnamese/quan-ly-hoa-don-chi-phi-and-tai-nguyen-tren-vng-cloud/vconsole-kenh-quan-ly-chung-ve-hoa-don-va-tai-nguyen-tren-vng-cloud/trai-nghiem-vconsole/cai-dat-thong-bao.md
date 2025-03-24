@@ -17,21 +17,21 @@ Việc cấu hình thông báo email sẽ giúp bạn chủ động hơn trong v
 
       <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 * **Bước 3: Cấu hình địa chỉ email nhận thông báo:**
-  * Tại trang **'Trung tâm thông báo',** nhấn chọn **'Quản lý người nhận':** ![](<../../../.gitbook/assets/image (1) (1) (1) (1) (1).png>)
+  * Tại trang **'Trung tâm thông báo',** nhấn chọn **'Quản lý người nhận':** ![](<../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png>)
     *   "**Xóa người nhận":** Từ danh sách, xóa người nhận không mong muốn bằng cách nhấn nút "Xóa"&#x20;
 
-        <figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
-    * "**Thêm người nhận**": Nhấn nút 'Thêm người nhận" để thêm người nhận vào danh sách nhận mail. ![](<../../../.gitbook/assets/image (3) (1).png>)
+        <figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    * "**Thêm người nhận**": Nhấn nút 'Thêm người nhận" để thêm người nhận vào danh sách nhận mail. ![](<../../../.gitbook/assets/image (3) (1) (1).png>)
       * **Tên:** Nhập tên gợi nhớ của người nhận.
       * **Địa chỉ mail:** Nhập địa chỉ mail của người nhận.
       * Nhấn **'Thêm'** để hoàn tất quá trình
 * **Bước 4: Chọn từng loại thông báo tương ứng với từng đối tượng người nhận**
   *   Tại trang cài đặt chung, tìm đến mục loại thông báo, nhấn **'Chỉnh sửa'**&#x20;
 
-      <figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
   *   Chọn người nhận từ danh sách, hoặc thêm mới trực tiếp từ màn hình này.&#x20;
 
-      <figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
   * Nhấn **'Lưu'** để hoàn tất quá trình
 
 {% hint style="info" %}

@@ -1,2 +1,0 @@
-# Các plugins mặc định
-

@@ -6,4 +6,4 @@ Sử dụng hướng dẫn này để bắt đầu với OpenSearch Cluster Data
 
 * [Khởi tạo một OpenSearch Cluster](khoi-tao-mot-opensearch-cluster.md)
 * [Truy cập và làm việc trên OpenSearch Dashboard](truy-cap-va-lam-viec-tren-opensearch-dashboard.md)
-* [Đẩy logs từ server vào một OpenSearch Cluster đã khởi tạo](day-logs-tu-server-vao-mot-opensearch-cluster-da-khoi-tao.md)
+* [Đẩy logs từ server vào một OpenSearch Cluster đã khởi tạo](day-du-lieu-hoac-logs-tu-server-vao-mot-opensearch-cluster-da-khoi-tao.md)
