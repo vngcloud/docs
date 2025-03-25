@@ -32,7 +32,7 @@
     kubectl-view-allocations --version
     ```
 
-<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_1.png" alt=""><figcaption></figcaption></figure>
 
 *   Trên Cluster vừa tạo, thực hiện kiểm tra node trong node group của bạn qua lệnh:&#x20;
 
@@ -40,7 +40,7 @@
     kubectl get nodes -owide
     ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_2.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -56,7 +56,7 @@
       --set dcgmExporter.serviceMonitor.enabled=true
     ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_3.png" alt=""><figcaption></figcaption></figure>
 
 *   Hệ thống mất khoảng 5 - 10 phút để thực hiện cài đặt operator này, bạn hãy đợi tới khi việc cài đặt hoàn thành. Trong thời gian này, bạn có thể kiểm tra tất cả các pods trong namespace`gpu-operator` đang chạy thông qua lệnh:&#x20;
 
@@ -64,7 +64,7 @@
     kubectl -n gpu-operator get pods -owide
     ```
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_4.png" alt=""><figcaption></figcaption></figure>
 
 *   Operator sẽ gán label`nvidia.com/gpu`cho node trong node group của bạn, lable này được NVIDIA GPU Operator sử dụng để identify nodes, bạn cũng có thể sử dụng label này để filter những node đang có NVIDIA GPU. Bạn có thể kiểm tra các node được gán nhãn này qua lệnh:&#x20;
 
@@ -74,7 +74,9 @@
 
 Ví dụ, đối với kết quả bên dưới, node trong cụm có label `nvidia.com/gpu`, có nghĩa là node đó có GPU. Các label này cũng cho biết nút này đang sử dụng 1 card GPU RTX 2080Ti, số lượng GPU có sẵn, Bộ nhớ GPU và các thông tin khác.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+<figure><img src="../../.gitbook/assets/vksgpu_6.png" alt=""><figcaption></figcaption></figure>
 
 *   Trên pod `nvidia-device-plugin-daemonset`trong namespace`gpu-operator`, bạn có thể chạy lệnh `nvidia-smi` để kiểm tra thông tin GPU trên node:
 
@@ -83,7 +85,7 @@ Ví dụ, đối với kết quả bên dưới, node trong cụm có label `nvi
     kubectl -n gpu-operator exec -it $POD_NAME -- nvidia-smi
     ```
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_7.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -109,7 +111,7 @@ Ví dụ, đối với kết quả bên dưới, node trong cụm có label `nvi
     kubectl delete deploy cuda-vectoradd
     ```
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_8.png" alt=""><figcaption></figcaption></figure>
 
 ### Deploy TensorFlow Test
 
@@ -134,9 +136,7 @@ kubectl logs <put-your-tensorflow-gpu-pod-name> --tail 20
 kubectl delete deploy tensorflow-gpu
 ```
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-***
+<figure><img src="../../.gitbook/assets/vksgpu_9.png" alt=""><figcaption></figcaption></figure>
 
 ## Thiết lập GPU Sharing
 
@@ -192,7 +192,7 @@ data:
     -p '{"spec": {"dcgmExporter": {"enabled": false}}}'
   ```
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_10.png" alt=""><figcaption></figcaption></figure>
 
 #### Verify GPU time-slicing
 
@@ -217,7 +217,7 @@ data:
     kubectl delete deploy time-slicing-verification
     ```
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_11.png" alt=""><figcaption></figcaption></figure>
 
 ### Multi-process server (MPS)
 
@@ -292,14 +292,14 @@ kubectl logs -l job-name=nbody-sample
 kubectl delete job nbody-sample
 ```
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 {% hint style="info" %}
 **Chú ý:**
 
 * Trên một node GPU chỉ có thể sử dụng một trong hai chiến lược chia sẻ GPU là Time Slicing hoặc MPS, không thể sử dụng đồng thời cả hai. Lý do là vì cả hai chiến lược đều sử dụng cùng một tài nguyên GPU vật lý, và việc sử dụng cả hai đồng thời sẽ dẫn đến xung đột và hiệu suất không mong muốn.
 * Tuy nhiên, nếu bạn có một node group gồm nhiều node GPU, bạn có thể sử dụng hai chiến lược khác nhau trên hai node riêng biệt. Ví dụ: bạn có thể sử dụng Time Slicing trên một node để chia sẻ GPU và sử dụng MPS trên node còn lại để chia sẻ GPU cho các ứng dụng khác. Chi tiết tham khảo mục bên dưới.
 {% endhint %}
+
+<figure><img src="../../.gitbook/assets/vksgpu_12.png" alt=""><figcaption></figcaption></figure>
 
 ### Applying Multiple Node-Specific Configurations
 
@@ -364,7 +364,7 @@ kubectl patch clusterpolicies.nvidia.com/cluster-policy \
 kubectl get clusterpolicy
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_13.png" alt=""><figcaption></figcaption></figure>
 
 * Bây giờ, bạn cần thêm label cho node với tên mà bạn chỉ định tại trong file `ConfigMap`:
 
@@ -377,7 +377,7 @@ kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-2080ti
 kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
 ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_14.png" alt=""><figcaption></figcaption></figure>
 
 #### Verify Multiple Node-Specific Configurations
 
@@ -398,9 +398,7 @@ kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
     kubectl delete deploy tensorflow-mnist
     ```
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-***
+<figure><img src="../../.gitbook/assets/vksgpu_15.png" alt=""><figcaption></figcaption></figure>
 
 ## Giám sát hoạt động GPU Resources
 
@@ -424,7 +422,7 @@ kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
       --set prometheus.url=http://${prometheus_service}.prometheus.svc.cluster.local
     ```
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_16.png" alt=""><figcaption></figcaption></figure>
 
 *   Sau khi cài đặt thành công, chạy lệnh bên dưới để kiểm tra các resource Prometheus đang chạy:
 
@@ -433,7 +431,7 @@ kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
     kubectl -n prometheus get all 
     ```
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_17.png" alt=""><figcaption></figcaption></figure>
 
 *   Tiếp theo, bạn cần chạy lệnh bên dưới để enable DCGM exporter để giám sát GPU resources trên cluster của bạn:
 
@@ -448,7 +446,7 @@ kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
     kubectl get --raw /apis/custom.metrics.k8s.io/v1beta1 | jq -r . | grep DCGM
     ```
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu18.png" alt=""><figcaption></figcaption></figure>
 
 * Bây giờ, bạn hãy chạy lệnh bên dưới để chuyển Prometheus Adapter tới máy localhost của bạn và sau đó kiểm tra các metrics đã thu thập được thông qua [http://localhost:9090](http://localhost:9090)
 
@@ -458,9 +456,11 @@ kubectl -n prometheus \
   port-forward svc/prometheus-stack-kube-prom-prometheus 9090:9090
 ```
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_19.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_20.png" alt=""><figcaption></figcaption></figure>
+
+
 
 * Bên dưới là danh sách một vài GPU Metrics được sử dụng thường xuyên. Tham khảo danh sách GPU metric đầy đủ tại [Field Identifiers](https://docs.nvidia.com/datacenter/dcgm/latest/dcgm-api/dcgm-api-field-ids.html).
   *   **Bảng 1**: Usage
@@ -490,9 +490,11 @@ helm install --wait kedacore \
 kubectl -n keda get all
 ```
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_21.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_22.png" alt=""><figcaption></figcaption></figure>
+
+
 
 *   **Nếu BẠN KHÔNG cài đặt Keda trong cụm của mình**, tính năng Auto-scale của VKS sẽ can thiệp vào và:
 
@@ -548,7 +550,6 @@ kubectl -n keda get all
     # Check the ScaledObject
     kubectl get scaledobject
     ```
-
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 * Khi trạng thái `ScaledObject` **Ready** là`True`,  GPU Nodegroup được scale dựa trên GPU usage.
+
+<figure><img src="../../.gitbook/assets/vksgpu_23.png" alt=""><figcaption></figcaption></figure>
