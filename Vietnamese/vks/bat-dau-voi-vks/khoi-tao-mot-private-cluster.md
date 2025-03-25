@@ -4,7 +4,9 @@ Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Pub
 
 ### Model <a href="#khoitaomotpublicclustervoiprivatenodegroup-dieukiencan" id="khoitaomotpublicclustervoiprivatenodegroup-dieukiencan"></a>
 
-<figure><img src="../../.gitbook/assets/image (691).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks_model_private.png" alt=""><figcaption></figcaption></figure>
+
+
 
 **Thành phần**
 
@@ -19,7 +21,9 @@ Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Pub
 
 Bạn có thể xem thông tin 4 private service endpoint thông qua portal vServer theo đường dẫn tại [đây](https://hcm-3.console.vngcloud.vn/vserver/vnetwork/endpoint/list).
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks_endpoint.png" alt=""><figcaption></figcaption></figure>
+
+
 
 {% hint style="info" %}
 **Warning:**

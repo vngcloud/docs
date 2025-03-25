@@ -2,7 +2,9 @@
 
 ## **Model**
 
-<figure><img src="../../../.gitbook/assets/image (692).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vks_model_public.png" alt=""><figcaption></figcaption></figure>
+
+
 
 Khi bạn khởi tạo một **Public Cluster với Public Node Group**, hệ thống VKS sẽ:
 
