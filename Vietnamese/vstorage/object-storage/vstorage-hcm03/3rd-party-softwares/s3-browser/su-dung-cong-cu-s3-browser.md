@@ -8,31 +8,33 @@ Trên giao diện ta có thể dễ dàng thấy và thực hiện các thao tá
 2. **Upload / Download file**
 3. **Tạo / Xóa Folder, File**
 
-<figure><img src="../../../../../.gitbook/assets/image (541).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s3browser1.png" alt=""><figcaption></figcaption></figure>
 
 Một số cấu hình nâng cao thường dùng:
 
 1. **Tools → Options**
 
-<figure><img src="../../../../../.gitbook/assets/image (542).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s3browser2.png" alt=""><figcaption></figcaption></figure>
 
-1. **General**
+
+
+2. **General**
 
 * **Enable Multipart uploads with part size**: tuỳ vào file size mà cân nhắc size cho mỗi part để đảm bảo không quá 1000 part (số lượng part tối đa mà vstorage hỗ trợ cho mỗi file).
 
-<figure><img src="../../../../../.gitbook/assets/image (543).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s3browser3.png" alt=""><figcaption></figcaption></figure>
 
 * **Điều tiết bandwidth:**
 
-<figure><img src="../../../../../.gitbook/assets/image (544).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s3browser4.png" alt=""><figcaption></figcaption></figure>
 
 * **Chọn folder lưu file tạm:**
 
-<figure><img src="../../../../../.gitbook/assets/image (545).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s3browser5.png" alt=""><figcaption></figcaption></figure>
 
 * **Cấu hình proxy (nếu có):**
 
-<figure><img src="../../../../../.gitbook/assets/image (546).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s3browser6.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**

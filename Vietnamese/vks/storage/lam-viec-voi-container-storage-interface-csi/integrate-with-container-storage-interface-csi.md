@@ -192,7 +192,9 @@ Sau đây là hướng dẫn để bạn deploy service nginx trên Kubernetes.
 
 Lúc này, hệ thống vServer sẽ tự động tạo một Volume tương ứng với file yaml bên trên, ví dụ:
 
-<figure><img src="../../../.gitbook/assets/image (434).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vks_volume_1.png" alt=""><figcaption></figcaption></figure>
+
+
 
 ***
 
@@ -210,7 +212,9 @@ Snapshot là phương pháp sao lưu giữ liệu với chi phí thấp, thuận
 
 Ví dụ:
 
-<figure><img src="../../../.gitbook/assets/image (435).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vks_snapshot.png" alt=""><figcaption></figcaption></figure>
+
+
 
 #### **Cài đặt VNGCloud Snapshot Controller**
 
