@@ -14,7 +14,7 @@
 
 **Bước 2:** Bạn chọn xổ menu **Product** xuống và chọn mục **Media Live.** Tiếp tục bạn chọn tab **Channel -> Transcode channels**
 
-<figure><img src="../../../../.gitbook/assets/transcode1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/transcode1 (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -36,7 +36,7 @@
 
 **Bước 7:** Tại tab **profile**, bạn nhập các profile của đầu vào bằng cách chọn **Add profile** nếu đã có sẵn hoặc chọn **New profile** để tạo profile mới
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 8:** Trong ví dụ này, chúng tôi sẽ thêm một profile **video** định dạng 1080p và một **audio** 44\_1khz
 

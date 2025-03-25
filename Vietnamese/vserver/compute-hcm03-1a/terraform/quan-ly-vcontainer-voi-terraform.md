@@ -284,4 +284,4 @@ If you ever set or change modules or backend configuration for Terraform,rerun t
 
 Sau khi khởi tạo thành công Terraform, bạn có thể lên Portal để xem thông tin Container vừa tạo:
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../English/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
