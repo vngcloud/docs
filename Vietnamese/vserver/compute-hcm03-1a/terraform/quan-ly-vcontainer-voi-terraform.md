@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Quản lý vContainer với Terraform
 
 #### Để quản lý vContainer với Terraform, bạn cần làm các bước sau đây: <a href="#quanlyvcontainervoiterraform-dequanlyvcontainervoiterraform-bancanlamcacbuocsauday" id="quanlyvcontainervoiterraform-dequanlyvcontainervoiterraform-bancanlamcacbuocsauday"></a>
