@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Di chuyển máy chủ ảo
 
 ## Di chuyển máy chủ là gì? <a href="#dichuyenmaychuao-dichuyenmaychulagi" id="dichuyenmaychuao-dichuyenmaychulagi"></a>
