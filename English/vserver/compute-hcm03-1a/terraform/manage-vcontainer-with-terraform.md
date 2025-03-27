@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Manage vContainer with Terraform
 
 #### **To manage vServer with Terraform, you need to do the following steps:** <a href="#managevcontainerwithterraform-tomanagevserverwithterraform-youneedtodothefollowingsteps" id="managevcontainerwithterraform-tomanagevserverwithterraform-youneedtodothefollowingsteps"></a>
