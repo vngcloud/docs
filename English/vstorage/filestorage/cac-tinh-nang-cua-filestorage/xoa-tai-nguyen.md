@@ -7,3 +7,9 @@ To delete a storage file, you can:
 **Step 1:** Log in to [https://efs.console.vngcloud.vn/overview](https://efs.console.vngcloud.vn/overview)
 
 **Step 2:** Select the icon at the storage file you want to delete. Select **Delete**.
+
+{% hint style="info" %}
+**Attention:**
+
+* When a File Storage is deleted, you cannot use the same name for 7 days. After this period, you can create a new File Storage with the same name.
+{% endhint %}
