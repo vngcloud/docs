@@ -1,4 +1,8 @@
-# VNG Cloud's virtual server migration service
+---
+hidden: true
+---
+
+# Migrate Instance
 
 ## What is a server migration? <a href="#vngcloudsvirtualservermigrationservice-whatisaservermigration" id="vngcloudsvirtualservermigrationservice-whatisaservermigration"></a>
 
