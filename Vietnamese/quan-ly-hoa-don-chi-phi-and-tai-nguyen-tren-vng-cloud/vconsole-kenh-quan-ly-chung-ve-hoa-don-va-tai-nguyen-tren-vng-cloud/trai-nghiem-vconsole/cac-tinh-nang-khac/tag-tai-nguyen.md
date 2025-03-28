@@ -72,7 +72,7 @@ Tính năng đồng bộ thông tin tag vào hóa đơn giúp liên kết chặt
 1. **Truy cập vào trang thống kê hóa đơn:** [https://dashboard.console.vngcloud.vn/billing-report](https://dashboard.console.vngcloud.vn/billing-report)
 2.  **Xuất hóa đơn:** Click vào nút "Xuất hóa đơn" để tải về bản sao hóa đơn đầy đủ.&#x20;
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. **Kiểm tra thông tin tag:** Trong bản sao hóa đơn đã xuất, bạn sẽ tìm thấy một phần liệt kê các tag đã được gắn cho các tài nguyên liên quan đến hóa đơn đó.
 
 **Lưu ý:**

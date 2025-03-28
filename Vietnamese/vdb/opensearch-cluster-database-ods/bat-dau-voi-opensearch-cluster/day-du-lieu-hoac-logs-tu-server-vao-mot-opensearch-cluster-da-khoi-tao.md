@@ -1,4 +1,12 @@
-# Đẩy dữ liệu hoặc logs từ server vào một OpenSearch Cluster đã khởi tạo
+# Đẩy dữ liệu hoặc event logs từ Logstash vào một OpenSearch Cluster đã khởi tạo
+
+## Điều kiện cần
+
+Giả sử, bạn đã khởi tạo thành công một OpenSearch Cluster với thông số như sau:&#x20;
+
+<figure><img src="../../../.gitbook/assets/opensearch5.png" alt=""><figcaption></figcaption></figure>
+
+Tiếp theo, hãy thực hiện đẩy dữ liệu mẫu vào OpenSearch Dashboards hoặc đẩy event logs từ Logstash vào OpenSearch.
 
 ## **Đẩy dữ liệu mẫu vào OpenSearch Dashboards**
 
@@ -19,22 +27,50 @@ Chạy lệnh sau để tạo index và đẩy dữ liệu OpenSearch:
 
 ```bash
 # 2. Create index and data.
-curl -H "Content-Type: application/json" -X PUT "https://<<OpenSearch_Dashboard_Endpoint>>/ecommerce" -k -H "Authorization: Basic $(echo -n 'master-user:<<Master_User_Password>>' | base64)" --data-binary "@ecommerce-field_mappings.json"
-curl -H "Content-Type: application/json" -X PUT "https://<<OpenSearch_Dashboard_Endpoint>>/ecommerce/_bulk" -k -H "Authorization: Basic $(echo -n 'master-user:<<Master_User_Password>>' | base64)" --data-binary "@ecommerce.ndjson"
+curl -H "Content-Type: application/json" -X PUT "https://<<OpenSearch_ReceiveLogs_Endpoint>>/ecommerce" -k -H "Authorization: Basic $(echo -n 'master-user:<<Master_User_Password>>' | base64)" --data-binary "@ecommerce-field_mappings.json"
+curl -H "Content-Type: application/json" -X PUT "https://<<OpenSearch_ReceiveLogs_Endpoint>>/ecommerce/_bulk" -k -H "Authorization: Basic $(echo -n 'master-user:<<Master_User_Password>>' | base64)" --data-binary "@ecommerce.ndjson"
 ```
 
-Bạn cần thay thế `<<OpenSearch_Dashboard_Endpoint>>` bằng Endpoint của OpenSearch Dashboard (ví dụ:`https://your-opensearch-endpoint-hcm03.vdb-opensearch.vngcloud.vn:443` và `<<Master_User_Password>>` bằng mật khẩu tài khoản master mà bạn đã khởi tạo trước đó.
+Bạn có thể lấy thông tin `OpenSearch_ReceiveLogs_Endpoint` trên vDB Portal và `<<Master_User_Password>>` bằng mật khẩu tài khoản master mà bạn đã khởi tạo trước đó.
 
-[\
-](https://liemnt5-cidr-11430-2ue3z-hcm03.vdb-opensearch.vngcloud.tech)**Bước 3: Kiểm tra dữ liệu trên OpenSearch Dashboards**
+Ví dụ:&#x20;
 
-1.  Truy cập **OpenSearch Dashboards** thông qua đường dẫn:
+```bash
+# 2. Create index and data.
+curl -H "Content-Type: application/json" -X PUT "https://open-search-dem-53461-5cfxl-hcm03.vdb-opensearch.vngcloud.vn:9200/ecommerce" -k -H "Authorization: Basic $(echo -n 'master-user:123456789aA@' | base64)" --data-binary "@ecommerce-field_mappings.json"
+curl -H "Content-Type: application/json" -X PUT "https://open-search-dem-53461-5cfxl-hcm03.vdb-opensearch.vngcloud.vn:9200/ecommerce/_bulk" -k -H "Authorization: Basic $(echo -n 'master-user:123456789aA@' | base64)" --data-binary "@ecommerce.ndjson"
+```
 
-    ```
-    https://your-opensearch-endpoint-hcm03.vdb-opensearch.vngcloud.vn:443
-    ```
-2. Vào **Stack Management** → **Index Patterns**, tạo index pattern cho `ecommerce*`.
-3. Truy cập **Discover** để xem dữ liệu mẫu.
+[\
+](https://liemnt5-cidr-11430-2ue3z-hcm03.vdb-opensearch.vngcloud.tech)Kết quả sẽ hiển thị như sau:&#x20;
+
+```bash
+curl -H "Content-Type: application/json" -X PUT "https://open-search-dem-53461-5cfxl-hcm03.vdb-opensearch.vngcloud.vn:9200/ecommerce" -k -H "Authorization: Basic $(echo -n 'master-user:123456789aA@' | base64)" --data-binary "@ecommerce-field_mappings.json"
+{"acknowledged":true,"shards_acknowledged":true,"index":"ecommerce"}
+
+curl -H "Content-Type: application/json" -X PUT "https://open-search-dem-53461-5cfxl-hcm03.vdb-opensearch.vngcloud.vn:9200/ecommerce/_bulk" -k -H "Authorization: Basic $(echo -n 'master-user:123456789aA@' | base64)" --data-binary "@ecommerce.ndjson"
+{"took":4579,"errors":false,"items":[{"index":{"_index":"ecommerce","_id":"0","_version":1,"result":"created","_shards":{"total":2,"successful":2,"failed":0},"_seq_no":0,"_primary_term":1,"status":201}},{"index":{"_index":"ecommerce","_id":"1","_version":1,"result":"created","_shards":{"total":2,"successful":2,"failed":0},"_seq_no":1,"_primary_term":1,"status":201}},{"index":{"_index":"ecommerce","_id":"2","_version":1,"result":"created","_shards":{"total":2,"successful":2,"failed":0},"_seq_no":2,"_primary_term":1,"status":201}},{"index":{"_index":"ecommerce","_id":"3","_version":1,"result":"created","_shards":{"total":2,"successful":2,"failed":0},"_seq_no":3,"_primary_term":1,"status":201}},{"index":{"_index":"ecommerce","_id":"4","_version":1,"result":"created","_shards":{"total":2,"successful":2,"failed":0},"_seq_no":4,"_primary_term":1,"status":201}},{"index":{"_index":"ecommerce","_id":"5","_version":1,"result":"created","_shards":{"total":2,"successful":2,"failed":0},"_seq_no":5,"_primary_term":1,"status":201}},{"index":{"_index":"ecommerce","_id":"6","_version":1,"result":"created","_shards":{"total":2,"successful":2,"failed":0},"_seq_no":6,"_primary_term":1,"status":201}},{"index":{"_index":"ecommerce","_id":"7","_version":1,"result":"created","_shards":{"total":2,"successful":2,"failed":0},"_seq_no":7,"_primary_term":1,"status":201}},{"index":{"_index":"ecommerce","_id":"8","_version":1,"result":"created","_shards":{"total":2,"successful":2,"failed":0},"_seq_no":8,"_primary_term":1,"status":2...
+....
+```
+
+**Bước 3: Kiểm tra dữ liệu trên OpenSearch Dashboards**
+
+1. Truy cập và đăng nhập vào **OpenSearch Dashboards**
+2. Vào mục **Management**, chọn **Dashboard Management**&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+3. Chọn mục **Index patterns**, tiếp tục chọn **Create index pattern**
+
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+4. Nhập **Index pattern name**, ví dụ `ecommerce*` sau đó chọn **Next step**
+
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+5. Truy cập **Discover** để xem dữ liệu mẫu.
+
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 ## **Đẩy event logs từ Logstash vào OpenSearch**
 
@@ -59,40 +95,41 @@ sudo yum install logstash
 Tạo một file cấu hình cho Logstash, ví dụ:
 
 ```bash
-sudo nano /etc/logstash/conf.d/opensearch_logstash.conf
+sudo nano /etc/logstash/conf.d/logstash.conf
 ```
 
 Thêm nội dung sau:
 
-```plaintext
+```editorconfig
 input {
-  file {
-    path => "/var/log/syslog"
-    start_position => "beginning"
-  }
+    file {
+        path => "/var/log/syslog"
+        start_position => "beginning"
+        sincedb_path => "/dev/null"
+    }
 }
 
 filter {
-  grok {
-    match => { "message" => "%{SYSLOGTIMESTAMP:timestamp} %{HOSTNAME:hostname} %{DATA:program}: %{GREEDYDATA:log_message}" }
-  }
+    mutate {
+        add_field => { "host" => "%{host}" }
+    }
 }
 
 output {
-  opensearch {
-    hosts => ["https://your-opensearch-endpoint:9200"]
-    user => "master-user"
-    password => "your-master-password"
-    index => "logstash-logs"
-    ssl_certificate_verification => false
-  }
+    opensearch {
+        hosts => ["OpenSearch_ReceiveLogs_Endpoint"]
+        index => "logstash-logs"
+        user => "master-user"  
+        password => "Your_MasterUser_Password"  
+        ssl => false 
+    }
 }
 ```
 
 Thay thế:
 
-* `"https://your-opensearch-endpoint:9200"` bằng OpenSearch Receive Logs Endpoint của bạn.
-* `"your-master-password"` bằng mật khẩu tài khoản master bạn đã khởi tạo trước đó.
+* `OpenSearch_ReceiveLogs_Endpoint` bằng OpenSearch Receive Logs Endpoint của bạn lấy từ vDB Portal.
+* `Your_MasterUser_Password` bằng mật khẩu tài khoản master bạn đã khởi tạo trước đó.
 
 #### **Bước 3: Khởi động Logstash**
 
@@ -107,14 +144,30 @@ sudo systemctl start logstash
 Bạn có thể kiểm tra logs bằng API OpenSearch:
 
 ```bash
-curl -X GET "<<OpenSearch_Dashboard_Endpoint>>/logstash-logs/_search?pretty" -k \
--H "Authorization: Basic $(echo -n 'master-user:<<Master_User_Password>>' | base64)"
+curl -X GET "https://OpenSearch_ReceiveLogs_Endpoint/logstash-logs/_search?pretty" -k -H "Authorization: Basic $(echo -n 'master-user:Your_MasterUser_Password' | base64)"
+```
+
+Ví dụ:
+
+```bash
+curl -X GET "https://open-search-dem-53461-5cfxl-hcm03.vdb-opensearch.vngcloud.vn:9200/logstash-logs/_search?pretty" -k -H "Authorization: Basic $(echo -n 'master-user:123456789aA@' | base64)"
 ```
 
 Nếu logs xuất hiện, có nghĩa là Logstash đã gửi dữ liệu thành công vào OpenSearch.
 
 #### **Bước 5: Xem logs trên OpenSearch Dashboards**
 
-1. Truy cập **OpenSearch Dashboards**.
-2. Vào **Stack Management** → **Index Patterns**, tạo index pattern cho `logstash-logs*`.
-3. Chuy cập **Discover** để xem logs.
+1. Truy cập và đăng nhập vào **OpenSearch Dashboards**
+2. Vào mục **Management**, chọn **Dashboard Management**&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+3. Chọn mục **Index patterns**, tiếp tục chọn **Create index pattern**
+
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+4. Nhập **Index pattern name**, ví dụ `logstash-logs*` sau đó chọn **Next step**
+
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+5. Cuối cùng, bạn hãy truy cập vào mục **Discover** để xem logs.

@@ -640,7 +640,7 @@
     * [Bắt đầu với OpenSearch Cluster](vdb/opensearch-cluster-database-ods/bat-dau-voi-opensearch-cluster/README.md)
       * [Khởi tạo một OpenSearch Cluster](vdb/opensearch-cluster-database-ods/bat-dau-voi-opensearch-cluster/khoi-tao-mot-opensearch-cluster.md)
       * [Truy cập và làm việc trên OpenSearch Dashboard](vdb/opensearch-cluster-database-ods/bat-dau-voi-opensearch-cluster/truy-cap-va-lam-viec-tren-opensearch-dashboard.md)
-      * [Đẩy dữ liệu hoặc logs từ server vào một OpenSearch Cluster đã khởi tạo](vdb/opensearch-cluster-database-ods/bat-dau-voi-opensearch-cluster/day-du-lieu-hoac-logs-tu-server-vao-mot-opensearch-cluster-da-khoi-tao.md)
+      * [Đẩy dữ liệu hoặc event logs từ Logstash vào một OpenSearch Cluster đã khởi tạo](vdb/opensearch-cluster-database-ods/bat-dau-voi-opensearch-cluster/day-du-lieu-hoac-logs-tu-server-vao-mot-opensearch-cluster-da-khoi-tao.md)
     * [Các tính năng của OpenSearch Cluster](vdb/opensearch-cluster-database-ods/cac-tinh-nang-cua-opensearch-cluster/README.md)
       * [Khởi tạo OpenSearch Cluster](vdb/opensearch-cluster-database-ods/cac-tinh-nang-cua-opensearch-cluster/khoi-tao-opensearch-cluster.md)
       * [Chỉnh sửa OpenSearch Cluster](vdb/opensearch-cluster-database-ods/cac-tinh-nang-cua-opensearch-cluster/chinh-sua-opensearch-cluster/README.md)

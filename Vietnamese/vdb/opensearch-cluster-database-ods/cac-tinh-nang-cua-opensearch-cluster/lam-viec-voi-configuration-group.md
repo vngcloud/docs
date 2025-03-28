@@ -51,7 +51,7 @@ Sau khi một Configuration Group được tạo, bạn có thể chỉnh sửa 
 
 ### **Gắn Configuration Group vào OpenSearch Cluster**
 
-**Bước 1: Chọn biêu tượng** <img src="../../../.gitbook/assets/image (2).png" alt="" data-size="line">tại cluster bạn muốn thay đổi configuration group
+**Bước 1: Chọn biêu tượng** <img src="../../../.gitbook/assets/image (2) (1).png" alt="" data-size="line">tại cluster bạn muốn thay đổi configuration group
 
 **Bước 2:** Chọn **Edit Configuration group**
 

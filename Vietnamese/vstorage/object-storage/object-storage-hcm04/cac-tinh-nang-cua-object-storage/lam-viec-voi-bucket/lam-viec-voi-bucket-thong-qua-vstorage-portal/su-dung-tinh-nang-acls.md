@@ -5,7 +5,7 @@
 **Access Control List (ACL)** trên vStorage là một tính năng cho phép quản lý quyền truy cập vào bucket và các object bên trong bucket. ACL cung cấp các cấp độ truy cập cơ bản mà bạn có thể thiết lập cho người dùng Root user account khác trên vStorage. Dưới đây là hướng dẫn cơ bản để sử dụng tính năng ACLs:
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn biểu tượng <img src="../../../../../../.gitbook/assets/image (7) (1) (1).png" alt="" data-size="line">tại **project** chứa **bucket** bạn muốn phân quyền.
+2. Chọn biểu tượng <img src="../../../../../../.gitbook/assets/image (7) (1) (1) (1).png" alt="" data-size="line">tại **project** chứa **bucket** bạn muốn phân quyền.
 3. Nếu bạn muốn phân quyền bucket cho một **Root User Account** hoặc **IAM User Account** hay **Service Account** khác, bạn cần biết thông tin **vStorage User ID** của người dùng mà bạn muốn phân quyền:&#x20;
    1. Đối với **Root User Account**: bạn có thể lấy thông tin **vStorage User ID** ngay tại trang thông tin **project** theo hình dưới.
 
@@ -18,7 +18,7 @@ b. Đối với **IAM User Account** và **Service Account**: bạn có thể l�
 4. Tiếp tục chọn **Bucket** bạn muốn thực hiện thiết lập ACLs.
 5. Chọn biểu tượng **Action** và chọn **Set ACLs.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Tại đây, bạn có thể lựa chọn tập người dùng và quyền truy cập tương ứng. Cụ thể:&#x20;
 
@@ -47,7 +47,7 @@ b. Đối với **IAM User Account** và **Service Account**: bạn có thể l�
 * Chọn action **List** để cấp quyền liệt kê danh sách object thuộc bucket cho tất cả người dùng.
 * Chọn **Save**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Ví dụ 2: Cấp quyền FULL\_CONTROL cho một tài khoản vStorage khác**
 
@@ -61,11 +61,11 @@ Chú ý:&#x20;
 * Chọn action **List, Write** để cấp quyền liệt kê danh sách object thuộc bucket và tải object lên bucket này.
 * Chọn **Save**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Như hình bên trên, tôi đã phân quyền làm việc trên `bucket001` cho người dùng `vngclouddemo-123456`. Lúc này, người dùng `vngclouddemo-123456` có thể sử dụng tính năng `Add external bucket` để thêm bucket được chia sẻ này và danh sách bucket của bạn:&#x20;
 
-<figure><img src="../../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**

@@ -29,7 +29,7 @@ Với user là 96000-khaivt (xem trên portal) và pass là secret key khi tạo
 | ![](file:///C:/Users/LAP14383-local/AppData/Local/Packages/oice_16_974fa576_32c1d314_3436/AC/Temp/msohtmlclip1/01/clip_image005.gif)    docker push vcr.vngcloud.vn/96000-sdkimage/IMAGE\[:TAG] docker push vcr.vngcloud.vn/96000-sdkimage/hello-world:first |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Pull Image
 
@@ -38,4 +38,4 @@ Với user là 96000-khaivt (xem trên portal) và pass là secret key khi tạo
 | docker pull vcr.vngcloud.vn/96000-sdkimage/IMAGE\[:TAG] docker pull vcr.vngcloud.vn/96000-sdkimage/hello-world:first |
 | -------------------------------------------------------------------------------------------------------------------- |
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

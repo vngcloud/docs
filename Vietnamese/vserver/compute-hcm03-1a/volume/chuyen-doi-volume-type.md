@@ -67,7 +67,7 @@ _<mark style="color:orange;">**Trường hợp volume đang được sử dụng
 
 * 3.1: Sau khi hoàn tất bước 1, giao diện thực hiện sẽ chuyển sang bước 3/4, và yêu cầu người dùng tương tác. Tham khảo hình minh họa sau:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 3.2: Nhấn chọn **Yêu cầu hành động,** một cửa sổ Migrate volume sẽ hiển thị, cho phép người dùng xác nhận 2 hành động sau:
   * 3.2.1: **Xóa volume cũ**: Hệ thống sẽ hoàn tất cập nhật volume mới, các dịch vụ trên volume hoạt động lại như thường. Lưu ý rằng các bản snapshot liên quan tới volume trước khi cập nhật sẽ bị xóa vĩnh viễn.

@@ -12,7 +12,7 @@ Tính năng Auto Scaling cho phép vLB tự động điều chỉnh số lượn
 
 * Auto Scaling **chỉ có thể được bật khi khởi tạo vLB** và **không thể tắt** sau đó. Nếu bạn khởi tạo LoadBalancer thông qua vLB Portal, hãy chọn option: **Enable auto scaling**.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt="" width="196"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt="" width="196"><figcaption></figcaption></figure>
 
 * Nếu LoadBalancer của bạn được khởi tạo tự động thông qua hệ thống VKS, vui lòng thêm annotation `vks.vngcloud.vn/enable-autoscale: true` ngay khi tạo service LoadBalancer hay Ingress với Class vngcloud. Việc cập nhật annotation này sau khi LoadBalancer này đã được tạo sẽ không có tác dụng. Ví dụ:
 

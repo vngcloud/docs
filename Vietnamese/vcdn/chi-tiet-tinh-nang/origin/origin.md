@@ -8,7 +8,7 @@ Hiện tại, vCDN đang hỗ trợ HTTP Origin với các Thuật toán kết n
 
 Khi bạn tạo một Web Accelerator, Object Download hoặc Video On Demand, màn hình khởi tạo CDN sẽ bao gồm các thông tin sau:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Trong đó:
 

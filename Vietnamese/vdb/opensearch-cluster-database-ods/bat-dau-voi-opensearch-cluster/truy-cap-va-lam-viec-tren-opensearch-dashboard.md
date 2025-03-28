@@ -10,12 +10,24 @@ Sau khi một OpenSearch Cluster đã được khởi tạo, bạn có thể tru
 
 **Bước 3**: Tại mục **Accessibility**, thực hiện lấy thông tin **Dashboard Endpoint**
 
+<figure><img src="../../../.gitbook/assets/opensearch1.png" alt=""><figcaption></figcaption></figure>
+
+
+
 **Bước 4**: Thực hiện mở URL này và đăng nhập bằng:
 
 * **Tên đăng nhập**: `master-user`
 * **Mật khẩu**: là **Master user password** bạn đã nhập khi khởi tạo Cluster
 
+<figure><img src="../../../.gitbook/assets/opensearch2.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/opensearch3.png" alt=""><figcaption></figcaption></figure>
+
 Sau khi đã đăng nhập thành công, lúc này, bạn có thể làm việc với OpenSearch Cluster thông qua OpenSearch Dashboard. Tham khảo thêm các mục bên dưới để xem hướng dẫn thực hiện một số tác vụ chính trên OpenSearch Dashboard.
+
+<figure><img src="../../../.gitbook/assets/opensearch4.png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ## Làm việc với OpenSearch Dashboard
 
