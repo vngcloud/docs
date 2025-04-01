@@ -898,6 +898,7 @@
 * [FAQ](faq/README.md)
   * [vServer](faq/vserver.md)
   * [vStorage](faq/vstorage.md)
+  * [vNetwork](faq/vstorage-1.md)
   * [vCDN](faq/vcdn.md)
   * [vDB](faq/vdb.md)
   * [NTP server](faq/ntp-server.md)
