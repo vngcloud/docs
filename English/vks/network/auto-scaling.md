@@ -12,7 +12,7 @@ Auto Scaling allows vLB to automatically adjust the number of Slaves based on tr
 
 * Auto Scaling **can only be enabled when initializing the vLB** and **cannot be disabled** afterwards. If you initialize the LoadBalancer via the vLB Portal, select the option: **Enable auto scaling** .
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 * If your LoadBalancer is automatically initialized through the VKS system, please add the annotation `vks.vngcloud.vn/enable-autoscale: true` when creating the LoadBalancer or Ingress service with the vngcloud Class. Updating this annotation after the LoadBalancer has been created will not have any effect. For example:
 

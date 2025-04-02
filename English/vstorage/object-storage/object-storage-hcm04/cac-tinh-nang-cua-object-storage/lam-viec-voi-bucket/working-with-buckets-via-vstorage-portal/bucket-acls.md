@@ -9,11 +9,11 @@
 3. If you want to delegate bucket permissions to a **Root User Account** or another **IAM User Account** or **Service Account** , you need to know the **vStorage User ID** of the user you want to delegate permissions to:
    1. For **Root User Account : you can get vStorage User ID** information right on the **project** information page as shown below.
 
-<figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 b. For **IAM User Account** and **Service Account : you can get vStorage User ID** information in **Identity and Access Management**
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Continue to select **the Bucket** you want to perform ACLs setup.
 5. **Select the Action** icon and select **Set ACLs.**

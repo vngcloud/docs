@@ -1,4 +1,4 @@
-# Working with Network Load Balancer (NLB)
+# Load Balancer
 
 ## What is NLB?
 
@@ -18,7 +18,7 @@
 
 ### Model deployment
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## VNGCloud LoadBalancer Controller
 
@@ -36,7 +36,6 @@ The VNG Cloud Load Balancer Controller simplifies the deployment and management 
 #### Install VNGCloud LoadBalancer Controller
 
 * Install Helm version 3.0 or higher. Refer to [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) for instructions on how to install.
-
 * Replace your ClientID an Client Secret information and run the following command:
 
 ```bash

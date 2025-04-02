@@ -59,13 +59,13 @@ Below is a basic guide for connecting to Windows server on vServer, if you have 
 2. Select **the Server** you want to connect to, then select **Action, then select Connect.**
 3. On the **Connect to Server** page , select **the RDP (Window) tab**
 
-![](<../../../../.gitbook/assets/image (11) (3).png>)
+![](<../../../../.gitbook/assets/image (11) (3) (1).png>)
 
 4. Select **Download RDP File** . Your browser will prompt you to open or save the RDP file. When you've finished downloading the file, select **Done** to return to the server page:
 
 5) Open the downloaded file to remote to Windows server. Select **Connect** to continue connecting to your server.
 
-![](<../../../../.gitbook/assets/image (12).png>)
+![](<../../../../.gitbook/assets/image (12) (2).png>)
 
 6. The administrator account is selected by default. You need to copy and paste the password you saved earlier into the login pop-up (This information is taken from the email), in which enter the information **InstanceLogin** into **Username** , **InstancePassword** into **Password.**
 

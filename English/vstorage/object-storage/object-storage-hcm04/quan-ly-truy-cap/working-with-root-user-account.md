@@ -36,7 +36,7 @@ Follow the steps below to log into vStorage with the Root user account:
 3. **Enter the email** address and **password** associated with your account and select **Sign In** . If you previously signed in as the root user in this browser, your browser may remember the email address for the Root User Account. If so, you will see the screen shown in the next step. If you previously signed in as an IAM user using an IAM User Account in this browser, your browser may display the IAM user login page instead. To return to the main login page, select **LOG IN AS ROOT USER.**
 4. After successful login, you have full access and perform the features provided by vStorage service on your resources.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

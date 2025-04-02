@@ -19,7 +19,7 @@ Use this document to learn more about the auto-renewal feature. It will detail t
     * Step 1: Configure service information on the product page → Click " **Initialize** " to go to the payment page
     * Step 2: On the payment page, tick " **Auto-renew** " to enable auto-renewal feature
 
-    <figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (11) (3).png" alt=""><figcaption></figcaption></figure>
 * **Turn on/off during service use**
   * Step 1: Navigate to the Resource Billing page in the vServer service: [https://hcm-3.console.vngcloud.vn/vserver/billing](https://hcm-3.console.vngcloud.vn/vserver/billing)
   * Step 2: Click on the three dots icon at the location of the resource that needs to be changed. See image below
