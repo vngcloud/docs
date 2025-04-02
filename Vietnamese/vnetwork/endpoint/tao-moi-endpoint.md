@@ -12,7 +12,7 @@ description: VNG Cloud Endpoint là điểm kết nối giữa VPC với các d�
 _<mark style="color:blue;">Tại cùng một region, tương ứng với một VPC người dùng có thể tạo được nhiều Endpoint, tuy nhiên để sử dụng được Endpoint, người dùng phải</mark>_ [_<mark style="color:blue;">AddHost</mark>_](tao-moi-endpoint.md#how-to-use) _<mark style="color:blue;">để có thể sử dụng Endpoint mong muốn</mark>_
 {% endhint %}
 
-* Người dùng login vào  [https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list](https://hcm-3-vnetwork.console.vngcloud.vn/nat/list)  với region = HCM
+* Người dùng login vào  [https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list](https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list)  với region = HCM
 * Chọn menu “**Endpoint**” tại thanh menu bên trái màn hình
 * Chọn chức năng “**Create an Endpoint**”
 * Nhập thông tin **Endpoint** theo yêu cầu gồm:

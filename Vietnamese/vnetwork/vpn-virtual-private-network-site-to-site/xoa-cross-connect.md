@@ -8,7 +8,9 @@ description: >-
 
 Trong quá trình sử dụng, người dùng vẫn có thể xóa VPN. Tuy nhiên, để xóa được cần thực hiện:
 
-**Bước 1:** Truy cập thành công vào VNG Cloud, tại màn hình Console chọn đến dịch vụ vNetwork hoặc nhấn vào đầy để đến vNetwork Dashboard HCM03 [https://hcm-3-vnetwork.console.vngcloud.vn/overview](https://hcm-3-vnetwork.console.vngcloud.vn/overview)
+**Bước 1:** Truy cập thành công vào VNG Cloud, tại màn hình Console chọn đến dịch vụ vNetwork hoặc nhấn vào đầy để đến vNetwork Dashboard HCM03 [https://hcm-3-vnetwork.console.vngcloud.vn/overview](https://hcm-3-vnetwork.console.vngcloud.vn/overview). Sau đó truy cập VPN/Site-to-Site VPN để xem danh sách VPN
+
+
 
 <figure><img src="../../.gitbook/assets/image (6) (5).png" alt=""><figcaption><p>VPN List</p></figcaption></figure>
 

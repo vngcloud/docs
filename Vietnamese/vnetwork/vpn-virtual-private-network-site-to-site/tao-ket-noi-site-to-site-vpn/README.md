@@ -37,7 +37,9 @@ layout:
   * **VPC** (Local Private CIDR): Network Local Private CIDR của VPN (VNGCloud site) và thông tin này sẽ được dùng để cấu hình tại remote VPN để allow các gói tin, và tập tin đến từ VNGCloud VPN. Tại trường này, hãy chọn VPC đã tạo từ trước.
   * **Subnet**: Chọn subnet nằm trong VPC được chọn. Sau khi VPN tạo xong, sẽ cấp một IP private cho VPN nằm trong subnet này, mục đích làm Private Gateway IP. IP dùng cho việc thêm Route Rule để điều hướng traffic đến remote VPN LAN.
 
-### <mark style="color:blue;">**Cấu hình Default Tunnel**</mark>
+### <mark style="color:blue;">**Cấu hình Default Site và Tunnel**</mark>
+
+Mặc định khi khởi tạo VPN Site-to-Site hệ thống yêu cầu tạo một Site và một Tunnel. Site ở đây đại diện cho Phase 1 (thông tin Public Gateway), một **Site** có thể có nhiều **Tunnel**. Tunnel đại diện cho Phase 2 (Thông tin Private Subnet) - Một **Tunnel** sẽ đi kèm với một subnet ở đầu xa.&#x20;
 
 * **Remote Public Gateway IP**: Điền thông tin Địa chỉ IP WAN của remote VPN Server.
 * **Remote Private CIDR**:  Điền Dải địa chỉ IP LAN của server OnPremise pfsense.
@@ -45,12 +47,16 @@ layout:
 
 <figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption><p>VPN Basic Configuration</p></figcaption></figure>
 
+<figure><img src="../../../.gitbook/assets/image (963).png" alt=""><figcaption><p>Default Tunnel Configuration</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (964).png" alt=""><figcaption><p>Default Tunnel Configuration</p></figcaption></figure>
+
 * Bên cạnh đó có mục <mark style="color:blue;">**Cấu hình thuật toán**</mark> cho kết nới VPN, được thiết lập với hai cấu hình chính được thiết lập mặc định. Các cấu hình IPSEC hỗ trợ có thểm xem [tại đây](cac-cau-hinh-ho-tro.md)
   * &#x20;**IKE Policy**: Cấu hình các config cho phase 1 của VPN IPSEC (Config tại 2 bên phải trùng nhau thì VPN mới hoạt động).
   * **IPsec Policy**: Cấu hình các config cho phase 2 của VPN IPSEC (Config tại 2 bên phải trùng nhau thì VPN mới hoạt động).
 * Tại bên phải màn hình, xem tổng chi phí gói VPN đã chọn, sau đó nhấn chọn <mark style="color:blue;">**"Tạo mới kết nối VPN"**</mark> đề xác nhận và tiến hành thanh toán;
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption><p>VPN Tunnel Configuration</p></figcaption></figure>
+
 
 _-> Sau khi thanh toán thành công, hệ thống sẽ xử lý kết nối thành công tuyến VPN vừa tạo và chuyển về màn hình danh sách VPN_ [_https://hcm-3-vnetwork.console.vngcloud.vn/vpn/list_](https://hcm-3-vnetwork.console.vngcloud.vn/vpn/list)
 
@@ -62,13 +68,13 @@ _-> Sau khi thanh toán thành công, hệ thống sẽ xử lý kết nối th�
 * Thời gian tạo một VPN dao động từ 3-5 phút. Vì cần khởi tạo dịch vụ VPN và Default Tunnel.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (4) (5).png" alt=""><figcaption><p>VPN List</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (965).png" alt=""><figcaption><p>VPN List</p></figcaption></figure>
 
 ## **Bước 3:** Kiểm tra lại thông tin VPN vừa tạo, bằng cách click vào VPN để chuyển qua trang Detail.
 
 <figure><img src="../../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption><p>VPN Detail - Local Configuration</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption><p>VPN Detail - Default Tunnel</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (966).png" alt=""><figcaption><p>VPN Detail - Tunnel List</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption><p>VPN Detail - Tags</p></figcaption></figure>
 
