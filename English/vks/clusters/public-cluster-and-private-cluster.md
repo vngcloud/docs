@@ -18,7 +18,7 @@ When you create a **Public Cluster with a Private Node Group** , the VKS system 
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fj8WSjgnwd7WXKXblh1ex%252Fimage.png%3Falt%3Dmedia%26token%3Dae664224-8486-495b-aab6-5d1d1017edec&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=8c00454b&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-When you create a **Public Cluster with Public/Private Node Group** , the VKS system will:
+When you create a **Private Cluster with Public/Private Node Group** , the VKS system will:
 
 * To enhance the security of your cluster, we have introduced the private cluster model. The Private Cluster feature helps make your K8S cluster as secure as possible, all connections are completely private from the connection between nodes to the control plane, the connection from the client to the control plane, or the connection from nodes to products. Other services in VNG Cloud such as: vStorage, vCR, vMonitor, VNGCloud APIs,...Private Cluster is the ideal choice for **services that require strict access control, ensuring compliance with security regulations and data privacy**.
 
