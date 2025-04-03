@@ -74,7 +74,7 @@ sudo mkdir -p /mnt/demo
 * For example, the command below I mount FileStorage with name = demo\_test with mount directory = /mnt/demo
 
 ```bash
-sudo mount -t nfs -o vers=4.1,hard,timeo=600,retrans=3,rsize=1048576,wsize=1048576,resvport,async hcm04.efs.vngcloud.vn:/demo_test /mnt/demos/
+sudo mount -t nfs -o vers=4.1,hard,timeo=600,retrans=3,rsize=1048576,wsize=1048576,resvport,async hcm04.efs.vngcloud.vn:/demo_test /mnt/demo/
 ```
 
 **Step 4** : Check mount:
