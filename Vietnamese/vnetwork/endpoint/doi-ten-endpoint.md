@@ -4,7 +4,7 @@ description: VNG Cloud Endpoint là điểm kết nối giữa VPC với các d�
 
 # Đổi tên Endpoint
 
-Người dùng login vào [https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list](https://hcm-3-vnetwork.console.vngcloud.vn/nat/list) với region =&#x20;
+Người dùng login vào [https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list](https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list) với region =&#x20;
 
 * Tại menu “**Endpoint**”, tìm và chọn Endpoint muốn đổi tên
 
