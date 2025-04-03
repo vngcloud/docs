@@ -1,6 +1,6 @@
 # Rename Endpoint
 
-* Users log in to the link [https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list](https://hcm-3-vnetwork.console.vngcloud.vn/nat/list) , region = HCM
+* Users log in to the link [https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list](https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list) , region = HCM
 * In the "**Endpoint**" menu, find and select the **Endpoint** you want to rename.
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
