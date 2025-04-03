@@ -73,7 +73,7 @@ sudo mkdir -p /mnt/demo
 
 * Ví dụ lệnh bên dưới tôi mount FileStorage có name = demo\_test với thư mục mount = /mnt/demo
 
-<pre class="language-bash"><code class="lang-bash"><strong>sudo mount -t nfs -o vers=4.1,hard,timeo=600,retrans=3,rsize=1048576,wsize=1048576,resvport,async hcm04.efs.vngcloud.vn:/demo_test /mnt/demos/
+<pre class="language-bash"><code class="lang-bash"><strong>sudo mount -t nfs -o vers=4.1,hard,timeo=600,retrans=3,rsize=1048576,wsize=1048576,resvport,async hcm04.efs.vngcloud.vn:/demo_test /mnt/demo/
 </strong></code></pre>
 
 **Bước 4**: Kiểm tra mount:
