@@ -6,7 +6,7 @@
 
 **Bước 2:** Tại thanh menu bên trái của giao diện vNetwork, chọn mục Cross Connect;
 
-**Bước 3:** Màn hình được điều hướng tới màn hình Danh sách Cross Connect;
+**Bước 3:** Màn hình được điều hướng tới màn hình danh sách Cross Connect;
 
 <figure><img src="../../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
 
