@@ -6,7 +6,7 @@ Cùng với việc tra cứu các giá trị hạn mức, bạn cũng có thể 
 
 ### **Xem hạn mức tài nguyên** <a href="#hanmuctainguyen-xemhanmuctainguyen" id="hanmuctainguyen-xemhanmuctainguyen"></a>
 
-Bạn có thể xem hạn mức tài nguyên bằng tùy chọn sau: Xem thông chi tiết tại trang hiện hữu, tuy nhiên cần lưu ý rằng chỉ có thể xem chi tiết thông tin các hạn mức cho từng tài nguyên chứ không thể xem mức sử dụng hiện hữu cho tài nguyên của bạn, để xem chi tiết về thông tin hạn mức và tình trạng sử dụng hạn mức tài nguyên, vui lòng truy cập vào đường dẫn [https://hcm-3.console.vngcloud.vn/vserver/limit](https://hcm-3.console.vngcloud.vn/vserver/limit), tại ô tìm kiếm có thể tìm theo tên dịch vụ mà bạn muốn để xem thông tin chi tiết về hạn mức.
+Bạn có thể xem hạn mức tài nguyên bằng tùy chọn sau: Xem thông tin chi tiết tại trang hiện hữu, tuy nhiên cần lưu ý rằng chỉ có thể xem chi tiết thông tin các hạn mức cho từng tài nguyên chứ không thể xem mức sử dụng hiện hữu cho tài nguyên của bạn, để xem chi tiết về thông tin hạn mức và tình trạng sử dụng hạn mức tài nguyên, vui lòng truy cập vào đường dẫn [https://hcm-3.console.vngcloud.vn/vserver/limit](https://hcm-3.console.vngcloud.vn/vserver/limit), tại ô tìm kiếm có thể tìm theo tên dịch vụ mà bạn muốn để xem thông tin chi tiết về hạn mức.
 
 ### **Yêu cầu tăng hạn mức** <a href="#hanmuctainguyen-yeucautanghanmuc" id="hanmuctainguyen-yeucautanghanmuc"></a>
 
