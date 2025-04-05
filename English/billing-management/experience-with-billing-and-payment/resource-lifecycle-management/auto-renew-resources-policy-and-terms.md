@@ -10,7 +10,7 @@ Use this document to learn more about the auto-renewal feature. It will detail t
 
 **2. Instructions to enable/disable the "Automatic renewal" feature**
 
-**2.1 For vStorage service products:** [**https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649654**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649654)
+**2.1 For vStorage service products:** [**https://docs.vngcloud.vn/vng-cloud-document/vstorage/object-storage/vstorage-hcm03/charging-fee/charging-for-prepaid-users**](https://docs.vngcloud.vn/vng-cloud-document/vstorage/object-storage/vstorage-hcm03/charging-fee/charging-for-prepaid-users)
 
 **2.2 For vServer products and services**
 
@@ -49,7 +49,7 @@ Automatic resource renewal is **a system feature** that helps users' resource us
 * Resources are **renewed by default for 1 month** from the end date.
 * Users need to prepare enough available credit balance as notified so that the system can proceed with the renewal.
 * The official system will renew **3 days in advance** , calculated from the end of the resource.
-  * The pricing for automatic renewal is no different from when the user actively renews the resource. See more [here.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/quan-ly-vong-doi-tai-nguyen/gia-han-tai-nguyen)
+  * The pricing for automatic renewal is no different from when the user actively renews the resource. See more [here.](https://docs.vngcloud.vn/vng-cloud-document/billing-management/experience-with-billing-and-payment/resource-lifecycle-management/renew-resource)
   * The system sends information about the resource being renewed successfully/failed to the user.
   * The system generates invoices corresponding to the extended period.
-* For expired resources, automatic renewal will not be applied. This means that when the resource is enabled for automatic renewal, but the automatic renewal process fails due to lack of credits, resulting in the resource expiring, in this case the user needs to proactively restore the resource to continue using the service. Refer to the Resource Restoration [guide](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/quan-ly-vong-doi-tai-nguyen/khoi-phuc-tai-nguyen)
+* For expired resources, automatic renewal will not be applied. This means that when the resource is enabled for automatic renewal, but the automatic renewal process fails due to lack of credits, resulting in the resource expiring, in this case the user needs to proactively restore the resource to continue using the service. Refer to the Resource Restoration [guide](https://docs.vngcloud.vn/vng-cloud-document/billing-management/experience-with-billing-and-payment/resource-lifecycle-management/recover-resource)
