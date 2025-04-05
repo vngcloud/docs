@@ -10,7 +10,7 @@ Sử dụng tài liệu này để hiểu thêm về tính năng tự động gi
 
 #### **2. Hướng dẫn bật/tắt tính năng "Tự động gia hạn"** <a href="#tudonggiahantainguyen-chinhsachvadieukhoan-2.huongdanbat-tattinhnang-tudonggiahan" id="tudonggiahantainguyen-chinhsachvadieukhoan-2.huongdanbat-tattinhnang-tudonggiahan"></a>
 
-**2.1 Đối với các sản phẩm dịch vụ vStorage:** [**https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649654**](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49649654)
+**2.1 Đối với các sản phẩm dịch vụ vStorage:** [**https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/cach-tinh-phi/tinh-phi-voi-nguoi-dung-tra-truoc**](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/cach-tinh-phi/tinh-phi-voi-nguoi-dung-tra-truoc)
 
 **2.2 Đối với các sản phẩm, dịch vụ vServer**
 
