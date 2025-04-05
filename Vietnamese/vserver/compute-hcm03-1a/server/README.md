@@ -1,6 +1,6 @@
 # Instance
 
-Instance được hiểu là máy chủ ảo (virtal Server),  một máy chủ ảo trong đám mây bao gồm các thành phần cơ bản như vCPU, bộ nhớ, hệ điều hành (OS), cấu hình mạng và khối lượng. Bạn có thể sử dụng các công cụ quản lý do VNG Cloud cung cấp như Cổng thông tin và API để tạo và quản lý các vServer. Bạn cũng có thể thay đổi kích thước các khả năng (chẳng hạn như khả năng tính toán và lưu trữ) các máy chủ ảo của bạn khi yêu cầu thay đổi.
+Instance được hiểu là máy chủ ảo (Virtual Server),  một máy chủ ảo trong đám mây bao gồm các thành phần cơ bản như vCPU, bộ nhớ, hệ điều hành (OS), cấu hình mạng và khối lượng. Bạn có thể sử dụng các công cụ quản lý do VNG Cloud cung cấp như Cổng thông tin và API để tạo và quản lý các vServer. Bạn cũng có thể thay đổi kích thước các khả năng (chẳng hạn như khả năng tính toán và lưu trữ) các máy chủ ảo của bạn khi yêu cầu thay đổi.
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/49647864/image2022-11-14_13-49-32.png?version=1&#x26;modificationDate=1668408572000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
