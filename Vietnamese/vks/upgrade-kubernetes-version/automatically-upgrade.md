@@ -4,7 +4,7 @@
 
 **Automatically Upgrade Cluster trên VKS** là quá trình hệ thống VKS tự động nâng cấp cluster theo upgrade window mà bạn chỉ định, hoặc tự động nâng cấp nhằm cải thiện hiệu suất, bảo mật và khả năng tương thích của hệ thống. Hiện tại, VKS cung cấp 2 loại tự động nâng cấp bao gồm:
 
-**1. Required Upgrades (Nâng cấp bắt buộc)**
+### **1. Required Upgrades (Nâng cấp bắt buộc)**
 
 * **Mục đích**: Các nâng cấp bắt buộc nhằm bảo vệ cụm khỏi các rủi ro liên quan đến bảo mật, ổn định và việc sử dụng các phiên bản Kubernetes không còn được hỗ trợ.
 * **Cụ thể**: hệ thống VKS sẽ thực hiện upgrade cluster trong các trường hợp:
@@ -14,7 +14,7 @@
 * **Thời gian thực hiện**:
   * Các nâng cấp này sẽ được hệ thống VKS tự động thực hiện <mark style="color:red;">**sau 8 giờ tối vào bất kỳ ngày nào**</mark> nếu cần, nhằm giảm thiểu ảnh hưởng đến bạn. Chúng tôi sẽ thông báo cho bạn về các nâng cấp này trong thời gian sớm nhất.
 
-**2. Regular Upgrades (Nâng cấp thông thường)**
+### **2. Regular Upgrades (Nâng cấp thông thường)**
 
 * **Mục đích**: Các nâng cấp định kỳ theo **upgrade window** mà bạn chỉ định nhằm giúp cluster của bạn luôn cập nhật với các phiên bản mới nhất, bao gồm cả **minor version** và **patch version**.
 * **Cụ thể**:&#x20;
