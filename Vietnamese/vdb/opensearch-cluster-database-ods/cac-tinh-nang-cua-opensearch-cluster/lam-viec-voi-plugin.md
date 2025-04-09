@@ -1,6 +1,6 @@
 # Làm việc với Plugin
 
-vDB OpenSearch hỗ trợ các plugin hỗ trợ bạn mở rộng sử dụng OpenSearch Cluster cho nhiều usecase khác nhau, ví dụ plugin kNN có thể được sử dụng để ứng dụng trong **tìm kiếm vector** và **machine learning,...**
+vDB OpenSearch hỗ trợ bạn sử dụng thêm các plugins để mở rộng OpenSearch Cluster cho nhiều usecase khác nhau, ví dụ plugin kNN có thể được sử dụng để ứng dụng trong **tìm kiếm vector** và **machine learning,...**
 
 ## **Plugin Được Cài Sẵn Khi Khởi Tạo Cluster**
 

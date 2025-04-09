@@ -290,7 +290,7 @@ Nếu bạn gặp bất kỳ vấn đề nào sau khi cập nhật, vui lòng li
 
 ## April 17, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
 
-**Chúng tôi vô cùng giới thiệu bản cập nhật mới cho dịch vụ VKS, mang đến cho bạn trải nghiệm quản lý Kubernetes mạnh mẽ và hiệu quả hơn bao giờ hết!**
+**VNG Cloud vừa ra phiên bản đầu tiên cho dịch vụ VKS (VNGCloud Kubernetes Service), mang đến cho bạn trải nghiệm quản lý Kubernetes mạnh mẽ và hiệu quả hơn bao giờ hết!**
 
 **Điểm nổi bật:**
 
