@@ -9,7 +9,7 @@
 **Bước 3:** Tại màn hình khởi tạo OpenSearch Cluster, bạn cần nhập/ chọn:
 
 * **Basic configuration:**
-  * **OpenSearch Cluster name:** tên gợi nhớ của cluster. Tên cluster cần dài từ 5 tới 50 ký tự và có thể bao gồm các ký tự a-z, A-Z, 0-9, '-', '\_'
+  * **OpenSearch Cluster name:** tên gợi nhớ của cluster. Tên cluster cần dài từ 5 tới 50 ký tự và có thể bao gồm các ký tự a-z, A-Z, 0-9, '-'.
   * **Tag:** bạn có thể thêm các tag để đánh dầu cluster theo nhu cầu.
 
 <figure><img src="../../../.gitbook/assets/image (952).png" alt=""><figcaption></figcaption></figure>
@@ -44,7 +44,7 @@
 <figure><img src="../../../.gitbook/assets/image (957).png" alt=""><figcaption></figcaption></figure>
 
 * **Plugins**
-  * **Plugin:** hiện tại, vDB đã tự động cài đặt trong OpenSearch Cluster của bạn các plugin phổ biến trong mục **Bundled Plugins**, ví dụ kNN. Bạn có thể tham khảo danh sách các plugin mặc định có sẵn tại [đây](broken-reference). Ngoài ra, bạn cũng có thể lựa chọn cài đặt thêm các plugin khác bằng cách chọn plugin tại mục **Additional Plugins**. Tham khảo danh sách các plugin có thể cài đặt theo lựa chọn của bạn tại [đây](broken-reference).
+  * **Plugin:** hiện tại, vDB đã tự động cài đặt trong OpenSearch Cluster của bạn các plugin phổ biến trong mục **Bundled Plugins**, ví dụ kNN. Bạn có thể tham khảo danh sách các plugin mặc định có sẵn tại [đây](lam-viec-voi-plugin.md). Ngoài ra, bạn cũng có thể lựa chọn cài đặt thêm các plugin khác bằng cách chọn plugin tại mục **Additional Plugins**. Tham khảo danh sách các plugin có thể cài đặt theo lựa chọn của bạn tại [đây](lam-viec-voi-plugin.md).
 
 <figure><img src="../../../.gitbook/assets/image (958).png" alt=""><figcaption></figcaption></figure>
 

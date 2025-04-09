@@ -43,7 +43,7 @@ Sau khi một Configuration Group được tạo, bạn có thể chỉnh sửa 
 
 **Bước 3:** Chọn/Nhập giá trị tham số theo **Allowed Values** và **Data Type** quy định.
 
-**Bước 4:** Chọn **Preview and Save** sau đó kiêm tra lại thay đổi bạn đã update
+**Bước 4:** Chọn **Preview and Save** sau đó kiểm tra lại thay đổi bạn đã update
 
 **Bước 5:** Chọn đồng ý việc **Edit parameter** có thể gây ảnh hưởng tới DB của bạn
 
@@ -51,7 +51,7 @@ Sau khi một Configuration Group được tạo, bạn có thể chỉnh sửa 
 
 ### **Gắn Configuration Group vào OpenSearch Cluster**
 
-**Bước 1: Chọn biêu tượng** <img src="../../../.gitbook/assets/image (2) (1).png" alt="" data-size="line">tại cluster bạn muốn thay đổi configuration group
+**Bước 1: Chọn** biểu tượng <img src="../../../.gitbook/assets/image (2) (1).png" alt="" data-size="line">tại cluster bạn muốn thay đổi configuration group
 
 **Bước 2:** Chọn **Edit Configuration group**
 

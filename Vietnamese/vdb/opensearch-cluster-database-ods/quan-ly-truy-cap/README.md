@@ -41,8 +41,6 @@ Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông t
 7. Chọn **Copy** để sao chép mật khẩu. Bạn bắt buộc phải thu thập được thông tin này để có thể truy cập vào vDB OpenSearch sử dụng IAM User Account.
 8. Chọn **Create User Account.**
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
-
 ***
 
 #### **Khởi tạo policy cho IAM user account**
@@ -62,7 +60,7 @@ Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông t
    2. Chọn **All vdb-opensearch actions** nếu muốn tạo policy có quyền thực hiện tất cả các hành động trên vDB OpenSearch. Chi tiết ý nghĩa của các action vui lòng tham khảo tại [Tính năng, tài nguyên OpenSearch Cluster và quyền truy cập](tinh-nang-tai-nguyen-opensearch-cluster-va-quyen-truy-cap.md).
 8. Chọn **Resources**: Chọn **All resources** nếu muốn quyền truy cập đã chọn bên trên được phép truy cập vào mọi tài nguyên trên tài khoản SSO account của bạn.
 
-Aau khi bạn thực hiện 8 bước bên trên, policy cho opensearch cluster đã được khởi tạo. Tiếp theo, bạn hãy gán nó vào IAM User Account.
+Sau khi bạn thực hiện 8 bước bên trên, policy cho opensearch cluster đã được khởi tạo. Tiếp theo, bạn hãy gán nó vào IAM User Account.
 
 <figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
