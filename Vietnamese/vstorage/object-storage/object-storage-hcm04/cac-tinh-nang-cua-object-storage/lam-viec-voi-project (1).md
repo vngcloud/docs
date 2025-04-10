@@ -2,7 +2,7 @@
 
 ## Tổng quan
 
-Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên VNG Cloud. **Với Region HCM04, tại  một thời điểm&#x20;**<mark style="color:red;">**bạn chỉ có thể sở hữu một Project**</mark>**&#x20;và sử dụng chúng để tổ chức lưu trữ dữ liệu của bạn.**
+Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên VNG Cloud. **Với Region HAN02, tại  một thời điểm&#x20;**<mark style="color:red;">**bạn có thể sở hữu tối đa 10 Project**</mark>**&#x20;và sử dụng chúng để tổ chức lưu trữ dữ liệu của bạn.**
 
 ***
 
@@ -41,14 +41,16 @@ Các quy tắc sau áp dụng cho việc đặt tên project trong vStorage:
 Thực hiện tạo project theo các bước bên dưới:
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [đây](https://register.vngcloud.vn/signup).
-2. Chọn **Region HCM04.**
+2. Chọn **Region HAN02.**
 3. Chọn **Tạo một Project.**
-4. Nhập **Project Name** và chọn **Project type** (gói) lưu trữ phù hợp theo nhu cầu. Hiện tại ở region HCM04, chúng tôi sẽ cung cấp cho bạn gói lưu trữ **Instant Archive Type**. Với gói lưu trữ này, bạn sẽ có lượng Traffic miễn phí bằng 2 lần lượng Quota mà bạn chọn sử dụng và lượng Request hoàn toàn miễn phí. Để biết thêm thông tin chi tiết về cách tính giá, vui lòng tham khảo thêm tại [Cách tính phí.](../cach-tinh-phi.md)
+4. Nhập **Project Name** và chọn **Project type** (gói) lưu trữ phù hợp theo nhu cầu. Hiện tại ở region HAN02, chúng tôi sẽ cung cấp cho bạn 2 loại gói lưu trữ **Gold** và **Instant Archive**. Để biết thêm thông tin chi tiết về cách tính giá của các gói lưu trữ, vui lòng tham khảo thêm tại Cách tính phí.
 5. Chọn **Quota** (dung lượng lưu trữ) mà bạn mong muốn.
 6. Chọn **Period** và chọn/bỏ chọn **Auto-renew** theo nhu cầu của bạn.
 7. Thực hiện các bước **Thanh toán** giỏ hàng và **Project** của bạn sẽ được khởi tạo.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (983).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (984).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -59,16 +61,16 @@ Bạn có thể xem và sử dụng các thuộc tính cho project bao gồm th�
 Để xem các thuộc tính cho một project, bạn có thể:
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn/storage](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn **Region: HCM04**
+2. Chọn **Region: HAN02**
 3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (601).png" alt="" data-size="line">tại **project** bạn muốn xem chi tiết.
 4. Trên trang hiển thị thông tin chi tiết **project**, bạn có thể xem và sử dụng các thuộc tính cho project
 
 * **Information**: Cung cấp các thông tin chung của project như Tổng quota, Tổng usage, Project type, Account URL, Project Owner.&#x20;
-* **S3 key**: Cung cấp thông tin các cặp S3 key được khởi tạo cho project từ vStorage Portal. Để khởi tạo S3 key, vui lòng tham khảo thêm tại đây.
+* **Identity and Access Management**: Cung cấp thông tin IAM User Account, Service Account cũng như S3 key để bạn có thể phân quyền và làm việc với vStorage.
 * **History**: Cung cấp thông tin lịch sử tác động tới project bao gồm loại hành động, trạng thái hành động, thời gian hành động xảy ra và mô tả chi tiết hành động nếu có.
 * **Connection Information**: Cung cấp các câu lệnh và tệp tin cấu hình để kết nối project với S3.
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (994).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -85,9 +87,10 @@ Bạn đã khởi tạo project với lượng quota ban đầu phù hợp với
 5. Chọn **Thanh toán** sau khi kiểm tra giỏ hàng và hình thức thanh toán.
 6. Chọn **Tiếp tục thanh toán** và thực hiện thanh toán sau khi chọn phương thức thanh toán phù hợp.
 
-Sau khi bạn thực hiện thành công 6 bước trên, giá trị tổng **quota** mới sau khi thay đổi sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
+Sau khi bạn thực hiện thành công 6 bước trên, giá trị tổng **quota** mới sau khi thay đổi sẽ được cập nhật trên thông tin chung của project mà bạn chọn.\
 
-<figure><img src="../../../../.gitbook/assets/image (603).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (995).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -332,4 +335,4 @@ Tại thời điểm hết hạn sử dụng ví POC, chúng tôi sẽ:
 
 ## Thực hiện trial project
 
-Hiện tại, với region HCM04 chúng tôi chưa hỗ trợ bạn có thể thực hiện tạo project trial. Tính năng này sẽ được chúng tôi phát triển trong các version tiếp theo.
+Hiện tại, với region HAN02 chúng tôi chưa hỗ trợ bạn có thể thực hiện tạo project trial. Tính năng này sẽ được chúng tôi phát triển trong các version tiếp theo.

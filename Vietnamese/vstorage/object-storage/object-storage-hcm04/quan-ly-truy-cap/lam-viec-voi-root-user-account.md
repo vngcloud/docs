@@ -48,7 +48,7 @@ Mặc định, **Root User Account** sẽ có **toàn quyền** làm việc trê
 
 <summary>Bucket ACLs</summary>
 
-Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho 1 hoặc tất cả Root user khác. (Root user được cấp quyền truy cập qua ACLS phải là tài khoản được cấp quyền trên hệ thống VNG Cloud của chúng tôi). Để biết thêm thông tin, hãy xem tại [Sử dụng tính năng ACLs.](../../object-storage-hcm04-1/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-acls.md)
+Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho 1 hoặc tất cả Root user khác. (Root user được cấp quyền truy cập qua ACLS phải là tài khoản được cấp quyền trên hệ thống VNG Cloud của chúng tôi). Để biết thêm thông tin, hãy xem tại [Sử dụng tính năng ACLs.](../cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-acls.md)
 
 </details>
 
@@ -56,6 +56,6 @@ Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho 1 hoặc t�
 
 <summary>Bucket Policy</summary>
 
-Bạn có thể quản lý quyền truy cập vào bucket của bạn thông qua các quy tắc dạng JSON. Để biết thêm thông tin, hãy xem tại [Sử dụng tính năng Bucket Policy.](../../object-storage-hcm04-1/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-bucket-policy.md)
+Bạn có thể quản lý quyền truy cập vào bucket của bạn thông qua các quy tắc dạng JSON. Để biết thêm thông tin, hãy xem tại [Sử dụng tính năng Bucket Policy.](../cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-bucket-policy.md)
 
 </details>
