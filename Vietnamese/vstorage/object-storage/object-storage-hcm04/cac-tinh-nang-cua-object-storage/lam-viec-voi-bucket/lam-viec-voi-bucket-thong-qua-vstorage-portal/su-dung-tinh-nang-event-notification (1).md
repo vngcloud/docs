@@ -1,6 +1,6 @@
 # Sử dụng tính năng Event notification
 
-**Event Notification** trong vStorage là tính năng cho phép bạn nhận thông báo về các sự kiện xảy ra trong bucket dưới dạng tệp tin JSON, chẳng hạn như khi một object được upload, delete hay ghi đè.
+**vent Notification** trong vStorage là tính năng cho phép bạn nhận thông báo về các sự kiện xảy ra trong bucket dưới dạng tệp tin JSON, chẳng hạn như khi một object được upload, delete hay ghi đè.
 
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 
@@ -8,7 +8,7 @@
 
 3\. Chọn biểu tượng **Action** và chọn **Configure event notification.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1023).png" alt=""><figcaption></figcaption></figure>
 
 4\. Chọn **Create an Event notification**.
 
@@ -34,9 +34,11 @@
     * Cấu trúc thư mục và tên file: `[Bucket]/[YYYY]/[MM]/[DD]/[YYYY]-[MM]-[DD]-[hh]-[mm]`.
     * Ví dụ: `bucketB/2023/03/01/2023-03-01-21-32`&#x20;
 
-<figure><img src="../../../../../../.gitbook/assets/image (8) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1024).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (9) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1025).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/image (1026).png" alt=""><figcaption></figcaption></figure>
 
 5\. Chọn **Create event notification** để khởi tạo event này.
 

@@ -20,7 +20,7 @@ type = s3
 provider = Other
 access_key_id = <<Lấy thông tin từ vStorage Portal>>
 secret_access_key = <<Lấy thông tin từ vStorage Portal>>
-endpoint = https://hcm04.vstorage.vngcloud.vn
+endpoint = https://han02.vstorage.vngcloud.vn
 ```
 
 ## 3. Thực hiện mount

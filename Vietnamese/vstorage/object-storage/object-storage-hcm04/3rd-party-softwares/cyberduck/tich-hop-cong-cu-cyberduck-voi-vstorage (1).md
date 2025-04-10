@@ -24,11 +24,9 @@
 
 4\. Nhập thông tin kết nối bao gồm:
 
-* **Protocol**: HCM04. Khi bạn chọn phương thức này, các thông tin Server, Port, URL sẽ tự động được ghi nhận và hiển thị.
+* **Protocol**: HAN02. Khi bạn chọn phương thức này, các thông tin Server, Port, URL sẽ tự động được ghi nhận và hiển thị.
 * **Access key**: nhập S3 access key mà bạn tạo từ vStorage cũng chính là thông tin access key lấy từ bước 4 bên trên.
 * **Secret key**: nhập S3 access key mà bạn tạo từ vStorage cũng chính là thông tin access key lấy từ bước 4 bên trên.
-
-<figure><img src="../../../../../.gitbook/assets/image (871).png" alt=""><figcaption></figcaption></figure>
 
 5\. Chọn **Connect**.
 

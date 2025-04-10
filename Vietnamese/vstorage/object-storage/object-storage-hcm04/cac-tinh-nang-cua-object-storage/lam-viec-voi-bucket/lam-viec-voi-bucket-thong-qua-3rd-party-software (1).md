@@ -13,23 +13,27 @@ Sau khi bạn đã thực hiện khởi tạo project và khởi tạo S3 key th
 1. Tải công cụ người dùng S3 Browser tại đây [https://s3browser.com/download.aspx](https://s3browser.com/download.aspx).
 2. Mở ứng dụng **S3 Browser.** Chọn thư mục **Account, sau đó chọn Add new account**
 
-<figure><img src="../../../../../.gitbook/assets/image (585).png" alt="" width="443"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (585).png" alt="" width="295"><figcaption></figcaption></figure>
+
+
 
 3. Màn hình Add New Account hiển thị, lúc này bạn nhập các thông tin như sau:
 
-* **Display name:** Tên hiển thị của account. Ví dụ: Demo\_HCM04
+* **Display name:** Tên hiển thị của account. Ví dụ: Demo\_HAN02
 * **Account type**: Chọn **S3 Compatible Storage.**
-* **REST Endpoint**: Đường dẫn đến vstorage, đối với Region HCM04 thì đường dẫn là [hcm04.vstorage.vngcloud.vn](http://hcm01.vstorage.vngcloud.vn/)
-* **Access Key ID & Secret Access Key:** Là cặp S3 key bạn đã thực hiện generate tại bước 2 trước đó.
+* **REST Endpoint**: Đường dẫn đến vstorage, đối với Region HAN02 thì đường dẫn là han02.vstorage.vngcloud.vn
+* **Access Key ID & Secret Access Key:** Là cặp S3 key bạn đã thực hiện generate tại bước 4 trước đó.
 
 4. Chọn option **Use Secure transfer (SSL/TLS)** vì vStorage chỉ hỗ trợ kênh truyền đã được mã hoá (HTTPS, port 443) để đảm bảo an toàn dữ liệu, vStorage hiện tại không hỗ trợ kênh truyền không mã hoá (HTTP, port 80).
 5. Chọn **Add new account.**
 
-<figure><img src="../../../../../.gitbook/assets/image (587).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (992).png" alt="" width="375"><figcaption></figcaption></figure>
 
-6. Khi kết nối thành công, màn hình S3 Browser sẽ hiển thị như sau:
+6. Khi kết nối thành công, màn hình S3 Browser sẽ hiển thị như sau:&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (588).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (993).png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ## Sử dụng các tính năng trên S3 Browser
 
@@ -65,6 +69,33 @@ Tiếp theo đây là các hướng dẫn cho các tính năng nâng cao bạn c
 
 <figure><img src="../../../../../.gitbook/assets/image (590).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+**Chú ý:**&#x20;
+
+* Khác với farm HCM04, trên Farm HAN02, nếu bạn muốn chia sẻ quyền truy cập công khai (public) vào một bucket – nghĩa là cho phép **tất cả mọi người (everyone)** đều có thể truy cập (ví dụ để tải file, xem ảnh, v.v.) – thì **bắt buộc phải sử dụng Bucket Policy** để định nghĩa rõ quyền truy cập đó. Ví dụ một Bucket Policy để cho phép **read object** (đọc file) công khai:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::your-bucket-name/*"
+    }
+  ]
+}
+
+```
+
+Trong đó:
+
+* `"Principal": "*"` nghĩa là mọi người (ai cũng được).
+* `"Action": "s3:GetObject"` nghĩa là cho phép hành động tải đối tượng (file).
+* `"Resource": "arn:aws:s3:::your-bucket-name/*"` áp dụng cho tất cả object trong bucket.
+{% endhint %}
+
 ### **SSE-S3**
 
 SSE-S3 (Server-Side Encryption with S3 Managed Keys) là tính năng mã hóa dữ liệu phía máy chủ do Amazon S3 cung cấp. Với SSE-S3, dữ liệu của bạn được mã hóa tự động khi được tải lên S3 và được giải mã tự động khi bạn tải xuống. **Để thực hiện được tính năng này trên S3 Browser, bạn cần sử dụng S3 Browser phiên bản Pro. Nếu ứng dụng của bạn hiện không hỗ trợ cho việc thực hiện tính năng, vui lòng gửi yêu cầu sử dụng tính năng thông qua ticket tới VNGCloud.** Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-server-side-encryption.aspx](https://s3browser.com/amazon-s3-server-side-encryption.aspx)
@@ -75,12 +106,7 @@ SSE-S3 (Server-Side Encryption with S3 Managed Keys) là tính năng mã hóa d�
 
 ### **Object Locked**
 
-**Object Lock** là tính năng giúp bảo vệ dữ liệu của bạn khỏi bị xóa hoặc ghi đè trong một khoảng thời gian cố định hoặc vô thời hạn. Tính năng này sử dụng model **WORM** (Write Once, Read Many), nghĩa là sau khi một object được tải lên S3 và được locked, object đó không thể bị xóa hoặc thay đổi bởi bất kỳ ai, kể cả người dùng root. Hiện tại, trên region HCM04, chúng tôi đã hỗ trợ bạn thiết lập Object Locked ở 2 mode Compliance, Legal Hold và chưa hỗ trợ mode Governance. Nếu bạn sử dụng 3rd party software để thiết lập Object Locked ở mode Governance này thì S3 key được tạo ra sẽ có full quyền xóa các object version trên bucket của bạn. Cụ thể:
-
-* **Retention mode**: ngăn chặn việc xóa và ghi đè object version trong một khoảng thời gian nhất định. Trong Retention period sẽ có 2 mode:
-  * **Compliance mode (đã hỗ trợ)**: bất kỳ người dùng hoặc admin,…nào cũng không thể ghi đè object version được locked. Khi hết thời gian được thiết lập trước, người dùng có thể thực hiện xóa hoặc ghi đè object bình thường.
-  * **Governance mode (coming soon)**: chỉ những người dùng có quyền đặc biệt (có quyền ByPassGovernance), chẳng hạn như người dùng root hoặc S3 Key không bật Restriction by IAM mới có thể xóa hoặc ghi đè object.
-* **Legal Hold:** ngăn chặn việc xóa và ghi đè object version vô thời hạn tới khi nào người dùng disable. Mode này hoạt động độc lập với Retention period. Người dùng có quyền PutObjectLegalHold có thể thực hiện thêm hoặc remove legal hold cho object.
+**Object Lock** là tính năng giúp bảo vệ dữ liệu của bạn khỏi bị xóa hoặc ghi đè trong một khoảng thời gian cố định hoặc vô thời hạn. Tính năng này sử dụng model **WORM** (Write Once, Read Many), nghĩa là sau khi một object được tải lên S3 và được locked, object đó không thể bị xóa hoặc thay đổi bởi bất kỳ ai, kể cả người dùng root.
 
 Để thiết lập Object Locked cho một bucket bằng S3 Browser, khi khởi tạo một bucket mới, bạn cần chọn phương án **Enable S3 Objected Lock.**
 
@@ -108,7 +134,7 @@ Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá
 
 ### **Lifecycle transit**
 
-Hiện tại trên region HCM04 chúng tôi chỉ hỗ trợ bạn tạo Project với Storage Class **Instant Archive Type**. Do chỉ có 1 storage class duy nhất nên hiện tại tính năng Lifecycle transit sẽ không hoạt động.
+Hiện tại trên farm HAN02, chúng tôi chưa hỗ trợ tính năng transit.
 
 ### **CORS**
 

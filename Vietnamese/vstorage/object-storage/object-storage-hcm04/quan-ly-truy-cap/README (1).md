@@ -5,9 +5,11 @@ Trên region HCM04, bạn có thể sử dụng 4 loại tài khoản để truy
 * **Root User Account:** Là tài khoản [khởi tạo đầu tiên](https://register.vngcloud.vn/signup) để truy cập vào VNG Cloud với đầy đủ quyền truy cập vào tất cả dịch vụ tài nguyên trên VNG Cloud.
 * **IAM User Account, Service Account:** Là tài khoản được tạo ra từ tài khoản Root user account duy nhất với những quyền truy cập phụ thuộc vào chính sách cho phép truy cập được thiết lập từ Root user account.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (864).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1040).png" alt=""><figcaption></figcaption></figure>
 
 * **S3 keys:** Là cặp s3 key có access key và secret key được vStorage tích hợp để có tính tương thích với các client tool của S3 như s3cmd, s3 SDK,...
+
+<figure><img src="../../../../.gitbook/assets/image (1041).png" alt=""><figcaption></figcaption></figure>
 
 Tham khảo bảng bên dưới để nắm được cách hoạt động tổng quan của các tài khoản trên vStorage:&#x20;
 
