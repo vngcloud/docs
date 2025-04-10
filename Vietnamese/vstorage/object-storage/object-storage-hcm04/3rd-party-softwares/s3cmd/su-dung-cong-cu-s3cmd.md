@@ -14,7 +14,7 @@
 
 > $ s3cmd la
 
-**Tải lên tệp tin vào một bucket** &#x20;
+**Tải lên tệp tin vào một bucket**
 
 > s3cmd put FILE \[FILE...] s3://BUCKET\[/PREFIX]
 
@@ -36,7 +36,7 @@
 
 > s3cmd signurl s3://BUCKET/OBJECT \<expiry\_epoch|+expiry\_offset>
 
-**Liệt kê các multipart upload chưa hoàn thành**&#x20;
+**Liệt kê các multipart upload chưa hoàn thành**
 
 > s3cmd multipart s3://BUCKET \[Id]
 
@@ -55,12 +55,11 @@
 
 > s3cmd multipart s3://BUCKET
 
-* Xóa các incomplete segment (segment rác) cho các incomplete upload id được liệt kê ở câu lệnh trên:\
-
+* Xóa các incomplete segment (segment rác) cho các incomplete upload id được liệt kê ở câu lệnh trên:\\
 
 > s3cmd abortmp s3://BUCKET/OBJECT Id
 >
 > Ví dụ: s3cmd abortmp s3://s3cmd-bucket/2gb-video.mp4 MWRmNjBhNWUtZGMwNy00YjNiLThhOTgtMWFmYmIxYzI0OTE
 
-Các segment rác của tệp tin chưa được tải lên thành công sẽ được dọn sạch. Chi tiết tham khảo tại [đây.](https://s3tools.org/usage)&#x20;
+Các segment rác của tệp tin chưa được tải lên thành công sẽ được dọn sạch. Chi tiết tham khảo tại [đây.](https://s3tools.org/usage)
 {% endhint %}

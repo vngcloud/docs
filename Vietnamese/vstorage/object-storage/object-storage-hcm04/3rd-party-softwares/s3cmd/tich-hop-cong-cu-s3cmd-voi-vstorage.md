@@ -1,6 +1,6 @@
 # Tích hợp công cụ S3cmd với vStorage
 
-Để xem hướng dẫn tích hợp công cụ S3cmd với vStorage, bạn có thể thực hiện qua vStorage Portal theo hướng dẫn bên dưới:&#x20;
+Để xem hướng dẫn tích hợp công cụ S3cmd với vStorage, bạn có thể thực hiện qua vStorage Portal theo hướng dẫn bên dưới:
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 2. Chọn thư mục **Integration.**
@@ -12,7 +12,7 @@
 5. Sau khi hoàn tất chọn cấu hình **Authentication**, chọn **Cấu hình S3cmd** để chuyển tới màn hình **Configuration**. Bạn luôn có thể quay lại đây để thay đổi thông tin **Cấp quyền** của mình, sau đó chọn lại **Cấu hình S3cmd** để cập nhật cách sử dụng theo thông số mới của bạn. Bạn có thể xem hướng dẫn cách cài đặt, cấu hình S3cmd ngay trên màn hình này. Chi tiết tham khảo thêm tại: [Tích hợp vStorage.](https://vstorage.console.vngcloud.vn/integration/integration)
 6. Chọn **Download Configuration file.**
 
-#### **Nếu bạn sử dụng hệ điều hành Windows, tiếp tục thực hiện theo các bước bên dưới để hoàn thành việc tích hợp S3cmd với vStorage:**  <a href="#tichhopcongcus3cmdvoivstorage-neubansudunghedieuhanhwindows-tieptucthuchientheocacbuocbenduoidehoant" id="tichhopcongcus3cmdvoivstorage-neubansudunghedieuhanhwindows-tieptucthuchientheocacbuocbenduoidehoant"></a>
+#### **Nếu bạn sử dụng hệ điều hành Windows, tiếp tục thực hiện theo các bước bên dưới để hoàn thành việc tích hợp S3cmd với vStorage:** <a href="#tichhopcongcus3cmdvoivstorage-neubansudunghedieuhanhwindows-tieptucthuchientheocacbuocbenduoidehoant" id="tichhopcongcus3cmdvoivstorage-neubansudunghedieuhanhwindows-tieptucthuchientheocacbuocbenduoidehoant"></a>
 
 1. Lưu tệp tin cấu hình **s3cnf.s3cfg** tải về vào thư mục **C:\Users\\\[User]\AppData\Roaming.**
 2. Đổi tên tệp tin từ **s3cnf.s3cfg** thành **s3cmd.ini**

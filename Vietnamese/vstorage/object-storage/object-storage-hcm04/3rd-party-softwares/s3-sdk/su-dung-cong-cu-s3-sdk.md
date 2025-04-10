@@ -13,7 +13,7 @@
 > System.out.println(os.getKey());\
 > }
 
-**Tải lên tệp tin vào một bucket** &#x20;
+**Tải lên tệp tin vào một bucket**
 
 > s3Client.putObject(\<CONTAINER-NAME>, \<KEY-NAME>, new File(\<PATH-TO-LOCAL-FILE>));
 
@@ -27,7 +27,7 @@
 >
 > if (CollectionUtils.isNotEmpty(objectListing.getObjectSummaries())) {\
 > String\[] objkeyArr = objectListing.getObjectSummaries().stream().map(S3ObjectSummary::getKey)\
-> &#x20; .toArray(String\[]::new);\
+> .toArray(String\[]::new);\
 > DeleteObjectsRequest delObjReq = new DeleteObjectsRequest(bucket).withKeys(objkeyArr);\
 > s3Client.deleteObjects(delObjReq);\
 > }

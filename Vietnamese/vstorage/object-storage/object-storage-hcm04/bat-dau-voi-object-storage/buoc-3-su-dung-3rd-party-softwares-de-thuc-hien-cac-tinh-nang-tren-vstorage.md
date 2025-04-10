@@ -1,4 +1,4 @@
-# Bước 4: Sử dụng 3rd party softwares để thực hiện các tính năng trên vStorage
+# Bước 6: Sử dụng 3rd party softwares để thực hiện các tính năng trên vStorage
 
 ## Các usecase cơ bản
 
@@ -32,6 +32,33 @@ Tiếp theo đây là các hướng dẫn cho các tính năng nâng cao bạn c
 
 <figure><img src="../../../../.gitbook/assets/image (590).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+**Chú ý:**&#x20;
+
+* Khác với farm HCM04, trên Farm HAN02, nếu bạn muốn chia sẻ quyền truy cập công khai (public) vào một bucket – nghĩa là cho phép **tất cả mọi người (everyone)** đều có thể truy cập (ví dụ để tải file, xem ảnh, v.v.) – thì **bắt buộc phải sử dụng Bucket Policy** để định nghĩa rõ quyền truy cập đó. Ví dụ một Bucket Policy để cho phép **read object** (đọc file) công khai:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::your-bucket-name/*"
+    }
+  ]
+}
+
+```
+
+Trong đó:
+
+* `"Principal": "*"` nghĩa là mọi người (ai cũng được).
+* `"Action": "s3:GetObject"` nghĩa là cho phép hành động tải đối tượng (file).
+* `"Resource": "arn:aws:s3:::your-bucket-name/*"` áp dụng cho tất cả object trong bucket.
+{% endhint %}
+
 ### **SSE-S3**
 
 SSE-S3 (Server-Side Encryption with S3 Managed Keys) là tính năng mã hóa dữ liệu phía máy chủ do Amazon S3 cung cấp. Với SSE-S3, dữ liệu của bạn được mã hóa tự động khi được tải lên S3 và được giải mã tự động khi bạn tải xuống. **Để thực hiện được tính năng này trên S3 Browser, bạn cần sử dụng S3 Browser phiên bản Pro. Nếu ứng dụng của bạn hiện không hỗ trợ cho việc thực hiện tính năng, vui lòng gửi yêu cầu sử dụng tính năng thông qua ticket tới VNGCloud.** Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-server-side-encryption.aspx](https://s3browser.com/amazon-s3-server-side-encryption.aspx)
@@ -44,7 +71,7 @@ SSE-S3 (Server-Side Encryption with S3 Managed Keys) là tính năng mã hóa d�
 
 **Object Lock** là tính năng giúp bảo vệ dữ liệu của bạn khỏi bị xóa hoặc ghi đè trong một khoảng thời gian cố định hoặc vô thời hạn. Tính năng này sử dụng model **WORM** (Write Once, Read Many), nghĩa là sau khi một object được tải lên S3 và được locked, object đó không thể bị xóa hoặc thay đổi bởi bất kỳ ai, kể cả người dùng root.
 
-Để thiết lập Object Locked cho một bucket bằng S3 Browser, khi khởi tạo một bucket mới, bạn cần chọn phương án **Enable S3 Objected Lock.**&#x20;
+Để thiết lập Object Locked cho một bucket bằng S3 Browser, khi khởi tạo một bucket mới, bạn cần chọn phương án **Enable S3 Objected Lock.**
 
 <figure><img src="../../../../.gitbook/assets/image (623).png" alt=""><figcaption></figcaption></figure>
 
@@ -70,7 +97,7 @@ Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá
 
 ### **Lifecycle transit**
 
-Hiện tại trên region HCM04 chúng tôi chỉ hỗ trợ bạn tạo Project với Storage Class **Instant Archive Type**. Do chỉ có 1 storage class duy nhất nên hiện tại tính năng Lifecycle transit sẽ không hoạt động.&#x20;
+Hiện tại trên farm HAN02, chúng tôi chưa hỗ trợ tính năng transit.
 
 ### **CORS**
 

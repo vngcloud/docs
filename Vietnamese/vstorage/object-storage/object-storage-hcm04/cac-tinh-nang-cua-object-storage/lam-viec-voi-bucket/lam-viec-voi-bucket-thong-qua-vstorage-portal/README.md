@@ -20,7 +20,7 @@ Trước khi có thể lưu trữ dữ liệu trong vStorage, bạn phải tạo
 * Khi bạn chọn **Enable Object Locked**, chúng tôi sẽ tự động bật tính năng **Object version** cho bucket của bạn.
 {% endhint %}
 
-<figure><img src="../../../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (996).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -39,12 +39,12 @@ Sau khi tạo bucket và tải lên object vào bucket đó. Bạn có thể xem
 4\. Trên trang hiển thị thông tin chi tiết **bucket**, bạn có thể xem và sử dụng các tính năng mà chúng tôi cung cấp cho bucket bao gồm:
 
 * **Thông tin chung**: Cung cấp các thông tin chung của bucket như Name, Owner, Created date, Versioning, Encryption, Object Lock.
-* **ACLs**: Cung cấp thông tin quản lý truy cập Read/Write/Read+Write của một hay nhiều tài khoản Root đang có trên hệ thống được cấp phép truy cập trên bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại [Sử dụng tính năng ACLs](su-dung-tinh-nang-acls.md).
-* **CORS**: Cung cấp thông tin các đường dẫn được phép truy cập vào tài nguyên của bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại [Sử dụng tính năng CORS.](su-dung-tinh-nang-cors.md)
-* **Lifecycle**: Cung cấp thông tin các lifecycle được thiết lập cho bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại[ Sử dụng tính năng lifecycle.](su-dung-tinh-nang-lifecycle.md)
-* **Event notification**: Cung cấp thông tin các event notification được thiết lập cho bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại [Sử dụng tính năng Event notification.](su-dung-tinh-nang-event-notification.md)
+* **ACLs**: Cung cấp thông tin quản lý truy cập Read/Write/Read+Write của một hay nhiều tài khoản Root đang có trên hệ thống được cấp phép truy cập trên bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại Sử dụng tính năng ACLs.
+* **CORS**: Cung cấp thông tin các đường dẫn được phép truy cập vào tài nguyên của bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại Sử dụng tính năng CORS.
+* **Lifecycle**: Cung cấp thông tin các lifecycle được thiết lập cho bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại Sử dụng tính năng lifecycle.
+* **Event notification**: Cung cấp thông tin các event notification được thiết lập cho bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại Sử dụng tính năng Event notification.
 
-<figure><img src="../../../../../../.gitbook/assets/image (798).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (997).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -60,11 +60,11 @@ Sau khi tạo bucket và tải lên object vào bucket đó. Bạn có thể xem
 
 3\. Chọn biểu tượng **Action** và chọn **Configure encryption**
 
-<figure><img src="../../../../../../.gitbook/assets/image (799).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (998).png" alt=""><figcaption></figcaption></figure>
 
 4\. Trên trang xác nhận sử dụng encryption SSE-S3, vui lòng chọn **Enable ecryption.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (999).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -78,6 +78,6 @@ Sau khi tạo bucket và tải lên object vào bucket đó. Bạn có thể xem
 
 3\. Chọn biểu tượng **Action** và chọn **Delete**
 
-<figure><img src="../../../../../../.gitbook/assets/image (800).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1000).png" alt=""><figcaption></figcaption></figure>
 
 Sau khi chọn Xóa, hệ thống sẽ tự động chuyển ra màn hình chính, nếu bạn thấy bucket vừa thực hiện biến mất khỏi danh sách thì bạn đã xoá thành công. Bucket lúc này đã được xóa vĩnh viễn khỏi hệ thống và bạn không thể khôi phục bucket cũng như các object được lưu trữ trong bucket. Vì vậy hãy đảm bảo kiểm tra dữ liệu của bạn trước khi thực hiện thao tác này.&#x20;

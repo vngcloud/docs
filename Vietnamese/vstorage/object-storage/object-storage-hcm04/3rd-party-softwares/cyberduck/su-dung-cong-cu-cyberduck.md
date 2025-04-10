@@ -11,7 +11,7 @@
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59805342/image2023-7-14_14-15-57.png?version=1&#x26;modificationDate=1689318958000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-**Tải lên tệp tin vào một bucket** &#x20;
+**Tải lên tệp tin vào một bucket**
 
 1. Tại màn hình chính của **Cyberduck**, chọn **bucket** mà bạn muốn tải tệp tin lên.
 2. Chọn **Upload**.
@@ -40,12 +40,12 @@
 
 <figure><img src="../../../../../.gitbook/assets/image (534).png" alt=""><figcaption></figcaption></figure>
 
-3. Chọn một trong các phương thức cho **Presign URL** mà bạn mong muốn.&#x20;
+3. Chọn một trong các phương thức cho **Presign URL** mà bạn mong muốn.
 
 <figure><img src="../../../../../.gitbook/assets/image (535).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Chú ý:**&#x20;
+**Chú ý:**
 
 * Không nên sử dụng phiên bản Cyberduck quá cũ/ quá mới trên các hệ điều hành có phiên bản quá cũ/ quá mới vì có thể gặp lỗi.
 * Khi bạn sử dụng Cyberduck để thực hiện Sao chép (Copy)/ Di chuyển (Move)/ Thay đổi tên (Rename) object trên hệ thống vStorage có thể gây ra lỗi. Chúng tôi khuyến cáo bạn không nên sử dụng các tính năng này.

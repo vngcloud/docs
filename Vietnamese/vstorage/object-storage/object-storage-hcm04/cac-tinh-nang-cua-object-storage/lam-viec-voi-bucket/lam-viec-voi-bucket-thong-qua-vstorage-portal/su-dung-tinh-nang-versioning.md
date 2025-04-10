@@ -10,15 +10,23 @@ Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá
 
 3\. Chọn biểu tượng **Action** và chọn **Configure versioning**
 
-<figure><img src="../../../../../../.gitbook/assets/image (801).png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+**Chú ý:**
+
+* Khi **Object Lock** được bật trên một bucket trong vStorage, thì **versioning** sẽ **tự động được bật và không thể tắt đi** trên bucket đó.
+{% endhint %}
+
+<figure><img src="../../../../../../.gitbook/assets/image (1001).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/image (1002).png" alt=""><figcaption></figcaption></figure>
 
 4\. Tại màn hình xác nhận bật versioning, vui lòng chọn **Enable versioning**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1003).png" alt=""><figcaption></figcaption></figure>
 
-Sau khi bật versioning, mỗi khi tải lên một object với cùng tên, vStorage sẽ tạo một phiên bản mới cho object đó, và phiên bản cũ vẫn được lưu lại. Bạn có thể chọn Show versions để xem thông tin các version của object
+Sau khi bật versioning, mỗi khi tải lên một object với cùng tên, vStorage sẽ tạo một phiên bản mới cho object đó, và phiên bản cũ vẫn được lưu lại. Bạn có thể chọn Show versions để xem thông tin các version của object.
 
-<figure><img src="../../../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1004).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**

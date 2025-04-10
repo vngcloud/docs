@@ -1,6 +1,6 @@
 # Tích hợp công cụ S3 SDK với vStorage
 
-Để xem hướng dẫn tích hợp công cụ S3 SDK với vStorage, bạn có thể thực hiện qua vStorage Portal theo hướng dẫn bên dưới:&#x20;
+Để xem hướng dẫn tích hợp công cụ S3 SDK với vStorage, bạn có thể thực hiện qua vStorage Portal theo hướng dẫn bên dưới:
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 2. Chọn thư mục **Integration.**
@@ -15,9 +15,7 @@
 
 Bên dưới là danh sách các ngôn ngữ, thư viện và phiên bản (version) tương ứng mà chúng tôi cung cấp cho bạn để tích hợp với vStorage:
 
-<table data-full-width="false"><thead><tr><th>Ngôn ngữ</th><th>Thư viện</th><th>Phiên bản (version) hỗ trợ</th></tr></thead><tbody><tr><td>Java</td><td>AWS SDK</td><td>Java 8 và AWS SDK 1.11.163 </td></tr><tr><td></td><td>MinIO SDK</td><td>Java 8 và MinIO 8.5.2</td></tr><tr><td>Python</td><td>AWS SDK</td><td>Python 3.8 và Boto3 1.26.110 </td></tr><tr><td></td><td>MinIO SDK</td><td>Python 3.8 và Minio 7.1.14 </td></tr><tr><td>Golang</td><td>AWS SDK</td><td>Go 1.17.10</td></tr><tr><td></td><td>MinIO SDK</td><td>Go 1.17.10</td></tr><tr><td>Ruby</td><td>AWS SDK</td><td>Ruby 2.7.0</td></tr><tr><td>C#</td><td>AWS SDK</td><td>.Net 7.0 và AWS SDK 3.7.4 </td></tr><tr><td></td><td>MinIO SDK</td><td>.Net 7.0 và Minio 4.0.7 </td></tr><tr><td>NodeJS</td><td>AWS SDK</td><td>Node 16.15.0</td></tr><tr><td></td><td>MinIO SDK</td><td>Node 16.15.0 </td></tr></tbody></table>
-
-
+<table data-full-width="false"><thead><tr><th>Ngôn ngữ</th><th>Thư viện</th><th>Phiên bản (version) hỗ trợ</th></tr></thead><tbody><tr><td>Java</td><td>AWS SDK</td><td>Java 8 và AWS SDK 1.11.163</td></tr><tr><td></td><td>MinIO SDK</td><td>Java 8 và MinIO 8.5.2</td></tr><tr><td>Python</td><td>AWS SDK</td><td>Python 3.8 và Boto3 1.26.110</td></tr><tr><td></td><td>MinIO SDK</td><td>Python 3.8 và Minio 7.1.14</td></tr><tr><td>Golang</td><td>AWS SDK</td><td>Go 1.17.10</td></tr><tr><td></td><td>MinIO SDK</td><td>Go 1.17.10</td></tr><tr><td>Ruby</td><td>AWS SDK</td><td>Ruby 2.7.0</td></tr><tr><td>C#</td><td>AWS SDK</td><td>.Net 7.0 và AWS SDK 3.7.4</td></tr><tr><td></td><td>MinIO SDK</td><td>.Net 7.0 và Minio 4.0.7</td></tr><tr><td>NodeJS</td><td>AWS SDK</td><td>Node 16.15.0</td></tr><tr><td></td><td>MinIO SDK</td><td>Node 16.15.0</td></tr></tbody></table>
 
 6\. Lúc này màn hình hướng dẫn chi tiết cách tích hợp S3 SDK cho các ngôn ngữ được hiển thị. Phần nội dung hướng dẫn tích hợp được hiển thị theo 4 mục:
 

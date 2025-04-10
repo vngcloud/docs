@@ -15,7 +15,7 @@ vStorage cung cấp cho bạn các báo cáo thống kê lưu trữ và họa đ
 
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 
-2\. Chọn **Region** cần xem báo cáo**.**
+2\. Chọn **Region** cần xem báo cáo\*\*.\*\*
 
 3\. Chọn **Time range** (khoảng thời gian) mong muốn tổng hợp dữ liệu trên báo cáo. Mặc định chúng tôi sẽ hiển thị báo cáo trong tháng. Bạn có thể điều chỉnh khoảng thời gian xem báo cáo lên tới 3 tháng thông qua
 
@@ -42,9 +42,9 @@ vStorage cung cấp cho bạn các báo cáo thống kê lưu trữ và họa đ
 
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 
-2\. Chọn **Region** cần xem báo cáo**.**
+2\. Chọn **Region** cần xem báo cáo\*\*.\*\*
 
-3\. Chọn **Project** cần xem báo cáo**.**
+3\. Chọn **Project** cần xem báo cáo\*\*.\*\*
 
 3\. Chọn **Time range** (khoảng thời gian) mong muốn tổng hợp dữ liệu trên báo cáo. Mặc định chúng tôi sẽ hiển thị báo cáo trong tháng. Bạn có thể điều chỉnh khoảng thời gian xem báo cáo lên tới 3 tháng thông qua
 

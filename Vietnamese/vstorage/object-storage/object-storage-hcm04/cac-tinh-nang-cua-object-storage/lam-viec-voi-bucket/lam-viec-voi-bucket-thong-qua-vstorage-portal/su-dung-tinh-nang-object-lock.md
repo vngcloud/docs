@@ -1,6 +1,6 @@
 # Sử dụng tính năng Object lock
 
-**Object Lock** là tính năng giúp bảo vệ dữ liệu của bạn khỏi bị xóa hoặc ghi đè trong một khoảng thời gian cố định hoặc vô thời hạn. Tính năng này sử dụng model **WORM** (Write Once, Read Many), nghĩa là sau khi một object được tải lên S3 và được locked, object đó không thể bị xóa hoặc thay đổi bởi bất kỳ ai, kể cả người dùng root. Hiện tại, trên region HCM04, chúng tôi đã hỗ trợ bạn thiết lập Object Locked ở 2 mode Compliance, Legal Hold và <mark style="color:red;">**chưa hỗ trợ mode Governance**</mark><mark style="color:red;">.</mark> Nếu bạn sử dụng 3rd party software để thiết lập Object Locked ở mode Governance này thì S3 key được tạo ra sẽ có full quyền xóa các object version trên bucket của bạn. Ý nghĩa các mode locked được mô tả bên dưới:&#x20;
+**Object Lock** là tính năng giúp bảo vệ dữ liệu của bạn khỏi bị xóa hoặc ghi đè trong một khoảng thời gian cố định hoặc vô thời hạn. Tính năng này sử dụng model **WORM** (Write Once, Read Many), nghĩa là sau khi một object được tải lên S3 và được locked, object đó không thể bị xóa hoặc thay đổi bởi bất kỳ ai, kể cả người dùng root. Hiện tại, trên region HAN02, chúng tôi đã hỗ trợ bạn thiết lập Object Locked ở 2 mode Compliance, Legal Hold và <mark style="color:red;">**chưa hỗ trợ mode Governance**</mark><mark style="color:red;">.</mark> Nếu bạn sử dụng 3rd party software để thiết lập Object Locked ở mode Governance này thì S3 key được tạo ra sẽ có full quyền xóa các object version trên bucket của bạn. Ý nghĩa các mode locked được mô tả bên dưới:&#x20;
 
 * **Retention mode**: ngăn chặn việc xóa và ghi đè object version trong một khoảng thời gian nhất định. Trong Retention period sẽ có 2 mode:
   * **Compliance mode (đã hỗ trợ)**: bất kỳ người dùng hoặc admin,…nào cũng không thể ghi đè object version được locked. Khi hết thời gian được thiết lập trước, người dùng có thể thực hiện xóa hoặc ghi đè object bình thường.
@@ -9,7 +9,7 @@
 
 Để thiết lập Object Locked cho một bucket bằng S3 Browser, khi khởi tạo một bucket mới, bạn cần chọn phương án **Enable S3 Objected Lock.&#x20;**<mark style="color:red;">**Hãy nhớ rằng bạn sẽ không thể bật Object Lock cho bucket đã tồn tại.**</mark>
 
-<figure><img src="../../../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1005).png" alt=""><figcaption></figcaption></figure>
 
 Sau khi bucket đã được tạo thành công, để cấu hình thông số cụ thể cho tính năng object lock, vui lòng làm theo các bước bên dưới:&#x20;
 
@@ -19,7 +19,7 @@ Sau khi đã bật Object Lock cho bucket, bạn có thể thiết lập Object 
 
 1\. Tại bucket cần thiết lập object lock, chọn **Action** và chọn **Configure object lock retention**
 
-<figure><img src="../../../../../../.gitbook/assets/image (802).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1006).png" alt=""><figcaption></figcaption></figure>
 
 2\. Tại màn hình Configure object lock retention, chọn **Enable Object Lock retention policy**
 
