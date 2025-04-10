@@ -23,13 +23,13 @@ Sau khi đã bật Object Lock cho bucket, bạn có thể thiết lập Object 
 
 2\. Tại màn hình Configure object lock retention, chọn **Enable Object Lock retention policy**
 
-<figure><img src="../../../../../../.gitbook/assets/image (803).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1007).png" alt=""><figcaption></figcaption></figure>
 
 3\. Tại mục **Retention Mode**: hiện tại chúng tôi chỉ hỗ trợ **Compliance Mode** (mode này sẽ bảo vệ object version đối với việc thay đổi hay xóa cho đến khi hết thời gian giữ).
 
 4\. Tại mục **Retention Period**: bạn hãy chọn thời gian mong muốn giữ cho các object thuộc bucket của bạn. Ví dụ bạn chọn 30 ngày, 60 ngày, 1000 ngày,...
 
-<figure><img src="../../../../../../.gitbook/assets/image (804).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1008).png" alt=""><figcaption></figcaption></figure>
 
 5\. Chọn **Update.**
 
@@ -56,11 +56,11 @@ Sau khi đã bật Object Lock cho bucket, bạn có thể thiết lập Object 
 
 1\. Tại object cần thiết lập object lock, chọn **Action** và chọn **Enable object legal hold**
 
-<figure><img src="../../../../../../.gitbook/assets/image (805).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1009).png" alt=""><figcaption></figcaption></figure>
 
 2\. Tại màn hình Enable object legal hold, chọn **Enable**
 
-<figure><img src="../../../../../../.gitbook/assets/image (806).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1010).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**
@@ -68,4 +68,3 @@ Sau khi đã bật Object Lock cho bucket, bạn có thể thiết lập Object 
 * Legal hold chỉ áp dụng cho từng version của object, nên nếu bật cho một version cụ thể, các version khác vẫn có thể bị chỉnh sửa hoặc xóa.
 * Tính năng này khác với **Retention Policy** vì chỉ dừng việc xóa hoặc chỉnh sửa object chứ không có thời gian kết thúc.
 {% endhint %}
-
