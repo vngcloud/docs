@@ -26,7 +26,18 @@ Sử dụng các annotation dưới đây khi thực thiện tạo ingress để
     "redirectHttpCode": 301
   }
 }]
-</code></pre></td></tr><tr><td>vks.vngcloud.vn/header</td><td>Không bắt buộc</td><td><ul><li>Mặc định: {"http":["X-Forwarded-For", "X-Forwarded-Proto", "X-Forwarded-Port"],"https":["X-Forwarded-For", "X-Forwarded-Proto", "X-Forwarded-Port"]}</li></ul></td></tr><tr><td>vks.vngcloud.vn/client-certificate-id</td><td>Không bắt buộc</td><td><ul><li>Mặc định trống</li><li><strong>Client CA</strong> là một tính năng bảo mật của <strong>Load Balancer</strong> giúp xác thực client bằng cách sử dụng <strong>client certificate</strong> để cho phép các client được ủy quyền truy cập vào ứng dụng hoặc dịch vụ. Truyền một <strong>certificate id</strong> trong <strong>portal</strong> vào <strong>annotation</strong> này sẽ kích hoạt <strong>Client CA</strong> cho <strong>https listener</strong>.</li></ul></td></tr></tbody></table>
+</code></pre></td></tr><tr><td>vks.vngcloud.vn/insert-headers</td><td>Không bắt buộc</td><td><ul><li><p>Mặc định:</p><ul><li>http":["X-Forwarded-For", "X-Forwarded-Proto", "X-Forwarded-Port"]</li><li>https":["X-Forwarded-For", "X-Forwarded-Proto", "X-Forwarded-Port"]</li></ul></li><li>Bạn có thể override cấu hình mặc định bằng cách chỉ định JSON cho annotation <code>vks.vngcloud.vn/insert-headers</code>, ví dụ:</li></ul><pre class="language-json"><code class="lang-json">vks.vngcloud.vn/insert-headers: '{"http":{"X-Forwarded-For":"true", "Access-Control-Allow-Origin": "*"}}'
+
+
+{
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+  "Access-Control-Allow-Headers": "Authorization, Content-Type",
+  "Access-Control-Max-Age": "86400",
+  "Access-Control-Allow-Credentials": "true",
+  "Access-Control-Expose-Headers": "X-Custom-Header, Authorization, Link"
+}
+</code></pre></td></tr><tr><td>vks.vngcloud.vn/client-certificate-id</td><td>Không bắt buộc</td><td><ul><li>Mặc định trống</li><li><strong>Client CA</strong> là một tính năng bảo mật của <strong>Load Balancer</strong> giúp xác thực client bằng cách sử dụng <strong>client certificate</strong> để cho phép các client được ủy quyền truy cập vào ứng dụng hoặc dịch vụ. Truyền một <strong>certificate id</strong> trong <strong>portal</strong> vào <strong>annotation</strong> này sẽ kích hoạt <strong>Client CA</strong> cho <strong>https listener</strong>.</li></ul></td></tr></tbody></table>
 
 ***
 
