@@ -1,6 +1,8 @@
-# Pull và Push image với docker
+# Pull và Push image với Docker
 
-_\*Yêu cầu máy tính đã cài Docker engine (như Docker Desktop)_
+## Điều kiện cần
+
+* Yêu cầu máy tính đã cài Docker engine (như Docker Desktop)
 
 ## Push Image
 

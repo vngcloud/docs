@@ -6,8 +6,8 @@ Trong phần này, chúng ta sẽ tìm hiểu về cách sử dụng và quản 
 
 Để bắt đầu sử dụng Container Registry, bạn cần tìm hiểu trước các hướng dẫn/khái niệm sau:
 
-* Nếu chưa có tài khoản VNG Cloud, người dùng cần đăng ký tài khoản để có thể sử dụng dịch vụ. Tham khảo hướng dẫn [Đăng ký tài khoản](../huong-dan-su-dung-tai-khoan/dang-ky-tai-khoan.md)
-* Tìm hiểu cách **truy cập VNG Cloud Portal** với Root User Account hoặc IAM User Account, tham khảo hướng dẫn [Cách đăng nhập vào VNG Cloud](../identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md).
+* Nếu chưa có tài khoản VNG Cloud, người dùng cần đăng ký tài khoản để có thể sử dụng dịch vụ. Tham khảo hướng dẫn [Đăng ký tài khoản](../../huong-dan-su-dung-tai-khoan/dang-ky-tai-khoan.md)
+* Tìm hiểu cách **truy cập VNG Cloud Portal** với Root User Account hoặc IAM User Account, tham khảo hướng dẫn [Cách đăng nhập vào VNG Cloud](../../identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md).
 * **Tải về và cài đặt Docker/Podman hoặc bất kỳ tool nào** trên máy tính local/oncloud dùng để tương tác với Container Registry.
 
 #### 1. Truy cập vCR Console <a href="#gettingstarted-vcr-1.truycapvcrconsole" id="gettingstarted-vcr-1.truycapvcrconsole"></a>
@@ -65,5 +65,3 @@ vCR Console là giao diện người dùng dựa trên web, cho phép bạn qu�
 3. Sao chép lệnh **"Tag an image for this project"** để đánh tag cho image cần push lên.&#x20;
 4. Sao chép lệnh **"Push an image to this project"** để push image lên Repository.
 5. Kiểm tra xem image đã được push lên thành công hay chưa tại tab "Image" tại trang chi tiết Reposiotry.
-
-\

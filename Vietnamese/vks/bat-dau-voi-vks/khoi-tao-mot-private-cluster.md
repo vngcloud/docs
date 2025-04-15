@@ -36,12 +36,12 @@ Bạn có thể xem thông tin 4 private service endpoint thông qua portal vSer
 
     Ví dụ,
 
-    *   Nếu bạn xóa private service endpoint của vCR tại **Region HCM** thì bạn cần add host qua lệnh:
+    *   Nếu bạn xóa private service endpoint của vCR tại <mark style="color:red;background-color:red;">**Region HCM**</mark> thì bạn cần add host qua lệnh:
 
         ```
         vks-boostraper add-host -i 10.10.10.10 -d vcr.vngcloud.vn
         ```
-    *   Nếu bạn xóa private service endpoint của vCR tại **Region HCM** thì bạn cần add host qua lệnh:
+    *   Nếu bạn xóa private service endpoint của vCR tại <mark style="color:red;background-color:red;">**Region HAN**</mark> thì bạn cần add host qua lệnh:
 
         ```
         vks-boostraper add-host -i 10.10.10.10 -d vcr-han.vngcloud.vn
@@ -183,8 +183,8 @@ Do Private Cluster chỉ có thể kết nối private tới hệ thống vConta
 #### **Bước 2: Khởi tạo Public Repository và Repository User trên vContainer Registry Portal:**
 
 * Đăng nhập portal vCR tại đường dẫn:
-  * Với Region HCM:  [https://vcr.console.vngcloud.vn/list](https://vcr.console.vngcloud.vn/list)
-  * Với Region HN:&#x20;
+  * Với <mark style="color:red;background-color:red;">**Region HCM**</mark>:  [https://vcr.console.vngcloud.vn/list](https://vcr.console.vngcloud.vn/list)
+  * Với <mark style="color:red;background-color:red;">**Region HN**</mark>: [https://han-1.console.vngcloud.vn/vcr/repository/list](https://han-1.console.vngcloud.vn/vcr/repository/list)
 * Thực hiện khởi tạo Repositoryvà Repository theo hướng dẫn tại [đây](../../vcontainer-registry/repository/). Ví dụ trong hình dưới, tôi đã khởi tạo demo\_repo với demo\_user có thể pull/ push image:
 
 <figure><img src="../../.gitbook/assets/image (697).png" alt=""><figcaption></figcaption></figure>
