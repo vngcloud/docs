@@ -2,42 +2,72 @@
 
 ## Điều kiện cần
 
-* Yêu cầu máy tính đã cài Docker engine (như Docker Desktop)
+* Yêu cầu máy tính đã cài **Docker Engine** hoặc **Docker Desktop.**
 
-## Push Image
+## Khởi tạo Repoitory
 
-Đầu tiên để có thể push image thì ta cần có sẵn 1 Repository trên vCR, ví dụ ta đã tạo sẵn 1 repo như sau:
+**Repository** (hay còn gọi là "repo") là nơi **lưu trữ các Docker image**. Repo giống như **một thư mục chứa nhiều phiên bản khác nhau của một ứng dụng** dưới dạng các Docker image. Mỗi phiên bản thường được đánh dấu bằng một `tag` như `:latest`, `:v1.0`, `:2025-04-15`, v.v.
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Thực hiện theo các bước sau để khởi tạo một Repository:
 
-* Để push image lên Repo, trước tiên ta cần gắn tag cho image
+**Bước 1**: Truy cập Portal của vContainer Registry.&#x20;
 
-| “docker tag SOURCE\_IMAGE\[:TAG] vcr.vngcloud.vn/96000-sdkimage/IMAGE\[:TAG]” docker tag 09042024/hello-world vcr.vngcloud.vn/96000-sdkimage/hello-world:first |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+* Với **Region HCM**: [https://vcr.console.vngcloud.vn/repository/list](https://vcr.console.vngcloud.vn/repository/list)
+* Với **Region HAN**: [https://han-1.console.vngcloud.vn/vcr/repository/list](https://han-1.console.vngcloud.vn/vcr/repository/list)
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+**Bước 2:** Chọn mục **Repository** sau đó chọn nút **"Create Repository".**&#x20;
 
-* Login bằng user/pass Repo
+**Bước 3:** Thực hiện nhập **Repository name, Access level và Quota Limit** tùy theo nhu cầu của bạn.
 
-| docker login vcr.vngcloud.vn -u 96000-khaivt |
-| -------------------------------------------- |
+**Bước 4:** Nhấn **"Create"** để hoàn tất quá trình khởi tạo.
 
-Với user là 96000-khaivt (xem trên portal) và pass là secret key khi tạo user
+<figure><img src="../../.gitbook/assets/image (1059).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1060).png" alt="" width="518"><figcaption></figcaption></figure>
 
-* Push image lên Repo:
+#### 3. Khởi tạo Repository User <a href="#gettingstarted-vcr-3.khoitaorepositoryuser" id="gettingstarted-vcr-3.khoitaorepositoryuser"></a>
 
-| ![](file:///C:/Users/LAP14383-local/AppData/Local/Packages/oice_16_974fa576_32c1d314_3436/AC/Temp/msohtmlclip1/01/clip_image005.gif)    docker push vcr.vngcloud.vn/96000-sdkimage/IMAGE\[:TAG] docker push vcr.vngcloud.vn/96000-sdkimage/hello-world:first |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+**Cách khởi tạo Repository User**
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+1. Tại trang chủ Container Registry, nhấn vào **menu "Repository User"** phía bên tay phải để truy cập đến danh sách Repository User, nhấn nút **"CreateRepository User"** để bắt đầu tạo mới một Repository User.
+2. Một popup **"Create Repository"** hiển thị cho phép bạn điền các thông tin như:
+   * **User Name (optional)**: Tên của Repository User, trường hợp không điền tên, hệ thống sẽ tự động sinh ra tên tương ứng. Lưu ý tên sau khi điền/sinh tự động sẽ được add thêm prefix {AccountID} tương ứng với tài khoản VNG Cloud đang đăng nhập.
+   * **Expiration Date:** Ngày hết hạn của User. Có 3 chế độ như sau:
+     * Để trống: Đồng nghĩa với việc user này không có thời gian expired
+     * Điền ngày cụ thể: User này sẽ expired tại thời điểm được chọn. Đối với user bị expired, hệ thống sẽ tạm khóa toàn bộ các tính năng có liên quan đối với Repository User này cho đến khi user được gia hạn thêm thời gian
+   * **Description (optional):** Thông tin thêm về Repository User
+   * **Repositories (required):** Đính kèm các Repository và cài đặt Permission tương ứng
+     * Tìm Repository cần attach theo repository name
+     * Nhấn nút "Add"
+     * Tại danh sách Repository được thêm vào bên dưới, cài đặt permission tương ứng Push\&Pull/Pull Only
+3. Nhấn nút **"Create"** để hoàn tất việc khởi tạo
+4. Kiểm tra thông tin Repository vừa khởi tạo tại danh sách
 
-## Pull Image
+## Khởi tạo Repository User
 
-Đầu tiên ta cũng cân login bằng user và password như lúc push, sau đó thực hiện pull bằng lệnh sau:
+**Repository** (hay còn gọi là "repo") là nơi **lưu trữ các Docker image**. Repo giống như **một thư mục chứa nhiều phiên bản khác nhau của một ứng dụng** dưới dạng các Docker image. Mỗi phiên bản thường được đánh dấu bằng một `tag` như `:latest`, `:v1.0`, `:2025-04-15`, v.v.
 
-| docker pull vcr.vngcloud.vn/96000-sdkimage/IMAGE\[:TAG] docker pull vcr.vngcloud.vn/96000-sdkimage/hello-world:first |
-| -------------------------------------------------------------------------------------------------------------------- |
+Thực hiện theo các bước sau để khởi tạo một Repository:
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+**Bước 1**: Truy cập Portal của vContainer Registry.&#x20;
+
+* Với **Region HCM**: [https://vcr.console.vngcloud.vn/repository/list](https://vcr.console.vngcloud.vn/repository/list)
+* Với **Region HAN**: [https://han-1.console.vngcloud.vn/vcr/repository/list](https://han-1.console.vngcloud.vn/vcr/repository/list)
+
+**Bước 2:** Chọn **"Create Repository".**&#x20;
+
+**Bước 3:** Thực hiện nhập **Repository name, Access level và Quota Limit** tùy theo nhu cầu của bạn.
+
+**Bước 4:** Nhấn **"Create"** để hoàn tất quá trình khởi tạo.
+
+## Thực hiện Push Image
+
+### Trên Region HCM
+
+### Trên Region HAN
+
+## Thực hiện Pull Image
+
+### Trên Region HCM
+
+### Trên Region HAN

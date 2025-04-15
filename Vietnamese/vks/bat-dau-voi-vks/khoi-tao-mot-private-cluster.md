@@ -36,15 +36,21 @@ Bạn có thể xem thông tin 4 private service endpoint thông qua portal vSer
 
     Ví dụ,
 
-    *   Nếu bạn xóa private service endpoint của vCR tại <mark style="color:red;background-color:red;">**Region HCM**</mark> thì bạn cần add host qua lệnh:
+    *   Nếu bạn xóa private service endpoint của 4 dịch vụ trên tại <mark style="color:red;background-color:red;">**Region HCM**</mark> thì bạn cần add host qua lệnh:
 
         ```
-        vks-boostraper add-host -i 10.10.10.10 -d vcr.vngcloud.vn
+        vks-boostraper add-host -i 192.168.1.9 -d vcr.vngcloud.vn
+        vks-boostraper add-host -i 192.168.1.8 -d hcm-3.api.vngcloud.vn
+        vks-boostraper add-host -i 192.168.1.5 -d iamapis.vngcloud.vn
+        vks-boostraper add-host -i 192.168.1.7 -d hcm03.vstorage.vngcloud.vn
         ```
     *   Nếu bạn xóa private service endpoint của vCR tại <mark style="color:red;background-color:red;">**Region HAN**</mark> thì bạn cần add host qua lệnh:
 
         ```
-        vks-boostraper add-host -i 10.10.10.10 -d vcr-han.vngcloud.vn
+        vks-boostraper add-host -i 192.168.1.9 -d vcr-han.vngcloud.vn
+        vks-boostraper add-host -i 192.168.1.8 -d han-1.api.vngcloud.vn
+        vks-boostraper add-host -i 192.168.1.5 -d iamapis.vngcloud.vn
+        vks-boostraper add-host -i 192.168.1.7 -d han02.vstorage.vngcloud.vn
         ```
 * <mark style="color:red;background-color:red;">**Tái sử dụng Private Service Endpoint:**</mark> Các service endpoint có thể được nhiều private cluster cùng sử dụng. Khi các private cluster chung VPC thì chúng tôi sẽ tái sử dụng chúng cho các cluster này.
 * <mark style="color:red;background-color:red;">**Xóa Private Service Endpoint tự động:**</mark> Khi bạn xóa cluster, nếu không còn cluster nào tái sử dụng các service endpoint này, hệ thống sẽ tự động xóa chúng.
