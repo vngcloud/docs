@@ -220,8 +220,6 @@ Lúc này, hệ thống vLB sẽ tự động tạo một LB tương ứng với
 
 <figure><img src="../../.gitbook/assets/vks_portal_l7.png" alt=""><figcaption></figcaption></figure>
 
-
-
 {% hint style="info" %}
 Chú ý:
 
@@ -268,7 +266,7 @@ spec:
 http://Endpoint/
 ```
 
-Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao diện vLB. Cụ thể truy cập tại
+Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao diện vLB. Cụ thể truy cập tại [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb) hoặc [https://han-1.console.vngcloud.vn/vserver/load-balancer/vlb](https://han-1.console.vngcloud.vn/vserver/load-balancer/vlb) tùy theo Region mà bạn khởi tạo Cluster.
 
 Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.129/](http://180.93.181.129/)
 

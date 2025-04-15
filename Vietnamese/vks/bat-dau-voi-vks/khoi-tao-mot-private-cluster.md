@@ -34,14 +34,24 @@ Bạn có thể xem thông tin 4 private service endpoint thông qua portal vSer
     vks-bootstraper add-host -i <IP> -d <DOMAIN>
     ```
 
-    Ví dụ, nếu bạn xóa private service endpoint của vCR thì bạn cần add host qua lệnh:
+    Ví dụ,
 
-    ```
-    vks-boostraper add-host -i 10.10.10.10 -d vcr.vngcloud.vn
-    ```
+    *   Nếu bạn xóa private service endpoint của vCR tại **Region HCM** thì bạn cần add host qua lệnh:
+
+        ```
+        vks-boostraper add-host -i 10.10.10.10 -d vcr.vngcloud.vn
+        ```
+    *   Nếu bạn xóa private service endpoint của vCR tại **Region HCM** thì bạn cần add host qua lệnh:
+
+        ```
+        vks-boostraper add-host -i 10.10.10.10 -d vcr-han.vngcloud.vn
+        ```
 * <mark style="color:red;background-color:red;">**Tái sử dụng Private Service Endpoint:**</mark> Các service endpoint có thể được nhiều private cluster cùng sử dụng. Khi các private cluster chung VPC thì chúng tôi sẽ tái sử dụng chúng cho các cluster này.
 * <mark style="color:red;background-color:red;">**Xóa Private Service Endpoint tự động:**</mark> Khi bạn xóa cluster, nếu không còn cluster nào tái sử dụng các service endpoint này, hệ thống sẽ tự động xóa chúng.
 * <mark style="color:red;background-color:red;">**Chi phí sử dụng Private Service Endpoint:**</mark> Việc sử dụng private cluster sẽ phát sinh thêm chi phí cho 4 private service endpoint, nhưng nó mang lại nhiều lợi ích về bảo mật cho dự án của bạn. Bạn hãy cân nhắc kỹ lưỡng các yếu tố để đưa ra quyết định sử dụng public hay private cho cluster của mình.
+* <mark style="color:red;background-color:red;">**Trên VKS, tại mỗi Region HCM hay HAN, domain của vCR để pull/ push image khác nhau**</mark>. Hãy chú ý khi sử dụng để tránh nhầm lần. Cụ thể:
+  * **Với Region HCM**: dùng domain `vcr.vngcloud.vn`
+  * **Với Region HAN**: dùng domain `vcr-han.vngcloud.vn`
 {% endhint %}
 
 ***
@@ -172,7 +182,9 @@ Do Private Cluster chỉ có thể kết nối private tới hệ thống vConta
 
 #### **Bước 2: Khởi tạo Public Repository và Repository User trên vContainer Registry Portal:**
 
-* Đăng nhập portal vCR tại đường dẫn: [https://vcr.console.vngcloud.vn/list](https://vcr.console.vngcloud.vn/list)
+* Đăng nhập portal vCR tại đường dẫn:
+  * Với Region HCM:  [https://vcr.console.vngcloud.vn/list](https://vcr.console.vngcloud.vn/list)
+  * Với Region HN:&#x20;
 * Thực hiện khởi tạo Repositoryvà Repository theo hướng dẫn tại [đây](../../vcontainer-registry/repository/). Ví dụ trong hình dưới, tôi đã khởi tạo demo\_repo với demo\_user có thể pull/ push image:
 
 <figure><img src="../../.gitbook/assets/image (697).png" alt=""><figcaption></figcaption></figure>
@@ -193,38 +205,62 @@ docker pull nginx:latest
 
 **Bươc 4:** Thực hiện login vào vCR qua lệnh:
 
+* Với <mark style="color:red;background-color:red;">**Region HCM**</mark>:&#x20;
+
 ```
-docker login vcr.vngcloud.vn -u <repository_user>
+docker login vcr-han.vngcloud.vn -u <repository_user>
+```
+
+* Với <mark style="color:red;background-color:red;">**Region HAN**</mark>:
+
+```
+docker login vcr-han.vngcloud.vn -u <repository_user>
 ```
 
 * Ví dụ, câu lệnh dưới tôi sử dụng để login vào repo demo:
 
 ```
-docker login vcr.vngcloud.vn -u 53461-user_demo
+docker login vcr-han.vngcloud.vn -u 53461-user_demo
 ```
 
 **Bước 5:** Gán tag cho image nginx
+
+* Với <mark style="color:red;background-color:red;">**Region HCM**</mark>**:**&#x20;
 
 ```
 docker tag SOURCE_IMAGE[:TAG] vcr.vngcloud.vn/REPO_NAME/IMAGE[:TAG]
 ```
 
+* Với <mark style="color:red;background-color:red;">**Region HAN**</mark>**:**
+
+```
+docker tag SOURCE_IMAGE[:TAG] vcr-han.vngcloud.vn/REPO_NAME/IMAGE[:TAG]
+```
+
 * Ví dụ, câu lệnh dưới tôi sử dụng để gán tag cho image nginx:
 
 ```
-docker tag nginx:latest vcr.vngcloud.vn/53461-repo_demo/nginx-demo:latest
+docker tag nginx:latest vcr-han.vngcloud.vn/53461-repo_demo/nginx-demo:latest
 ```
 
 **Bước 6:** Thực hiện push image lên repo qua lệnh:
+
+* Với <mark style="color:red;background-color:red;">**Region HCM**</mark>**:**
 
 ```
 docker push vcr.vngcloud.vn/REPO_NAME/IMAGE[:TAG]
 ```
 
+* Với <mark style="color:red;background-color:red;">**Region HAN**</mark>**:**&#x20;
+
+```
+docker push vcr-han.vngcloud.vn/REPO_NAME/IMAGE[:TAG]
+```
+
 * Ví dụ, câu lệnh dưới tôi sử dụng để push image lên demo\_repo:
 
 ```
-docker push vcr.vngcloud.vn/53461-repo_demo/nginx-demo:latest
+docker push vcr-han.vngcloud.vn/53461-repo_demo/nginx-demo:latest
 ```
 
 ***
@@ -258,7 +294,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: vcr.vngcloud.vn/53461-repo_demo/nginx-demo:latest
+        image: vcr-han.vngcloud.vn/53461-repo_demo/nginx-demo:latest  
         ports:
         - containerPort: 80
 ---
@@ -301,7 +337,7 @@ service/kubernetes      ClusterIP      10.96.0.1      <none>           443/TCP  
 service/nginx-service   LoadBalancer   10.96.81.236   116.118.88.236   80:32333/TCP   3m32s   app=nginx
 
 NAME                        READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS   IMAGES                                              SELECTOR
-deployment.apps/nginx-app   1/1     1            1           3m32s   nginx        vcr.vngcloud.vn/53461-repo_demo/nginx-demo:latest   app=nginx
+deployment.apps/nginx-app   1/1     1            1           3m32s   nginx        vcr-han.vngcloud.vn/53461-repo_demo/nginx-demo:latest   app=nginx
 
 NAME                             READY   STATUS    RESTARTS   AGE     IP             NODE                                    NOMINATED NODE   READINESS GATES
 pod/nginx-app-56bbc8fdd8-4pz68   1/1     Running   0          3m32s   172.16.4.207   vks-demo-cluster-nodegroup-demo-7c9aa   <none>           <none>
@@ -319,7 +355,7 @@ Lúc này, hệ thống vLB sẽ khởi tạo môt Network Load Balancer, bạn 
 http://Endpoint/
 ```
 
-Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao diện vLB. Cụ thể truy cập tại [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb)
+Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao diện vLB. Cụ thể truy cập tại [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb) hoặc [https://han-1.console.vngcloud.vn/vserver/load-balancer/vlb](https://han-1.console.vngcloud.vn/vserver/load-balancer/vlb) tùy theo Region mà bạn khởi tạo Cluster.
 
 Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://116.118.88.236/](http://116.118.88.236/)
 
