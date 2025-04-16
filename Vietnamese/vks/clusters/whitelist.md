@@ -49,11 +49,8 @@ Tính năng Whitelist IP trên chế độ Private Node Group của VKS cho phé
 
 **2. Public Cluster Bao Gồm Private Node Group Đi Qua NAT Gateway (Pfsense, PaloAlto)**
 
-* Trên **Region HCM:**&#x20;
-  * **Khuyến nghị**: Có thể sử dụng tính năng whitelist.
-  * Cần thực hiện Whitelist thêm IP của NAT Gateway.
-* Trên **Region HAN:**&#x20;
-  * <mark style="color:red;background-color:red;">**Do NAT Gateway chưa được triển khai trên Region HAN nên bạn không thể tạo Public Cluster với Private Node group.**</mark>
+* **Khuyến nghị**: Có thể sử dụng tính năng whitelist.
+* Cần thực hiện Whitelist thêm IP của NAT Gateway.
 
 **3. Private Cluster Bao Gồm Public Node Group hoặc Private Node Group**&#x20;
 
