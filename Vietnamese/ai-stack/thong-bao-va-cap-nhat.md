@@ -94,3 +94,8 @@ Kiểm soát đầu ra của mô hình trước khi trả về cho người dùn
 
 * Quản lý token theo từng ứng dụng/client – dễ dàng phân quyền truy cập.
 * Cấu hình giới hạn truy cập theo thời gian (requests per second/minute).
+
+#### **Monitoring & Logging nâng cao**
+
+* Giao diện hiển thị real-time logs và thống kê theo thời gian: tổng số request, tỉ lệ lỗi, latency...
+* Hỗ trợ lọc theo endpoint, token, status code.
