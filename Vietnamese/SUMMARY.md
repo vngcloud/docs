@@ -974,6 +974,7 @@
     * [Demo VPN Site To Site](https://docs.vngcloud.vn/vng-cloud-document/vnetwork/vpn-virtual-private-network-site-to-site/demo-site-to-site-vpn)
 * [AI Speech Text](ai-speech-text.md)
 * [AI Stack](ai-stack/README.md)
+  * [Thông báo và cập nhật](ai-stack/thong-bao-va-cap-nhat.md)
   * [AI Platform](ai-stack/ai-platform/README.md)
     * [Bắt đầu với AI Platform](ai-stack/ai-platform/bat-dau-voi-ai-platform.md)
   * [AI Gateway](ai-stack/ai-gateway/README.md)
