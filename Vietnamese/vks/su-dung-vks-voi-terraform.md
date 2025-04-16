@@ -38,39 +38,156 @@ variable "client_secret" {
 }
 ```
 
-***
+* Tệp `main.tf` khi tạo Cluster/ Node Group trên **Region HCM:**
 
-* Trên file **main.tf**, bạn cần có thể thêm resource để tạo Cluster/ Node Group:
-  * Tạo Cluster my-vks-cluster và Node Group my-nodegroup độc lập:
+```
+terraform {
+  required_providers {
+    vngcloud = {
+      source  = "vngcloud/vngcloud"
+      version = "1.3.3"
+    }
+  }
+}
+provider "vngcloud" {
+  token_url        = "https://iamapis.vngcloud.vn/accounts-api/v2/auth/token"
+  client_id        = var.client_id
+  client_secret    = var.client_secret
+  vserver_base_url = "https://hcm-3.api.vngcloud.vn/vserver/vserver-gateway"
+  vlb_base_url     = "https://hcm-3.api.vngcloud.vn/vserver/vlb-gateway"
+  vks_base_url     = "https://vks.api.vngcloud.vn"
+}
 
-```markup
 resource "vngcloud_vks_cluster" "primary" {
-  name      = "my-cluster"
-  cidr      = "172.16.0.0/16"
-  vpc_id    = "net-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
-  subnet_id = "sub-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
+  name      = "cluster-hcm"
+  description = "Cluster create via terraform"
+  version = "v1.29.13-vks.1740045600"
+  enable_private_cluster = true
+  network_type = "CILIUM_NATIVE_ROUTING"
+  cidr      = "172.16.0.0/16"
+  vpc_id    = "net-dc27a89b-e7a8-46eb-bba1-9339fa6bd018"
+  subnet_id = "sub-1191201a-4b47-46b8-8049-f18889ff5677"
+  secondary_subnets = ["10.111.128.0/20","10.111.144.0/20"]
+  node_netmask_size = 25
+  enable_service_endpoint = true
+  enabled_load_balancer_plugin = true
+  enabled_block_store_csi_plugin = true
+  lifecycle {
+    create_before_destroy = true
+  }
 }
 
 resource "vngcloud_vks_cluster_node_group" "primary" {
-  name= "my-nodegroup"
-  ssh_key_id= "ssh-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
-  cluster_id= vngcloud_vks_cluster.primary.id
+  cluster_id = vngcloud_vks_cluster.primary.id
+  name = "nodegroup1"
+  num_nodes = 3
+  auto_scale_config {
+    min_size = 0
+    max_size = 5
+  }
+  upgrade_config {
+    strategy = "SURGE"
+    max_surge = 1
+    max_unavailable = 0
+  }
+  image_id = "img-53bccbb6-7db5-42c1-bcc2-fef9fd1dccdc"
+  flavor_id = "flav-305a67bf-1825-4e3f-bc72-d41afa160d93"
+  subnet_id = "sub-1191201a-4b47-46b8-8049-f18889ff5677"
+  secondary_subnets = ["10.111.160.0/20"]
+  disk_size = 50
+  disk_type = "vtype-2fc64a6c-38e3-4f08-93a5-18018cb3ab23"
+  enable_private_nodes = true
+  ssh_key_id= "ssh-7e899107-b5dd-4b91-9c82-5e20497cb00b"
+  labels = {
+    "test" = "terraform"
+  }
+  taint {
+    key    = "key1"
+    value  = "value1"
+    effect = "PreferNoSchedule"
+  }
+  lifecycle {
+    create_before_destroy = true
+  }
 }
+
+
+
 ```
 
-* Tạo Cluster với Default Node Group
+* Tệp `main.tf` khi tạo Cluster/ Node Group trên **Region HAN:**
 
-```markup
-resource "vngcloud_vks_cluster" "primary" {
-  name      = "my-cluster"
-  cidr      = "172.16.0.0/16"
-  vpc_id    = "net-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
-  subnet_id = "sub-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
-  node_group {
-    name= "my-nodegroup"
-    ssh_key_id= "ssh-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
-  }
+```
+terraform {
+  required_providers {
+    vngcloud = {
+      source  = "vngcloud/vngcloud"
+      version = "1.3.3"
+    }
+  }
 }
+provider "vngcloud" {
+  token_url        = "https://iamapis.vngcloud.vn/accounts-api/v2/auth/token"
+  client_id        = var.client_id
+  client_secret    = var.client_secret
+  vserver_base_url = "https://han-1.api.vngcloud.vn/vserver/vserver-gateway"
+  vlb_base_url     = "https://han-1.api.vngcloud.vn/vserver/vlb-gateway"
+  vks_base_url     = "https://vks-han-1.api.vngcloud.vn"
+}
+
+resource "vngcloud_vks_cluster" "primary" {
+  name      = "cluster-demo"
+  description = "Cluster create via terraform"
+  version = "v1.29.13-vks.1740045600"
+  enable_private_cluster = true
+  network_type = "CILIUM_NATIVE_ROUTING"
+  cidr      = "172.16.0.0/16"
+  vpc_id    = "net-0dc4cf1e-d961-4483-b848-62ed86fa69f1"
+  subnet_id = "sub-a39ebafb-4231-4a86-b94e-f78fc6b8778d"
+  secondary_subnets = ["192.168.200.0/24"]
+  node_netmask_size = 25
+  enable_service_endpoint = true
+  enabled_load_balancer_plugin = true
+  enabled_block_store_csi_plugin = true
+  lifecycle {
+    create_before_destroy = true
+  }
+}
+
+resource "vngcloud_vks_cluster_node_group" "primary" {
+  cluster_id = vngcloud_vks_cluster.primary.id
+  name = "nodegroup1"
+  num_nodes = 3
+  auto_scale_config {
+    min_size = 0
+    max_size = 5
+  }
+  upgrade_config {
+    strategy = "SURGE"
+    max_surge = 1
+    max_unavailable = 0
+  }
+  image_id = "img-331724e8-326f-4fd0-ac6e-f9bd127f976c"
+  flavor_id = "flav-305a67bf-1825-4e3f-bc72-d41afa160d93"
+  subnet_id = "sub-a39ebafb-4231-4a86-b94e-f78fc6b8778d"
+  secondary_subnets = ["192.168.200.0/24"]
+  disk_size = 50
+  disk_type = "vtype-7a7a8610-34f5-11ee-be56-0242ac120002"
+  enable_private_nodes = true
+  ssh_key_id= "ssh-4e765839-4222-444b-bf09-83de37aa7121"
+  labels = {
+    "test" = "terraform"
+  }
+  taint {
+    key    = "key1"
+    value  = "value1"
+    effect = "PreferNoSchedule"
+  }
+  lifecycle {
+    create_before_destroy = true
+  }
+}
+
 ```
 
 {% hint style="info" %}
@@ -84,186 +201,7 @@ resource "vngcloud_vks_cluster" "primary" {
       subnet_id = "sub-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
       ssh_key_id= "ssh-xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"
     ```
-{% endhint %}
-
-***
-
-### <mark style="color:blue;">Các ví dụ tham khảo</mark>
-
-#### Example Usage 1 - Create a Cluster with Network type CALICO OVERLAY and a Node Group with AutoScale Mode
-
-```
-terraform {
-  required_providers {
-    vngcloud = {
-      source  = "vngcloud/vngcloud"
-      version = "1.2.7"
-    }
-  }
-}
-resource "vngcloud_vks_cluster" "primary" {
-  name      = "cluster-demo"
-  description = "Cluster create via terraform"
-  version = "v1.29.1"
-  cidr      = "172.16.0.0/16"
-  enable_private_cluster = false
-  network_type = "CALICO"
-  vpc_id    = "net-70ef12d4-d619-43fc-88f0-1c1511683123"
-  subnet_id = "sub-0725ef54-a32e-404c-96f2-34745239c123"
-  enabled_load_balancer_plugin = true
-  enabled_block_store_csi_plugin = true
-}
-
-resource "vngcloud_vks_cluster_node_group" "primary" {
-  cluster_id = vngcloud_vks_cluster.primary.id
-  name = "nodegroup1"
-  num_nodes = 3
-  auto_scale_config {
-    min_size = 0
-    max_size = 5
-  }
-  upgrade_config {
-    strategy = "SURGE"
-    max_surge = 1
-    max_unavailable = 0
-  }
-  image_id = "img-108b3a77-ab58-4000-9b3e-190d0b4b07fc"
-  flavor_id = "flav-9e88cfb4-ec31-4ad4-8ba5-243459f6d123"
-  disk_size = 50
-  disk_type = "vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018"
-  enable_private_nodes = false
-  ssh_key_id= "ssh-f923c53c-cba7-4131-9f86-175d04ae2123"
-  security_groups = ["secg-faf05344-fbd6-4f10-80a2-cda08d15ba5e"]
-  labels = {
-    "test" = "terraform"
-  }
-  taint {
-    key    = "key1"
-    value  = "value1"
-    effect = "PreferNoSchedule"
-  }
-}
-```
-
-#### Example Usage 2 - Create a Cluster with Network type CILIUM OVERLAY and a Node Group with AutoScale Mode
-
-```
-terraform {
-  required_providers {
-    vngcloud = {
-      source  = "vngcloud/vngcloud"
-      version = "1.2.7"
-    }
-  }
-}
-resource "vngcloud_vks_cluster" "primary" {
-  name      = "cluster-demo"
-  description = "Cluster create via terraform"
-  version = "v1.29.1"
-  cidr      = "172.16.0.0/16"
-  enable_private_cluster = false
-  network_type = "CILIUM_OVERLAY"
-  vpc_id    = "net-70ef12d4-d619-43fc-88f0-1c1511683123"
-  subnet_id = "sub-0725ef54-a32e-404c-96f2-34745239c123"
-  enabled_load_balancer_plugin = true
-  enabled_block_store_csi_plugin = true
-}
-
-resource "vngcloud_vks_cluster_node_group" "primary" {
-  cluster_id = vngcloud_vks_cluster.primary.id
-  name = "nodegroup1"
-  num_nodes = 3
-  auto_scale_config {
-    min_size = 0
-    max_size = 5
-  }
-  upgrade_config {
-    strategy = "SURGE"
-    max_surge = 1
-    max_unavailable = 0
-  }
-  image_id = "img-108b3a77-ab58-4000-9b3e-190d0b4b07fc"
-  flavor_id = "flav-9e88cfb4-ec31-4ad4-8ba5-243459f6d123"
-  disk_size = 50
-  disk_type = "vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018"
-  enable_private_nodes = false
-  ssh_key_id= "ssh-f923c53c-cba7-4131-9f86-175d04ae2123"
-  security_groups = ["secg-faf05344-fbd6-4f10-80a2-cda08d15ba5e"]
-  labels = {
-    "test" = "terraform"
-  }
-  taint {
-    key    = "key1"
-    value  = "value1"
-    effect = "PreferNoSchedule"
-  }
-}
-```
-
-#### Example Usage 3 - Create a Cluster with Network type CILIUM VPC Native Routing and a Node Group with AutoScale Mode
-
-```
-terraform {
-  required_providers {
-    vngcloud = {
-      source  = "vngcloud/vngcloud"
-      version = "1.2.7"
-    }
-  }
-}
-resource "vngcloud_vks_cluster" "primary" {
-  name      = "cluster-demo"
-  description = "Cluster create via terraform"
-  version = "v1.29.1"
-  enable_private_cluster = false
-  network_type = "CILIUM_NATIVE_ROUTING"
-  vpc_id    = "net-70ef12d4-d619-43fc-88f0-1c1511683123"
-  subnet_id = "sub-0725ef54-a32e-404c-96f2-34745239c123"
-  secondary_subnets = ["10.200.27.0/24", "10.200.28.0/24"]
-  node_netmask_size = 25
-  enable_service_endpoint = false
-  enabled_load_balancer_plugin = true
-  enabled_block_store_csi_plugin = true
-}
-
-resource "vngcloud_vks_cluster_node_group" "primary" {
-  cluster_id = vngcloud_vks_cluster.primary.id
-  name = "nodegroup1"
-  num_nodes = 3
-  auto_scale_config {
-    min_size = 0
-    max_size = 5
-  }
-  upgrade_config {
-    strategy = "SURGE"
-    max_surge = 1
-    max_unavailable = 0
-  }
-  image_id = "img-108b3a77-ab58-4000-9b3e-190d0b4b07fc"
-  flavor_id = "flav-9e88cfb4-ec31-4ad4-8ba5-243459f6d123"
-  subnet_id = "sub-cddd7ffa-be05-4698-9b3d-794e1adfcbce"
-  secondary_subnets = ["10.200.27.0/24", "10.200.28.0/24"]
-  disk_size = 50
-  disk_type = "vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018"
-  enable_private_nodes = false
-  ssh_key_id= "ssh-f923c53c-cba7-4131-9f86-175d04ae2123"
-  security_groups = ["secg-faf05344-fbd6-4f10-80a2-cda08d15ba5e"]
-  labels = {
-    "test" = "terraform"
-  }
-  taint {
-    key    = "key1"
-    value  = "value1"
-    effect = "PreferNoSchedule"
-  }
-}
-```
-
-{% hint style="info" %}
-**Chú ý:**
-
-* Để lấy image\_id bạn mong muốn sử dụng, bạn có thể truy cập vào VKS Portal, chọn menu System Image và lấy ID mà bạn mong muốn hoặc lấy thông tin này tại [đây](tham-khao-them/danh-sach-system-image-dang-ho-tro.md).
-* Để lấy flavor\_id bạn mong muốn sử dụng cho Node group của bạn, vui lòng lấy ID tại [đây](tham-khao-them/danh-sach-flavor-dang-ho-tro.md).
+* Để lấy image\_id, flavor\_id bạn mong muốn sử dụng, bạn có thể truy cập vào VKS Portal, chọn menu System Image và lấy ID mà bạn mong muốn.
 {% endhint %}
 
 ### **Khởi chạy Terraform command** <a href="#quanlyvcontainervoiterraform-khoichayterraformcommand" id="quanlyvcontainervoiterraform-khoichayterraformcommand"></a>
@@ -287,6 +225,11 @@ terraform apply
 ```
 
 * Chọn **YES** để thực hiện việc khởi tạo Cluster, Node Group thông qua Terraform
+* Nếu bạn không còn nhu cầu sử dụng Cluster, bạn có thể xóa bằng lệnh:
+
+```
+terraform destroy
+```
 
 ***
 
@@ -294,7 +237,7 @@ terraform apply
 
 Sau khi khởi tạo thành công Terraform, bạn có thể lên VKS Portal để xem thông tin Cluster vừa tạo.
 
-Tham khảo thêm về cách sử dụng Terraform để làm việc với VKS tại [đây](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks\_cluster).
+Tham khảo thêm về cách sử dụng Terraform để làm việc với VKS tại [đây](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
 
 ### **Một số lưu ý khi sử dụng VKS với Terraform:**
 
@@ -350,3 +293,4 @@ resource "vngcloud_vks_cluster_node_group" "example" {
   }
 }
 ```
+
