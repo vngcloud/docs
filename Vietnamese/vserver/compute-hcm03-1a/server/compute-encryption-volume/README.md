@@ -1,6 +1,6 @@
 # Compute Encryption Volume
 
-Compute Encryption Volume  là dịch vụ mã hóa các ổ disk  được tích hợp vào trong hệ thống vServer. Dịch vụ này dùng để tạo, lưu trữ và kiểm soát các khóa để mã hóa dữ liệu của mình&#x20;
+Compute Encryption Volume  là dịch vụ mã hóa các Volume  được tích hợp vào trong hệ thống vServer. Dịch vụ này dùng để tạo, lưu trữ và kiểm soát các khóa để mã hóa dữ liệu của mình&#x20;
 
 
 
