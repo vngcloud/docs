@@ -32,7 +32,7 @@ Sử dụng endpoint đã được tạo, bạn có thể gọi Gateway bằng c
 
 * Bước 1: Truy cập vào gateway cần gửi request tới, chọn tab **Provider & Model (1)**, nhấn chọn **Model cần gửi request tới (2)**.
 * Bước 2: Từ sample **CURL command (3)**, nhập authenticated token muốn sử dụng cho request này, và nhấn copy.
-  * Format gateway endpoint: `https://user-{portalUserId}-{gatewayName}.aigateway.console.vngcloud.vn/{modelProvider}/chat/completions`
+  * Format gateway endpoint: `https://user-{portalUserId}-{gatewayName}.aigateway.console.vngcloud.vn/{modelProvider}/{model}/chat/completions`
 * Bước 3: Sử dụng Postman hoặc curl từ backend ứng dụng của bạn. ![](<../../.gitbook/assets/m_p (3).png>)
 
 _AI Gateway sẽ tự động forward request đến model đã được kết nối và trả lại kết quả._
