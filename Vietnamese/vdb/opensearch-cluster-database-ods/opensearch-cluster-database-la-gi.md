@@ -1,17 +1,8 @@
 # OpenSearch Cluster Database là gì?
 
-**OpenSearch Cluster Database** là một CSDL phân tán dựa trên **OpenSearch**, một công cụ tìm kiếm và phân tích mã nguồn mở được phát triển từ **Elasticsearch.**
+## **OpenSearch Cluster Database là gì?**
 
-## **OpenSearch Cluster là gì?**
-
-OpenSearch Cluster là một nhóm các VM (node) chạy OpenSearch, các node này được liên kết với nhau để lưu trữ, quản lý và truy vấn dữ liệu một cách phân tán. Từ đó, nó có thể xử lý **tìm kiếm văn bản, phân tích dữ liệu log, giám sát hệ thống, và các tác vụ phân tích dữ liệu lớn (Big Data Analytics)**.
-
-## **Cấu trúc của OpenSearch Cluster**
-
-Một OpenSearch Cluster thường bao gồm nhiều **node** với các vai trò khác nhau:
-
-* **Master Node**: Quản lý metadata của cluster, như phân vùng (shards) và việc bổ sung node.
-* **Data Node**: Lưu trữ dữ liệu và xử lý truy vấn tìm kiếm,...
+**OpenSearch Database** là nền tảng tìm kiếm và phân tích dữ liệu được phát triển từ Elasticsearch. Nền tảng này cho phép lưu trữ, tìm kiếm và phân tích dữ liệu theo thời gian thực, phù hợp với các ứng dụng như log analytics, giám sát hệ thống và tìm kiếm văn bản.
 
 ## OpenSearch làm Vector Database như thế nào?
 
