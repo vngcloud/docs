@@ -904,3 +904,4 @@
   * [vCDN](faq/vcdn.md)
   * [vDB](faq/vdb.md)
   * [NTP server](faq/ntp-server.md)
+  * [DDoS](faq/ddos.md)
