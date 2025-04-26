@@ -487,7 +487,7 @@
       * [Mở rộng dung lượng lưu trữ File Storage](vstorage/filestorage/cac-tinh-nang-cua-filestorage/mo-rong-tai-nguyen.md)
       * [Xóa File Storage](vstorage/filestorage/cac-tinh-nang-cua-filestorage/xoa-tai-nguyen.md)
     * [Use cases](vstorage/filestorage/use-cases/README.md)
-      * [Backup dữ liệu từ File Storage sang Object Storage trên VNG Cloud](vstorage/filestorage/use-cases/backup-du-lieu-tu-file-storage-sang-object-storage-tren-vng-cloud.md)
+      * [Backup dữ liệu từ NFS File Storage sang Object Storage trên VNG Cloud](vstorage/filestorage/use-cases/backup-du-lieu-tu-nfs-file-storage-sang-object-storage-tren-vng-cloud.md)
     * [Thông số kỹ thuật](vstorage/filestorage/thong-so-ky-thuat.md)
     * [Quản lý truy cập](vstorage/filestorage/quan-ly-truy-cap/README.md)
       * [Tính năng, tài nguyên File Storage và quyền truy cập](vstorage/filestorage/quan-ly-truy-cap/tinh-nang-tai-nguyen-file-storage-va-quyen-truy-cap.md)
