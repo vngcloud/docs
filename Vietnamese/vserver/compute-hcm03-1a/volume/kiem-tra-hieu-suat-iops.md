@@ -4,7 +4,7 @@
 
 Để kiểm tra hiệu suất IOPS (Input/Output Operations Per Second) trên một Volume, bạn có thể sử dụng công cụ `fio.`
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Cảnh báo**
@@ -541,11 +541,11 @@ Hiện tại, hệ thống vServer và vMonitor Platform đã tích hợp sẵn 
 2. Chọn mục **Dashboard**, sau đó chọn **All VNG Cloud**
 3. Tiếp tục tìm và chọn vào **Dashboard** chứa tên server của bạn, tên **Dashboard** này sẽ có định dạng: `vServer-tên-server-xxxx`
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Tại màn hình chi tiết **Dashboard**, bạn có thể thấy biểu đồ thể hiện thông số IOPS tại biểu đồ bên dưới:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
