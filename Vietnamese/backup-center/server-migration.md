@@ -35,7 +35,7 @@ Việc **migrate server từ nền tảng cloud khác về một server hiện h
 
 **Khuyến nghị**:
 
-* **Backup toàn bộ dữ liệu và snapshot** trên server đích trước khi thực hiện.
+* **Backup toàn bộ dữ liệu** trên server đích trước khi thực hiện.
 * **Tốt nhất nên tạo một server mới** để tiến hành migration, đảm bảo an toàn và dễ rollback nếu cần.
 
 **2. Xác định cấu hình tài nguyên phù hợp**
