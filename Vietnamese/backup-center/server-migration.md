@@ -27,9 +27,48 @@ Việc migrate server từ các nền tảng cloud khác về VNG Cloud mang l�
 
 ## 3. Các lưu ý quan trọng trước khi migrate
 
-* Việc migrate server từ cloud khác sang server hiện hữu tại VNG Cloud **có thể gây mất toàn bộ dữ liệu và snapshot** trên server hiện hữu đó, nếu có nhu cầu migrate sang server hiện hữu tại VNG Cloud, bạn nên **backup toàn bộ dữ liệu** trước khi tiến hành, hoặc
-* **Nên tạo server mới để migrate**
-* Xác định rõ cấu hình tài nguyên (CPU, RAM, Disk) tương ứng giữa server cũ và mới để tránh thiếu hụt.
+Để đảm bảo quá trình **server migration** diễn ra suôn sẻ, an toàn và không gây gián đoạn hệ thống, bạn cần lưu ý các điểm quan trọng sau:
+
+**1. Cẩn trọng khi migrate vào server hiện hữu**
+
+Việc **migrate server từ nền tảng cloud khác về một server hiện hữu tại VNG Cloud** có thể gây **mất toàn bộ dữ liệu và snapshot** đang có trên server đích.&#x20;
+
+**Khuyến nghị**:
+
+* **Backup toàn bộ dữ liệu và snapshot** trên server đích trước khi thực hiện.
+* **Tốt nhất nên tạo một server mới** để tiến hành migration, đảm bảo an toàn và dễ rollback nếu cần.
+
+**2. Xác định cấu hình tài nguyên phù hợp**
+
+Trước khi migration, bạn cần xác định rõ **cấu hình tài nguyên** của server nguồn để đảm bảo server đích có cấu hình **tương đương hoặc cao hơn**, tránh tình trạng thiếu hụt tài nguyên dẫn đến lỗi hoặc giảm hiệu suất:
+
+* **CPU**
+* **RAM**
+* **Disk**
+
+**3. Đồng bộ loại bảng phân vùng ổ đĩa (Partition Table)**
+
+Trong hệ thống máy tính, hai loại bảng phân vùng phổ biến là:
+
+* **MBR (Master Boot Record)**: Chuẩn cũ, hỗ trợ tối đa 2TB và 4 phân vùng chính.
+* **GPT (GUID Partition Table)**: Chuẩn mới, hỗ trợ dung lượng lớn hơn và nhiều phân vùng hơn.
+
+Khi thực hiện migration, ngoài việc dung lượng ổ đĩa đích **phải lớn hơn hoặc bằng ổ đĩa nguồn**, bạn cần đảm bảo:
+
+* **Server nguồn và server đích sử dụng cùng loại bảng phân vùng (MBR hoặc GPT)**.
+
+Việc không đồng bộ bảng phân vùng có thể khiến hệ điều hành không khởi động được sau khi restore. Bạn có thể sử dụng một trong các công cụ sau:
+
+```bash
+# Kiểm tra với fdisk
+sudo fdisk -l /dev/sdX
+
+# Kiểm tra với parted
+sudo parted /dev/sdX print
+
+# Kiểm tra nhanh với lsblk
+lsblk -o NAME,PTTYPE
+```
 
 ## 4. Các bước thực hiện migrate server
 
