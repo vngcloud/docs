@@ -106,3 +106,17 @@ Việc migrate server từ các nền tảng cloud khác về VNG Cloud mang l�
 
     <figure><img src="../.gitbook/assets/check.png" alt=""><figcaption></figcaption></figure>
 * Truy cập Server Migration tại Backup Center để kiểm tra logs migration[ tại đây](https://backupcenter.console.vngcloud.vn/server-migration).
+
+## 5. Hiệu suất migration
+
+Trong quá trình thử nghiệm thực tế với các cấu hình tối ưu từ VNG Cloud, kết quả cho thấy hiệu suất migration vượt trội:
+
+* **IOPS**: Lên đến **60,000**
+* **Throughput**: Đạt **800 MB/s**
+* **Bandwidth trong nước**: Hỗ trợ **PAYG** linh hoạt theo nhu cầu
+
+Đặc biệt, trong quá trình **restore dữ liệu**, tốc độ có thể đạt đến **1Gbps**, giúp tăng đáng kể tốc độ khôi phục và giảm thiểu thời gian downtime.
+
+* Thời gian di chuyển thực tế: Với các thông số kỹ thuật như trên, trung bình quá trình di chuyển dữ liệu **20GB chỉ mất khoảng 2–3 phút**, cho thấy sự hiệu quả rõ rệt so với các giải pháp truyền thống hoặc hạ tầng không được tối ưu.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
