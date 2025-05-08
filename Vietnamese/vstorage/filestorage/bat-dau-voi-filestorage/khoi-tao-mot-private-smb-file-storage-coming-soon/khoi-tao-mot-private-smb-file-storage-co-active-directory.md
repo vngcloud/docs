@@ -184,7 +184,7 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 * **Do not allow dynamic updates:** nếu bạn chưa có sẵn **Active Directory** nào integrate với **zone** của bạn. Nếu bạn chọn phương án này, bạn cần thực hiện <mark style="background-color:orange;">tạo Reverse Lookup Zone thủ công</mark> theo hướng dẫn bên dưới.&#x20;
 * Sau đó, bạn chọn **Next.**&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="509"><figcaption></figcaption></figure>
 
 8. Chọn **Finish** để hoàn thành việc tạo New Zone
 
@@ -206,7 +206,7 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 
 11. Nếu bạn chọn **Create associated pointer (PTR) record**, bạn cần phải tạo một **Reverse Loopup Zone**, các bước khởi tạo tương tự tạo **Forward Lookup Zone**.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="347"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="347"><figcaption></figcaption></figure>
 
 ### Tạo một Reverse Lookup Zone
 
