@@ -983,6 +983,7 @@
     * [Notebook instance](ai-stack/ai-platform/notebook-instance.md)
     * [Network volume](ai-stack/ai-platform/network-volume.md)
     * [Inference](ai-stack/ai-platform/inference.md)
+    * [Model Catalog](ai-stack/ai-platform/model-catalog.md)
   * [AI Gateway](ai-stack/ai-gateway/README.md)
     * [Bắt đầu với AI Gateway](ai-stack/ai-gateway/bat-dau-voi-ai-gateway.md)
     * [Model Providers](ai-stack/ai-gateway/model-providers.md)
