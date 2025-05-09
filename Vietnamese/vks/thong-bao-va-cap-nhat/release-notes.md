@@ -1,5 +1,42 @@
 # Release notes
 
+## May 9, 2025 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
+
+VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Tính năng mới:**
+
+* **Tự động xóa cluster không có node active sau 30 ngày:** Hệ thống sẽ tự động quét và xóa các cluster không có node nào active trong vòng 30 ngày. Trong thời hạn quét và trước khi xóa, email cảnh báo sẽ được gửi đến bạn để đảm bảo bạn có thể chủ động xử lý nếu cần giữ lại cluster.&#x20;
+* **Hỗ trợ Placement Group cho từng Node Group:** cho phép bạn kiểm soát vị trí triển khai node một cách hiệu quả hơn nhằm tối ưu hiệu năng và đảm bảo độ sẵn sàng cao, đặc biệt hữu ích cho các workload yêu cầu phân tán vật lý hoặc đồng vị trí để giảm độ trễ.
+* **Phát hành thêm version Kubernetes v1.30.10:** Phiên bản mới v1.30.10 đã sẵn sàng trên cả hai region HCM, HAN với đầy đủ 2 loại Image (Ubuntu with containerd và Container-Optimized OS with containerd). Phiên bản này đang được phát hành trong **release channel: Rapid** – thích hợp cho môi trường thử nghiệm hoặc các dự án cần cập nhật sớm.
+
+***
+
+## April 25, 2025 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
+
+VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều cải tiến cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Cải tiến:**
+
+* **Dừng hỗ trợ phiên bản Kubernetes v1.27.12-vks.1724605200 vào ngày 12/05/2024:** Kể từ ngày 25/04/2025, bạn sẽ không thể tạo mới cluster với phiên bản này. Nếu bạn vẫn đang sử dụng phiên bản này, vui lòng thực hiện manually upgrade lên phiên bản mới hơn trước ngày 12/05/2024. Sau thời hạn trên, hệ thống sẽ automatically upgrade các cluster/ node group đang ở phiên bản này lên phiên bản cao hơn để đảm bảo tính ổn định và bảo mật.
+
+Nếu cần hỗ trợ, vui lòng liên hệ bộ phận kỹ thuật của chúng tôi qua các kênh hỗ trợ..
+
+***
+
+## April 16, 2025 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
+
+VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Tính năng mới:**
+
+* **Hỗ trợ Private Cluster tại region HAN** – Trước đây, **Private Cluster** – cụm Kubernetes có control plane và node hoàn toàn riêng tư, chỉ truy cập được qua mạng nội bộ – chỉ khả dụng tại **region HCM**. Từ bản cập nhật này, bạn đã có thể:
+  * Tạo và sử dụng Private Cluster tại region HAN.
+  * Đảm bảo tính đồng bộ giữa hai region **HCM và HAN** về mặt tính năng.
+  * Linh hoạt lựa chọn vị trí triển khai gần hơn với workload,...
+
+***
+
 ## Mar 5, 2025 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
 VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
