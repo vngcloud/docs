@@ -8,7 +8,7 @@
 
 ## Hướng dẫn sử dụng dịch vụ vDCI
 
-**Bước 1: Liên hệ bộ phận kỹ thuật để cấp phát hạ tầng**
+### **Bước 1: Liên hệ bộ phận kỹ thuật để cấp phát hạ tầng**
 
 Để bắt đầu sử dụng dịch vụ vDCI, người dùng cần thực hiện bước chuẩn bị ban đầu như sau:
 
@@ -25,14 +25,14 @@
 
 > Lý do cần liên hệ trước: vDCI chạy trên tài nguyên **dedicated vật lý**, cần được cấp phát và cấu hình theo nhu cầu riêng biệt, không hoạt động theo mô hình self-service 100%.
 
-**Bước 2: Đăng nhập Portal và Kiểm tra tài nguyên**
+### **Bước 2: Đăng nhập Portal và Kiểm tra tài nguyên**
 
 Sau khi được cấp quyền, người dùng đăng nhập vào Portal và kiểm tra các cấu hình phần cứng theo thông tin dưới đây:
 
 * Truy cập vDCI Portal tại đây: [https://vdci.console.vngcloud.vn/overview](https://vdci.console.vngcloud.vn/overview)
 * Tại mục Dedicated Cloud Instance bên menu bên trái, chọn mục Flavor để kiểm tra danh sách cấu hình phần cứng được cấp phát tại đây: [https://vdci.console.vngcloud.vn/dedicated-cloud-instance/flavor](https://vdci.console.vngcloud.vn/dedicated-cloud-instance/flavor)
 
-**Bước 3: Khởi tạo Network**
+### **Bước 3: Khởi tạo Network**
 
 1. Truy cập Portal → **Network**
 2. Nhấn **Tạo Mạng (Create Network)**
@@ -43,7 +43,7 @@ Sau khi được cấp quyền, người dùng đăng nhập vào Portal và ki�
 > **CIDR sẽ được VNG Cloud tự động cấp phát.**\
 > Nếu bạn có yêu cầu CIDR cụ thể hãy liên hệ bộ phận kỹ thuật để được hỗ trợ tùy chỉnh.
 
-**Bước 4: Tạo Dedicated Cloud Instance (vDCI Instance)**
+### **Bước 4: Tạo Dedicated Cloud Instance (vDCI Instance)**
 
 Để đảm bảo instance được khởi tạo có thể truy cập và cấu hình ngay từ đầu, bạn cần chuẩn bị một trong hai loại thông tin sau trước khi thực hiện khởi tạo:
 
@@ -75,8 +75,6 @@ Sau khi được cấp quyền, người dùng đăng nhập vào Portal và ki�
   * Windows Server (2019, 2022)
 * **Lưu ý**: Một số image yêu cầu license (ví dụ: Windows), hệ thống sẽ tính phí tương ứng nếu áp dụng.
 
-***
-
 #### 3. **Flavor (Cấu hình phần cứng)**
 
 * **Mục đích**: Chọn cấu hình tài nguyên cho máy chủ (GPU, vCPU, RAM, Disk)
@@ -87,8 +85,6 @@ Sau khi được cấp quyền, người dùng đăng nhập vào Portal và ki�
   * `vDCI.gpu.1`: 8 vCPU, 32GB RAM, 1 GPU
 
 > Nếu bạn không thấy flavor phù hợp, liên hệ bộ phận kỹ thuật để được cấp thêm.
-
-***
 
 #### 4. **Cài đặt mạng (Networking)**
 
@@ -108,8 +104,6 @@ Sau khi được cấp quyền, người dùng đăng nhập vào Portal và ki�
   * Máy nội bộ, backend, hoặc máy test/dev không cần expose ra Internet
 
 > Gợi ý: Tắt IP Public nếu chỉ dùng private hoặc quản lý qua bastion host để tăng bảo mật.
-
-***
 
 #### 5. **Chế độ khởi tạo truy cập (Access Mode)**
 

@@ -975,7 +975,7 @@
     * [Xoá VPN](vnetwork/vpn-virtual-private-network-site-to-site/xoa-cross-connect.md)
     * [Các gói VPN](vnetwork/vpn-virtual-private-network-site-to-site/cac-goi-bang-thong.md)
     * [Demo VPN Site To Site](https://docs.vngcloud.vn/vng-cloud-document/vnetwork/vpn-virtual-private-network-site-to-site/demo-site-to-site-vpn)
-* [vDCI](vdci/README.md)
+* [vDCI](vdci.md)
   * [Bắt đầu với vDCI](vdci/bat-dau-voi-vdci.md)
 * [AI Speech Text](ai-speech-text.md)
 * [AI Stack](ai-stack/README.md)
