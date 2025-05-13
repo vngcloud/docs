@@ -25,9 +25,7 @@ Dịch vụ **VNG Dedicated Cloud Instance (vDCI)** cung cấp hạ tầng máy 
 
 Hệ thống cung cấp nhiều loại flavor tùy theo nhóm workload:
 
-<table><thead><tr><th>Loại Flavor</th><th>Mô tả</th><th width="281">Ví dụ Flavor Name</th><th>CPU / RAM</th><th>NIC</th></tr></thead><tbody><tr><td>General Purpose</td><td>Cân bằng CPU/RAM</td><td><code>s-general</code>, <code>a-general</code>, <code>a1-standard</code>, <code>s1-standard</code></td><td> 1 -> 48 / 1 -> 192</td><td>Up to 10 Gbps</td></tr><tr><td>Compute Optimized</td><td>Tối ưu CPU, phù hợp xử lý song song</td><td><code>a1-highcpu</code>, <code>s1-highcpu</code></td><td>2 -> 32 / 2 -> 64</td><td>Up to 10 Gbps</td></tr><tr><td>Memory Optimized</td><td>Tối ưu RAM, phù hợp in-memory workload</td><td><code>s1-highmem</code>, <code>a1-highmem</code></td><td>2 -> 32 / 16 -> 256</td><td>Up to 10 Gbps</td></tr></tbody></table>
-
-> Các flavor có hậu tố `-a`, `-s` biểu thị các phân nhóm phần cứng riêng biệt theo nhu cầu đặc thù.
+<table><thead><tr><th>Loại CPU</th><th width="144">Tổng RAM</th><th width="111">Tổng vCPUs</th><th>Ghi chú</th></tr></thead><tbody><tr><td>Intel Xeon Gold 6242 @ 2.80GHz</td><td>Up to 1 TB</td><td>64</td><td>Hiệu năng cao, phổ biến trong doanh nghiệp</td></tr><tr><td>Intel Xeon Gold 6226R @ 2.90GHz</td><td>Up to 1 TB</td><td>64</td><td>Dành cho workload nhỏ và ổn định</td></tr><tr><td>Intel Xeon Gold 6342 @ 2.80GHz</td><td>Up to 1 TB</td><td>96</td><td>Cân bằng giữa hiệu năng và tiêu thụ điện</td></tr><tr><td>Intel Xeon Platinum 8358P @ 2.60GHz</td><td>Up to 1 TB</td><td>128</td><td>Phù hợp workload lớn, đa nhiệm</td></tr><tr><td>AMD EPYC 7543P 32-Core</td><td>Up to 1 TB</td><td>64</td><td>Nhiều nhân, tối ưu hóa chi phí hiệu năng</td></tr><tr><td>AMD EPYC 7702P / 7713P / 7763</td><td>Up to 1 TB</td><td>96 -> 128</td><td>Nhiều nhân, tối ưu hóa chi phí hiệu năng</td></tr></tbody></table>
 
 ### GPU Instance
 
@@ -42,4 +40,4 @@ Hệ thống cung cấp nhiều loại flavor tùy theo nhóm workload:
 | Xeon E5-2667 v4       | NVIDIA RTX 2080 Ti | 8      | 64 -> 192 | 512 -> 2048 |
 | Xeon Platinum 8480C   | NVIDIA H100        | 8      | 64 -> 192 | 512 -> 2048 |
 
-> ✅ GPU hỗ trợ đa dạng nhu cầu từ inference (RTX 2080 Ti) đến training mạnh (A40, H100, RTX 4090).
+> GPU hỗ trợ đa dạng nhu cầu từ inference (RTX 2080 Ti) đến training mạnh (A40, H100, RTX 4090).
