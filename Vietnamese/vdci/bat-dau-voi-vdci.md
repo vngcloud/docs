@@ -121,5 +121,5 @@ Người dùng bắt buộc chọn **một trong hai chế độ** để truy c�
 * **Tác dụng**: Dùng để tự động tạo user, cài phần mềm, thiết lập dịch vụ
 * **Phù hợp với**: Các hệ thống có pipeline tự động hóa, cần bootstrap cấu hình phức tạp
 
-> ⚠️ Một trong hai mode này **phải được cung cấp** trước khi nhấn "Create". Nếu không, hệ thống sẽ báo lỗi.
+> Một trong hai mode này **phải được cung cấp** trước khi nhấn "Create". Nếu không, hệ thống sẽ báo lỗi.
 

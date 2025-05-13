@@ -977,6 +977,7 @@
     * [Demo VPN Site To Site](https://docs.vngcloud.vn/vng-cloud-document/vnetwork/vpn-virtual-private-network-site-to-site/demo-site-to-site-vpn)
 * [vDCI](vdci.md)
   * [Bắt đầu với vDCI](vdci/bat-dau-voi-vdci.md)
+  * [Cấu hình khả dụng](vdci/cau-hinh-kha-dung.md)
 * [AI Speech Text](ai-speech-text.md)
 * [AI Stack](ai-stack/README.md)
   * [Thông báo và cập nhật](ai-stack/thong-bao-va-cap-nhat.md)
