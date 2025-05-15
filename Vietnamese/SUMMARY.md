@@ -978,6 +978,8 @@
 * [vDCI](vdci.md)
   * [Bắt đầu với vDCI](vdci/bat-dau-voi-vdci.md)
   * [Cấu hình khả dụng](vdci/cau-hinh-kha-dung.md)
+  * [Quản lý DCI](vdci/quan-ly-dci.md)
+  * [Cách tính phí](vdci/cach-tinh-phi.md)
 * [AI Speech Text](ai-speech-text.md)
 * [AI Stack](ai-stack/README.md)
   * [Thông báo và cập nhật](ai-stack/thong-bao-va-cap-nhat.md)
