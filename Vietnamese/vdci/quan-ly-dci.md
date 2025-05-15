@@ -18,13 +18,7 @@ Hệ thống sẽ lưu lại toàn bộ các thao tác mà người dùng thực
 
 ## **Các thao tác người dùng có thể thực hiện**
 
-| Thao tác            | Yêu cầu trạng thái hiện tại | Mô tả                                                                |
-| ------------------- | --------------------------- | -------------------------------------------------------------------- |
-| Tạo máy mới         | —                           | Tạo DCI với cấu hình tùy chọn. Trạng thái ban đầu sẽ là `DEPLOYING`. |
-| Bật máy (Power On)  | `IN-USED` hoặc `POWER_OFF`  | Khởi động máy để sử dụng.                                            |
-| Tắt máy (Power Off) | `IN-USED`                   | Tạm dừng sử dụng tài nguyên. Máy sẽ không bị xoá.                    |
-| Đổi tên máy         | `IN-USED` hoặc `POWER_OFF`  | Thay đổi hostname để dễ quản lý.                                     |
-| Xoá máy             | `IN-USED` hoặc `POWER_OFF`  | Gỡ bỏ máy khỏi hệ thống. Trạng thái sẽ chuyển sang `DELETING`.       |
+<table><thead><tr><th>Thao tác</th><th width="220">Yêu cầu trạng thái hiện tại</th><th>Mô tả</th></tr></thead><tbody><tr><td>Tạo máy mới</td><td>—</td><td>Tạo DCI với cấu hình tùy chọn. Trạng thái ban đầu sẽ là <code>DEPLOYING</code>.</td></tr><tr><td>Bật máy (Power On)</td><td><code>IN-USED</code> hoặc <code>POWER_OFF</code></td><td>Khởi động máy để sử dụng.</td></tr><tr><td>Tắt máy (Power Off)</td><td><code>IN-USED</code></td><td>Tạm dừng sử dụng tài nguyên. Máy sẽ không bị xoá.</td></tr><tr><td>Đổi tên máy</td><td><code>IN-USED</code> hoặc <code>POWER_OFF</code></td><td>Thay đổi tên để dễ quản lý.</td></tr><tr><td>Xoá máy</td><td><code>IN-USED</code> hoặc <code>POWER_OFF</code></td><td>Gỡ bỏ máy khỏi hệ thống. Trạng thái sẽ chuyển sang <code>DELETING</code>.</td></tr><tr><td>Re-install OS image</td><td><code>POWER_OFF</code></td><td>Liên hệ team support để được hỗ trợ</td></tr><tr><td>Cấp thêm Public IP (v4/v6)</td><td><code>IN-USED</code> hoặc <code>POWER_OFF</code></td><td>Liên hệ team support để được hỗ trợ</td></tr><tr><td>Truy cập DCI (Connect)</td><td><code>IN-USED</code></td><td><ul><li>Thông qua SSH Key (nếu có IP Public)</li><li>Hoặc liện hệ hỗ trợ để tạo Interconnect SSH server từ VM</li></ul></td></tr></tbody></table>
 
 #### **Lưu ý bảo mật và vận hành**
 
