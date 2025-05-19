@@ -84,7 +84,8 @@ Sau khi được cấp quyền, người dùng đăng nhập vào Portal và ki�
   * `vDCI.medium`: 4 vCPU, 8GB RAM, 100GB SSD
   * `vDCI.gpu.1`: 8 vCPU, 32GB RAM, 1 GPU
 
-> Nếu bạn không thấy flavor phù hợp, liên hệ bộ phận kỹ thuật để được cấp thêm.
+> - Tham khảo danh sách cấu hình khả dụng [tại đây](cau-hinh-kha-dung.md).&#x20;
+> - Nếu bạn không thấy flavor phù hợp, liên hệ bộ phận kỹ thuật để được cấp thêm.
 
 #### 4. **Cài đặt mạng (Networking)**
 

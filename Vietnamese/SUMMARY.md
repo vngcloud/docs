@@ -972,6 +972,7 @@
     * [Các gói VPN](vnetwork/vpn-virtual-private-network-site-to-site/cac-goi-bang-thong.md)
     * [Demo VPN Site To Site](https://docs.vngcloud.vn/vng-cloud-document/vnetwork/vpn-virtual-private-network-site-to-site/demo-site-to-site-vpn)
 * [vDCI](vdci.md)
+  * [Mô hình hoạt động](vdci/mo-hinh-hoat-dong.md)
   * [Bắt đầu với vDCI](vdci/bat-dau-voi-vdci.md)
   * [Cấu hình khả dụng](vdci/cau-hinh-kha-dung.md)
   * [Quản lý DCI](vdci/quan-ly-dci.md)
