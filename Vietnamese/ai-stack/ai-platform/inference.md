@@ -69,38 +69,32 @@ Tham khảo hướng dẫn tạo Service Account [tại đây](https://docs.vngc
 **Ví dụ**
 
 ```sh
-
 echo -n "a5d532c8-38ac-445f-b06c-cd54b2d68f67:1910628f-57b7-42b8-8f9e-e148866fd407" | base64 -w 0
 
 output >> YTVkNTMyYzgtMzhhYy00NDVmLWIwNmMtY2Q1NGIyZDY4ZjY3OjE5MTA2MjhmLTU3YjctNDJiOC04ZjllLWUxNDg4NjZmZDQwNw==
-
 ```
 
 **Thực hiện lệnh `curl` để lấy token**
 
 ```sh
-
 curl --location 'https://iamapis.vngcloud.vn/accounts-api/v2/auth/token' \
 --header 'Authorization: Basic YTVkNTMyYzgtMzhhYy00NDVmLWIwNmMtY2Q1NGIyZDY4ZjY3OjE5MTA2MjhmLTU3YjctNDJiOC04ZjllLWUxNDg4NjZmZDQwNw==' \
 --header 'Content-Type: application/json' \
 --data '{
-    "grant_type":"client_credentials",
-    "scope":"email"
+"grant_type":"client_credentials",
+"scope":"email"
 }'
-
 ```
 
 **Kết quả trả về**
 
 ```sh
-
 {
   "token_type": "Bearer",
   "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlckVaZFpkNkRsc21pdjhsMDZIaVB3bHZYWnotLVlGYXlZcVJiczlxc09rIn0",
   "expires_in": 1800,
   "refresh_expires_in": 0
 }
-
 ```
 
 ### Bước 3: Gọi Inference với Access Token
@@ -108,7 +102,6 @@ curl --location 'https://iamapis.vngcloud.vn/accounts-api/v2/auth/token' \
 Sau khi đã có `access_token`, bạn có thể gọi API để thực hiện inference theo mẫu sau, inference theo chuẩn của openai.
 
 ```sh
-
 curl -X POST "https://inference-aiplatform-hcm.api.vngcloud.vn/v1/<endpoint-id>/v1/chat/completions" \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer <access_token>" \
@@ -127,5 +120,4 @@ curl -X POST "https://inference-aiplatform-hcm.api.vngcloud.vn/v1/<endpoint-id>/
     "temperature": 0.7,
     "max_tokens": 500
 }'
-
 ```
