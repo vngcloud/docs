@@ -2,7 +2,7 @@
 
 Bạn có thể xem Rack layout (sơ đồ bố trí thiết bị trên rack) bằng cách chọn tủ rack cần xem và bấm nút “View rack layout“ phía trên đầu của danh sách (ứng dụng hỗ trợ xem rack layout của 10 tủ rack cùng một lúc).
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Trong giao diện Rack layout, bạn có thể:** <a href="#xemsodobotrithietbitrenrack-viewracklayout-tronggiaodienracklayout-bancothe" id="xemsodobotrithietbitrenrack-viewracklayout-tronggiaodienracklayout-bancothe"></a>
 

@@ -33,6 +33,51 @@
 
 ### Bước 2: Sync dữ liệu từ S3 vào Network Volume
 
+Dữ liệu có thể được đồng bộ từ S3 vào Network Volume theo hai phương thức: **tự động (auto-sync)** hoặc **thủ công (manual sync)**.
+
+#### 2.1 Manual Sync Dữ liệu khi Notebook vẫn đang chạy
+
+Nếu bạn không muốn tắt notebook nhưng vẫn muốn cập nhật dữ liệu thủ công, có thể sử dụng các API sync nội bộ từ terminal của notebook:
+
+```bash
+#kéo dữ liệu từ S3 về Notebook
+curl -X POST localhot:8080/pull
+
+#đẩy data từ Notebook lên S3 (ghi đè dữ liệu cũ)
+curl -X POST localhot:8080/finalize
+```
+
+> Lưu ý: Cần thực hiện lệnh này từ **bên trong notebook**, nơi đang mount Network Volume.
+
+#### 2.2 Sử dụng S3 Key với công cụ CLI
+
+Mỗi Network Volume tương ứng với một S3 bucket nội bộ. Có thể sử dụng s3 key của network volume để sử dụng với các công cụ command line [3rd party softwares | VNG Cloud docs](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/3rd-party-softwares). Bạn có thể sử dụng các công cụ dòng lệnh (CLI) như **s3cmd** để thao tác trực tiếp với dữ liệu trong volume. Ở tài liệu này sẽ hướng dẫn trên s3cmd.
+
+**Chuẩn bị:**
+
+* Cài đặt `s3cmd` trên máy
+* Tạo file cấu hình `s3cnf` như sau:
+
+```bash
+[default]
+access_key = <access_key>
+secret_key = <secret_key>
+host_base = <hostname>
+bucket_location = HCM03
+list_md5 = False
+host_bucket = %(bucket)s.<hostname>
+```
+
+> Bạn có thể lấy các thông tin `<access_key>`, `<secret_key>`, `<hostname>` từ trang chi tiết của Network Volume trong AI Platform.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+**Sử dung s3cmd với file s3cnf đã tạo có thể sử dung các action put, ls ... với bucket**
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
 ### Bước 3: Mount Network Volume vào Notebook
 
 Khi khởi tạo Notebook:

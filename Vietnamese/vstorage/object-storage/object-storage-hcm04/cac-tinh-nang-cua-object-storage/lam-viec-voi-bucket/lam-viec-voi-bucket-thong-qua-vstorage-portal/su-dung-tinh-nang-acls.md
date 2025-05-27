@@ -47,7 +47,7 @@ b. Đối với **IAM User Account** và **Service Account**: bạn có thể l�
 * Chọn action **List** để cấp quyền liệt kê danh sách object thuộc bucket cho tất cả người dùng.
 * Chọn **Save**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Ví dụ 2: Cấp quyền FULL\_CONTROL cho một tài khoản vStorage khác**
 
@@ -61,11 +61,11 @@ Chú ý:&#x20;
 * Chọn action **List, Write** để cấp quyền liệt kê danh sách object thuộc bucket và tải object lên bucket này.
 * Chọn **Save**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Như hình bên trên, tôi đã phân quyền làm việc trên `bucket001` cho người dùng `vngclouddemo-123456`. Lúc này, người dùng `vngclouddemo-123456` có thể sử dụng tính năng `Add external bucket` để thêm bucket được chia sẻ này và danh sách bucket của bạn:&#x20;
 
-<figure><img src="../../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**
