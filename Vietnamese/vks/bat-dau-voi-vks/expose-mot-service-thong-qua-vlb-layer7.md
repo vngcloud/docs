@@ -81,27 +81,29 @@ Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, n�
 **Cài đặt VNGCloud LoadBalancer Controller**
 
 * Cài đặt Helm phiên bản từ 3.0 trở lên. Tham khảo tại [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) để biết cách cài đặt.
-* Thay thế thông tin ClientID, Client Secret và ClusterID của cụm K8S của bạn và tiếp tục chạy:
+*   Thay thế thông tin ClientID, Client Secret và ClusterID của cụm K8S của bạn và tiếp tục chạy:
 
-```bash
-helm install vngcloud-load-balancer-controller oci://vcr.vngcloud.vn/81-vks-public/vks-helm-charts/vngcloud-load-balancer-controller \
-  --namespace kube-system \
-  --set mysecret.global.clientID= __________________ \
-  --set mysecret.global.clientSecret= __________________
-```
+    ```bash
+    helm install vngcloud-load-balancer-controller oci://vcr.vngcloud.vn/81-vks-public/vks-helm-charts/vngcloud-load-balancer-controller \
+      --namespace kube-system \
+      --set mysecret.global.clientID= __________________ \
+      --set mysecret.global.clientSecret= __________________
+    ```
 
-* Sau khi việc cài đặt hoàn tất, thực hiện kiểm tra trạng thái của pods:
 
-```bash
-kubectl get pods -n kube-system | grep vngcloud-ingress-controller
-```
+*   Sau khi việc cài đặt hoàn tất, thực hiện kiểm tra trạng thái của pod đã tạo:
 
-Ví dụ như ảnh bên dưới là bạn đã cài đặt thành công pods:
+    ```bash
+    kubectl -n kube-system get pod -l app.kubernetes.io/name=vngcloud-load-balancer-controller
+    ```
 
-```bash
-NAME                                      READY   STATUS    RESTARTS   AGE
-vngcloud-ingress-controller-0             1/1     Running   0          12s
-```
+
+*   Ví dụ như ảnh bên dưới là bạn đã cài đặt thành công vngcloud-controller-manager:
+
+    ```bash
+    NAME                                                              READY   STATUS    RESTARTS   AGE
+    vngcloud-load-balancer-controller-1736217866-manager-77599vrxpz   1/1     Running   0          4h24m
+    ```
 
 </details>
 
