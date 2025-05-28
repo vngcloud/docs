@@ -990,6 +990,7 @@
   * [AI Gateway](ai-stack/ai-gateway/README.md)
     * [Bắt đầu với AI Gateway](ai-stack/ai-gateway/bat-dau-voi-ai-gateway.md)
     * [Model Providers](ai-stack/ai-gateway/model-providers.md)
+  * [Cách tính phí](ai-stack/cach-tinh-phi.md)
 * [Veka.ai](vcloudcam.md)
 * [Service Health](service-health.md)
 * [Identity and Access Management (IAM)](identity-and-access-management-iam.md)
