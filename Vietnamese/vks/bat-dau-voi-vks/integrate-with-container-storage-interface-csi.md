@@ -44,13 +44,13 @@ Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiệ
 
 * Chạy câu lệnh sau đây để kiểm tra **node**
 
-```
+```bash
 kubectl get nodes
 ```
 
 * Nếu kết quả trả về như bên dưới tức là bạn Cluster của bạn được khởi tạo thành công với 3 node như bên dưới.
 
-```
+```bash
 NAME                                            STATUS     ROLES    AGE   VERSION
 ng-0e10592c-e70e-404d-a4e8-5e3b80f805e4-834b7   Ready      <none>   50m   v1.28.8
 ng-0e10592c-e70e-404d-a4e8-5e3b80f805e4-cf652   Ready      <none>   23m   v1.28.8
@@ -84,14 +84,14 @@ ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.
 * Cài đặt Helm phiên bản từ 3.0 trở lên. Tham khảo tại [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) để biết cách cài đặt.
 * Thêm repo này vào cluster của bạn qua lệnh:
 
-```
+```bash
 helm repo add vks-helm-charts https://vngcloud.github.io/vks-helm-charts
 helm repo update
 ```
 
 * Thay thế thông tin ClientID, Client Secret và ClusterID của cụm K8S của bạn và tiếp tục chạy:
 
-```
+```bash
 helm install vngcloud-blockstorage-csi-driver vks-helm-charts/vngcloud-blockstorage-csi-driver \
   --replace --namespace kube-system \
   --set vngcloudAccessSecret.keyId=${VNGCLOUD_CLIENT_ID} \
@@ -101,13 +101,13 @@ helm install vngcloud-blockstorage-csi-driver vks-helm-charts/vngcloud-blockstor
 
 * Sau khi việc cài đặt hoàn tất, thực hiện kiểm tra trạng thái của vngcloud-blockstorage-csi-driver pods:
 
-```
-kubectl get pods -n kube-system | grep vngcloud-ingress-controller
+```bash
+kubectl get pods -n kube-system | grep vngcloud-csi-controller
 ```
 
 Ví dụ như ảnh bên dưới là bạn đã cài đặt thành công vngcloud-controller-manager:
 
-```
+```bash
 NAME                                           READY   STATUS    RESTARTS       AGE
 vngcloud-csi-controller-56bd7b85f-ctpns        7/7     Running   6 (2d4h ago)   2d4h
 vngcloud-csi-controller-56bd7b85f-npp9n        7/7     Running   2 (2d4h ago)   2d4h
@@ -118,86 +118,13 @@ vngcloud-csi-node-c8r2w                        3/3     Running   0              
 
 ***
 
-### Deploy một Workload <a href="#exposemotservicethongquavlblayer7-deploymotworkload" id="exposemotservicethongquavlblayer7-deploymotworkload"></a>
+### **Tạo Storage Class**
 
-Sau đây là hướng dẫn để bạn deploy service nginx trên Kubernetes.
+Storage Class (hay còn được gọi tắt là SC) là **một mẫu** để tạo ổ đĩa (PersistentVolume) tự động theo nhu cầu. Trên VNGCloud, SC định nghĩa loại ổ đĩa, tốc độ, ... (ví dụ: SSD, HDD, IOPS 50000,...).
 
-**Bước 1**: **Tạo Deployment cho Nginx app.**
+* Tạo file **storage-class.yaml** với nội dung sau:&#x20;
 
-* Tạo file **nginx-service.yaml** với nội dung sau:
-
-```
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: nginx-app
-spec:
-  selector:
-    matchLabels:
-      app: nginx
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: nginx
-    spec:
-      containers:
-      - name: nginx
-        image: nginx:1.19.1
-        ports:
-        - containerPort: 80
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: nginx-service
-spec:
-  selector:
-    app: nginx 
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
-```
-
-* Deploy Deployment này bằng lệch:
-
-```
-kubectl apply -f nginx-service.yaml
-```
-
-***
-
-**Bước 2: Kiểm tra thông tin Deployment, Service vừa deploy**
-
-* Chạy câu lệnh sau đây để kiểm tra **Deployment**
-
-```
-kubectl get svc,deploy,pod -owide
-```
-
-* Nếu kết quả trả về như bên dưới tức là bạn đã deploy Deployment thành công.
-
-```
-NAME                    TYPE           CLUSTER-IP      EXTERNAL-IP   PORT(S)           AGE     SELECTOR
-service/kubernetes      ClusterIP      10.96.0.1       <none>        443/TCP           2d4h    <none>
-service/nginx-app       NodePort       10.96.215.192   <none>        30080:31289/TCP   6m12s   app=nginx
-service/nginx-service   LoadBalancer   10.96.179.221   <pending>     80:32624/TCP      16s     app=nginx
-
-NAME                        READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES         SELECTOR
-deployment.apps/nginx-app   1/1     1            1           16s   nginx        nginx:1.19.1   app=nginx
-
-NAME                             READY   STATUS    RESTARTS   AGE   IP              NODE                                            NOMINATED NODE   READINESS GATES
-pod/nginx-app-7f45b65946-t7d7k   1/1     Running   0          16s   172.16.24.202   ng-3f06013a-f6a5-47ba-a51f-bc5e9c2b10a7-ecea1   <none>           <none>
-```
-
-***
-
-### **Tạo Persistent Volume**
-
-* Tạo file **persistent-volume.yaml** với nội dung sau:
-
-```
+```bash
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
@@ -206,8 +133,23 @@ provisioner: bs.csi.vngcloud.vn                       # The VNG-CLOUD CSI driver
 parameters:
   type: vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018    # The volume type UUID
 allowVolumeExpansion: true                            # MUST set this value to turn on volume expansion feature
----
+```
 
+* Chạy câu lệnh sau đây để triển khai tạo storage class:
+
+```
+kubectl apply -f storage-class.yaml
+```
+
+***
+
+### **Tạo Persistent Volume Claim**
+
+PersistentVolumeClaim (hay còn gọi là PVC) là **yêu cầu người dùng gửi ra** để xin một ổ đĩa lưu trữ có kích thước cụ thể. Khi bạn tạo một PVC, Kubernetes sẽ dùng SC để tạo hoặc chọn một ổ đĩa phù hợp.
+
+* Tạo file **persistent-volume-claim.yaml** với nội dung sau:
+
+```
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -219,8 +161,21 @@ spec:
     requests:
       storage: 20Gi                                # [3] The PVC size, CAN be changed, this value MUST be in the valid range of the proper volume type
   storageClassName: my-expansion-storage-class     # [4] The StorageClass name, MUST be the same as [1]
----
+```
 
+* Chạy câu lệnh sau đây để triển khai tạo pvc:
+
+```
+kubectl apply -f persistent-volume-claim.yaml
+```
+
+***
+
+### Tạo pod dùng PVC
+
+* Tạo file **podnginx-pvc.yaml** với nội dung sau:
+
+```
 apiVersion: v1
 kind: Pod
 metadata:
@@ -243,17 +198,15 @@ spec:
         readOnly: false
 ```
 
-* Chạy câu lệnh sau đây để triển khai Ingress
+* Chạy câu lệnh sau đây để triển khai tạo pod:
 
 ```
-kubectl apply -f persistent-volume.yaml
+kubectl apply -f podnginx-pvc.yaml
 ```
 
-Lúc này, hệ thống vServer sẽ tự động tạo một Volume tương ứng với file yaml bên trên, ví dụ:
+Lúc này, hệ thống vServer sẽ tự động tạo một Volume tương ứng với file yaml bên trên, volume này sẽ được attach vào node chứa pod dùng PVC đang chạy, ví dụ:
 
 <figure><img src="../../.gitbook/assets/vks_volume_1.png" alt=""><figcaption></figcaption></figure>
-
-
 
 ***
 
@@ -272,8 +225,6 @@ Snapshot là phương pháp sao lưu giữ liệu với chi phí thấp, thuận
 Ví dụ:
 
 <figure><img src="../../.gitbook/assets/vks_snapshot.png" alt=""><figcaption></figcaption></figure>
-
-
 
 #### **Cài đặt VNGCloud Snapshot Controller**
 
