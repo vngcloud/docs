@@ -29,7 +29,7 @@ Bạn có thể gán Virtual IP cho các máy chủ ảo trong cùng hệ thốn
 
 ### Bước 2. Chọn Chế Độ Hoạt Động của VIP
 
-VIP hỗ trợ hai chế độ hoạt động: **Active/Active** và **Active/Passive**.
+VIP hỗ trợ hai chế độ hoạt động: **Active/Active** và **Active/Passive**. Tham khảo chi tiết các mode [tại đây](vip-mode.md).
 
 **Active/Active Mode**
 
