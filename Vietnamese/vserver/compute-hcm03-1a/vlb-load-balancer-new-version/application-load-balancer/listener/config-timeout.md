@@ -1,6 +1,8 @@
-# Config timeout
+# HTTP/ HTTPS Keep-Alive và Config Idle Timeout
 
-Tính năng **cấu hình timeout** cho Load Balancer cho phép bạn định rõ thời gian tối đa mà một kết nối hoặc yêu cầu có thể tồn tại trước khi bị đóng. Điều này quan trọng để quản lý tài nguyên và đảm bảo hiệu suất ổn định của hệ thống.
+**HTTP/ HTTPS Keep-Alive** trong vLB là một cơ chế trong giao thức HTTP/ HTTPS cho phép giữ kết nối giữa client và Load Balancer. Idle Timeout là thời gian giới hạn cho cơ chế đó khi không có hoạt động nào xảy ra.
+
+Tính năng **cấu hình Idle timeout** cho Load Balancer cho phép bạn định rõ thời gian tối đa mà một kết nối hoặc yêu cầu có thể tồn tại trước khi bị đóng. Điều này quan trọng để quản lý tài nguyên và đảm bảo hiệu suất ổn định của hệ thống.
 
 **Cách hoạt động**
 
@@ -15,12 +17,12 @@ Tính năng **cấu hình timeout** cho Load Balancer cho phép bạn định r�
 
 #### Hướng dẫn cấu hình timeout cho Load Balancer <a href="#configtimeout-huongdancauhinhtimeoutcholoadbalancer" id="configtimeout-huongdancauhinhtimeoutcholoadbalancer"></a>
 
-1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb**](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
-2. **Tại trang chủ Load Balancer, click chọn Load Balancer cần cấu hình.**
-3. **Tại phần thông tin chi tiết Load Balancer, chọn tab Listener.**
-4. **Nhấn biểu tượng Edit tại Listener cần cấu hình Timeout.**
-5. **Một cửa sổ giao diện sẽ hiện ra, tìm đến phần Cấu hình nâng cao ở phía dưới cùng của cửa sổ.**
-6. **Tại phần Idle Timeout, người dùng có thể cấu hình Timeout dựa trên các thuộc tính sau**
+1. Truy cập vào trang chủ Load Balancer tại đây: [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+2. Tại trang chủ **Load Balancer**, click chọn **Load Balancer** cần cấu hình.
+3. Tại phần thông tin chi tiết **Load Balancer**, chọn tab **Listener**.
+4. Nhấn biểu tượng **Edit** tại **Listener** cần cấu hình **Timeout**.
+5. Một cửa sổ giao diện sẽ hiện ra, tìm đến phần **Cấu hình nâng cao** ở phía dưới cùng của cửa sổ.
+6. Tại phần Idle Timeout, người dùng có thể cấu hình Timeout dựa trên các thuộc tính sau
    * **Client Timeout (Timeout của Khách hàng):**
      * **Giải thích**: Client Timeout là thời gian tối đa mà Load Balancer cho phép một khách hàng (client) duy trì kết nối đến nó mà không thực hiện bất kỳ yêu cầu (request) nào. Nếu trong khoảng thời gian này không có hoạt động nào từ phía khách hàng, kết nối sẽ bị đóng.
      * **Lợi ích**: Điều này giúp giải phóng tài nguyên máy chủ backend và Load Balancer, đảm bảo rằng không có kết nối không cần thiết tiêu tốn tài nguyên.
