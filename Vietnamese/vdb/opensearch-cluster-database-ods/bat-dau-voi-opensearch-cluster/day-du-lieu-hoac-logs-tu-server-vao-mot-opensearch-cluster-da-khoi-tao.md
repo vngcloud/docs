@@ -58,11 +58,11 @@ curl -H "Content-Type: application/json" -X PUT "https://open-search-dem-53461-5
 1. Truy cập và đăng nhập vào **OpenSearch Dashboards**
 2. Vào mục **Management**, chọn **Dashboard Management**&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Chọn mục **Index patterns**, tiếp tục chọn **Create index pattern**
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Nhập **Index pattern name**, ví dụ `ecommerce*` sau đó chọn **Next step**
 
@@ -160,14 +160,14 @@ Nếu logs xuất hiện, có nghĩa là Logstash đã gửi dữ liệu thành 
 1. Truy cập và đăng nhập vào **OpenSearch Dashboards**
 2. Vào mục **Management**, chọn **Dashboard Management**&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Chọn mục **Index patterns**, tiếp tục chọn **Create index pattern**
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Nhập **Index pattern name**, ví dụ `logstash-logs*` sau đó chọn **Next step**
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Cuối cùng, bạn hãy truy cập vào mục **Discover** để xem logs.

@@ -77,4 +77,4 @@ CORS là tính năng bảo mật đầu ra của vCDN cho phép truy cập có c
 
 * Sau cùng, bạn có thể không cho phép Origin có domain trong danh sách có thể truy cập link đầu ra bằng cách chọn **Block** và nhập **domain** mong muốn:
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

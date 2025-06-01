@@ -4,7 +4,7 @@
 
 **AI Gateway** là cổng kết nối tập trung giúp bạn tích hợp nhiều AI models (OpenAI, Google, Deepseek,...).Việc sử dụng AI Gateway giúp giảm độ phức tạp khi chuyển đổi model, hỗ trợ giám sát và quản lý, tối ưu chi phí, bảo mật dữ liệu.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ## Những điểm nổi bật của AI Gateway
 
@@ -16,4 +16,3 @@
 * **Tự động xử lý lỗi (coming soon):**&#x20;
   * **Automatic Retries:** Tự động gửi lại yêu cầu trong trường hợp lỗi tạm thời.
   * **Automatic Fallbacks:** Tự động chuyển sang mô hình thay thế khi mô hình chính gặp sự cố, đảm bảo dịch vụ không bị gián đoạn.
-

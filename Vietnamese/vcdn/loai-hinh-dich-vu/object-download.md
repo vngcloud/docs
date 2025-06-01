@@ -55,7 +55,7 @@ Dịch vụ Object Download của VNG Cloud giúp doanh nghiệp: tối ưu chi 
 * **CDN Info:**&#x20;
   * **CDN Name:** Nhập tên định danh cho CDN mà bạn muốn tạo.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin:**&#x20;
   * **HTTP Origin**: Server hỗ trợ giao thức HTTP.

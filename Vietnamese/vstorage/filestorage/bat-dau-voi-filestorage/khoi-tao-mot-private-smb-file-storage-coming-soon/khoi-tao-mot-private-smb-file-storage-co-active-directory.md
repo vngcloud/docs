@@ -248,11 +248,11 @@ Tiếp theo, bạn sẽ cần tạo một Reverse Lookup Zone để chuyển IP 
 
 8. Chọn **Finish** để hoàn thành việc tạo New Zone
 
-<img src="../../../../.gitbook/assets/image (7) (1) (1).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (7) (1) (1) (1).png" alt="" data-size="original">
 
 9. Sau khi chọn **Finish**, bạn sẽ thấy Reverse lookup zone trên màn hình chính như hình
 
-<img src="../../../../.gitbook/assets/image (11).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (11) (1).png" alt="" data-size="original">
 
 10. Sau khi tạo xong **reverse lookup zone**, bạn cần tạo **Pointer (PTR)** bằng cách chọn vào **Zone** vừa tạo, nhần chuột phải và chọn **New Pointer (PTR)**
 
@@ -263,7 +263,7 @@ Tiếp theo, bạn sẽ cần tạo một Reverse Lookup Zone để chuyển IP 
     2. **Host Name:** Nhập tên Windows server của bạn (VD: `demo-smb`).
     3. Nhấn **OK**.
 
-<img src="../../../../.gitbook/assets/image (10) (1).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (10) (1) (1).png" alt="" data-size="original">
 
 
 

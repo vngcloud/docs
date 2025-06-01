@@ -32,23 +32,23 @@
 
 **Bước 6:** Sau khi đóng màn hình **Create** bên trên, hệ thống sẽ hiển thị **danh sách** các đầu vào của kênh. Tại đây, bạn cần **chọn** các đầu vào tương ứng:
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 7:** Tại tab **profile**, bạn nhập các profile của đầu vào bằng cách chọn **Add profile** nếu đã có sẵn hoặc chọn **New profile** để tạo profile mới
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 8:** Trong ví dụ này, chúng tôi sẽ thêm một profile **video** định dạng 1080p và một **audio** 44\_1khz
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 9:** Tiếp theo, bạn cấu hình các luồng nhận stream mà bạn mong muốn stream tới
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 10:** Nhập thông tin **RTMP** sau đó nhấn **Submit**
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Tương tự như trên, quý khách có thể stream đồng thời tới nhiều RTMP khác bằng cách thêm cấu hình tại mục Target.**
 

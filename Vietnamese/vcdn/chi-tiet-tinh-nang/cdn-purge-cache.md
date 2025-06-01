@@ -70,13 +70,13 @@ Purge by BEGIN: Sẽ xóa hết các resource đang được Cache ở CDN bắt
 
 * Sau khi Purge kiểm tra file `/purge_lab/text*` đã được gọi về Origin để lấy nội dung mới nhất.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Do các file `/purge_lab/demo*` không được Purge nên nội dung vẫn được lấy từ Cache ở CDN.
 
 &#x20;
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -84,15 +84,15 @@ Purge by BEGIN: Sẽ xóa hết các resource đang được Cache ở CDN bắt
 
 Purge by CONTAIN: Sẽ xóa hết các resource đang được Cache ở CDN có chuỗi ký tự nhập vào.
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Tương tự như Purge by ALL, trước khi Purge Cache các file đã được Cache ở CDN. Tiến hành Purge Cache: Chọn **Service** và **CDN** tương ứng và **Purge by CONTAIN**. Tại URI nhập: `/*demo*`  (xóa cache tất cả các file \*demo\* đang được cache ở vCDN).
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Sau khi Purge Cache các file `/purge_lab/demo1.txt` ... Đã được gọi về Origin để lấy nội dung mới.
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Các file `/purge_lab/text1.txt` ... Vẫn lấy nội dung từ Cache ở CDN
 

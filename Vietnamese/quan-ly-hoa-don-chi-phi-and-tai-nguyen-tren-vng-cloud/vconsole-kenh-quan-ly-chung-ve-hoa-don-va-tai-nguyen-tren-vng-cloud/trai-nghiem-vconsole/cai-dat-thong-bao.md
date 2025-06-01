@@ -15,7 +15,7 @@ Việc cấu hình thông báo email sẽ giúp bạn chủ động hơn trong v
 * **Bước 2: Truy cập Message Center:**
   *   Tại giao diện chính, tìm và chọn mục 'Cài đặt thông báo'', mục này nằm trong menu bên trái như hình sau:&#x20;
 
-      <figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * **Bước 3: Cấu hình địa chỉ email nhận thông báo:**
   * Tại trang **'Trung tâm thông báo',** nhấn chọn **'Quản lý người nhận':** ![](<../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
     *   "**Xóa người nhận":** Từ danh sách, xóa người nhận không mong muốn bằng cách nhấn nút "Xóa"&#x20;

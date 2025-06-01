@@ -185,7 +185,7 @@ default = [    "secg-28e91c47-11b1-4cc1-8e24-dd174882708d"  ]
 }
 ```
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Kiểm tra lại thông tin file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/modules/vng-cloud-k8s/main.tf) _(theo đường dẫn **terraform-provider-vngcloud/examples/modules/vng-cloud-k8s/main.tf**)_, trong file chúng tôi để sẵn một số câu lệnh: **Create K8S**, **Create Cluster Node Group, Change Cluster for SecGroup, Attach Load Balancer for K8s...,** trường hợp này để Tạo mới K8S bạn chỉ  cần để lại resource **Create K8S** theo hướng dẫn bên dưới:
 

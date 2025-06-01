@@ -4,7 +4,7 @@
 
 Dịch vụ VNG Cloud Interconnect là lựa chọn tối ưu để kết nối tới tài nguyên VNG Cloud của bạn một cách trực tiếp và hiệu quả nhất. Khi sử dụng Interconnect, dữ liệu của bạn di chuyển thông qua hệ thống mạng nội bộ của VNG Cloud mà không cần phải sử dụng Internet công cộng. Điều này giúp giảm nguy cơ tắc nghẽn mạng hoặc độ trễ bất ngờ. Khi bạn cần tạo kết nối mới, bạn có thể triển khai một kết nối chuyên dụng từ VNG Cloud. Bên cạnh đó, chúng tôi cho phép bạn truyền dữ liệu giữa các vị trí VNG Cloud Direct Connect để xây dựng một mạng riêng biệt, kết nối linh hoạt giữa các văn phòng và trung tâm dữ liệu trong mạng lưới của bạn.
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

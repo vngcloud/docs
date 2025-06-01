@@ -20,7 +20,7 @@ Hướng dẫn này sẽ giúp bạn thực hiện quá trình khôi phục tài
 
 *   **Chọn backup server point:** Nếu muốn khôi phục toàn bộ máy chủ, hãy chọn backup server point mong muốn và nhấn restore.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 *   **Chọn backup volume point:** Nếu chỉ muốn khôi phục một volume cụ thể, hãy chọn backup server point chứa volume đó, sau đó chọn backup volume point cần khôi phục và nhấn restore.&#x20;
 
     <figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
