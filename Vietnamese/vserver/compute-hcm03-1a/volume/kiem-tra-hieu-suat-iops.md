@@ -32,7 +32,7 @@ Bên dưới là hướng dẫn chi tiết và kết quả mẫu cho 3 bài test
 
 1. Tạo một server với ổ đĩa Volume loại **NVME** với IOPS **5000** tại trang chủ vServer:
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 2. **Kết nối vào Server** của bạn. Để biết thêm thông tin hãy xem hướng dẫn [Kết nối vào máy chủ ảo](../server/ket-noi-vao-may-chu-ao/).
 3. Chạy lệnh sau để cài đặt **FIO**:

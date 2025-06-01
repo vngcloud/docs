@@ -244,7 +244,7 @@ Tiếp theo, bạn sẽ cần tạo một Reverse Lookup Zone để chuyển IP 
 
 7. Tại màn hình **Dynamic Update**: Chọn **Do not allow dynamic updates**, sau đó chọn **Next**
 
-<img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 
 8. Chọn **Finish** để hoàn thành việc tạo New Zone
 

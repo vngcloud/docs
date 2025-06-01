@@ -20,7 +20,7 @@
 * **ExposeHeaders**: Các header mà ứng dụng có thể thấy trong response từ S3.
 * **MaxAgeSeconds**: Thời gian tính bằng giây mà trình duyệt nên lưu trữ kết quả của request trước khi gửi request khác.
 
-<figure><img src="../../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5\. Chọn **Update** để lưu lại cấu hình đã thiết lập cho CORS.
 

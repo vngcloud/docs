@@ -70,7 +70,7 @@ curl -H "Content-Type: application/json" -X PUT "https://open-search-dem-53461-5
 
 5. Truy cập **Discover** để xem dữ liệu mẫu.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **Đẩy event logs từ Logstash vào OpenSearch**
 
