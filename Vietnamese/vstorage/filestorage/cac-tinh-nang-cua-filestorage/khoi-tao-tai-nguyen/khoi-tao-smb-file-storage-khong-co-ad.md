@@ -89,7 +89,7 @@ Sau khi bạn đã kết nối được vào Windows server, bạn cần đảm 
     * **IP Address:** địa chỉ IP tĩnh của VM.
     * **Subnet Mask:** Subnet tương ứng, ví dụ: 255.0.0.0
 
-<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

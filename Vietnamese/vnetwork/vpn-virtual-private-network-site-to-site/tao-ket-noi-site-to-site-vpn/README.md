@@ -45,7 +45,7 @@ Mặc định khi khởi tạo VPN Site-to-Site hệ thống yêu cầu tạo m�
 * **Remote Private CIDR**:  Điền Dải địa chỉ IP LAN của server OnPremise pfsense.
 * Tùy chọn **Pre-shared Key**: Là mật khẩu, keys mà VPN VNGCloud và Remote VPN OnPremise(Ví dụ: PFsense) sẽ dùng để auth cho nhau (Pre-shared Key – PSK phải giống nhau trên cả 2 bên). _Nếu không tích chọn_  _**"Used Your Pre-shared Key"** hệ thống sẽ tự sinh ra PSK_
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption><p>VPN Basic Configuration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption><p>VPN Basic Configuration</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (963).png" alt=""><figcaption><p>Default Tunnel Configuration</p></figcaption></figure>
 

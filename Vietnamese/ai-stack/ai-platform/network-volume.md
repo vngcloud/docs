@@ -70,7 +70,7 @@ host_bucket = %(bucket)s.<hostname>
 
 > Bạn có thể lấy các thông tin `<access_key>`, `<secret_key>`, `<hostname>` từ trang chi tiết của Network Volume trong AI Platform.
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
