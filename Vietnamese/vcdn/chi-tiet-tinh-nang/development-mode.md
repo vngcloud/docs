@@ -19,4 +19,4 @@ Cơ chế "Nhà phát triển" của vCDN là một tính năng đặc biệt ch
 
 * Trên vCDN, để bật/ tắt chế độ Nhà phát triển, bạn có thể chọn **Enable/ Disable** tại mục Development mode:
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

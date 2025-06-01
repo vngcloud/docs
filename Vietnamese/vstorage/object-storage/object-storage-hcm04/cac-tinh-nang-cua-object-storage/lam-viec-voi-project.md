@@ -48,7 +48,7 @@ Thực hiện tạo project theo các bước bên dưới:
 6. Chọn **Period** và chọn/bỏ chọn **Auto-renew** theo nhu cầu của bạn.
 7. Thực hiện các bước **Thanh toán** giỏ hàng và **Project** của bạn sẽ được khởi tạo.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -68,7 +68,7 @@ Bạn có thể xem và sử dụng các thuộc tính cho project bao gồm th�
 * **History**: Cung cấp thông tin lịch sử tác động tới project bao gồm loại hành động, trạng thái hành động, thời gian hành động xảy ra và mô tả chi tiết hành động nếu có.
 * **Connection Information**: Cung cấp các câu lệnh và tệp tin cấu hình để kết nối project với S3.
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

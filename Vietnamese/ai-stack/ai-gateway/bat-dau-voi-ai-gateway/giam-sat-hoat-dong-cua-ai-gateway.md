@@ -14,7 +14,7 @@ Tại giao diện chi tiết của một Gateway, chọn tab **Monitor** để t
 
 Bạn có thể tùy chỉnh khoảng thời gian quan sát (15m, 30m, 1h, 2h, v.v.) và lọc theo Provider hoặc Model cụ thể.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Logs
 
@@ -30,7 +30,7 @@ Tại đây, bạn có thể danh sách request được gửi tới AI Gateway 
 
 Bạn có thể tùy chỉnh khoảng thời gian quan sát (24h, 1d, 2d,...) và lọc theo Status cụ thể.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Ngoài ra, bạn có thể xem chi tiết một request bằng cách:
 
@@ -38,6 +38,8 @@ Ngoài ra, bạn có thể xem chi tiết một request bằng cách:
 * Tại đây bạn sẽ thấy:
   * **Input**: Nội dung câu hỏi hoặc prompt gốc bạn gửi vào.
   * **Output**: Kết quả trả về từ LLM Model.
-  * **Thông tin bổ sung**:&#x20;
+  * **Thông tin bổ sung**: host, model, thời gian phản hồi,...
 
-![](<../../../.gitbook/assets/image (3).png>)![](<../../../.gitbook/assets/image (2).png>)
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>

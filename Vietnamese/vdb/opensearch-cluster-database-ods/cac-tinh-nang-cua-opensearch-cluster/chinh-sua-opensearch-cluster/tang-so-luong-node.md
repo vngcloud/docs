@@ -14,6 +14,6 @@ Trong dịch vụ vDB OpenSearch của **VNG Cloud**, bạn có thể dễ dàng
 
 **Bước 5:** Chọn **Resize** và thực hiện thanh toán các bước (nếu có) khi bạn là người dùng trả trước.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Sau khi bạn thực hiện thành công các bước trên, tổng số nodes mới sau khi thay đổi sẽ được cập nhật trên thông tin chung của cluster mà bạn chọn.
