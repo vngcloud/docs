@@ -1,33 +1,35 @@
-# Cấu hình timeout (NLB)
+# Config Idle Timeout
 
-Tính năng **cấu hình timeout** cho Load Balancer cho phép bạn định rõ thời gian tối đa mà một kết nối hoặc yêu cầu có thể tồn tại trước khi bị đóng. Điều này quan trọng để quản lý tài nguyên và đảm bảo hiệu suất ổn định của hệ thống.
+Tổng quan
 
-**Cách hoạt động**
+NLB chỉ nhìn thấy địa chỉ IP nguồn/đích, cổng và protoocol. Nó khôngrequest  hiểu nội dung HTTP/HTTPS nên không xử lý header `Connection: keep-alive`. Do đó, khái niệm "HTTP/ HTTPS Keep-Alive" không được NLB xử lý như ALB. Tuy nhiên, nó vẫn chuyển tiếp các gói TCP/UDP, vì vậy kết nối TCP cơ bản _giữa client và NLB_ và _giữa NLB và backend_ vẫn có thể tồn tại lâu dài nếu cả hai phía duy trì.&#x20;
 
-* Khi một kết nối hoặc yêu cầu được gửi đến Load Balancer, hệ thống bắt đầu tính toán thời gian cho phép kết nối đó tồn tại.
-* Nếu kết nối không hoàn thành hoặc yêu cầu không được phản hồi trong khoảng thời gian này, nó sẽ bị đóng.
-* Việc cấu hình Timeout giúp tránh tình trạng kết nối hoặc yêu cầu bị treo và tiêu tốn tài nguyên.
+Các kết nối idle chiếm dụng tài nguyên trên Load Balancer và các máy chủ backend. Do đó, **Idle Timeout** là tính năng giúp giải phóng tài nguyên bằng cách tự động đóng các kết nối TCP đã không có bất kỳ hoạt động nào (gửi/nhận dữ liệu) trong một khoảng thời gian xác định trước.
 
-**Tại sao cần cấu hình Timeout cho Load Balancer**
+### **Cơ chế hoạt động**
 
-* **Quản Lý Tài Nguyên**: Timeout cấu hình giúp quản lý hiệu quả tài nguyên hệ thống bằng cách đảm bảo rằng các kết nối hoặc yêu cầu không cần thiết không tiêu tốn tài nguyên.
-* **Bảo Đảm Hiệu Suất**: Điều này giúp đảm bảo rằng Load Balancer luôn hoạt động hiệu quả và không bị kẹt trong các kết nối hoặc yêu cầu không đáp ứng.
+1. Load Balancer (NLB) thiết lập một bộ đếm thời gian cho mỗi kết nối.
+2. Mỗi khi có dữ liệu được truyền qua kết nối, bộ đếm được **thiết lập lại** về 0.
+3. Nếu bộ đếm đạt đến giá trị `idle timeout` (ví dụ: 50 giây) mà không có hoạt động nào, NLB sẽ chủ động đóng kết nối đó.
 
-#### Hướng dẫn cấu hình timeout cho Load Balancer <a href="#configtimeout-nlb-huongdancauhinhtimeoutcholoadbalancer" id="configtimeout-nlb-huongdancauhinhtimeoutcholoadbalancer"></a>
+### **Hướng Dẫn Cấu Hình Idle Timeout**
 
-1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb**](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
-2. **Tại trang chủ Load Balancer, click chọn Load Balancer cần cấu hình.**
-3. **Tại phần thông tin chi tiết Load Balancer, chọn tab Listener.**
-4. **Nhấn biểu tượng Edit tại Listener cần cấu hình Timeout.**
-5. **Một cửa sổ giao diện sẽ hiện ra, tìm đến phần Cấu hình nâng cao ở phía dưới cùng của cửa sổ.**
-6. **Tại phần Idle Timeout, người dùng có thể cấu hình Timeout dựa trên các thuộc tính sau**
-   * **Client Timeout (Timeout của Khách hàng):**
-     * **Giải thích**: Client Timeout là thời gian tối đa mà Load Balancer cho phép một khách hàng (client) duy trì kết nối đến nó mà không thực hiện bất kỳ yêu cầu (request) nào. Nếu trong khoảng thời gian này không có hoạt động nào từ phía khách hàng, kết nối sẽ bị đóng.
-     * **Lợi ích**: Điều này giúp giải phóng tài nguyên máy chủ backend và Load Balancer, đảm bảo rằng không có kết nối không cần thiết tiêu tốn tài nguyên.
-   * **Member Timeout (Timeout của Member):**
-     * **Giải thích**: Member Timeout là thời gian tối đa mà Load Balancer cho phép một máy chủ thành viên (member) trong nhóm máy chủ backend duy trì một kết nối mở mà không nhận được dữ liệu từ nó. Nếu máy chủ thành viên không gửi dữ liệu trong khoảng thời gian này, kết nối sẽ bị đóng.
-     * **Lợi ích**: Điều này giúp đảm bảo rằng máy chủ thành viên không tiêu tốn tài nguyên bằng cách duy trì các kết nối không hoạt động.
-   * **Connection Timeout (Timeout Kết nối):**
-     * **Giải thích**: Connection Timeout là thời gian tối đa mà Load Balancer cho phép một kết nối mạng giữa nó và một máy chủ backend tồn tại trước khi bị đóng. Thời gian này bắt đầu tính từ khi kết nối được thiết lập. Nếu trong khoảng thời gian này không có hoạt động gì trên kết nối (bao gồm cả truyền dữ liệu), kết nối sẽ bị đóng.
-     * **Lợi ích**: Điều này giúp đảm bảo rằng kết nối không cần thiết sẽ bị đóng, giải phóng tài nguyên và đảm bảo hiệu suất mạng ổn định.
-7. **Nhấn nút "Lưu" tại góc dưới bên phải của cửa sổ để hoàn tất việc cập nhật.**
+Các bước thực hiện:
+
+**Bước 1:** Truy cập vào trang chủ Load Balancer tại đây: [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+
+**Bước 2:** Tại trang chủ **Load Balancer**, click chọn **Load Balancer** cần cấu hình.
+
+**Bước 3:** Tại phần thông tin chi tiết **Load Balancer**, chọn tab **Listener**.
+
+**Bước 4:** Nhấn biểu tượng **Edit** tại **Listener** cần cấu hình **Timeout**.
+
+<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+**Bước 5:** Một cửa sổ giao diện sẽ hiện ra, tìm đến phần **Advanced Configuration** ở phía dưới cùng của cửa sổ. Tại phần **Idle Timeout,** người dùng có thể cấu hình timeout cho 3 loại sau:
+
+<table><thead><tr><th width="123.51171875">Loại Timeout</th><th>Ý Nghĩa</th><th>Mặc định</th></tr></thead><tbody><tr><td><strong>Client</strong></td><td>Thời gian chờ kết nối từ <strong>client → Load Balancer</strong> không hoạt động.</td><td><ul><li>Mặc định: 50 giây.</li></ul><ul><li>Giá trị tối thiểu: 1 giây.</li></ul><ul><li>Giá trị tối đa: 3600 giây.</li></ul><p>(Thông thường bạn nên thiết lập ở 30-180 giây)</p></td></tr><tr><td><strong>Member</strong></td><td>Thời gian chờ kết nối từ <strong>Load Balancer → Backend Server</strong> không hoạt động.</td><td><ul><li>Mặc định: 50 giây.</li></ul><ul><li>Giá trị tối thiểu: 1 giây.</li></ul><ul><li>Giá trị tối đa: 3600 giây.</li></ul><p>(Nên thiết lập >= giá trị client timeout do nếu member timeout &#x3C; client timeourt thì backend có thể đóng kết nối trước và lúc đó client sẽ bị lỗi)</p></td></tr><tr><td><strong>Connection</strong></td><td>Thời gian chờ thiết lập <strong>kết nối TCP</strong> với backend (không phải idle).</td><td><ul><li>Mặc định: 5 giây.</li></ul><ul><li>Giá trị tối thiểu: 1 giây.</li></ul><ul><li>Giá trị tối đa: 3600 giây.</li></ul><p>(Bạn không đổi trừ backend của bạn quá chậm)</p></td></tr></tbody></table>
+
+**Bước 6:** Nhấn nút **Save** tại góc dưới bên phải của cửa sổ để hoàn tất việc cập nhật.
+
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>

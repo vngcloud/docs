@@ -66,7 +66,7 @@ curl -H "Content-Type: application/json" -X PUT "https://open-search-dem-53461-5
 
 4. Nhập **Index pattern name**, ví dụ `ecommerce*` sau đó chọn **Next step**
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Truy cập **Discover** để xem dữ liệu mẫu.
 
