@@ -30,7 +30,7 @@ Tại đây, bạn có thể danh sách request được gửi tới AI Gateway 
 
 Bạn có thể tùy chỉnh khoảng thời gian quan sát (24h, 1d, 2d,...) và lọc theo Status cụ thể.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Ngoài ra, bạn có thể xem chi tiết một request bằng cách:
 
