@@ -783,7 +783,6 @@
   * [Tham khảo thêm](vks/tham-khao-them/README.md)
     * [Danh sách Flavor đang hỗ trợ](vks/tham-khao-them/danh-sach-flavor-dang-ho-tro.md)
     * [Danh sách System Image đang hỗ trợ](vks/tham-khao-them/danh-sach-system-image-dang-ho-tro.md)
-  * [FAQ](vks/faq.md)
 * [Global load balancer](global-load-balancer/README.md)
   * [Thông báo và cập nhật](global-load-balancer/thong-bao-va-cap-nhat.md)
   * [Mô hình hoạt động](global-load-balancer/mo-hinh-hoat-dong.md)
