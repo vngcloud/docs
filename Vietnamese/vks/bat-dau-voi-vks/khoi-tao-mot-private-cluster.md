@@ -273,12 +273,14 @@ docker push vcr-han.vngcloud.vn/53461-repo_demo/nginx-demo:latest
 
 ### Deploy một Workload <a href="#khoitaomotpublicclustervoiprivatenodegroup-deploymotworkload" id="khoitaomotpublicclustervoiprivatenodegroup-deploymotworkload"></a>
 
-Sau đây là hướng dẫn để bạn deploy service nginx và expose service này qua Network Load Balancer
+#### Deploy một Workload và expose service qua vLB Layer 4&#x20;
+
+Sau đây là hướng dẫn để bạn deploy service nginx và expose service này qua vLB Layer 4 (Network Load Balancer)
 
 #### **Bước 1: Thực hiện tạo file nginx-service-lb4.yaml qua lệnh:**
 
 ```
-vi nginx.yaml
+vi nginx-service-lb4.yaml
 ```
 
 Sau đó, bạn hãy nhập nội dung cho file này như sau: bạn cần thay image bằng đường dẫn image lưu trên vCR mà bạn đã push ở bước bên trên:
@@ -355,7 +357,7 @@ Lúc này, hệ thống vLB sẽ khởi tạo môt Network Load Balancer, bạn 
 
 <figure><img src="../../.gitbook/assets/image (699).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 3: Để truy cập vào app nginx vừa export, bạn có thể sử dụng Endpoint của Load Balancer URL với định dạng:**
+**Bước 3: Để truy cập vào app nginx vừa expose, bạn có thể sử dụng Endpoint của Load Balancer URL với định dạng:**
 
 ```
 http://Endpoint/
@@ -367,9 +369,143 @@ Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với đ
 
 <figure><img src="../../.gitbook/assets/image (700).png" alt=""><figcaption></figcaption></figure>
 
+#### Deploy một Workload và expose service qua vLB Layer 7
+
+Sau đây là hướng dẫn để bạn deploy service nginx và expose service này qua vLB Layer 7 (Application Load Balancer)
+
+#### **Bước 1: Thực hiện tạo file nginx-service-lb7.yaml qua lệnh:**
+
+```
+vi nginx-service-lb7.yaml
+```
+
+Sau đó, bạn hãy nhập nội dung cho file này như sau: bạn cần thay image bằng đường dẫn image lưu trên vCR mà bạn đã push ở bước bên trên:
+
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-app
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: vcr-han.vngcloud.vn/53461-repo_demo/nginx-demo:latest  
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  selector:
+    app: nginx 
+  type: NodePort 
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+```
+
+* Nhập **:wq** để lưu tệp tin này.
+* Deploy Deployment này bằng lệch:
+
+```
+kubectl apply -f nginx-service-lb7.yaml
+```
+
+***
+
+**Bước 2: Kiểm tra thông tin Deployment, Service trước khi expose ra Internet.**
+
+* Chạy câu lệnh sau đây để kiểm tra **Deployment**
+
+```
+kubectl get svc,deploy,pod -owide
+```
+
+* Nếu kết quả trả về như bên dưới tức là bạn đã deploy service nginx thành công.
+
+```
+NAME                    TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE     SELECTOR
+service/kubernetes      ClusterIP   10.96.0.1      <none>        443/TCP        5h4m    <none>
+service/nginx-service   NodePort    10.96.25.133   <none>        80:32572/TCP   2m50s   app=nginx
+
+NAME                        READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS   IMAGES         SELECTOR
+deployment.apps/nginx-app   1/1     1            1           2m50s   nginx        vcr-han.vngcloud.vn/53461-repo_demo/nginx-demo:latest   app=nginx
+
+NAME                             READY   STATUS    RESTARTS   AGE     IP            NODE                                            NOMINATED NODE   READINESS GATES
+pod/nginx-app-7f45b65946-6wlgw   1/1     Running   0          2m49s   172.16.54.3   ng-e0fc7245-0c6e-4336-abcc-31a70eeed71d-972a9   <none>           <none>
+```
+
+***
+
+**Bước 3: Thực hiện tạo file nginx-ingress.yaml qua lệnh:**
+
+```
+vi nginx-ingress.yaml
+```
+
+Sau đó, bạn hãy nhập nội dung cho file này như sau:&#x20;
+
+```
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx-ingress
+spec:
+  ingressClassName: "vngcloud"
+  defaultBackend:
+    service:
+      name: nginx-service
+      port:
+        number: 80
+  rules:
+    - http:
+        paths:
+          - path: /path1
+            pathType: Exact
+            backend:
+              service:
+                name: nginx-service
+                port:
+                  number: 80               
+```
+
+* Nhập **:wq** để lưu tệp tin này.
+* Deploy Ingress này bằng lệch:
+
+```
+kubectl apply -f nginx-ingress.yaml
+```
+
+Lúc này, hệ thống vLB sẽ khởi tạo môt Application Load Balancer, bạn có thể xem thông tin LB này thông qua portal vLB tại [đây](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb).
+
+<figure><img src="../../.gitbook/assets/image (1083).png" alt=""><figcaption></figcaption></figure>
+
+**Bước 4: Để truy cập vào app nginx vừa expose, bạn có thể sử dụng Endpoint của Load Balancer  với định dạng:**
+
+```
+http://Endpoint/
+```
+
+Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao diện vLB. Cụ thể truy cập tại [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb) hoặc [https://han-1.console.vngcloud.vn/vserver/load-balancer/vlb](https://han-1.console.vngcloud.vn/vserver/load-balancer/vlb) tùy theo Region mà bạn khởi tạo Cluster.
+
+Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.129/](http://180.93.181.129/)
+
+<figure><img src="../../.gitbook/assets/image (1084).png" alt=""><figcaption></figcaption></figure>
+
 {% hint style="info" %}
 **Một vài chú ý khác:**
 
-* Bên trên là ví dụ hướng dẫn bạn thực hiện expose một service thông qua vLB Layer 4, bạn có thể thực hiện expose service thông qua vLB Layer 7 theo hướng dẫn tại [đây](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer7).
 * Để đảm bảo private cluster hoạt động hiệu quả, chúng tôi đã tự động thêm Subnet mà bạn chọn sử dụng cho Cluster vào danh sách Whitelist của cụm. Bạn có thể sử dụng tính năng Whitelist để giới hạn các Subnet trong VPC có quyền truy cập vào kube-api. Chi tiết cách sử dụng tính năng Whitelist vui lòng tham khảo tại [đây](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vks/clusters/whitelist).
 {% endhint %}
