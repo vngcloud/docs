@@ -6,8 +6,6 @@ vDB gồm nhiều loại dịch vụ cho từng loại cơ sở dữ liệu , hi
 
 * [Relational Databases Service (RDS)](relational-database-service-rds/): bao gồm các cơ sở dữ liệu quan hệ quen thuộc như MySQL, Mariadb, Postgresql.
 * [MemoryStore Database Service (MDS)](memorystore-database-service-mds/): bao gồm các hệ lưu trữ dữ liệu trên bộ nhớ (in-memory) như Redis, Memcached.
-* [Kafka Cluster (KDS)](kafka-cluster-kds/): cung cấp một cụm máy chủ Kafka mạnh mẽ và linh hoạt để quản lý luồng sự kiện theo thời gian thực.&#x20;
-* [OpenSearch Cluster Database (ODS)](opensearch-cluster-database-ods/): nền tảng lưu trữ, tìm kiếm và phân tích dữ liệu theo thời gian thực, phù hợp với các ứng dụng như log analytics, giám sát hệ thống và tìm kiếm văn bản,... và được phát triển từ ElasticSearch.
 
 ### Lợi ích <a href="#vdb-database-loiich" id="vdb-database-loiich"></a>
 
