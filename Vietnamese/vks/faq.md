@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # FAQ
 
 ### 1. Phần rotation log container trên VKS hiện tại đang được thiết lập như thế nào?
