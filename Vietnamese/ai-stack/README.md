@@ -6,10 +6,12 @@ AI Stack tại **VNG Cloud** là một hệ sinh thái mạnh mẽ, hỗ trợ t
 
 AI Stack bao gồm các thành phần chính:
 
+* **AI Infrastructure -** Hạ tầng cung cấp tài nguyên phần cứng, phần mềm và hệ thống để vận hành, huấn luyện và triển khai các mô hình AI
 * **AI Platform** – Nền tảng phát triển, huấn luyện, quản lý và triển khai mô hình AI.
 * **AI Gateway** – Cổng kết nối API giúp dễ dàng tích hợp AI vào ứng dụng.
 * **Generative AI (Gen AI)** – AI tạo sinh, hỗ trợ tạo nội dung văn bản, hình ảnh, mã nguồn.
-* **Vector Database (Vector DB)** – Cơ sở dữ liệu lưu trữ và truy vấn dữ liệu AI theo vector.
+
+<figure><img src="../.gitbook/assets/image (1085).png" alt=""><figcaption></figcaption></figure>
 
 #### **AI Stack Hoạt Động Như Thế Nào?**
 
