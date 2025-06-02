@@ -1,0 +1,47 @@
+name: Sync to VNG Cloud with s3cmd
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Vietnamese/**/*.md'
+  workflow_dispatch:
+
+jobs:
+  sync-to-s3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Install s3cmd
+        run: |
+          pip install s3cmd
+      
+      - name: Configure s3cmd
+        run: |
+          echo "[default]" > ~/.s3cfg
+          echo "access_key = ${{ secrets.AWS_ACCESS_KEY_ID }}" >> ~/.s3cfg
+          echo "secret_key = ${{ secrets.AWS_SECRET_ACCESS_KEY }}" >> ~/.s3cfg
+          echo "host_base = ${{ secrets.S3_ENDPOINT_URL }}" >> ~/.s3cfg
+          echo "host_bucket = %(bucket)s.${{ secrets.S3_ENDPOINT_URL }}" >> ~/.s3cfg
+          echo "use_https = True" >> ~/.s3cfg
+      
+      - name: Prepare only .md files
+        run: |
+          mkdir -p filtered
+          rsync -av --prune-empty-dirs \
+            --include='*/' \
+            --include='*.md' \
+            --exclude='*' \
+            Vietnamese/ filtered/
+      
+      - name: Sync only .md files to VNG Cloud
+        run: |
+          s3cmd sync --delete-removed ./filtered/ s3://test-git-action/ -c ~/.s3cfg
+      
+      - name: Call sync KB API
+        if: ${{ success() }}
+        run: |
+          curl --max-time 600 -X POST "${{ secrets.KB_API_URL }}/kb/sync-kb" \
+            -H "Content-Type: application/json" \
