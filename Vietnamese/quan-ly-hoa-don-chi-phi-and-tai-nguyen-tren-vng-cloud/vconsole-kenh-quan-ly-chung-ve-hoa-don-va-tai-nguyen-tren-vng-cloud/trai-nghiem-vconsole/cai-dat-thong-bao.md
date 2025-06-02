@@ -20,7 +20,7 @@ Việc cấu hình thông báo email sẽ giúp bạn chủ động hơn trong v
   * Tại trang **'Trung tâm thông báo',** nhấn chọn **'Quản lý người nhận':** ![](<../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
     *   "**Xóa người nhận":** Từ danh sách, xóa người nhận không mong muốn bằng cách nhấn nút "Xóa"&#x20;
 
-        <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
     * "**Thêm người nhận**": Nhấn nút 'Thêm người nhận" để thêm người nhận vào danh sách nhận mail. ![](<../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png>)
       * **Tên:** Nhập tên gợi nhớ của người nhận.
       * **Địa chỉ mail:** Nhập địa chỉ mail của người nhận.

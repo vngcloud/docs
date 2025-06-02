@@ -20,7 +20,7 @@ Ngoài **vCDN Portal**, chúng tôi cũng cung cấp cho bạn một bộ API đ
 
 **Bước 2:** Chọn mục **API Key**, sau đó chọn **Create new.**
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Chọn thời gian hết hạn của API Key mà bạn mong muốn.&#x20;
 

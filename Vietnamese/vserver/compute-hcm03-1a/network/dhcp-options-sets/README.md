@@ -46,7 +46,7 @@ Với hướng dẫn này sẽ giúp bạn cách tạo ra một DHCP Options set
 2. Tại màn hình vServer, chọn vùng (region) phù hợp;
 3. Trên thanh menu bên tay trái, chọn **DHCPs**;
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Tại giao diện màn hình danh sách DHCP options sets, chọn nút **Create a DHCP Options Set**;
 

@@ -40,7 +40,7 @@ _**Lưu ý:** Thông tin này là bảo mật và chỉ được gởi cho email
     **1 -** Nhập password mới đã thay đổi ở Bước 2 cho user stackops\
     **2 -** Gõ lệnh sudo -i hoặc sudo su để có quyền thực thi quyền root trên Server
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### _**Phương án 2**_: **Login SSH bằng SSH KEY** <a href="#ketnoivaomaychulinuxbangcongcusshclient-phuongan2-loginsshbangsshkey" id="ketnoivaomaychulinuxbangcongcusshclient-phuongan2-loginsshbangsshkey"></a>
 

@@ -7,7 +7,7 @@ Chúng tôi sử dụng giao thức nhận log chuẩn **Kafka** đối với vM
 Để làm việc với Log Agent, bạn cần thực hiện theo các bước:
 
 * [Chuẩn bị kết nối đẩy log](chuan-bi-ket-noi-day-log.md)
-* [Khởi tạo Certificate](broken-reference)
+* [Khởi tạo Certificate](khoi-tao-certificate.md)
 * [Cài đặt Log Agent trên các hệ điều hành](cai-dat-log-agent-tren-cac-he-dieu-hanh/)
 * [Cài đặt Log Agent trên docker](cai-dat-log-agent-tren-cac-he-dieu-hanh/)
 * [Cài đặt Log Agent trên kubernetes](cai-dat-log-agent-tren-kubernetes.md)

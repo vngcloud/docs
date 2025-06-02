@@ -45,7 +45,7 @@ Một cửa sổ giao diện sẽ mở ra cho phép bạn thêm hoặc xóa thô
 
 **Bước 2:** Tìm đến ô tìm kiếm như hình bên dưới:
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Nhập giá trị của tag mà bạn muốn tìm kiếm (ví dụ: `Sultu`).
 

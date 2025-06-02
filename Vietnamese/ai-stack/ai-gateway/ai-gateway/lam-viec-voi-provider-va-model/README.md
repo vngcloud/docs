@@ -7,7 +7,7 @@ goài việc thêm model trong lúc tạo AI Gateway, bạn có thể **thêm m�
 * Vào giao diện chi tiết Gateway.
 * Nhấn nút **"Manage Provider & Models"**
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Bước 2: Giao diện **"Connect Gateway to AI Models"** sẽ hiện ra.
 

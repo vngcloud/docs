@@ -4,7 +4,7 @@
 
 Để kiểm tra hiệu suất IOPS (Input/Output Operations Per Second) trên một Volume, bạn có thể sử dụng công cụ `fio.`
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Cảnh báo**

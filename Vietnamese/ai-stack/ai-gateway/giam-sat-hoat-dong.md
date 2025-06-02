@@ -40,6 +40,6 @@ Ngoài ra, bạn có thể xem chi tiết một request bằng cách:
   * **Output**: Kết quả trả về từ LLM Model.
   * **Thông tin bổ sung**: host, model, thời gian phản hồi,...
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>

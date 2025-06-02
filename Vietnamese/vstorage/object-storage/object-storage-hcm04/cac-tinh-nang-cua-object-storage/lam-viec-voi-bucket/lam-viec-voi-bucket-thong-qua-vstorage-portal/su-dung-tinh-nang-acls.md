@@ -47,7 +47,7 @@ b. Đối với **IAM User Account** và **Service Account**: bạn có thể l�
 * Chọn action **List** để cấp quyền liệt kê danh sách object thuộc bucket cho tất cả người dùng.
 * Chọn **Save**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Ví dụ 2: Cấp quyền FULL\_CONTROL cho một tài khoản vStorage khác**
 

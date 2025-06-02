@@ -25,7 +25,7 @@ Nếu sử dụng tool cli, bạn có thể làm theo bài viết sau sử dụn
 
 Tại giao diện quản lý Database, bạn chọn vào MemoryCache Database instance vừa tạo, chọn đến tab **Connectivity & Security**, xem tại mục **Endpoint & Port**. Vì lí do bảo mật, các MDS Instance chỉ có một Endpoint Private. Bạn chỉ có thể kết nối tới từ một vServer chung Network hoặc từ các Network có mở ACL tới.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Kết nối và bảo mật</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Kết nối và bảo mật</p></figcaption></figure>
 
 Ngoài ra, bạn cũng có thể thiết lập một SSH Tunnel trên một vServer chung Network với MDS Instance này và kết nối từ xa thông qua Internet.&#x20;
 

@@ -108,7 +108,7 @@ lsblk -o NAME,PTTYPE
     * 3.2.2 Giữ nguyên trạng thái hiện tại, sau đó bấm Set up migration để bắt đầu quá trình migrate.
     * 3.3.3 Sau khi hoàn tất Set up Migration, nhấn Start Server để bắt đầu Restore.
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="375"><figcaption><p>Step 3.2</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Step 3.2</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt="" width="317"><figcaption><p>Step 3.2.1</p></figcaption></figure>
 
