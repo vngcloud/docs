@@ -29,7 +29,7 @@ Dịch vụ vCloudStack chỉ áp dụng **cơ chế Scheme là Internal**, tứ
 * **Tên Listener:** Trường hợp người dùng không chủ động điền tên Listener, hệ thống sẽ tự động sinh ra tên Listener.
 * **Giao thức & Cổng (Protocol & Port)**
   * Trường hợp chọn Giao thức (Protocol) = **HTTP**: Người dùng cần **chọn Port** (mặc định điền sẵn Port **80**) và **Header** (mặc định điền sẵn X-Fowarded-For, X-Forwarded-Proto, X-Fowarded-Port, có thể bỏ chọn Header nếu không có nhu cầu).
-  * Trường hợp chọn Giao thức (Protocol) = **HTTPS**: Người dùng cần **chọn Port** (mặc định điền sẵn Port **443**) và **Certificate** (tham khảo hướng dẫn [Upload a certificate](../../../../vlb-load-balancer-new-version/application-load-balancer/certificate/upload-a-certificate.md) nếu chưa có Certificate).
+  * Trường hợp chọn Giao thức (Protocol) = **HTTPS**: Người dùng cần **chọn Port** (mặc định điền sẵn Port **443**) và **Certificate** (tham khảo hướng dẫn [Upload a certificate](../../../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/certificate/upload-a-certificate.md) nếu chưa có Certificate).
 
 **Bước 4:** Cấu hình Pool mặc định
 

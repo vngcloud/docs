@@ -16,8 +16,8 @@
 * **Chọn Giao thức TCP và Port** (mặc định hiển thị Port 80 và tăng dần nếu các Port nhỏ hơn đã được sử dụng)
 * **Cấu hình Pool mặc định và hành động:** Trong trường các request đến Load Balancer mà không phù hợp với bất kỳ pool cụ thể nào, NLB sẽ chuyển hướng lưu lượng đó đến pool mặc định.&#x20;
 * **Cấu hình nâng cao:** Tham khảo thêm các hướng dẫn cấu hình nâng cao theo tính năng như bên dưới
-  * [Config timeout](../../../../vlb-load-balancer-new-version/application-load-balancer/listener/config-timeout.md)
-  * [Config IP whitelist to load balancer](../../../../vlb-load-balancer-new-version/application-load-balancer/listener/config-ip-whitelist-to-load-balancer.md)
+  * [Config timeout](../../../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/config-timeout.md)
+  * [Config IP whitelist to load balancer](../../../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/config-ip-whitelist-to-load-balancer.md)
 
 ***
 
@@ -37,8 +37,8 @@
 * **Chọn Giao thức UDP và Port** (mặc định hiển thị Port 53 và tăng dần nếu các Port nhỏ hơn đã được sử dụng)
 * **Cấu hình Pool mặc định và hành động:** Trong trường các request đến Load Balancer mà không phù hợp với bất kỳ pool cụ thể nào, NLB sẽ chuyển hướng lưu lượng đó đến pool mặc định.&#x20;
 * **Cấu hình nâng cao:** Tham khảo thêm các hướng dẫn cấu hình nâng cao theo tính năng như bên dưới
-  * [Config timeout](../../../../vlb-load-balancer-new-version/application-load-balancer/listener/config-timeout.md)
-  * [Config IP whitelist to load balancer](../../../../vlb-load-balancer-new-version/application-load-balancer/listener/config-ip-whitelist-to-load-balancer.md)
+  * [Config timeout](../../../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/config-timeout.md)
+  * [Config IP whitelist to load balancer](../../../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/config-ip-whitelist-to-load-balancer.md)
 
 **Lưu ý:** Lưu ý rằng bạn chỉ có thể chọn Pool với giao thức UDP để chỉ định làm Pool mặc định cho UDP Listener
 
@@ -58,8 +58,8 @@
 
 * **Thay đổi Pool mặc định:** Trong trường các request đến Load Balancer mà không phù hợp với bất kỳ pool cụ thể nào, NLB sẽ chuyển hướng lưu lượng đó đến pool mặc định.
 * **Thay đổi cấu hình nâng cao:** Tham khảo thêm các hướng dẫn cấu hình nâng cao theo tính năng như bên dưới
-  * [Config timeout](../../../../vlb-load-balancer-new-version/application-load-balancer/listener/config-timeout.md)
-  * [Config IP whitelist to load balancer](../../../../vlb-load-balancer-new-version/application-load-balancer/listener/config-ip-whitelist-to-load-balancer.md)
+  * [Config timeout](../../../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/config-timeout.md)
+  * [Config IP whitelist to load balancer](../../../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/config-ip-whitelist-to-load-balancer.md)
 
 6/ Nhấn nút "Lưu" để hoàn tất chỉnh sửa
 
