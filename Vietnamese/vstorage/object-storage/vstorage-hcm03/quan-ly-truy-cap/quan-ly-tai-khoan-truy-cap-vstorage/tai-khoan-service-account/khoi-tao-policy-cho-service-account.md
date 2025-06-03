@@ -9,7 +9,7 @@ Về mặt tổng quan, việc khởi tạo policy có mối ràng buộc với 
 3. Chọn **Create a Policy**.
 4. Nhập **Name** và **Description** nếu cho cho Policy.
 5. Chọn **Next step**.
-6. Chọn **Product là vstorage**.
+6. Chọn **Product là vstorage-hcm03**.
 7. Chọn **Actions**:
    1. Chọn **Allow permissions**: mặc định hệ thống vIAM sẽ luôn bật tức là cho phép quyền hạn được áp dụng trên policy. Nếu bạn tắt mode này thì hệ thống sẽ từ chối (đảo chiều) quyền hạn tương ứng.
       1. **Allow permissions**: cho phép truy cập theo action đã chọn.&#x20;

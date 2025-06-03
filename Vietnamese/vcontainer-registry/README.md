@@ -1,6 +1,6 @@
-# vContainer Registry
+# vCR
 
-VNG Cloud xin giới thiệu đến quý khách hàng dịch vụ mới thuộc hệ sinh thái VNG Cloud - Container Registry! Nhằm nâng cao trải nghiệm người dùng, Container Registry cung cấp một cổng web thân thiện với người dùng và tích hợp mượt mà với các dịch vụ đám mây nội bộ khác, giúp bạn quản lý và triển khai ứng dụng container của mình một cách dễ dàng.
+VNG Cloud xin giới thiệu đến quý khách hàng dịch vụ mới thuộc hệ sinh thái VNG Cloud - Container Registry (vCR). Nhằm nâng cao trải nghiệm người dùng, Container Registry cung cấp một cổng web thân thiện với người dùng và tích hợp mượt mà với các dịch vụ đám mây nội bộ khác, giúp bạn quản lý và triển khai ứng dụng container của mình một cách dễ dàng.
 
 **Tính năng quan trọng**
 

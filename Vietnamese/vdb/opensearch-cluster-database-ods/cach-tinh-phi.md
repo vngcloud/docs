@@ -6,4 +6,6 @@ Khi khởi tạo một OpenSearch Cluster trên dịch vụ **vDB OpenSearch**, 
 * **Chi phí Storage** – Tính theo dung lượng **Volume** và **loại Volume** được chọn sử dụng trên các node trong Cluster của bạn.&#x20;
 * **Chi phí Encryption Volume** (nếu có) – Nếu bạn bật tính năng mã hóa ổ đĩa, sẽ có thêm chi phí đi kèm.
 
+Chi tiết bảng giá, bạn vui lòng tham khảo thêm tại [https://vngcloud.vn/vi/product/vdb-opensearch](https://vngcloud.vn/vi/product/vdb-opensearch).
+
 Hiện tại, vDB OpenSearch có hỗ trợ thanh toán qua **ví POC**, giúp bạn dễ dàng trải nghiệm dịch vụ. Để biết thêm chi tiết hoặc dùng thử dịch vụ, vui lòng liên hệ **hotline VNG Cloud** hoặc gửi **ticket hỗ trợ** cho chúng tôi.

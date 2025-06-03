@@ -17,8 +17,8 @@ Pool bao gồm các máy chủ backend, được gọi là "Pool Members." Các 
 * Tại cửa sổ thêm mới, cấu hình các thông tin như:
   * Tên Pool: Lưu ý rằng tên Pool không thể thay đổi sau khi khởi tạo
   * Giao thức: TCP / Proxy / UDP
-  * Chọn thuật toán cân bằng tải: Tham khảo thêm các thuật toán cân bằng tải [Pool's algorithm (NLB)](../../../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/pool/pools-algorithm.md)
-  * Cài đặt Health Check: Tham khảo hướng dẫn cài đặt Health Check NLB tại [Config health check setting (NLB)](../../../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/pool/config-health-check-setting.md)
+  * Chọn thuật toán cân bằng tải: Tham khảo thêm các thuật toán cân bằng tải [Pool's algorithm (NLB)](../../../../vlb-load-balancer-new-version/application-load-balancer/pool/pools-algorithm.md)
+  * Cài đặt Health Check: Tham khảo hướng dẫn cài đặt Health Check NLB tại [Config health check setting (NLB)](../../../../vlb-load-balancer-new-version/application-load-balancer/pool/config-health-check-setting.md)
   * Thêm Pool Member: Tham khảo hướng dẫn [Attach Pool Member (NLB)](https://docs.vngcloud.vn/pages/viewpage.action?pageId=64553815)
 * Nhấn nút "Thêm" tại góc dưới bên phải của cửa sổ thêm mới để hoàn tất việc thêm Pool
 

@@ -17,8 +17,8 @@
 * **Cấu hình request Header** tại phần cấu hình nâng cao: Mặc định điền sẵn X-Fowarded-For, X-Forwarded-Proto, X-Fowarded-Port, có thể bỏ chọn Header nếu không có nhu cầu.
 * **Cấu hình Pool mặc định và hành động:** Trong trường các request đến Listener nằm ngoài danh sách Policies được cấu hình, các request này sẽ được chuyển hướng đến Pool mặc định để xử lý.
 * **Cấu hình nâng cao:** Tham khảo thêm các hướng dẫn cấu hình nâng cao theo tính năng như bên dưới
-  * [Config timeout](../../../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/config-timeout.md)
-  * [Config IP whitelist to load balancer](../../../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/config-ip-whitelist-to-load-balancer.md)
+  * [Config timeout](../../../../vlb-load-balancer-new-version/application-load-balancer/listener/config-timeout.md)
+  * [Config IP whitelist to load balancer](../../../../vlb-load-balancer-new-version/application-load-balancer/listener/config-ip-whitelist-to-load-balancer.md)
 
 ***
 
@@ -39,11 +39,11 @@
 * **Chọn Certificate mặc định**
 * **Chọn danh sách Certificate sử dụng như là SNI:** Lưu ý rằng bạn không thể gỡ bỏ/thay đổi các Certificate dùng cho tính năng SNI một khi hoàn tất khởi tạo HTTPS Listener
 * **Cấu hình request Header** tại phần cấu hình nâng cao: Mặc định điền sẵn X-Fowarded-For, X-Forwarded-Proto, X-Fowarded-Port, có thể bỏ chọn Header nếu không có nhu cầu.
-* **Bật tính năng Client Certificate Authentication:** Client CA là tính năng bảo mật nâng cao của Load Balancer, giúp xác thực ứng dụng khách bằng cách sử dụng Certificate. Tìm hiểu thêm về tính năng [Client Certificate Authentication](../../../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/client-certificate-authentication.md)
+* **Bật tính năng Client Certificate Authentication:** Client CA là tính năng bảo mật nâng cao của Load Balancer, giúp xác thực ứng dụng khách bằng cách sử dụng Certificate. Tìm hiểu thêm về tính năng [Client Certificate Authentication](../../../../vlb-load-balancer-new-version/application-load-balancer/listener/client-certificate-authentication.md)
 * **Cấu hình Pool mặc định và hành động:** Trong trường các request đến Listener nằm ngoài danh sách Policies được cấu hình, các request này sẽ được chuyển hướng đến Pool mặc định để xử lý.
 * **Cấu hình nâng cao:** Tham khảo thêm các hướng dẫn cấu hình nâng cao theo tính năng như bên dưới
-  * [Config timeout](../../../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/config-timeout.md)
-  * [Config IP whitelist to load balancer](../../../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/config-ip-whitelist-to-load-balancer.md)
+  * [Config timeout](../../../../vlb-load-balancer-new-version/application-load-balancer/listener/config-timeout.md)
+  * [Config IP whitelist to load balancer](../../../../vlb-load-balancer-new-version/application-load-balancer/listener/config-ip-whitelist-to-load-balancer.md)
 
 ***
 
@@ -61,8 +61,8 @@
 
 * **Thay đổi Pool mặc định:** Trong trường các request đến Load Balancer mà không phù hợp với bất kỳ pool cụ thể nào, NLB sẽ chuyển hướng lưu lượng đó đến pool mặc định.
 * **Thay đổi cấu hình nâng cao:** Tham khảo thêm các hướng dẫn cấu hình nâng cao theo tính năng như bên dưới
-  * [Config timeout](../../../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/config-timeout.md)
-  * [Config IP whitelist to load balancer](../../../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/config-ip-whitelist-to-load-balancer.md)
+  * [Config timeout](../../../../vlb-load-balancer-new-version/application-load-balancer/listener/config-timeout.md)
+  * [Config IP whitelist to load balancer](../../../../vlb-load-balancer-new-version/application-load-balancer/listener/config-ip-whitelist-to-load-balancer.md)
 
 6/ Nhấn nút "Lưu" để hoàn tất chỉnh sửa
 

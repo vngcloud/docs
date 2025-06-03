@@ -71,4 +71,4 @@ Với Dashboard Mặc định này, bạn sẽ có thể xem được các thôn
 3. Nhập **Tên Dashboard.** Theo quy định của chúng tôi, tên Dashboard phải dài từ 1 (tối thiểu) đến 50 (tối đa) ký tự. Tên Dashboard có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), dấu gạch dưới (\_), dấu gạch ngang (-), ký tự (@), ký tự (/).
 4. Chọn **Tạo bản sao**.
 
-Sau khi bản sao của **Dashboard mặc định** được tạo, bạn có thể thêm hoặc xoá, hoặc tùy chỉnh, thay đổi vị trí Widget trong Dashboard bản sao này. Để biết thêm về cách làm việc với Metric nói chung và Metric Dashboard nói chung, hãy xem tại [Metrics](../../vserver/compute-hcm03-1a/vlb-load-balancer-new-version/giam-sat-hoat-dong-lb/metrics.md).
+Sau khi bản sao của **Dashboard mặc định** được tạo, bạn có thể thêm hoặc xoá, hoặc tùy chỉnh, thay đổi vị trí Widget trong Dashboard bản sao này. Để biết thêm về cách làm việc với Metric nói chung và Metric Dashboard nói chung, hãy xem tại [Metrics](../../vlb-load-balancer-new-version/giam-sat-hoat-dong-lb/metrics.md).

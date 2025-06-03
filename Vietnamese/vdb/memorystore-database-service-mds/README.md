@@ -5,7 +5,7 @@
 * Redis: 3.2, 4.0, 5.0, 6.2.
 * Memcached (coming soon)
 
-\
+**Sơ đồ hoạt động của MDS**
 
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-![](https://docs.vngcloud.vn/download/thumbnails/13010692/redis-icon-logo.png?version=1\&modificationDate=1582217777000\&api=v2)   ![](https://docs.vngcloud.vn/download/thumbnails/13010692/de041504-0ddb-43f6-b89e-fe04403cca8d-memcached.png?version=1\&modificationDate=1582217850000\&api=v2)

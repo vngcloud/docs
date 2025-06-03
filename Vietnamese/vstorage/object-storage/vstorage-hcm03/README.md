@@ -1,4 +1,4 @@
-# Object storage (HCM03, HAN01)
+# Object storage (HCM03)
 
 **Lưu trữ đối tượng** (hay còn gọi là **Object Storage**, **Cloud Storage**) là một hình thức lưu trữ dữ liệu dưới dạng các đơn vị riêng biệt gọi là **đối tượng (object)**. Mỗi đối tượng bao gồm dữ liệu thực tế (như hình ảnh, video, tệp) cùng với metadata cung cấp thông tin về đối tượng đó.
 
@@ -19,7 +19,7 @@
 
 Farm là một thuật ngữ dùng riêng cho vStorage, farm được chúng tôi định nghĩa là một hệ thống bao gồm cơ sở hạ tầng, dịch vụ, v.v. được triển khai tại một vị trí cụ thể thuộc 2 region Hà Nội và Hồ Chí Minh với mục đích cung cấp dịch vụ lưu trữ vStorage. Đối với 2 farm HCM03, HAN01, các thông số cụ thể cho mỗi farm được chúng tôi cung cấp như sau:&#x20;
 
-<table data-full-width="true"><thead><tr><th width="107.80000000000001">Farm</th><th width="200">Farm ID </th><th width="213">Authentication endpoint</th><th width="197">vStorage endpoint</th><th>Mục đích sử dụng</th></tr></thead><tbody><tr><td>HAN01</td><td>5d10c8ba-7187-4acc-b8c5-2d67d71c9233</td><td>https://han.auth.vstorage.vngcloud.vn/v3</td><td>https://han01.vstorage.vngcloud.vn</td><td>Farm phục vụ đa mục đích và được dùng chung cho dữ liệu khởi tạo project tại Region Hà Nội.</td></tr><tr><td>HCM03</td><td>8b1e9c9b-7123-54a5-ua8f-2d67d71c9212</td><td>https://hcm03.auth.vstorage.vngcloud.vn/v3</td><td>https://hcm03.vstorage.vngcloud.vn</td><td>Farm phục vụ đa mục đích và được dùng chung cho dữ liệu khởi tạo project tại Region Hồ Chí Minh.</td></tr><tr><td>HCM03</td><td>8b1e9c9b-7123-54a5-ua8f-2d67d71c9212</td><td>https://hcm03.auth.vstorage.vngcloud.vn/v3</td><td>https://hcm03-encrypt.vstorage.vngcloud.vn</td><td>Khi sử dụng encryption endpoint này, dữ liệu của bạn sẽ được tự động mã hóa khi tải tệp tin lên vStorage theo đúng chuẩn mã hóa AES-256.</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="107.80000000000001">Farm</th><th width="200">Farm ID </th><th width="213">Authentication endpoint</th><th width="197">vStorage endpoint</th><th>Mục đích sử dụng</th></tr></thead><tbody><tr><td>HCM03</td><td>8b1e9c9b-7123-54a5-ua8f-2d67d71c9212</td><td>https://hcm03.auth.vstorage.vngcloud.vn/v3</td><td>https://hcm03.vstorage.vngcloud.vn</td><td>Farm phục vụ đa mục đích và được dùng chung cho dữ liệu khởi tạo project tại Region Hồ Chí Minh.</td></tr><tr><td>HCM03</td><td>8b1e9c9b-7123-54a5-ua8f-2d67d71c9212</td><td>https://hcm03.auth.vstorage.vngcloud.vn/v3</td><td>https://hcm03-encrypt.vstorage.vngcloud.vn</td><td>Khi sử dụng encryption endpoint này, dữ liệu của bạn sẽ được tự động mã hóa khi tải tệp tin lên vStorage theo đúng chuẩn mã hóa AES-256.</td></tr></tbody></table>
 
 Để biết thông tin cụ thể, vui lòng tham khảo tại [đây](vstorage-la-gi/farm-la-gi.md).
 

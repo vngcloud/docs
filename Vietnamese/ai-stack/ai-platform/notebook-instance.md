@@ -27,7 +27,7 @@ Nhấn nút **“Create Notebook”** và điền các thông tin sau:
 
 1.  Khi trạng thái chuyển sang **Active**, bạn có thể nhấn **“Connect”** để mở giao diện.&#x20;
 
-    <figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt="" width="206"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt="" width="206"><figcaption></figcaption></figure>
 2. Viết code Python, import thư viện, truy cập dữ liệu từ blockstorage.
 
 #### **Bước 4: Lưu, chia sẻ và ngắt kết nối**
