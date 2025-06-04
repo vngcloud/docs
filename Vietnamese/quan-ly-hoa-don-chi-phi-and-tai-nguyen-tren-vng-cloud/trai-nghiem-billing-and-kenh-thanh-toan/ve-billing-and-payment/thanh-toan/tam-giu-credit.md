@@ -27,7 +27,7 @@ Nhận thấy nhu cầu sử dụng các tài nguyên / dich vụ trả sau củ
 
 ## Các dịch vụ áp dụng <a href="#tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s" id="tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s"></a>
 
-### 1. Dịch vụ/sản phẩm vContainer (K8s) <a href="#tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s" id="tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s"></a>
+### 1. Dịch vụ/sản phẩm vContainer  <a href="#tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s" id="tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s"></a>
 
 Sau khi khởi tạo tài nguyên thành công, cứ mỗi cuối ngày, hệ thống sẽ tự động tính lại số tiền sử dụng thực tế của ngày hôm đó và tiến hành tạm giữ số credit cần có để sử dụng dịch vụ trong 3 ngày tiếp theo. Tham khảo ví dụ sau:
 
@@ -148,6 +148,47 @@ Lúc này, tổng số credit tạm giữ dựa trên usage của các IP sử d
 * Tổng credti tạm giữ = usage trên IP **103.245.251.6 +** usage trên IP **116.118.95.65** = 16,000 + 15,000 = 31,000 credit
 
 Đến cuối kỳ đối soát, hệ thống sẽ ra hóa đơn tương ứng và trừ vào phần tạm giữ trước đó. Trong quá trình sử dụng, nếu credit không đủ, hệ thống sẽ ngừng cung cấp dịch vụ theo policy của dịch vụ.
+
+### 6. Dịch vụ GLB <a href="#tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit" id="tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit"></a>
+
+GLB được tính giá dựa trên số lượng Connection và lượng Data. Đối với người dùng trả trước, hệ thống sẽ thực hiện hold credit dựa trên usage hiện tại cho 3 ngày kế tiếp, với người dùng trả sau sẽ thực hiện thanh toán vào đầu tháng kế tiếp.&#x20;
+
+Cụ thể:
+
+#### **Tính phí dựa trên số Connection**
+
+* **Công thức:**\
+  `Tổng (Số connection tối đa mỗi giờ - Miễn phí) từ đầu tháng đến nay / 720`
+  * Nếu kết quả < 100 → Làm tròn lên **100**.
+  * Nếu kết quả ≥ 100 → Giữ nguyên.
+* **Ví dụ:**
+  * **Hạn mức miễn phí:** 4.000 connection.
+  * **Ngày 1:** Dùng 10.000 connection → `(10.000 - 4.000) / 720 ≈ 8.33` → Làm tròn thành **100**.
+  * **Ngày 30:** Tổng 30 ngày → `(10.000 - 4.000) × 30 / 720 = 250` → Giữ nguyên **250**.
+
+***
+
+#### **Tính phí dựa trên lưu lượng dữ liệu (Data)**
+
+* **Công thức:**\
+  `Tổng (Lưu lượng tối đa mỗi ngày - Hạn mức miễn phí) từ đầu tháng đến nay`
+  * Nếu kết quả âm → Làm tròn thành **0**.
+* **Ví dụ:**
+  * **Hạn mức miễn phí:**
+    * Traffic trong nước (Domestic): 500GB
+    * Traffic quốc tế (International): 50GB
+  * **Ngày 1:**
+    * Dùng 50GB (trong nước) → `50 - 500 = -450` → Làm tròn thành **0**.
+    * Dùng 5GB (quốc tế) → `5 - 50 = -45` → Làm tròn thành **0**.
+  * **Ngày 11:**
+    * Dùng 550GB (trong nước) → `550 - 500 = 50` → Tính **50GB**.
+    * Dùng 55GB (quốc tế) → `55 - 50 = 5` → Tính **5GB**.
+
+#### **Lưu ý quan trọng:**
+
+* Khi phát sinh phí, hệ thống sẽ tính toán và **cộng dồn vào hold** (tạm giữ) cho những ngày tiếp theo.
+
+***
 
 ### Xử lý khi nợ credit <a href="#tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit" id="tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit"></a>
 
