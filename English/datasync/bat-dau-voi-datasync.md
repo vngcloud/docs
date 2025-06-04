@@ -54,7 +54,7 @@ If you have not used any VNG Cloud services (have not registered an account with
 
 **Case 4: If you choose Source Type as vStorage,** you need to:
 
-1. Select **Region** : where your container is located. For example: HCM03, HAN01
+1. Select **Region** : where your container is located. For example: HCM03
 2. Select **Project** : the project containing the container to which you want to transfer data.
 3. Select **Container** : the name of your source container on vStorage.
 4. Select **Folder path** : if you only want to transfer data of a folder in the container, select the folder you want to transfer data to in this section. For example:
@@ -73,7 +73,7 @@ If you have not used any VNG Cloud services (have not registered an account with
 
 **Step 5.1:** In the **Destination Information** box , click Select. Enter the Destination Configuration, including:
 
-1. Select **Region** : where your container is located. For example: HCM03, HAN01
+1. Select **Region** : where your container is located. For example: HCM03
 2. Select **Project** : the project containing the container to which you want to transfer data.
 3. Select **Container** : the name of your source container on vStorage.
 4. Select **Folder path** : if you only want to transfer data of a folder in the container, select the folder you want to transfer data to in this section. For example:
@@ -116,7 +116,7 @@ If you have not used any VNG Cloud services (have not registered an account with
    1. If you choose **Report type** as Summary, you do not need to choose **Report level.**
    2. If you choose **Report type** as **Standard** , you can choose **Report level** as **Successful** , **Failed** or both **Successful and Failed.**
 2. Select the Container that contains the reports: by default, the destination container that receives your migration data. You can change to other containers by
-   1. Select **Region** : where your container is located. For example: HCM03, HAN01
+   1. Select **Region** : where your container is located. For example: HCM03
    2. Select **Project** : the project containing the container to which you want to transfer data.
    3. Select **Container** : the name of your source container on vStorage.
    4. **Access Key/ Secret Key** : enter your access key and secret key. This S3 key pair is created and managed via IAM, please refer to [IAM for vStorage](../identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vstorage.md) .
