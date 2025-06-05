@@ -25,7 +25,7 @@
 
 4\. Nhập thông tin kết nối bao gồm:
 
-* **Protocol**: VNG HCM01 - AWS4. Khi bạn chọn phương thức này, các thông tin Server, Port, URL sẽ tự động được ghi nhận và hiển thị.
+* **Protocol**: VNG hcm03 - AWS4. Khi bạn chọn phương thức này, các thông tin Server, Port, URL sẽ tự động được ghi nhận và hiển thị.
 * **Access key**: nhập S3 access key mà bạn tạo từ vIAM cũng chính là thông tin access key lấy từ bước 4 bên trên.
 * **Secret key**: nhập S3 access key mà bạn tạo từ vIAM cũng chính là thông tin access key lấy từ bước 4 bên trên.
 

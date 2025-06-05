@@ -37,7 +37,7 @@ Kết quả thực hiện:
 
 * Project được khởi tạo với các thuộc tính:&#x20;
   * Project type: Gold class.
-  * Region: HCM01.
+  * Region: hcm03.
 
 <figure><img src="../../../../../.gitbook/assets/image (549).png" alt=""><figcaption></figcaption></figure>
 

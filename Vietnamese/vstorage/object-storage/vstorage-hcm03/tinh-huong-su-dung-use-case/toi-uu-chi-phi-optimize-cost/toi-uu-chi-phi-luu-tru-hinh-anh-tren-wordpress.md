@@ -33,9 +33,9 @@ Nhằm tiết kiệm không gian lưu trữ trên Wordpress Server, bạn có th
 
 Giả sử bạn có vStorage với thông tin sau (tham khảo cách lấy thông tin tại bài viết trước): &#x20;
 
-Region: HCM01  &#x20;
+Region: hcm03  &#x20;
 
-S3 storage URL: [https://](https://s3-hcm-1.vinadata.vn/)[hcm01.vstorage.vngcloud.vn](http://hcm01.vstorage.vngcloud.vn/)/&#x20;
+S3 storage URL: http://hcm03.vstorage.vngcloud.vn&#x20;
 
 Container: container01 (Public Container)&#x20;
 
@@ -53,9 +53,9 @@ Secret Key: \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*&#x20;
 
 \+ Bucket: container01&#x20;
 
-\+ Region: HCM01&#x20;
+\+ Region: hcm03&#x20;
 
-\+ Custom endpoint: [hcm01.vstorage.vngcloud.vn](http://hcm01.vstorage.vngcloud.vn/)
+\+ Custom endpoint: [hcm03.vstorage.vngcloud.vn](http://hcm03.vstorage.vngcloud.vn/)
 
 \+ Path Style Endpoint: tick chọn có.&#x20;
 
@@ -70,7 +70,7 @@ Secret Key: \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*&#x20;
 4\. Để lấy link public của container trên vStorage, bạn có thể **upload** thử một file sample bất kì lên container, click chọn vào và xem đuờng link trước tên file sample.&#x20;
 
 VD: đuờng link của container container01 như trong hình là:  \
-[https://](https://sw-hcm-1.vinadata.vn/v1/AUTH\_cb6845eecfb345b39f5cd2f0ffc4d3db/container01/)[hcm01.vstorage.vngcloud.vn](http://hcm01.vstorage.vngcloud.vn/)/v1/AUTH\_cb6845eecfb345b39f5cd2f0ffc4d3db/container01/ &#x20;
+[hcm03.vstorage.vngcloud.vn](http://hcm03.vstorage.vngcloud.vn/)/v1/AUTH\_cb6845eecfb345b39f5cd2f0ffc4d3db/container01/ &#x20;
 
 5\. Bạn điền **URL** này vào **CDN Base URL** và **Document CDN Base URL**.&#x20;
 

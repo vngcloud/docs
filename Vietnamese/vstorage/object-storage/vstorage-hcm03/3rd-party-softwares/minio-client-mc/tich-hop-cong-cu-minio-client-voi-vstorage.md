@@ -9,5 +9,5 @@
 
 Trong đó:&#x20;
 
-* **Cos endpoint**: Đường dẫn đến vstorage, [hcm01.vstorage.vngcloud.vn](http://hcm01.vstorage.vngcloud.vn/) (region HCM01 - Hồ Chí Minh)
+* **Cos endpoint**: Đường dẫn đến vstorage, [hcm03.vstorage.vngcloud.vn](http://hcm03.vstorage.vngcloud.vn/) (region hcm03 - Hồ Chí Minh)
 * **Access Key & Secret Key:** Là cặp key được cấp thông qua vIAM.
