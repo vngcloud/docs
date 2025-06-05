@@ -19,7 +19,7 @@ Sau khi bạn đã thực hiện khởi tạo project và khởi tạo S3 key th
 
 * **Display name:** Tên hiển thị của account. Ví dụ: Demo\_HCM04
 * **Account type**: Chọn **S3 Compatible Storage.**
-* **REST Endpoint**: Đường dẫn đến vstorage, đối với Region HCM04 thì đường dẫn là [hcm04.vstorage.vngcloud.vn](http://hcm01.vstorage.vngcloud.vn/)
+* **REST Endpoint**: Đường dẫn đến vstorage, đối với Region HCM04 thì đường dẫn là [hcm04.vstorage.vngcloud.vn](http://hcm04.vstorage.vngcloud.vn/)
 * **Access Key ID & Secret Access Key:** Là cặp S3 key bạn đã thực hiện generate tại bước 2 trước đó.
 
 4. Chọn option **Use Secure transfer (SSL/TLS)** vì vStorage chỉ hỗ trợ kênh truyền đã được mã hoá (HTTPS, port 443) để đảm bảo an toàn dữ liệu, vStorage hiện tại không hỗ trợ kênh truyền không mã hoá (HTTP, port 80).
