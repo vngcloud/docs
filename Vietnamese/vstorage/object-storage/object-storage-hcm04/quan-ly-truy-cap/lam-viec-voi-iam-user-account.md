@@ -40,12 +40,12 @@ Nếu doanh nghiệp bạn có nhiều thành viên cần được cấp quyền
 3. Chọn **Create a Policy**.
 4. Nhập **Name** và **Description** nếu cho cho Policy.
 5. Chọn **Next step**.
-6. Chọn **Product là&#x20;**<mark style="background-color:blue;">**vstorage-hcm04**</mark>.
+6. Chọn **Product là&#x20;**<mark style="background-color:blue;">**vstorage**</mark>.
 7. Chọn **Actions**:
    1. Chọn **Allow permissions**: mặc định hệ thống vIAM sẽ luôn bật tức là cho phép quyền hạn được áp dụng trên policy. Nếu bạn tắt mode này thì hệ thống sẽ từ chối (đảo chiều) quyền hạn tương ứng.
       1. **Allow permissions**: cho phép truy cập theo action đã chọn.
       2. **Deny permissions**: từ chối truy cập theo action đã chọn.
-   2. Chọn <mark style="background-color:blue;">**All vstorage-hcm04 actions**</mark> nếu muốn tạo policy có quyền thực hiện tất cả các hành động trên vStorage. Hoặc bạn có thể chọn một số hành động cụ thể mà bạn muốn phân quyền cho IAM User Account.
+   2. Chọn <mark style="background-color:blue;">**All vstorage actions**</mark> nếu muốn tạo policy có quyền thực hiện tất cả các hành động trên vStorage. Hoặc bạn có thể chọn một số hành động cụ thể mà bạn muốn phân quyền cho IAM User Account.
 8. Chọn **Resources**: chọn **All resources.**&#x20;
 9. Chọn **Request conditions:** nhập điều kiện đặc biệt cho policy nếu có.
 

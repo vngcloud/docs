@@ -57,7 +57,7 @@ Những API này cho phép bạn quản lý các bucket
     curl --location --request PUT 'https://han02.vstorage.vngcloud.vn/demobucket' \
     --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
     --header 'X-Amz-Date: 20240829T041014Z' \
-    --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=8b4d67b37ab0ba0c6bb42df8d6451fdb48aba5874a0717798aeee9f4c57b8fe9'
+    --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=8b4d67b37ab0ba0c6bb42df8d6451fdb48aba5874a0717798aeee9f4c57b8fe9'
     ```
 *   **List Buckets**: Liệt kê tất cả các bucket thuộc về người dùng.
 
@@ -69,7 +69,7 @@ Những API này cho phép bạn quản lý các bucket
     curl --location 'https://han02.vstorage.vngcloud.vn/' \
     --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
     --header 'X-Amz-Date: 20240829T041050Z' \
-    --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=997d9b761262a6827002384dd9ba21b777ec4f26e84dedd164a5866bf78d348a'
+    --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=997d9b761262a6827002384dd9ba21b777ec4f26e84dedd164a5866bf78d348a'
     ```
 * **Delete Bucket**: Xóa một bucket (chỉ khi bucket rỗng).
   * Đường dẫn: `DELETE /<bucket-name>`
@@ -80,7 +80,7 @@ Những API này cho phép bạn quản lý các bucket
       curl --location --request DELETE 'https://han02.vstorage.vngcloud.vn/demobucket' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T041239Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=e164da98dd0564eea205ec8624d701d8809afab7ab57867e45a3beb227f8a71d'
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=e164da98dd0564eea205ec8624d701d8809afab7ab57867e45a3beb227f8a71d'
       ```
 * **GET Bucket (List Objects)**: Liệt kê các đối tượng trong một bucket.
   * Đường dẫn: `GET /<bucket-name>`
@@ -91,7 +91,7 @@ Những API này cho phép bạn quản lý các bucket
       curl --location 'https://han02.vstorage.vngcloud.vn/demobucket' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T041313Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=7481242fb41364a753658d7db3b2e95c4b2e10458987e14584dc297330ea7dab'
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=7481242fb41364a753658d7db3b2e95c4b2e10458987e14584dc297330ea7dab'
       ```
 * **HEAD Bucket**: Kiểm tra sự tồn tại và quyền truy cập vào bucket.
   * Đường dẫn: `HEAD /<bucket-name>`
@@ -102,7 +102,7 @@ Những API này cho phép bạn quản lý các bucket
       curl --location --head 'https://han02.vstorage.vngcloud.vn/demobucket' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T041336Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=425119560f45bd0cd7a5a58f6835d189e0cc3d7907cdd72bfd84bd6d88f59ae9'
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=425119560f45bd0cd7a5a58f6835d189e0cc3d7907cdd72bfd84bd6d88f59ae9'
       ```
 
 ### **2. API Kiểm soát truy cập (Access Control APIs)**
@@ -118,7 +118,7 @@ Quản lý quyền truy cập cho các bucket và đối tượng.
       curl --location 'https://han02.vstorage.vngcloud.vn/demobucket?acl=null' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T041447Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=fd112a35fed96929de946f9c48d050c8f15ca1249ae549d7b86664adde8d81cd'
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=fd112a35fed96929de946f9c48d050c8f15ca1249ae549d7b86664adde8d81cd'
       ```
 * **PUT Bucket ACL**: Thiết lập ACL cho bucket.
   * Đường dẫn: `PUT /<bucket-name>?acl`
@@ -130,7 +130,7 @@ Quản lý quyền truy cập cho các bucket và đối tượng.
       --header 'Content-Type: application/xml' \
       --header 'X-Amz-Content-Sha256: beaead3198f7da1e70d03ab969765e0821b24fc913697e929e726aeaebf0eba3' \
       --header 'X-Amz-Date: 20240829T043655Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-content-sha256;x-amz-date, Signature=47e95dfbf5a61141dd1088cc286ee2f187ae78c0f7cc108c20538ac1ee77d18b' \
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-content-sha256;x-amz-date, Signature=47e95dfbf5a61141dd1088cc286ee2f187ae78c0f7cc108c20538ac1ee77d18b' \
       --data '<AccessControlPolicy xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
         <Owner>
           <ID>rootuser-092410</ID> <!-- Replace with the bucket owner'\''s canonical user ID -->
@@ -163,7 +163,7 @@ Quản lý quyền truy cập cho các bucket và đối tượng.
       curl --location 'https://han02.vstorage.vngcloud.vn/demobucket/videoplayback.mp4?acl=null' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T041603Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=eb53bff6d55ade68e688ea5af5b44ff9da9afb7b361e5e60563f6d0f3e4c763b'
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=eb53bff6d55ade68e688ea5af5b44ff9da9afb7b361e5e60563f6d0f3e4c763b'
       ```
 * **PUT Bucket Make Public:** Thiết lập Bucket Public
   * Đường dẫn: `GET /<bucket-name>/?publicAccessBlock`
@@ -175,7 +175,7 @@ Quản lý quyền truy cập cho các bucket và đối tượng.
       --header 'Content-Type: application/xml' \
       --header 'X-Amz-Content-Sha256: beaead3198f7da1e70d03ab969765e0821b24fc913697e929e726aeaebf0eba3' \
       --header 'X-Amz-Date: 20240829T063152Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=9c9624d2ac082b98e6925444ab497746/20240829/HCM04/s3/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-content-sha256;x-amz-date, Signature=341d2a2ba5e1645ae7ee1b9d5e06649333b08433c7efcd47953ac3e2603ee0bb' \
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=9c9624d2ac082b98e6925444ab497746/20240829/hcm02/s3/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-content-sha256;x-amz-date, Signature=341d2a2ba5e1645ae7ee1b9d5e06649333b08433c7efcd47953ac3e2603ee0bb' \
       --data '<PublicAccessBlockConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
         <BlockPublicAcls>true</BlockPublicAcls>
         <IgnorePublicAcls>true</IgnorePublicAcls>
@@ -192,7 +192,7 @@ Quản lý quyền truy cập cho các bucket và đối tượng.
       curl --location 'https://han02.vstorage.vngcloud.vn/demobucket01/?publicAccessBlock=null' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T063914Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=9c9624d2ac082b98e6925444ab497746/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=041a0737e3e204ca2941069a3bab021ad54a8eb837fcbfd2ff8d2a3dd647d060'
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=9c9624d2ac082b98e6925444ab497746/20240829/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=041a0737e3e204ca2941069a3bab021ad54a8eb837fcbfd2ff8d2a3dd647d060'
       ```
 
 ### **3. API Quản Lý Phiên Bản (Versioning)**
@@ -209,7 +209,7 @@ Quản lý phiên bản của đối tượng trong bucket.
       --header 'Content-Type: application/xml' \
       --header 'X-Amz-Content-Sha256: beaead3198f7da1e70d03ab969765e0821b24fc913697e929e726aeaebf0eba3' \
       --header 'X-Amz-Date: 20240829T041647Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-content-sha256;x-amz-date, Signature=79d17ba3ab6fe55a68df54b423fa17c9633ed24b462ab4727f9997bef28ed3ac' \
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-content-sha256;x-amz-date, Signature=79d17ba3ab6fe55a68df54b423fa17c9633ed24b462ab4727f9997bef28ed3ac' \
       --data '<VersioningConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
          <Status>Enabled</Status>
       </VersioningConfiguration>'
@@ -223,7 +223,7 @@ Quản lý phiên bản của đối tượng trong bucket.
       curl --location 'https://han02.vstorage.vngcloud.vn/demobucket?versioning=null' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T041708Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=b45886dbf42a0a6d613a465e38e33f6e59b548c27f361798ea168335fe8243e3'
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=b45886dbf42a0a6d613a465e38e33f6e59b548c27f361798ea168335fe8243e3'
       ```
 * **GET Object Versions**: Liệt kê các phiên bản của các đối tượng trong bucket.
   * Đường dẫn: `GET /<bucket-name>?versions`
@@ -234,7 +234,7 @@ Quản lý phiên bản của đối tượng trong bucket.
       curl --location 'https://han02.vstorage.vngcloud.vn/demobucket/?versions=null' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T041846Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=1b4454bcc74c22d919121588f4c26ccc921b69544510ae65de3fdb1c5c9ac274'
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=1b4454bcc74c22d919121588f4c26ccc921b69544510ae65de3fdb1c5c9ac274'
       ```
 
 ### **4. API Lifecycle**&#x20;
@@ -251,7 +251,7 @@ Quản lý vòng đời cho bucket và đối tượng:
       --header 'Content-Type: application/xml' \
       --header 'X-Amz-Content-Sha256: beaead3198f7da1e70d03ab969765e0821b24fc913697e929e726aeaebf0eba3' \
       --header 'X-Amz-Date: 20240829T042040Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-content-sha256;x-amz-date, Signature=9bc1af859707fb67367fda2cb60236b2d1b9c4442a9e44a77f918242ae8bca87' \
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-content-sha256;x-amz-date, Signature=9bc1af859707fb67367fda2cb60236b2d1b9c4442a9e44a77f918242ae8bca87' \
       --data '<LifecycleConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
           <Rule>
               <Expiration>
@@ -274,7 +274,7 @@ Quản lý vòng đời cho bucket và đối tượng:
       curl --location 'https://han02.vstorage.vngcloud.vn/demobucket?lifecycle=null' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T042134Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=31f4e56f55429f271348de461934dc4c495856330d333559fa6e9ae983800fbd'
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=31f4e56f55429f271348de461934dc4c495856330d333559fa6e9ae983800fbd'
       ```
 * **DELETE Bucket Lifecycle**: Xóa các quy tắc vòng đời đã thiết lập cho bucket.
   * Đường dẫn: `DELETE /<bucket-name>?lifecycle`
@@ -285,7 +285,7 @@ Quản lý vòng đời cho bucket và đối tượng:
       curl --location --request DELETE 'https://han02.vstorage.vngcloud.vn/demobucket?lifecycle=null' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T042209Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=c4ab9fbfa8ca73af115142e0a78103e0292e87af6b70a214f21fe020535c3db0'
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=c4ab9fbfa8ca73af115142e0a78103e0292e87af6b70a214f21fe020535c3db0'
       ```
 
 ### **5. API CORS**
@@ -302,7 +302,7 @@ Quản lý truy cập và sử dụng S3 như một dịch vụ lưu trữ trang
       --header 'Content-Type: application/xml' \
       --header 'X-Amz-Content-Sha256: beaead3198f7da1e70d03ab969765e0821b24fc913697e929e726aeaebf0eba3' \
       --header 'X-Amz-Date: 20240829T042330Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-content-sha256;x-amz-date, Signature=bdfa1e44bd7f1e52c0c40b73ea484b68dbd2bd80c2a470f41262740614d64a1d' \
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-content-sha256;x-amz-date, Signature=bdfa1e44bd7f1e52c0c40b73ea484b68dbd2bd80c2a470f41262740614d64a1d' \
       --data '<CORSConfiguration>
         <CORSRule>
           <AllowedOrigin>*</AllowedOrigin> <!-- Allows all origins -->
@@ -326,7 +326,7 @@ Quản lý truy cập và sử dụng S3 như một dịch vụ lưu trữ trang
       curl --location 'https://han02.vstorage.vngcloud.vn/demobucket?cors=null' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T042406Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=7632d687924e286195d06f4024d2307c91ccb6df49f6da27328acdd63da63458'
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=7632d687924e286195d06f4024d2307c91ccb6df49f6da27328acdd63da63458'
       ```
 * **DELETE Bucket Website**: Xóa cấu hình trang web của bucket.
   * Đường dẫn: `DELETE /<bucket-name>?website`
@@ -337,7 +337,7 @@ Quản lý truy cập và sử dụng S3 như một dịch vụ lưu trữ trang
       curl --location --request DELETE 'https://han02.vstorage.vngcloud.vn/demobucket?cors=null' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T042453Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=78fdf2ff9a9ec36927431dc1f42a8d5fdcb8fd4a1a2c48794cd45c555de3d6b9'
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=78fdf2ff9a9ec36927431dc1f42a8d5fdcb8fd4a1a2c48794cd45c555de3d6b9'
       ```
 
 ***
@@ -362,7 +362,7 @@ Thiết lập Object Locked thông qua API.
       --header 'Content-MD5: frQ6AD8WUb/ZlO+2+AKIlw==' \
       --header 'X-Amz-Content-Sha256: beaead3198f7da1e70d03ab969765e0821b24fc913697e929e726aeaebf0eba3' \
       --header 'X-Amz-Date: 20240829T085503Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=c65bce455f431914fe5f39c28e8d56f7/20240829/HCM04/s3/aws4_request, SignedHeaders=content-length;content-md5;content-type;host;x-amz-content-sha256;x-amz-date, Signature=f39c72fe719ac44ea493df3013534510ea44d5f75360186532b514fe38139a8c' \
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=c65bce455f431914fe5f39c28e8d56f7/20240829/hcm02/s3/aws4_request, SignedHeaders=content-length;content-md5;content-type;host;x-amz-content-sha256;x-amz-date, Signature=f39c72fe719ac44ea493df3013534510ea44d5f75360186532b514fe38139a8c' \
       --data '<ObjectLockConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/"> 
           <ObjectLockEnabled>Enabled</ObjectLockEnabled>
           <Rule>
@@ -391,7 +391,7 @@ Thiết lập Object Locked thông qua API.
       --header 'Content-Type: text/plain' \
       --header 'X-Amz-Content-Sha256: beaead3198f7da1e70d03ab969765e0821b24fc913697e929e726aeaebf0eba3' \
       --header 'X-Amz-Date: 20240829T042534Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=content-length;content-md5;content-type;host;x-amz-content-sha256;x-amz-date, Signature=f0592a78ee6b84a5b7cbc4edaf90e76cacc496a0351c5d10b19b9a574e4e9a1a' \
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=content-length;content-md5;content-type;host;x-amz-content-sha256;x-amz-date, Signature=f0592a78ee6b84a5b7cbc4edaf90e76cacc496a0351c5d10b19b9a574e4e9a1a' \
       --data 'datatest'
       ```
 * **GET Object**: Lấy một đối tượng từ S3.
@@ -403,7 +403,7 @@ Thiết lập Object Locked thông qua API.
       curl --location 'https://han02.vstorage.vngcloud.vn/demobucket/demoobject.txt' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T042558Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=5d1d085388c0464652e30d68b894e4ff1a6ade86c8f04eed4f9fba7c5968676d'
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=5d1d085388c0464652e30d68b894e4ff1a6ade86c8f04eed4f9fba7c5968676d'
       ```
 * **DELETE Object**: Xóa một đối tượng khỏi S3.
   * Đường dẫn: `DELETE /<bucket-name>/<object-key>`
@@ -415,7 +415,7 @@ Thiết lập Object Locked thông qua API.
       --header 'x-amz-bypass-governance-retention: true' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T042811Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-bypass-governance-retention;x-amz-content-sha256;x-amz-date, Signature=54babdc95afd251946a37352d569f825cc5bce8c7b900c0c03874fb3554fdf6c'
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-bypass-governance-retention;x-amz-content-sha256;x-amz-date, Signature=54babdc95afd251946a37352d569f825cc5bce8c7b900c0c03874fb3554fdf6c'
       ```
 
 **Chú ý:**
@@ -428,7 +428,7 @@ curl --location --request DELETE 'https://han02.vstorage.vngcloud.vn/demobucket/
 --header 'versionId: z3-o0S5HEC6-XsjEjuHoRwoE-F6X1IF' \
 --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
 --header 'X-Amz-Date: 20240911T065412Z' \
---header 'Authorization: AWS4-HMAC-SHA256 Credential=b98adf996bb003a1bd79748c5e779ccd/20240911/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-bypass-governance-retention;x-amz-content-sha256;x-amz-date, Signature=6a69759b132a6be8f609fb66bca41f06a33e560ca4ff012de01351cc7bcbd05e'
+--header 'Authorization: AWS4-HMAC-SHA256 Credential=b98adf996bb003a1bd79748c5e779ccd/20240911/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-bypass-governance-retention;x-amz-content-sha256;x-amz-date, Signature=6a69759b132a6be8f609fb66bca41f06a33e560ca4ff012de01351cc7bcbd05e'
 ```
 
 * **HEAD Object**: Truy vấn metadata của đối tượng mà không cần tải về nội dung.
@@ -440,7 +440,7 @@ curl --location --request DELETE 'https://han02.vstorage.vngcloud.vn/demobucket/
       curl --location --head 'https://han02.vstorage.vngcloud.vn/demobucket/demoobject.txt' \
       --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
       --header 'X-Amz-Date: 20240829T042639Z' \
-      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=0fe5fc5caca290919c3782c74f793c0f7cfe36f4f2c7829de8b895bab51ac7d1'
+      --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=0fe5fc5caca290919c3782c74f793c0f7cfe36f4f2c7829de8b895bab51ac7d1'
       ```
 * **COPY Object**: Sao chép một đối tượng từ một vị trí S3 này sang một vị trí khác.
   * Request: `PUT /<destination-bucket>/<destination-object-key>` với header `x-amz-copy-source`.
@@ -453,5 +453,5 @@ curl --location --request PUT 'https://han02.vstorage.vngcloud.vn/demobucket01/d
 --header 'x-amz-object-lock-legal-hold: OFF' \
 --header 'X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' \
 --header 'X-Amz-Date: 20240829T040428Z' \
---header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-copy-source;x-amz-date;x-amz-object-lock-legal-hold, Signature=bf53eedc8b407de21d94c73191940f2257a6c9759f411e844c912de3c2b26ee9'
+--header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/hcm02/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-copy-source;x-amz-date;x-amz-object-lock-legal-hold, Signature=bf53eedc8b407de21d94c73191940f2257a6c9759f411e844c912de3c2b26ee9'
 ```

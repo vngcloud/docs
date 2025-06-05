@@ -241,7 +241,7 @@ Sau khi chúng tôi xác nhận đã cung cấp ví POC cho tài khoản của b
 <summary>Khởi tạo project sử dụng số dư ví POC</summary>
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn **region HCM04.**
+2. Chọn **region hcm02.**
 3. Chọn **Tạo một project.**
 4. Màn hình **Tạo mới project** được hiển thị. Trong **Tên project**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho project của bạn.
 5. Chọn **Quota** lưu trữ theo nhu cầu của bạn.Quota là kích thước gói lưu trữ tối đa bạn có thể tạo. Đối với mỗi gói lưu trữ, chúng tôi đã cung cấp 1 kích thước tối thiểu và tối đa để bạn có thể lựa chọn thay đổi dựa trên nhu cầu thực tế.

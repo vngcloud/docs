@@ -1,6 +1,6 @@
 # Quản lý truy cập
 
-Trên region HCM04, bạn có thể sử dụng 4 loại tài khoản để truy cập vào vStorage. Chi tiết 4 loại này bao gồm:
+Trên region HCM02, bạn có thể sử dụng 4 loại tài khoản để truy cập vào vStorage. Chi tiết 4 loại này bao gồm:
 
 * **Root User Account:** Là tài khoản [khởi tạo đầu tiên](https://register.vngcloud.vn/signup) để truy cập vào VNG Cloud với đầy đủ quyền truy cập vào tất cả dịch vụ tài nguyên trên VNG Cloud.
 * **IAM User Account, Service Account:** Là tài khoản được tạo ra từ tài khoản Root user account duy nhất với những quyền truy cập phụ thuộc vào chính sách cho phép truy cập được thiết lập từ Root user account.&#x20;

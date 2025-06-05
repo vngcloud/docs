@@ -9,4 +9,4 @@ Bạn có thể lựa chọn hình thức phù hợp để tối ưu chi phí l�
 
 Ngoài ra, khi bạn thực hiện xóa project trong chu kỳ còn hiệu lực của project mà bạn đã mua trước đó, chúng tôi sẽ hoàn trả lại cho bạn số tiền thực tế dựa trên số tài nguyên bạn chưa sử dụng trong chu kỳ đã thanh toán. Chi tiết tham khảo thêm tại: [Quản lý hóa đơn, chi phí & tài nguyên trên VNG Cloud](https://docs.vngcloud.vn/vng-cloud-document/v/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud).
 
-Chi tiết tham khảo thêm tại [đây](../vstorage-hcm03/cach-tinh-phi/).
+Chi tiết tham khảo thêm tại [đây](../object-storage-hcm04/cach-tinh-phi/).

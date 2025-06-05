@@ -12,7 +12,7 @@
    1. Chọn **Allow permissions**: mặc định hệ thống vIAM sẽ luôn bật tức là cho phép quyền hạn được áp dụng trên policy. Nếu bạn tắt mode này thì hệ thống sẽ từ chối (đảo chiều) quyền hạn tương ứng.
       1. **Allow permissions**: cho phép truy cập theo action đã chọn.&#x20;
       2. **Deny permissions**: từ chối truy cập theo action đã chọn.
-   2. Chọn **All vstorage actions** nếu muốn tạo policy có quyền thực hiện tất cả các hành động trên vStorage. Chi tiết ý nghĩa của các action vui lòng tham khảo tại [Tính năng, tài nguyên vStorage và quyền truy cập](../../quan-ly-truy-cap-tai-nguyen-vstorage/phan-quyen-truy-cap-va-lam-viec-thong-qua-iam/tinh-nang-tai-nguyen-vstorage-va-quyen-truy-cap.md).
+   2. Chọn **All vstorage-hcm03 actions** nếu muốn tạo policy có quyền thực hiện tất cả các hành động trên vStorage. Chi tiết ý nghĩa của các action vui lòng tham khảo tại [Tính năng, tài nguyên vStorage và quyền truy cập](../../quan-ly-truy-cap-tai-nguyen-vstorage/phan-quyen-truy-cap-va-lam-viec-thong-qua-iam/tinh-nang-tai-nguyen-vstorage-va-quyen-truy-cap.md).
 8. Chọn **Resources**:
    1. Chọn **All resources** nếu muốn quyền truy cập đã chọn bên trên được phép truy cập vào mọi tài nguyên trên tài khoản SSO account của bạn.&#x20;
    2. Chọn **Specify resources**: chọn project, container, object cụ thể mà bạn muốn cho phép truy cập tới. Bạn có thể nhập thông tin cho mỗi loại resources này bằng 1 trong những cách sau:&#x20;
