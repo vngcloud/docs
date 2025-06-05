@@ -7,6 +7,6 @@
 
 Trong đó:&#x20;
 
-* **Endpoint**: Đường dẫn đến vstorage, [hcm01.vstorage.vngcloud.vn](http://hcm01.vstorage.vngcloud.vn/) (region HCM01 - Hồ Chí Minh) hoặc [han01.vstorage.vngcloud.vn](http://han01.vstorage.vngcloud.vn/) (Region HAN01 - Hà Nội).
+* **Endpoint**: Đường dẫn đến vstorage, [hcm01.vstorage.vngcloud.vn](http://hcm01.vstorage.vngcloud.vn/) (region HCM01 - Hồ Chí Minh)
 * **Access Key & Secret Key:** Là cặp key được cấp thông qua vIAM.
 * **Region**: Là vị trí địa lý mà vStorage lưu trữ dữ liệu, tham khảo tại [Region là gì?](../../vstorage-la-gi/region-la-gi.md) và [Farm là gì?](../../vstorage-la-gi/farm-la-gi.md).

@@ -20,7 +20,7 @@ Nhằm tiết kiệm không gian lưu trữ trên Wordpress Server, bạn có th
 
 1. Trước khi cấu hình, bên góc trái, bạn quay lại Plugins, chọn **Plugin Editor**.&#x20;
 2. Tại góc phải, bạn chọn đến Media Cloud và nhấn **Select**.&#x20;
-3. Sau đó, bạn duyệt tới file **config/storage/s3.config.php** và thêm thông tin **Region** của container đã tạo trên vStorage tại mục **options** trong **mcloud-storage-s3-region**. VD: Nếu là Region HAN01, bạn thêm với cú pháp tương tự:  'HAN01’ => ‘HAN01’.
+3. Sau đó, bạn duyệt tới file **config/storage/s3.config.php** và thêm thông tin **Region** của container đã tạo trên vStorage tại mục **options** trong **mcloud-storage-s3-region**. VD: Nếu là Region HCM03, bạn thêm với cú pháp tương tự:  'HCM03’ => ‘HCM03’.
 4. Sau khi thêm, bạn kéo xuống duới chọn **Update File**.&#x20;
 
 </details>
