@@ -2,23 +2,23 @@
 
 #### Tổng quan <a href="#transferdulieutuvstoragetoivstoragekhacaccount-tongquan" id="transferdulieutuvstoragetoivstoragekhacaccount-tongquan"></a>
 
-Giả sử ban đầu tôi đang sử dụng account1 trên vStorage, nơi lưu trữ dữ liệu chính của tôi là region HCM03. Hiện tại tôi đã tạo một account2 tại region region HAN01 và tôi muốn chuyển dữ liệu này về region HAN01 để việc truy xuất dữ liệu hiệu quả hơn. Việc dữ liệu sẽ diễn ra một lần theo thời điểm tôi nhấn chạy Transfer Job.&#x20;
+Giả sử ban đầu tôi đang sử dụng account1 trên vStorage, nơi lưu trữ dữ liệu chính của tôi là region HCM04. Hiện tại tôi đã tạo một account2 tại region region HAN02 và tôi muốn chuyển dữ liệu này về region HAN02 để việc truy xuất dữ liệu hiệu quả hơn. Việc dữ liệu sẽ diễn ra một lần theo thời điểm tôi nhấn chạy Transfer Job.&#x20;
 
 * **Source** information: vStorage
   * Account: account01
-  * Region: HCM03
-  * Endpoint: [https://hcm03.vstorage.vngcloud.vn](https://hcm03.vstorage.vngcloud.vn/)
+  * Region: HCM04
+  * Endpoint: [https://hcm04.vstorage.vngcloud.vn](https://hcm04.vstorage.vngcloud.vn/)
   * Project: project01
-  * Bucket: container01
+  * Bucket: bucket01
   * Access key: accesskeysource
   * Secret key: secretkeysource
 * **Destination** information: vStorage
   * Account: account02
-  * Region: HAN01
-  * Endpoint: [https://han01.vstorage.vngcloud.vn](https://han01.vstorage.vngcloud.vn/)
+  * Region: HAN02
+  * Endpoint: [https://han02.vstorage.vngcloud.vn](https://han02.vstorage.vngcloud.vn/)
   * Project: project02
-  * Bucket: container02
-  * Folder path: backup/fromregionhcm03
+  * Bucket: bucket02
+  * Folder path: backup/fromregionhcm04
   * Access key: accesskeydestination
   * Secret key: secretkeydestination
 
@@ -46,19 +46,19 @@ Giả sử ban đầu tôi đang sử dụng account1 trên vStorage, nơi lưu 
 
 **Bước 4:** Nhập **Source configuration**, bao gồm:&#x20;
 
-* Nhập **Region**: HCM03.
-* Nhập **Bucket**: container01.
-* Nhập **Endpoint**: [https://hcm03.vstorage.vngcloud.vn](https://hcm03.vstorage.vngcloud.vn/)
+* Nhập **Region**: HCM04.
+* Nhập **Bucket**: bucket01.
+* Nhập **Endpoint**: [https://hcm04.vstorage.vngcloud.vn](https://hcm04.vstorage.vngcloud.vn/)
 * Nhập **Access Key:** accesskeysource
 * Nhập **Secret Key:** secretkeysource
 * Sau khi nhập đẩy đủ thông tin tại các mục bên trên, bạn có thể chọn kiểm tra kết nối bằng cách nhấn vào nút **Test connection**. Lúc này, hệ thống của chúng tôi sẽ kiểm tra tính hợp lệ của thông tin và hiển thị kết quả. Nếu kết nối thành công, bạn sẽ nhận được thông báo "**Connection successful**". Nếu kết nối thất bại, bạn sẽ nhận được thông báo lỗi và mô tả chi tiết về lỗi.
 
 **Bước 5:** Nhập **Destination configuration**, bao gồm:
 
-* Chọn **Region**: HAN01.
+* Chọn **Region**: HAN02.
 * Chọn **Project**: project02.
-* Chọn **Container**: container02.
-* Chọn **Folder**: backup/fromregionhcm03
+* Chọn **Container**: bucket02.
+* Chọn **Folder**: backup/fromregionhcm04
 * Nhập **Access key**: accesskeydestination
 * Nhập **Secret key**: secretkeydestination
 * Sau khi nhập đẩy đủ thông tin tại các mục bên trên, bạn có thể chọn kiểm tra kết nối bằng cách nhấn vào nút **Test connection**. Lúc này, hệ thống của chúng tôi sẽ kiểm tra tính hợp lệ của thông tin và hiển thị kết quả. Nếu kết nối thành công, bạn sẽ nhận được thông báo "**Connection successful**". Nếu kết nối thất bại, bạn sẽ nhận được thông báo lỗi và mô tả chi tiết về lỗi.

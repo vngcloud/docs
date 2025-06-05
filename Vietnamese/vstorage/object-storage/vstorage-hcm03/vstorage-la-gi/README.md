@@ -14,7 +14,7 @@ vStorage cung cấp 3 lớp lưu trữ là Gold, Silver và Archive. Với lớp
 
 Chúng tôi cung cấp cho bạn các giải pháp hàng đầu bao gồm:
 
-* Hỗ trợ nhiều region lưu trữ Hồ Chí Minh (HCM01) và Hà Nội (HAN01) với dung lượng lưu trữ từ mức Gigabyte tới Petabyte co giãn. Bạn cũng có thể yêu cầu phân vùng lưu trữ riêng nếu chúng tôi đánh giá nhu cầu của bạn là thiết thực.
+* Hỗ trợ region lưu trữ Hồ Chí Minh (HCM03) với dung lượng lưu trữ từ mức Gigabyte tới Petabyte co giãn. Bạn cũng có thể yêu cầu phân vùng lưu trữ riêng nếu chúng tôi đánh giá nhu cầu của bạn là thiết thực.
 * Đa dạng các lớp lưu trữ: Gold/Silver/Archive. Bạn có thể sở hữu cùng lúc nhiều gói lưu trữ độc lập thông qua các phương thức thanh toán khác nhau mà chúng tôi đang hỗ trợ.
 * Hỗ trợ 2 giao thức tương tác với dữ liệu: Openstack Swift, S3 Compatible.
 * Sử dụng kênh truyền Https đảm bảo dữ liệu được truyền tải một cách bảo mật và đảm bảo an toàn tuyệt đối.

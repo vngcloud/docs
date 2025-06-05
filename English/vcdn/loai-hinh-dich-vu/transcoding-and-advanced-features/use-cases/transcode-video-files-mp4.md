@@ -55,7 +55,7 @@ First, you need to install Sigma Media Server following the steps [here](https:/
 
 <figure><img src="../../../../.gitbook/assets/image (43) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Step 6:** Select the type of source file to transcode. You need to enter the URL [of](https://han01.vstorage.vngcloud.vn/v1/AUTH_210ff69ad18d4bfa9920b165ef8ddef4/con_01/big_buck_bunny_720p_30mb.mp4) the source file that has been uploaded to the S3 service. For example, with vStorage, the object URL will have a similar format: [https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_123456/cont\_01/pexels\_videos\_1390942%20(2160p).mp4 ](https://hcm03.vstorage.vngcloud.vn/v1/AUTH_bcd882dd104f40cb8e20f1cd6bb0b4c6/cont_01/pexels_videos_1390942%20\(2160p\).mp4)**Note: you need to make the container/bucket public (Make Public) on vStorage or any S3 service so that Sigma can access this link.**
+**Step 6:** Select the type of source file to transcode. You need to enter the URL [of](https://han02.vstorage.vngcloud.vn/v1/AUTH_210ff69ad18d4bfa9920b165ef8ddef4/con_01/big_buck_bunny_720p_30mb.mp4) the source file that has been uploaded to the S3 service. For example, with vStorage, the object URL will have a similar format: [https://hcm04.vstorage.vngcloud.vn/v1/AUTH\_123456/cont\_01/pexels\_videos\_1390942%20(2160p).mp4 ](https://hcm03.vstorage.vngcloud.vn/v1/AUTH_bcd882dd104f40cb8e20f1cd6bb0b4c6/cont_01/pexels_videos_1390942%20\(2160p\).mp4)**Note: you need to make the container/bucket public (Make Public) on vStorage or any S3 service so that Sigma can access this link.**
 
 <figure><img src="../../../../.gitbook/assets/image (44) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
