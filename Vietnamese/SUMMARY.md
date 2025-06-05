@@ -712,7 +712,6 @@
     * [Sử dụng Terraform để khởi tạo Cluster và Node Group](vks/bat-dau-voi-vks/su-dung-terraform-de-khoi-tao-cluster-va-node-group.md)
     * [Khởi tạo và làm việc với NVIDIA GPU Node Group](vks/bat-dau-voi-vks/lam-viec-voi-nvidia-gpu-nodegroups.md)
   * [Clusters](vks/clusters/README.md)
-    * [Public Cluster và Private Cluster](vks/clusters/public-cluster-va-private-cluster.md)
     * [Upgrading Control Plane Version](vks/clusters/upgrading-control-plane-version.md)
     * [Whitelist](vks/clusters/whitelist.md)
     * [POC và Stop POC](vks/clusters/stop-poc.md)
