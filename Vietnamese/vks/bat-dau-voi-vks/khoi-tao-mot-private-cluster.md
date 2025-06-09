@@ -221,7 +221,7 @@ docker pull nginx:latest
 * Với <mark style="color:red;background-color:red;">**Region HCM**</mark>:&#x20;
 
 ```
-docker login vcr-han.vngcloud.vn -u <repository_user>
+docker login vcr.vngcloud.vn -u <repository_user>
 ```
 
 * Với <mark style="color:red;background-color:red;">**Region HAN**</mark>:
