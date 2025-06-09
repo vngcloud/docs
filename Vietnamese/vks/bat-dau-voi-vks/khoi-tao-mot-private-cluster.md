@@ -131,6 +131,13 @@ Trong ví dụ bên dưới tôi sẽ đứng tại một server có VPC cùng v
 sudo snap install kubectl --classic
 ```
 
+* Nếu trên server của bạn chưa có snap, vui lòng thực hiện cài đặt qua lệnh:
+
+```
+sudo apt update
+sudo apt install snapd
+```
+
 * Sau đó, tôi kiểm tra kubectl qua lệnh:
 
 ```
