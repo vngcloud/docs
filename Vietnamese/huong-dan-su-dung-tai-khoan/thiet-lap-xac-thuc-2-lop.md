@@ -1,4 +1,13 @@
-# Thiết lập xác thực 2 lớp
+# Thiết lập xác thực 2 lớp (2FA)
+
+2FA nghĩa là **Xác thực Hai Yếu Tố** — là một dạng của **chứng thực đa yếu tố (Multi-Factor Authentication - MFA)**.
+
+Khi đăng nhập vào VNG Cloud, thay vì chỉ cần **một yếu tố** (thường là mật khẩu), 2FA yêu cầu người dùng phải xác minh thêm **một yếu tố khác nữa**, ví dụ:
+
+* **Yếu tố thứ nhất (bắt buộc):** Cái bạn biết — mật khẩu.
+* **Yếu tố thứ hai:** Cái bạn có — điện thoại (nhận OTP, app Authenticator).&#x20;
+
+Sau đây và ví dụ cụ thể cho phép bạn thiết lập chứng thực đa yếu tố:
 
 **Bước 1:** Đăng nhập vào [trang quản trị tài khoản](https://dashboard.console.vngcloud.vn/). Trên menu các chức năng quản trị tài khoản, chọn **"Xác thực 2 lớp".**
 
