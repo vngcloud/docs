@@ -7,6 +7,10 @@ Thanh toán trực tuyến là 1 trong những phương thức thanh toán chín
 * **Nguồn tiền**:
   * Ví VNG Cloud (Ví Credit)
   * Cổng thanh toán trực tuyến: MoMo, ZaloPay,...
+  *   Chuyển khoản trực tiếp tới tài khoản của VNG Cloud
+
+      | <p>Tên tài khoản : CÔNG TY CỔ PHẦN DỊCH VỤ - DỮ LIỆU CÔNG NGHỆ THÔNG TIN VI NA<br>Số tài khoản : 04301010052860<br>Ngân hàng : Ngân hàng MSB/ Maritime Bank<br>(Ngân hàng TMCP Hàng Hải Việt Nam)<br>Chi nhánh : Tân Bình<br>Nội dung thanh toán : Mã đơn hàng</p> |
+      | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 * **Tác vụ**:
   * Người dùng chọn phương thức và xác nhận thanh toán
   * Hệ thống tiến hành thanh toán
