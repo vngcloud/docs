@@ -20,13 +20,9 @@ Chi tiết các bước như sau
 
 **Bước 1: Tạo User: System1 nếu chưa có User Account (lưu ý rằng nếu đã có sẵn User: System1, cần đảo bảo User: System1 không có quyền gì hoặc không có các quyền chồng lấn với hướng dẫn)**
 
-Tiến hành tạo User Account bằng cách truy cập vào tab User Account ở trang quản lý IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/user-accounts), nhấn **Create a User Account,** điền thông tin Username và Password, sau đó nhấn **Create User Account**&#x20;
+Tiến hành tạo User Account bằng cách truy cập vào tab User Account ở trang quản lý IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/user-accounts), nhấn **Create a User Account,** điền thông tin Username và Password, sau đó nhấn **Create User Account**
 
-<figure><img src="../../.gitbook/assets/image2023-7-12_15-18-33.png" alt=""><figcaption></figcaption></figure>
-
-Sau khi tạo thành công User Account, sẽ được liệt kê ở trang User Account như bên dưới
-
-<figure><img src="../../.gitbook/assets/image2023-7-12_15-19-37.png" alt=""><figcaption></figcaption></figure>
+Sau khi tạo thành công User Account, sẽ được liệt kê ở trang User Account.
 
 **Bước 2: Lấy thông tin ID của server web1-server**
 
