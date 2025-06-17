@@ -9,7 +9,10 @@ description: VNG Cloud Endpoint là điểm kết nối giữa VPC với các d�
 {% hint style="danger" %}
 **Lưu ý quan trọng:**
 
-_Trong cùng một region, người dùng có thể tạo nhiều Endpoint trong một VPC. Nếu **"Bật tên DNS riêng"** được bật khi tạo Endpoint, không cần add host. Ngược lại, phải add host thủ công để sử dụng Endpoint_
+* Trong cùng một **Region**, người dùng có thể tạo nhiều **Endpoint** trong một **VPC**.
+* Nếu **VPC hỗ trợ DNS** và **“Bật tên DNS riêng”** được bật, **không cần cấu hình host** thủ công.
+* DNS nội bộ sẽ tự động phân giải tên miền dịch vụ đến IP nội bộ của Endpoint.
+* Nếu **không bật** tùy chọn này hoặc **VPC không hỗ trợ DNS**, cần **thêm bản ghi host thủ công**.
 {% endhint %}
 
 * Người dùng login vào  [https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list](https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list)  với region = HCM
@@ -70,8 +73,6 @@ Hướng dẫn cấu hình thủ công để truy cập Endpoint Service:
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252FMmsmN65yCpwVKxtPZwUL%252Fimage.png%3Falt%3Dmedia%26token%3Dd2b58bd9-7cad-4166-8c77-bed404188907&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=c2e20add&#x26;sv=2" alt=""><figcaption><p>Endpoint List</p></figcaption></figure>
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252Fk9wUuwK8MUUV9Hw4gq1k%252Fimage.png%3Falt%3Dmedia%26token%3Da9294a84-308a-40d3-b0c4-0afa2acbdf03&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a45880d0&#x26;sv=2" alt=""><figcaption><p>Endpoint Detail</p></figcaption></figure>
-
-\=
 
 Thêm bản ghi host trên các máy chủ cần truy cập dịch vụ qua  Endpoint Service
 
