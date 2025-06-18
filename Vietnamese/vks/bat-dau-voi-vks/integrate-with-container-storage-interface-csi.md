@@ -124,15 +124,62 @@ Storage Class (hay còn được gọi tắt là SC) là **một mẫu** để t
 
 * Tạo file **storage-class.yaml** với nội dung sau:&#x20;
 
-```bash
+```yaml
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
-  name: my-expansion-storage-class                    # [1] The StorageClass name, CAN be changed
-provisioner: bs.csi.vngcloud.vn                       # The VNG-CLOUD CSI driver name
+  name: my-expansion-storage-class                    # Tên Storage Class
+provisioner: bs.csi.vngcloud.vn                       
 parameters:
-  type: vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018    # The volume type UUID
-allowVolumeExpansion: true                            # MUST set this value to turn on volume expansion feature
+  type: ssd-iops3000                                  # Tên loại ổ đĩa và IOPS mà bạn mong muốn
+allowVolumeExpansion: true                      
+volumeBindingMode: WaitForFirstConsumer 
+```
+
+Thông tin vtype bạn vui lòng tham khảo trên trang chủ của VKS tại mục Volume Type hoặc tại [đây](../tham-khao-them/danh-sach-volume-type-dang-ho-tro/).
+
+**Lưu ý quan trọng khi sử dụng Storage Class:**
+
+Nếu bạn đang sử dụng Storage Class đã được khởi tạo trước đây với định dạng sau:
+
+```yaml
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: my-expansion-storage-class                    
+provisioner: bs.csi.vngcloud.vn                       
+parameters:
+  type: vtype-61c3fc5b-f4e9-45b4-8957-8aa7b6029018    
+allowVolumeExpansion: true                            
+```
+
+thay vì dạng chuẩn mới:
+
+```yaml
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: my-expansion-storage-class                    # Tên Storage Class
+provisioner: bs.csi.vngcloud.vn                       
+parameters:
+  type: ssd-iops3000                                  # Tên loại ổ đĩa và IOPS mà bạn mong muốn
+allowVolumeExpansion: true                      
+volumeBindingMode: WaitForFirstConsumer 
+```
+
+thì:
+
+* **Trường hợp 1:** Nếu toàn bộ Cluster của bạn chỉ sử dụng Node Group thuộc Availability Zone **HCM01A**, bạn **có thể tiếp tục sử dụng Storage Class cũ** này mà không gây ảnh hưởng tới hoạt động.
+* **Trường hợp 2:** Nếu bạn khởi tạo Node Group mới thuộc các Availability Zone khác **HCM01A**, chúng tôi **khuyến cáo nên xóa Storage Class cũ** và tạo lại Storage Class mới (vẫn dùng tên Storage Class cũ), nhưng đổi tham số vtype sang định dạng chuẩn mới:
+
+```
+vtype=ssd-iops3000
+```
+
+* **Ngoài ra,** bạn nên cấu hình Storage Class với thông số sau đây để đảm bảo volume chỉ được provision tại AZ phù hợp với pod consumer, tránh lỗi khi triển khai nhiều zone:
+
+```yaml
+volumeBindingMode: WaitForFirstConsumer
 ```
 
 * Chạy câu lệnh sau đây để triển khai tạo storage class:
