@@ -30,11 +30,11 @@ Các bảng sau đây liệt kê các giá trị tối đa cho tài nguyên lưu
 
 * Per IP
 
-<table data-full-width="true"><thead><tr><th width="167">Storage Class</th><th width="187.091064453125">Request all types</th><th width="174.45458984375">Put request</th><th width="188.364013671875">Get request</th><th>Delete request</th></tr></thead><tbody><tr><td>Gold</td><td>5000  request/s/IP</td><td>2000  request/s/IP</td><td>3000  request/s/IP</td><td>1000  request/s/IP</td></tr><tr><td>Instant Archive</td><td>2500  request/s/IP</td><td>1000  request/s/IP</td><td>1500  request/s/IP</td><td>500  request/s/IP</td></tr><tr><td>Archive</td><td>2000  request/s/IP</td><td>1000  request/s/IP</td><td>1500  request/s/IP</td><td>100  request/s/IP</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="167">Storage Class</th><th width="187.091064453125">Request all types</th><th width="174.45458984375">Put request</th><th width="188.364013671875">Get request</th><th>Delete request</th></tr></thead><tbody><tr><td>Gold</td><td>5000  request/s/IP</td><td>2000  request/s/IP</td><td>3000  request/s/IP</td><td>1000  request/s/IP</td></tr><tr><td>Instant Archive</td><td>2500  request/s/IP</td><td>1000  request/s/IP</td><td>1500  request/s/IP</td><td>500  request/s/IP</td></tr></tbody></table>
 
 * Per path
 
-<table data-full-width="true"><thead><tr><th width="164.1817626953125">Storage Class</th><th width="203.13629150390625">Request all types</th><th width="194.9090576171875">Put request</th><th width="194.0906982421875">Get request</th><th>Delete request</th></tr></thead><tbody><tr><td>Gold</td><td>5000 request/s/path</td><td>2000 request/s/path</td><td>3000 request/s/path</td><td>1000 request/s/path</td></tr><tr><td>Instant Archive</td><td>2500 request/s/path</td><td>1000 request/s/path</td><td>1500 request/s/path</td><td>500 request/s/path</td></tr><tr><td>Archive</td><td>2000 request/s/path</td><td>1000 request/s/path</td><td>1500 request/s/path</td><td>100 request/s/path</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="164.1817626953125">Storage Class</th><th width="203.13629150390625">Request all types</th><th width="194.9090576171875">Put request</th><th width="194.0906982421875">Get request</th><th>Delete request</th></tr></thead><tbody><tr><td>Gold</td><td>5000 request/s/path</td><td>2000 request/s/path</td><td>3000 request/s/path</td><td>1000 request/s/path</td></tr><tr><td>Instant Archive</td><td>2500 request/s/path</td><td>1000 request/s/path</td><td>1500 request/s/path</td><td>500 request/s/path</td></tr></tbody></table>
 
 ### Các hạn mức khác
 
