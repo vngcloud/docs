@@ -191,7 +191,7 @@
         * [MTU & “DF flag” best practice on VNG Cloud](vserver/vmarketplace/network-software-installation/pfsense-on-hcm03/mtu-and-df-flag-best-practice-on-vng-cloud.md)
 * [vStorage](vstorage/README.md)
   * [Object storage](vstorage/object-storage/README.md)
-    * [Object storage (HCM03, HAN01)](vstorage/object-storage/vstorage-hcm03/README.md)
+    * [Object storage (HCM03)](vstorage/object-storage/vstorage-hcm03/README.md)
       * [What is vStorage?](vstorage/object-storage/vstorage-hcm03/what-is-vstorage/README.md)
         * [What is Region?](vstorage/object-storage/vstorage-hcm03/what-is-vstorage/what-is-region.md)
         * [What is Farm?](vstorage/object-storage/vstorage-hcm03/what-is-vstorage/what-is-farm.md)
