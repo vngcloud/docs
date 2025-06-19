@@ -10,8 +10,12 @@
 * Tiếp theo, bạn cần thực hiện cài đặt nginx-ingress-controller theo lệnh:
 
 ```
-helm install nginx-ingress-controller oci://ghcr.io/nginxinc/charts/nginx-ingress --namespace kube-system
+helm install nginx-ingress-controller oci://ghcr.io/nginxinc/charts/nginx-ingress \
+--namespace kube-system \
+--set service.externalTrafficPolicy=Local
 ```
+
+* Tiếp theo, bạn cần thực hiện cài đặt nginx-ingress-controller theo lệnh:
 
 ***
 
