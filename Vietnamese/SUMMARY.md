@@ -286,8 +286,6 @@
           * [\[Rclone\] Mount vStorage lên Window server](vstorage/object-storage/vstorage-hcm03/tinh-huong-su-dung-use-case/migrate-du-lieu-migrate-data/rclone-mount-vstorage-len-window-server.md)
           * [\[Rclone\] Mount vStorage thành Local Drive trên Linux](vstorage/object-storage/vstorage-hcm03/tinh-huong-su-dung-use-case/migrate-du-lieu-migrate-data/rclone-mount-vstorage-thanh-local-drive-tren-linux.md)
           * [\[Rclone\] Đồng bộ dữ liệu từ AWS S3 sang vStorage](vstorage/object-storage/vstorage-hcm03/tinh-huong-su-dung-use-case/migrate-du-lieu-migrate-data/rclone-dong-bo-du-lieu-tu-aws-s3-sang-vstorage.md)
-        * [Tối ưu hiệu năng (vStorage Optimize performance)](vstorage/object-storage/vstorage-hcm03/tinh-huong-su-dung-use-case/toi-uu-hieu-nang-optimize-performance/README.md)
-          * [Tối ưu hiệu suất tải lên các file có kích thước nhỏ trên vStorage](vstorage/object-storage/vstorage-hcm03/tinh-huong-su-dung-use-case/toi-uu-hieu-nang-optimize-performance/toi-uu-hieu-suat-tai-len-cac-file-co-kich-thuoc-nho.md)
         * [Tối ưu chi phí (vStorage Optimize cost)](vstorage/object-storage/vstorage-hcm03/tinh-huong-su-dung-use-case/toi-uu-chi-phi-optimize-cost/README.md)
           * [\[vStorage\] Tối ưu chi phí lưu trữ hình ảnh trên Wordpress](vstorage/object-storage/vstorage-hcm03/tinh-huong-su-dung-use-case/toi-uu-chi-phi-optimize-cost/toi-uu-chi-phi-luu-tru-hinh-anh-tren-wordpress.md)
       * [API developers](vstorage/object-storage/vstorage-hcm03/api-developers/README.md)
