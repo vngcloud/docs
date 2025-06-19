@@ -1,5 +1,7 @@
 # Hướng dẫn đặt lại mật khẩu
 
+Bên dưới là hướng dẫn giúp bạn thay đổi mật khẩu của tài khoản quản trị trên VNG Cloud:
+
 **Bước 1:** Truy cập trực tiếp vào đường dẫn [https://register.vngcloud.vn/resetpwd](https://register.vngcloud.vn/resetpwd) hoặc [https://my.vngcloud.vn](https://register.vngcloud.vn/resetpwd) sau đó chọn **Quên mật khẩu?**
 
 <figure><img src="../.gitbook/assets/image (195).png" alt=""><figcaption></figcaption></figure>

@@ -1,4 +1,4 @@
-# Tạm giữ Credit
+# Tạm giữ Credit (Hold Credit)
 
 ## Tổng quan
 
@@ -9,21 +9,26 @@ Tại VNG Cloud Service, có một số tài nguyên / dịch vụ đặc thù c
 
 Do đó, người dùng trả trước không thể thực hiện thanh toán chi phí để sử dụng các tài nguyên đặc biệt (có thể kể đến như dịch vụ vContainer) này ngay tại thời điểm khởi tạo.&#x20;
 
-Nhận thấy nhu cầu sử dụng các tài nguyên / dich vụ trả sau của người dùng trả trước tăng cao, VNG Cloud Service cho ra đời tính năng **Tạm giữ Credit:**
+Nhận thấy nhu cầu sử dụng các tài nguyên / dich vụ trả sau của người dùng trả trước tăng cao, VNG Cloud Service cho ra đời tính năng **Tạm giữ Credit (Hold Credit):**
 
 * **Đối tượng áp dụng**:
   * Người dùng trả trước
 * **Tài nguyên / Dịch vụ áp dụng**:&#x20;
-  * Hiên tại đang hỗ trợ các dịch vụ vContainer (K8s), Snapshot, Repository (vCR), Bandwidth
+  * Hiên tại đang hỗ trợ các dịch vụ vContainer, Snapshot, Repository (vCR), Bandwidth, GLB
 * **Nguồn tiền**:
   * VNG Cloud Credit
 * **Tác vụ:**
   * Người dùng chọn cấu hình tài nguyên cần sử dụng
   * Xác nhận thực hiện tạm giữ credit tại trang thanh toán
 * **Kết quả khi hoàn thành tác vụ:**
-  * Hệ thống tiến hành tạm giữ credit: Số credit bị tạm giữ người dùng sẽ không được sử dụng cho mục đích khác
-  * Hệ thống cung cấp tài nguyên theo cấu hình cho người dùng
-  * Gửi mail thông báo thông tin tài nguyên (tùy vào đặc thù từng loại tài nguyên mà sẽ có email thông báo hoặc không)
+  * Hệ thống tiến hành tạm giữ credit: Số credit bị tạm giữ người dùng sẽ không được sử dụng cho mục đích khác. Bạn có thể kiểm tra số dư credit đang bị tạm giữ (holding) hay chính là chi phí cho các resource holding bằng cách:
+    * **Bước 1:** Truy cập vào portal của VNGCloud
+    * **Bước 2:** Chọn vào phần hiển thị thông tin credit như hình bên dưới. Tại đây, bạn sẽ nhìn thấy phần credit đang được holding bởi VNG Cloud.
+
+<figure><img src="../../../../.gitbook/assets/Xem thong tin hold credit (1).png" alt=""><figcaption></figcaption></figure>
+
+* Hệ thống cung cấp tài nguyên theo cấu hình cho người dùng
+* Gửi mail thông báo thông tin tài nguyên (tùy vào đặc thù từng loại tài nguyên mà sẽ có email thông báo hoặc không)
 
 ## Các dịch vụ áp dụng <a href="#tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s" id="tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s"></a>
 

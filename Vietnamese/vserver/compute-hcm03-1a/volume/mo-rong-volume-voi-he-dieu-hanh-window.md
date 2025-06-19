@@ -28,10 +28,10 @@ Sử dụng quy trình sau để mở rộng hệ thống tệp Windows bằng D
 1. Để mở rộng hệ thống tệp bằng **Disk Management**\
    Trước khi mở rộng một hệ thống tệp có chứa dữ liệu có giá trị, cách tốt nhất là tạo ảnh chụp nhanh (Snapshot) của ổ đĩa chứa nó trong trường hợp bạn cần khôi phục các thay đổi của mình.&#x20;
 2. Đăng nhập vào phiên bản Windows của bạn bằng Remote Desktop.
-3.  Trong hộp thoại **Run**, nhập **diskmgmt.msc** và nhấn Enter. Tiện ích **Disk Management** sẽ mở ra.\
+3. Trong hộp thoại **Run**, nhập **diskmgmt.msc** và nhấn Enter. Tiện ích **Disk Management** sẽ mở ra.
 
+<figure><img src="../../../.gitbook/assets/Man hinh Disk Management tren Window.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (429).png" alt=""><figcaption></figcaption></figure>
 4. Trên menu **Disk Management**, chọn **Action**, **Rescan Disks**.
 5.  Mở menu ngữ cảnh (nhấp chuột phải) cho ổ đĩa được mở rộng và chọn **Extend Volume**.
 
@@ -40,14 +40,13 @@ Sử dụng quy trình sau để mở rộng hệ thống tệp Windows bằng D
     Extend Volume có thể bị tắt (chuyển sang màu xám) nếu:
 
     * Không gian chưa phân bổ không liền kề với ổ đĩa. Không gian chưa phân bổ phải liền kề với phía bên phải của ổ đĩa mà bạn muốn mở rộng.
-    * Ổ đĩa sử dụng kiểu phân vùng Bản ghi khởi động chính (MBR) và nó đã có kích thước 2TB. Ổ đĩa sử dụng MBR không thể vượt quá kích thước 2TB.\
+    * Ổ đĩa sử dụng kiểu phân vùng Bản ghi khởi động chính (MBR) và nó đã có kích thước 2TB. Ổ đĩa sử dụng MBR không thể vượt quá kích thước 2TB.
 
+<figure><img src="../../../.gitbook/assets/Man hinh chon Extend Volume tren Window.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (430).png" alt=""><figcaption></figcaption></figure>
-6.  Trong trình hướng dẫn **Extend Volume**, chọn **Next**. Đối với **Select the amount of space in MB**, hãy nhập số megabyte để mở rộng âm lượng. Nói chung, bạn chỉ định không gian tối đa có sẵn. Văn bản được đánh dấu bên dưới **Đã chọn** là dung lượng được thêm vào, không phải là kích thước cuối cùng mà ổ đĩa sẽ có. Hoàn thành trình hướng dẫn.\
+6. Trong trình hướng dẫn **Extend Volume**, chọn **Next**. Đối với **Select the amount of space in MB**, hãy nhập số megabyte để mở rộng âm lượng. Nói chung, bạn chỉ định không gian tối đa có sẵn. Văn bản được đánh dấu bên dưới **Đã chọn** là dung lượng được thêm vào, không phải là kích thước cuối cùng mà ổ đĩa sẽ có. Hoàn thành trình hướng dẫn.
 
-
-    <figure><img src="../../../.gitbook/assets/image (431).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Man hinh chon Amount of space tren Window.png" alt=""><figcaption></figcaption></figure>
 
 **Bước 2: Mở rộng tệp hệ thống Windows PowerShell**
 
@@ -79,11 +78,10 @@ Sử dụng quy trình sau để mở rộng hệ thống tệp Windows bằng P
 
     \
     Các lệnh PowerShell sau hiển thị dòng lệnh và phản hồi hoàn chỉnh để mở rộng hệ thống tệp đến một kích thước cụ thể.\
-    \
 
 
-    <figure><img src="../../../.gitbook/assets/image (432).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/Man hinh su dụng Window PoweShell de mo rong Volume tren Window.png" alt=""><figcaption></figcaption></figure>
 
 Các lệnh PowerShell sau hiển thị dòng lệnh và phản hồi hoàn chỉnh để mở rộng hệ thống tệp đến kích thước khả dụng tối đa.
 
-<figure><img src="../../../.gitbook/assets/image (433).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Man hinh su dụng Window PoweShell de mo rong Volume va lay thong tin Max Volume tren Window.png" alt=""><figcaption></figcaption></figure>
