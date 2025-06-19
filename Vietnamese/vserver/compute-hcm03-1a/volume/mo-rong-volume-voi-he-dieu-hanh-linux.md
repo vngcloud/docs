@@ -99,5 +99,3 @@ sudo resize2fs /dev/disk0p1
 ```
 
 3. Xác minh rằng tập tin hệ thống đã được mở rộng. Sử dụng lệnh **`df -hT`** và xác nhận rằng kích thước hệ thống tệp bằng với kích thước ổ đĩa.
-
-\
