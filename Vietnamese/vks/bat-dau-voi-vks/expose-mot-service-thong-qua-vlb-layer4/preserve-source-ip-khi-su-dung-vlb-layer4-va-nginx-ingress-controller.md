@@ -15,7 +15,7 @@ helm install nginx-ingress-controller oci://ghcr.io/nginxinc/charts/nginx-ingres
 --set service.externalTrafficPolicy=Local
 ```
 
-* Tiếp theo, bạn cần thực hiện cài đặt nginx-ingress-controller theo lệnh:
+* Cần bật `externalTrafficPolicy: Local` để giữ real client IP; áp dụng cho cả nginx-ingress, ASPIX, Kong hoặc các ingress-controller tương tự.
 
 ***
 
