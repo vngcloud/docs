@@ -2,7 +2,7 @@
 
 ## **Tổng quan**
 
-**Service Account** là một danh tính mà bạn có thể tạo trong tài khoản của mình có các quyền cụ thể. Service Account có một số điểm tương đồng với người dùng IAM. Service Account và IAM User Account đều là danh tính với các Policy cho phép xác định những gì danh tính có thể và không thể làm với tài nguyên Đám mây của VNG. Tuy nhiên, Service Account là danh tính được sử dụng bởi một ứng dụng hoặc một máy chứ không phải một người, để thực hiện các lệnh gọi API được ủy quyền và truy cập các tài nguyên được chỉ định.&#x20;
+**Service Account** là một danh tính mà bạn có thể tạo trong tài khoản của mình có các quyền cụ thể. Service Account có một số điểm tương đồng với người dùng IAM. Service Account và IAM User Account đều là danh tính với các Policy cho phép xác định những gì danh tính có thể và không thể làm với tài nguyên Đám mây của VNG. Tuy nhiên, Service Account là danh tính được sử dụng bởi một ứng dụng hoặc một máy chứ không phải một người, để thực hiện các lệnh gọi API được ủy quyền và truy cập các tài nguyên được chỉ định.
 
 ***
 
@@ -17,7 +17,7 @@
 5. Tại mục Trusted relationship, nhập Account Root IS nếu bạn muốn thêm thông tin liên kết giữa Service Account và Root User Account.
 6. Chọn **Next step**.
 7. Tại mục **Add permission**, bạn có thể:
-   1. Chọn 1 hoặc nhiều policy mà bạn đang có để liên kết với Service Account. Hệ thống vIAM hỗ trợ bạn gán nhiều policy vào một tài khoản Service Account. Nếu các policy này chứa các quyền hạn độc lập thì chúng sẽ bổ sung cho nhau (tức là danh sách quyền hạn được hợp lại). Ngược lại nếu các policy này chứa các quyền hạn trái ngược thì bạn sẽ không thể truy cập vào tài nguyên tương ứng theo danh sách quyền hạn này (tức là danh sách quyền được hợp lại và khi trái ngược thì sẽ triệt tiêu nhau).&#x20;
+   1. Chọn 1 hoặc nhiều policy mà bạn đang có để liên kết với Service Account. Hệ thống vIAM hỗ trợ bạn gán nhiều policy vào một tài khoản Service Account. Nếu các policy này chứa các quyền hạn độc lập thì chúng sẽ bổ sung cho nhau (tức là danh sách quyền hạn được hợp lại). Ngược lại nếu các policy này chứa các quyền hạn trái ngược thì bạn sẽ không thể truy cập vào tài nguyên tương ứng theo danh sách quyền hạn này (tức là danh sách quyền được hợp lại và khi trái ngược thì sẽ triệt tiêu nhau).
    2. Nếu danh sách policy chưa có policy mà bạn mong muốn, bạn có thể tiếp tục các bước bên dưới và chúng tôi chấp nhận việc khởi tạo policy sau khi khởi tạo tài khoản Service Account.
 8. Chọn **Copy** để sao chép Secret key. Bạn bắt buộc phải thu thập được thông tin này để có thể truy cập vào vStorage sử dụng Service Account.
 9. Chọn **Download** để tải xuống secret key này và lưu trữ chúng tại thiết bị local của bạn.
@@ -46,7 +46,7 @@ Sau khi bạn thực hiện 10 bước bên trên, một tài khoản Service Ac
       1. **Allow permissions**: cho phép truy cập theo action đã chọn.
       2. **Deny permissions**: từ chối truy cập theo action đã chọn.
    2. Chọn <mark style="background-color:blue;">**All vstorage actions**</mark> nếu muốn tạo policy có quyền thực hiện tất cả các hành động trên vStorage. Hoặc bạn có thể chọn một số hành động cụ thể mà bạn muốn phân quyền cho Service Account.
-8. Chọn **Resources**: chọn **All resources.**&#x20;
+8. Chọn **Resources**: chọn **All resources.**
 9. Chọn **Request conditions:** nhập điều kiện đặc biệt cho policy nếu có.
 
 ### Attach IAM Policy vào Service Account
@@ -69,8 +69,8 @@ Sau khi bạn đã khởi tạo Service Account và Policy mong muốn, tiếp t
 Để phân quyền truy cập vào bucket/ object cho Service Account, bạn cần thực hiện phân quyền qua tính băng Bucket Policy, cụ thể các bước thực hiện như sau:
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn biểu tượng ![](<../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png>)tại project chứa bucket bạn muốn phân quyền.
-3. Tại mục **Identity and Access Management**, thực hiện sao chép thông tin **vStorage User ID** tại mục **List of Service Account**.&#x20;
+2. Chọn biểu tượng ![](<../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png>)tại project chứa bucket bạn muốn phân quyền.
+3. Tại mục **Identity and Access Management**, thực hiện sao chép thông tin **vStorage User ID** tại mục **List of Service Account**.
 4. Tiếp tục chọn **Bucket** bạn muốn thực hiện phân quyền cho Service Account.
 5. Chọn biểu tượng **Action** và chọn **Configure policy.**
 6. Tại đây, bạn có thể chọn cấu hình cho từng **Statement** ở bên trái hoặc trực tiếp chỉnh sửa file JSON ở cột bên phải. Cụ thể cấu trúc một Bucket Policy bao gồm:
@@ -96,7 +96,7 @@ Thực hiện theo các bước bên dưới làm việc với vStorage thông q
 3. Chọn biểu tượng **vStorage API**.
 4. Tại mục **Authentication**, bạn cần điền thông tin cần thiết để cấu hình vStorage API của bạn bao gồm:
    1. Nhập **Client ID**. Một **Client ID** là một chuỗi ký tự được sử dụng bởi Service API để định danh ứng dụng, đồng thời cũng được dùng để xây dựng "authorization URL" hiển thị phía người dùng. Bạn có thể tạo và quản lý **Client ID** thông qua hệ thống vIAM. **Client ID** sẽ được tự động sinh ra khi bạn tạo mới một **Service Account**. .
-   2. Nhập **Client Secret** tương ứng của **Client ID** vừa nhập. Cặp Client ID và Client Secret được bạn tạo và quản lý thông qua hệ thống vIAM. Bạn có thể chọn [Click here to manage your Client ID.](https://hcm-3.console.vngcloud.vn/iam/service-accounts) để chúng tôi điều hướng bạn tới hệ thống vIAM và chi tiết là các màn hình quản lý Service Account.&#x20;
+   2. Nhập **Client Secret** tương ứng của **Client ID** vừa nhập. Cặp Client ID và Client Secret được bạn tạo và quản lý thông qua hệ thống vIAM. Bạn có thể chọn [Click here to manage your Client ID.](https://hcm-3.console.vngcloud.vn/iam/service-accounts) để chúng tôi điều hướng bạn tới hệ thống vIAM và chi tiết là các màn hình quản lý Service Account.
 5. Sau khi hoàn tất chọn cấu hình **xác thực**, chọn **Authentication** để chuyển tới màn hình **Configuration. Tại đây bạn có thể sử dụng trực tiếp các vStorage API hoặc bạn có thể sử dụng API thông qua Postman**. Bạn luôn có thể quay lại đây để thay đổi thông tin **Cấp quyền** của mình, sau đó chọn lại **Xác thực** để cập nhật danh sách S3 Rest API theo thông số mới của bạn.
 
 Chi tiết, vui lòng tham khảo thêm tại [https://docs.api.vngcloud.vn/service-docs/vstorage-api.html](https://docs.api.vngcloud.vn/service-docs/vstorage-api.html).

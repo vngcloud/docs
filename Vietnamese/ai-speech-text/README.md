@@ -2,8 +2,8 @@
 
 ## Before getting started
 
-* [Learn how to create a VNG Cloud account](huong-dan-su-dung-tai-khoan/)
-* [Learn how to login into AI Speech Text portal](identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)
+* [Learn how to create a VNG Cloud account](../huong-dan-su-dung-tai-khoan/)
+* [Learn how to login into AI Speech Text portal](../identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)
 
 ## Create Speech-to-Text Transcription
 

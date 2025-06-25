@@ -5,7 +5,7 @@
 **Access Control List (ACL)** trên vStorage là một tính năng cho phép quản lý quyền truy cập vào bucket và các object bên trong bucket. ACL cung cấp các cấp độ truy cập cơ bản mà bạn có thể thiết lập cho người dùng Root user account khác trên vStorage. Dưới đây là hướng dẫn cơ bản để sử dụng tính năng ACLs:
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn biểu tượng <img src="../../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">tại **project** chứa **bucket** bạn muốn phân quyền.
+2. Chọn biểu tượng <img src="../../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">tại **project** chứa **bucket** bạn muốn phân quyền.
 3.  Nếu bạn muốn phân quyền bucket cho một **Root User Account** hoặc **IAM User Account** hay **Service Account** khác, bạn cần biết thông tin **vStorage User ID** của người dùng mà bạn muốn phân quyền:&#x20;
 
     1. Đối với **Root User Account**: bạn có thể lấy thông tin **vStorage User ID** bằng cách chọn Add external bucket, tại màn hình này bạn sẽ thấy thông tin vStorage User ID như hình dưới:

@@ -8,7 +8,7 @@
 
 **Sơ đồ hoạt động của RDS**
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Bạn hãy truy cập các hướng dẫn sau để bắt đầu trải nghiệm dịch vụ: <a href="#relationaldatabaseservice-rds-banhaytruycapcachuongdansaudebatdautrainghiemdichvu" id="relationaldatabaseservice-rds-banhaytruycapcachuongdansaudebatdautrainghiemdichvu"></a>
 
