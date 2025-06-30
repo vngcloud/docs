@@ -108,4 +108,5 @@ Expiration rule và tập quy định tự động xóa object khi đến thời
 **Lưu ý:**
 
 * Việc xử lý object trong một lần chạy lifecycle rule phụ thuộc vào **số lượng object** trong bucket được thiết lập lifecycle rule của bạn và **workload** của hệ thống chúng tôi. Nếu bucket có **nhiều object** hoặc hệ thống có tải cao, việc xử lý sẽ **chậm và kéo dài qua các ngày kế tiếp**. Nếu bucket có **ít object** hoặc hệ thống có tải thấp, việc xử lý sẽ **nhanh và có thể hoàn thành trong một ngày**. Để đảm bảo việc xử lý object diễn ra hiệu quả và nhanh chóng, bạn nên chia nhỏ các lần chạy lifecycle rule và sử dụng Bộ lọc (Filter) để giảm thiểu số lượng object cần xử lý.
+* Với **Transition rule**: bạn chỉ được phép chuyển dữ liệu xuống lớp lưu trữ thấp hơn, không thể tự động chuyển ngược lên lớp cao hơn. Ngoài ra, Object trong lớp Archive không thể truy xuất trực tiếp, bạn phải thực hiện restore trước khi access.
 {% endhint %}
