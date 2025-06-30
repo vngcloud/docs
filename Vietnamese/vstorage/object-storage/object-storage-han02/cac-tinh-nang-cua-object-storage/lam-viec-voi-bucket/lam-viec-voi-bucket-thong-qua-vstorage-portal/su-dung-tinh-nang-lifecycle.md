@@ -2,7 +2,69 @@
 
 ## **Tổng quan**
 
-**Lifecycle** trên vStorage là tính năng giúp bạn quản lý vòng đời của các object trong bucket, từ đó giúp tối ưu chi phí lưu trữ. Với Lifecycle, bạn có thể định cấu hình các quy tắc (rules) tự động xóa các object khi không còn cần thiết.&#x20;
+**Lifecycle** trên vStorage là tính năng giúp bạn quản lý vòng đời của các object trong bucket, từ đó giúp tối ưu chi phí lưu trữ. Với Lifecycle, bạn có thể định cấu hình các quy tắc (rules) theo 2 loại:
+
+* **Transition rule:** Rule hỗ trợ di chuyển object giữa các storage class. Bạn có thể thực hiện thiết lập một hoặc nhiều lifecycle rule di chuyển object nếu trong vòng N ngày mà object không được thay đổi.
+* **Expiration rule**: Rule hỗ trợ xóa các object theo điều kiện ràng buộc. Bạn có thể thực hiện thiết lập một hoặc nhiều lifecycle rule xóa object sau một khoảng thời gian nhất định kể từ ngày object tồn tại trên hệ thống vStorage.&#x20;
+
+<figure><img src="../../../../../../.gitbook/assets/image (1091).png" alt=""><figcaption></figcaption></figure>
+
+Tham khảo thêm bảng bên dưới để hiểu cách hoạt động của mỗi storage class:
+
+<table data-full-width="true"><thead><tr><th>Storage Class</th><th>Gold</th><th>Instant Archive</th><th>Archive</th></tr></thead><tbody><tr><td><strong>Designed for</strong></td><td>For frequently accessed data that requires low latency and high throughput with retrieval in <strong>milliseconds (10m object/ 1H)</strong>.</td><td>For long-term storing data with retrieval in <strong>miliseconds (5m object/ 1H)</strong>.</td><td>For long-term data archiving that is accessed once or twice in a year and can be restored within <strong>hour (5m object/ 12H and 10m object/ 24H).</strong></td></tr><tr><td><strong>Durability</strong></td><td>99999999999%</td><td>99999999999%</td><td>99999999999%</td></tr><tr><td><strong>Availability</strong></td><td>99.99%</td><td>99.99%</td><td>99.99% (after you restore objects)</td></tr><tr><td><strong>Min storage duration</strong></td><td>No</td><td>No</td><td>180 days</td></tr><tr><td><strong>Min billable object size</strong></td><td>0</td><td>0</td><td>128 KB</td></tr><tr><td><strong>Other considerations</strong></td><td>No</td><td>No</td><td>You must first restore archived objects before you can access them.</td></tr></tbody></table>
+
+***
+
+## Với Transition rule
+
+Thực hiện theo hướng dẫn bên dưới để thiết lập transition rule và restore object nếu có:
+
+1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list), sau đó chọn Region **HAN02**
+
+2\. Chọn **project** chứa **bucket** bạn muốn thiết lập lifecycle. Giả sử tôi có một bucket `demo-project` đã được khởi tạo tạo Storage Class Gold như hình dưới
+
+<figure><img src="../../../../../../.gitbook/assets/image (1093).png" alt=""><figcaption></figcaption></figure>
+
+3\. Chọn biểu tượng **Action** và chọn **Configure Lifecycle.**
+
+<figure><img src="../../../../../../.gitbook/assets/image (1095).png" alt=""><figcaption></figcaption></figure>
+
+4\. Màn hình **Lifecycle** được hiển thị. Chọn **Create a lifecycle rule**.
+
+<figure><img src="../../../../../../.gitbook/assets/image (1094).png" alt=""><figcaption></figcaption></figure>
+
+5\. Nhập **Rule name**. Rule name mà chúng tôi cho phép bạn nhập bao gồm các chữ cái (a-z, A-Z, 0-9, '\_', '-', space). Độ dài **Rule name** của bạn phải nằm trong khoảng từ 5 đến 50.
+
+6\. Chọn **Rule type**: **Transition**
+
+<figure><img src="../../../../../../.gitbook/assets/image (1096).png" alt=""><figcaption></figcaption></figure>
+
+7\. Nhập **Filter**. Filter này được áp dụng cho một lifecycle rule cụ thể. **Mỗi lifecycle rule chỉ được đặt 1 filter duy nhất, nếu bạn muốn áp dụng quy tắc lifecycle mà bạn đang tạo lên tất cả các object thuộc bucket này, hãy để trống trường thông tin này.** Hoặc bạn có thể lọc các object mong muốn áp dụng lifecycle rule thông qua prefix.
+
+8\. Chọn hành động xảy ra với object tại bucket mà bạn chọn, bao gồm:
+
+* **Transition current version of objects:**
+  * Khi kích hoạt, rule này sẽ tự động di chuyển object từ lớp lưu trữ hiện tại xuống lớp lưu trữ thấp hơn tùy chọn sau một khoảng thời gian nhất định.
+  * Bạn có thể nhập số ngày trong phần "**After \_\_\_ days from object modified**" để định nghĩa số ngày object được di chuyển nếu không có thay đổi.
+
+<figure><img src="../../../../../../.gitbook/assets/image (1097).png" alt=""><figcaption></figcaption></figure>
+
+### Restore object
+
+Sau khi bạn thực hiện tạo mới Lifecycle rule loại transition thành công. Hằng ngày, hệ thống sẽ kiểm tra các object trong bucket và thực hiện transit theo điều kiện mà bạn đã chọn. Nếu object của bạn được transit về Archive class, để truy xuất thông tin của object, bạn cần thực hiện restore object theo hướng dẫn sau:
+
+1. Chọn **Object** muốn thực hiện **restore**
+2. Chọn **Action**, chọn **Restore** object
+
+Sau một khoảng thời gian nhất định, object sẽ được restore về Storage Class Gold. Lúc này bạn có thể thực hiện truy xuất thông tin object như bình thường.
+
+<figure><img src="../../../../../../.gitbook/assets/image (1098).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+## Với Expiration rule
+
+Expiration rule và tập quy định tự động xóa object khi đến thời điểm hết hạn. Thực hiện theo hướng dẫn bên dưới để thiết lập expiration rule:
 
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 
@@ -10,19 +72,19 @@
 
 3\. Chọn biểu tượng **Action** và chọn **Configure Lifecycle.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (1027).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1099).png" alt=""><figcaption></figcaption></figure>
 
 4\. Màn hình **Lifecycle** được hiển thị. Chọn **Create a lifecycle rule**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (1028).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1100).png" alt=""><figcaption></figcaption></figure>
 
 5\. Nhập **Rule name**. Rule name mà chúng tôi cho phép bạn nhập bao gồm các chữ cái (a-z, A-Z, 0-9, '\_', '-', space). Độ dài **Rule name** của bạn phải nằm trong khoảng từ 5 đến 50.
 
-6\. Chọn Rule type: hiện tại, chúng tôi chỉ hỗ trợ 1 loại rule Expiration: Rule hỗ trợ xóa các object theo điều kiện ràng buộc.&#x20;
+6\. Chọn Rule type: hiện tại, chúng tôi chỉ hỗ trợ 1 loại rule Expiration: Rule hỗ trợ xóa các object theo điều kiện ràng buộc.
 
 7\. Nhập **Filter**. Filter này được áp dụng cho một lifecycle rule cụ thể. **Mỗi lifecycle rule chỉ được đặt 1 filter duy nhất, nếu bạn muốn áp dụng quy tắc lifecycle mà bạn đang tạo lên tất cả các object thuộc bucket này, hãy để trống trường thông tin này.** Hoặc bạn có thể lọc các object mong muốn áp dụng lifecycle rule thông qua prefix.
 
-<figure><img src="../../../../../../.gitbook/assets/image (1029).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1101).png" alt=""><figcaption></figcaption></figure>
 
 8\. Chọn hành động xảy ra với object tại bucket mà bạn chọn, bao gồm:
 
@@ -40,7 +102,7 @@
   * Rule này chỉ áp dụng khi bạn đã bật Versioning và có các object delete marker trong bucket.
   * Khi kích hoạt, nó sẽ xóa các **delete marker** đã hết hạn, giúp cải thiện hiệu suất bằng cách làm sạch các marker không còn cần thiết. (Tùy chọn này thường chỉ có thể bật khi có delete marker hết hạn trong bucket.)
 
-<figure><img src="../../../../../../.gitbook/assets/image (1030).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1102).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Lưu ý:**
