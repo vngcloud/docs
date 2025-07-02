@@ -11,13 +11,13 @@
 
 Tham khảo thêm bảng bên dưới để hiểu cách hoạt động của mỗi storage class:
 
-<table data-full-width="true"><thead><tr><th>Storage Class</th><th>Gold</th><th>Instant Archive</th><th>Archive</th></tr></thead><tbody><tr><td><strong>Designed for</strong></td><td>For frequently accessed data that requires low latency and high throughput with retrieval in <strong>milliseconds (10m object/ 1H)</strong>.</td><td>For long-term storing data with retrieval in <strong>miliseconds (5m object/ 1H)</strong>.</td><td>For long-term data archiving that is accessed once or twice in a year and can be restored within <strong>hour (5m object/ 12H and 10m object/ 24H).</strong></td></tr><tr><td><strong>Durability</strong></td><td>99.999999999%</td><td>99.999999999%</td><td>99.999999999%</td></tr><tr><td><strong>Availability</strong></td><td>99.99%</td><td>99.99%</td><td>99.99% (after you restore objects)</td></tr><tr><td><strong>Min storage duration</strong></td><td>No</td><td>No</td><td>180 days</td></tr><tr><td><strong>Min billable object size</strong></td><td>0</td><td>0</td><td>128 KB</td></tr><tr><td><strong>Other considerations</strong></td><td>No</td><td>No</td><td>You must first restore archived objects before you can access them.</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Item</th><th>Gold Class</th><th>Instant Archive</th><th>Archive</th></tr></thead><tbody><tr><td><strong>Designed for</strong></td><td>For frequently accessed data that requires low latency and high throughput with retrieval in <strong>milliseconds (10m object/ 1H)</strong>.</td><td>For long-term storing data with retrieval in <strong>miliseconds (5m object/ 1H)</strong>.</td><td>For long-term data archiving that is accessed once or twice in a year with retrieval within <strong>hour (5m object/ 12H and 10m object/ 24H).</strong></td></tr><tr><td><strong>Durability</strong></td><td>99.999999999%</td><td>99.999999999%</td><td>99.999999999%</td></tr><tr><td><strong>Availability</strong></td><td>99.99%</td><td>99.99%</td><td>99.99%</td></tr><tr><td><strong>Min storage quota</strong></td><td>No</td><td>No</td><td>5 TB</td></tr><tr><td><strong>Min storage duration</strong></td><td>No</td><td>No</td><td>90 days</td></tr><tr><td><strong>Min billable object size</strong></td><td>0</td><td>0</td><td>128 KB</td></tr><tr><td><strong>Free traffic</strong></td><td>Quota x 10</td><td>Quota x 2</td><td>Quota x1</td></tr><tr><td><strong>Free request</strong></td><td>Free request on Gold Class performance</td><td>Free request on Instant Archive Class performance</td><td>Free request on Archive Class performance</td></tr></tbody></table>
 
 ***
 
 ## Với Transition rule
 
-Thực hiện theo hướng dẫn bên dưới để thiết lập transition rule và restore object nếu có:
+Thực hiện theo hướng dẫn bên dưới để thiết lập transition rule:
 
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list), sau đó chọn Region **HAN02**
 
@@ -48,17 +48,6 @@ Thực hiện theo hướng dẫn bên dưới để thiết lập transition ru
   * Bạn có thể nhập số ngày trong phần "**After \_\_\_ days from object modified**" để định nghĩa số ngày object được di chuyển nếu không có thay đổi.
 
 <figure><img src="../../../../../../.gitbook/assets/image (1097).png" alt=""><figcaption></figcaption></figure>
-
-### Restore object
-
-Sau khi bạn thực hiện tạo mới Lifecycle rule loại transition thành công. Hằng ngày, hệ thống sẽ kiểm tra các object trong bucket và thực hiện transit theo điều kiện mà bạn đã chọn. Nếu object của bạn được transit về Archive class, để truy xuất thông tin của object, bạn cần thực hiện restore object theo hướng dẫn sau:
-
-1. Chọn **Object** muốn thực hiện **restore**
-2. Chọn **Action**, chọn **Restore** object
-
-Sau một khoảng thời gian nhất định, object sẽ được restore về Storage Class Gold. Lúc này bạn có thể thực hiện truy xuất thông tin object như bình thường.
-
-<figure><img src="../../../../../../.gitbook/assets/image (1098).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -108,5 +97,5 @@ Expiration rule và tập quy định tự động xóa object khi đến thời
 **Lưu ý:**
 
 * Việc xử lý object trong một lần chạy lifecycle rule phụ thuộc vào **số lượng object** trong bucket được thiết lập lifecycle rule của bạn và **workload** của hệ thống chúng tôi. Nếu bucket có **nhiều object** hoặc hệ thống có tải cao, việc xử lý sẽ **chậm và kéo dài qua các ngày kế tiếp**. Nếu bucket có **ít object** hoặc hệ thống có tải thấp, việc xử lý sẽ **nhanh và có thể hoàn thành trong một ngày**. Để đảm bảo việc xử lý object diễn ra hiệu quả và nhanh chóng, bạn nên chia nhỏ các lần chạy lifecycle rule và sử dụng Bộ lọc (Filter) để giảm thiểu số lượng object cần xử lý.
-* Với **Transition rule**: bạn chỉ được phép chuyển dữ liệu xuống lớp lưu trữ thấp hơn, không thể tự động chuyển ngược lên lớp cao hơn. Ngoài ra, Object trong lớp Archive không thể truy xuất trực tiếp, bạn phải thực hiện restore trước khi access.
+* Với **Transition rule**: bạn chỉ được phép chuyển dữ liệu xuống lớp lưu trữ thấp hơn, không thể tự động chuyển ngược lên lớp cao hơn.&#x20;
 {% endhint %}
