@@ -32,13 +32,14 @@ jobs:
           mkdir -p filtered
           rsync -av --prune-empty-dirs \
             --include='*/' \
+            --exclude='**/SUMMARY.md' \
             --include='*.md' \
             --exclude='*' \
             Vietnamese/ filtered/
       
       - name: Sync only .md files to VNG Cloud
         run: |
-          s3cmd sync --delete-removed ./filtered/ s3://text-to-text-kb/ -c ~/.s3cfg
+          s3cmd sync --delete-removed ./filtered/ s3://kb-vngcloud-docs-assistant/documents/ -c ~/.s3cfg
       
       - name: Call sync KB API
         if: ${{ success() }}
