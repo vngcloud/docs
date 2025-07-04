@@ -9,7 +9,7 @@ To upload an object to a bucket, please follow the steps below:
 3. Select **Choose files to upload** or drag the files from your personal device you want to upload into this area.
 4. After dragging or selecting one or more files into this area. Select **Upload** .
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**

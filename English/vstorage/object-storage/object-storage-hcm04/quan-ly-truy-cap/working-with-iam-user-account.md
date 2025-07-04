@@ -23,7 +23,7 @@ To create an IAM user account, please first refer to the instructions below:
 7. Select **Copy** to copy the password. You must collect this information to access vStorage using an IAM User Account.
 8. Select **Create User Account.**
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

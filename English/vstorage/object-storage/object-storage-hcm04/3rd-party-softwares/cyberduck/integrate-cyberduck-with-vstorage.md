@@ -28,7 +28,7 @@ To see instructions for integrating Cyberduck with vStorage, you can do so via t
 * **Access key** : enter the S3 access key you created from vStorage, which is also the access key information taken from step 4 above.
 * **Secret key** : enter the S3 access key you created from vStorage, which is also the access key information taken from step 4 above.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5\. Select **Connect** .
 

@@ -8,7 +8,7 @@ Currently, vCDN supports HTTP Origin with connection algorithms: **Round Robin, 
 
 When you create a Web Accelerator, Object Download, or Video On Demand, the CDN initialization screen will include the following information:
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In there:
 
