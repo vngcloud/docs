@@ -48,7 +48,7 @@ Tự động gia hạn tài nguyên là **tính năng của hệ thống**, giú
 
 **Điều khoản áp dụng dành cho tính năng "Tự động gia hạn" trên VNG Cloud như sau:**
 
-* Gửi mail thông báo các tài nguyên cần **trước 7 ngày**, tính từ thời điểm kết thúc tài nguyên. Mục đích để người dùng chuẩn bị đủ số dư credit
+* Hệ thống chính thức thực hiện **gia hạn trước 3 ngày**, tính từ thời điểm kết thúc tài nguyên
 * Tài nguyên được mặc định **gia hạn thêm 1 tháng**, kể từ thời điểm kết thúc
 * Người dùng cần chuẩn bị đủ số dư credit khả dụng theo như thông báo để hệ thống có thể tiến hành gia hạn
 * Hệ thống chính thức thực hiện **gia hạn trước 3 ngày**, tính từ thời điểm kết thúc tài nguyên
