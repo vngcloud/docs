@@ -50,7 +50,7 @@ Tự động gia hạn tài nguyên là **tính năng của hệ thống**, giú
 
 * Tài nguyên được mặc định **gia hạn thêm 1 tháng**, kể từ thời điểm kết thúc
 * Người dùng cần chuẩn bị đủ số dư credit khả dụng theo như thông báo để hệ thống có thể tiến hành gia hạn
-* Hệ thống chính thức thực hiện **gia hạn trước 3 ngày**, tính từ thời điểm kết thúc tài nguyên
+* Hệ thống chính thức thực hiện gia hạn vào các mốc thời gian: trước 7 ngày, trước 4 ngày, trước 1 ngày và ngay ngày hết hạn của tài nguyên. **Lưu ý, ngay ngày hết hạn tài nguyên thì trạng thái của tài nguyên phải đang active, nếu trạng thái expried sẽ không thực hiện gian hạn.**
   * Cách tính giá khi hệ thống tự động gia hạn không khác biệt so với việc người dùng chủ động gia hạn tài nguyên, tham khảo thêm [tại đây](gia-han-tai-nguyen.md)
   * Hệ thống gửi thông tin tài nguyên được gia hạn thành công/thất bại đến người dùng
   * Hệ thống phát sinh hóa đơn tương ứng với khoảng thời gian được gia hạn thêm
