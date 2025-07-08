@@ -1,6 +1,6 @@
 # Tự động gia hạn tài nguyên - Chính sách và điều khoản
 
-Sử dụng tài liệu này để hiểu thêm về tính năng tự động gia hạn tài nguyên. Tài liệu sẽ mô tả chi tiết các bước xử lý liên quan đến việc **tự động gia hạn tài nguyên và chi phí phát sinh** khi tự động gia hạn tài nguyên. Các bước khác sẽ giản lược bớt và chỉ đề cập đến như một phần của quy trình..
+Sử dụng tài liệu này để hiểu thêm về tính năng tự động gia hạn tài nguyên. Tài liệu sẽ mô tả chi tiết các bước xử lý liên quan đến việc **tự động gia hạn tài nguyên và chi phí phát sinh** khi tự động gia hạn tài nguyên. Các bước khác sẽ giản lược bớt và chỉ đề cập đến như một phần của quy trình.
 
 #### 1. Chính sách tự động gia hạn tài nguyên chỉ áp dụng đối với: <a href="#tudonggiahantainguyen-chinhsachvadieukhoan-1.chinhsachtudonggiahantainguyenchiapdungdoivoi" id="tudonggiahantainguyen-chinhsachvadieukhoan-1.chinhsachtudonggiahantainguyenchiapdungdoivoi"></a>
 
