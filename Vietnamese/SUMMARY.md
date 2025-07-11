@@ -776,6 +776,7 @@
       * [Khởi tạo AI Gateway](ai-stack/ai-gateway/ai-gateway/khoi-tao-ai-gateway.md)
       * [Làm việc với Provider và Model](ai-stack/ai-gateway/ai-gateway/lam-viec-voi-provider-va-model/README.md)
         * [Model Providers](ai-stack/ai-gateway/model-providers.md)
+        * [Seft-host Models](ai-stack/ai-gateway/ai-gateway/lam-viec-voi-provider-va-model/seft-host-models.md)
       * [Gọi request tới AI Gateway](ai-stack/ai-gateway/ai-gateway/goi-request-toi-ai-gateway.md)
       * [Làm việc với Authentication Token](ai-stack/ai-gateway/ai-gateway/lam-viec-voi-authentication-token.md)
       * [Caching (Coming soon)](ai-stack/ai-gateway/ai-gateway/caching-coming-soon.md)
