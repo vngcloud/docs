@@ -13,7 +13,7 @@ IAM User Group là một tập hợp các IAM User Account. IAM User Group giúp
 
 Để tạo một IAM User Group mới:
 
-1. Truy cập vào IAM Console: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/)
+1. Truy cập vào IAM Console: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
 2. Nhấp vào "**Group**" trong menu bên trái.
 3. Nhấp vào "**Create a group**".
 4. Cung cấp tên nhóm và mô tả tùy chọn.
@@ -24,7 +24,7 @@ IAM User Group là một tập hợp các IAM User Account. IAM User Group giúp
 
 Bạn có thể gán Policies cho một Group trong quá trình tạo IAM User Group mới, hoặc gán Policies cho một IAM User Group đã tồn tại. Để gán Policies cho một Group đã tồn tại:
 
-1. Truy cập vào IAM Console - Trang Group với URL: [https://hcm-3.console.vngcloud.vn/iam/user-groups](https://hcm-3.console.vngcloud.vn/iam/user-groups)
+1. Truy cập vào IAM Console - Trang Group với URL: [https://iam.console.vngcloud.vn/user-groups](https://iam.console.vngcloud.vn/user-groups)
 2. Đăng nhập với tư cách là tài khoản Người dùng Gốc (Root User Account) hoặc User Account được cấp quyền truy cập. Bạn cần cung cấp tên người dùng/email và mật khẩu khi đăng nhập.
 3. Tìm kiếm IAM User Group bằng cách nhập tên của nó vào ô tìm kiếm và chọn IAM User Group đúng trong kết quả tìm kiếm.
 4. Mặc định, bạn sẽ thấy tab "**Permission**" tại trang thông tin chi tiết của IAM User Group.
@@ -37,7 +37,7 @@ Bạn có thể gán Policies cho một Group trong quá trình tạo IAM User G
 
 Bạn có thể gán IAM User Account vào một IAM User Group trong quá trình tạo IAM User Group mới, hoặc gán IAM User Account vào một IAM User Group đã tồn tại. Để gán IAM User Account vào một IAM User Group đã tồn tại:
 
-1. Truy cập vào IAM Console - Trang Group với URL: [https://hcm-3.console.vngcloud.vn/iam/user-groups](https://hcm-3.console.vngcloud.vn/iam/user-groups)
+1. Truy cập vào IAM Console - Trang Group với URL: [https://iam.console.vngcloud.vn/user-groups](https://iam.console.vngcloud.vn/user-groups)
 2. Đăng nhập với tư cách là tài khoản Người dùng Gốc (Root User Account) hoặc User Account được cấp quyền truy cập. Bạn cần cung cấp tên người dùng/email và mật khẩu khi đăng nhập.
 3. Tìm kiếm IAM User Group bằng cách nhập tên của nó vào ô tìm kiếm và chọn IAM User Group đúng trong kết quả tìm kiếm.
 4. Nhấp vào tab **"User"** tại trang thông tin chi tiết của IAM User Group.

@@ -8,7 +8,7 @@ Hướng dẫn này nhằm hướng dẫn người dùng có thể nhanh chóng 
 
 **1. Truy cập IAM Console**
 
-1. Mở trình duyệt web của bạn và truy cập vào URL IAM Console: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/)
+1. Mở trình duyệt web của bạn và truy cập vào URL IAM Console: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
 2. Đăng nhập với tư cách là tài khoản Người dùng Gốc (Root User Account) hoặc User Account được cấp quyền truy cập. Bạn cần cung cấp tên người dùng/email và mật khẩu khi đăng nhập.
 3. Sau khi đăng nhập, bạn sẽ thấy giao diện IAM Console, nơi cung cấp tổng quan về cấu hình IAM của bạn.
 
@@ -35,7 +35,7 @@ Lưu ý
 
 **4. Gán Quyền cho Tài khoản IAM**
 
-1. Mở trình duyệt web của bạn và truy cập vào URL IAM Console: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/)
+1. Mở trình duyệt web của bạn và truy cập vào URL IAM Console: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
 2. Đăng nhập với tư cách là tài khoản **Người dùng Gốc (Root User)**. Bạn có thể cần cung cấp tên người dùng và mật khẩu hoặc sử dụng các phương thức xác thực khác như đăng nhập duy nhất (SSO) nếu đã được cấu hình.
 3. Sau khi đăng nhập, bạn sẽ thấy giao diện IAM Console, nơi cung cấp tổng quan về cấu hình IAM của bạn.
 4. Nhấp vào **"User account"** trong menu bên trái.
@@ -54,22 +54,22 @@ Truy cập lại Cổng thông tin vMonitor bằng cách làm theo hướng dẫ
 
 VNG Managed Policy là các Chính Sách IAM (IAM Policy) được tạo mặc định bởi hệ thống IAM VNG Cloud. Các Chính Sách này được quản lý bởi chính VNG Cloud nhằm mục đích hỗ trợ người dùng trong việc cài đặt nhanh chóng các quyền truy cập cần thiết cho các tài khoản người dùng IAM đối với các tài nguyên của từng Product cụ thể. Cùng tìm hiểu danh sách VNG Managed Policies cho vMonitor:
 
-* [vMonitorFullAccess](https://hcm-3.console.vngcloud.vn/iam/policies/5e892948-7052-4042-b69b-e584c87948df): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc hệ thông vMonitor
-* [vMonitorMetricPush](https://hcm-3.console.vngcloud.vn/iam/policies/4679ef00-d815-11ed-afa1-0242ac120002): Chỉ bao gồm các quyền liên quan đến việc Push Metric
-* [vMonitorMetricNormalAccess](https://hcm-3.console.vngcloud.vn/iam/policies/70397a23-9632-4816-a2dd-aedaede4cafc): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc loại Metric (ngoại trừ các action lên quan đến Billing)
-* [vMonitorMetricReadOnlyAccess](https://hcm-3.console.vngcloud.vn/iam/policies/9e4c030a-660e-4c55-b5f9-9626892f403a): Chỉ bao gồm quyền Đọc (Read) đến các tài nguyen Metric.
-* [vMonitorMetricFullAccess](https://hcm-3.console.vngcloud.vn/iam/policies/008dbe64-27b6-438b-a7cd-092cf1e1498d): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc loại Metric
-* [vMonitorSyntheticReadOnlyAccess](https://hcm-3.console.vngcloud.vn/iam/policies/7af1a187-9f58-4e3d-9fa3-db3380ecffbb): Chỉ bao gồm quyền Đọc (Read) đến các tài nguyen Synthetic.
-* [vMonitorSyntheticNormalAccess](https://hcm-3.console.vngcloud.vn/iam/policies/2d844b3a-467f-4216-9f77-2270467fd710): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc loại Synthetic (ngoại trừ các action lên quan đến Billing)
-* [vMonitorSyntheticFullAccess](https://hcm-3.console.vngcloud.vn/iam/policies/a0b85faa-8cff-481a-b549-1e7d5a5a085c): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc loại Synthetic
-* [vMonitorNotificationReadOnlyAccess](https://hcm-3.console.vngcloud.vn/iam/policies/8e42191e-b8ad-4d2e-a38e-410db9ca00c5): Chỉ bao gồm quyền Đọc (Read) đến các tài nguyen Notification.
-* [vMonitorNotificationFullAccess](https://hcm-3.console.vngcloud.vn/iam/policies/a80df946-8d72-4ce2-aa83-d4288cbbf5b9): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc loại Notification
-* [vMonitorLogNormalAccess](https://hcm-3.console.vngcloud.vn/iam/policies/bb6325b2-14cf-456c-996a-2388d6f6289b): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc loại Log (ngoại trừ các action lên quan đến Billing)
-* [vMonitorLogReadOnlyAccess](https://hcm-3.console.vngcloud.vn/iam/policies/d2ae3ffd-b607-4d05-b247-9b300206f4c2): Chỉ bao gồm quyền Đọc (Read) đến các tài nguyen Log.
-* [vMonitorLogFullAccess](https://hcm-3.console.vngcloud.vn/iam/policies/9ea5e2fe-6e44-4bb7-8b7a-6a42d6f614f1): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc loại Log
-* [vMonitorBillingFullAccess](https://hcm-3.console.vngcloud.vn/iam/policies/9218604f-2a14-4d30-86b8-fde0d6a1630a): Bao gồm toàn quyền truy cập đến trang vMonitor - Billing
-* [MonitorDashboardReadOnlyAccess](https://hcm-3.console.vngcloud.vn/iam/policies/7246921b-f0c3-4fee-8a00-341d8785800a): Chỉ bao gồm quyền Đọc (Read) đến trang vMonitor - Dashboard.
-* [vMonitorDashboardFullAccess](https://hcm-3.console.vngcloud.vn/iam/policies/e5ce8dc3-4d25-4a0c-8af9-50e939f13759): Bao gồm toàn quyền truy cập đến trang vMonitor - Dashboard
+* [vMonitorFullAccess](https://iam.console.vngcloud.vn/policies/5e892948-7052-4042-b69b-e584c87948df): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc hệ thông vMonitor
+* [vMonitorMetricPush](https://iam.console.vngcloud.vn/policies/4679ef00-d815-11ed-afa1-0242ac120002): Chỉ bao gồm các quyền liên quan đến việc Push Metric
+* [vMonitorMetricNormalAccess](https://iam.console.vngcloud.vn/policies/70397a23-9632-4816-a2dd-aedaede4cafc): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc loại Metric (ngoại trừ các action lên quan đến Billing)
+* [vMonitorMetricReadOnlyAccess](https://iam.console.vngcloud.vn/policies/9e4c030a-660e-4c55-b5f9-9626892f403a): Chỉ bao gồm quyền Đọc (Read) đến các tài nguyen Metric.
+* [vMonitorMetricFullAccess](https://iam.console.vngcloud.vn/policies/008dbe64-27b6-438b-a7cd-092cf1e1498d): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc loại Metric
+* [vMonitorSyntheticReadOnlyAccess](https://iam.console.vngcloud.vn/policies/7af1a187-9f58-4e3d-9fa3-db3380ecffbb): Chỉ bao gồm quyền Đọc (Read) đến các tài nguyen Synthetic.
+* [vMonitorSyntheticNormalAccess](https://iam.console.vngcloud.vn/policies/2d844b3a-467f-4216-9f77-2270467fd710): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc loại Synthetic (ngoại trừ các action lên quan đến Billing)
+* [vMonitorSyntheticFullAccess](https://iam.console.vngcloud.vn/policies/a0b85faa-8cff-481a-b549-1e7d5a5a085c): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc loại Synthetic
+* [vMonitorNotificationReadOnlyAccess](https://iam.console.vngcloud.vn/policies/8e42191e-b8ad-4d2e-a38e-410db9ca00c5): Chỉ bao gồm quyền Đọc (Read) đến các tài nguyen Notification.
+* [vMonitorNotificationFullAccess](https://iam.console.vngcloud.vn/policies/a80df946-8d72-4ce2-aa83-d4288cbbf5b9): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc loại Notification
+* [vMonitorLogNormalAccess](https://iam.console.vngcloud.vn/policies/bb6325b2-14cf-456c-996a-2388d6f6289b): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc loại Log (ngoại trừ các action lên quan đến Billing)
+* [vMonitorLogReadOnlyAccess](https://iam.console.vngcloud.vn/policies/d2ae3ffd-b607-4d05-b247-9b300206f4c2): Chỉ bao gồm quyền Đọc (Read) đến các tài nguyen Log.
+* [vMonitorLogFullAccess](https://iam.console.vngcloud.vn/policies/9ea5e2fe-6e44-4bb7-8b7a-6a42d6f614f1): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc loại Log
+* [vMonitorBillingFullAccess](https://iam.console.vngcloud.vn/policies/9218604f-2a14-4d30-86b8-fde0d6a1630a): Bao gồm toàn quyền truy cập đến trang vMonitor - Billing
+* [MonitorDashboardReadOnlyAccess](https://iam.console.vngcloud.vn/policies/7246921b-f0c3-4fee-8a00-341d8785800a): Chỉ bao gồm quyền Đọc (Read) đến trang vMonitor - Dashboard.
+* [vMonitorDashboardFullAccess](https://iam.console.vngcloud.vn/policies/e5ce8dc3-4d25-4a0c-8af9-50e939f13759): Bao gồm toàn quyền truy cập đến trang vMonitor - Dashboard
 
 ### **3. Khám phá chi tiết cách sử dụng IAM cho vMonitor Platform** <a href="#iamforvmonitor-3.khamphachitietcachsudungiamchovmonitorplatform" id="iamforvmonitor-3.khamphachitietcachsudungiamchovmonitorplatform"></a>
 

@@ -8,7 +8,7 @@ An IAM User Group is a collection of IAM User Accounts. IAM User Groups simplify
 
 To create a new IAM User Group:&#x20;
 
-1. Go to IAM Console: https://hcm-3.console.vngcloud.vn/iam/&#x20;
+1. Go to IAM Console: https://iam.console.vngcloud.vn/&#x20;
 2. Click "Group" in the left menu.&#x20;
 3. Click "Create a group".&#x20;
 4. Provide a group name and optional description.&#x20;
@@ -19,7 +19,7 @@ To create a new IAM User Group:&#x20;
 
 You can assign Policies to a Group while creating a new IAM User Group, or assign Policies to an existing IAM User Group. To assign Policies to an existing Group:&#x20;
 
-1. Go to IAM Console - Groups page with URL: https://hcm-3.console.vngcloud.vn/iam/user-groups&#x20;
+1. Go to IAM Console - Groups page with URL: https://iam.console.vngcloud.vn/user-groups&#x20;
 2. Log in as a Root User Account or a User Account with access rights.&#x20;
 3. You need to provide a username/email and password when logging in.&#x20;
 4. Search for an IAM User Group by entering its name in the search box and selecting the correct IAM User Group in the search results.&#x20;
@@ -33,7 +33,7 @@ You can assign Policies to a Group while creating a new IAM User Group, or assig
 
 You can assign an IAM User Account to an IAM User Group while creating a new IAM User Group, or assign an IAM User Account to an existing IAM User Group. To assign an IAM User Account to an existing IAM User Group:&#x20;
 
-1. Go to IAM Console - Groups page with the URL: https://hcm-3.console.vngcloud.vn/iam/user-groups&#x20;
+1. Go to IAM Console - Groups page with the URL: https://iam.console.vngcloud.vn/user-groups&#x20;
 2. Log in as a Root User Account or a User Account with access rights.&#x20;
 3. You need to provide a username/email and password when logging in.&#x20;
 4. Search for an IAM User Group by entering its name in the search box and selecting the correct IAM User Group from the search results.&#x20;

@@ -52,7 +52,7 @@ Taylor Smith được tuyển dụng với vị trí của người quản lý d
 
 1. Alex tạo tài khoản VNG Cloud tại trang chủ: [https://sso.vngcloud.vn/cas/login?service=https%3A%2F%2Fportal3.vngcloud.vn%2F](https://sso.vngcloud.vn/cas/login?service=https%3A%2F%2Fportal3.vngcloud.vn%2F) \
    với thông tin Root user account: **Admin@vngcloud.vn**, password: **12345678@!**
-2. Điều hướng sang trang chủ IAM tại: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/) sử dụng thông tin Root user account để đăng nhập
+2. Điều hướng sang trang chủ IAM tại: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) sử dụng thông tin Root user account để đăng nhập
 3. Mở tab User account.
 4. Chọn **Create a user account.**
 5. Ở mục **Account user name,** Alex nhập **Tên** cho User account là **Sysad01**
@@ -66,7 +66,7 @@ Taylor Smith được tuyển dụng với vị trí của người quản lý d
 
 Sau khi tạo User account, Alex tiếp tục tạo nhóm người dùng **Group:**
 
-1. Mở tab Group tại [https://hcm-3.console.vngcloud.vn/iam/user-groups](https://hcm-3.console.vngcloud.vn/iam/user-groups).
+1. Mở tab Group tại [https://iam.console.vngcloud.vn/user-groups](https://iam.console.vngcloud.vn/user-groups).
 2. Chọn **Create a group.**
 3. Alex nhập tên Group là **SysAd** vào mục **Name,** sau đó nhập thông tin ghi chú tại mục **Description.**
 4. Chuyển sang bước kế tiếp. Tại mục **User, Alex** chọn User account **Sysad01** thêm vào **Group**
@@ -77,7 +77,7 @@ Sau khi tạo User account, Alex tiếp tục tạo nhóm người dùng **Group
 
 Hiện nay IAM cung cấp một số bộ quyền mặc định giúp người dùng có thể thiết lập phân quyền truy cập một cách nhanh chóng và hiệu quả, vì thế với nhóm người dùng SysAd, Alex đã thực hiện thêm vào bộ quyền **vServerFullAccess** theo hướng dẫn bên dưới:
 
-1. Mở tab Policy tại [https://hcm-3.console.vngcloud.vn/iam/policies](https://hcm-3.console.vngcloud.vn/iam/policies).
+1. Mở tab Policy tại [https://iam.console.vngcloud.vn/policies](https://iam.console.vngcloud.vn/policies).
 2. Nhấn vào xem chi tiết bộ quyền **vServerFullAccess** tại trang danh sách
 3. Sau đó tại menu **Policy usage,** nhấn **Attach**
 4. Tại **Tab Group, Alex** chọn nhóm **SysAd** và nhấn **Add**\
@@ -100,7 +100,7 @@ Nhân viên Johnson Miles và Scott Enzi gia nhập công ty với tư cách m�
 
 #### **Bước 1: Tạo tài khoản người dùng (User account) trên hệ thống IAM** <a href="#cactruonghopsudungiam-buoc1-taotaikhoannguoidung-useraccount-trenhethongiam.1" id="cactruonghopsudungiam-buoc1-taotaikhoannguoidung-useraccount-trenhethongiam.1"></a>
 
-1. Truy cập trang chủ IAM tại: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/).
+1. Truy cập trang chủ IAM tại: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/).
 2. Sau đó mở tab User account.
 3. Chọn **Create a user account.**
 4. Ở mục **Account user name,** Alex nhập **Tên** cho User account là **Dev01**
@@ -114,7 +114,7 @@ Nhân viên Johnson Miles và Scott Enzi gia nhập công ty với tư cách m�
 
 Sau khi tạo User account, Alex tiếp tục tạo nhóm người dùng **Group:**
 
-1. Mở tab Group tại [https://hcm-3.console.vngcloud.vn/iam/user-groups](https://hcm-3.console.vngcloud.vn/iam/user-groups).
+1. Mở tab Group tại [https://iam.console.vngcloud.vn/user-groups](https://iam.console.vngcloud.vn/user-groups).
 2. Chọn **Create a group.**
 3. Alex nhập tên Group là **DevGroup** vào mục **Name,** sau đó nhập thông tin ghi chú tại mục **Description.**
 4. Chuyển sang bước kế tiếp. Tại mục **User, Alex** chọn 2 User account **Dev01** và **Dev02** thêm vào **Group**
@@ -125,7 +125,7 @@ Sau khi tạo User account, Alex tiếp tục tạo nhóm người dùng **Group
 
 Sau khi tạo Group, cần tạo chính sách Policy để gán vào Group:
 
-1. Mở tab Policy tại [https://hcm-3.console.vngcloud.vn/iam/policies](https://hcm-3.console.vngcloud.vn/iam/policies).
+1. Mở tab Policy tại [https://iam.console.vngcloud.vn/policies](https://iam.console.vngcloud.vn/policies).
 2. Tạo mới Policy bằng cách nhấn **Create a Policy**
 3. Tại màn hình Information, ở mục **Name,** Alex nhập tên Policy là **Developers**
 4. Chuyển sang bước **Permissions,** Alex chọn **Product: vServer**
@@ -152,7 +152,7 @@ Sau khi tạo 2 User account: Dev01, Dev02, Alex đã cấp quyền sử dụng 
 
 #### **Bước 1: Tạo tài khoản người dùng (User account) trên hệ thống IAM** <a href="#cactruonghopsudungiam-buoc1-taotaikhoannguoidung-useraccount-trenhethongiam.2" id="cactruonghopsudungiam-buoc1-taotaikhoannguoidung-useraccount-trenhethongiam.2"></a>
 
-1. Truy cập trang chủ IAM tại: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/).
+1. Truy cập trang chủ IAM tại: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/).
 2. Sau đó mở tab User account.
 3. Chọn **Create a user account.**
 4. Ở mục **Account user name,** Alex nhập **Tên** cho User account là **Supo01**
@@ -165,7 +165,7 @@ Sau khi tạo 2 User account: Dev01, Dev02, Alex đã cấp quyền sử dụng 
 
 Sau khi tạo User account, Alex tiếp tục tạo nhóm người dùng **Group:**
 
-1. Mở tab Group tại [https://hcm-3.console.vngcloud.vn/iam/user-groups](https://hcm-3.console.vngcloud.vn/iam/user-groups).
+1. Mở tab Group tại [https://iam.console.vngcloud.vn/user-groups](https://iam.console.vngcloud.vn/user-groups).
 2. Chọn **Create a group.**
 3. Alex nhập tên Group là **SupportGroup** vào mục **Name,** sau đó nhập thông tin ghi chú tại mục **Description.**
 4. Chuyển sang bước kế tiếp. Tại mục **User, Alex** chọn User account **Supo01** thêm vào **Group**
@@ -176,7 +176,7 @@ Sau khi tạo User account, Alex tiếp tục tạo nhóm người dùng **Group
 
 Hiện nay IAM cung cấp một số bộ quyền mặc định giúp người dùng có thể thiết lập phân quyền truy cập một cách nhanh chóng và hiệu quả, vì thế với nhóm người dùng SupportGroup, Alex đã thực hiện thêm vào bộ quyền **vServerReadOnlyAccess** theo hướng dẫn bên dưới:
 
-1. Mở tab Policy tại [https://hcm-3.console.vngcloud.vn/iam/policies](https://hcm-3.console.vngcloud.vn/iam/policies).
+1. Mở tab Policy tại [https://iam.console.vngcloud.vn/policies](https://iam.console.vngcloud.vn/policies).
 2. Nhấn vào xem chi tiết bộ quyền **vServerReadOnlyAccess** tại trang danh sách
 3. Sau đó tại menu **Policy usage,** nhấn **Attach**
 4. Tại **Tab Group, Alex** chọn nhóm **SupportGroup** và nhấn **Add**\

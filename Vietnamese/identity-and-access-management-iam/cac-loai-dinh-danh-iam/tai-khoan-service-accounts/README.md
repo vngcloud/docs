@@ -8,7 +8,7 @@ Service Account là một danh tính mà bạn có thể tạo trong tài khoả
 
 Để tạo một Service Account mới:
 
-1. Truy cập vào IAM Console: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/)
+1. Truy cập vào IAM Console: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
 2. Nhấp vào **"Service account"** trong menu bên trái.
 3. Nhấp vào **"Create service account."**
 4. Nhập thông tin Service Account, bao gồm tên và mô tả tùy chọn.
@@ -26,7 +26,7 @@ Hãy nhớ lưu Client Secret ở một nơi khác vì nó chỉ hiển thị m�
 
 Để gán Policies vào Service Account:
 
-1. Truy cập vào IAM - Trang Service Acocunt với URL: [https://hcm-3.console.vngcloud.vn/iam/service-accounts](https://hcm-3.console.vngcloud.vn/iam/service-accounts)
+1. Truy cập vào IAM - Trang Service Acocunt với URL: [https://iam.console.vngcloud.vn/service-accounts](https://iam.console.vngcloud.vn/service-accounts)
 2. Đăng nhập với tư cách là tài khoản Người dùng Gốc (Root User Account) hoặc User Account được cấp quyền truy cập. Bạn cần cung cấp tên người dùng/email và mật khẩu khi đăng nhập.
 3. Tìm kiếm Service Account bằng cách nhập tên người dùng vào ô tìm kiếm và chọn kết quả đúng trong kết quả tìm kiếm.
 4. Mặc định, bạn sẽ thấy tab "**Permission**" tại trang thông tin chi tiết của Service Account.
@@ -47,7 +47,7 @@ Hãy nhớ lưu Client Secret ở một nơi khác vì nó chỉ hiển thị m�
 
 Một Service Account bao gồm thông tin xác thực (Client ID và Secret Key). Bạn cần lưu trữ Secret Key hoặc tải xuống sau khi tạo Service Account. Tuy nhiên, bạn cũng có thể tạo lại Secret Key bất kỳ lúc nào.
 
-1. Truy cập trang Service account trong Bảng điều khiển IAM: [https://hcm-3.console.vngcloud.vn/iam/service-accounts](https://hcm-3.console.vngcloud.vn/iam/service-accounts)
+1. Truy cập trang Service account trong Bảng điều khiển IAM: [https://iam.console.vngcloud.vn/service-accounts](https://iam.console.vngcloud.vn/service-accounts)
 2. Đăng nhập với tư cách là tài khoản Người dùng Gốc (Root User Account) hoặc User Account được cấp quyền truy cập. Bạn cần cung cấp tên người dùng/email và mật khẩu khi đăng nhập.
 3. Tìm kiếm Service Account bằng cách nhập tên vào ô tìm kiếm và chọn đúng kết quả trong danh sách.
 4. Nhấp vào tab "**Security credentials**" (Thông tin xác thực bảo mật) trong thông tin chi tiết của Service Account. Bạn sẽ thấy thông tin như hình dưới đây và bạn có thể thực hiện các hành động sau:

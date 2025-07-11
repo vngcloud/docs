@@ -2,7 +2,7 @@
 
 To create an S3 key, follow the instructions below:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/]\(https://hcm-3.console.vngcloud.vn/iam/\)) with your Root User Account.
+1. Log in to [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/]\(https://iam.console.vngcloud.vn/\)) with your Root User Account.
 2. Select the **vStorage credentials** menu.
 3. Choose **Create an S3 key.**
 4. Enter the **Name** for the S3 key you wish to create.

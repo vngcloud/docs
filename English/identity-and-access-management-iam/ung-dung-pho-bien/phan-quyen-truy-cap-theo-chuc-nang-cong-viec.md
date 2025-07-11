@@ -32,7 +32,7 @@ Detailed step-by-step instructions
 
 **Step 1: Create User Groups (SystemAdmin, Developer) and attach corresponding managed policies**
 
-Access the Group tab on the IAM management page here [,](https://hcm-3.console.vngcloud.vn/iam/user-groups) click " **Create a Group** " and fill in the group name information as SystemAdmin, click **Next step** to go to the step of attaching Policy
+Access the Group tab on the IAM management page here [,](https://iam.console.vngcloud.vn/user-groups) click " **Create a Group** " and fill in the group name information as SystemAdmin, click **Next step** to go to the step of attaching Policy
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F9axpZLMVuHOAkD9OGqTw%252Fimage2023-7-12_13-11-7.png%3Falt%3Dmedia%26token%3D7e5d947f-e891-4cdd-b6c1-e25269a1dbc3&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=6790712f&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
@@ -50,7 +50,7 @@ So you have completed creating 2 User Groups: SystemAdmin and Developer with ful
 
 **Step 2: Create User Account (System1, System2, Developer1, Developer2) and attach to the corresponding User Groups**
 
-Proceed to create User Accounts by accessing the User Account tab on the IAM management page here [,](https://hcm-3.console.vngcloud.vn/iam/user-accounts) clicking **Create a User Account,** filling in Username and Password information, then clicking **Create User Account** (note for brief instructions in Here we create 4 user accounts with the same password. We recommend that you create separate user accounts with different passwords, or change passwords when using):
+Proceed to create User Accounts by accessing the User Account tab on the IAM management page here [,](https://iam.console.vngcloud.vn/user-accounts) clicking **Create a User Account,** filling in Username and Password information, then clicking **Create User Account** (note for brief instructions in Here we create 4 user accounts with the same password. We recommend that you create separate user accounts with different passwords, or change passwords when using):
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FhQn5iGMR9fKuaAE51E3N%252Fimage2023-7-12_13-23-4.png%3Falt%3Dmedia%26token%3D1ba45d7b-23f3-4829-b870-75bd559125ab&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f0d06792&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 

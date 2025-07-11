@@ -12,7 +12,7 @@ Nếu doanh nghiệp bạn có nhiều thành viên cần được cấp quyền
 
 Để khởi tạo tài khoản người dùng IAM, trước tiên bạn vui lòng tham khảo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/) với tài khoản Root User Account.
+1. Đăng nhập vào [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) với tài khoản Root User Account.
 2. Chọn mục **User Account**.
 3. Chọn **Create a User Account.**
 4. Tại mục **Account username**, nhập **Account username** mà bạn mong muốn. Tên của IAM User Account phải dài từ 5 (tối thiểu) đến 50 (tối đa) ký tự và chỉ có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), dấu gạch dưới (\_), dấu gạch ngang (-). Tên của IAM User Account không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, mật khẩu đăng nhập,...) cũng như tên IAM User Account phải là duy nhất trên một tài khoản VNG Cloud cho đến khi IAM User Account đó bị xóa. Ví dụ tên IAM User Account sau là hợp lệ: IAM\_Phong\_kinh\_doanh\_01.
@@ -35,7 +35,7 @@ Nếu doanh nghiệp bạn có nhiều thành viên cần được cấp quyền
 
 Để khởi tạo một policy sử dụng để truy cập vào tài nguyên vStorage, hãy làm theo các bước bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/) với tài khoản Root User Account.
+1. Đăng nhập vào [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) với tài khoản Root User Account.
 2. Chọn thư mục **Policy**.
 3. Chọn **Create a Policy**.
 4. Nhập **Name** và **Description** nếu cho cho Policy.
@@ -55,7 +55,7 @@ Nếu doanh nghiệp bạn có nhiều thành viên cần được cấp quyền
 
 Sau khi bạn đã khởi tạo IAM User Account và Policy mong muốn, tiếp theo bạn cần liên kết tài khoản IAM User Account vào policy theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/) với tài khoản Root User Account.
+1. Đăng nhập vào [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) với tài khoản Root User Account.
 2. Chọn thư mục **User Account.**
 3. Chọn **IAM User Account** muốn thực hiện gán quyền.
 4. Chọn **Attach policies**.
@@ -114,7 +114,7 @@ Thực hiện theo các bước bên dưới để đăng nhập vào vStorage v
 
 Để hủy (xóa) một tài khoản IAM User Account đã tạo trước đó, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/) với tài khoản Root User Account.
+1. Đăng nhập vào [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) với tài khoản Root User Account.
 2. Chọn mục **User Account**.
 3. Trên danh sach các IAM User Account đang có, bạn hãy chọn một hoặc nhiều tài khoản người dùng IAM mà bạn muốn hủy bỏ (xóa).
 4. Chọn **Delete**.

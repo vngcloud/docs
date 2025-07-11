@@ -25,7 +25,7 @@ Khi bạn tạo một Temporary URL hay Presigned URL được chỉ định cho
 * Nếu **Protocol** là **OpenStack Swift** thì bạn có thể chọn **Mode** là **Download** hoặc **View**.
 * Nếu **Protocol** là **S3** thì mặc định đường dẫn **Presigned URL** sẽ được sử dụng để **View** object.
 
-6\. Nếu bạn chọn Protocol là S3 thì bạn cần nhập thông tin **S3 key** tại đây. Thông tin S3 key có thể lấy tại IAM. Bạn có thể chọn [Nhấn vào đây để vào vIAM và quản lý s3 keys.](https://hcm-3.console.vngcloud.vn/iam/vstorage-credentials/s3) để xem thông tin chi tiết các cặp s3 key đã tạo cũng như tạo mới cặp S3 key để sử dụng. Chi tiết tham khảo thêm tại [Khởi tạo S3 key](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-s3-key.md).
+6\. Nếu bạn chọn Protocol là S3 thì bạn cần nhập thông tin **S3 key** tại đây. Thông tin S3 key có thể lấy tại IAM. Bạn có thể chọn [Nhấn vào đây để vào vIAM và quản lý s3 keys.](https://iam.console.vngcloud.vn/vstorage-credentials/s3) để xem thông tin chi tiết các cặp s3 key đã tạo cũng như tạo mới cặp S3 key để sử dụng. Chi tiết tham khảo thêm tại [Khởi tạo S3 key](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-s3-key.md).
 
 7\. Nhập **Thời gian hết hạn** bạn muốn chia sẻ object tức là thời gian đường dẫn (Temporary URL) truy cập tới object có hiệu lực. Bạn có thể giới hạn số **ngày**, **giờ**, **phút** mà đường dẫn truy cập tới object tồn tại.&#x20;
 

@@ -56,7 +56,7 @@ Hiện tại IAM VNG Cloud chỉ hỗ trợ Azure AD với giao thức SAML 2.0,
 
 Sau khi có được thông tin Login URL từ Azure AD, bạn tiếp tục thiết lập kết nối với các bước như bên dưới:
 
-1. Truy cập đến IAM Identity Provider với URL: [https://hcm-3.console.vngcloud.vn/iam/identity-providers](https://hcm-3.console.vngcloud.vn/iam/identity-providers)
+1. Truy cập đến IAM Identity Provider với URL: [https://iam.console.vngcloud.vn/identity-providers](https://iam.console.vngcloud.vn/identity-providers)
 2. Chọn **Add an Identity Provider**
 3. Điền các thông tin cho Identity Provider bao gồm:&#x20;
    * **Provider Name:** tên của Identity Provider

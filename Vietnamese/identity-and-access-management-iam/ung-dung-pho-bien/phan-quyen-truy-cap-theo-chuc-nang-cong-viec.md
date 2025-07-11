@@ -32,7 +32,7 @@ Chi tiết hướng dẫn các bước
 
 **Bước 1: Tạo User Groups (SystemAdmin, Developer) và gắn các managed policy tương ứng**
 
-Truy cập vào tab Group ở trang quản lý IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/user-groups), nhấn "**Create a Group**" và điền thông tin tên group là SystemAdmin, nhấn **Next step** để tới bước gắn Policy
+Truy cập vào tab Group ở trang quản lý IAM tại [đây](https://iam.console.vngcloud.vn/user-groups), nhấn "**Create a Group**" và điền thông tin tên group là SystemAdmin, nhấn **Next step** để tới bước gắn Policy
 
 <figure><img src="../../.gitbook/assets/image2023-7-12_13-11-7 (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -50,7 +50,7 @@ Như vậy bạn đã hoàn thành việc tạo 2 User Groups: SystemAdmin và D
 
 **Bước 2: Tạo User Account (System1, System2, Developer1, Developer2) và gắn vào các User Group tương ứng**
 
-Tiến hành tạo các User Account bằng cách truy cập vào tab User Account ở trang quản lý IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/user-accounts), nhấn **Create a User Account,** điền thông tin Username và Password, sau đó nhấn **Create User Account** (lưu ý để hướng dẫn ngắn gọn ở đây chúng tôi tạo 4 user account cùng chung 1 password, khuyến cáo bạn nên tạo các user account riêng lẻ và  có password khác nhau, hoặc đổi password khi sử dụng):
+Tiến hành tạo các User Account bằng cách truy cập vào tab User Account ở trang quản lý IAM tại [đây](https://iam.console.vngcloud.vn/user-accounts), nhấn **Create a User Account,** điền thông tin Username và Password, sau đó nhấn **Create User Account** (lưu ý để hướng dẫn ngắn gọn ở đây chúng tôi tạo 4 user account cùng chung 1 password, khuyến cáo bạn nên tạo các user account riêng lẻ và  có password khác nhau, hoặc đổi password khi sử dụng):
 
 <figure><img src="../../.gitbook/assets/image2023-7-12_13-23-4.png" alt=""><figcaption></figcaption></figure>
 

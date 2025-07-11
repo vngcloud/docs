@@ -2,7 +2,7 @@
 
 Sau khi bạn đã khởi tạo S3 key, Swift user mong muốn và thiết lập **Restriction by IAM = YES**, tiếp theo bạn cần liên kết S3 key, Swift user với tài khoản Service Account theo hướng dẫn bên dưới:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/) với tài khoản Root User Account.
+1. Đăng nhập vào [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) với tài khoản Root User Account.
 2. Chọn thư mục vStorage credentials.
    1. Tại mục S3, trên danh sách S3 key đang có tiếp tục chọn bật ![](https://docs.vngcloud.vn/download/thumbnails/59804923/image2023-6-30\_9-42-4.png?version=1\&modificationDate=1688092925000\&api=v2)**.** Khi trạng thái hiển thị là ![](https://docs.vngcloud.vn/download/thumbnails/59804923/image2023-6-30\_9-44-16.png?version=1\&modificationDate=1688093057000\&api=v2) tức là bạn đã bật thành công việc kiểm soát quyền hạn của S3 key bởi hệ thống vIAM.
    2. Tại mục Swift, trên danh sách Swift user đang có tiếp tục chọn bật ![](https://docs.vngcloud.vn/download/thumbnails/59804923/image2023-6-30\_9-42-4.png?version=1\&modificationDate=1688092925000\&api=v2)**.** Khi trạng thái hiển thị là ![](https://docs.vngcloud.vn/download/thumbnails/59804923/image2023-6-30\_9-44-16.png?version=1\&modificationDate=1688093057000\&api=v2) tức là bạn đã bật thành công việc kiểm soát quyền hạn của Swift user bởi hệ thống vIAM.&#x20;

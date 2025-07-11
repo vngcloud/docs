@@ -8,7 +8,7 @@ Hướng dẫn này nhằm hướng dẫn người dùng có thể nhanh chóng 
 
 **1. Truy cập IAM Console**
 
-1. Mở trình duyệt web của bạn và truy cập vào URL IAM Console: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/)
+1. Mở trình duyệt web của bạn và truy cập vào URL IAM Console: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
 2. Đăng nhập với tư cách là tài khoản Người dùng Gốc (Root User Account) hoặc User Account được cấp quyền truy cập. Bạn cần cung cấp tên người dùng/email và mật khẩu khi đăng nhập.
 3. Sau khi đăng nhập, bạn sẽ thấy giao diện IAM Console, nơi cung cấp tổng quan về cấu hình IAM của bạn.
 
@@ -35,7 +35,7 @@ Notice
 
 **4. Gán Quyền cho Tài khoản IAM**
 
-1. Mở trình duyệt web của bạn và truy cập vào URL IAM Console: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/)
+1. Mở trình duyệt web của bạn và truy cập vào URL IAM Console: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
 2. Đăng nhập với tư cách là tài khoản **Người dùng Gốc (Root User)**. Bạn có thể cần cung cấp tên người dùng và mật khẩu hoặc sử dụng các phương thức xác thực khác như đăng nhập duy nhất (SSO) nếu đã được cấu hình.
 3. Sau khi đăng nhập, bạn sẽ thấy giao diện IAM Console, nơi cung cấp tổng quan về cấu hình IAM của bạn.
 4. Nhấp vào **"User account"** trong menu bên trái.
@@ -54,10 +54,10 @@ Truy cập lại Cổng thông tin vServer bằng cách làm theo hướng dẫn
 
 VNG Managed Policy là các Chính Sách IAM (IAM Policy) được tạo mặc định bởi hệ thống IAM VNG Cloud. Các Chính Sách này được quản lý bởi chính VNG Cloud nhằm mục đích hỗ trợ người dùng trong việc cài đặt nhanh chóng các quyền truy cập cần thiết cho các tài khoản người dùng IAM đối với các tài nguyên của từng Product cụ thể. Cùng tìm hiểu danh sách VNG Managed Policies cho vServer:
 
-* [vServerFullAccess](https://hcm-3.console.vngcloud.vn/iam/policies/ef38ac9e-ae09-4953-8b55-b28687b2cc79): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc hệ thông vServer
-* [vServerReadOnlyAccess](https://hcm-3.console.vngcloud.vn/iam/policies/b63dd647-347f-47a2-9a21-4003bcef7bac): Chỉ bao gồm quyền Đọc (Read) trên các tài nguyên thuộc hệ thống vServer
-* [vLBFullAccess](https://hcm-3.console.vngcloud.vn/iam/policies/5dbe289b-4fc0-46ad-9f18-47064a0faae0): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc dịch vụ Load Balancer
-* [vLBReadOnlyAccess](https://hcm-3.console.vngcloud.vn/iam/policies/f3486bbe-81a2-480b-99c4-9980728e86df): Chỉ bao gồm quyền Đọc (Read) trên các tài nguyên thuộc dịch vụ Load Balancer
+* [vServerFullAccess](https://iam.console.vngcloud.vn/policies/ef38ac9e-ae09-4953-8b55-b28687b2cc79): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc hệ thông vServer
+* [vServerReadOnlyAccess](https://iam.console.vngcloud.vn/policies/b63dd647-347f-47a2-9a21-4003bcef7bac): Chỉ bao gồm quyền Đọc (Read) trên các tài nguyên thuộc hệ thống vServer
+* [vLBFullAccess](https://iam.console.vngcloud.vn/policies/5dbe289b-4fc0-46ad-9f18-47064a0faae0): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc dịch vụ Load Balancer
+* [vLBReadOnlyAccess](https://iam.console.vngcloud.vn/policies/f3486bbe-81a2-480b-99c4-9980728e86df): Chỉ bao gồm quyền Đọc (Read) trên các tài nguyên thuộc dịch vụ Load Balancer
 
 ### **3. Khám phá chi tiết cách sử dụng IAM cho vServer** <a href="#iamforvserver-3.khamphachitietcachsudungiamchovserver" id="iamforvserver-3.khamphachitietcachsudungiamchovserver"></a>
 

@@ -2,7 +2,7 @@
 
 After you have created a Service Account and the desired Policy, the next step is to attach the Service Account to the policy as instructed below:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/]\(https://hcm-3.console.vngcloud.vn/iam/\)) with your Root User Account.
+1. Log in to [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/]\(https://iam.console.vngcloud.vn/\)) with your Root User Account.
 2. Select the **Service Account** menu.
 3. Choose the **Service Account** for which you want to assign permissions.
 4. Click **Attach policies**.

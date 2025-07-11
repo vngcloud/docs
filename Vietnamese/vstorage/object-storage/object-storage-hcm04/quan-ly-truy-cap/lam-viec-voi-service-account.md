@@ -10,7 +10,7 @@
 
 Để khởi tạo tài khoản Service Account, hãy làm theo các bước bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/) với tài khoản Root User Account.
+1. Đăng nhập vào [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) với tài khoản Root User Account.
 2. Chọn mục **Service Account**.
 3. Chọn **Create a Service Account.**
 4. Tại mục **Add information**, nhập **Name** mà bạn mong muốn. Tên của Service Account phải dài từ 1 (tối thiểu) đến 50 (tối đa) ký tự và chỉ có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), dấu gạch dưới (\_), dấu gạch ngang (-) và khoảng trắng( ). Tên của Service Account không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, mật khẩu đăng nhập,...) cũng như tên Service Account phải là duy nhất trên một tài khoản VNG Cloud cho đến khi Service Account đó bị xóa. Ví dụ tên Service Account sau là hợp lệ: SA\_Client\_tool\_01.
@@ -35,7 +35,7 @@ Sau khi bạn thực hiện 10 bước bên trên, một tài khoản Service Ac
 
 Để khởi tạo một policy sử dụng để truy cập vào tài nguyên vStorage, hãy làm theo các bước bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/) với tài khoản Root User Account.
+1. Đăng nhập vào [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) với tài khoản Root User Account.
 2. Chọn thư mục **Policy**.
 3. Chọn **Create a Policy**.
 4. Nhập **Name** và **Description** nếu cho cho Policy.
@@ -55,7 +55,7 @@ Sau khi bạn thực hiện 10 bước bên trên, một tài khoản Service Ac
 
 Sau khi bạn đã khởi tạo Service Account và Policy mong muốn, tiếp theo bạn cần liên kết tài khoản Service Account vào policy theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/) với tài khoản Root User Account.
+1. Đăng nhập vào [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) với tài khoản Root User Account.
 2. Chọn thư mục **Service Account.**
 3. Chọn **Service Account** muốn thực hiện gán quyền.
 4. Chọn **Attach policies**.
@@ -106,7 +106,7 @@ Thực hiện theo các bước bên dưới làm việc với vStorage thông q
 3. Chọn biểu tượng **vStorage API**.
 4. Tại mục **Authentication**, bạn cần điền thông tin cần thiết để cấu hình vStorage API của bạn bao gồm:
    1. Nhập **Client ID**. Một **Client ID** là một chuỗi ký tự được sử dụng bởi Service API để định danh ứng dụng, đồng thời cũng được dùng để xây dựng "authorization URL" hiển thị phía người dùng. Bạn có thể tạo và quản lý **Client ID** thông qua hệ thống vIAM. **Client ID** sẽ được tự động sinh ra khi bạn tạo mới một **Service Account**. .
-   2. Nhập **Client Secret** tương ứng của **Client ID** vừa nhập. Cặp Client ID và Client Secret được bạn tạo và quản lý thông qua hệ thống vIAM. Bạn có thể chọn [Click here to manage your Client ID.](https://hcm-3.console.vngcloud.vn/iam/service-accounts) để chúng tôi điều hướng bạn tới hệ thống vIAM và chi tiết là các màn hình quản lý Service Account.
+   2. Nhập **Client Secret** tương ứng của **Client ID** vừa nhập. Cặp Client ID và Client Secret được bạn tạo và quản lý thông qua hệ thống vIAM. Bạn có thể chọn [Click here to manage your Client ID.](https://iam.console.vngcloud.vn/service-accounts) để chúng tôi điều hướng bạn tới hệ thống vIAM và chi tiết là các màn hình quản lý Service Account.
 5. Sau khi hoàn tất chọn cấu hình **xác thực**, chọn **Authentication** để chuyển tới màn hình **Configuration. Tại đây bạn có thể sử dụng trực tiếp các vStorage API hoặc bạn có thể sử dụng API thông qua Postman**. Bạn luôn có thể quay lại đây để thay đổi thông tin **Cấp quyền** của mình, sau đó chọn lại **Xác thực** để cập nhật danh sách S3 Rest API theo thông số mới của bạn.
 
 Chi tiết, vui lòng tham khảo thêm tại [https://docs.api.vngcloud.vn/service-docs/vstorage-api.html](https://docs.api.vngcloud.vn/service-docs/vstorage-api.html).
@@ -123,7 +123,7 @@ Chi tiết, vui lòng tham khảo thêm tại [https://docs.api.vngcloud.vn/serv
 
 Để hủy (xóa) một tài khoản Service Account đã tạo trước đó, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/) với tài khoản Root User Account.
+1. Đăng nhập vào [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) với tài khoản Root User Account.
 2. Chọn mục **Service Account**.
 3. Trên danh sách các Service Account đang có, bạn hãy chọn một hoặc nhiều tài khoản Service Account mà bạn muốn hủy bỏ (xóa).
 4. Chọn **Delete**.

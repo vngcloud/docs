@@ -2,7 +2,7 @@
 
 To create an IAM User Account for accessing vStorage resources, please follow the detailed guide below. Refer to the provided steps to create an IAM User Account:
 
-1\. Log in to [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/]\(https://hcm-3.console.vngcloud.vn/iam/\)) using your Root User Account.\
+1\. Log in to [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/]\(https://iam.console.vngcloud.vn/\)) using your Root User Account.\
 2\. Select **User Account** from the menu.\
 3\. Choose **Create a User Account.**\
 4\. In the **Account username** section, enter the **Account username**. IAM User Account names must be between 5 (minimum) and 50 (maximum) characters, and can only include uppercase and lowercase letters (a-z, A-Z), numbers (0-9), dots (.), underscores (\_), and hyphens (-). IAM User Account names should not contain sensitive information (e.g., IP addresses, login passwords), and each IAM User Account name must be unique within a VNG Cloud account until the IAM User Account is deleted. Example valid IAM User Account name: IAM\_Business\_Dept\_01.\

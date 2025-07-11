@@ -2,7 +2,7 @@
 
 To delete one or more S3 keys or Swift users that you created earlier, follow the instructions below:
 
-1\. Log in to [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/]\(https://hcm-3.console.vngcloud.vn/iam/\)) with your Root User Account.\
+1\. Log in to [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/]\(https://iam.console.vngcloud.vn/\)) with your Root User Account.\
 2\. Select the **vStorage Credentials** section.\
 3\. From the list of existing S3 keys and Swift users, choose one or more that you want to delete.\
 4\. Click **Delete**.

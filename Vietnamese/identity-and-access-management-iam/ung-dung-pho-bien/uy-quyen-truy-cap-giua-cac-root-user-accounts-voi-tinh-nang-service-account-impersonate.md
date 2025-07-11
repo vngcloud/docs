@@ -29,7 +29,7 @@ Chi tiết các bước như sau
 
 **Bước 1.1: Tạo Service Account AllowAccessFromRootUserAccountA, gắn quyền vServerFullAccess và thiết lập Trust với Root User Account A**
 
-Để tạo Service Account bạn qua tab Service Account ở trang IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts), nhấn **Create a Service Account**, **đặt tên** cho Service Account: AllowAccessFromRootUserAccountA và nhấn vào **Add a root user account** để thiết lập Trust với Root User Account A
+Để tạo Service Account bạn qua tab Service Account ở trang IAM tại [đây](https://iam.console.vngcloud.vn/service-accounts), nhấn **Create a Service Account**, **đặt tên** cho Service Account: AllowAccessFromRootUserAccountA và nhấn vào **Add a root user account** để thiết lập Trust với Root User Account A
 
 Điền thông tin User ID của Root User Account A để thiết lập **Trust** giữa Root User Account A và Service Account này, nhấn **Next step**
 
@@ -45,13 +45,13 @@ Như vậy là bạn đã tạo thành công Service Account: **AllowAccessFromR
 
 **Bước 2.1: Tạo User: System1 nếu chưa có User Account (lưu ý rằng nếu đã có sẵn User: System1, cần đảo bảo User: System1 không có quyền gì hoặc không có các quyền chồng lấn với hướng dẫn)**
 
-Tiến hành tạo User Account bằng cách truy cập vào tab User Account ở trang quản lý IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/user-accounts), nhấn **Create a User Account,** điền thông tin Username và Password, sau đó nhấn **Create User Account**&#x20;
+Tiến hành tạo User Account bằng cách truy cập vào tab User Account ở trang quản lý IAM tại [đây](https://iam.console.vngcloud.vn/user-accounts), nhấn **Create a User Account,** điền thông tin Username và Password, sau đó nhấn **Create User Account**&#x20;
 
 Sau khi tạo thành công User Account, sẽ được liệt kê ở trang User Account.
 
 **Bước 2.2: Tạo Policy: ImpersonateToRootUserAccountB để cấp quyền impersonate cho Service Account đã tạo ở giai đoạn 1**
 
-Để tạo Policy bạn qua tab Policy ở trang IAM tại [đây](https://hcm-3.console.vngcloud.vn/iam/policies), nhấn **Create a Policy**, **đặt tên** cho Policy: **ImpersonateToRootUserAccountB** và nhấn **Next step**
+Để tạo Policy bạn qua tab Policy ở trang IAM tại [đây](https://iam.console.vngcloud.vn/policies), nhấn **Create a Policy**, **đặt tên** cho Policy: **ImpersonateToRootUserAccountB** và nhấn **Next step**
 
 Chọn **Product**: **iam, tìm kiếm và chọn action: ImpersonateServiceAccount**
 

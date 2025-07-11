@@ -8,7 +8,7 @@ This guide is intended to guide users to quickly get started with IAM in vStorag
 
 1. Accessing the IAM Console&#x20;
 
-* Open your web browser and access the IAM Console URL: https://hcm-3.console.vngcloud.vn/iam/
+* Open your web browser and access the IAM Console URL: https://iam.console.vngcloud.vn/
 * Log in as a Root User Account or a User Account with access rights. You will need to provide a username/email and password when logging in.&#x20;
 * After logging in, you will see the IAM Console interface, which provides an overview of your IAM configuration.
 
@@ -33,7 +33,7 @@ Notice
 
 **4.** Assign Permissions to IAM Accounts&#x20;
 
-* Open your web browser and go to the IAM Console URL: https://hcm-3.console.vngcloud.vn/iam/
+* Open your web browser and go to the IAM Console URL: https://iam.console.vngcloud.vn/
 * Log in as the Root User account. You may need to provide a username and password or use other authentication methods such as single sign-on (SSO) if configured.&#x20;
 * Once logged in, you will see the IAM Console interface, which provides an overview of your IAM configuration.&#x20;
 * Click on "User account" in the left menu.

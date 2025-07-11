@@ -2,7 +2,7 @@
 
 To create a policy for accessing vStorage resources, follow the steps below:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/]\(https://hcm-3.console.vngcloud.vn/iam/\)) using your Root User Account.
+1. Log in to [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/]\(https://iam.console.vngcloud.vn/\)) using your Root User Account.
 2. Select the **Policy** directory.
 3. Choose **Create a Policy.**
 4. Enter a **Name** and **Description** for the Policy.

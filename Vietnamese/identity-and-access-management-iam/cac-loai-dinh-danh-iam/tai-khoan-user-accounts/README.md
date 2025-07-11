@@ -13,7 +13,7 @@ Trong VNG Cloud Services, việc tạo tài khoản người dùng IAM và nhóm
 
 Để tạo các tài khoản người dùng IAM mới:
 
-1. Truy cập vào IAM Console: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/)
+1. Truy cập vào IAM Console: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
 2. Nhấp vào **"User account"** trong menu bên trái.
 3. Nhấp vào **"Create a user account".**
 4. Nhập thông tin tài khoản người dùng, bao gồm tên người dùng và mật khẩu.
@@ -23,7 +23,7 @@ Trong VNG Cloud Services, việc tạo tài khoản người dùng IAM và nhóm
 
 Một IAM User Account cần được gắn vào ít nhất một Policy hoặc thuộc ít nhất một IAM User Group đã có ít nhất một Policy gắn vào để đảm bảo IAM User Account hoạt động đúng. Để gắn Policy cho IAM User Account:
 
-1. Truy cập vào IAM Console - Trang User account với URL: [https://hcm-3.console.vngcloud.vn/iam/user-accounts](https://hcm-3.console.vngcloud.vn/iam/user-accounts)
+1. Truy cập vào IAM Console - Trang User account với URL: [https://iam.console.vngcloud.vn/user-accounts](https://iam.console.vngcloud.vn/user-accounts)
 2. Đăng nhập với tư cách là tài khoản Người dùng Gốc (Root User Account) hoặc User Account được cấp quyền truy cập. Bạn cần cung cấp tên người dùng/email và mật khẩu khi đăng nhập.
 3. Tìm kiếm IAM User Account bằng cách nhập tên người dùng vào hộp tìm kiếm và chọn tài khoản đúng trong kết quả tìm kiếm.
 4. Mặc định, bạn sẽ thấy tab **"Permission"** tại trang thông tin chi tiết của IAM User Account. Nhấp vào nút "**Attach Policies**" và sau đó bạn sẽ thấy một cửa sổ xuất hiện chứa tất cả các Policies.
@@ -35,7 +35,7 @@ Một IAM User Account cần được gắn vào ít nhất một Policy hoặc 
 
 IAM User Account cần được gắn vào ít nhất một Policy hoặc thuộc một User Group đã có ít nhất một Policy gắn kèm để đảm bảo IAM User Account hoạt động đúng. Để thêm IAM User Account vào một User Group:
 
-1. Truy cập vào IAM Console - Trang User account với URL: [https://hcm-3.console.vngcloud.vn/iam/user-accounts](https://hcm-3.console.vngcloud.vn/iam/user-accounts)
+1. Truy cập vào IAM Console - Trang User account với URL: [https://iam.console.vngcloud.vn/user-accounts](https://iam.console.vngcloud.vn/user-accounts)
 2. Đăng nhập với tư cách là tài khoản Người dùng Gốc (Root User Account) hoặc User Account được cấp quyền truy cập. Bạn cần cung cấp tên người dùng/email và mật khẩu khi đăng nhập.
 3. Tìm kiếm IAM User Account bằng cách nhập tên người dùng vào hộp tìm kiếm và chọn tài khoản đúng trong kết quả tìm kiếm.
 4. Nhấp vào tab "**Group**" tại trang thông tin chi tiết của IAM User Account.
@@ -47,7 +47,7 @@ IAM User Account cần được gắn vào ít nhất một Policy hoặc thuộ
 
 Một IAM User Account bao gồm thông tin đăng nhập (tên người dùng, mật khẩu). Bạn có thể thay đổi mật khẩu của IAM User Account bằng cách làm theo các bước hướng dẫn dưới đây:
 
-1. Truy cập vào IAM Console - Trang User account với URL: [https://hcm-3.console.vngcloud.vn/iam/user-accounts](https://hcm-3.console.vngcloud.vn/iam/user-accounts)
+1. Truy cập vào IAM Console - Trang User account với URL: [https://iam.console.vngcloud.vn/user-accounts](https://iam.console.vngcloud.vn/user-accounts)
 2. Đăng nhập với tư cách là tài khoản Người dùng Gốc (Root User Account) hoặc User Account được cấp quyền truy cập. Bạn cần cung cấp tên người dùng/email và mật khẩu khi đăng nhập.
 3. Tìm kiếm IAM User Account bằng cách nhập tên người dùng vào hộp tìm kiếm và chọn tài khoản đúng trong kết quả tìm kiếm.
 4. Nhấp vào tab "**Security credentials**" tại trang thông tin chi tiết của IAM User Account.
@@ -89,7 +89,7 @@ In VNG Cloud Services, creating IAM user accounts and groups is a straightforwar
 
 To create new IAM user accounts:
 
-1. Navigate to the IAM Console: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/)
+1. Navigate to the IAM Console: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
 2. Click on **"User account"** in the left-hand menu.
 3. Click on **"Create a User account."**
 4. Enter the user account details, including the _username and password_.
@@ -99,7 +99,7 @@ To create new IAM user accounts:
 
 An IAM User Account needs to be attached to at least one Policy or under one Group, which already has at least one attached Policy to ensure the IAM User Account works in the correct concept. To attach Policies to an IAM User Account:&#x20;
 
-1. Access the IAM Console - User Account page with the URL: [https://hcm-3.console.vngcloud.vn/iam/user-accounts](https://hcm-3.console.vngcloud.vn/iam/user-accounts)
+1. Access the IAM Console - User Account page with the URL: [https://iam.console.vngcloud.vn/user-accounts](https://iam.console.vngcloud.vn/user-accounts)
 2. Sign in as a **Root user account**. You may need to provide a username and password or use other authentication methods like single sign-on (SSO) if configured.
 3. **Search the IAM user account** by entering its username into the search box, and **select the correct one** in the search result.
 4. By default, you will see the **Permission** tab on the IAM user account's detailed information.
@@ -112,7 +112,7 @@ An IAM User Account needs to be attached to at least one Policy or under one Gro
 
 An IAM User Account needs to be attached to at least one Policy or under one Group, which already has at least one attached Policy to ensure the IAM User Account works in the correct concept. To assign an IAM User Account to User Groups:
 
-1. Access the IAM Console - User Account page with the URL: [https://hcm-3.console.vngcloud.vn/iam/user-accounts](https://hcm-3.console.vngcloud.vn/iam/user-accounts)
+1. Access the IAM Console - User Account page with the URL: [https://iam.console.vngcloud.vn/user-accounts](https://iam.console.vngcloud.vn/user-accounts)
 2. Sign in as a **Root user account**. You may need to provide a username and password or use other authentication methods like single sign-on (SSO) if configured.
 3. **Search the IAM user account** by entering its username into the search box, and **select the correct one** in the search result.
 4. Click on the **Group** tab on the IAM user account's detailed information.
@@ -124,7 +124,7 @@ An IAM User Account needs to be attached to at least one Policy or under one Gro
 
 A user account consists of credentials (username, password). You can change your IAM user account's password by following the steps of instruction below:
 
-1. Access the IAM Console - User Account page with the URL: [https://hcm-3.console.vngcloud.vn/iam/user-accounts](https://hcm-3.console.vngcloud.vn/iam/user-accounts)
+1. Access the IAM Console - User Account page with the URL: [https://iam.console.vngcloud.vn/user-accounts](https://iam.console.vngcloud.vn/user-accounts)
 2. Sign in as a **Root user account**. You may need to provide a username and password or use other authentication methods like single sign-on (SSO) if configured.
 3. **Search the IAM user account** by entering its username into the search box, and **select the correct one** in the search result.
 4. Click on the **"Security credentials"** tab on the IAM user account's detailed information.

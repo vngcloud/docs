@@ -31,7 +31,7 @@ YES: fully supports this type of audit logs
 
 By default, VNG Cloud does not enable the Audit Logs feature, customers need to follow the steps below to activate it:
 
-1. Access the Audit Logs page of the IAM Portal: https://hcm-3.console.vngcloud.vn/iam/audit-logs
+1. Access the Audit Logs page of the IAM Portal: https://iam.console.vngcloud.vn/audit-logs
 2. Select Set default configuration, a setup popup will appear allowing you to choose to enable ADMIN\_WRITE or SYSTEM\_EVENT
 3. Select to activate the type of audit logs ADMIN\_WRITE or SYSTEM\_EVENT that you desire
 4. Press the Save button to activate

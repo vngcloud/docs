@@ -24,7 +24,7 @@ Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai
 
 **Tạo Service Account và gắn policy:&#x20;**<mark style="color:red;">**vMonitorMetricPush**</mark>**&#x20;để có đủ quyền đẩy Metric về vMonitor (Có thể bỏ qua bước này nếu đã tạo trước đó)**
 
-Để tạo service account bạn truy cập tại [đây](https://hcm-3.console.vngcloud.vn/iam/service-accounts)
+Để tạo service account bạn truy cập tại [đây](https://iam.console.vngcloud.vn/service-accounts)
 
 1. Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account.
 2. Tìm và chọn **Policy:** **vMonitorMetricPush,** sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vMonitorMetricPush do VNG Cloud tạo ra chỉ chứa chính xác quyền đẩy metric về hệ thống.

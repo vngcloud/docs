@@ -9,7 +9,7 @@ Thông qua IAM, người dùng VNG Cloud, cụ thể là website vConsole có th
 Để hiểu rõ hơn, người dùng cần tìm hiểu xem:
 
 * **IAM là gì và sử dụng như thế nào?** Tham khảo tài liệu hướng dẫn [tại đây](../../../../identity-and-access-management-iam.md)
-* **Truy cập đến IAM tại**: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/)
+* **Truy cập đến IAM tại**: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
 
 Khi đã hiểu rõ về cách hoạt động cũng như sử dụng vIAM, người dùng có thể truy cập đến vIAM để phân quyền cho các tính năng của vConsole như sau
 
@@ -17,7 +17,7 @@ Khi đã hiểu rõ về cách hoạt động cũng như sử dụng vIAM, ngư�
 
 ***
 
-* Bước 1: Truy cập vào website IAM[ tại đây](https://hcm-3.console.vngcloud.vn/iam/)
+* Bước 1: Truy cập vào website IAM[ tại đây](https://iam.console.vngcloud.vn/)
 * Bước 2: Khởi tạo **Policy**
   * 2.1: Chọn Product vConsole
   * 2.2 Chọn nhóm tính năng được phép truy cập hoặc không đối với các trang chức năng tại vConsole

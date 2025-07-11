@@ -6,7 +6,7 @@ Service Account is an identity that you can create under your Root User account 
 
 To create a new Service Account:&#x20;
 
-1. Go to the IAM Console: https://hcm-3.console.vngcloud.vn/iam/&#x20;
+1. Go to the IAM Console: https://iam.console.vngcloud.vn/&#x20;
 2. Click "Service account" in the left menu.
 3. Click "Create service account."&#x20;
 4. Enter the Service Account information, including name and optional description.&#x20;
@@ -17,7 +17,7 @@ To create a new Service Account:&#x20;
 
 To assign Policies to Service Account:&#x20;
 
-1. Go to IAM - Service Account page with URL: https://hcm-3.console.vngcloud.vn/iam/service-accounts&#x20;
+1. Go to IAM - Service Account page with URL: https://iam.console.vngcloud.vn/service-accounts&#x20;
 2. Log in as Root User Account or User Account with access permission.&#x20;
 3. You need to provide username/email and password when logging in.&#x20;
 4. Search for Service Account by entering username in search box and selecting correct result in search result.&#x20;

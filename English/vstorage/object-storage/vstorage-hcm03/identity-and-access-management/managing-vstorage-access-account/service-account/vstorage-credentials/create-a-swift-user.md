@@ -2,7 +2,7 @@
 
 To create a Swift user, follow the steps below:
 
-1\. Log in to [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/]\(https://hcm-3.console.vngcloud.vn/iam/\)) with your Root User Account.\
+1\. Log in to [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/]\(https://iam.console.vngcloud.vn/\)) with your Root User Account.\
 2\. Choose the **vStorage credentials** directory.\
 3\. Select **Swift** from the list.\
 4\. Click on **Create a Swift user**.\

@@ -2,7 +2,7 @@
 
 After creating the IAM User Account and the desired Policy, the next step is to associate the IAM User Account with the policy. Follow the instructions below:
 
-1\. Log in to [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/]\(https://hcm-3.console.vngcloud.vn/iam/\)) using your Root User Account.\
+1\. Log in to [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/]\(https://iam.console.vngcloud.vn/\)) using your Root User Account.\
 2\. Navigate to the **User Account** section.\
 3\. Choose the **IAM User Account** to which you want to assign permissions.\
 4\. Select **Attach policies**.\

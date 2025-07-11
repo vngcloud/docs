@@ -2,7 +2,7 @@
 
 After you created the desired S3 keys and Swift users and set up **Restriction by IAM to YES**, the next step is to associate these credentials with the Service Account. Follow the instructions below:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/]\(https://hcm-3.console.vngcloud.vn/iam/\)) using your Root User Account.
+1. Log in to [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/]\(https://iam.console.vngcloud.vn/\)) using your Root User Account.
 2. Navigate to the vStorage credentials menu.
    1. For S3 keys: Select the S3 tab and ensure the toggle is switched on ![](https://docs.vngcloud.vn/download/thumbnails/69468389/image2023-6-30\_9-44-16.png?version=1\&modificationDate=1703473020000\&api=v2) to successfully enable IAM control.
 3.

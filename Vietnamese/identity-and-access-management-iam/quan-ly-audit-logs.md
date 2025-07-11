@@ -32,7 +32,7 @@ N/A : không hỗ trợ loại audit logs này
 
 Mặc định VNG Cloud sẽ không bật sẵn tính năng Audit Logs, khách hàng cần thực hiện các bước dưới đây để kích hoạt:
 
-1. Truy cập vào trang Audit Logs của IAM Portal: [https://hcm-3.console.vngcloud.vn/iam/audit-logs](https://hcm-3.console.vngcloud.vn/iam/audit-logs)
+1. Truy cập vào trang Audit Logs của IAM Portal: [https://iam.console.vngcloud.vn/audit-logs](https://iam.console.vngcloud.vn/audit-logs)
 2. Chọn **Set default configuration,** popup thiết lập sẽ hiển thị cho phép bạn chọn bật ADMIN\_WRITE hay SYSTEM\_EVENT
 3. Chọn kích hoạt bật loại audit logs ADMIN\_WRITE hay SYSTEM\_EVENT mà bạn mong muốn
 4. Nhấn nút **Save** để kích hoạt

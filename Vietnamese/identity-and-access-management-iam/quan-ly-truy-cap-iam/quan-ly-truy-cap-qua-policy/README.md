@@ -6,7 +6,7 @@ IAM Policy là các tài liệu JSON xác định các quyền và quy tắc tru
 
 **Để khởi tạo Chính Sách (Policy), bạn cần thực hiện các hướng dẫn sau:**
 
-1. Truy cập IAM Console: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/)
+1. Truy cập IAM Console: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
 2. Nhấp vào **"Policy"** trong menu bên trái.
 3. Nhấp vào **"Create a policy."**
 4. Cung cấp tên chính sách và mô tả tùy chọn.

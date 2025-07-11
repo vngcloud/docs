@@ -12,7 +12,7 @@ IAM Console is a web-based user interface that allows you to manage IAM User Acc
 
 **How to access the IAM Console?**
 
-1. Open your web browser and go to the IAM Console URL: https://hcm-3.console.vngcloud.vn/iam/
+1. Open your web browser and go to the IAM Console URL: https://iam.console.vngcloud.vn/
 2. Log in as a Root User Account or a User Account with access rights. You will need to provide your username/email and password when logging in.&#x20;
 3. Once logged in, you will see the IAM Console interface, which provides an overview of your IAM configuration.
 

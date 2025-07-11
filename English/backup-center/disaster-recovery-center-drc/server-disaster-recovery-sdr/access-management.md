@@ -19,7 +19,7 @@ This guide is intended to guide users to quickly start using IAM in DRC services
 
 #### **3.1 Access IAM Console** <a href="#id-3.1-truy-cap-iam-console" id="id-3.1-truy-cap-iam-console"></a>
 
-1. Open your web browser and go to the IAM Console URL: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/)
+1. Open your web browser and go to the IAM Console URL: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
 2. Log in as a Root User Account or a User Account with access granted. You will need to provide a username/email and password when logging in.
 3. Once signed in, you'll see the IAM Console interface, which provides an overview of your IAM configuration.
 
@@ -43,7 +43,7 @@ This guide is intended to guide users to quickly start using IAM in DRC services
 
 #### **3.4 Assign Permissions to IAM Accounts** <a href="#id-3.4-gan-quyen-cho-tai-khoan-iam" id="id-3.4-gan-quyen-cho-tai-khoan-iam"></a>
 
-1. Open your web browser and go to the IAM Console URL: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/)
+1. Open your web browser and go to the IAM Console URL: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
 2. Log in as the **Root User** account . You may need to provide a username and password or use other authentication methods such as single sign-on (SSO) if configured.
 3. Once signed in, you'll see the IAM Console interface, which provides an overview of your IAM configuration.
 4. Click on **"User account"** in the left menu.

@@ -2,7 +2,7 @@
 
 Để hủy (xóa) một tài khoản Service Account đã tạo trước đó, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/) với tài khoản Root User Account.
+1. Đăng nhập vào [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) với tài khoản Root User Account.
 2. Chọn mục **Service Account**.
 3. Trên danh sách các Service Account đang có, bạn hãy chọn một hoặc nhiều tài khoản Service Account mà bạn muốn hủy bỏ (xóa).
 4. Chọn **Delete**.

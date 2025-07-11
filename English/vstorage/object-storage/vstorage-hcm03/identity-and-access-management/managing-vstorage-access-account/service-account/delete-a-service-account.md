@@ -2,7 +2,7 @@
 
 To delete a previously created Service Account, follow the steps below:
 
-1\. Log in to [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/]\(https://hcm-3.console.vngcloud.vn/iam/\)) with your Root User Account.\
+1\. Log in to [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/]\(https://iam.console.vngcloud.vn/\)) with your Root User Account.\
 2\. Select **Service Account.**\
 3\. From the list of existing Service Accounts, choose one or more Service Accounts that you want to delete.\
 4\. Click on **Delete**.

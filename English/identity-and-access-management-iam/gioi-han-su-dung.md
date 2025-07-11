@@ -2,7 +2,7 @@
 
 In VNG Cloud's IAM (Identity and Access Management) system, there are some restrictions on the number of IAM objects that can be used in the system. These restrictions are set to ensure efficient resource allocation and prevent overuse or overconsumption of resources. These restrictions will vary depending on the object being used. Here are some key points to introduce these restrictions:
 
-* Access to IAM Console to see Quota & Limitation at here: [https://hcm-3.console.vngcloud.vn/iam/quotas](https://hcm-3.console.vngcloud.vn/iam/quotas)
+* Access to IAM Console to see Quota & Limitation at here: [https://iam.console.vngcloud.vn/quotas](https://iam.console.vngcloud.vn/quotas)
 
 #### List of IAM Limitation <a href="#quota-and-limitation-danhsachiamlimitation" id="quota-and-limitation-danhsachiamlimitation"></a>
 

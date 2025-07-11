@@ -30,7 +30,7 @@ To cancel your Root account, you need to contact us by creating a ticket to requ
 
 To create an IAM user account, please first refer to the instructions below:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/) with Root User Account.
+1. Log in to [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) with Root User Account.
 2. Select **User Account** .
 3. Select **Create a User Account.**
 4. In the **Account username** section , enter **the Account username** you want. The IAM User Account name must be from 5 (minimum) to 50 (maximum) characters long and can only include uppercase letters, lowercase letters (az, AZ), numbers (0-9), periods (.), underscores (\_), and hyphens (-). The IAM User Account name should not contain sensitive information (e.g. IP address, login password, etc.) and the IAM User Account name must be unique on a VNG Cloud account until that IAM User Account is deleted. For example, the following IAM User Account name is valid: IAM\_Phong\_kinh\_doanh\_01.
@@ -49,7 +49,7 @@ To create an IAM user account, please first refer to the instructions below:
 
 To initialize a policy used to access File Storage resources, follow the steps below:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/) with Root User Account.
+1. Log in to [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) with Root User Account.
 2. **Select the Policy** folder .
 3. Select **Create a Policy** .
 4. Enter **Name** and **Description** if given for Policy.
@@ -76,7 +76,7 @@ After you have completed the above 8 steps, the file storage policy has been cre
 
 Once you have created the desired IAM User Account and Policy, you will need to link the IAM User Account to the policy as per the instructions below:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/) with Root User Account.
+1. Log in to [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) with Root User Account.
 2. Select the User Account folder **.**
 3. Select **the IAM User Account** you want to assign permissions to.
 4. Select **Attach policies** .

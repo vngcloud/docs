@@ -6,7 +6,7 @@ IAM Policies are JSON documents that define permissions and rules for accessing 
 
 **To create a Policy, follow these steps:**
 
-1. Access the IAM Console: https://hcm-3.console.vngcloud.vn/iam/
+1. Access the IAM Console: https://iam.console.vngcloud.vn/
 2. Click on "Policy" in the left menu.
 3. Click on "Create a policy.
 4. Provide the policy name and optional description.

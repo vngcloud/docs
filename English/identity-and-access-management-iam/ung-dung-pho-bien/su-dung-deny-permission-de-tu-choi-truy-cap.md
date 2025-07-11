@@ -16,13 +16,13 @@ Detailed steps are as follows
 
 **Step 1: Create User: System1 if you do not have a User Account (note that if you already have User: System1, make sure User: System1 does not have any rights or does not have rights that overlap with the instructions)**
 
-Create a User Account by accessing the User Account tab on the IAM management page here [,](https://hcm-3.console.vngcloud.vn/iam/user-accounts) clicking **Create a User Account,** filling in Username and Password information, then clicking **Create User Account**
+Create a User Account by accessing the User Account tab on the IAM management page here [,](https://iam.console.vngcloud.vn/user-accounts) clicking **Create a User Account,** filling in Username and Password information, then clicking **Create User Account**
 
 After successfully creating a User Account, it will be listed on the User Account page as below
 
 **Step 2: Create a Policy with the name vServerFullAccessExceptDeleteServer that allows access to all resources of vServer, but does not allow Delete Server**
 
-To create a Policy, go to the Policy tab on the IAM page here [,](https://hcm-3.console.vngcloud.vn/iam/policies) click **Create a Policy** , **name** the Policy: **vServerFullAccessExceptDeleteServer** and click **Next step**
+To create a Policy, go to the Policy tab on the IAM page here [,](https://iam.console.vngcloud.vn/policies) click **Create a Policy** , **name** the Policy: **vServerFullAccessExceptDeleteServer** and click **Next step**
 
 Click JSON to switch to JSON mode and create a Policy with the available JSON segment
 

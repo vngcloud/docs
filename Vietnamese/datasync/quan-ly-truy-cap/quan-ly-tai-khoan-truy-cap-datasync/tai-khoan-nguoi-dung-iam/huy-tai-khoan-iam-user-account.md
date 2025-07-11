@@ -2,7 +2,7 @@
 
 Để hủy (xóa) một tài khoản IAM User Account đã tạo trước đó, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/) với tài khoản Root User Account.
+1. Đăng nhập vào [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) với tài khoản Root User Account.
 2. Chọn mục **User Account**.
 3. Trên danh sach các IAM User Account đang có, bạn hãy chọn một hoặc nhiều tài khoản người dùng IAM mà bạn muốn hủy bỏ (xóa).
 4. Chọn **Delete**.

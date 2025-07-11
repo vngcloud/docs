@@ -34,7 +34,7 @@ You need to complete the following steps to be able to use the IAM service for o
 
 After setting up the IAM strategy plan, you need to create a Personal User account on our IAM homepage from your Root user account for each person who needs to access the server:
 
-1. Visit IAM homepage: [click here](https://hcm-3.console.vngcloud.vn/iam/).
+1. Visit IAM homepage: [click here](https://iam.console.vngcloud.vn/).
 2. Open the **User account** tab
 3. Select **Create a user account.**
 4. n the **Account user name** field, enter a Name for your User account. User account name must be between 5 and 50 characters long and can only contain letters, numbers, underscore (\_), period (.), dash (-).
@@ -46,7 +46,7 @@ After setting up the IAM strategy plan, you need to create a Personal User accou
 
 Next you need to create a group of people (Group) based on common roles or responsibilities:
 
-1. Open the **Group tab** at  [https://hcm-3.console.vngcloud.vn/iam/user-groups](https://hcm-3.console.vngcloud.vn/iam/user-groups).
+1. Open the **Group tab** at  [https://iam.console.vngcloud.vn/user-groups](https://iam.console.vngcloud.vn/user-groups).
 2. Select **Create a group.**
 3. Enter the Group name in the **Name** field (The name must be from 1 to 50 characters long and can only include letters, numbers, underscores (\_), periods (.), hyphens (-) and spaces. ), then enter the note information in the **Description** field.
 4. Go to the next step and assign the appropriate Policy to the user account in the **Policy** section, then assign the appropriate user to the group in the **User** section, with the Users added to the group will have permissions on the selected Policy. in Group
@@ -57,7 +57,7 @@ Next you need to create a group of people (Group) based on common roles or respo
 
 Create an access policy that specifies what actions each user group or role can take, define detailed permissions to restrict unnecessary access, and regularly review and update access policies. Access when needed:
 
-1. Open the Policy tab at  [https://hcm-3.console.vngcloud.vn/iam/policies](https://hcm-3.console.vngcloud.vn/iam/policies).
+1. Open the Policy tab at  [https://iam.console.vngcloud.vn/policies](https://iam.console.vngcloud.vn/policies).
 2. Select **Create a Policy**.
 3. Enter the Group name in the Name field (The name must be from 1 to 50 characters long and can only include letters, numbers, underscores (\_), periods (.), hyphens (-) and spaces. ), then enter the note information in the **Description** field.
 4. Go to the next step, select the **vserver** product in the **Product** section, then select the list of permissions for your policy in the **Action** section.&#x20;

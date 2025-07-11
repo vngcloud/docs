@@ -8,7 +8,7 @@ Hướng dẫn này nhằm hướng dẫn người dùng có thể nhanh chóng 
 
 **1. Truy cập IAM Console**
 
-1. Mở trình duyệt web của bạn và truy cập vào URL IAM Console: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/)
+1. Mở trình duyệt web của bạn và truy cập vào URL IAM Console: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
 2. Đăng nhập với tư cách là tài khoản Người dùng Gốc (Root User Account) hoặc User Account được cấp quyền truy cập. Bạn cần cung cấp tên người dùng/email và mật khẩu khi đăng nhập.
 3. Sau khi đăng nhập, bạn sẽ thấy giao diện IAM Console, nơi cung cấp tổng quan về cấu hình IAM của bạn.
 
@@ -35,7 +35,7 @@ Lưu ý
 
 **4. Gán Quyền cho Tài khoản IAM**
 
-1. Mở trình duyệt web của bạn và truy cập vào URL IAM Console: [https://hcm-3.console.vngcloud.vn/iam/](https://hcm-3.console.vngcloud.vn/iam/)
+1. Mở trình duyệt web của bạn và truy cập vào URL IAM Console: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
 2. Đăng nhập với tư cách là tài khoản **Người dùng Gốc (Root User)**. Bạn có thể cần cung cấp tên người dùng và mật khẩu hoặc sử dụng các phương thức xác thực khác như đăng nhập duy nhất (SSO) nếu đã được cấu hình.
 3. Sau khi đăng nhập, bạn sẽ thấy giao diện IAM Console, nơi cung cấp tổng quan về cấu hình IAM của bạn.
 4. Nhấp vào **"User account"** trong menu bên trái.
@@ -54,15 +54,15 @@ Truy cập lại Cổng thông tin vStorage bằng cách làm theo hướng dẫ
 
 VNG Managed Policy là các Chính Sách IAM (IAM Policy) được tạo mặc định bởi hệ thống IAM VNG Cloud. Các Chính Sách này được quản lý bởi chính VNG Cloud nhằm mục đích hỗ trợ người dùng trong việc cài đặt nhanh chóng các quyền truy cập cần thiết cho các tài khoản người dùng IAM đối với các tài nguyên của từng Product cụ thể. Cùng tìm hiểu danh sách VNG Managed Policies cho vStorage:
 
-* [vStorageAPIFullAccess](https://hcm-3.console.vngcloud.vn/iam/policies/d882a78f-c08b-4e33-991d-3b276723335c): Bao gồm toàn bộ quyền truy cập đến các tài nguyên thuộc hệ thống vStorage thông qua publi API
-* [vStorageIAMUserFullAccess](https://hcm-3.console.vngcloud.vn/iam/policies/9d4e2ff8-3920-44df-a81d-058e19120161): Bao gồm toàn bộ quyền truy cập đến hệ thống IAM của vStorage.
-* [vStorageAPIReadOnlyAccess](https://hcm-3.console.vngcloud.vn/iam/policies/3e1ee27d-f8bd-401a-8ab2-03a3d1fdf71e): Chỉ bao gồm quyền Đọc (Read) đến các tài nguyên thuộc hệ thống vStorage thông qua publi API
-* [vStorageFullAccess](https://hcm-3.console.vngcloud.vn/iam/policies/6085cebd-17bf-4df6-b6d2-bb7c7769f1a0): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc hệ thông vStorage
-* [vStorageClientToolReadOnlyAccess](https://hcm-3.console.vngcloud.vn/iam/policies/000ef518-534e-4c39-890d-19d2f1a6ae9e): Chỉ bao gồm quyền Đọc (Read) đến các tài nguyên thuộc hệ thống vStorage từ các Client Tool
-* [vStorageReadOnlyAccess](https://hcm-3.console.vngcloud.vn/iam/policies/17b31005-2760-4f6c-ac73-5953ec52ddfa): Chỉ bao gồm quyền Đọc (Read) trên các tài nguyên thuộc hệ thống vStorage
-* [vStorageClientToolFullAccess](https://hcm-3.console.vngcloud.vn/iam/policies/b8500577-1e38-45ee-8049-0c1bef0f4e8b): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc hệ thông vStorage từ các Client Tool
-* [vStorageIAMUserReadOnlyAccess](https://hcm-3.console.vngcloud.vn/iam/policies/1617a48f-7c0a-4292-bab2-f341799ab309): Chỉ bao gồm quyền Đọc (Read) đến hệ thống IAM của vStorage.
-* [vStorageNormalAccess](https://hcm-3.console.vngcloud.vn/iam/policies/0f5fe828-ab47-441d-a167-398b6d7a3577): Bao gồm toàn bộ quyền truy cập đến các tài nguyên thuộc hệ thống vStorage (ngoại trừ các hành động liên quan đến vStorage - Billing system)
+* [vStorageAPIFullAccess](https://iam.console.vngcloud.vn/policies/d882a78f-c08b-4e33-991d-3b276723335c): Bao gồm toàn bộ quyền truy cập đến các tài nguyên thuộc hệ thống vStorage thông qua publi API
+* [vStorageIAMUserFullAccess](https://iam.console.vngcloud.vn/policies/9d4e2ff8-3920-44df-a81d-058e19120161): Bao gồm toàn bộ quyền truy cập đến hệ thống IAM của vStorage.
+* [vStorageAPIReadOnlyAccess](https://iam.console.vngcloud.vn/policies/3e1ee27d-f8bd-401a-8ab2-03a3d1fdf71e): Chỉ bao gồm quyền Đọc (Read) đến các tài nguyên thuộc hệ thống vStorage thông qua publi API
+* [vStorageFullAccess](https://iam.console.vngcloud.vn/policies/6085cebd-17bf-4df6-b6d2-bb7c7769f1a0): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc hệ thông vStorage
+* [vStorageClientToolReadOnlyAccess](https://iam.console.vngcloud.vn/policies/000ef518-534e-4c39-890d-19d2f1a6ae9e): Chỉ bao gồm quyền Đọc (Read) đến các tài nguyên thuộc hệ thống vStorage từ các Client Tool
+* [vStorageReadOnlyAccess](https://iam.console.vngcloud.vn/policies/17b31005-2760-4f6c-ac73-5953ec52ddfa): Chỉ bao gồm quyền Đọc (Read) trên các tài nguyên thuộc hệ thống vStorage
+* [vStorageClientToolFullAccess](https://iam.console.vngcloud.vn/policies/b8500577-1e38-45ee-8049-0c1bef0f4e8b): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc hệ thông vStorage từ các Client Tool
+* [vStorageIAMUserReadOnlyAccess](https://iam.console.vngcloud.vn/policies/1617a48f-7c0a-4292-bab2-f341799ab309): Chỉ bao gồm quyền Đọc (Read) đến hệ thống IAM của vStorage.
+* [vStorageNormalAccess](https://iam.console.vngcloud.vn/policies/0f5fe828-ab47-441d-a167-398b6d7a3577): Bao gồm toàn bộ quyền truy cập đến các tài nguyên thuộc hệ thống vStorage (ngoại trừ các hành động liên quan đến vStorage - Billing system)
 
 ### **3. Khám phá chi tiết cách sử dụng IAM cho vStorage** <a href="#iamforvstorage-3.khamphachitietcachsudungiamchovstorage" id="iamforvstorage-3.khamphachitietcachsudungiamchovstorage"></a>
 
