@@ -27,11 +27,11 @@ Tại mục Action, bạn có thể chỉ định các hành động (**được
 
 * Để **cấp phép truy cập** các Action trên Resource, chọn **Allow Permission**
 
-![](https://docs.vngcloud.vn/download/attachments/59806592/image2023-8-3\_9-40-43.png?version=1\&modificationDate=1691030444000\&api=v2)
+![](https://docs.vngcloud.vn/download/attachments/59806592/image2023-8-3_9-40-43.png?version=1\&modificationDate=1691030444000\&api=v2)
 
 * Để **từ chối truy cập** các Action trên Resource, chọn **Deny Permission**
 
-![](https://docs.vngcloud.vn/download/attachments/59806592/image2023-8-3\_9-41-42.png?version=1\&modificationDate=1691030503000\&api=v2)
+![](https://docs.vngcloud.vn/download/attachments/59806592/image2023-8-3_9-41-42.png?version=1\&modificationDate=1691030503000\&api=v2)
 
 **Có ba loại cấp độ truy cập, bao gồm:**
 
@@ -63,5 +63,5 @@ Tại VNG Cloud Service, chúng tôi hỗ trợ 2 loại Chính Sách (Policy), 
 * **VNG Managed Policy:** Là các Chính Sách IAM (IAM Policy) được tạo mặc định bởi hệ thống IAM VNG Cloud. Các Chính Sách này được quản lý bởi chính VNG Cloud nhằm mục đích hỗ trợ người dùng trong việc cài đặt nhanh chóng các quyền truy cập cần thiết cho các tài khoản người dùng IAM đối với các tài nguyên của từng Product cụ thể
 * **Customer Policy:** Là các Chính Sách IAM (IAM Policy) được tạo bởi Root user (hoặc IAM user nếu có quyền). Các Chính Sách này được quản lý trực tiếp bởi người dùng và có thể điều chỉnh bất cứ lúc nào tùy thuộc vào nhu cầu sử dụng.
 * Tìm hiểu thêm và 2 loại Policy tại đây:
-  * [VNG Managed Policy](https://docs.vngcloud.vn/display/ONVINA/VNG+Cloud+Manage+Policies)
-  * [Customer Managed Policy](https://docs.vngcloud.vn/display/ONVINA/Customer+Managed+Policies)
+  * [VNG Managed Policy](chinh-sach-vng-managed-policy.md)
+  * [Customer Managed Policy](quan-ly-truy-cap-qua-policy/)
