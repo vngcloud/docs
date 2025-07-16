@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Thông báo và cập nhật
 
 vDB Kafka Cluster chính thức ra mắt, đánh dấu một bước tiến quan trọng trong việc tối ưu hóa quy trình xử lý dữ liệu. vDB Kafka Cluster giúp bạn phân tích dữ liệu và đưa ra quyết định kinh doanh một cách nhanh chóng và chính xác hơn. Bên cạnh đó, giao diện người dùng trực quan và dễ sử dụng sẽ giúp bạn làm quen với công cụ một cách nhanh chóng.

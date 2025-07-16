@@ -2,17 +2,6 @@
 description: >-
   VPN Site to Site là một mô hình kết nối VPN dùng để liên kết hai hay nhiều
   mạng riêng tư thông qua liên kết mã bảo mật và an toàn.
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Tạo kết nối Site-to-Site VPN

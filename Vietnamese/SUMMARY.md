@@ -730,7 +730,6 @@
       * [Giới hạn và hạn chế CSI](vks/storage/lam-viec-voi-container-storage-interface-csi/gioi-han-va-han-che-csi.md)
   * [Security Group](vks/security-group.md)
   * [Upgrade Kubernetes Version](vks/upgrade-kubernetes-version/README.md)
-    * [Phiên bản hỗ trợ Kubernetes](vks/upgrade-kubernetes-version/phien-ban-ho-tro-kubernetes.md)
     * [Manually Upgrade](vks/upgrade-kubernetes-version/manually-upgrade.md)
     * [Automatically Upgrade](vks/upgrade-kubernetes-version/automatically-upgrade.md)
   * [Migration](vks/migration/README.md)
