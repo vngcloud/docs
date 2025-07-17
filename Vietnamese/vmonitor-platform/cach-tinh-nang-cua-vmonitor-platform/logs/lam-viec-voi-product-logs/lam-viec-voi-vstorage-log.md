@@ -23,4 +23,4 @@ Nếu không còn nhu cầu để xem logs của vStorage Project thì bạn có
 
 ## **Một số chú ý:**
 
-* vStorage Project sau khi được tạo từ vStorage Portal, sẽ mất khoảng vào phút (tối đa 10 phút) để có thể đồng bộ về vMonitor
+* vStorage Project sau khi được tạo từ vStorage Portal, sẽ mất khoảng vài phút (tối đa 10 phút) để có thể đồng bộ về vMonitor

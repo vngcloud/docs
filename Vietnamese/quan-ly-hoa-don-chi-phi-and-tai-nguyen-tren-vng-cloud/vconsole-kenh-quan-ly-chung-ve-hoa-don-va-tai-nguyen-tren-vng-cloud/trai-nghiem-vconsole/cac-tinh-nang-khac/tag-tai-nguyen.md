@@ -30,7 +30,7 @@
 
 Một cửa sổ giao diện sẽ mở ra cho phép bạn thêm hoặc xóa thông tin thẻ của tài nguyên, cụ thể như sau:
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 1. **Tag mặc định:** Tài nguyên sẽ được tự động gắn tag `vng.createdBy` với giá trị là định danh của IAM User hoặc Root User đã tạo tài nguyên và không được phép xóa tag này.
 2. **Tag tùy chỉnh:**
@@ -45,7 +45,7 @@ Một cửa sổ giao diện sẽ mở ra cho phép bạn thêm hoặc xóa thô
 
 **Bước 2:** Tìm đến ô tìm kiếm như hình bên dưới:
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Nhập giá trị của tag mà bạn muốn tìm kiếm (ví dụ: `Sultu`).
 
@@ -72,7 +72,7 @@ Tính năng đồng bộ thông tin tag vào hóa đơn giúp liên kết chặt
 1. **Truy cập vào trang thống kê hóa đơn:** [https://dashboard.console.vngcloud.vn/billing-report](https://dashboard.console.vngcloud.vn/billing-report)
 2.  **Xuất hóa đơn:** Click vào nút "Xuất hóa đơn" để tải về bản sao hóa đơn đầy đủ.&#x20;
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. **Kiểm tra thông tin tag:** Trong bản sao hóa đơn đã xuất, bạn sẽ tìm thấy một phần liệt kê các tag đã được gắn cho các tài nguyên liên quan đến hóa đơn đó.
 
 **Lưu ý:**

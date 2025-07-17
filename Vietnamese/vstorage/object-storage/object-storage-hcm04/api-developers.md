@@ -13,7 +13,7 @@ Thực hiện theo các bước bên dưới làm việc với vStorage thông q
 2. Chọn thư mục **Integration.**
 3. Chọn biểu tượng **vStorage API**.
 4. Tại mục **Authentication**, bạn cần điền thông tin cần thiết để cấu hình vStorage API của bạn bao gồm:
-   1. Nhập **Client ID**. Một **Client ID** là một chuỗi ký tự được sử dụng bởi Service API để định danh ứng dụng, đồng thời cũng được dùng để xây dựng "authorization URL" hiển thị phía người dùng. Bạn có thể tạo và quản lý **Client ID** thông qua hệ thống vIAM. **Client ID** sẽ được tự động sinh ra khi bạn tạo mới một **Service Account**.&#x20;
+   1. Nhập **Client ID**. Một **Client ID** là một chuỗi ký tự được sử dụng bởi Service API để định danh ứng dụng, đồng thời cũng được dùng để xây dựng "authorization URL" hiển thị phía người dùng. Bạn có thể tạo và quản lý **Client ID** thông qua hệ thống vIAM. **Client ID** sẽ được tự động sinh ra khi bạn tạo mới một **Service Account**.
    2. Nhập **Client Secret** tương ứng của **Client ID** vừa nhập. Cặp Client ID và Client Secret được bạn tạo và quản lý thông qua hệ thống vIAM. Bạn có thể chọn [Click here to manage your Client ID.](https://iam.console.vngcloud.vn/service-accounts) để chúng tôi điều hướng bạn tới hệ thống vIAM và chi tiết là các màn hình quản lý Service Account.
 5. Sau khi hoàn tất chọn cấu hình **xác thực**, chọn **Authentication** để chuyển tới màn hình **Configuration. Tại đây bạn có thể sử dụng trực tiếp các vStorage API hoặc bạn có thể sử dụng API thông qua Postman**. Bạn luôn có thể quay lại đây để thay đổi thông tin **Cấp quyền** của mình, sau đó chọn lại **Xác thực** để cập nhật danh sách S3 Rest API theo thông số mới của bạn.
 
@@ -33,7 +33,7 @@ Chi tiết, vui lòng tham khảo thêm tại [https://docs.api.vngcloud.vn/serv
 * Region: HCM04
 * Endpoint: [https://hcm04.vstorage.vngcloud.vn](https://hcm04.vstorage.vngcloud.vn)
 
-Ví dụ:&#x20;
+Ví dụ:
 
 <figure><img src="../../../.gitbook/assets/image (715).png" alt=""><figcaption></figcaption></figure>
 
@@ -51,7 +51,7 @@ Những API này cho phép bạn quản lý các bucket
 
     * Đường dẫn: `PUT /<bucket-name>`
     * Ví dụ: `PUT`[`https://hcm04.vstorage.vngcloud.vn/demobucket`](https://hcm04.vstorage.vngcloud.vn/demobucket)
-    * Hoặc Curl qua lệnh:&#x20;
+    * Hoặc Curl qua lệnh:
 
     ```
     curl --location --request PUT 'https://hcm04.vstorage.vngcloud.vn/demobucket' \
@@ -66,7 +66,7 @@ Những API này cho phép bạn quản lý các bucket
 
     * Đường dẫn: `GET /`
     * Ví dụ: `GET` [`https://hcm04.vstorage.vngcloud.vn/`](https://hcm04.vstorage.vngcloud.vn/demobucket)
-    * Hoặc Curl qua lệnh:&#x20;
+    * Hoặc Curl qua lệnh:
 
     ```
     curl --location 'https://hcm04.vstorage.vngcloud.vn/' \
@@ -80,7 +80,7 @@ Những API này cho phép bạn quản lý các bucket
 * **Delete Bucket**: Xóa một bucket (chỉ khi bucket rỗng).
   * Đường dẫn: `DELETE /<bucket-name>`
   * Ví dụ: `DELETE` [`https://hcm04.vstorage.vngcloud.vn/demobucket`](https://hcm04.vstorage.vngcloud.vn/demobucket)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location --request DELETE 'https://hcm04.vstorage.vngcloud.vn/demobucket' \
@@ -94,7 +94,7 @@ Những API này cho phép bạn quản lý các bucket
 * **GET Bucket (List Objects)**: Liệt kê các đối tượng trong một bucket.
   * Đường dẫn: `GET /<bucket-name>`
   * Ví dụ: `GET`[`https://hcm04.vstorage.vngcloud.vn/demobucket`](https://hcm04.vstorage.vngcloud.vn/demobucket)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location 'https://hcm04.vstorage.vngcloud.vn/demobucket' \
@@ -108,7 +108,7 @@ Những API này cho phép bạn quản lý các bucket
 * **HEAD Bucket**: Kiểm tra sự tồn tại và quyền truy cập vào bucket.
   * Đường dẫn: `HEAD /<bucket-name>`
   * Ví dụ: `HEAD` [`https://hcm04.vstorage.vngcloud.vn/demobucket`](https://hcm04.vstorage.vngcloud.vn/demobucket)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location --head 'https://hcm04.vstorage.vngcloud.vn/demobucket' \
@@ -126,7 +126,7 @@ Quản lý quyền truy cập cho các bucket và đối tượng.
 * **GET Bucket ACL**: Lấy danh sách quyền kiểm soát truy cập (ACL) của bucket.
   * Đường dẫn: `GET /<bucket-name>?acl`
   * Ví dụ: `GET`[`https://hcm04.vstorage.vngcloud.vn/demobucket?acl`](https://hcm04.vstorage.vngcloud.vn/demobucket?acl)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location 'https://hcm04.vstorage.vngcloud.vn/demobucket?acl=null' \
@@ -140,7 +140,7 @@ Quản lý quyền truy cập cho các bucket và đối tượng.
 * **PUT Bucket ACL**: Thiết lập ACL cho bucket.
   * Đường dẫn: `PUT /<bucket-name>?acl`
   * Ví dụ: `PUT` [`https://hcm04.vstorage.vngcloud.vn/demobucket?acl`](https://hcm04.vstorage.vngcloud.vn/demobucket?acl)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location --request PUT 'https://hcm04.vstorage.vngcloud.vn/demobucket?acl=null' \
@@ -177,7 +177,7 @@ Quản lý quyền truy cập cho các bucket và đối tượng.
 * **GET Object ACL**: Lấy ACL của một đối tượng.
   * Đường dẫn: `GET /<bucket-name>/<object-key>?acl`
   * Ví dụ: `GET`[`https://hcm04.vstorage.vngcloud.vn/demobucket/videoplayback.mp4?acl`](https://hcm04.vstorage.vngcloud.vn/demobucket/videoplayback.mp4?acl)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location 'https://hcm04.vstorage.vngcloud.vn/demobucket/videoplayback.mp4?acl=null' \
@@ -191,7 +191,7 @@ Quản lý quyền truy cập cho các bucket và đối tượng.
 * **PUT Bucket Make Public:** Thiết lập Bucket Public
   * Đường dẫn: `GET /<bucket-name>/?publicAccessBlock`
   * Ví dụ: `PUT` [`https://hcm04.vstorage.vngcloud.vn/demobucket01/?publicAccessBlock`](https://hcm04.vstorage.vngcloud.vn/demobucket01/?publicAccessBlock)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location --request PUT 'https://hcm04.vstorage.vngcloud.vn/demobucket01/?publicAccessBlock=null' \
@@ -207,12 +207,12 @@ Quản lý quyền truy cập cho các bucket và đối tượng.
       </PublicAccessBlockConfiguration>'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **GET Bucket Make Public:** Lấy thông tin bucket public hay private.
   * Đường dẫn: `GET /<bucket-name>/?publicAccessBlock`
   * Ví dụ: `GET`[`https://hcm04.vstorage.vngcloud.vn/demobucket01/?publicAccessBlock`](https://hcm04.vstorage.vngcloud.vn/demobucket01/?publicAccessBlock)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location 'https://hcm04.vstorage.vngcloud.vn/demobucket01/?publicAccessBlock=null' \
@@ -230,7 +230,7 @@ Quản lý phiên bản của đối tượng trong bucket.
 * **PUT Bucket Versioning**: Bật hoặc tắt tính năng quản lý phiên bản cho bucket.
   * Đường dẫn: `PUT /<bucket-name>?versioning`
   * Ví dụ: `PUT`[`https://hcm04.vstorage.vngcloud.vn/demobucket?versioning`](https://hcm04.vstorage.vngcloud.vn/demobucket?versioning)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location --request PUT 'https://hcm04.vstorage.vngcloud.vn/demobucket?versioning=null' \
@@ -248,7 +248,7 @@ Quản lý phiên bản của đối tượng trong bucket.
 * **GET Bucket Versioning**: Kiểm tra trạng thái quản lý phiên bản của bucket.
   * Đường dẫn: `GET /<bucket-name>?versioning`
   * Ví dụ: `GET` [`https://hcm04.vstorage.vngcloud.vn/demobucket?versioning`](https://hcm04.vstorage.vngcloud.vn/demobucket?versioning)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location 'https://hcm04.vstorage.vngcloud.vn/demobucket?versioning=null' \
@@ -262,7 +262,7 @@ Quản lý phiên bản của đối tượng trong bucket.
 * **GET Object Versions**: Liệt kê các phiên bản của các đối tượng trong bucket.
   * Đường dẫn: `GET /<bucket-name>?versions`
   * Ví dụ: `GET` [`https://hcm04.vstorage.vngcloud.vn/demobucket/?versions`](https://hcm04.vstorage.vngcloud.vn/demobucket/?versions)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location 'https://hcm04.vstorage.vngcloud.vn/demobucket/?versions=null' \
@@ -273,14 +273,14 @@ Quản lý phiên bản của đối tượng trong bucket.
 
 <figure><img src="../../../.gitbook/assets/image (727).png" alt=""><figcaption></figcaption></figure>
 
-### **4. API Lifecycle**&#x20;
+### **4. API Lifecycle**
 
 Quản lý vòng đời cho bucket và đối tượng:
 
 * **PUT Bucket Lifecycle**: Khởi tạo lifecycle expiration cho một bucket.
   * Đường dẫn: `PUT /<bucket-name>?lifecycle`
   * Ví dụ: `PUT`[`https://hcm04.vstorage.vngcloud.vn/demobucket?lifecycle`](https://hcm04.vstorage.vngcloud.vn/demobucket?lifecycle)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location --request PUT 'https://hcm04.vstorage.vngcloud.vn/demobucket?lifecycle=null' \
@@ -307,7 +307,7 @@ Quản lý vòng đời cho bucket và đối tượng:
 * **GET Bucket Lifecycle**: Lấy thông tin quy tắc vòng đời của bucket.
   * Đường dẫn: `GET /<bucket-name>?lifecycle`
   * Ví dụ: `GET`[`https://hcm04.vstorage.vngcloud.vn/demobucket?lifecycle`](https://hcm04.vstorage.vngcloud.vn/demobucket?lifecycle)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location 'https://hcm04.vstorage.vngcloud.vn/demobucket?lifecycle=null' \
@@ -321,7 +321,7 @@ Quản lý vòng đời cho bucket và đối tượng:
 * **DELETE Bucket Lifecycle**: Xóa các quy tắc vòng đời đã thiết lập cho bucket.
   * Đường dẫn: `DELETE /<bucket-name>?lifecycle`
   * Ví dụ: `DELETE`[`https://hcm04.vstorage.vngcloud.vn/demobucket?lifecycle`](https://hcm04.vstorage.vngcloud.vn/demobucket?lifecycle)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location --request DELETE 'https://hcm04.vstorage.vngcloud.vn/demobucket?lifecycle=null' \
@@ -339,7 +339,7 @@ Quản lý truy cập và sử dụng S3 như một dịch vụ lưu trữ trang
 * **PUT Bucket Website**: Thiết lập bucket như một trang web tĩnh.
   * Đường dẫn: `PUT /<bucket-name>?cors`
   * Ví dụ: `PUT`[`https://hcm04.vstorage.vngcloud.vn/demobucket?cors`](https://hcm04.vstorage.vngcloud.vn/demobucket?cors)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location --request PUT 'https://hcm04.vstorage.vngcloud.vn/demobucket?cors=null' \
@@ -367,7 +367,7 @@ Quản lý truy cập và sử dụng S3 như một dịch vụ lưu trữ trang
 * **GET Bucket Website**: Lấy cấu hình trang web của bucket.
   * Đường dẫn: `GET /<bucket-name>?cors`
   * Ví dụ: `GET`[`https://hcm04.vstorage.vngcloud.vn/demobucket?cors`](https://hcm04.vstorage.vngcloud.vn/demobucket?cors)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location 'https://hcm04.vstorage.vngcloud.vn/demobucket?cors=null' \
@@ -381,7 +381,7 @@ Quản lý truy cập và sử dụng S3 như một dịch vụ lưu trữ trang
 * **DELETE Bucket Website**: Xóa cấu hình trang web của bucket.
   * Đường dẫn: `DELETE /<bucket-name>?website`
   * Ví dụ: `DELETE`[`https://hcm04.vstorage.vngcloud.vn/demobucket?cors`](https://hcm04.vstorage.vngcloud.vn/demobucket?cors)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location --request DELETE 'https://hcm04.vstorage.vngcloud.vn/demobucket?cors=null' \
@@ -408,7 +408,7 @@ Thiết lập Object Locked thông qua API.
 
     * Đường dẫn: `PUT /<bucket-name>?object-lock`
     * Ví dụ: `PUT` [`https://hcm04.vstorage.vngcloud.vn/demoobjectlocked?object-lock`](https://hcm04.vstorage.vngcloud.vn/demoobjectlocked?object-lock)
-    *   Hoặc Curl tạo qua lệnh:&#x20;
+    *   Hoặc Curl tạo qua lệnh:
 
         ```
         curl --location --request PUT 'https://hcm04.vstorage.vngcloud.vn/demoobjectlocked?object-lock=null' \
@@ -438,7 +438,7 @@ Thiết lập Object Locked thông qua API.
 * **PUT Object**: Được sử dụng để tải lên các đối tượng vào một bucket.
   * Đường dẫn: `PUT /<bucket-name>/<object-key>`
   * Ví dụ: `PUT`[`https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt`](https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location --request PUT 'https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt' \
@@ -455,7 +455,7 @@ Thiết lập Object Locked thông qua API.
 * **GET Object**: Lấy một đối tượng từ S3.
   * Đường dẫn: `GET /<bucket-name>/<object-key>`
   * Ví dụ: `GET` [`https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt`](https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location 'https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt' \
@@ -469,7 +469,7 @@ Thiết lập Object Locked thông qua API.
 * **DELETE Object**: Xóa một đối tượng khỏi S3.
   * Đường dẫn: `DELETE /<bucket-name>/<object-key>`
   * Ví dụ: `DELETE` [`https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt`](https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location --request DELETE 'https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt' \
@@ -483,7 +483,7 @@ Thiết lập Object Locked thông qua API.
 
 **Chú ý:**
 
-* Để xóa một object version, bạn cần thêm param versionId vào API này. Ví dụ, để xóa object test.txt có version-id = "z3-o0S5HEC6-XsjEjuHoRwoE-F6X1IF", bạn có thể curl theo lệnh:&#x20;
+* Để xóa một object version, bạn cần thêm param versionId vào API này. Ví dụ, để xóa object test.txt có version-id = "z3-o0S5HEC6-XsjEjuHoRwoE-F6X1IF", bạn có thể curl theo lệnh:
 
 ```
 curl --location --request DELETE 'https://hcm04.vstorage.vngcloud.vn/demobucket/test.txt?versionId=z3-o0S5HEC6-XsjEjuHoRwoE-F6X1IF' \
@@ -497,7 +497,7 @@ curl --location --request DELETE 'https://hcm04.vstorage.vngcloud.vn/demobucket/
 * **HEAD Object**: Truy vấn metadata của đối tượng mà không cần tải về nội dung.
   * Đường dẫn: `HEAD /<bucket-name>/<object-key>`
   * Ví dụ: `HEAD`[`https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt`](https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt)
-  *   Hoặc Curl qua lệnh:&#x20;
+  *   Hoặc Curl qua lệnh:
 
       ```
       curl --location --head 'https://hcm04.vstorage.vngcloud.vn/demobucket/demoobject.txt' \
@@ -511,7 +511,7 @@ curl --location --request DELETE 'https://hcm04.vstorage.vngcloud.vn/demobucket/
 * **COPY Object**: Sao chép một đối tượng từ một vị trí S3 này sang một vị trí khác.
   * Request: `PUT /<destination-bucket>/<destination-object-key>` với header `x-amz-copy-source`.
   * Ví dụ: `PUT` [`https://hcm04.vstorage.vngcloud.vn/demobucket01/demoobject.txt`](https://hcm04.vstorage.vngcloud.vn/demobucket01/demoobject.txt)
-  * Hoặc Curl qua lệnh:&#x20;
+  * Hoặc Curl qua lệnh:
 
 ```
 curl --location --request PUT 'https://hcm04.vstorage.vngcloud.vn/demobucket01/demoobject.txt' \

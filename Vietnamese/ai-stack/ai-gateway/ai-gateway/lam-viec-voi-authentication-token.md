@@ -13,11 +13,11 @@
 
 Mỗi token sẽ gắn liền với AI Gateway cụ thể và có thể được sử dụng để gọi API hoặc truy cập Gateway một cách an toàn.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## Quản lý danh sách token
 
@@ -27,7 +27,7 @@ Sau khi tạo, token sẽ xuất hiện trong danh sách với các thông tin:
 
 Chỉ các token đang ở trạng thái **ACTIVE** mới được sử dụng để xác thực API Gateway.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Xoá Authentication Token
 
