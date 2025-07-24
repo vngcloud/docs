@@ -38,7 +38,7 @@ description: VNG Cloud Endpoint là điểm kết nối giữa VPC với các d�
 
 ## Cách sử dụng <a href="#how-to-use" id="how-to-use"></a>
 
-**Đối với Endpoint được tạo mà VPC không có hỗ trợ DNS**
+### **1/ Đối với Endpoint được tạo mà VPC không có hỗ trợ DNS**
 
 Trong trường hợp VPC không được cấu hình hỗ trợ dịch vụ DNS, tùy chọn **“Bật tên DNS riêng” (Enable Private DNS)** sẽ **không khả dụng** khi tạo Endpoint. Điều này dẫn đến việc **phân giải tên miền tự động thông qua DNS sẽ không được thực hiện**, và người dùng sẽ **không thể truy cập Endpoint Service ngay sau khi tạo Endpoint**.
 
@@ -80,15 +80,34 @@ Thêm bản ghi host trên các máy chủ cần truy cập dịch vụ qua  End
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F1985221522-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7rE7M1L7GYcwQzNGd0aB%252Fuploads%252FedY062hUCSIow53Eb8lO%252Fimage.png%3Falt%3Dmedia%26token%3D2c362fdd-1732-4715-a0fd-2fd07c668c02&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=4c94202b&#x26;sv=2" alt=""><figcaption><p>Result</p></figcaption></figure>
 
-**Đối với Endpoint được tạo có bật tùy chọn "Bật tên DNS riêng"**
+### **2/ Đối với Endpoint được tạo mà VPC có hỗ trợ DNS**
 
-Khi sử dụng Endpoint Service, khách hàng **không cần cấu hình thủ công các bản ghi `host` trên máy chủ** để truy cập dịch vụ. Hệ thống DNS sẽ tự động thực hiện phân giải tên miền, đảm bảo việc truy cập được liền mạch và đơn giản hóa quá trình cấu hình.
+Khi sử dụng Private Endpoint, khách hàng có thể truy cập các dịch vụ của VNG Cloud thông qua mạng riêng thay vì qua Internet công cộng. Đặc biệt, nếu Private Endpoint được **hỗ trợ DNS**, việc truy cập trở nên đơn giản và liền mạch hơn nhờ khả năng **ghi đè bản ghi DNS (A record)**.
 
-Trong mỗi VPC, người dùng chỉ được phép tạo **một Endpoint duy nhất có bật tùy chọn "Tên DNS Riêng" (Enable Private DNS)** cho mỗi dịch vụ. Khi tùy chọn này được kích hoạt:
+#### Cơ chế hoạt động DNS với Private Endpoint
 
-* Hệ thống sẽ **tự động ghi đè bản ghi DNS công khai** của tên miền dịch vụ bằng địa chỉ IP nội bộ tương ứng trong VPC.
-* Nhờ đó, các truy vấn DNS từ các tài nguyên trong VPC đến tên miền dịch vụ sẽ được **định tuyến qua Endpoint nội bộ**, thay vì sử dụng địa chỉ IP công khai.
+_**a. Tên miền riêng cho từng Endpoint**_
 
-> ⚠️ **Lưu ý:** Cơ chế ghi đè DNS chỉ có hiệu lực **bên trong VPC** và **không ảnh hưởng đến các truy vấn DNS bên ngoài mạng nội bộ**.
+Khi một Private Endpoint được tạo ra với **hỗ trợ DNS**, hệ thống sẽ cấp phát cho endpoint đó **một tên miền riêng (unique domain)**. Tên miền này có thể được dùng để truy cập trực tiếp đến dịch vụ thông qua IP riêng của endpoint.
 
-Ngoài ra, trong trường hợp **không bật tùy chọn “Tên DNS Riêng”**, người dùng vẫn có thể tạo nhiều Endpoint cho cùng một dịch vụ. Mỗi Endpoint như vậy sẽ được gán một **tên miền truy cập riêng biệt**, do hệ thống tự động cấp phát, và có thể được sử dụng để truy cập dịch vụ thông qua địa chỉ cụ thể đó.
+Ví dụ: tên miền riêng cho dịch vụ vStorage HCM03
+
+> [https://enp-ccd7fa25-a617-4e87-a929-97a7c933c19c-vstorage-hcm03.vpce.vngcloud.vn](https://enp-ccd7fa25-a617-4e87-a929-97a7c933c19c-vstorage-hcm03.vpce.vngcloud.vn)
+
+_**b. Tùy chọn "Bật tên DNS riêng"**_
+
+Khi cấu hình Endpoint, nếu bật tùy chọn **"Bật tên DNS riêng"**, bạn có thêm một cách truy cập dịch vụ:
+
+* Có thể sử dụng **domain chính của dịch vụ** như thông thường.
+* Tuy nhiên, trong môi trường mạng có hỗ trợ DNS override (ví dụ: VPC có tích hợp DNS nội bộ), bản ghi **A record** của domain chính sẽ được **ghi đè (override)** và trỏ về **IP nội bộ của Private Endpoint** thay vì IP công cộng.
+* Trong mỗi VPC, người dùng chỉ được phép tạo **một Endpoint duy nhất có bật tùy chọn "Tên DNS Riêng" (Enable Private DNS)** cho mỗi dịch vụ.
+
+Ví dụ: tên miền chính truy cập dịch vụ vStorage HCM03
+
+> [https://hcm03.vstorage.vngcloud.vn](https://hcm03.vstorage.vngcloud.vn)
+
+Điều này giúp bạn **giữ nguyên tên miền dịch vụ** nhưng vẫn đảm bảo **toàn bộ lưu lượng đi qua đường riêng (private network)**.
+
+**Danh sách các dịch vụ và domain chính**
+
+<table><thead><tr><th width="231.5078125">Dịch vụ</th><th>Domain chính</th></tr></thead><tbody><tr><td>IAM</td><td>iamapis.vngcloud.vn</td></tr><tr><td>vMonitor</td><td>monitoring-agent.vngcloud.vn</td></tr><tr><td>vCR</td><td>vcr.vngcloud.vn</td></tr><tr><td></td><td>veeam-gw.vngcloud.vn</td></tr><tr><td>vServer</td><td>hcm3.api.vngcloud.vn</td></tr><tr><td>vStrorge (HCM03)</td><td>hcm03.vstorage.vngcloud.vn</td></tr><tr><td>vStorage (HCM04)</td><td>hcm04.vstorage.vngcloud.vn</td></tr></tbody></table>
