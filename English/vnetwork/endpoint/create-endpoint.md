@@ -14,7 +14,7 @@ description: >-
 * If **Private DNS is not enabled**, users must **manually add host entries** on each server in order to access the Endpoint Service.
 {% endhint %}
 
-#### **Endpoint Creation Process**
+## **Endpoint Creation Process**
 
 1. **Log in** to the VNG Cloud console at:\
    [https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list](https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list)
@@ -39,9 +39,9 @@ description: >-
 9. The system will begin provisioning the Endpoint.
    * Once creation is complete, the new Endpoint will appear in the **Endpoint list view**.
 
-### **How to Use the Endpoint**
+## **How to Use the Endpoint**
 
-#### **For Endpoints Created in VPCs Without DNS Support**
+### **For Endpoints Created in VPCs Without DNS Support**
 
 When the VPC does **not** support DNS, the **"Enable Private DNS"** option will be **unavailable** during Endpoint creation.\
 As a result, **DNS name resolution will not be applied automatically**, and users will **not be able to access the Endpoint Service** directly after creation.
@@ -88,16 +88,37 @@ Add host entries on servers that need to access the service via the Endpoint Ser
 
 <figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### **Using Endpoint Service with “Enable Private DNS” Enabled**
+### Private Endpoints in a VPC with DNS Support
 
-When an Endpoint is created with the **“Enable Private DNS”** option enabled, the DNS system automatically resolves the service domain name. This eliminates the need for users to manually configure host records on their servers and ensures seamless and simplified access to the service.
+When using a **Private Endpoint**, customers can access VNG Cloud services through a **private network** instead of the public internet. If DNS support is enabled, service access becomes seamless and more convenient, thanks to the ability to **override DNS A records**.
 
-**Key Behaviors:**
+#### DNS Mechanism with Private Endpoints
 
-* Within each VPC, only **one Endpoint with “Enable Private DNS” enabled** is allowed per specific service.
-* When this option is enabled:
-  * The system **automatically overrides the public DNS record** of the service domain with a corresponding **private IP address** within the VPC.
-  * All DNS queries from resources inside the VPC to the service domain will be **routed through the internal Endpoint**, rather than using the public IP.
+**a. Unique Domain per Endpoint**
 
-> ⚠️ **Note:**\
-> The DNS override mechanism is **only effective within the VPC**. It does **not affect DNS resolution from outside the internal network**.
+When a Private Endpoint is created with **DNS support enabled**, the system assigns a **unique domain name** to the endpoint. This domain can be used to access the corresponding service directly via the **private IP** of the endpoint.
+
+**Example**:\
+Private domain for the `vStorage HCM03` service:
+
+> [https://enp-ccd7fa25-a617-4e87-a929-97a7c933c19c-vstorage-hcm03.vpce.vngcloud.vn](https://enp-ccd7fa25-a617-4e87-a929-97a7c933c19c-vstorage-hcm03.vpce.vngcloud.vn)
+
+**b. “Enable Private DNS” Option**
+
+When configuring a Private Endpoint, enabling the **"Private DNS"** option allows an **alternative access method** using the **service's official domain**.
+
+In VPCs that support internal DNS resolution (DNS override), the **A record** of the service's domain will be **overridden** to point to the **private IP of the endpoint** instead of the public IP.
+
+> 🔒 This ensures all traffic remains on the private network while keeping the domain name unchanged.
+
+**Important constraint**:\
+Each VPC is allowed to have **only one endpoint with Private DNS enabled per service**.
+
+**Example**:\
+Default domain for accessing `vStorage HCM03` service:
+
+> [https://hcm03.vstorage.vngcloud.vn](https://hcm03.vstorage.vngcloud.vn)
+
+**Supported Services and Default Domains**
+
+<table><thead><tr><th width="181.10546875">Services</th><th>Default domain</th></tr></thead><tbody><tr><td>IAM</td><td>iamapis.vngcloud.vn</td></tr><tr><td>vMonitor</td><td>monitoring-agent.vngcloud.vn</td></tr><tr><td>vCR</td><td>vcr.vngcloud.vn</td></tr><tr><td>Veeam</td><td>veeam-gw.vngcloud.vn</td></tr><tr><td>vServer</td><td>hcm3.api.vngcloud.vn</td></tr><tr><td>vStorage (HCM03)</td><td>hcm03.vstorage.vngcloud.vn</td></tr><tr><td>vStorage (HCM04)</td><td>hcm04.vstorage.vngcloud.vn</td></tr></tbody></table>
