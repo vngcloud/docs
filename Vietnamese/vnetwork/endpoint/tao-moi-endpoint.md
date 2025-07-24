@@ -110,4 +110,5 @@ Ví dụ: tên miền chính truy cập dịch vụ vStorage HCM03
 
 **Danh sách các dịch vụ và domain chính**
 
-<table><thead><tr><th width="231.5078125">Dịch vụ</th><th>Domain chính</th></tr></thead><tbody><tr><td>IAM</td><td>iamapis.vngcloud.vn</td></tr><tr><td>vMonitor</td><td>monitoring-agent.vngcloud.vn</td></tr><tr><td>vCR</td><td>vcr.vngcloud.vn</td></tr><tr><td></td><td>veeam-gw.vngcloud.vn</td></tr><tr><td>vServer</td><td>hcm3.api.vngcloud.vn</td></tr><tr><td>vStrorge (HCM03)</td><td>hcm03.vstorage.vngcloud.vn</td></tr><tr><td>vStorage (HCM04)</td><td>hcm04.vstorage.vngcloud.vn</td></tr></tbody></table>
+<table><thead><tr><th width="231.5078125">Dịch vụ</th><th>Domain chính</th></tr></thead><tbody><tr><td>IAM</td><td>iamapis.vngcloud.vn</td></tr><tr><td>vMonitor</td><td>monitoring-agent.vngcloud.vn</td></tr><tr><td>vCR</td><td>vcr.vngcloud.vn</td></tr><tr><td>Veeam</td><td>veeam-gw.vngcloud.vn</td></tr><tr><td>vServer</td><td>hcm3.api.vngcloud.vn</td></tr><tr><td>vStrorge (HCM03)</td><td>hcm03.vstorage.vngcloud.vn</td></tr><tr><td>vStorage (HCM04)</td><td>hcm04.vstorage.vngcloud.vn</td></tr></tbody></table>
+
