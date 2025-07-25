@@ -25,9 +25,7 @@ Nhấn nút **“Create Notebook”** và điền các thông tin sau:
 
 #### **Bước 3: Mở và sử dụng Notebook**
 
-1.  Khi trạng thái chuyển sang **Active**, bạn có thể nhấn **“Connect”** để mở giao diện.&#x20;
-
-    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt="" width="206"><figcaption></figcaption></figure>
+1. Khi trạng thái chuyển sang **Active**, bạn có thể nhấn **“Connect”** để mở giao diện.&#x20;
 2. Viết code Python, import thư viện, truy cập dữ liệu từ blockstorage.
 
 #### **Bước 4: Lưu, chia sẻ và ngắt kết nối**
@@ -55,3 +53,9 @@ AI Platform hỗ trợ **tự động đồng bộ hai chiều dữ liệu** gi�
 * Dữ liệu được ghi đè lên Network Volume, tức là **mọi chỉnh sửa, file mới, hoặc xoá file trong quá trình làm việc sẽ được phản ánh ngược lại** vào Network Volume.
 
 > ⚠️ **Lưu ý:** Việc ghi đè sẽ thay thế nội dung cũ trên Network Volume bằng nội dung trong thư mục notebook. Hãy chắc chắn bạn không làm mất dữ liệu quan trọng.
+
+{% hint style="info" %}
+**Chú ý:**
+
+* Notebook instance không cung cấp Public IP để access vào container.&#x20;
+{% endhint %}
