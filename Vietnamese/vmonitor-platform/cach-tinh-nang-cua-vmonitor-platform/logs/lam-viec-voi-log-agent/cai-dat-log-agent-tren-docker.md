@@ -8,9 +8,8 @@ Trước khi thực hiện cài đặt agent trên các hệ điều hành mà c
 {% tab title="Filebeat" %}
 * Tải image
 
-| <pre><code>docker pull docker.elastic.co/beats/filebeat:8.7.0
-</code></pre> |
-| --------------------------------------------------------------------------- |
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker pull docker.elastic.co/beats/filebeat:8.7.0
+</code></pre></td></tr></tbody></table>
 
 ***
 
@@ -18,15 +17,14 @@ Trước khi thực hiện cài đặt agent trên các hệ điều hành mà c
 * Nếu sử dụng script chuẩn bị sẵn trong thư mục tải về, chạy lệnh:
   * Trong ví dụ thiết lập dưới dây chúng tôi sẽ mount `/var/log/app.log` vào agent cài bằng docker để đẩy log về hệ thống
 
-| <pre><code>docker compose up -d -f docker-compose.yml
-</code></pre> |
-| ------------------------------------------------------------------- |
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker compose up -d -f docker-compose.yml
+</code></pre></td></tr></tbody></table>
 
 Các file cấu hình dưới đều đã được chúng tôi chuẩn bị sẵn tại script khi tải certificate về, mô tả dưới đây giúp người đọc hình dung được nếu tạo manual sẽ thế nào.
 
 #### Cấu hình
 
-| <ul><li>File <code>docker-compose.yml</code></li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>version: "3"
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>File <code>docker-compose.yml</code></li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>version: "3"
 services:
   filebeat-agent-vmonitor:
     image: docker.elastic.co/beats/filebeat:8.7.0
@@ -75,9 +73,7 @@ logging.files:
   name: filebeat
   keepfiles: 7
   permissions: 0644
-</code></pre></td></tr></tbody></table><ul><li>Note : các biến $<code>BOOTSTRAP_SERVERS, $TOPIC</code> ở trên đã nằm sẵn trong <code>container.env</code> file tại thư mục certificate tải về.</li></ul> |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <pre><code>version: "3"
+</code></pre></td></tr></tbody></table><ul><li>Note : các biến $<code>BOOTSTRAP_SERVERS, $TOPIC</code> ở trên đã nằm sẵn trong <code>container.env</code> file tại thư mục certificate tải về.</li></ul></td></tr><tr><td><pre><code>version: "3"
 services:
   filebeat-agent-vmonitor:
     image: docker.elastic.co/beats/filebeat:8.7.0
@@ -101,8 +97,7 @@ services:
          limits:
            cpus: '1'
            memory: 2G
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| <pre><code>filebeat.inputs:
+</code></pre></td></tr><tr><td><pre><code>filebeat.inputs:
 - type: log
   paths:
     - /var/log/app.log
@@ -127,17 +122,16 @@ logging.files:
   name: filebeat
   keepfiles: 7
   permissions: 0644
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+</code></pre></td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Logstash" %}
 * Tải image
 
-| <pre><code><strong>docker pull docker.elastic.co/logstash/logstash-oss:8.6.2
-</strong></code></pre> |
-| --------------------------------------------------------------------------------------------------- |
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code><strong>docker pull docker.elastic.co/logstash/logstash-oss:8.6.2
+</strong></code></pre></td></tr></tbody></table>
 
-| <ul><li>File <code>docker-compose.yml</code></li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>version: "3"
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>File <code>docker-compose.yml</code></li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>version: "3"
 services:
   logstash-agent-vmonitor:
     image: docker.elastic.co/logstash/logstash-oss:8.6.2
@@ -180,9 +174,7 @@ output {
         ssl_endpoint_identification_algorithm => ""
       }
 }
-</code></pre></td></tr></tbody></table><ul><li>Note : các biến <code>$BOOTSTRAP_SERVERS, $TOPIC, $TRUTSTORE_PASS, $USER_PASS</code> ở trên đã nằm sẵn trong container.env file tại thư mục certificate tải về.</li></ul> |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <pre><code>version: "3"
+</code></pre></td></tr></tbody></table><ul><li>Note : các biến <code>$BOOTSTRAP_SERVERS, $TOPIC, $TRUTSTORE_PASS, $USER_PASS</code> ở trên đã nằm sẵn trong container.env file tại thư mục certificate tải về.</li></ul></td></tr><tr><td><pre><code>version: "3"
 services:
   logstash-agent-vmonitor:
     image: docker.elastic.co/logstash/logstash-oss:8.6.2
@@ -204,8 +196,7 @@ services:
          limits:
            cpus: '1'
            memory: 2G
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| <pre><code>input {
+</code></pre></td></tr><tr><td><pre><code>input {
     file {
         start_position => "beginning"
         path => [ "/var/log/app.log" ]
@@ -226,7 +217,7 @@ output {
         ssl_endpoint_identification_algorithm => ""
       }
 }
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+</code></pre></td></tr></tbody></table>
 {% endtab %}
 {% endtabs %}
 
@@ -238,45 +229,33 @@ output {
 {% tab title="Filebeat" %}
 
 
-| <ul><li>Stop</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker stop filebeat
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>Stop</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker stop filebeat
 </code></pre></td></tr></tbody></table><ul><li>Reload</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker kill --signal=HUP filebeat
 </code></pre></td></tr></tbody></table><ul><li>Restart</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker restart filebeat
 </code></pre></td></tr></tbody></table><ul><li>Observe</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker logs --tail 100 -f filebeat
 </code></pre></td></tr></tbody></table><ul><li>Uninstall</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker rm filebeat
-</code></pre></td></tr></tbody></table><p><br></p> |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <pre><code>docker stop filebeat
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| <pre><code>docker kill --signal=HUP filebeat
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| <pre><code>docker restart filebeat
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| <pre><code>docker logs --tail 100 -f filebeat
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| <pre><code>docker rm filebeat
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+</code></pre></td></tr></tbody></table><p><br></p></td></tr><tr><td><pre><code>docker stop filebeat
+</code></pre></td></tr><tr><td><pre><code>docker kill --signal=HUP filebeat
+</code></pre></td></tr><tr><td><pre><code>docker restart filebeat
+</code></pre></td></tr><tr><td><pre><code>docker logs --tail 100 -f filebeat
+</code></pre></td></tr><tr><td><pre><code>docker rm filebeat
+</code></pre></td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Logstash" %}
 
 
-| <ul><li>Stop</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker stop logstash
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>Stop</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker stop logstash
 </code></pre></td></tr></tbody></table><ul><li>Reload</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker kill --signal=HUP logstash
 </code></pre></td></tr></tbody></table><ul><li>Restart</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker restart logstash
 </code></pre></td></tr></tbody></table><ul><li>Observe</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker logs --tail 100 -f logstash
 </code></pre></td></tr></tbody></table><ul><li>Uninstall</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>docker rm logstash
-</code></pre></td></tr></tbody></table><p><br></p> |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <pre><code>docker stop logstash
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| <pre><code>docker kill --signal=HUP logstash
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| <pre><code>docker restart logstash
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| <pre><code>docker logs --tail 100 -f logstash
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| <pre><code>docker rm logstash
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+</code></pre></td></tr></tbody></table><p><br></p></td></tr><tr><td><pre><code>docker stop logstash
+</code></pre></td></tr><tr><td><pre><code>docker kill --signal=HUP logstash
+</code></pre></td></tr><tr><td><pre><code>docker restart logstash
+</code></pre></td></tr><tr><td><pre><code>docker logs --tail 100 -f logstash
+</code></pre></td></tr><tr><td><pre><code>docker rm logstash
+</code></pre></td></tr></tbody></table>
 {% endtab %}
 {% endtabs %}
 

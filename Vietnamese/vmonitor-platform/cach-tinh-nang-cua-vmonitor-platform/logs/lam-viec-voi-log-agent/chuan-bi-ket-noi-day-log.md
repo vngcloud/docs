@@ -14,14 +14,13 @@ Nếu các máy cần thu thập log có máy không thể mở kết nối tr�
 
 Do dữ liệu kênh truyền được **bảo mật** bằng chuẩn mã hóa SSL. Nếu máy đẩy log có khả năng truy vấn DNS public thì không vấn đề gì. Tuy nhiên nếu không (có thể gặp trong môi trường on-premise) thì bạn cần thêm phân giải domain theo bảng sau:
 
-| <pre><code># IP---------------| Domain
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code># IP---------------| Domain
 116.118.93.131      hcm01-loghub01.vngcloud.vn 
 116.118.93.132      hcm02-loghub01.vngcloud.vn 
 116.118.93.133      hcm03-loghub01.vngcloud.vn
 116.118.93.134      hcm04-loghub01.vngcloud.vn
 116.118.93.135      hcm05-loghub01.vngcloud.vn
 116.118.93.136      hcm06-loghub01.vngcloud.vn
-</code></pre> |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+</code></pre></td></tr></tbody></table>
 
 \
