@@ -71,7 +71,7 @@ docker pull nginx:latest
 * Với **Region HCM**:
 
 ```docker
-docker login vcr-han.vngcloud.vn -u <repository_user>
+docker login vcr.vngcloud.vn -u <repository_user>
 ```
 
 * Với **Region HAN**:
