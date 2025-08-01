@@ -776,7 +776,7 @@
     * [Cách tính phí](ai-stack/cach-tinh-phi.md)
     * [Model Registry](ai-stack/ai-platform/model-registry/README.md)
       * [Import Model Registry sử dụng Triton](ai-stack/ai-platform/model-registry/import-model-registry-su-dung-triton.md)
-      * [Import Model Registry sử dụng vLLM](ai-stack/ai-platform/model-registry/import-model-registry-su-dung-vllm.md)
+      * [Import Model Registry sử dụng vLLM](ai-stack/ai-platform/model-registry/import-vllm-model.md)
       * [Import Model Registry với custom container](ai-stack/ai-platform/model-registry/import-model-registry-voi-custom-container.md)
   * [AI Gateway](ai-stack/ai-gateway/README.md)
     * [AI Gateway là gì?](ai-stack/ai-gateway/ai-gateway-la-gi.md)

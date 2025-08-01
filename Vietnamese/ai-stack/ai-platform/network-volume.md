@@ -74,11 +74,11 @@ host_bucket = %(bucket)s.<hostname>
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Sử dung s3cmd với file s3cnf đã tạo có thể sử dung các action put, ls ... với bucket**
+Sử dụng s3cmd với file s3cnf đã tạo có thể sử dung các action put, ls ... với bucket
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### [Bước 3: Mount Network Volume vào Notebook](notebook-instance/#data-mount)
+### Bước 3: Mount Network Volume vào Notebook
 
 Gắn một Network Volume vào phiên bản notebook này. Điều này cho phép notebook của bạn truy cập dữ liệu và lưu trữ kết quả trong Network Volume.
 
