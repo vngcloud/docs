@@ -1,4 +1,4 @@
-# Import Triton Model
+# Import Model Registry sử dụng Triton
 
 ## Chuẩn bị Model
 
@@ -9,11 +9,11 @@
   * **PyTorch TorchScript** (`.pt`)
   * **TensorRT** (`.engine`)
   * **OpenVINO** (`.xml` và `.bin`)
-  * **Ensemble Model** (kết hợp nhiều mô hình lại với nhau) [<mark style="color:$primary;">Tham khảo</mark>](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/user_guide/ensemble_models.html)
+  * **Ensemble Model** (kết hợp nhiều mô hình lại với nhau) [Tham khảo](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/user_guide/ensemble_models.html)<mark style="color:$primary;">.</mark>
 
 ## Bước 1: Truy cập Model Registry
 
-* Đăng nhập với VNG Cloud account của bạn và truy cập tới <mark style="color:$primary;">Model Registry Dashboard</mark><mark style="color:$info;">.</mark>
+* Đăng nhập với VNG Cloud account của bạn và truy cập tới [Model Registry Dashboard](https://aiplatform.console.vngcloud.vn/registry)<mark style="color:$info;">.</mark>
 * Tìm và nhấn vào nút "Import a model registry" (Nhập một model registry).
 
 ## Bước 2: Truy cập Model Registry
