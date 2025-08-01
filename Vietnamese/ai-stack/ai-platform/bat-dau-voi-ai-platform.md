@@ -12,13 +12,13 @@
 * Truy cập AI Platform theo đường dẫn tại đây: [https://aiplatform.console.vngcloud.vn/](https://aiplatform.console.vngcloud.vn/)
 * Nhập **tài khoản và mật khẩu** của bạn tại bước đăng nhập.
 
-## [2. Khởi tạo Network Voume](https://docs.vngcloud.vn/vng-cloud-document/vn/ai-stack/ai-platform/network-volume)
+### [2. Khởi tạo Network Voume](https://docs.vngcloud.vn/vng-cloud-document/vn/ai-stack/ai-platform/network-volume)
 
-## [**3. Khởi Tạo Model Registry**](https://docs.vngcloud.vn/vng-cloud-document/vn/ai-stack/ai-platform/model-registry)
+### [**3. Khởi Tạo Model Registry**](https://docs.vngcloud.vn/vng-cloud-document/vn/ai-stack/ai-platform/model-registry)
 
-## [**4. Khởi tạo Notebook**](https://docs.vngcloud.vn/vng-cloud-document/vn/ai-stack/ai-platform/notebook-instance)
+### [**4. Khởi tạo Notebook**](https://docs.vngcloud.vn/vng-cloud-document/vn/ai-stack/ai-platform/notebook-instance)
 
-## [&#x35;**. Khởi Tạo Inference**](https://docs.vngcloud.vn/vng-cloud-document/vn/ai-stack/ai-platform/inference)
+### [&#x35;**. Khởi Tạo Inference**](https://docs.vngcloud.vn/vng-cloud-document/vn/ai-stack/ai-platform/inference)
 
 
 
