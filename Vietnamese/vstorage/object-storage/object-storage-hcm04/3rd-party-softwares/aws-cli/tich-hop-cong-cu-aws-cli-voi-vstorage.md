@@ -94,7 +94,7 @@ Nhập các thông tin:&#x20;
 * **Default region name:** `HCM04`
 * **Default output format:** `json`
 
-<figure><img src="../../../../../.gitbook/assets/image (1104).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1104) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Kiểm tra việc kết nối qua lệnh:&#x20;
 

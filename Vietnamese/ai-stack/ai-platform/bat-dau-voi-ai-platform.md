@@ -12,27 +12,6 @@
 * Truy cập AI Platform theo đường dẫn tại đây: [https://aiplatform.console.vngcloud.vn/](https://aiplatform.console.vngcloud.vn/)
 * Nhập **tài khoản và mật khẩu** của bạn tại bước đăng nhập.
 
-### **2. Khởi tạo Network Volume**
-
-Network Volume là nơi **lưu trữ dữ liệu, mô hình AI, và kết quả huấn luyện** để sử dụng trên AI Platform.
-
-#### **Tạo Network Volume**
-
-1.  Trong giao diện **AI Platform**, tại mục Storage management, chọn **Network Volume**.&#x20;
-
-    <figure><img src="../../.gitbook/assets/image (947).png" alt="" width="166"><figcaption></figcaption></figure>
-2. Nhấn **Create a network volume**.
-3. Điền thông tin cần thiết:
-   * **Tên Volume**: Ví dụ `ai-storage`
-   * **Region**: HCM.
-4. Nhấn **Create volume** để hoàn tất.
-
-Lưu ý: Dung lượng volume sẽ dựa vào usage sử dụng thực tế, người dùng không cần chỉ định dung lượng khi khởi tạo.
-
-#### **Tải lên Model lưu trữ tại Network Volume bằng S3**
-
-
-
 ### **3. Khởi Tạo Model Registry với Model từ Network Volume**
 
 Model Registry giúp bạn **quản lý phiên bản mô hình**, lưu trữ metadata và đảm bảo tính nhất quán khi triển khai.
@@ -54,58 +33,32 @@ Model Registry giúp bạn **quản lý phiên bản mô hình**, lưu trữ met
      * **Pre-built container**:
        * Hệ thống đã cài sẵn **runtime, thư viện AI** (PyTorch, TensorFlow, ONNX…).
        * Hỗ trợ **Inference Engine** như Triton, vLLM để chạy model. Phù hợp nếu model được huấn luyện bằng framework phổ biến.
-     * **Custom image**: Bạn có thể sử dụng **container riêng** để chạy mô hình AI. Cần đảm bảo ảnh container có đầy đủ thư viện, mã nguồn cần thiết.
-   * **Model framework:** Triton 24.12/Triton 24.12-vLLM
-     * **Triton 24.12** – NVIDIA Triton Inference Server (Phiên bản chuẩn).
-     * **Triton 24.12-vLLM** – NVIDIA Triton với hỗ trợ **vLLM** (tối ưu cho LLM - Large Language Model).
-   * **Data mount:** Chỉ định nơi chứa dữ liệu và model để **Inference Service** có thể truy cập.
-     * Hiện chỉ hỗ trợ **Network Volume**&#x20;
-   * **Network volume:** e.g.`ai-storage`
-     * Chỉ định Network Volume **chứa model AI** để hệ thống có thể truy cập khi chạy inference.
-     * Model phải được lưu trong thư mục `/models/your-model-folder/`.
+     * **Custom image**: Bạn có thể sử dụng **container riêng** để chạy mô hình AI. Cần đảm bảo image container có đầy đủ thư viện, mã nguồn cần thiết.
+   * **Model framework:** Triton 24.12 / vLLM 0.72
+     * **Triton 24.12** – NVIDIA giúp chạy và phục vụ nhiều loại mô hình AI nhanh, ổn định, hỗ trợ đa dạng phần cứng.
+     * **vLLM 0.72** – Framework tối ưu cho LLM (Large Language Model)
+   *   **Model source:** Chỉ định nơi chứa model AI mà bạn muốn sử dụng để triển khai **Inference Service**. Bạn có ba lựa chọn chính:.
+
+       * Network volume: Chọn tùy chọn này nếu model của bạn đã được lưu trữ trong một **Network Volume** trên VNG Cloud.
+       * AI Platform catalog: Chọn tùy chọn này để sử dụng các mô hình có sẵn trong danh mục của AI Platform.&#x20;
+       * Hugging Face: Chọn tùy chọn này nếu bạn muốn sử dụng mô hình trực tiếp từ Hugging Face. Điều này hữu ích nếu mô hình của bạn được lưu trữ công khai hoặc riêng tư trên nền tảng Hugging Face.
+
+       Mỗi lựa chọn sẽ yêu cầu bạn cung cấp các thông tin khác nhau.
+
+       **1. Network volume**
+
+       * Model repository: Nhập đường dẫn đến thư mục chứa model của bạn trong Network Volume.
+       * Network volume: Chọn Network Volume đã tạo trước đó từ danh sách thả xuống.
+
+       **2. AI Platform catalog**
+
+       * Model: Chọn mô hình bạn muốn sử dụng từ danh sách thả xuống. Danh sách này bao gồm các mô hình phổ biến như: deepseek-ai, google/gemma, meta-llama, Qwen, v.v.
+
+       **3. Hugging Face**
+
+       * Hugging Face model: Nhập URL của mô hình Hugging Face, ví dụ: `https://huggingface.co/organization/model-name`. Bạn có thể nhấp vào "Browser models" để tìm kiếm mô hình trực tiếp trên Hugging Face.
+       * Hugging Face token (optional): Nếu mô hình bạn muốn sử dụng là mô hình riêng tư hoặc yêu cầu truy cập được kiểm soát (gated model), bạn cần cung cấp Hugging Face token để xác thực quyền truy cập.
 4. Nhấn **Import** để lưu mô hình.
 
-### **4. Khởi Tạo Inference với Model Registry Vừa Import**
-
-Inference giúp bạn **triển khai mô hình AI** dưới dạng **API RESTful**, có thể được gọi từ ứng dụng web, mobile hoặc hệ thống backend.
-
-1. Endpoint Name
-
-* **Tên endpoint** là định danh cho inference service.
-* Đây là phần cuối trong URL API mà bạn sẽ gọi từ ứng dụng.
-* **Giới hạn độ dài:** **Tối thiểu 1 ký tự, tối đa 50 ký tự**.
-
-2\. Region (Khu Vực)
-
-* Chọn **khu vực** để triển khai inference service.
-* Hiện tại, VNG Cloud hỗ trợ **HCM (TP. Hồ Chí Minh)**.
-
-3\. Model
-
-* Chọn **mô hình AI** từ **Model Registry** để triển khai inference.
-* Chỉ các model đã được import vào **Model Registry** mới xuất hiện trong danh sách này.
-
-4\. Resource Configuration (Cấu Hình Tài Nguyên)
-
-* Cấu hình tài nguyên phần cứng (CPU, RAM, GPU) để chạy inference service.
-* Cấu hình này ảnh hưởng đến **hiệu suất và chi phí**.
-* Chọn **GPU nếu model cần tăng tốc xử lý**, đặc biệt với Computer Vision & LLM.
-* Nếu model **nhẹ (XGBoost, Scikit-Learn, ONNX)**, có thể chọn instance **chỉ CPU** để tiết kiệm chi phí.
-
-5\. Replica Configuration (Cấu Hình Replica - Tự Động Mở Rộng)
-
-* Xác định **số lượng bản sao (replica)** của inference service.
-* Hệ thống có thể **tự động scale up/down** theo nhu cầu.
-* **Minimum Replica Count**
-  * **Số lượng instance tối thiểu** chạy inference.
-  * Nếu giá trị là `1`, inference service **luôn có ít nhất 1 instance** hoạt động.
-* **Maximum Replica Count**
-  * **Số lượng instance tối đa** mà hệ thống có thể mở rộng.
-  * Nếu traffic tăng cao, hệ thống sẽ scale lên tối đa `10` instance.
-* **Auto-Scaling Settings (Cấu Hình Tự Động Mở Rộng)**
-  * Cấu hình **khi nào hệ thống cần scale up/down** dựa trên tài nguyên sử dụng.
-  * Một số **chỉ số quan trọng** có thể dùng để auto-scale:
-    * **CPU & RAM Usage (%)**: Nếu CPU & RAM vượt \[n]`%`, hệ thống scale lên.
-    * **GPU Utilization (%)**: Nếu GPU vượt \[n]`%`, scale thêm instance.
-    * **Response latency (milisecond)**: Nếu số latency vượt \[n]milisecond, scale lên.
+### [**4. Khởi Tạo Inference với Model Registry Vừa Import**](inference.md)
 

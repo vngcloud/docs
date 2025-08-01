@@ -46,7 +46,7 @@ endpoint = https://hcm04.vstorage.vngcloud.vn
 
 * Nếu gặp lỗi thiếu gói winfsp như hình dưới, bạn có thể tải thêm gói tại link này [https://github.com/billziss-gh/winfsp/releases/tag/v1.4.19049](https://github.com/billziss-gh/winfsp/releases/tag/v1.4.19049)
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Bạn không cần phải tạo sẵn đường dẫn local\_path trên máy local khi tiến hành mount.
 * Rclone không hỗ trợ mode chạy ngầm (background mode) nên bạn không được đóng cmd trong quá trình sử dụng.

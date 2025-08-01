@@ -24,8 +24,8 @@
 1. Truy cập vào tab **Network Volume** trong AI Platform theo đường dẫn: [https://aiplatform.console.vngcloud.vn/volume](https://aiplatform.console.vngcloud.vn/volume)
 2. Click **Create Network Volume**.
 3. Nhập thông tin:
-   * **Tên Volume**: Ví dụ `ai-storage`
-   * **Kích thước (GB)**: Chọn đủ lớn để chứa dataset hoặc model
+   * **Tên Volume**:  nhập tên hợp lệ theo quy tắc sau: Chỉ cho phép các chữ cái (a-z, A-Z, 0-9, '\_', '-', '.'). Dữ liệu đầu vào phải nằm trong khoảng từ 1 đến 50 ký tự. Ví dụ `ai-storage`
+   * **Kích thước (GB)**: sẽ được tự động điều chỉnh dựa trên việc sử dụng của bạn
    * **Region**: Ví dụ `HCM`
 4. Click **Tạo Volume**
 
@@ -72,21 +72,36 @@ host_bucket = %(bucket)s.<hostname>
 
 <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Sử dung s3cmd với file s3cnf đã tạo có thể sử dung các action put, ls ... với bucket**
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Bước 3: Mount Network Volume vào Notebook
+### [Bước 3: Mount Network Volume vào Notebook](notebook-instance/#data-mount)
 
-Khi khởi tạo Notebook:
+Gắn một Network Volume vào phiên bản notebook này. Điều này cho phép notebook của bạn truy cập dữ liệu và lưu trữ kết quả trong Network Volume.
+
+#### Khi khởi tạo Notebook:
 
 * Chọn phần **Data Mount**
-* Chỉ định:
-  * Network volume: `ai-storage`
-  * Mount folder name (Folder Sync): Tên thư mục trên notebook (VD: `/workspace/notebook-data`)
-  * Block storage size: Dung lượng đủ lớn để chứa toàn bộ dữ liệu từ network volume
+*   Chỉ định:
+
+    *   Network volume: `ai-storage`
+
+        * Chọn Network Volume trong danh sách đã tạo của bạn.
+        * Bạn có thể nhấp vào "Manage your volumes" để quản lý các Network Volume hiện có của mình.
+
+        <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+
+
+    * Mount folder name (Folder Sync):&#x20;
+      * _Tạo thư mục đích trong notebook để đồng bộ dữ liệu từ Network Volume_. Ví dụ: `/workspace/notebook-data`
+      * Lưu ý: Chỉ cho phép các ký tự chữ cái (a-z, A-Z, 0-9, '\_', '-', '+', '.'). Độ dài nhập liệu phải nhỏ hơn 256 ký tự.
+    * Block storage size:&#x20;
+      * Nhập dung lượng _dung lượng lưu trữ tạm (ephemeral block storage) để chứa_ OS và bản sao dữ liệu từ network volume.&#x20;
+      * Chọn kích thước đủ lớn so với dữ liệu cần dùng từ 20 đến 1000. (nếu chọn size blockstorage bé hơn hoặc bằng size network volume hiện tại thì quá trình tạo notebook sẽ bị lỗi (bạn có thể xoá và tạo lại notebook khác)
 
 <figure><img src="../../.gitbook/assets/image (1079).png" alt="" width="337"><figcaption></figcaption></figure>
 
@@ -97,7 +112,7 @@ Khi khởi tạo Notebook:
 
 ### Bước 4: Dùng Network Volume trong Inference
 
-#### **A. Import vào Model Registry**
+### **A. Import vào Model Registry**
 
 1. Tạo Model Registry mới
 2. Chọn:
@@ -109,7 +124,7 @@ Khi khởi tạo Notebook:
 
 > Sau khi import, model sẽ sẵn sàng để deploy.
 
-#### **B. Khởi tạo Inference với Network Volume**
+### **B. Khởi tạo Inference với Network Volume**
 
 Khi tạo Endpoint:
 

@@ -41,7 +41,7 @@ vDBaaS hỗ trợ tính năng tự động sao lưu theo ngày tại thời đi�
 * Cách 2: Thay đổi tại giao diện quản lý Database.
   *   Bạn truy cập màn hình quản lý Database, click chọn DB Instance muốn cấu hình. Sau đó, bạn click chọn **Edit DB Setting**.&#x20;
 
-      <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
   * Tại đây, bạn kéo xuống mục **Backup settings** và bạn có thể cấu hình các thông tin:
     * **Automatic daily backup:** bật tắt tính năng Automatic daily backup.
     * **Backup retention period:** xác định thời gian lưu trữ bản automatic backup. Nhằm giúp bạn tiết kiệm không gian lưu trữ, các bản automatic backup đã quá khoảng thời gian này sẽ bị xóa.
@@ -56,7 +56,7 @@ vDB MemoryStore hỗ trợ bạn **khôi phục (Restore)** lại một MDS Inst
 
 *   Nhấn chọn vào bản Backup mà bạn muốn khôi phục, chọn Action **Restore**. Quá trình Restore cũng gần tương tự như quá trình Tạo một MDS Instance mới.&#x20;
 
-    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * Tại màn hình khôi phục MDS Instance, bạn cũng có thể lựa chọn các thông tin về cấu hình MDS Instance mới tại các thông tin **Instance flavor, DB instance setting, Network & Security, DB Option và Backup setting.**
 * Sau khi chắc chắn các thông tin đã chính xác, bạn nhấp nút **Restore** ở góc phải trên.
 * Sau đó, bạn quay lại màn hình quản lý Database, sẽ thấy xuất hiện một MDS Instance đang được khởi tạo. Trạng trái của MDS Instance mới này cũng sẽ thay đổi từ **Building/Build** sang **Active** nếu thành công.

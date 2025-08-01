@@ -27,4 +27,4 @@ Sau khi tạo bucket, lúc này bạn có thể tải các object lên bucket. O
 2. Chọn các **object** mà bạn muốn tải xuống.
 3. Chọn biểu tượng action, sau đó chọn nút **Download**
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

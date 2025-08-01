@@ -94,7 +94,7 @@ Nhập các thông tin:&#x20;
 * **Default region name:** `HAN02`
 * **Default output format:** `json`
 
-<figure><img src="../../../../../.gitbook/assets/image (1103).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1103) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Kiểm tra việc kết nối qua lệnh:&#x20;
 

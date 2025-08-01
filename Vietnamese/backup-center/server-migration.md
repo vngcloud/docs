@@ -108,11 +108,11 @@ lsblk -o NAME,PTTYPE
     * 3.2.2 Giữ nguyên trạng thái hiện tại, sau đó bấm Set up migration để bắt đầu quá trình migrate.
     * 3.3.3 Sau khi hoàn tất Set up Migration, nhấn Start Server để bắt đầu Restore.
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Step 3.2</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Step 3.2</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt="" width="317"><figcaption><p>Step 3.2.1</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="317"><figcaption><p>Step 3.2.1</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>3.2.2</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>3.2.2</p></figcaption></figure>
 
 * Restore từ Backup
   *   Truy cập Destination VM&#x20;
@@ -158,4 +158,4 @@ Trong quá trình thử nghiệm thực tế với các cấu hình tối ưu t�
 
 * Thời gian di chuyển thực tế: Với các thông số kỹ thuật như trên, trung bình quá trình di chuyển dữ liệu **20GB chỉ mất khoảng 2–3 phút**, cho thấy sự hiệu quả rõ rệt so với các giải pháp truyền thống hoặc hạ tầng không được tối ưu.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
