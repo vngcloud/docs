@@ -104,6 +104,38 @@ kubectl get storageclasses
 kubectl describe storageclass nfs-csi
 ```
 
+* Kết quả mong muốn:&#x20;
+
+```bash
+# kubectl apply -f nfs-sc.yaml
+# kubectl get storageclasses
+# kubectl describe storageclass nfs-csi
+storageclass.storage.k8s.io/nfs-csi created
+NAME                                  PROVISIONER          RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
+nfs-csi                               nfs.csi.k8s.io       Delete          Immediate              false                  0s
+vngcloud-nvme-5000-delete (default)   bs.csi.vngcloud.vn   Delete          WaitForFirstConsumer   true                   6d
+vngcloud-ssd-3000-delete              bs.csi.vngcloud.vn   Delete          WaitForFirstConsumer   true                   6d
+Name:            nfs-csi
+IsDefaultClass:  No
+Annotations:     kubectl.kubernetes.io/last-applied-configuration={"apiVersion":"storage.k8s.io/v1","kind":"StorageClass","metadata":{"annotations":{},"name":"nfs-csi"},"mountOptions":["nfsvers=4","hard","timeo=600","retrans=3","rsize=1048576","wsize=1048576","resvport","async"],"parameters":{"server":"10.7.9.5","share":"/demo-nfs"},"provisioner":"nfs.csi.k8s.io","reclaimPolicy":"Delete","volumeBindingMode":"Immediate"}
+
+Provisioner:           nfs.csi.k8s.io
+Parameters:            server=10.7.9.5,share=/demo-nfs
+AllowVolumeExpansion:  <unset>
+MountOptions:
+  nfsvers=4
+  hard
+  timeo=600
+  retrans=3
+  rsize=1048576
+  wsize=1048576
+  resvport
+  async
+ReclaimPolicy:      Delete
+VolumeBindingMode:  Immediate
+Events:             <none>
+```
+
 ## Tạo và sử dụng PVC
 
 PersistentVolumeClaim (hay còn gọi là PVC) là **yêu cầu người dùng gửi ra** để xin một ổ đĩa lưu trữ có kích thước cụ thể. Khi bạn tạo một PVC, Kubernetes sẽ dùng SC để tạo hoặc chọn một ổ đĩa phù hợp.
@@ -135,6 +167,38 @@ spec:
 kubectl apply -f nfs-pvc.yaml
 kubectl get pvc
 kubectl describe pvc pvc-nfs-dynamic
+```
+
+* Kết quả mong muốn:&#x20;
+
+```bash
+# kubectl apply -f nfs-pvc.yaml
+# kubectl get pvc
+# kubectl describe pvc pvc-nfs-dynamic
+persistentvolumeclaim/pvc-nfs-dynamic created
+NAME              STATUS    VOLUME   CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
+pvc-nfs-dynamic   Pending                                      nfs-csi        <unset>                 0s
+Name:          pvc-nfs-dynamic
+Namespace:     default
+StorageClass:  nfs-csi
+Status:        Bound
+Volume:        pvc-6ed4097b-d8fb-41c8-ba9c-7147a652ff83
+Labels:        <none>
+Annotations:   pv.kubernetes.io/bind-completed: yes
+               pv.kubernetes.io/bound-by-controller: yes
+               volume.beta.kubernetes.io/storage-provisioner: nfs.csi.k8s.io
+               volume.kubernetes.io/storage-provisioner: nfs.csi.k8s.io
+Finalizers:    [kubernetes.io/pvc-protection]
+Capacity:      3Gi
+Access Modes:  RWX
+VolumeMode:    Filesystem
+Used By:       <none>
+Events:
+  Type    Reason                 Age   From                                                                                      Message
+  ----    ------                 ----  ----                                                                                      -------
+  Normal  ExternalProvisioning   0s    persistentvolume-controller                                                               Waiting for a volume to be created either by the external provisioner 'nfs.csi.k8s.io' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
+  Normal  Provisioning           0s    nfs.csi.k8s.io_vks-demo-cluster-nodegroup-001-4ba81_d071c067-6d99-4d90-87cf-01f89c32a2c4  External provisioner is provisioning volume for claim "default/pvc-nfs-dynamic"
+  Normal  ProvisioningSucceeded  0s    nfs.csi.k8s.io_vks-demo-cluster-nodegroup-001-4ba81_d071c067-6d99-4d90-87cf-01f89c32a2c4  Successfully provisioned volume pvc-6ed4097b-d8fb-41c8-ba9c-7147a652ff83
 ```
 
 ## Deploy ứng dụng sử dụng PVC
@@ -190,6 +254,14 @@ spec:
 kubectl apply -f nginx-deployment.yaml
 ```
 
+* Kết quả mong muốn:&#x20;
+
+```bash
+# kubectl apply -f nginx-deployment.yaml
+deployment.apps/nginx-nfs created
+service/nginx-nfs-service created
+```
+
 ***
 
 ## Kiểm tra NFS File Storage sau khi triển khai
@@ -200,11 +272,12 @@ kubectl apply -f nginx-deployment.yaml
 kubectl get pvc pvc-nfs-dynamic
 ```
 
-Kết quả mong đợi:
+* Kết quả mong đợi:
 
-```
-NAME             STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
-pvc-nfs-dynamic  Bound    pvc-12345678-90ab-cdef-1234-567890abcdef   3Gi        RWX            nfs-csi        5m
+```bash
+# kubectl get pvc pvc-nfs-dynamic
+NAME              STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
+pvc-nfs-dynamic   Bound    pvc-6ed4097b-d8fb-41c8-ba9c-7147a652ff83   3Gi        RWX            nfs-csi        <unset>                 109s
 ```
 
 * Bây giờ, bạn có thể Deploy Pod test để ghi dữ liệu bằng cách tạo file `test-pod.yaml` theo mầu:
@@ -235,18 +308,36 @@ kubectl apply -f test-pod.yaml
 kubectl get pods -w
 ```
 
-* Kiểm tra dữ liệu đã ghi qua lệnh:
+* Kết quả mong muốn:
+
+<pre class="language-bash"><code class="lang-bash"># kubectl apply -f test-pod.yaml
+<strong># kubectl get pods -w
+</strong>pod/test-nfs-writer configured
+NAME                         READY   STATUS    RESTARTS   AGE
+nginx-nfs-6df57b7f6b-gptfj   1/1     Running   0          3m25s
+nginx-nfs-6df57b7f6b-mbxx8   1/1     Running   0          3m25s
+nginx-nfs-6df57b7f6b-sgcxh   1/1     Running   0          3m25s
+nsenter-2fzs6c               1/1     Running   0          21h
+test-nfs-writer              1/1     Running   0          2m3s
+</code></pre>
+
+* Bạn cũng có thể kiểm tra dữ liệu đã ghi qua lệnh:
 
 ```bash
 kubectl exec -it test-nfs-writer -- ls -lh /mnt/data
 kubectl exec -it test-nfs-writer -- du -sh /mnt/data
 ```
 
-* Hoặc kiểm tra usage từ phía Kubernetes qua lệnh:
+* Kết quả mong muốn:
 
-```bash
-kubectl describe pvc pvc-nfs-dynamic | grep -i capacity
-```
+<pre><code># kubectl exec -it test-nfs-writer -- ls -lh /mnt/data
+<strong># kubectl exec -it test-nfs-writer -- du -sh /mnt/data
+</strong>total 1K
+-rw-r--r--    1 nobody   nobody       841 Aug 13 04:04 testfile
+1.5K    /mnt/data
+</code></pre>
+
+* Và cuối cùng, bạn có thể kiểm tra usage của File storage thông qua portal.
 
 ***
 
