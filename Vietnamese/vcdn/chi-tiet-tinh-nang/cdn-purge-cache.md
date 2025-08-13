@@ -42,7 +42,7 @@ Purge by ALL: sẽ xóa hết tất cả link (tất cả Cache của resources 
 
 * Trước khi Purge Cache các file đã được Cache ở CDN
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Thay đổi nội dung của các file, sau đó refresh trình duyệt. Do các file đã được Cache ở CDN nên khi thay đổi ở Origin các file ở CDN chưa được thay đổi theo.
 

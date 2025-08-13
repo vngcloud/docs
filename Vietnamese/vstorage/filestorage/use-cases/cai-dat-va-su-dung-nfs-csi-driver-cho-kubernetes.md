@@ -339,6 +339,8 @@ kubectl exec -it test-nfs-writer -- du -sh /mnt/data
 
 * Và cuối cùng, bạn có thể kiểm tra usage của File storage thông qua portal.
 
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ### Advanced Options
