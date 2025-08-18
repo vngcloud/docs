@@ -98,25 +98,25 @@ Purge by CONTAIN: Sẽ xóa hết các resource đang được Cache ở CDN có
 
 &#x20;
 
-<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 4.    Purge Cache By END.
 
 Purge by END: Sẽ xóa hết các resource đang được Cache ở vCDN kết thúc chuỗi ký tự nhập vào.
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Tương tự như Purge by ALL, trước khi Purge Cache các file đã được Cache ở CDN. Tiến hành Purge Cache: Chọn **Service** và **CDN** tương ứng và **Purge by END**. Tại URI nhập: `/*1.txt`  (xóa cache tất cả các file  \*1.txt đang được cache ở CDN).
 
-<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Sau khi Purge Cache các file `/*1.txt` ... Đã được gọi về Origin để lấy nội dung mới.
 
-<figure><img src="../../.gitbook/assets/image (15) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Các file `/purge_lab/text1.txt` ... Vẫn lấy nội dung từ Cache ở CDN.
 
-<figure><img src="../../.gitbook/assets/image (16) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 5.    Purge Cache By URI(s).
 

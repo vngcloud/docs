@@ -8,7 +8,7 @@
 
 Khi khởi tạo một Web Accelerator, để tối ưu hóa kích thước file, bạn có thể lựa chọn cấu hình tại mục **File Size Optimization**. Cụ thể:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   **Image Optimizer**: Tự động tối ưu dung lượng và kích thước ảnh trên website, hệ thống sẽ tự nén, resize và chuyển đổi định dạng ảnh dựa vào thiết bị đầu cuối. Cùng một ảnh gốc nếu thiết bị hỗ trợ ảnh Webp (chuẩn ảnh nén tốt nhất hiện nay được cung cấp bởi Google) thì sẽ được tự động chuyển đổi về Webp, nếu thiết bị cuối là thiết bị di động màn hình nhỏ thì ảnh sẽ được resize lại để phù hợp với thiết bị màn hình nhỏ mà không làm thay đổi chất lượng hình ảnh nhằm tăng tốc độ tải hình và tăng trải nghiệm người dùng.
 

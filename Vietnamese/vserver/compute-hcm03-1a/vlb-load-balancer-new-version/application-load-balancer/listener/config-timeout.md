@@ -32,4 +32,4 @@ Các bước thực hiện:
 
 **Bước 6:** Nhấn nút **Save** tại góc dưới bên phải của cửa sổ để hoàn tất việc cập nhật.
 
-<figure><img src="../../../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
