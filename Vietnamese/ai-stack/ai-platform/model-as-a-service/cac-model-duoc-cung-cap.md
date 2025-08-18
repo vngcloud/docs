@@ -2,9 +2,9 @@
 
 MaaS API cung cấp quyền truy cập với độ chính xác đầy đủ vào các họ mô hình Gemini, Anthropic, OpenAI... được liệt kê bên dưới.
 
-## Chi tiết Model
+## Danh sách mô hình
 
-GreenNode MaaS hỗ trợ nhiều loại mô hình khác nhau:
+MaaS hỗ trợ nhiều loại mô hình khác nhau:
 
 ### _Chat_
 
