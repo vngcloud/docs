@@ -2,7 +2,7 @@
 
 Tại trang quản lý yêu cầu, click **Open Ticket** để tạo ticket mới
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Giao diện nhập thông tin của yêu cầu:**
 

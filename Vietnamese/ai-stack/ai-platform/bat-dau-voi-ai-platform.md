@@ -20,5 +20,39 @@
 
 ### [&#x35;**. Khởi Tạo Inference**](https://docs.vngcloud.vn/vng-cloud-document/vn/ai-stack/ai-platform/inference)
 
+### 6. Quản lý API keys
 
+Truy cập vào phần [API Keys](https://aiplatform.console.vngcloud.vn/keys) trong AI Platform:
+
+<div align="center" data-full-width="false"><figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure></div>
+
+#### Tạo API Key
+
+**Lưu ý**: Bạn chỉ có thể tạo tối đa 2 API key cho tài khoản của mình.
+
+1. Nhấn vào nút "Tạo một API key" (Create an API key) .
+2. Một cửa sổ "Tạo API key" (Create API Key) sẽ hiện ra.&#x20;
+   * Tên API key: Nhập tên cho API key của bạn vào ô.
+   * (Tùy chọn) Đặt làm mặc định: Đánh dấu vào ô này nếu bạn muốn đặt API key mới làm key mặc định.
+3. Nhấn nút "Tạo API key"  để hoàn tất quá trình.
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+Sau khi hoàn thành các bước trên, API key của bạn sẽ được tạo và hiển thị trong danh sách
+
+Bạn có thể xem và sao chép API key bằng cách:
+
+1. Nhấn nào biểu tượng ︙ở cột "Hành động"
+2. Chọn "Xem API Key" (View API Key)
+
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+#### Xóa API Key
+
+Để xóa một API key hiện có, bạn hãy làm theo các bước sau:
+
+1. Nhấn nào biểu tượng ︙ở cột "Hành động"
+2. Chọn "Xoá API Key" (Delete API Key) và xác nhận lựa chọn của bạn trong hộp thoại bật lên.
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 

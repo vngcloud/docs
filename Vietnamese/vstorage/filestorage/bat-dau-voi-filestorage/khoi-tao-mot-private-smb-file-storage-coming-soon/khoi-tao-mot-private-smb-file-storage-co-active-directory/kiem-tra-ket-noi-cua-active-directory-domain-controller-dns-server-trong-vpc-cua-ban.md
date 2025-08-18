@@ -49,7 +49,7 @@ Bạn có thể kiểm tra việc kết nối này theo hướng dẫn sau:&#x20
 * Server này cần thuộc **cùng VPC và Subnet** với Windows Server của bạn.
 * Mở quyền ra ngoài internet trong **Security Group** cho server.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Bước 3: Tải và chuẩn bị script kiểm tra**
 

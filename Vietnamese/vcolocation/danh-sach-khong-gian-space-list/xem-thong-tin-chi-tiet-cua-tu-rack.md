@@ -2,11 +2,11 @@
 
 Bằng cách nhấn nút “**View detail**“ trên mỗi dòng của **Space list**, bạn có thể xem thông tin chi tiết của tủ rack.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Tại giao diện Rack detail, bạn có thể xem được các thông tin:** <a href="#xemthongtinchitietcuaturack-taigiaodienrackdetail-bancothexemduoccacthongtin" id="xemthongtinchitietcuaturack-taigiaodienrackdetail-bancothexemduoccacthongtin"></a>
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Basic information:** thông tin về định danh của tủ Rack.
 

@@ -193,4 +193,4 @@ Ngoài ra, để việc upgrade diễn ra thành công, bạn cũng cần xem x�
 
 Trong trường hợp bạn muốn chủ động kiểm soát việc nâng cấp Kubernetes Cluster (manually upgrade) và không muốn hệ thống tự động thực hiện nâng cấp, bạn có thể tắt tính năng **Regular Upgrade** bằng cách bỏ chọn **Enable Automatic Upgrade**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
