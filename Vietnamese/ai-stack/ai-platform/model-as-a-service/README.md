@@ -1,8 +1,8 @@
 ---
 description: >-
   AI Platform cung cấp dịch vụ Mô hình dưới dạng Dịch vụ (MaaS), cho phép các
-  nhà phát triển và doanh nghiệp dễ dàng tích hợp các khả năng AI mạnh mẽ vào
-  ứng dụng của họ.
+  nhà phát triển và doanh nghiệp dễ dàng tích hợp các mô hình AI mạnh mẽ vào ứng
+  dụng của họ.
 layout:
   width: default
   title:
@@ -61,13 +61,12 @@ Bạn có thể lọc các mô hình bằng các tùy chọn ở thanh bên trá
 
 Trước khi tích hợp vào ứng dụng của bạn, hãy khám phá các khả năng của mô hình trong Playground:
 
-* So sánh các mô hình khác nhau dựa trên độ trễ, độ chính xác và khả năng hỗ trợ phương thức.
+* So sánh các mô hình khác nhau dựa trên độ trễ, độ chính xác và khả năng hỗ trợ.
 * Gửi các yêu cầu thử nghiệm một cách tương tác và đánh giá kết quả đầu ra.
 * Tinh chỉnh các tham số để tìm ra mô hình hoạt động tốt nhất cho trường hợp sử dụng cụ thể.
 
-**Xây dựng với API của AI Platform MaaS**
+[**Xây dựng với API của AI Platform MaaS**](maas-api.md)
 
-Sau khi thử nghiệm trong Playground, bạn có thể truy cập các mô hình tương tự thông qua API của AI Platform MaaS:
+Sau khi thử nghiệm trong Playground, bạn có thể truy cập các mô hình thông qua AI Platform MaaS:
 
-* Sử dụng các giao diện quen thuộc để tích hợp liền mạch vào hệ thống của bạn.
 * Hỗ trợ cả yêu cầu đồng bộ và truyền phát (streaming) cho các ứng dụng thời gian thực.
