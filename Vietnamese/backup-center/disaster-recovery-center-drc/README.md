@@ -15,7 +15,7 @@ DRC giúp bạn đảm bảo tính liên tục của hoạt động kinh doanh b
 
 VNG Cloud DRC là một dịch vụ toàn diện được thiết kế để giúp bạn triển khai chiến lược DR một cách hiệu quả trên các tài nguyên cloud thuộc hệ sinh thái VNG Cloud. VNG Cloud DRC cung cấp các công cụ và tính năng cần thiết để sao lưu, sao chép và khôi phục dữ liệu và hệ thống của bạn một cách nhanh chóng và đáng tin cậy.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Các tính năng chính vDRC**
 

@@ -28,7 +28,7 @@
 
 **Chú ý: để record Livestream thành VOD phát về sau, bạn cần bật phương án Catchup như hình bên dưới và nhập thông tin nơi lưu trữ VOD.**
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 6:** Quay trở lại màn hình list **Channel** chúng ta sẽ thấy kênh vừa được tạo nằm trong danh sách. Click vào tên kênh để vào màn hình detail của kênh.
 

@@ -763,6 +763,7 @@
       * [Danh sách Volume Type tại zone HCM-1B](vks/tham-khao-them/danh-sach-volume-type-dang-ho-tro/danh-sach-volume-type-tai-zone-hcm-1b.md)
       * [Danh sách Volume Type tại zone HCM-1C](vks/tham-khao-them/danh-sach-volume-type-dang-ho-tro/danh-sach-volume-type-tai-zone-hcm-1c.md)
 * [AI Stack](ai-stack/README.md)
+  * [Sử dụng MaaS với AI Gateway](ai-stack/su-dung-maas-voi-ai-gateway.md)
   * [AI Infrastructure](ai-stack/ai-infrastructure/README.md)
     * [VKS](https://docs.vngcloud.vn/vng-cloud-document/vn/vks)
     * [OpenSearch Cluster Database](https://docs.vngcloud.vn/vng-cloud-document/vn/vdb/opensearch-cluster-database-ods/opensearch-cluster-database-la-gi)

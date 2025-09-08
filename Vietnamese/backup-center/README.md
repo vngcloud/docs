@@ -4,7 +4,7 @@
 
 VNG Cloud Backup Center cung cấp một nền tảng tập trung để quản lý và bảo vệ dữ liệu của bạn trên tất cả các dịch vụ đám mây của bạn. Giải pháp toàn diện này cung cấp các khả năng sao lưu và khôi phục dữ liệu mạnh mẽ, đảm bảo sự liên tục kinh doanh ngay cả trong trường hợp xảy ra sự cố bất ngờ
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Tính năng chính
 

@@ -8,7 +8,7 @@
 
 Hiện tại, vCDN đang hỗ trợ tùy chỉnh các tính năng cach&#x65;**:** cho phép khách hàng tùy chỉnh các chỉ số cache trên hệ thống và trên browser. Cụ thể:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (16) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Trong đó:    &#x20;
 

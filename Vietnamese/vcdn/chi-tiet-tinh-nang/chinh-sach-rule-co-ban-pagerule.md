@@ -8,11 +8,11 @@
 
 Khi khởi tạo Live Stream, Object Download,...bạn có thể khởi tạo Page Rule bằng cách chọn **Create Page Rule**. Một Rules sẽ được thực thi khi mà có URI request đúng với điều kiện đã được định nghĩa trong Rule.
 
-<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Sau khi bạn chọn Create Page Rule, màn hình hiển thị như sau:
 
-<figure><img src="../../.gitbook/assets/image (19) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 Trong đó:&#x20;
 
@@ -35,7 +35,7 @@ Cụ thể, vui lòng tham khảo bảng bên dưới.
 
 Mỗi Page Rule sẽ có các hành động action khác nhau được thể hiện ở bảng dưới đây. “Order” nhằm sắp xếp vị trí các rule, số càng nhỏ, ưu tiên thực hiện càng lớn.
 
-<figure><img src="../../.gitbook/assets/image (20) (1) (1).png" alt="" width="279"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20) (1) (1) (1).png" alt="" width="279"><figcaption></figcaption></figure>
 
 Sau khi tạo xong, chọn **Save changes** để cập nhật thay đổi.
 

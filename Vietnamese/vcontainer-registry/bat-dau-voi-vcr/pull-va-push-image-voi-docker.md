@@ -38,17 +38,17 @@ Thực hiện theo các bước sau để khởi tạo một Repository user:
 
 **Bước 2:** Chọn mục **Reposity** sau đó chọn vào **Repository** cần tạo **Repository User**, tiếp tục chọn mục **Repository User.** Tiếp tục chọn **Create a user**
 
-<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Thực hiện nhập **User name**, chọn **Expiration Date**, nhập **Description** nếu có sau đó chọn chọn **Permission** mong muốn tùy theo nhu cầu của bạn.
 
 **Bước 4:** Nhấn **"Create"** để hoàn tất quá trình khởi tạo.
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Sau khi user được tạo, bạn hãy nhớ lưu thông tin Secret key lại để sử dụng, ví dụ:
 
-<figure><img src="../../.gitbook/assets/image (11) (1).png" alt="" width="346"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1).png" alt="" width="346"><figcaption></figcaption></figure>
 
 ## Thực hiện PULL/ PUSH Image
 
