@@ -69,7 +69,7 @@ Sau khi bạn đã khởi tạo Service Account và Policy mong muốn, tiếp t
 Để phân quyền truy cập vào bucket/ object cho Service Account, bạn cần thực hiện phân quyền qua tính băng Bucket Policy, cụ thể các bước thực hiện như sau:
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn biểu tượng ![](<../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)tại project chứa bucket bạn muốn phân quyền.
+2. Chọn biểu tượng ![](<../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)tại project chứa bucket bạn muốn phân quyền.
 3. Tại mục **Identity and Access Management**, thực hiện sao chép thông tin **vStorage User ID** tại mục **List of Service Account**.
 4. Tiếp tục chọn **Bucket** bạn muốn thực hiện phân quyền cho Service Account.
 5. Chọn biểu tượng **Action** và chọn **Configure policy.**

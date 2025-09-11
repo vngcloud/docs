@@ -117,7 +117,7 @@ Sau khi bạn đã kết nối được vào Windows server, bạn cần đảm 
 * **Window Authentication: c**ấu hình quyền truy cập thông qua **Basic Authentication**
   * **Basic Authentication:** Nếu Windows server của bạn không có Active Directory hoặc bạn muốn quản lý quyền truy cập đơn giản thông qua username và password, bạn có thể sử dụng Basic authentication, chúng tôi hỗ trợ bạn tạo tối đa 10 tài khoản username/password để truy cập file storage.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Chọn **Create File Storage.**
 

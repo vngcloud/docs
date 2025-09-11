@@ -6,7 +6,7 @@
 2. **Metadata**: Thông tin mô tả đối tượng (ví dụ: tên, thời gian tạo, định dạng,...).
 3. **Object ID**: Một định danh duy nhất (ví dụ: hash, UUID) giúp truy cập object đó.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Trên VNG Cloud, chúng tôi đang cung cấp cho bạn đa dạng sự lựa chọn **Farm** để khởi tạo project và thực hiện lưu trữ object, cụ thể:
 

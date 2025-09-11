@@ -24,7 +24,7 @@
 
 Truy cập vào phần [API Keys](https://aiplatform.console.vngcloud.vn/keys) trong AI Platform:
 
-<div align="center" data-full-width="false"><figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="center" data-full-width="false"><figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 #### Tạo API Key
 
@@ -36,7 +36,7 @@ Truy cập vào phần [API Keys](https://aiplatform.console.vngcloud.vn/keys) t
    * (Tùy chọn) Đặt làm mặc định: Đánh dấu vào ô này nếu bạn muốn đặt API key mới làm key mặc định.
 3. Nhấn nút "Tạo API key"  để hoàn tất quá trình.
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Sau khi hoàn thành các bước trên, API key của bạn sẽ được tạo và hiển thị trong danh sách
 

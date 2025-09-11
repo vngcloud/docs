@@ -6,7 +6,7 @@ Bước 1: Truy cập vào vMonitor portal:  [https://vmonitor.console.vngcloud.
 
 Bước 2: Chọn filter resources Kafka
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Tại trang này ở mỗi Kafka bạn sẽ thấy các thông tin như sau:
 
@@ -19,9 +19,9 @@ Tại trang này ở mỗi Kafka bạn sẽ thấy các thông tin như sau:
 
 &#x20;Khi click vào tên của Kafka, bạn sẽ được chuyển sang trang Dashboard, và xem default dashboard của Kafka này (Tên dashboard của Kafka: vDB-Kafka-Project\_Name-{suffix Kafka ID})).
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**

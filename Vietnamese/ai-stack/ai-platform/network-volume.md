@@ -72,11 +72,11 @@ host_bucket = %(bucket)s.<hostname>
 
 <figure><img src="../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Sử dụng s3cmd với file s3cnf đã tạo có thể sử dung các action put, ls ... với bucket
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Bước 3: Mount Network Volume vào Notebook
 
@@ -92,7 +92,7 @@ Gắn một Network Volume vào phiên bản notebook này. Điều này cho ph�
         * Chọn Network Volume trong danh sách đã tạo của bạn.
         * Bạn có thể nhấp vào "Manage your volumes" để quản lý các Network Volume hiện có của mình.
 
-        <figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

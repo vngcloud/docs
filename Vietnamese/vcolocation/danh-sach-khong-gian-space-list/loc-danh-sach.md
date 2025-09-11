@@ -2,7 +2,7 @@
 
 Danh sách cho phép user lọc theo Site hoặc theo tình trạng sở hữu của tủ rack
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Dưới đây là chú thích về các loại tình trạng sở hữu của tủ rack:
 

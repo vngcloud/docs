@@ -18,7 +18,7 @@ Tại màn hình này, mỗi Kafka Project bạn sẽ thấy các cột thông t
 
 Để có thể xem Logs của Kafka Project bạn cần nhấn **enable** tại cột **Detailed Monitoring**, hệ thống sẽ hiển thị Popup và  **chọn Log Project** để chứa logs của Kafka Project này. Nếu bạn chưa có bất kì Log Project nào, bạn có thể nhấn "Create a log project" ở popup hoặc qua tab Quota & Usage để tạo Log Project trước.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Sau khi enable bạn sẽ thấy status của Kafka Project này chuyển thành **ACTIVE**, và bạn có thể truy cập vào Log Project vừa chọn để xem logs
 

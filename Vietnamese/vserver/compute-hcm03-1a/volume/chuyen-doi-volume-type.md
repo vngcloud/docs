@@ -45,7 +45,7 @@ Tham khảo hướng dẫn chi tiết bên dưới để thực hiện chuyển 
 * Hệ thống tạo một volume mới với cấu hình đã chọn ở bước 0.4, sau đó sao lưu dữ liệu từ volume hiện tại sang volume mới.&#x20;
 * Thời gian xử lý tùy vào kích thước và cấu hình từng volume. Ở bước này, người dùng vẫn có thể ghi dữ liệu trên volume mà không hề xảy ra downtime.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 2: Khởi tạo diff Migrate (Có downtime)**
 
@@ -53,21 +53,21 @@ _Mục đích của bước này là để sao lưu dữ liệu được ghi m�
 
 * 2.1: Sau khi hoàn tất bước 1, giao diện thực hiện sẽ chuyển sang bước 2/4, và yêu cầu người dùng tương tác. Tham khảo hình minh họa sau:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 2.2: Nhấn chọn **Yêu cầu hành động** để tiếp tục quá trình Migrate. Một cửa sổ Migrate volume sẽ hiển thị, nhấn **Tiếp tục** để xác nhận thực hiện. Quá trình này sẽ gây gián đoạn dịch vụ trên volume hiện tại, thời gian gián đoạn sẽ tùy thuộc vào độ lớn dữ liệu thay đổi trong khoảng thời gian thực hiện bước 1. Trạng thái Migrate sẽ hiển thị như sau:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 _<mark style="color:orange;">**Trường hợp volume đang được sử dụng trong máy ảo (server), người dùng buộc phải thực hiện Tắt Server để có thể nhấn chon Tiếp tục Migrate.**</mark>_&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3: Xác nhận sử dụng volume hoàn tất chuyển đổi**
 
 * 3.1: Sau khi hoàn tất bước 1, giao diện thực hiện sẽ chuyển sang bước 3/4, và yêu cầu người dùng tương tác. Tham khảo hình minh họa sau:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 3.2: Nhấn chọn **Yêu cầu hành động,** một cửa sổ Migrate volume sẽ hiển thị, cho phép người dùng xác nhận 2 hành động sau:
   * 3.2.1: **Xóa volume cũ**: Hệ thống sẽ hoàn tất cập nhật volume mới, các dịch vụ trên volume hoạt động lại như thường. Lưu ý rằng các bản snapshot liên quan tới volume trước khi cập nhật sẽ bị xóa vĩnh viễn.
@@ -80,7 +80,7 @@ Tham khảo hướng dẫn chi tiết bên dưới để thực hiện chuyển 
 **Bước 0: Cấu hình các thông tin cần chuyển đổi:**
 
 * 0.1: Truy cập danh sách volume từ portal [tại đây.](https://hcm-3.console.vngcloud.vn/vserver/block-store/volumes)
-* 0.2: Điều hướng tới volume cần chuyển đổi, nhấn chọn **biểu tượng ba chấm** tại cột **Hành động** ![](<../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+* 0.2: Điều hướng tới volume cần chuyển đổi, nhấn chọn **biểu tượng ba chấm** tại cột **Hành động** ![](<../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 * 0.3: Tiếp tục nhấn chọn **Migrate Volume**&#x20;
 * 0.4: Tại của sổ chọn thông tin để Migrate, chọn các thông tin sau:
   * Loại: mặc định chọn NVME
@@ -93,7 +93,7 @@ Tham khảo hướng dẫn chi tiết bên dưới để thực hiện chuyển 
 * Hệ thống tạo một volume mới với cấu hình đã chọn ở bước 0.4, sau đó sao lưu dữ liệu từ volume hiện tại sang volume mới.&#x20;
 * Thời gian xử lý tùy vào kích thước và cấu hình từng volume. Ở bước này, người dùng vẫn có thể ghi dữ liệu trên volume mà không hề xảy ra downtime.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 2: Khởi tạo diff Migrate (Có downtime)**
 
@@ -101,7 +101,7 @@ _Mục đích của bước này là để sao lưu dữ liệu được ghi m�
 
 * 2.1: Sau khi hoàn tất bước 1, giao diện thực hiện sẽ chuyển sang bước 2/4, và yêu cầu người dùng tương tác. Tham khảo hình minh họa sau:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 2.2: Nhấn chọn **Yêu cầu hành động** để tiếp tục quá trình Migrate. Một cửa sổ Migrate volume sẽ hiển thị, nhấn **Tiếp tục** để xác nhận thực hiện. Quá trình này sẽ gây gián đoạn dịch vụ trên volume hiện tại, thời gian gián đoạn sẽ tùy thuộc vào độ lớn dữ liệu thay đổi trong khoảng thời gian thực hiện bước 1. Trạng thái Migrate sẽ hiển thị như sau:&#x20;
 
