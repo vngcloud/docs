@@ -1,6 +1,6 @@
 # AI Gateway là gì?
 
-## Tổng quan
+## Tổng quan:
 
 **AI Gateway** là cổng kết nối tập trung giúp bạn tích hợp nhiều AI models (OpenAI, Google, Deepseek,...).Việc sử dụng AI Gateway giúp giảm độ phức tạp khi chuyển đổi model, hỗ trợ giám sát và quản lý, tối ưu chi phí, bảo mật dữ liệu.
 
