@@ -798,7 +798,7 @@
         * [Seft-host Models](ai-stack/ai-gateway/ai-gateway/lam-viec-voi-provider-va-model/seft-host-models.md)
       * [Gọi request tới AI Gateway](ai-stack/ai-gateway/ai-gateway/goi-request-toi-ai-gateway.md)
       * [Làm việc với Authentication Token](ai-stack/ai-gateway/ai-gateway/lam-viec-voi-authentication-token.md)
-      * [Caching (Coming soon)](ai-stack/ai-gateway/ai-gateway/caching-coming-soon.md)
+      * [Caching (Coming soon)...](ai-stack/ai-gateway/ai-gateway/caching-coming-soon.md)
       * [Guardrails (Coming soon)](ai-stack/ai-gateway/ai-gateway/guardrails-coming-soon.md)
       * [Rate limit (Coming soon)](ai-stack/ai-gateway/ai-gateway/rate-limit-coming-soon.md)
     * [Giám sát hoạt động](ai-stack/ai-gateway/giam-sat-hoat-dong.md)
