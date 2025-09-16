@@ -207,7 +207,7 @@ Quản lý quyền truy cập cho các bucket và đối tượng.
       </PublicAccessBlockConfiguration>'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **GET Bucket Make Public:** Lấy thông tin bucket public hay private.
   * Đường dẫn: `GET /<bucket-name>/?publicAccessBlock`

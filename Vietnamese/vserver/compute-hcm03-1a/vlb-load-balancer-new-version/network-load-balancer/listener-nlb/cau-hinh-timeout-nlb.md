@@ -24,7 +24,7 @@ Các bước thực hiện:
 
 **Bước 4:** Nhấn biểu tượng **Edit** tại **Listener** cần cấu hình **Timeout**.
 
-<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Một cửa sổ giao diện sẽ hiện ra, tìm đến phần **Advanced Configuration** ở phía dưới cùng của cửa sổ. Tại phần **Idle Timeout,** người dùng có thể cấu hình timeout cho 3 loại sau:
 
@@ -32,4 +32,4 @@ Các bước thực hiện:
 
 **Bước 6:** Nhấn nút **Save** tại góc dưới bên phải của cửa sổ để hoàn tất việc cập nhật.
 
-<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

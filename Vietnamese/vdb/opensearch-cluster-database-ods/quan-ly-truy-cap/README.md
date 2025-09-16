@@ -62,7 +62,7 @@ Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông t
 
 Sau khi bạn thực hiện 8 bước bên trên, policy cho opensearch cluster đã được khởi tạo. Tiếp theo, bạn hãy gán nó vào IAM User Account.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Liên kết tài khoản IAM User Account với policy tương ứng**
 

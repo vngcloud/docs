@@ -6,7 +6,7 @@
 
 **Bước 2:** Trong menu bên trái, chọn mục **AI Gateway**, sau đó nhấn vào nút **Create an AI Gateway**.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Tại màn hình **Tạo Gateway mới**, vui lòng điền đầy đủ các thông tin sau:
 
@@ -23,20 +23,20 @@
       * header\_name: Điền `Authorization`.
       * header\_value: Điền Api Key MaaS ( API Key trong hình được tạo ở [Portal ](https://aiplatform.console.vngcloud.vn/keys)AI Platform).
 
-      <figure><img src="../../../.gitbook/assets/image (13).png" alt="123"><figcaption></figcaption></figure>
+      <figure><img src="../../../.gitbook/assets/image (13) (1).png" alt="123"><figcaption></figcaption></figure>
 * **Gateway Config:** Mặc định, hệ thống sẽ bật tính năng **Authenticated Gateway.**
 
 **Bước 4**: Chọn Create an AI Gateway, AI Gateway của bạn sẽ được khởi tạo và sẵn sàng để sử dụng.
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5**: Sau khi AI Gateway được khởi tạo bạn cần [tạo Token](https://docs.vngcloud.vn/vng-cloud-document/vn/ai-stack/ai-gateway/ai-gateway/lam-viec-voi-authentication-token) để gọi API.
 
 **Bước 6**: Sau khi bạn tạo token, bạn có thể cấu hình rate limit cụ thể trên từng token theo nhu cầu cá nhân.
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 \
 **Bước 7**: Trong mục **Providers & Model**, tìm mô hình AI bạn đã cấu hình. Tại mô hình đó, nhấn vào biểu tượng **Curl command** để lấy câu lệnh mẫu.

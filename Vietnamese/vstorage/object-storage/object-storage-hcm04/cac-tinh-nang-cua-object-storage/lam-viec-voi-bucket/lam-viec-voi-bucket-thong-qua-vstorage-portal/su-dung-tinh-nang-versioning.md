@@ -14,11 +14,11 @@ Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá
 
 4\. Tại màn hình xác nhận bật versioning, vui lòng chọn **Enable versioning**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Sau khi bật versioning, mỗi khi tải lên một object với cùng tên, vStorage sẽ tạo một phiên bản mới cho object đó, và phiên bản cũ vẫn được lưu lại. Bạn có thể chọn Show versions để xem thông tin các version của object
 
-<figure><img src="../../../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**
