@@ -9,12 +9,11 @@ description: >-
 
 ## 1. Truy cập trang Model Caching
 
-Truy cập thông qua đường dẫn: [https://aigateway.console.vngcloud.vn/model-caching/list](https://aigateway.console.vngcloud.vn/model-caching/list)[\
-](https://aigateway.console.vngcloud.vn/model-caching/list)
+Truy cập thông qua đường dẫn: [https://aigateway.console.vngcloud.vn/model-caching/list](https://aigateway.console.vngcloud.vn/model-caching/list)
 
 ## 2. Tạo một cấu hình **Caching**&#x20;
 
-* Truy cập trang **Model Caching** và nhấn nút "Tạo một cấu hình Caching" .
+* Truy cập trang **Model Caching** và nhấn nút **"Tạo một cấu hình Caching"** .
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -97,6 +96,6 @@ Truy cập thông qua đường dẫn: [https://aigateway.console.vngcloud.vn/mo
 1. Trên danh sách hình, tại cột **Action** (**⋮**) chọn **Delete**.
 2. Xác nhận thao tác.
 
-📌 Lưu ý: Chỉ xoá được khi cấu hình không còn được gán cho bất kỳ model/gateway nào. nếu còn thì gỡ gán ( detach model/gateway)
+📌 Lưu ý: Chỉ xoá được khi cấu hình không còn được gán cho bất kỳ model/gateway nào. Nếu còn thì gỡ gán (detach model/gateway)
 
 <figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
