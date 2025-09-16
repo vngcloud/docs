@@ -22,13 +22,11 @@ description: >-
 1. **Limit by** (chọn một hoặc cả hai):
 
 * **Requests**: giới hạn theo số lượng request.
-  * Số lượng request tối đa trong khoảng thời gian định sẵn.
-  * Ví dụ: `1,000,000 Requests / 1 Minute`.
+  * Số lượng request tối đa (tối thiểu 1 Request - tối đa 1.000.00 Requests) . Trong khoảng thời gian định sẵn. (1 Phút, 1 Giờ, 1 Ngày, 1 Tháng)
 * **Tokens**: giới hạn theo số lượng token.
-* **Giới hạn Request**
-  *
-* **Giới hạn Token**
-  * Tổng số token input/output tối đa trong khoảng thời gian định sẵn.
-  * Ví dụ: `5,000,000,000 Tokens / 1 Minute`.
-* Nhấn **Tạo mã thông báo xác thực** để lưu cấu hình.
+  * Số lượng token tối đa (tôi thiểu 100 Token - tối đa 5.000.00.000 Token) . Trong khoảng thời gian định sẵn. (1 Phút, 1 Giờ, 1 Ngày, 1 Tháng)
+* Nhấn **Tạo mã thông báo xác thực** để lưu cấu hình.\
+
+
+<figure><img src="../../../.gitbook/assets/image (1129).png" alt=""><figcaption></figcaption></figure>
 
