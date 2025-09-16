@@ -9,7 +9,7 @@ description: >-
 
 ## 1. Truy cập tính năng giới hạn Rate
 
-1. Sau khi đã [ tạo Authentication Token](lam-viec-voi-authentication-token.md#tao-moi-authentication-token), tại danh sách các token chọn hình ở cột Hành Động để mở cấu hình giới hạn Rate
+1. Sau khi đã [ tạo Authentication Token](lam-viec-voi-authentication-token.md#tao-moi-authentication-token), tại danh sách các token chọn icon ở cột Hành Động như hình dưới để mở cấu hình giới hạn Rate
 
 <figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
