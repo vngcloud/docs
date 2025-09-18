@@ -24,15 +24,25 @@
 * **Model Source**: Chọn Network Volume chứa mô hình Triton của bạn. Với Triton, bạn cần đảm bảo model repository có format sau:
   * **Model Repository**: Chọn Network Volume chứa model Triton của bạn, bạn cần chuẩn bị [**model repository**](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/tutorials/Conceptual_Guide/Part_1-model_deployment/README.html#setting-up-the-model-repository) có cấu trúc như sau:
   * ```
-    network-volume
-    +-- model_repository
-        |
-        +-- resnet
-            |
-            +-- config.pbtxt
-            +-- 1
-                |
-                +-- model.onnx
+    # Example repository structure
+    network-volume/
+      <model-name>/
+        [config.pbtxt]
+        [<output-labels-file> ...]
+        <version>/
+          <model-definition-file>
+        <version>/
+          <model-definition-file>
+        ...
+      <model-name>/
+        [config.pbtxt]
+        [<output-labels-file> ...]
+        <version>/
+          <model-definition-file>
+        <version>/
+          <model-definition-file>
+        ...
+      ...
     ```
   * Hãy kiểm tra [Triton documentation for compatibility guidelines](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/user_guide/model_repository.html) để đảm bảo model của bạn tương thích và thực hiện các điều chỉnh cấu hình cần thiết nếu có.
 * Nhấn nút **"Import"** để hoàn thành quá trình.
