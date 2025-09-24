@@ -40,6 +40,8 @@ Truy cập vào phần [API Keys](https://aiplatform.console.vngcloud.vn/keys) t
 
 Sau khi hoàn thành các bước trên, API key của bạn sẽ được tạo và hiển thị trong danh sách
 
+#### Lấy API Key&#x20;
+
 Bạn có thể xem và sao chép API key bằng cách:
 
 1. Nhấn nào biểu tượng ︙ở cột "Hành động"
