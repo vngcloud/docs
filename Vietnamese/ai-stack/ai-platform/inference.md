@@ -47,12 +47,25 @@ Tính năng **Inference** giúp bạn triển khai mô hình AI thành một d�
 
 ## Hướng dẫn serving endpoint
 
-### **Bước 1: Lấy API Key**
+### [**Bước 1: Lấy API Key**](bat-dau-voi-ai-platform.md#lay-api-key)
 
 ### **Bước 2: Lấy Endpoint URL**
 
+**Có thể lấy Endpoint URL theo 2 cách:**
 
+1. nhấn nút **URL** tại danh sách các Inference.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+2. sao chép tại sang chi tiết của một Inference cụ thể.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Bước 3: Gọi Inference&#x20;
 
-Sau khi đã có **API Key và Endpoint URL** bạn có thể gọi API để thực hiện inference.
+Sau khi đã có **API Key và Endpoint URL** bạn có thể sử dụng inference.
+
+
+
+
+
