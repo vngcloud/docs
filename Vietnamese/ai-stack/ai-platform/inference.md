@@ -47,8 +47,6 @@ Tính năng **Inference** giúp bạn triển khai mô hình AI thành một d�
 
 ## Hướng dẫn serving endpoint
 
-Tài liệu này hướng dẫn bạn cách **gọi Inference Endpoint vừa tạo** thông qua việc xác thực bằng API Key
-
 ### **Bước 1: Lấy API Key**
 
 ### **Bước 2: Lấy Endpoint URL**

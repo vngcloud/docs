@@ -27,7 +27,8 @@ description: >-
 * **Tokens**: Đặt giới hạn cho các Token.
   * Tôi thiểu 100 Token - tối đa 5.000.00.000 Token . Trong thời gian (1 Phút, 1 Giờ, 1 Ngày, 1 Tháng).
   * Window time type: Fixed ( chưa hỗ trợ)
-* Nhấn **Tạo mã thông báo xác thực** để lưu cấu hình.\
+
+2 Nhấn **Lưu** cấu hình.\
 
 
 <figure><img src="../../../.gitbook/assets/image (1129).png" alt=""><figcaption></figcaption></figure>
