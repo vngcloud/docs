@@ -22,9 +22,11 @@ description: >-
 1. **Limit by** (chọn một hoặc cả hai):
 
 * **Requests**: giới hạn theo số lượng request.
-  * Số lượng request tối đa (tối thiểu 1 Request - tối đa 1.000.00 Requests) . Trong khoảng thời gian định sẵn. (1 Phút, 1 Giờ, 1 Ngày, 1 Tháng)
+  * Tối thiểu 1 Request - tối đa 1.000.00 Requests . Trong thời gian (1 Phút, 1 Giờ, 1 Ngày, 1 Tháng).
+  * Window time type: Fixed ( chưa hỗ trợ)
 * **Tokens**: giới hạn theo số lượng token.
-  * Số lượng token tối đa (tôi thiểu 100 Token - tối đa 5.000.00.000 Token) . Trong khoảng thời gian định sẵn. (1 Phút, 1 Giờ, 1 Ngày, 1 Tháng)
+  * Tôi thiểu 100 Token - tối đa 5.000.00.000 Token . Trong thời gian (1 Phút, 1 Giờ, 1 Ngày, 1 Tháng).
+  * Window time type: Fixed ( chưa hỗ trợ)
 * Nhấn **Tạo mã thông báo xác thực** để lưu cấu hình.\
 
 

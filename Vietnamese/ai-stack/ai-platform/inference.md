@@ -57,4 +57,4 @@ Tài liệu này hướng dẫn bạn cách **gọi Inference Endpoint vừa t�
 
 ### Bước 3: Gọi Inference&#x20;
 
-Sau khi đã có API Key, bạn có thể gọi API để thực hiện inference.
+Sau khi đã có **API Key và Endpoint URL** bạn có thể gọi API để thực hiện inference.

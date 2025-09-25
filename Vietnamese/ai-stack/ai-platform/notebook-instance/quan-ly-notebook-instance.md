@@ -61,7 +61,9 @@ Khi một phiên bản notebook không còn cần thiết, bạn có thể xóa 
 
 <figure><img src="../../../.gitbook/assets/image (1111).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1113).png" alt=""><figcaption><p>Một hộp thoại xác nhận sẽ xuất hiện để đảm bảo bạn không vô tình xóa nhầm phiên bản</p></figcaption></figure>
+* Một hộp thoại xác nhận sẽ xuất hiện để đảm bảo bạn không vô tình xóa nhầm phiên bản
+
+<figure><img src="../../../.gitbook/assets/image (1113).png" alt=""><figcaption></figcaption></figure>
 
 ## 4. Tăng dung lượng block storage
 

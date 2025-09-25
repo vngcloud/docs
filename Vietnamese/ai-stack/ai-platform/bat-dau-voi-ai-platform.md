@@ -14,6 +14,8 @@
 
 ### [2. Khởi tạo Network Voume](https://docs.vngcloud.vn/vng-cloud-document/vn/ai-stack/ai-platform/network-volume)
 
+### [2. Khởi tạo Network Volume](network-volume.md#buoc-1-khoi-tao-network-volume)
+
 ### [**3. Khởi Tạo Model Registry**](https://docs.vngcloud.vn/vng-cloud-document/vn/ai-stack/ai-platform/model-registry)
 
 ### [**4. Khởi tạo Notebook**](https://docs.vngcloud.vn/vng-cloud-document/vn/ai-stack/ai-platform/notebook-instance)
