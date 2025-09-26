@@ -37,7 +37,13 @@ Tính năng **Inference** giúp bạn triển khai mô hình AI thành một d�
 
 <table><thead><tr><th width="294">Tham số</th><th>Mô tả</th></tr></thead><tbody><tr><td><strong>Min Replica Count</strong></td><td>Số lượng instance tối thiểu luôn sẵn sàng</td></tr><tr><td><strong>Max Replica Count</strong></td><td>Số lượng instance tối đa khi autoscaling</td></tr><tr><td><strong>Auto-scaling Settings (Advanced configuration)</strong></td><td>Hệ thống tự tăng giảm theo các thông số threshold CPU, RAM, GPU Utilization, Response latency.</td></tr></tbody></table>
 
-#### **Bước 4: Tạo và khởi chạy Inference**
+#### **Bước 4: Chọn Security**
+
+* Nếu chọn Private Access, Endpoint URL sẽ xác thực bằng API Key (Cần tạo trước 1 API Key mới có thể tạo Inference)
+* Không chọn thì Endpoint URL co thể truy cập public (không cần API Key)\
+  ![](<../../.gitbook/assets/image (1131).png>)
+
+#### **Bước 5: Tạo và khởi chạy Inference**
 
 * Nhấn **"Create"** để bắt đầu triển khai.
 * Quá trình deploy mất vài phút.
@@ -47,23 +53,23 @@ Tính năng **Inference** giúp bạn triển khai mô hình AI thành một d�
 
 ## Hướng dẫn serving endpoint
 
-### [**Bước 1: Lấy API Key**](bat-dau-voi-ai-platform.md#lay-api-key)
+### [**Bước 1: Lấy API Key**](bat-dau-voi-ai-platform.md#lay-api-key) **(Nếu là Private Endpoint)**
 
 ### **Bước 2: Lấy Endpoint URL**
 
 **Có thể lấy Endpoint URL theo 2 cách:**
 
-1. nhấn nút **URL** tại danh sách các Inference.
+1. Nhấn nút **URL** tại danh sách các Inference.
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-2. sao chép tại sang chi tiết của một Inference cụ thể.
+2. Sao chép tại sang chi tiết của một Inference cụ thể.
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Bước 3: Gọi Inference&#x20;
 
-Sau khi đã có **API Key và Endpoint URL** bạn có thể sử dụng inference.
+Sau khi đã có **API Key và Endpoint URL** bạn có thể sử dụng Inference.
 
 
 
