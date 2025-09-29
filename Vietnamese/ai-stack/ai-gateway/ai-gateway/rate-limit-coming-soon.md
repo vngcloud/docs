@@ -23,10 +23,10 @@ description: >-
 
 * **Requests**: Đặt giới hạn cho các Request.
   * Tối thiểu 1 Request - tối đa 1.000.00 Requests . Trong thời gian (1 Phút, 1 Giờ, 1 Ngày, 1 Tháng).
-  * Window time type: Fixed (chưa hỗ trợ)
+  * Window time type: chỉ hỗ trợ Fixed.
 * **Tokens**: Đặt giới hạn cho các Token.
   * Tôi thiểu 100 Token - tối đa 5.000.00.000 Token . Trong thời gian (1 Phút, 1 Giờ, 1 Ngày, 1 Tháng).
-  * Window time type: Fixed (chưa hỗ trợ)
+  * Window time type: chỉ hỗ trợ Fixed.
 
 2 Nhấn **Lưu** cấu hình.\
 
