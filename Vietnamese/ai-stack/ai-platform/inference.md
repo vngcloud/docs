@@ -69,9 +69,15 @@ Tính năng **Inference** giúp bạn triển khai mô hình AI thành một d�
 
 ### Bước 3: Gọi Inference&#x20;
 
-Sau khi đã có **API Key và Endpoint URL** bạn có thể sử dụng Inference.
+Sau khi Inference Active và có **Endpoint URL. B**ạn có thể sử dụng Inference.
 
-
-
-
+* Private Inference
+  * ```
+    curl --location 'https://inference-aiplatform-hcm.api.vngcloud.vn/v1/<uid-inference>' ^
+    --header 'Authorization: Bearer <api-key>'
+    ```
+* Public Inference
+  * ```
+    curl --location 'https://inference-aiplatform-hcm.api.vngcloud.vn/v1/<uid-inference>'
+    ```
 
