@@ -41,7 +41,7 @@ Sau khi tạo bucket và tải lên object vào bucket đó. Bạn có thể xem
 * **Thông tin chung**: Cung cấp các thông tin chung của bucket như Name, Owner, Created date, Versioning, Encryption, Object Lock.
 * **ACLs**: Cung cấp thông tin quản lý truy cập Read/Write/Read+Write của một hay nhiều tài khoản Root đang có trên hệ thống được cấp phép truy cập trên bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại [Sử dụng tính năng ACLs](su-dung-tinh-nang-acls.md).
 * **CORS**: Cung cấp thông tin các đường dẫn được phép truy cập vào tài nguyên của bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại [Sử dụng tính năng CORS.](su-dung-tinh-nang-cors.md)
-* **Lifecycle**: Cung cấp thông tin các lifecycle được thiết lập cho bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại[ Sử dụng tính năng lifecycle.](su-dung-tinh-nang-lifecycle-1.md)
+* **Lifecycle**: Cung cấp thông tin các lifecycle được thiết lập cho bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại[ Sử dụng tính năng lifecycle.](broken-reference)
 * **Event notification**: Cung cấp thông tin các event notification được thiết lập cho bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại [Sử dụng tính năng Event notification.](su-dung-tinh-nang-event-notification.md)
 
 <figure><img src="../../../../../../.gitbook/assets/image (798).png" alt=""><figcaption></figcaption></figure>
