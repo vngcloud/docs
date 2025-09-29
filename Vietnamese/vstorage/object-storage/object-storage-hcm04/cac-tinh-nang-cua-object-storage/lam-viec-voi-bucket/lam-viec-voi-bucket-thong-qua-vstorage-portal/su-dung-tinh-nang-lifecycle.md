@@ -2,7 +2,14 @@
 
 ## **Tổng quan**
 
-**Lifecycle** trên vStorage là tính năng giúp bạn quản lý vòng đời của các object trong bucket, từ đó giúp tối ưu chi phí lưu trữ. Với Lifecycle, bạn có thể định cấu hình các quy tắc (rules) tự động xóa các object khi không còn cần thiết.&#x20;
+**Lifecycle** trên vStorage là tính năng giúp bạn quản lý vòng đời của object trong bucket, từ đó giúp tối ưu chi phí lưu trữ. Với Lifecycle, bạn có thể cấu hình các quy tắc (rules) theo 2 loại:
+
+* **Transition rule:** Rule hỗ trợ di chuyển object giữa các storage class. Bạn có thể thực hiện thiết lập một hoặc nhiều lifecycle rule di chuyển object nếu trong vòng N ngày mà object không được thay đổi.
+* **Expiration rule**: Rule hỗ trợ xóa các object theo điều kiện ràng buộc. Bạn có thể thực hiện thiết lập một hoặc nhiều lifecycle rule xóa object sau một khoảng thời gian nhất định kể từ ngày object tồn tại trên hệ thống vStorage.
+
+
+
+
 
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 
