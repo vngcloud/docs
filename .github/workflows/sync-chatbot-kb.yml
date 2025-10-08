@@ -44,5 +44,5 @@ jobs:
       - name: Call sync KB API
         if: ${{ success() }}
         run: |
-          curl --max-time 600 -X POST "${{ secrets.KB_API_URL }}/kb/sync-kb" \
+          curl --max-time 600 -X POST "${{ secrets.KB_API_URL }}/kb/sync-kb?category=documents" \
             -H "Content-Type: application/json" \
