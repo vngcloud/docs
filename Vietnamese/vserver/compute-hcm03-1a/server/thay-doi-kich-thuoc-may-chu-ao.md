@@ -10,6 +10,8 @@ Cần stop máy chủ trước khi thực hiện thay đổi cấu hình Flavor.
 
 Chi phí và cách tính toán theo cấu hình mới sẽ xuất hiện bên phải màn hình khi người dùng thực hiện thay đổi Flavor.
 
+Lưu ý: Không hỗ trợ thay đổi cấu hình GPU flavor qua cấu hình không có GPU và ngược lại.
+
 ### **Cách thực hiện** <a href="#thaydoikichthuocmaychuao-cachthuchien" id="thaydoikichthuocmaychuao-cachthuchien"></a>
 
 Trước khi thực hiện thay đổi flavor cho máy chủ ảo, bạn cần xác định trước flavor cũng như tìm hiểu các thuộc tính về nó như loại máy chủ, công nghệ CPU… Xem thêm tại [{Trang Flavor}](flavor.md).
