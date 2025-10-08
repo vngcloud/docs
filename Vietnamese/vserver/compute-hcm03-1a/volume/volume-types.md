@@ -28,3 +28,5 @@ Bảng sau mô tả thông tin IOPS chi tiết cho từng loại Volume Type:
 | 60000       | 60000       | SSD NVMe  | <p><br></p>                     |
 
 Bạn có thể thay đổi Volume Type bất cứ lúc nào.
+
+Đối với multi-attach volume, bạn chỉ có thể attach volume vào server có cùng Zone.
