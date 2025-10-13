@@ -74,13 +74,7 @@ POST /v1/clusters
   "releaseChannel": "STABLE",
   "fleetConfig": null
 }
-
 ```
-
-> 💡 **Gợi ý:**
->
-> * `secondarySubnets` cho phép triển khai **Multi-AZ** (ví dụ: HCM-1A, HCM-1B, HCM-1C) giúp tăng **High Availability**.
-> * Có thể thêm autoScaleConfig, labels, taints… nếu cần tùy chỉnh nâng cao.
 
 ***
 
