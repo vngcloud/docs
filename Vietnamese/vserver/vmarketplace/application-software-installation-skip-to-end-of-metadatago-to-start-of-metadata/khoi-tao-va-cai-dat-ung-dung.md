@@ -23,4 +23,4 @@ Sau khi máy ảo đã được cấp phát, hãy sửa đổi **Nhóm Bảo m�
 * Truy cập qua vServer Console (từ webportal), Theo mặc định, mật khẩu để trống.&#x20;
 * Cấu hình truy cập SSH/Web (từ webportal) Theo mặc định, bạn sẽ đăng nhập bằng mật khẩu trống, sau đó ứng dụng sẽ chuyển hướng bạn đến trang thay đổi mật khẩu, vui lòng thay đổi mật khẩu ngay lập tức (Để Mật khẩu cũ trống).&#x20;
 
-**Lưu ý: Ứng dụng Marketplace sẽ khởi tạo trong vài phút.**
+**Lưu ý: Ứng dụng Marketplace sẽ khởi tạo trong vài phút. Chưa hỗ trợ tính năng snapshot cho server tạo từ marketplace.**&#x20;
