@@ -10,8 +10,10 @@ Tham khảo hướng dẫn sau để tiến hành khởi tạo Repository của 
    * **Access level:** Khả năng truy cập đến Repository (Public / Private).&#x20;
      * Public: Là các Repository mà tại đó, người dùng có thể Pull/Push thoải mái mà không thông qua Repository User
      * Private: Là các Repository mà tại đó, người dùng phải cung cấp đinh danh (username/password) để có thể truy cập đến các Images được quản lý tại Repository này.
-   * **Quota Limit:** Dung lượng lưu trữ tối đa mà Repository có thể lưu trữ. Ví dụ bạn điền 20GB, thì Repository của bạn chỉ có thể lưu trữ tối đa 20GB dung lượng. Tuy nhiên, bạn hoàn toàn có thể thay đổi con số này tùy thuộc với nhu cầu tế sau khi khởi tạo.
+   * **Quota Limit:** Dung lượng lưu trữ tối đa mà Repository có thể lưu trữ. Ví dụ bạn điền 20GB, thì Repository của bạn chỉ có thể lưu trữ tối đa 20GB dung lượng. Tuy nhiên, bạn hoàn toàn có thể thay đổi con số này tùy thuộc với nhu cầu tế sau khi khởi tạo.&#x20;
 3. Nhấn **"Create"** để hoàn tất quá trình khởi tạo.
 4. Kiểm tra thông tin Repository vừa khởi tạo tại danh sách.
+
+Lưu ý: Đối với ví POC, bạn chỉ có thể tạo tối đa 1 repository.&#x20;
 
 \
