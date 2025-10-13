@@ -45,7 +45,12 @@ Bao gồm 6 loại record type và 3 loại routing policy
   * **SRV:** Xác định vị trí của các dịch vụ cụ thể.
   * **TXT:** Lưu trữ văn bản tùy ý.
   * **PTR:** Phân giải ngược (reverse DNS lookup), từ địa chỉ IP trở lại tên miền
-* vDNS cũng cung cấp các chính sách định tuyến linh hoạt:
-  * **Simple Routing:** Định tuyến đơn giản, trả về một tập hợp các tài nguyên theo thứ tự.
-  * **Geolocation Routing:** Định tuyến dựa trên vị trí địa lý của người dùng.
-  * **Weighted Routing (có Sticky Session):** Phân phối lưu lượng truy cập dựa trên trọng số, với khả năng duy trì phiên dính.
+*   vDNS cũng cung cấp các chính sách định tuyến linh hoạt:
+
+    * **Simple Routing:** Định tuyến đơn giản, trả về một tập hợp các tài nguyên theo thứ tự.
+    * **Geolocation Routing:** Định tuyến dựa trên vị trí địa lý của người dùng.
+    * **Weighted Routing (có Sticky Session):** Phân phối lưu lượng truy cập dựa trên trọng số, với khả năng duy trì phiên dính.
+
+
+
+(Hiện tại chưa hỗ trợ tích hợp vDNS với Terraform.)
