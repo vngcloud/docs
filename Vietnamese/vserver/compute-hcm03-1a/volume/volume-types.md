@@ -29,4 +29,4 @@ Bảng sau mô tả thông tin IOPS chi tiết cho từng loại Volume Type:
 
 Bạn có thể thay đổi Volume Type bất cứ lúc nào.
 
-Đối với multi-attach volume, bạn chỉ có thể attach volume vào server có cùng Zone.
+Đối với multi-attach volume, không hỗ trợ attach loại volume này vào các server nằm trên các Zone khác nhau.
