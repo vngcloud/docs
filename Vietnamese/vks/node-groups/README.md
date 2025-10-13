@@ -27,7 +27,9 @@ Node Group là một khái niệm quan trọng trong Kubernetes, dùng để qu�
   * **Image**: mặc định chúng tôi cung cấp 1 loại Image là Ubuntu with containerd.
   * **Instance type**: chọn loại phiên bản cấu hình phù hợp cho Worker node theo nhu cầu sử dụng của bạn.
 * Node Group Volume Setting: **Cấu hình Boot Volume** – Các thông số được cài đặt mặc định bởi hệ thống giúp tối ưu cho Cluster của bạn
-* Node Group Network Setting: Bạn có thể lựa chọn **Public Node Group** hoặc **Private Node Group** tùy theo nhu cầu sử dụng Cluster của bạn.
+* Node Group Network Setting:&#x20;
+  * Bạn có thể lựa chọn **Public Node Group** hoặc **Private Node Group** tùy theo nhu cầu sử dụng Cluster của bạn.
+  * Khi tạo Node Group, bạn có thể chọn **subnet thuộc các Availability Zone (AZ)** khác nhau (ví dụ: **HCM-1A, HCM-1B, HCM-1C**). Việc tạo nhiều node group thuộc các AZ khác nhau giúp phân bố worker nodes trên nhiều AZ, từ đó **tăng tính sẵn sàng (High Availability)** và **đảm bảo khả năng chịu lỗi (Fault Tolerance)** cho Cluster của bạn.
 * Node Group Security Setting: Bạn có thể chọn **Security Group và SSH Key** cho Node Group của bạn.
 * Node Group Metadata Setting: Bạn có thể nhập **Metadata** tương ứng cho Node Group.
 

@@ -30,7 +30,7 @@
     * **Kubernetes Version:** Phiên bản Kubernetes sẽ sử dụng cho Cluster của bạn. Chúng tôi khuyên bạn nên chọn phiên bản mới nhất, trừ khi bạn cần phiên bản cũ hơn.
     * **Description:** Nhập vào thông tin bạn muốn ghi chú cho Cluster nhằm tạo dấu hiệu riêng cho việc quản lý chúng dễ dàng hơn trong tương lai.
   * Network Setting:
-    * **Network type:** lựa chọn loại network mà bạn mong muốn sử dụng cho Cluster của bạn. Hiện tại, VKS cung câp cho bạn chọn sử dụng 1 trong 3 loại network Calico Overlay, Cilium  Overlay, Cilium VPC Native Routing.
+    * **Network type:** lựa chọn loại network mà bạn mong muốn sử dụng cho Cluster của bạn. Hiện tại, VKS cung cấp cho bạn chọn sử dụng 1 trong 3 loại network Calico Overlay, Cilium  Overlay, Cilium VPC Native Routing.
       * Đối với loại network Calico Overlay, Cilium Overlay, **Encapsulation Mode** được tự chọn mặc định bởi hệ thống và bạn không thể thay đổi chúng, tuy nhiên bạn có thể nhập lại thông số **Calico CIDR:** Dải mạng ảo mà các pod sẽ sử dụng (lưu ý IP phải là riêng tư và có thể chọn theo các tùy chọn sau (10.0.0.0 - 10.255.0.0 / 172.16.0.0 - 172.24.0.0 / 192.168.0.0)
       * Đối với loại network Cilium VPC Native Routing:
         * **Default Pod IP range** là dải địa chỉ IP thứ cấp được sử dụng cho các pod. Nó được gọi là **Secondary IP range** vì nó không trùng với dải IP chính của node (Primary IP range). Các pod trong Cluster sẽ được gán IP từ dải này. Bạn cần lựa chọn ít nhất 1 dải Secondary IP range đã tạo từ vServer.
@@ -46,14 +46,16 @@
     * **Auto Scaling:** Bật tính năng tự động mở rộng trong Cluster của bạn. Auto scaling giúp tự động điều chỉnh số lượng pod (đơn vị triển khai ứng dụng) dựa trên nhu cầu sử dụng thực tế, tránh tình trạng lãng phí tài nguyên khi nhu cầu thấp hoặc quá tải khi nhu cầu cao.
       * **Minimum node**: số node tối thiểu mà Cluster cần có.
       * **Maximum node**: số node tối đa mà Cluster có thể scale tới.
-    * Node Group upgrade stratetry: chiến lược upgrade Node Group. Khi bạn thiết lập **Node Group Upgrade Strategy** thông qua phương thức **Surge upgrade** cho một Node Group trong VKS, hệ thống VKS sẽ cập nhật tuần tự để nâng cấp các node, theo thứ tự không xác định[.](https://cloud.google.com/kubernetes-engine/docs/concepts/node-pool-upgrade-strategies.)&#x20;
+    * Node Group upgrade strategy: chiến lược upgrade Node Group. Khi bạn thiết lập **Node Group Upgrade Strategy** thông qua phương thức **Surge upgrade** cho một Node Group trong VKS, hệ thống VKS sẽ cập nhật tuần tự để nâng cấp các node, theo thứ tự không xác định[.](https://cloud.google.com/kubernetes-engine/docs/concepts/node-pool-upgrade-strategies.)&#x20;
       * **Max surge:** giới hạn số lượng node được nâng cấp đồng thời (số lượng node mới (surge) có thể được tạo ra cùng một lúc). Mặc định **Max surge = 1** - chỉ nâng cấp một node tại một thời điểm. với maxUnavailable
       * **Max unavailable**: giới hạn số lượng node không thể truy cập được trong quá trình nâng cấp (số lượng node hiện tại có thể bị gián đoạn cùng một lúc). Mặc định **Max unavailable = 0** - đảm bảo tất cả các node đều có thể truy cập được trong quá trình nâng cấp.
   * Node Group Setting:
     * **Image**: mặc định chúng tôi cung cấp 1 loại Image là Ubuntu with containerd.
     * **Instance type**: chọn loại phiên bản cấu hình phù hợp cho Worker node theo nhu cầu sử dụng của bạn.
   * Node Group Volume Setting: **Cấu hình Boot Volume** – Các thông số được cài đặt mặc định bởi hệ thống giúp tối ưu cho Cluster của bạn
-  * Node Group Network Setting: Bạn có thể lựa chọn **Public Node Group** hoặc **Private Node Group** tùy theo nhu cầu sử dụng Cluster của bạn.
+  * Node Group Network Setting:&#x20;
+    * Bạn có thể lựa chọn **Public Node Group** hoặc **Private Node Group** tùy theo nhu cầu sử dụng Cluster của bạn.
+    * Khi tạo Node Group, bạn có thể chọn **subnet thuộc các Availability Zone (AZ)** khác nhau (ví dụ: **HCM-1A, HCM-1B, HCM-1C**). Việc tạo nhiều node group thuộc các AZ khác nhau giúp phân bố worker nodes trên nhiều AZ, từ đó **tăng tính sẵn sàng (High Availability)** và **đảm bảo khả năng chịu lỗi (Fault Tolerance)** cho Cluster của bạn.
   * Node Group Security Setting: Bạn có thể chọn **Security Group và SSH Key** cho Node Group của bạn.
   * Node Group Metadata Setting: Bạn có thể nhập **Metadata** tương ứng cho Node Group.
 * Plugin
@@ -66,7 +68,7 @@
 
 ***
 
-### Tải xuống tệp tin Kube Config <a href="#clusters-taixuongteptinkubeconfig" id="clusters-taixuongteptinkubeconfig"></a>
+### Tải xuống tệp tin Kubeconfig <a href="#clusters-taixuongteptinkubeconfig" id="clusters-taixuongteptinkubeconfig"></a>
 
 **Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
 

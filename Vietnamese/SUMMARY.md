@@ -709,6 +709,7 @@
       * [Tự động quản lý Certificate trong VKS với Nginx Ingress Controller, Cert-Manager, và Let's Encrypt](vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer7/tu-dong-quan-ly-certificate-trong-vks-voi-nginx-ingress-controller-cert-manager-va-lets-encrypt.md)
     * [Integrate with Container Storage Interface (CSI)](vks/bat-dau-voi-vks/integrate-with-container-storage-interface-csi.md)
     * [Khởi tạo một Cluster thông qua ví POC](vks/bat-dau-voi-vks/khoi-tao-mot-cluster-thong-qua-vi-poc.md)
+    * [Sử dụng API để khởi tạo Cluster và Node Group](vks/bat-dau-voi-vks/su-dung-api-de-khoi-tao-cluster-va-node-group.md)
     * [Sử dụng Terraform để khởi tạo Cluster và Node Group](vks/bat-dau-voi-vks/su-dung-terraform-de-khoi-tao-cluster-va-node-group.md)
     * [Khởi tạo và làm việc với NVIDIA GPU Node Group](vks/bat-dau-voi-vks/lam-viec-voi-nvidia-gpu-nodegroups.md)
   * [Clusters](vks/clusters/README.md)
