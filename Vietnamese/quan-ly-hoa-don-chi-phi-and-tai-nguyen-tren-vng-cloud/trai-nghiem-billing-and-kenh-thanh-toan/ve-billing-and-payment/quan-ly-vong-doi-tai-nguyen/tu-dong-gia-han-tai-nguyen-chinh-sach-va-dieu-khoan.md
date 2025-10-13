@@ -5,7 +5,7 @@ Sử dụng tài liệu này để hiểu thêm về tính năng tự động gi
 #### 1. Chính sách tự động gia hạn tài nguyên chỉ áp dụng đối với: <a href="#tudonggiahantainguyen-chinhsachvadieukhoan-1.chinhsachtudonggiahantainguyenchiapdungdoivoi" id="tudonggiahantainguyen-chinhsachvadieukhoan-1.chinhsachtudonggiahantainguyenchiapdungdoivoi"></a>
 
 * **Đối tượng:** Người dùng trả trước
-* **Tài nguyên**: Tất cả các tài nguyên cho phép tự động gia hạn và đang trong thời gian sử dụng
+* **Tài nguyên**: Tất cả các tài nguyên cho phép tự động gia hạn và đang trong thời gian sử dụng.
 * **Nguồn tiền**: VNG Cloud Credit
 
 #### **2. Hướng dẫn bật/tắt tính năng "Tự động gia hạn"** <a href="#tudonggiahantainguyen-chinhsachvadieukhoan-2.huongdanbat-tattinhnang-tudonggiahan" id="tudonggiahantainguyen-chinhsachvadieukhoan-2.huongdanbat-tattinhnang-tudonggiahan"></a>
@@ -48,7 +48,7 @@ Tự động gia hạn tài nguyên là **tính năng của hệ thống**, giú
 
 **Điều khoản áp dụng dành cho tính năng "Tự động gia hạn" trên VNG Cloud như sau:**
 
-* Tài nguyên được mặc định **gia hạn thêm 1 tháng**, kể từ thời điểm kết thúc
+* Tài nguyên được mặc định **gia hạn thêm 1 tháng**, kể từ thời điểm kết thúc.  (Hệ thống sẽ thực hiện gia hạn tài nguyên vào 8:00 AM)
 * Người dùng cần chuẩn bị đủ số dư credit khả dụng theo như thông báo để hệ thống có thể tiến hành gia hạn
 * Hệ thống chính thức thực hiện gia hạn vào các mốc thời gian: trước 7 ngày, trước 4 ngày, trước 1 ngày và ngay ngày hết hạn của tài nguyên. **Lưu ý, tính năng auto-renew chỉ áp dụng cho tài nguyên đã được Khách hàng lựa chọn cho phép tự động gia hạn và có trạng thái đang hoạt động (active). Trường hợp tài nguyên đã hết hạn hoặc bị xóa trước các mốc thời gian hệ thống thực hiện thì sẽ không tự động gia hạn.**
   * Cách tính giá khi hệ thống tự động gia hạn không khác biệt so với việc người dùng chủ động gia hạn tài nguyên, tham khảo thêm [tại đây](gia-han-tai-nguyen.md)
