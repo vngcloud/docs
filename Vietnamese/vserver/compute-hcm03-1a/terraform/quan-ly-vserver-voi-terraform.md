@@ -131,3 +131,7 @@ và chọn **YES** để thực hiện việc khởi tạo vServer thông qua Te
 **Bước 8**: Bạn có thể lên [Portal ](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)để xem Server đang được khởi tạo từ Terraform:
 
 <figure><img src="../../../.gitbook/assets/terraform_vserver_10.png" alt=""><figcaption></figcaption></figure>
+
+
+
+(Bạn có thể sử dụng Terraform để tạo và quản lý tài nguyên đối với các loại tài khoản POC, tài khoản trả trước, tài khoản trả sau).
