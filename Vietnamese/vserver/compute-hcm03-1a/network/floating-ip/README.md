@@ -32,6 +32,7 @@ Floating IP được tạo kèm khi khởi tạo Server, tuy nhiên bạn có th
 
 * Nếu bản sao vServer của bạn không cần FIP nữa, bạn có thể tách FIP khỏi bản sao trong [Trang Server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server).
 * Bạn cũng có thể tách FIP khỏi phiên bản vServer trên [Trang Floating IP](https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip).
+* Đối với windows server có sử dụng license do VNG Cloud cung cấp, bạn không thể detach floating IP ra khỏi server để đảm bảo việc gia hạn license không bị gián đoạn.
 
 
 
