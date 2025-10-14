@@ -48,4 +48,28 @@ Trong đó
 
 **Interval**: khoảng thời gian mỗi lần hệ thống Alarm đánh giá dữ liệu&#x20;
 
-Ví dụ ở đây chúng ta cần Alarm trên metric cpu.usage\_idle của host appserver, cứ 5p Alarm sẽ chạy đánh giá một lần, nếu CPU usage idle của host: appserver < 20% (ngay cả khi không nhận được value của metric cpu.usage\_idle do host bị stopped), hệ thống sẽ chuyển trạng thái và gửi cảnh báo.&#x20;
+Ví dụ ở đây chúng ta cần Alarm trên metric cpu.usage\_idle của host appserver, cứ 5p Alarm sẽ chạy đánh giá một lần, nếu CPU usage idle của host: appserver < 20%, hệ thống sẽ chuyển trạng thái và gửi cảnh báo.&#x20;
+
+Chuẩn 👌 — trong vMonitor, trạng thái đó được hiển thị là **Undetermined**.\
+Vậy đoạn cuối mình chỉnh lại gọn và chuẩn như sau nhé:
+
+***
+
+### Cơ chế hoạt động của Metric Alarm
+
+Khi bạn tạo Metric Alarm, hệ thống vMonitor sẽ định kỳ đánh giá dữ liệu metric theo **Interval** đã cấu hình.\
+Tại mỗi chu kỳ:
+
+1. vMonitor lấy dữ liệu metric mới nhất từ agent hoặc dịch vụ nguồn.
+2. Thực hiện phép thống kê (**Statistics**) theo lựa chọn (avg, max, min...).
+3. So sánh giá trị với **Threshold value** theo **Alarm condition**.
+4. Nếu điều kiện vi phạm liên tiếp đủ số lần **Check times**, Alarm chuyển sang trạng thái **ALARM** và gửi cảnh báo.
+5. Nếu giá trị không vi phạm, Alarm trở về trạng thái **OK**.
+
+> 💡 **Lưu ý:**
+>
+> Trong trường hợp **metric không nhận được giá trị** (ví dụ vServer bị **tắt**, **xoá**, hoặc agent ngừng hoạt động), hệ thống **không có dữ liệu để đánh giá**.
+>
+> ⇒ Khi đó, Alarm **không được kích hoạt**, mà chuyển sang trạng thái **UNDETERMINED.**
+>
+> Chỉ khi có dữ liệu metric hợp lệ vượt ngưỡng, Alarm mới được kích hoạt.
