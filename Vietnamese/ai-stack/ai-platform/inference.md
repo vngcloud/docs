@@ -61,11 +61,11 @@ Tính năng **Inference** giúp bạn triển khai mô hình AI thành một d�
 
 1. Nhấn nút **URL** tại danh sách các Inference.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Sao chép tại sang chi tiết của một Inference cụ thể.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Bước 3: Gọi Inference&#x20;
 

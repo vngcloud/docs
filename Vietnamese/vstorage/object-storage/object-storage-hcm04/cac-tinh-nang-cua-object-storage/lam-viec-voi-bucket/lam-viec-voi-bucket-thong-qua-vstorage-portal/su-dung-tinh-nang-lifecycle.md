@@ -1,4 +1,4 @@
-# Sử dụng tính năng Lifecycle HCM04
+# Sử dụng tính năng Lifecycle
 
 ## **Tổng quan**
 
@@ -21,15 +21,15 @@ Thực hiện theo hướng dẫn bên dưới để thiết lập transition ru
 
 2\. Chọn **project** chứa **bucket** bạn muốn thiết lập lifecycle. Giả sử tôi có một bucket `demo-project` đã được khởi tạo tạo Storage Class Gold như hình dưới:
 
-<figure><img src="../../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 3\. Chọn biểu tượng **Action** và chọn **Configure Lifecycle.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\. Màn hình **Lifecycle** được hiển thị. Chọn **Create a lifecycle rule**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 5\. Nhập **Rule name**. Rule name mà chúng tôi cho phép bạn nhập bao gồm các chữ cái (a-z, A-Z, 0-9, '\_', '-', space). Độ dài **Rule name** của bạn phải nằm trong khoảng từ 5 đến 50.
 
