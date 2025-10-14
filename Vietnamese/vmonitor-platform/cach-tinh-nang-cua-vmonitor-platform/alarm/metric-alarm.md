@@ -48,4 +48,4 @@ Trong đó
 
 **Interval**: khoảng thời gian mỗi lần hệ thống Alarm đánh giá dữ liệu&#x20;
 
-Ví dụ ở đây chúng ta cần Alarm trên metric cpu.usage\_idle của host appserver, cứ 5p Alarm sẽ chạy đánh giá một lần, nếu CPU usage idle của host: appserver < 20%, hệ thống sẽ chuyển trạng thái và gửi cảnh báo.&#x20;
+Ví dụ ở đây chúng ta cần Alarm trên metric cpu.usage\_idle của host appserver, cứ 5p Alarm sẽ chạy đánh giá một lần, nếu CPU usage idle của host: appserver < 20% (ngay cả khi không nhận được value của metric cpu.usage\_idle do host bị stopped), hệ thống sẽ chuyển trạng thái và gửi cảnh báo.&#x20;
