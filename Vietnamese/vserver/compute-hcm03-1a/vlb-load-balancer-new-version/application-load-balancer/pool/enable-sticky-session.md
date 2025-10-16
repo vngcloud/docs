@@ -20,7 +20,7 @@ Tính năng **Enable Sticky Session** là một phần quan trọng của Load B
 
 * Khi một máy khách kết nối đến ứng dụng của bạn thông qua Load Balancer, Load Balancer sẽ theo dõi thông tin để xác định máy khách đó (thường dựa trên thông tin trong cookie hoặc IP address).
 * Các yêu cầu tiếp theo từ cùng một máy khách sẽ được chuyển tiếp đến cùng một máy chủ backend trong một khoảng thời gian được xác định trước.
-* Điều này giúp đảm bảo rằng trạng thái và thông tin của máy khách được duy trì liên tục trong suốt phiên làm việc.
+* Điều này giúp đảm bảo rằng trạng thái và thông tin của máy khách được duy trì liên tục trong suốt phiên làm việc. Trong trường hợp hệ thống máy chủ backend được scale thêm số lượng máy chủ thì phiên làm việc từ máy khách vẫn được duy trì.
 
 **Lợi ích của việc Enable Sticky Session**
 
