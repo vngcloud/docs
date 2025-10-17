@@ -4,11 +4,7 @@
 
 Tương tự, đối với **Postgresql**, bạn có thể dùng các client như: psql (ClI Client do PostgreSQL phát triển), pgAdmin (GUI Client phổ biến),...
 
-Bạn có thể tham khảo video sau:
-
-{% embed url="https://youtu.be/1kvJi3Hg4wM" %}
-
-Hoặc tham khảo bài viết hướng dẫn dưới đây. Bài viết này VNG Cloud sử dụng mysql-client, MySQL Workbench và psql:
+Bạn có thể xem bài viết hướng dẫn dưới đây. Bài viết này VNG Cloud sử dụng mysql-client, MySQL Workbench và psql:
 
 * [Bước 0. Cài đặt client tool để kết nối:](./#ketnoitoirdsinstance-buoc0.caidatclienttooldeketnoi)
 * [Bước 1. Xác định thông tin Endpoint & Port để truy cập:](./#ketnoitoirdsinstance-buoc1.xacdinhthongtinendpoint-and-portdetruycap)
