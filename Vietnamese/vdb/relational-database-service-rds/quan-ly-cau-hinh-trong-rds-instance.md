@@ -19,7 +19,7 @@ Tại màn hình khởi tạo, bạn có thể cấu hình:
 * **Engine Version**: loại Engine Version có thể áp dụng Configuration Group này. Chỉ các RDS Instance có Database Engine & Version phù hợp với Version này mới có thể áp dụng Configuration Group này.
 * **Descriptions**: thông tin mô tả cho Configuration Group này.
 
-Sau khi chắc chắn các thông tin đã chính xác, bạn nhấn **CREATE CONFIGURATION GROUP** ở góc phải trên và bạn sẽ thấy Configuration Group đã được tạo ra.
+Sau khi chắc chắn các thông tin đã chính xác, bạn nhấn nút **CREATE** và bạn sẽ thấy Configuration Group đã được tạo ra.
 
 Để cấu hình các giá trị của Configuration Group, bạn nhấp chuột trái vào tên của Configuration Group. Tại đây, bạn có thể xem tất cả các biến cấu hình của Configuration Group này. Mỗi biến bao gồm:
 
@@ -51,11 +51,13 @@ Các RDS Instance đang được liên kết hay chuẩn bị được liên k�
 
 Đối với phương án 2, bạn có thể thực hiện như sau.
 
-Đầu tiên, bạn đến màn hình quản lý Database, chọn đến RDS Instance và nhấn **EDIT DATABASE**.
+Đầu tiên, bạn đến màn hình quản lý Database, chọn RDS Instance bạn muốn cấu hình bằng cách nhấn vào icon ba chấm và nhấn chọn **Edit Configuration Group** hoặc bạn có thể vào chi tiết RDS Instance và chọn icon **Edit Configuration Group (góc bên phải phía trên)**
 
-Tại màn hình thay đổi cấu hình RDS Instance, bạn kéo tới mục **CHANGE CONFIGURATION GROUP**. Tại mục **New Configuration Group**, bạn chọn đến Configuration Group đã tạo ở trên.
+<figure><img src="../../.gitbook/assets/image (1135).png" alt=""><figcaption></figcaption></figure>
 
-Khi mọi lựa chọn đã chính xác, bạn nhấn nút **SAVE** ở góc phải trên cùng. Bạn hờ một lát để các biến cấu hình được áp dụng xuống RDS Instance và nếu quá trình thay đổi thành công, RDS Instance sẽ có trạng thái ACTIVE.
+Tại mục **DB configuration group**, bạn chọn Configuration Group đã tạo ở trên.
+
+Khi mọi lựa chọn đã chính xác, bạn nhấn nút **SAVE** . Bạn chờ một lát để các biến cấu hình được áp dụng xuống RDS Instance và nếu quá trình thay đổi thành công, RDS Instance sẽ có trạng thái ACTIVE.
 
 **Lưu ý:** Trong một số truờng hợp, biến cấu hình đòi hỏi cần RESTART lại dịch vụ Database trên RDS Instance, status của RDS Instance lúc này sẽ là **RESTART\_REQUIRED**. Với VNG Cloud, bạn có thể chủ động thời điểm thực hiện thao tác này. Sau khi đã sao lưu các tác vụ trên RDS Instance, bạn click vào **ACTION**, chọn **RESTART** để hoàn tất quá trình.
 

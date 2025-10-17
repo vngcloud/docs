@@ -26,7 +26,7 @@ Các metric của vDB hỗ trợ tập dimension sau giúp bạn filter metric c
 \
 
 
-Bạn cũng có thể tạo các alarm với các metric này. [Thiết lập cảnh báo cho Metric](https://docs.vngcloud.vn/pages/viewpage.action?pageId=31555671)
+Bạn cũng có thể tạo các alarm với các metric này. [Thiết lập cảnh báo cho Metric](../../vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/alarm/metric-alarm.md)
 
 Đối với các vDB quan trọng, VNG Cloud khuyến khích bạn tạo tối thiểu các alarm sau:&#x20;
 

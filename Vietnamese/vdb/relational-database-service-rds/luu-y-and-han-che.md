@@ -29,7 +29,7 @@ Master User này sẽ được cấp các quyền sau:
 
 Hiện tại, vDB sẽ không tự động failover khi có sự cố đối với vDB role Master (Read/Write) trong mô hình Master/Read-Replica. Quyền quyết định việc Promote Read Replica thành Master mới sẽ thuộc về Khách hàng. Bạn lưu ý sau khi Promote, quá trình đồng bộ dữ liệu với Master trước sẽ bị ngắt và không thể rollback được. Để khôi phục tính High Avaibility cho hệ thống, bạn có thể create read-replica mới từ Standalone vDB này.
 
-Để thực hiện việc này, bạn có thể làm theo [hướng dẫn sau](https://docs.vngcloud.vn/pages/viewpage.action?pageId=31555997). Quá trình này sẽ bao gồm các bước sau:
+Các bước thực hiện như sau:
 
 1. Bạn chọn instance có role Replica và thao tác Promote to Standalone.
 2. Bạn update connection\_string trong application của mình để Read/Write data vào Master mới.

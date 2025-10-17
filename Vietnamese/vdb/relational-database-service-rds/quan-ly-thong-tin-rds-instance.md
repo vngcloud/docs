@@ -14,20 +14,14 @@ Hãy cùng điểm qua các Dashboard này.
 
 Giao diện quản lý Database cho phép bạn có cái nhìn tổng quát về tất cả các RDS Instance hiện có cũng như thông tin chi tiết cho từng RDS Instance. Bạn có thể thực hiện tạo mới một Database khi click chọn **CREATE DATABASE**.
 
-Khi bạn click chọn từng RDS Instance, bạn có thể:
+Sau khi đã tạo được RDS Instance thành công. Bạn click chọn vào tên của từng RDS Instance. Tại đây bạn sẽ xem được thông tin chi tiết và dễ dàng thao tác RDB Instance với các icon được hiển thị phía bên trên góc phải màn hình
 
-* Thực hiện các **ACTION** quản lý vòng đời của RDS Instance như: **START**, **STOP**, **RESTART** hay **DELETE**.
-* Thay đổi các thông tin cấu hình của RDS Instance tại **EDIT DATABASE**.
-* Xem chi tiết thông tin cấu hình từng RDS Instance.
-
-#### Chỉnh sửa Database
-
-Khi bạn Click vào **EDIT DATABASE**, bạn sẽ đi đến giao diện thay đổi vDB, tại đây bạn có thể **EDIT**:
-
-* Database Instance Flavor: thay đổi cấu hình Flavor (CPU/Memory, cũng như Free Backup Storage Quota đi kèm).
-* Database Instance Storagre: thay đổi Storage Type (IOPS) và Storage Size.
-* Configuration Group: gắn/tháo liên kết với Configuration Group.
-* Database Settings: thay đổi Password của Master User, bật/tắt Public Access từ Internet (gắn/tháo Public IP), điều chỉnh bật/tắt Automatic daily backup cũng như thiết lập thời gian chạy Daily Backup.
+* Thực hiện các **ACTION** quản lý vòng đời của RDS Instance như: **START**, **SHUTDOWN**, **REBOOT** hay **DELETE**.
+* **Icon Resize instance type**: thay đổi cấu hình Flavor (CPU/Memory, cũng như Free Backup Storage Quota đi kèm).
+* **Icon Resize storage**: thay đổi Storage Type (IOPS) và Storage Size.
+* **Icon Edit Configuration Group**: gắn/tháo liên kết với Configuration Group.
+* **Icon Edit DB setting**: thay đổi Password của Master User, bật/tắt Public Access từ Internet (gắn/tháo Public IP), điều chỉnh bật/tắt Automatic daily backup cũng như thiết lập thời gian chạy Daily Backup.
+* Và xem chi tiết thông tin cấu hình từng RDS Instance.
 
 #### Xem thông tin chi tiết
 

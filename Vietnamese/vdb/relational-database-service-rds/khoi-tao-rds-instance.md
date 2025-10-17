@@ -25,7 +25,7 @@ Tại giao diện quản lý Database, bạn click chọn **Create Database**. Q
   * **Master password**: password của master user. VNG Cloud khuyến nghị bạn đặt password đủ mạnh và lưu trữ password này tại nơi an toàn. Để đảm bảo an toàn thông tin, password cần thỏa tất cả yêu cầu tối thiểu như sau:
     * Password phải có độ dài trong khoảng 8-32 kí tự.
       * Các kí tự được cho phép bao gồm: A-Z, a-z, 0-9 và các kí tự đặc biệt.
-      * Các kí tự đặc biệt được cho phép bao gồm: !#$%&()\*+-.:<=>?@\[]^\_{|}\~
+      * Các kí tự đặc biệt được cho phép bao gồm: $,^,\_,<,>.
       * Password phải bắt đầu bằng kí tự chữ cái: A-Z hoặc a-z.
       * Password không được bắt đầu hay kết thúc bằng các kí tự đặc biệt.
 * **Bước 4 Mạng và bảo mật:**&#x54;ại mục **Network & Security**, bạn lựa chọn&#x20;
