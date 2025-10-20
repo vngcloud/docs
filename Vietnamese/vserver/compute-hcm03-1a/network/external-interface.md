@@ -29,7 +29,11 @@ Bạn cần cấu hình địa chỉ IP cho External Interface từ trong hệ �
 1. Vào trang VNG Cloud portal console, đến trang Instance
 2. Đi đến trang chi tiết của máy chủ ảo cần thao tác External Interface, đi đến tab Network Interface
 3. Nhấn **Attach an Interface** và chọn External Interface mà bạn đã mua trước đó. Khi tháo gỡ, bạn chỉ việc chọn xác nhận sau khi nhấn **Detach an Interface**
-4. Sau khi gắn External Interface, bạn cần phải cấu hình IP từ trong hệ điều hành của máy chủ để sử dụng
+4. Sau khi gắn External Interface, bạn cần phải cấu hình IP từ trong hệ điều hành của máy chủ để sử dụng. (Trường hợp máy chủ đã gắn thành công External Interface và đồng thời cũng sử dụng 1 public load balancer thì traffic từ bên ngoài có thể truy cập vào máy chủ thông qua External Interface IP hoặc public load balancer IP).
+
+
+
+
 
 #### Xóa External Interface <a href="#externalinterface-xoaexternalinterface" id="externalinterface-xoaexternalinterface"></a>
 
