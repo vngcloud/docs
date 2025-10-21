@@ -88,7 +88,7 @@ Sau khi tải & cài đặt Workbench, tại giao diện khởi động, bạn c
 
 * Connection Name: đặt một tên dễ nhớ cho kết nối này để bạn dễ phân biệt.
 * Hostname: IP Endpoint của vDB, ở đây là **61.28.244.201**
-* Port: giữ nguyên mặc định 3306.
+* Port: giữ nguyên mặc định 3306. (Không hỗ trợ đổi qua port khác khi kết nối vào database)
 * Username: Master User của bạn, ở đây là **dba**
 
 sau khi chắc chắn các thông tin đã chính xác, bạn nhấn **Test Connection.** Một hộp thoại hiện ra để yêu cầu bạn nhập mật khẩu truy cập, bạn có thể tick chọn **Save Password in vault** để Workbench lưu lại password cho phiên kết nối sau.
