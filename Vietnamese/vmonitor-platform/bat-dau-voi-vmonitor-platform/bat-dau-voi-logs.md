@@ -65,11 +65,11 @@ sudo ./filebeat.sh <path-to-file-log>
 2. Chọn **Create a Dashboard.**&#x20;
 3. Trong màn hình dashboard details, chọn **Add a widget ⇒** chọn **Log** và chỉnh sửa query theo nhu cầu của bạn.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Bạn có thể thêm, xoá, chỉnh sửa hoặc thay đổi vị trí các widget để phù hợp.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 
 

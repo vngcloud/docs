@@ -21,33 +21,38 @@ Thực hiện theo hướng dẫn bên dưới để thiết lập transition ru
 
 2\. Chọn **project** chứa **bucket** bạn muốn thiết lập lifecycle. Giả sử tôi có một bucket `demo-project` đã được khởi tạo tạo Storage Class Gold như hình dưới:
 
-<figure><img src="../../../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 3\. Chọn biểu tượng **Action** và chọn **Configure Lifecycle.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\. Màn hình **Lifecycle** được hiển thị. Chọn **Create a lifecycle rule**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5\. Nhập **Rule name**. Rule name mà chúng tôi cho phép bạn nhập bao gồm các chữ cái (a-z, A-Z, 0-9, '\_', '-', space). Độ dài **Rule name** của bạn phải nằm trong khoảng từ 5 đến 50.
 
 6\. Chọn **Rule type**: **Transition**
 
-<figure><img src="../../../../../../.gitbook/assets/image (1096).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 7\. Nhập **Filter**. Filter này được áp dụng cho một lifecycle rule cụ thể. **Mỗi lifecycle rule chỉ được đặt 1 filter duy nhất, nếu bạn muốn áp dụng quy tắc lifecycle mà bạn đang tạo lên tất cả các object thuộc bucket này, hãy để trống trường thông tin này.** Hoặc bạn có thể lọc các object mong muốn áp dụng lifecycle rule thông qua prefix.
 
 8\. Chọn hành động xảy ra với object tại bucket mà bạn chọn, bao gồm:
 
-* **Transition current version of objects:**
-  * Khi kích hoạt, rule này sẽ tự động di chuyển object từ lớp lưu trữ hiện tại xuống lớp lưu trữ thấp hơn tùy chọn sau một khoảng thời gian nhất định.
-  * Bạn có thể nhập số ngày trong phần "**After \_\_\_ days from object modified**" để định nghĩa số ngày object được di chuyển nếu không có thay đổi.
+*   **Transition current version of objects:**
 
-<figure><img src="../../../../../../.gitbook/assets/image (1097).png" alt=""><figcaption></figcaption></figure>
+    * Khi kích hoạt, rule này sẽ tự động di chuyển **phiên bản hiện tại** object từ lớp lưu trữ hiện tại xuống lớp lưu trữ thấp hơn tùy chọn sau một khoảng thời gian nhất định.
+    * Bạn có thể nhập số ngày trong phần "**After \_\_\_ days from object creation**" để định nghĩa số ngày object được di chuyển nếu không có thay đổi.
 
-***
+    <figure><img src="../../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+*   **Transition noncurrent version of objects:**
+
+    * Khi kích hoạt, rule này sẽ tự động di chuyển **phiên bản không phải là phiên bản hiện tại** (noncurrent versions) object từ lớp lưu trữ hiện tại xuống lớp lưu trữ thấp hơn tùy chọn sau một khoảng thời gian nhất định.
+    * Bạn có thể nhập số ngày trong phần "**After \_\_\_ days become noncurrent version**" để định nghĩa số ngày object được di chuyển nếu không có thay đổi.
+
+    <figure><img src="../../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Với Expiration rule
 
@@ -71,7 +76,7 @@ Expiration rule và tập quy định tự động xóa object khi đến thời
 
 7\. Nhập **Filter**. Filter này được áp dụng cho một lifecycle rule cụ thể. **Mỗi lifecycle rule chỉ được đặt 1 filter duy nhất, nếu bạn muốn áp dụng quy tắc lifecycle mà bạn đang tạo lên tất cả các object thuộc bucket này, hãy để trống trường thông tin này.** Hoặc bạn có thể lọc các object mong muốn áp dụng lifecycle rule thông qua prefix.
 
-<figure><img src="../../../../../../.gitbook/assets/image (1101).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 8\. Chọn hành động xảy ra với object tại bucket mà bạn chọn, bao gồm:
 
@@ -89,7 +94,7 @@ Expiration rule và tập quy định tự động xóa object khi đến thời
   * Rule này chỉ áp dụng khi bạn đã bật Versioning và có các object delete marker trong bucket.
   * Khi kích hoạt, nó sẽ xóa các **delete marker** đã hết hạn, giúp cải thiện hiệu suất bằng cách làm sạch các marker không còn cần thiết. (Tùy chọn này thường chỉ có thể bật khi có delete marker hết hạn trong bucket.)
 
-<figure><img src="../../../../../../.gitbook/assets/image (1102).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1158).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Lưu ý:**
