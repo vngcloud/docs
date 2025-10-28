@@ -15,20 +15,25 @@ Tính năng Auto Healing có những điểm nổi bật sau:
 
 ### Cơ chế hoạt động
 
-#### Cơ chế Auto Healing: hệ thống VKS tự động phục hồi node gặp sự cố
+Hệ thống VKS được trang bị cơ chế **Auto Healing** giúp tự động phát hiện, cô lập và thay thế các node gặp sự cố, đảm bảo cụm luôn duy trì trạng thái hoạt động ổn định và sẵn sàng cao.
 
-Hệ thống VKS được trang bị cơ chế **Auto Healing** giúp tự động phát hiện, cô lập và thay thế các node gặp sự cố để đảm bảo cụm luôn duy trì trạng thái hoạt động ổn định.
+Khi một node liên tục báo trạng thái **NotReady** trong khoảng **10 phút**, hệ thống sẽ tự động kích hoạt quy trình phục hồi gồm hai bước:
 
-Khi một node liên tục báo trạng thái **NotReady** trong khoảng thời gian **10 phút**, hệ thống sẽ tự động kích hoạt quy trình auto healing gồm 2 bước:
+* **Bước 1:** Hệ thống **drain node**, di chuyển toàn bộ pod đang chạy trên node lỗi sang các node khác trong cùng nhóm trước khi loại bỏ node đó khỏi cụm.
+* **Bước 2:** Hệ thống **tự động tạo node mới** với cấu hình tương tự và join trở lại cluster. Nếu node mới vẫn chưa hoạt động bình thường, quy trình sẽ tiếp tục được thực hiện cho đến khi cụm ổn định.
 
-* **Bước 1:** Hệ thống thực hiện **drain node**, di chuyển toàn bộ pod đang chạy trên node lỗi sang các node khác trong cùng nhóm trước khi loại bỏ node đó khỏi cluster.
-* **Bước 2:** Hệ thống **tự động tạo node mới** với cấu hình tương tự và join trở lại cụm. Nếu node mới chưa hoạt động bình thường, quy trình sẽ tiếp tục được thực hiện cho đến khi cụm ổn định.
+Để đảm bảo an toàn cho toàn hệ thống, cơ chế auto healing chỉ xử lý **một số lượng giới hạn node cùng lúc**, nhằm tránh tình huống thay thế hàng loạt gây ảnh hưởng đến khả năng vận hành của cụm.
 
-Để đảm bảo an toàn cho toàn bộ hệ thống, cơ chế auto healing chỉ xử lý **một số lượng giới hạn node cùng lúc**, giúp tránh tình huống thay thế hàng loạt gây ảnh hưởng đến khả năng vận hành của cụm.
+| Quy mô cụm             | Số lượng node có thể phục hồi đồng thời (khuyến nghị) | Ghi chú                                        |
+| ---------------------- | ----------------------------------------------------- | ---------------------------------------------- |
+| Small (1–5 node)       | 1 node                                                | Đảm bảo cụm nhỏ vẫn duy trì ổn định.           |
+| Medium (6–20 node)     | Khoảng 20% tổng số node                               | Cân bằng giữa tốc độ và độ an toàn.            |
+| Large (21–100 node)    | Khoảng 10%                                            | Phù hợp cho cụm lớn, tránh ảnh hưởng lan rộng. |
+| Very Large (>100 node) | Khoảng 5%                                             | Đảm bảo độ sẵn sàng cao nhất.                  |
 
-<table><thead><tr><th width="191.6640625">Quy mô cụm</th><th width="263.83984375">Số lượng node có thể phục hồi đồng thời</th><th>Ghi chú</th></tr></thead><tbody><tr><td>Small (1–5 node)</td><td>1 node</td><td>Đảm bảo cụm nhỏ vẫn duy trì ổn định.</td></tr><tr><td>Medium (6–20 node)</td><td>Khoảng 20% tổng số node</td><td>Cân bằng giữa tốc độ và an toàn.</td></tr><tr><td>Large (21–100 node)</td><td>Khoảng 10%</td><td>Phù hợp cho cụm lớn, hạn chế ảnh hưởng lan rộng.</td></tr><tr><td>Very Large (>100 node)</td><td>Khoảng 5%</td><td>Tối đa hóa độ sẵn sàng và ổn định.</td></tr></tbody></table>
+> **Chú ý:** Khi số node gặp sự cố vượt quá ngưỡng cho phép, hệ thống sẽ **tạm ngừng khôi phục thêm node mới** và chỉ tiếp tục quá trình phục hồi khi cụm có đủ số node khỏe để đảm bảo ổn định.
 
-Nhờ cơ chế này, VKS có thể **tự động phát hiện – khôi phục nhanh – đảm bảo tính sẵn sàng cao**, giúp khách hàng yên tâm về **độ tin cậy và khả năng tự phục hồi của hệ thống**.
+Nhờ cơ chế này, VKS có thể **tự động phát hiện – khôi phục nhanh – vận hành an toàn**, giúp khách hàng yên tâm về **tính ổn định và độ tin cậy của hạ tầng**.
 
 {% hint style="info" %}
 **Chú ý:**
