@@ -55,7 +55,7 @@ Sau khi promote thành công, read replica đã chuyển thành **role:standalon
 * Liên kết ngay khi MDS Instance được khởi tạo.
 * Thực hiện thay đổi cấu hình MDS Instance.
 
-Đối với phương án 1, mời bạn xem lại hướng dẫn [Khởi tạo MDS Instance](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13010707).
+Đối với phương án 1, mời bạn xem lại hướng dẫn [Khởi tạo MDS Instance.](khoi-tao-mds-instance.md)
 
 Đối với phương án 2, bạn có thể thực hiện như sau:
 

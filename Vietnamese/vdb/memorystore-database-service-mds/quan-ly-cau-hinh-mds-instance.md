@@ -17,7 +17,7 @@ Bạn truy cập dịch vụ MemoryStore database và chuyển sang mục Config
 * **Engine**: loại Database Engine có thể áp dụng Configuration Group này.
 * **Engine Version**: loại Engine Version có thể áp dụng Configuration Group này. Chỉ các MDS Instance có Database Engine & Version phù hợp với Version này mới có thể áp dụng Configuration Group này.
 * **Descriptions**: thông tin mô tả cho Configuration Group này.
-* Sau khi chắc chắn các thông tin đã chính xác, bạn nhấn **Tạo** ở góc phải trên và bạn sẽ thấy Configuration Group đã được tạo ra.
+* Sau khi chắc chắn các thông tin đã chính xác, bạn nhấn vào nút **Tạo** và bạn sẽ thấy Configuration Group đã được tạo ra.
 
 ### B - Chỉnh sửa các biến cấu hình <a href="#quanlycauhinhmdsinstance-b-chinhsuacacbiencauhinh" id="quanlycauhinhmdsinstance-b-chinhsuacacbiencauhinh"></a>
 
@@ -46,7 +46,7 @@ Các MDS Instance đang được liên kết hay chuẩn bị được liên k�
 * Liên kết ngay khi MDS Instance được khởi tạo.
 * Thực hiện thay đổi cấu hình MDS Instance.
 
-Đối với phương án 1, mời bạn xem lại hướng dẫn [Khởi tạo MDS Instance](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13010707).
+Đối với phương án 1, mời bạn xem lại hướng dẫn [Khởi tạo MDS Instance](khoi-tao-mds-instance.md).
 
 Đối với phương án 2, bạn có thể thực hiện như sau:
 
@@ -56,8 +56,14 @@ Các MDS Instance đang được liên kết hay chuẩn bị được liên k�
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Tại màn hình thay đổi chọn đến Configuration Group muốn áp dụng.
-* Khi mọi lựa chọn đã chính xác, bạn nhấn nút **SAVE** ở góc phải trên cùng. Bạn chờ một lát để các biến cấu hình được áp dụng xuống MDS Instance và nếu quá trình thay đổi thành công, MDS Instance sẽ có trạng thái **Active**.
+* Khi mọi lựa chọn đã chính xác, bạn nhấn vào nút **SAVE** . Bạn chờ một lát để các biến cấu hình được áp dụng xuống MDS Instance và nếu quá trình thay đổi thành công, MDS Instance sẽ có trạng thái **Active**.
 
 **Lưu ý:** Trong một số truờng hợp, biến cấu hình đòi hỏi cần **Restart** lại dịch vụ Database trên MDS Instance, status của MDS Instance lúc này sẽ là **Restart\_required**. Với VNG Cloud, bạn có thể chủ động thời điểm thực hiện thao tác này. Sau khi đã sao lưu các tác vụ trên MDS Instance, bạn click vào **Action**, chọn **Restart** để hoàn tất quá trình.
 
 ### D - Xóa Configuration Group <a href="#quanlycauhinhmdsinstance-a-khoitaoconfigurationgroup" id="quanlycauhinhmdsinstance-a-khoitaoconfigurationgroup"></a>
+
+**Để xóa một Configuration Group** bạn truy cập màn hình quản lý Configuration tại đây [https://vdb.console.vngcloud.vn/memorystore/config-group](https://vdb.console.vngcloud.vn/memorystore/config-group) và làm theo hướng dẫn sau:
+
+Trường hợp Configuration Group chưa gắn vào MDS Instance nào. Bạn nhấn chọn Action **Delete** **.** Lúc này sẽ hiển thị một cảnh báo để chắc chắn bạn muốn xóa Configuration Group này. Nếu đồng ý xóa bạn nhấn vào nút **Delete**. Bạn chờ một lát để quá trình xóa được thực thi và khi xóa thành công thì Configuration Group này sẽ không hiển thị trên màn hình quản lý Configuration Group. Như vậy bạn đã xóa Configuration Group thành công
+
+Trường hợp Configuration Group đã gắn vào MDS Instance. Nếu bạn nhấn chọn Action **Delete** **.** Lúc này sẽ hiển thị một cảnh báo để chắc chắn bạn muốn xóa Configuration Group này. Nếu đồng ý xóa bạn nhấn vào nút **Delete**. Sau khi nhấn nút Delete hệ thống sẽ hiện thông báo lỗi xóa Configuration Group thất bại. Bạn cần thực hiện tháo MDS Instance ra khỏi Configuration Group đó. Sau khi Configuration Group không còn gắn vào MDS Instance nào thì bạn có thể xóa Configuration Group đó như hướng dẫn trên.

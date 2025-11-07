@@ -4,11 +4,7 @@
 
 Nếu muốn truy cập bằng giao diện, bạn có thể tham khảo tool AnotherRedisDesktopManager tải tại link sau:
 
-[https://www.electronjs.org/apps/anotherredisdesktopmanager](https://www.electronjs.org/apps/anotherredisdesktopmanager)
-
-sau đó thực hiện theo video hướng dẫn (bắt đầu ở 1:00):
-
-{% embed url="https://youtu.be/1kvJi3Hg4wM" %}
+[https://github.com/qishibo/AnotherRedisDesktopManager](https://github.com/qishibo/AnotherRedisDesktopManager)
 
 Nếu sử dụng tool cli, bạn có thể làm theo bài viết sau sử dụng **redis-cli**.
 

@@ -46,7 +46,7 @@ vDBaaS hỗ trợ tính năng tự động sao lưu theo ngày tại thời đi�
     * **Automatic daily backup:** bật tắt tính năng Automatic daily backup.
     * **Backup retention period:** xác định thời gian lưu trữ bản automatic backup. Nhằm giúp bạn tiết kiệm không gian lưu trữ, các bản automatic backup đã quá khoảng thời gian này sẽ bị xóa.
     * **Backup time:** thời điểm quá trình tạo automatic backup diễn ra. VNG Cloud khuyến nghị bạn chọn thời điểm này vào khoảng thời gian thấp điểm nhất đối với hệ thống của bạn.
-  * Sau khi chắc chắn rằng các thông tin đã chính xác, bạn nhấn nút **Save** ở góc trên bên phải và chờ một lát để quá trình thay đổi được thực thi.
+  * Sau khi chắc chắn rằng các thông tin đã chính xác, bạn nhấn vào nút **Save** và chờ một lát để quá trình thay đổi được thực thi.
 
 ### C. Khôi phục MDS Instance từ bản Backup <a href="#saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup" id="saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup"></a>
 
@@ -62,3 +62,8 @@ vDB MemoryStore hỗ trợ bạn **khôi phục (Restore)** lại một MDS Inst
 * Sau đó, bạn quay lại màn hình quản lý Database, sẽ thấy xuất hiện một MDS Instance đang được khởi tạo. Trạng trái của MDS Instance mới này cũng sẽ thay đổi từ **Building/Build** sang **Active** nếu thành công.
 
 ### D. Xóa bản Backup <a href="#saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup" id="saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup"></a>
+
+**Để xóa một bản Backup** bạn truy cập màn hình quản lý Backup [tại đây](https://vdb.console.vngcloud.vn/memorystore/backup) và làm theo hướng dẫn sau:
+
+Bạn nhấn chọn vào bản Backup mà bạn muốn xóa, chọn Action **Delete.** Lúc này sẽ hiển thị một cảnh báo để chắc chắn bạn muốn xóa bản backup. Nếu đồng ý xóa bạn nhấn vào nút **Delete**. Bạn chờ một lát để quá trình xóa được thực thi và khi xóa thành công thì bản backup này sẽ không hiển thị trên màn hình quản lý Backup. Như vậy bạn đã xóa bản backup thành công
+
