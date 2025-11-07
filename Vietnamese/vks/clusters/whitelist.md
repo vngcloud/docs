@@ -39,7 +39,7 @@ Tính năng Whitelist IP trên chế độ Private Node Group của VKS cho phé
 
 * Trên **Region HAN**: Nếu bạn có nhu cầu sử dụng Whitelist IP vì security, vui lòng allow danh sách IP Range Public của vServer theo danh sách sau:
 
-```bash
+```
 157.20.201.0/24
 157.20.200.96/27
 157.20.200.128/25
