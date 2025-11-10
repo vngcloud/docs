@@ -68,19 +68,18 @@ Cloud-config YAML configuration as support by _cloud-init_, excluding Linux spec
 
 _Example_:
 
-| <pre><code>#cloud-config
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>#cloud-config
 write_files:
    encoding: b64
    content: NDI=
    path: C:\test
    permissions: '0o466'
-</code></pre> |
-| ------------------------------------------------------------------------------------------------------------------------------ |
+</code></pre></td></tr></tbody></table>
 
 \
 
 
-| <pre><code>#cloud-config
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>#cloud-config
 write_files:
    -   encoding: b64
        content: NDI=
@@ -95,26 +94,23 @@ write_files:
            H4sIAGUfoFQC/zMxAgCIsCQyAgAAAA==
        path: C:\gzip
        permissions: '0644'
-</code></pre> |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+</code></pre></td></tr></tbody></table>
 
 * **set\_timezone**: Change the underlying timezone.
 
 _Example_:
 
-| <pre><code>#cloud-config
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>#cloud-config
 set_timezone: Asia/Tbilisi
-</code></pre> |
-| ----------------------------------------------------------------- |
+</code></pre></td></tr></tbody></table>
 
 * **set\_hostname**: Override the already default set hostname value (taken from  metadata). If the hostname is changed, a reboot will be required.
 
 _Example_:
 
-| <pre><code>#cloud-config
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>#cloud-config
 set_hostname: newhostname
-</code></pre> |
-| ---------------------------------------------------------------- |
+</code></pre></td></tr></tbody></table>
 
 * **groups**: Create local groups and add existing users to those local groups.
 
@@ -126,11 +122,10 @@ List of users can be empty, when creating a group without members.
 
 _Example_:
 
-| <pre><code>groups:
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>groups:
   - windows-group: [user1, user2]
   - cloud-users
-</code></pre> |
-| ---------------------------------------------------------------------------------- |
+</code></pre></td></tr></tbody></table>
 
 * **users**: Create and configure local users.
 
@@ -147,7 +142,7 @@ the users are defined as a list. Each element from the list represents a user. E
 
 _Example_:
 
-| <pre><code>users:
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>users:
   -
     name: Admin
   -
@@ -161,8 +156,7 @@ _Example_:
     ssh_authorized_keys:
       - ssh-rsa AAAB...byV
       - ssh-rsa AAAB...ctV
-</code></pre> |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+</code></pre></td></tr></tbody></table>
 
 * **ntp**: Set NTP servers. The definition is a dict with the following attributes:
 
@@ -174,13 +168,12 @@ the Server and pools are aggregated, servers being the first ones in the list. O
 
 _Example_:
 
-| <pre><code>#cloud-config
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>#cloud-config
 ntp:
   enabled: True
   servers: ['my.ntp.server.local', '192.168.23.2']
   pools: ['0.company.pool.ntp.org', '1.company.pool.ntp.org']
-</code></pre> |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+</code></pre></td></tr></tbody></table>
 
 * **runcmd**: Directive that can contain a list of commands that will be executed, in the order of their defination.
 
@@ -190,12 +183,11 @@ On windows, the commands are aggregated into a file and executed with cmd.exe.
 
 _Example_:
 
-| <pre><code>#cloud-config
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>#cloud-config
 runcmd:
   - 'dir C:\\'
   - ['echo', '1']
-</code></pre> |
-| ------------------------------------------------------------------------------- |
+</code></pre></td></tr></tbody></table>
 
 The cloud-config directives are executed by default in the following order:
 
@@ -214,7 +206,7 @@ The execution of set\_hostname or runcmd can request a reboot if needed. the reb
 \
 
 
-## **Initialize UserData when activating vServer**![](http://docs.vngcloud.vn/plugins/servlet/confluence/placeholder/macro?definition=e2FuY2hvcjpDcmVhdGVVc2VyRGF0YVNlcnZlcn0\&locale=en\_US\&version=2)
+## **Initialize UserData when activating vServer**![](http://docs.vngcloud.vn/plugins/servlet/confluence/placeholder/macro?definition=e2FuY2hvcjpDcmVhdGVVc2VyRGF0YVNlcnZlcn0\&locale=en_US\&version=2)
 
 ***
 
@@ -227,13 +219,13 @@ To type the command lines to provide Userdata to Server, you can implement in Cr
 * You able to upload the file or **input the command lines into content field** to execute providing user information to Server. Refer to the section "Suggestions for filling commands for UserData", VNG Cloud provided defaults script command suggestions to configure.
 * If UseData information in the tools being used has been Base64 encoded, you will select it.
 
-## **Suggestions for filling commands for UseData**![](http://docs.vngcloud.vn/plugins/servlet/confluence/placeholder/macro?definition=e2FuY2hvcjpTdWdnZXN0U2NyaXB0VXNlckRhdGF9\&locale=en\_US\&version=2)
+## **Suggestions for filling commands for UseData**![](http://docs.vngcloud.vn/plugins/servlet/confluence/placeholder/macro?definition=e2FuY2hvcjpTdWdnZXN0U2NyaXB0VXNlckRhdGF9\&locale=en_US\&version=2)
 
 ***
 
 When creating Windows Severs, VNG Cloud provide Khi tạo Server Windows, VNG Cloud Default commands (Default Scripts) in UserData field, including Windows OS licences that you can use immediately:
 
-| <pre><code>#ps1
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>#ps1
 net user stackops VngP@ssword2 /logonpasswordchg:yes  /y
 net localgroup administrators stackops /add
 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal*Server\WinStations\RDP-TCP\" -Name PortNumber -Value 3490
@@ -246,23 +238,21 @@ w32tm /resync /nowait
 cscript.exe slmgr.vbs /ipk N69G4-B89J2-4G8F4-WWYCC-J464C
 cscript.exe slmgr.vbs /skms kms.vngcloud.vn
 cscript.exe slmgr.vbs /ato 
-</code></pre> |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+</code></pre></td></tr></tbody></table>
 
 Include:
 
 * **stackops VngP@ssword2** : Username and password of OS;
 * **N69G4-B89J2-4G8F4-WWYCC-J464C** : is activation key of OS, system will automatically map with the corresponding key and OS:
 
-| <pre><code>{
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>{
   "Windows Server 2016 Standard": "WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY",
   "Windows Server 2019 Standard": "N69G4-B89J2-4G8F4-WWYCC-J464C",
   "Windows Server 2012 Server Standard": "XC9B7-NBPP2-83J2H-RHMBY-92BT4",
   "Windows Server 2012 R2 Server Standard": "D2N9P-3P6X9-2R39C-7RTCD-MDVJX",
   "Windows Server 2022 Standard": "VDYBN-27WPP-V4HQT-9VMD4-VMK7H"
 }
-</code></pre> |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+</code></pre></td></tr></tbody></table>
 
 The result will be displayed by default:
 

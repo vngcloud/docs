@@ -10,7 +10,7 @@ After purchasing Log Project, the system will automatically generate a certifica
 
 After downloading and unpacking, you will see certificate files and installation instructions for each environment and agent type to help you easily set up the initial steps:
 
-| <pre><code>/Linux
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>/Linux
 │   ├── Filebeat               // Bộ cài cho agent filebeat , môi trường Linux
 │   |   ├── VNG.trust.pem      // các file pem để  xác thực người dùng
 │   |   ├── user.cer.pem       
@@ -23,5 +23,4 @@ After downloading and unpacking, you will see certificate files and installation
 │   ├── ...                    // tương tự cũng có các file .pem như trên
 /Docker                        // Bộ cài cho môi trường Docker
 /Kubernetes                    // Bộ cài cho môi trường Kubernetes
-</code></pre> |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+</code></pre></td></tr></tbody></table>

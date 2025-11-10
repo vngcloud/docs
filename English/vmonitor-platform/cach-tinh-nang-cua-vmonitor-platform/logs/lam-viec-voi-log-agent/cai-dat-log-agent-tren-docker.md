@@ -8,9 +8,8 @@ FilebeatLogstash
 
 * Download images
 
-| <p>Copy</p><pre><code>docker pull docker.elastic.co/beats/filebeat:8.7.0
-</code></pre> |
-| -------------------------------------------------------------------------------------- |
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>docker pull docker.elastic.co/beats/filebeat:8.7.0
+</code></pre></td></tr></tbody></table>
 
 ***
 
@@ -18,15 +17,14 @@ FilebeatLogstash
 * If using the prepared script in the download folder, run the command:
   * In the setup example below, we will mount `/var/log/app.log`an agent installed using docker to push logs to the system
 
-| <p>Copy</p><pre><code>docker compose up -d -f docker-compose.yml
-</code></pre> |
-| ------------------------------------------------------------------------------ |
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>docker compose up -d -f docker-compose.yml
+</code></pre></td></tr></tbody></table>
 
 The configuration files below have been prepared by us in the script when downloading the certificate. The description below helps readers imagine what it would be like if we created a manual.
 
 **Configuration**
 
-| <ul><li>File<code>docker-compose.yml</code></li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>version: "3"
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>File<code>docker-compose.yml</code></li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>version: "3"
 services:
   filebeat-agent-vmonitor:
     image: docker.elastic.co/beats/filebeat:8.7.0
@@ -75,9 +73,7 @@ logging.files:
   name: filebeat
   keepfiles: 7
   permissions: 0644
-</code></pre></td></tr></tbody></table><ul><li>Note: the $ variables <code>BOOTSTRAP_SERVERS, $TOPIC</code>above are already in <code>container.env</code>the file in the downloaded certificate folder.</li></ul> |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p>Copy</p><pre><code>version: "3"
+</code></pre></td></tr></tbody></table><ul><li>Note: the $ variables <code>BOOTSTRAP_SERVERS, $TOPIC</code>above are already in <code>container.env</code>the file in the downloaded certificate folder.</li></ul></td></tr><tr><td><p>Copy</p><pre><code>version: "3"
 services:
   filebeat-agent-vmonitor:
     image: docker.elastic.co/beats/filebeat:8.7.0
@@ -101,8 +97,7 @@ services:
          limits:
            cpus: '1'
            memory: 2G
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| <p>Copy</p><pre><code>filebeat.inputs:
+</code></pre></td></tr><tr><td><p>Copy</p><pre><code>filebeat.inputs:
 - type: log
   paths:
     - /var/log/app.log
@@ -127,8 +122,7 @@ logging.files:
   name: filebeat
   keepfiles: 7
   permissions: 0644
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| <p>Copy</p><pre><code>version: "3"
+</code></pre></td></tr><tr><td><p>Copy</p><pre><code>version: "3"
 services:
   filebeat-agent-vmonitor:
     image: docker.elastic.co/beats/filebeat:8.7.0
@@ -152,8 +146,7 @@ services:
          limits:
            cpus: '1'
            memory: 2G
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| <p>Copy</p><pre><code>filebeat.inputs:
+</code></pre></td></tr><tr><td><p>Copy</p><pre><code>filebeat.inputs:
 - type: log
   paths:
     - /var/log/app.log
@@ -178,7 +171,7 @@ logging.files:
   name: filebeat
   keepfiles: 7
   permissions: 0644
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+</code></pre></td></tr></tbody></table>
 
 ***
 
@@ -186,33 +179,22 @@ logging.files:
 
 FilebeatLogstash
 
-| <ul><li>Stop</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>docker stop filebeat
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>Stop</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>docker stop filebeat
 </code></pre></td></tr></tbody></table><ul><li>Reload</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>docker kill --signal=HUP filebeat
 </code></pre></td></tr></tbody></table><ul><li>Restart</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>docker restart filebeat
 </code></pre></td></tr></tbody></table><ul><li>Observe</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>docker logs --tail 100 -f filebeat
 </code></pre></td></tr></tbody></table><ul><li>Uninstall</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>docker rm filebeat
-</code></pre></td></tr></tbody></table> |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p>Copy</p><pre><code>docker stop filebeat
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| <p>Copy</p><pre><code>docker kill --signal=HUP filebeat
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| <p>Copy</p><pre><code>docker restart filebeat
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| <p>Copy</p><pre><code>docker logs --tail 100 -f filebeat
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| <p>Copy</p><pre><code>docker rm filebeat
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| <p>Copy</p><pre><code>docker stop filebeat
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| <p>Copy</p><pre><code>docker kill --signal=HUP filebeat
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| <p>Copy</p><pre><code>docker restart filebeat
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| <p>Copy</p><pre><code>docker logs --tail 100 -f filebeat
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| <p>Copy</p><pre><code>docker rm filebeat
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+</code></pre></td></tr></tbody></table></td></tr><tr><td><p>Copy</p><pre><code>docker stop filebeat
+</code></pre></td></tr><tr><td><p>Copy</p><pre><code>docker kill --signal=HUP filebeat
+</code></pre></td></tr><tr><td><p>Copy</p><pre><code>docker restart filebeat
+</code></pre></td></tr><tr><td><p>Copy</p><pre><code>docker logs --tail 100 -f filebeat
+</code></pre></td></tr><tr><td><p>Copy</p><pre><code>docker rm filebeat
+</code></pre></td></tr><tr><td><p>Copy</p><pre><code>docker stop filebeat
+</code></pre></td></tr><tr><td><p>Copy</p><pre><code>docker kill --signal=HUP filebeat
+</code></pre></td></tr><tr><td><p>Copy</p><pre><code>docker restart filebeat
+</code></pre></td></tr><tr><td><p>Copy</p><pre><code>docker logs --tail 100 -f filebeat
+</code></pre></td></tr><tr><td><p>Copy</p><pre><code>docker rm filebeat
+</code></pre></td></tr></tbody></table>
 
 ***
 
