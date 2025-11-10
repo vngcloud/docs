@@ -39,10 +39,10 @@ Sau khi tạo bucket và tải lên object vào bucket đó. Bạn có thể xem
 4\. Trên trang hiển thị thông tin chi tiết **bucket**, bạn có thể xem và sử dụng các tính năng mà chúng tôi cung cấp cho bucket bao gồm:
 
 * **Thông tin chung**: Cung cấp các thông tin chung của bucket như Name, Owner, Created date, Versioning, Encryption, Object Lock.
-* **ACLs**: Cung cấp thông tin quản lý truy cập Read/Write/Read+Write của một hay nhiều tài khoản Root đang có trên hệ thống được cấp phép truy cập trên bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại Sử dụng tính năng ACLs.
-* **CORS**: Cung cấp thông tin các đường dẫn được phép truy cập vào tài nguyên của bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại Sử dụng tính năng CORS.
-* **Lifecycle**: Cung cấp thông tin các lifecycle được thiết lập cho bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại Sử dụng tính năng lifecycle.
-* **Event notification**: Cung cấp thông tin các event notification được thiết lập cho bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại Sử dụng tính năng Event notification.
+* **ACLs**: Cung cấp thông tin quản lý truy cập Read/Write/Read+Write của một hay nhiều tài khoản Root đang có trên hệ thống được cấp phép truy cập trên bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại Sử dụng tính năng [ACLs](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/object-storage-han02/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-acls).
+* **CORS**: Cung cấp thông tin các đường dẫn được phép truy cập vào tài nguyên của bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại Sử dụng tính năng [CORS](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/object-storage-han02/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-cors).
+* **Lifecycle**: Cung cấp thông tin các lifecycle được thiết lập cho bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại Sử dụng tính năng [Lifecycle](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/object-storage-han02/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-lifecycle).
+* **Event notification**: Cung cấp thông tin các event notification được thiết lập cho bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại Sử dụng tính năng [Event notification](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/object-storage-han02/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-event-notification).
 
 <figure><img src="../../../../../../.gitbook/assets/image (997).png" alt=""><figcaption></figcaption></figure>
 

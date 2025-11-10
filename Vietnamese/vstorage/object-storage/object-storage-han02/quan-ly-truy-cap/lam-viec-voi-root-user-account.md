@@ -15,7 +15,7 @@ Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông t
 * Địa chỉ email được sử dụng để tạo tài khoản người dùng Root.
 * Mật khẩu cho của tài khoản người dùng Root.
 
-Để thực hiện đăng nhập sử dụng vStorage với tài khoản Root, hãy xem thêm tại [Truy cập tài nguyên sử dụng tài khoản người dùng Root](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-truy-cap-tai-nguyen-vstorage/truy-cap-tai-nguyen-su-dung-tai-khoan-nguoi-dung-root).
+Để thực hiện đăng nhập sử dụng vStorage với tài khoản Root, hãy xem thêm tại [Truy cập tài nguyên sử dụng tài khoản người dùng Root](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/object-storage-han02/quan-ly-truy-cap/lam-viec-voi-root-user-account#truy-cap-vao-vstorage-su-dung-root-user-account).
 
 ***
 
@@ -27,7 +27,7 @@ Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông t
 
 ## Truy cập vào vStorage sử dụng Root User Account
 
-Để truy cập vào tài nguyên của bạn trên dịch vụ lưu trữ vStorage, bạn có thể truy cập thông qua vStorage Portal, vStorage API, S3 Rest API và Swift/ s3 client tool. Đối với vStorage Portal, bạn sử dụng tài khoản người dùng Root (Root User Account) để truy cập vào. Nếu bạn chưa có tài khoản người dùng Root, bạn vui lòng tham khảo tại [Tài khoản người dùng Root](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-nguoi-dung-root).
+Để truy cập vào tài nguyên của bạn trên dịch vụ lưu trữ vStorage, bạn có thể truy cập thông qua vStorage Portal, vStorage API, S3 Rest API và Swift/ s3 client tool. Đối với vStorage Portal, bạn sử dụng tài khoản người dùng Root (Root User Account) để truy cập vào. Nếu bạn chưa có tài khoản người dùng Root, bạn vui lòng tham khảo tại [Tài khoản người dùng Root](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/object-storage-han02/quan-ly-truy-cap/lam-viec-voi-root-user-account#khoi-tao-root-user-account).
 
 Thực hiện theo các bước bên dưới để đăng nhập vào vStorage với tài khoản người dùng Root:
 
@@ -48,7 +48,7 @@ Mặc định, **Root User Account** sẽ có **toàn quyền** làm việc trê
 
 <summary>Bucket ACLs</summary>
 
-Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho 1 hoặc tất cả Root user khác. (Root user được cấp quyền truy cập qua ACLS phải là tài khoản được cấp quyền trên hệ thống VNG Cloud của chúng tôi). Để biết thêm thông tin, hãy xem tại Sử dụng tính năng ACLs.
+Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho 1 hoặc tất cả Root user khác. (Root user được cấp quyền truy cập qua ACLS phải là tài khoản được cấp quyền trên hệ thống VNG Cloud của chúng tôi). Để biết thêm thông tin, hãy xem tại Sử dụng tính năng [ACLs](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/object-storage-han02/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-acls).
 
 </details>
 
@@ -56,6 +56,6 @@ Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho 1 hoặc t�
 
 <summary>Bucket Policy</summary>
 
-Bạn có thể quản lý quyền truy cập vào bucket của bạn thông qua các quy tắc dạng JSON. Để biết thêm thông tin, hãy xem tại Sử dụng tính năng Bucket Policy.
+Bạn có thể quản lý quyền truy cập vào bucket của bạn thông qua các quy tắc dạng JSON. Để biết thêm thông tin, hãy xem tại Sử dụng tính năng [Bucket Policy](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/object-storage-han02/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-bucket-policy).
 
 </details>

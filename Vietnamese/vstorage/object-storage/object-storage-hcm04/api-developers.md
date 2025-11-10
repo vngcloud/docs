@@ -17,7 +17,7 @@ Thực hiện theo các bước bên dưới làm việc với vStorage thông q
    2. Nhập **Client Secret** tương ứng của **Client ID** vừa nhập. Cặp Client ID và Client Secret được bạn tạo và quản lý thông qua hệ thống vIAM. Bạn có thể chọn [Click here to manage your Client ID.](https://iam.console.vngcloud.vn/service-accounts) để chúng tôi điều hướng bạn tới hệ thống vIAM và chi tiết là các màn hình quản lý Service Account.
 5. Sau khi hoàn tất chọn cấu hình **xác thực**, chọn **Authentication** để chuyển tới màn hình **Configuration. Tại đây bạn có thể sử dụng trực tiếp các vStorage API hoặc bạn có thể sử dụng API thông qua Postman**. Bạn luôn có thể quay lại đây để thay đổi thông tin **Cấp quyền** của mình, sau đó chọn lại **Xác thực** để cập nhật danh sách S3 Rest API theo thông số mới của bạn.
 
-Chi tiết, vui lòng tham khảo thêm tại [https://docs.api.vngcloud.vn/service-docs/vstorage-api.html](https://docs.api.vngcloud.vn/service-docs/vstorage-api.html).
+Chi tiết, vui lòng tham khảo thêm tại [https://docs.api.vngcloud.vn/service-docs/vstorage-hcm04-api.html](https://docs.api.vngcloud.vn/service-docs/vstorage-hcm04-api.html).
 
 <figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FB0NrrrdJdpYOYzRkbWp5%2Fuploads%2F3Bm1GCocOTozYC0ZjyB5%2Fimage.png?alt=media&#x26;token=99dcde88-341a-4963-85f1-b4d29b2f8eee" alt=""><figcaption></figcaption></figure>
 

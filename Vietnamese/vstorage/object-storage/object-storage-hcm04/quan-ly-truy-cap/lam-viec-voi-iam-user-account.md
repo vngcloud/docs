@@ -47,9 +47,9 @@ Nếu doanh nghiệp bạn có nhiều thành viên cần được cấp quyền
       2. **Deny permissions**: từ chối truy cập theo action đã chọn.
    2. Chọn <mark style="background-color:blue;">**All vstorage actions**</mark> nếu muốn tạo policy có quyền thực hiện tất cả các hành động trên vStorage. Hoặc bạn có thể chọn một số hành động cụ thể mà bạn muốn phân quyền cho IAM User Account.
 8. Chọn **Resources**: chọn **All resources.**
-9. Chọn **Request conditions:** nhập điều kiện đặc biệt cho policy nếu có.
+9.  Chọn **Request conditions:** nhập điều kiện đặc biệt cho policy nếu có.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Screenshot-4.png" alt=""><figcaption></figcaption></figure>
 
 ### Attach IAM Policy vào IAM User Account
 
@@ -93,7 +93,9 @@ Sau khi bạn đã khởi tạo IAM User Account và Policy mong muốn, tiếp 
 
 5\. Chọn **Save** để lưu lại cấu hình Bucket Policy.
 
-<figure><img src="../../../../.gitbook/assets/image (869).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2025-11-10 13-43-42.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2025-11-10 13-28-12.png" alt=""><figcaption></figcaption></figure>
 
 ## Thực hiện truy cập vào vStorage thông qua IAM User Account
 

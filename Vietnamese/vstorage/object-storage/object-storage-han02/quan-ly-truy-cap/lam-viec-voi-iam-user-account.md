@@ -47,9 +47,9 @@ Nếu doanh nghiệp bạn có nhiều thành viên cần được cấp quyền
       2. **Deny permissions**: từ chối truy cập theo action đã chọn.
    2. Chọn <mark style="background-color:blue;">**All vstorage actions**</mark> nếu muốn tạo policy có quyền thực hiện tất cả các hành động trên vStorage. Hoặc bạn có thể chọn một số hành động cụ thể mà bạn muốn phân quyền cho IAM User Account.
 8. Chọn **Resources**: chọn **All resources.**
-9. Chọn **Request conditions:** nhập điều kiện đặc biệt cho policy nếu có.
+9.  Chọn **Request conditions:** nhập điều kiện đặc biệt cho policy nếu có.
 
-<figure><img src="../../../../.gitbook/assets/image (1043).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Screenshot-4.png" alt=""><figcaption></figcaption></figure>
 
 ### Attach IAM Policy vào IAM User Account
 
@@ -71,29 +71,26 @@ Sau khi bạn đã khởi tạo IAM User Account và Policy mong muốn, tiếp 
 Để phân quyền truy cập vào bucket/ object cho IAM User Account, bạn cần thực hiện phân quyền qua tính băng Bucket Policy, cụ thể các bước thực hiện như sau:
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn biểu tượng ![](<../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)tại project chứa bucket bạn muốn phân quyền.
-3. Tại mục **Identity and Access Management**, thực hiện sao chép thông tin **vStorage User ID** tại mục **List of IAM User Account**.
-
-<figure><img src="../../../../.gitbook/assets/image (1044).png" alt=""><figcaption></figcaption></figure>
-
-4. Tiếp tục chọn **Bucket** bạn muốn thực hiện phân quyền cho IAM User Account.
-5. Chọn biểu tượng **Action** và chọn **Configure policy.**
+2. Chọn **Bucket** bạn muốn thực hiện phân quyền cho IAM User Account.
+3. Chọn biểu tượng **Action** và chọn **Configure policy.**
 
 <figure><img src="../../../../.gitbook/assets/image (1045).png" alt=""><figcaption></figcaption></figure>
 
-6. Tại đây, bạn có thể chọn cấu hình cho từng **Statement** ở bên trái hoặc trực tiếp chỉnh sửa file JSON ở cột bên phải. Cụ thể cấu trúc một Bucket Policy bao gồm:
+4. Tại đây, bạn có thể chọn cấu hình cho từng **Statement** ở bên trái hoặc trực tiếp chỉnh sửa file JSON ở cột bên phải. Cụ thể cấu trúc một Bucket Policy bao gồm:
 
 * **Version**: Xác định phiên bản của Bucket Policy (nên dùng `"2012-10-17"`).
 * **Statement**: Mỗi chính sách sẽ có một hoặc nhiều **Statement** (mục đích cụ thể của policy).
   * **Effect**: `Allow` hoặc `Deny` quyền truy cập.
-  * **Principal**: Đối tượng được cấp quyền truy cập, chính là thông tin IAM vStorage User ID bạn đã sao chép bên trên
+  * **Principal**: Đối tượng được cấp quyền truy cập, chính là thông tin IAM vStorage User ID của IAM user account được chọn.
   * **Action**: Các hành động cho phép trên bucket, ví dụ: `s3:GetObject` (xem object), `s3:PutObject` (tải lên object), `s3:DeleteObject` (xóa object),…
   * **Resource**: Các bucket và object cụ thể bị ảnh hưởng bởi policy (dùng ARN để định danh tài nguyên).
   * **Condition**: (Tùy chọn) Điều kiện cụ thể giới hạn quyền truy cập.
 
-5\. Chọn **Save** để lưu lại cấu hình Bucket Policy.
+5. Chọn **Save** để lưu lại cấu hình Bucket Policy.
 
-<figure><img src="../../../../.gitbook/assets/image (1046).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2025-11-10 13-54-54.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2025-11-10 13-57-09.png" alt=""><figcaption></figcaption></figure>
 
 ## Thực hiện truy cập vào vStorage thông qua IAM User Account
 
