@@ -13,11 +13,11 @@ Follow the steps below to work with vStorage via Service Account
 2. Select the Integration folder **.**
 3. **Select the vStorage API** icon .
 4. In the **Authentication** section , you need to fill in the necessary information to configure your vStorage API including:
-   1. Enter **the Client ID** . A **Client ID** is a string of characters used by the Service API to identify your application, and is also used to construct the "authorization URL" displayed to the user. You can create and manage **Client IDs** through the vIAM system. **The Client ID** is automatically generated when you create a new **Service Account** .
-   2. Enter **the Client Secret** corresponding to **the Client ID** you just entered. The Client ID and Client Secret pair are created and managed by you through the vIAM system. You can select [Click here to manage your Client ID.](https://iam.console.vngcloud.vn/service-accounts) so we can navigate you to the vIAM system and in detail the Service Account management screens.
+   1. Enter the **Client ID** . A **Client ID** is a string of characters used by the Service API to identify your application, and is also used to construct the "authorization URL" displayed to the user. You can create and manage **Client IDs** through the vIAM system. The **Client ID** is automatically generated when you create a new **Service Account** .
+   2. Enter the **Client Secret** corresponding to the **Client ID** you just entered. The Client ID and Client Secret pair are created and managed by you through the vIAM system. You can select [Click here to manage your Client ID.](https://iam.console.vngcloud.vn/service-accounts) so we can navigate you to the vIAM system and in detail the Service Account management screens.
 5. Once you've finished selecting your **authentication** configuration , select **Authentication** to go to the Configuration screen **. Here you can use the vStorage APIs directly, or you can use the API via Postman** . You can always come back here to change your **Authorization** information , then select **Authentication** again to update the S3 Rest API list with your new parameters.
 
-For details, please refer to [https://docs.api.vngcloud.vn/service-docs/vstorage-api.html](https://docs.api.vngcloud.vn/service-docs/vstorage-api.html) .
+For details, please refer to [https://docs.api.vngcloud.vn/service-docs/vstorage-han02-api.html](https://docs.api.vngcloud.vn/service-docs/vstorage-han02-api.html) .
 
 <figure><img src="../../../.gitbook/assets/image (563).png" alt=""><figcaption></figcaption></figure>
 

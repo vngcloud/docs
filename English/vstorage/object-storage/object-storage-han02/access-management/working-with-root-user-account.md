@@ -15,7 +15,7 @@ After you create a Root user account, you collect the following information to a
 * The email address used to create the Root user account.
 * Password for the Root user account.
 
-To log in to vStorage with the Root account, see [Accessing resources using the Root user account](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-truy-cap-tai-nguyen-vstorage/truy-cap-tai-nguyen-su-dung-tai-khoan-nguoi-dung-root) .
+To log in to vStorage with the Root account, see [Accessing resources using the Root user account](https://docs.vngcloud.vn/vng-cloud-document/vstorage/object-storage/object-storage-han02/access-management/working-with-root-user-account#truy-cap-vao-vstorage-su-dung-root-user-account) .
 
 ***
 
@@ -27,7 +27,7 @@ To cancel your Root account, you need to contact us by creating a ticket to requ
 
 ## Access to vStorage using Root User Account <a href="#truy-cap-vao-vstorage-su-dung-root-user-account" id="truy-cap-vao-vstorage-su-dung-root-user-account"></a>
 
-To access your resources on vStorage storage service, you can access through vStorage Portal, vStorage API, S3 Rest API and Swift/ s3 client tool. For vStorage Portal, you use Root User Account to access. If you do not have Root User Account, please refer to [Root User Account](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-nguoi-dung-root) .
+To access your resources on vStorage storage service, you can access through vStorage Portal, vStorage API, S3 Rest API and Swift/ s3 client tool. For vStorage Portal, you use Root User Account to access. If you do not have Root User Account, please refer to [Root User Account](https://docs.vngcloud.vn/vng-cloud-document/vstorage/object-storage/object-storage-han02/access-management/working-with-root-user-account#khoi-tao-root-user-account) .
 
 Follow the steps below to log into vStorage with the Root user account:
 
@@ -48,7 +48,7 @@ By default, **the Root User Account** will have **full access** to your bucket, 
 
 <summary>Bucket ACLs</summary>
 
-You can grant Read, Write or Read and Write permissions to 1 or all other Root users. (Root users granted access via ACLS must be authorized accounts on our VNG Cloud system). For more information, see Using [ACLs.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-acls)
+You can grant Read, Write or Read and Write permissions to 1 or all other Root users. (Root users granted access via ACLS must be authorized accounts on our VNG Cloud system). For more information, see Using [ACLs.](https://docs.vngcloud.vn/vng-cloud-document/vstorage/object-storage/object-storage-han02/features-of-object-storage/working-with-bucket/working-with-buckets-via-vstorage-portal/bucket-acls)
 
 </details>
 
@@ -56,6 +56,6 @@ You can grant Read, Write or Read and Write permissions to 1 or all other Root u
 
 <summary>Bucket Policy</summary>
 
-You can manage access to your buckets through JSON rules. For more information, see [Using Bucket Policy.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-bucket-policy)
+You can manage access to your buckets through JSON rules. For more information, see [Using Bucket Policy.](https://docs.vngcloud.vn/vng-cloud-document/vstorage/object-storage/object-storage-han02/features-of-object-storage/working-with-bucket/working-with-buckets-via-vstorage-portal/bucket-policy)
 
 </details>

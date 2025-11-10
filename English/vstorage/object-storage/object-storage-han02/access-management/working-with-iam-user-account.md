@@ -45,11 +45,11 @@ To initialize a policy used to access vStorage resources, follow the steps below
    1. Select **Allow permissions** : by default, the vIAM system will always be on, which means allowing permissions to be applied to the policy. If you turn this mode off, the system will deny (reverse) the corresponding permissions.
       1. **Allow permissions** : allow access according to the selected action.
       2. **Deny permissions** : deny access according to the selected action.
-   2. Select <mark style="background-color:blue;">**All vstorage-hcm04 actions**</mark> if you want to create a policy that has the right to perform all actions on vStorage. Or you can select some specific actions that you want to authorize for IAM User Account.
+   2. Select <mark style="background-color:blue;">**All vstorage actions**</mark> if you want to create a policy that has the right to perform all actions on vStorage. Or you can select some specific actions that you want to authorize for IAM User Account.
 8. Select **Resources** : select **All resources.**
 9. Select **Request conditions:** enter special conditions for the policy if any.
 
-<figure><img src="../../../../.gitbook/assets/image (555).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot-4.png" alt=""><figcaption></figcaption></figure>
 
 ### Attach IAM Policy to IAM User Account <a href="#attach-iam-policy-vao-iam-user-account" id="attach-iam-policy-vao-iam-user-account"></a>
 
@@ -71,29 +71,26 @@ Once you have created the desired IAM User Account and Policy, you will need to 
 To grant access to bucket/object for IAM User Account, you need to grant permission via Bucket Policy, specifically the steps are as follows:
 
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
-2. Select icon![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F2Ye0SwJ9LL3dubdbJhKn%252Fimage.png%3Falt%3Dmedia%26token%3Dcee711e0-ec36-4c9d-ab5f-c8537e348626\&width=300\&dpr=4\&quality=100\&sign=d8575ee1\&sv=2)in the project containing the bucket you want to grant permissions to.
-3. In the **Identity and Access Management** section , copy the **vStorage User ID** information in the **List of IAM User Account** section.
-
-<figure><img src="../../../../.gitbook/assets/image (557).png" alt=""><figcaption></figcaption></figure>
-
-4. Continue to select **the Bucket** you want to assign permissions to the IAM User Account.
-5. Select the **Action** icon and select **Configure policy.**
+2. Select the **Bucket** you want to assign permissions to the IAM User Account.
+3. Select the **Action** icon and select **Configure policy.**
 
 <figure><img src="../../../../.gitbook/assets/image (558).png" alt=""><figcaption></figcaption></figure>
 
-6. Here, you can choose the configuration for each **Statement** on the left or directly edit the JSON file in the right column. Specifically, the structure of a Bucket Policy includes:
+4. Here, you can choose the configuration for each **Statement** on the left or directly edit the JSON file in the right column. Specifically, the structure of a Bucket Policy includes:
 
 * **Version** : Specifies the version of the Bucket Policy (recommended `"2012-10-17"`).
 * **Statement** : Each policy will have one or more **Statements** (specific purposes of the policy).
   * **Effect** : `Allow`or `Deny`access.
-  * **Principal** : The object granted access, which is the IAM vStorage User ID information you copied above
+  * **Principal** : The object granted access, which is the IAM vStorage User ID information of selected IAM user account.
   * **Action** : Actions allowed on the bucket, for example: `s3:GetObject`(view object), `s3:PutObject`(upload object), `s3:DeleteObject`(delete object),…
   * **Resource** : Specific buckets and objects affected by the policy (using ARN to identify resources).
   * **Condition** : (Optional) Specific condition that restricts access.
 
-5\. Select **Save** to save the Bucket Policy configuration.
+5. Select **Save** to save the Bucket Policy configuration.
 
-<figure><img src="../../../../.gitbook/assets/image (559).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2025-11-10 13-54-54.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2025-11-10 13-57-09 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Access to vStorage via IAM User Account <a href="#thuc-hien-truy-cap-vao-vstorage-thong-qua-iam-user-account" id="thuc-hien-truy-cap-vao-vstorage-thong-qua-iam-user-account"></a>
 

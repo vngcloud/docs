@@ -51,7 +51,9 @@ To initialize a policy used to access vStorage resources, follow the steps below
       2. **Deny permissions** : deny access according to the selected action.
    2. Select <mark style="background-color:blue;">**All vstorage actions**</mark> if you want to create a policy that has the right to perform all actions on vStorage. Or you can select some specific actions that you want to authorize for the Service Account.
 8. Select **Resources** : select **All resources.**
-9. Select **Request conditions:** enter special conditions for the policy if any.
+9.  Select **Request conditions:** enter special conditions for the policy if any.
+
+    <figure><img src="../../../../.gitbook/assets/Screenshot-4.png" alt=""><figcaption></figcaption></figure>
 
 ### Attach IAM Policy to Service Account <a href="#attach-iam-policy-vao-service-account" id="attach-iam-policy-vao-service-account"></a>
 
@@ -73,23 +75,23 @@ Once you have created the desired Service Account and Policy, you will need to l
 To grant access to bucket/object for Service Account, you need to grant permission via Bucket Policy, specifically the steps are as follows:
 
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
-2. Select icon![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F2Ye0SwJ9LL3dubdbJhKn%252Fimage.png%3Falt%3Dmedia%26token%3Dcee711e0-ec36-4c9d-ab5f-c8537e348626\&width=300\&dpr=4\&quality=100\&sign=d8575ee1\&sv=2)in the project containing the bucket you want to grant permissions to.
-3. In the **Identity and Access Management** section , copy the **vStorage User ID** information in the **List of Service Account** section.
-4. Continue to select **the Bucket** you want to assign permissions to the Service Account.
-5. Select the **Action** icon and select **Configure policy.**
-6.
+2. Select the **Bucket** you want to assign permissions to the Service Account.
+3.  Select the **Action** icon and select **Configure policy.**
 
-    1. Here, you can choose the configuration for each **Statement** on the left or directly edit the JSON file in the right column. Specifically, the structure of a Bucket Policy includes:
+    <figure><img src="../../../../.gitbook/assets/image (558).png" alt=""><figcaption></figcaption></figure>
+4. Here, you can choose the configuration for each **Statement** on the left or directly edit the JSON file in the right column. Specifically, the structure of a Bucket Policy includes:
+   * **Version** : Specifies the version of the Bucket Policy (recommended `"2012-10-17"`).
+   * **Statement** : Each policy will have one or more **Statements** (specific purposes of the policy).
+     * **Effect** : `Allow`or `Deny`access.
+     * **Principal** : The object granted access, which is the IAM vStorage User ID information you copied above
+     * **Action** : Actions allowed on the bucket, for example: `s3:GetObject`(view object), `s3:PutObject`(upload object), `s3:DeleteObject`(delete object),…
+     * **Resource** : Specific buckets and objects affected by the policy (using ARN to identify resources).
+     * **Condition** : (Optional) Specific condition that restricts access.
+5. Select **Save** to save the Bucket Policy configuration.
 
-    * **Version** : Specifies the version of the Bucket Policy (recommended `"2012-10-17"`).
-    * **Statement** : Each policy will have one or more **Statements** (specific purposes of the policy).
-      * **Effect** : `Allow`or `Deny`access.
-      * **Principal** : The object granted access, which is the IAM vStorage User ID information you copied above
-      * **Action** : Actions allowed on the bucket, for example: `s3:GetObject`(view object), `s3:PutObject`(upload object), `s3:DeleteObject`(delete object),…
-      * **Resource** : Specific buckets and objects affected by the policy (using ARN to identify resources).
-      * **Condition** : (Optional) Specific condition that restricts access.
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2025-11-10 13-55-00.png" alt=""><figcaption></figcaption></figure>
 
-    7\. Select **Save** to save the Bucket Policy configuration.
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2025-11-10 13-57-21.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -99,7 +101,7 @@ Follow the steps below to work with vStorage via Service Account
 
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
 2. Select the Integration folder **.**
-3. **Select the vStorage API** icon .
+3. Select the **vStorage API** icon .
 4. In the **Authentication** section , you need to fill in the necessary information to configure your vStorage API including:
    1. Enter **the Client ID** . A **Client ID** is a string of characters used by the Service API to identify your application, and is also used to construct the "authorization URL" displayed to the user. You can create and manage **Client IDs** through the vIAM system. **The Client ID** is automatically generated when you create a new **Service Account** .
    2. Enter **the Client Secret** corresponding to **the Client ID** you just entered. The Client ID and Client Secret pair are created and managed by you through the vIAM system. You can select [Click here to manage your Client ID.](https://iam.console.vngcloud.vn/service-accounts) so we can navigate you to the vIAM system and in detail the Service Account management screens.

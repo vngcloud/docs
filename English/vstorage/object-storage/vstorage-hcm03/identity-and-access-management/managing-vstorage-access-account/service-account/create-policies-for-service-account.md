@@ -9,12 +9,12 @@ To create a policy for accessing vStorage resources, follow these steps:
 3. Select **Create a Policy**.
 4. Enter the **Name** and **Description** for the Policy.
 5. Click **Next step**.
-6. Choose the **Product** as **vstorage**.
+6. Choose the **Product** as **vstorage-hcm03**.
 7. Choose **Actions**:
    1. Select **Allow permissions**: By default, the vIAM system will always enable permissions to be applied in the policy. If you disable this mode, the system will deny (reverse) the corresponding permissions.
       1. **Allow permissions**: Allow access based on the selected action.
       2. **Deny permissions**: Deny access based on the selected action.
-   2. Choose **All vstorage actions** if you want to create a policy with permission for all actions on vStorage. For detailed meanings of actions, refer to the Features, vStorage Resources, and Access Permissions.
+   2. Choose **All vstorage-hcm03 actions** if you want to create a policy with permission for all actions on vStorage. For detailed meanings of actions, refer to the Features, vStorage Resources, and Access Permissions.
 8. Choose **Resources**:
    1. Select **All resources** if you want the selected permissions to be allowed access to all resources in your SSO account.
    2. Choose **Specify resources**: Select the specific project, container, or object you want to allow access to. You can enter information for each resource type in one of the following ways:
@@ -28,4 +28,4 @@ After completing the above 8 steps, the policy for vStorage has been created. Ne
 
 In addition to the specific policy creation steps provided above, we also offer you a set of default policies with diverse permissions. You can use this policy set and directly link them to your Service Account. For more information on the list of default policies, please refer to [Features, vStorage Resources, and Access Permissions](https://docs.vngcloud.vn/display/VSEN/Features%2C+vStorage+Resources%2C+and+Access+Permissions).
 
-\
+\\
