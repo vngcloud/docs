@@ -35,7 +35,7 @@ Tiếp theo đây là các hướng dẫn cho các tính năng nâng cao bạn c
 {% hint style="info" %}
 **Chú ý:**&#x20;
 
-* Khác với farm HCM04, trên Farm HAN02, nếu bạn muốn chia sẻ quyền truy cập công khai (public) vào một bucket – nghĩa là cho phép **tất cả mọi người (everyone)** đều có thể truy cập (ví dụ để tải file, xem ảnh, v.v.) – thì **bắt buộc phải sử dụng Bucket Policy** để định nghĩa rõ quyền truy cập đó. Ví dụ một Bucket Policy để cho phép **read object** (đọc file) công khai:
+* Khác với farm HCM03, trên Farm HAN02, nếu bạn muốn chia sẻ quyền truy cập công khai (public) vào một bucket – nghĩa là cho phép **tất cả mọi người (everyone)** đều có thể truy cập (ví dụ để tải file, xem ảnh, v.v.) – thì **bắt buộc phải sử dụng Bucket Policy** để định nghĩa rõ quyền truy cập đó. Ví dụ một Bucket Policy để cho phép **read object** (đọc file) công khai:
 
 ```json
 {
@@ -97,7 +97,15 @@ Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá
 
 ### **Lifecycle transit**
 
-Hiện tại trên farm HAN02, chúng tôi chưa hỗ trợ tính năng transit.
+**Lifecycle transit** là một tính năng quản lý vòng đời của các đối tượng (objects) trong một bucket. Tính năng này giúp bạn lưu trữ các đối tượng một cách hiệu quả về mặt chi phí trong suốt vòng đời của chúng bằng cách chuyển chúng sang các lớp lưu trữ có chi phí thấp hơn.
+
+Các chuyển đổi được hỗ trợ được hiển thị trên sơ đồ bên dưới:
+
+<figure><img src="../../../../.gitbook/assets/transit_diagram.png" alt=""><figcaption></figcaption></figure>
+
+Để thiết lập Lifecycle transit cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Lifecycle Configuration**. Chi tiết tham khảo thêm tại [https://s3browser.com/bucket-lifecycle-configuration.aspx](https://s3browser.com/bucket-lifecycle-configuration.aspx)
+
+<figure><img src="../../../../.gitbook/assets/image (595).png" alt=""><figcaption></figcaption></figure>
 
 ### **CORS**
 

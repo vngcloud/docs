@@ -2,11 +2,9 @@
 
 ## Tổng quan
 
-Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên VNG Cloud. **Với Region HAN02, tại  một thời điểm&#x20;**<mark style="color:red;">**bạn có thể sở hữu tối đa 10 Project**</mark>**&#x20;và sử dụng chúng để tổ chức lưu trữ dữ liệu của bạn.**
+Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên VNG Cloud. **Với Region HAN02, tại một thời điểm&#x20;**<mark style="color:red;">**bạn có thể sở hữu tối đa 10 Project**</mark>**&#x20;và sử dụng chúng để tổ chức lưu trữ dữ liệu của bạn.**
 
 ***
-
-
 
 ## **Phạm vi giới hạn project**
 
@@ -65,7 +63,7 @@ Bạn có thể xem và sử dụng các thuộc tính cho project bao gồm th�
 3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (601).png" alt="" data-size="line">tại **project** bạn muốn xem chi tiết.
 4. Trên trang hiển thị thông tin chi tiết **project**, bạn có thể xem và sử dụng các thuộc tính cho project
 
-* **Information**: Cung cấp các thông tin chung của project như Tổng quota, Tổng usage, Project type, Account URL, Project Owner.&#x20;
+* **Information**: Cung cấp các thông tin chung của project như Tổng quota, Tổng usage, Project type, Account URL, Project Owner.
 * **Identity and Access Management**: Cung cấp thông tin IAM User Account, Service Account cũng như S3 key để bạn có thể phân quyền và làm việc với vStorage.
 * **History**: Cung cấp thông tin lịch sử tác động tới project bao gồm loại hành động, trạng thái hành động, thời gian hành động xảy ra và mô tả chi tiết hành động nếu có.
 * **Connection Information**: Cung cấp các câu lệnh và tệp tin cấu hình để kết nối project với S3.
@@ -87,8 +85,7 @@ Bạn đã khởi tạo project với lượng quota ban đầu phù hợp với
 5. Chọn **Thanh toán** sau khi kiểm tra giỏ hàng và hình thức thanh toán.
 6. Chọn **Tiếp tục thanh toán** và thực hiện thanh toán sau khi chọn phương thức thanh toán phù hợp.
 
-Sau khi bạn thực hiện thành công 6 bước trên, giá trị tổng **quota** mới sau khi thay đổi sẽ được cập nhật trên thông tin chung của project mà bạn chọn.\
-
+Sau khi bạn thực hiện thành công 6 bước trên, giá trị tổng **quota** mới sau khi thay đổi sẽ được cập nhật trên thông tin chung của project mà bạn chọn.\\
 
 <figure><img src="../../../../.gitbook/assets/image (995).png" alt=""><figcaption></figcaption></figure>
 
@@ -131,7 +128,7 @@ Hệ thống sẽ tự động gia hạn 3 ngày trước khi dịch vụ hết 
 2. Tại thời điểm thiết lập thông tin về project cần mua, chọn **Gia hạn tự động**.
 3. Chọn **chu kỳ gia hạn tự động**. Chúng tôi cung cấp các chu kỳ gia hạn bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng. Khi bạn thực hiện chọn chu kỳ gia hạn, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ lưu trữ mới và tổng số tiền bạn cần chi trả cho việc gia hạn **project**.
 
-Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](../../vstorage-hcm03/cach-tinh-phi/).&#x20;
+Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](../../vstorage-hcm03/cach-tinh-phi/).
 
 Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ mới sau khi gia hạn project sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
 
@@ -143,7 +140,7 @@ Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (607).png" alt="" data-size="line"> tại **project** bạn muốn thực hiện thiết lập gia hạn tự động. Chọn Enable Auto-renew.
-3. Màn hình **Enable Auto-renew** được hiển th&#x1ECB;**.** Chọn **Period** gia hạn mà bạn mong muốn.&#x20;
+3. Màn hình **Enable Auto-renew** được hiển th&#x1ECB;**.** Chọn **Period** gia hạn mà bạn mong muốn.
 4. Chọn **OK.**
 
 Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ mới sau khi gia hạn project sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
@@ -156,7 +153,7 @@ Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (609).png" alt="" data-size="line"> tại **project** bạn muốn thực hiện tắt thiết lập gia hạn tự động. Chọn **Disable Auto-renew.**
-3. Màn hình **Disable Auto-renew** được hiển th&#x1ECB;**.**&#x20;
+3. Màn hình **Disable Auto-renew** được hiển th&#x1ECB;**.**
 4. Chọn **OK.**
 
 Sau khi bạn thực hiện thành công các bước trên, tính năng gia hạn tự động cho project đã được tắt.
@@ -267,7 +264,7 @@ Sau khi bạn khởi tạo một project sử dụng ví POC, lúc này bạn c�
 3. **Bạn có thể gia hạn project sử dụng ví POC nếu bạn đã gia hạn thời gian sử dụng ví POC. Sau khi bạn gia hạn thời gian sử dụng ví POC thì thời gian bạn có thể gia hạn project là quãng thời gian từ ngày kết thúc hiện tại tới ngày hết hạn mới của ví POC**. Để tăng thời gian sử dụng ví POC, bạn hãy liên hệ với nhân viên Sale hoặc nhân viên hỗ trợ trực tiếp cho bạn hoặc mở một ticket support trên hệ thống của chúng tôi. Chọn **Gia hạn**.
 4. Chọn **Checkout PoC**.
 
-Sau khi bạn hoàn thành 4 bước được mô tả bên trên, project của bạn đã được gia hạn thông qua phương thức thanh toán là ví POC.&#x20;
+Sau khi bạn hoàn thành 4 bước được mô tả bên trên, project của bạn đã được gia hạn thông qua phương thức thanh toán là ví POC.
 
 Quy trình và phương thức tính giá tương tự như khi gia hạn project thông thường. Chi tiết tham khảo thêm tại Cách tính phí.
 
@@ -279,28 +276,7 @@ Quy trình và phương thức tính giá tương tự như khi gia hạn projec
 
 Sau khi bạn khởi tạo một project sử dụng ví POC, lúc này nếu bạn không có nhu cầu sử dụng project này, bạn có thể thực hiện xóa chúng theo hướng dẫn tại Xóa project.
 
-Lúc này **project** bị xóa sẽ nằm trong **Thùng rác**, bạn có thể:
-
-* **Xóa** **hoàn toàn** project khỏi vStorage bằng cách chọn **Xóa**.
-* **Khôi phục** lại project sử dụng ví POC theo hướng dẫn ngay bên dưới.
-
-</details>
-
-<details>
-
-<summary>Khôi phục project sử dụng ví POC</summary>
-
-Bạn có thể khôi phục project sau khi xóa theo hướng dẫn bên trên bằng cách:
-
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn menu **Thùng rác.**
-3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (621).png" alt="" data-size="line"> trên **project** muốn thực hiện khôi phục.
-4. **Bạn có thể gia hạn project sử dụng ví POC với khoảng thời gian gia hạn tính từ ngày thực hiện xóa project tới ngày kết thúc thời gian sử dụng ví POC.** Để tăng thời gian sử dụng ví POC, bạn hãy liên hệ với nhân viên Sale hoặc nhân viên hỗ trợ trực tiếp cho bạn hoặc mở một ticket support trên hệ thống của chúng tôi. Chọn **Khôi phục.**
-5. Chọn **Checkout PoC**.
-
-Sau khi bạn hoàn thành 5 bước được mô tả bên trên, project của bạn đã được khôi phục thông qua phương thức thanh toán là ví POC.&#x20;
-
-Quy trình và phương thức tính giá tương tự như khi khôi phục project thông thường. Chi tiết tham khảo thêm tại Cách tính phí.
+Lúc này **project** sẽ bị **xóa hoàn toàn** khỏi vStorage.
 
 </details>
 
@@ -310,13 +286,13 @@ Quy trình và phương thức tính giá tương tự như khi khôi phục pro
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (622).png" alt="" data-size="line">tại **project** bạn muốn thực hiện dừng POC. Chọn **Dừng POC**.
-3. Chọn **Dừng POC**.&#x20;
+3. Chọn **Dừng POC**.
 
-Sau khi bạn thực hiện dừng POC thành công thì project của bạn sẽ được chuyển thành loại tài nguyên trả trước và được chuyển vào Thùng rác.
+Sau khi bạn thực hiện dừng POC thành công thì project của bạn sẽ được chuyển thành loại tài nguyên trả trước với trạng thái đã hết hạn.
 
 * Nếu bạn thực sự không có nhu cầu sử dụng project này nữa thì bạn có thể thực hiện xóa hoàn toàn project khỏi hệ thống của chúng tôi theo hướng dẫn tại Xóa project.
-* **Nếu bạn muốn khôi phục project vừa xóa này để tiếp tục sử dụng, hãy làm theo hướng dẫn Khôi phục project. Khi khôi phục project vừa được dừng POC, bạn cần chọn lại chu kỳ gia hạn mới và thực hiện thanh toán tiền thật của bạn (số dư ví credit, ví Momo, ví Zalopay,...).**
-* Bạn cũng không thể bật sử dụng POC sau khi đã thực hiện Dừng POC. Nếu bạn có vướng mắc lúc này, hãy liên hệ với nhân viên Sale hoặc nhân viên hỗ trợ trực tiếp cho bạn hoặc mở một ticket support trên hệ thống của chúng tôi.&#x20;
+* **Nếu bạn muốn gia hạn project này để tiếp tục sử dụng, hãy làm theo hướng dẫn Gia hạn project. Khi gia hạn project vừa được dừng POC, bạn cần chọn lại chu kỳ gia hạn mới và thực hiện thanh toán tiền thật của bạn (số dư ví credit, ví Momo, ví Zalopay,...).**
+* Bạn cũng không thể bật sử dụng POC sau khi đã thực hiện Dừng POC. Nếu bạn có vướng mắc lúc này, hãy liên hệ với nhân viên Sale hoặc nhân viên hỗ trợ trực tiếp cho bạn hoặc mở một ticket support trên hệ thống của chúng tôi.
 
 </details>
 
@@ -335,4 +311,4 @@ Tại thời điểm hết hạn sử dụng ví POC, chúng tôi sẽ:
 
 ## Thực hiện trial project
 
-Hiện tại, với region HAN02 chúng tôi chưa hỗ trợ bạn có thể thực hiện tạo project trial. Tính năng này sẽ được chúng tôi phát triển trong các version tiếp theo.
+Hiện tại, với region HAN02 chúng tôi chưa hỗ trợ bạn có thể thực hiện tạo project trial.

@@ -70,7 +70,15 @@ Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá
 
 ### **Lifecycle transit**
 
-Hiện tại trên region HCM04 chúng tôi chỉ hỗ trợ bạn tạo Project với Storage Class **Instant Archive Type**. Do chỉ có 1 storage class duy nhất nên hiện tại tính năng Lifecycle transit sẽ không hoạt động.
+**Lifecycle transit** là một tính năng quản lý vòng đời của các đối tượng (objects) trong một bucket. Tính năng này giúp bạn lưu trữ các đối tượng một cách hiệu quả về mặt chi phí trong suốt vòng đời của chúng bằng cách chuyển chúng sang các lớp lưu trữ có chi phí thấp hơn.
+
+Các chuyển đổi được hỗ trợ được hiển thị trên sơ đồ bên dưới:
+
+<figure><img src="../../../../.gitbook/assets/transit_diagram.png" alt=""><figcaption></figcaption></figure>
+
+Để thiết lập Lifecycle transit cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Lifecycle Configuration**. Chi tiết tham khảo thêm tại [https://s3browser.com/bucket-lifecycle-configuration.aspx](https://s3browser.com/bucket-lifecycle-configuration.aspx)
+
+<figure><img src="../../../../.gitbook/assets/image (595).png" alt=""><figcaption></figcaption></figure>
 
 ### **CORS**
 

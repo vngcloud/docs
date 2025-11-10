@@ -1,6 +1,6 @@
 # Sử dụng tính năng Event notification
 
-**vent Notification** trong vStorage là tính năng cho phép bạn nhận thông báo về các sự kiện xảy ra trong bucket dưới dạng tệp tin JSON, chẳng hạn như khi một object được upload, delete hay ghi đè.
+E**vent Notification** trong vStorage là tính năng cho phép bạn nhận thông báo về các sự kiện xảy ra trong bucket dưới dạng tệp tin JSON, chẳng hạn như khi một object được upload, delete hay ghi đè.
 
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 

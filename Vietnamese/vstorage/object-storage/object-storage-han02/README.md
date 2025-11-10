@@ -38,7 +38,7 @@ Các bảng sau đây liệt kê các giá trị tối đa cho tài nguyên lưu
 
 ### Các hạn mức khác
 
-<table data-full-width="true"><thead><tr><th>Item</th><th>Limit</th></tr></thead><tbody><tr><td>Số lượng object tối đa được lưu trữ trên một bucket</td><td>600 triệu objects</td></tr><tr><td>Số lượng container/ bucket tối đa có thể tạo trên một project</td><td>Không giới hạn</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Item</th><th>Limit</th></tr></thead><tbody><tr><td>Số lượng object tối đa được lưu trữ trên một bucket</td><td>600 triệu objects</td></tr><tr><td>Số lượng bucket tối đa có thể tạo trên một project</td><td>Không giới hạn</td></tr></tbody></table>
 
 ***
 

@@ -9,7 +9,9 @@
 
 <figure><img src="../../../../../../.gitbook/assets/image (1091).png" alt=""><figcaption></figcaption></figure>
 
+Tham khảo thêm bảng bên dưới để hiểu cách hoạt động của mỗi storage class:
 
+<table data-full-width="true"><thead><tr><th>Item</th><th>Gold Class</th><th>Instant Archive</th><th>Archive</th></tr></thead><tbody><tr><td><strong>Được thiết kế cho</strong></td><td>Dành cho dữ liệu được truy cập thường xuyên, yêu cầu độ trễ thấp và thông lượng cao với thời gian truy xuất tính bằng <strong>mili giây (10 triệu object/ 1 giờ)</strong>.</td><td>Để lưu trữ dữ liệu lâu dài với khả năng truy xuất tính bằng <strong>mili giây (5 triệu object/ 1 giờ)</strong>.</td><td>Để lưu trữ dữ liệu dài hạn được truy cập một hoặc hai lần trong một năm với thời gian truy xuất theo <strong>giờ (5 triệu object/ 12 giờ và 10 triệu object/ 24 giờ).</strong></td></tr><tr><td><strong>Tính bền vững</strong></td><td>99.999999999%</td><td>99.999999999%</td><td>99.999999999%</td></tr><tr><td><strong>Tính sẵn sàng</strong></td><td>99.99%</td><td>99.99%</td><td>99.99%</td></tr><tr><td><strong>Quota tối thiểu</strong></td><td>No</td><td>No</td><td>5 TB</td></tr><tr><td><strong>Thời gian lưu trữ tối thiểu</strong></td><td>No</td><td>No</td><td>90 ngày</td></tr><tr><td><strong>Kích thước object tối thiểu</strong></td><td>0</td><td>0</td><td>128 KB</td></tr><tr><td>T<strong>raffic miễn phí</strong></td><td>Quota x 10</td><td>Quota x 2</td><td>Quota x1</td></tr><tr><td>R<strong>equest miễn phí</strong></td><td>Miễn phí request trên hiệu suất Gold Class</td><td>Miễn phí request trên miễn phí Instant Archive Class</td><td>Miễn phí request trên hiệu suất Archive Class</td></tr></tbody></table>
 
 ***
 
@@ -56,7 +58,7 @@ Thực hiện theo hướng dẫn bên dưới để thiết lập transition ru
 
 ## Với Expiration rule
 
-Expiration rule và tập quy định tự động xóa object khi đến thời điểm hết hạn. Thực hiện theo hướng dẫn bên dưới để thiết lập expiration rule:
+Expiration rule là tập quy định tự động xóa object khi đến thời điểm hết hạn. Thực hiện theo hướng dẫn bên dưới để thiết lập expiration rule:
 
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 
@@ -74,7 +76,7 @@ Expiration rule và tập quy định tự động xóa object khi đến thời
 
 6\. Chọn Rule type: hiện tại, chúng tôi chỉ hỗ trợ 1 loại rule Expiration: Rule hỗ trợ xóa các object theo điều kiện ràng buộc.
 
-7\. Nhập **Filter**. Filter này được áp dụng cho một lifecycle rule cụ thể. **Mỗi lifecycle rule chỉ được đặt 1 filter duy nhất, nếu bạn muốn áp dụng quy tắc lifecycle mà bạn đang tạo lên tất cả các object thuộc bucket này, hãy để trống trường thông tin này.** Hoặc bạn có thể lọc các object mong muốn áp dụng lifecycle rule thông qua prefix.
+7\. Nhập **Filter**. Filter này được áp dụng cho một lifecycle rule cụ thể. N**ếu bạn muốn áp dụng quy tắc lifecycle mà bạn đang tạo lên tất cả các object thuộc bucket này, hãy để trống trường thông tin này.** Hoặc bạn có thể lọc các object mong muốn áp dụng lifecycle rule thông qua prefix.
 
 <figure><img src="../../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 

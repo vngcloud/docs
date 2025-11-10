@@ -2,7 +2,7 @@
 
 ## Tổng quan
 
-Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên VNG Cloud. **Với Region HCM04, tại  một thời điểm&#x20;**<mark style="color:red;">**bạn chỉ có thể sở hữu một Project**</mark>**&#x20;và sử dụng chúng để tổ chức lưu trữ dữ liệu của bạn.**
+Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên VNG Cloud. **Với Region HCM04, tại  một thời điểm&#x20;**<mark style="color:red;">**bạn có thể sở hữu tối đa 10 Project**</mark>**&#x20;và sử dụng chúng để tổ chức lưu trữ dữ liệu của bạn.**
 
 ***
 
@@ -276,28 +276,7 @@ Quy trình và phương thức tính giá tương tự như khi gia hạn projec
 
 Sau khi bạn khởi tạo một project sử dụng ví POC, lúc này nếu bạn không có nhu cầu sử dụng project này, bạn có thể thực hiện xóa chúng theo hướng dẫn tại Xóa project.
 
-Lúc này **project** bị xóa sẽ nằm trong **Thùng rác**, bạn có thể:
-
-* **Xóa** **hoàn toàn** project khỏi vStorage bằng cách chọn **Xóa**.
-* **Khôi phục** lại project sử dụng ví POC theo hướng dẫn ngay bên dưới.
-
-</details>
-
-<details>
-
-<summary>Khôi phục project sử dụng ví POC</summary>
-
-Bạn có thể khôi phục project sau khi xóa theo hướng dẫn bên trên bằng cách:
-
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
-2. Chọn menu **Thùng rác.**
-3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (621).png" alt="" data-size="line"> trên **project** muốn thực hiện khôi phục.
-4. **Bạn có thể gia hạn project sử dụng ví POC với khoảng thời gian gia hạn tính từ ngày thực hiện xóa project tới ngày kết thúc thời gian sử dụng ví POC.** Để tăng thời gian sử dụng ví POC, bạn hãy liên hệ với nhân viên Sale hoặc nhân viên hỗ trợ trực tiếp cho bạn hoặc mở một ticket support trên hệ thống của chúng tôi. Chọn **Khôi phục.**
-5. Chọn **Checkout PoC**.
-
-Sau khi bạn hoàn thành 5 bước được mô tả bên trên, project của bạn đã được khôi phục thông qua phương thức thanh toán là ví POC.&#x20;
-
-Quy trình và phương thức tính giá tương tự như khi khôi phục project thông thường. Chi tiết tham khảo thêm tại Cách tính phí.
+Lúc này **project** sẽ bị **xóa hoàn toàn** khỏi vStorage.
 
 </details>
 
@@ -312,7 +291,7 @@ Quy trình và phương thức tính giá tương tự như khi khôi phục pro
 Sau khi bạn thực hiện dừng POC thành công thì project của bạn sẽ được chuyển thành loại tài nguyên trả trước và được chuyển vào Thùng rác.
 
 * Nếu bạn thực sự không có nhu cầu sử dụng project này nữa thì bạn có thể thực hiện xóa hoàn toàn project khỏi hệ thống của chúng tôi theo hướng dẫn tại Xóa project.
-* **Nếu bạn muốn khôi phục project vừa xóa này để tiếp tục sử dụng, hãy làm theo hướng dẫn Khôi phục project. Khi khôi phục project vừa được dừng POC, bạn cần chọn lại chu kỳ gia hạn mới và thực hiện thanh toán tiền thật của bạn (số dư ví credit, ví Momo, ví Zalopay,...).**
+* **Nếu bạn muốn gia hạn project này để tiếp tục sử dụng, hãy làm theo hướng dẫn Gia hạn project. Khi gia hạn project vừa được dừng POC, bạn cần chọn lại chu kỳ gia hạn mới và thực hiện thanh toán tiền thật của bạn (số dư ví credit, ví Momo, ví Zalopay,...).**
 * Bạn cũng không thể bật sử dụng POC sau khi đã thực hiện Dừng POC. Nếu bạn có vướng mắc lúc này, hãy liên hệ với nhân viên Sale hoặc nhân viên hỗ trợ trực tiếp cho bạn hoặc mở một ticket support trên hệ thống của chúng tôi.&#x20;
 
 </details>
@@ -332,4 +311,4 @@ Tại thời điểm hết hạn sử dụng ví POC, chúng tôi sẽ:
 
 ## Thực hiện trial project
 
-Hiện tại, với region HCM04 chúng tôi chưa hỗ trợ bạn có thể thực hiện tạo project trial. Tính năng này sẽ được chúng tôi phát triển trong các version tiếp theo.
+Hiện tại, với region HCM04 chúng tôi chưa hỗ trợ bạn có thể thực hiện tạo project trial.

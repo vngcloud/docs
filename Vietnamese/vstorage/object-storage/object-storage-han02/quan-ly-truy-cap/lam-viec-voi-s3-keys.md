@@ -92,7 +92,7 @@ Sau khi bạn đã thực hiện khởi tạo project và khởi tạo S3 key th
 Để hủy (xóa) một hay nhiều S3 key đã tạo trước đó, hãy làm theo hướng dẫn bên dưới:
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) với tài khoản <mark style="background-color:orange;">Root User Account</mark> hoặc tài khoản <mark style="background-color:orange;">IAM User Account</mark>.
-2. họn **Region HAN02.**
+2. Chọn **Region HAN02.**
 3. Chọn biểu tượng  <img src="../../../../.gitbook/assets/image (581).png" alt="" data-size="line"> tại project mà bạn vừa khởi tạo sau đó chọn mục **Identity and Access Management.**
 4. Tại mục **List of S3 keys of this project**, chọn **S3 key** mà bạn muốn xóa sau đó chọn **Delete.**
 
