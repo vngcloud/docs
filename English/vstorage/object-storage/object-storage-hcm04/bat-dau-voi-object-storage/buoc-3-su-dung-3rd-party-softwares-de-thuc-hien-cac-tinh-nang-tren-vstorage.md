@@ -70,7 +70,15 @@ To set up Lifecycle rotation for a bucket using S3 Browser, right-click on the b
 
 ### **Lifecycle transit** <a href="#lifecycle-transit" id="lifecycle-transit"></a>
 
-Currently on region HCM04 we only support you to create Project with Storage Class **Instant Archive Type** . Because there is only 1 storage class, currently the Lifecycle transit feature will not work.
+**Lifecycle transit** là một tính năng quản lý vòng đời của các đối tượng (objects) trong một bucket. Tính năng này giúp bạn lưu trữ các đối tượng một cách hiệu quả về mặt chi phí trong suốt vòng đời của chúng bằng cách chuyển chúng sang các lớp lưu trữ có chi phí thấp hơn.
+
+Các chuyển đổi được hỗ trợ được hiển thị trên sơ đồ bên dưới:
+
+<figure><img src="../../../../.gitbook/assets/transit_diagram (1).png" alt=""><figcaption></figcaption></figure>
+
+Để thiết lập Lifecycle transit cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Lifecycle Configuration**. Chi tiết tham khảo thêm tại [https://s3browser.com/bucket-lifecycle-configuration.aspx](https://s3browser.com/bucket-lifecycle-configuration.aspx)
+
+<figure><img src="../../../../.gitbook/assets/image (538).png" alt=""><figcaption></figcaption></figure>
 
 ### **CORS** <a href="#cors" id="cors"></a>
 

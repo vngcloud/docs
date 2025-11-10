@@ -20,7 +20,7 @@ b. For **IAM User Account** and **Service Account : you can get vStorage User ID
 
 <figure><img src="../../../../../../.gitbook/assets/image (41) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-4\. Here, you can choose the configuration for each **Statement** on the left or directly edit the JSON file in the right column. Specifically, the structure of a Bucket Policy includes:
+6\. Here, you can choose the configuration for each **Statement** on the left or directly edit the JSON file in the right column. Specifically, the structure of a Bucket Policy includes:
 
 * **Version** : Specifies the version of the Bucket Policy (recommended `"2012-10-17"`).
 * **Statement** : Each policy will have one or more **Statements** (specific purposes of the policy).
@@ -32,7 +32,7 @@ b. For **IAM User Account** and **Service Account : you can get vStorage User ID
 
 <figure><img src="../../../../../../.gitbook/assets/image (42) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-4\. Select **Save** to save the Bucket Policy configuration.
+7\. Select **Save** to save the Bucket Policy configuration.
 
 ***
 
@@ -171,6 +171,6 @@ _Allow all users to GetObject + allow only 1 vStorage user in the file to PutObj
 {% hint style="info" %}
 **Attention:**
 
-* **Check public permissions** : Some Bucket Policies may result in public access rights. You should check carefully to ensure data security.
-* **Bucket Policy and ACL** : Ensure that the permissions in the Bucket Policy do not conflict with **the Access Control List (ACL)** of the bucket or object.
+* **Check public permissions**: Some Bucket Policies may result in public access rights. You should check carefully to ensure data security.
+* **Bucket Policy and ACL**: Ensure that the permissions in the Bucket Policy do not conflict with **the Access Control List (ACL)** of the bucket or object.
 {% endhint %}

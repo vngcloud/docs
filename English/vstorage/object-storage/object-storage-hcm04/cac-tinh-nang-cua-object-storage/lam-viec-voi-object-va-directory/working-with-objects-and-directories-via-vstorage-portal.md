@@ -21,11 +21,13 @@ To upload an object to a bucket, please follow the steps below:
 
 ***
 
+## Download object <a href="#upload-download-object" id="upload-download-object"></a>
+
 To download one or more objects, please follow the steps below:
 
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** you want to download the object from.
 2. Select the **objects** you want to download.
-3. Select the action icon, then select the **Download button**
+3. Select the action icon, then select the **Download** button
 
 <figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -35,7 +37,7 @@ To search for an object/ folder, please follow the steps below:
 
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** you want to search for object/folder
 2. In the **Find objects by prefix** box , you can search for objects/folders by prefix by entering the character string that is the prefix you want to search for.
-3. Press **Enter or select the Search** icon
+3. Press **Enter** or select the **Search** icon
 
 <figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -44,7 +46,7 @@ To search for an object/ folder, please follow the steps below:
 To move an object, please follow the steps below:
 
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** containing the object you want to move.
-2. **Select the Action** icon and select **Move**
+2. Select the **Action** icon and select **Move**
 
 <figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -57,11 +59,11 @@ You can move objects across buckets within a project. We currently do not suppor
 To copy an object, please follow the steps below:
 
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** containing the object you want to copy.
-2. **Select the Action** icon and select **Copy.**
+2. Select the **Action** icon and select **Copy.**
 
 <figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-3. Select **the bucket** and **directory** (if any) that you want to copy the object to. We also support you to create a new directory if the directory you want to copy to does not exist.
+3. Select the **bucket** and **directory** (if any) that you want to copy the object to. We also support you to create a new directory if the directory you want to copy to does not exist.
 
 You can copy objects across buckets within a project. Currently we do not support copying objects across different projects.
 
@@ -70,7 +72,7 @@ You can copy objects across buckets within a project. Currently we do not suppor
 To rename an object, please follow the steps below:
 
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** containing the object you want to rename.
-2. **Select the Action** icon and select **Rename.**
+2. Select the **Action** icon and select **Rename.**
 
 <figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -95,7 +97,7 @@ To share an object in a bucket, you can follow the steps below:
 To set metadata for an object, please follow the steps below:
 
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** containing the object you want to set metadata for.
-2. **Select the Action** icon and select **Metadata.**
+2. Select the **Action** icon and select **Metadata.**
 
 <figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -119,7 +121,7 @@ To delete one or more objects, you can:
 
 2\. Select **project, bucket** then select the **objects** you want to delete **.**
 
-**2. Select the Action** icon then select **Delete**
+3\. Select the **Action** icon then select **Delete**
 
 <figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -151,6 +153,6 @@ To delete a directory, you can:
 
 2\. Select **the project, bucket** containing the directory you want to delete
 
-**3. Select the Action** icon and select **Delete**
+3\. Select the **Action** icon and select **Delete**
 
 <figure><img src="../../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

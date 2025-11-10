@@ -61,23 +61,22 @@ After you have successfully initialized the project and initialized the S3 key, 
 To integrate the S3 Browser tool with vStorage, you can follow the instructions below:
 
 1. Download the S3 Browser user tool here [https://s3browser.com/download.aspx](https://s3browser.com/download.aspx) .
-2. Open the S3 Browser app **.** Select the Account folder **, then select Add new account**
+2.  Open the S3 Browser app **.** Select the Account folder, **then select Add new account**
 
-<figure><img src="../../../../.gitbook/assets/image (27) (1).png" alt="" width="295"><figcaption></figcaption></figure>
-
-1. The Add New Account screen appears, now you enter the following information:
+    <figure><img src="../../../../.gitbook/assets/image (27) (1).png" alt="" width="295"><figcaption></figcaption></figure>
+3. The Add New Account screen appears, now you enter the following information:
 
 * **Display name:** Display name of the account. Example: Demo\_HCM04
 * **Account type** : Select **S3 Compatible Storage.**
-* **REST Endpoint** : Path to vstorage, for Region HCM04 the path is [hcm04.vstorage.vngcloud.vn](http://hcm01.vstorage.vngcloud.vn/)
+* **REST Endpoint** : Path to vstorage, for Region HCM04 the path is [hcm04.vstorage.vngcloud.vn](http://hcm04.vstorage.vngcloud.vn/)
 * **Access Key ID & Secret Access Key:** This is the S3 key pair you generated in step 2 earlier.
 
-1. Select the **Use Secure transfer (SSL/TLS)** option because vStorage only supports encrypted transmission channels (HTTPS, port 443) to ensure data security, vStorage currently does not support unencrypted transmission channels (HTTP, port 80).
-2. Select **Add new account.**
+4. Select the **Use Secure transfer (SSL/TLS)** option because vStorage only supports encrypted transmission channels (HTTPS, port 443) to ensure data security, vStorage currently does not support unencrypted transmission channels (HTTP, port 80).
+5. Select **Add new account.**
 
 <figure><img src="../../../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 
-1. When the connection is successful, the S3 Browser screen will display as follows:
+6. When the connection is successful, the S3 Browser screen will display as follows:
 
 <figure><img src="../../../../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -184,7 +183,7 @@ To set up a bucket policy using S3 Browser, right-click on the bucket, then sele
 To cancel (delete) one or more previously created S3 keys, follow the instructions below:
 
 1. Log in to [https://vstorage.console.vngcloud.vn with ](https://vstorage.console.vngcloud.vn/storage/list)Root User Account or IAM User Account .
-2. Region **HCM04**
+2. Select region **HCM04**
 3. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FzBejUW7ARqXZMMLNJPI2%252Fimage.png%3Falt%3Dmedia%26token%3D67d600f9-d645-434f-b403-be01af3603e0\&width=37\&dpr=4\&quality=100\&sign=46e8d333\&sv=2)in the project you just created and then select **Identity and Access Management.**
 4. In List **of S3 keys of this project** , select **the S3 key** you want to delete and then select **Delete.**
 

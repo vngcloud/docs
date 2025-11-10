@@ -9,14 +9,14 @@ Before you can store data in vStorage, you must create a Bucket. In vStorage, a 
 To initiate a project, please follow the steps below:
 
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** you want to create **a bucket for.**
-2. Select **Create a bucket** .
+2. Select **Create a bucket**.
 3. Enter **Bucket name** according to our rules.
 4. Select **Enable Object Locked if you want to use Object locked** feature for this bucket.
 
 {% hint style="info" %}
 **Attention:**
 
-* To use the **Object locked** feature for a bucket on vStorage, when initializing the bucket, you must select **Enable Object Locked** .
+* To use the **Object locked** feature for a bucket on vStorage, when initializing the bucket, you must select **Enable Object Locked**.
 * When you select **Enable Object Locked** , we will automatically enable **Object versioning** for your bucket.
 {% endhint %}
 
@@ -34,7 +34,7 @@ To view detailed information about a bucket, you can:
 
 2\. Select **the project** containing **the bucket** you want to view details for.
 
-3\. Select **the bucket** you want to view details for and select **View detail** .
+3\. Select **the bucket** you want to view details for and select **View detail**.
 
 **4. On the bucket** details page , you can view and use the features we provide for the bucket including:
 
@@ -72,7 +72,7 @@ To use Bucket encryption, please follow the steps below:
 
 To delete a bucket, please follow the steps below:
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 
 2\. Select **the project** and select **the bucket** you want to delete.
 

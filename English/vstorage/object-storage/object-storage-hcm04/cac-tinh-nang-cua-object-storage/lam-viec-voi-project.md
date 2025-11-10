@@ -9,7 +9,7 @@ After you successfully complete the above steps, the automatic renewal feature f
 
 ## Overview <a href="#tong-quan" id="tong-quan"></a>
 
-A Project is a term on vStorage that represents a storage package with a specific capacity that you purchase on VNG Cloud. <mark style="color:red;">**With Region HCM04, at a time you can only own one Project and use them to organize your data storage.**</mark>
+A Project is a term on vStorage that represents a storage package with a specific capacity that you purchase on VNG Cloud. <mark style="color:red;">**With Region HCM04, at a time you can own up to 10 Projects and use them to organize your data storage.**</mark>
 
 ***
 
@@ -185,25 +185,6 @@ Because deleting a project is risky, we recommend that you consider carefully an
 
 ***
 
-## Restore project <a href="#khoi-phuc-project" id="khoi-phuc-project"></a>
-
-You have just deleted a project or a project has expired. The project will be moved to the Trash folder and stored here for 7 days. After 7 days, the project will be permanently deleted and cannot be restored. During these 7 days, you discover that you have deleted the wrong project or you want to continue using the expired project. To solve this problem, we provide you with the feature to restore the deleted project.
-
-To restore a deleted project, you can:
-
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
-2. Select the **Trash menu.**
-3. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FDlgeznS53kbV3N5Z0anW%252Fimage.png%3Falt%3Dmedia%26token%3Db8930b0f-2868-41cd-a579-963559041d26\&width=49\&dpr=4\&quality=100\&sign=889ec58d\&sv=2)on **the project** you want to restore.
-4. Select **Restore** .
-5. Select **Checkout** after reviewing your shopping cart and payment method.
-6. Select **Continue to checkout** and make payment after choosing the appropriate payment method.
-
-After you successfully complete the above 6 steps, the project will be restored with new archive cycle information and updated on the general information of the project you selected.
-
-When a project is moved to the Trash, you will no longer be able to upload/download or perform actions on objects. We recommend that you renew or back up all data in the project before the expiration date.
-
-***
-
 ## Auto-scale Quota <a href="#tang-dung-luong-tu-dong-auto-scale-quota" id="tang-dung-luong-tu-dong-auto-scale-quota"></a>
 
 The Auto-scale Quota feature in vStorage allows you to set up automatic storage expansion based on your usage and needs. This guide will provide details on how to configure and manage this feature through the vStorage Portal.
@@ -211,15 +192,15 @@ The Auto-scale Quota feature in vStorage allows you to set up automatic storage 
 To set up automatic growth for a project, you can:
 
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
-2. In the project that needs to set Auto-scale Quota, select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs.vngcloud.vn%2F%7Egitbook%2Fimage%3Furl%3Dhttps%253A%252F%252F3672463924-files.gitbook.io%252F%257E%252Ffiles%252Fv0%252Fb%252Fgitbook-x-prod.appspot.com%252Fo%252Fspaces%25252FB0NrrrdJdpYOYzRkbWp5%25252Fuploads%25252Fxle5SMO5J6MplFpJZC74%25252Fimage.png%253Falt%253Dmedia%2526token%253De9cdb754-9a75-4868-90bf-67e670048eb5%26width%3D27%26dpr%3D4%26quality%3D100%26sign%3D1f9a3808%26sv%3D1\&width=27\&dpr=4\&quality=100\&sign=66330d1\&sv=2)then select **Auto-scale** and continue to select **Configure Auto-scale** or select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs.vngcloud.vn%2F%7Egitbook%2Fimage%3Furl%3Dhttps%253A%252F%252F3672463924-files.gitbook.io%252F%257E%252Ffiles%252Fv0%252Fb%252Fgitbook-x-prod.appspot.com%252Fo%252Fspaces%25252FB0NrrrdJdpYOYzRkbWp5%25252Fuploads%25252Fs6DACNvZx3OSJhJDO654%25252Fimage.png%253Falt%253Dmedia%2526token%253D3164ca6e-fc29-4fd0-b88a-34a960d4cde0%26width%3D29%26dpr%3D4%26quality%3D100%26sign%3Daa473973%26sv%3D1\&width=29\&dpr=4\&quality=100\&sign=6440465f\&sv=2)then select **Set Auto-scale** .
-3. **At the Auto-scale** configuration screen , set up the necessary parameters for **Auto Scale** . Specifically:
+2. In the project that needs to set Auto-scale Quota, select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs.vngcloud.vn%2F%7Egitbook%2Fimage%3Furl%3Dhttps%253A%252F%252F3672463924-files.gitbook.io%252F%257E%252Ffiles%252Fv0%252Fb%252Fgitbook-x-prod.appspot.com%252Fo%252Fspaces%25252FB0NrrrdJdpYOYzRkbWp5%25252Fuploads%25252Fxle5SMO5J6MplFpJZC74%25252Fimage.png%253Falt%253Dmedia%2526token%253De9cdb754-9a75-4868-90bf-67e670048eb5%26width%3D27%26dpr%3D4%26quality%3D100%26sign%3D1f9a3808%26sv%3D1\&width=27\&dpr=4\&quality=100\&sign=66330d1\&sv=2)then select **Auto-scale** and continue to select **Configure Auto-scale** or select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs.vngcloud.vn%2F%7Egitbook%2Fimage%3Furl%3Dhttps%253A%252F%252F3672463924-files.gitbook.io%252F%257E%252Ffiles%252Fv0%252Fb%252Fgitbook-x-prod.appspot.com%252Fo%252Fspaces%25252FB0NrrrdJdpYOYzRkbWp5%25252Fuploads%25252Fs6DACNvZx3OSJhJDO654%25252Fimage.png%253Falt%253Dmedia%2526token%253D3164ca6e-fc29-4fd0-b88a-34a960d4cde0%26width%3D29%26dpr%3D4%26quality%3D100%26sign%3Daa473973%26sv%3D1\&width=29\&dpr=4\&quality=100\&sign=6440465f\&sv=2)then select **Set Auto-scale**.
+3. **At the Auto-scale** configuration screen , set up the necessary parameters for **Auto Scale**. Specifically:
 
-* **Set Quota Unit:** you can choose 1 of 2 types of units including **GB** or **Percent** .
+* **Set Quota Unit:** you can choose 1 of 2 types of units including **GB** or **Percent**.
 * **Set Quota Threshold or Quota Remain:** If you choose **Quota Unit** as **Percent** , here you will enter the percentage of usage threshold that when reached will trigger the quota increase. If you choose **Quota Unit** as **GB** , here you will enter the remaining quota that when reached will trigger the quota increase.
-* **Set Quota Increment Level** : enter desired increment level in **GB** or **Percent** .
+* **Set Quota Increment Level** : enter desired increment level in **GB** or **Percent**.
 
 1. **Choose to receive email** notification when quota increase is successful if desired.
-2. Enable **Auto-scale** at the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs.vngcloud.vn%2F%7Egitbook%2Fimage%3Furl%3Dhttps%253A%252F%252F3672463924-files.gitbook.io%252F%257E%252Ffiles%252Fv0%252Fb%252Fgitbook-x-prod.appspot.com%252Fo%252Fspaces%25252FB0NrrrdJdpYOYzRkbWp5%25252Fuploads%25252FjlLW0mG9Z7he3tym9yeH%25252Fimage.png%253Falt%253Dmedia%2526token%253D247a3e39-731f-4fdb-a2f4-08b6bf8bbf2d%26width%3D64%26dpr%3D4%26quality%3D100%26sign%3D44906aa4%26sv%3D1\&width=64\&dpr=4\&quality=100\&sign=f80a3317\&sv=2). When this icon becomes , ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs.vngcloud.vn%2F%7Egitbook%2Fimage%3Furl%3Dhttps%253A%252F%252F3672463924-files.gitbook.io%252F%257E%252Ffiles%252Fv0%252Fb%252Fgitbook-x-prod.appspot.com%252Fo%252Fspaces%25252FB0NrrrdJdpYOYzRkbWp5%25252Fuploads%25252FVGMWqFlP5OOPvrycdMrg%25252Fimage.png%253Falt%253Dmedia%2526token%253D94d216a5-2e33-489e-884d-f837683920c6%26width%3D59%26dpr%3D4%26quality%3D100%26sign%3D38683327%26sv%3D1\&width=59\&dpr=4\&quality=100\&sign=a00223b5\&sv=2)it means you have successfully enabled **Auto-scale .**
+2. Enable **Auto-scale** at the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs.vngcloud.vn%2F%7Egitbook%2Fimage%3Furl%3Dhttps%253A%252F%252F3672463924-files.gitbook.io%252F%257E%252Ffiles%252Fv0%252Fb%252Fgitbook-x-prod.appspot.com%252Fo%252Fspaces%25252FB0NrrrdJdpYOYzRkbWp5%25252Fuploads%25252FjlLW0mG9Z7he3tym9yeH%25252Fimage.png%253Falt%253Dmedia%2526token%253D247a3e39-731f-4fdb-a2f4-08b6bf8bbf2d%26width%3D64%26dpr%3D4%26quality%3D100%26sign%3D44906aa4%26sv%3D1\&width=64\&dpr=4\&quality=100\&sign=f80a3317\&sv=2). When this icon becomes , ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs.vngcloud.vn%2F%7Egitbook%2Fimage%3Furl%3Dhttps%253A%252F%252F3672463924-files.gitbook.io%252F%257E%252Ffiles%252Fv0%252Fb%252Fgitbook-x-prod.appspot.com%252Fo%252Fspaces%25252FB0NrrrdJdpYOYzRkbWp5%25252Fuploads%25252FVGMWqFlP5OOPvrycdMrg%25252Fimage.png%253Falt%253Dmedia%2526token%253D94d216a5-2e33-489e-884d-f837683920c6%26width%3D59%26dpr%3D4%26quality%3D100%26sign%3D38683327%26sv%3D1\&width=59\&dpr=4\&quality=100\&sign=a00223b5\&sv=2)it means you have successfully enabled **Auto-scale.**
 
 {% hint style="info" %}
 **Attention:**
@@ -247,7 +228,7 @@ Once we confirm that we have provided a POC wallet to your account, to use the P
 3. Select **Create a project.**
 4. **The Create New Project** screen is displayed. In **Project Name** , enter a name that complies with our regulations for your project.
 5. Choose a hosting **Quota** according to your needs. Quota is the maximum hosting package size you can create. For each hosting package, we have provided a minimum and maximum size so you can choose to change based on your actual needs.
-6. **Turn off the Enable auto-renewal** option . Now we show the **PoC** option .
+6. **Turn off the Enable auto-renewal** option. Now we show the **PoC** option.
 7. Select **PoC** .
 8. Select **Create a project.**
 9. Select **Checkout PoC** after reviewing your cart information.
@@ -266,7 +247,7 @@ After you create a project using POC wallet, you can continue to extend the proj
 
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
 2. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FygA5fq4dzy9Rq5tPOgx2%252Fimage.png%3Falt%3Dmedia%26token%3D721a82c5-eb44-4657-9af9-82d2129a5c2d\&width=22\&dpr=4\&quality=100\&sign=856d143c\&sv=2)at **the project** you want to renew. Select **Renew.**
-3. **You can extend the project using POC wallet if you have extended the POC wallet usage period. After you extend the POC wallet usage period, the time you can extend the project is the period from the current end date to the new expiration date of the POC wallet** . To extend the POC wallet usage period, please contact the Sales staff or the staff who directly supports you or open a support ticket on our system. Select **Extend** .
+3. **You can extend the project using POC wallet if you have extended the POC wallet usage period. After you extend the POC wallet usage period, the time you can extend the project is the period from the current end date to the new expiration date of the POC wallet** . To extend the POC wallet usage period, please contact the Sales staff or the staff who directly supports you or open a support ticket on our system. Select **Extend**.
 4. Select **Checkout PoC** .
 
 Once you complete the 4 steps described above, your project has been renewed via the POC wallet payment method.
@@ -281,28 +262,7 @@ The process and pricing method are similar to regular project extensions. For mo
 
 After you initialize a project using POC wallet, if you no longer need to use this project, you can delete it according to the instructions at Delete project.
 
-Now the deleted **project will be in the Trash** , you can:
-
-* **Completely remove** the project from vStorage by selecting **Delete** .
-* **Restore** the project using the POC wallet following the instructions below.
-
-</details>
-
-<details>
-
-<summary>Restore project using POC wallet</summary>
-
-You can restore the project after deleting it following the instructions above by:
-
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
-2. Select the **Trash menu.**
-3. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FTNUCCTbtOupVO9pAzoS4%252Fimage.png%3Falt%3Dmedia%26token%3Da8d327e5-1832-4487-bfb0-433b1ccd94a0\&width=49\&dpr=4\&quality=100\&sign=67ac08c6\&sv=2)on **the project** you want to restore.
-4. **You can extend the project using POC wallet with the extension period from the date of project deletion to the end date of POC wallet usage.** To extend the POC wallet usage period, please contact the Sales staff or the staff who directly supports you or open a support ticket on our system. Select **Restore.**
-5. Select **Checkout PoC** .
-
-Once you complete the 5 steps described above, your project has been restored via the POC wallet as your payment method.
-
-The process and pricing are similar to normal project recovery. For more details, see How to Calculate Fees.
+Now the **project will be completely remove** from vStorage.
 
 </details>
 
@@ -311,15 +271,13 @@ The process and pricing are similar to normal project recovery. For more details
 <summary>Stop POC a project</summary>
 
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
-
-2) Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F7MKwglc67piWKdxGb7Jc%252Fimage.png%3Falt%3Dmedia%26token%3Dc06c8276-677f-4192-8a54-20bc35c657c7\&width=25\&dpr=4\&quality=100\&sign=c1b8c293\&sv=2)at **the project** you want to stop POC. Select **Stop POC** .
-
+2. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F7MKwglc67piWKdxGb7Jc%252Fimage.png%3Falt%3Dmedia%26token%3Dc06c8276-677f-4192-8a54-20bc35c657c7\&width=25\&dpr=4\&quality=100\&sign=c1b8c293\&sv=2)at **the project** you want to stop POC. Select **Stop POC**.
 3. Select **Stop POC** .
 
-Once you successfully stop the POC, your project will be converted to a prepaid resource type and moved to the Trash.
+Once you successfully stop the POC, your project will be converted to a prepaid resource type with expired status.
 
 * If you really don't need to use this project anymore, you can completely delete the project from our system following the instructions at Delete project.
-* **If you want to restore this deleted project to continue using it, follow the instructions to Restore Project. When restoring a project that has just been stopped from POC, you need to select a new renewal cycle and make a payment with your real money (credit wallet balance, Momo wallet, Zalopay wallet,...).**
+* **If you want to renew this expired project to continue using it, follow the instructions to Renew Project. When renew a project that has just been stopped from POC, you need to select a new renewal cycle and make a payment with your real money (credit wallet balance, Momo wallet, Zalopay wallet,...).**
 * You also cannot enable POC usage after you have performed POC Stop. If you have any problems at this point, please contact your Sales or support staff directly or open a support ticket on our system.
 
 </details>
@@ -339,4 +297,4 @@ At the time of POC wallet expiry, we will:
 
 ## Create a trial project <a href="#thuc-hien-trial-project" id="thuc-hien-trial-project"></a>
 
-Currently, with region HCM04 we do not support you to create trial project. This feature will be developed in the next versions.
+Currently, with region HCM04 we do not support you to create trial project..

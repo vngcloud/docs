@@ -4,15 +4,21 @@ Versioning is a feature that supports storing multiple past versions of objects 
 
 To use versioning, please follow these steps:
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 
 2\. Select **the project** containing **the bucket** you want to set up versioning for.
 
 **3. Select the Action** icon and select **Configure versioning**
 
+{% hint style="info" %}
+**Attention:**
+
+* When **Object Lock** is enabled on a bucket in vStorage, **versioning** is **automatically enabled and cannot be disabled** on that bucket.
+{% endhint %}
+
 <figure><img src="../../../../../../.gitbook/assets/image (32) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-4\. At the versioning confirmation screen, please select **Enable versioning** .
+4\. At the versioning confirmation screen, please select **Enable versioning**.
 
 <figure><img src="../../../../../../.gitbook/assets/image (33) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -26,7 +32,7 @@ After versioning is enabled, every time you upload an object with the same name,
 Common operations with versioning include:
 
 * **Upload new version of object** : When you upload a file with the same name to a bucket with versioning enabled, vStorage will retain previous versions of this file.
-* **Delete specific version** :
+* **Delete specific version**:
   * In a bucket with versioning enabled, each object has a "version ID". To delete a specific version, simply find the correct version of the object and select delete.
   * If you delete the "current" version, vStorage will keep a "delete marker", marking the object as deleted but not deleting the old versions.
 * **Restore an old object version to the current version** : you can select Restore at the version you want to restore to bring this object version to the latest version of the object.

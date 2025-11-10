@@ -38,7 +38,7 @@ To initialize a policy used to access vStorage resources, follow the steps below
 3. Select **Create a Policy** .
 4. Enter **Name** and **Description** if given for Policy.
 5. Select **Next step** .
-6. Select **Product as&#x20;**<mark style="background-color:blue;">**vstorage-hcm04**</mark> .
+6. Select **Product as&#x20;**<mark style="background-color:blue;">**vstorage**</mark> .
 7. Select **Actions** :
    1. Select **Allow permissions** : by default, the vIAM system will always be on, which means allowing permissions to be applied to the policy. If you turn this mode off, the system will deny (reverse) the corresponding permissions.
       1. **Allow permissions** : allow access according to the selected action.
@@ -58,7 +58,7 @@ Once you have created the desired IAM User Account and Policy, you will need to 
 3. Select **the IAM User Account** you want to assign permissions to.
 4. Select **Attach policies** .
 5. Select the **policies** you want. The vIAM system supports you to assign multiple policies to an IAM User Account. If these policies contain independent permissions, they will complement each other (ie the permission list is merged). On the contrary, if these policies contain conflicting permissions, you will not be able to access the corresponding resources according to this permission list (ie the permission list is merged and when conflicting, they will cancel each other out).
-6. Select **Attach** .
+6. Select **Attach**.
 
 <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -70,12 +70,12 @@ To grant access to bucket/object for IAM User Account, you need to grant permiss
 
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
 2. Select icon![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F2Ye0SwJ9LL3dubdbJhKn%252Fimage.png%3Falt%3Dmedia%26token%3Dcee711e0-ec36-4c9d-ab5f-c8537e348626\&width=300\&dpr=4\&quality=100\&sign=d8575ee1\&sv=2)in the project containing the bucket you want to grant permissions to.
-3. In the **Identity and Access Management** section , copy the **vStorage User ID** information in the **List of IAM User Account** section .
+3. In the **Identity and Access Management** section , copy the **vStorage User ID** information in the **List of IAM User Account** section.
 
 <figure><img src="../../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Continue to select **the Bucket** you want to assign permissions to the IAM User Account.
-5. **Select the Action** icon and select **Configure policy.**
+5. Select the **Action** icon and select **Configure policy.**
 
 <figure><img src="../../../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

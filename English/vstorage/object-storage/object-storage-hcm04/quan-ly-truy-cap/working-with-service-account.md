@@ -40,7 +40,7 @@ To initialize a policy used to access vStorage resources, follow the steps below
 3. Select **Create a Policy** .
 4. Enter **Name** and **Description** if given for Policy.
 5. Select **Next step** .
-6. Select **Product as&#x20;**<mark style="background-color:blue;">**vstorage-hcm04**</mark> .
+6. Select **Product as&#x20;**<mark style="background-color:blue;">**vstorage**</mark>.
 7. Select **Actions** :
    1. Select **Allow permissions** : by default, the vIAM system will always be on, which means allowing permissions to be applied to the policy. If you turn this mode off, the system will deny (reverse) the corresponding permissions.
       1. **Allow permissions** : allow access according to the selected action.
@@ -60,7 +60,7 @@ Once you have created the desired Service Account and Policy, you will need to l
 3. Select **the Service Account** you want to assign permissions to.
 4. Select **Attach policies** .
 5. Select the **policies** you want. The vIAM system supports you to assign multiple policies to a Service Account. If these policies contain independent permissions, they will complement each other (ie the permission list is merged). On the contrary, if these policies contain conflicting permissions, you will not be able to access the corresponding resources according to this permission list (ie the permission list is merged and when conflicting, they will cancel each other out).
-6. Select **Attach** .
+6. Select **Attach**.
 
 <figure><img src="../../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -72,16 +72,14 @@ To grant access to bucket/object for Service Account, you need to grant permissi
 
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
 2. Select icon![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F2Ye0SwJ9LL3dubdbJhKn%252Fimage.png%3Falt%3Dmedia%26token%3Dcee711e0-ec36-4c9d-ab5f-c8537e348626\&width=300\&dpr=4\&quality=100\&sign=d8575ee1\&sv=2)in the project containing the bucket you want to grant permissions to.
-3. In the **Identity and Access Management** section , copy the **vStorage User ID** information in the **List of Service Account** section .
+3.  In the **Identity and Access Management** section , copy the **vStorage User ID** information in the **List of Service Account** section.
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
+4. Continue to select **the Bucket** you want to assign permissions to the Service Account.
+5.  Select the **Action** icon and select **Configure policy.**
 
-1. Continue to select **the Bucket** you want to assign permissions to the Service Account.
-2. **Select the Action** icon and select **Configure policy.**
-
-<figure><img src="../../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
-
-1. Here, you can choose the configuration for each **Statement** on the left or directly edit the JSON file in the right column. Specifically, the structure of a Bucket Policy includes:
+    <figure><img src="../../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+6. Here, you can choose the configuration for each **Statement** on the left or directly edit the JSON file in the right column. Specifically, the structure of a Bucket Policy includes:
 
 * **Version** : Specifies the version of the Bucket Policy (recommended `"2012-10-17"`).
 * **Statement** : Each policy will have one or more **Statements** (specific purposes of the policy).
@@ -91,7 +89,7 @@ To grant access to bucket/object for Service Account, you need to grant permissi
   * **Resource** : Specific buckets and objects affected by the policy (using ARN to identify resources).
   * **Condition** : (Optional) Specific condition that restricts access.
 
-5\. Select **Save** to save the Bucket Policy configuration.
+7\. Select **Save** to save the Bucket Policy configuration.
 
 <figure><img src="../../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -109,7 +107,7 @@ Follow the steps below to work with vStorage via Service Account
    2. Enter **the Client Secret** corresponding to **the Client ID** you just entered. The Client ID and Client Secret pair are created and managed by you through the vIAM system. You can select [Click here to manage your Client ID.](https://iam.console.vngcloud.vn/service-accounts) so we can navigate you to the vIAM system and in detail the Service Account management screens.
 5. Once you've finished selecting your **authentication** configuration , select **Authentication** to go to the Configuration screen **. Here you can use the vStorage APIs directly, or you can use the API via Postman** . You can always come back here to change your **Authorization** information , then select **Authentication** again to update the S3 Rest API list with your new parameters.
 
-For details, please refer to [https://docs.api.vngcloud.vn/service-docs/vstorage-api.html](https://docs.api.vngcloud.vn/service-docs/vstorage-api.html) .
+For details, please refer to [https://docs.api.vngcloud.vn/service-docs/vstorage-api.html](https://docs.api.vngcloud.vn/service-docs/vstorage-api.html).
 
 <figure><img src="../../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 

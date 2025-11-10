@@ -17,7 +17,7 @@ The following rules apply to bucket naming in vStorage:
 * Bucket name must be between 3 (minimum) and 235 (maximum) characters long.
 * Bucket names can only contain uppercase letters, lowercase letters (a-z, A-Z), numbers (0-9), periods (.), spaces ( ), underscores (\_), hyphens (-), and the @ character.
 * Bucket names should not contain sensitive information (e.g. IP address, account name, login password, etc.). We recommend that you name your buckets with lowercase letters, numbers, and no specific characters like #, @, $, %, ?, /, \`, \~ ... If you really need to name your buckets with uppercase characters, please note that you may encounter some problems when working with 3rd party softwares supported by other vendors.
-* Bucket names must be unique within a project until that bucket is deleted.
+* Bucket names must be unique within a region until that bucket is deleted.
 
 ### **Example**
 

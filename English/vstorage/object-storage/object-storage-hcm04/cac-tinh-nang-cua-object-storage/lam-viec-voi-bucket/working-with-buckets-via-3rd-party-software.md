@@ -19,7 +19,7 @@ To integrate the S3 Browser tool with vStorage, you can follow the instructions 
 
 * **Display name:** Display name of the account. Example: Demo\_HCM04
 * **Account type** : Select **S3 Compatible Storage.**
-* **REST Endpoint** : Path to vstorage, for Region HCM04 the path is [hcm04.vstorage.vngcloud.vn](http://hcm01.vstorage.vngcloud.vn/)
+* **REST Endpoint** : Path to vstorage, for Region HCM04 the path is [hcm04.vstorage.vngcloud.vn](http://hcm04.vstorage.vngcloud.vn/)
 * **Access Key ID & Secret Access Key:** This is the S3 key pair you generated in step 2 earlier.
 
 4. Select the **Use Secure transfer (SSL/TLS)** option because vStorage only supports encrypted transmission channels (HTTPS, port 443) to ensure data security, vStorage currently does not support unencrypted transmission channels (HTTP, port 80).
@@ -77,11 +77,11 @@ SSE-S3 (Server-Side Encryption with S3 Managed Keys) is a server-side data encry
 
 **Object Lock** is a feature that protects your data from being deleted or overwritten for a fixed period of time or indefinitely. It uses the **WORM** (Write Once, Read Many) model, which means that once an object is uploaded to S3 and locked, it cannot be deleted or changed by anyone, including the root user.
 
-To set up Object Locked for a bucket using S3 Browser, when creating a new bucket, you need to select the **Enable S3 Objected Lock option.**
+To set up Object Locked for a bucket using S3 Browser, when creating a new bucket, you need to select the **Enable S3 Objected Lock** optio&#x6E;**.**
 
 <figure><img src="../../../../../.gitbook/assets/image (21) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Next, when the bucket is successfully created, right-click on the bucket, then select **Object Locked** . You can set the object locked in both **Retention** and **Legal Hold** modes through S3 Browser. For more details, please visit [https://s3browser.com/amazon-s3-object-lock.aspx](https://s3browser.com/amazon-s3-object-lock.aspx)
+Next, when the bucket is successfully created, right-click on the bucket, then select **Object Locked**. You can set the object locked in both **Retention** and **Legal Hold** modes through S3 Browser. For more details, please visit [https://s3browser.com/amazon-s3-object-lock.aspx](https://s3browser.com/amazon-s3-object-lock.aspx)
 
 <figure><img src="../../../../../.gitbook/assets/image (20) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -103,7 +103,15 @@ To set up Lifecycle rotation for a bucket using S3 Browser, right-click on the b
 
 ### **Lifecycle transit** <a href="#lifecycle-transit" id="lifecycle-transit"></a>
 
-Currently on region HCM04 we only support you to create Project with Storage Class **Instant Archive Type** . Because there is only 1 storage class, currently the Lifecycle transit feature will not work.
+**Lifecycle transit** là một tính năng quản lý vòng đời của các đối tượng (objects) trong một bucket. Tính năng này giúp bạn lưu trữ các đối tượng một cách hiệu quả về mặt chi phí trong suốt vòng đời của chúng bằng cách chuyển chúng sang các lớp lưu trữ có chi phí thấp hơn.
+
+Các chuyển đổi được hỗ trợ được hiển thị trên sơ đồ bên dưới:
+
+<figure><img src="../../../../../.gitbook/assets/transit_diagram (1).png" alt=""><figcaption></figcaption></figure>
+
+Để thiết lập Lifecycle transit cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Lifecycle Configuration**. Chi tiết tham khảo thêm tại [https://s3browser.com/bucket-lifecycle-configuration.aspx](https://s3browser.com/bucket-lifecycle-configuration.aspx)
+
+<figure><img src="../../../../../.gitbook/assets/image (538).png" alt=""><figcaption></figcaption></figure>
 
 ### **CORS** <a href="#cors" id="cors"></a>
 

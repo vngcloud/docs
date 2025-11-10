@@ -399,7 +399,7 @@ Manage access and use S3 as a static website hosting service.
 {% hint style="info" %}
 **Attention:**
 
-* To set Object Locked for a bucket, when initializing the bucket, you need to add the parameter **x-amz-bucket-object-lock-enabled = true** .
+* To set Object Locked for a bucket, when initializing the bucket, you need to add the parameter **x-amz-bucket-object-lock-enabled = true**
 {% endhint %}
 
 Set Object Locked via API.

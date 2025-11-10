@@ -62,6 +62,6 @@
 {% hint style="info" %}
 **Attention:**
 
-* **Security** : Allow only trusted origins to avoid security risks.
-* **CORS does not replace S3 permissions** : CORS only specifies which requests from other domains will be allowed, but actual access to the bucket is still controlled via **Bucket Policy** , **ACL** , or **IAM Policy** .
+* **Security**: Allow only trusted origins to avoid security risks.
+* **CORS does not replace S3 permissions**: CORS only specifies which requests from other domains will be allowed, but actual access to the bucket is still controlled via **Bucket Policy**, **ACL**, or **IAM Policy**.
 {% endhint %}

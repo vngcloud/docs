@@ -7,7 +7,7 @@
   * **Governance mode (coming soon)** : only users with special permissions (with ByPassGovernance permission), such as root user or S3 Key without Restriction by IAM enabled, can delete or overwrite objects.
 * **Legal Hold:** prevents deletion and overwriting of object version indefinitely until user disables. This mode works independently of Retention period. Users with PutObjectLegalHold permission can add or remove legal hold for object.
 
-**To set up Object Locked for a bucket using S3 Browser, when creating a new bucket, you need to select the Enable S3 Objected Lock** option . <mark style="color:red;">**Kee**</mark>**p in mind that you will not be able to enable Object Lock for an existing bucket.**
+To set up Object Locked for a bucket using S3 Browser, when creating a new bucket, you need to select the **Enable S3 Objected Lock** option . <mark style="color:red;">**Keep in mind that you will not be able to enable Object Lock for an existing bucket.**</mark>
 
 <figure><img src="../../../../../../.gitbook/assets/image (35) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
