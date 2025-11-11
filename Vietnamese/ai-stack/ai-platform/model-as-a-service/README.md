@@ -23,7 +23,7 @@ layout:
 
 Truy cập vào phần [Models ](https://aiplatform.console.vngcloud.vn/models)trong AI Platform:
 
-Để sử dụng bất kỳ mô hình nào, bạn cần có API key. [xem thêm](../bat-dau-voi-ai-platform.md#id-6.-quan-ly-api-keys)&#x20;
+Để sử dụng và enable bất kỳ mô hình nào, bạn cần có API key. [xem thêm](../bat-dau-voi-ai-platform.md#id-6.-quan-ly-api-keys)&#x20;
 
 Bạn có thể lọc các mô hình bằng các tùy chọn ở thanh bên trái:
 
