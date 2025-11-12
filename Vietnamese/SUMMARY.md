@@ -375,7 +375,7 @@
           * [Làm việc với bucket thông qua 3rd party software](vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-3rd-party-software.md)
         * [Làm việc với object và directory](vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-object-va-directory/README.md)
           * [Làm việc với object và directory thông qua vStorage Portal](vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-object-va-directory/lam-viec-voi-object-va-directory-thong-qua-vstorage-portal.md)
-          * [Làm việc với object và directory thông qua 3rd party software](vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-object-va-directory/lam-viec-voi-object-va-directory-thong-qua-3rd-party-software.md)
+          * [Làm việc với object và directory/ folder thông qua 3rd party software](vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-object-va-directory/lam-viec-voi-object-va-directory-thong-qua-3rd-party-software.md)
         * [Làm việc với báo cáo](vstorage/object-storage/object-storage-hcm04/cac-tinh-nang-cua-object-storage/lam-viec-voi-bao-cao.md)
       * [Hạn mức tài nguyên](vstorage/object-storage/object-storage-hcm04/han-muc-tai-nguyen.md)
       * [Quản lý truy cập](vstorage/object-storage/object-storage-hcm04/quan-ly-truy-cap/README.md)

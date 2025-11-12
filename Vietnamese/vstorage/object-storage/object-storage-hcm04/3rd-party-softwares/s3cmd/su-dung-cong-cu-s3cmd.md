@@ -44,6 +44,10 @@
 
 > s3cmd abortmp s3://BUCKET/OBJECT Id
 
+**Upload thư mục vào bucket**
+
+> s3cmd put --recursive FILE \[FILE...] s3://BUCKET\[/PREFIX]
+
 #### Chú ý khi sử dụng S3cmd <a href="#sudungcongcus3cmd-chuykhisudungs3cmd" id="sudungcongcus3cmd-chuykhisudungs3cmd"></a>
 
 {% hint style="info" %}
