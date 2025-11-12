@@ -63,7 +63,7 @@ aws s3 rm s3://demoawscli-bucket/file.txt \
 
 ## **Một số use case nâng cao**
 
-#### Sao chép thư mục từ local tới object storage:
+#### Upload thư mục từ local tới object storage:
 
 ```bash
 aws s3 cp ./my-folder/ s3://demoawscli-bucket/my-folder/ \

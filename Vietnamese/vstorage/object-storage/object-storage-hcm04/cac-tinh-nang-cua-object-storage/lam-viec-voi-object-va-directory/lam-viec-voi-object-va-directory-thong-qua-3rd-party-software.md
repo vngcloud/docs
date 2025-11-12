@@ -2,7 +2,7 @@
 
 ## Tổng quan
 
-Để lưu trữ một object trong vStorage, bạn tạo một bucket thông qua 3rd party software rồi tải một tệp tin lên bucket đó. Tệp tin mới được tải lên này được lưu trữ bên trong bucket như một object và directory/ folder. Khi object đó ở trong bucket, bạn có thể tải cùng một tệp tin lên bucket để ghi đè object và directory/ folder (cập nhật object), tải xuống, sao chép, di chuyển hoặc thay đổi thiết thiết lập tag, metadata cho object đó. Khi bạn không còn cần một object hoặc một nhóm object, bạn có thể xóa để dọn sạch tài nguyên của mình trên vStorage.
+Để lưu trữ một object trong vStorage, bạn tạo một bucket thông qua 3rd party software rồi tải một tệp tin lên bucket đó. Tệp tin mới được tải lên này được lưu trữ bên trong bucket như một object . Khi object đó ở trong bucket, bạn có thể tải cùng một tệp tin lên bucket để ghi đè object (cập nhật object), tải xuống, sao chép, di chuyển hoặc thay đổi thiết thiết lập tag, metadata cho object đó. Khi bạn không còn cần một object hoặc một nhóm object, bạn có thể xóa để dọn sạch tài nguyên của mình trên vStorage.
 
 ## Upload/ Download object
 
