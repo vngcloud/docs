@@ -36,7 +36,7 @@
 
 &#x20;**Upload thư mục vào bucket**
 
-> $ rclone copy /home/user/documents \<remote\_name>:mybucket --progress
+> $ rclone copy /home/user/documents \<remote\_name>:mybucket/folder --progress
 
 {% hint style="info" %}
 **Chú ý:**
