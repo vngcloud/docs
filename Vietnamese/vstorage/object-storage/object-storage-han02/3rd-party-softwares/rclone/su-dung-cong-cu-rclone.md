@@ -34,7 +34,7 @@
 
 > $ rclone copy /home/user/file.txt \<remote\_name>:mybucket
 
-**Upload thư mục `/home/user/documents` into a bucket**
+**Upload thư mục vào bucket**
 
 > $ rclone copy /home/user/documents \<remote\_name>:mybucket --progress
 
