@@ -30,6 +30,14 @@
 
 > $ rclone copy /home/user/file.txt \<remote\_name>:mybucket
 
+**Một tệp tin ở thư mục `/home/user/file.txt` into a bucket**
+
+> $ rclone copy /home/user/file.txt \<remote\_name>:mybucket
+
+**Upload thư mục `/home/user/documents` into a bucket**
+
+> $ rclone copy /home/user/documents \<remote\_name>:mybucket --progress
+
 {% hint style="info" %}
 **Chú ý:**
 
