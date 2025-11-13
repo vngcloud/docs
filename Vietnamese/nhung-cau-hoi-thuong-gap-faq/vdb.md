@@ -7,7 +7,9 @@ Lúc khởi tạo vDB quý khách click vào Public accessibility. Còn nếu đ
 ### \[vDB] Tôi muốn gia hạn vDB thì làm như thế nào?
 
 Quý khách có thể tham khảo link hướng dẫn như sau:\
-[https://app.gitbook.com/o/5XJ2I4IOE66RNLOwPBIO/s/B0NrrrdJdpYOYzRkbWp5/\~/changes/1548/vdb/relational-database-service-rds/gia-han-rds-instance](../vdb/relational-database-service-rds/gia-han-rds-instance.md)
+
+
+[https://docs.vngcloud.vn/vng-cloud-document/vn/vdb/relational-database-service-rds/gia-han-rds-instance](https://docs.vngcloud.vn/vng-cloud-document/vn/vdb/relational-database-service-rds/gia-han-rds-instance)
 
 ### \[vDB] Tại sao tôi không thể nâng gói MySQL của mình?
 
