@@ -1125,3 +1125,4 @@
   * [vDB](nhung-cau-hoi-thuong-gap-faq/vdb.md)
   * [NTP server](nhung-cau-hoi-thuong-gap-faq/ntp-server.md)
   * [DDoS](nhung-cau-hoi-thuong-gap-faq/ddos.md)
+  * [vCR](nhung-cau-hoi-thuong-gap-faq/vcr.md)

@@ -16,7 +16,7 @@ vCR Console là giao diện người dùng dựa trên web, cho phép bạn qu�
 
 **Cách truy cập vCR Console**
 
-* Truy cập trực tiêp đến vCR Console thông qua đường dẫn: [https://vcr.console.vngcloud.vn/list](https://vcr.console.vngcloud.vn/list)
+* Truy cập trực tiêp đến vCR Console thông qua đường dẫn: [https://vcr.console.vngcloud.vn/](https://vcr.console.vngcloud.vn/)
 * Truy cập từ trang chủ vServer: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
   * Tại trang chủ vServer, điều hướng đến vCR portal bằng cách click **chọn "Container Registry" trong mục "Container Registry"** tại thanh menu bên trái.
 * Truy cập từ trang chủ vConsole: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
@@ -32,7 +32,7 @@ vCR Console là giao diện người dùng dựa trên web, cho phép bạn qu�
    * **Access level:** Khả năng truy cập đến Repository (Public / Private).&#x20;
      * Public: Là các Repository mà tại đó, người dùng có thể Pull/Push thoải mái mà không thông qua Repository User
      * Private: Là các Repository mà tại đó, người dùng phải cung cấp đinh danh (username/password) để có thể truy cập đến các Images được quản lý tại Repository này.
-   * **Quota Limit:** Dung lượng lưu trữ tối đa mà Repository có thể lưu trữ. Ví dụ bạn điền 20GB, thì Repository của bạn chỉ có thể lưu trữ tối đa 20GB dung lượng. Tuy nhiên, bạn hoàn toàn có thể thay đổi con số này tùy thuộc với nhu cầu tế sau khi khởi tạo.
+   * **Quota Limit:** Dung lượng lưu trữ tối đa mà Repository có thể lưu trữ. Ví dụ bạn điền 20GB, thì Repository của bạn chỉ có thể lưu trữ tối đa 20GB dung lượng. Tuy nhiên, bạn hoàn toàn có thể thay đổi con số này tùy thuộc với nhu cầu thực tế sau khi khởi tạo.
 3. Nhấn **"Create"** để hoàn tất quá trình khởi tạo.
 4. Kiểm tra thông tin Repository vừa khởi tạo tại danh sách.
 
@@ -40,7 +40,7 @@ vCR Console là giao diện người dùng dựa trên web, cho phép bạn qu�
 
 **Cách khởi tạo Repository User**
 
-1. Tại trang chủ Container Registry, nhấn vào **menu "Repository User"** phía bên tay phải để truy cập đến danh sách Repository User, nhấn nút **"CreateRepository User"** để bắt đầu tạo mới một Repository User.
+1. Tại trang chủ Container Registry, nhấn vào **menu "Repository User"** phía bên tay trái để truy cập đến danh sách Repository User, nhấn nút **"CreateRepository User"** để bắt đầu tạo mới một Repository User.
 2. Một popup **"Create Repository"** hiển thị cho phép bạn điền các thông tin như:
    * **User Name (optional)**: Tên của Repository User, trường hợp không điền tên, hệ thống sẽ tự động sinh ra tên tương ứng. Lưu ý tên sau khi điền/sinh tự động sẽ được add thêm prefix {AccountID} tương ứng với tài khoản VNG Cloud đang đăng nhập.
    * **Expiration Date:** Ngày hết hạn của User. Có 3 chế độ như sau:
