@@ -25,6 +25,10 @@ vDB gồm nhiều loại dịch vụ cho từng loại cơ sở dữ liệu , hi
 
 * Phần cứng chuyên dụng dành cho doanh nghiệp kết hợp với hệ thống lưu trữ SSD mang lại cho bạn hiệu năng cao mà bạn cần.
 
+**Kết nối dễ dàng**
+
+* Bạn chỉ cần vào xem chi tiết một vDB bất kỳ, bạn chọn tab Connectivity & Security xem thông tin endpoint và port để thực hiện kết nối.
+
 **An toàn**
 
 * vDB giúp bạn dễ dàng kiểm soát truy cập mạng vào cơ sở dữ liệu của bạn, đồng thời cho phép bạn chạy hệ thống cơ sở dữ liệu trong mạng riêng ảo (vVPC), mà cung cấp nhiều tính năng bảo mật khác.
