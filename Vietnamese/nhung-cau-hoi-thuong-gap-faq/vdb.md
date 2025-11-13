@@ -7,7 +7,7 @@ Lúc khởi tạo vDB quý khách click vào Public accessibility. Còn nếu đ
 ### \[vDB] Tôi muốn gia hạn vDB thì làm như thế nào?
 
 Quý khách có thể tham khảo link hướng dẫn như sau:\
-[https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723453](https://docs.vngcloud.vn/pages/viewpage.action?pageId=2723453)
+[https://app.gitbook.com/o/5XJ2I4IOE66RNLOwPBIO/s/B0NrrrdJdpYOYzRkbWp5/\~/changes/1548/vdb/relational-database-service-rds/gia-han-rds-instance](../vdb/relational-database-service-rds/gia-han-rds-instance.md)
 
 ### \[vDB] Tại sao tôi không thể nâng gói MySQL của mình?
 
@@ -18,3 +18,11 @@ Quý khách vui lòng kiểm tra lại thông tin server của quý khách còn 
 Quý khách vui lòng khởi tạo network trước như link hướng dẫn sau:\
 [https://docs.vngcloud.vn/pages/viewpage.action?pageId=13009888.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13009888.).\
 Sau khi khởi tạo network xong quý khách có thể tạo được vDB được.
+
+### \[vDB] Để update timezone trên vDB thì tôi làm như thế nào?
+
+Trường hợp này Quý khách vui lòng liên hệ 247 để tạo ticket, chúng tôi sẽ hỗ trợ nhanh chóng.
+
+### \[vDB] Resize volume ở vDB có cần restart DB không?
+
+Quý khách không cần restart DB khi resize volume, hệ thống đã tự động restart.
