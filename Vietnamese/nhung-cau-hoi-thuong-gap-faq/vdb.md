@@ -21,8 +21,12 @@ Sau khi khởi tạo network xong quý khách có thể tạo được vDB đư�
 
 ### \[vDB] Để update timezone trên vDB thì tôi làm như thế nào?
 
-Trường hợp này Quý khách vui lòng liên hệ 247 để tạo ticket, chúng tôi sẽ hỗ trợ nhanh chóng.
+Trường hợp này Quý khách vui lòng liên hệ 24/7 để tạo ticket, chúng tôi sẽ hỗ trợ nhanh chóng.
 
 ### \[vDB] Resize volume ở vDB có cần restart DB không?
 
 Quý khách không cần restart DB khi resize volume, hệ thống đã tự động restart.
+
+### \[vDB] Tôi muốn sử dụng vDB API thì có API curl để tạo user kafka không?
+
+Quý khách có thể tham khảo tài liệu vDB API tại đây [https://docs.api.vngcloud.vn/service-docs/vdb-api.html#tag/Kafka-Cluster-API/operation/createUser](https://docs.api.vngcloud.vn/service-docs/vdb-api.html#tag/Kafka-Cluster-API/operation/createUser)&#x20;
