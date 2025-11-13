@@ -5,6 +5,7 @@
   * [About VNG Cloud](overview/about-vng-cloud.md)
   * [Product Updates (All)](overview/product-updates-all/README.md)
     * [2024](overview/product-updates-all/2024.md)
+    * [2025](overview/product-updates-all/2025.md)
 * [vServer](vserver/README.md)
   * [Compute](vserver/compute-hcm03-1a/README.md)
     * [What is vServer?](vserver/compute-hcm03-1a/what-is-vserver.md)
