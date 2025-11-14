@@ -92,3 +92,7 @@ Anh chị vui lòng kiểm tra lại portal của mình có phải đang ở tr�
 ### \[vCDN] Tại sao tôi cấu hình xong CDN nhưng khi chạy trên web thì báo lỗi 502?
 
 Anh/chị vui lòng kiểm tra link original của anh/chị và kiểm tra link CND xem có được không . Nếu 2 link đều giống nhau thì CDN trả về đúng còn khác nhau thì anh/chị vui lòng kiểm tra lại dã clear cache chưa. Nếu bị lỗi 502 thì nhờ anh/chị vui lòng allow list range IP : 113.164.15.32/28 113.164.15.80/29; 113.164.241.176/28 113.164.14.192/27 171.244.128.0/27 171.244.16.224/27 42.115.221.64/27 43.239.149.128/28 118.69.83.64/27 118.69.83.160/28 118.69.84.64/28 210.245.38.64/27 210.245.26.0/24 42.115.221.128/27 14.225.2.32/28 14.225.10.64/28 171.244.28.64/27 61.28.226.48/28 14.225.10.64/28 171.244.28.64/27 61.28.231.126/32 Sau khi allow xong thì kiểm tra lại link CDN xem đã được chưa.
+
+### \[vCDN] Gói basic thì tôi có dùng được tính năng CNAME không?
+
+Gói basic của vCDN vẫn sử dụng được tính năng CNAME
