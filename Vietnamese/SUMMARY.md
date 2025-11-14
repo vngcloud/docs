@@ -193,7 +193,7 @@
           * [Chuyển chế độ công khai container](vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/chuyen-che-do-cong-khai-container.md)
           * [Chuyển chế độ riêng tư container](vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/chuyen-che-do-rieng-tu-container.md)
           * [Phân quyền truy cập ACLs container](vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/phan-quyen-truy-cap-acls-container.md)
-          * [Chia sẻ tài nguyên CORS container](vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/chia-se-tai-nguyen-cors-container.md)
+          * [Sử dụng tính năng CORS container](vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/chia-se-tai-nguyen-cors-container.md)
           * [Sử dụng tính năng container lifecycle](vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/su-dung-tinh-nang-container-lifecycle.md)
           * [Sử dụng tính năng IP range ACLs container](vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/su-dung-tinh-nang-ip-range-acls-container.md)
           * [Xóa container](vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/xoa-container.md)
