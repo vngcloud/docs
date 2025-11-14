@@ -103,5 +103,6 @@ Expiration rule là tập quy định tự động xóa object khi đến thời
 
 * Việc xử lý object trong một lần chạy lifecycle rule phụ thuộc vào **số lượng object** trong bucket được thiết lập lifecycle rule của bạn và **workload** của hệ thống chúng tôi. Nếu bucket có **nhiều object** hoặc hệ thống có tải cao, việc xử lý sẽ **chậm và kéo dài qua các ngày kế tiếp**. Nếu bucket có **ít object** hoặc hệ thống có tải thấp, việc xử lý sẽ **nhanh và có thể hoàn thành trong một ngày**. Để đảm bảo việc xử lý object diễn ra hiệu quả và nhanh chóng, bạn nên chia nhỏ các lần chạy lifecycle rule và sử dụng Bộ lọc (Filter) để giảm thiểu số lượng object cần xử lý.
 * Với **Transition rule**: bạn chỉ được phép chuyển dữ liệu xuống lớp lưu trữ thấp hơn, không thể tự động chuyển ngược lên lớp cao hơn.
-* Khi bật **Expire current version of objects** và **Permanently delete noncurrent versions**, bạn không thể chọn thêm tùy chọn **Delete expired object delete marker** vì sẽ gây xung đột logic và tạo vòng lặp xoá – khôi phục. Để đảm bảo việc xử lý object hiểu quả, hãy tạo **nhiều rule tách biệt** cho từng chức năng.
+* Khi bật **Expire current version of objects** và **Permanently delete noncurrent versions**, bạn không thể chọn thêm tùy chọn **Delete expired object delete marker** vì sẽ gây xung đột logic và tạo vòng lặp xoá – khôi phục. Để đảm bảo việc xử lý object hiểu quả, hãy tạo một rule riêng biệt chỉ dành cho **Delete expired object delete marker**.
 {% endhint %}
+
