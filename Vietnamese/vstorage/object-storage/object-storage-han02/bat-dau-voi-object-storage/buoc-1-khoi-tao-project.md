@@ -15,3 +15,9 @@ Thực hiện tạo project theo các bước bên dưới:
 <figure><img src="../../../../.gitbook/assets/image (983).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (984).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Lưu ý:**
+
+* Project Name không thể thay đổi.
+{% endhint %}

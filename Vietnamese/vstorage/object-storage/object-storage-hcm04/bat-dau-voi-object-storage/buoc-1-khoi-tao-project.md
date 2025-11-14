@@ -13,3 +13,9 @@ Thực hiện tạo project theo các bước bên dưới:
 7. Thực hiện các bước **Thanh toán** giỏ hàng và **Project** của bạn sẽ được khởi tạo.
 
 <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Lưu ý:**
+
+* Project Name không thể thay đổi.
+{% endhint %}
