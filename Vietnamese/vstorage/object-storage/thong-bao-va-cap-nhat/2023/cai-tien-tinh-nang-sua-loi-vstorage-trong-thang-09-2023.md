@@ -21,5 +21,5 @@
 
 #### 3. Tài liệu cập nhật <a href="#caitientinhnang-sualoivstoragetrongthang09-2023-3.tailieucapnhat" id="caitientinhnang-sualoivstoragetrongthang09-2023-3.tailieucapnhat"></a>
 
-* Container lifecycle: [Sử dụng tính năng container lifecycle](../../cac-tinh-nang-cua-vstorage/lam-viec-voi-container/su-dung-tinh-nang-container-lifecycle.md)
-* S3 presigned URL: [Chia sẻ object](../../cac-tinh-nang-cua-vstorage/lam-viec-voi-directory-va-object/chia-se-object.md)
+* Container lifecycle: [Sử dụng tính năng container lifecycle](../../vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/su-dung-tinh-nang-container-lifecycle.md)
+* S3 presigned URL: [Chia sẻ object](../../vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-directory-va-object/chia-se-object.md)

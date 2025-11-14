@@ -4,9 +4,7 @@ vStorage - VNG Cloud Storage là một dịch vụ lưu trữ dựa trên kiến
 
 vStorage cung cấp 3 lớp lưu trữ là Gold, Silver và Archive. Với lớp lưu trữ Gold, dữ liệu của bạn luôn sẵn sàng để sử dụng với khả năng đáp ứng việc truy xuất ở mức mili giây. Lớp Silver phù hợp cho các dữ liệu ít được truy cập nhưng bạn vẫn muốn dữ liệu luôn ở trạng thái sẵn sàng để dùng bất kỳ lúc nào với chi phí lưu trữ thấp. Cuối cùng là Archive, đây là lớp lưu trữ tiết kiệm nhất phù hợp cho các dữ liệu rất hiếm khi sử dụng nhưng cần phải lưu trữ như hồ sơ bệnh án, log giao dịch v...v...
 
-<figure><img src="../../../../.gitbook/assets/vstoragelagi.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/vstoragelagi.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -20,7 +18,7 @@ Chúng tôi cung cấp cho bạn các giải pháp hàng đầu bao gồm:
 * Sử dụng kênh truyền Https đảm bảo dữ liệu được truyền tải một cách bảo mật và đảm bảo an toàn tuyệt đối.
 * Cung cấp các tính năng từ cơ bản tới nâng cao như: Metadata, Tagging​, Tempurl/Pre-signed URL, Quota Bucket/Container, CORS, Versioning​, Bulk Delete​, Public Container​, ACLs, Multi S3 keys​, Form POST, Paging objects list,...
 * Đảm bảo hiệu năng hệ thống ở mức ổn định và đáp ứng được các yêu cầu truy xuất, xử lý dữ liệu tức thời.
-* Đảm bảo an toàn dữ liệu thông qua cơ chế Replication và chứng nhận an toàn thông tin PCIDSS/ISO27k&#x20;
+* Đảm bảo an toàn dữ liệu thông qua cơ chế Replication và chứng nhận an toàn thông tin PCIDSS/ISO27k
 * Đa dạng trong việc thích ứng với các công cụ phía người dùng: SDK S3 AWS, SDK Swift, các client tools dạng GUI, các client tools dạng CLI.
 * Đáp ứng khả năng mở rộng tới hàng Petabyte và phân tán dữ liệu theo từng vùng.
 * Phần quyền an toàn với vIAM.

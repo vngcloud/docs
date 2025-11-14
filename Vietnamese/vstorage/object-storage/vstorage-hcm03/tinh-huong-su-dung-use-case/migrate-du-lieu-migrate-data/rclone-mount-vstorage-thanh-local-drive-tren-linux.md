@@ -38,7 +38,7 @@ Sau đó, bạn tải và cài đặt **version mới** như hướng dẫn ở 
 Các thông tin bên trên bạn có thể thực hiện lấy theo hướng dẫn tại [Tích hợp công cụ Rclone với vStorage](../../3rd-party-softwares/rclone/tich-hop-cong-cu-rclone-voi-vstorage.md). Trong đó:
 
 * User/ Key: thông tin Swift user bạn khởi tạo từ IAM.
-* Auth: xem tại [Farm là gì?](../../vstorage-la-gi/farm-la-gi.md)
+* Auth: xem tại [Farm là gì?](../../../vstorage-la-gi/farm-la-gi.md)
 * Tenant\_id: thông tin project id, bạn có thể lấy tại vStorage Portal.
 
 Trước khi mount, bạn kiểm tra kết nối tới vStorage bằng lệnh lsd của rclone với cú pháp:
