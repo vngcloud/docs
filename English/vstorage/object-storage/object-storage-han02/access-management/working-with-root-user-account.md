@@ -48,7 +48,7 @@ By default, **the Root User Account** will have **full access** to your bucket, 
 
 <summary>Bucket ACLs</summary>
 
-You can grant Read, Write or Read and Write permissions to 1 or all other Root users. (Root users granted access via ACLS must be authorized accounts on our VNG Cloud system). For more information, see Using [ACLs.](https://docs.vngcloud.vn/vng-cloud-document/vstorage/object-storage/object-storage-han02/features-of-object-storage/working-with-bucket/working-with-buckets-via-vstorage-portal/bucket-acls)
+You can grant Read, Write or Read and Write permissions to 1 or all other Root users. (Root users granted access via ACLS must be authorized accounts on our VNG Cloud system). For more information, see Using [ACLs.](../features-of-object-storage/working-with-bucket/working-with-buckets-via-vstorage-portal/bucket-acls.md)
 
 </details>
 
@@ -56,6 +56,6 @@ You can grant Read, Write or Read and Write permissions to 1 or all other Root u
 
 <summary>Bucket Policy</summary>
 
-You can manage access to your buckets through JSON rules. For more information, see [Using Bucket Policy.](https://docs.vngcloud.vn/vng-cloud-document/vstorage/object-storage/object-storage-han02/features-of-object-storage/working-with-bucket/working-with-buckets-via-vstorage-portal/bucket-policy)
+You can manage access to your buckets through JSON rules. For more information, see [Using Bucket Policy.](../features-of-object-storage/working-with-bucket/working-with-buckets-via-vstorage-portal/bucket-policy.md)
 
 </details>
