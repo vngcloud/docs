@@ -114,3 +114,13 @@ Trong trường hợp người dùng tạo rất nhiều máy chủ ảo (VM), t
 * Search by Tag: Tìm Tag của Server lúc khởi tạo;
 
 **Bước 4:** Điền thông tin cần tìm kiếm và xác nhận tìm để hệ thống tự động tra máy chủ phù hợp với từ khóa.
+
+Ngoài ra còn có thể dùng API GET List Server để xem danh sách máy chủ hiện có:
+
+Trên region HCM:
+
+{% embed url="https://hcm-3.console.vngcloud.vn/vserver/iam-vserver-gateway/v2/%7BprojectId%7D/servers" %}
+
+Trên region HAN:
+
+{% embed url="https://han-1.console.vngcloud.vn/vserver/iam-vserver-gateway/v2/%7BprojectId%7D/servers" %}
