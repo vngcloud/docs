@@ -52,5 +52,5 @@ Nếu bạn không còn nhu cầu để xem logs của 1 vCDN domain bất kỳ,
 
 * vCDN domain sau khi được tạo sẽ mất tối đa **5 phút** để có thể đồng bộ về vMonitor Platform.
 * Kể từ thời điểm bật Detail monitoring cho một vCDN domain, sẽ mất một khoảng thời gian (có thể từ **5 phút - 10 phút**) để logs có thể xuất hiện tại hệ thống vMonitor Platform. (Thông số này tùy thuộc vào độ trễ đẩy logs của hệ thống vCDN).
-* Bạn đã **enable detail monitoring của CDN log** và đã có **log** , nhưng **không search được field** trong Log Search của vMonitor. Lúc này **bạn chỉ cần vào phần Field Mapping / Document Mapping và bấm Refresh (hoặc Rebuild)** để cập nhật lại schema.
+* Sau khi đã **enable detail monitoring của CDN log** và đã có **log** , nhưng **không search được** trong Log Search của vMonitor. Lúc này **bạn chỉ cần vào phần Field Mapping / Document Mapping và bấm Refresh (hoặc Rebuild)** để cập nhật lại schema.
 * Kể từ thời điểm xóa một vCDN domain trên hệ thống vMonitor Platform, trong vòng **24h** thì chúng tôi sẽ xóa hoàn toàn vCDN domain của bạn khỏi hệ thống vMonitor Platform.
