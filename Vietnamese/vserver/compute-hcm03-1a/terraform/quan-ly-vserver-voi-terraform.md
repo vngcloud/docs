@@ -135,3 +135,9 @@ và chọn **YES** để thực hiện việc khởi tạo vServer thông qua Te
 
 
 (Bạn có thể sử dụng Terraform để tạo và quản lý tài nguyên đối với các loại tài khoản POC, tài khoản trả trước, tài khoản trả sau).
+
+Server có thể được nhập bằng mã định danh duy nhất của chúng, ví dụ: Mã định danh duy nhất là ID của dự án và ID của server, được phân tách bằng dấu hai chấm. Ví dụ: pro-26151c78-0470-4b4c-88a1-6ec41ef29492:lb-38038860-3d4b-4df2-a10e-a03efbd39ac4
+
+```
+$ terraform import vngcloud_vserver_server.example pro-26151c78-0470-4b4c-88a1-6ec41ef29492:ins-83c22c0c-2570-49bc-bd02-57f41fbff157
+```
