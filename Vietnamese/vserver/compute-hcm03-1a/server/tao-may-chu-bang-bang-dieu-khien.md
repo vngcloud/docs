@@ -50,7 +50,7 @@ Nếu bạn chưa từng tạo VPC trước đây, hệ thống sẽ tự độn
 
 Người dùng có thể chọn dùng FIP khi tạo máy chủ ảo hoặc thực hiện gán FIP sau khi máy chủ ảo được tạo để cung cấp khả năng kết nối internet cho máy chủ ảo. Người dùng có thể chọn mua dành riêng FIP để giữ lại sau khi máy chủ ảo không hoạt động.
 
-Với server Windows có chọn VNG Cloud Windows License, cần bắt buộc chọn gán floating IP để gọi qua service KMS và activate license cho server Windows.
+Với server Windows có chọn VNG Cloud Windows License, cần bắt buộc có floating IP để tương tác được với service KMS và activate license cho server Windows.
 
 #### Lựa chọn security group <a href="#taomaychubangbangdieukhien-luachonsecuritygroup" id="taomaychubangbangdieukhien-luachonsecuritygroup"></a>
 
