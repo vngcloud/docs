@@ -96,3 +96,7 @@ Anh/chị vui lòng kiểm tra link original của anh/chị và kiểm tra link
 ### \[vCDN] Gói basic thì tôi có dùng được tính năng CNAME không?
 
 Đối với gói basic của loại **Web Accelerator** không sử dụng được tính năng CNAME.
+
+### \[vCDN] Trên vmonitor có xem được đang có bao nhiêu CCU kết nối tới CDN Video on demand Streaming không?
+
+Hiện tại trên vMonitor chưa xem được có bao nhiêu CCU kết nối tới CDN video on demand Streaming.
