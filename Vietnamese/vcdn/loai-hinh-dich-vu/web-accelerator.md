@@ -37,7 +37,7 @@ Dịch vụ Web Accelerator cache tất cả các đối tượng đi qua nó kh
 
 Đầu tiên, bạn cần thực hiện khởi tạo một Web Accelerator theo hướng dẫn sau:&#x20;
 
-1. Truy cập vào vCDN Portal tại [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
+1. Truy cập vào vCDN Portal tại [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/webacc/list.html)
 2. Chọn mục **Web Accelerator**, sau đó chọn **Create new.**
 3. Tiếp tục thực hiện nhập/chọn:&#x20;
 

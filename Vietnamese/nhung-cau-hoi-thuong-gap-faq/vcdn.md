@@ -95,4 +95,4 @@ Anh/chị vui lòng kiểm tra link original của anh/chị và kiểm tra link
 
 ### \[vCDN] Gói basic thì tôi có dùng được tính năng CNAME không?
 
-Gói basic của vCDN vẫn sử dụng được tính năng CNAME
+Đối với gói basic của loại **Web Accelerator** không sử dụng được tính năng CNAME.
