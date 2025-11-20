@@ -1,18 +1,18 @@
 ---
-description: 'Cấu hình thông báo email trên VNGCloud: Luôn cập nhật mọi diễn biến'
+description: 'Cấu hình thông báo email trên VNG Cloud: Luôn cập nhật mọi diễn biến'
 ---
 
 # Cài đặt thông báo
 
-Message Center giúp bạn luôn nắm bắt được những thông tin quan trọng về tài khoản và dịch vụ VNGCloud của mình. Với tính năng này, bạn sẽ không bỏ lỡ bất kỳ thông báo nào về bảo trì hệ thống, cảnh báo dịch vụ, thông tin hóa đơn, hay cập nhật mới nhất về sản phẩm.
+Message Center giúp bạn luôn nắm bắt được những thông tin quan trọng về tài khoản và dịch vụ VNG Cloud của mình. Với tính năng này, bạn sẽ không bỏ lỡ bất kỳ thông báo nào về bảo trì hệ thống, cảnh báo dịch vụ, thông tin hóa đơn, hay cập nhật mới nhất về sản phẩm.
 
 Việc cấu hình thông báo email sẽ giúp bạn chủ động hơn trong việc quản lý tài khoản và dịch vụ, đảm bảo hoạt động của hệ thống luôn ổn định và hiệu quả.
 
 ## Hướng dẫn cài đặt thông báo
 
-* **Bước 1: Đăng nhập VNGCloud Console:**
-  * Truy cập đường dẫn sau để truy cập: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
-* **Bước 2: Truy cập Message Center:**
+* **Bước 1: Đăng nhập VNG Cloud Console và chọn Thống kê sử dụng:**
+  * Truy cập đường dẫn sau để truy cập: [https://dashboard.console.vngcloud.vn/user-notification](https://dashboard.console.vngcloud.vn/user-notification)
+* **Bước 2: Truy cập Cài đặt thông báo:**
   *   Tại giao diện chính, tìm và chọn mục 'Cài đặt thông báo'', mục này nằm trong menu bên trái như hình sau:&#x20;
 
       <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
