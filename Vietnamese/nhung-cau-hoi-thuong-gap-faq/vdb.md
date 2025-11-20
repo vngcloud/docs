@@ -35,4 +35,4 @@ Quý khách có thể tham khảo tài liệu vDB API tại đây [https://docs.
 
 ### \[vDB] vDB đổi cổng kết nối được không?
 
-Hiện tại vDB không cho đổi cổng kết nối. Trường hợp bạn muốn xem thông tin kết nối bạn chọn vào xem chi tiết của DB Instance, sau đó chọn đến tab **Connectivity & Security**, bạn xem thông tin kết nối tại mục **Endpoint & Port**.
+Hiện tại vDB (Relational Database Service (RDS), MemoryStore Database Service (MDS),...) không cho đổi cổng kết nối. Trường hợp bạn muốn xem thông tin kết nối bạn chọn vào xem chi tiết của DB Instance, sau đó chọn đến tab **Connectivity & Security**, bạn xem thông tin kết nối tại mục **Endpoint & Port**.
