@@ -1128,4 +1128,5 @@
   * [NTP server](nhung-cau-hoi-thuong-gap-faq/ntp-server.md)
   * [DDoS](nhung-cau-hoi-thuong-gap-faq/ddos.md)
   * [vCR](nhung-cau-hoi-thuong-gap-faq/vcr.md)
+  * [Hướng dẫn sử dụng tài khoản](nhung-cau-hoi-thuong-gap-faq/huong-dan-su-dung-tai-khoan.md)
 * [Khởi tạo Pfsense trên HAN01](khoi-tao-pfsense-tren-han01.md)
