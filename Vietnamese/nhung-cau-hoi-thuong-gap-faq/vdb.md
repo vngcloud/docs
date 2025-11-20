@@ -32,3 +32,7 @@ Quý khách không cần restart DB khi resize volume, hệ thống đã tự đ
 ### \[vDB] Tôi muốn sử dụng vDB API thì có API curl để tạo user kafka không?
 
 Quý khách có thể tham khảo tài liệu vDB API tại đây [https://docs.api.vngcloud.vn/service-docs/vdb-api.html#tag/Kafka-Cluster-API/operation/createUser](https://docs.api.vngcloud.vn/service-docs/vdb-api.html#tag/Kafka-Cluster-API/operation/createUser)&#x20;
+
+### \[vDB] vDB đổi cổng kết nối được không?
+
+Hiện tại vDB không cho đổi cổng kết nối. Trường hợp bạn muốn xem thông tin kết nối bạn chọn vào xem chi tiết của DB Instance, sau đó chọn đến tab **Connectivity & Security**, bạn xem thông tin kết nối tại mục **Endpoint & Port**.
