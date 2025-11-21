@@ -184,7 +184,7 @@ sudo systemctl restart nginx
 sudo systemctl enable nginx
 ```
 
-Ngoài ra còn có thể cấu hình thêm SSL/HTTPS (Let's Encrypt) và cần mở thêm Security Group rule cho inbound và outbound: tcp/80.
+Ngoài ra còn có thể cấu hình thêm SSL/HTTPS (Let's Encrypt) và cần mở thêm Security Group rule cho inbound và outbound: tcp/80 (HTTP), tcp/443 (HTTPS).
 
 Kiểm tra:
 
