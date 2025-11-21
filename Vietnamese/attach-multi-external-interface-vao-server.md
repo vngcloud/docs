@@ -89,8 +89,8 @@ ping -I eth1 8.8.8.8
 echo "200 rt_eth1" | sudo tee -a /etc/iproute2/rt_tables
 
 # Add routes
-sudo ip route add default via 203.0.113.1 dev eth1 table rt_eth1
-sudo ip rule add from 203.0.113.20/32 table rt_eth1
+sudo ip route add default via 103.245.255.1 dev eth1 table rt_eth1
+sudo ip rule add from 103.245.255.167/32 table rt_eth1
 
 # Verify
 ip rule show
@@ -109,8 +109,8 @@ sudo mkdir -p /var/www/website1
 sudo mkdir -p /var/www/website2
 
 # Tạo file test
-echo "<h1>Website 1 - IP: 203.0.113.10</h1>" | sudo tee /var/www/website1/index.html
-echo "<h1>Website 2 - IP: 203.0.113.20</h1>" | sudo tee /var/www/website2/index.html
+echo "<h1>Website 1 - IP: 103.245.255.167</h1>" | sudo tee /var/www/website1/index.html
+echo "<h1>Website 2 - IP: 103.245.255.166</h1>" | sudo tee /var/www/website2/index.html
 ```
 
 Cấu hình Website 1:
@@ -190,19 +190,19 @@ Kiểm tra:
 
 ```
 # Test kết nối từ server
-curl -H "Host: website1.com" http://203.0.113.10
-curl -H "Host: website2.com" http://203.0.113.20
+curl -H "Host: website1.com" http://103.245.255.167
+curl -H "Host: website2.com" http://103.245.255.166
 
 # Test từ máy khác
-curl http://203.0.113.10
-curl http://203.0.113.20
+curl http://103.245.255.167
+curl http://103.245.255.166
 
 # Check listening ports
 sudo ss -tulpn | grep -E ':(80|443)'
 
 # Verify routing
-ip route get 8.8.8.8 from 203.0.113.10
-ip route get 8.8.8.8 from 203.0.113.20
+ip route get 8.8.8.8 from 103.245.255.167
+ip route get 8.8.8.8 from 103.245.255.166
 
 # Check logs
 sudo tail -f /var/log/nginx/website1_access.log
