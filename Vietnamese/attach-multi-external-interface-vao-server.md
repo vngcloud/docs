@@ -20,11 +20,11 @@ VM Ubuntu/CentOS\
 
 **Bước 2:  Cấu hình Network Interfaces**
 
-\#Kiểm tra interfaces hiện tại:
+Kiểm tra interfaces hiện tại:
 
 `ip addr show`
 
-\#Sửa file netplan (Ubuntu 22.04)
+Sửa file netplan (Ubuntu 22.04)
 
 `sudo nano /etc/netplan/01-netcfg.yaml`
 
