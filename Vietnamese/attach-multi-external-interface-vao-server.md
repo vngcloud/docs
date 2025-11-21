@@ -9,8 +9,8 @@ Hướng dẫn triển khai use case phổ biến: Hosting 2 Website trên 2 Pub
 **Kiến trúc mục tiêu:**
 
 VM Ubuntu/CentOS\
-├── eth0 (IP: 203.0.113.10) → website1.com\
-├── eth1 (IP: 203.0.113.20) → website2.com\
+├── eth1 (IP: 103.245.255.167) → website1.com\
+├── eth2 (IP: 103.245.255.166) → website2.com\
 └── Nginx/Apache phân biệt traffic theo IP
 
 &#x20;**Bước 1: Attach multi external interface trên UI portal**
