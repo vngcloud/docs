@@ -16,7 +16,7 @@ VM Ubuntu/CentOS\
 &#x20;**Bước 1: Attach multi external interface trên UI portal**
 
 1. Truy cập portal vServer (ví dụ HCM): [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview)
-2. Vào detail của Server, chọn tab Network Interface và attach nhiều external interface vào portal
+2. Vào detail của Server, chọn tab Network Interface và attach nhiều external interface.
 
 **Bước 2:  Cấu hình Network Interfaces**
 
