@@ -22,11 +22,11 @@ VM Ubuntu/CentOS\
 
 \#Kiểm tra interfaces hiện tại:
 
-ip addr show
+`ip addr show`
 
 \#Sửa file netplan (Ubuntu 22.04)
 
-sudo nano /etc/netplan/01-netcfg.yaml
+`sudo nano /etc/netplan/01-netcfg.yaml`
 
 ```
 network:
@@ -59,15 +59,15 @@ a. Disable cloud-init network
 
 Tạo file:
 
-sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+`sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg`
 
 Thêm:
 
-network: {config: disabled}
+`network: {config: disabled}`
 
 b. Disable file 50-cloud-init.yaml
 
-mv /etc/netplan/50-cloud-init.yaml /etc/netplan/50-cloud-init.yaml.disabled
+`mv /etc/netplan/50-cloud-init.yaml /etc/netplan/50-cloud-init.yaml.disabled`
 
 4. Apply cấu hình và verify
 
