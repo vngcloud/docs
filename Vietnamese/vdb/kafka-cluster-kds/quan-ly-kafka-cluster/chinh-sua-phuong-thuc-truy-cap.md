@@ -10,7 +10,7 @@ Các tùy chọn Access Method và chức năng
 
 ## Chỉnh sửa truy cập công khai (Public Accessibility)
 
-**1. Chọn Cụm Kafka:** Đăng nhập vào vDB Kafka Cluster tại đây và chọn cụm Kafka mà bạn muốn điều chỉnh.
+**1. Chọn Cụm Kafka:** Đăng nhập vào vDB Kafka Cluster tại đây [https://vdb.console.vngcloud.vn/kafka/cluster](https://vdb.console.vngcloud.vn/kafka/cluster) và chọn cụm Kafka mà bạn muốn điều chỉnh.
 
 **2. Bật/Tắt Truy Cập Công Khai:** Tại trang quản lý Kafka Cluster, tìm tùy chọn tính năng "Edit Accessibility" và bật hoặc tắt tùy chọn này để cho phép hoặc chặn truy cập từ bên ngoài VPC.
 
@@ -23,7 +23,7 @@ Các tùy chọn Access Method và chức năng
 
 ## Chỉnh sửa access method (mTLS, SASL)
 
-**1. Chọn Cụm Kafka:** Đăng nhập vào vDB Kafka Cluster tại đây và chọn cụm Kafka mà bạn muốn điều chỉnh.
+**1. Chọn Cụm Kafka:** Đăng nhập vào vDB Kafka Cluster tại đây [https://vdb.console.vngcloud.vn/kafka/cluster](https://vdb.console.vngcloud.vn/kafka/cluster) và chọn cụm Kafka mà bạn muốn điều chỉnh.
 
 **2. Chọn các Phương thức Xác thực:** Tại trang quản lý Kafka Cluster, tìm và chọn tính nắng "Edit Access Control Method".
 

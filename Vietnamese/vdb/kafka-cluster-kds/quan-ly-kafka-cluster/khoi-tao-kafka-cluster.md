@@ -6,7 +6,7 @@ Bằng cách làm theo hướng dẫn này, bạn sẽ có thể nhanh chóng tr
 
 ## **Bước 1: Truy cập Giao diện Quản lý Kafka**
 
-1. Mở trình duyệt web và truy cập vào giao diện quản lý Kafka của VNG Cloud tại đây:&#x20;
+1. Mở trình duyệt web và truy cập vào giao diện quản lý Kafka của VNGCloud tại đây: [https://vdb.console.vngcloud.vn/kafka/cluster](https://vdb.console.vngcloud.vn/kafka/cluster)
 2. Đăng nhập vào tài khoản của bạn. Nếu bạn chưa có tài khoản, hãy đăng ký một tài khoản mới.
 
 ## **Bước 2: Bắt đầu Tạo Cụm Kafka**

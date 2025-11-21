@@ -38,7 +38,7 @@ vDB Kafka Cluster cung cấp cho bạn khả năng quản lý toàn diện các 
 
 **1. Chọn Cụm Kafka**
 
-* Đăng nhập vào giao diện vDB Kafka Cluster tại đây:&#x20;
+* Đăng nhập vào giao diện vDB Kafka Cluster tại đây: [https://vdb.console.vngcloud.vn/kafka/cluster](https://vdb.console.vngcloud.vn/kafka/cluster)
 * Từ danh sách các cụm Kafka có sẵn, chọn cụm mà bạn muốn quản lý topic.
 
 **2. Truy cập Phần "Topics"**

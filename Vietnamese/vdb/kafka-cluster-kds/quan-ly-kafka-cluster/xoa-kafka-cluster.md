@@ -4,7 +4,7 @@ vDB Kafka Cluster cung cấp tính năng xóa cụm Kafka khi bạn không còn 
 
 **Các bước thực hiện:**
 
-1. **Chọn Cụm Kafka:** Đăng nhập vào vDB Kafka Cluster tại đây và chọn cụm Kafka mà bạn muốn xóa.
+1. **Chọn Cụm Kafka:** Đăng nhập vào vDB Kafka Cluster tại đây [https://vdb.console.vngcloud.vn/kafka/cluster](https://vdb.console.vngcloud.vn/kafka/cluster) và chọn cụm Kafka mà bạn muốn xóa.
 2. **Xóa Cụm:** Tìm tùy chọn "Xóa".
 3. **Xác nhận:** Hệ thống sẽ yêu cầu bạn xác nhận việc xóa cụm. Đọc kỹ các cảnh báo và thông tin trước khi xác nhận.
 4. **Theo dõi Tiến trình:** Hệ thống sẽ bắt đầu quá trình xóa cụm Kafka. Bạn có thể theo dõi tiến trình thông qua giao diện quản lý.

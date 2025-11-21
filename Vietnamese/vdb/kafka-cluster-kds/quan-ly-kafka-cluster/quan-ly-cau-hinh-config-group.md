@@ -8,7 +8,7 @@ Kafka Config Group là một tập hợp các tham số cấu hình (configurati
 
 **1. Tạo mới Config Group**
 
-* **Truy cập Kafka Config Group:** Đăng nhập vào vDB và chọn trang Config Group tại đây:
+* **Truy cập Kafka Config Group:** Đăng nhập vào vDB và chọn trang Config Group tại đây: [https://vdb.console.vngcloud.vn/kafka/config-group](https://vdb.console.vngcloud.vn/kafka/config-group)
 * **Nhấn nút "Tạo mới":** Nhấn nút "Tạo config Group" để bắt đầu tạo Config Group mới.
 * **Đặt tên và mô tả:** Nhập tên cho Config Group và một mô tả ngắn gọn (tùy chọn).
 * **Thêm các tham số cấu hình:** Thêm các tham số Kafka cần thiết vào Config Group. Bạn có thể sử dụng giao diện đồ họa hoặc nhập trực tiếp các tham số dưới dạng văn bản.

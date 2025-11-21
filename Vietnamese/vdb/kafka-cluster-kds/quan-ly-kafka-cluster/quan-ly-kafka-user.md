@@ -10,6 +10,7 @@ Kafka user là một thành phần quan trọng trong việc bảo mật và ki�
 * **Ủy quyền (Authorization):** Sau khi xác thực thành công, Kafka user được cấp quyền truy cập vào các topic cụ thể dựa trên các quyền được gán cho user đó. Các quyền truy cập thông thường bao gồm:
   * **Produce:** Quyền ghi dữ liệu vào một topic.
   * **Consume:** Quyền đọc dữ liệu từ một topic.
+  * **Manage topic**: Quyền quản lý các topic
 
 ## Quản lý Kafka User
 
@@ -17,7 +18,7 @@ vDB Kafka Cluster cung cấp các tính năng quản lý Kafka user toàn diện
 
 **1. Chọn Cụm Kafka**
 
-* Đăng nhập vào giao diện vDB Kafka Cluster tại đây:
+* Đăng nhập vào giao diện vDB Kafka Cluster tại đây: [https://vdb.console.vngcloud.vn/kafka/cluster](https://vdb.console.vngcloud.vn/kafka/cluster)
 * Từ danh sách các cụm Kafka, chọn cụm mà bạn muốn quản lý user.
 
 **2. Truy cập Phần "Users"**

@@ -16,7 +16,7 @@ Khi bạn thay đổi số lượng broker, Kafka cần phân phối lại các 
 
 ## Hướng dẫn Thay đổi Số lượng Broker
 
-1. **Chọn Cụm Kafka:** Đăng nhập vào vDB Kafka Cluster tại đây và chọn cụm Kafka mà bạn muốn điều chỉnh.
+1. **Chọn Cụm Kafka:** Đăng nhập vào vDB Kafka Cluster tại đây [https://vdb.console.vngcloud.vn/kafka/cluster](https://vdb.console.vngcloud.vn/kafka/cluster) và chọn cụm Kafka mà bạn muốn điều chỉnh.
 2. **Thay đổi Số lượng Broker:**
    * Tìm và truy cập vào phần quản lý cụm Kafka.
    * Chọn tùy chọn "Edit number of broker" để tăng hoặc giảm số lượng broker.
