@@ -80,6 +80,8 @@ ip addr show
 ping -I eth1 8.8.8.8
 ```
 
+**Sau khi apply, nếu đã login bằng SSH qua floating IP trước đó, cần re-login SSH bằng External interface (ví dụ eth1 hoặc eth2)**
+
 **Bước 3: Cấu hình Policy-Based Routing**&#x20;
 
 ```
