@@ -10,4 +10,4 @@ Phần này ghi chú chi tiết các tính năng mới, các cải tiến và c�
 
 * [Release Storage gateway 2.0 - Rclone](release-storage-gateway-2.0-rclone.md)
 
-\
+<br>

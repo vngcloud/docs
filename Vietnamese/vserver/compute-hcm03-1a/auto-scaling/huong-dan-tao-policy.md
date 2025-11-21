@@ -42,4 +42,4 @@ Sau khi tạo thành công, bạn sẽ thấy policy vừa tạo xuất hiện �
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/49650340/image2019-5-24_0-0-5.png?version=1&#x26;modificationDate=1681443948000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-\
+<br>

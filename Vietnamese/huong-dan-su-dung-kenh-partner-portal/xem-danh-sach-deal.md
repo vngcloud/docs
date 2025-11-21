@@ -10,4 +10,4 @@
 * Người dùng vào menu “**Deal**” và chon điều kiện xem danh sách deal (nếu muốn)
 * Hệ thống sẽ liệt kê danh sách deal theo điều kiện chọn. Nếu người dùng để trống điều kiện chọn, hệ thống sẽ liệt kê tất cả các deal đang có theo account đăng nhập
 
-\
+<br>

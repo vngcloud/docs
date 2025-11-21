@@ -58,4 +58,4 @@ Sử dụng hướng dẫn này để bắt đầu với **vConsole**. Bạn s�
 1. Truy cập vào trang Trình khám phá chi phí / Cost explorer tại: [https://dashboard.console.vngcloud.vn/cost-explorer](https://dashboard.console.vngcloud.vn/credit-history)
 2. Tìm hiểu thêm các tính năng của trang Trình khám phá chi phí, mời tham khảo [**tại đây**](trinh-kham-pha-chi-phi.md)
 
-\
+<br>

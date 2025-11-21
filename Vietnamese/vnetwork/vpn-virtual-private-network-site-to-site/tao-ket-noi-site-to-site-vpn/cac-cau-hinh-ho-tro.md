@@ -16,5 +16,5 @@ _Hash is ignored with GCM algorithms_
 
 <table><thead><tr><th>Keyworkd</th><th width="392">Description</th><th>Note</th></tr></thead><tbody><tr><td>modp8192</td><td>18 (8192 bit)</td><td></td></tr><tr><td>modp6144</td><td>17 (6144 bit)</td><td></td></tr><tr><td>modp4096</td><td>16 (4096 bit)</td><td></td></tr><tr><td>modp3072</td><td>15 (3072 bit)</td><td></td></tr><tr><td>modp2048</td><td>14 (2048 bit)</td><td>default value</td></tr><tr><td>modp1536</td><td>5 (1536 bit)</td><td>weak security</td></tr><tr><td>modp1024</td><td>2 (1024 bit)</td><td>weak security</td></tr><tr><td>modp768</td><td>1 (768 bit)</td><td>weak security</td></tr></tbody></table>
 
-### &#x20;
+### <br>
 

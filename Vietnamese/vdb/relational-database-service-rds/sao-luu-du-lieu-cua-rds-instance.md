@@ -1,7 +1,6 @@
 # Sao lưu dữ liệu của RDS Instance
 
-VNG Cloud vDB hỗ trợ hai cách sao lưu (backup) dữ liệu là: theo nhu cầu (on-demand) và tự động hằng ngày (daily automatic) tại thời điểm được ấn định trước.\
-
+VNG Cloud vDB hỗ trợ hai cách sao lưu (backup) dữ liệu là: theo nhu cầu (on-demand) và tự động hằng ngày (daily automatic) tại thời điểm được ấn định trước.<br>
 
 * [A. Sao lưu theo nhu cầu (On-demand backup hoặc Manual backup)](sao-luu-du-lieu-cua-rds-instance.md#saoluudulieucuardsinstance-a.saoluutheonhucau-on-demandbackuphoacmanualbackup)
 * [B. Sao lưu tự động theo ngày (Auto-Daily Backup)](sao-luu-du-lieu-cua-rds-instance.md#saoluudulieucuardsinstance-b.saoluutudongtheongay-auto-dailybackup)

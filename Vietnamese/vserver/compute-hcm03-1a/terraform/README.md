@@ -16,8 +16,7 @@ Bản thân Terraform không có giao diện người dùng đồ họa, thay v�
 * **Hỗ trợ cộng tác, tái sử dụng:** Do cơ sở hạ tầng được quản lý bằng cách sử dụng ngôn ngữ lập trình HCL để mô tả nên các lập trình viên có thể dễ dàng cộng tác, làm việc với nhau để cùng xây dựng. Các lập trình viên cũng có thể tạo ra các module chung để tái sử dụng cho các dự án sau này, giúp cho quá trình xây dựng hạ tầng cho một hệ thống mới trở nên nhanh hơn, đơn giản hơn thay vì phải thực hiện lại mọi thứ từ đầu.
 * **Làm việc đồng thời với nhiều Cloud Provider:** Chúng ta có thể sử dụng Terraform để làm việc với nhiều nhà cung cấp dịch vụ tính toán khác nhau như: VNG Cloud, Amazon Web Service, Microsoft Azure, Google Cloud Platform, Kubernetes, VMWare...Việc sử dùng Terraform để làm việc với nhiều dịch vụ khác nhau giúp quản lý đồng thời các tài nguyên trên nhiều nền tảng khác trở nên dễ dàng, tiện lợi hơn.
 
-\
-
+<br>
 
 ***
 
@@ -29,4 +28,4 @@ Bản thân Terraform không có giao diện người dùng đồ họa, thay v�
 * [Quản lý vLB với Terraform](quan-ly-vlb-voi-terraform.md)
 * [Tài liệu tham chiếu](tai-lieu-tham-chieu.md)
 
-\
+<br>

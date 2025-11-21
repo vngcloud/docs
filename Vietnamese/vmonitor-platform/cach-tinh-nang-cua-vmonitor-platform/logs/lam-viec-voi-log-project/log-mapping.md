@@ -10,4 +10,4 @@ Chẳng hạn như thông tin tên máy chủ Host có thể có nhiều tên kh
 
 Nếu bạn muốn thêm mapping cho một thuộc tính nào đó, hãy liên hệ với chúng tôi. Việc thêm thuộc tính Log mapping này có thể được chúng tôi đáp ứng nếu thuộc tính mapping của bạn là hợp lý thông qua sự xem xét của chúng tôi.
 
-\
+<br>

@@ -25,4 +25,4 @@ Tính năng **cấu hình Whitelist IP Source** cho Load Balancer là một ph�
    * Ví dụ người dùng nhâp **"192.168.0.0/24, 172.16.0.0/24"** có nghĩa là chỉ những địa chỉ IP thuộc 2 dải IP Range này mới có quyền truy cập.
 7. **Nhấn nút "Lưu" tại góc dưới bên phải của cửa sổ để hoàn tất việc cập nhật.**
 
-\
+<br>

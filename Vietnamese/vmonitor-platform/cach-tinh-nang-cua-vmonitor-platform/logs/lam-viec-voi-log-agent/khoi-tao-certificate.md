@@ -25,4 +25,4 @@ Sau khi tải về và giải nén, bạn sẽ thấy các tệp tin certificate
 /Kubernetes                    // Bộ cài cho môi trường Kubernetes
 </code></pre></td></tr></tbody></table>
 
-\
+<br>

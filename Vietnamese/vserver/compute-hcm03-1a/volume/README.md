@@ -46,4 +46,4 @@ Chỉ volume ở trạng thái Available mới có thể xóa:
 1. Vào VNG Cloud Portal console, đến trang Volume
 2. Chọn data volume cần xóa, vào menu action ở bên phải, chọn **Delete**
 
-\
+<br>

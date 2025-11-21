@@ -20,8 +20,7 @@ hoặc
 
 để xem danh sách các extension đã được bật trên database.
 
-\
-
+<br>
 
 Dưới đây là danh sách các extension đã được bật sẵn:
 
@@ -41,8 +40,7 @@ Bạn có thể tự bật một Extension bằng cách chạy lệnh:
 | create extension \<extension\_name>; |
 | ------------------------------------ |
 
-\
-
+<br>
 
 <table data-header-hidden><thead><tr><th></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td><strong>Name</strong></td><td><strong>Description</strong></td><td><strong>Version</strong></td></tr><tr><td>address_standardizer</td><td>Used to parse an address into constituent elements. Generally used to support geocoding address normalization step.</td><td>2.5.4</td></tr><tr><td>address_standardizer_data_us</td><td>Address Standardizer US dataset example</td><td>2.5.4</td></tr><tr><td>amcheck</td><td>functions for verifying relation integrity</td><td>1</td></tr><tr><td>autoinc</td><td>functions for autoincrementing fields</td><td>1</td></tr><tr><td>earthdistance</td><td>calculate great-circle distances on the surface of the Earth</td><td>1.1</td></tr><tr><td>fuzzystrmatch</td><td>determine similarities and distance between strings</td><td>1.1</td></tr><tr><td>insert_username</td><td>functions for tracking who changed a table</td><td>1</td></tr><tr><td>intagg</td><td>integer aggregator and enumerator (obsolete)</td><td>1.1</td></tr><tr><td>intarray</td><td>functions, operators, and index support for 1-D arrays of integers</td><td>1.2</td></tr><tr><td>moddatetime</td><td>functions for tracking last modification time</td><td>1</td></tr><tr><td>pageinspect</td><td>inspect the contents of database pages at a low level</td><td>1.6</td></tr><tr><td>pg_buffercache</td><td>examine the shared buffer cache</td><td>1.3</td></tr><tr><td>pg_freespacemap</td><td>examine the free space map (FSM)</td><td>1.2</td></tr><tr><td>pg_prewarm</td><td>prewarm relation data</td><td>1.1</td></tr><tr><td>pg_stat_statements</td><td>track execution statistics of all SQL statements executed</td><td>1.6</td></tr><tr><td>pg_trgm</td><td>text similarity measurement and index searching based on trigrams</td><td>1.3</td></tr><tr><td>pg_visibility</td><td>examine the visibility map (VM) and page-level visibility info</td><td>1.2</td></tr><tr><td>pgcrypto</td><td>cryptographic functions</td><td>1.3</td></tr><tr><td>pgrouting</td><td>pgRouting Extension</td><td>3.0.0</td></tr><tr><td>pgrowlocks</td><td>show row-level locking information</td><td>1.2</td></tr><tr><td>pgstattuple</td><td>show tuple-level statistics</td><td>1.5</td></tr><tr><td>postgis_sfcgal</td><td>PostGIS SFCGAL functions</td><td>2.5.4</td></tr><tr><td>postgis_tiger_geocoder</td><td>PostGIS tiger geocoder and reverse geocoder</td><td>2.5.4</td></tr><tr><td>postgis_topology</td><td>PostGIS topology spatial types and functions</td><td>2.5.4</td></tr><tr><td>refint</td><td>functions for implementing referential integrity (obsolete)</td><td>1</td></tr><tr><td>sslinfo</td><td>information about SSL certificates</td><td>1.2</td></tr><tr><td>tablefunc</td><td>functions that manipulate whole tables, including crosstab</td><td>1</td></tr><tr><td>tcn</td><td>Triggered change notifications</td><td>1</td></tr><tr><td>timetravel</td><td>functions for implementing time travel</td><td>1</td></tr><tr><td>tsm_system_rows</td><td>TABLESAMPLE method which accepts number of rows as a limit</td><td>1</td></tr><tr><td>tsm_system_time</td><td>TABLESAMPLE method which accepts time in milliseconds as a limit</td><td>1</td></tr><tr><td>unaccent</td><td>text search dictionary that removes accents</td><td>1.1</td></tr><tr><td>uuid-ossp</td><td>generate universally unique identifiers (UUIDs)</td><td>1.1</td></tr></tbody></table>
 

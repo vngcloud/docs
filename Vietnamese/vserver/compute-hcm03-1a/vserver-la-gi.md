@@ -19,4 +19,4 @@ Dịch vụ vServer cung cấp cho bạn các giải pháp hàng đầu bao gồ
 * Các mạng ảo của bạn được cách ly độc lập với phần còn lại của VNG Cloud và có thể tùy chọn kết nối với mạng của riêng mình, được gọi là mạng riêng ảo (VPC)
 * Kết nối với nhiều dịch vụ của khác của VNG Cloud, cho phép bạn xây dựng giải pháp đa dạng cho nhiều tình huống giúp tối ưu hoá khối lượng công việc đồng thời tiết kiệm băng thông đầu ra
 
-\
+<br>

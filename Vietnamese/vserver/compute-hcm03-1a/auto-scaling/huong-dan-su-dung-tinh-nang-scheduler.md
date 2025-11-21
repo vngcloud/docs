@@ -46,4 +46,4 @@ Sau khi thiết lập xong, chọn create để tạo scheduler. Tạo thành c�
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/49650356/image2019-5-24_0-3-34.png?version=1&#x26;modificationDate=1681444079000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-\
+<br>

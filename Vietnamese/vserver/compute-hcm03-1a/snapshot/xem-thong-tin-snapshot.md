@@ -10,8 +10,7 @@ Sau khi tạo Snapshot cho máy chủ ảo và ổ đĩa, bạn có thể xem th
    1. Tổng dung lượng các bản Snapshot
    2. Tổng số lượng các bản Snapshot
    3. Số lượng Volume được tạo Snapshot
-4. Tại trang danh sách chi tiết sẽ bao gồm các thông tin về:\
-
+4. Tại trang danh sách chi tiết sẽ bao gồm các thông tin về:<br>
    1. Tên Snapshot
    2. Trạng thái Status
    3. Mô tả Snapshot

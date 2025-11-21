@@ -23,4 +23,4 @@ Sử dụng hướng dẫn này để thay đổi thông tin/xóa Listener trong
 4. **Tại danh sách Listener, nhấn chọn biểu tượng "Xóa" tại hàng Listener cần xóa.**
 5. **Một cửa sổ giao diện sẽ xuất hiện để xác nhận xóa, nhấn nút "Xóa" để hoàn tất.**
 
-\
+<br>

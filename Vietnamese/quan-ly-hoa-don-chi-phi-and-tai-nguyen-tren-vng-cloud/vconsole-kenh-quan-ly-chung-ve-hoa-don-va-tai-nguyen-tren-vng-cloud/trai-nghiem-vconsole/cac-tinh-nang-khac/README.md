@@ -8,4 +8,4 @@ Sử dụng hướng dẫn này để bắt đầu với các tính năng khác 
 2. [**Phân quyền truy cập qua IAM**](phan-quyen-truy-cap-thong-qua-iam.md)
 3. [**Tag tài nguyên**](tag-tai-nguyen.md)
 
-\
+<br>

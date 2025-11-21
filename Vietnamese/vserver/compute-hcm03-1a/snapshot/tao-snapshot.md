@@ -24,8 +24,7 @@ Quá trình chụp ảnh nhanh hoạt động không đồng bộ. Mặc dù sna
 3. Tại trang nhập thông tin tạo Snapshot, bạn cần hoàn thành các mục sau đây:
    * **Loại Snapshot** – Chọn đối tượng bạn muốn tạo Snapshot theo Volume.&#x20;
    * **Tên Snapshot** – Tên cho Snapshot của bạn. Tên chỉ có thể chứa các ký tự chữ và số (a-z, A-Z, 0-9, '\_', '-'). Độ dài dữ liệu đầu vào của bạn phải từ 5 đến 50. Tên phải là duy nhất trong Khu vực và tài khoản VNG Cloud mà bạn đang tạo Snapshot.
-   * **Cài đặt Snapshot:**\
-
+   * **Cài đặt Snapshot:**<br>
      * **Volume ID:** Chọn Volume bạn cần tạo Snapshot theo ID
      * **Description** – Nhập ghi chú cho bản Snapshot
      * **Thời gian lưu giữ:** Lựa chọn thời gian lưu Snapshot, bạn có thể chọn lưu giữ bản Snapshot vĩnh viễn hoặc theo số ngày bạn nhập
@@ -40,8 +39,7 @@ Quá trình chụp ảnh nhanh hoạt động không đồng bộ. Mặc dù sna
 3. Tại trang nhập thông tin tạo Snapshot, bạn cần hoàn thành các mục sau đây:
    * **Loại Snapshot** – Chọn đối tượng bạn muốn tạo Snapshot theo Server. Nếu lựa chọn theo Server đồng nghĩa với việc bạn sẽ tạo Snapshot được đính kèm với Server đã chọn.
    * **Tên Snapshot** – Tên cho Snapshot của bạn. Tên chỉ có thể chứa các ký tự chữ và số (a-z, A-Z, 0-9, '\_', '-'). Độ dài dữ liệu đầu vào của bạn phải từ 5 đến 50. Tên phải là duy nhất trong Khu vực và tài khoản VNG Cloud mà bạn đang tạo Snapshot.
-   * **Cài đặt Snapshot:**\
-
+   * **Cài đặt Snapshot:**<br>
      * **Volume ID:** Chọn Volume bạn cần tạo Snapshot theo ID
      * **Description** – Nhập ghi chú cho bản Snapshot
      * **Thời gian lưu giữ:** Lựa chọn thời gian lưu Snapshot, bạn có thể chọn lưu giữ bản Snapshot vĩnh viễn hoặc theo số ngày bạn nhập

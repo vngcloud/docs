@@ -8,7 +8,7 @@ vMonitor Platform cung cấp 3 nhóm dịch vụ chính là: **Metric, Log, Synt
 * **vMonitor Log** là dịch vụ giúp thu thập dữ liệu Log của máy chủ, ứng dụng, hay các thiết bị từ hệ thống của doanh nghiệp theo thời gian thực. vMonitor Log được xây dựng dành cho người dùng, nhà phát triển, kĩ sư vận hành hay nhà quản lý IT nhằm đích lưu trữ, tìm kiếm, phân tích và hỗ trợ xử lý sự cố nhanh chóng trên những dữ liệu Log đã thu thập&#x20;
 * **vMonitor Synthetic** là một tập các điều kiện và cấu hình mà giúp khác bạn chủ động theo dõi các dịch vụ quan trọng nhất của mình để chúng luôn sẵn sàng mọi lúc và mọi nơi. Synthetic API Test hỗ trợ nhiều giao thức như TCP, HTTP(s), Ping.&#x20;
 
-<figure><img src="../../../English/assets/image (343).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

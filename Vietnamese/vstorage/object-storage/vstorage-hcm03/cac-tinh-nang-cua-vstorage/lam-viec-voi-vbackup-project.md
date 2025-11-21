@@ -43,8 +43,7 @@ Sau khi bạn hoàn thành 5 bước được mô tả bên trên, backup roject
 
 Chúng tôi chỉ miễn phí cho bạn dung lượng lưu trữ 50GB ở lớp lưu trữ Gold class trong chu kỳ lưu trữ 1 tháng. Nếu bạn thực hiện gia hạn thì chi phí sẽ được tính từ ngày kết thúc chu kỳ lưu trữ miễn phí tới ngày hết hạn theo chu kỳ mới mà bạn gia hạn. Quy trình và phương thức tính giá tương tự như khi gia hạn project thông thường. Chi tiết tham khảo thêm tại [Cách tính phí](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648482).
 
-\
-
+<br>
 
 </details>
 
@@ -81,8 +80,7 @@ Sau khi bạn hoàn thành 5 bước được mô tả bên trên, backup projec
 
 Nếu backup project mà bạn thực hiện khôi phục chưa được Gia hạn hay Tăng giảm hạn mức bất kỳ một lần nào thì bạn có thể khôi phục lại backup project này với thông tin thanh toán là 0 VNĐ. Nếu backup project mà bạn thực hiện khôi phục đã được Gia hạn hay Tăng giảm hạn mức ít nhất một lần thì bạn có thể khôi phục lại backup project này với thông tin thanh toán là giá trị tài nguyên được gia hạn hay tăng hạn mức với số ngày sử dụng còn lại tương ứng. Quy trình và phương thức tính giá tương tự như khi khôi phục project thông thường. Chi tiết tham khảo thêm tại [Cách tính phí](../cach-tinh-phi/).
 
-\
-
+<br>
 
 </details>
 

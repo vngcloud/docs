@@ -51,7 +51,7 @@ Bạn có thể lọc các mô hình bằng các tùy chọn ở thanh bên trá
 3. Bật/tắt riêng lẻ hoặc hàng loạt mô hình.
 4. Lưu (Save) các thay đổi.
 
-<figure><img src="../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Để bắt đầu thử nghiệm và so sánh các mô hình trước khi tích hợp, bạn có thể sử dụng [Playground](playground.md)&#x20;
 

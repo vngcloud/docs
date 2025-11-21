@@ -163,4 +163,4 @@ cd learn-terraform-docker-container
 
 Trong thư mục làm việc, tạo một tệp có tên **`main.tf`** và dán cấu hình Terraform (Server, Container, LB) vào sau đó.
 
-\
+<br>

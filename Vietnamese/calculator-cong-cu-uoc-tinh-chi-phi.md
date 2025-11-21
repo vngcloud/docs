@@ -67,4 +67,4 @@ Tuy nhiên, nếu đã và đang là người dùng sử dụng dịch vụ VNG 
    1. **Đối với người dùng có đăng nhập:** Có thể truy cập vào công cụ tính giá ở bất cứ đâu cũng đều sẽ nhìn thấy các dịch vụ này, miễn là có đăng nhập đúng với thông tin người dùng,
    2. **Đối với người dùng chưa đăng nhập:** Các dịch vụ đã đưa vào danh sách ước tính sẽ lưu tạm trên thiết bị thực hiện, thay vì theo tài khoản. Do đó, người dùng sẽ không thấy được danh sách tính giá trước đó khi truy cập công cụ tính giá bằng thiết bị khác.
 
-\
+<br>

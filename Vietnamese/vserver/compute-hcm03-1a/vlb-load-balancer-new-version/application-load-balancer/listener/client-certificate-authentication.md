@@ -29,7 +29,6 @@ Tính năng "**Client Certificate Authentication**" là một phần quan trọn
 6. **Tại phần Cài đặt nâng cao, check/uncheck vào check box Bật Client CA. Trường hợp Bật Client CA, người dùng cần chọn một Certificate từ danh sách Certificate trên hệ thống.**
 7. **Nhấn nút "Lưu" tại góc dưới bên phải của cửa sổ để hoàn tất việc cập nhật.**
 
-\
+<br>
 
-
-\
+<br>

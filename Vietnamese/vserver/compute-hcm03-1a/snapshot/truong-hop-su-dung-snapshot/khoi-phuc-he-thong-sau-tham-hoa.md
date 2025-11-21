@@ -10,4 +10,4 @@ Trong tình huống khẩn cấp này, người quản trị hệ thống đã n
 
 Quá trình khôi phục đã thành công, và máy chủ đã trở lại hoạt động trong thời gian ngắn. Công ty đã tránh được tình huống khủng hoảng và mất mát dữ liệu quan trọng. Họ đã học được bài học quý báu về tầm quan trọng của việc sử dụng Snapshot để đảm bảo tính nhất quán và sẵn sàng trong trường hợp sự cố không mong muốn.
 
-\
+<br>

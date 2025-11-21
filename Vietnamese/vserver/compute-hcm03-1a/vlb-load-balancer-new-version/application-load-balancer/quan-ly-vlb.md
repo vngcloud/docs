@@ -190,4 +190,4 @@ Trước khi thực hiện xóa Load Balancer, người dùng cần cân nhắc 
 Đối với người dùng trả trước, trường hợp xóa Load Balancer trước thời hạn, người dùng sẽ được hoàn phí dịch vụ theo thời gian sử dụng thực tế.
 {% endhint %}
 
-\
+<br>

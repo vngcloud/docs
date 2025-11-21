@@ -30,8 +30,7 @@ Màn hình tương tự như sau:
 
 **Bước 5:** Sau khi click vào link trong email ở **bước 4**, form đăng ký cuối cùng sẽ được mở ra. Tại đây điền đầy đủ các thông tin vào form đăng ký.
 
-\
-
+<br>
 
 <figure><img src="../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
 
@@ -50,4 +49,4 @@ Người dùng nhập thông tin đăng ký, OTP vào bảng trên & nhấp ch�
 
 Các thông tin về email và số điện thoại của khách hàng được VNG Cloud mã hóa theo thuật toán Symmetric AES nhằm đảm bảo an toàn thông tin khách hàng
 
-\
+<br>

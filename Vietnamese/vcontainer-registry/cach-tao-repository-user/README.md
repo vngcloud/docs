@@ -1,4 +1,4 @@
-# Cách tạo Repository User
+# Repository User
 
 #### Repository User là gì? <a href="#repositoryuser-repositoryuserlagi" id="repositoryuser-repositoryuserlagi"></a>
 
@@ -34,4 +34,4 @@ Bạn có thể tạm thời vô hiệu hóa một Repository User bằng cách 
 * [Refresh Secret Key](cach-refresh-secret-key.md)
 * [Change User Status](cach-thay-doi-user-status.md)
 
-\
+<br>

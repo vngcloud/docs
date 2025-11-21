@@ -40,4 +40,4 @@ POC là một loại ví do VNG Cloud cung cấp nhằm mục đích đem đến
 
 Hiện tại, ví POC được cấp thông qua các chương trình khuyến mãi, chiến dịch quảng cáo của VNG Cloud hoặc thông qua bộ phận Sale/Sale Operation sau khi đã hoàn thành các thỏa thuận.
 
-\
+<br>

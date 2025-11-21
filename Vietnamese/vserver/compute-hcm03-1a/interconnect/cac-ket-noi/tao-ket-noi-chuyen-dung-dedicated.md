@@ -14,4 +14,4 @@ Các giá trị có thể là 1 Gbps và 10 Gbps. Bạn không thể thay đổi
 
 * Hiện tại tính năng tạo Interconnect chưa được triển khai trên giao diện người dùng, để thực hiện thao tác tạo, xin vui lòng gởi yêu cầu cho chúng tôi tại địa chỉ: [https://support.vngcloud.vn/#/app/dashboard](https://support.vngcloud.vn/#/app/dashboard)
 
-\
+<br>

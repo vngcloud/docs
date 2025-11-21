@@ -25,4 +25,4 @@ _**Lưu ý:**_
 * _Tại một thời điểm, chỉ có 1 chiết khấu có trạng thái “Đang có hiệu lực” và một chiết khấu có trạng thái “Chờ duyệt”_
 * _Khi có một chiết khấu mới được chuyển trạng thái từ “ Chờ kích hoạt” sang “ Đang có hiệu lực”, chiết khấu hiện tại sẽ bị chuyển thành “ Hết hạn”_
 
-\
+<br>

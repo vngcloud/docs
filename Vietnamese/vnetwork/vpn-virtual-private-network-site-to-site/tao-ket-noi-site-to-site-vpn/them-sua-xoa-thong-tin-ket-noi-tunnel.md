@@ -14,7 +14,7 @@ description: >-
 * Tại thanh menu bên trái của giao diện vNetwork, chọn mục VPN Site-to-Site.
 * Chọn VPN cần chỉnh sửa
 
-<figure><img src="../../../.gitbook/assets/1 (2).png" alt=""><figcaption><p>VPN List</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (2) (1).png" alt=""><figcaption><p>VPN List</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (968).png" alt=""><figcaption></figcaption></figure>
 

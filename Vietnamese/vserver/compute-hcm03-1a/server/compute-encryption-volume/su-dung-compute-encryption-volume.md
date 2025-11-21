@@ -24,4 +24,4 @@ Tạo 1 Volune Data có tính năng MÃ HÓA để gắn vào Server MÃ HÓA&#x
 
 <figure><img src="../../../../.gitbook/assets/image (571).png" alt=""><figcaption></figcaption></figure>
 
-\
+<br>

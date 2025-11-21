@@ -8,8 +8,7 @@
 * [4. Ghi nhận Binary Log File và Position trên MySQL server:](cau-hinh-replication-voi-rds-mysql-mariadb.md#cauhinhreplicationvoirds-mysql-mariadb-4.ghinhanbinarylogfilevapositiontrenmysqlserver)
 * [5. Cấu hình Replication trên RDS Instance:](cau-hinh-replication-voi-rds-mysql-mariadb.md#cauhinhreplicationvoirds-mysql-mariadb-5.cauhinhreplicationtrenrdsinstance)
 
-\
-
+<br>
 
 ### **1. Tạo Replication User trên MySQL server của bạn:** <a href="#cauhinhreplicationvoirds-mysql-mariadb-1.taoreplicationusertrenmysqlservercuaban" id="cauhinhreplicationvoirds-mysql-mariadb-1.taoreplicationusertrenmysqlservercuaban"></a>
 
@@ -38,8 +37,7 @@ Nếu kết quả là **OFF**, bạn có thể bật **binary log** bằng cách
 | `[mysqld]` `log-bin=bin.log` `log-bin-index=bin-log.index` `max_binlog_size=100M` `binlog_format=row` |
 | ----------------------------------------------------------------------------------------------------- |
 
-\
-
+<br>
 
 Sau đó, bạn cần restart lại dịch vụ MySQL/Mariadb.
 
@@ -48,8 +46,7 @@ Sau đó, bạn cần restart lại dịch vụ MySQL/Mariadb.
 | `systemctl restart mysql` |
 | ------------------------- |
 
-\
-
+<br>
 
 Kiểm tra lại bằng cách chạy lại câu lệnh trên:
 
@@ -58,15 +55,13 @@ Kiểm tra lại bằng cách chạy lại câu lệnh trên:
 
 Nếu kết quả là **ON**, chúc mừng bạn đã cấu hình Binary Log thành công.
 
-\
-
+<br>
 
 ### **3. Dump dữ liệu từ MySQL server của bạn và Import dữ liệu vào RDS Instance:** <a href="#cauhinhreplicationvoirds-mysql-mariadb-3.dumpdulieutumysqlservercuabanvaimportdulieuvaordsinstance" id="cauhinhreplicationvoirds-mysql-mariadb-3.dumpdulieutumysqlservercuabanvaimportdulieuvaordsinstance"></a>
 
 Bạn có thể tham khảo hướng dẫn [Import dữ liệu vào RDS Instance datastore MySQL/Mariadb bằng MySQLDump](import-du-lieu-vao-rds-instance-mysql-mariadb-bang-mysqldump.md).
 
-\
-
+<br>
 
 ### **4. Ghi nhận Binary Log File và Position trên MySQL server:** <a href="#cauhinhreplicationvoirds-mysql-mariadb-4.ghinhanbinarylogfilevapositiontrenmysqlserver" id="cauhinhreplicationvoirds-mysql-mariadb-4.ghinhanbinarylogfilevapositiontrenmysqlserver"></a>
 
@@ -105,16 +100,14 @@ thì bạn sẽ có câu lệnh sau:
 | `mysql> call mysql.vdbaas_changeMasterHost('18.139.18.*','dba','password','mysql-bin-changelog.000059',511);` |
 | ------------------------------------------------------------------------------------------------------------- |
 
-\
-
+<br>
 
 Để bắt đầu quá trình Replication, bạn gọi Stored Procedure **mysql.vdbaas\_startSlave**:
 
 | `mysql> call mysql.vdbaas_startSlave();` |
 | ---------------------------------------- |
 
-\
-
+<br>
 
 Để kiểm tra kết quả, bạn gõ lệnh:
 
@@ -134,4 +127,4 @@ Từ bậy giờ, bạn có thể tắt đồng bộ và sử dụng RDS Instanc
 
 hoặc giữ nguyên và sử dụng RDS Instance như là một **Replication Slave.**
 
-\
+<br>

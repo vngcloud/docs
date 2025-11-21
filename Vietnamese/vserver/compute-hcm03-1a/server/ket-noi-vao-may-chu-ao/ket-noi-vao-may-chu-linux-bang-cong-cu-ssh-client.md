@@ -31,8 +31,7 @@ _**Lưu ý:** Thông tin này là bảo mật và chỉ được gởi cho email
     **1 -** Nhập password của user stackops với nội dung là **instancePassword** trong email\
     **2 -** Nhập lại password của user stackops với nội dung là **instancePassword** trong email\
     **3 -** Nhập new password cho user stackops để dùng cho login sau này\
-    **4 -** Nhập lại new password cho user stackops để dùng cho login sau này\
-
+    **4 -** Nhập lại new password cho user stackops để dùng cho login sau này<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  Kết nối lại đến vServer\
@@ -54,12 +53,10 @@ Nếu bạn đã tạo một SSH Key Pair trên portal VNGCLOUD (_Nhấp vào_ [
     \
     **1 -** Nhập password của user stackops với nội dung là **instancePassword** trong email\
     **2 -** Nhập new password cho user stackops để dùng cho login sau này\
-    **3 -** Nhập lại new password cho user stackops để dùng cho login sau này\
-
+    **3 -** Nhập lại new password cho user stackops để dùng cho login sau này<br>
 
     <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-3.  Kết nối lại đến vServer\
-
+3.  Kết nối lại đến vServer<br>
 
     <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -94,14 +91,12 @@ _**Phương án 1**_**: Login SSH bằng password**
 _**Option 2**_: **Login SSH bằng SSH KEY**\
 Nếu bạn đã tạo một SSH Key Pair trên portal VNGCLOUD (_Nhấp vào_ [_**đây**_](../../security/ssh-key-bo-khoa.md) _để xem hướng dẫn tạo SSH Keys_) và có add SSH Key vô vServer trong quá trình khởi tạo, bạn có thể thực hiện các bước sau đây
 
-1.  Dùng putty-gen để convert file **key.pem** đã download thành file **key.ppk**\
-
+1.  Dùng putty-gen để convert file **key.pem** đã download thành file **key.ppk**<br>
 
     <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2.  Sử dụng Putty của Windows để kết nối đến vServer, authen bằng file **key.ppk** đã tạo ra ở trên\
-
+2.  Sử dụng Putty của Windows để kết nối đến vServer, authen bằng file **key.ppk** đã tạo ra ở trên<br>
 
     <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -112,12 +107,10 @@ Nếu bạn đã tạo một SSH Key Pair trên portal VNGCLOUD (_Nhấp vào_ [
     \
     **1 -** Nhập password của user stackops với nội dung là **instancePassword** email\
     **2 -** Nhập new password cho user stackops để dùng cho login sau này\
-    **3 -** Nhập lại new password cho user stackops để dùng cho login sau này\
-
+    **3 -** Nhập lại new password cho user stackops để dùng cho login sau này<br>
 
     <figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-4.  Kết nối lại đến vServer\
-
+4.  Kết nối lại đến vServer<br>
 
     <figure><img src="../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

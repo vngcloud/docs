@@ -6,34 +6,31 @@ Sau khi tạo container và tải lên tệp tin vào container đó, bạn có 
 
 {% tabs %}
 {% tab title="Sử dụng vStorage Portal" %}
-
-
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 2. Chọn **project** và **container** mà bạn muốn thực hiện tìm kiếm object/ directory.
 3. Tại ô **Search directories and objects**, bạn có thể thực hiện tìm kiếm object/ directory theo các cách sau:
    1. Nếu bạn muốn tìm kiếm object theo tiền tố:
       1. Chọn Search by **Name match by prefix**
       2. Nhập chuỗi ký tự là tiền tố bạn muốn tìm kiếm.&#x20;
-      3. Nhấn **Enter** hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/64553917/image2023-9-15\_15-53-6.png?version=1\&modificationDate=1694767987000\&api=v2).
+      3. Nhấn **Enter** hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/64553917/image2023-9-15_15-53-6.png?version=1\&modificationDate=1694767987000\&api=v2).
    2. Nếu bạn muốn tìm kiếm theo một chuỗi ký tự bất kỳ được chứa trong tên object:
       1. Chọn Search by **Name match phrase**
       2. Nhập chuỗi ký tự là tiền tố bạn muốn tìm kiếm.&#x20;
-      3. Nhấn **Enter** hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/64553917/image2023-9-15\_15-53-6.png?version=1\&modificationDate=1694767987000\&api=v2).
+      3. Nhấn **Enter** hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/64553917/image2023-9-15_15-53-6.png?version=1\&modificationDate=1694767987000\&api=v2).
    3. Nếu bạn muốn tìm kiếm theo toàn bộ tên object:&#x20;
       1. Chọn Search by **Name match all**
       2. Nhập chuỗi ký tự là tiền tố bạn muốn tìm kiếm.&#x20;
-      3. Nhấn **Enter** hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/64553917/image2023-9-15\_15-53-6.png?version=1\&modificationDate=1694767987000\&api=v2).
-   4. Nếu bạn muốn tìm kiếm theo thông tin tags của object:\
-
+      3. Nhấn **Enter** hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/64553917/image2023-9-15_15-53-6.png?version=1\&modificationDate=1694767987000\&api=v2).
+   4. Nếu bạn muốn tìm kiếm theo thông tin tags của object:<br>
       1. Chọn Search by **Tags**
       2. Nhập chuỗi ký tự là tiền tố bạn muốn tìm kiếm.&#x20;
-      3. Nhấn **Enter** hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/64553917/image2023-9-15\_15-53-6.png?version=1\&modificationDate=1694767987000\&api=v2).
+      3. Nhấn **Enter** hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/64553917/image2023-9-15_15-53-6.png?version=1\&modificationDate=1694767987000\&api=v2).
 
 Ví dụ: nếu bạn muốn tìm kiếm các object có điểm chung là tiền tố trong tên object là **file** thì bạn cần thực hiện:
 
 * Chọn Search by **Name match by prefix**
 * Nhập tiền tố **file**
-* Nhấn **Enter** hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/64553917/image2023-9-15\_15-53-6.png?version=1\&modificationDate=1694767987000\&api=v2)
+* Nhấn **Enter** hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/64553917/image2023-9-15_15-53-6.png?version=1\&modificationDate=1694767987000\&api=v2)
 
 Bạn có thể tìm hiểu thêm cách chúng tôi tìm kiếm kết quả Search theo mỗi phương thức tại bảng bên dưới:
 

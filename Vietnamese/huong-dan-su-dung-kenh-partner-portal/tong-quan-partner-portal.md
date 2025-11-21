@@ -18,4 +18,4 @@ Các chức năng hỗ trợ đối tác trên partner portal gồm
 7. Xem lịch sử chiết khấu của đối tác, khách hàng của đối tác
 8. Báo cáo: xem các báo cáo về credit nạp, sử dụng, báo cáo chiết khấu và doanh thu phần bổ theo tháng
 
-\
+<br>

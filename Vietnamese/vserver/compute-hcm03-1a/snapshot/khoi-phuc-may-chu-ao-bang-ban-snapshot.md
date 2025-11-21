@@ -27,8 +27,7 @@ Sử dụng bản Snapshot cho phép bạn khôi phục dữ liệu và hệ th�
 
 Việc sử dụng bản Snapshot để khôi phục máy chủ ảo có nhiều lợi ích quan trọng, nhưng cũng đi kèm với những rủi ro cần phải cân nhắc và quản lý một cách cẩn thận. Điều quan trọng là phải thực hiện các biện pháp bảo mật và kiểm tra tính toàn vẹn của Snapshot trước khi thực hiện việc khôi phục dữ liệu.
 
-\
-
+<br>
 
 ***
 

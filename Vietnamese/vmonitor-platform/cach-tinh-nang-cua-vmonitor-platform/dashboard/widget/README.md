@@ -21,7 +21,7 @@ Bạn đã khởi tạo một Widget trên một Dashboard. Hiện tại Widget 
 1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
 2. Chọn thư mục **Dashboard.**
 3. Chọn **Dashboard** chứa **Widget** mà bạn muốn chính sửa.
-4. Tại **Widget** mà bạn muốn chỉnh sửa, chọn <img src="../../../../.gitbook/assets/image (53).png" alt="" data-size="line">
+4. Tại **Widget** mà bạn muốn chỉnh sửa, chọn <img src="../../../../.gitbook/assets/image (53) (1).png" alt="" data-size="line">
 5. Chỉnh sửa các thông số cho biểu đồ mà bạn mong muốn. Các thông số mà bạn có thể chỉnh sửa bao gồm: **Graph style (Loại biểu đồ)**, **Graph your data (Biểu đồ dữ liệu của bạn)**, **Fixed time range (Khung thời gian cố định)**, **Configure graph (Cấu hình thuộc tính biểu đồ).**&#x56;iệc chỉnh sửa này tương tự như khi bạn thực hiện tạo mới một Widget.
 6. Chọn **Save.**
 
@@ -34,7 +34,7 @@ Bạn đã khởi tạo một Widget trên một Dashboard. Hiện tại bạn k
 1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
 2. Chọn thư mục **Dashboard.**
 3. Chọn **Dashboard** chứa Widget mà bạn muốn xóa.
-4. Tại **Widget** mà bạn muốn xóa, chọn <img src="../../../../.gitbook/assets/image (54).png" alt="" data-size="line">
+4. Tại **Widget** mà bạn muốn xóa, chọn <img src="../../../../.gitbook/assets/image (54) (1).png" alt="" data-size="line">
 5. Chọn **Delete**.
 6. Tại màn hình xác nhận xóa Widget, chọn **Delete**.
 

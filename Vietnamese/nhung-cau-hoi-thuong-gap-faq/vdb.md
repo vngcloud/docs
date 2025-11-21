@@ -6,8 +6,7 @@ Lúc khởi tạo vDB quý khách click vào Public accessibility. Còn nếu đ
 
 ### \[vDB] Tôi muốn gia hạn vDB thì làm như thế nào?
 
-Quý khách có thể tham khảo link hướng dẫn như sau:\
-
+Quý khách có thể tham khảo link hướng dẫn như sau:<br>
 
 [https://docs.vngcloud.vn/vng-cloud-document/vn/vdb/relational-database-service-rds/gia-han-rds-instance](https://docs.vngcloud.vn/vng-cloud-document/vn/vdb/relational-database-service-rds/gia-han-rds-instance)
 

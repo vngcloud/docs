@@ -4,8 +4,7 @@
 
 Tại website **vConsole**, người dùng VNG Cloud Service có thể dễ dàng quản lý các thông tin tài chính liên quan đến việc sử dụng các dịch vụ của VNG Cloud Service như _thông tin hóa đơn, lịch sử thanh toán, lịch sử sử dụng credit, thống kê và dự đoán usage,..._
 
-\
-
+<br>
 
 ***
 
@@ -20,4 +19,4 @@ Hiện tại, **vConsole** cung cấp một số tính năng chính, đáp ứng
 * Tính năng **Lịch sử tín dụng**: Lưu lại thông tin sử dụng / biến động số dư credit của người dùng VNG Cloud Service cho các mục đích như nạp credit, thực hiện thanh toán bằng credit hoặc hoàn trả chi phí sử dụng dịch vụ
 * Tính năng _**Thống kê và dự đoán chi phí sử dụng dịch vụ so với tháng trước**, trang **Service Portal** cung cấp các thông tin hữu ích từ các dịch vụ mà user đang sử dụng (Resource auto renew, nearly expire, expired,...) **từ các product line vServer, vStorage, vMonitor,** etc_
 
-\
+<br>

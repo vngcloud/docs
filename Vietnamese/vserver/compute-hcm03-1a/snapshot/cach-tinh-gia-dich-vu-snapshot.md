@@ -39,4 +39,4 @@ Cách tính phí Snapshot áp dụng chung cho cả 2 hình thức thanh toán, 
 * **Thanh toán đúng hạn**: Thanh toán đúng hạn hóa đơn hàng tháng là rất quan trọng để đảm bảo truy cập liên tục vào dịch vụ Snapshot.
 * **Theo dõi sử dụng**: Người dùng có thể theo dõi việc sử dụng Snapshot của mình thông qua cổng thanh toán, giúp họ nắm bắt chi phí và việc sử dụng tài nguyên.
 
-\
+<br>

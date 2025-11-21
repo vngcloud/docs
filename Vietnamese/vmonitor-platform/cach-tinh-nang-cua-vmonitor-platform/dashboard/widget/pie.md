@@ -4,19 +4,19 @@
 
 **Pie chart** là một dạng biểu đồ hình tròn dùng để so sánh các giá trị (thường ở dạng phần trăm) với mức độ tổng thể. Mỗi phần trong biểu đồ biểu diễn số liệu cho một đối tượng nào đó, và có màu sắc hoặc ký hiệu khác nhau. Pie chart thường được dùng khi số lượng thành phân ít và bạn muốn tập trung vào sự khác biệt giữa các thành phần.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (64) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Cấu hình biểu đồ
 
-<figure><img src="../../../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (65) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style&#x20;
 
 Đối với biểu đồ dạng pie, tại mục này bạn chọn Style là **Pie**
 
-<figure><img src="../../../../.gitbook/assets/image (66).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (66) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### 2. Graph your data
 

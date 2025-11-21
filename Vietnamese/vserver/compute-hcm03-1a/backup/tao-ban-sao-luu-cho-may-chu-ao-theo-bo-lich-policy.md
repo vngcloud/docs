@@ -42,7 +42,6 @@ Khi bạn sử dụng dịch vụ vBackup. Trong lần đầu tiên, chúng tôi
 
 Sau khi tạo Backup Server, bạn có thể đợi tới thời gian trong bộ lịch Policy để hệ thống thực hiện tạo tệp Backup, hoặc có thể lựa chọn [Backup Now](tao-ban-sao-luu-ngay-lap-tuc-backup-now.md) để tạo bạn Backup ngay tại thời điểm bạn thao tác chọn.
 
-\
+<br>
 
-
-\
+<br>

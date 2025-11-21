@@ -60,7 +60,7 @@ Trong trường hợp cần xóa tài khoản, bạn cần thực hiện theo th
 
 **Bước 2**: chọn "**Xóa tài khoản**"
 
-<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3**: Xác nhận yêu cầu
 

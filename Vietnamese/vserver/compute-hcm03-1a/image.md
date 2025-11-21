@@ -21,8 +21,7 @@ Các image tại VNG Cloud được phân loại thành Image chung, Image riên
 1. Truy cập vào trang chủ vSer tại: [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview)
 2. Tại thanh menu điều hướng, chọn Tab **"Server"**
 3. Chọn Server cần tạo Image tại trang danh sách các Server hiện hữu, sau đó nhấn vào nút **"Action"** và chọn **"Create Image"**
-4. Đợi 1 vài phút bạn và bạn có thể xem thông tin Image đã tạo ở tab **"Block Store"** mục Image\
-
+4. Đợi 1 vài phút bạn và bạn có thể xem thông tin Image đã tạo ở tab **"Block Store"** mục Image<br>
 
 #### Khởi tạo Server từ Image <a href="#image-khoitaoservertuimage" id="image-khoitaoservertuimage"></a>
 
@@ -35,7 +34,6 @@ Số lượng Image tối đa trên 1 Root User Account: 50 (có thể điều c
 Dung lượng GB Image Size tối đa trên 1 Root User Account: 1000 GB (có thể điều chỉnh).\
 Vì vậy, khi tạo image, bạn cần lưu ý đến giới hạn tổng dung lượng image là 1000 GB cho toàn bộ các image trong tài khoản của mình. Nếu bạn cần tăng hạn mức này, có thể yêu cầu điều chỉnh thông qua trang hỗ trợ của VNG Cloud.
 
-Trường hợp bạn muốn chủ động upload 1 image hoặc OS (Image/OS này chưa có trên VNG Cloud), bạn cần liên hệ với bộ phận hỗ trợ của VNG Cloud để được tư vấn trực tiếp.\
-
+Trường hợp bạn muốn chủ động upload 1 image hoặc OS (Image/OS này chưa có trên VNG Cloud), bạn cần liên hệ với bộ phận hỗ trợ của VNG Cloud để được tư vấn trực tiếp.<br>
 
 Trang liên quan: Image Overview, Custom Image, Marketplace Image

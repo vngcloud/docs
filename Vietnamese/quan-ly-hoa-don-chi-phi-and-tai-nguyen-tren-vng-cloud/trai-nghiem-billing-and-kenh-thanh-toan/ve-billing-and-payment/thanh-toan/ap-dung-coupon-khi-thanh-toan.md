@@ -31,4 +31,4 @@ Coupon chỉ có thể sử dụng cho sản phẩm **vServer, vStorage, vCDN, v
 
 Từ ví dụ trên, người dùng phải thanh toán số tiền 900,000 + 450,000 = 1,350,000 VND trong 1 lần cho 2 tài nguyên được mua cùng 1 lúc. Đồng thời, hệ thống sẽ phát sinh 2 hóa đơn ghi nhận thông tin giá tiền của từng tài nguyên tương ứng (đã áp dụng coupon).
 
-\
+<br>

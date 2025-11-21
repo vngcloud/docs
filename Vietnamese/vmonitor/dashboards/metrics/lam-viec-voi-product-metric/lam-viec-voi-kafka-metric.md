@@ -30,4 +30,4 @@ Tại trang này ở mỗi Kafka bạn sẽ thấy các thông tin như sau:
 * Để xem danh sách metrics tương ứng với mỗi Kafka, xem tại [Danh sách Metrics hỗ trợ](../../../../vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/danh-sach-metrics-ho-tro/).
 {% endhint %}
 
-\
+<br>

@@ -16,8 +16,7 @@ Trên MySQL server của bạn, bạn có thể lấy danh sách database mình 
 
 <figure><img src="https://docs.vngcloud.vn/download/thumbnails/10880027/Screenshot%20from%202019-10-30%2017-44-08.png?version=2&#x26;modificationDate=1572432342000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-\
-
+<br>
 
 \
 Xác định các database cần import ví dụ như trong hình là: _mysql02, mysql03, mysql04_.
@@ -51,11 +50,10 @@ với:&#x20;
 
 * RDS Instance\_IP: IP của RDS Instance
 * RDS Instance\_Master\_User: Master User được cấp khi khởi tạo RDS Instance.\
-  \
-
+  <br>
 
 Tùy vào lượng dữ liệu của bạn mà thời gian import có thể kéo dài hay không.&#x20;
 
 Trên đây là hướng dẫn Import dữ liệu vào RDS Instance datastore MySQL/Mariadb. Chúc bạn thực hiện thành công.
 
-\
+<br>

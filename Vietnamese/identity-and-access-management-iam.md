@@ -69,11 +69,9 @@ Service Account là một danh tính bạn có thể tạo trong tài khoản c�
 
 Identity Provier cho phép bạn tích hợp nhà cung cấp nhận dạng bên ngoài với VNG Cloud Services, cho phép người dùng truy cập tài nguyên đám mây bằng các thông tin đăng nhập hiện có từ nhà cung cấp nhận dạng bên ngoài. Điều này loại bỏ việc người dùng phải nhớ nhiều bộ thông tin đăng nhập cho các hệ thống khác nhau và đơn giản hóa quản lý quyền truy cập.
 
-Trong VNG Cloud, bạn có thể cài đặt Identity Provider bằng cách cấu hình cài đặt kết nối giữa Identity Provider bên ngoài với VNG Cloud. Khi đã cài đặt, người dùng từ nhà cung cấp nhận dạng bên ngoài có thể đăng nhập bằng các thông tin đăng nhập hiện có để truy cập vào tài nguyên trong VNG Cloud.\
+Trong VNG Cloud, bạn có thể cài đặt Identity Provider bằng cách cấu hình cài đặt kết nối giữa Identity Provider bên ngoài với VNG Cloud. Khi đã cài đặt, người dùng từ nhà cung cấp nhận dạng bên ngoài có thể đăng nhập bằng các thông tin đăng nhập hiện có để truy cập vào tài nguyên trong VNG Cloud.<br>
 
-
-Dưới đây là các topic quan trọng mà người dùng cần tìm hiểu thêm về IAM VNG Cloud\
-
+Dưới đây là các topic quan trọng mà người dùng cần tìm hiểu thêm về IAM VNG Cloud<br>
 
 * [How to Login into VNG Cloud](identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)
 * [Get Started with IAM](identity-and-access-management-iam/bat-dau-voi-iam.md)

@@ -54,4 +54,4 @@ Configuration Group là tập hợp các biến cấu hình dịch vụ cơ sở
 
 Giao diện quản lý Configuration Group liệt kê tất cả các Configuration Group hiện có cũng như thông tin loại **Database Engine** và **Engine Version** có thể áp dụng Configuration Group này cũng như các RDS Instance đang liên kết (**Associated RDS Instances**).
 
-Bạn có thể tạo Configuration Group mới cũng như **DELETE** khi tick chọn từng Configuration Group. Khi bấm vào từng Configuration Group Name, bạn có xem tất cả các biến cấu hình cũng như **EDIT** và áp dụng các biến này (**APPLY CHANGES**) xuống các RDS Instance đang được liên kết. Chi tiết cách sử dụng Configuration Group, bạn có thể tham khảo bài viết "Cách sử dụng Configuration Group".\
+Bạn có thể tạo Configuration Group mới cũng như **DELETE** khi tick chọn từng Configuration Group. Khi bấm vào từng Configuration Group Name, bạn có xem tất cả các biến cấu hình cũng như **EDIT** và áp dụng các biến này (**APPLY CHANGES**) xuống các RDS Instance đang được liên kết. Chi tiết cách sử dụng Configuration Group, bạn có thể tham khảo bài viết "Cách sử dụng Configuration Group".<br>

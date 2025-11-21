@@ -18,4 +18,4 @@ Tham khảo hướng dẫn sau để tiến hành khởi tạo Repository User c
 3. Nhấn nút **"Create"** để hoàn tất việc khởi tạo
 4. Kiểm tra thông tin Repository vừa khởi tạo tại danh sách
 
-\
+<br>

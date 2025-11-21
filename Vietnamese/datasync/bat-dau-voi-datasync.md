@@ -128,7 +128,6 @@ Nếu bạn chưa sử dụng bất kỳ dịch vụ nào của VNG Cloud (chưa
 
 **Bước 7:** Chọn **Create Transfer Job.**
 
-\
+<br>
 
-
-\
+<br>

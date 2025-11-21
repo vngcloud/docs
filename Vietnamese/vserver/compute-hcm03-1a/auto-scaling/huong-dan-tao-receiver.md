@@ -42,4 +42,4 @@ Bạn có thể sử dụng curl để kích hoạt mở rộng
 
 curl -H 'Content-type: application/json' -H 'user\_id:46677-H 'access\_key: 89fa3452b-6345-43f2-0000-3b332fbbf462' -XPOST '[https://example.vinadata.vn/v1/example/6e88c3f851dc4f48b11276c79a847d1c/receiver/81935b94-fc5c-4d06-869f-61aaaa4797e6/scale?backend=4](https://sdn-vsr-api.vinadata.vn/v1/senlin/6e88c3f851dc4f48b11276c79a847d1c/receiver/81935b94-fc5c-4d06-869f-61aaaa4797e6/scale?backend=4)'
 
-\
+<br>

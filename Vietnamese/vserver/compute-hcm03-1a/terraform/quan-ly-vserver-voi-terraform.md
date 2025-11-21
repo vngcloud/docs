@@ -105,8 +105,7 @@ _chỉ để lại:_
 
 **Bước 7:** Khởi chạy terraform command
 
-* Sau khi hoàn tất các thông tin trên, để terraform khởi tạo và tải VNG Cloud provider về đồng thời thiết lập các thông tin cần thiết chạy lệnh bên dưới, lưu ý khi chạy cần đứng tại thư mục terraform-provider-vngcloud/ [examples](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples)/: \
-
+* Sau khi hoàn tất các thông tin trên, để terraform khởi tạo và tải VNG Cloud provider về đồng thời thiết lập các thông tin cần thiết chạy lệnh bên dưới, lưu ý khi chạy cần đứng tại thư mục terraform-provider-vngcloud/ [examples](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples)/: <br>
 
 | `terraform init` |
 | ---------------- |

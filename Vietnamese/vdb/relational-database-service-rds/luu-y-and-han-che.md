@@ -36,4 +36,4 @@ Các bước thực hiện như sau:
 3. Sau khi kiểm tra application đã ổn định, bạn chọn vào Master mới và tiến hành create read-replica từ Master mới này.
 4. Bạn có thể xóa Master cũ nếu không còn nhu cầu sử dụng.
 
-\
+<br>

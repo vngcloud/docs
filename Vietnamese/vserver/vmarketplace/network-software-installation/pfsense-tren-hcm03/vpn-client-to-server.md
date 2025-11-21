@@ -112,4 +112,4 @@ Lúc này ta thử ping đến IP LAN của pfSense 2 thấy đã thông:
 
 <figure><img src="https://viettelco.vn/wp-content/uploads/2020/07/huong-dan-cai-dat-openvpn-tren-firewall-pfsense-16.png" alt=""><figcaption></figcaption></figure>
 
-\
+<br>

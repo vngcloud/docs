@@ -13,4 +13,4 @@ Phần này ghi chú chi tiết các tính năng mới, các cải tiến và c�
 * [Release tính năng thiết lập IP Range ACLs](them-tinh-nang-thiet-lap-ip-range-acls.md)
 * [Release bổ sung tích hợp vStorage với công cụ S3 SDK](them-tinh-nang-tich-hop-vstorage-voi-cong-cu-s3-sdk.md)
 
-\
+<br>

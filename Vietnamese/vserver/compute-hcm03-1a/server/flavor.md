@@ -18,4 +18,4 @@ VNG Cloud cung cấp nhiều loại cấu hình Flavor được tinh chỉnh cho
 * **Hạ tầng CPU**: Các dòng Server được phân loại rõ thêm bằng việc phân loại các dòng CPU. Ví dụ các Flavor S và S1 trong nhóm mục đích chung sẽ sử dụng CPU Intel Scalable Gen2 và 3. Tương tự, A và A1 sẽ dùng CPU AMD EPYC Zen2 và Zen3. Các chữ số phía sau chữ cái đầu tiên để chỉ thế hệ CPU.
 * **Loại cấu hình**: Mô tả tỷ lệ cấu hình, xác định số lượng tài nguyên CPU, RAM… được cấp phát cho Server.
 
-\
+<br>

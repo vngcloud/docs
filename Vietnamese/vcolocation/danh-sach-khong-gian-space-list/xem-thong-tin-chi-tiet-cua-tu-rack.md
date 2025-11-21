@@ -32,4 +32,4 @@ Các tính năng có trong Space list:
 * [Xem thông tin chi tiết của tủ rack (View details)](xem-thong-tin-chi-tiet-cua-tu-rack.md)
 * [Lọc danh sách](loc-danh-sach.md)
 
-\
+<br>

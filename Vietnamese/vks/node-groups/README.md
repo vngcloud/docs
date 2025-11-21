@@ -49,11 +49,9 @@ Node Group là một khái niệm quan trọng trong Kubernetes, dùng để qu�
 
 **Bước 3:** Tại màn hình chứa danh sách Node Group đang có, tại Node Group bạn muốn chỉnh sửa chọn một trong các phương án:&#x20;
 
-* Tính năng **Resize:** bạn có thể thay đổi\
-
+* Tính năng **Resize:** bạn có thể thay đổi<br>
   * Number of nodes:  Nhập vào số lượng Worker node cho Cluster của bạn, lưu ý số lượng node cần lớn hơn hoặc bằng 1 và nhỏ hơn hoặc bằng 100.
-* Tính năng **Edit Auto Scaling:** bạn có thể thay đổi\
-
+* Tính năng **Edit Auto Scaling:** bạn có thể thay đổi<br>
   * Auto Scaling: Bật tính năng tự động mở rộng trong Cluster của bạn. Auto scaling giúp tự động điều chỉnh số lượng pod (đơn vị triển khai ứng dụng) dựa trên nhu cầu sử dụng thực tế, tránh tình trạng lãng phí tài nguyên khi nhu cầu thấp hoặc quá tải khi nhu cầu cao.
     * Minimum node: số node tối thiểu mà Cluster cần có.
     * Maximum node: số node tối đa mà Cluster có thể scale tới.

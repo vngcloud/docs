@@ -28,8 +28,7 @@ API HTTP tests cho phép bạn gửi HTTP(s) requests tới dịch vụ hay ứn
 
 <figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59803715/image2022-8-29_16-33-28.png?version=1&#x26;modificationDate=1686544451000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-\
-
+<br>
 
 * **Location**&#x20;
   * Lựa chọn Location mà ở đó sẽ chạy các HTTP Test tới URL của bạn. HTTP tests có thể chạy từ cả Public Locations (do VNG Cloud quản lý) và Private Locations (do khách hàng tự cài đặt và quản lý) dựa trên nhu cầu của bạn cho việc chạy test từ bên ngoài (internet) hay bên trong mạng của bạn. Public Locations do VNG Cloud quản lý hiện tại có 2 locations là HCM và HN.
@@ -57,4 +56,4 @@ API HTTP tests cho phép bạn gửi HTTP(s) requests tới dịch vụ hay ứn
 
 <figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59803715/image2022-8-29_17-3-46.png?version=1&#x26;modificationDate=1686544452000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-\
+<br>

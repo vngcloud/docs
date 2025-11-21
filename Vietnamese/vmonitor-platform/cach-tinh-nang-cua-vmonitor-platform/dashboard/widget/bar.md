@@ -4,19 +4,19 @@
 
 **Bar chart** (biểu đồ cột) là một loại biểu đồ được sử dụng để so sánh các giá trị của các nhóm hoặc các hạng mục khác nhau. Bar chart trong vMonitor Platform gồm nhiều thanh dọc, mỗi thanh thể hiện một giá trị của một nhóm hoặc một điểm dữ liệu.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (58) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Cấu hình biểu đồ
 
-<figure><img src="../../../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (59) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style&#x20;
 
 Đối với biểu đồ dạng bar, tại mục này bạn chọn Style là **Bar**
 
-<figure><img src="../../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (60) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Graph your data
 

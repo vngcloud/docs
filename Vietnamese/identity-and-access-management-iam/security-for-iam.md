@@ -24,4 +24,4 @@ Bằng cách tuân thủ các nguyên tắc và tiêu chuẩn bảo mật trên,
 
 VNG Cloud luôn nỗ lực để nâng cao các biện pháp bảo mật của mình để đảm bảo an toàn cho khách hàng.
 
-\
+<br>

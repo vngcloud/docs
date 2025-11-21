@@ -8,4 +8,4 @@
 2. Một popup **"Disable User"** hiển thị cho phép bạn xác nhận có thưc hiện hành động này hay không
 3. Nhấn "Disable" hoặc "Enable" để xác nhận thực hiện hành động trên user này.
 
-\
+<br>

@@ -41,4 +41,4 @@ Kết quả tìm kiếm được thể hiện dựa trên các tiêu chí tìm k
 * **Số tiền / Amount:** Số credit được thực hiện trong hành động đó ( **tăng** hoặc **giảm** )
 * **Số tiền còn lại / Balance:** Số dư credit sau lần thực hiện hành động
 
-\
+<br>

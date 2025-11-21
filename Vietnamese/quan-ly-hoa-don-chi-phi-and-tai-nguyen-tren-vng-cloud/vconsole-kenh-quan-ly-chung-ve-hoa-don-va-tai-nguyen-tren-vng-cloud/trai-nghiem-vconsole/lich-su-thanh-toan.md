@@ -48,4 +48,4 @@ Kết quả tìm kiếm được thể hiện dựa trên các tiêu chí tìm k
 * **Chi tiết:** Miêu tả chi tiết giao dịch, có thể là thông tin cấu hình dịch vụ, hoặc là các hoạt động của hệ thống như auto renew,...
 * **Số tiền:** Tổng số tiền thực hiện của lần thanh toán đó, đơn vị VND
 
-\
+<br>

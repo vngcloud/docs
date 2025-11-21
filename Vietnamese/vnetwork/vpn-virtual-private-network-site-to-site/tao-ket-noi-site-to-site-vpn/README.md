@@ -14,7 +14,7 @@ description: >-
 * Tại thanh menu bên trái của giao diện vNetwork, chọn mục VPN Site-to-Site.
 * Tại màn hình danh sách này, nhấn chọn "<mark style="color:blue;">**Tạo mới kết nối VPN**</mark>".
 
-<figure><img src="../../../.gitbook/assets/1 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **Bước 2:** Tại màn hình Tạo mới kết nối VPN, điền các thông tin khởi tạo như sau:
 

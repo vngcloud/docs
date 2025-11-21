@@ -22,4 +22,4 @@ vStorage Credentials là các cặp key mà cho phép bạn tạo và cấp quy�
 * Liên kết S3 key, Swift user với tài khoản Service Account tương ứng
 * Hủy S3 key, Swift user
 
-\
+<br>

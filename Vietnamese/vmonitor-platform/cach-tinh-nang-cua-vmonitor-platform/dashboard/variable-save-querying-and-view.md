@@ -119,7 +119,6 @@ Bạn có thể xem các query đang được lưu trữ hoặc xóa một query
 
 <figure><img src="../../../.gitbook/assets/image (99).png" alt="" width="375"><figcaption></figcaption></figure>
 
-\
+<br>
 
-
-\
+<br>

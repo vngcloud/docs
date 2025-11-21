@@ -77,8 +77,7 @@ Sử dụng quy trình sau để mở rộng hệ thống tệp Windows bằng P
     | ------------------------------------------------------------------------------------------------------------------------ |
 
     \
-    Các lệnh PowerShell sau hiển thị dòng lệnh và phản hồi hoàn chỉnh để mở rộng hệ thống tệp đến một kích thước cụ thể.\
-
+    Các lệnh PowerShell sau hiển thị dòng lệnh và phản hồi hoàn chỉnh để mở rộng hệ thống tệp đến một kích thước cụ thể.<br>
 
     <figure><img src="../../../.gitbook/assets/Man hinh su dụng Window PoweShell de mo rong Volume tren Window.png" alt=""><figcaption></figcaption></figure>
 

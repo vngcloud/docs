@@ -21,7 +21,7 @@ Khi trạng thái chuyển sang **Active**, bạn có thể nhấn **“Connect�
 
 * Cách 2: Kết nôi qua cột Action (Hành Động)
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **2. Chạy và Dừng Instance**
 

@@ -44,8 +44,7 @@ Nếu ổ đĩa có một phân vùng, hãy tiếp tục quy trình từ bước
 
 **b. Tăng dung lượng ổ đĩa bằng câu lệnh:**
 
-1.  Mở rộng phân vùng. Sử dụng lệnh **`growpart`** và chỉ định phân vùng để mở rộng. Gõ lệnh: growpart <ổ> \<partition của ổ>\
-
+1.  Mở rộng phân vùng. Sử dụng lệnh **`growpart`** và chỉ định phân vùng để mở rộng. Gõ lệnh: growpart <ổ> \<partition của ổ><br>
 
     Ví dụ: để mở rộng phân vùng có tên disk0p1, hãy sử dụng lệnh sau.
 

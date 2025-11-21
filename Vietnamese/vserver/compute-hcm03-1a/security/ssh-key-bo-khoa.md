@@ -24,4 +24,4 @@ Nếu bạn chưa có SSH Key trên VNG Cloud Portal, bạn phải tạo SSH Key
 
 Nếu có SSH Key bạn muốn xóa, hãy chọn một SSH Key và nhấp vào nút "Xóa" ở góc trên bên phải. Một phương thức xác nhận sẽ xuất hiện để đảm bảo rằng bạn sẽ không xóa nhầm vì một khi đã xóa, SSH Key sẽ không thể khôi phục lại.
 
-\
+<br>

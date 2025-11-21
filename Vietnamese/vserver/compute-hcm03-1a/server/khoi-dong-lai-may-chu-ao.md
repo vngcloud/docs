@@ -17,8 +17,7 @@ Chúng tôi có thể lên lịch khởi động lại phiên bản của bạn 
 
 Chúng tôi khuyên bạn nên sử dụng bảng điều khiển vServer Portal công cụ dòng lệnh hoặc API để khởi động lại phiên bản của bạn. Nếu bạn sử dụng bảng điều khiển vServer, công cụ dòng lệnh hoặc API để khởi động lại Server của mình, chúng tôi sẽ thực hiện khởi động lại cứng nếu phiên bản không tắt hoàn toàn trong vòng vài phút.
 
-\
-
+<br>
 
 ***
 

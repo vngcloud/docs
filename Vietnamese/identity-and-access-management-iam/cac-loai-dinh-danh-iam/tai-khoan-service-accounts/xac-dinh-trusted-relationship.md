@@ -20,8 +20,7 @@ Trusted relationships giữa các Root User Account được thiết lập thôn
    2. Thêm cho một Service Account đã có: **Truy cập vào Service Account** cần chỉnh sửa → Truy cập vào tab **"Trusted Relationships"** → Nhấp vào nút **"Add trusted relationships"** → Điền **ID của Root User Account B**![](https://docs.vngcloud.vn/download/attachments/63766845/image2023-7-27_15-19-27.png?version=1\&modificationDate=1691054186000\&api=v2)
 3. Như vậy, bạn đã **thành công ủy quyền truy cập cho Root User Account B** thông qua một Service Account
 
-\
-
+<br>
 
 **Tiếp theo, Root User Account B cần tiến hành ủy quyền truy cập đến một hoặc nhiều IAM User Account cụ thể của mình, theo dõi hướng dẫn bên dưới để biết thêm chi tiết.**
 

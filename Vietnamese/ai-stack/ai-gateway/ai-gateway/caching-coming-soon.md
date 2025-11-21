@@ -78,7 +78,7 @@ Truy cập thông qua đường dẫn: [https://aigateway.console.vngcloud.vn/mo
 3. Chọn tab **Model Caching** — sẽ hiển thị danh sách các cấu hình Caching đã gán cho gateway đó, kèm cột: **Caching type**, **Caching configuration** (TTL, semantic threshold), **Associated models.**
 4. Từ đây bạn có thể truy cập nhanh cấu hình, biết model nào đang dùng cache nào.
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Edit Configuration (chỉnh TTL / tên / loại cache)
 
@@ -98,4 +98,4 @@ Truy cập thông qua đường dẫn: [https://aigateway.console.vngcloud.vn/mo
 
 📌 Lưu ý: Chỉ xoá được khi cấu hình không còn được gán cho bất kỳ model/gateway nào. Nếu còn thì gỡ gán (detach model/gateway)
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>

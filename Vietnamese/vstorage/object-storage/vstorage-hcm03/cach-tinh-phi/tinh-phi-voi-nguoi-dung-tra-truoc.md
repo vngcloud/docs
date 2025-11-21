@@ -29,8 +29,7 @@ Ví dụ công thức tính giá bạn cần thanh toán khi gia hạn một pro
 
 <table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th><th width="152"></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>Gói lưu trữ</td><td>Đơn giá cũ</td><td>Thời điểm bắt đầu gói lưu trữ</td><td>Thời điểm kết thúc gói lưu trữ</td><td>Thời điểm thực hiện gia hạn</td><td>Chu kỳ gia hạn</td><td>Thời điểm kết thúc gói lưu trữ mới</td><td>Đơn giá mới</td></tr><tr><td>Silver</td><td>19,800 VND / 1 tháng</td><td>06-03-2023 </td><td>05-04-2023</td><td>08-03-2023</td><td>1 tháng</td><td>05-05-2023</td><td>19,800 VND</td></tr><tr><td>Silver</td><td>19,800 VND / 1 tháng</td><td>06-03-2023 </td><td>05-04-2023</td><td>08-03-2023</td><td>3 tháng</td><td>04-07-2023</td><td>59,400 VND</td></tr><tr><td>Silver</td><td>19,800 VND / 1 tháng</td><td>06-03-2023 </td><td>05-04-2023</td><td>08-03-2023</td><td>6 tháng</td><td>02-10-2023</td><td>118,800 VND</td></tr><tr><td>Silver</td><td>19,800 VND / 1 tháng</td><td>06-03-2023 </td><td>05-04-2023</td><td>08-03-2023</td><td>12 tháng</td><td>30-03-2024</td><td>237,600 VND</td></tr><tr><td>Silver</td><td>19,800 VND / 1 tháng</td><td>06-03-2023 </td><td>05-04-2023</td><td>08-03-2023</td><td>24 tháng</td><td>25-03-2025</td><td>475,200 VND</td></tr></tbody></table>
 
-\
-
+<br>
 
 ***
 

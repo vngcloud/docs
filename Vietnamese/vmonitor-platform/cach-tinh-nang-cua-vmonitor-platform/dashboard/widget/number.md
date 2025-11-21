@@ -4,19 +4,19 @@
 
 **Number chart** với chỉ số tóm tắt là một loại biểu đồ thể hiện các số được tính toán từ một bộ dữ liệu, thay vì thể hiện các số gốc.
 
-<figure><img src="../../../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (67) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Cấu hình biểu đồ
 
-<figure><img src="../../../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (68) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style&#x20;
 
 Đối với biểu đồ dạng number, tại mục này bạn chọn Style là **Number**
 
-<figure><img src="../../../../.gitbook/assets/image (69).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (69) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### 2. Graph your data
 

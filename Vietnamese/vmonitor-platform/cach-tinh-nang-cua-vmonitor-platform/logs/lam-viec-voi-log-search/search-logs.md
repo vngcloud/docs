@@ -49,4 +49,4 @@ Sau khi chọn theo **Suggestion mode** hoặc nhập theo **Editor mode**, bạ
 
 <figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59807124/image2023-8-7_11-22-30.png?version=1&#x26;modificationDate=1691382151000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-\
+<br>

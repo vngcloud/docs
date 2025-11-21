@@ -24,4 +24,4 @@ Tại trang này ở mỗi vStorage Project bạn sẽ thấy các thông tin nh
 * Để xem danh sách metrics tương ứng của mỗi product này, hãy xem tại [Danh sách Metrics hỗ trợ](../danh-sach-metrics-ho-tro/).
 {% endhint %}
 
-\
+<br>

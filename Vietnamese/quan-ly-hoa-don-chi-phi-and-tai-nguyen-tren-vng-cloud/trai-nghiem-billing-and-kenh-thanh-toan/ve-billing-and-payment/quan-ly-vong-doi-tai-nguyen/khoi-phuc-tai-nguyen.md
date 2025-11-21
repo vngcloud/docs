@@ -45,4 +45,4 @@ Về cơ bản, hành động khôi phục tài nguyên đã hết hạn cũng g
 
 Tuy nhiên, khi thực hiện khôi phục tài nguyên đã hết hạn, người dùng có thể bỏ qua bước chọn cấu hình tài nguyên, vì hệ thống sẽ mặc định giữ lại cấu hình cũ của tài nguyên trước khi hết hạn, giúp cho việc khởi tạo tài nguyên được thực hiện một cách nhanh chóng hơn so với việc phải cấu hình lại từ đầu
 
-\
+<br>

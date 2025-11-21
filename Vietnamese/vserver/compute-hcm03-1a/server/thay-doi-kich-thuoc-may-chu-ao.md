@@ -22,4 +22,4 @@ Trước khi thực hiện thay đổi flavor cho máy chủ ảo, bạn cần x
 4. Bạn có thể xem tóm tắt chi phí phát sinh mới hoặc chi phí được trả lại trong trường hợp thay đổi cấu hình nhỏ hơn, nhấn nút **Resize Server** để hoàn thành
 5. Bạn cần chờ cho đến khi trạng thái của máy chủ ảo trở về lại Stop
 
-\
+<br>

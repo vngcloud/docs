@@ -36,4 +36,4 @@ Thuật toán này kết hợp địa chỉ IP nguồn và đích của client v
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/64553887/image2020-5-24_22-34-57.png?version=1&#x26;modificationDate=1694660194000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-\
+<br>

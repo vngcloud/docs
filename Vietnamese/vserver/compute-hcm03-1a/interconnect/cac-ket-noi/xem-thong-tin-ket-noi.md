@@ -8,4 +8,4 @@ Bạn có thể xem trạng thái hiện tại của kết nối của bạn. B�
 2. Trong thanh menu bên trái, chọn Interconnect.
 3. Trang danh sách Interconnect sẽ hiển thị bao gồm các kết nối hiện có mà bạn đang sở hữu
 
-\
+<br>

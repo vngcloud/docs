@@ -30,7 +30,6 @@ Tại VNG Cloud Service, người dùng có thể truy cập đến các website
 
 * Nhấn nút "**SIGN IN WITH IAM USER ACCOUNT**" để hoàn tất đăng nhập với IAM User Account.
 
-\
-
+<br>
 
 Lưu ý rằng việc đăng nhập bằng **Root User Account** sẽ cung cấp quyền truy cập toàn bộ hệ thống VNG Cloud, trong khi đăng nhập bằng **IAM User Account** sẽ cung cấp quyền truy cập dựa trên các chính sách và phân quyền được cấu hình cho tài khoản đó.

@@ -60,7 +60,6 @@ Bạn có thể xóa chính sách sao lưu nếu không còn nhu cầu sử dụ
 3. Chọn **Xóa Backup Policy**
 4. Sau khi xóa xong chính sách sao lưu sẽ mất khỏi trang danh sách
 
-\
+<br>
 
-
-\
+<br>

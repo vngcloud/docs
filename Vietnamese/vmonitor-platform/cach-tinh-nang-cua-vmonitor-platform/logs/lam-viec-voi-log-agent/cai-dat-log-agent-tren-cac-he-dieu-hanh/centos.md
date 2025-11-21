@@ -22,20 +22,17 @@ sudo ./filebeat.sh &#x3C;path-to-file-log>
 Install filebeat: sudo rpm -vi filebeat-8.7.1-x86_64.rpm
 </code></pre></td></tr></tbody></table>
 
-\
-
+<br>
 {% endtab %}
 
 {% tab title="Logstash" %}
-* Nếu sử dụng script chuẩn bị sẵn trong thư mục tải về, chạy lệnh \
-
+* Nếu sử dụng script chuẩn bị sẵn trong thư mục tải về, chạy lệnh <br>
 
 <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>sudo chmod +x logstash.sh
 sudo ./logstash.sh &#x3C;path-to-file-log>
 </code></pre></td></tr></tbody></table>
 
-* Nếu cài thủ công, chạy lệnh\
-
+* Nếu cài thủ công, chạy lệnh<br>
 
 <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>Cài java (>8): sudo yum install jre-1.8.0-openjdk -y
 Cài Logstash: sudo rpm -ivh https://artifacts.elastic.co/downloads/logstash/logstash-8.6.0-x86_64.rpm
@@ -227,4 +224,4 @@ tail -f /var/log/filebeat
 
 ***
 
-\
+<br>

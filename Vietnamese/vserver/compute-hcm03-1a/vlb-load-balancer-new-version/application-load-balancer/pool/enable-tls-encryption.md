@@ -25,4 +25,4 @@ Tính năng **Enable TLS Encryption** là một yếu tố quan trọng của b�
 6. Tại phần thông tin Pool, tìm đến check box Bật mã hóa TLS/Enable TLS Encryption, check/uncheck để bật/tắt tính năng mã hóa TLS.
 7. Nhấn nút "Lưu / Save" tại góc dưới bên phải của cửa sổ chỉnh sửa để hoàn tất chỉnh sửa.
 
-\
+<br>

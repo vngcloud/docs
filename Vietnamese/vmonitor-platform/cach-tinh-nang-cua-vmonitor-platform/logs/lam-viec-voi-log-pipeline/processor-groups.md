@@ -33,7 +33,7 @@ Processor Group: cho phép bạn chỉ định nơi lấy dữ liệu log (sourc
 4. Nhập điều kiện **Filter** cho log nếu có. Bạn có thể nhập điều kiện lọc cho log bằng một trong 2 cách: **Suggestion mode** hoặc **Editor mode**. Cách sử dụng 2 phương thức này và chuyển đổi qua lại giữa 2 phương thức đã được chúng tôi mô tả ở các tính năng [Search logs](https://docs-admin.vngcloud.vn/display/VPV/Search+logs).
 5. Chọn **Create.**
 
-![](https://docs-admin.vngcloud.vn/download/attachments/49650043/image2023-7-31\_14-9-40.png?version=1\&modificationDate=1690787381000\&api=v2)
+![](https://docs-admin.vngcloud.vn/download/attachments/49650043/image2023-7-31_14-9-40.png?version=1\&modificationDate=1690787381000\&api=v2)
 
 </details>
 
@@ -56,7 +56,7 @@ Hiện tại VNG Cloud hỗ trợ thư viện cho 2 ứng dụng phổ biến l�
 
 3. Chọn **Duplicate**.
 
-![](https://docs-admin.vngcloud.vn/download/attachments/49650043/image2023-8-2\_15-2-28.png?version=1\&modificationDate=1690963350000\&api=v2)
+![](https://docs-admin.vngcloud.vn/download/attachments/49650043/image2023-8-2_15-2-28.png?version=1\&modificationDate=1690963350000\&api=v2)
 
 Sau khi bạn sao chép thành công:
 
@@ -65,7 +65,7 @@ Sau khi bạn sao chép thành công:
 
 <img src="https://docs-admin.vngcloud.vn/download/attachments/49650043/image2023-8-2_15-8-35.png?version=1&#x26;modificationDate=1690963717000&#x26;api=v2" alt="" data-size="original">
 
-![](https://docs-admin.vngcloud.vn/download/attachments/49650043/image2023-8-2\_15-9-10.png?version=1\&modificationDate=1690963751000\&api=v2)
+![](https://docs-admin.vngcloud.vn/download/attachments/49650043/image2023-8-2_15-9-10.png?version=1\&modificationDate=1690963751000\&api=v2)
 
 </details>
 
@@ -100,4 +100,4 @@ Khi bạn không có nhu cầu sử dụng một Processor group tùy chỉnh n�
 
 Sau khi bạn thực hiện xóa thành công thì Processor group của bạn sẽ bị xóa hoàn toàn khỏi hệ thống của chúng tôi đồng thời tất cả các processor bên trong một processor group cũng sẽ bị xóa. Bạn không thể khôi phục lại Processor group đã xóa nên hãy lưu ý cẩn thận khi sử dụng tính năng này.&#x20;
 
-\
+<br>

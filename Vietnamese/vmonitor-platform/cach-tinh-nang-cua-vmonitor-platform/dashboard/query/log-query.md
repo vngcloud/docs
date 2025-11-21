@@ -54,4 +54,4 @@ Bạn có thể tham khảo cách tạo một graph với logs dựa trên video
 
 <figure><img src="../../../../.gitbook/assets/1.gif" alt=""><figcaption></figcaption></figure>
 
-\
+<br>

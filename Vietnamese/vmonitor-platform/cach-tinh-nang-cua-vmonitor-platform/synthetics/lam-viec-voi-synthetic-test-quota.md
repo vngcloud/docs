@@ -27,8 +27,7 @@ Sau khi bạn khởi tạo Synthetic test quota, bạn có thể xem thông tin 
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn **Synthetic test usage**.
 
-Hệ thống hiển thị thông tin gói **Synthetic test quota** đã được khởi tạo và **usage** thực tế bạn đang sử dụng của gói **Synthetic test quota** đó. Bạn có thể thực hiện Gia hạn trong vòng 7 ngày trước ngày hết hạn của gói Synthetic test quota bằng cách chọn **Renew.**\
-
+Hệ thống hiển thị thông tin gói **Synthetic test quota** đã được khởi tạo và **usage** thực tế bạn đang sử dụng của gói **Synthetic test quota** đó. Bạn có thể thực hiện Gia hạn trong vòng 7 ngày trước ngày hết hạn của gói Synthetic test quota bằng cách chọn **Renew.**<br>
 
 ***
 
@@ -64,4 +63,4 @@ Sau khi bạn bạn thực hiện xóa gói Synthetic test quota thì gói Synth
 
 <mark style="color:red;">Do hành động xóa Synthetic test quota tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.</mark>&#x20;
 
-\
+<br>

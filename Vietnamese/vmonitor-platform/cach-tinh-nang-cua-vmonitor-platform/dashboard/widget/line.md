@@ -4,19 +4,19 @@
 
 **Line chart** (biểu đồ đường) là một loại biểu đồ được sử dụng để thể hiện thông tin dữ liệu thay đổi theo thời gian. Line chart được tạo bằng cách vẽ một loạt các điểm và nối chúng với nhau bằng các đoạn thẳng.
 
-<figure><img src="../../../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (55) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Cấu hình biểu đồ
 
-<figure><img src="../../../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (56) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style&#x20;
 
 Đối với biểu đồ dạng line, tại mục này bạn chọn Style là **Line**
 
-<figure><img src="../../../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (57) (1).png" alt=""><figcaption></figcaption></figure>
 
 Để thay đổi đường nét và độ mờ của line, bạn có thể điều chỉnh theo các option sau đây:
 

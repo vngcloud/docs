@@ -13,8 +13,7 @@ Step2: Install Cephadm
 ·         In Ubuntu:
 
 _apt install -y cephadm_\
-\
-
+<br>
 
 ·         In CentOS Stream:
 
@@ -54,8 +53,7 @@ apt install ceph-common
 Confirm that the ceph command is accessible with:
 
 _ceph -v_\
-\
-
+<br>
 
 Confirm that the ceph command can connect to the cluster and also its status with:
 

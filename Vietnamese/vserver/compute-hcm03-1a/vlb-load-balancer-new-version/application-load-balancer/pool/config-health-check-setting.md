@@ -70,4 +70,4 @@ Tại cửa sổ giao diện "Thêm Pool", kéo đến phần "Cài đặt Healt
      * Giải thích: Tên domain là tên miền hoặc địa chỉ IP mà bạn sử dụng để truy cập máy chủ backend khi thực hiện kiểm tra sức khỏe.
      * Ví dụ: Nếu bạn đặt Tên Domain là "[backend-server.example.com](http://backend-server.example.com/)", Load Balancer sẽ sử dụng tên miền này để gửi yêu cầu kiểm tra sức khỏe đến máy chủ backend.
 
-\
+<br>

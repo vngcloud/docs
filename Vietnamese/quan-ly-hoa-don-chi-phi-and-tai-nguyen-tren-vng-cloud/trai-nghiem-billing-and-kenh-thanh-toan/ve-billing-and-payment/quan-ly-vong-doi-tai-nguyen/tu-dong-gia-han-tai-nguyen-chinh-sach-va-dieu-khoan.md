@@ -22,8 +22,7 @@ Sử dụng tài liệu này để hiểu thêm về tính năng tự động gi
     <figure><img src="../../../../.gitbook/assets/image (919).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="https://docs.vngcloud.vn/download/attachments/49649295/image2023-12-12_10-49-53.png?version=1&#x26;modificationDate=1702352993000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
-* **Bật/Tắt trong quá trình sử dụng dịch vụ**\
-
+* **Bật/Tắt trong quá trình sử dụng dịch vụ**<br>
   * Bước 1: Điều hướng đến trang Resource Billing trong dịch vụ vServer: [https://hcm-3.console.vngcloud.vn/vserver/billing](https://hcm-3.console.vngcloud.vn/vserver/billing)
   * Bước 2: Nhấn vào biểu tượng ba chấm tại vị trí tài nguyên cần thực hiện thay đổi. Xem hình bên dưới
     * Chọn **"Tự động gia hạn"** để bật tính năng tự động gia hạn nếu chưa bật khi khởi tạo

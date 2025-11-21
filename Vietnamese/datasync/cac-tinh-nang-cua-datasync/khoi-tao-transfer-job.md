@@ -125,6 +125,5 @@ Bắt đầu sử dụng dịch vụ, bạn cần tạo một transfer job. Tron
 * Nếu bạn gặp lỗi khi kết nối, vui lòng kiểm tra lại thông tin S3 key và endpoint của bạn.
 * Tham khảo tài liệu hướng dẫn của nhà cung cấp S3 compatible Object Storage để lấy thông tin chi tiết về cách thiết lập quyền truy cập cho cặp S3 key.
 * Bạn có thể sử dụng kết hợp cả filter include và filter exclude để lọc object.
-* Thứ tự ưu tiên: Filter include được áp dụng trước filter exclude.\
-
+* Thứ tự ưu tiên: Filter include được áp dụng trước filter exclude.<br>
 {% endhint %}

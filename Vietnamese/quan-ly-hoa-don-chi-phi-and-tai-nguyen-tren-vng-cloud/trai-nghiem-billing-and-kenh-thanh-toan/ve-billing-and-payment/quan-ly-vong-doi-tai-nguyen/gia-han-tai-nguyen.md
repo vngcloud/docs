@@ -37,4 +37,4 @@ Giá tiền hiển thị ngay tại bước thanh toán khi thực hiện gia h�
 
 Từ ví dụ trên, khi thực hiện gia hạn tài nguyên thêm 2 tháng, thời điểm kết thúc tài nguyên sẽ được cập nhật sang ngày 06-06-2023 và người dùng phải chi trả thêm số tiền là 362,000 VND để hoàn tất việc gia hạn&#x20;
 
-\
+<br>

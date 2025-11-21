@@ -78,4 +78,4 @@ Bạn đã khởi tạo một metric từ một log project tương ứng. Metri
 
 Sau khi bạn thực hiện 4 bước bên trên để xóa metric thì chúng tôi bắt đầu chạy tiến trình xóa metric của bạn. Trạng thái của metric lúc này là Đang xóa. Tại thời điểm này, metric vẫn chưa được cập nhật xóa ở vMonitor Dashboard cũng như vMonitor Alarm. Tới thời điểm chúng tôi thông báo cho bạn metric đã xóa thành công, thì lúc này metric sẽ bị xóa ở phía Log2Metric nhưng metric name đó vẫn tồn tại phía hệ thống vMonitor Platform - Metric. Do đó nếu Widget đang sử dụng metric bị xóa thì biểu đồ được vẽ từ metric sẽ không có dữ liệu mới (biểu đồ vẫn giữ nguyên hiện trạng, tính năng và dữ liệu cũ trước thời điểm xóa metric) và bạn vẫn có thể thêm mới Widget khác với metric đã bị xóa này.
 
-\
+<br>

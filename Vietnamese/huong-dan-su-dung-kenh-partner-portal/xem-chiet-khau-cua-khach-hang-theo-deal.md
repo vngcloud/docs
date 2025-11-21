@@ -12,4 +12,4 @@ Discount của khách hàng theo deal chỉ có khi partner chủ động tạo 
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/67993742/image2023-11-10_10-26-15.png?version=1&#x26;modificationDate=1699586775000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-\
+<br>

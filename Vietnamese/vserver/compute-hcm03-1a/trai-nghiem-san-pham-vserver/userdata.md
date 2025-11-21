@@ -210,8 +210,7 @@ Có thể dùng tùy chọn là  _cloud\_config\_plugins_ để lọc hoặc tha
 
 Việc thực thi việc đổi tên máy chủ _set\_hostname_ hay chạy các câu lệnh _runcmd_ có thể cần được khổi động lại Server nếu cần. Việc khởi động lại sẽ được thực hiện **sau** khi tất cả các chỉ thị được thực thi.
 
-\
-
+<br>
 
 ## **Khởi tạo UserData khi kích hoạt vServer** <a href="#userdata-khoitaouserdatakhikichhoatvservercreateuserdataserver" id="userdata-khoitaouserdatakhikichhoatvservercreateuserdataserver"></a>
 

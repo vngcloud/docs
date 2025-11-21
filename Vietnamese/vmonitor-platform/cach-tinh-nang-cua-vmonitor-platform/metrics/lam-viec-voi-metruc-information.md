@@ -57,4 +57,4 @@ Bạn có thể chỉnh sửa thông tin metadata của một metric bằng các
 
 8\. Sau khi bạn đã thực hiện thay đổi thông số **metadata** của **metric**, bạn cũng có thể thực hiện khôi phục lại cấu hình **metadata** ban đầu bằng cách chọn **Edit** sau đó chọn **Reset.**
 
-\
+<br>

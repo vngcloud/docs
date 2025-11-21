@@ -1,4 +1,4 @@
-# Changing the Backup Policy
+# Thay đổi chính sách sao lưu
 
 1. Đăng nhập vào bảng điều khiển vBackup tại: [https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-server](https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-server). Bạn phải đăng nhập với tư cách người dùng IAM, đảm nhận vai trò IAM account hoặc đăng nhập với tư cách Root user account (không được khuyến nghị) trong tài khoản quản lý của tổ chức.
 2. Tại tab Backup Server, chỉ định Backup Server sau đó hãy chọn **Thay đổi Policy**
@@ -23,7 +23,6 @@ Khi đăng nhập vào tài khoản trên bảng điều khiển vServer, bạn 
 
 Bạn có thể thay đổi chính sách sao lưu khác cho Backup Server. Hãy ghi nhớ những điểm sau:
 
-\
+<br>
 
-
-\
+<br>

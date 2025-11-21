@@ -22,8 +22,7 @@ Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung c�
 
 Để xóa một object qua vStorage API, hãy xem [API Developers](../../api-developers/).
 
-\
-
+<br>
 {% endtab %}
 
 {% tab title="Sử dụng 3rd party softwares" %}
@@ -31,7 +30,6 @@ vStorage cũng tương thích với các công cụ phía người dùng sử d�
 
 Để xóa một object qua 3rd party software, hãy xem [3rd party softwares](../../3rd-party-softwares/).
 
-\
-
+<br>
 {% endtab %}
 {% endtabs %}

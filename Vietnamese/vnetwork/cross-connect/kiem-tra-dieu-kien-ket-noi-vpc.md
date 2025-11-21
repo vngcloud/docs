@@ -10,7 +10,7 @@
 
 ### <mark style="color:blue;">**\[**</mark><mark style="color:blue;">Mã lỗi 2010</mark><mark style="color:blue;">**] Đang tồn tại một cặp kết nối VPC sẵn trước**</mark>
 
-<figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (43) (2).png" alt=""><figcaption></figcaption></figure>
 
 Từ hình mô tả trên ta thấy rằng:
 
@@ -20,7 +20,7 @@ Từ hình mô tả trên ta thấy rằng:
 
 ### <mark style="color:blue;">**\[Mã lỗi 2011] Trùng CIDR của một kết nối VPC trong Cross Connect ở**</mark>**&#x20;**<mark style="color:blue;background-color:red;">**Requester**</mark>
 
-<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (44) (2).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;         Từ hình mô tả trên ta thấy rằng:
 
@@ -29,7 +29,7 @@ Từ hình mô tả trên ta thấy rằng:
 
 ### <mark style="color:blue;">**\[Mã lỗi 2013] Trùng CIDR của một kết nối VPC trong Cross Connect ở**</mark>**&#x20;**<mark style="color:blue;background-color:red;">**Accepter**</mark>
 
-<figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (45) (2).png" alt=""><figcaption></figcaption></figure>
 
 Từ hình mô tả trên ta thấy rằng:
 

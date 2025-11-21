@@ -23,4 +23,4 @@ Lúc này bạn có thể chọn vào **transfer job** đó để xem chi tiết
 * Việc transfer một lượng lớn dữ liệu trong một lần chạy transfer job có thể gây ảnh hưởng đến hiệu suất và thời gian thực hiện transfer job. Để tăng tốc độ cũng như cải thiện độ ổn định của hệ thống, chúng tôi khuyến cáo bạn nên chia nhỏ tập dữ liệu thông qua tính năng **Data Filtering** (Filter Include Prefix, Filter Exclude Prefix) đầu vào giúp giảm tải hệ thống và đẩy nhanh quá trình di chuyển dữ liệu. Giả sử bạn có một transfer job transfer 100GB dữ liệu từ Amazon S3 sang vStorage. Việc transfer có thể mất nhiều thời gian và ảnh hưởng đến hệ thống. Bạn có thể chia nhỏ dữ liệu thành 10 phần, mỗi phần 10GB. Sau đó, sử dụng tính năng Data Filtering để transfer từng phần dữ liệu riêng lẻ.&#x20;
 {% endhint %}
 
-\
+<br>

@@ -10,4 +10,4 @@ Các hướng dẫn
 * [Sử dụng Deny permission để từ chối truy cập.](su-dung-deny-permission-de-tu-choi-truy-cap.md)
 * [Uỷ quyền truy cập giữa các root user account với Service Account.](uy-quyen-truy-cap-giua-cac-root-user-accounts-voi-tinh-nang-service-account-impersonate.md)
 
-\
+<br>

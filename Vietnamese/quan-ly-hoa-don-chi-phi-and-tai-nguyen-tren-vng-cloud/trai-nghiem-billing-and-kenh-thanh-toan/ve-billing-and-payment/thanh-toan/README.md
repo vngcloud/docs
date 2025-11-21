@@ -22,4 +22,4 @@ Tại VNG Cloud Service, chúng tôi cung cấp nhiều phương thức thanh to
 * **Khi áp dụng Coupon:**&#x20;
   * Tham khảo chi tiết hướng dẫn sử dụng coupon [tại đây](ap-dung-coupon-khi-thanh-toan.md)
 
-\
+<br>

@@ -57,8 +57,7 @@
 
 > s3cmd multipart s3://BUCKET
 
-* Xóa các incomplete segment (segment rác) cho các incomplete upload id được liệt kê ở câu lệnh trên:\
-
+* Xóa các incomplete segment (segment rác) cho các incomplete upload id được liệt kê ở câu lệnh trên:<br>
 
 > s3cmd abortmp s3://BUCKET/OBJECT Id
 >

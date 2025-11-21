@@ -61,4 +61,4 @@ Khi mọi lựa chọn đã chính xác, bạn nhấn nút **SAVE** . Bạn ch�
 
 **Lưu ý:** Trong một số truờng hợp, biến cấu hình đòi hỏi cần RESTART lại dịch vụ Database trên RDS Instance, status của RDS Instance lúc này sẽ là **RESTART\_REQUIRED**. Với VNG Cloud, bạn có thể chủ động thời điểm thực hiện thao tác này. Sau khi đã sao lưu các tác vụ trên RDS Instance, bạn click vào **ACTION**, chọn **RESTART** để hoàn tất quá trình.
 
-\
+<br>

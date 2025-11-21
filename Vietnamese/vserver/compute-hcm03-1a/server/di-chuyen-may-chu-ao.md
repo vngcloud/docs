@@ -39,4 +39,4 @@ Một số tình huống có thể xảy ra có thể khiến việc di chuyển
 * Thay thế cơ sở hạ tầng cũ kỹ vào cuối vòng đời của nó, nâng cao chất lượng phần cứng để đáp ứng chiến lược thay đổi nâng cấp trung tâm dữ liệu trong tương lai của VNG Cloud
 * Mở rộng và phân phối hosting giúp giảm tải tại một điểm duy nhất và đạt tính sẵn sàng cao.
 
-\
+<br>

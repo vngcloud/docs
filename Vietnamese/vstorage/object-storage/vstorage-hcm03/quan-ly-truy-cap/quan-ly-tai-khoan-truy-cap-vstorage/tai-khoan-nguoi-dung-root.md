@@ -23,4 +23,4 @@ Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông t
 
 Để hủy tài khoanr Root, bạn cần liên hệ với chúng tôi thông qua việc tạo một ticket yêu cầu hủy tài khoản. Chi tiết xem thêm tại [Hướng dẫn hủy tài khoản](../../../../../huong-dan-su-dung-tai-khoan/huong-dan-huy-tai-khoan.md).
 
-\
+<br>

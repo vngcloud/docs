@@ -8,8 +8,7 @@ Protocol Proxy là một protocol đặc thù cho phép Load Balanacer chuyển 
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/64553636/image2021-10-27_11-59-17.png?version=1&#x26;modificationDate=1699597645000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-\
-
+<br>
 
 * **Bước 2:** Trên Nginx server, kiểm tra module proxy protocol **http\_realip\_module** đã được cài đặt trước hay chưa bằng command. Nếu chưa, bạn cần install hoặc rebuild nginx từ source với module trên.
 
@@ -33,23 +32,20 @@ Protocol Proxy là một protocol đặc thù cho phép Load Balanacer chuyển 
 | `set_real_ip_from <Load balancer IP>;` |
 | -------------------------------------- |
 
-\
-
+<br>
 
 VD: ở đây IP của vLB đang là 103.245.248.204.&#x20;
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/64553636/image2021-10-27_11-49-14.png?version=1&#x26;modificationDate=1699597645000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-\
-
+<br>
 
 \+ Cấu hình thay đổi IP của Load balancer với IP của client, được lấy từ Proxy Protocol Header tại **server {}** block với cấu hình **real\_ip\_header** và tham số **proxy\_protocol**
 
 | `real_ip_header proxy_protocol;` |
 | -------------------------------- |
 
-\
-
+<br>
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/64553636/image2021-10-27_11-50-39.png?version=1&#x26;modificationDate=1699597645000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 

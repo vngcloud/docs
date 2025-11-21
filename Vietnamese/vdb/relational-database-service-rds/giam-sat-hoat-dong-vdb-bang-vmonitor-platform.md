@@ -8,8 +8,7 @@ vMonitor Platform là một dịch vụ Monitoring as a Service giúp thu thập
 
 Hiện tại, vMonitor Platform cho phép bạn xem metric của tất cả vDB Instance bằng default dashboard (dashboard được hệ thống tự động vẽ sẵn với tập metric giới hạn) và retention 1 ngày hoàn toàn miễn phí. Để có thể vẽ các dashboard với số lượng metric không giới hạn, xem metric với retention dài hơn, tạo các alarm cảnh báo khi mức độ sử dụng (resource usage) cpu, memory, disk, connections, buffer,... đạt ngưỡng nguy hiểm, bạn cần Enable detailed Monitoring. Việc này yêu cầu bạn cần đăng kí gói (Quota) với vMonitor Platform. Bạn tham khảo tại: [Làm việc với Metric Quota](../../vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/lam-viec-voi-metric-quota.md).
 
-\
-
+<br>
 
 Sau khi Enable detailed Monitoring, bạn có thể Clone default dashboard ra và vẽ thêm các Widget khác theo nhu cầu hoặc tạo các dashboard mới. [Dashboard](../../vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/dashboard/).
 
@@ -23,8 +22,7 @@ Các metric của vDB hỗ trợ tập dimension sau giúp bạn filter metric c
 * version: phiên bản của Engine.
 * zone: Zone của resource như HCM-03.
 
-\
-
+<br>
 
 Bạn cũng có thể tạo các alarm với các metric này. [Thiết lập cảnh báo cho Metric](../../vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/alarm/metric-alarm.md)
 
@@ -34,4 +32,4 @@ Bạn cũng có thể tạo các alarm với các metric này. [Thiết lập c�
 * Memory usable: mức độ % Memory khả dụng của vDB Instance. Sử dụng metric vdb.mem.usable\_perc, ngưỡng cảnh báo tham khảo: <20%, <10%
 * Disk usage: mức độ % sử dụng Disk của vDB Instance. Sử dụng metric vdb.disk.space\_used\_perc, ngưỡng cảnh báo tham khảo: >80%, >90%, >100%.
 
-\
+<br>

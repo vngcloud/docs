@@ -28,4 +28,4 @@ Với Archive class, tỉ lệ SLA vẫn luôn đảm bảo đạt mức 99.99% 
 * Hãy chắc chắn dữ liệu bạn đưa lên **Archive class** là những dữ liệu cần lưu trữ nhưng ít có nhu cầu sử dụng. Vì tuy rằng chi phí lưu trữ của **Archive class** là thấp nhất nhưng chi phí phát sinh từ việc thao tác với dữ liệu như xóa, restore, v.v. sẽ cao hơn các lớp lưu trữ **Gold class** và **Silver class** từ 1-2 lần.
 * **Archive class** cũng không phù hợp cho việc lưu trữ dữ liệu thay đổi liên tục vì quy định hạn chế xóa dữ liệu trong vòng 6 tháng của chúng tôi. Nếu bạn có nhu cầu lưu trữ dữ liệu backup nhưng có thời gian thay đổi dữ liệu hàng tuần, tháng thì **Silver class** sẽ là lựa chọn phù hợp. &#x20;
 
-\
+<br>

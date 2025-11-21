@@ -32,8 +32,7 @@ Bạn có thể kết nối dễ dàng với các máy chủ Window được t�
 1. Truy cập vào trang quản lý Server tại trình điều khiển của chúng tôi tại: [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)
 2. Chọn Server cần kết nối, sau đó chọn Hành động - **Kết nối**
 3.  Trên trang Kết nối tới máy chủ, chọn tab RDP (Window)\
-    \
-
+    <br>
 
     <figure><img src="../../../../.gitbook/assets/image (417).png" alt=""><figcaption></figcaption></figure>
 4. Chọn **Tải xuống tệp RDP**. Trình duyệt của bạn sẽ nhắc bạn mở hoặc lưu tệp RDP. Khi bạn đã hoàn tất tải xuống tệp, hãy chọn **Hoàn thành** để quay lại trang máy chủ:
@@ -47,12 +46,10 @@ Bạn có thể kết nối dễ dàng với các máy chủ Window được t�
 6.  Tài khoản quản trị viên được chọn theo mặc định. Bạn cần sao chép và dán mật khẩu mà bạn đã lưu trước đó vào pop-up đăng nhập (Thông tin này lấy từ mail phía trên), trong đó nhập thông tin **InstanceLogin** vào **Username**, **InstancePassword** vào **Password**:
 
     <figure><img src="../../../../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
-7.  Nhấn **OK.** Do tính chất của chứng chỉ tự ký, bạn có thể nhận được cảnh báo rằng chứng chỉ bảo mật không thể được xác thực. Sử dụng các bước sau để xác minh danh tính của máy tính từ xa hoặc chỉ cần chọn **Yes**(Windows) hoặc **Continue** (Mac OS X) nếu bạn tin cậy chứng chỉ.\
-
+7.  Nhấn **OK.** Do tính chất của chứng chỉ tự ký, bạn có thể nhận được cảnh báo rằng chứng chỉ bảo mật không thể được xác thực. Sử dụng các bước sau để xác minh danh tính của máy tính từ xa hoặc chỉ cần chọn **Yes**(Windows) hoặc **Continue** (Mac OS X) nếu bạn tin cậy chứng chỉ.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (421).png" alt=""><figcaption></figcaption></figure>
-8.  Màn hình sẽ hiển thị đang kết nối đến máy chủ Window thành công\
-
+8.  Màn hình sẽ hiển thị đang kết nối đến máy chủ Window thành công<br>
 
     <figure><img src="../../../../.gitbook/assets/image (422).png" alt=""><figcaption></figcaption></figure>
 

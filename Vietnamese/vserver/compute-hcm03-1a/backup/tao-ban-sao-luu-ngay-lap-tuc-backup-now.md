@@ -6,8 +6,7 @@ Lợi ích của Sao lưu Dữ liệu Ngay Lập Tức:
 
 1. **Tính Linh Hoạt và Khẩn Cấp:** Sao lưu dữ liệu ngay lập tức cho phép bạn thực hiện việc sao lưu bất kỳ khi nào bạn cảm thấy cần thiết, thay vì phải chờ đến thời điểm sao lưu định kỳ. Điều này rất hữu ích trong tình huống khẩn cấp hoặc khi bạn muốn bảo vệ dữ liệu ngay lập tức trước một sự cố có thể xảy ra.
 2. **Bảo Vệ Dữ Liệu Quan Trọng Trong Thời Gian Ngắn:** Nếu bạn chỉ cần sao lưu một phần nhỏ hoặc một dự án cụ thể, việc sao lưu ngay lập tức sẽ giúp bạn bảo vệ những dữ liệu quan trọng mà bạn vừa làm việc trên chúng.
-3. **Phục Hồi Nhanh Chóng:** Khi bạn cần phục hồi dữ liệu, bạn sẽ có bản sao lưu gần nhất\
-
+3. **Phục Hồi Nhanh Chóng:** Khi bạn cần phục hồi dữ liệu, bạn sẽ có bản sao lưu gần nhất<br>
 
 ***
 

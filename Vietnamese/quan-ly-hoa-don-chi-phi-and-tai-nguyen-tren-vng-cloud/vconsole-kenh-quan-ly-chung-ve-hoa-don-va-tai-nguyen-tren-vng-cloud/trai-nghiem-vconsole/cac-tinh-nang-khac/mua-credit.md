@@ -10,4 +10,4 @@
 * Bước 6: Làm theo hướng dẫn đối với từng nguồn tiền cụ thể
 * Bước 7: Hoàn tất thanh toán, **trở về trang vConsole**, vào mục **Available credit / Thông tin số dư** để xem số dư và mục **Credit history / Lịch sử tín dụng** để biến động số dư.
 
-\
+<br>

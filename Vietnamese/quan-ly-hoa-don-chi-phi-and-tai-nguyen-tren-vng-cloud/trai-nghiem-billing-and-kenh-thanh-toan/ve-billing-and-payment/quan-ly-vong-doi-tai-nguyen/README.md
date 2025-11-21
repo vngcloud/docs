@@ -12,11 +12,9 @@ Thông qua **mô hình vòng tài nguyên** dưới đây, bạn sẽ có cái n
 
 ***
 
-\
+<br>
 
-
-\
-
+<br>
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/49649293/Daily_Job_HC%20(3)-Page-2.drawio.png?version=1&#x26;modificationDate=1677814179000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 

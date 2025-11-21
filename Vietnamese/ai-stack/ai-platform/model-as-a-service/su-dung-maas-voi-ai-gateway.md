@@ -17,35 +17,35 @@
   * **Model Endpoint**: Điền URL của model (xem tại [MaaS](https://aiplatform.console.vngcloud.vn/models/md-37404b64-0656-4c85-978c-a6e1b84ea8ac) ở poral AI Platform).
   *
 
-      <figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../../.gitbook/assets/image (25) (2).png" alt=""><figcaption></figcaption></figure>
   *   **Authentication info**:
 
       * header\_name: Điền `Authorization`.
       * header\_value: Điền Api Key MaaS ( API Key trong hình được tạo ở [Portal ](https://aiplatform.console.vngcloud.vn/keys)AI Platform).
 
-      <figure><img src="../../../.gitbook/assets/image (13) (1).png" alt="123"><figcaption></figcaption></figure>
+      <figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt="123"><figcaption></figcaption></figure>
 * **Gateway Config:** Mặc định, hệ thống sẽ bật tính năng **Authenticated Gateway.**
 
 **Bước 4**: Chọn Create an AI Gateway, AI Gateway của bạn sẽ được khởi tạo và sẵn sàng để sử dụng.
 
-<figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5**: Sau khi AI Gateway được khởi tạo bạn cần [tạo Token](https://docs.vngcloud.vn/vng-cloud-document/vn/ai-stack/ai-gateway/ai-gateway/lam-viec-voi-authentication-token) để gọi API.
 
 **Bước 6**: Sau khi bạn tạo token, bạn có thể cấu hình rate limit cụ thể trên từng token theo nhu cầu cá nhân.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 \
 **Bước 7**: Trong mục **Providers & Model**, tìm mô hình AI bạn đã cấu hình. Tại mô hình đó, nhấn vào biểu tượng **Curl command** để lấy câu lệnh mẫu.
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18) (3).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 8**: Sao chép đoạn lệnh `curl` được hiển thị và thực thi lệnh đó trên máy tính cá nhân của bạn (qua Terminal hoặc Command Prompt).
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (3).png" alt=""><figcaption></figcaption></figure>
 
 Ví dụ:
 

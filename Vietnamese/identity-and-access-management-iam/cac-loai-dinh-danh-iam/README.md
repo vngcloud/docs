@@ -54,6 +54,5 @@ Identity Providers là dịch vụ cho phép người dùng xác thực danh tí
 
 Tìm thêm hướng dẫn chi tiết tại:
 
-* [Quản lý Identity Providers](thiet-lap-identity-providers.md)\
-
+* [Quản lý Identity Providers](thiet-lap-identity-providers.md)<br>
 

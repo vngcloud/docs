@@ -18,10 +18,8 @@ Listener trong Load Balancer là một phần quan trọng của quá trình đi
 * [Config IP whitelist to load balancer](config-ip-whitelist-to-load-balancer.md)
 * [Config timeout](config-timeout.md)
 
-\
+<br>
 
+<br>
 
-\
-
-
-\
+<br>

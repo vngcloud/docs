@@ -65,14 +65,12 @@
     2. Chọn Type: **IP Alias**
     3. Chọn Interface: **Localhost**
     4. Chọn Address: **(your inside IP address)/30**
-       *   Trong tệp tin cấu hình bạn tải từ AWS, cuộn tìm đến **Inside IP Addresses**  và tìm IP **Customer Gateway**.  Đây là Virtual IP ta đặt vào pfSense. đừng quên điền /30!\
-
+       *   Trong tệp tin cấu hình bạn tải từ AWS, cuộn tìm đến **Inside IP Addresses**  và tìm IP **Customer Gateway**.  Đây là Virtual IP ta đặt vào pfSense. đừng quên điền /30!<br>
 
            <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.15.51-PM-1024x312.png" alt=""><figcaption></figcaption></figure>
     5. Thêm mô tả nếu bạn muốn ( ví dụ AWS VPN Inside Address);
     6. Có thể để mọi thông tin ở dạng mặc định;
-    7. Chọn **Save** sau đó chọn **Apply Changes**\
-
+    7. Chọn **Save** sau đó chọn **Apply Changes**<br>
 
     <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.13.23-PM-1024x634.png" alt=""><figcaption></figcaption></figure>
 3. Đến màn hình **VPN -> IPSec**
@@ -100,8 +98,7 @@
          * Với thuật toán **Hash Algorithms**, đảm bảo **SHA1 được chọn**
          * Với **PFS key group**, thiết lập **2 (1024 bit)**. Điều này tương ứng với phần Perfect Forward Secrecy của tập tin cấu hình.
          * Đảm bảo **Lifetime** thiết lập **3600** giây
-      5.  Chọn **Save**\
-
+      5.  Chọn **Save**<br>
 
           <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.19.13-PM-1024x924.png" alt=""><figcaption></figcaption></figure>
    3.  Trong pfSense, bên dưới chỗ kết nối VPN connection, chọn **Show Phase 2 Entries** và sua đó chọn lại **Add P2**&#x20;
@@ -126,8 +123,7 @@
       * Chọn **Save** và **Apply Changes**
 5. Đến màn hình **Services -> OpenBGPD** _( Tất cả thông tin sau có thể được tìm thấy ở đoạn   #4 Border Gateway Protocol (BGP) Configuration section của tệp tin cấu hình đã tải)._
    1. &#x20;Dưới chỗ **Settings** thiết lập như sau:
-      1.  Số Autonomous System (AS): **(Số mà bạn đã thiết lập Customer Gateway iở AWS)**\
-
+      1.  Số Autonomous System (AS): **(Số mà bạn đã thiết lập Customer Gateway iở AWS)**<br>
 
           <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.22.28-PM-1024x421.png" alt=""><figcaption></figcaption></figure>
       2. Thiết lập Holdtime: **30**
@@ -135,8 +131,7 @@
          * Ta **không** cần /30 ở đây
       4. Điền Networks: **(Your local subnet, e.g., 192.168.1.0/24)**
          * Nếu bạn muốn thêm nhiều mạng con cục bộ hơn để được phát tán đến AWS, hãy nhấp vào nút **Add** cho bao nhiêu mạng bạn có và nhập vào các mạng con (subnets) bổ sung của bạn.
-      5.  Chọn **Save**\
-
+      5.  Chọn **Save**<br>
 
           <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.24.33-PM-1024x823.png" alt=""><figcaption></figcaption></figure>
    2.  Chọn **Groups**
@@ -156,8 +151,7 @@
       3. Đối với **Neighbor**, điền địa chỉ **Neighbor IP Address**  trọng tệp tin cấu hình
       4. Đảm bảo **Group** đươc thiết lập theo tên nhóm của bước trước
       5.  Để các cấu hình như mặc định và chọn  **Save**\
-          \
-
+          <br>
 
           <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.23.34-PM-1024x627.png" alt=""><figcaption></figcaption></figure>
 6.  Đến màn hình **Status -> IPsec**
@@ -184,13 +178,11 @@
 
 Trở lại AWS, chúng ta có thể kiểm tra các bảng định tuyến cho VPC của mình. Trong bảng điều khiển, kiểm tra một bảng định tuyến. Khi bạn nhấp vào tab **Routes** , bạn nên thấy các định tuyến từ pfSense được phát tán đến AWS.
 
-Trên các máy ảo EC2 của bạn, nếu các nhóm bảo mật (Security Groups) của bạn được cấu hình để cho phép ICMP và/hoặc SSH từ mạng nội bộ của bạn, bạn sẽ có thể ping và/hoặc SSH giữa các thực thể trong mạng nội bộ của bạn và AWS VPC.\
-
+Trên các máy ảo EC2 của bạn, nếu các nhóm bảo mật (Security Groups) của bạn được cấu hình để cho phép ICMP và/hoặc SSH từ mạng nội bộ của bạn, bạn sẽ có thể ping và/hoặc SSH giữa các thực thể trong mạng nội bộ của bạn và AWS VPC.<br>
 
 <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.28.03-PM-300x139.png" alt=""><figcaption></figcaption></figure>
 
-Trong ví dụ , ta có một máy ảo Ubuntu đang chạy trong mạng VNG Cloud của tôi và một máy ảo EC2 đang chạy trong VPC . Sau khi cấu hình các nhóm bảo mật, ta có thể ping thành công giữa hai máy này!\
-
+Trong ví dụ , ta có một máy ảo Ubuntu đang chạy trong mạng VNG Cloud của tôi và một máy ảo EC2 đang chạy trong VPC . Sau khi cấu hình các nhóm bảo mật, ta có thể ping thành công giữa hai máy này!<br>
 
 <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.28.48-PM-300x104.png" alt=""><figcaption></figcaption></figure>
 

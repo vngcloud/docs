@@ -6,7 +6,7 @@
 
 > swift auth &#x20;
 >
-> export OS\_STORAGE\_URL=[https://hcm.vstorage.vnglab.com/v1/AUTH\_afa7086fbef044938dbb7d8d328d452a](https://hcm.vstorage.vnglab.com/v1/AUTH\_afa7086fbef044938dbb7d8d328d452a)&#x20;
+> export OS\_STORAGE\_URL=[https://hcm.vstorage.vnglab.com/v1/AUTH\_afa7086fbef044938dbb7d8d328d452a](https://hcm.vstorage.vnglab.com/v1/AUTH_afa7086fbef044938dbb7d8d328d452a)&#x20;
 >
 > export OS\_AUTH\_TOKEN=gAAAAABjsYvUCXdVOkJo6EttO7WIVKrqnkbc2\_nUU59RGBbzsOo4rbSra5RayTBtC\_CJzosiJzZkOj77\_nqLt-NcaShU47ggANr8dm9TGvHTY48mphfnZPRyAuFFEr4LiG7zNlJBkOxqbBPR7kDbJIpuVKTodupASxhQAYgaKP0s20zE4C77kC8
 
@@ -109,8 +109,7 @@ Khi sử dụng swift client tool, bạn có thể không cần phải export OS
 
 > swift stat my\_container&#x20;
 >
-> \
->
+> <br>
 >
 > &#x20;              Account: AUTH\_afa7086fbef044938dbb7d8d328d452a&#x20;
 >
@@ -206,9 +205,9 @@ Tạo tempURL là kỹ thuật tạo ra đường dẫn public cho một object 
 
 **Sử dụng GET tempURL link được sinh ra ở trên để download object**
 
-> wget "[https://hcm.vstorage.vnglab.com/v1/AUTH\_afa7086fbef044938dbb7d8d328d452a/container/file1?temp\_url\_sig=1fe9fbcdb9d6683eef8658a18aa97c7090525cec\&temp\_url\_expires=1672595887](https://hcm.vstorage.vnglab.com/v1/AUTH\_afa7086fbef044938dbb7d8d328d452a/container/file1?temp\_url\_sig=1fe9fbcdb9d6683eef8658a18aa97c7090525cec\&temp\_url\_expires=1672595887)"
+> wget "[https://hcm.vstorage.vnglab.com/v1/AUTH\_afa7086fbef044938dbb7d8d328d452a/container/file1?temp\_url\_sig=1fe9fbcdb9d6683eef8658a18aa97c7090525cec\&temp\_url\_expires=1672595887](https://hcm.vstorage.vnglab.com/v1/AUTH_afa7086fbef044938dbb7d8d328d452a/container/file1?temp_url_sig=1fe9fbcdb9d6683eef8658a18aa97c7090525cec\&temp_url_expires=1672595887)"
 >
-> \--2023-01-01 23:58:42-- [https://hcm.vstorage.vnglab.com/v1/AUTH\_afa7086fbef044938dbb7d8d328d452a/container/file1?temp\_url\_sig=1fe9fbcdb9d6683eef8658a18aa97c7090525cec\&temp\_url\_expires=1672595887](https://hcm.vstorage.vnglab.com/v1/AUTH\_afa7086fbef044938dbb7d8d328d452a/container/file1?temp\_url\_sig=1fe9fbcdb9d6683eef8658a18aa97c7090525cec\&temp\_url\_expires=1672595887)
+> \--2023-01-01 23:58:42-- [https://hcm.vstorage.vnglab.com/v1/AUTH\_afa7086fbef044938dbb7d8d328d452a/container/file1?temp\_url\_sig=1fe9fbcdb9d6683eef8658a18aa97c7090525cec\&temp\_url\_expires=1672595887](https://hcm.vstorage.vnglab.com/v1/AUTH_afa7086fbef044938dbb7d8d328d452a/container/file1?temp_url_sig=1fe9fbcdb9d6683eef8658a18aa97c7090525cec\&temp_url_expires=1672595887)
 >
 > Resolving [hcm.vstorage.vnglab.com](http://hcm.vstorage.vnglab.com/) ([hcm.vstorage.vnglab.com](http://hcm.vstorage.vnglab.com/))... 61.28.228.48
 >
@@ -220,18 +219,15 @@ Tạo tempURL là kỹ thuật tạo ra đường dẫn public cho một object 
 >
 > Saving to: ‘file1?temp\_url\_sig=1fe9fbcdb9d6683eef8658a18aa97c7090525cec\&temp\_url\_expires=1672595887’
 >
-> \
->
+> <br>
 >
 > file1?temp\_url\_sig=1fe9 100%\[===============================>] 11.61M 16.1MB/s in 0.7s
 >
-> \
->
+> <br>
 >
 > 2023-01-01 23:58:43 (16.1 MB/s) - ‘file1?temp\_url\_sig=1fe9fbcdb9d6683eef8658a18aa97c7090525cec\&temp\_url\_expires=1672595887’ saved \[12174069/12174069]
 
-\
-
+<br>
 
 Tương tự ta có thể tạo đường dẫn tạm để cho user upload bằng cách đổi method thành "PUT".
 
@@ -245,7 +241,7 @@ Trong đó, biến \<Value> nhận các giá trị trong bảng sau:
 
 <table data-header-hidden><thead><tr><th width="342"></th><th></th></tr></thead><tbody><tr><td><strong>Value</strong> </td><td><strong>Description</strong> </td></tr><tr><td>.r:* </td><td>Any user has access to objects. No token is required in the request. </td></tr><tr><td><p>.r:&#x3C;referrer> </p><p>(Exp: .r: <a href="http://example.org/referring_page">http://example.org/referring_page</a>) </p></td><td><p>The referrer is granted access to objects. The referrer is identified by the Referer request header in the request. No token is required. </p><p>Exp:  </p><p><br></p><p>GET /wiki/Referrer HTTP/1.1 Host: <a href="http://de.wikipedia.org/">http://de.wikipedia.org</a>  Referer: <a href="http://example.org/referring_page">http://example.org/referring_page</a> </p></td></tr><tr><td><p>.r:-&#x3C;referrer> </p><p>(Exp: .r: -<a href="http://example.org/referring_page">http://example.org/referring_page</a>) </p><p><br></p></td><td><p>This syntax (with “-” prepended to the referrer) is supported. However, it does not deny access if another element (e.g., .r:*) grants access. </p><p>Exp: </p><p><br></p><p>GET /wiki/Referrer HTTP/1.1 Host: <a href="http://de.wikipedia.org/">http://de.wikipedia.org</a>  Referer: <a href="http://example.org/referring_page">http://example.org/referring_page</a> </p><p><br></p></td></tr><tr><td>.rlistings </td><td>Any user can perform a HEAD or GET operation on the container provided the user also has read access on objects (e.g., also has .r:* or .r:&#x3C;referrer>. No token is required. </td></tr></tbody></table>
 
-Để hiểu thêm về ACLs của container, vui lòng tham khảo [https://docs.openstack.org/swift/latest/overview\_acl.html](https://docs.openstack.org/swift/latest/overview\_acl.html).
+Để hiểu thêm về ACLs của container, vui lòng tham khảo [https://docs.openstack.org/swift/latest/overview\_acl.html](https://docs.openstack.org/swift/latest/overview_acl.html).
 
 {% hint style="info" %}
 **Chú ý:**
