@@ -1,12 +1,12 @@
 # Attach Multi External Interface vào Server
 
-Tính năng attach multi external interface vào Server nhằm phân tách services/traffic, failover interface, tiết kiệm chi phí hơn khi không cần phải mua nhiều Server.
+Tính năng attach multi external interface vào Server nhằm mục đích phân tách services/traffic, failover interface, tiết kiệm chi phí hơn khi không cần phải mua nhiều Server.
 
 Tính năng này hiện đã hỗ trợ trên cả 2 region HCM và HAN.
 
 Hướng dẫn triển khai use case phổ biến: Hosting 2 Website trên 2 Public Interface khác nhau (cần Server , nhiều external interface có sẵn)
 
-Kiến trúc mục tiêu:
+**Kiến trúc mục tiêu:**
 
 VM Ubuntu/CentOS\
 ├── eth0 (IP: 203.0.113.10) → website1.com\
