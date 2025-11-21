@@ -53,9 +53,9 @@ network:
           table: 200
 ```
 
-Server có thể đã tồn tại file netplan, để đảm bảo apply file netplan mới không lỗi, cần thực hiện thêm các bước sau:
+Lưu ý: Server có thể đã tồn tại file netplan, để đảm bảo apply file netplan mới không lỗi, cần thực hiện thêm các bước sau:
 
-a. Disable cloud-init network
+**a. Disable cloud-init network**
 
 Tạo file:
 
@@ -65,11 +65,11 @@ Thêm:
 
 `network: {config: disabled}`
 
-b. Disable file 50-cloud-init.yaml
+**b. Disable file 50-cloud-init.yaml**
 
 `mv /etc/netplan/50-cloud-init.yaml /etc/netplan/50-cloud-init.yaml.disabled`
 
-4. Apply cấu hình và verify
+Apply cấu hình và verify
 
 ```
 # Apply cấu hình
