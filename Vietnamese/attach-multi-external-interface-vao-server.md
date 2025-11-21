@@ -4,7 +4,7 @@ Tính năng attach multi external interface vào Server nhằm mục đích phâ
 
 Tính năng này hiện đã hỗ trợ trên cả 2 region HCM và HAN.
 
-Hướng dẫn triển khai use case phổ biến: Hosting 2 Website trên 2 Public Interface khác nhau (cần Server , nhiều external interface có sẵn)
+Hướng dẫn triển khai use case phổ biến: Hosting 2 Website trên 2 Public Interface khác nhau (cần Server , hai hoặc nhiều External Interface available)
 
 **Kiến trúc mục tiêu:**
 
