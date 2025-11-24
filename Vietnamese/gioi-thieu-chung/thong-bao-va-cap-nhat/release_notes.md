@@ -1,11 +1,9 @@
-=## VKS - MULTI-AZ SUPPORT
+=## VSERVER - GPU INSTANCE SUPPORT
 
-VKS (VNG Kubernetes Service) tự hào ra mắt tính năng Multi-AZ Support, mang đến khả năng triển khai các cụm Kubernetes với độ sẵn sàng cao và khả năng chịu lỗi vượt trội. Với tính năng này, người dùng giờ đây có thể phân bổ các thành phần của cụm VKS trên nhiều Availability Zones (AZs) khác nhau trong cùng một khu vực, giảm thiểu rủi ro gián đoạn dịch vụ do sự cố cục bộ tại một AZ.
+VNG Cloud tự hào ra mắt tính năng hỗ trợ GPU Instance trên dịch vụ vServer, mang đến sức mạnh xử lý vượt trội cho các tác vụ AI/ML chuyên sâu. Với sự tích hợp các dòng GPU NVIDIA A100 và H100 hàng đầu thị trường, khách hàng giờ đây có thể triển khai các ứng dụng yêu cầu hiệu năng cao một cách dễ dàng và hiệu quả.
 
-Cụ thể, Multi-AZ Support cho phép bạn cấu hình các node group và các tài nguyên khác của cụm VKS để trải đều trên các AZ đã chọn. Trong trường hợp một AZ gặp sự cố, hệ thống sẽ tự động chuyển đổi sang các AZ còn lại, đảm bảo ứng dụng của bạn vẫn hoạt động liên tục mà không bị ảnh hưởng. Điều này giúp tăng cường đáng kể độ bền vững và khả năng phục hồi của hạ tầng Kubernetes, đáp ứng các yêu cầu khắt khe nhất về uptime cho các ứng dụng mission-critical.
+Tính năng này được thiết kế đặc biệt để đáp ứng nhu cầu khắt khe của các quy trình huấn luyện mô hình (training) và suy luận (inference) trong lĩnh vực trí tuệ nhân tạo và học máy. Các GPU mạnh mẽ giúp tăng tốc đáng kể thời gian xử lý dữ liệu lớn, phức tạp, từ đó rút ngắn chu kỳ phát triển và triển khai các giải pháp AI tiên tiến.
 
-Việc triển khai Multi-AZ trên VKS rất đơn giản, cho phép các nhà phát triển và quản trị viên hệ thống dễ dàng thiết kế kiến trúc có khả năng chịu lỗi cao ngay từ đầu. Hãy khám phá Multi-AZ Support để tối ưu hóa độ tin cậy và hiệu suất cho các ứng dụng container hóa của bạn trên VKS.
+Việc cung cấp GPU Instance trên vServer không chỉ tối ưu hóa hiệu suất mà còn giúp các nhà phát triển và nhà khoa học dữ liệu tập trung hơn vào việc sáng tạo và đổi mới, mà không cần lo lắng về hạ tầng phần cứng. Đây là bước tiến quan trọng, khẳng định cam kết của VNG Cloud trong việc hỗ trợ cộng đồng AI/ML tại Việt Nam.
 
-Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vks/multi-az)
-
----
+Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vserver/gpu-instances)
