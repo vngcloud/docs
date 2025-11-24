@@ -1,92 +1,175 @@
-={% tabs %}
+# 2025
+
+{% tabs %}
 {% tab title="Nâng cấp mới" %}
+**Tháng 11, 2025**
 
-**Tháng [MM], [YYYY]**
+#### **vDB – Redis version 7.2.11**
 
-#### **VKS – Auto-scaling Enhancement**
+Cập nhật Redis lên version 7.2.11 nhằm cải thiện hiệu năng và tính tương thích.
 
-VNG Cloud đã triển khai những cải tiến đáng kể cho cơ chế auto-scaling của VKS (VNG Kubernetes Service) cluster. Nâng cấp này giúp tối ưu hóa hiệu suất và khả năng phản hồi của hệ thống, đảm bảo tài nguyên được điều chỉnh linh hoạt theo nhu cầu thực tế của ứng dụng.
+#### **vLB – Access Log tại AZ 1B, 1C HCM**
 
-Cơ chế auto-scaling mới giờ đây có khả năng tự động điều chỉnh số lượng node trong cluster dựa trên các chỉ số quan trọng như CPU và Memory với độ chính xác vượt trội. Điều này không chỉ giúp tối ưu hóa chi phí bằng cách tránh lãng phí tài nguyên mà còn đảm bảo ứng dụng của bạn luôn có đủ khả năng xử lý tải. Đặc biệt, thời gian phản hồi cho các sự kiện scale đã được rút ngắn đáng kể, chỉ còn 30 giây, giúp hệ thống nhanh chóng thích ứng với biến động tải, duy trì trải nghiệm người dùng liền mạch.
+Bổ sung access log cho HCM, giúp theo dõi và phân tích lưu lượng chi tiết theo vùng.
 
-Để hỗ trợ người dùng theo dõi và quản lý hiệu quả hơn, tính năng auto-scaling này cũng được tích hợp sâu rộng với vMonitor, cho phép monitoring real-time các chỉ số hiệu suất và trạng thái của cluster. Sự kết hợp này mang lại cái nhìn toàn diện và khả năng kiểm soát mạnh mẽ hơn cho các kỹ sư vận hành.
 
-Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vks/autoscaling)
 
+**Tháng 9, 2025**
+
+#### **VKS (VNG Cloud Kubernetes Service) - Tự động xóa cluster không có node active sau 30 ngày (Cải tiến hệ thống):**&#x20;
+
+Hệ thống sẽ tự động quét và xóa các cluster không có node nào active trong vòng 30 ngày. Trong thời hạn quét và trước khi xóa, email cảnh báo sẽ được gửi đến Khách hàng để đảm bảo Khách hàng có thể chủ động xử lý nếu cần giữ lại cluster – đảm bảo an toàn và minh bạch trong quá trình quản lý.. Việc nâng cấp này giúp Quý Khách Hàng tiết kiệm chi phí vận hành và tránh lãng phí tài nguyên do các cluster không còn hoạt động.
+
+
+
+**Tháng 7, 2025**
+
+#### vStorage - FileStorage tích hợp thêm 1 region HAN
+
+* Dịch vụ File storage cải tiến với 2 region HCM và HAN. Cung cấp khả năng lưu trữ file theo cách thức phân tán, dễ dàng mở rộng, và có khả năng truy cập từ nhiều instance cùng lúc
+
+Tài liệu tham khảo [tại đây](../../vstorage/filestorage/bat-dau-voi-filestorage.md)
+
+
+
+**Tháng 6, 2025**
+
+#### **vDB – Multi-AZ cho Relational & MemoryStore**
+
+* vDB – Multi-AZ cho Relational & MemoryStore (06/2025)
+* Hỗ trợ triển khai Multi-AZ tại HCM.
+* Nâng cao độ bền và tính sẵn sàng của dịch vụ.
+
+
+
+**Tháng 1, 2025**
+
+#### **vDB – Hỗ trợ PostgreSQL version 14 & pgvector**
+
+* vDB – PostgreSQL 14 & pgvector (01/2025)
+* Bổ sung PostgreSQL 14 và extension pgvector cho các phiên bản 14, 15.
+* Tăng khả năng hỗ trợ ứng dụng AI/ML.
 {% endtab %}
 
 {% tab title="Tính năng mới" %}
+**Tháng 9, 2025**
 
-**Tháng 11, 2024**
+#### **VKS - HỖ TRỢ MULTI-AZ NODE GROUP**
 
-#### **vServer – Live Migration**
+Multi-AZ Node Group cho phép người dùng triển khai worker nodes – nơi chạy các ứng dụng và workloads – trên nhiều Availability Zone (AZ) khác nhau. Cách triển khai này giúp hệ thống Kubernetes đạt được tính sẵn sàng cao và khả năng chịu lỗi mạnh mẽ, phù hợp cho các ứng dụng quan trọng của doanh nghiệp.
 
-VNG Cloud tự hào giới thiệu tính năng Live Migration cho dịch vụ vServer, mang đến khả năng di chuyển linh hoạt các máy chủ ảo giữa các máy chủ vật lý mà không yêu cầu bất kỳ thời gian ngừng hoạt động (downtime) nào. Tính năng đột phá này đảm bảo các ứng dụng và dịch vụ của bạn luôn hoạt động liên tục, duy trì mức độ khả dụng cao nhất.
+#### **AI Gateway**
 
-Live Migration cho phép quản trị viên hệ thống thực hiện các hoạt động bảo trì, nâng cấp phần cứng hoặc cân bằng tải một cách dễ dàng và hiệu quả hơn bao giờ hết. Thay vì phải lên kế hoạch downtime kéo dài và ảnh hưởng đến hoạt động kinh doanh, giờ đây bạn có thể di chuyển vServer một cách liền mạch, đảm bảo trải nghiệm người dùng không bị gián đoạn. Điều này góp phần quan trọng vào việc duy trì cam kết uptime 99.9% cho hạ tầng của bạn.
+Bản cập nhật mới của AI Gateway mang đến hai tính năng quan trọng giúp Quý Khách Hàng vận hành hiệu quả hơn, giảm chi phí và quản lý tốt hơn việc gọi mô hình AI (LLM):
 
-Với Live Migration, VNG Cloud tiếp tục khẳng định cam kết mang đến những giải pháp điện toán đám mây mạnh mẽ, linh hoạt và đáng tin cậy, giúp doanh nghiệp tối ưu hóa hiệu suất và giảm thiểu rủi ro vận hành.
+* Caching (Exact/Semantic Caching): Hệ thống tự động lưu lại kết quả của các yêu cầu (prompt) trùng lặp hoặc có ngữ nghĩa tương đồng. Nhờ đó, Quý Khách Hàng có thể giảm đáng kể số lần gọi mô hình LLM, tối ưu chi phí sử dụng, đồng thời rút ngắn thời gian phản hồi cho người dùng cuối.
+* Rate Limit: Cho phép Quý Khách Hàng thiết lập giới hạn tần suất sử dụng mô hình AI, giúp kiểm soát hiệu quả lưu lượng truy cập và chi phí, đồng thời đảm bảo hiệu năng ổn định cho các ứng dụng đang khai thác AI Gateway.
 
-Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vserver/live-migration)
+_Như vậy, đến nay, AI Gateway đã hỗ trợ các tính năng bao gồm: Hỗ trợ đa mô hình AI (Multi-LLM Support); Giám sát toàn diện thông qua metrics và logs, giúp người dùng dễ dàng theo dõi/ phân tích và tối ưu hóa quá trình vận hành; một số tính năng đảm bảo an toàn cho các thông tin nhạy cảm của khách hàng như authentication token và API key; và mới nhất là tính năng Caching và Rate Limit._
 
-#### **vServer – Snapshot Scheduling**
+#### **vNetwork - tích hợp vDNS cho dịch vụ Endpoint**
 
-VNG Cloud vServer nay đã bổ sung tính năng Snapshot Scheduling, cho phép người dùng tự động hóa việc tạo bản chụp (snapshot) của máy chủ ảo theo một lịch trình định kỳ. Với các tùy chọn linh hoạt như hàng ngày, hàng tuần hoặc hàng tháng, bạn có thể đảm bảo dữ liệu luôn được sao lưu kịp thời và giảm thiểu rủi ro mất mát dữ liệu do sự cố không mong muốn.
+vDNS là dịch vụ DNS (Domain Name System), được thiết kế đặc biệt cho môi trường Private Cloud trên VNG Cloud, cung cấp khả năng quản lý và phân giải tên miền một cách an toàn, linh hoạt và hiệu quả trong mạng riêng ảo (VPC). vDNS được tích hợp chặt chẽ với các dịch vụ khác của VNG Cloud, tạo thành một hệ sinh thái hoàn chỉnh và mạnh mẽ cho hạ tầng trực tuyến của khách hàng. Trước đây, vDNS đã hỗ trợ tích hợp với các dịch vụ gồm vLB (Load Balancing) ,VKS. Với bản cập nhật lần này, việc tích hợp thêm dịch vụ Endpoint, sẽ giúp kết nối giữa VPC với các dịch vụ VNG Cloud gồm HCM-03 (vStorage, vMonitor, vServer, vCR, IAM) và HCM-04 (vStorage).
 
-Ngoài ra, tính năng này còn tích hợp khả năng cấu hình chính sách lưu giữ (retention policy) mạnh mẽ. Người dùng có thể thiết lập số lượng snapshot tối đa được giữ lại, giúp tự động xóa các bản chụp cũ và tối ưu hóa chi phí lưu trữ. Điều này mang lại sự kiểm soát hoàn toàn cho người dùng trong việc quản lý tài nguyên và tuân thủ các yêu cầu về sao lưu dữ liệu.
+#### **vStorage – Sử dụng tính năng Lifecycle**
 
-Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vserver/snapshot-schedule)
+* Tích hợp tính năng Lifecycle transition object trên region HCM04/HAN02 để phục vụ chuyển đổi các object giữa các tier trong cùng bucket nhằm mục đích tiết kiệm chi phí lưu trữ.
 
-#### **AI Stack – Rate Limiting**
+Tài liệu tham khảo [tại đây](../../vstorage/object-storage/object-storage-han02/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-lifecycle.md)
 
-VNG Cloud AI Gateway nay đã được bổ sung tính năng Rate Limiting mạnh mẽ, cho phép người dùng kiểm soát chặt chẽ lưu lượng truy cập và tối ưu hóa chi phí sử dụng các mô hình AI. Tính năng này giúp bạn đặt ra giới hạn về số lượng yêu cầu (requests) mà một API key hoặc một mô hình cụ thể có thể thực hiện trong các khoảng thời gian nhất định (mỗi giây, mỗi phút hoặc mỗi giờ).
 
-Với khả năng cấu hình linh hoạt, bạn có thể dễ dàng thiết lập các chính sách rate limiting phù hợp với nhu cầu riêng của từng ứng dụng và người dùng. Điều này không chỉ giúp ngăn chặn việc lạm dụng tài nguyên, bảo vệ hệ thống khỏi các cuộc tấn công DDoS tiềm tàng mà còn đảm bảo phân bổ tài nguyên công bằng, mang lại sự ổn định và hiệu quả cao cho các dịch vụ AI của bạn.
 
-Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/ai-gateway/rate-limit)
+**Tháng 8, 2025**
 
-**Tháng [MM], [YYYY]**
+#### **VKS - Hỗ trợ Placement Group cho từng Node Group**
 
-#### **vDB-Kafka – Multi-tenancy Support**
+Việc hỗ trợ này cho phép kiểm soát vị trí triển khai node một cách hiệu quả hơn nhằm tối ưu hiệu năng và đảm bảo độ sẵn sàng cao, đặc biệt hữu ích cho các workload yêu cầu phân tán vật lý (anti-affinity) hoặc đồng vị trí (affinity) để giảm độ trễ và tăng tốc độ phản hồi hệ thống.
 
-VNG Cloud tự hào giới thiệu tính năng Multi-tenancy cho vDB-Kafka, mang đến khả năng cách ly tài nguyên hiệu quả và quản lý linh hoạt hơn cho các môi trường phức tạp. Với sự hỗ trợ multi-tenancy, mỗi khách hàng hoặc dự án (tenant) sẽ được cấp phát một không gian riêng biệt (namespace isolation), đảm bảo hoạt động độc lập và không ảnh hưởng lẫn nhau.
+**vNetwork -  Hỗ trợ Multi-AZ zone cho các dịch vụ Endpoint, NAT, VPN**&#x20;
 
-Tính năng này cho phép gán quota tài nguyên cụ thể cho từng tenant, từ đó tối ưu hóa việc sử dụng tài nguyên và ngăn chặn việc tiêu thụ quá mức bởi một tenant duy nhất. Bên cạnh đó, cơ chế cách ly nâng cao cũng tăng cường bảo mật dữ liệu, đảm bảo rằng dữ liệu và cấu hình của từng tenant được giữ riêng tư và an toàn. Các quản trị viên hệ thống có thể dễ dàng quản lý tập trung toàn bộ các tenant thông qua VNG Cloud Portal, đơn giản hóa các tác vụ cấu hình và giám sát.
+Tính năng hỗ trợ Multi-AZ này giúp Quý Khách Hàng chủ động hơn trong việc thiết kế hệ thống HA, giúp hệ thống duy trì hoạt động ổn định ngay cả khi một AZ gặp sự cố.
 
-Việc triển khai Multi-tenancy trên vDB-Kafka đặc biệt hữu ích cho các nhà cung cấp dịch vụ, doanh nghiệp lớn với nhiều phòng ban hoặc các môi trường phát triển/kiểm thử cần sự phân tách rõ ràng. Tính năng này không chỉ giúp cải thiện hiệu suất và độ tin cậy mà còn tối ưu hóa chi phí vận hành bằng cách chia sẻ hạ tầng một cách thông minh và an toàn.
 
-Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vdb/kafka-multitenancy)
 
-#### **VKS – Multi-AZ Support**
+**Tháng 7, 2025**
 
-VNG Cloud Kubernetes Service (VKS) giờ đây đã được nâng cấp với khả năng hỗ trợ triển khai cluster trên nhiều Availability Zones (AZs). Tính năng này là một bước tiến quan trọng nhằm tăng cường đáng kể khả năng chịu lỗi và đảm bảo tính sẵn sàng cao (high availability) cho các ứng dụng của bạn.
+#### **vStorage – Object storage (HCM04)**
 
-Với Multi-AZ Support, người dùng có thể dễ dàng cấu hình các node groups của mình để phân bổ đều trên các AZ khác nhau trong cùng một region. Điều này đồng nghĩa với việc, nếu một AZ gặp sự cố không mong muốn, các workload của bạn sẽ tự động được chuyển đổi dự phòng (failover) sang các AZ còn lại mà không làm gián đoạn hoạt động của ứng dụng.
+* Tích hợp nhiều tier trên region HCM04 tương ứng với các cấp độ lưu trữ và chi phí phù hợp với nhiều nhu cầu lưu trữ khác nhau của khách hàng.
+* Gói công khai: Instant Archive, Gold.
 
-Tính năng này đặc biệt hữu ích cho các ứng dụng yêu cầu SLA cao, giúp giảm thiểu rủi ro downtime và đảm bảo hoạt động liên tục, mang lại sự yên tâm cho các nhà phát triển và quản trị hệ thống khi vận hành các ứng dụng quan trọng trên VKS.
+Tài liệu tham khảo [tại đây](../../vstorage/object-storage/object-storage-han02/bat-dau-voi-object-storage/buoc-1-khoi-tao-project.md)
 
-Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vks/multi-az)
+#### **vLB – ALB hỗ trợ CORS Header, ALPN, SSL Policy**
 
-**Tháng MM, YYYY**
+* vLB/ALB – CORS Response Header, ALPN, SSL Policy (07/2025)
+* Cập nhật ALB hỗ trợ CORS response header và tùy chỉnh ALPN, SSL Policy giúp tăng cường bảo mật và tương thích tốt hơn.
 
-#### **vServer – GPU Instance Support**
 
-VNG Cloud vServer giờ đây đã hỗ trợ các instance với Bộ xử lý đồ họa (GPU) NVIDIA A100 và H100 mạnh mẽ. Tính năng mới này được thiết kế đặc biệt để đáp ứng nhu cầu tính toán hiệu năng cao cho các tác vụ trí tuệ nhân tạo (AI) và học máy (ML) chuyên sâu, từ huấn luyện mô hình phức tạp đến suy luận tốc độ cao.
 
-Với việc tích hợp các GPU hàng đầu thị trường, khách hàng có thể tận dụng sức mạnh xử lý song song vượt trội để tăng tốc đáng kể thời gian phát triển và triển khai các ứng dụng AI/ML. Các instance GPU này cung cấp tài nguyên điện toán cần thiết cho các dự án đòi hỏi nhiều dữ liệu, giúp tối ưu hóa hiệu suất và hiệu quả chi phí cho các nhà khoa học dữ liệu, kỹ sư ML và các nhà phát triển.
+**Tháng 6, 2025**
 
-Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vserver/gpu-instances)
+#### **vDB-Kafka - Hỗ trợ metric/logs**
 
+Tính năng hỗ trợ Metric/Logs mới giúp Quý Khách Hàng có thể theo dõi toàn bộ trạng thái hoạt động của cụm Kafka trực tiếp ngay trên trang quản lý. Việc tích hợp này sẽ giúp Khách hàng đơn giản hóa việc giám sát, nâng cao khả năng chủ động trong quản trị hệ thống, và giảm thiểu rủi ro downtime cho các ứng dụng sử dụng Kafka.
+
+
+
+**Tháng 4, 2025**
+
+#### **vStorage – Object storage (HAN02)**
+
+* Tích hợp region mới HAN02 trên portal vStorage cung cấp khả năng lưu trữ mạnh mẽ và linh hoạt hơn nhằm thay thế region HAN01 hiện có.
+* Chuyển đổi tất cả các khách hàng trên region HAN01 sang HAN02 và đóng region HAN01.
+
+Tài liệu tham khảo [tại đây](../../vstorage/object-storage/object-storage-han02/)
+
+
+
+**Tháng 3, 2025**
+
+#### **vLB – Ra mắt vLB Autoscale region HAN**
+
+* vLB – Autoscale tại Region HAN (03/2025)
+* Kích hoạt tính năng Autoscale tại khu vực Hà Nội, tự động mở rộng năng lực xử lý theo tải thực tế.
 {% endtab %}
 
 {% tab title="Sản phẩm/Dịch vụ mới" %}
 
-{% endtab %}
 
+**Tháng 5, 2025**
+
+**AI STACK**
+
+VNGCloud cung cấp một nền tảng AI toàn diện giúp doanh nghiệp triển khai, tích hợp và vận hành các ứng dụng Generative AI một cách dễ dàng, bảo mật và hiệu quả. AI Stack của VNGCloud được thiết kế theo hướng modular, linh hoạt và tối ưu cho cả đội ngũ kỹ thuật và nhà quản lý.
+
+Hệ sinh thái các dịch vụ chính của AI stack bao gồm:
+
+* **VKS (VNGCloud Kubernetes Service):** là dịch vụ Kubernetes được quản lý toàn diện.Tích hợp GPU, khả năng autoscaling, giám sát tài nguyên và bảo mật. Giúp tối ưu cho AI workloads cần GPU, nhưng cũng phù hợp để triển khai ứng dụng web, microservices và backend quy mô lớn. Qua đó, giúp doanh nghiệp nhanh chóng triển khai ứng dụng mà không cần tự xây dựng và duy trì hạ tầng. Tài liệu tham khảo [tại đây](../../vks/)
+* vDB **OpenSearch:** Vector Database dưới dạng dịch vụ, giúp Hỗ trợ PostgreSQL(**pgvector)** và **OpenSearch** làm vector database.Hỗ trợ triển khai mô hình **RAG (Retrieval-Augmented Generation)** nhanh chóng.Giúp mô hình GenAI hiểu và khai thác dữ liệu doanh nghiệp theo ngữ cảnh. Tài liệu tham khảo [tại đây](../../vdb/opensearch-cluster-database-ods/)
+* **AI Platform:** Cung cấp môi trường để **thử nghiệm (notebook )**, **fine-tune** và **inference** các mô hình AI ngay trên nền tảng GPU của VNGCloud. Tài liệu tham khảo [tại đây](../../ai-stack/ai-platform/)
+* **AI Gateway:** là Cổng truy cập quản trị tập trung duy nhất cho nhiều mô hình AI, hỗ trợ routing thông minh và caching để tối ưu hiệu năng và chi phí. Giúp theo dõi truy cập, sinh audit logs, giám sát hành vi sử dụng qua metrics và alerts. Tài liệu tham khảo [tại đây](../../ai-stack/ai-gateway/)
+* **Model-as-a-Service:** Hỗ trợ truy cập hơn đa dạng **mô hình GenAI** hàng đầu như GPT, Claude, Gemini, DeepSeek... chỉ với 1 API thống nhất. Tài liệu tham khảo [tại đây](../../ai-stack/ai-platform/model-as-a-service/)
+
+
+
+**Tháng 4, 2025**
+
+**OPENSEARCH DATABASE**
+
+vDB **OpenSearch** là **Vector Database**, tức là sử dụng dịch vụ này để **tìm kiếm gần đúng (k - Nearest Neighbor - kNN)** trên các vector embedding bằng cách tích hợp sẵn kNN plugin trên OpenSearch Cluster của bạn. Đây là một cách phổ biến để xây dựng hệ thống tìm kiếm vector cho **AI/ML, NLP, Recommendation Systems, hay Semantic Search**.
+
+Tài liệu tham khảo [tại đây](../../vdb/opensearch-cluster-database-ods/)
+{% endtab %}
 {% endtabs %}
 
----
 
-�'���ˊ���
-ڶ*'Tт���� �+a��g�y�.+�2(+jب��hu�o�'����jx'��؜�짖)ᆋ\rl���"i�&��o�Y��x2�˛�Ka���x'�-�h�{b���Nxg�i�|�n��g��\��nyn�-�	b���+k��!vxj�ᴸ�xȠ��b�w!��i��������g��\�)�r-�趹��i�w'�rv�ئ��!u�����gm� �S������Hhrh�{b��(v+���-�	"�hjx`�&�r�]��n�{�z�ޮk\rb�g!��-�)��)��'g�Hg��"���|���g�槶�ྋ�q۲���Kn�ئ{�}r!�xi�Ո��xȠ��b�uM)h��b��$�x'�Ʀ�ٚ�	�x �*a�)��y��i�X��-�x-�w2�*]���b�خ��b�˭�����*�xg�8���aji!�ز��i��ݡ�/�%��o���z�ޯ�b�力
-ڶ*'
+
+
+
+
+
+
+
+
+
