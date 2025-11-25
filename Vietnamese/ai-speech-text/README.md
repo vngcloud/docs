@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # AI Speech Text
 
 ## Before getting started
