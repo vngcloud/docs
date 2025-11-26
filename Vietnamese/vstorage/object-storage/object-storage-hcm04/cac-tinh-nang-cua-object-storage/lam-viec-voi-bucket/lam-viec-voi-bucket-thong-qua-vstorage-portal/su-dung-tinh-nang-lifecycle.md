@@ -66,11 +66,11 @@ Expiration rule là tập quy định tự động xóa object khi đến thời
 
 3\. Chọn biểu tượng **Action** và chọn **Configure Lifecycle.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (1099).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/q0iF8JG2VmZJOAQcKtdg" alt=""><figcaption></figcaption></figure>
 
 4\. Màn hình **Lifecycle** được hiển thị. Chọn **Create a lifecycle rule**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (1100).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/jwEyhNI3Dn7ORn9go5sj" alt=""><figcaption></figcaption></figure>
 
 5\. Nhập **Rule name**. Rule name mà chúng tôi cho phép bạn nhập bao gồm các chữ cái (a-z, A-Z, 0-9, '\_', '-', space). Độ dài **Rule name** của bạn phải nằm trong khoảng từ 5 đến 50.
 

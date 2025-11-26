@@ -58,7 +58,7 @@ Lúc này, hệ thống **vServer** sẽ khởi tạo một Server tương ứng
 
 **Bước 6:** Nhập **server name**. Server name này bạn có thể lấy từ portal VNGCloud. Ví dụ bên dưới tôi dùng server Demo\_Sigma đã tạo trước đó.
 
-<figure><img src="../../../.gitbook/assets/image (9) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/RUfRM3wyVgeBcJuOq7uU" alt=""><figcaption></figcaption></figure>
 
 **Bước 7**: Bạn có thể điều chỉnh bật/ tắt các configuration bao gồm:
 

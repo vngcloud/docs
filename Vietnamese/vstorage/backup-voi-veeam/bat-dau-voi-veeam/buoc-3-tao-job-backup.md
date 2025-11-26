@@ -45,7 +45,7 @@ Sau khi đã <mark style="color:blue;">Khởi tạo Repository,</mark> bạn s�
 
 **Bước 5**: Tại tab **Backup Mode**, người dùng chọn mode "**File level backup (slower)**" để backup chỉ những file hay folder được chọn, còn nếu back up toàn bộ computer thì chọn mode "Entire computer". Sau đó nhấn **Next**.
 
-<figure><img src="../../../.gitbook/assets/image (364).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="/broken/files/nHhuF5DBYekPGeOVUH8Q" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 6**: Nếu chọn mode "File level backup (slower)" ở bước 5 thì tab **Object** hiện ra để chọn đối tượng cần backup, người dùng chọn tùy chọn "**The following file system objects:**", sau đó ấn "Add" điền đường dẫn folder muốn backup, sau đó nhấn "OK" và cuối cùng nhấn **Next**.
 
@@ -61,7 +61,7 @@ Sau khi đã <mark style="color:blue;">Khởi tạo Repository,</mark> bạn s�
 
 Sau đó nhấn **Next**.
 
-<figure><img src="../../../.gitbook/assets/image (368).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="/broken/files/oCNuMyRJLFvqc0SPkwGA" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 9**: Tại tab **Schedule**, người dùng có thể cài đặt lịch tự động chạy job tự động, nếu chạy bằng tay thì nhấn **Next**.
 

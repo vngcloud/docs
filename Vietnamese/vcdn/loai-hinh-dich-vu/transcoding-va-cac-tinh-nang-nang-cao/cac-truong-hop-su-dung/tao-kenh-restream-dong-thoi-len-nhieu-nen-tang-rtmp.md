@@ -14,7 +14,7 @@
 
 **Bước 2:** Bạn chọn xổ menu **Product** xuống và chọn mục **Media Live.** Tiếp tục bạn chọn tab **Channel -> Transcode channels**
 
-<figure><img src="../../../../.gitbook/assets/transcode1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/ws6kRmyIrUhEU8msasfN" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -186,7 +186,7 @@ Quản lý quyền truy cập cho các bucket và đối tượng.
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=eb53bff6d55ade68e688ea5af5b44ff9da9afb7b361e5e60563f6d0f3e4c763b'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (724).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/OAM04EmCxAiOJROOkCxh" alt=""><figcaption></figcaption></figure>
 
 * **PUT Bucket Make Public:** Thiết lập Bucket Public
   * Đường dẫn: `GET /<bucket-name>/?publicAccessBlock`

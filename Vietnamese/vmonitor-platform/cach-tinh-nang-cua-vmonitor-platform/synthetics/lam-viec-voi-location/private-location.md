@@ -14,7 +14,7 @@ Private Locations cho phép bạn theo dõi các ứng dụng/dịch vụ nằm 
 
 6. Hệ thống sẽ sinh ra câu lệnh để bạn cài đặt Synthetic Worker trên Private Location, bạn chỉ cần sao chép câu lệnh và cài đặt
 
-<figure><img src="../../../../.gitbook/assets/image (926).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/mJIQipM20Z5x9SUFzbZi" alt=""><figcaption></figcaption></figure>
 
 7\. Cài đặt Synthetic Worker với câu lệnh trên
 

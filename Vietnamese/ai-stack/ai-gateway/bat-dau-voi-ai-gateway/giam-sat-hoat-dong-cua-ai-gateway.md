@@ -42,4 +42,4 @@ Ngoài ra, bạn có thể xem chi tiết một request bằng cách:
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/Eob3OVxNsIOyzglVkyUx" alt=""><figcaption></figcaption></figure>

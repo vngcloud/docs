@@ -79,7 +79,7 @@ Sau khi bạn sao chép thành công:
 2. Chọn thư mục **Log.**
 3. Chọn **Log pipeline.**
 4. Trong danh sách log pipeline đang có, chọn **Log pipeline** chứa **Processor group** mà bạn muốn chỉnh sửa.
-5. Tại **Processor group** mà bạn muốn chỉnh sửa, chọn <img src="../../../../.gitbook/assets/image (319).png" alt="" data-size="line">
+5. Tại **Processor group** mà bạn muốn chỉnh sửa, chọn <img src="/broken/files/Q2XDBzQwEVWrkqKpbv1M" alt="" data-size="line">
 6. Chọn **Edit group**.
 7. Chỉnh sửa các thông số cho **Processor group** mà bạn mong muốn. Bạn có thể chỉnh sửa tất cả các trường thông tin trong cấu hình một processor group. Việc chỉnh sửa này tương tự như khi bạn thực hiện tạo mới một Processor group theo hướng dẫn bên trên.
 8. Chọn **Save.**
@@ -94,7 +94,7 @@ Khi bạn không có nhu cầu sử dụng một Processor group tùy chỉnh n�
 2. Chọn thư mục **Log.**
 3. Chọn **Log pipeline** chứa processor group mà bạn muốn thực hiện xóa.
 4. Chọn **Processor group.**
-5. Tại **Processor group** mà bạn muốn xóa, chọn <img src="../../../../.gitbook/assets/image (318).png" alt="" data-size="line">
+5. Tại **Processor group** mà bạn muốn xóa, chọn <img src="/broken/files/AmhBcW5oF8tmzvglO4Kl" alt="" data-size="line">
 6. Chọn **Delete**.
 7. Tại màn hình xác nhận xóa Processor group, chọn **Delete**.
 

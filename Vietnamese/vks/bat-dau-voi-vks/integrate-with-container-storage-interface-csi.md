@@ -122,7 +122,7 @@ vngcloud-csi-node-c8r2w                        3/3     Running   0              
 
 Storage Class (hay còn được gọi tắt là SC) là **một mẫu** để tạo ổ đĩa (PersistentVolume) tự động theo nhu cầu. Trên VNGCloud, SC định nghĩa loại ổ đĩa, tốc độ, ... (ví dụ: SSD, HDD, IOPS 50000,...).
 
-* Tạo file **storage-class.yaml** với nội dung sau:&#x20;
+* Tạo file **storage-class.yaml** với nội dung sau:
 
 ```yaml
 apiVersion: storage.k8s.io/v1
@@ -253,7 +253,7 @@ kubectl apply -f podnginx-pvc.yaml
 
 Lúc này, hệ thống vServer sẽ tự động tạo một Volume tương ứng với file yaml bên trên, volume này sẽ được attach vào node chứa pod dùng PVC đang chạy, ví dụ:
 
-<figure><img src="../../.gitbook/assets/vks_volume_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/HS26dpSJAlOZ1ieER4Ml" alt=""><figcaption></figcaption></figure>
 
 ***
 

@@ -17,7 +17,7 @@ description: >-
    * Trong phần System prompt, hãy định nghĩa các hướng dẫn hoặc ngữ cảnh cho mô hình. Bạn cũng có thể thêm các ví dụ để định hướng hành vi của nó.
 4.  [Tinh chỉnh các tham số:](playground.md#huong-dan-tinh-chinh-thamso-mo-hinh)
 
-    <figure><img src="../../../.gitbook/assets/image (1123).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="/broken/files/nenCdlcVcXXtvDGkUDAG" alt=""><figcaption></figcaption></figure>
 5. Bắt đầu thử nghiệm:
 
 * Nhập câu lệnh của bạn và quan sát cách các mô hình khác nhau phản hồi.

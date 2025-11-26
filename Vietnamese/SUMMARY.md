@@ -809,8 +809,6 @@
     * [Bảo mật](ai-stack/ai-gateway/bao-mat.md)
     * [Cách tính giá](ai-stack/ai-gateway/cach-tinh-gia.md)
   * [GenAI Studio](ai-stack/genai-studio.md)
-* [AI Speech Text](ai-speech-text/README.md)
-  * [Cách sử dụng AI Speech Text qua API](ai-speech-text/cach-su-dung-ai-speech-text-qua-api.md)
 * [vDB](vdb/README.md)
   * [Relational Database Service (RDS)](vdb/relational-database-service-rds/README.md)
     * [Khởi tạo RDS Instance](vdb/relational-database-service-rds/khoi-tao-rds-instance.md)

@@ -41,7 +41,7 @@ Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông t
 7. Chọn **Copy** để sao chép mật khẩu. Bạn bắt buộc phải thu thập được thông tin này để có thể truy cập vào File Storage sử dụng IAM User Account.
 8. Chọn **Create User Account.**
 
-<figure><img src="../../../.gitbook/assets/image (6) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/eFeUVz5RRTdI8lAPdF4I" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -68,7 +68,7 @@ Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông t
    3. Bạn cũng có thể chọn **Any** để cho phép truy cập tới mọi file storage trong tài khoản SSO account của bạn.
    4. Chọn **Request conditions:** nhập điều kiện đặc biệt cho policy nếu có.
 
-Sau khi bạn thực hiện 8 bước bên trên, policy cho file storage đã được khởi tạo. Tiếp theo, bạn hãy gán nó vào IAM User Account.&#x20;
+Sau khi bạn thực hiện 8 bước bên trên, policy cho file storage đã được khởi tạo. Tiếp theo, bạn hãy gán nó vào IAM User Account.
 
 <figure><img src="../../../.gitbook/assets/image (7) (4).png" alt=""><figcaption></figcaption></figure>
 
@@ -89,18 +89,18 @@ Sau khi bạn đã khởi tạo IAM User Account và Policy mong muốn, tiếp 
 
 Thực hiện theo các bước bên dưới để đăng nhập vào File Storage với tài khoản người dùng Root:
 
-1. Truy cập vào trang đăng nhập của dịch vụ File storage: [https://signin.vngcloud.vn.](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=f09ybYi-GTZYYwuHVRv2f1UPRhjM\_wI-0J\_aXpbUsv4\&codeChallengeMethod=S256\&appState=55eab53a-30f3-43ae-837b-bf3a469dd9db\&redirectUri=https%3A%2F%2Fdashboard.console.vngcloud.vn%2F)
+1. Truy cập vào trang đăng nhập của dịch vụ File storage: [https://signin.vngcloud.vn.](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=f09ybYi-GTZYYwuHVRv2f1UPRhjM_wI-0J_aXpbUsv4\&codeChallengeMethod=S256\&appState=55eab53a-30f3-43ae-837b-bf3a469dd9db\&redirectUri=https%3A%2F%2Fdashboard.console.vngcloud.vn%2F)
 2. Trang đăng nhập chính sẽ xuất hiện. Chọn **ĐĂNG NHẬP VỚI ROOT USER**.
 3. Nhập địa chỉ **email** và **mật khẩu** được liên kết với tài khoản của bạn và chọn **Đăng nhập**. Nếu trước đó bạn đã đăng nhập với tư cách người dùng root trong trình duyệt này, thì trình duyệt của bạn có thể nhớ địa chỉ email cho tài khoản Root User Account. Nếu vậy, bạn sẽ thấy màn hình hiển thị trong bước tiếp theo. Nếu trước đây bạn đã đăng nhập với tư cách là người dùng IAM sử dụng tài khoản người dùng IAM (IAM User Account) bằng trình duyệt này, thì trình duyệt của bạn có thể hiển thị trang đăng nhập của người dùng IAM thay thế. Để quay lại trang đăng nhập chính, hãy chọn **ĐĂNG NHẬP VỚI ROOT USER.**
-4. Sau khi đăng nhập thành công, bạn có toàn quyền truy cập và thực hiện các tính năng được cung cấp bởi dịch vụ File storage trên các tài nguyên của bạn.&#x20;
+4. Sau khi đăng nhập thành công, bạn có toàn quyền truy cập và thực hiện các tính năng được cung cấp bởi dịch vụ File storage trên các tài nguyên của bạn.
 
 ### Truy cập tài nguyên sử dụng IAM user account
 
 Thực hiện theo các bước bên dưới để đăng nhập vào File storage với tài khoản người dùng IAM:
 
-1. Truy cập vào trang đăng nhập của dịch vụ File storage: [https://signin.vngcloud.vn.](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=f09ybYi-GTZYYwuHVRv2f1UPRhjM\_wI-0J\_aXpbUsv4\&codeChallengeMethod=S256\&appState=55eab53a-30f3-43ae-837b-bf3a469dd9db\&redirectUri=https%3A%2F%2Fdashboard.console.vngcloud.vn%2F)
+1. Truy cập vào trang đăng nhập của dịch vụ File storage: [https://signin.vngcloud.vn.](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=f09ybYi-GTZYYwuHVRv2f1UPRhjM_wI-0J_aXpbUsv4\&codeChallengeMethod=S256\&appState=55eab53a-30f3-43ae-837b-bf3a469dd9db\&redirectUri=https%3A%2F%2Fdashboard.console.vngcloud.vn%2F)
 2. Trang đăng nhập chính sẽ xuất hiện. Chọn **ĐĂNG NHẬP VỚI IAM USER ACCOUNT**.
 3. Nhập địa chỉ **email** của người dùng Root khi đăng ký tài khoản VNG Cloud.
 4. Nhập **tên người dùng** và **mật khẩu** của tài khoản IAM user account được tạo trên hệ thống vIAM.
 5. Chọn **ĐĂNG NHẬP VỚI IAM USER ACCOUNT**. Nếu trước đó bạn đã đăng nhập với tư cách người dùng IAM user account trong trình duyệt này, thì trình duyệt của bạn có thể nhớ địa chỉ tài khoản IAM user account. Nếu vậy, bạn sẽ thấy màn hình hiển thị ở bước 3. Sau khi đăng nhập thành công với IAM user account, trên màn hình chính của File storage sẽ thể hiện loại user mà bạn đang sử dụng để đăng nhập (Root user account hay IAM user account).
-6. Sau khi đăng nhập thành công, bạn có quyền truy cập và thực hiện các tính năng được cung cấp bởi dịch vụ File storage trên các tài nguyên được cấp quyền cho bạn.&#x20;
+6. Sau khi đăng nhập thành công, bạn có quyền truy cập và thực hiện các tính năng được cung cấp bởi dịch vụ File storage trên các tài nguyên được cấp quyền cho bạn.

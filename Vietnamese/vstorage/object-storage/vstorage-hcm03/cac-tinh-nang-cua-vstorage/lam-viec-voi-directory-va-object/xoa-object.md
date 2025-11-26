@@ -14,7 +14,7 @@ Sau khi chọn Xóa, hệ thống sẽ tự động chuyển ra màn hình chín
 
 **Lưu ý:** một khi object đã bị xóa khỏi hệ thống vStorage, bạn không thể phục hồi object đó.
 
-<figure><img src="../../../../../.gitbook/assets/Xoa_object_container (1).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/aGfn6AjENm3Fyu00tnCz" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Sử dụng vStorage API" %}

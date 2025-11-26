@@ -1,4 +1,4 @@
-# Expose một service thông qua vLB Layer7
+# Expose một service thông qua vLB Layer7 (ALB)
 
 ### Điều kiện cần <a href="#exposemotservicethongquavlblayer7-dieukiencan" id="exposemotservicethongquavlblayer7-dieukiencan"></a>
 
@@ -89,15 +89,11 @@ Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, n�
       --set mysecret.global.clientID= __________________ \
       --set mysecret.global.clientSecret= __________________
     ```
-
-
 *   Sau khi việc cài đặt hoàn tất, thực hiện kiểm tra trạng thái của pod đã tạo:
 
     ```bash
     kubectl -n kube-system get pod -l app.kubernetes.io/name=vngcloud-load-balancer-controller
     ```
-
-
 *   Ví dụ như ảnh bên dưới là bạn đã cài đặt thành công vngcloud-controller-manager:
 
     ```bash
@@ -220,7 +216,7 @@ kubectl apply -f nginx-ingress.yaml
 
 Lúc này, hệ thống vLB sẽ tự động tạo một LB tương ứng với Ingress resource bên trên, ví dụ:
 
-<figure><img src="../../.gitbook/assets/vks_portal_l7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/VmPeEh5ibZuW5sR39hfg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Chú ý:
@@ -272,9 +268,7 @@ Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao 
 
 Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.129/](http://180.93.181.129/)
 
-<figure><img src="../../.gitbook/assets/vks_nginx_l7.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="/broken/files/6uVi1VQ9LkTiSOt4WBF8" alt=""><figcaption></figcaption></figure>
 
 Bạn có thể xem thêm về ALB tại [Working with Application Load Balancer (ALB](../network/lam-viec-voi-application-load-balancer-alb/)).
 

@@ -34,40 +34,40 @@ Các loại biểu đồ/ báo cáo chúng tôi cung cấp cho bạn bao gồm:&
 
 * **Traffic Consuming:**
 
-<figure><img src="../.gitbook/assets/image (846) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/JYbI4S8sAxxmanniZYtx" alt=""><figcaption></figcaption></figure>
 
 * **Origin Request/s**:&#x20;
 
-<figure><img src="../.gitbook/assets/image (847) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/Rgp43eJMWJgFbb9Ha1jk" alt=""><figcaption></figcaption></figure>
 
 * **Origin Traffic Consuming/s (GB/s)**:
 
-<figure><img src="../.gitbook/assets/image (848).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/9G0pWfWrdneWm3iQ8ToL" alt=""><figcaption></figcaption></figure>
 
 * **Unique IPs:**&#x20;
 
-<figure><img src="../.gitbook/assets/image (849).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/CTw5LZhC4V263LX2lWKo" alt=""><figcaption></figcaption></figure>
 
 * **Origin Speed/s:**&#x20;
 
-<figure><img src="../.gitbook/assets/image (850).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/jMT0doGN2M3r1UMei08L" alt=""><figcaption></figcaption></figure>
 
 * **Average User Speed:**&#x20;
 
-<figure><img src="../.gitbook/assets/image (851).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/8SGjoOX1z6T8WQdT1inh" alt=""><figcaption></figcaption></figure>
 
 * **Hit Cache Ratio:**&#x20;
 
-<figure><img src="../.gitbook/assets/image (852).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/CT5Ux7gs0UlYrsH0yIXk" alt=""><figcaption></figcaption></figure>
 
 * **Request Content Type:**&#x20;
 
-<figure><img src="../.gitbook/assets/image (853).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/ETyfbp7NgIznhZsNd3Tv" alt=""><figcaption></figcaption></figure>
 
 * **CDN HTTP Codes, Origin HTTP Codes:**&#x20;
 
-<figure><img src="../.gitbook/assets/image (854).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/CVjAtEH7Liz1DuLjVBQ5" alt=""><figcaption></figcaption></figure>
 
 * **Quản lý và theo dõi tín hiệu được đẩy đến hệ thống Live Entry point:**
 
-<figure><img src="../.gitbook/assets/image (855).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/qIjyp8vyocnAA5hQKvzB" alt=""><figcaption></figcaption></figure>

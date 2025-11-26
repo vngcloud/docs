@@ -11,7 +11,7 @@ Bên dưới là các tính năng cơ bản khi bạn làm việc với object
 3. Chọn **Choose files to upload** hoặc kéo tệp tin từ thiết bị cá nhân của bạn muốn tải lên vào vùng này.
 4. Sau khi kéo hoặc chọn một hay nhiều tệp tin vào vùng này. Chọn **Upload**.
 
-<figure><img src="../../../../../.gitbook/assets/uploadobject (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/TYXxnyTD2zu9pIMv2hIS" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**
@@ -39,7 +39,7 @@ Bên dưới là các tính năng cơ bản khi bạn làm việc với object
 2. Tại ô **Find objects by prefix**, bạn có thể thực hiện tìm kiếm object/ folder thông qua prefix bằng cách nhập chuỗi ký tự là tiền tố bạn muốn tìm kiếm.&#x20;
 3. Nhấn **Enter** hoặc chọn biểu tượng **Tìm kiếm**
 
-<figure><img src="../../../../../.gitbook/assets/timkiemobject.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/I6uPJAzfkTAZMRGStsaG" alt=""><figcaption></figcaption></figure>
 
 ## Di chuyển object
 
@@ -74,7 +74,7 @@ Bạn có thể sao chép object qua các bucket trong một project. Hiện t�
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list). Chọn **project** và **bucket** chứa object mà bạn muốn đổi tên.
 2. Chon biểu tượng **Action** và chọn **Rename.**
 
-<figure><img src="../../../../../.gitbook/assets/renameobject.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/c6Y5xfJxWg7jSk3vxz9P" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -92,7 +92,7 @@ Khi thực hiện thay đổi tên của object, bạn không nên thay đổi p
 4. Nhập **Expiration time** bạn muốn chia sẻ object: thời gian đường dẫn truy cập tới object có hiệu lực. Bạn có thể giới hạn số **ngày**, **giờ**, **phút** mà đường dẫn truy cập tới object tồn tại.
 5. Chọn **Generate**
 
-<figure><img src="../../../../../.gitbook/assets/shareobject.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/D0XjA49fqgZY0bMeM30e" alt=""><figcaption></figcaption></figure>
 
 ## Thiết lập metadata object
 
@@ -101,7 +101,7 @@ Khi thực hiện thay đổi tên của object, bạn không nên thay đổi p
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list). Chọn **project** và **bucket** chứa object mà bạn muốn thiết lập metadata.
 2. Chon biểu tượng **Action** và chọn **Metadata.**
 
-<figure><img src="../../../../../.gitbook/assets/metadataobject.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/MkCiD0PD8rRfcB6kqu3D" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -127,7 +127,7 @@ Hiện tại chúng tôi đang hỗ trợ 8 loại key metadata mặc định ba
 
 3. Chọn biểu tượng **Action** sau đó chọn **Delete**
 
-<figure><img src="../../../../../.gitbook/assets/deteteobject.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/ViwbpxbHRE4RMitAHi02" alt=""><figcaption></figcaption></figure>
 
 Sau khi chọn Xóa, hệ thống sẽ tự động chuyển ra màn hình chính, nếu bạn thấy object vừa thực hiện biến mất khỏi danh sách thì bạn đã xoá thành công. Object lúc này đã được xóa vĩnh viễn khỏi hệ thống. Một khi object đã bị xóa khỏi hệ thống vStorage, bạn không thể phục hồi object đó.
 
@@ -143,7 +143,7 @@ Sau khi chọn Xóa, hệ thống sẽ tự động chuyển ra màn hình chín
 
 4\. Nhập **Directory name**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho directory của bạn.
 
-<figure><img src="../../../../../.gitbook/assets/createfolder.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/xrByfLXbWv3ZInquI3BE" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -161,5 +161,5 @@ Sau khi tạo directory, bạn không thể thay đổi tên của directory. Ch
 
 3\. Chọn biểu tượng **Action** và chọn **Delete**
 
-<figure><img src="../../../../../.gitbook/assets/deletefolder.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/9OuaTJlvbiG5tFNYboGN" alt=""><figcaption></figcaption></figure>
 

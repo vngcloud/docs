@@ -246,9 +246,9 @@ kubectl apply -f persistent-volume.yaml
 
 Đối với loại resource **Snapshot**, bạn không thể chỉ định snapshot sử dụng ví POC từ VKS. Để thực hiện tạo Snapshot qua ví POC, tại **vServer Portal**, vui lòng chọn **Activate Snapshot**, sau đó tại màn hình **Checkout**, vui lòng chọn sử dụng ví **POC**. Lúc này **tất cả các resource snapshot của bạn sẽ được tạo qua ví POC**. Do đó, việc stop POC cần được bạn thực hiện thông qua **vConsole** hoặc **vServer Portal**. Tham khảo thêm hình bên dưới.
 
-<figure><img src="../../.gitbook/assets/image (820).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/iMjVRgNxA5g5HGPXsnlR" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (821).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/8hUyZdGNvwkFoQdKs7KH" alt=""><figcaption></figcaption></figure>
 
 **Cài đặt VNGCloud Snapshot Controller**
 

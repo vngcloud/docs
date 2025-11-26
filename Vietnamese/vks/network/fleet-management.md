@@ -443,7 +443,7 @@ Khi không còn cần sử dụng Fleet, bạn có thể xóa nó bằng cách:
 
 **Bước 3:** Nhấn **"Delete"** và xác nhận.
 
-<figure><img src="../../.gitbook/assets/image (943).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/kJhR4poBmReF4GM5z8DH" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**

@@ -48,4 +48,4 @@ Loại query: khung chọn loại dữ liệu. Để vẽ biểu đồ cho metri
 
 Bạn có thể tham khảo cách tạo một graph với metric dựa trên video bên dưới
 
-<figure><img src="../../../../.gitbook/assets/3 (1).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/GU8VmaSIS895x5vTKj4k" alt=""><figcaption></figcaption></figure>

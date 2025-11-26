@@ -10,7 +10,7 @@
 
 **Bước 2:** Cập nhật thông tin tài khoản
 
-<figure><img src="../.gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/QnjFP5K4wWbMlbpEgYub" alt=""><figcaption></figcaption></figure>
 
 * Những ô có dấu **\*** bắt buộc phải nhập
 * Sau khi nhập xong, chọn xác nhận vào ô, và nhập mã bảo vệ&#x20;

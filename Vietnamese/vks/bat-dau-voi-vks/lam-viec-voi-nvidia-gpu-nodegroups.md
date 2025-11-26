@@ -299,7 +299,7 @@ kubectl delete job nbody-sample
 * Tuy nhiên, nếu bạn có một node group gồm nhiều node GPU, bạn có thể sử dụng hai chiến lược khác nhau trên hai node riêng biệt. Ví dụ: bạn có thể sử dụng Time Slicing trên một node để chia sẻ GPU và sử dụng MPS trên node còn lại để chia sẻ GPU cho các ứng dụng khác. Chi tiết tham khảo mục bên dưới.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/vksgpu_12.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/us7paza7iyuLaykrAgAm" alt=""><figcaption></figcaption></figure>
 
 ### Applying Multiple Node-Specific Configurations
 
@@ -364,7 +364,7 @@ kubectl patch clusterpolicies.nvidia.com/cluster-policy \
 kubectl get clusterpolicy
 ```
 
-<figure><img src="../../.gitbook/assets/vksgpu_13.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/yyWJCOS1DAflVkE4EMLO" alt=""><figcaption></figcaption></figure>
 
 * Bây giờ, bạn cần thêm label cho node với tên mà bạn chỉ định tại trong file `ConfigMap`:
 
@@ -377,7 +377,7 @@ kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-2080ti
 kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
 ```
 
-<figure><img src="../../.gitbook/assets/vksgpu_14.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/8YoynEeJ4UdSt2tifjCW" alt=""><figcaption></figcaption></figure>
 
 #### Verify Multiple Node-Specific Configurations
 

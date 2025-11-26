@@ -52,7 +52,7 @@ Tại đây, người dùng chọn Job đã backup cho folder đã backup, sau �
 
 **Bước 6:** Chọn Nút "**Restore**" trên thanh menu, chọn "**Overwrite**" (chép đè lên những đang tồn tại).
 
-<figure><img src="../../../.gitbook/assets/image (379).png" alt="" width="258"><figcaption></figcaption></figure>
+<figure><img src="/broken/files/DDvw74FVhE7nbul2f01e" alt="" width="258"><figcaption></figcaption></figure>
 
 **Bước 7**: Hệ thống tự động chạy phục hồi dữ liệu:
 

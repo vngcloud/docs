@@ -54,17 +54,17 @@ https://raw.githubusercontent.com/vngcloud/vmonitor-metrics-agent/main/install.s
 
 ### Bước 4: Xem thông tin Metric thông qua Dashboard <a href="#batdauvoimetrics-buoc4-xemthongtinmetricthongquadashboard" id="batdauvoimetrics-buoc4-xemthongtinmetricthongquadashboard"></a>
 
-Sau khi cài đặt Metric Agent theo hướng dẫn tại **Bước 3: Cài đặt Metric Agent trên Server** để đẩy metric về vMonitor Platform, chúng tôi sẽ tự động tạo **Dashboard mặc định** cho **Host** này. Để xem Dashboard mặc định này, hãy làm theo hướng dẫn bên dưới:&#x20;
+Sau khi cài đặt Metric Agent theo hướng dẫn tại **Bước 3: Cài đặt Metric Agent trên Server** để đẩy metric về vMonitor Platform, chúng tôi sẽ tự động tạo **Dashboard mặc định** cho **Host** này. Để xem Dashboard mặc định này, hãy làm theo hướng dẫn bên dưới:
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Chọn **Infrastructure List/ Host.**
 
-<figure><img src="../../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/JbkXYksF65MhCVy5TvDN" alt=""><figcaption></figcaption></figure>
 
 2. Chọn tên **Hostname**. Ví dụ thiết bị **LAP15839** được thiết lập Metric Agent thành công tới hệ thống vMonitor Platform thì dashboard mặc định sẽ có tên: **LAP15839**, bạn chọn dashboard sẽ hiển thị như ảnh:
 
 <figure><img src="../../.gitbook/assets/image (36) (1).png" alt=""><figcaption></figcaption></figure>
 
-Với Dashboard Mặc định này, bạn sẽ có thể xem được các thông tin metric mà chúng tôi đã vẽ trước cho bạn bao gồm các biểu đồ về thông tin CPU, Memory, Load Avg, Disk, Network. Cũng trên **Dashboard mặc định** này bạn không thể thêm widget hay tuỳ chỉnh dashboard. Để thực hiện thay đổi hay tùy chỉnh Dashboard, bạn cần tạo dashboard mới hoặc **Tạo bản sao** từ **Dashboard mặc định** này ra và Chỉnh sửa. Để tạo bản sao Dashboard, hãy làm theo hướng dẫn bên dưới:&#x20;
+Với Dashboard Mặc định này, bạn sẽ có thể xem được các thông tin metric mà chúng tôi đã vẽ trước cho bạn bao gồm các biểu đồ về thông tin CPU, Memory, Load Avg, Disk, Network. Cũng trên **Dashboard mặc định** này bạn không thể thêm widget hay tuỳ chỉnh dashboard. Để thực hiện thay đổi hay tùy chỉnh Dashboard, bạn cần tạo dashboard mới hoặc **Tạo bản sao** từ **Dashboard mặc định** này ra và Chỉnh sửa. Để tạo bản sao Dashboard, hãy làm theo hướng dẫn bên dưới:
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Chọn **Dashboard.**
 2. Trên **Dashboard Mặc định** muốn tạo bản sao, chọn <img src="https://docs.vngcloud.vn/download/thumbnails/49649936/image2023-4-18_11-33-12.png?version=1&#x26;modificationDate=1691483173000&#x26;api=v2" alt="" data-size="line">, sau đó chọn **Tạo bản sao Dashboard**.

@@ -41,7 +41,7 @@ Tính năng **Inference** giúp bạn triển khai mô hình AI thành một d�
 
 * Nếu chọn Private Access, Endpoint URL sẽ xác thực bằng API Key (Cần tạo trước 1 API Key mới có thể tạo Inference)
 * Không chọn thì Endpoint URL co thể truy cập public (không cần API Key)\
-  ![](<../../.gitbook/assets/image (1131).png>)
+  ![](/broken/files/hTSJ16dehcrWWu2YV8JK)
 
 #### **Bước 5: Tạo và khởi chạy Inference**
 

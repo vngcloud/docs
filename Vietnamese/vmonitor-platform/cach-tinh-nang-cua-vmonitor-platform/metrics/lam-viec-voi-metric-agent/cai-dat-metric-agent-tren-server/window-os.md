@@ -12,9 +12,9 @@
 * Tìm và chọn **Policy:** **vMonitorMetricPush,** sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vMonitorMetricPush do VNG Cloud tạo ra chỉ chứa chính xác quyền đẩy metric về hệ thống
 * Sau khi tạo thành công bạn cần phải lưu lại Client\_ID và Secret\_Key để thực hiện bước tiếp theo
 
-2\. **Tải bản cài  Agent Installer cho Windows**
+2\. **Tải bản cài Agent Installer cho Windows**
 
-* Truy cập vào link để thực hiện tải agent installer cho Windows : [https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.1/telegraf-nightly\_windows\_amd64.exe](https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.1/telegraf-nightly\_windows\_amd64.exe)
+* Truy cập vào link để thực hiện tải agent installer cho Windows : [https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.1/telegraf-nightly\_windows\_amd64.exe](https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.1/telegraf-nightly_windows_amd64.exe)
 
 3\. **Cài đặt installer với Client\_ID và Secret\_Key đã sao chép ở trên**
 
@@ -31,7 +31,7 @@
 
 <figure><img src="../../../../../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
 
-* Nhập 2 thông tin **Client\_ID** và **Secret\_Key** đã sao chép ở trên vào 2 trường: **IAM\_CLIENT\_ID** và **IAM\_CLIENT\_SECRET**:&#x20;
+* Nhập 2 thông tin **Client\_ID** và **Secret\_Key** đã sao chép ở trên vào 2 trường: **IAM\_CLIENT\_ID** và **IAM\_CLIENT\_SECRET**:
 
 <figure><img src="../../../../../.gitbook/assets/image (118).png" alt=""><figcaption></figcaption></figure>
 
@@ -59,9 +59,9 @@
 
 <figure><img src="../../../../../.gitbook/assets/image (124).png" alt=""><figcaption></figcaption></figure>
 
-4\. **Sau khi cài đặt thành công bạn sẽ thấy server ở trang Infrastructure List/Host**&#x20;
+4\. **Sau khi cài đặt thành công bạn sẽ thấy server ở trang Infrastructure List/Host**
 
-<figure><img src="../../../../../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/KUHecb0BwJt903OmPJcJ" alt=""><figcaption></figcaption></figure>
 
 ### **Telegraf Agent với API\_KEY (deprecated**) <a href="#windowos-telegrafagentvoiapi_key-deprecated-khongkhuyencaosudung-saptoisedunghotrovoiphuongthucnay" id="windowos-telegrafagentvoiapi_key-deprecated-khongkhuyencaosudung-saptoisedunghotrovoiphuongthucnay"></a>
 
@@ -76,7 +76,7 @@ B1: Tạo API Key (nếu chưa thực hiện tạo bất kỳ API Key nào trư�
 * Truy cập vào portal vMonitor Platform Product: [https://hcm-3.console.vngcloud.vn/vmonitor/](https://hcm-3.console.vngcloud.vn/vmonitor/)
 * Chọn **Intergration** => sau đó chọn phần **API Key**
 
-<figure><img src="../../../../../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/JEUHwtZwRkDEiiBW3hZx" alt=""><figcaption></figcaption></figure>
 
 * Chọn **Create an API Key**, để thực hiện tạo mới (nếu chưa tạo bất kỳ API Key nào trước đó)
 
@@ -84,18 +84,18 @@ B1: Tạo API Key (nếu chưa thực hiện tạo bất kỳ API Key nào trư�
 
 B2: Download Agent Installer
 
-* Truy cập vào link để thực hiện tải agent installer: [https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.23.0-1.4.0/telegraf-nightly\_windows\_amd64.exe](https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.23.0-1.4.0/telegraf-nightly\_windows\_amd64.exe)
+* Truy cập vào link để thực hiện tải agent installer: [https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.23.0-1.4.0/telegraf-nightly\_windows\_amd64.exe](https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.23.0-1.4.0/telegraf-nightly_windows_amd64.exe)
 
 B3: Install Agent
 
 * Chạy agent installer
 * Sau khi nhận thông báo, chọn **More Info**
 
-<figure><img src="../../../../../.gitbook/assets/image (130).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/EUhV2nzHrPSGdGnHDxBx" alt=""><figcaption></figcaption></figure>
 
 * Sau đó chọn **Run anyway**, để bắt đầu install agent
 
-<figure><img src="../../../../../.gitbook/assets/image (131).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/EvBafjjIPqSCs1Rm3QEk" alt=""><figcaption></figcaption></figure>
 
 * Chọn **Next** để tiếp tục
 
@@ -115,7 +115,7 @@ B3: Install Agent
 
 * Chọn **Accept the license,** sau đó chọn **Next** để tiếp tục
 
-<figure><img src="../../../../../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/Rjfetw7pz2VhZ1OBHrj2" alt=""><figcaption></figcaption></figure>
 
 * Có thể tùy chỉnh shortcut menu name cho agent, sau đó chọn **Next** để tiếp tục
 
@@ -127,7 +127,7 @@ B3: Install Agent
 
 * Chọn Yes để thực hiện grant quyền cho agent hoạt động
 
-<figure><img src="../../../../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/B3LuUdf0b5MOnU8lR1MY" alt=""><figcaption></figcaption></figure>
 
 * Sau khi quá trình cài đặt hoàn tất, chọn **Finish**
 

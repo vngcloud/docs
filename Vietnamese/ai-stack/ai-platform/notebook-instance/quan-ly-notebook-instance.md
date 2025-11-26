@@ -35,7 +35,7 @@ Sau khi notebook instance được tạo, nó sẽ tự động chạy. Nếu m�
 
 * Cách 2: Chạy qua cột Action (Hành Động)
 
-<figure><img src="../../../.gitbook/assets/image (1110).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/Q8OUcLXpzCqMKxjczw0F" alt=""><figcaption></figcaption></figure>
 
 ### **Dừng Instance**
 
@@ -47,7 +47,7 @@ Nếu bạn cần tạm dừng công việc hoặc tiết kiệm tài nguyên, b
 
 * Cách 2: Dừng qua cột Action (Hành Động)
 
-<figure><img src="../../../.gitbook/assets/image (1105).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/U3BPqIpyKN1ZahUlrwD8" alt=""><figcaption></figcaption></figure>
 
 ## **3. Xoá Instance**
 
@@ -73,7 +73,7 @@ Chỉ được nhập size lớn hơn hoặc bằng storage size hiện tại
 
 * Truy cập vào đường dẫn qua tên instance
 
-<figure><img src="../../../.gitbook/assets/image (1115).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/mdXn3xCXioFW8UWujmTs" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (1116).png" alt=""><figcaption></figcaption></figure>
 

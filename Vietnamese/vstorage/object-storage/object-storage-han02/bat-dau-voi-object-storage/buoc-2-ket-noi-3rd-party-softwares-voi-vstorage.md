@@ -7,7 +7,7 @@ Sau khi bạn đã thực hiện khởi tạo project và khởi tạo S3 key th
 1. Tải công cụ người dùng S3 Browser tại đây [https://s3browser.com/download.aspx](https://s3browser.com/download.aspx).
 2. Mở ứng dụng **S3 Browser.** Chọn thư mục **Account, sau đó chọn Add new account**
 
-<figure><img src="../../../../.gitbook/assets/image (585).png" alt="" width="295"><figcaption></figcaption></figure>
+<figure><img src="/broken/files/zdfBnly3qSdD5xpFLJyL" alt="" width="295"><figcaption></figcaption></figure>
 
 
 

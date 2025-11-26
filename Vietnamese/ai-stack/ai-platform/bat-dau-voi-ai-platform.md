@@ -47,7 +47,7 @@ Bạn có thể xem và sao chép API key bằng cách:
 1. Nhấn nào biểu tượng ︙ở cột "Hành động"
 2. Chọn "Xem API Key" (View API Key)
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/AnBDdnpM9waPMJu92Sh1" alt=""><figcaption></figcaption></figure>
 
 #### Xóa API Key
 

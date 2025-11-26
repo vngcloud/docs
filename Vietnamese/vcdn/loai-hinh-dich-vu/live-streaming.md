@@ -12,7 +12,7 @@ Dịch vụ hỗ trợ phát nội dung trực tiếp như sự kiện, chương
 
 **Cơ Chế Phân Phối Dữ Liệu**
 
-Sử dụng phương pháp [PU](../tong-quan/kien-truc-tong-quan/co-che-phan-phoi-du-lieu/phuong-phap-pull.md)[LL](https://docs.vngcloud.vn/display/ONVINA/Live+Streaming#\_Ph%C6%B0%C6%A1ng\_ph%C3%A1p\_PULL), [PUS](../tong-quan/kien-truc-tong-quan/co-che-phan-phoi-du-lieu/phuong-phap-push.md)[H](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045441) chọn tín hiệu đầu vào và tín hiệu đầu ra, đảm bào đường truyền tốt nhất, ổn định nhất, nhiều điểm truy cấp nhất cho dịch vụ live.
+Sử dụng phương pháp [PU](../tong-quan/kien-truc-tong-quan/co-che-phan-phoi-du-lieu/phuong-phap-pull.md)[LL](https://docs.vngcloud.vn/display/ONVINA/Live+Streaming#_Ph%C6%B0%C6%A1ng_ph%C3%A1p_PULL), [PUS](../tong-quan/kien-truc-tong-quan/co-che-phan-phoi-du-lieu/phuong-phap-push.md)[H](https://docs.vngcloud.vn/pages/viewpage.action?pageId=36045441) chọn tín hiệu đầu vào và tín hiệu đầu ra, đảm bào đường truyền tốt nhất, ổn định nhất, nhiều điểm truy cấp nhất cho dịch vụ live.
 
 ***
 
@@ -70,7 +70,7 @@ Sử dụng phương pháp [PU](../tong-quan/kien-truc-tong-quan/co-che-phan-pho
 
 <figure><img src="../../.gitbook/assets/image (834).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (836).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/Azsy9F7hNhp26T3zYW1F" alt=""><figcaption></figcaption></figure>
 
 ### **Bước 2: Tạo Live Streaming**
 
@@ -108,7 +108,7 @@ Tiếp theo, bạn cần thực hiện khởi tạo một Live Streaming theo h�
 * **Access Filter:**
   * **IP Address CIDR**: Giới hạn cho phép/ từ chối truy cập dựa trên địa chỉ IP bằng cách chọn **Allow**/ **Block** và nhập địa chỉ IP hoặc CIDR tương ứng.
   * **HTTP Referer**: Giới hạn cho phép/ từ chối truy cập từ các website cụ thể bằng cách chọn **Allow/ Block** và nhập domain tương ứng.
-  * **Geo Location:** Giới hạn cho phép, từ chối truy cập theo quốc gia/khu vực bằng cách chọn **Allow/ Block** và nhập mã Geo Location tương ứng. Bạn có thể tham khảo giá trị country code tương ứng tại [https://en.wikipedia.org/wiki/List\_of\_ISO\_3166\_country\_codes](https://en.wikipedia.org/wiki/List\_of\_ISO\_3166\_country\_codes).
+  * **Geo Location:** Giới hạn cho phép, từ chối truy cập theo quốc gia/khu vực bằng cách chọn **Allow/ Block** và nhập mã Geo Location tương ứng. Bạn có thể tham khảo giá trị country code tương ứng tại [https://en.wikipedia.org/wiki/List\_of\_ISO\_3166\_country\_codes](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
 * **CORS Configuration**
   * **Simple**: Khi chọn Simple, bạn chỉ cần chỉ định các domain cụ thể được phép truy cập thông qua **Allow Origin.**
   * **Advance**: Khi chọn Advance, ngoài việc chỉ định domain cụ thể, bạn cần cấu hình chi tiết hơn về **Allow Header, Allow Method, Expose Header, Allow Credentials** được phép.

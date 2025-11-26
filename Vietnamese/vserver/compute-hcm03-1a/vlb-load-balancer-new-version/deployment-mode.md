@@ -4,7 +4,7 @@ Trong môi trường điện toán đám mây của VNG Cloud, chúng tôi cung 
 
 **Tổng quan mô hình triển khai Load Balancer tại VNG Cloud như sau**
 
-<figure><img src="../../../.gitbook/assets/64553488 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/27MuahN0bFe9awp9rEi0" alt=""><figcaption></figcaption></figure>
 
 **Model quản lý Load Balancer bao gồm các component chính như sau**
 

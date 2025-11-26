@@ -18,5 +18,5 @@
 8. Nhập mã **OTP** vào OTP. Mã OTP sẽ có hiệu lực trong vòng **120s**, sau 120s mã OTP này sẽ hết hiệu lực và không thể sử dụng để định danh nhóm chat Teams. Bạn có thể chọn **Gửi lại OTP** để nhận mã mới sau đó tiếp tục nhập mã mới này để định danh.
 9. Chọn **Create.**&#x20;
 
-<figure><img src="../../../../.gitbook/assets/vmonitor_noti_team.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="/broken/files/f2GL52fAvbibCOSspM57" alt="" width="375"><figcaption></figcaption></figure>
 

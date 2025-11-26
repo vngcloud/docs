@@ -27,7 +27,7 @@ Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, n�
 
 <summary>Khởi tạo Service Account và cài đặt VNGCloud LoadBalancer Controller</summary>
 
-#### **Khởi tạo Service Account**
+**Khởi tạo Service Account**
 
 * Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **vLBFullAccess**, **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://iam.console.vngcloud.vn/service-accounts) và thực hiện theo các bước sau:
   * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
@@ -47,7 +47,7 @@ helm install vngcloud-load-balancer-controller oci://vcr.vngcloud.vn/81-vks-publ
   --set mysecret.global.clientSecret= __________________
 ```
 
-* Sau khi việc cài đặt hoàn tất, thực hiện kiểm tra trạng thái của pod đã tạo:&#x20;
+* Sau khi việc cài đặt hoàn tất, thực hiện kiểm tra trạng thái của pod đã tạo:
 
 ```bash
 kubectl -n kube-system get pod -l app.kubernetes.io/name=vngcloud-load-balancer-controller
@@ -183,7 +183,7 @@ Sau khi bạn đã thực hiện triển khai Ingress , Chúng tôi sẽ tự đ
 
 Ví dụ:
 
-<figure><img src="../../../.gitbook/assets/vks_portal_l7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/VmPeEh5ibZuW5sR39hfg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Chú ý:
@@ -392,4 +392,4 @@ Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao 
 
 Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.129/](http://180.93.181.129/)
 
-<figure><img src="../../../.gitbook/assets/vks_nginx_l7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/6uVi1VQ9LkTiSOt4WBF8" alt=""><figcaption></figcaption></figure>
