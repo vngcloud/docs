@@ -51,5 +51,7 @@ Mặc định, RDS Instance tạo ra sẽ có sẵn 3 user:
 * 2 user hệ thống là root@localhost & [os\_admin@127.0.0.1](mailto:os_admin@127.0.0.1).
 * 1 master user giúp bạn có thể truy cập và quản lý RDS Instance.
 
-Hai user hệ thống được tạo ra để VNG Cloud phục vụ các tác vụ tự động như tạo backup, cấu hình replication, restore… và bạn không cần phải quan tâm những user này. Tuy nhiên, việc bạn xóa 2 user hệ thống này sẽ gây ra lỗi hệ thống cho RDS Instance và khiến các tính năng trên mất tác dụng. VNG Cloud sẽ không chịu trách nhiệm nếu bạn tìm cách xóa 2 user hệ thống nhưng vẫn sẽ hỗ trợ tốt nhất có thể để khôi phục cho bạn cho bạn.
+Hai user hệ thống được tạo ra để VNG Cloud phục vụ các tác vụ tự động như tạo backup, cấu hình replication, restore… và bạn không cần phải quan tâm những user này.
+
+Tuy nhiên, việc bạn xóa 2 user hệ thống này sẽ gây ra lỗi hệ thống cho RDS Instance và khiến các tính năng trên mất tác dụng. VNG Cloud sẽ không chịu trách nhiệm nếu bạn tìm cách xóa 2 user hệ thống. Nếu vô tình xoá 2 user, bạn vui lòng liên hệ VNGCloud Support Team để được hỗ trợ.
 
