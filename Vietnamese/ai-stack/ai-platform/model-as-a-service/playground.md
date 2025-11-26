@@ -11,7 +11,7 @@ description: >-
 
 ### Hướng dẫn thử nghiệm mô hình
 
-1. Chọn loại mô hình tùy thuộc vào tác vụ của bạn: Chat, Completion, Image Generation, Text to Speech, Speech to Text, Embedding
+1. Chọn loại mô hình tùy thuộc vào tác vụ của bạn: Chat, Completion, Image Generation, Embedding
 2. Chọn loại mô hình: Ở bảng điều khiển bên phải, chọn một mô hình từ danh sách&#x20;
 3. Thiết lập prompt&#x20;
    * Trong phần System prompt, hãy định nghĩa các hướng dẫn hoặc ngữ cảnh cho mô hình. Bạn cũng có thể thêm các ví dụ để định hướng hành vi của nó.
@@ -68,24 +68,6 @@ Khi sử dụng Playground, bạn có thể điều chỉnh các thông số sau
 * Kích thước ảnh (Image size): Kích thước của hình ảnh được tạo ra.
   * Các tùy chọn: 256x256, 512x512, 1024x1024 (Mặc định: 1024x1024).
 * Định dạng phản hồi (Response format): Định dạng trả về của kết quả (thường là Base64).
-
-**Mô hình Text to Speech**
-
-* Voice: Lựa chọn giọng nam/nữ theo vùng miền.
-  * Các tùy chọn: (Mặc định: Nữ Miền Nam)
-    * Nữ Miền Nam&#x20;
-    * Nữ  Miền Bắc
-    * Nam Miền Nam&#x20;
-    * Nam Miền Bắc
-* Speed: Tốc độ đọc của giọng nói.
-  * Phạm vi: 0.8 - 1.2 (Mặc định: 1).
-* Encoding type: Định dạng tệp âm thanh đầu ra.
-  * Các tùy chọn: WAV, MP3 (Mặc định: MP3).
-
-**Mô hình Speech to Text**
-
-* Encoding type: Định dạng tệp âm thanh đầu vào.
-  * Các tùy chọn: WAV, MP3 (Mặc định: MP3).
 
 **Mô hình Embedding**
 

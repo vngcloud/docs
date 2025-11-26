@@ -31,8 +31,6 @@ Bạn có thể lọc các mô hình bằng các tùy chọn ở thanh bên trá
 * Loại mô hình (Model Type):&#x20;
   * Chat: Được thiết kế cho các cuộc hội thoại tương tác. Chúng có khả năng lưu giữ ngữ cảnh và lịch sử cuộc trò chuyện.
   * Image Generation: Tạo ra hình ảnh mới dựa trên mô tả văn bản.
-  * Speech to Text: Chuyển đổi âm thanh (giọng nói) thành văn bản.
-  * Text to Speech: Chuyển đổi văn bản thành âm thanh (giọng nói).
   * Embedding: chuyển đổi dữ liệu (văn bản, hình ảnh, âm thanh,…) thành vector nhiều chiều, giúp máy tính hiểu và so sánh ngữ nghĩa để phục vụ tìm kiếm, phân loại hoặc gợi ý nội dung.
   * Completion: Xử lý từng yêu cầu (prompt) một cách độc lập mà không lưu lại lịch sử hội thoại.
 * Trường hợp sử dụng (Use-case):
