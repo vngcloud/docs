@@ -146,7 +146,6 @@ Finally you choose to run the command line:
 
 and select **YES** to perform vServer initialization via Terraform
 
-\
-
+<br>
 
 **Step 8**: You can go to the Portal to see the Load Balancer being initialized from Terraform:

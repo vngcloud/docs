@@ -15,15 +15,13 @@ This topic provides an overview of available options and describes what to consi
 
 1. Open the vServer console at: [https://hcm-3.console.vngcloud.vn/vserver/container/cluster](https://hcm-3.console.vngcloud.vn/vserver/container/cluster).
 2. Choose **Create a Kubernetes Cluster**
-3. On the Cluster **basic configuration settings** pag&#x65;**,** enter the following fields:\
-
+3. On the Cluster **basic configuration settings** pag&#x65;**,** enter the following fields:<br>
    * **Name** – Name for your Cluster. It must be unique in your VNG Cloud account. Names can only contain alphanumeric characters (a-z, A-Z, 0-9, '\_', '-'). Your input data length should be between 5 and 50. The name must be unique in the Region and VNG Cloud account you are creating the Cluster for.
    * **Kubernetes version** – The Kubernetes instance to use for your Cluster. We recommend choosing the latest version, unless you need an older version.
    * **Description** – Enter the information you want to note for the Cluster to create your own signature for easier management of them in the future.
    * **Number of Master nodes** – Enter the number of Master nodes for your Cluster, note that for non-HA (Highly available) you need to enter the number of 1 node and HA the number is 3 or 5 nodes.
    * **Number of Minion nodes** – Enter the number of Minion nodes for your Cluster, note that the number of nodes needs to be greater than or equal to 1 and less than or equal to 10.
-4. Scroll down, you will see the **ETCD Storage** Configuration section:\
-
+4. Scroll down, you will see the **ETCD Storage** Configuration section:<br>
    * **ETCD Storage Information –** Choose an ETCD storage configuration for your Cluster under the **Small** or **Medium** plan.
 5. In the **Instance type** section, select the appropriate configuration instance type for the Master node and Minion node according to your needs.
 6. Set up the drives for the Kubernetes cluster at **Volume Settings:**

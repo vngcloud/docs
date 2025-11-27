@@ -20,4 +20,4 @@ Before you can change the flavor of an instance, you must identify the flavor an
 4. You can check the new price or the refund in case of down-resize, then click **Resize Server** to submit.
 5. Waiting for status of instance become Stop again.
 
-\
+<br>

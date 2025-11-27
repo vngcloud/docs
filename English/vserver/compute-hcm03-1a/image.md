@@ -12,4 +12,4 @@ VNG Cloud images are classified into public images, custom images, and Marketpla
 
 Child page: Image Overview, Custom Image, Marketplace Image
 
-\
+<br>

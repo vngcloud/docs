@@ -13,8 +13,7 @@ Follow these steps to install and use Speedtest CLI:
     | ----------------------------------------------------------------------------------------------------- |
 
     Note that this command will require administrative privileges, so you'll need to enter the administrator password to proceed.
-3.  After the installation process is complete, run the following command to install Speedtest CLI:\
-
+3.  After the installation process is complete, run the following command to install Speedtest CLI:<br>
 
     | `sudo yum install speedtest` |
     | ---------------------------- |
@@ -24,17 +23,14 @@ Follow these steps to install and use Speedtest CLI:
     | ----------- |
 
     Speedtest CLI will automatically find the nearest server to perform the test and then display the results of download and upload speeds as well as latency.\
-    \
+    <br>
 
-
     \
-    \
-
+    <br>
 
     <figure><img src="https://docs.vngcloud.vn/download/attachments/63766895/image2023-8-9_13-9-55.png?version=1&#x26;modificationDate=1691561396000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 5.  However, after 3 days, the speed will decrease to Download: 220.46 Mbps/s and Upload: 262.51 Mbps/s as shown below:\
-    \
-
+    <br>
 
     <figure><img src="https://docs.vngcloud.vn/download/attachments/63766895/image2023-8-30_15-11-56.png?version=1&#x26;modificationDate=1693383117000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
@@ -49,8 +45,7 @@ Follow these steps to install and use Speedtest CLI:
     | ------------------------------------------------------------------------------------------------------------------------------ |
 
     Note that this command will require administrative privileges, so you'll need to enter the administrator password to proceed.
-3.  After the installation process is complete, run the following command to install Speedtest CLI:\
-
+3.  After the installation process is complete, run the following command to install Speedtest CLI:<br>
 
     | `sudo apt-get install speedtest` |
     | -------------------------------- |
@@ -60,8 +55,7 @@ Follow these steps to install and use Speedtest CLI:
     | ----------- |
 
     Speedtest CLI will automatically find the nearest server to perform the test and then display the results of download and upload speeds as well as latency.\
-    \
-
+    <br>
 
 
 
@@ -92,8 +86,7 @@ Fast is a perfect tool for those who just want to check download speed in a very
 
 ### Monitoring Internet Speed with vMonitor on the dashboard <a href="#kiemtratocdointernet-giamsattocdointernetbangvmonitortrenbangdieukhien" id="kiemtratocdointernet-giamsattocdointernetbangvmonitortrenbangdieukhien"></a>
 
-* You can access the vMonitor homepage at: [https://hcm-3.console.vngcloud.vn/vmonitor/dashboard](https://hcm-3.console.vngcloud.vn/vmonitor/dashboard) to monitor the internet speed of your server.\
-
+* You can access the vMonitor homepage at: [https://hcm-3.console.vngcloud.vn/vmonitor/dashboard](https://hcm-3.console.vngcloud.vn/vmonitor/dashboard) to monitor the internet speed of your server.<br>
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/63766895/image2023-8-14_15-24-20.png?version=1&#x26;modificationDate=1692001461000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 

@@ -68,4 +68,4 @@ However, for existing VNG Cloud users, we encourage you to log in to get the mos
 * Accessibility: For logged-in users, you can access the pricing tool from anywhere with your login credentials.
 * Temporary List: For non-logged-in users, the estimated services will be temporarily stored on the device rather than linked to an account. Therefore, you will not see the previous pricing list when accessing the pricing tool from a different device.
 
-\
+<br>

@@ -4,7 +4,7 @@
 
 AWS CLI is a command-line interface tool that allows users to interact with S3 APIs through commands to perform functions on storage systems that support the s3 protocol. AWS CLI is compatible with S3 APIs of the vStorage storage service. For instructions on using AWS CLI, please refer to the instructions [here.](https://aws.amazon.com/cli)
 
-To be able to integrate AWS CLI tool, you need to collect Region, Project, vStorage Endpoint information and S3 key information corresponding to that project. For details, please refer to [Integrate AWS CLI with vStorage](broken-reference). After accessing your resources (buckets, objects, etc.) on the vStorage service, to work with these resources using the AWS CLI tool, you can refer to more scenarios (use cases) of using or features of AWS CLI to work with vStorage resources. For details, refer to [Using AWS CLI](broken-reference).
+To be able to integrate AWS CLI tool, you need to collect Region, Project, vStorage Endpoint information and S3 key information corresponding to that project. For details, please refer to [Integrate AWS CLI with vStorage](/broken/pages/pZsDJlh4oMDYrffDRGcs). After accessing your resources (buckets, objects, etc.) on the vStorage service, to work with these resources using the AWS CLI tool, you can refer to more scenarios (use cases) of using or features of AWS CLI to work with vStorage resources. For details, refer to [Using AWS CLI](/broken/pages/r3yPxrwRTdeTKwNV4n5i).
 
 {% hint style="info" %}
 ### ⚠️ Important note
@@ -21,5 +21,5 @@ To be able to integrate AWS CLI tool, you need to collect Region, Project, vStor
 
 ## **Detail**
 
-* [Integrate AWS CLI with vStorage](broken-reference)
-* [Using AWS CLI](broken-reference)
+* [Integrate AWS CLI with vStorage](/broken/pages/pZsDJlh4oMDYrffDRGcs)
+* [Using AWS CLI](/broken/pages/r3yPxrwRTdeTKwNV4n5i)

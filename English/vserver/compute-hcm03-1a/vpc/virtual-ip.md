@@ -35,4 +35,4 @@ After create Virtual IP, you need to assign it to Instances:
 1. Go to VNG Cloud portal console, navigate to Virtual IP page
 2. Select Virtual IP and click **Delete** on the right side
 
-\
+<br>

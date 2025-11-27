@@ -28,8 +28,7 @@ Navigate to "Create New Account" screen as shown in the following image:&#x20;
 
 **Step 5:** After clicking the link in the email from **step 4**, the final registration form will open. Fill in all the required information on the registration form.
 
-![](<../.gitbook/assets/image (3).png>)\
-
+![](<../.gitbook/assets/image (3).png>)<br>
 
 * Fields marked with an \* are mandatory for users to fill out. Other information is optional.
 * When entering a password, users must follow the system's guidelines.

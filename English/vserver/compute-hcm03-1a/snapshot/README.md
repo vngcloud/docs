@@ -30,7 +30,7 @@ The total storage required for the three snapshots at stage 3 (the final stage) 
 
 In this way, you have created a chain of incremental snapshots, each snapshot containing only the changes since the previous snapshot, saving storage space and making data backup and recovery more efficient.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/EIG6BLHhOZhUEUbyKXDk" alt=""><figcaption></figcaption></figure>
 
 ***
 

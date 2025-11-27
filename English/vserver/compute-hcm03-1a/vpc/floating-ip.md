@@ -37,4 +37,4 @@ A Floating IP is created along with the Server initialization. However, you can 
 
 * Billing of an Floating IP continues after it is disassociated. If you no longer need the Floating IP, go to the [Floating IP page](https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip) to release the Floating IP
 
-\
+<br>

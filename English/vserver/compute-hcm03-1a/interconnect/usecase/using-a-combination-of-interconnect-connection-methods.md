@@ -16,4 +16,4 @@ This Direct Interconnect connection enhances performance for the enterprise's cr
 
 In summary, this enterprise has employed a savvy combination of Multicloud Interconnect, VPN Interconnect, and Direct Interconnect to manage and optimize their cloud resources connectivity and security. This helps them maintain flexibility, security, and performance in today's multi-platform cloud environment.
 
-\
+<br>

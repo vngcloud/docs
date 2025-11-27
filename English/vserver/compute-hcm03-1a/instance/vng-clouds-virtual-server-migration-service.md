@@ -39,4 +39,4 @@ Several possible scenarios may make a server migration necessary:
 * Replace aging infrastructure at the end of its life cycle.
 * Hosting expansion and distribution reduces load at a single point and achieves high availability.
 
-\
+<br>

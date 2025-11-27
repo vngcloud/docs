@@ -36,7 +36,7 @@ After the Cluster is successfully initialized, you can connect and check the new
 
 **Step 1:** Visit [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
-**Step 2:** The Cluster list is displayed, select the icon ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F73761995%2Fimage2024-4-4\_14-37-11.png%3Fversion%3D1%26modificationDate%3D1712216232000%26api%3Dv2\&width=40\&dpr=4\&quality=100\&sign=7c12e1b3\&sv=1)and select **Download Config File** to download the kubeconfig file. This file will give you full access to your Cluster.
+**Step 2:** The Cluster list is displayed, select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F73761995%2Fimage2024-4-4_14-37-11.png%3Fversion%3D1%26modificationDate%3D1712216232000%26api%3Dv2\&width=40\&dpr=4\&quality=100\&sign=7c12e1b3\&sv=1)and select **Download Config File** to download the kubeconfig file. This file will give you full access to your Cluster.
 
 **Step 3** : Rename this file to config and save it to the **\~/.kube/config directory**
 
@@ -169,4 +169,4 @@ For example, below I have successfully accessed the nginx app with the address: 
 If you want to expose this service through vLB Layer4, vLB Layer7, please refer to:
 
 * [Expose a service through vLB Layer4](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4)
-* [Expose a service through vLB Layer7](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer7)\
+* [Expose a service through vLB Layer7](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer7)<br>

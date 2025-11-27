@@ -76,8 +76,7 @@ write_files:
    permissions: '0o466'
 </code></pre></td></tr></tbody></table>
 
-\
-
+<br>
 
 <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>#cloud-config
 write_files:
@@ -203,8 +202,7 @@ Use config option _cloud\_config\_plugins_ to filter or to change the order of t
 
 The execution of set\_hostname or runcmd can request a reboot if needed. the reboot is performed at the end of the cloud-config execution (**after** all the directives have been executed .
 
-\
-
+<br>
 
 ## **Initialize UserData when activating vServer**![](http://docs.vngcloud.vn/plugins/servlet/confluence/placeholder/macro?definition=e2FuY2hvcjpDcmVhdGVVc2VyRGF0YVNlcnZlcn0\&locale=en_US\&version=2)
 
@@ -261,7 +259,6 @@ The result will be displayed by default:
 | <p>Note:</p><p>Windows license usage is authenticated according to the IP where the VM purchased the license, then system will active the license.</p> |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
-\
+<br>
 
-
-\
+<br>

@@ -60,15 +60,13 @@ In turn, the Deploy-managed ReplicaSet manages (creates, deletes) the Pods, to v
 *   Example: Case deploy APP echo1:\
     \
     \
-    \
-
+    <br>
 
     <figure><img src="https://docs.vngcloud.vn/download/attachments/59802500/Screen%20Shot%202021-05-24%20at%2010.45.23.png?version=1&#x26;modificationDate=1684985050000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 *   Check the deployment:\
     \
     \
-    \
-
+    <br>
 
     <figure><img src="https://docs.vngcloud.vn/download/attachments/59802500/Screen%20Shot%202021-05-24%20at%2010.49.56.png?version=1&#x26;modificationDate=1684985050000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
@@ -91,4 +89,4 @@ That's it, I've finished the application and Expose to the internet
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59802500/Screen%20Shot%202021-05-24%20at%2010.58.05.png?version=1&#x26;modificationDate=1684985050000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-\
+<br>

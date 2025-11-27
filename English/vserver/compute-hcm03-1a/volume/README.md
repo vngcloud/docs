@@ -44,4 +44,4 @@ Only volume with status Available can be deleted.
 1. Go to VNG Cloud Portal console, navigate to Volume page
 2. Select Data volume to delete, expand menu action on the right side, select **Delete.**
 
-\
+<br>

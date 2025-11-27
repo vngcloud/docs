@@ -25,4 +25,4 @@ Remember that while a partial policy strategy as described earlier may work, if 
 5. Attach the backup policy to the backup.
 6. View effective backup policies and make adjustments accordingly.
 
-\
+<br>

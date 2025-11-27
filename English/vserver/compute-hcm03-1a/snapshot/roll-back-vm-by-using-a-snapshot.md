@@ -27,8 +27,7 @@ Using snapshots allows you to quickly restore data and systems after incidents, 
 
 Using snapshots to restore VM has many important benefits but also comes with risks that need careful consideration and management. It's important to implement security measures and verify snapshot integrity before performing data recovery."
 
-\
-
+<br>
 
 ***
 

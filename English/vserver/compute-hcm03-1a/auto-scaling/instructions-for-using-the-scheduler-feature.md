@@ -43,4 +43,4 @@ After the setup is complete, select create to create the scheduler. Successfully
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59802628/image2019-5-24_0-3-34.png?version=1&#x26;modificationDate=1685070457000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-\
+<br>

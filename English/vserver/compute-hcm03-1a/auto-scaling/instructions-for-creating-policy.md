@@ -4,15 +4,13 @@ At the Policy management interface, select create Policy
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59802601/image2019-5-23_23-58-51.png?version=1&#x26;modificationDate=1685005676000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-\
-
+<br>
 
 **Step 1:** At Policy configuration, enter the necessary information
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59802601/image2019-5-23_23-59-5.png?version=1&#x26;modificationDate=1685005706000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-\
-
+<br>
 
 * Policy name: allows to set characters (a-z, A-Z, 0-9, '\_'), starting with letters and limited to 6-20 characters
 * Policy description: Enter a policy description, this description depends on your policy management needs, does not affect how the policy works.

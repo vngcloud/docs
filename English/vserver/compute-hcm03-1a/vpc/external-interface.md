@@ -34,4 +34,4 @@ You need to configure IP address for External Interface from within instance, st
 1. Go to VNG Cloud portal console, navigate to External Interface page
 2. Select the External Interface to delete, click **Delete** on right side.
 
-\
+<br>

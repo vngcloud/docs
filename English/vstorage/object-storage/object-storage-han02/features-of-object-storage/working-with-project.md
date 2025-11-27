@@ -123,11 +123,11 @@ The system will automatically renew 3 days before the service expires:
 
 <summary>Set up auto-renewal when creating a project</summary>
 
-1. Thực hiện các bước khởi tạo project theo hướng dẫn tại [Khởi tạo project](broken-reference).
+1. Thực hiện các bước khởi tạo project theo hướng dẫn tại [Khởi tạo project](/broken/pages/SL64seEpMQMd2ph6wytt).
 2. Tại thời điểm thiết lập thông tin về project cần mua, chọn **Gia hạn tự động**.
 3. Chọn **chu kỳ gia hạn tự động**. Chúng tôi cung cấp các chu kỳ gia hạn bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng. Khi bạn thực hiện chọn chu kỳ gia hạn, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ lưu trữ mới và tổng số tiền bạn cần chi trả cho việc gia hạn **project**.
 
-Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](broken-reference).
+Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](/broken/pages/SeteDnRJLCSGyZbS6BCa).
 
 Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ mới sau khi gia hạn project sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
 
