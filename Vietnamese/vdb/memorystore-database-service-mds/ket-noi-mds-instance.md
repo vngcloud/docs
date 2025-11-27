@@ -51,9 +51,10 @@ Khi kết nối đã thông suốt, bạn có thể tiến hành kết nối t�
 
 Sau khi có thông tin endpoint, bạn có thể kết nối tới thông qua IP & Port.
 
-VD: DB Instance có IP: `10.23.0.5`, port: 6379, bạn kết nối bằng redis-cli như sau:
+VD: DB Instance có IP: 10.23.0.5, port: 6379, bạn kết nối bằng redis-cli như sau:
 
-| <p><code>$ redis-cli -h 10.23.0.5 -p 6379</code><br><br><code>10.23.0.5:6379></code></p> |
-| ---------------------------------------------------------------------------------------- |
+```
+$ redis-cli -h 10.23.0.5 -p 6379
+10.23.0.5:6379>
+```
 
-Chúc mừng bạn đã truy cập thành công.
