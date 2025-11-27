@@ -2,7 +2,7 @@
 
 Để kết nối với DB Instance có **Database Engine** là Redis, bạn có thể sử dụng redis-cli, hay các thư viện redis client của các ngôn ngữ lập trình như jedis, redis-py,...
 
-**Lưu ý:** đối với các long-time query, bạn nên cấu hình các option liên quan **tcp\_keepalive** hoặc **healthcheck\_interval**, tránh bị gián đoạn kết nối giữa chừng. Chi tiết vui lòng xem thêm mục [**Lưu ý & Hạn chế**](../luu-y-and-han-che.md)**.**
+**Lưu ý:** đối với các long-time query, bạn nên cấu hình các option liên quan **tcp\_keepalive** hoặc **healthcheck\_interval**, tránh bị gián đoạn kết nối giữa chừng. Chi tiết vui lòng xem thêm mục [**Lưu ý & Hạn chế**](../luu-y-and-han-che.md#e.-long-time-query)**.**
 
 Nếu muốn truy cập bằng giao diện, bạn có thể tham khảo tool AnotherRedisDesktopManager tải tại link sau:
 
