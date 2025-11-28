@@ -1,44 +1,4 @@
-=# Release notes
-
-#### **VKS – Hỗ trợ Node groups ở nhiều subnets**
-
-Chúng tôi vui mừng thông báo về một cải tiến đáng kể cho dịch vụ VKS: khả năng hỗ trợ Node groups ở nhiều subnets. Tính năng này cho phép các Node groups trong cùng một cluster được phân bổ và tạo ra trên nhiều subnets khác nhau trong cùng một Virtual Private Cloud (VPC). Sự linh hoạt này mang lại nhiều lợi ích quan trọng cho việc triển khai và quản lý các ứng dụng trên Kubernetes.
-
-Việc phân tán các node của một Node group qua nhiều subnets giúp tăng cường đáng kể khả năng chịu lỗi và tính sẵn sàng cao cho cluster của bạn. Bằng cách dàn trải các node qua các subnet khác nhau – thường được liên kết với các Availability Zone hoặc vùng lỗi riêng biệt – cluster sẽ trở nên bền vững hơn trước các sự cố cục bộ. Điều này cũng tạo điều kiện thuận lợi cho việc phân đoạn mạng chi tiết hơn và tối ưu hóa việc phân bổ tài nguyên trong VPC, đáp ứng các yêu cầu kiến trúc phức tạp và đảm bảo hiệu suất ổn định cho các ứng dụng quan trọng.
-
-Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
-
-***
-
-#### **VKS – Hỗ trợ PVC encryption**
-
-VNG Cloud Kubernetes Service (VKS) nay đã hỗ trợ tính năng mã hóa Persistent Volume Claim (PVC), mang lại lớp bảo mật bổ sung cho dữ liệu của bạn. Tính năng này hoạt động tương tự như cơ chế mã hóa Volume đã được triển khai cho vServer, đảm bảo rằng dữ liệu lưu trữ trên PVC được bảo vệ an toàn khỏi truy cập trái phép.
-
-Với PVC encryption, người dùng có thể yên tâm triển khai các ứng dụng yêu cầu mức độ bảo mật cao trên VKS, đáp ứng các tiêu chuẩn tuân thủ và bảo vệ thông tin quan trọng.
-
-Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
-
-***
-
-#### VKS – Triển khai VKS trên region HAN01
-
-VKS (VNG Cloud Kubernetes Service) đã chính thức được triển khai trên region HAN01. Với sự mở rộng này, khách hàng giờ đây có thể dễ dàng sử dụng dịch vụ VKS của chúng tôi tại khu vực HAN01, mang lại thêm lựa chọn về vị trí triển khai và tăng cường khả năng phục hồi cho các ứng dụng container hóa.
-
-Việc mở rộng VKS sang HAN01 giúp đáp ứng nhu cầu ngày càng tăng về hạ tầng Kubernetes linh hoạt và ổn định, hỗ trợ tối ưu cho các doanh nghiệp và nhà phát triển trong việc xây dựng và quản lý các ứng dụng hiện đại.
-
-Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
-
-***
-
-#### **VKS – Hỗ trợ CNI Cilium Overlay và Cilium Native Routing**
-
-VNG Cloud VKS (VNG Kubernetes Service) nay đã hỗ trợ tích hợp CNI (Container Network Interface) Cilium với hai chế độ hoạt động chính: Cilium Overlay và Cilium Native Routing. Việc bổ sung này mang đến cho khách hàng sự linh hoạt hơn trong việc lựa chọn mô hình mạng cho các cụm Kubernetes của mình trên VKS.
-
-Đặc biệt, chế độ Cilium Native Routing được thiết kế để tối ưu hóa hiệu suất và khả năng kết nối. Chế độ này giúp cải thiện đáng kể thông lượng và độ trễ, đáp ứng hiệu quả các yêu cầu khắt khe về networking cho các ứng dụng có cường độ truyền tải dữ liệu cao hoặc cần độ phản hồi nhanh.
-
-Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
-
-***
+# Release notes test
 
 ## May 9, 2025 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
