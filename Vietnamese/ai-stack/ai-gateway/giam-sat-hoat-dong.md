@@ -44,6 +44,10 @@ Ngoài ra, bạn có thể xem chi tiết một request bằng cách:
 
 <figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+## Latencies
+
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
 Các metrics đo lường latencies trong một request cũng được hiển thị cụ thể tại đây:
 
 **latencies.receive**: Thời gian bắt đầu nhận response(byte đầu tiên) tới kết thúc nhận response (byte cuối cùng) từ LLM
