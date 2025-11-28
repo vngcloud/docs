@@ -15,7 +15,7 @@ Truy cập thông qua đường dẫn: [https://aigateway.console.vngcloud.vn/mo
 
 * Truy cập trang **Model Caching** và nhấn nút **"Tạo một cấu hình Caching"** .
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Trong form **Tạo một cấu hình Caching**, điền các thông tin sau:
   * **Tên cấu hình** (bắt buộc)
@@ -46,7 +46,7 @@ Truy cập thông qua đường dẫn: [https://aigateway.console.vngcloud.vn/mo
   * **Edit configuration** — chỉnh TTL / tên / loại cache.
   * **Delete** — xóa cấu hình&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Manage models (gán gateway và model).
 
