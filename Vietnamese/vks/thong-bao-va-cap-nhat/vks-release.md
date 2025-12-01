@@ -1,5 +1,13 @@
 # Release notes test
 
+VKS vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Tính năng mới:**
+* **Hỗ trợ PVC encryption**: VKS hiện đã hỗ trợ mã hóa cho Persistent Volume Claim (PVC), cung cấp lớp bảo mật dữ liệu nâng cao. Tính năng này hoạt động tương tự như mã hóa Volume trên vServer, giúp bảo vệ dữ liệu nhạy cảm được lưu trữ trong các cluster Kubernetes.
+Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
+
+***
+
 ## May 9, 2025 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
 VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
