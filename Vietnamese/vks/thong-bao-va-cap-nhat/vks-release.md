@@ -1,28 +1,4 @@
-=# Release notes test
-
-**2025-11-25**
-VKS vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
-
-**Tính năng mới:**
-
-*   **Hỗ trợ Node groups ở nhiều subnets**: Node groups trong cùng 1 cluster có thể được tạo ở nhiều subnets khác nhau trong cùng 1 VPC.
-    Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
-*   **Triển khai VKS trên region HAN01**: VKS đã triển khai trên region HAN01, từ nay KH có thể sử dụng VKS ở HAN01.
-    Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
-*   **Hỗ trợ CNI Cilium Overlay và Cilium Native Routing**: Hỗ trợ CNI Cillium Overlay và Cilium Native Routing giúp KH có thể sử dụng Cilium là mô hình networking của VKS. Đặc biệt là mode Cilium Native Routing giúp cải thiện performance & connectivity cho các KH có nhu cầu.
-    Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
-
-***
-
-**2025-10-24**
-VKS vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
-
-**Tính năng mới:**
-
-* **Hỗ trợ PVC encryption**: Tính năng này cho phép mã hóa các Persistent Volume Claims (PVC) trong VKS, tương tự như cơ chế mã hóa Volume của vServer. Điều này giúp tăng cường bảo mật dữ liệu lưu trữ cho các ứng dụng chạy trên Kubernetes.
-  Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
-
-***
+# Release notes test
 
 ## May 9, 2025 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
