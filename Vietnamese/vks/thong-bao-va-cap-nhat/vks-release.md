@@ -1,4 +1,22 @@
-# Release notes test
+=# Release notes test
+
+**Nov 25, 2025**
+
+VKS (VNG Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Tính năng mới:**
+
+- **Hỗ trợ Node groups ở nhiều subnets**: Node groups trong cùng 1 cluster có thể được tạo ở nhiều subnets khác nhau trong cùng 1 VPC. Tính năng này mang lại sự linh hoạt cao hơn trong việc quản lý tài nguyên mạng và tối ưu hóa kiến trúc hạ tầng của bạn. Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
+
+- **Triển khai VKS trên region HAN01**: VKS đã triển khai trên region HAN01, từ nay khách hàng có thể sử dụng VKS ở HAN01. Điều này giúp mở rộng phạm vi địa lý, tăng cường khả năng phục hồi và giảm độ trễ cho các ứng dụng của bạn tại khu vực phía Bắc. Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
+
+- **Hỗ trợ CNI Cilium Overlay và Cilium Native Routing**: Hỗ trợ CNI Cilium Overlay và Cilium Native Routing giúp khách hàng có thể sử dụng Cilium là mô hình networking của VKS. Đặc biệt là mode Cilium Native Routing giúp cải thiện performance & connectivity cho các khách hàng có nhu cầu, mang lại hiệu suất mạng vượt trội và khả năng kiểm soát lưu lượng mạnh mẽ hơn. Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
+
+***
+
+**Oct 24, 2025**<br><br>VKS (VNG Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:<br><br>**Tính năng mới:**<br><br>- **Hỗ trợ PVC encryption**: VKS (VNG Kubernetes Service) giờ đây hỗ trợ mã hóa Persistent Volume Claim (PVC), tương tự như tính năng mã hóa Volume của vServer. Tính năng này giúp tăng cường bảo mật dữ liệu lưu trữ trên các PVC, đảm bảo rằng dữ liệu của bạn luôn được bảo vệ an toàn ngay cả khi có truy cập trái phép vào hạ tầng lưu trữ. Chi tiết tham khảo thêm [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes).
+
+***
 
 **2025-10-24**
 VKS vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
