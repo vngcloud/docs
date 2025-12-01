@@ -1,4 +1,4 @@
-=# Release notes test
+# Release notes test
 
 **Nov 25, 2025**
 
