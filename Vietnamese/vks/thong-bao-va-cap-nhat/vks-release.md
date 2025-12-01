@@ -1,5 +1,31 @@
 # Release notes test
 
+## Nov 25, 2025
+
+VKS (VNG Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Tính năng mới:**
+
+- **Hỗ trợ Node groups ở nhiều subnets**: Node groups trong cùng 1 cluster có thể được tạo ở nhiều subnets khác nhau trong cùng 1 VPC. Tính năng này mang lại sự linh hoạt cao hơn trong việc quản lý tài nguyên mạng, giúp tối ưu hóa việc phân bổ và sử dụng các Node group một cách hiệu quả, phù hợp với các kiến trúc mạng phức tạp. Chi tiết tham khảo thêm tại đây.
+
+- **Triển khai VKS trên region HAN01**: VKS đã chính thức được triển khai trên region HAN01, mở rộng khả năng cung cấp dịch vụ cho khách hàng tại khu vực Hà Nội. Từ nay, quý khách hàng có thể dễ dàng sử dụng VKS tại HAN01 để triển khai các ứng dụng của mình, tận dụng lợi thế về độ trễ thấp và khả năng phục hồi cao, đáp ứng nhu cầu mở rộng dịch vụ. Chi tiết tham khảo thêm tại đây.
+
+- **Hỗ trợ CNI Cilium Overlay và Cilium Native Routing**: VKS nay hỗ trợ CNI Cilium Overlay và Cilium Native Routing, cho phép khách hàng lựa chọn Cilium làm mô hình mạng cho cluster của mình. Đặc biệt, chế độ Cilium Native Routing giúp cải thiện đáng kể hiệu suất và khả năng kết nối (performance & connectivity) cho các ứng dụng đòi hỏi độ trễ thấp và thông lượng cao, tối ưu hóa môi trường vận hành Kubernetes. Chi tiết tham khảo thêm tại đây.
+
+***
+
+## 2025-10-24
+VKS vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Tính năng mới:**
+
+- **Hỗ trợ PVC encryption**: VNG Kubernetes Service (VKS) nay đã hỗ trợ mã hóa Persistent Volume Claim (PVC), mang đến một lớp bảo mật bổ sung cho dữ liệu của bạn. Tính năng này giúp bảo vệ các dữ liệu nhạy cảm được lưu trữ trong PVC khỏi truy cập trái phép, đảm bảo tuân thủ các quy định bảo mật. Cơ chế mã hóa PVC hoạt động tương tự như tính năng mã hóa Volume trên vServer, cho phép người dùng dễ dàng quản lý và tăng cường an toàn cho môi trường Kubernetes của mình.
+  Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
+
+---
+
+***
+
 **Nov 25, 2025**
 
 VKS (VNG Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
