@@ -1,5 +1,14 @@
 # Release notes test
 
+**2025-10-24**
+VKS vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Tính năng mới:**
+* **Hỗ trợ PVC encryption**: PVC encryption tương tự như Volume của vServer. Tính năng này giúp tăng cường bảo mật dữ liệu trên các Persistent Volume Claims, đảm bảo an toàn cho các ứng dụng chạy trên VKS.
+  Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
+
+***
+
 VKS vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
 
 **Tính năng mới:**
