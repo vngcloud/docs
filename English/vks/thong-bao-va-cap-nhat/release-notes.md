@@ -1,5 +1,55 @@
 # Release notes
 
+## Nov 10, 2025 <a href="#nov_10_2025" id="nov_10_2025"></a>
+
+VKS (VNG Kubernetes Engine) has just released its latest update, bringing several important enhancements to users. Below are the key highlights of this release:
+
+**Improvements:**
+
+* **Deprecation of Kubernetes version 1.28:** VNG Cloud will discontinue support for Kubernetes version 1.28. Starting from November 10, 2025, users will no longer be able to create new Kubernetes clusters using version 1.28 via the Portal, API, or Terraform. On November 24, 2025, all existing Kubernetes 1.28 clusters will be automatically upgraded to the next supported version.
+
+If you are still running this version, please manually upgrade your clusters to a newer supported version before November 24, 2025.
+This change ensures that your Kubernetes environment remains up to date with the latest security patches and feature enhancements, delivering improved performance and reliability.
+
+***
+
+## May 9, 2025 <a href="#may_9_2025" id="may_9_2025"></a>
+
+VKS (VNGCloud Kubernetes Service) has just released its latest update, bringing several new features to users. Below are the key highlights of this release:
+
+**New Features:**
+
+* **Automatically delete clusters with no active nodes after 30 days:** The system will automatically scan and delete clusters that have no active nodes for 30 consecutive days. During the scanning period and before deletion, warning emails will be sent to you to ensure you can take action if you need to keep the cluster.
+* **Placement Group support for each Node Group:** This feature allows you to more effectively control the physical placement of nodes to optimize performance and ensure high availability—especially useful for workloads that require physical distribution or co-location to reduce latency.
+* **Release of Kubernetes version v1.30.10:** The new version v1.30.10 is now available in both HCM and HAN regions with two supported Images (Ubuntu with containerd and Container-Optimized OS with containerd). This version is published under the Rapid release channel—ideal for testing environments or projects that need early access to updates.
+
+***
+
+## April 25, 2025 <a href="#april_25_2025" id="april_25_2025"></a>
+
+VKS (VNGCloud Kubernetes Service) has just released its latest update, bringing several improvements to users. Below are the key highlights of this release:
+
+**Improvements:**
+
+* **End of support for Kubernetes version v1.27.12-vks.1724605200 on May 12, 2024:** Starting from April 25, 2025, you will no longer be able to create new clusters with this version. If you are still using this version, please manually upgrade to a newer version before May 12, 2024. After this date, the system will automatically upgrade clusters/node groups running this version to a higher one to ensure stability and security.
+
+If you need assistance, please contact our technical support team through the available support channels.
+
+***
+
+## April 16, 2025 <a href="#april_16_2025" id="april_16_2025"></a>
+
+VKS (VNGCloud Kubernetes Service) has just released its latest update, bringing several new features to users. Below are the key highlights of this release:
+
+**New Features:**
+
+* **Private Cluster support in the HAN region:** Previously, Private Cluster—a Kubernetes cluster whose control plane and nodes are fully private and only accessible via internal network—was only available in the HCM region. With this update, you can now:
+  * Create and use Private Clusters in the HAN region.
+  * Ensure feature consistency between the HCM and HAN regions.
+  * Flexibly select the deployment location closest to your workload.
+
+***
+
 ## Mar 5, 2025 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
 VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing many new features to users. Here are the highlights of the update:
