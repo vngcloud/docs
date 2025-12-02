@@ -1,5 +1,7 @@
 # Release notes
 
+## May 9, 2025
+
 ## May 9, 2025 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
 VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
