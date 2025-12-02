@@ -1,11 +1,12 @@
 # Release notes
 
 ## Nov 10, 2025
+
 VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều nâng cấp mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
 
 **Nâng cấp mới:**
 
-- **Ngừng hỗ trợ Kubernetes phiên bản 1.28**: VNG Cloud sẽ ngừng hỗ trợ Kubernetes phiên bản 1.28. Kể từ ngày 10/11/2025, người dùng sẽ không thể tạo cụm Kubernetes phiên bản 1.28 mới thông qua Portal, API hoặc Terraform. Vào ngày 24/11/2025, tất cả các cụm Kubernetes 1.28 hiện có sẽ được tự động nâng cấp lên phiên bản được hỗ trợ tiếp theo. Thay đổi này nhằm đảm bảo môi trường Kubernetes của bạn luôn được cập nhật các bản vá bảo mật và tính năng mới nhất, mang lại hiệu suất và độ tin cậy cao hơn.
+* **Ngừng hỗ trợ Kubernetes phiên bản 1.28**: VNG Cloud sẽ ngừng hỗ trợ Kubernetes phiên bản 1.28. Kể từ ngày 10/11/2025, người dùng sẽ không thể tạo cụm Kubernetes phiên bản 1.28 mới thông qua Portal, API hoặc Terraform. Vào ngày 24/11/2025, tất cả các cụm Kubernetes 1.28 hiện có sẽ được tự động nâng cấp lên phiên bản được hỗ trợ tiếp theo. Nếu bạn vẫn đang sử dụng phiên bản này, vui lòng thực hiện manually upgrade lên phiên bản mới hơn trước ngày 24/11/2025. Thay đổi này nhằm đảm bảo môi trường Kubernetes của bạn luôn được cập nhật các bản vá bảo mật và tính năng mới nhất, mang lại hiệu suất và độ tin cậy cao hơn.
 
 ***
 
@@ -15,7 +16,7 @@ VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất
 
 **Tính năng mới:**
 
-* **Tự động xóa cluster không có node active sau 30 ngày:** Hệ thống sẽ tự động quét và xóa các cluster không có node nào active trong vòng 30 ngày. Trong thời hạn quét và trước khi xóa, email cảnh báo sẽ được gửi đến bạn để đảm bảo bạn có thể chủ động xử lý nếu cần giữ lại cluster.&#x20;
+* **Tự động xóa cluster không có node active sau 30 ngày:** Hệ thống sẽ tự động quét và xóa các cluster không có node nào active trong vòng 30 ngày. Trong thời hạn quét và trước khi xóa, email cảnh báo sẽ được gửi đến bạn để đảm bảo bạn có thể chủ động xử lý nếu cần giữ lại cluster.
 * **Hỗ trợ Placement Group cho từng Node Group:** cho phép bạn kiểm soát vị trí triển khai node một cách hiệu quả hơn nhằm tối ưu hiệu năng và đảm bảo độ sẵn sàng cao, đặc biệt hữu ích cho các workload yêu cầu phân tán vật lý hoặc đồng vị trí để giảm độ trễ.
 * **Phát hành thêm version Kubernetes v1.30.10:** Phiên bản mới v1.30.10 đã sẵn sàng trên cả hai region HCM, HAN với đầy đủ 2 loại Image (Ubuntu with containerd và Container-Optimized OS with containerd). Phiên bản này đang được phát hành trong **release channel: Rapid** – thích hợp cho môi trường thử nghiệm hoặc các dự án cần cập nhật sớm.
 
