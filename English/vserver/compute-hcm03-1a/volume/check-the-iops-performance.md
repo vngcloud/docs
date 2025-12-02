@@ -4,7 +4,7 @@
 
 To check the IOPS (Input/Output Operations Per Second) performance on a Volume, you can use the tool`fio.`
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/QwvYaaRavGa49Raxbs3A" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Warning**
@@ -30,7 +30,7 @@ Below are detailed instructions and sample results for 3 performance tests of IO
 
 1. **Create a server with NVME** Volume drive with IOPS **5000** at the vServer home page:
 
-<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="/broken/files/X2JftCSxyhYKY8KVD2JX" alt="" width="563"><figcaption></figcaption></figure>
 
 2. **Connect to** your Server. For more information see [the Connect to a Virtual Server](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vserver/compute-hcm03-1a/server/ket-noi-vao-may-chu-ao) guide .
 3. Run the following command to install **FIO** :
@@ -539,15 +539,15 @@ Currently, the vServer and vMonitor Platform systems have integrated Dashboards 
 2. Select **Dashboard** , then select **All VNG Cloud**
 3. Continue to find and select **the Dashboard** containing your server name, this **Dashboard** name will have the format:`vServer-server-name-xxxx`
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/xTnKfjCcVtrIR70OeUcs" alt=""><figcaption></figcaption></figure>
 
 4. **On the Dashboard** detail screen , you can see the chart showing IOPS parameters in the chart below:
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/KoJwTB83HjjPi3gwSeSK" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ## **VNG Cloud performance test results** <a href="#kiemtrahieusuatiops-ketquathunghiemkiemtrahieusuatodiavngcloud" id="kiemtrahieusuatiops-ketquathunghiemkiemtrahieusuatodiavngcloud"></a>
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/VZA52Xg4Qvl1OI39avp3" alt=""><figcaption></figcaption></figure>
 

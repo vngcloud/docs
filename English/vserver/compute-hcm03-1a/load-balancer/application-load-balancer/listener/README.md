@@ -29,7 +29,6 @@ Let's say you want to create an HTTPS listener for a web application running on 
 
 With this configuration, the listener will listen for HTTPS traffic on port 443, decrypt the traffic using the provided SSL certificate, and then forward the decrypted traffic to the healthy backend servers in your target group.
 
-\
+<br>
 
-
-\
+<br>

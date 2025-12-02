@@ -36,4 +36,37 @@ Các bước thực hiện như sau:
 3. Sau khi kiểm tra application đã ổn định, bạn chọn vào Master mới và tiến hành create read-replica từ Master mới này.
 4. Bạn có thể xóa Master cũ nếu không còn nhu cầu sử dụng.
 
+## E. Long-time query:
+
+Đối với các long-time query, bạn nên sử dụng cơ chế connection pool, cũng như cấu hình các tham số liên quan tcp-keepalive, gửi heartbeat,... để tránh connection bị gián đoạn gây ra các lỗi query timeout, no reply,...&#x20;
+
+Ví dụ với redis-py, bạn có thể tham khảo:
+
+```
+redis.ConnectionPool((host, port, db, password, health_check_interval=30, socket_keepalive=True)
+```
+
+trong đó:
+
+* health\_check\_interval: Seconds between health pings on idle connections. Default is 0 (disabled). Should set to 30-60 seconds for long-lived connections.
+* socket\_keepalive: Enable TCP keepalive. Default is False. Should set to True.
+
+Ngoài ra còn các option khác, bạn có thể cân nhắc:
+
+* socket\_connect\_timeout: Timeout for initial connection in seconds.
+* socket\_timeout: Timeout for read/write operations in seconds
+* retry\_on\_timeout: Retry commands if a timeout occurs. Default is False.
+* socket\_keepalive\_options: A dict of TCP keepalive options. Example:&#x20;
+
+```
+socket_keepalive_options = {
+         # seconds before sending keepalive probes
+         4: 60,     # TCP_KEEPIDLE
+         # seconds between keepalive probes
+         5: 30,     # TCP_KEEPINTVL
+         # number of failed probes before dropping connection
+         6: 4       # TCP_KEEPCNT
+}
+```
+
 <br>

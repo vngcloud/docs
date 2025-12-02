@@ -55,7 +55,7 @@ Thực hiện theo hướng dẫn bên dưới để thiết lập transition ru
 * Khi kích hoạt, rule này sẽ tự động di chuyển **phiên bản không phải là phiên bản hiện tại** (noncurrent versions) object từ lớp lưu trữ hiện tại xuống lớp lưu trữ thấp hơn tùy chọn sau một khoảng thời gian nhất định.
 * Bạn có thể nhập số ngày trong phần "**After \_\_\_ days become noncurrent version**" để định nghĩa số ngày object được di chuyển nếu không có thay đổi.
 
-<figure><img src="../../../../../../.gitbook/assets/image (1156).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/AqGa7cY1UXOoucykW41o" alt=""><figcaption></figcaption></figure>
 
 ## Với Expiration rule
 
@@ -67,11 +67,11 @@ Expiration rule là tập quy định tự động xóa object khi đến thời
 
 3\. Chọn biểu tượng **Action** và chọn **Configure Lifecycle.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (1099).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/q0iF8JG2VmZJOAQcKtdg" alt=""><figcaption></figcaption></figure>
 
 4\. Màn hình **Lifecycle** được hiển thị. Chọn **Create a lifecycle rule**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (1100).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/jwEyhNI3Dn7ORn9go5sj" alt=""><figcaption></figcaption></figure>
 
 5\. Nhập **Rule name**. Rule name mà chúng tôi cho phép bạn nhập bao gồm các chữ cái (a-z, A-Z, 0-9, '\_', '-', space). Độ dài **Rule name** của bạn phải nằm trong khoảng từ 5 đến 50.
 

@@ -15,7 +15,7 @@ Nếu đã có backup location sẵn sàng cho việc lưu trữ backup point, l
 * Truy cập trang backup server tại đây: [https://backupcenter.console.vngcloud.vn/backup-server/list](https://backupcenter.console.vngcloud.vn/backup-server/list)
 *   Tìm và **chọn các backup server** cần cập nhật vị trí lưu trữ, sau đó nhấn chọn **Change location**&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (779).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="/broken/files/sKxsy6hAVjJNL4HM0zui" alt=""><figcaption></figcaption></figure>
 
 ## 2. Chọn vị trí lưu trữ mới (backup location)
 

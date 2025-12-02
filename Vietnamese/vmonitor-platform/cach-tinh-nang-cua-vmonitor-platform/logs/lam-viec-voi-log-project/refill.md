@@ -35,17 +35,17 @@ Chọn **My container** nếu bạn muốn chọn vStorage container thuộc s�
 
 * My container
 
-1. Chọn một **Region**. Nếu bạn muốn xem lại thông tin **Region** và các **vStorage project** cũng như **vStorage container** bạn đang có trên hệ thống vStorage, hãy chọn tại ![](https://docs-admin.vngcloud.vn/download/thumbnails/49650640/image2023-4-27\_13-54-3.png?version=1\&modificationDate=1683512577000\&api=v2)
-2. Chọn một **vStorage project** trong danh sách các project mà bạn đang có tại **Region** đã chọn trước đó trên hệ thống vStorage. Nếu danh sách vStorage project hiển thị cho bạn hiển thị đúng danh sách project tại thời điểm hiện tại, hãy chọn ![](https://docs-admin.vngcloud.vn/download/thumbnails/49650640/image2023-4-27\_13-55-2.png?version=1\&modificationDate=1683512577000\&api=v2).
-3. Chọn một **vStorage container** trong danh sách các container mà bạn đang có tại **project** đã chọn trước đó trên hệ thống vStorage. Nếu danh sách vStorage container hiển thị cho bạn hiển thị đúng danh sách container tại thời điểm hiện tại, hãy chọn ![](https://docs-admin.vngcloud.vn/download/thumbnails/49650640/image2023-4-27\_13-55-2.png?version=1\&modificationDate=1683512577000\&api=v2).
+1. Chọn một **Region**. Nếu bạn muốn xem lại thông tin **Region** và các **vStorage project** cũng như **vStorage container** bạn đang có trên hệ thống vStorage, hãy chọn tại ![](https://docs-admin.vngcloud.vn/download/thumbnails/49650640/image2023-4-27_13-54-3.png?version=1\&modificationDate=1683512577000\&api=v2)
+2. Chọn một **vStorage project** trong danh sách các project mà bạn đang có tại **Region** đã chọn trước đó trên hệ thống vStorage. Nếu danh sách vStorage project hiển thị cho bạn hiển thị đúng danh sách project tại thời điểm hiện tại, hãy chọn ![](https://docs-admin.vngcloud.vn/download/thumbnails/49650640/image2023-4-27_13-55-2.png?version=1\&modificationDate=1683512577000\&api=v2).
+3. Chọn một **vStorage container** trong danh sách các container mà bạn đang có tại **project** đã chọn trước đó trên hệ thống vStorage. Nếu danh sách vStorage container hiển thị cho bạn hiển thị đúng danh sách container tại thời điểm hiện tại, hãy chọn ![](https://docs-admin.vngcloud.vn/download/thumbnails/49650640/image2023-4-27_13-55-2.png?version=1\&modificationDate=1683512577000\&api=v2).
 4. Nhập **Access key** và **Secret key** để xác thực thông tin kết nối tới hệ thống vStorage. Bạn có thể tìm thấy **Access key** và **Secret key** theo hướng dẫn tại [Service Account](https://docs.vngcloud.vn/display/ONVINA/Service+Account) và [Sử dụng Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648950).
 5. Chọn **Select**.
 
-![](<../../../../.gitbook/assets/image (312).png>)
+![](/broken/files/m0fRRG3uESxzNDZirUl1)
 
 * Custom container
 
-1. Chọn một **Region**. Nếu bạn muốn xem lại thông tin **Region** và các **vStorage project** cũng như vStorage container bạn đang có trên hệ thống vStorage, hãy chọn tại ![](https://docs-admin.vngcloud.vn/download/thumbnails/49650640/image2023-4-27\_13-54-3.png?version=1\&modificationDate=1683512577000\&api=v2)
+1. Chọn một **Region**. Nếu bạn muốn xem lại thông tin **Region** và các **vStorage project** cũng như vStorage container bạn đang có trên hệ thống vStorage, hãy chọn tại ![](https://docs-admin.vngcloud.vn/download/thumbnails/49650640/image2023-4-27_13-54-3.png?version=1\&modificationDate=1683512577000\&api=v2)
 2. Nhập tên một **vStorage container** mà bạn muốn thực hiện archive qua.
 3. Nhập **Access key** và **Secret key** để xác thực thông tin kết nối tới hệ thống vStorage. Bạn có thể tìm thấy **Access key** và **Secret key** theo hướng dẫn tại [Service Account](https://docs.vngcloud.vn/display/ONVINA/Service+Account) và [Sử dụng Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648950).
 4. Chọn **Select**.
@@ -66,7 +66,7 @@ Chọn **My container** nếu bạn muốn chọn vStorage container thuộc s�
 
 9\. Nhập **Filter** cho log nếu có. Bạn có thể nhập điều kiện lọc cho log bằng phương thức **Suggestion mode** hoặc **Editor mode**. Để biết thêm thông tin hãy xem tại [Log search](https://docs-admin.vngcloud.vn/display/VPV/Log+search).
 
-10\. Chọn **Time range** bằng cách chọn ![](https://docs-admin.vngcloud.vn/download/thumbnails/49650640/image2023-5-8\_9-30-18.png?version=1\&modificationDate=1683513020000\&api=v2)sau đó chọn hoặc nhập khung thời gian mong muốn refill.
+10\. Chọn **Time range** bằng cách chọn ![](https://docs-admin.vngcloud.vn/download/thumbnails/49650640/image2023-5-8_9-30-18.png?version=1\&modificationDate=1683513020000\&api=v2)sau đó chọn hoặc nhập khung thời gian mong muốn refill.
 
 11\. Nếu bạn muốn thay đổi thông tin **Refill information**, bạn có thể chọn **Previous** sau đó bạn có thể thực hiện thay đổi thông tin theo nhu cầu của bạn. Nếu bạn đã cấu hình xong thông tin cho refill, chọn **Refill** để bắt đầu.
 

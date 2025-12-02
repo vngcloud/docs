@@ -20,9 +20,9 @@ After downloading the Example folder to the computer, the user opens the file [v
 * **Client\_id:** Get at IAM homepage/ Service account - Service account Detail - **Tab Security credentials**
 * **Client\_secret:** Obtained when initializing Service account at IAM homepage or can be reset at IAM homepage/ Service account - Service account Detail - **Tab Security credentials**
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/7uylXddLnPBfGZlScEi3" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/P1VxAvFU04hMaYtuv2Rs" alt=""><figcaption></figcaption></figure>
 
 | `variable "client_id"` `{  type` `= string  default = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}variable "client_secret"` `{  type` `= string  default = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}` |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -48,53 +48,48 @@ _chỉ để lại:_
 
 * **project\_id**: your project information, you can get it at [{Limit Tab}](https://hcm-3.console.vngcloud.vn/vserver/limit) on vServer Portal, For example: **pro-462803f3-6858-466f-bf05-df2b33faa360**:
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/jC8oQbAuvWNpikzP6OTk" alt=""><figcaption></figcaption></figure>
 
 
 
 * **image\_id**: operating system to initialize vServer eg: **img-b5bf635e-0456-4765-b493-31d5fcfc05aa** (1\_Ubuntu-22.04x64) ... you can see Id list when creating vServer on Portal/ [{System Image Tab}](https://hcm-3.console.vngcloud.vn/vserver/v-server/system-image)
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/jUE0es2mBlIrXR0xGnRo" alt=""><figcaption></figcaption></figure>
 
 * **flavor\_id**: vServer configuration that you will initialize for example: **flav-e2028a81-cc75-47e4-8af1-9eef2f857f84** (s-general-2x4) ,... you can see the list when creating vServer on Portal/ [{Flavors Tab}](https://hcm-3.console.vngcloud.vn/vserver/v-server/flavor).
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/AFezCRT6rlqATAIJggHa" alt=""><figcaption></figcaption></figure>
 
 | `variable "project_id"` `{  type`    `= string  default = "pro-462803f3-6858-466f-bf05-df2b33faa360"}variable "s_general_4x8"` `{  type`    `= string  default = "flav-05f97524-0410-46a4-87a8-af92aa759231"}variable "ubuntu_20_04"` `{  type`    `= string  default = "img-a34d639b-e070-46ff-8b91-addf4fac45b4"}` |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-\
-
+<br>
 
 * **volume\_type\_name**: specify IOPS for root disk and data disk, for example: **SSD-3000**, you can see Volume Type list on vServer Portal/ [{Volume Type Tab}](https://hcm-3.console.vngcloud.vn/vserver/v-server/system-image).
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/pb6yV0n8QNdwFy21fvI2" alt=""><figcaption></figcaption></figure>
 
-\
+<br>
 
-
-* **root\_disk\_size:** specify the size of the root disk drive, for example: **20**\
-
+* **root\_disk\_size:** specify the size of the root disk drive, for example: **20**<br>
 * **data\_disk\_size:** specify the root disk volume, for example: **50**
 
-\
-
+<br>
 
 | `variable "ssd_3000"` `{  type`    `= string  default = "3000"}variable "root_disk_size"` `{  type`    `= number  default = 20}variable "data_disk_size"` `{  type`    `= number  default = 50}` |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
-\
-
+<br>
 
 * **network\_id**: specify the network id that the vServer will be created on, you can get it from the [VPC tab](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), if you haven't initialized any network you can see the instructions [{Network creation page}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039):
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/qscGAzLoNfmI0gcsWhwN" alt=""><figcaption></figcaption></figure>
 
 
 
 * **subnet\_id**: specify the subnet id that vServer will be created on, you can get it from [{VPC Tab}](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), if you haven't initialized any subnet you can see the instructions at [{Subnet creation page}](../vpc/virtual-private-cloud-vpc.md):
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/Rtihp54Jdox331mby4oS" alt=""><figcaption></figcaption></figure>
 
 | `variable "network_id"` `{  type`    `= string  default = "net-22581aed-a65d-4b1e-86d3-102d68e148e0"}variable "subnet_id"` `{  type`    `= string  default = "sub-5f101cba-7ce0-4084-8576-06b8dbfb298a"` |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -103,35 +98,31 @@ _chỉ để lại:_
 
 * **ssh\_key\_id**: specify the ssh key that will be injected into the vServer, you can get it at [{SSH Keys Tab}](https://hcm-3.console.vngcloud.vn/vserver/v-server/ssh-key), if you haven't initialized any ssh key you can see it at [{SSH key creation page}](../security/ssh-key-key-pairs.md):
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/2sAS53cykRQ0Pe6zuW0z" alt=""><figcaption></figcaption></figure>
 
 * **security\_group\_id\_list**: specify a list of security group ids that need to be attached to vServer, you can get it at [{Security Groups Tab}](https://hcm-3.console.vngcloud.vn/vserver/network/sec-group), if you need to create more security groups you can see it at [{Security Group Creation Page}](../server-group.md).
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/HrjaDBAkZlxZFsTSAVJP" alt=""><figcaption></figcaption></figure>
 
 | `variable "ssh_key_id"` `{  type`    `= string  default = "ssh-b4fbf87a-d9bc-4f04-9ea1-39e086f443de"}variable "security_group_id_list"` `{  type`    `= list(string)  default = [    "secg-28e91c47-11b1-4cc1-8e24-dd174882708d"  ]}` |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-\
-
+<br>
 
 **Step 6**: Check the file [main.tf](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/modules/vng-cloud-vserver/main.tf)  information (follow the path _**terraform-provider-vngcloud/examples/modules/vng-cloud-vserver/**_), in the file we have some commands available: **Create Server, Create Volume , Attach volume to Server,** in this case to Create a new Server you just need to leave the **Create Server** resource follow the instructions below:
 
-\
-
+<br>
 
 | `data "vngcloud_vserver_volume_type_zone"` `"volume_type_zone"` `{  name       = "SSD"  project_id = var.project_id}data "vngcloud_vserver_volume_type"` `"volume_type"` `{  name                = var.ssd_3000  project_id          = var.project_id  volume_type_zone_id = data.vngcloud_vserver_volume_type_zone.volume_type_zone.id}` `resource "vngcloud_vserver_server"` `"server"` `{  count             = var.server_count  project_id        = var.project_id  name              = "vngcloud-tinbhn22-${count.index}"  encryption_volume = false  attach_floating   = true  flavor_id         = var.s_general_4x8  image_id          = var.ubuntu_20_04  network_id        = var.network_id  root_disk_size    = var.root_disk_size  root_disk_type_id = data.vngcloud_vserver_volume_type.volume_type.id  security_group    = var.security_group_id_list  subnet_id         = var.subnet_id  action            = "start"  #  user_name         = "stackops"  #  user_password     = "Vng@Cloud3030"  #  expire_password   = false  #  ssh_key           = var.ssh_key_id  #user_data_base64_encode = var.user_data_base64_encode  #user_data               = "${data.template_cloudinit_config.user_data.rendered}"  lifecycle {    create_before_destroy = true  }}` |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-\
-
+<br>
 
 **Step 7**: Launch the terraform command
 
 * After completing the above information, in order for terraform to initialize and download the VNG Cloud provider and set up the necessary information, run the command below, note that when running, you need to stand in the directory terraform-provider-vngcloud/ [examples/](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples) :
 
-\
-
+<br>
 
 | `terraform init` |
 | ---------------- |
@@ -157,4 +148,4 @@ and select **YES** to perform vServer initialization via Terraform
 
 **Step 8**: You can go to the Portal to see the Server being initialized from Terraform:
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/3mP9cuu89uJxGkPRWLBK" alt=""><figcaption></figcaption></figure>

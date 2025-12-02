@@ -59,7 +59,7 @@ Cách tính chi phí gia hạn cho mỗi gói Log project được chúng tôi c
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục Log.
-4. Tại gói Log project đang sử dụng, chọn biểu tượng <img src="../../../.gitbook/assets/image (158).png" alt="" data-size="line">sau đó chọn **Resize**.
+4. Tại gói Log project đang sử dụng, chọn biểu tượng <img src="/broken/files/7DDKBHPFgidSp962nozN" alt="" data-size="line">sau đó chọn **Resize**.
 5. Chọn **Log project class** mới mà bạn muốn nâng cấp. Nếu gói log project của bạn đang ở class Basic thì bạn có thể nâng cấp nó lên class Pro. Nếu gói log project của bạn đang ở gói Pro thì bạn có thể nâng cấp nó lên cấu hình cao hơn trong cùng class.&#x20;
 6. Chọn **Resize.**
 7. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Log project** sẽ được tăng hạn mức.

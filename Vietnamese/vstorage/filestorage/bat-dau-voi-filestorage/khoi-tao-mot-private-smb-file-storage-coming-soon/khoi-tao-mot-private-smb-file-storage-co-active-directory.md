@@ -132,7 +132,7 @@ Cụ thể, vui lòng thực hiện theo các bước bên dưới:
 
 5. Tại mục **Server Selection**: bạn chọn **Select a server from the server pool** và **chọn server hiện tại** sau đó chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="/broken/files/tBhapg9Xee7silmajsgQ" alt="" width="563"><figcaption></figcaption></figure>
 
 6. Tại mục **Server Roles**: Tick chọn **DNS Server** sau đó nhấn **Next** và **Install** để cài đặt.
 
@@ -156,7 +156,7 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 
 1. Thực hiện mở **DNS Manager** bằng cách chọn **Tools**, sau đó chọn **DNS**
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (2).png" alt="" width="336"><figcaption></figcaption></figure>
+<figure><img src="/broken/files/Uew3VnO3BKsnWTzE1U8t" alt="" width="336"><figcaption></figcaption></figure>
 
 2. Trong DNS Manager, chọn vào DNS đang có và tiếp tục nhấp chuột phải vào **Forward Lookup Zones** và chọn **New Zone**
 
@@ -350,7 +350,7 @@ Address: 10.50.3.9
 
 13. Tại màn hình **Deployment Configuration**, chọn **Add a new forest** sau đó nhập **DNS domain name** đã tạo (<mark style="color:red;">**chính là Zone name đã tạo tại bước Tạo một Forward Lookup Zone**</mark>) sau đó chọn **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (887).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="/broken/files/yK9GdAzTFH7smmbMUdQ2" alt="" width="563"><figcaption></figcaption></figure>
 
 14. Tại màn hình **Domain Controller Options**, bạn hãy nhập **Password** và **Confirm Password** cho DSRM của bạn
 

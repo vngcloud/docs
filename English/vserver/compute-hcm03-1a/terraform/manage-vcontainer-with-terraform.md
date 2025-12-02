@@ -118,8 +118,7 @@ default = "img-a34d639b-e070-46ff-8b91-addf4fac45b4"
 
 <figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **root\_disk\_size:** specify the size of the root disk drive, for example: **20**\
-
+* **root\_disk\_size:** specify the size of the root disk drive, for example: **20**<br>
 * **data\_disk\_size:** specify the root disk volume, for example: **50**
 
 ```
@@ -153,8 +152,7 @@ type    = string
 default = "sub-5f101cba-7ce0-4084-8576-06b8dbfb298a" }
 ```
 
-\
-
+<br>
 
 * **ssh\_key\_id**: specify the ssh key that will be injected into the vServer, you can get it at [{SSH Keys Tab}](https://hcm-3.console.vngcloud.vn/vserver/v-server/ssh-key), if you haven't initialized any ssh key you can see it at [{SSH key creation page}](../security/ssh-key-key-pairs.md):
 

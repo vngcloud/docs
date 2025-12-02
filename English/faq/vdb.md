@@ -6,8 +6,7 @@ When initializing the vDB, you can click on Public accessibility. If it has alre
 
 ### \[vDB] How do I renew my vDB?
 
-You can refer to the following guide link: <mark style="color:blue;">Renew RDS Instance</mark>\
-
+You can refer to the following guide link: <mark style="color:blue;">Renew RDS Instance</mark><br>
 
 ### \[vDB] Why can't I upgrade my MySQL package?
 

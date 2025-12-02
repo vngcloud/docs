@@ -19,4 +19,4 @@
 * Or add a note in the “**Add a Comment**” section to update the current status of the deal's progress:
   * Enter the note and click “**Add a Comment**” to complete.
 
-\
+<br>

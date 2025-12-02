@@ -10,8 +10,7 @@ After creating Snapshots for the virtual server and disks, you can view the list
    1. Total snapshot capacity
    2. Total number of snapshots
    3. Number of volumes with snapshots
-4. The detailed list page will include information such as:\
-
+4. The detailed list page will include information such as:<br>
    1. Snapshot Name
    2. Status
    3. Snapshot Description

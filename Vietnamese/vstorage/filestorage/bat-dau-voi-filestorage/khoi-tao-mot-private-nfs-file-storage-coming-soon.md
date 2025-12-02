@@ -27,7 +27,7 @@
   * **All:** Cho phép tất cả IP có quyền truy cập RO (Read-Only) hoặc RW (Read-Write).
   * **Restricted:** Chỉ cho phép một số IP cụ thể truy cập với quyền RO hoặc RW.
 
-<figure><img src="../../../.gitbook/assets/image (907).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/asWE3UuCE8wZY9UT9TUZ" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Chọn **Create File Storage.**
 

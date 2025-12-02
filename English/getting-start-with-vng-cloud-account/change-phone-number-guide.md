@@ -4,8 +4,7 @@
 
 <figure><img src="../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Step 2:** Enter the phone number you want to change to. Then, click "**Send OTP**" to receive the OTP code from the email you have registered.\
-
+**Step 2:** Enter the phone number you want to change to. Then, click "**Send OTP**" to receive the OTP code from the email you have registered.<br>
 
 <figure><img src="../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

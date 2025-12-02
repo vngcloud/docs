@@ -26,4 +26,4 @@ You can create a placement group with the affinity or anti-affinity policy. This
 2. Create additional Placement Groups and choose the appropriate affinity or anti-affinity policy. Once the Server group is created, you cannot change this policy attribute.
 3. You can create virtual servers and select an existing Placement Group according to your needs.
 
-\
+<br>

@@ -9,7 +9,7 @@ However, what you need to do now is create a Backup job for your resource follow
 {% hint style="info" %}
 Important
 
-When you use the vBackup service for the first time, we will automatically create a default storage location on vStorage with 50 GB of free storage and a usage period of 1 month. However, to store more data, you will need to purchase additional storage capacity. The usage and payment for backup storage will be in the Gold class tier of vStorage. For more information on storage policies and terms, see [here](broken-reference).
+When you use the vBackup service for the first time, we will automatically create a default storage location on vStorage with 50 GB of free storage and a usage period of 1 month. However, to store more data, you will need to purchase additional storage capacity. The usage and payment for backup storage will be in the Gold class tier of vStorage. For more information on storage policies and terms, see [here](/broken/pages/RwVKLViyzVmAsRYZjnVj).
 {% endhint %}
 
 ### Creating a Backup Based on Policy Schedule in the vBackup Interface <a href="#taobansaoluuchomaychuaotheobolichpolicy-taobansaoluutheobolichpolicytaigiaodienvbackup" id="taobansaoluuchomaychuaotheobolichpolicy-taobansaoluutheobolichpolicytaigiaodienvbackup"></a>
@@ -41,4 +41,4 @@ You can quickly create a backup for one or more Servers from the Server list man
 3. One or more Backup Servers will be created with the default Policy schedule depending on the number of Servers selected for backup.
 4. After creating a Backup Server, you can wait for the time specified in the Policy schedule for the system to create the Backup file, or you can choose "[Backup Now](create-backups-immediately-back-now.md)" to create a backup immediately.&#x20;
 
-\
+<br>

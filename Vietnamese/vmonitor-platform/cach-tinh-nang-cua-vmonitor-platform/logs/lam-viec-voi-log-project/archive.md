@@ -37,7 +37,7 @@ Nếu bạn có nhu cầu lưu trữ dữ liệu log lâu dài hơn những th�
 
 14\. Chọn **Select**.
 
-<img src="../../../../.gitbook/assets/image (309).png" alt="" data-size="original">
+<img src="/broken/files/Azxyfvq2JiqnLO3q6xN7" alt="" data-size="original">
 
 </details>
 

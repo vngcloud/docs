@@ -8,11 +8,11 @@ Sau khi bạn tải object lên container, bạn có thể xem thông tin về o
 
 2\. Chọn **project, container** sau đó chọn các **object** bạn muốn thực hiện tải xuống.
 
-3\. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648540/image2023-3-6\_11-1-46.png?version=1\&modificationDate=1678075307000\&api=v2)hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648540/image2023-2-6\_10-20-54.png?version=1\&modificationDate=1678075315000\&api=v2)tại object bạn muốn thực hiện tải xuống và chọn![](https://docs.vngcloud.vn/download/thumbnails/49648540/image2023-3-6\_11-2-7.png?version=1\&modificationDate=1678075328000\&api=v2).
+3\. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648540/image2023-3-6_11-1-46.png?version=1\&modificationDate=1678075307000\&api=v2)hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648540/image2023-2-6_10-20-54.png?version=1\&modificationDate=1678075315000\&api=v2)tại object bạn muốn thực hiện tải xuống và chọn![](https://docs.vngcloud.vn/download/thumbnails/49648540/image2023-3-6_11-2-7.png?version=1\&modificationDate=1678075328000\&api=v2).
 
 Bạn đã tải xuống thành công object của mình.
 
-<figure><img src="../../../../../.gitbook/assets/Tai_xuong_object (1).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/0MoD1DuvijTZL7Wkq8vU" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Sử dụng vStorage API" %}

@@ -21,4 +21,4 @@ In the scaling group configuration, enter the necessary information
 
 **Step 4:** If you want to see the detailed information of the Group, click on the tickbox right at the Scaling Group Management screen to see it
 
-\
+<br>

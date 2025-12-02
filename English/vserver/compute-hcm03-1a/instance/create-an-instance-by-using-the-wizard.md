@@ -72,4 +72,4 @@ You can select the server group info for request an affinity or anti-affinity po
 
 After the instance is created, go to the Instance page to check the state of the instance. When the state of the instance changes to **Running**, the instance can be accessed. You will receive an email with credential.
 
-\
+<br>

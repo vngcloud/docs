@@ -1,4 +1,4 @@
-# Restart VM
+# Restart Instance
 
 Restarting a VM is equivalent to rebooting the operating system. In most cases, it only takes a few minutes to restart your virtual server.
 
@@ -15,8 +15,7 @@ Restarting the server does not start a new billing cycle (with a minimum fee of 
 
 We can schedule restarts of your instance for necessary maintenance, such as applying updates requiring a restart. You don't need to take any action; we advise you to wait for the scheduled restart process to occur in the scheduled window.
 
-We recommend using the vServer Portal dashboard, command-line tool, or API to restart your instance. If you use the vServer Portal dashboard, command-line tool, or API to restart your server, we will perform a hard restart if the instance doesn't shut down completely within a few minutes.\
-
+We recommend using the vServer Portal dashboard, command-line tool, or API to restart your instance. If you use the vServer Portal dashboard, command-line tool, or API to restart your server, we will perform a hard restart if the instance doesn't shut down completely within a few minutes.<br>
 
 ***
 

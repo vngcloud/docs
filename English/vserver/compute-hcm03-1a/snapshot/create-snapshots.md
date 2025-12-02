@@ -26,8 +26,7 @@ The snapshot process operates asynchronously. Even though the point-in-time snap
 3. On the Create Snapshot information entry page, you need to complete the following items:
    * **Snapshot Type** – Choose the object you want to create a Snapshot for, according to Volume.&#x20;
    * **Snapshot Name** – Name for your Snapshot. The name can only contain letters and numbers (a-z, A-Z, 0-9, '\_', '-'). Your input data length must be from 5 to 50 characters. The name must be unique within the Region and VNG Cloud account you are creating the Snapshot for.
-   * **Snapshot Settings**:\
-
+   * **Snapshot Settings**:<br>
      * **Volume ID:** Select the Volume you want to create a Snapshot for by ID
      * **Description** – Enter a note for the Snapshot
      * **Retention Time:** Choose the retention time for the Snapshot, you can choose to retain the Snapshot permanently or for the number of days you enter
@@ -42,8 +41,7 @@ The snapshot process operates asynchronously. Even though the point-in-time snap
 3. On the Create Snapshot information entry page, you need to complete the following items:
    * **Snapshot Type** – Choose the object you want to create a Snapshot for, according to the Server. Selecting by Server implies that you will create a Snapshot attached to the chosen Server.
    * **Snapshot Name** – Name for your Snapshot. The name can only contain letters and numbers (a-z, A-Z, 0-9, '\_', '-'). Your input data length must be from 5 to 50 characters. The name must be unique within the Region and VNG Cloud account you are creating the Snapshot for.
-   * **Snapshot Settings:**\
-
+   * **Snapshot Settings:**<br>
      * **Volume ID**: Select the Volume you want to create a Snapshot for by ID
      * **Description** – Enter a note for the Snapshot
      * **Retention Time**: Choose the retention time for the Snapshot, you can choose to retain the Snapshot permanently or for the number of days you enter
@@ -55,4 +53,4 @@ The snapshot process operates asynchronously. Even though the point-in-time snap
 
 Snapshot encryption ensures the security of your data in cloud environments. When snapshots are created from encrypted disks, they are automatically encrypted, safeguarding the data during storage and transmission. This encryption mechanism provides comprehensive protection for both the disk and any related snapshots. For further details, please refer to the documentation on [Volume encryption.](../instance/compute-encryption-volume/)&#x20;
 
-\
+<br>

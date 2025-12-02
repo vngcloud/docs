@@ -40,7 +40,7 @@ Processor: là những thư viện hỗ trợ bạn parse và enrich dữ liệu
 2. Chọn thư mục **Log.**
 3. Chọn **Log pipeline.**
 4. Trong danh sách log pipeline đang có, chọn **Log pipeline** chứa **Processor group và Processor** mà bạn muốn chỉnh sửa.
-5. Tại **Processor** mà bạn muốn chỉnh sửa, chọn <img src="../../../../../.gitbook/assets/image (320).png" alt="" data-size="line">
+5. Tại **Processor** mà bạn muốn chỉnh sửa, chọn <img src="/broken/files/j9GGbPOPnjdnqS26YzE2" alt="" data-size="line">
 6. Chọn **Edit processor**.
 7. Chỉnh sửa các thông số cho **Processor** mà bạn mong muốn. Bạn có thể chỉnh sửa tất cả các trường thông tin trong cấu hình một Processor. Việc chỉnh sửa này tương tự như khi bạn thực hiện tạo mới một Processor theo hướng dẫn bên trên.
 8. Chọn **Save.**
@@ -55,7 +55,7 @@ Khi bạn không có nhu cầu sử dụng một Processor tùy chỉnh nữa, b
 2. Chọn thư mục **Log.**
 3. Chọn **Log pipeline** chứa Processor group và Processor mà bạn muốn thực hiện xóa.
 4. Chọn **Processor.**
-5. Tại **Processor** mà bạn muốn xóa, chọn <img src="../../../../../.gitbook/assets/image (321).png" alt="" data-size="line">
+5. Tại **Processor** mà bạn muốn xóa, chọn <img src="/broken/files/q8cfHlE0gD4oFKSczPLZ" alt="" data-size="line">
 6. Chọn **Delete**.
 7. Tại màn hình xác nhận xóa Processor, chọn **Delete**.
 

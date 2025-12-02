@@ -2,6 +2,8 @@
 
 Để kết nối với DB Instance có **Database Engine** là Redis, bạn có thể sử dụng redis-cli, hay các thư viện redis client của các ngôn ngữ lập trình như jedis, redis-py,...
 
+**Lưu ý:** đối với các long-time query, bạn nên cấu hình các option liên quan **tcp\_keepalive** hoặc **healthcheck\_interval**, tránh bị gián đoạn kết nối giữa chừng. Chi tiết vui lòng xem thêm mục [**Lưu ý & Hạn chế**](../luu-y-and-han-che.md#e.-long-time-query)**.**
+
 Nếu muốn truy cập bằng giao diện, bạn có thể tham khảo tool AnotherRedisDesktopManager tải tại link sau:
 
 [https://github.com/qishibo/AnotherRedisDesktopManager](https://github.com/qishibo/AnotherRedisDesktopManager)
@@ -10,8 +12,16 @@ Nếu sử dụng tool cli, bạn có thể làm theo bài viết sau sử dụn
 
 Để sử dụng redis-cli, trên Linux bạn có thể tải source và build như sau:
 
-| `wget http://download.redis.io/redis-stable.tar.gztar xvzf redis-stable.tar.gzcd redis-stablemake distclean // Ubuntu systems onlymakesudo make install` |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+```
+wget http://download.redis.io/redis-stable.tar.gz
+tar xvzf redis-stable.tar.gz
+cd redis-stable
+make distclean // Ubuntu systems only
+make
+sudo make install
+```
+
+
 
 * [Bước 1. Xác định thông tin Endpoint & Port để truy cập:](ket-noi-mds-instance.md#ketnoimdsinstance-buoc1.xacdinhthongtinendpoint-and-portdetruycap)
 * [Bước 2: Tùy chỉnh Security Group Rules để bảo vệ DB Instance (tùy chọn)](ket-noi-mds-instance.md#ketnoimdsinstance-buoc2-tuychinhsecuritygrouprulesdebaovedbinstance-tuychon)
@@ -41,9 +51,10 @@ Khi kết nối đã thông suốt, bạn có thể tiến hành kết nối t�
 
 Sau khi có thông tin endpoint, bạn có thể kết nối tới thông qua IP & Port.
 
-VD: DB Instance có IP: `10.23.0.5`, port: 6379, bạn kết nối bằng redis-cli như sau:
+VD: DB Instance có IP: 10.23.0.5, port: 6379, bạn kết nối bằng redis-cli như sau:
 
-| <p><code>$ redis-cli -h 10.23.0.5 -p 6379</code><br><br><code>10.23.0.5:6379></code></p> |
-| ---------------------------------------------------------------------------------------- |
+```
+$ redis-cli -h 10.23.0.5 -p 6379
+10.23.0.5:6379>
+```
 
-Chúc mừng bạn đã truy cập thành công.

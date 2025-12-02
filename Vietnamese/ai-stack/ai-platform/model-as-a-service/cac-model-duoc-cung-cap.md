@@ -47,13 +47,6 @@ MaaS hỗ trợ nhiều loại mô hình khác nhau:
 | GreenMind Medium 14B R1 Completion | GreenNode | 50 requests / day |
 | ChatGPT 3.5 Turbo Instruct         | OpenAI    | 50 requests / day |
 
-### _Speech_
-
-| Model Name | Provider | Rate Limit        |
-| ---------- | -------- | ----------------- |
-| Zalo TTS   | Zalo     | 10 requests / day |
-| Zalo STT   | Zalo     | 10 requests / day |
-
 ### _Embedding_
 
 | Model Name                            | Provider  | Rate Limit        |

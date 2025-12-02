@@ -45,8 +45,8 @@ To share the entire object in a container, instead of creating multiple URLs for
 {% tab title="Using vStorage API" %}
 In addition to the traditional management interface, we also provide an API that allows you to integrate with your applications and tools using vStorage for data storage.
 
-1. [Khởi tạo tài khoản Service Account](broken-reference) nếu chưa có
-2. Lấy thông tin access token. Tham khảo tại [Chứng thực với Service Account](broken-reference)
+1. [Khởi tạo tài khoản Service Account](/broken/pages/NMV1pQRE4Qhak7uPSN2d) nếu chưa có
+2. Lấy thông tin access token. Tham khảo tại [Chứng thực với Service Account](/broken/pages/A65btlFQz1T2SbfF3isl)
 3. If you want to create a **Presigned URL**, you need to enter the **S3 key** information. S3 key information can be obtained in IAM. You can choose Click [here](https://iam.console.vngcloud.vn/vstorage-credentials/s3) to go to IAM and manage s3 keys. to view detailed information about created S3 key pairs and create new S3 key pairs for use. For more details, refer to [Create a S3 key](../../identity-and-access-management/managing-vstorage-access-account/service-account/vstorage-credentials/create-a-s3-key.md).
 4. To obtain Temporary URL or Presigned URL for sharing objects through vStorage API, please refer to the [API download/share object](https://docs.api.vngcloud.vn/service-docs/vstorage-api.html#tag/object/operation/retrieveDownloadObjectTempURLUsingPOST).
 

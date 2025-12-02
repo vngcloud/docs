@@ -31,7 +31,7 @@ Trong thời gian object đang được tải lên, bạn không thể thực hi
 
 Tất cả dữ liệu do bạn tải lên đều thuộc sở hữu của bạn, VNG Cloud sẽ không thể can thiệp hay khôi phục dữ liệu khi bị xóa hay ghi đè bởi lỗi người dùng. Để tránh các các sự cố về ghi đè hay xóa nhầm chúng tôi khuyến khích bạn nên sao lưu phiên bản container (tính năng versioning) để bảo vệ dữ liệu. Để xem chi tiết tính năng versioning, hãy xem [Sử dụng tính năng container versioning](../lam-viec-voi-container/su-dung-tinh-nang-container-versioning.md).
 
-<img src="../../../../../.gitbook/assets/Tai_len_tep_tin (1).gif" alt="" data-size="original">
+<img src="/broken/files/5YxMRnQ6kj5WMV4SaFvk" alt="" data-size="original">
 
 </details>
 

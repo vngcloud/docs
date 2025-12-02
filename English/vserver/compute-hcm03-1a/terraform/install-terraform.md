@@ -74,8 +74,7 @@ For more details on adding  binaries  to your  binary paths, check out this [Sta
 
 This [Stack Overflow](https://stackoverflow.com/questions/1618280/where-can-i-set-path-to-make-exe-on-windows) article contains instructions for setting PATH on Windows through the user interface.
 
-\
-
+<br>
 
 **Xác minh cài đặt**
 
@@ -159,4 +158,4 @@ This working directory contains configuration files that you write to describe t
 
 In the working directory, create a file named **`main.tf`**  and paste the Terraform configuration (Server, Container, LB) after that.
 
-\
+<br>

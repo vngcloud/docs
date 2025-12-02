@@ -12,7 +12,7 @@ Trong quá trình sử dụng, người dùng vẫn có thể xóa VPN. Tuy nhi�
 
 
 
-<figure><img src="../../.gitbook/assets/image (6) (5).png" alt=""><figcaption><p>VPN List</p></figcaption></figure>
+<figure><img src="/broken/files/WZTGIreN6ndGjC0twuxf" alt=""><figcaption><p>VPN List</p></figcaption></figure>
 
 **Bước 2: Chọn VPN muốn xoá tại cột Action**
 

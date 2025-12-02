@@ -13,7 +13,7 @@ Sau khi bạn đã thực hiện khởi tạo project và khởi tạo S3 key th
 1. Tải công cụ người dùng S3 Browser tại đây [https://s3browser.com/download.aspx](https://s3browser.com/download.aspx).
 2. Mở ứng dụng **S3 Browser.** Chọn thư mục **Account, sau đó chọn Add new account**
 
-<figure><img src="../../../../../.gitbook/assets/image (585).png" alt="" width="295"><figcaption></figcaption></figure>
+<figure><img src="/broken/files/zdfBnly3qSdD5xpFLJyL" alt="" width="295"><figcaption></figcaption></figure>
 
 
 
@@ -114,7 +114,7 @@ SSE-S3 (Server-Side Encryption with S3 Managed Keys) là tính năng mã hóa d�
 
 Tiếp theo, khi bucket được tạo thành công, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Object Locked**. Bạn có thể thiết lập object locked ở cả 2 mode **Retention** và **Legal Hold** thông qua S3 Browser. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-object-lock.aspx](https://s3browser.com/amazon-s3-object-lock.aspx)
 
-<figure><img src="../../../../../.gitbook/assets/image (592).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/16AQoSHTCaZyr84n01EH" alt=""><figcaption></figcaption></figure>
 
 ### **Versioning**
 
@@ -122,7 +122,7 @@ Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá
 
 Để thiết lập Versioning cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Edit Versioning Settings**. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-versioning.aspx](https://s3browser.com/amazon-s3-versioning.aspx)
 
-<figure><img src="../../../../../.gitbook/assets/image (594).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/b0EhIplaFEDNWGJnVcHt" alt=""><figcaption></figcaption></figure>
 
 ### **Lifecycle rotation**
 

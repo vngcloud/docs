@@ -1,12 +1,32 @@
-# Release notes
+# Release notes test
 
-## Nov 10, 2025
+## Nov 25, 2025
 
-VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều nâng cấp mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+VKS (VKS) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
 
-**Nâng cấp mới:**
+**Tính năng mới:**
 
-* **Ngừng hỗ trợ Kubernetes phiên bản 1.28**: VNG Cloud sẽ ngừng hỗ trợ Kubernetes phiên bản 1.28. Kể từ ngày 10/11/2025, người dùng sẽ không thể tạo cụm Kubernetes phiên bản 1.28 mới thông qua Portal, API hoặc Terraform. Vào ngày 24/11/2025, tất cả các cụm Kubernetes 1.28 hiện có sẽ được tự động nâng cấp lên phiên bản được hỗ trợ tiếp theo. Nếu bạn vẫn đang sử dụng phiên bản này, vui lòng thực hiện manually upgrade lên phiên bản mới hơn trước ngày 24/11/2025. Thay đổi này nhằm đảm bảo môi trường Kubernetes của bạn luôn được cập nhật các bản vá bảo mật và tính năng mới nhất, mang lại hiệu suất và độ tin cậy cao hơn.
+- **Hỗ trợ Node groups ở nhiều subnets**: Tính năng này cho phép bạn linh hoạt hơn trong việc quản lý tài nguyên mạng, giúp tối ưu hóa việc phân bổ các Node group trong cùng một cụm Kubernetes. Giờ đây, các Node group có thể được tạo ở nhiều subnets khác nhau trong cùng một VPC, nâng cao khả năng chịu lỗi và hiệu quả sử dụng mạng. Chi tiết tham khảo thêm tại đây.
+  Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
+
+- **Triển khai VKS trên region HAN01**: VNG Kubernetes Service (VKS) chính thức được triển khai tại region HAN01. Điều này mở rộng phạm vi dịch vụ, mang đến cho khách hàng tại khu vực phía Bắc thêm lựa chọn để triển khai các ứng dụng Kubernetes của mình với độ trễ thấp và hiệu suất cao. Chi tiết tham khảo thêm tại đây.
+  Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
+
+- **Hỗ trợ CNI Cilium Overlay và Cilium Native Routing**: VKS nay hỗ trợ CNI Cilium với hai chế độ: Cilium Overlay và Cilium Native Routing. Việc tích hợp này mang lại cho khách hàng sự linh hoạt trong việc lựa chọn mô hình mạng cho cụm Kubernetes của mình. Đặc biệt, chế độ Cilium Native Routing giúp cải thiện đáng kể hiệu suất và khả năng kết nối, đáp ứng tối ưu cho các ứng dụng đòi hỏi hiệu năng cao. Chi tiết tham khảo thêm tại đây.
+  Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
+
+***
+
+## Oct 24, 2025
+
+VKS (VNG Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Tính năng mới:**
+
+- **Hỗ trợ PVC encryption**: VNG Cloud hiện đã hỗ trợ tính năng mã hóa PVC (Persistent Volume Claim) cho VKS, mang đến một lớp bảo mật mạnh mẽ hơn cho dữ liệu trên các Persistent Volumes của bạn. Tính năng này hoạt động tương tự như cơ chế mã hóa Volume đã có trên vServer, giúp bảo vệ dữ liệu nhạy cảm khỏi truy cập trái phép ngay cả khi volume bị tháo rời. Việc mã hóa PVC đảm bảo an toàn dữ liệu tuân thủ các tiêu chuẩn bảo mật cao nhất, đặc biệt hữu ích cho các ứng dụng đòi hỏi sự tuân thủ nghiêm ngặt về bảo mật thông tin.
+Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
+
+---
 
 ***
 
@@ -16,7 +36,7 @@ VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất
 
 **Tính năng mới:**
 
-* **Tự động xóa cluster không có node active sau 30 ngày:** Hệ thống sẽ tự động quét và xóa các cluster không có node nào active trong vòng 30 ngày. Trong thời hạn quét và trước khi xóa, email cảnh báo sẽ được gửi đến bạn để đảm bảo bạn có thể chủ động xử lý nếu cần giữ lại cluster.
+* **Tự động xóa cluster không có node active sau 30 ngày:** Hệ thống sẽ tự động quét và xóa các cluster không có node nào active trong vòng 30 ngày. Trong thời hạn quét và trước khi xóa, email cảnh báo sẽ được gửi đến bạn để đảm bảo bạn có thể chủ động xử lý nếu cần giữ lại cluster.&#x20;
 * **Hỗ trợ Placement Group cho từng Node Group:** cho phép bạn kiểm soát vị trí triển khai node một cách hiệu quả hơn nhằm tối ưu hiệu năng và đảm bảo độ sẵn sàng cao, đặc biệt hữu ích cho các workload yêu cầu phân tán vật lý hoặc đồng vị trí để giảm độ trễ.
 * **Phát hành thêm version Kubernetes v1.30.10:** Phiên bản mới v1.30.10 đã sẵn sàng trên cả hai region HCM, HAN với đầy đủ 2 loại Image (Ubuntu with containerd và Container-Optimized OS with containerd). Phiên bản này đang được phát hành trong **release channel: Rapid** – thích hợp cho môi trường thử nghiệm hoặc các dự án cần cập nhật sớm.
 
