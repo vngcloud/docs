@@ -7,8 +7,6 @@ VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới nhất, mang
 
 - **Ngừng hỗ trợ Kubernetes phiên bản 1.28**: VNG Cloud sẽ ngừng hỗ trợ Kubernetes phiên bản 1.28. Kể từ ngày 10/11/2025, người dùng sẽ không thể tạo cụm Kubernetes phiên bản 1.28 mới thông qua Portal, API hoặc Terraform. Vào ngày 24/11/2025, tất cả các cụm Kubernetes 1.28 hiện có sẽ được tự động nâng cấp lên phiên bản được hỗ trợ tiếp theo. Thay đổi này nhằm đảm bảo môi trường Kubernetes của bạn luôn được cập nhật các bản vá bảo mật và tính năng mới nhất, mang lại hiệu suất và độ tin cậy cao hơn.
 
----
-
 ***
 
 ## May 9, 2025 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
