@@ -2,29 +2,29 @@
 
 **Step 1**: Log in to the [Account management page](https://dashboard.console.vngcloud.vn/). From the account management functions menu, select "**2FA**".
 
-<figure><img src="../.gitbook/assets/image (28) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2**: Select the "2FA" function.
 
 Turn on the desired authentication method as shown in the image.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 There are 2 methods to receive OTP: via SMS or through the Google Authenticator app.
 
-&#x20;       1.1 Send OTP to your phone (via SMS): You can Enable/Disable this function through the button in the "Send OTP to phone" section.
+1.1 Send OTP to your phone (via SMS): You can Enable/Disable this function through the button in the "Send OTP to phone" section.
 
 **Note:** Customers with **phone country codes different** from Vietnam (+84) cannot use the SMS method.
 
-&#x20;       1.2 Receive OTP via the Google Authenticator app.
+1.2 Receive OTP via the Google Authenticator app.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Click the **INITIATE** button, you will be taken to the Google Authenticator code creation page and follow the instructions.
 * Click **Save Settings** to complete.
 * You will receive a notification that **you have completed** as shown in the image.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 On the **Multi-Factor Authentication** screen, simply Enable/Disable the function according to your needs, you can choose one of the two or both. Here we support you in creating a new QR code, click on the link and follow the instructions.
 

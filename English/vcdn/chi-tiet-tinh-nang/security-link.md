@@ -12,7 +12,7 @@ Secure tokens are structured codes that protect content from being stolen and di
 
 When the end user needs to access the content that has been set to activate the "Secure token", the system will check the request to see if it satisfies the formula or not. If it satisfies, the end user can get the content. If not, the request will be rejected.
 
-<figure><img src="../../.gitbook/assets/image (71) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (170) (1).png" alt=""><figcaption></figcaption></figure>
 
 In there:
 

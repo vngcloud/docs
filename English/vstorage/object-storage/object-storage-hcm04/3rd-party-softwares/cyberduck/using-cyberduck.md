@@ -16,7 +16,7 @@
 3. Select a file or folder from your computer then select **Choose** .
 4. The file upload process begins. When the upload is complete, Cyberduck will notify you that the file was uploaded Successfully.
 
-<figure><img src="../../../../../.gitbook/assets/image (431).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (430) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Delete an object in a bucket**
 
@@ -39,7 +39,7 @@
 
 <figure><img src="../../../../../.gitbook/assets/image (434).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (436).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (435) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**

@@ -78,7 +78,7 @@ To configure private access from your server to the Endpoint Service, follow the
 
 > ✅ **Note:** Host entry configuration is only required on servers located within the same VPC or that have a valid network route to the Endpoint Service.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Endpoint List</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (2).png" alt=""><figcaption><p>Endpoint List</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Endpoint Detail</p></figcaption></figure>
 

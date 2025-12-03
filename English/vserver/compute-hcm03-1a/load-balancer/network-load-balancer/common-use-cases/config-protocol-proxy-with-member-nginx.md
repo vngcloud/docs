@@ -23,7 +23,7 @@ Protocol Proxy là một protocol đặc thù cho phép Load Balanacer chuyển 
 | `set_real_ip_from <Load balancer IP>;` |
 | -------------------------------------- |
 
-VD: ở đây IP của vLB đang là 103.245.248.204.&#x20;
+VD: ở đây IP của vLB đang là 103.245.248.204.
 
 <figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -36,8 +36,8 @@ VD: ở đây IP của vLB đang là 103.245.248.204.&#x20;
 
 * **Bước 4:** Cấu hình Header để lấy giá trị xuất log tại **http {}** block với cấu hình **proxy\_set\_header**
 
-| <p><code>proxy_set_header X-Real-IP       $proxy_protocol_addr;</code><br><code>proxy_set_header X-Forwarded-For $proxy_protocol_addr;</code></p> |
-| ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p><code>proxy_set_header X-Real-IP $proxy_protocol_addr;</code><br><code>proxy_set_header X-Forwarded-For $proxy_protocol_addr;</code></p> |
+| ------------------------------------------------------------------------------------------------------------------------------------------- |
 
 <figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -63,4 +63,4 @@ Nếu không có errror, bạn tiến hành restart nginx.
 
 * **Bước 7**: Thực hiện gửi request và kiểm tra log ra sẽ thấy IP Client xuất hiện trong log file:
 
-<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>

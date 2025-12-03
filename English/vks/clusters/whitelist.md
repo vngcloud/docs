@@ -11,9 +11,9 @@ The IP Whitelist feature on VKS's Private Node Group mode allows you to only all
 * **Greater control:** Whitelist IP allows you to tightly control access to your nodes, ensuring only authorized users and applications can access.
 
 {% hint style="info" %}
-### Recommendations for Using Whitelists in Different Cluster Models
+#### Recommendations for Using Whitelists in Different Cluster Models
 
-#### 1. Public Cluster Containing Only Public Node Groups
+**1. Public Cluster Containing Only Public Node Groups**
 
 **Recommendation:** Whitelisting is **not recommended**.
 
@@ -48,14 +48,14 @@ For users in the **HAN Region**, if you need to enable IP Whitelisting for secur
 
 ***
 
-#### 2. Public Cluster with Private Node Group Using a NAT Gateway (e.g., pfSense, Palo Alto)
+**2. Public Cluster with Private Node Group Using a NAT Gateway (e.g., pfSense, Palo Alto)**
 
 **Recommendation:** Whitelisting **can be used**.\
 Make sure to whitelist the **IP address of the NAT Gateway**.
 
 ***
 
-#### 3. Private Cluster with Public or Private Node Group
+**3. Private Cluster with Public or Private Node Group**
 
 **Recommendation:** Whitelisting **can be used**.
 {% endhint %}

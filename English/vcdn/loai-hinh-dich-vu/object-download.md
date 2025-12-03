@@ -8,7 +8,7 @@ VNG Cloud's Object Download service helps businesses: optimize costs, ensure fle
 
 ## **Model** <a href="#objectdownload-cochephanphoidulieu" id="objectdownload-cochephanphoidulieu"></a>
 
-<figure><img src="../../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (159) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

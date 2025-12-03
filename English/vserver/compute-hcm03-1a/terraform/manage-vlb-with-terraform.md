@@ -9,7 +9,7 @@
 * CreateLoadBalancer
 * GetLoadBalancer
 
-or you can grant **vvLBFullAccess** permission (should have **vLBReadOnlyAccess** permission to get resource information after creation). For more information on how to assign permissions to each Resource, the corresponding Action at  [{IAM Authorization Page}](../identity-and-access-management-iam-for-vserver/actions-resources-and-required-conditions-for-vserver-access-decentralization.md).
+or you can grant **vvLBFullAccess** permission (should have **vLBReadOnlyAccess** permission to get resource information after creation). For more information on how to assign permissions to each Resource, the corresponding Action at [{IAM Authorization Page}](../identity-and-access-management-iam-for-vserver/actions-resources-and-required-conditions-for-vserver-access-decentralization.md).
 
 > **Note:** Each different resource management action will require different permissions, so it's essential to set up a reasonable set of permissions that fit your business needs.
 
@@ -20,9 +20,9 @@ After downloading the Example folder to the computer, the user opens the file [v
 * **Client\_id:** Get at IAM homepage/ Service account - Service account Detail - **Tab Security credentials**
 * **Client\_secret:** Obtained when initializing Service account at IAM homepage or can be reset at IAM homepage/ Service account - Service account Detail - **Tab Security credentials**
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```
 variable "client_id" {  
@@ -35,7 +35,7 @@ default = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 }
 ```
 
-**Step 4:** Check the file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/main.tf) information again (follow the path  examples/ [main.tf](http://main.tf/)), in this case you need to delete the lines below:
+**Step 4:** Check the file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/main.tf) information again (follow the path examples/ [main.tf](http://main.tf/)), in this case you need to delete the lines below:
 
 * _module "vserver" {source = "./modules/vng-cloud-vserver"}_
 * module "k8s" {source = "./modules/vng-cloud-k8s" }
@@ -62,17 +62,15 @@ source = "./modules/vng-cloud-vlb" }
 ```
 
 \
-**Step 5:** Then go to the directory **vng-cloud-vserver/ examples/ modules/ vng-cloud-k8s/**, and open the [**variable/tf**](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples/modules/vng-cloud-vlb) **file**:&#x20;
+**Step 5:** Then go to the directory **vng-cloud-vserver/ examples/ modules/ vng-cloud-k8s/**, and open the [**variable/tf**](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples/modules/vng-cloud-vlb) **file**:
 
 * **project\_id**: your project information, you can get it at [{Limit Tab}](https://hcm-3.console.vngcloud.vn/vserver/limit) on vServer Portal, For example: **pro-462803f3-6858-466f-bf05-df2b33faa360**:
 
-
-
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **subnet\_id**: specify the subnet id that vServer will be created on, you can get it from [{VPC Tab}](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), if you haven't initialized any subnet you can see the instructions at [{Subnet creation page}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039):
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```
 variable "project_id" {  
@@ -99,8 +97,6 @@ subnet_id  = var.subnet_id
 type       = "Layer 7"
 }
 ```
-
-
 
 **Step 7**: Launch the terraform command
 

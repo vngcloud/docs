@@ -22,7 +22,7 @@ that you want to use for your server. You also need to select an existing Server
 
 **At this point, the vServer** system will initialize a Server corresponding to the configuration you selected. Please wait until the server creation is complete and continue with the following steps.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -45,7 +45,7 @@ that you want to use for your server. You also need to select an existing Server
 
 **Step 4:** Enter **Email/ Password** if you have one or choose **Quick Login** with **Github** or **Google** . Here, I choose to log in with my Google account.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 5** : After the system successfully performs **authentication** , you need to enter basic information for Sigma including:
 
@@ -54,7 +54,7 @@ that you want to use for your server. You also need to select an existing Server
 * **Role**
 * **Company**
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 6:** Enter **the server name** . You can get this server name from the VNGCloud portal. In the example below, I use the Demo\_Sigma server created earlier.
 
@@ -67,7 +67,7 @@ that you want to use for your server. You also need to select an existing Server
 * Install **Data Dir** by selecting the Pick button
 * Select **Submit** .
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 8** : At the server deployment warning screen, select **Yes**
 

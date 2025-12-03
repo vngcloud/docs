@@ -8,7 +8,7 @@ To create a File Storage on the File Storage system, you can follow these steps:
 
 **Step 2:** Select **File Storage** then select **Create a File storage** .
 
-<figure><img src="../../../../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (82) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3:** At the File Storage initialization screen, you need to enter/select:
 

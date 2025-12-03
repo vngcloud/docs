@@ -4,11 +4,9 @@ Create a account Guide
 
 **Step 1:** At VNG Cloud homepage, Click "Sign up" button as shown in the following screen:
 
-Navigate to "Create New Account" screen as shown in the following image:&#x20;
+Navigate to "Create New Account" screen as shown in the following image:
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-
 
 **Step 2:** At "Create new account" screen:
 
@@ -24,7 +22,7 @@ Navigate to "Create New Account" screen as shown in the following image:&#x20;
 
 **Step 4:** In the instruction email, click on **this link** to proceed to the next step.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 **Step 5:** After clicking the link in the email from **step 4**, the final registration form will open. Fill in all the required information on the registration form.
 

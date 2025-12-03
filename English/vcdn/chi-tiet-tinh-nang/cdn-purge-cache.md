@@ -41,7 +41,7 @@ Purge by ALL: will delete all links (all Cache of resources on CDN).
 
 * Before Purge Cache the files were cached in CDN
 
-<figure><img src="../../.gitbook/assets/image (355).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (354) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Change the contents of the files, then refresh the browser. Because the files have been cached in CDN, when changing in Origin, the files in CDN have not been changed.
 
@@ -103,26 +103,26 @@ Purge by END: Will delete all resources that are being cached in vCDN at the end
 
 * After Purge Cache the files `/*1.txt`... Were called back to Origin to get new content.
 
-<figure><img src="../../.gitbook/assets/image (369).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (311) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Files `/purge_lab/text1.txt`... Still get content from Cache in CDN.
 
-<figure><img src="../../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (312) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 5. Purge Cache By URI(s). <a href="#id-5.-purge-cache-by-uri-s" id="id-5.-purge-cache-by-uri-s"></a>
 
 Purge by URI(s): Will delete exactly the specified link.
 
-<figure><img src="../../.gitbook/assets/image (371).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (313) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Similar to Purge by ALL, before Purge Cache, the files have been cached in CDN. Proceed to Purge Cache: Select **Service** and corresponding **CDN and Purge by URI(s)** . At URI, enter: `/purge_lab/demo1.txt`, `/purge_lab/demo2.txt`... (clear cache of specified links that are cached in vCDN).
 
-<figure><img src="../../.gitbook/assets/image (372).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (314) (1).png" alt=""><figcaption></figcaption></figure>
 
 * After Purge Cache the files `/purge_lab/demo1.txt`... Were called back to Origin to get new content.
 
-<figure><img src="../../.gitbook/assets/image (373).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (315) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Other files not specified Purge Cache ... Still fetch content from Cache in CDN.
 
-<figure><img src="../../.gitbook/assets/image (374).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (316) (1).png" alt=""><figcaption></figcaption></figure>

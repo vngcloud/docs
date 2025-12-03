@@ -15,7 +15,7 @@ hidden: true
 * ListClusterSecGroupDefault (specify by **all resources**)
 * GetClusterConfig (specify by **all resources**)
 
-or you can grant vServerFullAccess permission (should have vServerReadOnlyAccess permission to get resource information after creation). For more information on how to assign permissions to each Resource, the corresponding Action at  [{IAM Authorization Page}](../identity-and-access-management-iam-for-vserver/actions-resources-and-required-conditions-for-vserver-access-decentralization.md).
+or you can grant vServerFullAccess permission (should have vServerReadOnlyAccess permission to get resource information after creation). For more information on how to assign permissions to each Resource, the corresponding Action at [{IAM Authorization Page}](../identity-and-access-management-iam-for-vserver/actions-resources-and-required-conditions-for-vserver-access-decentralization.md).
 
 > **Note:** Each different resource management action will require different permissions, so it's essential to set up a reasonable set of permissions that fit your business needs.
 
@@ -26,7 +26,7 @@ After downloading the Example folder to the computer, the user opens the file [v
 * **Client\_id:** Get at IAM homepage/ Service account - Service account Detail - **Tab Security credentials**
 * **Client\_secret:** Obtained when initializing Service account at IAM homepage or can be reset at IAM homepage/ Service account - Service account Detail - **Tab Security credentials**
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```
 
@@ -40,12 +40,12 @@ type = string
 default = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}
 ```
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Step 4:** Check the file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/main.tf) information again (follow the path  examples/ [main.tf](http://main.tf/)), in this case you need to delete the lines below:
+**Step 4:** Check the file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/main.tf) information again (follow the path examples/ [main.tf](http://main.tf/)), in this case you need to delete the lines below:
 
 * _module "vserver" {source = "./modules/vng-cloud-vserver"_\
-  &#xNAN;_}_
+  \&#xNAN;_}_
 * _module "vlb" { source = "./modules/vng-cloud-vlb" }_
 
 _just keep:_
@@ -86,19 +86,19 @@ source = "./modules/vng-cloud-k8s" }
 ```
 
 \
-**Step 5:** Then go to the directory **vng-cloud-vserver/ examples/ modules/ vng-cloud-k8s/**, and open the [**variable.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/modules/vng-cloud-k8s/variable.tf) **file**:&#x20;
+**Step 5:** Then go to the directory **vng-cloud-vserver/ examples/ modules/ vng-cloud-k8s/**, and open the [**variable.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/modules/vng-cloud-k8s/variable.tf) **file**:
 
 * **project\_id**: your project information, you can get it at [{Limit Tab}](https://hcm-3.console.vngcloud.vn/vserver/limit) on vServer Portal, For example: **pro-462803f3-6858-466f-bf05-df2b33faa360**:
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **image\_id**: operating system to initialize vServer eg: **img-b5bf635e-0456-4765-b493-31d5fcfc05aa** (1\_Ubuntu-22.04x64) ... you can see Id list when creating vServer on Portal/ [{System Image Tab}](https://hcm-3.console.vngcloud.vn/vserver/v-server/system-image)
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **flavor\_id**: vServer configuration that you will initialize for example: **flav-e2028a81-cc75-47e4-8af1-9eef2f857f84** (s-general-2x4) ,... you can see the list when creating vServer on Portal/ [{Flavors Tab}](https://hcm-3.console.vngcloud.vn/vserver/v-server/flavor).
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ```
 variable "project_id" {  
@@ -116,7 +116,7 @@ default = "img-a34d639b-e070-46ff-8b91-addf4fac45b4"
 
 * **volume\_type\_name**: specify IOPS for root disk and data disk, for example: **SSD-3000**, you can see Volume Type list on vServer Portal/ [{Volume Type Tab}](https://hcm-3.console.vngcloud.vn/vserver/v-server/system-image).
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **root\_disk\_size:** specify the size of the root disk drive, for example: **20**<br>
 * **data\_disk\_size:** specify the root disk volume, for example: **50**
@@ -138,9 +138,9 @@ default = 50
 
 * **network\_id**: specify the network id that the vServer will be created on, you can get it from the [VPC tab](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), if you haven't initialized any network you can see the instructions [{Network creation page}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648039):
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **subnet\_id**: specify the subnet id that vServer will be created on, you can get it from [{VPC Tab}](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), if you haven't initialized any subnet you can see the instructions at [{Subnet creation page}](../vpc/virtual-private-cloud-vpc.md):&#x20;
+* **subnet\_id**: specify the subnet id that vServer will be created on, you can get it from [{VPC Tab}](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), if you haven't initialized any subnet you can see the instructions at [{Subnet creation page}](../vpc/virtual-private-cloud-vpc.md):
 
 ```
 variable "network_id" {  
@@ -156,7 +156,7 @@ default = "sub-5f101cba-7ce0-4084-8576-06b8dbfb298a" }
 
 * **ssh\_key\_id**: specify the ssh key that will be injected into the vServer, you can get it at [{SSH Keys Tab}](https://hcm-3.console.vngcloud.vn/vserver/v-server/ssh-key), if you haven't initialized any ssh key you can see it at [{SSH key creation page}](../security/ssh-key-key-pairs.md):
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **security\_group\_id\_list**: specify a list of security group ids that need to be attached to vServer, you can get it at [{Security Groups Tab}](https://hcm-3.console.vngcloud.vn/vserver/network/sec-group), if you need to create more security groups you can see it at [{Security Group Creation Page}](../server-group.md).
 
@@ -171,9 +171,9 @@ default = [    "secg-28e91c47-11b1-4cc1-8e24-dd174882708d"  ]
 }
 ```
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Step 6**: Check the file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/modules/vng-cloud-vserver/main.tf)  information (follow the path _**erraform-provider-vngcloud/examples/modules/vng-cloud-k8s/**_[_**main.tf**_](http://main.tf/)), in the file we have some commands available: **Create K8S**, **Create Cluster Node Group, Change Cluster for SecGroup, Attach Load Balancer for K8s...,** in this case to Create K8S you just need to leave the **Create K8S** resource follow the instructions below:
+**Step 6**: Check the file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/modules/vng-cloud-vserver/main.tf) information (follow the path _**erraform-provider-vngcloud/examples/modules/vng-cloud-k8s/**_[_**main.tf**_](http://main.tf/)), in the file we have some commands available: **Create K8S**, **Create Cluster Node Group, Change Cluster for SecGroup, Attach Load Balancer for K8s...,** in this case to Create K8S you just need to leave the **Create K8S** resource follow the instructions below:
 
 ```
 data "vngcloud_vserver_volume_type_zone" "volume_type_zone" {  
@@ -265,8 +265,6 @@ Finally you choose to run the command line:
 | ----------------- |
 
 and select **YES** to perform vServer initialization via Terraform
-
-
 
 **Step 8**: You can go to the Portal to see the Server being initialized from Terraform:
 

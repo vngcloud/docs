@@ -6,7 +6,7 @@ The Database management interface provides an overview of all your Database Inst
 
 To expand the read scale for your vDB, you can create read replicas for your DB Instances. The system will automatically set up a master-slave model and synchronize data asynchronously. Here's how:
 
-1.  Select the DB Instance you want to create read replicas from. Note that only DB Instances with the role "standalone" or "master" can create read replicas. Choose "Action" and then "Create Read Replica."&#x20;
+1.  Select the DB Instance you want to create read replicas from. Note that only DB Instances with the role "standalone" or "master" can create read replicas. Choose "Action" and then "Create Read Replica."
 
     <figure><img src="../../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
 2. On the creation page, simply set the DB Instance Name for the read replica and keep other information like flavor, storage type, storage size, and backup schedule the same. However, we recommend keeping these settings the same as the Master or choosing higher values if necessary.
@@ -17,7 +17,7 @@ To expand the read scale for your vDB, you can create read replicas for your DB 
 
 If you want to convert a read replica to standalone, you can use the "Promote to Standalone" feature on the Portal. Follow these steps:
 
-1.  Select the DB Instance with the role "slave," choose "Action," and then "Promote to Standalone."&#x20;
+1.  Select the DB Instance with the role "slave," choose "Action," and then "Promote to Standalone."
 
     <figure><img src="../../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
 2. Click "Confirm Promote" to complete the process.
@@ -28,7 +28,7 @@ Note: Before confirming the promotion, we recommend stopping data writes to the 
 
 To change the MDS flavor configuration to better suit your actual usage needs, follow these instructions:
 
-1.  Select the MDS Instance you want to change, click the "Action" button, and choose "Resize Instance Type."&#x20;
+1.  Select the MDS Instance you want to change, click the "Action" button, and choose "Resize Instance Type."
 
     <figure><img src="../../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
 2. An editor will appear, allowing you to select a new flavor configuration. Review the new and current configuration prices on the right before confirming.
@@ -46,9 +46,9 @@ For option 1, please refer to the instructions on Creating an MDS Instance.
 For option 2, you can do the following:
 
 1. Go to the Database management screen at: [https://vdb.console.vngcloud.vn/memorystore/database](https://vdb.console.vngcloud.vn/memorystore/database)
-2.  Select the MDS Instance and click "Edit Configuration Group."&#x20;
+2.  Select the MDS Instance and click "Edit Configuration Group."
 
-    <figure><img src="../../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (237) (1).png" alt=""><figcaption></figcaption></figure>
 3. On the change screen, select the Configuration Group you want to apply.
 4. When all selections are correct, click the "Save" button in the top right corner. Wait for a while for the configuration variables to be applied to the MDS Instance. If the change is successful, the MDS Instance will have the status "Active."
 

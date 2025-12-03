@@ -6,7 +6,7 @@ description: >-
 
 # Add/Update/Delete more Site And Tunnel
 
-&#x20;After successfully creating a VPN with the default tunnel configuration. Users can add more sites with a default tunnel to allow connecting more remote LAN CIDR from VPN Local VPC.
+After successfully creating a VPN with the default tunnel configuration. Users can add more sites with a default tunnel to allow connecting more remote LAN CIDR from VPN Local VPC.
 
 ## Access a VPN detail
 
@@ -42,11 +42,9 @@ User can select dropdown list to action
 
 <figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-
-
 ## Delete Site/Tunnel
 
 * Select the "Delete" Icon on the right side of the Tunnel that needs to delete
 * Click "Delete" to confirm delete
 
-<figure><img src="../../../.gitbook/assets/image (422).png" alt=""><figcaption><p>Confirm deletion</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (420) (1).png" alt=""><figcaption><p>Confirm deletion</p></figcaption></figure>

@@ -8,9 +8,7 @@ The service supports broadcasting live content such as events, TV shows, and spo
 
 ## Model <a href="#so-do-hoat-dong" id="so-do-hoat-dong"></a>
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/image (150) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Data Distribution Mechanism**
 
@@ -59,7 +57,7 @@ First, you need to initialize a Live Entrypoint following these instructions:
       * **Publish IP(s):** List of IP addresses allowed to send RTMP signals to the system. You need to enter the IP of the device or server sending the signal. If you do not enter the correct IP, the system will block the signal. If you do not enter the IP, you are required to enter the Username and Password according to the instructions below.
       * **User Name, Password:** Authentication information to protect RTMP signal. You need to enter username and password to secure incoming RTMP signal.
 
-    <mark style="background-color:blue;">**Note:**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">You must enter at least one of the two</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**Publish IP(s)**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">or</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**Username/Password**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">fields , or you can enter both.</mark>
+    <mark style="background-color:blue;">**Note:**</mark> <mark style="background-color:blue;">You must enter at least one of the two</mark> <mark style="background-color:blue;">**Publish IP(s)**</mark> <mark style="background-color:blue;">or</mark> <mark style="background-color:blue;">**Username/Password**</mark> <mark style="background-color:blue;">fields , or you can enter both.</mark>
 
     * **Entrypoint Zone:**
       * **Primary Zone:** The main service provider that receives the RTMP signal (eg: Viettel, VNPT, VNG HCM). You need to choose the ISP that matches your signal. In which **RTMP URL** : The path to push the RTMP signal to the main ISP.
@@ -70,7 +68,7 @@ First, you need to initialize a Live Entrypoint following these instructions:
 
 4. Select **Submit** .
 
-<figure><img src="../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -135,8 +133,6 @@ Next, you need to initiate a Live Streaming following the instructions below:
 <figure><img src="../../.gitbook/assets/image (25) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (26) (1) (1).png" alt="" width="349"><figcaption></figcaption></figure>
-
-
 
 4. Select **Submit** to complete creating the Live Stream.
 

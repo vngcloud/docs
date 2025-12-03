@@ -7,13 +7,13 @@ Fleet Management is a feature that helps group Kubernetes clusters across multip
 1.  **North-South Traffic Management with GLB**
 
     * **How it works** : A single **GLB will route traffic to clusters** by geographic region (eg: HAN, HCM...), helping to optimize performance and reduce costs compared to using multiple individual Load Balancers.
-    * **Support for clusters with Network Type:**&#x20;
+    * **Support for clusters with Network Type:**
 
     ✅ Calico Overlay ✅ Cilium Overlay ✅ Cilium VPC Native
 2.  **East-West Traffic Management with MCS**
 
     * **How it works** : If a backend service in a cluster fails, traffic will **failover** to the backends of other clusters in **the fleet** , ensuring **no downtime** .
-    * **Only supports clusters with Network Type** :&#x20;
+    * **Only supports clusters with Network Type** :
 
     ✅ Cilium VPC Native
 
@@ -433,7 +433,7 @@ Once you create a Fleet, you can edit its configuration:
 * **Change Host Cluster** in existing Fleet.
 * **Add or remove cluster members** as needed, but always ensure Fleet has at least one cluster host.
 
-<figure><img src="../../.gitbook/assets/image (518).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (517) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

@@ -1,4 +1,4 @@
-# Khởi tạo và làm việc với NVIDIA GPU Node Group
+# Working with NVIDIA GPU Node Group
 
 ## Overview
 
@@ -30,15 +30,11 @@
     # Check kubectl-view-allocations version
     kubectl-view-allocations --version
     ```
-
-    ![](../../images/nodegroup/02.png)
 *   And this is my VKS cluster with 1 NVIDIA GPU nodegroup, it will be used in this guide, execute the following command to check the nodegroup in your cluster:
 
     ```bash
     kubectl get nodes -owide
     ```
-
-    ![](../../images/nodegroup/01.1.png)
 
 ## Installing the GPU Operator
 
@@ -50,22 +46,16 @@
       oci://vcr.vngcloud.vn/81-vks-public/vks-helm-charts/gpu-operator \
       --set dcgmExporter.serviceMonitor.enabled=true
     ```
-
-    ![](../../images/nodegroup/03.png)
 *   You **MUST** wait for the installation to complete _(about 5-10 minutes)_, execute the following command to check all the pods in the `gpu-operator` namespace are **running**:
 
     ```bash
     kubectl -n gpu-operator get pods -owide
     ```
-
-    ![](../../images/nodegroup/04.png)
 *   The operator will label the node with the `nvidia.com/gpu` label, which can be used to filter the nodes that have GPUs. The `nvidia.com/gpu` label is used by the NVIDIA GPU Operator to identify nodes that have GPUs. The NVIDIA GPU Operator will only deploy the NVIDIA GPU device plugin on nodes that have the `nvidia.com/gpu` label.
 
     ```bash
     kubectl get node -o json | jq '.items[].metadata.labels' | grep "nvidia.com"
     ```
-
-    ![](../../images/nodegroup/05.png)
 
     > * For the above result, the single node in the cluster has the `nvidia.com/gpu` label, which means that the node has GPUs.
     > * These labels also tell that this node is using 1 card of RTX 2080Ti GPU, number of available GPUs, the GPU Memory and other information.
@@ -75,8 +65,6 @@
     POD_NAME=$(kubectl -n gpu-operator get pods -l app=nvidia-device-plugin-daemonset -o jsonpath='{.items[0].metadata.name}')
     kubectl -n gpu-operator exec -it $POD_NAME -- nvidia-smi
     ```
-
-    ![](../../images/nodegroup/06.png)
 
 ## Deploy your GPU workload
 
@@ -99,8 +87,6 @@
     kubectl delete deploy cuda-vectoradd
     ```
 
-    ![](../../images/nodegroup/07.png)
-
 ### TensorFlow Test
 
 *   In this section, we apply a `Deployment` manifest for a TensorFlow GPU application. The purpose of this `Deployment` is to create and manage a single pod running a TensorFlow container that utilizes GPU resource for executing the sum of random values from a normal distribution of size \\( 100000 \\) by \\( 100000 \\). For more detail about the manifest, see file [tensorflow-gpu.yaml](https://raw.githubusercontent.com/vngcloud/kubernetes-sample-apps/main/nvidia-gpu/manifest/tensorflow-gpu.yaml)
@@ -122,8 +108,6 @@
     # [Optional] Clean the resources
     kubectl delete deploy tensorflow-gpu
     ```
-
-    ![](../../images/nodegroup/08.png)
 
 ## Configure GPU Sharing
 
@@ -180,8 +164,6 @@
       -p '{"spec": {"dcgmExporter": {"enabled": false}}}'
     ```
 
-    ![](../../images/nodegroup/09.png)
-
     > * Your new configuration will be applied to all nodes in the cluster that have the `nvidia.com/gpu` label.
     > * The configuration is considered successful if the `ClusterPolicy` **STATUS** is `ready`.
     > * Because of the `sharing.timeSlicing.resources.replicas` is set to 4, you can deploy up to 4 pods that share the GPU.
@@ -209,11 +191,9 @@
     kubectl delete deploy time-slicing-verification
     ```
 
-    ![](../../images/nodegroup/10.png)
-
 ### Multi-process server (MPS)
 
-* VKS uses NVIDIA's [Multi-Process Service (MPS)](https://docs.nvidia.com/deploy/pdf/CUDA\_Multi\_Process\_Service\_Overview.pdf). NVIDIA MPS is an alternative, binary-compatible implementation of the CUDA API designed to transparently enable co-operative multi-process CUDA workloads to run concurrently on a single GPU device. GPU with NVIDIA MPS provides software-level isolation in terms of resource limits ([active thread percentage](https://docs.nvidia.com/deploy/mps/index.html#topic\_5\_2\_5) and [pinned device memory](https://docs.nvidia.com/deploy/mps/index.html#topic\_5\_2\_7)).
+* VKS uses NVIDIA's [Multi-Process Service (MPS)](https://docs.nvidia.com/deploy/pdf/CUDA_Multi_Process_Service_Overview.pdf). NVIDIA MPS is an alternative, binary-compatible implementation of the CUDA API designed to transparently enable co-operative multi-process CUDA workloads to run concurrently on a single GPU device. GPU with NVIDIA MPS provides software-level isolation in terms of resource limits ([active thread percentage](https://docs.nvidia.com/deploy/mps/index.html#topic_5_2_5) and [pinned device memory](https://docs.nvidia.com/deploy/mps/index.html#topic_5_2_7)).
 
 #### Configure MPS
 
@@ -257,8 +237,6 @@
     kubectl -n gpu-operator get pods
     ```
 
-    ![](../../images/nodegroup/11.png)
-
     > * Your new configuration will be applied to all nodes in the cluster that have the `nvidia.com/gpu` label.
     > * The configuration is considered successful if the `ClusterPolicy` **STATUS** is `ready`.
     > * Because of the `sharing.mps.resources.replicas` is set to 4, you can deploy up to 4 pods that share the GPU.
@@ -281,8 +259,6 @@
     # [Optional] Clean the resources
     kubectl delete job nbody-sample
     ```
-
-    ![](../../images/nodegroup/12.png)
 
 ### Applying Multiple Node-Specific Configurations
 
@@ -343,8 +319,6 @@
     # Check the ClusterPolicy
     kubectl get clusterpolicy
     ```
-
-    ![](../../images/nodegroup/13.1.png)
 *   Now, we need to label the node with the name that you specified in the `ConfigMap`:
 
     ```bash
@@ -355,8 +329,6 @@
     kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-2080ti
     kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
     ```
-
-    ![](../../images/nodegroup/14.png)
 
 #### Verify Multiple Node-Specific Configurations
 
@@ -376,8 +348,6 @@
     # [Optional] Clean the resources
     kubectl delete deploy tensorflow-mnist
     ```
-
-    ![](../../images/nodegroup/15.png)
 
     > * The pods are running on the node with the GPU RTX 2080Ti and RTX 4090 within different GPU sharing strategies.
 
@@ -402,16 +372,12 @@
       --version 4.10.0 \
       --set prometheus.url=http://${prometheus_service}.prometheus.svc.cluster.local
     ```
-
-    ![](../../images/nodegroup/16.png)
 *   After the installation is complete, execute the following command to check the resources of Prometheus are running:
 
     ```bash
     # Check the resources of Prometheus are running
     kubectl -n prometheus get all 
     ```
-
-    ![](../../images/nodegroup/17.png)
 *   Now, we need to enable the DCGM exporter to monitor the GPU resources in the VKS cluster. Execute the following command to enable the DCGM exporter in your VKS cluster:
 
     ```bash
@@ -424,8 +390,6 @@
     # (about 1-3 mins) for the DCGM exporter to be ready
     kubectl get --raw /apis/custom.metrics.k8s.io/v1beta1 | jq -r . | grep DCGM
     ```
-
-    ![](../../images/nodegroup/18.png)
 *   Let's forward the Prometheus Adapter to your local machine to check the GPU metrics by visit [http://localhost:9090](http://localhost:9090):
 
     ```bash
@@ -433,10 +397,6 @@
     kubectl -n prometheus \
       port-forward svc/prometheus-stack-kube-prom-prometheus 9090:9090
     ```
-
-    ![](../../images/nodegroup/19.png)
-
-    ![](../../images/nodegroup/20.png)
 * The following table lists some observable GPU metrics. For details about more metrics, see [Field Identifiers](https://docs.nvidia.com/datacenter/dcgm/latest/dcgm-api/dcgm-api-field-ids.html).
   *   **Table 1**: Usage
 
@@ -502,10 +462,6 @@
 
     kubectl -n keda get all
     ```
-
-    ![](../../images/nodegroup/21.png)
-
-    ![](../../images/nodegroup/22.png)
 *   Apply [scaling-app.yaml](https://github.com/vngcloud/kubernetes-sample-apps/raw/main/nvidia-gpu/manifest/scaling-app.yaml) manifest to generate resources for testing the autoscaling feature. This manifest run 1 pod of CUDA VectorAdd Test and the GPU Nodegroup will be scaled to 3 when the GPU usage is greater than 50%.
 
     ```bash
@@ -523,7 +479,5 @@
     # Check the ScaledObject
     kubectl get scaledobject
     ```
-
-    ![](../../images/nodegroup/23.png)
 
     > * When the `ScaledObject` **Ready** value is `True`, the GPU Nodegroup will be scaled based on the GPU usage.

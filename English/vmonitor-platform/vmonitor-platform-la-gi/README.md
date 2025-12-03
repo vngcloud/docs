@@ -8,7 +8,7 @@ vMonitor Platform provides three main service groups: **Metric, Log, Synthetic**
 * **vMonitor Log** is a service that helps collect log data from servers, applications, or devices within an enterprise's system in real time. vMonitor Log is designed for users, developers, operations engineers, or IT managers to store, search, analyze, and quickly troubleshoot collected log data.
 * **vMonitor Synthetic** là một tập các điều kiện và cấu hình mà giúp khác bạn chủ động theo dõi các dịch vụ quan trọng nhất của mình để chúng luôn sẵn sàng mọi lúc và mọi nơi. Synthetic API Test hỗ trợ nhiều giao thức như TCP, HTTP(s), Ping.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (343) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -17,7 +17,7 @@ vMonitor Platform provides three main service groups: **Metric, Log, Synthetic**
 We provide you with leading solutions including:
 
 * Collect Metrics and Logs from servers and applications on VNG Cloud, other Clouds, or on-premises environments.
-* Proactively monitor critical applications, services, and servers' availability with Synthetic.&#x20;
-* Retrieve and analyze log data with Log Search.&#x20;
-* Set up alerts and notification channels for incidents.&#x20;
-* Store long-term data on vStorage.&#x20;
+* Proactively monitor critical applications, services, and servers' availability with Synthetic.
+* Retrieve and analyze log data with Log Search.
+* Set up alerts and notification channels for incidents.
+* Store long-term data on vStorage.

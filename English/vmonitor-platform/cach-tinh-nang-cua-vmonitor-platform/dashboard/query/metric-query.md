@@ -2,7 +2,7 @@
 
 When creating a **Widget** for **metric** data, in the **Graph your data** section, compose your data query by selecting **Add a query**. Each query will be represented by a line, a stacked area, or a number on the chart. The components of a query for metric data include:
 
-<figure><img src="../../../../.gitbook/assets/image (76) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
 In which:
 

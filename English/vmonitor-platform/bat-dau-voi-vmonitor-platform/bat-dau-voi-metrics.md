@@ -56,11 +56,11 @@ After installing the Metric Agent as guided in **Step 3: Install Metric Agent on
 
 1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Choose **Infrastructure List/ Host.**
 
-<figure><img src="../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (34) (3).png" alt=""><figcaption></figcaption></figure>
 
 2. Choose the **Hostname**. For example, if the device **LAP15839** is successfully configured with the Metric Agent to the vMonitor Platform, the default dashboard will be named: **LAP15839**. When you select the dashboard, it will display as shown in the image:
 
-<figure><img src="../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36) (3).png" alt=""><figcaption></figcaption></figure>
 
 With this Default Dashboard, you will be able to view the metric information that we have pre-drawn for you, including charts on CPU, Memory, Load Avg, Disk, and Network information. On this **Default Dashboard**, you cannot add widgets or customize the dashboard. To make changes or customize the Dashboard, you need to create a new dashboard or **Create a copy** from this **Default Dashboard** and Edit. To create a Dashboard copy, follow the instructions below:
 

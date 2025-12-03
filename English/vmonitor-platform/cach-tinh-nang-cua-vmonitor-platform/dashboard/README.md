@@ -18,9 +18,9 @@ On the vMonitor Platform, we define 2 types of Dashboards including:
 The following rules apply to naming Dashboards in the vMonitor Platform:
 
 * The Dashboard name must be between 1 (minimum) and 50 (maximum) characters in length.
-* The Dashboard name can only include uppercase letters, lowercase letters (a-z, A-Z), numbers (0-9), dots (.), underscores (\_), hyphens (-), slashes (/) and the @ character.&#x20;
-* The Dashboard name should not contain sensitive information (e.g., IP addresses, account names, login passwords,...).&#x20;
-* The Dashboard name must be unique within a VNG Cloud account until it is deleted.&#x20;
+* The Dashboard name can only include uppercase letters, lowercase letters (a-z, A-Z), numbers (0-9), dots (.), underscores (\_), hyphens (-), slashes (/) and the @ character.
+* The Dashboard name should not contain sensitive information (e.g., IP addresses, account names, login passwords,...).
+* The Dashboard name must be unique within a VNG Cloud account until it is deleted.
 
 Examples:
 
@@ -61,7 +61,7 @@ To view the Dashboards, you can:
 
 <table data-header-hidden><thead><tr><th width="194"></th><th></th></tr></thead><tbody><tr><td><strong>Loại Dashboard</strong></td><td><strong>Description</strong></td></tr><tr><td>All Dashboards</td><td>All existing dashboards</td></tr><tr><td>All host</td><td>All Dashboards are automatically created by the vMonitor Platform when you set up a Host.</td></tr><tr><td>All integration</td><td>All Dashboards are automatically created by the vMonitor Platform when you set up integrated applications.</td></tr><tr><td>All VNG Cloud</td><td>All Dashboards are created by the vMonitor Platform system for VNG Cloud Products.</td></tr><tr><td>Created by you</td><td>Dashboards created by users</td></tr><tr><td>Favourite</td><td>Favorite Dashboards.</td></tr></tbody></table>
 
-The **Dashboard** has not been successfully added to the favorites list. The **Dashboard** has been successfully added to the favorites list and vice versa when the icon <img src="../../../.gitbook/assets/image (105).png" alt="" data-size="line"> on the **Dashboard** is on each **Dashboard**. When the icon on the Dashboard is <img src="../../../.gitbook/assets/image (106).png" alt="" data-size="line">, you can mark a **custom Dashboard** as a favorite or remove it from the favorites list by re-selecting it.
+The **Dashboard** has not been successfully added to the favorites list. The **Dashboard** has been successfully added to the favorites list and vice versa when the icon <img src="../../../.gitbook/assets/image (47) (3).png" alt="" data-size="line"> on the **Dashboard** is on each **Dashboard**. When the icon on the Dashboard is <img src="../../../.gitbook/assets/image (48).png" alt="" data-size="line">, you can mark a **custom Dashboard** as a favorite or remove it from the favorites list by re-selecting it.
 
 ***
 
@@ -71,7 +71,7 @@ To change the name of the Dashboard you created earlier, follow the instructions
 
 1. Login into vMonitor Platform.
 2. Select the menu **Dashboard.**
-3. In the **Dashboard** you want to rename, select the icon <img src="../../../.gitbook/assets/image (50) (1) (1) (1) (1).png" alt="" data-size="line">
+3. In the **Dashboard** you want to rename, select the icon <img src="../../../.gitbook/assets/image (50) (3).png" alt="" data-size="line">
 4. Select **Rename**.
 5. Input the **Dashboard name**, Please enter a name that complies with our guidelines for your Dashboard.
 6. Select **Save**.
@@ -86,7 +86,7 @@ To create a copy of a Dashboard, follow the instructions below:
 
 1. Login into vMonitor Platform.
 2. Select the menu **Dashboard.**
-3. On **Dashboard** which you wanna clone, chọn <img src="../../../.gitbook/assets/image (51) (1) (1) (1) (1).png" alt="" data-size="line">
+3. On **Dashboard** which you wanna clone, chọn <img src="../../../.gitbook/assets/image (50) (3).png" alt="" data-size="line">
 4. Select **Clone Dashboard.**
 5. Input **Dashboard name**, Please enter a name that complies with our guidelines for your Dashboard.
 6. Select **Clone.**
@@ -101,7 +101,7 @@ If you no longer need to use a custom **Dashboard**, you can delete it from the 
 
 1. Login into vMonitor Platform.
 2. Select the menu **Dashboard.**
-3. On **Dashboard** which you wanna delete, select <img src="../../../.gitbook/assets/image (52) (1) (1) (1) (1).png" alt="" data-size="line">
+3. On **Dashboard** which you wanna delete, select <img src="../../../.gitbook/assets/image (50) (3).png" alt="" data-size="line">
 4. Select **Delete**.
 5. On the Delete Dashboard confirmation screen, select **Delete**.
 

@@ -74,7 +74,7 @@ To grant access to bucket/object for Service Account, you need to grant permissi
 2. Select the **Bucket** you want to assign permissions to the Service Account.
 3.  Select the **Action** icon and select **Configure policy.**
 
-    <figure><img src="../../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (17) (1) (2).png" alt=""><figcaption></figcaption></figure>
 4. Here, you can choose the configuration for each **Statement** on the left or directly edit the JSON file in the right column. Specifically, the structure of a Bucket Policy includes:
 
 * **Version** : Specifies the version of the Bucket Policy (recommended `"2012-10-17"`).
@@ -111,7 +111,7 @@ For details, please refer to [https://docs.api.vngcloud.vn/service-docs/vstorage
 
 <figure><img src="../../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (444) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -125,7 +125,7 @@ To use the vStorage APIs, users will use the client ID and the client secret key
 
 **Request body**
 
-> 'grant\_type':'client\_credentials'&#x20;
+> 'grant\_type':'client\_credentials'
 >
 > 'scope':'email'
 
@@ -137,16 +137,12 @@ To use the vStorage APIs, users will use the client ID and the client secret key
 
 If the credentials are authorized, an **access\_token** will be returned. Users will use this **access\_token** to access resources from the resource server.
 
-
-
 **Example:**
 
 > curl -X POST 'https://iamapis.vngcloud.vn/accounts-api/v2/auth/token'\
 > -H 'Content-Type: application/json'\
 > -H 'Authorization: Basic ZGM3MTYxNTYtMjQwMi00MDg2LTliYWItZGU5OTIxODVlYjU1OmJhYjYzYTZmLWYzOGUtNDZmNC05NjIyLTYzNTQwNGQ4MDFlNQ=='\
 > -d '{ "grant\_type": "client\_credentials", "scope":"email" }'
->
->
 >
 > {"token\_type":"Bearer","access\_token":"eyJhbGciOiJSUz......GWug","expires\_in":1800,"refresh\_expires\_in":0}
 

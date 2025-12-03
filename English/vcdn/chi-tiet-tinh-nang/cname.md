@@ -28,4 +28,4 @@ CNAME in CDN is a type of DNS (Domain Name System) record used to **route traffi
 
 To use CNAME in CDN, you can set up CNAMEs in the CDN Name information field in the CDN Info folder when creating any CDN on the vCDN system.
 
-<figure><img src="../../.gitbook/assets/image (79) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (178) (1).png" alt=""><figcaption></figcaption></figure>
