@@ -409,6 +409,7 @@
       * [Tình huống sử dụng (use case)](vstorage/object-storage/object-storage-hcm04/tinh-huong-su-dung-use-case/README.md)
         * [Migrate dữ liệu (Migrate data)](vstorage/object-storage/object-storage-hcm04/tinh-huong-su-dung-use-case/migrate-du-lieu-migrate-data/README.md)
           * [\[Rclone\] Mount vStorage lên Window server](vstorage/object-storage/object-storage-hcm04/tinh-huong-su-dung-use-case/migrate-du-lieu-migrate-data/rclone-mount-vstorage-len-window-server.md)
+          * [\[Rclone\] Migration Runbook – AWS S3 lên vStorage](vstorage/object-storage/object-storage-hcm04/tinh-huong-su-dung-use-case/migrate-du-lieu-migrate-data/rclone-mount-vstorage-len-window-server-1.md)
           * [\[Rclone\] Mount vStorage thành Local Drive trên Linux](vstorage/object-storage/object-storage-hcm04/tinh-huong-su-dung-use-case/migrate-du-lieu-migrate-data/rclone-mount-vstorage-thanh-local-drive-tren-linux.md)
           * [\[Rclone\] Đồng bộ dữ liệu từ AWS S3 sang vStorage](vstorage/object-storage/object-storage-hcm04/tinh-huong-su-dung-use-case/migrate-du-lieu-migrate-data/rclone-dong-bo-du-lieu-tu-aws-s3-sang-vstorage.md)
       * [Cách tính phí](vstorage/object-storage/object-storage-hcm04/cach-tinh-phi.md)
