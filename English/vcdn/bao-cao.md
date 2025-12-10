@@ -36,8 +36,8 @@ Statistical information in the report includes:
 * **Group** : Service package.
 * **Timeframe:** Select the reporting period.
 
-<figure><img src="../.gitbook/assets/image (397).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (222) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 4: Click on the Excel** icon to export the report to an Excel file for storage or further analysis.
 
-<figure><img src="../.gitbook/assets/image (398).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (223) (1).png" alt=""><figcaption></figcaption></figure>

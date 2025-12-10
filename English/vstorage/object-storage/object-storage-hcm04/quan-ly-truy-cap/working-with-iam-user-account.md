@@ -25,7 +25,7 @@ To create an IAM user account, please first refer to the instructions below:
 
 <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Assign permissions to work with the project to the IAM User Account <a href="#phan-quyen-lam-viec-voi-project-vstorage-api-cho-service-account" id="phan-quyen-lam-viec-voi-project-vstorage-api-cho-service-account"></a>
 
@@ -72,7 +72,7 @@ To grant access to bucket/object for IAM User Account, you need to grant permiss
 2. Select the **Bucket** you want to assign permissions to the IAM User Account.
 3. Select the **Action** icon and select **Configure policy.**
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 4. Here, you can choose the configuration for each **Statement** on the left or directly edit the JSON file in the right column. Specifically, the structure of a Bucket Policy includes:
 

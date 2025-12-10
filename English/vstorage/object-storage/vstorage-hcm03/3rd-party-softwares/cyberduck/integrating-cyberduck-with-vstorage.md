@@ -29,7 +29,7 @@ To view detailed instructions on integrating the Cyberduck tool with vStorage, p
 * **Access key**: Enter the S3 access key you created from vIAM, which is also the access key information obtained from step 4 above.
 * **Secret key**: Enter the S3 access key you created from vIAM, which is also the access key information obtained from step 4 above.
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (427) (1).png" alt=""><figcaption></figcaption></figure>
 
 5\. Choose **Connect**.
 

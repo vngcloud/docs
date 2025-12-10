@@ -4,19 +4,19 @@
 
 **Number chart** with a summary index is a type of chart that displays numbers calculated from a dataset, rather than showing the original numbers.
 
-<figure><img src="../../../../.gitbook/assets/image (67) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (67) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Widget Configuration
 
-<figure><img src="../../../../.gitbook/assets/image (68) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (68) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style
 
 For a number chart, at this section, select Style as **Number.**
 
-<figure><img src="../../../../.gitbook/assets/image (69) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (69) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### 2. Graph your data
 

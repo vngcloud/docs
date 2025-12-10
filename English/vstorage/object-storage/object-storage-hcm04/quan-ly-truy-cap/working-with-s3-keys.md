@@ -24,7 +24,7 @@ To initialize an S3 key, follow the instructions below:
 **Attention:**
 
 * After clicking to create S3 key, you need to **save the Access Key/Secret Key pair** for use. If you do not save it now, you will not be able to get the Secret Key of this Access Key later.
-* <mark style="background-color:orange;">The S3 key initialized by</mark> <mark style="background-color:orange;"></mark><mark style="background-color:orange;">**the Root User Account**</mark> <mark style="background-color:orange;"></mark><mark style="background-color:orange;">will have full access/operation rights on the buckets of this project.</mark>
+* <mark style="background-color:orange;">The S3 key initialized by</mark> <mark style="background-color:orange;">**the Root User Account**</mark> <mark style="background-color:orange;">will have full access/operation rights on the buckets of this project.</mark>
 {% endhint %}
 
 ***
@@ -47,7 +47,7 @@ To initialize an S3 key, follow the instructions below:
 **Attention:**
 
 * After clicking to create S3 key, you need to **save the Access Key/Secret Key pair** for use. If you do not save it now, you will not be able to get the Secret Key of this Access Key later.
-* <mark style="background-color:orange;">S3 keys created by</mark> <mark style="background-color:orange;"></mark><mark style="background-color:orange;">**IAM User Account**</mark> <mark style="background-color:orange;"></mark><mark style="background-color:orange;">will have full access/operation rights on buckets/objects according to the permissions of that IAM User Account. For example, if your IAM User Account only has Read Object permission, then S3 keys created by this IAM User Account will also only have Read Object permission.</mark>
+* <mark style="background-color:orange;">S3 keys created by</mark> <mark style="background-color:orange;">**IAM User Account**</mark> <mark style="background-color:orange;">will have full access/operation rights on buckets/objects according to the permissions of that IAM User Account. For example, if your IAM User Account only has Read Object permission, then S3 keys created by this IAM User Account will also only have Read Object permission.</mark>
 {% endhint %}
 
 ***
@@ -63,7 +63,7 @@ To integrate the S3 Browser tool with vStorage, you can follow the instructions 
 1. Download the S3 Browser user tool here [https://s3browser.com/download.aspx](https://s3browser.com/download.aspx) .
 2.  Open the S3 Browser app **.** Select the Account folder, **then select Add new account**
 
-    <figure><img src="../../../../.gitbook/assets/image (27) (1).png" alt="" width="295"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (439) (1).png" alt="" width="295"><figcaption></figcaption></figure>
 3. The Add New Account screen appears, now you enter the following information:
 
 * **Display name:** Display name of the account. Example: Demo\_HCM04
@@ -74,11 +74,11 @@ To integrate the S3 Browser tool with vStorage, you can follow the instructions 
 4. Select the **Use Secure transfer (SSL/TLS)** option because vStorage only supports encrypted transmission channels (HTTPS, port 443) to ensure data security, vStorage currently does not support unencrypted transmission channels (HTTP, port 80).
 5. Select **Add new account.**
 
-<figure><img src="../../../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (440) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. When the connection is successful, the S3 Browser screen will display as follows:
 
-<figure><img src="../../../../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (442) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Use 3rd party softwares to implement features on vStorage <a href="#su-dung-3rd-party-softwares-de-thuc-hien-cac-tinh-nang-tren-vstorage" id="su-dung-3rd-party-softwares-de-thuc-hien-cac-tinh-nang-tren-vstorage"></a>
 
@@ -98,7 +98,7 @@ Below are instructions for some common use cases you can perform on S3 Browser:
 
 * You can also create/delete folders by selecting **New Folder** or **Delete** .
 
-<figure><img src="../../../../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (30) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### **Advanced use cases**
 
@@ -110,7 +110,7 @@ Here are instructions for advanced features you can do on S3 Browser:
 
 To set up ACL for a bucket using S3 Browser, right-click on the bucket, then select Edit Permission (ACL). In the permission section, check the permissions you want to grant to the user. For more details, see [https://s3browser.com/share-s3-bucket-edit-acls.aspx](https://s3browser.com/share-s3-bucket-edit-acls.aspx)
 
-<figure><img src="../../../../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (31) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **SSE-S3**
 
@@ -126,11 +126,11 @@ SSE-S3 (Server-Side Encryption with S3 Managed Keys) is a server-side data encry
 
 To set up Object Locked for a bucket using S3 Browser, when creating a new bucket, you need to select the **Enable S3 Objected Lock option.**
 
-<figure><img src="../../../../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (535) (1).png" alt=""><figcaption></figcaption></figure>
 
 Next, when the bucket is successfully created, right-click on the bucket, then select **Object Locked** . You can set the object locked in both **Retention** and **Legal Hold** modes through S3 Browser. For more details, please visit [https://s3browser.com/amazon-s3-object-lock.aspx](https://s3browser.com/amazon-s3-object-lock.aspx)
 
-<figure><img src="../../../../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (33) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Versioning**
 
@@ -138,7 +138,7 @@ Versioning is a feature that supports storing multiple past versions of objects 
 
 To set up Versioning for a bucket using S3 Browser, right-click on the bucket, then select **Edit Versioning Settings** . For more details, see [https://s3browser.com/amazon-s3-versioning.aspx](https://s3browser.com/amazon-s3-versioning.aspx)
 
-<figure><img src="../../../../.gitbook/assets/image (34) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (34) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Lifecycle rotation**
 
@@ -146,7 +146,7 @@ To set up Versioning for a bucket using S3 Browser, right-click on the bucket, t
 
 To set up Lifecycle rotation for a bucket using S3 Browser, right-click on the bucket, then select **Lifecycle Configuration** . For more details, see [https://s3browser.com/bucket-lifecycle-configuration.aspx](https://s3browser.com/bucket-lifecycle-configuration.aspx)
 
-<figure><img src="../../../../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (35) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Lifecycle transit**
 
@@ -158,7 +158,7 @@ CORS (Cross-Origin Resource Sharing) is a security mechanism that allows website
 
 To set up CORS for a bucket using S3 Browser, right-click on the bucket, then select **CORS Configuration** . For more details, see [https://s3browser.com/s3-bucket-cors-configuration.aspx](https://s3browser.com/s3-bucket-cors-configuration.aspx)
 
-<figure><img src="../../../../.gitbook/assets/image (36) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (36) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Public/ Private bucket**
 
@@ -166,7 +166,7 @@ To set up CORS for a bucket using S3 Browser, right-click on the bucket, then se
 
 To set a bucket to public using S3 Browser, right-click on the bucket, then select **Public Access block Configuration** . For more details, see [https://s3browser.com/amazon-s3-public-access-block-configuration.aspx](https://s3browser.com/amazon-s3-public-access-block-configuration.aspx)
 
-<figure><img src="../../../../.gitbook/assets/image (37) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (37) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bucket policy**
 
@@ -174,7 +174,7 @@ To set a bucket to public using S3 Browser, right-click on the bucket, then sele
 
 To set up a bucket policy using S3 Browser, right-click on the bucket, then select **Edit Bucket Policy** . For more details, see [https://s3browser.com/working-with-amazon-s3-bucket-policies.aspx?v=11.7.5\&fam=x64#amazon-s3-bucket-policies-examples](https://s3browser.com/working-with-amazon-s3-bucket-policies.aspx?v=11.7.5\&fam=x64#amazon-s3-bucket-policies-examples)
 
-<figure><img src="../../../../.gitbook/assets/image (38) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (334) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

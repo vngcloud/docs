@@ -4,19 +4,19 @@
 
 A summary table chart is a type of chart that displays calculated values from a dataset, rather than showing the raw numbers. Typically, this type of chart should be used when you want to group data over time using the Group by feature.
 
-<figure><img src="../../../../.gitbook/assets/image (73) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (73) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Widget Configuration
 
-<figure><img src="../../../../.gitbook/assets/image (74) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (74) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style
 
 For the table chart, in this section, you select Style as **Log search**
 
-<figure><img src="../../../../.gitbook/assets/image (75) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (75) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### 2. Graph your data
 

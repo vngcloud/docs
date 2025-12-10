@@ -49,119 +49,74 @@ data:
     - type: log
       paths:
         - /var/log/pods/*/*/*.log
-
-    output.kafka:
-      hosts: {$BOOTSTRAP_SERVERS}
-      topic: {$TOPIC}
-      partition.round_robin:
-        reachable_only: false
-      required_acks: 1
-      compression: gzip
-      max_message_bytes: 1000000
-      ssl.certificate_authorities:
-        - /usr/share/filebeat/VNG.trust.pem
-      ssl.certificate: /usr/share/filebeat/user.cer.pem
-      ssl.key: /usr/share/filebeat/user.key.pem
-      ssl.verification_mode: "none"
-    logging.level: info
-    logging.to_files: true
-    logging.files:
-      path: /var/log/filebeat
-      name: filebeat
-      keepfiles: 7
-      permissions: 0644
+output.kafka:  hosts: {$BOOTSTRAP_SERVERS}  topic: {$TOPIC}  partition.round_robin:    reachable_only: false  required_acks: 1  compression: gzip  max_message_bytes: 1000000  ssl.certificate_authorities:    - /usr/share/filebeat/VNG.trust.pem  ssl.certificate: /usr/share/filebeat/user.cer.pem  ssl.key: /usr/share/filebeat/user.key.pem  ssl.verification_mode: "none"logging.level: infologging.to_files: truelogging.files:  path: /var/log/filebeat  name: filebeat  keepfiles: 7  permissions: 0644
 </code></pre></td></tr></tbody></table><ul><li>File<code>secret.yml</code></li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>apiVersion: v1
 kind: Secret
 metadata:
-  namespace: agent-vmonitor-platform
-  name: filebeat
+namespace: agent-vmonitor-platform
+name: filebeat
 data:
-  VNG.trust.pem: {$vng.trust.pem}
-  user.cer.pem: {$user.cer.pem}
-  user.key.pem: {$user.key.pem}
+VNG.trust.pem: {$vng.trust.pem}
+user.cer.pem: {$user.cer.pem}
+user.key.pem: {$user.key.pem}
 type: Opaque
 </code></pre></td></tr></tbody></table><ul><li><code>$vng.trust.pem, $user.cer.pem, $user.key.pem</code> The content is md5 hash of the corresponding files in the certificate directory or create a secret with --from-file cert</li><li>File<code>daemonset.yml</code></li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>apiVersion: apps/v1
 kind: DaemonSet
 metadata:
-  name: filebeat
-  namespace: agent-vmonitor-platform
-  labels:
-    app: filebeat
+name: filebeat
+namespace: agent-vmonitor-platform
+labels:
+app: filebeat
 spec:
-  selector:
-    matchLabels:
-      app: filebeat
-  template:
-    metadata:
-      name: filebeat
-      labels:
-        app: filebeat
-    spec:
-      containers:
-        - name: filebeat
-          image: docker.elastic.co/beats/filebeat:8.7.0
-          imagePullPolicy: IfNotPresent
-          volumeMounts:
-            - name: config
-              mountPath: /usr/share/filebeat/filebeat.yml
-              subPath: filebeat.yml
-            - name: certificate
-              mountPath: /usr/share/filebeat/VNG.trust.pem
-              subPath: VNG.trust.pem
-            - name: certificate
-              mountPath: /usr/share/filebeat/user.cer.pem
-              subPath: user.cer.pem
-            - name: certificate
-              mountPath: /usr/share/filebeat/user.key.pem
-              subPath: user.key.pem
-            - name: varlog
-              mountPath: /var/log/
-              readOnly: true
-            - name: varlibdockercontainers
-              mountPath: /var/lib/docker/containers
-              readOnly: true
-          resources:
-            limits:
-              cpu: '1'
-              memory: 2Gi
-      volumes:
-        - name: varlog
-          hostPath:
-            path: /var/log/
-        - name: varlibdockercontainers
-          hostPath:
-            path: /var/lib/docker/containers
-
-        - name: config
-          configMap:
-            name: filebeat
-            items:
-              - key: filebeat.yml
-                path: filebeat.yml
-
-        - name: certificate
-          secret:
-            secretName: filebeat
-            items:
-              - key: VNG.trust.pem
-                path: VNG.trust.pem
-              - key: user.cer.pem
-                path: user.cer.pem
-              - key: user.key.pem
-                path: user.key.pem
-      securityContext:
-        runAsUser: 0
-      restartPolicy: Always
-      tolerations:
-        - key: vmonitor-log
-          operator: Equal
-          value: 'true'
-          effect: NoSchedule
-</code></pre></td></tr></tbody></table></td></tr><tr><td><p>Copy</p><pre><code>apiVersion: v1
+selector:
+matchLabels:
+app: filebeat
+template:
+metadata:
+name: filebeat
+labels:
+app: filebeat
+spec:
+containers:
+- name: filebeat
+image: docker.elastic.co/beats/filebeat:8.7.0
+imagePullPolicy: IfNotPresent
+volumeMounts:
+- name: config
+mountPath: /usr/share/filebeat/filebeat.yml
+subPath: filebeat.yml
+- name: certificate
+mountPath: /usr/share/filebeat/VNG.trust.pem
+subPath: VNG.trust.pem
+- name: certificate
+mountPath: /usr/share/filebeat/user.cer.pem
+subPath: user.cer.pem
+- name: certificate
+mountPath: /usr/share/filebeat/user.key.pem
+subPath: user.key.pem
+- name: varlog
+mountPath: /var/log/
+readOnly: true
+- name: varlibdockercontainers
+mountPath: /var/lib/docker/containers
+readOnly: true
+resources:
+limits:
+cpu: '1'
+memory: 2Gi
+volumes:
+- name: varlog
+hostPath:
+path: /var/log/
+- name: varlibdockercontainers
+hostPath:
+path: /var/lib/docker/containers
+    - name: config      configMap:        name: filebeat        items:          - key: filebeat.yml            path: filebeat.yml    - name: certificate      secret:        secretName: filebeat        items:          - key: VNG.trust.pem            path: VNG.trust.pem          - key: user.cer.pem            path: user.cer.pem          - key: user.key.pem            path: user.key.pem  securityContext:    runAsUser: 0  restartPolicy: Always  tolerations:    - key: vmonitor-log      operator: Equal      value: 'true'      effect: NoSchedule
+</code></pre></td></tr></tbody></table></td></tr><tr><td></td></tr><tr><td><p>Copy</p><pre><code>apiVersion: v1
 kind: Namespace
 metadata:
   name: agent-vmonitor-platform
-</code></pre></td></tr><tr><td><p>Copy</p><pre><code>apiVersion: v1
+</code></pre></td></tr><tr><td></td></tr><tr><td><p>Copy</p><pre><code>apiVersion: v1
 kind: ConfigMap
 metadata:
   name: filebeat
@@ -172,112 +127,145 @@ data:
     - type: log
       paths:
         - /var/log/pods/*/*/*.log
-
-    output.kafka:
-      hosts: {$BOOTSTRAP_SERVERS}
-      topic: {$TOPIC}
-      partition.round_robin:
-        reachable_only: false
-      required_acks: 1
-      compression: gzip
-      max_message_bytes: 1000000
-      ssl.certificate_authorities:
-        - /usr/share/filebeat/VNG.trust.pem
-      ssl.certificate: /usr/share/filebeat/user.cer.pem
-      ssl.key: /usr/share/filebeat/user.key.pem
-      ssl.verification_mode: "none"
-    logging.level: info
-    logging.to_files: true
-    logging.files:
-      path: /var/log/filebeat
-      name: filebeat
-      keepfiles: 7
-      permissions: 0644
+output.kafka:  hosts: {$BOOTSTRAP_SERVERS}  topic: {$TOPIC}  partition.round_robin:    reachable_only: false  required_acks: 1  compression: gzip  max_message_bytes: 1000000  ssl.certificate_authorities:    - /usr/share/filebeat/VNG.trust.pem  ssl.certificate: /usr/share/filebeat/user.cer.pem  ssl.key: /usr/share/filebeat/user.key.pem  ssl.verification_mode: "none"logging.level: infologging.to_files: truelogging.files:  path: /var/log/filebeat  name: filebeat  keepfiles: 7  permissions: 0644
+</code></pre></td></tr><tr><td></td></tr><tr><td><p>Copy</p><pre><code>apiVersion: v1
+kind: Secret
+metadata:
+namespace: agent-vmonitor-platform
+name: filebeat
+data:
+VNG.trust.pem: {$vng.trust.pem}
+user.cer.pem: {$user.cer.pem}
+user.key.pem: {$user.key.pem}
+type: Opaque
+</code></pre></td></tr><tr><td></td></tr><tr><td><p>Copy</p><pre><code>apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+name: filebeat
+namespace: agent-vmonitor-platform
+labels:
+app: filebeat
+spec:
+selector:
+matchLabels:
+app: filebeat
+template:
+metadata:
+name: filebeat
+labels:
+app: filebeat
+spec:
+containers:
+- name: filebeat
+image: docker.elastic.co/beats/filebeat:8.7.0
+imagePullPolicy: IfNotPresent
+volumeMounts:
+- name: config
+mountPath: /usr/share/filebeat/filebeat.yml
+subPath: filebeat.yml
+- name: certificate
+mountPath: /usr/share/filebeat/VNG.trust.pem
+subPath: VNG.trust.pem
+- name: certificate
+mountPath: /usr/share/filebeat/user.cer.pem
+subPath: user.cer.pem
+- name: certificate
+mountPath: /usr/share/filebeat/user.key.pem
+subPath: user.key.pem
+- name: varlog
+mountPath: /var/log/
+readOnly: true
+- name: varlibdockercontainers
+mountPath: /var/lib/docker/containers
+readOnly: true
+resources:
+limits:
+cpu: '1'
+memory: 2Gi
+volumes:
+- name: varlog
+hostPath:
+path: /var/log/
+- name: varlibdockercontainers
+hostPath:
+path: /var/lib/docker/containers
+    - name: config      configMap:        name: filebeat        items:          - key: filebeat.yml            path: filebeat.yml    - name: certificate      secret:        secretName: filebeat        items:          - key: VNG.trust.pem            path: VNG.trust.pem          - key: user.cer.pem            path: user.cer.pem          - key: user.key.pem            path: user.key.pem  securityContext:    runAsUser: 0  restartPolicy: Always  tolerations:    - key: vmonitor-log      operator: Equal      value: 'true'      effect: NoSchedule
+</code></pre></td></tr><tr><td><p>Copy</p><pre><code>apiVersion: v1
+kind: Namespace
+metadata:
+name: agent-vmonitor-platform
+</code></pre></td></tr><tr><td><p>Copy</p><pre><code>apiVersion: v1
+kind: ConfigMap
+metadata:
+name: filebeat
+namespace: agent-vmonitor-platform
+data:
+filebeat.yml: >-
+filebeat.inputs:
+- type: log
+paths:
+- /var/log/pods///*.log
+output.kafka:  hosts: {$BOOTSTRAP_SERVERS}  topic: {$TOPIC}  partition.round_robin:    reachable_only: false  required_acks: 1  compression: gzip  max_message_bytes: 1000000  ssl.certificate_authorities:    - /usr/share/filebeat/VNG.trust.pem  ssl.certificate: /usr/share/filebeat/user.cer.pem  ssl.key: /usr/share/filebeat/user.key.pem  ssl.verification_mode: "none"logging.level: infologging.to_files: truelogging.files:  path: /var/log/filebeat  name: filebeat  keepfiles: 7  permissions: 0644
 </code></pre></td></tr><tr><td><p>Copy</p><pre><code>apiVersion: v1
 kind: Secret
 metadata:
-  namespace: agent-vmonitor-platform
-  name: filebeat
+namespace: agent-vmonitor-platform
+name: filebeat
 data:
-  VNG.trust.pem: {$vng.trust.pem}
-  user.cer.pem: {$user.cer.pem}
-  user.key.pem: {$user.key.pem}
+VNG.trust.pem: {$vng.trust.pem}
+user.cer.pem: {$user.cer.pem}
+user.key.pem: {$user.key.pem}
 type: Opaque
 </code></pre></td></tr><tr><td><p>Copy</p><pre><code>apiVersion: apps/v1
 kind: DaemonSet
 metadata:
-  name: filebeat
-  namespace: agent-vmonitor-platform
-  labels:
-    app: filebeat
+name: filebeat
+namespace: agent-vmonitor-platform
+labels:
+app: filebeat
 spec:
-  selector:
-    matchLabels:
-      app: filebeat
-  template:
-    metadata:
-      name: filebeat
-      labels:
-        app: filebeat
-    spec:
-      containers:
-        - name: filebeat
-          image: docker.elastic.co/beats/filebeat:8.7.0
-          imagePullPolicy: IfNotPresent
-          volumeMounts:
-            - name: config
-              mountPath: /usr/share/filebeat/filebeat.yml
-              subPath: filebeat.yml
-            - name: certificate
-              mountPath: /usr/share/filebeat/VNG.trust.pem
-              subPath: VNG.trust.pem
-            - name: certificate
-              mountPath: /usr/share/filebeat/user.cer.pem
-              subPath: user.cer.pem
-            - name: certificate
-              mountPath: /usr/share/filebeat/user.key.pem
-              subPath: user.key.pem
-            - name: varlog
-              mountPath: /var/log/
-              readOnly: true
-            - name: varlibdockercontainers
-              mountPath: /var/lib/docker/containers
-              readOnly: true
-          resources:
-            limits:
-              cpu: '1'
-              memory: 2Gi
-      volumes:
-        - name: varlog
-          hostPath:
-            path: /var/log/
-        - name: varlibdockercontainers
-          hostPath:
-            path: /var/lib/docker/containers
-
-        - name: config
-          configMap:
-            name: filebeat
-            items:
-              - key: filebeat.yml
-                path: filebeat.yml
-
-        - name: certificate
-          secret:
-            secretName: filebeat
-            items:
-              - key: VNG.trust.pem
-                path: VNG.trust.pem
-              - key: user.cer.pem
-                path: user.cer.pem
-              - key: user.key.pem
-                path: user.key.pem
-      securityContext:
-        runAsUser: 0
-      restartPolicy: Always
-      tolerations:
-        - key: vmonitor-log
-          operator: Equal
-          value: 'true'
-          effect: NoSchedule
+selector:
+matchLabels:
+app: filebeat
+template:
+metadata:
+name: filebeat
+labels:
+app: filebeat
+spec:
+containers:
+- name: filebeat
+image: docker.elastic.co/beats/filebeat:8.7.0
+imagePullPolicy: IfNotPresent
+volumeMounts:
+- name: config
+mountPath: /usr/share/filebeat/filebeat.yml
+subPath: filebeat.yml
+- name: certificate
+mountPath: /usr/share/filebeat/VNG.trust.pem
+subPath: VNG.trust.pem
+- name: certificate
+mountPath: /usr/share/filebeat/user.cer.pem
+subPath: user.cer.pem
+- name: certificate
+mountPath: /usr/share/filebeat/user.key.pem
+subPath: user.key.pem
+- name: varlog
+mountPath: /var/log/
+readOnly: true
+- name: varlibdockercontainers
+mountPath: /var/lib/docker/containers
+readOnly: true
+resources:
+limits:
+cpu: '1'
+memory: 2Gi
+volumes:
+- name: varlog
+hostPath:
+path: /var/log/
+- name: varlibdockercontainers
+hostPath:
+path: /var/lib/docker/containers
+    - name: config      configMap:        name: filebeat        items:          - key: filebeat.yml            path: filebeat.yml    - name: certificate      secret:        secretName: filebeat        items:          - key: VNG.trust.pem            path: VNG.trust.pem          - key: user.cer.pem            path: user.cer.pem          - key: user.key.pem            path: user.key.pem  securityContext:    runAsUser: 0  restartPolicy: Always  tolerations:    - key: vmonitor-log      operator: Equal      value: 'true'      effect: NoSchedule
 </code></pre></td></tr></tbody></table>

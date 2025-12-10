@@ -8,13 +8,13 @@ To push Metrics to vMonitor, you need to install the Metric Agent on your server
 
 To create a service account, visit [here](https://iam.console.vngcloud.vn/service-accounts).
 
-* Select "**Create a Service Account**", enter a name for the Service Account, and click **Next Step** to assign permissions to the Service Account.&#x20;
-* Find and select the **Policy: vMonitorMetricPush**, then click "**Create a Service Account**" to create the Service Account. The Policy: vMonitorMetricPush, created by VNG Cloud, contains the exact permissions needed to push metrics to the system.&#x20;
+* Select "**Create a Service Account**", enter a name for the Service Account, and click **Next Step** to assign permissions to the Service Account.
+* Find and select the **Policy: vMonitorMetricPush**, then click "**Create a Service Account**" to create the Service Account. The Policy: vMonitorMetricPush, created by VNG Cloud, contains the exact permissions needed to push metrics to the system.
 * After successfully creating the Service Account, you need to save the Client\_ID and Secret\_Key for the next step.
 
 2\. **Download the Agent Installer for Windows**
 
-* Access this link to load agent installer forWindows : [https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.1/telegraf-nightly\_windows\_amd64.exe](https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.1/telegraf-nightly\_windows\_amd64.exe)
+* Access this link to load agent installer forWindows : [https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.1/telegraf-nightly\_windows\_amd64.exe](https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.26.0-2.0.1/telegraf-nightly_windows_amd64.exe)
 
 3\. Install the installer using the Client\_ID and Secret\_Key you copied above.
 
@@ -84,7 +84,7 @@ Step 1: Create an API Key (if you have not created any API Key before).
 
 Step 2: Download Agent Installer
 
-* Access the link to download the agent installer:: [https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.23.0-1.4.0/telegraf-nightly\_windows\_amd64.exe](https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.23.0-1.4.0/telegraf-nightly\_windows\_amd64.exe)
+* Access the link to download the agent installer:: [https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.23.0-1.4.0/telegraf-nightly\_windows\_amd64.exe](https://github.com/vngcloud/vmonitor-metrics-agent/releases/download/1.23.0-1.4.0/telegraf-nightly_windows_amd64.exe)
 
 Step 3: Install Agent
 
@@ -123,7 +123,7 @@ Step 3: Install Agent
 
 * Select **Install** to begin the installation.
 
-<figure><img src="../../../../../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (132) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Select **Yes** to grant permissions for the agent to operate.
 

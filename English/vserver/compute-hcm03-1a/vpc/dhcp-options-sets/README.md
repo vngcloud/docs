@@ -14,8 +14,6 @@ The **DHCP** (Dynamic Host Configuration Protocol) feature allows you to configu
 {% hint style="info" %}
 **Note:**
 
-
-
 After configuring DNS for a VM, to refresh the DHCP usage on the VM, you can either restart the VM, or wait for the lease to expire, or manually run the following commands:
 
 * **For Linux servers**: Run the command _<mark style="background-color:orange;">sudo dhclient -r && sudo dhclient</mark>_
@@ -97,7 +95,7 @@ Trong quá trình sử dụng DHCP options set, người dùng có thể xóa DH
 4. Select the DHCP options set you want to delete to access its details;
 5. On the details screen, in the **Associated VPCs** tab, all associated VPCs are listed. Select all associated VPCs and click **Detach** to remove them;
 
-<figure><img src="../../../../.gitbook/assets/image (286).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (285) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Confirm the detachment of all VPCs from the DHCP options set.
 
@@ -108,4 +106,3 @@ Trong quá trình sử dụng DHCP options set, người dùng có thể xóa DH
 3. Confirm the deletion of the DHCP options set. Once deleted, the DHCP options set cannot be recovered.
 
 <figure><img src="../../../../.gitbook/assets/image (287).png" alt=""><figcaption></figcaption></figure>
-

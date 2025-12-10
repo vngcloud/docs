@@ -8,7 +8,7 @@ Snapshot also supports comprehensive data encryption, ensuring the security of s
 
 At VNG Cloud, we support creating Snapshots for both Servers and Volumes, simplifying the Snapshot creation process and meeting all your usage needs. Once you have created Snapshots for your virtual machines and virtual disks, you can use our Roll Back feature to restore the state of the virtual machine and virtual disk to the time the Snapshot was created.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -53,6 +53,3 @@ Snapshots can help you easily switch data in case you want to migrate data or ap
 ## Start with Snapshot
 
 To use Snapshot, you need to activate the Snapshot on our dashboard. Please refer to the [Activate Snapshot](activate-snapshot.md) guide.
-
-
-

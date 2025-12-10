@@ -4,19 +4,19 @@
 
 Summary statistic table charts are a type of chart that displays calculated figures from a data set, instead of showing the original numbers. Typically, this kind of chart should be used when you want to group data over time using the Group by feature.
 
-<figure><img src="../../../../.gitbook/assets/image (70) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (70) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Widget Configuration
 
-<figure><img src="../../../../.gitbook/assets/image (71) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (71) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style
 
 For table charts, at this section, choose Style as **Table**.
 
-<figure><img src="../../../../.gitbook/assets/image (72) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (72) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### 2. Graph your data
 

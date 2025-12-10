@@ -57,6 +57,6 @@ The following API is used to delete a container within a project.
 
 The following API is used to delete an object within a container.
 
-<figure><img src="../../../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In addition to the quick usage on the vStorage Portal, you can use the vStorage API on personal devices following the instructions in \[Use vStorage API]\(Link to the relevant documentation).

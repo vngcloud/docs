@@ -4,19 +4,19 @@
 
 **Stacked area** chart is a type of graph that shows the change in value over time through stacked regions. A stacked area chart usually comprises multiple regions, each with a different color. The height of the stack at the top line corresponds to the total value when all the stacked groups are combined.
 
-<figure><img src="../../../../.gitbook/assets/image (61) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (61) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Widget Configuration
 
-<figure><img src="../../../../.gitbook/assets/image (62) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Choose graph style
 
 For a stacked area chart, select Style as Stacked area
 
-<figure><img src="../../../../.gitbook/assets/image (63) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (63) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### 2. Graph your data
 

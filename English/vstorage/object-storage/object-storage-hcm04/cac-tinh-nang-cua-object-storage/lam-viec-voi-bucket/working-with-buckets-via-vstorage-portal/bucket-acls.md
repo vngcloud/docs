@@ -9,7 +9,7 @@
 3. If you want to delegate bucket permissions to a **Root User Account** or another **IAM User Account** or **Service Account** , you need to know the **vStorage User ID** of the user you want to delegate permissions to:
    1. For **Root User Account : you can get vStorage User ID** information right on the **project** information page as shown below.
 
-<figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (423) (1).png" alt=""><figcaption></figcaption></figure>
 
 b. For **IAM User Account** and **Service Account : you can get vStorage User ID** information in **Identity and Access Management**
 
@@ -52,7 +52,7 @@ b. For **IAM User Account** and **Service Account : you can get vStorage User ID
 ### **Example 2: Grant FULL\_CONTROL permission to another vStorage account** <a href="#v-jga-d-xym-2-cp-r5s-quyn-sv5a-full_control-cho-mt-79s-ti-jia-khon-ir5a-vstorage-khc-fla" id="v-jga-d-xym-2-cp-r5s-quyn-sv5a-full_control-cho-mt-79s-ti-jia-khon-ir5a-vstorage-khc-fla"></a>
 
 {% hint style="info" %}
-Attention:&#x20;
+Attention:
 
 * To grant access to resources to another vStorage account, you need to know the vStorage User ID of the user you want to share access to. You can view the vStorage User ID information by following the instructions here.
 {% endhint %}

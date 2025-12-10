@@ -10,19 +10,19 @@ First, you need to install Sigma Media Server following the steps [here](https:/
 
 **Step 1:** After successfully installing **Sigma Media Server** , access [https://portal.sigma.video/apps](https://portal.sigma.video/apps) with the email you previously registered to use the service.
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2:** Select the **Product** drop-down menu and select **Livestream**
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3:** Continue to select **the Channel tab**
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 4:** Select the **Add channel** button in the right corner
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 5: The Create Channel** screen appears, you configure the channel parameters, select the processing server in the **Advance configuration** section.
 
@@ -30,11 +30,11 @@ First, you need to install Sigma Media Server following the steps [here](https:/
 
 **Step 6:** Return to the **Channel** list screen and we will see the newly created channel in the list. Click on the channel name to go to the channel detail screen.
 
-<figure><img src="../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 7:** In the channel detail screen, we will see the RTMP Stream URL information. Replace **the Stream URL** on the screen with _<mark style="color:blue;">**rtmp://\<server\_public\_ip>:1935/livestream**</mark>_ to stream.
 
-<figure><img src="../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Initialize and configure the vCDN service. <a href="#khoi-tao-va-cau-hinh-dich-vu-vcdn" id="khoi-tao-va-cau-hinh-dich-vu-vcdn"></a>
 

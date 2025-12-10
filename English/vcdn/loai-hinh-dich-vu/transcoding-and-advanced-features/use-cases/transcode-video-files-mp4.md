@@ -37,7 +37,7 @@ First, you need to install Sigma Media Server following the steps [here](https:/
 
 **Step 1:** After successfully installing Sigma Media Server, access [https://portal.sigma.video/apps](https://portal.sigma.video/apps) with the email you previously registered to use the service.
 
-<figure><img src="../../../../.gitbook/assets/image (39) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2:** Select the **Product** drop-down menu and select **Media VOD**
 

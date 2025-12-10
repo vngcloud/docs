@@ -36,7 +36,7 @@ First, you need to install Sigma Media Server following the steps [here](https:/
 
 **Step 7:** In the channel detail screen, we will see the RTMP Stream URL information. Replace **the Stream URL** on the screen with _<mark style="color:blue;">**rtmp://\<server\_public\_ip>:1935/livestream**</mark>_ to stream.
 
-<figure><img src="../../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Initialize and configure the vCDN service. <a href="#khoi-tao-va-cau-hinh-dich-vu-vcdn" id="khoi-tao-va-cau-hinh-dich-vu-vcdn"></a>
 

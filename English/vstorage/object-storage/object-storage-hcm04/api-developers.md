@@ -19,11 +19,11 @@ Follow the steps below to work with vStorage via Service Account
 
 For details, please refer to [https://docs.api.vngcloud.vn/service-docs/vstorage-hcm04-api.html](https://docs.api.vngcloud.vn/service-docs/vstorage-hcm04-api.html) .
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (444).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (444) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## S3 API - Authentication <a href="#authentication" id="authentication"></a>
 
@@ -37,7 +37,7 @@ For example:
 
 <figure><img src="../../../.gitbook/assets/image (22) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -506,7 +506,7 @@ curl --location --request DELETE 'https://hcm04.vstorage.vngcloud.vn/demobucket/
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=0fe5fc5caca290919c3782c74f793c0f7cfe36f4f2c7829de8b895bab51ac7d1'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (345).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (344) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **COPY Object** : Copy an object from one S3 location to another.
   * Request: `PUT /<destination-bucket>/<destination-object-key>`with header `x-amz-copy-source`.

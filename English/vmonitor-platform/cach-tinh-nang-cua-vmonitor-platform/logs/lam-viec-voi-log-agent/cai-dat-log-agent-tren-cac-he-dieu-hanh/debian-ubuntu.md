@@ -84,13 +84,22 @@ FilebeatLogstash
 journalctl -f --unit filebeat
 tail -f /var/log/filebeat
 </code></pre></td></tr></tbody></table><ul><li>Uninstall</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>tapt remove --purge filebeat
-</code></pre></td></tr></tbody></table></td></tr><tr><td><p></p><pre><code>systemctl start filebeat
-</code></pre></td></tr><tr><td><p></p><pre><code>systemctl enable filebeat
-</code></pre></td></tr><tr><td><p></p><pre><code>systemctl stop filebeat
-</code></pre></td></tr><tr><td><p></p><pre><code>systemctl reload filebeat
-</code></pre></td></tr><tr><td><p></p><pre><code>systemctl restart filebeat
-</code></pre></td></tr><tr><td><p></p><pre><code>systemctl status filebeat
+</code></pre></td></tr></tbody></table></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl start filebeat
+</code></pre></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl enable filebeat
+</code></pre></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl stop filebeat
+</code></pre></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl reload filebeat
+</code></pre></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl restart filebeat
+</code></pre></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl status filebeat
 journalctl -f --unit filebeat
 tail -f /var/log/filebeat
-</code></pre></td></tr><tr><td><p></p><pre><code>tapt remove --purge filebeat
+</code></pre></td></tr><tr><td></td></tr><tr><td><pre><code>tapt remove --purge filebeat
+</code></pre></td></tr><tr><td><pre><code>systemctl start filebeat
+</code></pre></td></tr><tr><td><pre><code>systemctl enable filebeat
+</code></pre></td></tr><tr><td><pre><code>systemctl stop filebeat
+</code></pre></td></tr><tr><td><pre><code>systemctl reload filebeat
+</code></pre></td></tr><tr><td><pre><code>systemctl restart filebeat
+</code></pre></td></tr><tr><td><pre><code>systemctl status filebeat
+journalctl -f --unit filebeat
+tail -f /var/log/filebeat
+</code></pre></td></tr><tr><td><pre><code>tapt remove --purge filebeat
 </code></pre></td></tr></tbody></table>

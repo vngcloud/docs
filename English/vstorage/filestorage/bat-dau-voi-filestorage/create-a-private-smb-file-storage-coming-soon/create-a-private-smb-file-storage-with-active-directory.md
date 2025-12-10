@@ -29,7 +29,7 @@ Before you can perform Windows server initialization, make sure you create a VPC
 13. In **Other Settings** , you can choose Server Group or not according to your needs. You can assign Server to previously created Groups (With properties such as same Compute Host or different Compute Host)
 14. Select **Launch Server** and follow the payment steps to complete the server initialization.
 
-![](<../../../../.gitbook/assets/image (28).png>)
+![](<../../../../.gitbook/assets/image (22) (2).png>)
 
 </details>
 
@@ -62,20 +62,18 @@ Below is a basic guide for connecting to Windows server on vServer, if you have 
 ![](<../../../../.gitbook/assets/image (23).png>)
 
 4. Select **Download RDP File** . Your browser will prompt you to open or save the RDP file. When you've finished downloading the file, select **Done** to return to the server page:
-
-5) Open the downloaded file to remote to Windows server. Select **Connect** to continue connecting to your server.
+5. Open the downloaded file to remote to Windows server. Select **Connect** to continue connecting to your server.
 
 ![](<../../../../.gitbook/assets/image (24).png>)
 
 6. The administrator account is selected by default. You need to copy and paste the password you saved earlier into the login pop-up (This information is taken from the email), in which enter the information **InstanceLogin** into **Username** , **InstancePassword** into **Password.**
+7. Select **OK.** Due to the nature of self-signed certificates, you may receive a warning that the security certificate cannot be validated. Use the following steps to verify the identity of the remote computer, or simply select **Yes** (Windows) or **Continue** (Mac OS X) if you trust the certificate.
 
-7) Select **OK.** Due to the nature of self-signed certificates, you may receive a warning that the security certificate cannot be validated. Use the following steps to verify the identity of the remote computer, or simply select **Yes** (Windows) or **Continue** (Mac OS X) if you trust the certificate.
-
-![](<../../../../.gitbook/assets/image (25).png>)
+![](<../../../../.gitbook/assets/image (13) (2).png>)
 
 8. The screen will show that the connection to the **Windows** server is successful.
 
-![](<../../../../.gitbook/assets/image (26).png>)
+![](<../../../../.gitbook/assets/image (14) (2).png>)
 
 </details>
 
@@ -92,7 +90,7 @@ After you have connected to Windows server, you need to make sure your Windows s
     * **Subnet Mask:** Corresponding subnet, for example: 255.0.0.0
     * **Preferred DNS server:** IP address of DNS Domain (usually also the static IP address of VM) (you can add it after initializing DNS domain according to the instructions below)
 
-<figure><img src="../../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -205,7 +203,7 @@ Next, you will need to create a Reverse Lookup Zone to convert the IP to a domai
 
 1. Open **DNS Manager** by selecting **Tools** , then selecting **DNS**
 
-<figure><img src="../../../../.gitbook/assets/image (48).png" alt="" width="336"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (37) (2).png" alt="" width="336"><figcaption></figcaption></figure>
 
 2. In DNS Manager, select the existing DNS and continue to right-click on **Reverse Lookup Zones** and select **New Zone**
 
@@ -302,7 +300,7 @@ To install and configure Active Directory Domain Service on Windows Server, you 
 
 5. In **Server Selection** : select **Select a server from the server pool** and **select the current server** then select **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (62).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (32) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. In the **Server Roles** section : Tick **Active Directory Domain Services.**
 
@@ -381,12 +379,12 @@ To install and configure Active Directory Domain Service on Windows Server, you 
 * **Protocol:** select NFS and the NFS version you want
 * **Tag:** you can add tags to mark file storage as needed.
 
-<figure><img src="../../../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16) (2).png" alt=""><figcaption></figcaption></figure>
 
 * **File Storage Max quota:** in the file storage initialization step, you need to set a maximum quota limit for that file storage. This quota means the limit of storage capacity that the file storage can use, helping to manage resources effectively. **The minimum quota you need to choose is 1 TB and the maximum quota we provide is 50 TB.** If you need to use more than 50 TB for a file storage, please contact us.
 * **Network type** : for SMB file type, network type must be Private. At this point, you need to select **VPC** , **Subnet** that you have created from vServer Portal.
 
-<figure><img src="../../../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17) (2).png" alt=""><figcaption></figcaption></figure>
 
 * **Window Authentication:** Configure access rights via **Active Directory Authentication**
   * **Active Directory Authentication:** If your Windows server uses Active Directory to manage users and access, AD Authentication is easy to integrate and centrally manage. You can authenticate via Active Directory domain name, DNS server IP addresses, Username, Password on your Active Directory. For example, for the Active Directory created above, I would enter:
@@ -402,7 +400,7 @@ To install and configure Active Directory Domain Service on Windows Server, you 
 
 **Step 6:** After the system has completed initializing the SMB File Storage, you can get the **File Storage IP Address** information in the File Storage details section and continue to perform the steps below.
 
-<figure><img src="../../../../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -419,9 +417,9 @@ On Windows Server, you can map SMB file storage through the interface or command
    2. **Folder** : Enter the SMB share path, for example: `\\<File Storage IP Address>\<File Storage Name>`. For example `\\10.50.3.8\demo-smb`.
    3. Select **Finish** , once done, you can check in **File Explorer** to see the mapped drive.
 
-<figure><img src="../../../../.gitbook/assets/image (80).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (20) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (81).png" alt="" width="501"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt="" width="501"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**
