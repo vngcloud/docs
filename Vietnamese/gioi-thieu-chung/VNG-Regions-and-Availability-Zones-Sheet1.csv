@@ -1,0 +1,46 @@
+Product/Service,Global,HCM (1A),HCM (1B),HCM (1C),HCM (BKK),HAN
+,,HCM-1A,HCM-1B,HCM-1C,BKK-1A,HAN-1A
+Server,,https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server,x,x,x,https://han-1.console.vngcloud.vn/vserver/v-server/cloud-server
+Volume,,https://hcm-3.console.vngcloud.vn/vserver/block-store/volumes,x,x,x,https://han-1.console.vngcloud.vn/vserver/block-store/volumes
+vLB,,https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb,x,x,x,https://han-1.console.vngcloud.vn/vserver/load-balancer/vlb
+GLB,https://glb.console.vngcloud.vn/overview,,x,No,No,
+Bandwidth,,https://hcm-3.console.vngcloud.vn/vserver/network/bandwidth/list,x,x,,https://han-1.console.vngcloud.vn/vserver/network/bandwidth/list
+vDB Relational,,https://vdb.console.vngcloud.vn/relational/database,x,x,,No
+vDB MemoryStore,,https://vdb.console.vngcloud.vn/memorystore/database,x,x,,No
+vDB Kafka,,https://vdb.console.vngcloud.vn/kafka/cluster,No,No,No,No
+vDB OpenSearch,,x,No,No,No,No
+Image,,https://hcm-3.console.vngcloud.vn/vserver/block-store/images,x,x,x,https://han-1.console.vngcloud.vn/vserver/block-store/images
+Network Interface,,https://hcm-3.console.vngcloud.vn/vserver/network/external-interface/external-interface-group,x,x,x,https://han-1.console.vngcloud.vn/vserver/network/external-interface/external-interface-group
+vMarketplace,,https://marketplace.console.vngcloud.vn/overview,x,x,No,https://marketplace-han-1.console.vngcloud.vn/overview
+Container Registry,,https://vcr.console.vngcloud.vn/repository/list,x,x,No,https://han-1.console.vngcloud.vn/vcr
+VKS,,https://vks.console.vngcloud.vn/overview,x,x,x,https://vks-han-1.console.vngcloud.vn/overview
+"vNetwork (Endpoint, NAT, VPN, Cross Connect)",,https://hcm-3-vnetwork.console.vngcloud.vn/overview,x,x,No,https://han-1-vnetwork.console.vngcloud.vn/
+"VPC, DHCP, VIP, Peering",,https://hcm-3.console.vngcloud.vn/vserver/network/vpc,x,x,x,
+Global View,https://regionview.console.vngcloud.vn/resource-region,,x,x,x,
+vDNS,https://vdns.console.vngcloud.vn/hosted-zones,,x,x,,No
+Backup Center,,,x,x,No,
+Snapshot,,x,x,x,No,x
+Server Migration,,https://backupcenter.console.vngcloud.vn/server-migration,x,x,x,https://backupcenter.console.vngcloud.vn/server-migration
+DR,https://backupcenter.console.vngcloud.vn/protected-server/list,x,x,x,No,
+Backup,,https://backupcenter.console.vngcloud.vn/backup-server/list,x,x,No,https://backupcenter.console.vngcloud.vn/backup-server/list
+vStorage,,,,,,
+Storage,,https://vstorage.console.vngcloud.vn/storage/list,,,,https://vstorage.console.vngcloud.vn/storage/list
+Data Sync,https://datasync.console.vngcloud.vn/overview,,,,,
+File Storage,,https://efs.console.vngcloud.vn/overview,x,x,,
+vMonitor,,,,,,
+Notification,https://vmonitor.console.vngcloud.vn/notification,,,,,
+vMonitor Platform Metric,https://vmonitor.console.vngcloud.vn/quota-usages/metric,,,,,
+vMonitor Platform Log,https://vmonitor.console.vngcloud.vn/log/project,,,,,
+Synthetic Test,https://vmonitor.console.vngcloud.vn/synthetic-test/api-test,,,,,
+IAM,https://iam.console.vngcloud.vn/,,,,,
+KMS,,No,No,No,No,https://han-1-kms.console.vngcloud.vn/
+vCDN,,,,,,
+Web Accelerator,https://vcdn.vngcloud.vn/webacc/list.html,,,,,
+Object Download,https://vcdn.vngcloud.vn/obj-download/list.html,,,,,
+Video On Demand,https://vcdn.vngcloud.vn/vod/list.html,,,,,
+Live Streaming,https://vcdn.vngcloud.vn/live-cdn/list.html,,,,,
+vColo,https://vcolo.console.vngcloud.vn/overview,,,,,
+AI Speech-Text,,,,,,
+Text to speech,https://ai-speech-text.console.vngcloud.vn/tts,,,,,
+Speech to text,https://ai-speech-text.console.vngcloud.vn/stt,,,,,
+AI Platform,,x,Coming Soon,Coming Soon,No,No
