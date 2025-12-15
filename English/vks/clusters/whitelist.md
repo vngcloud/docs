@@ -42,7 +42,8 @@ For users in the **HCM Region**, if you need to enable IP Whitelisting for secur
 For users in the **HAN Region**, if you need to enable IP Whitelisting for security reasons, please allow the following **vServer public IP ranges**:
 
 ```
-157.20.201.0/24  
+42.1.126.0/23
+157.20.201.0/24
 157.20.200.96/27  
 157.20.200.128/25
 ```
