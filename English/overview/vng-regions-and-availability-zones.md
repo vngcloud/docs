@@ -27,6 +27,10 @@ An Availability Zone is one or more discrete data centers within a region, equip
 | HCM         | Ho Chi Minh | HCM-1A, HCM-1B, HCM-1C, BKK-1A | https://hcm-3.console.vngcloud.vn                                                                                                                                                              |
 | HAN         | Ha Noi      | HAN-1A                          | [https://han-1.console.vngcloud.vn/vserver/v-server/cloud-server](https://han-1.console.vngcloud.vn/vserver/v-server/cloud-server "https://han-1.console.vngcloud.vn/vserver/v-server/cloud-server") |
 
+{% hint style="info" %}
+As of December 15, 2025, VNG Cloud supports 2 regions: Ho Chi Minh and Ha Noi.
+{% endhint %}
+
 ---
 
 ## Service Availability by Region
