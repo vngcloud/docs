@@ -2,6 +2,15 @@
 
 ## Nov 10, 2025
 
+KAKAKAKA
+
+
+---
+
+***
+
+## Nov 10, 2025
+
 VKS (VNG Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều nâng cấp mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
 
 **Nâng cấp mới:**
