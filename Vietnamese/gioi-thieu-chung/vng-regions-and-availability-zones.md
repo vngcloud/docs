@@ -37,7 +37,7 @@ Availability Zone là một hoặc nhiều data center riêng biệt trong một
 - x : Service có sẵn tại zone này
 - \- : Service chưa có sẵn tại zone này
 - Coming Soon: Service sắp được hỗ trợ
-  {% endhint %}
+{% endhint %}
 
 {% hint style="warning" %}
 URL của các service trong cùng 1 region sẽ giống nhau.
