@@ -65,6 +65,7 @@ URL của các service trong cùng 1 region sẽ giống nhau.
 | **Bandwidth**                  |   -   |   x   |   x   |   x   |   -   |   x   | [HCM](https://hcm-3.console.vngcloud.vn/vserver/network/bandwidth/list) \| [HAN](https://han-1.console.vngcloud.vn/vserver/network/bandwidth/list)                                                           |
 | **vLB (Load Balancer)**        |   -   |   x   |   x   |   x   |   x   |   x   | [HCM](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb) \| [HAN](https://han-1.console.vngcloud.vn/vserver/load-balancer/vlb)                                                                     |
 | **GLB (Global Load Balancer)** |   x   |   -   |   x   |   -   |   -   |   -   | [Portal](https://glb.console.vngcloud.vn/overview)                                                                                                                                                        |
+| **vDCI (Dedicated Cloud Instance)** |   x   |   -   |   -   |   -   |   -   |   -   | [Portal](https://vdci.console.vngcloud.vn)                                                                                                                                                        |
 
 {% endtab %}
 
@@ -174,6 +175,8 @@ URL của các service trong cùng 1 region sẽ giống nhau.
 | **vMarketplace** |   -   |   x   |      x      |      x      |   -   |   x   | [HCM](https://marketplace.console.vngcloud.vn/overview) \| [HAN](https://marketplace-han-1.console.vngcloud.vn/overview) |
 | **vColo**        |   x   |   -   |      -      |      -      |   -   |   -   | [Portal](https://vcolo.console.vngcloud.vn/overview)                                                                  |
 | **AI Platform**  |   -   |   x   | Coming Soon | Coming Soon |   -   |   -   | [Portal](https://aiplatform.console.vngcloud.vn/overview)                                                             |
+| **AI Gateway**   |   x   |   -   |      -      |      -      |   -   |   -   | [Portal](https://aigateway.console.vngcloud.vn)                                                                       |
+| **MaaS**         |   x   |   -   |      -      |      -      |   -   |   -   | [Portal](https://aiplatform.console.vngcloud.vn/models)                                                               |
 
 {% endtab %}
 {% endtabs %}
