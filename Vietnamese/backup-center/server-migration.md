@@ -6,7 +6,7 @@ description: Hướng Dẫn Migrate Server Về VNG Cloud
 
 ## 1. VNG Cloud Migration Tool là gì?
 
-**Migration Tool** tại VNG Cloud là một công cụ hỗ trợ người dùng di chuyển máy chủ (server) từ các cloud khác hoặc từ hệ thống on-premises lên hạ tầng VNG Cloud **một cách tự động, nhanh chóng và an toàn**.\
+**Migration Tool** tại VNG Cloud là một công cụ hỗ trợ người dùng di chuyển máy chủ (server) từ các cloud khác, các region khác trên VNGCloud như từ HCM sang HAN và ngược lại hoặc từ hệ thống on-premises lên hạ tầng VNG Cloud **một cách tự động, nhanh chóng và an toàn**.\
 Các tính năng nổi bật bao gồm:
 
 * **Hỗ trợ nhiều loại nguồn**: AWS, Azure, GCP, VMware, Hyper-V, và cả server vật lý.
@@ -31,7 +31,7 @@ Việc migrate server từ các nền tảng cloud khác về VNG Cloud mang l�
 
 **1. Cẩn trọng khi migrate vào server hiện hữu**
 
-Việc **migrate server từ nền tảng cloud khác về một server hiện hữu tại VNG Cloud** có thể gây **mất toàn bộ dữ liệu và snapshot** đang có trên server đích.&#x20;
+Việc **migrate server từ nền tảng cloud khác về một server hiện hữu tại VNG Cloud** có thể gây **mất toàn bộ dữ liệu và snapshot** đang có trên server đích.
 
 **Khuyến nghị**:
 
@@ -83,17 +83,17 @@ lsblk -o NAME,PTTYPE
 
 * Truy cập Veeam Portal sử dụng thông tin user/pass đã cung cấp.
 * Cài đặt Management Agent trên Main Server:
-  1.  Tải Management Agent.&#x20;
+  1.  Tải Management Agent.
 
       <figure><img src="../.gitbook/assets/step1.png" alt=""><figcaption></figcaption></figure>
-  2.  Cài đặt Management Agent trên Main Server.&#x20;
+  2.  Cài đặt Management Agent trên Main Server.
 
       <figure><img src="../.gitbook/assets/step2.png" alt=""><figcaption></figcaption></figure>
   3. Tạo và chạy backup job cho Main Server.
-     *   [x] Tạo Backup Job&#x20;
+     *   [x] Tạo Backup Job
 
          <figure><img src="../.gitbook/assets/step3.png" alt=""><figcaption></figcaption></figure>
-     *   [x] Run Backup Job&#x20;
+     *   [x] Run Backup Job
 
          <figure><img src="../.gitbook/assets/step3.2.png" alt=""><figcaption></figcaption></figure>
 
@@ -101,8 +101,8 @@ lsblk -o NAME,PTTYPE
 
 ### 3. Khởi tạo Destination VM và bắt đầu migration
 
-* 3.1 Truy cập [server portal](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) để tạo mới Destination Server.&#x20;
-*   3.2 Truy cập vào server vừa tạo, nhấn Migrate Server.&#x20;
+* 3.1 Truy cập [server portal](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) để tạo mới Destination Server.
+*   3.2 Truy cập vào server vừa tạo, nhấn Migrate Server.
 
     * 3.2.1 Nếu server chưa được shutdown, hệ thống sẽ yêu cầu bạn shutdown trước khi migrate.
     * 3.2.2 Giữ nguyên trạng thái hiện tại, sau đó bấm Set up migration để bắt đầu quá trình migrate.
@@ -115,25 +115,25 @@ lsblk -o NAME,PTTYPE
 <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>3.2.2</p></figcaption></figure>
 
 * Restore từ Backup
-  *   Truy cập Destination VM&#x20;
+  *   Truy cập Destination VM
 
       <figure><img src="../.gitbook/assets/start1.png" alt=""><figcaption></figcaption></figure>
-  *   Chọn Restore volume&#x20;
+  *   Chọn Restore volume
 
       <figure><img src="../.gitbook/assets/start2.png" alt=""><figcaption></figcaption></figure>
-  *   Chọn Add Cloud Connect provider&#x20;
+  *   Chọn Add Cloud Connect provider
 
       <figure><img src="../.gitbook/assets/start3.png" alt=""><figcaption></figcaption></figure>
-  *   Nhập thông tin endpoint và port của Veeam cloud repository: E.g. veeam-gw.vngcloud.vn port 443&#x20;
+  *   Nhập thông tin endpoint và port của Veeam cloud repository: E.g. veeam-gw.vngcloud.vn port 443
 
       <figure><img src="../.gitbook/assets/start4.png" alt=""><figcaption></figcaption></figure>
-  *   Nhập username/password&#x20;
+  *   Nhập username/password
 
       <figure><img src="../.gitbook/assets/start5.png" alt=""><figcaption></figcaption></figure>
-  *   Chọn backup job và restore point cần restore. Nhấn enter&#x20;
+  *   Chọn backup job và restore point cần restore. Nhấn enter
 
       <figure><img src="../.gitbook/assets/start6.png" alt="" width="375"><figcaption></figcaption></figure>
-  *   Chọn sda, chọn restore from rồi nhấn enter. Kiểm tra lại thông tin mapping rồi nhấn enter.&#x20;
+  *   Chọn sda, chọn restore from rồi nhấn enter. Kiểm tra lại thông tin mapping rồi nhấn enter.
 
       <figure><img src="../.gitbook/assets/start7.png" alt=""><figcaption></figcaption></figure>
 
@@ -141,7 +141,7 @@ lsblk -o NAME,PTTYPE
 
 ### 4. Hoàn tất Migration
 
-*   Truy cập Destination VM, nhấn Migrate Server và chọn kết quả thực tế sau khi Restore (Successed/Failed).&#x20;
+*   Truy cập Destination VM, nhấn Migrate Server và chọn kết quả thực tế sau khi Restore (Successed/Failed).
 
     <figure><img src="../.gitbook/assets/check.png" alt=""><figcaption></figcaption></figure>
 * Truy cập Server Migration tại Backup Center để kiểm tra logs migration[ tại đây](https://backupcenter.console.vngcloud.vn/server-migration).
