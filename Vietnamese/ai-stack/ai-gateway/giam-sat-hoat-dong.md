@@ -20,7 +20,7 @@ Bạn có thể tùy chỉnh khoảng thời gian quan sát (15m, 30m, 1h, 2h, v
 
 Tại giao diện chi tiết của một Gateway, chọn tab **Log** để xem danh sách tất cả các request đã gửi qua Gateway.
 
-Tại đây, bạn có thể danh sách request được gửi tới AI Gateway bao gồm:&#x20;
+Tại đây, bạn có thể danh sách request được gửi tới AI Gateway bao gồm:
 
 * **Time:** thời gian gửi request.
 * **Status:** trạng thái của request, bao gồm **Success**, **Error** hoặc **Timeout**.
@@ -56,6 +56,6 @@ Các metrics đo lường latencies trong một request cũng được hiển th
 
 **latencies.proxy**: Thời gian GW gửi request lên LLM và nhận response từ LLM về (byte đầu tiên)
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
