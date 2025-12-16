@@ -1,6 +1,15 @@
 # Release notes test
 
 ## Nov 10, 2025
+VKS (VNG Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều nâng cấp mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Nâng cấp mới:**
+
+- **Ngừng hỗ trợ Kubernetes phiên bản 1.28**: Để đảm bảo môi trường hoạt động tối ưu và tuân thủ các tiêu chuẩn bảo mật mới nhất, VKS sẽ ngừng hỗ trợ Kubernetes phiên bản 1.28. Kể từ ngày 10/11/2025, khách hàng sẽ không thể tạo cụm Kubernetes 1.28 thông qua Portal, API hoặc Terraform. Vào ngày 24/11/2025, tất cả các cụm Kubernetes 1.28 hiện có sẽ được tự động nâng cấp (force-upgrade) lên phiên bản mới hơn. Chi tiết tham khảo thêm tại đây.
+
+***
+
+## Nov 10, 2025
 
 VKS (VNG Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều nâng cấp mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
 
