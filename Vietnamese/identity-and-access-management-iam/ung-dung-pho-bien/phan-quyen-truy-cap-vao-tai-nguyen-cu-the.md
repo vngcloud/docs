@@ -94,7 +94,7 @@ Thực hiện tắt server web1-server thành công:
 
 Truy cập trang chi tiết của db-server không thành công:
 
-<figure><img src="/broken/files/KPEyDsapNZD46FXb2ukQ" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image2023-7-12_16-0-35 (1).png" alt=""><figcaption></figcaption></figure>
 
 Thực hiện tắt server db-server không thành công:
 

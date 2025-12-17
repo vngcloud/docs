@@ -15,7 +15,7 @@ Tài nguyên POC sinh ra nhằm mục đích hỗ trợ người dùng có thể
 
 Để có thể khởi tạo một **Cluster** và **Deploy** một **Workload**, bạn cần:
 
-* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/)&#x20;
+* Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/)
 * Có ít nhất 1 **SSH** key đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key nào, vui lòng khởi tạo SSH key theo hướng dẫn tại [đây.](../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
 * Đã cài đặt và cấu hình **kubectl** trên thiết bị của bạn. vui lòng tham khảo tại [đây](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) nếu bạn chưa rõ cách cài đặt và sử dụng kuberctl. Ngoài ra, bạn không nên sử dụng phiên bản kubectl quá cũ, chúng tôi khuyến cáo bạn nên sử dụng phiên bản kubectl sai lệch không quá một phiên bản với version của cluster.
 
@@ -54,7 +54,7 @@ Tài nguyên POC sinh ra nhằm mục đích hỗ trợ người dùng có thể
 
 ### Kết nối và kiểm tra thông tin Cluster vừa tạo <a href="#khoitaomotpublicclustervoipublicnodegroup-ketnoivakiemtrathongtinclustervuatao" id="khoitaomotpublicclustervoipublicnodegroup-ketnoivakiemtrathongtinclustervuatao"></a>
 
-Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiện kết nối và kiểm tra thông tin Cluster vừa tạo theo các bước:&#x20;
+Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiện kết nối và kiểm tra thông tin Cluster vừa tạo theo các bước:
 
 **Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
@@ -62,7 +62,7 @@ Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiệ
 
 **Bước 3**: Đổi tên file này thành config và lưu nó vào thư mục **\~/.kube/config**
 
-**Bước 4:** Thực hiện kiểm tra Cluster thông qua lệnh:&#x20;
+**Bước 4:** Thực hiện kiểm tra Cluster thông qua lệnh:
 
 * Chạy câu lệnh sau đây để kiểm tra **node**
 
@@ -169,13 +169,13 @@ spec:
         name: http-server
 </code></pre>
 
-* Deploy Service này bằng lệch:&#x20;
+* Deploy Service này bằng lệch:
 
 ```bash
 kubectl apply -f nginx-service.yaml
 ```
 
-* Tiếp theo, bạn có thể thực hiện kiểm tra Deployment qua lệnh:&#x20;
+* Tiếp theo, bạn có thể thực hiện kiểm tra Deployment qua lệnh:
 
 ```bash
 kubectl get svc,deploy,pod -owide
@@ -246,9 +246,9 @@ kubectl apply -f persistent-volume.yaml
 
 Đối với loại resource **Snapshot**, bạn không thể chỉ định snapshot sử dụng ví POC từ VKS. Để thực hiện tạo Snapshot qua ví POC, tại **vServer Portal**, vui lòng chọn **Activate Snapshot**, sau đó tại màn hình **Checkout**, vui lòng chọn sử dụng ví **POC**. Lúc này **tất cả các resource snapshot của bạn sẽ được tạo qua ví POC**. Do đó, việc stop POC cần được bạn thực hiện thông qua **vConsole** hoặc **vServer Portal**. Tham khảo thêm hình bên dưới.
 
-<figure><img src="/broken/files/iMjVRgNxA5g5HGPXsnlR" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (450).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="/broken/files/8hUyZdGNvwkFoQdKs7KH" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (452).png" alt=""><figcaption></figcaption></figure>
 
 **Cài đặt VNGCloud Snapshot Controller**
 

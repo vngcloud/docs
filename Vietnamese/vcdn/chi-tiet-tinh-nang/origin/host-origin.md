@@ -6,9 +6,9 @@
 
 ## Chi tiết
 
-Để kết nối trực tiếp đến origin thông qua tên miền được chỉ định, hãy nhập/ chọn các thông số sau:&#x20;
+Để kết nối trực tiếp đến origin thông qua tên miền được chỉ định, hãy nhập/ chọn các thông số sau:
 
-<figure><img src="/broken/files/bb60jbSzzX2xvIzXOIq5" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin Host Header:** Header được gửi tới Origin Server trong yêu cầu HTTP.
 * **Use SSL:** Kích hoạt SSL để mã hóa kết nối với Host Origin.

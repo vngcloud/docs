@@ -14,7 +14,7 @@ Sau khi chọn Xóa, hệ thống sẽ tự động chuyển ra màn hình chín
 
 **Lưu ý:** một khi object đã bị xóa khỏi hệ thống vStorage, bạn không thể phục hồi object đó.
 
-<figure><img src="/broken/files/aGfn6AjENm3Fyu00tnCz" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Xoa_object_container (1).gif" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Sử dụng vStorage API" %}
@@ -26,7 +26,7 @@ Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung c�
 {% endtab %}
 
 {% tab title="Sử dụng 3rd party softwares" %}
-vStorage cũng tương thích với các công cụ phía người dùng sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.&#x20;
+vStorage cũng tương thích với các công cụ phía người dùng sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.
 
 Để xóa một object qua 3rd party software, hãy xem [3rd party softwares](../../3rd-party-softwares/).
 

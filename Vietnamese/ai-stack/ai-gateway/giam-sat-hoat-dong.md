@@ -46,7 +46,7 @@ Ngoài ra, bạn có thể xem chi tiết một request bằng cách:
 
 ## Latencies
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (5).png" alt=""><figcaption></figcaption></figure>
 
 Các metrics đo lường latencies trong một request cũng được hiển thị cụ thể tại đây:
 
@@ -56,6 +56,6 @@ Các metrics đo lường latencies trong một request cũng được hiển th
 
 **latencies.proxy**: Thời gian GW gửi request lên LLM và nhận response từ LLM về (byte đầu tiên)
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -24,7 +24,7 @@
 1. Truy cập vào tab **Network Volume** trong AI Platform theo đường dẫn: [https://aiplatform.console.vngcloud.vn/volume](https://aiplatform.console.vngcloud.vn/volume)
 2. Click **Create Network Volume**.
 3. Nhập thông tin:
-   * **Tên Volume**:  nhập tên hợp lệ theo quy tắc sau: Chỉ cho phép các chữ cái (a-z, A-Z, 0-9, '\_', '-', '.'). Dữ liệu đầu vào phải nằm trong khoảng từ 1 đến 50 ký tự. Ví dụ `ai-storage`
+   * **Tên Volume**: nhập tên hợp lệ theo quy tắc sau: Chỉ cho phép các chữ cái (a-z, A-Z, 0-9, '\_', '-', '.'). Dữ liệu đầu vào phải nằm trong khoảng từ 1 đến 50 ký tự. Ví dụ `ai-storage`
    * **Kích thước (GB)**: sẽ được tự động điều chỉnh dựa trên việc sử dụng của bạn
    * **Region**: Ví dụ `HCM`
 4. Click **Tạo Volume**
@@ -72,7 +72,7 @@ host_bucket = %(bucket)s.<hostname>
 
 <figure><img src="../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="/broken/files/aRRBDlYLuVoIbetChDwe" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 Sử dụng s3cmd với file s3cnf đã tạo có thể sử dung các action put, ls ... với bucket
 
@@ -85,23 +85,19 @@ Gắn một Network Volume vào phiên bản notebook này. Điều này cho ph�
 #### Khi khởi tạo Notebook:
 
 * Chọn phần **Data Mount**
-*   Chỉ định:
+* Chỉ định:
+  *   Network volume: `ai-storage`
 
-    *   Network volume: `ai-storage`
+      * Chọn Network Volume trong danh sách đã tạo của bạn.
+      * Bạn có thể nhấp vào "Manage your volumes" để quản lý các Network Volume hiện có của mình.
 
-        * Chọn Network Volume trong danh sách đã tạo của bạn.
-        * Bạn có thể nhấp vào "Manage your volumes" để quản lý các Network Volume hiện có của mình.
-
-        <figure><img src="/broken/files/zm8Xn8G3O5mvhe4a0OlD" alt=""><figcaption></figcaption></figure>
-
-
-
-    * Mount folder name (Folder Sync):&#x20;
-      * _Tạo thư mục đích trong notebook để đồng bộ dữ liệu từ Network Volume_. Ví dụ: `/workspace/notebook-data`
-      * Lưu ý: Chỉ cho phép các ký tự chữ cái (a-z, A-Z, 0-9, '\_', '-', '+', '.'). Độ dài nhập liệu phải nhỏ hơn 256 ký tự.
-    * Block storage size:&#x20;
-      * Nhập dung lượng _dung lượng lưu trữ tạm (ephemeral block storage) để chứa_ OS và bản sao dữ liệu từ network volume.&#x20;
-      * Chọn kích thước đủ lớn so với dữ liệu cần dùng từ 20 đến 1000. (nếu chọn size blockstorage bé hơn hoặc bằng size network volume hiện tại thì quá trình tạo notebook sẽ bị lỗi (bạn có thể xoá và tạo lại notebook khác)
+      <figure><img src="../../.gitbook/assets/image (379).png" alt=""><figcaption></figcaption></figure>
+  * Mount folder name (Folder Sync):
+    * _Tạo thư mục đích trong notebook để đồng bộ dữ liệu từ Network Volume_. Ví dụ: `/workspace/notebook-data`
+    * Lưu ý: Chỉ cho phép các ký tự chữ cái (a-z, A-Z, 0-9, '\_', '-', '+', '.'). Độ dài nhập liệu phải nhỏ hơn 256 ký tự.
+  * Block storage size:
+    * Nhập dung lượng _dung lượng lưu trữ tạm (ephemeral block storage) để chứa_ OS và bản sao dữ liệu từ network volume.
+    * Chọn kích thước đủ lớn so với dữ liệu cần dùng từ 20 đến 1000. (nếu chọn size blockstorage bé hơn hoặc bằng size network volume hiện tại thì quá trình tạo notebook sẽ bị lỗi (bạn có thể xoá và tạo lại notebook khác)
 
 <figure><img src="../../.gitbook/assets/image (1079).png" alt="" width="337"><figcaption></figcaption></figure>
 
@@ -118,7 +114,7 @@ Gắn một Network Volume vào phiên bản notebook này. Điều này cho ph�
 2. Chọn:
    * **Loại lưu trữ (Model source)**: Network Volume
    * **Model repository:** Đường dẫn tới file model (VD: `/models/llama3/`)
-   * **Network volume**: Chỉ định Network Volume **chứa model AI** để hệ thống có thể truy cập khi chạy inference. Lưu ý model phải được lưu đúng với đường dẫn nhập tại Model repository `ai-storage`&#x20;
+   * **Network volume**: Chỉ định Network Volume **chứa model AI** để hệ thống có thể truy cập khi chạy inference. Lưu ý model phải được lưu đúng với đường dẫn nhập tại Model repository `ai-storage`
 
 <figure><img src="../../.gitbook/assets/image (1080).png" alt="" width="375"><figcaption></figcaption></figure>
 

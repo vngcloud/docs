@@ -3,7 +3,7 @@
 ## Tổng quan
 
 * [**NVIDIA GPU Operator**](https://github.com/NVIDIA/gpu-operator) là một operator giúp đơn giản hóa việc triển khai và quản lý các node GPU trong các cụm Kubernetes. Nó cung cấp một tập hợp các tài nguyên tùy chỉnh và bộ điều khiển của Kubernetes cùng làm việc để tự động hóa quản lý tài nguyên GPU trong cụm Kubernetes.
-* Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn:&#x20;
+* Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn:
   * Khởi tạo một node group với NVIDIA GPU
   * Cài đặt NVIDIA GPU Operator.
   * Triển khai một GPU Workload.
@@ -16,10 +16,10 @@
 ## Khởi tạo một node group với NVIDIA GPU
 
 * Thực hiện khởi tạo một Cluster với ít nhất một node group sử dụng NVIDIA GPU theo hướng dẫn tại [đây ](khoi-tao-mot-public-cluster/khoi-tao-mot-public-cluster-voi-public-node-group.md)nếu bạn muốn khởi tạo public node group hoặc tại [đây ](khoi-tao-mot-public-cluster/khoi-tao-mot-public-cluster-voi-private-node-group/)nếu bạn muốn khởi tạo private node group.
-* Ngoài ra, bạn cần đảm bảo đã cài đặt `kubectl` và `helm` tại thiết bị của bạn.&#x20;
+* Ngoài ra, bạn cần đảm bảo đã cài đặt `kubectl` và `helm` tại thiết bị của bạn.
 * Bên cạnh đó, bạn cũng có thể cài đặt các công cụ và thư viện khác mà bạn có thể sử dụng để giám sát và quản lý tài nguyên Kubernetes của mình:
   * `kubectl-view-allocations` plugin sử dụng để giám sát tài nguyên Kubernetes của bạn. Để biết thêm thông tin, vui lòng tham khảo thêm tại [kubectl-view-allocations](https://github.com/davidB/kubectl-view-allocations).
-*   Bạn có thể thực hiện kiểm tra các cài đặt bên trên thông qua lệnh:&#x20;
+*   Bạn có thể thực hiện kiểm tra các cài đặt bên trên thông qua lệnh:
 
     ```bash
     # Check kubectl CLI version
@@ -34,7 +34,7 @@
 
 <figure><img src="../../.gitbook/assets/vksgpu_1.png" alt=""><figcaption></figcaption></figure>
 
-*   Trên Cluster vừa tạo, thực hiện kiểm tra node trong node group của bạn qua lệnh:&#x20;
+*   Trên Cluster vừa tạo, thực hiện kiểm tra node trong node group của bạn qua lệnh:
 
     ```bash
     kubectl get nodes -owide
@@ -46,8 +46,8 @@
 
 ## Cài đặt NVIDIA GPU Operator
 
-* Nội dung bên dưới chúng tôi sẽ trực tiếp hướng dẫn bạn cài đặt NVIDIA GPU Operator, để biết thêm thông tin về plugin này, vui lòng tham khảo thêm tại [NVIDIA GPU Operator Documentation](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/getting-started.html).&#x20;
-*   Trên Cluster bạn đã tạo ở bước trên, thực hiện chạy lệnh:&#x20;
+* Nội dung bên dưới chúng tôi sẽ trực tiếp hướng dẫn bạn cài đặt NVIDIA GPU Operator, để biết thêm thông tin về plugin này, vui lòng tham khảo thêm tại [NVIDIA GPU Operator Documentation](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/getting-started.html).
+*   Trên Cluster bạn đã tạo ở bước trên, thực hiện chạy lệnh:
 
     ```bash
     helm install nvidia-gpu-operator --wait --version v24.3.0 \
@@ -58,7 +58,7 @@
 
 <figure><img src="../../.gitbook/assets/vksgpu_3.png" alt=""><figcaption></figcaption></figure>
 
-*   Hệ thống mất khoảng 5 - 10 phút để thực hiện cài đặt operator này, bạn hãy đợi tới khi việc cài đặt hoàn thành. Trong thời gian này, bạn có thể kiểm tra tất cả các pods trong namespace`gpu-operator` đang chạy thông qua lệnh:&#x20;
+*   Hệ thống mất khoảng 5 - 10 phút để thực hiện cài đặt operator này, bạn hãy đợi tới khi việc cài đặt hoàn thành. Trong thời gian này, bạn có thể kiểm tra tất cả các pods trong namespace`gpu-operator` đang chạy thông qua lệnh:
 
     ```bash
     kubectl -n gpu-operator get pods -owide
@@ -66,15 +66,13 @@
 
 <figure><img src="../../.gitbook/assets/vksgpu_4.png" alt=""><figcaption></figcaption></figure>
 
-*   Operator sẽ gán label`nvidia.com/gpu`cho node trong node group của bạn, lable này được NVIDIA GPU Operator sử dụng để identify nodes, bạn cũng có thể sử dụng label này để filter những node đang có NVIDIA GPU. Bạn có thể kiểm tra các node được gán nhãn này qua lệnh:&#x20;
+*   Operator sẽ gán label`nvidia.com/gpu`cho node trong node group của bạn, lable này được NVIDIA GPU Operator sử dụng để identify nodes, bạn cũng có thể sử dụng label này để filter những node đang có NVIDIA GPU. Bạn có thể kiểm tra các node được gán nhãn này qua lệnh:
 
     ```bash
     kubectl get node -o json | jq '.items[].metadata.labels' | grep "nvidia.com"
     ```
 
 Ví dụ, đối với kết quả bên dưới, node trong cụm có label `nvidia.com/gpu`, có nghĩa là node đó có GPU. Các label này cũng cho biết nút này đang sử dụng 1 card GPU RTX 2080Ti, số lượng GPU có sẵn, Bộ nhớ GPU và các thông tin khác.
-
-
 
 <figure><img src="../../.gitbook/assets/vksgpu_6.png" alt=""><figcaption></figcaption></figure>
 
@@ -115,7 +113,7 @@ Ví dụ, đối với kết quả bên dưới, node trong cụm có label `nvi
 
 ### Deploy TensorFlow Test
 
-* Ngoài Cuda VectorAdd Test, bạn cũng có thể deploy TensorFlow như một workload trên Cluster của bạn. Cụ thể bạn có thể tham khảo về workload mẫu này tại [tensorflow-gpu.yaml](https://raw.githubusercontent.com/vngcloud/kubernetes-sample-apps/main/nvidia-gpu/manifest/tensorflow-gpu.yaml).&#x20;
+* Ngoài Cuda VectorAdd Test, bạn cũng có thể deploy TensorFlow như một workload trên Cluster của bạn. Cụ thể bạn có thể tham khảo về workload mẫu này tại [tensorflow-gpu.yaml](https://raw.githubusercontent.com/vngcloud/kubernetes-sample-apps/main/nvidia-gpu/manifest/tensorflow-gpu.yaml).
 * Thực hiện chạy các lệnh bên dưới để deploy workload và kiểm tra các pods đã được khởi chạy:
 
 ```bash
@@ -151,7 +149,7 @@ kubectl delete deploy tensorflow-gpu
 
 #### Configure GPU time-slicing
 
-* Để sử dụng GPU time-slicing cho cluster của bạn, bạn cần tạo tệp tin `ConfigMap` theo mẫu bên dưới để định nghĩa cấu hình time-slicing. Trong đó:&#x20;
+* Để sử dụng GPU time-slicing cho cluster của bạn, bạn cần tạo tệp tin `ConfigMap` theo mẫu bên dưới để định nghĩa cấu hình time-slicing. Trong đó:
   * `replicas`: field chỉ định số lượng pods có thể share chung GPU, tối đa bạn có thể thiết lập 48 pods share chung một GPU.
   * name: mặc định nvidia.com/gpu - lable sử dụng để filter node có GPU.
   * minStrategy: mặc định none do GPU hiện tại chưa hỗ trợ MIG.
@@ -173,7 +171,7 @@ data:
           replicas: 4              # Allow 4 pods to share the GPU, SHOULD less than 48 pods
 ```
 
-*   Hoặc bạn có thể chạy câu lệnh bên dưới để apply cấu hình trên cho tất cả các node trong cluster của bạn có lable `nvidia.com/gpu` .&#x20;
+*   Hoặc bạn có thể chạy câu lệnh bên dưới để apply cấu hình trên cho tất cả các node trong cluster của bạn có lable `nvidia.com/gpu` .
 
     ```bash
     kubectl -n gpu-operator create -f \
@@ -196,8 +194,8 @@ data:
 
 #### Verify GPU time-slicing
 
-* Bây giờ, bạn có thể deploy một application có 5 pods sử dụng GPU bằng cách apply yaml theo mấu [time-slicing-verification.yaml](https://raw.githubusercontent.com/vngcloud/kubernetes-sample-apps/main/nvidia-gpu/manifest/time-slicing-verification.yaml). Bởi vì cấu hình config map thiết lập bên trên đang có replica = 4 nên pod thứ 5 sẽ có trạng thái `Pending` state.&#x20;
-*   Lần lượt deploy và verify GPU time-slicing của bạn qua các lệnh:&#x20;
+* Bây giờ, bạn có thể deploy một application có 5 pods sử dụng GPU bằng cách apply yaml theo mấu [time-slicing-verification.yaml](https://raw.githubusercontent.com/vngcloud/kubernetes-sample-apps/main/nvidia-gpu/manifest/time-slicing-verification.yaml). Bởi vì cấu hình config map thiết lập bên trên đang có replica = 4 nên pod thứ 5 sẽ có trạng thái `Pending` state.
+*   Lần lượt deploy và verify GPU time-slicing của bạn qua các lệnh:
 
     ```bash
     # Apply the manifest
@@ -225,7 +223,7 @@ data:
 
 #### Configure MPS
 
-* Để sử dụng MPS cho cluster của bạn, bạn cần tạo tệp tin `ConfigMap` theo mẫu bên dưới để định nghĩa cấu hình MPS. Trong đó:&#x20;
+* Để sử dụng MPS cho cluster của bạn, bạn cần tạo tệp tin `ConfigMap` theo mẫu bên dưới để định nghĩa cấu hình MPS. Trong đó:
   * `replicas`: field chỉ định số lượng pods có thể share chung GPU.
   * name: mặc định nvidia.com/gpu - lable sử dụng để filter node có GPU.
   * minStrategy: mặc định none do GPU hiện tại chưa hỗ trợ MIG.
@@ -247,7 +245,7 @@ data:
           replicas: 4              # Allow 4 pods to share the GPU
 ```
 
-*   Hoặc bạn có thể chạy câu lệnh bên dưới để apply cấu hình trên cho tất cả các node trong cluster của bạn có lable `nvidia.com/gpu` .&#x20;
+*   Hoặc bạn có thể chạy câu lệnh bên dưới để apply cấu hình trên cho tất cả các node trong cluster của bạn có lable `nvidia.com/gpu` .
 
     ```bash
     # Delete the old configmap
@@ -274,8 +272,8 @@ kubectl -n gpu-operator get pods
 
 #### Verify MPS
 
-* Bây giờ, bạn có thể deploy một application có 5 pods sử dụng GPU bằng cách apply yaml theo mẫu [mps-verification.yaml](https://raw.githubusercontent.com/vngcloud/kubernetes-sample-apps/main/nvidia-gpu/manifest/mps-verification.yaml). Bởi vì cấu hình config map thiết lập bên trên đang có replica = 4 nên pod thứ 5 sẽ có trạng thái `Pending` state.&#x20;
-* Lần lượt deploy và verify GPU MPS của bạn qua các lệnh:&#x20;
+* Bây giờ, bạn có thể deploy một application có 5 pods sử dụng GPU bằng cách apply yaml theo mẫu [mps-verification.yaml](https://raw.githubusercontent.com/vngcloud/kubernetes-sample-apps/main/nvidia-gpu/manifest/mps-verification.yaml). Bởi vì cấu hình config map thiết lập bên trên đang có replica = 4 nên pod thứ 5 sẽ có trạng thái `Pending` state.
+* Lần lượt deploy và verify GPU MPS của bạn qua các lệnh:
 
 ```bash
 # Apply the manifest
@@ -299,22 +297,22 @@ kubectl delete job nbody-sample
 * Tuy nhiên, nếu bạn có một node group gồm nhiều node GPU, bạn có thể sử dụng hai chiến lược khác nhau trên hai node riêng biệt. Ví dụ: bạn có thể sử dụng Time Slicing trên một node để chia sẻ GPU và sử dụng MPS trên node còn lại để chia sẻ GPU cho các ứng dụng khác. Chi tiết tham khảo mục bên dưới.
 {% endhint %}
 
-<figure><img src="/broken/files/us7paza7iyuLaykrAgAm" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_12.png" alt=""><figcaption></figcaption></figure>
 
 ### Applying Multiple Node-Specific Configurations
 
-* Nếu bạn có một node group gồm nhiều node GPU, bạn có thể sử dụng hai chiến lược khác nhau trên hai node riêng biệt. Ví dụ: bạn có thể sử dụng Time Slicing trên một node để chia sẻ GPU và sử dụng MPS trên node còn lại để chia sẻ GPU cho các ứng dụng khác. Ví dụ, tôi đã tạo 2 node group trong một Cluster với các thông số như sau:&#x20;
+* Nếu bạn có một node group gồm nhiều node GPU, bạn có thể sử dụng hai chiến lược khác nhau trên hai node riêng biệt. Ví dụ: bạn có thể sử dụng Time Slicing trên một node để chia sẻ GPU và sử dụng MPS trên node còn lại để chia sẻ GPU cho các ứng dụng khác. Ví dụ, tôi đã tạo 2 node group trong một Cluster với các thông số như sau:
   * NodeGroup 1 có instance GPU RTX 2080Ti.
   * NodeGroup 2 có instance GPU RTX 4090.
 
-Hiện tại, bạn mong muốn:&#x20;
+Hiện tại, bạn mong muốn:
 
 * NodeGroup 1 có instance GPU RTX 2080Ti sẽ chạy 4 pods sharing GPU sử dụng time-slicing.
 * NodeGroup 2 có instance GPU RTX 4090 sẽ chạy 8 pods sharing GPU sử dụng MPS.
 
 #### Configure Multiple Node-Specific Configurations
 
-*   Để sử dụng GPU time-slicing, MPS cho cluster của bạn, bạn cần tạo tệp tin `ConfigMap` theo mẫu bên dưới để định nghĩa cấu hình time-slicing, MPS mong muốn.&#x20;
+*   Để sử dụng GPU time-slicing, MPS cho cluster của bạn, bạn cần tạo tệp tin `ConfigMap` theo mẫu bên dưới để định nghĩa cấu hình time-slicing, MPS mong muốn.
 
     ```yaml
     apiVersion: v1
@@ -364,7 +362,7 @@ kubectl patch clusterpolicies.nvidia.com/cluster-policy \
 kubectl get clusterpolicy
 ```
 
-<figure><img src="/broken/files/yyWJCOS1DAflVkE4EMLO" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_13.png" alt=""><figcaption></figcaption></figure>
 
 * Bây giờ, bạn cần thêm label cho node với tên mà bạn chỉ định tại trong file `ConfigMap`:
 
@@ -377,7 +375,7 @@ kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-2080ti
 kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
 ```
 
-<figure><img src="/broken/files/8YoynEeJ4UdSt2tifjCW" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vksgpu_14.png" alt=""><figcaption></figcaption></figure>
 
 #### Verify Multiple Node-Specific Configurations
 
@@ -460,8 +458,6 @@ kubectl -n prometheus \
 
 <figure><img src="../../.gitbook/assets/vksgpu_20.png" alt=""><figcaption></figcaption></figure>
 
-
-
 * Bên dưới là danh sách một vài GPU Metrics được sử dụng thường xuyên. Tham khảo danh sách GPU metric đầy đủ tại [Field Identifiers](https://docs.nvidia.com/datacenter/dcgm/latest/dcgm-api/dcgm-api-field-ids.html).
   *   **Bảng 1**: Usage
 
@@ -493,8 +489,6 @@ kubectl -n keda get all
 <figure><img src="../../.gitbook/assets/vksgpu_21.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/vksgpu_22.png" alt=""><figcaption></figcaption></figure>
-
-
 
 *   **Nếu BẠN KHÔNG cài đặt Keda trong cụm của mình**, tính năng Auto-scale của VKS sẽ can thiệp vào và:
 
@@ -529,11 +523,11 @@ kubectl -n keda get all
             threshold: '0.5'  # Scale the GPU Nodegroup when the GPU memory usage is greater than 50%
     ```
 * Cấu hình này điều chỉnh số lượng GPU trong Nodegroup dựa trên GPU usage và memory usage. Trong đó:
-  * Field`query` chỉ định truy vấn để lấy số liệu từ Prometheus.&#x20;
-  * Field`threshold` chỉ định giá trị ngưỡng để điều chỉnh số lượng GPU trong Nodegroup.&#x20;
+  * Field`query` chỉ định truy vấn để lấy số liệu từ Prometheus.
+  * Field`threshold` chỉ định giá trị ngưỡng để điều chỉnh số lượng GPU trong Nodegroup.
   * Field `minReplicaCount` và `maxReplicaCount` chỉ định số lượng tối thiểu và tối đa mà Nodegroup GPU có thể điều chỉnh đến.
 * Apply [scaling-app.yaml](https://github.com/vngcloud/kubernetes-sample-apps/raw/main/nvidia-gpu/manifest/scaling-app.yaml) manifest to generate resources for testing the autoscaling feature. This manifest run 1 pod of CUDA VectorAdd Test and the GPU Nodegroup will be scaled to 3 when the GPU usage is greater than 50%.
-*   Thực hiện apply tệp tin [scaling-app.yaml](https://github.com/vngcloud/kubernetes-sample-apps/raw/main/nvidia-gpu/manifest/scaling-app.yaml) để generate resources sử dụng verify cho tính năng autoscaling:&#x20;
+*   Thực hiện apply tệp tin [scaling-app.yaml](https://github.com/vngcloud/kubernetes-sample-apps/raw/main/nvidia-gpu/manifest/scaling-app.yaml) để generate resources sử dụng verify cho tính năng autoscaling:
 
     ```bash
     kubectl apply -f \
@@ -550,6 +544,6 @@ kubectl -n keda get all
     # Check the ScaledObject
     kubectl get scaledobject
     ```
-* Khi trạng thái `ScaledObject` **Ready** là`True`,  GPU Nodegroup được scale dựa trên GPU usage.
+* Khi trạng thái `ScaledObject` **Ready** là`True`, GPU Nodegroup được scale dựa trên GPU usage.
 
 <figure><img src="../../.gitbook/assets/vksgpu_23.png" alt=""><figcaption></figcaption></figure>

@@ -1,12 +1,12 @@
 # Object storage
 
-**Object Storage** là một mô hình lưu trữ dữ liệu mà trong đó dữ liệu được lưu dưới dạng **"object"** thay vì file  hoặc block. Mỗi object bao gồm:
+**Object Storage** là một mô hình lưu trữ dữ liệu mà trong đó dữ liệu được lưu dưới dạng **"object"** thay vì file hoặc block. Mỗi object bao gồm:
 
 1. **Dữ liệu**: Nội dung thực tế (ví dụ: hình ảnh, video, file văn bản,...).
 2. **Metadata**: Thông tin mô tả đối tượng (ví dụ: tên, thời gian tạo, định dạng,...).
 3. **Object ID**: Một định danh duy nhất (ví dụ: hash, UUID) giúp truy cập object đó.
 
-<figure><img src="/broken/files/6804JnTWEhifEEQOdOOM" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 Trên VNG Cloud, chúng tôi đang cung cấp cho bạn đa dạng sự lựa chọn **Farm** để khởi tạo project và thực hiện lưu trữ object, cụ thể:
 

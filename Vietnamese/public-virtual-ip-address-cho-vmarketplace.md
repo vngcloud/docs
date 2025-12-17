@@ -53,10 +53,10 @@ Bước 1: Tiến hành khởi tạo Virtual IP Address trên portal VNG Cloud
 
 Truy cập vào [vServer Portal - Create-virtual-ip-address](https://hcm-3.console.vngcloud.vn/vserver/network/virtual-ip-address), chọn Virtual IP Address type là Public Market Place sau đó điền các thông tin theo yêu cầu
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (466).png" alt=""><figcaption></figcaption></figure>
 
 Bước 2: Tiến hành allow address pair cho VIP với External IP Marketplace
 
 Sau khi tạo xong VIP dạng public marketplace khách hàng tiến hành thực hiện allow address pair bằng cách chọn Add Address Pair Interface để hiển thị pop-up và chọn External IP Marketplace của Pfsense
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>

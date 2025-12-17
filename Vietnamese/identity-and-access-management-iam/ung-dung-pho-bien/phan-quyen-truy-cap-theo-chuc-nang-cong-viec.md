@@ -34,7 +34,7 @@ Chi tiết hướng dẫn các bước
 
 Truy cập vào tab Group ở trang quản lý IAM tại [đây](https://iam.console.vngcloud.vn/user-groups), nhấn "**Create a Group**" và điền thông tin tên group là SystemAdmin, nhấn **Next step** để tới bước gắn Policy
 
-<figure><img src="/broken/files/ZHwyov0RYGoNoOQFfoSj" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image2023-7-12_13-11-7 (1).png" alt=""><figcaption></figcaption></figure>
 
 Tìm kiếm và gắn 2 managed policy là vServerFullAccess và vStorageFullAccess cho group: SystemAdmin, sau đó nhấn **Create Group** để tạo
 
@@ -60,7 +60,7 @@ Sau khi tạo thành công các User Accounts, sẽ được liệt kê ở tran
 
 Để thêm các User: System1, System2, Developer1, Developer2 vào Group: SystemAdmin, Developer bạn có thể thực hiện ở từng User Account hoặc Group, ở đây chúng tôi sẽ hướng dẫn thêm User Account ở Group, bạn qua tab Group nhấn vào **tên của Group** để vào chi tiết của Group, như ở đây là Group: SystemAdmin
 
-<figure><img src="/broken/files/K0zK8hsRgulzfQXFw4Wg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image2023-7-12_13-37-11 (1).png" alt=""><figcaption></figcaption></figure>
 
 Chọn tab **User**
 
@@ -82,7 +82,7 @@ Lúc này bạn có thể đăng nhập vào các User Accounts để kiểm tra
 
 Truy cập vào vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), khi chưa đăng nhập bất kì tài khoản nào bạn sẽ được chuyển hướng sang trang sign-in chọn "**Sign-in With IAM User Account**"
 
-<figure><img src="/broken/files/MVKH9yYekBjUpWjiUT3Z" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image2023-7-12_13-48-49 (1).png" alt=""><figcaption></figcaption></figure>
 
 Điền thông tin root user account email mà IAM user trước đó đã được tạo, thông tin IAM username và password, nhấn **Sign-in with IAM User Account**
 

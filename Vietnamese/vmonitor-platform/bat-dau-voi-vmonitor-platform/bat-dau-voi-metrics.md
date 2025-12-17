@@ -58,7 +58,7 @@ Sau khi cài đặt Metric Agent theo hướng dẫn tại **Bước 3: Cài đ�
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Chọn **Infrastructure List/ Host.**
 
-<figure><img src="/broken/files/JbkXYksF65MhCVy5TvDN" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 2. Chọn tên **Hostname**. Ví dụ thiết bị **LAP15839** được thiết lập Metric Agent thành công tới hệ thống vMonitor Platform thì dashboard mặc định sẽ có tên: **LAP15839**, bạn chọn dashboard sẽ hiển thị như ảnh:
 

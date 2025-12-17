@@ -8,7 +8,7 @@ Sau khi đã <mark style="color:blue;">Khởi tạo Repository,</mark> bạn s�
 2. Tại màn hình "Job Mode", nhấn "**Next**";
 3. Tại màn hình "Nam&#x65;**"**, bạn có thể đặt tên cho Job, sau đó nhấn "**Next".**
 4. Tại màn hình "Compute&#x72;**"**, chọn computer muốn sao lưu, sau đó nhấn "**Next"**.
-5. Tại màn hình "Backup Mod&#x65;**"**,  chọn mode sau đó nhấn "**Next**"; \
+5. Tại màn hình "Backup Mod&#x65;**"**, chọn mode sau đó nhấn "**Next**";\
    \- Chọn mode: "**Entire Computer**" để sao lưu toàn bộ máy tính, nếu chọn mode này có thể bỏ qua bước 6.\
    \- Chọn mode: "**File level backup (slower)**" để sao lưu file hoặc folder được chọn, nếu chọn mode này thì đi tiếp bước 6.
 6. Tại màn hình "Object", chọn đối tượng cần sao lưu, sau đó nhấn "**Next**";
@@ -19,7 +19,7 @@ Sau khi đã <mark style="color:blue;">Khởi tạo Repository,</mark> bạn s�
 
 ***
 
-### Video hướng dẫn cài đặt&#x20;
+### Video hướng dẫn cài đặt
 
 Đang cập nhật.
 
@@ -39,29 +39,29 @@ Sau khi đã <mark style="color:blue;">Khởi tạo Repository,</mark> bạn s�
 
 <figure><img src="../../../.gitbook/assets/image (361).png" alt="" width="563"><figcaption></figcaption></figure>
 
-**Bước 4**:  Tại tab **Computer**, người dùng có thể chọn computer muốn thực hiện backup.Sau đó nhấn **Next**.
+**Bước 4**: Tại tab **Computer**, người dùng có thể chọn computer muốn thực hiện backup.Sau đó nhấn **Next**.
 
 <figure><img src="../../../.gitbook/assets/image (362).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 5**: Tại tab **Backup Mode**, người dùng chọn mode "**File level backup (slower)**" để backup chỉ những file hay folder được chọn, còn nếu back up toàn bộ computer thì chọn mode "Entire computer". Sau đó nhấn **Next**.
 
-<figure><img src="/broken/files/nHhuF5DBYekPGeOVUH8Q" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (56).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 6**: Nếu chọn mode "File level backup (slower)" ở bước 5 thì tab **Object** hiện ra để chọn đối tượng cần backup, người dùng chọn tùy chọn "**The following file system objects:**", sau đó ấn "Add" điền đường dẫn folder muốn backup, sau đó nhấn "OK" và cuối cùng nhấn **Next**.
 
-\*Nếu bước 5 chọn mode "Entire computer", thì bỏ qua bước 6 này.&#x20;
+\*Nếu bước 5 chọn mode "Entire computer", thì bỏ qua bước 6 này.
 
 <figure><img src="../../../.gitbook/assets/image (365).png" alt="" width="563"><figcaption></figcaption></figure>
 
-**Bước 7:** Tại tab **Storage**, người dùng chọn **Backup Repository** đã tạo trước đó, sau đó nhấn **Next**. Hệ thống sẽ kiểm tra file backup.&#x20;
+**Bước 7:** Tại tab **Storage**, người dùng chọn **Backup Repository** đã tạo trước đó, sau đó nhấn **Next**. Hệ thống sẽ kiểm tra file backup.
 
 <figure><img src="../../../.gitbook/assets/image (366).png" alt="" width="563"><figcaption></figcaption></figure>
 
-**Bước 8**: Sau khi hệ thống kiểm tra xong thì điều hướng đến tới tab **Guest Processing**, người dùng **bỏ tùy chọn đầu tiên "Enable application-aware processing"**. Nếu người dùng muốn đảm bảo sao lưu nhất quán cho các ứng dụng chạy máy chủ ảo bằng các tương tác với chúng và sử dụng Microsoft VSS ,thì có thể vẫn bật thì Veeam sẽ phải thực hiện các tác vụ trước và sau khi sao lưu.&#x20;
+**Bước 8**: Sau khi hệ thống kiểm tra xong thì điều hướng đến tới tab **Guest Processing**, người dùng **bỏ tùy chọn đầu tiên "Enable application-aware processing"**. Nếu người dùng muốn đảm bảo sao lưu nhất quán cho các ứng dụng chạy máy chủ ảo bằng các tương tác với chúng và sử dụng Microsoft VSS ,thì có thể vẫn bật thì Veeam sẽ phải thực hiện các tác vụ trước và sau khi sao lưu.
 
 Sau đó nhấn **Next**.
 
-<figure><img src="/broken/files/oCNuMyRJLFvqc0SPkwGA" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (61).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 9**: Tại tab **Schedule**, người dùng có thể cài đặt lịch tự động chạy job tự động, nếu chạy bằng tay thì nhấn **Next**.
 

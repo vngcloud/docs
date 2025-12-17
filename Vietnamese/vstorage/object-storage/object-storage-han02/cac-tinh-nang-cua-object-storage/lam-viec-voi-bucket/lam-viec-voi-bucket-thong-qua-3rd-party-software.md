@@ -13,9 +13,7 @@ Sau khi bạn đã thực hiện khởi tạo project và khởi tạo S3 key th
 1. Tải công cụ người dùng S3 Browser tại đây [https://s3browser.com/download.aspx](https://s3browser.com/download.aspx).
 2. Mở ứng dụng **S3 Browser.** Chọn thư mục **Account, sau đó chọn Add new account**
 
-<figure><img src="/broken/files/zdfBnly3qSdD5xpFLJyL" alt="" width="295"><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../../../.gitbook/assets/image (79).png" alt="" width="295"><figcaption></figcaption></figure>
 
 3. Màn hình Add New Account hiển thị, lúc này bạn nhập các thông tin như sau:
 
@@ -29,7 +27,7 @@ Sau khi bạn đã thực hiện khởi tạo project và khởi tạo S3 key th
 
 <figure><img src="../../../../../.gitbook/assets/image (992).png" alt="" width="375"><figcaption></figcaption></figure>
 
-6. Khi kết nối thành công, màn hình S3 Browser sẽ hiển thị như sau:&#x20;
+6. Khi kết nối thành công, màn hình S3 Browser sẽ hiển thị như sau:
 
 <figure><img src="../../../../../.gitbook/assets/image (993).png" alt=""><figcaption></figcaption></figure>
 
@@ -70,7 +68,7 @@ Tiếp theo đây là các hướng dẫn cho các tính năng nâng cao bạn c
 <figure><img src="../../../../../.gitbook/assets/image (590).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Chú ý:**&#x20;
+**Chú ý:**
 
 * Khác với farm HCM04, trên Farm HAN02, nếu bạn muốn chia sẻ quyền truy cập công khai (public) vào một bucket – nghĩa là cho phép **tất cả mọi người (everyone)** đều có thể truy cập (ví dụ để tải file, xem ảnh, v.v.) – thì **bắt buộc phải sử dụng Bucket Policy** để định nghĩa rõ quyền truy cập đó. Ví dụ một Bucket Policy để cho phép **read object** (đọc file) công khai:
 
@@ -114,7 +112,7 @@ SSE-S3 (Server-Side Encryption with S3 Managed Keys) là tính năng mã hóa d�
 
 Tiếp theo, khi bucket được tạo thành công, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Object Locked**. Bạn có thể thiết lập object locked ở cả 2 mode **Retention** và **Legal Hold** thông qua S3 Browser. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-object-lock.aspx](https://s3browser.com/amazon-s3-object-lock.aspx)
 
-<figure><img src="/broken/files/16AQoSHTCaZyr84n01EH" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
 
 ### **Versioning**
 
@@ -122,7 +120,7 @@ Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá
 
 Để thiết lập Versioning cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Edit Versioning Settings**. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-versioning.aspx](https://s3browser.com/amazon-s3-versioning.aspx)
 
-<figure><img src="/broken/files/b0EhIplaFEDNWGJnVcHt" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
 
 ### **Lifecycle rotation**
 

@@ -6,7 +6,7 @@
 
 Đầu tiên, bạn cần cài đặt Sigma Media Server theo các bước tại [đây](../cai-dat-sigma-media-server.md).
 
-## Khởi tạo và cấu hình dịch vụ Media Service để livestream.&#x20;
+## Khởi tạo và cấu hình dịch vụ Media Service để livestream.
 
 **Bước 1:** Sau khi đã cài đặt **Sigma Media Server** thành công, bạn hãy truy cập vào [https://portal.sigma.video/apps](https://portal.sigma.video/apps) với email mà bạn đã đăng ký sử dụng dịch vụ trước đó.
 
@@ -14,9 +14,7 @@
 
 **Bước 2:** Bạn chọn xổ menu **Product** xuống và chọn mục **Media Live.** Tiếp tục bạn chọn tab **Channel -> Transcode channels**
 
-<figure><img src="/broken/files/ws6kRmyIrUhEU8msasfN" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../../.gitbook/assets/transcode1 (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Chọn nút **Add** ở góc phải. Màn hình **Create Transcode Channel** hiển thị, trong tab Config, bạn cần nhập các thông tin cơ bản cho kênh bao gồn **Name** và **Name Modifier**
 

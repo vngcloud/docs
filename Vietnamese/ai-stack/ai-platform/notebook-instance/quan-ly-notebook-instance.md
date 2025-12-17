@@ -11,7 +11,7 @@ description: >-
 1. Đăng nhập vào [VNG Cloud AI Platform](https://aiplatform.console.vngcloud.vn/overview).
 2. Chọn mục **Notebook instance** từ menu bên trái.
 
-## &#x20;**1. Kết nối với các instance đang chạy**
+## **1. Kết nối với các instance đang chạy**
 
 Khi trạng thái chuyển sang **Active**, bạn có thể nhấn **“Connect”** để mở giao diện Notebook Jupyter nơi bạn có thể bắt đầu làm việc cho các dự án của mình.
 
@@ -35,7 +35,7 @@ Sau khi notebook instance được tạo, nó sẽ tự động chạy. Nếu m�
 
 * Cách 2: Chạy qua cột Action (Hành Động)
 
-<figure><img src="/broken/files/Q8OUcLXpzCqMKxjczw0F" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (387).png" alt=""><figcaption></figcaption></figure>
 
 ### **Dừng Instance**
 
@@ -47,7 +47,7 @@ Nếu bạn cần tạm dừng công việc hoặc tiết kiệm tài nguyên, b
 
 * Cách 2: Dừng qua cột Action (Hành Động)
 
-<figure><img src="/broken/files/U3BPqIpyKN1ZahUlrwD8" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (386).png" alt=""><figcaption></figcaption></figure>
 
 ## **3. Xoá Instance**
 
@@ -67,13 +67,13 @@ Khi một phiên bản notebook không còn cần thiết, bạn có thể xóa 
 
 ## 4. Tăng dung lượng block storage
 
-Chọn "Resize" khi muốn tăng dung lượng block storage để có thể lưu trữ thêm data.&#x20;
+Chọn "Resize" khi muốn tăng dung lượng block storage để có thể lưu trữ thêm data.
 
 Chỉ được nhập size lớn hơn hoặc bằng storage size hiện tại
 
 * Truy cập vào đường dẫn qua tên instance
 
-<figure><img src="/broken/files/mdXn3xCXioFW8UWujmTs" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (407).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (1116).png" alt=""><figcaption></figcaption></figure>
 

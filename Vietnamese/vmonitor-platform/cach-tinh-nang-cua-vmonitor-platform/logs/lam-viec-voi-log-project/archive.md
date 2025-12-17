@@ -2,7 +2,7 @@
 
 Mặc định khi mua gói Log Project, tuỳ vào gói mà bạn mua sẽ có Log Retention khác nhau như: 1 ngày, 7 ngày, 14 ngày, 30 ngày hoặc 90 ngày. Log Retention được chúng tôi định nghĩa là thời hạn lưu trữ log, nếu dòng log có thời gian nằm ngoài Log Retention sẽ được hệ thống chúng tôi xoá đi.
 
-Nếu bạn có nhu cầu lưu trữ dữ liệu log lâu dài hơn những thời gian này, bạn có thể sử dụng tính năng Log Archive để đồng bộ dữ liệu sang vStorage để lưu trữ lâu dài. bạn có thể theo hướng dẫn bên dưới:&#x20;
+Nếu bạn có nhu cầu lưu trữ dữ liệu log lâu dài hơn những thời gian này, bạn có thể sử dụng tính năng Log Archive để đồng bộ dữ liệu sang vStorage để lưu trữ lâu dài. bạn có thể theo hướng dẫn bên dưới:
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Log**.
@@ -15,7 +15,7 @@ Nếu bạn có nhu cầu lưu trữ dữ liệu log lâu dài hơn những th�
 
 7\. Nhập **Filter** cho log nếu bạn có nhu cầu chỉ đồng bộ những dữ liệu mà thoả mãn điều kiện này, còn không chúng tôi sẽ đồng bộ tất cả Log của Log Project đang chọn. Bạn có thể nhập điều kiện lọc cho log bằng một trong 2 cách: **Suggestion mode** hoặc **Editor mode**. Cách sử dụng 2 phương thức này và chuyển đổi qua lại giữa 2 phương thức đã được chúng tôi mô tả ở các tính năng bên trên, để biết thêm thông tin hãy xem tại [Log search](../../dashboard/widget/log-search.md).
 
-8\. Chọn **Destination**. Bạn có thể chọn 1 trong 2 nơi dữ liệu log được archive bao gồm: **vStorage container** hoặc **S3 compatible**.&#x20;
+8\. Chọn **Destination**. Bạn có thể chọn 1 trong 2 nơi dữ liệu log được archive bao gồm: **vStorage container** hoặc **S3 compatible**.
 
 <figure><img src="../../../../.gitbook/assets/image (160).png" alt=""><figcaption></figcaption></figure>
 
@@ -37,7 +37,7 @@ Nếu bạn có nhu cầu lưu trữ dữ liệu log lâu dài hơn những th�
 
 14\. Chọn **Select**.
 
-<img src="/broken/files/Azxyfvq2JiqnLO3q6xN7" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (27).png" alt="" data-size="original">
 
 </details>
 

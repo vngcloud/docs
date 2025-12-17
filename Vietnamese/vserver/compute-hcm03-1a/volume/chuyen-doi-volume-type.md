@@ -1,6 +1,6 @@
 # Chuyển đổi Volume Type
 
-Tính năng này cho phép người dùng chuyển đổi loại volume từ SSD (Solid State Drive) sang NVME (Non-Volatile Memory Express) và ngược lại, nhằm tối ưu hóa hiệu suất lưu trữ dữ liệu trên hệ thống.&#x20;
+Tính năng này cho phép người dùng chuyển đổi loại volume từ SSD (Solid State Drive) sang NVME (Non-Volatile Memory Express) và ngược lại, nhằm tối ưu hóa hiệu suất lưu trữ dữ liệu trên hệ thống.
 
 ## Mục đích sử dụng
 
@@ -42,8 +42,8 @@ Tham khảo hướng dẫn chi tiết bên dưới để thực hiện chuyển 
 
 **Bước 1: Khởi tạo quá trình Migrate (không downtime)**
 
-* Hệ thống tạo một volume mới với cấu hình đã chọn ở bước 0.4, sau đó sao lưu dữ liệu từ volume hiện tại sang volume mới.&#x20;
-* Thời gian xử lý tùy vào kích thước và cấu hình từng volume. Ở bước này, người dùng vẫn có thể ghi dữ liệu trên volume mà không hề xảy ra downtime.&#x20;
+* Hệ thống tạo một volume mới với cấu hình đã chọn ở bước 0.4, sau đó sao lưu dữ liệu từ volume hiện tại sang volume mới.
+* Thời gian xử lý tùy vào kích thước và cấu hình từng volume. Ở bước này, người dùng vẫn có thể ghi dữ liệu trên volume mà không hề xảy ra downtime.
 
 <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -51,21 +51,21 @@ Tham khảo hướng dẫn chi tiết bên dưới để thực hiện chuyển 
 
 _Mục đích của bước này là để sao lưu dữ liệu được ghi mới/thay đổi trong khoảng thời gian thực hiện bước 1._
 
-* 2.1: Sau khi hoàn tất bước 1, giao diện thực hiện sẽ chuyển sang bước 2/4, và yêu cầu người dùng tương tác. Tham khảo hình minh họa sau:&#x20;
+* 2.1: Sau khi hoàn tất bước 1, giao diện thực hiện sẽ chuyển sang bước 2/4, và yêu cầu người dùng tương tác. Tham khảo hình minh họa sau:
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* 2.2: Nhấn chọn **Yêu cầu hành động** để tiếp tục quá trình Migrate. Một cửa sổ Migrate volume sẽ hiển thị, nhấn **Tiếp tục** để xác nhận thực hiện. Quá trình này sẽ gây gián đoạn dịch vụ trên volume hiện tại, thời gian gián đoạn sẽ tùy thuộc vào độ lớn dữ liệu thay đổi trong khoảng thời gian thực hiện bước 1. Trạng thái Migrate sẽ hiển thị như sau:&#x20;
+* 2.2: Nhấn chọn **Yêu cầu hành động** để tiếp tục quá trình Migrate. Một cửa sổ Migrate volume sẽ hiển thị, nhấn **Tiếp tục** để xác nhận thực hiện. Quá trình này sẽ gây gián đoạn dịch vụ trên volume hiện tại, thời gian gián đoạn sẽ tùy thuộc vào độ lớn dữ liệu thay đổi trong khoảng thời gian thực hiện bước 1. Trạng thái Migrate sẽ hiển thị như sau:
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-_<mark style="color:orange;">**Trường hợp volume đang được sử dụng trong máy ảo (server), người dùng buộc phải thực hiện Tắt Server để có thể nhấn chon Tiếp tục Migrate.**</mark>_&#x20;
+_<mark style="color:orange;">**Trường hợp volume đang được sử dụng trong máy ảo (server), người dùng buộc phải thực hiện Tắt Server để có thể nhấn chon Tiếp tục Migrate.**</mark>_
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3: Xác nhận sử dụng volume hoàn tất chuyển đổi**
 
-* 3.1: Sau khi hoàn tất bước 1, giao diện thực hiện sẽ chuyển sang bước 3/4, và yêu cầu người dùng tương tác. Tham khảo hình minh họa sau:&#x20;
+* 3.1: Sau khi hoàn tất bước 1, giao diện thực hiện sẽ chuyển sang bước 3/4, và yêu cầu người dùng tương tác. Tham khảo hình minh họa sau:
 
 <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -81,7 +81,7 @@ Tham khảo hướng dẫn chi tiết bên dưới để thực hiện chuyển 
 
 * 0.1: Truy cập danh sách volume từ portal [tại đây.](https://hcm-3.console.vngcloud.vn/vserver/block-store/volumes)
 * 0.2: Điều hướng tới volume cần chuyển đổi, nhấn chọn **biểu tượng ba chấm** tại cột **Hành động** ![](<../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
-* 0.3: Tiếp tục nhấn chọn **Migrate Volume**&#x20;
+* 0.3: Tiếp tục nhấn chọn **Migrate Volume**
 * 0.4: Tại của sổ chọn thông tin để Migrate, chọn các thông tin sau:
   * Loại: mặc định chọn NVME
     * Kích thước: Dung lượng hiện tại, không được phép thay đổi
@@ -90,8 +90,8 @@ Tham khảo hướng dẫn chi tiết bên dưới để thực hiện chuyển 
 
 **Bước 1: Khởi tạo quá trình Migrate (không downtime)**
 
-* Hệ thống tạo một volume mới với cấu hình đã chọn ở bước 0.4, sau đó sao lưu dữ liệu từ volume hiện tại sang volume mới.&#x20;
-* Thời gian xử lý tùy vào kích thước và cấu hình từng volume. Ở bước này, người dùng vẫn có thể ghi dữ liệu trên volume mà không hề xảy ra downtime.&#x20;
+* Hệ thống tạo một volume mới với cấu hình đã chọn ở bước 0.4, sau đó sao lưu dữ liệu từ volume hiện tại sang volume mới.
+* Thời gian xử lý tùy vào kích thước và cấu hình từng volume. Ở bước này, người dùng vẫn có thể ghi dữ liệu trên volume mà không hề xảy ra downtime.
 
 <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -99,21 +99,21 @@ Tham khảo hướng dẫn chi tiết bên dưới để thực hiện chuyển 
 
 _Mục đích của bước này là để sao lưu dữ liệu được ghi mới/thay đổi trong khoảng thời gian thực hiện bước 1._
 
-* 2.1: Sau khi hoàn tất bước 1, giao diện thực hiện sẽ chuyển sang bước 2/4, và yêu cầu người dùng tương tác. Tham khảo hình minh họa sau:&#x20;
+* 2.1: Sau khi hoàn tất bước 1, giao diện thực hiện sẽ chuyển sang bước 2/4, và yêu cầu người dùng tương tác. Tham khảo hình minh họa sau:
 
 <figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* 2.2: Nhấn chọn **Yêu cầu hành động** để tiếp tục quá trình Migrate. Một cửa sổ Migrate volume sẽ hiển thị, nhấn **Tiếp tục** để xác nhận thực hiện. Quá trình này sẽ gây gián đoạn dịch vụ trên volume hiện tại, thời gian gián đoạn sẽ tùy thuộc vào độ lớn dữ liệu thay đổi trong khoảng thời gian thực hiện bước 1. Trạng thái Migrate sẽ hiển thị như sau:&#x20;
+* 2.2: Nhấn chọn **Yêu cầu hành động** để tiếp tục quá trình Migrate. Một cửa sổ Migrate volume sẽ hiển thị, nhấn **Tiếp tục** để xác nhận thực hiện. Quá trình này sẽ gây gián đoạn dịch vụ trên volume hiện tại, thời gian gián đoạn sẽ tùy thuộc vào độ lớn dữ liệu thay đổi trong khoảng thời gian thực hiện bước 1. Trạng thái Migrate sẽ hiển thị như sau:
 
-<figure><img src="/broken/files/Rn2qY0mKj9vUGGnL6VDE" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-_<mark style="color:orange;">**Trường hợp volume đang được sử dụng trong máy ảo (server), người dùng buộc phải thực hiện Tắt Server để có thể nhấn chon Tiếp tục Migrate.**</mark>_&#x20;
+_<mark style="color:orange;">**Trường hợp volume đang được sử dụng trong máy ảo (server), người dùng buộc phải thực hiện Tắt Server để có thể nhấn chon Tiếp tục Migrate.**</mark>_
 
 <figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3: Xác nhận sử dụng volume hoàn tất chuyển đổi**
 
-* 3.1: Sau khi hoàn tất bước 1, giao diện thực hiện sẽ chuyển sang bước 3/4, và yêu cầu người dùng tương tác. Tham khảo hình minh họa sau:&#x20;
+* 3.1: Sau khi hoàn tất bước 1, giao diện thực hiện sẽ chuyển sang bước 3/4, và yêu cầu người dùng tương tác. Tham khảo hình minh họa sau:
 
 <figure><img src="../../../.gitbook/assets/image (436).png" alt=""><figcaption></figcaption></figure>
 

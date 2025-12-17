@@ -206,7 +206,7 @@ kubectl apply -f podnginx-pvc.yaml
 
 Lúc này, hệ thống vServer sẽ tự động tạo một Volume tương ứng với file yaml bên trên, volume này sẽ được attach vào node chứa pod dùng PVC đang chạy, ví dụ:
 
-<figure><img src="/broken/files/HS26dpSJAlOZ1ieER4Ml" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vks_volume_1.png" alt=""><figcaption></figcaption></figure>
 
 ***
 

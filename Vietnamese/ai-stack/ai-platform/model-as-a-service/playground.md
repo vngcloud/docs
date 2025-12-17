@@ -12,20 +12,20 @@ description: >-
 ### Hướng dẫn thử nghiệm mô hình
 
 1. Chọn loại mô hình tùy thuộc vào tác vụ của bạn: Chat, Completion, Image Generation, Embedding
-2. Chọn loại mô hình: Ở bảng điều khiển bên phải, chọn một mô hình từ danh sách&#x20;
-3. Thiết lập prompt&#x20;
+2. Chọn loại mô hình: Ở bảng điều khiển bên phải, chọn một mô hình từ danh sách
+3. Thiết lập prompt
    * Trong phần System prompt, hãy định nghĩa các hướng dẫn hoặc ngữ cảnh cho mô hình. Bạn cũng có thể thêm các ví dụ để định hướng hành vi của nó.
 4.  [Tinh chỉnh các tham số:](playground.md#huong-dan-tinh-chinh-thamso-mo-hinh)
 
-    <figure><img src="/broken/files/nenCdlcVcXXtvDGkUDAG" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (442).png" alt=""><figcaption></figcaption></figure>
 5. Bắt đầu thử nghiệm:
 
 * Nhập câu lệnh của bạn và quan sát cách các mô hình khác nhau phản hồi.
 
 6. Lưu cấu hình:
 
-* Sao chép dưới dạng code: Nhấp vào biểu tượng `<> API`&#x20;
-* Chọn ngôn ngữ lập trình:&#x20;
+* Sao chép dưới dạng code: Nhấp vào biểu tượng `<> API`
+* Chọn ngôn ngữ lập trình:
   * Curl: Mã lệnh này được sử dụng trong Terminal hoặc Command Prompt, giúp bạn dễ dàng kiểm tra API trực tiếp mà không cần viết code.
   * Python: Cung cấp đoạn mã Python sẵn sàng để bạn sao chép và sử dụng trong các dự án Python của mình.
   * Node.js: Cung cấp đoạn mã Node.js, phù hợp cho các dự án web và ứng dụng server-side.
@@ -38,7 +38,7 @@ Khi sử dụng Playground, bạn có thể điều chỉnh các thông số sau
 
 **Mô hình Chat**
 
-* &#x20;Past messages included: Số lượng tin nhắn gần nhất mà mô hình sẽ ghi nhớ.
+* Past messages included: Số lượng tin nhắn gần nhất mà mô hình sẽ ghi nhớ.
   * Phạm vi: 1 - 20 (Mặc định: 10).
 * Maximum token output: Số token tối đa mà mô hình có thể tạo ra.
   * Phạm vi: 1 - 10000 (Mặc định: 800).
@@ -76,7 +76,7 @@ Khi sử dụng Playground, bạn có thể điều chỉnh các thông số sau
 
 Để xem thêm các thông số chi tiết, bạn có thể tham khảo tài liệu của [vLLM ](../../../)và [OpenAI](https://platform.openai.com/docs/api-reference/introduction).
 
-### So sánh mô hình&#x20;
+### So sánh mô hình
 
 Tính năng này cho phép bạn chạy và so sánh kết quả đầu ra của hai mô hình cùng lúc.
 

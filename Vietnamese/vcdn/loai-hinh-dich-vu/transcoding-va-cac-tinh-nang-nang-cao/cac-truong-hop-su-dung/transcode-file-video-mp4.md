@@ -1,10 +1,10 @@
 # Transcode file video (MP4)
 
-**Bài toán đặt ra:**&#x20;
+**Bài toán đặt ra:**
 
 * Bạn đang có File MP4 gốc độ phân giải 4K, lưu trữ trên bất kỳ dịch vụ object storage nào tương thích với S3.
 
-**Hiện tại, bạn cần:**&#x20;
+**Hiện tại, bạn cần:**
 
 * File MP4 sau khi transcode sang các độ phân giải khác nhau, lưu trữ trên dịch vụ object storage tương thích với S3 và có thể truy cập qua vCDN của VNG Cloud.
 
@@ -12,18 +12,18 @@
 
 <figure><img src="../../../../.gitbook/assets/image (632).png" alt=""><figcaption></figcaption></figure>
 
-Thành phần thực hiện:&#x20;
+Thành phần thực hiện:
 
 * Dữ liệu nguồn là file .mp4 cần transcode, lưu trữ trên dịch vụ bất kỳ tương thích với S3-compatible.
 * Media Service là phần mềm chuyên dụng để xử lý file media để phục vụ nhu cầu VOD, Livestream. Media Service sử dụng vServer để làm compute engine và hiện tại đã có sẵn trên dịch vụ vMarketplace của vServer.
-* Dữ liệu đích là file .mp4 sau khi đã transcode, lưu trữ trên disk của vServer.&#x20;
+* Dữ liệu đích là file .mp4 sau khi đã transcode, lưu trữ trên disk của vServer.
 * Sau khi đã có Dữ liệu đích, Quý khách có thể sử dụng để làm Origin cho hệ thống CDN.
 
 Để thực hiện bài toán trên, hãy làm theo hướng dẫn bên dưới:
 
 ## Khởi tạo bucket trên bất kỳ dịch vụ S3-compatible để làm nơi lưu trữ dữ liệu nguồn
 
-Đâu tiên, bạn cần khởi tạo bucket trên bất kỳ dịch vụ S3-compatible để làm nơi lưu trữ dữ liệu nguồn. Bạn có thể sử dụng AWS S3, Google Storage,... hoặc bạn cũng có thể chọn sử dụng vStorage do VNGCloud phát triển làm nơi lưu trữ dữ liệu nguồn. Chi tiết các bước khởi tạo bucket trên vStorage, vui lòng tham khảo thêm tại [đây](../../../../vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/khoi-tao-container.md). Sau khi bucket đã khởi tạo xong, bạn hãy thực hiện:&#x20;
+Đâu tiên, bạn cần khởi tạo bucket trên bất kỳ dịch vụ S3-compatible để làm nơi lưu trữ dữ liệu nguồn. Bạn có thể sử dụng AWS S3, Google Storage,... hoặc bạn cũng có thể chọn sử dụng vStorage do VNGCloud phát triển làm nơi lưu trữ dữ liệu nguồn. Chi tiết các bước khởi tạo bucket trên vStorage, vui lòng tham khảo thêm tại [đây](../../../../vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/khoi-tao-container.md). Sau khi bucket đã khởi tạo xong, bạn hãy thực hiện:
 
 * Thiết lập quyền truy cập public từ internet đến các object theo hướng dẫn tại [đây](../../../../vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/chuyen-che-do-cong-khai-container.md).
 * Upload một file .MP4 để làm sample cho transcoding
@@ -33,11 +33,11 @@ Thành phần thực hiện:&#x20;
 
 Đầu tiên, bạn cần cài đặt Sigma Media Server theo các bước tại [đây](../cai-dat-sigma-media-server.md).
 
-## Khởi tạo và cấu hình dịch vụ Media Service để livestream.&#x20;
+## Khởi tạo và cấu hình dịch vụ Media Service để livestream.
 
 **Bước 1:** Sau khi đã cài đặt Sigma Media Server thành công, bạn hãy truy cập vào [https://portal.sigma.video/apps](https://portal.sigma.video/apps) với email mà bạn đã đăng ký sử dụng dịch vụ trước đó.
 
-<figure><img src="/broken/files/5RwBXxhhEDhpB1QPABjg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 2:** Bạn chọn xổ menu **Product** xuống và chọn mục **Media VOD**
 
@@ -57,7 +57,7 @@ Thành phần thực hiện:&#x20;
 
 **Bước 6:** Chọn loại file nguồn cần transcode. Bạn cần nhập vào link [URL](https://han01.vstorage.vngcloud.vn/v1/AUTH_210ff69ad18d4bfa9920b165ef8ddef4/con_01/big_buck_bunny_720p_30mb.mp4) của file nguồn đã được upload lên dịch vụ S3. Ví dụ với vStorage, URL của object sẽ có định dạng tương tự: [https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_123456/cont\_01/pexels\_videos\_1390942%20(2160p).mp4](https://hcm03.vstorage.vngcloud.vn/v1/AUTH_bcd882dd104f40cb8e20f1cd6bb0b4c6/cont_01/pexels_videos_1390942%20\(2160p\).mp4)**Chú ý: bạn cần thực hiện chuyển chế độ công khai (Make Public) cho container/ bucket trên vStorage hoặc Bất kỳ dịch vụ S3 để Sigma có thể truy cập vào link này.**
 
-<figure><img src="/broken/files/6QMfuwV3gWSEpyoFtKKm" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (129).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 7:** Tại mục **Destination**, chọn kiểu output **Third-party Storage** -> **Generic S3** để lưu file kết quả
 

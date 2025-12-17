@@ -4,7 +4,7 @@ Private Locations cho phép bạn theo dõi các ứng dụng/dịch vụ nằm 
 
 **Để thực hiện tạo Private Location, hãy làm theo hướng dẫn bên dưới:**
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
+1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)
 2. Chọn thư mục **Synthetic test.**
 3. Chọn **Location.**
 4. Chọn **Create a location.**
@@ -14,7 +14,7 @@ Private Locations cho phép bạn theo dõi các ứng dụng/dịch vụ nằm 
 
 6. Hệ thống sẽ sinh ra câu lệnh để bạn cài đặt Synthetic Worker trên Private Location, bạn chỉ cần sao chép câu lệnh và cài đặt
 
-<figure><img src="/broken/files/mJIQipM20Z5x9SUFzbZi" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (342).png" alt=""><figcaption></figcaption></figure>
 
 7\. Cài đặt Synthetic Worker với câu lệnh trên
 

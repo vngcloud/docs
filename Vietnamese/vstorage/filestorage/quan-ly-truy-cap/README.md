@@ -41,7 +41,7 @@ Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông t
 7. Chọn **Copy** để sao chép mật khẩu. Bạn bắt buộc phải thu thập được thông tin này để có thể truy cập vào File Storage sử dụng IAM User Account.
 8. Chọn **Create User Account.**
 
-<figure><img src="/broken/files/eFeUVz5RRTdI8lAPdF4I" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

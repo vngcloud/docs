@@ -34,8 +34,7 @@ Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, n�
 **Cài đặt VNGCloud LoadBalancer Controller**
 
 * Cài đặt Helm phiên bản từ 3.0 trở lên. Tham khảo tại [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) để biết cách cài đặt.
-
-- Thay thế thông tin ClientID, Client Secret và ClusterID của cụm K8S của bạn và tiếp tục chạy:
+* Thay thế thông tin ClientID, Client Secret và ClusterID của cụm K8S của bạn và tiếp tục chạy:
 
 ```bash
 helm install vngcloud-load-balancer-controller oci://vcr.vngcloud.vn/81-vks-public/vks-helm-charts/vngcloud-load-balancer-controller \
@@ -316,7 +315,7 @@ pod/nginx-app-7f45b65946-bmrcf   0/1     ContainerCreating   0          2s    <n
 
 Lúc này, hệ thống vLB sẽ tự động tạo một LB tương ứng cho nginx app đã deployment, ví dụ:
 
-<figure><img src="/broken/files/FoXVF0FYRiJ1q0950LbD" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/expose_portal_l4.png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3: Để truy cập vào app nginx vừa export, bạn có thể sử dụng URL với định dạng:**
 

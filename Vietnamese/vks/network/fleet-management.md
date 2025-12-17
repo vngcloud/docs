@@ -33,11 +33,11 @@ Thực hiện theo hướng dẫn sau đây để tạo một Fleet và quản l
 
 **Bước 5:** Chọn **Region** chứa **Cluster** của bạn
 
-**Bước 6:** Chọn danh sách cluster bạn muốn thêm vào fleet và chọn **Register**.&#x20;
+**Bước 6:** Chọn danh sách cluster bạn muốn thêm vào fleet và chọn **Register**.
 
 **Bước 7:** Tại danh sách **Cluster** đã được thêm, bạn cần chỉ định một **cluster** làm **host**. Các **Cluster** còn lại sẽ là **member**. Ví dụ trong hình, tôi chỉ định cluster có tên demo-fleet-03 làm host và cluster có tên demo-cluster-04 làm member.
 
-**Bước 8:** Chọn loại **Traffic flow** mà bạn mong muốn, tùy thuộc vào loại **Network type** của các **cluster** bạn đã chọn mà loại **Traffic flow** bạn có thể chọn sẽ hiển thị tương ứng.&#x20;
+**Bước 8:** Chọn loại **Traffic flow** mà bạn mong muốn, tùy thuộc vào loại **Network type** của các **cluster** bạn đã chọn mà loại **Traffic flow** bạn có thể chọn sẽ hiển thị tương ứng.
 
 **Bước 9:** Chọn **Create**
 
@@ -113,7 +113,7 @@ kubectl apply -f glb-nginx.yaml
 
 Thay `glb-nginx.yaml` bằng tên file YAML của bạn.
 
-Lúc này, hệ thống sẽ tạo mới một vGLB trên hệ thống vGLB, bạn có thể kiểm tra vGLB được tạo tai [đây](https://glb.console.vngcloud.vn/glb/list).&#x20;
+Lúc này, hệ thống sẽ tạo mới một vGLB trên hệ thống vGLB, bạn có thể kiểm tra vGLB được tạo tai [đây](https://glb.console.vngcloud.vn/glb/list).
 
 <figure><img src="../../.gitbook/assets/image (944).png" alt=""><figcaption></figcaption></figure>
 
@@ -132,7 +132,7 @@ kubectl get vngcloudgloballoadbalancer -n default
 
 Bạn sẽ thấy danh sách các GLB đã tạo cùng với trạng thái của chúng.
 
-Ví dụ:&#x20;
+Ví dụ:
 
 ```yaml
 NAME            FLEET ID                                  GLB ID                                     ADDRESS
@@ -152,7 +152,7 @@ curl http://<GLB_Endpoint>
 
 Thay `<GLB_Endpoint>` bằng địa chỉ IP hoặc hostname lấy được từ bước trên.
 
-Ví dụ:&#x20;
+Ví dụ:
 
 ```sh
 curl http://vks-fl-25757a5-default-nginx-serv-33a00-53461-38e3a.glb.vngcloud.vn
@@ -188,24 +188,24 @@ ParsedHtml        : mshtml.HTMLDocumentClass
 RawContentLength  : 612
 ```
 
-Hoặc truy cập trực tiếp như ảnh:&#x20;
+Hoặc truy cập trực tiếp như ảnh:
 
 <figure><img src="../../.gitbook/assets/image (946).png" alt=""><figcaption></figcaption></figure>
 
 ### **Kiểm tra North-South Traffic với GLB**
 
-Giả sử, bạn đã khởi tạo Fleet với 2 cluster trên 2 region HAN, HCM và chọn Flow Traffic là GLB. Các bước chung để thực hiện thử nghiệm như sau:&#x20;
+Giả sử, bạn đã khởi tạo Fleet với 2 cluster trên 2 region HAN, HCM và chọn Flow Traffic là GLB. Các bước chung để thực hiện thử nghiệm như sau:
 
-1. Đầu tiên, trên Host Cluster, bạn cần deploy glb-nginx.yaml để tạo GLB qua lệnh:&#x20;
+1. Đầu tiên, trên Host Cluster, bạn cần deploy glb-nginx.yaml để tạo GLB qua lệnh:
 
 ```actionscript
 kubectl apply -f glb-nginx.yaml
 ```
 
-2. Tiếp theo, trên từng Cluster A, B bạn hãy tạo deploy service nginx nhưng bạn cần sửa lại output của service là Hello Nginx HAN, Hello Nginx HCM để dễ quan sát cách traffic được phân phối.&#x20;
+2. Tiếp theo, trên từng Cluster A, B bạn hãy tạo deploy service nginx nhưng bạn cần sửa lại output của service là Hello Nginx HAN, Hello Nginx HCM để dễ quan sát cách traffic được phân phối.
 
 * **Trên Cluster A thuộc Region HCM:**
-  * Tạo file `nginx-configmap.yaml` và `nginx.yaml` theo mấu,  triển khai chúng trên cluster A:
+  * Tạo file `nginx-configmap.yaml` và `nginx.yaml` theo mấu, triển khai chúng trên cluster A:
 
 ```yaml
 apiVersion: v1
@@ -268,7 +268,7 @@ kubectl apply -f nginx.yaml
 ```
 
 * **Trên Cluster B thuộc Region HAN:**
-  * Tạo file `nginx-configmap.yaml` và `nginx.yaml` theo mấu,  triển khai chúng trên cluster A:
+  * Tạo file `nginx-configmap.yaml` và `nginx.yaml` theo mấu, triển khai chúng trên cluster A:
 
 ```yaml
 apiVersion: v1
@@ -372,7 +372,7 @@ Hello Nginx HAN
 
 Thử nghiệm failover bằng cách tắt backend service trong một cluster và quan sát cách traffic được phân phối sang cluster khác trong Fleet:
 
-* Ví dụ trên Cluster thuộc Region HAN, tôi thực hiện scale deployment theo lệnh:&#x20;
+* Ví dụ trên Cluster thuộc Region HAN, tôi thực hiện scale deployment theo lệnh:
 
 ```actionscript
 kubectl scale deployment nginx-app --replicas=0 -n default
@@ -443,7 +443,7 @@ Khi không còn cần sử dụng Fleet, bạn có thể xóa nó bằng cách:
 
 **Bước 3:** Nhấn **"Delete"** và xác nhận.
 
-<figure><img src="/broken/files/kJhR4poBmReF4GM5z8DH" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (464).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**

@@ -37,8 +37,7 @@ Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, n�
 **Cài đặt VNGCloud LoadBalancer Controller**
 
 * Cài đặt Helm phiên bản từ 3.0 trở lên. Tham khảo tại [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) để biết cách cài đặt.
-
-- Thay thế thông tin ClientID, Client Secret và ClusterID của cụm K8S của bạn và tiếp tục chạy:
+* Thay thế thông tin ClientID, Client Secret và ClusterID của cụm K8S của bạn và tiếp tục chạy:
 
 ```bash
 helm install vngcloud-load-balancer-controller oci://vcr.vngcloud.vn/81-vks-public/vks-helm-charts/vngcloud-load-balancer-controller \
@@ -183,7 +182,7 @@ Sau khi bạn đã thực hiện triển khai Ingress , Chúng tôi sẽ tự đ
 
 Ví dụ:
 
-<figure><img src="/broken/files/VmPeEh5ibZuW5sR39hfg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vks_portal_l7.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Chú ý:
@@ -392,4 +391,4 @@ Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao 
 
 Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.129/](http://180.93.181.129/)
 
-<figure><img src="/broken/files/6uVi1VQ9LkTiSOt4WBF8" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vks_nginx_l7.png" alt=""><figcaption></figcaption></figure>

@@ -8,7 +8,7 @@ description: >-
 
 ## 1. Tải và cài đặt **rclone** theo hướng dẫn sau:
 
-* Bạn thực hiện tải Rclone qua link:  [https://rclone.org/downloads/](https://rclone.org/downloads/).
+* Bạn thực hiện tải Rclone qua link: [https://rclone.org/downloads/](https://rclone.org/downloads/).
 
 ## 2. Tạo file chứng thực rclone.conf theo mẫu sau:
 
@@ -26,7 +26,7 @@ endpoint = https://han02.vstorage.vngcloud.vn
 ## 3. Thực hiện mount
 
 * Tiếp theo, bạn có thể sử dụng Rclone với CMD hoặc PowerShell
-  *   Để list danh sách object trong một bucket, hãy sử dụng lệnh:&#x20;
+  *   Để list danh sách object trong một bucket, hãy sử dụng lệnh:
 
       ```
       C:\Users\stackops\Downloads\rclone.exe ls vstorage:[bucket_name]
@@ -46,7 +46,7 @@ endpoint = https://han02.vstorage.vngcloud.vn
 
 * Nếu gặp lỗi thiếu gói winfsp như hình dưới, bạn có thể tải thêm gói tại link này [https://github.com/billziss-gh/winfsp/releases/tag/v1.4.19049](https://github.com/billziss-gh/winfsp/releases/tag/v1.4.19049)
 
-<figure><img src="/broken/files/1fsoKVuCGVFP21whOlFh" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (457).png" alt=""><figcaption></figcaption></figure>
 
 * Bạn không cần phải tạo sẵn đường dẫn local\_path trên máy local khi tiến hành mount.
 * Rclone không hỗ trợ mode chạy ngầm (background mode) nên bạn không được đóng cmd trong quá trình sử dụng.

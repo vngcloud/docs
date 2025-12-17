@@ -6,9 +6,9 @@
 
 ## Chi tiết
 
-Hiện tại, vCDN đang hỗ trợ bạn kết nối trực tiếp đến origin là Object Storage thuộc chuẩn S3-compatible. Để thực hiện kết nối, bạn cần nhập các thông tin, bao gồm:&#x20;
+Hiện tại, vCDN đang hỗ trợ bạn kết nối trực tiếp đến origin là Object Storage thuộc chuẩn S3-compatible. Để thực hiện kết nối, bạn cần nhập các thông tin, bao gồm:
 
-<figure><img src="/broken/files/RkD9wOASV2WIOzgjnk1Y" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 * **Access key:** Access key được lấy từ hệ thống Object Storage của bạn.
 * **Secret key:** Secret key tương ứng với Access key đã nhập bên trên.

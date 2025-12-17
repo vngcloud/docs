@@ -62,14 +62,11 @@ sudo ./filebeat.sh <path-to-file-log>
 Để thực hiện thống kê log bằng Dashboard, hãy làm theo hướng dẫn bên dưới:
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Chọn **Dashboard.**
-2. Chọn **Create a Dashboard.**&#x20;
+2. Chọn **Create a Dashboard.**
 3. Trong màn hình dashboard details, chọn **Add a widget ⇒** chọn **Log** và chỉnh sửa query theo nhu cầu của bạn.
 
-<figure><img src="/broken/files/OkKGNEtoWufeDePWhsJV" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (459).png" alt=""><figcaption></figcaption></figure>
 
 4. Bạn có thể thêm, xoá, chỉnh sửa hoặc thay đổi vị trí các widget để phù hợp.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
-
-
-
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>

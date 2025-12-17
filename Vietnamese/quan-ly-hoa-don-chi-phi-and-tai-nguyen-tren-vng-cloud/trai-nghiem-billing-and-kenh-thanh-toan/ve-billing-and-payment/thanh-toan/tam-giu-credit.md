@@ -7,13 +7,13 @@ Tại VNG Cloud Service, có một số tài nguyên / dịch vụ đặc thù c
 * Không thể tính giá thành sử dụng tài nguyên ngay tại thời điểm phát sinh
 * Giá tiền sử dụng tài nguyên chỉ có thể được tính dựa trên sử dụng thực tế của người dùng.
 
-Do đó, người dùng trả trước không thể thực hiện thanh toán chi phí để sử dụng các tài nguyên đặc biệt (có thể kể đến như dịch vụ vContainer) này ngay tại thời điểm khởi tạo.&#x20;
+Do đó, người dùng trả trước không thể thực hiện thanh toán chi phí để sử dụng các tài nguyên đặc biệt (có thể kể đến như dịch vụ vContainer) này ngay tại thời điểm khởi tạo.
 
 Nhận thấy nhu cầu sử dụng các tài nguyên / dich vụ trả sau của người dùng trả trước tăng cao, VNG Cloud Service cho ra đời tính năng **Tạm giữ Credit (Hold Credit):**
 
 * **Đối tượng áp dụng**:
   * Người dùng trả trước
-* **Tài nguyên / Dịch vụ áp dụng**:&#x20;
+* **Tài nguyên / Dịch vụ áp dụng**:
   * Hiên tại đang hỗ trợ các dịch vụ vContainer, Snapshot, Repository (vCR), Bandwidth, GLB
 * **Nguồn tiền**:
   * VNG Cloud Credit
@@ -25,14 +25,14 @@ Nhận thấy nhu cầu sử dụng các tài nguyên / dich vụ trả sau củ
     * **Bước 1:** Truy cập vào portal của VNGCloud
     * **Bước 2:** Chọn vào phần hiển thị thông tin credit như hình bên dưới. Tại đây, bạn sẽ nhìn thấy phần credit đang được holding bởi VNG Cloud.
 
-<figure><img src="/broken/files/f6BUX9vvn8EntO27SmOn" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Xem thong tin hold credit (1).png" alt=""><figcaption></figcaption></figure>
 
 * Hệ thống cung cấp tài nguyên theo cấu hình cho người dùng
 * Gửi mail thông báo thông tin tài nguyên (tùy vào đặc thù từng loại tài nguyên mà sẽ có email thông báo hoặc không)
 
 ## Các dịch vụ áp dụng <a href="#tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s" id="tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s"></a>
 
-### 1. Dịch vụ/sản phẩm vContainer  <a href="#tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s" id="tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s"></a>
+### 1. Dịch vụ/sản phẩm vContainer <a href="#tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s" id="tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s"></a>
 
 Sau khi khởi tạo tài nguyên thành công, cứ mỗi cuối ngày, hệ thống sẽ tự động tính lại số tiền sử dụng thực tế của ngày hôm đó và tiến hành tạm giữ số credit cần có để sử dụng dịch vụ trong 3 ngày tiếp theo. Tham khảo ví dụ sau:
 
@@ -134,19 +134,19 @@ Giả sử kỳ đối đối soát sẽ được chốt vào ngày cuối cùng
 
 * **Địa chỉ IP 103.245.251.6**
 
-| Thời gian                                                          | Usage ghi nhận                      | Usage tính phí | Số credit tạm giữ                           |
-| ------------------------------------------------------------------ | ----------------------------------- | -------------- | ------------------------------------------- |
-| Ngày 10 của tháng (là ngày đầu tiên trong tháng phát sinh sử dụng) | 5,56 GB                             | 5 GB           | 5,000 credit (1,000 VND \* 5GB)             |
-| Ngày 15 của tháng                                                  | dùng thêm 8,25 GB ->  tổng 13,81 GB | 13 GB          | 13,000 credit (1,000 VND \* (8+5) GB)       |
-| Ngày 17 của tháng                                                  | dùng thêm 3GB -> tổng 16,81 GB      | 16 GB          | 16,000 credit (1,000 VND \* (5 + 8 + 3) GB) |
+| Thời gian                                                          | Usage ghi nhận                     | Usage tính phí | Số credit tạm giữ                           |
+| ------------------------------------------------------------------ | ---------------------------------- | -------------- | ------------------------------------------- |
+| Ngày 10 của tháng (là ngày đầu tiên trong tháng phát sinh sử dụng) | 5,56 GB                            | 5 GB           | 5,000 credit (1,000 VND \* 5GB)             |
+| Ngày 15 của tháng                                                  | dùng thêm 8,25 GB -> tổng 13,81 GB | 13 GB          | 13,000 credit (1,000 VND \* (8+5) GB)       |
+| Ngày 17 của tháng                                                  | dùng thêm 3GB -> tổng 16,81 GB     | 16 GB          | 16,000 credit (1,000 VND \* (5 + 8 + 3) GB) |
 
 * **Địa chỉ IP 116.118.95.65**
 
-| Thời gian                                                         | Usage ghi nhận                      | Usage tính phí | Số credit tạm giữ                           |
-| ----------------------------------------------------------------- | ----------------------------------- | -------------- | ------------------------------------------- |
-| Ngày 1 của tháng (là ngày đầu tiên trong tháng phát sinh sử dụng) | 5 GB                                | 5 GB           | 5,000 credit (1,000 VND \* 5GB)             |
-| Ngày 15 của tháng                                                 | dùng thêm 7,75 GB ->  tổng 12,75 GB | 12 GB          | 12,000 credit (1,000 VND \* (7+5) GB)       |
-| Ngày 20 của tháng                                                 | dùng thêm 3GB -> tổng 15,75 GB      | 15 GB          | 15,000 credit (1,000 VND \* (5 + 7 + 3) GB) |
+| Thời gian                                                         | Usage ghi nhận                     | Usage tính phí | Số credit tạm giữ                           |
+| ----------------------------------------------------------------- | ---------------------------------- | -------------- | ------------------------------------------- |
+| Ngày 1 của tháng (là ngày đầu tiên trong tháng phát sinh sử dụng) | 5 GB                               | 5 GB           | 5,000 credit (1,000 VND \* 5GB)             |
+| Ngày 15 của tháng                                                 | dùng thêm 7,75 GB -> tổng 12,75 GB | 12 GB          | 12,000 credit (1,000 VND \* (7+5) GB)       |
+| Ngày 20 của tháng                                                 | dùng thêm 3GB -> tổng 15,75 GB     | 15 GB          | 15,000 credit (1,000 VND \* (5 + 7 + 3) GB) |
 
 Lúc này, tổng số credit tạm giữ dựa trên usage của các IP sử dụng băng thông như sau:
 
@@ -156,7 +156,7 @@ Lúc này, tổng số credit tạm giữ dựa trên usage của các IP sử d
 
 ### 6. Dịch vụ GLB <a href="#tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit" id="tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit"></a>
 
-GLB được tính giá dựa trên số lượng Connection và lượng Data. Đối với người dùng trả trước, hệ thống sẽ thực hiện hold credit dựa trên usage hiện tại cho 3 ngày kế tiếp, với người dùng trả sau sẽ thực hiện thanh toán vào đầu tháng kế tiếp.&#x20;
+GLB được tính giá dựa trên số lượng Connection và lượng Data. Đối với người dùng trả trước, hệ thống sẽ thực hiện hold credit dựa trên usage hiện tại cho 3 ngày kế tiếp, với người dùng trả sau sẽ thực hiện thanh toán vào đầu tháng kế tiếp.
 
 Cụ thể:
 

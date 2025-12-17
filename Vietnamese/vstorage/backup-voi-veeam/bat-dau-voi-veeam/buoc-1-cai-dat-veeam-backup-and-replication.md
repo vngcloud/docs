@@ -23,9 +23,9 @@
 
 <figure><img src="../../../.gitbook/assets/image (405).png" alt="" width="465"><figcaption></figcaption></figure>
 
-2. Nhấn chọn "**Install Veeam Backup & Replication**"&#x20;
+2. Nhấn chọn "**Install Veeam Backup & Replication**"
 
-<figure><img src="/broken/files/q3rbs1wVxiDqZvqDt9hT" alt="" width="470"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (64).png" alt="" width="470"><figcaption></figcaption></figure>
 
 3. Phần mềm kiểm tra, nếu thiết bị đang cài đã cài Veeam trước đó thì có thể Repair hoặc Remove Veeam, nếu thiết bị chưa cài Veeam thì đến bước 4.
 
