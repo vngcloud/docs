@@ -1,7 +1,5 @@
 # Cập nhật thông tin tài khoản
 
-
-
 ## **Cập nhật thông tin tài khoản** <a href="#capnhatthongtintaikhoan-capnhatthongtintaikhoan" id="capnhatthongtintaikhoan-capnhatthongtintaikhoan"></a>
 
 **Bước 1:** Chọn chức năng “**Cập nhật thông tin tài khoản**”
@@ -10,14 +8,14 @@
 
 **Bước 2:** Cập nhật thông tin tài khoản
 
-<figure><img src="/broken/files/QnjFP5K4wWbMlbpEgYub" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 * Những ô có dấu **\*** bắt buộc phải nhập
-* Sau khi nhập xong, chọn xác nhận vào ô, và nhập mã bảo vệ&#x20;
+* Sau khi nhập xong, chọn xác nhận vào ô, và nhập mã bảo vệ
 
 **Bước 3:** Lưu thông tin tài khoản
 
-* Nhấn chọn vào biểu tượng   để kết thúc quá trình cập nhật thông tin ![](<../.gitbook/assets/image (189).png>)
+* Nhấn chọn vào biểu tượng để kết thúc quá trình cập nhật thông tin ![](<../.gitbook/assets/image (189).png>)
 * Nhấn chọn "**Tôi đã hiểu và muốn tiếp tục**". Bạn sẽ nhận được thông báo cập nhật tài khoản thành công tương tự như hình
 
 ***
@@ -44,11 +42,9 @@ Nhấn vào "**Tôi đã hiểu và tiếp tục**". Màn hình tiếp theo tư�
 
 Nhấn chọn " Đóng", màn hình tiếp theo sẽ như sau
 
-&#x20;
-
 <figure><img src="../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
 
-Trong vòng 3 ngày, bạn có thể hủy yêu cầu rút lại sự đồng ý bằng cách chọn chức năng " Hủy yêu cầu rút lại sự đồng ý". Nếu bạn không hủy yêu cầu, VNG Cloud sẽ thực hiện xóa tài khoản của bạn đồng thời tuân thủ quy định lưu trữ dữ liệu.&#x20;
+Trong vòng 3 ngày, bạn có thể hủy yêu cầu rút lại sự đồng ý bằng cách chọn chức năng " Hủy yêu cầu rút lại sự đồng ý". Nếu bạn không hủy yêu cầu, VNG Cloud sẽ thực hiện xóa tài khoản của bạn đồng thời tuân thủ quy định lưu trữ dữ liệu.
 
 ***
 
@@ -68,4 +64,4 @@ Trong trường hợp cần xóa tài khoản, bạn cần thực hiện theo th
 
 Nhập mã bảo vệ và chọn "**Xóa tài khoản**"
 
-Trong vòng 3 ngày, bạn có thể hủy yêu cầu xóa tài khoản bằng cách chọn chức năng " Hủy yêu cầu xóa tài khoản". Nếu bạn không hủy yêu cầu, VNG Cloud sẽ thực hiện xóa tài khoản của bạn đồng thời tuân thủ quy định lưu trữ dữ liệu.&#x20;
+Trong vòng 3 ngày, bạn có thể hủy yêu cầu xóa tài khoản bằng cách chọn chức năng " Hủy yêu cầu xóa tài khoản". Nếu bạn không hủy yêu cầu, VNG Cloud sẽ thực hiện xóa tài khoản của bạn đồng thời tuân thủ quy định lưu trữ dữ liệu.
