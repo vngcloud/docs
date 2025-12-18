@@ -27,9 +27,9 @@ Tài liệu này nhằm hướng dẫn khách hàng:
 
 ·       Sử dụng pfSense như một Internet Gateway.
 
-III. Các bước thực hiện:
+## III. Các bước thực hiện:
 
-1. Standalone Mode (Single Firewall)
+**1.Standalone Mode (Single Firewall)**
 
 Đặc điểm Standalone Mode:
 
@@ -45,15 +45,15 @@ III. Các bước thực hiện:
 * Single Point of Failure (SPOF)
 * Downtime khi bảo trì hoặc restart firewall
 
-**Luồng traffic:** Internet → VIP (157.20.200.185) → Firewall VM (NAT + Filter) → Servers (192.168.2.7, 192.168.2.5)
+**Luồng traffic:** Internet → VIP (157.20.200.185) → Firewall VM (NAT + Filter) → Server 1 (192.168.2.7), Server 2 (192.168.2.5)
 
-Bước 1: Tiến hành khởi tạo Virtual IP Address trên portal VNG Cloud
+**Bước 1: Tiến hành khởi tạo Virtual IP Address trên portal VNG Cloud**
 
 Truy cập vào [vServer Portal - Create-virtual-ip-address](https://hcm-3.console.vngcloud.vn/vserver/network/virtual-ip-address), chọn Virtual IP Address type là Public Market Place sau đó điền các thông tin theo yêu cầu
 
 <figure><img src=".gitbook/assets/image (466).png" alt=""><figcaption></figcaption></figure>
 
-Bước 2: Tiến hành allow address pair cho VIP với External IP Marketplace
+**Bước 2: Tiến hành allow address pair cho VIP với External IP Marketplace**
 
 Sau khi tạo xong VIP dạng public marketplace khách hàng tiến hành thực hiện allow address pair bằng cách chọn Add Address Pair Interface để hiển thị pop-up và chọn External IP Marketplace của Pfsense
 
@@ -65,7 +65,7 @@ Kiểm tra đã allow address thành công hay chưa
 
 <figure><img src=".gitbook/assets/image (476).png" alt=""><figcaption></figcaption></figure>
 
-Bước 3: Tiến hành khởi tạo VIP trong pfsense
+**Bước 3: Tiến hành khởi tạo VIP trong pfsense**
 
 Truy cập vào Pfsense vào Firewall -> Virtual IPs sau đó nhấn vào nút Add
 
@@ -79,7 +79,7 @@ Kiểm tra VIP trong pfsense
 
 <figure><img src=".gitbook/assets/image (483).png" alt=""><figcaption></figcaption></figure>
 
-Bước 4: Tạo rule NAT cho IP/Subnet ra internet theo IP chỉ định
+**Bước 4: Tạo rule NAT cho IP/Subnet ra internet theo IP chỉ định**
 
 1. Chuyển Mode Manual Outbound NAT
 
@@ -97,7 +97,9 @@ Server (192.168.2.5) đứng sau pfsense: Rule đi internet với Virtual IP Add
 
 <figure><img src=".gitbook/assets/image (494).png" alt=""><figcaption></figcaption></figure>
 
-Bước 4: Truy cập vào 2 server (192.168.2.7, 192.168.2.5) và sử dụng curl ifconfig.me để kiểm tra kết quả
+**Bước 5: Kiểm tra**
+
+Truy cập vào 2 server (192.168.2.7, 192.168.2.5) và sử dụng curl ifconfig.me để kiểm tra kết quả
 
 <figure><img src=".gitbook/assets/image (543).png" alt=""><figcaption></figcaption></figure>
 
@@ -109,7 +111,7 @@ Lúc này server (192.168.2.7, 192.168.2.5) đã ra được internet với Virt
 
 <figure><img src=".gitbook/assets/image (541).png" alt=""><figcaption></figcaption></figure>
 
-2. **High Availability (HA) Mode (2+ Firewall VM)**
+**2.High Availability (HA) Mode (2+ Firewall VM)**
 
 **a. Đặc điểm:**
 
@@ -124,7 +126,7 @@ Lúc này server (192.168.2.7, 192.168.2.5) đã ra được internet với Virt
 
 **Ưu điểm:**
 
-* Server chính die → VIP tự động chuyển sang server backup
+* Firewall chính die → VIP tự động chuyển sang Firewall backup
 * Zero downtime hoặc downtime tối thiểu (vài giây)
 
 **Cấu hình phổ biến:**
@@ -134,15 +136,72 @@ Lúc này server (192.168.2.7, 192.168.2.5) đã ra được internet với Virt
 
 Hiện tại Virtual IP Address cho vMarketplace đang hỗ trợ cấu hình **Active-Passive**
 
+**Luồng traffic:** Internet → VIP (157.20.200.185) → Firewall VM 1 (NAT + Filter), Firewall VM 2 (NAT + Filter) → Server 1 (192.168.2.7), Server 2 (192.168.2.5)
 
+**Các bước thực hiện:**
 
+**Bước 1: Chuẩn bị Virtual IP Address và 2 Firewall pfsense, thực hiện pair và add Virtual IP Address, thêm rule để server nội bộ ra internet như Bước 1, Bước 2, Bước 3, Bước 4 ở hướng dẫn mode standalone**
 
+Lưu ý: Virtual IP Address phải Add Address pair với cả 2 external interface của 2 firewall pfsense
 
+<figure><img src=".gitbook/assets/image (545).png" alt=""><figcaption></figcaption></figure>
 
+**Bước 2: Trên portal vServer, vào Firewall VM detail và Add thêm 1 internal interface vào cả 2 firewall pfsense để làm interface HA**
 
+<figure><img src=".gitbook/assets/image (546).png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src=".gitbook/assets/image (585).png" alt=""><figcaption></figcaption></figure>
 
+**Bước 3: Config chân interface HA cho 2 firewall pfsense**&#x20;
 
+Vào webGUI pfsense, assignment chân interface vừa add từ vServer portal, và config như sau
 
+IPv4 Address là IP của chân interface HA, lấy từ portal vServer
 
+<figure><img src=".gitbook/assets/image (592).png" alt=""><figcaption></figcaption></figure>
+
+Làm tương tự với firewall pfsense còn lại.
+
+**Bước 4: Thêm rule cho interface HA để allow synchronize configuration giữa 2 firewall pfsense**
+
+Trên webGUI pfsense, vào Firewall -> Rules -> SYNC (hoặc tên interface HA) -> Add
+
+<figure><img src=".gitbook/assets/image (594).png" alt=""><figcaption></figcaption></figure>
+
+Tiến hành config rule như sau
+
+<figure><img src=".gitbook/assets/image (600).png" alt=""><figcaption></figcaption></figure>
+
+Thực hiện tương tự với backup firewall còn lại.
+
+**Bước 5: Config HA (chỉ trên Master firewall)**
+
+Trên webGUI pfsense, vào System -> High Availability
+
+Config như hình bên dưới:
+
+Lưu ý:
+
+* pfsync Synchronize Peer IP, Synchronize Config to IP: nhập địa chỉ IP chân interface HA của backup pfsense.
+* Remote System Username, Remote System Password: nhập username/password của backup pfsense (bắt buộc là account admin)
+* Select options to sync: chọn các option mà khách hàng muốn synchronize qua backup pfsense
+
+<figure><img src=".gitbook/assets/image (654).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (660).png" alt=""><figcaption></figcaption></figure>
+
+**Bước 6: Kiểm tra**
+
+Trên webGUI pfsense, vào Status -> CARP (failover)
+
+* Trên Master firewall pfsense
+
+<figure><img src=".gitbook/assets/image (696).png" alt=""><figcaption></figcaption></figure>
+
+* Trên Backup firewall pfsense
+
+<figure><img src=".gitbook/assets/image (710).png" alt=""><figcaption></figcaption></figure>
+
+Việc cấu hình CARP Virtual IP trong pfsense HA nhằm mục đích tạo ra một địa chỉ IP ảo có thể được chia sẻ giữa các thiết bị trong cụm HA.\
+Khi một thiết bị hoặc tường lửa chính (Master) gặp sự cố, CARP cho phép địa chỉ IP ảo tự động chuyển từ thiết bị gặp sự cố sang thiết bị dự phòng (Backup).
 
