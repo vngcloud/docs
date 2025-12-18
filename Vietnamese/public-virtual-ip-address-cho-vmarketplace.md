@@ -97,6 +97,14 @@ Server (192.168.2.5) đứng sau pfsense: Rule đi internet với Virtual IP Add
 
 <figure><img src=".gitbook/assets/image (494).png" alt=""><figcaption></figcaption></figure>
 
+4. **Tạo Route table**&#x20;
+
+Chọn VPC ID là VPC đang chứa firewall pfsense và servers nội bộ
+
+Thêm route rule với Destination: 0.0.0.0/0 (internet), Targer: 192.168.2.4 (IP internal interface của pfsense)
+
+<figure><img src=".gitbook/assets/image (711).png" alt=""><figcaption></figcaption></figure>
+
 **Bước 5: Kiểm tra**
 
 Truy cập vào 2 server (192.168.2.7, 192.168.2.5) và sử dụng curl ifconfig.me để kiểm tra kết quả
