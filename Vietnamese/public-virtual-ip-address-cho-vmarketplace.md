@@ -93,7 +93,7 @@ Kiểm tra VIP trong pfSense
 
 Tạo rule theo yêu cầu:
 
-Server (192.168.2.5) đứng sau pfSense: Rule đi internet với Virtual IP Address 157.20.200.185
+Server 1 (192.168.2.7), Server 2 (192.168.2.5) đứng sau pfSense: Rule đi internet với Virtual IP Address 157.20.200.185
 
 <figure><img src=".gitbook/assets/image (494).png" alt=""><figcaption></figcaption></figure>
 
