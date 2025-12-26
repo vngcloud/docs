@@ -37,7 +37,7 @@ Dữ liệu có thể được đồng bộ từ S3 vào Network Volume theo ph�
 
 #### 2.1 Manual Sync dữ liệu Notebook
 
-Khi tạo notebook và network volume được chỉ định, thông tin config network volume được lưu vào Notebook. Từ đây bạn có thể sử dụng built-in tool aiplatform-utilsđể tương tác với network volume
+Khi tạo notebook và network volume được chỉ định, thông tin config network volume được lưu vào Notebook. Từ đây bạn có thể sử dụng built-in tool aiplatform-utils để tương tác với network volume
 
 Tham khảo [aiplatform-util](https://github.com/vngcloud/aiplatform-util)
 
