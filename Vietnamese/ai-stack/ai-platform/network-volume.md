@@ -33,21 +33,26 @@
 
 ### Bước 2: Sync dữ liệu từ S3 vào Network Volume
 
-Dữ liệu có thể được đồng bộ từ S3 vào Network Volume theo hai phương thức: **tự động (auto-sync)** hoặc **thủ công (manual sync)**.
+Dữ liệu có thể được đồng bộ từ S3 vào Network Volume theo phương thức: **thủ công (manual sync)**.
 
-#### 2.1 Manual Sync Dữ liệu khi Notebook vẫn đang chạy
+#### 2.1 Manual Sync dữ liệu Notebook
 
-Nếu bạn không muốn tắt notebook nhưng vẫn muốn cập nhật dữ liệu thủ công, có thể sử dụng các API sync nội bộ từ terminal của notebook:
+Khi tạo notebook và network volume được chỉ định, thông tin config network volume được lưu vào Notebook. Từ đây bạn có thể sử dụng built-in tool aiplatform-utilsđể tương tác với network volume
+
+Tham khảo [aiplatform-util](https://github.com/vngcloud/aiplatform-util)
 
 ```bash
-#kéo dữ liệu từ S3 về Notebook
-curl -X POST localhot:8080/pull
+# List files in your network volume
+aiplatform-util nv ls
 
-#đẩy data từ Notebook lên S3 (ghi đè dữ liệu cũ)
-curl -X POST localhot:8080/finalize
+# Download files to your workspace
+aiplatform-util nv pull
+
+# Upload your work to network volume
+aiplatform-util nv push
 ```
 
-> Lưu ý: Cần thực hiện lệnh này từ **bên trong notebook**, nơi đang mount Network Volume.
+> Lưu ý: Cần thực hiện lệnh này từ **bên trong notebook,** nơi đang chứa thông tin config của network volume (nếu network volume reset key, notebook sẽ nhận thông tin key mới sau 1-5p)
 
 #### 2.2 Sử dụng S3 Key với công cụ CLI
 
@@ -97,7 +102,7 @@ Gắn một Network Volume vào phiên bản notebook này. Điều này cho ph�
     * Lưu ý: Chỉ cho phép các ký tự chữ cái (a-z, A-Z, 0-9, '\_', '-', '+', '.'). Độ dài nhập liệu phải nhỏ hơn 256 ký tự.
   * Block storage size:
     * Nhập dung lượng _dung lượng lưu trữ tạm (ephemeral block storage) để chứa_ OS và bản sao dữ liệu từ network volume.
-    * Chọn kích thước đủ lớn so với dữ liệu cần dùng từ 20 đến 1000. (nếu chọn size blockstorage bé hơn hoặc bằng size network volume hiện tại thì quá trình tạo notebook sẽ bị lỗi (bạn có thể xoá và tạo lại notebook khác)
+    * Chọn kích thước đủ lớn so với dữ liệu cần dùng từ 20 đến 1000. (nếu chọn size blockstorage bé hơn hoặc bằng size network volume hiện tại thì quá trình tạo notebook sẽ bị lỗi
 
 <figure><img src="../../.gitbook/assets/image (1079).png" alt="" width="337"><figcaption></figcaption></figure>
 
