@@ -11,9 +11,7 @@ description: >-
 
 Welcome to VNG Cloud's user guide page. Here you can easily find useful information about how to get start with VNG Cloud's products and services.
 
-<figure><img src=".gitbook/assets/VNG Cloud document.jpg" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src=".gitbook/assets/greennode cover.png" alt=""><figcaption></figcaption></figure>
 
 {% tabs %}
 {% tab title="Infrastructure as a Service " %}
@@ -33,11 +31,10 @@ Welcome to VNG Cloud's user guide page. Here you can easily find useful informat
 
 [VKS - Container management with Kubernetes](vks/)
 
-[vCDN: Optimal content delivery network ](vcdn/)
+[vCDN: Optimal content delivery network](vcdn/)
 {% endtab %}
 
 {% tab title="Software as a Service" %}
 [Veka.ai -Smart surveillance solution](vcloudcam.md)
 {% endtab %}
 {% endtabs %}
-
