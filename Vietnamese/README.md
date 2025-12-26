@@ -10,11 +10,7 @@ description: >-
 
 Chào mừng các bạn đến với trang hỗ trợ khách hàng của VNG Cloud. Tại đây các bạn có thể dễ dàng tìm thấy những thông tin hữu ích về các sản phẩm & dịch vụ của VNG Cloud.
 
-
-
-<figure><img src=".gitbook/assets/315615519_2319394748222909_5836880168315857009_n.jpg" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src=".gitbook/assets/greennode cover.png" alt=""><figcaption></figcaption></figure>
 
 {% tabs %}
 {% tab title="Infrastructure as a Service " %}
@@ -41,4 +37,3 @@ Chào mừng các bạn đến với trang hỗ trợ khách hàng của VNG Clo
 [Veka.ai - Giải pháp Camera trực tuyến](https://help.vcloudcam.vn/#/support-center)
 {% endtab %}
 {% endtabs %}
-
