@@ -581,6 +581,7 @@
   * [Báo cáo](vcdn/bao-cao.md)
   * [Bảo mật](vcdn/bao-mat/README.md)
     * [Quản lý Certificate](vcdn/bao-mat/quan-ly-certificate.md)
+* [vWAF](vwaf.md)
 * [vMonitor Platform](vmonitor/README.md)
   * [vMonitor Platform là gì](vmonitor-platform/vmonitor-platform-la-gi/README.md)
     * [vMonitor Platform Metric là gì?](vmonitor-platform/vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/README.md)
