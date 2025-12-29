@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🇻🇳 VNG Cloud Help Center](README.md)
+* [🇻🇳 Greennode Help Center](README.md)
 * [Giới thiệu chung](gioi-thieu-chung/README.md)
   * [Về VNG Cloud](gioi-thieu-chung/ve-vng-cloud.md)
   * [VNG Regions and Availability Zones](gioi-thieu-chung/vng-regions-and-availability-zones.md)
