@@ -11,7 +11,7 @@ Tài liệu này hướng dẫn cách sử dụng OCR API
 ### Submit OCR (upload file để tạo request)
 
 * **Method**: `POST`
-* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest`
+* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest`
 * **Headers**:
   * `Authorization: Bearer <API_KEY>`
   * `portal-user-id: <PORTAL_USER_ID>`
@@ -26,7 +26,7 @@ Tài liệu này hướng dẫn cách sử dụng OCR API
 #### Ví dụ
 
 ```bash
-curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest' \
+curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest' \
   --header 'Authorization: Bearer <API_KEY>' \
   --header 'portal-user-id: <PORTAL_USER_ID>' \
   --form 'flow="single"' \
@@ -45,7 +45,7 @@ Response sẽ chứa:
 ### Get OCR Result (dùng `request_id` để lấy text/data)
 
 * **Method**: `GET`
-* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/<request_id>`
+* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/<request_id>`
 * **Headers**:
   * `Authorization: Bearer <API_KEY>`
   * `portal-user-id: <PORTAL_USER_ID>`
@@ -53,7 +53,7 @@ Response sẽ chứa:
 #### Ví dụ
 
 ```bash
-curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/<request_id>' \
+curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/<request_id>' \
   --header 'Authorization: Bearer <API_KEY>' \
   --header 'portal-user-id: <PORTAL_USER_ID>'
 ```
@@ -72,10 +72,10 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_US
 ### Lấy bảng (TABLE)
 
 * **Method**: `GET`
-* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/table/<request_id>/<document_id>`
+* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/table/<request_id>/<document_id>`
 
 ```bash
-curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/table/<request_id>/<document_id>' \
+curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/table/<request_id>/<document_id>' \
   --header 'Authorization: Bearer <API_KEY>' \
   --header 'portal-user-id: <PORTAL_USER_ID>'
 ```
@@ -83,10 +83,10 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_US
 ### Lấy kết quả chữ ký
 
 * **Method**: `GET`
-* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/signature/<request_id>/<document_id>`
+* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/signature/<request_id>/<document_id>`
 
 ```bash
-curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/signature/<request_id>/<document_id>' \
+curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/signature/<request_id>/<document_id>' \
   --header 'Authorization: Bearer <API_KEY>' \
   --header 'portal-user-id: <PORTAL_USER_ID>'
 ```
@@ -96,10 +96,10 @@ note: document\_id nằm trong response của Get OCR Result
 ### Lấy kết quả con dấu
 
 * **Method**: `GET`
-* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/stamp/<request_id>/<document_id>`
+* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/stamp/<request_id>/<document_id>`
 
 ```bash
-curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/stamp/<request_id>/<document_id>' \
+curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/stamp/<request_id>/<document_id>' \
   --header 'Authorization: Bearer <API_KEY>' \
   --header 'portal-user-id: <PORTAL_USER_ID>'
 ```
@@ -107,10 +107,10 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_US
 ### Tải ảnh kết quả
 
 * **Method**: `GET`
-* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/file/<request_id>/<file_id>`
+* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/file/<request_id>/<file_id>`
 
 ```bash
-curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/file/<request_id>/<file_id>' \
+curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/file/<request_id>/<file_id>' \
   --header 'Authorization: Bearer <API_KEY>' \
   --header 'portal-user-id: <PORTAL_USER_ID>'
 ```
@@ -122,7 +122,7 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_US
 ### So sánh 2 ảnh chữ ký
 
 * **Method**: `POST`
-* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/compare/signature`
+* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/compare/signature`
 * **Body**: `multipart/form-data`
   * `doc_type`: "COMPARE\_SIGNATURE"
   * `file_type`: `IMAGE` hoặc `PDF`
@@ -131,7 +131,7 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_US
   * `compare_file`: file chữ ký 2
 
 ```bash
-curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/compare/signature' \
+curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/compare/signature' \
   --header 'Authorization: Bearer <API_KEY>' \
   --header 'portal-user-id: <PORTAL_USER_ID>' \
   --form 'doc_type="<COMPARE_SIGNATURE>"' \
@@ -144,11 +144,11 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_US
 ### Chuyển ảnh sang file Word (.docx)
 
 * **Method**: `POST`
-* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/image2docs`
+* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/image2docs`
 * **Response**: trả về file `.docx`
 
 ```bash
-curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/image2docs' \
+curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/image2docs' \
   --header 'Authorization: Bearer <API_KEY>' \
   --header 'portal-user-id: <PORTAL_USER_ID>' \
   --form 'doc_type="<IMAGE_TO_DOC>"' \
@@ -160,14 +160,14 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_US
 ### Kiểm tra gian lận tài liệu
 
 * **Method**: `POST`
-* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/document-frauds`
+* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/document-frauds`
 * **Body**: `multipart/form-data`
   * `doc_type`: `<DOCUMENT_FRAUD>`
   * `file_type`: `IMAGE`
   * `file`: file ảnh
 
 ```bash
-curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/document-frauds' \
+curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/document-frauds' \
   --header 'Authorization: Bearer <API_KEY>' \
   --header 'portal-user-id: <PORTAL_USER_ID>' \
   --form 'doc_type="<DOCUMENT_FRAUD>"' \
