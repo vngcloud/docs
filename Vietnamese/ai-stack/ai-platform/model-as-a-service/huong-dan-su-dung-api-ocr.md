@@ -1,4 +1,4 @@
-# OCR API Documentation
+# Hướng dẫn sử dụng API OCR
 
 Tài liệu này hướng dẫn cách sử dụng OCR API
 
