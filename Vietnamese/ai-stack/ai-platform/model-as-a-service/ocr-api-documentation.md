@@ -1,10 +1,4 @@
----
-description: Tài liệu này hướng dẫn cách sử dụng OCR API
----
-
-# OCR API Document
-
-## OCR API Document
+# OCR API Documentation
 
 Tài liệu này hướng dẫn cách sử dụng OCR API
 
