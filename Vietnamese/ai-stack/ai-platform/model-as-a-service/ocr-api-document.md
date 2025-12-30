@@ -91,7 +91,7 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORT
   --header 'portal-user-id: <PORTAL_USER_ID>'
 ```
 
-note: document\_id nằm trong response của Get OCR Result
+Note: document\_id nằm trong response của Get OCR Result
 
 ### Lấy kết quả con dấu
 
