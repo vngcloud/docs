@@ -117,66 +117,6 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORT
 
 ***
 
-### API bổ trợ
-
-### So sánh 2 ảnh chữ ký
-
-* **Method**: `POST`
-* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/compare/signature`
-* **Body**: `multipart/form-data`
-  * `doc_type`: "COMPARE\_SIGNATURE"
-  * `file_type`: `IMAGE` hoặc `PDF`
-  * `compare_file_type`: `IMAGE` hoặc `PDF`
-  * `file`: file chữ ký 1
-  * `compare_file`: file chữ ký 2
-
-```bash
-curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/compare/signature' \
-  --header 'Authorization: Bearer <API_KEY>' \
-  --header 'portal-user-id: <PORTAL_USER_ID>' \
-  --form 'doc_type="<COMPARE_SIGNATURE>"' \
-  --form 'file_type="IMAGE"' \
-  --form 'compare_file_type="IMAGE"' \
-  --form 'file=@"<SIGNATURE_1_PATH>"' \
-  --form 'compare_file=@"<SIGNATURE_2_PATH>"'
-```
-
-### Chuyển ảnh sang file Word (.docx)
-
-* **Method**: `POST`
-* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/image2docs`
-* **Response**: trả về file `.docx`
-
-```bash
-curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/image2docs' \
-  --header 'Authorization: Bearer <API_KEY>' \
-  --header 'portal-user-id: <PORTAL_USER_ID>' \
-  --form 'doc_type="<IMAGE_TO_DOC>"' \
-  --form 'file_type="IMAGE"' \
-  --form 'file=@"<IMAGE_PATH>"' \
-  --output output.docx
-```
-
-### Kiểm tra gian lận tài liệu
-
-* **Method**: `POST`
-* **URL**: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/document-frauds`
-* **Body**: `multipart/form-data`
-  * `doc_type`: `<DOCUMENT_FRAUD>`
-  * `file_type`: `IMAGE`
-  * `file`: file ảnh
-
-```bash
-curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORTAL_USER_ID>/greennode/idp/v1/ocr/ingest/document-frauds' \
-  --header 'Authorization: Bearer <API_KEY>' \
-  --header 'portal-user-id: <PORTAL_USER_ID>' \
-  --form 'doc_type="<DOCUMENT_FRAUD>"' \
-  --form 'file_type="IMAGE"' \
-  --form 'file=@"<IMAGE_PATH>"'
-```
-
-***
-
 ### Troubleshooting nhanh
 
 * `403 Forbidden`:
