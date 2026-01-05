@@ -14,7 +14,7 @@ Quý khách vui lòng xem tài liệu theo Link hướng dẫn [tại đây](../
 
 ### \[vCDN] Tôi có thể xem traffic sử dụng CDN của tôi không?
 
-VNGCloud cung cấp chart theo từng domain để xem traffic đang sử dụng. Click chọn vào từng domain để xem chi tiết
+GreenNode cung cấp chart theo từng domain để xem traffic đang sử dụng. Click chọn vào từng domain để xem chi tiết
 
 ### \[vCDN] Làm sao tôi xóa cache trên CDN?
 
@@ -26,7 +26,7 @@ Quý khách không thể xóa CDN domain mà quý khách chỉ có thể edit l�
 
 ### \[vCDN] Tôi muốn biết Range IP tương ứng với 2 domain (bskjv7x1zq.vcdn.com.vn và ggkiz9mkp.vcdn.com.vn)
 
-Hệ thống CDN của VNGCloud bao gồm nhiều range IP, để đảm bảo tính sẵn sàng cũng như dự phòng các vùng khác nhau phục vụ cho CDN, vì vậy không tồn tại một số range IP cụ thể cho riêng domain CDN nào.
+Hệ thống CDN của GreenNode bao gồm nhiều range IP, để đảm bảo tính sẵn sàng cũng như dự phòng các vùng khác nhau phục vụ cho CDN, vì vậy không tồn tại một số range IP cụ thể cho riêng domain CDN nào.
 
 ### \[vCDN] \[CDN/Live-Stream] tính tiền như thế nào, khi hết \[Volume] thì có bị \[disable] \[CDN] ngay luôn không?
 

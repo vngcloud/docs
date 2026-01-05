@@ -9,4 +9,4 @@ vCDN currently provides 4 services as follows:&#x20;
 * **VOD (Video on Demand)**: Use when there is a need to stream video. For example: Online movie streaming website
 * **Livestream**: Used for live presentation needs. For example: movies, sports, game shows, sales advertisements, etc.
 
-For regular Domectic (domestic) traffic, VNG currently does not guarantee speed for traffic from international sources. Customers can refer to the international vCDN service provided by VNGCloud for the best quality with international traffic or contact support@vng.com.vn for further instructions.
+For regular Domectic (domestic) traffic, VNG currently does not guarantee speed for traffic from international sources. Customers can refer to the international vCDN service provided by GreenNode for the best quality with international traffic or contact support@vng.com.vn for further instructions.

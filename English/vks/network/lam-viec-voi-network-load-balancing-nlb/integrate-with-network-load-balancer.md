@@ -1,10 +1,10 @@
 # Integrate with Network Load Balancer
 
-To integrate a Network Load Balancer with a Kubernetes cluster, you can use a Service with type [LoadBalancer](loadbalancerhttps://www.airplane.dev/blog/kubernetes-load-balancer) . When you create such a Service, VNGCloud LoadBalancer Controller will automatically create an NLB to forward traffic to pods on your [node](nhttps://www.airplane.dev/blog/kubernetes-load-balancer) . You can also use annotations to customize Network Load Balancer properties, such as port, protocol,...
+To integrate a Network Load Balancer with a Kubernetes cluster, you can use a Service with type [LoadBalancer](loadbalancerhttps://www.airplane.dev/blog/kubernetes-load-balancer) . When you create such a Service, GreenNode LoadBalancer Controller will automatically create an NLB to forward traffic to pods on your [node](nhttps://www.airplane.dev/blog/kubernetes-load-balancer) . You can also use annotations to customize Network Load Balancer properties, such as port, protocol,...
 
 ## Prepare <a href="#integratewithnetworkloadbalancer-chuanbi" id="integratewithnetworkloadbalancer-chuanbi"></a>
 
-* Create a Kubernetes cluster on VNGCloud, or use an existing cluster. Note: make sure you have downloaded the cluster configuration file once the cluster has been successfully initialized and accessed your cluster.
+* Create a Kubernetes cluster on GreenNode, or use an existing cluster. Note: make sure you have downloaded the cluster configuration file once the cluster has been successfully initialized and accessed your cluster.
 * Create or use a **service account** created on IAM and attach policy: **vLBFullAccess** , **vServerFullAccess** . To create a service account, go here [and](https://iam.console.vngcloud.vn/service-accounts) follow these steps:
   * Select " **Create a Service Account** ", enter a name for the Service Account and click **Next Step** to assign permissions to the Service Account
   * Find and select **Policy: vLBFullAccess and Policy: vServerFullAccess** , then click " **Create a Service Account** " to create Service Account, Policy: vLBFullAccess and Policy: vServerFullAccess created by GreenNode, you cannot delete these policies.
@@ -12,17 +12,17 @@ To integrate a Network Load Balancer with a Kubernetes cluster, you can use a Se
 
 ***
 
-## Create Service Account and install VNGCloud LoadBalancer Controller <a href="#exposemotservicethongquavlblayer4-khoitaoserviceaccountvacaidatvngcloudcontrollermanager" id="exposemotservicethongquavlblayer4-khoitaoserviceaccountvacaidatvngcloudcontrollermanager"></a>
+## Create Service Account and install GreenNode LoadBalancer Controller <a href="#exposemotservicethongquavlblayer4-khoitaoserviceaccountvacaidatvngcloudcontrollermanager" id="exposemotservicethongquavlblayer4-khoitaoserviceaccountvacaidatvngcloudcontrollermanager"></a>
 
 {% hint style="info" %}
 **Attention:**
 
-When you initialize the Cluster according to the instructions above, if you have not enabled the **Enable vLB Native Integration Driver** option , by default we will not pre-install this plugin into your Cluster. You need to manually create Service Account and install VNGCloud LoadBalancer Controller according to the instructions below. If you have enabled the **Enable vLB Native Integration Driver** option , then we have pre-installed this plugin into your Cluster, skip the Service Account Initialization step, install VNGCloud LoadBalancer Controller and continue following the instructions from Deploy once. Workload.
+When you initialize the Cluster according to the instructions above, if you have not enabled the **Enable vLB Native Integration Driver** option , by default we will not pre-install this plugin into your Cluster. You need to manually create Service Account and install GreenNode LoadBalancer Controller according to the instructions below. If you have enabled the **Enable vLB Native Integration Driver** option , then we have pre-installed this plugin into your Cluster, skip the Service Account Initialization step, install GreenNode LoadBalancer Controller and continue following the instructions from Deploy once. Workload.
 {% endhint %}
 
 <details>
 
-<summary>Instructions for creating Service Account and installing VNGCloud LoadBalancer Controller</summary>
+<summary>Instructions for creating Service Account and installing GreenNode LoadBalancer Controller</summary>
 
 **Initialize Service Account**
 
@@ -48,7 +48,7 @@ kubectl get sa -n kube-system | grep -i "cloud-controller-manager"
 kubectl delete sa cloud-controller-manager -n kube-system --force
 ```
 
-**Install VNGCloud LoadBalancer Controller**
+**Install GreenNode LoadBalancer Controller**
 
 * Install Helm version 3.0 or higher. Refer to [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) for instructions on how to install.
 * Add this repo to your cluster via the command:

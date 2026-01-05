@@ -20,7 +20,7 @@ Người dùng sẽ nhận được thông báo thiết lập chiết khấu cho
 
 _**Lưu ý:**_
 
-_Người dùng phải cân nhắc khi thiết lập mức giảm giá cho khách hàng so với mức gía được mua từ VNG Cloud_&#x20;
+_Người dùng phải cân nhắc khi thiết lập mức giảm giá cho khách hàng so với mức gía được mua từ GreenNode_&#x20;
 
 Để xem được giảm giá hiện hành được áp dụng cũng như giảm giá đang chờ kích hoạt, người dùng vào menu “Tài khoản”, chọn tài khoản cần xem&#x20;
 

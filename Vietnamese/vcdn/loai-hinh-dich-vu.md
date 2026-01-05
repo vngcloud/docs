@@ -9,4 +9,4 @@ vCDN hiện cung cấp 4 dịch vụ như sau:
 * **VOD (Video on Demand):** Sử dụng khi có nhu cầu stream video. Ví dụ : Web chiếu phim online
 * **Livestream:** Sử dụng cho nhu cầu trình chiếu (live-stream) trực tiếp. Ví dụ: phim ảnh, thể thao, game-show, quảng cáo bán hàng v..v.
 
-Đối với traffic Domectic (trong nước) thông thường, VNG hiện không cam kết tốc độ với traffic đến từ quốc tế. Quý khách hàng tham khảo thêm dịch vụ vCDN quốc tế mà VNGCloud cung cấp để có chất lượng tốt nhất với traffic quốc tế hoặc liên hệ support@vng.com.vn để được hướng dẫn thêm.
+Đối với traffic Domectic (trong nước) thông thường, VNG hiện không cam kết tốc độ với traffic đến từ quốc tế. Quý khách hàng tham khảo thêm dịch vụ vCDN quốc tế mà GreenNode cung cấp để có chất lượng tốt nhất với traffic quốc tế hoặc liên hệ support@vng.com.vn để được hướng dẫn thêm.

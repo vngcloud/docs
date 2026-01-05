@@ -24,7 +24,7 @@ _**Lưu ý:**_
 
 * _Email muốn thêm phải là tài khoản dịch vụ đã tồn tại trong hệ thống GreenNode(đã đăng ký tài khoản) và thỏa các điều kiện sau:_
   * _Tài khoản cần thêm không có số dư credit_
-  * _Tài khoản cần thêm không đang sử dụng dịch vụ VNG Cloud_
-  * _Tài khoản cần thêm không đang được hưởng chiết khấu của VNG Cloud_
-  * _Không đang trong giai đoạn POC dịch vụ VNG Cloud_
+  * _Tài khoản cần thêm không đang sử dụng dịch vụ GreenNode_
+  * _Tài khoản cần thêm không đang được hưởng chiết khấu của GreenNode_
+  * _Không đang trong giai đoạn POC dịch vụ GreenNode_
   * _Tài khoản cần thêm phải là tài khoản trả trước_

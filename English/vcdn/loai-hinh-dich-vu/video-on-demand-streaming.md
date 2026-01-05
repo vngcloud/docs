@@ -90,7 +90,7 @@ The vCDN system provides popular delivery standards, supports HTTPS protocol and
   *   **Multi Audio Selection URL Syntax (with ABR)** :
 
       ```
-      https://<CDN Domain>/<Đường dẫn tới file SMIL trên VNGCloud Storage/Origin>/index.m3u8
+      https://<CDN Domain>/<Đường dẫn tới file SMIL trên GreenNode Storage/Origin>/index.m3u8
       ```
 
 ***

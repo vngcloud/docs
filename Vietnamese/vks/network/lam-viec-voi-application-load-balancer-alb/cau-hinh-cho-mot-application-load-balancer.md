@@ -1,6 +1,6 @@
 # Cấu hình cho một Application Load Balancer
 
-Tại trang \[Ingress for an Application Load Balancer], chúng tôi đã hướng dẫn bạn cách thực hiện cài đặt VNGCloud LoadBalancer Controller và tạo ingress thông qua Ingress Yaml file. Sau đây là chi tiết các ý nghĩa các thông tin bạn có thể thiết lập cho một Ingress
+Tại trang \[Ingress for an Application Load Balancer], chúng tôi đã hướng dẫn bạn cách thực hiện cài đặt GreenNode LoadBalancer Controller và tạo ingress thông qua Ingress Yaml file. Sau đây là chi tiết các ý nghĩa các thông tin bạn có thể thiết lập cho một Ingress
 
 ### Annotation <a href="#configureforanapplicationloadbalancer-annotation" id="configureforanapplicationloadbalancer-annotation"></a>
 
@@ -43,7 +43,7 @@ Sử dụng các annotation dưới đây khi thực thiện tạo ingress để
 
 ### IngressClassName <a href="#configureforanapplicationloadbalancer-ingressclassname" id="configureforanapplicationloadbalancer-ingressclassname"></a>
 
-Các Ingress được cài đặt bởi các VNGCloud LoadBalancer Controller sẽ có thông tin IngressClassName = "vngcloud". Bạn không được thay đổi thông tin này.
+Các Ingress được cài đặt bởi các GreenNode LoadBalancer Controller sẽ có thông tin IngressClassName = "vngcloud". Bạn không được thay đổi thông tin này.
 
 ***
 

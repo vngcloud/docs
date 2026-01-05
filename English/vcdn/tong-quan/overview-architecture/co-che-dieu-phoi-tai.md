@@ -16,4 +16,4 @@ The vCDN Request Router system will decide to send back the best possible IP Ser
 
 For users of small ISPs such as CMC, SPT, SCTV, Netnam, GreenNode's POP traffic will be prioritized at Quang Trung Software Park because here GreenNode has performed direct peering to each ISP as above. . This ensures good service for all end users.
 
-**For regular Domectic (domestic) traffic, VNG currently does not guarantee speed for traffic from international sources. Customers can refer to the international vCDN service provided by VNGCloud for the best quality with international traffic or contact support@vng.com.vn for further instructions.**
+**For regular Domectic (domestic) traffic, VNG currently does not guarantee speed for traffic from international sources. Customers can refer to the international vCDN service provided by GreenNode for the best quality with international traffic or contact support@vng.com.vn for further instructions.**

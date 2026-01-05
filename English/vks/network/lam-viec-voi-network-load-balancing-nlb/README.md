@@ -2,7 +2,7 @@
 
 #### What is NLB? <a href="#workingwithnetworkloadbalancing-nlb-nlblagi" id="workingwithnetworkloadbalancing-nlb-nlblagi"></a>
 
-* **Network Load Balancer (NLB)** is a load balancer provided by VNGCloud that helps distribute network traffic to multiple back-end servers in a computer group (instance group). NLB operates at layer 4 of the OSI model, providing load balancing based on IP addresses and TCP/UDP ports. For more detailed information about NLB, please refer to \[How it works (NLB)]
+* **Network Load Balancer (NLB)** is a load balancer provided by GreenNode that helps distribute network traffic to multiple back-end servers in a computer group (instance group). NLB operates at layer 4 of the OSI model, providing load balancing based on IP addresses and TCP/UDP ports. For more detailed information about NLB, please refer to \[How it works (NLB)]
 
 **Model deployment**
 

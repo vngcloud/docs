@@ -84,15 +84,15 @@ Below is a demonstration of how to connect two LAN networks via the internet sec
 
 <figure><img src="../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>pfSense Firewall IPSec</p></figcaption></figure>
 
-## 2. Create a Local Site VPN (using VNGCloud VPN)
+## 2. Create a Local Site VPN (using GreenNode VPN)
 
 ### a. Create VPN
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>VNGCloud VPN creates</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>GreenNode VPN creates</p></figcaption></figure>
 
 ### b. Detail VPN
 
-<figure><img src="../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>VNGCloud VPN - Detail</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>GreenNode VPN - Detail</p></figcaption></figure>
 
 
 

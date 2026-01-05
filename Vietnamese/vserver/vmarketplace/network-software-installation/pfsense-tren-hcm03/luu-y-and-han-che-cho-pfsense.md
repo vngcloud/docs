@@ -14,4 +14,4 @@ Cuối cùng, nhấn _**Save**_ để lưu lại cấu hình.
 
 Bạn thực hiện lần lượt cho các Interfaces đang sử dụng.
 
-Nếu có khó khăn trong quá trình sử dụng, vui lòng liên hệ VNGCloud Support.
+Nếu có khó khăn trong quá trình sử dụng, vui lòng liên hệ GreenNode Support.

@@ -15,7 +15,7 @@ GreenNode's Object Download service helps businesses: optimize costs, ensure fle
 ## **Data Distribution Mechanism** <a href="#objectdownload-cochephanphoidulieu-1" id="objectdownload-cochephanphoidulieu-1"></a>
 
 * **Input data** :
-  * **VNGCloud's Origin Gateway** system will connect to **the customer's origin server** or storage to retrieve the content requested from the client. This content can be in any format, for example: , , images, fonts ( ), etc.`.js.css.tff`
+  * **GreenNode's Origin Gateway** system will connect to **the customer's origin server** or storage to retrieve the content requested from the client. This content can be in any format, for example: , , images, fonts ( ), etc.`.js.css.tff`
   * If the content is large, **Origin Gateway** will split the content into small requests (5MB) and download them simultaneously (byte-range download). This helps to speed up the download and serve the user as soon as the first data is received.
   * Data from **the Origin Gateway** will then be distributed to **Edge servers** to serve users.
 * **Output data** :

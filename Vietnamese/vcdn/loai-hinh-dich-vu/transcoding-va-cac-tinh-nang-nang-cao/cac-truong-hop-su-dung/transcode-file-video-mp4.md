@@ -23,7 +23,7 @@ Thành phần thực hiện:
 
 ## Khởi tạo bucket trên bất kỳ dịch vụ S3-compatible để làm nơi lưu trữ dữ liệu nguồn
 
-Đâu tiên, bạn cần khởi tạo bucket trên bất kỳ dịch vụ S3-compatible để làm nơi lưu trữ dữ liệu nguồn. Bạn có thể sử dụng AWS S3, Google Storage,... hoặc bạn cũng có thể chọn sử dụng vStorage do VNGCloud phát triển làm nơi lưu trữ dữ liệu nguồn. Chi tiết các bước khởi tạo bucket trên vStorage, vui lòng tham khảo thêm tại [đây](../../../../vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/khoi-tao-container.md). Sau khi bucket đã khởi tạo xong, bạn hãy thực hiện:
+Đâu tiên, bạn cần khởi tạo bucket trên bất kỳ dịch vụ S3-compatible để làm nơi lưu trữ dữ liệu nguồn. Bạn có thể sử dụng AWS S3, Google Storage,... hoặc bạn cũng có thể chọn sử dụng vStorage do GreenNode phát triển làm nơi lưu trữ dữ liệu nguồn. Chi tiết các bước khởi tạo bucket trên vStorage, vui lòng tham khảo thêm tại [đây](../../../../vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/khoi-tao-container.md). Sau khi bucket đã khởi tạo xong, bạn hãy thực hiện:
 
 * Thiết lập quyền truy cập public từ internet đến các object theo hướng dẫn tại [đây](../../../../vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/chuyen-che-do-cong-khai-container.md).
 * Upload một file .MP4 để làm sample cho transcoding

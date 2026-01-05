@@ -35,8 +35,8 @@ Số lượng Image tối đa trên 1 Root User Account: 50 (có thể điều c
 \GreenNode
 Dung lượng GB Image Size tối đa trên 1 Root User Account: 1000 GB (có thể điều chỉnh).
 \GreenNodeGreenNode
-Vì vậy, khi tạo image, bạn cần lưu ý đến giới hạn tổng dung lượng image là 1000 GB cho toàn bộ các image trong tài khoản của mình. Nếu bạn cần tăng hạn mức này, có thể yêu cầu điều chỉnh thông qua trang hỗ trợ của VNG Cloud.
+Vì vậy, khi tạo image, bạn cần lưu ý đến giới hạn tổng dung lượng image là 1000 GB cho toàn bộ các image trong tài khoản của mình. Nếu bạn cần tăng hạn mức này, có thể yêu cầu điều chỉnh thông qua trang hỗ trợ của GreenNode.
 
-Trường hợp bạn muốn chủ động upload 1 image hoặc OS (Image/OS này chưa có trên VNG Cloud), bạn cần liên hệ với bộ phận hỗ trợ của VNG Cloud để được tư vấn trực tiếp.<br>
+Trường hợp bạn muốn chủ động upload 1 image hoặc OS (Image/OS này chưa có trên GreenNode), bạn cần liên hệ với bộ phận hỗ trợ của GreenNode để được tư vấn trực tiếp.<br>
 
 Trang liên quan: Image Overview, Custom Image, Marketplace Image

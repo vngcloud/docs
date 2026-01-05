@@ -4,7 +4,7 @@
 
 ### Overview
 
-* **Network Load Balancer (NLB)** is a load balancer provided by VNGCloud that helps distribute network traffic to multiple back-end servers in a computer group (instance group). NLB operates at layer 4 of the OSI model, providing load balancing based on IP addresses and TCP/UDP ports. For more detailed information about NLB, please refer to \[How it works (NLB)]
+* **Network Load Balancer (NLB)** is a load balancer provided by GreenNode that helps distribute network traffic to multiple back-end servers in a computer group (instance group). NLB operates at layer 4 of the OSI model, providing load balancing based on IP addresses and TCP/UDP ports. For more detailed information about NLB, please refer to \[How it works (NLB)]
 
 ### Model deployment
 
@@ -20,20 +20,20 @@
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-## VNGCloud LoadBalancer Controller
+## GreenNode LoadBalancer Controller
 
 The GreenNode Load Balancer Controller simplifies the deployment and management of load balancers in GreenNode environments for Kubernetes clusters. It automates the creation, configuration, and lifecycle management of load balancers for Kubernetes services and ingress resources. The controller ensures seamless integration with GreenNode services, enabling dynamic load balancing, SSL termination, and efficient traffic routing. It continuously monitors and reconciles resources to maintain their desired state, ensuring high availability, scalability, and optimized performance for applications running on GreenNode.
 
 ### Installation
 
-#### Create Service Account and install VNGCloud LoadBalancer Controller
+#### Create Service Account and install GreenNode LoadBalancer Controller
 
 * Create or use a **service account** created on IAM and attach policy: **vLBFullAccess** , **vServerFullAccess** . To create a service account, go here [and](https://iam.console.vngcloud.vn/service-accounts) follow these steps:
   * Select " **Create a Service Account** ", enter a name for the Service Account and click **Next Step** to assign permissions to the Service Account
   * Find and select **Policy: vLBFullAccess and Policy: vServerFullAccess** , then click "**Create a Service Account**" to create Service Account, Policy: vLBFullAccess and Policy: vServerFullAccess created by GreenNode, you cannot delete these policies.
   * After successful creation, you need to save **the Client\_ID** and **Secret\_Key** of the Service Account to perform the next step.
 
-#### Install VNGCloud LoadBalancer Controller
+#### Install GreenNode LoadBalancer Controller
 
 * Install Helm version 3.0 or higher. Refer to [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) for instructions on how to install.
 * Replace your ClientID an Client Secret information and run the following command:

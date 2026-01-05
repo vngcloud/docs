@@ -1,6 +1,6 @@
 # Khởi tạo Transfer Job
 
-Nếu bạn chưa sử dụng bất kỳ dịch vụ nào của GreenNode (chưa đăng ký tài khoản sử dụng với GreenNode), bạn cần đăng ký tài khoản với GreenNode Service [tại đây](https://register.vngcloud.vn/signup) để truy cập đến VNGCloud DataSync.
+Nếu bạn chưa sử dụng bất kỳ dịch vụ nào của GreenNode (chưa đăng ký tài khoản sử dụng với GreenNode), bạn cần đăng ký tài khoản với GreenNode Service [tại đây](https://register.vngcloud.vn/signup) để truy cập đến GreenNode DataSync.
 
 Bắt đầu sử dụng dịch vụ, bạn cần tạo một transfer job. Trong DataSync, transfer job là một nhiệm vụ được cấu hình để transfer dữ liệu giữa nguồn và đích. Tại một thời điểm bạn có thể sở hữu một hoặc nhiều Transfer job song song và sử dụng chúng với các mục đích khác nhau.
 

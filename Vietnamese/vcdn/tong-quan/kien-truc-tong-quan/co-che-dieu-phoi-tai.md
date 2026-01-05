@@ -18,4 +18,4 @@ Hệ thống vCDN Request Router sẽ quyết định gửi lại IP Server tố
 
 Với người dùng các ISP nhỏ như CMC, SPT, SCTV, Netnam sẽ được điều phối ưu tiên lưu lượng về POP của GreenNode tại Công Viên Phần Mềm Quang Trung vì tại đây GreenNode đã thực hiện peering trực tiếp tới mỗi ISP như trên. Việc này đảm bảo phục vụ tốt cho tất cả người dùng cuối.
 
-**Đối với traffic Domectic (trong nước) thông thường, VNG hiện không cam kết tốc độ với traffic đến từ quốc tế. Quý khách hàng tham khảo thêm dịch vụ vCDN quốc tế mà VNGCloud cung cấp để có chất lượng tốt nhất với traffic quốc tế hoặc liên hệ support@vng.com.vn để được hướng dẫn thêm.**
+**Đối với traffic Domectic (trong nước) thông thường, VNG hiện không cam kết tốc độ với traffic đến từ quốc tế. Quý khách hàng tham khảo thêm dịch vụ vCDN quốc tế mà GreenNode cung cấp để có chất lượng tốt nhất với traffic quốc tế hoặc liên hệ support@vng.com.vn để được hướng dẫn thêm.**

@@ -23,7 +23,7 @@ To do the above problem, follow the instructions below:
 
 ## Initialize a bucket on any S3-compatible service to store the source data <a href="#khoi-tao-bucket-tren-bat-ky-dich-vu-s3-compatible-de-lam-noi-luu-tru-du-lieu-nguon" id="khoi-tao-bucket-tren-bat-ky-dich-vu-s3-compatible-de-lam-noi-luu-tru-du-lieu-nguon"></a>
 
-First, you need to initialize a bucket on any S3-compatible service to store the source data. You can use AWS S3, Google Storage,... or you can also choose to use vStorage developed by VNGCloud as the source data storage. For details on the steps to initialize a bucket on vStorage, please refer here [.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/khoi-tao-container) After the bucket has been initialized, do the following:
+First, you need to initialize a bucket on any S3-compatible service to store the source data. You can use AWS S3, Google Storage,... or you can also choose to use vStorage developed by GreenNode as the source data storage. For details on the steps to initialize a bucket on vStorage, please refer here [.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/khoi-tao-container) After the bucket has been initialized, do the following:
 
 * Set up public access from the internet to objects following the instructions [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/chuyen-che-do-cong-khai-container) .
 * Upload an .MP4 file as a sample for transcoding

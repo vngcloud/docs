@@ -2,7 +2,7 @@
 
 ## Tổng quan
 
-VNGCloud cung cấp một nền tảng AI toàn diện giúp doanh nghiệp triển khai, tích hợp và vận hành các ứng dụng Generative AI một cách dễ dàng, bảo mật và hiệu quả. AI Stack của VNGCloud được thiết kế theo hướng modular, linh hoạt và tối ưu cho cả đội ngũ kỹ thuật và nhà quản lý.
+GreenNode cung cấp một nền tảng AI toàn diện giúp doanh nghiệp triển khai, tích hợp và vận hành các ứng dụng Generative AI một cách dễ dàng, bảo mật và hiệu quả. AI Stack của GreenNode được thiết kế theo hướng modular, linh hoạt và tối ưu cho cả đội ngũ kỹ thuật và nhà quản lý.
 
 <figure><img src="../.gitbook/assets/image (1086).png" alt=""><figcaption></figcaption></figure>
 
@@ -12,7 +12,7 @@ VNGCloud cung cấp một nền tảng AI toàn diện giúp doanh nghiệp tri�
 
 #### 1. Hạ tầng AI linh hoạt với VKS
 
-* **VKS (VNGCloud Kubernetes Service)** là dịch vụ Kubernetes được quản lý toàn diện.
+* **VKS (GreenNode Kubernetes Service)** là dịch vụ Kubernetes được quản lý toàn diện.
 * Tích hợp GPU, khả năng autoscaling, giám sát tài nguyên và bảo mật.
 * Tối ưu cho AI workloads cần GPU, nhưng cũng phù hợp để triển khai ứng dụng web, microservices và backend quy mô lớn.
 * Giúp doanh nghiệp nhanh chóng triển khai ứng dụng mà không cần tự xây dựng và duy trì hạ tầng.
@@ -26,7 +26,7 @@ VNGCloud cung cấp một nền tảng AI toàn diện giúp doanh nghiệp tri�
 
 #### 3. AI Platform toàn diện
 
-* Cung cấp môi trường để **thử nghiệm (notebook )**, **fine-tune** và **inference** các mô hình AI ngay trên nền tảng GPU của VNGCloud.
+* Cung cấp môi trường để **thử nghiệm (notebook )**, **fine-tune** và **inference** các mô hình AI ngay trên nền tảng GPU của GreenNode.
 * Tích hợp với hệ thống lưu trữ như **vStorage** để lưu dữ liệu huấn luyện, model registry và đầu ra.
 * Các tính năng **fine-tune** hiện đang được phát triển (coming soon).
 * Hạn chế rào cản kỹ thuật, rút ngắn thời gian triển khai.
@@ -58,4 +58,4 @@ VNGCloud cung cấp một nền tảng AI toàn diện giúp doanh nghiệp tri�
 * Loại bỏ gánh nặng hạ tầng, tối ưu chi phí vận hành AI.
 * Tăng cường kiểm soát, bảo mật và tính linh hoạt trong tích hợp AI vào sản phẩm số.
 
-AI Stack của VNGCloud là nền tảng lý tưởng để doanh nghiệp phát triển và mở rộng các ứng dụng GenAI một cách an toàn, hiệu quả và bền vững.
+AI Stack của GreenNode là nền tảng lý tưởng để doanh nghiệp phát triển và mở rộng các ứng dụng GenAI một cách an toàn, hiệu quả và bền vững.

@@ -54,7 +54,7 @@ Lúc này, hệ thống **vServer** sẽ khởi tạo một Server tương ứng
 
 <figure><img src="../../../.gitbook/assets/image (8) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 6:** Nhập **server name**. Server name này bạn có thể lấy từ portal VNGCloud. Ví dụ bên dưới tôi dùng server Demo\_Sigma đã tạo trước đó.
+**Bước 6:** Nhập **server name**. Server name này bạn có thể lấy từ portal GreenNode. Ví dụ bên dưới tôi dùng server Demo\_Sigma đã tạo trước đó.
 
 <figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 

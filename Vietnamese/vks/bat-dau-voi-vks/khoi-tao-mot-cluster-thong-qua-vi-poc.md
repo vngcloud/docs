@@ -250,7 +250,7 @@ kubectl apply -f persistent-volume.yaml
 
 <figure><img src="../../.gitbook/assets/image (452).png" alt=""><figcaption></figcaption></figure>
 
-**Cài đặt VNGCloud Snapshot Controller**
+**Cài đặt GreenNode Snapshot Controller**
 
 * Cài đặt Helm phiên bản từ 3.0 trở lên. Tham khảo tại [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) để biết cách cài đặt.
 * Thêm repo này vào cluster của bạn qua lệnh:

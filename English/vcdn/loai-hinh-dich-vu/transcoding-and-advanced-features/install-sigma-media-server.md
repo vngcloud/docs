@@ -56,7 +56,7 @@ that you want to use for your server. You also need to select an existing Server
 
 <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-**Step 6:** Enter **the server name** . You can get this server name from the VNGCloud portal. In the example below, I use the Demo\_Sigma server created earlier.
+**Step 6:** Enter **the server name** . You can get this server name from the GreenNode portal. In the example below, I use the Demo\_Sigma server created earlier.
 
 <figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

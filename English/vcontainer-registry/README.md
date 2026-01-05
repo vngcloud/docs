@@ -6,7 +6,7 @@ GreenNode is proud to introduce our latest addition to the GreenNode ecosystem -
 
 * User-Friendly Web Portal: Simple and intuitive interface for easy navigation and management of container images.
 * Seamless Integration: Smooth integration with other internal cloud services, enabling effortless deployment of container images.
-* IAM Permissions: Easily set permissions and control access using VNGCloud IAM (Identity and Access Management), ensuring secure and controlled access to user container images.
+* IAM Permissions: Easily set permissions and control access using GreenNode IAM (Identity and Access Management), ensuring secure and controlled access to user container images.
 
 **Benefits of Container Registry**
 

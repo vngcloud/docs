@@ -10,7 +10,7 @@ vServer service provides you with leading solutions including:
 
 * Set up a virtual server environment quickly, simply and automatically on GreenNode's leading advanced cloud computing technology.
 * Diverse and flexible directory of server configurations according to hardware information of CPU, Memory, Disk, GPU ... is optimized by the GreenNode team for each type of work need as well as appropriate cost.
-* The rich and varied Linux/Windows operating systems are prepared for server initialization processes called System Image. Besides, it is impossible to ignore the images with specialized software that are packaged and tested by the VNGCloud engineer team.
+* The rich and varied Linux/Windows operating systems are prepared for server initialization processes called System Image. Besides, it is impossible to ignore the images with specialized software that are packaged and tested by the GreenNode engineer team.
 * Provide block storage with GreenNode Block Storage (Volume) service for virtual servers with high availability and performance with flexible scalability.
 * The secure server access process eliminates the traditional password element of public key pairs, automatically completely automating the initialization of a new server.
 * Fully automate the creation of scheduled backups as well as longer-term storage on Backup Vault.

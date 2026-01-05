@@ -91,7 +91,7 @@ Hệ thống vCDN cung cấp các chuẩn phát phổ biến, hỗ trợ giao th
   *   **Cú pháp URL Multi Audio Selection (cùng với ABR)**:
 
       ```bash
-      https://<CDN Domain>/<Đường dẫn tới file SMIL trên VNGCloud Storage/Origin>/index.m3u8
+      https://<CDN Domain>/<Đường dẫn tới file SMIL trên GreenNode Storage/Origin>/index.m3u8
       ```
 
 ***

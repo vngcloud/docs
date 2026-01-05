@@ -59,17 +59,17 @@ ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.
 
 ***
 
-## Create Service Account and install VNGCloud LoadBalancer Controller <a href="#exposemotservicethongquavlblayer4-khoitaoserviceaccountvacaidatvngcloudcontrollermanager" id="exposemotservicethongquavlblayer4-khoitaoserviceaccountvacaidatvngcloudcontrollermanager"></a>
+## Create Service Account and install GreenNode LoadBalancer Controller <a href="#exposemotservicethongquavlblayer4-khoitaoserviceaccountvacaidatvngcloudcontrollermanager" id="exposemotservicethongquavlblayer4-khoitaoserviceaccountvacaidatvngcloudcontrollermanager"></a>
 
 {% hint style="info" %}
 **Note:**
 
-When you initialize the Cluster according to the instructions above, if you have not enabled the **Enable vLB Native Integration Driver** option , by default we will not pre-install this plugin into your Cluster. You need to manually create Service Account and install VNGCloud LoadBalancer Controller according to the instructions below. If you have enabled the **Enable vLB Native Integration Driver** option , then we have pre-installed this plugin into your Cluster, skip the Service Account Initialization step, install VNGCloud LoadBalancer Controller and continue following the instructions from Deploy once. Workload.
+When you initialize the Cluster according to the instructions above, if you have not enabled the **Enable vLB Native Integration Driver** option , by default we will not pre-install this plugin into your Cluster. You need to manually create Service Account and install GreenNode LoadBalancer Controller according to the instructions below. If you have enabled the **Enable vLB Native Integration Driver** option , then we have pre-installed this plugin into your Cluster, skip the Service Account Initialization step, install GreenNode LoadBalancer Controller and continue following the instructions from Deploy once. Workload.
 {% endhint %}
 
 <details>
 
-<summary>Instructions for creating Service Account and installing VNGCloud LoadBalancer Controller</summary>
+<summary>Instructions for creating Service Account and installing GreenNode LoadBalancer Controller</summary>
 
 **Initialize Service Account**
 
@@ -95,7 +95,7 @@ kubectl get sa -n kube-system | grep -i "cloud-controller-manager"
 kubectl delete sa cloud-controller-manager -n kube-system --force
 ```
 
-**Install VNGCloud LoadBalancer Controller**
+**Install GreenNode LoadBalancer Controller**
 
 * Install Helm version 3.0 or higher. Refer to [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) for instructions on how to install.
 * Add this repo to your cluster via the command:

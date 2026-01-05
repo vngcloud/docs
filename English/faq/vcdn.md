@@ -14,7 +14,7 @@ Please refer to the documentation at the following link for <mark style="color:b
 
 ### \[vCDN] Can I view the traffic using my CDN?
 
-Currently, VNGCloud provides charts for each domain to view the traffic in use. Click on each domain for details.
+Currently, GreenNode provides charts for each domain to view the traffic in use. Click on each domain for details.
 
 ### \[vCDN] How do I clear cache on the CDN?
 
@@ -26,7 +26,7 @@ Currently, GreenNode does not support deleting CDN domains. You can only edit th
 
 ### \[vCDN] I want to know the IP range corresponding to 2 domains (bskjv7x1zq.vcdn.com.vn and ggkiz9mkp.vcdn.com.vn)
 
-VNGCloud's CDN system includes multiple IP ranges to ensure readiness and redundancy across different regions to serve the CDN. Therefore, there is no specific IP range for individual CDN domains.
+GreenNode's CDN system includes multiple IP ranges to ensure readiness and redundancy across different regions to serve the CDN. Therefore, there is no specific IP range for individual CDN domains.
 
 ### \[vCDN] How is \[CDN/Live-Stream] billed? Will the CDN be \[disabled] immediately when the \[Volume] is depleted?
 

@@ -15,7 +15,7 @@ This change ensures that your Kubernetes environment remains up to date with the
 
 ## May 9, 2025 <a href="#may_9_2025" id="may_9_2025"></a>
 
-VKS (VNGCloud Kubernetes Service) has just released its latest update, bringing several new features to users. Below are the key highlights of this release:
+VKS (GreenNode Kubernetes Service) has just released its latest update, bringing several new features to users. Below are the key highlights of this release:
 
 **New Features:**
 
@@ -27,7 +27,7 @@ VKS (VNGCloud Kubernetes Service) has just released its latest update, bringing 
 
 ## April 25, 2025 <a href="#april_25_2025" id="april_25_2025"></a>
 
-VKS (VNGCloud Kubernetes Service) has just released its latest update, bringing several improvements to users. Below are the key highlights of this release:
+VKS (GreenNode Kubernetes Service) has just released its latest update, bringing several improvements to users. Below are the key highlights of this release:
 
 **Improvements:**
 
@@ -39,7 +39,7 @@ If you need assistance, please contact our technical support team through the av
 
 ## April 16, 2025 <a href="#april_16_2025" id="april_16_2025"></a>
 
-VKS (VNGCloud Kubernetes Service) has just released its latest update, bringing several new features to users. Below are the key highlights of this release:
+VKS (GreenNode Kubernetes Service) has just released its latest update, bringing several new features to users. Below are the key highlights of this release:
 
 **New Features:**
 
@@ -52,7 +52,7 @@ VKS (VNGCloud Kubernetes Service) has just released its latest update, bringing 
 
 ## Mar 5, 2025 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
-VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing many new features to users. Here are the highlights of the update:
+VKS (GreenNode Kubernetes Service) has just released the latest update, bringing many new features to users. Here are the highlights of the update:
 
 **New features:**
 
@@ -62,7 +62,7 @@ VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing 
 
 ## Feb 27, 2025 <a href="#april_19_2024-3-1" id="april_19_2024-3-1"></a>
 
-VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing many new features to users. Here are the highlights of the update:
+VKS (GreenNode Kubernetes Service) has just released the latest update, bringing many new features to users. Here are the highlights of the update:
 
 **New features:**
 
@@ -76,7 +76,7 @@ For details, please refer to the user manual [here ](../network/fleet-management
 
 ## Jan 20, 2025 <a href="#april_19_2024-3-2" id="april_19_2024-3-2"></a>
 
-VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing many new features to users. Here are the highlights of the update:
+VKS (GreenNode Kubernetes Service) has just released the latest update, bringing many new features to users. Here are the highlights of the update:
 
 **New features:**
 
@@ -86,7 +86,7 @@ VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing 
 
 ## Jan 2, 2025 <a href="#april_19_2024-3-3" id="april_19_2024-3-3"></a>
 
-VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing many new features to users. Here are the highlights of the update:
+VKS (GreenNode Kubernetes Service) has just released the latest update, bringing many new features to users. Here are the highlights of the update:
 
 **New features:**
 
@@ -98,7 +98,7 @@ VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing 
 
 ## Dec 5, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
-VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing many new features to users. Here are the highlights of the update:
+VKS (GreenNode Kubernetes Service) has just released the latest update, bringing many new features to users. Here are the highlights of the update:
 
 **New features:**
 
@@ -108,20 +108,20 @@ VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing 
 
 ## Oct 23, 2024 <a href="#april_19_2024-3-1" id="april_19_2024-3-1"></a>
 
-VKS (VNGCloud Kubernetes Service) has just released the latest update, bringing many improvements to users. Here are the highlights of the update:
+VKS (GreenNode Kubernetes Service) has just released the latest update, bringing many improvements to users. Here are the highlights of the update:
 
 **Improve:**
 
 * **Support POC/ Stop POC for Cluster** : Users can now perform POC/ Stop POC for resources on VKS such as Server, Volume, Load Balancer, Endpoint. This feature brings high flexibility to users who want to experience VKS. For more details, please refer [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vks/clusters/stop-poc) .
-* **Upgrade VNGCloud BlockStorage CSI Driver Plugin:** Bugs discovered in previous versions have been fixed, making the system run smoother and more reliably.
-* **Freely choose/edit configuration with/without using VNGCloud LoadBalancer Controller plugin, VNGCloud LoadBalancer Controller plugin on existing VKS cluster:** The ability to customize plugin configuration allows users to optimize the VKS cluster according to their specific needs. This helps increase flexibility and meet the special requirements of each application.
+* **Upgrade GreenNode BlockStorage CSI Driver Plugin:** Bugs discovered in previous versions have been fixed, making the system run smoother and more reliably.
+* **Freely choose/edit configuration with/without using GreenNode LoadBalancer Controller plugin, GreenNode LoadBalancer Controller plugin on existing VKS cluster:** The ability to customize plugin configuration allows users to optimize the VKS cluster according to their specific needs. This helps increase flexibility and meet the special requirements of each application.
 * **Additionally,** in this update, we have also fixed some minor bugs to provide a better user experience.
 
 ***
 
 ## Oct 03, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
-VKS (VNGCloud Kubernetes Service) has just released its latest update, bringing many features and improvements to users. Here are the highlights of the update:
+VKS (GreenNode Kubernetes Service) has just released its latest update, bringing many features and improvements to users. Here are the highlights of the update:
 
 **New Region:**
 
@@ -142,17 +142,17 @@ VKS (VNGCloud Kubernetes Service) has just released its latest update, bringing 
 
 ## Aug 28, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
-VKS (VNGCloud Kubernetes Service) introduces the latest update to the existing VKS, bringing many new features to users. Here are the details about the update:
+VKS (GreenNode Kubernetes Service) introduces the latest update to the existing VKS, bringing many new features to users. Here are the details about the update:
 
 **New features:**
 
-* **Private Cluster**: Previously, public clusters on VKS were using Public IP addresses to communicate between nodes and the control plane. To improve the security of your cluster, we have launched the private cluster model. The Private Cluster feature helps your K8S cluster to be as secure as possible, all connections are completely private from the connection between the nodes to the control plane, the connection from the client to the control plane, or the connection from the nodes to other products and services in GreenNode such as: vStorage, vCR, vMonitor, VNGCloud APIs,... **Private Cluster is the ideal choice for services that require strict access control, ensuring compliance with regulations on security and data privacy**. For details on the two operating models of Cluster, you can refer to [here ](../mo-hinh-hoat-dong.md)and refer to the steps to create a private Cluster [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/khoi-tao-mot-private-cluster) .
+* **Private Cluster**: Previously, public clusters on VKS were using Public IP addresses to communicate between nodes and the control plane. To improve the security of your cluster, we have launched the private cluster model. The Private Cluster feature helps your K8S cluster to be as secure as possible, all connections are completely private from the connection between the nodes to the control plane, the connection from the client to the control plane, or the connection from the nodes to other products and services in GreenNode such as: vStorage, vCR, vMonitor, GreenNode APIs,... **Private Cluster is the ideal choice for services that require strict access control, ensuring compliance with regulations on security and data privacy**. For details on the two operating models of Cluster, you can refer to [here ](../mo-hinh-hoat-dong.md)and refer to the steps to create a private Cluster [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/khoi-tao-mot-private-cluster) .
 
 ***
 
 ## Aug 26, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
-VKS (VNGCloud Kubernetes Service) introduces the latest update for VKS, bringing numerous new improvements for users. Here are the details of the update:
+VKS (GreenNode Kubernetes Service) introduces the latest update for VKS, bringing numerous new improvements for users. Here are the details of the update:
 
 **Improve:**
 
@@ -171,7 +171,7 @@ VKS (VNGCloud Kubernetes Service) introduces the latest update for VKS, bringing
 
 ## Aug 13, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
-VKS (VNGCloud Kubernetes Service) introduces the latest update to the existing VKS, bringing many new improvements to users. Here are the details about the update:
+VKS (GreenNode Kubernetes Service) introduces the latest update to the existing VKS, bringing many new improvements to users. Here are the details about the update:
 
 **Improve:**
 
@@ -181,7 +181,7 @@ VKS (VNGCloud Kubernetes Service) introduces the latest update to the existing V
 
 ## Aug 01, 2024 <a href="#april_19_2024-3" id="april_19_2024-3"></a>
 
-VKS (VNGCloud Kubernetes Service) introduces the latest update to the already available VKS, bringing many new features and improvements to users. Here are the details about the update:
+VKS (GreenNode Kubernetes Service) introduces the latest update to the already available VKS, bringing many new features and improvements to users. Here are the details about the update:
 
 **New feature:**
 
@@ -191,7 +191,7 @@ VKS (VNGCloud Kubernetes Service) introduces the latest update to the already av
 
 ## July 25, 2024 <a href="#april_19_2024-3-1" id="april_19_2024-3-1"></a>
 
-VKS (VNGCloud Kubernetes Service) introduces the latest update to the existing VKS, bringing many new improvements to users. Here are the details about the update:
+VKS (GreenNode Kubernetes Service) introduces the latest update to the existing VKS, bringing many new improvements to users. Here are the details about the update:
 
 **Improve:**
 
@@ -201,27 +201,27 @@ VKS (VNGCloud Kubernetes Service) introduces the latest update to the existing V
 
 ## July 23, 2024 <a href="#april_19_2024-3-2" id="april_19_2024-3-2"></a>
 
-VKS (VNGCloud Kubernetes Service) introduces the latest update to the existing VKS, bringing many new improvements to users. Here are the details about the update:
+VKS (GreenNode Kubernetes Service) introduces the latest update to the existing VKS, bringing many new improvements to users. Here are the details about the update:
 
 **Improve:**
 
-* **Upgrade VNGCloud LoadBalancer Controller Plugin, VNGCloud LoadBalancer Controller Plugin:** Errors discovered in previous versions have been fixed, helping the system operate smoother and more reliably.
+* **Upgrade GreenNode LoadBalancer Controller Plugin, GreenNode LoadBalancer Controller Plugin:** Errors discovered in previous versions have been fixed, helping the system operate smoother and more reliably.
 
 ***
 
 ## July 18, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
 
-VKS (VNGCloud Kubernetes Service) introduces the latest update to the existing VKS, bringing many new improvements to users. Here are the details about the update:
+VKS (GreenNode Kubernetes Service) introduces the latest update to the existing VKS, bringing many new improvements to users. Here are the details about the update:
 
 **Improve:**
 
-* **Upgrade VNGCloud BlockStorage CSI Driver Plugin:** Errors discovered in previous versions have been fixed, helping the system operate smoother and more reliably.
+* **Upgrade GreenNode BlockStorage CSI Driver Plugin:** Errors discovered in previous versions have been fixed, helping the system operate smoother and more reliably.
 
 ***
 
 ## July 17, 2024 <a href="#april_19_2024-1" id="april_19_2024-1"></a>
 
-VKS (VNGCloud Kubernetes Service) introduces the latest update to the already available VKS, bringing many improvements to users. Here are the details about the update:
+VKS (GreenNode Kubernetes Service) introduces the latest update to the already available VKS, bringing many improvements to users. Here are the details about the update:
 
 **Improve:**
 
@@ -232,7 +232,7 @@ VKS (VNGCloud Kubernetes Service) introduces the latest update to the already av
 
 ## July 02, 2024 <a href="#april_19_2024-2" id="april_19_2024-2"></a>
 
-VKS (VNGCloud Kubernetes Service) introduces the latest update to the already available VKS, bringing many new features and improvements to users. Here are the details about the update:
+VKS (GreenNode Kubernetes Service) introduces the latest update to the already available VKS, bringing many new features and improvements to users. Here are the details about the update:
 
 **New feature:**
 
@@ -248,23 +248,23 @@ VKS (VNGCloud Kubernetes Service) introduces the latest update to the already av
 
 ## June 27, 2024 <a href="#april_19_2024-4" id="april_19_2024-4"></a>
 
-VKS (VNGCloud Kubernetes Service) introduces the latest update to the existing VKS, bringing many new improvements to users. Here are the details about the update:
+VKS (GreenNode Kubernetes Service) introduces the latest update to the existing VKS, bringing many new improvements to users. Here are the details about the update:
 
 **Improve:**
 
-* **Upgrade VNGCloud LoadBalancer Controller Plugin, VNGCloud LoadBalancer Controller Plugin:** Errors discovered in previous versions have been fixed, helping the system operate smoother and more reliably.
+* **Upgrade GreenNode LoadBalancer Controller Plugin, GreenNode LoadBalancer Controller Plugin:** Errors discovered in previous versions have been fixed, helping the system operate smoother and more reliably.
 
 ***
 
 ## June 19, 2024 <a href="#april_19_2024-5" id="april_19_2024-5"></a>
 
-VKS (VNGCloud Kubernetes Service) introduces the latest update to the existing VKS, bringing many new improvements to users. Here are the details about the update:
+VKS (GreenNode Kubernetes Service) introduces the latest update to the existing VKS, bringing many new improvements to users. Here are the details about the update:
 
 **Improve:**
 
 * **Upgrade PVC size setting feature (Persistent Volume Claim Size):** Users can now specify the minimum size for CSI drives to be **1GB** instead of the minimum size of 20GB as before. For more details, you can refer to Volume and Integrate with Container Storage Interface .
 * **Change the default Storage Class used for Cluster:** change the default from SSD type drives - IOPS 200 to the default SSD type drives - IOPS 3000.
-* **Upgrade VNGCloud LoadBalancer Controller Plugin, VNGCloud LoadBalancer Controller Plugin:** plugin improvements help avoid duplicate Load Balancer naming.
+* **Upgrade GreenNode LoadBalancer Controller Plugin, GreenNode LoadBalancer Controller Plugin:** plugin improvements help avoid duplicate Load Balancer naming.
 
 **Attention:**
 
@@ -285,7 +285,7 @@ For more details, refer to Integrate with Container Storage Interface .
 
 ## June 12, 2024 <a href="#april_19_2024-6" id="april_19_2024-6"></a>
 
-VKS (VNGCloud Kubernetes Service) introduces the latest update to the already available VKS, bringing many new features and improvements to users. Here are the details about the update:
+VKS (GreenNode Kubernetes Service) introduces the latest update to the already available VKS, bringing many new features and improvements to users. Here are the details about the update:
 
 **New feature:**
 
@@ -293,13 +293,13 @@ VKS (VNGCloud Kubernetes Service) introduces the latest update to the already av
 
 **Improve:**
 
-* **Upgrade VNGCloud LoadBalancer Controller Plugin:** Add Annotation to configure Load Balancer to support Proxy Protocol. For more details, refer [here](../bat-dau-voi-vks/preserve-source-ip-khi-su-dung-vlb-layer4-va-nginx-ingress-controller.md) .
+* **Upgrade GreenNode LoadBalancer Controller Plugin:** Add Annotation to configure Load Balancer to support Proxy Protocol. For more details, refer [here](../bat-dau-voi-vks/preserve-source-ip-khi-su-dung-vlb-layer4-va-nginx-ingress-controller.md) .
 
 ***
 
 ## May 30, 2024 <a href="#april_19_2024-7" id="april_19_2024-7"></a>
 
-We are extremely pleased to announce that the official release ( **General Availability** ) of VNGCloud Kubernetes Service is available. With this official release, in addition to the features we have provided on previous releases, this version will bring many new features and improvements to users. Here are the details about the update:
+We are extremely pleased to announce that the official release ( **General Availability** ) of GreenNode Kubernetes Service is available. With this official release, in addition to the features we have provided on previous releases, this version will bring many new features and improvements to users. Here are the details about the update:
 
 **New feature:**
 
@@ -351,7 +351,7 @@ If you encounter any problems after updating, please contact VKS support for ass
 * **Scaling & Healing Automatically:** VKS automatically expands the Node group when necessary and automatically fixes errors when the node has problems, helping you save time and effort on management.
 * **Reduce costs and improve reliability:** VKS deploys Control Plane of Kubernetes in high availability mode and is completely free, helping you save costs and improve system reliability.
 * **Blockstore Native (Container Storage Interface - CSI) integration:** VKS allows you to manage Blockstore through Kubernetes' YAML, providing persistent storage for containers and supporting important features such as resizing, IOPS scaling and snapshot volumes.
-* **Integrate Load Balancer (Network Load Balancer, Application Load Balancer) through built-in drivers such as VNGCloud Controller Mananger, VNGCloud LoadBalancer Controller:** VKS provides the ability to manage NLB/ALB through YAML of Kubernetes, making it easy for you expose Service in Kubernetes to the outside.
+* **Integrate Load Balancer (Network Load Balancer, Application Load Balancer) through built-in drivers such as GreenNode Controller Mananger, GreenNode LoadBalancer Controller:** VKS provides the ability to manage NLB/ALB through YAML of Kubernetes, making it easy for you expose Service in Kubernetes to the outside.
 * **Enhance security:** VKS allows you to create a Private Node Group with only Private IP and control access to the cluster through the IP Whitelist feature, ensuring the safety of your system.
 
 **With these breakthrough features, VKS promises to bring you a completely new Kubernetes management experience, helping you optimize efficiency and save costs!**

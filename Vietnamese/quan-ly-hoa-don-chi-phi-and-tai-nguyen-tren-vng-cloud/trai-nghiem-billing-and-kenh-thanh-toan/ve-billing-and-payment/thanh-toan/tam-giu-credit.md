@@ -22,7 +22,7 @@ Nhận thấy nhu cầu sử dụng các tài nguyên / dich vụ trả sau củ
   * Xác nhận thực hiện tạm giữ credit tại trang thanh toán
 * **Kết quả khi hoàn thành tác vụ:**
   * Hệ thống tiến hành tạm giữ credit: Số credit bị tạm giữ người dùng sẽ không được sử dụng cho mục đích khác. Bạn có thể kiểm tra số dư credit đang bị tạm giữ (holding) hay chính là chi phí cho các resource holding bằng cách:
-    * **Bước 1:** Truy cập vào portal của VNGCloud
+    * **Bước 1:** Truy cập vào portal của GreenNode
     * **Bước 2:** Chọn vào phần hiển thị thông tin credit như hình bên dưới. Tại đây, bạn sẽ nhìn thấy phần credit đang được holding bởi GreenNode.
 
 <figure><img src="../../../../.gitbook/assets/Xem thong tin hold credit (1).png" alt=""><figcaption></figcaption></figure>

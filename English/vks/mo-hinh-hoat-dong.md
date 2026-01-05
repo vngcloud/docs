@@ -20,7 +20,7 @@ When you create a **Public Cluster with a Private Node Group** , the VKS system 
 
 When you create a **Public Cluster with Public/Private Node Group** , the VKS system will:
 
-* To enhance the security of your cluster, we have introduced the private cluster model. The Private Cluster feature helps make your K8S cluster as secure as possible, all connections are completely private from the connection between nodes to the control plane, the connection from the client to the control plane, or the connection from nodes to products. Other services in GreenNode such as: vStorage, vCR, vMonitor, VNGCloud APIs,...Private Cluster is the ideal choice for **services that require strict access control, ensuring compliance with security regulations and data privacy**.
+* To enhance the security of your cluster, we have introduced the private cluster model. The Private Cluster feature helps make your K8S cluster as secure as possible, all connections are completely private from the connection between nodes to the control plane, the connection from the client to the control plane, or the connection from nodes to products. Other services in GreenNode such as: vStorage, vCR, vMonitor, GreenNode APIs,...Private Cluster is the ideal choice for **services that require strict access control, ensuring compliance with security regulations and data privacy**.
 
 ## 3. Comparison between using Public Cluster and Private Cluster <a href="#id-3.-so-sanh-giua-viec-su-dung-public-cluster-va-private-cluster" id="id-3.-so-sanh-giua-viec-su-dung-public-cluster-va-private-cluster"></a>
 

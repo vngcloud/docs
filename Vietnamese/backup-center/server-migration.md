@@ -6,7 +6,7 @@ description: Hướng Dẫn Migrate Server Về GreenNode
 
 ## 1. GreenNode Migration Tool là gì?
 
-**Migration Tool** tại GreenNode là một công cụ hỗ trợ người dùng di chuyển máy chủ (server) từ các cloud khác, các region khác trên VNGCloud như từ HCM sang HAN và ngược lại hoặc từ hệ thống on-premises lên hạ tầng GreenNode **một cách tự động, nhanh chóng và an toàn**.\
+**Migration Tool** tại GreenNode là một công cụ hỗ trợ người dùng di chuyển máy chủ (server) từ các cloud khác, các region khác trên GreenNode như từ HCM sang HAN và ngược lại hoặc từ hệ thống on-premises lên hạ tầng GreenNode **một cách tự động, nhanh chóng và an toàn**.\
 Các tính năng nổi bật bao gồm:
 
 * **Hỗ trợ nhiều loại nguồn**: AWS, Azure, GCP, VMware, Hyper-V, và cả server vật lý.

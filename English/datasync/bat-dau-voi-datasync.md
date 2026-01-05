@@ -1,6 +1,6 @@
 # Getting Start with DataSync
 
-If you have not used any GreenNode services (have not registered an account with GreenNode), you need to register an account with GreenNode Service here to access VNGCloud DataSync. To start using the service, you need to create a transfer job. In DataSync, a transfer job is a task configured to transfer data between a source and a destination. At a time you can own one or more Transfer jobs in parallel and use them for different purposes.
+If you have not used any GreenNode services (have not registered an account with GreenNode), you need to register an account with GreenNode Service here to access GreenNode DataSync. To start using the service, you need to create a transfer job. In DataSync, a transfer job is a task configured to transfer data between a source and a destination. At a time you can own one or more Transfer jobs in parallel and use them for different purposes.
 
 **Getting Started with DataSync, you can follow these steps below:**
 

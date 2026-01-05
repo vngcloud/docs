@@ -6,7 +6,7 @@ GreenNode xin giới thiệu đến quý khách hàng dịch vụ mới thuộc 
 
 * **Cổng Web Thân Thiện:** Giao diện đơn giản và trực quan để dễ dàng điều hướng và quản lý các container image.
 * **Tích hợp Mượt Mà:** Tích hợp mượt mà với các dịch vụ đám mây nội bộ khác, cho phép triển khai các container image một cách dễ dàng.
-* **Quyền Hạn IAM:** Dễ dàng thiết lập quyền hạn và kiểm soát truy cập bằng cách sử dụng **VNGCloud IAM** (Quản lý Danh tính và Truy cập), đảm bảo truy cập an toàn và được kiểm soát vào container image của người dùng.
+* **Quyền Hạn IAM:** Dễ dàng thiết lập quyền hạn và kiểm soát truy cập bằng cách sử dụng **GreenNode IAM** (Quản lý Danh tính và Truy cập), đảm bảo truy cập an toàn và được kiểm soát vào container image của người dùng.
 
 **Lợi ích mà Container Registry mang lại:**
 
