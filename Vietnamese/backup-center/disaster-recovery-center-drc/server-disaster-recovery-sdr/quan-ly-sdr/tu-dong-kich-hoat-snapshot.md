@@ -10,8 +10,8 @@ Nếu bạn chưa kích hoạt dịch vụ Snapshot, SDR sẽ tự động kích
 
 **Lưu ý:**
 
-* Việc kích hoạt dịch vụ Snapshot có thể phát sinh thêm chi phí. Hãy tham khảo bảng giá của VNG Cloud để biết thêm chi tiết.
-* Bạn có thể kiểm tra trạng thái kích hoạt của dịch vụ Snapshot trong phần quản lý ổ đĩa (Volume) trên VNG Cloud Console.
+* Việc kích hoạt dịch vụ Snapshot có thể phát sinh thêm chi phí. Hãy tham khảo bảng giá của GreenNode để biết thêm chi tiết.
+* Bạn có thể kiểm tra trạng thái kích hoạt của dịch vụ Snapshot trong phần quản lý ổ đĩa (Volume) trên GreenNode Console.
 
 **Tóm tắt:**
 

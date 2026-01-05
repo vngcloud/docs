@@ -36,7 +36,7 @@ resource "vngcloud_vserver_server" "server"{
 {% hint style="warning" %}
 **Note**
 
-* With any changed argument (resize), still tranfering argument is\_poc to VNG Cloud.
+* With any changed argument (resize), still tranfering argument is\_poc to GreenNode.
 * If it does not tranfer is\_poc, user going to using credit wallet.
 * If the POC wallet is discontinued and subsequently the server expires, the server does not shut down immediately. Instead, the VNG system has a scheduled job that scans (at 11 AM daily) to consider shutting down expired servers. Therefore, before 11 AM, users can top up credit to continue using the server.
 {% endhint %}
@@ -51,7 +51,7 @@ When a resource is expired and status be Terminated, if User would like to renew
 
 ***
 
-When VNG Cloud System has recorded all arguments above from Terraform, the following attributes are exported:
+When GreenNode System has recorded all arguments above from Terraform, the following attributes are exported:
 
 * **id** STRING : ID of this Server
 * **external\_interfaces:** (List of Map of String) List of Network external interface. It included:

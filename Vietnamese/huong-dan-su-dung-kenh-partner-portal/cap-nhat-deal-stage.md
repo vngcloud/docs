@@ -1,6 +1,6 @@
 # Cập nhật Deal Stage
 
-Partner có trách nhiệm cập nhật thông tin deal stage để VNG Cloud nắm thông tin của deal nhằm đảm bảo quyền lợi cho partner thực hiện deal.
+Partner có trách nhiệm cập nhật thông tin deal stage để GreenNode nắm thông tin của deal nhằm đảm bảo quyền lợi cho partner thực hiện deal.
 
 **Bước 1**: Vào menu "**Deal**"
 
@@ -13,7 +13,7 @@ Partner có thể cập nhật thông tin deal bằng cách thực hiện các l
 1. Cập nhật deal stage, Nhấn vào “**Cập nhật giai đoạn**”, và
 
 * Partner có thể chọn stage mới của deal, trong trường hợp stage = Won Deal, Lost Deal. Deal sẽ được hệ thống đóng tự động.
-* Với stage = Won Deal, một discount theo tỷ lệ đã được đăng ký trong deal sẽ được sinh tự động cho partner và áp dụng mức giảm giá này theo hợp động partner đã ký với VNG Cloud theo deal, đồng thời khách hàng đã được partner đăng ký trong deal sẽ trở thành khách hàng của partner
+* Với stage = Won Deal, một discount theo tỷ lệ đã được đăng ký trong deal sẽ được sinh tự động cho partner và áp dụng mức giảm giá này theo hợp động partner đã ký với GreenNode theo deal, đồng thời khách hàng đã được partner đăng ký trong deal sẽ trở thành khách hàng của partner
   * Kiểm tra chiết khấu của deal tại menu “**Discount**”
   * Partner có trách nhiệm tạo discount cho khách hàng của mình để khách hàng được hưởng mức chiết khấu theo cam kết của partner với khách hàng trong deal.
 * Với stage = Lost Deal, deal sẽ được đóng và discount đã đăng ký sẽ không được thực thi

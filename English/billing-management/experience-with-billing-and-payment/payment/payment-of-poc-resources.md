@@ -4,7 +4,7 @@ Before learning about the POC resource payment method, you should have a clear u
 
 ## Overview
 
-Payment with POC resources is a payment method at VNG Cloud Service, applicable to:
+Payment with POC resources is a payment method at GreenNode Service, applicable to:
 
 * User type: Prepaid users.
 * Resources/Services: Resources that have POC applied according to the agreement.
@@ -19,11 +19,11 @@ Payment with POC resources is a payment method at VNG Cloud Service, applicable 
 
 ## What is POC wallet?&#x20;
 
-POC wallet is a type of wallet provided by VNG Cloud to provide users with a service experience. Users use POC wallet as a payment method for resources allowed to use POC.&#x20;
+POC wallet is a type of wallet provided by GreenNode to provide users with a service experience. Users use POC wallet as a payment method for resources allowed to use POC.&#x20;
 
-* POC wallet balance: Depends on the agreement between the user and VNG Cloud.
-* POC wallet usage period: Depends on the agreement between the user and VNG Cloud.
+* POC wallet balance: Depends on the agreement between the user and GreenNode.
+* POC wallet usage period: Depends on the agreement between the user and GreenNode.
 
 ## How to own a POC wallet?&#x20;
 
-Currently, the POC wallet is granted through VNG Cloud's promotion programs, advertising campaigns, or through the Sale/Sale Operation department after completing the agreements
+Currently, the POC wallet is granted through GreenNode's promotion programs, advertising campaigns, or through the Sale/Sale Operation department after completing the agreements

@@ -10,7 +10,7 @@ Master User này sẽ được cấp các quyền sau:
   * Global Privileges: ALTER ROUTINE, ALTER, CREATE ROUTINE, CREATE TEMPORARY TABLES, CREATE USER, CREATE VIEW, CREATE, DELETE, EVENT, EXECUTE, INDEX, INSERT, LOCK TABLES, PROCESS, REFERENCES, RELOAD, REPLICATION CLIENT, REPLICATION SLAVE, SELECT, SHOW DATABASES, SHOW VIEW, TRIGGER, UPDATE.
   * Database Privileges: Full Privileges.
 
-**Lưu ý**: database privileges ngoại trừ các database hệ thống như: mysql, information\_schema, performance\_schema, sys. Khi bạn tạo một database mới, hệ thống sẽ tự grant all privileges cho master user. Nếu chưa có, bạn vui lòng chờ trong giây lát hoặc liên hệ VNG Cloud Support.
+**Lưu ý**: database privileges ngoại trừ các database hệ thống như: mysql, information\_schema, performance\_schema, sys. Khi bạn tạo một database mới, hệ thống sẽ tự grant all privileges cho master user. Nếu chưa có, bạn vui lòng chờ trong giây lát hoặc liên hệ GreenNode Support.
 
 * Postgresql: Createrole, CreateDB, Replication.
 

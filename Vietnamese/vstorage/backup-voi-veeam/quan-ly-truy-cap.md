@@ -2,7 +2,7 @@
 
 ## Tổng quan
 
-VNG Cloud quan tâm đến việc bảo vệ cơ sở hạ tầng của các dịch vụ VNG Cloud, đặc biệt hơn là các dịch vụ lưu trữ dữ liệu. Trong đó kiểm soát phân quyền truy cập là một trong những ưu tiên hàng đầu, kể cả việc sử dụng phần mềm Veeam để sao lưu dữ liệu.&#x20;
+GreenNode quan tâm đến việc bảo vệ cơ sở hạ tầng của các dịch vụ GreenNode, đặc biệt hơn là các dịch vụ lưu trữ dữ liệu. Trong đó kiểm soát phân quyền truy cập là một trong những ưu tiên hàng đầu, kể cả việc sử dụng phần mềm Veeam để sao lưu dữ liệu.&#x20;
 
 Phân quyền truy cập là yếu tố thiết yếu của bảo mật nhằm xác định đối tượng và điều kiện để truy cập vào phần mềm và thực hiện các thao tác sao lưu hay phục hồi.&#x20;
 

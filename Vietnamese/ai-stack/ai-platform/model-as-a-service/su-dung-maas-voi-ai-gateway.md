@@ -2,7 +2,7 @@
 
 Để MaaS có thể sử dụng các tính năng của AI Gateway (Rate Limit, Model Caching... ), bạn hãy thực hiện theo các bước sau:
 
-**Bước 1:** Truy cập giao diện AI Gateway tại VNG Cloud Console thông qua đường dẫn: [http://aigateway.console.vngcloud.vn/](http://aigateway.console.vngcloud.vn/)
+**Bước 1:** Truy cập giao diện AI Gateway tại GreenNode Console thông qua đường dẫn: [http://aigateway.console.vngcloud.vn/](http://aigateway.console.vngcloud.vn/)
 
 **Bước 2:** Trong menu bên trái, chọn mục **AI Gateway**, sau đó nhấn vào nút **Create an AI Gateway**.
 

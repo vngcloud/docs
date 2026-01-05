@@ -1,5 +1,5 @@
 ---
-description: VNG Cloud Endpoint là điểm kết nối giữa VPC với các dịch vụ của VNG Cloud
+description: GreenNode Endpoint là điểm kết nối giữa VPC với các dịch vụ của GreenNode
 ---
 
 # Đổi tên Endpoint

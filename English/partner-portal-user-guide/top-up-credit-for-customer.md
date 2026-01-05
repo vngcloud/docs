@@ -1,6 +1,6 @@
 # Top up Credit for Customer
 
-* For partner’s customers, adding credits directly is not permitted. To be able to buy VNG Cloud’s services, partners will top up credits for customers based on specific requirements from them.
+* For partner’s customers, adding credits directly is not permitted. To be able to buy GreenNode’s services, partners will top up credits for customers based on specific requirements from them.
 * Topping up credits will be done by transferring credits from partner account to customer account. Once the transaction is completed, the system will subtract those credits from partner account and add them to customer account.
 
 **Step 1:** Select the "**Account**" menu.

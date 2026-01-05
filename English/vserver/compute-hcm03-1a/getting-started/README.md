@@ -1,6 +1,6 @@
 # Getting started
 
-Use this guide to get started with VNG Cloud Server (vServer). You will learn how to launch, connect and use. A typical example for creating a virtual server in the VNG Cloud. With vServer, you can set up and configure the operating system and expected accompanying applications.
+Use this guide to get started with GreenNode Server (vServer). You will learn how to launch, connect and use. A typical example for creating a virtual server in the GreenNode. With vServer, you can set up and configure the operating system and expected accompanying applications.
 
 When you first sign up for the vServer service, you can start with free usage for a great experience before deciding to pay. If you've created your account in 3 days and haven't exceeded the benefits of the free tier for vServer, it won't cost you anything to complete this guide as we help you choose options that fall within benefits of the free tier. At the end of the free tier, you will be charged for using the standard vServer from the time you launch the instance until you end the instance, even if it is idle.
 
@@ -96,7 +96,7 @@ On the Server list screen, you can see the launch status. It takes a short time 
 
 ### Searching for Created Servers
 
-In cases where users create many virtual machines (VMs), VNG Cloud provides a tool to quickly search for the virtual machines that users have previously created.
+In cases where users create many virtual machines (VMs), GreenNode provides a tool to quickly search for the virtual machines that users have previously created.
 
 **Step 1:** Open the vServer homepage at: [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview)
 

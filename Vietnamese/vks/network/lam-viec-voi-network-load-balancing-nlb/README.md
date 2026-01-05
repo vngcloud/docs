@@ -10,5 +10,5 @@
 
 
 
-* **VNGCloud LoadBalancer Controller**: VNGCloud LoadBalancer Controller là một bộ điều khiển chạy trên các cụm Kubernetes được triển khai trên VNG Cloud. Nó chịu trách nhiệm cho việc quản lý các tài nguyên VNG Cloud cho các cụm Kubernetes, bao gồm:
+* **VNGCloud LoadBalancer Controller**: VNGCloud LoadBalancer Controller là một bộ điều khiển chạy trên các cụm Kubernetes được triển khai trên GreenNode. Nó chịu trách nhiệm cho việc quản lý các tài nguyên GreenNode cho các cụm Kubernetes, bao gồm:
   * **Tạo và quản lý Network Load Balancer (NLB)** cho các Service Kubernetes có service type = Load Balancer.

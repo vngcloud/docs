@@ -1,6 +1,6 @@
 # Create backups for VM with policy
 
-On the vBackup console, the Protected Resources page will list all resources that have been backed up at least once. If you are using vBackup for the first time, note that no resources (such as protected virtual machines or disks) will be listed on this page. At VNG Cloud, we support centralized data protection for virtual machines (Servers) in a cloud computing environment. You can back up virtual machines and the data will be transferred to vStorage.
+On the vBackup console, the Protected Resources page will list all resources that have been backed up at least once. If you are using vBackup for the first time, note that no resources (such as protected virtual machines or disks) will be listed on this page. At GreenNode, we support centralized data protection for virtual machines (Servers) in a cloud computing environment. You can back up virtual machines and the data will be transferred to vStorage.
 
 However, what you need to do now is create a Backup job for your resource following the instructions below:
 

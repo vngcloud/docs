@@ -1,6 +1,6 @@
 # Sử dụng tính năng container lifecycle
 
-**Lifecycle** là một tính năng do VNG Cloud phát triển cho phép bạn thiết lập các hành động mà vStorage áp dụng cho một container. Chúng tôi định nghĩa 2 loại rule sau đây để hỗ trợ bạn quản lý vòng đời của container:
+**Lifecycle** là một tính năng do GreenNode phát triển cho phép bạn thiết lập các hành động mà vStorage áp dụng cho một container. Chúng tôi định nghĩa 2 loại rule sau đây để hỗ trợ bạn quản lý vòng đời của container:
 
 <figure><img src="../../../../../.gitbook/assets/image (389).png" alt="" width="563"><figcaption></figcaption></figure>
 

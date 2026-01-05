@@ -2,7 +2,7 @@
 
 **"Maximized Integration: Combining Multicloud, Hybrid, and VPN Interconnect"**
 
-The Multicloud Interconnect use case in this enterprise is confronted with increasing complexity in managing and integrating cloud resources from multiple providers. To address this challenge, they have decided to utilize Multicloud Interconnect, a multi-platform cloud connectivity solution. This allows them to leverage the unique advantages of both AWS and VNG Cloud by deploying applications and storing data across both platforms.
+The Multicloud Interconnect use case in this enterprise is confronted with increasing complexity in managing and integrating cloud resources from multiple providers. To address this challenge, they have decided to utilize Multicloud Interconnect, a multi-platform cloud connectivity solution. This allows them to leverage the unique advantages of both AWS and GreenNode by deploying applications and storing data across both platforms.
 
 Using Multicloud Interconnect enables this enterprise to easily move data between two different clouds and flexibly navigate through cloud environments. This helps them maximize the flexibility and scalability of the cloud while maintaining diversity in application deployment and data management.
 

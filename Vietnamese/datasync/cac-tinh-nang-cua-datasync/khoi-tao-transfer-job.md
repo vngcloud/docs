@@ -1,6 +1,6 @@
 # Khởi tạo Transfer Job
 
-Nếu bạn chưa sử dụng bất kỳ dịch vụ nào của VNG Cloud (chưa đăng ký tài khoản sử dụng với VNG Cloud), bạn cần đăng ký tài khoản với VNG Cloud Service [tại đây](https://register.vngcloud.vn/signup) để truy cập đến VNGCloud DataSync.
+Nếu bạn chưa sử dụng bất kỳ dịch vụ nào của GreenNode (chưa đăng ký tài khoản sử dụng với GreenNode), bạn cần đăng ký tài khoản với GreenNode Service [tại đây](https://register.vngcloud.vn/signup) để truy cập đến VNGCloud DataSync.
 
 Bắt đầu sử dụng dịch vụ, bạn cần tạo một transfer job. Trong DataSync, transfer job là một nhiệm vụ được cấu hình để transfer dữ liệu giữa nguồn và đích. Tại một thời điểm bạn có thể sở hữu một hoặc nhiều Transfer job song song và sử dụng chúng với các mục đích khác nhau.
 
@@ -14,7 +14,7 @@ Bắt đầu sử dụng dịch vụ, bạn cần tạo một transfer job. Tron
 
 1. Nhập **Job name.** Tên job là duy nhất trên một SSO User Account và tên job có thể dài từ tối thiểu 5 tới 50 ký tự.
 2. Nhập **Job description**: mô tả ngắn gọn về job.&#x20;
-3. Chọn **Source Type** bạn muốn chuyển dữ liệu. VNG Cloud DataSync hiện hỗ trợ 4 loại nguồn:
+3. Chọn **Source Type** bạn muốn chuyển dữ liệu. GreenNode DataSync hiện hỗ trợ 4 loại nguồn:
    * Amazon S3
    * Google Cloud Storage
    * S3 compatible object storage

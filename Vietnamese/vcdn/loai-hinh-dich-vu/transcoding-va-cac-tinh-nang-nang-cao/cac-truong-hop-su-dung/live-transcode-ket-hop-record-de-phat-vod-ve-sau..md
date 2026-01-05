@@ -40,7 +40,7 @@
 
 ## Khởi tạo và cấu hình dịch vụ vCDN.
 
-**Bước 1:** Bạn thực hiện truy cập [VNG Cloud – ](https://vcdn.vngcloud.vn/)[vCDN](https://vcdn.vngcloud.vn/)[ Portal](https://vcdn.vngcloud.vn/)
+**Bước 1:** Bạn thực hiện truy cập [GreenNode – ](https://vcdn.vngcloud.vn/)[vCDN](https://vcdn.vngcloud.vn/)[ Portal](https://vcdn.vngcloud.vn/)
 
 **Bước 2:** Khởi tạo một domain CDN dành cho **Live Streaming** theo hướng dẫn tại [đây](../../live-streaming.md).
 

@@ -13,7 +13,7 @@ Giả sử một Doanh nghiệp có hai chi nhánh, một chi nhánh tại Hồ 
 ### Ưu điểm
 
 * Dễ dàng sử dụng: với vài bước đơn giản, doanh nghiệp có thể thiết lập kết nối liên vùng giữa các VPC;
-* Hiệu suất cao: Cross Connect tận dụng cơ sở hạ tầng mạng toàn cầu của VNG Cloud để cung cấp kết nối chất lượng cao, độ trễ thấp với băng thông có thể điều chỉnh linh hoạt để đáp ứng với nhu cầu kinh doanh thay đổi.
+* Hiệu suất cao: Cross Connect tận dụng cơ sở hạ tầng mạng toàn cầu của GreenNode để cung cấp kết nối chất lượng cao, độ trễ thấp với băng thông có thể điều chỉnh linh hoạt để đáp ứng với nhu cầu kinh doanh thay đổi.
 
 ### Hạn chế
 

@@ -1,6 +1,6 @@
 # Container lifecycle
 
-Lifecycle is a feature developed by VNG Cloud that allows you to set up actions that vStorage applies to a container. We define the following two types of rules to help you manage the container lifecycle:
+Lifecycle is a feature developed by GreenNode that allows you to set up actions that vStorage applies to a container. We define the following two types of rules to help you manage the container lifecycle:
 
 <figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -54,15 +54,15 @@ Các sản phẩm / dịch vụ đang được hỗ trợ báo giá tại trang 
 
 * **Q: Các ước tính chi phí có chính xác không?**
 
-→ A: Các ước tính chi phí được cung cấp bởi công cụ tính giá dựa trên thông tin và tham số bạn nhập và bảng giá công khai hiện hành của VNG Cloud. Tuy nhiên, lưu ý rằng chúng chỉ là ước tính và có thể không phản ánh chính xác chi phí cuối cùng hoặc chính xác.
+→ A: Các ước tính chi phí được cung cấp bởi công cụ tính giá dựa trên thông tin và tham số bạn nhập và bảng giá công khai hiện hành của GreenNode. Tuy nhiên, lưu ý rằng chúng chỉ là ước tính và có thể không phản ánh chính xác chi phí cuối cùng hoặc chính xác.
 
 * **Q: Tôi có cần phải đăng nhập để sử dụng công cụ tính giá không? Có sự khác biệt gì giữa việc đăng nhập và không đăng nhập không?**
 
-A: Không, công cụ tính giá sử dụng trong mục đích ước tính chi phí sử dụng dịch vụ VNG Cloud, nên bạn không cần đăng nhập vẫn có thể ước tính chi phí dịch vụ với công cụ tính giá.
+A: Không, công cụ tính giá sử dụng trong mục đích ước tính chi phí sử dụng dịch vụ GreenNode, nên bạn không cần đăng nhập vẫn có thể ước tính chi phí dịch vụ với công cụ tính giá.
 
-Tuy nhiên, nếu đã và đang là người dùng sử dụng dịch vụ VNG Cloud, chúng tôi khuyến khích người dùng đăng nhập để nhận ước tính chi phí sử dụng một cách chính xác nhất và thuận tiện nhất:
+Tuy nhiên, nếu đã và đang là người dùng sử dụng dịch vụ GreenNode, chúng tôi khuyến khích người dùng đăng nhập để nhận ước tính chi phí sử dụng một cách chính xác nhất và thuận tiện nhất:
 
-1. Được áp dụng chỉ tiêu điều chỉnh giá: Đối với người dùng VNG Cloud, công cụ tính giá sẽ tự động áp dụng chỉ tiêu giảm giá trên từng dịch vụ (nếu có)
+1. Được áp dụng chỉ tiêu điều chỉnh giá: Đối với người dùng GreenNode, công cụ tính giá sẽ tự động áp dụng chỉ tiêu giảm giá trên từng dịch vụ (nếu có)
 2. Các dịch vụ đã đưa vào danh sách ước tính sẽ được lưu lại dùng cho lần sử dụng tiếp theo:
    1. **Đối với người dùng có đăng nhập:** Có thể truy cập vào công cụ tính giá ở bất cứ đâu cũng đều sẽ nhìn thấy các dịch vụ này, miễn là có đăng nhập đúng với thông tin người dùng,
    2. **Đối với người dùng chưa đăng nhập:** Các dịch vụ đã đưa vào danh sách ước tính sẽ lưu tạm trên thiết bị thực hiện, thay vì theo tài khoản. Do đó, người dùng sẽ không thấy được danh sách tính giá trước đó khi truy cập công cụ tính giá bằng thiết bị khác.

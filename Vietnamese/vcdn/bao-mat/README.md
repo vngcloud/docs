@@ -1,6 +1,6 @@
 # Bảo mật
 
-Bảo mật là một khía cạnh quan trọng của các dịch vụ Mạng phân phối Nội dung (CDN) để bảo vệ nội dung của bạn và đảm bảo trải nghiệm duyệt web an toàn. VNG Cloud cung cấp một môi trường đầy đủ các tính năng/yếu tố để đảm bảo cung cấp đến quý khách hàng dịch vụ đảm bảo an toàn thông tin như sau
+Bảo mật là một khía cạnh quan trọng của các dịch vụ Mạng phân phối Nội dung (CDN) để bảo vệ nội dung của bạn và đảm bảo trải nghiệm duyệt web an toàn. GreenNode cung cấp một môi trường đầy đủ các tính năng/yếu tố để đảm bảo cung cấp đến quý khách hàng dịch vụ đảm bảo an toàn thông tin như sau
 
 #### Các Tính Năng của CDN <a href="#security-vcdn-cactinhnangcuacdn" id="security-vcdn-cactinhnangcuacdn"></a>
 

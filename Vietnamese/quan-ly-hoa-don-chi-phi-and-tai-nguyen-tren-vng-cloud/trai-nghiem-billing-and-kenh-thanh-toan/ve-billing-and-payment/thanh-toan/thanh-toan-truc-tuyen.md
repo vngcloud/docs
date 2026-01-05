@@ -1,13 +1,13 @@
 # Thanh toán trực tuyến
 
-Thanh toán trực tuyến là 1 trong những phương thức thanh toán chính tại VNG Cloud Service. Hiện phương thức thanh toán trực tuyến áp dụng đối với:
+Thanh toán trực tuyến là 1 trong những phương thức thanh toán chính tại GreenNode Service. Hiện phương thức thanh toán trực tuyến áp dụng đối với:
 
 * **Đối tượng**:
   * Người dùng trả trước
 * **Nguồn tiền**:
-  * Ví VNG Cloud (Ví Credit)
+  * Ví GreenNode (Ví Credit)
   * Cổng thanh toán trực tuyến: MoMo, ZaloPay,...
-  *   Chuyển khoản trực tiếp tới tài khoản của VNG Cloud
+  *   Chuyển khoản trực tiếp tới tài khoản của GreenNode
 
       | <p>Tên tài khoản : CÔNG TY CỔ PHẦN DỊCH VỤ - DỮ LIỆU CÔNG NGHỆ THÔNG TIN VI NA<br>Số tài khoản : 04301010052860<br>Ngân hàng : Ngân hàng MSB/ Maritime Bank<br>(Ngân hàng TMCP Hàng Hải Việt Nam)<br>Chi nhánh : Tân Bình<br>Nội dung thanh toán : Mã đơn hàng</p> |
       | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -23,22 +23,22 @@ Thanh toán trực tuyến là 1 trong những phương thức thanh toán chín
   * Gửi mail thông báo thông tin cấu hình tài nguyên
   * Phát sinh các lịch sử giao dịch tại [Credit History](https://dashboard.console.vngcloud.vn/credit-history), [Payment History](https://dashboard.console.vngcloud.vn/payment-history), [Billing History](https://dashboard.console.vngcloud.vn/billing-report)
 
-#### Hiện tại, tính năng thanh toán trực tuyến tại VNG Cloud đang hỗ trợ các phương thức thanh toán sau: <a href="#thanhtoantructuyen-hientai-tinhnangthanhtoantructuyentaivngclouddanghotrocacphuongthucthanhtoansau" id="thanhtoantructuyen-hientai-tinhnangthanhtoantructuyentaivngclouddanghotrocacphuongthucthanhtoansau"></a>
+#### Hiện tại, tính năng thanh toán trực tuyến tại GreenNode đang hỗ trợ các phương thức thanh toán sau: <a href="#thanhtoantructuyen-hientai-tinhnangthanhtoantructuyentaivngclouddanghotrocacphuongthucthanhtoansau" id="thanhtoantructuyen-hientai-tinhnangthanhtoantructuyentaivngclouddanghotrocacphuongthucthanhtoansau"></a>
 
-* **Thanh toán bằng ví VNG Cloud (Credit)**
+* **Thanh toán bằng ví GreenNode (Credit)**
   * Thanh toán toàn bộ đơn hàng bằng Credit (với điều kiện đủ số dư khả dụng)
   * Trong trường hợp không đủ số dư Credit, người dùng có thể chọn:
     * **Top up & Pay**: Sử dụng toàn bộ số dư credit hiện có và phần còn thiếu sẽ được nạp thêm thông qua cổng thanh toán trực tuyến
 * **Thanh toán thông qua cổng thanh toán**
   * Thanh toán toàn bộ giá trị đơn hàng thông qua cổng thanh toán trực tuyến mà không ảnh hưởng đến ví Credit (hiện hỗ trợ các phương thức thanh toán như **MoMo, Zalo Pay,...**)
 
-Ngoài ra, khi chọn phương thức thanh toán thông qua cổng thanh toán, VNG Cloud Service cung cấp thêm một hình thức thanh toán khác, gọi là **Thanh toán hộ**
+Ngoài ra, khi chọn phương thức thanh toán thông qua cổng thanh toán, GreenNode Service cung cấp thêm một hình thức thanh toán khác, gọi là **Thanh toán hộ**
 
 ### **Thanh toán hộ** <a href="#thanhtoantructuyen-thanhtoanho" id="thanhtoantructuyen-thanhtoanho"></a>
 
 ***
 
-Thanh toán hộ sinh ra nhằm mục đích hỗ trợ khách hàng doanh nghiệp hoặc cá nhân là **người dùng trả trước** có nhu cầu sử dụng tài nguyên VNG Cloud Service nhưng phụ thuộc về mặt tài chính đối với cá nhân / doanh nghiệp khác.
+Thanh toán hộ sinh ra nhằm mục đích hỗ trợ khách hàng doanh nghiệp hoặc cá nhân là **người dùng trả trước** có nhu cầu sử dụng tài nguyên GreenNode Service nhưng phụ thuộc về mặt tài chính đối với cá nhân / doanh nghiệp khác.
 
 Hình thức thanh toán hộ chỉ khả dụng khi người dùng chọn thanh toán thông qua cổng thanh toán trực tuyến.
 
@@ -50,4 +50,4 @@ Tại bước xác nhận trừ tiền, thay vì nhấn chọn **Pay** / **Thanh
 * Bước 3: Người được ủy quyền truy cập vào url được gửi trong mail (với điều kiện url còn thời hạn)
 * Bước 4: Người được ủy quyền xác nhận thanh toán đơn hàng
 * Bước 5: Hệ thống sau khi xác nhận thành công sẽ tiến hành cung cấp tài nguyên.
-* Bước 6: Sau khi cung cấp tài nguyên thành công, hệ thống phát sinh hóa đơn tương ứng cho người dùng (người gửi yêu cầu thanh toán hộ). Trong trường hợp có lỗi trong quá trình cung cấp tài nguyên, hệ thống sẽ hoàn tiền vào ví VNG Cloud của người dùng (người gửi yêu cầu thanh toán hộ).
+* Bước 6: Sau khi cung cấp tài nguyên thành công, hệ thống phát sinh hóa đơn tương ứng cho người dùng (người gửi yêu cầu thanh toán hộ). Trong trường hợp có lỗi trong quá trình cung cấp tài nguyên, hệ thống sẽ hoàn tiền vào ví GreenNode của người dùng (người gửi yêu cầu thanh toán hộ).

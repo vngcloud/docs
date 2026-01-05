@@ -4,7 +4,7 @@ Trong quá trình sử dụng, người dùng vẫn có thể xóa Cross Connect
 
 **Bước 1: Gỡ tất cả các kết nối VPC trong Cross Connect**
 
-1. Truy cập thành công vào VNG Cloud, tại màn hình Console chọn đến dịch vụ vNetwork;
+1. Truy cập thành công vào GreenNode, tại màn hình Console chọn đến dịch vụ vNetwork;
 2. Tại thanh menu bên trái của giao diện vNetwork, chọn mục Cross Connect;
 3. Màn hình được điều hướng tới màn hình Danh sách Cross Connect;
 4. Tại màn hình danh sách các Cross Connect, nhấn chọn xem chi tiết Cross Connect mà có các kết nối VPC của Cross Connect đang muốn xóa;

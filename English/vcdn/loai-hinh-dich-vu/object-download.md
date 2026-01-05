@@ -2,7 +2,7 @@
 
 ## **Overview** <a href="#objectdownload-tongquan" id="objectdownload-tongquan"></a>
 
-VNG Cloud's Object Download service helps businesses: optimize costs, ensure flexibility, and easily adapt to a variety of terminal devices, thereby increasing customer satisfaction with the service with the ability to analyze multidimensional data in real time.
+GreenNode's Object Download service helps businesses: optimize costs, ensure flexibility, and easily adapt to a variety of terminal devices, thereby increasing customer satisfaction with the service with the ability to analyze multidimensional data in real time.
 
 ***
 

@@ -19,9 +19,9 @@ By implementing IAM, organizations/enterprises can achieve the following benefit
 * Simple User Management: IAM centralizes user management, making it easy to add, remove, or change user access across the cloud infrastructure.
 * Access and Single Sign-On (SSO): IAM enables the integration of external identity providers, enabling single sign-on (SSO) for users and minimizing the need for multiple authentications.
 
-3. **Key Goals of IAM in VNG Cloud**
+3. **Key Goals of IAM in GreenNode**
 
-IAM is a key component of the VNG Cloud security architecture, enhancing security and ensuring compliance with various regulations. Here is how IAM achieves these goals:
+IAM is a key component of the GreenNode security architecture, enhancing security and ensuring compliance with various regulations. Here is how IAM achieves these goals:
 
 * Secure Authentication: IAM enforces strong authentication mechanisms, ensuring that only authorized users can access cloud resources.
 * Authorization Control: IAM provides granular control over access through roles and policies, minimizing the risk of unauthorized access.
@@ -30,20 +30,20 @@ IAM is a key component of the VNG Cloud security architecture, enhancing securit
 * Auditing and Logging: IAM records administrative and access requests on resources, enabling comprehensive auditing and monitoring.
 * Compliance Support: IAM helps meet compliance requirements by providing granular access control and access logging.
 
-4. **Key Features of IAM in VNG Cloud**
+4. **Key Features of IAM in GreenNode**
 
-VNG Cloud provides a robust IAM solution, allowing you to securely manage access to cloud resources. Some of the key IAM features in VNG Cloud include:
+GreenNode provides a robust IAM solution, allowing you to securely manage access to cloud resources. Some of the key IAM features in GreenNode include:
 
 * User and Group Management: Create and manage IAM users and groups to control access to resources based on roles or responsibilities.
 * Access Management: Define and attach policies to control permissions granted to users, groups, or service accounts.
 * Custom IAM Policies: Write custom IAM policies to grant granular access control to resources.
-* Identity Provider: Integrate VNG Cloud with external identity providers to simplify single sign-on (SSO) and user management.
+* Identity Provider: Integrate GreenNode with external identity providers to simplify single sign-on (SSO) and user management.
 
 5. **IAM Concepts and Terminology**
 
 * **Root User Account**
 
-A Root User Account is an entity you first create in VNG Cloud and use, which by default has full access to all VNG Cloud products/services and resources in that account.
+A Root User Account is an entity you first create in GreenNode and use, which by default has full access to all GreenNode products/services and resources in that account.
 
 * **Users Accounts**
 
@@ -59,10 +59,10 @@ IAM Policies are JSON documents that define permissions and rules for accessing 
 
 * **Service Accounts**
 
-Service Account is an identity that you can create in your account that has specific permissions. A Service Account has some similarities to an IAM User Account. Service Accounts and IAM User Accounts are both identities with policies that define what the identity can and cannot do with VNG Cloud resources. However, a Service Account is an identity that is used by an application or machine, rather than an individual, to make authorized API calls and access specific resources.
+Service Account is an identity that you can create in your account that has specific permissions. A Service Account has some similarities to an IAM User Account. Service Accounts and IAM User Accounts are both identities with policies that define what the identity can and cannot do with GreenNode resources. However, a Service Account is an identity that is used by an application or machine, rather than an individual, to make authorized API calls and access specific resources.
 
 * **Identity Provider**
 
-Identity Provider allows you to integrate an external identity provider with VNG Cloud Services, allowing users to access cloud resources using existing credentials from the external identity provider. This eliminates the need for users to remember multiple sets of credentials for different systems and simplifies access management.&#x20;
+Identity Provider allows you to integrate an external identity provider with GreenNode Services, allowing users to access cloud resources using existing credentials from the external identity provider. This eliminates the need for users to remember multiple sets of credentials for different systems and simplifies access management.&#x20;
 
-In VNG Cloud, you can install an Identity Provider by configuring the connection settings between the external Identity Provider and VNG Cloud. Once installed, users from the external identity provider can log in with their existing credentials to access resources in VNG Cloud.
+In GreenNode, you can install an Identity Provider by configuring the connection settings between the external Identity Provider and GreenNode. Once installed, users from the external identity provider can log in with their existing credentials to access resources in GreenNode.

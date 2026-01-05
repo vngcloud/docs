@@ -7,7 +7,7 @@ Với vDB Kafka Cluster, bạn có thể nhanh chóng triển khai và quản l�
 1. Mở trình duyệt web và truy cập vào giao diện vDB Kafka Cluster theo đường dẫn tại đây: [https://vdb.console.vngcloud.vn/kafka/cluster](https://vdb.console.vngcloud.vn/kafka/cluster)
 2. Nếu bạn đã có tài khoản, hãy nhập thông tin đăng nhập của bạn.
 
-Tham khảo hướng dẫn đăng nhập vào VNG Cloud [tại đây](../../identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md).
+Tham khảo hướng dẫn đăng nhập vào GreenNode [tại đây](../../identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md).
 
 ## Bước 2: Tạo Cụm Kafka
 

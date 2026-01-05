@@ -6,7 +6,7 @@ Sử dụng tài liệu này để hiểu thêm về tính năng tự động gi
 
 * **Đối tượng:** Người dùng trả trước
 * **Tài nguyên**: Tất cả các tài nguyên cho phép tự động gia hạn và đang trong thời gian sử dụng.
-* **Nguồn tiền**: VNG Cloud Credit
+* **Nguồn tiền**: GreenNode Credit
 
 #### **2. Hướng dẫn bật/tắt tính năng "Tự động gia hạn"** <a href="#tudonggiahantainguyen-chinhsachvadieukhoan-2.huongdanbat-tattinhnang-tudonggiahan" id="tudonggiahantainguyen-chinhsachvadieukhoan-2.huongdanbat-tattinhnang-tudonggiahan"></a>
 
@@ -45,7 +45,7 @@ _Lưu ý: Hiện tại các dịch vụ trong sản phẩm vMonitor chưa hỗ t
 
 Tự động gia hạn tài nguyên là **tính năng của hệ thống**, giúp quá trình sử dụng tài nguyên của người dùng không bị gián đoạn tại thời điểm kết thúc tài nguyên (người dùng có nhu cầu tiếp tục sử dụng nhưng quên không thực hiện gia hạn trên hệ thống vì lý do nào đó).
 
-**Điều khoản áp dụng dành cho tính năng "Tự động gia hạn" trên VNG Cloud như sau:**
+**Điều khoản áp dụng dành cho tính năng "Tự động gia hạn" trên GreenNode như sau:**
 
 * Tài nguyên được mặc định **gia hạn thêm 1 tháng**, kể từ thời điểm kết thúc.  (Hệ thống sẽ thực hiện gia hạn tài nguyên vào 8:00 AM)
 * Người dùng cần chuẩn bị đủ số dư credit khả dụng theo như thông báo để hệ thống có thể tiến hành gia hạn

@@ -1,6 +1,6 @@
 # Location connect and Bandwidth
 
-The locations for VNG Cloud Interconnect are specific locations or data centers where you can establish Interconnect connections with cloud providers or other partners. These locations are identified to optimize the speed and performance of network connections between your infrastructure and cloud infrastructure or partner systems.
+The locations for GreenNode Interconnect are specific locations or data centers where you can establish Interconnect connections with cloud providers or other partners. These locations are identified to optimize the speed and performance of network connections between your infrastructure and cloud infrastructure or partner systems.
 
 Below are the locations where we will establish Interconnect connections to your location.
 

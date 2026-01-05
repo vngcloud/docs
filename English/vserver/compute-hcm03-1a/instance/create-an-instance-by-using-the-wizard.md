@@ -1,14 +1,14 @@
 # Create an instance by using the wizard
 
-Create a virtual server using the initialization process on VNG Cloud
+Create a virtual server using the initialization process on GreenNode
 
 Procedure: [Getting started](../getting-started/)
 
-The VNG Cloud portal provides a wizard for creating instances. This wizard lists all configuration information used to create an instance and guides you through creating an instance.
+The GreenNode portal provides a wizard for creating instances. This wizard lists all configuration information used to create an instance and guides you through creating an instance.
 
 ### **Preparations** <a href="#createaninstancebyusingthewizard-preparations" id="createaninstancebyusingthewizard-preparations"></a>
 
-Create an VNG Cloud account and complete the verification of account information.
+Create an GreenNode account and complete the verification of account information.
 
 You will need some credits to purchase later.
 
@@ -20,9 +20,9 @@ You must select an Images that contain the information required to run instances
 
 | **Image type**          | **Description**                                                                                                                                                                                                     | **Notes or References**                                           |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| OS Image / Public Image | Public images are base images provided by VNG Cloud that are fully tested. These images include Windows Server OS images and mainstream Linux OS images.                                                            | [{Image Page}](../image.md)                                       |
+| OS Image / Public Image | Public images are base images provided by GreenNode that are fully tested. These images include Windows Server OS images and mainstream Linux OS images.                                                            | [{Image Page}](../image.md)                                       |
 | My Image / Custom Image | Customer can create or import custom images. Custom images contain initial system environments, application environments, and software configurations. This eliminates the need for repeated manual configurations. | {Custom image Page}                                               |
-| GPU Image               | Image contains NVIDIA driver or NVIDIA Software that are tested by VNG Cloud. These images include Windows OS and Ubuntu OS images                                                                                  | Customer can select public image then install GPU driver if need. |
+| GPU Image               | Image contains NVIDIA driver or NVIDIA Software that are tested by GreenNode. These images include Windows OS and Ubuntu OS images                                                                                  | Customer can select public image then install GPU driver if need. |
 
 Select an Instance Type or Flavor that describes the resource CPU, Memory matching your requirement. You can follow the summary billing on the right panel.
 
@@ -34,13 +34,13 @@ Block Storage volumes are fully backed by SSD disk.
 
 The IOPS configuration is the performance quota of volume. Base on your application, you must select the right quota to archive the best experience.
 
-You can encrypt the volumes to meet the requirements of scenarios such as data security and regulatory compliance. Encryption Key is securely managed by the VNG Cloud KMS system and independent this instance OS workload.
+You can encrypt the volumes to meet the requirements of scenarios such as data security and regulatory compliance. Encryption Key is securely managed by the GreenNode KMS system and independent this instance OS workload.
 
 You can add more data volumes to instance to increase the capability at this step or later.
 
 ### **Complete the setting in Network configurations** <a href="#createaninstancebyusingthewizard-completethesettinginnetworkconfigurations" id="createaninstancebyusingthewizard-completethesettinginnetworkconfigurations"></a>
 
-You can make network and security group configurations to allow the instance to communicate with the Internet and other VNG Cloud resources in the VPC network.
+You can make network and security group configurations to allow the instance to communicate with the Internet and other GreenNode resources in the VPC network.
 
 A VPC is an isolated network dedicated for your use. You have full control over your VPC. For example, you can specify a private subnet and configure route tables and network policy for the VPC. See more at [{VPC Page}](../vpc/virtual-private-cloud-vpc.md).
 
@@ -60,7 +60,7 @@ If you do not want to configure security group-related parameters when you creat
 
 #### Authentication <a href="#createaninstancebyusingthewizard-authentication" id="createaninstancebyusingthewizard-authentication"></a>
 
-It’s recommended to use SSH Key to access your Linux Instance. You can create new SSH Key pair or import your public key to VNG Cloud. See more at [{SSH key page}](../security/ssh-key-key-pairs.md).
+It’s recommended to use SSH Key to access your Linux Instance. You can create new SSH Key pair or import your public key to GreenNode. See more at [{SSH key page}](../security/ssh-key-key-pairs.md).
 
 Additionally, you can provide your manual username and password that will be injected to you instances in order to access.
 

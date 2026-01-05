@@ -2,7 +2,7 @@
 
 ## **Tổng quan**
 
-Tài khoản người dùng Root (Root User Account) là tài khoản mà người dùng khởi tạo vào ngày đầu tiên truy cập và sử dụng dịch vụ trên VNG Cloud. Tài khoản Root User Account có đầy đủ quyền truy cập vào tất cả các dịch vụ và tài nguyên của người dùng. Khi tạo tài khoản VNG Cloud, bạn bắt đầu với một danh tính đăng nhập có toàn quyền truy cập vào tất cả các dịch vụ của VNG Cloud và tài nguyên trong tài khoản. Danh tính này được gọi là Root User Account và được truy cập bằng cách đăng nhập bằng địa chỉ email và mật khẩu mà bạn đã sử dụng để tạo tài khoản. Chúng tôi khuyến khích bạn không nên sử dụng tài khoản Root User Account cho các tác vụ hàng ngày của mình và chỉ sử dụng tài khoản này để thực hiện các tác vụ mà chỉ tài khoản Root User Account mới có thể thực hiện.
+Tài khoản người dùng Root (Root User Account) là tài khoản mà người dùng khởi tạo vào ngày đầu tiên truy cập và sử dụng dịch vụ trên GreenNode. Tài khoản Root User Account có đầy đủ quyền truy cập vào tất cả các dịch vụ và tài nguyên của người dùng. Khi tạo tài khoản GreenNode, bạn bắt đầu với một danh tính đăng nhập có toàn quyền truy cập vào tất cả các dịch vụ của GreenNode và tài nguyên trong tài khoản. Danh tính này được gọi là Root User Account và được truy cập bằng cách đăng nhập bằng địa chỉ email và mật khẩu mà bạn đã sử dụng để tạo tài khoản. Chúng tôi khuyến khích bạn không nên sử dụng tài khoản Root User Account cho các tác vụ hàng ngày của mình và chỉ sử dụng tài khoản này để thực hiện các tác vụ mà chỉ tài khoản Root User Account mới có thể thực hiện.
 
 ***
 
@@ -48,7 +48,7 @@ Mặc định, **Root User Account** sẽ có **toàn quyền** làm việc trê
 
 <summary>Bucket ACLs</summary>
 
-Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho 1 hoặc tất cả Root user khác. (Root user được cấp quyền truy cập qua ACLS phải là tài khoản được cấp quyền trên hệ thống VNG Cloud của chúng tôi). Để biết thêm thông tin, hãy xem tại [Sử dụng tính năng ACLs.](../cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-acls.md)
+Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho 1 hoặc tất cả Root user khác. (Root user được cấp quyền truy cập qua ACLS phải là tài khoản được cấp quyền trên hệ thống GreenNode của chúng tôi). Để biết thêm thông tin, hãy xem tại [Sử dụng tính năng ACLs.](../cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-acls.md)
 
 </details>
 

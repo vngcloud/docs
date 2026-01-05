@@ -5,7 +5,7 @@
 1. Đăng nhập vào [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) với tài khoản Root User Account.
 2. Chọn mục **Service Account**.
 3. Chọn **Create a Service Account.**
-4. Tại mục **Add information**, nhập **Name** mà bạn mong muốn. Tên của Service Account phải dài từ 1 (tối thiểu) đến 50 (tối đa) ký tự và chỉ có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), dấu gạch dưới (\_), dấu gạch ngang (-) và khoảng trắng( ). Tên của Service Account không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, mật khẩu đăng nhập,...) cũng như tên Service Account phải là duy nhất trên một tài khoản VNG Cloud cho đến khi Service Account đó bị xóa. Ví dụ tên Service Account sau là hợp lệ: SA\_Client\_tool\_01.
+4. Tại mục **Add information**, nhập **Name** mà bạn mong muốn. Tên của Service Account phải dài từ 1 (tối thiểu) đến 50 (tối đa) ký tự và chỉ có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), dấu gạch dưới (\_), dấu gạch ngang (-) và khoảng trắng( ). Tên của Service Account không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, mật khẩu đăng nhập,...) cũng như tên Service Account phải là duy nhất trên một tài khoản GreenNode cho đến khi Service Account đó bị xóa. Ví dụ tên Service Account sau là hợp lệ: SA\_Client\_tool\_01.
 5. Tại mục Trusted relationship, nhập Account Root IS nếu bạn muốn thêm thông tin liên kết giữa Service Account và Root User Account.
 6. Chọn **Next step**.
 7. Tại mục **Add permission**, bạn có thể:

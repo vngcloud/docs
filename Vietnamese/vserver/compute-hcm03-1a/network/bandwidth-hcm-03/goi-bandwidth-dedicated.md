@@ -11,7 +11,7 @@ Gói bandwidth Dedicated là gói bandwidth với tốc độ tùy chọn của 
 * Khi tạo một bandwidth, bạn có thể chọn mua gói một trong hai loại gói là Domestic bandwidth, International bandwidth hoặc có thể mua cả 2 gói tại một thời điểm.
 {% endhint %}
 
-**Bước 1**: Đăng nhập vào tài khoản VNG Cloud của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Bước 1**: Đăng nhập vào tài khoản GreenNode của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
 
 **Bước 2**: Trên danh sách menu bên trái, tại mục **Network**, chọn **Bandwidth**.
 
@@ -45,7 +45,7 @@ Gói bandwidth Dedicated là gói bandwidth với tốc độ tùy chọn của 
 
 ### Xem thông tin chi tiết gói
 
-**Bước 1**: Đăng nhập vào tài khoản VNG Cloud của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Bước 1**: Đăng nhập vào tài khoản GreenNode của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
 
 **Bước 2**: Trên danh sách menu bên trái, tại mục **Network**, chọn **Bandwidth**.
 
@@ -68,7 +68,7 @@ Gói bandwidth Dedicated là gói bandwidth với tốc độ tùy chọn của 
 
 Để thêm địa chỉ IP cho gói, bạn có thể thực hiện theo các bước:&#x20;
 
-**Bước 1**: Đăng nhập vào tài khoản VNG Cloud của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Bước 1**: Đăng nhập vào tài khoản GreenNode của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
 
 **Bước 2**: Trên danh sách menu bên trái, tại mục **Network**, chọn **Bandwidth**.
 
@@ -86,7 +86,7 @@ Gói bandwidth Dedicated là gói bandwidth với tốc độ tùy chọn của 
 
 Để thêm địa chỉ IP cho gói, bạn có thể thực hiện theo các bước:&#x20;
 
-**Bước 1**: Đăng nhập vào tài khoản VNG Cloud của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Bước 1**: Đăng nhập vào tài khoản GreenNode của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
 
 **Bước 2**: Trên danh sách menu bên trái, tại mục **Network**, chọn **Bandwidth**.
 
@@ -108,7 +108,7 @@ Gói bandwidth Dedicated là gói bandwidth với tốc độ tùy chọn của 
 
 Để thay đổi cấu hình gói, bạn có thể thực hiện theo các bước:&#x20;
 
-**Bước 1**: Đăng nhập vào tài khoản VNG Cloud của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Bước 1**: Đăng nhập vào tài khoản GreenNode của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
 
 **Bước 2**: Trên danh sách menu bên trái, tại mục **Network**, chọn **Bandwidth**.
 

@@ -1,6 +1,6 @@
 # Step 1: Create a project
 
-To start using the service, you need to create a project. A Project is a term on vStorage that represents a storage package with a specific capacity that you purchase on VNG Cloud. At any given time, you can own one or multiple projects concurrently and use them as a way to organize resources for different groups or departments with different purposes.
+To start using the service, you need to create a project. A Project is a term on vStorage that represents a storage package with a specific capacity that you purchase on GreenNode. At any given time, you can own one or multiple projects concurrently and use them as a way to organize resources for different groups or departments with different purposes.
 
 Follow these steps to create a project:
 
@@ -19,4 +19,4 @@ Additionally, we are supporting 3 available storage packages:
 * Silver: Suitable for backup storage, data with not too much access.
 * Archive: Suitable for long-term storage needs, minimum 6 months, low usage.
 
-The storage cost calculation for each project is publicly available on the VNG Cloud homepage, see [Charging Fee](https://docs.vngcloud.vn/display/VSEN/Charging+Fee).
+The storage cost calculation for each project is publicly available on the GreenNode homepage, see [Charging Fee](https://docs.vngcloud.vn/display/VSEN/Charging+Fee).

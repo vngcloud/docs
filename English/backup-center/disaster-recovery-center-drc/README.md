@@ -11,9 +11,9 @@ A Disaster Recovery Center (DRC) is an important strategy to protect your organi
 
 DRC helps you ensure business continuity by minimizing downtime and data loss when incidents occur.
 
-## VNG Cloud Disaster Recovery (vDRC) <a href="#vng-cloud-disaster-recovery-vdrc" id="vng-cloud-disaster-recovery-vdrc"></a>
+## GreenNode Disaster Recovery (vDRC) <a href="#vng-cloud-disaster-recovery-vdrc" id="vng-cloud-disaster-recovery-vdrc"></a>
 
-VNG Cloud DRC is a comprehensive service designed to help you effectively deploy a DR strategy across cloud resources in the VNG Cloud ecosystem. VNG Cloud DRC provides the tools and features needed to quickly and reliably backup, replicate, and restore your data and systems.
+GreenNode DRC is a comprehensive service designed to help you effectively deploy a DR strategy across cloud resources in the GreenNode ecosystem. GreenNode DRC provides the tools and features needed to quickly and reliably backup, replicate, and restore your data and systems.
 
 ### **vDRC Key Features** <a href="#cac-tinh-nang-chinh-vdrc" id="cac-tinh-nang-chinh-vdrc"></a>
 

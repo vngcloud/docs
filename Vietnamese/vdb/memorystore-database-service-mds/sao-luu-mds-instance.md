@@ -10,7 +10,7 @@ Bạn có thể tạo mới bản **Manual Backup**, **Restore** (khôi phục l
 
 ### A. Sao lưu theo nhu cầu (On-demand backup hay Manual backup) <a href="#saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup" id="saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup"></a>
 
-Khi bạn có nhu cầu tạo bản backup, bạn truy cập dịch vụ VNG Cloud và chọn đến màn hình quản lý backup. Màn hình này sẽ liệt kê tất cả các bản backup (manual & auto) của tất cả các DB Instance có trong tài khoản của bạn.
+Khi bạn có nhu cầu tạo bản backup, bạn truy cập dịch vụ GreenNode và chọn đến màn hình quản lý backup. Màn hình này sẽ liệt kê tất cả các bản backup (manual & auto) của tất cả các DB Instance có trong tài khoản của bạn.
 
 **Cách 1: Bạn nhấn vào nút Create Backup. Tại màn hình Create Backup, bạn lần lượt lựa chọn các thông tin sau**
 
@@ -45,7 +45,7 @@ vDBaaS hỗ trợ tính năng tự động sao lưu theo ngày tại thời đi�
   * Tại đây, bạn kéo xuống mục **Backup settings** và bạn có thể cấu hình các thông tin:
     * **Automatic daily backup:** bật tắt tính năng Automatic daily backup.
     * **Backup retention period:** xác định thời gian lưu trữ bản automatic backup. Nhằm giúp bạn tiết kiệm không gian lưu trữ, các bản automatic backup đã quá khoảng thời gian này sẽ bị xóa.
-    * **Backup time:** thời điểm quá trình tạo automatic backup diễn ra. VNG Cloud khuyến nghị bạn chọn thời điểm này vào khoảng thời gian thấp điểm nhất đối với hệ thống của bạn.
+    * **Backup time:** thời điểm quá trình tạo automatic backup diễn ra. GreenNode khuyến nghị bạn chọn thời điểm này vào khoảng thời gian thấp điểm nhất đối với hệ thống của bạn.
   * Sau khi chắc chắn rằng các thông tin đã chính xác, bạn nhấn vào nút **Save** và chờ một lát để quá trình thay đổi được thực thi.
 
 ### C. Khôi phục MDS Instance từ bản Backup <a href="#saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup" id="saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup"></a>

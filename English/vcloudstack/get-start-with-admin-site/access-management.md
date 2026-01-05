@@ -12,7 +12,7 @@ This article guides you on how to add users and grant permissions to use the vCl
 
 To add more Users to use the vCloudStack service system, the administrator needs to perform the following steps:
 
-**Step 1:** Administrator accesses VNG Cloud homepage ( [dashboard.console.vngcloud.vn](https://dashboard.console.vngcloud.vn/) )
+**Step 1:** Administrator accesses GreenNode homepage ( [dashboard.console.vngcloud.vn](https://dashboard.console.vngcloud.vn/) )
 
 **Step 2:** Select to go to **IAM Portal** page of IAM;
 
@@ -60,7 +60,7 @@ Admin uses the Entity URL and Reply URL just created, then returns to the **Micr
 
 To add 01 user to use the vCloudStack service system, the administrator needs to perform the following steps:
 
-**Step 1:** Administrator accesses VNG Cloud homepage ( [dashboard.console.vngcloud.vn](https://dashboard.console.vngcloud.vn/) )
+**Step 1:** Administrator accesses GreenNode homepage ( [dashboard.console.vngcloud.vn](https://dashboard.console.vngcloud.vn/) )
 
 **Step 2:** Select to go to **IAM Portal** page of IAM;
 
@@ -89,7 +89,7 @@ To add 01 user to use the vCloudStack service system, the administrator needs to
 
 To authorize ( **Policy** ) for Users to use the vCloudStack service system in the User Site and Admin Site portal, the administrator needs to perform the following steps:
 
-**Step 1:** Administrator accesses VNG Cloud homepage ( [dashboard.console.vngcloud.vn](https://dashboard.console.vngcloud.vn/) )
+**Step 1:** Administrator accesses GreenNode homepage ( [dashboard.console.vngcloud.vn](https://dashboard.console.vngcloud.vn/) )
 
 **Step 2:** Select to go to **IAM Portal** page of IAM;
 

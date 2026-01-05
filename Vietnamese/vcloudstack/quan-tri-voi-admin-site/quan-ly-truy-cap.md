@@ -12,7 +12,7 @@ Bài viết hướng dẫn cách thêm user và phân quyền để sử dụng 
 
 Để thêm nhiều User có thể sử dụng hệ thống dịch vụ vCloudStack, người quản trị (admin) cần thực hiện các bước như sau:
 
-**Bước 1:** Quản trị viên truy cập vào trang chủ của VNG Cloud ([dashboard.console.vngcloud.vn](https://dashboard.console.vngcloud.vn/))
+**Bước 1:** Quản trị viên truy cập vào trang chủ của GreenNode ([dashboard.console.vngcloud.vn](https://dashboard.console.vngcloud.vn/))
 
 **Bước 2:** Chọn đến trang **IAM Portal** của IAM;
 
@@ -58,7 +58,7 @@ Admin dùng Entity URL và Reply URL  vừa tạo, sau đó quay lại app **Mic
 
 Để thêm 01 user có thể sử dụng hệ thống dịch vụ vCloudStack, người quản trị (admin) cần thực hiện các bước như sau:
 
-**Bước 1:** Quản trị viên truy cập vào trang chủ của VNG Cloud ([dashboard.console.vngcloud.vn](https://dashboard.console.vngcloud.vn/))
+**Bước 1:** Quản trị viên truy cập vào trang chủ của GreenNode ([dashboard.console.vngcloud.vn](https://dashboard.console.vngcloud.vn/))
 
 **Bước 2:** Chọn đến trang **IAM Portal** của IAM;
 
@@ -85,7 +85,7 @@ Admin dùng Entity URL và Reply URL  vừa tạo, sau đó quay lại app **Mic
 
 Để Phân quyền (**Policy**) cho User có thể sử dụng hệ thống dịch vụ vCloudStack ở portal User Site và Admin Site, người quản trị (admin) cần thực hiện các bước như sau:
 
-**Bước 1:** Quản trị viên truy cập vào trang chủ của VNG Cloud ([dashboard.console.vngcloud.vn](https://dashboard.console.vngcloud.vn/))
+**Bước 1:** Quản trị viên truy cập vào trang chủ của GreenNode ([dashboard.console.vngcloud.vn](https://dashboard.console.vngcloud.vn/))
 
 **Bước 2:** Chọn đến trang **IAM Portal** của IAM;
 

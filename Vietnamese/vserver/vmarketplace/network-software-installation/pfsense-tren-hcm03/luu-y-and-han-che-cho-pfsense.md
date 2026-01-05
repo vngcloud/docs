@@ -2,7 +2,7 @@
 
 ## Default MTU: <a href="#luuy-and-hanchechopfsense-defaultmtu" id="luuy-and-hanchechopfsense-defaultmtu"></a>
 
-Default MTU của Pfsense là **1500**. Bạn cần chỉnh thông số này cho phù hợp cấu hình của VNG Cloud là **1450**.
+Default MTU của Pfsense là **1500**. Bạn cần chỉnh thông số này cho phù hợp cấu hình của GreenNode là **1450**.
 
 * **Bước 1:** Truy cập vào giao diện quản lý của pfsense, chọn tab interfaces và cấu hình lần lượt cho mạng WAN (hoặc LAN đang sử dụng).
 

@@ -1,6 +1,6 @@
 # vMarketplace
 
-Chào mừng bạn đến với **vMarketplace - VNG cloud**, một trung tâm cung cấp các giải pháp đám mây của chúng tôi nhằm tối ưu hóa quy trình truy cập của bạn đến nhiều ứng dụng và dịch vụ từ bên thứ ba. Khám phá vMarketplace để mang lại những giải pháp sáng tạo, nhằm nâng cao và mở rộng khả năng cơ sở hạ tầng đám mây của bạn. Tìm hiểu, lựa chọn, và tích hợp một loạt các công cụ, ứng dụng và dịch vụ từ **vMarketplace** đáp ứng những yêu cầu đặc biệt của doanh nghiệp.&#x20;
+Chào mừng bạn đến với **vMarketplace - GreenNode**, một trung tâm cung cấp các giải pháp đám mây của chúng tôi nhằm tối ưu hóa quy trình truy cập của bạn đến nhiều ứng dụng và dịch vụ từ bên thứ ba. Khám phá vMarketplace để mang lại những giải pháp sáng tạo, nhằm nâng cao và mở rộng khả năng cơ sở hạ tầng đám mây của bạn. Tìm hiểu, lựa chọn, và tích hợp một loạt các công cụ, ứng dụng và dịch vụ từ **vMarketplace** đáp ứng những yêu cầu đặc biệt của doanh nghiệp.&#x20;
 
 #### Danh sách ứng dụng <a href="#vmarketplace-newversion-danhsachungdung" id="vmarketplace-newversion-danhsachungdung"></a>
 

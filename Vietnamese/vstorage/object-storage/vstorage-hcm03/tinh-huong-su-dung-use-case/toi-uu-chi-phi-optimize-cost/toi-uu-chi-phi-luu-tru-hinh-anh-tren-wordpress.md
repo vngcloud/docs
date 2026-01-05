@@ -65,7 +65,7 @@ Secret Key: \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*&#x20;
 
 2\. Tick chọn **có** tại: Queue Deletes, Delete From Storage, Delete Uploaded Files, Upload Images, Upload Videos Files, Upload Audio Files, Upload Documents.&#x20;
 
-3\. Tại phần cấu hình CDN URL: nếu bạn có sử dụng một dịch vụ CDN như **vCDN** của VNG Cloud, bạn có thể cấu hình thêm **Endpoint** của vCDN tại đây. Nếu không, bạn có thể để đuờng dẫn đến container trên vStorage.&#x20;
+3\. Tại phần cấu hình CDN URL: nếu bạn có sử dụng một dịch vụ CDN như **vCDN** của GreenNode, bạn có thể cấu hình thêm **Endpoint** của vCDN tại đây. Nếu không, bạn có thể để đuờng dẫn đến container trên vStorage.&#x20;
 
 4\. Để lấy link public của container trên vStorage, bạn có thể **upload** thử một file sample bất kì lên container, click chọn vào và xem đuờng link trước tên file sample.&#x20;
 

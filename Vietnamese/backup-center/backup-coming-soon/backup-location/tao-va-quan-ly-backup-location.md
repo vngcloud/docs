@@ -17,7 +17,7 @@ Backup Location là một tính năng hữu ích cho phép bạn tạo ra các v
 
 #### Các bước thực hiện:
 
-1. **Đăng nhập:** Đăng nhập vào tài khoản quản lý dịch vụ VNG Cloud.
+1. **Đăng nhập:** Đăng nhập vào tài khoản quản lý dịch vụ GreenNode.
 2. **Truy cập vào phần quản lý Backup Location:** Tìm và chọn mục "Backup Location" tại đây [https://backupcenter.console.vngcloud.vn/backup-location/list](https://backupcenter.console.vngcloud.vn/backup-location/list)
 3. **Tạo mới:** Nhấp vào nút "Create backup location", một cửa sổ giao diện hiện lên cho bạn điền các thông tin cần thiết.
 4. **Điền thông tin:**

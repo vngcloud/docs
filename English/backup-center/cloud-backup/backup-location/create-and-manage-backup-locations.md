@@ -17,7 +17,7 @@ Backup Location is a useful feature that allows you to create separate storage l
 
 **Steps to follow:**
 
-1. **Login:** Log in to your VNG Cloud service management account.
+1. **Login:** Log in to your GreenNode service management account.
 2. **Access the Backup Location management section:** Find and select "Backup Location" here [https://backupcenter.console.vngcloud.vn/backup-location/list](https://backupcenter.console.vngcloud.vn/backup-location/list)
 3. **Create new:** Click the "Create backup location" button, an interface window appears for you to fill in the necessary information.
 4. **Fill in information:**

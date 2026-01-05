@@ -2,7 +2,7 @@
 
 #### Tổng quan <a href="#storagegateway-tongquan" id="storagegateway-tongquan"></a>
 
-Storage Gateway là dịch vụ cung cấp cổng kết nối giữa hạ tầng vật lý của khách hàng và dịch vụ lưu trữ trên cloud. Storage Gateway hỗ trợ các giao thức lưu trữ tiêu chuẩn như: NFS, SMB, CIFS. Với Storage Gateway của VNG Cloud, khách hàng thay vì phải tự cấu hình với các câu lệnh phức tạp thì có thể làm chỉ thông qua giao diện web portal.
+Storage Gateway là dịch vụ cung cấp cổng kết nối giữa hạ tầng vật lý của khách hàng và dịch vụ lưu trữ trên cloud. Storage Gateway hỗ trợ các giao thức lưu trữ tiêu chuẩn như: NFS, SMB, CIFS. Với Storage Gateway của GreenNode, khách hàng thay vì phải tự cấu hình với các câu lệnh phức tạp thì có thể làm chỉ thông qua giao diện web portal.
 
 Mô hình triển khai storage gateway&#x20;
 

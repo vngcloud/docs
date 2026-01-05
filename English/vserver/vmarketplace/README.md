@@ -1,6 +1,6 @@
 # vMarketplace
 
-Welcome to vMarketplace - VNG Cloud, our one-stop shop for cloud solutions. We're here to streamline your access to a wide range of third-party apps and services, empowering you to enhance and expand your cloud infrastructure capabilities. Explore vMarketplace to discover innovative solutions that meet your business's unique needs. Find, choose, and integrate a variety of tools, applications, and services from vMarketplace to address your specific requirements.
+Welcome to vMarketplace - GreenNode, our one-stop shop for cloud solutions. We're here to streamline your access to a wide range of third-party apps and services, empowering you to enhance and expand your cloud infrastructure capabilities. Explore vMarketplace to discover innovative solutions that meet your business's unique needs. Find, choose, and integrate a variety of tools, applications, and services from vMarketplace to address your specific requirements.
 
 **Application List**
 

@@ -2,7 +2,7 @@
 
 **Use case name: "Modern Integration: Combining Cloud and Data Center with Hybrid Interconnect"**
 
-_Customer:_ Company Y is an organization with its own data center and is also using cloud services such as Amazon Web Services (AWS) and VNG Cloud to expand their infrastructure and applications.
+_Customer:_ Company Y is an organization with its own data center and is also using cloud services such as Amazon Web Services (AWS) and GreenNode to expand their infrastructure and applications.
 
 _Issue:_ Company Y is facing challenges in managing and integrating two different environments: the traditional data center and the cloud environment. They want to leverage the benefits of both to improve the performance and flexibility of their network infrastructure.
 

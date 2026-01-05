@@ -1,8 +1,8 @@
 # Invoice management
 
-Use this document as a guide to help you manage and control your invoices when using services at VNG Cloud Service.&#x20;
+Use this document as a guide to help you manage and control your invoices when using services at GreenNode Service.&#x20;
 
-Here, we provide users with a comprehensive and detailed view of how invoices are processed at the VNG Cloud Service level, such as Invoice initiation time, Invoice information, Invoice payment time, and View invoice list.
+Here, we provide users with a comprehensive and detailed view of how invoices are processed at the GreenNode Service level, such as Invoice initiation time, Invoice information, Invoice payment time, and View invoice list.
 
 ## Invoice initiation time
 

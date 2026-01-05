@@ -73,7 +73,7 @@ Quan trọng
 
 ### **Bước 5.1: Tạo Service account (Cho việc sử dụng Terraform)** <a href="#quanlydinhdanhvatruycap-iam-chovserver-buoc5.1-taoserviceaccount-choviecsudungterraform" id="quanlydinhdanhvatruycap-iam-chovserver-buoc5.1-taoserviceaccount-choviecsudungterraform"></a>
 
-Các bước trên chỉ cho phép chúng ta khởi tạo User account để đăng nhập vào trình điều khiển vServer và trực tiếp khởi tạo tài nguyên tại đó, trường hợp bạn muốn khởi tạo các tài nguyên thuộc đám mây của VNG Cloud bằng **Terraform**, bạn cần phải khởi tạo một **Service Account**:
+Các bước trên chỉ cho phép chúng ta khởi tạo User account để đăng nhập vào trình điều khiển vServer và trực tiếp khởi tạo tài nguyên tại đó, trường hợp bạn muốn khởi tạo các tài nguyên thuộc đám mây của GreenNode bằng **Terraform**, bạn cần phải khởi tạo một **Service Account**:
 
 1. Mở tab Service account tại [https://iam.console.vngcloud.vn/service-accounts](https://iam.console.vngcloud.vn/service-accounts)
 2. Chọn **Create a service account**
@@ -101,7 +101,7 @@ Bước cuối cùng là sử dụng **IAM User Account** truy cập vào tài n
 
 1. Truy cập vào đường dẫn: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
 2. Nếu trước đây bạn chưa đăng nhập bằng trình duyệt này, trang đăng nhập chính sẽ xuất hiện. Chọn **ĐĂNG NHẬP VỚI IAM USER ACCOUNT**.
-3. Nhập địa chỉ **email** của người dùng Root khi đăng ký tài khoản VNG Cloud.
+3. Nhập địa chỉ **email** của người dùng Root khi đăng ký tài khoản GreenNode.
 4. Nhập **tên người dùng** và **mật khẩu** của tài khoản IAM user account (User account) được tạo trên hệ thống IAM.
 5. Chọn **ĐĂNG NHẬP VỚI IAM USER ACCOUNT**.\
    Nếu trước đó bạn đã đăng nhập với tư cách người dùng IAM user account trong trình duyệt này, thì trình duyệt của bạn có thể nhớ địa chỉ tài khoản IAM user account. Nếu vậy, bạn sẽ thấy màn hình hiển thị ở bước 3. \

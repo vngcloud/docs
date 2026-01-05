@@ -25,7 +25,7 @@ Let's say you want to create an HTTPS listener for a web application running on 
 * **Protocol:** HTTPS
 * **Port:** 443
 * **Default Action:** Forward to Target Group (your group of backend web servers)
-* **SSL Certificate:** Select the appropriate SSL/TLS certificate from your VNG Cloud account.
+* **SSL Certificate:** Select the appropriate SSL/TLS certificate from your GreenNode account.
 
 With this configuration, the listener will listen for HTTPS traffic on port 443, decrypt the traffic using the provided SSL certificate, and then forward the decrypted traffic to the healthy backend servers in your target group.
 

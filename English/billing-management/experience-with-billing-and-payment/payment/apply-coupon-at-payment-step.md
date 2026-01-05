@@ -1,6 +1,6 @@
 # Apply coupon at payment step
 
-A Coupon is a discount code provided by VNG Cloud. The Coupon can only be used for the vServer, vStorage, vCDN, vDB, vMonitor, and vWAF products when paying for services from these products.&#x20;
+A Coupon is a discount code provided by GreenNode. The Coupon can only be used for the vServer, vStorage, vCDN, vDB, vMonitor, and vWAF products when paying for services from these products.&#x20;
 
 To use a Coupon, simply follow these steps:
 

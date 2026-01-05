@@ -1,6 +1,6 @@
 # Bảo mật quyền hạn truy cập
 
-Để đảm bảo an toàn về quyền hạn truy cập tới dữ liệu metrics, logs trên vMonitor Platform, chúng tôi đang sử dụng giải pháp phân quyền là dịch vụ **Quản lý danh tính và truy cập (IAM)**. Dịch vụ **Quản lý danh tính và truy cập (IAM)** là một giải pháp phân quyền hiệu quả để đảm bảo an toàn về quyền hạn truy cập tới dữ liệu trên VNG Cloud nói chung và vMonitor Platform nói riêng. Bằng cách sử dụng IAM, doanh nghiệp có thể đảm bảo rằng chỉ những người dùng có quyền truy cập cần thiết mới có thể truy cập vào dữ liệu của họ. Điều này giúp bảo vệ dữ liệu khỏi bị truy cập trái phép.
+Để đảm bảo an toàn về quyền hạn truy cập tới dữ liệu metrics, logs trên vMonitor Platform, chúng tôi đang sử dụng giải pháp phân quyền là dịch vụ **Quản lý danh tính và truy cập (IAM)**. Dịch vụ **Quản lý danh tính và truy cập (IAM)** là một giải pháp phân quyền hiệu quả để đảm bảo an toàn về quyền hạn truy cập tới dữ liệu trên GreenNode nói chung và vMonitor Platform nói riêng. Bằng cách sử dụng IAM, doanh nghiệp có thể đảm bảo rằng chỉ những người dùng có quyền truy cập cần thiết mới có thể truy cập vào dữ liệu của họ. Điều này giúp bảo vệ dữ liệu khỏi bị truy cập trái phép.
 
 Dưới đây là một số lợi ích cụ thể của việc sử dụng IAM để bảo mật dữ liệu trên vMonitor Platform:
 

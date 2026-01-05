@@ -1,6 +1,6 @@
 # Trình khám phá chi phí
 
-**Trình khám phá chi phí / Cost explorer** tại vConsole cung cấp thống kê, dự đoán chi phí sử dụng trong tháng của các sản phẩm VNG Cloud Service.
+**Trình khám phá chi phí / Cost explorer** tại vConsole cung cấp thống kê, dự đoán chi phí sử dụng trong tháng của các sản phẩm GreenNode Service.
 
 **Trước mắt, Cost explorer chỉ hỗ trợ dự đoán chi phí dịch vụ của các sản phẩm / dịch vụ sau:**
 
@@ -27,7 +27,7 @@ Truy cập đến trang **Trình khám phá chi phí / Cost explorer** [**tại 
 
 **Current month cost / Phí sử dụng trong tháng hiển thị các số liệu về:**
 
-* Chi phí sử dụng dịch vụ VNG Cloud (chỉ tính các sản phẩm được vConsole hỗ trợ), tính từ đầu tháng đến thời điểm hiện tại
+* Chi phí sử dụng dịch vụ GreenNode (chỉ tính các sản phẩm được vConsole hỗ trợ), tính từ đầu tháng đến thời điểm hiện tại
 * So sánh chênh lệch phí (tăng / giảm bao nhiêu %) từ đầu tháng đến thời điểm hiện tại so với phí sử dụng thực tế của tháng trước
 * Công thức tính tỉ lệ (%) chênh lệch giá: Tỉ lệ % = (Chi phí hiện tại \*100 / Tổng chi phí tháng trước) - 100
   * Nếu tỉ lệ % >= 0 : Tăng so với tháng trước
@@ -39,7 +39,7 @@ Truy cập đến trang **Trình khám phá chi phí / Cost explorer** [**tại 
 
 **Forecast month cost / Dự đoán phí sử dụng hiển thị các số liệu về:**
 
-* Dự đoán chi phí sử dụng dịch vụ VNG Cloud (chỉ tính các sản phẩm được vConsole hỗ trợ), **từ đầu tháng đến cuối tháng hiện tại (tính tại thời điểm truy cập)**. vConsole dựa trên xu hướng sử dụng dịch vụ của người dùng từ đầu tháng đến thời điểm hiện tại, từ đó dự đoán chi phí sử dụng đến hết tháng.
+* Dự đoán chi phí sử dụng dịch vụ GreenNode (chỉ tính các sản phẩm được vConsole hỗ trợ), **từ đầu tháng đến cuối tháng hiện tại (tính tại thời điểm truy cập)**. vConsole dựa trên xu hướng sử dụng dịch vụ của người dùng từ đầu tháng đến thời điểm hiện tại, từ đó dự đoán chi phí sử dụng đến hết tháng.
 * So sánh chênh lệch phí dự đoán (tăng / giảm bao nhiêu %) so với phí sử dụng thực tế của tháng trước
 * Công thức tính tỉ lệ (%) chênh lệch giá: Tỉ lệ % = (Tổng chi phí dự đoán tháng này \*100 / Tổng chi phí tháng trước) - 100
   * Nếu tỉ lệ % >= 0 : Tăng so với tháng trước
@@ -60,7 +60,7 @@ Truy cập đến trang **Trình khám phá chi phí / Cost explorer** [**tại 
 
 ***
 
-**Biểu đồ và bảng biểu thống kê chi phí sử dụng dịch vụ VNG Cloud (tính trên các sản phẩm được vConsole hỗ trợ)**
+**Biểu đồ và bảng biểu thống kê chi phí sử dụng dịch vụ GreenNode (tính trên các sản phẩm được vConsole hỗ trợ)**
 
 * Các sản phẩm hiện đang được hỗ trợ dự đoán giá bởi vConsole:&#x20;
   * **vServer:** Server, Image, Volume, Elastic IP, vContainer (K8s), vLB (Load balancer), vDB
@@ -81,4 +81,4 @@ Truy cập đến trang **Trình khám phá chi phí / Cost explorer** [**tại 
   * Dữ liệu chỉ tính trên các sản phẩm / dịch vụ được hỗ trợ ghi nhận bởi Cost Explorer (xem bảng đầu trang để biết thêm chi tiết)
 * Cost Explorer chỉ hiển thị dữ liệu trong tháng (từ đầu tháng đến thời điểm trong cập), chưa hỗ trợ xem nhiều tháng trong quá khứ
 * Đơn giá dùng để tính giá tại Cost Explorer là ban giá hiện hành, do đó số liệu tại Cost Explorer sẽ **phản ánh gần đúng nhất đối với hành vị sử dụng của người dùng trả sau**, **với người dùng trả trước, sẽ có 1 chút sai lệch** trong các trường hợp sau:
-  * **Người dùng trả trước** thanh toán phí dịch vụ trong tháng với đơn giá áp dụng là mức giá A, nhưng tại thời điểm truy cập vào Cost Explorer, bảng giá hiện hành tại VNG Cloud Service có sự thay đổi lên / xuống mức giá B, do đó dữ liệu mà người dùng thấy sẽ không phản ánh chính xác chi phí sử dụng thực tế đã chi trả.
+  * **Người dùng trả trước** thanh toán phí dịch vụ trong tháng với đơn giá áp dụng là mức giá A, nhưng tại thời điểm truy cập vào Cost Explorer, bảng giá hiện hành tại GreenNode Service có sự thay đổi lên / xuống mức giá B, do đó dữ liệu mà người dùng thấy sẽ không phản ánh chính xác chi phí sử dụng thực tế đã chi trả.

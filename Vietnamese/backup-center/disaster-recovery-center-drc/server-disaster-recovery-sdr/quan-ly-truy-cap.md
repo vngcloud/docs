@@ -1,6 +1,6 @@
 # Quản lý truy cập
 
-Khi triển khai và quản lý Server Disaster Recovery (SDR) trên VNG Cloud, việc thiết lập chính sách truy cập và phân quyền (IAM) là rất quan trọng để đảm bảo an ninh và kiểm soát chặt chẽ các hoạt động liên quan đến DR. Tham khảo bài viết dưới đây để tiến hành quản lý truy cập và phân quyền trên SDR
+Khi triển khai và quản lý Server Disaster Recovery (SDR) trên GreenNode, việc thiết lập chính sách truy cập và phân quyền (IAM) là rất quan trọng để đảm bảo an ninh và kiểm soát chặt chẽ các hoạt động liên quan đến DR. Tham khảo bài viết dưới đây để tiến hành quản lý truy cập và phân quyền trên SDR
 
 ## 1. Danh sách endpoint
 
@@ -8,14 +8,14 @@ Khi triển khai và quản lý Server Disaster Recovery (SDR) trên VNG Cloud, 
 
 ## **2. Danh sách VNG Managed DR Policies**  <a href="#iamforvserver-2.danhsachvngmanagedpolicies" id="iamforvserver-2.danhsachvngmanagedpolicies"></a>
 
-VNG Managed Policy là các Chính Sách IAM (IAM Policy) được tạo mặc định bởi hệ thống IAM VNG Cloud. Các Chính Sách này được quản lý bởi chính VNG Cloud nhằm mục đích hỗ trợ người dùng trong việc cài đặt nhanh chóng các quyền truy cập cần thiết cho các tài khoản người dùng IAM đối với các tài nguyên của từng Product cụ thể. Cùng tìm hiểu danh sách VNG Managed Policies cho DR:
+VNG Managed Policy là các Chính Sách IAM (IAM Policy) được tạo mặc định bởi hệ thống IAM GreenNode. Các Chính Sách này được quản lý bởi chính GreenNode nhằm mục đích hỗ trợ người dùng trong việc cài đặt nhanh chóng các quyền truy cập cần thiết cho các tài khoản người dùng IAM đối với các tài nguyên của từng Product cụ thể. Cùng tìm hiểu danh sách VNG Managed Policies cho DR:
 
 * [DRFullAccess:](https://iam.console.vngcloud.vn/policies/76de3567-c57c-4167-b304-9133f9af7daf) Bao gồm toàn quyền truy cập đến các tài nguyên thuộc Disaster Recovery Center
 * [DRReadOnlyAccess:](https://iam.console.vngcloud.vn/policies/3d44e007-fcd1-4d6f-85b9-f3981ef286a1) Chỉ bao gồm quyền Đọc (Read) trên các tài nguyên thuộc hệ Disaster Recovery Center
 
 ## 3. Bắt đầu sử dụng IAM với DRC
 
-Hướng dẫn này nhằm hướng dẫn người dùng có thể nhanh chóng bắt đầu sử dụng IAM trong các dịch vụ DRC bằng cách sử dụng quyền mặc định **(được định nghĩa bởi VNG Cloud Managed Policies)** cho hệ thống DRC gọi là **DRFullAccess.** Tuy nhiên, các tính năng, dịch vụ tại DRC có liên kết và thừa hưởng từ vServer, do đó, để có thể phân quyền trên DRC, bạn cần chú ý thêm các quyền tương ứng của vServer (các quyền trên Server, Volume,...)
+Hướng dẫn này nhằm hướng dẫn người dùng có thể nhanh chóng bắt đầu sử dụng IAM trong các dịch vụ DRC bằng cách sử dụng quyền mặc định **(được định nghĩa bởi GreenNode Managed Policies)** cho hệ thống DRC gọi là **DRFullAccess.** Tuy nhiên, các tính năng, dịch vụ tại DRC có liên kết và thừa hưởng từ vServer, do đó, để có thể phân quyền trên DRC, bạn cần chú ý thêm các quyền tương ứng của vServer (các quyền trên Server, Volume,...)
 
 ### **3.1 Truy cập IAM Console**
 

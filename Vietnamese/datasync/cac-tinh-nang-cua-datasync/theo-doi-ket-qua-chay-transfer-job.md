@@ -35,7 +35,7 @@ Khi Transfer Job của bạn đang chạy hoặc đã chạy hoàn thành, bạn
 
 **Bước 4.3: Kiểm tra thông tin tại Monitor**
 
-1. Hiển thị biểu đồ thống kê về tiến trình transfer dữ liệu. Cứ mỗi 60s thì chúng tôi sẽ thu thập các metric thành 1 điểm dữ liệu, chi tiết bạn có thể thao khảo tại [Làm việc với Metric Information](../../vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/lam-viec-voi-metruc-information.md) để biết thêm cách làm việc với chúng. Hoặc bạn có thể chọn các khung thời gian để xem biểu đồ tại vùng <img src="http://docs.vngcloud.vn/download/thumbnails/73761255/image2024-3-14_10-26-31.png?version=1&#x26;modificationDate=1710386792108&#x26;api=v2" alt="" data-size="original">.Trên VNG Cloud DataSync, các metric được hiển thị thông qua biểu đồ bao gồm:&#x20;
+1. Hiển thị biểu đồ thống kê về tiến trình transfer dữ liệu. Cứ mỗi 60s thì chúng tôi sẽ thu thập các metric thành 1 điểm dữ liệu, chi tiết bạn có thể thao khảo tại [Làm việc với Metric Information](../../vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/lam-viec-voi-metruc-information.md) để biết thêm cách làm việc với chúng. Hoặc bạn có thể chọn các khung thời gian để xem biểu đồ tại vùng <img src="http://docs.vngcloud.vn/download/thumbnails/73761255/image2024-3-14_10-26-31.png?version=1&#x26;modificationDate=1710386792108&#x26;api=v2" alt="" data-size="original">.Trên GreenNode DataSync, các metric được hiển thị thông qua biểu đồ bao gồm:&#x20;
    * **Data throughput** (byte/s): số byte được truyền tải trên mỗi giây.
    * **File throughput** (file/s): số file được truyền tải trên mỗi giây.
    * **Object transfer error** (file): số file bị lỗi trong quá trình transfer.

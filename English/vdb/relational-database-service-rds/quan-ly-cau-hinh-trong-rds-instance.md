@@ -22,7 +22,7 @@ Once you confirm the information is correct, click **CREATE CONFIGURATION GROUP*
 To configure the values of the Configuration Group, click the name of the Configuration Group. You can then view all the configuration parameters, which include:
 
 * **Name**: The parameter's name.
-* **Value**: The current configuration value for the parameter. By default, VNG Cloud does not configure any parameters and keeps the database engine’s default values.
+* **Value**: The current configuration value for the parameter. By default, GreenNode does not configure any parameters and keeps the database engine’s default values.
 * **Allowed Values**: The allowed values for each parameter.
 * **Data Type**: The data type of the value that can be applied to this configuration parameter.
 
@@ -36,7 +36,7 @@ After entering or selecting the value, you can click **Save** immediately, or cl
 
 The configuration changes will be applied to all RDS Instances associated or about to be associated with this Configuration Group. You can go back to the **Database Management Screen** to monitor the configuration application process. If successful, the RDS Instance will show the status **ACTIVE**.
 
-**Note**: In some cases, changing a configuration parameter may require restarting the database service on the RDS Instance. In this case, the RDS Instance status will change to **RESTART\_REQUIRED**. With VNG Cloud, you can control when to perform this action. After backing up the tasks on the RDS Instance, click **ACTION** and choose **RESTART** to complete the process.
+**Note**: In some cases, changing a configuration parameter may require restarting the database service on the RDS Instance. In this case, the RDS Instance status will change to **RESTART\_REQUIRED**. With GreenNode, you can control when to perform this action. After backing up the tasks on the RDS Instance, click **ACTION** and choose **RESTART** to complete the process.
 
 #### C - Linking RDS Instances to Configuration Groups
 

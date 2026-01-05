@@ -1,8 +1,8 @@
-# MTU & “DF flag” best practice on VNG Cloud
+# MTU & “DF flag” best practice on GreenNode
 
 The default MTU on the Internet is 1500 bytes, but virtualization technology requires additional Extended Headers, which makes the actual value less than 1500 bytes.
 
-Currently, VNG Cloud infrastructure supports Interface MTU values of 1450 bytes. Therefore, after encapsulation of protocol/application headers, the packet sent out of the VM is recommended to be ≤ 1450 bytes (1).
+Currently, GreenNode infrastructure supports Interface MTU values of 1450 bytes. Therefore, after encapsulation of protocol/application headers, the packet sent out of the VM is recommended to be ≤ 1450 bytes (1).
 
 If the VM sends packets with an MTU larger than the supported MTU value, it leads to "packet fragmentation." The original packet will be divided into smaller packets for transmission and reassembled at the destination. This is a normal process that occurs when data is transmitted over the Internet. "Packet fragmentation" will meet most customer needs.
 
@@ -13,10 +13,10 @@ However, for certain specific services like Voice SIP (UDP), VPN Tunnel (IPSec/G
 
 When both conditions occur simultaneously, the infrastructure may drop the packet from the virtual machine.
 
-Therefore, VNG Cloud encourages customers to proactively reduce the MTU value during initialization if they are using "MTU-sensitive services that require the 'DF flag'" in one of the following ways to minimize risks when using the service:
+Therefore, GreenNode encourages customers to proactively reduce the MTU value during initialization if they are using "MTU-sensitive services that require the 'DF flag'" in one of the following ways to minimize risks when using the service:
 
 1. Modify the Application/Service configuration to remove unnecessary Headers (e.g., custom SIP Headers, IPSec Authentication and Encryption Algorithm).
-2. Change the VM's MTU (for VMs using custom flavors not following the standard VNG Cloud) to 1450 (or smaller if needed).
+2. Change the VM's MTU (for VMs using custom flavors not following the standard GreenNode) to 1450 (or smaller if needed).
    *   PFSense: WEB UI - Interfaces - WAN - MTU = 1450&#x20;
 
        <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

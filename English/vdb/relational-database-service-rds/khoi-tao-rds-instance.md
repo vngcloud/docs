@@ -6,7 +6,7 @@ To initialize RDS Instacne, you can refer to the detailed steps in the instructi
 
 First, you access the vDB service interface in 2 ways as follows:
 
-* Method 1: Access the VNG Cloud homepage at the link: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/) . At the main interface, you find the **vServer service and select the vDB Relational** service in the list of vServer products/services.
+* Method 1: Access the GreenNode homepage at the link: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/) . At the main interface, you find the **vServer service and select the vDB Relational** service in the list of vServer products/services.
 * Method 2: Directly access the vDB Relational homepage at the link: [https://vdb.console.vngcloud.vn/relational/database](https://vdb.console.vngcloud.vn/relational/database)
 
 ## Initialize RDS instance <a href="#khoi-tao-rds-instance" id="khoi-tao-rds-instance"></a>
@@ -22,7 +22,7 @@ At the Database management interface, click **Create Database** . The initializa
   * **Storage Size** : hard drive size for storing data (including database data and logs).
 * **Step 3 Install DB version:** you choose
   * **Master username** : you will use this user to administer the database instance.
-  * **Master password** : password of master user. VNG Cloud recommends that you set a strong password and store this password in a safe place. To ensure information security, the password must meet all of the following minimum requirements:
+  * **Master password** : password of master user. GreenNode recommends that you set a strong password and store this password in a safe place. To ensure information security, the password must meet all of the following minimum requirements:
     * Password must be between 8-32 characters long.
       * Allowed characters include: AZ, az, 0-9 and special characters.
       * Allowed special characters include: !#$%&()\*+-.:<=>?@\[]^\_{|}\~
@@ -32,7 +32,7 @@ At the Database management interface, click **Create Database** . The initializa
   * **The Cloud Network (VPC & Subnet)** that will be used for this RDS Instance. Every RDS Instance must be connected to a Cloud Network. If you do not have a Cloud Network, you can create a new Cloud Network with the instructions [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc) .
   * **Public Access:** If you want RDS Instance to have Public IP and be accessible from the Internet, you need to enable Public **Accessibility . If you want RDS Instance to have only Private IP and only Cloud Servers can access it, you need to disable Public** Accessibility.
 
-**Note** : The choice of whether or not Public Accessibility is only selected once at this initialization time. You cannot change this setting later. For enhanced security, VNG Cloud allows you to limit the trusted IP addresses allowed to access each RDS Instance through **Security Group Rules** .
+**Note** : The choice of whether or not Public Accessibility is only selected once at this initialization time. You cannot change this setting later. For enhanced security, GreenNode allows you to limit the trusted IP addresses allowed to access each RDS Instance through **Security Group Rules** .
 
 * **Step 5 DB Options:** In **DB Options** , you can configure
   * **Database Name** : Select the database name that will be automatically created.
@@ -40,7 +40,7 @@ At the Database management interface, click **Create Database** . The initializa
 * **Step 6 Backup settings:** In the **Backup** section , you can configure:
   * **Automatic daily backup** : enable/disable the feature to automatically create daily backups at a pre-selected time.
   * **Backup retention period** : the period of time for storing automatic backups. Automatic backups that are stored beyond this period will be automatically deleted from the system. This parameter does not affect the life cycle of backups that you create manually.
-  * **Backup time** : the time to create automatic backups. VNG Cloud recommends that you configure this time at the time of day with the lowest system traffic, usually from 12AM - 5AM.
+  * **Backup time** : the time to create automatic backups. GreenNode recommends that you configure this time at the time of day with the lowest system traffic, usually from 12AM - 5AM.
 
 After configuring, in the **Summary** section on the right, you review the information, when all information is correct, you click **Create Database** to complete the process **.** During the initialization process, RDS Instance will have the status **Building** or **Build** . If the initialization is successful, RDS Instance will have the status **Active** .
 
@@ -51,4 +51,4 @@ By default, the RDS Instance created will have 3 users available:
 * 2 system users are root@localhost & [os\_admin@127.0.0.1](mailto:os_admin@127.0.0.1) .
 * 1 master user helps you access and manage RDS Instance.
 
-Two system users are created for VNG Cloud to serve automatic tasks such as creating backups, configuring replication, restoring... and you do not need to care about these users. However, deleting these two system users will cause system errors for RDS Instance and make the above features ineffective. VNG Cloud will not be responsible if you try to delete the two system users but will still support you as best as possible to restore them for you.
+Two system users are created for GreenNode to serve automatic tasks such as creating backups, configuring replication, restoring... and you do not need to care about these users. However, deleting these two system users will cause system errors for RDS Instance and make the above features ineffective. GreenNode will not be responsible if you try to delete the two system users but will still support you as best as possible to restore them for you.

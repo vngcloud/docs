@@ -4,9 +4,9 @@
 
 Bạn có thể sử dụng 3 loại tài khoản để truy cập vào vMonitor Platform. Chi tiết 3 loại này bao gồm:
 
-* **Root user account:** Là tài khoản [khởi tạo đầu tiên](https://register.vngcloud.vn/signup) để truy cập vào VNG Cloud với đầy đủ quyền truy cập vào tất cả dịch vụ tài nguyên trên VNG Cloud.
+* **Root user account:** Là tài khoản [khởi tạo đầu tiên](https://register.vngcloud.vn/signup) để truy cập vào GreenNode với đầy đủ quyền truy cập vào tất cả dịch vụ tài nguyên trên GreenNode.
 * **IAM user account (User account):** Là tài khoản được tạo ra từ tài khoản Root user account duy nhất với những quyền truy cập phụ thuộc vào chính sách cho phép truy cập được thiết lập từ Root user account.
-* **Service account:** Tài khoản được sử dụng bởi 1 ứng dụng/máy, thực hiện các lệnh gọi API được ủy quyền và truy cập các tài nguyên được chỉ định trên VNG Cloud.
+* **Service account:** Tài khoản được sử dụng bởi 1 ứng dụng/máy, thực hiện các lệnh gọi API được ủy quyền và truy cập các tài nguyên được chỉ định trên GreenNode.
 
 Trước khi có thể sử dụng 2 loại tài khoản **IAM user account** và **Service Account**, bạn cần thực hiện theo các bước:&#x20;
 

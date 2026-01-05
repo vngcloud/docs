@@ -2,7 +2,7 @@
 
 ### Step 1: Create a Log project <a href="#batdauvoilogs-buoc1-khoitaologproject" id="batdauvoilogs-buoc1-khoitaologproject"></a>
 
-To start using the service, you need to create a Log project. A Log project is a term on the vMonitor Platform that represents a log monitoring package with specific capacity and duration that you purchase on VNG Cloud. At any given time, you can own one or multiple Log projects simultaneously and use them as a way to organize resources for different teams or departments for various purposes.
+To start using the service, you need to create a Log project. A Log project is a term on the vMonitor Platform that represents a log monitoring package with specific capacity and duration that you purchase on GreenNode. At any given time, you can own one or multiple Log projects simultaneously and use them as a way to organize resources for different teams or departments for various purposes.
 
 Implement project creation according to the steps below:
 
@@ -16,7 +16,7 @@ Implement project creation according to the steps below:
 8. Select **Buy Log Quota.**
 9. Perform the **Checkout** steps for the cart, and after successful payment, a **Log Project** will be initiated.
 
-The cost calculation for each log project package is publicly available on the VNG Cloud homepage; please refer to the Pricing section.
+The cost calculation for each log project package is publicly available on the GreenNode homepage; please refer to the Pricing section.
 
 ***
 

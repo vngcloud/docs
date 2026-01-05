@@ -4,11 +4,11 @@ hidden: true
 
 # vContainer
 
-Container service on VNG CLOUD is a Kubernetes-based service that ensures high efficiency for businesses by running container applications on the Cloud.
+Container service on GreenNode is a Kubernetes-based service that ensures high efficiency for businesses by running container applications on the Cloud.
 
 Kubernetes manages clusters of vServer instances and runs containers on those instances with deployment, maintenance, and scaling workflows. Using Kubernetes, you can run any type of application that is contained within the same toolset on-premises and in the Cloud.
 
-### **Container architecture on VNG Cloud:** <a href="#vcontainer-containerarchitectureonvngcloud" id="vcontainer-containerarchitectureonvngcloud"></a>
+### **Container architecture on GreenNode:** <a href="#vcontainer-containerarchitectureonvngcloud" id="vcontainer-containerarchitectureonvngcloud"></a>
 
 ![](https://vngcloud.vn/documents/20126/1650480/vng-cloud-product-vcontainer-activity-diagram.jpg)
 

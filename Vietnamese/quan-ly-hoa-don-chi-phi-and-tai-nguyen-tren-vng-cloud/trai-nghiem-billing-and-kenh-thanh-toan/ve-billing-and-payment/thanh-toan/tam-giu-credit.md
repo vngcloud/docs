@@ -2,28 +2,28 @@
 
 ## Tổng quan
 
-Tại VNG Cloud Service, có một số tài nguyên / dịch vụ đặc thù chỉ dành cho người dùng trả sau vì một số lý do sau:
+Tại GreenNode Service, có một số tài nguyên / dịch vụ đặc thù chỉ dành cho người dùng trả sau vì một số lý do sau:
 
 * Không thể tính giá thành sử dụng tài nguyên ngay tại thời điểm phát sinh
 * Giá tiền sử dụng tài nguyên chỉ có thể được tính dựa trên sử dụng thực tế của người dùng.
 
 Do đó, người dùng trả trước không thể thực hiện thanh toán chi phí để sử dụng các tài nguyên đặc biệt (có thể kể đến như dịch vụ vContainer) này ngay tại thời điểm khởi tạo.
 
-Nhận thấy nhu cầu sử dụng các tài nguyên / dich vụ trả sau của người dùng trả trước tăng cao, VNG Cloud Service cho ra đời tính năng **Tạm giữ Credit (Hold Credit):**
+Nhận thấy nhu cầu sử dụng các tài nguyên / dich vụ trả sau của người dùng trả trước tăng cao, GreenNode Service cho ra đời tính năng **Tạm giữ Credit (Hold Credit):**
 
 * **Đối tượng áp dụng**:
   * Người dùng trả trước
 * **Tài nguyên / Dịch vụ áp dụng**:
   * Hiên tại đang hỗ trợ các dịch vụ vContainer, Snapshot, Repository (vCR), Bandwidth, GLB
 * **Nguồn tiền**:
-  * VNG Cloud Credit
+  * GreenNode Credit
 * **Tác vụ:**
   * Người dùng chọn cấu hình tài nguyên cần sử dụng
   * Xác nhận thực hiện tạm giữ credit tại trang thanh toán
 * **Kết quả khi hoàn thành tác vụ:**
   * Hệ thống tiến hành tạm giữ credit: Số credit bị tạm giữ người dùng sẽ không được sử dụng cho mục đích khác. Bạn có thể kiểm tra số dư credit đang bị tạm giữ (holding) hay chính là chi phí cho các resource holding bằng cách:
     * **Bước 1:** Truy cập vào portal của VNGCloud
-    * **Bước 2:** Chọn vào phần hiển thị thông tin credit như hình bên dưới. Tại đây, bạn sẽ nhìn thấy phần credit đang được holding bởi VNG Cloud.
+    * **Bước 2:** Chọn vào phần hiển thị thông tin credit như hình bên dưới. Tại đây, bạn sẽ nhìn thấy phần credit đang được holding bởi GreenNode.
 
 <figure><img src="../../../../.gitbook/assets/Xem thong tin hold credit (1).png" alt=""><figcaption></figcaption></figure>
 

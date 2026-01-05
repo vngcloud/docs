@@ -15,7 +15,7 @@ You can install vMonitor Platform Metric Agent into your Kubernetes Cluster to c
 **2. Create a Service Account and attach policy: vMonitorMetricPush to have enough rights to push Metric to vMonitor Platform.** To create a service account, go here [,](https://iam.console.vngcloud.vn/service-accounts) then perform the following steps:
 
 * Select " **Create a Service Account** ", enter a name for the Service Account and click **Next Step** to assign permissions to the Service Account
-* Find and select **Policy: vMonitorMetricPush,** then click " **Create a Service Account** " to create a Service Account, Policy: vMonitorMetricPush created by VNG Cloud only contains the correct permission to push metrics to the system.
+* Find and select **Policy: vMonitorMetricPush,** then click " **Create a Service Account** " to create a Service Account, Policy: vMonitorMetricPush created by GreenNode only contains the correct permission to push metrics to the system.
 * After successful creation, you need to save **the Client\_ID** and **Secret\_Key** to perform the next step.
 
 ### **Install helm on Debian/Ubuntu server**

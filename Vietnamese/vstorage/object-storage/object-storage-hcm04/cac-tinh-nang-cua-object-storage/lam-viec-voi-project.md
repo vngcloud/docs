@@ -2,7 +2,7 @@
 
 ## Tổng quan
 
-Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên VNG Cloud. **Với Region HCM04, tại một thời điểm&#x20;**<mark style="color:red;">**bạn có thể sở hữu tối đa 10 Project**</mark>**&#x20;và sử dụng chúng để tổ chức lưu trữ dữ liệu của bạn.**
+Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên GreenNode. **Với Region HCM04, tại một thời điểm&#x20;**<mark style="color:red;">**bạn có thể sở hữu tối đa 10 Project**</mark>**&#x20;và sử dụng chúng để tổ chức lưu trữ dữ liệu của bạn.**
 
 ***
 
@@ -15,7 +15,7 @@ Các quy tắc sau áp dụng cho việc đặt tên project trong vStorage:
 * Tên project phải dài từ 1 (tối thiểu) đến 40 (tối đa) ký tự.
 * Tên project chỉ có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), khoảng trắng ( ), dấu gạch dưới (\_), dấu gạch ngang (-) và ký tự @.
 * Tên project không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, tên tài khoản, mật khẩu đăng nhập,...).
-* Tên project phải là duy nhất trên một tài khoản VNG Cloud trong hoặc ngoài một region cho đến khi project đó bị xóa. Chúng tôi khuyến khích tên dự án hoặc sản phẩm của doanh nghiệp bạn được sử dụng như tên của project lưu trữ trong vStorage.
+* Tên project phải là duy nhất trên một tài khoản GreenNode trong hoặc ngoài một region cho đến khi project đó bị xóa. Chúng tôi khuyến khích tên dự án hoặc sản phẩm của doanh nghiệp bạn được sử dụng như tên của project lưu trữ trong vStorage.
 
 **Ví dụ minh họa**
 
@@ -227,7 +227,7 @@ Tính năng Tự động tăng dung lượng lưu trữ (Auto-scale Quota) trên
 
 ## Thực hiện POC project
 
-Khi bạn là người dùng trên hệ thống vStorage, mặc định bạn sẽ không thể thực hiện POC project. POC là chương trình giúp khách hàng có thể trải nghiệm dịch vụ thông qua giá trị (bằng credit trong ví POC) được VNG Cloud cung cấp cho khách hàng. Thông thường, ví POC sẽ được cấp thông qua các chương trình khuyến mãi, các chương trình chiến dịch quảng bá của VNG Cloud. Qua đó, khách hàng có thể tự trải nghiệm tạo một số dịch vụ nhất định trong khoảng thời gian quy định. Để thực hiện POC project, bạn hãy liên hệ với nhân viên Sale hoặc nhân viên hỗ trợ trực tiếp cho bạn hoặc mở một ticket support trên hệ thống của chúng tôi. Ví POC được cấp có giá trị nhất định được dùng trong khoảng thời gian quy định tùy theo chính sách của công ty. Hết thời gian hiệu lực, bạn có thể yêu cầu gia hạn thời hạn sử dụng ví POC hoặc trả thêm chi phí để duy trì dịch vụ.
+Khi bạn là người dùng trên hệ thống vStorage, mặc định bạn sẽ không thể thực hiện POC project. POC là chương trình giúp khách hàng có thể trải nghiệm dịch vụ thông qua giá trị (bằng credit trong ví POC) được GreenNode cung cấp cho khách hàng. Thông thường, ví POC sẽ được cấp thông qua các chương trình khuyến mãi, các chương trình chiến dịch quảng bá của GreenNode. Qua đó, khách hàng có thể tự trải nghiệm tạo một số dịch vụ nhất định trong khoảng thời gian quy định. Để thực hiện POC project, bạn hãy liên hệ với nhân viên Sale hoặc nhân viên hỗ trợ trực tiếp cho bạn hoặc mở một ticket support trên hệ thống của chúng tôi. Ví POC được cấp có giá trị nhất định được dùng trong khoảng thời gian quy định tùy theo chính sách của công ty. Hết thời gian hiệu lực, bạn có thể yêu cầu gia hạn thời hạn sử dụng ví POC hoặc trả thêm chi phí để duy trì dịch vụ.
 
 Sau khi chúng tôi xác nhận đã cung cấp ví POC cho tài khoản của bạn, để sử dụng ví POC hãy làm theo hướng dẫn bên dưới:
 

@@ -10,8 +10,8 @@ If you have not enabled the Snapshot service, SDR will automatically enable it f
 
 **Note:**
 
-* Activating the Snapshot service may incur additional costs. Please refer to VNG Cloud's pricing table for more details.
-* You can check the activation status of the Snapshot service in the Volume management section on VNG Cloud Console.
+* Activating the Snapshot service may incur additional costs. Please refer to GreenNode's pricing table for more details.
+* You can check the activation status of the Snapshot service in the Volume management section on GreenNode Console.
 
 **Summary:**
 

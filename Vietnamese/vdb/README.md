@@ -1,6 +1,6 @@
 # vDB
 
-VNG CLOUD Database as a Service (vDB) là dịch vụ cho phép dễ dàng thiết lập, vận hành và mở rộng cơ sở dữ liệu doanh nghiệp trên nền tảng điện toán đám mây của VNG CLOUD. vDB cung cấp khả năng tự động hóa các tác vụ như là khởi tạo phần cứng, cài đặt cơ sở dữ liệu, sao lưu và phục hồi với mức chi phí hiệu quả. Khi sử dụng vDB, khách hàng có thể hoàn toàn tập trung vào việc xây dựng và chạy ứng dụng của mình.
+GreenNode Database as a Service (vDB) là dịch vụ cho phép dễ dàng thiết lập, vận hành và mở rộng cơ sở dữ liệu doanh nghiệp trên nền tảng điện toán đám mây của GreenNode. vDB cung cấp khả năng tự động hóa các tác vụ như là khởi tạo phần cứng, cài đặt cơ sở dữ liệu, sao lưu và phục hồi với mức chi phí hiệu quả. Khi sử dụng vDB, khách hàng có thể hoàn toàn tập trung vào việc xây dựng và chạy ứng dụng của mình.
 
 vDB gồm nhiều loại dịch vụ cho từng loại cơ sở dữ liệu , hiện nay chúng tôi đang cung cấp:&#x20;
 

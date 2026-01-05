@@ -1,5 +1,5 @@
 ---
-description: VNG Cloud Endpoint là điểm kết nối giữa VPC với các dịch vụ của VNG Cloud
+description: GreenNode Endpoint là điểm kết nối giữa VPC với các dịch vụ của GreenNode
 ---
 
 # Tạo mới Endpoint
@@ -24,11 +24,11 @@ description: VNG Cloud Endpoint là điểm kết nối giữa VPC với các d�
 
 &#x20;         \- **Chọn Region/Zone**: Chọn region và Zone tương ứng (vd: HCM-1A, HCM-1B, ...)
 
-&#x20;         \- **Chọn dịch vụ**: Chọn một dịch vụ của VNG Cloud mà Endpoint kết nối đến trong danh sách các dịch vụ vServer, vStorage, vMonitor, vCR, IAM.     &#x20;
+&#x20;         \- **Chọn dịch vụ**: Chọn một dịch vụ của GreenNode mà Endpoint kết nối đến trong danh sách các dịch vụ vServer, vStorage, vMonitor, vCR, IAM.     &#x20;
 
 &#x20;         \- **Service Package**: Gói dịch vụ Endpoint cung cấp mặc định cấu hình 1 gói Standard, người dùng không cần chọn gói dịch vụ
 
-* Chọn VPC, Subnet muốn kết nối với các dịch vụ của VNG Cloud qua service endpoint
+* Chọn VPC, Subnet muốn kết nối với các dịch vụ của GreenNode qua service endpoint
 * Nếu VPC có hỗ trợ DNS, tùy chọn "Bật tên DNS riêng" sẽ bật để chọn. Nếu bật tùy chọn này thì khi truy cập dịch vụ không cần phải addhost, domain sẽ tự phân giải bởi dịch vụ DNS.
 * Nếu VPC không hỗ trợ DNS, tùy chọn "Bật tên DNS riêng" sẽ mặc định tắt. Cần phải addhost để có thể truy cập được dịch vụ.
 * Kiểm tra thông tin giá dịch vụ tại “**Summary**”
@@ -82,7 +82,7 @@ Thêm bản ghi host trên các máy chủ cần truy cập dịch vụ qua  End
 
 ### **2/ Đối với Endpoint được tạo mà VPC có hỗ trợ DNS**
 
-Khi sử dụng Private Endpoint, khách hàng có thể truy cập các dịch vụ của VNG Cloud thông qua mạng riêng thay vì qua Internet công cộng. Đặc biệt, nếu Private Endpoint được **hỗ trợ DNS**, việc truy cập trở nên đơn giản và liền mạch hơn nhờ khả năng **ghi đè bản ghi DNS (A record)**.
+Khi sử dụng Private Endpoint, khách hàng có thể truy cập các dịch vụ của GreenNode thông qua mạng riêng thay vì qua Internet công cộng. Đặc biệt, nếu Private Endpoint được **hỗ trợ DNS**, việc truy cập trở nên đơn giản và liền mạch hơn nhờ khả năng **ghi đè bản ghi DNS (A record)**.
 
 #### Cơ chế hoạt động DNS với Private Endpoint
 

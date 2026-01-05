@@ -8,7 +8,7 @@ Private Locations cho phép bạn theo dõi các ứng dụng/dịch vụ nằm 
 2. Chọn thư mục **Synthetic test.**
 3. Chọn **Location.**
 4. Chọn **Create a location.**
-5. Bước kế tiếp **chọn API Key** để có thông tin xác thực giữa Private Location và VNG Cloud và chọn S**ave & Get Installation Guide** để hệ thống sinh ra các cấu hình và câu lệnh cần thiết để bạn cài đặt
+5. Bước kế tiếp **chọn API Key** để có thông tin xác thực giữa Private Location và GreenNode và chọn S**ave & Get Installation Guide** để hệ thống sinh ra các cấu hình và câu lệnh cần thiết để bạn cài đặt
 
 <figure><img src="../../../../.gitbook/assets/image (924).png" alt=""><figcaption></figcaption></figure>
 

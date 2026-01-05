@@ -25,7 +25,7 @@ Updating.
 
 ### Example: Installation guide Veeam Backup & Replication version 12
 
-1. After customers download the Veeam Backup & Replication installer (or contact the VNG Cloud technical team for assistance in downloading the software), they should select the Veeam setup file and click Install to begin the installation process.
+1. After customers download the Veeam Backup & Replication installer (or contact the GreenNode technical team for assistance in downloading the software), they should select the Veeam setup file and click Install to begin the installation process.
 
 <figure><img src="../../../.gitbook/assets/image (245).png" alt="" width="465"><figcaption></figcaption></figure>
 

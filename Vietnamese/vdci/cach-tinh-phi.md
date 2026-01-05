@@ -23,7 +23,7 @@ Dịch vụ được tính phí theo hai hình thức:
 
 ## **4. Mạng và băng thông**
 
-* Chính sách tính phí tương tự các gói **Bandwidth trả phí tại VNG Cloud**.
+* Chính sách tính phí tương tự các gói **Bandwidth trả phí tại GreenNode**.
 * Chi tiết biểu phí băng thông tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vserver/compute-hcm03-1a/network/bandwidth-hcm-03).
 
 ## **5. Chi phí bổ sung (nếu có)**

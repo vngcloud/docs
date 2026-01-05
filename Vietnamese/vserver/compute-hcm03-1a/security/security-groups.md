@@ -54,23 +54,23 @@ Bạn có thể thực hiện các thao tác sau để sử dụng Security Grou
 
 #### Tạo security group <a href="#securitygroups-taosecuritygroup" id="securitygroups-taosecuritygroup"></a>
 
-1. Vào trang VNG Cloud Portal console, đến trang Security Group
+1. Vào trang GreenNode Portal console, đến trang Security Group
 2. Tạo security group với tên và mô tả theo ý muốn
 
 #### Xem chi tiết security group <a href="#securitygroups-xemchitietsecuritygroup" id="securitygroups-xemchitietsecuritygroup"></a>
 
-1. Vào trang VNG Cloud Portal console, đến trang Security Group
+1. Vào trang GreenNode Portal console, đến trang Security Group
 2. Chọn security group cần xem và nhấn **Detail,** bạn có thể xem nội dung chi tiết của các rule inbound và outbound. Mục **Server** hiển thị các máy chủ ảo đang được gán với security group này.
 
 #### Thêm và xóa rule đối với security groups <a href="#securitygroups-themvaxoaruledoivoisecuritygroups" id="securitygroups-themvaxoaruledoivoisecuritygroups"></a>
 
-1. Vào trang VNG Cloud Portal console, đến trang Security Group
+1. Vào trang GreenNode Portal console, đến trang Security Group
 2. Chọn security group cần thao tác và nhấn **Detail**
 3. Chuyển sang mục Inbound hoặc Outbound để thao tác thêm hoặc xóa rules
 4. Để thêm rule mới, bạn phải cung cấp các thông tin như giao thức, port, CIDR như mong muốn
 
 #### Gắn và tháo gỡ security groups đối với máy chủ ảo <a href="#securitygroups-ganvathaogosecuritygroupsdoivoimaychuao" id="securitygroups-ganvathaogosecuritygroupsdoivoimaychuao"></a>
 
-1. Vào trang VNG Cloud Portal console, đến trang Instance
+1. Vào trang GreenNode Portal console, đến trang Instance
 2. Chọn máy chủ ảo cần thao tác, chọn **Update Security** trong menu action bên phải
 3. Gắn thêm hoặc gỡ bỏ Security Groups khỏi danh sách

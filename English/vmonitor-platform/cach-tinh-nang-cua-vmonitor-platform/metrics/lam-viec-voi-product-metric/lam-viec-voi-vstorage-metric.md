@@ -1,6 +1,6 @@
 # Working with vStorage-Metric
 
-When you create vStorage Projects, the system will automatically collect vStorage metrics and display them in the Infrastructure List/vStorage tab, allowing you to track vStorage Projects on VNG Cloud completely free of charge.
+When you create vStorage Projects, the system will automatically collect vStorage metrics and display them in the Infrastructure List/vStorage tab, allowing you to track vStorage Projects on GreenNode completely free of charge.
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fz8gVc1pi4GlcrabKqDJ9%252Fimage.png%3Falt%3Dmedia%26token%3D25b7f092-9653-4643-8090-4d926a3adcaf&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=369c9a14&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 

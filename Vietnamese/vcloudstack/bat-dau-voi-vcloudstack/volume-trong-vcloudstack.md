@@ -13,7 +13,7 @@ Khi sử dụng volume, các thông tin cần lưu ý sau:
 * Boot volume không thể bị gỡ khỏi máy chủ ảo
 * Data volume có thể được thao tác gắn vào hoặc gỡ khỏi các máy chủ ảo khác nhau
 * Bạn có thể chọn mức QoS cho volume theo thông tin Volume Type để giới hạn băng thông và IOPS
-* Bạn có thể lựa chọn chức năng mã hóa khi tạo volume để bảo vệ dữ liệu. VNG Cloud hỗ trợ mã hóa aes-xts-plan64 (128 bits)
+* Bạn có thể lựa chọn chức năng mã hóa khi tạo volume để bảo vệ dữ liệu. GreenNode hỗ trợ mã hóa aes-xts-plan64 (128 bits)
 
 ***
 

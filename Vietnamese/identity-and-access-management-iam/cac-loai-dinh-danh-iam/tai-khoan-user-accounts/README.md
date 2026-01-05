@@ -1,11 +1,11 @@
 # Tài khoản User Accounts
 
-Trong VNG Cloud Services, việc tạo tài khoản người dùng IAM và nhóm là một quy trình dễ dàng thông qua giao diện điều khiển quản lý IAM. Nó nhằm cấp quyền truy cập vào các dịch vụ và tài nguyên trên tài khoản của bạn mà không chia sẻ thông tin bảo mật nhạy cảm.
+Trong GreenNode Services, việc tạo tài khoản người dùng IAM và nhóm là một quy trình dễ dàng thông qua giao diện điều khiển quản lý IAM. Nó nhằm cấp quyền truy cập vào các dịch vụ và tài nguyên trên tài khoản của bạn mà không chia sẻ thông tin bảo mật nhạy cảm.
 
 #### Quản lý User Account <a href="#useraccounts-quanlyuseraccount" id="useraccounts-quanlyuseraccount"></a>
 
-* **Root User Account:** Một tài khoản Root là một thực thể bạn tạo đầu tiên trong VNG Cloud và nó có đầy đủ quyền truy cập vào tất cả các dịch vụ và tài nguyên của VNG Cloud.
-* **IAM User Account:** IAM User Account là một thực thể đại diện cho người sử dụng nó tương tác với VNG Cloud trên giao diện Portal. Một IAM User Account trong VNG Cloud bao gồm các thông tin đăng nhập (tên người dùng, mật khẩu) và mặc định bị từ chối quyền truy cập. IAM User Account không phải là các tài khoản riêng biệt; chúng là người dùng trong cùng một tài khoản Root và không cần phải có phương thức thanh toán được lưu trữ trong VNG Cloud. Bất kỳ hoạt động nào được thực hiện bởi các IAM User Account trong tài khoản Root của bạn sẽ được tính phí cho tài khoản Root.
+* **Root User Account:** Một tài khoản Root là một thực thể bạn tạo đầu tiên trong GreenNode và nó có đầy đủ quyền truy cập vào tất cả các dịch vụ và tài nguyên của GreenNode.
+* **IAM User Account:** IAM User Account là một thực thể đại diện cho người sử dụng nó tương tác với GreenNode trên giao diện Portal. Một IAM User Account trong GreenNode bao gồm các thông tin đăng nhập (tên người dùng, mật khẩu) và mặc định bị từ chối quyền truy cập. IAM User Account không phải là các tài khoản riêng biệt; chúng là người dùng trong cùng một tài khoản Root và không cần phải có phương thức thanh toán được lưu trữ trong GreenNode. Bất kỳ hoạt động nào được thực hiện bởi các IAM User Account trong tài khoản Root của bạn sẽ được tính phí cho tài khoản Root.
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59806682/Identities-User%20Account.drawio%20(1).png?version=1&#x26;modificationDate=1691474639000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
@@ -76,12 +76,12 @@ Lưu ý rằng một khi đã xóa, các IAM User Account sẽ không thể khô
 
 ***
 
-In VNG Cloud Services, creating IAM user accounts and groups is a straightforward process using the IAM management console. It aims to grant additional users access to services and resources on your account without sharing sensitive security information.
+In GreenNode Services, creating IAM user accounts and groups is a straightforward process using the IAM management console. It aims to grant additional users access to services and resources on your account without sharing sensitive security information.
 
 #### User Accounts Management <a href="#useraccounts-useraccountsmanagement" id="useraccounts-useraccountsmanagement"></a>
 
-* **Root user account:** A root user account is an entity that you first create in VNG Cloud and use that has complete access to all VNG Cloud services and resources in the account.
-* **IAM user account:** A user account or IAM user account is an entity that represents the person that uses it to interact with VNG Cloud on Portal UI. A user account in VNG Cloud consists of credentials (username, password) and is denied access by default. User accounts are not separate accounts; they are users within the same root user account and they don't need to have a payment method on file with VNG Cloud. Any activity performed by user accounts in your account is billed to your root user account.
+* **Root user account:** A root user account is an entity that you first create in GreenNode and use that has complete access to all GreenNode services and resources in the account.
+* **IAM user account:** A user account or IAM user account is an entity that represents the person that uses it to interact with GreenNode on Portal UI. A user account in GreenNode consists of credentials (username, password) and is denied access by default. User accounts are not separate accounts; they are users within the same root user account and they don't need to have a payment method on file with GreenNode. Any activity performed by user accounts in your account is billed to your root user account.
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59806682/image2022-6-16_16-52-35.png?version=1&#x26;modificationDate=1690267390000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 

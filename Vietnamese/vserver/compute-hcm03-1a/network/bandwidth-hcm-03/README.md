@@ -4,7 +4,7 @@
 
 **Bandwidth** (băng thông) là lượng dữ liệu được truyền đến và đi từ máy chủ ảo của bạn trong một khoảng thời gian nhất định, thường là một tháng. Băng thông thường được đo bằng các đơn vị như kilobit trên giây (kbps), megabit trên giây (Mbps), gigabit trên giây (Gbps), v.v. Bên cạnh đó, băng thông cũng đóng vai trò quan trọng trong việc tăng tốc độ truy cập dữ liệu, cải thiện hiệu suất của các ứng dụng,...
 
-Với VNG Cloud, chúng tôi hiện tại cung cấp 4 gói băng thông cho khách hàng có thể dễ dàng lựa chọn bao gồm:
+Với GreenNode, chúng tôi hiện tại cung cấp 4 gói băng thông cho khách hàng có thể dễ dàng lựa chọn bao gồm:
 
 * **VNG Dedicated**: Gói băng thông miễn phí mặc định với tốc độ tiêu chuẩn dành cho tất cả khách hàng. Ở gói này, chúng tôi sẽ cung cấp cho bạn băng thông trong nước lên tới 300Mbps và băng thông quốc tế lên tới 5Mbps. **Gói này phù hợp cho những khách hàng có nhu cầu ổn định và không thay đổi nhiều theo thời gian. Đây là lựa chọn tốt cho các doanh nghiệp muốn tránh những chi phí không lường trước được và cần một mức giá cố định.**
 * **Pay As You Go:** Gói băng thông mà bạn cần chi trả tiền cho lượng băng thông sử dụng vượt quá gói băng thông miễn phí (VNG Dedicated). **Điều này có thể hợp lý hơn cho các doanh nghiệp có nhu cầu sử dụng biến động, cần sự linh hoạt và khả năng mở rộng nhanh chóng mà không muốn bị giới hạn bởi mức băng thông cố định.** Gói Pay As You Go này sẽ bao gồm 3 gói cụ thể:

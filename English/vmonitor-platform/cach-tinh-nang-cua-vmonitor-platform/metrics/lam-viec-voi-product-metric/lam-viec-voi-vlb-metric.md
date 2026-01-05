@@ -1,6 +1,6 @@
 # Working with vLB-Metric
 
-When you create vLBs, the system will automatically collect metrics and display them in the Infrastructure List/vLB tab, allowing you to track vLBs on VNG Cloud completely free of charge.
+When you create vLBs, the system will automatically collect metrics and display them in the Infrastructure List/vLB tab, allowing you to track vLBs on GreenNode completely free of charge.
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FewttixCwByYtfWDp5Q9D%252Fimage.png%3Falt%3Dmedia%26token%3Da137ed85-56e7-4966-ad5b-cfb4fa307c55&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=584d78de&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 

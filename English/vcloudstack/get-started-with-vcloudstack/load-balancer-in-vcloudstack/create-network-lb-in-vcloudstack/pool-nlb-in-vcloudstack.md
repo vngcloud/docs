@@ -167,7 +167,7 @@ In the "Add Pool" interface window, scroll to the "Health Check Settings" sectio
 
 ### Pool's algorithm (NLB) <a href="#pools-algorithm-nlb" id="pools-algorithm-nlb"></a>
 
-Load balancing or "Load Balancing" is one of the main features of VNG CLOUD's Load Balancer (vLB) service. It is the process of receiving customer requests at the Listener and distributing them to a number of Members (servers) according to established algorithms. Thanks to this feature, the user's service is increased in processing capacity by creating multiple or a cluster of servers behind the LB. The Load Balancing algorithm will determine which Member (server) is selected when balancing the load. VNG CLOUD's Load Balancer provides three types of Load Balancing algorithms as follows:
+Load balancing or "Load Balancing" is one of the main features of GreenNode's Load Balancer (vLB) service. It is the process of receiving customer requests at the Listener and distributing them to a number of Members (servers) according to established algorithms. Thanks to this feature, the user's service is increased in processing capacity by creating multiple or a cluster of servers behind the LB. The Load Balancing algorithm will determine which Member (server) is selected when balancing the load. GreenNode's Load Balancer provides three types of Load Balancing algorithms as follows:
 
 * **Round Robin**
 * **Least Connection**

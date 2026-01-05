@@ -44,7 +44,7 @@ Các quy tắc sau áp dụng cho việc đặt tên Log pipeline trong vMonitor
 * Tên Log pipeline chỉ có thể bao gồm các chữ cái viết thường (a-z,), số (0-9), dấu gạch ngang (-).
 * Tên Log pipeline phải bắt đầu bởi một chữ cái và kết thúc bởi một chữ cái hoặc một chữ số.
 * Tên Log pipeline không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, tên tài khoản, mật khẩu đăng nhập,...).&#x20;
-* Tên Log pipeline phải là duy nhất trong một tài khoản VNG Cloud cho đến khi Log pipeline đó bị xóa.&#x20;
+* Tên Log pipeline phải là duy nhất trong một tài khoản GreenNode cho đến khi Log pipeline đó bị xóa.&#x20;
 
 #### Quy tắc đặt tên Processor group <a href="#lamviecvoilogpipeline-quytacdattenprocessorgroup" id="lamviecvoilogpipeline-quytacdattenprocessorgroup"></a>
 
@@ -54,7 +54,7 @@ Các quy tắc sau áp dụng cho việc đặt tên Processor group trong vMoni
 * Tên Processor group chỉ có thể bao gồm các chữ cái viết thường (a-z,), số (0-9), dấu gạch ngang (-).
 * Tên Processor group phải bắt đầu bởi một chữ cái và kết thúc bởi một chữ cái hoặc một chữ số.
 * Tên Processor group không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, tên tài khoản, mật khẩu đăng nhập,...).&#x20;
-* Tên Processor group phải là duy nhất trong một tài khoản VNG Cloud cho đến khi Processor group đó bị xóa.&#x20;
+* Tên Processor group phải là duy nhất trong một tài khoản GreenNode cho đến khi Processor group đó bị xóa.&#x20;
 
 #### Quy tắc đặt tên Processor <a href="#lamviecvoilogpipeline-quytacdattenprocessor" id="lamviecvoilogpipeline-quytacdattenprocessor"></a>
 
@@ -64,7 +64,7 @@ Các quy tắc sau áp dụng cho việc đặt tên Processor trong vMonitor Pl
 * Tên Processor chỉ có thể bao gồm các chữ cái viết thường (a-z,), số (0-9), dấu gạch ngang (-).
 * Tên Processor phải bắt đầu bởi một chữ cái và kết thúc bởi một chữ cái hoặc một chữ số.
 * Tên Processor không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, tên tài khoản, mật khẩu đăng nhập,...).&#x20;
-* Tên Processor phải là duy nhất trong một tài khoản VNG Cloud cho đến khi Processor đó bị xóa.&#x20;
+* Tên Processor phải là duy nhất trong một tài khoản GreenNode cho đến khi Processor đó bị xóa.&#x20;
 
 ***
 

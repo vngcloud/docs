@@ -1,10 +1,10 @@
 # Monitor your load balancers
 
-Monitoring is essential for any system. In VNG Cloud, you can monitor your vLBs using the vMonitor Platform service.  &#x20;
+Monitoring is essential for any system. In GreenNode, you can monitor your vLBs using the vMonitor Platform service.  &#x20;
 
 #### What is the vMonitor Platform?
 
-The vMonitor Platform is a Monitoring as a Service solution that helps you collect health metrics and activity logs for resources on VNG Cloud (or external to VNG Cloud). Additionally, you can create visual dashboards, set up alarms, and send notifications when incidents occur. For more details about this service, please refer to: [vMonitor Platform](https://vngcloud.vn/en/product/vmonitor-platform).
+The vMonitor Platform is a Monitoring as a Service solution that helps you collect health metrics and activity logs for resources on GreenNode (or external to GreenNode). Additionally, you can create visual dashboards, set up alarms, and send notifications when incidents occur. For more details about this service, please refer to: [vMonitor Platform](https://vngcloud.vn/en/product/vmonitor-platform).
 
 #### Getting Started with Monitoring
 

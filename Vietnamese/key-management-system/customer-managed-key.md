@@ -11,9 +11,9 @@
 
 \-        Nguồn Key Material: Người dùng chọn nguồn = VNGCLOUD
 
-&#x20;               a.      VNGCLOUD: Key material được tạo trên VNG Cloud KMS
+&#x20;               a.      VNGCLOUD: Key material được tạo trên GreenNode KMS
 
-&#x20;               b.     External: Người dùng tự quản lý Key Material và import vào VNG Cloud KMS cho việc sử dụng trong các dịch vụ của VNG Cloud.
+&#x20;               b.     External: Người dùng tự quản lý Key Material và import vào GreenNode KMS cho việc sử dụng trong các dịch vụ của GreenNode.
 
 * Nhấn “Tạo Key” để thực hiện tạo Key.
 
@@ -24,7 +24,7 @@
 ### Xem danh sách key và thông tin chi tiết Key
 
 * Vào menu “Customer keys” để xem danh sách Key do người dùng tạo
-* Vào menu “VNG Cloud Keys” để xem danh sách Key do VNG Cloud tạo theo yêu cầu người dùng
+* Vào menu “GreenNode Keys” để xem danh sách Key do GreenNode tạo theo yêu cầu người dùng
 * Để xem thông tin chi tiết key, người dùng tìm và di chuyển đến dòng chứa thông tin key muốn xem chi tiết và nhấn vào liên kết tại tên key.
 
 ### Xóa Key
@@ -58,14 +58,14 @@ Trong trường hợp không có gói key nào đang active, người dùng khô
 Người dùng có thể import key material nhiều lần tuy nhiên key material phải giống nhau giữa các lần import
 {% endhint %}
 
-&#x20;VNG Cloud KMS hỗ trợ import nội dung key (key Material) của hai loại khóa&#x20;
+&#x20;GreenNode KMS hỗ trợ import nội dung key (key Material) của hai loại khóa&#x20;
 
 * Khóa đồng bộ (Symmetric Key)&#x20;
 * Khóa bất đồng bộ (Asymmetric Key)&#x20;
 
 Để import key người dùng thực hiện theo thứ tự sau:&#x20;
 
-&#x20;1\.      Đăng nhập vào VNG Cloud console tại Link&#x20;
+&#x20;1\.      Đăng nhập vào GreenNode console tại Link&#x20;
 
 2\.      Chọn Menu “Customer Keys”&#x20;
 

@@ -79,7 +79,7 @@ The final step is to use the IAM User Account to access vServer resources via th
 
 1. Access path: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
 2. If you haven't signed in with this browser before, the main sign-in page will appear. **Select SIGN IN WITH IAM USER ACCOUNT**.
-3. Enter the email address of the Root user when registering a VNG Cloud account.
+3. Enter the email address of the Root user when registering a GreenNode account.
 4. Enter the **username** and **password** of the IAM user account (User account) created on the vIAM system.
 5. Select **SIGN IN WITH IAM USER ACCOUNT**.\
    If you have previously signed in as an IAM user account in this browser, your browser may remember the IAM user account address. If so, you should see the screen shown in step 3. After successfully logging in with IAM user account, the main screen of vServer will show the type of user you are using to log in (Root user account or IAM user account).
@@ -92,7 +92,7 @@ Bước cuối cùng là sử dụng **IAM User Account** truy cập vào tài n
 
 1. Truy cập vào đường dẫn: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
 2. Nếu trước đây bạn chưa đăng nhập bằng trình duyệt này, trang đăng nhập chính sẽ xuất hiện. Chọn **ĐĂNG NHẬP VỚI IAM USER ACCOUNT**.
-3. Nhập địa chỉ **email** của người dùng Root khi đăng ký tài khoản VNG Cloud.
+3. Nhập địa chỉ **email** của người dùng Root khi đăng ký tài khoản GreenNode.
 4. Nhập **tên người dùng** và **mật khẩu** của tài khoản IAM user account (User account) được tạo trên hệ thống vIAM.
 5. Chọn **ĐĂNG NHẬP VỚI IAM USER ACCOUNT**.\
    Nếu trước đó bạn đã đăng nhập với tư cách người dùng IAM user account trong trình duyệt này, thì trình duyệt của bạn có thể nhớ địa chỉ tài khoản IAM user account. Nếu vậy, bạn sẽ thấy màn hình hiển thị ở bước 3. \
@@ -104,7 +104,7 @@ The last step is to use  IAM User Account  to access vServer resources via vServ
 
 1. Access the link:  [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
 2. If you have not previously logged in with this browser, the main login page will appear. Select LOG IN WITH IAM USER ACCOUNT.
-3. Enter the email  address of the Root user when registering for a VNG Cloud account.
+3. Enter the email  address of the Root user when registering for a GreenNode account.
 4. Enter the username and password  of the IAM user account (User account) created on the viIAM system.
 5. Select **LOG IN WITH IAM USER ACCOUNT**.\
    If you have previously logged in as an IAM user account in this browser, your browser may remember the account address IAM user account. If so, you should see the screen shown in step 3.\

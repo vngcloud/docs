@@ -22,7 +22,7 @@
 
 ## **Rút lại sự đồng ý** <a href="#capnhatthongtintaikhoan-truonghop-rutlaisudongy" id="capnhatthongtintaikhoan-truonghop-rutlaisudongy"></a>
 
-Nếu có yêu cầu thay đổi không cho VNG Cloud thu thập thông tin cá nhân, doanh nghiệp của bạn phục vụ cho việc cung cấp dịch vụ VNG Cloud đến bạn. Bạn có thể chọn chức năng này để xóa thông tin đã đăng ký
+Nếu có yêu cầu thay đổi không cho GreenNode thu thập thông tin cá nhân, doanh nghiệp của bạn phục vụ cho việc cung cấp dịch vụ GreenNode đến bạn. Bạn có thể chọn chức năng này để xóa thông tin đã đăng ký
 
 **Bước 1**: vào chức năng "**Cập nhật thông tin tài khoản**"
 
@@ -44,7 +44,7 @@ Nhấn chọn " Đóng", màn hình tiếp theo sẽ như sau
 
 <figure><img src="../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
 
-Trong vòng 3 ngày, bạn có thể hủy yêu cầu rút lại sự đồng ý bằng cách chọn chức năng " Hủy yêu cầu rút lại sự đồng ý". Nếu bạn không hủy yêu cầu, VNG Cloud sẽ thực hiện xóa tài khoản của bạn đồng thời tuân thủ quy định lưu trữ dữ liệu.
+Trong vòng 3 ngày, bạn có thể hủy yêu cầu rút lại sự đồng ý bằng cách chọn chức năng " Hủy yêu cầu rút lại sự đồng ý". Nếu bạn không hủy yêu cầu, GreenNode sẽ thực hiện xóa tài khoản của bạn đồng thời tuân thủ quy định lưu trữ dữ liệu.
 
 ***
 
@@ -64,4 +64,4 @@ Trong trường hợp cần xóa tài khoản, bạn cần thực hiện theo th
 
 Nhập mã bảo vệ và chọn "**Xóa tài khoản**"
 
-Trong vòng 3 ngày, bạn có thể hủy yêu cầu xóa tài khoản bằng cách chọn chức năng " Hủy yêu cầu xóa tài khoản". Nếu bạn không hủy yêu cầu, VNG Cloud sẽ thực hiện xóa tài khoản của bạn đồng thời tuân thủ quy định lưu trữ dữ liệu.
+Trong vòng 3 ngày, bạn có thể hủy yêu cầu xóa tài khoản bằng cách chọn chức năng " Hủy yêu cầu xóa tài khoản". Nếu bạn không hủy yêu cầu, GreenNode sẽ thực hiện xóa tài khoản của bạn đồng thời tuân thủ quy định lưu trữ dữ liệu.

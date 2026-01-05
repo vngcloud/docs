@@ -8,4 +8,4 @@ Khi khởi tạo một OpenSearch Cluster trên dịch vụ **vDB OpenSearch**, 
 
 Chi tiết bảng giá, bạn vui lòng tham khảo thêm tại [https://vngcloud.vn/vi/product/vdb-opensearch](https://vngcloud.vn/vi/product/vdb-opensearch).
 
-Hiện tại, vDB OpenSearch có hỗ trợ thanh toán qua **ví POC**, giúp bạn dễ dàng trải nghiệm dịch vụ. Để biết thêm chi tiết hoặc dùng thử dịch vụ, vui lòng liên hệ **hotline VNG Cloud** hoặc gửi **ticket hỗ trợ** cho chúng tôi.
+Hiện tại, vDB OpenSearch có hỗ trợ thanh toán qua **ví POC**, giúp bạn dễ dàng trải nghiệm dịch vụ. Để biết thêm chi tiết hoặc dùng thử dịch vụ, vui lòng liên hệ **hotline GreenNode** hoặc gửi **ticket hỗ trợ** cho chúng tôi.

@@ -1,6 +1,6 @@
 # Quản lý truy cập tới OpenSearch Cluster
 
-Trong dịch vụ **vDB OpenSearch** của **VNG Cloud**, bạn có thể truy cập OpenSearch theo hai cách:
+Trong dịch vụ **vDB OpenSearch** của **GreenNode**, bạn có thể truy cập OpenSearch theo hai cách:
 
 * **Đăng nhập vào OpenSearch Dashboard** để quản lý và phân tích dữ liệu.
 * **Đẩy log vào OpenSearch Cluster** để lưu trữ và xử lý log.

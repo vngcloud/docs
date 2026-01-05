@@ -2,7 +2,7 @@
 
 Create a account Guide
 
-**Step 1:** At VNG Cloud homepage, Click "Sign up" button as shown in the following screen:
+**Step 1:** At GreenNode homepage, Click "Sign up" button as shown in the following screen:
 
 Navigate to "Create New Account" screen as shown in the following image:
 
@@ -17,7 +17,7 @@ Navigate to "Create New Account" screen as shown in the following image:
 
 **Step 3:** Check your mail inbox
 
-1. You will find an email with the subject **VNG CLOUD – Account Verification**. If you do not find any such email, please check your **Spam** folder.
+1. You will find an email with the subject **GreenNode – Account Verification**. If you do not find any such email, please check your **Spam** folder.
 2. Open the email and follow the instructions.
 
 **Step 4:** In the instruction email, click on **this link** to proceed to the next step.
@@ -36,4 +36,4 @@ Navigate to "Create New Account" screen as shown in the following image:
 
 Once the data entry is valid, the user receives a notification & an email confirming successful registration.
 
-Customer email and phone number information is encrypted by VNG Cloud using the Symmetric AES algorithm to ensure customer data security.
+Customer email and phone number information is encrypted by GreenNode using the Symmetric AES algorithm to ensure customer data security.

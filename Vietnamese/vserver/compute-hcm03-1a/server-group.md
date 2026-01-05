@@ -4,7 +4,7 @@ Affinity group là một chính sách khởi tạo vị khí tài nguyên cho m�
 
 ### **Chính sách của Placement Group** <a href="#servergroup-chinhsachcuaservergroup" id="servergroup-chinhsachcuaservergroup"></a>
 
-Hiện tại, VNG Cloud cung cấp 2 loại chính sách dành cho Placement Group để quản lý tốt hơn về phân bổ máy chủ ảo và host vật lý: Soft anti-affinity và soft affinity
+Hiện tại, GreenNode cung cấp 2 loại chính sách dành cho Placement Group để quản lý tốt hơn về phân bổ máy chủ ảo và host vật lý: Soft anti-affinity và soft affinity
 
 * Soft Anti-affinity: Cấp phát các máy chủ ảo trong Placement group trên các host vậy lý khác nhau một cách tối đa. Nếu không còn host vật lý đủ để đảm bảo chính sách thì máy chủ ảo sẽ được cấp phát ngẫu nhiên trên các host
 * Soft Affinity: Cấp phát các máy chủ ảo trong Placement group trên cùng một host vật lý một cách tối đa. Nếu không có host vật lý nào còn đủ resource để tuân thủ chính sách thì máy chủ ảo sẽ được cấp phát ngẫu nhiên trên các host
@@ -22,6 +22,6 @@ Một số trường hợp thực tế sử dụng chính sách soft anti-affini
 
 Bạn có thể tạo placement group với chính sách affinity và anti-affinity:
 
-1. Đi đến trang VNG Cloud console, navigate to Placement Group page
+1. Đi đến trang GreenNode console, navigate to Placement Group page
 2. Bạn có thể tạo thêm Placement Group và lựa chọn chính sách affinity hoặc anti-affinity phù hợp. Placement group sau khi tạo xong sẽ không thể thay đổi thuộc tính chính sách này.
 3. Bạn có thể tạo máy chủ ảo và lựa chọn Placement Group có sẵn theo nhu cầu.

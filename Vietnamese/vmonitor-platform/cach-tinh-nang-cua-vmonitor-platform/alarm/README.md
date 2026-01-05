@@ -26,7 +26,7 @@ Các quy tắc sau áp dụng cho việc đặt tên Alarm trong vMonitor Platfo
 * ng (a-z, A-Z), số (0-9), dấu chấm (.), dấu gạch dưới (\_), dấu gạch ngang (-) và ký tự @.
 * Tên Alarm phải bắt đầu bằng một chữ cái viết hoa, viết thường (a-z, A-Z) và kết thúc bởi một chữ cái viết hoa, viết thường (a-z, A-Z) hoặc một chữ số.
 * Tên Alarm không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, tên tài khoản, mật khẩu đăng nhập,...).&#x20;
-* Tên Alarm phải là duy nhất trong một tài khoản VNG Cloud cho đến khi Alarm đó bị xóa.&#x20;
+* Tên Alarm phải là duy nhất trong một tài khoản GreenNode cho đến khi Alarm đó bị xóa.&#x20;
 
 #### Ví dụ minh họa
 

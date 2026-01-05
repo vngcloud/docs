@@ -1,6 +1,6 @@
 # Thanh toán hóa đơn tự động
 
-Thanh toán tự động là tính năng nhằm mục đích hỗ trợ người dùng VNG Cloud thanh toán các hóa đơn chưa hoàn thành thanh toán
+Thanh toán tự động là tính năng nhằm mục đích hỗ trợ người dùng GreenNode thanh toán các hóa đơn chưa hoàn thành thanh toán
 
 * **Đối tượng áp dụng**
   * Người dùng trả trước và trả sau có hóa đơn cần thanh toán
@@ -8,7 +8,7 @@ Thanh toán tự động là tính năng nhằm mục đích hỗ trợ người
 * **Thời gian chạy**
   * Mỗi ngày
 * **Nguồn tiền**
-  * Ví VNG Cloud (ví Credit)
+  * Ví GreenNode (ví Credit)
 * **Tác vụ**
   * Lọc ra người dùng có hóa đơn cần thanh toán
   * Kiểm tra còn số dư khả dụng trong ví hay không, nếu:

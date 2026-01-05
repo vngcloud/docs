@@ -12,7 +12,7 @@ Notebook là môi trường phát triển tương tác (interactive environment)
 
 ## **Truy cập giao diện AI Platform**
 
-1. Đăng nhập vào [VNG Cloud AI Platform](https://aiplatform.console.vngcloud.vn/overview).
+1. Đăng nhập vào [GreenNode AI Platform](https://aiplatform.console.vngcloud.vn/overview).
 2. Chọn mục **Notebook instance** từ menu bên trái.
 
 ## **Khởi tạo một Notebook mới**

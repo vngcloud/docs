@@ -4,7 +4,7 @@
 
 Service account for partner registration must satisfy these requirements
 
-* Account has been registered on VNG Cloud portal, in case you have not created an account yet, refer to the instruction [here](../getting-start-with-vng-cloud-account/) to create one
+* Account has been registered on GreenNode portal, in case you have not created an account yet, refer to the instruction [here](../getting-start-with-vng-cloud-account/) to create one
 * Account for partner registration must not be customer account of a partner
 * Account for partner registration must be classified as an “**Enterprise**” account
 
@@ -13,11 +13,11 @@ Service account for partner registration must satisfy these requirements
 * Select " **SIGN IN WITH ROOT USER ACCOUNT**", and input username and password to sign in. Username and password are information of the account created on [vngcloud.vn](http://vngcloud.vn/) portal.
 * In case user has not created an account yet, select “**Sign up**” and follow the instruction [here](../getting-start-with-vng-cloud-account/) to register an account.
 
-**Step 2**: Select “**Become a VNG Cloud Partner**” to register to be a partner:&#x20;
+**Step 2**: Select “**Become a GreenNode Partner**” to register to be a partner:&#x20;
 
 * Choose preferred language: English or Vietnamese
-* Select “**Become a VNG Cloud Partner**” to register to be a partner
-* User carefully reads the Terms and Conditions of  becoming a VNG Cloud’s partner, then tick this box and selects “**Become a VNG Cloud Partner**”
+* Select “**Become a GreenNode Partner**” to register to be a partner
+* User carefully reads the Terms and Conditions of  becoming a GreenNode’s partner, then tick this box and selects “**Become a GreenNode Partner**”
 
 When account’s information is valid, user will receive:
 
@@ -31,4 +31,4 @@ In case account is approved, user will be able to sign in to partner portal and 
 _**Note:**_
 
 * _Partner registration account must be classified as enterprise_
-* _In case partner registration process on partner portal cannot be completed, user can contact VNG Cloud’s support channel to be assisted_
+* _In case partner registration process on partner portal cannot be completed, user can contact GreenNode’s support channel to be assisted_

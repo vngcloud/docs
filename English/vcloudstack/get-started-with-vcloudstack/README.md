@@ -1,6 +1,6 @@
 # Get Started with vCloudStack
 
-Use this guide to get started with **vCloudStack** . You will learn the basic components and scope of operations management that VNG Cloud's vCloudStack service provides you, so you can better understand and operate your business system.
+Use this guide to get started with **vCloudStack** . You will learn the basic components and scope of operations management that GreenNode's vCloudStack service provides you, so you can better understand and operate your business system.
 
 ### Infrastructure <a href="#cau-truc-ha-tang" id="cau-truc-ha-tang"></a>
 
@@ -11,9 +11,9 @@ As introduced, vCloudStack provides cloud computing services right at the custom
 * Network devices such as **Firewalls** and Routers **(Switches** );
 * Devices for virtualization and storage such as **Compute Nodes/Storage Nodes/Backup Nodes** .
 
-The components that vCloudStack will directly operate and manage at VNG Cloud include:
+The components that vCloudStack will directly operate and manage at GreenNode include:
 
-* The interface ( **Portal** ) for virtualization and internal virtual machine operation is completely consistent with the general interface of VNG Cloud;
+* The interface ( **Portal** ) for virtualization and internal virtual machine operation is completely consistent with the general interface of GreenNode;
 * Middleware ;**​**
 * Virtual machine processor and controller ( **Controller** ).
 

@@ -21,7 +21,7 @@ Processor Group: cho phép bạn chỉ định nơi lấy dữ liệu log (sourc
 4\. Chọn **Create a processor group** hoặc **Process Group Library** trong đó:
 
 * **Create a processor group**: tạo mới hoàn toàn processor group.
-* **Process Group Library**: tạo processor group từ những thư viện có sẵn do VNG Cloud hỗ trợ.
+* **Process Group Library**: tạo processor group từ những thư viện có sẵn do GreenNode hỗ trợ.
 
 <details>
 
@@ -41,7 +41,7 @@ Processor Group: cho phép bạn chỉ định nơi lấy dữ liệu log (sourc
 
 <summary>Process Group Library</summary>
 
-Hiện tại VNG Cloud hỗ trợ thư viện cho 2 ứng dụng phổ biến là **Apache, Nginx**. Khi bạn chọn **Process Group Library**, tiếp tục thực hiện các bước dưới đây để hoàn thành tạo processor group
+Hiện tại GreenNode hỗ trợ thư viện cho 2 ứng dụng phổ biến là **Apache, Nginx**. Khi bạn chọn **Process Group Library**, tiếp tục thực hiện các bước dưới đây để hoàn thành tạo processor group
 
 1. Chọn <img src="https://docs-admin.vngcloud.vn/download/thumbnails/49650043/image2023-3-27_9-48-38.png?version=1&#x26;modificationDate=1679885318000&#x26;api=v2" alt="" data-size="line">(**Duplicate this group)** để tạo Processor Group từ Library này.
 

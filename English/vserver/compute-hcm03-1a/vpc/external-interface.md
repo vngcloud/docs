@@ -18,20 +18,20 @@ You need to configure IP address for External Interface from within instance, st
 
 #### Create External Interface <a href="#externalinterface-createexternalinterface" id="externalinterface-createexternalinterface"></a>
 
-1. Go to VNG Cloud portal console, navigate to External Interface page
+1. Go to GreenNode portal console, navigate to External Interface page
 2. Create External Interface, you can check the price on right panel.
 3. After create you will get the IP information including address, netmask and gateway, these informations need for operation later.
 
 #### Attach/Detach to/from Instance <a href="#externalinterface-attach-detachto-frominstance" id="externalinterface-attach-detachto-frominstance"></a>
 
-1. Go to VNG Cloud portal console, navigate to Instance page
+1. Go to GreenNode portal console, navigate to Instance page
 2. Go to detail of the Instance that need to attach the External Interface, go to tab Network Interface
 3. Click **Attach an Interface** and select your existing External Interface. In case of Detach, just confirm the action after click **Detach an Interface**.
 4. After attach the External Interface, you must configure network from within instance with its information.
 
 #### Delete External Interface <a href="#externalinterface-deleteexternalinterface" id="externalinterface-deleteexternalinterface"></a>
 
-1. Go to VNG Cloud portal console, navigate to External Interface page
+1. Go to GreenNode portal console, navigate to External Interface page
 2. Select the External Interface to delete, click **Delete** on right side.
 
 <br>

@@ -1,6 +1,6 @@
 # Automatic invoice payment
 
-Auto payment is a feature designed to support VNG Cloud users in paying their unpaid invoices.
+Auto payment is a feature designed to support GreenNode users in paying their unpaid invoices.
 
 **Target users**
 
@@ -9,7 +9,7 @@ Auto payment is a feature designed to support VNG Cloud users in paying their un
 
 **Runtime:** Every day.
 
-**Source of money:** VNG Cloud wallet (Credit wallet)&#x20;
+**Source of money:** GreenNode wallet (Credit wallet)&#x20;
 
 **Tasks**&#x20;
 

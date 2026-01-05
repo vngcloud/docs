@@ -4,8 +4,8 @@ When decentralizing access to resources, companies will often decentralize permi
 
 First, the access rights of the above two groups of job functions will be defined as follows:
 
-* **System Administrator** : responsible for managing all resources on the Cloud, should be granted full vServer rights, vStorage will correspond to the managed policies already created by VNG Cloud: vServerFullAccess, vStorageFullAccess
-* **Developer** : only needs to view resources on the Cloud, so just grant read-only permission to vServer, vStorage will correspond to the managed policies already created by VNG Cloud: vServerReadOnlyAccess, vStorageReadOnlyAccess.
+* **System Administrator** : responsible for managing all resources on the Cloud, should be granted full vServer rights, vStorage will correspond to the managed policies already created by GreenNode: vServerFullAccess, vStorageFullAccess
+* **Developer** : only needs to view resources on the Cloud, so just grant read-only permission to vServer, vStorage will correspond to the managed policies already created by GreenNode: vServerReadOnlyAccess, vStorageReadOnlyAccess.
 
 To make it easier to manage decentralization for many members in the company, we will organize **2 more User Groups with the names: SystemAdmin and Developer** , with members with the same job function being attached. Corresponding User Groups to enjoy the rights granted to User Groups. Managing with User Groups will help you flexibly change permissions when necessary, or when members change job functions.tr
 
@@ -96,4 +96,4 @@ Do the same steps above to log in to User: Developer1, now you will see that Use
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F9V1YygxlEK2F7lmGmVuk%252Fimage2023-7-12_13-59-54.png%3Falt%3Dmedia%26token%3Dbfe340bd-1858-4da2-a534-c0a006d73d4f&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=bade6e2a&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-So you have completed assigning access rights according to job functions. Now to grant permissions to new members, you just need to create a User Account and add it to the Group. To change permissions, you just need to change the Policy. at Groups makes it easier to manage access to resources on VNG Cloud.
+So you have completed assigning access rights according to job functions. Now to grant permissions to new members, you just need to create a User Account and add it to the Group. To change permissions, you just need to change the Policy. at Groups makes it easier to manage access to resources on GreenNode.

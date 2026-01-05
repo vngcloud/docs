@@ -1,6 +1,6 @@
 # Bandwidth Packages
 
-With the Cross Connect service, VNG Cloud currently offers bandwidth packages for customers to easily choose from, including:
+With the Cross Connect service, GreenNode currently offers bandwidth packages for customers to easily choose from, including:
 
 
 

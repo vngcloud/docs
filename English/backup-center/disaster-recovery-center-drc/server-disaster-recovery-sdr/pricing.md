@@ -17,7 +17,7 @@ When using Server Disaster Recovery (SDR) service, the following fees will be ch
 **Note:**
 
 * Specific costs may vary depending on server configuration, drive type, and amount of data copied.
-* You can see details about SDR service prices on VNG Cloud's website or contact the support team for specific advice.
+* You can see details about SDR service prices on GreenNode's website or contact the support team for specific advice.
 
 **Summary:**
 

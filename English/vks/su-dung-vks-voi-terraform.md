@@ -2,7 +2,7 @@
 
 ## What is Terraform? <a href="#terraform-la-gi" id="terraform-la-gi"></a>
 
-Terraform is an open source infrastructure as code tool that allows users to manage their infrastructure easily and efficiently across different cloud platforms, such as VNG Cloud, AWS, Google Cloud and Azure. Terraform Server refers to the instance of the Terraform engine running on a specific server or machine. This is where infrastructure code is written and executed, allowing users to create, modify, and destroy resources on the cloud platform.
+Terraform is an open source infrastructure as code tool that allows users to manage their infrastructure easily and efficiently across different cloud platforms, such as GreenNode, AWS, Google Cloud and Azure. Terraform Server refers to the instance of the Terraform engine running on a specific server or machine. This is where infrastructure code is written and executed, allowing users to create, modify, and destroy resources on the cloud platform.
 
 Terraform itself does not have a graphical user interface, instead users interact with it using a command line interface. Terraform requires a cloud provider account and key to be configured along with a Terraform configuration file to execute the infrastructure as code. Additionally, Terraform can operate in clustered environments where multiple users can collaborate on the same infrastructure codebase, making it a powerful and flexible tool for infrastructure management. cloud.
 
@@ -14,7 +14,7 @@ To initialize a Kubernetes Cluster using Terraform, you need to perform the foll
 
 1. **Access the IAM Portal** here , create a Service Account with [VKS ](https://iam.console.vngcloud.vn/)**Full Access** authority . Specifically, at the IAM site, you can:
    * Select " **Create a Service Account** ", enter a name for the Service Account and click **Next Step** to assign permissions to the Service Account.
-   * Find and select **Policy: VKSFullAccess** then click " **Create a Service Account** " to create a Service Account, **Policy: VKSFullAccess** is created by VNG Cloud, you cannot delete these policies.
+   * Find and select **Policy: VKSFullAccess** then click " **Create a Service Account** " to create a Service Account, **Policy: VKSFullAccess** is created by GreenNode, you cannot delete these policies.
    * After successful creation, you need to save **the Client\_ID** and **Secret\_Key** of the Service Account to perform the next step.
 2. **Access the VKS Portal** here **, Activate** [the](https://vks.console.vngcloud.vn/overview) VKS service on the **Overview tab.** Please wait until we successfully create your VKS account.
 3. **Install Terraform:**
@@ -328,7 +328,7 @@ terraform apply
 
 ***
 
-## **Check the newly created Cluster on the VNG Cloud Portal interface** <a href="#quanlyvcontainervoiterraform-kiemtracontainervuataotrengiaodienvngcloudportal" id="quanlyvcontainervoiterraform-kiemtracontainervuataotrengiaodienvngcloudportal"></a>
+## **Check the newly created Cluster on the GreenNode Portal interface** <a href="#quanlyvcontainervoiterraform-kiemtracontainervuataotrengiaodienvngcloudportal" id="quanlyvcontainervoiterraform-kiemtracontainervuataotrengiaodienvngcloudportal"></a>
 
 After successfully initializing Terraform, you can go to VKS Portal to view the newly created Cluster information.
 

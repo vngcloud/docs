@@ -14,6 +14,6 @@ The vCDN Request Router system will decide to send back the best possible IP Ser
 * Users in any network and region will go to the server with the least load in that region belonging to that ISP.&#x20;
 * In case the ISP's POP in the user's area has a problem or is overloaded, it will be transferred to another ISP's POP that is capable of serving in that area.
 
-For users of small ISPs such as CMC, SPT, SCTV, Netnam, VNG Cloud's POP traffic will be prioritized at Quang Trung Software Park because here VNG Cloud has performed direct peering to each ISP as above. . This ensures good service for all end users.
+For users of small ISPs such as CMC, SPT, SCTV, Netnam, GreenNode's POP traffic will be prioritized at Quang Trung Software Park because here GreenNode has performed direct peering to each ISP as above. . This ensures good service for all end users.
 
 **For regular Domectic (domestic) traffic, VNG currently does not guarantee speed for traffic from international sources. Customers can refer to the international vCDN service provided by VNGCloud for the best quality with international traffic or contact support@vng.com.vn for further instructions.**

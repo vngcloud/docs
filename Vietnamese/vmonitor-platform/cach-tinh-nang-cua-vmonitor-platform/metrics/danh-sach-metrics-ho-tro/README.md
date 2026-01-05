@@ -20,7 +20,7 @@ Bạn có thể xem thông tin chi tiết các Metric, Unit của các plugin tr
 
 ### Product metrics <a href="#danhsachmetricshotro-productmetrics" id="danhsachmetricshotro-productmetrics"></a>
 
-Khi các Resource trên VNG Cloud được tạo, mặc định sẽ có 2 loại monitor: Basic và Detail
+Khi các Resource trên GreenNode được tạo, mặc định sẽ có 2 loại monitor: Basic và Detail
 
 <table data-header-hidden><thead><tr><th width="204"></th><th></th></tr></thead><tbody><tr><td><strong>Monitoring type</strong></td><td><strong>Mô tả</strong></td></tr><tr><td><p><strong>Basic monitoring</strong></p><p>(Mặc định)</p></td><td><ul><li>Ở chế độ này, sẽ có một số lượng metric mặc định được đẩy về và lưu trữ trên hệ thống vMonitor Platform. Chi tiết tham khảo bảng thông số chi tiết bên dưới.</li><li>Dữ liệu có sẵn tự động trong khoảng thời gian 1 phút.</li></ul></td></tr><tr><td><p><strong>Detailed monitoring</strong></p><p>(Nâng cao)</p></td><td><ul><li>Ở chế độ này, tất cả các metric đang có trên Resource được đẩy về và lưu trữ trên hệ thống vMonitor Platform. Chi tiết tham khảo bảng thông số chi tiết bên dưới.</li><li>Dữ liệu có sẵn tự động trong khoảng thời gian 1 phút.</li></ul></td></tr></tbody></table>
 

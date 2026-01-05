@@ -1,8 +1,8 @@
-# Backup dữ liệu từ SMB File Storage sang Object Storage trên VNG Cloud
+# Backup dữ liệu từ SMB File Storage sang Object Storage trên GreenNode
 
 Để đảm bảo an toàn và khả năng phục hồi dữ liệu, việc sao lưu (backup) định kỳ dữ liệu từ **File Storage** sang **Object Storage** là một giải pháp cần thiết trong hạ tầng hiện đại.&#x20;
 
-VNG Cloud cung cấp dịch vụ **Object Storage**, tương thích với chuẩn S3, giúp dễ dàng tích hợp và sao lưu dữ liệu từ máy chủ hoặc các hệ thống lưu trữ nội bộ.
+GreenNode cung cấp dịch vụ **Object Storage**, tương thích với chuẩn S3, giúp dễ dàng tích hợp và sao lưu dữ liệu từ máy chủ hoặc các hệ thống lưu trữ nội bộ.
 
 ## Các công cụ phổ biến để backup dữ liệu lên vStorage:
 
@@ -10,7 +10,7 @@ VNG Cloud cung cấp dịch vụ **Object Storage**, tương thích với chuẩ
 * **`rclone`** _(Khuyến nghị)_: Hỗ trợ nhiều backend, dễ dàng cài đăt và cấu hình với nhiều tuỳ chọn nâng cao.
 * **`s3cmd`**: Dễ sử dụng nếu bạn quen dòng lệnh cổ điển, hỗ trợ S3 API chuẩn.
 
-Trong tài liệu này, chúng ta sẽ sử dụng **`rclone`**, vì tính linh hoạt và khả năng tương thích tốt với Object Storage của VNG Cloud.
+Trong tài liệu này, chúng ta sẽ sử dụng **`rclone`**, vì tính linh hoạt và khả năng tương thích tốt với Object Storage của GreenNode.
 
 ***
 
@@ -113,7 +113,7 @@ cd .\rclone\rclone-*-windows-amd64
 
 Lúc này bạn sẽ có `rclone.exe` trong thư mục, chạy luôn được.
 
-#### Bước 2: Cấu hình kết nối đến VNG Cloud
+#### Bước 2: Cấu hình kết nối đến GreenNode
 
 * Tại thư mục rclone vừa được giải nén, thực hiện tạo file `rclone.conf`
 

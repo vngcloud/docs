@@ -4,7 +4,7 @@
 
 In the modern business world, servers play a central role in storing and processing critical data. However, unexpected events such as natural disasters, hardware failures, or cyber attacks can cause serious damage, leading to data loss, operational disruption, and significant financial loss.
 
-**VNG Cloud's Server Disaster Recovery** is designed to protect your servers from these risks, ensuring continuity for your business. With a comprehensive backup and recovery solution, you can rest assured that your data and systems are always protected and ready to recover in any situation.
+**GreenNode's Server Disaster Recovery** is designed to protect your servers from these risks, ensuring continuity for your business. With a comprehensive backup and recovery solution, you can rest assured that your data and systems are always protected and ready to recover in any situation.
 
 **Benefit:**
 
@@ -24,4 +24,4 @@ In the modern business world, servers play a central role in storing and process
 * **Planned DR Actions:** Automatically execute DR actions according to pre-defined plans.
 * **Recovery Priority:** Customize the recovery priority for critical servers.
 
-Let VNG Cloud's Server Disaster Recovery accompany you, protect your servers and data, ensure business operations always run smoothly, even when facing the biggest challenges!
+Let GreenNode's Server Disaster Recovery accompany you, protect your servers and data, ensure business operations always run smoothly, even when facing the biggest challenges!

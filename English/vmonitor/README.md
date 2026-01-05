@@ -2,7 +2,7 @@
 
 ## What is vMonitor Platform?
 
-vMonitor Platform offers a comprehensive solution for collecting, analyzing, and alerting on Metric and Log data from VNG Cloud, other Clouds, or on-premise environments. This information helps you better understand the operation of your servers/applications and proactively identify issues that your servers/applications are facing.
+vMonitor Platform offers a comprehensive solution for collecting, analyzing, and alerting on Metric and Log data from GreenNode, other Clouds, or on-premise environments. This information helps you better understand the operation of your servers/applications and proactively identify issues that your servers/applications are facing.
 
 <figure><img src="../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
 

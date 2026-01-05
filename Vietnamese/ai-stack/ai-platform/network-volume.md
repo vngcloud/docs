@@ -56,7 +56,7 @@ aiplatform-util nv push
 
 #### 2.2 Sử dụng S3 Key với công cụ CLI
 
-Mỗi Network Volume tương ứng với một S3 bucket nội bộ. Có thể sử dụng s3 key của network volume để sử dụng với các công cụ command line [3rd party softwares | VNG Cloud docs](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/3rd-party-softwares). Bạn có thể sử dụng các công cụ dòng lệnh (CLI) như **s3cmd** để thao tác trực tiếp với dữ liệu trong volume. Ở tài liệu này sẽ hướng dẫn trên s3cmd.
+Mỗi Network Volume tương ứng với một S3 bucket nội bộ. Có thể sử dụng s3 key của network volume để sử dụng với các công cụ command line [3rd party softwares | GreenNode docs](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/3rd-party-softwares). Bạn có thể sử dụng các công cụ dòng lệnh (CLI) như **s3cmd** để thao tác trực tiếp với dữ liệu trong volume. Ở tài liệu này sẽ hướng dẫn trên s3cmd.
 
 **Chuẩn bị:**
 

@@ -1,6 +1,6 @@
 # Hướng dẫn đặt lại mật khẩu
 
-Bên dưới là hướng dẫn giúp bạn thay đổi mật khẩu của tài khoản quản trị trên VNG Cloud:
+Bên dưới là hướng dẫn giúp bạn thay đổi mật khẩu của tài khoản quản trị trên GreenNode:
 
 **Bước 1:** Truy cập trực tiếp vào đường dẫn [https://register.vngcloud.vn/resetpwd](https://register.vngcloud.vn/resetpwd) hoặc [https://my.vngcloud.vn](https://register.vngcloud.vn/resetpwd) sau đó chọn **Quên mật khẩu?**
 
@@ -14,7 +14,7 @@ Bạn sẽ nhận được thông báo như bên dưới.
 
 <figure><img src="../.gitbook/assets/image (197).png" alt=""><figcaption></figcaption></figure>
 
-Vui lòng kiểm tra lại email với tiêu đề **VNG CLOUD - Đặt lại mật khẩu**. Nhấn vào **Liên kết này** để đi đến bước 3.
+Vui lòng kiểm tra lại email với tiêu đề **GreenNode - Đặt lại mật khẩu**. Nhấn vào **Liên kết này** để đi đến bước 3.
 
 <figure><img src="../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
 
@@ -22,6 +22,6 @@ Vui lòng kiểm tra lại email với tiêu đề **VNG CLOUD - Đặt lại m�
 
 <figure><img src="../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
 
-Sau đó, vui lòng kiểm tra lại email, bạn sẽ nhận được email với tiêu đề **VNG CLOUD - Mật khẩu đã thay đổi,** với thông báo đã đổi mật khẩu thành công và sẽ được chuyển hướng về trang **Đăng nhập**.
+Sau đó, vui lòng kiểm tra lại email, bạn sẽ nhận được email với tiêu đề **GreenNode - Mật khẩu đã thay đổi,** với thông báo đã đổi mật khẩu thành công và sẽ được chuyển hướng về trang **Đăng nhập**.
 
 Cuối cùng, đăng nhập vào hệ thống với mật khẩu bạn vừa đặt lại.

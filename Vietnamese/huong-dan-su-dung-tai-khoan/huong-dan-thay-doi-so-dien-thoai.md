@@ -8,7 +8,7 @@
 
 <figure><img src="../.gitbook/assets/change_number02.png" alt=""><figcaption></figcaption></figure>
 
-Hệ thống của chúng tôi sẽ gửi cho quý khách email với tiêu đề **VNG Cloud - OTP cập nhật số điện thoại**, sao chép mã OTP trong email và dán vào ô **Nhập OTP**
+Hệ thống của chúng tôi sẽ gửi cho quý khách email với tiêu đề **GreenNode - OTP cập nhật số điện thoại**, sao chép mã OTP trong email và dán vào ô **Nhập OTP**
 
 <figure><img src="../.gitbook/assets/change_number03.png" alt=""><figcaption></figcaption></figure>
 

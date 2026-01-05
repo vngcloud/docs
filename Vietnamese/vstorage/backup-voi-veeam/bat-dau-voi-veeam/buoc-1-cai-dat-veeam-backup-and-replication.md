@@ -19,7 +19,7 @@
 
 ### Ví dụ hướng dẫn cài đặt Phiên bản Veeam Backup & Replication 12
 
-1. Sau khi khách hàng tải bộ cài Veeam Backup & Replication (hoặc liên hệ đội ngũ kỹ thuật VNG Cloud để được hỗ trợ tải phần mềm). Khách hàng nhấn chọn file Setup cài đặt Veeam, click Install để bắt đầu quá trình cài đặt.
+1. Sau khi khách hàng tải bộ cài Veeam Backup & Replication (hoặc liên hệ đội ngũ kỹ thuật GreenNode để được hỗ trợ tải phần mềm). Khách hàng nhấn chọn file Setup cài đặt Veeam, click Install để bắt đầu quá trình cài đặt.
 
 <figure><img src="../../../.gitbook/assets/image (405).png" alt="" width="465"><figcaption></figcaption></figure>
 

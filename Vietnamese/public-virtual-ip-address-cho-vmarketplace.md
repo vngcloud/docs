@@ -47,7 +47,7 @@ Tài liệu này nhằm hướng dẫn khách hàng:
 
 **Luồng traffic:** Internet → VIP (157.20.200.185) → Firewall VM (NAT + Filter) → Server 1 (192.168.2.7), Server 2 (192.168.2.5)
 
-**Bước 1: Tiến hành khởi tạo Virtual IP Address trên portal VNG Cloud**
+**Bước 1: Tiến hành khởi tạo Virtual IP Address trên portal GreenNode**
 
 Truy cập vào [vServer Portal - Create-virtual-ip-address](https://hcm-3.console.vngcloud.vn/vserver/network/virtual-ip-address), chọn Virtual IP Address type là Public Market Place sau đó điền các thông tin theo yêu cầu
 
@@ -71,7 +71,7 @@ Truy cập vào pfSense vào Firewall -> Virtual IPs sau đó nhấn vào nút A
 
 Tại giao diện cấu hình Virtual IP tiến hành điền các thông tin theo yêu cầu
 
-\*Tại mục Address(es) khách hàng cần điền địa chỉ của VIP đã khởi tạo trên portal VNG Cloud tại Bước 2
+\*Tại mục Address(es) khách hàng cần điền địa chỉ của VIP đã khởi tạo trên portal GreenNode tại Bước 2
 
 <figure><img src=".gitbook/assets/image (480).png" alt=""><figcaption></figcaption></figure>
 

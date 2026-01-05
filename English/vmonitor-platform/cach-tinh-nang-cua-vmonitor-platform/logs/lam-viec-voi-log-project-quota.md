@@ -2,7 +2,7 @@
 
 ## Overview <a href="#tong-quan" id="tong-quan"></a>
 
-A Log project is a term on vMonitor Platform that represents a Logs monitoring package with a specific capacity and time that you purchase on VNG Cloud. At a time you can own one or more Log projects in parallel and use them as a way to organize resources for groups or departments to use for different purposes.
+A Log project is a term on vMonitor Platform that represents a Logs monitoring package with a specific capacity and time that you purchase on GreenNode. At a time you can own one or more Log projects in parallel and use them as a way to organize resources for groups or departments to use for different purposes.
 
 ***
 
@@ -21,7 +21,7 @@ To initialize a log project, follow the steps below:
 9. Select **Period** if you are a prepaid user. We offer prepayment cycles including: 1 month, 3 months, 6 months, 12 months, 24 months, 36 months.
 10. Select **Continue** and continue performing the steps **to Check out** the shopping cart and after successful payment **Log project** will be created.
 
-We publicize the cost calculation for each log project package on VNG Cloud's homepage, see [How to calculate fees](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/cach-tinh-phi) .
+We publicize the cost calculation for each log project package on GreenNode's homepage, see [How to calculate fees](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/cach-tinh-phi) .
 
 ***
 
@@ -48,7 +48,7 @@ To **renew** a **Log project** , you can:
 6. Select the desired extension period in the Period column. When you select a period, the system will automatically calculate the validity period of the new usage period and the total amount you need to pay for renewing the **Log project package** .
 7. Select **Continue** and continue with the steps. **Check out** the shopping cart and after successful payment, **the Log project** will be renewed.
 
-How to calculate the renewal cost for each Log project package is publicized on the homepage of VNG Cloud, see [How to calculate fees](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/cach-tinh-phi) .
+How to calculate the renewal cost for each Log project package is publicized on the homepage of GreenNode, see [How to calculate fees](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/cach-tinh-phi) .
 
 ***
 
@@ -64,7 +64,7 @@ To **increase the limit of** a **Log project** , you can:
 6. Select **Resize.**
 7. Select **Continue** and continue with the cart **checkout** steps and after successful payment **the Log project** limit will be increased.
 
-How to calculate the cost of increasing the limit for each Log project package is publicized on the homepage of VNG Cloud, see [How to calculate fees](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/cach-tinh-phi) .
+How to calculate the cost of increasing the limit for each Log project package is publicized on the homepage of GreenNode, see [How to calculate fees](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/cach-tinh-phi) .
 
 ***
 

@@ -1,6 +1,6 @@
 # Certificate
 
-VNG Cloud cung cấp trình quản lý Certificate, cho phép người dùng tải lên và quản lý các chứng chỉ của mình. Chúng tôi hỗ trợ quản lý 2 loại chứng chỉ chính:&#x20;
+GreenNode cung cấp trình quản lý Certificate, cho phép người dùng tải lên và quản lý các chứng chỉ của mình. Chúng tôi hỗ trợ quản lý 2 loại chứng chỉ chính:&#x20;
 
 * **TLS/SSL Certificate**
 * **CA Certificate**

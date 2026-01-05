@@ -6,7 +6,7 @@
 
 **Hiện tại, bạn cần:**
 
-* File MP4 sau khi transcode sang các độ phân giải khác nhau, lưu trữ trên dịch vụ object storage tương thích với S3 và có thể truy cập qua vCDN của VNG Cloud.
+* File MP4 sau khi transcode sang các độ phân giải khác nhau, lưu trữ trên dịch vụ object storage tương thích với S3 và có thể truy cập qua vCDN của GreenNode.
 
 **Giải pháp thực hiện:**
 
@@ -93,7 +93,7 @@ Thành phần thực hiện:
 
 ## Khởi tạo và cấu hình dịch vụ vCDN.
 
-**Bước 1:** Bạn thực hiện truy cập [VNG Cloud – ](https://vcdn.vngcloud.vn/)[vCDN](https://vcdn.vngcloud.vn/)[ Portal](https://vcdn.vngcloud.vn/)
+**Bước 1:** Bạn thực hiện truy cập [GreenNode – ](https://vcdn.vngcloud.vn/)[vCDN](https://vcdn.vngcloud.vn/)[ Portal](https://vcdn.vngcloud.vn/)
 
 **Bước 2:** Khởi tạo một domain CDN dành cho VOD theo hướng dẫn tại [đây](../../video-on-demand-streaming.md).
 

@@ -1,15 +1,15 @@
 ---
 description: >-
-  From April 19, 2024, VNG Cloud has changed the user guide UI platform. The
+  From April 19, 2024, GreenNode has changed the user guide UI platform. The
   content remains unchanged which based on docs.vngcloud.vn and continues to be
   updated in the new UI.
 ---
 
-# 🇬🇧 VNG Cloud Help Center
+# 🇬🇧 GreenNode Help Center
 
 ## Overview
 
-Welcome to VNG Cloud's user guide page. Here you can easily find useful information about how to get start with VNG Cloud's products and services.
+Welcome to GreenNode's user guide page. Here you can easily find useful information about how to get start with GreenNode's products and services.
 
 <figure><img src=".gitbook/assets/greennode cover.png" alt=""><figcaption></figcaption></figure>
 

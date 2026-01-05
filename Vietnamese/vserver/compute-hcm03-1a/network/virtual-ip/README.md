@@ -60,13 +60,13 @@ VIP hỗ trợ hai chế độ hoạt động: **Active/Active** và **Active/Pa
 
 Sau khi tạo Virtual IP, bạn cần gán nó vào máy chủ ảo để sử dụng:
 
-1. Vào VNG Cloud portal console, đến trang Virtual IP
+1. Vào GreenNode portal console, đến trang Virtual IP
 2. Xem chi tiết của Virtual IP và chuyển qua mục **Address Pair Interface,** chọn **Add Address Pair Interface/Remove Address Pair Interface** và chọn máy chủ ảo mà bạn muốn gán hay xóa
 3. Bạn sẽ cần cấu hình network trong máy chủ ảo để có thể sử dụng đc Virtual IP
 
 **Xóa Virtual IP**
 
-1. Vào VNG Cloud portal console, đến trang Virtual IP
+1. Vào GreenNode portal console, đến trang Virtual IP
 2. Chọn Virtual IP cần xóa và nhấn **Delete** ở phía bên phải
 
 ## Trường hợp sử dụng

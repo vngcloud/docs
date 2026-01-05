@@ -1,6 +1,6 @@
 # Làm việc với vStorage-Metric
 
-Khi bạn tạo các vStorage Project, hệ thống sẽ tự động thu thập các vStorage metric và hiển thị ở tab Infrastructure List/vStorage, giúp bạn có thể theo dõi được các vStorage Project trên VNG Cloud hoàn toàn miễn phí
+Khi bạn tạo các vStorage Project, hệ thống sẽ tự động thu thập các vStorage metric và hiển thị ở tab Infrastructure List/vStorage, giúp bạn có thể theo dõi được các vStorage Project trên GreenNode hoàn toàn miễn phí
 
 <figure><img src="../../../../.gitbook/assets/image (154).png" alt=""><figcaption></figcaption></figure>
 

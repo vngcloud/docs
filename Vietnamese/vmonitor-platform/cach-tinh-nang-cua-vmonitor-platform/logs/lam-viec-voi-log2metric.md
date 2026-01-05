@@ -16,7 +16,7 @@ Các quy tắc sau áp dụng cho việc đặt tên metric trong vStorage:
 * Tên metric phải dài từ 3 (tối thiểu) đến 50 (tối đa) ký tự.
 * Tên metric phải có ký tự đầu là kiểu alphanumerics (a-z, A-Z) hoặc dấu underscores (\_). Các ký tự tiếp theo là kiểu alphanumerics (a-z, 0-9), dấu underscores (\_), dấu minuses (-), dấu periods (.) hoặc dấu slashes ( / ).
 * Tên metric không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, tên tài khoản, mật khẩu đăng nhập,...).
-* Tên metric phải là duy nhất trên một tài khoản VNG Cloud cho đến khi metric đó bị xóa.&#x20;
+* Tên metric phải là duy nhất trên một tài khoản GreenNode cho đến khi metric đó bị xóa.&#x20;
 
 #### Ví dụ minh họa <a href="#lamviecvoilog2metric-viduminhhoa" id="lamviecvoilog2metric-viduminhhoa"></a>
 

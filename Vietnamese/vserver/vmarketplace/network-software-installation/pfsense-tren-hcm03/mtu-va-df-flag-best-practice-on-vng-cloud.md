@@ -1,8 +1,8 @@
-# MTU và “DF flag” best practice on VNG Cloud
+# MTU và “DF flag” best practice on GreenNode
 
 Default MTU trên môi trường Internet là 1500 bytes, tuy nhiên công nghệ ảo hóa yêu cầu đóng gói thêm một số Extended Headers, điều này làm cho giá trị thực tế sẽ < 1500 bytes.
 
-Hiện tại hạ tầng VNG Cloud đang hỗ trợ tốt ở giá trị Interface MTU 1450 bytes, do đó sau quá trình đóng gói các protocol/application headers, gói tin được gửi ra khỏi VM được khuyến cáo nên ≤ 1450 bytes (1).
+Hiện tại hạ tầng GreenNode đang hỗ trợ tốt ở giá trị Interface MTU 1450 bytes, do đó sau quá trình đóng gói các protocol/application headers, gói tin được gửi ra khỏi VM được khuyến cáo nên ≤ 1450 bytes (1).
 
 Việc VM gửi ra các gói có MTU lớn hơn giá trị MTU đang hỗ trợ dẫn đến hiện tượng “packet fragmentation”, gói tin gốc sẽ được chia thành nhiều gói nhỏ hơn truyền đi và ghép lại khi đến đích, đây là một quá trình hoàn toàn bình thường xảy ra khi dữ liệu được truyền trên môi trường Internet. “Packet fragmentation” sẽ đáp ứng phần lớn nhu cầu của khách hàng.
 
@@ -13,10 +13,10 @@ Tuy nhiên, đối với một số dịch vụ đặc thù như Voice SIP(UDP),
 
 Khi cả hai điều kiện trên xảy ra đồng thời, hạ tầng có thể bỏ qua gói tin ra khỏi máy ảo.
 
-Vì thế VNG Cloud khuyến khích khách hàng chủ động giảm giá trị MTU khi khởi tạo, nếu có sử dụng các “dịch vụ nhạy cảm về MTU và yêu cầu “DF flag”” theo một trong các cách như sau để hạn chế rủi ro khi sử dụng dịch vụ:
+Vì thế GreenNode khuyến khích khách hàng chủ động giảm giá trị MTU khi khởi tạo, nếu có sử dụng các “dịch vụ nhạy cảm về MTU và yêu cầu “DF flag”” theo một trong các cách như sau để hạn chế rủi ro khi sử dụng dịch vụ:
 
 1. Thay đổi cấu hình Application/Service để loại bỏ các Headers không cần thiết (ví dụ custom SIP Headers, IPSec Authentication and Encryption Algorithm).
-2.  Thay đổi MTU của VM (đối với các VM sử dụng custom flavor của KH không theo chuẩn chung VNG Cloud) về 1450 (hoặc nhỏ hơn nếu cần).
+2.  Thay đổi MTU của VM (đối với các VM sử dụng custom flavor của KH không theo chuẩn chung GreenNode) về 1450 (hoặc nhỏ hơn nếu cần).
 
     **PFSense: WEB UI - Interfaces - WAN - MTU = 1450**
 

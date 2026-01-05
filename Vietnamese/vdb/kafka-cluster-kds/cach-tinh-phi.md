@@ -26,7 +26,7 @@ Giả sử bạn có một cụm Kafka với 3 broker, mỗi broker có cấu h�
 * Storage: 100GB
 * Encryption Volume: Không sử dụng
 
-Và VNG Cloud có bảng giá như sau:
+Và GreenNode có bảng giá như sau:
 
 * Compute (4 CPU, 16GB RAM): 1,500,000 VND/tháng
 * Storage: 2,000 VND/GB/tháng

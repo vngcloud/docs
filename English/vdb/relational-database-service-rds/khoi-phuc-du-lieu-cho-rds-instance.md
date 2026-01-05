@@ -1,6 +1,6 @@
 # Restoring RDS Instance
 
-VNG Cloud vDB allows you to restore a new RDS Instance from a previous backup. This restore process is independent of the backup type (Full Backup or Incremental Backup) or how the backup was created (Manual Backup or Automatic Daily Backup).
+GreenNode vDB allows you to restore a new RDS Instance from a previous backup. This restore process is independent of the backup type (Full Backup or Incremental Backup) or how the backup was created (Manual Backup or Automatic Daily Backup).
 
 #### To initiate the restore process:
 

@@ -1,8 +1,8 @@
 # Deployment Mode
 
-Trong môi trường điện toán đám mây của VNG Cloud, chúng tôi cung cấp hai loại Load Balancer riêng biệt: Application Load Balancer và Network Load Balancer. Các Load Balancer này đóng một vai trò quan trọng trong việc tối ưu hóa hiệu suất, tính khả dụng và khả năng mở rộng của ứng dụng của bằng cách phân phối lưu lượng mạng đến các máy chủ backend một cách hiệu quả. Mỗi loại Load Balancer được tùy chỉnh cho các tình huống sử dụng cụ thể, cung cấp các tính năng độc đáo để đáp ứng các yêu cầu đa dạng của kiến trúc IT hiện đại.
+Trong môi trường điện toán đám mây của GreenNode, chúng tôi cung cấp hai loại Load Balancer riêng biệt: Application Load Balancer và Network Load Balancer. Các Load Balancer này đóng một vai trò quan trọng trong việc tối ưu hóa hiệu suất, tính khả dụng và khả năng mở rộng của ứng dụng của bằng cách phân phối lưu lượng mạng đến các máy chủ backend một cách hiệu quả. Mỗi loại Load Balancer được tùy chỉnh cho các tình huống sử dụng cụ thể, cung cấp các tính năng độc đáo để đáp ứng các yêu cầu đa dạng của kiến trúc IT hiện đại.
 
-**Tổng quan mô hình triển khai Load Balancer tại VNG Cloud như sau**
+**Tổng quan mô hình triển khai Load Balancer tại GreenNode như sau**
 
 <figure><img src="../../../.gitbook/assets/64553488 (1).png" alt=""><figcaption></figcaption></figure>
 

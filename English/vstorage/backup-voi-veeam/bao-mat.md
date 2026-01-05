@@ -2,7 +2,7 @@
 
 ## Overview <a href="#baomat-security-tongquan" id="baomat-security-tongquan"></a>
 
-VNG Cloud is responsible for ensuring the security of both its physical and virtual infrastructure that supports VNG Cloud services. Additionally, VNG provides services that allow customers to deploy their security functions for systems hosted on VNG Cloud.
+GreenNode is responsible for ensuring the security of both its physical and virtual infrastructure that supports GreenNode services. Additionally, VNG provides services that allow customers to deploy their security functions for systems hosted on GreenNode.
 
 Therefore, backing up data with Veeam software also ensures safety and reduces the risk of intrusion during regular backup processes, with security control measures such as:
 

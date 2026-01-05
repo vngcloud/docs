@@ -1,6 +1,6 @@
 # Khởi tạo một Cluster thông qua ví POC
 
-Tài nguyên POC sinh ra nhằm mục đích hỗ trợ người dùng có thể trải nghiệm dịch vụ tại VNG Cloud một cách tốt nhất.
+Tài nguyên POC sinh ra nhằm mục đích hỗ trợ người dùng có thể trải nghiệm dịch vụ tại GreenNode một cách tốt nhất.
 
 Điều kiện sử dụng tài nguyên POC:
 

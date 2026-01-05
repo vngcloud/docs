@@ -1,6 +1,6 @@
 # Trải nghiệm sản phẩm vServer
 
-Sử dụng hướng dẫn này để bắt đầu với VNG Cloud (vServer). Bạn sẽ học cách khởi chạy, kết nối và sử dụng. Một ví dụ điển hình cho việc khởi tạo một máy chủ ảo trong đám mây của VNG Cloud. với vServer, bạn có thể thiết lập và định cấu hình hệ điều hành cũng như các ứng dụng đi kèm dự kiến.
+Sử dụng hướng dẫn này để bắt đầu với GreenNode (vServer). Bạn sẽ học cách khởi chạy, kết nối và sử dụng. Một ví dụ điển hình cho việc khởi tạo một máy chủ ảo trong đám mây của GreenNode. với vServer, bạn có thể thiết lập và định cấu hình hệ điều hành cũng như các ứng dụng đi kèm dự kiến.
 
 Khi lần đầu đăng ký dịch vụ vServer, bạn có thể bắt đầu với việc sử dụng miễn phí để có sự trải nghiệm tuyệt vời trước khi quyết định thanh toán. Nếu bạn đã tạo tài khoản của mình trong 3 ngày và chưa vượt quá lợi ích của cấp miễn phí cho vServer, bạn sẽ không mất bất kỳ chi phí nào để hoàn thành hướng dẫn này vì chúng tôi giúp bạn chọn các tùy chọn nằm trong lợi ích của cấp miễn phí. Khi kết thúc cấp miễn phí, bạn sẽ phải chịu phí sử dụng vServer tiêu chuẩn kể từ thời điểm bạn khởi chạy cho đến khi bạn kết thúc phiên bản, ngay cả khi nó không hoạt động.
 
@@ -98,7 +98,7 @@ Sau khi khởi tạo thành công Server, và trạng thái Server là **Active*
 
 ### Tìm kiếm Server đã tạo
 
-Trong trường hợp người dùng tạo rất nhiều máy chủ ảo (VM), thì VNG Cloud cung cấp công cụ hỗ trợ tìm kiếm các máy chủ ảo mà người dùng đã tạo trước một cách nhanh chóng.
+Trong trường hợp người dùng tạo rất nhiều máy chủ ảo (VM), thì GreenNode cung cấp công cụ hỗ trợ tìm kiếm các máy chủ ảo mà người dùng đã tạo trước một cách nhanh chóng.
 
 **Bước 1:** Mở trang chủ vServer tại: [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview)
 

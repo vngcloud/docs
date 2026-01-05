@@ -7,7 +7,7 @@ Các quy tắc sau áp dụng cho việc đặt tên project trong vStorage:
 * Tên project phải dài từ 1 (tối thiểu) đến 40 (tối đa) ký tự.
 * Tên project chỉ có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), khoảng trắng ( ), dấu gạch dưới (\_), dấu gạch ngang (-) và ký tự @.
 * Tên project không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, tên tài khoản, mật khẩu đăng nhập,...).
-* Tên project phải là duy nhất trên một tài khoản VNG Cloud trong hoặc ngoài một region cho đến khi project đó bị xóa. Chúng tôi khuyến khích tên dự án hoặc sản phẩm của doanh nghiệp bạn được sử dụng như tên của project lưu trữ trong vStorage.
+* Tên project phải là duy nhất trên một tài khoản GreenNode trong hoặc ngoài một region cho đến khi project đó bị xóa. Chúng tôi khuyến khích tên dự án hoặc sản phẩm của doanh nghiệp bạn được sử dụng như tên của project lưu trữ trong vStorage.
 
 #### Ví dụ minh họa <a href="#phamvigioihanproject-viduminhhoa" id="phamvigioihanproject-viduminhhoa"></a>
 

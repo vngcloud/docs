@@ -4,7 +4,7 @@ IAM là yếu tố cần thiết để bảo vệ tài nguyên trong các dịch
 
 ### **1. Bắt đầu sử dụng IAM** <a href="#iamforvstorage-1.batdausudungiam" id="iamforvstorage-1.batdausudungiam"></a>
 
-Hướng dẫn này nhằm hướng dẫn người dùng có thể nhanh chóng bắt đầu sử dụng IAM trong các dịch vụ vStorage bằng cách sử dụng quyền mặc định **(được định nghĩa bởi VNG Cloud Managed Policies)** cho hệ thống vStorage gọi là **vStorageFullAccess.**
+Hướng dẫn này nhằm hướng dẫn người dùng có thể nhanh chóng bắt đầu sử dụng IAM trong các dịch vụ vStorage bằng cách sử dụng quyền mặc định **(được định nghĩa bởi GreenNode Managed Policies)** cho hệ thống vStorage gọi là **vStorageFullAccess.**
 
 **1. Truy cập IAM Console**
 
@@ -52,7 +52,7 @@ Truy cập lại Cổng thông tin vStorage bằng cách làm theo hướng dẫ
 
 ### **2. Danh sách VNG Managed Policies** <a href="#iamforvstorage-2.danhsachvngmanagedpolicies" id="iamforvstorage-2.danhsachvngmanagedpolicies"></a>
 
-VNG Managed Policy là các Chính Sách IAM (IAM Policy) được tạo mặc định bởi hệ thống IAM VNG Cloud. Các Chính Sách này được quản lý bởi chính VNG Cloud nhằm mục đích hỗ trợ người dùng trong việc cài đặt nhanh chóng các quyền truy cập cần thiết cho các tài khoản người dùng IAM đối với các tài nguyên của từng Product cụ thể. Cùng tìm hiểu danh sách VNG Managed Policies cho vStorage:
+VNG Managed Policy là các Chính Sách IAM (IAM Policy) được tạo mặc định bởi hệ thống IAM GreenNode. Các Chính Sách này được quản lý bởi chính GreenNode nhằm mục đích hỗ trợ người dùng trong việc cài đặt nhanh chóng các quyền truy cập cần thiết cho các tài khoản người dùng IAM đối với các tài nguyên của từng Product cụ thể. Cùng tìm hiểu danh sách VNG Managed Policies cho vStorage:
 
 * [vStorageAPIFullAccess](https://iam.console.vngcloud.vn/policies/d882a78f-c08b-4e33-991d-3b276723335c): Bao gồm toàn bộ quyền truy cập đến các tài nguyên thuộc hệ thống vStorage thông qua publi API
 * [vStorageIAMUserFullAccess](https://iam.console.vngcloud.vn/policies/9d4e2ff8-3920-44df-a81d-058e19120161): Bao gồm toàn bộ quyền truy cập đến hệ thống IAM của vStorage.

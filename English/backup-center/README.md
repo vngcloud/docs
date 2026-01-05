@@ -6,13 +6,13 @@ In the digital age, data is a valuable asset for every business. Data loss not o
 
 Therefore, backup and disaster recovery (DR) are indispensable elements in any organization's data protection strategy.
 
-VNG Cloud Backup Center is a comprehensive solution that centralizes Backup and DR features for all your Cloud services. With Backup Center, you can easily manage and protect your data, while ensuring business continuity in all situations.
+GreenNode Backup Center is a comprehensive solution that centralizes Backup and DR features for all your Cloud services. With Backup Center, you can easily manage and protect your data, while ensuring business continuity in all situations.
 
 ## Key Features <a href="#tinh-nang-chinh" id="tinh-nang-chinh"></a>
 
 * **Automatic Backup:** Backup Center automatically backs up your data on a pre-set schedule, saving you time and effort.
 * **Multi-level backup:** Supports backing up various data types, including virtual machines, databases, files, and applications.
-* **Secure storage:** Data is stored on VNG Cloud's secure and reliable cloud storage system.
+* **Secure storage:** Data is stored on GreenNode's secure and reliable cloud storage system.
 * **Fast Recovery:** In case of a failure, you can easily restore data to a specific point in time before the failure occurred.
 * **DR cross-region:** Backup Center enables data backup and recovery across different regions, enhancing resilience against large-scale incidents.
 * **Monitoring and alerting:** Backup Center continuously monitors backup status and sends timely alerts when problems occur.
@@ -31,9 +31,9 @@ Cross-region backup and DR is an important feature of Backup Center, allowing yo
 
 ## Conclude <a href="#ket-luan" id="ket-luan"></a>
 
-VNG Cloud Backup Center is a comprehensive and reliable solution to protect data and ensure continuity for your Cloud services. With powerful features and outstanding benefits, Backup Center is the perfect choice for every business.
+GreenNode Backup Center is a comprehensive and reliable solution to protect data and ensure continuity for your Cloud services. With powerful features and outstanding benefits, Backup Center is the perfect choice for every business.
 
-Contact VNG Cloud today to learn more about Backup Center and experience the optimal data protection solution for your business through the following channels:
+Contact GreenNode today to learn more about Backup Center and experience the optimal data protection solution for your business through the following channels:
 
 * Email [support@vngcloud.vn](mailto:support@vngcloud.vn) or hotline **19001549**
 * Create a support request: [https://www.vngcloud.vn/vi/web/guest/contact](https://vngcloud.vn/en/web/guest/contact) .

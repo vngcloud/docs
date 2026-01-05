@@ -37,7 +37,7 @@ Ngoài ra, bạn cũng có thể thiết lập một SSH Tunnel trên một vSer
 
 ### Bước 2: Tùy chỉnh Security Group Rules để bảo vệ DB Instance (tùy chọn) <a href="#ketnoimdsinstance-buoc2-tuychinhsecuritygrouprulesdebaovedbinstance-tuychon" id="ketnoimdsinstance-buoc2-tuychinhsecuritygrouprulesdebaovedbinstance-tuychon"></a>
 
-Mục **Security Group Rules** cho phép bạn giới hạn những **Remote IP** nào được phép truy cập vào DB Instance của bạn. Để tiện lợi cho việc sử dụng, khi vừa khởi tạo, VNG Cloud cho phép bạn truy cập không hạn chế từ mọi nơi (0.0.0.0/0) vào DB Instance. Tuy nhiên, VNG Cloud khuyến nghị bạn tùy chỉnh lại mục này sao cho chỉ những **Remote IP** tin cậy được truy cập vào.
+Mục **Security Group Rules** cho phép bạn giới hạn những **Remote IP** nào được phép truy cập vào DB Instance của bạn. Để tiện lợi cho việc sử dụng, khi vừa khởi tạo, GreenNode cho phép bạn truy cập không hạn chế từ mọi nơi (0.0.0.0/0) vào DB Instance. Tuy nhiên, GreenNode khuyến nghị bạn tùy chỉnh lại mục này sao cho chỉ những **Remote IP** tin cậy được truy cập vào.
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Security group rules</p></figcaption></figure>
 

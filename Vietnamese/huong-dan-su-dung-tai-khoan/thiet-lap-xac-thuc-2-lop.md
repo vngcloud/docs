@@ -2,7 +2,7 @@
 
 2FA nghĩa là **Xác thực Hai Yếu Tố** — là một dạng của **chứng thực đa yếu tố (Multi-Factor Authentication - MFA)**.
 
-Khi đăng nhập vào VNG Cloud, thay vì chỉ cần **một yếu tố** (thường là mật khẩu), 2FA yêu cầu người dùng phải xác minh thêm **một yếu tố khác nữa**, ví dụ:
+Khi đăng nhập vào GreenNode, thay vì chỉ cần **một yếu tố** (thường là mật khẩu), 2FA yêu cầu người dùng phải xác minh thêm **một yếu tố khác nữa**, ví dụ:
 
 * **Yếu tố thứ nhất (bắt buộc):** Cái bạn biết — mật khẩu.
 * **Yếu tố thứ hai:** Cái bạn có — điện thoại (nhận OTP, app Authenticator).&#x20;

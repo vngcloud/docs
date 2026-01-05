@@ -10,7 +10,7 @@ description: >-
 
 ### Truy cập VPN detail
 
-* Truy cập thành công vào VNG Cloud, tại màn hình Console chọn đến dịch vụ vNetwork.
+* Truy cập thành công vào GreenNode, tại màn hình Console chọn đến dịch vụ vNetwork.
 * Tại thanh menu bên trái của giao diện vNetwork, chọn mục VPN Site-to-Site.
 * Chọn VPN cần chỉnh sửa
 

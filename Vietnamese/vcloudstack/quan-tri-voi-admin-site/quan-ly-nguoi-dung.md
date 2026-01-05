@@ -44,7 +44,7 @@ Bước 6: Click nút invite để xác nhận mời người dùng mới.
 {% hint style="info" %}
 **Lưu ý:**&#x20;
 
-* Tài khoản (Email) của người dùng được mời vào vCloudStack, phải là tài khoản đã đăng ký vào VNG Cloud trước đó.
+* Tài khoản (Email) của người dùng được mời vào vCloudStack, phải là tài khoản đã đăng ký vào GreenNode trước đó.
 * Mặc định vai trò mời sử dụng vCloudStack là "User". Với vai trò này thì người dùng có thể vào vCloudStack User Site để tạo và vận hành. Nếu muốn truy cập vào vCloudstack Admin Site thì người quản trị phải chọn role là Admin trở lên.
 {% endhint %}
 

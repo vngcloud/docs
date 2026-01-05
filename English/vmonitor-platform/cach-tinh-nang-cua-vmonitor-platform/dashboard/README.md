@@ -20,7 +20,7 @@ The following rules apply to naming Dashboards in the vMonitor Platform:
 * The Dashboard name must be between 1 (minimum) and 50 (maximum) characters in length.
 * The Dashboard name can only include uppercase letters, lowercase letters (a-z, A-Z), numbers (0-9), dots (.), underscores (\_), hyphens (-), slashes (/) and the @ character.
 * The Dashboard name should not contain sensitive information (e.g., IP addresses, account names, login passwords,...).
-* The Dashboard name must be unique within a VNG Cloud account until it is deleted.
+* The Dashboard name must be unique within a GreenNode account until it is deleted.
 
 Examples:
 
@@ -59,7 +59,7 @@ To view the Dashboards, you can:
 2. Select the menu **Dashboard.**
 3. On the **Dashboard** list display page, you can filter the **Dashboard** list according to the types of Dashboard and their meanings as described in the tables below:
 
-<table data-header-hidden><thead><tr><th width="194"></th><th></th></tr></thead><tbody><tr><td><strong>Loại Dashboard</strong></td><td><strong>Description</strong></td></tr><tr><td>All Dashboards</td><td>All existing dashboards</td></tr><tr><td>All host</td><td>All Dashboards are automatically created by the vMonitor Platform when you set up a Host.</td></tr><tr><td>All integration</td><td>All Dashboards are automatically created by the vMonitor Platform when you set up integrated applications.</td></tr><tr><td>All VNG Cloud</td><td>All Dashboards are created by the vMonitor Platform system for VNG Cloud Products.</td></tr><tr><td>Created by you</td><td>Dashboards created by users</td></tr><tr><td>Favourite</td><td>Favorite Dashboards.</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="194"></th><th></th></tr></thead><tbody><tr><td><strong>Loại Dashboard</strong></td><td><strong>Description</strong></td></tr><tr><td>All Dashboards</td><td>All existing dashboards</td></tr><tr><td>All host</td><td>All Dashboards are automatically created by the vMonitor Platform when you set up a Host.</td></tr><tr><td>All integration</td><td>All Dashboards are automatically created by the vMonitor Platform when you set up integrated applications.</td></tr><tr><td>All GreenNode</td><td>All Dashboards are created by the vMonitor Platform system for GreenNode Products.</td></tr><tr><td>Created by you</td><td>Dashboards created by users</td></tr><tr><td>Favourite</td><td>Favorite Dashboards.</td></tr></tbody></table>
 
 The **Dashboard** has not been successfully added to the favorites list. The **Dashboard** has been successfully added to the favorites list and vice versa when the icon <img src="../../../.gitbook/assets/image (47) (3).png" alt="" data-size="line"> on the **Dashboard** is on each **Dashboard**. When the icon on the Dashboard is <img src="../../../.gitbook/assets/image (48).png" alt="" data-size="line">, you can mark a **custom Dashboard** as a favorite or remove it from the favorites list by re-selecting it.
 

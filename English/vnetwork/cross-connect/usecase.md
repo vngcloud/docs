@@ -13,7 +13,7 @@ Suppose a business has two branches, one in Ho Chi Minh City and one in Hanoi. T
 ### **Advantages:**
 
 * **Easy to use**: With a few simple steps, businesses can establish inter-regional connections between VPCs;
-* **High performance**: Cross Connect leverages the global network infrastructure of VNG Cloud to provide high-quality, low-latency connections with bandwidth that can be flexibly adjusted to meet changing business needs.
+* **High performance**: Cross Connect leverages the global network infrastructure of GreenNode to provide high-quality, low-latency connections with bandwidth that can be flexibly adjusted to meet changing business needs.
 
 **Limitations:**
 

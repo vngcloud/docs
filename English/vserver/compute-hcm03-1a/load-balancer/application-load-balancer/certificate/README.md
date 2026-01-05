@@ -1,6 +1,6 @@
 # Certificate
 
-VNG Cloud provides a Certificate Manager that allows you to upload and manage your certificates. We support the management of two main types of certificates:
+GreenNode provides a Certificate Manager that allows you to upload and manage your certificates. We support the management of two main types of certificates:
 
 1. **TLS/SSL Certificates:**
    * **What They Are:** TLS/SSL certificates are digital documents that contain information about a website or server's public key and identity. They are used to establish secure connections between a user's computer and a web server, ensuring the confidentiality and integrity of data transmitted over the network.

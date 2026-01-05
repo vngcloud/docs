@@ -79,4 +79,4 @@ VD: với **Workbench**, bạn có thể chọn **Connection Method** là **Stan
 
 sau đó bạn nhấn **Test Connection**.
 
-Chúc bạn thành công. Nếu có vấn đề gì cần hỗ trợ, bạn vui lòng liên hệ **VNG Cloud Support Team**.
+Chúc bạn thành công. Nếu có vấn đề gì cần hỗ trợ, bạn vui lòng liên hệ **GreenNode Support Team**.

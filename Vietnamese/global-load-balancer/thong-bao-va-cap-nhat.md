@@ -4,7 +4,7 @@
 
 #### Bản phát hành đầu tiên: Network **Global Load Balancer - Mở rộng tầm phủ sóng toàn cầu**
 
-VNG Cloud trân trọng thông báo về việc ra mắt phiên bản đầu tiên của Global Load Balancer (GLB), đánh dấu một bước tiến quan trọng trong việc tối ưu hóa hiệu suất và độ sẵn sàng của ứng dụng của bạn trên quy mô đa vùng địa lý.
+GreenNode trân trọng thông báo về việc ra mắt phiên bản đầu tiên của Global Load Balancer (GLB), đánh dấu một bước tiến quan trọng trong việc tối ưu hóa hiệu suất và độ sẵn sàng của ứng dụng của bạn trên quy mô đa vùng địa lý.
 
 1. **Từ Load Balancer đến Global Load Balancer: Sự khác biệt**
 

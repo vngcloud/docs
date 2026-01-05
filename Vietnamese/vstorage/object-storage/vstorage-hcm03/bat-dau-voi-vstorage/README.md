@@ -1,6 +1,6 @@
 # Bắt đầu với vStorage
 
-Nếu bạn chưa sử dụng bất kỳ dịch vụ nào của VNG Cloud (chưa đăng ký tài khoản sử dụng với VNG Cloud), bạn cần đăng ký tài khoản với VNG Cloud Service [tại đây](https://register.vngcloud.vn/signup) để truy cập đến vStorage.
+Nếu bạn chưa sử dụng bất kỳ dịch vụ nào của GreenNode (chưa đăng ký tài khoản sử dụng với GreenNode), bạn cần đăng ký tài khoản với GreenNode Service [tại đây](https://register.vngcloud.vn/signup) để truy cập đến vStorage.
 
 #### Tổng quan <a href="#batdauvoivstorage-tongquan" id="batdauvoivstorage-tongquan"></a>
 

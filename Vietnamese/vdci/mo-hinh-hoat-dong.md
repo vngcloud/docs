@@ -27,7 +27,7 @@ Mô hình vDCI mang lại khả năng **tách biệt tài nguyên vật lý**, n
 
 **3. VPC Prod**
 
-* Là hệ thống Cloud VPC tiêu chuẩn của VNG Cloud, chứa các subnet như:
+* Là hệ thống Cloud VPC tiêu chuẩn của GreenNode, chứa các subnet như:
   * `Subnet 11` (CIDR: `10.1.1.0/24`)
   * `Subnet 12` (CIDR: `10.1.2.0/24`)
 * Mỗi subnet có thể chứa nhiều máy chủ với IP nội bộ và IP public riêng biệt.

@@ -2,7 +2,7 @@
 
 ## 16 Dec, 2024
 
-VNG Cloud giới thiệu vDNS, dịch vụ vDNS mạnh mẽ giúp tối ưu hiệu suất, tăng cường bảo mật và đảm bảo tính ổn định cho hạ tầng trực tuyến của bạn. vDNS cung cấp khả năng phân giải tên miền nhanh chóng và tin cậy, đảm bảo trải nghiệm truy cập mượt mà cho người dùng.
+GreenNode giới thiệu vDNS, dịch vụ vDNS mạnh mẽ giúp tối ưu hiệu suất, tăng cường bảo mật và đảm bảo tính ổn định cho hạ tầng trực tuyến của bạn. vDNS cung cấp khả năng phân giải tên miền nhanh chóng và tin cậy, đảm bảo trải nghiệm truy cập mượt mà cho người dùng.
 
 1. **Các loại bản ghi DNS được hỗ trợ:**
 
@@ -29,5 +29,5 @@ vDNS cung cấp các chính sách định tuyến linh hoạt để tối ưu hi
 * Tính ổn định cao với kiến trúc dự phòng.
 * Bảo mật mạnh mẽ với khả năng chống tấn công DDoS và DNSSEC.
 * Dễ dàng quản lý với giao diện trực quan.
-* Tích hợp với hệ sinh thái VNG Cloud.
+* Tích hợp với hệ sinh thái GreenNode.
 * Hỗ trợ 24/7 từ đội ngũ chuyên nghiệp.

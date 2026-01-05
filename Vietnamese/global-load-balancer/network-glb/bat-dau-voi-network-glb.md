@@ -4,7 +4,7 @@ Trong phần này, chúng ta sẽ tìm hiểu về cách sử dụng và quản 
 
 #### Trước khi bắt đầu <a href="#gettingstarted-nlb-truockhibatdau" id="gettingstarted-nlb-truockhibatdau"></a>
 
-* Tìm hiểu cách **truy cập VNG Cloud Portal** với Root User Account hoặc IAM User Account, tham khảo hướng dẫn [How to Login into VNG Cloud](../../identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md).
+* Tìm hiểu cách **truy cập GreenNode Portal** với Root User Account hoặc IAM User Account, tham khảo hướng dẫn [How to Login into GreenNode](../../identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md).
 * Trong trường hợp người dùng muốn bắt đầu với IAM User Account, tham khảo hướng dẫn [IAM cho GLB.](../../identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-global-load-balancer.md)
 
 #### 1. Truy cập GLB Console <a href="#gettingstarted-nlb-1.truycapvlbconsole" id="gettingstarted-nlb-1.truycapvlbconsole"></a>
@@ -14,7 +14,7 @@ GLB Console là giao diện người dùng dựa trên web, cho phép bạn qu�
 **Cách truy cập Bảng điều khiển GLB**
 
 * Truy cập từ trang chủ vConsole: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
-  * Tại mục **"VNG Cloud Service"** trên giao diện, click **chọn "vServer"**, sau đó click **chọn "GLB"** từ danh sách sản phẩm/dịch vụ tương ứng bên phải
+  * Tại mục **"GreenNode Service"** trên giao diện, click **chọn "vServer"**, sau đó click **chọn "GLB"** từ danh sách sản phẩm/dịch vụ tương ứng bên phải
 * Truy cập trực tiêp đến vLB Portal thông qua đường dẫn: [https://glb.console.vngcloud.vn/overview](https://glb.console.vngcloud.vn/overview)
 
 #### 2. Khởi tạo Network GLB <a href="#gettingstarted-nlb-2.khoitaonlb" id="gettingstarted-nlb-2.khoitaonlb"></a>

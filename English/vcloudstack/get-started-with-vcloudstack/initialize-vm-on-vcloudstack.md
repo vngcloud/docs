@@ -2,7 +2,7 @@
 
 ### Overview <a href="#tong-quan" id="tong-quan"></a>
 
-After successfully configuring the infrastructure device and connecting to the VNG Cloud cloud system, users can initialize a virtual server at the User Site interface on the internal infrastructure. In addition, users need to Create Network first to be ready to initialize a virtual server.
+After successfully configuring the infrastructure device and connecting to the GreenNode cloud system, users can initialize a virtual server at the User Site interface on the internal infrastructure. In addition, users need to Create Network first to be ready to initialize a virtual server.
 
 ***
 
@@ -10,7 +10,7 @@ After successfully configuring the infrastructure device and connecting to the V
 
 **Step 1** : User accesses and logs in to User Site;
 
-If the user accesses the vServer section of VNG Cloud, they can access the registered vCloudstack by clicking on the Region section and **selecting the Region of vCloudStack.**
+If the user accesses the vServer section of GreenNode, they can access the registered vCloudstack by clicking on the Region section and **selecting the Region of vCloudStack.**
 
 **Step 2:** At the User Site interface, on the Navigation bar, select Server/Servers;
 

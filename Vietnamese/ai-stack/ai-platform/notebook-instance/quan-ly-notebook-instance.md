@@ -8,7 +8,7 @@ description: >-
 
 ## **Truy cập Notebook instance**
 
-1. Đăng nhập vào [VNG Cloud AI Platform](https://aiplatform.console.vngcloud.vn/overview).
+1. Đăng nhập vào [GreenNode AI Platform](https://aiplatform.console.vngcloud.vn/overview).
 2. Chọn mục **Notebook instance** từ menu bên trái.
 
 ## **1. Kết nối với các instance đang chạy**

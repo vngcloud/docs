@@ -4,7 +4,7 @@
 
 Its purpose is to provide additional data for the instance to customize it as much as you need, the vServer cloud service does support this feature.&#x20;
 
-&#x20;VNG Cloud is able to interpret and use this kind of user specific data in multiple ways. In most of the cases, the thing that indicates of what type is the processed data is usually the first line.
+&#x20;GreenNode is able to interpret and use this kind of user specific data in multiple ways. In most of the cases, the thing that indicates of what type is the processed data is usually the first line.
 
 * Batch
 * PowerShell
@@ -214,14 +214,14 @@ To type the command lines to provide Userdata to Server, you can implement in Cr
 
 <figure><img src="../../../.gitbook/assets/1 (1).png" alt=""><figcaption></figcaption></figure>
 
-* You able to upload the file or **input the command lines into content field** to execute providing user information to Server. Refer to the section "Suggestions for filling commands for UserData", VNG Cloud provided defaults script command suggestions to configure.
+* You able to upload the file or **input the command lines into content field** to execute providing user information to Server. Refer to the section "Suggestions for filling commands for UserData", GreenNode provided defaults script command suggestions to configure.
 * If UseData information in the tools being used has been Base64 encoded, you will select it.
 
 ## **Suggestions for filling commands for UseData**![](http://docs.vngcloud.vn/plugins/servlet/confluence/placeholder/macro?definition=e2FuY2hvcjpTdWdnZXN0U2NyaXB0VXNlckRhdGF9\&locale=en_US\&version=2)
 
 ***
 
-When creating Windows Severs, VNG Cloud provide Khi tạo Server Windows, VNG Cloud Default commands (Default Scripts) in UserData field, including Windows OS licences that you can use immediately:
+When creating Windows Severs, GreenNode provide Khi tạo Server Windows, GreenNode Default commands (Default Scripts) in UserData field, including Windows OS licences that you can use immediately:
 
 <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>#ps1
 net user stackops VngP@ssword2 /logonpasswordchg:yes  /y

@@ -1,6 +1,6 @@
 # Getting Started with Object storage
 
-If you have not used any VNG Cloud services (have not registered an account with VNG Cloud), you need to register an account with VNG Cloud Service [here](https://register.vngcloud.vn/signup) to access vStorage.
+If you have not used any GreenNode services (have not registered an account with GreenNode), you need to register an account with GreenNode Service [here](https://register.vngcloud.vn/signup) to access vStorage.
 
 Use this guide to get started with vStorage. You will learn how to create a project, connect 3rd party software to vStorage, and use 3rd party software to implement features in the project you just created. The steps include:
 

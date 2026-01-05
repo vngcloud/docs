@@ -1,6 +1,6 @@
 # Working with vDB-Metric
 
-When you create vDBs, the system will automatically collect metrics and display them in the Infrastructure List/vDB tab, allowing you to monitor vDBs on VNG Cloud completely free of charge.
+When you create vDBs, the system will automatically collect metrics and display them in the Infrastructure List/vDB tab, allowing you to monitor vDBs on GreenNode completely free of charge.
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FYPrCxZjzf8p8PmImKnWC%252Fimage.png%3Falt%3Dmedia%26token%3D2434e98c-68aa-4581-800c-ea6193aabf83&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e39b928f&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 

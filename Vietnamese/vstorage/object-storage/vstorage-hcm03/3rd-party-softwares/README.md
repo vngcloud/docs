@@ -18,7 +18,7 @@ vStorage hỗ trợ các công cụ phía người dùng và phiên bản (versi
 
 Để sử dụng các công cụ phía người dùng (3rd party software), bạn cần cung cấp thông tin chứng thực cho các công cụ này để truy cập vào dịch vụ lưu trữ vStorage. Bạn có thể sử dụng danh tính Service Account để chứng thực khi truy cập vào tài nguyên vStorage thông qua các công cụ mà chúng tôi nêu bên trên. Để sử dụng Service Account, bạn cần khởi tạo S3 key, tài khoản swift thông qua dịch vụ vIAM, chi tiết xem tại [đây.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805240)
 
-Sau khi khởi tạo s3 key, tài khoản swift  thông qua dịch vụ vIAM, hãy thu thập thông tin sau để làm thông tin chứng thực khi truy cập dịch vụ vStorage. Nếu bạn không có thông tin này, hãy liên hệ với quản trị viên của tài khoản VNG CLoud.
+Sau khi khởi tạo s3 key, tài khoản swift  thông qua dịch vụ vIAM, hãy thu thập thông tin sau để làm thông tin chứng thực khi truy cập dịch vụ vStorage. Nếu bạn không có thông tin này, hãy liên hệ với quản trị viên của tài khoản GreenNode.
 
 * Thông tin access key, secret key, project, restriction by IAM của S3 key được tạo nếu có.&#x20;
 * Thông tin username, password, project, restriction by IAM của tài khoản swift được tạo nếu có.

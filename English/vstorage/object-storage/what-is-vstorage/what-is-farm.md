@@ -21,4 +21,4 @@ Farm is a term specific to vStorage. In the context of vStorage, we define a 'fa
 * Uploading files through the encryption endpoint will make your files more secure but may reduce upload speeds. Average upload speeds when using encryption endpoints can be reduced by 5% to 10% compared to uploads using conventional endpoints.
 {% endhint %}
 
-For each farm, in addition to the general vStorage features, there will be some distinct features specific to that farm. Details will be updated here as soon as possible. You can also request us to provide a specific farm if your data storage needs are large and unique. To get in touch with us, you can request support or contact the VNG Cloud staff assisting you directly.
+For each farm, in addition to the general vStorage features, there will be some distinct features specific to that farm. Details will be updated here as soon as possible. You can also request us to provide a specific farm if your data storage needs are large and unique. To get in touch with us, you can request support or contact the GreenNode staff assisting you directly.

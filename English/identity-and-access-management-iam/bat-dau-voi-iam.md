@@ -6,7 +6,7 @@ In this section, we will explore the basic concepts of Identity and Access Manag
 
 Before we begin, please refer to the login guide with the Root User Account and IAM User Account here:
 
-* [How to login to VNG Cloud](cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)
+* [How to login to GreenNode](cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)
 
 IAM Console is a web-based user interface that allows you to manage IAM User Accounts, Groups, Service Accounts, and Policies in your cloud computing environment. It provides a visual interface to control access to your resources and configure security settings.
 
@@ -20,7 +20,7 @@ IAM Console is a web-based user interface that allows you to manage IAM User Acc
 
 **Root User Account**&#x20;
 
-A Root User Account is an entity you first create in VNG Cloud and use, which by default has full access to all VNG Cloud products/services and resources in that account.&#x20;
+A Root User Account is an entity you first create in GreenNode and use, which by default has full access to all GreenNode products/services and resources in that account.&#x20;
 
 **IAM User Account**&#x20;
 
@@ -59,14 +59,14 @@ IAM Policies are JSON documents that define resource access rights and rules. Th
 
 **Access Policy**
 
-IAM access rights define the actions that IAM entities (IAM User Accounts, Groups, and Service Accounts) are allowed or denied to perform on VNG Cloud resources. These actions include access levels such as viewing lists, reading and writing rights on resources, or managing IAM User Accounts and Groups.
+IAM access rights define the actions that IAM entities (IAM User Accounts, Groups, and Service Accounts) are allowed or denied to perform on GreenNode resources. These actions include access levels such as viewing lists, reading and writing rights on resources, or managing IAM User Accounts and Groups.
 
 **How to Configure Permissions in IAM Policy?**&#x20;
 
 1. Go to IAM Console. Click "Policy" in the left menu.&#x20;
 2. Click "Create a policy." Provide a Policy name and optional description.&#x20;
 3. Click "Next step" to continue configuring permissions.&#x20;
-4. Select a specific Product/Service in the VNG Cloud system that needs to be configured.&#x20;
+4. Select a specific Product/Service in the GreenNode system that needs to be configured.&#x20;
 5. Specify the Actions allowed on the product's resources.&#x20;
 6. Select the Resources that apply the actions (All resources / Specific resources).&#x20;
 7. Provide the Request conditions on the application time.&#x20;

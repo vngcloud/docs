@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Note:**
 
-To help you perform data migration quickly, we have developed the DataSync tool. This is a tool developed by **VNG Cloud**, providing infrastructure up to 1Gbps to help you easily schedule and migrate data quickly. Learn more about DataSync at DataSync.
+To help you perform data migration quickly, we have developed the DataSync tool. This is a tool developed by **GreenNode**, providing infrastructure up to 1Gbps to help you easily schedule and migrate data quickly. Learn more about DataSync at DataSync.
 {% endhint %}
 
 Migrate data in cloud storage is the process of transferring data from one cloud storage service to another. This can be done for various reasons, such as:

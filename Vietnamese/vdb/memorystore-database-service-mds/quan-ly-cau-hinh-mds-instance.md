@@ -24,7 +24,7 @@ Bạn truy cập dịch vụ MemoryStore database và chuyển sang mục Config
 Để cấu hình các giá trị của Configuration Group, bạn nhấp chuột trái vào tên của Configuration Group. Tại đây, bạn có thể xem tất cả các biến cấu hình của Configuration Group này. Mỗi biến bao gồm:
 
 * **Name:** tên biến
-* **Value:** giá trị cấu hình hiện tại của biến. Mặc định, VNG Cloud không cấu hình bất kì biến nào và giữ nguyên các giá trị mặc định của Database Engine.
+* **Value:** giá trị cấu hình hiện tại của biến. Mặc định, GreenNode không cấu hình bất kì biến nào và giữ nguyên các giá trị mặc định của Database Engine.
 * **Allowed Values:** các giá trị được phép cấu hình cho từng biến.
 * **Data Type:** kiểu dữ liệu của giá trị có thể áp dụng cho biến cấu hình này.
 
@@ -37,7 +37,7 @@ Bạn truy cập dịch vụ MemoryStore database và chuyển sang mục Config
 
 Các MDS Instance đang được liên kết hay chuẩn bị được liên kết với Configuration Group này sẽ được áp dụng các giá trị mới này. Bạn quay lại màn hình quản lý Database để xem qúa trình áp dụng cấu hình mới. Nếu quá trình áp dụng thành công, MDS Instance sẽ có trạng thái **Active**.
 
-**Lưu ý:** Trong một số truờng hợp, biến cấu hình đòi hỏi cần **Restart** lại dịch vụ Database trên MDS Instance, status của MDS Instance lúc này sẽ là **Restart\_required**. Với VNG Cloud, bạn có thể chủ động thời điểm thực hiện thao tác này. Sau khi đã sao lưu các tác vụ trên MDS Instance, bạn click vào **Action**, chọn **Restart** để hoàn tất quá trình.
+**Lưu ý:** Trong một số truờng hợp, biến cấu hình đòi hỏi cần **Restart** lại dịch vụ Database trên MDS Instance, status của MDS Instance lúc này sẽ là **Restart\_required**. Với GreenNode, bạn có thể chủ động thời điểm thực hiện thao tác này. Sau khi đã sao lưu các tác vụ trên MDS Instance, bạn click vào **Action**, chọn **Restart** để hoàn tất quá trình.
 
 ### C - Liên kết MDS Instance với Configuration Groups <a href="#quanlycauhinhmdsinstance-c-lienketmdsinstancevoiconfigurationgroups" id="quanlycauhinhmdsinstance-c-lienketmdsinstancevoiconfigurationgroups"></a>
 
@@ -58,7 +58,7 @@ Các MDS Instance đang được liên kết hay chuẩn bị được liên k�
 * Tại màn hình thay đổi chọn đến Configuration Group muốn áp dụng.
 * Khi mọi lựa chọn đã chính xác, bạn nhấn vào nút **SAVE** . Bạn chờ một lát để các biến cấu hình được áp dụng xuống MDS Instance và nếu quá trình thay đổi thành công, MDS Instance sẽ có trạng thái **Active**.
 
-**Lưu ý:** Trong một số truờng hợp, biến cấu hình đòi hỏi cần **Restart** lại dịch vụ Database trên MDS Instance, status của MDS Instance lúc này sẽ là **Restart\_required**. Với VNG Cloud, bạn có thể chủ động thời điểm thực hiện thao tác này. Sau khi đã sao lưu các tác vụ trên MDS Instance, bạn click vào **Action**, chọn **Restart** để hoàn tất quá trình.
+**Lưu ý:** Trong một số truờng hợp, biến cấu hình đòi hỏi cần **Restart** lại dịch vụ Database trên MDS Instance, status của MDS Instance lúc này sẽ là **Restart\_required**. Với GreenNode, bạn có thể chủ động thời điểm thực hiện thao tác này. Sau khi đã sao lưu các tác vụ trên MDS Instance, bạn click vào **Action**, chọn **Restart** để hoàn tất quá trình.
 
 ### D - Xóa Configuration Group <a href="#quanlycauhinhmdsinstance-a-khoitaoconfigurationgroup" id="quanlycauhinhmdsinstance-a-khoitaoconfigurationgroup"></a>
 

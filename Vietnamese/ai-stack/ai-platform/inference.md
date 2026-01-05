@@ -15,7 +15,7 @@ Tính năng **Inference** giúp bạn triển khai mô hình AI thành một d�
 
 #### **Bước 1: Truy cập giao diện Inference**
 
-1. Đăng nhập vào [VNG Cloud AI Platform](https://aiplatform.console.vngcloud.vn/overview)..
+1. Đăng nhập vào [GreenNode AI Platform](https://aiplatform.console.vngcloud.vn/overview)..
 2. Vào **Inference** tại menu bên trái.
 3. Nhấn nút **“Create endpoint”**.
 

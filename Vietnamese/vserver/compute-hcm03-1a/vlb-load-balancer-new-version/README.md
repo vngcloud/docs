@@ -6,7 +6,7 @@ Hướng dẫn này được thiết kế nhằm mục đích cung cấp cho ng�
 Hướng dẫn khởi tạo và quản lý Load Balancer
 {% endembed %}
 
-### Tổng quan về VNG Cloud load balancer <a href="#vlb-loadbalancer-newversion-tongquanvevngcloudloadbalancer" id="vlb-loadbalancer-newversion-tongquanvevngcloudloadbalancer"></a>
+### Tổng quan về GreenNode load balancer <a href="#vlb-loadbalancer-newversion-tongquanvevngcloudloadbalancer" id="vlb-loadbalancer-newversion-tongquanvevngcloudloadbalancer"></a>
 
 #### Load Balancer là gì? <a href="#vlb-loadbalancer-newversion-loadbalancerlagi" id="vlb-loadbalancer-newversion-loadbalancerlagi"></a>
 

@@ -10,7 +10,7 @@ To address this, you can:
 * Store session information in a shared database or a file system server on the application server.
 * **Drawback:** Building a cluster system or a database requires significant system expertise.
 
-That's why VNG CLOUD offers the Sticky Session feature, which directs all requests from a user within a session to the same server, simplifying things for users.
+That's why GreenNode offers the Sticky Session feature, which directs all requests from a user within a session to the same server, simplifying things for users.
 
 ## Introduction to Enable Sticky Session
 

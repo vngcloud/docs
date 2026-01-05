@@ -1,6 +1,6 @@
 # Manage Load balancer
 
-VNG Cloud provides an intuitive interface for managing Load Balancers, including essential features like:
+GreenNode provides an intuitive interface for managing Load Balancers, including essential features like:
 
 * Creating Load Balancers
 * Viewing the list of Load Balancers
@@ -11,7 +11,7 @@ VNG Cloud provides an intuitive interface for managing Load Balancers, including
 
 ## 1. Creating Load Balancers
 
-To use the vLB service on VNG Cloud, the first thing you need to do is create a Load Balancer according to your usage requirements. Refer to the following instructions for creating an Application Load Balancer.
+To use the vLB service on GreenNode, the first thing you need to do is create a Load Balancer according to your usage requirements. Refer to the following instructions for creating an Application Load Balancer.
 
 **Steps to Create an Application Load Balancer:**
 

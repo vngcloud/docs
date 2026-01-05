@@ -2,7 +2,7 @@
 
 #### Backing Up RDS Instance&#x20;
 
-VNG Cloud vDB supports two methods for data backup: on-demand (manual) and daily automatic backups at a scheduled time.
+GreenNode vDB supports two methods for data backup: on-demand (manual) and daily automatic backups at a scheduled time.
 
 ***
 
@@ -53,6 +53,6 @@ You have two options:
   3. Scroll down to **BACKUP SETTINGS** and configure the following options:
      * **Automatic daily backup**: Enable or disable this feature.
      * **Backup retention period**: Set the retention period for the automatic backups. Backups older than this period will be deleted to save storage space.
-     * **Backup time**: Set the time for the automatic backup process. VNG Cloud recommends selecting a time that is least busy for your system.
+     * **Backup time**: Set the time for the automatic backup process. GreenNode recommends selecting a time that is least busy for your system.
 
 4. After verifying the details, click **Save** to apply the changes. Wait a moment for the process to complete.

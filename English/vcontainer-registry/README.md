@@ -1,6 +1,6 @@
 # vContainer Registry
 
-VNG Cloud is proud to introduce our latest addition to the VNG Cloud ecosystem - Container Registry! To enhance user experience, Container Registry provides a user-friendly web portal and seamlessly integrates with other internal cloud services, making it easy for you to manage and deploy your container applications.&#x20;
+GreenNode is proud to introduce our latest addition to the GreenNode ecosystem - Container Registry! To enhance user experience, Container Registry provides a user-friendly web portal and seamlessly integrates with other internal cloud services, making it easy for you to manage and deploy your container applications.&#x20;
 
 **Key Features**
 
@@ -16,7 +16,7 @@ VNG Cloud is proud to introduce our latest addition to the VNG Cloud ecosystem -
 
 **Getting Started**
 
-* Access the Web Portal: Simply log in to your VNG Cloud account and navigate to the Container Registry section to begin at [https://vcr.console.vngcloud.vn/](https://vcr.console.vngcloud.vn/) Comment
+* Access the Web Portal: Simply log in to your GreenNode account and navigate to the Container Registry section to begin at [https://vcr.console.vngcloud.vn/](https://vcr.console.vngcloud.vn/) Comment
 * Explore the Service: Explore Container Registry by initializing a Repository to store container images, then create Repository Users to Push/Pull images for management within the Repository. Comment
 * Set Permissions: Configure IAM-controlled permissions to effectively manage access and security. Comment Related Articles Comment
 

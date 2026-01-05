@@ -8,7 +8,7 @@ Follow the steps below to log in to vStorage with the IAM User Account:
 
 2\. The main login page will appear. Choose **LOGIN WITH IAM USER ACCOUNT.**
 
-3\. Enter the **email** address of the Root user when registering the VNG Cloud account.
+3\. Enter the **email** address of the Root user when registering the GreenNode account.
 
 4\. Enter the **username** and **password** of the IAM user account created in the vIAM system.
 

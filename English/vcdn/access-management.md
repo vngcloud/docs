@@ -2,7 +2,7 @@
 
 ## Overview <a href="#tong-quan" id="tong-quan"></a>
 
-The secondary authorization system allows customers to manage access and operations on CDN services flexibly and in detail. Through VNG Cloud's Portal interface, customers can authorize administration to any account that already exists on the system with customized permissions.
+The secondary authorization system allows customers to manage access and operations on CDN services flexibly and in detail. Through GreenNode's Portal interface, customers can authorize administration to any account that already exists on the system with customized permissions.
 
 ## Detail <a href="#chi-tiet" id="chi-tiet"></a>
 
@@ -38,7 +38,7 @@ The secondary authorization system allows customers to manage access and operati
 
 **Step 2:** Select **IAM** , then select **Add new.**
 
-**Step 3:** Enter the email address of an account that already exists on the VNG Cloud system.
+**Step 3:** Enter the email address of an account that already exists on the GreenNode system.
 
 **Step 4:** At the object that needs to be authorized, select the type of authority that suits your needs. In which:
 

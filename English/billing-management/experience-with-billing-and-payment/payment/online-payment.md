@@ -1,10 +1,10 @@
 # Online payment
 
-Online payment is one of the main payment methods at VNG Cloud Service. Currently, online payment method applies to:&#x20;
+Online payment is one of the main payment methods at GreenNode Service. Currently, online payment method applies to:&#x20;
 
 * **Target audience:** Prepaid users.
 * **Source of funds:**&#x20;
-  * VNG Cloud Wallet (Credit Wallet).
+  * GreenNode Wallet (Credit Wallet).
   * Online payment gateway: MoMo, ZaloPay, etc.&#x20;
 * **Tasks:**&#x20;
   * Users choose the payment method and confirm the payment.
@@ -18,18 +18,18 @@ Online payment is one of the main payment methods at VNG Cloud Service. Currentl
   * Send an email notification with resource configuration information.
   * Generate transaction histories in Credit History, Payment History, and Billing History.
 
-**Currently, the online payment feature at VNG Cloud supports the following payment methods:**
+**Currently, the online payment feature at GreenNode supports the following payment methods:**
 
-* **Payment with VNG Cloud Wallet (Credit)**&#x20;
+* **Payment with GreenNode Wallet (Credit)**&#x20;
   * Pay the entire order with Credit (if the available balance is sufficient).
   * In case of insufficient Credit balance, users can choose **Top up & Pay**: Use the entire available credit balance, and the remaining amount will be topped up via the online payment gateway
 * **Pay through the payment gateway:** Pay the full value of the order through the online payment gateway without affecting the Credit Wallet (currently supporting payment methods such as MoMo, Zalo Pay, etc.).
 
-In addition, when selecting the payment method through the payment gateway, VNG Cloud Service provides another payment method called Payment on Behalf.
+In addition, when selecting the payment method through the payment gateway, GreenNode Service provides another payment method called Payment on Behalf.
 
 * **Payment on Behalf**
 
-Payment on Behalf is generated to support business or individual customers who are prepaid users and need to use VNG Cloud Service resources but depend on the financial aspect of other individuals/businesses.&#x20;
+Payment on Behalf is generated to support business or individual customers who are prepaid users and need to use GreenNode Service resources but depend on the financial aspect of other individuals/businesses.&#x20;
 
 Payment on Behalf is only available when users choose to pay through the online payment gateway.&#x20;
 

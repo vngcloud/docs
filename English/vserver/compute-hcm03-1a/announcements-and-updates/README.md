@@ -1,6 +1,6 @@
 # Announcements and updates
 
-This topic describes release notes for vServer (VNG Cloud) features and provides links to relevant references.
+This topic describes release notes for vServer (GreenNode) features and provides links to relevant references.
 
 ***
 

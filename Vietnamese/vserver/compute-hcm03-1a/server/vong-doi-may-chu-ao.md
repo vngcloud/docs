@@ -6,7 +6,7 @@ Một Server chuyển đổi qua các trạng thái khác nhau từ thời đi�
 
 Trong giai đoạn này, các cá thể được chuẩn bị để đi vào trạng thái đang chạy. Các tài nguyên máy tính được cấp phát và cấu hình ở giai đoạn này.
 
-Trong VNG Cloud, các Server có trạng thái đang chờ xử lý, các trạng thái thể hiện như vậy được khởi chạy lần đầu tiên hoặc bắt đầu sau giai đoạn dừng.
+Trong GreenNode, các Server có trạng thái đang chờ xử lý, các trạng thái thể hiện như vậy được khởi chạy lần đầu tiên hoặc bắt đầu sau giai đoạn dừng.
 
 ### **Running** <a href="#vongdoimaychuao-running" id="vongdoimaychuao-running"></a>
 

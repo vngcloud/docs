@@ -2,7 +2,7 @@
 
 **Managing RDS Instance Information**
 
-VNG Cloud vDB provides intuitive dashboards that help you manage your RDS Instances, backups, and configuration groups efficiently and conveniently.
+GreenNode vDB provides intuitive dashboards that help you manage your RDS Instances, backups, and configuration groups efficiently and conveniently.
 
 Let’s explore these dashboards:
 

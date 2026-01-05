@@ -21,7 +21,7 @@ To create a File Storage on the File Storage system, you can follow these steps:
 * **Tag:** you can add tags to mark file storage as needed.
 * **File Storage Max quota:** in the file storage initialization step, you need to set a maximum quota limit for that file storage. This quota means the limit of storage capacity that the file storage can use, helping to manage resources effectively. <mark style="color:red;">**The minimum quota you need to choose is 1 TB and the maximum quota we provide is 50 TB**</mark>**.** If you need to use more than 50 TB for a file storage, please contact us.
 * **Network type** : select the network type you want. Currently, we support:
-  * **Public** : all access is public, you can use this storage file for VMs, K8S on-premise, on VNG Cloud or resources from other sources.
+  * **Public** : all access is public, you can use this storage file for VMs, K8S on-premise, on GreenNode or resources from other sources.
   * **Private:** private connections in the VNGCloud ecosystem **.**
 * **Permission:** configure IP-based access permissions
   * **No one:** No IP is allowed to access.

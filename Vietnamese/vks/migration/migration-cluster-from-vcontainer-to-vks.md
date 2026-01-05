@@ -12,7 +12,7 @@
 
 <figure><img src="../../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
 
-**Quy trình thực hiện migrate từ vContainer sang vKS (Khách hàng + VNG Cloud)**&#x20;
+**Quy trình thực hiện migrate từ vContainer sang vKS (Khách hàng + GreenNode)**&#x20;
 
 **Step 1:** Đánh giá version hiện tại của vContainer cluster và tương ứng với vKS cluster sẽ migrate. Lúc này sẽ xảy ra 2 trường hợp (step 2 và step 3)&#x20;
 

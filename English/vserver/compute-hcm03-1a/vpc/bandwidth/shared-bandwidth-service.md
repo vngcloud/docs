@@ -4,7 +4,7 @@ The Share bandwidth package offers high-speed bandwidth shared among multiple cu
 
 ### **View Detailed Package Information**
 
-**Step 1**: Log in to your VNG Cloud account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
+**Step 1**: Log in to your GreenNode account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
 
 **Step 2**: In the left-hand menu, under the **Network** section, select **Bandwidth**.
 
@@ -33,7 +33,7 @@ The Share bandwidth package offers high-speed bandwidth shared among multiple cu
 
 **To add IP addresses to the package, follow these steps:**
 
-**Step 1**: Log in to your VNG Cloud account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
+**Step 1**: Log in to your GreenNode account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
 
 **Step 2**: In the left-hand menu, under the **Network** section, select **Bandwidth**.
 
@@ -51,7 +51,7 @@ The Share bandwidth package offers high-speed bandwidth shared among multiple cu
 
 To remove IP addresses from the package, follow these steps:
 
-**Step 1**: Log in to your VNG Cloud account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
+**Step 1**: Log in to your GreenNode account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
 
 **Step 2**: In the left-hand menu, under the **Network** section, select **Bandwidth**.
 

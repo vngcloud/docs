@@ -14,7 +14,7 @@ Nhờ những tính năng độc đáo này, Application Load Balancer đóng m�
 * **Session Persistence**: ALB hỗ trợ duy trì phiên, giúp đảm bảo rằng các yêu cầu từ cùng một người dùng sẽ luôn được chuyển hướng đến cùng một máy chủ backend. Điều này làm tăng tính nhất quán của trải nghiệm người dùng.
 * **Health Checks**: ALB tự động kiểm tra sức khỏe của các máy chủ backend bằng cách gửi các yêu cầu kiểm tra định kỳ. Nếu một máy chủ không hoạt động đúng cách, ALB sẽ ngừng chuyển hướng lưu lượng đến máy chủ đó, đảm bảo hiệu suất cao hơn và sẵn sàng tốt hơn.
 * **SSL/TLS Encryption**: ALB có thể xử lý mã hóa và giải mã lưu lượng SSL/TLS, giảm bớt công việc tính toán từ các máy chủ backend và tăng cường hiệu suất tổng thể.
-* **Authentication and Authorization**: Tích hợp VNG Cloud IAM, hỗ trợ đầy đủ các tính năng về xác thực và phân quyền.
+* **Authentication and Authorization**: Tích hợp GreenNode IAM, hỗ trợ đầy đủ các tính năng về xác thực và phân quyền.
 * **Monitor Loadbalance**r: Dễ dàng giám sát sức khỏe, lịch sử truy cập của client & lịch sử chỉnh sửa Loadbalancer.
 * **Terraform**: Hỗ trợ khởi tạo và quản lý Load Balancer nhanh chóng và hiệu quả với Terraform
 

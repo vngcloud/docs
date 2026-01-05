@@ -10,7 +10,7 @@ description: >-
 
 ## **Bước 1:**  Truy cập trang khởi tạo VPN từ vNetwork Dashboard
 
-* Truy cập thành công vào VNG Cloud, tại màn hình Console chọn đến dịch vụ vNetwork.
+* Truy cập thành công vào GreenNode, tại màn hình Console chọn đến dịch vụ vNetwork.
 * Tại thanh menu bên trái của giao diện vNetwork, chọn mục VPN Site-to-Site.
 * Tại màn hình danh sách này, nhấn chọn "<mark style="color:blue;">**Tạo mới kết nối VPN**</mark>".
 

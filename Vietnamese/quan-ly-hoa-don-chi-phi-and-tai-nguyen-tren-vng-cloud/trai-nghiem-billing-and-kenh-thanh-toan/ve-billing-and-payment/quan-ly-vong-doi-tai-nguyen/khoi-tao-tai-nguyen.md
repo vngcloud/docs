@@ -5,8 +5,8 @@ Sử dụng tài liệu này như là một hướng dẫn khởi tạo tài ngu
 #### Tính năng khởi tạo tài nguyên áp dụng đối với: <a href="#khoitaotainguyen-tinhnangkhoitaotainguyenapdungdoivoi" id="khoitaotainguyen-tinhnangkhoitaotainguyenapdungdoivoi"></a>
 
 * **Đối tượng:** Người dùng trả trước và trả sau
-* **Nguồn tiền:** Ví VNG Cloud hoặc các nguồn khác (thực hiện qua cổng thanh toán)
-* **Tài nguyên:** Tất cả tài nguyên thuộc các sản phẩm VNG Cloud
+* **Nguồn tiền:** Ví GreenNode hoặc các nguồn khác (thực hiện qua cổng thanh toán)
+* **Tài nguyên:** Tất cả tài nguyên thuộc các sản phẩm GreenNode
 
 #### **Người dùng trả trước khởi tạo tài nguyên** <a href="#khoitaotainguyen-nguoidungtratruockhoitaotainguyen" id="khoitaotainguyen-nguoidungtratruockhoitaotainguyen"></a>
 
@@ -32,7 +32,7 @@ Sử dụng tài liệu này như là một hướng dẫn khởi tạo tài ngu
 
 Giá tiền hiển thị ngay tại bước thanh toán tài nguyên cũng là giá hiển thị trên hóa đơn tương ứng với tài nguyên đó.&#x20;
 
-Dưới đây là hướng dẫn tính giá khi khởi tạo Server, người dùng có thể áp dụng công thức để tính tương tự cho các tài nguyên khác trong hệ thống VNG Cloud Service.
+Dưới đây là hướng dẫn tính giá khi khởi tạo Server, người dùng có thể áp dụng công thức để tính tương tự cho các tài nguyên khác trong hệ thống GreenNode Service.
 
 _Ví dụ công thức tính giá trị hóa đơn khi khởi tạo Server bao gồm thông tin_:
 

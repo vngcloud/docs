@@ -1,8 +1,8 @@
 # Quản lý hóa đơn
 
-Sử dụng tài liệu này như là một hướng dẫn giúp bạn quản lý và kiểm soát các hóa đơn khi sử dụng dịch vụ tại VNG Cloud Service tốt hơn.
+Sử dụng tài liệu này như là một hướng dẫn giúp bạn quản lý và kiểm soát các hóa đơn khi sử dụng dịch vụ tại GreenNode Service tốt hơn.
 
-Tại đây, chúng tôi cung cấp cho người dùng cái nhìn đầy đủ và chi tiết về cách xử lý hóa đơn ở cấp VNG Cloud Service như:
+Tại đây, chúng tôi cung cấp cho người dùng cái nhìn đầy đủ và chi tiết về cách xử lý hóa đơn ở cấp GreenNode Service như:
 
 * **Thời điểm khởi tạo hóa đơn**
 * **Thông tin hóa đơn**

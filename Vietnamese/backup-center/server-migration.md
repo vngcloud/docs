@@ -1,12 +1,12 @@
 ---
-description: Hướng Dẫn Migrate Server Về VNG Cloud
+description: Hướng Dẫn Migrate Server Về GreenNode
 ---
 
 # Server Migration
 
-## 1. VNG Cloud Migration Tool là gì?
+## 1. GreenNode Migration Tool là gì?
 
-**Migration Tool** tại VNG Cloud là một công cụ hỗ trợ người dùng di chuyển máy chủ (server) từ các cloud khác, các region khác trên VNGCloud như từ HCM sang HAN và ngược lại hoặc từ hệ thống on-premises lên hạ tầng VNG Cloud **một cách tự động, nhanh chóng và an toàn**.\
+**Migration Tool** tại GreenNode là một công cụ hỗ trợ người dùng di chuyển máy chủ (server) từ các cloud khác, các region khác trên VNGCloud như từ HCM sang HAN và ngược lại hoặc từ hệ thống on-premises lên hạ tầng GreenNode **một cách tự động, nhanh chóng và an toàn**.\
 Các tính năng nổi bật bao gồm:
 
 * **Hỗ trợ nhiều loại nguồn**: AWS, Azure, GCP, VMware, Hyper-V, và cả server vật lý.
@@ -14,15 +14,15 @@ Các tính năng nổi bật bao gồm:
 * **Giảm thiểu downtime**: Quá trình chuyển đổi diễn ra mượt mà, hạn chế tối đa gián đoạn dịch vụ.
 * **Đảm bảo tính toàn vẹn dữ liệu**: Dữ liệu được đồng bộ chính xác và bảo mật trong suốt quá trình.
 
-> Với Migration Tool, người dùng có thể dễ dàng hiện thực hóa việc "lift and shift" hệ thống hiện tại sang VNG Cloud mà không cần phải xây dựng lại từ đầu.
+> Với Migration Tool, người dùng có thể dễ dàng hiện thực hóa việc "lift and shift" hệ thống hiện tại sang GreenNode mà không cần phải xây dựng lại từ đầu.
 
-## 2. Tại sao cần migrate server về VNG Cloud?
+## 2. Tại sao cần migrate server về GreenNode?
 
-Việc migrate server từ các nền tảng cloud khác về VNG Cloud mang lại nhiều lợi ích vượt trội:
+Việc migrate server từ các nền tảng cloud khác về GreenNode mang lại nhiều lợi ích vượt trội:
 
-* **Tối ưu chi phí vận hành**: Các gói dịch vụ tại VNG Cloud được thiết kế linh hoạt, giúp bạn tiết kiệm đáng kể chi phí so với các cloud quốc tế.
+* **Tối ưu chi phí vận hành**: Các gói dịch vụ tại GreenNode được thiết kế linh hoạt, giúp bạn tiết kiệm đáng kể chi phí so với các cloud quốc tế.
 * **Hỗ trợ kỹ thuật nhanh chóng**: Đội ngũ kỹ thuật hỗ trợ 24/7, giúp xử lý sự cố kịp thời, giảm thiểu downtime.
-* **Hiệu suất cao, hạ tầng hiện đại**: Server tại VNG Cloud được vận hành trên hạ tầng đạt chuẩn quốc tế, đảm bảo tốc độ và độ ổn định vượt trội.
+* **Hiệu suất cao, hạ tầng hiện đại**: Server tại GreenNode được vận hành trên hạ tầng đạt chuẩn quốc tế, đảm bảo tốc độ và độ ổn định vượt trội.
 * **Đáp ứng yêu cầu pháp lý**: Dữ liệu được lưu trữ trong nước, phù hợp với các quy định về bảo mật và chủ quyền dữ liệu tại Việt Nam.
 
 ## 3. Các lưu ý quan trọng trước khi migrate
@@ -31,7 +31,7 @@ Việc migrate server từ các nền tảng cloud khác về VNG Cloud mang l�
 
 **1. Cẩn trọng khi migrate vào server hiện hữu**
 
-Việc **migrate server từ nền tảng cloud khác về một server hiện hữu tại VNG Cloud** có thể gây **mất toàn bộ dữ liệu và snapshot** đang có trên server đích.
+Việc **migrate server từ nền tảng cloud khác về một server hiện hữu tại GreenNode** có thể gây **mất toàn bộ dữ liệu và snapshot** đang có trên server đích.
 
 **Khuyến nghị**:
 
@@ -74,8 +74,8 @@ lsblk -o NAME,PTTYPE
 
 ### 1. Tạo Veeam Account
 
-* Khách hàng gửi request qua 247 hoặc tạo ticket [tại đây](https://helpdesk.vngcloud.vn/portal/en/newticket?departmentId=854860000000006907\&layoutId=854860000000074011) với nhu cầu migrate server từ hệ thống khác lên VNG Cloud.
-* Sau khi nhận request, VNG Cloud sẽ hỗ trợ tạo account trên Veeam Portal và cung cấp thông tin user, password, endpoint và port của Veeam cloud repository cho khách hàng.
+* Khách hàng gửi request qua 247 hoặc tạo ticket [tại đây](https://helpdesk.vngcloud.vn/portal/en/newticket?departmentId=854860000000006907\&layoutId=854860000000074011) với nhu cầu migrate server từ hệ thống khác lên GreenNode.
+* Sau khi nhận request, GreenNode sẽ hỗ trợ tạo account trên Veeam Portal và cung cấp thông tin user, password, endpoint và port của Veeam cloud repository cho khách hàng.
 
 ***
 
@@ -148,7 +148,7 @@ lsblk -o NAME,PTTYPE
 
 ## 5. Hiệu suất migration
 
-Trong quá trình thử nghiệm thực tế với các cấu hình tối ưu từ VNG Cloud, kết quả cho thấy hiệu suất migration vượt trội:
+Trong quá trình thử nghiệm thực tế với các cấu hình tối ưu từ GreenNode, kết quả cho thấy hiệu suất migration vượt trội:
 
 * **IOPS**: Lên đến **60,000**
 * **Throughput**: Đạt **800 MB/s**

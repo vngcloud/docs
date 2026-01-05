@@ -4,7 +4,7 @@ Phân quyền truy cập là yếu tố thiết yếu của bảo mật nhằm x
 
 Chính sách kiểm soát truy cập chủ yếu dựa trên các kỹ thuật như xác thực và ủy quyền, cho phép tổ chức xác minh rõ ràng rằng người dùng không bị giả mạo và được cấp mức độ truy cập thích hợp dựa trên thông tin người dùng, vai trò cùng nhiều yếu tố khác.&#x20;
 
-Thông qua IAM, người dùng VNG Cloud, cụ thể là website vConsole có thể chủ động phân quyền hoặc được phân quyền truy cập/hành động trên từng tính năng cụ thể.
+Thông qua IAM, người dùng GreenNode, cụ thể là website vConsole có thể chủ động phân quyền hoặc được phân quyền truy cập/hành động trên từng tính năng cụ thể.
 
 Để hiểu rõ hơn, người dùng cần tìm hiểu xem:
 

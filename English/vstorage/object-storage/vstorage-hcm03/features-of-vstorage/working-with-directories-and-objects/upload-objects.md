@@ -27,7 +27,7 @@ At this point, your files are being uploaded, and their status is Uploading. Whe
 
 During the upload process, you cannot perform other actions on the container. Once the object upload is complete, you can continue to use other features as usual.
 
-All data you upload belongs to you, and VNG Cloud cannot interfere with or recover data deleted or overwritten by user errors. To prevent accidents related to overwriting or accidental deletion, it is recommended to back up container versions using the versioning feature. For details on the versioning feature, refer to Using the [Versioning container](https://docs.vngcloud.vn/display/VSEN/Versioning+container).
+All data you upload belongs to you, and GreenNode cannot interfere with or recover data deleted or overwritten by user errors. To prevent accidents related to overwriting or accidental deletion, it is recommended to back up container versions using the versioning feature. For details on the versioning feature, refer to Using the [Versioning container](https://docs.vngcloud.vn/display/VSEN/Versioning+container).
 
 ***
 

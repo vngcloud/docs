@@ -2,7 +2,7 @@
 
 ## Tổng quan
 
-Với nhu cầu khách hàng muốn backup lưu trữ dữ liệu lên VNG Cloud, thì khách hàng sẽ phải trả phí dựa trên 2 yếu tố là:
+Với nhu cầu khách hàng muốn backup lưu trữ dữ liệu lên GreenNode, thì khách hàng sẽ phải trả phí dựa trên 2 yếu tố là:
 
 * Khách hàng phải có bản quyền **License Veeam Backup & Replication**;
 * Trả chi phí do **dung lượng lưu trữ** trên Storage. Việc tính phí dung lượng lưu trữ.

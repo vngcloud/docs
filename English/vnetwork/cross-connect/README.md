@@ -31,7 +31,7 @@ Perform the creation of Cross Connect 1 to establish a connection between the Ho
 
 ***
 
-VNG Cloud provides users with the Cross Connect service, which can perform the following tasks:
+GreenNode provides users with the Cross Connect service, which can perform the following tasks:
 
 * [Create Cross Connect](create-cross-connect.md);
 * [Create a VPC Connection](create-a-vpc-connection.md);

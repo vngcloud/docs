@@ -4,7 +4,7 @@
 
 ***
 
-Vcolo Customer Portal là một nền tảng tự động hóa quản lý dịch vụ cho thuê không gian trung tâm dữ liệu được cung cấp bởi VNG Cloud. Nó cung cấp giao diện trực quan và tiện lợi để khách hàng quản lý và giám sát các tài nguyên của mình bao gồm tình trạng sử dụng điện, thông số môi trường, sơ đồ bố trí thiết bị, danh sách thiết bị, tài sản…
+Vcolo Customer Portal là một nền tảng tự động hóa quản lý dịch vụ cho thuê không gian trung tâm dữ liệu được cung cấp bởi GreenNode. Nó cung cấp giao diện trực quan và tiện lợi để khách hàng quản lý và giám sát các tài nguyên của mình bao gồm tình trạng sử dụng điện, thông số môi trường, sơ đồ bố trí thiết bị, danh sách thiết bị, tài sản…
 
 <figure><img src="../.gitbook/assets/59805703 (1).png" alt=""><figcaption></figcaption></figure>
 

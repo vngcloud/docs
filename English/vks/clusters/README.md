@@ -26,7 +26,7 @@ To initialize a Cluster, follow the steps below:
 
 * Cluster Configuration:
   * Cluster Information:
-    * **Cluster Name:** Name for your Cluster. The name can only contain alphanumeric characters (az, AZ, 0-9, '\_', '-'). Your input data length must be from 5 to 50. The name must be unique within the Region and VNG Cloud account you are creating the Cluster for.
+    * **Cluster Name:** Name for your Cluster. The name can only contain alphanumeric characters (az, AZ, 0-9, '\_', '-'). Your input data length must be from 5 to 50. The name must be unique within the Region and GreenNode account you are creating the Cluster for.
     * **Kubernetes Version:** The version of Kubernetes that will be used for your Cluster. We recommend that you choose the latest version, unless you need an older version.
     * **Description:** Enter the information you want to note for the Cluster to create a separate mark for easier management in the future.
   * Network Setting:

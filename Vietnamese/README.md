@@ -1,14 +1,14 @@
 ---
 description: >-
-  Từ 19/4/2024, VNG Cloud chuyển đổi nền tảng trang hướng dẫn sử dụng dịch vụ.
+  Từ 19/4/2024, GreenNode chuyển đổi nền tảng trang hướng dẫn sử dụng dịch vụ.
   Các nội dung không thay đổi và vẫn được tiếp tục cập nhật tại giao diện mới.
 ---
 
-# 🇻🇳 VNG Cloud Help Center
+# 🇻🇳 GreenNode Help Center
 
 ## Overview
 
-Chào mừng các bạn đến với trang hỗ trợ khách hàng của VNG Cloud. Tại đây các bạn có thể dễ dàng tìm thấy những thông tin hữu ích về các sản phẩm & dịch vụ của VNG Cloud.
+Chào mừng các bạn đến với trang hỗ trợ khách hàng của GreenNode. Tại đây các bạn có thể dễ dàng tìm thấy những thông tin hữu ích về các sản phẩm & dịch vụ của GreenNode.
 
 <figure><img src=".gitbook/assets/greennode cover.png" alt=""><figcaption></figcaption></figure>
 

@@ -6,7 +6,7 @@ Trong phần này, chúng ta sẽ tìm hiểu về các khái niệm cơ bản v
 
 Trước khi bắt đầu, mời bạn tham khảo hướng dẫn đăng nhập với Root User Account và IAM User Account tại đây:
 
-* [Cách đăng nhập vào VNG Cloud](cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)
+* [Cách đăng nhập vào GreenNode](cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)
 
 IAM Console là giao diện người dùng dựa trên web, cho phép bạn quản lý IAM User Account, Group, Service Account và Policy trong môi trường điện toán đám mây của bạn. Nó cung cấp giao diện một cách trực quan để kiểm soát quyền truy cập vào các tài nguyên của bạn và cấu hình các thiết lập bảo mật.
 
@@ -20,7 +20,7 @@ IAM Console là giao diện người dùng dựa trên web, cho phép bạn qu�
 
 **Root User Account**
 
-Root User Account là một thực thể bạn tạo đầu tiên trong VNG Cloud và sử dụng, mặc định có quyền truy cập đầy đủ vào tất cả các sản phẩm/dịch vụ và tài nguyên của VNG Cloud trong tài khoản đó.
+Root User Account là một thực thể bạn tạo đầu tiên trong GreenNode và sử dụng, mặc định có quyền truy cập đầy đủ vào tất cả các sản phẩm/dịch vụ và tài nguyên của GreenNode trong tài khoản đó.
 
 **IAM User Account**
 
@@ -40,9 +40,9 @@ IAM User Group là tập hợp các IAM User Account chia sẻ các yêu cầu t
 4. Nhập chi tiết tài khoản người dùng, bao gồm tên người dùng và mật khẩu.
 5. Xem lại các thiết lập và nhấp vào **"Create a user account."** ở góc trên bên phải.
 
-Đăng nhập VNG Cloud với IAM User Account:
+Đăng nhập GreenNode với IAM User Account:
 
-* [Cách đăng nhập vào VNG Cloud](cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)
+* [Cách đăng nhập vào GreenNode](cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)
 
 **Cách Tạo IAM User Group?**
 
@@ -64,7 +64,7 @@ IAM Policy là các tài liệu JSON xác định các quyền và quy tắc tru
 
 **Quyền Truy cập**
 
-Quyền truy cập IAM xác định những hành động mà các thực thể IAM (IAM User Account, Group và Service Account) được phép hoặc từ chối thực hiện trên các tài nguyên VNG Cloud. Các hành động này bao gồm các cấp độ truy cập như xem danh sách, quyền đọc và ghi trên tài nguyên, hoặc quản lý IAM User Account và Group.
+Quyền truy cập IAM xác định những hành động mà các thực thể IAM (IAM User Account, Group và Service Account) được phép hoặc từ chối thực hiện trên các tài nguyên GreenNode. Các hành động này bao gồm các cấp độ truy cập như xem danh sách, quyền đọc và ghi trên tài nguyên, hoặc quản lý IAM User Account và Group.
 
 **Cách Cấu hình Quyền trong IAM Policy?**
 
@@ -73,7 +73,7 @@ Quyền truy cập IAM xác định những hành động mà các thực thể 
 3. Nhấp vào **"Create a policy."**
 4. Cung cấp tên Policy và mô tả tùy chọn.
 5. Nhấp vào **"Next step"** để tiếp tục cấu hình quyền.
-6. Chọn một **Product/Service** cụ thể trong hệ thống VNG Cloud cần cấu hình.
+6. Chọn một **Product/Service** cụ thể trong hệ thống GreenNode cần cấu hình.
 7. Chỉ định các **Actions** được phép trên tài nguyên của sản phẩm.
 8. Chọn các **Resources** áp dụng các hành động (Tất cả các tài nguyên / Tài nguyên cụ thể).
 9. Cung cấp các **Request conditions** về thời gian áp dụng.
@@ -94,4 +94,4 @@ Xin chúc mừng! Bạn đã nắm được cách cơ bản để bắt đầu s
 
 Chủ đề
 
-Hướng dẫn đăng nhập VNG Cloud Service: [Cách đăng nhập vào VNG Cloud](cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)
+Hướng dẫn đăng nhập GreenNode Service: [Cách đăng nhập vào GreenNode](cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)

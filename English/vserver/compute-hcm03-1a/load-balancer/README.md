@@ -1,12 +1,12 @@
 # Load Balancer
 
-## Welcome to the VNG Cloud Load Balancer User Guide
+## Welcome to the GreenNode Load Balancer User Guide
 
 This guide is designed to provide you with a comprehensive overview and step-by-step instructions to effectively utilize the Load Balancer feature and optimize your cloud resources, enhancing the availability and performance of your applications.
 
 {% embed url="https://youtu.be/o4EOm0WCiJ0?si=s7KlJrklUFetiKnB" %}
 
-## Overview of VNG Cloud Load Balancer
+## Overview of GreenNode Load Balancer
 
 **What is a Load Balancer?**
 

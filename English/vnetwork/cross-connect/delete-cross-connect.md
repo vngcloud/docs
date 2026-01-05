@@ -4,7 +4,7 @@ Users can still delete a Cross Connect. However, to delete it, the following ste
 
 **Step 1**: Remove all VPC connections in the Cross Connect.
 
-1. Successfully log in to VNG Cloud, and on the Console screen, navigate to the vNetwork service;
+1. Successfully log in to GreenNode, and on the Console screen, navigate to the vNetwork service;
 2. In the left-hand menu of the vNetwork interface, select the **Cross Connect** section;
 3. The screen will navigate to the **Cross Connect List** page;
 4. On the Cross Connect list screen, select and view the details of the Cross Connect that has VPC connections you wish to delete;

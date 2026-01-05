@@ -1,8 +1,8 @@
 # Security
 
-VNG Cloud is responsible for protecting the underlying infrastructure of VNG Cloud services, such as data centers and virtualization platforms. VNG Cloud also provides you with services that you can use securely.
+GreenNode is responsible for protecting the underlying infrastructure of GreenNode services, such as data centers and virtualization platforms. GreenNode also provides you with services that you can use securely.
 
-Cloud security at VNG Cloud is the highest priority. As an VNG Cloud customer, you benefit from a data center and network architecture that are built to meet the requirements of the most security-sensitive organizations. Security is a shared responsibility between VNG Cloud and you. When you use VNG Cloud services, your responsibility includes the following areas:
+Cloud security at GreenNode is the highest priority. As an GreenNode customer, you benefit from a data center and network architecture that are built to meet the requirements of the most security-sensitive organizations. Security is a shared responsibility between GreenNode and you. When you use GreenNode services, your responsibility includes the following areas:
 
 * Controlling network access to your instances, for example, through configuring your VPC and security groups.
 * Managing the credentials used to connect to your instances.

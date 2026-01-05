@@ -2,7 +2,7 @@
 
 ## Bước 1: Truy cập Model Registry
 
-* Đăng nhập với VNG Cloud account của bạn và truy cập tới [Model Registry Dashboard](https://aiplatform.console.vngcloud.vn/registry).
+* Đăng nhập với GreenNode account của bạn và truy cập tới [Model Registry Dashboard](https://aiplatform.console.vngcloud.vn/registry).
 * Tìm và nhấn vào nút "Import a model registry" (Nhập một model registry).
 
 ## Bước 2: Truy cập Model Registry

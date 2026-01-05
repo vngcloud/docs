@@ -182,7 +182,7 @@ Trên các máy ảo EC2 của bạn, nếu các nhóm bảo mật (Security Gro
 
 <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.28.03-PM-300x139.png" alt=""><figcaption></figcaption></figure>
 
-Trong ví dụ , ta có một máy ảo Ubuntu đang chạy trong mạng VNG Cloud của tôi và một máy ảo EC2 đang chạy trong VPC . Sau khi cấu hình các nhóm bảo mật, ta có thể ping thành công giữa hai máy này!<br>
+Trong ví dụ , ta có một máy ảo Ubuntu đang chạy trong mạng GreenNode của tôi và một máy ảo EC2 đang chạy trong VPC . Sau khi cấu hình các nhóm bảo mật, ta có thể ping thành công giữa hai máy này!<br>
 
 <figure><img src="https://s3-us-west-2.amazonaws.com/1s-blog/pfsense-vpn-screenshots/Screen-Shot-2017-08-21-at-3.28.48-PM-300x104.png" alt=""><figcaption></figcaption></figure>
 

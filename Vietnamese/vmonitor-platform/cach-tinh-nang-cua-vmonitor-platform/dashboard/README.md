@@ -20,7 +20,7 @@ Các quy tắc sau áp dụng cho việc đặt tên Dashboard trong vMonitor Pl
 * Tên Dashboard phải dài từ 1 (tối thiểu) đến 50 (tối đa) ký tự.
 * Tên Dashboard chỉ có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), dấu gạch dưới (\_), dấu gạch ngang (-) , ký tự / và ký tự @.
 * Tên Dashboard không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, tên tài khoản, mật khẩu đăng nhập,...).
-* Tên Dashboard phải là duy nhất trong một tài khoản VNG Cloud cho đến khi Dashboard đó bị xóa.
+* Tên Dashboard phải là duy nhất trong một tài khoản GreenNode cho đến khi Dashboard đó bị xóa.
 
 Ví dụ minh họa
 
@@ -59,7 +59,7 @@ Ví dụ minh họa
 2. Chọn thư mục **Dashboard.**
 3. Trên trang hiển thị danh sách **Dashboard** hiển thị, bạn có thể lọc hiển thị danh sách **Dashboard** theo các Loại Dashboard và ý nghĩa được mô tả tại các bảng bên dưới:
 
-<table data-header-hidden><thead><tr><th width="194"></th><th></th></tr></thead><tbody><tr><td><strong>Loại Dashboard</strong></td><td><strong>Mô tả</strong></td></tr><tr><td>All Dashboards</td><td>Tất cả các dashboard đang có</td></tr><tr><td>All host</td><td>Tất cả các Dashboard được tạo tự động bởi vMonitor Platform khi bạn thiết lập một Host.</td></tr><tr><td>All integration</td><td>Tất cả các Dashboard được tạo tự động bởi vMonitor Platform khi bạn thiết lập các ứng dụng tích hợp.</td></tr><tr><td>All VNG Cloud</td><td>Tất cả các Dashboard được tạo bởi hệ thống vMonitor Platform cho các Product của VNG Cloud</td></tr><tr><td>Created by you</td><td>Các Dashboard được tạo bởi người sử dụng</td></tr><tr><td>Favourite</td><td>Các Dashboard được đánh dấu là yêu thích.</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="194"></th><th></th></tr></thead><tbody><tr><td><strong>Loại Dashboard</strong></td><td><strong>Mô tả</strong></td></tr><tr><td>All Dashboards</td><td>Tất cả các dashboard đang có</td></tr><tr><td>All host</td><td>Tất cả các Dashboard được tạo tự động bởi vMonitor Platform khi bạn thiết lập một Host.</td></tr><tr><td>All integration</td><td>Tất cả các Dashboard được tạo tự động bởi vMonitor Platform khi bạn thiết lập các ứng dụng tích hợp.</td></tr><tr><td>All GreenNode</td><td>Tất cả các Dashboard được tạo bởi hệ thống vMonitor Platform cho các Product của GreenNode</td></tr><tr><td>Created by you</td><td>Các Dashboard được tạo bởi người sử dụng</td></tr><tr><td>Favourite</td><td>Các Dashboard được đánh dấu là yêu thích.</td></tr></tbody></table>
 
 Bạn có thể đánh dấu 1 **Dashboard tùy chỉnh** là Dashboard yêu thích cũng như bỏ chúng khỏi danh sách yêu thích bằng cách chọn <img src="../../../.gitbook/assets/image (47) (1).png" alt="" data-size="line">trên mỗi **Dashboard**. Khi biểu tượng trên Dashboard là <img src="../../../.gitbook/assets/image (48) (1).png" alt="" data-size="line">nghĩa là **Dashboard** đã được thêm vào danh sách yêu thích thành công và ngược lại khi biểu tượng trên **Dashboard** là <img src="../../../.gitbook/assets/image (49) (1).png" alt="" data-size="line">nghĩa là **Dashboard** chưa được thêm vào danh sách yêu thích thành công.
 

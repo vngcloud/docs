@@ -1,6 +1,6 @@
 # Feature Comparison
 
-n the dynamic landscape of cloud computing, Load Balancers are essential tools for enhancing application performance and ensuring a seamless user experience. At VNG Cloud, we offer two primary types of Load Balancers: Application Load Balancers (ALBs) and Network Load Balancers (NLBs). This document will help users understand the differences and strengths of these Load Balancer types, enabling them to make informed decisions about which one best suits the requirements of their specific applications.
+n the dynamic landscape of cloud computing, Load Balancers are essential tools for enhancing application performance and ensuring a seamless user experience. At GreenNode, we offer two primary types of Load Balancers: Application Load Balancers (ALBs) and Network Load Balancers (NLBs). This document will help users understand the differences and strengths of these Load Balancer types, enabling them to make informed decisions about which one best suits the requirements of their specific applications.
 
 | Attribute/Feature                 | Application Load Balancer                 | Network Load Balancer                     |
 | --------------------------------- | ----------------------------------------- | ----------------------------------------- |

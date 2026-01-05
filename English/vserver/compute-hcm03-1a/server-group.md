@@ -4,7 +4,7 @@ An affinity group is the orchestration policy designed for VM Instances location
 
 ## Placement group policy <a href="#servergroup-servergrouppolicy" id="servergroup-servergrouppolicy"></a>
 
-Currently, VNG Cloud provides two Placement Group policies to better manage VM instances and hosts: soft anti-affinity and soft affinity.
+Currently, GreenNode provides two Placement Group policies to better manage VM instances and hosts: soft anti-affinity and soft affinity.
 
 * Soft Anti-affinity: Allocate VM instances in the server group to different hosts as much as possible. If no more hosts are available, the VM instances will be allocated randomly.
 * Soft Affinity: Allocate VM instances in the server group to same host as much as possible. If no more resource of host are available, the VM instances will be allocated randomly.
@@ -22,7 +22,7 @@ Some usage examples of soft anti-affinity and soft affinity group policies.
 
 You can create a placement group with the affinity or anti-affinity policy. This option can not be changed after create.
 
-1. Go to VNG Cloud Portal console, navigate to Placement Group page
+1. Go to GreenNode Portal console, navigate to Placement Group page
 2. Create additional Placement Groups and choose the appropriate affinity or anti-affinity policy. Once the Server group is created, you cannot change this policy attribute.
 3. You can create virtual servers and select an existing Placement Group according to your needs.
 

@@ -25,7 +25,7 @@ To be able to use Pfsense as NAT Gateway for Cluster on VKS system, you need:
 
 **Step 3:** Now, you need to configure **Pfsense.** Specifically, you can select the desired **Volume, IOPS, Network, Security Group . You need to choose the same VPC and Subnet as the VPC and Subnet you choose to use for your Cluster.** In addition, you also need to select an existing Server Group or select **Dedicated SOFT ANTI AFFINITY group** so we can automatically create a new server group.
 
-**Step 4:** Proceed to pay like normal resources on VNG Cloud.
+**Step 4:** Proceed to pay like normal resources on GreenNode.
 
 ***
 

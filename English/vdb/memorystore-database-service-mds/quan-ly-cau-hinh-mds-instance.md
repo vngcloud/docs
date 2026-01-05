@@ -52,7 +52,7 @@ For option 2, you can do the following:
 3. On the change screen, select the Configuration Group you want to apply.
 4. When all selections are correct, click the "Save" button in the top right corner. Wait for a while for the configuration variables to be applied to the MDS Instance. If the change is successful, the MDS Instance will have the status "Active."
 
-Note: In some cases, configuration variables may require restarting the Database service on the MDS Instance. The status of the MDS Instance will then be "Restart\_required." With VNG Cloud, you can proactively choose the time to perform this operation. After backing up tasks on the MDS Instance, click "Action" and choose "Restart" to complete the process.
+Note: In some cases, configuration variables may require restarting the Database service on the MDS Instance. The status of the MDS Instance will then be "Restart\_required." With GreenNode, you can proactively choose the time to perform this operation. After backing up tasks on the MDS Instance, click "Action" and choose "Restart" to complete the process.
 
 **E. Edit DB Setting:**
 
@@ -76,6 +76,6 @@ The Start, Shutdown, and Reboot actions help you optimize the use of MDS Instanc
 
 **G. Delete MDS:**
 
-The "Delete" function allows you to permanently delete an MDS Instance from the system, ensuring the complete removal of the database, data, configuration, and any related dependencies. VNG Cloud recommends allowing our system to create a final backup of the database before deleting it for data protection and recovery by checking the "Create final backup" box before confirming the deletion.
+The "Delete" function allows you to permanently delete an MDS Instance from the system, ensuring the complete removal of the database, data, configuration, and any related dependencies. GreenNode recommends allowing our system to create a final backup of the database before deleting it for data protection and recovery by checking the "Create final backup" box before confirming the deletion.
 
 Note: After completing the deletion process, if the MDS Instance specified for deletion has the role "master," all slave DBs of the deleted master will be promoted to standalone.

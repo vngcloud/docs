@@ -21,7 +21,7 @@
 * **Tag:** bạn có thể thêm các tag để đánh dầu file storage theo nhu cầu.
 * **File Storage Max quota:** trong bước khởi tạo file storage, bạn cần đặt một giới hạn quota tối đa cho file storage đó. Quota này có ý nghĩa chính là giới hạn dung lượng lưu trữ mà file storage có thể sử dụng, giúp quản lý tài nguyên hiệu quả. <mark style="color:red;">**Mức quota tối thiểu bạn cần chọn là 1 TB và mức quota tối đa chúng tôi cung cấp là 50 TB.**</mark> Nếu bạn có nhu cấu sử dụng nhiều hơn 50 TB cho một file storage, vui lòng liên hệ với chúng tôi.
 * **Network type**: lựa chọn network type mà bạn mong muốn. Hiện tại, chúng tôi đang hỗ trợ:&#x20;
-  * **Public**: mọi truy cập là công khai, bạn có thể sử dụng file storage này cho các VM, K8S on-premise, trên VNG Cloud hay tài nguyên tại các nguồn khác.&#x20;
+  * **Public**: mọi truy cập là công khai, bạn có thể sử dụng file storage này cho các VM, K8S on-premise, trên GreenNode hay tài nguyên tại các nguồn khác.&#x20;
   * **Private:** các kết nối riêng tư trong hệ sinh thái VNGClou&#x64;**.**
 * **Permission: c**ấu hình quyền truy cập dựa trên IP
   * **No one:** Không có IP nào được phép truy cập.

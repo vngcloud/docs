@@ -8,9 +8,9 @@
 * Enter key configuration details including: Key Type, Key Usage, and Key Spec.
 * Key Material Origin: Users select the Origin = VNGCLOUD.
 
-&#x20;   \-        VNGCLOUD: Key material created on VNG Cloud KMS.
+&#x20;   \-        VNGCLOUD: Key material created on GreenNode KMS.
 
-&#x20;   \-        External: Users manage the Key Material yourselves and import it into VNG Cloud KMS for use in VNG Cloud services.
+&#x20;   \-        External: Users manage the Key Material yourselves and import it into GreenNode KMS for use in GreenNode services.
 
 * Click "Create Key" to create the key.
 
@@ -21,7 +21,7 @@
 ### View the list of keys and key details
 
 * Go to the "Customer keys" menu to see the list of keys created by the user.
-* Go to the "VNG Cloud Keys" menu to view the list of keys created by VNG Cloud at the user's request.
+* Go to the "GreenNode Keys" menu to view the list of keys created by GreenNode at the user's request.
 * To view detailed information about a key, users should find and navigate to the row containing the key information they want to view, and then click on the hyperlink at the key name.
 
 ### Delete Key
@@ -57,14 +57,14 @@ If there are no active key packages, users cannot enable a key that is in the "D
 Users can import key material multiple times; however, the key material must be the same across all imports.
 {% endhint %}
 
-VNG Cloud KMS supports importing key material for two types of keys:
+GreenNode KMS supports importing key material for two types of keys:
 
 * Symmetric Key
 * Asymmetric Key
 
 To import a key, users should follow these steps:
 
-1. Log in to the VNG Cloud console at the provided link.
+1. Log in to the GreenNode console at the provided link.
 2. Select the “Customer Keys” menu.
 3. Choose the Key ID from which you want to download the Public Key and Import Token. If the Master Key has not been created yet, users can refer to the guide on creating a master key.
 4. Select the “Encryption Configuration” tab to view detailed information about the key and ensure that the key's origin (Origin) is set to External, which indicates the keys that can have Key Material imported.

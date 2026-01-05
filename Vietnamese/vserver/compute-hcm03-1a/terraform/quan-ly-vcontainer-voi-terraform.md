@@ -27,9 +27,9 @@ hoặc bạn có thể cấp quyền **vServerFullAccess** (nên có quyền **v
 
 ***
 
-### **Tạo thư mục chứa terraform file** **và tải example file từ VNG Cloud repo** <a href="#quanlyvcontainervoiterraform-taothumucchuaterraformfilevataiexamplefiletuvngcloudrepo" id="quanlyvcontainervoiterraform-taothumucchuaterraformfilevataiexamplefiletuvngcloudrepo"></a>
+### **Tạo thư mục chứa terraform file** **và tải example file từ GreenNode repo** <a href="#quanlyvcontainervoiterraform-taothumucchuaterraformfilevataiexamplefiletuvngcloudrepo" id="quanlyvcontainervoiterraform-taothumucchuaterraformfilevataiexamplefiletuvngcloudrepo"></a>
 
-Sau khi cấp quyền IAM cho account cần sử dụng Terraform, bạn cần tạo một thư mục chứa file Terraform để cài đặt các thông số trên đó, bạn có thể tải file Example từ VNG Cloud repo của chúng tôi tại [đây](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples)
+Sau khi cấp quyền IAM cho account cần sử dụng Terraform, bạn cần tạo một thư mục chứa file Terraform để cài đặt các thông số trên đó, bạn có thể tải file Example từ GreenNode repo của chúng tôi tại [đây](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples)
 
 ***
 
@@ -235,7 +235,7 @@ ingress_controller = true
 
 ### **Khởi chạy Terraform command** <a href="#quanlyvcontainervoiterraform-khoichayterraformcommand" id="quanlyvcontainervoiterraform-khoichayterraformcommand"></a>
 
-1. Sau khi hoàn tất các thông tin trên, để terraform khởi tạo và tải VNG Cloud provider về đồng thời thiết lập các thông tin cần thiết chạy lệnh bên dưới, lưu ý khi chạy cần đứng tại thư mục terraform-provider-vngcloud/ [**examples**](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples)/:
+1. Sau khi hoàn tất các thông tin trên, để terraform khởi tạo và tải GreenNode provider về đồng thời thiết lập các thông tin cần thiết chạy lệnh bên dưới, lưu ý khi chạy cần đứng tại thư mục terraform-provider-vngcloud/ [**examples**](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples)/:
 
 ```
 terraform init
@@ -277,7 +277,7 @@ If you ever set or change modules or backend configuration for Terraform,rerun t
 
 ***
 
-### **Kiểm tra Container vừa tạo trên giao diện VNG Cloud Portal** <a href="#quanlyvcontainervoiterraform-kiemtracontainervuataotrengiaodienvngcloudportal" id="quanlyvcontainervoiterraform-kiemtracontainervuataotrengiaodienvngcloudportal"></a>
+### **Kiểm tra Container vừa tạo trên giao diện GreenNode Portal** <a href="#quanlyvcontainervoiterraform-kiemtracontainervuataotrengiaodienvngcloudportal" id="quanlyvcontainervoiterraform-kiemtracontainervuataotrengiaodienvngcloudportal"></a>
 
 Sau khi khởi tạo thành công Terraform, bạn có thể lên Portal để xem thông tin Container vừa tạo:
 

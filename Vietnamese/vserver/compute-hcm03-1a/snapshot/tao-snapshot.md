@@ -1,6 +1,6 @@
 # Tạo Snapshot
 
-Dịch vụ Snapshot dựa trên đám mây do VNG Cloud cung cấp là dịch vụ sao lưu dữ liệu hoạt động liền mạch, cho phép bạn tạo các Snapshot phù hợp cho đĩa hệ thống hoặc đĩa dữ liệu ngay tức thời mà không cần các tác nhân nào khác. Những snapshot này có thể được sử dụng để sao lưu dữ liệu, khôi phục lại dữ liệu khi xảy ra sự cố không mong muốn. Trước khi khôi phục ổ đĩa, sửa đổi các tệp hệ thống quan trọng hoặc thay đổi hệ điều hành của một server, bạn có thể tạo snapshot của ổ đĩa để nâng cao khả năng chịu lỗi.
+Dịch vụ Snapshot dựa trên đám mây do GreenNode cung cấp là dịch vụ sao lưu dữ liệu hoạt động liền mạch, cho phép bạn tạo các Snapshot phù hợp cho đĩa hệ thống hoặc đĩa dữ liệu ngay tức thời mà không cần các tác nhân nào khác. Những snapshot này có thể được sử dụng để sao lưu dữ liệu, khôi phục lại dữ liệu khi xảy ra sự cố không mong muốn. Trước khi khôi phục ổ đĩa, sửa đổi các tệp hệ thống quan trọng hoặc thay đổi hệ điều hành của một server, bạn có thể tạo snapshot của ổ đĩa để nâng cao khả năng chịu lỗi.
 
 Bạn có khả năng tạo snapshot theo thời điểm của ổ đĩa, đóng vai trò là điểm cơ bản để tạo ổ đĩa mới hoặc bảo mật dữ liệu của bạn thông qua các bản sao lưu. Trong trường hợp bạn thiết lập các snapshot định kỳ cho một ổ đĩa cụ thể, các snapshot này sẽ hoạt động tăng dần, nghĩa là mỗi snapshot mới chỉ ghi lại các khối dữ liệu đã thay đổi kể từ khi snapshot trước đó được chụp.
 
@@ -23,7 +23,7 @@ Quá trình chụp ảnh nhanh hoạt động không đồng bộ. Mặc dù sna
 2. Chọn tạo **Snapshot**
 3. Tại trang nhập thông tin tạo Snapshot, bạn cần hoàn thành các mục sau đây:
    * **Loại Snapshot** – Chọn đối tượng bạn muốn tạo Snapshot theo Volume.&#x20;
-   * **Tên Snapshot** – Tên cho Snapshot của bạn. Tên chỉ có thể chứa các ký tự chữ và số (a-z, A-Z, 0-9, '\_', '-'). Độ dài dữ liệu đầu vào của bạn phải từ 5 đến 50. Tên phải là duy nhất trong Khu vực và tài khoản VNG Cloud mà bạn đang tạo Snapshot.
+   * **Tên Snapshot** – Tên cho Snapshot của bạn. Tên chỉ có thể chứa các ký tự chữ và số (a-z, A-Z, 0-9, '\_', '-'). Độ dài dữ liệu đầu vào của bạn phải từ 5 đến 50. Tên phải là duy nhất trong Khu vực và tài khoản GreenNode mà bạn đang tạo Snapshot.
    * **Cài đặt Snapshot:**<br>
      * **Volume ID:** Chọn Volume bạn cần tạo Snapshot theo ID
      * **Description** – Nhập ghi chú cho bản Snapshot
@@ -38,7 +38,7 @@ Quá trình chụp ảnh nhanh hoạt động không đồng bộ. Mặc dù sna
 2. Chọn tạo **Snapshot**
 3. Tại trang nhập thông tin tạo Snapshot, bạn cần hoàn thành các mục sau đây:
    * **Loại Snapshot** – Chọn đối tượng bạn muốn tạo Snapshot theo Server. Nếu lựa chọn theo Server đồng nghĩa với việc bạn sẽ tạo Snapshot được đính kèm với Server đã chọn.
-   * **Tên Snapshot** – Tên cho Snapshot của bạn. Tên chỉ có thể chứa các ký tự chữ và số (a-z, A-Z, 0-9, '\_', '-'). Độ dài dữ liệu đầu vào của bạn phải từ 5 đến 50. Tên phải là duy nhất trong Khu vực và tài khoản VNG Cloud mà bạn đang tạo Snapshot.
+   * **Tên Snapshot** – Tên cho Snapshot của bạn. Tên chỉ có thể chứa các ký tự chữ và số (a-z, A-Z, 0-9, '\_', '-'). Độ dài dữ liệu đầu vào của bạn phải từ 5 đến 50. Tên phải là duy nhất trong Khu vực và tài khoản GreenNode mà bạn đang tạo Snapshot.
    * **Cài đặt Snapshot:**<br>
      * **Volume ID:** Chọn Volume bạn cần tạo Snapshot theo ID
      * **Description** – Nhập ghi chú cho bản Snapshot

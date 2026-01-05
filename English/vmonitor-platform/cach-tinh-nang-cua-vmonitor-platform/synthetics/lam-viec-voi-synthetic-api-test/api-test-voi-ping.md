@@ -27,7 +27,7 @@ The Ping tests API allows you to send ICMP packets to your server or devices, al
 <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Location**
-  * Select the Location that will run Ping Tests to your hostname. Ping tests can be run from both Public Locations (managed by VNG Cloud) and Private Locations (installed and managed by customers) based on your needs for running tests from outside (internet) or inside the network. your. Public Locations managed by VNG Cloud currently has 2 locations: HCM and Hanoi.
+  * Select the Location that will run Ping Tests to your hostname. Ping tests can be run from both Public Locations (managed by GreenNode) and Private Locations (installed and managed by customers) based on your needs for running tests from outside (internet) or inside the network. your. Public Locations managed by GreenNode currently has 2 locations: HCM and Hanoi.
 
 <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -4,7 +4,7 @@
 
 Ensure the best user experience when selecting and viewing videos on devices over the internet.
 
-VNG Cloud's VOD service helps businesses:
+GreenNode's VOD service helps businesses:
 
 * Cost optimization.
 * Ensures flexibility and easy compatibility with a variety of terminals.

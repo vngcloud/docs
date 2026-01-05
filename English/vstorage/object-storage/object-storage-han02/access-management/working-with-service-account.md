@@ -2,7 +2,7 @@
 
 ## **Overview** <a href="#tong-quan" id="tong-quan"></a>
 
-**Service Account** is an identity that you can create in your account that has specific permissions. Service Account has some similarities to IAM users. Service Account and IAM User Account are both identities with Policies that define what the identity can and cannot do with VNG Cloud resources. However, Service Account is an identity used by an application or a machine, not a person, to make authorized API calls and access specified resources.
+**Service Account** is an identity that you can create in your account that has specific permissions. Service Account has some similarities to IAM users. Service Account and IAM User Account are both identities with Policies that define what the identity can and cannot do with GreenNode resources. However, Service Account is an identity used by an application or a machine, not a person, to make authorized API calls and access specified resources.
 
 ***
 
@@ -15,7 +15,7 @@ To create a Service Account, follow the steps below:
 1. Log in to [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) with Root User Account.
 2. Select **Service Account** .
 3. Select **Create a Service Account.**
-4. In the **Add information** section , enter **the Name** you want. The Service Account name must be from 1 (minimum) to 50 (maximum) characters long and can only include uppercase letters, lowercase letters (az, AZ), numbers (0-9), periods (.), underscores (\_), hyphens (-) and spaces ( ). The Service Account name should not contain sensitive information (e.g. IP address, login password, etc.) and the Service Account name must be unique on a VNG Cloud account until the Service Account is deleted. For example, the following Service Account name is valid: SA\_Client\_tool\_01.
+4. In the **Add information** section , enter **the Name** you want. The Service Account name must be from 1 (minimum) to 50 (maximum) characters long and can only include uppercase letters, lowercase letters (az, AZ), numbers (0-9), periods (.), underscores (\_), hyphens (-) and spaces ( ). The Service Account name should not contain sensitive information (e.g. IP address, login password, etc.) and the Service Account name must be unique on a GreenNode account until the Service Account is deleted. For example, the following Service Account name is valid: SA\_Client\_tool\_01.
 5. In the Trusted relationship field, enter Account Root IS if you want to add association information between the Service Account and the Root User Account.
 6. Select **Next step** .
 7. In the **Add permission** section , you can:

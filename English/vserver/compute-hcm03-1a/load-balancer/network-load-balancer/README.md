@@ -12,6 +12,6 @@ Thanks to their unique features, Network Load Balancers play a vital role in imp
 * **Target-Based Routing:** NLBs can perform routing based on the characteristics of the target server, such as its IP address, creating a flexible distribution architecture.
 * **Security:** NLBs provide security by controlling traffic and restricting access to servers.
 * **Traffic Control:** NLBs allow for controlling traffic to servers and managing the load in real-time.
-* **Authentication and Authorization:** Integrates with VNG Cloud IAM, providing full support for authentication and authorization features.
+* **Authentication and Authorization:** Integrates with GreenNode IAM, providing full support for authentication and authorization features.
 * **Load Balancer Monitoring:** Easily monitor health, client access history, and Load Balancer edit history.
 * **Terraform:** Supports quick and efficient initialization and management of Load Balancers using Terraform.

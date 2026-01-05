@@ -1,4 +1,4 @@
-# IAM for VNG Cloud's Services
+# IAM for GreenNode's Services
 
 1. **How IAM Works**&#x20;
 
@@ -8,10 +8,10 @@ The principle of least privilege is fundamental to IAM, ensuring that users and 
 
 1. **Principal**
 
-An entity (principal) refers to an object that can request access to resources in the VNG Cloud system. An entity can represent different types of objects such as User Account, Service Account, and IDP (Identity Provider).
+An entity (principal) refers to an object that can request access to resources in the GreenNode system. An entity can represent different types of objects such as User Account, Service Account, and IDP (Identity Provider).
 
 * User Account: IAM User Account represents individual identities associated with a Root User Account. Each user has a unique set of security credentials such as a username and password or access key. Users are authenticated to access cloud resources and services.
-* Service Account: A Service Account is an identity you can create in your Root User account with specific permissions. Unlike User Accounts, Service Accounts are identities used by applications or computers, not users, to make authorized API calls and access specific resources. IDP: Identity Provider allows you to manage resources on VNG Cloud with a set of users on the enterprise authentication system, helping enterprises centrally manage users and without having to create additional IAM User Accounts on VNG Cloud User Group: User Group is a collection of User Accounts with similar access requirements. Grouping User Accounts simplifies permission management by granting permissions to a group instead of each individual User Account. This improves consistency and efficiency in access control.
+* Service Account: A Service Account is an identity you can create in your Root User account with specific permissions. Unlike User Accounts, Service Accounts are identities used by applications or computers, not users, to make authorized API calls and access specific resources. IDP: Identity Provider allows you to manage resources on GreenNode with a set of users on the enterprise authentication system, helping enterprises centrally manage users and without having to create additional IAM User Accounts on GreenNode User Group: User Group is a collection of User Accounts with similar access requirements. Grouping User Accounts simplifies permission management by granting permissions to a group instead of each individual User Account. This improves consistency and efficiency in access control.
 
 **2. Request**
 
@@ -28,7 +28,7 @@ IAM Policies are JSON documents that define permissions and access rules for res
 
 **4. Authentication**
 
-Authentication is the process of authenticating an entity using its credentials to send a request to VNG Cloud. The entity needs to provide authentication information, such as a username and password, to prove their identity. The authentication information required for authentication from the IAM Console side for each entity includes:
+Authentication is the process of authenticating an entity using its credentials to send a request to GreenNode. The entity needs to provide authentication information, such as a username and password, to prove their identity. The authentication information required for authentication from the IAM Console side for each entity includes:
 
 * Root User Account: Email address and password&#x20;
 * IAM User Account: Identifier and password&#x20;
@@ -40,13 +40,13 @@ Authentication is the process of authenticating an entity using its credentials 
 After successful authentication, the system performs the authorization process, or decides whether an entity has the right to perform a particular action on a particular resource. This process ensures that only authorized entities can perform actions on the resource.
 
 * Root User Account: By default, it has full (unlimited) access to all products/services and resources under those products/services.&#x20;
-* IAM User Account: By default, it has no rights (denies access) on resources under VNG Cloud products/services. The subject must be authorized based on the attached Policies set to perform specific actions on specific resources.&#x20;
-* Service Account: Similar to IAM User Account, Service Account by default has no rights (denies access) on resources under VNG Cloud products/services. The subject must be authorized based on the attached Policies set to perform specific actions on specific resources.&#x20;
-* IDP: When Identity is successfully established between VNG Cloud (Service Provider) and the third party (Identity Providers), the subject can access the VNG Cloud system through the login link. Access objects are considered as IAM User Accounts and by default have no rights (denied access) on resources of VNG Cloud products/services. Objects must be authorized based on the attached Policies set to perform specific actions on specific resources.
+* IAM User Account: By default, it has no rights (denies access) on resources under GreenNode products/services. The subject must be authorized based on the attached Policies set to perform specific actions on specific resources.&#x20;
+* Service Account: Similar to IAM User Account, Service Account by default has no rights (denies access) on resources under GreenNode products/services. The subject must be authorized based on the attached Policies set to perform specific actions on specific resources.&#x20;
+* IDP: When Identity is successfully established between GreenNode (Service Provider) and the third party (Identity Providers), the subject can access the GreenNode system through the login link. Access objects are considered as IAM User Accounts and by default have no rights (denied access) on resources of GreenNode products/services. Objects must be authorized based on the attached Policies set to perform specific actions on specific resources.
 
-#### 2. Services in VNG Cloud System  <a href="#howiamsupportsvngcloudservices-2.cacdichvutronghethongvngcloud" id="howiamsupportsvngcloudservices-2.cacdichvutronghethongvngcloud"></a>
+#### 2. Services in GreenNode System  <a href="#howiamsupportsvngcloudservices-2.cacdichvutronghethongvngcloud" id="howiamsupportsvngcloudservices-2.cacdichvutronghethongvngcloud"></a>
 
-#### There are three main product lines in VNG Cloud system, please navigate to detailed instructions to know how to apply IAM with specific products: <a href="#howiamsupportsvngcloudservices-2.cacdichvutronghethongvngcloud" id="howiamsupportsvngcloudservices-2.cacdichvutronghethongvngcloud"></a>
+#### There are three main product lines in GreenNode system, please navigate to detailed instructions to know how to apply IAM with specific products: <a href="#howiamsupportsvngcloudservices-2.cacdichvutronghethongvngcloud" id="howiamsupportsvngcloudservices-2.cacdichvutronghethongvngcloud"></a>
 
 1. **vServer:** [IAM cho vServer](iam-cho-vserver.md)
 2. **vStorage:**[ IAM cho vStorage](iam-cho-vstorage.md)

@@ -12,7 +12,7 @@ IAM Policies are JSON documents that define permissions and rules for accessing 
 4. Provide the policy name and optional description.
 5. Click on "Next step" to continue configuring permissions.
 6. By default, the interface will display the "Visual editor" tab. Use the Visual editor feature to continue the initialization process.
-7. Select a specific Product in the VNG Cloud system that needs configuration.
+7. Select a specific Product in the GreenNode system that needs configuration.
 8. Specify the allowed Actions on the resources of the product.
 9. Select the resources for which the actions apply (All resources / Specific resource).
 10. Provide optional conditions when applying.
@@ -52,7 +52,7 @@ JSON Attribute Explanation&#x20;
 
 Relationship between Visual editor and JSON&#x20;
 
-* Visual editor and JSON are 2 Policy editors, provided by IAM VNG Cloud Services.&#x20;
+* Visual editor and JSON are 2 Policy editors, provided by IAM GreenNode Services.&#x20;
 * Once you Create/Edit a policy from Visual editor/JSON, the data will be automatically updated between the 2 tabs.&#x20;
 * To shorten the process of creating/editing a Policy, you can use the Visual editor/JSON feature back and forth&#x20;
 * Note that all actions/edits from the 2 tabs are synchronized with the remaining tab.

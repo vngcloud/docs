@@ -2,7 +2,7 @@
 
 ## **Overview** <a href="#tong-quan" id="tong-quan"></a>
 
-A Root User Account is an account that a user creates on the first day of accessing and using the services on VNG Cloud. A Root User Account has full access to all of the user's services and resources. When you create a VNG Cloud account, you start with a login identity that has full access to all of VNG Cloud's services and resources in the account. This identity is called a Root User Account and is accessed by logging in with the email address and password you used to create the account. We encourage you to not use the Root User Account for your daily tasks and only use this account to perform tasks that only the Root User Account can perform.
+A Root User Account is an account that a user creates on the first day of accessing and using the services on GreenNode. A Root User Account has full access to all of the user's services and resources. When you create a GreenNode account, you start with a login identity that has full access to all of GreenNode's services and resources in the account. This identity is called a Root User Account and is accessed by logging in with the email address and password you used to create the account. We encourage you to not use the Root User Account for your daily tasks and only use this account to perform tasks that only the Root User Account can perform.
 
 ***
 
@@ -48,7 +48,7 @@ By default, **the Root User Account** will have **full access** to your bucket, 
 
 <summary>Bucket ACLs</summary>
 
-You can grant Read, Write or Read and Write permissions to 1 or all other Root users. (Root users granted access via ACLS must be authorized accounts on our VNG Cloud system). For more information, see Using [ACLs.](../features-of-object-storage/working-with-bucket/working-with-buckets-via-vstorage-portal/bucket-acls.md)
+You can grant Read, Write or Read and Write permissions to 1 or all other Root users. (Root users granted access via ACLS must be authorized accounts on our GreenNode system). For more information, see Using [ACLs.](../features-of-object-storage/working-with-bucket/working-with-buckets-via-vstorage-portal/bucket-acls.md)
 
 </details>
 

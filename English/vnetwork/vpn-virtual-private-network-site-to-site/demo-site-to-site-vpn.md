@@ -8,8 +8,8 @@ description: >-
 
 Below is a demonstration of how to connect two LAN networks via the internet secured by a VPN connection (two VPNs at 2 sites)
 
-* Site A: VPC 10.1.0.0/16 with VPN server using PFsense of VNG Cloud Market Place.
-* Site B: VPC 10.200.0.0/16 with VPN server using VNG Cloud VPN Site-To-Site Service
+* Site A: VPC 10.1.0.0/16 with VPN server using PFsense of GreenNode Market Place.
+* Site B: VPC 10.200.0.0/16 with VPN server using GreenNode VPN Site-To-Site Service
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Demostration</p></figcaption></figure>
 
@@ -127,7 +127,7 @@ Below is a demonstration of how to connect two LAN networks via the internet sec
 
 * Click Add “Phase2”
 * Local Network: LAN Subnet
-* Remote Network: VPC VNG Cloud (you selected in create VPN flow) 10.200.0.0/16
+* Remote Network: VPC GreenNode (you selected in create VPN flow) 10.200.0.0/16
 * Encryption Algorithms: AES256 (**Important!**)
 * Hash SHA 256 (**Important!**)
 * LifeTime 16h = 57600 (**Important!**)

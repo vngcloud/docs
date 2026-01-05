@@ -2,7 +2,7 @@
 
 ### Bước 1: Khởi tạo Log project <a href="#batdauvoilogs-buoc1-khoitaologproject" id="batdauvoilogs-buoc1-khoitaologproject"></a>
 
-Bắt đầu sử dụng dịch vụ, bạn cần tạo một Log project. Một Log project là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát Logs với dung lượng và thời gian cụ thể mà bạn thực hiện mua trên VNG Cloud. Tại một thời điểm bạn có thể sở hữu một hoặc nhiều Log project song song và sử dụng chúng như một cách tổ chức tài nguyên cho các nhóm hay phòng ban sử dụng với mục đích khác nhau.
+Bắt đầu sử dụng dịch vụ, bạn cần tạo một Log project. Một Log project là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát Logs với dung lượng và thời gian cụ thể mà bạn thực hiện mua trên GreenNode. Tại một thời điểm bạn có thể sở hữu một hoặc nhiều Log project song song và sử dụng chúng như một cách tổ chức tài nguyên cho các nhóm hay phòng ban sử dụng với mục đích khác nhau.
 
 Thực hiện tạo project theo các bước bên dưới:
 
@@ -16,7 +16,7 @@ Thực hiện tạo project theo các bước bên dưới:
 8. Chọn **Buy Log Quota.**
 9. Thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Log project** sẽ được khởi tạo.
 
-Cách tính chi phí cho mỗi gói log project được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../vstorage/object-storage/vstorage-hcm03/cach-tinh-phi/).
+Cách tính chi phí cho mỗi gói log project được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../../vstorage/object-storage/vstorage-hcm03/cach-tinh-phi/).
 
 ***
 

@@ -1,6 +1,6 @@
 # Cách tính phí
 
-Dịch vụ File Storage cung cấp hai phương thức thanh toán để phục vụ các mục tiêu và chiến lược tài chính khác nhau của từng khách hàng. Hai hình thức thanh toán được triển khai cho dịch vụ File Storage tại VNG Cloud bao gồm:
+Dịch vụ File Storage cung cấp hai phương thức thanh toán để phục vụ các mục tiêu và chiến lược tài chính khác nhau của từng khách hàng. Hai hình thức thanh toán được triển khai cho dịch vụ File Storage tại GreenNode bao gồm:
 
 * Phương thức thanh toán Trả Trước.
 * Phương thức thanh toán Trả Sau.
@@ -18,15 +18,15 @@ Dịch vụ File Storage cung cấp hai phương thức thanh toán để phục
 
 ### **Phương thức thanh toán trả trước**
 
-Đối với người dùng Trả Trước, VNG Cloud áp dụng hình thức Hold Credit - Tạm giữ Credit để hỗ trợ việc sử dụng cũng như tính chi phí cho dịch vụ File Storage. Tìm hiểu thêm về Hold Credit tại [Tạm giữ Credit](https://docs.vngcloud.vn/vng-cloud-document/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/thanh-toan/tam-giu-credit).
+Đối với người dùng Trả Trước, GreenNode áp dụng hình thức Hold Credit - Tạm giữ Credit để hỗ trợ việc sử dụng cũng như tính chi phí cho dịch vụ File Storage. Tìm hiểu thêm về Hold Credit tại [Tạm giữ Credit](https://docs.vngcloud.vn/vng-cloud-document/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/thanh-toan/tam-giu-credit).
 
 * **Hình thức**: Dưới phương thức Tạm giữ Credit, người dùng phải duy trì số dư trả trước đủ để chi trả phần sử dụng dịch vụ trong tài khoản của họ.
 * **Quản lý số dư**: Người dùng có trách nhiệm quản lý số dư trả trước của họ để đảm bảo đủ để chi trả cho việc sử dụng file storage thep kế hoạch dự kiến, phần số dư này phải đủ để bao phủ cho việc sử dụng dịch vụ đến thời điểm hiện tại và 3 ngày tiếp theo đó. Chi tiết tham khảo tại [Tạm giữ Credit](https://docs.vngcloud.vn/vng-cloud-document/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/thanh-toan/tam-giu-credit).
-* **Thông báo số dư thấp**: Để tránh gián đoạn dịch vụ, hệ thống sẽ gửi thông báo khi số dư trả trước giảm xuống dưới một ngưỡng cụ thể, khuyến nghị người dùng nạp thêm tiền. Trường hợp đã được nhắc nhở nhiều lần, nhưng số dư vẫn liên tục không đảm bảo, VNG Cloud sẽ tạm thời dừng cung cấp dịch vụ File storage đến người dùng.
+* **Thông báo số dư thấp**: Để tránh gián đoạn dịch vụ, hệ thống sẽ gửi thông báo khi số dư trả trước giảm xuống dưới một ngưỡng cụ thể, khuyến nghị người dùng nạp thêm tiền. Trường hợp đã được nhắc nhở nhiều lần, nhưng số dư vẫn liên tục không đảm bảo, GreenNode sẽ tạm thời dừng cung cấp dịch vụ File storage đến người dùng.
 
 ### **Phương Thức Thanh Toán Trả Sau**
 
-Đối với người dùng trả sau, VNG Cloud áp dụng hình thức sử dụng trước - trả tiền sau, tương tự các dịch vụ khác
+Đối với người dùng trả sau, GreenNode áp dụng hình thức sử dụng trước - trả tiền sau, tương tự các dịch vụ khác
 
 * **Chu kỳ thanh toán**: Người dùng sử dụng phương thức thanh toán trả sau không cần duy trì số dư trả trước. Thay vào đó, các khoản phí dịch vụ File Storage được tính vào cuối mỗi chu kỳ thanh toán hàng tháng.
 * **Tính linh hoạt trong việc sử dụng File Storage**: Với thanh toán trả sau, người dùng có thể kích hoạt & tạo file storage khi cần mà không cần quan tâm đến số dư khả dụng, cung cấp tính linh hoạt lớn hơn.

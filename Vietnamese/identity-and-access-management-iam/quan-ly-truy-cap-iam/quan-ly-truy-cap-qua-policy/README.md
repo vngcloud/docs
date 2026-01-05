@@ -12,7 +12,7 @@ IAM Policy là các tài liệu JSON xác định các quyền và quy tắc tru
 4. Cung cấp tên chính sách và mô tả tùy chọn.
 5. Nhấp vào **"Next step"** để tiếp tục cấu hình quyền.
 6. Mặc định, giao diện sẽ hiển thị tab **"Visual editor."** Sử dụng tính năng Visual editor để tiếp tục quá trình khởi tạo.
-7. Chọn một **Product** cụ thể trong hệ thống VNG Cloud cần cấu hình.
+7. Chọn một **Product** cụ thể trong hệ thống GreenNode cần cấu hình.
 8. Chỉ định các **Actions** được phép trên tài nguyên của sản phẩm.
 9. Chọn các tài nguyên áp dụng các hành động **(Tất cả các tài nguyên / Tài nguyên cụ thể**).
 10. Cung cấp các **điều kiện tùy chọn** khi áp dụng.
@@ -54,7 +54,7 @@ Example JSON Expand source
 
 Mối quan hệ giữa Visual editor và JSON
 
-* **Visual editor** và **JSON** là 2 trình cỉnh sửa Policy, được cung cấp bởi IAM VNG Cloud Services.
+* **Visual editor** và **JSON** là 2 trình cỉnh sửa Policy, được cung cấp bởi IAM GreenNode Services.
 * Một khi Tạo/Chỉnh sửa policy từ Visual editor/JSON thì dữ liệu đề được tự động cập nhật giữa 2 tab.
 * Để rút gọn quá trình **khởi tạo/chỉnh sửa Policy**, bạn có thể sử dụng qua lại giữa 2 tính năng **Visual editor/JSON**
 * Lưu ý rằng mọi hành động/chỉnh sửa từ 2 tab đều được đồng bộ với tab còn lại.

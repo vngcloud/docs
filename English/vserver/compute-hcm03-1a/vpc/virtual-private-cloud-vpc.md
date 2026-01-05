@@ -2,7 +2,7 @@
 
 The development of cloud computing technologies leads to higher requirements for virtual networks, such as scalability, security, reliability, privacy, and robust connectivity performance. To resolve these problems, various network virtualization technologies emerged.
 
-VPC is a virtual Private network environment that belongs to the defined enterprise and is independent of other businesses on VNG Cloud. A VPC network provides variety of network services such as DHCP, Route Table, Internet Gateway, Floating IP, External Interface, Load Balancing, VPN gateway... You have full control over your VPC. For example, you can specify the subnet and configure route tables and gateways.
+VPC is a virtual Private network environment that belongs to the defined enterprise and is independent of other businesses on GreenNode. A VPC network provides variety of network services such as DHCP, Route Table, Internet Gateway, Floating IP, External Interface, Load Balancing, VPN gateway... You have full control over your VPC. For example, you can specify the subnet and configure route tables and gateways.
 
 Furthermore, you can connect your VPC to other VPCs or on-premises networks through VPC Peering or InterConnect service to create a custom network environment. This way, you can hybrid your applications to the cloud or extend data centers.
 
@@ -15,11 +15,11 @@ VPC consist of subnets which shared the same routing space, each VPC is identifi
 * Data packets are encapsulated and transmitted over a physical network between vServer instances.
 * Data packets transmitted over vServer instances in different VPCs are in different routing space. Therefore, vServer instances in different VPCs cannot communicate with each other.
 
-VNG Cloud developed VPCs that are integrated with virtual routers by adopting the tunneling and Software Defined Network (SDN) technologies.
+GreenNode developed VPCs that are integrated with virtual routers by adopting the tunneling and Software Defined Network (SDN) technologies.
 
 ### VPC and Subnet CIDR blocks <a href="#virtualprivatecloud-vpc-vpcandsubnetcidrblocks" id="virtualprivatecloud-vpc-vpcandsubnetcidrblocks"></a>
 
-In this environment, it is necessary to create at least one VPC and one subnet that can be assigned to a virtual server or many VNG Cloud resources created later.
+In this environment, it is necessary to create at least one VPC and one subnet that can be assigned to a virtual server or many GreenNode resources created later.
 
 Each VPC is defined as one private CIDR block with address mask 16 and consists of at least one private CIDR/24 block or CIDR/28 block, a Subnet. You must use one of the private CIDR/16 blocks listed in the following table to define your VPC and smaller blocks /24 for Subnets (belong to VPC /16 block).
 
@@ -43,14 +43,14 @@ When you create a VPC, it automatically has a main route table. By default, a ro
 
 Follow the steps in this section to create a VPC:
 
-1. Go to VNG Cloud console and navigate to VPC page
+1. Go to GreenNode console and navigate to VPC page
 2. Create VPC and define CIDR/16 block
 
 ### View VPC detail and create or delete Subnet for VPC <a href="#virtualprivatecloud-vpc-viewvpcdetailandcreateordeletesubnetforvpc" id="virtualprivatecloud-vpc-viewvpcdetailandcreateordeletesubnetforvpc"></a>
 
 In order to work with subnet in VPC, follow these steps:
 
-1. Go to VNG Cloud console and navigate to VPC page
+1. Go to GreenNode console and navigate to VPC page
 2. Select your VPC, click **View Detail** to expand the detail panel and Subnet tab view
 3. Go to Subnet tab to work with subnets
 4. You can create a subnet with defined CIDR/24 block or CIDR/28 block or delete existing subnet (if no resources is associated with the subnet)
@@ -67,5 +67,5 @@ Beside that, we will delete the following VPC components for you:
 
 Procedure:
 
-1. Go to VNG Cloud console and navigate to VPC page
+1. Go to GreenNode console and navigate to VPC page
 2. Determine your VPC to delete, click **Delete** button on the right side and confirm.

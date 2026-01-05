@@ -13,7 +13,7 @@ The Dedicated bandwidth package offers customizable speeds tailored to your need
 * When creating a bandwidth package, you can choose to purchase either Domestic bandwidth or International bandwidth, or both at the same time.
 {% endhint %}
 
-**Step 1:** Log in to your VNG Cloud account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Step 1:** Log in to your GreenNode account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
 
 **Step 2:** In the left-hand menu, under the **Network** section, select **Bandwidth**.
 
@@ -47,7 +47,7 @@ The Dedicated bandwidth package offers customizable speeds tailored to your need
 
 ### **Viewing Package Details**
 
-**Step 1:** Log in to your VNG Cloud account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Step 1:** Log in to your GreenNode account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
 
 **Step 2:** In the left-hand menu, under the **Network** section, select **Bandwidth**.
 
@@ -68,7 +68,7 @@ The Dedicated bandwidth package offers customizable speeds tailored to your need
 * IP addresses with the ATTACHED status mean that they have already been assigned to a bandwidth package. When you add these ATTACHED IP addresses to your bandwidth package, they will be removed from the old package and reassigned to the new one. **This ensures that an IP address can only be assigned to one bandwidth package at a time.**
 {% endhint %}
 
-**Step 1:** Log in to your VNG Cloud account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Step 1:** Log in to your GreenNode account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
 
 **Step 2:** In the left-hand menu, under the **Network** section, select **Bandwidth**.
 
@@ -84,7 +84,7 @@ The Dedicated bandwidth package offers customizable speeds tailored to your need
 
 ### **Removing IP Addresses from the Package**
 
-**Step 1:** Log in to your VNG Cloud account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Step 1:** Log in to your GreenNode account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
 
 **Step 2:** In the left-hand menu, under the **Network** section, select **Bandwidth**.
 
@@ -104,7 +104,7 @@ The Dedicated bandwidth package offers customizable speeds tailored to your need
 
 ### **Resize Package**
 
-**Step 1:** Log in to your VNG Cloud account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Step 1:** Log in to your GreenNode account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
 
 **Step 2:** In the left-hand menu, under the **Network** section, select **Bandwidth**.
 

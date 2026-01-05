@@ -17,7 +17,7 @@
 * **Cluster specification**
   * **OpenSearch Version:** lựa chọn phiên bản OpenSearch Cluster mà bạn muốn sử dụng. Hiện tại chúng tôi đang hỗ trợ 2 phiên bản v2.15 và v2.17
   * **Instance**: lựa chọn loại CPU và package tương ứng mà bạn muốn cấu hình cho tất cả các VM (node) trong mỗi cluster.
-  * **Number of nodes:** lựa chọn số lượng node (VM) mà bạn mong muốn sử dụng cho cluster. Hiện tại chúng tôi đang cung cấp các lựa chọn 3, 5, 7, 9 node. Nếu bạn muốn tạo một cluster có nhiều hơn 9 node, vui lòng liên hệ VNG Cloud để chúng tôi có thể hỗ trợ bạn.&#x20;
+  * **Number of nodes:** lựa chọn số lượng node (VM) mà bạn mong muốn sử dụng cho cluster. Hiện tại chúng tôi đang cung cấp các lựa chọn 3, 5, 7, 9 node. Nếu bạn muốn tạo một cluster có nhiều hơn 9 node, vui lòng liên hệ GreenNode để chúng tôi có thể hỗ trợ bạn.&#x20;
   * **Encryption volume:** lựa chọn có/ không sử dụng dịch vụ mã hóa các volume được sử dụng trên cluster. Nếu bạn chọn sử dụng phương án này, bạn cần chi trả thêm chi phí cho việc encryption.&#x20;
   * **Storage type:** lựa chọn loại ổ đĩa và IOPS mà bạn mong muốn sử dụng.
   * **Storage size:** lựa chọn kích thước ổ đĩa tương ứng.

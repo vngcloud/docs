@@ -2,7 +2,7 @@
 
 #### Overview <a href="#rootuseraccount-overview" id="rootuseraccount-overview"></a>
 
-The Root User Account is the account that users initiate on their first day of accessing and using services on VNG Cloud. The Root User Account has full access rights to all user services and resources. When creating a VNG Cloud account, you begin with a superuser identity with access to all VNG Cloud services and resources within the account. This identity is called the Root User Account and is accessed by logging in with the email address and password used to create the account. We encourage you not to use the Root User Account for your daily tasks and only use it for operations that require the unique capabilities of the Root User Account.
+The Root User Account is the account that users initiate on their first day of accessing and using services on GreenNode. The Root User Account has full access rights to all user services and resources. When creating a GreenNode account, you begin with a superuser identity with access to all GreenNode services and resources within the account. This identity is called the Root User Account and is accessed by logging in with the email address and password used to create the account. We encourage you not to use the Root User Account for your daily tasks and only use it for operations that require the unique capabilities of the Root User Account.
 
 ***
 

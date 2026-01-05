@@ -5,8 +5,8 @@ Use this document as a guide to renew resources. The document will describe in d
 **Resource extension feature applies to**
 
 * Target: Prepaid users.
-* Source of money: VNG Cloud wallet or other sources (done through the payment gateway).
-* Resources: All resources of VNG Cloud products that allow extension.
+* Source of money: GreenNode wallet or other sources (done through the payment gateway).
+* Resources: All resources of GreenNode products that allow extension.
 
 **Resource extension process**&#x20;
 

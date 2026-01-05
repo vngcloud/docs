@@ -14,7 +14,7 @@ To initialize a Kubernetes Cluster using Terraform, you need to perform the foll
 
 1. **Access the IAM Portal** here , create a Service Account with [VKS ](https://iam.console.vngcloud.vn/)**Full Access** authority . Specifically, at the IAM site, you can:
    * Select " **Create a Service Account** ", enter a name for the Service Account and click **Next Step** to assign permissions to the Service Account.
-   * Find and select **Policy: VKSFullAccess** then click " **Create a Service Account** " to create a Service Account, **Policy: VKSFullAccess** is created by VNG Cloud, you cannot delete these policies.
+   * Find and select **Policy: VKSFullAccess** then click " **Create a Service Account** " to create a Service Account, **Policy: VKSFullAccess** is created by GreenNode, you cannot delete these policies.
    * After successful creation, you need to save **the Client\_ID** and **Secret\_Key** of the Service Account to perform the next step.
 2. **Access the VKS Portal** here **, Activate** [the](https://vks.console.vngcloud.vn/overview) VKS service on the **Overview tab.** Please wait until we successfully create your VKS account.
 3. **Install Terraform:**

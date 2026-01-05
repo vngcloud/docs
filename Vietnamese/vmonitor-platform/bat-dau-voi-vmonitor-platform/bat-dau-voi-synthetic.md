@@ -2,7 +2,7 @@
 
 ### Bước 1: Khởi tạo Synthetic Test quota <a href="#batdauvoisynthetics-buoc1-khoitaosynthetictestquota" id="batdauvoisynthetics-buoc1-khoitaosynthetictestquota"></a>
 
-Bắt đầu sử dụng dịch vụ, bạn cần tạo một Synthetic Test quota. Một Synthetic Test quota là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát vận hành với số lượng bài kiểm tra cụ thể mà bạn thực hiện mua trên VNG Cloud. Tại một thời điểm bạn có thể sở hữu một Synthetic Test quota và sử dụng chúng để kiểm tra hoạt động hệ thống của bạn.
+Bắt đầu sử dụng dịch vụ, bạn cần tạo một Synthetic Test quota. Một Synthetic Test quota là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát vận hành với số lượng bài kiểm tra cụ thể mà bạn thực hiện mua trên GreenNode. Tại một thời điểm bạn có thể sở hữu một Synthetic Test quota và sử dụng chúng để kiểm tra hoạt động hệ thống của bạn.
 
 Thực hiện tạo project theo các bước bên dưới:
 
@@ -14,7 +14,7 @@ Thực hiện tạo project theo các bước bên dưới:
 6. Chọn **Buy Synthetic Test Quota**.
 7. Thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Synthetic test quota** sẽ được khởi tạo.
 
-Cách tính chi phí cho mỗi gói Synthetic Test quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../vstorage/object-storage/vstorage-hcm03/cach-tinh-phi/).
+Cách tính chi phí cho mỗi gói Synthetic Test quota được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../../vstorage/object-storage/vstorage-hcm03/cach-tinh-phi/).
 
 ***
 
@@ -49,7 +49,7 @@ API HTTP tests cho phép bạn gửi HTTP(s) requests tới dịch vụ hay ứn
 <figure><img src="../../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Location**&#x20;
-  * Lựa chọn Location mà ở đó sẽ chạy các HTTP Test tới URL của bạn. HTTP tests có thể chạy từ cả Public Locations (do VNG Cloud quản lý) và Private Locations (do khách hàng tự cài đặt và quản lý) dựa trên nhu cầu của bạn cho việc chạy test từ bên ngoài (internet) hay bên trong mạng của bạn. Public Locations do VNG Cloud quản lý hiện tại có 2 locations là HCM và HN.
+  * Lựa chọn Location mà ở đó sẽ chạy các HTTP Test tới URL của bạn. HTTP tests có thể chạy từ cả Public Locations (do GreenNode quản lý) và Private Locations (do khách hàng tự cài đặt và quản lý) dựa trên nhu cầu của bạn cho việc chạy test từ bên ngoài (internet) hay bên trong mạng của bạn. Public Locations do GreenNode quản lý hiện tại có 2 locations là HCM và HN.
 
 <figure><img src="../../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -1,6 +1,6 @@
 # Tăng giảm kích thước ổ đĩa của node
 
-Trong dịch vụ **vDB OpenSearch** của **VNG Cloud**, bạn có thể dễ dàng điều chỉnh **Node Storage Size** để tối ưu hóa dung lượng lưu trữ và đảm bảo hiệu suất hệ thống. **Hiện tại, chúng tôi chỉ hỗ trợ tăng dung lượng lưu trữ (storage size)** khi có nhu cầu mở rộng.
+Trong dịch vụ **vDB OpenSearch** của **GreenNode**, bạn có thể dễ dàng điều chỉnh **Node Storage Size** để tối ưu hóa dung lượng lưu trữ và đảm bảo hiệu suất hệ thống. **Hiện tại, chúng tôi chỉ hỗ trợ tăng dung lượng lưu trữ (storage size)** khi có nhu cầu mở rộng.
 
 Để tăng storage size cho các node trong một OpenSearch Cluster, bạn có thể:
 

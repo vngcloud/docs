@@ -1,6 +1,6 @@
 # Volume Types
 
-Volume type is profile for performance of volume. VNG Cloud using Volume Type to implement data QoS on volume. Volume QoS can control the bandwidth and IOPS workload on your volume, you must chose right QoS for your application to have best experience.
+Volume type is profile for performance of volume. GreenNode using Volume Type to implement data QoS on volume. Volume QoS can control the bandwidth and IOPS workload on your volume, you must chose right QoS for your application to have best experience.
 
 ## Volume QoS <a href="#volumetypes-volumeqos" id="volumetypes-volumeqos"></a>
 

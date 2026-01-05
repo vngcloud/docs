@@ -8,7 +8,7 @@ Gói bandwidth Pay As You Go là gói bandwidth mà bạn cần chi trả tiền
 
 ### Xem thông tin chi tiết gói
 
-**Bước 1**: Đăng nhập vào tài khoản VNG Cloud của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Bước 1**: Đăng nhập vào tài khoản GreenNode của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
 
 **Bước 2**: Trên danh sách menu bên trái, tại mục **Network**, chọn **Bandwidth**.
 
@@ -37,7 +37,7 @@ Gói bandwidth Pay As You Go là gói bandwidth mà bạn cần chi trả tiền
 
 Để thêm địa chỉ IP cho gói, bạn có thể thực hiện theo các bước:&#x20;
 
-**Bước 1**: Đăng nhập vào tài khoản VNG Cloud của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Bước 1**: Đăng nhập vào tài khoản GreenNode của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
 
 **Bước 2**: Trên danh sách menu bên trái, tại mục **Network**, chọn **Bandwidth**.
 
@@ -55,7 +55,7 @@ Gói bandwidth Pay As You Go là gói bandwidth mà bạn cần chi trả tiền
 
 Để thêm địa chỉ IP cho gói, bạn có thể thực hiện theo các bước:&#x20;
 
-**Bước 1**: Đăng nhập vào tài khoản VNG Cloud của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Bước 1**: Đăng nhập vào tài khoản GreenNode của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
 
 **Bước 2**: Trên danh sách menu bên trái, tại mục **Network**, chọn **Bandwidth**.
 

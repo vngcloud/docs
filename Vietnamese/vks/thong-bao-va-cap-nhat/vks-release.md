@@ -64,7 +64,7 @@ VKS (VNG Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, man
 
 **Tính năng mới:**
 
-- **Hỗ trợ PVC encryption**: VNG Cloud hiện đã hỗ trợ tính năng mã hóa PVC (Persistent Volume Claim) cho VKS, mang đến một lớp bảo mật mạnh mẽ hơn cho dữ liệu trên các Persistent Volumes của bạn. Tính năng này hoạt động tương tự như cơ chế mã hóa Volume đã có trên vServer, giúp bảo vệ dữ liệu nhạy cảm khỏi truy cập trái phép ngay cả khi volume bị tháo rời. Việc mã hóa PVC đảm bảo an toàn dữ liệu tuân thủ các tiêu chuẩn bảo mật cao nhất, đặc biệt hữu ích cho các ứng dụng đòi hỏi sự tuân thủ nghiêm ngặt về bảo mật thông tin.
+- **Hỗ trợ PVC encryption**: GreenNode hiện đã hỗ trợ tính năng mã hóa PVC (Persistent Volume Claim) cho VKS, mang đến một lớp bảo mật mạnh mẽ hơn cho dữ liệu trên các Persistent Volumes của bạn. Tính năng này hoạt động tương tự như cơ chế mã hóa Volume đã có trên vServer, giúp bảo vệ dữ liệu nhạy cảm khỏi truy cập trái phép ngay cả khi volume bị tháo rời. Việc mã hóa PVC đảm bảo an toàn dữ liệu tuân thủ các tiêu chuẩn bảo mật cao nhất, đặc biệt hữu ích cho các ứng dụng đòi hỏi sự tuân thủ nghiêm ngặt về bảo mật thông tin.
 Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/thong-bao-va-cap-nhat/release-notes)
 
 ---
@@ -187,7 +187,7 @@ VKS (VNGCloud Kubernetes Service) vừa ra mắt bản cập nhật mới nhất
 
 **Tính năng mới:**
 
-* **Network Type: Cilium Overlay, Cilium VPC Native Routing:** Ngoài Calico Overlay, bản phát hành lần này chúng tôi đã bổ sung hai loại mạng mới: Cilium Overlay và Cilium VPC Native Routing. Cilium Overlay cho phép bạn xây dựng mạng overlay linh hoạt, trong khi Cilium VPC Native Routing tích hợp chặt chẽ với VPC của VNG Cloud, giúp tối ưu hiệu suất và bảo mật cho ứng dụng của bạn. Chi tiết tham khảo thêm tại [đây](../network/cni/).
+* **Network Type: Cilium Overlay, Cilium VPC Native Routing:** Ngoài Calico Overlay, bản phát hành lần này chúng tôi đã bổ sung hai loại mạng mới: Cilium Overlay và Cilium VPC Native Routing. Cilium Overlay cho phép bạn xây dựng mạng overlay linh hoạt, trong khi Cilium VPC Native Routing tích hợp chặt chẽ với VPC của GreenNode, giúp tối ưu hiệu suất và bảo mật cho ứng dụng của bạn. Chi tiết tham khảo thêm tại [đây](../network/cni/).
 
 **Cải tiến:**
 
@@ -204,7 +204,7 @@ VKS (VNGCloud Kubernetes Service) giới thiệu bản cập nhật mới nhất
 
 **Tính năng mới:**
 
-* **Private Cluster:** Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Public IP để giao tiếp giữa nodes và control plane. Để nâng cao bảo mật cho cluster của bạn, chúng tôi đã cho ra mắt mô hình private cluster. Tính năng Private Cluster giúp cho cụm K8S của bạn được bảo mật nhất có thể, mọi kết nối hoàn toàn là private từ kết nối giữa nodes tới control plane, kết nối từ client tới control plane, hay kết nối từ nodes tới các sản phẩm dịch vụ khác trong VNG Cloud như: vStorage, vCR, vMonitor, VNGCloud APIs,...Private Cluster là lựa chọn lý tưởng cho **các dịch vụ yêu cầu kiểm soát truy cập chặt chẽ, đảm bảo tuân thủ các quy định về bảo mật và quyền riêng tư dữ liệu**. Chi tiết 2 mô hình hoạt động của Cluster, bạn có thể tham khảo thêm tại [đây ](../mo-hinh-hoat-dong.md)và tham khảo các bước khởi tạo một private Cluster tại [đây](../bat-dau-voi-vks/khoi-tao-mot-private-cluster.md).
+* **Private Cluster:** Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Public IP để giao tiếp giữa nodes và control plane. Để nâng cao bảo mật cho cluster của bạn, chúng tôi đã cho ra mắt mô hình private cluster. Tính năng Private Cluster giúp cho cụm K8S của bạn được bảo mật nhất có thể, mọi kết nối hoàn toàn là private từ kết nối giữa nodes tới control plane, kết nối từ client tới control plane, hay kết nối từ nodes tới các sản phẩm dịch vụ khác trong GreenNode như: vStorage, vCR, vMonitor, VNGCloud APIs,...Private Cluster là lựa chọn lý tưởng cho **các dịch vụ yêu cầu kiểm soát truy cập chặt chẽ, đảm bảo tuân thủ các quy định về bảo mật và quyền riêng tư dữ liệu**. Chi tiết 2 mô hình hoạt động của Cluster, bạn có thể tham khảo thêm tại [đây ](../mo-hinh-hoat-dong.md)và tham khảo các bước khởi tạo một private Cluster tại [đây](../bat-dau-voi-vks/khoi-tao-mot-private-cluster.md).
 
 ***
 
@@ -398,7 +398,7 @@ Nếu bạn gặp bất kỳ vấn đề nào sau khi cập nhật, vui lòng li
 
 ## April 17, 2024 <a href="#april_19_2024" id="april_19_2024"></a>
 
-**VNG Cloud vừa ra phiên bản đầu tiên cho dịch vụ VKS (VNGCloud Kubernetes Service), mang đến cho bạn trải nghiệm quản lý Kubernetes mạnh mẽ và hiệu quả hơn bao giờ hết!**
+**GreenNode vừa ra phiên bản đầu tiên cho dịch vụ VKS (VNGCloud Kubernetes Service), mang đến cho bạn trải nghiệm quản lý Kubernetes mạnh mẽ và hiệu quả hơn bao giờ hết!**
 
 **Điểm nổi bật:**
 

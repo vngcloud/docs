@@ -1,14 +1,14 @@
 # Snapshot
 
-Tính năng snapshot là một thành phần quan trọng trong hệ thống lưu trữ đám mây của VNG Cloud. Nó cung cấp khả năng tạo và quản lý các phiên bản sao lưu của dữ liệu ổ đĩa ảo của bạn tại các điểm thời gian cụ thể, mang lại nhiều lợi ích quan trọng trong việc bảo vệ dữ liệu, tối ưu hóa tài nguyên và đảm bảo khả năng phục hồi dữ liệu trong trường hợp cần thiết.
+Tính năng snapshot là một thành phần quan trọng trong hệ thống lưu trữ đám mây của GreenNode. Nó cung cấp khả năng tạo và quản lý các phiên bản sao lưu của dữ liệu ổ đĩa ảo của bạn tại các điểm thời gian cụ thể, mang lại nhiều lợi ích quan trọng trong việc bảo vệ dữ liệu, tối ưu hóa tài nguyên và đảm bảo khả năng phục hồi dữ liệu trong trường hợp cần thiết.
 
 Mỗi snapshot chứa đầy đủ thông tin cần thiết để khôi phục dữ liệu của bạn đến trạng thái tại thời điểm snapshot được tạo ra. Khi bạn tạo một ổ đĩa mới dựa trên một snapshot, ổ đĩa mới này bắt đầu như một bản sao chính xác của ổ đĩa gốc được sử dụng để tạo snapshot. Quá trình sao chép dữ liệu được thực hiện ẩn sau cùng để bạn có thể bắt đầu sử dụng nó ngay lập tức. Nếu bạn truy cập dữ liệu chưa được tải, ổ đĩa sẽ tự động tải dữ liệu yêu cầu từ hệ thống, sau đó tiếp tục tải dữ liệu còn lại của ổ đĩa trong nền.
 
 Snapshot cũng hỗ trợ mã hóa dữ liệu một cách toàn diện, đảm bảo tính bảo mật của dữ liệu lưu trữ và giúp tuân thủ các yêu cầu về bảo mật và quyền riêng tư. Bạn có thể tạo snapshot cho các ổ đĩa đã được mã hóa và thể tạo ổ đĩa mới từ các snapshot đã được mã hóa.
 
-Tại VNG Cloud, chúng tôi hỗ trợ việc tạo Snapshot cho cả Server và Volume, giúp đơn giản hóa quá trình tạo Snapshot và phù hợp với mọi nhu cầu sử dụng của bạn. Khi đã tạo Snapshot cho máy chủ ảo và ổ đĩa ảo, bạn có thể sử dụng tính năng Roll Back của chúng tôi để khôi phục lại trạng thái của máy ảo và ổ đĩa ảo đến thời điểm Snapshot được tạo.
+Tại GreenNode, chúng tôi hỗ trợ việc tạo Snapshot cho cả Server và Volume, giúp đơn giản hóa quá trình tạo Snapshot và phù hợp với mọi nhu cầu sử dụng của bạn. Khi đã tạo Snapshot cho máy chủ ảo và ổ đĩa ảo, bạn có thể sử dụng tính năng Roll Back của chúng tôi để khôi phục lại trạng thái của máy ảo và ổ đĩa ảo đến thời điểm Snapshot được tạo.
 
-Bên cạnh việc khôi phục Roll Back máy chủ từ file snapshot, VNG Cloud cho phép tạo máy chủ mới dựa trên file Snapshot đã tạo. Từ đó, chúng tôi hỗ trợ việc chia sẻ và sử dụng file Snapshot cho người dùng khác trong VNG Cloud, mang đến cho người dùng những trải nghiệm quản lý hệ thống tốt hơn.
+Bên cạnh việc khôi phục Roll Back máy chủ từ file snapshot, GreenNode cho phép tạo máy chủ mới dựa trên file Snapshot đã tạo. Từ đó, chúng tôi hỗ trợ việc chia sẻ và sử dụng file Snapshot cho người dùng khác trong GreenNode, mang đến cho người dùng những trải nghiệm quản lý hệ thống tốt hơn.
 
 <figure><img src="../../../.gitbook/assets/image (382).png" alt="" width="563"><figcaption></figcaption></figure>
 

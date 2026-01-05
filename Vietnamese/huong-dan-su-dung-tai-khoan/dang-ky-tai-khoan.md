@@ -4,7 +4,7 @@
 
 **Bước 1:**
 
-Tại trang chủ VNG Cloud, nhấp chọn chức năng “Đăng ký” như hình:
+Tại trang chủ GreenNode, nhấp chọn chức năng “Đăng ký” như hình:
 
 <figure><img src="../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
 
@@ -21,7 +21,7 @@ Màn hình tương tự như sau:
 
 **Bước 3:** Kiểm tra lại hộp thoại email
 
-1. Bạn sẽ thấy một email với tiêu đề **VNG CLOUD – Account Verification**. Nếu không tìm thấy bất kỳ email nào như trên, vui lòng kiểm tra lại trong thư mục **Spam.**
+1. Bạn sẽ thấy một email với tiêu đề **GreenNode – Account Verification**. Nếu không tìm thấy bất kỳ email nào như trên, vui lòng kiểm tra lại trong thư mục **Spam.**
 2. Mở email và thực hiện theo hướng dẫn.
 
 **Bước 4:** Trong email hướng dẫn, click vào link **Liên kết này** để đến bước tiếp theo.
@@ -46,6 +46,6 @@ Nhấp chọn vào ![](<../.gitbook/assets/image (184).png>) để nhận OTP đ
 
 Người dùng nhập thông tin đăng ký, OTP vào bảng trên & nhấp chọn ![](<../.gitbook/assets/image (185).png>). Khi thông tin nhập liệu đã hợp lệ. Người dùng nhận được thông báo & email xác nhận đăng ký thành công.
 
-Các thông tin về email và số điện thoại của khách hàng được VNG Cloud mã hóa theo thuật toán Symmetric AES nhằm đảm bảo an toàn thông tin khách hàng
+Các thông tin về email và số điện thoại của khách hàng được GreenNode mã hóa theo thuật toán Symmetric AES nhằm đảm bảo an toàn thông tin khách hàng
 
 <br>

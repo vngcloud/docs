@@ -1,6 +1,6 @@
 # Charging Fee
 
-File Storage service provides two payment methods to serve different financial goals and strategies of each customer. Two payment methods are deployed for File Storage service at VNG Cloud including:
+File Storage service provides two payment methods to serve different financial goals and strategies of each customer. Two payment methods are deployed for File Storage service at GreenNode including:
 
 * Payment Method Prepaid.
 * Payment method Pay Later.
@@ -20,15 +20,15 @@ In addition, VKS will provide free 50 GB of capacity for the first Public NFS Fi
 
 ### **Prepayment method** <a href="#phuong-thuc-thanh-toan-tra-truoc" id="phuong-thuc-thanh-toan-tra-truoc"></a>
 
-For Prepaid users, VNG Cloud applies Hold Credit to support the use and calculate the cost of File Storage service. Learn more about Hold Credit at [Hold Credit](https://docs.vngcloud.vn/vng-cloud-document/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/thanh-toan/tam-giu-credit) .
+For Prepaid users, GreenNode applies Hold Credit to support the use and calculate the cost of File Storage service. Learn more about Hold Credit at [Hold Credit](https://docs.vngcloud.vn/vng-cloud-document/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/thanh-toan/tam-giu-credit) .
 
 * **Form** : Under the Credit Hold method, users must maintain a prepaid balance sufficient to cover the service usage in their account.
 * **Balance Management** : It is the responsibility of the User to manage their prepaid balance to ensure that it is sufficient to cover the planned use of file storage, and that this balance is sufficient to cover the current and subsequent 3 days of service usage. For details, please refer to [Credit Hold](https://docs.vngcloud.vn/vng-cloud-document/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/thanh-toan/tam-giu-credit) .
-* **Low balance notification** : To avoid service interruption, the system will send a notification when the prepaid balance drops below a specific threshold, recommending the user to top up. In case the balance is still not guaranteed after being reminded many times, VNG Cloud will temporarily stop providing File storage service to the user.
+* **Low balance notification** : To avoid service interruption, the system will send a notification when the prepaid balance drops below a specific threshold, recommending the user to top up. In case the balance is still not guaranteed after being reminded many times, GreenNode will temporarily stop providing File storage service to the user.
 
 ### **Postpaid Payment Method** <a href="#phuong-thuc-thanh-toan-tra-sau" id="phuong-thuc-thanh-toan-tra-sau"></a>
 
-For postpaid users, VNG Cloud applies the use first - pay later method, similar to other services.
+For postpaid users, GreenNode applies the use first - pay later method, similar to other services.
 
 * **Billing Cycle** : Users using the postpaid payment method do not need to maintain a prepaid balance. Instead, File Storage service fees are charged at the end of each monthly billing cycle.
 * **Flexibility in using File Storage** : With postpaid billing, users can activate & create file storage as needed without worrying about available balance, providing greater flexibility.

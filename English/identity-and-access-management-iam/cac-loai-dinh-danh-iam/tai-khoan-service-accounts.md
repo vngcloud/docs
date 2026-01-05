@@ -1,6 +1,6 @@
 # Service accounts
 
-Service Account is an identity that you can create under your Root User account and has specific permissions. It has some similarities with IAM User Account. To clarify, Service Account and IAM User Account are both identities with permission policies that define what that identity can and cannot do with VNG Cloud resources. However, Service Account is used by an application or machine, not a person, to make authorized API calls and access specified resources.
+Service Account is an identity that you can create under your Root User account and has specific permissions. It has some similarities with IAM User Account. To clarify, Service Account and IAM User Account are both identities with permission policies that define what that identity can and cannot do with GreenNode resources. However, Service Account is used by an application or machine, not a person, to make authorized API calls and access specified resources.
 
 1. **How to Create a Service Account?**&#x20;
 

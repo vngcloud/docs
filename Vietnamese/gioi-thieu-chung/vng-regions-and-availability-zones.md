@@ -1,5 +1,5 @@
 ---
-description: Thông tin về các Regions và Availability Zones của VNG Cloud
+description: Thông tin về các Regions và Availability Zones của GreenNode
 ---
 
 # VNG Regions and Availability Zones
@@ -8,7 +8,7 @@ description: Thông tin về các Regions và Availability Zones của VNG Cloud
 
 ### Region là gì?
 
-Region là một vùng địa lý độc lập nơi VNG Cloud triển khai cơ sở hạ tầng. Mỗi region được thiết kế để hoạt động độc lập, đảm bảo dữ liệu của bạn được lưu trữ trong khu vực bạn chọn.
+Region là một vùng địa lý độc lập nơi GreenNode triển khai cơ sở hạ tầng. Mỗi region được thiết kế để hoạt động độc lập, đảm bảo dữ liệu của bạn được lưu trữ trong khu vực bạn chọn.
 
 ### Availability Zone (AZ) là gì?
 
@@ -29,7 +29,7 @@ Availability Zone là một hoặc nhiều data center riêng biệt trong một
 | HAN         | Ha Noi      | HAN-1A                         | [https://han-1.console.vngcloud.vn/vserver/v-server/cloud-server](https://han-1.console.vngcloud.vn/vserver/v-server/cloud-server) |
 
 {% hint style="info" %}
-Cập nhật đến ngày 15/12/2025, VNG Cloud đang hỗ trợ 2 region: Hồ Chí Minh và Hà Nội.
+Cập nhật đến ngày 15/12/2025, GreenNode đang hỗ trợ 2 region: Hồ Chí Minh và Hà Nội.
 {% endhint %}
 
 ***

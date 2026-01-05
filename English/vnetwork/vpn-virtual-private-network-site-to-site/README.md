@@ -50,7 +50,7 @@ After finishing create VPN between above connections:
 
 ***
 
-VNG Cloud provides users VPN service with the below actions:
+GreenNode provides users VPN service with the below actions:
 
 * [Create VPN Site-to-Site](create-vpn-site-to-site/)
 * [VPN Connect Condition](create-vpn-site-to-site/vpn-connect-condition.md)

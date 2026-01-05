@@ -2,7 +2,7 @@
 
 This article aims to guide Backup Server service users to update backup server point storage location from vStorage to Vault.
 
-Note that VNG Cloud only encourages users to change the backup server point storage location, because of the [outstanding features that Vault (backup location) brings](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/backup-center/backup-coming-soon/backup-location) . Therefore, if there is no need to change, users can still continue to store backups at vStorage without affecting the quality of the backup server service.
+Note that GreenNode only encourages users to change the backup server point storage location, because of the [outstanding features that Vault (backup location) brings](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/backup-center/backup-coming-soon/backup-location) . Therefore, if there is no need to change, users can still continue to store backups at vStorage without affecting the quality of the backup server service.
 
 Follow the instructions below to update the new storage location for your backup servers:
 
@@ -10,7 +10,7 @@ Follow the instructions below to update the new storage location for your backup
 
 First, you need to create a new backup location to prepare for changing the backup server storage location.
 
-* **Login:** Log in to your VNG Cloud service management account.
+* **Login:** Log in to your GreenNode service management account.
 * **Access the Backup Location management section:** Find and select "Backup Location" here [https://backupcenter.console.vngcloud.vn/backup-location/list](https://backupcenter.console.vngcloud.vn/backup-location/list)
 * **Create new:** Click the "Create backup location" button, an interface window appears for you to fill in the necessary information.
 * **Fill in information:**
@@ -59,4 +59,4 @@ Once the changes are complete, you can go to the [backup server](https://backupc
 
 * **The backup schedule** and **retention rules** still follow the backup policy, the only difference is that the newly created backup server points will be stored at the new backup location.
 * The **backup server points stored in vBackup-Project** before are unchanged, users can still access them when needed.
-* VNG Cloud recommends that customers should download the backup server points needed, and delete **vBackup-Project** to avoid incurring storage costs at vStorage after transferring **all backup servers to the new backup location** and **incurring storage of backup server points (Full)** here.
+* GreenNode recommends that customers should download the backup server points needed, and delete **vBackup-Project** to avoid incurring storage costs at vStorage after transferring **all backup servers to the new backup location** and **incurring storage of backup server points (Full)** here.

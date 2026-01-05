@@ -4,7 +4,7 @@ IAM is essential to protecting resources within vServer services. Without proper
 
 ### 1. Getting Started with IAM&#x20;
 
-This guide is intended to guide users to quickly get started with IAM in vServer services by using the default permission (defined by VNG Cloud Managed Policies) for the vServer system called vServerFullAccess.
+This guide is intended to guide users to quickly get started with IAM in vServer services by using the default permission (defined by GreenNode Managed Policies) for the vServer system called vServerFullAccess.
 
 1. Accessing the IAM Console&#x20;
 
@@ -50,7 +50,7 @@ Re-Access the vServer Portal by following the instructions in Step 3, and then y
 
 ### 2. List of VNG Managed Policies&#x20;
 
-VNG Managed Policy is an IAM Policy created by default by the VNG Cloud IAM system. These Policies are managed by VNG Cloud itself to support users in quickly setting up the necessary access rights for IAM user accounts for resources of each specific Product. Let's explore the list of VNG Managed Policies for vServer:&#x20;
+VNG Managed Policy is an IAM Policy created by default by the GreenNode IAM system. These Policies are managed by GreenNode itself to support users in quickly setting up the necessary access rights for IAM user accounts for resources of each specific Product. Let's explore the list of VNG Managed Policies for vServer:&#x20;
 
 * vServerFullAccess: Includes full access rights to resources in the vServer system
 * vServerReadOnlyAccess: Includes only Read rights on resources in the vServer system

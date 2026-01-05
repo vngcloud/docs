@@ -1,6 +1,6 @@
 # Khôi phục dữ liệu cho RDS Instance
 
-VNG Cloud vDB hỗ trợ bạn khôi phục (Restore) lại một RDS Instance mới từ bản sao lưu (Backup) trước đó. Quá trình khôi phục này không phụ thuộc vào loại Backup (Full Backup hay Incremetal Backup) hay cách tạo ra bản backup đó (Manual Backup hay Automactic Daily Backup).
+GreenNode vDB hỗ trợ bạn khôi phục (Restore) lại một RDS Instance mới từ bản sao lưu (Backup) trước đó. Quá trình khôi phục này không phụ thuộc vào loại Backup (Full Backup hay Incremetal Backup) hay cách tạo ra bản backup đó (Manual Backup hay Automactic Daily Backup).
 
 Để thực hiện tiến trình khôi phục, bạn truy cập màn hình quản lý Backup vDB Relational [tại đây](https://vdb.console.vngcloud.vn/relational/backup).
 

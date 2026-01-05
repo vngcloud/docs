@@ -22,7 +22,7 @@
 
 ## Withdraw agreement <a href="#capnhatthongtintaikhoan-truonghop-rutlaisudongy" id="capnhatthongtintaikhoan-truonghop-rutlaisudongy"></a>
 
-If there is a request to opt out of VNG Cloud collecting personal information, your business serving for VNG Cloud services to you. You can choose this function to delete the registered information.
+If there is a request to opt out of GreenNode collecting personal information, your business serving for GreenNode services to you. You can choose this function to delete the registered information.
 
 **Step 1** : Click "**Update profile**" button.
 
@@ -42,7 +42,7 @@ Click "Close", the following screen:
 
 <figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Within 3 days, you can cancel the withdrawal request by selecting the 'Cancel Withdrawal Request' function. If you do not cancel the request, VNG Cloud will proceed to delete your account while complying with data retention regulations.
+Within 3 days, you can cancel the withdrawal request by selecting the 'Cancel Withdrawal Request' function. If you do not cancel the request, GreenNode will proceed to delete your account while complying with data retention regulations.
 
 ***
 
@@ -60,4 +60,4 @@ In Case, you need de-active account, you could implement the following step:
 
 <figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Within 3 days, you can cancel the account deletion request by selecting the 'Cancel Account Deletion Request' function. If you do not cancel the request, VNG Cloud will proceed to delete your account while complying with data storage regulations.
+Within 3 days, you can cancel the account deletion request by selecting the 'Cancel Account Deletion Request' function. If you do not cancel the request, GreenNode will proceed to delete your account while complying with data storage regulations.

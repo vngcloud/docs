@@ -17,23 +17,23 @@ Backup location là một dịch vụ lưu trữ dữ liệu sao lưu vô cùng 
 ### Traffic (Lượng dữ liệu truyền tải)
 
 * **Đơn vị tính:** GB
-* **Nguyên tắc tính phí:** Hiện tại, VNG Cloud Backup đang miễn phí hoàn toàn lượng dữ liệu truyền tải. Điều này có nghĩa là bạn có thể tải lên và tải xuống dữ liệu sao lưu mà không phải trả thêm bất kỳ khoản phí nào.
+* **Nguyên tắc tính phí:** Hiện tại, GreenNode Backup đang miễn phí hoàn toàn lượng dữ liệu truyền tải. Điều này có nghĩa là bạn có thể tải lên và tải xuống dữ liệu sao lưu mà không phải trả thêm bất kỳ khoản phí nào.
 
 ## Billing Method
 
-Hiện tại, VNG Cloud Backup hỗ trợ cả 2 hình thức là trả trước và trả sau:
+Hiện tại, GreenNode Backup hỗ trợ cả 2 hình thức là trả trước và trả sau:
 
 ### Đối với trả sau
 
-* Đối tượng áp dụng: Người dùng trả sau tại VNG Cloud
+* Đối tượng áp dụng: Người dùng trả sau tại GreenNode
 * Hình thức thanh toán: Trả sau
-* Cuối mỗi tháng, VNG Cloud Backup sẽ xuất hóa đơn dịch vụ, và người dùng sẽ tiến hành thanh toán hóa đơn tương tự các dịch vụ trả sau khác. Lưu ý rằng, một backup location sẽ tương ứng với 1 hóa đơn.
+* Cuối mỗi tháng, GreenNode Backup sẽ xuất hóa đơn dịch vụ, và người dùng sẽ tiến hành thanh toán hóa đơn tương tự các dịch vụ trả sau khác. Lưu ý rằng, một backup location sẽ tương ứng với 1 hóa đơn.
 
 ### Đối với trả trước
 
-* Đối tượng áp dụng: Người dùng trả trước tại VNG Cloud
+* Đối tượng áp dụng: Người dùng trả trước tại GreenNode
 * Hình thức thanh toán: [Tạm giữ credit (hold credit)](../../quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/thanh-toan/tam-giu-credit.md)
-  * Theo đó, người dùng cần chuẩn bị sẵn lượng credit đủ dùng trong tài khoản VNG Cloud, cứ mỗi ngày, hệ thống sẽ tiến hành tạm giữ credit dựa trên số usage thực tế của toàn bộ backup location.
-  * Trường hợp lượng credit trong tài khoản không đủ để tiến hành tạm giữ, VNG Cloud sẽ nhắc nhở và có các biện pháp xử lý nếu người dùng không chủ động nạp thêm credit.
-* Cuối mỗi tháng, VNG Cloud sẽ xuất hóa đơn dịch vụ, và người dùng sẽ tiến hành thanh toán hóa đơn tương tự các dịch vụ trả sau khác. Lưu ý rằng, một backup location sẽ tương ứng với 1 hóa đơn.
-  * Lượng credit được tạm giữ sẽ được dùng để thanh toán hóa đơn dịch vụ, nếu không đủ sẽ trừ thêm trong tài khoản VNG Cloud, nếu tạm giữ dư so với số thực tế, chúng tôi sẽ hoàn lại vào tài khoản VNG Cloud.
+  * Theo đó, người dùng cần chuẩn bị sẵn lượng credit đủ dùng trong tài khoản GreenNode, cứ mỗi ngày, hệ thống sẽ tiến hành tạm giữ credit dựa trên số usage thực tế của toàn bộ backup location.
+  * Trường hợp lượng credit trong tài khoản không đủ để tiến hành tạm giữ, GreenNode sẽ nhắc nhở và có các biện pháp xử lý nếu người dùng không chủ động nạp thêm credit.
+* Cuối mỗi tháng, GreenNode sẽ xuất hóa đơn dịch vụ, và người dùng sẽ tiến hành thanh toán hóa đơn tương tự các dịch vụ trả sau khác. Lưu ý rằng, một backup location sẽ tương ứng với 1 hóa đơn.
+  * Lượng credit được tạm giữ sẽ được dùng để thanh toán hóa đơn dịch vụ, nếu không đủ sẽ trừ thêm trong tài khoản GreenNode, nếu tạm giữ dư so với số thực tế, chúng tôi sẽ hoàn lại vào tài khoản GreenNode.

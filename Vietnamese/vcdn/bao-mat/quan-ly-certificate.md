@@ -35,6 +35,6 @@ Nếu chứng chỉ chưa sẳn sàng để dùng ngay, chọn **Save as Draft**
 {% hint style="info" %}
 **Chú ý:**
 
-* vCDN do VNG Cloud cung cấp là dịch vụ phân phối nội dung thông qua giao thức HTTP có hỗ trợ TLS/SSL (HTTPS). Do vậy, các TLS Certificate - được tải lên bởi khách hàng nhằm mục đích mã hóa kênh truyền HTTP giữa người dùng và hệ thống máy chủ CDN - đồng thời được lưu trữ và quản lý bởi khách hàng và VNG Cloud cho đến khi khách hàng thực hiện lệnh xóa thông qua giao diện Web Portal/API.
-* VNG Cloud cam kết không chia sẻ các TLS Certificate này cho bên thứ ba bất kỳ.
+* vCDN do GreenNode cung cấp là dịch vụ phân phối nội dung thông qua giao thức HTTP có hỗ trợ TLS/SSL (HTTPS). Do vậy, các TLS Certificate - được tải lên bởi khách hàng nhằm mục đích mã hóa kênh truyền HTTP giữa người dùng và hệ thống máy chủ CDN - đồng thời được lưu trữ và quản lý bởi khách hàng và GreenNode cho đến khi khách hàng thực hiện lệnh xóa thông qua giao diện Web Portal/API.
+* GreenNode cam kết không chia sẻ các TLS Certificate này cho bên thứ ba bất kỳ.
 {% endhint %}

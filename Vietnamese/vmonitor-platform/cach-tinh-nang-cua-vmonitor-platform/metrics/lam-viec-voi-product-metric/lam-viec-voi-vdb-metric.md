@@ -1,6 +1,6 @@
 # Làm việc với vDB-Metric
 
-Khi bạn tạo các vDB, hệ thống sẽ tự động thu thập các Metric và hiển thị ở tab Infrastructure List/vDB, giúp bạn có thể theo dõi được các vDB trên VNG Cloud hoàn toàn miễn phí
+Khi bạn tạo các vDB, hệ thống sẽ tự động thu thập các Metric và hiển thị ở tab Infrastructure List/vDB, giúp bạn có thể theo dõi được các vDB trên GreenNode hoàn toàn miễn phí
 
 <figure><img src="../../../../.gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>
 

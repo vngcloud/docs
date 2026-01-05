@@ -2,7 +2,7 @@
 
 ### Step 1: Create a Metric quota <a href="#batdauvoimetrics-buoc1-khoitaometricquota" id="batdauvoimetrics-buoc1-khoitaometricquota"></a>
 
-To start using the service, you need to create a Metric quota. A Metric quota is a term on the vMonitor Platform that represents a package for monitoring Metrics with a specific number of Resources and storage duration that you purchase on VNG Cloud. At any given time, you can own a Metric quota and use it to analyze data from your system.
+To start using the service, you need to create a Metric quota. A Metric quota is a term on the vMonitor Platform that represents a package for monitoring Metrics with a specific number of Resources and storage duration that you purchase on GreenNode. At any given time, you can own a Metric quota and use it to analyze data from your system.
 
 Perform the purchase of Metric Quota by following these steps:
 
@@ -16,7 +16,7 @@ Perform the purchase of Metric Quota by following these steps:
 8. Choose **Continue.**
 9. Perform the steps to **Checkout** the cart, and after successful payment, the **Metric quota** will be created.
 
-The method for calculating costs for each metric quota package is publicly available on the VNG Cloud homepage. Please refer to the Pricing Calculation.
+The method for calculating costs for each metric quota package is publicly available on the GreenNode homepage. Please refer to the Pricing Calculation.
 
 ***
 
@@ -27,7 +27,7 @@ Create a Service Account and attach the policy: <mark style="color:red;">**vMoni
 To create a service account, you need to access the IAM Portal:
 
 1. After successfully creating, you need to save the Client\_ID and Secret\_Key for the next step.
-2. Find and select **Policy:** **vMonitorMetricPush**, then click "**Create a Service Account**" to create a Service Account. The Policy: vMonitorMetricPush created by VNG Cloud only contains the exact permissions to push metrics to the system.
+2. Find and select **Policy:** **vMonitorMetricPush**, then click "**Create a Service Account**" to create a Service Account. The Policy: vMonitorMetricPush created by GreenNode only contains the exact permissions to push metrics to the system.
 3. Choose "**Create a Service Account**," enter a name for the Service Account, and click **Next Step** to assign permissions to the Service Account.
 
 ***

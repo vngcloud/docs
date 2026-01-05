@@ -18,7 +18,7 @@ Sử dụng hướng dẫn bên dưới để cài đặt Sigma Media Server:
 
 mà bạn mong muốn sử dụng cho server của bạn. Ngoài ra bạn cũng cần chọn Một Server Group đã tồn tại hoặc chọn **Dedicated SOFT ANTI AFFINITY group** để chúng tôi tự động tạo một server group mới.
 
-**Bước 4:** Tiến hành **thanh toán** như các tài nguyên bình thường trên VNG Cloud.
+**Bước 4:** Tiến hành **thanh toán** như các tài nguyên bình thường trên GreenNode.
 
 Lúc này, hệ thống **vServer** sẽ khởi tạo một Server tương ứng với cấu hình mà bạn lựa chọn. Hãy chờ đợi tới khi việc tạo server hoàn thành và tiếp tục các bước sau đây.
 

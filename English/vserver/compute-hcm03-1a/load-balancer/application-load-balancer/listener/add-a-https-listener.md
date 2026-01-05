@@ -22,7 +22,7 @@ Use this guide to add a new HTTPS listener to an existing Application Load Balan
 
 #### Additional Notes
 
-* **Certificate Management:** Ensure you have valid SSL/TLS certificates uploaded to your VNG Cloud account before creating an HTTPS listener.
+* **Certificate Management:** Ensure you have valid SSL/TLS certificates uploaded to your GreenNode account before creating an HTTPS listener.
 * **SNI (Server Name Indication):** SNI allows you to host multiple HTTPS websites on a single Load Balancer using different domain names and certificates.
 * **Client Certificate Authentication:** This feature is useful for applications that require strong client authentication.
 * **Default Pool:** As with HTTP listeners, the default pool serves as a fallback for requests that don't match any specific routing rules.

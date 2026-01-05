@@ -13,13 +13,13 @@ IAM Access Management lets you control who can access your cloud resources and w
 
 #### About IAM Policy <a href="#iamaccessmanagement-hieuveiampolicy" id="iamaccessmanagement-hieuveiampolicy"></a>
 
-Each policy includes one or more statements, and each statement contains the elements "Effect" (Allow or Deny), "Action" (Actions on the Resource), "Resource" (VNG Cloud resources), and optional "Condition" elements.
+Each policy includes one or more statements, and each statement contains the elements "Effect" (Allow or Deny), "Action" (Actions on the Resource), "Resource" (GreenNode resources), and optional "Condition" elements.
 
 **Product/Service**
 
 Specifying Product/Service when creating a Policy is mandatory, helping you limit permissions to a group of Resources under a specific Product/Service, ensuring smooth and safe operation.
 
-VNG Cloud products/services include: vServer, vStorage, vMonitor, vLB, vConsole, IAM, etc.
+GreenNode products/services include: vServer, vStorage, vMonitor, vLB, vConsole, IAM, etc.
 
 **Action**
 
@@ -53,7 +53,7 @@ A policy will include many Rules. Each Rule will include all components such as 
 
 #### Policy <a href="#iamaccessmanagement-phanloaichinhsach-policy" id="iamaccessmanagement-phanloaichinhsach-policy"></a>
 
-At VNG Cloud Service, we support 2 types of Policies, including:
+At GreenNode Service, we support 2 types of Policies, including:
 
-* **VNG Managed Policy:** These are IAM Policies created by default by the VNG Cloud IAM system. These Policies are managed by VNG Cloud itself to support users in quickly setting up the necessary access rights for IAM user accounts to resources of each specific Product&#x20;
+* **VNG Managed Policy:** These are IAM Policies created by default by the GreenNode IAM system. These Policies are managed by GreenNode itself to support users in quickly setting up the necessary access rights for IAM user accounts to resources of each specific Product&#x20;
 * **Customer Policy:** These are IAM Policies created by the Root user (or IAM user if they have permission). These Policies are managed directly by the user and can be adjusted at any time depending on usage needs.

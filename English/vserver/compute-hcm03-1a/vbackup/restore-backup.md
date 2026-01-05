@@ -1,8 +1,8 @@
 # Restore Backup
 
-Once a resource has been backed up at least once, it is considered protected and available for restoration using vBackup Follow these steps to restore the resource using the VNG Cloud console.
+Once a resource has been backed up at least once, it is considered protected and available for restoration using vBackup Follow these steps to restore the resource using the GreenNode console.
 
-If you are restoring a VNG Cloud virtual machine, you can perform a Full Restore to restore the virtual machine's entire system to a new virtual machine. Or, you can restore specific drives belonging to a virtual machine. Follow the steps below to finish restoring a virtual machine or your drive:
+If you are restoring a GreenNode virtual machine, you can perform a Full Restore to restore the virtual machine's entire system to a new virtual machine. Or, you can restore specific drives belonging to a virtual machine. Follow the steps below to finish restoring a virtual machine or your drive:
 
 ### **Virtual Server Recovery Process** <a href="#restorebackup-virtualserverrecoveryprocess" id="restorebackup-virtualserverrecoveryprocess"></a>
 

@@ -1,5 +1,5 @@
 ---
-description: Information about VNG Cloud Regions and Availability Zones
+description: Information about GreenNode Regions and Availability Zones
 ---
 
 # VNG Regions and Availability Zones
@@ -8,7 +8,7 @@ description: Information about VNG Cloud Regions and Availability Zones
 
 ### What is a Region?
 
-A Region is an independent geographic area where VNG Cloud deploys its infrastructure. Each region is designed to operate independently, ensuring your data is stored in the location you choose.
+A Region is an independent geographic area where GreenNode deploys its infrastructure. Each region is designed to operate independently, ensuring your data is stored in the location you choose.
 
 ### What is an Availability Zone (AZ)?
 
@@ -29,7 +29,7 @@ An Availability Zone is one or more discrete data centers within a region, equip
 | HAN         | Ha Noi      | HAN-1A                         | [https://han-1.console.vngcloud.vn/vserver/v-server/cloud-server](https://han-1.console.vngcloud.vn/vserver/v-server/cloud-server) |
 
 {% hint style="info" %}
-As of December 15, 2025, VNG Cloud supports 2 regions: Ho Chi Minh and Ha Noi.
+As of December 15, 2025, GreenNode supports 2 regions: Ho Chi Minh and Ha Noi.
 {% endhint %}
 
 ***

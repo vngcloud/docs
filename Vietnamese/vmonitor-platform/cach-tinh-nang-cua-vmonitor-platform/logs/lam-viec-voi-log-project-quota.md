@@ -2,7 +2,7 @@
 
 ### Tổng quan
 
-Một Log project là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát Logs với dung lượng và thời gian cụ thể mà bạn thực hiện mua trên VNG Cloud. Tại một thời điểm bạn có thể sở hữu một hoặc nhiều Log project song song và sử dụng chúng như một cách tổ chức tài nguyên cho các nhóm hay phòng ban sử dụng với mục đích khác nhau.
+Một Log project là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát Logs với dung lượng và thời gian cụ thể mà bạn thực hiện mua trên GreenNode. Tại một thời điểm bạn có thể sở hữu một hoặc nhiều Log project song song và sử dụng chúng như một cách tổ chức tài nguyên cho các nhóm hay phòng ban sử dụng với mục đích khác nhau.
 
 ***
 
@@ -21,7 +21,7 @@ Một Log project là một thuật ngữ trên vMonitor Platform thể hiện m
 9. Chọn **Period** nếu bạn là người dùng trả trước. Chúng tôi cung cấp các chu kỳ trả trước bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng.
 10. Chọn **Continue** và tiếp thực thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Log project** sẽ được khởi tạo.
 
-Cách tính chi phí cho mỗi gói log project được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+Cách tính chi phí cho mỗi gói log project được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 
@@ -48,7 +48,7 @@ Sau khi bạn khởi tạo Log project, bạn có thể xem thông tin gói Log 
 6. Lựa chọn thời gian mong muốn gia hạn tại cột Period. Khi bạn thực hiện chọn period, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ sử dụng mới và tổng số tiền bạn cần chi trả cho việc gia hạn **gói Log project**.
 7. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Log project** sẽ được gia hạn.
 
-Cách tính chi phí gia hạn cho mỗi gói Log project được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+Cách tính chi phí gia hạn cho mỗi gói Log project được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 
@@ -64,7 +64,7 @@ Cách tính chi phí gia hạn cho mỗi gói Log project được chúng tôi c
 6. Chọn **Resize.**
 7. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Log project** sẽ được tăng hạn mức.
 
-Cách tính chi phí tăng hạn mức cho mỗi gói Log project được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+Cách tính chi phí tăng hạn mức cho mỗi gói Log project được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 

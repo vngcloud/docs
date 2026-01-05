@@ -4,7 +4,7 @@ hidden: true
 
 # Cách tính phí
 
-Tại VNG Cloud, với sản phẩm vCloudStack mang đến cho khách hàng hai (02) gói mô hình sử dụng dịch vụ, tùy vào nhu cầu sử dụng và định hướng phát triển hệ thống mà khách hàng có thể cân nhắc quyết định nên sử dụng gói mô hình dịch vụ nào:
+Tại GreenNode, với sản phẩm vCloudStack mang đến cho khách hàng hai (02) gói mô hình sử dụng dịch vụ, tùy vào nhu cầu sử dụng và định hướng phát triển hệ thống mà khách hàng có thể cân nhắc quyết định nên sử dụng gói mô hình dịch vụ nào:
 
 * Mô hình High Scale
 * Mô hình HCI

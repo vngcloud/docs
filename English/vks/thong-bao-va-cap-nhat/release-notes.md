@@ -6,7 +6,7 @@ VKS (VNG Kubernetes Engine) has just released its latest update, bringing severa
 
 **Improvements:**
 
-* **Deprecation of Kubernetes version 1.28:** VNG Cloud will discontinue support for Kubernetes version 1.28. Starting from November 10, 2025, users will no longer be able to create new Kubernetes clusters using version 1.28 via the Portal, API, or Terraform. On November 24, 2025, all existing Kubernetes 1.28 clusters will be automatically upgraded to the next supported version.
+* **Deprecation of Kubernetes version 1.28:** GreenNode will discontinue support for Kubernetes version 1.28. Starting from November 10, 2025, users will no longer be able to create new Kubernetes clusters using version 1.28 via the Portal, API, or Terraform. On November 24, 2025, all existing Kubernetes 1.28 clusters will be automatically upgraded to the next supported version.
 
 If you are still running this version, please manually upgrade your clusters to a newer supported version before November 24, 2025.
 This change ensures that your Kubernetes environment remains up to date with the latest security patches and feature enhancements, delivering improved performance and reliability.
@@ -129,7 +129,7 @@ VKS (VNGCloud Kubernetes Service) has just released its latest update, bringing 
 
 **New features:**
 
-* **Network Type: Cilium Overlay, Cilium VPC Native Routing:** In addition to Calico Overlay, this release we have added two new network types: Cilium Overlay and Cilium VPC Native Routing. Cilium Overlay allows you to build flexible overlay networks, while Cilium VPC Native Routing integrates tightly with VNG Cloud's VPC, optimizing performance and security for your applications. For more details, please refer [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vks/network/cni) .
+* **Network Type: Cilium Overlay, Cilium VPC Native Routing:** In addition to Calico Overlay, this release we have added two new network types: Cilium Overlay and Cilium VPC Native Routing. Cilium Overlay allows you to build flexible overlay networks, while Cilium VPC Native Routing integrates tightly with GreenNode's VPC, optimizing performance and security for your applications. For more details, please refer [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vks/network/cni) .
 
 **Improve:**
 
@@ -146,7 +146,7 @@ VKS (VNGCloud Kubernetes Service) introduces the latest update to the existing V
 
 **New features:**
 
-* **Private Cluster**: Previously, public clusters on VKS were using Public IP addresses to communicate between nodes and the control plane. To improve the security of your cluster, we have launched the private cluster model. The Private Cluster feature helps your K8S cluster to be as secure as possible, all connections are completely private from the connection between the nodes to the control plane, the connection from the client to the control plane, or the connection from the nodes to other products and services in VNG Cloud such as: vStorage, vCR, vMonitor, VNGCloud APIs,... **Private Cluster is the ideal choice for services that require strict access control, ensuring compliance with regulations on security and data privacy**. For details on the two operating models of Cluster, you can refer to [here ](../mo-hinh-hoat-dong.md)and refer to the steps to create a private Cluster [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/khoi-tao-mot-private-cluster) .
+* **Private Cluster**: Previously, public clusters on VKS were using Public IP addresses to communicate between nodes and the control plane. To improve the security of your cluster, we have launched the private cluster model. The Private Cluster feature helps your K8S cluster to be as secure as possible, all connections are completely private from the connection between the nodes to the control plane, the connection from the client to the control plane, or the connection from the nodes to other products and services in GreenNode such as: vStorage, vCR, vMonitor, VNGCloud APIs,... **Private Cluster is the ideal choice for services that require strict access control, ensuring compliance with regulations on security and data privacy**. For details on the two operating models of Cluster, you can refer to [here ](../mo-hinh-hoat-dong.md)and refer to the steps to create a private Cluster [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/khoi-tao-mot-private-cluster) .
 
 ***
 

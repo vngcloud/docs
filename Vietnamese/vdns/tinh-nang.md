@@ -4,7 +4,7 @@ description: Giải pháp DNS mạnh mẽ cho hạ tầng Private Cloud
 
 # Tính năng
 
-vDNS là dịch vụ DNS được thiết kế đặc biệt cho môi trường Private Cloud trên VNG Cloud, cung cấp khả năng quản lý và phân giải tên miền một cách an toàn, linh hoạt và hiệu quả trong mạng riêng ảo (VPC).
+vDNS là dịch vụ DNS được thiết kế đặc biệt cho môi trường Private Cloud trên GreenNode, cung cấp khả năng quản lý và phân giải tên miền một cách an toàn, linh hoạt và hiệu quả trong mạng riêng ảo (VPC).
 
 **Các tính năng cơ bản của vDNS:**
 

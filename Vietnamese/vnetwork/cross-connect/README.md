@@ -32,7 +32,7 @@ Thực hiện việc tạo Cross Connect 1 để tạo tuyền kết nối giữ
 
 ***
 
-VNG Cloud cung cấp cho người dùng dịch vụ Cross Connect có thể thực hiện các tác vụ như sau:
+GreenNode cung cấp cho người dùng dịch vụ Cross Connect có thể thực hiện các tác vụ như sau:
 
 * [Tạo kết nối Cross Connect](tao-cross-connect.md);
 * [Tạo kết nối VPC giữa hai region](tao-ket-noi-vpc.md);

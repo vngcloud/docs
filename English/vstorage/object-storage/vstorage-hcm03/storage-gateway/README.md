@@ -1,6 +1,6 @@
 # Storage gateway
 
-Storage Gateway is a service that provides a connection gateway between customers' physical infrastructure and storage services in the cloud. Storage Gateway supports standard storage protocols such as NFS, SMB, and CIFS. With VNG Cloud's Storage Gateway, customers can perform configurations effortlessly through a web portal interface instead of dealing with complex commands.
+Storage Gateway is a service that provides a connection gateway between customers' physical infrastructure and storage services in the cloud. Storage Gateway supports standard storage protocols such as NFS, SMB, and CIFS. With GreenNode's Storage Gateway, customers can perform configurations effortlessly through a web portal interface instead of dealing with complex commands.
 
 Deployment Model of Storage Gateway:
 

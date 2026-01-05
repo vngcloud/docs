@@ -4,7 +4,7 @@ Dữ liệu người dùng (**UserData**) là nội dung thông tin tùy chỉnh
 
 Mục đích là cung cấp thêm dữ liệu cho Server để tùy chỉnh nhiều nhất có thể theo nhu cầu của ta, hạ tầng cloud vServer có hỗ trợ tình năng này.
 
-&#x20;VNG Cloud cho phép sử dụng các loại dữ liệu nhiều cách khác nhau, Mỗi loại dữ liệu sẽ được xử lý thường là dòng đầu tiên.
+&#x20;GreenNode cho phép sử dụng các loại dữ liệu nhiều cách khác nhau, Mỗi loại dữ liệu sẽ được xử lý thường là dòng đầu tiên.
 
 * Batch
 * PowerShell
@@ -222,14 +222,14 @@ Việc thực thi việc đổi tên máy chủ _set\_hostname_ hay chạy các 
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/73761115/image2024-3-12_10-31-40.png?version=1&#x26;modificationDate=1710214301000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-* Ta có thể tải lên (upload) file hoặc **điền những câu lệnh vào field nội dung** để thực thi việc cung cấp thông tin user vào Server. Tham khảo ở bên dưới mục "[Gợi ý điền câu lệnh cho UserData](userdata.md#userdata-goiydiencaulenhchouserdatasuggestscriptuserdata)", VNG Cloud cung cấp gợi ý mặc định câu lệnh scripts để tiện việc cấu hình UserData.
+* Ta có thể tải lên (upload) file hoặc **điền những câu lệnh vào field nội dung** để thực thi việc cung cấp thông tin user vào Server. Tham khảo ở bên dưới mục "[Gợi ý điền câu lệnh cho UserData](userdata.md#userdata-goiydiencaulenhchouserdatasuggestscriptuserdata)", GreenNode cung cấp gợi ý mặc định câu lệnh scripts để tiện việc cấu hình UserData.
 * Nếu thông tin người dùng UserData ở các tools đang sử dụng đã được mã hóa Base64 thì ta sẽ chọn vào "**User Data is base64 encoded**".
 
 ## **Gợi ý điền câu lệnh cho UserData** <a href="#userdata-goiydiencaulenhchouserdatasuggestscriptuserdata" id="userdata-goiydiencaulenhchouserdatasuggestscriptuserdata"></a>
 
 ***
 
-Khi tạo Server Windows, VNG Cloud cung cấp đoạn câu lệnh mặc định (Default Scripts) ngay tại trường User Data, bao gồm cả thông tin bản quyền hệ điều hành Windows mà ta có thể sử dụng ngay:
+Khi tạo Server Windows, GreenNode cung cấp đoạn câu lệnh mặc định (Default Scripts) ngay tại trường User Data, bao gồm cả thông tin bản quyền hệ điều hành Windows mà ta có thể sử dụng ngay:
 
 > `#ps1`
 >

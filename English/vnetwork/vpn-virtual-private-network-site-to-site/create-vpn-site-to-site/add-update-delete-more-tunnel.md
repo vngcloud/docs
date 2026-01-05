@@ -10,7 +10,7 @@ After successfully creating a VPN with the default tunnel configuration. Users c
 
 ## Access a VPN detail
 
-* Access VNG Cloud successfully, at the main dashboard, select **vNetwork** Service to redirect to vNetwork Dashboard or click here to access HCM03 vNetwork Dashboard [https://hcm-3-vnetwork.console.vngcloud.vn/overview](https://hcm-3-vnetwork.console.vngcloud.vn/overview)
+* Access GreenNode successfully, at the main dashboard, select **vNetwork** Service to redirect to vNetwork Dashboard or click here to access HCM03 vNetwork Dashboard [https://hcm-3-vnetwork.console.vngcloud.vn/overview](https://hcm-3-vnetwork.console.vngcloud.vn/overview)
 * On the left menu of the vNetwork Dashboard, choose the VPN Site To Site Menu, the VPN list will be shown at the center.
 * Select the VPN that needs to add more tunnels.
 

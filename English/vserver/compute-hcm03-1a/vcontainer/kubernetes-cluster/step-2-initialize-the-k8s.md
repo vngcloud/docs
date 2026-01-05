@@ -6,7 +6,7 @@ This topic provides an overview of available options and describes what to consi
 
 * An existing VPC and subnets meet K8S requirements. Before you deploy a Cluster for production use, we recommend that you have a good understanding of VPC and Subnet requirements. If you don't have a VPC and a Subnet, you can create them on the vServer's interface.
 * The kubectl command line tool is installed on your device. Instances can be the same or at most a minor instance earlier or later than your Cluster's Kubernetes instance. For example, if your Cluster instance is 1.23.16, then you can use kubectl version 1.22, 1.23 or 1.24 with it.
-* If you are using Kubernetes Cluster in the pfsense or Fortigate network layer, you need to Config MTU for FW types to 1450 according to the [MTU và “DF flag” best practice on VNG Cloud](https://docs.vngcloud.vn/vserver/vmarketplace/vmarketplace-giao-dien-cu/network-software-installation/pfsense-tren-hcm03/mtu-va-df-flag-best-practice-on-vng-cloud).
+* If you are using Kubernetes Cluster in the pfsense or Fortigate network layer, you need to Config MTU for FW types to 1450 according to the [MTU và “DF flag” best practice on GreenNode](https://docs.vngcloud.vn/vserver/vmarketplace/vmarketplace-giao-dien-cu/network-software-installation/pfsense-tren-hcm03/mtu-va-df-flag-best-practice-on-vng-cloud).
 * The main IAM account have the create and describe K8S permissions. For more information, see [IAM for vServer](../../identity-and-access-management-iam-for-vserver/actions-resources-and-required-conditions-for-vserver-access-decentralization.md).
 
 ***
@@ -16,7 +16,7 @@ This topic provides an overview of available options and describes what to consi
 1. Open the vServer console at: [https://hcm-3.console.vngcloud.vn/vserver/container/cluster](https://hcm-3.console.vngcloud.vn/vserver/container/cluster).
 2. Choose **Create a Kubernetes Cluster**
 3. On the Cluster **basic configuration settings** pag&#x65;**,** enter the following fields:<br>
-   * **Name** – Name for your Cluster. It must be unique in your VNG Cloud account. Names can only contain alphanumeric characters (a-z, A-Z, 0-9, '\_', '-'). Your input data length should be between 5 and 50. The name must be unique in the Region and VNG Cloud account you are creating the Cluster for.
+   * **Name** – Name for your Cluster. It must be unique in your GreenNode account. Names can only contain alphanumeric characters (a-z, A-Z, 0-9, '\_', '-'). Your input data length should be between 5 and 50. The name must be unique in the Region and GreenNode account you are creating the Cluster for.
    * **Kubernetes version** – The Kubernetes instance to use for your Cluster. We recommend choosing the latest version, unless you need an older version.
    * **Description** – Enter the information you want to note for the Cluster to create your own signature for easier management of them in the future.
    * **Number of Master nodes** – Enter the number of Master nodes for your Cluster, note that for non-HA (Highly available) you need to enter the number of 1 node and HA the number is 3 or 5 nodes.

@@ -9,7 +9,7 @@ AWS CLI là công cụ giao diện dòng lệnh, cho phép người dùng tươn
 {% hint style="info" %}
 #### ⚠️ Lưu ý quan trọng
 
-* Từ phiên bản **AWS CLI v2.23.0 trở lên**, AWS bắt đầu mặc định bật một thuật toán checksum mới là **`CRC64_NH`** cho các dịch vụ S3. **VNG Cloud khuyến nghị khách hàng nên sử dụng các phiên bản AWS CLI từ 2.23.0 trở về trước** để giảm lỗi không tương thích với một số API hoặc service của chúng tôi.
+* Từ phiên bản **AWS CLI v2.23.0 trở lên**, AWS bắt đầu mặc định bật một thuật toán checksum mới là **`CRC64_NH`** cho các dịch vụ S3. **GreenNode khuyến nghị khách hàng nên sử dụng các phiên bản AWS CLI từ 2.23.0 trở về trước** để giảm lỗi không tương thích với một số API hoặc service của chúng tôi.
 *   Nếu bạn vẫn muốn dùng phiên bản **AWS CLI mới nhất**, hãy thêm cấu hình này sau khi cài đặt:
 
     ```bash

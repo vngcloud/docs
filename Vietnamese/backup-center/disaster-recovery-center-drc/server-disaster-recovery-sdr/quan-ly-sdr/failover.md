@@ -31,7 +31,7 @@ Làm theo hướng dẫn dưới đây để thực hiện chuyển đổi dự 
 * **Trường hợp Failover Error:** Nếu quá trình Failover gặp lỗi, bạn có thể:
   * **Restart Replication:** Khởi động lại quá trình sao chép từ đầu và thử Failover lại sau.
   * **Thực hiện Failover lại:** Chọn một Recovery Point khác và thử Failover lại.
-  * **Liên hệ hỗ trợ:** Nếu không thể tự giải quyết, hãy liên hệ với đội ngũ hỗ trợ của VNG Cloud để được giúp đỡ.
+  * **Liên hệ hỗ trợ:** Nếu không thể tự giải quyết, hãy liên hệ với đội ngũ hỗ trợ của GreenNode để được giúp đỡ.
 
 **Bước 7: Kiểm tra và thay đổi Recovery Point (nếu cần)**
 

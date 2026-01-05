@@ -2,7 +2,7 @@
 
 ### **1. AI Platform Là Gì?**
 
-**AI Platform tại VNG Cloud** là một nền tảng điện toán đám mây được thiết kế để hỗ trợ **phát triển, huấn luyện, tối ưu hóa và triển khai mô hình AI** một cách linh hoạt và hiệu quả.
+**AI Platform tại GreenNode** là một nền tảng điện toán đám mây được thiết kế để hỗ trợ **phát triển, huấn luyện, tối ưu hóa và triển khai mô hình AI** một cách linh hoạt và hiệu quả.
 
 Với **AI Platform**, AI Engineer có thể **xây dựng và quản lý toàn bộ vòng đời của mô hình AI** – từ giai đoạn nghiên cứu, huấn luyện, tinh chỉnh, cho đến triển khai thực tế. AI Platform cung cấp tài nguyên tính toán mạnh mẽ, giúp tối ưu quá trình phát triển AI mà không cần đầu tư hạ tầng phần cứng đắt đỏ.
 

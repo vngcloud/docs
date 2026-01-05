@@ -1,6 +1,6 @@
 # Bước 1: Khởi tạo project
 
-Bắt đầu sử dụng dịch vụ, bạn cần tạo một project. Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên VNG Cloud. **Với Region HAN02, tại  một thời điểm&#x20;**<mark style="color:red;">**bạn có thể sở hữu tối đa 10 Project**</mark>**&#x20;và sử dụng chúng để tổ chức lưu trữ dữ liệu của bạn.**
+Bắt đầu sử dụng dịch vụ, bạn cần tạo một project. Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên GreenNode. **Với Region HAN02, tại  một thời điểm&#x20;**<mark style="color:red;">**bạn có thể sở hữu tối đa 10 Project**</mark>**&#x20;và sử dụng chúng để tổ chức lưu trữ dữ liệu của bạn.**
 
 Thực hiện tạo project theo các bước bên dưới:
 

@@ -1,7 +1,7 @@
 ---
 description: >-
   vNetwork is a network service that provides a secure and isolated network
-  environment for your virtual machines (VMs) in the VNG Cloud platform.
+  environment for your virtual machines (VMs) in the GreenNode platform.
 ---
 
 # vNetwork

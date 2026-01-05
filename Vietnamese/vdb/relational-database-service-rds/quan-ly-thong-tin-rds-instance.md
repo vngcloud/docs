@@ -1,6 +1,6 @@
 # Quản lý thông tin RDS Instance
 
-VNG Cloud vDB cung cấp các giao diện (dashboard) giúp bạn quản lý RDS Instance, các bản Backup & các Configuration Group một cách hiệu quả và tiện dụng.
+GreenNode vDB cung cấp các giao diện (dashboard) giúp bạn quản lý RDS Instance, các bản Backup & các Configuration Group một cách hiệu quả và tiện dụng.
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/2723044/image2019-6-24_14-31-31.png?version=1&#x26;modificationDate=1561361492000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
