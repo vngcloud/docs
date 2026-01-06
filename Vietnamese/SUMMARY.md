@@ -3,7 +3,7 @@
 * [🇻🇳 Greennode Help Center](README.md)
 * [Giới thiệu chung](gioi-thieu-chung/README.md)
   * [Về GreenNode](gioi-thieu-chung/ve-vng-cloud.md)
-  * [VNG Regions and Availability Zones](gioi-thieu-chung/vng-regions-and-availability-zones.md)
+  * [GreenNode Regions and Availability Zones](gioi-thieu-chung/vng-regions-and-availability-zones.md)
   * [Thông báo và cập nhật](gioi-thieu-chung/thong-bao-va-cap-nhat/README.md)
     * [2024](gioi-thieu-chung/thong-bao-va-cap-nhat/2024.md)
     * [2025](gioi-thieu-chung/thong-bao-va-cap-nhat/2025.md)
