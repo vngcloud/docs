@@ -65,3 +65,35 @@ Trong trường hợp cần xóa tài khoản, bạn cần thực hiện theo th
 Nhập mã bảo vệ và chọn "**Xóa tài khoản**"
 
 Trong vòng 3 ngày, bạn có thể hủy yêu cầu xóa tài khoản bằng cách chọn chức năng " Hủy yêu cầu xóa tài khoản". Nếu bạn không hủy yêu cầu, GreenNode sẽ thực hiện xóa tài khoản của bạn đồng thời tuân thủ quy định lưu trữ dữ liệu.
+
+## **Hạn chế xử lý dữ liệu cá nhân** <a href="#capnhatthongtintaikhoan-truonghop-xoataikhoan" id="capnhatthongtintaikhoan-truonghop-xoataikhoan"></a>
+
+Trong trường hợp cần hạn chế xử lý dữ liệu cá nhân, bạn cần thực hiện theo thứ tự sau
+
+**Bước 1**: Vào chức năng "**Cập nhật thông tin tài khoản**"
+
+**Bước 2**: chọn "**Hạn chế xử lý dữ liệu cá nhân**"
+
+<figure><img src="../.gitbook/assets/image (724).png" alt=""><figcaption></figcaption></figure>
+
+**Bước 3**: Xác nhận yêu cầu
+
+<figure><img src="../.gitbook/assets/image (738).png" alt=""><figcaption></figcaption></figure>
+
+Nhập mã bảo vệ và chọn "**Hạn chế xử lý dữ liệu cá nhân**"
+
+Trong vòng 3 ngày, bạn có thể hủy yêu cầu hạn chế xử lý dữ liệu cá nhân bằng cách chọn chức năng "Thu hồi yêu cầu". Nếu bạn không hủy yêu cầu, VNG Cloud sẽ thực hiện xóa tài khoản của bạn đồng thời tuân thủ quy định lưu trữ dữ liệu.
+
+## **Phản đối xử lý dữ liệu cá nhân** <a href="#capnhatthongtintaikhoan-truonghop-xoataikhoan" id="capnhatthongtintaikhoan-truonghop-xoataikhoan"></a>
+
+Trong trường hợp cần phản đối xử lý dữ liệu cá nhân, bạn cần thực hiện theo thứ tự sau
+
+**Bước 1**: Vào chức năng "**Cập nhật thông tin tài khoản**"
+
+**Bước 2**: chọn "**Phản đối xử lý dữ liệu cá nhân**"
+
+**Bước 3**: Xác nhận yêu cầu
+
+Nhập mã bảo vệ và chọn "**Phản đối** **xử lý dữ liệu cá nhân**"
+
+Trong vòng 3 ngày, bạn có thể hủy yêu cầu phản đối xử lý dữ liệu cá nhân bằng cách chọn chức năng "Thu hồi yêu cầu". Nếu bạn không hủy yêu cầu, VNG Cloud sẽ thực hiện xóa tài khoản của bạn đồng thời tuân thủ quy định lưu trữ dữ liệu.
