@@ -3,7 +3,7 @@
 * [🇬🇧 Greennode Help Center](README.md)
 * [Overview](overview/README.md)
   * [About GreenNode](overview/about-vng-cloud.md)
-  * [VNG Regions and Availability Zones](overview/vng-regions-and-availability-zones.md)
+  * [GreenNode Regions and Availability Zones](overview/vng-regions-and-availability-zones.md)
   * [Product Updates (All)](overview/product-updates-all/README.md)
     * [2024](overview/product-updates-all/2024.md)
     * [2025](overview/product-updates-all/2025.md)
