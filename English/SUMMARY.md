@@ -939,6 +939,7 @@
       * [Create resource](billing-management/experience-with-billing-and-payment/resource-lifecycle-management/create-resource.md)
       * [Resize resource configuration](billing-management/experience-with-billing-and-payment/resource-lifecycle-management/resize-resource-configuration.md)
       * [Renew resource](billing-management/experience-with-billing-and-payment/resource-lifecycle-management/renew-resource.md)
+      * [Renew expiring resources](billing-management/experience-with-billing-and-payment/resource-lifecycle-management/renew-expiring-resources.md)
       * [Auto-renew resources - policy & terms](billing-management/experience-with-billing-and-payment/resource-lifecycle-management/auto-renew-resources-policy-and-terms.md)
       * [Recover resource](billing-management/experience-with-billing-and-payment/resource-lifecycle-management/recover-resource.md)
       * [Delete resource](billing-management/experience-with-billing-and-payment/resource-lifecycle-management/delete-resource.md)
