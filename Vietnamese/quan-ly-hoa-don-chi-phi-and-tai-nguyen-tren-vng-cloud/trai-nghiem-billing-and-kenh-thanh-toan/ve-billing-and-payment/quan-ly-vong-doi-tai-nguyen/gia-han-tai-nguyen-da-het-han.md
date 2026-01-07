@@ -42,7 +42,7 @@ Tại thời điểm **T − 7 ngày**, hệ thống bắt đầu gửi email nh
 
 Sau thời điểm **T (ngày hết hạn)**, hệ thống tiếp tục gửi email nhắc nhở cho đến khi:
 
-* Tài nguyên được gia hạn, hoặc
+* Tài nguyên được gia hạn.
 * Tài nguyên bị thu hồi/xóa khỏi hệ thống.
 
 ### Gia hạn tài nguyên
