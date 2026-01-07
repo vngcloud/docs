@@ -1090,6 +1090,7 @@
         * [Khởi tạo tài nguyên](quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/quan-ly-vong-doi-tai-nguyen/khoi-tao-tai-nguyen.md)
         * [Thay đổi cấu hình tài nguyên](quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/quan-ly-vong-doi-tai-nguyen/thay-doi-cau-hinh-tai-nguyen.md)
         * [Gia hạn tài nguyên](quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/quan-ly-vong-doi-tai-nguyen/gia-han-tai-nguyen.md)
+        * [Gia hạn tài nguyên đã hết hạn](quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/quan-ly-vong-doi-tai-nguyen/gia-han-tai-nguyen-da-het-han.md)
         * [Tự động gia hạn tài nguyên - Chính sách và điều khoản](quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/quan-ly-vong-doi-tai-nguyen/tu-dong-gia-han-tai-nguyen-chinh-sach-va-dieu-khoan.md)
         * [Khôi phục tài nguyên](quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/quan-ly-vong-doi-tai-nguyen/khoi-phuc-tai-nguyen.md)
         * [Xóa tài nguyên](quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/quan-ly-vong-doi-tai-nguyen/xoa-tai-nguyen.md)
