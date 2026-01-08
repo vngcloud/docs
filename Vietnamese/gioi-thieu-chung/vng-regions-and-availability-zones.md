@@ -2,7 +2,7 @@
 description: Thông tin về các Regions và Availability Zones của GreenNode
 ---
 
-# VNG Regions and Availability Zones
+# GreenNode Regions và Availability Zones
 
 ## Tổng quan
 
@@ -16,7 +16,7 @@ Availability Zone là một hoặc nhiều data center riêng biệt trong một
 
 ### Quy tắc đặt tên
 
-* **Region**: Được đặt theo vị trí địa lý (VD: HCM - Ho Chi Minh, HAN - Ha Noi, BKK - Bangkok)
+* **Region**: Được đặt theo vị trí địa lý (VD: HCM - Ho Chi Minh, HAN - Ha Noi)
 * **AZ**: Kết hợp tên region + số thứ tự + chữ cái (VD: HCM-1A, HCM-1B, HAN-1A, BKK-1A)
 
 ***
@@ -52,7 +52,7 @@ URL của các service trong cùng 1 region sẽ giống nhau.
 
 {% tabs %}
 {% tab title="vServer" %}
-#### vServer
+**vServer**
 
 | Service                             | Global | HCM-1A | HCM-1B | HCM-1C | BKK-1A | HAN-1A | Console URL                                                                                                                                                                                                  |
 | ----------------------------------- | :----: | :----: | :----: | :----: | :----: | :----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -69,7 +69,7 @@ URL của các service trong cùng 1 region sẽ giống nhau.
 {% endtab %}
 
 {% tab title="vNetwork" %}
-#### vNetwork
+**vNetwork**
 
 | Service                               | Global | HCM-1A | HCM-1B | HCM-1C | BKK-1A | HAN-1A | Console URL                                                                                                      |
 | ------------------------------------- | :----: | :----: | :----: | :----: | :----: | :----: | ---------------------------------------------------------------------------------------------------------------- |
@@ -79,7 +79,7 @@ URL của các service trong cùng 1 region sẽ giống nhau.
 {% endtab %}
 
 {% tab title="vStorage" %}
-#### vStorage
+**vStorage**
 
 | Service          | Global | HCM-1A | HCM-1B | HCM-1C | BKK-1A | HAN-1A | Console URL                                                                                                          |
 | ---------------- | :----: | :----: | :----: | :----: | :----: | :----: | -------------------------------------------------------------------------------------------------------------------- |
@@ -89,7 +89,7 @@ URL của các service trong cùng 1 region sẽ giống nhau.
 {% endtab %}
 
 {% tab title="vDB" %}
-#### vDB (Database Service)
+**vDB (Database Service)**
 
 | Service                 | Global | HCM-1A | HCM-1B | HCM-1C | BKK-1A | HAN-1A | Console URL                                                    |
 | ----------------------- | :----: | :----: | :----: | :----: | :----: | :----: | -------------------------------------------------------------- |
@@ -100,7 +100,7 @@ URL của các service trong cùng 1 region sẽ giống nhau.
 {% endtab %}
 
 {% tab title="VKS" %}
-#### VKS (VNG Kubernetes Service)
+**VKS (VNG Kubernetes Service)**
 
 | Service                | Global | HCM-1A | HCM-1B | HCM-1C | BKK-1A | HAN-1A | Console URL                                                                                              |
 | ---------------------- | :----: | :----: | :----: | :----: | :----: | :----: | -------------------------------------------------------------------------------------------------------- |
@@ -109,7 +109,7 @@ URL của các service trong cùng 1 region sẽ giống nhau.
 {% endtab %}
 
 {% tab title="Backup Center" %}
-#### Backup Center
+**Backup Center**
 
 | Service                    | Global | HCM-1A | HCM-1B | HCM-1C | BKK-1A | HAN-1A | Console URL                                                                                                                              |
 | -------------------------- | :----: | :----: | :----: | :----: | :----: | :----: | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -119,7 +119,7 @@ URL của các service trong cùng 1 region sẽ giống nhau.
 {% endtab %}
 
 {% tab title="vMonitor" %}
-#### vMonitor Platform
+**vMonitor Platform**
 
 | Service            | Global | HCM-1A | HCM-1B | HCM-1C | BKK-1A | HAN-1A | Console URL                                                            |
 | ------------------ | :----: | :----: | :----: | :----: | :----: | :----: | ---------------------------------------------------------------------- |
@@ -130,7 +130,7 @@ URL của các service trong cùng 1 region sẽ giống nhau.
 {% endtab %}
 
 {% tab title="vCDN" %}
-#### vCDN
+**vCDN**
 
 | Service             | Global | HCM-1A | HCM-1B | HCM-1C | BKK-1A | HAN-1A | Console URL                                               |
 | ------------------- | :----: | :----: | :----: | :----: | :----: | :----: | --------------------------------------------------------- |
@@ -141,7 +141,7 @@ URL của các service trong cùng 1 region sẽ giống nhau.
 {% endtab %}
 
 {% tab title="Security & IAM" %}
-#### Security & IAM
+**Security & IAM**
 
 | Service | Global | HCM-1A | HCM-1B | HCM-1C | BKK-1A | HAN-1A | Console URL                                   |
 | ------- | :----: | :----: | :----: | :----: | :----: | :----: | --------------------------------------------- |
@@ -150,7 +150,7 @@ URL của các service trong cùng 1 region sẽ giống nhau.
 {% endtab %}
 
 {% tab title="Marketplace & AI" %}
-#### Marketplace & AI
+**Marketplace & AI**
 
 | Service          | Global | HCM-1A |    HCM-1B   |    HCM-1C   | BKK-1A | HAN-1A | Console URL                                                                                                              |
 | ---------------- | :----: | :----: | :---------: | :---------: | :----: | :----: | ------------------------------------------------------------------------------------------------------------------------ |
