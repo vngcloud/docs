@@ -25,9 +25,10 @@ Hiện tại có **2 nhóm model chính**:
 
 Áp dụng cho các model dạng:
 
-* Text generation
-* Chat / Completion
+* Chat
+* Completion
 * Embedding
+* Rerank
 * Speech-to-text / Text-to-speech _(nếu quy đổi sang tokens)_
 
 **Cách tính phí**
@@ -130,6 +131,9 @@ Sau khi recover:
 * Usage sẽ được:
   * Ghi nhận theo **thời gian thực**
   * **Tổng hợp và thanh toán vào cuối mỗi tháng**
+  *
+
+      <figure><img src="../../../.gitbook/assets/image (771).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
