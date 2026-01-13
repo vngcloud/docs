@@ -77,7 +77,7 @@ Phí được tính dựa trên:
 
 ***
 
-### 3. Nguyên tắc theo loại tài khoản
+### 3. **Quy Định Chi Tiết Theo Loại Tài Khoản**
 
 #### 3.1. Tài khoản Prepaid
 
