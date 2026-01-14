@@ -58,19 +58,19 @@ Lưu ý (\*)
 * Chi phí sử dụng tài nguyên sẽ được tính chính xác đến phút, tại thời điểm người dùng thực hiện hành động (khởi tạo, thay đổi cấu hình), trên đây chỉ là ví dụ mang tính chất tham khảo.
 * Khi người dùng thực hiện xóa tài nguyên K8s, hệ thống sẽ giữ lại con số sử dụng thực tế (3,600,000 VND như trên ví dụ), con số này sẽ được dùng để thanh toán hóa đơn vào kì thanh toán hằng tháng
 
-### 2. Dịch vụ/sản phẩm Snapshot <a href="#tamgiucredit-2.tamgiucreditdichvusnapshot" id="tamgiucredit-2.tamgiucreditdichvusnapshot"></a>
+### 2. Dịch vụ/sản phẩm Snapshot , Backup <a href="#tamgiucredit-2.tamgiucreditdichvusnapshot" id="tamgiucredit-2.tamgiucreditdichvusnapshot"></a>
 
-Lưu ý rằng, tại thời điểm kích hoạt dịch vụ Snapshot lần đầu tiên, người dùng sẽ không bị tính bất kì một khoản chi phí nào. Việc tạm giữ credit chỉ xảy ra mỗi ngày một lần, trong trường hợp tài khoản sử dụng có khởi tạo và lưu trữ các bản dữ liệu Snapshot. Tham khảo hướng dẫn bên dưới để hiểu thêm về cách triển khai tạm giữ credit đối với dịch vụ Snpashot:
+Lưu ý rằng, tại thời điểm kích hoạt dịch vụ Snapshot , Backup lần đầu tiên, người dùng sẽ không bị tính bất kì một khoản chi phí nào. Việc tạm giữ credit chỉ xảy ra mỗi ngày một lần, trong trường hợp tài khoản sử dụng có khởi tạo và lưu trữ các bản dữ liệu Snapshot , Backup . Tham khảo hướng dẫn bên dưới để hiểu thêm về cách triển khai tạm giữ credit đối với dịch vụ Snpashot , Backup :
 
-**Cách tính phí Snapshot**
+**Cách tính phí Snapshot , Backup**
 
-* **Công thức**: Chi phí của việc tạo bản snapshot được tính dựa trên kích thước của bản snapshot (theo đơn vị gigabyte) và thời gian sử dụng của nó (thường được đo bằng giờ).
-* **Thời gian sử dụng**: Người dùng sẽ được tính phí cho thời gian tồn tại của bản snapshot. Thời gian này được ghi nhận theo giờ.
-* **Ví dụ**: Nếu bạn có một bản snapshot có kích thước 100GB và giá đơn vị cho Dịch Vụ Snapshot là 7,7 VND cho mỗi GB-giờ, thì chi phí sẽ được tính như sau:
+* **Công thức**: Chi phí của việc tạo bản snapshot , backup  được tính dựa trên kích thước của bản snapshot , backup(theo đơn vị gigabyte) và thời gian sử dụng của nó (thường được đo bằng giờ).
+* **Thời gian sử dụng**: Người dùng sẽ được tính phí cho thời gian tồn tại của bản snapshot , backup. Thời gian này được ghi nhận theo giờ.
+* **Ví dụ**: Nếu bạn có một bản snapshot  có kích thước 100GB và giá đơn vị cho Dịch Vụ Snapshot hoặc Backup là 7,7 VND cho mỗi GB-giờ, thì chi phí sẽ được tính như sau:
   * Theo giờ: 7,7 VND \* 100 GB = 770 VND mỗi giờ.
   * Theo ngày: 770 VND \* 24 = 18,480 VND mỗi ngày.
   * Theo tháng: 18,480 \* 30 = 554,400 VND mỗi tháng.
-* **Lưu ý**: Giá đơn vị được cung cấp chỉ để tham khảo. Thời gian sử dụng thực tế của các bản snapshot được ghi nhận hàng giờ, dựa trên kích thước thực tế của các bản snapshot của bạn.
+* **Lưu ý**: Giá đơn vị được cung cấp chỉ để tham khảo. Thời gian sử dụng thực tế của các bản snapshot được ghi nhận hàng giờ, dựa trên kích thước thực tế của các bản snapshot, backup của bạn.
 
 **Tình huống sử dụng**
 
@@ -78,7 +78,7 @@ Lưu ý rằng, tại thời điểm kích hoạt dịch vụ Snapshot lần đ�
 * Bước 2: Khởi tạo và lưu trữ các bản Snapshot theo nhu cầu sử dụng. Ví dụ như sau:
   * 10am khởi tạo Snapshot dung lượng 10GB
   * 1pm khởi tạo thêm 10GB nữa, total Snapshot Size 20GB
-* Bước 3: Hệ thống ghi nhận dung lượng sử dụng Snapshot mỗi giờ 1 lần
+* Bước 3: Hệ thống ghi nhận dung lượng sử dụng  mỗi giờ 1 lần
 * Bước 4: Tạm giữ Credit mỗi ngày 1 lần dựa trên sử dụng thực tế. Cụ thể như sau:
   * Thời gian chạy của hệ thống: 9am ngày hôm sau
   * 10GB Snapshot Size cho 3 giờ sử dụng (từ 10am đến 1pm) = 7,7 \* 10 \* 3 = 231 VND
@@ -89,7 +89,7 @@ Lưu ý rằng, tại thời điểm kích hoạt dịch vụ Snapshot lần đ�
 **Lưu ý (\*)**
 
 * Hệ thống cần tạm giữ phần sử dụng thực tế và cả phần dự đoán sử dụng cho 3 ngày tiếp theo để đảm bảo tính an toàn và xuyên suốt khi sử dụng dịch vụ.
-* Công thức ước tính sử dụng cho 3 ngày tiếp theo được tính như sau: **TotalSnapshotSize \* Đơn giá VND \* 24h \* 3 days**
+* Công thức ước tính sử dụng cho 3 ngày tiếp theo được tính như sau: **TotalSize \* Đơn giá VND \* 24h \* 3 days**
 
 ### 3. Dịch vụ/sản phẩm Container Registry (vCR) <a href="#tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit" id="tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit"></a>
 
