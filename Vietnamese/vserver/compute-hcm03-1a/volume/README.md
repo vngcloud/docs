@@ -6,12 +6,12 @@ Volume là đối tượng trong môi trường ảo hoá chịu trách nhiệm 
 
 Khi sử dụng volume, các thông tin cần lưu ý sau:
 
-* Dung lượng tối đa cho một volume là 1TB
+* Dung lượng tối đa cho một volume tùy thuộc vào từng loại volume type.
 * Một volume nếu không có thuộc tính multi-attach chỉ có thể được gắn vào một máy chủ ảo tại bất kỳ thời điểm nào. Một volume có thuộc tính multi-attach có thể gắn vào nhiều máy chủ ảo đồng thời. Thuộc tính multi-attach có thể được chọn lúc tạo volume
 * Boot volume không thể bị gỡ khỏi máy chủ ảo
 * Data volume có thể được thao tác gắn vào hoặc gỡ khỏi các máy chủ ảo khác nhau
 * Bạn có thể chọn mức QoS cho volume theo thông tin Volume Type để giới hạn băng thông và IOPS
-* Bạn có thể lựa chọn chức năng mã hóa khi tạo volume để bảo vệ dữ liệu. GreenNode hỗ trợ mã hóa aes-xts-plan64 (128 bits)
+* Bạn có thể lựa chọn chức năng mã hóa khi tạo volume để bảo vệ dữ liệu. GreenNode hỗ trợ mã hóa aes-xts-plan64
 
 ***
 
@@ -22,7 +22,7 @@ Khi sử dụng volume, các thông tin cần lưu ý sau:
 Có 2 loại mục đích cho volume là boot volume và data volume. Với boot volume, bạn có thể tạo đồng thời trong quá trình tạo máy chủ ảo. Data volume có thể được tạo trong quá trình tạo máy chủ hoặc thao tác tạo độc lập từ trang quản lý volume.
 
 1. Vào GreenNode Portal console, đến trang Volume
-2. Tạo data volume, cung cấp các thông tin cần thiết như name, dung lượng, IOPS, các lựa chọn multi-attach và mã hóa
+2. Tạo data volume, cung cấp các thông tin cần thiết như name, dung lượng, IOPS và mã hóa
 3. Bạn có thể kiểm tra chi phí dự tính ở bảng bên phải, sau đó nhấn **Create**
 
 #### Gắn volume vào VM Instance <a href="#volume-ganvolumevaovminstance" id="volume-ganvolumevaovminstance"></a>
