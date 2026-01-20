@@ -16,12 +16,12 @@ Các tiêu chuẩn bảo mật được áp dụng trên IAM bao gồm:&#x20;
 
 Bằng cách tuân thủ các nguyên tắc và tiêu chuẩn bảo mật trên, các doanh nghiệp và tổ chức có thể nâng cao an toàn thông tin trên hệ thống IAM, bảo vệ danh tính và tài nguyên của người dùng, giảm thiểu rủi ro xâm nhập và vi phạm bảo mật, tăng cường uy tín và niềm tin của khách hàng và đối tác.
 
-Để bảo vệ thông tin của khách hàng và dữ liệu mà khách hàng sử dụng trên dịch vụ IAM, hiện tại VNG Cloud đang áp dụng các biện pháp kiểm soát bảo mật như:
+Để bảo vệ thông tin của khách hàng và dữ liệu mà khách hàng sử dụng trên dịch vụ IAM, hiện tại GreenNode đang áp dụng các biện pháp kiểm soát bảo mật như:
 
-* **Bảo mật quyền hạn truy cập:** VNG Cloud sử dụng chính IAM để quản lý quyền truy cập của người dùng vào các tài nguyên IAM. IAM cho phép các doanh nghiệp tạo và quản lý các chính sách truy cập cho từng tài nguyên IAM. Điều này giúp đảm bảo rằng chỉ những người có quyền truy cập cần thiết mới có thể truy cập vào các tài nguyên
-* **Bảo mật dữ liệu trên đường truyền:** VNG Cloud sử dụng HTTPS để mã hóa dữ liệu trên đường truyền. HTTPS là một giao thức bảo mật dựa trên HTTP, sử dụng mã hóa TLS/SSL để bảo vệ dữ liệu trong quá trình truyền.
-* **Bảo mật các thông tin nhạy cảm trên IAM:** VNG Cloud sẽ chịu trách nhiệm mã hóa các thông tin nhạy cảm tại máy chủ lưu trữ của mình. Dữ liệu sẽ được mã hóa bằng một key do VNG Cloud cung cấp.
+* **Bảo mật quyền hạn truy cập:** GreenNode sử dụng chính IAM để quản lý quyền truy cập của người dùng vào các tài nguyên IAM. IAM cho phép các doanh nghiệp tạo và quản lý các chính sách truy cập cho từng tài nguyên IAM. Điều này giúp đảm bảo rằng chỉ những người có quyền truy cập cần thiết mới có thể truy cập vào các tài nguyên
+* **Bảo mật dữ liệu trên đường truyền:** GreenNode sử dụng HTTPS để mã hóa dữ liệu trên đường truyền. HTTPS là một giao thức bảo mật dựa trên HTTP, sử dụng mã hóa TLS/SSL để bảo vệ dữ liệu trong quá trình truyền.
+* **Bảo mật các thông tin nhạy cảm trên IAM:** GreenNode sẽ chịu trách nhiệm mã hóa các thông tin nhạy cảm tại máy chủ lưu trữ của mình. Dữ liệu sẽ được mã hóa bằng một key do GreenNode cung cấp.
 
-VNG Cloud luôn nỗ lực để nâng cao các biện pháp bảo mật của mình để đảm bảo an toàn cho khách hàng.
+GreenNode luôn nỗ lực để nâng cao các biện pháp bảo mật của mình để đảm bảo an toàn cho khách hàng.
 
 <br>

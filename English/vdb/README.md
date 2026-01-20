@@ -1,6 +1,6 @@
 # vDB
 
-VNG CLOUD Database as a Service (vDB) is a service that allows easy setup, operation and expansion of enterprise databases on VNG CLOUD's cloud computing platform. vDB provides the ability to automate tasks such as hardware initialization, database installation, backup and recovery at a cost-effective level. When using vDB, customers can completely focus on building and running their applications.
+GreenNode Database as a Service (vDB) is a service that allows easy setup, operation and expansion of enterprise databases on GreenNode's cloud computing platform. vDB provides the ability to automate tasks such as hardware initialization, database installation, backup and recovery at a cost-effective level. When using vDB, customers can completely focus on building and running their applications.
 
 vDB includes many types of services for each type of database, currently we are providing:
 

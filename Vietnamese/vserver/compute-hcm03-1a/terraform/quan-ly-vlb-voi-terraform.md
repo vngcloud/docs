@@ -13,7 +13,7 @@ hoặc bạn có thể cấp quyền **vLBFullAccess** (nên có quyền **vLBRe
 
 > **Ghi chú:** Mỗi hành động quản lý tài nguyên khác nhau sẽ yêu cầu các quyền khác nhau, vì thế điều cần thiết là phải thiết lập một bộ phân quyền hợp lý phù hợp với nhu cầu kinh doanh của bạn.
 
-**Bước 3:** Tạo thư mục chứa terraform file và tải example từ VNG Cloud repo tại [đây](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples)
+**Bước 3:** Tạo thư mục chứa terraform file và tải example từ GreenNode repo tại [đây](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples)
 
 Sau khi tải thư mục Example về máy, người dùng mở file [_**variable.tf**_](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/variable.tf) _(theo đường dẫn **terraform-providder-vngcloud/ examples/** ),_ sau đó thay đổi các thông tin cần thiết như sau:
 
@@ -104,7 +104,7 @@ type       = "Layer 7"
 
 **Bước 7:** Khởi chạy terraform command
 
-* Sau khi hoàn tất các thông tin trên, để terraform khởi tạo và tải VNG Cloud provider về đồng thời thiết lập các thông tin cần thiết chạy lệnh bên dưới, lưu ý khi chạy cần đứng tại thư mục terraform-provider-vngcloud/ [**examples**](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples)/:&#x20;
+* Sau khi hoàn tất các thông tin trên, để terraform khởi tạo và tải GreenNode provider về đồng thời thiết lập các thông tin cần thiết chạy lệnh bên dưới, lưu ý khi chạy cần đứng tại thư mục terraform-provider-vngcloud/ [**examples**](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples)/:&#x20;
 
 | `terraform init` |
 | ---------------- |

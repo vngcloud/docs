@@ -2,7 +2,7 @@
 
 ## Tổng quan
 
-Dịch vụ vCloudstack là dịch vụ triển khai cơ sở hạ tầng và chạy các dịch vụ VNG Cloud tại chỗ nên theo dõi tình trạng hoạt động của toàn bộ cơ sở hạ tầng vật lý được xem là quan trọng. vCloudStack cho phép người dùng trải nghiệm việc kiểm soát tình trạng hoạt động của hệ thống trong giao diện Portal Admin Site. Toàn bộ thông tin sẽ tường minh và rõ ràng, giúp người quản trị dễ dàng nắm bắt tình trạng của tất cả thiết bị vật lý để có thể đề ra phương án nâng cấp hoặc bảo trì hệ thống một cách kịp thời.
+Dịch vụ vCloudstack là dịch vụ triển khai cơ sở hạ tầng và chạy các dịch vụ GreenNode tại chỗ nên theo dõi tình trạng hoạt động của toàn bộ cơ sở hạ tầng vật lý được xem là quan trọng. vCloudStack cho phép người dùng trải nghiệm việc kiểm soát tình trạng hoạt động của hệ thống trong giao diện Portal Admin Site. Toàn bộ thông tin sẽ tường minh và rõ ràng, giúp người quản trị dễ dàng nắm bắt tình trạng của tất cả thiết bị vật lý để có thể đề ra phương án nâng cấp hoặc bảo trì hệ thống một cách kịp thời.
 
 Bạn có thể tham khảo các các thông tin kiểm soát hạ tầng được mô tả bên dưới.
 

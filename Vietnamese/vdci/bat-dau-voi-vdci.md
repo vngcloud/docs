@@ -40,7 +40,7 @@ Sau khi được cấp quyền, người dùng đăng nhập vào Portal và ki�
    * **Tên mạng**: để dễ phân biệt (ví dụ: `vnet-project-a`)
 4. Nhấn **Xác nhận**
 
-> **CIDR sẽ được VNG Cloud tự động cấp phát.**\
+> **CIDR sẽ được GreenNode tự động cấp phát.**\
 > Nếu bạn có yêu cầu CIDR cụ thể hãy liên hệ bộ phận kỹ thuật để được hỗ trợ tùy chỉnh.
 
 ### **Bước 4: Tạo Dedicated Cloud Instance (vDCI Instance)**

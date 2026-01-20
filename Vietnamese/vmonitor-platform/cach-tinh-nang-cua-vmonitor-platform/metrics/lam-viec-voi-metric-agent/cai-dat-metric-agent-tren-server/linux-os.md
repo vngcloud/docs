@@ -15,7 +15,7 @@
 Để tạo service account bạn truy cập tại [đây](https://iam.console.vngcloud.vn/service-accounts),
 
 * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
-* Tìm và chọn **Policy:** **vMonitorMetricPush,** sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vMonitorMetricPush do VNG Cloud tạo ra chỉ chứa chính xác quyền đẩy metric về hệ thống
+* Tìm và chọn **Policy:** **vMonitorMetricPush,** sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vMonitorMetricPush do GreenNode tạo ra chỉ chứa chính xác quyền đẩy metric về hệ thống
 * Sau khi tạo thành công bạn cần phải lưu lại Client\_ID và Secret\_Key để thực hiện bước tiếp theo
 
 2. **Thay thế Client\_ID, Secret\_Key vào câu lệnh bên dưới và chạy trên server để cài đặt**
@@ -52,4 +52,4 @@ API_KEY=$API_KEY bash -c "$(curl -L https://raw.githubusercontent.com/vngcloud/v
 
 * Sau khi chạy câu lệnh và cài đặt thành công bạn sẽ thấy server ở trang Infrastructure List/Host
 
-<figure><img src="/broken/files/PYXaVHlZxVIoG94Y60wH" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

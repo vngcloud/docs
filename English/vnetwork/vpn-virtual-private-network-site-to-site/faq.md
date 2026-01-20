@@ -14,7 +14,7 @@ Maybe you did not add the route table at your VPC to routing traffic to go throu
 
 ## Example to config VPN in real world
 
-Yes, we have a [demo-site-to-site-vpn.md](demo-site-to-site-vpn.md "mention") that demo full steps of iniailize a connection between **PFsense** and VNG Cloud VPN. You can watch it here
+Yes, we have a [demo-site-to-site-vpn.md](demo-site-to-site-vpn.md "mention") that demo full steps of iniailize a connection between **PFsense** and GreenNode VPN. You can watch it here
 
 
 

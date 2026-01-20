@@ -4,9 +4,9 @@
 
 You can use 3 types of accounts to access vMonitor Platform. Details of these 3 types include:
 
-* **Root user account: The** [first initial](https://register.vngcloud.vn/signup) account to access VNG Cloud with full access to all resource services on VNG Cloud.
+* **Root user account: The** [first initial](https://register.vngcloud.vn/signup) account to access GreenNode with full access to all resource services on GreenNode.
 * **IAM user account (User account):** An account created from a single Root user account with access rights depending on the access permission policy set from the Root user account.
-* **Service account:** Account used by an application/machine, making authorized API calls and accessing specified resources on VNG Cloud.
+* **Service account:** Account used by an application/machine, making authorized API calls and accessing specified resources on GreenNode.
 
 Before you can use the two types of **IAM user accounts** and **Service Accounts** , you need to follow these steps:
 

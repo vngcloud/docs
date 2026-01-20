@@ -7,7 +7,7 @@ The following rules apply to naming a project in vStorage:
 * The project name must be between 1 (minimum) and 40 (maximum) characters long.
 * The project name can only include uppercase letters, lowercase letters (a-z, A-Z), numbers (0-9), dots (.), spaces ( ), underscores (\_), hyphens (-), and the @ symbol.
 * The project name should not contain sensitive information (such as IP addresses, account names, login passwords, etc.).
-* The project name must be unique within a VNG Cloud account, either within or outside a region, until the project is deleted. We recommend using the name of your business project or product as the name for the project stored in vStorage.
+* The project name must be unique within a GreenNode account, either within or outside a region, until the project is deleted. We recommend using the name of your business project or product as the name for the project stored in vStorage.
 
 #### Examples <a href="#projectnamingrules-examples" id="projectnamingrules-examples"></a>
 

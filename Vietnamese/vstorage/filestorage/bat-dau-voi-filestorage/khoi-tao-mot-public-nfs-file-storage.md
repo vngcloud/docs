@@ -10,7 +10,7 @@
 
 <figure><img src="../../../.gitbook/assets/image (818).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 3:** Tại màn hình khởi tạo File Storage, bạn cần nhập/ chọn:&#x20;
+**Bước 3:** Tại màn hình khởi tạo File Storage, bạn cần nhập/ chọn:
 
 * **File Storage name:** tên gợi nhớ của file storage. Tên file cần dài từ 5 tới 50 ký tự và có thể bao gồm các ký tự a-z, A-Z, 0-9, '-', '\_'
 * **Description**: nhập mô tả cho file storage.
@@ -18,7 +18,7 @@
 * **Protocol:** chọn NFS và version NFS mà bạn mong muốn
 * **Tag:** bạn có thể thêm các tag để đánh dầu file storage theo nhu cầu.
 
-<figure><img src="/broken/files/pkhrPe9gpPZKAurML2eh" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (341).png" alt=""><figcaption></figcaption></figure>
 
 * **File Storage Max quota:** trong bước khởi tạo file storage, bạn cần đặt một giới hạn quota tối đa cho file storage đó. Quota này có ý nghĩa chính là giới hạn dung lượng lưu trữ mà file storage có thể sử dụng, giúp quản lý tài nguyên hiệu quả. <mark style="color:red;">**Mức quota tối thiểu bạn cần chọn là 1 TB và mức quota tối đa chúng tôi cung cấp là 50 TB.**</mark> Nếu bạn có nhu cấu sử dụng nhiều hơn 50 TB cho một file storage, vui lòng liên hệ với chúng tôi.
 * **Network type**: lựa chọn network type mà bạn mong muốn. Ở ví dụ này, bạn có thể chọn Public.
@@ -47,7 +47,7 @@ Sau khi hệ thống khởi tạo xong File Storage của bạn, để lấy mou
 
 Các bước thực hiện mount FileStorage tới một server qua giao thức **NFS:**
 
-**Bước 1:** Cập nhật danh sách gói và cài đặt NFS client:&#x20;
+**Bước 1:** Cập nhật danh sách gói và cài đặt NFS client:
 
 * **Đối với Debian/Ubuntu:**
 
@@ -69,7 +69,7 @@ sudo yum update && sudo yum install nfs-utils
 sudo mkdir -p /mnt/demo
 ```
 
-**Bước 3:** Mount FileStorage volume:&#x20;
+**Bước 3:** Mount FileStorage volume:
 
 * Ví dụ lệnh bên dưới tôi mount FileStorage có name = demo\_test với thư mục mount = /mnt/demo
 

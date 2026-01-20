@@ -2,7 +2,7 @@
 
 ### Tổng quan
 
-Một Metric quota là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát Metric với số lượng Resource và thời gian lưu trữ cụ thể mà bạn thực hiện mua trên VNG Cloud. Tại một thời điểm bạn có thể sở hữu một Metric quota và sử dụng chúng để phân tích số liệu từ hệ thống của bạn.
+Một Metric quota là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát Metric với số lượng Resource và thời gian lưu trữ cụ thể mà bạn thực hiện mua trên GreenNode. Tại một thời điểm bạn có thể sở hữu một Metric quota và sử dụng chúng để phân tích số liệu từ hệ thống của bạn.
 
 ***
 
@@ -22,7 +22,7 @@ Một Metric quota là một thuật ngữ trên vMonitor Platform thể hiện 
 
 <mark style="color:red;">Tại một thời điểm, bạn chỉ có thể sở hữu một gói metric quota, nếu gói này không phù hợp với nhu cầu sử dụng của bạn, hãy thực hiện</mark> <mark style="color:red;"></mark><mark style="color:red;">**Gia hạn Metric quota**</mark> <mark style="color:red;"></mark><mark style="color:red;">hoặc</mark> <mark style="color:red;"></mark><mark style="color:red;">**Tăng giảm hạn mức Metric quota**</mark> <mark style="color:red;"></mark><mark style="color:red;">theo hướng dẫn của chúng tôi.</mark>
 
-Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 
@@ -49,7 +49,7 @@ Sau khi bạn khởi tạo Metric quota, bạn có thể xem thông tin gói Met
 6. Lựa chọn thời gian mong muốn gia hạn tại cột Period. Khi bạn thực hiện chọn period, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ sử dụng mới và tổng số tiền bạn cần chi trả cho việc gia hạn **gói Metric quota**.
 7. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Metric quota** sẽ được gia hạn.
 
-Cách tính chi phí gia hạn cho mỗi gói Metric quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+Cách tính chi phí gia hạn cho mỗi gói Metric quota được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 
@@ -65,7 +65,7 @@ Cách tính chi phí gia hạn cho mỗi gói Metric quota được chúng tôi 
 6. Chọn **Resize.**
 7. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Metric quota** sẽ được tăng hạn mức.
 
-Cách tính chi phí tăng hạn mức cho mỗi gói Metric quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+Cách tính chi phí tăng hạn mức cho mỗi gói Metric quota được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 

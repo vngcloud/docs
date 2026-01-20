@@ -4,13 +4,13 @@ IAM Identities are entities in the Identity and Access Management (IAM) system t
 
 #### Root User Account <a href="#iamidentities-rootuseraccount" id="iamidentities-rootuseraccount"></a>
 
-Root User Account is an entity you first create in VNG Cloud and use, by default has full access to all VNG Cloud products/services and resources in that account.
+Root User Account is an entity you first create in GreenNode and use, by default has full access to all GreenNode products/services and resources in that account.
 
 #### User Account <a href="#iamidentities-useraccount" id="iamidentities-useraccount"></a>
 
-IAM User Account is an entity that represents a user interacting with VNG Cloud on the Portal interface. An IAM User Account in VNG Cloud includes login information (username, password) and is denied access by default. IAM User Accounts are not separate accounts; they are users in the same Root User Account and do not need to have a payment method registered with VNG Cloud. Any activities performed by IAM User Accounts in the Root User account will be charged to that Root User account.
+IAM User Account is an entity that represents a user interacting with GreenNode on the Portal interface. An IAM User Account in GreenNode includes login information (username, password) and is denied access by default. IAM User Accounts are not separate accounts; they are users in the same Root User Account and do not need to have a payment method registered with GreenNode. Any activities performed by IAM User Accounts in the Root User account will be charged to that Root User account.
 
-If you have employees who need access to VNG Cloud, do not share the Root User account login information with them. Instead, create separate IAM User Accounts in the Root User account and grant different permissions to each IAM User Account. Learn more detailed instructions at:
+If you have employees who need access to GreenNode, do not share the Root User account login information with them. Instead, create separate IAM User Accounts in the Root User account and grant different permissions to each IAM User Account. Learn more detailed instructions at:
 
 * [Quản lý User Account](tai-khoan-user-accounts/).
 
@@ -22,7 +22,7 @@ IAM User Groups are collections of IAM User Accounts. IAM User Groups simplify p
 
 #### Service Account <a href="#iamidentities-serviceaccount" id="iamidentities-serviceaccount"></a>
 
-Service Account is an identity you can create under your Root User account with specific permissions. Service Account has some similarities to IAM User Account. Both Server Account and User Account are identities with permission policies that define what that identity can and cannot do with VNG Cloud resources. However, Service Accounts are identities used by applications or computers, not people, to make authorized API calls and access specific resources. Learn more detailed instructions at:
+Service Account is an identity you can create under your Root User account with specific permissions. Service Account has some similarities to IAM User Account. Both Server Account and User Account are identities with permission policies that define what that identity can and cannot do with GreenNode resources. However, Service Accounts are identities used by applications or computers, not people, to make authorized API calls and access specific resources. Learn more detailed instructions at:
 
 * [Quản lý Service Account](../../vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-tai-khoan-service-account.md)
 
@@ -43,7 +43,7 @@ vStorage credentials are a feature that is specific to the vStorage product/serv
 
 #### Identity Provider <a href="#iamidentities-identityprovider" id="iamidentities-identityprovider"></a>
 
-Identity Providers are services that allow users to authenticate their identity and access multiple applications and services with a single set of credentials, using authentication protocols to securely exchange identity information and manage access control policies. Our system currently supports SAML2 as the primary authentication protocol, facilitating secure identity exchange between IDPs (Authentication Providers) and VNG Cloud (Service Provider). SAML2 has proven to be effective in enabling single sign-on (SSO) and seamless access to multiple applications and services.
+Identity Providers are services that allow users to authenticate their identity and access multiple applications and services with a single set of credentials, using authentication protocols to securely exchange identity information and manage access control policies. Our system currently supports SAML2 as the primary authentication protocol, facilitating secure identity exchange between IDPs (Authentication Providers) and GreenNode (Service Provider). SAML2 has proven to be effective in enabling single sign-on (SSO) and seamless access to multiple applications and services.
 
 * To integrate with our system using SAML, you can use our SAML entity ID: https://signin.vngcloud.vn/auth/realms/iam
 * This URL acts as the endpoint to initiate the SAML authentication process and securely exchange identity information.&#x20;

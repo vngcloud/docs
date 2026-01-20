@@ -4,7 +4,7 @@
 
 ### **Tổng quan** <a href="#floatingip-tongquan" id="floatingip-tongquan"></a>
 
-FIP là địa chỉ IP NAT nằm trong cổng của VNG Cloud. Bằng NAT, các FIP được ánh xạ tới các giao diện mạng chính của các cá thể vServer. Bạn có thể kết hợp FIP với các phiên bản vServer nằm trong VPC để cho phép các Server này giao tiếp qua Internet. FIP là vô hình bên trong hệ điều hành của các phiên bản vServer.
+FIP là địa chỉ IP NAT nằm trong cổng của GreenNode. Bằng NAT, các FIP được ánh xạ tới các giao diện mạng chính của các cá thể vServer. Bạn có thể kết hợp FIP với các phiên bản vServer nằm trong VPC để cho phép các Server này giao tiếp qua Internet. FIP là vô hình bên trong hệ điều hành của các phiên bản vServer.
 
 ### **Hạn mức** <a href="#floatingip-hanmuc" id="floatingip-hanmuc"></a>
 
@@ -32,7 +32,7 @@ Floating IP được tạo kèm khi khởi tạo Server, tuy nhiên bạn có th
 
 * Nếu bản sao vServer của bạn không cần FIP nữa, bạn có thể tách FIP khỏi bản sao trong [Trang Server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server).
 * Bạn cũng có thể tách FIP khỏi phiên bản vServer trên [Trang Floating IP](https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip).
-* Đối với windows server có sử dụng license do VNG Cloud cung cấp, bạn không thể detach floating IP ra khỏi server để đảm bảo việc gia hạn license không bị gián đoạn.
+* Đối với windows server có sử dụng license do GreenNode cung cấp, bạn không thể detach floating IP ra khỏi server để đảm bảo việc gia hạn license không bị gián đoạn.
 
 
 

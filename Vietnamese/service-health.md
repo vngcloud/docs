@@ -2,16 +2,16 @@
 
 
 
-* Cung cấp thông tin về tình trạng sức khỏe của các dịch vụ VNG Cloud.
-* Người dùng VNG Cloud có thể chủ động vào trang “[Service Health](https://health.vngcloud.vn/)”để kiểm tra sức khỏe dịch vụ VNG Cloud đang sử dụng mà không cần đăng nhập hoặc đăng ký tài khoản sử dụng.
+* Cung cấp thông tin về tình trạng sức khỏe của các dịch vụ GreenNode.
+* Người dùng GreenNode có thể chủ động vào trang “[Service Health](https://health.vngcloud.vn/)”để kiểm tra sức khỏe dịch vụ GreenNode đang sử dụng mà không cần đăng nhập hoặc đăng ký tài khoản sử dụng.
 
-### **Xem bảng sức khỏe dịch vụ VNG Cloud**
+### **Xem bảng sức khỏe dịch vụ GreenNode**
 
 * Vào trang [https://health.vngcloud.vn/](https://health.vngcloud.vn/)
 * Thông tin về sức khỏe dịch vụ đang thể hiện 14 ngày gần nhất, các sự cố hoặc vấn đề dịch vụ được liệt kê theo thời gian mặc định 14 ngày, người dùng có thể chọn xem
   *   **Thông tin tổng quát**
 
-      \-  Tổng số dịch dịch vụ hiện có của VNG Cloud
+      \-  Tổng số dịch dịch vụ hiện có của GreenNode
 
       \-  Tổng số sự cố theo thời gian gần nhất mặc định
 
@@ -47,7 +47,7 @@
 
 * Tìm dịch vụ muốn xem sức khỏe theo thứ tự sau:
 * Nhập khoảng thời gian mong muốn tra cứu
-* Tại ô tìm kiếm: nhập tên dịch vụ mong muốn, nếu không nhập tại bảng chi tiết sẽ hiển thị toàn bộ dịch vụ của VNG Cloud
+* Tại ô tìm kiếm: nhập tên dịch vụ mong muốn, nếu không nhập tại bảng chi tiết sẽ hiển thị toàn bộ dịch vụ của GreenNode
 * Nhấn vào biểu tượng tìm kiếm
 * Di chuyển đến ngày có màu cam hoặc xám, nhấn chuột để vào màn hình chi tiết sự cố       &#x20;
 

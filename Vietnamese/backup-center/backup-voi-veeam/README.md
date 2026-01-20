@@ -6,13 +6,13 @@
 
 **Veeam** hỗ trợ nhiều nền tảng ảo hóa khác nhau, cũng như nhiều nền tảng lưu trữ dữ liệu và điện toán đám mây. Điểm mạnh của Veeam là khả năng tích hợp cao, dễ dàng quản lý, và cung cấp khả năng phục hồi dữ liệu nhanh chóng để đảm bảo tính liên tục cho doanh nghiệp.
 
-Hệ thống lưu trữ của **VNG Cloud** cũng là dịch vụ mà được nhiều doanh nghiệp sử dụng để sao lưu dữ liệu, nhất là việc tích hợp sao lưu dữ liệu cùng Veeam. Do đó, hệ thống VNG Cloud mang đến những hỗ trợ tính năng để hỗ trợ cho khách hàng được sao lưu một cách bảo mật và an toàn nhất.
+Hệ thống lưu trữ của **GreenNode** cũng là dịch vụ mà được nhiều doanh nghiệp sử dụng để sao lưu dữ liệu, nhất là việc tích hợp sao lưu dữ liệu cùng Veeam. Do đó, hệ thống GreenNode mang đến những hỗ trợ tính năng để hỗ trợ cho khách hàng được sao lưu một cách bảo mật và an toàn nhất.
 
 ***
 
-## VNG Cloud hỗ trợ tính năng sao lưu
+## GreenNode hỗ trợ tính năng sao lưu
 
-Như đã nói, hệ thống VNG Cloud đem đến cho khách hàng những tính năng hỗ trợ việc sao lưu dữ liệu:
+Như đã nói, hệ thống GreenNode đem đến cho khách hàng những tính năng hỗ trợ việc sao lưu dữ liệu:
 
 <table><thead><tr><th width="81">STT</th><th width="185">Tính năng hỗ trợ</th><th>Mô tả</th></tr></thead><tbody><tr><td>1</td><td><strong>Object Lock</strong></td><td>Hệ thống lưu trữ sẽ làm việc và thiết lập Object Lock. Đây là  tính năng quan trọng vì sẽ kích hoạt được chức năng Immutable trên Veeam, chống lại việc xóa hay thay đổi dữ liệu sao lưu từ các tác nhân độc hại như ransomware.</td></tr><tr><td>2</td><td><strong>Object Tag</strong></td><td>Tính năng gắn tag vào Object, cho phép người dùng xem/tạo/xóa Tag lên Object.</td></tr><tr><td>3</td><td><strong>Bucket Tag</strong></td><td>Tính năng gắn tag vào Bucket (Container), cho phép người dùng xem/tạo/xóa Tag lên Bucket (Container).</td></tr><tr><td>4</td><td><strong>Bucket Replication</strong></td><td>Tính năng lưu trữ tương thích S3, cho phép việc tự đồng sao chép dữ liệu từ 1 bucket (nguồn) sag một bucket khác (đích), tính năng này đảm bảo độ bền, tính sẵn sàng và dự phòng của dữ liệu. Hỗ trợ sao chép các phiên bản (Versioning) để đảm bảo tất cả các phiên bản của một đối tượng đều được sao chéo sang bucket đích.</td></tr><tr><td>5</td><td><strong>Bucket Lifecycle</strong></td><td>Tính năng trong S3, cho phép người dùng định nghĩa các quy tắc (rules) để thực hiện các hành động như chuyển (transit) dự liệu sang nơi khác hoặc xóa dự liệu sau khoản thời gian xác định (expiration).</td></tr><tr><td>6</td><td><strong>Bucket Notifications</strong></td><td>Cho phép người dùng thiết lập cấu hình các thông báo tự động khi có những sự kiện (events) xảy ra trên bucket như: tạo Object, xóa Object, phục hồi Object...  </td></tr><tr><td>7</td><td><strong>Bucket Policies</strong></td><td>Cho phép người dùng quản lý kiểm soát quyền truy cập vào các bucket và các Object trong bucket đó. </td></tr></tbody></table>
 

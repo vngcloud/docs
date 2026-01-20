@@ -2,7 +2,7 @@
 
 ### Bước 1: Khởi tạo Log project <a href="#batdauvoilogs-buoc1-khoitaologproject" id="batdauvoilogs-buoc1-khoitaologproject"></a>
 
-Bắt đầu sử dụng dịch vụ, bạn cần tạo một Log project. Một Log project là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát Logs với dung lượng và thời gian cụ thể mà bạn thực hiện mua trên VNG Cloud. Tại một thời điểm bạn có thể sở hữu một hoặc nhiều Log project song song và sử dụng chúng như một cách tổ chức tài nguyên cho các nhóm hay phòng ban sử dụng với mục đích khác nhau.
+Bắt đầu sử dụng dịch vụ, bạn cần tạo một Log project. Một Log project là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát Logs với dung lượng và thời gian cụ thể mà bạn thực hiện mua trên GreenNode. Tại một thời điểm bạn có thể sở hữu một hoặc nhiều Log project song song và sử dụng chúng như một cách tổ chức tài nguyên cho các nhóm hay phòng ban sử dụng với mục đích khác nhau.
 
 Thực hiện tạo project theo các bước bên dưới:
 
@@ -16,7 +16,7 @@ Thực hiện tạo project theo các bước bên dưới:
 8. Chọn **Buy Log Quota.**
 9. Thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Log project** sẽ được khởi tạo.
 
-Cách tính chi phí cho mỗi gói log project được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../vstorage/object-storage/vstorage-hcm03/cach-tinh-phi/).
+Cách tính chi phí cho mỗi gói log project được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../../vstorage/object-storage/vstorage-hcm03/cach-tinh-phi/).
 
 ***
 
@@ -62,14 +62,11 @@ sudo ./filebeat.sh <path-to-file-log>
 Để thực hiện thống kê log bằng Dashboard, hãy làm theo hướng dẫn bên dưới:
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Chọn **Dashboard.**
-2. Chọn **Create a Dashboard.**&#x20;
+2. Chọn **Create a Dashboard.**
 3. Trong màn hình dashboard details, chọn **Add a widget ⇒** chọn **Log** và chỉnh sửa query theo nhu cầu của bạn.
 
-<figure><img src="/broken/files/OkKGNEtoWufeDePWhsJV" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (459).png" alt=""><figcaption></figcaption></figure>
 
 4. Bạn có thể thêm, xoá, chỉnh sửa hoặc thay đổi vị trí các widget để phù hợp.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
-
-
-
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>

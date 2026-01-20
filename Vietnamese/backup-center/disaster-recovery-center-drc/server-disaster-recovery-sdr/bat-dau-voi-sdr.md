@@ -1,11 +1,11 @@
 # Bắt đầu với SDR
 
-Server Disaster Recovery (SDR) là giải pháp quan trọng để đảm bảo tính liên tục cho hoạt động kinh doanh của bạn trong trường hợp xảy ra sự cố không mong muốn. Dưới đây là hướng dẫn chi tiết để bạn bắt đầu sử dụng tính năng Server DR trên VNG Cloud, đi qua các tính năng chính và cách thức hoạt động của chúng.
+Server Disaster Recovery (SDR) là giải pháp quan trọng để đảm bảo tính liên tục cho hoạt động kinh doanh của bạn trong trường hợp xảy ra sự cố không mong muốn. Dưới đây là hướng dẫn chi tiết để bạn bắt đầu sử dụng tính năng Server DR trên GreenNode, đi qua các tính năng chính và cách thức hoạt động của chúng.
 
-## **1. Truy cập VNG Cloud Console:**
+## **1. Truy cập GreenNode Console:**
 
 * Truy cập vào bảng điều khiển Server Disaster Recovery tại đây:&#x20;
-* Ban sẽ được điều hướng đến trang đăng nhập tài khoản VNG Cloud. Xem hướng dẫn chi tiết [cách đăng nhập vào VNG Cloud](../../../identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md) với tài khoản IAM User và tài khoản Root User
+* Ban sẽ được điều hướng đến trang đăng nhập tài khoản GreenNode. Xem hướng dẫn chi tiết [cách đăng nhập vào GreenNode](../../../identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md) với tài khoản IAM User và tài khoản Root User
 
 ## **2. Kích hoạt dịch vụ Snapshot**
 
@@ -56,8 +56,8 @@ Nếu bạn chưa kích hoạt dịch vụ Snapshot, SDR sẽ tự động kích
 
 **Lưu ý:**
 
-* Hãy đảm bảo bạn đã đọc và hiểu rõ các chính sách và điều khoản sử dụng dịch vụ Disaster Recovery của VNG Cloud.
-* Trong quá trình sử dụng, nếu có bất kỳ thắc mắc hoặc cần hỗ trợ, bạn có thể liên hệ với đội ngũ hỗ trợ kỹ thuật của VNG Cloud.
+* Hãy đảm bảo bạn đã đọc và hiểu rõ các chính sách và điều khoản sử dụng dịch vụ Disaster Recovery của GreenNode.
+* Trong quá trình sử dụng, nếu có bất kỳ thắc mắc hoặc cần hỗ trợ, bạn có thể liên hệ với đội ngũ hỗ trợ kỹ thuật của GreenNode.
 
 Tham khảo thêm các hướng dẫn chi tiết về các tính năng của Server Disaster Recovery tại:
 

@@ -59,7 +59,7 @@ Bổ sung access log cho HCM, giúp theo dõi và phân tích lưu lượng chi 
 
 **Tháng 9, 2025**
 
-#### **VKS (VNG Cloud Kubernetes Service) - Tự động xóa cluster không có node active sau 30 ngày (Cải tiến hệ thống):**&#x20;
+#### **VKS (GreenNode Kubernetes Service) - Tự động xóa cluster không có node active sau 30 ngày (Cải tiến hệ thống):**&#x20;
 
 Hệ thống sẽ tự động quét và xóa các cluster không có node nào active trong vòng 30 ngày. Trong thời hạn quét và trước khi xóa, email cảnh báo sẽ được gửi đến Khách hàng để đảm bảo Khách hàng có thể chủ động xử lý nếu cần giữ lại cluster – đảm bảo an toàn và minh bạch trong quá trình quản lý.. Việc nâng cấp này giúp Quý Khách Hàng tiết kiệm chi phí vận hành và tránh lãng phí tài nguyên do các cluster không còn hoạt động.
 {% endtab %}
@@ -82,7 +82,7 @@ _Như vậy, đến nay, AI Gateway đã hỗ trợ các tính năng bao gồm: 
 
 #### **vNetwork - tích hợp vDNS cho dịch vụ Endpoint**
 
-vDNS là dịch vụ DNS (Domain Name System), được thiết kế đặc biệt cho môi trường Private Cloud trên VNG Cloud, cung cấp khả năng quản lý và phân giải tên miền một cách an toàn, linh hoạt và hiệu quả trong mạng riêng ảo (VPC). vDNS được tích hợp chặt chẽ với các dịch vụ khác của VNG Cloud, tạo thành một hệ sinh thái hoàn chỉnh và mạnh mẽ cho hạ tầng trực tuyến của khách hàng. Trước đây, vDNS đã hỗ trợ tích hợp với các dịch vụ gồm vLB (Load Balancing) ,VKS. Với bản cập nhật lần này, việc tích hợp thêm dịch vụ Endpoint, sẽ giúp kết nối giữa VPC với các dịch vụ VNG Cloud gồm HCM-03 (vStorage, vMonitor, vServer, vCR, IAM) và HCM-04 (vStorage).
+vDNS là dịch vụ DNS (Domain Name System), được thiết kế đặc biệt cho môi trường Private Cloud trên GreenNode, cung cấp khả năng quản lý và phân giải tên miền một cách an toàn, linh hoạt và hiệu quả trong mạng riêng ảo (VPC). vDNS được tích hợp chặt chẽ với các dịch vụ khác của GreenNode, tạo thành một hệ sinh thái hoàn chỉnh và mạnh mẽ cho hạ tầng trực tuyến của khách hàng. Trước đây, vDNS đã hỗ trợ tích hợp với các dịch vụ gồm vLB (Load Balancing) ,VKS. Với bản cập nhật lần này, việc tích hợp thêm dịch vụ Endpoint, sẽ giúp kết nối giữa VPC với các dịch vụ GreenNode gồm HCM-03 (vStorage, vMonitor, vServer, vCR, IAM) và HCM-04 (vStorage).
 
 #### **vStorage – Sử dụng tính năng Lifecycle**
 
@@ -112,13 +112,13 @@ Tính năng hỗ trợ Multi-AZ này giúp Quý Khách Hàng chủ động hơn 
 
 **AI STACK**
 
-VNGCloud cung cấp một nền tảng AI toàn diện giúp doanh nghiệp triển khai, tích hợp và vận hành các ứng dụng Generative AI một cách dễ dàng, bảo mật và hiệu quả. AI Stack của VNGCloud được thiết kế theo hướng modular, linh hoạt và tối ưu cho cả đội ngũ kỹ thuật và nhà quản lý.
+GreenNode cung cấp một nền tảng AI toàn diện giúp doanh nghiệp triển khai, tích hợp và vận hành các ứng dụng Generative AI một cách dễ dàng, bảo mật và hiệu quả. AI Stack của GreenNode được thiết kế theo hướng modular, linh hoạt và tối ưu cho cả đội ngũ kỹ thuật và nhà quản lý.
 
 Hệ sinh thái các dịch vụ chính của AI stack bao gồm:
 
-* **VKS (VNGCloud Kubernetes Service):** là dịch vụ Kubernetes được quản lý toàn diện.Tích hợp GPU, khả năng autoscaling, giám sát tài nguyên và bảo mật. Giúp tối ưu cho AI workloads cần GPU, nhưng cũng phù hợp để triển khai ứng dụng web, microservices và backend quy mô lớn. Qua đó, giúp doanh nghiệp nhanh chóng triển khai ứng dụng mà không cần tự xây dựng và duy trì hạ tầng. Tài liệu tham khảo [tại đây](../../vks/)
+* **VKS (GreenNode Kubernetes Service):** là dịch vụ Kubernetes được quản lý toàn diện.Tích hợp GPU, khả năng autoscaling, giám sát tài nguyên và bảo mật. Giúp tối ưu cho AI workloads cần GPU, nhưng cũng phù hợp để triển khai ứng dụng web, microservices và backend quy mô lớn. Qua đó, giúp doanh nghiệp nhanh chóng triển khai ứng dụng mà không cần tự xây dựng và duy trì hạ tầng. Tài liệu tham khảo [tại đây](../../vks/)
 * vDB **OpenSearch:** Vector Database dưới dạng dịch vụ, giúp Hỗ trợ PostgreSQL(**pgvector)** và **OpenSearch** làm vector database.Hỗ trợ triển khai mô hình **RAG (Retrieval-Augmented Generation)** nhanh chóng.Giúp mô hình GenAI hiểu và khai thác dữ liệu doanh nghiệp theo ngữ cảnh. Tài liệu tham khảo [tại đây](../../vdb/opensearch-cluster-database-ods/)
-* **AI Platform:** Cung cấp môi trường để **thử nghiệm (notebook )**, **fine-tune** và **inference** các mô hình AI ngay trên nền tảng GPU của VNGCloud. Tài liệu tham khảo [tại đây](../../ai-stack/ai-platform/)
+* **AI Platform:** Cung cấp môi trường để **thử nghiệm (notebook )**, **fine-tune** và **inference** các mô hình AI ngay trên nền tảng GPU của GreenNode. Tài liệu tham khảo [tại đây](../../ai-stack/ai-platform/)
 * **AI Gateway:** là Cổng truy cập quản trị tập trung duy nhất cho nhiều mô hình AI, hỗ trợ routing thông minh và caching để tối ưu hiệu năng và chi phí. Giúp theo dõi truy cập, sinh audit logs, giám sát hành vi sử dụng qua metrics và alerts. Tài liệu tham khảo [tại đây](../../ai-stack/ai-gateway/)
 * **Model-as-a-Service:** Hỗ trợ truy cập hơn đa dạng **mô hình GenAI** hàng đầu như GPT, Claude, Gemini, DeepSeek... chỉ với 1 API thống nhất. Tài liệu tham khảo [tại đây](../../ai-stack/ai-platform/model-as-a-service/)
 

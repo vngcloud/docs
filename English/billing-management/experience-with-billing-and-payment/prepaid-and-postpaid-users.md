@@ -5,7 +5,7 @@ Use this document to better understand the types of resource usage for different
 * **Prepaid users:** Users who must pay for resource usage before they are allowed to use them. Payment for resource usage is based on the configuration and time they want to use (they need to determine the time to stop using resources).&#x20;
 * **Postpaid users:** Users who are allowed to use resources first and pay later, based on the actual resource usage cost. The amount to be paid will be determined at the end of each month until the user stops using the resource.&#x20;
 
-Let's take a look at some differences in concepts, rights, and functions between these two types of users for VNG Cloud services, such as:&#x20;
+Let's take a look at some differences in concepts, rights, and functions between these two types of users for GreenNode services, such as:&#x20;
 
 * Process actions on resources: Create, Resize, Renew, Recover, Delete.
 * Resource provisioning process.
@@ -27,7 +27,7 @@ Let's take a look at some differences in concepts, rights, and functions between
 
 * **Prepaid users:**
   * After successful payment confirmation, the Product team will provide resources according to the configuration requested by the user.&#x20;
-  * During the resource provisioning process, if there is a process error, the system will refund the user's previously paid service fee. The refunded money will be converted into Credit and transferred to the VNG Cloud wallet.&#x20;
+  * During the resource provisioning process, if there is a process error, the system will refund the user's previously paid service fee. The refunded money will be converted into Credit and transferred to the GreenNode wallet.&#x20;
 * **Postpaid users:**&#x20;
   * At the "Confirmation" step, the Product team will provide resources according to the user's requested configuration, and the system will record the start time of resource usage.
 
@@ -56,4 +56,4 @@ Basically, the features that users can perform on resources are:
 
 ## How to switch from prepaid to postpaid and vice versa?
 
-When users register a new account at VNG Cloud, the system will default to prepaid users. To switch to postpaid users, users need to proactively contact the Sales/Support department for assistance upon request. In case a postpaid user wants to switch back to prepaid, they can also proactively contact the Sales/Support department for assistance upon request.
+When users register a new account at GreenNode, the system will default to prepaid users. To switch to postpaid users, users need to proactively contact the Sales/Support department for assistance upon request. In case a postpaid user wants to switch back to prepaid, they can also proactively contact the Sales/Support department for assistance upon request.

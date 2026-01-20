@@ -4,8 +4,8 @@ Khi phân quyền truy cập các tài nguyên, các công ty thường sẽ ph�
 
 Trước tiên về quyền truy cập của 2 nhóm chức năng công việc trên, sẽ được định nghĩa như sau:
 
-* **System Administrator**: chịu trách nhiệm quản lý toàn bộ tài nguyên trên Cloud, nên được cấp đẩy đủ quyền của vServer, vStorage sẽ tương ứng với các managed policy đã được VNG Cloud tạo sẵn: vServerFullAccess, vStorageFullAccess
-* **Developer**: chỉ cần xem được các tài nguyên trên Cloud, nên chỉ cần cấp quyền read-only của vServer, vStorage sẽ tương ứng với các managed policy đã được VNG Cloud tạo sẵn: vServerReadOnlyAccess, vStorageReadOnlyAccess.
+* **System Administrator**: chịu trách nhiệm quản lý toàn bộ tài nguyên trên Cloud, nên được cấp đẩy đủ quyền của vServer, vStorage sẽ tương ứng với các managed policy đã được GreenNode tạo sẵn: vServerFullAccess, vStorageFullAccess
+* **Developer**: chỉ cần xem được các tài nguyên trên Cloud, nên chỉ cần cấp quyền read-only của vServer, vStorage sẽ tương ứng với các managed policy đã được GreenNode tạo sẵn: vServerReadOnlyAccess, vStorageReadOnlyAccess.
 
 Để quản lý việc phân quyền cho nhiều thành viên trong công ty dễ dàng hơn, chúng ta sẽ tổ chức thêm **2 User Groups với tên là: SystemAdmin và Developer**, với những thành viên có chức năng công việc giống nhau thì sẽ được gắn vào User Groups tương ứng để được hưởng quyền đã cấp cho User Groups. Với việc quản lý bằng User Groups sẽ giúp bạn linh động thay đổi quyền khi cần thiết, hay khi có các thành viên thay đổi chức năng công việc.tr
 
@@ -34,7 +34,7 @@ Chi tiết hướng dẫn các bước
 
 Truy cập vào tab Group ở trang quản lý IAM tại [đây](https://iam.console.vngcloud.vn/user-groups), nhấn "**Create a Group**" và điền thông tin tên group là SystemAdmin, nhấn **Next step** để tới bước gắn Policy
 
-<figure><img src="/broken/files/ZHwyov0RYGoNoOQFfoSj" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image2023-7-12_13-11-7 (1).png" alt=""><figcaption></figcaption></figure>
 
 Tìm kiếm và gắn 2 managed policy là vServerFullAccess và vStorageFullAccess cho group: SystemAdmin, sau đó nhấn **Create Group** để tạo
 
@@ -60,7 +60,7 @@ Sau khi tạo thành công các User Accounts, sẽ được liệt kê ở tran
 
 Để thêm các User: System1, System2, Developer1, Developer2 vào Group: SystemAdmin, Developer bạn có thể thực hiện ở từng User Account hoặc Group, ở đây chúng tôi sẽ hướng dẫn thêm User Account ở Group, bạn qua tab Group nhấn vào **tên của Group** để vào chi tiết của Group, như ở đây là Group: SystemAdmin
 
-<figure><img src="/broken/files/K0zK8hsRgulzfQXFw4Wg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image2023-7-12_13-37-11 (1).png" alt=""><figcaption></figcaption></figure>
 
 Chọn tab **User**
 
@@ -82,7 +82,7 @@ Lúc này bạn có thể đăng nhập vào các User Accounts để kiểm tra
 
 Truy cập vào vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), khi chưa đăng nhập bất kì tài khoản nào bạn sẽ được chuyển hướng sang trang sign-in chọn "**Sign-in With IAM User Account**"
 
-<figure><img src="/broken/files/MVKH9yYekBjUpWjiUT3Z" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image2023-7-12_13-48-49 (1).png" alt=""><figcaption></figcaption></figure>
 
 Điền thông tin root user account email mà IAM user trước đó đã được tạo, thông tin IAM username và password, nhấn **Sign-in with IAM User Account**
 
@@ -96,6 +96,6 @@ Làm các bước tương tự trên để đăng nhập vào User: Developer1, 
 
 <figure><img src="../../.gitbook/assets/image2023-7-12_13-59-54.png" alt=""><figcaption></figcaption></figure>
 
-Như vậy bạn đã hoàn thành việc phân quyền truy cập theo các chức năng công việc, lúc này việc cấp quyền cho các thành viên mới, bạn chỉ cần tạo User Account và thêm vào Group, để thay đổi quyền bạn chỉ cần thay đổi Policy tại các Group giúp việc quản lý truy cập tài nguyên trên VNG Cloud trở nên dễ dàng hơn.
+Như vậy bạn đã hoàn thành việc phân quyền truy cập theo các chức năng công việc, lúc này việc cấp quyền cho các thành viên mới, bạn chỉ cần tạo User Account và thêm vào Group, để thay đổi quyền bạn chỉ cần thay đổi Policy tại các Group giúp việc quản lý truy cập tài nguyên trên GreenNode trở nên dễ dàng hơn.
 
 \\

@@ -11,7 +11,7 @@ description: >-
 
 Truy cập thông qua đường dẫn: [https://aigateway.console.vngcloud.vn/model-caching/list](https://aigateway.console.vngcloud.vn/model-caching/list)
 
-## 2. Tạo một cấu hình **Caching**&#x20;
+## 2. Tạo một cấu hình **Caching**
 
 * Truy cập trang **Model Caching** và nhấn nút **"Tạo một cấu hình Caching"** .
 
@@ -26,7 +26,7 @@ Truy cập thông qua đường dẫn: [https://aigateway.console.vngcloud.vn/mo
     * **Semantic caching**: trả về cache cho các request có ý nghĩa tương tự. Khi chọn loại này, hệ thống sẽ hiển thị thêm trường **Semantic Threshold** (0.0–1.0).
       * Giá trị cao (ví dụ 0.9): chỉ nhận cache khi rất giống.
       * Giá trị thấp (ví dụ 0.7): chấp nhận mức tương tự rộng hơn.
-  * **Thời gian tồn tại (TTL)** \
+  * **Thời gian tồn tại (TTL)**\
     Nhập thời gian (tính bằng giây) mà response được lưu trong cache trước khi hết hạn.
     * TTL càng lớn thời gian lưu càng lâu nhưng dữ liệu dễ lỗi thời hơn, tối đa 172800 giấy tương đương 48 tiếng;
   * Cấu hình chính sách bộ đệm có thể bị ảnh hưởng hoặc bị ghi đè bởi tiêu đề HTTP trong yêu cầu của máy khách\
@@ -44,7 +44,7 @@ Truy cập thông qua đường dẫn: [https://aigateway.console.vngcloud.vn/mo
 * Ở cột **Action** (**⋮**), nhấn mở menu để chọn:
   * **Manage models** — gán gateway và model .
   * **Edit configuration** — chỉnh TTL / tên / loại cache.
-  * **Delete** — xóa cấu hình&#x20;
+  * **Delete** — xóa cấu hình
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -56,11 +56,11 @@ Truy cập thông qua đường dẫn: [https://aigateway.console.vngcloud.vn/mo
 
 #### Các bước gán gateway và model
 
-1. Trong danh sách Model Caching, tại config cần gán, nhấn menu → **Manage models**&#x20;
+1. Trong danh sách Model Caching, tại config cần gán, nhấn menu → **Manage models**
 2. Hộp thoại **Manage models** hiện — nếu chưa có gateway nào được thêm, bạn sẽ thấy thông báo **No Gateway added** và nút **Add a gateway**.
 3. Nhấn **Add a gateway** → dropdown liệt kê các gateway đã tạo → chọn 1 gateway. Bạn có thể thêm nhiều gateway nếu cần.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 4. Sau khi thêm gateway, dưới mỗi gateway sẽ có mục **API models** với ô **Select models**. Click vào ô này để mở danh sách các model có trong gateway.
 
@@ -78,7 +78,7 @@ Truy cập thông qua đường dẫn: [https://aigateway.console.vngcloud.vn/mo
 3. Chọn tab **Model Caching** — sẽ hiển thị danh sách các cấu hình Caching đã gán cho gateway đó, kèm cột: **Caching type**, **Caching configuration** (TTL, semantic threshold), **Associated models.**
 4. Từ đây bạn có thể truy cập nhanh cấu hình, biết model nào đang dùng cache nào.
 
-<figure><img src="/broken/files/QTctoqnif7tNkgajnzma" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (437).png" alt=""><figcaption></figcaption></figure>
 
 ### Edit Configuration (chỉnh TTL / tên / loại cache)
 
@@ -98,4 +98,4 @@ Truy cập thông qua đường dẫn: [https://aigateway.console.vngcloud.vn/mo
 
 📌 Lưu ý: Chỉ xoá được khi cấu hình không còn được gán cho bất kỳ model/gateway nào. Nếu còn thì gỡ gán (detach model/gateway)
 
-<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>

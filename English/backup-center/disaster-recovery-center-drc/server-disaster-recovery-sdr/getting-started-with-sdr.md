@@ -1,11 +1,11 @@
 # Getting Started with SDR
 
-Server Disaster Recovery (SDR) is an important solution to ensure the continuity of your business in case of unexpected incidents. Below is a detailed guide to get you started using the Server DR feature on VNG Cloud, going through the main features and how they work.
+Server Disaster Recovery (SDR) is an important solution to ensure the continuity of your business in case of unexpected incidents. Below is a detailed guide to get you started using the Server DR feature on GreenNode, going through the main features and how they work.
 
-## **1. Access VNG Cloud Console:** <a href="#id-1.-truy-cap-vng-cloud-console" id="id-1.-truy-cap-vng-cloud-console"></a>
+## **1. Access GreenNode Console:** <a href="#id-1.-truy-cap-vng-cloud-console" id="id-1.-truy-cap-vng-cloud-console"></a>
 
 * Access the Server Disaster Recovery dashboard here:
-* You will be redirected to the VNG Cloud account login page. See detailed instructions [on how to log in to VNG Cloud](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud) with IAM User account and Root User account
+* You will be redirected to the GreenNode account login page. See detailed instructions [on how to log in to GreenNode](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud) with IAM User account and Root User account
 
 ## **2. Enable Snapshot service** <a href="#id-2.-kich-hoat-dich-vu-snapshot" id="id-2.-kich-hoat-dich-vu-snapshot"></a>
 
@@ -56,8 +56,8 @@ If you have not enabled the Snapshot service, SDR will automatically enable it f
 
 **Note:**
 
-* Please make sure you have read and understood VNG Cloud's Disaster Recovery service policies and terms of use.
-* During use, if you have any questions or need support, you can contact VNG Cloud's technical support team.
+* Please make sure you have read and understood GreenNode's Disaster Recovery service policies and terms of use.
+* During use, if you have any questions or need support, you can contact GreenNode's technical support team.
 
 Refer to more detailed instructions on Server Disaster Recovery features at:
 

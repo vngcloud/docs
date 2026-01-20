@@ -1,6 +1,6 @@
 # Resource Quota
 
-File Storage products set resource limits to ensure that we can provide fast and flexible service to all customers. These resource limits are the maximum we recommend and some resource limits can be customized according to your storage needs. To submit a request for a limit increase, please visit the VNG Cloud Support Center and create a request [here](https://helpdesk.vngcloud.vn/portal/en/newticket) .
+File Storage products set resource limits to ensure that we can provide fast and flexible service to all customers. These resource limits are the maximum we recommend and some resource limits can be customized according to your storage needs. To submit a request for a limit increase, please visit the GreenNode Support Center and create a request [here](https://helpdesk.vngcloud.vn/portal/en/newticket) .
 
 Refer to the following table for maximum values ​​for your File Storage resources.
 

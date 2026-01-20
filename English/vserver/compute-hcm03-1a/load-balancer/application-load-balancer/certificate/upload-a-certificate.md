@@ -1,6 +1,6 @@
 # Upload a certificate
 
-To use SSL certificates, you must either have an existing SSL certificate or use a free SSL certificate provided by Let's Encrypt. VNG Cloud stores certificates securely; the storage system is encrypted, and certificates are inaccessible to anyone, including VNG Cloud employees.
+To use SSL certificates, you must either have an existing SSL certificate or use a free SSL certificate provided by Let's Encrypt. GreenNode stores certificates securely; the storage system is encrypted, and certificates are inaccessible to anyone, including GreenNode employees.
 
 The Certificate Manager supports uploading and managing two types of certificates:
 

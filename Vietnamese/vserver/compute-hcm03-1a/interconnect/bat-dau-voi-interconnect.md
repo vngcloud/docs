@@ -1,15 +1,15 @@
 # Bắt đầu với Interconnect
 
-VNG Cloud Interconnect cung cấp kết nối mạng Layer 3 trực tiếp. Kết nối Interconnect không sử dụng internet công cộng. Thay vào đó, chúng tôi cung cấp các kết nối trực tiếp có thể mang lại độ tin cậy cao hơn, tốc độ nhanh hơn và ổn định hơn cũng như mức độ bảo mật cao hơn.
+GreenNode Interconnect cung cấp kết nối mạng Layer 3 trực tiếp. Kết nối Interconnect không sử dụng internet công cộng. Thay vào đó, chúng tôi cung cấp các kết nối trực tiếp có thể mang lại độ tin cậy cao hơn, tốc độ nhanh hơn và ổn định hơn cũng như mức độ bảo mật cao hơn.
 
 ***
 
 ### **Ý chính** <a href="#batdauvoiinterconnect-ychinh" id="batdauvoiinterconnect-ychinh"></a>
 
-Interconnect tạo kết nối mạng Lớp 3 (Layer 3) giữa mạng tại chỗ của bạn và mạng VNG Cloud thông qua đối tác nhà cung cấp kết nối.\
+Interconnect tạo kết nối mạng Lớp 3 (Layer 3) giữa mạng tại chỗ của bạn và mạng GreenNode thông qua đối tác nhà cung cấp kết nối.\
 Định tuyến động được thực hiện bằng Giao thức cổng biên (BGP) tiêu chuẩn ngành.\
 Bạn phải xem xét và chọn một phương án về khả năng phục hồi để đảm bảo bạn sử dụng phương pháp tiếp cận phù hợp với nhu cầu về khả năng phục hồi của mình. Tùy chọn bạn chọn sẽ ảnh hưởng đến Thỏa thuận cấp độ dịch vụ (SLA) về thời gian hoạt động kết nối của bạn.\
-Khả năng kết nối được cung cấp bằng cách sử dụng kết nối chéo giữa thiết bị do VNG Cloud sở hữu và thiết bị do khách hàng sở hữu.
+Khả năng kết nối được cung cấp bằng cách sử dụng kết nối chéo giữa thiết bị do GreenNode sở hữu và thiết bị do khách hàng sở hữu.
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/64553619/image2023-9-8_14-30-47.png?version=1&#x26;modificationDate=1694158248000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
@@ -21,9 +21,9 @@ Khi thực hiện triển khai, chúng tôi sẽ thực hiện dựa trên:
 
 Tiếp theo, thiết lập loại kết nối ảo theo một trong những cách bên dưới:
 
-**Giao diện ảo chuyển tuyến:** Nên sử dụng giao diện ảo chuyển tuyến để truy cập một hoặc nhiều Cổng chuyển tuyến VNG Cloud được liên kết với cổng Direct Connect. Bạn có thể sử dụng giao diện ảo chuyển tuyến với bất kỳ kết nối của VNG Cloud Interconnect ở bất kỳ tốc độ nào.\
-**Giao diện ảo công cộng:** Giao diện ảo công cộng có thể truy cập các dịch vụ công cộng VNG Cloud bằng địa chỉ IP công cộng.\
-**Giao diện ảo riêng tư:** Nên sử dụng giao diện ảo riêng tư để truy cập VNG Cloud VPC bằng địa chỉ IP riêng tư.
+**Giao diện ảo chuyển tuyến:** Nên sử dụng giao diện ảo chuyển tuyến để truy cập một hoặc nhiều Cổng chuyển tuyến GreenNode được liên kết với cổng Direct Connect. Bạn có thể sử dụng giao diện ảo chuyển tuyến với bất kỳ kết nối của GreenNode Interconnect ở bất kỳ tốc độ nào.\
+**Giao diện ảo công cộng:** Giao diện ảo công cộng có thể truy cập các dịch vụ công cộng GreenNode bằng địa chỉ IP công cộng.\
+**Giao diện ảo riêng tư:** Nên sử dụng giao diện ảo riêng tư để truy cập GreenNode VPC bằng địa chỉ IP riêng tư.
 
 ***
 

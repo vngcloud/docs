@@ -1,26 +1,26 @@
 # Tạo máy chủ bằng bảng điều khiển
 
-Tạo máy chủ ảo bằng quy trình khởi tạo trên VNG Cloud
+Tạo máy chủ ảo bằng quy trình khởi tạo trên GreenNode
 
 Cách thực hiện: [Trải nghiệm sản phẩm vServer](../trai-nghiem-san-pham-vserver/)
 
-VNG Cloud cung cấp quy trình khởi tạo máy chủ ảo đơn giản với những thông tin cấu hình cần thiết đảm bảo tính bảo mật và tiện dụng.
+GreenNode cung cấp quy trình khởi tạo máy chủ ảo đơn giản với những thông tin cấu hình cần thiết đảm bảo tính bảo mật và tiện dụng.
 
 ### **Chuẩn bị** <a href="#taomaychubangbangdieukhien-chuanbi" id="taomaychubangbangdieukhien-chuanbi"></a>
 
-Bạn cần tạo tài khoản tại VNG Cloud và xác thực các thông tin chủ quản. Bạn cũng cần nạp một khoản tiền nhỏ để thanh toán chi phí khi khởi tạo máy chủ ảo.
+Bạn cần tạo tài khoản tại GreenNode và xác thực các thông tin chủ quản. Bạn cũng cần nạp một khoản tiền nhỏ để thanh toán chi phí khi khởi tạo máy chủ ảo.
 
 ### **Cấu hình cơ bản** <a href="#taomaychubangbangdieukhien-cauhinhcoban" id="taomaychubangbangdieukhien-cauhinhcoban"></a>
 
 Tại bước cấu hình cơ bản, bạn cần cung cấp thông tin về số lượng tài nguyên và hệ điều hành cho máy chủ ảo. Tên máy chủ dài từ 5-50 ký tự và chỉ chứa các ký tự chữ cái, số, dấu gạch nối hoặc gạch dưới.
 
-Bạn cần xác định hệ điều hành cho máy chủ thông qua lựa chọn Images, bảng bên dưới mô tả các loại Image được cung cấp bởi VNG Cloud:
+Bạn cần xác định hệ điều hành cho máy chủ thông qua lựa chọn Images, bảng bên dưới mô tả các loại Image được cung cấp bởi GreenNode:
 
 | **Image type**          | **Description**                                                                                                                                                                                                                                           | **Notes or References**                                                                       |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| OS Image / Public Image | Image chung là các image được VNG Cloud xây dựng sẵn, đảm bảo các tiêu chuẩn về hiệu năng và bảo mật. Các image này đều là các loại hệ điều hành phổ biến Windows Server hoặc các dòng Linux chủ đạo (Ubuntu, CentOS)                                     | [{Trang Image}](../image.md)                                                                  |
+| OS Image / Public Image | Image chung là các image được GreenNode xây dựng sẵn, đảm bảo các tiêu chuẩn về hiệu năng và bảo mật. Các image này đều là các loại hệ điều hành phổ biến Windows Server hoặc các dòng Linux chủ đạo (Ubuntu, CentOS)                                     | [{Trang Image}](../image.md)                                                                  |
 | My Image / Custom Image | Người dùng có thể tạo máy chủ ảo từ image đã được tùy biến riêng. Các image này thường được cài đặt sẵn các phần mềm hoặc môi trường riêng theo nhu cầu của người dùng, giúp giảm thời gian lặp lại các bước cài đặt thủ công khi cần tạo mới máy chủ ảo. | [{Trang Tùy chỉnh Image}](../image.md)                                                        |
-| GPU Image               | Image có chứa sẵn các driver và phần mềm của NVIDIA, mục đích sử dụng các GPU NVIDIA nếu máy chủ ảo được lựa chọn có sử dụng GPU NVIDIA. Image này do VNG Cloud xây dựng sẵn dựa trên hệ điều hành Windows OS và Ubuntu.                                  | Người dùng cũng có thể chọn image chung và cài đặt các công cụ GPU tùy ý theo nhu cầu sau đó. |
+| GPU Image               | Image có chứa sẵn các driver và phần mềm của NVIDIA, mục đích sử dụng các GPU NVIDIA nếu máy chủ ảo được lựa chọn có sử dụng GPU NVIDIA. Image này do GreenNode xây dựng sẵn dựa trên hệ điều hành Windows OS và Ubuntu.                                  | Người dùng cũng có thể chọn image chung và cài đặt các công cụ GPU tùy ý theo nhu cầu sau đó. |
 
 Lựa chọn loại máy chủ ảo để xác định số lượng tài nguyên CPU, RAM phù hợp cho nhu cầu ứng dụng. Người dùng có thể tham khảo chi phí dự kiến cho từng loại cấu hình của máy chủ ảo ở khung bên phải.
 
@@ -28,11 +28,11 @@ Lựa chọn loại máy chủ ảo để xác định số lượng tài nguyê
 
 Máy chủ ảo có thể được gắn các Volume để lưu trữ dữ liệu như các ổ cứng gắn liền.
 
-Giải pháp Block Storage tại VNG Cloud được dùng hoàn toàn bằng SSD.
+Giải pháp Block Storage tại GreenNode được dùng hoàn toàn bằng SSD.
 
 Cấu hình IOPS thể hiện hạn mức hoạt động trong việc đọc ghi dữ liệu trên Volume. Tùy thuộc vào nhu cầu của ứng dụng, người dùng sẽ chọn cấu hình hạn mức phù hợp để sử dụng hiệu quả nhất.
 
-Tính năng mã hóa Volume cung cấp nhu cầu bảo mật toàn diện cho dữ liệu của người dùng. Khóa mã hóa được quản lý an toàn bởi hệ thống KMS của VNG Cloud, hoạt động độc lập với máy chủ ảo. Người dùng còn có thể chọn lưu trữ dữ liệu trên Volume được mã hóa hoặc không.
+Tính năng mã hóa Volume cung cấp nhu cầu bảo mật toàn diện cho dữ liệu của người dùng. Khóa mã hóa được quản lý an toàn bởi hệ thống KMS của GreenNode, hoạt động độc lập với máy chủ ảo. Người dùng còn có thể chọn lưu trữ dữ liệu trên Volume được mã hóa hoặc không.
 
 Máy chủ ảo có thể được gắn nhiều Volume lưu trữ dữ liệu khác nhau. Người dùng có thể thao tác gắn thêm volume khi cần.
 
@@ -50,7 +50,7 @@ Nếu bạn chưa từng tạo VPC trước đây, hệ thống sẽ tự độn
 
 Người dùng có thể chọn dùng FIP khi tạo máy chủ ảo hoặc thực hiện gán FIP sau khi máy chủ ảo được tạo để cung cấp khả năng kết nối internet cho máy chủ ảo. Người dùng có thể chọn mua dành riêng FIP để giữ lại sau khi máy chủ ảo không hoạt động.
 
-Với server Windows có chọn VNG Cloud Windows License, cần bắt buộc có floating IP để tương tác được với service KMS và activate license cho server Windows.
+Với server Windows có chọn GreenNode Windows License, cần bắt buộc có floating IP để tương tác được với service KMS và activate license cho server Windows.
 
 #### Lựa chọn security group <a href="#taomaychubangbangdieukhien-luachonsecuritygroup" id="taomaychubangbangdieukhien-luachonsecuritygroup"></a>
 
@@ -60,7 +60,7 @@ Người dùng có thể sử dụng security group mặc định đã tạo s�
 
 #### Chứng thực <a href="#taomaychubangbangdieukhien-chungthuc" id="taomaychubangbangdieukhien-chungthuc"></a>
 
-Bạn nên sử dụng SSH Key để truy cập vào máy chủ ảo Linux. Bạn có thể tạo SSH Key mới hoặc nhập Public Key có sẵn của bạn lên VNG Cloud để sử dụng sau này. Xem thêm ở [{Trang SSH Key}](../security/ssh-key-bo-khoa.md).
+Bạn nên sử dụng SSH Key để truy cập vào máy chủ ảo Linux. Bạn có thể tạo SSH Key mới hoặc nhập Public Key có sẵn của bạn lên GreenNode để sử dụng sau này. Xem thêm ở [{Trang SSH Key}](../security/ssh-key-bo-khoa.md).
 
 Ngoài ra, bạn có thể điều thông tin username, password để truyền vào máy chủ khi khởi tạo.
 

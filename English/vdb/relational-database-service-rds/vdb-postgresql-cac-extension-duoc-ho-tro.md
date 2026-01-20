@@ -104,9 +104,9 @@ You can check the list of supported extensions on your vDB by running the follow
 SELECT * FROM pg_available_extensions;
 ```
 
-If an extension you need is not supported, please contact VNG Cloud Support for assistance.
+If an extension you need is not supported, please contact GreenNode Support for assistance.
 
 #### 3. Notes:
 
 * The **vector** extension is only available for vDB instances created after **01/08/2024**.
-* To use it on pre-existing vDB instances, please contact VNG Cloud Support to enable it.
+* To use it on pre-existing vDB instances, please contact GreenNode Support to enable it.

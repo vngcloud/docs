@@ -24,7 +24,7 @@ Sau khi chắc chắn các thông tin đã chính xác, bạn nhấn nút **CREA
 Để cấu hình các giá trị của Configuration Group, bạn nhấp chuột trái vào tên của Configuration Group. Tại đây, bạn có thể xem tất cả các biến cấu hình của Configuration Group này. Mỗi biến bao gồm:
 
 * Name: tên biến
-* Value: giá trị cấu hình hiện tại của biến. Mặc định, VNG Cloud không cấu hình bất kì biến nào và giữ nguyên các giá trị mặc định của Database Engine.
+* Value: giá trị cấu hình hiện tại của biến. Mặc định, GreenNode không cấu hình bất kì biến nào và giữ nguyên các giá trị mặc định của Database Engine.
 * Allowed Values: các giá trị được phép cấu hình cho từng biến.
 * Data Type: kiểu dữ liệu của giá trị có thể áp dụng cho biến cấu hình này.
 
@@ -38,7 +38,7 @@ Sau khi nhập hoặc chọn gía trị, bạn có thể nhấn **Save** ngay ho
 
 Các RDS Instance đang được liên kết hay chuẩn bị được liên kết với Configuration Group này sẽ được áp dụng các giá trị mới này. Bạn quay lại màn hình quản lý Database để xem qúa trình áp dụng cấu hình mới. Nếu quá trình áp dụng thành công, RDS Instance sẽ có trạng thái ACTIVE.
 
-**Lưu ý:** Trong một số truờng hợp, biến cấu hình đòi hỏi cần RESTART lại dịch vụ Database trên RDS Instance, status của RDS Instance lúc này sẽ là **RESTART\_REQUIRED**. Với VNG Cloud, bạn có thể chủ động thời điểm thực hiện thao tác này. Sau khi đã sao lưu các tác vụ trên RDS Instance, bạn click vào **ACTION**, chọn **RESTART** để hoàn tất quá trình.
+**Lưu ý:** Trong một số truờng hợp, biến cấu hình đòi hỏi cần RESTART lại dịch vụ Database trên RDS Instance, status của RDS Instance lúc này sẽ là **RESTART\_REQUIRED**. Với GreenNode, bạn có thể chủ động thời điểm thực hiện thao tác này. Sau khi đã sao lưu các tác vụ trên RDS Instance, bạn click vào **ACTION**, chọn **RESTART** để hoàn tất quá trình.
 
 ### C - Liên kết RDS Instance với Configuration Groups <a href="#quanlycauhinhtrongrdsinstance-c-lienketrdsinstancevoiconfigurationgroups" id="quanlycauhinhtrongrdsinstance-c-lienketrdsinstancevoiconfigurationgroups"></a>
 
@@ -53,12 +53,12 @@ Các RDS Instance đang được liên kết hay chuẩn bị được liên k�
 
 Đầu tiên, bạn đến màn hình quản lý Database, chọn RDS Instance bạn muốn cấu hình bằng cách nhấn vào icon ba chấm và nhấn chọn **Edit Configuration Group** hoặc bạn có thể vào chi tiết RDS Instance và chọn icon **Edit Configuration Group (góc bên phải phía trên)**
 
-<figure><img src="/broken/files/AvVId6z8J2ivkjp4xaFO" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (443).png" alt=""><figcaption></figcaption></figure>
 
 Tại mục **DB configuration group**, bạn chọn Configuration Group đã tạo ở trên.
 
 Khi mọi lựa chọn đã chính xác, bạn nhấn nút **SAVE** . Bạn chờ một lát để các biến cấu hình được áp dụng xuống RDS Instance và nếu quá trình thay đổi thành công, RDS Instance sẽ có trạng thái ACTIVE.
 
-**Lưu ý:** Trong một số truờng hợp, biến cấu hình đòi hỏi cần RESTART lại dịch vụ Database trên RDS Instance, status của RDS Instance lúc này sẽ là **RESTART\_REQUIRED**. Với VNG Cloud, bạn có thể chủ động thời điểm thực hiện thao tác này. Sau khi đã sao lưu các tác vụ trên RDS Instance, bạn click vào **ACTION**, chọn **RESTART** để hoàn tất quá trình.
+**Lưu ý:** Trong một số truờng hợp, biến cấu hình đòi hỏi cần RESTART lại dịch vụ Database trên RDS Instance, status của RDS Instance lúc này sẽ là **RESTART\_REQUIRED**. Với GreenNode, bạn có thể chủ động thời điểm thực hiện thao tác này. Sau khi đã sao lưu các tác vụ trên RDS Instance, bạn click vào **ACTION**, chọn **RESTART** để hoàn tất quá trình.
 
 <br>

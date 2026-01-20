@@ -2,7 +2,7 @@
 
 ## Overview
 
-For customers who want to backup and store data on VNG Cloud, they will have to pay based on two factors:
+For customers who want to backup and store data on GreenNode, they will have to pay based on two factors:
 
 Customers must have a **Veeam Backup & Replication license**.
 

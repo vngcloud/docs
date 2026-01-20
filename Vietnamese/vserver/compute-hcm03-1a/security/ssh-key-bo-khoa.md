@@ -6,7 +6,7 @@ Bất cứ ai sở hữu Private key sẽ có thể truy cập vào máy chủ, 
 
 Khi tạo máy chủ ảo Linux, bạn được yêu cầu chọn thông tin Bộ khóa. Khi máy chủ khởi động lần đầu tiên, thông tin Public key được đưa vào trong máy chủ ảo tại `~`**`/.ssh/authorized_keys`** .Khi dùng giao thức SSH để truy cập vào máy chủ, bạn cần chọn private tương ứng để thực hiện xác thực. Xem thêm thông tin ở [{](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647965)[Kết nối vào máy chủ ảo](../server/ket-noi-vao-may-chu-ao/)[}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647965).
 
-VNG Cloud không thể khôi phục lại được Private key nếu bạn đánh mất. Bạn có thể tạo mới SSH Key thông qua VNG Cloud Portal hoặc dùng các công cụ bên thứ 3 khác. VNG Cloud hỗ trợ chuẩn key SSH-2 RSA đối với các máy chủ ảo Linux.
+GreenNode không thể khôi phục lại được Private key nếu bạn đánh mất. Bạn có thể tạo mới SSH Key thông qua GreenNode Portal hoặc dùng các công cụ bên thứ 3 khác. GreenNode hỗ trợ chuẩn key SSH-2 RSA đối với các máy chủ ảo Linux.
 
 ***
 
@@ -18,7 +18,7 @@ VNG Cloud không thể khôi phục lại được Private key nếu bạn đán
 
 #### **Nhập SSH Key** <a href="#sshkey-bokhoa-nhapsshkey" id="sshkey-bokhoa-nhapsshkey"></a>
 
-Nếu bạn chưa có SSH Key trên VNG Cloud Portal, bạn phải tạo SSH Key mới để sử dụng cho việc xác thực. Nếu đã có sẵn SSH Key, bạn có thể nhấp vào nút “Nhập SSH Key”, giao diện sẽ xuất hiện trang cho phép nhập thông tin SSH Key, nhập tên SSH Key và dán Public Key vào trường tương ứng để hoàn thành việc nhập SSH Key.
+Nếu bạn chưa có SSH Key trên GreenNode Portal, bạn phải tạo SSH Key mới để sử dụng cho việc xác thực. Nếu đã có sẵn SSH Key, bạn có thể nhấp vào nút “Nhập SSH Key”, giao diện sẽ xuất hiện trang cho phép nhập thông tin SSH Key, nhập tên SSH Key và dán Public Key vào trường tương ứng để hoàn thành việc nhập SSH Key.
 
 #### **Xóa SSH Key** <a href="#sshkey-bokhoa-xoasshkey" id="sshkey-bokhoa-xoasshkey"></a>
 

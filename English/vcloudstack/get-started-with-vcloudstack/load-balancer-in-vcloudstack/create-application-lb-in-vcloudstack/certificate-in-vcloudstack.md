@@ -1,6 +1,6 @@
 # Certificate in vCloudstack
 
-VNG Cloud provides Certificate Manager, allowing users to upload and manage their certificates. We support the management of 2 main types of certificates:
+GreenNode provides Certificate Manager, allowing users to upload and manage their certificates. We support the management of 2 main types of certificates:
 
 * **TLS/SSL Certificate**
 * **CA Certificate**

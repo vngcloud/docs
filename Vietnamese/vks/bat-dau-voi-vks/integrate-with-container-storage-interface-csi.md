@@ -59,27 +59,27 @@ ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.
 
 ***
 
-### Khởi tạo Service Account và cài đặt VNGCloud BlockStorage CSI Driver <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
+### Khởi tạo Service Account và cài đặt GreenNode BlockStorage CSI Driver <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
 
 {% hint style="info" %}
 **Chú ý:**
 
-* Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa bật option **Enable BlockStore Persistent Disk CSI Driver**, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt VNGCloud BlockStorage CSI Driver theo hướng dẫn bên dưới. Nếu bạn đã bật option **Enable BlockStore Persistent Disk CSI Driver**, thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt VNGCloud BlockStorage CSI Driver và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
-* <mark style="color:red;">**VNGCloud BlockStorage CSI Driver**</mark> <mark style="color:red;">chỉ hỗ trợ attach volume với một node (VM) duy nhất trong suốt vòng đời của volume đó. Nếu bạn có nhu cầu ReadWriteMany, bạn có thể cân nhắc sử dụng NFS CSI Driver, vì nó cho phép nhiều nodes có thể Read và Write trên cùng một volume cùng một lúc. Điều này rất hữu ích cho các ứng dụng cần chia sẻ dữ liệu giữa nhiều pods hoặc services trong Kubernetes.</mark>
+* Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa bật option **Enable BlockStore Persistent Disk CSI Driver**, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt GreenNode BlockStorage CSI Driver theo hướng dẫn bên dưới. Nếu bạn đã bật option **Enable BlockStore Persistent Disk CSI Driver**, thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt GreenNode BlockStorage CSI Driver và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
+* <mark style="color:red;">**GreenNode BlockStorage CSI Driver**</mark> <mark style="color:red;">chỉ hỗ trợ attach volume với một node (VM) duy nhất trong suốt vòng đời của volume đó. Nếu bạn có nhu cầu ReadWriteMany, bạn có thể cân nhắc sử dụng NFS CSI Driver, vì nó cho phép nhiều nodes có thể Read và Write trên cùng một volume cùng một lúc. Điều này rất hữu ích cho các ứng dụng cần chia sẻ dữ liệu giữa nhiều pods hoặc services trong Kubernetes.</mark>
 {% endhint %}
 
 <details>
 
-<summary>Khởi tạo Service Account và cài đặt VNGCloud BlockStorage CSI Driver</summary>
+<summary>Khởi tạo Service Account và cài đặt GreenNode BlockStorage CSI Driver</summary>
 
 **Khởi tạo Service Account**
 
 * Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://iam.console.vngcloud.vn/service-accounts) và thực hiện theo các bước sau:
   * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
-  * Tìm và chọn **Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do VNG Cloud tạo ra, bạn không thể xóa các policy này.
+  * Tìm và chọn **Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do GreenNode tạo ra, bạn không thể xóa các policy này.
   * Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
 
-**Cài đặt VNGCloud BlockStorage CSI Driver**
+**Cài đặt GreenNode BlockStorage CSI Driver**
 
 * Cài đặt Helm phiên bản từ 3.0 trở lên. Tham khảo tại [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) để biết cách cài đặt.
 * Thêm repo này vào cluster của bạn qua lệnh:
@@ -120,7 +120,7 @@ vngcloud-csi-node-c8r2w                        3/3     Running   0              
 
 ### **Tạo Storage Class**
 
-Storage Class (hay còn được gọi tắt là SC) là **một mẫu** để tạo ổ đĩa (PersistentVolume) tự động theo nhu cầu. Trên VNGCloud, SC định nghĩa loại ổ đĩa, tốc độ, ... (ví dụ: SSD, HDD, IOPS 50000,...).
+Storage Class (hay còn được gọi tắt là SC) là **một mẫu** để tạo ổ đĩa (PersistentVolume) tự động theo nhu cầu. Trên GreenNode, SC định nghĩa loại ổ đĩa, tốc độ, ... (ví dụ: SSD, HDD, IOPS 50000,...).
 
 * Tạo file **storage-class.yaml** với nội dung sau:
 
@@ -253,7 +253,7 @@ kubectl apply -f podnginx-pvc.yaml
 
 Lúc này, hệ thống vServer sẽ tự động tạo một Volume tương ứng với file yaml bên trên, volume này sẽ được attach vào node chứa pod dùng PVC đang chạy, ví dụ:
 
-<figure><img src="/broken/files/HS26dpSJAlOZ1ieER4Ml" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks_volume_1.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -273,7 +273,7 @@ Ví dụ:
 
 <figure><img src="../../.gitbook/assets/vks_snapshot.png" alt=""><figcaption></figcaption></figure>
 
-#### **Cài đặt VNGCloud Snapshot Controller**
+#### **Cài đặt GreenNode Snapshot Controller**
 
 * Cài đặt Helm phiên bản từ 3.0 trở lên. Tham khảo tại [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) để biết cách cài đặt.
 * Thêm repo này vào cluster của bạn qua lệnh:

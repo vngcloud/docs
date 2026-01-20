@@ -16,7 +16,7 @@ Before changing the Bandwidth package of Cross Connect, you should determine the
 
 The detailed steps to make the change are as follows:
 
-**Step 1:** Successfully log in to VNG Cloud, and from the Console screen, navigate to the vNetwork service;
+**Step 1:** Successfully log in to GreenNode, and from the Console screen, navigate to the vNetwork service;
 
 **Step 2:** On the left menu bar of the vNetwork interface, select the Cross Connect section;
 

@@ -2,7 +2,7 @@
 
 #### Tổng quan <a href="#taikhoannguoidungroot-tongquan" id="taikhoannguoidungroot-tongquan"></a>
 
-Tài khoản người dùng Root (Root User Account) là tài khoản mà người dùng khởi tạo vào ngày đầu tiên truy cập và sử dụng dịch vụ trên VNG Cloud. Tài khoản Root User Account có đầy đủ quyền truy cập vào tất cả các dịch vụ và tài nguyên của người dùng. Khi tạo tài khoản VNG Cloud, bạn bắt đầu với một danh tính đăng nhập có toàn quyền truy cập vào tất cả các dịch vụ của VNG Cloud và tài nguyên trong tài khoản. Danh tính này được gọi là Root User Account và được truy cập bằng cách đăng nhập bằng địa chỉ email và mật khẩu mà bạn đã sử dụng để tạo tài khoản. Chúng tôi khuyến khích bạn không nên sử dụng tài khoản Root User Account cho các tác vụ hàng ngày của mình và chỉ sử dụng tài khoản này để thực hiện các tác vụ mà chỉ tài khoản Root User Account mới có thể thực hiện.&#x20;
+Tài khoản người dùng Root (Root User Account) là tài khoản mà người dùng khởi tạo vào ngày đầu tiên truy cập và sử dụng dịch vụ trên GreenNode. Tài khoản Root User Account có đầy đủ quyền truy cập vào tất cả các dịch vụ và tài nguyên của người dùng. Khi tạo tài khoản GreenNode, bạn bắt đầu với một danh tính đăng nhập có toàn quyền truy cập vào tất cả các dịch vụ của GreenNode và tài nguyên trong tài khoản. Danh tính này được gọi là Root User Account và được truy cập bằng cách đăng nhập bằng địa chỉ email và mật khẩu mà bạn đã sử dụng để tạo tài khoản. Chúng tôi khuyến khích bạn không nên sử dụng tài khoản Root User Account cho các tác vụ hàng ngày của mình và chỉ sử dụng tài khoản này để thực hiện các tác vụ mà chỉ tài khoản Root User Account mới có thể thực hiện.&#x20;
 
 ***
 

@@ -67,7 +67,7 @@ Sau khi promote thành công, read replica đã chuyển thành **role:standalon
 * Tại màn hình thay đổi chọn đến Configuration Group muốn áp dụng.
 * Khi mọi lựa chọn đã chính xác, bạn nhấn nút **Save** ở góc phải trên cùng. Bạn chờ một lát để các biến cấu hình được áp dụng xuống MDS Instance và nếu quá trình thay đổi thành công, MDS Instance sẽ có trạng thái **Active**.
 
-**Lưu ý:** Trong một số truờng hợp, biến cấu hình đòi hỏi cần **Restart** lại dịch vụ Database trên MDS Instance, status của MDS Instance lúc này sẽ là **Restart\_required**. Với VNG Cloud, bạn có thể chủ động thời điểm thực hiện thao tác này. Sau khi đã sao lưu các tác vụ trên MDS Instance, bạn click vào **Action**, chọn **Restart** để hoàn tất quá trình.
+**Lưu ý:** Trong một số truờng hợp, biến cấu hình đòi hỏi cần **Restart** lại dịch vụ Database trên MDS Instance, status của MDS Instance lúc này sẽ là **Restart\_required**. Với GreenNode, bạn có thể chủ động thời điểm thực hiện thao tác này. Sau khi đã sao lưu các tác vụ trên MDS Instance, bạn click vào **Action**, chọn **Restart** để hoàn tất quá trình.
 
 ### E - Edit DB Setting <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 
@@ -91,7 +91,7 @@ Các hành động Start, Shutdown và Reboot giúp bạn tối ưu hóa việc 
 
 ### G - Delete MDS <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 
-Chức năng **"Xóa"** cho phép người dùng xóa vĩnh viễn một MDS Instance khỏi hệ thống, đảm bảo loại bỏ hoàn toàn database, dữ liệu, cấu hình và bất kỳ phụ thuộc nào liên quan. VNG Cloud khuyến nghị bạn nên cho phép hệ thống của chúng tôi tạo bản sao lưu cuối cùng của cơ sở dữ liệu trước khi xóa nó để bảo vệ và phục hồi dữ liệu bằng cách chọn vào ô **“Tạo bản sao lưu cuối cùng”** trước khi xác nhận xóa.
+Chức năng **"Xóa"** cho phép người dùng xóa vĩnh viễn một MDS Instance khỏi hệ thống, đảm bảo loại bỏ hoàn toàn database, dữ liệu, cấu hình và bất kỳ phụ thuộc nào liên quan. GreenNode khuyến nghị bạn nên cho phép hệ thống của chúng tôi tạo bản sao lưu cuối cùng của cơ sở dữ liệu trước khi xóa nó để bảo vệ và phục hồi dữ liệu bằng cách chọn vào ô **“Tạo bản sao lưu cuối cùng”** trước khi xác nhận xóa.
 
 Lưu ý: Sau khi hoàn tất quá trình xóa, nếu MDS Instance được chỉ định xóa là **role:master,** thì khi xóa thành công, toàn bộ db **role:slave** của master được xóa sẽ promote lên standalone.
 

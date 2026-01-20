@@ -2,7 +2,7 @@
 
 ## Overview <a href="#tong-quan" id="tong-quan"></a>
 
-**S3 Origin** is a type of origin used in vCDN to serve content from object storage services such as **Amazon S3** or similar solutions (e.g. VNG Cloud's vStorage). When using S3 Origin, content is delivered from your S3 bucket through the CDN network, improving access speed and reducing load on the origin system.
+**S3 Origin** is a type of origin used in vCDN to serve content from object storage services such as **Amazon S3** or similar solutions (e.g. GreenNode's vStorage). When using S3 Origin, content is delivered from your S3 bucket through the CDN network, improving access speed and reducing load on the origin system.
 
 ## Detail <a href="#chi-tiet" id="chi-tiet"></a>
 

@@ -1,6 +1,6 @@
 # Nạp Credit cho khách hàng
 
-* Với những khách hàng của đại lý, việc nạp credit trực tiếp vào ví là không thể. Do vậy để mua được dịch vụ của VNG Cloud, các đại lý sẽ thực hiện nạp credit cho khách hàng theo yêu cầu cụ thể của khách hàng.
+* Với những khách hàng của đại lý, việc nạp credit trực tiếp vào ví là không thể. Do vậy để mua được dịch vụ của GreenNode, các đại lý sẽ thực hiện nạp credit cho khách hàng theo yêu cầu cụ thể của khách hàng.
 * Việc nạp credit sẽ được thực hiện bằng cách chuyển số credit từ tài khoản đại lý cho tài khoản khách hàng. Khi giao dịch hoàn tất hệ thống sẽ thực hiện trừ số credit đã nạp từ tài khoản của đại lý và cộng vào tài khoản của khách hàng.
 
 **Bước 1**: Chọn menu “**Tài khoản**”

@@ -1,6 +1,6 @@
 # Tăng số lượng node
 
-Trong dịch vụ vDB OpenSearch của **VNG Cloud**, bạn có thể dễ dàng mở rộng số lượng node để tăng cường hiệu suất và khả năng chịu tải. Hiện tại, chúng tôi **chỉ hỗ trợ tăng số node** và chưa hỗ trợ giảm số node.
+Trong dịch vụ vDB OpenSearch của **GreenNode**, bạn có thể dễ dàng mở rộng số lượng node để tăng cường hiệu suất và khả năng chịu tải. Hiện tại, chúng tôi **chỉ hỗ trợ tăng số node** và chưa hỗ trợ giảm số node.
 
 Để tăng số node cho một OpenSearch Cluster, bạn có thể:
 

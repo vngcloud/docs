@@ -95,4 +95,4 @@ Click **Test Connection** to verify the setup.
 
 ***
 
-Good luck! If you encounter any issues, feel free to contact the VNG Cloud Support Team for assistance.
+Good luck! If you encounter any issues, feel free to contact the GreenNode Support Team for assistance.

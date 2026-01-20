@@ -1,6 +1,6 @@
 # Sao lưu dữ liệu của RDS Instance
 
-VNG Cloud vDB hỗ trợ hai cách sao lưu (backup) dữ liệu là: theo nhu cầu (on-demand) và tự động hằng ngày (daily automatic) tại thời điểm được ấn định trước.<br>
+GreenNode vDB hỗ trợ hai cách sao lưu (backup) dữ liệu là: theo nhu cầu (on-demand) và tự động hằng ngày (daily automatic) tại thời điểm được ấn định trước.<br>
 
 * [A. Sao lưu theo nhu cầu (On-demand backup hoặc Manual backup)](sao-luu-du-lieu-cua-rds-instance.md#saoluudulieucuardsinstance-a.saoluutheonhucau-on-demandbackuphoacmanualbackup)
 * [B. Sao lưu tự động theo ngày (Auto-Daily Backup)](sao-luu-du-lieu-cua-rds-instance.md#saoluudulieucuardsinstance-b.saoluutudongtheongay-auto-dailybackup)
@@ -43,6 +43,6 @@ vDB hỗ trợ tính năng tự động sao lưu theo ngày tại thời điểm
 
 * **Automatic daily backup:** bật tắt tính năng Automatic daily backup.
 * **Backup retention period:** xác định thời gian lưu trữ bản automatic backup. Nhằm giúp bạn tiết kiệm không gian lưu trữ, các bản automatic backup đã quá khoảng thời gian này sẽ bị xóa.
-* **Backup time:** thời điểm quá trình tạo automatic backup diễn ra. VNG Cloud khuyến nghị bạn chọn thời điểm này vào khoảng thời gian thấp điểm nhất đối với hệ thống của bạn.
+* **Backup time:** thời điểm quá trình tạo automatic backup diễn ra. GreenNode khuyến nghị bạn chọn thời điểm này vào khoảng thời gian thấp điểm nhất đối với hệ thống của bạn.
 
 Sau khi chắc chắn rằng các thông tin đã chính xác, bạn nhấn nút **Save** và chờ một lát để quá trình thay đổi được thực thi.

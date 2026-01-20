@@ -2,7 +2,7 @@
 
 ## Overview
 
-A Project is a term on vStorage that represents a storage package with a specific capacity that you purchase on VNG Cloud. **With Region HAN02, at a time&#x20;**<mark style="color:red;">**you can own up to 10 Projects**</mark>**&#x20;and use them to organize your data storage.**
+A Project is a term on vStorage that represents a storage package with a specific capacity that you purchase on GreenNode. **With Region HAN02, at a time&#x20;**<mark style="color:red;">**you can own up to 10 Projects**</mark>**&#x20;and use them to organize your data storage.**
 
 ***
 
@@ -15,7 +15,7 @@ The following rules apply to project naming in vStorage:
 * Project name must be between 1 (minimum) and 40 (maximum) characters long.
 * Project names can only contain uppercase and lowercase letters (a-z, A-Z), numbers (0-9), periods (.), spaces ( ), underscores (\_), hyphens (-), and the @ character.
 * Project names should not contain sensitive information (e.g. IP addresses, account names, login passwords, etc.).
-* The project name must be unique across a VNG Cloud account within or across regions until the project is deleted. We recommend that your business project or product name be used as the name of the project stored in vStorage.
+* The project name must be unique across a GreenNode account within or across regions until the project is deleted. We recommend that your business project or product name be used as the name of the project stored in vStorage.
 
 **Example**
 
@@ -209,7 +209,7 @@ To set up automatic growth for a project, you can:
 
 ## Create a POC project <a href="#thuc-hien-poc-project" id="thuc-hien-poc-project"></a>
 
-When you are a user on the vStorage system, by default you will not be able to perform POC projects. POC is a program that helps customers experience the service through the value (in credit in the POC wallet) provided by VNG Cloud to customers. Normally, POC wallets will be granted through promotional programs, promotional campaigns of VNG Cloud. Thereby, customers can experience creating certain services within a specified period of time. To perform POC projects, please contact the Sales staff or the staff who directly supports you or open a support ticket on our system. The POC wallet granted has a certain value and is used within a specified period of time depending on the company's policy. After the validity period expires, you can request to extend the POC wallet's usage period or pay an additional fee to maintain the service.
+When you are a user on the vStorage system, by default you will not be able to perform POC projects. POC is a program that helps customers experience the service through the value (in credit in the POC wallet) provided by GreenNode to customers. Normally, POC wallets will be granted through promotional programs, promotional campaigns of GreenNode. Thereby, customers can experience creating certain services within a specified period of time. To perform POC projects, please contact the Sales staff or the staff who directly supports you or open a support ticket on our system. The POC wallet granted has a certain value and is used within a specified period of time depending on the company's policy. After the validity period expires, you can request to extend the POC wallet's usage period or pay an additional fee to maintain the service.
 
 Once we confirm that we have provided a POC wallet to your account, to use the POC wallet please follow the instructions below:
 

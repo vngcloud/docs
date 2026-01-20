@@ -5,7 +5,7 @@ Trong bài viết này, ta sẽ tìm hiểu về cách sử dụng và quản l�
 ## **Điều kiện tiêu quyết:**
 
 * Cần có một Network để thực hiện, tham khảo bài viết cấu hình Network;
-* Có tài khoản truy cập vào VNG Cloud với Region CloudStack của doanh nghiệp;
+* Có tài khoản truy cập vào GreenNode với Region CloudStack của doanh nghiệp;
 * Có ít nhất một chứng chỉ TLS/SSL.
 
 ## **Cách thực hiện:**

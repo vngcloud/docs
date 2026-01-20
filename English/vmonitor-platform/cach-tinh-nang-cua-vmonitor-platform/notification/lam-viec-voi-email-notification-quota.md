@@ -2,7 +2,7 @@
 
 ### Tổng quan
 
-Một Email Notification quota là một thuật ngữ trên vMonitor Platform thể hiện một gói thông báo thông qua thư điện tử với số lượng thư điện tử cụ thể mà bạn thực hiện mua sắm trên VNG Cloud. Tại một thời điểm bạn chỉ có thể sở hữu một Email Notification quota và sử dụng chúng để gửi thông báo theo mong muốn của bạn.
+Một Email Notification quota là một thuật ngữ trên vMonitor Platform thể hiện một gói thông báo thông qua thư điện tử với số lượng thư điện tử cụ thể mà bạn thực hiện mua sắm trên GreenNode. Tại một thời điểm bạn chỉ có thể sở hữu một Email Notification quota và sử dụng chúng để gửi thông báo theo mong muốn của bạn.
 
 ***
 
@@ -18,7 +18,7 @@ Một Email Notification quota là một thuật ngữ trên vMonitor Platform t
 6. Chọn **Period** sử dụng mong muốn. Hiện tại chúng tôi cung cấp cho bạn các chu kỳ sử dụng gói bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng.
 7. Nhập **Coupon** nếu có và chọn **Apply**.
 8. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Email notification quota** sẽ được khởi tạo.
-9. Với mỗi tài khoản VNG Cloud, bạn có thể khởi tạo **1 gói Email notification quota** và sử dụng gói này theo chu kỳ mà bạn đã chọn. 7 ngày trước khi hết hạn gói Email notification quota này, bạn có thể tiếp tục gia hạn và sử dụng với chu kỳ gia hạn kế tiếp. Bên cạnh đó, trong khoảng thời gian sử dụng gói, bạn cũng có thể thực hiện tăng hạn mức sử dụng của gói theo hướng dẫn bên dưới. Cách tính chi phí cho mỗi gói Email notification quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+9. Với mỗi tài khoản GreenNode, bạn có thể khởi tạo **1 gói Email notification quota** và sử dụng gói này theo chu kỳ mà bạn đã chọn. 7 ngày trước khi hết hạn gói Email notification quota này, bạn có thể tiếp tục gia hạn và sử dụng với chu kỳ gia hạn kế tiếp. Bên cạnh đó, trong khoảng thời gian sử dụng gói, bạn cũng có thể thực hiện tăng hạn mức sử dụng của gói theo hướng dẫn bên dưới. Cách tính chi phí cho mỗi gói Email notification quota được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 
@@ -48,7 +48,7 @@ Bạn đã khởi tạo Email notification quota với chu kỳ sử dụng ng�
 7. Nhập **Coupon** nếu có và chọn **Apply**.
 8. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Email notification quota** sẽ được gia hạn.
 
-Bạn chỉ có thể gia hạn sử dụng gói Email notification quota trong vòng 7 ngày trước thời điểm hết hạn của gói notification hiện tại. Cách tính chi phí gia hạn cho mỗi gói Email notification quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+Bạn chỉ có thể gia hạn sử dụng gói Email notification quota trong vòng 7 ngày trước thời điểm hết hạn của gói notification hiện tại. Cách tính chi phí gia hạn cho mỗi gói Email notification quota được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 
@@ -65,7 +65,7 @@ Bạn chỉ có thể gia hạn sử dụng gói Email notification quota trong 
 7. Nhập **Coupon** nếu có và chọn **Apply**.
 8. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Email notification quota** sẽ được tăng hạn mức.
 
-Cách tính chi phí tăng hạn mức cho mỗi gói Email notification quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+Cách tính chi phí tăng hạn mức cho mỗi gói Email notification quota được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 

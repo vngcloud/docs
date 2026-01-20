@@ -39,7 +39,7 @@ You have several options for connecting to your Redis DB Instance:
 *   **Step 2 (Optional): Customize Security Group Rules:**
 
     * The Security Group Rules section allows you to restrict which Remote IPs can access your DB Instance.
-    * By default, VNG Cloud allows unrestricted access from anywhere (0.0.0.0/0) to your DB Instance. It's recommended to customize this to allow access only from trusted IPs.
+    * By default, GreenNode allows unrestricted access from anywhere (0.0.0.0/0) to your DB Instance. It's recommended to customize this to allow access only from trusted IPs.
 
 
 

@@ -4,7 +4,7 @@ IAM là yếu tố cần thiết để bảo vệ tài nguyên trong các dịch
 
 ### **1. Bắt đầu sử dụng IAM** <a href="#iamforvserver-1.batdausudungiam" id="iamforvserver-1.batdausudungiam"></a>
 
-Hướng dẫn này nhằm hướng dẫn người dùng có thể nhanh chóng bắt đầu sử dụng IAM trong các dịch vụ vServer bằng cách sử dụng quyền mặc định **(được định nghĩa bởi VNG Cloud Managed Policies)** cho hệ thống vServer gọi là **vServerFullAccess.**
+Hướng dẫn này nhằm hướng dẫn người dùng có thể nhanh chóng bắt đầu sử dụng IAM trong các dịch vụ vServer bằng cách sử dụng quyền mặc định **(được định nghĩa bởi GreenNode Managed Policies)** cho hệ thống vServer gọi là **vServerFullAccess.**
 
 **1. Truy cập IAM Console**
 
@@ -52,7 +52,7 @@ Truy cập lại Cổng thông tin vServer bằng cách làm theo hướng dẫn
 
 ### **2. Danh sách VNG Managed Policies** <a href="#iamforvserver-2.danhsachvngmanagedpolicies" id="iamforvserver-2.danhsachvngmanagedpolicies"></a>
 
-VNG Managed Policy là các Chính Sách IAM (IAM Policy) được tạo mặc định bởi hệ thống IAM VNG Cloud. Các Chính Sách này được quản lý bởi chính VNG Cloud nhằm mục đích hỗ trợ người dùng trong việc cài đặt nhanh chóng các quyền truy cập cần thiết cho các tài khoản người dùng IAM đối với các tài nguyên của từng Product cụ thể. Cùng tìm hiểu danh sách VNG Managed Policies cho vServer:
+VNG Managed Policy là các Chính Sách IAM (IAM Policy) được tạo mặc định bởi hệ thống IAM GreenNode. Các Chính Sách này được quản lý bởi chính GreenNode nhằm mục đích hỗ trợ người dùng trong việc cài đặt nhanh chóng các quyền truy cập cần thiết cho các tài khoản người dùng IAM đối với các tài nguyên của từng Product cụ thể. Cùng tìm hiểu danh sách VNG Managed Policies cho vServer:
 
 * [vServerFullAccess](https://iam.console.vngcloud.vn/policies/ef38ac9e-ae09-4953-8b55-b28687b2cc79): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc hệ thông vServer
 * [vServerReadOnlyAccess](https://iam.console.vngcloud.vn/policies/b63dd647-347f-47a2-9a21-4003bcef7bac): Chỉ bao gồm quyền Đọc (Read) trên các tài nguyên thuộc hệ thống vServer

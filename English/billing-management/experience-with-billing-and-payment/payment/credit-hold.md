@@ -2,20 +2,20 @@
 
 ## **Overview**
 
-At VNG Cloud Service, certain resources/services are exclusively for postpaid users due to the following reasons:
+At GreenNode Service, certain resources/services are exclusively for postpaid users due to the following reasons:
 
 * The cost of using the resource cannot be calculated immediately upon usage.
 * The cost of using the resource can only be calculated based on the actual usage of the user.
 
 Therefore, prepaid users cannot make payments to use these special resources (such as the vContainer service) immediately upon creation.
 
-Recognizing the increasing demand for postpaid resources/services from prepaid users, VNG Cloud Service has introduced the Credit Hold feature:
+Recognizing the increasing demand for postpaid resources/services from prepaid users, GreenNode Service has introduced the Credit Hold feature:
 
 **Applicable to:** Prepaid users
 
 **Applicable resources/services:** Currently supports vContainer (K8s), Snapshot, Repository (vCR), and Bandwidth services
 
-**Fund source:** VNG Cloud Credit
+**Fund source:** GreenNode Credit
 
 **Tasks:**
 

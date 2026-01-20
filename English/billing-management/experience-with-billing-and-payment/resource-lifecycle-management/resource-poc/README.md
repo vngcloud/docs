@@ -1,6 +1,6 @@
 # Resource POC
 
-The POC resource is created to support users to experience the services at VNG Cloud in the best way possible.&#x20;
+The POC resource is created to support users to experience the services at GreenNode in the best way possible.&#x20;
 
 **Conditions for using POC resources:**&#x20;
 

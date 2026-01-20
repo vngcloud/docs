@@ -16,7 +16,7 @@ Mỗi Cluster được tạo ra trong hệ thống VKS, chúng tôi sẽ tự đ
 
 ### Security group được tạo tự động bởi VNGCLOUD LoadBalancer Controller&#x20;
 
-Khi bạn sử dụng VNGCloud LoadBalancer Controller để tích hợp Network Load Balancer với Cluster trên hệ thống VKS, chúng tôi sẽ tự động tạo một Security Group. Security group này sẽ bao gồm:
+Khi bạn sử dụng GreenNode LoadBalancer Controller để tích hợp Network Load Balancer với Cluster trên hệ thống VKS, chúng tôi sẽ tự động tạo một Security Group. Security group này sẽ bao gồm:
 
 * Inbound:
 
@@ -28,7 +28,7 @@ Khi bạn sử dụng VNGCloud LoadBalancer Controller để tích hợp Network
 
 ### Security group được tạo tự động bởi VNGCLOUD Ingress Controller
 
-Khi bạn sử dụng VNGCloud Ingress Controller để tích hợp Application Load Balancer với Cluster trên hệ thống VKS, chúng tôi sẽ tự động tạo một Security Group. Security group này sẽ bao gồm:
+Khi bạn sử dụng GreenNode Ingress Controller để tích hợp Application Load Balancer với Cluster trên hệ thống VKS, chúng tôi sẽ tự động tạo một Security Group. Security group này sẽ bao gồm:
 
 * Inbound:
 

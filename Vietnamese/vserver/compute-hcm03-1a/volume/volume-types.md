@@ -1,6 +1,6 @@
 # Volume Types
 
-Volume Type thể hiện thông tin hiệu năng của volume. VNG Cloud sử dụng Volume Type để cung cấp tính năng QoS cho Volume. QoS giúp kiểm soát băng thông và IOPS cho từng Volume, bạn cần chọn mức QoS phù hợp với ứng dụng để ứng dụng hoạt động tốt nhất.
+Volume Type thể hiện thông tin hiệu năng của volume. GreenNode sử dụng Volume Type để cung cấp tính năng QoS cho Volume. QoS giúp kiểm soát băng thông và IOPS cho từng Volume, bạn cần chọn mức QoS phù hợp với ứng dụng để ứng dụng hoạt động tốt nhất.
 
 ### **Volume QoS** <a href="#volumetypes-volumeqos" id="volumetypes-volumeqos"></a>
 

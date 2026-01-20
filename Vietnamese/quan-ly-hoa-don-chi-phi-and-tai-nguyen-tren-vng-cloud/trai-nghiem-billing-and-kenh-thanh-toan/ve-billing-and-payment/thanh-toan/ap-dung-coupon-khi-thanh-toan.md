@@ -1,6 +1,6 @@
 # Áp dụng coupon khi thanh toán
 
-Coupon là mã giảm giá được VNG Cloud cung cấp.&#x20;
+Coupon là mã giảm giá được GreenNode cung cấp.&#x20;
 
 Coupon chỉ có thể sử dụng cho sản phẩm **vServer, vStorage, vCDN, vDB, vMonitor, vWAF** khi thực hiện thanh toán dịch vụ từ các sản phẩm trên.
 

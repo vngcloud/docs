@@ -19,7 +19,7 @@ Theo mặc định, khóa KMS mà bạn chọn khi tạo Volume sẽ mã hóa c�
 
 Bạn không thể thay đổi khóa KMS được liên kết với Snapshot, Backup hoặc Volume hiện có. Tuy nhiên, bạn có thể liên kết một khóa KMS khác trong quá trình Server Migration đến một Server mới.
 
-Chi phí: Vì quá trình mã hóa nằm trên máy chủ (Compute) nằm ngoài Server của bạn nên khi bật chức năng mã hóa, VNG Cloud sẽ charge thêm 30% giá của flavor hiện tại.
+Chi phí: Vì quá trình mã hóa nằm trên máy chủ (Compute) nằm ngoài Server của bạn nên khi bật chức năng mã hóa, GreenNode sẽ charge thêm 30% giá của flavor hiện tại.
 
 
 

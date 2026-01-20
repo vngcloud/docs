@@ -1,10 +1,10 @@
 # Connect to virtual server
 
-Users have many ways to connect to the virtual server such as the Console function on VNG Cloud Portal or other client tools. Depending on the operating system of the virtual server, the operating system of the personal machine or the desired connection type, you can select the appropriate connection method.
+Users have many ways to connect to the virtual server such as the Console function on GreenNode Portal or other client tools. Depending on the operating system of the virtual server, the operating system of the personal machine or the desired connection type, you can select the appropriate connection method.
 
-### **Connect using VNG Cloud Portal console** <a href="#connecttovirtualserver-connectusingvngcloudportalconsole" id="connecttovirtualserver-connectusingvngcloudportalconsole"></a>
+### **Connect using GreenNode Portal console** <a href="#connecttovirtualserver-connectusingvngcloudportalconsole" id="connecttovirtualserver-connectusingvngcloudportalconsole"></a>
 
-This method requires you to have the server's password. By default, the VNG Cloud system automatically generates a password for the virtual server when you create a new one. This information will be emailed when the virtual server is created and is in Active state. You can also use the username and password you entered earlier in the server creation process.
+This method requires you to have the server's password. By default, the GreenNode system automatically generates a password for the virtual server when you create a new one. This information will be emailed when the virtual server is created and is in Active state. You can also use the username and password you entered earlier in the server creation process.
 
 Some cases need to use this connection method to solve, such as:
 
@@ -14,7 +14,7 @@ Some cases need to use this connection method to solve, such as:
 
 #### How to do it <a href="#connecttovirtualserver-howtodoit" id="connecttovirtualserver-howtodoit"></a>
 
-1. Log in to VNG Cloud portal and go to vServer service page
+1. Log in to GreenNode portal and go to vServer service page
 2. On the Instances page, specify the server you want to connect to, at the Selection Menu on the right, select Console to open the server management window via the console
 3. You will need the server's operating system password to log in.\\
 4. You can also call the keyboard shortcut CTRL+ALT+DEL to restart the server by clicking the Send CtrlAltDel button in the upper right corner

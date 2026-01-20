@@ -2,7 +2,7 @@
 
 ## Overview
 
-VNG Cloud is committed to protecting the infrastructure of VNG Cloud services, especially data storage services. Access control is one of the top priorities, including the use of Veeam software for data backup.
+GreenNode is committed to protecting the infrastructure of GreenNode services, especially data storage services. Access control is one of the top priorities, including the use of Veeam software for data backup.
 
 Access control is a crucial aspect of security aimed at determining who and under what conditions can access the software and perform backup or recovery operations.&#x20;
 

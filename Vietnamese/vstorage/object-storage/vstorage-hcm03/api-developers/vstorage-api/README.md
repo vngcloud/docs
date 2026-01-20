@@ -2,7 +2,7 @@
 
 #### Tổng quan <a href="#vstorageapi-tongquan" id="vstorageapi-tongquan"></a>
 
-vStorage cung cấp S3 API cho phép các công ty, tổ chức hoặc người dùng khác để tích hợp với các ứng dụng, công cụ phía người dùng của mình với vStorage để lưu trữ dữ liệu như ảnh, video, tài liệu,...vStorage S3 API bao gồm các API để làm việc với tài khoản VNG Cloud, làm việc với project, làm việc với container, làm việc với object/ directory, xem thông tin hóa đơn thanh toán,...
+vStorage cung cấp S3 API cho phép các công ty, tổ chức hoặc người dùng khác để tích hợp với các ứng dụng, công cụ phía người dùng của mình với vStorage để lưu trữ dữ liệu như ảnh, video, tài liệu,...vStorage S3 API bao gồm các API để làm việc với tài khoản GreenNode, làm việc với project, làm việc với container, làm việc với object/ directory, xem thông tin hóa đơn thanh toán,...
 
 Tích hợp các ứng dụng, công cụ phía người dùng của bạn với vStorage bằng cách sử dụng vStorage S3 API sẽ giúp bạn lưu trữ và quản lý dữ liệu của mình trên vStorage. Đây là những gì bạn có thể làm:
 

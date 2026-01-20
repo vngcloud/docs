@@ -1,6 +1,6 @@
 # Làm việc với Configuration Group
 
-Trong **vDB OpenSearch** của **VNG Cloud**, chúng tôi hỗ trợ cấu hình thông số hoạt động DB của bạn **thông qua Configuration Group**, giúp bạn dễ dàng quản lý và tối ưu hiệu suất cho OpenSearch Cluster.
+Trong **vDB OpenSearch** của **GreenNode**, chúng tôi hỗ trợ cấu hình thông số hoạt động DB của bạn **thông qua Configuration Group**, giúp bạn dễ dàng quản lý và tối ưu hiệu suất cho OpenSearch Cluster.
 
 ## **Configuration Group Mặc Định**
 

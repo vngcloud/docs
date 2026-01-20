@@ -4,7 +4,7 @@ An floating IP address (FIP) is a public IP address that you can reserve and use
 
 ### **Overview** <a href="#floatingip-overview" id="floatingip-overview"></a>
 
-FIPs are NAT IP addresses that are located in the gateway of VNG Cloud. By means of NAT, FIPs are mapped to the primary network interfaces of the vServer instances. You can associate FIPs with vServer instances that are located in VPCs to enable the instances to communicate over the Internet. FIPs is invisible inside the operating systems of vServer instances.
+FIPs are NAT IP addresses that are located in the gateway of GreenNode. By means of NAT, FIPs are mapped to the primary network interfaces of the vServer instances. You can associate FIPs with vServer instances that are located in VPCs to enable the instances to communicate over the Internet. FIPs is invisible inside the operating systems of vServer instances.
 
 ### **Limits** <a href="#floatingip-limits" id="floatingip-limits"></a>
 

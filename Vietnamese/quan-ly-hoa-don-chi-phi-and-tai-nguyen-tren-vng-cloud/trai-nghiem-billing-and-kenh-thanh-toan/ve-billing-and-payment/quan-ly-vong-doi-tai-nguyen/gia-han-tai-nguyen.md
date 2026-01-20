@@ -5,8 +5,8 @@ Sử dụng tài liệu này như là một hướng dẫn gia hạn tài nguyê
 #### Tính năng gia hạn tài nguyên áp dụng đối với: <a href="#giahantainguyen-tinhnanggiahantainguyenapdungdoivoi" id="giahantainguyen-tinhnanggiahantainguyenapdungdoivoi"></a>
 
 * **Đối tượng:** Người dùng trả trước
-* **Nguồn tiền:** Ví VNG Cloud hoặc các nguồn khác (thực hiện qua cổng thanh toán)
-* **Tài nguyên:** Tất cả tài nguyên thuộc các sản phẩm VNG Cloud cho phép gia hạn
+* **Nguồn tiền:** Ví GreenNode hoặc các nguồn khác (thực hiện qua cổng thanh toán)
+* **Tài nguyên:** Tất cả tài nguyên thuộc các sản phẩm GreenNode cho phép gia hạn
 
 #### **Quy trình gia hạn tài nguyên** <a href="#giahantainguyen-quytrinhgiahantainguyen" id="giahantainguyen-quytrinhgiahantainguyen"></a>
 

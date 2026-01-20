@@ -1,8 +1,8 @@
 # Tạo kết nối chuyên dụng (Dedicated)
 
-Để tạo kết nối chuyên dụng VNG Cloud Interconnect, bạn cần có thông tin sau:
+Để tạo kết nối chuyên dụng GreenNode Interconnect, bạn cần có thông tin sau:
 
-**Vị trí kết nối trực tiếp VNG Cloud**\
+**Vị trí kết nối trực tiếp GreenNode**\
 Lựa chọn vị trí nơi bạn muốn thiết lập kết nối
 
 **Tốc độ cổng**\

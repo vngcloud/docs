@@ -4,11 +4,11 @@ Use this guide to get started with the **Billing & Payment system**. You will ha
 
 Here, we divide the system into 3 main functional groups:&#x20;
 
-* **Payment:** Processing tasks related to Resource payment, Bill payment, Linking payment gateway outside VNG Cloud wallet, etc.&#x20;
+* **Payment:** Processing tasks related to Resource payment, Bill payment, Linking payment gateway outside GreenNode wallet, etc.&#x20;
 * **Invoice management:** Recording user actions on resources, thereby recording new invoices for the corresponding resources on each specific action (creating new, changing configurations, renewing, etc.)&#x20;
 * **Resource lifecycle management:** Effectively controlling the resource lifecycle and notifying users of expiring resources, automatic renewal,... helping users make timely decisions to ensure a seamless resource usage experience.
 
-**Overview of the process of creating and paying for resources for the VNG Cloud Service users**
+**Overview of the process of creating and paying for resources for the GreenNode Service users**
 
 * Step 1: Configure resources&#x20;
   * 1.1 Access the vServer, vStorage, vMonitor product page.

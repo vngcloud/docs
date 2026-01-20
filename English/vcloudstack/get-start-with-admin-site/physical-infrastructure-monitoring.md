@@ -2,7 +2,7 @@
 
 ### Overview <a href="#tong-quan" id="tong-quan"></a>
 
-vCloudstack service is a service that deploys infrastructure and runs VNG Cloud services on-site, so monitoring the operating status of the entire physical infrastructure is considered important. vCloudStack allows users to experience controlling the operating status of the system in the Portal Admin Site interface. All information will be transparent and clear, helping administrators easily grasp the status of all physical devices so that they can propose a plan to upgrade or maintain the system in a timely manner.
+vCloudstack service is a service that deploys infrastructure and runs GreenNode services on-site, so monitoring the operating status of the entire physical infrastructure is considered important. vCloudStack allows users to experience controlling the operating status of the system in the Portal Admin Site interface. All information will be transparent and clear, helping administrators easily grasp the status of all physical devices so that they can propose a plan to upgrade or maintain the system in a timely manner.
 
 You can refer to the infrastructure control information described below.
 

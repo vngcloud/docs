@@ -4,7 +4,7 @@ Sử dụng hướng dẫn này để bắt đầu với hệ thống **Billing 
 
 Tại đây, chúng tôi chia hệ thống làm 3 nhóm chức năng chính:
 
-* **Thanh toán:** Xử lý các tác vụ liên quan việc Thanh toán tài nguyên, Thanh toán hóa đơn, Liên kết cổng thanh toán ngoài ví VNG Cloud,...
+* **Thanh toán:** Xử lý các tác vụ liên quan việc Thanh toán tài nguyên, Thanh toán hóa đơn, Liên kết cổng thanh toán ngoài ví GreenNode,...
 * **Quản lý hóa đơn:** Ghi nhận hành động người dùng trên tài nguyên, từ đó ghi nhận hóa đơn mới cho tài nguyên tương ứng trên từng hành động cụ thể (tạo mới, thay đổi cấu hình, gia hạn,...),...
 * **Quản lý vòng đời tài nguyên:** Kiểm soát tốt vòng đời tài nguyên và thông báo đến người dùng các tài nguyên sắp hết hạn, tự động gia hạn,... giúp người dùng kịp thời đưa ra quyết định để trải nghiệm sử dụng tài nguyên không bị gián đoạn.
 
@@ -16,7 +16,7 @@ Tại đây, chúng tôi chia hệ thống làm 3 nhóm chức năng chính:
 * [Quản lý hóa đơn](../quan-ly-hoa-don.md)
 * [Quản lý vòng đời tài nguyên](quan-ly-vong-doi-tai-nguyen/)
 
-#### **Tổng quan quy trình khởi tạo và thanh toán tài nguyên đối với người dùng VNG Cloud Service** <a href="#trainghiembilling-and-payment-tongquanquytrinhkhoitaovathanhtoantainguyendoivoinguoidungvngcloudserv" id="trainghiembilling-and-payment-tongquanquytrinhkhoitaovathanhtoantainguyendoivoinguoidungvngcloudserv"></a>
+#### **Tổng quan quy trình khởi tạo và thanh toán tài nguyên đối với người dùng GreenNode Service** <a href="#trainghiembilling-and-payment-tongquanquytrinhkhoitaovathanhtoantainguyendoivoinguoidungvngcloudserv" id="trainghiembilling-and-payment-tongquanquytrinhkhoitaovathanhtoantainguyendoivoinguoidungvngcloudserv"></a>
 
 ***
 

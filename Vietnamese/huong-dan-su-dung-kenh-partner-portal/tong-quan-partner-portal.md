@@ -11,10 +11,10 @@ Các chức năng hỗ trợ đối tác trên partner portal gồm
    * Xác thực hai lớp
    * Thay đổi mật khẩu
    * Xem lịch sử đăng nhập
-3. Đăng ký chiết khấu mua dịch vụ VNG Cloud
-4. Đăng ký tài khoản khách hàng, việc đăng ký tài khoản khách hàng giúp đối tác VNG Cloud có thể quản lý được doanh số bán hàng cùng như tra cứu, đối soát số liệu doanh thu và hoa hồng với VNG Cloud
-5. Thiết lập chiết khấu cho khách hàng đối tác: Giúp đối tác VNG Cloud quản lý được giá bán của người dùng sử dụng cho việc quản lý công nợ cũng như xuất hóa đơn cho khách hàng
-6. Nạp credit cho khách hàng mua dịch vụ VNG Cloud
+3. Đăng ký chiết khấu mua dịch vụ GreenNode
+4. Đăng ký tài khoản khách hàng, việc đăng ký tài khoản khách hàng giúp đối tác GreenNode có thể quản lý được doanh số bán hàng cùng như tra cứu, đối soát số liệu doanh thu và hoa hồng với GreenNode
+5. Thiết lập chiết khấu cho khách hàng đối tác: Giúp đối tác GreenNode quản lý được giá bán của người dùng sử dụng cho việc quản lý công nợ cũng như xuất hóa đơn cho khách hàng
+6. Nạp credit cho khách hàng mua dịch vụ GreenNode
 7. Xem lịch sử chiết khấu của đối tác, khách hàng của đối tác
 8. Báo cáo: xem các báo cáo về credit nạp, sử dụng, báo cáo chiết khấu và doanh thu phần bổ theo tháng
 

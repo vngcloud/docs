@@ -17,7 +17,7 @@ Thanks to these unique features, Application Load Balancers play a crucial role 
 * **Session Persistence:** ALBs support session persistence, ensuring that requests from the same user are always directed to the same backend server. This enhances the consistency of the user experience.
 * **Health Checks:** ALBs automatically check the health of backend servers by sending periodic test requests. If a server is not functioning correctly, the ALB stops directing traffic to it, ensuring higher performance and better availability.
 * **SSL/TLS Encryption:** ALBs can handle the encryption and decryption of SSL/TLS traffic, offloading this computational work from backend servers and boosting overall performance.
-* **Authentication and Authorization:** Integrates with VNG Cloud IAM, fully supporting authentication and authorization features.
+* **Authentication and Authorization:** Integrates with GreenNode IAM, fully supporting authentication and authorization features.
 * **Load Balancer Monitoring:** Easily monitor the health and access history of clients, as well as the editing history of the Load Balancer.
 * **Terraform:** Supports the quick and efficient creation and management of Load Balancers using Terraform.
 

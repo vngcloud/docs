@@ -10,13 +10,13 @@ description: >-
 
 ### Truy cập VPN detail
 
-* Truy cập thành công vào VNG Cloud, tại màn hình Console chọn đến dịch vụ vNetwork.
+* Truy cập thành công vào GreenNode, tại màn hình Console chọn đến dịch vụ vNetwork.
 * Tại thanh menu bên trái của giao diện vNetwork, chọn mục VPN Site-to-Site.
 * Chọn VPN cần chỉnh sửa
 
 <figure><img src="../../../.gitbook/assets/1 (2) (1).png" alt=""><figcaption><p>VPN List</p></figcaption></figure>
 
-<figure><img src="/broken/files/i5B3bt5a8OwKFp7QvX8j" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (343).png" alt=""><figcaption></figcaption></figure>
 
 ## Thêm Site
 
@@ -32,9 +32,9 @@ Người dùng có thể thêm Tunnel trong một Site để cho phép nhiều S
 
 Nhấn vào nút **Thêm Tunnel** giao diện sẽ hiện lên để người dùng cung cấp thông tin Remote Private CIDR thêm cho Site hiện tại.
 
-<figure><img src="/broken/files/BfLR6yqBkP1N7MzB8grH" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="/broken/files/txAvxR20HVchDyZtOJEU" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (344).png" alt=""><figcaption></figcaption></figure>
 
 Thông tin cấu hình xem [tại đây](./#cau-hinh-default-tunnel)
 
@@ -46,7 +46,7 @@ Người dùng chọn **Sửa tên** để thay đổi tên của Site hoặc **
 
 <figure><img src="../../../.gitbook/assets/image (974).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="/broken/files/ILdosEu0QOkD7t4PUvvX" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (364).png" alt=""><figcaption></figcaption></figure>
 
 ### Thay đổi cấu hình Kết nối
 

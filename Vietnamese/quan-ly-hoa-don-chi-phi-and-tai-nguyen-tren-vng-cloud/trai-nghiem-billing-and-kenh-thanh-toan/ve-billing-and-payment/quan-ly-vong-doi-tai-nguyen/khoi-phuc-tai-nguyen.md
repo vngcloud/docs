@@ -5,8 +5,8 @@ Sử dụng tài liệu này như là một hướng dẫn khôi phục tài ngu
 #### Tính năng khôi phục tài nguyên áp dụng đối với: <a href="#khoiphuctainguyen-tinhnangkhoiphuctainguyenapdungdoivoi" id="khoiphuctainguyen-tinhnangkhoiphuctainguyenapdungdoivoi"></a>
 
 * **Đối tượng:** Người dùng trả trước
-* **Nguồn tiền:** Ví VNG Cloud hoặc các nguồn khác (thực hiện qua cổng thanh toán)
-* **Tài nguyên:** Tất cả tài nguyên thuộc các sản phẩm VNG Cloud
+* **Nguồn tiền:** Ví GreenNode hoặc các nguồn khác (thực hiện qua cổng thanh toán)
+* **Tài nguyên:** Tất cả tài nguyên thuộc các sản phẩm GreenNode
 
 #### **Quy trình khôi phục tài nguyên** <a href="#khoiphuctainguyen-quytrinhkhoiphuctainguyen" id="khoiphuctainguyen-quytrinhkhoiphuctainguyen"></a>
 

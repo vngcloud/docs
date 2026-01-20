@@ -4,7 +4,7 @@
 
 Đảm bảo trải nghiệm người dùng tốt nhất khi lựa chọn và xem video trên các thiết bị qua internet.
 
-Dịch vụ VOD của VNG Cloud giúp doanh nghiệp:
+Dịch vụ VOD của GreenNode giúp doanh nghiệp:
 
 * Tối ưu chi phí.
 * Đảm bảo sự linh hoạt, dễ dàng tương thích với đa dạng thiết bị đầu cuối.
@@ -91,7 +91,7 @@ Hệ thống vCDN cung cấp các chuẩn phát phổ biến, hỗ trợ giao th
   *   **Cú pháp URL Multi Audio Selection (cùng với ABR)**:
 
       ```bash
-      https://<CDN Domain>/<Đường dẫn tới file SMIL trên VNGCloud Storage/Origin>/index.m3u8
+      https://<CDN Domain>/<Đường dẫn tới file SMIL trên GreenNode Storage/Origin>/index.m3u8
       ```
 
 ***

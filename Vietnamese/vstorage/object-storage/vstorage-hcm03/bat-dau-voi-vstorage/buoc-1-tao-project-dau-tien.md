@@ -1,6 +1,6 @@
 # Bước 1: Tạo project đầu tiên
 
-Bắt đầu sử dụng dịch vụ, bạn cần tạo một project. Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên VNG Cloud. Tại một thời điểm bạn có thể sở hữu một hoặc nhiều Project song song và sử dụng chúng như một cách tổ chức tài nguyên cho các nhóm hay phòng ban sử dụng với mục đích khác nhau.
+Bắt đầu sử dụng dịch vụ, bạn cần tạo một project. Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên GreenNode. Tại một thời điểm bạn có thể sở hữu một hoặc nhiều Project song song và sử dụng chúng như một cách tổ chức tài nguyên cho các nhóm hay phòng ban sử dụng với mục đích khác nhau.
 
 Thực hiện tạo project theo các bước bên dưới:
 
@@ -19,7 +19,7 @@ Bên cạnh đó chúng tôi đang hỗ trợ 3 gói lưu trữ có sẵn bao g�
 * Silver: gói lưu trữ phù hợp với nhu cầu lưu trữ backup, các dữ liệu không có lượng truy cập quá lớn.
 * Archive: gói lưu trữ phù hợp với nhu cầu lưu trữ lâu dài, tối thiểu 6 tháng, ít sử dụng.&#x20;
 
-Cách tính chi phí lưu trữ cho mỗi project được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../cach-tinh-phi/).
+Cách tính chi phí lưu trữ cho mỗi project được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../cach-tinh-phi/).
 
 _**Video hướng dẫn:**_
 

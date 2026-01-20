@@ -6,7 +6,7 @@ Với tính năng đồng bộ ngày kết thúc, bạn có thể quản lý t�
 
 1. **Đăng nhập vào tài khoản:**
    * Truy cập vào trang vConsole để thực hiện theo đường dẫn: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/).
-   * Làm theo hướng dẫn sau để đăng nhập vào tài khoản VNG Cloud [tại đây](../../../../identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md).
+   * Làm theo hướng dẫn sau để đăng nhập vào tài khoản GreenNode [tại đây](../../../../identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md).
 2. **Truy cập vào trang quản lý tài nguyên:**
    * Tìm và chọn mục "Thống kê tài nguyên" hoặc thông qua đường dẫn sau: [https://dashboard.console.vngcloud.vn/resource](https://dashboard.console.vngcloud.vn/resource).
    * Bạn sẽ thấy danh sách các tài nguyên đang sử dụng của tất cả các dịch vụ.

@@ -1,8 +1,8 @@
 # Create a Dedicated Connection
 
-To create a dedicated connection with VNG Cloud Interconnect, you need the following information:
+To create a dedicated connection with GreenNode Interconnect, you need the following information:
 
-**Direct connection location of VNG Cloud**\
+**Direct connection location of GreenNode**\
 Choose the location where you want to establish the connection
 
 **Port speed**\

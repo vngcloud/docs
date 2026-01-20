@@ -4,7 +4,7 @@
 
 Use this guide to backup data from S3 to vStorage, using Veeam Backup & Replication software. This article will guide you on how to get started with Veeam, including how to install Veeam Backup & Replication, initialize a Repository, create a Backup Job, and then how to recover data after a successful backup.
 
-To perform the backup steps with Veeam, you need to **register an account** with VNG Cloud Service [here](https://register.vngcloud.vn/signup) to access VNGCloud vStorage, then create a project by following **the vStorage Project Creation** guide. Once you have a project, create a Container within that project, see the vStorage **Container Creation** guide. You must complete these steps before you can proceed with the steps to backup data with Veeam.
+To perform the backup steps with Veeam, you need to **register an account** with GreenNode Service [here](https://register.vngcloud.vn/signup) to access GreenNode vStorage, then create a project by following **the vStorage Project Creation** guide. Once you have a project, create a Container within that project, see the vStorage **Container Creation** guide. You must complete these steps before you can proceed with the steps to backup data with Veeam.
 
 ***
 

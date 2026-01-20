@@ -4,7 +4,7 @@
 
 Tương tự, đối với **Postgresql**, bạn có thể dùng các client như: psql (ClI Client do PostgreSQL phát triển), pgAdmin (GUI Client phổ biến),...
 
-Bạn có thể xem bài viết hướng dẫn dưới đây. Bài viết này VNG Cloud sử dụng mysql-client, MySQL Workbench và psql:
+Bạn có thể xem bài viết hướng dẫn dưới đây. Bài viết này GreenNode sử dụng mysql-client, MySQL Workbench và psql:
 
 * [Bước 0. Cài đặt client tool để kết nối:](./#ketnoitoirdsinstance-buoc0.caidatclienttooldeketnoi)
 * [Bước 1. Xác định thông tin Endpoint & Port để truy cập:](./#ketnoitoirdsinstance-buoc1.xacdinhthongtinendpoint-and-portdetruycap)
@@ -56,7 +56,7 @@ VD: DB Instance có **Private Network Subnet** là 10.0.116.0/24 thì 10.0.116.3
 
 ### Bước 2: Tùy chỉnh Security Group Rules để bảo vệ DB Instance (tùy chọn) <a href="#ketnoitoirdsinstance-buoc2-tuychinhsecuritygrouprulesdebaovedbinstance-tuychon" id="ketnoitoirdsinstance-buoc2-tuychinhsecuritygrouprulesdebaovedbinstance-tuychon"></a>
 
-Mục **Security Group Rules** cho phép bạn giới hạn những **Remote IP** nào được phép truy cập vào RDS Instance của bạn. Để tiện lợi cho việc sử dụng, khi vừa khởi tạo, VNG Cloud cho phép bạn truy cập không hạn chế từ mọi nơi (0.0.0.0/0) vào RDS Instance. Tuy nhiên, VNG Cloud khuyến nghị bạn tùy chỉnh lại mục này sao cho chỉ những **Remote IP** tin cậy được truy cập vào.
+Mục **Security Group Rules** cho phép bạn giới hạn những **Remote IP** nào được phép truy cập vào RDS Instance của bạn. Để tiện lợi cho việc sử dụng, khi vừa khởi tạo, GreenNode cho phép bạn truy cập không hạn chế từ mọi nơi (0.0.0.0/0) vào RDS Instance. Tuy nhiên, GreenNode khuyến nghị bạn tùy chỉnh lại mục này sao cho chỉ những **Remote IP** tin cậy được truy cập vào.
 
 * Để thay đổi, bạn chọn vào **EDIT** và điền IP (theo chuẩn CIDR) thích hợp.
 * Sau khi hiệu chỉnh, nhấn **Save** và chờ một lát để thay đổi được lưu lại.
@@ -69,7 +69,7 @@ Khi kết nối đã thông suốt, bạn có thể tiến hành kết nối t�
 
 Sau khi có thông tin endpoint, bạn sử dụng **Master User** vừa tạo để kết nối.
 
-Lưu ý: Master user chỉ được tạo một lần duy nhất, nếu quên password, bạn có thể chọn **Action** > **Edit Database** để tự thay đổi password. Nếu quên thông tin Master User, bạn có thể liên hệ **VNG Cloud Support** để được hỗ trợ.
+Lưu ý: Master user chỉ được tạo một lần duy nhất, nếu quên password, bạn có thể chọn **Action** > **Edit Database** để tự thay đổi password. Nếu quên thông tin Master User, bạn có thể liên hệ **GreenNode Support** để được hỗ trợ.
 
 VD: RDS Instance vừa tạo có master user là: dba, endpoint truy cập là public endpoint: 61.28.224.201, port: 3306, bạn kết nối như sau:
 
@@ -104,6 +104,6 @@ trong đó:
 
 * Endpoint\_vDB: là endpoint kết nối tới vDB.
 * Master\_user: là master user bạn đăng kí lúc khởi tạo.
-* Database\_Name: là Database Name bạn điền vào ở phần DB Options. (khác với DB Instance Name ở mục DB Settting lúc khởi tạo và hiển thị ở mục Database trên Portal). Nếu quên, bạn có thể liên hệ VNG Cloud Support để lấy lại thông tin này.&#x20;
+* Database\_Name: là Database Name bạn điền vào ở phần DB Options. (khác với DB Instance Name ở mục DB Settting lúc khởi tạo và hiển thị ở mục Database trên Portal). Nếu quên, bạn có thể liên hệ GreenNode Support để lấy lại thông tin này.&#x20;
 
-Nếu có vấn đề gì cần hỗ trợ, bạn có thể liên hệ **VNG Cloud Support Team** ngay. Cảm ơn bạn đã xem hết bài hướng dẫn.
+Nếu có vấn đề gì cần hỗ trợ, bạn có thể liên hệ **GreenNode Support Team** ngay. Cảm ơn bạn đã xem hết bài hướng dẫn.

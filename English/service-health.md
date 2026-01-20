@@ -1,14 +1,14 @@
 # Service Health
 
-* Provide information about the health status of VNG Cloud services.
-* VNG Cloud users can proactively visit the "[Service Health](https://health.vngcloud.vn/)" page to check the health of the VNG Cloud services they are using without needing to log in or register for an account.
+* Provide information about the health status of GreenNode services.
+* GreenNode users can proactively visit the "[Service Health](https://health.vngcloud.vn/)" page to check the health of the GreenNode services they are using without needing to log in or register for an account.
 
-### View the VNG Cloud Service Health Dashboard
+### View the GreenNode Service Health Dashboard
 
 * Navigate to the page [https://health.vngcloud.vn/](https://health.vngcloud.vn/)
 * Information about service health is displayed for the last 14 days, with incidents or service issues listed by default for this period. Users can choose to view.
 * **Summary Information**
-  * Total number of services available on VNG Cloud
+  * Total number of services available on GreenNode
   * Total number of incidents in the most recent default timeframe
   * Total number of incidents currently being handled
   * Total number of incidents that have been fully resolved
@@ -32,7 +32,7 @@
 
 * Find the service you want to check the health of in the following order:
 * Enter the desired time period for the search.
-* In the search box, enter the name of the service you want. If no name is entered, the detail table will display all services of VNG Cloud.
+* In the search box, enter the name of the service you want. If no name is entered, the detail table will display all services of GreenNode.
 * Click on the search icon.
 * Move to the services and dates highlighted in orange or gray, and click to view the incident detail screen.
 

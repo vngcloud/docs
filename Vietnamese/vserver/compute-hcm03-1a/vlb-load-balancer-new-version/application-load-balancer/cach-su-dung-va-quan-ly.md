@@ -5,7 +5,7 @@ Trong phần này, chúng ta sẽ tìm hiểu về cách sử dụng và quản 
 #### Trước khi bắt đầu <a href="#gettingstarted-truockhibatdau" id="gettingstarted-truockhibatdau"></a>
 
 * Để bắt đầu sử dụng Application Load Balancer, bạn cần có ít nhất **một Virtal Private Cloud (VPC)**, tham khảo hướng dẫn [Virtual Private Cloud (VPC)](../../network/virtual-private-cloud-vpc/).
-* Tìm hiểu cách **truy cập VNG Cloud Portal** với Root User Account hoặc IAM User Account, tham khảo hướng dẫn [How to Login into VNG Cloud](../../../../identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md).
+* Tìm hiểu cách **truy cập GreenNode Portal** với Root User Account hoặc IAM User Account, tham khảo hướng dẫn [How to Login into GreenNode](../../../../identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md).
 * Trong trường hợp người dùng muốn bắt đầu với IAM User Account, tham khảo hướng dẫn [IAM for vServer](../../../../identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vserver.md).
 * Đối với Application Load Balancer, yêu cầu có ít nhất một chứng chỉ TLS/SSL khi **cấu hình HTTPS Listener**, tham khảo hướng dẫn [Upload a certificate](certificate/upload-a-certificate.md).&#x20;
 
@@ -16,7 +16,7 @@ vLB Console là giao diện người dùng dựa trên web, cho phép bạn qu�
 **Cách truy cập Bảng điều khiển vLB**
 
 * Truy cập từ trang chủ vConsole: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
-  * Tại mục **"VNG Cloud Service"** trên giao diện, click **chọn "vServer"**, sau đó click **chọn "vLB"** từ danh sách sản phẩm/dịch vụ tương ứng bên phải
+  * Tại mục **"GreenNode Service"** trên giao diện, click **chọn "vServer"**, sau đó click **chọn "vLB"** từ danh sách sản phẩm/dịch vụ tương ứng bên phải
 * Truy cập từ trang chủ vServer: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
   * Tại trang chủ vServer, điều hướng đến vLB portal bằng cách click **chọn "Load Balancers" trong mục "Load Balancing"** tại thanh menu bên trái.
 * Truy cập trực tiêp đến vLB Portal thông qua đường dẫn: [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)

@@ -17,7 +17,7 @@ You can assign instances deployed in active/standby mode with the same Virtual I
 
 #### Create Virtual IP <a href="#virtualip-createvirtualip" id="virtualip-createvirtualip"></a>
 
-1. Go to VNG Cloud portal console, navigate to Virtual IP page
+1. Go to GreenNode portal console, navigate to Virtual IP page
 2. Select VPC and subnet for the Virtual IP address. Only instances in the same subnet with Virtual IP can be assigned to use the Virtual IP
 3. After create you will get the IP information
 4. Next step is assign Virtual IP to Instances, expand the detail of Virtual IP and go to tab **Address Pair Interface**, click **Add** **Address Pair Interface** and select Instances that you want to assign
@@ -26,13 +26,13 @@ You can assign instances deployed in active/standby mode with the same Virtual I
 
 After create Virtual IP, you need to assign it to Instances:
 
-1. Go to VNG Cloud portal console, navigate to Virtual IP page
+1. Go to GreenNode portal console, navigate to Virtual IP page
 2. Expand the detail of Virtual IP and go to tab **Address Pair Interface,** click **Add Address Pair Interface/Remove Address Pair Interface** and select Instances that you want to assign or remove
 3. You will need to configure network from within instance to make Virtual IP works
 
 #### Delete Virtual IP <a href="#virtualip-deletevirtualip" id="virtualip-deletevirtualip"></a>
 
-1. Go to VNG Cloud portal console, navigate to Virtual IP page
+1. Go to GreenNode portal console, navigate to Virtual IP page
 2. Select Virtual IP and click **Delete** on the right side
 
 <br>

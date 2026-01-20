@@ -1,6 +1,6 @@
 # Access Management
 
-When deploying and managing Server Disaster Recovery (SDR) on VNG Cloud, setting up access and authorization policies (IAM) is very important to ensure security and tight control of DR-related activities. Refer to the article below to manage access and authorization on SDR.
+When deploying and managing Server Disaster Recovery (SDR) on GreenNode, setting up access and authorization policies (IAM) is very important to ensure security and tight control of DR-related activities. Refer to the article below to manage access and authorization on SDR.
 
 ### 1. Endpoint list <a href="#id-1.-danh-sach-endpoint" id="id-1.-danh-sach-endpoint"></a>
 
@@ -8,14 +8,14 @@ When deploying and managing Server Disaster Recovery (SDR) on VNG Cloud, setting
 
 ### **2. List of VNG Managed DR Policies** <a href="#iamforvserver-2.danhsachvngmanagedpolicies" id="iamforvserver-2.danhsachvngmanagedpolicies"></a>
 
-VNG Managed Policy is an IAM Policy created by default by the VNG Cloud IAM system. These Policies are managed by VNG Cloud itself to support users in quickly setting up the necessary access rights for IAM user accounts for resources of each specific Product. Let's find out the list of VNG Managed Policies for DR:
+VNG Managed Policy is an IAM Policy created by default by the GreenNode IAM system. These Policies are managed by GreenNode itself to support users in quickly setting up the necessary access rights for IAM user accounts for resources of each specific Product. Let's find out the list of VNG Managed Policies for DR:
 
 * [DRFullAccess:](https://iam.console.vngcloud.vn/policies/76de3567-c57c-4167-b304-9133f9af7daf) Includes full access to Disaster Recovery Center resources
 * [DRReadOnlyAccess:](https://iam.console.vngcloud.vn/policies/3d44e007-fcd1-4d6f-85b9-f3981ef286a1) Includes Read access only on resources in the Disaster Recovery Center system
 
 ### 3. Get Started Using IAM with DRC <a href="#id-3.-bat-dau-su-dung-iam-voi-drc" id="id-3.-bat-dau-su-dung-iam-voi-drc"></a>
 
-This guide is intended to guide users to quickly start using IAM in DRC services by using the default permissions **(defined by VNG Cloud Managed Policies)** for the DRC system called **DRFullAccess.** However, the features and services at DRC are linked and inherited from vServer, so to be able to delegate permissions on DRC, you need to pay attention to the corresponding permissions of vServer (permissions on Server, Volume, ...)
+This guide is intended to guide users to quickly start using IAM in DRC services by using the default permissions **(defined by GreenNode Managed Policies)** for the DRC system called **DRFullAccess.** However, the features and services at DRC are linked and inherited from vServer, so to be able to delegate permissions on DRC, you need to pay attention to the corresponding permissions of vServer (permissions on Server, Volume, ...)
 
 #### **3.1 Access IAM Console** <a href="#id-3.1-truy-cap-iam-console" id="id-3.1-truy-cap-iam-console"></a>
 

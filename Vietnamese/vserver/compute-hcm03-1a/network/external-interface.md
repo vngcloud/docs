@@ -20,13 +20,13 @@ Bạn cần cấu hình địa chỉ IP cho External Interface từ trong hệ �
 
 #### Tạo External Interface <a href="#externalinterface-taoexternalinterface" id="externalinterface-taoexternalinterface"></a>
 
-1. Vào trang VNG Cloud portal console, đến trang External Interface
+1. Vào trang GreenNode portal console, đến trang External Interface
 2. Tạo External Interface, bạn có thể xem chi phí ở bên phải
 3. Sau khi tạo xong bạn sẽ có thông tin của IP, netmask và gateway được cấp cho External Interface, những thông tin này cần thiết cho việc cấu hình IP trong hệ điều hành sau này
 
 #### Gắn/Tháo gỡ trên máy chủ ảo <a href="#externalinterface-gan-thaogotrenmaychuao" id="externalinterface-gan-thaogotrenmaychuao"></a>
 
-1. Vào trang VNG Cloud portal console, đến trang Instance
+1. Vào trang GreenNode portal console, đến trang Instance
 2. Đi đến trang chi tiết của máy chủ ảo cần thao tác External Interface, đi đến tab Network Interface
 3. Nhấn **Attach an Interface** và chọn External Interface mà bạn đã mua trước đó. Khi tháo gỡ, bạn chỉ việc chọn xác nhận sau khi nhấn **Detach an Interface**
 4. Sau khi gắn External Interface, bạn cần phải cấu hình IP từ trong hệ điều hành của máy chủ để sử dụng. (Trường hợp máy chủ đã gắn thành công External Interface và đồng thời cũng sử dụng 1 public load balancer thì traffic từ bên ngoài có thể truy cập vào máy chủ thông qua External Interface IP hoặc public load balancer IP).
@@ -37,5 +37,5 @@ Bạn cần cấu hình địa chỉ IP cho External Interface từ trong hệ �
 
 #### Xóa External Interface <a href="#externalinterface-xoaexternalinterface" id="externalinterface-xoaexternalinterface"></a>
 
-1. Vào trang VNG Cloud portal console, đến trang External Interface
+1. Vào trang GreenNode portal console, đến trang External Interface
 2. Chọn External Interface cần delete, nhấn **Delete** ở bên phải

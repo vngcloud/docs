@@ -21,7 +21,7 @@ To create a processor group, follow the instructions below:
 4\. Select **Create a processor group** or **Process Group Library** in which:
 
 * **Create a processor group** : create a completely new processor group.
-* **Process Group Library** : create processor group from available libraries supported by VNG Cloud.
+* **Process Group Library** : create processor group from available libraries supported by GreenNode.
 
 <details>
 
@@ -39,7 +39,7 @@ To create a processor group, follow the instructions below:
 
 <summary>Process Group Library</summary>
 
-Currently, VNG Cloud supports libraries for two popular applications: **Apache and Nginx** . Once you select **Process Group Library** , continue with the steps below to complete creating the processor group
+Currently, GreenNode supports libraries for two popular applications: **Apache and Nginx** . Once you select **Process Group Library** , continue with the steps below to complete creating the processor group
 
 1. Select ( **Duplicate this group)** to create a Processor Group from this Library.
 

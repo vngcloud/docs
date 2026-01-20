@@ -25,7 +25,7 @@ The table below shows the supported user-side tools and versions in vStorage. We
 
 To use 3rd party software, you need to provide authentication information for these tools to access the vStorage storage service. You can use the Service Account identity to authenticate when accessing vStorage resources through the mentioned tools. To use a Service Account, you need to initialize S3 keys and a Swift account through the vIAM service, please refer to [Service Account](https://docs.vngcloud.vn/display/VSEN/Service+Account).
 
-After initializing S3 keys and a Swift account through the vIAM service, collect the following information to use as authentication details when accessing the vStorage service. If you don't have this information, please contact your VNG Cloud account administrator.
+After initializing S3 keys and a Swift account through the vIAM service, collect the following information to use as authentication details when accessing the vStorage service. If you don't have this information, please contact your GreenNode account administrator.
 
 * Information for S3 key includes access key, secret key, project, and restriction by IAM (if applicable).
 * Information for the Swift account includes username, password, project, and restriction by IAM (if applicable).

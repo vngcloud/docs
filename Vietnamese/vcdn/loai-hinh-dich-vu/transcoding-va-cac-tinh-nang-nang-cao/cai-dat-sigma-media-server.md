@@ -18,15 +18,15 @@ Sử dụng hướng dẫn bên dưới để cài đặt Sigma Media Server:
 
 mà bạn mong muốn sử dụng cho server của bạn. Ngoài ra bạn cũng cần chọn Một Server Group đã tồn tại hoặc chọn **Dedicated SOFT ANTI AFFINITY group** để chúng tôi tự động tạo một server group mới.
 
-**Bước 4:** Tiến hành **thanh toán** như các tài nguyên bình thường trên VNG Cloud.
+**Bước 4:** Tiến hành **thanh toán** như các tài nguyên bình thường trên GreenNode.
 
 Lúc này, hệ thống **vServer** sẽ khởi tạo một Server tương ứng với cấu hình mà bạn lựa chọn. Hãy chờ đợi tới khi việc tạo server hoàn thành và tiếp tục các bước sau đây.
 
 <figure><img src="../../../.gitbook/assets/image (10) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Cấu hình thông số cho Sigma Media Server&#x20;
+### Cấu hình thông số cho Sigma Media Server
 
-**Bước 1:** Sau khi khởi tạo Sigma từ **vMarketPlace** theo hướng dẫn bên trên, bạn có thể truy cập vào giao diện **vServer** tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) để kiểm tra server chạy Sigma đã được khởi tạo xong chưa. <mark style="color:red;">**Tiếp theo, bạn cần mở các sau trên Security Group cho server Sigma vừa tạo.**</mark>&#x20;
+**Bước 1:** Sau khi khởi tạo Sigma từ **vMarketPlace** theo hướng dẫn bên trên, bạn có thể truy cập vào giao diện **vServer** tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) để kiểm tra server chạy Sigma đã được khởi tạo xong chưa. <mark style="color:red;">**Tiếp theo, bạn cần mở các sau trên Security Group cho server Sigma vừa tạo.**</mark>
 
 * 4000 (TCP): Portal
 * 8080 (TCP): HTTP origin (nginx)
@@ -54,11 +54,9 @@ Lúc này, hệ thống **vServer** sẽ khởi tạo một Server tương ứng
 
 <figure><img src="../../../.gitbook/assets/image (8) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
+**Bước 6:** Nhập **server name**. Server name này bạn có thể lấy từ portal GreenNode. Ví dụ bên dưới tôi dùng server Demo\_Sigma đã tạo trước đó.
 
-
-**Bước 6:** Nhập **server name**. Server name này bạn có thể lấy từ portal VNGCloud. Ví dụ bên dưới tôi dùng server Demo\_Sigma đã tạo trước đó.
-
-<figure><img src="/broken/files/RUfRM3wyVgeBcJuOq7uU" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 7**: Bạn có thể điều chỉnh bật/ tắt các configuration bao gồm:
 

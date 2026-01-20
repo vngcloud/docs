@@ -1,8 +1,8 @@
 # Monitoring vDB with vMonitor Platform
 
-Monitoring is an essential requirement for any system. On VNG Cloud, you can monitor vDB by using the **vMonitor Platform** service.
+Monitoring is an essential requirement for any system. On GreenNode, you can monitor vDB by using the **vMonitor Platform** service.
 
-**vMonitor Platform** is a Monitoring as a Service (MaaS) that collects health metrics and logs of resources on VNG Cloud (or outside VNG Cloud). Additionally, you can create visual dashboards, set alarms, and send notifications when incidents occur. For more details about this service, refer to: [vMonitor Platform](https://docs.vngcloud.vn/vng-cloud-document/vmonitor).
+**vMonitor Platform** is a Monitoring as a Service (MaaS) that collects health metrics and logs of resources on GreenNode (or outside GreenNode). Additionally, you can create visual dashboards, set alarms, and send notifications when incidents occur. For more details about this service, refer to: [vMonitor Platform](https://docs.vngcloud.vn/vng-cloud-document/vmonitor).
 
 To get started, access the vMonitor Platform, go to the **Infrastructure List**, and select the **vDB** tab at the link: [**vMonitor Infrastructure List > vDB**](https://vmonitor.console.vngcloud.vn/infrastructure/vdb). You can refer to the description at: [**Working with vDB - Metric**.](https://docs.vngcloud.vn/vng-cloud-document/vmonitor/dashboards/metrics/lam-viec-voi-product-metric/lam-viec-voi-vdb-metric)
 
@@ -22,7 +22,7 @@ The vDB metrics support the following dimensions to filter metrics by specific v
 
 You can also create alarms based on these metrics. **Set Alarms for Metrics**
 
-For critical vDB instances, VNG Cloud recommends creating at least the following alarms:
+For critical vDB instances, GreenNode recommends creating at least the following alarms:
 
 * **CPU usage**: Percentage of CPU usage for the vDB Instance. Use the metric `vdb.cpu.percent`, with warning thresholds like >80%, >90%, >100%.
 * **Memory usable**: Percentage of available memory for the vDB Instance. Use the metric `vdb.mem.usable_perc`, with warning thresholds like <20%, <10%.

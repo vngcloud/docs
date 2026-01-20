@@ -6,7 +6,7 @@
 
 #### **Currently, you need:**
 
-* MP4 files after being transcoded to different resolutions are stored on an object storage service compatible with S3 and can be accessed via VNG Cloud's vCDN.
+* MP4 files after being transcoded to different resolutions are stored on an object storage service compatible with S3 and can be accessed via GreenNode's vCDN.
 
 #### **Implementation solution:**
 
@@ -23,7 +23,7 @@ To do the above problem, follow the instructions below:
 
 ## Initialize a bucket on any S3-compatible service to store the source data <a href="#khoi-tao-bucket-tren-bat-ky-dich-vu-s3-compatible-de-lam-noi-luu-tru-du-lieu-nguon" id="khoi-tao-bucket-tren-bat-ky-dich-vu-s3-compatible-de-lam-noi-luu-tru-du-lieu-nguon"></a>
 
-First, you need to initialize a bucket on any S3-compatible service to store the source data. You can use AWS S3, Google Storage,... or you can also choose to use vStorage developed by VNGCloud as the source data storage. For details on the steps to initialize a bucket on vStorage, please refer here [.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/khoi-tao-container) After the bucket has been initialized, do the following:
+First, you need to initialize a bucket on any S3-compatible service to store the source data. You can use AWS S3, Google Storage,... or you can also choose to use vStorage developed by GreenNode as the source data storage. For details on the steps to initialize a bucket on vStorage, please refer here [.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/khoi-tao-container) After the bucket has been initialized, do the following:
 
 * Set up public access from the internet to objects following the instructions [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/chuyen-che-do-cong-khai-container) .
 * Upload an .MP4 file as a sample for transcoding
@@ -93,7 +93,7 @@ First, you need to install Sigma Media Server following the steps [here](https:/
 
 ## Initialize and configure the vCDN service. <a href="#khoi-tao-va-cau-hinh-dich-vu-vcdn" id="khoi-tao-va-cau-hinh-dich-vu-vcdn"></a>
 
-**Step 1:** You access [VNG Cloud – ](https://vcdn.vngcloud.vn/)[vCDN ](https://vcdn.vngcloud.vn/)[Portal](https://vcdn.vngcloud.vn/)
+**Step 1:** You access [GreenNode – ](https://vcdn.vngcloud.vn/)[vCDN ](https://vcdn.vngcloud.vn/)[Portal](https://vcdn.vngcloud.vn/)
 
 **Step 2:** Create a CDN domain for VOD following the instructions [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vcdn/loai-hinh-dich-vu/video-on-demand-streaming) .
 

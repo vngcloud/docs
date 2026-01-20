@@ -14,7 +14,7 @@ Log là một yếu tố quan trọng của an ninh mạng. Khi được thực 
 
 #### Giám sát vStorage thông qua vStorage log trên hệ thống vMonitor Platform <a href="#giamsatvstoragethongqualog-giamsatvstoragethongquavstoragelogtrenhethongvmonitorplatform" id="giamsatvstoragethongqualog-giamsatvstoragethongquavstoragelogtrenhethongvmonitorplatform"></a>
 
-Giám sát vStorage thông qua log thật dễ dàng khi bạn sử dụng hệ thống vMonitor Platform. Chúng tôi đã chuyển logs từ vStorage qua vMonitor Platform đều đặn theo chu kỳ 5 phút. Hãy yên tâm là vMonitor Platform cũng là một sản phẩm thuộc hệ sinh thái của VNG Cloud. Bạn có thể sử dụng vMonitor Platform để cấu hình các tính năng giám sát dựa trên logs của vStorage. Dĩ nhiên để có thể thực hiện giám sát được thì bạn cần mua gói log quota của dịch vụ vMonitor Platform. Chi tiết bạn có thể tham khảo tại [vMonitor Platform](../../../../vmonitor/).&#x20;
+Giám sát vStorage thông qua log thật dễ dàng khi bạn sử dụng hệ thống vMonitor Platform. Chúng tôi đã chuyển logs từ vStorage qua vMonitor Platform đều đặn theo chu kỳ 5 phút. Hãy yên tâm là vMonitor Platform cũng là một sản phẩm thuộc hệ sinh thái của GreenNode. Bạn có thể sử dụng vMonitor Platform để cấu hình các tính năng giám sát dựa trên logs của vStorage. Dĩ nhiên để có thể thực hiện giám sát được thì bạn cần mua gói log quota của dịch vụ vMonitor Platform. Chi tiết bạn có thể tham khảo tại [vMonitor Platform](../../../../vmonitor/).&#x20;
 
 Nội dung logs được đẩy về hệ thống gồm các thông tin như sau:
 

@@ -1,5 +1,5 @@
 ---
-description: Overview of DDoS Protection in VNG Cloud
+description: Overview of DDoS Protection in GreenNode
 ---
 
 # DDoS

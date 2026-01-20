@@ -4,7 +4,7 @@ The Backup management interface provides an overview of all existing backups and
 
 **A. On-Demand Backup (Manual Backup)**
 
-When you need to create a backup, access the VNG Cloud service and go to the backup management screen. This screen will list all backups (manual & automatic) of all DB Instances in your account.
+When you need to create a backup, access the GreenNode service and go to the backup management screen. This screen will list all backups (manual & automatic) of all DB Instances in your account.
 
 **Method 1:** Click the "Create Backup" button. On the Create Backup screen, select the following information:
 
@@ -44,7 +44,7 @@ To configure this feature, you have two options:
 3. Scroll down to the "Backup settings" section, and you can configure the following information:
    * **Automatic daily backup:** Enable/disable the automatic daily backup feature.
    * **Backup retention period:** Determine the storage time for automatic backups. To help you save storage space, automatic backups exceeding this period will be deleted.
-   * **Backup time:** The time when the automatic backup process takes place. VNG Cloud recommends choosing this time during the lowest traffic period for your system.
+   * **Backup time:** The time when the automatic backup process takes place. GreenNode recommends choosing this time during the lowest traffic period for your system.
 
 After ensuring that the information is correct, click the "Save" button in the upper right corner and wait for the changes to be applied.
 

@@ -12,7 +12,7 @@ Sau khi bạn tải object lên container, bạn có thể xem thông tin về o
 
 Bạn đã tải xuống thành công object của mình.
 
-<figure><img src="/broken/files/0MoD1DuvijTZL7Wkq8vU" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Tai_xuong_object (1).gif" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Sử dụng vStorage API" %}
@@ -22,10 +22,8 @@ Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung c�
 {% endtab %}
 
 {% tab title=" Sử dụng 3rd party softwares" %}
-vStorage cũng tương thích với các công cụ phía người dùng sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.&#x20;
+vStorage cũng tương thích với các công cụ phía người dùng sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.
 
 Để tải xuống object qua 3rd party software, hãy xem [3rd party softwares](../../3rd-party-softwares/).
-
-
 {% endtab %}
 {% endtabs %}

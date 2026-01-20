@@ -1,6 +1,6 @@
 # Chuyển đổi hình thức sử dụng từ POC sang dịch vụ trả phí
 
-Tại VNG Cloud Service, chúng tôi hỗ trợ người dùng thay đổi mục đích sử dụng tài nguyên một cách linh hoạt, từ giai đoạn POC chuyển sang dịch vụ trả phí trên cùng một tài nguyên. Việc chuyển đổi mục đích sử dụng trên mang lại lợi ích đáng kể như _**tiết kiệm thời gian khởi tạo tài nguyên mới (cấu hình, thanh toán,...), tối ưu hóa chi phí sử dụng, tái sử dụng dữ liệu cũ cho mục địch mới,...**_
+Tại GreenNode Service, chúng tôi hỗ trợ người dùng thay đổi mục đích sử dụng tài nguyên một cách linh hoạt, từ giai đoạn POC chuyển sang dịch vụ trả phí trên cùng một tài nguyên. Việc chuyển đổi mục đích sử dụng trên mang lại lợi ích đáng kể như _**tiết kiệm thời gian khởi tạo tài nguyên mới (cấu hình, thanh toán,...), tối ưu hóa chi phí sử dụng, tái sử dụng dữ liệu cũ cho mục địch mới,...**_
 
 Để thực hiện quá trình chuyển đổi, vui lòng thực hiện theo các hướng dẫn bên dưới:
 
@@ -10,7 +10,7 @@ Tại VNG Cloud Service, chúng tôi hỗ trợ người dùng thay đổi mục
 * **Bước 4:** Tại trang thanh toán, người dùng thực hiện tương tự việc mua mới, theo nhu cầu sử dụng như
   * Chọn thời gian sử dụng tài nguyên
   * Bật tính năng tự động gia hạn
-  * Chọn thanh toán bằng VNG Cloud credit hoặc trực tiếp từ cổng thanh toán
+  * Chọn thanh toán bằng GreenNode credit hoặc trực tiếp từ cổng thanh toán
 * **Bước 5:** Sau khi thanh toán thành công, người dùng sẽ được chuyển hướng về trang web quản lý tài nguyên để kiểm tra thông tin và tiếp tục sử dụng tài nguyên
 
 Lúc này, hệ thống đã ghi nhận tài nguyên hoàn tất quá trình chuyển đổi sang dịch vụ trả phí, người dùng có thể kiểm tra thông tin hóa đơn dịch vụ (ngoại trừ dịch vụ K8s (vContainer)) tại trang web vConsole - Lịch sử hóa đơn: [https://dashboard.console.vngcloud.vn/billing-report](https://dashboard.console.vngcloud.vn/billing-report)

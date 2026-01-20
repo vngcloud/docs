@@ -1,6 +1,6 @@
 # Kết nối vào máy chủ Windows sử dụng công cụ Remote Desktop (RDP)
 
-Bạn có thể kết nối dễ dàng với các máy chủ Window được tạo từ trình điều khiển VNG Cloud bằng Remote Desktop. Để làm điều này, bạn cần tải về RDP và làm theo hướng dẫn bên dưới của chúng tôi. RDP có sẵn trên hầu hết các phiên bản Windows và cũng có sẵn cho Mac OS.
+Bạn có thể kết nối dễ dàng với các máy chủ Window được tạo từ trình điều khiển GreenNode bằng Remote Desktop. Để làm điều này, bạn cần tải về RDP và làm theo hướng dẫn bên dưới của chúng tôi. RDP có sẵn trên hầu hết các phiên bản Windows và cũng có sẵn cho Mac OS.
 
 Để biết thông tin về cách kết nối với phiên bản Linux, hãy xem hướng dẫn  [Kết nối vào máy chủ Linux bằng công cụ SSH Client](ket-noi-vao-may-chu-linux-bang-cong-cu-ssh-client.md) dành cho Phiên bản Linux về cách kết nối với máy chủ của bạn.
 
@@ -23,7 +23,7 @@ Bạn có thể kết nối dễ dàng với các máy chủ Window được t�
 
 <figure><img src="../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Lưu ý:** Thông tin này là bảo mật và chỉ được gởi cho email đã đăng kí. VNG Cloud không thể can thiệp để phục hồi thông tin login của máy chủ (username/ password/ key) trong mọi tình huống.
+**Lưu ý:** Thông tin này là bảo mật và chỉ được gởi cho email đã đăng kí. GreenNode không thể can thiệp để phục hồi thông tin login của máy chủ (username/ password/ key) trong mọi tình huống.
 
 ***
 

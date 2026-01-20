@@ -1,6 +1,6 @@
 # What is Region?
 
-A Region in general is a specific geographic area where you can run your resources. For the vStorage product, a region represents a data center where VNG Cloud has deployed the infrastructure and vStorage services ready for customer use. You can choose a region as the storage location for your data, and selecting the appropriate region will optimize end-user interaction time, minimize costs, or address specific regulatory requirements. Data stored in each region will never leave the selected region unless actively moved or copied from one region to another.
+A Region in general is a specific geographic area where you can run your resources. For the vStorage product, a region represents a data center where GreenNode has deployed the infrastructure and vStorage services ready for customer use. You can choose a region as the storage location for your data, and selecting the appropriate region will optimize end-user interaction time, minimize costs, or address specific regulatory requirements. Data stored in each region will never leave the selected region unless actively moved or copied from one region to another.
 
 ***
 

@@ -2,7 +2,7 @@
 
 ### Tổng quan <a href="#lamviecvoisynthetictestquota-tongquan" id="lamviecvoisynthetictestquota-tongquan"></a>
 
-Một Synthetic test quota là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát thông qua API với số lượng API test và alarm cụ thể mà bạn thực hiện mua sắm trên VNG Cloud. Tại một thời điểm bạn chỉ có thể sở hữu một Synthetic test quota và sử dụng chúng như một cách tổ ức tài nguyên cho các nhóm hay phòng ban sử dụng với mục đích khác nhau.
+Một Synthetic test quota là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát thông qua API với số lượng API test và alarm cụ thể mà bạn thực hiện mua sắm trên GreenNode. Tại một thời điểm bạn chỉ có thể sở hữu một Synthetic test quota và sử dụng chúng như một cách tổ ức tài nguyên cho các nhóm hay phòng ban sử dụng với mục đích khác nhau.
 
 ***
 

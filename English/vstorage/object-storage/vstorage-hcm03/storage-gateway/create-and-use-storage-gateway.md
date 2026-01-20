@@ -2,7 +2,7 @@
 
 **Hướng dẫn khởi tạo storage gateway**
 
-1. Truy cập trang chủ VNGCloud tại [đây](https://dashboard.console.vngcloud.vn/). Chọn Service: **vStorage**, sau đó chọn **Storage Gateway**:
+1. Truy cập trang chủ GreenNode tại [đây](https://dashboard.console.vngcloud.vn/). Chọn Service: **vStorage**, sau đó chọn **Storage Gateway**:
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Frcir0HyPBZPsnCfVV2Bj%252Fimage.png%3Falt%3Dmedia%26token%3D6052f33c-dc01-417e-b73a-1a11de19ffcf&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=6ee619cb&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 

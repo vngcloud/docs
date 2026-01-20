@@ -49,7 +49,7 @@ bạn có thể dùng lệnh sau để kiểm tra danh sách các extension đan
 | `select * from pg_available_extensions;` |
 | ---------------------------------------- |
 
-Nếu bạn cần extension nào chưa được hỗ trợ, vui lòng liên hệ với **VNG Cloud Support** để được hỗ trợ.
+Nếu bạn cần extension nào chưa được hỗ trợ, vui lòng liên hệ với **GreenNode Support** để được hỗ trợ.
 
 
 
@@ -57,5 +57,5 @@ Nếu bạn cần extension nào chưa được hỗ trợ, vui lòng liên hệ
 
 \+ Extension vector chỉ available cho các vDB khởi tạo từ 08/01/2024.&#x20;
 
-\+ Để sử dụng trên các vDB đã khởi tạo trước đó, bạn vui lòng liên hệ VNG Cloud Support để được hỗ trợ enable.
+\+ Để sử dụng trên các vDB đã khởi tạo trước đó, bạn vui lòng liên hệ GreenNode Support để được hỗ trợ enable.
 

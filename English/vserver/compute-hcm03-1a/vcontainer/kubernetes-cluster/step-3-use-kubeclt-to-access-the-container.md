@@ -4,7 +4,7 @@
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59802494/image2023-6-2_10-36-30.png?version=1&#x26;modificationDate=1685676991000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-**Step 2:** Download the Config Container file on the VNG CLOUD portal
+**Step 2:** Download the Config Container file on the GreenNode portal
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59802494/image2023-6-2_10-34-21.png?version=1&#x26;modificationDate=1685676862000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
@@ -24,7 +24,7 @@ Step 3.5: Copy the Config File on the Portal downloaded into the config file on 
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59802494/Screen%20Shot%202021-05-24%20at%2010.34.41.png?version=1&#x26;modificationDate=1684984787000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-**Step 4:** Check the connection from Kubectl to VNG CLOUD Container:
+**Step 4:** Check the connection from Kubectl to GreenNode Container:
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59802494/Screen%20Shot%202021-05-24%20at%2010.40.43.png?version=1&#x26;modificationDate=1684984788000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 

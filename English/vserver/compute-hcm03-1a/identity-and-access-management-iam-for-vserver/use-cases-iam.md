@@ -1,6 +1,6 @@
 # Use Cases IAM
 
-This article describes a simple business use case for IAM to help you understand how to implement the service to control user access to the VNG Cloud services you use. This example illustrates two ways that the company Example can apply IAM, including using VNG Cloud vServer.
+This article describes a simple business use case for IAM to help you understand how to implement the service to control user access to the GreenNode services you use. This example illustrates two ways that the company Example can apply IAM, including using GreenNode vServer.
 
 ***
 
@@ -8,13 +8,13 @@ This article describes a simple business use case for IAM to help you understand
 
 Sasha Nguyen and Alex Thompson are the co-founders of Example Company. When founding the company, they understood the importance of a robust identity access management system to protect their resources. They decided to implement Identity Access Management (IAM) for their organization to ensure that only authorized individuals could access the company’s resources and services.
 
-First, Sasha and Alex created a VNG Cloud account (Root user account). They used this account to access the IAM service. Their account was attached to the AdministratorAccess policy, meaning they had full control over all company resources and services with the Root user account.
+First, Sasha and Alex created a GreenNode account (Root user account). They used this account to access the IAM service. Their account was attached to the AdministratorAccess policy, meaning they had full control over all company resources and services with the Root user account.
 
 As the company expanded, Sasha and Alex began hiring employees for various positions. Sasha took on the responsibility of overseeing company operations, while Alex managed the engineering teams. However, they couldn't grant Root user account access to these employees, as it would exceed the authority of each job position. Therefore, they needed to provide employees with User accounts derived from the Root user account on the IAM homepage with specific permissions to access and use the resources.
 
 First, they identified the different roles within the company. For example, they had roles for developers, network administrators, database administrators, and support staff. Each role would have different access permissions to the company's resources and services. Sasha and Alex then created User accounts and user groups (Groups) corresponding to each role. These user groups would contain employees with similar access and roles, making it easier to manage access permissions for each group.
 
-To manage access permissions, Sasha and Alex used IAM policies. They defined what each role and user group could and could not do. They assigned policies and roles to different groups to provide users with the correct level of access to VNG Cloud resources. They used VNG Cloud-managed policies for job functions in the IAM Management Console to create the following permission groups:
+To manage access permissions, Sasha and Alex used IAM policies. They defined what each role and user group could and could not do. They assigned policies and roles to different groups to provide users with the correct level of access to GreenNode resources. They used GreenNode-managed policies for job functions in the IAM Management Console to create the following permission groups:
 
 * _Administrator_
 * _Billing_
@@ -26,7 +26,7 @@ To manage access permissions, Sasha and Alex used IAM policies. They defined wha
 
 They then assigned these policies to User accounts or Groups with the corresponding roles and provided usernames and passwords for the User accounts to employees to access and use the resources.
 
-To guide the implementation of the IAM Identity Center, Sasha and Alex referred to the comprehensive "[Getting Started](./)" section in the VNG Cloud IAM User Guide. This step-by-step guide provided detailed instructions for initial configuration. Additionally, they consulted the "[Permission List for VNG Cloud Account Access](actions-resources-and-required-conditions-for-vserver-access-decentralization.md)" section of the user guide to better understand how to grant user access within the IAM Identity Center.
+To guide the implementation of the IAM Identity Center, Sasha and Alex referred to the comprehensive "[Getting Started](./)" section in the GreenNode IAM User Guide. This step-by-step guide provided detailed instructions for initial configuration. Additionally, they consulted the "[Permission List for GreenNode Account Access](actions-resources-and-required-conditions-for-vserver-access-decentralization.md)" section of the user guide to better understand how to grant user access within the IAM Identity Center.
 
 As the innovative company continued to grow, Sasha and Alex remained diligent in reviewing and updating access permissions for each employee. They regularly adjusted access permissions and levels to ensure that employees had the appropriate access privileges for their roles and responsibilities within the organization or revoked them as needed.
 
@@ -34,7 +34,7 @@ As the innovative company continued to grow, Sasha and Alex remained diligent in
 
 ## IAM Use Case with vServer <a href="#cactruonghopsudungiam-truonghopsudungiamvoivserver" id="cactruonghopsudungiam-truonghopsudungiamvoivserver"></a>
 
-A company like Example often uses IAM to interact with services such as VNG Cloud vServer. To understand this part of the use case, you need a basic understanding of VNG Cloud vServer. For more information on VNG Cloud vServer, see the [vServer User Guide](../getting-started/).
+A company like Example often uses IAM to interact with services such as GreenNode vServer. To understand this part of the use case, you need a basic understanding of GreenNode vServer. For more information on GreenNode vServer, see the [vServer User Guide](../getting-started/).
 
 ### vServer Permissions for User Groups <a href="#cactruonghopsudungiam-quyenvserverchonhomnguoidung" id="cactruonghopsudungiam-quyenvserverchonhomnguoidung"></a>
 
@@ -46,11 +46,11 @@ At Example, different user groups require different permissions:
 
 ### **Assigning System Administrator Permissions to a User Group** <a href="#cactruonghopsudungiam-phanquyensystemadministratorchonhomnguoidung" id="cactruonghopsudungiam-phanquyensystemadministratorchonhomnguoidung"></a>
 
-Taylor Smith was hired as a project manager, so he needs access to all company resources to manage access and deploy IT projects related to VNG Cloud infrastructure. Therefore, Alex granted Taylor a User account with vServerFullAccess permissions following these steps:
+Taylor Smith was hired as a project manager, so he needs access to all company resources to manage access and deploy IT projects related to GreenNode infrastructure. Therefore, Alex granted Taylor a User account with vServerFullAccess permissions following these steps:
 
 #### **Step 1: Create a User Account in the IAM System** <a href="#cactruonghopsudungiam-buoc1-taotaikhoannguoidung-useraccount-trenhethongiam" id="cactruonghopsudungiam-buoc1-taotaikhoannguoidung-useraccount-trenhethongiam"></a>
 
-1. Alex created a VNG Cloud account on the homepage: [https://sso.vngcloud.vn/cas/login?service=https%3A%2F%2Fportal3.vngcloud.vn%2F](https://sso.vngcloud.vn/cas/login?service=https%3A%2F%2Fportal3.vngcloud.vn%2F) using the Root user account information: **Admin@vngcloud.vn**, password: **12345678@!**
+1. Alex created a GreenNode account on the homepage: [https://sso.vngcloud.vn/cas/login?service=https%3A%2F%2Fportal3.vngcloud.vn%2F](https://sso.vngcloud.vn/cas/login?service=https%3A%2F%2Fportal3.vngcloud.vn%2F) using the Root user account information: **Admin@vngcloud.vn**, password: **12345678@!**
 2. Navigate to the IAM homepage:  [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)  using the Root user account to log in.
 3. Open the User account tab.
 4. Select "**Create a user account**."
@@ -87,7 +87,7 @@ After completing these steps, the SysAd group will include the User account Sysa
 
 **Step 4: Access Resources Using the IAM Account (User account)** After creating the User account: Sysad01, Alex granted this account to Taylor, who then used it to access the company's resources:
 
-1. Access the vServer dashboard at: [VNG Cloud vServer](https://hcm-3.console.vngcloud.vn/vserver/).
+1. Access the vServer dashboard at: [GreenNode vServer](https://hcm-3.console.vngcloud.vn/vserver/).
 2. On the **login** screen, select "**SIGNIN WITH IAM USER ACCOUNT.**"
 3. Enter the **Root email information: Admin@vngcloud.vn, User name: Sysad01, Password: Asddehj**.
 4. The screen will navigate to the vServer management page, where you can interact with the resources granted in the Policy assigned to the User account.
@@ -154,7 +154,7 @@ Sau khi tạo 2 User account: Dev01, Dev02, Alex đã cấp quyền sử dụng 
 
 After creating the two User accounts: Dev01 and Dev02, Alex granted these accounts to Johnson and Scott, who then used them to access the company's resources:
 
-1. Access the vServer dashboard at: [VNG Cloud vServer](https://hcm-3.console.vngcloud.vn/vserver/).
+1. Access the vServer dashboard at: [GreenNode vServer](https://hcm-3.console.vngcloud.vn/vserver/).
 2. On the **login** screen, select "**SIGNIN WITH IAM USER ACCOUNT**."
 3. Enter the **Root email** information: **Admin@vngcloud.vn**, Username: **Dev01** ; Password: **Asddehj1** / Username: **Dev02** ; Password: **Aseeeghe2**.
 4. The screen will navigate to the vServer management page, where you can interact with the resources granted in the Policy assigned to the User account.
@@ -199,7 +199,7 @@ After completing these steps, the SupportGroup will include the User account Sup
 
 **Step 4: Access Resources Using the IAM Account (User account)** After creating the User account: Supo01, Alex granted this account to Taylor, who then used it to access the company's resources:
 
-1. Access the vServer dashboard at: [VNG Cloud vServer](https://hcm-3.console.vngcloud.vn/vserver/).
+1. Access the vServer dashboard at: [GreenNode vServer](https://hcm-3.console.vngcloud.vn/vserver/).
 2. On the **login** screen, select "**SIGNIN WITH IAM USER ACCOUNT**."
 3. Enter the **Root email information: Admin@vngcloud.vn, User name: Supo01, Password: Asddehj3.**
 

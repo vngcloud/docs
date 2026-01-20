@@ -16,7 +16,7 @@ Trước khi thực hiện thay đổi gói Băng thông của Cross Connect, b�
 
 Chi tiết các bước thực hiện Thay đổi như sau:
 
-**Bước 1:** Truy cập thành công vào VNG Cloud, tại màn hình Console chọn đến dịch vụ vNetwork;
+**Bước 1:** Truy cập thành công vào GreenNode, tại màn hình Console chọn đến dịch vụ vNetwork;
 
 **Bước 2:** Tại thanh menu bên trái của giao diện vNetwork, chọn mục Cross Connect;
 

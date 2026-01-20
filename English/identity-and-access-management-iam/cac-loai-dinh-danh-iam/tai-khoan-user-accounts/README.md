@@ -1,11 +1,11 @@
 # User Accounts
 
-In VNG Cloud Services, creating IAM user accounts and groups is a straightforward process using the IAM management console. It aims to grant additional users access to services and resources on your account without sharing sensitive security information.
+In GreenNode Services, creating IAM user accounts and groups is a straightforward process using the IAM management console. It aims to grant additional users access to services and resources on your account without sharing sensitive security information.
 
 #### User Accounts Management <a href="#useraccounts-useraccountsmanagement" id="useraccounts-useraccountsmanagement"></a>
 
-* **Root user account:** A root user account is an entity that you first create in VNG Cloud and use that has complete access to all VNG Cloud services and resources in the account.
-* **IAM user account:** A user account or IAM user account is an entity that represents the person that uses it to interact with VNG Cloud on Portal UI. A user account in VNG Cloud consists of credentials (username, password) and is denied access by default. User accounts are not separate accounts; they are users within the same root user account and they don't need to have a payment method on file with VNG Cloud. Any activity performed by user accounts in your account is billed to your root user account.
+* **Root user account:** A root user account is an entity that you first create in GreenNode and use that has complete access to all GreenNode services and resources in the account.
+* **IAM user account:** A user account or IAM user account is an entity that represents the person that uses it to interact with GreenNode on Portal UI. A user account in GreenNode consists of credentials (username, password) and is denied access by default. User accounts are not separate accounts; they are users within the same root user account and they don't need to have a payment method on file with GreenNode. Any activity performed by user accounts in your account is billed to your root user account.
 
 **1. How to Create IAM Users?**
 

@@ -1,8 +1,8 @@
 # Lịch sử hóa đơn
 
-**Lịch sử hóa đơn / Billing history** tại vConsole cung cấp các báo cáo, thống kê chi phí sử dụng các sản phẩm VNG Cloud Service như (vServer, vMonitor, vStorage, vCDN,...). Tại đây, vConsole cung cấp 2 loại báo cáo, thống kê (Tổng quan và chi tiết) phù hợp với nhu cầu người dùng như:
+**Lịch sử hóa đơn / Billing history** tại vConsole cung cấp các báo cáo, thống kê chi phí sử dụng các sản phẩm GreenNode Service như (vServer, vMonitor, vStorage, vCDN,...). Tại đây, vConsole cung cấp 2 loại báo cáo, thống kê (Tổng quan và chi tiết) phù hợp với nhu cầu người dùng như:
 
-* Biểu đồ tròn: Thống kê chi phí sử dụng dịch vụ VNG Cloud Service phân loại theo từng sản phẩm cụ thể theo khoảng thời gian nhất định.
+* Biểu đồ tròn: Thống kê chi phí sử dụng dịch vụ GreenNode Service phân loại theo từng sản phẩm cụ thể theo khoảng thời gian nhất định.
 * Biểu đồ cột: Thống kê chi phí thanh toán hóa đơn theo giá tiền và tình trạng thanh toán theo khoảng thời gian nhất định.
 
 Truy cập đến trang **Lịch sử hóa đơn / Billing history** [**tại đây**](https://dashboard.console.vngcloud.vn/billing-report)**.**
@@ -13,7 +13,7 @@ Tại trang **Lịch sử hóa đơn / Billing history**, người dùng sẽ th
 
 ***
 
-Tại đây, người dùng có thể chọn xem Tổng thanh toán của các dịch vụ VNG Cloud Service bao gồm (_vServer, vStorage, vMonitor, vCDN_) theo các mốc thời gian tại **time box (đơn vị tháng)** như
+Tại đây, người dùng có thể chọn xem Tổng thanh toán của các dịch vụ GreenNode Service bao gồm (_vServer, vStorage, vMonitor, vCDN_) theo các mốc thời gian tại **time box (đơn vị tháng)** như
 
 * **Quick**: Với các lựa chọn _This month, Last month, Last 2 months, Last 3 months, Last 6 months_
 * **Relative**: Nhập số tháng bất kỳ kể từ thời điểm hiện tại. Ví dụ: hiện tại là tháng **12/2022**, tại trường "From", bạn nhập con số 5, có nghĩa mốc thời gian được áp dụng là từ tháng **07/2022** đến tháng **12/2022**. Đối với trường "To", nếu bạn nhập thêm con số 2, có nghĩa mốc thời gian được áp dụng là từ tháng **07/2022** đến tháng **10/2022.** Bấm nút **"View this range"** để áp dụng khoảng thời gian vừa chọn.
@@ -39,7 +39,7 @@ Tại đây, người dùng có thể xem thống kê chi tiết hóa đơn, bao
 Cùng với các chức năng chính như:
 
 * **Tìm kiếm:** Hỗ trợ tìm kiếm hóa đơn theo nhiều tiêu chí
-  1. **Theo sản phẩm / dịch vụ**: Tìm kiếm hóa đơn theo từng sản phẩm / dịch vụ của VNG Cloud Service, hiện tại vConsole đang hỗ trợ lọc theo 04 sản phẩm / dịch vụ chính như _vServer, vStorage, vMonitor, vCDN._
+  1. **Theo sản phẩm / dịch vụ**: Tìm kiếm hóa đơn theo từng sản phẩm / dịch vụ của GreenNode Service, hiện tại vConsole đang hỗ trợ lọc theo 04 sản phẩm / dịch vụ chính như _vServer, vStorage, vMonitor, vCDN._
   2. **Theo thời gian**: Hỗ trợ chọn tìm kiềm theo đơn vị ngày.
   3. **Theo từ khóa:** Hỗ trợ tìm kiếm theo từ khóa là _Mã hóa đơn / Chi tiết hóa đơn / Tình trạng hóa đơn_
 

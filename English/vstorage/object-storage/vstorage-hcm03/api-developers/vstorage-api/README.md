@@ -1,6 +1,6 @@
 # vStorage API
 
-vStorage provides S3 API, allowing companies, organizations, or other users to integrate their own user-facing applications and tools with vStorage for storing data such as images, videos, documents, etc. The vStorage S3 API includes APIs for working with VNG Cloud accounts, projects, containers, objects/directories, viewing billing information, and more.
+vStorage provides S3 API, allowing companies, organizations, or other users to integrate their own user-facing applications and tools with vStorage for storing data such as images, videos, documents, etc. The vStorage S3 API includes APIs for working with GreenNode accounts, projects, containers, objects/directories, viewing billing information, and more.
 
 Integrating your user-facing applications and tools with vStorage using the vStorage S3 API will help you store and manage your data on vStorage. Here's what you can do:
 

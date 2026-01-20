@@ -29,7 +29,7 @@ API Ping tests cho phép bạn gửi ICMP packet tới server hay các thiết b
 <br>
 
 * **Location**&#x20;
-  * Lựa chọn Location mà ở đó sẽ chạy các Ping Test tới hostname của bạn. Ping tests có thể chạy từ cả Public Locations (do VNG Cloud quản lý) và Private Locations (do khách hàng tự cài đặt và quản lý) dựa trên nhu cầu của bạn cho việc chạy test từ bên ngoài (internet) hay bên trong mạng của bạn. Public Locations do VNG Cloud quản lý hiện tại có 2 locations là HCM và HN.
+  * Lựa chọn Location mà ở đó sẽ chạy các Ping Test tới hostname của bạn. Ping tests có thể chạy từ cả Public Locations (do GreenNode quản lý) và Private Locations (do khách hàng tự cài đặt và quản lý) dựa trên nhu cầu của bạn cho việc chạy test từ bên ngoài (internet) hay bên trong mạng của bạn. Public Locations do GreenNode quản lý hiện tại có 2 locations là HCM và HN.
 
 <figure><img src="https://docs-admin.vngcloud.vn/download/attachments/59803717/image2022-8-29_16-42-28.png?version=1&#x26;modificationDate=1686544468000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 

@@ -21,4 +21,4 @@ We provide you with top solutions including:
 * Allow searching and analyzing saved data on vStorage: when there is a need to search for logs saved in vStorage, businesses can use the refill feature to reload the vStorage data into the Log Search system.
 * Diverse Notification System: a system for diverse notifications and feedback via Email, Slack, Webhook, and SMS.&#x20;
 * Timely and Reliable Alerts: timely and reliable alerts when conditions are met.
-* Deployment Model: Deployed and operated by top experts at VNG Cloud, vMonitor Log can collect and process large amounts of data, handling up to millions of log lines per minute.
+* Deployment Model: Deployed and operated by top experts at GreenNode, vMonitor Log can collect and process large amounts of data, handling up to millions of log lines per minute.

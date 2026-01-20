@@ -16,7 +16,7 @@ Processor: là những thư viện hỗ trợ bạn parse và enrich dữ liệu
 4. Tại **Processor group** đang tồn tại và có cấu hình Source và Destination Log project đúng theo mong muốn parser dữ liệu của bạn, chọn **Create a processor.**
 5. Tại mục nhập **Processor information**:
    * Nhập **Processor name**. Tên Processor phải tuân thủ theo quy định của chúng tôi, chi tiết tham khảo tại Phạm vi giới hạn Log pipeline.
-   * Chọn **Processor type**. Chúng tôi cung cấp cho bạn 6 loại processor type bao gồm:&#x20;
+   * Chọn **Processor type**. Chúng tôi cung cấp cho bạn 6 loại processor type bao gồm:
      * [Grok Parser](grok-parser/)
      * [JSON Parser](json-parser.md)
      * [CSV Parser](csv-parser.md)
@@ -40,7 +40,7 @@ Processor: là những thư viện hỗ trợ bạn parse và enrich dữ liệu
 2. Chọn thư mục **Log.**
 3. Chọn **Log pipeline.**
 4. Trong danh sách log pipeline đang có, chọn **Log pipeline** chứa **Processor group và Processor** mà bạn muốn chỉnh sửa.
-5. Tại **Processor** mà bạn muốn chỉnh sửa, chọn <img src="/broken/files/j9GGbPOPnjdnqS26YzE2" alt="" data-size="line">
+5. Tại **Processor** mà bạn muốn chỉnh sửa, chọn <img src="../../../../../.gitbook/assets/image (42).png" alt="" data-size="line">
 6. Chọn **Edit processor**.
 7. Chỉnh sửa các thông số cho **Processor** mà bạn mong muốn. Bạn có thể chỉnh sửa tất cả các trường thông tin trong cấu hình một Processor. Việc chỉnh sửa này tương tự như khi bạn thực hiện tạo mới một Processor theo hướng dẫn bên trên.
 8. Chọn **Save.**
@@ -49,14 +49,14 @@ Processor: là những thư viện hỗ trợ bạn parse và enrich dữ liệu
 
 ### Xóa processor
 
-Khi bạn không có nhu cầu sử dụng một Processor tùy chỉnh nữa, bạn có thể thực hiện xóa Processor khỏi hệ thống theo hướng dẫn bên dưới:&#x20;
+Khi bạn không có nhu cầu sử dụng một Processor tùy chỉnh nữa, bạn có thể thực hiện xóa Processor khỏi hệ thống theo hướng dẫn bên dưới:
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Log.**
 3. Chọn **Log pipeline** chứa Processor group và Processor mà bạn muốn thực hiện xóa.
 4. Chọn **Processor.**
-5. Tại **Processor** mà bạn muốn xóa, chọn <img src="/broken/files/q8cfHlE0gD4oFKSczPLZ" alt="" data-size="line">
+5. Tại **Processor** mà bạn muốn xóa, chọn <img src="../../../../../.gitbook/assets/image (47).png" alt="" data-size="line">
 6. Chọn **Delete**.
 7. Tại màn hình xác nhận xóa Processor, chọn **Delete**.
 
-Sau khi bạn thực hiện xóa thành công thì Processor của bạn sẽ bị xóa hoàn toàn khỏi hệ thống của chúng tôi. Bạn không thể khôi phục lại Processor đã xóa nên hãy lưu ý cẩn thận khi sử dụng tính năng này.&#x20;
+Sau khi bạn thực hiện xóa thành công thì Processor của bạn sẽ bị xóa hoàn toàn khỏi hệ thống của chúng tôi. Bạn không thể khôi phục lại Processor đã xóa nên hãy lưu ý cẩn thận khi sử dụng tính năng này.

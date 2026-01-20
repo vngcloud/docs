@@ -44,7 +44,7 @@ The following rules apply to Log pipeline naming in vMonitor Platform:
 * Log pipeline names can only include lowercase letters (a-z,), numbers (0-9), hyphens (-).
 * Log pipeline names must begin with a letter and end with a letter or a number.
 * The Log pipeline name should not contain sensitive information (eg IP address, account name, login password,...).
-* The Log pipeline name must be unique within a VNG Cloud account until that Log pipeline is deleted.
+* The Log pipeline name must be unique within a GreenNode account until that Log pipeline is deleted.
 
 **Processor group naming rules**
 
@@ -54,7 +54,7 @@ The following rules apply to Processor group naming in vMonitor Platform:
 * Processor group names can only include lowercase letters (az,), numbers (0-9), hyphens (-).
 * Processor group names must begin with a letter and end with a letter or a number.
 * The Processor group name should not contain sensitive information (eg IP address, account name, login password,...).
-* The Processor group name must be unique within a VNG Cloud account until that Processor group is deleted.
+* The Processor group name must be unique within a GreenNode account until that Processor group is deleted.
 
 **Processor naming rules**
 
@@ -64,7 +64,7 @@ The following rules apply to Processor naming in vMonitor Platform:
 * Processor names can only include lowercase letters (az,), numbers (0-9), hyphens (-).
 * Processor names must begin with a letter and end with a letter or a number.
 * Processor name should not contain sensitive information (eg IP address, account name, login password,...).
-* Processor name must be unique within a VNG Cloud account until that Processor is deleted.
+* Processor name must be unique within a GreenNode account until that Processor is deleted.
 
 ***
 

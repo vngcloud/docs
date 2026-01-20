@@ -2,7 +2,7 @@
 
 #### Hướng dẫn khởi tạo storage gateway <a href="#khoitaovasudungstoragegateway-1.taostoragegateway" id="khoitaovasudungstoragegateway-1.taostoragegateway"></a>
 
-1. Truy cập trang chủ VNGCloud tại [đây](https://dashboard.console.vngcloud.vn/). Chọn Service: **vStorage**, sau đó chọn **Storage Gateway**:
+1. Truy cập trang chủ GreenNode tại [đây](https://dashboard.console.vngcloud.vn/). Chọn Service: **vStorage**, sau đó chọn **Storage Gateway**:
 
 <figure><img src="../../../../.gitbook/assets/image (555).png" alt=""><figcaption></figcaption></figure>
 

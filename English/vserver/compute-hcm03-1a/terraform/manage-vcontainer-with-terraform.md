@@ -19,7 +19,7 @@ or you can grant vServerFullAccess permission (should have vServerReadOnlyAccess
 
 > **Note:** Each different resource management action will require different permissions, so it's essential to set up a reasonable set of permissions that fit your business needs.
 
-**Step 3**: Create a folder containing the terraform file and download the example from the VNG Cloud repo at [here](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples).
+**Step 3**: Create a folder containing the terraform file and download the example from the GreenNode repo at [here](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples).
 
 After downloading the Example folder to the computer, the user opens the file [variable.tf](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/variable.tf) (under the path **terraform-provider-vngcloud/examples/**[**variable.tf**](http://variable.tf/)), then changes the necessary information as follows:
 
@@ -224,7 +224,7 @@ ingress_controller = true
 
 **Step 7**: Launch the terraform command
 
-* After completing the above information, in order for terraform to initialize and download the VNG Cloud provider and set up the necessary information, run the command below, note that when running, you need to stand in the directory terraform-provider-vngcloud/ [examples/](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples) :
+* After completing the above information, in order for terraform to initialize and download the GreenNode provider and set up the necessary information, run the command below, note that when running, you need to stand in the directory terraform-provider-vngcloud/ [examples/](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples) :
 
 ```
 terraform init

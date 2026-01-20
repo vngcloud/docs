@@ -1,15 +1,15 @@
 # Starts with Interconnect
 
-VNG Cloud Interconnect provides direct Layer 3 network connectivity. Interconnect connections do not use public internet. Instead, we offer direct connections that can provide higher reliability, faster and more stable speeds, and higher security levels.
+GreenNode Interconnect provides direct Layer 3 network connectivity. Interconnect connections do not use public internet. Instead, we offer direct connections that can provide higher reliability, faster and more stable speeds, and higher security levels.
 
 ***
 
 ### Key Points: <a href="#batdauvoiinterconnect-ychinh" id="batdauvoiinterconnect-ychinh"></a>
 
-Interconnect establishes Layer 3 network connections between your on-premises network and the VNG Cloud network through a partner network provider.\
+Interconnect establishes Layer 3 network connections between your on-premises network and the GreenNode network through a partner network provider.\
 Dynamic routing is performed using the standard Border Gateway Protocol (BGP).\
 You need to consider and select a failover capability to ensure you use an approach that suits your recovery needs. The option you choose will affect the Service Level Agreement (SLA) for your connection uptime.\
-Connectivity is provided by using a cross-connect between devices owned by VNG Cloud and devices owned by the customer.
+Connectivity is provided by using a cross-connect between devices owned by GreenNode and devices owned by the customer.
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/64553619/image2023-9-8_14-30-47.png?version=1&#x26;modificationDate=1694158248000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
@@ -21,9 +21,9 @@ During deployment, we will proceed based on:
 
 Next, set up the virtual connection type in one of the following ways:
 
-**Virtual Routing Interface**: Use a virtual routing interface to access one or more VNG Cloud Transit Gateways associated with the Direct Connect port. You can use a virtual routing interface with any VNG Cloud Interconnect connection at any speed.\
-**Public Virtual Interface:** Public virtual interfaces can access VNG Cloud public services using public IP addresses.\
-**Private Virtual Interface:** Use a private virtual interface to access VNG Cloud VPC using private IP addresses.
+**Virtual Routing Interface**: Use a virtual routing interface to access one or more GreenNode Transit Gateways associated with the Direct Connect port. You can use a virtual routing interface with any GreenNode Interconnect connection at any speed.\
+**Public Virtual Interface:** Public virtual interfaces can access GreenNode public services using public IP addresses.\
+**Private Virtual Interface:** Use a private virtual interface to access GreenNode VPC using private IP addresses.
 
 ***
 

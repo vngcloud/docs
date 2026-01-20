@@ -2,7 +2,7 @@
 
 ### **Trường hợp user log in vào được portal** <a href="#huongdanhuytaikhoan-1.truonghopuserloginvaoduocportal" id="huongdanhuytaikhoan-1.truonghopuserloginvaoduocportal"></a>
 
-Để **HỦY** đăng kí account trên portal VNG Cloud, người dùng vào hệ thống quản lý ticket của [VNG Cloud](https://helpdesk.vngcloud.vn/) chọn chức năng hỗ trợ kỹ thuật như hình :
+Để **HỦY** đăng kí account trên portal GreenNode, người dùng vào hệ thống quản lý ticket của [GreenNode](https://helpdesk.vngcloud.vn/) chọn chức năng hỗ trợ kỹ thuật như hình :
 
 <figure><img src="https://docs.vngcloud.vn/download/thumbnails/22938103/image2020-10-26_15-30-28.png?version=1&#x26;modificationDate=1603701028000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 

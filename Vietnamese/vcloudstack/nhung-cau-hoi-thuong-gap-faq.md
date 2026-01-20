@@ -8,7 +8,7 @@ hidden: true
 
 Với mô hình Private Cloud dành cho doanh nghiệp ưu tiên vấn đề bảo mật và an toàn thông tin, do đó toàn bộ hạ tầng vật lý sẽ được đặt tại cơ sở nội bộ của doanh nghiệp.
 
-### <mark style="color:blue;">\[vCloudStack] Những doanh nghiệp nào phù hợp sử dụng dịch vụ vCloudStack của VNG Cloud?</mark>
+### <mark style="color:blue;">\[vCloudStack] Những doanh nghiệp nào phù hợp sử dụng dịch vụ vCloudStack của GreenNode?</mark>
 
 Các doanh nghiệp tổ chức hoạt động trong các hoạt động tài chính, chăm sóc sức khỏe, cơ quan đoàn thể cung câp các dịch vụ mang thông tin nhạy cảm của khách hàng, cần lưu trữ an toàn toàn bộ dữ liệu cho khách hàng tại hệ thống nội bộ của doanh nghiệp và không được sử dụng các sản phẩm lưu trữ của public cloud.
 
@@ -34,7 +34,7 @@ Dịch vụ vCloudStack có thể cấu hình ngưỡng cấp phất  provisioni
 
 ### <mark style="color:blue;">\[vCloudStack] Để tránh những rủi ro khi vận hành, có thể tạo máy chủ VM ở những host khác nhau không?</mark>
 
-Không chỉ dịch vụ vCloudStack mà Public Cloud của VNG Cloud cho phép người dùng có thể cấu hình tạo VM khác Host vật lý khác nhau. Tham khảo thêm ở bài viết Placement Group.
+Không chỉ dịch vụ vCloudStack mà Public Cloud của GreenNode cho phép người dùng có thể cấu hình tạo VM khác Host vật lý khác nhau. Tham khảo thêm ở bài viết Placement Group.
 
 
 

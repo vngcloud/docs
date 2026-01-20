@@ -16,10 +16,10 @@ Security Standards Applied to IAM Include
 
 By adhering to these security principles and standards, businesses and organizations can enhance information security on the IAM system, protect user identities and resources, minimize security breaches and intrusions, and boost customer and partner trust and reputation.
 
-To protect customer information and the data that customers use on the IAM service, VNG Cloud is currently implementing security control measures such as:
+To protect customer information and the data that customers use on the IAM service, GreenNode is currently implementing security control measures such as:
 
-* **Securing Sensitive Information on IAM:** VNG Cloud will be responsible for encrypting sensitive information on its storage servers. The data will be encrypted using a key provided by VNG Cloud.
-* **Data Security in Transit:** VNG Cloud uses HTTPS to encrypt data in transit. HTTPS is a secure protocol based on HTTP, using TLS/SSL encryption to protect data during transmission.
-* **Access Control Security:** VNG Cloud uses IAM itself to manage user access to IAM resources. IAM allows businesses to create and manage access policies for each IAM resource. This ensures that only those with necessary access privileges can access the resources.
+* **Securing Sensitive Information on IAM:** GreenNode will be responsible for encrypting sensitive information on its storage servers. The data will be encrypted using a key provided by GreenNode.
+* **Data Security in Transit:** GreenNode uses HTTPS to encrypt data in transit. HTTPS is a secure protocol based on HTTP, using TLS/SSL encryption to protect data during transmission.
+* **Access Control Security:** GreenNode uses IAM itself to manage user access to IAM resources. IAM allows businesses to create and manage access policies for each IAM resource. This ensures that only those with necessary access privileges can access the resources.
 
-VNG Cloud continuously strives to enhance its security measures to ensure customer safety.
+GreenNode continuously strives to enhance its security measures to ensure customer safety.

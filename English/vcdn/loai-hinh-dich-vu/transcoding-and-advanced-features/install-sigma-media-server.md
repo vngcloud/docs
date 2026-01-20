@@ -18,7 +18,7 @@ Use the instructions below to install Sigma Media Server:
 
 that you want to use for your server. You also need to select an existing Server Group or select **Dedicated SOFT ANTI AFFINITY group** so that we can automatically create a new server group.
 
-**Step 4:** Proceed **to payment** as normal resources on VNG Cloud.
+**Step 4:** Proceed **to payment** as normal resources on GreenNode.
 
 **At this point, the vServer** system will initialize a Server corresponding to the configuration you selected. Please wait until the server creation is complete and continue with the following steps.
 
@@ -56,7 +56,7 @@ that you want to use for your server. You also need to select an existing Server
 
 <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-**Step 6:** Enter **the server name** . You can get this server name from the VNGCloud portal. In the example below, I use the Demo\_Sigma server created earlier.
+**Step 6:** Enter **the server name** . You can get this server name from the GreenNode portal. In the example below, I use the Demo\_Sigma server created earlier.
 
 <figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

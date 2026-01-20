@@ -30,7 +30,7 @@ Quota là kích thước gói lưu trữ tối đa bạn có thể tạo. Đối
 
 7\. Chọn **Tạo một project.**
 
-Sau khi bạn hoàn thành 7 bước được mô tả bên trên, trial project đã được tạo. Bạn có thể khởi tạo tối đa một trial project trên một tài khoản VNG Cloud. Chúng tôi thể hiện rõ ràng thông tin số ngày còn lại bạn có thể sử dụng project trên danh sách project mà bạn có.&#x20;
+Sau khi bạn hoàn thành 7 bước được mô tả bên trên, trial project đã được tạo. Bạn có thể khởi tạo tối đa một trial project trên một tài khoản GreenNode. Chúng tôi thể hiện rõ ràng thông tin số ngày còn lại bạn có thể sử dụng project trên danh sách project mà bạn có.&#x20;
 
 Sau 7 ngày sử dụng trial project, nếu bạn không thực hiện chuyển trial project này về project thông thường thì chúng tôi sẽ xóa hoàn toàn trial project của bạn khỏi hệ thống. Trong 7 ngày sử dụng trial project, bạn có thể chuyển trial project này về project thông thường của bạn theo hướng dẫn bên dưới.&#x20;
 {% endtab %}

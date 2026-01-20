@@ -4,7 +4,7 @@ IAM is essential to protecting resources within vMonitor services. Without prope
 
 ### 1. Getting Started with IAM&#x20;
 
-This guide is intended to guide users to quickly get started with IAM in vMonitor services by using the default permission (defined by VNG Cloud Managed Policies) for the vMonitor system called vStorageFullAccess.
+This guide is intended to guide users to quickly get started with IAM in vMonitor services by using the default permission (defined by GreenNode Managed Policies) for the vMonitor system called vStorageFullAccess.
 
 1. Accessing the IAM Console&#x20;
 
@@ -50,7 +50,7 @@ Re-Access the vMonitor Portal by following the instructions in Step 3, and then 
 
 ### **2. List of VNG Managed Policies** <a href="#iamforvstorage-2.danhsachvngmanagedpolicies" id="iamforvstorage-2.danhsachvngmanagedpolicies"></a>
 
-VNG Managed Policy is an IAM Policy created by default by the VNG Cloud IAM system. These Policies are managed by VNG Cloud itself to support users in quickly setting up the necessary access rights for IAM user accounts for resources of each specific Product. Let's find out the list of VNG Managed Policies for vMonitor :
+VNG Managed Policy is an IAM Policy created by default by the GreenNode IAM system. These Policies are managed by GreenNode itself to support users in quickly setting up the necessary access rights for IAM user accounts for resources of each specific Product. Let's find out the list of VNG Managed Policies for vMonitor :
 
 * vMonitorFullAccess: Includes full access to resources in the vMonitor system&#x20;
 * vMonitorMetricPush: Includes only permissions related to Push Metric&#x20;

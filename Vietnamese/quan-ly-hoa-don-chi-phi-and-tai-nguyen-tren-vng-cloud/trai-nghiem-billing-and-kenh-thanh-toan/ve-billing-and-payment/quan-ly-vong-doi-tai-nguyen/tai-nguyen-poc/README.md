@@ -1,6 +1,6 @@
 # Tài nguyên POC
 
-Tài nguyên POC sinh ra nhằm mục đích hỗ trợ người dùng có thể trải nghiệm dịch vụ tại VNG Cloud một cách tốt nhất.&#x20;
+Tài nguyên POC sinh ra nhằm mục đích hỗ trợ người dùng có thể trải nghiệm dịch vụ tại GreenNode một cách tốt nhất.&#x20;
 
 Điều kiện sử dụng tài nguyên POC:
 

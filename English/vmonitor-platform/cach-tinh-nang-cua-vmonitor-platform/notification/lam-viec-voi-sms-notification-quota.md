@@ -2,7 +2,7 @@
 
 ### Overview
 
-An SMS Notification quota is a term on the vMonitor Platform representing a package of notifications via text messages with a specific number of messages that you purchase on VNG Cloud. At any given time, you can only own one SMS Notification quota and use it to send notifications according to your needs.
+An SMS Notification quota is a term on the vMonitor Platform representing a package of notifications via text messages with a specific number of messages that you purchase on GreenNode. At any given time, you can only own one SMS Notification quota and use it to send notifications according to your needs.
 
 ***
 
@@ -18,7 +18,7 @@ To initialize an SMS Notification Quota, follow the instructions below:
 6. Select the desired **Period**. Currently, we offer you the following subscription periods: 1 month, 3 months, 6 months, 12 months, 24 months, 36 months.
 7. Enter the **Coupon** if available and select **Apply**
 8. Select **Continue** and proceed with the **Payment** steps for the cart. After successful payment, the **SMS notification quota** will be initialized.
-9. For each VNG Cloud account, you can create **one SMS notification quota package** and use it according to the cycle you have chosen. Seven days before the expiration of this SMS notification quota package, you can renew and continue using it with the next renewal cycle. Additionally, during the package usage period, you can also increase the package usage limit as guided below. The cost calculation for each SMS notification quota package is publicly available on the VNG Cloud homepage, see Cost Calculation.
+9. For each GreenNode account, you can create **one SMS notification quota package** and use it according to the cycle you have chosen. Seven days before the expiration of this SMS notification quota package, you can renew and continue using it with the next renewal cycle. Additionally, during the package usage period, you can also increase the package usage limit as guided below. The cost calculation for each SMS notification quota package is publicly available on the GreenNode homepage, see Cost Calculation.
 
 ***
 
@@ -48,7 +48,7 @@ To **renew** an **SMS Notification Quota**, you can:
 7. Enter the **Coupon** if you want and select **Apply**.
 8. Choose **Continue** and proceed with the **Checkout** steps. After a successful payment, the **SMS notification quota** will be renewed.
 
-You can only renew your SMS notification quota within 7 days before the current notification package expires. The cost calculation for each SMS notification quota renewal is publicly available on the VNG Cloud homepage; please refer to the Pricing Calculation section.
+You can only renew your SMS notification quota within 7 days before the current notification package expires. The cost calculation for each SMS notification quota renewal is publicly available on the GreenNode homepage; please refer to the Pricing Calculation section.
 
 ***
 
@@ -65,7 +65,7 @@ To **resize up** an **SMS Notification Quota**, you can:
 7. Enter the **Coupon** if you want and select **Apply**.
 8. Select **Continue** and proceed with the steps to **Checkout** your cart. After a successful payment, the **SMS notification quota** will be increased.
 
-The detailed cost calculation for increasing the quota for each SMS notification package is publicly available on VNG Cloud's homepage. Please refer to the Pricing Calculation for more information.
+The detailed cost calculation for increasing the quota for each SMS notification package is publicly available on GreenNode's homepage. Please refer to the Pricing Calculation for more information.
 
 ***
 

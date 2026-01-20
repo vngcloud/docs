@@ -65,9 +65,9 @@
     ```bash
     kubectl exec -n mynamespace -it web-0 bash
     cd /usr/share/nginx/html
-    echo -e "<html>\n<head>\n  <title>MyVNGCloud</title>\n</head>\n<body>\n  <h1>Hello, MyVNGCloud</h1>\n</body>\n</html>" > index.html
+    echo -e "<html>\n<head>\n  <title>MyGreenNode</title>\n</head>\n<body>\n  <h1>Hello, MyGreenNode</h1>\n</body>\n</html>" > index.html
     ```
-* Lúc này, khi bạn truy cập vào Public IP của Node, bạn sẽ thấy "Hello, MyVNGCloud".
+* Lúc này, khi bạn truy cập vào Public IP của Node, bạn sẽ thấy "Hello, MyGreenNode".
 
 ***
 
@@ -91,7 +91,7 @@ Trên hệ thống VKS, bạn cần thực hiện khởi tạo một Cluster the
 
 Migrating resources private outside cluster (di chuyển tài nguyên riêng tư bên ngoài cụm) là quá trình di chuyển tài nguyên riêng tư nằm ngoài Cluster nguồn sang một nơi mà Cluster đích có thể sử dụng. Ví dụ, bạn có thể có những tài nguyên riêng tư như image, database,... Lúc này, trước khi bắt đầu migrate, bạn cần tự thực hiện việc migrate các tài nguyên này. Ví dụ, nếu bạn cần:
 
-* Migrate Container Images: bạn có thể migrate image tới VNGCloud Container Registry thông qua hướng dẫn tại [đây](../../vcontainer-registry/).
+* Migrate Container Images: bạn có thể migrate image tới GreenNode Container Registry thông qua hướng dẫn tại [đây](../../vcontainer-registry/).
 * Migrate Databases: bạn có thể sử dụng **Relational Database Service (RDS)** và **Object Storage Service (OBS)** tùy theo nhu cầu sử dụng của bạn. Sau khi việc migration hoàn tất, hãy nhớ config lại database cho applications của bạn trên VKS Cluster.
 * Migrate Storage: bạn có thể sử dụng **NFS Server** của vServer.
 

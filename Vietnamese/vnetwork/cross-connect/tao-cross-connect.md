@@ -2,7 +2,7 @@
 
 **Thực hiện các bước sau để thực hiện việc tạo một kết nối Cross Connect:**
 
-**Bước 1:** Truy cập thành công vào VNG Cloud, tại màn hình Console chọn đến dịch vụ vNetwork;
+**Bước 1:** Truy cập thành công vào GreenNode, tại màn hình Console chọn đến dịch vụ vNetwork;
 
 **Bước 2:** Tại thanh menu bên trái của giao diện vNetwork, chọn mục Cross Connect;
 

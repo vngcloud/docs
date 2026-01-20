@@ -1,8 +1,8 @@
 # Deployment mode
 
-In the VNG Cloud environment, we offer two distinct types of Load Balancers: Application Load Balancers (ALBs) and Network Load Balancers (NLBs). These Load Balancers play a crucial role in optimizing the performance, availability, and scalability of your applications by efficiently distributing network traffic to backend servers. Each type of Load Balancer is tailored for specific use cases, offering unique features to meet the diverse requirements of modern IT architectures.
+In the GreenNode environment, we offer two distinct types of Load Balancers: Application Load Balancers (ALBs) and Network Load Balancers (NLBs). These Load Balancers play a crucial role in optimizing the performance, availability, and scalability of your applications by efficiently distributing network traffic to backend servers. Each type of Load Balancer is tailored for specific use cases, offering unique features to meet the diverse requirements of modern IT architectures.
 
-## Overview of Load Balancer Deployment Models in VNG Cloud
+## Overview of Load Balancer Deployment Models in GreenNode
 
 <figure><img src="../../../.gitbook/assets/64553488.png" alt=""><figcaption></figcaption></figure>
 

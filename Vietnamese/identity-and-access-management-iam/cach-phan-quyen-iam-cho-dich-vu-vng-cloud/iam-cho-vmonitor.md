@@ -4,7 +4,7 @@ IAM là yếu tố cần thiết để bảo vệ tài nguyên trong các dịch
 
 ### **1. Bắt đầu sử dụng IAM** <a href="#iamforvmonitor-1.batdausudungiam" id="iamforvmonitor-1.batdausudungiam"></a>
 
-Hướng dẫn này nhằm hướng dẫn người dùng có thể nhanh chóng bắt đầu sử dụng IAM trong các dịch vụ vMonitor bằng cách sử dụng quyền mặc định **(được định nghĩa bởi VNG Cloud Managed Policies)** cho hệ thống vMonitor gọi là **vMonitorFullAccess.**
+Hướng dẫn này nhằm hướng dẫn người dùng có thể nhanh chóng bắt đầu sử dụng IAM trong các dịch vụ vMonitor bằng cách sử dụng quyền mặc định **(được định nghĩa bởi GreenNode Managed Policies)** cho hệ thống vMonitor gọi là **vMonitorFullAccess.**
 
 **1. Truy cập IAM Console**
 
@@ -52,7 +52,7 @@ Truy cập lại Cổng thông tin vMonitor bằng cách làm theo hướng dẫ
 
 ### **2. Danh sách VNG Managed Policies** <a href="#iamforvmonitor-2.danhsachvngmanagedpolicies" id="iamforvmonitor-2.danhsachvngmanagedpolicies"></a>
 
-VNG Managed Policy là các Chính Sách IAM (IAM Policy) được tạo mặc định bởi hệ thống IAM VNG Cloud. Các Chính Sách này được quản lý bởi chính VNG Cloud nhằm mục đích hỗ trợ người dùng trong việc cài đặt nhanh chóng các quyền truy cập cần thiết cho các tài khoản người dùng IAM đối với các tài nguyên của từng Product cụ thể. Cùng tìm hiểu danh sách VNG Managed Policies cho vMonitor:
+VNG Managed Policy là các Chính Sách IAM (IAM Policy) được tạo mặc định bởi hệ thống IAM GreenNode. Các Chính Sách này được quản lý bởi chính GreenNode nhằm mục đích hỗ trợ người dùng trong việc cài đặt nhanh chóng các quyền truy cập cần thiết cho các tài khoản người dùng IAM đối với các tài nguyên của từng Product cụ thể. Cùng tìm hiểu danh sách VNG Managed Policies cho vMonitor:
 
 * [vMonitorFullAccess](https://iam.console.vngcloud.vn/policies/5e892948-7052-4042-b69b-e584c87948df): Bao gồm toàn quyền truy cập đến các tài nguyên thuộc hệ thông vMonitor
 * [vMonitorMetricPush](https://iam.console.vngcloud.vn/policies/4679ef00-d815-11ed-afa1-0242ac120002): Chỉ bao gồm các quyền liên quan đến việc Push Metric

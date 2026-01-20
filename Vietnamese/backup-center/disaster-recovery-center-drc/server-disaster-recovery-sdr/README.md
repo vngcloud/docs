@@ -4,7 +4,7 @@
 
 Trong thế giới kinh doanh hiện đại, máy chủ đóng vai trò trung tâm trong việc lưu trữ và xử lý dữ liệu quan trọng. Tuy nhiên, các sự cố không mong muốn như thiên tai, lỗi phần cứng, hoặc tấn công mạng có thể gây ra những thiệt hại nghiêm trọng, dẫn đến mất mát dữ liệu, gián đoạn hoạt động và tổn thất tài chính đáng kể.
 
-**Server Disaster Recovery của VNG Cloud** được thiết kế để bảo vệ máy chủ của bạn khỏi những rủi ro này, đảm bảo tính liên tục cho hoạt động kinh doanh của bạn. Với giải pháp sao lưu và phục hồi toàn diện, bạn có thể yên tâm rằng dữ liệu và hệ thống của mình luôn được bảo vệ và sẵn sàng khôi phục trong mọi tình huống.
+**Server Disaster Recovery của GreenNode** được thiết kế để bảo vệ máy chủ của bạn khỏi những rủi ro này, đảm bảo tính liên tục cho hoạt động kinh doanh của bạn. Với giải pháp sao lưu và phục hồi toàn diện, bạn có thể yên tâm rằng dữ liệu và hệ thống của mình luôn được bảo vệ và sẵn sàng khôi phục trong mọi tình huống.
 
 **Lợi ích:**
 
@@ -24,4 +24,4 @@ Trong thế giới kinh doanh hiện đại, máy chủ đóng vai trò trung t�
 * **Action DR theo kế hoạch:** Tự động thực hiện các hành động DR theo kế hoạch định sẵn.
 * **Thứ tự ưu tiên phục hồi:** Tùy chỉnh thứ tự ưu tiên khôi phục cho các máy chủ quan trọng.
 
-Hãy để Server Disaster Recovery của VNG Cloud đồng hành cùng bạn, bảo vệ máy chủ và dữ liệu của bạn, đảm bảo hoạt động kinh doanh luôn diễn ra suôn sẻ, ngay cả khi đối mặt với những thách thức lớn nhất!
+Hãy để Server Disaster Recovery của GreenNode đồng hành cùng bạn, bảo vệ máy chủ và dữ liệu của bạn, đảm bảo hoạt động kinh doanh luôn diễn ra suôn sẻ, ngay cả khi đối mặt với những thách thức lớn nhất!

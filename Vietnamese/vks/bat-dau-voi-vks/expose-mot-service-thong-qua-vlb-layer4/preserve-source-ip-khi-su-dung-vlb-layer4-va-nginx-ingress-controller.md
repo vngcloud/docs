@@ -6,7 +6,7 @@
 
 ### Điều kiện cần
 
-* Bạn đã thực hiện khởi tạo Cluster trên hệ thống VKS theo các hướng dẫn tại [đây ](./)và trên cụm của bạn đã được cài đặt **VNGCloud LoadBalancer Controller.**
+* Bạn đã thực hiện khởi tạo Cluster trên hệ thống VKS theo các hướng dẫn tại [đây ](./)và trên cụm của bạn đã được cài đặt **GreenNode LoadBalancer Controller.**
 * Tiếp theo, bạn cần thực hiện cài đặt nginx-ingress-controller theo lệnh:
 
 ```

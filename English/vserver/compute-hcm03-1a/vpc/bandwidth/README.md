@@ -4,7 +4,7 @@
 
 **Bandwidth** is the amount of data transmitted to and from your virtual server over a certain period, typically a month. Bandwidth is usually measured in units such as kilobits per second (kbps), megabits per second (Mbps), gigabits per second (Gbps), etc. Additionally, bandwidth plays a crucial role in speeding up data access and improving application performance.
 
-With VNG Cloud, we currently offer four bandwidth packages for customers to choose from:
+With GreenNode, we currently offer four bandwidth packages for customers to choose from:
 
 * **VNG Dedicated**: This is the default free bandwidth package with standard speed for all customers. In this package, we provide up to 300Mbps domestic bandwidth and up to 5Mbps international bandwidth. **This package is suitable for customers with stable and unchanging bandwidth needs over time. It is a good choice for businesses looking to avoid unforeseen costs and need a fixed rate.**
 * **Pay As You Go**: This is the bandwidth package where you pay for the amount of bandwidth used beyond the free bandwidth package (VNG Dedicated). **This can be more reasonable for businesses with fluctuating bandwidth needs, requiring flexibility and quick scalability without being limited by fixed bandwidth levels**. The Pay As You Go package includes three specific packages:

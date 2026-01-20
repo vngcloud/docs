@@ -5,7 +5,7 @@ In this article, we will learn how to use and manage an Application Load Balance
 ### **Prerequisites:** <a href="#dieu-kien-tieu-quyet" id="dieu-kien-tieu-quyet"></a>
 
 * A Network is required to do this, refer to the Network configuration article;
-* Have an account to access VNG Cloud with the enterprise's Region CloudStack;
+* Have an account to access GreenNode with the enterprise's Region CloudStack;
 * Have at least one TLS/SSL certificate.
 
 ### **How to do:** <a href="#cach-thuc-hien" id="cach-thuc-hien"></a>

@@ -10,7 +10,7 @@ Ví dụ phổ biến nhất là token authentication được lưu vào session
 * Lưu trữ thông tin session vào một Database chung hoặc một file system server trên application server.
 * Nhược điểm: Việc xây dựng một hệ thống Cluster hay một Database đòi hỏi phải có nhiều kinh nghiệm về system.
 
-Chính lẽ đó VNG CLOUD đã cung cấp tính năng **Sticky Session** giúp chuyển tất cả request của user trong một phiên làm việc vào một server nhất định, đơn giản hóa cho người dùng.
+Chính lẽ đó GreenNode đã cung cấp tính năng **Sticky Session** giúp chuyển tất cả request của user trong một phiên làm việc vào một server nhất định, đơn giản hóa cho người dùng.
 
 #### 1. Giới thiệu tính năng Enable Sticky Session <a href="#enablestickysession-1.gioithieutinhnangenablestickysession" id="enablestickysession-1.gioithieutinhnangenablestickysession"></a>
 

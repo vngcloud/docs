@@ -32,7 +32,7 @@ API HTTP tests allow you to send HTTP request(s) to your service or application 
 
 *   **Location**
 
-    * Select the Location that will run HTTP Tests to your URL. HTTP tests can be run from both Public Locations (managed by VNG Cloud) and Private Locations (installed and managed by customers) based on your needs for running tests from outside (internet) or inside the network. your. Public Locations managed by VNG Cloud currently has 2 locations: HCM and Hanoi.
+    * Select the Location that will run HTTP Tests to your URL. HTTP tests can be run from both Public Locations (managed by GreenNode) and Private Locations (installed and managed by customers) based on your needs for running tests from outside (internet) or inside the network. your. Public Locations managed by GreenNode currently has 2 locations: HCM and Hanoi.
 
     ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fattachments%2F59803715%2Fimage2022-8-29_16-42-28.png%3Fversion%3D1%26modificationDate%3D1686544452000%26api%3Dv2\&width=768\&dpr=4\&quality=100\&sign=4b6253a4\&sv=1)
 

@@ -1,6 +1,6 @@
 # Object storage (HAN02)
 
-VNGCloud introduces to you the new **HAN02** **Region** for vStorage services. The standout features of this region include:
+GreenNode introduces to you the new **HAN02** **Region** for vStorage services. The standout features of this region include:
 
 * **High performance**: Region HAN02 is designed to handle high traffic volume, delivering exceptional performance that optimizes the operation of your applications and services.
 * **Enhanced security**: The HCM04 Region offers encryption mechanisms such as SSE-S3 and SSE-C that ensure absolute safety for customer data.

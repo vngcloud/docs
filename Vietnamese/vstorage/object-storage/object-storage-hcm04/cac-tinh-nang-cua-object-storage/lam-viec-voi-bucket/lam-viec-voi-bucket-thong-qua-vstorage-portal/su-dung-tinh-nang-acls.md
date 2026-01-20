@@ -6,12 +6,12 @@
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 2. Chọn biểu tượng <img src="../../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">tại **project** chứa **bucket** bạn muốn phân quyền.
-3. Nếu bạn muốn phân quyền bucket cho một **Root User Account** hoặc **IAM User Account** hay **Service Account** khác, bạn cần biết thông tin **vStorage User ID** của người dùng mà bạn muốn phân quyền:&#x20;
+3. Nếu bạn muốn phân quyền bucket cho một **Root User Account** hoặc **IAM User Account** hay **Service Account** khác, bạn cần biết thông tin **vStorage User ID** của người dùng mà bạn muốn phân quyền:
    1. Đối với **Root User Account**: bạn có thể lấy thông tin **vStorage User ID** ngay tại trang thông tin **project** theo hình dưới.
 
 <figure><img src="../../../../../../.gitbook/assets/image (867).png" alt=""><figcaption></figcaption></figure>
 
-b. Đối với **IAM User Account** và **Service Account**: bạn có thể lấy thông tin **vStorage User ID** tại mục  **Identity and Access Management**
+b. Đối với **IAM User Account** và **Service Account**: bạn có thể lấy thông tin **vStorage User ID** tại mục **Identity and Access Management**
 
 <figure><img src="../../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -20,7 +20,7 @@ b. Đối với **IAM User Account** và **Service Account**: bạn có thể l�
 
 <figure><img src="../../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-6. Tại đây, bạn có thể lựa chọn tập người dùng và quyền truy cập tương ứng. Cụ thể:&#x20;
+6. Tại đây, bạn có thể lựa chọn tập người dùng và quyền truy cập tương ứng. Cụ thể:
 
 * **Các tập người dùng trong ACL:** ACL cho phép thiết lập quyền truy cập cho các kiểu người dùng sau:
   * **Bucket owner**: Người sở hữu bucket.
@@ -33,7 +33,7 @@ b. Đối với **IAM User Account** và **Service Account**: bạn có thể l�
 
 * **Ngoài ra, các quyền ReadBucketACL, WriteBucketACL, ReadObjectACL, WriteObjectACL:** Cho phép người dùng có thể xem thông tin/ cập nhật cấu hình ACLs của bucket hoặc object.
 
-<figure><img src="/broken/files/gZjPdxUQiOghT4IrvLi3" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/bucket_acl (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Chọn **Update** để lưu lại cấu hình đã thiết lập cho ACLs.
 
@@ -52,7 +52,7 @@ b. Đối với **IAM User Account** và **Service Account**: bạn có thể l�
 ### **Ví dụ 2: Cấp quyền FULL\_CONTROL cho một tài khoản vStorage khác**
 
 {% hint style="info" %}
-Chú ý:&#x20;
+Chú ý:
 
 * Để cấp quyền truy cập vào resource cho một tài khoản vStorage khác, bạn cần biết thông tin vStorage User ID của người dùng mà bạn muốn chia sẻ quyền truy cập. Bạn có thể xem thông tin vStorage User ID theo hướng dẫn tại đây.
 {% endhint %}
@@ -63,7 +63,7 @@ Chú ý:&#x20;
 
 <figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Như hình bên trên, tôi đã phân quyền làm việc trên `bucket001` cho người dùng `vngclouddemo-123456`. Lúc này, người dùng `vngclouddemo-123456` có thể sử dụng tính năng `Add external bucket` để thêm bucket được chia sẻ này và danh sách bucket của bạn:&#x20;
+* Như hình bên trên, tôi đã phân quyền làm việc trên `bucket001` cho người dùng `vngclouddemo-123456`. Lúc này, người dùng `vngclouddemo-123456` có thể sử dụng tính năng `Add external bucket` để thêm bucket được chia sẻ này và danh sách bucket của bạn:
 
 <figure><img src="../../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

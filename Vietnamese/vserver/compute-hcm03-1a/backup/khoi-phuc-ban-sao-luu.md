@@ -2,7 +2,7 @@
 
 Sau khi một tài nguyên đã được sao lưu ít nhất một lần, tài nguyên đó được coi là đã được bảo vệ và có sẵn để khôi phục bằng vBackup.
 
-Nếu bạn đang khôi phục máy ảo của VNG Cloud, bạn có thể thực hiện Khôi phục hoàn toàn để khôi phục toàn bộ hệ thống của máy ảo lên một máy ảo mới. Hoặc, bạn có thể khôi phục các ổ đĩa cụ thể thuộc một máy ảo. Làm theo các bước dưới đây để hoàn thực hiện việc khôi phục một máy ảo hoặc ổ đĩa của bạn:
+Nếu bạn đang khôi phục máy ảo của GreenNode, bạn có thể thực hiện Khôi phục hoàn toàn để khôi phục toàn bộ hệ thống của máy ảo lên một máy ảo mới. Hoặc, bạn có thể khôi phục các ổ đĩa cụ thể thuộc một máy ảo. Làm theo các bước dưới đây để hoàn thực hiện việc khôi phục một máy ảo hoặc ổ đĩa của bạn:
 
 ### **Quy trình khôi phục máy chủ ảo** <a href="#khoiphucbansaoluu-quytrinhkhoiphucmaychuao" id="khoiphucbansaoluu-quytrinhkhoiphucmaychuao"></a>
 

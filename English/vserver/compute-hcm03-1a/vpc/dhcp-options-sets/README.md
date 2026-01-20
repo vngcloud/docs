@@ -26,7 +26,7 @@ After configuring DNS for a VM, to refresh the DHCP usage on the VM, you can eit
 
 This guide will help you create a DHCP options set by following these steps:
 
-1. Log in to VNG Cloud and navigate to the vServer service;
+1. Log in to GreenNode and navigate to the vServer service;
 2. On the vServer screen, choose the appropriate region;
 3. In the left-hand menu, select **DHCPs**;
 
@@ -40,12 +40,12 @@ This guide will help you create a DHCP options set by following these steps:
 
 * **DHCP Option Set name**: Enter a name for the DHCP options set;
 * **Description:** Enter a description for the DHCP options set;
-* **DHCP Server IP:** By default, VNG Cloud's DNS Server is automatically provided for the VPC.
+* **DHCP Server IP:** By default, GreenNode's DNS Server is automatically provided for the VPC.
   * Click the "**Set to Optimize**" button to manually enter the DNS Server IP;
-  * Note that if you do not use the default DNS, you may experience failures when accessing VNG Cloud services.
+  * Note that if you do not use the default DNS, you may experience failures when accessing GreenNode services.
 
 {% hint style="info" %}
-**The default DNS server IP addresses provided by VNG Cloud:**
+**The default DNS server IP addresses provided by GreenNode:**
 
 * 10.166.12.196
 * 10.166.12.197
@@ -65,7 +65,7 @@ You can **enter up to 4 DNS server IP addresses** (you may add 2 more if you are
 
 After creating a DHCP options set, you need to associate it with a VPC. There are two ways to perform the association (Associate). Follow these steps:
 
-1. Log in to VNG Cloud and navigate to the vServer service;
+1. Log in to GreenNode and navigate to the vServer service;
 2. On the vServer screen, choose the appropriate region;
 3. In the left-hand menu, select **DHCPs**;
 4. Select an existing DHCP set to access the details screen;
@@ -89,7 +89,7 @@ Trong quá trình sử dụng DHCP options set, người dùng có thể xóa DH
 
 ### Step 1: Detach all VPCs from the DHCP options set
 
-1. Log in to VNG Cloud and navigate to the vServer service;
+1. Log in to GreenNode and navigate to the vServer service;
 2. On the vServer screen, choose the appropriate region;
 3. In the left-hand menu, select **DHCP Options Sets**;
 4. Select the DHCP options set you want to delete to access its details;

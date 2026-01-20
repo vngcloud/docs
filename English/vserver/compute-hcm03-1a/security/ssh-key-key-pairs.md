@@ -6,7 +6,7 @@ Anyone who possesses your private key can connect to your instances, so it's imp
 
 When you launch an Linux instance, you are prompted for a key pair. When your instance boots for the first time, the public key that you specified at launch is placed on your Linux instance in an entry within \~/.ssh/authorized\_keys. When you connect to your Linux instance using SSH, to log in you must specify the private key that corresponds to the public key. For more information about connecting to your instance, see {Connect to instance page}.
 
-There is no way to recover a private key if you lose it. You can use VNG Cloud Portal to create your key pairs. You can also use a third-party tool to create your key pairs, and then import the public keys to VNG Cloud. VNG Cloud supports ED25519 and 2048-bit SSH-2 RSA keys for Linux instances.
+There is no way to recover a private key if you lose it. You can use GreenNode Portal to create your key pairs. You can also use a third-party tool to create your key pairs, and then import the public keys to GreenNode. GreenNode supports ED25519 and 2048-bit SSH-2 RSA keys for Linux instances.
 
 This topic describes how to create, delete and import a key pair.
 
@@ -16,7 +16,7 @@ The first thing you can do with your SSH Key is create a new one. Click the "Cre
 
 ### **Import a SSH Key** <a href="#sshkey-keypairs-importasshkey" id="sshkey-keypairs-importasshkey"></a>
 
-If you do not have an SSH Key on VNG Cloud Portal, you must create a new SSH Key to use for authentication. If you already have SSH Key on your own store, you can click the "Import SSH Key" button, the interface will appear a page that allows you to enter SSH Key information, enter the SSH Key name and paste the Public Key into the corresponding field to complete the SSH Key input.
+If you do not have an SSH Key on GreenNode Portal, you must create a new SSH Key to use for authentication. If you already have SSH Key on your own store, you can click the "Import SSH Key" button, the interface will appear a page that allows you to enter SSH Key information, enter the SSH Key name and paste the Public Key into the corresponding field to complete the SSH Key input.
 
 ### **Delete a SSH Key** <a href="#sshkey-keypairs-deleteasshkey" id="sshkey-keypairs-deleteasshkey"></a>
 

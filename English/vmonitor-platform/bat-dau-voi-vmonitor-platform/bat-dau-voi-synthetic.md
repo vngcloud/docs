@@ -2,7 +2,7 @@
 
 ### Step 1: Create a Synthetic Test quota <a href="#batdauvoisynthetics-buoc1-khoitaosynthetictestquota" id="batdauvoisynthetics-buoc1-khoitaosynthetictestquota"></a>
 
-To start using the service, you need to create a Synthetic Test quota. A Synthetic Test quota is a term on the vMonitor Platform representing a monitoring package with a specific number of tests that you purchase on VNG Cloud. At any given time, you can own one Synthetic Test quota and use it to monitor your system's operations.
+To start using the service, you need to create a Synthetic Test quota. A Synthetic Test quota is a term on the vMonitor Platform representing a monitoring package with a specific number of tests that you purchase on GreenNode. At any given time, you can own one Synthetic Test quota and use it to monitor your system's operations.
 
 Follow the steps below to create a project:
 
@@ -14,7 +14,7 @@ Follow the steps below to create a project:
 6. Select **Buy Synthetic Test Quota**.
 7. Follow the steps to **Checkout** the cart, and after successful payment, the **Synthetic test quota** will be created.
 
-The cost calculation for each Synthetic Test quota package is publicly available on the VNG Cloud homepage, please refer to Cost Calculation.
+The cost calculation for each Synthetic Test quota package is publicly available on the GreenNode homepage, please refer to Cost Calculation.
 
 ***
 
@@ -49,7 +49,7 @@ API HTTP tests allow you to send HTTP(s) requests to your service or application
 <figure><img src="../../.gitbook/assets/image (40) (2).png" alt=""><figcaption></figcaption></figure>
 
 * **Location**
-  * Select a Location to run HTTP Tests to your URL. HTTP tests can be executed from both Public Locations (managed by VNG Cloud) and Private Locations (self-installed and managed by customers) based on your need to run tests from outside (internet) or inside your network. Public Locations managed by VNG Cloud currently include two locations: HCM and HN.
+  * Select a Location to run HTTP Tests to your URL. HTTP tests can be executed from both Public Locations (managed by GreenNode) and Private Locations (self-installed and managed by customers) based on your need to run tests from outside (internet) or inside your network. Public Locations managed by GreenNode currently include two locations: HCM and HN.
 
 <figure><img src="../../.gitbook/assets/image (41) (3).png" alt=""><figcaption></figcaption></figure>
 

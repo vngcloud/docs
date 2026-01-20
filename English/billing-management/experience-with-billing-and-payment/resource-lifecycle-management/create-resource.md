@@ -5,8 +5,8 @@ Use this document as a guide to initialize resources. The document will describe
 Resource initialization feature applies to:&#x20;
 
 * Target user: Prepaid and postpaid users&#x20;
-* Source of money: VNG Cloud wallet or other sources (performed through payment gateway).
-* Resources: All resources belonging to VNG Cloud products.
+* Source of money: GreenNode wallet or other sources (performed through payment gateway).
+* Resources: All resources belonging to GreenNode products.
 
 ## Prepaid user initializes resources
 
@@ -28,7 +28,7 @@ Resource initialization feature applies to:&#x20;
 
 The price displayed at the resource payment step is also the price displayed on the corresponding invoice for that resource.&#x20;
 
-Below is a guide to calculate the price when initializing a Server, users can apply the formula to calculate similarly for other resources in the VNG Cloud Service system.&#x20;
+Below is a guide to calculate the price when initializing a Server, users can apply the formula to calculate similarly for other resources in the GreenNode Service system.&#x20;
 
 _An example formula for calculating the invoice value when initializing a Server includes information:_&#x20;
 

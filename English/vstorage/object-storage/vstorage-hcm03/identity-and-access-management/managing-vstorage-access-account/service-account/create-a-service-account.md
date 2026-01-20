@@ -5,7 +5,7 @@ To create a Service Account, follow the steps below:
 1. Log in to [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/]\(https://iam.console.vngcloud.vn/\)) using your Root User Account.
 2. Select the **Service Account** menu.
 3. Choose **Create a Service Account**.
-4. In the **Add information** menu, enter the **Name**. The Service Account name must be between 1 (minimum) and 50 (maximum) characters long, and it can only include uppercase and lowercase letters (a-z, A-Z), numbers (0-9), periods (.), underscores (\_), hyphens (-), and spaces ( ). The Service Account name should not contain sensitive information (e.g., IP addresses, login passwords). Additionally, the Service Account name must be unique within a VNG Cloud account until the Service Account is deleted. For example, the following Service Account name is valid: SA\_Client\_tool\_01.
+4. In the **Add information** menu, enter the **Name**. The Service Account name must be between 1 (minimum) and 50 (maximum) characters long, and it can only include uppercase and lowercase letters (a-z, A-Z), numbers (0-9), periods (.), underscores (\_), hyphens (-), and spaces ( ). The Service Account name should not contain sensitive information (e.g., IP addresses, login passwords). Additionally, the Service Account name must be unique within a GreenNode account until the Service Account is deleted. For example, the following Service Account name is valid: SA\_Client\_tool\_01.
 5. In the **Trusted relationship menu**, enter the Account Root IS if you want to add linkage information between the Service Account and Root User Account.
 6. Select **Next step**.
 7. In the **Add permission** menu, you can:

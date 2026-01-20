@@ -10,7 +10,7 @@
 
 <figure><img src="../../../.gitbook/assets/image (818).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 3:** Tại màn hình khởi tạo File Storage, bạn cần nhập/ chọn:&#x20;
+**Bước 3:** Tại màn hình khởi tạo File Storage, bạn cần nhập/ chọn:
 
 * **File Storage name:** tên gợi nhớ của file storage. Tên file cần dài từ 5 tới 50 ký tự và có thể bao gồm các ký tự a-z, A-Z, 0-9, '-', '\_'
 * **Description**: nhập mô tả cho file storage.
@@ -27,7 +27,7 @@
   * **All:** Cho phép tất cả IP có quyền truy cập RO (Read-Only) hoặc RW (Read-Write).
   * **Restricted:** Chỉ cho phép một số IP cụ thể truy cập với quyền RO hoặc RW.
 
-<figure><img src="/broken/files/asWE3UuCE8wZY9UT9TUZ" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (340).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Chọn **Create File Storage.**
 
@@ -47,7 +47,7 @@ Sau khi hệ thống khởi tạo xong File Storage của bạn, để lấy mou
 
 Các bước thực hiện mount FileStorage tới một server qua giao thức **NFS:**
 
-**Bước 1:** Cập nhật danh sách gói và cài đặt NFS client:&#x20;
+**Bước 1:** Cập nhật danh sách gói và cài đặt NFS client:
 
 * **Đối với Debian/Ubuntu:**
 
@@ -69,7 +69,7 @@ sudo yum update && sudo yum install nfs-utils
 sudo mkdir -p /mnt/demo
 ```
 
-**Bước 3:** Mount FileStorage volume:&#x20;
+**Bước 3:** Mount FileStorage volume:
 
 * Ví dụ lệnh bên dưới tôi mount FileStorage có name = demo\_test với thư mục mount = /mnt/demo
 

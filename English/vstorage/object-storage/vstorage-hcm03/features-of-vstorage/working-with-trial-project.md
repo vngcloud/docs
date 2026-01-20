@@ -30,7 +30,7 @@ Quota is the maximum storage package size you can create. For each hosting packa
 
 7\. Select **Create a project**.
 
-After you complete the 7 steps described above, the trial project has been created. You can create up to one trial project on one VNG Cloud account. We clearly show the remaining days you can use the project on the list of projects you have.
+After you complete the 7 steps described above, the trial project has been created. You can create up to one trial project on one GreenNode account. We clearly show the remaining days you can use the project on the list of projects you have.
 
 After 7 days of using the trial project, if you do not convert this trial project to a regular project, we will completely delete your trial project from the system. During the 7 days of using the trial project, you can convert this trial project to your regular project according to the instructions below.
 

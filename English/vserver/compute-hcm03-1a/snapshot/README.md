@@ -1,12 +1,12 @@
 # Snapshot
 
-Snapshot feature is an essential component of VNG Cloud's cloud storage system. It provides the ability to create and manage backups of your virtual disk data at specific points in time, offering significant benefits in data protection, resource optimization, and ensuring data recovery in case of need.
+Snapshot feature is an essential component of GreenNode's cloud storage system. It provides the ability to create and manage backups of your virtual disk data at specific points in time, offering significant benefits in data protection, resource optimization, and ensuring data recovery in case of need.
 
 Each snapshot contains all the information necessary to restore your data to the state it was in at the time the snapshot was created. When you create a new disk from a snapshot, this new disk starts as an exact copy of the original disk used to create the snapshot. The data copying process is done in the background so you can start using it immediately. If you access data that has not been loaded, the disk will automatically load the requested data from the system, and then continue to load the rest of the disk data in the background.
 
 Snapshot also supports comprehensive data encryption, ensuring the security of stored data and helping to comply with security and privacy requirements. You can create snapshots for encrypted disks and can create new disks from encrypted snapshots.
 
-At VNG Cloud, we support creating Snapshots for both Servers and Volumes, simplifying the Snapshot creation process and meeting all your usage needs. Once you have created Snapshots for your virtual machines and virtual disks, you can use our Roll Back feature to restore the state of the virtual machine and virtual disk to the time the Snapshot was created.
+At GreenNode, we support creating Snapshots for both Servers and Volumes, simplifying the Snapshot creation process and meeting all your usage needs. Once you have created Snapshots for your virtual machines and virtual disks, you can use our Roll Back feature to restore the state of the virtual machine and virtual disk to the time the Snapshot was created.
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 

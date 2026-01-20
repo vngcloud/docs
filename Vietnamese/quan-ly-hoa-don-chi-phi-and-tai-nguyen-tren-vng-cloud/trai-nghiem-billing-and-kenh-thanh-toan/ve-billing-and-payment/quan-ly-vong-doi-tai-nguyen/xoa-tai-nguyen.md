@@ -5,8 +5,8 @@ Sử dụng tài liệu này như là một hướng dẫn xóa tài nguyên. T�
 #### Tính năng xóa tài nguyên áp dụng đối với: <a href="#xoatainguyen-tinhnangxoatainguyenapdungdoivoi" id="xoatainguyen-tinhnangxoatainguyenapdungdoivoi"></a>
 
 * **Đối tượng:** Người dùng trả trước và trả sau
-* **Nguồn tiền:** Ví VNG Cloud (trong trường hợp có hoàn trả phí sử dụng)
-* **Tài nguyên:** Tất cả tài nguyên thuộc các sản phẩm VNG Cloud
+* **Nguồn tiền:** Ví GreenNode (trong trường hợp có hoàn trả phí sử dụng)
+* **Tài nguyên:** Tất cả tài nguyên thuộc các sản phẩm GreenNode
 
 #### **Người dùng trả trước xóa tài nguyên** <a href="#xoatainguyen-nguoidungtratruocxoatainguyen" id="xoatainguyen-nguoidungtratruocxoatainguyen"></a>
 
@@ -27,7 +27,7 @@ Sử dụng tài liệu này như là một hướng dẫn xóa tài nguyên. T�
 
 #### **Hướng dẫn tính giá tài nguyên được hoàn trả** <a href="#xoatainguyen-huongdantinhgiatainguyenduochoantra" id="xoatainguyen-huongdantinhgiatainguyenduochoantra"></a>
 
-Dưới đây là hướng dẫn tính giá tiền được hoàn trả khi xóa tài nguyên Server, người dùng có thể áp dụng công thức để tính tương tự cho các tài nguyên khác trong hệ thống VNG Cloud Service.
+Dưới đây là hướng dẫn tính giá tiền được hoàn trả khi xóa tài nguyên Server, người dùng có thể áp dụng công thức để tính tương tự cho các tài nguyên khác trong hệ thống GreenNode Service.
 
 _Ví dụ công thức tính giá tiền được hoàn trả khi xóa tài nguyên Server bao gồm thông tin_:
 

@@ -2,37 +2,37 @@
 
 ## Tổng quan
 
-Tại VNG Cloud Service, có một số tài nguyên / dịch vụ đặc thù chỉ dành cho người dùng trả sau vì một số lý do sau:
+Tại GreenNode Service, có một số tài nguyên / dịch vụ đặc thù chỉ dành cho người dùng trả sau vì một số lý do sau:
 
 * Không thể tính giá thành sử dụng tài nguyên ngay tại thời điểm phát sinh
 * Giá tiền sử dụng tài nguyên chỉ có thể được tính dựa trên sử dụng thực tế của người dùng.
 
-Do đó, người dùng trả trước không thể thực hiện thanh toán chi phí để sử dụng các tài nguyên đặc biệt (có thể kể đến như dịch vụ vContainer) này ngay tại thời điểm khởi tạo.&#x20;
+Do đó, người dùng trả trước không thể thực hiện thanh toán chi phí để sử dụng các tài nguyên đặc biệt (có thể kể đến như dịch vụ vContainer) này ngay tại thời điểm khởi tạo.
 
-Nhận thấy nhu cầu sử dụng các tài nguyên / dich vụ trả sau của người dùng trả trước tăng cao, VNG Cloud Service cho ra đời tính năng **Tạm giữ Credit (Hold Credit):**
+Nhận thấy nhu cầu sử dụng các tài nguyên / dich vụ trả sau của người dùng trả trước tăng cao, GreenNode Service cho ra đời tính năng **Tạm giữ Credit (Hold Credit):**
 
 * **Đối tượng áp dụng**:
   * Người dùng trả trước
-* **Tài nguyên / Dịch vụ áp dụng**:&#x20;
+* **Tài nguyên / Dịch vụ áp dụng**:
   * Hiên tại đang hỗ trợ các dịch vụ vContainer, Snapshot, Repository (vCR), Bandwidth, GLB
 * **Nguồn tiền**:
-  * VNG Cloud Credit
+  * GreenNode Credit
 * **Tác vụ:**
   * Người dùng chọn cấu hình tài nguyên cần sử dụng
   * Xác nhận thực hiện tạm giữ credit tại trang thanh toán
 * **Kết quả khi hoàn thành tác vụ:**
   * Hệ thống tiến hành tạm giữ credit: Số credit bị tạm giữ người dùng sẽ không được sử dụng cho mục đích khác. Bạn có thể kiểm tra số dư credit đang bị tạm giữ (holding) hay chính là chi phí cho các resource holding bằng cách:
-    * **Bước 1:** Truy cập vào portal của VNGCloud
-    * **Bước 2:** Chọn vào phần hiển thị thông tin credit như hình bên dưới. Tại đây, bạn sẽ nhìn thấy phần credit đang được holding bởi VNG Cloud.
+    * **Bước 1:** Truy cập vào portal của GreenNode
+    * **Bước 2:** Chọn vào phần hiển thị thông tin credit như hình bên dưới. Tại đây, bạn sẽ nhìn thấy phần credit đang được holding bởi GreenNode.
 
-<figure><img src="/broken/files/f6BUX9vvn8EntO27SmOn" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Xem thong tin hold credit (1).png" alt=""><figcaption></figcaption></figure>
 
 * Hệ thống cung cấp tài nguyên theo cấu hình cho người dùng
 * Gửi mail thông báo thông tin tài nguyên (tùy vào đặc thù từng loại tài nguyên mà sẽ có email thông báo hoặc không)
 
 ## Các dịch vụ áp dụng <a href="#tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s" id="tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s"></a>
 
-### 1. Dịch vụ/sản phẩm vContainer  <a href="#tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s" id="tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s"></a>
+### 1. Dịch vụ/sản phẩm vContainer <a href="#tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s" id="tamgiucredit-1.tamgiucreditdichvuvcontainer-k8s"></a>
 
 Sau khi khởi tạo tài nguyên thành công, cứ mỗi cuối ngày, hệ thống sẽ tự động tính lại số tiền sử dụng thực tế của ngày hôm đó và tiến hành tạm giữ số credit cần có để sử dụng dịch vụ trong 3 ngày tiếp theo. Tham khảo ví dụ sau:
 
@@ -58,19 +58,19 @@ Lưu ý (\*)
 * Chi phí sử dụng tài nguyên sẽ được tính chính xác đến phút, tại thời điểm người dùng thực hiện hành động (khởi tạo, thay đổi cấu hình), trên đây chỉ là ví dụ mang tính chất tham khảo.
 * Khi người dùng thực hiện xóa tài nguyên K8s, hệ thống sẽ giữ lại con số sử dụng thực tế (3,600,000 VND như trên ví dụ), con số này sẽ được dùng để thanh toán hóa đơn vào kì thanh toán hằng tháng
 
-### 2. Dịch vụ/sản phẩm Snapshot <a href="#tamgiucredit-2.tamgiucreditdichvusnapshot" id="tamgiucredit-2.tamgiucreditdichvusnapshot"></a>
+### 2. Dịch vụ/sản phẩm Snapshot , Backup <a href="#tamgiucredit-2.tamgiucreditdichvusnapshot" id="tamgiucredit-2.tamgiucreditdichvusnapshot"></a>
 
-Lưu ý rằng, tại thời điểm kích hoạt dịch vụ Snapshot lần đầu tiên, người dùng sẽ không bị tính bất kì một khoản chi phí nào. Việc tạm giữ credit chỉ xảy ra mỗi ngày một lần, trong trường hợp tài khoản sử dụng có khởi tạo và lưu trữ các bản dữ liệu Snapshot. Tham khảo hướng dẫn bên dưới để hiểu thêm về cách triển khai tạm giữ credit đối với dịch vụ Snpashot:
+Lưu ý rằng, tại thời điểm kích hoạt dịch vụ Snapshot , Backup lần đầu tiên, người dùng sẽ không bị tính bất kì một khoản chi phí nào. Việc tạm giữ credit chỉ xảy ra mỗi ngày một lần, trong trường hợp tài khoản sử dụng có khởi tạo và lưu trữ các bản dữ liệu Snapshot , Backup . Tham khảo hướng dẫn bên dưới để hiểu thêm về cách triển khai tạm giữ credit đối với dịch vụ Snpashot , Backup :
 
-**Cách tính phí Snapshot**
+**Cách tính phí Snapshot , Backup**
 
-* **Công thức**: Chi phí của việc tạo bản snapshot được tính dựa trên kích thước của bản snapshot (theo đơn vị gigabyte) và thời gian sử dụng của nó (thường được đo bằng giờ).
-* **Thời gian sử dụng**: Người dùng sẽ được tính phí cho thời gian tồn tại của bản snapshot. Thời gian này được ghi nhận theo giờ.
-* **Ví dụ**: Nếu bạn có một bản snapshot có kích thước 100GB và giá đơn vị cho Dịch Vụ Snapshot là 7,7 VND cho mỗi GB-giờ, thì chi phí sẽ được tính như sau:
+* **Công thức**: Chi phí của việc tạo bản snapshot , backup  được tính dựa trên kích thước của bản snapshot , backup(theo đơn vị gigabyte) và thời gian sử dụng của nó (thường được đo bằng giờ).
+* **Thời gian sử dụng**: Người dùng sẽ được tính phí cho thời gian tồn tại của bản snapshot , backup. Thời gian này được ghi nhận theo giờ.
+* **Ví dụ**: Nếu bạn có một bản snapshot  có kích thước 100GB và giá đơn vị cho Dịch Vụ Snapshot hoặc Backup là 7,7 VND cho mỗi GB-giờ, thì chi phí sẽ được tính như sau:
   * Theo giờ: 7,7 VND \* 100 GB = 770 VND mỗi giờ.
   * Theo ngày: 770 VND \* 24 = 18,480 VND mỗi ngày.
   * Theo tháng: 18,480 \* 30 = 554,400 VND mỗi tháng.
-* **Lưu ý**: Giá đơn vị được cung cấp chỉ để tham khảo. Thời gian sử dụng thực tế của các bản snapshot được ghi nhận hàng giờ, dựa trên kích thước thực tế của các bản snapshot của bạn.
+* **Lưu ý**: Giá đơn vị được cung cấp chỉ để tham khảo. Thời gian sử dụng thực tế của các bản snapshot được ghi nhận hàng giờ, dựa trên kích thước thực tế của các bản snapshot, backup của bạn.
 
 **Tình huống sử dụng**
 
@@ -78,7 +78,7 @@ Lưu ý rằng, tại thời điểm kích hoạt dịch vụ Snapshot lần đ�
 * Bước 2: Khởi tạo và lưu trữ các bản Snapshot theo nhu cầu sử dụng. Ví dụ như sau:
   * 10am khởi tạo Snapshot dung lượng 10GB
   * 1pm khởi tạo thêm 10GB nữa, total Snapshot Size 20GB
-* Bước 3: Hệ thống ghi nhận dung lượng sử dụng Snapshot mỗi giờ 1 lần
+* Bước 3: Hệ thống ghi nhận dung lượng sử dụng  mỗi giờ 1 lần
 * Bước 4: Tạm giữ Credit mỗi ngày 1 lần dựa trên sử dụng thực tế. Cụ thể như sau:
   * Thời gian chạy của hệ thống: 9am ngày hôm sau
   * 10GB Snapshot Size cho 3 giờ sử dụng (từ 10am đến 1pm) = 7,7 \* 10 \* 3 = 231 VND
@@ -89,7 +89,7 @@ Lưu ý rằng, tại thời điểm kích hoạt dịch vụ Snapshot lần đ�
 **Lưu ý (\*)**
 
 * Hệ thống cần tạm giữ phần sử dụng thực tế và cả phần dự đoán sử dụng cho 3 ngày tiếp theo để đảm bảo tính an toàn và xuyên suốt khi sử dụng dịch vụ.
-* Công thức ước tính sử dụng cho 3 ngày tiếp theo được tính như sau: **TotalSnapshotSize \* Đơn giá VND \* 24h \* 3 days**
+* Công thức ước tính sử dụng cho 3 ngày tiếp theo được tính như sau: **TotalSize \* Đơn giá VND \* 24h \* 3 days**
 
 ### 3. Dịch vụ/sản phẩm Container Registry (vCR) <a href="#tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit" id="tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit"></a>
 
@@ -134,19 +134,19 @@ Giả sử kỳ đối đối soát sẽ được chốt vào ngày cuối cùng
 
 * **Địa chỉ IP 103.245.251.6**
 
-| Thời gian                                                          | Usage ghi nhận                      | Usage tính phí | Số credit tạm giữ                           |
-| ------------------------------------------------------------------ | ----------------------------------- | -------------- | ------------------------------------------- |
-| Ngày 10 của tháng (là ngày đầu tiên trong tháng phát sinh sử dụng) | 5,56 GB                             | 5 GB           | 5,000 credit (1,000 VND \* 5GB)             |
-| Ngày 15 của tháng                                                  | dùng thêm 8,25 GB ->  tổng 13,81 GB | 13 GB          | 13,000 credit (1,000 VND \* (8+5) GB)       |
-| Ngày 17 của tháng                                                  | dùng thêm 3GB -> tổng 16,81 GB      | 16 GB          | 16,000 credit (1,000 VND \* (5 + 8 + 3) GB) |
+| Thời gian                                                          | Usage ghi nhận                     | Usage tính phí | Số credit tạm giữ                           |
+| ------------------------------------------------------------------ | ---------------------------------- | -------------- | ------------------------------------------- |
+| Ngày 10 của tháng (là ngày đầu tiên trong tháng phát sinh sử dụng) | 5,56 GB                            | 5 GB           | 5,000 credit (1,000 VND \* 5GB)             |
+| Ngày 15 của tháng                                                  | dùng thêm 8,25 GB -> tổng 13,81 GB | 13 GB          | 13,000 credit (1,000 VND \* (8+5) GB)       |
+| Ngày 17 của tháng                                                  | dùng thêm 3GB -> tổng 16,81 GB     | 16 GB          | 16,000 credit (1,000 VND \* (5 + 8 + 3) GB) |
 
 * **Địa chỉ IP 116.118.95.65**
 
-| Thời gian                                                         | Usage ghi nhận                      | Usage tính phí | Số credit tạm giữ                           |
-| ----------------------------------------------------------------- | ----------------------------------- | -------------- | ------------------------------------------- |
-| Ngày 1 của tháng (là ngày đầu tiên trong tháng phát sinh sử dụng) | 5 GB                                | 5 GB           | 5,000 credit (1,000 VND \* 5GB)             |
-| Ngày 15 của tháng                                                 | dùng thêm 7,75 GB ->  tổng 12,75 GB | 12 GB          | 12,000 credit (1,000 VND \* (7+5) GB)       |
-| Ngày 20 của tháng                                                 | dùng thêm 3GB -> tổng 15,75 GB      | 15 GB          | 15,000 credit (1,000 VND \* (5 + 7 + 3) GB) |
+| Thời gian                                                         | Usage ghi nhận                     | Usage tính phí | Số credit tạm giữ                           |
+| ----------------------------------------------------------------- | ---------------------------------- | -------------- | ------------------------------------------- |
+| Ngày 1 của tháng (là ngày đầu tiên trong tháng phát sinh sử dụng) | 5 GB                               | 5 GB           | 5,000 credit (1,000 VND \* 5GB)             |
+| Ngày 15 của tháng                                                 | dùng thêm 7,75 GB -> tổng 12,75 GB | 12 GB          | 12,000 credit (1,000 VND \* (7+5) GB)       |
+| Ngày 20 của tháng                                                 | dùng thêm 3GB -> tổng 15,75 GB     | 15 GB          | 15,000 credit (1,000 VND \* (5 + 7 + 3) GB) |
 
 Lúc này, tổng số credit tạm giữ dựa trên usage của các IP sử dụng băng thông như sau:
 
@@ -156,7 +156,7 @@ Lúc này, tổng số credit tạm giữ dựa trên usage của các IP sử d
 
 ### 6. Dịch vụ GLB <a href="#tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit" id="tamgiucredit-3.khongdusoducreditkhadungdetamgiucredit"></a>
 
-GLB được tính giá dựa trên số lượng Connection và lượng Data. Đối với người dùng trả trước, hệ thống sẽ thực hiện hold credit dựa trên usage hiện tại cho 3 ngày kế tiếp, với người dùng trả sau sẽ thực hiện thanh toán vào đầu tháng kế tiếp.&#x20;
+GLB được tính giá dựa trên số lượng Connection và lượng Data. Đối với người dùng trả trước, hệ thống sẽ thực hiện hold credit dựa trên usage hiện tại cho 3 ngày kế tiếp, với người dùng trả sau sẽ thực hiện thanh toán vào đầu tháng kế tiếp.
 
 Cụ thể:
 

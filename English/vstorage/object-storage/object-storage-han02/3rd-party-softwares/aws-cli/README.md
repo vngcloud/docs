@@ -9,7 +9,7 @@ To be able to integrate AWS CLI tool, you need to collect Region, Project, vStor
 {% hint style="info" %}
 #### ⚠️ Important note
 
-* From **AWS CLI v2.23.0 and above**, AWS starts to enable a new checksum algorithm **`CRC64_NH`** by default for s3 services. **VNG Cloud recommends customers to use AWS CLI version from 2.23.0 or earlier** to reduce incompatibility errors with some of our APIs or services.
+* From **AWS CLI v2.23.0 and above**, AWS starts to enable a new checksum algorithm **`CRC64_NH`** by default for s3 services. **GreenNode recommends customers to use AWS CLI version from 2.23.0 or earlier** to reduce incompatibility errors with some of our APIs or services.
 *   If you still want to use the **latest version of AWS CLI**, add this configuration after installation:
 
     ```bash

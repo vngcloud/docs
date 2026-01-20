@@ -50,9 +50,9 @@ vDB Kafka Cluster cung cấp cho bạn khả năng quản lý toàn diện các 
 1. Nhấp vào nút "Tạo Topic" để điền các thông tin cần thiết.
 2. Điền các thông tin sau:
    * **Tên Topic:** Đặt tên cho topic mới. Tên này nên mô tả rõ ràng nội dung của topic và không thể thay đổi sau khi khởi tạo.
-   * **Số Phân vùng (Partition Count):** Xác định số phân vùng cho topic. Số phân vùng ảnh hưởng đến khả năng mở rộng và song song của topic.
+   * **Số Phân vùng (Partition Count):** Xác định số phân vùng cho topic. Số phân vùng ảnh hưởng đến khả năng mở rộng và song song của topic (partition count nhỏ nhất là 1 và lớn nhất là 2048).
    * **Hệ số Nhân bản (Replication Factor):** Xác định số lượng bản sao của mỗi phân vùng. Điều này ảnh hưởng đến khả năng chịu lỗi của topic.
-   * **Retention:** Thiết lập thời gian hoặc dung lượng lưu trữ tối đa cho dữ liệu trong topic.
+   * **Retention:** Thiết lập thời gian hoặc dung lượng lưu trữ tối đa cho dữ liệu trong topic. (Retention hour nhỏ nhất là 1h và lớn nhất là 2160h).
 3. Nhấp vào nút "Tạo" để hoàn tất quá trình tạo topic.
 
 **4. Xóa Topic**
@@ -64,7 +64,7 @@ vDB Kafka Cluster cung cấp cho bạn khả năng quản lý toàn diện các 
 **5. Sửa Topic**
 
 1. Trong danh sách các topic, tìm topic bạn muốn sửa.
-2. Nhấp vào biểu tượng  "Sửa" tương ứng với topic đó.
+2. Nhấp vào biểu tượng "Sửa" tương ứng với topic đó.
 3. Thay đổi các cấu hình topic cần thiết, ví dụ:
    * **Số Phân vùng:** Chỉ cho phép tăng số phân vùng để điều chỉnh khả năng mở rộng của topic.
    * **Retention:** Thay đổi thời gian hoặc dung lượng lưu trữ tối đa cho dữ liệu.

@@ -37,14 +37,14 @@ Sử dụng phương pháp [PU](../tong-quan/kien-truc-tong-quan/co-che-phan-pho
 
 ### **Bước 1: Tạo Live Entrypoint**
 
-Đầu tiên, bạn cần thực hiện khởi tạo một Live Entrypoint theo hướng dẫn sau:&#x20;
+Đầu tiên, bạn cần thực hiện khởi tạo một Live Entrypoint theo hướng dẫn sau:
 
 1. Truy cập vào vCDN Portal tại [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
 2. Chọn mục **Live Entrypoint**, sau đó chọn **Create new.**
 
 <figure><img src="../../.gitbook/assets/image (832).png" alt=""><figcaption></figcaption></figure>
 
-3. Tiếp tục thực hiện nhập/chọn:&#x20;
+3. Tiếp tục thực hiện nhập/chọn:
 
 * **Live Entrypoint Configuration:**
   * **Live Entrypoint name:** Tên của Live Entrypoint, dùng để xác định tín hiệu đầu vào trên hệ thống.
@@ -57,35 +57,35 @@ Sử dụng phương pháp [PU](../tong-quan/kien-truc-tong-quan/co-che-phan-pho
       * **Publish IP(s):** Danh sách các địa chỉ IP được phép gửi tín hiệu RTMP đến hệ thống. Bạn cần nhập IP của thiết bị hoặc server gửi tín hiệu. Nếu không nhập đúng IP, hệ thống sẽ chặn tín hiệu. Nếu không nhập IP, bạn bắt buộc cần nhập Username và Password theo hướng dẫn bên dưới.
       * **User Name, Password:** Thông tin xác thực để bảo vệ tín hiệu RTMP. Bạn cần nhập username và password để bảo mật tín hiệu RTMP đầu vào.
 
-    <mark style="background-color:blue;">**Lưu ý:**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">Bạn phải nhập ít nhất một trong hai mục</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**Publish IP(s)**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">hoặc</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**Username/Password**</mark><mark style="background-color:blue;">, hoặc có thể nhập cả hai.</mark>
+    <mark style="background-color:blue;">**Lưu ý:**</mark> <mark style="background-color:blue;">Bạn phải nhập ít nhất một trong hai mục</mark> <mark style="background-color:blue;">**Publish IP(s)**</mark> <mark style="background-color:blue;">hoặc</mark> <mark style="background-color:blue;">**Username/Password**</mark><mark style="background-color:blue;">, hoặc có thể nhập cả hai.</mark>
 
-    * **Entrypoint Zone:**&#x20;
+    * **Entrypoint Zone:**
       * **Primary Zone:** Nhà cung cấp dịch vụ chính nhận tín hiệu RTMP (VD: Viettel, VNPT, VNG HCM). Bạn cần chọn ISP phù hợp với tín hiệu của bạn. Trong đó **RTMP URL**: Đường dẫn để push tín hiệu RTMP đến ISP chính.
       * **Backup Zone:** Nhà cung cấp dự phòng nếu tín hiệu từ Primary Zone gặp sự cố. Bạn cần chọn ISP dự phòng từ danh sách (hoặc chọn "Not Use" nếu không cần dự phòng).
     * **Media Config:**
-      * **Media Type:** Định dạng nội dung live stream, vCDN hiện tại chỉ hỗ trợ định dạng **HLS**.&#x20;
+      * **Media Type:** Định dạng nội dung live stream, vCDN hiện tại chỉ hỗ trợ định dạng **HLS**.
       * **Segment Size:** Thời gian đóng gói mỗi phân đoạn tín hiệu RTMP thành file HLS hoặc DASH. Bạn cần chọn giá trị phù hợp (2s, 4s, 6s, 10s). Giá trị nhỏ giúp giảm độ trễ nhưng tăng tải hệ thống.
 
 4. Chọn **Submit**.
 
 <figure><img src="../../.gitbook/assets/image (834).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="/broken/files/Azsy9F7hNhp26T3zYW1F" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (158).png" alt=""><figcaption></figcaption></figure>
 
 ### **Bước 2: Tạo Live Streaming**
 
-Tiếp theo, bạn cần thực hiện khởi tạo một Live Streaming theo hướng dẫn sau:&#x20;
+Tiếp theo, bạn cần thực hiện khởi tạo một Live Streaming theo hướng dẫn sau:
 
 1. Truy cập vào vCDN Portal tại [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
 2. Chọn mục **Live Streaming**, sau đó chọn **Create new.**
 
 <figure><img src="../../.gitbook/assets/image (837).png" alt=""><figcaption></figcaption></figure>
 
-3. Tiếp tục thực hiện nhập/ chọn:&#x20;
+3. Tiếp tục thực hiện nhập/ chọn:
 
 * **CDN Info:**
   * **CDN Name**: Tên của CDN Live Streaming, dùng để nhận diện khi quản lý các luồng CDN.
-  * **Type**: Lựa chọn loại dịch vụ CDN cho Live Streaming. Bạn có thể lựa chọn:&#x20;
+  * **Type**: Lựa chọn loại dịch vụ CDN cho Live Streaming. Bạn có thể lựa chọn:
     * **CDN Packaging**: Hệ thống sẽ xử lý "đóng gói" (packaging) nội dung trực tiếp trên CDN. Hãy chọn CDN Packaging nếu bạn muốn hệ thống tối ưu thời gian xử lý và giảm tải từ nguồn.
     * **Origin Packaging**: Đóng gói nội dung tại nguồn (Origin), sau đó CDN chỉ truyền tải.
 
@@ -120,7 +120,7 @@ Tiếp theo, bạn cần thực hiện khởi tạo một Live Streaming theo h�
 
 <figure><img src="../../.gitbook/assets/image (842).png" alt=""><figcaption></figcaption></figure>
 
-* **Page Rules:** Tính năng này giúp khách hàng tối ưu các điều kiện và các tùy chọn để giúp website thể hiện được nhiều mục đích khác nhau. Để tạo Page rules, vui lòng chọn **Create Page Rule**, popup sẽ hiện ra, lúc này bạn cần chọn:&#x20;
+* **Page Rules:** Tính năng này giúp khách hàng tối ưu các điều kiện và các tùy chọn để giúp website thể hiện được nhiều mục đích khác nhau. Để tạo Page rules, vui lòng chọn **Create Page Rule**, popup sẽ hiện ra, lúc này bạn cần chọn:
   * **URL pattern:** cần áp dụng pagerule, hỗ trợ kiểu khai báo “\*” đại diện cho một chuỗi nhiều ký tự. Ví dụ: /trang\_landing\_cu.html. Sau khi nhập URL pattern, bạn hãy chọn **Add new rule**. Mỗi Rules khi thỏa điệu kiện đúng URI được request sẽ có thể tùy chọn thực thi một trong các hành động sau:
     * Response Header Override
     * Resolve Origin Override
@@ -138,15 +138,15 @@ Tiếp theo, bạn cần thực hiện khởi tạo một Live Streaming theo h�
 
 ### **Bước 3: Cấu hình và truy cập vào Channel Live Stream**
 
-Sau khi bạn tạo xong Live Entrypoint và Live Streaming, lúc này, bạn có thê cấu hình và truy cập vào live thông qua:&#x20;
+Sau khi bạn tạo xong Live Entrypoint và Live Streaming, lúc này, bạn có thê cấu hình và truy cập vào live thông qua:
 
-* **Đối với link sử dụng HTTPS:**&#x20;
+* **Đối với link sử dụng HTTPS:**
 
 ```
 https://<vCDN Domain>/ <ChannelName>
 ```
 
-* **Đối với link sử dụng HTTP:**&#x20;
+* **Đối với link sử dụng HTTP:**
 
 ```
 http://<vCDN Domain>/ <ChannelName>

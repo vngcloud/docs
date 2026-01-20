@@ -1,6 +1,6 @@
 # Features of vMonitor Platform
 
-vMonitor Platform is a comprehensive monitoring solution, addressing both infrastructure and operational monitoring needs for web/applications running on VNG Cloud, other Clouds, or even on-premise environments. Currently, vMonitor Platform supports tracking Metrics, Logs, and Synthetic.​
+vMonitor Platform is a comprehensive monitoring solution, addressing both infrastructure and operational monitoring needs for web/applications running on GreenNode, other Clouds, or even on-premise environments. Currently, vMonitor Platform supports tracking Metrics, Logs, and Synthetic.​
 
 <figure><img src="../.gitbook/assets/image (46) (3).png" alt=""><figcaption></figcaption></figure>
 

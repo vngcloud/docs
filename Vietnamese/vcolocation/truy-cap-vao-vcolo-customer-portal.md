@@ -3,7 +3,7 @@
 Bạn cần **đăng ký tài khoản** và **kích hoạt tài khoản** sử dụng dịch vụ vColo thì mới có thể truy cập vào vColo customer portal
 
 1. Để đăng ký tài khoản hãy làm theo hướng dẫn: [hướng dẫn đăng ký](../huong-dan-su-dung-tai-khoan/dang-ky-tai-khoan.md)
-2. Sau khi có tài khoản, hãy liên hệ với bộ phận hỗ trợ KH của VNG Cloud để được kích hoạt tài khoản dịch vụ vColo
+2. Sau khi có tài khoản, hãy liên hệ với bộ phận hỗ trợ KH của GreenNode để được kích hoạt tài khoản dịch vụ vColo
 3. Tiến hành đăng nhập theo hướng dẫn sau:
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

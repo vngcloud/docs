@@ -12,7 +12,7 @@ You will receive a notification as below.
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Please check your email with the subject "VNG CLOUD - Reset Password." Click on this link to proceed to Step 3.
+Please check your email with the subject "GreenNode - Reset Password." Click on this link to proceed to Step 3.
 
 <figure><img src="../.gitbook/assets/image (19) (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -20,4 +20,4 @@ Please check your email with the subject "VNG CLOUD - Reset Password." Click on 
 
 <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-After that, please check your email again. You will receive an email titled "**VNG CLOUD - Password Changed**" that the password has been successfully changed and will be redirected to the **login page**. Finally, log in to the system with the newly reset password.
+After that, please check your email again. You will receive an email titled "**GreenNode - Password Changed**" that the password has been successfully changed and will be redirected to the **login page**. Finally, log in to the system with the newly reset password.

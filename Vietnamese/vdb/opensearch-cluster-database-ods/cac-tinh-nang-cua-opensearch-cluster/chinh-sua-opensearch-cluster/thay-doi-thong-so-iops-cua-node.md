@@ -1,6 +1,6 @@
 # Thay đổi thông số IOPS của node
 
-Trong dịch vụ **vDB OpenSearch** của **VNG Cloud**, bạn có thể dễ dàng điều chỉnh **IOPS (Input/Output Operations Per Second)** để tối ưu hóa hiệu suất đọc/ghi của hệ thống. **Chúng tôi hỗ trợ cả tăng và giảm IOPS** tùy theo nhu cầu sử dụng.
+Trong dịch vụ **vDB OpenSearch** của **GreenNode**, bạn có thể dễ dàng điều chỉnh **IOPS (Input/Output Operations Per Second)** để tối ưu hóa hiệu suất đọc/ghi của hệ thống. **Chúng tôi hỗ trợ cả tăng và giảm IOPS** tùy theo nhu cầu sử dụng.
 
 Để tăng/ giảm IOPS cho các node trong một OpenSearch Cluster, bạn có thể:
 

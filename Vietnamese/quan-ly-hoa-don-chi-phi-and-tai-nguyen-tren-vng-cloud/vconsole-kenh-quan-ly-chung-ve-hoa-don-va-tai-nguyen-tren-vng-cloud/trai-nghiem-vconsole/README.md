@@ -1,12 +1,12 @@
 # Trải nghiệm vConsole
 
-Sử dụng hướng dẫn này để bắt đầu với **vConsole**. Bạn sẽ học cách xem _thống kê, báo cáo chi phí hóa đơn_ theo từng kỳ sử dụng, cũng như các _thống kê, báo cáo về lịch sử thanh toán, thay đổi số dư credit_ liên quan đến việc mua và thay đổi cấu hình dịch vụ các sản phẩm VNG Cloud Service.
+Sử dụng hướng dẫn này để bắt đầu với **vConsole**. Bạn sẽ học cách xem _thống kê, báo cáo chi phí hóa đơn_ theo từng kỳ sử dụng, cũng như các _thống kê, báo cáo về lịch sử thanh toán, thay đổi số dư credit_ liên quan đến việc mua và thay đổi cấu hình dịch vụ các sản phẩm GreenNode Service.
 
-Đối với quý khách hàng chưa sử dụng bất kỳ dịch vụ nào của VNG Cloud Service (chưa đăng ký tài khoản sử dụng với VNG Cloud Service), bạn cần đăng ký tài khoản với VNG Cloud Service [**tại đây**](https://www.vngcloud.vn/) để truy cập đến vConsole.
+Đối với quý khách hàng chưa sử dụng bất kỳ dịch vụ nào của GreenNode Service (chưa đăng ký tài khoản sử dụng với GreenNode Service), bạn cần đăng ký tài khoản với GreenNode Service [**tại đây**](https://www.vngcloud.vn/) để truy cập đến vConsole.
 
 ## Tổng quan <a href="#trainghiemvconsole-tongquan" id="trainghiemvconsole-tongquan"></a>
 
-Đối với quý khách hàng là người sử dụng dịch vụ VNG Cloud Service, bạn sẽ được phép trải nghiệm các tính năng sau:
+Đối với quý khách hàng là người sử dụng dịch vụ GreenNode Service, bạn sẽ được phép trải nghiệm các tính năng sau:
 
 ***
 
@@ -14,10 +14,10 @@ Sử dụng hướng dẫn này để bắt đầu với **vConsole**. Bạn s�
 
 1. Truy cập vào trang chủ vConsole tại: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
 2. Tại trang chủ vConsole, người dùng sẽ thấy các mục như:
-   1. **Dịch vụ VNG Cloud / VNG Cloud Services:**
-      * Bao gồm thông tin các sản phẩm của VNG Cloud Service **(vServer, vStorage, vMonitor, vCDN)**
+   1. **Dịch vụ GreenNode / GreenNode Services:**
+      * Bao gồm thông tin các sản phẩm của GreenNode Service **(vServer, vStorage, vMonitor, vCDN)**
       * Các điểm điều hướng nhanh đến từng trang dịch vụ cụ thể theo từng sản phẩm
-      * Thanh công cụ tìm kiếm (điều hướng nhanh) đến trang dịch vụ của VNG Cloud Service
+      * Thanh công cụ tìm kiếm (điều hướng nhanh) đến trang dịch vụ của GreenNode Service
    2. **Gần đây / Recent:**
       * Hỗ trợ truy cập nhanh đến các trang dịch vụ mà bạn vừa thực hiện tại trang chủ vConsole
    3. **Báo cáo giá / Pricing report**

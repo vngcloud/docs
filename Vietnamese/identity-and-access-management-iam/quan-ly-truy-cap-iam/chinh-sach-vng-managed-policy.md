@@ -1,10 +1,10 @@
 # Chính sách VNG Managed Policy
 
-**VNG Managed Policy** Là các Chính Sách IAM (IAM Policy) được tạo mặc định bởi hệ thống IAM VNG Cloud. Các Chính Sách này được quản lý bởi chính VNG Cloud nhằm mục đích hỗ trợ người dùng trong việc cài đặt nhanh chóng các quyền truy cập cần thiết cho các tài khoản người dùng IAM đối với các tài nguyên của từng Product cụ thể.&#x20;
+**VNG Managed Policy** Là các Chính Sách IAM (IAM Policy) được tạo mặc định bởi hệ thống IAM GreenNode. Các Chính Sách này được quản lý bởi chính GreenNode nhằm mục đích hỗ trợ người dùng trong việc cài đặt nhanh chóng các quyền truy cập cần thiết cho các tài khoản người dùng IAM đối với các tài nguyên của từng Product cụ thể.&#x20;
 
 #### Danh sách VNG Managed Policies <a href="#vngmanagepolicies-danhsachvngmanagedpolicies" id="vngmanagepolicies-danhsachvngmanagedpolicies"></a>
 
-VNG Cloud Managed Policies được quản lý bởi VNG Cloud, nhóm theo các Product/Service được IAM hỗ trợ trong hệ sinh thái VNG Cloud Service như sau:
+GreenNode Managed Policies được quản lý bởi GreenNode, nhóm theo các Product/Service được IAM hỗ trợ trong hệ sinh thái GreenNode Service như sau:
 
 | Product/Service                                                                                                         | VNG Managed Policies                                                                                                                        | Mô tả                                                                                                           |
 | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |

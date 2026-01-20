@@ -1,4 +1,4 @@
-# Use Persistent Volume (PV) and Persistent Volume Claim (PVC) with VNG Cloud
+# Use Persistent Volume (PV) and Persistent Volume Claim (PVC) with GreenNode
 
 PersistentVolume(PV) is a part of the data storage space in the cluster, the PersistentVolume is the same as the normal Volume, but it exists independently of the POD (the pod deleted PV still exists), there are many types of PersistentVolume that can be deployed. like NFS, Clusterfs...
 
@@ -42,9 +42,9 @@ requests:
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59802536/image2023-4-26_13-35-23.png?version=1&#x26;modificationDate=1684996343000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-At this time, PV will automatically be created and will belong to StorageClass: csi-sc-cinderplugin-ssd because VNG Cloud is already defined with information of volume: SSD-IOPS-3000
+At this time, PV will automatically be created and will belong to StorageClass: csi-sc-cinderplugin-ssd because GreenNode is already defined with information of volume: SSD-IOPS-3000
 
-#### **3. Check on VNG Cloud portal** <a href="#usepersistentvolume-pv-andpersistentvolumeclaim-pvc-withvngcloud-3.checkonvngcloudportal" id="usepersistentvolume-pv-andpersistentvolumeclaim-pvc-withvngcloud-3.checkonvngcloudportal"></a>
+#### **3. Check on GreenNode portal** <a href="#usepersistentvolume-pv-andpersistentvolumeclaim-pvc-withvngcloud-3.checkonvngcloudportal" id="usepersistentvolume-pv-andpersistentvolumeclaim-pvc-withvngcloud-3.checkonvngcloudportal"></a>
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59802536/image2023-4-26_13-24-47.png?version=1&#x26;modificationDate=1684996553000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 

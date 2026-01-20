@@ -15,7 +15,7 @@ The following rules apply to metric naming in vStorage:
 * The metric name must be between 3 (minimum) and 50 (maximum) characters long.
 * The metric name must have the first character alphanumerics (az, AZ) or underscores (\_). The following characters are alphanumerics (az, 0-9), underscores (\_), minuses (-), periods (.) or slashes ( / ).
 * The metric name should not contain sensitive information (eg IP address, account name, login password,...).
-* The metric name must be unique on a VNG Cloud account until that metric is deleted.
+* The metric name must be unique on a GreenNode account until that metric is deleted.
 
 **Illustration**
 

@@ -4,13 +4,13 @@
 
 ## Khởi tạo Windows server on vServer
 
-Dưới đây là hướng dẫn cơ bản cho việc khởi tạo Windows server trên vServer, nếu bạn đã có sẵn server, hãy bỏ qua bước này.&#x20;
+Dưới đây là hướng dẫn cơ bản cho việc khởi tạo Windows server trên vServer, nếu bạn đã có sẵn server, hãy bỏ qua bước này.
 
 <details>
 
 <summary>Hướng dẫn tạo Windows server</summary>
 
-Trước khi có thể thực hiện khởi tạo Windows server, hãy đảm bảo bạn khởi tạo VPC, Subnet trên hệ thống vServer. Tiếp theo, thực hiện các bước theo hướng dẫn bên dưới để khởi tạo Windows server:&#x20;
+Trước khi có thể thực hiện khởi tạo Windows server, hãy đảm bảo bạn khởi tạo VPC, Subnet trên hệ thống vServer. Tiếp theo, thực hiện các bước theo hướng dẫn bên dưới để khởi tạo Windows server:
 
 1. Đăng nhập vào vServer tại [https://hcm-03.console.vngcloud.tech/vserver](https://hcm-03.console.vngcloud.tech/vserver/v-server/create-server).
 2. Tiếp tục chọn mục **Servers**.
@@ -34,7 +34,7 @@ Trước khi có thể thực hiện khởi tạo Windows server, hãy đảm b�
 </details>
 
 {% hint style="info" %}
-**Chú ý:**&#x20;
+**Chú ý:**
 
 Security Groups trên Windows server cần mở thêm các port sau để share được dữ liệu:
 
@@ -51,7 +51,7 @@ Dưới đây là hướng dẫn cơ bản cho việc kết nối tới Windows 
 
 <details>
 
-<summary>Kết nối tới Windows server </summary>
+<summary>Kết nối tới Windows server</summary>
 
 **Để có thể kết nối vào máy chủ Window, trước tiên, bạn cần cài đặt RDP:** Theo mặc định, Windows sẽ bao gồm RDP Client. Để xác minh, hãy nhập **mstsc** tại cửa sổ Command Prompt. Nếu máy tính của bạn không nhận ra lệnh này, hãy xem trang chủ Windows và tìm kiếm bản tải xuống cho ứng dụng[ Microsoft Remote Desktop](https://www.microsoft.com/vi-vn/windows).
 
@@ -77,7 +77,7 @@ Dưới đây là hướng dẫn cơ bản cho việc kết nối tới Windows 
 
 </details>
 
-<mark style="background-color:red;">Sau khi bạn đã kết nối được vào Windows server, bạn cần đảm bảo Windows server của bạn đã có địa chỉ IP tĩnh, bạn có thể kiểm tra và cấu hình IP tĩnh theo hướng dẫn sau:</mark>&#x20;
+<mark style="background-color:red;">Sau khi bạn đã kết nối được vào Windows server, bạn cần đảm bảo Windows server của bạn đã có địa chỉ IP tĩnh, bạn có thể kiểm tra và cấu hình IP tĩnh theo hướng dẫn sau:</mark>
 
 * **Kiểm tra cấu hình mạng của VM bằng cách:**
   * Truy cập **Control Panel > Network & Internet > Network Connections**.
@@ -89,7 +89,7 @@ Dưới đây là hướng dẫn cơ bản cho việc kết nối tới Windows 
     * **IP Address:** địa chỉ IP tĩnh của VM.
     * **Subnet Mask:** Subnet mask tương ứng, ví dụ nếu Subnet của bạn có CIDR: /24 thì Subnet Mask cần nhập là `255.255.255.0`.
     * **Default gateway:** địa chỉ default gateway phải nằm cùng trong Network với IP tĩnh của VM, và dựa trên Subnet Mask. Ví dụ: IP tĩnh là `10.50.3.9`, Subnet Mask là `255.255.255.0` thì Default gateway có thể là `10.50.3.1`
-    * **Preferred DNS server:** địa chỉ IP của DNS Domain (thường cũng chính là địa chỉ IP tĩnh của VM)  (bạn có thể bổ sung sau khi đã khởi tạo DNS domain theo hướng dẫn bên dưới)
+    * **Preferred DNS server:** địa chỉ IP của DNS Domain (thường cũng chính là địa chỉ IP tĩnh của VM) (bạn có thể bổ sung sau khi đã khởi tạo DNS domain theo hướng dẫn bên dưới)
 
 <figure><img src="../../../../.gitbook/assets/image (923).png" alt=""><figcaption></figcaption></figure>
 
@@ -98,7 +98,7 @@ Dưới đây là hướng dẫn cơ bản cho việc kết nối tới Windows 
 ## Khởi tạo Active Directory trên Windows Server
 
 {% hint style="info" %}
-**Chú ý:**&#x20;
+**Chú ý:**
 
 * Bạn bắt buộc cần sử dụng Administrator để thực hiện khởi tạo DNS Server cũng như Active Directory Domain Service theo hướng dẫn ở các bước bên dưới.
 {% endhint %}
@@ -132,7 +132,7 @@ Cụ thể, vui lòng thực hiện theo các bước bên dưới:
 
 5. Tại mục **Server Selection**: bạn chọn **Select a server from the server pool** và **chọn server hiện tại** sau đó chọn **Next**
 
-<figure><img src="/broken/files/tBhapg9Xee7silmajsgQ" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. Tại mục **Server Roles**: Tick chọn **DNS Server** sau đó nhấn **Next** và **Install** để cài đặt.
 
@@ -150,13 +150,13 @@ Cụ thể, vui lòng thực hiện theo các bước bên dưới:
 
 <figure><img src="../../../../.gitbook/assets/image (6) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-### Tạo một Forward Lookup Zone&#x20;
+### Tạo một Forward Lookup Zone
 
-Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển domain thành địa chỉ IP. Cụ thể các bước thực hiện như sau:&#x20;
+Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển domain thành địa chỉ IP. Cụ thể các bước thực hiện như sau:
 
 1. Thực hiện mở **DNS Manager** bằng cách chọn **Tools**, sau đó chọn **DNS**
 
-<figure><img src="/broken/files/Uew3VnO3BKsnWTzE1U8t" alt="" width="336"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (321).png" alt="" width="336"><figcaption></figcaption></figure>
 
 2. Trong DNS Manager, chọn vào DNS đang có và tiếp tục nhấp chuột phải vào **Forward Lookup Zones** và chọn **New Zone**
 
@@ -180,9 +180,9 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 
 7. Tại màn hình **Dynamic Update**: Chọn:
 
-* **Allow only secure dynamic updates (Recommended for Active Directory):** nếu bạn đã có sẵn **Active Directory** integrate với **zone** của bạn. Nếu bạn chọn phương án này, <mark style="background-color:blue;">Window servers sẽ tự động tạo một</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**Reverse Lookup Zone**</mark><mark style="background-color:blue;">, bạn có thể bỏ qua các bước tại</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**Tạo một Reverse Lookup Zone**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">bên dưới.</mark>
-* **Do not allow dynamic updates:** nếu bạn chưa có sẵn **Active Directory** nào integrate với **zone** của bạn. Nếu bạn chọn phương án này, bạn cần thực hiện <mark style="background-color:orange;">tạo Reverse Lookup Zone thủ công</mark> theo hướng dẫn bên dưới.&#x20;
-* Sau đó, bạn chọn **Next.**&#x20;
+* **Allow only secure dynamic updates (Recommended for Active Directory):** nếu bạn đã có sẵn **Active Directory** integrate với **zone** của bạn. Nếu bạn chọn phương án này, <mark style="background-color:blue;">Window servers sẽ tự động tạo một</mark> <mark style="background-color:blue;">**Reverse Lookup Zone**</mark><mark style="background-color:blue;">, bạn có thể bỏ qua các bước tại</mark> <mark style="background-color:blue;">**Tạo một Reverse Lookup Zone**</mark> <mark style="background-color:blue;">bên dưới.</mark>
+* **Do not allow dynamic updates:** nếu bạn chưa có sẵn **Active Directory** nào integrate với **zone** của bạn. Nếu bạn chọn phương án này, bạn cần thực hiện <mark style="background-color:orange;">tạo Reverse Lookup Zone thủ công</mark> theo hướng dẫn bên dưới.
+* Sau đó, bạn chọn **Next.**
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="509"><figcaption></figcaption></figure>
 
@@ -214,7 +214,7 @@ Nếu bạn chưa có sẵn **Active Directory** nào integrate với **zone** c
 
 <details>
 
-<summary>Khởi tạo Reverse Lookup Zone </summary>
+<summary>Khởi tạo Reverse Lookup Zone</summary>
 
 Tiếp theo, bạn sẽ cần tạo một Reverse Lookup Zone để chuyển IP thành domain. Cụ thể các bước thực hiện như sau:
 
@@ -265,11 +265,9 @@ Tiếp theo, bạn sẽ cần tạo một Reverse Lookup Zone để chuyển IP 
 
 <img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 
-
-
 </details>
 
-### Kiểm tra DNS name&#x20;
+### Kiểm tra DNS name
 
 Trên Windows server của bạn, mở Command Prompt và chạy:
 
@@ -279,7 +277,7 @@ hoặc
 nslookup <IP Address>
 ```
 
-Ví dụ:&#x20;
+Ví dụ:
 
 ```bash
 nslookup example.local
@@ -287,7 +285,7 @@ hoặc
 nslookup 10.50.3.9
 ```
 
-Kết quả hiển thị ví dụ như sau:&#x20;
+Kết quả hiển thị ví dụ như sau:
 
 ```bash
 nslookup example.local
@@ -350,7 +348,7 @@ Address: 10.50.3.9
 
 13. Tại màn hình **Deployment Configuration**, chọn **Add a new forest** sau đó nhập **DNS domain name** đã tạo (<mark style="color:red;">**chính là Zone name đã tạo tại bước Tạo một Forward Lookup Zone**</mark>) sau đó chọn **Next**
 
-<figure><img src="/broken/files/yK9GdAzTFH7smmbMUdQ2" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (330).png" alt="" width="563"><figcaption></figcaption></figure>
 
 14. Tại màn hình **Domain Controller Options**, bạn hãy nhập **Password** và **Confirm Password** cho DSRM của bạn
 
@@ -360,7 +358,7 @@ Address: 10.50.3.9
 
 <figure><img src="../../../../.gitbook/assets/image (889).png" alt="" width="563"><figcaption></figcaption></figure>
 
-16. Tại mục **Additional Options**, bạn hãy kiểm tra lại **NetBIOS name** và thay đổi nếu bạn thấy cần thiết sau đó chọn **Next. NetBIOS domain name** là domain rút gọn của Root domain name,&#x20;
+16. Tại mục **Additional Options**, bạn hãy kiểm tra lại **NetBIOS name** và thay đổi nếu bạn thấy cần thiết sau đó chọn **Next. NetBIOS domain name** là domain rút gọn của Root domain name,
 
 <figure><img src="../../../../.gitbook/assets/image (890).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -386,15 +384,15 @@ Address: 10.50.3.9
 
 ### Lấy thông tin DNS Domain Name, AD Domain Name
 
-Bạn có thể sử dụng câu lệnh bên dưới để lấy thông tin DNS Domain Name, AD Domain Name đã khởi tạo, bạn có thể sử dụng PowerShell trên window servers thông qua lệnh:&#x20;
+Bạn có thể sử dụng câu lệnh bên dưới để lấy thông tin DNS Domain Name, AD Domain Name đã khởi tạo, bạn có thể sử dụng PowerShell trên window servers thông qua lệnh:
 
-* Lấy thông tin **DNS Domain Name:**&#x20;
+* Lấy thông tin **DNS Domain Name:**
 
 ```powershell
 Get-DnsClientGlobalSetting
 ```
 
-* Lấy thông tin **AD Domain Name:**&#x20;
+* Lấy thông tin **AD Domain Name:**
 
 ```powershell
 (Get-WmiObject Win32_ComputerSystem).Domain
@@ -408,7 +406,7 @@ Get-DnsClientGlobalSetting
 
 **Bước 2:** Chọn mục **File Storage** sau đó chọn **Create a File storage.**
 
-**Bước 3:** Tại màn hình khởi tạo File Storage, bạn cần nhập/ chọn:&#x20;
+**Bước 3:** Tại màn hình khởi tạo File Storage, bạn cần nhập/ chọn:
 
 * **File Storage name:** tên gợi nhớ của file storage. Tên file cần dài từ 5 tới 50 ký tự và có thể bao gồm các ký tự a-z, A-Z, 0-9, '-', '\_'
 * **Description**: nhập mô tả cho file storage.
@@ -441,7 +439,7 @@ Get-DnsClientGlobalSetting
 
 ***
 
-## Map File Storage vừa khởi tạo tới Windows server&#x20;
+## Map File Storage vừa khởi tạo tới Windows server
 
 Trên Windows Server, bạn có thể map file storage SMB thông qua giao diện hoặc dòng lệnh.
 

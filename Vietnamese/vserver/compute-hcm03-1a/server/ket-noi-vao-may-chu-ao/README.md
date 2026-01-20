@@ -1,10 +1,10 @@
 # Kết nối vào máy chủ ảo
 
-Người dùng có nhiều cách để kết nối vào máy chủ ảo như chức năng Console trên VNG Cloud Portal hoặc các công cụ client khác. Tùy thuộc vào hệ điều hành của máy chủ ảo, hệ điều hành của máy cá nhân hoặc loại kết nối mong muốn mà bạn có thể lựa chọn phương pháp kết nối phù hợp.
+Người dùng có nhiều cách để kết nối vào máy chủ ảo như chức năng Console trên GreenNode Portal hoặc các công cụ client khác. Tùy thuộc vào hệ điều hành của máy chủ ảo, hệ điều hành của máy cá nhân hoặc loại kết nối mong muốn mà bạn có thể lựa chọn phương pháp kết nối phù hợp.
 
 ### **Kết nối sử dụng trình điều khiển vServer** <a href="#ketnoivaomaychuao-ketnoisudungtrinhdieukhienvserver" id="ketnoivaomaychuao-ketnoisudungtrinhdieukhienvserver"></a>
 
-Phương pháp này đòi hỏi bạn phải có mật khẩu của máy chủ. Mặc định, hệ thống VNG Cloud tự động sinh ra password cho máy chủ ảo khi bạn tạo mới. Thông tin này sẽ được gửi qua email khi máy chủ ảo đuợc tạo xong và ở trạng thái Active. Bạn cũng có thể dùng username và password đã điền vào trước đó trong quy trình tạo mới máy chủ.
+Phương pháp này đòi hỏi bạn phải có mật khẩu của máy chủ. Mặc định, hệ thống GreenNode tự động sinh ra password cho máy chủ ảo khi bạn tạo mới. Thông tin này sẽ được gửi qua email khi máy chủ ảo đuợc tạo xong và ở trạng thái Active. Bạn cũng có thể dùng username và password đã điền vào trước đó trong quy trình tạo mới máy chủ.
 
 Một số trường hợp cần phải dùng phương pháp kết nối này để giải quyết, chẳng hạn như:
 

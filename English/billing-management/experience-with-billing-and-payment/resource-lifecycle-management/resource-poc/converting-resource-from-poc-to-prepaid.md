@@ -1,6 +1,6 @@
 # Converting resource from POC to Prepaid
 
-At VNG Cloud Service, we support users to flexibly change the purpose of using resources, from the POC stage to a paid service on the same resource. Changing the purpose of using brings significant benefits such as _**saving time to initialize new resources (configuration, payment, ...), optimizing usage costs, reusing old data for new purposes, ...**_
+At GreenNode Service, we support users to flexibly change the purpose of using resources, from the POC stage to a paid service on the same resource. Changing the purpose of using brings significant benefits such as _**saving time to initialize new resources (configuration, payment, ...), optimizing usage costs, reusing old data for new purposes, ...**_
 
 To perform the conversion, please follow the instructions below:
 
@@ -10,7 +10,7 @@ To perform the conversion, please follow the instructions below:
 * **Step 4:** At the payment page, users perform the same as new purchases, according to their usage needs.
   * Select resource usage time
   * Turn on auto-renewal
-  * Choose to pay by VNG Cloud credit or directly from the payment gateway
+  * Choose to pay by GreenNode credit or directly from the payment gateway
 * **Step 5:** After successful payment, users will be redirected to the resource management website to check information and continue using resources.
 
 At this time, the system has recorded the resource has completed the conversion process to paid service, users can check the service invoice information (except K8s service (vContainer)) at the vConsole website - Invoice history: [https://dashboard.console.vngcloud.vn/billing-report](https://dashboard.console.vngcloud.vn/billing-report)

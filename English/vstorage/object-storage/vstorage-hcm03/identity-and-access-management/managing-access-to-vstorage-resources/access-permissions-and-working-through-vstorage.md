@@ -16,7 +16,7 @@ You can switch the mode of a container from public to private to stop sharing th
 
 &#x20;ACLs for a container
 
-You can grant Read, Write, or Read and Write permissions to one or all other Root users. (Root users who are granted access through ACLs must be authorized accounts on our VNG Cloud system). For more information, please refer to [ACLs for a container](https://docs.vngcloud.vn/display/VSEN/ACLs+for+a+container).
+You can grant Read, Write, or Read and Write permissions to one or all other Root users. (Root users who are granted access through ACLs must be authorized accounts on our GreenNode system). For more information, please refer to [ACLs for a container](https://docs.vngcloud.vn/display/VSEN/ACLs+for+a+container).
 
 ***
 

@@ -1,8 +1,8 @@
-# Step 5: Allow integrating vLB into Containers service of VNG CLOUD
+# Step 5: Allow integrating vLB into Containers service of GreenNode
 
-**Demand:**   Customers need to deploy 2 websites: [httpd.app.com](http://httpd.app.com/) and [nginx.app.com](http://nginx.app.com/) according to microservice architecture on VNG Cloud infrastructure.
+**Demand:**   Customers need to deploy 2 websites: [httpd.app.com](http://httpd.app.com/) and [nginx.app.com](http://nginx.app.com/) according to microservice architecture on GreenNode infrastructure.
 
-**Solution:**   Use vLB (Load Balancer) service in combination with vContainer service on VNG Cloud.
+**Solution:**   Use vLB (Load Balancer) service in combination with vContainer service on GreenNode.
 
 ### **Solution architecture:** <a href="#step5-allowintegratingvlbintocontainersserviceofvngcloud-solutionarchitecture" id="step5-allowintegratingvlbintocontainersserviceofvngcloud-solutionarchitecture"></a>
 

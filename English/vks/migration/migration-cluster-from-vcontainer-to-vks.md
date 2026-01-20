@@ -6,7 +6,7 @@
 
 <figure><img src="../../.gitbook/assets/image (293).png" alt=""><figcaption></figcaption></figure>
 
-**Process of migrating from vContainer to vKS (Customer + VNG Cloud)**
+**Process of migrating from vContainer to vKS (Customer + GreenNode)**
 
 **Step 1:** Evaluate the current version of the vContainer cluster and the corresponding vKS cluster to migrate. At this point, there will be 2 cases (step 2 and step 3)
 

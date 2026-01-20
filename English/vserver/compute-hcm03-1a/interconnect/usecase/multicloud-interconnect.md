@@ -4,11 +4,11 @@ Multicloud Interconnect is a network solution that enables enterprises to connec
 
 &#x20;**"Optimizing Multi-Platform Cloud Management"**
 
-_Customer_: Company A is a large enterprise with a complex system, running applications and services across multiple cloud platforms, including Amazon Web Services (AWS), and VNG Cloud.
+_Customer_: Company A is a large enterprise with a complex system, running applications and services across multiple cloud platforms, including Amazon Web Services (AWS), and GreenNode.
 
 _Issue:_ Company A struggles with managing and optimizing the performance of their applications and services across these cloud platforms. They face challenges such as bandwidth management, data security, and ensuring service continuity.
 
-_Solution:_ Company A decides to deploy a Multicloud Interconnect solution from VNG Cloud to address their challenges. They choose a cloud service provider experienced in providing multi-platform cloud connections.
+_Solution:_ Company A decides to deploy a Multicloud Interconnect solution from GreenNode to address their challenges. They choose a cloud service provider experienced in providing multi-platform cloud connections.
 
 With the Multicloud Interconnect solution, Company A can:
 

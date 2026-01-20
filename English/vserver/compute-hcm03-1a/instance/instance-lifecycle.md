@@ -8,7 +8,7 @@ An instance transitions through different states from the moment it is created t
 
 In this stage, the instances are prepared to enter the running state. The computing resources are allocated & configured at this stage.
 
-In VNG Cloud, the instances have a pending state. Such instance states are launched for the first time or started after the stopping stage.
+In GreenNode, the instances have a pending state. Such instance states are launched for the first time or started after the stopping stage.
 
 ### **Running** <a href="#instancelifecycle-running" id="instancelifecycle-running"></a>
 

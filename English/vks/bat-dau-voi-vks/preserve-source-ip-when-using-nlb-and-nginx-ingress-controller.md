@@ -6,7 +6,7 @@
 
 ## Prerequisites <a href="#dieu-kien-can" id="dieu-kien-can"></a>
 
-*   You have initialized the Cluster on the VKS system according to the instructions here [and ](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4)**VNGCloud LoadBalancer Controller** has been installed on your cluster with appversion from **v0.2.1** or higher. If your appversion is lower than this standard version, you can perform the upgrade according to the following instructions:
+*   You have initialized the Cluster on the VKS system according to the instructions here [and ](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4)**GreenNode LoadBalancer Controller** has been installed on your cluster with appversion from **v0.2.1** or higher. If your appversion is lower than this standard version, you can perform the upgrade according to the following instructions:
 
     * First, you need to get the release name of **vngcloud-controller-manager** installed on your cluster:
 

@@ -2,7 +2,7 @@
 
 ## Tổng quan
 
-Hệ thống phân quyền thứ cấp cho phép khách hàng quản lý quyền truy cập và thao tác trên dịch vụ CDN một cách linh hoạt và chi tiết. Thông qua giao diện Portal của VNG Cloud, khách hàng có thể ủy quyền quản trị cho bất kỳ tài khoản nào đã tồn tại trên hệ thống với quyền hạn được tùy chỉnh.
+Hệ thống phân quyền thứ cấp cho phép khách hàng quản lý quyền truy cập và thao tác trên dịch vụ CDN một cách linh hoạt và chi tiết. Thông qua giao diện Portal của GreenNode, khách hàng có thể ủy quyền quản trị cho bất kỳ tài khoản nào đã tồn tại trên hệ thống với quyền hạn được tùy chỉnh.
 
 ## Chi tiết
 
@@ -38,7 +38,7 @@ Hệ thống phân quyền thứ cấp cho phép khách hàng quản lý quyền
 
 **Bước 2:** Chọn mục **IAM**, sau đó chọn **Add new.**
 
-**Bước 3:** Nhập địa chỉ email của tài khoản đã tồn tại trên hệ thống VNG Cloud.
+**Bước 3:** Nhập địa chỉ email của tài khoản đã tồn tại trên hệ thống GreenNode.
 
 **Bước 4:** Tại đối tượng cần phân quyền, chọn loại quyền hạn phù hợp với nhu cầu. Trong đó:&#x20;
 

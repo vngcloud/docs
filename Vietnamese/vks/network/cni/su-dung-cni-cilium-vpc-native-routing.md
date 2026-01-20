@@ -85,7 +85,7 @@ Giả sử, khi khởi tạo cluster, tôi lựa chọn:
 
 <table data-full-width="true"><thead><tr><th>Node CIDR mask size</th><th>Số lượng IP cho mỗi node</th><th>Số lượng node có thể tạo trong dải /20 (4096 IP)</th><th>Số lượng IP phân bổ cho pod trên mỗi node</th><th>Số lượng pod thực tế có thể tạo</th></tr></thead><tbody><tr><td><strong>/24</strong></td><td>256</td><td>16</td><td>256</td><td>128</td></tr><tr><td><strong>/25</strong></td><td>128</td><td>32</td><td>128</td><td>64</td></tr><tr><td><strong>/26</strong></td><td>64</td><td>64</td><td>64</td><td>32</td></tr></tbody></table>
 
-<figure><img src="/broken/files/AIA0DnjReVI7B3q8g81r" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (131).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**

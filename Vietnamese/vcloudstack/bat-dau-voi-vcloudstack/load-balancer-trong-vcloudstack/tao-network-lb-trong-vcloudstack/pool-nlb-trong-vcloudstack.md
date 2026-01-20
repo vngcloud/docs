@@ -167,7 +167,7 @@ Tại cửa sổ giao diện "Thêm Pool", kéo đến phần "Cài đặt Healt
 
 ## Pool's algorithm (NLB)
 
-Load balancing hay "Cân bằng tải" là một trong những tính năng chính của dịch vụ Load Balancer (vLB) của VNG CLOUD. Nó là quá trình nhận yêu cầu của khách hàng ở Listener và phân phối chúng cho một số Member (server) theo các thuật toán đã được thiết lập. Nhờ vào tính năng này dịch vụ của người dùng được gia tăng năng lực xử lý với việc tạo nhiều hoặc một cụm server đứng sau LB.Thuật toán Cân bằng tải sẽ xác định Member (server) nào được chọn khi cân bằng tải. Load Balancer của VNG CLOUD cung cấp ba loại thuật toán Cân bằng tải như sau:
+Load balancing hay "Cân bằng tải" là một trong những tính năng chính của dịch vụ Load Balancer (vLB) của GreenNode. Nó là quá trình nhận yêu cầu của khách hàng ở Listener và phân phối chúng cho một số Member (server) theo các thuật toán đã được thiết lập. Nhờ vào tính năng này dịch vụ của người dùng được gia tăng năng lực xử lý với việc tạo nhiều hoặc một cụm server đứng sau LB.Thuật toán Cân bằng tải sẽ xác định Member (server) nào được chọn khi cân bằng tải. Load Balancer của GreenNode cung cấp ba loại thuật toán Cân bằng tải như sau:
 
 * **Round Robin**
 * **Least Connection**

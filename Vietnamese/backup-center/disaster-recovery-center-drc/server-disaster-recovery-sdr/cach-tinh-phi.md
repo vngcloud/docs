@@ -18,7 +18,7 @@ Khi sử dụng dịch vụ Server Disaster Recovery (SDR), các khoản phí sa
 **Lưu ý:**
 
 * Chi phí cụ thể có thể thay đổi tùy thuộc vào cấu hình máy chủ, loại ổ đĩa và lượng dữ liệu được sao chép.
-* Bạn có thể xem chi tiết về giá dịch vụ SDR trên trang web của VNG Cloud hoặc liên hệ với đội ngũ hỗ trợ để được tư vấn cụ thể.
+* Bạn có thể xem chi tiết về giá dịch vụ SDR trên trang web của GreenNode hoặc liên hệ với đội ngũ hỗ trợ để được tư vấn cụ thể.
 
 **Tóm tắt:**
 

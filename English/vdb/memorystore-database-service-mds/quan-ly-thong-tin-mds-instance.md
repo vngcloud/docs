@@ -20,7 +20,7 @@ After ensuring the information is correct, click "Create" in the upper right cor
 To configure the values of a Configuration Group, left-click on the name of the Configuration Group. Here, you can view all the configuration variables of this group. Each variable includes:
 
 * **Name:** Variable name.
-* **Value:** The current configuration value of the variable. By default, VNG Cloud does not configure any variables and keeps the default values of the Database Engine.
+* **Value:** The current configuration value of the variable. By default, GreenNode does not configure any variables and keeps the default values of the Database Engine.
 * **Allowed Values:** Allowed configuration values for each variable.
 * **Data Type:** The data type of the value that can be applied to this configuration variable.
 
@@ -33,7 +33,7 @@ To edit configuration variables:
 
 The linked or to-be-linked MDS Instances will be applied with these new values. You can go back to the Database management screen to see the process of applying the new configuration. If the application is successful, the MDS Instance will have the status "Active."
 
-Note: In some cases, configuration variables may require restarting the Database service on the MDS Instance. The status of the MDS Instance will then be "Restart\_required." With VNG Cloud, you can proactively choose the time to perform this operation. After backing up tasks on the MDS Instance, click "Action" and choose "Restart" to complete the process.
+Note: In some cases, configuration variables may require restarting the Database service on the MDS Instance. The status of the MDS Instance will then be "Restart\_required." With GreenNode, you can proactively choose the time to perform this operation. After backing up tasks on the MDS Instance, click "Action" and choose "Restart" to complete the process.
 
 **C. Linking MDS Instances with Configuration Groups**
 
@@ -53,6 +53,6 @@ For option 2, you can do the following:
 3. On the change screen, select the Configuration Group you want to apply.
 4. When all selections are correct, click the "SAVE" button in the upper right corner. Wait for a while for the configuration variables to be applied to the MDS Instance. If the change is successful, the MDS Instance will have the status "Active."
 
-Note: In some cases, configuration variables may require restarting the Database service on the MDS Instance. The status of the MDS Instance will then be "Restart\_required." With VNG Cloud, you can proactively choose the time to perform this operation. After backing up tasks on the MDS Instance, click "Action" and choose "Restart" to complete the process.
+Note: In some cases, configuration variables may require restarting the Database service on the MDS Instance. The status of the MDS Instance will then be "Restart\_required." With GreenNode, you can proactively choose the time to perform this operation. After backing up tasks on the MDS Instance, click "Action" and choose "Restart" to complete the process.
 
 **D. Delete Configuration Group**

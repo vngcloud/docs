@@ -2,9 +2,9 @@
 
 ## **Tổng quan**
 
-**Tài khoản người dùng IAM (IAM User Account)**, là những tài khoản đại diện dùng để tương tác với VNG Cloud thông qua trang Portal UI. Một tài khoản user account ở VNG sẽ bao gồm những thông tin xác thực (tên đăng nhập và mật khẩu) và được mặc định thiết lập ở trạng thái không có quyền truy cập. Những tài khoản user account này không tồn tại độc lập; chúng thuộc về một tài khoản root user account duy nhất và không đi kèm bất kỳ chi phí nào.
+**Tài khoản người dùng IAM (IAM User Account)**, là những tài khoản đại diện dùng để tương tác với GreenNode thông qua trang Portal UI. Một tài khoản user account ở VNG sẽ bao gồm những thông tin xác thực (tên đăng nhập và mật khẩu) và được mặc định thiết lập ở trạng thái không có quyền truy cập. Những tài khoản user account này không tồn tại độc lập; chúng thuộc về một tài khoản root user account duy nhất và không đi kèm bất kỳ chi phí nào.
 
-Nếu doanh nghiệp bạn có nhiều thành viên cần được cấp quyền truy cập vào VNG Cloud, đừng chia sẻ thông tin bảo mật của tài khoản root user account. VNG khuyến khích bạn nên tạo những tài khoản user account cho từng thành viên này trên tài khoản root user account của bạn và bạn sẽ có thể cấp các phân quyền khác nhau cho từng user account này.
+Nếu doanh nghiệp bạn có nhiều thành viên cần được cấp quyền truy cập vào GreenNode, đừng chia sẻ thông tin bảo mật của tài khoản root user account. VNG khuyến khích bạn nên tạo những tài khoản user account cho từng thành viên này trên tài khoản root user account của bạn và bạn sẽ có thể cấp các phân quyền khác nhau cho từng user account này.
 
 ***
 
@@ -15,7 +15,7 @@ Nếu doanh nghiệp bạn có nhiều thành viên cần được cấp quyền
 1. Đăng nhập vào [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) với tài khoản Root User Account.
 2. Chọn mục **User Account**.
 3. Chọn **Create a User Account.**
-4. Tại mục **Account username**, nhập **Account username** mà bạn mong muốn. Tên của IAM User Account phải dài từ 5 (tối thiểu) đến 50 (tối đa) ký tự và chỉ có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), dấu gạch dưới (\_), dấu gạch ngang (-). Tên của IAM User Account không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, mật khẩu đăng nhập,...) cũng như tên IAM User Account phải là duy nhất trên một tài khoản VNG Cloud cho đến khi IAM User Account đó bị xóa. Ví dụ tên IAM User Account sau là hợp lệ: IAM\_Phong\_kinh\_doanh\_01.
+4. Tại mục **Account username**, nhập **Account username** mà bạn mong muốn. Tên của IAM User Account phải dài từ 5 (tối thiểu) đến 50 (tối đa) ký tự và chỉ có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), dấu gạch dưới (\_), dấu gạch ngang (-). Tên của IAM User Account không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, mật khẩu đăng nhập,...) cũng như tên IAM User Account phải là duy nhất trên một tài khoản GreenNode cho đến khi IAM User Account đó bị xóa. Ví dụ tên IAM User Account sau là hợp lệ: IAM\_Phong\_kinh\_doanh\_01.
 5. Chọn **Add a username**.
 6. Tại mục **Account password**, bạn có thể:
    1. Nhập **password** mà bạn mong muốn. Password phải dài từ 8 (tối thiểu) đến 50 (tối đa) ký tự và phải bao gồm ít nhất 1 ký tự viết hoa (A-Z), 1 ký tự viết thường (a-z), 1 ký tự số (0-9) và 1 ký tự đặc biệt (!@#$%,...).
@@ -79,7 +79,7 @@ Sau khi bạn đã khởi tạo IAM User Account và Policy mong muốn, tiếp 
 4. Tiếp tục chọn **Bucket** bạn muốn thực hiện phân quyền cho IAM User Account.
 5. Chọn biểu tượng **Action** và chọn **Configure policy.**
 
-<figure><img src="/broken/files/yxkXRMMzdhetxW8GshiY" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
 
 6. Tại đây, bạn có thể chọn cấu hình cho từng **Statement** ở bên trái hoặc trực tiếp chỉnh sửa file JSON ở cột bên phải. Cụ thể cấu trúc một Bucket Policy bao gồm:
 
@@ -103,7 +103,7 @@ Thực hiện theo các bước bên dưới để đăng nhập vào vStorage v
 
 1. Truy cập vào trang đăng nhập của dịch vụ vStorage: [https://signin.vngcloud.vn.](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=f09ybYi-GTZYYwuHVRv2f1UPRhjM_wI-0J_aXpbUsv4\&codeChallengeMethod=S256\&appState=55eab53a-30f3-43ae-837b-bf3a469dd9db\&redirectUri=https%3A%2F%2Fdashboard.console.vngcloud.vn%2F)
 2. Trang đăng nhập chính sẽ xuất hiện. Chọn **ĐĂNG NHẬP VỚI IAM USER ACCOUNT**.
-3. Nhập địa chỉ **email** của người dùng Root khi đăng ký tài khoản VNG Cloud.
+3. Nhập địa chỉ **email** của người dùng Root khi đăng ký tài khoản GreenNode.
 4. Nhập **tên người dùng** và **mật khẩu** của tài khoản IAM user account được tạo trên hệ thống vIAM.
 5. Chọn **ĐĂNG NHẬP VỚI IAM USER ACCOUNT**. Nếu trước đó bạn đã đăng nhập với tư cách người dùng IAM user account trong trình duyệt này, thì trình duyệt của bạn có thể nhớ địa chỉ tài khoản IAM user account. Nếu vậy, bạn sẽ thấy màn hình hiển thị ở bước 3. Sau khi đăng nhập thành công với IAM user account, trên màn hình chính của vStorage sẽ thể hiện loại user mà bạn đang sử dụng để đăng nhập (Root user account hay IAM user account).
 6. Sau khi đăng nhập thành công, bạn có quyền truy cập và thực hiện các tính năng được cung cấp bởi dịch vụ vStorage trên các tài nguyên được cấp quyền cho bạn.

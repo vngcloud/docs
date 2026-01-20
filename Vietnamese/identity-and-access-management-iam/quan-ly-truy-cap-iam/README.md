@@ -13,13 +13,13 @@ Quản lý Truy cập IAM cho phép bạn kiểm soát người có thể truy c
 
 #### Hiểu về IAM Policy <a href="#iamaccessmanagement-hieuveiampolicy" id="iamaccessmanagement-hieuveiampolicy"></a>
 
-Mỗi chính sách bao gồm một hoặc nhiều câu lệnh, và mỗi câu lệnh chứa các phần tử "Effect" (Cho phép hoặc Từ chối), "Action" (Các hành động trên Resource), "Resource" (Các tài nguyên VNG Cloud) và các phần tử "Condition" tùy chọn.
+Mỗi chính sách bao gồm một hoặc nhiều câu lệnh, và mỗi câu lệnh chứa các phần tử "Effect" (Cho phép hoặc Từ chối), "Action" (Các hành động trên Resource), "Resource" (Các tài nguyên GreenNode) và các phần tử "Condition" tùy chọn.
 
 **Product/Service**
 
 Việc chỉ định Product/Service khi khởi tạo một Policy là bắt buộc, giúp bạn giới hạn tập quyền lên một nhóm Resources thuộc một Prodcut/Service nhất định, giúp việc vận hành hoạt động một cách mượt mà và an toàn.
 
-Các sản phẩm/service thuộc VNG Cloud như: vServer, vStorage, vMonitor, vLB, vConsole, IAM,...
+Các sản phẩm/service thuộc GreenNode như: vServer, vStorage, vMonitor, vLB, vConsole, IAM,...
 
 **Action**
 
@@ -58,9 +58,9 @@ Một chính sách (Policies) sẽ bao gồm nhiều Rule. Mỗi Rule sẽ bao g
 
 #### Phân loại Chính Sách (Policy) <a href="#iamaccessmanagement-phanloaichinhsach-policy" id="iamaccessmanagement-phanloaichinhsach-policy"></a>
 
-Tại VNG Cloud Service, chúng tôi hỗ trợ 2 loại Chính Sách (Policy), bao gồm:
+Tại GreenNode Service, chúng tôi hỗ trợ 2 loại Chính Sách (Policy), bao gồm:
 
-* **VNG Managed Policy:** Là các Chính Sách IAM (IAM Policy) được tạo mặc định bởi hệ thống IAM VNG Cloud. Các Chính Sách này được quản lý bởi chính VNG Cloud nhằm mục đích hỗ trợ người dùng trong việc cài đặt nhanh chóng các quyền truy cập cần thiết cho các tài khoản người dùng IAM đối với các tài nguyên của từng Product cụ thể
+* **VNG Managed Policy:** Là các Chính Sách IAM (IAM Policy) được tạo mặc định bởi hệ thống IAM GreenNode. Các Chính Sách này được quản lý bởi chính GreenNode nhằm mục đích hỗ trợ người dùng trong việc cài đặt nhanh chóng các quyền truy cập cần thiết cho các tài khoản người dùng IAM đối với các tài nguyên của từng Product cụ thể
 * **Customer Policy:** Là các Chính Sách IAM (IAM Policy) được tạo bởi Root user (hoặc IAM user nếu có quyền). Các Chính Sách này được quản lý trực tiếp bởi người dùng và có thể điều chỉnh bất cứ lúc nào tùy thuộc vào nhu cầu sử dụng.
 * Tìm hiểu thêm và 2 loại Policy tại đây:
   * [VNG Managed Policy](chinh-sach-vng-managed-policy.md)

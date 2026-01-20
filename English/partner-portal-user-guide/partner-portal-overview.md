@@ -13,9 +13,9 @@ Functions supporting partners include:
 * Two-factor authentication
 * View login history
 
-3. Register discount for VNG Cloud’s services
-4. Register customer account: helps VNG Cloud’s partner manage sales as well as browsing, comparing revenue and commission statistics with VNG Cloud
-5. Set up discount for partner’s customer: Help VNG Cloud’s partner manage price used for managing payable account as well as issuing invoices for customers.
+3. Register discount for GreenNode’s services
+4. Register customer account: helps GreenNode’s partner manage sales as well as browsing, comparing revenue and commission statistics with GreenNode
+5. Set up discount for partner’s customer: Help GreenNode’s partner manage price used for managing payable account as well as issuing invoices for customers.
 6. Top up credits for customer
 7. View discount history of partner, partner’s customer
 8. View report of credits topped up/used, discount report and monthly revenue report

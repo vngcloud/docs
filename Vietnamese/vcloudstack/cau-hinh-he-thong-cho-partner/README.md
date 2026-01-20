@@ -6,7 +6,7 @@ hidden: true
 
 ## Tổng quan
 
-Phần hướng dẫn này dành cho quản trị hệ thống khi tiếp cận để cấu hình các dịch vụ tài nguyên của vCloudStack của VNG Cloud.
+Phần hướng dẫn này dành cho quản trị hệ thống khi tiếp cận để cấu hình các dịch vụ tài nguyên của vCloudStack của GreenNode.
 
 vCloudStrack là một tiếp cận độc đáo cho việc ảo hóa, cung cấp khã năng ảo hóa mạnh mẽ cần thiết để triển khai và quản lý ứng dụng cho doanh nghiệp. Bên cạnh đó, vCloudStack cung cấp khả năng tích hợp ảo hóa ngay tại chỗ của doanh nghiệp với cùng mạng, cơ sở hạ tầng vCloudStack Admin Site.
 

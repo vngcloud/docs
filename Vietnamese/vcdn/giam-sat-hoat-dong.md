@@ -4,14 +4,14 @@
 
 Hệ thống vCDN hỗ trợ khách hàng giám sát và theo dõi toàn bộ hoạt động của dịch vụ CDN qua **Portal** hoặc **API**, cung cấp thông tin chi tiết, trực quan về hiệu suất và trạng thái dịch vụ.
 
-Các chỉ số sẽ được cung cấp trực quan thành các Dashboard và biểu đồ với:&#x20;
+Các chỉ số sẽ được cung cấp trực quan thành các Dashboard và biểu đồ với:
 
 * Dữ liệu được cập nhật với tần suất **từng phút**.
 * Độ trễ tối đa là **5 phút** (cận realtime), giúp khách hàng nắm bắt kịp thời các thay đổi trong hệ thống.
 
 ## Chi tiết
 
-Các loại biểu đồ/ báo cáo chúng tôi cung cấp cho bạn bao gồm:&#x20;
+Các loại biểu đồ/ báo cáo chúng tôi cung cấp cho bạn bao gồm:
 
 * **Traffic Consuming:** tổng lượng băng thông được sử dụng trên hệ thống CDN trong một tháng.
 * **Origin Request/s**: số lượng yêu cầu (requests) gửi từ CDN tới Origin theo từng giây.
@@ -28,46 +28,46 @@ Các loại biểu đồ/ báo cáo chúng tôi cung cấp cho bạn bao gồm:&
 
 **Bước 1:** Truy cập vào vCDN Portal tại [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
 
-**Bước 2:** Chọn mục **Dashboard.** Tại đây, bạn có thể thấy các biểu đồ, báo cáo được chúng tôi đề cập bên trên. Ví dụ:&#x20;
+**Bước 2:** Chọn mục **Dashboard.** Tại đây, bạn có thể thấy các biểu đồ, báo cáo được chúng tôi đề cập bên trên. Ví dụ:
 
 <figure><img src="../.gitbook/assets/image (856).png" alt="" width="164"><figcaption></figcaption></figure>
 
 * **Traffic Consuming:**
 
-<figure><img src="/broken/files/JYbI4S8sAxxmanniZYtx" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>
 
-* **Origin Request/s**:&#x20;
+* **Origin Request/s**:
 
-<figure><img src="/broken/files/Rgp43eJMWJgFbb9Ha1jk" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin Traffic Consuming/s (GB/s)**:
 
-<figure><img src="/broken/files/9G0pWfWrdneWm3iQ8ToL" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (258).png" alt=""><figcaption></figcaption></figure>
 
-* **Unique IPs:**&#x20;
+* **Unique IPs:**
 
-<figure><img src="/broken/files/CTw5LZhC4V263LX2lWKo" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
 
-* **Origin Speed/s:**&#x20;
+* **Origin Speed/s:**
 
-<figure><img src="/broken/files/jMT0doGN2M3r1UMei08L" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure>
 
-* **Average User Speed:**&#x20;
+* **Average User Speed:**
 
-<figure><img src="/broken/files/8SGjoOX1z6T8WQdT1inh" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (309).png" alt=""><figcaption></figcaption></figure>
 
-* **Hit Cache Ratio:**&#x20;
+* **Hit Cache Ratio:**
 
-<figure><img src="/broken/files/CT5Ux7gs0UlYrsH0yIXk" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (312).png" alt=""><figcaption></figcaption></figure>
 
-* **Request Content Type:**&#x20;
+* **Request Content Type:**
 
-<figure><img src="/broken/files/ETyfbp7NgIznhZsNd3Tv" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (318).png" alt=""><figcaption></figcaption></figure>
 
-* **CDN HTTP Codes, Origin HTTP Codes:**&#x20;
+* **CDN HTTP Codes, Origin HTTP Codes:**
 
-<figure><img src="/broken/files/CVjAtEH7Liz1DuLjVBQ5" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (319).png" alt=""><figcaption></figcaption></figure>
 
 * **Quản lý và theo dõi tín hiệu được đẩy đến hệ thống Live Entry point:**
 
-<figure><img src="/broken/files/qIjyp8vyocnAA5hQKvzB" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (320).png" alt=""><figcaption></figcaption></figure>

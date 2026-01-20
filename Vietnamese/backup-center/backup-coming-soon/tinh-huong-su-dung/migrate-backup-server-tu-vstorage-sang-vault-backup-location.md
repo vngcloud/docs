@@ -2,7 +2,7 @@
 
 Bài viết này nhằm mục đích hướng dẫn người dùng dịch vụ Backup Server cập nhật vị trí lữu trữ backup server point từ vStorage sang Vault.
 
-Lưu ý rằng, VNG Cloud chỉ khuyến khích người dùng thay đổi vị trí lưu trữ backup server point, vì các [tính năng vượt trội mà Vault (backup location) mang lại](../backup-location/). Do đó, nếu không có nhu cầu thay đổi, người dùng vẫn có thể tiếp tục lưu trữ backup tại vStorage mà không hề ảnh hưởng đến chất lượng dịch vụ backup server.
+Lưu ý rằng, GreenNode chỉ khuyến khích người dùng thay đổi vị trí lưu trữ backup server point, vì các [tính năng vượt trội mà Vault (backup location) mang lại](../backup-location/). Do đó, nếu không có nhu cầu thay đổi, người dùng vẫn có thể tiếp tục lưu trữ backup tại vStorage mà không hề ảnh hưởng đến chất lượng dịch vụ backup server.
 
 Làm theo hướng dẫn dưới đây để cập nhật vị trí lưu trữ mới cho các backup server của bạn:
 
@@ -10,7 +10,7 @@ Làm theo hướng dẫn dưới đây để cập nhật vị trí lưu trữ m
 
 Đầu tiên, bạn cần tạo mới một backup location để chuẩn bị cho việc thay đổi vị trí lưu trữ của backup server.
 
-* **Đăng nhập:** Đăng nhập vào tài khoản quản lý dịch vụ VNG Cloud.
+* **Đăng nhập:** Đăng nhập vào tài khoản quản lý dịch vụ GreenNode.
 * **Truy cập vào phần quản lý Backup Location:** Tìm và chọn mục "Backup Location" tại đây [https://backupcenter.console.vngcloud.vn/backup-location/list](https://backupcenter.console.vngcloud.vn/backup-location/list)
 * **Tạo mới:** Nhấp vào nút "Create backup location", một cửa sổ giao diện hiện lên cho bạn điền các thông tin cần thiết.
 * **Điền thông tin:**
@@ -53,4 +53,4 @@ Sau khi hoàn tất thay đổi, bạn có thể vào trang [backup server](http
 
 * **Lịch chạy backup** và **retention rules** vẫn theo backup policy,  chỉ khác là các backup server point mới được tạo ra, sẽ được lưu trữ tại backup location mới.
 * Các **backup server point được lưu trữ tại vBackup-Project** trước đó không có gì thay đổi, người dùng vẫn có thể truy cập khi cần thiết.
-* VNG Cloud khuyến nghị khách hàng nên tải về các backup server point cần dùng, và xóa **vBackup-Project** để tránh phát sinh chi phí lưu trữ tại vStorage sau khi đã **chuyển hết backup server qua backup location mới** và **đã phát sinh lưu trữ các backup server point (Full)** tại đây.
+* GreenNode khuyến nghị khách hàng nên tải về các backup server point cần dùng, và xóa **vBackup-Project** để tránh phát sinh chi phí lưu trữ tại vStorage sau khi đã **chuyển hết backup server qua backup location mới** và **đã phát sinh lưu trữ các backup server point (Full)** tại đây.

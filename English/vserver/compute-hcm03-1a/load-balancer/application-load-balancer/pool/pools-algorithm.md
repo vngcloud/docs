@@ -1,8 +1,8 @@
 # Pool's algorithm
 
-Load balancing is one of the key features of VNG Cloud's Load Balancer (vLB) service. It is the process of receiving client requests at the listener and distributing them across multiple members (servers) according to established algorithms. This feature allows you to increase the processing capacity of your services by creating multiple or a cluster of servers behind the Load Balancer.
+Load balancing is one of the key features of GreenNode's Load Balancer (vLB) service. It is the process of receiving client requests at the listener and distributing them across multiple members (servers) according to established algorithms. This feature allows you to increase the processing capacity of your services by creating multiple or a cluster of servers behind the Load Balancer.
 
-The load balancing algorithm determines which member (server) is chosen for each incoming request. VNG Cloud's Load Balancer offers three types of load balancing algorithms:
+The load balancing algorithm determines which member (server) is chosen for each incoming request. GreenNode's Load Balancer offers three types of load balancing algorithms:
 
 1.  **Round Robin**
 

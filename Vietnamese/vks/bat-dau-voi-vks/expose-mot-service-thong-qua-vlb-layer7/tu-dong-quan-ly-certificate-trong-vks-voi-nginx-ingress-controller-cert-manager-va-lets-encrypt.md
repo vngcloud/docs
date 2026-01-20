@@ -2,7 +2,7 @@
 
 ## Điều kiện cần <a href="#dieu-kien-can" id="dieu-kien-can"></a>
 
-* Bạn đã thực hiện khởi tạo Cluster trên hệ thống VKS theo các hướng dẫn tại [đây ](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4)và trên cụm của bạn đã được cài đặt **VNGCloud LoadBalancer Controller.**
+* Bạn đã thực hiện khởi tạo Cluster trên hệ thống VKS theo các hướng dẫn tại [đây ](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4)và trên cụm của bạn đã được cài đặt **GreenNode LoadBalancer Controller.**
 * Tiếp theo, hãy đảm bảo bận có một **domain** đã được đăng ký và sử dụng.
 * Cuối cùng, bạn cần một địa chỉ **email** để thực hiện kiểm tra việc quản lý Certificate.
 * Tiếp theo, bạn cần thực hiện cài đặt nginx-ingress-controller theo lệnh:

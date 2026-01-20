@@ -42,15 +42,15 @@ Tùy trường hợp khác nhau mà máy chủ có thể khởi động lại đ
 
 ### \[vServer]Làm sao để extend disk trong Linux ?
 
-Quý khách có thể thực hiện như sau : Thực hiện extend disk trên portal VNG Cloud:[ Mở rộng Volume với hệ điều hành Linux](../../vserver/compute-hcm03-1a/volume/mo-rong-volume-voi-he-dieu-hanh-linux.md).
+Quý khách có thể thực hiện như sau : Thực hiện extend disk trên portal GreenNode:[ Mở rộng Volume với hệ điều hành Linux](../../vserver/compute-hcm03-1a/volume/mo-rong-volume-voi-he-dieu-hanh-linux.md).
 
 ### \[vServer]Làm sao để extend disk trong Window ?
 
-&#x20;[Mở rộng Volume với hệ điều hành Window](../../vserver/compute-hcm03-1a/volume/mo-rong-volume-voi-he-dieu-hanh-window.md) Quý khách có thể thực hiện như sau :[ Thực hiện extend disk trên portal VNG Cloud](./#vserver-lam-sao-de-extend-disk-trong-window)
+&#x20;[Mở rộng Volume với hệ điều hành Window](../../vserver/compute-hcm03-1a/volume/mo-rong-volume-voi-he-dieu-hanh-window.md) Quý khách có thể thực hiện như sau :[ Thực hiện extend disk trên portal GreenNode](./#vserver-lam-sao-de-extend-disk-trong-window)
 
 ### \[vServer]Tôi cần reinstall lại OS?
 
-Quý khách có thể xóa để tạo lại Server khác. Hiện tại VNG Cloud chưa hỗ trợ tính năng reinstall OS mới lên Server đã tạo.
+Quý khách có thể xóa để tạo lại Server khác. Hiện tại GreenNode chưa hỗ trợ tính năng reinstall OS mới lên Server đã tạo.
 
 ### \[vServer] Làm sao để truy cập vào server sau khi tạo?
 
@@ -126,11 +126,11 @@ Có thể truy cập vào portal login console để kiểm tra service ssh, đ�
 
 ### \[vServer] KH muốn chuyển đổi thông tin account, mail.
 
-Bạn vui lòng tạo ticket và cung cấp thông tin account cần change để VNG Cloud hỗ trợ.
+Bạn vui lòng tạo ticket và cung cấp thông tin account cần change để GreenNode hỗ trợ.
 
 ### \[vServer] Tôi muốn Reverse DNS từ IP 61.28.X.X sang mail.công ty thì làm thế nào?
 
-Bạn vui lòng tạo ticket giúp VNG Cloud và cung cấp thông tin IP server và địa chỉ mail cần reverse dns.
+Bạn vui lòng tạo ticket giúp GreenNode và cung cấp thông tin IP server và địa chỉ mail cần reverse dns.
 
 ### \[vServer] Hỗ trợ support tăng quota
 
@@ -138,7 +138,7 @@ Bạn vui lòng tạo ticket cần hỗ trợ tăng quota và nội dung cần t
 
 ### \[vServer] Hỗ trợ xem ram, cpu, network
 
-Hiện tại VNG Cloud có dịch vụ vMonitor đang ở bản beta dùng thử miễn phí có thể monitor các thông số đó. Bạn có thể truy cập vào [trang chủ vServer](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), và xem thông số Ram, Cpu, Network tại trang chi tiết Server/ Tab Monitor hoặc có thể xem trực tiếp [trang chủ vMonitor](https://hcm-3.console.vngcloud.vn/vmonitor/dashboard).
+Hiện tại GreenNode có dịch vụ vMonitor đang ở bản beta dùng thử miễn phí có thể monitor các thông số đó. Bạn có thể truy cập vào [trang chủ vServer](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), và xem thông số Ram, Cpu, Network tại trang chi tiết Server/ Tab Monitor hoặc có thể xem trực tiếp [trang chủ vMonitor](https://hcm-3.console.vngcloud.vn/vmonitor/dashboard).
 
 ### \[vServer] Tôi muốn giữ wanip cũ để cho server mới thì phải làm như thế nào?
 
@@ -280,7 +280,7 @@ Bạn vui lòng truy cập vào giao diện console để change password sau đ
 
 ### \[vServer] Tách vServer ra tài khoản portal khác như thế nào?
 
-Hiện tại VNG Cloud không hỗ trợ tách server sang portal khác
+Hiện tại GreenNode không hỗ trợ tách server sang portal khác
 
 ### \[vServer] Tại sao tôi lỡ chuyển nhầm farm thì báo lỗi không thể truy cập vào server nữa?
 

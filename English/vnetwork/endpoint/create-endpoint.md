@@ -1,6 +1,6 @@
 ---
 description: >-
-  VNG Cloud Endpoint is the private connection point between VPC and VNG Cloud
+  GreenNode Endpoint is the private connection point between VPC and GreenNode
   services
 ---
 
@@ -16,7 +16,7 @@ description: >-
 
 ## **Endpoint Creation Process**
 
-1. **Log in** to the VNG Cloud console at:\
+1. **Log in** to the GreenNode console at:\
    [https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list](https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list)
    * Ensure that the selected **region is HCM**.
 2. From the left-hand navigation panel, click on the **“Endpoint”** menu.
@@ -24,11 +24,11 @@ description: >-
 4. Enter the required information for the Endpoint:
    * **Endpoint Name**: Provide a name for the new Endpoint.
    * **Select Region/Zone**: Choose the appropriate region and availability zone (e.g., HCM-1A, HCM-1B, etc.).
-   * **Select Service**: Choose a VNG Cloud service to connect to from the supported list:\
+   * **Select Service**: Choose a GreenNode service to connect to from the supported list:\
      **vServer, vStorage, vMonitor, vCR, IAM**.
    * **Service Package**: The Endpoint is provisioned with the default **Standard** package.
      * No manual selection is required.
-5. **Select the VPC and Subnet** to connect to the VNG Cloud service via the service Endpoint.
+5. **Select the VPC and Subnet** to connect to the GreenNode service via the service Endpoint.
 6. **Private DNS Configuration**:
    * If the selected VPC supports DNS, the **“Enable Private DNS”** option will be available.
      * When enabled, domain names will automatically resolve to internal IPs — **no manual host entries are required**.
@@ -90,7 +90,7 @@ Add host entries on servers that need to access the service via the Endpoint Ser
 
 ### Private Endpoints in a VPC with DNS Support
 
-When using a **Private Endpoint**, customers can access VNG Cloud services through a **private network** instead of the public internet. If DNS support is enabled, service access becomes seamless and more convenient, thanks to the ability to **override DNS A records**.
+When using a **Private Endpoint**, customers can access GreenNode services through a **private network** instead of the public internet. If DNS support is enabled, service access becomes seamless and more convenient, thanks to the ability to **override DNS A records**.
 
 #### DNS Mechanism with Private Endpoints
 

@@ -1,6 +1,6 @@
 # Tạo bản sao lưu cho máy chủ ảo theo bộ lịch Policy
 
-Trên bảng điều khiển của vBackup, trang tài nguyên được bảo vệ sẽ liệt kê tất cả các tài nguyên được sao lưu ít nhất một lần. Nếu bạn đang sử dụng vBackup cho lần đầu tiên thì lưu ý rằng sẽ không có bất kỳ tài nguyên nào (chẳng hạn như máy ảo hay ổ đĩa được bảo vệ) được liệt kê trên trang này. Tại VNG Cloud chúng tôi hỗ trợ bảo vệ dữ liệu tập trung cho các máy ảo (Server) trên môi trường điện toán đám mây. Bạn có thể sao lưu máy ảo và dữ liệu sẽ được chuyển sang vStorage.
+Trên bảng điều khiển của vBackup, trang tài nguyên được bảo vệ sẽ liệt kê tất cả các tài nguyên được sao lưu ít nhất một lần. Nếu bạn đang sử dụng vBackup cho lần đầu tiên thì lưu ý rằng sẽ không có bất kỳ tài nguyên nào (chẳng hạn như máy ảo hay ổ đĩa được bảo vệ) được liệt kê trên trang này. Tại GreenNode chúng tôi hỗ trợ bảo vệ dữ liệu tập trung cho các máy ảo (Server) trên môi trường điện toán đám mây. Bạn có thể sao lưu máy ảo và dữ liệu sẽ được chuyển sang vStorage.
 
 Tuy nhiên điều cần làm lúc này là tạo phiên công việc Backup cho tài nguyên của bạn theo hướng dẫn bên dưới:
 

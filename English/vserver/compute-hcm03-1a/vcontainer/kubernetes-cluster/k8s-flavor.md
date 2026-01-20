@@ -13,7 +13,7 @@ In a Kubernetes cluster, the "flavor" configuration is often referred to as the 
 * GPU: K8S is mainly focused on management and delivery of applications and services, so it rarely uses GPU, but there are some cases that require GPU to perform graphics, machine learning, processing tasks. big data and many other tasks\
   It should be noted that the flavor profile must be tailored to the specific requirements of the application and the capabilities of the system resources. An improper configuration can lead to poor performance or application failure in your Kubernetes cluster.
 
-VNG Cloud K8S provides Flavors suitable for a variety of needs so that users can choose according to the table below:
+GreenNode K8S provides Flavors suitable for a variety of needs so that users can choose according to the table below:
 
 ***
 

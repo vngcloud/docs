@@ -1,6 +1,6 @@
 # Create a Private Cluster
 
-Previously, public clusters on VKS were using Public IP addresses to communicate between nodes and the control plane. To improve the security of your cluster, we have launched the private cluster model. The Private Cluster feature helps your K8S cluster to be as secure as possible, all connections are completely private from the connection between nodes to the control plane, the connection from the client to the control plane, or the connection from nodes to other products and services in VNG Cloud such as: vStorage, vCR, vMonitor, VNGCloud APIs,... Private Cluster is the ideal choice for services that require strict access control, ensuring compliance with regulations on security and data privacy.
+Previously, public clusters on VKS were using Public IP addresses to communicate between nodes and the control plane. To improve the security of your cluster, we have launched the private cluster model. The Private Cluster feature helps your K8S cluster to be as secure as possible, all connections are completely private from the connection between nodes to the control plane, the connection from the client to the control plane, or the connection from nodes to other products and services in GreenNode such as: vStorage, vCR, vMonitor, GreenNode APIs,... Private Cluster is the ideal choice for services that require strict access control, ensuring compliance with regulations on security and data privacy.
 
 ## Model <a href="#khoitaomotpublicclustervoiprivatenodegroup-dieukiencan" id="khoitaomotpublicclustervoiprivatenodegroup-dieukiencan"></a>
 
@@ -8,10 +8,10 @@ Previously, public clusters on VKS were using Public IP addresses to communicate
 
 **In which:**
 
-* **Control plane** : Managed by VNG Cloud, responsible for coordinating and managing the entire cluster.
+* **Control plane** : Managed by GreenNode, responsible for coordinating and managing the entire cluster.
 * **Nodes** : When created, Nodes in the Cluster will only have internal IPs and cannot go to the public internet. If you want the node to access the internet, you need to use a NAT Gateway. For more details, refer [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/khoi-tao-mot-public-cluster/khoi-tao-mot-public-cluster-voi-private-node-group/pfsense-as-a-nat-gateway) .
-* **Private Load Balancer** : Managed by VNG Cloud, responsible for helping Private Nodes communicate with Control Plane.
-* **Private Service Endpoint** : When you create a private cluster, the system automatically creates 4 endpoints to help connect to other services on VNG Cloud including:
+* **Private Load Balancer** : Managed by GreenNode, responsible for helping Private Nodes communicate with Control Plane.
+* **Private Service Endpoint** : When you create a private cluster, the system automatically creates 4 endpoints to help connect to other services on GreenNode including:
   * **Endpoint** to connect to the **IAM** service (Endpoint Name: vks-iam-endpoint-...)
   * **Endpoint** to connect to **vCR** service (Endpoint Name: vks-vcr-endpoint-...)
   * **Endpoint to connect to vServer** service (Endpoint Name: vks-vserver-endpoint-...)

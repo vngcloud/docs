@@ -17,23 +17,23 @@ Backup location is an extremely convenient backup data storage service, helping 
 ### Traffic (Amount of data transmitted) <a href="#traffic-luong-du-lieu-truyen-tai" id="traffic-luong-du-lieu-truyen-tai"></a>
 
 * **Unit:** GB
-* **Charging principle:** Currently, VNG Cloud Backup is completely free of data transmission. This means you can upload and download backup data without paying any additional fees.
+* **Charging principle:** Currently, GreenNode Backup is completely free of data transmission. This means you can upload and download backup data without paying any additional fees.
 
 ## Billing Method <a href="#billing-method" id="billing-method"></a>
 
-Currently, VNG Cloud Backup supports both prepaid and postpaid forms:
+Currently, GreenNode Backup supports both prepaid and postpaid forms:
 
 ## For postpaid <a href="#doi-voi-tra-sau" id="doi-voi-tra-sau"></a>
 
-* Applicable subjects: Postpaid users at VNG Cloud
+* Applicable subjects: Postpaid users at GreenNode
 * Payment method: Pay later
-* At the end of each month, VNG Cloud Backup will issue a service invoice, and users will proceed to pay the bill similar to other postpaid services. Note that one backup location will correspond to one invoice.
+* At the end of each month, GreenNode Backup will issue a service invoice, and users will proceed to pay the bill similar to other postpaid services. Note that one backup location will correspond to one invoice.
 
 ### For prepayment <a href="#doi-voi-tra-truoc" id="doi-voi-tra-truoc"></a>
 
-* Applicable subjects: Prepaid users at VNG Cloud
+* Applicable subjects: Prepaid users at GreenNode
 * Payment method: [Hold credit](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/thanh-toan/tam-giu-credit)
-  * Accordingly, users need to prepare enough credits in their VNG Cloud account. Every day, the system will temporarily hold credits based on the actual usage of all backup locations.
-  * In case the amount of credit in the account is not enough to hold, VNG Cloud will remind and take action if the user does not proactively top up more credit.
-* At the end of each month, VNG Cloud will issue a service invoice, and users will proceed to pay the invoice similar to other postpaid services. Note that one backup location will correspond to one invoice.
-  * The amount of credit temporarily held will be used to pay the service bill. If it is not enough, it will be deducted from the VNG Cloud account. If the amount temporarily held is more than the actual amount, we will refund it to the VNG Cloud account.
+  * Accordingly, users need to prepare enough credits in their GreenNode account. Every day, the system will temporarily hold credits based on the actual usage of all backup locations.
+  * In case the amount of credit in the account is not enough to hold, GreenNode will remind and take action if the user does not proactively top up more credit.
+* At the end of each month, GreenNode will issue a service invoice, and users will proceed to pay the invoice similar to other postpaid services. Note that one backup location will correspond to one invoice.
+  * The amount of credit temporarily held will be used to pay the service bill. If it is not enough, it will be deducted from the GreenNode account. If the amount temporarily held is more than the actual amount, we will refund it to the GreenNode account.

@@ -1,11 +1,11 @@
 # Getting Started (NLB)
 
-This section will guide you through the basic steps of creating and managing a Network Load Balancer (NLB) on VNG Cloud, providing a comprehensive overview of NLB usage.
+This section will guide you through the basic steps of creating and managing a Network Load Balancer (NLB) on GreenNode, providing a comprehensive overview of NLB usage.
 
 ## Prerequisites
 
 * **Virtual Private Cloud (VPC):** You need at least one VPC to get started. Refer to the Virtual Private Cloud (VPC) guide for instructions.
-* **VNG Cloud Portal Access:** Understand how to access the VNG Cloud Portal with either a Root User Account or an IAM User Account. Refer to the "How to Login into VNG Cloud" guide.
+* **GreenNode Portal Access:** Understand how to access the GreenNode Portal with either a Root User Account or an IAM User Account. Refer to the "How to Login into GreenNode" guide.
 * **IAM User Account (Optional):** If you prefer to use an IAM User Account, refer to the "IAM for vServer" guide.
 
 ## Access the vLB Console
@@ -14,7 +14,7 @@ The vLB Console is a web-based interface that allows you to manage Load Balancer
 
 **How to Access the vLB Console:**
 
-* **From the vConsole Homepage:** Go to `https://dashboard.console.vngcloud.vn/`. Under "VNG Cloud Service," click "vServer," then click "vLB" from the list of products/services on the right.
+* **From the vConsole Homepage:** Go to `https://dashboard.console.vngcloud.vn/`. Under "GreenNode Service," click "vServer," then click "vLB" from the list of products/services on the right.
 * **From the vServer Homepage:** Go to `https://hcm-3.console.vngcloud.vn/vserver/`. On the vServer homepage, navigate to the vLB portal by clicking "Load Balancers" under "Load Balancing" in the left menu.
 * **Direct Access:** Go directly to the vLB Portal at `https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb`.
 

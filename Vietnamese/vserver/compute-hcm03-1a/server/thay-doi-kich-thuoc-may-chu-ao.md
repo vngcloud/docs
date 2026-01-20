@@ -16,7 +16,7 @@ Lưu ý: Không hỗ trợ thay đổi cấu hình GPU flavor qua cấu hình kh
 
 Trước khi thực hiện thay đổi flavor cho máy chủ ảo, bạn cần xác định trước flavor cũng như tìm hiểu các thuộc tính về nó như loại máy chủ, công nghệ CPU… Xem thêm tại [{Trang Flavor}](flavor.md).
 
-1. Đăng nhập vào VNG Cloud portal và đi đến trang dịch vụ vServer tại đường link: [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)
+1. Đăng nhập vào GreenNode portal và đi đến trang dịch vụ vServer tại đường link: [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)
 2. Tại trang Cloud Server, xác định máy chủ ảo cần thay đổi cấu hình, cần đảm bảo máy chủ đã stop trước khi thực hiện thay đổi. Vào danh sách Menu bên phải và chọn Resize
 3. Chọn flavor mong muốn
 4. Bạn có thể xem tóm tắt chi phí phát sinh mới hoặc chi phí được trả lại trong trường hợp thay đổi cấu hình nhỏ hơn, nhấn nút **Resize Server** để hoàn thành

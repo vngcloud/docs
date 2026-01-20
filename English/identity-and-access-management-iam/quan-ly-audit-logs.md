@@ -1,20 +1,20 @@
 # Audit Logs Management
 
-Cloud Audit Logs is a feature that records all administrative and access activities on your VNG Cloud resources. Audit Logs helps you answer the questions: "**Who did what, where, and when?**" on VNG Cloud resources with the same level of transparency as your on-premise environment. Enabling Audit Logs allows you to monitor, review, and ensure the security of your VNG Cloud resources.
+Cloud Audit Logs is a feature that records all administrative and access activities on your GreenNode resources. Audit Logs helps you answer the questions: "**Who did what, where, and when?**" on GreenNode resources with the same level of transparency as your on-premise environment. Enabling Audit Logs allows you to monitor, review, and ensure the security of your GreenNode resources.
 
 #### **1. Type of Audit Logs** <a href="#auditlogs-1.cacloaiauditlogs" id="auditlogs-1.cacloaiauditlogs"></a>
 
 Cloud Audit Logs provide the following types of Audit Logs below; depending on the product or service, the supported audit log type may vary:
 
-* **Admin Activity Audit Logs**: contains all logs for actions that change resources (Create, Update, Delete) on VNG Cloud. For example: logs when users create vServer or delete security group. Abbreviated as ADMIN\_WRITE&#x20;
-*   **Data Access Audit Logs** (coming soon): contains all logs for actions that read resource configuration information, as well as actions that create, delete, edit and read resource data. Resource data is data that users upload to VNG Cloud, such as vStorage objects. Specifically divided into 3 types as below:
+* **Admin Activity Audit Logs**: contains all logs for actions that change resources (Create, Update, Delete) on GreenNode. For example: logs when users create vServer or delete security group. Abbreviated as ADMIN\_WRITE&#x20;
+*   **Data Access Audit Logs** (coming soon): contains all logs for actions that read resource configuration information, as well as actions that create, delete, edit and read resource data. Resource data is data that users upload to GreenNode, such as vStorage objects. Specifically divided into 3 types as below:
 
     * **ADMIN\_READ**: action to read resource configuration information. For example: list vServer or view details of a vServer&#x20;
     * **DATA\_WRITE:** action to create, delete, edit resource data. For example: uploading objects to vStorage or deleting objects on vStorage&#x20;
     * **DATA\_READ**: action to read data of resources. For example: listing objects of vStorage&#x20;
 
-    **System Event Audit Logs**: contains all logs for actions that change resources on VNG Cloud; however, these are actions that are created by VNG Cloud systems, not directly performed by users. For example, logs when VNG Cloud systems automatically expand (autoscale) node groups of vContainer, or actions that automatically create daily backups for vDB. Abbreviated as SYSTEM\_EVENT&#x20;
-* **Policy Denied Audit Logs** (coming soon): contains all logs when VNG Cloud products/services deny access to IAM user accounts or service accounts because of violating the Policy. Abbreviated as POLICY\_DENIED
+    **System Event Audit Logs**: contains all logs for actions that change resources on GreenNode; however, these are actions that are created by GreenNode systems, not directly performed by users. For example, logs when GreenNode systems automatically expand (autoscale) node groups of vContainer, or actions that automatically create daily backups for vDB. Abbreviated as SYSTEM\_EVENT&#x20;
+* **Policy Denied Audit Logs** (coming soon): contains all logs when GreenNode products/services deny access to IAM user accounts or service accounts because of violating the Policy. Abbreviated as POLICY\_DENIED
 
 **2. List of Products/Services Supporting Various Types of Audit Logs**
 
@@ -29,7 +29,7 @@ YES: fully supports this type of audit logs
 
 #### **3. Activate Audit Logs** <a href="#auditlogs-3.kichhoatauditlogs" id="auditlogs-3.kichhoatauditlogs"></a>
 
-By default, VNG Cloud does not enable the Audit Logs feature, customers need to follow the steps below to activate it:
+By default, GreenNode does not enable the Audit Logs feature, customers need to follow the steps below to activate it:
 
 1. Access the Audit Logs page of the IAM Portal: https://iam.console.vngcloud.vn/audit-logs
 2. Select Set default configuration, a setup popup will appear allowing you to choose to enable ADMIN\_WRITE or SYSTEM\_EVENT

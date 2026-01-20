@@ -14,7 +14,7 @@
 
     <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-_**Lưu ý:** Thông tin này là bảo mật và chỉ được gởi cho email đã đăng kí. VNG Cloud không thể can thiệp để phục hồi thông tin login của vServer (username/ passsword/ key) trong mọi tình huống_
+_**Lưu ý:** Thông tin này là bảo mật và chỉ được gởi cho email đã đăng kí. GreenNode không thể can thiệp để phục hồi thông tin login của vServer (username/ passsword/ key) trong mọi tình huống_
 
 ***
 

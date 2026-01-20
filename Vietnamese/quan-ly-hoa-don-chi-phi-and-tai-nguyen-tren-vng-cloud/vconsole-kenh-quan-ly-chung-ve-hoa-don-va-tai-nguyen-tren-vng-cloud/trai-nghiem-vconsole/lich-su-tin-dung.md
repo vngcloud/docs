@@ -1,6 +1,6 @@
 # Lịch sử tín dụng
 
-**Lịch sử tín dụng** tại vConsole ghi nhận lại tất cả hoạt động liên quan đến việc thay đổi số dư ví Credit (là ví hỗ trợ thanh toán các sản phẩm / dịch vụ VNG Cloud Service, quản lý trực tiếp bởi VNG Cloud Service). Số dư ví Credit có thể thay đổi bởi các hoạt động của người dùng (nạp credit, thanh toán hóa đơn / dịch vụ, thay đổi cấu hình dịch vụ, ngừng sử dụng dịch vụ,...) hoặc các hoạt động chạy ngầm định kỳ bởi hệ thống (auto renew,...)
+**Lịch sử tín dụng** tại vConsole ghi nhận lại tất cả hoạt động liên quan đến việc thay đổi số dư ví Credit (là ví hỗ trợ thanh toán các sản phẩm / dịch vụ GreenNode Service, quản lý trực tiếp bởi GreenNode Service). Số dư ví Credit có thể thay đổi bởi các hoạt động của người dùng (nạp credit, thanh toán hóa đơn / dịch vụ, thay đổi cấu hình dịch vụ, ngừng sử dụng dịch vụ,...) hoặc các hoạt động chạy ngầm định kỳ bởi hệ thống (auto renew,...)
 
 Truy cập đến trang **Lịch sử tín dụng / Credit history** [**tại đây**](https://dashboard.console.vngcloud.vn/credit-history)**.**
 
@@ -15,7 +15,7 @@ Tại trang **Lịch sử tín dụng / Credit history**, người dùng sẽ th
 * **Hành động / Action:** Là các hành động của người dùng / hệ thống ảnh hưởng đến số dư credit, bao gồm:
   * _Tiền đặt cọc / Deposit balance:_ Ví credit có biến động tăng số dư do hành động nạp credit vào ví
   * _Hoàn trả số dư / Refund balance:_ Ví credit có biến động tăng số dư do hành động hoàn trả credit từ việc người dùng điều chỉnh cấu hình dịch vụ hoặc kết thúc dịch vụ trước thời hạn.
-  * _Mua dịch vụ / Buy resource:_ Ví credit có biến động giảm số dư do hành động thanh toán dịch vụ VNG Cloud Service thông qua ví Credit
+  * _Mua dịch vụ / Buy resource:_ Ví credit có biến động giảm số dư do hành động thanh toán dịch vụ GreenNode Service thông qua ví Credit
 * **Thời gian thực hiện thanh toán:** Hỗ trợ lựa chọn tìm kiếm theo đơn vị ngày
 * **Từ khóa:** Hỗ trợ tìm kiếm theo từ khóa là Mô tả chi tiết
 

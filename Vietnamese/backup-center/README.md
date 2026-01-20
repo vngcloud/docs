@@ -2,7 +2,7 @@
 
 ## Tổng quan
 
-VNG Cloud Backup Center cung cấp một nền tảng tập trung để quản lý và bảo vệ dữ liệu của bạn trên tất cả các dịch vụ đám mây của bạn. Giải pháp toàn diện này cung cấp các khả năng sao lưu và khôi phục dữ liệu mạnh mẽ, đảm bảo sự liên tục kinh doanh ngay cả trong trường hợp xảy ra sự cố bất ngờ
+GreenNode Backup Center cung cấp một nền tảng tập trung để quản lý và bảo vệ dữ liệu của bạn trên tất cả các dịch vụ đám mây của bạn. Giải pháp toàn diện này cung cấp các khả năng sao lưu và khôi phục dữ liệu mạnh mẽ, đảm bảo sự liên tục kinh doanh ngay cả trong trường hợp xảy ra sự cố bất ngờ
 
 <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -10,7 +10,7 @@ VNG Cloud Backup Center cung cấp một nền tảng tập trung để quản l
 
 * **Sao lưu tự động:** Backup Center tự động sao lưu dữ liệu của bạn theo lịch trình định sẵn, giúp bạn tiết kiệm thời gian và công sức.
 * **Sao lưu đa dạng:** Hỗ trợ sao lưu nhiều loại dữ liệu khác nhau, bao gồm máy ảo, cơ sở dữ liệu, tệp tin và ứng dụng.
-* **Lưu trữ an toàn:** Dữ liệu được lưu trữ trên hệ thống lưu trữ đám mây an toàn và đáng tin cậy của VNG Cloud.
+* **Lưu trữ an toàn:** Dữ liệu được lưu trữ trên hệ thống lưu trữ đám mây an toàn và đáng tin cậy của GreenNode.
 * **Phục hồi nhanh chóng:** Trong trường hợp xảy ra sự cố, bạn có thể dễ dàng khôi phục dữ liệu về một thời điểm cụ thể trước khi xảy ra sự cố.
 * **DR cross-region:** Backup Center cho phép sao lưu và phục hồi dữ liệu giữa các vùng (region) khác nhau, giúp tăng cường khả năng chống chịu trước các sự cố quy mô lớn.
 * **Giám sát và cảnh báo:** Backup Center liên tục giám sát trạng thái sao lưu và gửi cảnh báo kịp thời khi có sự cố xảy ra.
@@ -29,9 +29,9 @@ Sao lưu và DR cross-region là một tính năng quan trọng của Backup Cen
 
 ## Kết luận
 
-VNG Cloud Backup Center là giải pháp toàn diện và đáng tin cậy để bảo vệ dữ liệu và đảm bảo tính liên tục cho các dịch vụ Cloud của bạn. Với các tính năng mạnh mẽ và lợi ích vượt trội, Backup Center là sự lựa chọn hoàn hảo cho mọi doanh nghiệp.
+GreenNode Backup Center là giải pháp toàn diện và đáng tin cậy để bảo vệ dữ liệu và đảm bảo tính liên tục cho các dịch vụ Cloud của bạn. Với các tính năng mạnh mẽ và lợi ích vượt trội, Backup Center là sự lựa chọn hoàn hảo cho mọi doanh nghiệp.
 
-Hãy liên hệ với VNG Cloud ngay hôm nay để tìm hiểu thêm về Backup Center và trải nghiệm giải pháp bảo vệ dữ liệu tối ưu cho doanh nghiệp của bạn thông qua các kênh sau:
+Hãy liên hệ với GreenNode ngay hôm nay để tìm hiểu thêm về Backup Center và trải nghiệm giải pháp bảo vệ dữ liệu tối ưu cho doanh nghiệp của bạn thông qua các kênh sau:
 
 * Email [support@vngcloud.vn](mailto:support@vngcloud.vn) hoặc số hotline **19001549**
 * Tạo yêu cầu hỗ trợ: [https://www.vngcloud.vn/vi/web/guest/contact](https://vngcloud.vn/en/web/guest/contact).

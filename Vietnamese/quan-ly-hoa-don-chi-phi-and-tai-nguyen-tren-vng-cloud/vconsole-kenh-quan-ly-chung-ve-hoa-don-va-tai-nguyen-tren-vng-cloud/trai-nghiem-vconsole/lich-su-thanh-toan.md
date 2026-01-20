@@ -1,6 +1,6 @@
 # Lịch sử thanh toán
 
-**Lịch sử thanh toán / Payment history** tại vConsole ghi nhận lại tất cả hoạt động liên quan đến việc thanh toán hóa đơn, thanh toán phí sử dụng dịch vụ các sản phẩm VNG Cloud Service của tài khoản đăng nhập. Từ đó, người dùng có thể rà soát, cũng như kiểm tra các hoạt động liên quan đến tài khoản của mình một cách trực quan nhất.
+**Lịch sử thanh toán / Payment history** tại vConsole ghi nhận lại tất cả hoạt động liên quan đến việc thanh toán hóa đơn, thanh toán phí sử dụng dịch vụ các sản phẩm GreenNode Service của tài khoản đăng nhập. Từ đó, người dùng có thể rà soát, cũng như kiểm tra các hoạt động liên quan đến tài khoản của mình một cách trực quan nhất.
 
 Truy cập đến trang **Lịch sử thanh toán / Payment history** [**tại đây.**](https://dashboard.console.vngcloud.vn/payment-history)
 
@@ -12,10 +12,10 @@ Tại trang **Lịch sử thanh toán / Payment history**, người dùng sẽ t
 
 **Hỗ trợ tìm kiếm lịch sử thanh toán với nhiều tiêu chí như:**
 
-* **Cổng thanh toán:** Tìm kiếm lịch sử thanh toán phân loại theo cổng thanh toán. Hiện tại, VNG Cloud Service hỗ trợ thanh toán qua 3 cổng thanh toán chính như sau:
+* **Cổng thanh toán:** Tìm kiếm lịch sử thanh toán phân loại theo cổng thanh toán. Hiện tại, GreenNode Service hỗ trợ thanh toán qua 3 cổng thanh toán chính như sau:
   * Thanh toán Momo: Thanh toán qua ứng dụng Momo
   * Thanh toán ZaloPay: Thanh toán qua ứng dụng ZaloPay
-  * Số dư credit: Thông toán qua ví Credit, quản lý bởi VNG Cloud Service
+  * Số dư credit: Thông toán qua ví Credit, quản lý bởi GreenNode Service
 * **Thời gian thực hiện thanh toán:** Hỗ trợ lựa chọn tìm kiếm theo đơn vị ngày
 * **Từ khóa:** Hỗ trợ tìm kiếm theo từ khóa là _Mã giao dịch / Chi tiết giao dịch_
 
@@ -43,7 +43,7 @@ Kết quả tìm kiếm được thể hiện dựa trên các tiêu chí tìm k
   * Deposit / Nạp credit
   * Deposit Trial / Nạp credit dùng Trial
   * Advanced / Nâng cao
-* **Cổng thanh toán:** Có 3 cổng thanh toán chính, đó là **Momo** (thanh toán qua ví Momo), **ZaloPay** (thanh toán qua ví ZaloPay), **Số dư credit** (thanh toán qua ví Credit quản lý bới VNG Cloud Service)
+* **Cổng thanh toán:** Có 3 cổng thanh toán chính, đó là **Momo** (thanh toán qua ví Momo), **ZaloPay** (thanh toán qua ví ZaloPay), **Số dư credit** (thanh toán qua ví Credit quản lý bới GreenNode Service)
 * **Ngày thanh toán:** Ngày thực hiện giao dịch
 * **Chi tiết:** Miêu tả chi tiết giao dịch, có thể là thông tin cấu hình dịch vụ, hoặc là các hoạt động của hệ thống như auto renew,...
 * **Số tiền:** Tổng số tiền thực hiện của lần thanh toán đó, đơn vị VND

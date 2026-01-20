@@ -1,6 +1,6 @@
 # Step 1: Create a project
 
-To start using the service, you need to create a project. A Project is a term on vStorage that represents a storage package with a specific capacity that you purchase on VNG Cloud. <mark style="color:red;">**With Region HCM04, at a time you can only own one Project and use them to organize your data storage.**</mark>
+To start using the service, you need to create a project. A Project is a term on vStorage that represents a storage package with a specific capacity that you purchase on GreenNode. <mark style="color:red;">**With Region HCM04, at a time you can only own one Project and use them to organize your data storage.**</mark>
 
 Create a project by following the steps below:
 

@@ -2,7 +2,7 @@
 
 ## Tổng quan <a href="#tong-quan" id="tong-quan"></a>
 
-Sau khi cấu hình thiết bị cơ sở hạ tầng và kết nối với hệ thống đám mây VNG Cloud thành công, người dùng có thể khởi tạo máy chủ ảo tại giao diện User Site trên cơ sở hạ tầng nội bộ. Ngoài ra, người dùng cần Tạo Network trước để sẵn sàng khởi tạo máy chủ ảo.
+Sau khi cấu hình thiết bị cơ sở hạ tầng và kết nối với hệ thống đám mây GreenNode thành công, người dùng có thể khởi tạo máy chủ ảo tại giao diện User Site trên cơ sở hạ tầng nội bộ. Ngoài ra, người dùng cần Tạo Network trước để sẵn sàng khởi tạo máy chủ ảo.
 
 ***
 
@@ -11,7 +11,7 @@ Sau khi cấu hình thiết bị cơ sở hạ tầng và kết nối với hệ
 **Bước 1**: Người dùng truy cập và đăng nhập vào User Site;
 
 {% hint style="info" %}
-Nếu người dùng truy cập vào mục vServer của VNG Cloud, thì có thể truy cập vào vCloudstack đã đăng ký bằng cách click vào mục Region và **chọn đến Region của vCloudStack**
+Nếu người dùng truy cập vào mục vServer của GreenNode, thì có thể truy cập vào vCloudstack đã đăng ký bằng cách click vào mục Region và **chọn đến Region của vCloudStack**
 {% endhint %}
 
 **Bước 2:** Tại giao diện User Site, Trên thanh Điều hướng, chọn mục Server/Servers;

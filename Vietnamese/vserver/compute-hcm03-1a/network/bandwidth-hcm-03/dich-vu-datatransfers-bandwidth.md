@@ -4,7 +4,7 @@ Gói bandwidth VNG Dedicated là gói bandwidth miễn phí mặc định với 
 
 ### Xem thông tin chi tiết gói
 
-**Bước 1**: Đăng nhập vào tài khoản VNG Cloud của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Bước 1**: Đăng nhập vào tài khoản GreenNode của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
 
 **Bước 2**: Trên danh sách menu bên trái, tại mục **Network**, chọn **Bandwidth**.
 
@@ -35,7 +35,7 @@ Gói bandwidth VNG Dedicated là gói bandwidth miễn phí mặc định với 
 
 Để thêm địa chỉ IP cho gói, bạn có thể thực hiện theo các bước:&#x20;
 
-**Bước 1**: Đăng nhập vào tài khoản VNG Cloud của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Bước 1**: Đăng nhập vào tài khoản GreenNode của bạn và truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
 
 **Bước 2**: Trên danh sách menu bên trái, tại mục **Network**, chọn **Bandwidth**.
 

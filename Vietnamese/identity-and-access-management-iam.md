@@ -23,9 +23,9 @@ Bằng việc triển khai IAM, các tổ chức / doanh nghiệp có thể đ�
 3. Quản lý Người dùng Đơn giản: IAM tập trung quản lý người dùng, làm cho việc thêm, xóa hoặc thay đổi quyền truy cập của người dùng trên toàn hạ tầng đám mây trở nên dễ dàng.
 4. Quyền truy cập và Đăng nhập duy nhất (SSO): IAM cho phép tích hợp nhà cung cấp nhận dạng bên ngoài, cho phép đăng nhập duy nhất (SSO) cho người dùng và giảm thiểu sự cần thiết của nhiều chứng thực.
 
-#### **3. Các mục tiêu chính của IAM trong VNG Cloud** <a href="#identityandaccessmanagement-iam-3.cacmuctieuchinhcuaiamtrongvngcloud" id="identityandaccessmanagement-iam-3.cacmuctieuchinhcuaiamtrongvngcloud"></a>
+#### **3. Các mục tiêu chính của IAM trong GreenNode** <a href="#identityandaccessmanagement-iam-3.cacmuctieuchinhcuaiamtrongvngcloud" id="identityandaccessmanagement-iam-3.cacmuctieuchinhcuaiamtrongvngcloud"></a>
 
-IAM là một thành phần quan trọng của kiến trúc bảo mật VNG Cloud, tăng cường bảo mật và đảm bảo tuân thủ các quy định khác nhau. Dưới đây là cách IAM đạt được những mục tiêu này:
+IAM là một thành phần quan trọng của kiến trúc bảo mật GreenNode, tăng cường bảo mật và đảm bảo tuân thủ các quy định khác nhau. Dưới đây là cách IAM đạt được những mục tiêu này:
 
 1. Xác thực An toàn: IAM thực thi các cơ chế xác thực mạnh mẽ, đảm bảo chỉ những người dùng được ủy quyền mới có thể truy cập vào các tài nguyên đám mây.
 2. Kiểm soát Ủy quyền: IAM cung cấp kiểm soát chi tiết đối với quyền truy cập thông qua vai trò và chính sách, giảm thiểu rủi ro truy cập trái phép.
@@ -34,20 +34,20 @@ IAM là một thành phần quan trọng của kiến trúc bảo mật VNG Clou
 5. Auditing and Logging: IAM ghi lại các yêu cầu quản trị và truy cập trên tài nguyên, cho phép audit và giám sát toàn diện.
 6. Hỗ trợ Tuân thủ: IAM giúp đáp ứng các yêu cầu tuân thủ bằng cách cung cấp kiểm soát truy cập chi tiết và ghi nhật ký truy cập.
 
-#### **4. Các tính năng chính của IAM trong VNG Cloud** <a href="#identityandaccessmanagement-iam-4.cactinhnangchinhcuaiamtrongvngcloud" id="identityandaccessmanagement-iam-4.cactinhnangchinhcuaiamtrongvngcloud"></a>
+#### **4. Các tính năng chính của IAM trong GreenNode** <a href="#identityandaccessmanagement-iam-4.cactinhnangchinhcuaiamtrongvngcloud" id="identityandaccessmanagement-iam-4.cactinhnangchinhcuaiamtrongvngcloud"></a>
 
-VNG Cloud cung cấp một giải pháp IAM mạnh mẽ, cho phép bạn quản lý quyền truy cập vào các tài nguyên đám mây một cách an toàn. Một số tính năng IAM chính trong VNG Cloud bao gồm:
+GreenNode cung cấp một giải pháp IAM mạnh mẽ, cho phép bạn quản lý quyền truy cập vào các tài nguyên đám mây một cách an toàn. Một số tính năng IAM chính trong GreenNode bao gồm:
 
 1. Quản lý Người dùng và Nhóm: Tạo và quản lý người dùng IAM và nhóm để kiểm soát quyền truy cập vào tài nguyên dựa trên các vai trò hoặc trách nhiệm.
 2. Quản lý Truy cập: Xác định và gắn các chính sách để kiểm soát quyền được cấp cho người dùng, nhóm hoặc các tài khoản dịch vụ.
 3. Tùy chỉnh IAM Policies: Viết các chính sách IAM tùy chỉnh để cấp quyền kiểm soát truy cập chi tiết đối với các tài nguyên.
-4. Identity Provider: Tích hợp VNG Cloud với các nhà cung cấp nhận dạng bên ngoài để đơn giản hóa đăng nhập duy nhất (SSO) và quản lý người dùng.
+4. Identity Provider: Tích hợp GreenNode với các nhà cung cấp nhận dạng bên ngoài để đơn giản hóa đăng nhập duy nhất (SSO) và quản lý người dùng.
 
 #### 5. Khái niệm và Thuật ngữ của IAM <a href="#identityandaccessmanagement-iam-5.khainiemvathuatngucuaiam" id="identityandaccessmanagement-iam-5.khainiemvathuatngucuaiam"></a>
 
 * **Root User Account**
 
-Root User Account là một thực thể bạn tạo đầu tiên trong VNG Cloud và sử dụng, mặc định có quyền truy cập đầy đủ vào tất cả các sản phẩm/dịch vụ và tài nguyên của VNG Cloud trong tài khoản đó.
+Root User Account là một thực thể bạn tạo đầu tiên trong GreenNode và sử dụng, mặc định có quyền truy cập đầy đủ vào tất cả các sản phẩm/dịch vụ và tài nguyên của GreenNode trong tài khoản đó.
 
 * #### **Users Accounts** <a href="#identityandaccessmanagement-iam-usersaccounts" id="identityandaccessmanagement-iam-usersaccounts"></a>
 
@@ -63,20 +63,20 @@ IAM Policies là các tài liệu JSON xác định các quyền và quy tắc t
 
 * **Service Accounts**
 
-Service Account là một danh tính bạn có thể tạo trong tài khoản của bạn có các quyền cụ thể. Một Service Account có một số điểm tương đồng với IAM User Account. Service Account và IAM User Account đều là những danh tính với các chính sách cho phép xác định những việc danh tính có thể và không thể làm với các tài nguyên của VNG Cloud. Tuy nhiên, Service Acocunt là danh tính được sử dụng bởi một ứng dụng hoặc máy móc, chứ không phải là một cá nhân, để thực hiện các cuộc gọi API được ủy quyền và truy cập vào các tài nguyên cụ thể.
+Service Account là một danh tính bạn có thể tạo trong tài khoản của bạn có các quyền cụ thể. Một Service Account có một số điểm tương đồng với IAM User Account. Service Account và IAM User Account đều là những danh tính với các chính sách cho phép xác định những việc danh tính có thể và không thể làm với các tài nguyên của GreenNode. Tuy nhiên, Service Acocunt là danh tính được sử dụng bởi một ứng dụng hoặc máy móc, chứ không phải là một cá nhân, để thực hiện các cuộc gọi API được ủy quyền và truy cập vào các tài nguyên cụ thể.
 
 * **Identity Provider**
 
-Identity Provier cho phép bạn tích hợp nhà cung cấp nhận dạng bên ngoài với VNG Cloud Services, cho phép người dùng truy cập tài nguyên đám mây bằng các thông tin đăng nhập hiện có từ nhà cung cấp nhận dạng bên ngoài. Điều này loại bỏ việc người dùng phải nhớ nhiều bộ thông tin đăng nhập cho các hệ thống khác nhau và đơn giản hóa quản lý quyền truy cập.
+Identity Provier cho phép bạn tích hợp nhà cung cấp nhận dạng bên ngoài với GreenNode Services, cho phép người dùng truy cập tài nguyên đám mây bằng các thông tin đăng nhập hiện có từ nhà cung cấp nhận dạng bên ngoài. Điều này loại bỏ việc người dùng phải nhớ nhiều bộ thông tin đăng nhập cho các hệ thống khác nhau và đơn giản hóa quản lý quyền truy cập.
 
-Trong VNG Cloud, bạn có thể cài đặt Identity Provider bằng cách cấu hình cài đặt kết nối giữa Identity Provider bên ngoài với VNG Cloud. Khi đã cài đặt, người dùng từ nhà cung cấp nhận dạng bên ngoài có thể đăng nhập bằng các thông tin đăng nhập hiện có để truy cập vào tài nguyên trong VNG Cloud.<br>
+Trong GreenNode, bạn có thể cài đặt Identity Provider bằng cách cấu hình cài đặt kết nối giữa Identity Provider bên ngoài với GreenNode. Khi đã cài đặt, người dùng từ nhà cung cấp nhận dạng bên ngoài có thể đăng nhập bằng các thông tin đăng nhập hiện có để truy cập vào tài nguyên trong GreenNode.<br>
 
-Dưới đây là các topic quan trọng mà người dùng cần tìm hiểu thêm về IAM VNG Cloud<br>
+Dưới đây là các topic quan trọng mà người dùng cần tìm hiểu thêm về IAM GreenNode<br>
 
-* [How to Login into VNG Cloud](identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)
+* [How to Login into GreenNode](identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md)
 * [Get Started with IAM](identity-and-access-management-iam/bat-dau-voi-iam.md)
 * [Examples of Common Use Cases](identity-and-access-management-iam/ung-dung-pho-bien/)
-* [How IAM supports VNG Cloud Services](identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/)
+* [How IAM supports GreenNode Services](identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/)
 * [IAM Identities](identity-and-access-management-iam/cac-loai-dinh-danh-iam/)
 * [IAM Access Management](identity-and-access-management-iam/quan-ly-truy-cap-iam/)
 * [Audit Logs](identity-and-access-management-iam/quan-ly-audit-logs.md)

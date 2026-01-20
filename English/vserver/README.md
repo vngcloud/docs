@@ -2,13 +2,13 @@
 
 ## Overview
 
-vServer is a virtual server service provided by VNG Cloud. vServer allows for the easy creation of server types such as High Performance and GPU, quickly meeting all customer needs. Additionally, vServer offers services and tools to enhance operational quality, such as vVPC (Virtual Private Cloud), vLB (Load Balancing as a Service), Cloud Firewall (using Juniper's vSRX), and more.
+vServer is a virtual server service provided by GreenNode. vServer allows for the easy creation of server types such as High Performance and GPU, quickly meeting all customer needs. Additionally, vServer offers services and tools to enhance operational quality, such as vVPC (Virtual Private Cloud), vLB (Load Balancing as a Service), Cloud Firewall (using Juniper's vSRX), and more.
 
 _**View the quick start guide for creating a server with vServer here:**_
 
 {% embed url="https://www.youtube.com/watch?v=5T3Ryuj4qQg" %}
 
-### VNG Cloud Regions:
+### GreenNode Regions:
 
 * <mark style="color:red;">**HAN-01**</mark> : Located in Ha Noi
 * <mark style="color:red;">**HCM-03**</mark> : Located in Ho Chi Minh

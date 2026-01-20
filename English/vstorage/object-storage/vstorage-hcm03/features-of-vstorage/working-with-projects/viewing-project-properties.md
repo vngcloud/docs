@@ -13,9 +13,9 @@ To view properties for a project, you can:
 3\. On the page displaying detailed **project** **information**, you can view and use the properties for the project.
 
 * **Information**: Provides general information about the project such as Total Quota, Total Bandwidth, Total Used Capacity, Total number of requests to the project, Total download count, Total upload count, Project type, Account URL, Temp URL key. You can view detailed changes in traffic, used capacity over desired periods by selecting Details in these information sections.
-* **Members**: Provides information about members who have been granted access to the project from the old vStorage Portal. We only support the Add Member feature on the old vStorage Portal. Now you can grant access permissions to users from the vIAM access control system provided by VNG Cloud. See more at: Access control.
+* **Members**: Provides information about members who have been granted access to the project from the old vStorage Portal. We only support the Add Member feature on the old vStorage Portal. Now you can grant access permissions to users from the vIAM access control system provided by GreenNode. See more at: Access control.
 * **IP range ACLs**: Provides information about the IP/ Subnet that has been granted access to the project. See more at: Using IP range ACLs project feature.
-* **S3 keys**: Provides information about the S3 key pairs initialized for the project from the old vStorage Portal. We only support the Initialize S3 keys feature on the old vStorage Portal. Now you can initialize S3 key pairs from the vIAM access control system provided by VNG Cloud. See more at: Access control.
+* **S3 keys**: Provides information about the S3 key pairs initialized for the project from the old vStorage Portal. We only support the Initialize S3 keys feature on the old vStorage Portal. Now you can initialize S3 key pairs from the vIAM access control system provided by GreenNode. See more at: Access control.
 * **History**: Provides information about the history of actions taken on the project, including the type of action, action status, time the action occurred, and a detailed description of the action if available.
 * **Connection Information**: Provides commands and configuration files to connect the project to S3.
 

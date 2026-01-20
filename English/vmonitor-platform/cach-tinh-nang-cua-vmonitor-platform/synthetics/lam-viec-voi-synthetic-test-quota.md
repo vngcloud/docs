@@ -2,7 +2,7 @@
 
 ## Overview <a href="#lamviecvoisynthetictestquota-tongquan" id="lamviecvoisynthetictestquota-tongquan"></a>
 
-A Synthetic test quota is a term on vMonitor Platform that represents a monitoring package via API with a specific number of API tests and alarms that you purchase on VNG Cloud. You can only own one Synthetic test quota at a time and use them as a way to organize resources for groups or departments to use for different purposes.
+A Synthetic test quota is a term on vMonitor Platform that represents a monitoring package via API with a specific number of API tests and alarms that you purchase on GreenNode. You can only own one Synthetic test quota at a time and use them as a way to organize resources for groups or departments to use for different purposes.
 
 ***
 

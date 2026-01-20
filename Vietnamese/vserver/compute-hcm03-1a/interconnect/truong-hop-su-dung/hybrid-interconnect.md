@@ -2,7 +2,7 @@
 
 **Tên trường hợp sử dụng: "Tích hợp Hiện đại: Kết hợp Đám mây và Trung tâm Dữ liệu với Hybrid Interconnect"**
 
-_Khách hàng:_ Công ty Y là một tổ chức có hệ thống trung tâm dữ liệu (data center) riêng và cũng đang sử dụng dịch vụ đám mây như Amazon Web Services (AWS) và VNG Cloud để mở rộng hạ tầng và ứng dụng của họ.
+_Khách hàng:_ Công ty Y là một tổ chức có hệ thống trung tâm dữ liệu (data center) riêng và cũng đang sử dụng dịch vụ đám mây như Amazon Web Services (AWS) và GreenNode để mở rộng hạ tầng và ứng dụng của họ.
 
 _Vấn đề:_ Công ty Y đang gặp thách thức trong việc quản lý và tích hợp hai môi trường khác nhau: trung tâm dữ liệu cổ điển và môi trường đám mây. Họ muốn tận dụng lợi ích của cả hai để cải thiện hiệu suất và tính linh hoạt của hạ tầng mạng.
 

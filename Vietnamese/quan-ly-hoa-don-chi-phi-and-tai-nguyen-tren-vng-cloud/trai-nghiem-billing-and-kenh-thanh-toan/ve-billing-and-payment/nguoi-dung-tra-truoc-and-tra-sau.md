@@ -5,7 +5,7 @@ Sử dụng tài liệu này để hiểu rõ hơn về các hình thức sử d
 * **Người dùng trả trước:** Là người dùng phải thanh toán chi phí sử dụng tài nguyên trước khi được phép sử dụn&#x67;**.** Thanh toán chi phí sử dụng tài nguyên theo cấu hình và thời gian muốn sử dụng (Cần xác định thời điểm ngừng sử dụng tài nguyên).
 * **Người dùng trả sau:** Là người dùng được phép sử dụng tài nguyên trước và trả tiền sau, dựa trên chi phí sử dụng tài nguyên thực tế. Số tiền phải chi trả sẽ được chốt định kỳ mỗi cuối tháng cho đến khi người dùng không sử dụng tài nguyên nữa.
 
-Cùng điểm qua một số khác biệt về khái niệm cũng như quyền hạn và chức năng giữa 2 loại người dùng này đối với các dịch vụ VNG Cloud như:
+Cùng điểm qua một số khác biệt về khái niệm cũng như quyền hạn và chức năng giữa 2 loại người dùng này đối với các dịch vụ GreenNode như:
 
 * **Quy trình action trên tài nguyên:** Khởi tạo, thay đổi cấu hình, gia hạn, khôi phục, xóa tài nguyên
 * **Quy trình cung cấp tài nguyên**
@@ -31,7 +31,7 @@ Cùng điểm qua một số khác biệt về khái niệm cũng như quyền h
 
 * **Người dùng trả trước**
   * Sau khi xác nhận thanh toán thành công, phía Product sẽ tiến hành cung cấp tài nguyên theo cấu hình mà người dùng yêu cầu
-  * Trong quá trình cung cấp tài nguyên, nếu có xảy ra lỗi quá trình, hệ thống sẽ tiến hành hoàn trả tiền dịch vụ đã thanh toán của người dùng ở bước trước đó. Tiền được hoàn trả sẽ quy về Credit và chuyển vào ví VNG Cloud
+  * Trong quá trình cung cấp tài nguyên, nếu có xảy ra lỗi quá trình, hệ thống sẽ tiến hành hoàn trả tiền dịch vụ đã thanh toán của người dùng ở bước trước đó. Tiền được hoàn trả sẽ quy về Credit và chuyển vào ví GreenNode
 * **Người dùng trả sau**
   * Ngay tại bước "Xác nhận", Product sẽ tiến hành cung cấp tài nguyên theo cấu hình người dùng yêu cầu, và hệ thống sẽ ghi nhận lại thời gian bắt đầu sử dụng tài nguyên.
 
@@ -78,6 +78,6 @@ Tham khảo chi tiết hơn tại mục: [**Quản lý tài nguyên**](nguoi-dun
 
 ***
 
-* **Khi người dùng đăng ký mới tài khoản tại VNG Cloud**, hệ thống sẽ mặc định đây là **người dùng trả trước.**
+* **Khi người dùng đăng ký mới tài khoản tại GreenNode**, hệ thống sẽ mặc định đây là **người dùng trả trước.**
 * Để **chuyển sang loại người dùng trả sau**, người dùng chủ động **liên hệ bộ phân Sale / Support** để được hỗ trợ theo yêu cầu.
 * Trường hợp người dùng là loại trả sau và muốn **quay về loại trả trước**, cũng chủ động **liên hệ bộ phân Sale / Support** để được hỗ trợ theo yêu cầu.

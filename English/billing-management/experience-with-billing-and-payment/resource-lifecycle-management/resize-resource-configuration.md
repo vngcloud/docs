@@ -5,8 +5,8 @@ Use this document as a guide to modify resource configurations. The document wil
 The resource configuration change feature applies to:&#x20;
 
 * Target user: Prepaid and postpaid users.
-* Source of money: VNG Cloud Wallet or other sources (performed through payment gateway)
-* Resources: All resources of VNG Cloud products that allow configuration changes&#x20;
+* Source of money: GreenNode Wallet or other sources (performed through payment gateway)
+* Resources: All resources of GreenNode products that allow configuration changes&#x20;
 
 ## Prepaid users change resource configuration&#x20;
 

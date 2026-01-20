@@ -1,6 +1,6 @@
 # Upload a certificate
 
-Để có thể sử dụng chứng chỉ SSL bạn phải có sẵn chứng chỉ SSL hoặc sử dụng chứng chỉ SSL miễn phí được cung cấp bởi Let’s Encrypt. Các certificate được VNG CLOUD lưu tại một nơi bảo mật, an toàn, hệ thống lưu trữ các certificate được mã hóa và không thể truy cập bởi bất cứ ai bao gồm cả các nhân viên của VNG CLOUD.
+Để có thể sử dụng chứng chỉ SSL bạn phải có sẵn chứng chỉ SSL hoặc sử dụng chứng chỉ SSL miễn phí được cung cấp bởi Let’s Encrypt. Các certificate được GreenNode lưu tại một nơi bảo mật, an toàn, hệ thống lưu trữ các certificate được mã hóa và không thể truy cập bởi bất cứ ai bao gồm cả các nhân viên của GreenNode.
 
 Trình quản lý Certificate hỗ trợ tải lên và quản lý hai loại Certificate như sau:
 

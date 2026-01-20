@@ -8,7 +8,7 @@ Private Locations allows you to monitor applications/services located on your in
 2. Select the Synthetic test folder **.**
 3. Select **Location.**
 4. Select **Create a location.**
-5. Next step **select API Key** to have authentication information between Private Location and VNG Cloud and select Save **& Get Installation Guide** so that the system will generate the necessary configurations and commands for you to install.
+5. Next step **select API Key** to have authentication information between Private Location and GreenNode and select Save **& Get Installation Guide** so that the system will generate the necessary configurations and commands for you to install.
 
 <figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

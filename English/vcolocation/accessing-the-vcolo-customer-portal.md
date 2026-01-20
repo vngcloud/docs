@@ -3,7 +3,7 @@
 You need to register an account and activate it to use the vColo service before you can access the vColo customer portal.
 
 1. To register an account, follow the instructions: registration guide.
-2. After you have an account, contact VNG Cloud customer support to activate your vColo service account.
+2. After you have an account, contact GreenNode customer support to activate your vColo service account.
 3. Proceed to log in by following the instructions below:
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

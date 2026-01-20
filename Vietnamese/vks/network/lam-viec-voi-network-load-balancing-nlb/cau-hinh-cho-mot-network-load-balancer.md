@@ -1,6 +1,6 @@
 # Cấu hình cho một Network Load Balancer
 
-Tại trang \[Integrate with Network Load Balancer], chúng tôi đã hướng dẫn bạn cách thực hiện cài đặt VNGCloud LoadBalancer Controller, tạo và apply yaml file. Sau đây là chi tiết các ý nghĩa các thông tin bạn có thể thiết lập trong yaml file:
+Tại trang \[Integrate with Network Load Balancer], chúng tôi đã hướng dẫn bạn cách thực hiện cài đặt GreenNode LoadBalancer Controller, tạo và apply yaml file. Sau đây là chi tiết các ý nghĩa các thông tin bạn có thể thiết lập trong yaml file:
 
 ### Annotation <a href="#configureforanetworkloadbalancer-annotation" id="configureforanetworkloadbalancer-annotation"></a>
 

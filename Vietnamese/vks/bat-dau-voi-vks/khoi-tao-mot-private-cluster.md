@@ -1,6 +1,6 @@
 # Khởi tạo một Private Cluster
 
-Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Public IP để giao tiếp giữa nodes và control plane. Để nâng cao bảo mật cho cluster của bạn, chúng tôi đã cho ra mắt mô hình private cluster. Tính năng Private Cluster giúp cho cụm K8S của bạn được bảo mật nhất có thể, mọi kết nối hoàn toàn là private từ kết nối giữa nodes tới control plane, kết nối từ client tới control plane, hay kết nối từ nodes tới các sản phẩm dịch vụ khác trong VNG Cloud như: vStorage, vCR, vMonitor, VNGCloud APIs,...Private Cluster là lựa chọn lý tưởng cho **các dịch vụ yêu cầu kiểm soát truy cập chặt chẽ, đảm bảo tuân thủ các quy định về bảo mật và quyền riêng tư dữ liệu**.&#x20;
+Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Public IP để giao tiếp giữa nodes và control plane. Để nâng cao bảo mật cho cluster của bạn, chúng tôi đã cho ra mắt mô hình private cluster. Tính năng Private Cluster giúp cho cụm K8S của bạn được bảo mật nhất có thể, mọi kết nối hoàn toàn là private từ kết nối giữa nodes tới control plane, kết nối từ client tới control plane, hay kết nối từ nodes tới các sản phẩm dịch vụ khác trong GreenNode như: vStorage, vCR, vMonitor, GreenNode APIs,...Private Cluster là lựa chọn lý tưởng cho **các dịch vụ yêu cầu kiểm soát truy cập chặt chẽ, đảm bảo tuân thủ các quy định về bảo mật và quyền riêng tư dữ liệu**.&#x20;
 
 ### Model <a href="#khoitaomotpublicclustervoiprivatenodegroup-dieukiencan" id="khoitaomotpublicclustervoiprivatenodegroup-dieukiencan"></a>
 
@@ -10,10 +10,10 @@ Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Pub
 
 **Thành phần**
 
-* **Control plane**: Được quản lý bởi VNG Cloud, chịu trách nhiệm điều phối và quản lý toàn bộ cluster.
+* **Control plane**: Được quản lý bởi GreenNode, chịu trách nhiệm điều phối và quản lý toàn bộ cluster.
 * **Nodes**: Các Node trong Cluster khi được tạo ra sẽ chỉ có internal IP và không thể đi ra public internet. Nếu muốn node truy cập được internet, bạn cần sử dụng NAT Gateway. Chi tiết tham khảo thêm tại [đây](khoi-tao-mot-public-cluster/khoi-tao-mot-public-cluster-voi-private-node-group/pfsense-as-a-nat-gateway.md).
-* **Private Load Balancer**: Được quản lý bởi VNG Cloud, chịu trách nhiệm giúp các Private Node giao tiếp với Control Plane.
-* **Private Service Endpoint**: Khi bạn tạo một private cluster, hệ thống tự động tạo 4 endpoints giúp kết nối với các dịch vụ khác trên VNG Cloud bao gồm:
+* **Private Load Balancer**: Được quản lý bởi GreenNode, chịu trách nhiệm giúp các Private Node giao tiếp với Control Plane.
+* **Private Service Endpoint**: Khi bạn tạo một private cluster, hệ thống tự động tạo 4 endpoints giúp kết nối với các dịch vụ khác trên GreenNode bao gồm:
   * **Endpoint** để kết nối tới dịch vụ **IAM** (Endpoint Name: vks-iam-endpoint-...)
   * **Endpoint** để kết nối tới dịch vụ **vCR** (Endpoint Name: vks-vcr-endpoint-...)
   * **Endpoint** để kết nối tới dịch vụ **vServer** (Endpoint Name: vks-vserver-endpoint-...)

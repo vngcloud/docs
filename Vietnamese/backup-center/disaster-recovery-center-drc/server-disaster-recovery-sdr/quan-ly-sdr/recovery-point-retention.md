@@ -1,6 +1,6 @@
 # Recovery Point Retention
 
-Trong quá trình sử dụng dịch vụ Disaster Recovery (DR), việc quản lý các Recovery Point (điểm khôi phục) là một yếu tố quan trọng để đảm bảo khả năng phục hồi dữ liệu hiệu quả đồng thời tối ưu hóa chi phí lưu trữ. VNG Cloud Disaster Recovery Center (DRC) cung cấp các tùy chọn linh hoạt để bạn quản lý Retention Recovery Point, giúp bạn cân bằng giữa nhu cầu bảo vệ dữ liệu và ngân sách của mình.
+Trong quá trình sử dụng dịch vụ Disaster Recovery (DR), việc quản lý các Recovery Point (điểm khôi phục) là một yếu tố quan trọng để đảm bảo khả năng phục hồi dữ liệu hiệu quả đồng thời tối ưu hóa chi phí lưu trữ. GreenNode Disaster Recovery Center (DRC) cung cấp các tùy chọn linh hoạt để bạn quản lý Retention Recovery Point, giúp bạn cân bằng giữa nhu cầu bảo vệ dữ liệu và ngân sách của mình.
 
 Dưới đây là mô tả chi tiết về các chính sách Retention Recovery Point của DRC, giúp bạn hiểu rõ hơn về cách thức hoạt động và cách lựa chọn phù hợp với nhu cầu của mình.
 

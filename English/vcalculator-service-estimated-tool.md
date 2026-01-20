@@ -55,15 +55,15 @@ The supported products/services for pricing on the website are as follows:
 
 * **Q: Are the cost estimates accurate?**
 
-→ A: The cost estimates provided by the pricing tool are based on the information and parameters you input and the current publicly available pricing from VNG Cloud. However, please note that they are only estimates and may not reflect the final or exact costs.
+→ A: The cost estimates provided by the pricing tool are based on the information and parameters you input and the current publicly available pricing from GreenNode. However, please note that they are only estimates and may not reflect the final or exact costs.
 
 * **Q: Do I need to log in to use the pricing tool? Is there any difference between using it logged in and not logged in?**
 
-→ A: No, the pricing tool is used for estimating the costs of using VNG Cloud services, so you do not need to log in to estimate the service costs using the pricing tool.
+→ A: No, the pricing tool is used for estimating the costs of using GreenNode services, so you do not need to log in to estimate the service costs using the pricing tool.
 
-However, for existing VNG Cloud users, we encourage you to log in to get the most accurate and convenient cost estimation:
+However, for existing GreenNode users, we encourage you to log in to get the most accurate and convenient cost estimation:
 
-* Applied Discount Criteria: For VNG Cloud users, the pricing tool will automatically apply discount criteria on each service (if applicable).
+* Applied Discount Criteria: For GreenNode users, the pricing tool will automatically apply discount criteria on each service (if applicable).
 * Saved Services: The estimated services will be saved for future use.
 * Accessibility: For logged-in users, you can access the pricing tool from anywhere with your login credentials.
 * Temporary List: For non-logged-in users, the estimated services will be temporarily stored on the device rather than linked to an account. Therefore, you will not see the previous pricing list when accessing the pricing tool from a different device.

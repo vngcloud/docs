@@ -5,8 +5,8 @@ This document provides a guide for resource recovery, describing in detail the s
 **Resource recovery feature applies to**
 
 * **Target**: Prepaid users.
-* **Source of money**: VNG Cloud wallet or other sources (via payment gateway).
-* **Resources:** All resources belonging to VNG Cloud products.
+* **Source of money**: GreenNode wallet or other sources (via payment gateway).
+* **Resources:** All resources belonging to GreenNode products.
 
 **Resource recovery process**&#x20;
 

@@ -2,7 +2,7 @@
 
 Trước khi tìm hiểu phương thức thanh toán tài nguyên POC, bạn nên hiểu rõ các khái niệm cũng các hành động mà người dùng có thể thao tác đối với tài nguyên POC. Tìm hiểu thêm về tài nguyên POC [**tại đây**](../quan-ly-vong-doi-tai-nguyen/tai-nguyen-poc/)**.**
 
-Thanh toán tài nguyên POC là một hình thức thanh toán tại VNG Cloud Service, áp dụng đối với:
+Thanh toán tài nguyên POC là một hình thức thanh toán tại GreenNode Service, áp dụng đối với:
 
 * **Đối tượng**:
   * Người dùng trả trước
@@ -29,15 +29,15 @@ Các tài nguyên được áp dụng POC theo thỏa thuận. Ví POC hiện đ
 
 ***
 
-POC là một loại ví do VNG Cloud cung cấp nhằm mục đích đem đến cho người dùng trải nghiệm dịch vụ một cách toàn diện nhất. Người dùng sử dụng ví POC như là 1 phương thức thanh toán đối với các tài nguyên được phép POC.
+POC là một loại ví do GreenNode cung cấp nhằm mục đích đem đến cho người dùng trải nghiệm dịch vụ một cách toàn diện nhất. Người dùng sử dụng ví POC như là 1 phương thức thanh toán đối với các tài nguyên được phép POC.
 
-* **Số dư ví POC:** Phụ thuộc vào thỏa thuận giữa người dùng và phía VNG Cloud
-* **Thời hạn sử dụng ví:** Phụ thuộc vào thỏa thuận giữa người dùng và phía VNG Cloud
+* **Số dư ví POC:** Phụ thuộc vào thỏa thuận giữa người dùng và phía GreenNode
+* **Thời hạn sử dụng ví:** Phụ thuộc vào thỏa thuận giữa người dùng và phía GreenNode
 
 #### Sở hữu ví POC bằng cách nào? <a href="#thanhtoantainguyenpoc-sohuuvipocbangcachnao" id="thanhtoantainguyenpoc-sohuuvipocbangcachnao"></a>
 
 ***
 
-Hiện tại, ví POC được cấp thông qua các chương trình khuyến mãi, chiến dịch quảng cáo của VNG Cloud hoặc thông qua bộ phận Sale/Sale Operation sau khi đã hoàn thành các thỏa thuận.
+Hiện tại, ví POC được cấp thông qua các chương trình khuyến mãi, chiến dịch quảng cáo của GreenNode hoặc thông qua bộ phận Sale/Sale Operation sau khi đã hoàn thành các thỏa thuận.
 
 <br>

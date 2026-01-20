@@ -1,6 +1,6 @@
 # Quản lý Load Balancer (NLB)
 
-VNG cloud cung cấp giao diện trực quan trong việc quản lý Load Balancer, bao gồm các tính năng quan trọng như:
+GreenNode cung cấp giao diện trực quan trong việc quản lý Load Balancer, bao gồm các tính năng quan trọng như:
 
 1. **Khởi tạo Load Balancer**
 2. **Xem danh sách Load Balancer**
@@ -11,7 +11,7 @@ VNG cloud cung cấp giao diện trực quan trong việc quản lý Load Balanc
 
 ### **1. Khởi tạo Load Balancer** <a href="#manageloadbalancer-nlb-1.khoitaoloadbalancer" id="manageloadbalancer-nlb-1.khoitaoloadbalancer"></a>
 
-Để sử dụng dịch vụ vLB tại VNG Cloud, điều đầu tiên bạn cần làm là khởi tạo một Load Balancer theo nhu cầu sử dụng. Tham khảo hướng dẫn dưới đây cho việc khởi tạo một Network Load Balancer.
+Để sử dụng dịch vụ vLB tại GreenNode, điều đầu tiên bạn cần làm là khởi tạo một Load Balancer theo nhu cầu sử dụng. Tham khảo hướng dẫn dưới đây cho việc khởi tạo một Network Load Balancer.
 
 **Cách khởi tạo một Network Load Balancer**
 

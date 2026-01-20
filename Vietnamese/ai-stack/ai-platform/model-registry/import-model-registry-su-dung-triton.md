@@ -3,17 +3,17 @@
 ## Chuẩn bị Model
 
 * Vì AI Platform chỉ truy cập các mô hình từ Network Volume, bạn cần tạo một Network Volume trước. Sau đó, sao chép mô hình từ hệ thống tệp cục bộ hoặc bộ lưu trữ đám mây (như AWS S3, Azure Blob hoặc Google Cloud Storage - GCS) vào Network Volume đó.
-* Đảm bảo Model tương thích với Triton Format bao gồm:&#x20;
+* Đảm bảo Model tương thích với Triton Format bao gồm:
   * **ONNX** (`.onnx`)
   * **TensorFlow** (dạng **SavedModel** hoặc tệp `.pb`)
   * **PyTorch TorchScript** (`.pt`)
   * **TensorRT** (`.engine`)
   * **OpenVINO** (`.xml` và `.bin`)
-  * **Ensemble Model** (kết hợp nhiều mô hình lại với nhau) [Tham khảo](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/user_guide/ensemble_models.html)<mark style="color:$primary;">.</mark>
+  * **Ensemble Model** (kết hợp nhiều mô hình lại với nhau) [Tham khảo](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/user_guide/ensemble_models.html).
 
 ## Bước 1: Truy cập Model Registry
 
-* Đăng nhập với VNG Cloud account của bạn và truy cập tới [Model Registry Dashboard](https://aiplatform.console.vngcloud.vn/registry)<mark style="color:$info;">.</mark>
+* Đăng nhập với GreenNode account của bạn và truy cập tới [Model Registry Dashboard](https://aiplatform.console.vngcloud.vn/registry).
 * Tìm và nhấn vào nút "Import a model registry" (Nhập một model registry).
 
 ## Bước 2: Truy cập Model Registry

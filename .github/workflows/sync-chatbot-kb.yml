@@ -1,4 +1,4 @@
-name: Sync to VNG Cloud with s3cmd
+name: Sync to GreenNode with s3cmd
 
 on:
   push:
@@ -37,7 +37,7 @@ jobs:
             --exclude='*' \
             Vietnamese/ filtered/
       
-      - name: Sync only .md files to VNG Cloud
+      - name: Sync only .md files to GreenNode
         run: |
           s3cmd sync --delete-removed ./filtered/ s3://kb-vngcloud-docs-assistant/documents/ -c ~/.s3cfg
       

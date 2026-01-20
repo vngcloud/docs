@@ -24,7 +24,7 @@
 1. Truy cập vào tab **Network Volume** trong AI Platform theo đường dẫn: [https://aiplatform.console.vngcloud.vn/volume](https://aiplatform.console.vngcloud.vn/volume)
 2. Click **Create Network Volume**.
 3. Nhập thông tin:
-   * **Tên Volume**:  nhập tên hợp lệ theo quy tắc sau: Chỉ cho phép các chữ cái (a-z, A-Z, 0-9, '\_', '-', '.'). Dữ liệu đầu vào phải nằm trong khoảng từ 1 đến 50 ký tự. Ví dụ `ai-storage`
+   * **Tên Volume**: nhập tên hợp lệ theo quy tắc sau: Chỉ cho phép các chữ cái (a-z, A-Z, 0-9, '\_', '-', '.'). Dữ liệu đầu vào phải nằm trong khoảng từ 1 đến 50 ký tự. Ví dụ `ai-storage`
    * **Kích thước (GB)**: sẽ được tự động điều chỉnh dựa trên việc sử dụng của bạn
    * **Region**: Ví dụ `HCM`
 4. Click **Tạo Volume**
@@ -33,25 +33,30 @@
 
 ### Bước 2: Sync dữ liệu từ S3 vào Network Volume
 
-Dữ liệu có thể được đồng bộ từ S3 vào Network Volume theo hai phương thức: **tự động (auto-sync)** hoặc **thủ công (manual sync)**.
+Dữ liệu có thể được đồng bộ từ S3 vào Network Volume theo phương thức: **thủ công (manual sync)**.
 
-#### 2.1 Manual Sync Dữ liệu khi Notebook vẫn đang chạy
+#### 2.1 Manual Sync dữ liệu Notebook
 
-Nếu bạn không muốn tắt notebook nhưng vẫn muốn cập nhật dữ liệu thủ công, có thể sử dụng các API sync nội bộ từ terminal của notebook:
+Khi tạo notebook và network volume được chỉ định, thông tin config network volume được lưu vào Notebook. Từ đây bạn có thể sử dụng built-in tool aiplatform-utils để tương tác với network volume
+
+Tham khảo [aiplatform-util](https://github.com/vngcloud/aiplatform-util)
 
 ```bash
-#kéo dữ liệu từ S3 về Notebook
-curl -X POST localhot:8080/pull
+# List files in your network volume
+aiplatform-util nv ls
 
-#đẩy data từ Notebook lên S3 (ghi đè dữ liệu cũ)
-curl -X POST localhot:8080/finalize
+# Download files to your workspace
+aiplatform-util nv pull
+
+# Upload your work to network volume
+aiplatform-util nv push
 ```
 
-> Lưu ý: Cần thực hiện lệnh này từ **bên trong notebook**, nơi đang mount Network Volume.
+> Lưu ý: Cần thực hiện lệnh này từ **bên trong notebook,** nơi đang chứa thông tin config của network volume (nếu network volume reset key, notebook sẽ nhận thông tin key mới sau 1-5p)
 
 #### 2.2 Sử dụng S3 Key với công cụ CLI
 
-Mỗi Network Volume tương ứng với một S3 bucket nội bộ. Có thể sử dụng s3 key của network volume để sử dụng với các công cụ command line [3rd party softwares | VNG Cloud docs](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/3rd-party-softwares). Bạn có thể sử dụng các công cụ dòng lệnh (CLI) như **s3cmd** để thao tác trực tiếp với dữ liệu trong volume. Ở tài liệu này sẽ hướng dẫn trên s3cmd.
+Mỗi Network Volume tương ứng với một S3 bucket nội bộ. Có thể sử dụng s3 key của network volume để sử dụng với các công cụ command line [3rd party softwares | GreenNode docs](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/3rd-party-softwares). Bạn có thể sử dụng các công cụ dòng lệnh (CLI) như **s3cmd** để thao tác trực tiếp với dữ liệu trong volume. Ở tài liệu này sẽ hướng dẫn trên s3cmd.
 
 **Chuẩn bị:**
 
@@ -72,7 +77,7 @@ host_bucket = %(bucket)s.<hostname>
 
 <figure><img src="../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="/broken/files/aRRBDlYLuVoIbetChDwe" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 Sử dụng s3cmd với file s3cnf đã tạo có thể sử dung các action put, ls ... với bucket
 
@@ -85,23 +90,19 @@ Gắn một Network Volume vào phiên bản notebook này. Điều này cho ph�
 #### Khi khởi tạo Notebook:
 
 * Chọn phần **Data Mount**
-*   Chỉ định:
+* Chỉ định:
+  *   Network volume: `ai-storage`
 
-    *   Network volume: `ai-storage`
+      * Chọn Network Volume trong danh sách đã tạo của bạn.
+      * Bạn có thể nhấp vào "Manage your volumes" để quản lý các Network Volume hiện có của mình.
 
-        * Chọn Network Volume trong danh sách đã tạo của bạn.
-        * Bạn có thể nhấp vào "Manage your volumes" để quản lý các Network Volume hiện có của mình.
-
-        <figure><img src="/broken/files/zm8Xn8G3O5mvhe4a0OlD" alt=""><figcaption></figcaption></figure>
-
-
-
-    * Mount folder name (Folder Sync):&#x20;
-      * _Tạo thư mục đích trong notebook để đồng bộ dữ liệu từ Network Volume_. Ví dụ: `/workspace/notebook-data`
-      * Lưu ý: Chỉ cho phép các ký tự chữ cái (a-z, A-Z, 0-9, '\_', '-', '+', '.'). Độ dài nhập liệu phải nhỏ hơn 256 ký tự.
-    * Block storage size:&#x20;
-      * Nhập dung lượng _dung lượng lưu trữ tạm (ephemeral block storage) để chứa_ OS và bản sao dữ liệu từ network volume.&#x20;
-      * Chọn kích thước đủ lớn so với dữ liệu cần dùng từ 20 đến 1000. (nếu chọn size blockstorage bé hơn hoặc bằng size network volume hiện tại thì quá trình tạo notebook sẽ bị lỗi (bạn có thể xoá và tạo lại notebook khác)
+      <figure><img src="../../.gitbook/assets/image (379).png" alt=""><figcaption></figcaption></figure>
+  * Mount folder name (Folder Sync):
+    * _Tạo thư mục đích trong notebook để đồng bộ dữ liệu từ Network Volume_. Ví dụ: `/workspace/notebook-data`
+    * Lưu ý: Chỉ cho phép các ký tự chữ cái (a-z, A-Z, 0-9, '\_', '-', '+', '.'). Độ dài nhập liệu phải nhỏ hơn 256 ký tự.
+  * Block storage size:
+    * Nhập dung lượng _dung lượng lưu trữ tạm (ephemeral block storage) để chứa_ OS và bản sao dữ liệu từ network volume.
+    * Chọn kích thước đủ lớn so với dữ liệu cần dùng từ 20 đến 1000. (nếu chọn size blockstorage bé hơn hoặc bằng size network volume hiện tại thì quá trình tạo notebook sẽ bị lỗi
 
 <figure><img src="../../.gitbook/assets/image (1079).png" alt="" width="337"><figcaption></figcaption></figure>
 
@@ -118,7 +119,7 @@ Gắn một Network Volume vào phiên bản notebook này. Điều này cho ph�
 2. Chọn:
    * **Loại lưu trữ (Model source)**: Network Volume
    * **Model repository:** Đường dẫn tới file model (VD: `/models/llama3/`)
-   * **Network volume**: Chỉ định Network Volume **chứa model AI** để hệ thống có thể truy cập khi chạy inference. Lưu ý model phải được lưu đúng với đường dẫn nhập tại Model repository `ai-storage`&#x20;
+   * **Network volume**: Chỉ định Network Volume **chứa model AI** để hệ thống có thể truy cập khi chạy inference. Lưu ý model phải được lưu đúng với đường dẫn nhập tại Model repository `ai-storage`
 
 <figure><img src="../../.gitbook/assets/image (1080).png" alt="" width="375"><figcaption></figcaption></figure>
 

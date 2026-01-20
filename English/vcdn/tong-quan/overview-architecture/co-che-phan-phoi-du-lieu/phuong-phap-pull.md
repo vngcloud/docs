@@ -2,7 +2,7 @@
 
 **Input signal:**&#x20;
 
-* VNGCloud's Media Preparation system will pull streaming content in pre-packaged HLS/MpegDash format from the customer's server. Including ABR and Multiple Audio format support.&#x20;
+* GreenNode's Media Preparation system will pull streaming content in pre-packaged HLS/MpegDash format from the customer's server. Including ABR and Multiple Audio format support.&#x20;
 * The system will proactively deliver content to all edges in the network to always be ready when the user calls.&#x20;
 * The end user will retrieve content in HLS/MpegDash format from the Edge server.
 

@@ -8,11 +8,11 @@ hidden: true
 
 ### **Cài đặt Terraform CLI** <a href="#quanlyvcontainervoiterraform-caidatterraformcli" id="quanlyvcontainervoiterraform-caidatterraformcli"></a>
 
-Để có thể quản lý vContainer với Terraform bạn cần cài đặt Terraform CLI theo hướng dẫn [tại đây ](cai-dat-terraform.md)
+Để có thể quản lý vContainer với Terraform bạn cần cài đặt Terraform CLI theo hướng dẫn [tại đây](cai-dat-terraform.md)
 
 ***
 
-### **Cấp quyền IAM cho việc sử dụng**  <a href="#quanlyvcontainervoiterraform-capquyeniamchoviecsudung" id="quanlyvcontainervoiterraform-capquyeniamchoviecsudung"></a>
+### **Cấp quyền IAM cho việc sử dụng** <a href="#quanlyvcontainervoiterraform-capquyeniamchoviecsudung" id="quanlyvcontainervoiterraform-capquyeniamchoviecsudung"></a>
 
 Để có thể thực hiện quản lý vContainer với Terraform bạn cần tạo **Service account** từ Root account trên trang chủ **IAM** (xem hướng dẫn cách tạo Service account và sử dụng IAM [tại đây](../quan-ly-dinh-danh-va-truy-cap-iam-cho-vserver/)), trong trường hợp này lấy ví dụ cho việc bạn muốn tạo Kubernetes Cluster (K8S) với Terraform cần có các quyền (Policy) sau:
 
@@ -27,9 +27,9 @@ hoặc bạn có thể cấp quyền **vServerFullAccess** (nên có quyền **v
 
 ***
 
-### **Tạo thư mục chứa terraform file** **và tải example file từ VNG Cloud repo** <a href="#quanlyvcontainervoiterraform-taothumucchuaterraformfilevataiexamplefiletuvngcloudrepo" id="quanlyvcontainervoiterraform-taothumucchuaterraformfilevataiexamplefiletuvngcloudrepo"></a>
+### **Tạo thư mục chứa terraform file** **và tải example file từ GreenNode repo** <a href="#quanlyvcontainervoiterraform-taothumucchuaterraformfilevataiexamplefiletuvngcloudrepo" id="quanlyvcontainervoiterraform-taothumucchuaterraformfilevataiexamplefiletuvngcloudrepo"></a>
 
-Sau khi cấp quyền IAM cho account cần sử dụng Terraform, bạn cần tạo một thư mục chứa file Terraform để cài đặt các thông số trên đó, bạn có thể tải file Example từ VNG Cloud repo của chúng tôi tại [đây](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples)
+Sau khi cấp quyền IAM cho account cần sử dụng Terraform, bạn cần tạo một thư mục chứa file Terraform để cài đặt các thông số trên đó, bạn có thể tải file Example từ GreenNode repo của chúng tôi tại [đây](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples)
 
 ***
 
@@ -40,7 +40,7 @@ Sau khi cấp quyền IAM cho account cần sử dụng Terraform, bạn cần t
 
     **Client\_secret:** Lấy khi khởi tạo Service account tại trang chủ **IAM** hoặc có thể reset lại tại trang IAM/ Service accoun&#x74;**/ Tab Security credentials**
 
-<figure><img src="/broken/files/1M6kMti4rb2awFSu3mon" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 ```markup
 variable "client_id" {  
@@ -54,12 +54,10 @@ default = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59803481/image2023-6-8_16-29-29.png?version=1&#x26;modificationDate=1686293474000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-
-
 2. Kiểm tra lại thông tin file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/main.tf) _**(**&#x74;heo đường dẫn **examples/main.tf)**_**,** trường hợp này bạn cần xóa đi các dòng bên dưới:
 
 * _module "vserver" {source = "./modules/vng-cloud-vserver"_\
-  &#xNAN;_}_
+  \&#xNAN;_}_
 * _module "vlb" { source = "./modules/vng-cloud-vlb" }_
 
 _Chỉ để lại:_
@@ -166,7 +164,7 @@ default = "sub-5f101cba-7ce0-4084-8576-06b8dbfb298a" }
 
 <figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-*   **ssh\_key\_id**: chỉ định ssh key sẽ được inject vào vServer, bạn có thể lấy ở [{Tab SSH Keys}](https://hcm-3.console.vngcloud.vn/vserver/v-server/ssh-key), nếu chưa khởi tạo bất kì ssh key nào bạn có thể xem tại [{](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[T](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[rang tạo SSH key](../security/ssh-key-bo-khoa.md)[}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901): <br>
+*   **ssh\_key\_id**: chỉ định ssh key sẽ được inject vào vServer, bạn có thể lấy ở [{Tab SSH Keys}](https://hcm-3.console.vngcloud.vn/vserver/v-server/ssh-key), nếu chưa khởi tạo bất kì ssh key nào bạn có thể xem tại [{](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[T](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[rang tạo SSH key](../security/ssh-key-bo-khoa.md)[}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901):<br>
 
     <figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * **security\_group\_id\_list**: chỉ định danh sách security group id cần gắn vào vServer, bạn có thể lấy ở [{Tab Security Groups}](https://hcm-3.console.vngcloud.vn/vserver/network/sec-group), nếu cần tạo thêm security group bạn có thể xem tại [{Trang tạo Security Group}](../security/security-groups.md):
@@ -184,7 +182,7 @@ default = [    "secg-28e91c47-11b1-4cc1-8e24-dd174882708d"  ]
 
 <figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* Kiểm tra lại thông tin file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/modules/vng-cloud-k8s/main.tf) _(theo đường dẫn **terraform-provider-vngcloud/examples/modules/vng-cloud-k8s/main.tf**)_, trong file chúng tôi để sẵn một số câu lệnh: **Create K8S**, **Create Cluster Node Group, Change Cluster for SecGroup, Attach Load Balancer for K8s...,** trường hợp này để Tạo mới K8S bạn chỉ  cần để lại resource **Create K8S** theo hướng dẫn bên dưới:
+* Kiểm tra lại thông tin file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/modules/vng-cloud-k8s/main.tf) _(theo đường dẫn **terraform-provider-vngcloud/examples/modules/vng-cloud-k8s/main.tf**)_, trong file chúng tôi để sẵn một số câu lệnh: **Create K8S**, **Create Cluster Node Group, Change Cluster for SecGroup, Attach Load Balancer for K8s...,** trường hợp này để Tạo mới K8S bạn chỉ cần để lại resource **Create K8S** theo hướng dẫn bên dưới:
 
 ```
 data "vngcloud_vserver_volume_type_zone" "volume_type_zone" {  
@@ -237,7 +235,7 @@ ingress_controller = true
 
 ### **Khởi chạy Terraform command** <a href="#quanlyvcontainervoiterraform-khoichayterraformcommand" id="quanlyvcontainervoiterraform-khoichayterraformcommand"></a>
 
-1. Sau khi hoàn tất các thông tin trên, để terraform khởi tạo và tải VNG Cloud provider về đồng thời thiết lập các thông tin cần thiết chạy lệnh bên dưới, lưu ý khi chạy cần đứng tại thư mục terraform-provider-vngcloud/ [**examples**](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples)/:&#x20;
+1. Sau khi hoàn tất các thông tin trên, để terraform khởi tạo và tải GreenNode provider về đồng thời thiết lập các thông tin cần thiết chạy lệnh bên dưới, lưu ý khi chạy cần đứng tại thư mục terraform-provider-vngcloud/ [**examples**](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples)/:
 
 ```
 terraform init
@@ -279,7 +277,7 @@ If you ever set or change modules or backend configuration for Terraform,rerun t
 
 ***
 
-### **Kiểm tra Container vừa tạo trên giao diện VNG Cloud Portal** <a href="#quanlyvcontainervoiterraform-kiemtracontainervuataotrengiaodienvngcloudportal" id="quanlyvcontainervoiterraform-kiemtracontainervuataotrengiaodienvngcloudportal"></a>
+### **Kiểm tra Container vừa tạo trên giao diện GreenNode Portal** <a href="#quanlyvcontainervoiterraform-kiemtracontainervuataotrengiaodienvngcloudportal" id="quanlyvcontainervoiterraform-kiemtracontainervuataotrengiaodienvngcloudportal"></a>
 
 Sau khi khởi tạo thành công Terraform, bạn có thể lên Portal để xem thông tin Container vừa tạo:
 

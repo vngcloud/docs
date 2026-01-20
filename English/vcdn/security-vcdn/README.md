@@ -1,6 +1,6 @@
 # Security
 
-Security is an important aspect of Content Delivery Network (CDN) services to protect your content and ensure a safe browsing experience. VNG Cloud provides a full environment of features/elements to ensure providing customers with information security services as follows
+Security is an important aspect of Content Delivery Network (CDN) services to protect your content and ensure a safe browsing experience. GreenNode provides a full environment of features/elements to ensure providing customers with information security services as follows
 
 **CDN Features**
 

@@ -31,7 +31,7 @@ Follow the instructions below to perform a failover when necessary:
 * **Failover Error Case:** If the Failover process fails, you can:
   * **Restart Replication:** Restart the replication process from the beginning and try Failover again later.
   * **Failover again:** Select another Recovery Point and try Failover again.
-  * **Contact support:** If you cannot resolve the issue yourself, please contact VNG Cloud's support team for assistance.
+  * **Contact support:** If you cannot resolve the issue yourself, please contact GreenNode's support team for assistance.
 
 **Step 7: Check and change Recovery Point (if necessary)**
 

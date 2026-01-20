@@ -24,6 +24,6 @@ Trong quá trình chạy transfer job, có thể xảy ra lỗi tại một ho�
 {% hint style="info" %}
 **Chú ý:**
 
-* Khi thực hiện Retry, VNG Cloud DataSync sẽ chỉ transfer lại những file lỗi trước đó. Những file đã được di chuyển thành công trước đó sẽ không bị di chuyển lại.
+* Khi thực hiện Retry, GreenNode DataSync sẽ chỉ transfer lại những file lỗi trước đó. Những file đã được di chuyển thành công trước đó sẽ không bị di chuyển lại.
 * Bạn có thể thực hiện Retry nhiều lần tới khi nào tất cả file của bạn đã được transfer thành công. Tuy nhiên, nếu việc retry liên tục xảy ra lỗi, bạn nên kiểm tra lại cấu hình Transfer Job và nguồn dữ liệu.
 {% endhint %}

@@ -1,7 +1,7 @@
 ---
 description: >-
   vNetwork is a network service that provides a secure and isolated network
-  environment for your virtual machines (VMs) in the VNG Cloud platform.
+  environment for your virtual machines (VMs) in the GreenNode platform.
 ---
 
 # vNetwork
@@ -12,7 +12,7 @@ Private VMs can access the internet through NAT (Network Address Translation) se
 
 ### \[vNetwork] How can I modify NAT bandwidth?
 
-VNGCloud NAT supports bandwidths up to 10 Gbps. By default, networks are limited to 300 Mbps. You can upgrade your bandwidth package to scale according to your needs.
+GreenNode NAT supports bandwidths up to 10 Gbps. By default, networks are limited to 300 Mbps. You can upgrade your bandwidth package to scale according to your needs.
 
 ### \[vNetwork] Why can't I access the internet even after creating NAT successfully?
 

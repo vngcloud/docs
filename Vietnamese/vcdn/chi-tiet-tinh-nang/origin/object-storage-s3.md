@@ -2,13 +2,13 @@
 
 ## Tổng quan
 
-**S3 Origin** là một loại nguồn dữ liệu (origin) được sử dụng trong vCDN để phục vụ nội dung từ các dịch vụ lưu trữ đối tượng (object storage) như **Amazon S3** hoặc các giải pháp tương tự (ví dụ: vStorage của VNG Cloud). Khi sử dụng S3 Origin, nội dung được phân phối từ bucket S3 của bạn thông qua mạng lưới CDN, giúp cải thiện tốc độ truy cập và giảm tải cho hệ thống gốc.
+**S3 Origin** là một loại nguồn dữ liệu (origin) được sử dụng trong vCDN để phục vụ nội dung từ các dịch vụ lưu trữ đối tượng (object storage) như **Amazon S3** hoặc các giải pháp tương tự (ví dụ: vStorage của GreenNode). Khi sử dụng S3 Origin, nội dung được phân phối từ bucket S3 của bạn thông qua mạng lưới CDN, giúp cải thiện tốc độ truy cập và giảm tải cho hệ thống gốc.
 
 ## Chi tiết
 
-Hiện tại, vCDN đang hỗ trợ bạn kết nối trực tiếp đến origin là Object Storage thuộc chuẩn S3-compatible. Để thực hiện kết nối, bạn cần nhập các thông tin, bao gồm:&#x20;
+Hiện tại, vCDN đang hỗ trợ bạn kết nối trực tiếp đến origin là Object Storage thuộc chuẩn S3-compatible. Để thực hiện kết nối, bạn cần nhập các thông tin, bao gồm:
 
-<figure><img src="/broken/files/RkD9wOASV2WIOzgjnk1Y" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 * **Access key:** Access key được lấy từ hệ thống Object Storage của bạn.
 * **Secret key:** Secret key tương ứng với Access key đã nhập bên trên.

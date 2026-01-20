@@ -13,7 +13,7 @@ When using volume, the following information should be noted:
 * Boot volume cannot be removed from virtual server
 * Data volumes can be attached to or removed from different virtual servers.
 * You can select the QoS level for the volume according to the Volume Type information to limit bandwidth and IOPS.
-* You can choose the encryption function when creating a volume to protect data. VNG Cloud supports aes-xts-plan64 encryption (128 bits)
+* You can choose the encryption function when creating a volume to protect data. GreenNode supports aes-xts-plan64 encryption (128 bits)
 
 ***
 

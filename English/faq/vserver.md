@@ -42,15 +42,15 @@ Depending on the case, the server may need to be restarted to expand the capacit
 
 ### \[vServer] How do I extend the disk in Linux?&#x20;
 
-You can do as follows: Extend the disk on the VNG Cloud portal: [<mark style="color:blue;">Expand Volume with Linux operating system</mark>](../vserver/compute-hcm03-1a/volume/extend-volume.md)<mark style="color:blue;">.</mark>
+You can do as follows: Extend the disk on the GreenNode portal: [<mark style="color:blue;">Expand Volume with Linux operating system</mark>](../vserver/compute-hcm03-1a/volume/extend-volume.md)<mark style="color:blue;">.</mark>
 
 ### \[vServer] How do I extend the disk in Windows?&#x20;
 
-[<mark style="color:blue;">Expand Volume with the Windows operating system</mark>](../vserver/compute-hcm03-1a/volume/extend-volume.md). You can do as follows: [Extend the disk on the VNG Cloud portal](vserver.md#vserver-how-do-i-extend-the-disk-in-windows).
+[<mark style="color:blue;">Expand Volume with the Windows operating system</mark>](../vserver/compute-hcm03-1a/volume/extend-volume.md). You can do as follows: [Extend the disk on the GreenNode portal](vserver.md#vserver-how-do-i-extend-the-disk-in-windows).
 
 ### \[vServer] Do I need to reinstall the OS?&#x20;
 
-You can delete to create a new server. Currently, VNG Cloud does not support reinstalling a new OS on an already created Server.
+You can delete to create a new server. Currently, GreenNode does not support reinstalling a new OS on an already created Server.
 
 ### \[vServer] How do I access the server after creation?&#x20;
 
@@ -128,7 +128,7 @@ You can check the service SSH on the portal, whether the port is allowed on the 
 
 ### \[vServer] How do I set up Reverse DNS from IP 61.28.X.X to the company's mail?&#x20;
 
-Please create a ticket for VNG Cloud and provide the server IP information and the mail address that needs reverse DNS.
+Please create a ticket for GreenNode and provide the server IP information and the mail address that needs reverse DNS.
 
 ### \[vServer] Support for increasing quota?&#x20;
 
@@ -136,7 +136,7 @@ Please create a ticket for support to increase the quota and specify the amount 
 
 ### \[vServer] Support for viewing RAM, CPU, network?&#x20;
 
-Currently, VNG Cloud has a vMonitor service in beta version for free trial that can monitor these parameters. You can access it on the [<mark style="color:blue;">vServer homepage</mark>](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), and view RAM, CPU, Network information on the Server details page / Monitor tab or directly on the [<mark style="color:blue;">vMonitor homepage</mark>](https://vmonitor.console.vngcloud.vn/dashboard).
+Currently, GreenNode has a vMonitor service in beta version for free trial that can monitor these parameters. You can access it on the [<mark style="color:blue;">vServer homepage</mark>](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), and view RAM, CPU, Network information on the Server details page / Monitor tab or directly on the [<mark style="color:blue;">vMonitor homepage</mark>](https://vmonitor.console.vngcloud.vn/dashboard).
 
 ### \[vServer] How do I keep the old WANIP for the new server?&#x20;
 
@@ -287,7 +287,7 @@ Please log in to the console interface to change the password, then you can use 
 
 ### \[vServer] How do I split vServer into another portal account?&#x20;
 
-Currently, VNG Cloud does not support splitting servers into another portal.
+Currently, GreenNode does not support splitting servers into another portal.
 
 ### \[vServer] Why does it report unable to access the server if I mistakenly switch farms?&#x20;
 

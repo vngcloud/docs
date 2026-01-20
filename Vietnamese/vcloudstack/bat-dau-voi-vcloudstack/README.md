@@ -1,6 +1,6 @@
 # Bắt đầu với vCloudStack
 
-Sử dụng hướng dẫn này để bắt đầu với **vCloudStack**. Bạn sẽ biết các thành phần cơ bản và phạm vi quản trị vận hành mà dịch vụ vCloudStack của VNG Cloud cung cấp cho bạn, từ đó bạn sẽ hiểu và vận hành tốt hơn hệ thống của doanh nghiệp mình.
+Sử dụng hướng dẫn này để bắt đầu với **vCloudStack**. Bạn sẽ biết các thành phần cơ bản và phạm vi quản trị vận hành mà dịch vụ vCloudStack của GreenNode cung cấp cho bạn, từ đó bạn sẽ hiểu và vận hành tốt hơn hệ thống của doanh nghiệp mình.
 
 ## Cấu trúc hạ tầng <a href="#cau-truc-ha-tang" id="cau-truc-ha-tang"></a>
 
@@ -11,9 +11,9 @@ Như giới thiệu, vCloudStack cung cấp dịch vụ điện toán đám mây
 * Thiết bị mạng như **Firewalls** và bộ định tuyến **(Switches**);
 * Thiết bị để ảo hóa và lưu trữ như các **Compute Nodes/Storage Nodes/Backup Nodes**.
 
-Các thành phần mà vCloudStack sẽ trực tiếp vận hành và quản lý tại VNG Cloud, các thành phần gồm:
+Các thành phần mà vCloudStack sẽ trực tiếp vận hành và quản lý tại GreenNode, các thành phần gồm:
 
-* Giao diện (**Portal**) thao tác ảo hóa và vận hành máy ảo nội bộ, hoàn toàn nhất quán với giao diện chung của VNG Cloud;
+* Giao diện (**Portal**) thao tác ảo hóa và vận hành máy ảo nội bộ, hoàn toàn nhất quán với giao diện chung của GreenNode;
 * Bộ quản lý trung gian (**Middleware**);
 * Bộ xử lý và kiểm soát máy ảo (**Controller**).
 

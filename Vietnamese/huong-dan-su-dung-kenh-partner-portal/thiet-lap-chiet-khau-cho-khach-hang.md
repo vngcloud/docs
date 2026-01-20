@@ -1,7 +1,7 @@
 # Thiết lập chiết khấu cho khách hàng
 
-* Người dùng có thể thiết lập chiết khấu cho khách hàng nhằm quy định giá bán với từng khách hàng cụ thể. Bằng việc thiết lập giá bán này khi người dùng đại lý mua dịch vụ của VNG Cloud sẽ thấy được giá theo như đại lý đã thiết lập.
-* Trong trường hợp người dùng không thiết lập chiết khấu cho khách hàng của mình, khách hàng vào portal VNG Cloud mua dịch vụ sẽ thấy giá public.
+* Người dùng có thể thiết lập chiết khấu cho khách hàng nhằm quy định giá bán với từng khách hàng cụ thể. Bằng việc thiết lập giá bán này khi người dùng đại lý mua dịch vụ của GreenNode sẽ thấy được giá theo như đại lý đã thiết lập.
+* Trong trường hợp người dùng không thiết lập chiết khấu cho khách hàng của mình, khách hàng vào portal GreenNode mua dịch vụ sẽ thấy giá public.
 
 **Bước 1**: Chọn menu "**Tài khoản**” và chọn tài khoản khách hàng cần thiết lập chiết khấu và nhấn vào tên khách hàng để vào màn hình chi tiết thông tin khách hàng.
 
@@ -20,7 +20,7 @@ Người dùng sẽ nhận được thông báo thiết lập chiết khấu cho
 
 _**Lưu ý:**_
 
-_Người dùng phải cân nhắc khi thiết lập mức giảm giá cho khách hàng so với mức gía được mua từ VNG Cloud_&#x20;
+_Người dùng phải cân nhắc khi thiết lập mức giảm giá cho khách hàng so với mức gía được mua từ GreenNode_&#x20;
 
 Để xem được giảm giá hiện hành được áp dụng cũng như giảm giá đang chờ kích hoạt, người dùng vào menu “Tài khoản”, chọn tài khoản cần xem&#x20;
 

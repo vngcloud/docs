@@ -1,6 +1,6 @@
 # Mua Credit
 
-Để tiến hành nạp credit vào ví VNG Cloud Service, người dùng có thể:
+Để tiến hành nạp credit vào ví GreenNode Service, người dùng có thể:
 
 * Bước 1: Truy cập vào trang vConsole tại đây: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
 * Bước 2: Nhấn vào mục **Available credit / Thông tin số dư** trên **Header** để xem thống tin ví

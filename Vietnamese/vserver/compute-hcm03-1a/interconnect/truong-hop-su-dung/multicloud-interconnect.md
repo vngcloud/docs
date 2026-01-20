@@ -4,11 +4,11 @@ Multicloud Interconnect là một giải pháp mạng cho phép các doanh nghi�
 
 &#x20;**"Tối ưu hóa Quản lý Đám Mây Đa Nền Tảng"**
 
-_Khách hàng:_ Công ty A là một doanh nghiệp lớn với một hệ thống phức tạp, chạy ứng dụng và dịch vụ trên nhiều nền tảng đám mây khác nhau, bao gồm Amazon Web Services (AWS), VNG Cloud.
+_Khách hàng:_ Công ty A là một doanh nghiệp lớn với một hệ thống phức tạp, chạy ứng dụng và dịch vụ trên nhiều nền tảng đám mây khác nhau, bao gồm Amazon Web Services (AWS), GreenNode.
 
 _Vấn đề:_ Công ty A gặp khó khăn trong việc quản lý và tối ưu hóa hiệu suất của các ứng dụng và dịch vụ của họ trên các nền tảng đám mây này. Họ gặp phải các vấn đề như quản lý băng thông, bảo mật dữ liệu, và đảm bảo sự liên tục của dịch vụ.
 
-_Giải pháp:_ Công ty A quyết định triển khai một giải pháp Multicloud Interconnect của VNG Cloud để giải quyết các thách thức của họ. Họ lựa chọn một nhà cung cấp dịch vụ đám mây có kinh nghiệm trong việc cung cấp kết nối đám mây đa nền tảng.
+_Giải pháp:_ Công ty A quyết định triển khai một giải pháp Multicloud Interconnect của GreenNode để giải quyết các thách thức của họ. Họ lựa chọn một nhà cung cấp dịch vụ đám mây có kinh nghiệm trong việc cung cấp kết nối đám mây đa nền tảng.
 
 Với giải pháp Multicloud Interconnect, công ty A có thể:
 

@@ -1,6 +1,6 @@
 # Object storage (HCM04)
 
-VNGCloud introduces to you the new **HCM04** **Region** for vStorage services. The standout features of this region include:
+GreenNode introduces to you the new **HCM04** **Region** for vStorage services. The standout features of this region include:
 
 * **High performance**: The HCM04 Region is designed to meet the needs of processing large traffic volumes with a speed of 10,000 requests per second per IP, providing exceptional performance that optimizes the operation of your applications and services.
 * **Enhanced security:** The HCM04 Region offers encryption mechanisms such as SSE-S3 and SSE-C that ensure absolute safety for customer data.

@@ -11,7 +11,7 @@ The Master User will be granted the following privileges:
     * **Global Privileges:** ALTER ROUTINE, ALTER, CREATE ROUTINE, CREATE TEMPORARY TABLES, CREATE USER, CREATE VIEW, CREATE, DELETE, EVENT, EXECUTE, INDEX, INSERT, LOCK TABLES, PROCESS, REFERENCES, RELOAD, REPLICATION CLIENT, REPLICATION SLAVE, SELECT, SHOW DATABASES, SHOW VIEW, TRIGGER, UPDATE.
     * **Database Privileges:** Full Privileges.
 
-    **Note:** Database privileges exclude system databases such as `mysql`, `information_schema`, `performance_schema`, and `sys`. When creating a new database, the system will automatically grant all privileges to the Master User. If this is not done, please wait a moment or contact VNG Cloud Support.
+    **Note:** Database privileges exclude system databases such as `mysql`, `information_schema`, `performance_schema`, and `sys`. When creating a new database, the system will automatically grant all privileges to the Master User. If this is not done, please wait a moment or contact GreenNode Support.
 * **PostgreSQL:**
   * **Privileges:** `Createrole`, `CreateDB`, `Replication`.
 

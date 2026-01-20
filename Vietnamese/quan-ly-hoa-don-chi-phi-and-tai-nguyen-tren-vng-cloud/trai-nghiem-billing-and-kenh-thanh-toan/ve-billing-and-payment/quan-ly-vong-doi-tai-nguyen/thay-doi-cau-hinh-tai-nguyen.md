@@ -5,8 +5,8 @@ Sử dụng tài liệu này như là một hướng dẫn thay đổi cấu hì
 #### Tính năng thay đổi cấu hình tài nguyên áp dụng đối với: <a href="#thaydoicauhinhtainguyen-tinhnangthaydoicauhinhtainguyenapdungdoivoi" id="thaydoicauhinhtainguyen-tinhnangthaydoicauhinhtainguyenapdungdoivoi"></a>
 
 * **Đối tượng:** Người dùng trả trước và trả sau
-* **Nguồn tiền:** Ví VNG Cloud hoặc các nguồn khác (thực hiện qua cổng thanh toán)
-* **Tài nguyên:** Tất cả tài nguyên thuộc các sản phẩm VNG Cloud cho phép thay đổi cấu hình
+* **Nguồn tiền:** Ví GreenNode hoặc các nguồn khác (thực hiện qua cổng thanh toán)
+* **Tài nguyên:** Tất cả tài nguyên thuộc các sản phẩm GreenNode cho phép thay đổi cấu hình
 
 #### **Người dùng trả trước thay đổi cấu hình tài nguyên** <a href="#thaydoicauhinhtainguyen-nguoidungtratruocthaydoicauhinhtainguyen" id="thaydoicauhinhtainguyen-nguoidungtratruocthaydoicauhinhtainguyen"></a>
 

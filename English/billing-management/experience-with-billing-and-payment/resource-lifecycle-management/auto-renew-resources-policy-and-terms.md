@@ -6,7 +6,7 @@ Use this document to learn more about the auto-renewal feature. It will detail t
 
 * **Target:** Prepaid users
 * **Resources** : All resources are auto-renewable and are in use
-* **Funding source** : VNG Cloud Credit
+* **Funding source** : GreenNode Credit
 
 **2. Instructions to enable/disable the "Automatic renewal" feature**
 
@@ -43,7 +43,7 @@ _Note: Currently, services in vMonitor products do not support turning off autom
 
 Automatic resource renewal is **a system feature** that helps users' resource usage not be interrupted at the end of the resource period (users need to continue using it but forget to renew it on the system for some reason).
 
-**Terms applicable to the "Automatic renewal" feature on VNG Cloud are as follows:**
+**Terms applicable to the "Automatic renewal" feature on GreenNode are as follows:**
 
 * Send email notification of required resources **7 days in advance** , from the end of the resource. The purpose is for users to prepare enough credit balance.
 * Resources are **renewed by default for 1 month** from the end date.

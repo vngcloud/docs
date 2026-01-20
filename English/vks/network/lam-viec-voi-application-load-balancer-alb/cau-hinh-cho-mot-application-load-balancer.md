@@ -43,7 +43,7 @@ Use the annotations below when creating ingress to customize the Load Balancer t
 
 ## IngressClassName <a href="#configureforanapplicationloadbalancer-ingressclassname" id="configureforanapplicationloadbalancer-ingressclassname"></a>
 
-The Ingress installed by the VNGCloud LoadBalancer Controller will have the information IngressClassName = "vngcloud". You may not change this information.
+The Ingress installed by the GreenNode LoadBalancer Controller will have the information IngressClassName = "vngcloud". You may not change this information.
 
 ***
 

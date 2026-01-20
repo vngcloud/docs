@@ -42,7 +42,7 @@ ipconfig /renew
 
 Với hướng dẫn này sẽ giúp bạn cách tạo ra một DHCP Options set, hãy thực hiện những bước như sau:
 
-1. Đăng nhập vào VNG Cloud, chọn đến dịch vụ vServer;
+1. Đăng nhập vào GreenNode, chọn đến dịch vụ vServer;
 2. Tại màn hình vServer, chọn vùng (region) phù hợp;
 3. Trên thanh menu bên tay trái, chọn **DHCPs**;
 
@@ -56,12 +56,12 @@ Với hướng dẫn này sẽ giúp bạn cách tạo ra một DHCP Options set
 
 * **DHCP Option Set name**: Điền tên cho DHCP options set này;
 * **Description:** Điền mô tả cho DHCP options set này;
-* **DHCP Server IP:** Mặc định, VNG Cloud DNS Server được cung cấp tự động cho VPC
+* **DHCP Server IP:** Mặc định, GreenNode DNS Server được cung cấp tự động cho VPC
   * Chọn nút "**Set to Optimize**" để tùy chọn điền DNS Server IP;
-  * Lưu ý, nếu bạn không dùng DNS mặc định, có thể bạn sẽ truy cập thất bại vào các dịch vụ VNG Cloud.
+  * Lưu ý, nếu bạn không dùng DNS mặc định, có thể bạn sẽ truy cập thất bại vào các dịch vụ GreenNode.
 
 {% hint style="info" %}
-**DNS server IP mặc định (default) mà VNG cloud cung cấp:**
+**DNS server IP mặc định (default) mà GreenNode cung cấp:**
 
 * 10.166.12.196
 * 10.166.12.197
@@ -81,7 +81,7 @@ DNS Server IP cho phép **điền tối đa là 4 IP** (có thể điền thêm 
 
 Sau khi tạo được DHCP options set, cần thực hiện việc gán VPC vào, có hai cách thực hiện hiện việc gán VPC (Associate), xem các bước sau để thực hiện:
 
-1. Đăng nhập vào VNG Cloud, chọn đến dịch vụ vServer;
+1. Đăng nhập vào GreenNode, chọn đến dịch vụ vServer;
 2. Tại màn hình vServer, chọn vùng (region) phù hợp;
 3. Trên thanh menu bên tay trái, chọn **DHCPs**;
 4. Chọn một bộ DHCP đã tạo trước, để vào màn hình thông tin chi tiết;
@@ -105,7 +105,7 @@ Trong quá trình sử dụng DHCP options set, người dùng có thể xóa DH
 
 ### Bước 1: Gỡ tất cả các VPC của DHCP options set
 
-1. Đăng nhập vào VNG Cloud, chọn đến dịch vụ vServer;
+1. Đăng nhập vào GreenNode, chọn đến dịch vụ vServer;
 2. Tại màn hình vServer, chọn vùng (region) phù hợp;
 3. Trên thanh menu bên tay trái, chọn **DHCPs**;
 4. Chọn một bộ DHCP đã tạo trước và muốn xóa, để vào màn hình thông tin chi tiết;

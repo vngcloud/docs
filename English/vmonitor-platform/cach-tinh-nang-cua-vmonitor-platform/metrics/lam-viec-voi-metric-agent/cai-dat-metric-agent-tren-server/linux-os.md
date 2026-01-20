@@ -15,7 +15,7 @@ To push Metrics to vMonitor, you need to install the Metric Agent on your server
 To create a service account, visit [this link](https://hcm-3.console.vngcloud.vn/vmonitor).
 
 * Select **Create a Service Account**, enter a name for the Service Account, and click **Next Step** to assign permissions to the Service Account.
-* Find and select the policy: **vMonitorMetricPush**, then click **Create a Service Account**. This policy, created by VNG Cloud, contains the exact permissions needed to push metrics to the system.
+* Find and select the policy: **vMonitorMetricPush**, then click **Create a Service Account**. This policy, created by GreenNode, contains the exact permissions needed to push metrics to the system.
 * After successfully creating the Service Account, save the **Client\_ID** and **Secret\_Key** for the next step.
 
 2. **Replacing Client\_ID, Secret\_Key into the inline command and running on the server to install:**

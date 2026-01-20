@@ -1,10 +1,10 @@
 # vStorage là gì?
 
-vStorage - VNG Cloud Storage là một dịch vụ lưu trữ dựa trên kiến trúc Object Storage với mục tiêu xây dựng một giải pháp lưu trữ hiệu quả, an toàn, mở rộng dữ liệu hàng chục đến hàng trăm TB, không gây gián đoạn dịch vụ và đáp ứng nhu cầu truy suất dữ liệu nhanh (mili giây). Khách hàng thuộc mọi quy mô và ngành nghề có thể sử dụng vStorage để lưu trữ và bảo vệ dữ liệu cho nhiều trường hợp sử dụng, chẳng hạn như kho dữ liệu media, trang web, ứng dụng di động, ứng dụng doanh nghiệp, thiết bị IoT và dữ liệu phân tích. vStorage cung cấp các tính năng quản lý nâng cao để bạn có thể chủ động tối ưu giá thành cũng như hiệu năng, cách tổ chức dữ liệu cũng như thiết lập quyền truy cập theo yêu cầu của tổ chức đề ra.
+vStorage - GreenNode Storage là một dịch vụ lưu trữ dựa trên kiến trúc Object Storage với mục tiêu xây dựng một giải pháp lưu trữ hiệu quả, an toàn, mở rộng dữ liệu hàng chục đến hàng trăm TB, không gây gián đoạn dịch vụ và đáp ứng nhu cầu truy suất dữ liệu nhanh (mili giây). Khách hàng thuộc mọi quy mô và ngành nghề có thể sử dụng vStorage để lưu trữ và bảo vệ dữ liệu cho nhiều trường hợp sử dụng, chẳng hạn như kho dữ liệu media, trang web, ứng dụng di động, ứng dụng doanh nghiệp, thiết bị IoT và dữ liệu phân tích. vStorage cung cấp các tính năng quản lý nâng cao để bạn có thể chủ động tối ưu giá thành cũng như hiệu năng, cách tổ chức dữ liệu cũng như thiết lập quyền truy cập theo yêu cầu của tổ chức đề ra.
 
 vStorage cung cấp 3 lớp lưu trữ là Gold, Silver và Archive. Với lớp lưu trữ Gold, dữ liệu của bạn luôn sẵn sàng để sử dụng với khả năng đáp ứng việc truy xuất ở mức mili giây. Lớp Silver phù hợp cho các dữ liệu ít được truy cập nhưng bạn vẫn muốn dữ liệu luôn ở trạng thái sẵn sàng để dùng bất kỳ lúc nào với chi phí lưu trữ thấp. Cuối cùng là Archive, đây là lớp lưu trữ tiết kiệm nhất phù hợp cho các dữ liệu rất hiếm khi sử dụng nhưng cần phải lưu trữ như hồ sơ bệnh án, log giao dịch v...v...
 
-<figure><img src="/broken/files/uLNjjgf64GgUhdQxaqHr" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vstoragelagi.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -22,4 +22,4 @@ Chúng tôi cung cấp cho bạn các giải pháp hàng đầu bao gồm:
 * Đa dạng trong việc thích ứng với các công cụ phía người dùng: SDK S3 AWS, SDK Swift, các client tools dạng GUI, các client tools dạng CLI.
 * Đáp ứng khả năng mở rộng tới hàng Petabyte và phân tán dữ liệu theo từng vùng.
 * Phần quyền an toàn với vIAM.
-* Tích hợp với các ứng dụng điện toán đám mây khác trên nền tảng VNG Cloud như vCDN, vMonitor Platform,...
+* Tích hợp với các ứng dụng điện toán đám mây khác trên nền tảng GreenNode như vCDN, vMonitor Platform,...

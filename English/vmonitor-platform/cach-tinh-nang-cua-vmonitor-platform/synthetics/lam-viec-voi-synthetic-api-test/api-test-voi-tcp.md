@@ -28,7 +28,7 @@ The TCP tests API allows you to send TCP packets to servers running services wit
 <figure><img src="../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Location**
-  * Select the Location that will run TCP Tests to your hostname. TCP tests can be run from both Public Locations (managed by VNG Cloud) and Private Locations (installed and managed by customers) based on your needs for running tests from outside (internet) or inside the network. your. Public Locations managed by VNG Cloud currently has 2 locations: HCM and Hanoi.
+  * Select the Location that will run TCP Tests to your hostname. TCP tests can be run from both Public Locations (managed by GreenNode) and Private Locations (installed and managed by customers) based on your needs for running tests from outside (internet) or inside the network. your. Public Locations managed by GreenNode currently has 2 locations: HCM and Hanoi.
 
 <figure><img src="../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -1,6 +1,6 @@
 # Overview
 
-**vCDN** (**VNG Cloud Content Delivery Network**) is a content delivery network developed by **VNG Cloud**. With strategically positioned servers at various locations and equipped with high bandwidth, vCDN helps accelerate the speed of websites and mobile applications. This enhances user experience and increases customer satisfaction.
+**vCDN** (**GreenNode Content Delivery Network**) is a content delivery network developed by **GreenNode**. With strategically positioned servers at various locations and equipped with high bandwidth, vCDN helps accelerate the speed of websites and mobile applications. This enhances user experience and increases customer satisfaction.
 
 **Why use vCDN?**
 

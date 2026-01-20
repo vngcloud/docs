@@ -5,8 +5,8 @@ Use this document as a guide for deleting resources. The document will describe 
 **The feature of deleting resources applies to**
 
 * Target: Prepaid and postpaid users.
-* Money source: VNG Cloud Wallet (in case of refund).
-* Resources: All resources belonging to VNG Cloud products.
+* Money source: GreenNode Wallet (in case of refund).
+* Resources: All resources belonging to GreenNode products.
 
 ## Prepaid user deletes resources
 
@@ -24,7 +24,7 @@ Use this document as a guide for deleting resources. The document will describe 
 
 **Guide to calculating the refunded resource price**&#x20;
 
-Below is a guide to calculating the refunded price when deleting a Server resource, users can apply the formula to calculate similarly for other resources in the VNG Cloud Service system.&#x20;
+Below is a guide to calculating the refunded price when deleting a Server resource, users can apply the formula to calculate similarly for other resources in the GreenNode Service system.&#x20;
 
 _For example, the formula for calculating the refunded price when deleting a Server resource includes the following information:_
 

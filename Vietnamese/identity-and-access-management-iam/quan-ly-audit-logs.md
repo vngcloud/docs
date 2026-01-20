@@ -1,18 +1,18 @@
 # Quản lý Audit Logs
 
-Cloud Audit Logs là tính năng ghi lại tất cả các hoạt động quản trị và truy cập trên tài nguyên VNG Cloud của bạn. Audit Logs sẽ giúp bạn trả lời những câu hỏi: "**Ai đã làm gì, nơi nào và khi nào?**"  trên các tài nguyên VNG Cloud cùng với mức độ minh bạch như trên môi trường On-premise của bạn. Việc bật tính năng Audit Logs sẽ giúp bạn theo dõi, rà soát và đảm bảo bảo mật cho các tài nguyên trên VNG Cloud.
+Cloud Audit Logs là tính năng ghi lại tất cả các hoạt động quản trị và truy cập trên tài nguyên GreenNode của bạn. Audit Logs sẽ giúp bạn trả lời những câu hỏi: "**Ai đã làm gì, nơi nào và khi nào?**"  trên các tài nguyên GreenNode cùng với mức độ minh bạch như trên môi trường On-premise của bạn. Việc bật tính năng Audit Logs sẽ giúp bạn theo dõi, rà soát và đảm bảo bảo mật cho các tài nguyên trên GreenNode.
 
 #### **1. Các loại Audit Logs** <a href="#auditlogs-1.cacloaiauditlogs" id="auditlogs-1.cacloaiauditlogs"></a>
 
 Cloud Audit Logs cung cấp các loại Audit Logs như bên dưới đây, tuỳ vào các products hay services mà sẽ hỗ trợ loại audit logs nào:
 
-* **Admin Activity Audit Logs**: chứa tất cả các logs cho những hành động mà thay đổi tài nguyên (Create, Update, Delete) trên VNG Cloud. Ví dụ như là: những logs khi người dùng tạo vServer hay xoá security group. Gọi tắt là **ADMIN\_WRITE**
-* **Data Access Audit Logs** (coming soon): chứa tất cả các logs cho những hành động mà đọc thông tin cấu hình của tài nguyên, cũng như những hành động mà tạo, xoá, sửa và đọc dữ liệu của tài nguyên. Dữ liệu của tài nguyên là những dữ liệu của người dùng đưa lên trên VNG Cloud, ví dụ như là các object của vStorage. Cụ thể chia 3 loại như bên dưới:&#x20;
+* **Admin Activity Audit Logs**: chứa tất cả các logs cho những hành động mà thay đổi tài nguyên (Create, Update, Delete) trên GreenNode. Ví dụ như là: những logs khi người dùng tạo vServer hay xoá security group. Gọi tắt là **ADMIN\_WRITE**
+* **Data Access Audit Logs** (coming soon): chứa tất cả các logs cho những hành động mà đọc thông tin cấu hình của tài nguyên, cũng như những hành động mà tạo, xoá, sửa và đọc dữ liệu của tài nguyên. Dữ liệu của tài nguyên là những dữ liệu của người dùng đưa lên trên GreenNode, ví dụ như là các object của vStorage. Cụ thể chia 3 loại như bên dưới:&#x20;
   * **ADMIN\_READ**: hành động đọc thông tin cấu hình của tài nguyên. Ví dụ như là: liệt kê danh sách vServer hay xem chi tiết một vServer
   * **DATA\_WRITE**: hành động tạo, xoá, sửa dữ liệu của tài nguyên. Ví dụ như là: tải object lên vStorage hay là xoá object trên vStorage
   * **DATA\_READ**: hành động đọc dữ liệu của tài nguyên. Ví dụ như là: liệt kê danh sách objects của vStorage
-* **System Event Audit Logs**: chứa tất cả các logs cho những hành động mà thay đổi tài nguyên trên VNG Cloud; tuy nhiên nó là những hành động mà được tạo ra bởi VNG Cloud systems, mà không phải được thực hiện trực tiếp từ người dùng. Ví dụ những dòng logs khi VNG Cloud systems tự động mở rộng (autoscale) node group của vContainer, hay những hành động tự động tạo bản daily backup cho vDB. Gọi tắt là **SYSTEM\_EVENT**
-* **Policy Denied Audit Logs** (coming soon): chứa tất cả các logs khi mà VNG Cloud products/services từ chối truy cập của IAM user account hay service accounts bởi vì vi phạm các Policy. Gọi tắt là **POLICY\_DENIED**
+* **System Event Audit Logs**: chứa tất cả các logs cho những hành động mà thay đổi tài nguyên trên GreenNode; tuy nhiên nó là những hành động mà được tạo ra bởi GreenNode systems, mà không phải được thực hiện trực tiếp từ người dùng. Ví dụ những dòng logs khi GreenNode systems tự động mở rộng (autoscale) node group của vContainer, hay những hành động tự động tạo bản daily backup cho vDB. Gọi tắt là **SYSTEM\_EVENT**
+* **Policy Denied Audit Logs** (coming soon): chứa tất cả các logs khi mà GreenNode products/services từ chối truy cập của IAM user account hay service accounts bởi vì vi phạm các Policy. Gọi tắt là **POLICY\_DENIED**
 
 #### **2. Danh sách các Products/Services hỗ trợ các loại Audit Logs** <a href="#auditlogs-2.danhsachcacproducts-serviceshotrocacloaiauditlogs" id="auditlogs-2.danhsachcacproducts-serviceshotrocacloaiauditlogs"></a>
 
@@ -30,7 +30,7 @@ N/A : không hỗ trợ loại audit logs này
 
 #### **3. Kích hoạt Audit Logs** <a href="#auditlogs-3.kichhoatauditlogs" id="auditlogs-3.kichhoatauditlogs"></a>
 
-Mặc định VNG Cloud sẽ không bật sẵn tính năng Audit Logs, khách hàng cần thực hiện các bước dưới đây để kích hoạt:
+Mặc định GreenNode sẽ không bật sẵn tính năng Audit Logs, khách hàng cần thực hiện các bước dưới đây để kích hoạt:
 
 1. Truy cập vào trang Audit Logs của IAM Portal: [https://iam.console.vngcloud.vn/audit-logs](https://iam.console.vngcloud.vn/audit-logs)
 2. Chọn **Set default configuration,** popup thiết lập sẽ hiển thị cho phép bạn chọn bật ADMIN\_WRITE hay SYSTEM\_EVENT

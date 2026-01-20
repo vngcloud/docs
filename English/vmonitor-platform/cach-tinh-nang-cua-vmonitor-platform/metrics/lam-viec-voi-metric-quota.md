@@ -2,7 +2,7 @@
 
 ### Overview
 
-A Metric quota is a term on the vMonitor Platform that represents a monitoring package of Metrics with a specific number of Resources and storage duration that you purchase on VNG Cloud. At any given time, you can own a Metric quota and use it to analyze data from your system.
+A Metric quota is a term on the vMonitor Platform that represents a monitoring package of Metrics with a specific number of Resources and storage duration that you purchase on GreenNode. At any given time, you can own a Metric quota and use it to analyze data from your system.
 
 ***
 
@@ -24,7 +24,7 @@ To initialize a Metric quota, follow the steps below:
 
 <mark style="color:red;">At any given time, you can only own one metric quota package. If this package does not meet your needs, please follow our instructions to</mark> <mark style="color:red;"></mark><mark style="color:red;">**extend the Metric quota**</mark> <mark style="color:red;"></mark><mark style="color:red;">or</mark> <mark style="color:red;"></mark><mark style="color:red;">**adjust the Metric quota limits**</mark><mark style="color:red;">.</mark>&#x20;
 
-The cost calculation for each metric quota package is publicly available on the VNG Cloud homepage. Please refer to [Pricing](../../cach-tinh-phi.md) for more details.
+The cost calculation for each metric quota package is publicly available on the GreenNode homepage. Please refer to [Pricing](../../cach-tinh-phi.md) for more details.
 
 ***
 
@@ -51,7 +51,7 @@ To renew a Metric quota, you can:
 6. Choose the desired renewal period in the **Period** column. When you select the period, the system will automatically calculate the effective time of the new usage cycle and the total amount you need to pay for the renewal of the **Metric quota** package.
 7. Select **Continue** and proceed with the **checkout** steps. After successful **payment**, the **Metric quota** will be renewed.
 
-The cost calculation for renewing each Metric quota package is publicly available on the VNG Cloud homepage. Please refer to [Pricing ](../../cach-tinh-phi.md)for more details.
+The cost calculation for renewing each Metric quota package is publicly available on the GreenNode homepage. Please refer to [Pricing ](../../cach-tinh-phi.md)for more details.
 
 ***
 
@@ -67,7 +67,7 @@ To **increase the limit** of a **Metric quota**, you can:
 6. Select **Resize**.
 7. Select **Continue** and proceed with the **checkout** steps. After successful payment, the **Metric quota** will have its limit increased.
 
-The cost calculation for increasing the limit of each Metric quota package is publicly available on the VNG Cloud homepage. Please refer to [Pricing ](../../cach-tinh-phi.md)for more details.
+The cost calculation for increasing the limit of each Metric quota package is publicly available on the GreenNode homepage. Please refer to [Pricing ](../../cach-tinh-phi.md)for more details.
 
 ***
 

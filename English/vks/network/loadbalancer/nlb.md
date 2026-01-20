@@ -2,7 +2,7 @@
 
 ## Integrate with NLB
 
-To integrate a NLB with a Kubernetes cluster, you can use a Service with type [LoadBalancer](loadbalancerhttps://www.airplane.dev/blog/kubernetes-load-balancer) . When you create such a Service, VNGCloud LoadBalancer Controller will automatically create an NLB to forward traffic to pods on your [node](nhttps://www.airplane.dev/blog/kubernetes-load-balancer) . You can also use annotations to customize NLB properties, such as port, protocol,...
+To integrate a NLB with a Kubernetes cluster, you can use a Service with type [LoadBalancer](loadbalancerhttps://www.airplane.dev/blog/kubernetes-load-balancer) . When you create such a Service, GreenNode LoadBalancer Controller will automatically create an NLB to forward traffic to pods on your [node](nhttps://www.airplane.dev/blog/kubernetes-load-balancer) . You can also use annotations to customize NLB properties, such as port, protocol,...
 
 ### Deploy a NLB
 

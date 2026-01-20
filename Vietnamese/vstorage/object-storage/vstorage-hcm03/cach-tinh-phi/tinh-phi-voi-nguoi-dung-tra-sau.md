@@ -30,4 +30,4 @@ Bạn có thể xem báo cáo sử dụng tài nguyên tại: [https://dashboard
 
 Công thức trên ví dụ trong trường hợp Đơn vị tính trên 30 ngày, (30\*24\*60) quy đổi ra phút.
 
-Tương tự khi bạn thực hiện gia hạn project, tăng/ giảm kích thước gói lưu trữ chúng tôi cũng sẽ tính giá tiền bạn cần thanh toán thêm hoặc giá tiền mà bạn có thể được hoàn trả lại. Chi tiết tham khảo tại [Quản lý hóa đơn, chi phí & tài nguyên trên VNG Cloud](../../../../quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/).
+Tương tự khi bạn thực hiện gia hạn project, tăng/ giảm kích thước gói lưu trữ chúng tôi cũng sẽ tính giá tiền bạn cần thanh toán thêm hoặc giá tiền mà bạn có thể được hoàn trả lại. Chi tiết tham khảo tại [Quản lý hóa đơn, chi phí & tài nguyên trên GreenNode](../../../../quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/).

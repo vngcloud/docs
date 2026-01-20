@@ -2,7 +2,7 @@
 
 ### Tổng quan
 
-Một Log project là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát Logs với dung lượng và thời gian cụ thể mà bạn thực hiện mua trên VNG Cloud. Tại một thời điểm bạn có thể sở hữu một hoặc nhiều Log project song song và sử dụng chúng như một cách tổ chức tài nguyên cho các nhóm hay phòng ban sử dụng với mục đích khác nhau.
+Một Log project là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát Logs với dung lượng và thời gian cụ thể mà bạn thực hiện mua trên GreenNode. Tại một thời điểm bạn có thể sở hữu một hoặc nhiều Log project song song và sử dụng chúng như một cách tổ chức tài nguyên cho các nhóm hay phòng ban sử dụng với mục đích khác nhau.
 
 ***
 
@@ -21,24 +21,24 @@ Một Log project là một thuật ngữ trên vMonitor Platform thể hiện m
 9. Chọn **Period** nếu bạn là người dùng trả trước. Chúng tôi cung cấp các chu kỳ trả trước bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng.
 10. Chọn **Continue** và tiếp thực thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Log project** sẽ được khởi tạo.
 
-Cách tính chi phí cho mỗi gói log project được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+Cách tính chi phí cho mỗi gói log project được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 
 ### Xem thông tin Log project quota
 
-Sau khi bạn khởi tạo Log project, bạn có thể xem thông tin gói Log project mà bạn vừa thực hiện khởi tạo bằng cách:&#x20;
+Sau khi bạn khởi tạo Log project, bạn có thể xem thông tin gói Log project mà bạn vừa thực hiện khởi tạo bằng cách:
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục **Log**.
-4. Hệ thống hiển thị thông tin gói **Log project** đã được khởi tạo và **usage** thực tế bạn đang sử dụng của gói **Log project** đó. Bạn có thể thực hiện Gia hạn trong vòng 7 ngày trước ngày hết hạn của gói Log project hoặc Tăng hạn mức gói lên cao hơn bằng cách chọn **Gia hạn** hoặc **Tăng hạn mức.**&#x20;
+4. Hệ thống hiển thị thông tin gói **Log project** đã được khởi tạo và **usage** thực tế bạn đang sử dụng của gói **Log project** đó. Bạn có thể thực hiện Gia hạn trong vòng 7 ngày trước ngày hết hạn của gói Log project hoặc Tăng hạn mức gói lên cao hơn bằng cách chọn **Gia hạn** hoặc **Tăng hạn mức.**
 
 ***
 
 ### Gia hạn Log project quota
 
-Để **gia hạn** một **Log project**, bạn có thể:&#x20;
+Để **gia hạn** một **Log project**, bạn có thể:
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
@@ -48,31 +48,31 @@ Sau khi bạn khởi tạo Log project, bạn có thể xem thông tin gói Log 
 6. Lựa chọn thời gian mong muốn gia hạn tại cột Period. Khi bạn thực hiện chọn period, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ sử dụng mới và tổng số tiền bạn cần chi trả cho việc gia hạn **gói Log project**.
 7. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Log project** sẽ được gia hạn.
 
-Cách tính chi phí gia hạn cho mỗi gói Log project được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+Cách tính chi phí gia hạn cho mỗi gói Log project được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 
 ### Tăng giảm hạn mức Log project quota
 
-Để **tăng hạn mức** một **Log project**, bạn có thể:&#x20;
+Để **tăng hạn mức** một **Log project**, bạn có thể:
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục Log.
-4. Tại gói Log project đang sử dụng, chọn biểu tượng <img src="/broken/files/7DDKBHPFgidSp962nozN" alt="" data-size="line">sau đó chọn **Resize**.
-5. Chọn **Log project class** mới mà bạn muốn nâng cấp. Nếu gói log project của bạn đang ở class Basic thì bạn có thể nâng cấp nó lên class Pro. Nếu gói log project của bạn đang ở gói Pro thì bạn có thể nâng cấp nó lên cấu hình cao hơn trong cùng class.&#x20;
+4. Tại gói Log project đang sử dụng, chọn biểu tượng <img src="../../../.gitbook/assets/image (454).png" alt="" data-size="line">sau đó chọn **Resize**.
+5. Chọn **Log project class** mới mà bạn muốn nâng cấp. Nếu gói log project của bạn đang ở class Basic thì bạn có thể nâng cấp nó lên class Pro. Nếu gói log project của bạn đang ở gói Pro thì bạn có thể nâng cấp nó lên cấu hình cao hơn trong cùng class.
 6. Chọn **Resize.**
 7. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Log project** sẽ được tăng hạn mức.
 
-Cách tính chi phí tăng hạn mức cho mỗi gói Log project được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
+Cách tính chi phí tăng hạn mức cho mỗi gói Log project được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 ***
 
 ### Xóa Log project quota
 
-Nếu bạn không có nhu cầu sử dụng gói Log project đã tạo, chúng tôi khuyến khích bạn nên xóa gói Log project này để tối ưu chi phí.&#x20;
+Nếu bạn không có nhu cầu sử dụng gói Log project đã tạo, chúng tôi khuyến khích bạn nên xóa gói Log project này để tối ưu chi phí.
 
-Để **xóa** một **Log project**, bạn có thể:&#x20;
+Để **xóa** một **Log project**, bạn có thể:
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
@@ -80,6 +80,6 @@ Nếu bạn không có nhu cầu sử dụng gói Log project đã tạo, chúng
 4. Tại gói Log project đang sử dụng, chọn **Delete**.
 5. Tại màn hình xác nhận xóa Log project, chọn **Delete**.
 
-Sau khi bạn bạn thực hiện xóa gói Log project thì gói Log project bị xóa sẽ biến mất khỏi danh sách gói Log project của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](../../cach-tinh-phi.md).&#x20;
+Sau khi bạn bạn thực hiện xóa gói Log project thì gói Log project bị xóa sẽ biến mất khỏi danh sách gói Log project của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](../../cach-tinh-phi.md).
 
-<mark style="color:red;">Do hành động xóa Log project tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.</mark>&#x20;
+<mark style="color:red;">Do hành động xóa Log project tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.</mark>

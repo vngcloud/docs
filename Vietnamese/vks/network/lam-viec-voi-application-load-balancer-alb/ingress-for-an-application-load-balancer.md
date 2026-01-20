@@ -1,13 +1,13 @@
 # Ingress for an Application Load Balancer
 
-Để cho tài nguyên Ingress (Ingress Yaml file) có thể hoạt động được, cluster phải có 1 **VNGCloud LoadBalancer Controller** đang chạy. Không giống các loại Controller khác được chạy như là 1 phần của **kube-controller-manager**. **VNGCloud LoadBalancer Controller** không được tự động khởi động cùng với cluster. Hãy làm theo hướng dẫn sau đây để cài đặt **VNGCloud LoadBalancer Controller** cũng như làm việc với Ingress Yaml file.
+Để cho tài nguyên Ingress (Ingress Yaml file) có thể hoạt động được, cluster phải có 1 **GreenNode LoadBalancer Controller** đang chạy. Không giống các loại Controller khác được chạy như là 1 phần của **kube-controller-manager**. **GreenNode LoadBalancer Controller** không được tự động khởi động cùng với cluster. Hãy làm theo hướng dẫn sau đây để cài đặt **GreenNode LoadBalancer Controller** cũng như làm việc với Ingress Yaml file.
 
 ### Chuẩn bị <a href="#ingressforanapplicationloadbalancer-chuanbi" id="ingressforanapplicationloadbalancer-chuanbi"></a>
 
-* Tạo một Kubernetes cluster trên VNGCloud, hoặc sử dụng một cluster đã có. Lưu ý: đảm bảo bạn đã tải xuống cluster configuration file sau khi cluster được khởi tạo thành công và truy cập vào cluster của bạn.
+* Tạo một Kubernetes cluster trên GreenNode, hoặc sử dụng một cluster đã có. Lưu ý: đảm bảo bạn đã tải xuống cluster configuration file sau khi cluster được khởi tạo thành công và truy cập vào cluster của bạn.
 * Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **vLBFullAccess**, **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://iam.console.vngcloud.vn/service-accounts) và thực hiện theo các bước sau:
   * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
-  * Tìm và chọn **Policy:** **vLBFullAccess và Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do VNG Cloud tạo ra, bạn không thể xóa các policy này.
+  * Tìm và chọn **Policy:** **vLBFullAccess và Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do GreenNode tạo ra, bạn không thể xóa các policy này.
   * Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
 * Thay đổi thông tin **Security Group** để cho phép các ALB có thể kết nối được tới các Node trong Node Group của bạn. Bạn cần thay đổi chúng trên vServer Portal khi:
   * Security Group được gắn vào **Cluster/Node Group** của bạn **khác với thông số mặc định** mà chúng tôi đã tạo.
@@ -15,30 +15,29 @@
 
 ***
 
-### Khởi tạo Service Account và cài đặt VNGCloud LoadBalancer Controller <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
+### Khởi tạo Service Account và cài đặt GreenNode LoadBalancer Controller <a href="#exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller" id="exposemotservicethongquavlblayer7-khoitaoserviceaccountvacaidatvngcloudingresscontroller"></a>
 
 {% hint style="info" %}
 Chú ý:
 
-Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa bật option **Enable vLB Native Integration Driver**, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt **VNGCloud LoadBalancer Controller** theo hướng dẫn bên dưới. Nếu bạn đã bật option **Enable vLB Native Integration Driver**, thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt **VNGCloud LoadBalancer Controller** và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
+Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, nếu bạn chưa bật option **Enable vLB Native Integration Driver**, mặc định chúng tôi sẽ không cài sẵn plugin này vào Cluster của bạn. Bạn cần tự thực hiện Khởi tạo Service Account và cài đặt **GreenNode LoadBalancer Controller** theo hướng dẫn bên dưới. Nếu bạn đã bật option **Enable vLB Native Integration Driver**, thì chúng tôi đã cài sẵn plugin này vào Cluster của bạn, hãy bỏ qua bước Khởi tạo Service Account, cài đặt **GreenNode LoadBalancer Controller** và tiếp tục thực hiện theo hướng dẫn kể từ Deploy một Workload.
 {% endhint %}
 
 <details>
 
-<summary>Khởi tạo Service Account và cài đặt VNGCloud LoadBalancer Controller</summary>
+<summary>Khởi tạo Service Account và cài đặt GreenNode LoadBalancer Controller</summary>
 
 **Khởi tạo Service Account**
 
 * Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **vLBFullAccess**, **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://iam.console.vngcloud.vn/service-accounts) và thực hiện theo các bước sau:
   * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
-  * Tìm và chọn **Policy:** **vLBFullAccess và Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do VNG Cloud tạo ra, bạn không thể xóa các policy này.
+  * Tìm và chọn **Policy:** **vLBFullAccess và Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do GreenNode tạo ra, bạn không thể xóa các policy này.
   * Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
 
-**Cài đặt VNGCloud LoadBalancer Controller**
+**Cài đặt GreenNode LoadBalancer Controller**
 
 * Cài đặt Helm phiên bản từ 3.0 trở lên. Tham khảo tại [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) để biết cách cài đặt.
-
-- Thay thế thông tin ClientID, Client Secret và ClusterID của cụm K8S của bạn và tiếp tục chạy:
+* Thay thế thông tin ClientID, Client Secret và ClusterID của cụm K8S của bạn và tiếp tục chạy:
 
 ```bash
 helm install vngcloud-load-balancer-controller oci://vcr.vngcloud.vn/81-vks-public/vks-helm-charts/vngcloud-load-balancer-controller \
@@ -183,7 +182,7 @@ Sau khi bạn đã thực hiện triển khai Ingress , Chúng tôi sẽ tự đ
 
 Ví dụ:
 
-<figure><img src="/broken/files/VmPeEh5ibZuW5sR39hfg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vks_portal_l7.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Chú ý:
@@ -392,4 +391,4 @@ Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao 
 
 Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.129/](http://180.93.181.129/)
 
-<figure><img src="/broken/files/6uVi1VQ9LkTiSOt4WBF8" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vks_nginx_l7.png" alt=""><figcaption></figcaption></figure>

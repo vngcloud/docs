@@ -1,6 +1,6 @@
 # Làm việc với vLB-Metric
 
-Khi bạn tạo các vLB, hệ thống sẽ tự động thu thập các Metric và hiển thị ở tab Infrastructure List/vLB, giúp bạn có thể theo dõi được các vLB trên VNG Cloud hoàn toàn miễn phí
+Khi bạn tạo các vLB, hệ thống sẽ tự động thu thập các Metric và hiển thị ở tab Infrastructure List/vLB, giúp bạn có thể theo dõi được các vLB trên GreenNode hoàn toàn miễn phí
 
 <figure><img src="../../../../.gitbook/assets/image (148).png" alt=""><figcaption></figcaption></figure>
 

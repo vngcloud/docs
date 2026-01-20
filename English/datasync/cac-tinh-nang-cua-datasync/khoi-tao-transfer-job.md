@@ -1,6 +1,6 @@
 # Create a Transfer Job
 
-If you have not used any VNG Cloud services (have not registered an account with VNG Cloud), you need to register an account with VNG Cloud Service here to access VNGCloud DataSync. To start using the service, you need to create a transfer job. In DataSync, a transfer job is a task configured to transfer data between a source and a destination. At a time you can own one or more Transfer jobs in parallel and use them for different purposes.
+If you have not used any GreenNode services (have not registered an account with GreenNode), you need to register an account with GreenNode Service here to access GreenNode DataSync. To start using the service, you need to create a transfer job. In DataSync, a transfer job is a task configured to transfer data between a source and a destination. At a time you can own one or more Transfer jobs in parallel and use them for different purposes.
 
 **Getting Started with DataSync, you can follow these steps below:**
 
@@ -12,7 +12,7 @@ If you have not used any VNG Cloud services (have not registered an account with
 
 1. Enter the **Job name** . Job name is the only one on an SSO User Account and the job name can be from a minimum of 5 to 50 characters long.
 2. Enter the **Job description** : brief description of the job.
-3. Select the **Source Type** you want to transfer data to. VNG Cloud DataSync currently supports 4 source types:
+3. Select the **Source Type** you want to transfer data to. GreenNode DataSync currently supports 4 source types:
    * Amazon S3
    * Google Cloud Storage
    * S3 compatible object storage

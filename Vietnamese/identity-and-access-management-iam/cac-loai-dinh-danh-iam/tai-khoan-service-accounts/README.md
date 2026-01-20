@@ -1,6 +1,6 @@
 # Tài khoản Service accounts
 
-Service Account là một danh tính mà bạn có thể tạo trong tài khoản Root User của bạn và có các quyền cụ thể. Nó có một số điểm tương đồng với IAM User Account. Để làm rõ hơn, Service Account và IAM User Account đều là các danh tính có chính sách quyền xác định những gì danh tính đó có thể và không thể làm với tài nguyên VNG Cloud. Tuy nhiên,Service Account được sử dụng bởi một ứng dụng hoặc máy móc, không phải là một người, để thực hiện các cuộc gọi API được ủy quyền và truy cập vào các tài nguyên được chỉ định.
+Service Account là một danh tính mà bạn có thể tạo trong tài khoản Root User của bạn và có các quyền cụ thể. Nó có một số điểm tương đồng với IAM User Account. Để làm rõ hơn, Service Account và IAM User Account đều là các danh tính có chính sách quyền xác định những gì danh tính đó có thể và không thể làm với tài nguyên GreenNode. Tuy nhiên,Service Account được sử dụng bởi một ứng dụng hoặc máy móc, không phải là một người, để thực hiện các cuộc gọi API được ủy quyền và truy cập vào các tài nguyên được chỉ định.
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59806688/Identities-Service%20Account.drawio%20(1).png?version=1&#x26;modificationDate=1691474588000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 

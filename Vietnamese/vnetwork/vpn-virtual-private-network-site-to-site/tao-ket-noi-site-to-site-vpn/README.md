@@ -10,7 +10,7 @@ description: >-
 
 ## **Bước 1:**  Truy cập trang khởi tạo VPN từ vNetwork Dashboard
 
-* Truy cập thành công vào VNG Cloud, tại màn hình Console chọn đến dịch vụ vNetwork.
+* Truy cập thành công vào GreenNode, tại màn hình Console chọn đến dịch vụ vNetwork.
 * Tại thanh menu bên trái của giao diện vNetwork, chọn mục VPN Site-to-Site.
 * Tại màn hình danh sách này, nhấn chọn "<mark style="color:blue;">**Tạo mới kết nối VPN**</mark>".
 
@@ -23,7 +23,7 @@ description: >-
 * <mark style="color:blue;">**Tên VPN**</mark>: Điền tên của Cross Connect được tạo.
 * <mark style="color:blue;">**Chọn gói dịch vụ VPN**</mark>: Chọn gói dịch vụ VPN phù hợp với nhu cầu sử dụng.
 * <mark style="color:blue;">**Cấu hình VPN:**</mark> Điền các thông tin cấu hình:
-  * **VPC** (Local Private CIDR): Network Local Private CIDR của VPN (VNGCloud site) và thông tin này sẽ được dùng để cấu hình tại remote VPN để allow các gói tin, và tập tin đến từ VNGCloud VPN. Tại trường này, hãy chọn VPC đã tạo từ trước.
+  * **VPC** (Local Private CIDR): Network Local Private CIDR của VPN (GreenNode site) và thông tin này sẽ được dùng để cấu hình tại remote VPN để allow các gói tin, và tập tin đến từ GreenNode VPN. Tại trường này, hãy chọn VPC đã tạo từ trước.
   * **Subnet**: Chọn subnet nằm trong VPC được chọn. Sau khi VPN tạo xong, sẽ cấp một IP private cho VPN nằm trong subnet này, mục đích làm Private Gateway IP. IP dùng cho việc thêm Route Rule để điều hướng traffic đến remote VPN LAN.
 
 ### <mark style="color:blue;">**Cấu hình Default Site và Tunnel**</mark>
@@ -32,7 +32,7 @@ Mặc định khi khởi tạo VPN Site-to-Site hệ thống yêu cầu tạo m�
 
 * **Remote Public Gateway IP**: Điền thông tin Địa chỉ IP WAN của remote VPN Server.
 * **Remote Private CIDR**:  Điền Dải địa chỉ IP LAN của server OnPremise pfsense.
-* Tùy chọn **Pre-shared Key**: Là mật khẩu, keys mà VPN VNGCloud và Remote VPN OnPremise(Ví dụ: PFsense) sẽ dùng để auth cho nhau (Pre-shared Key – PSK phải giống nhau trên cả 2 bên). _Nếu không tích chọn_  _**"Used Your Pre-shared Key"** hệ thống sẽ tự sinh ra PSK_
+* Tùy chọn **Pre-shared Key**: Là mật khẩu, keys mà VPN GreenNode và Remote VPN OnPremise(Ví dụ: PFsense) sẽ dùng để auth cho nhau (Pre-shared Key – PSK phải giống nhau trên cả 2 bên). _Nếu không tích chọn_  _**"Used Your Pre-shared Key"** hệ thống sẽ tự sinh ra PSK_
 
 <figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>VPN Basic Configuration</p></figcaption></figure>
 

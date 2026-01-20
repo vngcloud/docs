@@ -14,7 +14,7 @@ Logs are an important element of cybersecurity. When done properly, logging can 
 
 #### **Monitoring vStorage through vStorage logs on the vMonitor Platform** <a href="#monitoringvstoragethroughlogs-monitoringvstoragethroughvstoragelogsonthevmonitorplatform" id="monitoringvstoragethroughlogs-monitoringvstoragethroughvstoragelogsonthevmonitorplatform"></a>
 
-Monitoring vStorage through logs is easy when you use the vMonitor Platform. We have transferred logs from vStorage to vMonitor Platform regularly every 5 minutes. Rest assured that vMonitor Platform is also a product of the VNG Cloud ecosystem. You can use vMonitor Platform to configure monitoring features based on vStorage logs. Of course, to be able to monitor, you need to purchase a log quota package for the vMonitor Platform service. For details, please refer to vMonitor Platform.
+Monitoring vStorage through logs is easy when you use the vMonitor Platform. We have transferred logs from vStorage to vMonitor Platform regularly every 5 minutes. Rest assured that vMonitor Platform is also a product of the GreenNode ecosystem. You can use vMonitor Platform to configure monitoring features based on vStorage logs. Of course, to be able to monitor, you need to purchase a log quota package for the vMonitor Platform service. For details, please refer to vMonitor Platform.
 
 The log content pushed to the system includes the following information:
 

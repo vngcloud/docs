@@ -30,4 +30,4 @@ Resource usage information includes:
 * Total cost of use in the month: Total cost before tax + Tax amount - Coupon value
 * The above formula is an example in the case of Unit calculated on 30 days, (30 \* 24 \* 60) converted to minutes.
 
-**Similarly, when you renew a project, increase/decrease the size of the storage package, we will also calculate the additional price you need to pay or the price that you can be refunded. For details, please refer to Invoice, cost & resource management on VNG Cloud.**
+**Similarly, when you renew a project, increase/decrease the size of the storage package, we will also calculate the additional price you need to pay or the price that you can be refunded. For details, please refer to Invoice, cost & resource management on GreenNode.**

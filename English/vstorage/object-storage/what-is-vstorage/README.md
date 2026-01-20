@@ -1,6 +1,6 @@
 # What is vStorage?
 
-vStorage - VNG Cloud Storage is a storage service based on Object Storage architecture, aiming to build an efficient, secure, and scalable storage solution for storing tens to hundreds of terabytes of data without service interruption and meeting the need for fast data access (milliseconds). Customers of all sizes and industries can use vStorage to store and protect data for various use cases, such as media repositories, websites, mobile applications, enterprise applications, IoT devices, and analytical data. vStorage provides advanced management features, allowing you to proactively optimize cost as well as performance, organize data, and establish access permissions as required by the organization.
+vStorage - GreenNode Storage is a storage service based on Object Storage architecture, aiming to build an efficient, secure, and scalable storage solution for storing tens to hundreds of terabytes of data without service interruption and meeting the need for fast data access (milliseconds). Customers of all sizes and industries can use vStorage to store and protect data for various use cases, such as media repositories, websites, mobile applications, enterprise applications, IoT devices, and analytical data. vStorage provides advanced management features, allowing you to proactively optimize cost as well as performance, organize data, and establish access permissions as required by the organization.
 
 vStorage offers three storage tiers: Gold, Silver, and Archive. With the Gold storage tier, your data is always ready for use with the ability to respond to access requests in milliseconds. The Silver tier is suitable for infrequently accessed data, ensuring that the data is always ready for use at any time with low storage costs. Lastly, Archive is the most cost-effective storage tier suitable for very rarely accessed data but needs to be stored, such as medical records, transaction logs, etc.
 
@@ -20,4 +20,4 @@ vStorage offers three storage tiers: Gold, Silver, and Archive. With the Gold st
 * Adaptability to User Tools: Seamlessly integrate with user tools, including AWS S3 SDK, Swift SDK, GUI-based client tools, and CLI-based client tools.
 * Scalability: Scale up to petabytes and distribute data based on regions.
 * Secure Permissions with vIAM: Implement secure permissions with vIAM.
-* Integration with Other Cloud Applications: Integrate seamlessly with other cloud applications on the VNG Cloud platform, such as vCDN, vMonitor Platform, and more.
+* Integration with Other Cloud Applications: Integrate seamlessly with other cloud applications on the GreenNode platform, such as vCDN, vMonitor Platform, and more.

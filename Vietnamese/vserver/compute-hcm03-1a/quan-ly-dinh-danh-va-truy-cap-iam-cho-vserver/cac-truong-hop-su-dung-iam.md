@@ -1,6 +1,6 @@
 # Các trường hợp sử dụng IAM
 
-Bài viết sau đây mô tả về một trường hợp sử dụng kinh doanh đơn giản cho IAM có thể giúp bạn hiểu cách triển khai dịch vụ để kiểm soát quyền truy cập của người dùng vào các dịch vụ VNG Cloud mà bạn sử dụng. Ví dụ này mô tả hai cách thức mà công ty Example có thể áp dụng IAM, bao gồm việc sử dụng VNG Cloud vServer.
+Bài viết sau đây mô tả về một trường hợp sử dụng kinh doanh đơn giản cho IAM có thể giúp bạn hiểu cách triển khai dịch vụ để kiểm soát quyền truy cập của người dùng vào các dịch vụ GreenNode mà bạn sử dụng. Ví dụ này mô tả hai cách thức mà công ty Example có thể áp dụng IAM, bao gồm việc sử dụng GreenNode vServer.
 
 ***
 
@@ -8,13 +8,13 @@ Bài viết sau đây mô tả về một trường hợp sử dụng kinh doanh
 
 Sasha Nguyen và Alex Thompson những người đồng sáng lập Công ty Example. Khi thành lập công ty, họ hiểu tầm quan trọng của hệ thống quản lý truy cập danh tính mạnh mẽ để bảo vệ tài nguyên của mình. Họ đã quyết định triển khai Quản lý truy cập danh tính (IAM) cho tổ chức của mình để đảm bảo rằng chỉ những người có quyền truy cập cần thiết mới có thể truy cập vào các tài nguyên và dịch vụ của công ty.
 
-Đầu tiên Sasha và Alex đã tạo tài khoản VNG Cloud (Root user account). Sau đó, họ dùng tài khoản này truy cập vào dịch vụ IAM. Tài khoản này của họ và được đính kèm với các chính sách từ bộ quyền (Policy) AdministratorAccess, đồng nghĩa với việc sở hữu Root user account họ sẽ có toàn quyền trên tất cả tài nguyên và dịch vụ của Công ty.
+Đầu tiên Sasha và Alex đã tạo tài khoản GreenNode (Root user account). Sau đó, họ dùng tài khoản này truy cập vào dịch vụ IAM. Tài khoản này của họ và được đính kèm với các chính sách từ bộ quyền (Policy) AdministratorAccess, đồng nghĩa với việc sở hữu Root user account họ sẽ có toàn quyền trên tất cả tài nguyên và dịch vụ của Công ty.
 
 Khi Công ty mở rộng, Sasha và Alex bắt đầu thuê nhân viên với nhiều vị trí trong Công ty. Sasha nhận trách nhiệm giám sát hoạt động của công ty, trong khi Alex quản lý các nhóm kỹ sư. Tuy nhiên họ không thể cấp quyền sử dụng Root user account cho các nhân viên này, vì điều đó đồng nghĩa với việc một số thứ sẽ vượt quá quyền hạn của từng vị trí công việc, lúc này điều cần làm là họ phải cấp cho nhân viên tài khoản User account từ Root user account trên trang chủ IAM với quyền hạn chuyên biệt để truy cập vào tài nguyên và sử dụng chúng.&#x20;
 
 Đầu tiên, họ xác định các vai trò khác nhau trong công ty. Ví dụ, họ có vai trò cho các nhà phát triển, quản trị viên mạng, quản trị viên cơ sở dữ liệu và nhân viên hỗ trợ. Mỗi vai trò này sẽ có quyền truy cập khác nhau vào các tài nguyên và dịch vụ của công ty. Sau đó, Sasha và Alex tạo ra các User account nhóm người dùng (Group) tương ứng với từng vai trò. Nhóm người dùng này sẽ chứa các nhân viên có cùng quyền truy cập và vai trò, bằng cách này họ có thể dễ dàng quản lý quyền truy cập cho từng nhóm.
 
-Để quản lý quyền truy cập, Sasha và Alex sử dụng các chính sách IAM. Họ định rõ những gì mà mỗi vai trò và nhóm người dùng có thể làm và không thể làm. Họ phải chỉ định các nhóm quyền và vai trò cho các nhóm khác nhau để cung cấp cho người dùng cấp truy cập chính xác vào tài nguyên VNG Cloud. Họ sử dụng các chính sách do VNG Cloud quản lý cho các chức năng công việc trong Bảng điều khiển quản lý IAM để tạo các nhóm quyền sau:
+Để quản lý quyền truy cập, Sasha và Alex sử dụng các chính sách IAM. Họ định rõ những gì mà mỗi vai trò và nhóm người dùng có thể làm và không thể làm. Họ phải chỉ định các nhóm quyền và vai trò cho các nhóm khác nhau để cung cấp cho người dùng cấp truy cập chính xác vào tài nguyên GreenNode. Họ sử dụng các chính sách do GreenNode quản lý cho các chức năng công việc trong Bảng điều khiển quản lý IAM để tạo các nhóm quyền sau:
 
 * _Administrator_
 * _Billing_
@@ -26,7 +26,7 @@ Khi Công ty mở rộng, Sasha và Alex bắt đầu thuê nhân viên với nh
 
 Sau đó họ gán các chính sách này cho các User account hoặc Group với vai trò tương ứng và cấp Username & password của User account cho nhân viên để tiến hành truy cập sử dụng các dịch vụ và tài nguyên.
 
-Để hướng dẫn việc triển khai Trung tâm nhận dạng IAM, Sasha và Alex đã tham khảo phần "[Bắt đầu](./)" toàn diện trong Hướng dẫn sử dụng Trung tâm nhận dạng VNG Cloud IAM. Hướng dẫn từng bước này cung cấp cho họ hướng dẫn chi tiết về cấu hình ban đầu. Ngoài ra, họ đã tham khảo phần "[Danh sách phân quyền vào tài khoản VNG Cloud](cac-hanh-dong-tai-nguyen-va-dieu-kien-can-cho-phan-quyen-truy-cap-vserver.md)" của hướng dẫn sử dụng để hiểu rõ hơn về việc cung cấp quyền truy cập của người dùng trong Trung tâm nhận dạng IAM.
+Để hướng dẫn việc triển khai Trung tâm nhận dạng IAM, Sasha và Alex đã tham khảo phần "[Bắt đầu](./)" toàn diện trong Hướng dẫn sử dụng Trung tâm nhận dạng GreenNode IAM. Hướng dẫn từng bước này cung cấp cho họ hướng dẫn chi tiết về cấu hình ban đầu. Ngoài ra, họ đã tham khảo phần "[Danh sách phân quyền vào tài khoản GreenNode](cac-hanh-dong-tai-nguyen-va-dieu-kien-can-cho-phan-quyen-truy-cap-vserver.md)" của hướng dẫn sử dụng để hiểu rõ hơn về việc cung cấp quyền truy cập của người dùng trong Trung tâm nhận dạng IAM.
 
 Khi Công ty đổi mới tiếp tục phát triển, Sasha và Alex vẫn thận trọng trong việc xem xét và cập nhật quyền truy cập cho từng nhân viên. Họ thường xuyên điều chỉnh quyền và cấp độ truy cập để đảm bảo rằng nhân viên có đặc quyền truy cập phù hợp với vai trò và trách nhiệm của họ trong tổ chức hoặc thu hồi lại nếu cần thiết.
 
@@ -34,7 +34,7 @@ Khi Công ty đổi mới tiếp tục phát triển, Sasha và Alex vẫn thậ
 
 ## **Trường hợp sử dụng IAM với vServer** <a href="#cactruonghopsudungiam-truonghopsudungiamvoivserver" id="cactruonghopsudungiam-truonghopsudungiamvoivserver"></a>
 
-Một công ty như Example thường sử dụng IAM để tương tác với các dịch vụ như VNG Cloud vServer. Để hiểu phần này của trường hợp sử dụng, bạn cần có hiểu biết cơ bản về VNG Cloud vServer. Để biết thêm thông tin về VNG Cloud vServer, hãy xem [Hướng dẫn sử dụng vServer](../trai-nghiem-san-pham-vserver/).
+Một công ty như Example thường sử dụng IAM để tương tác với các dịch vụ như GreenNode vServer. Để hiểu phần này của trường hợp sử dụng, bạn cần có hiểu biết cơ bản về GreenNode vServer. Để biết thêm thông tin về GreenNode vServer, hãy xem [Hướng dẫn sử dụng vServer](../trai-nghiem-san-pham-vserver/).
 
 ### **Quyền vServer cho nhóm người dùng** <a href="#cactruonghopsudungiam-quyenvserverchonhomnguoidung" id="cactruonghopsudungiam-quyenvserverchonhomnguoidung"></a>
 
@@ -46,11 +46,11 @@ Tại Example, các nhóm người dùng khác nhau yêu cầu các quyền khá
 
 ### **Phân quyền System Administrator cho nhóm người dùng** <a href="#cactruonghopsudungiam-phanquyensystemadministratorchonhomnguoidung" id="cactruonghopsudungiam-phanquyensystemadministratorchonhomnguoidung"></a>
 
-Taylor Smith được tuyển dụng với vị trí của người quản lý dự án, vì thế anh ấy cần có quyền truy cập vào tất cả các tài nguyên của công ty để quản lý quyền truy cập và triển khai các dự án công nghệ thông tin liên quan đến hạ tầng VNG Cloud vì thế Alex đã cấp cho Taylor User account với quyền vServerFullAccess theo các bước thực hiện bên dưới:
+Taylor Smith được tuyển dụng với vị trí của người quản lý dự án, vì thế anh ấy cần có quyền truy cập vào tất cả các tài nguyên của công ty để quản lý quyền truy cập và triển khai các dự án công nghệ thông tin liên quan đến hạ tầng GreenNode vì thế Alex đã cấp cho Taylor User account với quyền vServerFullAccess theo các bước thực hiện bên dưới:
 
 #### **Bước 1: Tạo tài khoản người dùng (User account) trên hệ thống IAM** <a href="#cactruonghopsudungiam-buoc1-taotaikhoannguoidung-useraccount-trenhethongiam" id="cactruonghopsudungiam-buoc1-taotaikhoannguoidung-useraccount-trenhethongiam"></a>
 
-1. Alex tạo tài khoản VNG Cloud tại trang chủ: [https://sso.vngcloud.vn/cas/login?service=https%3A%2F%2Fportal3.vngcloud.vn%2F](https://sso.vngcloud.vn/cas/login?service=https%3A%2F%2Fportal3.vngcloud.vn%2F) \
+1. Alex tạo tài khoản GreenNode tại trang chủ: [https://sso.vngcloud.vn/cas/login?service=https%3A%2F%2Fportal3.vngcloud.vn%2F](https://sso.vngcloud.vn/cas/login?service=https%3A%2F%2Fportal3.vngcloud.vn%2F) \
    với thông tin Root user account: **Admin@vngcloud.vn**, password: **12345678@!**
 2. Điều hướng sang trang chủ IAM tại: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) sử dụng thông tin Root user account để đăng nhập
 3. Mở tab User account.

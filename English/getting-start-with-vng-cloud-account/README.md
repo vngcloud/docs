@@ -1,2 +1,2 @@
-# Getting start with VNG Cloud account
+# Getting start with GreenNode account
 

@@ -66,9 +66,9 @@ To migrate a Cluster from the VKS system to the VKS system, follow the steps in 
       ```
       kubectl exec -n mynamespace -it web-0 bash
       cd /usr/share/nginx/html
-      echo -e "<html>\n<head>\n  <title>MyVNGCloud</title>\n</head>\n<body>\n  <h1>Hello, MyVNGCloud</h1>\n</body>\n</html>" > index.html
+      echo -e "<html>\n<head>\n  <title>MyGreenNode</title>\n</head>\n<body>\n  <h1>Hello, MyGreenNode</h1>\n</body>\n</html>" > index.html
       ```
-* Now, when you access Node's Public IP, you will see "Hello, MyVNGCloud".
+* Now, when you access Node's Public IP, you will see "Hello, MyGreenNode".
 
 ***
 
@@ -92,7 +92,7 @@ For the migration to be successful, on the target Cluster, you need to ensure th
 
 Migrating private resources outside cluster (moving private resources outside the cluster) is the process of moving private resources outside the source Cluster to a place that the destination Cluster can use. For example, you may have private resources such as images, databases, etc. Now, before starting to migrate, you need to migrate these resources yourself. For example, if you need:
 
-* Migrate Container Images: you can migrate images to VNGCloud Container Registry through instructions [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vcontainer-registry) .
+* Migrate Container Images: you can migrate images to GreenNode Container Registry through instructions [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vcontainer-registry) .
 * Migrate Databases: you can use **Relational Database Service (RDS)** and **Object Storage Service (OBS)** depending on your needs. After the migration is complete, remember to reconfigure the database for your applications on VKS Cluster.
 * Migrate Storage: you can use vServer's **NFS Server** .
 
@@ -159,7 +159,7 @@ For example, I have initialized a vStorage Project, Container with the following
 * When you perform a cluster migration from VKS to VKS, we recommend that you use **Snapshot** to migrate your Volume from the source cluster to the destination cluster.
 {% endhint %}
 
-*   Install the **VNGCloud Snapshot Controller** plugin on 2 clusters with the command:
+*   Install the **GreenNode Snapshot Controller** plugin on 2 clusters with the command:
 
     Copy
 

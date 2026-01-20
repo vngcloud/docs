@@ -35,6 +35,6 @@ If the certificate is not ready to use immediately, select **Save as Draft** to 
 {% hint style="info" %}
 **Attention:**
 
-* vCDN provided by VNG Cloud is a content delivery service via HTTP protocol with TLS/SSL (HTTPS) support. Therefore, TLS Certificates - uploaded by customers for the purpose of encrypting the HTTP channel between users and the CDN server system - are simultaneously stored and managed by customers and VNG Cloud until customers perform a deletion command via the Web Portal/API interface.
-* VNG Cloud commits not to share these TLS Certificates with any third party.
+* vCDN provided by GreenNode is a content delivery service via HTTP protocol with TLS/SSL (HTTPS) support. Therefore, TLS Certificates - uploaded by customers for the purpose of encrypting the HTTP channel between users and the CDN server system - are simultaneously stored and managed by customers and GreenNode until customers perform a deletion command via the Web Portal/API interface.
+* GreenNode commits not to share these TLS Certificates with any third party.
 {% endhint %}

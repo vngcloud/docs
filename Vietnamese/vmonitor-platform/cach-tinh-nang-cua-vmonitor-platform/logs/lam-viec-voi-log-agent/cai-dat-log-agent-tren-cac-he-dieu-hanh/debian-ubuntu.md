@@ -113,7 +113,7 @@ output {
 }
 ```
 
-Trong đó:&#x20;
+Trong đó:
 
 * Tại `input` , nếu như muốn lấy thêm log tại các file khác, cấu hình thêm như sau
 * Tại `output` , các biến cần điền bạn lấy từ bước tải certicate ở trên:
@@ -131,35 +131,27 @@ Nếu cài thủ công, mặc định agent log sau khi cài sẽ **không** t�
 
 {% tabs %}
 {% tab title="Filebeat" %}
-
-
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <ul><li>Start</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl start filebeat
-</code></pre></td></tr></tbody></table><ul><li>Enable</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl enable filebeat
-</code></pre></td></tr></tbody></table><ul><li>Stop</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl stop filebeat
-</code></pre></td></tr></tbody></table><ul><li>Reload</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl reload filebeat
-</code></pre></td></tr></tbody></table><ul><li>Restart</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl restart filebeat
-</code></pre></td></tr></tbody></table><ul><li>Observe</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl status filebeat
-journalctl -f --unit filebeat
-tail -f /var/log/filebeat
-</code></pre></td></tr></tbody></table><ul><li>Uninstall</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>tapt remove --purge filebeat
-</code></pre></td></tr></tbody></table><p><br></p> |
+<table><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>Start</li><li>Enable</li><li>Stop</li><li>Reload</li><li>Restart</li><li>Observe</li><li>Uninstall</li></ul><p><br></p></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl start filebeat
+</code></pre></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl enable filebeat
+</code></pre></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl stop filebeat
+</code></pre></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl reload filebeat
+</code></pre></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl restart filebeat
+</code></pre></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl status filebeat
+</code></pre></td></tr><tr><td>journalctl -f --unit filebeat</td></tr><tr><td>tail -f /var/log/filebeat</td></tr><tr><td></td></tr><tr><td></td></tr><tr><td><pre><code>tapt remove --purge filebeat
+</code></pre></td></tr><tr><td></td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Logstash" %}
-
-
-<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>Start</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl start logstash
-</code></pre></td></tr></tbody></table><ul><li>Enable</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl enable logstash
-</code></pre></td></tr></tbody></table><ul><li>Stop</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl stop logstash
-</code></pre></td></tr></tbody></table><ul><li>Reload</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl reload logstash
-</code></pre></td></tr></tbody></table><ul><li>Restart</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl restart logstash
-</code></pre></td></tr></tbody></table><ul><li>Observe</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl status logstash
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>Start</li><li>Enable</li><li>Stop</li><li>Reload</li><li>Restart</li><li>Observe</li><li>Uninstall</li></ul><p><br></p></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl start logstash
+</code></pre></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl enable logstash
+</code></pre></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl stop logstash
+</code></pre></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl reload logstash
+</code></pre></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl restart logstash
+</code></pre></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl status logstash
 journalctl -f --unit logstash
 tail -f /var/log/logstash
-</code></pre></td></tr></tbody></table><ul><li>Uninstall</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>apt remove --purge logstash
-</code></pre></td></tr></tbody></table><p><br></p></td></tr><tr><td><pre><code>systemctl start logstash
+</code></pre></td></tr><tr><td></td></tr><tr><td><pre><code>apt remove --purge logstash
+</code></pre></td></tr><tr><td><pre><code>systemctl start logstash
 </code></pre></td></tr><tr><td><pre><code>systemctl enable logstash
 </code></pre></td></tr><tr><td><pre><code>systemctl stop logstash
 </code></pre></td></tr><tr><td><pre><code>systemctl reload logstash

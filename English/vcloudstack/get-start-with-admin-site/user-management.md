@@ -46,7 +46,7 @@ Step 6: Click the invite button to confirm inviting the new user.
 
 **Note:**
 
-* The account (Email) of the user invited to vCloudStack must be the account previously registered to VNG Cloud.
+* The account (Email) of the user invited to vCloudStack must be the account previously registered to GreenNode.
 * The default role for inviting users to use vCloudStack is "User". With this role, users can access vCloudStack User Site to create and operate. If they want to access vCloudstack Admin Site, the administrator must select the role of Admin or higher.
 {% endhint %}
 

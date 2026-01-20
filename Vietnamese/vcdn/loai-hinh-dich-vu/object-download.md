@@ -2,7 +2,7 @@
 
 ## **Tổng quan** <a href="#objectdownload-tongquan" id="objectdownload-tongquan"></a>
 
-Dịch vụ Object Download của VNG Cloud giúp doanh nghiệp: tối ưu chi phí, đảm bảo sự linh hoạt, dễ dàng tương thích với đa dạng thiết bị đầu cuối, từ đó, tăng mức độ hài lòng của khách hàng với dịch vụ với khả năng phân tích dữ liệu đa chiều theo thời gian thực.
+Dịch vụ Object Download của GreenNode giúp doanh nghiệp: tối ưu chi phí, đảm bảo sự linh hoạt, dễ dàng tương thích với đa dạng thiết bị đầu cuối, từ đó, tăng mức độ hài lòng của khách hàng với dịch vụ với khả năng phân tích dữ liệu đa chiều theo thời gian thực.
 
 ***
 
@@ -15,7 +15,7 @@ Dịch vụ Object Download của VNG Cloud giúp doanh nghiệp: tối ưu chi 
 ## **Cơ Chế Phân Phối Dữ Liệu** <a href="#objectdownload-cochephanphoidulieu" id="objectdownload-cochephanphoidulieu"></a>
 
 * **Dữ liệu đầu vào**:
-  * Hệ thống **Origin Gateway** của VNGCloud sẽ kết nối đến **origin server** hoặc **storage của khách hàng** để lấy nội dung được yêu cầu từ phía client. Nội dung này có thể ở bất kỳ định dạng nào, ví dụ: `.js`, `.css`, hình ảnh, font (`.tff`), v.v.
+  * Hệ thống **Origin Gateway** của GreenNode sẽ kết nối đến **origin server** hoặc **storage của khách hàng** để lấy nội dung được yêu cầu từ phía client. Nội dung này có thể ở bất kỳ định dạng nào, ví dụ: `.js`, `.css`, hình ảnh, font (`.tff`), v.v.
   * Nếu nội dung có kích thước lớn, **Origin Gateway** sẽ chia nội dung thành các request nhỏ (5MB) và tải đồng thời (byte-range download). Điều này giúp tăng tốc độ tải và phục vụ người dùng ngay khi nhận được dữ liệu đầu tiên.
   * Dữ liệu từ **Origin Gateway** sau đó sẽ được phân phối tới các **Edge servers** để phục vụ người dùng.
 * **Dữ liệu đầu ra**:

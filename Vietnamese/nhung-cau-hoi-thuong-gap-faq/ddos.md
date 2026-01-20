@@ -1,5 +1,5 @@
 ---
-description: Tổng Quan về Giải Pháp Bảo Vệ DDoS tại VNG Cloud
+description: Tổng Quan về Giải Pháp Bảo Vệ DDoS tại GreenNode
 ---
 
 # DDoS
@@ -34,7 +34,7 @@ Hệ thống bảo vệ này **tập trung vào tầng mạng (Layer 3)** và **
 
 ## Các Dịch Vụ Được Bảo Vệ
 
-Tính năng bảo vệ DDoS được áp dụng cho tất cả các dịch vụ quan trọng trên nền tảng đám mây công cộng của VNG Cloud, bao gồm:
+Tính năng bảo vệ DDoS được áp dụng cho tất cả các dịch vụ quan trọng trên nền tảng đám mây công cộng của GreenNode, bao gồm:
 
 * vServer
 * vLB

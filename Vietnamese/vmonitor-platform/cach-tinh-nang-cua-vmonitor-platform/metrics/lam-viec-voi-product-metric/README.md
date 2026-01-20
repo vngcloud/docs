@@ -5,10 +5,10 @@
 Infrastructure Host là nơi sẽ liệt kê tất cả Resource mà vMonitor Platform đang theo dõi, các Resource có thể là các tài nguyên như bên dưới:
 
 * Host: là các server được cài Metric Agent
-* vServer: là các vServer của VNG Cloud
-* vLB: là các vLB của VNG Cloud
-* vDB: là các vDB của VNG Cloud
-* vStorage: là các storage project của VNG Cloud
+* vServer: là các vServer của GreenNode
+* vLB: là các vLB của GreenNode
+* vDB: là các vDB của GreenNode
+* vStorage: là các storage project của GreenNode
 
 ***
 

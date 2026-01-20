@@ -8,7 +8,7 @@
 
 <figure><img src="../.gitbook/assets/image (23) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-Our system will send you an email titled "**VNG Cloud - OTP Update Phone Number.**" Copy the OTP code from the email and paste it into the "**Enter OTP**" field.
+Our system will send you an email titled "**GreenNode - OTP Update Phone Number.**" Copy the OTP code from the email and paste it into the "**Enter OTP**" field.
 
 **Step 3:** Enter the security code and click "**Save Settings**" to save the new phone number. You will receive a notification along with a successful phone number change email, similar to the image.
 

@@ -9,7 +9,7 @@
 Để tạo service account bạn truy cập tại [đây](https://iam.console.vngcloud.vn/service-accounts):
 
 * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
-* Tìm và chọn **Policy:** **vMonitorMetricPush,** sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vMonitorMetricPush do VNG Cloud tạo ra chỉ chứa chính xác quyền đẩy metric về hệ thống
+* Tìm và chọn **Policy:** **vMonitorMetricPush,** sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vMonitorMetricPush do GreenNode tạo ra chỉ chứa chính xác quyền đẩy metric về hệ thống
 * Sau khi tạo thành công bạn cần phải lưu lại Client\_ID và Secret\_Key để thực hiện bước tiếp theo
 
 2\. **Tải bản cài Agent Installer cho Windows**
@@ -61,7 +61,7 @@
 
 4\. **Sau khi cài đặt thành công bạn sẽ thấy server ở trang Infrastructure List/Host**
 
-<figure><img src="/broken/files/KUHecb0BwJt903OmPJcJ" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Telegraf Agent với API\_KEY (deprecated**) <a href="#windowos-telegrafagentvoiapi_key-deprecated-khongkhuyencaosudung-saptoisedunghotrovoiphuongthucnay" id="windowos-telegrafagentvoiapi_key-deprecated-khongkhuyencaosudung-saptoisedunghotrovoiphuongthucnay"></a>
 
@@ -76,7 +76,7 @@ B1: Tạo API Key (nếu chưa thực hiện tạo bất kỳ API Key nào trư�
 * Truy cập vào portal vMonitor Platform Product: [https://hcm-3.console.vngcloud.vn/vmonitor/](https://hcm-3.console.vngcloud.vn/vmonitor/)
 * Chọn **Intergration** => sau đó chọn phần **API Key**
 
-<figure><img src="/broken/files/JEUHwtZwRkDEiiBW3hZx" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 * Chọn **Create an API Key**, để thực hiện tạo mới (nếu chưa tạo bất kỳ API Key nào trước đó)
 
@@ -91,11 +91,11 @@ B3: Install Agent
 * Chạy agent installer
 * Sau khi nhận thông báo, chọn **More Info**
 
-<figure><img src="/broken/files/EUhV2nzHrPSGdGnHDxBx" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 * Sau đó chọn **Run anyway**, để bắt đầu install agent
 
-<figure><img src="/broken/files/EvBafjjIPqSCs1Rm3QEk" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 * Chọn **Next** để tiếp tục
 
@@ -115,7 +115,7 @@ B3: Install Agent
 
 * Chọn **Accept the license,** sau đó chọn **Next** để tiếp tục
 
-<figure><img src="/broken/files/Rjfetw7pz2VhZ1OBHrj2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 * Có thể tùy chỉnh shortcut menu name cho agent, sau đó chọn **Next** để tiếp tục
 
@@ -127,7 +127,7 @@ B3: Install Agent
 
 * Chọn Yes để thực hiện grant quyền cho agent hoạt động
 
-<figure><img src="/broken/files/B3LuUdf0b5MOnU8lR1MY" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 * Sau khi quá trình cài đặt hoàn tất, chọn **Finish**
 

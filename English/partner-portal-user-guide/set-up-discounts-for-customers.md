@@ -1,7 +1,7 @@
 # Set Up Discounts for Customers
 
-* User/ partner can set up discounts for customers in order to define price for each particular customer. By doing this, when partner’s customer buys VNG Cloud’s services, they will see the price as defined by partner.
-* In case user does not set discounts for their customer, customer will see public price when logging in to VNG Cloud portal to buy services.
+* User/ partner can set up discounts for customers in order to define price for each particular customer. By doing this, when partner’s customer buys GreenNode’s services, they will see the price as defined by partner.
+* In case user does not set discounts for their customer, customer will see public price when logging in to GreenNode portal to buy services.
 
 **Step 1:** Select the "**Account**" menu and choose the customer account for which you want to set up a discount. Click on the hyperlink at the customer's name to access the detailed customer information screen.
 
@@ -20,6 +20,6 @@ On the effective date of the discount, it will be activated and applied to order
 
 **Notes:**
 
-* Users/ Partner must consider the discount level for customers in relation to the purchase price from VNG Cloud.
+* Users/ Partner must consider the discount level for customers in relation to the purchase price from GreenNode.
 * To view the current discounts applied and the discounts awaiting active, go to the "**Account**" menu and select the desired account.
 * Click "**View History**" to display the discount history for the selected account.

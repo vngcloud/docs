@@ -2,7 +2,7 @@
 
 ## Necessary conditions <a href="#dieu-kien-can" id="dieu-kien-can"></a>
 
-* You have initialized the Cluster on the VKS system according to the instructions here [and](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4) the VNGCloud LoadBalancer Controller has been installed on your cluster **.**
+* You have initialized the Cluster on the VKS system according to the instructions here [and](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4) the GreenNode LoadBalancer Controller has been installed on your cluster **.**
 * Next, make sure you have a **domain** registered and in use.
 * Finally, you need an **email** address to perform the Certificate management test.
 * Next, you need to install nginx-ingress-controller with the command:

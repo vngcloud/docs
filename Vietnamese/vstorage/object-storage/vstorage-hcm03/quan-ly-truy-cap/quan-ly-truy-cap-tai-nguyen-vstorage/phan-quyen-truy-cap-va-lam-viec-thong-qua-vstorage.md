@@ -22,7 +22,7 @@ Bạn có thể chuyển chế độ của container từ công khai thành riê
 
 <summary>Phân quyền truy cập ACLs container</summary>
 
-Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho 1 hoặc tất cả Root user khác. (Root user được cấp quyền truy cập qua ACLS phải là tài khoản được cấp quyền trên hệ thống VNG Cloud của chúng tôi). Để biết thêm thông tin, hãy xem tại [đây](../../cac-tinh-nang-cua-vstorage/lam-viec-voi-container/phan-quyen-truy-cap-acls-container.md).
+Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho 1 hoặc tất cả Root user khác. (Root user được cấp quyền truy cập qua ACLS phải là tài khoản được cấp quyền trên hệ thống GreenNode của chúng tôi). Để biết thêm thông tin, hãy xem tại [đây](../../cac-tinh-nang-cua-vstorage/lam-viec-voi-container/phan-quyen-truy-cap-acls-container.md).
 
 </details>
 

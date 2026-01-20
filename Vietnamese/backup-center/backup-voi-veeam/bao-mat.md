@@ -2,7 +2,7 @@
 
 ## Tổng quan <a href="#baomat-security-tongquan" id="baomat-security-tongquan"></a>
 
-VNG Cloud có trách nhiệm đảm bảo tính bảo mật của hạ tầng vật lý cũng như hạ tầng ảo hóa đang cung cấp cho các dịch vụ của VNG Cloud. Ngoài ra VNG cũng cung cấp các dịch vụ cho phép khách hàng tự triển khai các chức năng bảo mật cho hệ thống của khách hàng đặt tại VNG Cloud.
+GreenNode có trách nhiệm đảm bảo tính bảo mật của hạ tầng vật lý cũng như hạ tầng ảo hóa đang cung cấp cho các dịch vụ của GreenNode. Ngoài ra VNG cũng cung cấp các dịch vụ cho phép khách hàng tự triển khai các chức năng bảo mật cho hệ thống của khách hàng đặt tại GreenNode.
 
 Do đó, việc sao lưu dữ liệu với phần mềm Veeam cũng đảm bảo an toàn vả giảm rủi ro xâm phạm trong quá trình sao lưu định kỳ, những biện pháp kiểm soát bảo mật như:
 

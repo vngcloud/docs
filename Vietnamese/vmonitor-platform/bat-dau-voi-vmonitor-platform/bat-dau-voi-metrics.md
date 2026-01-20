@@ -2,7 +2,7 @@
 
 ### Bước 1: Khởi tạo Metric quota <a href="#batdauvoimetrics-buoc1-khoitaometricquota" id="batdauvoimetrics-buoc1-khoitaometricquota"></a>
 
-Bắt đầu sử dụng dịch vụ, bạn cần tạo một Metric quota. Một Metric quota là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát Metric với số lượng Resource và thời gian lưu trữ cụ thể mà bạn thực hiện mua trên VNG Cloud. Tại một thời điểm bạn có thể sở hữu một Metric quota và sử dụng chúng để phân tích số liệu từ hệ thống của bạn.
+Bắt đầu sử dụng dịch vụ, bạn cần tạo một Metric quota. Một Metric quota là một thuật ngữ trên vMonitor Platform thể hiện một gói giám sát Metric với số lượng Resource và thời gian lưu trữ cụ thể mà bạn thực hiện mua trên GreenNode. Tại một thời điểm bạn có thể sở hữu một Metric quota và sử dụng chúng để phân tích số liệu từ hệ thống của bạn.
 
 Thực hiện mua Metric Quota theo các bước bên dưới:
 
@@ -16,7 +16,7 @@ Thực hiện mua Metric Quota theo các bước bên dưới:
 8. Chọn **Continue.**
 9. Thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Metric quota** sẽ được khởi tạo.
 
-Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai trên trang chủ của VNG Cloud, hãy xem tại [Cách tính phí](../../vstorage/object-storage/vstorage-hcm03/cach-tinh-phi/).
+Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../../vstorage/object-storage/vstorage-hcm03/cach-tinh-phi/).
 
 ***
 
@@ -27,7 +27,7 @@ Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai
 Để tạo service account bạn truy cập tại [đây](https://iam.console.vngcloud.vn/service-accounts)
 
 1. Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account.
-2. Tìm và chọn **Policy:** **vMonitorMetricPush,** sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vMonitorMetricPush do VNG Cloud tạo ra chỉ chứa chính xác quyền đẩy metric về hệ thống.
+2. Tìm và chọn **Policy:** **vMonitorMetricPush,** sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vMonitorMetricPush do GreenNode tạo ra chỉ chứa chính xác quyền đẩy metric về hệ thống.
 3. Sau khi tạo thành công bạn cần phải lưu lại Client\_ID và Secret\_Key để thực hiện bước tiếp theo
 
 ***
@@ -58,7 +58,7 @@ Sau khi cài đặt Metric Agent theo hướng dẫn tại **Bước 3: Cài đ�
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Chọn **Infrastructure List/ Host.**
 
-<figure><img src="/broken/files/JbkXYksF65MhCVy5TvDN" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 2. Chọn tên **Hostname**. Ví dụ thiết bị **LAP15839** được thiết lập Metric Agent thành công tới hệ thống vMonitor Platform thì dashboard mặc định sẽ có tên: **LAP15839**, bạn chọn dashboard sẽ hiển thị như ảnh:
 

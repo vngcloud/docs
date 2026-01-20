@@ -49,24 +49,24 @@ You can perform the following operations to use security groups to control traff
 
 #### Create security group <a href="#securitygroups-createsecuritygroup" id="securitygroups-createsecuritygroup"></a>
 
-1. Go to VNG Cloud Portal console, navigate to Security Group
+1. Go to GreenNode Portal console, navigate to Security Group
 2. Create a Security Group with name and description as your need
 
 #### View the security group <a href="#securitygroups-viewthesecuritygroup" id="securitygroups-viewthesecuritygroup"></a>
 
-1. Go to VNG Cloud Portal console, navigate to Security Group
+1. Go to GreenNode Portal console, navigate to Security Group
 2. Select the Security Group and click View Detail, you can view the detail rules of inbound and outbound. Tab Server show VM instances that associated with this security group.
 
 #### Add/delete rules to/from the security groups <a href="#securitygroups-add-deleterulesto-fromthesecuritygroups" id="securitygroups-add-deleterulesto-fromthesecuritygroups"></a>
 
-1. Go to VNG Cloud Portal console, navigate to Security Group
+1. Go to GreenNode Portal console, navigate to Security Group
 2. Select the Security Group and click View Detail
 3. Navigate to tab Inbound or Outbound to add or delete rules
 4. To add new rule, you must provide either protocol, port range, CIDR as your needs
 
 #### Assign/remove security groups to/from the VM instance <a href="#securitygroups-assign-removesecuritygroupsto-fromthevminstance" id="securitygroups-assign-removesecuritygroupsto-fromthevminstance"></a>
 
-1. Go to VNG Cloud Portal console, navigate to VM Instance page
+1. Go to GreenNode Portal console, navigate to VM Instance page
 2. Select the VM Instance to change, click Update Security in expanded Menu on the right side
 3. Assign or remove from existing Security Groups
 

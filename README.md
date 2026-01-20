@@ -1,8 +1,8 @@
-# VNG Cloud Documentation
+# GreenNode Documentation
 
 ## Giới thiệu
 
-Đây là repository chứa toàn bộ tài liệu hướng dẫn sử dụng các dịch vụ của **VNG Cloud**. Tài liệu được tổ chức theo 2 ngôn ngữ (Tiếng Việt và Tiếng Anh) và được xuất bản trên nền tảng GitBook.
+Đây là repository chứa toàn bộ tài liệu hướng dẫn sử dụng các dịch vụ của **GreenNode**. Tài liệu được tổ chức theo 2 ngôn ngữ (Tiếng Việt và Tiếng Anh) và được xuất bản trên nền tảng GitBook.
 
 ### Thống kê tổng quan
 
@@ -111,11 +111,11 @@ Nếu có thắc mắc về tài liệu, vui lòng liên hệ team Documentation
 
 ---
 
-# VNG Cloud Documentation (English)
+# GreenNode Documentation (English)
 
 ## Introduction
 
-This repository contains all user guides and documentation for **VNG Cloud** services. The documentation is organized in 2 languages (Vietnamese and English) and published on the GitBook platform.
+This repository contains all user guides and documentation for **GreenNode** services. The documentation is organized in 2 languages (Vietnamese and English) and published on the GitBook platform.
 
 ### Overview Statistics
 
