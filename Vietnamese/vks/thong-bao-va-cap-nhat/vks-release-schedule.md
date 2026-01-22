@@ -48,6 +48,17 @@ VKS tự động nâng cấp các cluster vào hoặc sau các ngày được ch
   </thead>
   <tbody>
     <tr>
+      <td><strong>1.27</strong></td>
+      <td>17/04/2024</td>
+      <td>25/04/2025</td>
+      <td>26/08/2024</td>
+      <td>25/04/2025</td>
+      <td>TBD</td>
+      <td>TBD</td>
+      <td>12/05/2025</td>
+      <td>2026-Q1</td>
+    </tr>
+    <tr>
       <td><strong>1.28</strong></td>
       <td>17/04/2024</td>
       <td>10/11/2025</td>
@@ -56,62 +67,62 @@ VKS tự động nâng cấp các cluster vào hoặc sau các ngày được ch
       <td>TBD</td>
       <td>TBD</td>
       <td>24/11/2025</td>
-      <td>TBD</td>
+      <td>2026-Q3</td>
     </tr>
     <tr>
       <td><strong>1.29</strong></td>
       <td>17/04/2024</td>
-      <td>TBD</td>
+      <td>2026-Q2</td>
       <td>26/08/2024</td>
+      <td>2026-Q2</td>
       <td>TBD</td>
       <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
+      <td>2026-Q2</td>
+      <td>2027-Q1</td>
     </tr>
     <tr>
       <td><strong>1.30</strong></td>
       <td>02/01/2025</td>
+      <td>2026-Q3</td>
+      <td>09/05/2025</td>
+      <td>2026-Q3</td>
       <td>TBD</td>
       <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
+      <td>2026-Q4</td>
+      <td>2027-Q2</td>
     </tr>
     <tr>
       <td><strong>1.31</strong></td>
+      <td>2025-Q2</td>
+      <td>2026-Q4</td>
+      <td>2025-Q3</td>
+      <td>2026-Q4</td>
       <td>TBD</td>
       <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
+      <td>2027-Q1</td>
+      <td>2027-Q3</td>
     </tr>
     <tr>
       <td><strong>1.32</strong></td>
+      <td>2025-Q3</td>
+      <td>2027-Q1</td>
+      <td>2025-Q4</td>
+      <td>2027-Q1</td>
       <td>TBD</td>
       <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
+      <td>2027-Q2</td>
+      <td>2027-Q4</td>
     </tr>
     <tr>
       <td><strong>1.33</strong></td>
+      <td>2025-Q4</td>
+      <td>2027-Q2</td>
+      <td>2026-Q1</td>
+      <td>2027-Q2</td>
       <td>TBD</td>
       <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
-      <td>TBD</td>
+      <td>2027-Q3</td>
+      <td>2028-Q1</td>
     </tr>
   </tbody>
 </table>
