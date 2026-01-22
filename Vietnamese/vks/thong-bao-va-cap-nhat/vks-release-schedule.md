@@ -41,9 +41,9 @@ VKS tự động nâng cấp các cluster vào hoặc sau các ngày được ch
       <th>Available</th>
       <th>Auto Upgrade</th>
       <th>Available</th>
-      <th>Auto Upgrade</th>
+      <th>Auto Upgrade (Deprecated)</th>
       <th>Available</th>
-      <th>Auto Upgrade</th>
+      <th>Auto Upgrade (End of support)</th>
     </tr>
   </thead>
   <tbody>
@@ -54,9 +54,9 @@ VKS tự động nâng cấp các cluster vào hoặc sau các ngày được ch
       <td>26/08/2024</td>
       <td>25/04/2025</td>
       <td>12/05/2025</td>
-      <td>2026-Q1</td>
+      <td>-</td>
       <td>12/05/2025</td>
-      <td>2026-Q1</td>
+      <td>-</td>
     </tr>
     <tr>
       <td><strong>1.28</strong></td>
@@ -65,64 +65,64 @@ VKS tự động nâng cấp các cluster vào hoặc sau các ngày được ch
       <td>26/08/2024</td>
       <td>10/11/2025</td>
       <td>24/11/2025</td>
-      <td>2026-Q3</td>
+      <td>-</td>
       <td>24/11/2025</td>
-      <td>2026-Q3</td>
+      <td>-</td>
     </tr>
     <tr>
       <td><strong>1.29</strong></td>
       <td>17/04/2024</td>
-      <td>2026-Q2</td>
-      <td>26/08/2024</td>
-      <td>2026-Q2</td>
-      <td>2026-Q2</td>
-      <td>2027-Q1</td>
-      <td>2026-Q2</td>
-      <td>2027-Q1</td>
+      <td>20/02/2025</td>
+      <td>20/02/2025</td>
+      <td>03/2026</td>
+      <td>03/2026</td>
+      <td>09/2026</td>
+      <td>03/2026</td>
+      <td>09/2026</td>
     </tr>
     <tr>
       <td><strong>1.30</strong></td>
       <td>02/01/2025</td>
-      <td>2026-Q3</td>
-      <td>09/05/2025</td>
-      <td>2026-Q3</td>
-      <td>2026-Q4</td>
-      <td>2027-Q2</td>
-      <td>2026-Q4</td>
-      <td>2027-Q2</td>
+      <td>22/05/2025</td>
+      <td>22/05/2025</td>
+      <td>03/2027</td>
+      <td>03/2027</td>
+      <td>09/2027</td>
+      <td>03/2027</td>
+      <td>09/2027</td>
     </tr>
     <tr>
       <td><strong>1.31</strong></td>
-      <td>2025-Q2</td>
-      <td>2026-Q4</td>
-      <td>2025-Q3</td>
-      <td>2026-Q4</td>
-      <td>2027-Q1</td>
-      <td>2027-Q3</td>
-      <td>2027-Q1</td>
-      <td>2027-Q3</td>
+      <td>03/2026</td>
+      <td>05/2026</td>
+      <td>05/2026</td>
+      <td>03/2028</td>
+      <td>03/2028</td>
+      <td>09/2028</td>
+      <td>03/2028</td>
+      <td>09/2028</td>
     </tr>
     <tr>
       <td><strong>1.32</strong></td>
-      <td>2025-Q3</td>
-      <td>2027-Q1</td>
-      <td>2025-Q4</td>
-      <td>2027-Q1</td>
-      <td>2027-Q2</td>
-      <td>2027-Q4</td>
-      <td>2027-Q2</td>
-      <td>2027-Q4</td>
+      <td>03/2026</td>
+      <td>06/2026</td>
+      <td>06/2026</td>
+      <td>03/2029</td>
+      <td>03/2029</td>
+      <td>09/2029</td>
+      <td>03/2029</td>
+      <td>09/2029</td>
     </tr>
     <tr>
       <td><strong>1.33</strong></td>
-      <td>2025-Q4</td>
-      <td>2027-Q2</td>
-      <td>2026-Q1</td>
-      <td>2027-Q2</td>
-      <td>2027-Q3</td>
-      <td>2028-Q1</td>
-      <td>2027-Q3</td>
-      <td>2028-Q1</td>
+      <td>05/2026</td>
+      <td>11/2026</td>
+      <td>11/2026</td>
+      <td>03/2030</td>
+      <td>03/2030</td>
+      <td>09/2030</td>
+      <td>03/2030</td>
+      <td>09/2030</td>
     </tr>
   </tbody>
 </table>
