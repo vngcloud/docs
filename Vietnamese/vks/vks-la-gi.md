@@ -4,14 +4,12 @@ VKS (GreenNode Kubernetes Service) là một dịch vụ được quản lý tr�
 
 <figure><img src="../.gitbook/assets/vks_la_gi.png" alt=""><figcaption></figcaption></figure>
 
+---
 
-
-***
-
-## Những điểm nổi bật của VKS <a href="#whatisvks-nhungdiemnoibatcuavks" id="whatisvks-nhungdiemnoibatcuavks"></a>
+## Những điểm nổi bật của VKS `<a href="#whatisvks-nhungdiemnoibatcuavks" id="whatisvks-nhungdiemnoibatcuavks"></a>`
 
 * **Quản lý Control Plane hoàn toàn tự động (Fully Managed control plane):** VKS sẽ giải phóng bạn khỏi gánh nặng quản lý Control Plane của Kubernetes, giúp bạn tập trung vào việc phát triển ứng dụng.
-* **Hỗ trợ các phiên bản Kubernetes mới nhất:** VKS luôn cập nhật những phiên bản Kubernetes mới nhất (minor version từ 1.28, 1.29. 1.30) để đảm bảo bạn luôn tận dụng được những tính năng tiên tiến nhất.
+* **Hỗ trợ các phiên bản Kubernetes mới nhất:** VKS luôn cập nhật những phiên bản Kubernetes mới nhất (minor version từ 1.29. 1.30) để đảm bảo bạn luôn tận dụng được những tính năng tiên tiến nhất.
 * **Kubernetes Networking:** VKS tích hợp Calico CNI, Cilium Overlay CNI và Cilium VPC Native Routing CNI, mang lại tính hiệu quả và bảo mật cao.
 * **Upgrade seamlessly:** VKS hỗ trợ nâng cấp giữa các phiên bản Kubernetes một cách dễ dàng và nhanh chóng, giúp bạn luôn cập nhật những cải tiến mới nhất.
 * **Scaling & Healing Automatically:** VKS tự động mở rộng Node group khi cần thiết và tự động sửa lỗi khi node gặp vấn đề, giúp bạn tiết kiệm thời gian và công sức quản lý.
@@ -25,9 +23,9 @@ VKS (GreenNode Kubernetes Service) là một dịch vụ được quản lý tr�
 * Dễ sử dụng: VKS cung cấp giao diện đơn giản và dễ sử dụng.
 * Chi phí hợp lý: VKS cung cấp mức giá cạnh tranh cho các dịch vụ của mình.
 
-***
+---
 
-### **Region** <a href="#farm" id="farm"></a>
+### **Region** `<a href="#farm" id="farm"></a>`
 
 Hiện tại, trên VKS, chúng tôi đang cung cấp cho bạn 2 cơ sở hạ tầng riêng biệt được đặt tại Hà Nội và Hồ Chí Minh. Bạn có thể lựa chọn sử dụng VKS trên mỗi region tùy thuộc vào vị trí và nhu cầu thực tế của bạn. Đối với 2 farm HCM03, HAN01, các thông số cụ thể cho mỗi region được chúng tôi cung cấp như sau:
 
