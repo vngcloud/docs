@@ -8,6 +8,7 @@
     * [2024](gioi-thieu-chung/thong-bao-va-cap-nhat/2024.md)
     * [2025](gioi-thieu-chung/thong-bao-va-cap-nhat/2025.md)
     * [2026](gioi-thieu-chung/thong-bao-va-cap-nhat/2026.md)
+  * [Giới hạn các gói dịch vụ](gioi-thieu-chung/gioi-han-cac-goi-dich-vu.md)
 * [vServer](vserver/README.md)
   * [Compute](vserver/compute-hcm03-1a/README.md)
     * [vServer là gì?](vserver/compute-hcm03-1a/vserver-la-gi.md)
