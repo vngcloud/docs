@@ -21,3 +21,9 @@ Ngoài các giới hạn quota ([https://docs.vngcloud.vn/vng-cloud-document/vse
 | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
 | Gold domestic traffic and request | <p>Bao gồm:<br>· Traffic domestic = 10 lần dung lượng lưu trữ nội địa.<br>· 1.000 GB traffic quốc tế/tháng.<br>· Không giới hạn số lượng request.<br><br>Hiệu năng cam kết/1 project:<br>· Read: 2.500 req/s<br>· Write: 1.500 req/s<br>· Delete: 1.000 req/s<br>· Tổng các loại request: 4.000 req/s</p>                               | Có, liên hệ thêm với SC để tư vấn. |
 | Instant Archive Storage           | <p>Gói 1 năm: 3.000 GB traffic domestic/tháng và không giới hạn request.<br>Gói 6 tháng: 3.000 GB traffic domestic/tháng và không giới hạn request.<br>* Thời gian truy xuất dữ liệu: 1–12 giờ.<br><br>Hiệu năng cam kết:<br>· Read: 500 req/s<br>· Write: 500 req/s<br>· Delete: 100 req/s<br>· Tổng các loại request: 1.000 req/s</p> | Có, liên hệ thêm với SC để tư vấn. |
+
+## Support
+
+| Tên    | Đặc tả                                                                                                            | Có thể điều chỉnh |
+| ------ | ----------------------------------------------------------------------------------------------------------------- | ----------------- |
+| Hỗ trợ | Hỗ trợ 24/7 các vấn đề về kỹ thuật thông qua số hotline, ticket, email, chat; Tài liệu hướng dẫn sử dụng dịch vụ. |                   |
