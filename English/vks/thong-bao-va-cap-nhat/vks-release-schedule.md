@@ -28,105 +28,15 @@ VKS automatically upgrades clusters on or after the dates specified in the **Aut
 * **\***: Version currently supported on VKS.
 {% endhint %}
 
-<table>
-  <thead>
-    <tr>
-      <th rowspan="2">Minor version</th>
-      <th colspan="2" style="text-align:center">Rapid</th>
-      <th colspan="2" style="text-align:center">Stable</th>
-      <th colspan="2" style="text-align:center">Extended</th>
-      <th rowspan="2">End of Standard Support</th>
-      <th rowspan="2">End of Extended Support</th>
-    </tr>
-    <tr>
-      <th>Available</th>
-      <th>Auto Upgrade</th>
-      <th>Available</th>
-      <th>Auto Upgrade</th>
-      <th>Available</th>
-      <th>Auto Upgrade</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>1.27</strong></td>
-      <td>17/04/2024</td>
-      <td>25/04/2025</td>
-      <td>26/08/2024</td>
-      <td>25/04/2025</td>
-      <td>26/08/2024</td>
-      <td>-</td>
-      <td>12/05/2025</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td><strong>1.28</strong></td>
-      <td>17/04/2024</td>
-      <td>10/11/2025</td>
-      <td>26/08/2024</td>
-      <td>10/11/2025</td>
-      <td>26/08/2024</td>
-      <td>-</td>
-      <td>24/11/2025</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td><strong>1.29*</strong></td>
-      <td>17/04/2024</td>
-      <td>20/02/2025</td>
-      <td>20/02/2025</td>
-      <td>05/2026</td>
-      <td>20/02/2025</td>
-      <td>11/2026</td>
-      <td>05/2026</td>
-      <td>11/2026</td>
-    </tr>
-    <tr>
-      <td><strong>1.30*</strong></td>
-      <td>02/01/2025</td>
-      <td>22/05/2025</td>
-      <td>22/05/2025</td>
-      <td>05/2027</td>
-      <td>22/05/2025</td>
-      <td>11/2027</td>
-      <td>05/2027</td>
-      <td>11/2027</td>
-    </tr>
-    <tr>
-      <td><strong>1.31</strong></td>
-      <td>03/2026</td>
-      <td>05/2026</td>
-      <td>05/2026</td>
-      <td>05/2028</td>
-      <td>05/2026</td>
-      <td>11/2028</td>
-      <td>05/2028</td>
-      <td>11/2028</td>
-    </tr>
-    <tr>
-      <td><strong>1.32</strong></td>
-      <td>03/2026</td>
-      <td>06/2026</td>
-      <td>06/2026</td>
-      <td>05/2029</td>
-      <td>06/2026</td>
-      <td>11/2029</td>
-      <td>05/2029</td>
-      <td>11/2029</td>
-    </tr>
-    <tr>
-      <td><strong>1.33</strong></td>
-      <td>05/2026</td>
-      <td>11/2026</td>
-      <td>11/2026</td>
-      <td>05/2030</td>
-      <td>11/2026</td>
-      <td>11/2030</td>
-      <td>05/2030</td>
-      <td>11/2030</td>
-    </tr>
-  </tbody>
-</table>
+| Minor version | Rapid Available | Rapid Auto Upgrade | Stable Available | Stable Auto Upgrade | Extended Available | Extended Auto Upgrade | End of Standard Support | End of Extended Support |
+|---------------|-----------------|-------------------|------------------|---------------------|--------------------|-----------------------|-------------------------|-------------------------|
+| **1.27** | 17/04/2024 | 25/04/2025 | 26/08/2024 | 25/04/2025 | 26/08/2024 | - | 12/05/2025 | - |
+| **1.28** | 17/04/2024 | 10/11/2025 | 26/08/2024 | 10/11/2025 | 26/08/2024 | - | 24/11/2025 | - |
+| **1.29*** | 17/04/2024 | 20/02/2025 | 20/02/2025 | 05/2026 | 20/02/2025 | 11/2026 | 05/2026 | 11/2026 |
+| **1.30*** | 02/01/2025 | 22/05/2025 | 22/05/2025 | 05/2027 | 22/05/2025 | 11/2027 | 05/2027 | 11/2027 |
+| **1.31** | 03/2026 | 05/2026 | 05/2026 | 05/2028 | 05/2026 | 11/2028 | 05/2028 | 11/2028 |
+| **1.32** | 03/2026 | 06/2026 | 06/2026 | 05/2029 | 06/2026 | 11/2029 | 05/2029 | 11/2029 |
+| **1.33** | 05/2026 | 11/2026 | 11/2026 | 05/2030 | 11/2026 | 11/2030 | 05/2030 | 11/2030 |
 
 ## Release Schedule Prediction Stages
 
