@@ -1,4 +1,4 @@
-# VKS Version Release Schedule
+# Version Release Schedule
 
 This page lists the release dates and end-of-support dates for Kubernetes versions on VKS (VNGCloud Kubernetes Service).
 
@@ -6,11 +6,7 @@ This page lists the release dates and end-of-support dates for Kubernetes versio
 
 VKS provides the following release channels to manage Kubernetes version lifecycle:
 
-| Release Channel    | Description                                                                         |
-| ------------------ | ----------------------------------------------------------------------------------- |
-| **Rapid**    | Latest version, intended for testing environments and early adopters. |
-| **Stable**   | Stable version, recommended for production environments.     |
-| **Extended** | Extended support period for older versions.                    |
+<table><thead><tr><th width="176">Release Channel</th><th>Description</th></tr></thead><tbody><tr><td><strong>Rapid</strong></td><td>Latest version, intended for testing environments and early adopters.</td></tr><tr><td><strong>Stable</strong></td><td>Stable version, recommended for production environments.</td></tr><tr><td><strong>Extended</strong></td><td>Extended support period for older versions.</td></tr></tbody></table>
 
 ## Version Release Schedule
 
@@ -45,12 +41,7 @@ The table below shows the release schedule and support timeline for Kubernetes v
 
 The dates in the release schedule typically go through the following stages, with increasing levels of detail and certainty:
 
-| Stage                                 | Description                                                                                                                                                                                                                                                                                                                                              |
-| ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **TBD**                               | When an item is marked as "TBD", the date has not yet been determined.                                                                                                                                                                                                                                                                   |
-| **Month or Quarter Prediction** | Dates with only month (e.g., 2025-03) or quarter (e.g., 2025-Q3) are estimates that will be updated when specific dates are known. Dates are updated from quarter to month prediction when the estimated date is less than three months away.                                                                          |
-| **Day Prediction**             | *Italicized* dates with day-level detail are provided when the month prediction is less than 14 days from the last update of the release schedule table, but the specific date has not yet been determined. These italicized dates are estimates and will be updated when specific dates are known. |
-| **Specific Date**                    | Non-italicized dates are best estimates, representing the highest level of certainty in the release schedule.                                                                                                                                                                                                                         |
+<table><thead><tr><th width="217">Stage</th><th>Description</th></tr></thead><tbody><tr><td><strong>TBD</strong></td><td>When an item is marked as "TBD", the date has not yet been determined.</td></tr><tr><td><strong>Month or Quarter Prediction</strong></td><td>Dates with only month (e.g., 2025-03) or quarter (e.g., 2025-Q3) are estimates that will be updated when specific dates are known. Dates are updated from quarter to month prediction when the estimated date is less than three months away.</td></tr><tr><td><strong>Day Prediction</strong></td><td><em>Italicized</em> dates with day-level detail are provided when the month prediction is less than 14 days from the last update of the release schedule table, but the specific date has not yet been determined. These italicized dates are estimates and will be updated when specific dates are known.</td></tr><tr><td><strong>Specific Date</strong></td><td>Non-italicized dates are best estimates, representing the highest level of certainty in the release schedule.</td></tr></tbody></table>
 
 ## Version Support Policy
 
@@ -59,7 +50,6 @@ VKS follows these principles for Kubernetes version support:
 1. **New Versions**: New Kubernetes versions are first released in the **Rapid channel** so users can test before moving to the **Stable channel**.
 2. **Support Duration**: Each version of Kubernetes is supported for a specific period. After this time, the version will be marked as end-of-support.
 3. **End of Standard Support**: When a version reaches end-of-support:
-
    * Users will not be able to create new clusters/node groups with that version.
    * Existing clusters will be automatically upgraded to the next supported version.
 4. **Recommendation**: To ensure stability and security, we recommend users proactively upgrade their clusters to a new version before the current version reaches end-of-support.
