@@ -713,6 +713,7 @@
   * [Mô hình hoạt động](vks/mo-hinh-hoat-dong.md)
   * [Thông báo và cập nhật](vks/thong-bao-va-cap-nhat/README.md)
     * [Release notes](vks/thong-bao-va-cap-nhat/release-notes.md)
+    * [Lịch phát hành phiên bản](vks/thong-bao-va-cap-nhat/vks-release-schedule.md)
   * [Bắt đầu với VKS](vks/bat-dau-voi-vks/README.md)
     * [Hướng dẫn cài đặt và cấu hình công cụ kubectl trong Kubernetes](vks/bat-dau-voi-vks/huong-dan-cai-dat-va-cau-hinh-cong-cu-kubectl-trong-kubernetes.md)
     * [Khởi tạo một Public Cluster](vks/bat-dau-voi-vks/khoi-tao-mot-public-cluster/README.md)

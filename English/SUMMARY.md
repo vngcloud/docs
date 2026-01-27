@@ -640,6 +640,7 @@
   * [How VKS works?](vks/mo-hinh-hoat-dong.md)
   * [Announcements and Updates](vks/thong-bao-va-cap-nhat/README.md)
     * [Release notes](vks/thong-bao-va-cap-nhat/release-notes.md)
+    * [Version Release Schedule](vks/thong-bao-va-cap-nhat/vks-release-schedule.md)
   * [Getting Started with VKS](vks/bat-dau-voi-vks/README.md)
     * [Instructions for installing and configuring the kubectl in Kubenetes](vks/bat-dau-voi-vks/instructions-for-installing-and-configuring-the-kubectl-in-kubenetes.md)
     * [Create a Public Cluster](vks/bat-dau-voi-vks/create-a-public-cluster/README.md)

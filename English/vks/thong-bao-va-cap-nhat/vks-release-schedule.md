@@ -154,3 +154,6 @@ VKS follows these principles for Kubernetes version support:
 ## Related Documentation
 
 * [Release Notes](release-notes.md) - View detailed updates and new features of VKS.
+* [Upgrade Kubernetes Version](../cluster/upgrade-cluster-voi-zero-downtime.md) - Guide to upgrade Kubernetes version for cluster.
+* [Auto Upgrade](../upgrade-kubernetes-version/automatically-upgrade.md) - Learn about automatic Kubernetes version upgrade feature.
+* [Manual Upgrade](../upgrade-kubernetes-version/manually-upgrade.md) - Guide to manually upgrade Kubernetes version.
