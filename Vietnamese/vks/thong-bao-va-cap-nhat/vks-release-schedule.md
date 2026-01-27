@@ -14,7 +14,7 @@ VKS cung cấp các kênh phát hành sau để quản lý vòng đời phiên b
 
 ## Lịch phát hành phiên bản
 
-VKS tự động nâng cấp các cluster vào hoặc sau các ngày được chỉ định trong cột **Tự động nâng cấp** của bảng lịch trình bên dưới. Các bản patch của một phiên bản minor sẽ tiếp tục khả dụng cho đến khi **kết thúc hỗ trợ tiêu chuẩn**, ngoại trừ các cluster sử dụng **kênh Extended** - nơi phiên bản minor và các bản patch của nó sẽ tiếp tục khả dụng cho đến khi **kết thúc hỗ trợ mở rộng**.
+Bảng bên dưới hiển thị lịch phát hành và thời gian hỗ trợ cho các phiên bản Kubernetes trên VKS. Các bản patch của một phiên bản sẽ tiếp tục khả dụng cho đến khi **kết thúc hỗ trợ tiêu chuẩn**, ngoại trừ các cluster sử dụng **kênh Extended** - nơi phiên bản và các bản patch của nó sẽ tiếp tục khả dụng cho đến khi **kết thúc hỗ trợ mở rộng**.
 
 {% hint style="warning" %}
 **Lưu ý:** Các ngày trong bảng là dự đoán tốt nhất và được cập nhật định kỳ khi có thông tin mới.
@@ -24,19 +24,22 @@ VKS tự động nâng cấp các cluster vào hoặc sau các ngày được ch
 **Chú thích:**
 
 * **Khả dụng (Available)**: Ngày phiên bản có thể được sử dụng để tạo cluster mới.
-* **Tự động nâng cấp (Auto Upgrade)**: Ngày hệ thống bắt đầu tự động nâng cấp các cluster lên phiên bản tiếp theo.
 * **\***: Phiên bản hiện đang được hỗ trợ trên VKS.
   {% endhint %}
 
-| Phiên bản | Rapid Khả dụng | Rapid Tự động nâng cấp | Stable Khả dụng | Stable Tự động nâng cấp | Extended Khả dụng | Extended Tự động nâng cấp | Kết thúc hỗ trợ tiêu chuẩn | Kết thúc hỗ trợ mở rộng |
-|-----------|----------------|------------------------|-----------------|-------------------------|-------------------|---------------------------|----------------------------|-------------------------|
-| **1.27** | 17/04/2024 | 25/04/2025 | 26/08/2024 | 25/04/2025 | 26/08/2024 | - | 12/05/2025 | - |
-| **1.28** | 17/04/2024 | 10/11/2025 | 26/08/2024 | 10/11/2025 | 26/08/2024 | - | 24/11/2025 | - |
-| **1.29*** | 17/04/2024 | 20/02/2025 | 20/02/2025 | 05/2026 | 20/02/2025 | 11/2026 | 05/2026 | 11/2026 |
-| **1.30*** | 02/01/2025 | 22/05/2025 | 22/05/2025 | 05/2027 | 22/05/2025 | 11/2027 | 05/2027 | 11/2027 |
-| **1.31** | 03/2026 | 05/2026 | 05/2026 | 05/2028 | 05/2026 | 11/2028 | 05/2028 | 11/2028 |
-| **1.32** | 03/2026 | 06/2026 | 06/2026 | 05/2029 | 06/2026 | 11/2029 | 05/2029 | 11/2029 |
-| **1.33** | 05/2026 | 11/2026 | 11/2026 | 05/2030 | 11/2026 | 11/2030 | 05/2030 | 11/2030 |
+| Phiên bản     | Rapid Khả dụng | Stable Khả dụng | Kết thúc hỗ trợ tiêu chuẩn | Kết thúc hỗ trợ mở rộng |
+| --------------- | ---------------- | ----------------- | -------------------------------- | ----------------------------- |
+| **1.27**  | 17/04/2024       | 26/08/2024        | 12/05/2025                       | -                             |
+| **1.28**  | 17/04/2024       | 26/08/2024        | 24/11/2025                       | -                             |
+| **1.29*** | 17/04/2024       | 20/02/2025        | 05/2026                          | 11/2026                       |
+| **1.30*** | 02/01/2025       | 22/05/2025        | 05/2027                          | 11/2027                       |
+| **1.31**  | 03/2026          | 05/2026           | 05/2028                          | 11/2028                       |
+| **1.32**  | 03/2026          | 06/2026           | 05/2029                          | 11/2029                       |
+| **1.33**  | 05/2026          | 11/2026           | 05/2030                          | 11/2030                       |
+
+{% hint style="warning" %}
+**Lưu ý:** Sau thời gian **Kết thúc hỗ trợ tiêu chuẩn**, VKS sẽ tiến hành force upgrade từng cluster còn ở phiên bản cũ lên phiên bản được hỗ trợ tiếp theo. Khách hàng cần extended support vui lòng [liên hệ chúng tôi](https://vngcloud.vn/contact) để được tư vấn và hỗ trợ.
+{% endhint %}
 
 ## Các giai đoạn dự đoán lịch phát hành
 
@@ -54,8 +57,8 @@ Các ngày trong lịch phát hành thường trải qua các giai đoạn sau, 
 VKS tuân theo các nguyên tắc sau trong việc hỗ trợ phiên bản Kubernetes:
 
 1. **Phiên bản mới**: Các phiên bản Kubernetes mới sẽ được phát hành đầu tiên trong **kênh Rapid** để người dùng có thể thử nghiệm trước khi chuyển sang **kênh Stable**.
-2. **Thời gian hỗ trợ**: Mỗi phiên bản minor của Kubernetes sẽ được hỗ trợ trong một khoảng thời gian nhất định. Sau thời gian này, phiên bản sẽ được đánh dấu là ngừng hỗ trợ.
-3. **Tự động nâng cấp**: Khi một phiên bản hết hạn hỗ trợ:
+2. **Thời gian hỗ trợ**: Mỗi phiên bản của Kubernetes sẽ được hỗ trợ trong một khoảng thời gian nhất định. Sau thời gian này, phiên bản sẽ được đánh dấu là ngừng hỗ trợ.
+3. **Kết thúc hỗ trợ tiêu chuẩn**: Khi một phiên bản hết hạn hỗ trợ:
 
    * Người dùng sẽ không thể tạo cluster/node group mới với phiên bản đó.
    * Các cluster hiện có sẽ được tự động nâng cấp lên phiên bản được hỗ trợ tiếp theo.
