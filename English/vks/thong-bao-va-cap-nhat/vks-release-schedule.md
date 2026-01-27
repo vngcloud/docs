@@ -30,7 +30,7 @@ VKS automatically upgrades clusters on or after the dates specified in the **Aut
 <table>
   <thead>
     <tr>
-      <th rowspan="2">Version</th>
+      <th rowspan="2">Minor version</th>
       <th colspan="2" style="text-align:center">Rapid</th>
       <th colspan="2" style="text-align:center">Stable</th>
       <th colspan="2" style="text-align:center">Extended</th>
@@ -41,9 +41,9 @@ VKS automatically upgrades clusters on or after the dates specified in the **Aut
       <th>Available</th>
       <th>Auto Upgrade</th>
       <th>Available</th>
-      <th>Auto Upgrade (Deprecated)</th>
+      <th>Auto Upgrade</th>
       <th>Available</th>
-      <th>Auto Upgrade (End of support)</th>
+      <th>Auto Upgrade</th>
     </tr>
   </thead>
   <tbody>
@@ -53,7 +53,7 @@ VKS automatically upgrades clusters on or after the dates specified in the **Aut
       <td>25/04/2025</td>
       <td>26/08/2024</td>
       <td>25/04/2025</td>
-      <td>12/05/2025</td>
+      <td>26/08/2024</td>
       <td>-</td>
       <td>12/05/2025</td>
       <td>-</td>
@@ -64,7 +64,7 @@ VKS automatically upgrades clusters on or after the dates specified in the **Aut
       <td>10/11/2025</td>
       <td>26/08/2024</td>
       <td>10/11/2025</td>
-      <td>24/11/2025</td>
+      <td>26/08/2024</td>
       <td>-</td>
       <td>24/11/2025</td>
       <td>-</td>
@@ -74,55 +74,55 @@ VKS automatically upgrades clusters on or after the dates specified in the **Aut
       <td>17/04/2024</td>
       <td>20/02/2025</td>
       <td>20/02/2025</td>
-      <td>03/2026</td>
-      <td>03/2026</td>
-      <td>09/2026</td>
-      <td>03/2026</td>
-      <td>09/2026</td>
+      <td>05/2026</td>
+      <td>20/02/2025</td>
+      <td>11/2026</td>
+      <td>05/2026</td>
+      <td>11/2026</td>
     </tr>
     <tr>
       <td><strong>1.30</strong></td>
       <td>02/01/2025</td>
       <td>22/05/2025</td>
       <td>22/05/2025</td>
-      <td>03/2027</td>
-      <td>03/2027</td>
-      <td>09/2027</td>
-      <td>03/2027</td>
-      <td>09/2027</td>
+      <td>05/2027</td>
+      <td>22/05/2025</td>
+      <td>11/2027</td>
+      <td>05/2027</td>
+      <td>11/2027</td>
     </tr>
     <tr>
       <td><strong>1.31</strong></td>
       <td>03/2026</td>
       <td>05/2026</td>
       <td>05/2026</td>
-      <td>03/2028</td>
-      <td>03/2028</td>
-      <td>09/2028</td>
-      <td>03/2028</td>
-      <td>09/2028</td>
+      <td>05/2028</td>
+      <td>05/2026</td>
+      <td>11/2028</td>
+      <td>05/2028</td>
+      <td>11/2028</td>
     </tr>
     <tr>
       <td><strong>1.32</strong></td>
       <td>03/2026</td>
       <td>06/2026</td>
       <td>06/2026</td>
-      <td>03/2029</td>
-      <td>03/2029</td>
-      <td>09/2029</td>
-      <td>03/2029</td>
-      <td>09/2029</td>
+      <td>05/2029</td>
+      <td>06/2026</td>
+      <td>11/2029</td>
+      <td>05/2029</td>
+      <td>11/2029</td>
     </tr>
     <tr>
       <td><strong>1.33</strong></td>
       <td>05/2026</td>
       <td>11/2026</td>
       <td>11/2026</td>
-      <td>03/2030</td>
-      <td>03/2030</td>
-      <td>09/2030</td>
-      <td>03/2030</td>
-      <td>09/2030</td>
+      <td>05/2030</td>
+      <td>11/2026</td>
+      <td>11/2030</td>
+      <td>05/2030</td>
+      <td>11/2030</td>
     </tr>
   </tbody>
 </table>
