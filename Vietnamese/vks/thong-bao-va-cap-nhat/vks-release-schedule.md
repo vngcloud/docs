@@ -46,6 +46,6 @@ VKS tuân theo các nguyên tắc sau trong việc hỗ trợ phiên bản Kuber
 ## Tài liệu liên quan
 
 * [Release Notes](release-notes.md) - Xem chi tiết các cập nhật và tính năng mới của VKS.
-* [Nâng cấp phiên bản Kubernetes](../cluster/upgrade-cluster-voi-zero-downtime.md) - Hướng dẫn nâng cấp phiên bản Kubernetes cho cluster.
+* [Nâng cấp phiên bản Kubernetes](../upgrade-kubernetes-version/) - Hướng dẫn nâng cấp phiên bản Kubernetes cho cluster.
 * [Tự động nâng cấp](../upgrade-kubernetes-version/automatically-upgrade.md) - Tìm hiểu về tính năng tự động nâng cấp phiên bản Kubernetes.
 * [Nâng cấp thủ công](../upgrade-kubernetes-version/manually-upgrade.md) - Hướng dẫn nâng cấp phiên bản Kubernetes thủ công.
