@@ -25,6 +25,7 @@ VKS automatically upgrades clusters on or after the dates specified in the **Aut
 
 * **Available**: The date when the version can be used to create new clusters.
 * **Auto Upgrade**: The date when the system begins automatically upgrading clusters to the next version.
+* **\***: Version currently supported on VKS.
 {% endhint %}
 
 <table>
@@ -70,7 +71,7 @@ VKS automatically upgrades clusters on or after the dates specified in the **Aut
       <td>-</td>
     </tr>
     <tr>
-      <td><strong>1.29</strong></td>
+      <td><strong>1.29*</strong></td>
       <td>17/04/2024</td>
       <td>20/02/2025</td>
       <td>20/02/2025</td>
@@ -81,7 +82,7 @@ VKS automatically upgrades clusters on or after the dates specified in the **Aut
       <td>11/2026</td>
     </tr>
     <tr>
-      <td><strong>1.30</strong></td>
+      <td><strong>1.30*</strong></td>
       <td>02/01/2025</td>
       <td>22/05/2025</td>
       <td>22/05/2025</td>

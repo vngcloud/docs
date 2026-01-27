@@ -6,11 +6,11 @@ Trang này liệt kê các ngày phát hành và ngày kết thúc hỗ trợ ch
 
 VKS cung cấp các kênh phát hành sau để quản lý vòng đời phiên bản Kubernetes:
 
-| Kênh phát hành    | Mô tả                                                                         |
-| ------------------ | ------------------------------------------------------------------------------- |
+| Kênh phát hành  | Mô tả                                                                              |
+| ------------------ | ------------------------------------------------------------------------------------ |
 | **Rapid**    | Phiên bản mới nhất, dành cho môi trường thử nghiệm và người dùng sớm. |
-| **Stable**   | Phiên bản ổn định, được khuyến nghị cho môi trường production.     |
-| **Extended** | Kéo dài thời gian hỗ trợ cho các phiên bản cũ hơn.                    |
+| **Stable**   | Phiên bản ổn định, được khuyến nghị cho môi trường production.          |
+| **Extended** | Kéo dài thời gian hỗ trợ cho các phiên bản cũ hơn.                         |
 
 ## Lịch phát hành phiên bản
 
@@ -25,7 +25,8 @@ VKS tự động nâng cấp các cluster vào hoặc sau các ngày được ch
 
 * **Khả dụng (Available)**: Ngày phiên bản có thể được sử dụng để tạo cluster mới.
 * **Tự động nâng cấp (Auto Upgrade)**: Ngày hệ thống bắt đầu tự động nâng cấp các cluster lên phiên bản tiếp theo.
-{% endhint %}
+* **\***: Phiên bản hiện đang được hỗ trợ trên VKS.
+  {% endhint %}
 
 <table>
   <thead>
@@ -70,7 +71,7 @@ VKS tự động nâng cấp các cluster vào hoặc sau các ngày được ch
       <td>-</td>
     </tr>
     <tr>
-      <td><strong>1.29</strong></td>
+      <td><strong>1.29*</strong></td>
       <td>17/04/2024</td>
       <td>20/02/2025</td>
       <td>20/02/2025</td>
@@ -81,7 +82,7 @@ VKS tự động nâng cấp các cluster vào hoặc sau các ngày được ch
       <td>11/2026</td>
     </tr>
     <tr>
-      <td><strong>1.30</strong></td>
+      <td><strong>1.30*</strong></td>
       <td>02/01/2025</td>
       <td>22/05/2025</td>
       <td>22/05/2025</td>
@@ -133,7 +134,7 @@ Các ngày trong lịch phát hành thường trải qua các giai đoạn sau, 
 
 | Giai đoạn                                 | Mô tả                                                                                                                                                                                                                                                                                                                                              |
 | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Chưa xác định (TBD)**                               | Khi một mục được đánh dấu là "TBD" (To Be Determined), ngày đó chưa được xác định.                                                                                                                                                                                                                                                                   |
+| **Chưa xác định (TBD)**           | Khi một mục được đánh dấu là "TBD" (To Be Determined), ngày đó chưa được xác định.                                                                                                                                                                                                                                                |
 | **Dự đoán theo tháng hoặc quý** | Các ngày chỉ có tháng (ví dụ: 2025-03) hoặc quý (ví dụ: 2025-Q3) là các giá trị ước tính sẽ được cập nhật khi biết ngày cụ thể. Ngày được cập nhật từ dự đoán theo quý sang theo tháng khi ngày ước tính còn dưới ba tháng.                                                                          |
 | **Dự đoán theo ngày**             | Các ngày *in nghiêng* với độ chi tiết theo ngày được cung cấp khi dự đoán theo tháng còn dưới 14 ngày kể từ lần cập nhật gần nhất của bảng lịch phát hành, nhưng ngày cụ thể vẫn chưa được xác định. Các ngày in nghiêng này là ước tính và sẽ được cập nhật khi biết ngày cụ thể. |
 | **Ngày cụ thể**                    | Các ngày không in nghiêng là dự đoán tốt nhất, thể hiện mức độ chắc chắn cao nhất trong lịch phát hành.                                                                                                                                                                                                                         |
