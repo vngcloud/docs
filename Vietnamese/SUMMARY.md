@@ -4,6 +4,7 @@
 * [Giới thiệu chung](gioi-thieu-chung/README.md)
   * [Về GreenNode](gioi-thieu-chung/ve-vng-cloud.md)
   * [GreenNode Regions và Availability Zones](gioi-thieu-chung/vng-regions-and-availability-zones.md)
+  * [GreenNode Endpoints](gioi-thieu-chung/greennode-endpoints.md)
   * [Thông báo và cập nhật](gioi-thieu-chung/thong-bao-va-cap-nhat/README.md)
     * [2024](gioi-thieu-chung/thong-bao-va-cap-nhat/2024.md)
     * [2025](gioi-thieu-chung/thong-bao-va-cap-nhat/2025.md)
