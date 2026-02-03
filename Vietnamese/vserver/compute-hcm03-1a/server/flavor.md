@@ -17,5 +17,9 @@ GreenNode cung cấp nhiều loại cấu hình Flavor được tinh chỉnh cho
   * Tối ưu GPU: cung cấp cấu hình có card GPU cho các Server đối với các mục đích dùng trong trí tuệ nhân tạo, xử lý dữ liệu lớn.
 * **Hạ tầng CPU**: Các dòng Server được phân loại rõ thêm bằng việc phân loại các dòng CPU. Ví dụ các Flavor S và S1 trong nhóm mục đích chung sẽ sử dụng CPU Intel Scalable Gen2 và 3. Tương tự, A và A1 sẽ dùng CPU AMD EPYC Zen2 và Zen3. Các chữ số phía sau chữ cái đầu tiên để chỉ thế hệ CPU.
 * **Loại cấu hình**: Mô tả tỷ lệ cấu hình, xác định số lượng tài nguyên CPU, RAM… được cấp phát cho Server.
+* Ngoài ra, còn có 1 loại flavor đặc biệt chứa Emperal Disk như: g5-standard-16x120x300NVMe-1H100.
+  * Ephemeral Disk cung cấp bộ nhớ tạm thời dạng block-level cho Server của bạn trên nền tảng GreenNode Cloud. Loại lưu trữ này được cung cấp bởi các đĩa vật lý gắn trực tiếp vào máy chủ (host computer) nơi server của bạn đang chạy
+  * Dữ liệu trên Ephemeral Disk sẽ bị mất vĩnh viễn khi server bị delete, migrate hoặc khi phần cứng gặp sự cố. Hãy đảm bảo bạn không lưu dữ liệu quan trọng trên loại lưu trữ này.
+  * Ephemeral Storage có thể backup với Veeam [https://docs.vngcloud.vn/vng-cloud-document/vn/backup-center/backup-voi-veeam](https://docs.vngcloud.vn/vng-cloud-document/vn/backup-center/backup-voi-veeam).
 
 <br>
