@@ -29,13 +29,12 @@ Các image tại GreenNode được phân loại thành Image chung, Image riên
 2. Tại tab **MY IMAGES**, chọn images tương ứng cần để tạo vServer
 3. Thực hiện tiếp các bước còn lại của hướng dẫn về Khởi tạo vServer để tạo ra Server hoàn chỉnh từ My image
 
-Khi tạo image trên GreenNode, có một số hạn mức tài nguyên liên quan đến image như sau:
-\
-Số lượng Image tối đa trên 1 Root User Account: 50 (có thể điều chỉnh).
-\GreenNode
-Dung lượng GB Image Size tối đa trên 1 Root User Account: 1000 GB (có thể điều chỉnh).
-\GreenNodeGreenNode
-Vì vậy, khi tạo image, bạn cần lưu ý đến giới hạn tổng dung lượng image là 1000 GB cho toàn bộ các image trong tài khoản của mình. Nếu bạn cần tăng hạn mức này, có thể yêu cầu điều chỉnh thông qua trang hỗ trợ của GreenNode.
+Khi tạo image trên GreenNode, có một số hạn mức tài nguyên liên quan đến image như sau:\
+Số lượng Image tối đa trên 1 Root User Account: 50 (có thể điều chỉnh). \GreenNode Dung lượng GB Image Size tối đa trên 1 Root User Account: 1000 GB (có thể điều chỉnh). \GreenNodeGreenNode Vì vậy, khi tạo image, bạn cần lưu ý đến giới hạn tổng dung lượng image là 1000 GB cho toàn bộ các image trong tài khoản của mình. Nếu bạn cần tăng hạn mức này, có thể yêu cầu điều chỉnh thông qua trang hỗ trợ của GreenNode.
+
+Đơn giá cho dịch vụ Image là: 2,400 VND cho mỗi GB mỗi tháng.
+
+
 
 Trường hợp bạn muốn chủ động upload 1 image hoặc OS (Image/OS này chưa có trên GreenNode), bạn cần liên hệ với bộ phận hỗ trợ của GreenNode để được tư vấn trực tiếp.<br>
 
