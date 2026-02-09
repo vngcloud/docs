@@ -6,7 +6,7 @@ VKS (GreenNode Kubernetes Service) là một dịch vụ được quản lý tr�
 
 ---
 
-## Những điểm nổi bật của VKS `<a href="#whatisvks-nhungdiemnoibatcuavks" id="whatisvks-nhungdiemnoibatcuavks"></a>`
+## Những điểm nổi bật của VKS
 
 * **Quản lý Control Plane hoàn toàn tự động (Fully Managed control plane):** VKS sẽ giải phóng bạn khỏi gánh nặng quản lý Control Plane của Kubernetes, giúp bạn tập trung vào việc phát triển ứng dụng.
 * **Hỗ trợ các phiên bản Kubernetes mới nhất:** VKS luôn cập nhật những phiên bản Kubernetes mới nhất (minor version từ 1.29. 1.30) để đảm bảo bạn luôn tận dụng được những tính năng tiên tiến nhất.
@@ -25,7 +25,7 @@ VKS (GreenNode Kubernetes Service) là một dịch vụ được quản lý tr�
 
 ---
 
-### **Region** `<a href="#farm" id="farm"></a>`
+### **Region**
 
 Hiện tại, trên VKS, chúng tôi đang cung cấp cho bạn 2 cơ sở hạ tầng riêng biệt được đặt tại Hà Nội và Hồ Chí Minh. Bạn có thể lựa chọn sử dụng VKS trên mỗi region tùy thuộc vào vị trí và nhu cầu thực tế của bạn. Đối với 2 farm HCM03, HAN01, các thông số cụ thể cho mỗi region được chúng tôi cung cấp như sau:
 
