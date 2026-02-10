@@ -12,6 +12,8 @@ Trong mô hình Multi-AZ, các thành phần của Control Plane (API Server, Co
 * Tự động failover mà không cần can thiệp thủ công
 * Đáp ứng yêu cầu compliance về disaster recovery
 
+Để khởi tạo một Multi-AZ Cluster, vui lòng tham khảo hướng dẫn tại [đây](../bat-dau-voi-vks/khoi-tao-mot-multi-az-cluster.md).
+
 ### So sánh Single-AZ và Multi-AZ Cluster
 
 | Đặc điểm | Single-AZ | Multi-AZ |
@@ -41,165 +43,46 @@ Trong mô hình Multi-AZ, các thành phần của Control Plane (API Server, Co
 
 ***
 
-## Điều kiện tiên quyết (Prerequisites) <a href="#multi-az-control-plane-prerequisites" id="multi-az-control-plane-prerequisites"></a>
+## Kiến trúc Multi-AZ Control Plane <a href="#multi-az-control-plane-kientruc" id="multi-az-control-plane-kientruc"></a>
 
-Để tạo Multi-AZ Cluster, bạn cần đảm bảo các điều kiện sau:
-
-### 1. VPC phải bật DNS
-
-{% hint style="warning" %}
-**Quan trọng:**
-
-Multi-AZ Control Plane **chỉ hỗ trợ VPC đã bật DNS**. Nếu VPC chưa bật DNS, VPC đó sẽ **không hiển thị** trong dropdown khi tạo Multi-AZ Cluster.
-{% endhint %}
-
-Để bật DNS cho VPC, vui lòng thực hiện tại portal vServer theo hướng dẫn tại [đây](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/).
-
-### 2. Chuẩn bị Subnets
-
-* **Tối thiểu 2 subnets** từ **2 Availability Zone khác nhau**
-* Tất cả subnets phải thuộc **cùng một VPC**
-* Các subnets phải ở trạng thái **ACTIVE**
-
-Ví dụ cấu hình subnets hợp lệ:
-
-| Subnet Name | AZ | CIDR | Hợp lệ? |
-| --- | --- | --- | --- |
-| sub-1A | HCM-1A | 10.60.0.0/24 | ✅ |
-| sub-1B | HCM-1B | 10.60.1.0/24 | ✅ |
-
-Ví dụ cấu hình subnets **không** hợp lệ:
-
-| Subnet Name | AZ | CIDR | Lý do không hợp lệ |
-| --- | --- | --- | --- |
-| sub-1A | HCM-1A | 10.60.0.0/24 | ❌ Cùng AZ |
-| sub-2A | HCM-1A | 10.60.3.0/24 | ❌ Cùng AZ |
-
-### 3. Các điều kiện khác
-
-* Có ít nhất 1 **SSH key** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key, vui lòng khởi tạo theo hướng dẫn tại [đây](../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md).
-* Đã cài đặt và cấu hình **kubectl** trên thiết bị của bạn. Vui lòng tham khảo tại [đây](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) nếu bạn chưa rõ cách cài đặt.
-
-***
-
-## Tạo Multi-AZ Cluster <a href="#multi-az-control-plane-taocluster" id="multi-az-control-plane-taocluster"></a>
-
-Để tạo một Multi-AZ Cluster, hãy làm theo các bước bên dưới:
-
-### Bước 1: Truy cập VKS Console
-
-Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
-
-### Bước 2: Khởi tạo Cluster
-
-Tại màn hình **Overview**, chọn **Create a Cluster**.
-
-### Bước 3: Cấu hình Cluster Information
-
-Tại phần **Cluster Configuration**, nhập các thông tin cơ bản:
-
-* **Cluster Name**: Tên cho cluster của bạn (3-63 ký tự, chỉ bao gồm chữ, số và dấu gạch ngang)
-* **Kubernetes Version**: Chọn phiên bản Kubernetes mong muốn
-* **Description**: Mô tả cho cluster (tùy chọn)
-
-### Bước 4: Cấu hình Network Setting - Chọn Control Plane Availability
-
-Đây là bước quan trọng để tạo Multi-AZ Cluster:
-
-**4.1. Chọn Control Plane Availability**
-
-Tại phần **Network Setting**, bạn sẽ thấy trường **Control Plane Availability** với badge **[NEW]**:
-
-<!-- TODO: Chèn hình ảnh Control Plane Availability dropdown -->
-<figure><img src="../../.gitbook/assets/[PLACEHOLDER-control-plane-availability-dropdown].png" alt=""><figcaption><p>Control Plane Availability selection</p></figcaption></figure>
-
-Có 2 lựa chọn:
-
-| Option | Mô tả |
-| --- | --- |
-| **Single-AZ** | Triển khai cluster trong một Availability Zone. Phù hợp cho môi trường development và testing. |
-| **Multi-AZ** | Triển khai cluster trên nhiều Availability Zones để đảm bảo High Availability. |
-
-Chọn **Multi-AZ** để tạo cluster với Control Plane phân bổ trên nhiều AZ.
-
-**4.2. Chọn VPC**
-
-* Chọn VPC đã **bật DNS** từ dropdown
-* Lưu ý: Chỉ các VPC đã bật DNS mới hiển thị khi chọn Multi-AZ
-
-<!-- TODO: Chèn hình ảnh VPC dropdown khi chọn Multi-AZ -->
-<figure><img src="../../.gitbook/assets/[PLACEHOLDER-vpc-dropdown-multi-az].png" alt=""><figcaption><p>VPC selection for Multi-AZ Cluster</p></figcaption></figure>
-
-**4.3. Chọn Subnets cho Control Plane**
-
-Khi chọn **Multi-AZ**, trường **Subnets** sẽ hiển thị dạng **multi-select dropdown**:
-
-<!-- TODO: Chèn hình ảnh Subnets multi-select dropdown -->
-<figure><img src="../../.gitbook/assets/[PLACEHOLDER-subnets-multi-select].png" alt=""><figcaption><p>Subnets multi-select for Multi-AZ Cluster</p></figcaption></figure>
-
-**Behavior mặc định:**
-* Hệ thống sẽ **tự động chọn sẵn 1 subnet đầu tiên của mỗi AZ** có trong VPC
-* Ví dụ: Nếu VPC có subnets ở HCM-1A, HCM-1B, HCM-1C → Mặc định chọn sẵn 3 subnets (1 subnet/zone)
-
-**Các subnet đã chọn hiển thị dạng chip/tag:**
+Sơ đồ dưới đây minh họa kiến trúc của Multi-AZ Cluster:
 
 ```
-[sub-1A 10.60.0.0/24 • HCM-1A] [x]  [sub-1B 10.60.1.0/24 • HCM-1B] [x]
+                    ┌─────────────────────────────────────────┐
+                    │              VPC (10.60.0.0/16)         │
+                    │                                         │
+┌───────────────────┼─────────────────────────────────────────┼───────────────────┐
+│                   │                                         │                   │
+│   ┌───────────────┴───────────────┐   ┌───────────────────┴───────────────┐   │
+│   │         AZ: HCM-1A            │   │         AZ: HCM-1B                │   │
+│   │    Subnet: 10.60.0.0/24       │   │    Subnet: 10.60.1.0/24           │   │
+│   │                               │   │                                   │   │
+│   │   ┌─────────────────────┐     │   │   ┌─────────────────────┐         │   │
+│   │   │   Control Plane     │     │   │   │   Control Plane     │         │   │
+│   │   │   (API Server)      │     │   │   │   (API Server)      │         │   │
+│   │   └─────────────────────┘     │   │   └─────────────────────┘         │   │
+│   │                               │   │                                   │   │
+│   │   ┌─────────────────────┐     │   │   ┌─────────────────────┐         │   │
+│   │   │   Worker Nodes      │     │   │   │   Worker Nodes      │         │   │
+│   │   │   (Node Group 1)    │     │   │   │   (Node Group 2)    │         │   │
+│   │   └─────────────────────┘     │   │   └─────────────────────┘         │   │
+│   │                               │   │                                   │   │
+│   └───────────────────────────────┘   └───────────────────────────────────┘   │
+│                                                                               │
+│                        ┌─────────────────────┐                                │
+│                        │   vLB Multi-AZ      │                                │
+│                        │   (Load Balancer)   │                                │
+│                        └─────────────────────┘                                │
+│                                                                               │
+└───────────────────────────────────────────────────────────────────────────────┘
 ```
 
-* Click nút **(x)** trên chip để xóa subnet khỏi danh sách đã chọn
-* Bạn có thể thêm/bớt subnet nhưng phải đảm bảo **tối thiểu 2 subnets từ 2 AZ khác nhau**
+**Các thành phần chính:**
 
-<!-- TODO: Chèn hình ảnh subnet chips đã chọn -->
-<figure><img src="../../.gitbook/assets/[PLACEHOLDER-subnet-chips].png" alt=""><figcaption><p>Selected subnets displayed as chips</p></figcaption></figure>
-
-{% hint style="info" %}
-**Validation Rules:**
-
-* Tối thiểu **2 subnets** phải được chọn
-* Các subnets phải thuộc **ít nhất 2 AZ khác nhau**
-* Nếu chọn 2 subnet cùng AZ, hệ thống sẽ hiển thị lỗi: *"Các subnet phải thuộc ít nhất 2 Availability Zone khác nhau"*
-{% endhint %}
-
-### Bước 5: Cấu hình Node Group Network Setting
-
-Tại phần **Node group network setting**, bạn cần chọn subnet cho Node Group:
-
-<!-- TODO: Chèn hình ảnh Node Group Network Setting section -->
-<figure><img src="../../.gitbook/assets/[PLACEHOLDER-node-group-network-setting].png" alt=""><figcaption><p>Node Group Network Setting for Multi-AZ Cluster</p></figcaption></figure>
-
-| Field | Mô tả |
-| --- | --- |
-| **VPC** | Kế thừa từ Network Configuration (read-only, không thể thay đổi) |
-| **Subnet** | Dropdown single-select, chỉ hiển thị các subnets đã chọn cho cluster ở bước trước |
-
-**Lưu ý quan trọng:**
-
-* Mỗi Node Group chỉ được chọn **1 subnet** (tương ứng với 1 AZ)
-* AZ của Node Group được xác định tự động dựa trên subnet đã chọn
-* Bạn có thể tạo thêm Node Group ở các AZ khác sau khi cluster được tạo
-
-{% hint style="info" %}
-**Tip:**
-
-Để đảm bảo High Availability cho workloads, bạn nên tạo nhiều Node Group ở các AZ khác nhau. Điều này giúp phân bổ worker nodes trên nhiều AZ, tăng khả năng chịu lỗi cho ứng dụng.
-{% endhint %}
-
-### Bước 6: Cấu hình các phần còn lại
-
-Hoàn tất cấu hình các phần sau (tương tự như tạo Single-AZ Cluster):
-
-* **Default Node Group Configuration**: Node Group Information, Automation Setting, Instance type, Volume Setting, Security Setting
-* **Plugin**: Enable BlockStore Persistent Disk CSI Driver, Enable vLB Native Integration Driver
-
-### Bước 7: Tạo Cluster
-
-Chọn **Create Kubernetes cluster**. Hãy chờ vài phút để hệ thống khởi tạo cluster, trạng thái lúc này là **Creating**.
-
-<!-- TODO: Chèn hình ảnh cluster đang Creating -->
-<figure><img src="../../.gitbook/assets/[PLACEHOLDER-cluster-creating].png" alt=""><figcaption><p>Cluster đang được khởi tạo</p></figcaption></figure>
-
-Khi trạng thái chuyển sang **Active**, cluster của bạn đã sẵn sàng sử dụng.
+* **Control Plane**: Được phân bổ trên nhiều AZ, bao gồm API Server, Controller Manager, Scheduler, etcd
+* **etcd cluster**: Được replicate across AZs để đảm bảo data consistency
+* **vLB Multi-AZ**: Load Balancer phân phối traffic đến Control Plane nodes trên các AZ
+* **Node Groups**: Mỗi Node Group chỉ triển khai trong 1 subnet (1 AZ), người dùng có thể tạo nhiều Node Group ở các AZ khác nhau
 
 ***
 
@@ -290,49 +173,6 @@ Các tài nguyên sau **có thể không bị xóa tự động**:
 * Load Balancer được integrate vào cluster bởi bạn
 * Persistent Volume được integrate vào cluster bởi bạn
 {% endhint %}
-
-***
-
-## Kiến trúc Multi-AZ Control Plane <a href="#multi-az-control-plane-kientruc" id="multi-az-control-plane-kientruc"></a>
-
-Sơ đồ dưới đây minh họa kiến trúc của Multi-AZ Cluster:
-
-```
-                    ┌─────────────────────────────────────────┐
-                    │              VPC (10.60.0.0/16)         │
-                    │                                         │
-┌───────────────────┼─────────────────────────────────────────┼───────────────────┐
-│                   │                                         │                   │
-│   ┌───────────────┴───────────────┐   ┌───────────────────┴───────────────┐   │
-│   │         AZ: HCM-1A            │   │         AZ: HCM-1B                │   │
-│   │    Subnet: 10.60.0.0/24       │   │    Subnet: 10.60.1.0/24           │   │
-│   │                               │   │                                   │   │
-│   │   ┌─────────────────────┐     │   │   ┌─────────────────────┐         │   │
-│   │   │   Control Plane     │     │   │   │   Control Plane     │         │   │
-│   │   │   (API Server)      │     │   │   │   (API Server)      │         │   │
-│   │   └─────────────────────┘     │   │   └─────────────────────┘         │   │
-│   │                               │   │                                   │   │
-│   │   ┌─────────────────────┐     │   │   ┌─────────────────────┐         │   │
-│   │   │   Worker Nodes      │     │   │   │   Worker Nodes      │         │   │
-│   │   │   (Node Group 1)    │     │   │   │   (Node Group 2)    │         │   │
-│   │   └─────────────────────┘     │   │   └─────────────────────┘         │   │
-│   │                               │   │                                   │   │
-│   └───────────────────────────────┘   └───────────────────────────────────┘   │
-│                                                                               │
-│                        ┌─────────────────────┐                                │
-│                        │   vLB Multi-AZ      │                                │
-│                        │   (Load Balancer)   │                                │
-│                        └─────────────────────┘                                │
-│                                                                               │
-└───────────────────────────────────────────────────────────────────────────────┘
-```
-
-**Các thành phần chính:**
-
-* **Control Plane**: Được phân bổ trên nhiều AZ, bao gồm API Server, Controller Manager, Scheduler, etcd
-* **etcd cluster**: Được replicate across AZs để đảm bảo data consistency
-* **vLB Multi-AZ**: Load Balancer phân phối traffic đến Control Plane nodes trên các AZ
-* **Node Groups**: Mỗi Node Group chỉ triển khai trong 1 subnet (1 AZ), người dùng có thể tạo nhiều Node Group ở các AZ khác nhau
 
 ***
 
