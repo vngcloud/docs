@@ -71,7 +71,7 @@ Ví dụ cấu hình subnets **không** hợp lệ:
 
 * **Control Plane Availability:** Chọn **Multi-AZ** để triển khai Control Plane trên nhiều Availability Zone.
 
-<figure><img src="../../.gitbook/assets/[PLACEHOLDER-control-plane-availability-dropdown].png" alt=""><figcaption><p>Control Plane Availability selection</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/multi-az-control-plane-availability-dropdown.png" alt=""><figcaption><p>Control Plane Availability selection</p></figcaption></figure>
 
   Có 2 lựa chọn:
 
@@ -81,20 +81,26 @@ Ví dụ cấu hình subnets **không** hợp lệ:
   | **Multi-AZ** | Triển khai cluster trên nhiều Availability Zones để đảm bảo High Availability. Khuyến nghị cho production. |
 
 * **Network type:** Lựa chọn loại network mà bạn mong muốn sử dụng cho Cluster. Hiện tại, VKS cung cấp cho bạn chọn sử dụng 1 trong 3 loại network Calico Overlay, Cilium Overlay, Cilium VPC Native Routing.
+  * Đối với loại network **Calico Overlay, Cilium Overlay**: Encapsulation Mode được tự chọn mặc định bởi hệ thống và bạn không thể thay đổi. Bạn có thể nhập lại thông số **CIDR** (dải mạng ảo mà các pod sẽ sử dụng).
+  * Đối với loại network **Cilium VPC Native Routing**: Khi chọn loại network này, trường **Node CIDR mask size** sẽ xuất hiện ngay tại phần Network Setting. Thông số này cho biết kích thước CIDR dành cho mỗi node, quyết định số lượng địa chỉ IP từ dải Pod IP range có thể cấp phát cho node đó. Bạn cần lựa chọn một giá trị phù hợp với nhu cầu của bạn.
+
+<figure><img src="../../.gitbook/assets/multi-az-network-setting-cilium-vpc-native-routing.png" alt=""><figcaption><p>Network Setting khi chọn Cilium VPC Native Routing: Node CIDR mask size xuất hiện</p></figcaption></figure>
+
+{% hint style="info" %}
+**Lưu ý về Cilium VPC Native Routing và Multi-AZ:**
+
+Khi chọn **Cilium VPC Native Routing** kết hợp với **Multi-AZ**, trường **Pod IP range** (Default Pod IP range) sẽ **không nằm** ở phần Network Setting mà được chuyển xuống phần **Node Group Network Setting** (Bước 7). Điều này cho phép mỗi Node Group tại mỗi AZ có thể cấu hình Pod IP range riêng.
+{% endhint %}
 
 * **VPC:** Chọn VPC đã **bật DNS** từ dropdown. Lưu ý: khi chọn Multi-AZ, **chỉ các VPC đã bật DNS mới hiển thị**. Nếu bạn không thấy VPC nào trong danh sách, vui lòng bật DNS cho VPC tại portal vServer.
 
-<figure><img src="../../.gitbook/assets/[PLACEHOLDER-vpc-dropdown-multi-az].png" alt=""><figcaption><p>VPC selection for Multi-AZ Cluster</p></figcaption></figure>
-
 * **Subnets:** Khi chọn **Multi-AZ**, trường Subnet thay đổi thành dạng **multi-select dropdown**, cho phép bạn chọn nhiều subnets:
-
-<figure><img src="../../.gitbook/assets/[PLACEHOLDER-subnets-multi-select].png" alt=""><figcaption><p>Subnets multi-select for Multi-AZ Cluster</p></figcaption></figure>
 
   * Hệ thống sẽ **tự động chọn sẵn 1 subnet đầu tiên của mỗi AZ** có trong VPC. Ví dụ: Nếu VPC có subnets ở HCM-1A, HCM-1B, HCM-1C → Mặc định chọn sẵn 3 subnets (1 subnet/zone).
   * Các subnet đã chọn hiển thị dạng **chip/tag**. Click nút **(x)** trên chip để xóa subnet khỏi danh sách đã chọn.
   * Bạn có thể thêm/bớt subnet nhưng phải đảm bảo **tối thiểu 2 subnets từ 2 AZ khác nhau**.
 
-<figure><img src="../../.gitbook/assets/[PLACEHOLDER-subnet-chips].png" alt=""><figcaption><p>Selected subnets displayed as chips</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/multi-az-network-setting.png" alt=""><figcaption><p>Network Setting cho Multi-AZ Cluster: VPC, Subnets multi-select và subnet chips</p></figcaption></figure>
 
 {% hint style="info" %}
 **Validation Rules:**
@@ -124,11 +130,14 @@ Ví dụ cấu hình subnets **không** hợp lệ:
 
 **Bước 7:** Cấu hình **Node Group Network Setting** — đây là phần khác biệt so với Single-AZ Cluster:
 
-<figure><img src="../../.gitbook/assets/[PLACEHOLDER-node-group-network-setting].png" alt=""><figcaption><p>Node Group Network Setting for Multi-AZ Cluster</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/multi-az-node-group-network-setting.png" alt=""><figcaption><p>Node Group Network Setting for Multi-AZ Cluster</p></figcaption></figure>
 
 * Bạn có thể lựa chọn **Public Node Group** hoặc **Private Node Group** tùy theo nhu cầu sử dụng Cluster của bạn.
 * **VPC:** Kế thừa từ Network Configuration (read-only, không thể thay đổi).
 * **Subnet:** Dropdown single-select, **chỉ hiển thị các subnets đã chọn cho cluster ở Bước 5**. Mỗi Node Group chỉ được chọn **1 subnet** (tương ứng với 1 AZ).
+* **Pod IP range** *(chỉ hiển thị khi Network type = Cilium VPC Native Routing)*: Dải địa chỉ IP thứ cấp (Secondary IP range) được sử dụng để cấp phát IP cho các pod trên Node Group này. Bạn cần lựa chọn ít nhất 1 dải Secondary IP range đã tạo từ vServer.
+
+<figure><img src="../../.gitbook/assets/multi-az-node-group-network-setting-pod-ip-range.png" alt=""><figcaption><p>Node Group Network Setting khi chọn Cilium VPC Native Routing: Pod IP range xuất hiện</p></figcaption></figure>
 
 {% hint style="info" %}
 **Lưu ý:**
@@ -136,6 +145,7 @@ Ví dụ cấu hình subnets **không** hợp lệ:
 * AZ của Node Group được xác định tự động dựa trên subnet đã chọn.
 * Bạn có thể tạo thêm Node Group ở các AZ khác sau khi cluster được tạo.
 * Để đảm bảo High Availability cho workloads, bạn nên tạo nhiều Node Group ở các AZ khác nhau. Điều này giúp phân bổ worker nodes trên nhiều AZ, tăng khả năng chịu lỗi cho ứng dụng.
+* Khi sử dụng **Cilium VPC Native Routing**, mỗi Node Group có thể chọn **Pod IP range riêng**, phù hợp với việc phân bổ tài nguyên mạng theo từng AZ.
 {% endhint %}
 
 * Node Group Security Setting: Bạn có thể chọn **Security Group và SSH Key** cho Node Group của bạn.
