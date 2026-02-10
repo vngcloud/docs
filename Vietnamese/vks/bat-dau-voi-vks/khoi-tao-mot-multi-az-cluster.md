@@ -6,7 +6,7 @@ Multi-AZ Cluster cho phép triển khai Control Plane trên nhiều Availability
 
 ***
 
-## Điều kiện cần <a href="#khoitaomotmultiazcluster-dieukiencan" id="khoitaomotmultiazcluster-dieukiencan"></a>
+## Điều kiện cần
 
 Để khởi tạo một Multi-AZ Cluster, bạn cần đảm bảo các điều kiện sau:
 
@@ -48,7 +48,7 @@ Ví dụ cấu hình subnets **không** hợp lệ:
 
 ***
 
-## Khởi tạo Cluster <a href="#khoitaomotmultiazcluster-khoitaocluster" id="khoitaomotmultiazcluster-khoitaocluster"></a>
+## Khởi tạo Cluster
 
 Để khởi tạo một Multi-AZ Cluster, hãy làm theo các bước bên dưới:
 
@@ -65,14 +65,12 @@ Ví dụ cấu hình subnets **không** hợp lệ:
   * **Kubernetes Version:** Phiên bản Kubernetes sẽ sử dụng cho Cluster của bạn. Chúng tôi khuyên bạn nên chọn phiên bản mới nhất, trừ khi bạn cần phiên bản cũ hơn.
   * **Description:** Nhập vào thông tin bạn muốn ghi chú cho Cluster nhằm tạo dấu hiệu riêng cho việc quản lý chúng dễ dàng hơn trong tương lai.
 
-<!-- TODO: Chèn hình ảnh Cluster Information section -->
 <figure><img src="../../.gitbook/assets/[PLACEHOLDER-multi-az-cluster-information].png" alt=""><figcaption><p>Cluster Information</p></figcaption></figure>
 
 **Bước 5:** Cấu hình **Network Setting** — đây là bước quan trọng nhất để tạo Multi-AZ Cluster:
 
 * **Control Plane Availability:** Chọn **Multi-AZ** để triển khai Control Plane trên nhiều Availability Zone.
 
-<!-- TODO: Chèn hình ảnh Control Plane Availability dropdown với badge [NEW] -->
 <figure><img src="../../.gitbook/assets/[PLACEHOLDER-control-plane-availability-dropdown].png" alt=""><figcaption><p>Control Plane Availability selection</p></figcaption></figure>
 
   Có 2 lựa chọn:
@@ -86,19 +84,16 @@ Ví dụ cấu hình subnets **không** hợp lệ:
 
 * **VPC:** Chọn VPC đã **bật DNS** từ dropdown. Lưu ý: khi chọn Multi-AZ, **chỉ các VPC đã bật DNS mới hiển thị**. Nếu bạn không thấy VPC nào trong danh sách, vui lòng bật DNS cho VPC tại portal vServer.
 
-<!-- TODO: Chèn hình ảnh VPC dropdown khi chọn Multi-AZ (chỉ hiện VPC có DNS) -->
 <figure><img src="../../.gitbook/assets/[PLACEHOLDER-vpc-dropdown-multi-az].png" alt=""><figcaption><p>VPC selection for Multi-AZ Cluster</p></figcaption></figure>
 
 * **Subnets:** Khi chọn **Multi-AZ**, trường Subnet thay đổi thành dạng **multi-select dropdown**, cho phép bạn chọn nhiều subnets:
 
-<!-- TODO: Chèn hình ảnh Subnets multi-select dropdown -->
 <figure><img src="../../.gitbook/assets/[PLACEHOLDER-subnets-multi-select].png" alt=""><figcaption><p>Subnets multi-select for Multi-AZ Cluster</p></figcaption></figure>
 
   * Hệ thống sẽ **tự động chọn sẵn 1 subnet đầu tiên của mỗi AZ** có trong VPC. Ví dụ: Nếu VPC có subnets ở HCM-1A, HCM-1B, HCM-1C → Mặc định chọn sẵn 3 subnets (1 subnet/zone).
   * Các subnet đã chọn hiển thị dạng **chip/tag**. Click nút **(x)** trên chip để xóa subnet khỏi danh sách đã chọn.
   * Bạn có thể thêm/bớt subnet nhưng phải đảm bảo **tối thiểu 2 subnets từ 2 AZ khác nhau**.
 
-<!-- TODO: Chèn hình ảnh subnet chips đã chọn -->
 <figure><img src="../../.gitbook/assets/[PLACEHOLDER-subnet-chips].png" alt=""><figcaption><p>Selected subnets displayed as chips</p></figcaption></figure>
 
 {% hint style="info" %}
@@ -129,7 +124,6 @@ Ví dụ cấu hình subnets **không** hợp lệ:
 
 **Bước 7:** Cấu hình **Node Group Network Setting** — đây là phần khác biệt so với Single-AZ Cluster:
 
-<!-- TODO: Chèn hình ảnh Node Group Network Setting section cho Multi-AZ -->
 <figure><img src="../../.gitbook/assets/[PLACEHOLDER-node-group-network-setting].png" alt=""><figcaption><p>Node Group Network Setting for Multi-AZ Cluster</p></figcaption></figure>
 
 * Bạn có thể lựa chọn **Public Node Group** hoặc **Private Node Group** tùy theo nhu cầu sử dụng Cluster của bạn.
@@ -154,17 +148,15 @@ Ví dụ cấu hình subnets **không** hợp lệ:
 
 **Bước 9:** Chọn **Create Kubernetes cluster.** Hãy chờ vài phút để chúng tôi khởi tạo Cluster của bạn, trạng thái của Cluster lúc này là **Creating**.
 
-<!-- TODO: Chèn hình ảnh cluster đang Creating với badge Multi-AZ -->
 <figure><img src="../../.gitbook/assets/[PLACEHOLDER-cluster-creating].png" alt=""><figcaption><p>Cluster đang được khởi tạo</p></figcaption></figure>
 
 **Bước 10:** Khi trạng thái **Cluster** là **Active**, bạn có thể xem thông tin Cluster, thông tin Node Group bằng cách chọn vào Cluster Name tại cột **Name**. Tại cột **Control Plane Availability**, bạn sẽ thấy badge **Multi-AZ** xác nhận cluster đã được tạo đúng cấu hình.
 
-<!-- TODO: Chèn hình ảnh cluster list với cluster vừa tạo ở trạng thái Active, badge Multi-AZ -->
 <figure><img src="../../.gitbook/assets/[PLACEHOLDER-cluster-active-multi-az].png" alt=""><figcaption><p>Cluster Active với badge Multi-AZ</p></figcaption></figure>
 
 ***
 
-## Kết nối và kiểm tra thông tin Cluster vừa tạo <a href="#khoitaomotmultiazcluster-ketnoivakiemtra" id="khoitaomotmultiazcluster-ketnoivakiemtra"></a>
+## Kết nối và kiểm tra thông tin Cluster vừa tạo
 
 Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiện kết nối và kiểm tra thông tin Cluster vừa tạo theo các bước:
 

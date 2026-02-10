@@ -1,6 +1,6 @@
 # Multi-AZ Control Plane
 
-## Tổng quan <a href="#multi-az-control-plane-tongquan" id="multi-az-control-plane-tongquan"></a>
+## Tổng quan
 
 **Multi-AZ Control Plane** là tính năng cho phép triển khai Kubernetes Cluster với Control Plane được phân bổ trên nhiều Availability Zones (AZ) khác nhau, đảm bảo **High Availability** (HA) cho cluster của bạn.
 
@@ -43,7 +43,7 @@ Trong mô hình Multi-AZ, các thành phần của Control Plane (API Server, Co
 
 ***
 
-## Kiến trúc Multi-AZ Control Plane <a href="#multi-az-control-plane-kientruc" id="multi-az-control-plane-kientruc"></a>
+## Kiến trúc Multi-AZ Control Plane
 
 Sơ đồ dưới đây minh họa kiến trúc của Multi-AZ Cluster:
 
@@ -86,13 +86,12 @@ Sơ đồ dưới đây minh họa kiến trúc của Multi-AZ Cluster:
 
 ***
 
-## Quản lý Multi-AZ Cluster <a href="#multi-az-control-plane-quanly" id="multi-az-control-plane-quanly"></a>
+## Quản lý Multi-AZ Cluster
 
 ### Xem thông tin Cluster trên trang danh sách
 
 Tại trang danh sách Kubernetes Cluster, bạn có thể nhận biết Multi-AZ Cluster thông qua cột **Control Plane Availability**:
 
-<!-- TODO: Chèn hình ảnh trang danh sách cluster với cột Control Plane Availability -->
 <figure><img src="../../.gitbook/assets/[PLACEHOLDER-cluster-list-page].png" alt=""><figcaption><p>Cluster List Page với cột Control Plane Availability</p></figcaption></figure>
 
 | Badge | Ý nghĩa |
@@ -108,7 +107,6 @@ Khi truy cập vào trang chi tiết của Multi-AZ Cluster:
 
 Hiển thị thêm trường **Control Plane Availability** với giá trị **Multi-AZ** (badge màu xanh đậm)
 
-<!-- TODO: Chèn hình ảnh General Information section với Control Plane Availability -->
 <figure><img src="../../.gitbook/assets/[PLACEHOLDER-cluster-detail-general-info].png" alt=""><figcaption><p>General Information với Control Plane Availability</p></figcaption></figure>
 
 **2. Network Section**
@@ -125,14 +123,12 @@ Subnets (2)
 
 * Click vào icon **copy** bên cạnh Subnet ID để copy vào clipboard
 
-<!-- TODO: Chèn hình ảnh Network section với danh sách Subnets -->
 <figure><img src="../../.gitbook/assets/[PLACEHOLDER-cluster-detail-network].png" alt=""><figcaption><p>Network section với danh sách Subnets</p></figcaption></figure>
 
 **3. Node Group Tab**
 
 Bảng Node Group hiển thị thêm cột **Availability Zone** để biết Node Group đang ở AZ nào:
 
-<!-- TODO: Chèn hình ảnh Node Group tab với cột AZ -->
 <figure><img src="../../.gitbook/assets/[PLACEHOLDER-node-group-tab-az].png" alt=""><figcaption><p>Node Group tab với cột Availability Zone</p></figcaption></figure>
 
 ### Upgrade Control Plane
@@ -176,7 +172,7 @@ Các tài nguyên sau **có thể không bị xóa tự động**:
 
 ***
 
-## Giới hạn và Lưu ý <a href="#multi-az-control-plane-gioihan" id="multi-az-control-plane-gioihan"></a>
+## Giới hạn và Lưu ý
 
 ### Giới hạn hiện tại
 
@@ -210,7 +206,7 @@ Traffic giữa các AZ có thể có độ trễ cao hơn một chút so với t
 
 ***
 
-## FAQ <a href="#multi-az-control-plane-faq" id="multi-az-control-plane-faq"></a>
+## FAQ
 
 ### 1. Tôi có thể chuyển cluster từ Single-AZ sang Multi-AZ không?
 
