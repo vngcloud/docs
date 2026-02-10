@@ -47,35 +47,7 @@ Trong mô hình Multi-AZ, các thành phần của Control Plane (API Server, Co
 
 Sơ đồ dưới đây minh họa kiến trúc của Multi-AZ Cluster:
 
-```
-                    ┌─────────────────────────────────────────┐
-                    │              VPC (10.60.0.0/16)         │
-                    │                                         │
-┌───────────────────┼─────────────────────────────────────────┼───────────────────┐
-│                   │                                         │                   │
-│   ┌───────────────┴───────────────┐   ┌───────────────────┴───────────────┐   │
-│   │         AZ: HCM-1A            │   │         AZ: HCM-1B                │   │
-│   │    Subnet: 10.60.0.0/24       │   │    Subnet: 10.60.1.0/24           │   │
-│   │                               │   │                                   │   │
-│   │   ┌─────────────────────┐     │   │   ┌─────────────────────┐         │   │
-│   │   │   Control Plane     │     │   │   │   Control Plane     │         │   │
-│   │   │   (API Server)      │     │   │   │   (API Server)      │         │   │
-│   │   └─────────────────────┘     │   │   └─────────────────────┘         │   │
-│   │                               │   │                                   │   │
-│   │   ┌─────────────────────┐     │   │   ┌─────────────────────┐         │   │
-│   │   │   Worker Nodes      │     │   │   │   Worker Nodes      │         │   │
-│   │   │   (Node Group 1)    │     │   │   │   (Node Group 2)    │         │   │
-│   │   └─────────────────────┘     │   │   └─────────────────────┘         │   │
-│   │                               │   │                                   │   │
-│   └───────────────────────────────┘   └───────────────────────────────────┘   │
-│                                                                               │
-│                        ┌─────────────────────┐                                │
-│                        │   vLB Multi-AZ      │                                │
-│                        │   (Load Balancer)   │                                │
-│                        └─────────────────────┘                                │
-│                                                                               │
-└───────────────────────────────────────────────────────────────────────────────┘
-```
+<figure><img src="../../.gitbook/assets/vks-multi-az-architecture.png.png" alt=""><figcaption><p>Kiến trúc Multi-AZ Control Plane</p></figcaption></figure>
 
 **Các thành phần chính:**
 
@@ -92,7 +64,7 @@ Sơ đồ dưới đây minh họa kiến trúc của Multi-AZ Cluster:
 
 Tại trang danh sách Kubernetes Cluster, bạn có thể nhận biết Multi-AZ Cluster thông qua cột **Control Plane Availability**:
 
-<figure><img src="../../.gitbook/assets/[PLACEHOLDER-cluster-list-page].png" alt=""><figcaption><p>Cluster List Page với cột Control Plane Availability</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-list-page.png" alt=""><figcaption><p>Cluster List Page với cột Control Plane Availability</p></figcaption></figure>
 
 | Badge | Ý nghĩa |
 | --- | --- |
@@ -107,7 +79,7 @@ Khi truy cập vào trang chi tiết của Multi-AZ Cluster:
 
 Hiển thị thêm trường **Control Plane Availability** với giá trị **Multi-AZ** (badge màu xanh đậm)
 
-<figure><img src="../../.gitbook/assets/[PLACEHOLDER-cluster-detail-general-info].png" alt=""><figcaption><p>General Information với Control Plane Availability</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-detail-general-info.png" alt=""><figcaption><p>General Information với Control Plane Availability</p></figcaption></figure>
 
 **2. Network Section**
 
@@ -123,13 +95,11 @@ Subnets (2)
 
 * Click vào icon **copy** bên cạnh Subnet ID để copy vào clipboard
 
-<figure><img src="../../.gitbook/assets/[PLACEHOLDER-cluster-detail-network].png" alt=""><figcaption><p>Network section với danh sách Subnets</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-detail-network.png" alt=""><figcaption><p>Network section với danh sách Subnets</p></figcaption></figure>
 
 **3. Node Group Tab**
 
-Bảng Node Group hiển thị thêm cột **Availability Zone** để biết Node Group đang ở AZ nào:
-
-<figure><img src="../../.gitbook/assets/[PLACEHOLDER-node-group-tab-az].png" alt=""><figcaption><p>Node Group tab với cột Availability Zone</p></figcaption></figure>
+Thông tin chi tiết Node Group hiển thị **Subnet** kèm theo **AZ** tương ứng, giúp bạn xác định Node Group đang triển khai ở AZ nào.
 
 ### Upgrade Control Plane
 
