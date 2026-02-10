@@ -20,7 +20,7 @@ Trong mô hình Multi-AZ, các thành phần của Control Plane (API Server, Co
 | --- | --- | --- |
 | **Control Plane Availability** | 99.9% | 99.99% |
 | **Khả năng chịu lỗi** | Single point of failure tại AZ level | Chịu được lỗi ở cấp độ AZ |
-| **Chi phí** | Thấp hơn | Cao hơn (Multi-AZ Control Plane) |
+| **Chi phí** | Thấp hơn | Miễn phí trong giai đoạn đầu release (có phát sinh chi phí Private Service Endpoints) |
 | **Độ trễ (Latency)** | Thấp (cùng AZ) | Cao hơn một chút (cross-AZ cho Control Plane) |
 | **Private DNS (VPC)** | Tùy chọn | Bắt buộc (prerequisite) |
 | **Use Case** | Development, Testing | Production, Mission-critical |
@@ -185,10 +185,22 @@ Các tài nguyên sau **có thể không bị xóa tự động**:
 
 ### Lưu ý quan trọng
 
-{% hint style="warning" %}
+{% hint style="success" %}
 **Về chi phí:**
 
-Multi-AZ Cluster có chi phí **cao hơn** so với Single-AZ do Control Plane được triển khai trên nhiều AZ. Hãy cân nhắc kỹ nhu cầu sử dụng trước khi lựa chọn.
+Trong giai đoạn đầu release, tính năng Multi-AZ Control Plane được cung cấp **miễn phí**. Chi phí chính thức sẽ được cập nhật trong thời gian tới. Vui lòng theo dõi trang [Thông báo và Cập nhật](../thong-bao-va-cap-nhat/) để nắm thông tin mới nhất.
+
+Lưu ý: Multi-AZ Cluster hoạt động trên luồng private nên sẽ phát sinh chi phí cho **4 Private Service Endpoints** (IAM, vCR, vServer, vStorage).
+{% endhint %}
+
+{% hint style="warning" %}
+**Về Private Service Endpoint:**
+
+* Multi-AZ Cluster hoạt động trên **luồng private**, hệ thống tự động tạo 4 Private Service Endpoints khi cluster được tạo
+* **Không xóa** các endpoint này để tránh gián đoạn dịch vụ
+* Các nodes trong cluster **không thể kết nối ra internet** để pull image — phải sử dụng **vContainer Registry (vCR)**
+* Để truy cập **kube-api**, bạn cần **đứng trong VPC** mà cluster sử dụng
+* Chi tiết tham khảo tại [Khởi tạo một Multi-AZ Cluster](../bat-dau-voi-vks/khoi-tao-mot-multi-az-cluster.md)
 {% endhint %}
 
 {% hint style="info" %}
@@ -233,4 +245,4 @@ Bạn có thể chọn nhiều subnet, nhưng phải đảm bảo các subnet th
 
 ### 6. Chi phí Multi-AZ Cluster như thế nào?
 
-Multi-AZ Cluster có chi phí cao hơn Single-AZ do Control Plane được triển khai trên nhiều AZ. Vui lòng tham khảo trang [Cách tính giá](../cach-tinh-gia.md) để biết chi tiết.
+Trong giai đoạn đầu release, tính năng Multi-AZ Control Plane được cung cấp **miễn phí**. Chi phí chính thức sẽ được cập nhật trong thời gian tới. Lưu ý rằng Multi-AZ Cluster hoạt động trên luồng private nên sẽ phát sinh chi phí cho 4 Private Service Endpoints. Vui lòng tham khảo trang [Cách tính giá](../cach-tinh-gia.md) và [Thông báo và Cập nhật](../thong-bao-va-cap-nhat/) để biết chi tiết.

@@ -156,11 +156,81 @@ Ví dụ cấu hình subnets **không** hợp lệ:
 
 ***
 
+## Private Service Endpoint
+
+Multi-AZ Cluster hoạt động trên **luồng private**. Khi bạn tạo Multi-AZ Cluster, hệ thống sẽ tự động tạo **4 Private Service Endpoints** giúp các nodes trong cluster kết nối private tới các dịch vụ khác trên GreenNode:
+
+| Endpoint | Dịch vụ kết nối | Mục đích |
+| --- | --- | --- |
+| **vks-iam-endpoint-...** | IAM | Xác thực và phân quyền |
+| **vks-vcr-endpoint-...** | vContainer Registry (vCR) | Pull/push container images |
+| **vks-vserver-endpoint-...** | vServer | Quản lý compute resources |
+| **vks-vstorage-endpoint-...** | vStorage | Kết nối tới object storage |
+
+Bạn có thể xem thông tin 4 private service endpoint thông qua portal vServer theo đường dẫn tại [đây](https://hcm-3.console.vngcloud.vn/vserver/vnetwork/endpoint/list).
+
+{% hint style="warning" %}
+**Lưu ý quan trọng về Private Service Endpoint:**
+
+* **Không xóa Private Service Endpoint**: Để đảm bảo hoạt động ổn định của cluster, bạn không nên xóa 4 service endpoint đã được tạo sẵn. Nếu vô tình xóa hoặc chỉnh sửa 4 endpoint này, trong vòng tối đa 5 phút, hệ thống sẽ tự động tạo lại nhưng có thể gây gián đoạn đến các dịch vụ đang chạy. Lúc này, do service endpoint tạo lại có thể đã thay đổi Endpoint IP so với ban đầu nên để cluster hoạt động được, bạn cần thực hiện thêm Endpoint IP một cách thủ công cho những server đang chạy trước đó thông qua câu lệnh:
+
+    ```
+    vks-bootstraper add-host -i <IP> -d <DOMAIN>
+    ```
+
+    Ví dụ,
+
+    *   Nếu bạn xóa private service endpoint tại **Region HCM** thì bạn cần add host qua lệnh:
+
+        ```
+        vks-boostraper add-host -i 192.168.1.9 -d vcr.vngcloud.vn
+        vks-boostraper add-host -i 192.168.1.8 -d hcm-3.api.vngcloud.vn
+        vks-boostraper add-host -i 192.168.1.5 -d iamapis.vngcloud.vn
+        vks-boostraper add-host -i 192.168.1.7 -d hcm03.vstorage.vngcloud.vn
+        ```
+    *   Nếu bạn xóa private service endpoint tại **Region HAN** thì bạn cần add host qua lệnh:
+
+        ```
+        vks-boostraper add-host -i 192.168.1.9 -d vcr-han.vngcloud.vn
+        vks-boostraper add-host -i 192.168.1.8 -d han-1.api.vngcloud.vn
+        vks-boostraper add-host -i 192.168.1.5 -d iamapis.vngcloud.vn
+        vks-boostraper add-host -i 192.168.1.7 -d han02.vstorage.vngcloud.vn
+        ```
+
+* **Tái sử dụng Private Service Endpoint:** Các service endpoint có thể được nhiều private cluster / Multi-AZ cluster cùng sử dụng. Khi các cluster chung VPC thì chúng tôi sẽ tái sử dụng chúng.
+* **Xóa Private Service Endpoint tự động:** Khi bạn xóa cluster, nếu không còn cluster nào tái sử dụng các service endpoint này, hệ thống sẽ tự động xóa chúng.
+* **Chi phí Multi-AZ Control Plane:** Trong giai đoạn đầu release, tính năng Multi-AZ Control Plane được cung cấp **miễn phí**. Chi phí chính thức sẽ được cập nhật trong thời gian tới. Lưu ý: việc sử dụng Multi-AZ Cluster sẽ phát sinh thêm chi phí cho 4 Private Service Endpoints.
+{% endhint %}
+
+***
+
+## Container Registry (vCR)
+
+Do Multi-AZ Cluster hoạt động trên luồng private, các nodes trong cluster **chỉ có thể kết nối private** tới hệ thống vContainer Registry (vCR) và **không thể kết nối** ra các Container Registry khác ngoài internet (Docker Hub, ghcr.io, quay.io...).
+
+Bạn cần pull/push image về vCR để sử dụng. Tham khảo hướng dẫn chi tiết tại phần [Sử dụng Docker để Pull/Push image](khoi-tao-mot-private-cluster.md#khoitaomotpublicclustervoiprivatenodegroup-deploymotworkload) trong tài liệu Private Cluster.
+
+{% hint style="info" %}
+**Lưu ý:**
+
+Trên VKS, tại mỗi Region HCM hay HAN, domain của vCR để pull/push image khác nhau:
+* **Với Region HCM**: dùng domain `vcr.vngcloud.vn`
+* **Với Region HAN**: dùng domain `vcr-han.vngcloud.vn`
+{% endhint %}
+
+***
+
 ## Kết nối và kiểm tra thông tin Cluster vừa tạo
+
+{% hint style="warning" %}
+**Quan trọng:**
+
+Do Multi-AZ Cluster hoạt động trên luồng private, để truy cập vào **kube-api** của Control Plane, bạn cần **đứng trong VPC** mà bạn đã chọn sử dụng cho Cluster. Nếu bạn không đứng trong VPC, bạn sẽ không thể kết nối tới kube-api và nhận được lỗi `Unable to connect to the server`.
+{% endhint %}
 
 Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiện kết nối và kiểm tra thông tin Cluster vừa tạo theo các bước:
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
+**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console.vngcloud.vn/k8s-cluster)
 
 **Bước 2:** Danh sách Cluster được hiển thị, chọn biểu tượng **Download** và chọn **Download config file** để thực hiện tải xuống file kubeconfig. File này sẽ giúp bạn có toàn quyền truy cập vào Cluster của bạn.
 
