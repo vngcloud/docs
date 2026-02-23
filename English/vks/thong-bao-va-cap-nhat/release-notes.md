@@ -293,7 +293,7 @@ VKS (GreenNode Kubernetes Service) introduces the latest update to the already a
 
 **Improve:**
 
-* **Upgrade GreenNode LoadBalancer Controller Plugin:** Add Annotation to configure Load Balancer to support Proxy Protocol. For more details, refer [here](../bat-dau-voi-vks/preserve-source-ip-khi-su-dung-vlb-layer4-va-nginx-ingress-controller.md) .
+* **Upgrade GreenNode LoadBalancer Controller Plugin:** Add Annotation to configure Load Balancer to support Proxy Protocol. For more details, refer [here](../network/lam-viec-voi-network-load-balancing-nlb/preserve-source-ip-when-using-nlb-and-nginx-ingress-controller.md) .
 
 ***
 

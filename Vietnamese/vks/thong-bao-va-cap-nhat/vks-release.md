@@ -351,7 +351,7 @@ VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhấ
 
 **Cải tiến:**
 
-* **Nâng cấp Plugin GreenNode LoadBalancer Controller:** Bổ sung Annotation để cấu hình Load Balancer hỗ trợ Proxy Protocol. Chi tiết tham khảo thêm tại [đây](../../../English/vks/bat-dau-voi-vks/preserve-source-ip-khi-su-dung-vlb-layer4-va-nginx-ingress-controller.md).
+* **Nâng cấp Plugin GreenNode LoadBalancer Controller:** Bổ sung Annotation để cấu hình Load Balancer hỗ trợ Proxy Protocol. Chi tiết tham khảo thêm tại [đây](../../../English/vks/network/lam-viec-voi-network-load-balancing-nlb/preserve-source-ip-when-using-nlb-and-nginx-ingress-controller.md).
 
 ***
 

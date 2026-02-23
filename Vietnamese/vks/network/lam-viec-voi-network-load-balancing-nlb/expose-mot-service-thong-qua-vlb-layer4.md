@@ -196,7 +196,7 @@ Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với đ
 
 <figure><img src="../../../.gitbook/assets/expose_l4.png" alt=""><figcaption></figcaption></figure>
 
-Bạn có thể xem thêm về ALB tại [Working with Network load balancing (NLB)](../../network/lam-viec-voi-network-load-balancing-nlb/).
+Bạn có thể xem thêm về ALB tại [Working with Network load balancing (NLB)](./).
 
 {% hint style="info" %}
 **Chú ý:**
