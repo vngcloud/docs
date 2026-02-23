@@ -12,7 +12,7 @@ In the Multi-AZ model, the Control Plane components (API Server, Controller Mana
 * Automatic failover without manual intervention
 * Meets compliance requirements for disaster recovery
 
-To create a Multi-AZ Cluster, please refer to the guide [here](../bat-dau-voi-vks/create-a-multi-az-cluster.md).
+To create a Multi-AZ Cluster, please refer to the guide [here](../getting-started/create-a-multi-az-cluster.md).
 
 ### Comparison between Single-AZ and Multi-AZ Cluster
 
@@ -158,7 +158,7 @@ The following resources **may not be automatically deleted**:
 {% hint style="success" %}
 **Regarding cost:**
 
-During the initial release phase, the Multi-AZ Control Plane feature is provided **free of charge**. Official pricing will be updated in the future. Please follow the [Announcements and Updates](../thong-bao-va-cap-nhat/) page for the latest information.
+During the initial release phase, the Multi-AZ Control Plane feature is provided **free of charge**. Official pricing will be updated in the future. Please follow the [Announcements and Updates](../announcements/) page for the latest information.
 
 Note: Multi-AZ Cluster operates on a private flow, so there will be additional costs for **4 Private Service Endpoints** (IAM, vCR, vServer, vStorage).
 {% endhint %}
@@ -170,7 +170,7 @@ Note: Multi-AZ Cluster operates on a private flow, so there will be additional c
 * **Do not delete** these endpoints to avoid service disruption
 * Nodes in the cluster **cannot connect to the internet** to pull images — you must use **vContainer Registry (vCR)**
 * To access the **kube-api**, you must be **within the VPC** that the cluster uses
-* For details, refer to [Create a Multi-AZ Cluster](../bat-dau-voi-vks/create-a-multi-az-cluster.md)
+* For details, refer to [Create a Multi-AZ Cluster](../getting-started/create-a-multi-az-cluster.md)
 {% endhint %}
 
 {% hint style="info" %}
@@ -215,4 +215,4 @@ You can select multiple subnets, but you must ensure the subnets belong to **at 
 
 ### 6. How much does a Multi-AZ Cluster cost?
 
-During the initial release phase, the Multi-AZ Control Plane feature is provided **free of charge**. Official pricing will be updated in the future. Note that Multi-AZ Cluster operates on a private flow, so there will be additional costs for 4 Private Service Endpoints. Please refer to the [Pricing](../cach-tinh-gia.md) and [Announcements and Updates](../thong-bao-va-cap-nhat/) pages for details.
+During the initial release phase, the Multi-AZ Control Plane feature is provided **free of charge**. Official pricing will be updated in the future. Note that Multi-AZ Cluster operates on a private flow, so there will be additional costs for 4 Private Service Endpoints. Please refer to the [Pricing](../cach-tinh-gia.md) and [Announcements and Updates](../announcements/) pages for details.

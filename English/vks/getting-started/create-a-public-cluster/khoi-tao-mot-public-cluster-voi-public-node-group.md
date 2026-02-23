@@ -168,5 +168,5 @@ For example, below I have successfully accessed the nginx app with the address: 
 
 If you want to expose this service through vLB Layer4, vLB Layer7, please refer to:
 
-* [Expose a service through vLB Layer4](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer4)
-* [Expose a service through vLB Layer7](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer7)<br>
+* [Expose a service through vLB Layer4](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/getting-started/expose-mot-service-thong-qua-vlb-layer4)
+* [Expose a service through vLB Layer7](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/getting-started/expose-mot-service-thong-qua-vlb-layer7)<br>

@@ -9,7 +9,7 @@ Previously, public clusters on VKS were using Public IP addresses to communicate
 **In which:**
 
 * **Control plane** : Managed by GreenNode, responsible for coordinating and managing the entire cluster.
-* **Nodes** : When created, Nodes in the Cluster will only have internal IPs and cannot go to the public internet. If you want the node to access the internet, you need to use a NAT Gateway. For more details, refer [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/khoi-tao-mot-public-cluster/khoi-tao-mot-public-cluster-voi-private-node-group/pfsense-as-a-nat-gateway) .
+* **Nodes** : When created, Nodes in the Cluster will only have internal IPs and cannot go to the public internet. If you want the node to access the internet, you need to use a NAT Gateway. For more details, refer [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/getting-started/create-a-public-cluster/create-a-public-cluster-with-private-node-group/pfsense-as-a-nat-gateway) .
 * **Private Load Balancer** : Managed by GreenNode, responsible for helping Private Nodes communicate with Control Plane.
 * **Private Service Endpoint** : When you create a private cluster, the system automatically creates 4 endpoints to help connect to other services on GreenNode including:
   * **Endpoint** to connect to the **IAM** service (Endpoint Name: vks-iam-endpoint-...)
@@ -103,7 +103,7 @@ E0821 14:27:12.055864   23348 memcache.go:265] couldn't get current server API g
 Unable to connect to the server: dial tcp 10.7.8.9:6443: connectex: No connection could be made because the target machine actively refused it.
 ```
 
-In the example below I will stand at a server with a VPC along with the VPC used for the Cluster. You can perform SSH to the server according to instructions [here](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/server/ket-noi-vao-may-chu-ao/ket-noi-vao-may-chu-linux-bang-cong-cu-ssh-client) . After SSH into the server, install kubectl according to the instructions [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/huong-dan-cai-dat-va-cau-hinh-cong-cu-kubectl-trong-kubernetes) .
+In the example below I will stand at a server with a VPC along with the VPC used for the Cluster. You can perform SSH to the server according to instructions [here](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/server/ket-noi-vao-may-chu-ao/ket-noi-vao-may-chu-linux-bang-cong-cu-ssh-client) . After SSH into the server, install kubectl according to the instructions [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/getting-started/huong-dan-cai-dat-va-cau-hinh-cong-cu-kubectl-trong-kubernetes) .
 
 * For example, I am using a linux server to perform get nodes, I can install kubectl via command:
 
@@ -324,6 +324,6 @@ For example, below I have successfully accessed the nginx app with the address: 
 {% hint style="info" %}
 **A few other notes:**
 
-* Above is an example showing you how to expose a service through vLB Layer 4. You can expose a service through vLB Layer 7 according to the instructions [here](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/expose-mot-service-thong-qua-vlb-layer7) .
+* Above is an example showing you how to expose a service through vLB Layer 4. You can expose a service through vLB Layer 7 according to the instructions [here](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vks/getting-started/expose-mot-service-thong-qua-vlb-layer7) .
 * To ensure the private cluster works effectively, we have automatically added the Subnet you choose to use for the Cluster to the cluster's Whitelist. You can use the Whitelist feature to limit the Subnets in the VPC that have access to kube-api. Details on how to use the Whitelist feature please refer [here](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vks/clusters/whitelist) .
 {% endhint %}

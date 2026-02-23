@@ -146,7 +146,7 @@ VKS (GreenNode Kubernetes Service) introduces the latest update to the existing 
 
 **New features:**
 
-* **Private Cluster**: Previously, public clusters on VKS were using Public IP addresses to communicate between nodes and the control plane. To improve the security of your cluster, we have launched the private cluster model. The Private Cluster feature helps your K8S cluster to be as secure as possible, all connections are completely private from the connection between the nodes to the control plane, the connection from the client to the control plane, or the connection from the nodes to other products and services in GreenNode such as: vStorage, vCR, vMonitor, GreenNode APIs,... **Private Cluster is the ideal choice for services that require strict access control, ensuring compliance with regulations on security and data privacy**. For details on the two operating models of Cluster, you can refer to [here ](../mo-hinh-hoat-dong.md)and refer to the steps to create a private Cluster [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/khoi-tao-mot-private-cluster) .
+* **Private Cluster**: Previously, public clusters on VKS were using Public IP addresses to communicate between nodes and the control plane. To improve the security of your cluster, we have launched the private cluster model. The Private Cluster feature helps your K8S cluster to be as secure as possible, all connections are completely private from the connection between the nodes to the control plane, the connection from the client to the control plane, or the connection from the nodes to other products and services in GreenNode such as: vStorage, vCR, vMonitor, GreenNode APIs,... **Private Cluster is the ideal choice for services that require strict access control, ensuring compliance with regulations on security and data privacy**. For details on the two operating models of Cluster, you can refer to [here ](../mo-hinh-hoat-dong.md)and refer to the steps to create a private Cluster [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/getting-started/khoi-tao-mot-private-cluster) .
 
 ***
 
@@ -185,7 +185,7 @@ VKS (GreenNode Kubernetes Service) introduces the latest update to the already a
 
 **New feature:**
 
-* **VKS resource monitoring:** Users can directly monitor the operating status of Cluster, Node, CPU usage, RAM, Memory,... status of Node through intuitive dashboards. To display data on the dashboard, users need to install it `vmonitor-metric-agent`on the cluster where they want to perform monitoring. For more details, refer [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/giam-sat/metrics) .
+* **VKS resource monitoring:** Users can directly monitor the operating status of Cluster, Node, CPU usage, RAM, Memory,... status of Node through intuitive dashboards. To display data on the dashboard, users need to install it `vmonitor-metric-agent`on the cluster where they want to perform monitoring. For more details, refer [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/monitoring/metrics) .
 
 ***
 
@@ -293,7 +293,7 @@ VKS (GreenNode Kubernetes Service) introduces the latest update to the already a
 
 **Improve:**
 
-* **Upgrade GreenNode LoadBalancer Controller Plugin:** Add Annotation to configure Load Balancer to support Proxy Protocol. For more details, refer [here](../network/lam-viec-voi-network-load-balancing-nlb/preserve-source-ip-when-using-nlb-and-nginx-ingress-controller.md) .
+* **Upgrade GreenNode LoadBalancer Controller Plugin:** Add Annotation to configure Load Balancer to support Proxy Protocol. For more details, refer [here](../network/working-with-nlb/preserve-source-ip-when-using-nlb-and-nginx-ingress-controller.md) .
 
 ***
 

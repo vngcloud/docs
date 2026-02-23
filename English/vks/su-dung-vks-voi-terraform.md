@@ -300,8 +300,8 @@ resource "vngcloud_vks_cluster_node_group" "primary" {
 {% hint style="info" %}
 **Attention:**
 
-* To get the image\_id you want to use, you can access VKS Portal, select System Image menu and get the ID you want or get this information [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/tham-khao-them/danh-sach-system-image-dang-ho-tro) .
-* To get the flavor\_id you want to use for your Node group, please get the ID [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/tham-khao-them/danh-sach-flavor-dang-ho-tro) .
+* To get the image\_id you want to use, you can access VKS Portal, select System Image menu and get the ID you want or get this information [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/reference/danh-sach-system-image-dang-ho-tro) .
+* To get the flavor\_id you want to use for your Node group, please get the ID [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/reference/danh-sach-flavor-dang-ho-tro) .
 {% endhint %}
 
 #### **Launch Terraform command** <a href="#quanlyvcontainervoiterraform-khoichayterraformcommand" id="quanlyvcontainervoiterraform-khoichayterraformcommand"></a>

@@ -15,7 +15,7 @@
 
 ## Khởi tạo một node group với NVIDIA GPU
 
-* Thực hiện khởi tạo một Cluster với ít nhất một node group sử dụng NVIDIA GPU theo hướng dẫn tại [đây ](khoi-tao-mot-public-cluster/khoi-tao-mot-public-cluster-voi-public-node-group.md)nếu bạn muốn khởi tạo public node group hoặc tại [đây ](khoi-tao-mot-public-cluster/khoi-tao-mot-public-cluster-voi-private-node-group/)nếu bạn muốn khởi tạo private node group.
+* Thực hiện khởi tạo một Cluster với ít nhất một node group sử dụng NVIDIA GPU theo hướng dẫn tại [đây ](../getting-started/create-a-public-cluster/khoi-tao-mot-public-cluster-voi-public-node-group.md)nếu bạn muốn khởi tạo public node group hoặc tại [đây ](../getting-started/create-a-public-cluster/create-a-public-cluster-with-private-node-group/)nếu bạn muốn khởi tạo private node group.
 * Ngoài ra, bạn cần đảm bảo đã cài đặt `kubectl` và `helm` tại thiết bị của bạn.
 * Bên cạnh đó, bạn cũng có thể cài đặt các công cụ và thư viện khác mà bạn có thể sử dụng để giám sát và quản lý tài nguyên Kubernetes của mình:
   * `kubectl-view-allocations` plugin sử dụng để giám sát tài nguyên Kubernetes của bạn. Để biết thêm thông tin, vui lòng tham khảo thêm tại [kubectl-view-allocations](https://github.com/davidB/kubectl-view-allocations).

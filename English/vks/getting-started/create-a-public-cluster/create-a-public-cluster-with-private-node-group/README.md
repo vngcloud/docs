@@ -26,8 +26,8 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
 Or you can choose to use Palo Alto or Pfsense to work with Private Node Group according to instructions at:
 
-* [Palo Alto as a NAT Gateway](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/khoi-tao-mot-public-cluster-voi-private-node-group/palo-alto-as-a-nat-gateway)
-* [Pfsense as a NAT Gateway](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/bat-dau-voi-vks/khoi-tao-mot-public-cluster-voi-private-node-group/pfsense-as-a-nat-gateway)
+* [Palo Alto as a NAT Gateway](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/getting-started/create-a-public-cluster-with-private-node-group/palo-alto-as-a-nat-gateway)
+* [Pfsense as a NAT Gateway](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vks/getting-started/create-a-public-cluster-with-private-node-group/pfsense-as-a-nat-gateway)
 
 ***
 

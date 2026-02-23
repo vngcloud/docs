@@ -6,7 +6,7 @@
   * Bạn phải khởi tạo thành công một cluster trên nền tảng VKS.
   * Kubernetes version của cluster phải từ 1.21 trở lên.
   * Cluster phải có ít nhất một Node Group đang hoạt động.&#x20;
-  * _Nếu chưa có, bạn cần tham khảo và thực hiện theo tài liệu hướng dẫn tại_ [_đây_](../../../vks/bat-dau-voi-vks/khoi-tao-mot-public-cluster/)_._
+  * _Nếu chưa có, bạn cần tham khảo và thực hiện theo tài liệu hướng dẫn tại_ [_đây_](../../../vks/getting-started/create-a-public-cluster/)_._
 * **Đã có File Storage (NFS):**
   * Bạn phải khởi tạo một File Storage theo giao thức NFS. Dịch vụ này có thể là Public File Storage hoặc Private File Storage.
   * Nếu bạn tạo Private File Storage thì file này phải được tạo trong cùng một VPC với VKS cluster của bạn để đảm bảo kết nối mạng. Chúng có thể nằm trong cùng hoặc khác subnet, miễn là trong cùng một VPC.

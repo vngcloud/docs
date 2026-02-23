@@ -143,7 +143,7 @@ VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhấ
 
 **Tính năng mới:**
 
-* **Private Cluster:** Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Public IP để giao tiếp giữa nodes và control plane. Để nâng cao bảo mật cho cluster của bạn, chúng tôi đã cho ra mắt mô hình private cluster. Tính năng Private Cluster giúp cho cụm K8S của bạn được bảo mật nhất có thể, mọi kết nối hoàn toàn là private từ kết nối giữa nodes tới control plane, kết nối từ client tới control plane, hay kết nối từ nodes tới các sản phẩm dịch vụ khác trong GreenNode như: vStorage, vCR, vMonitor, GreenNode APIs,...Private Cluster là lựa chọn lý tưởng cho **các dịch vụ yêu cầu kiểm soát truy cập chặt chẽ, đảm bảo tuân thủ các quy định về bảo mật và quyền riêng tư dữ liệu**. Chi tiết 2 mô hình hoạt động của Cluster, bạn có thể tham khảo thêm tại [đây ](../mo-hinh-hoat-dong.md)và tham khảo các bước khởi tạo một private Cluster tại [đây](../bat-dau-voi-vks/khoi-tao-mot-private-cluster.md).
+* **Private Cluster:** Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Public IP để giao tiếp giữa nodes và control plane. Để nâng cao bảo mật cho cluster của bạn, chúng tôi đã cho ra mắt mô hình private cluster. Tính năng Private Cluster giúp cho cụm K8S của bạn được bảo mật nhất có thể, mọi kết nối hoàn toàn là private từ kết nối giữa nodes tới control plane, kết nối từ client tới control plane, hay kết nối từ nodes tới các sản phẩm dịch vụ khác trong GreenNode như: vStorage, vCR, vMonitor, GreenNode APIs,...Private Cluster là lựa chọn lý tưởng cho **các dịch vụ yêu cầu kiểm soát truy cập chặt chẽ, đảm bảo tuân thủ các quy định về bảo mật và quyền riêng tư dữ liệu**. Chi tiết 2 mô hình hoạt động của Cluster, bạn có thể tham khảo thêm tại [đây ](../mo-hinh-hoat-dong.md)và tham khảo các bước khởi tạo một private Cluster tại [đây](../getting-started/khoi-tao-mot-private-cluster.md).
 
 ***
 
@@ -182,7 +182,7 @@ VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhấ
 
 **Tính năng mới:**
 
-* **Giám sát tài nguyên VKS:** Người dùng có thể theo dõi trực tiếp tình trạng hoạt động của Cluster, Node, tình trạng sử dụng CPU, RAM, Memory,... của Node thông qua các dashboard trực quan. Để hiển thị dữ liệu lên dashboard, người dùng cần cài đặt `vmonitor-metric-agent` vào cụm mong muốn thực hiện giám sát. Chi tiết tham khảo thêm tại [đây](../giam-sat/metrics.md).
+* **Giám sát tài nguyên VKS:** Người dùng có thể theo dõi trực tiếp tình trạng hoạt động của Cluster, Node, tình trạng sử dụng CPU, RAM, Memory,... của Node thông qua các dashboard trực quan. Để hiển thị dữ liệu lên dashboard, người dùng cần cài đặt `vmonitor-metric-agent` vào cụm mong muốn thực hiện giám sát. Chi tiết tham khảo thêm tại [đây](../monitoring/metrics.md).
 
 ***
 
@@ -290,7 +290,7 @@ VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhấ
 
 **Cải tiến:**
 
-* **Nâng cấp Plugin GreenNode LoadBalancer Controller:** Bổ sung Annotation để cấu hình Load Balancer hỗ trợ Proxy Protocol. Chi tiết tham khảo thêm tại [đây](../../../English/vks/network/lam-viec-voi-network-load-balancing-nlb/preserve-source-ip-when-using-nlb-and-nginx-ingress-controller.md).
+* **Nâng cấp Plugin GreenNode LoadBalancer Controller:** Bổ sung Annotation để cấu hình Load Balancer hỗ trợ Proxy Protocol. Chi tiết tham khảo thêm tại [đây](../../../English/vks/network/working-with-nlb/preserve-source-ip-when-using-nlb-and-nginx-ingress-controller.md).
 
 ***
 

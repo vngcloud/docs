@@ -136,7 +136,7 @@ allowVolumeExpansion: true
 volumeBindingMode: WaitForFirstConsumer 
 ```
 
-Thông tin vtype bạn vui lòng tham khảo trên trang chủ của VKS tại mục Volume Type hoặc tại [đây](../tham-khao-them/danh-sach-volume-type-dang-ho-tro/).
+Thông tin vtype bạn vui lòng tham khảo trên trang chủ của VKS tại mục Volume Type hoặc tại [đây](../reference/volume-types/).
 
 **Lưu ý quan trọng khi sử dụng Storage Class:**
 
