@@ -666,7 +666,7 @@
   * [Network](vks/network/README.md)
     * [Working with Application Load Balancer (ALB)](vks/network/working-with-alb/README.md)
       * [Expose a service through vLB Layer7 (ALB)](vks/network/working-with-alb/expose-mot-service-thong-qua-vlb-layer7.md)
-      * [Automatically manage Certificates in VKS with Nginx Ingress Controller, Cert-Manager, and Let's Encrypt](vks/network/working-with-alb/automatically-manage-certificates-in-vks-with-nginx-ingress-controller-cert-manager-and-lets-encr.md)
+      * [Automatically manage Certificates in VKS with Nginx Ingress Controller, Cert-Manager, and Let's Encr](vks/network/working-with-alb/automatically-manage-certificates-in-vks-with-nginx-ingress-controller-cert-manager-and-lets-encr.md)
       * [Ingress for an Application Load Balancer](vks/network/working-with-alb/ingress-for-an-application-load-balancer.md)
       * [Configure for an Application Load Balancer](vks/network/working-with-alb/cau-hinh-cho-mot-application-load-balancer.md)
       * [ALB Limitation](vks/network/working-with-alb/gioi-han-va-han-che-alb.md)
