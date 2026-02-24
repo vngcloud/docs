@@ -75,16 +75,7 @@ If installed manually, by default the agent log after installation will **not** 
 
 FilebeatLogstash
 
-<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>Start</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl start filebeat
-</code></pre></td></tr></tbody></table><ul><li>Enable</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl enable filebeat
-</code></pre></td></tr></tbody></table><ul><li>Stop</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl stop filebeat
-</code></pre></td></tr></tbody></table><ul><li>Reload</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl reload filebeat
-</code></pre></td></tr></tbody></table><ul><li>Restart</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl restart filebeat
-</code></pre></td></tr></tbody></table><ul><li>Observe</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>systemctl status filebeat
-journalctl -f --unit filebeat
-tail -f /var/log/filebeat
-</code></pre></td></tr></tbody></table><ul><li>Uninstall</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>tapt remove --purge filebeat
-</code></pre></td></tr></tbody></table></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl start filebeat
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>Start</li><li>Enable</li><li>Stop</li><li>Reload</li><li>Restart</li><li>Observe</li><li>Uninstall</li></ul></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl start filebeat
 </code></pre></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl enable filebeat
 </code></pre></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl stop filebeat
 </code></pre></td></tr><tr><td></td></tr><tr><td><pre><code>systemctl reload filebeat

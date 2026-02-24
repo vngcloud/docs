@@ -24,55 +24,7 @@ The configuration files below have been prepared by us in the script when downlo
 
 **Configuration**
 
-<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>File<code>docker-compose.yml</code></li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>version: "3"
-services:
-  filebeat-agent-vmonitor:
-    image: docker.elastic.co/beats/filebeat:8.7.0
-    container_name: filebeat-agent-vmonitor
-    restart: always
-    env_file:
-      - container.env
-    volumes:
-      -  $PWD/filebeat.yml:/usr/share/filebeat/filebeat.yml
-      -  $PWD/VNG.trust.pem:/usr/share/filebeat/VNG.trust:rw
-      -  $PWD/user.cer.pem:/usr/share/filebeat/user.cer.pem:rw
-      -  $PWD/user.key.pem:/usr/share/filebeat/user.key.pem:rw
-      -  /var/log/app.log:/var/log/app.log:ro
-      -  /var/log/filebeat/:/var/log/filebeat/
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "50m"
-    deploy:
-      resources:
-         limits:
-           cpus: '1'
-           memory: 2G
-</code></pre></td></tr></tbody></table><ul><li>File <code>filebeat.yml</code>. The configuration below will retrieve all logs written to file <code>/var/log/app.log</code>for vMonitor Platform:</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>filebeat.inputs:
-- type: log
-  paths:
-    - /var/log/app.log
-output.kafka:
-hosts: ${BOOTSTRAP_SERVERS}
-topic: ${TOPIC}
-partition.round_robin:
-reachable_only: false
-required_acks: 1
-compression: gzip
-max_message_bytes: 1000000
-ssl.certificate_authorities:
-- /usr/share/filebeat/VNG.trust
-ssl.certificate: /usr/share/filebeat/user.cer.pem
-ssl.key: /usr/share/filebeat/user.key.pem
-ssl.verification_mode: "none"
-logging.level: info
-logging.to_files: true
-logging.files:
-path: /var/log/filebeat
-name: filebeat
-keepfiles: 7
-permissions: 0644
-</code></pre></td></tr></tbody></table><ul><li>Note: the $ variables <code>BOOTSTRAP_SERVERS, $TOPIC</code>above are already in <code>container.env</code>the file in the downloaded certificate folder.</li></ul></td></tr><tr><td></td></tr><tr><td><p>Copy</p><pre><code>version: "3"
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>File<code>docker-compose.yml</code></li><li>File <code>filebeat.yml</code>. The configuration below will retrieve all logs written to file <code>/var/log/app.log</code>for vMonitor Platform:</li><li>Note: the $ variables <code>BOOTSTRAP_SERVERS, $TOPIC</code>above are already in <code>container.env</code>the file in the downloaded certificate folder.</li></ul></td></tr><tr><td></td></tr><tr><td><p>Copy</p><pre><code>version: "3"
 services:
   filebeat-agent-vmonitor:
     image: docker.elastic.co/beats/filebeat:8.7.0
@@ -234,12 +186,7 @@ permissions: 0644
 
 FilebeatLogstash
 
-<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>Stop</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>docker stop filebeat
-</code></pre></td></tr></tbody></table><ul><li>Reload</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>docker kill --signal=HUP filebeat
-</code></pre></td></tr></tbody></table><ul><li>Restart</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>docker restart filebeat
-</code></pre></td></tr></tbody></table><ul><li>Observe</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>docker logs --tail 100 -f filebeat
-</code></pre></td></tr></tbody></table><ul><li>Uninstall</li></ul><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><p>Copy</p><pre><code>docker rm filebeat
-</code></pre></td></tr></tbody></table></td></tr><tr><td></td></tr><tr><td><p>Copy</p><pre><code>docker stop filebeat
+<table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>Stop</li><li>Reload</li><li>Restart</li><li>Observe</li><li>Uninstall</li></ul></td></tr><tr><td></td></tr><tr><td><p>Copy</p><pre><code>docker stop filebeat
 </code></pre></td></tr><tr><td></td></tr><tr><td><p>Copy</p><pre><code>docker kill --signal=HUP filebeat
 </code></pre></td></tr><tr><td></td></tr><tr><td><p>Copy</p><pre><code>docker restart filebeat
 </code></pre></td></tr><tr><td></td></tr><tr><td><p>Copy</p><pre><code>docker logs --tail 100 -f filebeat
