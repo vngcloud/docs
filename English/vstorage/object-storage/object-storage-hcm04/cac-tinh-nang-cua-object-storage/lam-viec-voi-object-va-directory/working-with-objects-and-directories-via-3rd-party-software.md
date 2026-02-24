@@ -8,13 +8,13 @@ To store an object in vStorage, you create a bucket using 3rd party software and
 
 To Upload/download object, select 2 corresponding icons as shown below.
 
-<figure><img src="../../../../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Search object/folder <a href="#tim-kiem-object-folder" id="tim-kiem-object-folder"></a>
 
 To search for an object/folder, select the corresponding icon as shown below.
 
-<figure><img src="../../../../../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (12) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Move object <a href="#di-chuyen-object" id="di-chuyen-object"></a>
 

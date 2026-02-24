@@ -101,7 +101,7 @@ Follow the steps below to log in to vStorage with an IAM user account:
 5. Select **LOG IN WITH IAM USER ACCOUNT** . If you have previously logged in as an IAM user account in this browser, your browser may remember the IAM user account address. If so, you will see the screen shown in step 3. After successfully logging in with an IAM user account, the main screen of vStorage will show the type of user you are using to log in (Root user account or IAM user account).
 6. After successful login, you have the right to access and perform the features provided by the vStorage service on the resources authorized to you.
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

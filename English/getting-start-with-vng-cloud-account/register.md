@@ -6,14 +6,14 @@ Create a account Guide
 
 Navigate to "Create New Account" screen as shown in the following image:
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2:** At "Create new account" screen:
 
 1. Fill in all required information including **Email** and **Security Code**. Then, select the checkbox to **I agree to the Terms and Conditions and Personal Data Protection**.
 2. Click the **Register** button to complete the registration information. An email will be sent to the email account you used to register.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3:** Check your mail inbox
 
@@ -26,7 +26,7 @@ Navigate to "Create New Account" screen as shown in the following image:
 
 **Step 5:** After clicking the link in the email from **step 4**, the final registration form will open. Fill in all the required information on the registration form.
 
-![](<../.gitbook/assets/image (3).png>)<br>
+![](<../.gitbook/assets/image (3) (1).png>)<br>
 
 * Fields marked with an \* are mandatory for users to fill out. Other information is optional.
 * When entering a password, users must follow the system's guidelines.
