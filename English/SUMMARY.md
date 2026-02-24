@@ -8,6 +8,7 @@
     * [2024](overview/product-updates-all/2024.md)
     * [2025](overview/product-updates-all/2025.md)
     * [2026](overview/product-updates-all/2026.md)
+  * [Service package limits](overview/service-package-limits.md)
 * [vServer](vserver/README.md)
   * [Compute](vserver/compute-hcm03-1a/README.md)
     * [What is vServer?](vserver/compute-hcm03-1a/what-is-vserver.md)
