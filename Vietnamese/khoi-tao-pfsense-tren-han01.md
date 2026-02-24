@@ -2,7 +2,7 @@
 
 ### Khởi tạo Pfsense <a href="#khoi-tao-pfsense" id="khoi-tao-pfsense"></a>
 
-Truy cập portal vServer trên region HAN:  [https://han-1.console.vngcloud.vn/vserver/overview](https://han-1.console.vngcloud.vn/vserver/overview)
+Truy cập portal vServer trên region HAN: [https://han-1.console.vngcloud.vn/vserver/overview](https://han-1.console.vngcloud.vn/vserver/overview)
 
 Vào trang tạo Server và chọn "Tạo mới một Server", chọn tiếp tab Marketplace và đợi portal redirect qua portal vMarketplace, chọn app Pfsense (trên module Security) và click Launch
 
