@@ -16,6 +16,7 @@
     * [Thông báo và cập nhật](vserver/compute-hcm03-1a/thong-bao-va-cap-nhat/README.md)
       * [2024](vserver/compute-hcm03-1a/thong-bao-va-cap-nhat/2024.md)
       * [2023](vserver/compute-hcm03-1a/thong-bao-va-cap-nhat/2023.md)
+      * [2025](vserver/compute-hcm03-1a/thong-bao-va-cap-nhat/2025.md)
     * [Trải nghiệm sản phẩm vServer](vserver/compute-hcm03-1a/trai-nghiem-san-pham-vserver/README.md)
       * [UserData](vserver/compute-hcm03-1a/trai-nghiem-san-pham-vserver/userdata.md)
     * [Hạn mức tài nguyên](vserver/compute-hcm03-1a/han-muc-tai-nguyen.md)
