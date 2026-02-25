@@ -5,7 +5,7 @@ description: >-
   updated in the new UI.
 ---
 
-# 🇬🇧 GreenNode Help Center
+# 🇬🇧 Greennode Help Center
 
 ## Overview
 
@@ -35,6 +35,6 @@ Welcome to GreenNode's user guide page. Here you can easily find useful informat
 {% endtab %}
 
 {% tab title="Software as a Service" %}
-[Veka.ai -Smart surveillance solution](vcloudcam.md)
+[Veka.ai -Smart surveillance solution](vcloudcam/)
 {% endtab %}
 {% endtabs %}
