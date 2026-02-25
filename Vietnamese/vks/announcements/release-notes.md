@@ -1,5 +1,25 @@
 # Release notes
 
+## Feb 24, 2026
+
+VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều nâng cấp mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Nâng cấp mới:**
+
+* **Terraform Provider for VNG Cloud v1.3.8:** Sửa lỗi labels và taints của node group bị thiếu sau khi thực hiện terraform import. Các node group được import từ Portal giờ đây đã phản ánh chính xác labels và taints trong Terraform state. Chi tiết vui lòng tham khảo tại [đây](https://registry.terraform.io/providers/vngcloud/vngcloud/1.3.8/docs/resources/vks_cluster_node_group).
+
+***
+
+## Feb 4, 2026
+
+VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều nâng cấp mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Nâng cấp mới:**
+
+* **Terraform Provider for VNG Cloud v1.3.7:** Cập nhật quy trình tạo cluster sử dụng POC provisioning API. Chi tiết vui lòng tham khảo tại [đây](https://registry.terraform.io/providers/vngcloud/vngcloud/1.3.7/docs/resources/vks_cluster_node_group).
+
+***
+
 ## Nov 10, 2025
 
 VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều nâng cấp mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:

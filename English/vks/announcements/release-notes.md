@@ -1,5 +1,25 @@
 # Release notes
 
+## Feb 24, 2026 <a href="#feb_24_2026" id="feb_24_2026"></a>
+
+VKS (VNG Kubernetes Engine) has just released its latest update, bringing several new upgrades to users. Below are the key highlights of this release:
+
+**New Upgrades:**
+
+* **Terraform Provider for VNG Cloud v1.3.8:** Fixed an issue where node group labels and taints were missing after terraform import. Node groups imported from the Portal now have labels and taints correctly reflected in Terraform state. For more information, see [here](https://registry.terraform.io/providers/vngcloud/vngcloud/1.3.8/docs/resources/vks_cluster_node_group).
+
+***
+
+## Feb 4, 2026 <a href="#feb_4_2026" id="feb_4_2026"></a>
+
+VKS (VNG Kubernetes Engine) has just released its latest update, bringing several new upgrades to users. Below are the key highlights of this release:
+
+**New Upgrades:**
+
+* **Terraform Provider for VNG Cloud v1.3.7:** Updated the cluster creation workflow to use the POC provisioning API. For more information, see [here](https://registry.terraform.io/providers/vngcloud/vngcloud/1.3.7/docs/resources/vks_cluster_node_group).
+
+***
+
 ## Nov 10, 2025 <a href="#nov_10_2025" id="nov_10_2025"></a>
 
 VKS (VNG Kubernetes Engine) has just released its latest update, bringing several important enhancements to users. Below are the key highlights of this release:
