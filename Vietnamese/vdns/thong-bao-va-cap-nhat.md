@@ -1,5 +1,7 @@
 # Thông báo và cập nhật
 
+Chi tiết các cập nhật Release Note, tham khảo thêm [tại đây.](../gioi-thieu-chung/thong-bao-va-cap-nhat/)
+
 ## 16 Dec, 2024
 
 GreenNode giới thiệu vDNS, dịch vụ vDNS mạnh mẽ giúp tối ưu hiệu suất, tăng cường bảo mật và đảm bảo tính ổn định cho hạ tầng trực tuyến của bạn. vDNS cung cấp khả năng phân giải tên miền nhanh chóng và tin cậy, đảm bảo trải nghiệm truy cập mượt mà cho người dùng.

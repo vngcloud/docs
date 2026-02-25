@@ -43,7 +43,7 @@ By default, when creating a **VPN Site-to-Site**, the system requires the creati
 
 <figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Besides that Component <mark style="color:blue;">**Algorithm Configuration**</mark> defines factors for a basic VPN connection, currently, GreenNode supports the default config in the below pic. _The customer can customize it on the nearest day_
   * **IKE Policy**: Configure for Phase 1 of VPN IPSEC (the Configuration at both sites must be the same).
@@ -66,7 +66,7 @@ _-> After checkout successfully, the system will start creating a connection wit
 
 <figure><img src="../../../.gitbook/assets/image (405).png" alt=""><figcaption><p>VPN Detail - Local Configuration</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (408).png" alt=""><figcaption><p>VPN Detail - Tags</p></figcaption></figure>
 

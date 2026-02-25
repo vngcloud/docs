@@ -23,9 +23,9 @@ Virtual IP được sử dụng chủ yếu để:
 
 Tài liệu này nhằm hướng dẫn khách hàng:
 
-·       Hiểu và sử dụng tính năng Virtual IP Address(es) trên vMarketplace.
+· Hiểu và sử dụng tính năng Virtual IP Address(es) trên vMarketplace.
 
-·       Sử dụng pfSense như một Internet Gateway.
+· Sử dụng pfSense như một Internet Gateway.
 
 ## III. Các bước thực hiện:
 
@@ -85,7 +85,7 @@ Kiểm tra VIP trong pfSense
 
 <figure><img src=".gitbook/assets/image (485).png" alt=""><figcaption></figcaption></figure>
 
-2. Tạo rule NAT&#x20;
+2. Tạo rule NAT
 
 <figure><img src=".gitbook/assets/image (491).png" alt=""><figcaption></figcaption></figure>
 
@@ -97,7 +97,7 @@ Server 1 (192.168.2.7), Server 2 (192.168.2.5) đứng sau pfSense: Rule đi int
 
 <figure><img src=".gitbook/assets/image (494).png" alt=""><figcaption></figcaption></figure>
 
-4. **Tạo Route table**&#x20;
+4. **Tạo Route table**
 
 Chọn VPC ID là VPC đang chứa firewall pfSense và servers nội bộ
 
@@ -113,7 +113,7 @@ Truy cập vào 2 server (192.168.2.7, 192.168.2.5) và sử dụng curl ifconfi
 
 <figure><img src=".gitbook/assets/image (544).png" alt=""><figcaption></figcaption></figure>
 
-Lúc này server (192.168.2.7, 192.168.2.5) đã ra được internet với Virtual IP Address, traffic cũng đi qua pfSense, ngoài ra có thể vào webGUI của pfSense bằng Virtual IP address này.&#x20;
+Lúc này server (192.168.2.7, 192.168.2.5) đã ra được internet với Virtual IP Address, traffic cũng đi qua pfSense, ngoài ra có thể vào webGUI của pfSense bằng Virtual IP address này.
 
 <figure><img src=".gitbook/assets/image (542).png" alt=""><figcaption></figcaption></figure>
 
@@ -160,7 +160,7 @@ Lưu ý: Virtual IP Address phải Add Address pair với cả 2 external interf
 
 <figure><img src=".gitbook/assets/image (585).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 3: Config chân interface HA cho 2 firewall pfsense**&#x20;
+**Bước 3: Config chân interface HA cho 2 firewall pfsense**
 
 Vào webGUI pfsense, assignment interface vừa add từ vServer portal, và config như sau
 
@@ -212,4 +212,3 @@ Trên webGUI pfSense, vào Status -> CARP (failover)
 
 Việc cấu hình CARP Virtual IP trong pfSense HA nhằm mục đích tạo ra một địa chỉ IP ảo có thể được chia sẻ giữa các thiết bị trong cụm HA.\
 Khi một thiết bị hoặc tường lửa chính (Master) gặp sự cố, CARP cho phép địa chỉ IP ảo tự động chuyển từ thiết bị gặp sự cố sang thiết bị dự phòng (Backup).
-

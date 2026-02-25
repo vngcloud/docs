@@ -8,17 +8,17 @@ Hướng dẫn triển khai use case phổ biến: Hosting 2 Website trên 2 Pub
 
 **Kiến trúc mục tiêu:**
 
-VM Ubuntu/CentOS\
-├── eth1 (IP: 103.245.255.167) → website1.com\
-├── eth2 (IP: 103.245.255.166) → website2.com\
+VM Ubuntu/CentOS\
+├── eth1 (IP: 103.245.255.167) → website1.com\
+├── eth2 (IP: 103.245.255.166) → website2.com\
 └── Nginx/Apache phân biệt traffic theo IP
 
-&#x20;**Bước 1: Attach multi external interface trên UI portal**
+**Bước 1: Attach multi external interface trên UI portal**
 
 1. Truy cập portal vServer (ví dụ HCM): [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview)
 2. Vào detail của Server, chọn tab Network Interface và attach nhiều external interface.
 
-**Bước 2:  Cấu hình Network Interfaces**
+**Bước 2: Cấu hình Network Interfaces**
 
 Kiểm tra interfaces hiện tại:
 
@@ -82,7 +82,7 @@ ping -I eth1 8.8.8.8
 
 **Sau khi apply, nếu đã login bằng SSH qua floating IP trước đó, cần re-login SSH bằng External interface (ví dụ eth1 hoặc eth2)**
 
-**Bước 3: Cấu hình Policy-Based Routing**&#x20;
+**Bước 3: Cấu hình Policy-Based Routing**
 
 ```
 # Tạo routing table mới
@@ -208,6 +208,3 @@ ip route get 8.8.8.8 from 103.245.255.166
 sudo tail -f /var/log/nginx/website1_access.log
 sudo tail -f /var/log/nginx/website2_access.log
 ```
-
-
-

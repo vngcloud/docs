@@ -1,5 +1,7 @@
 # Thông báo và cập nhật
 
+Chi tiết các cập nhật Release Note, tham khảo thêm [tại đây](../../gioi-thieu-chung/).
+
 Tài liệu này cung cấp thông tin mới nhất về các tính năng, cập nhật, và sự kiện quan trọng liên quan đến sản phẩm, dịch vụ File Storage
 
 | Tính nắng                                      | Mô tả                                                                          | Ngày phát hành |

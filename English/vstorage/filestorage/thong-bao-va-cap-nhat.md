@@ -1,5 +1,7 @@
 # Announcements and Updates
 
+For details on the Release Note updates, please refer to this [link](../../overview/product-updates-all/).
+
 This document provides the latest information on features, updates, and important events related to File Storage products and services.
 
 | **Sunny**                            | **Describe**                                                                      | **Release date** |

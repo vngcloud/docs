@@ -6,12 +6,11 @@ Volume is an object in a virtualized environment responsible for providing block
 
 When you use volumes, note that:
 
-* Maximum size for single volume is 1TB
-* A volume without multi-attach property can only be attached to one VM instance at any given time. A multi-attach volume can be accessed by multiple VM instances at the same time. You can set this property at creating volume.
+* Maximum size for single volume depend on the volume type.
 * A root volume is always attached to its owner VM instance and cannot be detached.
 * A data volume can be attached to or detached from different VM instances.
 * You can set QoS for volumes by choosing Volume Type to limit the disk bandwidth and IOPS
-* You can enable data encryption at provisioning volume to protect data. GreenNode supports aes-xts-plain64 (128bits) algorithm.
+* You can enable data encryption at provisioning volume to protect data. GreenNode supports aes-xts-plain64 algorithm.
 
 ## Work with volume <a href="#volume-workwithvolume" id="volume-workwithvolume"></a>
 
@@ -20,7 +19,7 @@ When you use volumes, note that:
 There are two type of volume usage, boot volume and data volume. For boot volume, you can provide information of volume when create VM instance. Data volume can be created independently from Volume management view.
 
 1. Go to GreenNode Portal console, navigate to Volume page
-2. Create a data volume and provide information such as name, data size, IOPS quota, multi-attach and encryption option.
+2. Create a data volume and provide information such as name, data size, IOPS quota and encryption option.
 3. You can check the price of volume on the right panel, then click **Create**.
 
 #### Attach volume to VM Instance <a href="#volume-attachvolumetovminstance" id="volume-attachvolumetovminstance"></a>

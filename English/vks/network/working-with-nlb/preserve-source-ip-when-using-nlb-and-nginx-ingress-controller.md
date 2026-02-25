@@ -38,7 +38,7 @@ helm install nginx-ingress-controller oci://ghcr.io/nginxinc/charts/nginx-ingres
 kubectl edit cm -n kube-system nginx-ingress-controller
 ```
 
-* If you arenot using <code>cert-manager</code>, the code you need to add is as follows:
+* If you arenot using `cert-manager`, the code you need to add is as follows:
 
 ```
 data:
@@ -48,7 +48,7 @@ data:
   set-real-ip-from: 0.0.0.0/0
 ```
 
-* If you are using <code>cert-manager</code>, the code you need to add is as follows:
+* If you are using `cert-manager`, the code you need to add is as follows:
 
 ```
 data:
@@ -100,9 +100,4 @@ spec:
 ```
 
 * Then I use IP 103.245.252.75 to curl to host kkk.example.com as follows:
-
-<figure><img src="../../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
-
 * The recorded log result has this Client IP information as shown:
-
-<figure><img src="../../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>

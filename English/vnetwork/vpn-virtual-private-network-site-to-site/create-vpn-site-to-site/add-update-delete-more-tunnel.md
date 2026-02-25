@@ -16,19 +16,19 @@ After successfully creating a VPN with the default tunnel configuration. Users c
 
 <figure><img src="../../../.gitbook/assets/image (411).png" alt=""><figcaption><p>VPN List</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Add more Site/Tunnel
 
 Users can allow a VPC to connect to multiple remote Gateways in addition to the **Default Site** created on the **VPN Creation** page.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/Screen Shot 2025-04-02 at 11.31.23.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 How to config? [Check at here](./#default-tunnel-configuration)
 
@@ -40,7 +40,7 @@ User can select dropdown list to action
 * Edit Configration
 * Disconnect Connection
 
-<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Delete Site/Tunnel
 

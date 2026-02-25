@@ -17,7 +17,7 @@
 ### **2. Regular Upgrades**
 
 * **Purpose**: Periodic upgrades according to the **upgrade window** you specify to keep your cluster up to date with the latest versions, including both **minor version** and **patch version**.
-* **Specifically**:&#x20;
+* **Specifically**:
   * **Minor Version Upgrades**: Update new features and APIs. For example, if the current cluster is using version 1.28.2, the system will automatically upgrade to version 1.29.6.
   * **Patch Version Upgrades**: Fix minor bugs and improve performance. For example, if the current cluster is using version 1.29.1, the system will automatically upgrade to version 1.29.2.
 *   **Execution time**:
@@ -104,8 +104,6 @@ Below are instructions for updating the Upgrade Policy on the VKS system:
 * **Select one or more days** in the week that the VKS system can perform auto-upgrade (e.g. Monday, Tuesday, ...).
 * **Select a specific time** that you want the VKS system to perform auto-upgrade (e.g. 20:00 (08:00 PM - UTC+07:00 timezone)
 
-<figure><img src="../../.gitbook/assets/vks_autoupgrade1.png" alt=""><figcaption></figcaption></figure>
-
 **Step 5:** Select **Create Kubernetes cluster/ Update Cluster.** Please wait a few minutes for us to create/update your Cluster. The Cluster status at this point will be **Creating/ Updating**.
 
 **Step 6:** When the **Cluster** status is **Active**, the VKS system has completed creating/updating this cluster.
@@ -135,7 +133,7 @@ Specifically for the Force Upgrade case, when it detects that your Kubernetes ve
 
 ### **Regular Upgrades**
 
-Regular Upgrades include **Minor** and **Patch** upgrades to improve performance, new features, and fix minor bugs in the Kubernetes system. You can configure the Regular Upgrades schedule through **VKS Portal**. The system will try to perform the upgrade in the cluster on the day and time you specified.&#x20;
+Regular Upgrades include **Minor** and **Patch** upgrades to improve performance, new features, and fix minor bugs in the Kubernetes system. You can configure the Regular Upgrades schedule through **VKS Portal**. The system will try to perform the upgrade in the cluster on the day and time you specified.
 
 Before performing a Regular Upgrade, the system will send you a detailed notification email, including:
 
@@ -161,7 +159,7 @@ When upgrading a cluster, two main components are upgraded:
 Node group upgrade process:
 
 * **Step 1:** The VKS system identifies nodes that need upgrading.
-* **Step 2:** The VKS system drains the node, moving all pods running on the old node to other nodes.&#x20;
+* **Step 2:** The VKS system drains the node, moving all pods running on the old node to other nodes.
 * **Step 3:** The system creates a new node with the configuration set on the node group and joins it to the cluster. If after restart, the node still reports "NotReady" status, the system will continue restarting the node until it returns to normal operating status.
 
 If **surge upgrades** are enabled, the system will create up to 10 new nodes before starting to upgrade the existing nodes. This ensures workloads have sufficient resources to run throughout the upgrade process.
@@ -172,7 +170,7 @@ If **surge upgrades** are enabled, the system will create up to 10 new nodes bef
   * Ensure critical pods always have replicas >=2.
   * Use Deployment or StatefulSet to automatically manage pods.
 * **Pod Disruption Budget (PDB) Configured Too Small:** PDB limits the number of pods that can be disrupted at a time. If configured too small, the upgrade process may hang. **Solution:**
-  * Configure PDB appropriately for application requirements (e.g. allow at least 1 pod to always be running).&#x20;
+  * Configure PDB appropriately for application requirements (e.g. allow at least 1 pod to always be running).
 * **Persistent Volume (PV) Not Configured With ReadWriteMany:** PV with `ReadWriteOnce` mode can only be attached to a single node. When this node is upgraded, the PV needs to be moved, causing downtime. **Solution:**
   * Use `ReadWriteMany` mode if the application requires data to be available on multiple nodes.
 * **Pods Missing Liveness and Readiness Probes:** Without probes, Kubernetes cannot determine pod status, leading to incorrect routing or downtime. **Solution:**

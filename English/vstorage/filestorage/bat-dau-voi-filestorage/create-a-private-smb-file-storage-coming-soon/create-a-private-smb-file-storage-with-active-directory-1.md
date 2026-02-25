@@ -29,7 +29,7 @@ Before you can perform Windows server initialization, make sure you initialize V
 13. In **Other Settings** , you can choose Server Group or not according to your needs. You can assign Server to previously created Groups (With properties such as same Compute Host or different Compute Host)
 14. Select **Launch Server** and follow the payment steps to complete the server initialization.
 
-![](<../../../../.gitbook/assets/image (22) (2).png>)
+![](<../../../../.gitbook/assets/image (22) (2) (1).png>)
 
 </details>
 
@@ -59,7 +59,7 @@ Below is a basic guide for connecting to Windows server on vServer, if you have 
 2. Select **the Server** you want to connect to, then select **Action, then select Connect.**
 3. On the **Connect to Server** page , select **the RDP (Window) tab**
 
-![](<../../../../.gitbook/assets/image (23) (2).png>)
+![](<../../../../.gitbook/assets/image (23) (2) (1).png>)
 
 4. Select **Download RDP File** . Your browser will prompt you to open or save the RDP file. When you've finished downloading the file, select **Done** to return to the server page:
 5. Open the downloaded file to remote to Windows server. Select **Connect** to continue connecting to your server.
@@ -69,11 +69,11 @@ Below is a basic guide for connecting to Windows server on vServer, if you have 
 6. The administrator account is selected by default. You need to copy and paste the password you saved earlier into the login pop-up (This information is taken from the email), in which enter the information **InstanceLogin** into **Username** , **InstancePassword** into **Password.**
 7. Select **OK.** Due to the nature of self-signed certificates, you may receive a warning that the security certificate cannot be validated. Use the following steps to verify the identity of the remote computer, or simply select **Yes** (Windows) or **Continue** (Mac OS X) if you trust the certificate.
 
-![](<../../../../.gitbook/assets/image (13) (2).png>)
+![](<../../../../.gitbook/assets/image (13) (2) (1).png>)
 
 8. The screen will show that the connection to the **Windows** server is successful.
 
-![](<../../../../.gitbook/assets/image (14) (2).png>)
+![](<../../../../.gitbook/assets/image (14) (2) (1).png>)
 
 </details>
 
@@ -89,7 +89,7 @@ After you have connected to Windows server, you need to make sure your Windows s
     * **IP Address:** static IP address of the VM.
     * **Subnet Mask:** Corresponding subnet, for example: 255.0.0.0
 
-<figure><img src="../../../../.gitbook/assets/image (15) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

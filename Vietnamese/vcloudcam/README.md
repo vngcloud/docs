@@ -1,20 +1,3 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
-
 # Veka.ai
 
 ### VEKA.AI: GIẢI PHÁP CAMERA GIÁM SÁT THÔNG MINH

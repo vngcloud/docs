@@ -37,8 +37,6 @@ To create a Cluster, follow the steps below:
 
 **Step 5:** Select **POC** and then select **Create Kubernetes cluster.** Please wait a few minutes for us to create your Cluster. The Cluster status at this point will be **Creating**.
 
-<figure><img src="../../.gitbook/assets/image (819).png" alt=""><figcaption></figcaption></figure>
-
 **Step 6:** When the **Cluster** status is **Active**, you can view Cluster information and Node Group information by selecting the Cluster Name in the **Name** column.
 
 {% hint style="info" %}
