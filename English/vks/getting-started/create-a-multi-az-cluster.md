@@ -44,7 +44,6 @@ Example of **invalid** subnet configuration:
 
 * At least 1 **VPC** and 1 **Subnet** in **ACTIVE** state. If you do not have a VPC or Subnet yet, please create one following the guide [here.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/)
 * At least 1 **SSH key** in **ACTIVE** state. If you do not have an SSH key, please create one following the guide [here.](../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
-* **kubectl** installed and configured on your device. Please refer to [here](https://kubernetes.io/docs/tasks/tools/install-kubectl/) if you are unfamiliar with installing and using kubectl. Additionally, you should not use a kubectl version that is too old; we recommend using a kubectl version that differs by no more than one version from the cluster version.
 
 ***
 
@@ -162,72 +161,6 @@ When selecting **Cilium VPC Native Routing** combined with **Multi-AZ**, the **P
 
 ***
 
-## Private Service Endpoint
-
-Multi-AZ Cluster uses a **new generation of Private Service Endpoints (PSE)** that operate at the **VPC level**. When you create a Multi-AZ Cluster, the cluster and node groups **have no outbound internet access** — all connections to GreenNode services go through PSE. The system will automatically create **4 Private Service Endpoints**:
-
-| Endpoint | Connected Service | Purpose |
-| --- | --- | --- |
-| **vks-iam-endpoint-...** | IAM | Authentication and authorization |
-| **vks-vcr-endpoint-...** | vContainer Registry (vCR) | Pull/push container images |
-| **vks-vserver-endpoint-...** | vServer | Manage compute resources |
-| **vks-vstorage-endpoint-...** | vStorage | Connect to object storage |
-
-You can view information about the 4 private service endpoints through the vServer portal at [here](https://hcm-3.console.vngcloud.vn/vserver/vnetwork/endpoint/list).
-
-{% hint style="warning" %}
-**Important notes about Private Service Endpoints:**
-
-* **Affects the entire VPC**: PSE operates at the VPC level, therefore **all resources in the VPC** (including resources that do not belong to the cluster) when calling vCR, IAM, vServer, vStorage services **will all go through PSE**. This is an important difference from previous Private Clusters.
-* **Nodes need to pull images from vCR**: Since there is no outbound internet access, nodes can only pull images from vContainer Registry (vCR) through PSE. Operators on the cluster also access vServer, IAM, vStorage through PSE to function.
-* **Do not delete Private Service Endpoints**: Deleting PSE will affect not only the cluster but also **all other resources in the VPC** that are using these services. If you accidentally delete or modify these 4 endpoints, within a maximum of 5 minutes, the system will automatically recreate them but may cause disruption to running services. At this time, because the recreated service endpoint may have changed the Endpoint IP compared to the original, for the cluster to work, you need to manually add the Endpoint IP to the previously running servers via the command:
-
-    ```
-    vks-bootstraper add-host -i <IP> -d <DOMAIN>
-    ```
-
-    For example,
-
-    *   If you delete a private service endpoint in **Region HCM**, you need to add hosts via the commands:
-
-        ```
-        vks-boostraper add-host -i 192.168.1.9 -d vcr.vngcloud.vn
-        vks-boostraper add-host -i 192.168.1.8 -d hcm-3.api.vngcloud.vn
-        vks-boostraper add-host -i 192.168.1.5 -d iamapis.vngcloud.vn
-        vks-boostraper add-host -i 192.168.1.7 -d hcm03.vstorage.vngcloud.vn
-        ```
-    *   If you delete a private service endpoint in **Region HAN**, you need to add hosts via the commands:
-
-        ```
-        vks-boostraper add-host -i 192.168.1.9 -d vcr-han.vngcloud.vn
-        vks-boostraper add-host -i 192.168.1.8 -d han-1.api.vngcloud.vn
-        vks-boostraper add-host -i 192.168.1.5 -d iamapis.vngcloud.vn
-        vks-boostraper add-host -i 192.168.1.7 -d han02.vstorage.vngcloud.vn
-        ```
-
-* **Reuse Private Service Endpoints:** Service endpoints can be shared by multiple private clusters / Multi-AZ clusters. When clusters share the same VPC, we will reuse them.
-* **Automatic deletion of Private Service Endpoints:** When you delete a cluster, if no other clusters are reusing these service endpoints, the system will automatically delete them.
-* **Multi-AZ Control Plane cost:** During the initial release phase, the Multi-AZ Control Plane feature is provided **free of charge**. Official pricing will be updated in the future. Note: using a Multi-AZ Cluster will incur additional costs for 4 Private Service Endpoints.
-{% endhint %}
-
-***
-
-## Container Registry (vCR)
-
-Since Multi-AZ Cluster operates on a private flow, nodes in the cluster can **only connect privately** to vContainer Registry (vCR) and **cannot connect** to other Container Registries on the internet (Docker Hub, ghcr.io, quay.io...).
-
-You need to pull/push images to vCR for use. Please refer to the detailed guide in the [Using Docker to Pull/Push images](create-a-private-cluster.md#khoitaomotpublicclustervoiprivatenodegroup-deploymotworkload) section of the Private Cluster documentation.
-
-{% hint style="info" %}
-**Note:**
-
-On VKS, the vCR domain for pulling/pushing images differs between regions:
-* **For Region HCM**: use domain `vcr.vngcloud.vn`
-* **For Region HAN**: use domain `vcr-han.vngcloud.vn`
-{% endhint %}
-
-***
-
 ## Connect and verify the newly created Cluster
 
 Multi-AZ Cluster supports both **Public Cluster** and **Private Cluster** access modes. The way you connect to the kube-api will differ depending on the mode you selected in Step 5:
@@ -241,7 +174,7 @@ The kube-api endpoint is exposed to the internet. You can connect to the kube-ap
 {% hint style="warning" %}
 **With Private Cluster:**
 
-The kube-api endpoint is only accessible from within the VPC. To access the **kube-api** of the Control Plane, you must be **within the VPC** that you selected for the Cluster. If you are not within the VPC, you will not be able to connect to the kube-api and will receive the error `Unable to connect to the server`.
+The kube-api endpoint is only accessible from within the VPC. To access the **kube-api** of the Control Plane, you must be **within the VPC** that you selected for the Cluster. If you are not within the VPC, you will not be able to connect to the kube-api.
 
 You can SSH into a server within the same VPC to perform the steps below. Refer to the SSH guide [here](../../vserver/compute-hcm03-1a/server/ket-noi-vao-may-chu-ao/ket-noi-vao-may-chu-linux-bang-cong-cu-ssh-client/).
 {% endhint %}
@@ -250,7 +183,7 @@ After the Cluster has been successfully initialized, you can connect and verify 
 
 **Step 1:** Navigate to [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console.vngcloud.vn/k8s-cluster)
 
-**Step 2:** The Cluster list is displayed. Select the **Download** icon and choose **Download config file** to download the kubeconfig file. This file will give you full access to your Cluster.
+**Step 2:** The Cluster list is displayed. Select the **three-dot icon** to open the dropdown menu, then choose **Download config file** to download the kubeconfig file. This file will give you full access to your Cluster.
 
 **Step 3:** Rename this file to config and save it to the **\~/.kube/config** directory
 
