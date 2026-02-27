@@ -166,10 +166,14 @@ Note: Multi-AZ Cluster operates on a private flow, so there will be additional c
 {% hint style="warning" %}
 **Regarding Private Service Endpoints:**
 
-* Multi-AZ Cluster operates on a **private flow**, the system automatically creates 4 Private Service Endpoints when the cluster is created
-* **Do not delete** these endpoints to avoid service disruption
-* Nodes in the cluster **cannot connect to the internet** to pull images — you must use **vContainer Registry (vCR)**
-* To access the **kube-api**, you must be **within the VPC** that the cluster uses
+Multi-AZ Cluster uses a **new generation of Private Service Endpoints (PSE)** that operate at the **VPC level** — different from the PSE of previous Private Clusters. The impact of PSE in Multi-AZ is **significantly higher**:
+
+* **Cluster and Node Groups have no outbound internet access**: Nodes in the cluster cannot connect to the internet. All connections to GreenNode services go through PSE.
+* **Pull images from vCR**: Nodes need to pull container images from **vContainer Registry (vCR)** via PSE. Cannot pull images from external registries (Docker Hub, ghcr.io, quay.io...).
+* **Operators and internal services**: Operators on the cluster need to access services such as **vServer**, **IAM**, **vStorage** through PSE to function.
+* **Affects the entire VPC**: PSE operates at the VPC level, therefore **all resources in the VPC** (including resources that do not belong to the cluster) when calling vCR, IAM, vServer, vStorage services **will all go through PSE**. This is an important difference from previous Private Clusters.
+* **Do not delete PSE**: Deleting PSE will affect not only the cluster but also all other resources in the VPC that are using these services.
+* To access the **kube-api**, you must be **within the VPC** that the cluster uses.
 * For details, refer to [Create a Multi-AZ Cluster](../getting-started/create-a-multi-az-cluster.md)
 {% endhint %}
 

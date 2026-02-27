@@ -4,7 +4,7 @@ Multi-AZ Cluster cho phép triển khai Control Plane trên nhiều Availability
 
 Để tìm hiểu thêm về khái niệm, kiến trúc và so sánh giữa Single-AZ và Multi-AZ, vui lòng tham khảo tại [Multi-AZ Control Plane](../clusters/multi-az-control-plane.md).
 
-***
+---
 
 ## Điều kiện cần
 
@@ -28,25 +28,24 @@ Multi-AZ Control Plane **chỉ hỗ trợ VPC đã bật DNS**. Nếu VPC chưa 
 
 Ví dụ cấu hình subnets hợp lệ:
 
-| Subnet Name | AZ | CIDR | Hợp lệ? |
-| --- | --- | --- | --- |
-| sub-1A | HCM-1A | 10.60.0.0/24 | ✅ |
-| sub-1B | HCM-1B | 10.60.1.0/24 | ✅ |
+| Subnet Name | AZ     | CIDR         | Hợp lệ? |
+| ----------- | ------ | ------------ | --------- |
+| sub-1A      | HCM-1A | 10.60.0.0/24 | ✅        |
+| sub-1B      | HCM-1B | 10.60.1.0/24 | ✅        |
 
 Ví dụ cấu hình subnets **không** hợp lệ:
 
-| Subnet Name | AZ | CIDR | Lý do không hợp lệ |
-| --- | --- | --- | --- |
-| sub-1A | HCM-1A | 10.60.0.0/24 | ❌ Cùng AZ |
-| sub-2A | HCM-1A | 10.60.3.0/24 | ❌ Cùng AZ |
+| Subnet Name | AZ     | CIDR         | Lý do không hợp lệ |
+| ----------- | ------ | ------------ | ---------------------- |
+| sub-1A      | HCM-1A | 10.60.0.0/24 | ❌ Cùng AZ            |
+| sub-2A      | HCM-1A | 10.60.3.0/24 | ❌ Cùng AZ            |
 
 ### 3. Các điều kiện khác
 
 * Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn tại [đây.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/)
 * Có ít nhất 1 **SSH key** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có SSH key, vui lòng khởi tạo theo hướng dẫn tại [đây.](../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
-* Đã cài đặt và cấu hình **kubectl** trên thiết bị của bạn. Vui lòng tham khảo tại [đây](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) nếu bạn chưa rõ cách cài đặt và sử dụng kubectl. Ngoài ra, bạn không nên sử dụng phiên bản kubectl quá cũ, chúng tôi khuyến cáo bạn nên sử dụng phiên bản kubectl sai lệch không quá một phiên bản với version của cluster.
 
-***
+---
 
 ## Khởi tạo Cluster
 
@@ -73,10 +72,10 @@ Ví dụ cấu hình subnets **không** hợp lệ:
 
   Có 2 lựa chọn:
 
-  | Option | Mô tả |
-  | --- | --- |
-  | **Single-AZ** (mặc định) | Triển khai cluster trong một Availability Zone. Phù hợp cho môi trường development và testing. |
-  | **Multi-AZ** | Triển khai cluster trên nhiều Availability Zones để đảm bảo High Availability. Khuyến nghị cho production. |
+| Option                            | Mô tả                                                                                                              |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **Single-AZ** (mặc định) | Triển khai cluster trong một Availability Zone. Phù hợp cho môi trường development và testing.               |
+| **Multi-AZ**                | Triển khai cluster trên nhiều Availability Zones để đảm bảo High Availability. Khuyến nghị cho production. |
 
 * **Network type:** Lựa chọn loại network mà bạn mong muốn sử dụng cho Cluster. Hiện tại, VKS cung cấp cho bạn chọn sử dụng 1 trong 3 loại network Calico Overlay, Cilium Overlay, Cilium VPC Native Routing.
   * Đối với loại network **Calico Overlay, Cilium Overlay**: Encapsulation Mode được tự chọn mặc định bởi hệ thống và bạn không thể thay đổi. Bạn có thể nhập lại thông số **CIDR** (dải mạng ảo mà các pod sẽ sử dụng).
@@ -91,7 +90,6 @@ Khi chọn **Cilium VPC Native Routing** kết hợp với **Multi-AZ**, trườ
 {% endhint %}
 
 * **VPC:** Chọn VPC đã **bật DNS** từ dropdown. Lưu ý: khi chọn Multi-AZ, **chỉ các VPC đã bật DNS mới hiển thị**. Nếu bạn không thấy VPC nào trong danh sách, vui lòng bật DNS cho VPC tại portal vServer.
-
 * **Subnets:** Khi chọn **Multi-AZ**, trường Subnet thay đổi thành dạng **multi-select dropdown**, cho phép bạn chọn nhiều subnets:
 
   * Hệ thống sẽ **tự động chọn sẵn 1 subnet đầu tiên của mỗi AZ** có trong VPC. Ví dụ: Nếu VPC có subnets ở HCM-1A, HCM-1B, HCM-1C → Mặc định chọn sẵn 3 subnets (1 subnet/zone).
@@ -106,7 +104,7 @@ Khi chọn **Cilium VPC Native Routing** kết hợp với **Multi-AZ**, trườ
 * Tối thiểu **2 subnets** phải được chọn
 * Các subnets phải thuộc **ít nhất 2 AZ khác nhau**
 * Nếu chọn 2 subnet cùng AZ, hệ thống sẽ hiển thị lỗi: *"Các subnet phải thuộc ít nhất 2 Availability Zone khác nhau"*
-{% endhint %}
+  {% endhint %}
 
 **Bước 6:** Cấu hình **Default Node Group Configuration**:
 
@@ -144,8 +142,7 @@ Khi chọn **Cilium VPC Native Routing** kết hợp với **Multi-AZ**, trườ
 * Bạn có thể tạo thêm Node Group ở các AZ khác sau khi cluster được tạo.
 * Để đảm bảo High Availability cho workloads, bạn nên tạo nhiều Node Group ở các AZ khác nhau. Điều này giúp phân bổ worker nodes trên nhiều AZ, tăng khả năng chịu lỗi cho ứng dụng.
 * Khi sử dụng **Cilium VPC Native Routing**, mỗi Node Group có thể chọn **Pod IP range riêng**, phù hợp với việc phân bổ tài nguyên mạng theo từng AZ.
-{% endhint %}
-
+  {% endhint %}
 * Node Group Security Setting: Bạn có thể chọn **Security Group và SSH Key** cho Node Group của bạn.
 * Node Group Metadata Setting: Bạn có thể nhập **Metadata** tương ứng cho Node Group.
 
@@ -160,85 +157,31 @@ Khi chọn **Cilium VPC Native Routing** kết hợp với **Multi-AZ**, trườ
 
 <figure><img src="../../.gitbook/assets/vks-multi-az-cluster-list-page.png" alt=""><figcaption><p>Cluster Active với badge Multi-AZ trên trang danh sách</p></figcaption></figure>
 
-***
-
-## Private Service Endpoint
-
-Multi-AZ Cluster hoạt động trên **luồng private**. Khi bạn tạo Multi-AZ Cluster, hệ thống sẽ tự động tạo **4 Private Service Endpoints** giúp các nodes trong cluster kết nối private tới các dịch vụ khác trên GreenNode:
-
-| Endpoint | Dịch vụ kết nối | Mục đích |
-| --- | --- | --- |
-| **vks-iam-endpoint-...** | IAM | Xác thực và phân quyền |
-| **vks-vcr-endpoint-...** | vContainer Registry (vCR) | Pull/push container images |
-| **vks-vserver-endpoint-...** | vServer | Quản lý compute resources |
-| **vks-vstorage-endpoint-...** | vStorage | Kết nối tới object storage |
-
-Bạn có thể xem thông tin 4 private service endpoint thông qua portal vServer theo đường dẫn tại [đây](https://hcm-3.console.vngcloud.vn/vserver/vnetwork/endpoint/list).
-
-{% hint style="warning" %}
-**Lưu ý quan trọng về Private Service Endpoint:**
-
-* **Không xóa Private Service Endpoint**: Để đảm bảo hoạt động ổn định của cluster, bạn không nên xóa 4 service endpoint đã được tạo sẵn. Nếu vô tình xóa hoặc chỉnh sửa 4 endpoint này, trong vòng tối đa 5 phút, hệ thống sẽ tự động tạo lại nhưng có thể gây gián đoạn đến các dịch vụ đang chạy. Lúc này, do service endpoint tạo lại có thể đã thay đổi Endpoint IP so với ban đầu nên để cluster hoạt động được, bạn cần thực hiện thêm Endpoint IP một cách thủ công cho những server đang chạy trước đó thông qua câu lệnh:
-
-    ```
-    vks-bootstraper add-host -i <IP> -d <DOMAIN>
-    ```
-
-    Ví dụ,
-
-    *   Nếu bạn xóa private service endpoint tại **Region HCM** thì bạn cần add host qua lệnh:
-
-        ```
-        vks-boostraper add-host -i 192.168.1.9 -d vcr.vngcloud.vn
-        vks-boostraper add-host -i 192.168.1.8 -d hcm-3.api.vngcloud.vn
-        vks-boostraper add-host -i 192.168.1.5 -d iamapis.vngcloud.vn
-        vks-boostraper add-host -i 192.168.1.7 -d hcm03.vstorage.vngcloud.vn
-        ```
-    *   Nếu bạn xóa private service endpoint tại **Region HAN** thì bạn cần add host qua lệnh:
-
-        ```
-        vks-boostraper add-host -i 192.168.1.9 -d vcr-han.vngcloud.vn
-        vks-boostraper add-host -i 192.168.1.8 -d han-1.api.vngcloud.vn
-        vks-boostraper add-host -i 192.168.1.5 -d iamapis.vngcloud.vn
-        vks-boostraper add-host -i 192.168.1.7 -d han02.vstorage.vngcloud.vn
-        ```
-
-* **Tái sử dụng Private Service Endpoint:** Các service endpoint có thể được nhiều private cluster / Multi-AZ cluster cùng sử dụng. Khi các cluster chung VPC thì chúng tôi sẽ tái sử dụng chúng.
-* **Xóa Private Service Endpoint tự động:** Khi bạn xóa cluster, nếu không còn cluster nào tái sử dụng các service endpoint này, hệ thống sẽ tự động xóa chúng.
-* **Chi phí Multi-AZ Control Plane:** Trong giai đoạn đầu release, tính năng Multi-AZ Control Plane được cung cấp **miễn phí**. Chi phí chính thức sẽ được cập nhật trong thời gian tới. Lưu ý: việc sử dụng Multi-AZ Cluster sẽ phát sinh thêm chi phí cho 4 Private Service Endpoints.
-{% endhint %}
-
-***
-
-## Container Registry (vCR)
-
-Do Multi-AZ Cluster hoạt động trên luồng private, các nodes trong cluster **chỉ có thể kết nối private** tới hệ thống vContainer Registry (vCR) và **không thể kết nối** ra các Container Registry khác ngoài internet (Docker Hub, ghcr.io, quay.io...).
-
-Bạn cần pull/push image về vCR để sử dụng. Tham khảo hướng dẫn chi tiết tại phần [Sử dụng Docker để Pull/Push image](khoi-tao-mot-private-cluster.md#khoitaomotpublicclustervoiprivatenodegroup-deploymotworkload) trong tài liệu Private Cluster.
-
-{% hint style="info" %}
-**Lưu ý:**
-
-Trên VKS, tại mỗi Region HCM hay HAN, domain của vCR để pull/push image khác nhau:
-* **Với Region HCM**: dùng domain `vcr.vngcloud.vn`
-* **Với Region HAN**: dùng domain `vcr-han.vngcloud.vn`
-{% endhint %}
-
-***
+---
 
 ## Kết nối và kiểm tra thông tin Cluster vừa tạo
 
-{% hint style="warning" %}
-**Quan trọng:**
+Multi-AZ Cluster hỗ trợ cả 2 chế độ truy cập **Public Cluster** và **Private Cluster**. Cách kết nối tới kube-api sẽ khác nhau tùy thuộc vào chế độ bạn đã chọn ở Bước 5:
 
-Do Multi-AZ Cluster hoạt động trên luồng private, để truy cập vào **kube-api** của Control Plane, bạn cần **đứng trong VPC** mà bạn đã chọn sử dụng cho Cluster. Nếu bạn không đứng trong VPC, bạn sẽ không thể kết nối tới kube-api và nhận được lỗi `Unable to connect to the server`.
+{% hint style="info" %}
+**Với Public Cluster:**
+
+kube-api endpoint được expose ra internet. Bạn có thể kết nối tới kube-api từ **bất kỳ đâu** có kết nối internet, không cần đứng trong VPC.
+{% endhint %}
+
+{% hint style="warning" %}
+**Với Private Cluster:**
+
+kube-api endpoint chỉ accessible từ trong VPC. Để truy cập vào **kube-api** của Control Plane, bạn cần **đứng trong VPC** mà bạn đã chọn sử dụng cho Cluster. Nếu bạn không đứng trong VPC, bạn sẽ không thể kết nối tới kube-api.
+
+Bạn có thể SSH vào một server trong cùng VPC để thực hiện các bước bên dưới. Tham khảo hướng dẫn SSH tại [đây](../../vserver/compute-hcm03-1a/server/ket-noi-vao-may-chu-ao/ket-noi-vao-may-chu-linux-bang-cong-cu-ssh-client/).
 {% endhint %}
 
 Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiện kết nối và kiểm tra thông tin Cluster vừa tạo theo các bước:
 
 **Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console.vngcloud.vn/k8s-cluster)
 
-**Bước 2:** Danh sách Cluster được hiển thị, chọn biểu tượng **Download** và chọn **Download config file** để thực hiện tải xuống file kubeconfig. File này sẽ giúp bạn có toàn quyền truy cập vào Cluster của bạn.
+**Bước 2:** Danh sách Cluster được hiển thị, chọn biểu tượng 3 chấm để dropdown sau đó chọn **Download config file** để thực hiện tải xuống file kubeconfig. File này sẽ giúp bạn có toàn quyền truy cập vào Cluster của bạn.
 
 **Bước 3:** Đổi tên file này thành config và lưu nó vào thư mục **\~/.kube/config**
 
@@ -275,4 +218,4 @@ kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   10m
 
 * Để đảm bảo High Availability cho workloads, bạn nên **tạo thêm Node Group ở các AZ khác**. Tham khảo hướng dẫn quản lý Node Group tại [đây](../node-groups/).
 * Để tìm hiểu thêm về quản lý, upgrade và xóa Multi-AZ Cluster, vui lòng tham khảo tại [Multi-AZ Control Plane](../clusters/multi-az-control-plane.md).
-{% endhint %}
+  {% endhint %}

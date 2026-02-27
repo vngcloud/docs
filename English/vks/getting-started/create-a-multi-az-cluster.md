@@ -164,7 +164,7 @@ When selecting **Cilium VPC Native Routing** combined with **Multi-AZ**, the **P
 
 ## Private Service Endpoint
 
-Multi-AZ Cluster operates on a **private flow**. When you create a Multi-AZ Cluster, the system will automatically create **4 Private Service Endpoints** to enable nodes in the cluster to connect privately to other services on GreenNode:
+Multi-AZ Cluster uses a **new generation of Private Service Endpoints (PSE)** that operate at the **VPC level**. When you create a Multi-AZ Cluster, the cluster and node groups **have no outbound internet access** — all connections to GreenNode services go through PSE. The system will automatically create **4 Private Service Endpoints**:
 
 | Endpoint | Connected Service | Purpose |
 | --- | --- | --- |
@@ -178,7 +178,9 @@ You can view information about the 4 private service endpoints through the vServ
 {% hint style="warning" %}
 **Important notes about Private Service Endpoints:**
 
-* **Do not delete Private Service Endpoints**: To ensure stable operation of the cluster, you should not delete the 4 pre-created service endpoints. If you accidentally delete or modify these 4 endpoints, within a maximum of 5 minutes, the system will automatically recreate them but may cause disruption to running services. At this time, because the recreated service endpoint may have changed the Endpoint IP compared to the original, for the cluster to work, you need to manually add the Endpoint IP to the previously running servers via the command:
+* **Affects the entire VPC**: PSE operates at the VPC level, therefore **all resources in the VPC** (including resources that do not belong to the cluster) when calling vCR, IAM, vServer, vStorage services **will all go through PSE**. This is an important difference from previous Private Clusters.
+* **Nodes need to pull images from vCR**: Since there is no outbound internet access, nodes can only pull images from vContainer Registry (vCR) through PSE. Operators on the cluster also access vServer, IAM, vStorage through PSE to function.
+* **Do not delete Private Service Endpoints**: Deleting PSE will affect not only the cluster but also **all other resources in the VPC** that are using these services. If you accidentally delete or modify these 4 endpoints, within a maximum of 5 minutes, the system will automatically recreate them but may cause disruption to running services. At this time, because the recreated service endpoint may have changed the Endpoint IP compared to the original, for the cluster to work, you need to manually add the Endpoint IP to the previously running servers via the command:
 
     ```
     vks-bootstraper add-host -i <IP> -d <DOMAIN>
@@ -228,10 +230,20 @@ On VKS, the vCR domain for pulling/pushing images differs between regions:
 
 ## Connect and verify the newly created Cluster
 
-{% hint style="warning" %}
-**Important:**
+Multi-AZ Cluster supports both **Public Cluster** and **Private Cluster** access modes. The way you connect to the kube-api will differ depending on the mode you selected in Step 5:
 
-Since Multi-AZ Cluster operates on a private flow, to access the **kube-api** of the Control Plane, you must be **within the VPC** that you selected for the Cluster. If you are not within the VPC, you will not be able to connect to the kube-api and will receive the error `Unable to connect to the server`.
+{% hint style="info" %}
+**With Public Cluster:**
+
+The kube-api endpoint is exposed to the internet. You can connect to the kube-api from **anywhere** with an internet connection — no need to be within the VPC.
+{% endhint %}
+
+{% hint style="warning" %}
+**With Private Cluster:**
+
+The kube-api endpoint is only accessible from within the VPC. To access the **kube-api** of the Control Plane, you must be **within the VPC** that you selected for the Cluster. If you are not within the VPC, you will not be able to connect to the kube-api and will receive the error `Unable to connect to the server`.
+
+You can SSH into a server within the same VPC to perform the steps below. Refer to the SSH guide [here](../../vserver/compute-hcm03-1a/server/ket-noi-vao-may-chu-ao/ket-noi-vao-may-chu-linux-bang-cong-cu-ssh-client/).
 {% endhint %}
 
 After the Cluster has been successfully initialized, you can connect and verify the newly created Cluster by following these steps:
