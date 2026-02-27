@@ -4,14 +4,14 @@ Bên dưới là các tính năng cơ bản khi bạn làm việc với bucket
 
 ## Khởi tạo bucket
 
-Trước khi có thể lưu trữ dữ liệu trong vStorage, bạn phải tạo 1 Bucket. Trên vStorage, Bucket là đối tượng chứa dữ liệu (Object).&#x20;
+Trước khi có thể lưu trữ dữ liệu trong vStorage, bạn phải tạo 1 Bucket. Trên vStorage, Bucket là đối tượng chứa dữ liệu (Object).
 
 Để khởi tạo một project, vui lòng thực hiện theo các bước bên dưới:
 
 1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list). Chọn **project** muốn thực hiện tạo **bucket.**
 2. Chọn **Create a bucket**.
 3. Nhập **Bucket name** theo quy định của chúng tôi.
-4. Chọn **Enable Object Locked** nếu bạn muốn sử dụng tính năng **Object locked** cho bucket này.&#x20;
+4. Chọn **Enable Object Locked** nếu bạn muốn sử dụng tính năng **Object locked** cho bucket này.
 
 {% hint style="info" %}
 **Chú ý:**
@@ -26,9 +26,9 @@ Trước khi có thể lưu trữ dữ liệu trong vStorage, bạn phải tạo
 
 ## Xem thông tin bucket
 
-Sau khi tạo bucket và tải lên object vào bucket đó. Bạn có thể xem chi tiết thông tin bucket và sử dụng các tính năng mà chúng tôi cung cấp cho bucket bao gồm: ACLs, Lifecycle, CORS,...&#x20;
+Sau khi tạo bucket và tải lên object vào bucket đó. Bạn có thể xem chi tiết thông tin bucket và sử dụng các tính năng mà chúng tôi cung cấp cho bucket bao gồm: ACLs, Lifecycle, CORS,...
 
-Để xem chi tiết thông tin của một bucket, bạn có thể:&#x20;
+Để xem chi tiết thông tin của một bucket, bạn có thể:
 
 1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
 
@@ -66,6 +66,18 @@ Sau khi tạo bucket và tải lên object vào bucket đó. Bạn có thể xem
 
 <figure><img src="../../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+**Lưu ý**:
+
+Hiện tại, tại **vStorage – region HCM04**, API `CopyObject` **chưa được hỗ trợ** trong các trường hợp sau:
+
+* Bucket có bật **Server-Side Encryption (SSE-S3)**
+* Object được upload với **encryption enabled**
+
+Khi thực hiện copy trong các trường hợp trên, request có thể trả về lỗi **501 - Not Implemented.**
+
+**Khuyến nghị:**\
+Vui lòng download object về client và thực hiện upload lại (PUT Object) thay vì sử dụng `CopyObject`.
+
 ***
 
 ## Xóa bucket
@@ -80,4 +92,4 @@ Sau khi tạo bucket và tải lên object vào bucket đó. Bạn có thể xem
 
 <figure><img src="../../../../../../.gitbook/assets/image (800).png" alt=""><figcaption></figcaption></figure>
 
-Sau khi chọn Xóa, hệ thống sẽ tự động chuyển ra màn hình chính, nếu bạn thấy bucket vừa thực hiện biến mất khỏi danh sách thì bạn đã xoá thành công. Bucket lúc này đã được xóa vĩnh viễn khỏi hệ thống và bạn không thể khôi phục bucket cũng như các object được lưu trữ trong bucket. Vì vậy hãy đảm bảo kiểm tra dữ liệu của bạn trước khi thực hiện thao tác này.&#x20;
+Sau khi chọn Xóa, hệ thống sẽ tự động chuyển ra màn hình chính, nếu bạn thấy bucket vừa thực hiện biến mất khỏi danh sách thì bạn đã xoá thành công. Bucket lúc này đã được xóa vĩnh viễn khỏi hệ thống và bạn không thể khôi phục bucket cũng như các object được lưu trữ trong bucket. Vì vậy hãy đảm bảo kiểm tra dữ liệu của bạn trước khi thực hiện thao tác này.
