@@ -67,7 +67,7 @@ To use Bucket encryption, please follow the steps below:
 <figure><img src="../../../../../../.gitbook/assets/image (578).png" alt=""><figcaption></figcaption></figure>
 
 **Note:**\
-Currently, in **vStorage – HCM04 region**, the `CopyObject` API is **not supported** in the following cases:
+Currently, in **vStorage – HAN02 region**, the `CopyObject` API is **not supported** in the following cases:
 
 * The bucket has **Server-Side Encryption (SSE-S3)** enabled.
 * The object was uploaded with **encryption enabled**.
