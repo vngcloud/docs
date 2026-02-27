@@ -66,6 +66,17 @@ To use Bucket encryption, please follow the steps below:
 
 <figure><img src="../../../../../../.gitbook/assets/image (578).png" alt=""><figcaption></figcaption></figure>
 
+**Note:**\
+Currently, in **vStorage – HCM04 region**, the `CopyObject` API is **not supported** in the following cases:
+
+* The bucket has **Server-Side Encryption (SSE-S3)** enabled.
+* The object was uploaded with **encryption enabled**.
+
+When performing a copy operation under these conditions, the request may return **501 – Not Implemented**.
+
+**Recommendation:**\
+Please download the object to the client and re-upload it using **PUT Object** instead of using `CopyObject`.
+
 ***
 
 ## Delete bucket <a href="#xoa-bucket" id="xoa-bucket"></a>
