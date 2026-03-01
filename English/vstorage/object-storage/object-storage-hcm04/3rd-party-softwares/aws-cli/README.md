@@ -9,7 +9,7 @@ To be able to integrate AWS CLI tool, you need to collect Region, Project, vStor
 {% hint style="info" %}
 **⚠️ Important note**
 
-* From **AWS CLI v2.23.0 and above**, AWS starts to enable a new checksum algorithm **`CRC64_NNME`** by default for s3 services. Currently, **GreenNode** supports only the following checksum algorithms: **`CRC32,CRC32C,SHA1,SHA256`**.
+* From **AWS CLI v2.23.0 and above**, AWS starts to enable a new checksum algorithm **`CRC64_NVME`** by default for s3 services. Currently, **GreenNode** supports only the following checksum algorithms: **`CRC32/CRC32C,SHA1,SHA256`**.
 * **GreenNode recommends customers to use AWS CLI version from 2.23.0 or earlier** to reduce incompatibility errors with some of our APIs or services.
 *   If you still want to use the **latest version of AWS CLI**, add this configuration after installation:
 
