@@ -38,7 +38,7 @@ aws s3 ls \
 
 From **AWS CLI v2.23.0+**, AWS enables the checksum algorithm `CRC64_NVME` by default.
 
-vStorage currently supports `CRC32``/CRC32C`, `SHA1`, and `SHA256`.
+vStorage currently supports `CRC32` , `CRC32C`, `SHA1`, and `SHA256`.
 
 * Prefer **AWS CLI < v2.23.0** to avoid incompatibilities.
 *   If you use **AWS CLI v2.23.0+**, set this after installation:
