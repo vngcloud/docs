@@ -2,20 +2,61 @@
 
 ## **Tổng quan**
 
-AWS CLI là công cụ giao diện dòng lệnh, cho phép người dùng tương tác với các S3 APIs thông qua mệnh lệnh (command) để thực hiện các tính năng trên các hệ thống lưu trữ có hỗ trợ giao thức s3. AWS CLI tương thích với S3 APIs của dịch vụ lưu trữ vStorage. Để xem hướng dẫn sử dụng AWS CLI, bạn vui lòng tham khảo hướng dẫn tại [đây.](https://aws.amazon.com/cli)
+**AWS CLI** là công cụ dòng lệnh dùng để làm việc với object storage tương thích S3.
 
-Để có thể tích hợp công cụ AWS CLI, bạn cần tự thu thập thông tin Region, Project, vStorage Endpoint và thông tin S3 key tương ứng với project đó. Chi tiết tham khảo tại [Tích hợp công cụ AWS CLI với vStorage](tich-hop-cong-cu-aws-cli-voi-vstorage.md). Sau khi đã truy cập được các tài nguyên (bucket, object, v.v.) của bạn trên dịch vụ vStorage, để làm việc với các tài nguyên này sử dụng công cụ AWS CLI, bạn có thể tham khảo thêm các tình huống (use case) sử dụng hay tính năng của AWS CLI để làm việc với tài nguyên vStorage. Chi tiết tham khảo tại [Sử dụng công cụ AWS CLI.](su-dung-cong-cu-aws-cli.md)
+Bạn có thể sử dụng AWS CLI với **vStorage (HCM04)** bằng cách trỏ endpoint về: https://hcm04.vstorage.vngcloud.vn
+
+Sử dụng AWS CLI khi bạn cần:
+
+* Tự động hóa thao tác bucket/object (CI/CD, backup, migration).
+* Upload, download, sync dữ liệu hàng loạt, tạo presign URL.
+* Troubleshoot quyền truy cập bằng các lệnh có thể lặp lại.
+
+Tài liệu chính thức: [AWS CLI](https://aws.amazon.com/cli/).
+
+***
+
+### Yêu cầu
+
+* Có project vStorage tại **HCM04**.
+* S3 endpoint:\
+  `https://hcm04.vstorage.vngcloud.vn`
+* S3 Access Key và Secret Key của project ([tham khảo mục tạo S3 key](../../bat-dau-voi-object-storage/buoc-2-khoi-tao-s3-key.md)).
+* Cài đặt AWS CLI trên máy ([tham khảo hướng dẫn cài đặt aws-cli](tich-hop-cong-cu-aws-cli-voi-vstorage.md)).
+
+***
+
+### Kiểm tra kết nối nhanh
+
+Sau khi cấu hình xong, chạy lệnh sau để kiểm tra:
+
+```
+aws s3 ls \
+  --endpoint-url https://hcm04.vstorage.vngcloud.vn \
+  --profile hcm04-prod
+```
+
+***
 
 {% hint style="info" %}
-**⚠️ Lưu ý quan trọng**
+**⚠️**  Lưu ý quan trọng
 
-* Từ phiên bản **AWS CLI v2.23.0 trở lên**, AWS bắt đầu mặc định bật một thuật toán checksum mới là **`CRC64_NVME`** cho các dịch vụ S3. Hiện tại **vStorage GreenNode** chỉ support các thuận toán checksum sau: **`CRC32/CRC32C,SHA1,SHA256` .**&#x20;
-* **GreenNode khuyến nghị khách hàng nên sử dụng các phiên bản AWS CLI từ 2.23.0 trở về trước** để giảm lỗi không tương thích với một số API hoặc service của chúng tôi.
-*   Nếu bạn vẫn muốn dùng phiên bản **AWS CLI mới nhất**, hãy thêm cấu hình này sau khi cài đặt:
+Từ phiên bản **AWS CLI v2.23.0 trở lên**, AWS mặc định bật thuật toán checksum **CRC64\_NVME**.
 
-    ```bash
-    aws configure set request_checksum_calculation when_required
-    ```
+Hiện tại vStorage hỗ trợ các thuật toán checksum sau:
+
+* CRC32
+* CRC32C
+* SHA1
+* SHA256
+
+Khuyến nghị sử dụng **AWS CLI phiên bản thấp hơn v2.23.0** để tránh lỗi không tương thích.
+
+Nếu sử dụng AWS CLI v2.23.0 trở lên, cấu hình thêm:
+
+```
+aws configure set request_checksum_calculation when_required --profile hcm04-prod
+```
 {% endhint %}
 
 ***
