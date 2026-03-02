@@ -4,9 +4,11 @@ Here are instructions for **downloading and installing AWS CLI v2** on popular o
 
 ## 1. Install AWS CLI on **Linux**
 
-### Required:
+### Requirements
 
-* Python 3.6+
+* `curl`
+* `unzip`
+* `sudo` permissions for installation
 
 ### Steps to follow:
 
@@ -24,7 +26,7 @@ sudo ./aws/install
 aws --version
 ```
 
-> **Attention**: **We recommend using versions < 2.23.0**, as AWS CLI defaults to enabling the `CRC64_NH` algorithm for checksums in versions 2.23.0 and later — which may cause problems with some older systems or applications.
+> **Attention**: **We recommend using versions < 2.23.0**. From AWS CLI v2.23.0+, AWS enables `CRC64_NVME` by default, which can cause checksum-related errors with some S3-compatible services.
 
 To install an older version (e.g. 2.22.0), you can follow these instructions:
 
@@ -81,7 +83,7 @@ aws configure set request_checksum_calculation when_required
 
 ## 4. Configure AWS CLI after installation
 
-### Create configuration for the profile (e.g. `han02-prod`) via the command:&#x20;
+### Create configuration for the profile (e.g. `han02-prod`) via the command:
 
 ```bash
 aws configure --profile han02-prod
@@ -96,7 +98,7 @@ Enter information:
 
 <figure><img src="../../../../../.gitbook/assets/image (593).png" alt=""><figcaption></figcaption></figure>
 
-### &#x20;Check the connection via command:&#x20;
+### Check the connection via command:
 
 ```bash
 # 1. Get a list of all buckets in the project
