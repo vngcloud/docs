@@ -20,8 +20,8 @@ Official AWS CLI docs: [AWS CLI](https://aws.amazon.com/cli).
 
 * A vStorage project in **HAN02**.
 * The S3 endpoint (for `--endpoint-url`): `https://han02.vstorage.vngcloud.vn`
-* An S3 Access Key + Secret Key for that project. See [Create a S3 key](../../../vstorage-hcm03/identity-and-access-management/managing-vstorage-access-account/service-account/vstorage-credentials/create-a-s3-key.md).
-* AWS CLI installed on your machine.
+* An S3 Access Key + Secret Key for that project. See [Create a S3 key](../../getting-started-with-object-storage/step-4-create-a-s3-key.md).
+* AWS CLI installed on your machine. See [install aws-cli](integrate-aws-cli-with-vstorage.md).
 
 ### Quick connectivity check
 
