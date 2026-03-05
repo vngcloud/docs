@@ -6,6 +6,12 @@ An floating IP address (FIP) is a public IP address that you can reserve and use
 
 FIPs are NAT IP addresses that are located in the gateway of GreenNode. By means of NAT, FIPs are mapped to the primary network interfaces of the vServer instances. You can associate FIPs with vServer instances that are located in VPCs to enable the instances to communicate over the Internet. FIPs is invisible inside the operating systems of vServer instances.
 
+{% hint style="warning" %}
+When using a Floating IP for outbound Internet access, keep the packet MTU **<= 4000** to reduce the risk of packet loss.
+
+For MTU/DF-flag sensitive workloads (VPN tunnels, SIP/UDP, etc.), see [MTU & “DF flag” best practice on GreenNode](../../vmarketplace/network-software-installation/pfsense-on-hcm03/mtu-and-df-flag-best-practice-on-vng-cloud.md).
+{% endhint %}
+
 ### **Limits** <a href="#floatingip-limits" id="floatingip-limits"></a>
 
 FIPs can be associated with vServer instances. An FIP can be associated only with an vServer instance that meets the following requirements:
