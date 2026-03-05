@@ -38,7 +38,7 @@
         * [DNS Server IP Address](vserver/compute-hcm03-1a/vpc/dhcp-options-sets/dns-server-ip-address.md)
       * [Instance IP Address](vserver/compute-hcm03-1a/vpc/instance-ip-address.md)
       * [Floating IP](vserver/compute-hcm03-1a/vpc/floating-ip.md)
-      * [External Interface](vserver/compute-hcm03-1a/vpc/external-interface.md)
+      * [External Interfacêm](vserver/compute-hcm03-1a/vpc/external-interface.md)
         * [Attach Multi External Interface](vserver/compute-hcm03-1a/vpc/external-interface/attach-multi-external-interface.md)
       * [Virtual IP](vserver/compute-hcm03-1a/vpc/virtual-ip/README.md)
         * [VIP mode](vserver/compute-hcm03-1a/vpc/virtual-ip/vip-mode.md)
