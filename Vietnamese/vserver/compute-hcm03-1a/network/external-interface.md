@@ -14,6 +14,16 @@ Bạn có thể tạo External Interface, gắn nó vào máy chủ ảo, gỡ n
 
 Bạn cần cấu hình địa chỉ IP cho External Interface từ trong hệ điều hành của máy chủ ảo, cấu hình IP tĩnh hoặc DHCP đều đc chấp nhận. Bạn chỉ có thể gắn External Interface vào máy chủ không có Floating IP.
 
+### Khuyến nghị MTU khi dùng External Interface
+
+Khi sử dụng **External Interface** cho traffic **outbound Internet**, hãy cấu hình MTU gói tin **<= 4000**. Giá trị này giúp giảm rủi ro **mất gói (packet loss)**.
+
+{% hint style="warning" %}
+Nếu MTU quá lớn, đường truyền có thể bị phân mảnh hoặc rơi gói. Điều này thường gây lỗi khó đoán trong TCP/TLS.
+{% endhint %}
+
+Xem thêm: [MTU và “DF flag” best practice on GreenNode](../../vmarketplace/network-software-installation/pfsense-tren-hcm03/mtu-va-df-flag-best-practice-on-vng-cloud.md)
+
 ***
 
 ### **Làm việc với External Interface** <a href="#externalinterface-lamviecvoiexternalinterface" id="externalinterface-lamviecvoiexternalinterface"></a>
