@@ -44,6 +44,7 @@
       * [Floating IP](vserver/compute-hcm03-1a/network/floating-ip/README.md)
         * [Phát hành & Thu hồi floating IP](vserver/compute-hcm03-1a/network/floating-ip/phat-hanh-and-thu-hoi-floating-ip.md)
         * [Auto associate floating IP](vserver/compute-hcm03-1a/network/floating-ip/auto-associate-floating-ip.md)
+        * [Khuyến nghị MTU khi dùng Floating IP](vserver/compute-hcm03-1a/network/floating-ip/khuyen-nghi-mtu-khi-dung-floating-ip.md)
       * [External Interface](vserver/compute-hcm03-1a/network/external-interface.md)
         * [Attach Multi External Interface vào Server](attach-multi-external-interface-vao-server.md)
       * [Virtual IP](vserver/compute-hcm03-1a/network/virtual-ip/README.md)
