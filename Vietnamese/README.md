@@ -8,7 +8,7 @@ description: >-
 
 ## Tổng quan
 
-GreenNode là nền tảng điện toán đám mây do VNG phát triển, thuộc hệ sinh thái của mảng kinh doanh VNG Digital Business, cung cấp cho doanh nghiệp các giải pháp và dịch vụ đa dạng trên nền tảng điện toán đám mây tiên tiến, giúp doanh nghiệp thực hiện quá trình chuyển đổi số hiệu quả.
+GreenNode là nền tảng điện toán đám mây do VNG phát triển, cung cấp cho doanh nghiệp các giải pháp và dịch vụ đa dạng trên nền tảng điện toán đám mây tiên tiến, giúp doanh nghiệp thực hiện quá trình chuyển đổi số hiệu quả.
 
 Các dịch vụ đang được cung cấp trên GreenNode Cloud, bao gồm:
 
