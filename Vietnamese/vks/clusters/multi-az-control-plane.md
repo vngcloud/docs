@@ -47,7 +47,7 @@ Trong mô hình Multi-AZ, các thành phần của Control Plane (API Server, Co
 
 Sơ đồ dưới đây minh họa kiến trúc của Multi-AZ Cluster:
 
-<figure><img src="../../.gitbook/assets/vks-multi-az-architecture.png.png" alt=""><figcaption><p>Kiến trúc Multi-AZ Control Plane</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-multi-az-architecture.png" alt=""><figcaption><p>Kiến trúc Multi-AZ Control Plane</p></figcaption></figure>
 
 **Các thành phần chính:**
 

@@ -81,7 +81,7 @@ To create a Multi-AZ Cluster, follow the steps below:
   * For **Calico Overlay, Cilium Overlay** network types: Encapsulation Mode is automatically set by the system and cannot be changed. You can modify the **CIDR** (the virtual network range that pods will use).
   * For **Cilium VPC Native Routing** network type: When selecting this network type, the **Node CIDR mask size** field will appear in the Network Setting section. This parameter specifies the CIDR size allocated to each node, determining the number of IP addresses from the Pod IP range that can be assigned to that node. You need to select a value that suits your needs.
 
-<figure><img src="../../.gitbook/assets/multi-az-network-setting-cilium-vpc-native-routing.png.png" alt=""><figcaption><p>Network Setting when selecting Cilium VPC Native Routing: Node CIDR mask size appears</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/multi-az-network-setting-cilium-vpc-native-routing.png" alt=""><figcaption><p>Network Setting when selecting Cilium VPC Native Routing: Node CIDR mask size appears</p></figcaption></figure>
 
 {% hint style="info" %}
 **Note about Cilium VPC Native Routing and Multi-AZ:**
@@ -134,7 +134,7 @@ When selecting **Cilium VPC Native Routing** combined with **Multi-AZ**, the **P
 * **Subnet:** Single-select dropdown, **only displays the subnets selected for the cluster in Step 5**. Each Node Group can only select **1 subnet** (corresponding to 1 AZ).
 * **Pod IP range** *(only displayed when Network type = Cilium VPC Native Routing)*: The secondary IP range used to allocate IP addresses for pods on this Node Group. You need to select at least 1 Secondary IP range created from vServer.
 
-<figure><img src="../../.gitbook/assets/multi-az-node-group-network-setting-pod-ip-range.png.png" alt=""><figcaption><p>Node Group Network Setting when selecting Cilium VPC Native Routing: Pod IP range appears</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/multi-az-node-group-network-setting-pod-ip-range.png" alt=""><figcaption><p>Node Group Network Setting when selecting Cilium VPC Native Routing: Pod IP range appears</p></figcaption></figure>
 
 {% hint style="info" %}
 **Note:**

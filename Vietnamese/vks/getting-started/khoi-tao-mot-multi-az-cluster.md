@@ -83,7 +83,7 @@ Ví dụ cấu hình subnets **không** hợp lệ:
   * Đối với loại network **Calico Overlay, Cilium Overlay**: Encapsulation Mode được tự chọn mặc định bởi hệ thống và bạn không thể thay đổi. Bạn có thể nhập lại thông số **CIDR** (dải mạng ảo mà các pod sẽ sử dụng).
   * Đối với loại network **Cilium VPC Native Routing**: Khi chọn loại network này, trường **Node CIDR mask size** sẽ xuất hiện ngay tại phần Network Setting. Thông số này cho biết kích thước CIDR dành cho mỗi node, quyết định số lượng địa chỉ IP từ dải Pod IP range có thể cấp phát cho node đó. Bạn cần lựa chọn một giá trị phù hợp với nhu cầu của bạn.
 
-<figure><img src="../../.gitbook/assets/multi-az-network-setting-cilium-vpc-native-routing.png.png" alt=""><figcaption><p>Network Setting khi chọn Cilium VPC Native Routing: Node CIDR mask size xuất hiện</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/multi-az-network-setting-cilium-vpc-native-routing.png" alt=""><figcaption><p>Network Setting khi chọn Cilium VPC Native Routing: Node CIDR mask size xuất hiện</p></figcaption></figure>
 
 {% hint style="info" %}
 **Lưu ý về Cilium VPC Native Routing và Multi-AZ:**
@@ -135,7 +135,7 @@ Khi chọn **Cilium VPC Native Routing** kết hợp với **Multi-AZ**, trườ
 * **Subnet:** Dropdown single-select, **chỉ hiển thị các subnets đã chọn cho cluster ở Bước 5**. Mỗi Node Group chỉ được chọn **1 subnet** (tương ứng với 1 AZ).
 * **Pod IP range** *(chỉ hiển thị khi Network type = Cilium VPC Native Routing)*: Dải địa chỉ IP thứ cấp (Secondary IP range) được sử dụng để cấp phát IP cho các pod trên Node Group này. Bạn cần lựa chọn ít nhất 1 dải Secondary IP range đã tạo từ vServer.
 
-<figure><img src="../../.gitbook/assets/multi-az-node-group-network-setting-pod-ip-range.png.png" alt=""><figcaption><p>Node Group Network Setting khi chọn Cilium VPC Native Routing: Pod IP range xuất hiện</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/multi-az-node-group-network-setting-pod-ip-range.png" alt=""><figcaption><p>Node Group Network Setting khi chọn Cilium VPC Native Routing: Pod IP range xuất hiện</p></figcaption></figure>
 
 {% hint style="info" %}
 **Lưu ý:**

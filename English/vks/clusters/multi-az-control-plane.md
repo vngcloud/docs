@@ -47,7 +47,7 @@ To create a Multi-AZ Cluster, please refer to the guide [here](../getting-starte
 
 The diagram below illustrates the architecture of a Multi-AZ Cluster:
 
-<figure><img src="../../.gitbook/assets/vks-multi-az-architecture.png.png" alt=""><figcaption><p>Multi-AZ Control Plane Architecture</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-multi-az-architecture.png" alt=""><figcaption><p>Multi-AZ Control Plane Architecture</p></figcaption></figure>
 
 **Key components:**
 
