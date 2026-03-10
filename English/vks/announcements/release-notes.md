@@ -8,8 +8,8 @@ VKS (VNG Kubernetes Engine) has just released its latest update, bringing a majo
 
 * **Multi-AZ Control Plane:** VKS now officially supports deploying Kubernetes Clusters with the Control Plane distributed across **multiple Availability Zones (AZs)**, ensuring **99.99% High Availability** for your cluster. If one AZ experiences an outage, the Control Plane continues to operate normally thanks to redundant instances in other AZs. This feature can be combined with both **Public Cluster** and **Private Cluster**.
   * **Free of charge** during the initial release period. Official pricing will be announced at a later date.
-  * Learn about the concept and management at [Multi-AZ Control Plane](https://docs.vngcloud.vn/vng-cloud-document/en/vks/clusters/multi-az-control-plane).
-  * Step-by-step creation guide at [Create a Multi-AZ Cluster](https://docs.vngcloud.vn/vng-cloud-document/en/vks/getting-started/create-a-multi-az-cluster).
+  * Learn about the concept and management at [Multi-AZ Control Plane](../clusters/multi-az-control-plane.md).
+  * Step-by-step creation guide at [Create a Multi-AZ Cluster](../getting-started/create-a-multi-az-cluster.md).
   * API documentation for creating and managing clusters via API: [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html).
   * Terraform documentation for deploying clusters with Infrastructure as Code: [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
 
