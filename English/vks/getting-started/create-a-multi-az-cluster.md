@@ -4,6 +4,8 @@ Multi-AZ Cluster allows deploying the Control Plane across multiple Availability
 
 To learn more about concepts, architecture, and the comparison between Single-AZ and Multi-AZ, please refer to [Multi-AZ Control Plane](../clusters/multi-az-control-plane.md).
 
+In addition to creating via the Portal, you can also create a Multi-AZ Cluster via [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html) or [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
+
 ***
 
 ## Prerequisites
@@ -176,7 +178,7 @@ The kube-api endpoint is exposed to the internet. You can connect to the kube-ap
 
 The kube-api endpoint is only accessible from within the VPC. To access the **kube-api** of the Control Plane, you must be **within the VPC** that you selected for the Cluster. If you are not within the VPC, you will not be able to connect to the kube-api.
 
-You can SSH into a server within the same VPC to perform the steps below. Refer to the SSH guide [here](../../vserver/compute-hcm03-1a/server/ket-noi-vao-may-chu-ao/ket-noi-vao-may-chu-linux-bang-cong-cu-ssh-client/).
+You can SSH into a server within the same VPC to perform the steps below.
 {% endhint %}
 
 After the Cluster has been successfully initialized, you can connect and verify the newly created Cluster by following these steps:

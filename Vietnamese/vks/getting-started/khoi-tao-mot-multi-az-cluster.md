@@ -176,7 +176,7 @@ kube-api endpoint được expose ra internet. Bạn có thể kết nối tới
 
 kube-api endpoint chỉ accessible từ trong VPC. Để truy cập vào **kube-api** của Control Plane, bạn cần **đứng trong VPC** mà bạn đã chọn sử dụng cho Cluster. Nếu bạn không đứng trong VPC, bạn sẽ không thể kết nối tới kube-api.
 
-Bạn có thể SSH vào một server trong cùng VPC để thực hiện các bước bên dưới. Tham khảo hướng dẫn SSH tại [đây](../../vserver/compute-hcm03-1a/server/ket-noi-vao-may-chu-ao/ket-noi-vao-may-chu-linux-bang-cong-cu-ssh-client/).
+Bạn có thể SSH vào một server trong cùng VPC để thực hiện các bước bên dưới.
 {% endhint %}
 
 Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiện kết nối và kiểm tra thông tin Cluster vừa tạo theo các bước:
