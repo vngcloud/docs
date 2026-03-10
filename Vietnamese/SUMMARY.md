@@ -728,6 +728,7 @@
         * [Palo Alto as a NAT Gateway](vks/getting-started/create-a-public-cluster/create-a-public-cluster-with-private-node-group/palo-alto-as-a-nat-gateway.md)
         * [Pfsense as a NAT Gateway](vks/getting-started/create-a-public-cluster/create-a-public-cluster-with-private-node-group/pfsense-as-a-nat-gateway.md)
     * [Khởi tạo một Private Cluster](vks/getting-started/khoi-tao-mot-private-cluster.md)
+    * [Khởi tạo một Multi-AZ Cluster](vks/getting-started/khoi-tao-mot-multi-az-cluster.md)
     * [Khởi tạo một Cluster thông qua ví POC](vks/getting-started/khoi-tao-mot-cluster-thong-qua-vi-poc.md)
     * [Sử dụng API để khởi tạo Cluster và Node Group](vks/getting-started/su-dung-api-de-khoi-tao-cluster-va-node-group.md)
     * [Sử dụng Terraform để khởi tạo Cluster và Node Group](vks/getting-started/su-dung-terraform-de-khoi-tao-cluster-va-node-group.md)

@@ -1,5 +1,20 @@
 # Release notes
 
+## Mar 10, 2026
+
+VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới nhất, mang đến tính năng nổi bật cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Tính năng mới:**
+
+* **Multi-AZ Control Plane:** VKS chính thức hỗ trợ triển khai Kubernetes Cluster với Control Plane phân bổ trên **nhiều Availability Zone (AZ)**, đảm bảo **High Availability 99.99%** cho cluster của bạn. Khi một AZ gặp sự cố, Control Plane vẫn tiếp tục hoạt động bình thường nhờ các instance dự phòng tại các AZ khác. Tính năng này có thể kết hợp với cả **Public Cluster** và **Private Cluster**.
+  * **Miễn phí** trong giai đoạn đầu ra mắt. Chi phí chính thức sẽ được cập nhật sau.
+  * Tìm hiểu về khái niệm và cách quản lý tại [Multi-AZ Control Plane](../clusters/multi-az-control-plane.md).
+  * Hướng dẫn khởi tạo chi tiết tại [Khởi tạo một Multi-AZ Cluster](../getting-started/khoi-tao-mot-multi-az-cluster.md).
+  * Tài liệu API để tạo và quản lý cluster qua API: [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html).
+  * Tài liệu Terraform để triển khai cluster bằng Infrastructure as Code: [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
+
+***
+
 ## Feb 24, 2026
 
 VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều nâng cấp mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:

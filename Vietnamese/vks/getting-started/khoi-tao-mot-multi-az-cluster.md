@@ -4,6 +4,8 @@ Multi-AZ Cluster cho phép triển khai Control Plane trên nhiều Availability
 
 Để tìm hiểu thêm về khái niệm, kiến trúc và so sánh giữa Single-AZ và Multi-AZ, vui lòng tham khảo tại [Multi-AZ Control Plane](../clusters/multi-az-control-plane.md).
 
+Ngoài việc tạo qua Portal, bạn cũng có thể tạo Multi-AZ Cluster qua [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html) hoặc [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
+
 ---
 
 ## Điều kiện cần

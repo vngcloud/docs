@@ -653,6 +653,7 @@
         * [Palo Alto as a NAT Gateway](vks/getting-started/create-a-public-cluster/create-a-public-cluster-with-private-node-group/palo-alto-as-a-nat-gateway.md)
         * [Pfsense as a NAT Gateway](vks/getting-started/create-a-public-cluster/create-a-public-cluster-with-private-node-group/pfsense-as-a-nat-gateway.md)
     * [Create a Private Cluster](vks/getting-started/create-a-private-cluster.md)
+    * [Create a Multi-AZ Cluster](vks/getting-started/create-a-multi-az-cluster.md)
     * [Create a Cluster via POC](vks/getting-started/create-a-cluster-via-poc.md)
     * [Create a Cluster via API](vks/getting-started/create-a-cluster-via-api.md)
     * [Use Terraform to create a Cluster and Node Group](vks/getting-started/su-dung-terraform-de-khoi-tao-cluster-va-node-group.md)
