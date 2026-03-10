@@ -659,6 +659,7 @@
     * [Use Terraform to create a Cluster and Node Group](vks/getting-started/su-dung-terraform-de-khoi-tao-cluster-va-node-group.md)
   * [Clusters](vks/clusters/README.md)
     * [Public Cluster and Private Cluster](vks/clusters/public-cluster-and-private-cluster.md)
+    * [Multi-AZ Control Plane](vks/clusters/multi-az-control-plane.md)
     * [Upgrading Control Plane Version](vks/clusters/upgrading-control-plane-version.md)
     * [Whitelist](vks/clusters/whitelist.md)
     * [Stop POC](vks/clusters/stop-poc.md)
