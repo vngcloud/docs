@@ -30,17 +30,17 @@ To enable DNS for your VPC, please do so in the vServer portal following the gui
 
 Example of valid subnet configuration:
 
-| Subnet Name | AZ | CIDR | Valid? |
-| --- | --- | --- | --- |
-| sub-1A | HCM-1A | 10.60.0.0/24 | ✅ |
-| sub-1B | HCM-1B | 10.60.1.0/24 | ✅ |
+| Subnet Name | AZ     | CIDR         | Valid? |
+| ----------- | ------ | ------------ | ------ |
+| sub-1A      | HCM-1A | 10.60.0.0/24 | ✅      |
+| sub-1B      | HCM-1B | 10.60.1.0/24 | ✅      |
 
 Example of **invalid** subnet configuration:
 
-| Subnet Name | AZ | CIDR | Reason for invalidity |
-| --- | --- | --- | --- |
-| sub-1A | HCM-1A | 10.60.0.0/24 | ❌ Same AZ |
-| sub-2A | HCM-1A | 10.60.3.0/24 | ❌ Same AZ |
+| Subnet Name | AZ     | CIDR         | Reason for invalidity |
+| ----------- | ------ | ------------ | --------------------- |
+| sub-1A      | HCM-1A | 10.60.0.0/24 | ❌ Same AZ             |
+| sub-2A      | HCM-1A | 10.60.3.0/24 | ❌ Same AZ             |
 
 ### 3. Other prerequisites
 
@@ -70,20 +70,20 @@ To create a Multi-AZ Cluster, follow the steps below:
 
 * **Control Plane Availability:** Select **Multi-AZ** to deploy the Control Plane across multiple Availability Zones.
 
-<figure><img src="../../.gitbook/assets/multi-az-control-plane-availability-dropdown.png" alt=""><figcaption><p>Control Plane Availability selection</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/multi-az-control-plane-availability-dropdown.png" alt=""><figcaption></figcaption></figure>
 
-  There are 2 options:
+There are 2 options:
 
-  | Option | Description |
-  | --- | --- |
-  | **Single-AZ** (default) | Deploy the cluster in a single Availability Zone. Suitable for development and testing environments. |
-  | **Multi-AZ** | Deploy the cluster across multiple Availability Zones for High Availability. Recommended for production. |
+| Option                  | Description                                                                                              |
+| ----------------------- | -------------------------------------------------------------------------------------------------------- |
+| **Single-AZ** (default) | Deploy the cluster in a single Availability Zone. Suitable for development and testing environments.     |
+| **Multi-AZ**            | Deploy the cluster across multiple Availability Zones for High Availability. Recommended for production. |
 
 * **Network type:** Select the network type you want to use for your Cluster. Currently, VKS provides 3 network types: Calico Overlay, Cilium Overlay, Cilium VPC Native Routing.
   * For **Calico Overlay, Cilium Overlay** network types: Encapsulation Mode is automatically set by the system and cannot be changed. You can modify the **CIDR** (the virtual network range that pods will use).
   * For **Cilium VPC Native Routing** network type: When selecting this network type, the **Node CIDR mask size** field will appear in the Network Setting section. This parameter specifies the CIDR size allocated to each node, determining the number of IP addresses from the Pod IP range that can be assigned to that node. You need to select a value that suits your needs.
 
-<figure><img src="../../.gitbook/assets/multi-az-network-setting-cilium-vpc-native-routing.png" alt=""><figcaption><p>Network Setting when selecting Cilium VPC Native Routing: Node CIDR mask size appears</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/multi-az-network-setting-cilium-vpc-native-routing.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note about Cilium VPC Native Routing and Multi-AZ:**
@@ -92,21 +92,19 @@ When selecting **Cilium VPC Native Routing** combined with **Multi-AZ**, the **P
 {% endhint %}
 
 * **VPC:** Select a VPC with **DNS enabled** from the dropdown. Note: when selecting Multi-AZ, **only VPCs with DNS enabled will be displayed**. If you do not see any VPC in the list, please enable DNS for your VPC in the vServer portal.
-
 * **Subnets:** When selecting **Multi-AZ**, the Subnet field changes to a **multi-select dropdown**, allowing you to select multiple subnets:
-
   * The system will **automatically pre-select the first subnet from each AZ** available in the VPC. For example: If the VPC has subnets in HCM-1A, HCM-1B, HCM-1C → 3 subnets are pre-selected by default (1 subnet/zone).
   * Selected subnets are displayed as **chip/tag**. Click the **(x)** button on a chip to remove that subnet from the selection.
   * You can add/remove subnets but must ensure **at least 2 subnets from 2 different AZs**.
 
-<figure><img src="../../.gitbook/assets/multi-az-network-setting.png" alt=""><figcaption><p>Network Setting for Multi-AZ Cluster: VPC, Subnets multi-select and subnet chips</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/multi-az-network-setting.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Validation Rules:**
 
 * At least **2 subnets** must be selected
 * Subnets must belong to **at least 2 different AZs**
-* If 2 subnets from the same AZ are selected, the system will display an error: *"Subnets must belong to at least 2 different Availability Zones"*
+* If 2 subnets from the same AZ are selected, the system will display an error: _"Subnets must belong to at least 2 different Availability Zones"_
 {% endhint %}
 
 **Step 6:** Configure the **Default Node Group Configuration**:
@@ -129,14 +127,14 @@ When selecting **Cilium VPC Native Routing** combined with **Multi-AZ**, the **P
 
 **Step 7:** Configure the **Node Group Network Setting** — this section differs from Single-AZ Cluster:
 
-<figure><img src="../../.gitbook/assets/multi-az-node-group-network-setting.png" alt=""><figcaption><p>Node Group Network Setting for Multi-AZ Cluster</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/multi-az-node-group-network-setting.png" alt=""><figcaption></figcaption></figure>
 
 * You can choose **Public Node Group** or **Private Node Group** based on your Cluster usage needs.
 * **VPC:** Inherited from Network Configuration (read-only, cannot be changed).
 * **Subnet:** Single-select dropdown, **only displays the subnets selected for the cluster in Step 5**. Each Node Group can only select **1 subnet** (corresponding to 1 AZ).
-* **Pod IP range** *(only displayed when Network type = Cilium VPC Native Routing)*: The secondary IP range used to allocate IP addresses for pods on this Node Group. You need to select at least 1 Secondary IP range created from vServer.
+* **Pod IP range** _(only displayed when Network type = Cilium VPC Native Routing)_: The secondary IP range used to allocate IP addresses for pods on this Node Group. You need to select at least 1 Secondary IP range created from vServer.
 
-<figure><img src="../../.gitbook/assets/multi-az-node-group-network-setting-pod-ip-range.png" alt=""><figcaption><p>Node Group Network Setting when selecting Cilium VPC Native Routing: Pod IP range appears</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/multi-az-node-group-network-setting-pod-ip-range.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:**
@@ -159,7 +157,7 @@ When selecting **Cilium VPC Native Routing** combined with **Multi-AZ**, the **P
 
 **Step 10:** When the **Cluster** status is **Active**, you can view Cluster information and Node Group information by clicking on the Cluster Name in the **Name** column. In the **Control Plane Availability** column, you will see the **Multi-AZ** badge confirming the cluster was created with the correct configuration.
 
-<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-list-page.png" alt=""><figcaption><p>Cluster Active with Multi-AZ badge on the list page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-list-page.png" alt=""><figcaption></figcaption></figure>
 
 ***
 

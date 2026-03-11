@@ -16,16 +16,16 @@ To create a Multi-AZ Cluster, please refer to the guide [here](../getting-starte
 
 ### Comparison between Single-AZ and Multi-AZ Cluster
 
-| Feature | Single-AZ | Multi-AZ |
-| --- | --- | --- |
-| **Control Plane Availability** | Standard | Higher |
-| **Fault Tolerance** | Single point of failure at AZ level | Tolerates AZ-level failures |
-| **Cost** | Lower | Free during initial release phase (Private Service Endpoints cost applies) |
-| **Latency** | Low (same AZ) | Slightly higher (cross-AZ for Control Plane) |
-| **Private DNS (VPC)** | Optional | Required (prerequisite) |
-| **Use Case** | Development, Testing | Production, Mission-critical |
-| **Subnet Requirement** | 1 subnet | Minimum 2 subnets from 2 different AZs |
-| **Node Group** | 1 AZ (1 subnet) | 1 AZ per Node Group (select 1 subnet from the cluster's subnet list) |
+| Feature                        | Single-AZ                           | Multi-AZ                                                                   |
+| ------------------------------ | ----------------------------------- | -------------------------------------------------------------------------- |
+| **Control Plane Availability** | Standard                            | Higher                                                                     |
+| **Fault Tolerance**            | Single point of failure at AZ level | Tolerates AZ-level failures                                                |
+| **Cost**                       | Lower                               | Free during initial release phase (Private Service Endpoints cost applies) |
+| **Latency**                    | Low (same AZ)                       | Slightly higher (cross-AZ for Control Plane)                               |
+| **Private DNS (VPC)**          | Optional                            | Required (prerequisite)                                                    |
+| **Use Case**                   | Development, Testing                | Production, Mission-critical                                               |
+| **Subnet Requirement**         | 1 subnet                            | Minimum 2 subnets from 2 different AZs                                     |
+| **Node Group**                 | 1 AZ (1 subnet)                     | 1 AZ per Node Group (select 1 subnet from the cluster's subnet list)       |
 
 ### When should you use Multi-AZ Cluster?
 
@@ -47,8 +47,6 @@ To create a Multi-AZ Cluster, please refer to the guide [here](../getting-starte
 
 The diagram below illustrates the architecture of a Multi-AZ Cluster:
 
-<figure><img src="../../.gitbook/assets/vks-multi-az-architecture.png" alt=""><figcaption><p>Multi-AZ Control Plane Architecture</p></figcaption></figure>
-
 **Key components:**
 
 * **Control Plane**: Distributed across multiple AZs, including API Server, Controller Manager, Scheduler, etcd
@@ -64,11 +62,11 @@ The diagram below illustrates the architecture of a Multi-AZ Cluster:
 
 On the Kubernetes Cluster list page, you can identify Multi-AZ Clusters through the **Control Plane Availability** column:
 
-<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-list-page.png" alt=""><figcaption><p>Cluster List Page with Control Plane Availability column</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-list-page.png" alt=""><figcaption></figcaption></figure>
 
-| Badge | Meaning |
-| --- | --- |
-| **Single-AZ** (gray badge) | Control Plane is in 1 AZ |
+| Badge                          | Meaning                                          |
+| ------------------------------ | ------------------------------------------------ |
+| **Single-AZ** (gray badge)     | Control Plane is in 1 AZ                         |
 | **Multi-AZ** (dark blue badge) | Control Plane is distributed across multiple AZs |
 
 ### Viewing Cluster details
@@ -79,7 +77,7 @@ When accessing the detail page of a Multi-AZ Cluster:
 
 Displays an additional **Control Plane Availability** field with the value **Multi-AZ** (dark blue badge)
 
-<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-detail-general-info.png" alt=""><figcaption><p>General Information with Control Plane Availability</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-detail-general-info.png" alt=""><figcaption></figcaption></figure>
 
 **2. Network Section**
 
@@ -95,7 +93,7 @@ Subnets (2)
 
 * Click the **copy** icon next to the Subnet ID to copy it to clipboard
 
-<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-detail-network.png" alt=""><figcaption><p>Network section with Subnets list</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-detail-network.png" alt=""><figcaption></figcaption></figure>
 
 **3. Node Group Tab**
 
@@ -129,6 +127,7 @@ The process for deleting a Multi-AZ Cluster is **similar** to a Single-AZ Cluste
 **Notes when deleting a Multi-AZ Cluster:**
 
 When deleting a cluster, the system will:
+
 * Delete all **Control Plane components** across **all AZs**
 * Delete all **Node Groups** and **Worker Nodes**
 * Release **network resources** (subnets will remain in the VPC)
@@ -136,6 +135,7 @@ When deleting a cluster, the system will:
 * Delete the cluster's default **Load Balancer**
 
 The following resources **may not be automatically deleted**:
+
 * Load Balancers integrated into the cluster by you
 * Persistent Volumes integrated into the cluster by you
 {% endhint %}
@@ -146,12 +146,12 @@ The following resources **may not be automatically deleted**:
 
 ### Current Limitations
 
-| Limitation | Description |
-| --- | --- |
-| **Cannot convert** | Cannot convert a cluster from Single-AZ to Multi-AZ (or vice versa) after creation |
-| **Cannot change subnets** | Cannot add/remove subnets after creating a Multi-AZ cluster |
-| **Node Group remains Single-AZ** | Each Node Group only supports deployment in 1 subnet (1 AZ) |
-| **VPC DNS required** | VPC must have DNS enabled to create a Multi-AZ Cluster |
+| Limitation                       | Description                                                                        |
+| -------------------------------- | ---------------------------------------------------------------------------------- |
+| **Cannot convert**               | Cannot convert a cluster from Single-AZ to Multi-AZ (or vice versa) after creation |
+| **Cannot change subnets**        | Cannot add/remove subnets after creating a Multi-AZ cluster                        |
+| **Node Group remains Single-AZ** | Each Node Group only supports deployment in 1 subnet (1 AZ)                        |
+| **VPC DNS required**             | VPC must have DNS enabled to create a Multi-AZ Cluster                             |
 
 ### Important Notes
 
@@ -205,6 +205,7 @@ Traffic between AZs may have slightly higher latency compared to traffic within 
 ### 3. What happens when an AZ experiences an outage?
 
 When 1 AZ experiences an outage:
+
 * **Control Plane** continues to operate normally from the remaining AZs
 * **Node Groups** in that AZ will not be available
 * Kubernetes will automatically reschedule pods to nodes in other AZs (if Node Groups exist in other AZs)
