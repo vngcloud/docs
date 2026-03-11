@@ -16,16 +16,16 @@ Trong mô hình Multi-AZ, các thành phần của Control Plane (API Server, Co
 
 ### So sánh Single-AZ và Multi-AZ Cluster
 
-| Đặc điểm                         | Single-AZ                             | Multi-AZ                                                                                       |
-| ------------------------------------ | ------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| **Control Plane Availability** | Tiêu chuẩn                           | Cao hơn                                                                                        |
-| **Khả năng chịu lỗi**      | Single point of failure tại AZ level | Chịu được lỗi ở cấp độ AZ                                                             |
-| **Chi phí**                   | Thấp hơn                            | Miễn phí trong giai đoạn đầu release (có phát sinh chi phí Private Service Endpoints) |
-| **Độ trễ (Latency)**        | Thấp (cùng AZ)                      | Cao hơn một chút (cross-AZ cho Control Plane)                                               |
-| **Private DNS (VPC)**          | Tùy chọn                            | Bắt buộc (prerequisite)                                                                      |
-| **Use Case**                   | Development, Testing                  | Production, Mission-critical                                                                   |
-| **Yêu cầu Subnet**           | 1 subnet                              | Tối thiểu 2 subnets từ 2 AZ khác nhau                                                      |
-| **Node Group**                 | 1 AZ (1 subnet)                       | 1 AZ per Node Group (chọn 1 subnet từ danh sách subnets của cluster)                       |
+| Đặc điểm                       | Single-AZ                            | Multi-AZ                                                                              |
+| ------------------------------ | ------------------------------------ | ------------------------------------------------------------------------------------- |
+| **Control Plane Availability** | Tiêu chuẩn                           | Cao hơn                                                                               |
+| **Khả năng chịu lỗi**          | Single point of failure tại AZ level | Chịu được lỗi ở cấp độ AZ                                                             |
+| **Chi phí**                    | Thấp hơn                             | Miễn phí trong giai đoạn đầu release (có phát sinh chi phí Private Service Endpoints) |
+| **Độ trễ (Latency)**           | Thấp (cùng AZ)                       | Cao hơn một chút (cross-AZ cho Control Plane)                                         |
+| **Private DNS (VPC)**          | Tùy chọn                             | Bắt buộc (prerequisite)                                                               |
+| **Use Case**                   | Development, Testing                 | Production, Mission-critical                                                          |
+| **Yêu cầu Subnet**             | 1 subnet                             | Tối thiểu 2 subnets từ 2 AZ khác nhau                                                 |
+| **Node Group**                 | 1 AZ (1 subnet)                      | 1 AZ per Node Group (chọn 1 subnet từ danh sách subnets của cluster)                  |
 
 ### Khi nào nên sử dụng Multi-AZ Cluster?
 
@@ -39,15 +39,13 @@ Trong mô hình Multi-AZ, các thành phần của Control Plane (API Server, Co
 
 * **Single-AZ Cluster** phù hợp cho môi trường **development** và **testing** do chi phí thấp hơn
 * **Multi-AZ Cluster** được khuyến nghị cho môi trường **production**
-  {% endhint %}
+{% endhint %}
 
----
+***
 
 ## Kiến trúc Multi-AZ Control Plane
 
 Sơ đồ dưới đây minh họa kiến trúc của Multi-AZ Cluster:
-
-<figure><img src="../../.gitbook/assets/vks-multi-az-architecture.png" alt=""><figcaption><p>Kiến trúc Multi-AZ Control Plane</p></figcaption></figure>
 
 **Các thành phần chính:**
 
@@ -56,7 +54,7 @@ Sơ đồ dưới đây minh họa kiến trúc của Multi-AZ Cluster:
 * **vLB Multi-AZ**: Load Balancer phân phối traffic đến Control Plane nodes trên các AZ
 * **Node Groups**: Mỗi Node Group chỉ triển khai trong 1 subnet (1 AZ), người dùng có thể tạo nhiều Node Group ở các AZ khác nhau
 
----
+***
 
 ## Quản lý Multi-AZ Cluster
 
@@ -64,11 +62,11 @@ Sơ đồ dưới đây minh họa kiến trúc của Multi-AZ Cluster:
 
 Tại trang danh sách Kubernetes Cluster, bạn có thể nhận biết Multi-AZ Cluster thông qua cột **Control Plane Availability**:
 
-<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-list-page.png" alt=""><figcaption><p>Cluster List Page với cột Control Plane Availability</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-list-page.png" alt=""><figcaption></figcaption></figure>
 
-| Badge                                      | Ý nghĩa                               |
-| ------------------------------------------ | --------------------------------------- |
-| **Single-AZ** (badge màu xám)      | Control Plane nằm trong 1 AZ           |
+| Badge                             | Ý nghĩa                             |
+| --------------------------------- | ----------------------------------- |
+| **Single-AZ** (badge màu xám)     | Control Plane nằm trong 1 AZ        |
 | **Multi-AZ** (badge màu xanh đậm) | Control Plane phân bổ trên nhiều AZ |
 
 ### Xem chi tiết Cluster
@@ -79,7 +77,7 @@ Khi truy cập vào trang chi tiết của Multi-AZ Cluster:
 
 Hiển thị thêm trường **Control Plane Availability** với giá trị **Multi-AZ** (badge màu xanh đậm)
 
-<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-detail-general-info.png" alt=""><figcaption><p>General Information với Control Plane Availability</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-detail-general-info.png" alt=""><figcaption></figcaption></figure>
 
 **2. Network Section**
 
@@ -95,7 +93,7 @@ Subnets (2)
 
 * Click vào icon **copy** bên cạnh Subnet ID để copy vào clipboard
 
-<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-detail-network.png" alt=""><figcaption><p>Network section với danh sách Subnets</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-detail-network.png" alt=""><figcaption></figcaption></figure>
 
 **3. Node Group Tab**
 
@@ -114,7 +112,8 @@ Quy trình upgrade Control Plane cho Multi-AZ Cluster **không khác biệt** so
 * Hệ thống thực hiện **rolling upgrade** trên tất cả các AZ
 * Cluster vẫn **available** trong quá trình upgrade
 * Các workload hiện có **không bị gián đoạn**
-* {% endhint %}
+*
+{% endhint %}
 
 ### Xóa Cluster
 
@@ -139,20 +138,20 @@ Các tài nguyên sau **có thể không bị xóa tự động**:
 
 * Load Balancer được integrate vào cluster bởi bạn
 * Persistent Volume được integrate vào cluster bởi bạn
-  {% endhint %}
+{% endhint %}
 
----
+***
 
 ## Giới hạn và Lưu ý
 
 ### Giới hạn hiện tại
 
-| Giới hạn                               | Mô tả                                                                                              |
-| ---------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| **Không thể chuyển đổi**      | Không thể chuyển đổi cluster từ Single-AZ sang Multi-AZ (hoặc ngược lại) sau khi đã tạo |
-| **Không thể thay đổi subnets** | Không thể thêm/bớt subnet sau khi đã tạo Multi-AZ cluster                                     |
-| **Node Group vẫn Single-AZ**      | Mỗi Node Group chỉ hỗ trợ triển khai trong 1 subnet (1 AZ)                                      |
-| **VPC DNS bắt buộc**             | VPC phải bật DNS để tạo Multi-AZ Cluster                                                        |
+| Giới hạn                       | Mô tả                                                                                   |
+| ------------------------------ | --------------------------------------------------------------------------------------- |
+| **Không thể chuyển đổi**       | Không thể chuyển đổi cluster từ Single-AZ sang Multi-AZ (hoặc ngược lại) sau khi đã tạo |
+| **Không thể thay đổi subnets** | Không thể thêm/bớt subnet sau khi đã tạo Multi-AZ cluster                               |
+| **Node Group vẫn Single-AZ**   | Mỗi Node Group chỉ hỗ trợ triển khai trong 1 subnet (1 AZ)                              |
+| **VPC DNS bắt buộc**           | VPC phải bật DNS để tạo Multi-AZ Cluster                                                |
 
 ### Lưu ý quan trọng
 
@@ -176,14 +175,14 @@ Multi-AZ Cluster sử dụng **Private Service Endpoint (PSE) thế hệ mới**
 * **Không xóa PSE**: Việc xóa PSE sẽ ảnh hưởng không chỉ cluster mà còn toàn bộ các resources khác trong VPC đang sử dụng các dịch vụ này.
 * Để truy cập **kube-api**, bạn cần **đứng trong VPC** mà cluster sử dụng.
 * Chi tiết tham khảo tại [Khởi tạo một Multi-AZ Cluster](../getting-started/khoi-tao-mot-multi-az-cluster.md)
-  {% endhint %}
+{% endhint %}
 
 {% hint style="info" %}
 **Về Node Group:**
 
 * Khi tạo cluster, Node Group đầu tiên chỉ có thể chọn 1 subnet từ danh sách subnets đã cấu hình cho cluster
 * Để đảm bảo HA cho workloads, bạn nên tạo thêm Node Group ở các AZ khác sau khi cluster được tạo
-  {% endhint %}
+{% endhint %}
 
 {% hint style="info" %}
 **Về cross-AZ latency:**
@@ -191,7 +190,7 @@ Multi-AZ Cluster sử dụng **Private Service Endpoint (PSE) thế hệ mới**
 Traffic giữa các AZ có thể có độ trễ cao hơn một chút so với traffic trong cùng AZ. Điều này là bình thường và được chấp nhận để đổi lấy khả năng High Availability.
 {% endhint %}
 
----
+***
 
 ## FAQ
 
