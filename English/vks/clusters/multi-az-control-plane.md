@@ -18,7 +18,7 @@ To create a Multi-AZ Cluster, please refer to the guide [here](../getting-starte
 
 | Feature | Single-AZ | Multi-AZ |
 | --- | --- | --- |
-| **Control Plane Availability** | 99.9% | 99.99% |
+| **Control Plane Availability** | Standard | Higher |
 | **Fault Tolerance** | Single point of failure at AZ level | Tolerates AZ-level failures |
 | **Cost** | Lower | Free during initial release phase (Private Service Endpoints cost applies) |
 | **Latency** | Low (same AZ) | Slightly higher (cross-AZ for Control Plane) |

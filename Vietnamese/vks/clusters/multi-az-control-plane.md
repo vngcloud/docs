@@ -18,7 +18,7 @@ Trong mô hình Multi-AZ, các thành phần của Control Plane (API Server, Co
 
 | Đặc điểm                         | Single-AZ                             | Multi-AZ                                                                                       |
 | ------------------------------------ | ------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| **Control Plane Availability** | 99.9%                                 | 99.99%                                                                                         |
+| **Control Plane Availability** | Tiêu chuẩn                           | Cao hơn                                                                                        |
 | **Khả năng chịu lỗi**      | Single point of failure tại AZ level | Chịu được lỗi ở cấp độ AZ                                                             |
 | **Chi phí**                   | Thấp hơn                            | Miễn phí trong giai đoạn đầu release (có phát sinh chi phí Private Service Endpoints) |
 | **Độ trễ (Latency)**        | Thấp (cùng AZ)                      | Cao hơn một chút (cross-AZ cho Control Plane)                                               |
