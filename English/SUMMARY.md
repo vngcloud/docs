@@ -742,6 +742,7 @@
     * [Manage MDS Instance](vdb/memorystore-database-service-mds/quan-ly-cau-hinh-mds-instance.md)
     * [Manage MDS Config Group](vdb/memorystore-database-service-mds/quan-ly-thong-tin-mds-instance.md)
     * [Backup MDS Instance](vdb/memorystore-database-service-mds/sao-luu-mds-instance.md)
+  * [Billing Information](vdb/billing-information.md)
   * [Security (Bảo mật)](vdb/security-bao-mat.md)
 * [vCDN](vcdn/README.md)
   * [Overview](vcdn/tong-quan.md)
