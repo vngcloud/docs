@@ -1,0 +1,26 @@
+# Working with Plugins
+
+vDB OpenSearch supports you in using additional plugins to extend your OpenSearch Cluster for various use cases, for example the kNN plugin can be used for **vector search** and **machine learning,...**
+
+## **Plugins Pre-installed When Initializing Cluster**
+
+Each OpenSearch Cluster **comes with several default plugins** to help you launch the service quickly without additional installation.
+
+**Default plugin list:**
+
+<table><thead><tr><th width="278.681884765625">Plugin Name</th><th>Description</th></tr></thead><tbody><tr><td>Alerting</td><td>Provides alerting mechanisms based on data in OpenSearch</td></tr><tr><td>Anomaly Detection</td><td>Detects anomalies in data using Machine Learning (ML)</td></tr><tr><td>Asynchronous Search</td><td>Supports asynchronous search to handle large queries without timeout.</td></tr><tr><td>Cross Cluster Replication</td><td>Synchronizes data between different OpenSearch Clusters.</td></tr><tr><td>Custom Codecs</td><td>Allows using custom codecs for data storage.</td></tr><tr><td>Flow Framework</td><td>Visual data flow management tool, supports workflow-based data processing.</td></tr><tr><td>Notebooks</td><td>Supports note-taking and interacting with OpenSearch data in Jupyter Notebook style.</td></tr><tr><td>Notifications</td><td>Manages and sends notifications from OpenSearch to different channels like Slack, Email, Webhook.</td></tr><tr><td>Reports Scheduler</td><td>Creates and schedules automatic report exports.</td></tr><tr><td>Geospatial</td><td>Supports searching and analyzing data with geographical elements (GIS).</td></tr><tr><td>Index Management</td><td>Manages index lifecycle, optimizes storage performance and data queries.</td></tr><tr><td>Job Scheduler</td><td>Supports scheduling and managing periodic tasks in OpenSearch.</td></tr><tr><td>k-NN</td><td>Supports approximate search (k-Nearest Neighbor Search) for AI/ML.</td></tr><tr><td>ML Commons</td><td>Built-in Machine Learning framework to run ML models directly on OpenSearch</td></tr><tr><td>Skills</td><td>Supports integrating AI/ML models into OpenSearch.</td></tr><tr><td>Neural Search</td><td>AI/Deep Learning-based search instead of traditional keyword search.</td></tr><tr><td>Observability</td><td>Monitors the OpenSearch system by collecting and displaying metrics.</td></tr><tr><td>Performance Analyzer</td><td>Monitors the OpenSearch system by collecting and displaying metrics.</td></tr><tr><td>Security</td><td>Supports user authentication, authorization and data protection.</td></tr><tr><td>Security Analytics</td><td>Security analysis based on log data.</td></tr><tr><td>SQL</td><td>Allows using SQL to query OpenSearch.</td></tr><tr><td>opensearch-system-templates</td><td>OpenSearch system templates, supports configuration management.</td></tr><tr><td>query-insights</td><td>Analyzes and optimizes query performance in OpenSearch.</td></tr></tbody></table>
+
+## **Optional Plugins for Installation**
+
+In addition to default plugins, you can **choose to install additional plugins** when initializing the cluster.
+
+**Optional plugin list:**
+
+<table><thead><tr><th width="289.9090576171875">Plugin Name</th><th>Description</th></tr></thead><tbody><tr><td>analysis-icu</td><td>Supports text analysis and processing with advanced Unicode characters</td></tr><tr><td>analysis-kuromoji</td><td>Japanese language tokenizer</td></tr><tr><td>analysis-nori</td><td>Korean language tokenizer</td></tr><tr><td>analysis-phonetic</td><td>Supports search based on pronunciation rather than spelling</td></tr><tr><td>analysis-smartcn</td><td>Simplified Chinese language tokenizer.</td></tr><tr><td>analysis-ukrainian</td><td>Ukrainian language analyzer.</td></tr><tr><td>discovery-azure-classic</td><td>Supports discovering OpenSearch nodes on Microsoft Azure Classic platform.</td></tr><tr><td>discovery-ec2</td><td>Supports discovering OpenSearch nodes in AWS EC2.</td></tr><tr><td>discovery-gce</td><td>Supports discovering OpenSearch nodes in Google Cloud (GCE).</td></tr><tr><td>ingest-attachment</td><td>Allows indexing content of attached files such as PDF, Word, Excel, PowerPoint.</td></tr><tr><td>mapper-annotated-text</td><td>Supports processing annotated text.</td></tr><tr><td>mapper-murmur3</td><td>Provides Murmur3 hash function to create hash values for documents.</td></tr><tr><td>mapper-size</td><td>Stores document size as a metadata field.</td></tr><tr><td>repository-azure</td><td>Supports storing snapshots on Microsoft Azure Blob Storage.</td></tr><tr><td>repository-gcs</td><td>Supports storing snapshots on Google Cloud Storage (GCS).</td></tr><tr><td>repository-hdfs</td><td>Supports storing snapshots on HDFS (Hadoop Distributed File System).</td></tr><tr><td>repository-s3</td><td>Supports storing snapshots on Amazon S3.</td></tr><tr><td>store-smb</td><td>Supports storing data on SMB (Server Message Block) system.</td></tr><tr><td>transport-nio</td><td>Provides non-blocking IO (NIO) data transport protocol for OpenSearch.</td></tr></tbody></table>
+
+{% hint style="info" %}
+**Note:**&#x20;
+
+* Currently, you cannot add or remove plugins after the OpenSearch Cluster has been initialized.
+* If you want to change the plugin set, you need to create a new OpenSearch Cluster with all the desired plugins.
+{% endhint %}
