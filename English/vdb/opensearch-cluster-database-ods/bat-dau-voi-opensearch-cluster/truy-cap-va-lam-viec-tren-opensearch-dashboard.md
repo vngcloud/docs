@@ -10,22 +10,12 @@ After an OpenSearch Cluster has been initialized, you can access the OpenSearch 
 
 **Step 3**: Under the **Accessibility** section, retrieve the **Dashboard Endpoint** information
 
-<figure><img src="../../../.gitbook/assets/opensearch1.png" alt=""><figcaption></figcaption></figure>
-
-
-
 **Step 4**: Open this URL and log in with:
 
 * **Username**: `master-user`
 * **Password**: the **Master user password** you entered when initializing the Cluster
 
-<figure><img src="../../../.gitbook/assets/opensearch2.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/opensearch3.png" alt=""><figcaption></figcaption></figure>
-
 After successful login, you can now work with the OpenSearch Cluster through the OpenSearch Dashboard. Refer to the sections below for guidance on performing some main tasks on the OpenSearch Dashboard.
-
-<figure><img src="../../../.gitbook/assets/opensearch4.png" alt=""><figcaption></figcaption></figure>
 
 ***
 

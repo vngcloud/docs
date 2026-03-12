@@ -1,10 +1,8 @@
-# Push data or event logs from Logstash into an initialized OpenSearch Cluster
+# Push data or event logs from Logstash into an OpenSearch Cluster
 
 ## Prerequisites
 
-Suppose you have successfully initialized an OpenSearch Cluster with the following parameters:&#x20;
-
-<figure><img src="../../../.gitbook/assets/opensearch5.png" alt=""><figcaption></figcaption></figure>
+Suppose you have successfully initialized an OpenSearch Cluster with the following parameters:
 
 Next, proceed to push sample data into OpenSearch Dashboards or push event logs from Logstash into OpenSearch.
 
@@ -33,7 +31,7 @@ curl -H "Content-Type: application/json" -X PUT "https://<<OpenSearch_ReceiveLog
 
 You can get the `OpenSearch_ReceiveLogs_Endpoint` information from the vDB Portal and replace `<<Master_User_Password>>` with the master account password you previously created.
 
-Example:&#x20;
+Example:
 
 ```bash
 # 2. Create index and data.
@@ -41,8 +39,7 @@ curl -H "Content-Type: application/json" -X PUT "https://open-search-dem-53461-5
 curl -H "Content-Type: application/json" -X PUT "https://open-search-dem-53461-5cfxl-hcm03.vdb-opensearch.vngcloud.vn:9200/ecommerce/_bulk" -k -H "Authorization: Basic $(echo -n 'master-user:123456789aA@' | base64)" --data-binary "@ecommerce.ndjson"
 ```
 
-[\
-](https://liemnt5-cidr-11430-2ue3z-hcm03.vdb-opensearch.vngcloud.tech)The result will display as follows:&#x20;
+[<br>](https://liemnt5-cidr-11430-2ue3z-hcm03.vdb-opensearch.vngcloud.tech)The result will display as follows:
 
 ```bash
 curl -H "Content-Type: application/json" -X PUT "https://open-search-dem-53461-5cfxl-hcm03.vdb-opensearch.vngcloud.vn:9200/ecommerce" -k -H "Authorization: Basic $(echo -n 'master-user:123456789aA@' | base64)" --data-binary "@ecommerce-field_mappings.json"
@@ -56,7 +53,7 @@ curl -H "Content-Type: application/json" -X PUT "https://open-search-dem-53461-5
 **Step 3: Check data on OpenSearch Dashboards**
 
 1. Access and log in to **OpenSearch Dashboards**
-2. Go to **Management**, select **Dashboard Management**&#x20;
+2. Go to **Management**, select **Dashboard Management**
 
 <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -158,7 +155,7 @@ If logs appear, it means Logstash has successfully sent data to OpenSearch.
 #### **Step 5: View logs on OpenSearch Dashboards**
 
 1. Access and log in to **OpenSearch Dashboards**
-2. Go to **Management**, select **Dashboard Management**&#x20;
+2. Go to **Management**, select **Dashboard Management**
 
 <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

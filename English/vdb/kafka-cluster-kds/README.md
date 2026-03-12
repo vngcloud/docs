@@ -2,7 +2,7 @@
 
 Kafka Cluster DB is a new service on the vDB platform, providing a powerful and flexible Kafka server cluster to manage real-time event streaming. With Kafka Cluster DB, you can easily build large-scale data processing applications, messaging systems, and centralized logging with high scalability, data durability, and outstanding performance.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Kafka-Cluster-Database.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Features <a href="#tinh-nang-moi" id="tinh-nang-moi"></a>
 
@@ -32,14 +32,12 @@ Kafka Cluster DB is a new service on the vDB platform, providing a powerful and 
 
 Comparison between Kafka Cluster DB Managed Service and Traditional Kafka Cluster (self-managed)
 
-| **Criteria**                | **Kafka Cluster DB Managed Service**                                                                                 | **Traditional Kafka Cluster**                                                                     |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| **Cluster management**             | The service provider (GreenNode vDB) is responsible for managing, maintaining, upgrading and monitoring the Kafka cluster.              | Users self-manage the entire Kafka cluster, including installation, configuration, maintenance, upgrades and monitoring. |
-| **Configuration and deployment**  | Easy to configure and deploy through web interface or API.                                                     | Requires in-depth Kafka knowledge and system administration skills for installation and configuration.         |
-| **Scaling**                 | Easy to scale by adding resources through the management interface.                                               | Requires manual scaling process, which can be complex and time-consuming.                              |
-| **Monitoring and troubleshooting** | The service provider (GreenNode vDB) provides monitoring tools and troubleshooting support.                                | You self-monitor and troubleshoot, requiring expertise and experience.                       |
-| **Cost**                 | Typically lower long-term costs due to savings on infrastructure investment, operational costs and personnel costs. | Higher long-term costs due to the need to invest in infrastructure, operations and personnel.                      |
-| **Flexibility**          | May be limited in customization and control compared to self-managed clusters.                                         | Allows full customization and control of the Kafka cluster.                                               |
-| **Suitable for**             | Businesses that want to focus on application development and don't want to invest heavily in infrastructure management.                    | Businesses with strong technical teams that want full system control and can handle incidents themselves. |
-
-&#x20;
+| **Criteria**                       | **Kafka Cluster DB Managed Service**                                                                                       | **Traditional Kafka Cluster**                                                                                            |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Cluster management**             | The service provider (GreenNode vDB) is responsible for managing, maintaining, upgrading and monitoring the Kafka cluster. | Users self-manage the entire Kafka cluster, including installation, configuration, maintenance, upgrades and monitoring. |
+| **Configuration and deployment**   | Easy to configure and deploy through web interface or API.                                                                 | Requires in-depth Kafka knowledge and system administration skills for installation and configuration.                   |
+| **Scaling**                        | Easy to scale by adding resources through the management interface.                                                        | Requires manual scaling process, which can be complex and time-consuming.                                                |
+| **Monitoring and troubleshooting** | The service provider (GreenNode vDB) provides monitoring tools and troubleshooting support.                                | You self-monitor and troubleshoot, requiring expertise and experience.                                                   |
+| **Cost**                           | Typically lower long-term costs due to savings on infrastructure investment, operational costs and personnel costs.        | Higher long-term costs due to the need to invest in infrastructure, operations and personnel.                            |
+| **Flexibility**                    | May be limited in customization and control compared to self-managed clusters.                                             | Allows full customization and control of the Kafka cluster.                                                              |
+| **Suitable for**                   | Businesses that want to focus on application development and don't want to invest heavily in infrastructure management.    | Businesses with strong technical teams that want full system control and can handle incidents themselves.                |

@@ -11,29 +11,32 @@ Refer to the GreenNode login guide [here](../../identity-and-access-management-i
 
 ## Step 2: Create a Kafka Cluster
 
-1.  Click the "Create Kafka Cluster" button.&#x20;
+1. Click the "Create Kafka Cluster" button.
 
-    <figure><img src="../../.gitbook/assets/image (744).png" alt="" width="228"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/step2-create-kafka.png" alt=""><figcaption></figcaption></figure>
+
 2. Fill in the following information:
-   * **Name:** Name your Kafka cluster for easy identification and management.
-   * **Kafka Version:** Choose the Kafka version that suits your needs. Different versions may have different features and performance.
-   * **Flavor (CPU, RAM):** Select the hardware configuration (CPU and RAM) for brokers in the Kafka cluster. This configuration affects the processing capability and performance of the cluster.
-   * **Number of Brokers:** Determine the number of brokers in the Kafka cluster. The number of brokers affects the fault tolerance and scalability of the cluster.
-   * **Storage per Broker (IOPS and Capacity):** Choose the storage capacity and IOPS (Input/Output Operations Per Second) for each broker. This affects the data storage capacity and read/write performance of the cluster.
-   * **Network (VPC, Subnet):** Select the virtual network (VPC) and subnet where the Kafka cluster will be deployed. When initialized, the Kafka cluster will be in private mode (accessible only from within the VPC). After successful initialization, you can enable public access if needed.
-   * **Access Method Control (mTLS, SASL):** Choose the authentication and authorization method for clients connecting to the Kafka cluster. mTLS uses client and server certificates, SASL uses username and password.
-   * **Encryption Mode:** Choose the data encryption mode. By default, encryption in transit (data encrypted when transmitted between client and broker) and within cluster (data encrypted when stored on brokers) are enabled.
-   * **Config Group:** Select the configuration group to apply to the Kafka cluster. The configuration group contains detailed settings for Kafka operations.
-3.  Click the "Create" button to start the Kafka cluster creation process.&#x20;
 
-    <figure><img src="../../.gitbook/assets/image (745).png" alt=""><figcaption></figcaption></figure>
+* **Name:** Name your Kafka cluster for easy identification and management.
+* **Kafka Version:** Choose the Kafka version that suits your needs. Different versions may have different features and performance.
+* **Flavor (CPU, RAM):** Select the hardware configuration (CPU and RAM) for brokers in the Kafka cluster. This configuration affects the processing capability and performance of the cluster.
+* **Number of Brokers:** Determine the number of brokers in the Kafka cluster. The number of brokers affects the fault tolerance and scalability of the cluster.
+* **Storage per Broker (IOPS and Capacity):** Choose the storage capacity and IOPS (Input/Output Operations Per Second) for each broker. This affects the data storage capacity and read/write performance of the cluster.
+* **Network (VPC, Subnet):** Select the virtual network (VPC) and subnet where the Kafka cluster will be deployed. When initialized, the Kafka cluster will be in private mode (accessible only from within the VPC). After successful initialization, you can enable public access if needed.
+* **Access Method Control (mTLS, SASL):** Choose the authentication and authorization method for clients connecting to the Kafka cluster. mTLS uses client and server certificates, SASL uses username and password.
+* **Encryption Mode:** Choose the data encryption mode. By default, encryption in transit (data encrypted when transmitted between client and broker) and within cluster (data encrypted when stored on brokers) are enabled.
+* **Config Group:** Select the configuration group to apply to the Kafka cluster. The configuration group contains detailed settings for Kafka operations.
+
+3. Click the "Create" button to start the Kafka cluster creation process.
+
+<figure><img src="../../.gitbook/assets/step2-after-click-create-kafka.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3: Create a Topic
 
 1. After the Kafka cluster is successfully created, access the management page of that Kafka cluster.
 2. Find and click the "Create Topic" section.
 
-<figure><img src="../../.gitbook/assets/image (748).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/step3-create-topic.png" alt=""><figcaption></figcaption></figure>
 
 3. Fill in the following information:
 
@@ -48,14 +51,14 @@ Refer to the GreenNode login guide [here](../../identity-and-access-management-i
 
 1. In the Kafka cluster management page, find and click the "Create Kafka User" section.
 
-<figure><img src="../../.gitbook/assets/image (749).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/step5-topic-user.png" alt=""><figcaption></figcaption></figure>
 
-2. Fill in the following information:
+1. Fill in the following information:
 
 * **Name:** Name the Kafka user.
 * **Permissions:** In the permission section, click "Add Permission" to select Produce (write data to topic) and Consume (read data from topic) permissions for each topic this user needs to access.
 
-<figure><img src="../../.gitbook/assets/image (750).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/step4-permission-button.png" alt=""><figcaption></figcaption></figure>
 
 * **Access Method:** Choose the access method for the Kafka user (mTLS or SASL) depending on the method enabled for the Kafka cluster.
 
@@ -89,9 +92,10 @@ wget https://archive.apache.org/dist/kafka/3.7.0/kafka_2.13-3.7.0.tgz
 tar -xzf kafka_2.13-3.7.0.tgz
 ```
 
-5.  Next, download the TLS certificates to access the Kafka cluster.&#x20;
+5. Next, download the TLS certificates to access the Kafka cluster.
 
-    <figure><img src="../../.gitbook/assets/image (746).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/step5-topic-user.png" alt=""><figcaption></figcaption></figure>
+
 6. On the newly initialized server, upload and extract the TLS certificates and unzip using the command below:
 
 Note: The User ID will be the directory name after extracting the downloaded certificate
@@ -119,7 +123,7 @@ You need to allow this server to access the Kafka cluster as a private client by
 
 Note: Port 9094 for mTLS and 9096 for SASL
 
-<figure><img src="../../.gitbook/assets/image (751).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/step5-port.png" alt=""><figcaption></figcaption></figure>
 
 8. Produce message to Kafka topic
 
