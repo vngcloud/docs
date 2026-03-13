@@ -12,16 +12,6 @@
 
 #### Bạn hãy truy cập các hướng dẫn sau để bắt đầu trải nghiệm dịch vụ: <a href="#relationaldatabaseservice-rds-banhaytruycapcachuongdansaudebatdautrainghiemdichvu" id="relationaldatabaseservice-rds-banhaytruycapcachuongdansaudebatdautrainghiemdichvu"></a>
 
-* [Khởi tạo RDS Instance](khoi-tao-rds-instance.md)
-* [Kết nối tới RDS Instance](ket-noi-toi-rds-instance/)
-* [Quản lý thông tin DB Instance](quan-ly-thong-tin-rds-instance.md)
-* [Sao lưu dữ liệu của RDS Instance](sao-luu-du-lieu-cua-rds-instance.md)
-* [Khôi phục dữ liệu cho RDS Instance (từ Backup trước đó)](khoi-phuc-du-lieu-cho-rds-instance.md)
-* [Quản lý cấu hình trong RDS Instance](quan-ly-cau-hinh-trong-rds-instance.md)
-* [Gia hạn RDS Instance](gia-han-rds-instance.md)
-* [Giám sát hoạt động của RDS Instance bằng vMonitor.](giam-sat-hoat-dong-vdb-bang-vmonitor-platform.md)
-* [Import dữ liệu vào RDS Instance (MySQL/MariaDB)](import-du-lieu-vao-rds-instance-mysql-mariadb-bang-mysqldump.md)
-* [Cấu hình replication với RDS Instance (MySQL/MariaDB)](cau-hinh-replication-voi-rds-mysql-mariadb.md)
-* [vDB PostgreSQL - Các extension được hỗ trợ](vdb-postgresql-cac-extension-duoc-ho-tro.md)
-
-<br>
+* [Bắt đầu với RDS](getting-started/) - Khởi tạo và kết nối tới RDS Instance
+* [Làm việc với RDS](working-with-rds/) - Quản lý, vận hành và khai thác RDS Instance
+* [Tài liệu tham khảo](reference/) - Các tài liệu tham khảo bổ sung
