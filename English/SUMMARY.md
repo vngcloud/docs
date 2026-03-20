@@ -1032,6 +1032,7 @@
   * [Change Password Guide](getting-start-with-vng-cloud-account/change-password-guide.md)
   * [Remove Account Guide](getting-start-with-vng-cloud-account/remove-account-guide.md)
   * [Change Phone Number Guide](getting-start-with-vng-cloud-account/change-phone-number-guide.md)
+  * [Invoice address information user guide](getting-start-with-vng-cloud-account/invoice-address-information-user-guide.md)
 * [FAQ](faq/README.md)
   * [vServer](faq/vserver.md)
   * [vStorage](faq/vstorage.md)
