@@ -47,12 +47,13 @@ To create a Multi-AZ Cluster, please refer to the guide [here](../getting-starte
 
 The diagram below illustrates the architecture of a Multi-AZ Cluster:
 
+<figure><img src="../../.gitbook/assets/VKS_HA&#x26;Multi AZ.png" alt=""><figcaption></figcaption></figure>
+
 **Key components:**
 
 * **Control Plane**: Distributed across multiple AZs, including API Server, Controller Manager, Scheduler, etcd
 * **etcd cluster**: Replicated across AZs to ensure data consistency
 * **vLB Multi-AZ**: Load Balancer that distributes traffic to Control Plane nodes across AZs
-* **Node Groups**: Each Node Group is deployed in only 1 subnet (1 AZ), users can create multiple Node Groups in different AZs
 
 ***
 
