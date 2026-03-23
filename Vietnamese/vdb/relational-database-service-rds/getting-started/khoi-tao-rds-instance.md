@@ -28,8 +28,8 @@ Tại giao diện quản lý Database, bạn click chọn **Create Database**. Q
       * Các kí tự đặc biệt được cho phép bao gồm: $,^,\_,<,>.
       * Password phải bắt đầu bằng kí tự chữ cái: A-Z hoặc a-z.
       * Password không được bắt đầu hay kết thúc bằng các kí tự đặc biệt.
-* **Bước 4 Mạng và bảo mật:**&#x54;ại mục **Network & Security**, bạn lựa chọn&#x20;
-  * **Cloud Network (VPC & Subnet)** sẽ sử dụng cho RDS Instance này. Mọi RDS Instance đều phải kết nối với một Cloud Network. Nếu chưa có Cloud Network nào, bạn có thể tạo một Cloud Network mới với hướng dẫn[ tại đây](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/).
+* **Bước 4 Mạng và bảo mật:**&#x54;ại mục **Network & Security**, bạn lựa chọn
+  * **Cloud Network (VPC & Subnet)** sẽ sử dụng cho RDS Instance này. Mọi RDS Instance đều phải kết nối với một Cloud Network. Nếu chưa có Cloud Network nào, bạn có thể tạo một Cloud Network mới với hướng dẫn[ tại đây](../../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/).
   * **Truy cập công khai:** Nếu bạn muốn RDS Instance có IP Public và có thể truy cập từ ngoài Internet, bạn cần bật tính năng **Truy cập công khai** (**Public Accessbility)**, nếu bạn muốn RDS Instance chỉ có IP Private và chỉ những Cloud Servers mới có thể truy cập được thì bạn cần tắt tính năng Public Accessibility.
 
 **Lưu ý**: việc lựa chọn có hay không Public Accessibility chỉ được lựa chọn một lần duy nhất tại thời điểm khởi tạo này. Bạn không thể thay đổi thiết lập này về sau. Để tăng cường bảo mật, GreenNode cho phép bạn giới hạn các địa chỉ IP tin cậy được phép truy cập vào mỗi RDS Instance thông qua **Security Group Rules**.
@@ -54,4 +54,3 @@ Mặc định, RDS Instance tạo ra sẽ có sẵn 3 user:
 Hai user hệ thống được tạo ra để GreenNode phục vụ các tác vụ tự động như tạo backup, cấu hình replication, restore… và bạn không cần phải quan tâm những user này.
 
 Tuy nhiên, việc bạn xóa 2 user hệ thống này sẽ gây ra lỗi hệ thống cho RDS Instance và khiến các tính năng trên mất tác dụng. GreenNode sẽ không chịu trách nhiệm nếu bạn tìm cách xóa 2 user hệ thống. Nếu vô tình xoá 2 user, bạn vui lòng liên hệ GreenNode Support Team để được hỗ trợ.
-

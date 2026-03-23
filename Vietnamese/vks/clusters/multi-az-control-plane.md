@@ -47,12 +47,13 @@ Trong mô hình Multi-AZ, các thành phần của Control Plane (API Server, Co
 
 Sơ đồ dưới đây minh họa kiến trúc của Multi-AZ Cluster:
 
+<figure><img src="../../.gitbook/assets/VKS_HA&#x26;Multi AZ.png" alt=""><figcaption></figcaption></figure>
+
 **Các thành phần chính:**
 
 * **Control Plane**: Được phân bổ trên nhiều AZ, bao gồm API Server, Controller Manager, Scheduler, etcd
 * **etcd cluster**: Được replicate across AZs để đảm bảo data consistency
 * **vLB Multi-AZ**: Load Balancer phân phối traffic đến Control Plane nodes trên các AZ
-* **Node Groups**: Mỗi Node Group chỉ triển khai trong 1 subnet (1 AZ), người dùng có thể tạo nhiều Node Group ở các AZ khác nhau
 
 ***
 

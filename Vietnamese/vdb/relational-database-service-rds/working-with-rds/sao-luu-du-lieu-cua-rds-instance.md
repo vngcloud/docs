@@ -37,7 +37,7 @@ vDB hỗ trợ tính năng tự động sao lưu theo ngày tại thời điểm
 * Cấu hình luôn trong lúc khởi tạo RDS Instance.
 * Thay đổi tại giao diện quản lý Database.
 
-Đối với phương án đầu, mời bạn xem lại hướng dẫn Khởi tạo RDS Instance tại [Hướng dẫn khởi tạo RDS Instance](khoi-tao-rds-instance.md).
+Đối với phương án đầu, mời bạn xem lại hướng dẫn Khởi tạo RDS Instance tại [Hướng dẫn khởi tạo RDS Instance](../getting-started/khoi-tao-rds-instance.md).
 
 Đối với phương án sau, bạn truy cập màn hình quản lý Database, click chọn RDS Instance muốn cấu hình. Sau đó, bạn click chọn **Edit Database**. Tại đây, bạn kéo xuống mục **BACKUP SETTINGS** và bạn có thể cấu hình các thông tin:
 
