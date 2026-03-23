@@ -2,7 +2,7 @@
 
 Below are the current concepts being provided to you by VKS:
 
-## **1. Public Cluster** <a href="#id-1.-public-cluster" id="id-1.-public-cluster"></a>
+## **1. Public Cluster**
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fvbnmi3cReXehXboTd85R%252Fimage.png%3Falt%3Dmedia%26token%3D618fbb97-4bd7-4612-be3a-0e6d3ea40021&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9119e8dd&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
@@ -14,7 +14,7 @@ When you create a **Public Cluster with a Private Node Group** , the VKS system 
 
 * Create VM without Floating IP (ie without Public IP). At this time, these VMs (Nodes) cannot join the K8S cluster directly. In order for these VMs to join the K8S cluster, you need to use a NAT Gateway ( **NATGW** ). **NATGW** acts as a relay station, allowing VMs to connect to the K8S cluster without needing a Public IP. With GreenNode, we recommend you use Pfsense or Palo Alto as a NATGW for your Cluster. Pfsense will help you manage incoming and outgoing network traffic (inbound and outbound traffic) effectively, ensuring network security and access management. Besides, using Private Node Group will help you control applications in the cluster more securely, specifically you can limit control plane access rights through the Whitelist IP feature.
 
-## **2. Private Cluster** <a href="#id-2.-private-cluster" id="id-2.-private-cluster"></a>
+## **2. Private Cluster**
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fj8WSjgnwd7WXKXblh1ex%252Fimage.png%3Falt%3Dmedia%26token%3Dae664224-8486-495b-aab6-5d1d1017edec&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=8c00454b&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
@@ -22,7 +22,32 @@ When you create a **Public Cluster with Public/Private Node Group** , the VKS sy
 
 * To enhance the security of your cluster, we have introduced the private cluster model. The Private Cluster feature helps make your K8S cluster as secure as possible, all connections are completely private from the connection between nodes to the control plane, the connection from the client to the control plane, or the connection from nodes to products. Other services in GreenNode such as: vStorage, vCR, vMonitor, GreenNode APIs,...Private Cluster is the ideal choice for **services that require strict access control, ensuring compliance with security regulations and data privacy**.
 
-## 3. Comparison between using Public Cluster and Private Cluster <a href="#id-3.-so-sanh-giua-viec-su-dung-public-cluster-va-private-cluster" id="id-3.-so-sanh-giua-viec-su-dung-public-cluster-va-private-cluster"></a>
+## 3. Multi-AZ Cluster
+
+A **Multi-AZ Cluster** deploys the Control Plane across **multiple Availability Zones (AZs)**, ensuring **High Availability (HA)** for your cluster. If one AZ experiences an outage, the Control Plane continues to operate normally thanks to redundant instances in other AZs.
+
+* Multi-AZ is **not** a separate cluster type — it is a **Control Plane Availability** option (Single-AZ or Multi-AZ) that can be combined with both **Public Cluster** and **Private Cluster**.
+* When choosing Multi-AZ, the VPC must have DNS enabled and you need to select at least 2 subnets from 2 different AZs for the Control Plane.
+* See details at [Multi-AZ Control Plane](clusters/multi-az-control-plane.md).
+
+{% hint style="info" %}
+**Relationship between Public/Private Cluster and Single-AZ/Multi-AZ:**
+
+These are **2 independent dimensions of choice**:
+* **Public/Private**: about network accessibility
+* **Single-AZ/Multi-AZ**: about Control Plane availability (HA)
+
+Combine these options to suit your needs:
+
+| Combination | Suitable for |
+| --- | --- |
+| Public Cluster + Single-AZ (default) | Dev/Test, apps that don't require HA |
+| Public Cluster + Multi-AZ | Production needing HA + easy access |
+| Private Cluster + Single-AZ | High security, Dev/Test |
+| Private Cluster + Multi-AZ | Production with highest security + HA |
+{% endhint %}
+
+## 4. Comparison between using Public Cluster and Private Cluster
 
 Below is a comparison table between creating and using Public Cluster and Private Cluster on the VKS system:
 

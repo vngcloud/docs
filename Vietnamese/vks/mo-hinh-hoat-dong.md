@@ -28,7 +28,34 @@ Khi bạn khởi tạo một **Private Cluster với Public/ Private Node Group*
 
 ***
 
-## 3. So sánh giữa việc sử dụng Public Cluster và Private Cluster
+## 3. Multi-AZ Cluster
+
+**Multi-AZ Cluster** là tùy chọn triển khai Control Plane trên **nhiều Availability Zone (AZ)**, đảm bảo **High Availability (HA)** cho cluster của bạn. Khi một AZ gặp sự cố, Control Plane vẫn tiếp tục hoạt động bình thường nhờ các instance dự phòng tại các AZ khác.
+
+* Multi-AZ **không phải** là một loại cluster riêng biệt — đây là tùy chọn về **Control Plane Availability** (Single-AZ hoặc Multi-AZ) có thể kết hợp với cả **Public Cluster** và **Private Cluster**.
+* Khi chọn Multi-AZ, VPC phải bật DNS và bạn cần chọn tối thiểu 2 subnet thuộc 2 AZ khác nhau cho Control Plane.
+* Tham khảo chi tiết tại [Multi-AZ Control Plane](clusters/multi-az-control-plane.md).
+
+{% hint style="info" %}
+**Mối quan hệ giữa Public/Private Cluster và Single-AZ/Multi-AZ:**
+
+Đây là **2 chiều lựa chọn độc lập**:
+* **Public/Private**: về khả năng truy cập mạng (network access)
+* **Single-AZ/Multi-AZ**: về độ sẵn sàng của Control Plane (HA)
+
+Kết hợp các lựa chọn này để phù hợp với nhu cầu của bạn:
+
+| Kết hợp | Phù hợp cho |
+| --- | --- |
+| Public Cluster + Single-AZ (mặc định) | Dev/Test, ứng dụng không yêu cầu HA |
+| Public Cluster + Multi-AZ | Production cần HA + dễ truy cập |
+| Private Cluster + Single-AZ | Bảo mật cao, Dev/Test |
+| Private Cluster + Multi-AZ | Production bảo mật cao + HA cao nhất |
+{% endhint %}
+
+***
+
+## 4. So sánh giữa việc sử dụng Public Cluster và Private Cluster
 
 Dưới đây là bảng so sánh giữa việc tạo và sử dụng Public Cluster và Private Cluster trên hệ thống VKS:
 
