@@ -840,6 +840,7 @@
   * [Certificate Management](vwaf/certificate-management.md)
   * [IP Group Management](vwaf/ip-group-management.md)
   * [Service Quotas](vwaf/service-quotas.md)
+  * [Traffic / Request Billing Policy](vwaf/traffic-request-billing-policy.md)
 * [vCloudstack](vcloudstack/README.md)
   * [Get Started with vCloudStack](vcloudstack/get-started-with-vcloudstack/README.md)
     * [Overview of features](vcloudstack/get-started-with-vcloudstack/overview-of-features.md)
