@@ -38,7 +38,6 @@ Quota chứng chỉ được tính **dựa trên số lượng application**.
 Áp dụng cho:
 
 * **Chứng chỉ upload**
-* **Chứng chỉ miễn phí**
 
 ***
 
@@ -46,18 +45,14 @@ Quota chứng chỉ được tính **dựa trên số lượng application**.
 
 Quota chứng chỉ hoạt động theo các nguyên tắc sau:
 
-* Mỗi application có thể gắn **1 chứng chỉ**\
-  (chứng chỉ upload hoặc chứng chỉ miễn phí)
-* **Tổng số chứng chỉ** bạn có thể upload hoặc cấp miễn phí **bằng với số application đã tạo**
-* Chứng chỉ upload và chứng chỉ miễn phí **dùng chung cùng một quota**, dựa trên số application
+* Mỗi application có thể gắn **1 chứng chỉ**
+* **Tổng số chứng chỉ** bạn có thể upload **bằng với số application đã tạo**
 
 #### Ví dụ
 
 Nếu bạn tạo **10 application**, bạn có thể:
 
-* Upload tối đa **10 chứng chỉ**, hoặc
-* Cấp tối đa **10 chứng chỉ miễn phí**, hoặc
-* Kết hợp cả hai, miễn sao không vượt quá tổng số **10 chứng chỉ**
+* Upload tối đa **10 chứng chỉ**
 
 ***
 
