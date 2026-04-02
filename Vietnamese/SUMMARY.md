@@ -600,6 +600,7 @@
   * [Quản lý chứng chỉ](vwaf/quan-ly-chung-chi.md)
   * [Quản lý nhóm IP](vwaf/quan-ly-nhom-ip.md)
   * [Hạn mức dịch vụ](vwaf/han-muc-dich-vu.md)
+  * [Chính sách tính Traffic / Request](vwaf/chinh-sach-tinh-traffic-request.md)
 * [vMonitor Platform](vmonitor/README.md)
   * [vMonitor Platform là gì](vmonitor-platform/vmonitor-platform-la-gi/README.md)
     * [vMonitor Platform Metric là gì?](vmonitor-platform/vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/README.md)
