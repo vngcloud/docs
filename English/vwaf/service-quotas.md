@@ -38,7 +38,6 @@ Certificate quotas are calculated **based on the number of applications**.
 This applies to:
 
 * **Uploaded certificates**
-* **Free certificates**
 
 ***
 
@@ -46,18 +45,14 @@ This applies to:
 
 Certificate quotas follow these rules:
 
-* Each application can be associated with **one certificate**\
-  (either an uploaded certificate or a free certificate).
-* The **total number of certificates** you can upload or request equals the **number of applications you have created**.
-* Uploaded certificates and free certificates **share the same quota scope**, based on application count.
+* Each application can be associated with **one certificate**
+* The **total number of certificates** you can upload equals the **number of applications you have created**.
 
 #### Example
 
 If you create **10 applications**, you can:
 
-* Upload up to **10 certificates**, or
-* Request up to **10 free certificates**, or
-* Use any combination of uploaded and free certificates within that total limit.
+* Upload up to **10 certificates**
 
 ***
 
