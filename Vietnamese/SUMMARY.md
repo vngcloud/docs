@@ -840,7 +840,7 @@
     * [Bảo mật](ai-stack/ai-gateway/bao-mat.md)
     * [Cách tính giá](ai-stack/ai-gateway/cach-tinh-gia.md)
   * [GenAI Studio](ai-stack/genai-studio.md)
-  * [Agent Base](ai-stack/agent-base/README.md)
+  * [Agentbase](ai-stack/agent-base/README.md)
     * [OpenClaw 1-Click](ai-stack/agent-base/one-click-openclaw/README.md)
       * [OpenClaw 1-Click](ai-stack/agent-base/one-click-openclaw/openclaw-1-click.md)
       * [Triển khai và Quản lý OpenClaw](ai-stack/agent-base/one-click-openclaw/trien-khai-openclaw-1-click.md)
