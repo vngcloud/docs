@@ -1,4 +1,4 @@
-# Triển khai và Quản lý OpenClaw 1-Click
+# Triển khai và Quản lý OpenClaw
 
 OpenClaw 1-Click cho phép triển khai AI Agent cá nhân trên GreenNode Agentbase trong 40–60 giây, tự động kết nối GreenNode MaaS mà không cần cấu hình thủ công.
 
@@ -15,11 +15,15 @@ Bạn truy cập Agent Marketplace theo 2 cách:
 * **Cách 1**: Truy cập trang chủ GreenNode tại [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/). Tại giao diện chính, tìm đến **AI Stack** và chọn **Agentbase** → **Agent Marketplace**.
 * **Cách 2**: Truy cập trực tiếp tại [https://aiplatform.console.vngcloud.vn/agent-marketplace](https://aiplatform.console.vngcloud.vn/agent-marketplace).
 
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-04-03 154428.png" alt=""><figcaption></figcaption></figure>
+
 ### Deploy OpenClaw Instance
 
 Tại giao diện Agent Marketplace, tìm **OpenClaw Featured Card** hoặc click nút **"Deploy OpenClaw With 1 Click!"** trên Hero Banner. Quá trình deploy trải qua các bước:
 
 #### Bước 1: Cấu hình Deploy
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-04-03 154505.png" alt=""><figcaption></figcaption></figure>
 
 Màn hình cấu hình gồm 3 phần:
 
@@ -27,10 +31,10 @@ Màn hình cấu hình gồm 3 phần:
 
 Chọn nguồn AI cho OpenClaw instance:
 
-| Tùy chọn | Mô tả | Yêu cầu |
-| --- | --- | --- |
-| **GreenNode MaaS** (mặc định) | Tự động kết nối GreenNode Model-as-a-Service | Cần tài khoản GreenNode |
-| **BYOK — Nhập API Key của bạn** | Dùng API key từ provider bên ngoài | Cần API key hợp lệ |
+| Tùy chọn                        | Mô tả                                        | Yêu cầu                 |
+| ------------------------------- | -------------------------------------------- | ----------------------- |
+| **GreenNode MaaS** (mặc định)   | Tự động kết nối GreenNode Model-as-a-Service | Cần tài khoản GreenNode |
+| **BYOK — Nhập API Key của bạn** | Dùng API key từ provider bên ngoài           | Cần API key hợp lệ      |
 
 {% hint style="info" %}
 **GreenNode MaaS:** Model mặc định là **qwen3-5-27b**.
@@ -48,20 +52,20 @@ Khi chọn **BYOK**, bổ sung thêm các thông tin:
 
 **Phần 2 — Cấu hình Instance**
 
-| Trường | Mô tả | Ghi chú |
-| --- | --- | --- |
-| **Tên OpenClaw** | Tên định danh instance | Auto-fill theo format `openclaw/{username}`, không thể thay đổi sau khi tạo |
-| **Flavor** | Cấu hình tài nguyên (vCPU × RAM) | Mặc định: `2×4`. Có thể chọn `4×8`, `8×16`... |
+| Trường           | Mô tả                            | Ghi chú                                                                     |
+| ---------------- | -------------------------------- | --------------------------------------------------------------------------- |
+| **Tên OpenClaw** | Tên định danh instance           | Auto-fill theo format `openclaw/{username}`, không thể thay đổi sau khi tạo |
+| **Flavor**       | Cấu hình tài nguyên (vCPU × RAM) | Mặc định: `2×4`. Có thể chọn `4×8`, `8×16`...                               |
 
 **Phần 3 — Cấu hình Channel (Tùy chọn)**
 
 Cho phép kết nối OpenClaw với Telegram để chat ngay sau khi deploy.
 
-| Trường | Mô tả | Ghi chú |
-| --- | --- | --- |
-| **Channel Provider** | Nền tảng nhắn tin | Hiện hỗ trợ: Telegram, Zalo |
-| **Mode** | Chế độ kết nối | Pairing (mặc định) hoặc Allow List |
-| **Bot Token** | Bot Token kết nối channel | Không bắt buộc. Có thể cấu hình sau tại Settings → Config |
+| Trường               | Mô tả                     | Ghi chú                                                   |
+| -------------------- | ------------------------- | --------------------------------------------------------- |
+| **Channel Provider** | Nền tảng nhắn tin         | Hiện hỗ trợ: Telegram, Zalo                               |
+| **Mode**             | Chế độ kết nối            | Pairing (mặc định) hoặc Allow List                        |
+| **Bot Token**        | Bot Token kết nối channel | Không bắt buộc. Có thể cấu hình sau tại Settings → Config |
 
 Sau khi điền đầy đủ thông tin, nhấn **"Bắt đầu thiết lập"** để bắt đầu provisioning.
 
@@ -75,15 +79,17 @@ Màn hình **"Setting Up Your Workspace"** hiển thị icon xoay trong khi hệ
 
 #### Bước 3: Deploy Success
 
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-04-03 140457.png" alt=""><figcaption></figcaption></figure>
+
 Sau khi provisioning hoàn tất, màn hình Deploy Success hiển thị thông tin instance:
 
-| Thông tin | Mô tả |
-| --- | --- |
-| **Instance Name** | Tên instance đã tạo (ví dụ: `openclaw/username`) |
-| **Trạng thái** | 🟢 Active |
-| **Gateway Token** | Token đăng nhập vào trang web admin OpenClaw |
-| **OpenClaw Gateway URL** | Link truy cập trang web admin OpenClaw |
-| **Thời gian tạo** | Timestamp |
+| Thông tin                | Mô tả                                            |
+| ------------------------ | ------------------------------------------------ |
+| **Instance Name**        | Tên instance đã tạo (ví dụ: `openclaw/username`) |
+| **Trạng thái**           | 🟢 Active                                        |
+| **Gateway Token**        | Token đăng nhập vào trang web admin OpenClaw     |
+| **OpenClaw Gateway URL** | Link truy cập trang web admin OpenClaw           |
+| **Thời gian tạo**        | Timestamp                                        |
 
 Nhấn **"Mở OpenClaw"** để truy cập OpenClaw Gateway Dashboard và bắt đầu sử dụng ngay.
 
@@ -95,7 +101,9 @@ Nhấn **"Mở OpenClaw"** để truy cập OpenClaw Gateway Dashboard và bắt
 
 Tại giao diện Agentbase, chọn **My Agents** từ menu điều hướng. Trang này hiển thị danh sách tất cả OpenClaw instances của bạn. Bạn có thể lọc theo trạng thái để xem các instance đang **Active** hoặc đã **Stopped**.
 
-Mỗi instance trong danh sách hiển thị: tên instance, trạng thái, AI model đang dùng, phiên bản, và tags.
+Mỗi instance trong danh sách hiển thị: tên instance, trạng thái, phiên bản, và tags.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-04-03 154608.png" alt=""><figcaption></figcaption></figure>
 
 ### Mở lại OpenClaw
 
