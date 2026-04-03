@@ -961,7 +961,7 @@
   * [Customer Managed Key](key-management-system/customer-managed-key.md)
   * [GreenNode Managed Key](key-management-system/vng-cloud-managed-key.md)
 * [Service Health](service-health.md)
-* [AI Stack](ai-stack/agent-base/README.md)
+* [AI Stack](ai-stack/README.md)
   * [Agent Base](ai-stack/agent-base/README.md)
     * [OpenClaw 1-Click](ai-stack/agent-base/one-click-openclaw/README.md)
       * [OpenClaw 1-Click](ai-stack/agent-base/one-click-openclaw/openclaw-1-click.md)
