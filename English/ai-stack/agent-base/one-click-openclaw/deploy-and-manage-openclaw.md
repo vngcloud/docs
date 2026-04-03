@@ -1,4 +1,4 @@
-# Deploy & Manage OpenClaw 1-Click
+# Deploy & Manage OpenClaw
 
 OpenClaw 1-Click lets you deploy a personal AI Agent on GreenNode Agentbase in 40–60 seconds, automatically connected to GreenNode MaaS with no manual configuration required.
 
@@ -15,11 +15,15 @@ You can access the Agent Marketplace in two ways:
 * **Option 1**: Go to the GreenNode homepage at [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/). From the main dashboard, navigate to **AI Stack** and select **Agentbase** → **Agent Marketplace**.
 * **Option 2**: Go directly to [https://aiplatform.console.vngcloud.vn/agent-marketplace](https://aiplatform.console.vngcloud.vn/agent-marketplace).
 
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-04-03 154428.png" alt=""><figcaption></figcaption></figure>
+
 ### Deploy an OpenClaw Instance
 
 On the Agent Marketplace, find the **OpenClaw Featured Card** or click **"Deploy OpenClaw With 1 Click!"** on the Hero Banner. The deployment process goes through the following steps:
 
 #### Step 1: Configure Your Deployment
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-04-03 154505.png" alt=""><figcaption></figcaption></figure>
 
 The configuration screen has 3 sections:
 
@@ -27,10 +31,10 @@ The configuration screen has 3 sections:
 
 Select the AI source for your OpenClaw instance:
 
-| Option | Description | Requirement |
-| --- | --- | --- |
-| **GreenNode MaaS** (default) | Automatically connects to GreenNode Model-as-a-Service | GreenNode account required |
-| **BYOK — Bring Your Own Key** | Use an API key from an external provider | Valid API key required |
+| Option                        | Description                                            | Requirement                |
+| ----------------------------- | ------------------------------------------------------ | -------------------------- |
+| **GreenNode MaaS** (default)  | Automatically connects to GreenNode Model-as-a-Service | GreenNode account required |
+| **BYOK — Bring Your Own Key** | Use an API key from an external provider               | Valid API key required     |
 
 {% hint style="info" %}
 **GreenNode MaaS:** The default model is **qwen3-5-27b**.
@@ -48,20 +52,20 @@ When selecting **BYOK**, provide the following additional details:
 
 **Section 2 — Instance Configuration**
 
-| Field | Description | Notes |
-| --- | --- | --- |
-| **OpenClaw Name** | Instance identifier | Auto-filled as `openclaw/{username}`, cannot be changed after creation |
-| **Flavor** | Compute resource configuration (vCPU × RAM) | Default: `2×4`. Options include `4×8`, `8×16`... |
+| Field             | Description                                 | Notes                                                                  |
+| ----------------- | ------------------------------------------- | ---------------------------------------------------------------------- |
+| **OpenClaw Name** | Instance identifier                         | Auto-filled as `openclaw/{username}`, cannot be changed after creation |
+| **Flavor**        | Compute resource configuration (vCPU × RAM) | Default: `2×4`. Options include `4×8`, `8×16`...                       |
 
 **Section 3 — Channel Configuration (Optional)**
 
 Connect OpenClaw to a messaging platform so you can chat right after deployment.
 
-| Field | Description | Notes |
-| --- | --- | --- |
-| **Channel Provider** | Messaging platform | Supported: Telegram, Zalo |
-| **Mode** | Connection mode | Pairing (default) or Allow List |
-| **Bot Token** | Channel bot token | Optional. Can be configured later at Settings → Config |
+| Field                | Description        | Notes                                                  |
+| -------------------- | ------------------ | ------------------------------------------------------ |
+| **Channel Provider** | Messaging platform | Supported: Telegram, Zalo                              |
+| **Mode**             | Connection mode    | Pairing (default) or Allow List                        |
+| **Bot Token**        | Channel bot token  | Optional. Can be configured later at Settings → Config |
 
 Once all fields are filled, click **"Start Setup"** to begin provisioning.
 
@@ -75,15 +79,17 @@ The **"Setting Up Your Workspace"** screen displays a loading spinner while the 
 
 #### Step 3: Deploy Success
 
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-04-03 140457.png" alt=""><figcaption></figcaption></figure>
+
 Once provisioning is complete, the Deploy Success screen shows your instance details:
 
-| Field | Description |
-| --- | --- |
-| **Instance Name** | The name of your created instance (e.g. `openclaw/username`) |
-| **Status** | 🟢 Active |
-| **Gateway Token** | Token used to log in to the OpenClaw web admin |
-| **OpenClaw Gateway URL** | Link to your OpenClaw web admin |
-| **Created At** | Timestamp |
+| Field                    | Description                                                  |
+| ------------------------ | ------------------------------------------------------------ |
+| **Instance Name**        | The name of your created instance (e.g. `openclaw/username`) |
+| **Status**               | 🟢 Active                                                    |
+| **Gateway Token**        | Token used to log in to the OpenClaw web admin               |
+| **OpenClaw Gateway URL** | Link to your OpenClaw web admin                              |
+| **Created At**           | Timestamp                                                    |
 
 Click **"Open OpenClaw"** to access your OpenClaw Gateway Dashboard and start using it immediately.
 
@@ -96,6 +102,8 @@ Click **"Open OpenClaw"** to access your OpenClaw Gateway Dashboard and start us
 In the Agentbase interface, select **My Agents** from the navigation menu. This page shows a list of all your OpenClaw instances. You can filter by status to view instances that are **Active** or **Stopped**.
 
 Each instance in the list shows: instance name, status, AI model in use, version, and tags.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-04-03 154608.png" alt=""><figcaption></figcaption></figure>
 
 ### Open an Instance
 
