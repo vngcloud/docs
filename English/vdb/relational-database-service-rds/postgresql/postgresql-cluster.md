@@ -16,14 +16,14 @@ To create and manage a PostgreSQL Cluster, please refer to the guide [here](crea
 
 ### Single Node vs. Cluster Comparison
 
-| Feature | Single Node | Cluster |
-| --- | --- | --- |
-| **Architecture** | 1 single node | 1 Writer + N Readers |
-| **High Availability** | No | Yes (Automatic Failover) |
-| **Scale Read** | No | Yes (Read traffic distributed to Readers) |
-| **Backup** | Automatic daily backup (legacy) | Integrated with Backup Center (Auto Backup + Manual Backup) |
-| **Number of nodes** | 1 | 2 - 10 |
-| **Use Case** | Development, Testing, small applications | Production, Mission-critical, applications requiring high uptime |
+| Feature               | Single Node                              | Cluster                                                          |
+| --------------------- | ---------------------------------------- | ---------------------------------------------------------------- |
+| **Architecture**      | 1 single node                            | 1 Writer + N Readers                                             |
+| **High Availability** | No                                       | Yes (Automatic Failover)                                         |
+| **Scale Read**        | No                                       | Yes (Read traffic distributed to Readers)                        |
+| **Backup**            | Automatic daily backup (legacy)          | Integrated with Backup Center (Auto Backup + Manual Backup)      |
+| **Number of nodes**   | 1                                        | 2 - 10                                                           |
+| **Use Case**          | Development, Testing, small applications | Production, Mission-critical, applications requiring high uptime |
 
 ### When should you use PostgreSQL Cluster?
 
@@ -43,6 +43,8 @@ To create and manage a PostgreSQL Cluster, please refer to the guide [here](crea
 
 ## PostgreSQL Cluster Architecture
 
+<figure><img src="../../../.gitbook/assets/vDB Postgres Cluster Architecture Diagram.png" alt=""><figcaption></figcaption></figure>
+
 **Key components:**
 
 * **Writer Node (Primary)**: Handles all write operations. Each cluster has exactly 1 Writer.
@@ -51,12 +53,12 @@ To create and manage a PostgreSQL Cluster, please refer to the guide [here](crea
 
 **Role distribution by number of nodes:**
 
-| Number of Nodes | Role Distribution |
-| --- | --- |
-| 2 | 1 Writer + 1 Reader |
-| 3 | 1 Writer + 2 Readers |
-| 5 | 1 Writer + 4 Readers |
-| 10 | 1 Writer + 9 Readers |
+| Number of Nodes | Role Distribution    |
+| --------------- | -------------------- |
+| 2               | 1 Writer + 1 Reader  |
+| 3               | 1 Writer + 2 Readers |
+| 5               | 1 Writer + 4 Readers |
+| 10              | 1 Writer + 9 Readers |
 
 ***
 
@@ -81,12 +83,12 @@ PostgreSQL Cluster is integrated with **Backup Center (vBackup)**, providing a c
 
 ### Current Limitations
 
-| Limitation | Description |
-| --- | --- |
-| **Number of nodes** | Minimum 2, maximum 10 nodes per cluster |
-| **Writer node** | Always exactly 1 Writer per cluster |
-| **Database Proxy** | Not supported in current version (Coming Soon - Phase 2) |
-| **Concurrent backups** | Only 1 backup/restore job allowed at a time per cluster |
+| Limitation             | Description                                              |
+| ---------------------- | -------------------------------------------------------- |
+| **Number of nodes**    | Minimum 2, maximum 10 nodes per cluster                  |
+| **Writer node**        | Always exactly 1 Writer per cluster                      |
+| **Database Proxy**     | Not supported in current version (Coming Soon - Phase 2) |
+| **Concurrent backups** | Only 1 backup/restore job allowed at a time per cluster  |
 
 ### Important Notes
 
