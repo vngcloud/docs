@@ -120,4 +120,4 @@ When the Writer node encounters an issue, the system will **automatically failov
 
 ### 4. What is Database Proxy and when will it be available?
 
-Database Proxy provides connection pooling and load balancing for the cluster. This feature is under development and will be released in **Phase 2**. Please follow the [Announcements and Updates](../announcements/) page for the latest information.
+Database Proxy provides connection pooling and load balancing for the cluster. This feature is under development and will be released in **Phase 2**. Please follow the [Announcements and Updates](../../announcements/release-notes.md) page for the latest information.
