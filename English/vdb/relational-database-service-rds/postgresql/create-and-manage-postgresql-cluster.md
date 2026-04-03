@@ -72,7 +72,7 @@ When selecting **Cluster** as the Deployment Type, the system also displays a **
 
 #### Step 4: Network & Security
 
-* **Cloud Network (VPC & Subnet)**: Select the VPC and Subnet for the cluster. If you don't have one yet, you can create a new one following the guide [here](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/).
+* **Cloud Network (VPC & Subnet)**: Select the VPC and Subnet for the cluster. If you don't have one yet, you can create a new one following the guide [here](../../vserver/compute-hcm03-1a/vpc/virtual-private-cloud-vpc.md).
 * **Public Accessibility**: Enable if you want the cluster to have a Public IP and be accessible from the Internet; disable if you only want access via Private IP.
 
 {% hint style="warning" %}
