@@ -50,7 +50,7 @@ When selecting **BYOK**, provide the following additional details:
 
 | Field | Description | Notes |
 | --- | --- | --- |
-| **OpenClaw Name** | Instance identifier | Auto-filled as `openclaw/{username}`, editable. Must not duplicate a currently Running instance name |
+| **OpenClaw Name** | Instance identifier | Auto-filled as `openclaw/{username}`, cannot be changed after creation |
 | **Flavor** | Compute resource configuration (vCPU × RAM) | Default: `2×4`. Options include `4×8`, `8×16`... |
 
 **Section 3 — Channel Configuration (Optional)**
@@ -93,40 +93,35 @@ Click **"Open OpenClaw"** to access your OpenClaw Gateway Dashboard and start us
 
 ### Access My Agents Dashboard
 
-In the Agentbase interface, select **My Agents** from the navigation menu. This page displays all your OpenClaw instances in two sections:
+In the Agentbase interface, select **My Agents** from the navigation menu. This page shows a list of all your OpenClaw instances. You can filter by status to view instances that are **Active** or **Stopped**.
 
-| Section | Condition | Description |
-| --- | --- | --- |
-| **Running 🟢** | At least 1 instance is running | Instance cards with an "Open" button |
-| **Stopped ⚪** | At least 1 instance is stopped | Instance cards with a "Restart" button |
-
-Each instance card shows: instance name, status, AI model in use, version, and tags.
+Each instance in the list shows: instance name, status, AI model in use, version, and tags.
 
 ### Open an Instance
 
-1. In My Agents Dashboard, find the instance in the **Running** section.
-2. Click **"Open"** on the instance card.
-3. You are redirected straight to the OpenClaw Gateway Dashboard — no wizard or re-provisioning required.
+1. In My Agents, find the instance you want to access.
+2. Click **"Open"** on the instance.
+3. You are redirected straight to the OpenClaw web admin — no wizard or re-provisioning required.
 
 ### Stop an Instance
 
-1. In My Agents Dashboard, find the instance in the **Running** section.
-2. Click **"Stop"** on the instance card.
+1. In My Agents, find the instance you want to stop.
+2. Click **"Stop"** on the instance.
 3. Confirm in the dialog that appears.
 
-After stopping, the instance moves to the **Stopped** section and its URL is no longer accessible.
+After stopping, the instance status changes to **Stopped** and its URL is no longer accessible.
 
 ### Restart an Instance
 
-1. In My Agents Dashboard, find the instance in the **Stopped** section.
-2. Click **"Restart"** on the instance card.
-3. The instance transitions through **Starting → Running**.
+1. In My Agents, filter by **Stopped** status to find the instance.
+2. Click **"Restart"** on the instance.
+3. The instance transitions through **Starting → Active**.
 
-After restarting, the URL becomes accessible again and the card moves back to the **Running** section.
+After restarting, the URL becomes accessible again.
 
 ### Delete an Instance
 
-1. In My Agents Dashboard, click **"Delete"** on the instance card (Running or Stopped).
+1. In My Agents, click **"Delete"** on the instance you want to remove.
 2. A confirmation dialog appears, requiring you to type the **instance name**.
 3. Enter the exact instance name and click **"Delete"** (red button) to confirm.
 
@@ -136,7 +131,3 @@ After restarting, the URL becomes accessible again and the card moves back to th
 * Deletion is **permanent and cannot be undone**.
 * All instance data will be **permanently deleted**.
 {% endhint %}
-
-### Auto-shutdown
-
-If an instance receives no requests for **24 consecutive hours**, the system automatically stops it and sends an email notification. You can Restart at any time from My Agents Dashboard.

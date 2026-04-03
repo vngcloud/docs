@@ -50,7 +50,7 @@ Khi chọn **BYOK**, bổ sung thêm các thông tin:
 
 | Trường | Mô tả | Ghi chú |
 | --- | --- | --- |
-| **Tên OpenClaw** | Tên định danh instance | Auto-fill theo format `openclaw/{username}`, có thể đổi. Không được trùng tên instance đang Running |
+| **Tên OpenClaw** | Tên định danh instance | Auto-fill theo format `openclaw/{username}`, không thể thay đổi sau khi tạo |
 | **Flavor** | Cấu hình tài nguyên (vCPU × RAM) | Mặc định: `2×4`. Có thể chọn `4×8`, `8×16`... |
 
 **Phần 3 — Cấu hình Channel (Tùy chọn)**
@@ -93,40 +93,35 @@ Nhấn **"Mở OpenClaw"** để truy cập OpenClaw Gateway Dashboard và bắt
 
 ### Truy cập My Agents Dashboard
 
-Tại giao diện Agentbase, chọn **My Agents** từ menu điều hướng. Trang này hiển thị tất cả OpenClaw instances của bạn theo 2 section:
+Tại giao diện Agentbase, chọn **My Agents** từ menu điều hướng. Trang này hiển thị danh sách tất cả OpenClaw instances của bạn. Bạn có thể lọc theo trạng thái để xem các instance đang **Active** hoặc đã **Stopped**.
 
-| Section | Điều kiện | Mô tả |
-| --- | --- | --- |
-| **Running 🟢** | Có ít nhất 1 instance đang chạy | Hiển thị instance card với nút "Open" |
-| **Stopped ⚪** | Có ít nhất 1 instance đã dừng | Hiển thị instance card với nút "Restart" |
-
-Mỗi instance card hiển thị: tên instance, trạng thái, AI model đang dùng, phiên bản, và tags.
+Mỗi instance trong danh sách hiển thị: tên instance, trạng thái, AI model đang dùng, phiên bản, và tags.
 
 ### Mở lại OpenClaw
 
-1. Tại My Agents Dashboard, tìm instance muốn truy cập trong section **Running**.
-2. Click **"Open"** trên instance card.
-3. Hệ thống redirect thẳng vào OpenClaw Gateway Dashboard — không cần qua wizard hay provisioning lại.
+1. Tại My Agents, tìm instance muốn truy cập.
+2. Click **"Open"** trên instance.
+3. Hệ thống redirect thẳng vào trang web admin OpenClaw — không cần qua wizard hay provisioning lại.
 
 ### Dừng Instance (Stop)
 
-1. Tại My Agents Dashboard, tìm instance trong section **Running**.
-2. Click **"Stop"** trên instance card.
+1. Tại My Agents, tìm instance muốn dừng.
+2. Click **"Stop"** trên instance.
 3. Xác nhận trong dialog hiện ra.
 
-Sau khi Stop, instance chuyển sang section **Stopped** và URL của instance không còn accessible.
+Sau khi Stop, trạng thái instance chuyển sang **Stopped** và URL của instance không còn accessible.
 
 ### Khởi động lại Instance (Restart)
 
-1. Tại My Agents Dashboard, tìm instance trong section **Stopped**.
-2. Click **"Restart"** trên instance card.
-3. Instance chuyển qua trạng thái **Starting → Running**.
+1. Tại My Agents, lọc theo trạng thái **Stopped** để tìm instance.
+2. Click **"Restart"** trên instance.
+3. Instance chuyển qua trạng thái **Starting → Active**.
 
-Sau khi Restart, URL hoạt động trở lại và card chuyển lên section **Running**.
+Sau khi Restart, URL hoạt động trở lại.
 
 ### Xóa Instance (Delete)
 
-1. Tại My Agents Dashboard, click **"Delete"** trên instance card (Running hoặc Stopped).
+1. Tại My Agents, click **"Delete"** trên instance muốn xóa.
 2. Hệ thống hiển thị dialog xác nhận yêu cầu nhập **tên instance**.
 3. Nhập đúng tên instance và click **"Delete"** (màu đỏ) để hoàn tất.
 
@@ -134,10 +129,5 @@ Sau khi Restart, URL hoạt động trở lại và card chuyển lên section *
 **Lưu ý khi xóa:**
 
 * Hành động xóa **không thể hoàn tác**.
-* Toàn bộ dữ liệu trên persistent disk của instance sẽ bị **xóa vĩnh viễn**.
-* Quota (1 instance/user) được trả về sau khi xóa, cho phép bạn deploy instance mới.
+* Toàn bộ dữ liệu của instance sẽ bị **xóa vĩnh viễn**.
 {% endhint %}
-
-### Auto-shutdown
-
-Nếu instance không nhận request trong **24 giờ liên tục**, hệ thống tự động dừng instance và gửi email thông báo. Bạn có thể Restart từ My Agents Dashboard bất cứ lúc nào.
