@@ -67,16 +67,16 @@ Sau khi điền đầy đủ thông tin, nhấn **"Bắt đầu thiết lập"**
 
 #### Bước 2: Provisioning — Setting Up Your Workspace
 
-Màn hình **"Setting Up Your Workspace"** hiển thị tiến độ provisioning theo 4 tasks:
+Màn hình **"Setting Up Your Workspace"** hiển thị icon xoay trong khi hệ thống tự động thực hiện 4 tasks provisioning:
 
-| Task | Mô tả | Trạng thái |
-| --- | --- | --- |
-| **OpenClaw Token** | Tạo Identity và token xác thực cho instance | ◌ Đang xử lý / ✓ Hoàn thành / ✗ Lỗi |
-| **AI Service Account** | Tạo IAM Service Account kết nối MaaS | ◌ Đang xử lý / ✓ Hoàn thành / ✗ Lỗi |
-| **AI Service Token** | Lấy access token cho model AI đã chọn | ◌ Đang xử lý / ✓ Hoàn thành / ✗ Lỗi |
-| **Cloud Computer** | Khởi động container OpenClaw | ◌ Đang xử lý / ✓ Hoàn thành / ✗ Lỗi |
+| Task | Mô tả |
+| --- | --- |
+| **OpenClaw Token** | Tạo Identity và token xác thực cho instance |
+| **AI Service Account** | Tạo IAM Service Account kết nối MaaS |
+| **AI Service Token** | Lấy access token cho model AI đã chọn |
+| **Cloud Computer** | Khởi động container OpenClaw |
 
-Hệ thống tự động kiểm tra trạng thái mỗi 3 giây. Khi tất cả 4 tasks hoàn thành, bạn được tự động chuyển đến màn hình Deploy Success.
+Khi provisioning hoàn tất, bạn được tự động chuyển đến màn hình Deploy Success.
 
 {% hint style="info" %}
 **Nếu provisioning thất bại:** Hệ thống hiển thị trạng thái lỗi kèm link **Troubleshoot** và nút **Retry**. Instance lỗi không được tính vào quota của bạn.
@@ -89,7 +89,7 @@ Sau khi provisioning hoàn tất, màn hình Deploy Success hiển thị thông 
 | Thông tin | Mô tả |
 | --- | --- |
 | **Instance Name** | Tên instance đã tạo (ví dụ: `openclaw-nguyenvana-001`) |
-| **Trạng thái** | 🟢 ONLINE |
+| **Trạng thái** | 🟢 Active |
 | **AI Model** | Model và nguồn AI đang dùng |
 | **OpenClaw Gateway URL** | Link truy cập OpenClaw Gateway Dashboard |
 | **Thời gian tạo** | Timestamp |

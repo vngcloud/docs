@@ -67,16 +67,16 @@ Once all fields are filled, click **"Start Setup"** to begin provisioning.
 
 #### Step 2: Provisioning — Setting Up Your Workspace
 
-The **"Setting Up Your Workspace"** screen shows provisioning progress across 4 tasks:
+The **"Setting Up Your Workspace"** screen displays a loading spinner while the system automatically runs 4 provisioning tasks:
 
-| Task | Description | Status |
-| --- | --- | --- |
-| **OpenClaw Token** | Creates an Identity and authentication token for the instance | ◌ In Progress / ✓ Done / ✗ Failed |
-| **AI Service Account** | Creates an IAM Service Account connected to MaaS | ◌ In Progress / ✓ Done / ✗ Failed |
-| **AI Service Token** | Retrieves the access token for the selected AI model | ◌ In Progress / ✓ Done / ✗ Failed |
-| **Cloud Computer** | Starts the OpenClaw container | ◌ In Progress / ✓ Done / ✗ Failed |
+| Task | Description |
+| --- | --- |
+| **OpenClaw Token** | Creates an Identity and authentication token for the instance |
+| **AI Service Account** | Creates an IAM Service Account connected to MaaS |
+| **AI Service Token** | Retrieves the access token for the selected AI model |
+| **Cloud Computer** | Starts the OpenClaw container |
 
-The system polls status every 3 seconds. Once all 4 tasks are complete, you are automatically redirected to the Deploy Success screen.
+Once provisioning is complete, you are automatically redirected to the Deploy Success screen.
 
 {% hint style="info" %}
 **If provisioning fails:** The system displays an error state with a **Troubleshoot** link and a **Retry** button. Failed instances do not count against your quota.
@@ -89,7 +89,7 @@ Once provisioning is complete, the Deploy Success screen shows your instance det
 | Field | Description |
 | --- | --- |
 | **Instance Name** | The name of your created instance (e.g. `openclaw/username`) |
-| **Status** | 🟢 ONLINE |
+| **Status** | 🟢 Active |
 | **AI Model** | The model and AI source in use |
 | **OpenClaw Gateway URL** | Link to your OpenClaw Gateway Dashboard |
 | **Created At** | Timestamp |
