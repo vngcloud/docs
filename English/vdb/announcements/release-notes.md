@@ -4,6 +4,18 @@ Summary of updates and new features across all engines in the vDB service.
 
 ---
 
+## April 03, 2026 - vDB PostgreSQL Cluster (RDS) <a href="#april_03_2026_postgresql_cluster" id="april_03_2026_postgresql_cluster"></a>
+
+GreenNode has released the PostgreSQL Cluster feature for the vDB Relational service, enabling PostgreSQL deployment with a High Availability architecture, automatic Failover, and flexible scaling for production workloads.
+
+* High Availability architecture: Supports 2 to 10 nodes with automatic failover when the Writer encounters an issue.
+* Two separate RW & RO Endpoints: easily scale out heavy-read workloads.
+* Built-in vBackup integration: easily configure Backup Policies and Vault Lock in Backup Center.
+* Popular extensions supported: pgvector, timescaledb, postgis, pg_stat_statements,... suitable for use cases like VectorDB for AI, high-performance real-time analytics, ...
+* Learn more at [PostgreSQL Cluster](../relational-database-service-rds/postgresql/postgresql-cluster.md).
+
+---
+
 ## April 08, 2025 - vDB OpenSearch Cluster (ODS) <a href="#april_08_2025_ods" id="april_08_2025_ods"></a>
 
 GreenNode has released the first version of the vDB OpenSearch service, bringing you a more powerful and efficient log management and data search experience than ever before!

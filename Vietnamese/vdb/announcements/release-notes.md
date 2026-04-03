@@ -4,7 +4,21 @@ Tổng hợp các bản cập nhật và tính năng mới của tất cả các
 
 ---
 
-## April 08, 2025 - vDB OpenSearch Cluster (ODS) <a href="#april_08_2025_ods" id="april_08_2025_ods"></a>
+## April 03, 2026 - vDB PostgreSQL Cluster (RDS) <a href="#april_03_2026_postgresql_cluster" id="april_03_2026_postgresql_cluster"></a>
+
+GreenNode ra mắt tính năng PostgreSQL Cluster cho dịch vụ vDB Relational, cho phép triển khai PostgreSQL với kiến trúc High Availability, tự động Failover và khả năng scale linh hoạt cho môi trường production.
+
+* Kiến trúc High Availability: Hỗ trợ từ 2 đến 10 nodes, tự động failover khi Writer gặp sự cố.
+* Hai Endpoint RW & RO riêng biệt: dễ dàng scale out các heavy-read workload.
+* Tích hợp sẵn với vBackup: dễ dàng thiết lập các Backup Policy, Vault Lock tại Backup Center.
+* Hỗ trợ các extension phổ biến: pgvector, timescaledb, postgis, pg_stat_statements,... phù hợp với nhiều usecase như VectorDB for AI, high-performance real-time analytics, ...
+* Tìm hiểu thêm tại [PostgreSQL Cluster](../relational-database-service-rds/postgresql/postgresql-cluster.md).
+
+---
+
+
+
+## April 08, 2025 - vDB OpenSearch Cluster (ODS) `<a href="#april_08_2025_ods" id="april_08_2025_ods"></a>`
 
 GreenNode vừa ra phiên bản đầu tiên cho dịch vụ vDB OpenSearch, mang đến cho bạn trải nghiệm quản lý logs và tìm kiếm dữ liệu mạnh mẽ và hiệu quả hơn bao giờ hết!
 
@@ -22,7 +36,7 @@ Hãy liên hệ với chúng tôi để được tư vấn và hỗ trợ thêm!
 
 ---
 
-## Oct 02, 2024 - vDB Kafka Cluster (KDS) <a href="#oct_02_2024_kds" id="oct_02_2024_kds"></a>
+## Oct 02, 2024 - vDB Kafka Cluster (KDS) `<a href="#oct_02_2024_kds" id="oct_02_2024_kds"></a>`
 
 vDB Kafka Cluster chính thức ra mắt, đánh dấu một bước tiến quan trọng trong việc tối ưu hóa quy trình xử lý dữ liệu. vDB Kafka Cluster giúp bạn phân tích dữ liệu và đưa ra quyết định kinh doanh một cách nhanh chóng và chính xác hơn. Bên cạnh đó, giao diện người dùng trực quan và dễ sử dụng sẽ giúp bạn làm quen với công cụ một cách nhanh chóng.
 
