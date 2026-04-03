@@ -31,9 +31,8 @@ When selecting **Cluster** as the Deployment Type, the label changes from "Datab
 
 **Restore from Backup (optional):**
 
-When selecting **Cluster** as the Deployment Type, the system also displays an **IMAGE** section that allows you to restore the cluster from an existing backup:
+When selecting **Cluster** as the Deployment Type, the system also displays a **Backup Image** section that allows you to restore the cluster from an existing backup:
 
-* Select the **Backup Image** tab to view the list of backups from Backup Center.
 * Expand a backup item to view **restore points**.
 * Select a restore point if you want to create a cluster with data from that backup.
 * If no restore point is selected, the cluster will be created with an empty database.
@@ -97,10 +96,10 @@ Backup Settings are **mandatory** when creating a PostgreSQL Cluster. You must s
 {% hint style="warning" %}
 **If no Backup Location is available:**
 
-If your account has no Backup Location in Available status (Product = vDB), the Backup Location dropdown will appear empty with a red border and a message: **"Please create a new backup location."** You need to click the **"Click here to manage your Backup Locations"** link to open Backup Center and create a new location before continuing to create the cluster.
+If your account has no Backup Location in Available status, the Backup Location dropdown will appear with a red border and an error message. You need to click the link in the message to open Backup Center and create a new location before continuing to create the cluster.
 {% endhint %}
 
-If you don't have a Backup Policy yet, you can click the **"Click here to manage your Backup Policies"** link to open Backup Center and create a new one.
+If you don't have a Backup Policy yet, you can click the link to open Backup Center and create a new one.
 
 {% hint style="info" %}
 **Note:** The Backup Location **cannot be changed** after the cluster has been created. Each cluster is permanently bound to a single Backup Location, so choose the appropriate location from the start.
@@ -150,7 +149,6 @@ When clicking on a cluster in the list, the detail page shows the following info
 | **Configuration** | Flavor information (vCPU, RAM) and storage (type, size, disk usage) |
 | **Connectivity & Security** | Connection endpoints and security settings |
 | **Backup** | Backup history, create manual backup, view backup information |
-| **Replication** | Replication status and lag between Writer and Readers |
 | **History** | Activity logs |
 | **Monitor** | Metrics and monitoring charts |
 
@@ -161,7 +159,7 @@ When clicking on a cluster in the list, the detail page shows the following info
 The **Back up now** button is displayed directly on the action bar of the cluster detail page (alongside Reboot, Edit Number of Nodes, Resize IOPS, Resize Storage Size), not inside the More Actions (⋮) menu.
 
 1. On the cluster detail page, click **Back up now** on the action bar.
-2. The system displays a confirmation dialog: _"This will create a full snapshot of [cluster name]"_.
+2. The system displays a confirmation dialog.
 3. Click **Confirm** to start creating the backup.
 
 After confirmation, the system triggers the creation of a Full Snapshot and displays a toast notification. The new backup appears in the **Backup** tab with **In Progress** status, transitioning to **Completed** when done.
@@ -169,7 +167,7 @@ After confirmation, the system triggers the creation of a Full Snapshot and disp
 {% hint style="warning" %}
 **Note:**
 
-* The **Back up now** button will be **disabled** when a backup job (Auto or Manual) is currently running. Hovering over the button will show a tooltip: _"A backup job is currently in progress"_.
+* The **Back up now** button will be **disabled** when a backup job (Auto or Manual) is currently running. Hovering over the button will show a tooltip.
 * If the account runs out of quota or is locked, the system returns an error and does not automatically retry.
 {% endhint %}
 
@@ -241,7 +239,7 @@ The system will create a **Full Snapshot** of the database. The new backup appea
 Restoring from a backup will **create a new cluster** (it does not restore over the existing cluster):
 
 1. In the **Backup** tab, click **Restore** on the backup you want to restore.
-2. Or when creating a new cluster, select the restore point in the **IMAGE** section in Step 1.
+2. Or when creating a new cluster, select the restore point in the **Backup Image** section in Step 1.
 3. Configure the parameters for the new cluster (Storage Size must be >= Backup Size).
 4. Complete the cluster creation.
 
@@ -263,7 +261,6 @@ The vDB Backup page only allows **viewing** the backup list. To perform full man
 1. On the cluster detail page, click **More Actions (⋮)** > **Delete**.
 2. The system displays a confirmation dialog with the following components:
    * **"Create final backup?" checkbox** (optional): Check this if you want to create a final backup before deletion.
-   * **Acknowledgment checkbox:** _"I acknowledge that upon instance deletion, manual backups and automated backups will no longer be available"_ — must be checked to proceed.
    * **Confirmation field:** Enter **`delete`** to activate the Delete button.
 3. Click **Delete** (red) to complete.
 
@@ -271,8 +268,7 @@ The vDB Backup page only allows **viewing** the backup list. To perform full man
 **If the cluster no longer has a Backup Database in Backup Center:**
 
 * The "Create final backup?" checkbox will be **disabled** and cannot be selected.
-* The acknowledge checkbox will not be displayed.
-* The system displays a note: _"No backup database found. Final backup is unavailable."_
+* The system displays a notification.
 * You still need to enter **`delete`** to confirm.
 {% endhint %}
 
