@@ -33,7 +33,7 @@ Chọn nguồn AI cho OpenClaw instance:
 | **BYOK — Nhập API Key của bạn** | Dùng API key từ provider bên ngoài | Cần API key hợp lệ |
 
 {% hint style="info" %}
-**GreenNode MaaS:** Model mặc định là **Qwen-3-27b**.
+**GreenNode MaaS:** Model mặc định là **qwen3-5-27b**.
 {% endhint %}
 
 Khi chọn **BYOK**, bổ sung thêm các thông tin:
@@ -61,25 +61,16 @@ Cho phép kết nối OpenClaw với Telegram để chat ngay sau khi deploy.
 | --- | --- | --- |
 | **Channel Provider** | Nền tảng nhắn tin | Hiện hỗ trợ: Telegram, Zalo |
 | **Mode** | Chế độ kết nối | Pairing (mặc định) hoặc Allow List |
-| **Bot Token** | Telegram Bot Token | Không bắt buộc. Có thể cấu hình sau tại Settings → Config |
+| **Bot Token** | Bot Token kết nối channel | Không bắt buộc. Có thể cấu hình sau tại Settings → Config |
 
 Sau khi điền đầy đủ thông tin, nhấn **"Bắt đầu thiết lập"** để bắt đầu provisioning.
 
 #### Bước 2: Provisioning — Setting Up Your Workspace
 
-Màn hình **"Setting Up Your Workspace"** hiển thị icon xoay trong khi hệ thống tự động thực hiện 4 tasks provisioning:
-
-| Task | Mô tả |
-| --- | --- |
-| **OpenClaw Token** | Tạo Identity và token xác thực cho instance |
-| **AI Service Account** | Tạo IAM Service Account kết nối MaaS |
-| **AI Service Token** | Lấy access token cho model AI đã chọn |
-| **Cloud Computer** | Khởi động container OpenClaw |
-
-Khi provisioning hoàn tất, bạn được tự động chuyển đến màn hình Deploy Success.
+Màn hình **"Setting Up Your Workspace"** hiển thị icon xoay trong khi hệ thống tự động chuẩn bị môi trường. Sau khi hoàn tất, bạn nhận được **Gateway Token** và **URL trang web admin OpenClaw** để đăng nhập và sử dụng ngay.
 
 {% hint style="info" %}
-**Nếu provisioning thất bại:** Hệ thống hiển thị trạng thái lỗi kèm link **Troubleshoot** và nút **Retry**. Instance lỗi không được tính vào quota của bạn.
+**Nếu provisioning thất bại:** Hệ thống hiển thị thông báo lỗi kèm nút **Retry**.
 {% endhint %}
 
 #### Bước 3: Deploy Success
@@ -88,10 +79,10 @@ Sau khi provisioning hoàn tất, màn hình Deploy Success hiển thị thông 
 
 | Thông tin | Mô tả |
 | --- | --- |
-| **Instance Name** | Tên instance đã tạo (ví dụ: `openclaw-nguyenvana-001`) |
+| **Instance Name** | Tên instance đã tạo (ví dụ: `openclaw/username`) |
 | **Trạng thái** | 🟢 Active |
-| **AI Model** | Model và nguồn AI đang dùng |
-| **OpenClaw Gateway URL** | Link truy cập OpenClaw Gateway Dashboard |
+| **Gateway Token** | Token đăng nhập vào trang web admin OpenClaw |
+| **OpenClaw Gateway URL** | Link truy cập trang web admin OpenClaw |
 | **Thời gian tạo** | Timestamp |
 
 Nhấn **"Mở OpenClaw"** để truy cập OpenClaw Gateway Dashboard và bắt đầu sử dụng ngay.

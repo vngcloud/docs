@@ -33,7 +33,7 @@ Select the AI source for your OpenClaw instance:
 | **BYOK — Bring Your Own Key** | Use an API key from an external provider | Valid API key required |
 
 {% hint style="info" %}
-**GreenNode MaaS:** The default model is **Qwen-3-27b**.
+**GreenNode MaaS:** The default model is **qwen3-5-27b**.
 {% endhint %}
 
 When selecting **BYOK**, provide the following additional details:
@@ -61,25 +61,16 @@ Connect OpenClaw to a messaging platform so you can chat right after deployment.
 | --- | --- | --- |
 | **Channel Provider** | Messaging platform | Supported: Telegram, Zalo |
 | **Mode** | Connection mode | Pairing (default) or Allow List |
-| **Bot Token** | Telegram Bot Token | Optional. Can be configured later at Settings → Config |
+| **Bot Token** | Channel bot token | Optional. Can be configured later at Settings → Config |
 
 Once all fields are filled, click **"Start Setup"** to begin provisioning.
 
 #### Step 2: Provisioning — Setting Up Your Workspace
 
-The **"Setting Up Your Workspace"** screen displays a loading spinner while the system automatically runs 4 provisioning tasks:
-
-| Task | Description |
-| --- | --- |
-| **OpenClaw Token** | Creates an Identity and authentication token for the instance |
-| **AI Service Account** | Creates an IAM Service Account connected to MaaS |
-| **AI Service Token** | Retrieves the access token for the selected AI model |
-| **Cloud Computer** | Starts the OpenClaw container |
-
-Once provisioning is complete, you are automatically redirected to the Deploy Success screen.
+The **"Setting Up Your Workspace"** screen displays a loading spinner while the system automatically prepares your environment. Once complete, you receive a **Gateway Token** and the **OpenClaw web admin URL** to log in and start using immediately.
 
 {% hint style="info" %}
-**If provisioning fails:** The system displays an error state with a **Troubleshoot** link and a **Retry** button. Failed instances do not count against your quota.
+**If provisioning fails:** The system displays an error message with a **Retry** button.
 {% endhint %}
 
 #### Step 3: Deploy Success
@@ -90,8 +81,8 @@ Once provisioning is complete, the Deploy Success screen shows your instance det
 | --- | --- |
 | **Instance Name** | The name of your created instance (e.g. `openclaw/username`) |
 | **Status** | 🟢 Active |
-| **AI Model** | The model and AI source in use |
-| **OpenClaw Gateway URL** | Link to your OpenClaw Gateway Dashboard |
+| **Gateway Token** | Token used to log in to the OpenClaw web admin |
+| **OpenClaw Gateway URL** | Link to your OpenClaw web admin |
 | **Created At** | Timestamp |
 
 Click **"Open OpenClaw"** to access your OpenClaw Gateway Dashboard and start using it immediately.
