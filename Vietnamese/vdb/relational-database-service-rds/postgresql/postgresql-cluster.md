@@ -16,14 +16,14 @@ Trong mô hình PostgreSQL Cluster, các node được phân vai trò rõ ràng:
 
 ### So sánh Single Node và Cluster
 
-| Đặc điểm | Single Node | Cluster |
-| --- | --- | --- |
-| **Kiến trúc** | 1 node duy nhất | 1 Writer + N Readers |
-| **High Availability** | Không | Có (Automatic Failover) |
-| **Scale Read** | Không | Có (Read traffic phân bổ đến Readers) |
-| **Backup** | Automatic daily backup (cơ chế cũ) | Tích hợp Backup Center (Auto Backup + Manual Backup) |
-| **Số lượng node** | 1 | 2 - 10 |
-| **Use Case** | Development, Testing, ứng dụng nhỏ | Production, Mission-critical, ứng dụng yêu cầu uptime cao |
+| Đặc điểm              | Single Node                        | Cluster                                                   |
+| --------------------- | ---------------------------------- | --------------------------------------------------------- |
+| **Kiến trúc**         | 1 node duy nhất                    | 1 Writer + N Readers                                      |
+| **High Availability** | Không                              | Có (Automatic Failover)                                   |
+| **Scale Read**        | Không                              | Có (Read traffic phân bổ đến Readers)                     |
+| **Backup**            | Automatic daily backup (cơ chế cũ) | Tích hợp Backup Center (Auto Backup + Manual Backup)      |
+| **Số lượng node**     | 1                                  | 2 - 10                                                    |
+| **Use Case**          | Development, Testing, ứng dụng nhỏ | Production, Mission-critical, ứng dụng yêu cầu uptime cao |
 
 ### Khi nào nên sử dụng PostgreSQL Cluster?
 
@@ -43,6 +43,8 @@ Trong mô hình PostgreSQL Cluster, các node được phân vai trò rõ ràng:
 
 ## Kiến trúc PostgreSQL Cluster
 
+<figure><img src="../../../.gitbook/assets/vDB Postgres Cluster Architecture Diagram.png" alt=""><figcaption></figcaption></figure>
+
 **Các thành phần chính:**
 
 * **Writer Node (Primary)**: Xử lý tất cả write operations. Mỗi cluster chỉ có duy nhất 1 Writer.
@@ -51,12 +53,12 @@ Trong mô hình PostgreSQL Cluster, các node được phân vai trò rõ ràng:
 
 **Phân bổ vai trò theo số lượng node:**
 
-| Số lượng Node | Phân bổ vai trò |
-| --- | --- |
-| 2 | 1 Writer + 1 Reader |
-| 3 | 1 Writer + 2 Readers |
-| 5 | 1 Writer + 4 Readers |
-| 10 | 1 Writer + 9 Readers |
+| Số lượng Node | Phân bổ vai trò      |
+| ------------- | -------------------- |
+| 2             | 1 Writer + 1 Reader  |
+| 3             | 1 Writer + 2 Readers |
+| 5             | 1 Writer + 4 Readers |
+| 10            | 1 Writer + 9 Readers |
 
 ***
 
@@ -81,11 +83,11 @@ PostgreSQL Cluster được tích hợp với **Backup Center (vBackup)**, cung 
 
 ### Giới hạn hiện tại
 
-| Giới hạn | Mô tả |
-| --- | --- |
-| **Số lượng node** | Tối thiểu 2, tối đa 10 node mỗi cluster |
-| **Writer node** | Luôn có đúng 1 Writer trong mỗi cluster |
-| **Database Proxy** | Chưa hỗ trợ trong phiên bản hiện tại (Coming Soon - Phase 2) |
+| Giới hạn             | Mô tả                                                                   |
+| -------------------- | ----------------------------------------------------------------------- |
+| **Số lượng node**    | Tối thiểu 2, tối đa 10 node mỗi cluster                                 |
+| **Writer node**      | Luôn có đúng 1 Writer trong mỗi cluster                                 |
+| **Database Proxy**   | Chưa hỗ trợ trong phiên bản hiện tại (Coming Soon - Phase 2)            |
 | **Backup đồng thời** | Chỉ cho phép 1 job backup/restore chạy tại 1 thời điểm trên mỗi cluster |
 
 ### Lưu ý quan trọng
