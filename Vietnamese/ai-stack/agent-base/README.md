@@ -1,16 +1,16 @@
-# AgentBase
+# Agentbase
 
-## AgentBase là gì?
+## Agentbase là gì?
 
-**GreenNode AgentBase** là nền tảng hạ tầng chuyên biệt dành cho AI Agent — giúp bạn đưa ý tưởng từ code đến production mà không cần lo về server, scaling hay vận hành.
+**GreenNode Agentbase** là nền tảng hạ tầng chuyên biệt dành cho AI Agent — giúp bạn đưa ý tưởng từ code đến production mà không cần lo về server, scaling hay vận hành.
 
-Thay vì mất hàng tuần tự dựng infra, bạn chỉ cần tập trung vào điều quan trọng nhất: **logic của agent**. AgentBase lo toàn bộ phần còn lại.
+Thay vì mất hàng tuần tự dựng infra, bạn chỉ cần tập trung vào điều quan trọng nhất: **logic của agent**. Agentbase lo toàn bộ phần còn lại.
 
-> *"AgentBase = Vercel dành riêng cho AI Agent"*
+> *"Agentbase = Vercel dành riêng cho AI Agent"*
 
 ***
 
-## AgentBase giải quyết vấn đề gì?
+## Agentbase giải quyết vấn đề gì?
 
 Xây dựng và triển khai AI Agent thực tế thường gặp những rào cản lớn:
 
@@ -19,7 +19,7 @@ Xây dựng và triển khai AI Agent thực tế thường gặp những rào c
 * Agent không có bộ nhớ — mỗi cuộc hội thoại bắt đầu lại từ đầu
 * Khó theo dõi logs, metrics khi agent chạy trên production
 
-AgentBase giải quyết tất cả những vấn đề này trong một nền tảng duy nhất.
+Agentbase giải quyết tất cả những vấn đề này trong một nền tảng duy nhất.
 
 ***
 
@@ -27,7 +27,7 @@ AgentBase giải quyết tất cả những vấn đề này trong một nền t
 
 ### Triển khai nhanh, không lo infra
 
-Deploy agent lên cloud chỉ trong vài phút. AgentBase tự động quản lý vòng đời container, autoscaling theo tải thực tế và zero-downtime deployment — bạn không cần can thiệp vào hạ tầng.
+Deploy agent lên cloud chỉ trong vài phút. Agentbase tự động quản lý vòng đời container, autoscaling theo tải thực tế và zero-downtime deployment — bạn không cần can thiệp vào hạ tầng.
 
 ### Bảo mật credential tự động
 
@@ -35,7 +35,7 @@ Mọi API key và token kết nối với dịch vụ bên ngoài (LLM, Slack, G
 
 ### Agent có trí nhớ
 
-AgentBase tích hợp sẵn Memory Service giúp agent ghi nhớ lịch sử hội thoại và học từ các tương tác trước — tạo trải nghiệm cá nhân hóa thực sự cho từng người dùng.
+Agentbase tích hợp sẵn Memory Service giúp agent ghi nhớ lịch sử hội thoại và học từ các tương tác trước — tạo trải nghiệm cá nhân hóa thực sự cho từng người dùng.
 
 ### Kết nối sẵn với GreenNode MaaS
 
@@ -49,7 +49,7 @@ Logs, metrics CPU/RAM, lịch sử request — tất cả có sẵn trong dashbo
 
 ## Dành cho ai?
 
-| Đối tượng | AgentBase mang lại |
+| Đối tượng | Agentbase mang lại |
 | --- | --- |
 | **AI Engineer / Developer** | Tập trung viết logic agent, không mất thời gian quản lý infra |
 | **Startup / Product Team** | Ra mắt AI product nhanh hơn, tiết kiệm chi phí vận hành |
@@ -57,7 +57,7 @@ Logs, metrics CPU/RAM, lịch sử request — tất cả có sẵn trong dashbo
 
 ***
 
-## Bắt đầu với AgentBase
+## Bắt đầu với Agentbase
 
 | Tôi muốn... | Hướng đến |
 | --- | --- |

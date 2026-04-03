@@ -1,6 +1,6 @@
 # Triển khai và Quản lý OpenClaw 1-Click
 
-OpenClaw 1-Click cho phép triển khai AI Agent cá nhân trên GreenNode AgentBase trong 40–60 giây, tự động kết nối GreenNode MaaS mà không cần cấu hình thủ công.
+OpenClaw 1-Click cho phép triển khai AI Agent cá nhân trên GreenNode Agentbase trong 40–60 giây, tự động kết nối GreenNode MaaS mà không cần cấu hình thủ công.
 
 Để tìm hiểu thêm về khái niệm, kiến trúc và so sánh các tùy chọn deploy, vui lòng tham khảo tại [OpenClaw 1-Click](openclaw-1-click.md).
 
@@ -12,7 +12,7 @@ OpenClaw 1-Click cho phép triển khai AI Agent cá nhân trên GreenNode Agent
 
 Bạn truy cập Agent Marketplace theo 2 cách:
 
-* **Cách 1**: Truy cập trang chủ GreenNode tại [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/). Tại giao diện chính, tìm đến **AI Stack** và chọn **AgentBase** → **Agent Marketplace**.
+* **Cách 1**: Truy cập trang chủ GreenNode tại [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/). Tại giao diện chính, tìm đến **AI Stack** và chọn **Agentbase** → **Agent Marketplace**.
 * **Cách 2**: Truy cập trực tiếp tại [https://aiplatform.console.vngcloud.vn/agent-marketplace](https://aiplatform.console.vngcloud.vn/agent-marketplace).
 
 ### Deploy OpenClaw Instance
@@ -102,7 +102,7 @@ Nhấn **"Mở OpenClaw"** để truy cập OpenClaw Gateway Dashboard và bắt
 
 ### Truy cập My Agents Dashboard
 
-Tại giao diện AgentBase, chọn **My Agents** từ menu điều hướng. Trang này hiển thị tất cả OpenClaw instances của bạn theo 2 section:
+Tại giao diện Agentbase, chọn **My Agents** từ menu điều hướng. Trang này hiển thị tất cả OpenClaw instances của bạn theo 2 section:
 
 | Section | Điều kiện | Mô tả |
 | --- | --- | --- |

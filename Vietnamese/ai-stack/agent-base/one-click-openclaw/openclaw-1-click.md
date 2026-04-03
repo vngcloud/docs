@@ -2,22 +2,22 @@
 
 ## Tổng quan
 
-**OpenClaw 1-Click** là tính năng cho phép triển khai AI Agent cá nhân dựa trên OpenClaw ngay từ **Agent Marketplace** của GreenNode AgentBase — không cần kiến thức kỹ thuật, không cần cài đặt thủ công, chỉ trong **40–60 giây**.
+**OpenClaw 1-Click** là tính năng cho phép triển khai AI Agent cá nhân dựa trên OpenClaw ngay từ **Agent Marketplace** của GreenNode Agentbase — không cần kiến thức kỹ thuật, không cần cài đặt thủ công, chỉ trong **40–60 giây**.
 
 ### OpenClaw là gì?
 
-[OpenClaw](https://open.claw.cloud/) là một open-source AI agent có khả năng tự động hoàn thành các tác vụ: duyệt web, quản lý file, chạy lệnh, viết code, và tích hợp messaging (Telegram, Zalo). Thay vì cài đặt OpenClaw trên máy tính cá nhân, GreenNode AgentBase cho phép bạn chạy OpenClaw trên cloud với đầy đủ tài nguyên và kết nối sẵn với GreenNode MaaS (Model-as-a-Service).
+[OpenClaw](https://open.claw.cloud/) là một open-source AI agent có khả năng tự động hoàn thành các tác vụ: duyệt web, quản lý file, chạy lệnh, viết code, và tích hợp messaging (Telegram, Zalo). Thay vì cài đặt OpenClaw trên máy tính cá nhân, GreenNode Agentbase cho phép bạn chạy OpenClaw trên cloud với đầy đủ tài nguyên và kết nối sẵn với GreenNode MaaS (Model-as-a-Service).
 
 Để khởi tạo và quản lý OpenClaw instance, vui lòng tham khảo hướng dẫn [tại đây](trien-khai-openclaw-1-click.md).
 
 ### So sánh cài thủ công và 1-Click Deploy
 
-| Tiêu chí | Tự cài OpenClaw (Local) | OpenClaw 1-Click (AgentBase) |
+| Tiêu chí | Tự cài OpenClaw (Local) | OpenClaw 1-Click (Agentbase) |
 | --- | --- | --- |
 | **Thời gian setup** | 30–60 phút | 40–60 giây |
 | **Yêu cầu kỹ thuật** | Cần kiến thức DevOps | Không cần |
 | **Cấu hình API key** | Thủ công | Tự động kết nối GreenNode MaaS |
-| **Hạ tầng** | Máy tính cá nhân | Cloud (GreenNode AgentBase) |
+| **Hạ tầng** | Máy tính cá nhân | Cloud (GreenNode Agentbase) |
 | **Tích hợp messaging** | Tự cấu hình | Telegram, Zalo — cấu hình ngay khi deploy |
 | **Quản lý instance** | Tự quản lý | Qua My Agents Dashboard |
 
@@ -31,14 +31,14 @@
 
 ## Kiến trúc OpenClaw 1-Click
 
-Khi bạn nhấn Deploy, hệ thống AgentBase tự động thực hiện 4 bước provisioning:
+Khi bạn nhấn Deploy, hệ thống Agentbase tự động thực hiện 4 bước provisioning:
 
 | Bước | Task | Mô tả |
 | --- | --- | --- |
 | 1 | **OpenClaw Token** | Tạo Identity và token xác thực cho instance |
 | 2 | **AI Service Account** | Tạo IAM Service Account kết nối GreenNode MaaS |
 | 3 | **AI Service Token** | Lấy access token cho model AI đã chọn |
-| 4 | **Cloud Computer** | Khởi động container OpenClaw trên AgentBase Runtime |
+| 4 | **Cloud Computer** | Khởi động container OpenClaw trên Agentbase Runtime |
 
 Sau khi hoàn tất, bạn nhận được **OpenClaw Gateway URL** để truy cập portal chat ngay lập tức.
 

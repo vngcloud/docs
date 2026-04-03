@@ -1,6 +1,6 @@
 # Deploy & Manage OpenClaw 1-Click
 
-OpenClaw 1-Click lets you deploy a personal AI Agent on GreenNode AgentBase in 40–60 seconds, automatically connected to GreenNode MaaS with no manual configuration required.
+OpenClaw 1-Click lets you deploy a personal AI Agent on GreenNode Agentbase in 40–60 seconds, automatically connected to GreenNode MaaS with no manual configuration required.
 
 For an overview of concepts, architecture, and deployment options, see [OpenClaw 1-Click](openclaw-1-click.md).
 
@@ -12,7 +12,7 @@ For an overview of concepts, architecture, and deployment options, see [OpenClaw
 
 You can access the Agent Marketplace in two ways:
 
-* **Option 1**: Go to the GreenNode homepage at [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/). From the main dashboard, navigate to **AI Stack** and select **AgentBase** → **Agent Marketplace**.
+* **Option 1**: Go to the GreenNode homepage at [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/). From the main dashboard, navigate to **AI Stack** and select **Agentbase** → **Agent Marketplace**.
 * **Option 2**: Go directly to [https://aiplatform.console.vngcloud.vn/agent-marketplace](https://aiplatform.console.vngcloud.vn/agent-marketplace).
 
 ### Deploy an OpenClaw Instance
@@ -102,7 +102,7 @@ Click **"Open OpenClaw"** to access your OpenClaw Gateway Dashboard and start us
 
 ### Access My Agents Dashboard
 
-In the AgentBase interface, select **My Agents** from the navigation menu. This page displays all your OpenClaw instances in two sections:
+In the Agentbase interface, select **My Agents** from the navigation menu. This page displays all your OpenClaw instances in two sections:
 
 | Section | Condition | Description |
 | --- | --- | --- |

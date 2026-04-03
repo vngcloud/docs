@@ -1,16 +1,16 @@
-# AgentBase
+# Agentbase
 
-## What is AgentBase?
+## What is Agentbase?
 
-**GreenNode AgentBase** is a purpose-built infrastructure platform for AI Agents — helping you go from idea to production without worrying about servers, scaling, or operations.
+**GreenNode Agentbase** is a purpose-built infrastructure platform for AI Agents — helping you go from idea to production without worrying about servers, scaling, or operations.
 
-Instead of spending weeks setting up infrastructure, you can focus on what matters most: **your agent's logic**. AgentBase handles everything else.
+Instead of spending weeks setting up infrastructure, you can focus on what matters most: **your agent's logic**. Agentbase handles everything else.
 
-> *"AgentBase = Vercel, purpose-built for AI Agents"*
+> *"Agentbase = Vercel, purpose-built for AI Agents"*
 
 ***
 
-## What problem does AgentBase solve?
+## What problem does Agentbase solve?
 
 Building and deploying real-world AI Agents comes with significant challenges:
 
@@ -19,7 +19,7 @@ Building and deploying real-world AI Agents comes with significant challenges:
 * Agents with no memory — every conversation starts from scratch
 * Difficult to monitor logs and metrics once an agent is in production
 
-AgentBase addresses all of these challenges in a single platform.
+Agentbase addresses all of these challenges in a single platform.
 
 ***
 
@@ -27,7 +27,7 @@ AgentBase addresses all of these challenges in a single platform.
 
 ### Deploy fast, forget the infra
 
-Ship your agent to the cloud in minutes. AgentBase automatically manages the container lifecycle, scales based on real traffic, and supports zero-downtime deployments — no infrastructure intervention needed.
+Ship your agent to the cloud in minutes. Agentbase automatically manages the container lifecycle, scales based on real traffic, and supports zero-downtime deployments — no infrastructure intervention needed.
 
 ### Automatic credential security
 
@@ -35,7 +35,7 @@ Every API key and token used to connect with external services (LLMs, Slack, Goo
 
 ### Agents with memory
 
-AgentBase includes a built-in Memory Service that lets agents remember conversation history and learn from past interactions — delivering a truly personalized experience for each user.
+Agentbase includes a built-in Memory Service that lets agents remember conversation history and learn from past interactions — delivering a truly personalized experience for each user.
 
 ### Pre-connected to GreenNode MaaS
 
@@ -49,7 +49,7 @@ Logs, CPU/RAM metrics, request history — all available in a single dashboard. 
 
 ## Who is it for?
 
-| Audience | What AgentBase delivers |
+| Audience | What Agentbase delivers |
 | --- | --- |
 | **AI Engineers / Developers** | Focus on writing agent logic, not managing infra |
 | **Startups / Product Teams** | Ship AI products faster and reduce operational costs |
@@ -57,7 +57,7 @@ Logs, CPU/RAM metrics, request history — all available in a single dashboard. 
 
 ***
 
-## Get started with AgentBase
+## Get started with Agentbase
 
 | I want to... | Go to |
 | --- | --- |
