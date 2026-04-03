@@ -72,7 +72,7 @@ Khi chọn Deployment Type là **Cluster**, hệ thống hiển thị thêm sect
 
 #### Bước 4: Mạng và bảo mật (Network & Security)
 
-* **Cloud Network (VPC & Subnet)**: Chọn VPC và Subnet cho cluster. Nếu chưa có, bạn có thể tạo mới theo hướng dẫn [tại đây](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/README.md).
+* **Cloud Network (VPC & Subnet)**: Chọn VPC và Subnet cho cluster. Nếu chưa có, bạn có thể tạo mới theo hướng dẫn [tại đây](../../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/README.md).
 * **Public Accessibility**: Bật nếu muốn cluster có IP Public và truy cập từ Internet; tắt nếu chỉ muốn truy cập qua IP Private.
 
 {% hint style="warning" %}
