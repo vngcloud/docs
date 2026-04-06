@@ -16,6 +16,7 @@ MaaS hỗ trợ nhiều loại mô hình khác nhau:
 | Claude 3.7 Sonnet              | Anthropic | 50 requests / day |
 | Claude 3.5 Haiku               | Anthropic | 50 requests / day |
 | Claude 3 Opus                  | Anthropic | 50 requests / day |
+| Gemini 3.1 Pro Preview         | Google    | 50 requests / day |
 | Gemini 2.5 Pro                 | Google    | 50 requests / day |
 | Gemini 2.5 Flash               | Google    | 50 requests / day |
 | Gemini 2.5 Flash Lite          | Google    | 50 requests / day |
@@ -39,6 +40,7 @@ MaaS hỗ trợ nhiều loại mô hình khác nhau:
 | qwen3-coder-plus-2025-07-22    | Qwen      | 50 requests / day |
 | qwen3-coder-plus               | Qwen      | 50 requests / day |
 | qwen3-coder-480b-a35b-instruct | Qwen      | 50 requests / day |
+| qwen3-5-27b                    | Qwen      | 50 requests / day |
 | ByteDance-Seed-1.6             | ByteDance | 50 requests / day |
 | ByteDance-Seed-1.6-flash       | ByteDance | 50 requests / day |
 | Skylark-pro                    | ByteDance | 50 requests / day |
@@ -108,6 +110,7 @@ MaaS hỗ trợ nhiều loại mô hình khác nhau:
 | ------------- | --------- | ---------- |
 | GreenNode IDP | GreenNode |            |
 
-Yêu cầu Model khác:
+Lưu ý:
 
 * Bạn có thể tạo [ticket](https://helpdesk.vngcloud.vn/portal/vi/newticket) để yêu cầu model mong muốn
+
