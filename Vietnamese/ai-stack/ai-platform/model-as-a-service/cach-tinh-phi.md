@@ -83,7 +83,12 @@ Phí được tính dựa trên:
 
 **3.1.1. Nguyên tắc sử dụng**
 
-* Người dùng cần **mua trước user-credit** để sử dụng dịch vụ
+* Người dùng cần **mua trước user-credit** để sử dụng dịch vụ bằng tính năng Top up credits
+
+<figure><img src="../../../.gitbook/assets/image (811).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (820).png" alt=""><figcaption></figcaption></figure>
+
 * Với mỗi lần sử dụng model:
   * Tokens và/hoặc images phát sinh sẽ được:
     * Tính theo **đơn giá tương ứng**
