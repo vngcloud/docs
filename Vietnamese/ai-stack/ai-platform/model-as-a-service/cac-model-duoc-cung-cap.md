@@ -1,7 +1,5 @@
 # Các Model được cung cấp
 
-## Các Model được cung cấp
-
 MaaS API cung cấp quyền truy cập với độ chính xác đầy đủ vào các họ mô hình Gemini, Anthropic, OpenAI... được liệt kê bên dưới.
 
 ### Danh sách mô hình
