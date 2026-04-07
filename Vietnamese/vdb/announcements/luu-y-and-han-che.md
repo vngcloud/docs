@@ -27,7 +27,7 @@ Master User này sẽ được cấp các quyền sau:
 
 ## D. Failover khi vDB role Master down: <a href="#luuy-and-hanche-d.failoverkhivdbrolemasterdown" id="luuy-and-hanche-d.failoverkhivdbrolemasterdown"></a>
 
-Hiện tại, vDB sẽ không tự động failover khi có sự cố đối với vDB role Master (Read/Write) trong mô hình Master/Read-Replica. Quyền quyết định việc Promote Read Replica thành Master mới sẽ thuộc về Khách hàng. Bạn lưu ý sau khi Promote, quá trình đồng bộ dữ liệu với Master trước sẽ bị ngắt và không thể rollback được. Để khôi phục tính High Avaibility cho hệ thống, bạn có thể create read-replica mới từ Standalone vDB này.
+Đối với các vDB non-cluster, sẽ không tự động failover khi có sự cố đối với vDB role Master (Read/Write) trong mô hình Master/Read-Replica. Quyền quyết định việc Promote Read Replica thành Master mới sẽ thuộc về Khách hàng. Bạn lưu ý sau khi Promote, quá trình đồng bộ dữ liệu với Master trước sẽ bị ngắt và không thể rollback được. Để khôi phục tính High Avaibility cho hệ thống, bạn có thể create read-replica mới từ Standalone vDB này.
 
 Các bước thực hiện như sau:
 
@@ -36,9 +36,11 @@ Các bước thực hiện như sau:
 3. Sau khi kiểm tra application đã ổn định, bạn chọn vào Master mới và tiến hành create read-replica từ Master mới này.
 4. Bạn có thể xóa Master cũ nếu không còn nhu cầu sử dụng.
 
+Nếu có nhu cầu Auto Failover, bạn nên cân nhắc sử dụng VDB Cluster Mode.
+
 ## E. Long-time query:
 
-Đối với các long-time query, bạn nên sử dụng cơ chế connection pool, cũng như cấu hình các tham số liên quan tcp-keepalive, gửi heartbeat,... để tránh connection bị gián đoạn gây ra các lỗi query timeout, no reply,...&#x20;
+Đối với các long-time query, bạn nên sử dụng cơ chế connection pool, cũng như cấu hình các tham số liên quan tcp-keepalive, gửi heartbeat,... để tránh connection bị gián đoạn gây ra các lỗi query timeout, no reply,...
 
 Ví dụ với redis-py, bạn có thể tham khảo:
 
@@ -56,7 +58,7 @@ Ngoài ra còn các option khác, bạn có thể cân nhắc:
 * socket\_connect\_timeout: Timeout for initial connection in seconds.
 * socket\_timeout: Timeout for read/write operations in seconds
 * retry\_on\_timeout: Retry commands if a timeout occurs. Default is False.
-* socket\_keepalive\_options: A dict of TCP keepalive options. Example:&#x20;
+* socket\_keepalive\_options: A dict of TCP keepalive options. Example:
 
 ```
 socket_keepalive_options = {
