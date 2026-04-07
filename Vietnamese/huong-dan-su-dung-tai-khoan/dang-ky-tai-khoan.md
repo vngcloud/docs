@@ -6,7 +6,7 @@
 
 Tại trang chủ GreenNode, nhấp chọn chức năng “Đăng ký” như hình:
 
-<figure><img src="../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/dangky.png" alt=""><figcaption></figcaption></figure>
 
 Màn hình tương tự như sau:
 
@@ -26,7 +26,7 @@ Màn hình tương tự như sau:
 
 **Bước 4:** Trong email hướng dẫn, click vào link **Liên kết này** để đến bước tiếp theo.
 
-<figure><img src="../.gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/email.png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Sau khi click vào link trong email ở **bước 4**, form đăng ký cuối cùng sẽ được mở ra. Tại đây điền đầy đủ các thông tin vào form đăng ký.
 
