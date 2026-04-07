@@ -51,4 +51,9 @@ Trong chế độ **Active/Passive**, **chỉ có một node hoạt động (Act
 * **Active/Active** lý tưởng cho các hệ thống **mission-critical**, web traffic lớn, hoặc nền tảng phân tán nhiều vùng.
 * **Active/Passive** phù hợp với các ứng dụng **nội bộ**, **dữ liệu không thay đổi liên tục**, hoặc hệ thống backup đảm bảo sẵn sàng.
 
+#### Khuyến nghị theo dòng firewall
+
+* **pfSense**: khuyến nghị dùng **Active/Active**
+* **Palo Alto**: khuyến nghị dùng **Active/Passive**
+
 <table><thead><tr><th width="469">Nhu cầu của hệ thống bạn</th><th>Nên chọn chế độ</th></tr></thead><tbody><tr><td><strong>Không chấp nhận downtime</strong></td><td>Active/Active</td></tr><tr><td><strong>Cần hiệu suất xử lý cao</strong></td><td>Active/Active</td></tr><tr><td><strong>Hệ thống nhỏ, ưu tiên chi phí</strong></td><td>Active/Passive</td></tr><tr><td><strong>Ứng dụng có thể chấp nhận downtime ngắn</strong></td><td>Active/Passive</td></tr></tbody></table>
