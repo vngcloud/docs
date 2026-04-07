@@ -13,3 +13,4 @@
 | [OpenClaw 1-Click](openclaw-1-click.md) | Overview, architecture, comparison, and FAQ |
 | [Deploy & Manage OpenClaw](deploy-and-manage-openclaw.md) | Step-by-step guide: deploy, stop, restart, delete instances |
 | [Limitations & Notes](limitations-and-notes.md) | Current limitations and important technical notes |
+| [Get Bot Token & Pairing](get-bot-token-and-pairing.md) | How to get a Telegram/Zalo bot token and pair it with OpenClaw |

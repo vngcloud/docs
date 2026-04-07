@@ -967,6 +967,7 @@
       * [OpenClaw 1-Click](ai-stack/agent-base/one-click-openclaw/openclaw-1-click.md)
       * [Deploy & Manage OpenClaw](ai-stack/agent-base/one-click-openclaw/deploy-and-manage-openclaw.md)
       * [Limitations & Notes](ai-stack/agent-base/one-click-openclaw/limitations-and-notes.md)
+      * [Get Bot Token & Pairing](ai-stack/agent-base/one-click-openclaw/get-bot-token-and-pairing.md)
 * [Veka.ai](vcloudcam/README.md)
   * [Announcements & Updates](vcloudcam/announcements-and-updates.md)
 * [Identity and Access Management (IAM)](identity-and-access-management-iam/README.md)

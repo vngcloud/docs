@@ -845,6 +845,7 @@
       * [OpenClaw 1-Click](ai-stack/agent-base/one-click-openclaw/openclaw-1-click.md)
       * [Triển khai và Quản lý OpenClaw](ai-stack/agent-base/one-click-openclaw/trien-khai-openclaw-1-click.md)
       * [Giới hạn và Lưu ý](ai-stack/agent-base/one-click-openclaw/gioi-han-va-luu-y.md)
+      * [Lấy Bot Token và Pairing](ai-stack/agent-base/one-click-openclaw/lay-bot-token-va-pairing.md)
 * [vDB](vdb/README.md)
   * [Thông báo và cập nhật](vdb/announcements/README.md)
     * [Release Notes](vdb/announcements/release-notes.md)
