@@ -6,6 +6,17 @@ When you design a VIP-based HA setup, you typically choose one mode: **Active/Ac
 
 Choosing the right mode affects architecture, performance, and cost.
 
+### Product recommendation on vMarketplace
+
+Use the mode below when you deploy firewall appliances on vMarketplace:
+
+* **pfSense**: choose **Active/Active**.
+* **Palo Alto**: choose **Active/Passive**.
+
+{% hint style="info" %}
+If you also use **Public Virtual IP Address** on vMarketplace, the HA VIP workflow currently runs in **Active-Passive** at the VIP layer.
+{% endhint %}
+
 ## 1. Active/Active Mode
 
 #### Definition

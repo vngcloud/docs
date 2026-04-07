@@ -24,7 +24,7 @@ Virtual IP is mainly used to:
 This document helps you:
 
 * Understand and use Virtual IP Address(es) on vMarketplace.
-* Use pfSense as an Internet Gateway.
+* Use pfSense or Palo Alto as an Internet Gateway.
 
 ## III. Implementation steps
 
@@ -153,7 +153,14 @@ You can also access the pfSense webGUI via this VIP.
 * **Active-Passive**: one firewall is active, one firewall is standby.
 * **Active-Active**: both firewalls are active (combined with load balancing).
 
-Currently, vMarketplace Virtual IP Address supports **Active-Passive**.
+**Recommended mode when selecting the firewall deployment model**
+
+* **pfSense**: choose **Active/Active**.
+* **Palo Alto**: choose **Active/Passive**.
+
+{% hint style="info" %}
+If you deploy **pfSense**, keep the marketplace deployment mode as **Active/Active**, then follow the VIP failover steps below for the public VIP layer.
+{% endhint %}
 
 **Traffic flow:** Internet → VIP (157.20.200.185) → Firewall VM 1 (NAT + Filter), Firewall VM 2 (NAT + Filter) → Server 1 (192.168.2.7), Server 2 (192.168.2.5)
 
