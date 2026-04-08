@@ -6,13 +6,15 @@ Tổng hợp các bản cập nhật và tính năng mới của tất cả các
 
 ## March 2026 - vDB PostgreSQL Cluster (RDS) <a href="#april_03_2026_postgresql_cluster" id="april_03_2026_postgresql_cluster"></a>
 
-GreenNode ra mắt tính năng PostgreSQL Cluster cho dịch vụ vDB Relational, cho phép triển khai PostgreSQL với kiến trúc High Availability, tự động Failover và khả năng scale linh hoạt cho môi trường production.
+GreenNode ra mắt dịch vụ mới PostgreSQL Cluster cho dịch vụ vDB Relational, cho phép triển khai PostgreSQL với kiến trúc Multi-Node High Availability, tự động Failover và khả năng scale linh hoạt cho môi trường production.
 
-* Kiến trúc Multi-Node High Availability: tự động failover khi Writer gặp sự cố.
+* Kiến trúcMulti-node High Availability: tự động failover khi Writer gặp sự cố.
 * Hai Endpoint RW & RO riêng biệt: dễ dàng scale out các heavy-read workload.
 * Tích hợp sẵn với vBackup: dễ dàng thiết lập các Backup Policy, Vault Lock tại Backup Center.
-* Hỗ trợ các extension phổ biến: pgvector, timescaledb, postgis, pg\_stat\_statements,... phù hợp với nhiều usecase như VectorDB for AI, real-time analytics, OLTP...
-* Tìm hiểu thêm tại [PostgreSQL Cluster](../relational-database-service-rds/postgresql/postgresql-cluster.md).
+* Hỗ trợ các extension phổ biến: pgvector, timescaledb, postgis, pg\_stat\_statements,... phù hợp với nhiều usecase như VectorDB for AI, high-performance real-time analytics, OLTP, ...
+* Hỗ trợ IAM, ví POC.
+
+Ngoài ra, GreenNode dừng hỗ trợ tạo mới các Version sau: MySQL 5.5, MariaDB 10.1, Redis 3.2, PostgreSQL 10. Các vDB đang chạy version này sẽ không bị ảnh hưởng.
 
 ***
 
