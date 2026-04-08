@@ -2,9 +2,9 @@
 
 **vDB Relational Database Service (RDS)** có nhiều loại cơ sở dữ liệu quan hệ quen thuộc với bạn như:
 
-* MySQL: 5.5, 5.7, 8.0.
-* Mariadb: 10.1, 10.3, 10.4, 10.5.
-* Postgresql: 10, 12, 13, 14, 15.
+* MySQL: 5.7, 8.0.
+* Mariadb: 10.3, 10.4, 10.5.
+* Postgresql: 12, 13, 14, 15.
 
 **Sơ đồ hoạt động của RDS**
 
