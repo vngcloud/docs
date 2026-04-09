@@ -58,7 +58,7 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
 To initialize a Cluster, follow the steps below:
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
 
 **Step 2: At the Overview** screen , select **Activate.**
 
@@ -85,7 +85,7 @@ To initialize a Cluster, follow the steps below:
 
 After the Cluster is successfully initialized, you can connect and check the newly created Cluster information by following these steps:
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console.vngcloud.vn/k8s-cluster)
 
 **Step 2:** The Cluster list is displayed, select the **Download** icon and select **Download config file** to download the kubeconfig file. This file will give you full access to your Cluster.
 
