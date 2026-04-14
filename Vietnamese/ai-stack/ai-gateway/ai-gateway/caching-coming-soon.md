@@ -67,7 +67,7 @@ Truy cập thông qua đường dẫn: [https://aigateway.console.vngcloud.vn/mo
 * Bạn có thể **chọn từng model** hoặc **Select all models** để áp dụng cache cho tất cả model trong gateway.
 * Có ô Search để tìm model theo tên (vd: `gemini-1.5-pro`, `gpt-4o`...).
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Sau khi chọn model xong, nhấn **Save** để lưu thay đổi.
 
@@ -98,4 +98,4 @@ Truy cập thông qua đường dẫn: [https://aigateway.console.vngcloud.vn/mo
 
 📌 Lưu ý: Chỉ xoá được khi cấu hình không còn được gán cho bất kỳ model/gateway nào. Nếu còn thì gỡ gán (detach model/gateway)
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

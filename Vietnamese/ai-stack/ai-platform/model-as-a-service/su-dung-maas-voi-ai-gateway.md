@@ -40,7 +40,7 @@
 
 <figure><img src="../../../.gitbook/assets/image (445).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 \
 **Bước 7**: Trong mục **Providers & Model**, tìm mô hình AI bạn đã cấu hình. Tại mô hình đó, nhấn vào biểu tượng **Curl command** để lấy câu lệnh mẫu.

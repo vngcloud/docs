@@ -69,4 +69,4 @@ sudo ./filebeat.sh <path-to-file-log>
 
 4. Bạn có thể thêm, xoá, chỉnh sửa hoặc thay đổi vị trí các widget để phù hợp.
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -52,4 +52,4 @@ API_KEY=$API_KEY bash -c "$(curl -L https://raw.githubusercontent.com/vngcloud/v
 
 * Sau khi chạy câu lệnh và cài đặt thành công bạn sẽ thấy server ở trang Infrastructure List/Host
 
-<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>

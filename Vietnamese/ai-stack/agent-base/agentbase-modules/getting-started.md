@@ -1,9 +1,8 @@
-# Bắt Đầu
+# Getting Started
 
 > Hoàn thành các điều kiện cần này trước khi sử dụng bất kỳ dịch vụ AgentBase nào. Sau khi hoàn tất, hãy theo lộ trình đọc tài liệu để bắt đầu xây dựng.
 
----
-
+***
 
 ## Điều kiện cần (Prerequisites)
 
@@ -56,19 +55,19 @@ Tất cả các cuộc gọi AgentBase API (Portal, RESTful API và SDK) đều 
 
 1. Nhấn **"Create a Service Account"**.
 2. Điền vào:
-   - **Name**: ví dụ, `agentbase-dev`
-   - **Description**: ví dụ, `Service account for AgentBase test`
+   * **Name**: ví dụ, `agentbase-dev`
+   * **Description**: ví dụ, `Service account for AgentBase test`
 3. Nhấn **"Next Step"**.
 
-![1774518047320](image/02-getting-started/1774518047320.png)
+![1774518047320](../../../.gitbook/assets/1774518047320.png)
 
 **Bước 3: Gắn Policies**
 
 1. Trong tab Permissions, nhấn **"Attach Policies"**.
 2. Tìm và gắn từng policy sau:
-   - `AgentBaseFullAccess` — truy cập các dịch vụ Identity, Runtime và Memory
-   - `vcrFullAccess` — truy cập Container Registry (để push/pull image)
-   - `AiPlatformFullAccess` — truy cập các LLM model và API key
+   * `AgentBaseFullAccess` — truy cập các dịch vụ Identity, Runtime và Memory
+   * `vcrFullAccess` — truy cập Container Registry (để push/pull image)
+   * `AiPlatformFullAccess` — truy cập các LLM model và API key
 3. Nhấn **"Create Service Account"**.
 
 **Bước 4: Sao chép Client Secret (chỉ một lần duy nhất)**
@@ -79,8 +78,6 @@ Tất cả các cuộc gọi AgentBase API (Portal, RESTful API và SDK) đều 
 2. Nhấn **"Back to list"**.
 3. Tìm service account mới của bạn, nhấn vào nó, di chuyển đến tab **"Security credentials"**.
 4. Sao chép **Client ID**.
-
-![1776141606586](image/getting-started/1776141606586.png)
 
 ### Cấu hình xác thực
 
@@ -128,30 +125,29 @@ curl -s -X GET "https://agentbase.api.vngcloud.vn/..." \
 
 > **Lưu ý (người dùng SDK):** Python SDK tự động quản lý token — chỉ cần đảm bảo credential của bạn được cấu hình qua biến môi trường hoặc `.greennode.json`. Không cần lấy token thủ công.
 
----
+***
 
 ## Tiếp theo là gì?
 
 Sau khi hoàn thành các điều kiện cần, hãy theo các chương theo thứ tự để thực hiện lần triển khai đầu tiên, hoặc chuyển đến một chủ đề cụ thể:
 
-| Tôi muốn...                           | Đi đến                                                                                                          |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Đăng ký agent trên nền tảng      | [Access Control](./access-control/README.md#agent-identity)                                  |
-| Lưu trữ API key cho các dịch vụ bên ngoài   | [Access Control — Auth &amp; Secrets](./access-control/README.md#auth--secrets)             |
-| Push một Docker image                    | [Supporting Services — Container Registry](./supporting-services.md#container-registry-vcr) |
-| Deploy và chạy agent của tôi                | [Runtime](./runtime/README.md)                                                                  |
-| Thêm Memory hội thoại                | [Memory](./memory/README.md)                                                                    |
-| Giám sát và debug                      | [Insight](./insight/README.md)                                                                  |
-| Lấy LLM API key (tương thích OpenAI) | [Supporting Services — AI Platform](./supporting-services.md#ai-platform-aip--llm-access)   |
-| Sử dụng Python SDK                     | [Supporting Services — SDK &amp; Integration](./supporting-services.md#sdk--integration)    |
+| Tôi muốn...                               | Đi đến                                                                                    |
+| ----------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Đăng ký agent trên nền tảng               | [Access Control](access-control/#agent-identity)                                          |
+| Lưu trữ API key cho các dịch vụ bên ngoài | [Access Control — Auth & Secrets](access-control/#auth--secrets)                          |
+| Push một Docker image                     | [Supporting Services — Container Registry](supporting-services.md#container-registry-vcr) |
+| Deploy và chạy agent của tôi              | [Runtime](runtime/)                                                                       |
+| Thêm Memory hội thoại                     | [Memory](memory/)                                                                         |
+| Giám sát và debug                         | [Insight](insight/)                                                                       |
+| Lấy LLM API key (tương thích OpenAI)      | [Supporting Services — AI Platform](supporting-services.md#ai-platform-aip--llm-access)   |
+| Sử dụng Python SDK                        | [Supporting Services — SDK & Integration](supporting-services.md#sdk--integration)        |
 
-> **Lần đầu?** Bắt đầu với [Access Control](./access-control/README.md) → [Supporting Services (vCR)](./supporting-services.md#container-registry-vcr) → [Runtime](./runtime/README.md) để đi từ con số không đến một agent đang chạy.
+> **Lần đầu?** Bắt đầu với [Access Control](access-control/) → [Supporting Services (vCR)](supporting-services.md#container-registry-vcr) → [Runtime](runtime/) để đi từ con số không đến một agent đang chạy.
 
----
+***
 
 ## Chi phí (Charging & Fees)
 
 > Thông tin chi tiết về thanh toán sẽ được cập nhật trong phiên bản sau.
 
----
-
+***

@@ -15,7 +15,7 @@ description: >-
 
 2. Hoặc có thể chọn Configure Rate limit khi tạo Authentication Token.
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. Tạo mới **Rate Limit Token**
 

@@ -2,7 +2,7 @@
 
 Kafka Cluster DB là một dịch vụ mới trên nền tảng vDB, cung cấp một cụm máy chủ Kafka mạnh mẽ và linh hoạt để quản lý luồng sự kiện theo thời gian thực. Với Kafka Cluster DB, bạn có thể dễ dàng xây dựng các ứng dụng xử lý dữ liệu lớn, hệ thống nhắn tin và ghi log tập trung với khả năng mở rộng cao, độ bền dữ liệu và hiệu suất vượt trội.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Tính năng <a href="#tinh-nang-moi" id="tinh-nang-moi"></a>
 
@@ -41,5 +41,3 @@ So sánh Kafka Cluster DB Managed Service (dịch vụ được quản lý) và 
 | **Chi phí**                 | Thường có chi phí thấp hơn về lâu dài do tiết kiệm được chi phí đầu tư hạ tầng, chi phí vận hành và chi phí nhân sự. | Chi phí về lâu dài sẽ cao hơn do cần đầu tư vào hạ tầng, vận hành và nhân sự.                      |
 | **Tính linh hoạt**          | Có thể bị giới hạn về khả năng tùy chỉnh và kiểm soát so với cụm tự quản lý.                                         | Cho phép tùy chỉnh và kiểm soát hoàn toàn cụm Kafka.                                               |
 | **Phù hợp với**             | Doanh nghiệp muốn tập trung vào phát triển ứng dụng, không muốn đầu tư nhiều vào quản lý hạ tầng.                    | Doanh nghiệp có đội ngũ kỹ thuật mạnh, muốn kiểm soát hoàn toàn hệ thống và có thể tự xử lý sự cố. |
-
-&#x20;
