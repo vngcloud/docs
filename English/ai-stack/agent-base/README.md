@@ -61,4 +61,5 @@ Logs, CPU/RAM metrics, request history — all available in a single dashboard. 
 
 | I want to... | Go to |
 | --- | --- |
+| Build and deploy my own AI Agent with full platform capabilities | [Agentbase Modules](agentbase-modules/README.md) |
 | Use an AI Agent right now, no coding needed | [OpenClaw 1-Click](one-click-openclaw/README.md) |

@@ -61,4 +61,5 @@ Logs, metrics CPU/RAM, lịch sử request — tất cả có sẵn trong dashbo
 
 | Tôi muốn... | Hướng đến |
 | --- | --- |
+| Tự build và deploy AI Agent với đầy đủ tính năng platform | [Agentbase Modules](agentbase-modules/README.md) |
 | Dùng AI Agent ngay, không cần code | [OpenClaw 1-Click](one-click-openclaw/README.md) |
