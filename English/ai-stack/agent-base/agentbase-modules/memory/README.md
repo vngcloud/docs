@@ -2,8 +2,7 @@
 
 > The Memory service gives agents the ability to remember — across turns in a conversation (short-term via events) and across sessions and time (long-term via memory records with semantic search).
 
----
-
+***
 
 ## Core Concepts
 
@@ -25,10 +24,10 @@ assistant   "Tomorrow: 31°C, sunny with light winds."
 
 **Key characteristics:**
 
-- Stored as an ordered list of role/content pairs
-- Indexed by session ID
-- Persists across container restarts (stored in the Memory Service, not in the container)
-- Supports configurable maximum history length
+* Stored as an ordered list of role/content pairs
+* Indexed by session ID
+* Persists across container restarts (stored in the Memory Service, not in the container)
+* Supports configurable maximum history length
 
 ### Long-Term Memory (Semantic Facts)
 
@@ -49,28 +48,28 @@ When an agent receives a new query, it:
 
 **Key characteristics:**
 
-- Stored as embedding vectors plus raw text plus optional metadata
-- Scoped by namespace (for example, user ID, entity ID)
-- Retrieved via semantic similarity search
+* Stored as embedding vectors plus raw text plus optional metadata
+* Scoped by namespace (for example, user ID, entity ID)
+* Retrieved via semantic similarity search
 
 Facts are extracted from conversation events using a **Long-Term Memory Strategy (LTMS)**. Three strategy types are supported:
 
-| Type                | Description                                               | Best For                                        |
-| ------------------- | --------------------------------------------------------- | ----------------------------------------------- |
+| Type              | Description                                               | Best For                                        |
+| ----------------- | --------------------------------------------------------- | ----------------------------------------------- |
 | `SEMANTIC`        | Extracts general facts from conversations                 | Broad knowledge about users or domain           |
 | `USER_PREFERENCE` | Focused extraction of preferences and behavioral patterns | Delivery preferences, product interests, habits |
 | `CUSTOM`          | User-defined extraction logic via a custom prompt         | Full control over what gets remembered and how  |
 
 ### Data Model
 
-| Concept                                    | Description                                                       | Lifetime                                   |
-| ------------------------------------------ | ----------------------------------------------------------------- | ------------------------------------------ |
-| **Memory**                           | Top-level container (memory store) holding events and records     | Permanent until deleted                    |
-| **Event**                            | Single conversation turn (role + message)                         | Expires after `eventExpiryDuration` days |
-| **Actor**                            | Participant identifier — represents the end-user (not the agent) | Created on first event                     |
-| **Session**                          | Conversation thread within an actor                               | Created on first event                     |
-| **Memory Record**                    | Distilled long-term fact extracted from events                    | Permanent until deleted                    |
-| **Long-Term Memory Strategy (LTMS)** | Extraction rules for generating memory records                    | Configured at memory creation              |
+| Concept                              | Description                                                      | Lifetime                                 |
+| ------------------------------------ | ---------------------------------------------------------------- | ---------------------------------------- |
+| **Memory**                           | Top-level container (memory store) holding events and records    | Permanent until deleted                  |
+| **Event**                            | Single conversation turn (role + message)                        | Expires after `eventExpiryDuration` days |
+| **Actor**                            | Participant identifier — represents the end-user (not the agent) | Created on first event                   |
+| **Session**                          | Conversation thread within an actor                              | Created on first event                   |
+| **Memory Record**                    | Distilled long-term fact extracted from events                   | Permanent until deleted                  |
+| **Long-Term Memory Strategy (LTMS)** | Extraction rules for generating memory records                   | Configured at memory creation            |
 
 ### Namespace Template
 
@@ -80,7 +79,7 @@ Available variables: `{memoryStrategyId}`, `{actorId}`, `{sessionId}`
 
 > **Note on `actorId`:** Represents the **end-user** (e.g., `alice`, `user-123`), not the agent itself. This partitions facts per user.
 
----
+***
 
 ## Setup — Create Memory Store
 
@@ -93,16 +92,16 @@ Before using short-term or long-term memory, you must create a **Memory store** 
 1. Open https://aiplatform.console.vngcloud.vn/memory
 2. Click **"Create Memory"**
 3. Fill in:
-   - **Name**: e.g., `customer-support-memory` (0–50 chars, `^[a-zA-Z0-9._-]*$`)
-   - **Description**: optional
+   * **Name**: e.g., `customer-support-memory` (0–50 chars, `^[a-zA-Z0-9._-]*$`)
+   * **Description**: optional
 4. Configure **Short-Term Memory**:
-   - **Event Expiry Duration**: number of days before conversation events are automatically deleted (1–365), e.g., `30` days
+   * **Event Expiry Duration**: number of days before conversation events are automatically deleted (1–365), e.g., `30` days
 5. Add one or more **Long-Term Memory Strategies** (optional, for long-term memory):
-   - **Strategy Name**: e.g., `semantic-facts`
-   - **Type**: `SEMANTIC`, `USER_PREFERENCE`, or `CUSTOM`
-   - **Namespace Template**: default is `/strategies/{memoryStrategyId}/actors/{actorId}`
-   - **Auto-generate records**: toggle on/off
-   - **Custom Prompt** (only for `CUSTOM` type): your extraction prompt
+   * **Strategy Name**: e.g., `semantic-facts`
+   * **Type**: `SEMANTIC`, `USER_PREFERENCE`, or `CUSTOM`
+   * **Namespace Template**: default is `/strategies/{memoryStrategyId}/actors/{actorId}`
+   * **Auto-generate records**: toggle on/off
+   * **Custom Prompt** (only for `CUSTOM` type): your extraction prompt
 6. Click **Create**
 
 #### List Memory Stores
@@ -110,13 +109,13 @@ Before using short-term or long-term memory, you must create a **Memory store** 
 1. Open https://aiplatform.console.vngcloud.vn/memory
 2. All memory stores shown with: Name, Status, Descriptopn, Event Expiry, Lated updated
 
-![1774584561868](../image/06-context-draft/1774584561868.png)
+![1774584561868](../../../../.gitbook/assets/1774584561868.png)
 
 #### Get Memory Store Details
 
 From the memory list page → click a memory name
 
-![1774584650626](../image/06-context-draft/1774584650626.png)
+![1774584650626](../../../../.gitbook/assets/1774584650626.png)
 
 #### Delete a Memory Store
 
@@ -124,9 +123,9 @@ From the memory list page → click a memory name
 
 1. From memory detailed page → **Delete** → confirm
 
-![1774584735238](../image/06-context-draft/1774584735238.png)
+![1774584735238](../../../../.gitbook/assets/1774584735238.png)
 
----
+***
 
 ### RESTful API
 
@@ -228,7 +227,7 @@ curl -s -X DELETE "https://agentbase.api.vngcloud.vn/memory/memories/$MEMORY_ID"
   -H "Authorization: Bearer $TOKEN"
 ```
 
----
+***
 
 ### SDK
 
@@ -286,16 +285,16 @@ for s in strategies:
 asyncio.run(client.delete_async(id=MEMORY_ID))
 ```
 
----
+***
 
 ## Step 2 — Use Memory in Your Agent
 
 Once your Memory Store is created, your agent reads and writes memory at runtime. Choose the approach that fits your stack.
 
-| Approach                           | When to use                                                                                            |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| Approach                     | When to use                                                                                           |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **A: Agentic Frameworks**    | Building with LangGraph or LangChain — use built-in checkpointer for short-term + tools for long-term |
-| **B: Direct SDK / REST API** | Any other stack, or when you need full control over when and how memory is read and written            |
+| **B: Direct SDK / REST API** | Any other stack, or when you need full control over when and how memory is read and written           |
 
 > **Required headers:** Your agent receives `X-GreenNode-AgentBase-User-Id` (maps to `actor_id`) and `X-GreenNode-AgentBase-Session-Id` (maps to `thread_id` / `session_id`) on every request from the Runtime. Always validate them before performing memory operations — never fall back to defaults, as silent defaults cause data mixing between users.
 
@@ -310,7 +309,7 @@ def handler(payload: dict, context: RequestContext) -> dict:
     # proceed ...
 ```
 
----
+***
 
 ### Approach A: Agentic Frameworks (LangGraph / LangChain)
 
@@ -437,7 +436,7 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", "8080")))
 ```
 
----
+***
 
 ### Approach B: Direct SDK / REST API
 
@@ -538,7 +537,7 @@ for record in results:
     print(f"[{record.score:.2f}] {record.memory}")
 ```
 
----
+***
 
 ## Reference: Browse and Manage Memory Data
 
@@ -560,30 +559,29 @@ curl -s "https://agentbase.api.vngcloud.vn/memory/memories/$MEMORY_ID/memory-rec
   -H "Authorization: Bearer $TOKEN" | jq .
 ```
 
----
+***
 
 ## Memory Service Limits
 
-| Parameter                          | Value       | Notes                           |
-| ---------------------------------- | ----------- | ------------------------------- |
+| Parameter                        | Value      | Notes                           |
+| -------------------------------- | ---------- | ------------------------------- |
 | `eventExpiryDuration` range      | 1–365 days | Set at memory store creation    |
-| Memory name max length             | 50 chars    | Pattern:`^[a-zA-Z0-9._-]*$`   |
+| Memory name max length           | 50 chars   | Pattern:`^[a-zA-Z0-9._-]*$`     |
 | Semantic search `limit` range    | 5–200      | Per search request              |
 | Semantic search `scoreThreshold` | 0–1 float  | Higher = more strict similarity |
-| Max `from` for event pagination  | 5000        | Offset-based                    |
+| Max `from` for event pagination  | 5000       | Offset-based                    |
 
----
+***
 
 ## Troubleshooting
 
 | Error                       | Cause                                 | Fix                                                    |
 | --------------------------- | ------------------------------------- | ------------------------------------------------------ |
 | 401 Unauthorized            | Expired IAM token                     | Re-obtain token                                        |
-| Memory not found            | Wrong memory ID                       | Verify with `GET /memories` list                     |
-| No records returned         | Namespace mismatch or async delay     | Records generated asynchronously — wait and retry     |
-| Events not appearing        | Events expired                        | Check `eventExpiryDuration`                          |
-| Auto-generation not working | Strategy misconfigured                | Verify `enableAutomaticMemoryRecordGeneration: true` |
+| Memory not found            | Wrong memory ID                       | Verify with `GET /memories` list                       |
+| No records returned         | Namespace mismatch or async delay     | Records generated asynchronously — wait and retry      |
+| Events not appearing        | Events expired                        | Check `eventExpiryDuration`                            |
+| Auto-generation not working | Strategy misconfigured                | Verify `enableAutomaticMemoryRecordGeneration: true`   |
 | "Missing required headers"  | Request missing User-Id or Session-Id | Include both headers in every request that uses memory |
 
----
-
+***

@@ -2,8 +2,7 @@
 
 > Complete these prerequisites before using any AgentBase service. Once done, follow the reading path to start building.
 
----
-
+***
 
 ## Prerequisites
 
@@ -56,19 +55,19 @@ All AgentBase API calls (Portal, RESTful API, and SDK) require a GreenNode IAM b
 
 1. Click **"Create a Service Account"**.
 2. Fill in:
-   - **Name**: e.g., `agentbase-dev`
-   - **Description**: e.g., `Service account for AgentBase test`
+   * **Name**: e.g., `agentbase-dev`
+   * **Description**: e.g., `Service account for AgentBase test`
 3. Click **"Next Step"**.
 
-![1774518047320](image/02-getting-started/1774518047320.png)
+![1774518047320](../../../.gitbook/assets/1774518047320.png)
 
 **Step 3 — Attach Policies**
 
 1. On the Permissions tab, click **"Attach Policies"**.
 2. Search for and attach each of these policies:
-   - `AgentBaseFullAccess` — access to Identity, Runtime, and Memory services
-   - `vcrFullAccess` — access to the Container Registry (for image push/pull)
-   - `AiPlatformFullAccess` — access to LLM models and API keys
+   * `AgentBaseFullAccess` — access to Identity, Runtime, and Memory services
+   * `vcrFullAccess` — access to the Container Registry (for image push/pull)
+   * `AiPlatformFullAccess` — access to LLM models and API keys
 3. Click **"Create Service Account"**.
 
 **Step 4 — Copy the Client Secret (one-time only)**
@@ -79,8 +78,6 @@ All AgentBase API calls (Portal, RESTful API, and SDK) require a GreenNode IAM b
 2. Click **"Back to list"**.
 3. Find your new service account, click it, go to **"Security credentials"** tab.
 4. Copy the **Client ID**.
-
-![1776141606586](image/getting-started/1776141606586.png)
 
 ### Configure Authentication
 
@@ -128,30 +125,29 @@ curl -s -X GET "https://agentbase.api.vngcloud.vn/..." \
 
 > **Note (SDK users):** The Python SDK handles token management automatically — just ensure your credentials are configured via environment variables or `.greennode.json`. No manual token fetching needed.
 
----
+***
 
 ## What's Next?
 
 Once prerequisites are complete, follow the chapters in order for your first deployment, or jump to a specific topic:
 
-| I want to...                           | Go to                                                                                                          |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Register my agent on the platform      | [Access Control](./access-control/README.md#agent-identity)                                  |
-| Store API keys for external services   | [Access Control — Auth &amp; Secrets](./access-control/README.md#auth--secrets)             |
-| Push a Docker image                    | [Supporting Services — Container Registry](./supporting-services.md#container-registry-vcr) |
-| Deploy and run my agent                | [Runtime](./runtime/README.md)                                                                  |
-| Add conversation memory                | [Memory](./memory/README.md)                                                                    |
-| Monitor and debug                      | [Insight](./insight/README.md)                                                                  |
-| Get an LLM API key (OpenAI-compatible) | [Supporting Services — AI Platform](./supporting-services.md#ai-platform-aip--llm-access)   |
-| Use the Python SDK                     | [Supporting Services — SDK &amp; Integration](./supporting-services.md#sdk--integration)    |
+| I want to...                           | Go to                                                                                     |
+| -------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Register my agent on the platform      | [Access Control](access-control/#agent-identity)                                          |
+| Store API keys for external services   | [Access Control — Auth & Secrets](access-control/#auth--secrets)                          |
+| Push a Docker image                    | [Supporting Services — Container Registry](supporting-services.md#container-registry-vcr) |
+| Deploy and run my agent                | [Runtime](runtime/)                                                                       |
+| Add conversation memory                | [Memory](memory/)                                                                         |
+| Monitor and debug                      | [Insight](insight/)                                                                       |
+| Get an LLM API key (OpenAI-compatible) | [Supporting Services — AI Platform](supporting-services.md#ai-platform-aip--llm-access)   |
+| Use the Python SDK                     | [Supporting Services — SDK & Integration](supporting-services.md#sdk--integration)        |
 
-> **First time?** Start with [Access Control](./access-control/README.md) → [Supporting Services (vCR)](./supporting-services.md#container-registry-vcr) → [Runtime](./runtime/README.md) to go from zero to a running agent.
+> **First time?** Start with [Access Control](access-control/) → [Supporting Services (vCR)](supporting-services.md#container-registry-vcr) → [Runtime](runtime/) to go from zero to a running agent.
 
----
+***
 
 ## Charging & Fees
 
 > Billing details will be updated in a future revision.
 
----
-
+***

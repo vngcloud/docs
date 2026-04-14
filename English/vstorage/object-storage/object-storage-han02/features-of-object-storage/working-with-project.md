@@ -41,14 +41,16 @@ Create a project by following the steps below:
 1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list). If you don't have an account, register for free [here](https://register.vngcloud.vn/signup).
 2. Select **Region HAN02.**
 3. Select **Create a Project.**
-4. Enter **Project Name** and select the appropriate **Project type** (package) according to your needs. Currently in region HAN02, we will provide you with 2 types of storage packages **Gold** and **Instant Archive**. For more information on pricing, please refer to [Pricing](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/object-storage-hcm04/cach-tinh-phi).
-5. Select **the Quota** (storage capacity) you want.
-6. Select **Period** according to your needs.
-7. **Go through the Checkout** steps and your **Project** will be created.
+4. Enter **Project Name**
+5. Select the appropriate **Billing method** according to your needs. We will provide you with 2 types **Pay monthly** and **Pay as you go**.
+6. Select the appropriate **Project type** (package) according to your needs. Currently in region HAN02, we will provide you with 2 types of storage packages **Gold** and **Instant Archive**. For more information on pricing, please refer to [Pricing](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/object-storage-hcm04/cach-tinh-phi).
+7. Select **the Quota** (storage capacity) you want.
+8. Select **Period** according to your needs.
+9. **Go through the Checkout** steps and your **Project** will be created.
 
-<figure><img src="../../../../.gitbook/assets/image (521).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (522).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

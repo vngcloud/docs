@@ -2,8 +2,7 @@
 
 > The Runtime manages the full lifecycle of your agent's compute environment — container deployment, autoscaling, versioning, and endpoints.
 
----
-
+***
 
 ## Core Concepts
 
@@ -13,8 +12,8 @@ A **Runtime** is the managed compute environment that runs your containerized ag
 
 **Runtime states:**
 
-| State        | Description                                                   |
-| ------------ | ------------------------------------------------------------- |
+| State      | Description                                                   |
+| ---------- | ------------------------------------------------------------- |
 | `CREATING` | Runtime is being created; containers are starting             |
 | `ACTIVE`   | All minimum replicas are healthy; endpoint is serving traffic |
 | `UPDATING` | A new version deployment is in progress                       |
@@ -37,9 +36,9 @@ A **Compute Flavor** defines the CPU and RAM allocated to each replica of your a
 
 The Runtime Service supports autoscaling based on CPU or RAM utilization. You define:
 
-- `minReplicas`: The floor — always running (range: 1–10)
-- `maxReplicas`: The ceiling — caps resource usage (range: 1–10)
-- `cpuUtilization` and `memoryUtilization`: Thresholds (25–75%) that trigger scale-out
+* `minReplicas`: The floor — always running (range: 1–10)
+* `maxReplicas`: The ceiling — caps resource usage (range: 1–10)
+* `cpuUtilization` and `memoryUtilization`: Thresholds (25–75%) that trigger scale-out
 
 When load drops, AgentBase scales replicas back down to `minReplicas`.
 
@@ -53,13 +52,13 @@ Your agent container must satisfy these requirements to work correctly with the 
 
 **Auto-injected environment variables** (available in all deployed agent containers):
 
-| Variable                     | Description                       |
-| ---------------------------- | --------------------------------- |
+| Variable                   | Description                       |
+| -------------------------- | --------------------------------- |
 | `GREENNODE_CLIENT_ID`      | IAM service account client ID     |
 | `GREENNODE_CLIENT_SECRET`  | IAM service account client secret |
 | `GREENNODE_AGENT_IDENTITY` | Agent identity name               |
 
----
+***
 
 ## Overview
 
@@ -81,12 +80,12 @@ Runtime: my-order-agent
 
 **Key facts:**
 
-- Each `PATCH /agent-runtimes/{id}` creates a new **version** — versions and endpoints are independent concepts under a runtime
-- The **default** endpoint automatically tracks the latest version whenever a new version is deployed
-- A runtime can have multiple endpoints — you choose which one is the default
-- You have full control over all endpoints — create, update, or delete
+* Each `PATCH /agent-runtimes/{id}` creates a new **version** — versions and endpoints are independent concepts under a runtime
+* The **default** endpoint automatically tracks the latest version whenever a new version is deployed
+* A runtime can have multiple endpoints — you choose which one is the default
+* You have full control over all endpoints — create, update, or delete
 
----
+***
 
 ## Manage Runtimes
 
@@ -98,18 +97,18 @@ Runtime: my-order-agent
 2. Click **"Create Runtime"**
 3. Fill information
 
-| Field                           | Example Value                          | Notes                                      |
-| ------------------------------- | -------------------------------------- | ------------------------------------------ |
-| **Name**                  | `my-order-agent`                     | Unique, lowercase, hyphens allowed         |
-| **Description**           | `Production order agent`             | Optional                                   |
-| **Image URL**             | `vcr.vngcloud.vn/<repo>/my-agent:v1` | Full image path including tag              |
-| **Flavor**                | `1x1-general`                        | 1 CPU, 1 GB RAM                            |
-| **Min Replicas**          | `1`                                  | Range: 1–10                               |
-| **Max Replicas**          | `1`                                  | Set >1 to enable autoscaling               |
-| **CPU Threshold**         | `50`                                 | Scale out when CPU exceeds this % (25–75) |
-| **Memory Threshold**      | `50`                                 | Scale out when RAM exceeds this % (25–75) |
-| **Registry Auth**         | Enable if private                      | Username = robot account `backendName` (see [Supporting Services — Robot Accounts](../supporting-services.md#create-a-robot-account)) |
-| **Environment Variables** | `KEY=value`                          | Non-sensitive config only                  |
+| Field                     | Example Value                        | Notes                                                                                                                                 |
+| ------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Name**                  | `my-order-agent`                     | Unique, lowercase, hyphens allowed                                                                                                    |
+| **Description**           | `Production order agent`             | Optional                                                                                                                              |
+| **Image URL**             | `vcr.vngcloud.vn/<repo>/my-agent:v1` | Full image path including tag                                                                                                         |
+| **Flavor**                | `1x1-general`                        | 1 CPU, 1 GB RAM                                                                                                                       |
+| **Min Replicas**          | `1`                                  | Range: 1–10                                                                                                                           |
+| **Max Replicas**          | `1`                                  | Set >1 to enable autoscaling                                                                                                          |
+| **CPU Threshold**         | `50`                                 | Scale out when CPU exceeds this % (25–75)                                                                                             |
+| **Memory Threshold**      | `50`                                 | Scale out when RAM exceeds this % (25–75)                                                                                             |
+| **Registry Auth**         | Enable if private                    | Username = robot account `backendName` (see [Supporting Services — Robot Accounts](../supporting-services.md#create-a-robot-account)) |
+| **Environment Variables** | `KEY=value`                          | Non-sensitive config only                                                                                                             |
 
 5. Click **Create**
 6. Runtime appears with status `CREATING`, then transitions to `ACTIVE`
@@ -122,7 +121,7 @@ All runtimes are shown in a paginated table with: Name, Status, Description, Las
 
 Click a runtime name to view: status, image, flavor, autoscaling, environment variables, endpoints
 
-![1774594267224](../image/05-engine/1774594267224.png)
+![1774594267224](../../../../.gitbook/assets/1774594267224.png)
 
 #### Update a Runtime
 
@@ -135,7 +134,7 @@ Click a runtime name to view: status, image, flavor, autoscaling, environment va
 
 In Runtime detail page, find the runtime → **Delete** → confirm
 
----
+***
 
 ### RESTful API
 
@@ -287,7 +286,7 @@ curl -s -X PATCH "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNT
 
 > **Warning:** This regenerates `GREENNODE_CLIENT_ID` and `GREENNODE_CLIENT_SECRET`. The runtime restarts with new credentials.
 
----
+***
 
 ## Manage Endpoints
 
@@ -309,7 +308,7 @@ Each runtime has a `DEFAULT` endpoint created automatically. You can create addi
 1. On the **"Endpoints"** tab → click an endpoint → **"Edit"**
 2. Change **Version** → **Save**
 
----
+***
 
 ### RESTful API
 
@@ -345,7 +344,7 @@ curl -s -X DELETE "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUN
   -H "Authorization: Bearer $TOKEN"
 ```
 
----
+***
 
 ## Runtime Versions
 
@@ -355,9 +354,9 @@ Each `PATCH` on a runtime creates a new immutable version. Use versions to roll 
 
 1. Open the runtime detail page → **"Versions"** tab
 
-![1774594455831](../image/05-engine/1774594455831.png)
+![1774594455831](../../../../.gitbook/assets/1774594455831.png)
 
----
+***
 
 ### RESTful API
 
@@ -382,7 +381,7 @@ curl -s -X PATCH "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNT
   -H "Authorization: Bearer $TOKEN" | jq .
 ```
 
----
+***
 
 ## Runtime Service Contract
 
@@ -390,10 +389,10 @@ Your agent container must fulfill these requirements:
 
 ### Port and Health Check
 
-| Requirement       | Value           | Notes                        |
-| ----------------- | --------------- | ---------------------------- |
+| Requirement       | Value         | Notes                       |
+| ----------------- | ------------- | --------------------------- |
 | Listen port       | `8080`        | Required — not configurable |
-| Health check path | `GET /health` | Must return HTTP 200         |
+| Health check path | `GET /health` | Must return HTTP 200        |
 
 **Using the greennode-agentbase SDK (recommended):**
 
@@ -431,8 +430,8 @@ def invoke(body: dict):
 
 The Runtime automatically injects these into every container:
 
-| Variable                     | Description                                   |
-| ---------------------------- | --------------------------------------------- |
+| Variable                   | Description                                   |
+| -------------------------- | --------------------------------------------- |
 | `GREENNODE_CLIENT_ID`      | IAM service account client ID for the runtime |
 | `GREENNODE_CLIENT_SECRET`  | IAM service account client secret             |
 | `GREENNODE_AGENT_IDENTITY` | The agent identity name                       |
@@ -441,12 +440,11 @@ The Runtime automatically injects these into every container:
 
 Incoming requests to your agent include:
 
-| Header                               | Description                                                   |
-| ------------------------------------ | ------------------------------------------------------------- |
+| Header                             | Description                                                 |
+| ---------------------------------- | ----------------------------------------------------------- |
 | `X-GreenNode-AgentBase-User-Id`    | End-user ID (use as `actorId` for memory operations)        |
 | `X-GreenNode-AgentBase-Session-Id` | Session ID (use as `thread_id` for LangGraph checkpointing) |
 
 > **Important:** If your agent uses memory, validate that these headers are present and return an error if missing. Do not fall back to default values — silent defaults cause data mixing between users.
 
----
-
+***

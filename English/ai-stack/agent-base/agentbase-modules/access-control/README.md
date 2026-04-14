@@ -2,11 +2,10 @@
 
 > Access Control is the foundation of AgentBase. It covers two closely related concerns: **Agent Identity** (registering your agent on the platform) and **Auth & Secrets** (storing and injecting credentials your agent needs to call external services).
 
-- **Portal:** https://aiplatform.console.vngcloud.vn/access-control
-- **API Base URL:** `https://agentbase.api.vngcloud.vn/identity/api/v1`
+* **Portal:** https://aiplatform.console.vngcloud.vn/access-control
+* **API Base URL:** `https://agentbase.api.vngcloud.vn/identity/api/v1`
 
----
-
+***
 
 ## Core Concepts
 
@@ -16,15 +15,15 @@ In AgentBase, an **Identity** is a named, platform-managed record that uniquely 
 
 **An identity has:**
 
-- A **unique name** (scoped to the organization)
-- An optional **description** and metadata
-- A list of **associated auth configurations** (the credentials this identity can retrieve)
+* A **unique name** (scoped to the organization)
+* An optional **description** and metadata
+* A list of **associated auth configurations** (the credentials this identity can retrieve)
 
 **Identity naming rules:**
 
-- 3–50 characters
-- Alphanumeric, underscore `_`, and hyphen `-` only (`^[a-zA-Z0-9_-]+$`)
-- Must be unique within the organization
+* 3–50 characters
+* Alphanumeric, underscore `_`, and hyphen `-` only (`^[a-zA-Z0-9_-]+$`)
+* Must be unique within the organization
 
 ### Identity vs. Runtime
 
@@ -43,19 +42,19 @@ When your agent calls external services (OpenAI, Google, Slack, internal APIs), 
 
 The auth system supports three credential types:
 
-- **Static API Key** — A fixed string (such as an API key) associated with an identity. Use when the external service issues a long-lived API key and you want centralized management.
-- **Delegated API Key** — A credential that is scoped and potentially short-lived, useful for multi-tenant scenarios where different agents should get different scoped keys.
-- **OAuth2 Provider** — For services that use OAuth2 (Google, Slack, and others). AgentBase stores the client credentials and refresh token, and handles token refresh automatically.
+* **Static API Key** — A fixed string (such as an API key) associated with an identity. Use when the external service issues a long-lived API key and you want centralized management.
+* **Delegated API Key** — A credential that is scoped and potentially short-lived, useful for multi-tenant scenarios where different agents should get different scoped keys.
+* **OAuth2 Provider** — For services that use OAuth2 (Google, Slack, and others). AgentBase stores the client credentials and refresh token, and handles token refresh automatically.
 
-| Provider Type               | Use Case                                           | Storage                   |
-| --------------------------- | -------------------------------------------------- | ------------------------- |
+| Provider Type         | Use Case                                           | Storage                   |
+| --------------------- | -------------------------------------------------- | ------------------------- |
 | **Static API Key**    | Long-lived keys (OpenAI, AIP, etc.)                | Encrypted at rest         |
 | **Delegated API Key** | End-user federated keys                            | Per-user, federated       |
 | **OAuth2**            | Third-party services (Google, GitHub, Slack, etc.) | Encrypted, auto-refreshed |
 
 **Security model:** Credentials are stored in HashiCorp Vault.
 
----
+***
 
 ## Agent Identity
 
@@ -66,9 +65,9 @@ The auth system supports three credential types:
 1. Open https://aiplatform.console.vngcloud.vn/access-control
 2. Click **"Create Identity"**
 3. Fill in:
-   - **Name** (required): e.g., `my-order-agent` — lowercase, alphanumeric and hyphens
-   - **Description** (optional): e.g., `Handles order inquiries`
-   - **Allowed Return URLs** (optional): OAuth2 callback URLs for this identity
+   * **Name** (required): e.g., `my-order-agent` — lowercase, alphanumeric and hyphens
+   * **Description** (optional): e.g., `Handles order inquiries`
+   * **Allowed Return URLs** (optional): OAuth2 callback URLs for this identity
 4. Click **Create**
 5. The new identity appears in the list with status `ACTIVE`
 
@@ -95,7 +94,7 @@ The auth system supports three credential types:
 1. Open https://aiplatform.console.vngcloud.vn/access-control
 2. Find the identity → **Delete** → confirm
 
----
+***
 
 ### RESTful API
 
@@ -178,7 +177,7 @@ curl -s -X DELETE "https://agentbase.api.vngcloud.vn/identity/api/v1/agent-ident
   -H "Authorization: Bearer $TOKEN"
 ```
 
----
+***
 
 ### SDK
 
@@ -239,11 +238,11 @@ identity = asyncio.run(client.update_agent_identity_async(
 asyncio.run(client.delete_agent_identity_async(name="my-order-agent"))
 ```
 
----
+***
 
 ## Auth & Secrets
 
-An **agent identity** must exist before creating auth providers. If you haven't created one yet, see [Agent Identity](#agent-identity) above.
+An **agent identity** must exist before creating auth providers. If you haven't created one yet, see [Agent Identity](./#agent-identity) above.
 
 ### Portal
 
@@ -267,9 +266,9 @@ An **agent identity** must exist before creating auth providers. If you haven't 
 3. Fill in: **Name**, **Client ID**, **Client Secret**, **Authorization URL**, **Token URL**
 4. Click **Create** — the response includes a **Callback URL** to register in your OAuth2 app
 
-![1774593811794](../image/04-access-control/1774593811794.png)
+![1774593811794](../../../../.gitbook/assets/1774593811794.png)
 
----
+***
 
 ### RESTful API
 
@@ -414,7 +413,7 @@ curl -s -X POST "https://agentbase.api.vngcloud.vn/identity/api/v1/outbound-auth
   -d '{}' | jq .
 ```
 
----
+***
 
 ### SDK
 
@@ -518,33 +517,32 @@ def handler(payload: dict, context: RequestContext, google_token: str) -> dict:
     return {"events": resp.json().get("items", [])}
 ```
 
----
+***
 
 ## Response Models
 
 **AgentIdentityResponse** fields:
 
-| Field                   | Type         | Description                              |
-| ----------------------- | ------------ | ---------------------------------------- |
-| `id`                  | string       | Unique UUID identifier                   |
-| `name`                | string       | Identity name (immutable after creation) |
-| `description`         | string       | Optional description                     |
-| `allowed_return_urls` | list[string] | OAuth2 callback URLs                     |
-| `created_at`          | datetime     | Creation timestamp                       |
-| `updated_at`          | datetime     | Last update timestamp                    |
+| Field                 | Type          | Description                              |
+| --------------------- | ------------- | ---------------------------------------- |
+| `id`                  | string        | Unique UUID identifier                   |
+| `name`                | string        | Identity name (immutable after creation) |
+| `description`         | string        | Optional description                     |
+| `allowed_return_urls` | list\[string] | OAuth2 callback URLs                     |
+| `created_at`          | datetime      | Creation timestamp                       |
+| `updated_at`          | datetime      | Last update timestamp                    |
 
----
+***
 
 ## Troubleshooting
 
-| Error                           | Cause                                    | Fix                                                               |
-| ------------------------------- | ---------------------------------------- | ----------------------------------------------------------------- |
-| 401 Unauthorized                | Expired or invalid IAM token             | Re-obtain token with valid credentials                            |
+| Error                           | Cause                                    | Fix                                                             |
+| ------------------------------- | ---------------------------------------- | --------------------------------------------------------------- |
+| 401 Unauthorized                | Expired or invalid IAM token             | Re-obtain token with valid credentials                          |
 | 403 Forbidden                   | Service account lacks permissions        | Attach `AgentBaseFullAccess` at https://iam.console.vngcloud.vn |
-| 409 Conflict                    | Identity or provider name already exists | Choose a different name                                           |
-| Name validation error           | Name doesn't match `^[a-zA-Z0-9_-]+$`  | Use only alphanumeric, underscore, and hyphen. 3–50 chars        |
+| 409 Conflict                    | Identity or provider name already exists | Choose a different name                                         |
+| Name validation error           | Name doesn't match `^[a-zA-Z0-9_-]+$`    | Use only alphanumeric, underscore, and hyphen. 3–50 chars       |
 | 404 Not Found                   | Provider name does not exist             | Verify with a `list` operation                                  |
 | Agent can't retrieve credential | Identity name missing                    | Ensure `GREENNODE_AGENT_IDENTITY` env var is set in the runtime |
 
----
-
+***

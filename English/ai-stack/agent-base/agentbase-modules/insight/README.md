@@ -2,20 +2,19 @@
 
 > Monitor and debug your deployed agents using runtime logs, endpoint logs, and resource metrics (CPU/RAM). All Insight operations use the Runtime API.
 
----
-
+***
 
 ## Overview
 
 AgentBase Insight provides three read-only data sources:
 
-| Data Source             | Description                               | API                                                         |
-| ----------------------- | ----------------------------------------- | ----------------------------------------------------------- |
+| Data Source       | Description                               | API                                                       |
+| ----------------- | ----------------------------------------- | --------------------------------------------------------- |
 | **Runtime Logs**  | Container stdout/stderr from all replicas | `POST /agent-runtimes/{id}/logs`                          |
 | **Endpoint Logs** | Logs scoped to a specific endpoint        | `POST /agent-runtimes/{id}/endpoints/{endpointId}/logs`   |
 | **Metrics**       | Point-in-time CPU and RAM usage           | `GET /agent-runtimes/{id}/endpoints/{endpointId}/metrics` |
 
----
+***
 
 ## Prerequisites
 
@@ -33,7 +32,7 @@ curl -s "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNTIME_ID/en
   -H "Authorization: Bearer $TOKEN" | jq '.listData[] | {id, name, url, status}'
 ```
 
----
+***
 
 ## Runtime Logs
 
@@ -44,9 +43,9 @@ Fetch container logs from all replicas of a runtime. Uses offset-based paginatio
 1. Open https://aiplatform.console.vngcloud.vn/runtime
 2. Open the runtime detail page → **"Monitor"** tab → click an endpoint → **"Log"** section
 
-![1774581394627](../image/07-insight/1774581394627.png)
+![1774581394627](../../../../.gitbook/assets/1774581394627.png)
 
----
+***
 
 ### RESTful API
 
@@ -109,7 +108,7 @@ curl -s -X POST "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNTI
 
 **Limits:** `from` max = 5000, `limit` max = 1000
 
----
+***
 
 ## Resource Metrics (CPU / RAM)
 
@@ -119,9 +118,9 @@ Get point-in-time CPU and RAM usage for a specific endpoint.
 
 Open the runtime detail page → **"Monitor"** tab → click an endpoint → **"Metrics"** section
 
-![1774581238335](../image/07-insight/1774581238335.png)
+![1774581238335](../../../../.gitbook/assets/1774581238335.png)
 
----
+***
 
 ### RESTful API
 
@@ -150,7 +149,7 @@ curl -s "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNTIME_ID/en
   }'
 ```
 
----
+***
 
 ### Pseudo-Tailing (Poll Pattern)
 
@@ -171,44 +170,44 @@ done
 
 > **Caution:** Frequent polling generates many API calls. Avoid polling for extended periods.
 
----
+***
 
 ## Log Analysis Guide
 
 ### Common Error Signatures
 
-| Pattern                                          | Meaning                       | Next Step                                     |
-| ------------------------------------------------ | ----------------------------- | --------------------------------------------- |
-| `Traceback (most recent call last)`            | Python exception              | Read the last line for the actual error       |
-| `ModuleNotFoundError: No module named '...'`   | Missing dependency            | Add to `requirements.txt` and rebuild image |
-| `ImportError: cannot import name '...'`        | Wrong package version         | Check package version compatibility           |
-| `ConnectionRefusedError` / `ConnectionError` | Cannot reach external service | Verify service URL and auth credentials       |
-| `401 Unauthorized` / `403 Forbidden`         | Auth failure                  | Check IAM token and outbound auth config      |
-| `OSError: [Errno 98] Address already in use`   | Port 8080 conflict            | Ensure only one process binds port 8080       |
-| `MemoryError` / `Killed`                     | Out of memory                 | Upgrade flavor or optimize memory usage       |
-| `TimeoutError` / `ReadTimeout`               | External API timed out        | Increase timeout, check LLM endpoint health   |
-| `Health check failed`                          | `/health` not returning 200 | Fix health endpoint                           |
+| Pattern                                      | Meaning                       | Next Step                                   |
+| -------------------------------------------- | ----------------------------- | ------------------------------------------- |
+| `Traceback (most recent call last)`          | Python exception              | Read the last line for the actual error     |
+| `ModuleNotFoundError: No module named '...'` | Missing dependency            | Add to `requirements.txt` and rebuild image |
+| `ImportError: cannot import name '...'`      | Wrong package version         | Check package version compatibility         |
+| `ConnectionRefusedError` / `ConnectionError` | Cannot reach external service | Verify service URL and auth credentials     |
+| `401 Unauthorized` / `403 Forbidden`         | Auth failure                  | Check IAM token and outbound auth config    |
+| `OSError: [Errno 98] Address already in use` | Port 8080 conflict            | Ensure only one process binds port 8080     |
+| `MemoryError` / `Killed`                     | Out of memory                 | Upgrade flavor or optimize memory usage     |
+| `TimeoutError` / `ReadTimeout`               | External API timed out        | Increase timeout, check LLM endpoint health |
+| `Health check failed`                        | `/health` not returning 200   | Fix health endpoint                         |
 
----
+***
 
 ### Correlating Logs with Metrics
 
-| CPU       | RAM    | Diagnosis                                                                    |
-| --------- | ------ | ---------------------------------------------------------------------------- |
+| CPU       | RAM    | Diagnosis                                                                   |
+| --------- | ------ | --------------------------------------------------------------------------- |
 | High      | Normal | CPU-bound workload — scale up or optimize                                   |
 | Normal    | High   | Memory leak or large data structures — scale up or fix leak                 |
-| Both high | —     | Resource exhaustion — scale up flavor                                       |
-| Both low  | —     | External bottleneck (LLM API latency, network) — add request timing in logs |
+| Both high | —      | Resource exhaustion — scale up flavor                                       |
+| Both low  | —      | External bottleneck (LLM API latency, network) — add request timing in logs |
 
----
+***
 
 ## What's Supported
 
-- **Log time range filter** — Filter logs by a specific time window (start/end timestamp), so you can narrow down exactly when an issue occurred without fetching the entire log history.
-- **Log keyword search** — Search logs by keyword or phrase directly in the query, returning only matching entries without needing to grep locally after fetching.
-- **Historical metrics** — Query CPU and RAM usage over a time range, not just the current point-in-time snapshot. Useful for spotting resource trends, spikes, and patterns leading up to an incident.
+* **Log time range filter** — Filter logs by a specific time window (start/end timestamp), so you can narrow down exactly when an issue occurred without fetching the entire log history.
+* **Log keyword search** — Search logs by keyword or phrase directly in the query, returning only matching entries without needing to grep locally after fetching.
+* **Historical metrics** — Query CPU and RAM usage over a time range, not just the current point-in-time snapshot. Useful for spotting resource trends, spikes, and patterns leading up to an incident.
 
----
+***
 
 ## Troubleshooting
 
@@ -219,5 +218,4 @@ done
 | Empty logs           | Container never started      | Check runtime status; verify image pull succeeded |
 | Logs cut off at 5000 | Max offset limit reached     | Logs older than 5000 entries are not accessible   |
 
----
-
+***
