@@ -43,8 +43,8 @@ Các quy tắc sau áp dụng cho việc đặt tên Log pipeline trong vMonitor
 * Tên Log pipeline phải dài từ 1 (tối thiểu) đến 63 (tối đa) ký tự.
 * Tên Log pipeline chỉ có thể bao gồm các chữ cái viết thường (a-z,), số (0-9), dấu gạch ngang (-).
 * Tên Log pipeline phải bắt đầu bởi một chữ cái và kết thúc bởi một chữ cái hoặc một chữ số.
-* Tên Log pipeline không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, tên tài khoản, mật khẩu đăng nhập,...).&#x20;
-* Tên Log pipeline phải là duy nhất trong một tài khoản GreenNode cho đến khi Log pipeline đó bị xóa.&#x20;
+* Tên Log pipeline không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, tên tài khoản, mật khẩu đăng nhập,...).
+* Tên Log pipeline phải là duy nhất trong một tài khoản GreenNode cho đến khi Log pipeline đó bị xóa.
 
 #### Quy tắc đặt tên Processor group <a href="#lamviecvoilogpipeline-quytacdattenprocessorgroup" id="lamviecvoilogpipeline-quytacdattenprocessorgroup"></a>
 
@@ -53,8 +53,8 @@ Các quy tắc sau áp dụng cho việc đặt tên Processor group trong vMoni
 * Tên Processor group phải dài từ 1 (tối thiểu) đến 63 (tối đa) ký tự.
 * Tên Processor group chỉ có thể bao gồm các chữ cái viết thường (a-z,), số (0-9), dấu gạch ngang (-).
 * Tên Processor group phải bắt đầu bởi một chữ cái và kết thúc bởi một chữ cái hoặc một chữ số.
-* Tên Processor group không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, tên tài khoản, mật khẩu đăng nhập,...).&#x20;
-* Tên Processor group phải là duy nhất trong một tài khoản GreenNode cho đến khi Processor group đó bị xóa.&#x20;
+* Tên Processor group không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, tên tài khoản, mật khẩu đăng nhập,...).
+* Tên Processor group phải là duy nhất trong một tài khoản GreenNode cho đến khi Processor group đó bị xóa.
 
 #### Quy tắc đặt tên Processor <a href="#lamviecvoilogpipeline-quytacdattenprocessor" id="lamviecvoilogpipeline-quytacdattenprocessor"></a>
 
@@ -63,8 +63,8 @@ Các quy tắc sau áp dụng cho việc đặt tên Processor trong vMonitor Pl
 * Tên Processor phải dài từ 1 (tối thiểu) đến 63 (tối đa) ký tự.
 * Tên Processor chỉ có thể bao gồm các chữ cái viết thường (a-z,), số (0-9), dấu gạch ngang (-).
 * Tên Processor phải bắt đầu bởi một chữ cái và kết thúc bởi một chữ cái hoặc một chữ số.
-* Tên Processor không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, tên tài khoản, mật khẩu đăng nhập,...).&#x20;
-* Tên Processor phải là duy nhất trong một tài khoản GreenNode cho đến khi Processor đó bị xóa.&#x20;
+* Tên Processor không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, tên tài khoản, mật khẩu đăng nhập,...).
+* Tên Processor phải là duy nhất trong một tài khoản GreenNode cho đến khi Processor đó bị xóa.
 
 ***
 
@@ -88,7 +88,7 @@ Các quy tắc sau áp dụng cho việc đặt tên Processor trong vMonitor Pl
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Log.**
 3. Chọn **Log pipeline.**
-4. Trong danh sách log pipeline đang có, tại **Log pipeline** mà bạn muốn chỉnh sửa, chọn <img src="../../../../.gitbook/assets/image (316).png" alt="" data-size="line">.
+4. Trong danh sách log pipeline đang có, tại **Log pipeline** mà bạn muốn chỉnh sửa, chọn <img src="../../../../.gitbook/assets/image (40).png" alt="" data-size="line">.
 5. Chọn **Edit pipeline**.
 6. Chỉnh sửa các thông số cho **Log pipeline** mà bạn mong muốn. Bạn có thể chỉnh sửa tất cả các trường thông tin trong cấu hình một Log pipeline. Việc chỉnh sửa này tương tự như khi bạn thực hiện tạo mới một Log pipeline theo hướng dẫn bên trên.
 7. Chọn **Save.**
@@ -97,12 +97,12 @@ Các quy tắc sau áp dụng cho việc đặt tên Processor trong vMonitor Pl
 
 ### Xóa Log pipeline <a href="#lamviecvoilogpipeline-xoalogpipeline" id="lamviecvoilogpipeline-xoalogpipeline"></a>
 
-Khi bạn không có nhu cầu sử dụng một Log pipeline tùy chỉnh nữa, bạn có thể thực hiện xóa Log pipeline khỏi hệ thống theo hướng dẫn bên dưới:&#x20;
+Khi bạn không có nhu cầu sử dụng một Log pipeline tùy chỉnh nữa, bạn có thể thực hiện xóa Log pipeline khỏi hệ thống theo hướng dẫn bên dưới:
 
 1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Log.**
-3. Tại **Log pipeline** bạn muốn thực hiện xóa, chọn <img src="../../../../.gitbook/assets/image (317).png" alt="" data-size="line">
+3. Tại **Log pipeline** bạn muốn thực hiện xóa, chọn <img src="../../../../.gitbook/assets/image (23).png" alt="" data-size="line">
 4. Chọn **Delete**.
 5. Tại màn hình xác nhận xóa Log pipeline, chọn **Delete**.
 
-Sau khi bạn thực hiện xóa thành công thì Log pipeline của bạn sẽ bị xóa hoàn toàn khỏi hệ thống của chúng tôi. Bạn không thể khôi phục lại Log pipeline đã xóa nên hãy lưu ý cẩn thận khi sử dụng tính năng này.&#x20;
+Sau khi bạn thực hiện xóa thành công thì Log pipeline của bạn sẽ bị xóa hoàn toàn khỏi hệ thống của chúng tôi. Bạn không thể khôi phục lại Log pipeline đã xóa nên hãy lưu ý cẩn thận khi sử dụng tính năng này.

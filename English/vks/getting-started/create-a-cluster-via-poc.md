@@ -244,9 +244,9 @@ kubectl apply -f persistent-volume.yaml
 
 For **Snapshot** resources, you cannot specify snapshot to use the POC wallet from VKS. To create a Snapshot via the POC wallet, on **vServer Portal**, please select **Activate Snapshot**, then on the **Checkout** screen, please select the **POC** wallet. At this point, **all your snapshot resources will be created via the POC wallet**. Therefore, stopping POC needs to be done through **vConsole** or **vServer Portal**. See the image below for reference.
 
-<figure><img src="../../.gitbook/assets/image (450).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (452).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
 
 **Install GreenNode Snapshot Controller**
 

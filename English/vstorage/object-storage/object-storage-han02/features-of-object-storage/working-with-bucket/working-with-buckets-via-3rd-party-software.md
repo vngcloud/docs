@@ -15,8 +15,6 @@ To integrate the S3 Browser tool with vStorage, you can follow the instructions 
 
 <figure><img src="../../../../../.gitbook/assets/image (530).png" alt="" width="295"><figcaption></figcaption></figure>
 
-
-
 3. The Add New Account screen appears, now you enter the following information:
 
 * **Display name:** Display name of the account. Example: Demo\_HAN02
@@ -70,7 +68,7 @@ To set up ACL for a bucket using S3 Browser, right-click on the bucket, then sel
 <figure><img src="../../../../../.gitbook/assets/image (534).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Chú ý:**&#x20;
+**Chú ý:**
 
 * Unlike farm HCM04, on Farm HAN02, if you want to share public access to a bucket – meaning allowing everyone to access (e.g. to download files, view photos, etc.) – you must use a Bucket Policy to clearly define that access. For example, a Bucket Policy to allow public read objects:
 
@@ -138,7 +136,7 @@ To set up Lifecycle rotation for a bucket using S3 Browser, right-click on the b
 
 Các chuyển đổi được hỗ trợ được hiển thị trên sơ đồ bên dưới:
 
-<figure><img src="../../../../../.gitbook/assets/transit_diagram (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/transit_diagram.png" alt=""><figcaption></figcaption></figure>
 
 Để thiết lập Lifecycle transit cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Lifecycle Configuration**. Chi tiết tham khảo thêm tại [https://s3browser.com/bucket-lifecycle-configuration.aspx](https://s3browser.com/bucket-lifecycle-configuration.aspx)
 

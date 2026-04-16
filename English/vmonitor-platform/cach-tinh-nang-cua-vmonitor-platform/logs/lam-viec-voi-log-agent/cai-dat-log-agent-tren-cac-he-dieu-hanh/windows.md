@@ -38,14 +38,9 @@ permissions: 0644
 </code></pre></td></tr><tr><td><p>Copy</p><pre><code>cd C:\filebeat-8.7.1-windows-x86_64
 .\filebeat.exe -c .\filebeat.yml
 </code></pre></td></tr><tr><td><p>Copy</p><pre><code>filebeat.inputs:
-
 type: log
 paths:
-
 C:\agent.log
-
-
-
 output.kafka:
 hosts: ["$BOOTSTRAP_SERVERS"]
 topic: $TOPIC
@@ -55,7 +50,8 @@ required_acks: 1
 compression: gzip
 max_message_bytes: 1000000
 ssl.certificate_authorities:
-- $PATH_FILE_VNG_TRUST_PEM
+
+$PATH_FILE_VNG_TRUST_PEM
 ssl.certificate: $PATH_FILE_USER_CER_PEM
 ssl.key: $PATH_FILE_USER_KEY_PEM
 ssl.verification_mode: "none"

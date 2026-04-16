@@ -27,7 +27,7 @@ Create VPN Step By Step
     * **VPC** (Local Public Gateway): Select the VPC that allows requesting VPN (Local LAN Private CIDR in the concept of VPN).
     * **Subnet:** Select the Subnet on the selected VPC. After finishing provisioning, the VPN includes a Private Gateway IP in this subnet, which will be used to assign in the Route Table.
 
-    <figure><img src="../../../.gitbook/assets/image (401) (1).png" alt=""><figcaption><p>VPN Basic Configuration</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (401).png" alt=""><figcaption><p>VPN Basic Configuration</p></figcaption></figure>
 
 ### <mark style="color:blue;">**Config Default Site And Tunnel**</mark>
 

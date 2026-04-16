@@ -85,7 +85,7 @@ Token Zalo có dạng `numeric_id:secret`, ví dụ:
 
 Sao chép **toàn bộ** token (bao gồm cả phần sau dấu `:`) và lưu vào nơi an toàn.
 
-<figure><img src="../../../.gitbook/assets/bot token (1).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/bot token.jpg" alt=""><figcaption></figcaption></figure>
 
 > **Lưu ý:** Token Zalo thường dài hơn Telegram — đảm bảo copy đầy đủ, không bỏ sót phần `:secret`.
 

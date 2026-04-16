@@ -48,7 +48,7 @@ Create a project by following the steps below:
 8. Select **Period** according to your needs.
 9. **Go through the Checkout** steps and your **Project** will be created.
 
-<figure><img src="../../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
 

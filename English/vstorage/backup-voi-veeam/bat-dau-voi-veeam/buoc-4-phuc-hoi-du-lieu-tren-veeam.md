@@ -60,4 +60,4 @@ Here, the user selects the Job that backed up the folder, then selects the compu
 
 8. When the system has completed processing, the user can see that the "lost file" has been successfully restored. Complete the data recovery process.
 
-<figure><img src="../../../.gitbook/assets/image (268) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (268).png" alt="" width="563"><figcaption></figcaption></figure>

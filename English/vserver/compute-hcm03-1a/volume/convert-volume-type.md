@@ -106,7 +106,7 @@ The purpose of this step is to back up new/changed data during step 1.
     <figure><img src="../../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 *   2.2: Click "Action Required" to continue the migration process. A "Migrate Volume" window will appear; click "Continue" to confirm. This process will interrupt services on the current volume. The downtime depends on the amount of data changed during step 1. The migration status will appear as follows:
 
-    <figure><img src="../../../.gitbook/assets/image (8) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
 
 _<mark style="color:orange;">**If the volume is in use on a virtual server, users must shut down the server to continue the migration.**</mark>_
 

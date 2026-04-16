@@ -8,7 +8,7 @@ The service supports broadcasting live content such as events, TV shows, and spo
 
 ## Model <a href="#so-do-hoat-dong" id="so-do-hoat-dong"></a>
 
-<figure><img src="../../.gitbook/assets/image (150) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
 
 **Data Distribution Mechanism**
 
@@ -68,7 +68,7 @@ First, you need to initialize a Live Entrypoint following these instructions:
 
 4. Select **Submit** .
 
-<figure><img src="../../.gitbook/assets/image (15) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

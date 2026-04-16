@@ -433,7 +433,7 @@ Once you create a Fleet, you can edit its configuration:
 * **Change Host Cluster** in existing Fleet.
 * **Add or remove cluster members** as needed, but always ensure Fleet has at least one cluster host.
 
-<figure><img src="../../.gitbook/assets/image (517) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (517).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

@@ -37,7 +37,7 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 **Bước 2: Sau khi server chạy Pfsense được khởi tạo thành công**. Để vào GUI của Pfsense, bạn cần sử dụng địa chỉ IP của External Interface đăng nhập với Tên đăng nhập và mật khẩu mặc định là **admin/pfsense.**
 
-<figure><img src="../../../../.gitbook/assets/pfsense_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/p1.png" alt=""><figcaption></figcaption></figure>
 
 * Để lấy thông tin IP này, bạn vào phần **Network Interface** của **Pfsense** để xem thông tin
 
@@ -62,35 +62,35 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 **Bước 4**: Tiến hành **General Setup**, bạn vui lòng thực hiện như bên dưới
 
-<figure><img src="../../../../.gitbook/assets/pfsense_6 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pfsense_6.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/pfsense_7.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/pfsense_8 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pfsense_8.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/pfsense_9.png" alt=""><figcaption></figcaption></figure>
 
 * Cấu hình cho **WAN Interface**
 
-<figure><img src="../../../../.gitbook/assets/pfsense_10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
 * Thay đổi **password** vào **GUI**
 
-<figure><img src="../../../../.gitbook/assets/pfsense_11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
 * Tiến hành **reload**
 
-<figure><img src="../../../../.gitbook/assets/pfsense_12.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 * Đã hoàn thành **General Setup**
 
-<figure><img src="../../../../.gitbook/assets/pfsense_13.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Cấu hình **Interface LAN**
 
 * Vào phần **Interfaces** -> **Assignments** để gắn thêm **Interface LAN**
 
-<figure><img src="../../../../.gitbook/assets/pfsense_14.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
 * Nhấn vào **Add**
 
@@ -110,19 +110,19 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 * Cấu hình **IP** cho **LAN**
 
-<figure><img src="../../../../.gitbook/assets/pfsense_19.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
 * Sau đó tiến hành **Add a new gateway:** tiến hành nhập **Gateway cho LAN Interface**
 
-<figure><img src="../../../../.gitbook/assets/pfsense_20.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
 * Để lấy thông tin IP này, bạn vào mục **Network Interface** của server Pfsense để xem thông tin:
 
-<figure><img src="../../../../.gitbook/assets/pfsense_22.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
 * Tiến hành **Save** lại
 
-<figure><img src="../../../../.gitbook/assets/pfsense_23.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 6**: Xem lại thông tin cấu hình
 
@@ -134,13 +134,13 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 * Tại source bạn chọn dải **IP** được phép đi ra **Internet**
 
-<figure><img src="../../../../.gitbook/assets/paloalto_27.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 8:** Cấu hình **NAT** để các **vServer** có thể đi ra được **Internet**
 
 * Vào mục **Firewall** -> **NAT**
 
-<figure><img src="../../../../.gitbook/assets/pfsense_28.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
 
 * Chọn mode **NAT** sau đó tiến hành cấu hình **NAT**
 
@@ -181,7 +181,7 @@ Sau khi Pfsense được khởi tạo và cấu hình thành công, bạn cần 
 
 Ví dụ:
 
-<figure><img src="../../../../.gitbook/assets/pfsense_route_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/6.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -191,8 +191,8 @@ Tiến hành ping google.com hoặc 8.8.8.8 để kiểm tra
 
 * Trước khi **Enable NAT** server không ra được internet
 
-<figure><img src="../../../../.gitbook/assets/pfsense_ping_failed.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Sau khi **cấu hình NAT** tiến hành ping 8.8.8.8 để kiểm tra
 
-<figure><img src="../../../../.gitbook/assets/pfsense_ping_successful.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>

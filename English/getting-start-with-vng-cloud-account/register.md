@@ -22,7 +22,7 @@ Navigate to "Create New Account" screen as shown in the following image:
 
 **Step 4:** In the instruction email, click on **this link** to proceed to the next step.
 
-<figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 5:** After clicking the link in the email from **step 4**, the final registration form will open. Fill in all the required information on the registration form.
 

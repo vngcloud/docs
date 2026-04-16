@@ -29,7 +29,7 @@ Before you can perform Windows server initialization, make sure you initialize V
 13. In **Other Settings** , you can choose Server Group or not according to your needs. You can assign Server to previously created Groups (With properties such as same Compute Host or different Compute Host)
 14. Select **Launch Server** and follow the payment steps to complete the server initialization.
 
-![](<../../../../.gitbook/assets/image (22) (2) (1).png>)
+![](<../../../../.gitbook/assets/image (453).png>)
 
 </details>
 
@@ -59,21 +59,21 @@ Below is a basic guide for connecting to Windows server on vServer, if you have 
 2. Select **the Server** you want to connect to, then select **Action, then select Connect.**
 3. On the **Connect to Server** page , select **the RDP (Window) tab**
 
-![](<../../../../.gitbook/assets/image (23) (2) (1).png>)
+![](<../../../../.gitbook/assets/image (454).png>)
 
 4. Select **Download RDP File** . Your browser will prompt you to open or save the RDP file. When you've finished downloading the file, select **Done** to return to the server page:
 5. Open the downloaded file to remote to Windows server. Select **Connect** to continue connecting to your server.
 
-![](<../../../../.gitbook/assets/image (24) (2).png>)
+![](<../../../../.gitbook/assets/image (24).png>)
 
 6. The administrator account is selected by default. You need to copy and paste the password you saved earlier into the login pop-up (This information is taken from the email), in which enter the information **InstanceLogin** into **Username** , **InstancePassword** into **Password.**
 7. Select **OK.** Due to the nature of self-signed certificates, you may receive a warning that the security certificate cannot be validated. Use the following steps to verify the identity of the remote computer, or simply select **Yes** (Windows) or **Continue** (Mac OS X) if you trust the certificate.
 
-![](<../../../../.gitbook/assets/image (13) (2) (1).png>)
+![](<../../../../.gitbook/assets/image (456).png>)
 
 8. The screen will show that the connection to the **Windows** server is successful.
 
-![](<../../../../.gitbook/assets/image (14) (2) (1).png>)
+![](<../../../../.gitbook/assets/image (457).png>)
 
 </details>
 
@@ -89,7 +89,7 @@ After you have connected to Windows server, you need to make sure your Windows s
     * **IP Address:** static IP address of the VM.
     * **Subnet Mask:** Corresponding subnet, for example: 255.0.0.0
 
-<figure><img src="../../../../.gitbook/assets/image (15) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (458).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -112,35 +112,35 @@ To install and configure DNS Server on Windows Server, you can follow these step
 1. **From the Desktop** screen , open **the Start** menu and select **Server Manager.**
 2. Select **All Servers,** right click then select **Add roles and Features**
 
-<figure><img src="../../../../.gitbook/assets/image (29) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (29).png" alt="" width="563"><figcaption></figcaption></figure>
 
 3. On the **Before you begin page,** click **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (30) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (30).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. On the **Installation Type** page : Select **Role-based or feature-based installation** then select **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (31) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (31).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5. In **Server Selection** : select **Select a server from the server pool** and **select the current server** then select **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (32) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (32).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. In **Server Roles** : Tick **DNS Server** then click **Next** and **Install** to install.
 
-<figure><img src="../../../../.gitbook/assets/image (33) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (33).png" alt="" width="563"><figcaption></figcaption></figure>
 
 7. At this point, you will be prompted to add the necessary features for the DNS Server, select **Add Features** if you agree with the defaults.
 
-<figure><img src="../../../../.gitbook/assets/image (34) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (34).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8. On the **Confirmation** page , review your selections and click Install to begin installing the DNS Server.
 
-<figure><img src="../../../../.gitbook/assets/image (35) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (35).png" alt="" width="563"><figcaption></figcaption></figure>
 
 9. Once the installation is complete, click **Close** .
 
-<figure><img src="../../../../.gitbook/assets/image (36) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (36).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Create a Forward Lookup Zone <a href="#tao-mot-forward-lookup-zone" id="tao-mot-forward-lookup-zone"></a>
 
@@ -148,43 +148,43 @@ Next, you will need to create a Forward Lookup Zone to convert the domain to an 
 
 1. Open **DNS Manager** by selecting **Tools** , then selecting **DNS**
 
-<figure><img src="../../../../.gitbook/assets/image (37) (2).png" alt="" width="336"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (37).png" alt="" width="336"><figcaption></figcaption></figure>
 
 2. In DNS Manager, select the existing DNS and continue to right-click on **Forward Lookup Zones** and select **New Zone**
 
-<figure><img src="../../../../.gitbook/assets/image (38) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (38).png" alt="" width="563"><figcaption></figcaption></figure>
 
 3. The Create new zone screen appears, continue to select **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (39) (1).png" alt="" width="514"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (39).png" alt="" width="514"><figcaption></figcaption></figure>
 
 4. **At the Zone Type** screen : select **Primary zone,** then select **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (40) (1).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (40).png" alt="" width="509"><figcaption></figcaption></figure>
 
 5. **At the Zone Name** screen : enter your domain name and select **Next** . For example: `example.local`. <mark style="color:red;">**Remember this domain because this is the DNS domain you need to use to create AD and enter information when creating File Storage on the File Storage Portal system.**</mark>
 
-<figure><img src="../../../../.gitbook/assets/image (41) (2).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (41).png" alt="" width="509"><figcaption></figcaption></figure>
 
 6. **At the Zone File** screen , select **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (42) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
 7. **At the Dynamic Update** screen : Select **Do not allow dynamic updates** , then select **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (43) (2).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (43).png" alt="" width="509"><figcaption></figcaption></figure>
 
 8. Select **Finish** to complete creating the New Zone.
 
-<figure><img src="../../../../.gitbook/assets/image (44) (2).png" alt="" width="508"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (44).png" alt="" width="508"><figcaption></figcaption></figure>
 
 9. After selecting **Finish** , you will see the forwarding lookup zone on the main screen as shown.
 
-<figure><img src="../../../../.gitbook/assets/image (45) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 10. After creating the zone, you need to add a record for **the Domain Controller** by selecting the newly created **Zone** , right-clicking and selecting **New Host (A or AAAA)**
 
-<figure><img src="../../../../.gitbook/assets/image (46) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
 11. **On the New Host** screen , you need to:
 
@@ -194,7 +194,7 @@ Next, you will need to create a Forward Lookup Zone to convert the domain to an 
 
 If you choose **Create associated pointer (PTR) record** , you need to create a **Reverse Loopup Zone** , the initialization steps are similar to creating **a Forward Lookup Zone** .
 
-<figure><img src="../../../../.gitbook/assets/image (47) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 ### Create a Reverse Lookup Zone <a href="#tao-mot-reverse-lookup-zone" id="tao-mot-reverse-lookup-zone"></a>
 
@@ -202,50 +202,50 @@ Next, you will need to create a Reverse Lookup Zone to convert the IP to a domai
 
 1. Open **DNS Manager** by selecting **Tools** , then selecting **DNS**
 
-<figure><img src="../../../../.gitbook/assets/image (37) (2).png" alt="" width="336"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (37).png" alt="" width="336"><figcaption></figcaption></figure>
 
 2. In DNS Manager, select the existing DNS and continue to right-click on **Reverse Lookup Zones** and select **New Zone**
 
-<figure><img src="../../../../.gitbook/assets/image (49) (2).png" alt="" width="407"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (49).png" alt="" width="407"><figcaption></figcaption></figure>
 
 3. **At the Zone Type** screen : select **Primary zone,** then select **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (50) (2).png" alt="" width="407"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (50).png" alt="" width="407"><figcaption></figcaption></figure>
 
 4. The Create new zone screen appears, select **IPv4 Reverse Lookup Zone** and continue to select **Next.**
 
-<figure><img src="../../../../.gitbook/assets/image (51) (2).png" alt="" width="406"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (51).png" alt="" width="406"><figcaption></figcaption></figure>
 
 5. **At the Reverse Lookup Zone Name** screen : enter Network ID, the Network ID here is the subnet of the IP that you need to perform reverse lookup and select **Next** . For example: `10.50.3`.
 
-<figure><img src="../../../../.gitbook/assets/image (52) (2).png" alt="" width="407"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (52).png" alt="" width="407"><figcaption></figcaption></figure>
 
 6. **At the Zone File** screen , you can create a new Zone File or select an existing Zone File, then select **Next.**
 
-<figure><img src="../../../../.gitbook/assets/image (53) (2).png" alt="" width="407"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (53).png" alt="" width="407"><figcaption></figcaption></figure>
 
 7. **At the Dynamic Update** screen : Select **Do not allow dynamic updates** , then select **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (54) (2).png" alt="" width="407"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (54).png" alt="" width="407"><figcaption></figcaption></figure>
 
 8. Select **Finish** to complete creating the New Zone.
 
-<figure><img src="../../../../.gitbook/assets/image (55) (2).png" alt="" width="407"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (55).png" alt="" width="407"><figcaption></figcaption></figure>
 
 9. After selecting **Finish** , you will see Reverse lookup zone on the main screen as shown
 
-<figure><img src="../../../../.gitbook/assets/image (56) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
 10. After creating **a reverse lookup zone** , you need to create **a Pointer (PTR)** by selecting the newly created **Zone** , right-clicking and selecting **New Pointer (PTR)**
 
-<figure><img src="../../../../.gitbook/assets/image (57) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
 11. **On the New Resource Record** screen , you need to:
     1. **Host IP Address** : Enter the static IP address of the Domain Controller (eg: `10.50.3.9`).
     2. **Host Name:** Enter your Windows server name (eg: `demo-smb`).
     3. Click **OK** .
 
-<figure><img src="../../../../.gitbook/assets/image (58) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
 ### Check DNS name <a href="#kiem-tra-dns-name" id="kiem-tra-dns-name"></a>
 
@@ -287,48 +287,48 @@ To install and configure Active Directory Domain Service on Windows Server, you 
 1. **From the Desktop** screen , open **the Start** menu and select **Server Manager**
 2. Select **All Servers,** right click then select **Add roles and Features**
 
-<figure><img src="../../../../.gitbook/assets/image (59) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
 3. In the **Before You Begin** section , select **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (60) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (60).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. In **Installation Type** : Select **Role-based or feature-based installation** then select **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (61) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (61).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5. In **Server Selection** : select **Select a server from the server pool** and **select the current server** then select **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (32) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (32).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. In the **Server Roles** section : Tick **Active Directory Domain Services.**
 
-<figure><img src="../../../../.gitbook/assets/image (63) (3).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (63).png" alt="" width="563"><figcaption></figcaption></figure>
 
 7. At this point, you will be prompted to add the required features to Active Directory, select **Add Features** if you agree with the defaults, then select **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (64) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (64).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8. On the **Feature** page , keep the default parameters and select **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (65) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (65).png" alt="" width="563"><figcaption></figcaption></figure>
 
 9. On the AD DS page, select **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (66) (3).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (66).png" alt="" width="563"><figcaption></figcaption></figure>
 
 10. On the **Confirmation** page , review your selections and click **Install** to begin installing AD DS.
 
-<figure><img src="../../../../.gitbook/assets/image (67) (3).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (67).png" alt="" width="563"><figcaption></figcaption></figure>
 
 11. After selecting **Install** . The system will start installing, you do not need to restart the server immediately after installation.
 12. When the installation is complete, you continue to select **Promote this server to a domain controller**
 
-<figure><img src="../../../../.gitbook/assets/image (68) (3).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (68).png" alt="" width="563"><figcaption></figcaption></figure>
 
 13. **At the Deployment Configuration** screen , select **Add a new forest** then enter **the DNS domain name** created (<mark style="color:red;">**which is the Zone name created in the Create a Forward Lookup Zone step**</mark>) then select **Next**
 
-<figure><img src="../../../../.gitbook/assets/image (69) (3).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (69).png" alt="" width="563"><figcaption></figcaption></figure>
 
 14. **At the Domain Controller Options** screen , enter **the Password** and **Confirm Password** for your DSRM.
 15. In the DNS Option section, you skip it and just click **Next.**

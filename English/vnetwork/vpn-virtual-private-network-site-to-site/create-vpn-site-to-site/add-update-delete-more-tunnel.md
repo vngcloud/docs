@@ -47,4 +47,4 @@ User can select dropdown list to action
 * Select the "Delete" Icon on the right side of the Tunnel that needs to delete
 * Click "Delete" to confirm delete
 
-<figure><img src="../../../.gitbook/assets/image (420) (1).png" alt=""><figcaption><p>Confirm deletion</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (420).png" alt=""><figcaption><p>Confirm deletion</p></figcaption></figure>
