@@ -10,6 +10,8 @@ VKS (VNG Kubernetes Engine) has just released its latest update, bringing a nota
   * View the certificate expiry date directly on the Portal before downloading.
   * Automatic certificate renewal when eligible; manual renewal supported when needed.
   * For detailed instructions, see [Kubeconfig](../clusters/kubeconfig.md).
+  * API documentation for creating and managing clusters via API: [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html).
+  * Terraform documentation for deploying clusters with Infrastructure as Code: [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
 
 ***
 

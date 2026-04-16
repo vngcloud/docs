@@ -10,6 +10,8 @@ VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới nhất, mang
   * Xem ngày hết hạn certificate trực tiếp trên Portal trước khi tải xuống.
   * Tự động renew certificate khi đủ điều kiện; hỗ trợ renew thủ công nếu cần.
   * Hướng dẫn chi tiết tại [Kubeconfig](../clusters/kubeconfig.md).
+  * Tài liệu API để tạo và quản lý cluster qua API: [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html).
+  * Tài liệu Terraform để triển khai cluster bằng Infrastructure as Code: [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
 
 ***
 
