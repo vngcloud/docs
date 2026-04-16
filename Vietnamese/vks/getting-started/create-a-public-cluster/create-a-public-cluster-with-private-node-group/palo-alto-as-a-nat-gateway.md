@@ -30,13 +30,13 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 **Bước 1:** Sau khi khởi tạo Palo Alto từ vMarketPlace theo hướng dẫn bên trên, bạn có thể truy cập vào giao diện vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) để kiểm tra server chạy Palo Alto đã được khởi tạo xong chưa. <mark style="color:red;">**Tiếp theo, bạn mở rule Any trên Security Group cho server Palo Alto vừa tạo. Việc mở rule Any trên Security Group sẽ cho phép tất cả lưu lượng truy cập đến server Palo Alto.**</mark>
 
-<figure><img src="../../../../.gitbook/assets/paloalto_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pfsense_1.png" alt=""><figcaption></figcaption></figure>
 
 **Bước 2: Sau khi server chạy Palo Alto được khởi tạo thành công**. Để vào GUI của Palo Alto bạn cần có 1 vServer chạy Windows. Sau đó bạn truy cập vào bằng IP Internal Interface với tên đăng nhập và mật khẩu mặc định là: **admin/admin**
 
 Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI của Palo Alto. Bạn cần tạo cùng VPC và sử dụng subnet khác với subnet có priority là 1 khi khởi tạo Palo Alto
 
-<figure><img src="../../../../.gitbook/assets/paloalto_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/3 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3**: Sau khi đăng nhập xong, bạn cần thực hiện thay đổi mật khẩu lần đầu. Hãy nhập mật khẩu mới theo mong muốn của bạn.
 
@@ -44,15 +44,15 @@ Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI c�
 
 * Chọn bút **Add**
 
-<figure><img src="../../../../.gitbook/assets/paloalto_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/4 (1).png" alt=""><figcaption></figcaption></figure>
 
 * Đặt tên cho **Zone**: **Inside** sau đó chọn **OK**
 
-<figure><img src="../../../../.gitbook/assets/paloalto_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/5 (1).png" alt=""><figcaption></figcaption></figure>
 
 * Làm tương tự đối với **Zone Outside**
 
-<figure><img src="../../../../.gitbook/assets/paloalto_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/6 (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5**: Cấu hình cho **External Interface**
 
@@ -60,64 +60,64 @@ Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI c�
 * Virtual Router: **default**
 * Security Zone: **Outside**
 
-<figure><img src="../../../../.gitbook/assets/paloalto_6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/7 (1).png" alt=""><figcaption></figcaption></figure>
 
 * Chuyển sang **Tab IPv4** và chọn **Add** để nhập **Static IP** cho **External Interface**
 
-<figure><img src="../../../../.gitbook/assets/paloalto_7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/8.png" alt=""><figcaption></figcaption></figure>
 
 * Để lấy thông tin IP này bạn vào phần **Network Interface** của **Palo Alto** để xem thông tin
 
-<figure><img src="../../../../.gitbook/assets/paloalto_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/9.png" alt=""><figcaption></figcaption></figure>
 
 * Chuyển sang tab **Advanced**, ở phần **MTU** bạn cần chỉnh thành **1400**
 
-<figure><img src="../../../../.gitbook/assets/paloalto_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/10.png" alt=""><figcaption></figcaption></figure>
 
 **Bước 6:** Thực hiện cấu hình tương tự cho các **Internal Interface**
 
-<figure><img src="../../../../.gitbook/assets/paloalto_10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/11.png" alt=""><figcaption></figcaption></figure>
 
 * Tại tab **IPv4:** bạn tiến hành thiết lập **Static IP**
 
-<figure><img src="../../../../.gitbook/assets/paloalto_11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/12.png" alt=""><figcaption></figcaption></figure>
 
 * Chuyển sang tab **Advanced**, ở phần **MTU** bạn chỉnh thành 1400
 
-<figure><img src="../../../../.gitbook/assets/paloalto_12.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/13.png" alt=""><figcaption></figcaption></figure>
 
 **Bước 7:** Tạo **static route**
 
 * Vào phần **Network** -> **Virtual Routers**-> Chọn **default**-> Chuyển sang mục **Static Routes**
 
-<figure><img src="../../../../.gitbook/assets/paloalto_13.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/14.png" alt=""><figcaption></figcaption></figure>
 
 * Thực hiện tạo 1 **route** như hình bên dưới
 
-<figure><img src="../../../../.gitbook/assets/paloalto_14.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/15.png" alt=""><figcaption></figcaption></figure>
 
 **Bước 8:** Tạo **Security Policy Rule**
 
 * Vào phần **Policies** -> **Security** ->**Add**
 * Tại tab **General**, bạn cần đặt tên cho rule
 
-<figure><img src="../../../../.gitbook/assets/paloalto_15.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/16.png" alt=""><figcaption></figcaption></figure>
 
 * Tại tab **Source**, thiết lập các thông tin như **Source Zone**, **Source Address**, **Source User, Source Device**
 
-<figure><img src="../../../../.gitbook/assets/paloalto_16.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/17.png" alt=""><figcaption></figcaption></figure>
 
 * Tại tab **Destination**, thiết lập các thông tin như **Destination Zone, Destination Address, Destination Device**
 
-<figure><img src="../../../../.gitbook/assets/paloalto_17.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/18.png" alt=""><figcaption></figcaption></figure>
 
 * Tại tab **Application**, thiết lập các thông tin như **Application, Depend On**
 
-<figure><img src="../../../../.gitbook/assets/paloalto_19.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/19.png" alt=""><figcaption></figcaption></figure>
 
 * Tại tab **Service/URL Category**, thiết lập các thông tin như **Service, URL Category**
 
-<figure><img src="../../../../.gitbook/assets/paloalto_20.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/20.png" alt=""><figcaption></figcaption></figure>
 
 * Tại tab **Actions**, thiết lập các thông tin như **Action, Log, Profile, Other Settings**
 
@@ -125,25 +125,25 @@ Lưu ý: Về phần Network của vServer Windows để truy cập vào GUI c�
 
 * Vào phần **Policies** -> **NAT** -> **Add**
 
-<figure><img src="../../../../.gitbook/assets/paloalto_nat_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/1 (1).png" alt=""><figcaption></figcaption></figure>
 
 * Tại tab **General** đặt tên cho **NAT rule**
 
-<figure><img src="../../../../.gitbook/assets/paloalto_nat_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/2 (1).png" alt=""><figcaption></figcaption></figure>
 
 * Tại tab **Original Packe**t chọn **Source Zone, Destination Zone, Destination Interface, Service, Source Address, Destination Address**
 
-<figure><img src="../../../../.gitbook/assets/paloalto_nat_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/3 (1).png" alt=""><figcaption></figcaption></figure>
 
 * Tạo tab **Translated Packet** thực hiện cấu hình như hình bên dưới
 
 Lưu ý: Cần thay đổi **IP Address** thành địa chỉ **Static IP** mà bạn đã cấu hình ở bước 6
 
-<figure><img src="../../../../.gitbook/assets/paloalto_nat_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
 
 **Bước 10**: Tiến hành **Commit**
 
-<figure><img src="../../../../.gitbook/assets/paloalto_nat_6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/5.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -172,7 +172,7 @@ Sau khi Palo Alto được khởi tạo và cấu hình thành công, bạn cầ
 
 Ví dụ:
 
-<figure><img src="../../../../.gitbook/assets/paloalto_route_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -180,4 +180,4 @@ Ví dụ:
 
 * Tiến hành ping 8.8.8.8 hoặc google.com
 
-<figure><img src="../../../../.gitbook/assets/paloalto_ping_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/7.png" alt=""><figcaption></figcaption></figure>

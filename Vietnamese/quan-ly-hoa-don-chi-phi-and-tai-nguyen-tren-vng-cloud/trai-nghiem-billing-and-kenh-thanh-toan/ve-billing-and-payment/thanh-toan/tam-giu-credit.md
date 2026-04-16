@@ -25,7 +25,7 @@ Nhận thấy nhu cầu sử dụng các tài nguyên / dich vụ trả sau củ
     * **Bước 1:** Truy cập vào portal của GreenNode
     * **Bước 2:** Chọn vào phần hiển thị thông tin credit như hình bên dưới. Tại đây, bạn sẽ nhìn thấy phần credit đang được holding bởi GreenNode.
 
-<figure><img src="../../../../.gitbook/assets/Xem thong tin hold credit (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Xem thong tin hold credit.png" alt=""><figcaption></figcaption></figure>
 
 * Hệ thống cung cấp tài nguyên theo cấu hình cho người dùng
 * Gửi mail thông báo thông tin tài nguyên (tùy vào đặc thù từng loại tài nguyên mà sẽ có email thông báo hoặc không)
@@ -64,9 +64,9 @@ Lưu ý rằng, tại thời điểm kích hoạt dịch vụ Snapshot , Backup 
 
 **Cách tính phí Snapshot , Backup**
 
-* **Công thức**: Chi phí của việc tạo bản snapshot , backup  được tính dựa trên kích thước của bản snapshot , backup(theo đơn vị gigabyte) và thời gian sử dụng của nó (thường được đo bằng giờ).
+* **Công thức**: Chi phí của việc tạo bản snapshot , backup được tính dựa trên kích thước của bản snapshot , backup(theo đơn vị gigabyte) và thời gian sử dụng của nó (thường được đo bằng giờ).
 * **Thời gian sử dụng**: Người dùng sẽ được tính phí cho thời gian tồn tại của bản snapshot , backup. Thời gian này được ghi nhận theo giờ.
-* **Ví dụ**: Nếu bạn có một bản snapshot  có kích thước 100GB và giá đơn vị cho Dịch Vụ Snapshot hoặc Backup là 7,7 VND cho mỗi GB-giờ, thì chi phí sẽ được tính như sau:
+* **Ví dụ**: Nếu bạn có một bản snapshot có kích thước 100GB và giá đơn vị cho Dịch Vụ Snapshot hoặc Backup là 7,7 VND cho mỗi GB-giờ, thì chi phí sẽ được tính như sau:
   * Theo giờ: 7,7 VND \* 100 GB = 770 VND mỗi giờ.
   * Theo ngày: 770 VND \* 24 = 18,480 VND mỗi ngày.
   * Theo tháng: 18,480 \* 30 = 554,400 VND mỗi tháng.
@@ -78,7 +78,7 @@ Lưu ý rằng, tại thời điểm kích hoạt dịch vụ Snapshot , Backup 
 * Bước 2: Khởi tạo và lưu trữ các bản Snapshot theo nhu cầu sử dụng. Ví dụ như sau:
   * 10am khởi tạo Snapshot dung lượng 10GB
   * 1pm khởi tạo thêm 10GB nữa, total Snapshot Size 20GB
-* Bước 3: Hệ thống ghi nhận dung lượng sử dụng  mỗi giờ 1 lần
+* Bước 3: Hệ thống ghi nhận dung lượng sử dụng mỗi giờ 1 lần
 * Bước 4: Tạm giữ Credit mỗi ngày 1 lần dựa trên sử dụng thực tế. Cụ thể như sau:
   * Thời gian chạy của hệ thống: 9am ngày hôm sau
   * 10GB Snapshot Size cho 3 giờ sử dụng (từ 10am đến 1pm) = 7,7 \* 10 \* 3 = 231 VND

@@ -79,7 +79,7 @@ Sau khi bạn sao chép thành công:
 2. Chọn thư mục **Log.**
 3. Chọn **Log pipeline.**
 4. Trong danh sách log pipeline đang có, chọn **Log pipeline** chứa **Processor group** mà bạn muốn chỉnh sửa.
-5. Tại **Processor group** mà bạn muốn chỉnh sửa, chọn <img src="../../../../.gitbook/assets/image (41).png" alt="" data-size="line">
+5. Tại **Processor group** mà bạn muốn chỉnh sửa, chọn <img src="../../../../.gitbook/assets/image (40).png" alt="" data-size="line">
 6. Chọn **Edit group**.
 7. Chỉnh sửa các thông số cho **Processor group** mà bạn mong muốn. Bạn có thể chỉnh sửa tất cả các trường thông tin trong cấu hình một processor group. Việc chỉnh sửa này tương tự như khi bạn thực hiện tạo mới một Processor group theo hướng dẫn bên trên.
 8. Chọn **Save.**

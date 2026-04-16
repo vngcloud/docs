@@ -30,9 +30,9 @@ Bạn có thể lọc các mô hình bằng các tùy chọn ở thanh bên trá
 
 ### Bật / Tắt mô hình
 
-1. Nhấp vào nút "Bật/Tăt model" (Toggle models). User cần activate billing để enable model, đối với user Prepaid cần nạp quota để enable model còn user Postpaid có thể enable model và sử dụng được ngay.  Tham khảo [cách tính phí](https://docs.vngcloud.vn/vng-cloud-document/vn/ai-stack/ai-platform/model-as-a-service/cach-tinh-phi)<br>
+1. Nhấp vào nút "Bật/Tăt model" (Toggle models). User cần activate billing để enable model, đối với user Prepaid cần nạp quota để enable model còn user Postpaid có thể enable model và sử dụng được ngay. Tham khảo [cách tính phí](https://docs.vngcloud.vn/vng-cloud-document/vn/ai-stack/ai-platform/model-as-a-service/cach-tinh-phi)<br>
 
-<figure><img src="../../../.gitbook/assets/image (810).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (779).png" alt=""><figcaption></figcaption></figure>
 
 1. Lựa chọn mô hình: Một cửa sổ popup sẽ hiện ra. Tại đây, bạn có thể tìm kiếm và lọc mô hình theo Nhà cung cấp (Provider), Trạng thái (Status) hoặc Loại mô hình (Type).
 2. Bật/tắt riêng lẻ hoặc hàng loạt mô hình.

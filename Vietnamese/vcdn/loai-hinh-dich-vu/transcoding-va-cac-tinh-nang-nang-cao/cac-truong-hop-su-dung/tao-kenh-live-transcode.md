@@ -6,11 +6,11 @@
 
 Đầu tiên, bạn cần cài đặt Sigma Media Server theo các bước tại [đây](../cai-dat-sigma-media-server.md).
 
-## Khởi tạo và cấu hình dịch vụ Media Service để livestream.&#x20;
+## Khởi tạo và cấu hình dịch vụ Media Service để livestream.
 
 **Bước 1:** Sau khi đã cài đặt **Sigma Media Server** thành công, bạn hãy truy cập vào [https://portal.sigma.video/apps](https://portal.sigma.video/apps) với email mà bạn đã đăng ký sử dụng dịch vụ trước đó.
 
-<figure><img src="../../../../.gitbook/assets/image (647).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 2:** Bạn chọn xổ menu **Product** xuống và chọn mục **Livestream**
 

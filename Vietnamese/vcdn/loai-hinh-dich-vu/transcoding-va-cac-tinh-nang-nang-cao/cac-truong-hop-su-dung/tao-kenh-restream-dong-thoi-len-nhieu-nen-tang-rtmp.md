@@ -10,11 +10,11 @@
 
 **Bước 1:** Sau khi đã cài đặt **Sigma Media Server** thành công, bạn hãy truy cập vào [https://portal.sigma.video/apps](https://portal.sigma.video/apps) với email mà bạn đã đăng ký sử dụng dịch vụ trước đó.
 
-<figure><img src="../../../../.gitbook/assets/image (647).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 2:** Bạn chọn xổ menu **Product** xuống và chọn mục **Media Live.** Tiếp tục bạn chọn tab **Channel -> Transcode channels**
 
-<figure><img src="../../../../.gitbook/assets/transcode1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/transcode1.png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Chọn nút **Add** ở góc phải. Màn hình **Create Transcode Channel** hiển thị, trong tab Config, bạn cần nhập các thông tin cơ bản cho kênh bao gồn **Name** và **Name Modifier**
 

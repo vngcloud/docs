@@ -69,14 +69,9 @@ name: filebeat
 keepfiles: 7
 permissions: 0644
 </code></pre></td></tr><tr><td><pre><code>filebeat.inputs:
-
 type: log
 paths:
-
 /var/log/app.log
-
-
-
 output.kafka:
 hosts: ["$BOOTSTRAP_SERVERS"]
 topic: "$TOPIC"
@@ -86,7 +81,8 @@ required_acks: 1
 compression: gzip
 max_message_bytes: 1000000
 ssl.certificate_authorities:
-- $PATH_FILE_VNG_TRUST_PEM
+
+$PATH_FILE_VNG_TRUST_PEM
 ssl.certificate: "$PATH_FILE_USER_CER_PEM"
 ssl.key: "$PATH_FILE_USER_KEY_PEM"
 ssl.verification_mode: "none"

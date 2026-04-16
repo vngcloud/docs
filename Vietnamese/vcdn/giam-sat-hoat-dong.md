@@ -46,28 +46,28 @@ Các loại biểu đồ/ báo cáo chúng tôi cung cấp cho bạn bao gồm:
 
 * **Unique IPs:**
 
-<figure><img src="../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin Speed/s:**
 
-<figure><img src="../.gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (273).png" alt=""><figcaption></figcaption></figure>
 
 * **Average User Speed:**
 
-<figure><img src="../.gitbook/assets/image (309).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (274).png" alt=""><figcaption></figcaption></figure>
 
 * **Hit Cache Ratio:**
 
-<figure><img src="../.gitbook/assets/image (312).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
 
 * **Request Content Type:**
 
-<figure><img src="../.gitbook/assets/image (318).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
 
 * **CDN HTTP Codes, Origin HTTP Codes:**
 
-<figure><img src="../.gitbook/assets/image (319).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
 
 * **Quản lý và theo dõi tín hiệu được đẩy đến hệ thống Live Entry point:**
 
-<figure><img src="../.gitbook/assets/image (320).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>

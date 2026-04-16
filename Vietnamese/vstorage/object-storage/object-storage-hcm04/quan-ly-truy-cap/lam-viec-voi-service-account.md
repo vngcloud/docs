@@ -74,7 +74,7 @@ Sau khi bạn đã khởi tạo Service Account và Policy mong muốn, tiếp t
 2. Tiếp tục chọn **Bucket** bạn muốn thực hiện phân quyền cho Service Account.
 3. Chọn biểu tượng **Action** và chọn **Configure policy.**
 
-<figure><img src="../../../../.gitbook/assets/image (870).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
 
 4. Tại đây, bạn có thể chọn cấu hình cho từng **Statement** ở bên trái hoặc trực tiếp chỉnh sửa file JSON ở cột bên phải. Cụ thể cấu trúc một Bucket Policy bao gồm:
 
@@ -126,7 +126,7 @@ Chi tiết, vui lòng tham khảo thêm tại [https://docs.api.vngcloud.vn/serv
 
 **Request body**
 
-> 'grant\_type':'client\_credentials'&#x20;
+> 'grant\_type':'client\_credentials'
 >
 > 'scope':'email'
 
@@ -138,16 +138,12 @@ Chi tiết, vui lòng tham khảo thêm tại [https://docs.api.vngcloud.vn/serv
 
 Nếu thông tin đăng nhập được xác thực, một **access\_token** sẽ được trả về. Người dùng sẽ sử dụng **access\_token** để truy cập tài nguyên.
 
-
-
 **Ví dụ:**
 
 > curl -X POST 'https://iamapis.vngcloud.vn/accounts-api/v2/auth/token'\
 > -H 'Content-Type: application/json'\
 > -H 'Authorization: Basic ZGM3MTYxNTYtMjQwMi00MDg2LTliYWItZGU5OTIxODVlYjU1OmJhYjYzYTZmLWYzOGUtNDZmNC05NjIyLTYzNTQwNGQ4MDFlNQ=='\
 > -d '{ "grant\_type": "client\_credentials", "scope":"email" }'
->
->
 >
 > {"token\_type":"Bearer","access\_token":"eyJhbGciOiJSUz......GWug","expires\_in":1800,"refresh\_expires\_in":0}
 

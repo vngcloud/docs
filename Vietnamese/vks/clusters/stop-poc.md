@@ -1,10 +1,10 @@
 # POC và Stop POC
 
-Trước khi tìm hiểu cách Stop POC cho tài nguyên của bạn trên VKS, bạn nên hiểu rõ các khái niệm cũng các hành động mà bạn có thể thao tác đối với tài nguyên POC. Chi tiết tham khảo thêm [tại đây](https://docs.vngcloud.vn/vng-cloud-document/v/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/quan-ly-vong-doi-tai-nguyen/tai-nguyen-poc).&#x20;
+Trước khi tìm hiểu cách Stop POC cho tài nguyên của bạn trên VKS, bạn nên hiểu rõ các khái niệm cũng các hành động mà bạn có thể thao tác đối với tài nguyên POC. Chi tiết tham khảo thêm [tại đây](https://docs.vngcloud.vn/vng-cloud-document/v/vn/quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/trai-nghiem-billing-and-kenh-thanh-toan/ve-billing-and-payment/quan-ly-vong-doi-tai-nguyen/tai-nguyen-poc).
 
 ## **Khởi tạo tài nguyên VKS thông qua ví POC**
 
-Để khởi tạo  Cluster thông qua ví POC, hãy thực hiện các bước như sau;
+Để khởi tạo Cluster thông qua ví POC, hãy thực hiện các bước như sau;
 
 **Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
 
@@ -23,15 +23,15 @@ Trước khi tìm hiểu cách Stop POC cho tài nguyên của bạn trên VKS, 
 **Bước 7:** Khi trạng thái **Cluster** là **Active**, bạn có thể xem thông tin Cluster, thông tin Node Group bằng cách chọn vào Cluster Name tại cột **Name**.
 
 {% hint style="info" %}
-**Chú ý:**&#x20;
+**Chú ý:**
 
-* Khi bạn khởi tạo Cluster và chọn sử dụng ví POC, chúng tôi đã tự động tạo Control Plane, Node, Volume và Private Service Endpoint (nếu bạn chọn sử dụng) thông qua ví POC. Đối với các tài nguyên khác như&#x20;
+* Khi bạn khởi tạo Cluster và chọn sử dụng ví POC, chúng tôi đã tự động tạo Control Plane, Node, Volume và Private Service Endpoint (nếu bạn chọn sử dụng) thông qua ví POC. Đối với các tài nguyên khác như
   * **PVC:** khi thực hiện khởi tạo qua yaml, bạn vui lòng thêm tham số `isPOC: "true"` vào file yaml này. Tham khảo ví dụ bên dưới.
   * **LoadBalancer:** khi thực hiện khởi tạo qua yaml, bạn vui lòng thêm annotation `vks.vngcloud.vn/is-poc: "true"` vào file yaml này. Tham khảo ví dụ bên dưới.
 * Do các resource **Load Balancer** và **PVC** được quản lý thông qua YAML, sau khi Stop POC, nếu trong file YAML của bạn vẫn có tham số `isPOC : true hoặc is-poc : true`, trong trường hợp bạn xóa Load Balancer từ Portal vLB và xóa tham số`load-balancer-id` trong yaml, lúc này hệ thống sẽ tự động tạo lại các resource này thông qua ví POC. Để tạo Load Balancer và PVC khác bằng tiền thật, vui lòng thay đổi tham số isPOC thành false. (`isPOC : false hoặc is-poc : false`). Chúng tôi khuyến cáo bạn nên thực hiện điều chỉnh tham số này trước khi thực hiện Stop POC cho Cluster của bạn.
 {% endhint %}
 
-Bên dưới là yaml mẫu để tạo **Load Balancer** thông qua số dư ví POC:&#x20;
+Bên dưới là yaml mẫu để tạo **Load Balancer** thông qua số dư ví POC:
 
 ```bash
 apiVersion: apps/v1
@@ -114,7 +114,7 @@ spec:
         name: http-server
 ```
 
-Và đây là yaml mẫu để tạo **PVC** thông qua số dư ví POC:&#x20;
+Và đây là yaml mẫu để tạo **PVC** thông qua số dư ví POC:
 
 ```bash
 apiVersion: storage.k8s.io/v1
@@ -182,7 +182,7 @@ spec:
 * **Bước 3:** Thực hiện **Thanh toán cho các tài nguyên thông qua tiền thật.**
 {% endhint %}
 
-**Để tiếp tục sử dụng tài nguyên vừa dừng POC như một tài nguyên bình thường (với mục đích giữ nguyên cấu hình), người dùng có thể thực hiện:**&#x20;
+**Để tiếp tục sử dụng tài nguyên vừa dừng POC như một tài nguyên bình thường (với mục đích giữ nguyên cấu hình), người dùng có thể thực hiện:**
 
 **Bước 1:** Truy cập vào [VKS Portal](https://vks.console.vngcloud.vn/k8s-cluster), chọn Cluster mà bạn muốn Stop POC.
 
@@ -211,12 +211,12 @@ spec:
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="258"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Chú ý:**&#x20;
+**Chú ý:**
 
 * Sau khi stop POC trên VKS, nút "**Stop POC**" sẽ tiếp tục hiển thị **nếu chúng tôi thấy vẫn còn resource chưa được Stop POC** sau khi thực hiện trên VKS Portal. Bạn có thể tiếp tục chọn và thực hiện **Stop POC** cho đến khi tất cả các resource được chuyển về resource thật.
-* <mark style="color:red;">Đối với loại resource</mark> <mark style="color:red;"></mark><mark style="color:red;">**Snapshot**</mark><mark style="color:red;">, bạn không thể chỉ định snapshot sử dụng ví POC từ VKS. Để thực hiện tạo Snapshot qua ví POC, tại</mark> <mark style="color:red;"></mark><mark style="color:red;">**vServer Portal**</mark><mark style="color:red;">, vui lòng chọn</mark> <mark style="color:red;"></mark><mark style="color:red;">**Activate Snapshot**</mark><mark style="color:red;">, sau đó tại màn hình</mark> <mark style="color:red;"></mark><mark style="color:red;">**Checkout**</mark><mark style="color:red;">, vui lòng chọn sử dụng ví</mark> <mark style="color:red;"></mark><mark style="color:red;">**POC**</mark><mark style="color:red;">. Lúc này</mark> <mark style="color:red;"></mark><mark style="color:red;">**tất cả các resource snapshot của bạn sẽ được tạo qua ví POC**</mark><mark style="color:red;">. Do đó, việc stop POC cần được bạn thực hiện thông qua</mark> <mark style="color:red;"></mark><mark style="color:red;">**vConsole**</mark> <mark style="color:red;"></mark><mark style="color:red;">hoặc</mark> <mark style="color:red;"></mark><mark style="color:red;">**vServer Portal**</mark><mark style="color:red;">. Tham khảo thêm hình bên dưới.</mark>
+* <mark style="color:red;">Đối với loại resource</mark> <mark style="color:red;">**Snapshot**</mark><mark style="color:red;">, bạn không thể chỉ định snapshot sử dụng ví POC từ VKS. Để thực hiện tạo Snapshot qua ví POC, tại</mark> <mark style="color:red;">**vServer Portal**</mark><mark style="color:red;">, vui lòng chọn</mark> <mark style="color:red;">**Activate Snapshot**</mark><mark style="color:red;">, sau đó tại màn hình</mark> <mark style="color:red;">**Checkout**</mark><mark style="color:red;">, vui lòng chọn sử dụng ví</mark> <mark style="color:red;">**POC**</mark><mark style="color:red;">. Lúc này</mark> <mark style="color:red;">**tất cả các resource snapshot của bạn sẽ được tạo qua ví POC**</mark><mark style="color:red;">. Do đó, việc stop POC cần được bạn thực hiện thông qua</mark> <mark style="color:red;">**vConsole**</mark> <mark style="color:red;">hoặc</mark> <mark style="color:red;">**vServer Portal**</mark><mark style="color:red;">. Tham khảo thêm hình bên dưới.</mark>
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (807).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (450).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (808).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (452).png" alt=""><figcaption></figcaption></figure>

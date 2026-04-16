@@ -65,7 +65,7 @@ Lúc này, hệ thống **vServer** sẽ khởi tạo một Server tương ứng
 * Cài đặt **Data Dir** bằng cách chọn vào nút Pick
 * Chọn **Submit**.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 8**: Tại màn hình cảnh báo việc deploy server, bạn chọn **Yes**
 

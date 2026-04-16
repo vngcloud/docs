@@ -86,7 +86,7 @@ Bạn chỉ có thể thay đổi tên những Dashboard được tạo bởi ch
 
 1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)
 2. Chọn thư mục **Dashboard.**
-3. Tại **Dashboard** mà bạn muốn tạo bản sao, chọn <img src="../../../.gitbook/assets/image (24).png" alt="" data-size="line">
+3. Tại **Dashboard** mà bạn muốn tạo bản sao, chọn <img src="../../../.gitbook/assets/image (23).png" alt="" data-size="line">
 4. Chọn **Clone Dashboard.**
 5. Nhập **Dashboard name**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho Dashboard của bạn.
 6. Chọn **Clone.**
@@ -101,7 +101,7 @@ Khi bạn không có nhu cầu sử dụng một **Dashboard** tùy chỉnh nữ
 
 1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)
 2. Chọn thư mục **Dashboard.**
-3. Tại **Dashboard** mà bạn muốn xóa, chọn <img src="../../../.gitbook/assets/image (25).png" alt="" data-size="line">
+3. Tại **Dashboard** mà bạn muốn xóa, chọn <img src="../../../.gitbook/assets/image (23).png" alt="" data-size="line">
 4. Chọn **Delete**.
 5. Tại màn hình xác nhận xóa Dashboard, chọn **Delete**.
 
