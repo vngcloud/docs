@@ -1,5 +1,18 @@
 # Release notes
 
+## Apr 15, 2026 <a href="#apr_15_2026" id="apr_15_2026"></a>
+
+VKS (VNG Kubernetes Engine) has just released its latest update, bringing a notable new feature to users. Below are the key highlights of this release:
+
+**New Features:**
+
+* **Kubeconfig with Flexible Certificate Validity:** VKS now allows you to actively choose the certificate validity period when downloading kubeconfig, providing better security control. Supported validity options: **30 days**, **90 days**, **365 days** — suitable for different environments (testing, production, long-term). The system will automatically notify you when the certificate is about to expire and supports flexible renewal.
+  * View the certificate expiry date directly on the Portal before downloading.
+  * Automatic certificate renewal when eligible; manual renewal supported when needed.
+  * For detailed instructions, see [Kubeconfig](../clusters/kubeconfig.md).
+
+***
+
 ## Mar 10, 2026 <a href="#mar_10_2026" id="mar_10_2026"></a>
 
 VKS (VNG Kubernetes Engine) has just released its latest update, bringing a major new feature to users. Below are the key highlights of this release:

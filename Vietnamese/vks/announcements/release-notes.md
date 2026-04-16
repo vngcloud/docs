@@ -1,5 +1,18 @@
 # Release notes
 
+## Apr 15, 2026
+
+VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới nhất, mang đến tính năng nổi bật cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
+
+**Tính năng mới:**
+
+* **Kubeconfig với Certificate có thời hạn linh hoạt:** VKS cho phép bạn chủ động chọn thời hạn hiệu lực của certificate khi tải xuống kubeconfig, giúp kiểm soát bảo mật tốt hơn. Các mốc thời hạn hỗ trợ: **30 ngày**, **90 ngày**, **365 ngày** — phù hợp với từng môi trường sử dụng (testing, production, long-term). Hệ thống sẽ tự động thông báo khi certificate sắp hết hạn và hỗ trợ renew linh hoạt.
+  * Xem ngày hết hạn certificate trực tiếp trên Portal trước khi tải xuống.
+  * Tự động renew certificate khi đủ điều kiện; hỗ trợ renew thủ công nếu cần.
+  * Hướng dẫn chi tiết tại [Kubeconfig](../clusters/kubeconfig.md).
+
+***
+
 ## Mar 10, 2026
 
 VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới nhất, mang đến tính năng nổi bật cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
