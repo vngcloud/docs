@@ -4,7 +4,7 @@
 
 On VKS, the kubeconfig file uses the **Client Certificate** mechanism for authentication. You can actively choose the certificate validity period when downloading, providing better security control.
 
----
+***
 
 ## Download Kubeconfig
 
@@ -16,11 +16,13 @@ On VKS, the kubeconfig file uses the **Client Certificate** mechanism for authen
 
 **Step 4:** The system displays a confirmation popup. Here, select the **certificate validity period** for the kubeconfig:
 
-| Validity Period | Description                                                                              |
-| --------------- | ---------------------------------------------------------------------------------------- |
-| 30 days         | Suitable for staging, testing environments, or temporary access                          |
-| 90 days         | Suitable for production environments with periodic rotation cycles                       |
-| 365 days        | Suitable for cases requiring long-term kubeconfig, needs careful management              |
+| Validity Period | Description                                                                 |
+| --------------- | --------------------------------------------------------------------------- |
+| 30 days         | Suitable for staging, testing environments, or temporary access             |
+| 90 days         | Suitable for production environments with periodic rotation cycles          |
+| 365 days        | Suitable for cases requiring long-term kubeconfig, needs careful management |
+
+<figure><img src="../../.gitbook/assets/Image (4).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 **Security notes:**
@@ -28,11 +30,11 @@ On VKS, the kubeconfig file uses the **Client Certificate** mechanism for authen
 * The kubeconfig file grants **cluster-admin** privileges to the holder. Do not share this file with unauthorized individuals.
 * If you need to **revoke the certificate** before it expires, please contact the VKS support team for assistance.
 * If the kubeconfig file is compromised, contact the VKS support team immediately for timely handling.
-  {% endhint %}
+{% endhint %}
 
 **Step 5:** Click **Confirm** to download. The `config` file will be saved to your machine.
 
----
+***
 
 ## Configure kubectl to Use Kubeconfig
 
@@ -72,10 +74,9 @@ Or set an environment variable:
 ```bash
 export KUBECONFIG=<path_to_kubeconfig>
 ```
-
 {% endhint %}
 
----
+***
 
 ## Managing Certificate Validity
 
@@ -84,6 +85,8 @@ export KUBECONFIG=<path_to_kubeconfig>
 **Method 1: View on Portal**
 
 When clicking **Download Config File** on the Kubernetes Cluster screen, the system displays a kubeconfig information popup that includes the certificate validity period. You can view the expiry date directly here before downloading.
+
+<figure><img src="../../.gitbook/assets/Image (5).png" alt=""><figcaption></figcaption></figure>
 
 **Method 2: Check via command**
 
@@ -101,6 +104,8 @@ The output will display `notBefore` (start date) and `notAfter` (expiry date) of
 
 When the certificate is about to expire (within 7 days), the VKS system will send you a notification. At that point, you can:
 
+<figure><img src="../../.gitbook/assets/Image (6).png" alt=""><figcaption></figcaption></figure>
+
 * **Automatic renewal:** The system automatically renews the certificate if conditions are met. You will receive a confirmation notification when the process is complete.
 * **Manual renewal:** If the system cannot automatically renew, you will see a **Renew** button in the notification. Click **Renew** for the system to issue a new certificate.
 
@@ -112,23 +117,23 @@ After renewal, you need to download the new kubeconfig file and replace the old 
 
 ### Re-download New Kubeconfig
 
-Repeat the steps in the [Download Kubeconfig](#download-kubeconfig) section to get a new kubeconfig file with a valid certificate.
+Repeat the steps in the [Download Kubeconfig](kubeconfig.md#download-kubeconfig) section to get a new kubeconfig file with a valid certificate.
 
----
+***
 
 ## Kubeconfig Security
 
 Below are security recommendations when using kubeconfig on VKS:
 
 * **Do not commit the kubeconfig file to a source code repository** (Git, GitLab, etc.). Add `~/.kube/config` to the project's `.gitignore`.
-* **Restrict file access permissions:** Ensure only the current user can read the kubeconfig file:
+*   **Restrict file access permissions:** Ensure only the current user can read the kubeconfig file:
 
-  ```bash
-  chmod 600 ~/.kube/config
-  ```
+    ```bash
+    chmod 600 ~/.kube/config
+    ```
 * **Choose an appropriate certificate validity period:** Avoid using 365-day certificates for all use cases. Prefer 30 or 90 days and rotate periodically.
 
----
+***
 
 ## Create a Read-only Kubeconfig
 
@@ -257,7 +262,7 @@ kubectl --kubeconfig=readonly-kubeconfig.yaml get pods -A
 kubectl --kubeconfig=readonly-kubeconfig.yaml delete pod some-pod
 ```
 
----
+***
 
 ## Revoking Access
 
@@ -288,10 +293,10 @@ Kubernetes **does not have a certificate revocation mechanism**. If the user sti
 
 * **Do not delete the ClusterRoleBinding** of the cluster unless you are certain you want to permanently revoke access.
 * If you **accidentally delete the ClusterRoleBinding** and cannot connect to the cluster, please **contact the VKS support team** for assistance in creating a new kubeconfig.
-  {% endhint %}
+{% endhint %}
 
-| Action                     | Delete ClusterRoleBinding | Delete CSR    |
-| -------------------------- | ------------------------- | ------------- |
-| User loses access immediately? | **Yes**               | No            |
-| Purpose                    | Revoke access             | Cleanup       |
-| Required?                  | **Required**              | Optional      |
+| Action                         | Delete ClusterRoleBinding | Delete CSR |
+| ------------------------------ | ------------------------- | ---------- |
+| User loses access immediately? | **Yes**                   | No         |
+| Purpose                        | Revoke access             | Cleanup    |
+| Required?                      | **Required**              | Optional   |

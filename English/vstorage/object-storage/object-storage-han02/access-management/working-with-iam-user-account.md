@@ -90,7 +90,7 @@ To grant access to bucket/object for IAM User Account, you need to grant permiss
 
 <figure><img src="../../../../.gitbook/assets/Screenshot from 2025-11-10 13-54-54.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2025-11-10 13-57-09 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2025-11-10 13-57-09.png" alt=""><figcaption></figcaption></figure>
 
 ## Access to vStorage via IAM User Account <a href="#thuc-hien-truy-cap-vao-vstorage-thong-qua-iam-user-account" id="thuc-hien-truy-cap-vao-vstorage-thong-qua-iam-user-account"></a>
 

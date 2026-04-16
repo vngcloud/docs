@@ -95,7 +95,7 @@ Trong quá trình sử dụng DHCP options set, người dùng có thể xóa DH
 4. Select the DHCP options set you want to delete to access its details;
 5. On the details screen, in the **Associated VPCs** tab, all associated VPCs are listed. Select all associated VPCs and click **Detach** to remove them;
 
-<figure><img src="../../../../.gitbook/assets/image (285) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure>
 
 6. Confirm the detachment of all VPCs from the DHCP options set.
 

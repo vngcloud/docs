@@ -63,4 +63,4 @@ Nếu không có errror, bạn tiến hành restart nginx.
 
 * **Bước 7**: Thực hiện gửi request và kiểm tra log ra sẽ thấy IP Client xuất hiện trong log file:
 
-<figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -97,14 +97,9 @@ limits:
 cpus: '1'
 memory: 2G
 </code></pre></td></tr><tr><td><p>Copy</p><pre><code>filebeat.inputs:
-
 type: log
 paths:
-
 /var/log/app.log
-
-
-
 output.kafka:
 hosts: ${BOOTSTRAP_SERVERS}
 topic: ${TOPIC}
@@ -114,7 +109,8 @@ required_acks: 1
 compression: gzip
 max_message_bytes: 1000000
 ssl.certificate_authorities:
-- /usr/share/filebeat/VNG.trust
+
+/usr/share/filebeat/VNG.trust
 ssl.certificate: /usr/share/filebeat/user.cer.pem
 ssl.key: /usr/share/filebeat/user.key.pem
 ssl.verification_mode: "none"
@@ -132,14 +128,14 @@ image: docker.elastic.co/beats/filebeat:8.7.0
 container_name: filebeat-agent-vmonitor
 restart: always
 env_file:
-- container.env
+container.env
 volumes:
--  $PWD/filebeat.yml:/usr/share/filebeat/filebeat.yml
--  $PWD/VNG.trust.pem:/usr/share/filebeat/VNG.trust:rw
--  $PWD/user.cer.pem:/usr/share/filebeat/user.cer.pem:rw
--  $PWD/user.key.pem:/usr/share/filebeat/user.key.pem:rw
--  /var/log/app.log:/var/log/app.log:ro
--  /var/log/filebeat/:/var/log/filebeat/
+$PWD/filebeat.yml:/usr/share/filebeat/filebeat.yml
+$PWD/VNG.trust.pem:/usr/share/filebeat/VNG.trust:rw
+$PWD/user.cer.pem:/usr/share/filebeat/user.cer.pem:rw
+$PWD/user.key.pem:/usr/share/filebeat/user.key.pem:rw
+/var/log/app.log:/var/log/app.log:ro
+/var/log/filebeat/:/var/log/filebeat/
 logging:
 driver: "json-file"
 options:
@@ -153,11 +149,7 @@ memory: 2G
 
 type: log
 paths:
-
 /var/log/app.log
-
-
-
 output.kafka:
 hosts: ${BOOTSTRAP_SERVERS}
 topic: ${TOPIC}
@@ -167,7 +159,8 @@ required_acks: 1
 compression: gzip
 max_message_bytes: 1000000
 ssl.certificate_authorities:
-- /usr/share/filebeat/VNG.trust
+
+/usr/share/filebeat/VNG.trust
 ssl.certificate: /usr/share/filebeat/user.cer.pem
 ssl.key: /usr/share/filebeat/user.key.pem
 ssl.verification_mode: "none"

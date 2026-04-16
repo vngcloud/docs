@@ -48,7 +48,7 @@ For option 2, you can do the following:
 1. Go to the Database management screen at: [https://vdb.console.vngcloud.vn/memorystore/database](https://vdb.console.vngcloud.vn/memorystore/database)
 2.  Select the MDS Instance and click "Edit Configuration Group."
 
-    <figure><img src="../../.gitbook/assets/image (237) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
 3. On the change screen, select the Configuration Group you want to apply.
 4. When all selections are correct, click the "Save" button in the top right corner. Wait for a while for the configuration variables to be applied to the MDS Instance. If the change is successful, the MDS Instance will have the status "Active."
 

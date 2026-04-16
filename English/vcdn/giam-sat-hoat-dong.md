@@ -34,40 +34,40 @@ The types of charts/reports we provide you include:
 
 * **Traffic Consuming:**
 
-<figure><img src="../.gitbook/assets/image (211) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (211).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin Request/s** :
 
-<figure><img src="../.gitbook/assets/image (212) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (212).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin Traffic Consuming/s (GB/s)** :
 
-<figure><img src="../.gitbook/assets/image (213) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
 
 * **Unique IPs:**
 
-<figure><img src="../.gitbook/assets/image (216) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin Speed/s:**
 
-<figure><img src="../.gitbook/assets/image (214) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (214).png" alt=""><figcaption></figcaption></figure>
 
 * **Average User Speed:**
 
-<figure><img src="../.gitbook/assets/image (215) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
 
 * **Hit Cache Ratio:**
 
-<figure><img src="../.gitbook/assets/image (217) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (217).png" alt=""><figcaption></figcaption></figure>
 
 * **Request Content Type:**
 
-<figure><img src="../.gitbook/assets/image (218) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
 
 * **CDN HTTP Codes, Origin HTTP Codes:**
 
-<figure><img src="../.gitbook/assets/image (219) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (219).png" alt=""><figcaption></figcaption></figure>
 
 * **Manage and monitor signals pushed to the Live Entry point system:**
 
-<figure><img src="../.gitbook/assets/image (220) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (220).png" alt=""><figcaption></figcaption></figure>

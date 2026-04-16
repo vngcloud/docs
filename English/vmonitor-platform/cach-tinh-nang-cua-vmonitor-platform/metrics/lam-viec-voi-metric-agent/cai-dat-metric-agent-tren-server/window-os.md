@@ -123,7 +123,7 @@ Step 3: Install Agent
 
 * Select **Install** to begin the installation.
 
-<figure><img src="../../../../../.gitbook/assets/image (132) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
 
 * Select **Yes** to grant permissions for the agent to operate.
 

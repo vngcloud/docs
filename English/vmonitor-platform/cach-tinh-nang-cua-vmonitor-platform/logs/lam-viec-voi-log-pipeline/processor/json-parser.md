@@ -22,7 +22,7 @@ For example:
 <table><thead><tr><th>Source log project</th><th>Destination log project</th><th>Message (field logs mà chúng tôi thực hiện parser)</th><th>Kết quả parser</th></tr></thead><tbody><tr><td>webserver</td><td>webserver-parse</td><td><pre><code>{"timestamp":"2023-07-23T12:34:56Z","level":"error",
 </code></pre></td><td></td></tr><tr><td>"message":"Therewasanerrorprocessingtherequest",</td><td></td><td></td><td></td></tr><tr><td>"request_id":"1234567890","user_id":"vngcloud1"}</td><td></td><td></td><td></td></tr><tr><td></td><td>{<br>"timestamp": "2023-07-23T12:34:56Z",<br>"level": "error",<br>"message": "There was an error processing the request",<br>"request_id": "1234567890",<br>"user_id": "vngcloud1"<br>}</td><td></td><td></td></tr></tbody></table>
 
-<figure><img src="../../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Store and reuse Parsing rules <a href="#luu-tru-va-tai-su-dung-parsing-rule" id="luu-tru-va-tai-su-dung-parsing-rule"></a>
 

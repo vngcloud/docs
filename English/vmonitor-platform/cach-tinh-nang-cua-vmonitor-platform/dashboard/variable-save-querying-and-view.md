@@ -87,12 +87,12 @@ To save a query, follow the instructions below:
 
 1. In the query command area, click the **Save** icon.
 
-<figure><img src="../../../.gitbook/assets/image (94) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (139).png" alt=""><figcaption></figcaption></figure>
 
 2. Enter the **Query name**.
 3. Select **Save**
 
-<figure><img src="../../../.gitbook/assets/image (95) (1).png" alt="" width="342"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (141).png" alt="" width="342"><figcaption></figcaption></figure>
 
 The query is now saved with the memorable name you entered.
 
@@ -102,18 +102,18 @@ After you have saved the query, you can reuse this query by:
 
 1. In the query command area, select the dropdown icon <img src="../../../.gitbook/assets/image (142).png" alt="" data-size="original"> (this icon is located next to the Save query icon).
 
-<figure><img src="../../../.gitbook/assets/image (96) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (143).png" alt=""><figcaption></figcaption></figure>
 
 2. At this point, the system displays a list of saved queries, allowing you to reuse them by selecting the desired query.
 
-<figure><img src="../../../.gitbook/assets/image (97) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (144).png" alt=""><figcaption></figcaption></figure>
 
 3. You can edit this query and save it as a new independent query from the one you reused by selecting Save as new query.
 
-<figure><img src="../../../.gitbook/assets/image (98) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (145).png" alt=""><figcaption></figcaption></figure>
 
 ### Query management
 
 You can view the saved queries or delete a query by selecting Manage saved queries and choosing the **Delete** icon.
 
-<figure><img src="../../../.gitbook/assets/image (99) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
