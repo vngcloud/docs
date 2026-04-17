@@ -4,9 +4,22 @@
 
 Trên VKS, file kubeconfig sử dụng cơ chế **Client Certificate** để xác thực. Bạn có thể chủ động chọn thời hạn hiệu lực của certificate khi tải xuống, giúp kiểm soát bảo mật tốt hơn.
 
+{% hint style="info" %}
+**Lưu ý cho account IAM-user:**
+
+Trước khi thao tác với kubeconfig, account IAM-user cần được cấp đầy đủ các quyền dưới đây (admin nên cấp một lần trước khi sử dụng):
+
+| Quyền                              | Mục đích                                                                 | Dùng tại bước                           |
+| ---------------------------------- | ------------------------------------------------------------------------ | --------------------------------------- |
+| `RequestKubeconfig`                | Request cấp kubeconfig                                                   | Tải xuống Kubeconfig                    |
+| `AcknowledgeKubeConfigWarningRenew` | Xác nhận ("đã hiểu") thông báo autorenew kubeconfig từ hệ thống          | Gia hạn (Renew) Certificate — Tự động renew |
+{% endhint %}
+
 ***
 
 ## Tải xuống Kubeconfig
+
+> _Account **IAM-user** cần quyền `RequestKubeconfig` — xem **Lưu ý cho account IAM-user** ở đầu trang._
 
 **Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
 
@@ -106,7 +119,8 @@ Khi certificate sắp hết hạn (dưới 7 ngày), hệ thống VKS sẽ gửi
 
 <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-* **Tự động renew:** Hệ thống tự động gia hạn certificate nếu đủ điều kiện. Bạn sẽ nhận được thông báo xác nhận khi quá trình hoàn tất.
+* **Tự động renew:** Hệ thống tự động gia hạn certificate nếu đủ điều kiện. Bạn sẽ nhận được thông báo xác nhận khi quá trình hoàn tất.\
+  _Account **IAM-user** cần quyền `AcknowledgeKubeConfigWarningRenew` để xác nhận thông báo autorenew — xem **Lưu ý cho account IAM-user** ở đầu trang._
 * **Thủ công renew:** Nếu hệ thống không thể tự động renew, bạn sẽ thấy nút **Renew** trong thông báo. Chọn **Renew** để hệ thống cấp lại certificate mới.
 
 {% hint style="info" %}

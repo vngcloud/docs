@@ -4,9 +4,22 @@
 
 On VKS, the kubeconfig file uses the **Client Certificate** mechanism for authentication. You can actively choose the certificate validity period when downloading, providing better security control.
 
+{% hint style="info" %}
+**Note for IAM-user accounts:**
+
+Before working with kubeconfig, an IAM-user account must be granted all of the permissions below (admins should grant these once, upfront):
+
+| Permission                          | Purpose                                                                          | Used in step                                    |
+| ----------------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------- |
+| `RequestKubeconfig`                 | Request the issuance of a kubeconfig                                             | Download Kubeconfig                             |
+| `AcknowledgeKubeConfigWarningRenew` | Acknowledge ("mark as read") the auto-renew kubeconfig notification from the system | Renew Certificate — Automatic renewal          |
+{% endhint %}
+
 ***
 
 ## Download Kubeconfig
+
+> _**IAM-user** accounts require the `RequestKubeconfig` permission — see **Note for IAM-user accounts** at the top of the page._
 
 **Step 1:** Go to [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
 
@@ -106,7 +119,8 @@ When the certificate is about to expire (within 7 days), the VKS system will sen
 
 <figure><img src="../../.gitbook/assets/Image (6).png" alt=""><figcaption></figcaption></figure>
 
-* **Automatic renewal:** The system automatically renews the certificate if conditions are met. You will receive a confirmation notification when the process is complete.
+* **Automatic renewal:** The system automatically renews the certificate if conditions are met. You will receive a confirmation notification when the process is complete.\
+  _**IAM-user** accounts require the `AcknowledgeKubeConfigWarningRenew` permission to acknowledge the auto-renew notification — see **Note for IAM-user accounts** at the top of the page._
 * **Manual renewal:** If the system cannot automatically renew, you will see a **Renew** button in the notification. Click **Renew** for the system to issue a new certificate.
 
 {% hint style="info" %}
