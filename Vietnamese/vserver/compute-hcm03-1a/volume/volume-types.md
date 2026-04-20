@@ -8,24 +8,35 @@ IOPS là chỉ số thể hiện số read/write có thể thực hiện trên v
 
 Bảng sau mô tả thông tin IOPS chi tiết cho từng loại Volume Type:
 
-| Volume Type | IOPS max    | Disk Type | Description                     |
-| ----------- | ----------- | --------- | ------------------------------- |
-| 200         | 200         | SSD SATA  | <p><br></p>                     |
-| 400         | 400         | SSD SATA  | <p><br></p>                     |
-| 800         | 800         | SSD SATA  | <p><br></p>                     |
-| 1000        | 1000        | SSD SATA  | <p><br></p>                     |
-| 1200        | 1200        | SSD SATA  | <p><br></p>                     |
-| 1600        | 1600        | SSD SATA  | <p><br></p>                     |
-| 3000        | 3000 shared | SSD SATA  | Shared IOPS with other customer |
-| 3200        | 3200        | SSD SATA  | <p><br></p>                     |
-| 6400        | 6400        | SSD SATA  | <p><br></p>                     |
-| 10000       | 10000       | SSD SATA  | <p><br></p>                     |
-| custom      | custom      | SSD SATA  | <p><br></p>                     |
-| 5000        | 5000        | SSD NVMe  | <p><br></p>                     |
-| 10000       | 10000       | SSD NVMe  | <p><br></p>                     |
-| 20000       | 20000       | SSD NVMe  | <p><br></p>                     |
-| 40000       | 40000       | SSD NVMe  | <p><br></p>                     |
-| 60000       | 60000       | SSD NVMe  | <p><br></p>                     |
+
+
+## NVME
+
+#### Hỗ trợ ở Region HCM (Zone 1a, 1b), HAN (Zone 1a, 1b)
+
+| IOPS  | Minimum Size (GB) | Throughput |
+| ----- | ----------------- | ---------- |
+| 3000  | 1                 | 200 MB/s   |
+| 5000  | 1                 | 400 MB/s   |
+| 10000 | 1                 | 600 MB/s   |
+| 20000 | 1                 | 600 MB/s   |
+| 40000 | 1                 | 600 MB/s   |
+| 60000 | 1                 | 800 MB/s   |
+
+
+
+## SSD
+
+#### Hỗ trợ ở Region HCM (Zone 1c)
+
+| IOPS  | Minimum Size (GB) | Throughput |
+| ----- | ----------------- | ---------- |
+| 3000  | 1                 | 200 MB/s   |
+| 3200  | 1                 | 200 MB/s   |
+| 6400  | 1                 | 400 MB/s   |
+| 10000 | 1                 | 400 MB/s   |
+
+
 
 Bạn có thể thay đổi Volume Type bất cứ lúc nào.
 
