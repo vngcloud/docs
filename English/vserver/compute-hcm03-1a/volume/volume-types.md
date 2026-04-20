@@ -6,19 +6,35 @@ Volume type is profile for performance of volume. GreenNode using Volume Type to
 
 IOPS measures the number of read/write operations that can be performed per second. High IOPS is critical for transaction-intensive applications such as database applications. The following table describes all IOPS profiles:
 
-| **Volume Type** | **IOPS max** | **Disk Type** | **Descriptions**                |
-| --------------- | ------------ | ------------- | ------------------------------- |
-| 200             | 200          | SSD           | <p><br></p>                     |
-| 400             | 400          | SSD           | <p><br></p>                     |
-| 800             | 800          | SSD           | <p><br></p>                     |
-| 1000            | 1000         | SSD           | <p><br></p>                     |
-| 1200            | 1200         | SSD           | <p><br></p>                     |
-| 1600            | 1600         | SSD           | <p><br></p>                     |
-| 3000            | 3000 shared  | SSD           | Shared IOPS with other customer |
-| 3200            | 3200         | SSD           | <p><br></p>                     |
-| 6400            | 6400         | SSD           | <p><br></p>                     |
-| 10000           | 10000        | SSD           | <p><br></p>                     |
-| custom          | custom       | SSD           | <p><br></p>                     |
+### NVME <a href="#nvme" id="nvme"></a>
+
+**Support Region HCM (Zone 1a, 1b), HAN (Zone 1a, 1b)**
+
+| IOPS  | Minimum Size (GB) | Throughput |
+| ----- | ----------------- | ---------- |
+| 3000  | 1                 | 200 MB/s   |
+| 5000  | 1                 | 400 MB/s   |
+| 10000 | 1                 | 600 MB/s   |
+| 20000 | 1                 | 600 MB/s   |
+| 40000 | 1                 | 600 MB/s   |
+| 60000 | 1                 | 800 MB/s   |
+
+​
+
+### SSD <a href="#ssd" id="ssd"></a>
+
+**Support Region HCM (Zone 1c)**
+
+| IOPS  | Minimum Size (GB) | Throughput |
+| ----- | ----------------- | ---------- |
+| 3000  | 1                 | 200 MB/s   |
+| 3200  | 1                 | 200 MB/s   |
+| 6400  | 1                 | 400 MB/s   |
+| 10000 | 1                 | 400 MB/s   |
+
+​
+
+
 
 You can change Volume Type at any time.
 
