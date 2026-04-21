@@ -78,7 +78,7 @@ Bạn có thể khôi phục backup project sau khi xóa theo hướng dẫn bê
 
 Sau khi bạn hoàn thành 5 bước được mô tả bên trên, backup project của bạn đã được khôi phục.
 
-Nếu backup project mà bạn thực hiện khôi phục chưa được Gia hạn hay Tăng giảm hạn mức bất kỳ một lần nào thì bạn có thể khôi phục lại backup project này với thông tin thanh toán là 0 VNĐ. Nếu backup project mà bạn thực hiện khôi phục đã được Gia hạn hay Tăng giảm hạn mức ít nhất một lần thì bạn có thể khôi phục lại backup project này với thông tin thanh toán là giá trị tài nguyên được gia hạn hay tăng hạn mức với số ngày sử dụng còn lại tương ứng. Quy trình và phương thức tính giá tương tự như khi khôi phục project thông thường. Chi tiết tham khảo thêm tại [Cách tính phí](../cach-tinh-phi/).
+Nếu backup project mà bạn thực hiện khôi phục chưa được Gia hạn hay Tăng giảm hạn mức bất kỳ một lần nào thì bạn có thể khôi phục lại backup project này với thông tin thanh toán là 0 VNĐ. Nếu backup project mà bạn thực hiện khôi phục đã được Gia hạn hay Tăng giảm hạn mức ít nhất một lần thì bạn có thể khôi phục lại backup project này với thông tin thanh toán là giá trị tài nguyên được gia hạn hay tăng hạn mức với số ngày sử dụng còn lại tương ứng. Quy trình và phương thức tính giá tương tự như khi khôi phục project thông thường. Chi tiết tham khảo thêm tại [Cách tính phí](../../cach-tinh-phi.md).
 
 <br>
 

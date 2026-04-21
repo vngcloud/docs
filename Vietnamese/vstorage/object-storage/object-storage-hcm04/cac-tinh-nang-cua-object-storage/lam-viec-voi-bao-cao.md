@@ -31,10 +31,10 @@ vStorage cung cấp cho bạn các báo cáo thống kê lưu trữ và họa đ
   * **Max Quota**: giá trị quota lớn nhất mà bạn thực hiện mua trong khoảng thời gian mà bạn chọn.
   * **Total requests**: bao gồm tổng số request ở các loại HET, HEAD, PUT, POST, DELETE trong khoảng thời gian mà bạn chọn.
 * **Thông tin chi tiết**: cung cấp các thông tin bao gồm:
-  * Usage chi theo từng gói lưu trữ Gold, Silver, Archive trong khoảng thời gian mà bạn chọn.
+  * Usage chi theo từng gói lưu trữ Gold, Archive trong khoảng thời gian mà bạn chọn.
   * Traffic chia theo lưu lượng nội bộ, lưu lượng quốc tế, lưu lượng nội địa trong khoảng thời gian mà bạn chọn.
-  * Số lượng request kiểu GET/ HEAD chia theo từng gói lưu trữ Gold, Silver, Archive trong khoảng thời gian mà bạn chọn.
-  * Số lượng request kiểu PUT/ POST/ DELETE chia theo từng gói lưu trữ Gold, Silver, Archive trong khoảng thời gian mà bạn chọn.
+  * Số lượng request kiểu GET/ HEAD chia theo từng gói lưu trữ Gold, Archive trong khoảng thời gian mà bạn chọn.
+  * Số lượng request kiểu PUT/ POST/ DELETE chia theo từng gói lưu trữ Gold, Archive trong khoảng thời gian mà bạn chọn.
 
 ## Xem báo cáo tóm tắt trên một project cụ thể
 
@@ -59,12 +59,12 @@ vStorage cung cấp cho bạn các báo cáo thống kê lưu trữ và họa đ
   * **Total Traffic**: tổng lưu lượng truy cập trong khoảng thời gian mà bạn chọn.
   * **Max Quota**: giá trị quota lớn nhất mà bạn thực hiện mua trong khoảng thời gian mà bạn chọn.
   * **Total Requests**: bao gồm tổng số request ở các loại HET, HEAD, PUT, POST, DELETE trong khoảng thời gian mà bạn chọn.
-  * Usage chi theo từng gói lưu trữ Gold, Silver, Archive trong khoảng thời gian mà bạn chọn.
+  * Usage chi theo từng gói lưu trữ Gold, Archive trong khoảng thời gian mà bạn chọn.
   * Traffic chia theo lưu lượng nội bộ, lưu lượng quốc tế, lưu lượng nội địa trong khoảng thời gian mà bạn chọn.
-  * Số lượng request kiểu GET/ HEAD chia theo từng gói lưu trữ Gold, Silver, Archive trong khoảng thời gian mà bạn chọn.
-  * Số lượng request kiểu PUT/ POST/ DELETE chia theo từng gói lưu trữ Gold, Silver, Archive trong khoảng thời gian mà bạn chọn.
+  * Số lượng request kiểu GET/ HEAD chia theo từng gói lưu trữ Gold, Archive trong khoảng thời gian mà bạn chọn.
+  * Số lượng request kiểu PUT/ POST/ DELETE chia theo từng gói lưu trữ Gold, Archive trong khoảng thời gian mà bạn chọn.
 * **Thông tin chi tiết**: cung cấp các thông tin bao gồm:
   * **Traffic Report**: chia theo lưu lượng nội bộ, lưu lượng quốc tế, lưu lượng nội địa trong khoảng thời gian mà bạn chọn. Bên cạnh đó chúng tôi hỗ trợ bạn theo dõi lưu lượng truy cập theo từng ngày thông qua biểu đồ đường, cột và bảng dữ liệu.
   * **Request Report**: chia theo số lượng request ở các loại HET, HEAD, PUT, POST, DELETE trong khoảng thời gian mà bạn chọn. Bên cạnh đó chúng tôi hỗ trợ bạn theo dõi số lượng request theo từng ngày thông qua biểu đồ đường, cột và bảng dữ liệu.
-  * **Usage Report**: chia theo từng gói lưu trữ ở các loại Gold, Silver, Archive trong khoảng thời gian mà bạn chọn. Bên cạnh đó chúng tôi hỗ trợ bạn theo dõi dung lượng lưu trữ theo từng ngày thông qua biểu đồ đường, cột và bảng dữ liệu.
+  * **Usage Report**: chia theo từng gói lưu trữ ở các loại Gold, Archive trong khoảng thời gian mà bạn chọn. Bên cạnh đó chúng tôi hỗ trợ bạn theo dõi dung lượng lưu trữ theo từng ngày thông qua biểu đồ đường, cột và bảng dữ liệu.
   * **Quota Report**: giá trị quota hiện tại của project. Bên cạnh đó chúng tôi hỗ trợ bạn theo dõi quota theo từng ngày thông qua biểu đồ đường, cột và bảng dữ liệu.

@@ -17,7 +17,7 @@ Các sản phẩm / dịch vụ đang được hỗ trợ báo giá tại trang 
 | STT | Sản phẩm | Dịch vụ                                                                                       |
 | --- | -------- | --------------------------------------------------------------------------------------------- |
 | 1   | vServer  | Server, Volume, Load balancer, vDB Relational, vDB MemoryStore, K8s, Image, Network Interface |
-| 2   | vStorage | Project storage (Gold Tier, Silver Tier, Archive Tier)                                        |
+| 2   | vStorage | Project storage (Gold Tier, Archive Tier)                                                     |
 
 ## Cấu hình dịch vụ <a href="#vcalculator-congcuuoctinhchiphi-cauhinhdichvu" id="vcalculator-congcuuoctinhchiphi-cauhinhdichvu"></a>
 

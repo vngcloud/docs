@@ -18,7 +18,7 @@ The supported products/services for pricing on the website are as follows:
 | No. | Product  | Service                                                                                       |
 | --- | -------- | --------------------------------------------------------------------------------------------- |
 | 1   | vServer  | Server, Volume, Load balancer, vDB Relational, vDB MemoryStore, K8s, Image, Network Interface |
-| 2   | vStorage | Project storage (Gold Tier, Silver Tier, Archive Tier)                                        |
+| 2   | vStorage | Project storage (Gold Tier, Archive Tier)                                                     |
 
 ## Configuring Your Service <a href="#vcalculator-congcuuoctinhchiphi-configuringyourservice" id="vcalculator-congcuuoctinhchiphi-configuringyourservice"></a>
 

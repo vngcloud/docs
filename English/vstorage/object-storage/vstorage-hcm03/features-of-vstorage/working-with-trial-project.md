@@ -22,7 +22,7 @@ After creating a project, you cannot change the name of the project. For more in
 
 5\. Select **Project type** (hosting package) according to your needs.
 
-We offer you 3 storage packages Gold, Silver, Archive to suit your different data storage needs. For more information about the hosting plans we offer, see How we charge.
+We offer you storage packages Gold, Archive to suit your different data storage needs. For more information about the hosting plans we offer, see How we charge.
 
 6\. Select **Storage Quota** according to your needs.
 

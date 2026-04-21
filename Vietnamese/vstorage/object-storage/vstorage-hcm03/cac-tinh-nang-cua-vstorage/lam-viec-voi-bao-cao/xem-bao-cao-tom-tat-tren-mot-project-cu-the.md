@@ -23,14 +23,14 @@
   * Tổng lưu lượng: tổng lưu lượng truy cập trong khoảng thời gian mà bạn chọn.
   * Quota lớn nhất: giá trị quota lớn nhất mà bạn thực hiện mua trong khoảng thời gian mà bạn chọn.
   * Tổng số lượng request: bao gồm tổng số request ở các loại HET, HEAD, PUT, POST, DELETE trong khoảng thời gian mà bạn chọn.
-  * Dung lượng sử dụng chi theo từng gói lưu trữ Gold, Silver, Archive trong khoảng thời gian mà bạn chọn.
+  * Dung lượng sử dụng chi theo từng gói lưu trữ Gold, Archive trong khoảng thời gian mà bạn chọn.
   * Lưu lượng truy cập chia theo lưu lượng nội bộ, lưu lượng quốc tế, lưu lượng nội địa trong khoảng thời gian mà bạn chọn.
-  * Số lượng request kiểu GET/ HEAD chia theo từng gói lưu trữ Gold, Silver, Archive trong khoảng thời gian mà bạn chọn.
-  * Số lượng request kiểu PUT/ POST/ DELETE chia theo từng gói lưu trữ Gold, Silver, Archive trong khoảng thời gian mà bạn chọn.
+  * Số lượng request kiểu GET/ HEAD chia theo từng gói lưu trữ Gold, Archive trong khoảng thời gian mà bạn chọn.
+  * Số lượng request kiểu PUT/ POST/ DELETE chia theo từng gói lưu trữ Gold, Archive trong khoảng thời gian mà bạn chọn.
 * **Thông tin chi tiết**: cung cấp các thông tin bao gồm:
   * Báo cáo lưu lượng truy cập: chia theo lưu lượng nội bộ, lưu lượng quốc tế, lưu lượng nội địa trong khoảng thời gian mà bạn chọn. Bên cạnh đó chúng tôi hỗ trợ bạn theo dõi lưu lượng truy cập theo từng ngày thông qua biểu đồ đường, cột và bảng dữ liệu.&#x20;
   * Báo cáo số lượng request: chia theo số lượng request ở các loại HET, HEAD, PUT, POST, DELETE trong khoảng thời gian mà bạn chọn. Bên cạnh đó chúng tôi hỗ trợ bạn theo dõi số lượng request theo từng ngày thông qua biểu đồ đường, cột và bảng dữ liệu.&#x20;
-  * Báo cáo dung lượng sử dụng: chia theo từng gói lưu trữ ở các loại Gold, Silver, Archive trong khoảng thời gian mà bạn chọn. Bên cạnh đó chúng tôi hỗ trợ bạn theo dõi dung lượng lưu trữ theo từng ngày thông qua biểu đồ đường, cột và bảng dữ liệu.&#x20;
+  * Báo cáo dung lượng sử dụng: chia theo từng gói lưu trữ ở các loại Gold, Archive trong khoảng thời gian mà bạn chọn. Bên cạnh đó chúng tôi hỗ trợ bạn theo dõi dung lượng lưu trữ theo từng ngày thông qua biểu đồ đường, cột và bảng dữ liệu.&#x20;
   * Báo cáo quota: giá trị quota hiện tại của project. Bên cạnh đó chúng tôi hỗ trợ bạn theo dõi quota theo từng ngày thông qua biểu đồ đường, cột và bảng dữ liệu.&#x20;
 
 **Chú ý:**&#x20;

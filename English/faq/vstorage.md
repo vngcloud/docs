@@ -92,7 +92,7 @@ Traffic leaving the territory of Vietnam is considered international traffic. Yo
 
 ### \[vStorage] How are vStorage request fees calculated?
 
-For Silver/Archive storage classes, request fees are incurred when you interact with objects. When these request volumes exceed the free tier (predefined by us and displayed on the interface when you [create a project](/broken/pages/MFDR1yVr6JxylhSnvZDb)), the excess request volumes will be accumulated and billed as additional charges on a bill for exceeding the limit at the end of the month. Request-based actions include:
+For Archive storage class, request fees are incurred when you interact with objects. When these request volumes exceed the free tier (predefined by us and displayed on the interface when you [create a project](/broken/pages/MFDR1yVr6JxylhSnvZDb)), the excess request volumes will be accumulated and billed as additional charges on a bill for exceeding the limit at the end of the month. Request-based actions include:
 
 * GET: Used to retrieve information from the server based on the provided URL. For example, retrieving metadata of account lists, containers, objects, or retrieving the content of objects.
 * HEAD: Similar to GET but the response does not include a body, only HTTP headers. For example, Content-Type, Accept-Encoding, Accept-Charset.

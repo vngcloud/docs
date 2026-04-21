@@ -31,10 +31,10 @@ To report a summary of projects in a specific region, you can:
   * **Max Quota** : the maximum quota value you can purchase within the time period you choose.
   * **Total requests** : includes the total number of requests in the types HET, HEAD, PUT, POST, DELETE in the time period you select.
 * **Details** : provide information including:
-  * Usage is calculated according to each Gold, Silver, Archive storage package for the period of time you choose.
+  * Usage is calculated according to each Gold, Archive storage package for the period of time you choose.
   * Traffic is divided into internal traffic, international traffic, domestic traffic in the time period you choose.
-  * Number of GET/HEAD requests divided by Gold, Silver, Archive storage packages during the time period you choose.
-  * Number of PUT/ POST/ DELETE requests divided by Gold, Silver, Archive storage packages during the time period you choose.
+  * Number of GET/HEAD requests divided by Gold, Archive storage packages during the time period you choose.
+  * Number of PUT/ POST/ DELETE requests divided by Gold, Archive storage packages during the time period you choose.
 
 ## View summary reports on a specific project <a href="#xem-bao-cao-tom-tat-tren-mot-project-cu-the" id="xem-bao-cao-tom-tat-tren-mot-project-cu-the"></a>
 
@@ -59,12 +59,12 @@ To report a summary of projects in a specific region, you can:
   * **Total Traffic** : total traffic during the time period you select.
   * **Max Quota** : the maximum quota value you can purchase within the time period you choose.
   * **Total Requests** : includes the total number of requests in the types HET, HEAD, PUT, POST, DELETE in the time period you select.
-  * Usage is calculated according to each Gold, Silver, Archive storage package for the period of time you choose.
+  * Usage is calculated according to each Gold, Archive storage package for the period of time you choose.
   * Traffic is divided into internal traffic, international traffic, domestic traffic in the time period you choose.
-  * Number of GET/HEAD requests divided by Gold, Silver, Archive storage packages during the time period you choose.
-  * Number of PUT/ POST/ DELETE requests divided by Gold, Silver, Archive storage packages during the time period you choose.
+  * Number of GET/HEAD requests divided by Gold, Archive storage packages during the time period you choose.
+  * Number of PUT/ POST/ DELETE requests divided by Gold, Archive storage packages during the time period you choose.
 * **Details** : provide information including:
   * **Traffic Report** : divided by internal traffic, international traffic, domestic traffic in the period you choose. Besides, we support you to track traffic by day through line charts, columns and data tables.
   * **Request Report** : divided by the number of requests in the types HET, HEAD, PUT, POST, DELETE in the time period you choose. Besides, we support you to track the number of requests by day through line charts, columns and data tables.
-  * **Usage Report** : divided by storage package in Gold, Silver, Archive types within the period you choose. Besides, we support you to track storage capacity by day through line charts, columns and data tables.
+  * **Usage Report** : divided by storage package in Gold, Archive types within the period you choose. Besides, we support you to track storage capacity by day through line charts, columns and data tables.
   * **Quota Report** : current quota value of the project. Besides, we support you to track quota by day through line chart, column chart and data table.

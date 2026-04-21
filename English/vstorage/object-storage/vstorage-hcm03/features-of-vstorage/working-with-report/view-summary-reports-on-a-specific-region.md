@@ -19,10 +19,10 @@ To generate a summary report for projects in a specific region, you can follow t
   * Maximum quota: The maximum quota value purchased within the selected time range.
   * Total number of requests: Includes the total number of requests for HET, HEAD, PUT, POST, DELETE methods within the selected time range.
 * **Detailed Information**: Provides detailed information, including:
-  * Storage usage breakdown by storage packages (Gold, Silver, Archive) within the selected time range.
+  * Storage usage breakdown by storage packages (Gold, Archive) within the selected time range.
   * Access traffic breakdown by internal traffic, international traffic, and domestic traffic within the selected time range.
-  * Number of GET/HEAD requests breakdown by storage packages (Gold, Silver, Archive) within the selected time range.
-  * Number of PUT/POST/DELETE requests breakdown by storage packages (Gold, Silver, Archive) within the selected time range.
+  * Number of GET/HEAD requests breakdown by storage packages (Gold, Archive) within the selected time range.
+  * Number of PUT/POST/DELETE requests breakdown by storage packages (Gold, Archive) within the selected time range.
 
 **Warning:**&#x20;
 

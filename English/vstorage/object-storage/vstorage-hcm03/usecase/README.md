@@ -5,8 +5,8 @@ vStorage can be used for various storage needs. Here are some common application
 **Media hosting applications:**
 
 * **Static file storage for the web:** Static data such as images, HTML, and documents can be stored on vStorage to reduce the load on server disks, saving costs and improving user experience.
-* **Video and image storage for CDN (Content Delivery Network):** vStorage Gold/Silver class is designed to handle the request volume from CDNs or end users. Additionally, with upload/download bandwidth of up to 10Gbps in each direction, your original storage will never be congested, even if the number of users increases dramatically.
-* **Backup storage:** Silver and Archive are two storage classes suitable for backup data needs due to their large bandwidth, making it easy to upload backup data quickly. vStorage's autoscaling capability helps minimize the risk of running out of backup storage space and addresses the challenges of rapid data growth.
+* **Video and image storage for CDN (Content Delivery Network):** vStorage Gold class is designed to handle the request volume from CDNs or end users. Additionally, with upload/download bandwidth of up to 10Gbps in each direction, your original storage will never be congested, even if the number of users increases dramatically.
+* **Backup storage:** Archive is a storage class suitable for backup data needs due to its large bandwidth, making it easy to upload backup data quickly. vStorage's autoscaling capability helps minimize the risk of running out of backup storage space and addresses the challenges of rapid data growth.
 
 **Mount storage as a network drive:**
 

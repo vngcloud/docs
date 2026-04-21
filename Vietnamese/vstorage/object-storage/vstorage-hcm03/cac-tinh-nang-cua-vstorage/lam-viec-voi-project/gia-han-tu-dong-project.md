@@ -21,7 +21,7 @@ Hệ thống sẽ tự động gia hạn 3 ngày trước khi dịch vụ hết 
 2. Tại thời điểm thiết lập thông tin về project cần mua, chọn **Gia hạn tự động**.
 3. Chọn **chu kỳ gia hạn tự động**. Chúng tôi cung cấp các chu kỳ gia hạn bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng. Khi bạn thực hiện chọn chu kỳ gia hạn, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ lưu trữ mới và tổng số tiền bạn cần chi trả cho việc gia hạn **project**.
 
-Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](../../cach-tinh-phi/).&#x20;
+Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](../../../cach-tinh-phi.md).&#x20;
 
 Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ mới sau khi gia hạn project sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
 
@@ -40,7 +40,7 @@ _**Video hướng dẫn:**_&#x20;
 3. Màn hình **Bật gia hạn tự động** được hiển th&#x1ECB;**.** Chọn **Thời hạn** gia hạn mà bạn mong muốn.&#x20;
 4. Chọn **Đồng ý.**
 
-Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](../../cach-tinh-phi/).&#x20;
+Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](../../../cach-tinh-phi.md).&#x20;
 
 Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ mới sau khi gia hạn project sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
 

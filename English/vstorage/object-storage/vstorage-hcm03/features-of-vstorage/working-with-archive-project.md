@@ -1,8 +1,8 @@
 # Working with Archive project
 
-The Archive project of the vStorage storage service is a project that uses the Archive class to store data. Archive class is the third storage class of vStorage besides Gold class and Silver class. The Archive class is designed by us to be used as a safe, durable storage facility at an extremely low cost, suitable for your long-term data storage and backup needs.
+The Archive project of the vStorage storage service is a project that uses the Archive class to store data. Archive class is one of the storage classes of vStorage besides Gold class. The Archive class is designed by us to be used as a safe, durable storage facility at an extremely low cost, suitable for your long-term data storage and backup needs.
 
-With Archive class, the SLA rate is always guaranteed to reach 99.99% along with data security features according to enterprise data safety standards. Besides, the storage cost of the Archive class is the lowest among the three classes, which can help you save a lot of costs compared to other backup storage solutions. Not only that, the Archive class also aims to optimize your convenience by making data available for immediate download without any waiting time. Additionally, data management is easy on the vStorage Portal interface along with convenient search features. Similar to other vStorage classes, the Archive class is also compatible with 3rd party software so you can integrate and use it on your familiar software.
+With Archive class, the SLA rate is always guaranteed to reach 99.99% along with data security features according to enterprise data safety standards. Besides, the low storage cost of the Archive class can help you save a lot of costs compared to other backup storage solutions. Not only that, the Archive class also aims to optimize your convenience by making data available for immediate download without any waiting time. Additionally, data management is easy on the vStorage Portal interface along with convenient search features. Similar to other vStorage classes, the Archive class is also compatible with 3rd party software so you can integrate and use it on your familiar software.
 
 #### Some common use cases of Archive project <a href="#workingwitharchiveproject-somecommonusecasesofarchiveproject" id="workingwitharchiveproject-somecommonusecasesofarchiveproject"></a>
 
@@ -25,7 +25,7 @@ To meet the criteria of extremely low costs and service quality reflected in the
 
 #### Tips when using <a href="#workingwitharchiveproject-tipswhenusing" id="workingwitharchiveproject-tipswhenusing"></a>
 
-* Make sure the data you put into the Archive class is data that needs to be stored but is rarely used. Because although the storage cost of the Archive class is the lowest, the costs arise from manipulating data such as deleting, restoring, etc. will be 1-2 times higher than Gold class and Silver class storage classes.
-* The Archive class is also not suitable for storing constantly changing data because of our 6-month data deletion restriction. If you need to store backup data but have time to change data every week or month, Silver class will be the right choice.
+* Make sure the data you put into the Archive class is data that needs to be stored but is rarely used. Because although the storage cost of the Archive class is low, the costs arise from manipulating data such as deleting, restoring, etc. will be 1-2 times higher than the Gold class storage.
+* The Archive class is also not suitable for storing constantly changing data because of our 6-month data deletion restriction.
 
 \

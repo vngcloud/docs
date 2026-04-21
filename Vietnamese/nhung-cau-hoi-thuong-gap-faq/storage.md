@@ -90,7 +90,7 @@ Traffic đi ra khỏi lãnh thổ Việt Nam được tính là traffic quốc t
 
 ### \[vStorage] Cách tính phí request của vStorage được tính theo cách nào?
 
-Đối với các storage class loại Silver / Archive, sẽ có phát sinh request khi bạn tương tác với object. Khi lượng request này vượt khỏi mốc miễn phí (mốc được thiết lập sẵn bởi chúng tôi và được thể hiện trên giao diện khi bạn [Khởi tạo project](../vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-project/khoi-tao-project.md)) thì lượng request vượt mức này sẽ được thống kê và tính phí bổ sung trên 1 bill phí vượt mức vào cuối tháng. \
+Đối với storage class loại Archive, sẽ có phát sinh request khi bạn tương tác với object. Khi lượng request này vượt khỏi mốc miễn phí (mốc được thiết lập sẵn bởi chúng tôi và được thể hiện trên giao diện khi bạn [Khởi tạo project](../vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-project/khoi-tao-project.md)) thì lượng request vượt mức này sẽ được thống kê và tính phí bổ sung trên 1 bill phí vượt mức vào cuối tháng. \
 Các hành động tính phí theo request bao gồm:
 
 * GET: được sử dụng để lấy thông tin từ server theo URL đã cung cấp. Ví dụ lấy thông tin metadata của danh sách accounts, containers, objects... hay lấy về nội dung (content) của objects.

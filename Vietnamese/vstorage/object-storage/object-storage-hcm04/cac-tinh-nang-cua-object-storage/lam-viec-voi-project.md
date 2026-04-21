@@ -43,7 +43,7 @@ Thực hiện tạo project theo các bước bên dưới:
 3. Chọn **Tạo một Project.**
 4. Nhập **Project Name**
 5. Chọn **Billing method** (hình thức thanh toán) phù hợp theo nhu cầu. Chúng tôi đang hỗ trợ **Trả phí theo gói** hoặc **Trả phí theo dung lượng sử dụng**.
-6. Chọn **Project type** (gói) lưu trữ phù hợp theo nhu cầu. Hiện tại ở region HCM04, chúng tôi sẽ cung cấp cho bạn gói lưu trữ **Instant Archive Type**. Với gói lưu trữ này, bạn sẽ có lượng Traffic miễn phí bằng 2 lần lượng Quota mà bạn chọn sử dụng và lượng Request hoàn toàn miễn phí. Để biết thêm thông tin chi tiết về cách tính giá, vui lòng tham khảo thêm tại [Cách tính phí.](../cach-tinh-phi.md)
+6. Chọn **Project type** (gói) lưu trữ phù hợp theo nhu cầu. Hiện tại ở region HCM04, chúng tôi sẽ cung cấp cho bạn gói lưu trữ **Instant Archive Type**. Với gói lưu trữ này, bạn sẽ có lượng Traffic miễn phí bằng 2 lần lượng Quota mà bạn chọn sử dụng và lượng Request hoàn toàn miễn phí. Để biết thêm thông tin chi tiết về cách tính giá, vui lòng tham khảo thêm tại [Cách tính phí.](../../cach-tinh-phi.md)
 7. Chọn **Quota** (dung lượng lưu trữ) mà bạn mong muốn.
 8. Chọn **Period** và chọn/bỏ chọn **Auto-renew** theo nhu cầu của bạn.
 9. Thực hiện các bước **Thanh toán** giỏ hàng và **Project** của bạn sẽ được khởi tạo.
@@ -130,7 +130,7 @@ Hệ thống sẽ tự động gia hạn 3 ngày trước khi dịch vụ hết 
 2. Tại thời điểm thiết lập thông tin về project cần mua, chọn **Gia hạn tự động**.
 3. Chọn **chu kỳ gia hạn tự động**. Chúng tôi cung cấp các chu kỳ gia hạn bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng. Khi bạn thực hiện chọn chu kỳ gia hạn, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ lưu trữ mới và tổng số tiền bạn cần chi trả cho việc gia hạn **project**.
 
-Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](../../vstorage-hcm03/cach-tinh-phi/).
+Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](../../cach-tinh-phi.md).
 
 Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ mới sau khi gia hạn project sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
 

@@ -31,10 +31,10 @@ Sau khi bạn đã tạo các project để lưu trữ dữ liệu. Chúng tôi 
   * Quota lớn nhất: giá trị quota lớn nhất mà bạn thực hiện mua trong khoảng thời gian mà bạn chọn.
   * Tổng số lượng request: bao gồm tổng số request ở các loại HET, HEAD, PUT, POST, DELETE trong khoảng thời gian mà bạn chọn.
 * **Thông tin chi tiết**: cung cấp các thông tin bao gồm:
-  * Dung lượng sử dụng chi theo từng gói lưu trữ Gold, Silver, Archive trong khoảng thời gian mà bạn chọn.
+  * Dung lượng sử dụng chi theo từng gói lưu trữ Gold, Archive trong khoảng thời gian mà bạn chọn.
   * Lưu lượng truy cập chia theo lưu lượng nội bộ, lưu lượng quốc tế, lưu lượng nội địa trong khoảng thời gian mà bạn chọn.
-  * Số lượng request kiểu GET/ HEAD chia theo từng gói lưu trữ Gold, Silver, Archive trong khoảng thời gian mà bạn chọn.
-  * Số lượng request kiểu PUT/ POST/ DELETE chia theo từng gói lưu trữ Gold, Silver, Archive trong khoảng thời gian mà bạn chọn.
+  * Số lượng request kiểu GET/ HEAD chia theo từng gói lưu trữ Gold, Archive trong khoảng thời gian mà bạn chọn.
+  * Số lượng request kiểu PUT/ POST/ DELETE chia theo từng gói lưu trữ Gold, Archive trong khoảng thời gian mà bạn chọn.
 
 {% hint style="info" %}
 **Chú ý:**&#x20;

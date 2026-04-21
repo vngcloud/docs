@@ -10,7 +10,7 @@ Use this document to learn more about the auto-renewal feature. It will detail t
 
 **2. Instructions to enable/disable the "Automatic renewal" feature**
 
-**2.1 For vStorage service products:** [**https://docs.vngcloud.vn/vng-cloud-document/vstorage/object-storage/vstorage-hcm03/charging-fee/charging-for-prepaid-users**](https://docs.vngcloud.vn/vng-cloud-document/vstorage/object-storage/vstorage-hcm03/charging-fee/charging-for-prepaid-users)
+**2.1 For vStorage service products:** [**https://docs.vngcloud.vn/vng-cloud-document/vstorage/object-storage/cach-tinh-phi**](https://docs.vngcloud.vn/vng-cloud-document/vstorage/object-storage/cach-tinh-phi)
 
 **2.2 For vServer products and services**
 

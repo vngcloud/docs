@@ -20,14 +20,14 @@ To generate a summary report for specific projects in a particular region, you c
     * Total traffic: The total access traffic within the selected time period.
     * Maximum quota: The maximum quota value purchased during the selected time period.
     * Total number of requests: Includes the total number of requests for HET, HEAD, PUT, POST, DELETE methods within the selected time period.
-    * Storage capacity usage breakdown by storage package (Gold, Silver, Archive) within the selected time period.
+    * Storage capacity usage breakdown by storage package (Gold, Archive) within the selected time period.
     * Access traffic breakdown by internal traffic, international traffic, and domestic traffic within the selected time period.
-    * Number of GET/HEAD requests breakdown by storage package (Gold, Silver, Archive) within the selected time period.
-    * Number of PUT/POST/DELETE requests breakdown by storage package (Gold, Silver, Archive) within the selected time period.
+    * Number of GET/HEAD requests breakdown by storage package (Gold, Archive) within the selected time period.
+    * Number of PUT/POST/DELETE requests breakdown by storage package (Gold, Archive) within the selected time period.
 * **Detailed information**: Provides detailed information, including:
   * Traffic access report: Breaks down traffic access by internal traffic, international traffic, and domestic traffic within the selected time period. Additionally, we provide line, bar, and data table charts for you to track traffic access on a daily basis.
   * Request count report: Breaks down the number of requests for HET, HEAD, PUT, POST, DELETE methods within the selected time period. Similarly, we offer line, bar, and data table charts to track the request count on a daily basis.
-  * Storage capacity usage report: Breaks down storage capacity usage by storage package (Gold, Silver, Archive) within the selected time period. You can also track storage capacity usage on a daily basis using line, bar, and data table charts.
+  * Storage capacity usage report: Breaks down storage capacity usage by storage package (Gold, Archive) within the selected time period. You can also track storage capacity usage on a daily basis using line, bar, and data table charts.
   * Quota report: Provides the current quota value for the project. We also offer line, bar, and data table charts to track the quota on a daily basis.
 
 **Warning:**&#x20;

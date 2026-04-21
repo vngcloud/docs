@@ -9,7 +9,7 @@ Create a project by following the steps below:
 3. Select **Create a Project.**
 4. Enter **Project Name**
 5. Select the appropriate **Billing method** according to your needs. We will provide you with 2 types **Pay monthly** and **Pay as you go**.
-6. Select the appropriate **Project type (package) according to your needs. Currently in region HCM04, we will provide you with the Instant Archive Type** package . With this package, you will have free Traffic equal to 2 times the Quota you choose to use and the Request amount is completely free. For more information on pricing, please refer to [Pricing.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/object-storage-hcm04/cach-tinh-phi)
+6. Select the appropriate **Project type (package) according to your needs. Currently in region HCM04, we will provide you with the Instant Archive Type** package . With this package, you will have free Traffic equal to 2 times the Quota you choose to use and the Request amount is completely free. For more information on pricing, please refer to [Pricing.](../../cach-tinh-phi.md)
 7. Select **the Quota** (storage capacity) you want.
 8. Select **Period** and check/uncheck **Auto-renew** according to your needs.
 9. **Go through the Checkout** steps and your **Project** will be created.

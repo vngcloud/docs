@@ -13,13 +13,12 @@ Thực hiện tạo project theo các bước bên dưới:
 
 Nhằm thuận tiện cho quá trình sử dụng, chúng tôi khuyến khích tên dự án hoặc sản phẩm của doanh nghiệp bạn được sử dụng như tên của **Project** lưu trữ trong dịch vụ vStorage.
 
-Bên cạnh đó chúng tôi đang hỗ trợ 3 gói lưu trữ có sẵn bao gồm:
+Bên cạnh đó chúng tôi đang hỗ trợ các gói lưu trữ có sẵn bao gồm:
 
 * Gold: gói lưu trữ phù hợp với nhu cầu lưu trữ media, làm original cho CDN, có lượng lớn người truy cập.
-* Silver: gói lưu trữ phù hợp với nhu cầu lưu trữ backup, các dữ liệu không có lượng truy cập quá lớn.
 * Archive: gói lưu trữ phù hợp với nhu cầu lưu trữ lâu dài, tối thiểu 6 tháng, ít sử dụng.&#x20;
 
-Cách tính chi phí lưu trữ cho mỗi project được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../cach-tinh-phi/).
+Cách tính chi phí lưu trữ cho mỗi project được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
 _**Video hướng dẫn:**_
 

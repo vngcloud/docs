@@ -13,10 +13,9 @@ Follow these steps to create a project:
 
 For convenience, we recommend using the name of your project or business product as the **Project Name** in vStorage.
 
-Additionally, we are supporting 3 available storage packages:
+Additionally, we are supporting the following storage packages:
 
 * Gold: Suitable for storing media, serving as originals for CDN, with a large number of accessors.
-* Silver: Suitable for backup storage, data with not too much access.
 * Archive: Suitable for long-term storage needs, minimum 6 months, low usage.
 
-The storage cost calculation for each project is publicly available on the GreenNode homepage, see [Charging Fee](https://docs.vngcloud.vn/display/VSEN/Charging+Fee).
+The storage cost calculation for each project is publicly available on the GreenNode homepage, see [Charging Fee](../../cach-tinh-phi.md).

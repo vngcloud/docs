@@ -20,7 +20,7 @@ Sau khi tạo project, bạn không thể thay đổi tên của project. Để 
 
 5\. Chọn **Project type (gói lưu trữ)** theo nhu cầu của bạn.
 
-Chúng tôi cung cấp cho bạn 3 gói lưu trữ Gold, Silver, Archive phù hợp với các nhu cầu lưu trữ dữ liệu khác nhau của bạn. Để biết thêm thông tin về các gói lưu trữ chúng tôi đang cung cấp, hãy xem [Cách tính phí](../../cach-tinh-phi/).
+Chúng tôi cung cấp cho bạn các gói lưu trữ Gold, Archive phù hợp với các nhu cầu lưu trữ dữ liệu khác nhau của bạn. Để biết thêm thông tin về các gói lưu trữ chúng tôi đang cung cấp, hãy xem [Cách tính phí](../../../cach-tinh-phi.md).
 
 6\. Chọn **Quota** lưu trữ theo nhu cầu của bạn.
 
@@ -34,7 +34,7 @@ Quota là kích thước gói lưu trữ tối đa bạn có thể tạo. Đối
 
 10\. Chọn **Tiếp tục thanh toán** và thực hiện thanh toán sau khi chọn phương thức thanh toán phù hợp.
 
-Để biết danh sách các loại hình thức thanh toán của vStorage, hãy xem [Cách tính phí](../../cach-tinh-phi/).
+Để biết danh sách các loại hình thức thanh toán của vStorage, hãy xem [Cách tính phí](../../../cach-tinh-phi.md).
 
 Sau khi bạn hoàn thành 10 bước được mô tả bên trên, project đã được tạo. Tiếp tục sử dụng các tính năng mà chúng tôi cung cấp cho project, bắt đầu với [Khởi tạo container](../lam-viec-voi-container/khoi-tao-container.md).
 

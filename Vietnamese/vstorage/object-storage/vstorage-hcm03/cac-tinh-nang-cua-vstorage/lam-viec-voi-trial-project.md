@@ -22,7 +22,7 @@ Sau khi tạo project, bạn không thể thay đổi tên của project. Để 
 
 5\. Chọn **Project type (gói lưu trữ)** theo nhu cầu của bạn.
 
-Chúng tôi cung cấp cho bạn 3 gói lưu trữ Gold, Silver, Archive phù hợp với các nhu cầu lưu trữ dữ liệu khác nhau của bạn. Để biết thêm thông tin về các gói lưu trữ chúng tôi đang cung cấp, hãy xem [Cách tính phí](../cach-tinh-phi/).
+Chúng tôi cung cấp cho bạn các gói lưu trữ Gold, Archive phù hợp với các nhu cầu lưu trữ dữ liệu khác nhau của bạn. Để biết thêm thông tin về các gói lưu trữ chúng tôi đang cung cấp, hãy xem [Cách tính phí](../../cach-tinh-phi.md).
 
 6\. Chọn **Quota** lưu trữ theo nhu cầu của bạn.
 
@@ -50,7 +50,7 @@ Sau 7 ngày sử dụng trial project, nếu bạn không thực hiện chuyển
 
 6\. Chọn **Tiếp tục thanh toán** và thực hiện thanh toán sau khi chọn phương thức thanh toán phù hợp.
 
-Để biết danh sách các loại hình thức thanh toán của vStorage, hãy xem [Cách tính phí](../cach-tinh-phi/).&#x20;
+Để biết danh sách các loại hình thức thanh toán của vStorage, hãy xem [Cách tính phí](../../cach-tinh-phi.md).&#x20;
 
 Sau khi bạn thực hiện thành công 6 bước trên, trial project của bạn sẽ được chuyển thành project thông thường và thông tin này sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
 {% endtab %}

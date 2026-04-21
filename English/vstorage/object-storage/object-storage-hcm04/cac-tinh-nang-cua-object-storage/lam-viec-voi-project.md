@@ -50,7 +50,7 @@ Create a project by following the steps below:
 3. Select **Create a Project.**
 4. Enter **Project Name**
 5. Select the appropriate **Billing method** according to your needs. We will provide you with 2 types **Pay monthly** and **Pay as you go**.
-6. Select the appropriate **Project type (package) according to your needs. Currently in region HCM04, we will provide you with the Instant Archive Type** package . With this package, you will have free Traffic equal to 2 times the Quota you choose to use and the Request amount is completely free. For more information on pricing, please refer to [Pricing.](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/object-storage-hcm04/cach-tinh-phi)
+6. Select the appropriate **Project type (package) according to your needs. Currently in region HCM04, we will provide you with the Instant Archive Type** package . With this package, you will have free Traffic equal to 2 times the Quota you choose to use and the Request amount is completely free. For more information on pricing, please refer to [Pricing.](../../cach-tinh-phi.md)
 7. Select **the Quota** (storage capacity) you want.
 8. Select **Period** and check/uncheck **Auto-renew** according to your needs.
 9. **Go through the Checkout** steps and your **Project** will be created.
@@ -137,7 +137,7 @@ The system will automatically renew 3 days before the service expires:
 2. At the time of setting up information about the project to be purchased, select **Auto Renew** .
 3. Select **the automatic renewal cycle** . We offer renewal cycles including: 1 month, 3 months, 6 months, 12 months, 24 months, 36 months. When you select the renewal cycle, the system will automatically calculate the validity period of the new storage cycle and the total amount you need to pay for the **project** renewal .
 
-For a list of vStorage payment types and how project renewals are charged, see [How Charges Are Charged](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vstorage/object-storage/vstorage-hcm03/cach-tinh-phi) .
+For a list of vStorage payment types and how project renewals are charged, see [Charging Fee](../../cach-tinh-phi.md).
 
 After you successfully complete the above steps, the new retention period after project renewal will be updated on the general information of the project you selected.
 

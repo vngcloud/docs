@@ -20,7 +20,7 @@ Once a project is created, you cannot change its name. For more information on n
 
 5\. Choose **Project type** based on your storage needs.
 
-We provide three storage packages: Gold, Silver, and Archive, suitable for different data storage requirements. For more information on the storage packages we offer, see [Charging Fee](https://docs.vngcloud.vn/display/VSEN/Charging+Fee).
+We provide storage packages: Gold and Archive, suitable for different data storage requirements. For more information on the storage packages we offer, see [Charging Fee](../../../cach-tinh-phi.md).
 
 6\. Choose **Quota** storage based on your needs.
 
