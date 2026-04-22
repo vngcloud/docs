@@ -10,7 +10,7 @@ GreenNode ra mắt dịch vụ mới PostgreSQL Cluster cho dịch vụ vDB Rela
 
 * Kiến trúcMulti-node High Availability: tự động failover khi Writer gặp sự cố.
 * Hai Endpoint RW & RO riêng biệt: dễ dàng scale out các heavy-read workload.
-* Tích hợp sẵn với vBackup: dễ dàng thiết lập các Backup Policy, Vault Lock tại Backup Center.
+* Tích hợp sẵn với vBackup: dễ dàng thiết lập các Backup Policy, Vault Lock tại Backup Center, hỗ trợ nhiều vùng lưu trữ backup (HCM & HAN).
 * Hỗ trợ các extension phổ biến: pgvector, timescaledb, postgis, pg\_stat\_statements,... phù hợp với nhiều usecase như VectorDB for AI, high-performance real-time analytics, OLTP, ...
 * Hỗ trợ IAM, ví POC.
 
@@ -18,7 +18,7 @@ Ngoài ra, GreenNode dừng hỗ trợ tạo mới các Version sau: MySQL 5.5, 
 
 ***
 
-## April 08, 2025 - vDB OpenSearch Cluster (ODS)&#x20;
+## April 08, 2025 - vDB OpenSearch Cluster (ODS)
 
 GreenNode vừa ra phiên bản đầu tiên cho dịch vụ vDB OpenSearch, mang đến cho bạn trải nghiệm quản lý logs và tìm kiếm dữ liệu mạnh mẽ và hiệu quả hơn bao giờ hết!
 
