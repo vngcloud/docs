@@ -935,7 +935,7 @@
       * [Update & Delete a Listener](vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/update-and-delete-a-listener.md)
       * [Listener Policies](vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/listener-policies.md)
       * [Client Certificate Authentication](vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/client-certificate-authentication.md)
-      * [Config IP whitelist to load balancer](vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/config-ip-whitelist-to-load-balancer.md)
+      * [ACL (Access Control List)](vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/config-ip-whitelist-to-load-balancer.md)
       * [Config Idle Timeout](vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/listener/config-timeout.md)
     * [Certificate](vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/certificate/README.md)
       * [Upload a certificate](vserver/compute-hcm03-1a/vlb-load-balancer-new-version/application-load-balancer/certificate/upload-a-certificate.md)
