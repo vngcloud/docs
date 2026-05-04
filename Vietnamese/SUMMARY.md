@@ -195,6 +195,7 @@
           * [Khôi phục project](vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-project/khoi-phuc-project.md)
           * [Sử dụng tính năng IP range ACLs project](vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-project/su-dung-tinh-nang-ip-range-acls-project.md)
           * [Tăng dung lượng tự động (Auto-scale Quota)](vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-project/tang-dung-luong-tu-dong.md)
+          * [Cảnh báo dung lượng (Usage alert)](vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-project/canh-bao-dung-luong-usage-alert.md)
         * [Làm việc với container](vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/README.md)
           * [Tổng quan container](vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/tong-quan-container.md)
           * [Phạm vi giới hạn container](vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/pham-vi-gioi-han-container.md)

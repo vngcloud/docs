@@ -227,6 +227,38 @@ Tính năng Tự động tăng dung lượng lưu trữ (Auto-scale Quota) trên
 * Nếu việc tăng dung lượng **thất bại**, người dùng sẽ nhận được thông báo qua email. Sau hai lần thực hiện auto-scale thất bại liên tiếp, hệ thống của chúng tôi sẽ ngừng gửi thông báo qua email cho bạn. Bạn cần chủ động truy cập vào vStorage để thực hiện resize project thủ công theo hướng dẫn bên trên.
 {% endhint %}
 
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-11.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-24.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+## Cảnh báo dung lượng (Usage alert)
+
+Tính năng Cảnh báo dung lượng lưu trữ (Usage alert) trên vStorage cho phép bạn thiết lập cảnh báo qua email khi dung lượng lưu trữ đạt đến ngưỡng. Mặc định, project khi được tạo đã được thiết lập ngưỡng cảnh báo ở mức 90% quota. Hướng dẫn này sẽ cung cấp chi tiết cách thức cấu hình và quản lý tính năng này thông qua vStorage Portal.
+
+Để thiết lập tăng dung lượng tự động cho một project, bạn có thể:
+
+1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+2. Tại project cần thiết lập Auto-scale Quota, chọn biểu tượng <img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fxle5SMO5J6MplFpJZC74%252Fimage.png%3Falt%3Dmedia%26token%3De9cdb754-9a75-4868-90bf-67e670048eb5&#x26;width=27&#x26;dpr=4&#x26;quality=100&#x26;sign=1f9a3808&#x26;sv=1" alt="" data-size="line"> sau đó chọn mục **Cảnh báo dung lượng** và tiếp tục chọn **Cấu hình cảnh báo dung lượng**.
+3. Tại màn hình **Cấu hình cảnh báo dung lượng**, thực hiện thiết lập các thông số cần thiết. Cụ thể:
+
+* Thiết lập **Đơn vị quota:** bạn có thể chọn 1 trong hai loại đơn vị bao gồm **GB** hoặc **Phần trăm**.
+* Thiết lập **Ngưỡng quota** hoặc **Hạn mức còn lại:** Nếu bạn chọn **Đơn vị quota** là **Phần trăm**, tại đây bạn sẽ nhập phần trăm ngưỡng sử dụng mà khi đạt tới thì hệ thống sẽ kích hoạt cảnh báo. Nếu bạn chọn **Đơn vị quota** là **GB**, tại đây bạn sẽ nhập lượng quota còn lại mà khi đạt tới hệ thống cũng sẽ kích hoạt cảnh báo.
+
+4. Bật tính năng **Cảnh báo dung lượng** tại biểu tượng <img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FjlLW0mG9Z7he3tym9yeH%252Fimage.png%3Falt%3Dmedia%26token%3D247a3e39-731f-4fdb-a2f4-08b6bf8bbf2d&#x26;width=64&#x26;dpr=4&#x26;quality=100&#x26;sign=44906aa4&#x26;sv=1" alt="" data-size="line">. Khi biểu tượng này trở thành <img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FVGMWqFlP5OOPvrycdMrg%252Fimage.png%3Falt%3Dmedia%26token%3D94d216a5-2e33-489e-884d-f837683920c6&#x26;width=59&#x26;dpr=4&#x26;quality=100&#x26;sign=38683327&#x26;sv=1" alt="" data-size="line">tức là bạn đã bật **Cảnh báo dung lượng** thành công.
+5. Ngoài ra, bạn có thể nhấn vào mục **Quản lý người nhận thông báo** để thiết lập thêm danh sách người cùng nhận email cảnh báo.
+
+{% hint style="info" %}
+**Chú ý:**
+
+* **Hệ thống vStorage** sẽ thực hiện kiểm tra project có/ không đủ điều kiện được cảnh báo dung lượng theo chu kỳ mỗi **2 lần/ngày** để tự động cảnh báo dung lượng dựa trên ngưỡng đã thiết lập. Email cảnh báo sẽ được gởi tối đa 3 lần liên tiếp.
+{% endhint %}
+
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-47.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-57.png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ## Thực hiện POC project
