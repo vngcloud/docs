@@ -226,6 +226,8 @@
           * [Delete a project](vstorage/object-storage/vstorage-hcm03/features-of-vstorage/working-with-projects/delete-a-project.md)
           * [Restore a project](vstorage/object-storage/vstorage-hcm03/features-of-vstorage/working-with-projects/restore-a-project.md)
           * [IP Range ACLs for a project](vstorage/object-storage/vstorage-hcm03/features-of-vstorage/working-with-projects/ip-range-acls-for-a-project.md)
+          * [Auto-scale Quota](vstorage/object-storage/vstorage-hcm03/features-of-vstorage/working-with-projects/auto-scale-quota.md)
+          * [Usage alert](vstorage/object-storage/vstorage-hcm03/features-of-vstorage/working-with-projects/usage-alert.md)
         * [Working with containers](vstorage/object-storage/vstorage-hcm03/features-of-vstorage/working-with-containers/README.md)
           * [Containers overview](vstorage/object-storage/vstorage-hcm03/features-of-vstorage/working-with-containers/containers-overview.md)
           * [Containers naming rule](vstorage/object-storage/vstorage-hcm03/features-of-vstorage/working-with-containers/containers-naming-rule.md)
