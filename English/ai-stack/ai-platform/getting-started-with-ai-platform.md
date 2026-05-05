@@ -22,7 +22,8 @@ Navigate to the API Keys section in AI Platform:
 
 <figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
-**Create an API Key**\
+**Create an API Key**
+
 Note: You can create a maximum of 2 API keys per account.
 
 1. Click the "Create an API key" button.
