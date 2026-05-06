@@ -11,23 +11,18 @@
 **Bước 3:** Tại màn hình **Tạo Gateway mới**, vui lòng điền đầy đủ các thông tin sau:
 
 * **AI Gateway Name:** Đặt tên dễ nhớ cho gateway của bạn. Tên này chỉ được chứa các ký tự **a–z, A–Z, 0–9, dấu gạch dưới (\_) hoặc dấu gạch ngang (-)**, và có độ dài từ **5 đến 50 ký tự**.
-*   **Model Provider:**
+* **Model Provider:**
+  * Chọn nhà cung cấp mô hình AI OpenAI Compatible.
+  * **Model Type**: Chọn Model Type (xem tại [MaaS](https://aiplatform.console.vngcloud.vn/models/md-37404b64-0656-4c85-978c-a6e1b84ea8ac) ở portal AI Platform).
+  * **Model Endpoint**: Điền URL của model (xem tại [MaaS](https://aiplatform.console.vngcloud.vn/models/md-37404b64-0656-4c85-978c-a6e1b84ea8ac) ở poral AI Platform).
+  * **Model Name**: Điền Name của model (xem tại [MaaS](https://aiplatform.console.vngcloud.vn/models/md-37404b64-0656-4c85-978c-a6e1b84ea8ac) ở poral AI Platform).\
+    ![](<../../../.gitbook/assets/image (3).png>)
+  *   **Authentication info**:
 
-    * Chọn nhà cung cấp mô hình AI OpenAI Compatible.
-    * **Model Type**: Chọn Model Type (xem tại [MaaS](https://aiplatform.console.vngcloud.vn/models/md-37404b64-0656-4c85-978c-a6e1b84ea8ac) ở portal AI Platform).
-    * **Model Endpoint**: Điền URL của model (xem tại [MaaS](https://aiplatform.console.vngcloud.vn/models/md-37404b64-0656-4c85-978c-a6e1b84ea8ac) ở poral AI Platform).
-    *
+      * header\_name: Điền `Authorization`.
+      * header\_value: Điền `Bearer <api-key-maas>` ( API Key trong hình được tạo ở [Portal ](https://aiplatform.console.vngcloud.vn/keys)AI Platform).
 
-    ```
-    <figure><img src="/broken/files/g41wCXIWChs9gqtqIDzp" alt=""><figcaption></figcaption></figure>
-    ```
-
-    *   **Authentication info**:
-
-        * header\_name: Điền `Authorization`.
-        * header\_value: Điền Api Key MaaS ( API Key trong hình được tạo ở [Portal ](https://aiplatform.console.vngcloud.vn/keys)AI Platform).
-
-        <figure><img src="../../../.gitbook/assets/image (439).png" alt="123"><figcaption></figcaption></figure>
+      <figure><img src="../../../.gitbook/assets/image (439).png" alt="123"><figcaption></figcaption></figure>
 * **Gateway Config:** Mặc định, hệ thống sẽ bật tính năng **Authenticated Gateway.**
 
 **Bước 4**: Chọn Create an AI Gateway, AI Gateway của bạn sẽ được khởi tạo và sẵn sàng để sử dụng.
