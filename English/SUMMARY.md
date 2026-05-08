@@ -669,7 +669,7 @@
     * [Upgrading Node Group Version](vks/node-groups/upgrading-node-group-version.md)
     * [Lable and Taint](vks/node-groups/lable-va-taint.md)
     * [Working with NVIDIA GPU Node Group](vks/node-groups/khoi-tao-va-lam-viec-voi-nvidia-gpu-node-group.md)
-    * [Kube Reserved](vks/node-groups/kube-reserved.md)
+    * [Worker Node Reserved Resources](vks/node-groups/worker-node-reserved-resources.md)
   * [Network](vks/network/README.md)
     * [Working with Application Load Balancer (ALB)](vks/network/working-with-alb/README.md)
       * [Expose a service through vLB Layer7 (ALB)](vks/network/working-with-alb/expose-mot-service-thong-qua-vlb-layer7.md)
