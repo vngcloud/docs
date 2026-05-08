@@ -10,7 +10,7 @@ After successfully creating an AI Gateway, you can start sending requests to the
 
 **Step 3:** Copy the displayed curl command and execute it on your local machine (via Terminal or Command Prompt).
 
-<figure><img src="../../../.gitbook/assets/image (471).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (470).png" alt=""><figcaption></figcaption></figure>
 
 Example:
 
