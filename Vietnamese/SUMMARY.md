@@ -716,6 +716,7 @@
 * [VKS](vks/README.md)
   * [VKS là gì?](vks/vks-la-gi.md)
   * [Mô hình hoạt động](vks/mo-hinh-hoat-dong.md)
+  * [Usage & Limits](vks/usage-limits.md)
   * [Thông báo và cập nhật](vks/announcements/README.md)
     * [Release notes](vks/announcements/release-notes.md)
     * [Lịch phát hành phiên bản](vks/announcements/vks-release-schedule.md)

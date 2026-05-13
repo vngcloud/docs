@@ -1,5 +1,18 @@
 # Release notes
 
+## May 13, 2026 <a href="#may_13_2026" id="may_13_2026"></a>
+
+VKS (VNG Kubernetes Engine) has just released its latest update, bringing a notable new feature to users. Below are the key highlights of this release:
+
+**New Features:**
+
+* **Usage & Limits:** The VKS Portal now includes a **Usage & Limits** page, giving you a clear view of your current resource usage (Kubernetes Clusters used vs. limit) and configuration limits (Node Groups per Cluster, Nodes per Node Group) — all in a read-only interface. Two useful quick links are integrated:
+  * **Request limit increase** — submit a limit increase request directly to the 24/7 support team at [GreenNode Helpdesk](https://helpdesk.vngcloud.vn/portal/en/home).
+  * **View resource limits on vServer ↗** — view the full set of resource limits (vCPU, RAM, Disk, etc.) at [vServer Limits](https://hcm-3.console.vngcloud.vn/vserver/limit).
+  * See [Usage & Limits](../usage-limits.md) for detailed instructions.
+
+***
+
 ## Apr 15, 2026 <a href="#apr_15_2026" id="apr_15_2026"></a>
 
 VKS (VNG Kubernetes Engine) has just released its latest update, bringing a notable new feature to users. Below are the key highlights of this release:
