@@ -37,7 +37,7 @@ To enable MaaS to leverage AI Gateway features (such as Rate Limiting, Model Cac
 
 **Step 6:** After creating the token, you can configure specific rate limits for each token based on your needs
 
-<figure><img src="../../../.gitbook/assets/image (441).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (422).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (448).png" alt=""><figcaption></figcaption></figure>
 
