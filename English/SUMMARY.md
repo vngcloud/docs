@@ -641,6 +641,7 @@
 * [VKS](vks/README.md)
   * [What is VKS?](vks/vks-la-gi.md)
   * [How VKS works?](vks/mo-hinh-hoat-dong.md)
+  * [Usage & Limits](vks/usage-limits.md)
   * [Announcements and Updates](vks/announcements/README.md)
     * [Release notes](vks/announcements/release-notes.md)
     * [Version Release Schedule](vks/announcements/vks-release-schedule.md)
