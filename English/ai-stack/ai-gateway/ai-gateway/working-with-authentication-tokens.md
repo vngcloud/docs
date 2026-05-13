@@ -13,7 +13,7 @@ To create a new token for AI Gateway authentication:
 
 Each token is associated with a specific AI Gateway and can be used to securely call APIs or access the Gateway.
 
-<figure><img src="../../../.gitbook/assets/image (441).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (436).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (471).png" alt=""><figcaption></figcaption></figure>
 
