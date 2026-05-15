@@ -8,9 +8,9 @@
 
 | Thông tin | Giá trị |
 |-----------|---------|
-| Tổng số file markdown | 2,113 files |
-| Số file Tiếng Việt | 1,134 files |
-| Số file Tiếng Anh | 979 files |
+| Tổng số file markdown | 2,334 files |
+| Số file Tiếng Việt | 1,194 files |
+| Số file Tiếng Anh | 1,140 files |
 | Nền tảng xuất bản | GitBook |
 
 ---
@@ -121,9 +121,9 @@ This repository contains all user guides and documentation for **GreenNode** ser
 
 | Information | Value |
 |-------------|-------|
-| Total markdown files | 2,113 files |
-| Vietnamese files | 1,134 files |
-| English files | 979 files |
+| Total markdown files | 2,334 files |
+| Vietnamese files | 1,194 files |
+| English files | 1,140 files |
 | Publishing platform | GitBook |
 
 ---
