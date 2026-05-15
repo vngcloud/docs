@@ -753,6 +753,7 @@
       * [Create and Manage PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/create-and-manage-postgresql-cluster.md)
       * [PostgreSQL Cluster Parameters](vdb/relational-database-service-rds/postgresql/postgresql-cluster-parameters.md)
       * [vDB PostgreSQL - Supported Extensions](vdb/relational-database-service-rds/postgresql/vdb-postgresql-cac-extension-duoc-ho-tro.md)
+      * [Migrate from Postgres Single to Postgres Cluster](vdb/relational-database-service-rds/postgresql/migrate-from-postgres-single-to-cluster.md)
   * [MemoryStore Database Service (MDS)](vdb/memorystore-database-service-mds/README.md)
     * [Redis Standalone](vdb/memorystore-database-service-mds/redis-standalone/README.md)
       * [Create MDS Instance](vdb/memorystore-database-service-mds/khoi-tao-mds-instance.md)
