@@ -36,7 +36,27 @@ psql -h <IP_cluster> -U <username_cluster> -d <database_cluster> -c "SELECT 1;"
 
 ***
 
-### Step 2 — Export the Database
+### Step 2 — Stop Write Operations
+
+Before exporting, prevent any write operations to the source database to ensure a consistent snapshot. Some approaches:
+
+**Option 1 — Stop from the application:** Shut down or pause the application writing to the source database.
+
+**Option 2 — Set the source database to read-only:**
+
+```sql
+ALTER DATABASE <database_name> SET default_transaction_read_only = on;
+```
+
+Remember to revert this after the restore completes:
+
+```sql
+ALTER DATABASE <database_name> SET default_transaction_read_only = off;
+```
+
+***
+
+### Step 3 — Export the Database
 
 Use `pg_dump` to export the source database. Choose the format that matches your preferred restore method.
 
@@ -61,7 +81,7 @@ The custom format (`-Fc`) produces a compressed binary file and supports multi-j
 
 ***
 
-### Step 3 — Restore on Postgres Cluster
+### Step 4 — Restore on Postgres Cluster
 
 Restore the dump to the target cluster using the method that matches your export format.
 
@@ -88,7 +108,7 @@ The flags `--no-owner` and `--no-privileges` (shown above for `pg_restore`) supp
 
 ***
 
-### Step 4 — Verify the Restored Data
+### Step 5 — Verify the Restored Data
 
 After the restore completes, validate the data on Postgres Cluster before cutting over traffic. Recommended checks:
 
@@ -119,7 +139,27 @@ psql -h <IP_cluster> -U <username_cluster> -c "\l"
 
 ***
 
-### Step 2 — Export All Databases
+### Step 2 — Stop Write Operations
+
+Before exporting, prevent any write operations to the source database to ensure a consistent snapshot. Some approaches:
+
+**Option 1 — Stop from the application:** Shut down or pause the application writing to the source database.
+
+**Option 2 — Set the source database to read-only:**
+
+```sql
+ALTER DATABASE <database_name> SET default_transaction_read_only = on;
+```
+
+Remember to revert this after the restore completes:
+
+```sql
+ALTER DATABASE <database_name> SET default_transaction_read_only = off;
+```
+
+***
+
+### Step 3 — Export All Databases
 
 Choose one of the two export approaches below.
 
@@ -151,7 +191,7 @@ pg_dump -h <IP_single> -U <username_single> -d <db_name> \
 
 ***
 
-### Step 3 — Recreate Roles and Tablespaces (if needed)
+### Step 4 — Recreate Roles and Tablespaces (if needed)
 
 If your databases rely on specific roles or custom tablespaces, recreate them on Postgres Cluster before restoring. Roles created here will need passwords set manually.
 
@@ -165,7 +205,7 @@ If you used `pg_dumpall`, the SQL file contains role definitions, but some state
 
 ***
 
-### Step 4 — Restore on Postgres Cluster
+### Step 5 — Restore on Postgres Cluster
 
 **If you used pg\_dumpall (Option A)**, restore with `psql` connecting to the default `postgres` database:
 
@@ -193,7 +233,7 @@ ALTER ROLE <role_name> WITH PASSWORD '<new_password>';
 
 ***
 
-### Step 5 — Verify Each Database
+### Step 6 — Verify Each Database
 
 After the restore, verify every database on Postgres Cluster:
 
