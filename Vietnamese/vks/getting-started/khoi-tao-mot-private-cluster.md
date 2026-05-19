@@ -2,7 +2,7 @@
 
 Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Public IP để giao tiếp giữa nodes và control plane. Để nâng cao bảo mật cho cluster của bạn, chúng tôi đã cho ra mắt mô hình private cluster. Tính năng Private Cluster giúp cho cụm K8S của bạn được bảo mật nhất có thể, mọi kết nối hoàn toàn là private từ kết nối giữa nodes tới control plane, kết nối từ client tới control plane, hay kết nối từ nodes tới các sản phẩm dịch vụ khác trong GreenNode như: vStorage, vCR, vMonitor, GreenNode APIs,...Private Cluster là lựa chọn lý tưởng cho **các dịch vụ yêu cầu kiểm soát truy cập chặt chẽ, đảm bảo tuân thủ các quy định về bảo mật và quyền riêng tư dữ liệu**.&#x20;
 
-### Model `<a href="#khoitaomotpublicclustervoiprivatenodegroup-dieukiencan" id="khoitaomotpublicclustervoiprivatenodegroup-dieukiencan"></a>`
+### Model
 
 <figure><img src="../../.gitbook/assets/vks_model_private.png" alt=""><figcaption></figcaption></figure>
 
@@ -59,7 +59,7 @@ Bạn có thể xem thông tin 4 private service endpoint thông qua portal vSer
 
 ---
 
-### Điều kiện cần `<a href="#khoitaomotpublicclustervoiprivatenodegroup-dieukiencan" id="khoitaomotpublicclustervoiprivatenodegroup-dieukiencan"></a>`
+### Điều kiện cần
 
 Để có thể khởi tạo một **Cluster** và **Deploy** một **Workload**, bạn cần:
 
@@ -69,7 +69,7 @@ Bạn có thể xem thông tin 4 private service endpoint thông qua portal vSer
 
 ---
 
-### Khởi tạo Cluster `<a href="#khoitaomotpublicclustervoiprivatenodegroup-khoitaocluster" id="khoitaomotpublicclustervoiprivatenodegroup-khoitaocluster"></a>`
+### Khởi tạo Cluster
 
 **Cluster trong Kubernetes** là một tập hợp gồm một hoặc nhiều máy ảo (VM) được kết nối lại với nhau để chạy các ứng dụng được đóng gói dạng container. Cluster cung cấp một môi trường thống nhất để triển khai, quản lý và vận hành các container trên quy mô lớn.
 
@@ -98,7 +98,7 @@ Bạn có thể xem thông tin 4 private service endpoint thông qua portal vSer
 
 ---
 
-### Kết nối và kiểm tra thông tin Cluster vừa tạo `<a href="#khoitaomotpublicclustervoiprivatenodegroup-ketnoivakiemtrathongtinclustervuatao" id="khoitaomotpublicclustervoiprivatenodegroup-ketnoivakiemtrathongtinclustervuatao"></a>`
+### Kết nối và kiểm tra thông tin Cluster vừa tạo
 
 Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiện kết nối và kiểm tra thông tin Cluster vừa tạo theo các bước:
 
@@ -182,7 +182,7 @@ vks-demo-cluster-nodegroup-demo-7c9aa   Ready    <none>   8m11s   v1.28.8
 
 ---
 
-### Sử dụng Docker để Pull/Push image `<a href="#khoitaomotpublicclustervoiprivatenodegroup-deploymotworkload" id="khoitaomotpublicclustervoiprivatenodegroup-deploymotworkload"></a>`
+### Sử dụng Docker để Pull/Push image
 
 Do Private Cluster chỉ có thể kết nối private tới hệ thống vContainer Registry (vCR) và không thể kết nối ra các Container Registry khác ngoài internet, nên bạn cần pull/ push image về vCR để sử dụng theo hướng dẫn sau đây:
 
@@ -275,7 +275,7 @@ docker push vcr-han.vngcloud.vn/53461-repo_demo/nginx-demo:latest
 
 ---
 
-### Deploy một Workload `<a href="#khoitaomotpublicclustervoiprivatenodegroup-deploymotworkload" id="khoitaomotpublicclustervoiprivatenodegroup-deploymotworkload"></a>`
+### Deploy một Workload
 
 #### Deploy một Workload và expose service qua vLB Layer 4&#x20;
 
