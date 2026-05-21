@@ -1,5 +1,19 @@
 # Release notes
 
+## May 21, 2026 <a href="#may_21_2026" id="may_21_2026"></a>
+
+VKS (VNG Kubernetes Engine) has just released its latest update with the following improvements:
+
+**New Features:**
+
+* **Cluster-level Auto Healing:** VKS now supports configuring Auto Healing directly at the cluster level — giving you fine-grained control over the unhealthy node detection threshold, safe replacement limits, and self-recovery behavior tailored to your workload type. When a node remains unhealthy long enough, the system automatically deletes the faulty node and provisions a replacement — no manual intervention required.
+  * Flexible enable/disable; configure **Timeout**, **Max Unhealthy**, and **Unhealthy Range** via the Portal.
+  * Built-in cluster protection: automatically halts replacements when the number of faulty nodes exceeds the threshold — preventing mass deletion during widespread infrastructure incidents.
+  * Configuration changes take effect immediately — no cluster or node restart required.
+  * See [Auto Healing](../clusters/configure-auto-healing.md) for detailed instructions.
+
+***
+
 ## May 13, 2026 <a href="#may_13_2026" id="may_13_2026"></a>
 
 VKS (VNG Kubernetes Engine) has just released its latest update, bringing a notable new feature to users. Below are the key highlights of this release:
