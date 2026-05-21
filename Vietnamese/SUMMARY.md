@@ -739,6 +739,7 @@
     * [Whitelist](vks/clusters/whitelist.md)
     * [POC và Stop POC](vks/clusters/stop-poc.md)
     * [Kubeconfig](vks/clusters/kubeconfig.md)
+    * [Auto Healing](vks/clusters/cau-hinh-auto-healing.md)
   * [Node Groups](vks/node-groups/README.md)
     * [Auto Healing](vks/node-groups/auto-healing.md)
     * [Auto Scaling](vks/node-groups/auto-scaling.md)

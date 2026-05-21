@@ -617,6 +617,7 @@
     * [Whitelist](vks/clusters/whitelist.md)
     * [Stop POC](vks/clusters/stop-poc.md)
     * [Kubeconfig](vks/clusters/kubeconfig.md)
+    * [Auto Healing](vks/clusters/configure-auto-healing.md)
   * [Node Groups](vks/node-groups/README.md)
     * [Auto Healing](vks/node-groups/auto-healing.md)
     * [Auto Scaling](vks/node-groups/auto-scaling.md)

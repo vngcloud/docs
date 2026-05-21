@@ -1,5 +1,19 @@
 # Release notes
 
+## May 21, 2026
+
+VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới với các cải tiến sau:
+
+**Tính năng mới:**
+
+* **Auto Healing cấp Cluster:** VKS cho phép cấu hình Auto Healing trực tiếp ở cấp cluster — giúp bạn kiểm soát ngưỡng phát hiện node unhealthy, giới hạn thay thế an toàn và hành vi tự phục hồi phù hợp với từng loại workload. Khi một node rơi vào trạng thái unhealthy đủ lâu, hệ thống tự động xóa node lỗi và tạo node mới thay thế — không cần can thiệp thủ công.
+  * Bật/tắt linh hoạt; cấu hình **Timeout**, **Max Unhealthy** và **Unhealthy Range** qua Portal.
+  * Cơ chế bảo vệ cluster: tự dừng thay thế khi số node lỗi vượt ngưỡng — tránh xóa hàng loạt do sự cố hạ tầng diện rộng.
+  * Cấu hình có hiệu lực ngay — không cần khởi động lại cluster hay node.
+  * Hướng dẫn chi tiết tại [Auto Healing](../clusters/cau-hinh-auto-healing.md).
+
+***
+
 ## May 13, 2026
 
 VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới nhất. Dưới đây là những điểm nổi bật của bản cập nhật:
