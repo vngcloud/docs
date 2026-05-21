@@ -11,6 +11,8 @@ VKS (VNG Kubernetes Engine) has just released its latest update with the followi
   * Built-in cluster protection: automatically halts replacements when the number of faulty nodes exceeds the threshold — preventing mass deletion during widespread infrastructure incidents.
   * Configuration changes take effect immediately — no cluster or node restart required.
   * See [Auto Healing](../clusters/configure-auto-healing.md) for detailed instructions.
+  * API documentation for creating and managing Auto Healing via API: [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html).
+  * Terraform documentation for deploying Auto Healing with Infrastructure as Code: [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
 
 ***
 

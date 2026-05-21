@@ -741,7 +741,6 @@
     * [Kubeconfig](vks/clusters/kubeconfig.md)
     * [Auto Healing](vks/clusters/cau-hinh-auto-healing.md)
   * [Node Groups](vks/node-groups/README.md)
-    * [Auto Healing](vks/node-groups/auto-healing.md)
     * [Auto Scaling](vks/node-groups/auto-scaling.md)
     * [Upgrading Node Group Version](vks/node-groups/upgrading-node-group-version.md)
     * [Lable và Taint](vks/node-groups/lable-va-taint.md)

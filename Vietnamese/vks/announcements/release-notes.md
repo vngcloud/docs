@@ -11,6 +11,8 @@ VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới với các c
   * Cơ chế bảo vệ cluster: tự dừng thay thế khi số node lỗi vượt ngưỡng — tránh xóa hàng loạt do sự cố hạ tầng diện rộng.
   * Cấu hình có hiệu lực ngay — không cần khởi động lại cluster hay node.
   * Hướng dẫn chi tiết tại [Auto Healing](../clusters/cau-hinh-auto-healing.md).
+  * Tài liệu API để tạo và quản lý auto healing qua API: [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html).
+  * Tài liệu Terraform để triển khai auto healing bằng Infrastructure as Code: [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
 
 ***
 
