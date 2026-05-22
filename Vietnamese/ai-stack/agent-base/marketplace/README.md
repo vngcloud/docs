@@ -6,7 +6,7 @@
 
 ## Tổng quan
 
-![Agent Marketplace](../../../../.gitbook/assets/Agentbase-image/marketplace.png)
+![Agent Marketplace](../../../.gitbook/assets/Agentbase-image/marketplace.png)
 
 Thay vì tự xây dựng agent từ đầu, hãy chọn một agent dựng sẵn từ Marketplace, triển khai chỉ với 1 click — không cần code, không cần cấu hình container.
 

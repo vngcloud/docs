@@ -6,7 +6,7 @@
 
 ## Overview
 
-![Agent Marketplace](../../../../.gitbook/assets/Agentbase-image/marketplace.png)
+![Agent Marketplace](../../../.gitbook/assets/Agentbase-image/marketplace.png)
 
 Instead of building an agent from scratch, choose a pre-built agent from the Marketplace and deploy with 1 click — no code, no container configuration required.
 

@@ -37,7 +37,7 @@ Tính năng giới hạn "API Key X chỉ được dùng Model Y" sẽ ra mắt 
 
 Mở [Protect & Govern → Rate Limit](https://aiplatform.console.vngcloud.vn/protect-govern/rate-limit).
 
-![Danh sách Rate Limit](../../../../.gitbook/assets/Agentbase-image/rate-limit-list.png)
+![Danh sách Rate Limit](../../../.gitbook/assets/Agentbase-image/rate-limit-list.png)
 
 Mỗi Rate Limit hiển thị:
 
@@ -58,7 +58,7 @@ Mỗi Rate Limit hiển thị:
 
 **Bước 2:** Điền thông tin trong popup:
 
-![Tạo Rate Limit](../../../../.gitbook/assets/Agentbase-image/Create-rate-limit.png)
+![Tạo Rate Limit](../../../.gitbook/assets/Agentbase-image/Create-rate-limit.png)
 
 | Trường | Giá trị ví dụ | Ghi chú |
 |---|---|---|
