@@ -2,7 +2,7 @@
 
 ## What is Agentbase?
 
-**GreenNode Agentbase** is a purpose-built infrastructure platform for AI Agents — helping you go from idea to production without worrying about servers, scaling, or operations.
+**GreenNode Agentbase** is a purpose-built infrastructure platform for AI Agents â€” helping you go from idea to production without worrying about servers, scaling, or operations.
 
 Instead of spending weeks setting up infrastructure, you can focus on what matters most: **your agent's logic**. Agentbase handles everything else.
 
@@ -16,7 +16,7 @@ Building and deploying real-world AI Agents comes with significant challenges:
 
 * Managing servers, containers, and autoscaling takes time and effort
 * Securing credentials and API keys when connecting to external services
-* Agents with no memory — every conversation starts from scratch
+* Agents with no memory â€” every conversation starts from scratch
 * Difficult to monitor logs and metrics once an agent is in production
 
 Agentbase addresses all of these challenges in a single platform.
@@ -27,7 +27,7 @@ Agentbase addresses all of these challenges in a single platform.
 
 ### Deploy fast, forget the infra
 
-Ship your agent to the cloud in minutes. Agentbase automatically manages the container lifecycle, scales based on real traffic, and supports zero-downtime deployments — no infrastructure intervention needed.
+Ship your agent to the cloud in minutes. Agentbase automatically manages the container lifecycle, scales based on real traffic, and supports zero-downtime deployments â€” no infrastructure intervention needed.
 
 ### Automatic credential security
 
@@ -35,15 +35,15 @@ Every API key and token used to connect with external services (LLMs, Slack, Goo
 
 ### Agents with memory
 
-Agentbase includes a built-in Memory Service that lets agents remember conversation history and learn from past interactions — delivering a truly personalized experience for each user.
+Agentbase includes a built-in Memory Service that lets agents remember conversation history and learn from past interactions â€” delivering a truly personalized experience for each user.
 
 ### Pre-connected to GreenNode MaaS
 
-Access the most powerful LLM models through GreenNode Model-as-a-Service with an OpenAI-compatible API — no additional sign-ups required.
+Access the most powerful LLM models through GreenNode Model-as-a-Service with an OpenAI-compatible API â€” no additional sign-ups required.
 
 ### Full observability
 
-Logs, CPU/RAM metrics, request history — all available in a single dashboard. You always know exactly how your agent is performing in production.
+Logs, CPU/RAM metrics, request history â€” all available in a single dashboard. You always know exactly how your agent is performing in production.
 
 ***
 
@@ -61,5 +61,5 @@ Logs, CPU/RAM metrics, request history — all available in a single dashboard. 
 
 | I want to... | Go to |
 | --- | --- |
-| Build and deploy my own AI Agent with full platform capabilities | [Agentbase Modules](agentbase-modules/README.md) |
-| Use an AI Agent right now, no coding needed | [OpenClaw 1-Click](one-click-openclaw/README.md) |
+| Build and deploy my own AI Agent with full platform capabilities | [Agentbase Modules](getting-started.md) |
+| Use an AI Agent right now, no coding needed | [OpenClaw 1-Click](agent-runtime/openclaw/README.md) |
