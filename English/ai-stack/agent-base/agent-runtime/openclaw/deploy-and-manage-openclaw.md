@@ -1,0 +1,133 @@
+# Deploy & Manage OpenClaw
+
+OpenClaw 1-Click lets you deploy a personal AI Agent on GreenNode Agentbase in 40â€“60 seconds, automatically connected to GreenNode MaaS with no manual configuration required.
+
+For an overview of concepts, architecture, and deployment options, see [OpenClaw 1-Click](openclaw-1-click.md).
+
+***
+
+## Deploy an OpenClaw Instance
+
+### Access the Agent Marketplace
+
+You can access the Agent Marketplace in two ways:
+
+* **Option 1**: Go to the GreenNode homepage at [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/). From the main dashboard, navigate to **AI Stack** and select **Agentbase** â†’ **Agent Marketplace**.
+* **Option 2**: Go directly to [https://aiplatform.console.vngcloud.vn/agent-marketplace](https://aiplatform.console.vngcloud.vn/agent-marketplace).
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 154428.png" alt=""><figcaption></figcaption></figure>
+
+### Deploy an OpenClaw Instance
+
+On the Agent Marketplace, find the **OpenClaw Featured Card** or click **"Deploy OpenClaw With 1 Click!"** on the Hero Banner. The deployment process goes through the following steps:
+
+#### Step 1: Configure Your Deployment
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 154505.png" alt=""><figcaption></figcaption></figure>
+
+The configuration screen has 3 sections:
+
+**Section 1 â€” AI Source**
+
+Select the AI source for your OpenClaw instance:
+
+| Option                        | Description                                            | Requirement                |
+| ----------------------------- | ------------------------------------------------------ | -------------------------- |
+| **GreenNode MaaS** (default)  | Automatically connects to GreenNode Model-as-a-Service | GreenNode account required |
+| **BYOK â€” Bring Your Own Key** | Use an API key from an external provider               | Valid API key required     |
+
+When selecting **BYOK**, provide the following additional details:
+
+* **Provider**: Select your provider (OpenAI, Anthropic, Gemini, Custom).
+* **API Key**: Enter your API key. The system will validate it before proceeding.
+* **Model**: Select the model corresponding to your chosen provider.
+
+{% hint style="warning" %}
+**BYOK note:** If the API key is invalid or expired, the system will show an inline error and block submission. Double-check your key before submitting.
+{% endhint %}
+
+**Section 2 â€” Instance Configuration**
+
+| Field             | Description                                 | Notes                                                                  |
+| ----------------- | ------------------------------------------- | ---------------------------------------------------------------------- |
+| **OpenClaw Name** | Instance identifier                         | Auto-filled as `openclaw/{username}`, cannot be changed after creation |
+| **Flavor**        | Compute resource configuration (vCPU Ã— RAM) | Default: `2Ã—4`. Options include `4Ã—8`, `8Ã—16`...                       |
+
+**Section 3 â€” Channel Configuration (Optional)**
+
+Connect OpenClaw to a messaging platform so you can chat right after deployment.
+
+| Field                | Description        | Notes                                                  |
+| -------------------- | ------------------ | ------------------------------------------------------ |
+| **Channel Provider** | Messaging platform | Supported: Telegram, Zalo                              |
+| **Mode**             | Connection mode    | Pairing (default) or Allow List                        |
+| **Bot Token**        | Channel bot token  | Optional. Can be configured later at Settings â†’ Config |
+
+Once all fields are filled, click **"Start Setup"** to begin provisioning.
+
+#### Step 2: Provisioning â€” Setting Up Your Workspace
+
+The **"Setting Up Your Workspace"** screen displays a loading spinner while the system automatically prepares your environment. Once complete, you receive a **Gateway Token** and the **OpenClaw web admin URL** to log in and start using immediately.
+
+#### Step 3: Deploy Success
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 140457.png" alt=""><figcaption></figcaption></figure>
+
+Once provisioning is complete, the Deploy Success screen shows your instance details:
+
+| Field                    | Description                                                  |
+| ------------------------ | ------------------------------------------------------------ |
+| **Instance Name**        | The name of your created instance (e.g. `openclaw/username`) |
+| **Status**               | ðŸŸ¢ Active                                                    |
+| **Gateway Token**        | Token used to log in to the OpenClaw web admin               |
+| **OpenClaw Gateway URL** | Link to your OpenClaw web admin                              |
+| **Created At**           | Timestamp                                                    |
+
+Click **"Open OpenClaw"** to access your OpenClaw Gateway Dashboard and start using it immediately.
+
+***
+
+## Manage OpenClaw Instances
+
+### Access My Agents Dashboard
+
+In the Agentbase interface, select **My Agents** from the navigation menu. This page shows a list of all your OpenClaw instances. You can filter by status to view instances that are **Active** or **Stopped**.
+
+Each instance in the list shows: instance name, status, AI model in use, version, and tags.
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 154608.png" alt=""><figcaption></figcaption></figure>
+
+### Open an Instance
+
+1. In My Agents, find the instance you want to access.
+2. Click **"Open"** on the instance.
+3. You are redirected straight to the OpenClaw web admin â€” no wizard or re-provisioning required.
+
+### Stop an Instance
+
+1. In My Agents, find the instance you want to stop.
+2. Click **"Stop"** on the instance.
+3. Confirm in the dialog that appears.
+
+After stopping, the instance status changes to **Stopped** and its URL is no longer accessible.
+
+### Restart an Instance
+
+1. In My Agents, filter by **Stopped** status to find the instance.
+2. Click **"Restart"** on the instance.
+3. The instance transitions through **Starting â†’ Active**.
+
+After restarting, the URL becomes accessible again.
+
+### Delete an Instance
+
+1. In My Agents, click **"Delete"** on the instance you want to remove.
+2. A confirmation dialog appears, requiring you to type the **instance name**.
+3. Enter the exact instance name and click **"Delete"** (red button) to confirm.
+
+{% hint style="warning" %}
+**Note when deleting:**
+
+* Deletion is **permanent and cannot be undone**.
+* All instance data will be **permanently deleted**.
+{% endhint %}
