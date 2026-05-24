@@ -31,6 +31,21 @@ GreenNode AgentBase ra mắt **Phase 2** với các tính năng mới mở rộn
 
 ***
 
+## Tháng 4, 2026
+
+GreenNode ra mắt **OpenClaw 1-Click** trên AgentBase, cho phép triển khai AI Agent cá nhân dựa trên OpenClaw ngay từ **Agent Marketplace** — không cần kiến thức kỹ thuật, không cần cài đặt thủ công, chỉ trong 40–60 giây.
+
+**Tính năng mới:**
+
+* **OpenClaw 1-Click:** Deploy OpenClaw instance trực tiếp từ Marketplace với cấu hình tối giản.
+  * **Tự động kết nối GreenNode MaaS:** Tài khoản GreenNode được tự động cấp quyền truy cập model AI, không cần cấu hình API key thủ công. Model mặc định: **qwen3-5-27b**.
+  * **BYOK — Bring Your Own Key:** Hỗ trợ mang API key từ provider bên ngoài (OpenAI, Anthropic, Gemini...).
+  * **Tích hợp Channel:** Cấu hình kết nối Telegram và Zalo ngay trong bước deploy.
+  * **My Agents:** Quản lý toàn bộ OpenClaw instance với filter theo trạng thái, stop, restart và xóa.
+  * Tìm hiểu thêm tại [OpenClaw 1-Click](agent-runtime/openclaw/openclaw-1-click.md).
+
+***
+
 ## Tháng 3, 2026
 
 GreenNode AgentBase ra mắt **Phase 1** — nền tảng hạ tầng chuyên biệt dành cho AI Agent, giúp developer triển khai và vận hành AI Agent trên cloud mà không cần tự quản lý server, scaling hay credential.

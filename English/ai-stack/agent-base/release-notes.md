@@ -31,6 +31,21 @@ GreenNode AgentBase releases **Phase 2** with new features expanding governance,
 
 ***
 
+## April 2026
+
+GreenNode releases **OpenClaw 1-Click** on AgentBase, enabling anyone to deploy a personal AI Agent powered by OpenClaw directly from the **Agent Marketplace** — no technical knowledge required, no manual setup, ready in just 40–60 seconds.
+
+**New Features:**
+
+* **OpenClaw 1-Click:** Deploy an OpenClaw instance directly from the Marketplace with minimal configuration.
+  * **Auto-connected to GreenNode MaaS:** GreenNode users are automatically granted LLM access without manually configuring API keys. Default model: **qwen3-5-27b**.
+  * **BYOK — Bring Your Own Key:** Supports bringing an API key from external providers (OpenAI, Anthropic, Gemini...).
+  * **Channel integrations:** Configure Telegram and Zalo connections directly during the deploy step.
+  * **My Agents:** Manage all OpenClaw instances with status filtering, stop, restart, and delete.
+  * Learn more at [OpenClaw 1-Click](agent-runtime/openclaw/openclaw-1-click.md).
+
+***
+
 ## March 2026
 
 GreenNode AgentBase releases **Phase 1** — a purpose-built infrastructure platform for AI Agents, enabling developers to deploy and operate AI Agents on the cloud without managing servers, scaling, or credentials.
