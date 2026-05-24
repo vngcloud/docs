@@ -106,5 +106,5 @@ After creation, every request from the associated API Keys or Models is checked 
 
 | I want to next... | Go to |
 |---|---|
-| View usage and cost | [Usage & Budget](../usage-budget/README.md) |
+| View usage and cost | [Usage & Budget](../usage-budget/) |
 | Manage API Keys | [Access Control](../access-control/README.md) |

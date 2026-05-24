@@ -40,5 +40,5 @@ The budget automatically rolls over to the next month (always recurring) — no 
 
 | I want to... | Go to |
 |---|---|
-| View usage, cost, and month-end projection | [View Usage & Cost](view-usage-cost.md) |
-| Set a budget limit and configure alerts | [Configure Budget & Alerts](budget-alert.md) |
+| View usage, cost, and month-end projection | [View Usage & Cost](view-usage-cost) |
+| Set a budget limit and configure alerts | [Configure Budget & Alerts](budget-alert) |
