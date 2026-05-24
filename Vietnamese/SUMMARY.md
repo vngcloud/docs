@@ -842,6 +842,7 @@
     * [Cách tính giá](ai-stack/ai-gateway/cach-tinh-gia.md)
   * [GenAI Studio](ai-stack/genai-studio.md)
   * [GreenNode AgentBase](ai-stack/agent-base/README.md)
+    * [Lịch sử cập nhật](ai-stack/agent-base/release-notes.md)
     * [Bắt đầu](ai-stack/agent-base/getting-started.md)
     * [Access Control](ai-stack/agent-base/access-control/README.md)
     * [Agent Runtime](ai-stack/agent-base/agent-runtime/README.md)

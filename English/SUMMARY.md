@@ -714,6 +714,7 @@
     * [Pricing](ai-stack/ai-gateway/pricing.md)
   * [GenAI Studio](ai-stack/genai-studio.md)
   * [GreenNode AgentBase](ai-stack/agent-base/README.md)
+    * [Release Notes](ai-stack/agent-base/release-notes.md)
     * [Getting Started](ai-stack/agent-base/getting-started.md)
     * [Access Control](ai-stack/agent-base/access-control/README.md)
     * [Agent Runtime](ai-stack/agent-base/agent-runtime/README.md)
