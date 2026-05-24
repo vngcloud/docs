@@ -864,6 +864,8 @@
       * [Rate Limit](ai-stack/agent-base/protect-govern/rate-limit.md)
     * [Memory](ai-stack/agent-base/memory/README.md)
     * [AI Coding](ai-stack/agent-base/ai-coding/README.md)
+      * [Kết nối Claude Code với GreenNode MaaS](ai-stack/agent-base/ai-coding/ket-noi-claude-code-voi-maas.md)
+      * [Kết nối OpenAI-compatible với GreenNode MaaS](ai-stack/agent-base/ai-coding/ket-noi-openai-compatible-voi-maas.md)
     * [MCP Governance](ai-stack/agent-base/mcp-governance/README.md)
       * [MCP Gateway](ai-stack/agent-base/mcp-governance/mcp-gateway/README.md)
         * [Quản lý MCP Gateway](ai-stack/agent-base/mcp-governance/mcp-gateway/quan-ly-mcp-gateway.md)

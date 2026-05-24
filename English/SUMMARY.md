@@ -736,6 +736,8 @@
       * [Rate Limit](ai-stack/agent-base/protect-govern/rate-limit.md)
     * [Memory](ai-stack/agent-base/memory/README.md)
     * [AI Coding](ai-stack/agent-base/ai-coding/README.md)
+      * [Connect Claude Code to GreenNode MaaS](ai-stack/agent-base/ai-coding/connect-claude-code-to-maas.md)
+      * [Connect OpenAI-compatible Clients to GreenNode MaaS](ai-stack/agent-base/ai-coding/connect-openai-compatible-to-maas.md)
     * [MCP Governance](ai-stack/agent-base/mcp-governance/README.md)
       * [MCP Gateway](ai-stack/agent-base/mcp-governance/mcp-gateway/README.md)
         * [Manage MCP Gateway](ai-stack/agent-base/mcp-governance/mcp-gateway/manage-mcp-gateway.md)
