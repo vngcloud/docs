@@ -225,7 +225,7 @@ There are 3 ways to attach a group to a gateway:
 
 **Option 3 — From MCP Gateway Detail**
 
-See [Manage MCP Gateway](../mcp-gateway/quan-ly-mcp-gateway.md).
+See [Manage MCP Gateway](../mcp-gateway/manage-mcp-gateway.md).
 
 {% hint style="warning" %}
 Each MCP Gateway can only have **one Policy Group** at a time. If the gateway already has a group, attaching a new one **immediately replaces** the old group — policies from the old group stop being enforced.
@@ -262,4 +262,4 @@ After completing these steps, the Policy Group is in **Active** status and attac
 | I want to... | Go to |
 |---|---|
 | Understand the evaluation flow in detail | [Policy Groups — Overview](README.md) |
-| Configure an MCP Gateway | [Manage MCP Gateway](../mcp-gateway/quan-ly-mcp-gateway.md) |
+| Configure an MCP Gateway | [Manage MCP Gateway](../mcp-gateway/manage-mcp-gateway.md) |
