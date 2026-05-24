@@ -743,6 +743,7 @@
         * [Manage MCP Gateway](ai-stack/agent-base/mcp-governance/mcp-gateway/manage-mcp-gateway.md)
       * [Policy Groups](ai-stack/agent-base/mcp-governance/policy-groups/README.md)
         * [Manage Policy Groups](ai-stack/agent-base/mcp-governance/policy-groups/manage-policy-groups.md)
+    * [Private Networking](ai-stack/agent-base/private-networking.md)
     * [Usage & Budget](ai-stack/agent-base/usage-budget/README.md)
       * [View Usage & Cost](ai-stack/agent-base/usage-budget/view-usage-cost.md)
       * [Configure Budget & Alerts](ai-stack/agent-base/usage-budget/budget-alert.md)

@@ -871,6 +871,7 @@
         * [Quản lý MCP Gateway](ai-stack/agent-base/mcp-governance/mcp-gateway/quan-ly-mcp-gateway.md)
       * [Policy Groups](ai-stack/agent-base/mcp-governance/policy-groups/README.md)
         * [Quản lý Policy Group](ai-stack/agent-base/mcp-governance/policy-groups/quan-ly-policy-group.md)
+    * [Mạng riêng tư](ai-stack/agent-base/private-networking.md)
     * [Usage & Budget](ai-stack/agent-base/usage-budget/README.md)
       * [Xem Usage & Cost](ai-stack/agent-base/usage-budget/xem-usage-cost.md)
       * [Cấu hình Budget & Alerts](ai-stack/agent-base/usage-budget/budget-alert.md)
