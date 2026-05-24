@@ -870,6 +870,8 @@
       * [Policy Groups](ai-stack/agent-base/mcp-governance/policy-groups/README.md)
         * [Quản lý Policy Group](ai-stack/agent-base/mcp-governance/policy-groups/quan-ly-policy-group.md)
     * [Usage & Budget](ai-stack/agent-base/usage-budget/README.md)
+      * [Xem Usage & Cost](ai-stack/agent-base/usage-budget/xem-usage-cost.md)
+      * [Cấu hình Budget & Alerts](ai-stack/agent-base/usage-budget/budget-alert.md)
     * [Supporting Services](ai-stack/agent-base/supporting-services.md)
     * [Reference](ai-stack/agent-base/reference.md)
     * [FAQ](ai-stack/agent-base/faq.md)

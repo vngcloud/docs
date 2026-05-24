@@ -742,6 +742,8 @@
       * [Policy Groups](ai-stack/agent-base/mcp-governance/policy-groups/README.md)
         * [Manage Policy Groups](ai-stack/agent-base/mcp-governance/policy-groups/manage-policy-groups.md)
     * [Usage & Budget](ai-stack/agent-base/usage-budget/README.md)
+      * [View Usage & Cost](ai-stack/agent-base/usage-budget/view-usage-cost.md)
+      * [Configure Budget & Alerts](ai-stack/agent-base/usage-budget/budget-alert.md)
     * [Supporting Services](ai-stack/agent-base/supporting-services.md)
     * [Reference](ai-stack/agent-base/reference.md)
     * [FAQ](ai-stack/agent-base/faq.md)
