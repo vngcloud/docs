@@ -1,65 +1,57 @@
-# Agentbase
+# AgentBase
 
-## What is Agentbase?
+## Start with a real example
 
-**GreenNode Agentbase** is a purpose-built infrastructure platform for AI Agents â€” helping you go from idea to production without worrying about servers, scaling, or operations.
+You want to build a customer support AI Agent: it takes questions via chat, looks up orders in a database, sends notifications through Slack, and remembers what was discussed in last week's conversation.
 
-Instead of spending weeks setting up infrastructure, you can focus on what matters most: **your agent's logic**. Agentbase handles everything else.
+Sounds straightforward — but in practice you'll need to handle:
 
-> *"Agentbase = Vercel, purpose-built for AI Agents"*
+- **Where does the agent run?** Containers, servers, autoscaling, CI/CD deployments...
+- **Where do credentials live?** Database passwords, Slack tokens, API keys — you can't hardcode them.
+- **Can the agent call any tool it wants?** You need guardrails to prevent it from accidentally calling a data-deletion API.
+- **What did the LLM cost this month?** No dashboard, no way to know when you're about to exceed budget.
+- **When something breaks in production?** No centralized logs, no visibility into which requests failed.
 
-***
+**AgentBase handles all of this** — so you can focus entirely on your agent's logic.
 
-## What problem does Agentbase solve?
+---
 
-Building and deploying real-world AI Agents comes with significant challenges:
+## What is AgentBase?
 
-* Managing servers, containers, and autoscaling takes time and effort
-* Securing credentials and API keys when connecting to external services
-* Agents with no memory â€” every conversation starts from scratch
-* Difficult to monitor logs and metrics once an agent is in production
+**GreenNode AgentBase** is a purpose-built infrastructure platform for AI Agents — providing the full operational, security, and governance layer needed to take an agent from code to production.
 
-Agentbase addresses all of these challenges in a single platform.
+![AgentBase — Architecture Overview](../../.gitbook/assets/Agentbase-image/AgentBase-Architecture.png)
 
-***
+AgentBase consists of the following modules:
 
-## Key Benefits
+| Module                       | Function                                                                                                          |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Agent Runtime**      | Deploy and operate agents — container lifecycle management, versioning, rollback, scaling                        |
+| **Marketplace**        | Deploy pre-built agents (OpenClaw and templates) with 1 click, no code required                                   |
+| **Access Control**     | Manage Agent Identity and store credentials (API Key, OAuth2) — automatically injected into the agent at runtime |
+| **MCP Governance**     | Control all MCP tool calls from agents — authentication and authorization via MCP Gateway + Policy Group         |
+| **Protect & Govern**   | Rate Limiting by model or API Key — prevent agents from consuming excessive resources                            |
+| **Memory**             | Give agents cross-session memory — Short-Term (conversation history) and Long-Term (semantic search)             |
+| **Container Registry** | Private image registry automatically created per org — stores container images for Custom Agents                 |
+| **Team & Permissions** | Manage members with 4 roles (Root / Admin / Member / Viewer) and granular permission control                      |
+| **Usage & Budget**     | Dashboard tracking requests, tokens, and cost by agent/model/provider; set budget limits and automated alerts     |
 
-### Deploy fast, forget the infra
+---
 
-Ship your agent to the cloud in minutes. Agentbase automatically manages the container lifecycle, scales based on real traffic, and supports zero-downtime deployments â€” no infrastructure intervention needed.
+## Two ways to get started
 
-### Automatic credential security
+**No code — use immediately:**
+Go to the [Marketplace](marketplace/README.md), select **OpenClaw**, enter your API key and chat channel — the agent is running in minutes.
 
-Every API key and token used to connect with external services (LLMs, Slack, Google...) is centrally managed and **automatically injected** into your agent at runtime. No hardcoding, no key leaks.
+**Build your own agent:**
+Package your agent as a Docker image, push it to [Container Registry](container-registry/README.md), and deploy via [Agent Runtime](agent-runtime/README.md). Add credentials in [Access Control](../agent-base/README.md), and attach an [MCP Gateway](mcp-governance/mcp-gateway/README.md) if the agent needs to call external tools.
 
-### Agents with memory
-
-Agentbase includes a built-in Memory Service that lets agents remember conversation history and learn from past interactions â€” delivering a truly personalized experience for each user.
-
-### Pre-connected to GreenNode MaaS
-
-Access the most powerful LLM models through GreenNode Model-as-a-Service with an OpenAI-compatible API â€” no additional sign-ups required.
-
-### Full observability
-
-Logs, CPU/RAM metrics, request history â€” all available in a single dashboard. You always know exactly how your agent is performing in production.
-
-***
+---
 
 ## Who is it for?
 
-| Audience | What Agentbase delivers |
-| --- | --- |
-| **AI Engineers / Developers** | Focus on writing agent logic, not managing infra |
-| **Startups / Product Teams** | Ship AI products faster and reduce operational costs |
-| **Enterprises** | Deploy AI Agents securely with identity management, credential security, and full observability |
-
-***
-
-## Get started with Agentbase
-
-| I want to... | Go to |
-| --- | --- |
-| Build and deploy my own AI Agent with full platform capabilities | [Agentbase Modules](getting-started.md) |
-| Use an AI Agent right now, no coding needed | [OpenClaw 1-Click](agent-runtime/openclaw/README.md) |
+| Audience                            | What AgentBase delivers                                                    |
+| ----------------------------------- | -------------------------------------------------------------------------- |
+| **AI Engineers / Developers** | Focus on agent logic — infra, credentials, and observability are built in |
+| **Startups / Product Teams**  | Ship AI products faster.                                                   |
+| **Enterprises**               | Cost control, team-based access, enterprise-grade credential security      |

@@ -1,65 +1,57 @@
-# Agentbase
+# AgentBase
 
-## Agentbase là gì?
+## Bắt đầu bằng một ví dụ thực tế
 
-**GreenNode Agentbase** là nền tảng hạ tầng chuyên biệt dành cho AI Agent — giúp bạn đưa ý tưởng từ code đến production mà không cần lo về server, scaling hay vận hành.
+Bạn muốn xây một AI Agent hỗ trợ khách hàng: nhận câu hỏi qua chat, tra cứu đơn hàng trong database, gửi thông báo qua Slack, và nhớ lại nội dung cuộc hội thoại tuần trước.
 
-Thay vì mất hàng tuần tự dựng infra, bạn chỉ cần tập trung vào điều quan trọng nhất: **logic của agent**. Agentbase lo toàn bộ phần còn lại.
+Nghe đơn giản — nhưng thực tế bạn sẽ phải tự lo:
 
-> *"Agentbase = Vercel dành riêng cho AI Agent"*
+- **Đâu để chạy agent?** Container, server, autoscaling, CI/CD deploy...
+- **Credential để ở đâu?** Database password, Slack token, API key — không thể hardcode vào code.
+- **Agent gọi tool nào cũng được?** Cần kiểm soát để agent không vô tình gọi API xóa dữ liệu.
+- **Chi phí LLM tháng này bao nhiêu?** Không có dashboard, không biết khi nào vượt budget.
+- **Khi có lỗi trên production?** Không có logs tập trung, không biết request nào fail.
 
-***
+**AgentBase giải quyết toàn bộ những điều này** — để bạn chỉ cần tập trung viết logic của agent.
 
-## Agentbase giải quyết vấn đề gì?
+---
 
-Xây dựng và triển khai AI Agent thực tế thường gặp những rào cản lớn:
+## AgentBase là gì?
 
-* Tự quản lý server, container, autoscaling — tốn thời gian và công sức
-* Bảo mật credential và API key khi kết nối với các dịch vụ bên ngoài
-* Agent không có bộ nhớ — mỗi cuộc hội thoại bắt đầu lại từ đầu
-* Khó theo dõi logs, metrics khi agent chạy trên production
+**GreenNode AgentBase** là nền tảng hạ tầng chuyên biệt dành cho AI Agent — cung cấp đầy đủ lớp vận hành, bảo mật và kiểm soát cần thiết để đưa agent từ code lên production.
 
-Agentbase giải quyết tất cả những vấn đề này trong một nền tảng duy nhất.
+![AgentBase — Kiến trúc tổng quan](../../.gitbook/assets/Agentbase-image/AgentBase-Architecture.png)
 
-***
+AgentBase bao gồm các module sau:
 
-## Lợi ích nổi bật
+| Module                       | Chức năng                                                                                                        |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **Agent Runtime**      | Deploy và vận hành agent — quản lý container lifecycle, versioning, rollback, scaling                        |
+| **Marketplace**        | Triển khai agent dựng sẵn (OpenClaw và các template) chỉ với 1 click, không cần code                      |
+| **Access Control**     | Quản lý Agent Identity và lưu trữ credential (API Key, OAuth2) — tự động inject vào agent khi chạy      |
+| **MCP Governance**     | Kiểm soát tất cả MCP tool calls từ agent — xác thực và phân quyền qua MCP Gateway + Policy Group        |
+| **Protect & Govern**   | Rate Limiting theo model hoặc API Key — tránh agent tiêu thụ quá mức tài nguyên                           |
+| **Memory**             | Cho agent ghi nhớ xuyên session — Short-Term (lịch sử hội thoại) và Long-Term (semantic search)            |
+| **Container Registry** | Private image registry tự động tạo kèm mỗi org — lưu trữ container image cho Custom Agent                 |
+| **Team & Permissions** | Quản lý thành viên với 4 role (Root / Admin / Member / Viewer) và phân quyền chi tiết                     |
+| **Usage & Budget**     | Dashboard theo dõi requests, tokens, cost theo agent/model/provider; đặt budget limit và cảnh báo tự động |
 
-### Triển khai nhanh, không lo infra
+---
 
-Deploy agent lên cloud chỉ trong vài phút. Agentbase tự động quản lý vòng đời container, autoscaling theo tải thực tế và zero-downtime deployment — bạn không cần can thiệp vào hạ tầng.
+## Hai cách bắt đầu
 
-### Bảo mật credential tự động
+**Không cần code — dùng ngay:**
+Vào [Marketplace](marketplace/README.md), chọn **OpenClaw**, điền API key và kênh chat — agent chạy trong vài phút.
 
-Mọi API key và token kết nối với dịch vụ bên ngoài (LLM, Slack, Google...) được quản lý tập trung và **tự động inject** vào agent khi chạy. Không cần hardcode, không lo lộ key.
+**Tự build agent:**
+Đóng gói agent thành Docker image, push lên [Container Registry](container-registry/README.md), deploy qua [Agent Runtime](agent-runtime/README.md). Thêm credential trong [Access Control](../agent-base/README.md), gắn [MCP Gateway](mcp-governance/mcp-gateway/README.md) nếu agent cần gọi external tools.
 
-### Agent có trí nhớ
-
-Agentbase tích hợp sẵn Memory Service giúp agent ghi nhớ lịch sử hội thoại và học từ các tương tác trước — tạo trải nghiệm cá nhân hóa thực sự cho từng người dùng.
-
-### Kết nối sẵn với GreenNode MaaS
-
-Truy cập ngay các LLM model mạnh nhất qua GreenNode Model-as-a-Service với API tương thích OpenAI — không cần đăng ký thêm bất kỳ dịch vụ nào.
-
-### Quan sát toàn diện
-
-Logs, metrics CPU/RAM, lịch sử request — tất cả có sẵn trong dashboard. Bạn luôn biết agent đang hoạt động như thế nào trên production.
-
-***
+---
 
 ## Dành cho ai?
 
-| Đối tượng | Agentbase mang lại |
-| --- | --- |
-| **AI Engineer / Developer** | Tập trung viết logic agent, không mất thời gian quản lý infra |
-| **Startup / Product Team** | Ra mắt AI product nhanh hơn, tiết kiệm chi phí vận hành |
-| **Doanh nghiệp** | Triển khai AI Agent an toàn với identity, credential và observability đầy đủ |
-
-***
-
-## Bắt đầu với Agentbase
-
-| Tôi muốn... | Hướng đến |
-| --- | --- |
-| Tự build và deploy AI Agent với đầy đủ tính năng platform | [Agentbase Modules](getting-started.md) |
-| Dùng AI Agent ngay, không cần code | [OpenClaw 1-Click](agent-runtime/openclaw/README.md) |
+| Đối tượng                     | AgentBase mang lại                                                            |
+| --------------------------------- | ------------------------------------------------------------------------------ |
+| **AI Engineer / Developer** | Tập trung viết logic agent — infra, credential, observability đã có sẵn |
+| **Startup / Product Team**  | Ra mắt AI product nhanh hơn                                                  |
+| **Doanh nghiệp**           | Kiểm soát chi phí, phân quyền theo team, bảo mật credential theo chuẩn |
