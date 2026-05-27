@@ -47,6 +47,79 @@ For Network Load Balancer, you will see TCP Connection Logs with the fields:
 
 ***
 
+## Export vLB access logs to vDB
+
+In addition to viewing logs on vMonitor Platform, you can export vLB **access logs** to your own **vDB Kafka** or **vDB OpenSearch** cluster, so you can store, search, and analyze logs on your own terms.
+
+The two destinations are independent: you can export to Kafka only, to OpenSearch only, or enable both at the same time for a single vLB.
+
+### Prerequisites
+
+**If exporting to vDB Kafka**, you need on vDB Kafka:
+
+* A running Kafka Cluster with public access enabled.
+* A Topic in the Cluster to receive access logs.
+* A Kafka user with issued credentials and write permission on that Topic.
+
+**If exporting to vDB OpenSearch**, you need on vDB OpenSearch:
+
+* A running OpenSearch Cluster with a public log-ingest endpoint.
+* An account (Username/Password) with write permission on the Cluster.
+
+### Enable export to vDB Kafka
+
+1. Open the vLB in the log mapping list, then select **Enable log to vDB Kafka**.
+2. Toggle **Enable logging** on.
+3. Select:
+
+| Field | Notes |
+|---|---|
+| **Cluster** | The Kafka Cluster that will receive access logs. |
+| **Topic** | The Topic in the selected Cluster. |
+| **User** | The Kafka user used to write logs. |
+| **Mode** | Authentication mechanism — choose **mTLS** or **SASL** (whichever both the Cluster and the user support). |
+
+4. Click **Save**.
+
+{% hint style="info" %}
+The system automatically fetches the Kafka user's credentials from vDB — you do not need to enter any credential manually.
+{% endhint %}
+
+### Enable export to vDB OpenSearch
+
+1. Open the vLB in the log mapping list, then select **Enable log to vDB OpenSearch**.
+2. Toggle **Enable logging** on.
+3. Select and enter:
+
+| Field | Requirement |
+|---|---|
+| **Cluster** | The OpenSearch Cluster that will receive access logs. |
+| **Username** | Account with write permission on the Cluster. 3–31 characters, made of letters, digits, and `_`, `.`, `-`. |
+| **Password** | At least 8 characters, including uppercase, lowercase, digit, and one special character from `@ $ ! % * ? &`. |
+
+4. Click **Save**.
+
+{% hint style="warning" %}
+The system verifies the connection to the OpenSearch Cluster right when you click **Save**. If the Username or Password is incorrect, the action is rejected at this step.
+{% endhint %}
+
+### Switch to another Cluster
+
+Reopen the corresponding dialog, select the new Cluster (and update related fields if needed), then click **Save**. The system automatically redirects the access log export to the new Cluster.
+
+### Disable access log export
+
+Reopen the corresponding dialog, toggle **Enable logging** off, and click **Save**. The system stops exporting access logs to that Cluster.
+
+### Troubleshooting
+
+| Message | Cause & action |
+|---|---|
+| Error about Cluster, Topic, User, or permission | The matching resource on vDB is not ready. Check its status and permissions on vDB, then retry. |
+| OpenSearch connection error on **Save** | Wrong Username or Password. Re-enter the correct credentials and save again. |
+
+***
+
 #### Some notes: <a href="#lamviecvoivlb-log-motsochuy" id="lamviecvoivlb-log-motsochuy"></a>
 
 * After being created, the vLB will take about minutes (maximum 10 minutes) to synchronize to vMonitor Platform.
