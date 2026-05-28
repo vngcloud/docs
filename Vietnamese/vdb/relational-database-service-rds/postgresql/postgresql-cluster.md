@@ -30,7 +30,7 @@ Trong mô hình PostgreSQL Cluster, các node được phân vai trò rõ ràng:
 * **Production workloads**: Các ứng dụng yêu cầu uptime cao và không chấp nhận downtime.
 * **Read-heavy applications**: Ứng dụng có lượng truy vấn đọc lớn, cần scale out read operations.
 * **Mission-critical systems**: Hệ thống thanh toán, giao dịch, dữ liệu quan trọng cần được bảo vệ bởi automatic failover.
-* **Data protection**: Các ứng dụng yêu cầu chiến lược backup toàn diện với Auto Backup và Manual Backup thông qua Backup Center.
+* **Data protection**: Các ứng dụng yêu cầu chiến lược backup toàn diện với Auto Backup và Manual Backup thông qua Backup CenteCenter.
 
 {% hint style="info" %}
 **Lưu ý:**
@@ -43,7 +43,7 @@ Trong mô hình PostgreSQL Cluster, các node được phân vai trò rõ ràng:
 
 ## Kiến trúc PostgreSQL Cluster
 
-<figure><img src="../../../.gitbook/assets/vDB Postgres Cluster Architecture Diagram.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vDB PostgreSQL Cluster Architecture Diagram.png" alt=""><figcaption></figcaption></figure>
 
 **Các thành phần chính:**
 
@@ -53,12 +53,7 @@ Trong mô hình PostgreSQL Cluster, các node được phân vai trò rõ ràng:
 
 **Phân bổ vai trò theo số lượng node:**
 
-| Số lượng Node | Phân bổ vai trò      |
-| ------------- | -------------------- |
-| 2             | 1 Writer + 1 Reader  |
-| 3             | 1 Writer + 2 Readers |
-| 5             | 1 Writer + 4 Readers |
-| 10            | 1 Writer + 9 Readers |
+<table><thead><tr><th width="222">Số lượng Node</th><th>Phân bổ vai trò</th></tr></thead><tbody><tr><td>2</td><td>1 Writer + 1 Reader</td></tr><tr><td>3</td><td>1 Writer + 2 Readers</td></tr><tr><td>5</td><td>1 Writer + 4 Readers</td></tr><tr><td>10</td><td>1 Writer + 9 Readers</td></tr></tbody></table>
 
 ***
 
