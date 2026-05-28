@@ -1,9 +1,9 @@
-# Migrate from Postgres Single to Postgres Cluster
+# Migrate from PostgreSQL Single to PostgreSQL Cluster
 
-This guide walks you through exporting data from a **Postgres Single Node** instance and restoring it to a **Postgres Cluster** on vDB. Two scenarios are covered: **Section A** for instances with a single database, and **Section B** for instances with multiple databases.
+This guide walks you through exporting data from a **PostgreSQL Single Node** instance and restoring it to a **PostgreSQL Cluster** on vDB. Two scenarios are covered: **Section A** for instances with a single database, and **Section B** for instances with multiple databases.
 
 {% hint style="info" %}
-**Note:** vDB does not support changing the Deployment Type of an existing database. Migration requires creating a new Postgres Cluster and transferring data manually using the steps below.
+**Note:** vDB does not support changing the Deployment Type of an existing database. Migration requires creating a new PostgreSQL Cluster and transferring data manually using the steps below.
 {% endhint %}
 
 ***
@@ -13,24 +13,24 @@ This guide walks you through exporting data from a **Postgres Single Node** inst
 Before you begin, make sure:
 
 * `psql`, `pg_dump` or `pg_dumpall`, and `pg_restore` are installed on the machine running the migration (version must match the PostgreSQL version on the source instance).
-* You have credentials (host, username, password) for both the Postgres Single Node and the Postgres Cluster.
+* You have credentials (host, username, password) for both the PostgreSQL Single Node and the PostgreSQL Cluster.
 
 ***
 
 ## A. Single-Database Migration (pg\_dump)
 
-Use this section when your Postgres Single Node instance contains **one database** that you want to migrate.
+Use this section when your PostgreSQL Single Node instance contains **one database** that you want to migrate.
 
 
 ### Step 1 — Verify Connectivity
 
-Before starting, confirm that both your Postgres Single Node instance and your Postgres Cluster are running and reachable.
+Before starting, confirm that both your PostgreSQL Single Node instance and your PostgreSQL Cluster are running and reachable.
 
 ```bash
-# Test Postgres Single Node
+# Test PostgreSQL Single Node
 psql -h <IP_single> -U <username_single> -d <database_single> -c "SELECT 1;"
 
-# Test Postgres Cluster
+# Test PostgreSQL Cluster
 psql -h <IP_cluster> -U <username_cluster> -d <database_cluster> -c "SELECT 1;"
 ```
 
@@ -81,7 +81,7 @@ The custom format (`-Fc`) produces a compressed binary file and supports multi-j
 
 ***
 
-### Step 4 — Restore on Postgres Cluster
+### Step 4 — Restore on PostgreSQL Cluster
 
 Restore the dump to the target cluster using the method that matches your export format.
 
@@ -101,7 +101,7 @@ psql -h <IP_cluster> -U <username_cluster> -d <database_cluster> \
 
 {% hint style="warning" %}
 **Superuser errors during restore:**
-Postgres Cluster does not grant superuser access. You may see errors such as `ERROR: must be superuser` or warnings about `ALTER TABLE ... OWNER TO`. These are expected and safe to ignore.
+PostgreSQL Cluster does not grant superuser access. You may see errors such as `ERROR: must be superuser` or warnings about `ALTER TABLE ... OWNER TO`. These are expected and safe to ignore.
 
 The flags `--no-owner` and `--no-privileges` (shown above for `pg_restore`) suppress the most common ones. Any error related to table creation or actual data should be investigated before proceeding.
 {% endhint %}
@@ -110,7 +110,7 @@ The flags `--no-owner` and `--no-privileges` (shown above for `pg_restore`) supp
 
 ### Step 5 — Verify the Restored Data
 
-After the restore completes, validate the data on Postgres Cluster before cutting over traffic. Recommended checks:
+After the restore completes, validate the data on PostgreSQL Cluster before cutting over traffic. Recommended checks:
 
 * Compare table counts between source and target.
 * Compare row counts for critical tables.
@@ -121,7 +121,7 @@ After the restore completes, validate the data on Postgres Cluster before cuttin
 
 ## B. Multi-Database Migration (pg\_dumpall / pg\_dump)
 
-Use this section when your Postgres Single Node instance contains **more than one database**.
+Use this section when your PostgreSQL Single Node instance contains **more than one database**.
 
 ***
 
@@ -130,10 +130,10 @@ Use this section when your Postgres Single Node instance contains **more than on
 Confirm that both instances are running and accessible before proceeding.
 
 ```bash
-# Test Postgres Single Node
+# Test PostgreSQL Single Node
 psql -h <IP_single> -U <username_single> -c "\l"
 
-# Test Postgres Cluster
+# Test PostgreSQL Cluster
 psql -h <IP_cluster> -U <username_cluster> -c "\l"
 ```
 
@@ -186,14 +186,14 @@ pg_dump -h <IP_single> -U <username_single> -d <db_name> \
 ```
 
 {% hint style="info" %}
-`pg_dump` does not export global objects such as roles and tablespaces. You must recreate these manually on Postgres Cluster before restoring. See Step 3 for details.
+`pg_dump` does not export global objects such as roles and tablespaces. You must recreate these manually on PostgreSQL Cluster before restoring. See Step 3 for details.
 {% endhint %}
 
 ***
 
 ### Step 4 — Recreate Roles and Tablespaces (if needed)
 
-If your databases rely on specific roles or custom tablespaces, recreate them on Postgres Cluster before restoring. Roles created here will need passwords set manually.
+If your databases rely on specific roles or custom tablespaces, recreate them on PostgreSQL Cluster before restoring. Roles created here will need passwords set manually.
 
 ```sql
 -- Recreate a role
@@ -205,7 +205,7 @@ If you used `pg_dumpall`, the SQL file contains role definitions, but some state
 
 ***
 
-### Step 5 — Restore on Postgres Cluster
+### Step 5 — Restore on PostgreSQL Cluster
 
 **If you used pg\_dumpall (Option A)**, restore with `psql` connecting to the default `postgres` database:
 
@@ -235,7 +235,7 @@ ALTER ROLE <role_name> WITH PASSWORD '<new_password>';
 
 ### Step 6 — Verify Each Database
 
-After the restore, verify every database on Postgres Cluster:
+After the restore, verify every database on PostgreSQL Cluster:
 
 * Confirm all expected databases are present.
 * Check table counts and row counts in each database.
@@ -258,7 +258,7 @@ After the restore, verify every database on Postgres Cluster:
 
 **`ERROR: must be superuser`**
 
-Errors mentioning superuser access are expected on both Postgres Single Node and Postgres Cluster. Skip them. Use `--no-owner` and `--no-privileges` flags with `pg_restore` to suppress the most common cases.
+Errors mentioning superuser access are expected on both PostgreSQL Single Node and PostgreSQL Cluster. Skip them. Use `--no-owner` and `--no-privileges` flags with `pg_restore` to suppress the most common cases.
 
 **Roles or ownership errors after restore**
 
@@ -266,7 +266,7 @@ Errors mentioning superuser access are expected on both Postgres Single Node and
 
 **Missing tablespaces**
 
-If the source database uses custom tablespaces, the restore may fail because those tablespaces do not exist on the target cluster. Recreate any required tablespaces on Postgres Cluster before running the restore.
+If the source database uses custom tablespaces, the restore may fail because those tablespaces do not exist on the target cluster. Recreate any required tablespaces on PostgreSQL Cluster before running the restore.
 
 **Table creation errors**
 
@@ -282,6 +282,6 @@ For very large databases, use `pg_restore --jobs <n>` to enable multi-job restor
 
 After verifying the data successfully:
 
-* Update the connection string in your application to point to the Postgres Cluster (new host, port, and credentials).
+* Update the connection string in your application to point to the PostgreSQL Cluster (new host, port, and credentials).
 * Confirm the application works correctly against the migrated database.
-* Delete the old Postgres Single Node on vDB once you have confirmed it is no longer needed.
+* Delete the old PostgreSQL Single Node on vDB once you have confirmed it is no longer needed.
