@@ -43,7 +43,7 @@ To create and manage a PostgreSQL Cluster, please refer to the guide [here](crea
 
 ## PostgreSQL Cluster Architecture
 
-<figure><img src="../../../.gitbook/assets/vDB Postgres Cluster Architecture Diagram.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vDB PostgreSQL Cluster Architecture Diagram.png" alt=""><figcaption></figcaption></figure>
 
 **Key components:**
 

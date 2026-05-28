@@ -2,7 +2,7 @@
 description: Information about GreenNode Regions and Availability Zones
 ---
 
-# VNG Regions and Availability Zones
+# GreenNode Regions and Availability Zones
 
 ## Overview
 
@@ -52,7 +52,7 @@ Service URLs within the same region are identical.
 
 {% tabs %}
 {% tab title="vServer" %}
-#### vServer
+**vServer**
 
 | Service                             | Global | HCM-1A | HCM-1B | HCM-1C | BKK-1A | HAN-1A | Console URL                                                                                                                                                                                                  |
 | ----------------------------------- | :----: | :----: | :----: | :----: | :----: | :----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -69,7 +69,7 @@ Service URLs within the same region are identical.
 {% endtab %}
 
 {% tab title="vNetwork" %}
-#### vNetwork
+**vNetwork**
 
 | Service                               | Global | HCM-1A | HCM-1B | HCM-1C | BKK-1A | HAN-1A | Console URL                                                                                                      |
 | ------------------------------------- | :----: | :----: | :----: | :----: | :----: | :----: | ---------------------------------------------------------------------------------------------------------------- |
@@ -79,7 +79,7 @@ Service URLs within the same region are identical.
 {% endtab %}
 
 {% tab title="vStorage" %}
-#### vStorage
+**vStorage**
 
 | Service          | Global | HCM-1A | HCM-1B | HCM-1C | BKK-1A | HAN-1A | Console URL                                                                                                          |
 | ---------------- | :----: | :----: | :----: | :----: | :----: | :----: | -------------------------------------------------------------------------------------------------------------------- |
@@ -89,7 +89,7 @@ Service URLs within the same region are identical.
 {% endtab %}
 
 {% tab title="vDB" %}
-#### vDB (Database Service)
+**vDB (Database Service)**
 
 | Service                 | Global | HCM-1A | HCM-1B | HCM-1C | BKK-1A | HAN-1A | Console URL                                                    |
 | ----------------------- | :----: | :----: | :----: | :----: | :----: | :----: | -------------------------------------------------------------- |
@@ -100,7 +100,7 @@ Service URLs within the same region are identical.
 {% endtab %}
 
 {% tab title="VKS" %}
-#### VKS (VNG Kubernetes Service)
+**VKS (VNG Kubernetes Service)**
 
 | Service                | Global | HCM-1A | HCM-1B | HCM-1C | BKK-1A | HAN-1A | Console URL                                                                                              |
 | ---------------------- | :----: | :----: | :----: | :----: | :----: | :----: | -------------------------------------------------------------------------------------------------------- |
@@ -109,7 +109,7 @@ Service URLs within the same region are identical.
 {% endtab %}
 
 {% tab title="Backup Center" %}
-#### Backup Center
+**Backup Center**
 
 | Service                    | Global | HCM-1A | HCM-1B | HCM-1C | BKK-1A | HAN-1A | Console URL                                                                                                                              |
 | -------------------------- | :----: | :----: | :----: | :----: | :----: | :----: | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -119,7 +119,7 @@ Service URLs within the same region are identical.
 {% endtab %}
 
 {% tab title="vMonitor" %}
-#### vMonitor Platform
+**vMonitor Platform**
 
 | Service            | Global | HCM-1A | HCM-1B | HCM-1C | BKK-1A | HAN-1A | Console URL                                                            |
 | ------------------ | :----: | :----: | :----: | :----: | :----: | :----: | ---------------------------------------------------------------------- |
@@ -130,7 +130,7 @@ Service URLs within the same region are identical.
 {% endtab %}
 
 {% tab title="vCDN" %}
-#### vCDN
+**vCDN**
 
 | Service             | Global | HCM-1A | HCM-1B | HCM-1C | BKK-1A | HAN-1A | Console URL                                               |
 | ------------------- | :----: | :----: | :----: | :----: | :----: | :----: | --------------------------------------------------------- |
@@ -141,7 +141,7 @@ Service URLs within the same region are identical.
 {% endtab %}
 
 {% tab title="Security & IAM" %}
-#### Security & IAM
+**Security & IAM**
 
 | Service | Global | HCM-1A | HCM-1B | HCM-1C | BKK-1A | HAN-1A | Console URL                                   |
 | ------- | :----: | :----: | :----: | :----: | :----: | :----: | --------------------------------------------- |
@@ -150,7 +150,7 @@ Service URLs within the same region are identical.
 {% endtab %}
 
 {% tab title="Marketplace & AI" %}
-#### Marketplace & AI
+**Marketplace & AI**
 
 | Service          | Global | HCM-1A |    HCM-1B   |    HCM-1C   | BKK-1A | HAN-1A | Console URL                                                                                                              |
 | ---------------- | :----: | :----: | :---------: | :---------: | :----: | :----: | ------------------------------------------------------------------------------------------------------------------------ |

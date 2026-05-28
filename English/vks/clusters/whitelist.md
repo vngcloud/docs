@@ -11,7 +11,7 @@ The IP Whitelist feature on VKS's Private Node Group mode allows you to only all
 * **Greater control:** Whitelist IP allows you to tightly control access to your nodes, ensuring only authorized users and applications can access.
 
 {% hint style="info" %}
-#### Recommendations for Using Whitelists in Different Cluster Models
+**Recommendations for Using Whitelists in Different Cluster Models**
 
 **1. Public Cluster Containing Only Public Node Groups**
 

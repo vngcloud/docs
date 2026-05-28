@@ -59,7 +59,7 @@ All AgentBase API calls (Portal, RESTful API, and SDK) require a GreenNode IAM b
    * **Description**: e.g., `Service account for AgentBase test`
 3. Click **"Next Step"**.
 
-![1774518047320](../../../.gitbook/assets/1774518047320.png)
+![1774518047320](../../.gitbook/assets/1774518047320.png)
 
 **Step 3 — Attach Policies**
 
@@ -136,13 +136,13 @@ Once prerequisites are complete, follow the chapters in order for your first dep
 | Register my agent on the platform      | [Access Control](access-control/#agent-identity)                                          |
 | Store API keys for external services   | [Access Control — Auth & Secrets](access-control/#auth--secrets)                          |
 | Push a Docker image                    | [Supporting Services — Container Registry](supporting-services.md#container-registry-vcr) |
-| Deploy and run my agent                | [Runtime](runtime/)                                                                       |
+| Deploy and run my agent                | [Runtime](/broken/pages/YJlSqvLPNsKkpQj5yG56)                                             |
 | Add conversation memory                | [Memory](memory/)                                                                         |
-| Monitor and debug                      | [Insight](insight/)                                                                       |
+| Monitor and debug                      | [Insight](agent-runtime/logs-and-metrics.md)                                              |
 | Get an LLM API key (OpenAI-compatible) | [Supporting Services — AI Platform](supporting-services.md#ai-platform-aip--llm-access)   |
 | Use the Python SDK                     | [Supporting Services — SDK & Integration](supporting-services.md#sdk--integration)        |
 
-> **First time?** Start with [Access Control](access-control/) → [Supporting Services (vCR)](supporting-services.md#container-registry-vcr) → [Runtime](runtime/) to go from zero to a running agent.
+> **First time?** Start with [Access Control](access-control/) → [Supporting Services (vCR)](supporting-services.md#container-registry-vcr) → [Runtime](/broken/pages/YJlSqvLPNsKkpQj5yG56) to go from zero to a running agent.
 
 ***
 

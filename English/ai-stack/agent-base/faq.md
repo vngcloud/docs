@@ -2,8 +2,7 @@
 
 > Frequently asked questions about GreenNode AgentBase.
 
----
-
+***
 
 ## General
 
@@ -11,7 +10,7 @@
 
 Your agent must be a containerized HTTP server listening on port 8080. The AgentBase SDK (`greennode-agentbase`) is Python-only. Most users write agents in Python using `GreenNodeAgentBaseApp` as the server framework.
 
----
+***
 
 **Q: Can I run my agent locally during development?**
 
@@ -24,19 +23,19 @@ export GREENNODE_AGENT_IDENTITY="my-agent-dev"
 python main.py
 ```
 
----
+***
 
 **Q: Can multiple runtimes share one identity?**
 
 Yes. A single identity can be associated with multiple runtimes. All runtimes sharing an identity have access to the same auth configurations. If you need different credentials per environment, create separate identities (e.g., `my-agent-dev`, `my-agent-prod`).
 
----
+***
 
 **Q: What frameworks are officially supported?**
 
 The SDK has first-class support for LangGraph via `AgentBaseMemoryEvents` (from `greennode-agent-bridge[langgraph]`). For the HTTP server layer, use `GreenNodeAgentBaseApp`. Any Python HTTP framework that listens on port 8080 and exposes `GET /health` returning HTTP 200 will work.
 
----
+***
 
 ## Getting Started
 
@@ -45,25 +44,25 @@ The SDK has first-class support for LangGraph via `AgentBaseMemoryEvents` (from 
 At minimum you need:
 
 1. A GreenNode IAM service account
-2. A registered **Agent Identity** ([Access Control](./access-control/README.md))
-3. A Docker image in vCR ([Supporting Services](./supporting-services.md#container-registry-vcr))
-4. A **Runtime** pointing to that image ([Runtime](./runtime/README.md))
+2. A registered **Agent Identity** ([Access Control](access-control/))
+3. A Docker image in vCR ([Supporting Services](supporting-services.md#container-registry-vcr))
+4. A **Runtime** pointing to that image ([Runtime](/broken/pages/YJlSqvLPNsKkpQj5yG56))
 
 You do not need Memory, auth configs, or external API integrations to run a basic echo agent.
 
----
+***
 
 **Q: Can I use a public Docker image instead of vCR?**
 
 vCR is strongly recommended — images on vCR are on the same private network as runtime nodes (fast pulls, no egress cost). The Runtime can also pull from external registries if you configure `imageAuth`, but this introduces an external dependency in production.
 
----
+***
 
 **Q: How do I deploy a new version without downtime?**
 
-Every `PATCH /agent-runtimes/{id}` creates a new version. The `DEFAULT` endpoint automatically updates to the latest version. To safely roll out with canary testing, create a separate endpoint pinned to the new version, test it, then update the `DEFAULT` endpoint. See [Runtime § 5.12](./runtime/README.md#advanced-canary-deployment).
+Every `PATCH /agent-runtimes/{id}` creates a new version. The `DEFAULT` endpoint automatically updates to the latest version. To safely roll out with canary testing, create a separate endpoint pinned to the new version, test it, then update the `DEFAULT` endpoint. See [Runtime § 5.12](/broken/pages/YJlSqvLPNsKkpQj5yG56#advanced-canary-deployment).
 
----
+***
 
 ## Access Control
 
@@ -71,13 +70,13 @@ Every `PATCH /agent-runtimes/{id}` creates a new version. The `DEFAULT` endpoint
 
 No. The identity name is immutable. If you need to rename, create a new identity with the desired name, re-register all auth configs, update your runtimes to use the new identity, then delete the old identity.
 
----
+***
 
 **Q: What happens if I try to delete an identity with active runtimes?**
 
 The API will reject the delete request. Stop and delete all associated runtimes first, then delete the identity.
 
----
+***
 
 **Q: How do I verify that credential retrieval works before deployment?**
 
@@ -100,7 +99,7 @@ key_result = asyncio.run(client.get_api_key_for_agent_identity_async(
 print(f"Key retrieved: {'yes' if key_result.apikey else 'no'}")
 ```
 
----
+***
 
 ## Runtime
 
@@ -108,31 +107,32 @@ print(f"Key retrieved: {'yes' if key_result.apikey else 'no'}")
 
 A **Runtime** is the compute environment (containers, scaling policy, flavor). An **Endpoint** is the HTTPS URL clients call. Every runtime automatically gets a `DEFAULT` endpoint. You can create additional endpoints pinned to specific versions for canary deployments.
 
----
+***
 
 **Q: What are the possible runtime states?**
 
-| State        | Description                                                   |
-| ------------ | ------------------------------------------------------------- |
+| State      | Description                                                   |
+| ---------- | ------------------------------------------------------------- |
 | `CREATING` | Runtime is being created; containers are starting             |
 | `ACTIVE`   | All minimum replicas are healthy; endpoint is serving traffic |
 | `UPDATING` | A new version deployment is in progress                       |
 | `ERROR`    | One or more required replicas could not start (check logs)    |
 | `DELETING` | Runtime is being deleted                                      |
 
----
+***
 
 **Q: My agent keeps getting OOMKilled. What should I do?**
 
-1. Check current memory usage via the metrics API:
-   ```bash
-   curl -s "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNTIME_ID/endpoints/$ENDPOINT_ID/metrics" \
-     -H "Authorization: Bearer $TOKEN" | jq '{cpu: .cpuCores, memory_mb: (.memoryBytes / 1048576 | floor)}'
-   ```
+1.  Check current memory usage via the metrics API:
+
+    ```bash
+    curl -s "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNTIME_ID/endpoints/$ENDPOINT_ID/metrics" \
+      -H "Authorization: Bearer $TOKEN" | jq '{cpu: .cpuCores, memory_mb: (.memoryBytes / 1048576 | floor)}'
+    ```
 2. Update to a larger flavor via `PATCH /agent-runtimes/{id}`
 3. Optimize memory usage: reduce conversation history length, avoid loading large datasets in memory
 
----
+***
 
 **Q: How do I trigger a deployment from a CI pipeline?**
 
@@ -156,7 +156,7 @@ curl -s -X PATCH "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNT
   }"
 ```
 
----
+***
 
 ## Memory
 
@@ -164,16 +164,16 @@ curl -s -X PATCH "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNT
 
 Yes. Memory data (events and memory records) is isolated per organization.
 
----
+***
 
 **Q: What happens to memory data when I delete a runtime?**
 
 Memory data is NOT deleted when you delete a runtime. It persists until:
 
-- It expires (based on `eventExpiryDuration`, range 1–365 days)
-- You explicitly delete the memory store (`DELETE /memories/{id}`)
+* It expires (based on `eventExpiryDuration`, range 1–365 days)
+* You explicitly delete the memory store (`DELETE /memories/{id}`)
 
----
+***
 
 **Q: My semantic search returns zero results. Why?**
 
@@ -191,31 +191,31 @@ curl -s "https://agentbase.api.vngcloud.vn/memory/memories/$MEMORY_ID/memory-rec
   -H "Authorization: Bearer $TOKEN" | jq '.[] | .memory'
 ```
 
----
+***
 
 **Q: What is the difference between short-term and long-term memory?**
 
-|             | Short-Term                                       | Long-Term                                    |
-| ----------- | ------------------------------------------------ | -------------------------------------------- |
-| Storage     | Events (conversation turns) in order             | Memory records (extracted facts) as vectors  |
-| Retrieval   | By actor + session                               | By semantic similarity search                |
-| Expiry      | After `eventExpiryDuration` days               | Permanent until deleted                      |
-| Use case    | Conversation history, LangGraph checkpointing    | User preferences, persistent facts           |
-| Integration | `AgentBaseMemoryEvents` LangGraph checkpointer | `MemoryClient.searchMemoryRecords_async()` |
+|             | Short-Term                                     | Long-Term                                   |
+| ----------- | ---------------------------------------------- | ------------------------------------------- |
+| Storage     | Events (conversation turns) in order           | Memory records (extracted facts) as vectors |
+| Retrieval   | By actor + session                             | By semantic similarity search               |
+| Expiry      | After `eventExpiryDuration` days               | Permanent until deleted                     |
+| Use case    | Conversation history, LangGraph checkpointing  | User preferences, persistent facts          |
+| Integration | `AgentBaseMemoryEvents` LangGraph checkpointer | `MemoryClient.searchMemoryRecords_async()`  |
 
----
+***
 
 ## SDK & Integration
 
 **Q: What are the correct environment variable names for the SDK?**
 
-| Variable                     | Description                                    |
-| ---------------------------- | ---------------------------------------------- |
+| Variable                   | Description                                    |
+| -------------------------- | ---------------------------------------------- |
 | `GREENNODE_CLIENT_ID`      | IAM service account client ID                  |
 | `GREENNODE_CLIENT_SECRET`  | IAM service account client secret              |
 | `GREENNODE_AGENT_IDENTITY` | Agent identity name (for credential retrieval) |
 
----
+***
 
 **Q: Can I use `@requires_api_key` for non-entrypoint functions?**
 
@@ -233,23 +233,24 @@ result = asyncio.run(client.get_api_key_for_agent_identity_async(
 api_key = result.apikey
 ```
 
----
+***
 
 ## Troubleshooting
 
 **Q: My runtime is stuck in `CREATING` state. What do I do?**
 
-1. Check runtime logs:
-   ```bash
-   curl -s -X POST "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNTIME_ID/logs" \
-     -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \
-     -d '{"from": 0, "limit": 100}' | jq -r '.logs[]'
-   ```
+1.  Check runtime logs:
+
+    ```bash
+    curl -s -X POST "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNTIME_ID/logs" \
+      -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \
+      -d '{"from": 0, "limit": 100}' | jq -r '.logs[]'
+    ```
 2. Verify the image URL is correct and exists in vCR
 3. Verify `imageAuth` credentials are correct for private registries
 4. Verify the container exposes `GET /health` returning HTTP 200 on port 8080
 
----
+***
 
 **Q: I get 401 Unauthorized on API calls. How do I fix it?**
 
@@ -262,20 +263,21 @@ TOKEN=$(curl -s -X POST "https://iamapis.vngcloud.vn/accounts-api/v2/auth/token"
   | jq -r '.data.accessToken')
 ```
 
----
+***
 
 **Q: My agent returns 500 errors but logs look normal. What should I check?**
 
-1. Check endpoint logs (not just runtime logs):
-   ```bash
-   curl -s -X POST "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNTIME_ID/endpoints/$ENDPOINT_ID/logs" \
-     -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \
-     -d '{"from": 0, "limit": 200}' | jq -r '.logs[]' | grep -i "error\|traceback\|exception"
-   ```
+1.  Check endpoint logs (not just runtime logs):
+
+    ```bash
+    curl -s -X POST "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNTIME_ID/endpoints/$ENDPOINT_ID/logs" \
+      -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \
+      -d '{"from": 0, "limit": 200}' | jq -r '.logs[]' | grep -i "error\|traceback\|exception"
+    ```
 2. Verify `context.user_id` and `context.session_id` headers are present if using Context
 3. Verify the `@app.ping` health check returns `PingStatus.HEALTHY`
 
----
+***
 
 ## Teardown / Clean Up Resources
 
@@ -293,7 +295,7 @@ Delete resources in this order to avoid dependency errors:
 4. Delete memory store(s)
 5. Delete vCR images and repository (optional)
 
----
+***
 
 ### Step 1: Delete Runtime(s)
 
@@ -316,7 +318,7 @@ curl -s -X DELETE "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUN
   -H "Authorization: Bearer $TOKEN"
 ```
 
----
+***
 
 ### Step 2: Delete Auth Providers
 
@@ -349,7 +351,7 @@ asyncio.run(client.delete_api_key_provider_async(name="aip-key"))
 asyncio.run(client.delete_oauth2_provider_async(name="google-oauth"))
 ```
 
----
+***
 
 ### Step 3: Delete Agent Identity
 
@@ -370,7 +372,7 @@ curl -s -X DELETE "https://agentbase.api.vngcloud.vn/identity/api/v1/agent-ident
 asyncio.run(client.delete_agent_identity_async(name="my-agent"))
 ```
 
----
+***
 
 ### Step 4: Delete Memory Store(s)
 
@@ -402,7 +404,7 @@ memory_client = MemoryClient()
 asyncio.run(memory_client.delete_async(id="<memory-id>"))
 ```
 
----
+***
 
 ### Step 5: Delete vCR Repository (Optional)
 
@@ -430,7 +432,7 @@ curl -s -X DELETE "https://vcr.api.vngcloud.vn/v1/repository/$REPO_ID" \
   -H "Authorization: Bearer $TOKEN"
 ```
 
----
+***
 
 ### Verify Teardown
 
@@ -448,5 +450,4 @@ curl -s "https://agentbase.api.vngcloud.vn/memory/memories?page=1&size=10" \
   -H "Authorization: Bearer $TOKEN" | jq '.totalItem'
 ```
 
----
-
+***
