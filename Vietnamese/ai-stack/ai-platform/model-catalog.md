@@ -48,7 +48,7 @@ AI Platform hỗ trợ người dùng triển khai nhanh các Large Language Mod
 | sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | 1 card       | 1 card       | 1 card  | 14 phút                        |
 
 {% hint style="info" %}
-#### **Lưu ý cấu hình VRAM**
+**Lưu ý cấu hình VRAM**
 
 Bạn có thể tra cứu mức sử dụng VRAM của từng model tại:\
 🔗 [https://llm.extractum.io](https://llm.extractum.io)

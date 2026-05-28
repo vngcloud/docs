@@ -49,7 +49,7 @@ GreenNode cung cấp một giải pháp IAM mạnh mẽ, cho phép bạn quản 
 
 Root User Account là một thực thể bạn tạo đầu tiên trong GreenNode và sử dụng, mặc định có quyền truy cập đầy đủ vào tất cả các sản phẩm/dịch vụ và tài nguyên của GreenNode trong tài khoản đó.
 
-* #### **Users Accounts** <a href="#identityandaccessmanagement-iam-usersaccounts" id="identityandaccessmanagement-iam-usersaccounts"></a>
+* **Users Accounts**
 
 IAM User Account đại diện cho các danh tính riêng lẻ liên kết với Root User Account của bạn. Một IAM User Account bao gồm các chứng chỉ bảo mật, chẳng hạn như tên người dùng và mật khẩu, để xác thực danh tính của nó.
 
@@ -81,4 +81,3 @@ Dưới đây là các topic quan trọng mà người dùng cần tìm hiểu t
 * [IAM Access Management](identity-and-access-management-iam/quan-ly-truy-cap-iam/)
 * [Audit Logs](identity-and-access-management-iam/quan-ly-audit-logs.md)
 * [Quota & Limitation](identity-and-access-management-iam/gioi-han-su-dung.md)
-
