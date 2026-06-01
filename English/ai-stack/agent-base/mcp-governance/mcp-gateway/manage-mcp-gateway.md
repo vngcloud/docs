@@ -14,7 +14,7 @@
 
 ## View the MCP Gateway List
 
-1. Sign in to the [GreenNode AI Platform Portal](https://console.greennode.ai).
+1. Sign in to the [GreenNode AI Platform Portal](https://aiplatform.console.vngcloud.vn/mcp-gateway).
 2. Select **AgentBase** in the left menu.
 3. Select **MCP Governance** → **MCP Gateway**.
 

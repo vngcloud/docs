@@ -29,7 +29,7 @@ The ability to restrict "API Key X may only use Model Y" is coming soon.
 
 - A GreenNode account with Root or Admin role
 - At least one API Key created (see [Access Control](../access-control/README.md))
-- At least one Model enabled in [GreenNode MaaS](https://maas.console.vngcloud.vn)
+- At least one Model enabled in [GreenNode MaaS](https://aiplatform.console.vngcloud.vn/models)
 
 ---
 

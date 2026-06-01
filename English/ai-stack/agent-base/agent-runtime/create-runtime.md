@@ -38,7 +38,7 @@ Recommended for developers who want to integrate deployment into an AI-assisted 
 
 ## Create via Portal
 
-**Step 1:** Open [My Agents](https://aiplatform.console.vngcloud.vn/my-agents?tab=runtime) → click **Deploy a new Agent**
+**Step 1:** Open [Agent Runtime](https://aiplatform.console.vngcloud.vn/agent-runtime?tab=runtime) → click **Deploy a new Agent**
 
 A popup appears to choose the agent type:
 

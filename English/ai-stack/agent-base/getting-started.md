@@ -8,7 +8,7 @@
 
 ### Create a GreenNode Account
 
-1. Navigate to https://console.vngcloud.vn and sign up or log in.
+1. Navigate to https://dashboard.console.vngcloud.vn/ and sign up or log in.
 2. Complete account verification.
 3. Create or join an **Organization**. All AgentBase resources are scoped to an organization.
 

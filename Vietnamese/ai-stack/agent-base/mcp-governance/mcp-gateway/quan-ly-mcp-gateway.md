@@ -14,7 +14,7 @@
 
 ## Xem danh sách MCP Gateway
 
-1. Đăng nhập vào [GreenNode AI Platform Portal](https://console.greennode.ai).
+1. Đăng nhập vào [GreenNode AI Platform Portal](https://aiplatform.console.vngcloud.vn/mcp-gateway).
 2. Chọn **AgentBase** trong menu trái.
 3. Chọn **MCP Governance** → **MCP Gateway**.
 
