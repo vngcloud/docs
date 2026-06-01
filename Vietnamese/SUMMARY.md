@@ -903,6 +903,7 @@
     * [PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster.md)
       * [Khởi tạo và Quản lý PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/khoi-tao-va-quan-ly-postgresql-cluster.md)
       * [Cấu hình tham số cho Cluster](vdb/relational-database-service-rds/postgresql/cau-hinh-tham-so-cho-cluster.md)
+      * [Cấu hình tham số cho Standalone](vdb/relational-database-service-rds/postgresql/cau-hinh-tham-so-cho-standalone.md)
       * [vDB PostgreSQL - Các extension được hỗ trợ](vdb/relational-database-service-rds/postgresql/vdb-postgresql-cac-extension-duoc-ho-tro.md)
       * [Migrate từ PostgreSQL Single sang PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/migrate-tu-postgresql-single-sang-cluster.md)
   * [MemoryStore Database Service (MDS)](vdb/memorystore-database-service-mds/README.md)

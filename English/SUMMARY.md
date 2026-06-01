@@ -775,6 +775,7 @@
     * [PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster.md)
       * [Create and Manage PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/create-and-manage-postgresql-cluster.md)
       * [PostgreSQL Cluster Parameters](vdb/relational-database-service-rds/postgresql/postgresql-cluster-parameters.md)
+      * [PostgreSQL Standalone Parameters](vdb/relational-database-service-rds/postgresql/config-parameters-for-standalone.md)
       * [vDB PostgreSQL - Supported Extensions](vdb/relational-database-service-rds/postgresql/vdb-postgresql-cac-extension-duoc-ho-tro.md)
       * [Migrate from PostgreSQL Single to PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/migrate-from-postgresql-single-to-cluster.md)
   * [MemoryStore Database Service (MDS)](vdb/memorystore-database-service-mds/README.md)
