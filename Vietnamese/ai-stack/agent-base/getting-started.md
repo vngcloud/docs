@@ -8,7 +8,7 @@
 
 ### Tạo tài khoản GreenNode
 
-1. Truy cập https://console.vngcloud.vn và đăng ký hoặc đăng nhập.
+1. Truy cập https://dashboard.console.vngcloud.vn/ và đăng ký hoặc đăng nhập.
 2. Hoàn thành xác minh tài khoản.
 3. Tạo hoặc tham gia một **Organization**. Tất cả tài nguyên AgentBase đều thuộc phạm vi một organization.
 

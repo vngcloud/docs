@@ -29,7 +29,7 @@ Tính năng giới hạn "API Key X chỉ được dùng Model Y" sẽ ra mắt 
 
 - Tài khoản GreenNode với vai trò Root hoặc Admin
 - Ít nhất một API Key đã tạo (xem [Access Control](../access-control/README.md))
-- Ít nhất một Model đã bật trong [GreenNode MaaS](https://maas.console.vngcloud.vn)
+- Ít nhất một Model đã bật trong [GreenNode MaaS](https://aiplatform.console.vngcloud.vn/models)
 
 ---
 

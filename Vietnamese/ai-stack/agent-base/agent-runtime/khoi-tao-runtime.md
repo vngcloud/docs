@@ -38,7 +38,7 @@ Phù hợp với developer muốn tích hợp deploy vào quy trình AI-assisted
 
 ## Tạo Runtime qua Portal
 
-**Bước 1:** Mở trang [My Agents](https://aiplatform.console.vngcloud.vn/my-agents?tab=runtime) → nhấp **Deploy a new Agent**
+**Bước 1:** Mở trang [Agent Runtime](https://aiplatform.console.vngcloud.vn/agent-runtime?tab=runtime) → nhấp **Deploy a new Agent**
 
 Một popup hiện ra để bạn chọn loại agent:
 
