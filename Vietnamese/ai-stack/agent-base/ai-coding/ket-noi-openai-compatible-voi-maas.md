@@ -55,7 +55,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="claude-sonnet-4-6",
+    model="openai/gpt-4o",
     messages=[{"role": "user", "content": "Hello"}],
 )
 print(response.choices[0].message.content)
@@ -72,7 +72,7 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: "claude-sonnet-4-6",
+  model: "openai/gpt-4o",
   messages: [{ role: "user", content: "Hello" }],
 });
 console.log(response.choices[0].message.content);
@@ -85,15 +85,13 @@ export OPENAI_BASE_URL="https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1"
 export OPENAI_API_KEY="<your-api-key>"
 ```
 
-<figure><img src="../../../.gitbook/assets/Agentbase-image/AI-coding-change-baseurl-apikey.png" alt=""><figcaption><p>Cấu hình base URL và API key trong shell profile</p></figcaption></figure>
-
 **LiteLLM**
 
 ```python
 import litellm
 
 response = litellm.completion(
-    model="openai/claude-sonnet-4-6",
+    model="openai/gpt-4o",
     messages=[{"role": "user", "content": "Hello"}],
     base_url="https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1",
     api_key="<your-api-key>",
@@ -109,7 +107,7 @@ Trong phần cài đặt của tool, điền:
 | ------------ | ---------------------------------------------------- |
 | **Base URL** | `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1` |
 | **API Key**  | `<your-api-key>`                                     |
-| **Model**    | `claude-sonnet-4-6` (hoặc model từ bước 2)           |
+| **Model**    | `openai/gpt-4o`, `gemini/gemini-2.5-flash`, `qwen/qwen3-27b` (hoặc model từ bước 2) |
 
 ***
 
@@ -122,7 +120,7 @@ curl https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1/chat/completions \
   -H "Authorization: Bearer <your-api-key>" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "claude-sonnet-4-6",
+    "model": "openai/gpt-4o",
     "messages": [{"role": "user", "content": "ping"}]
   }'
 ```
@@ -155,8 +153,6 @@ Kết quả mong đợi: response JSON có trường `choices[0].message.content
 ## Kết quả
 
 Sau khi cấu hình, tool hoặc SDK sẽ gọi model qua GreenNode MaaS thay vì OpenAI trực tiếp. Usage được ghi nhận trên AI Platform Console và tính phí theo credit-token nội bộ.
-
-<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption><p>Kết nối thành công qua GreenNode MaaS endpoint</p></figcaption></figure>
 
 | Tôi muốn tiếp theo...     | Đi đến                                                                    |
 | ------------------------- | ------------------------------------------------------------------------- |

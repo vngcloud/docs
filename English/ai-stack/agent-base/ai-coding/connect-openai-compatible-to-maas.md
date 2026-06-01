@@ -55,7 +55,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="claude-sonnet-4-6",
+    model="openai/gpt-4o",
     messages=[{"role": "user", "content": "Hello"}],
 )
 print(response.choices[0].message.content)
@@ -72,7 +72,7 @@ const client = new OpenAI({
 });
 
 const response = await client.chat.completions.create({
-  model: "claude-sonnet-4-6",
+  model: "openai/gpt-4o",
   messages: [{ role: "user", content: "Hello" }],
 });
 console.log(response.choices[0].message.content);
@@ -85,15 +85,13 @@ export OPENAI_BASE_URL="https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1"
 export OPENAI_API_KEY="<your-api-key>"
 ```
 
-<figure><img src="../../../.gitbook/assets/Agentbase-image/AI-coding-change-baseurl-apikey.png" alt=""><figcaption><p>Base URL and API key configured in shell profile</p></figcaption></figure>
-
 **LiteLLM**
 
 ```python
 import litellm
 
 response = litellm.completion(
-    model="openai/claude-sonnet-4-6",
+    model="openai/gpt-4o",
     messages=[{"role": "user", "content": "Hello"}],
     base_url="https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1",
     api_key="<your-api-key>",
@@ -109,7 +107,7 @@ In the tool's settings, fill in:
 |---|---|
 | **Base URL** | `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1` |
 | **API Key** | `<your-api-key>` |
-| **Model** | `claude-sonnet-4-6` (or the model ID from Step 2) |
+| **Model** | `openai/gpt-4o`, `gemini/gemini-2.5-flash`, `qwen/qwen3-27b` (or the model ID from Step 2) |
 
 ---
 
@@ -122,7 +120,7 @@ curl https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1/chat/completions \
   -H "Authorization: Bearer <your-api-key>" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "claude-sonnet-4-6",
+    "model": "openai/gpt-4o",
     "messages": [{"role": "user", "content": "ping"}]
   }'
 ```
@@ -155,8 +153,6 @@ Expected result: a JSON response containing `choices[0].message.content`.
 ## Result
 
 After configuration, the tool or SDK calls models through GreenNode MaaS instead of OpenAI directly. Usage is recorded in AI Platform Console and billed via internal credit-tokens.
-
-<figure><img src="../../../.gitbook/assets/Agentbase-image/AI-coding-success.png" alt=""><figcaption><p>Successful connection through GreenNode MaaS endpoint</p></figcaption></figure>
 
 | I want to... | Go to |
 |---|---|

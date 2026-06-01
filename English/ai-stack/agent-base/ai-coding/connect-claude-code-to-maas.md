@@ -36,7 +36,7 @@ List available Claude models:
 bash .claude/skills/agentbase/scripts/aip.sh models list --providers anthropic --status ENABLED
 ```
 
-Note the `path` value for the model you want (e.g., `claude-sonnet-4-6`, `claude-opus-4-7`). This value is used in the model mapping environment variables in the next step.
+Note the `path` value for the model you want (e.g., `claude-sonnet-4-6`, `claude-opus-4-8`). This value is used in the model mapping environment variables in the next step.
 
 ---
 
@@ -56,7 +56,7 @@ export ANTHROPIC_API_KEY=""  # Must be empty — avoids routing to Anthropic dir
 
 # Model mapping (use the path from Step 2)
 export ANTHROPIC_DEFAULT_SONNET_MODEL="claude-sonnet-4-6"
-export ANTHROPIC_DEFAULT_OPUS_MODEL="claude-opus-4-7"
+export ANTHROPIC_DEFAULT_OPUS_MODEL="claude-opus-4-8"
 export ANTHROPIC_DEFAULT_HAIKU_MODEL="claude-haiku-4-5-20251001"
 export CLAUDE_CODE_SUBAGENT_MODEL="claude-sonnet-4-6"
 ```
@@ -80,7 +80,7 @@ Create `.claude/settings.local.json` at the project root:
     "ANTHROPIC_AUTH_TOKEN": "<your-api-key>",
     "ANTHROPIC_API_KEY": "",
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "claude-sonnet-4-6",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-opus-4-7",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-opus-4-8",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "claude-haiku-4-5-20251001",
     "CLAUDE_CODE_SUBAGENT_MODEL": "claude-sonnet-4-6"
   }
@@ -118,7 +118,7 @@ Confirm requests are recorded in [AI Platform Console → Usage](https://aiplatf
 | `ANTHROPIC_AUTH_TOKEN` | Authentication API key | `<your-api-key>` |
 | `ANTHROPIC_API_KEY` | Must be empty (avoid conflict) | `""` |
 | `ANTHROPIC_DEFAULT_SONNET_MODEL` | Model for everyday coding | `claude-sonnet-4-6` |
-| `ANTHROPIC_DEFAULT_OPUS_MODEL` | Model for complex reasoning | `claude-opus-4-7` |
+| `ANTHROPIC_DEFAULT_OPUS_MODEL` | Model for complex reasoning | `claude-opus-4-8` |
 | `ANTHROPIC_DEFAULT_HAIKU_MODEL` | Model for fast completions | `claude-haiku-4-5-20251001` |
 | `CLAUDE_CODE_SUBAGENT_MODEL` | Model used when spawning sub-agents | `claude-sonnet-4-6` |
 

@@ -36,7 +36,7 @@ Xem danh sách model Claude đang khả dụng:
 bash .claude/skills/agentbase/scripts/aip.sh models list --providers anthropic --status ENABLED
 ```
 
-Lấy giá trị `path` của model muốn dùng (ví dụ: `claude-sonnet-4-6`, `claude-opus-4-7`). Giá trị này sẽ điền vào biến môi trường model mapping ở bước sau.
+Lấy giá trị `path` của model muốn dùng (ví dụ: `claude-sonnet-4-6`, `claude-opus-4-8`). Giá trị này sẽ điền vào biến môi trường model mapping ở bước sau.
 
 ***
 
@@ -56,7 +56,7 @@ export ANTHROPIC_API_KEY=""  # Phải để trống — tránh conflict với An
 
 # Model mapping (dùng path từ bước 2)
 export ANTHROPIC_DEFAULT_SONNET_MODEL="claude-sonnet-4-6"
-export ANTHROPIC_DEFAULT_OPUS_MODEL="claude-opus-4-7"
+export ANTHROPIC_DEFAULT_OPUS_MODEL="claude-opus-4-8"
 export ANTHROPIC_DEFAULT_HAIKU_MODEL="claude-haiku-4-5-20251001"
 export CLAUDE_CODE_SUBAGENT_MODEL="claude-sonnet-4-6"
 ```
@@ -80,7 +80,7 @@ Tạo file `.claude/settings.local.json` tại root của project:
     "ANTHROPIC_AUTH_TOKEN": "<your-api-key>",
     "ANTHROPIC_API_KEY": "",
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "claude-sonnet-4-6",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-opus-4-7",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-opus-4-8",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "claude-haiku-4-5-20251001",
     "CLAUDE_CODE_SUBAGENT_MODEL": "claude-sonnet-4-6"
   }
@@ -118,7 +118,7 @@ Xác nhận request được ghi nhận tại [AI Platform Console → Usage](ht
 | `ANTHROPIC_AUTH_TOKEN`           | API key xác thực                  | `<your-api-key>`                                  |
 | `ANTHROPIC_API_KEY`              | Phải để trống (tránh conflict)    | `""`                                              |
 | `ANTHROPIC_DEFAULT_SONNET_MODEL` | Model cho coding thông thường     | `claude-sonnet-4-6`                               |
-| `ANTHROPIC_DEFAULT_OPUS_MODEL`   | Model cho reasoning phức tạp      | `claude-opus-4-7`                                 |
+| `ANTHROPIC_DEFAULT_OPUS_MODEL`   | Model cho reasoning phức tạp      | `claude-opus-4-8`                                 |
 | `ANTHROPIC_DEFAULT_HAIKU_MODEL`  | Model cho completions nhanh       | `claude-haiku-4-5-20251001`                       |
 | `CLAUDE_CODE_SUBAGENT_MODEL`     | Model khi spawn sub-agent         | `claude-sonnet-4-6`                               |
 
