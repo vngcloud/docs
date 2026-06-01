@@ -106,5 +106,5 @@ Sau khi tạo, mọi request từ API Key hoặc Model được chỉ định đ
 
 | Tôi muốn tiếp theo... | Đến |
 |---|---|
-| Xem chi phí và lượng dùng | [Usage & Budget](../usage-budget/README.md) |
+| Xem chi phí và lượng dùng | [Usage & Budget](../usage-budget/) |
 | Quản lý API Key | [Access Control](../access-control/README.md) |

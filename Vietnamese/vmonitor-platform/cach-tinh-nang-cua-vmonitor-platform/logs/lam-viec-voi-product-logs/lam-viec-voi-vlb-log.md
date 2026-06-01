@@ -47,6 +47,79 @@ Nếu không còn nhu cầu để xem logs của vLB  thì bạn có thể **dis
 
 ***
 
+## Đẩy access log vLB sang vDB
+
+Ngoài việc xem log trên vMonitor Platform, bạn có thể đẩy **access log** của vLB sang cụm **vDB Kafka** hoặc **vDB OpenSearch** của riêng mình để chủ động lưu trữ, tra cứu và phân tích log theo nhu cầu.
+
+Hai đích đến hoạt động độc lập: bạn có thể chỉ đẩy sang Kafka, chỉ đẩy sang OpenSearch, hoặc bật đồng thời cả hai cho cùng một vLB.
+
+### Điều kiện cần
+
+**Nếu đẩy sang vDB Kafka**, trên vDB Kafka cần có sẵn:
+
+* Một Cluster Kafka đang hoạt động và cho phép truy cập công khai.
+* Một Topic trong Cluster để chứa access log.
+* Một Kafka user đã được phát hành thông tin xác thực và được cấp quyền ghi vào Topic nói trên.
+
+**Nếu đẩy sang vDB OpenSearch**, trên vDB OpenSearch cần có sẵn:
+
+* Một Cluster OpenSearch đang hoạt động và có địa chỉ truy cập công khai dành cho log.
+* Một tài khoản (Username/Password) có quyền ghi vào Cluster.
+
+### Bật đẩy access log sang vDB Kafka
+
+1. Mở vLB trong danh sách log mapping, chọn chức năng **Enable log to vDB Kafka**.
+2. Gạt công tắc **Enable logging** sang trạng thái bật.
+3. Chọn các thông tin:
+
+| Trường | Ghi chú |
+|---|---|
+| **Cluster** | Cluster Kafka sẽ nhận access log. |
+| **Topic** | Topic trong Cluster đã chọn. |
+| **User** | Kafka user dùng để ghi log. |
+| **Mode** | Cơ chế xác thực — chọn **mTLS** hoặc **SASL** (chọn loại mà cả Cluster và user của bạn đều hỗ trợ). |
+
+4. Nhấn **Save**.
+
+{% hint style="info" %}
+Hệ thống tự kết nối tới vDB để lấy thông tin xác thực của Kafka user đã chọn — bạn không cần nhập thêm credential.
+{% endhint %}
+
+### Bật đẩy access log sang vDB OpenSearch
+
+1. Mở vLB trong danh sách log mapping, chọn chức năng **Enable log to vDB OpenSearch**.
+2. Gạt công tắc **Enable logging** sang trạng thái bật.
+3. Chọn và nhập:
+
+| Trường | Yêu cầu |
+|---|---|
+| **Cluster** | Cluster OpenSearch sẽ nhận access log. |
+| **Username** | Tài khoản có quyền ghi vào Cluster. Độ dài 3–31 ký tự, gồm chữ, số và các ký tự `_`, `.`, `-`. |
+| **Password** | Tối thiểu 8 ký tự, gồm đủ chữ hoa, chữ thường, chữ số và một ký tự đặc biệt trong `@ $ ! % * ? &`. |
+
+4. Nhấn **Save**.
+
+{% hint style="warning" %}
+Hệ thống kiểm tra kết nối tới Cluster OpenSearch ngay khi bạn nhấn **Save**. Nếu Username hoặc Password không đúng, thao tác sẽ bị từ chối tại bước này.
+{% endhint %}
+
+### Đổi sang Cluster khác
+
+Mở lại hộp thoại tương ứng, chọn Cluster mới (và cập nhật các thông tin liên quan nếu cần), rồi nhấn **Save**. Hệ thống tự động chuyển việc đẩy access log sang Cluster mới.
+
+### Tắt đẩy access log
+
+Mở lại hộp thoại tương ứng, gạt **Enable logging** sang trạng thái tắt và nhấn **Save**. Hệ thống ngừng đẩy access log sang Cluster đó.
+
+### Xử lý lỗi khi lưu
+
+| Thông báo | Nguyên nhân & cách xử lý |
+|---|---|
+| Lỗi liên quan đến Cluster, Topic, User hoặc quyền truy cập | Thành phần tương ứng ở vDB chưa sẵn sàng. Kiểm tra lại trạng thái và quyền ở vDB rồi thử lại. |
+| Lỗi kết nối OpenSearch khi nhấn **Save** | Username hoặc Password sai. Nhập lại đúng thông tin xác thực và lưu lại. |
+
+***
+
 ### Một số chú ý: <a href="#lamviecvoivlb-log-motsochuy" id="lamviecvoivlb-log-motsochuy"></a>
 
 * vLB sau khi được tạo sẽ mất khoảng vào phút (tối đa 10 phút) để có thể đồng bộ về vMonitor Platform.
