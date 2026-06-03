@@ -2,7 +2,7 @@
 
 PostgreSQL Cluster cho phép triển khai database với kiến trúc **1 Writer + N Readers**, đảm bảo **High Availability** và khả năng **scale read** cho ứng dụng của bạn. Khi Writer gặp sự cố, hệ thống tự động failover sang một Reader mà không cần can thiệp thủ công.
 
-Để tìm hiểu thêm về khái niệm, kiến trúc và so sánh giữa Single Node và Cluster, vui lòng tham khảo tại [PostgreSQL Cluster](postgresql-cluster.md).
+Để tìm hiểu thêm về khái niệm, kiến trúc và so sánh giữa Single Node và Cluster, vui lòng tham khảo tại [PostgreSQL Cluster](README.md).
 
 ***
 
@@ -72,7 +72,7 @@ Khi chọn Deployment Type là **Cluster**, hệ thống hiển thị thêm sect
 
 #### Bước 4: Mạng và bảo mật (Network & Security)
 
-* **Cloud Network (VPC & Subnet)**: Chọn VPC và Subnet cho cluster. Nếu chưa có, bạn có thể tạo mới theo hướng dẫn [tại đây](../../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/README.md).
+* **Cloud Network (VPC & Subnet)**: Chọn VPC và Subnet cho cluster. Nếu chưa có, bạn có thể tạo mới theo hướng dẫn [tại đây](../../../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/README.md).
 * **Public Accessibility**: Bật nếu muốn cluster có IP Public và truy cập từ Internet; tắt nếu chỉ muốn truy cập qua IP Private.
 
 {% hint style="warning" %}
