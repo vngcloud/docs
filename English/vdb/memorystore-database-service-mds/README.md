@@ -19,6 +19,6 @@ Simple Redis deployment with 1 Master and up to 5 Replicas. Suitable for dev, st
 
 Redis deployment with High Availability, automatic failover, and vBackup integration. Suitable for production.
 
-* [Redis Cluster](redis-cluster/redis-cluster.md) — Architecture and concepts
+* [Redis Cluster](redis-cluster/README.md) — Architecture and concepts
 * [Create a Redis Cluster](redis-cluster/create-redis-cluster.md) — Step-by-step creation guide
 * [Manage a Redis Cluster](redis-cluster/manage-redis-cluster.md) — Topology, scaling, backup, delete cluster

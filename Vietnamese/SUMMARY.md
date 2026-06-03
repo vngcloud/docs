@@ -914,7 +914,6 @@
       * [Quản lý cấu hình MDS Instance (Configuration Group)](vdb/memorystore-database-service-mds/quan-ly-cau-hinh-mds-instance.md)
       * [Quản lý sao lưu MDS Instance (Backup)](vdb/memorystore-database-service-mds/sao-luu-mds-instance.md)
     * [Redis Cluster](vdb/memorystore-database-service-mds/redis-cluster/README.md)
-      * [Tổng quan Redis Cluster](vdb/memorystore-database-service-mds/redis-cluster/redis-cluster.md)
       * [Khởi tạo Redis Cluster](vdb/memorystore-database-service-mds/redis-cluster/khoi-tao-redis-cluster.md)
       * [Quản lý Redis Cluster](vdb/memorystore-database-service-mds/redis-cluster/quan-ly-redis-cluster.md)
   * [Kafka Cluster Database (KDS)](vdb/kafka-cluster-kds/README.md)

@@ -786,7 +786,6 @@
       * [Manage MDS Config Group](vdb/memorystore-database-service-mds/quan-ly-thong-tin-mds-instance.md)
       * [Backup MDS Instance](vdb/memorystore-database-service-mds/sao-luu-mds-instance.md)
     * [Redis Cluster](vdb/memorystore-database-service-mds/redis-cluster/README.md)
-      * [Redis Cluster Overview](vdb/memorystore-database-service-mds/redis-cluster/redis-cluster.md)
       * [Create a Redis Cluster](vdb/memorystore-database-service-mds/redis-cluster/create-redis-cluster.md)
       * [Manage a Redis Cluster](vdb/memorystore-database-service-mds/redis-cluster/manage-redis-cluster.md)
   * [Kafka Cluster Database (KDS)](vdb/kafka-cluster-kds/README.md)

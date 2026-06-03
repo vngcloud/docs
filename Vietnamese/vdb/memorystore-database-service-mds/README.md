@@ -23,7 +23,7 @@ Triển khai Redis đơn giản với 1 Master và tối đa 5 Replica. Phù h�
 
 Triển khai Redis với High Availability, tự động failover và tích hợp vBackup. Phù hợp cho production.
 
-* [Redis Cluster](redis-cluster/redis-cluster.md) — Kiến trúc và khái niệm
+* [Redis Cluster](redis-cluster/README.md) — Kiến trúc và khái niệm
 * [Khởi tạo Redis Cluster](redis-cluster/khoi-tao-redis-cluster.md) — Hướng dẫn tạo mới
 * [Quản lý Redis Cluster](redis-cluster/quan-ly-redis-cluster.md) — Topology, scaling, backup, xóa cluster
 
