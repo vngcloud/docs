@@ -744,6 +744,7 @@
     * [Auto Scaling](vks/node-groups/auto-scaling.md)
     * [Upgrading Node Group Version](vks/node-groups/upgrading-node-group-version.md)
     * [Label và Taint](vks/node-groups/lable-va-taint.md)
+    * [User Tags](vks/node-groups/user-tags.md)
     * [Khởi tạo và làm việc với NVIDIA GPU Node Group](vks/node-groups/lam-viec-voi-nvidia-gpu-nodegroups.md)
     * [Worker Node Reserved Resources](vks/node-groups/worker-node-reserved-resources.md)
   * [Network](vks/network/README.md)

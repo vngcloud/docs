@@ -43,8 +43,6 @@ Trong mô hình PostgreSQL Cluster, các node được phân vai trò rõ ràng:
 
 ## Kiến trúc PostgreSQL Cluster
 
-<figure><img src="../../../.gitbook/assets/vDB PostgreSQL Cluster Architecture Diagram.png" alt=""><figcaption></figcaption></figure>
-
 **Các thành phần chính:**
 
 * **Writer Node (Primary)**: Xử lý tất cả write operations. Mỗi cluster chỉ có duy nhất 1 Writer.

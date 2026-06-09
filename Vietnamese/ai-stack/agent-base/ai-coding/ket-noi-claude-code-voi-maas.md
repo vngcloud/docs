@@ -150,7 +150,7 @@ Xác nhận request được ghi nhận tại [AI Platform Console → Usage](ht
 
 Sau khi hoàn thành, Claude Code CLI sẽ route toàn bộ request qua GreenNode MaaS. Usage được ghi nhận trên AI Platform Console và tính phí theo credit-token nội bộ.
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption><p>Claude Code chạy thành công qua GreenNode MaaS endpoint</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Claude Code chạy thành công qua GreenNode MaaS endpoint</p></figcaption></figure>
 
 | Tôi muốn tiếp theo...                | Đi đến                                                                                |
 | ------------------------------------ | ------------------------------------------------------------------------------------- |
