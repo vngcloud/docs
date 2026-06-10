@@ -11,6 +11,8 @@ VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới với các c
 * Tài liệu VKS API Docs: [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html).
 * Tài liệu Terraform tạo node group bằng Infrastructure as Code: [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster_node_group).
 
+***
+
 ## May 21, 2026
 
 VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới với các cải tiến sau:
