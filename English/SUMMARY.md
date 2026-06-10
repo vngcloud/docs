@@ -619,6 +619,7 @@
     * [Kubeconfig](vks/clusters/kubeconfig.md)
     * [Auto Healing](vks/clusters/configure-auto-healing.md)
   * [Node Groups](vks/node-groups/README.md)
+    * [Resource Tag](vks/node-groups/resource-tag.md)
     * [Auto Scaling](vks/node-groups/auto-scaling.md)
     * [Upgrading Node Group Version](vks/node-groups/upgrading-node-group-version.md)
     * [Lable and Taint](vks/node-groups/lable-va-taint.md)
