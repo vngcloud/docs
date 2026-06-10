@@ -868,6 +868,8 @@
     * [AI Coding](ai-stack/agent-base/ai-coding/README.md)
       * [Kết nối Claude Code với GreenNode MaaS](ai-stack/agent-base/ai-coding/ket-noi-claude-code-voi-maas.md)
       * [Kết nối OpenAI-compatible với GreenNode MaaS](ai-stack/agent-base/ai-coding/ket-noi-openai-compatible-voi-maas.md)
+      * [Dùng Codex với Minimax qua GreenNode MaaS](ai-stack/agent-base/ai-coding/hướng-dẫn-xài-codex-với-minimax.md)
+      * [Dùng OpenCode với GreenNode MaaS](ai-stack/agent-base/ai-coding/opencode-with-maas-model.md)
     * [MCP Governance](ai-stack/agent-base/mcp-governance/README.md)
       * [MCP Gateway](ai-stack/agent-base/mcp-governance/mcp-gateway/README.md)
         * [Quản lý MCP Gateway](ai-stack/agent-base/mcp-governance/mcp-gateway/quan-ly-mcp-gateway.md)

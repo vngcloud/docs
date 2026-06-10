@@ -740,6 +740,8 @@
     * [AI Coding](ai-stack/agent-base/ai-coding/README.md)
       * [Connect Claude Code to GreenNode MaaS](ai-stack/agent-base/ai-coding/connect-claude-code-to-maas.md)
       * [Connect OpenAI-compatible Clients to GreenNode MaaS](ai-stack/agent-base/ai-coding/connect-openai-compatible-to-maas.md)
+      * [Use Codex with Minimax via GreenNode MaaS](ai-stack/agent-base/ai-coding/use-codex-with-minimax.md)
+      * [Use OpenCode with GreenNode MaaS](ai-stack/agent-base/ai-coding/opencode-with-maas-model.md)
     * [MCP Governance](ai-stack/agent-base/mcp-governance/README.md)
       * [MCP Gateway](ai-stack/agent-base/mcp-governance/mcp-gateway/README.md)
         * [Manage MCP Gateway](ai-stack/agent-base/mcp-governance/mcp-gateway/manage-mcp-gateway.md)
