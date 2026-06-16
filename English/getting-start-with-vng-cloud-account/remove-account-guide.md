@@ -4,7 +4,7 @@
 
 Để **HỦY** đăng kí account trên portal GreenNode, người dùng vào hệ thống quản lý ticket của [GreenNode](https://helpdesk.vngcloud.vn/) chọn chức năng hỗ trợ kỹ thuật như hình :
 
-<figure><img src="https://docs.vngcloud.vn/download/thumbnails/22938103/image2020-10-26_15-30-28.png?version=1&#x26;modificationDate=1603701028000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 Hệ thống sẽ chuyển vào trang tạo ticket, sau khi login vào hệ thống, màn hình tương tự như sau:
 
@@ -21,7 +21,7 @@ Khi yêu cầu của bạn được tiếp nhận, bạn sẽ nhận được th
 
 Tình hình xử lí yêu cầu của bạn cũng được cập nhật tương ứng qua mail cũng như xem trực tiếp trên tool. Khi yêu cầu của bạn có trang thái **=”Closed”** có nghĩa yêu cầu của bạn đã được xử lý xong & tài khoản của bạn đã được remove khỏi hệ thống .
 
-### **2.      Trường hợp user không log in vào được portal** <a href="#huongdanhuytaikhoan-2.truonghopuserkhongloginvaoduocportal" id="huongdanhuytaikhoan-2.truonghopuserkhongloginvaoduocportal"></a>
+### **2. Trường hợp user không log in vào được portal** <a href="#huongdanhuytaikhoan-2.truonghopuserkhongloginvaoduocportal" id="huongdanhuytaikhoan-2.truonghopuserkhongloginvaoduocportal"></a>
 
 User gửi yêu cầu vào hộp mail [support@vngcloud.vn](mailto:support@vngcloud.vn) với nội dung cần hủy tài khoản và gửi thông tin để đội ngũ kỹ thuật xác minh thông tin tài khoản.
 

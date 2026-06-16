@@ -155,4 +155,4 @@ To delete a directory, you can:
 
 3\. Select the **Action** icon and select **Delete**
 
-<figure><img src="../../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

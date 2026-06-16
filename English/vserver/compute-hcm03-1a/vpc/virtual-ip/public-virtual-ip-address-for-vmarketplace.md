@@ -52,7 +52,7 @@ Go to [vServer Portal - Create-virtual-ip-address](https://hcm-3.console.vngclou
 Select **Virtual IP Address type** = **Public Market Place**.\
 Fill in the required information.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2: Allow an address pair for the VIP with the Marketplace external IP**
 
@@ -60,13 +60,13 @@ After creating the Public Marketplace VIP, allow the address pair.\
 Click **Add Address Pair Interface**.\
 In the popup, choose the pfSense **External IP Marketplace**.
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Verify the address pair was added successfully.
 
 \*Note: Save the VIP value. You will use it inside pfSense later.
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3: Create the VIP in pfSense**
 
@@ -77,21 +77,21 @@ Fill in the required fields.
 
 \*For **Address(es)**, enter the VIP created in the GreenNode portal in Step 2.
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Verify the VIP in pfSense.
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 4: Create an outbound NAT rule to egress to the Internet via a specific IP**
 
 1. Switch to **Manual Outbound NAT** mode.
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Create a NAT rule.
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Configure the NAT rule.
 
@@ -100,7 +100,7 @@ Rule requirement:
 Server 1 (192.168.2.7) and Server 2 (192.168.2.5) are behind pfSense.\
 They must egress to the Internet using VIP **157.20.200.185**.
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. **Create a route table**
 
@@ -111,24 +111,24 @@ Add a route rule with:
 * **Destination**: `0.0.0.0/0` (Internet)
 * **Target**: `192.168.2.4` (pfSense internal interface IP)
 
-<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 5: Verify**
 
 Log in to both servers (192.168.2.7 and 192.168.2.5).\
 Run `curl ifconfig.me` to verify the public egress IP.
 
-<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 At this point, both servers reach the Internet using the VIP.\
 All outbound traffic goes through pfSense.\
 You can also access the pfSense webGUI via this VIP.
 
-<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2.High Availability (HA) Mode (2+ Firewall VM)**
 
@@ -177,7 +177,7 @@ Repeat the same setup as **Step 1 → Step 4** in standalone mode:
 
 Note: The Virtual IP Address must be paired with both pfSense external interfaces.
 
-<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2: Add an HA internal interface to both pfSense firewall VMs**
 
@@ -185,9 +185,9 @@ In the vServer portal, open each firewall VM details page.\
 Add one more **internal interface** to both firewalls.\
 Use this interface for HA sync.
 
-<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3: Configure the HA interface on both pfSense firewalls**
 
@@ -196,7 +196,7 @@ Configure it as shown below.
 
 Set **IPv4 Address** to the HA interface IP from the vServer portal.
 
-<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 Repeat the same configuration on the other pfSense firewall.
 
@@ -205,11 +205,11 @@ Repeat the same configuration on the other pfSense firewall.
 In the pfSense webGUI, go to **Firewall → Rules → SYNC** (or your HA interface name).\
 Click **Add**.
 
-<figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 Configure the rule as shown below.
 
-<figure><img src="../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 Repeat the same rule on the backup firewall.
 
@@ -225,9 +225,9 @@ Notes:
 * **Remote System Username** and **Remote System Password**: enter the backup pfSense admin credentials.
 * **Select options to sync**: select what you want to synchronize to the backup.
 
-<figure><img src="../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 6: Verify**
 
@@ -235,7 +235,7 @@ In the pfSense webGUI, go to **Status → CARP (failover)**.
 
 * On the **master** pfSense firewall
 
-<figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 * On the **backup** pfSense firewall
 
