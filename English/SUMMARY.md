@@ -624,6 +624,7 @@
     * [Lable and Taint](vks/node-groups/lable-va-taint.md)
     * [Resource Tag](vks/node-groups/resource-tag.md)
     * [Working with NVIDIA GPU Node Group](vks/node-groups/khoi-tao-va-lam-viec-voi-nvidia-gpu-node-group.md)
+    * [Use Multi-Instance GPU (MIG)](vks/node-groups/use-multi-instance-gpu-mig.md)
     * [Worker Node Reserved Resources](vks/node-groups/worker-node-reserved-resources.md)
   * [Network](vks/network/README.md)
     * [Working with Application Load Balancer (ALB)](vks/network/working-with-alb/README.md)

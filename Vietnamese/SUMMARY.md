@@ -746,6 +746,7 @@
     * [Label và Taint](vks/node-groups/lable-va-taint.md)
     * [Resource Tag](vks/node-groups/resource-tag.md)
     * [Khởi tạo và làm việc với NVIDIA GPU Node Group](vks/node-groups/lam-viec-voi-nvidia-gpu-nodegroups.md)
+    * [Sử dụng Multi-Instance GPU (MIG)](vks/node-groups/su-dung-multi-instance-gpu-mig.md)
     * [Worker Node Reserved Resources](vks/node-groups/worker-node-reserved-resources.md)
   * [Network](vks/network/README.md)
     * [Làm việc với Application Load Balancer (ALB)](vks/network/working-with-alb/README.md)
