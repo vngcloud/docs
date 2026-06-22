@@ -10,15 +10,15 @@
 
 <figure><img src="../../../../.gitbook/assets/image (332).png" alt=""><figcaption></figcaption></figure>
 
-Để kích hoạt theo dõi, bạn cần nhấn **enable** tại cột **Detailed Monitoring.**&#x20;
+Để kích hoạt theo dõi, bạn cần nhấn **enable** tại cột **Detailed Monitoring.**
 
-Hệ thống sẽ hiển thị Popup và bạn cần **chọn Log Project** để chứa logs của vLB này, sau đó nhấn "**enable**".  Nếu bạn chưa có bất kì Log Project nào, bạn có thể nhấn "Create a log project" ở popup hoặc qua tab Quota & Usage để tạo Log Project trước.
+Hệ thống sẽ hiển thị Popup và bạn cần **chọn Log Project** để chứa logs của vLB này, sau đó nhấn "**enable**". Nếu bạn chưa có bất kì Log Project nào, bạn có thể nhấn "Create a log project" ở popup hoặc qua tab Quota & Usage để tạo Log Project trước.
 
-Sau khi enable bạn sẽ thấy status của vLB  này chuyển thành **ACTIVE**, và bạn có thể truy cập vào Log Project vừa chọn để xem logs.
+Sau khi enable bạn sẽ thấy status của vLB này chuyển thành **ACTIVE**, và bạn có thể truy cập vào Log Project vừa chọn để xem logs.
 
 Nếu có nhu cầu thay đổi Log Project chứa Logs, bạn có thể chọn nút 3 chấm và chọn "**Edit Log Project**" để thay đổi.
 
-Nếu không còn nhu cầu để xem logs của vLB  thì bạn có thể **disable** ở cột **Detailed Monitoring**.
+Nếu không còn nhu cầu để xem logs của vLB thì bạn có thể **disable** ở cột **Detailed Monitoring**.
 
 ***
 
@@ -53,6 +53,8 @@ Ngoài việc xem log trên vMonitor Platform, bạn có thể đẩy **access l
 
 Hai đích đến hoạt động độc lập: bạn có thể chỉ đẩy sang Kafka, chỉ đẩy sang OpenSearch, hoặc bật đồng thời cả hai cho cùng một vLB.
 
+Lưu ý: tính năng đang trong giai đoạn Alpha, vui lòng liên hệ Hỗ trợ GreenNode để sử dụng.
+
 ### Điều kiện cần
 
 **Nếu đẩy sang vDB Kafka**, trên vDB Kafka cần có sẵn:
@@ -72,12 +74,12 @@ Hai đích đến hoạt động độc lập: bạn có thể chỉ đẩy sang
 2. Gạt công tắc **Enable logging** sang trạng thái bật.
 3. Chọn các thông tin:
 
-| Trường | Ghi chú |
-|---|---|
-| **Cluster** | Cluster Kafka sẽ nhận access log. |
-| **Topic** | Topic trong Cluster đã chọn. |
-| **User** | Kafka user dùng để ghi log. |
-| **Mode** | Cơ chế xác thực — chọn **mTLS** hoặc **SASL** (chọn loại mà cả Cluster và user của bạn đều hỗ trợ). |
+| Trường      | Ghi chú                                                                                             |
+| ----------- | --------------------------------------------------------------------------------------------------- |
+| **Cluster** | Cluster Kafka sẽ nhận access log.                                                                   |
+| **Topic**   | Topic trong Cluster đã chọn.                                                                        |
+| **User**    | Kafka user dùng để ghi log.                                                                         |
+| **Mode**    | Cơ chế xác thực — chọn **mTLS** hoặc **SASL** (chọn loại mà cả Cluster và user của bạn đều hỗ trợ). |
 
 4. Nhấn **Save**.
 
@@ -91,10 +93,10 @@ Hệ thống tự kết nối tới vDB để lấy thông tin xác thực của
 2. Gạt công tắc **Enable logging** sang trạng thái bật.
 3. Chọn và nhập:
 
-| Trường | Yêu cầu |
-|---|---|
-| **Cluster** | Cluster OpenSearch sẽ nhận access log. |
-| **Username** | Tài khoản có quyền ghi vào Cluster. Độ dài 3–31 ký tự, gồm chữ, số và các ký tự `_`, `.`, `-`. |
+| Trường       | Yêu cầu                                                                                            |
+| ------------ | -------------------------------------------------------------------------------------------------- |
+| **Cluster**  | Cluster OpenSearch sẽ nhận access log.                                                             |
+| **Username** | Tài khoản có quyền ghi vào Cluster. Độ dài 3–31 ký tự, gồm chữ, số và các ký tự `_`, `.`, `-`.     |
 | **Password** | Tối thiểu 8 ký tự, gồm đủ chữ hoa, chữ thường, chữ số và một ký tự đặc biệt trong `@ $ ! % * ? &`. |
 
 4. Nhấn **Save**.
@@ -113,10 +115,10 @@ Mở lại hộp thoại tương ứng, gạt **Enable logging** sang trạng th
 
 ### Xử lý lỗi khi lưu
 
-| Thông báo | Nguyên nhân & cách xử lý |
-|---|---|
+| Thông báo                                                  | Nguyên nhân & cách xử lý                                                                      |
+| ---------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | Lỗi liên quan đến Cluster, Topic, User hoặc quyền truy cập | Thành phần tương ứng ở vDB chưa sẵn sàng. Kiểm tra lại trạng thái và quyền ở vDB rồi thử lại. |
-| Lỗi kết nối OpenSearch khi nhấn **Save** | Username hoặc Password sai. Nhập lại đúng thông tin xác thực và lưu lại. |
+| Lỗi kết nối OpenSearch khi nhấn **Save**                   | Username hoặc Password sai. Nhập lại đúng thông tin xác thực và lưu lại.                      |
 
 ***
 

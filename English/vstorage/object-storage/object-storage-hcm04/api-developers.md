@@ -19,9 +19,9 @@ Follow the steps below to work with vStorage via Service Account
 
 For details, please refer to [https://docs.api.vngcloud.vn/service-docs/vstorage-hcm04-api.html](https://docs.api.vngcloud.vn/service-docs/vstorage-hcm04-api.html) .
 
-<figure><img src="../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (444).png" alt=""><figcaption></figcaption></figure>
 
