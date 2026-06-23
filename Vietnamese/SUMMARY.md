@@ -912,6 +912,8 @@
       * [Cấu hình tham số cho PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster/cau-hinh-tham-so-cho-cluster.md)
       * [Cài đặt Extension cho PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster/cac-extension-duoc-ho-tro-cho-cluster.md)
       * [Migrate từ PostgreSQL Single sang PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster/migrate-tu-postgresql-single-sang-cluster.md)
+      * [Cấu hình Logical Replication](vdb/relational-database-service-rds/postgresql/cau-hinh-logical-replication.md)
+      * [Thiết lập CDC với Debezium](vdb/relational-database-service-rds/postgresql/thiet-lap-cdc-voi-debezium.md)
     * [Tài liệu tham khảo](vdb/relational-database-service-rds/reference/README.md)
   * [MemoryStore Database Service (MDS)](vdb/memorystore-database-service-mds/README.md)
     * [Redis Standalone](vdb/memorystore-database-service-mds/redis-standalone/README.md)

@@ -784,6 +784,8 @@
       * [Parameters for PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster/postgresql-cluster-parameters.md)
       * [Extensions for PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster/vdb-postgresql-cluster-extensions.md)
       * [Migrate from PostgreSQL Single to PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster/migrate-from-postgresql-single-to-cluster.md)
+      * [Configure Logical Replication](vdb/relational-database-service-rds/postgresql/configure-logical-replication.md)
+      * [Set Up CDC with Debezium](vdb/relational-database-service-rds/postgresql/set-up-cdc-with-debezium.md)
     * [Reference](vdb/relational-database-service-rds/reference/README.md)
   * [MemoryStore Database Service (MDS)](vdb/memorystore-database-service-mds/README.md)
     * [Redis Standalone](vdb/memorystore-database-service-mds/redis-standalone/README.md)
