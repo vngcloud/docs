@@ -9,13 +9,28 @@ Trang này liệt kê các parameter có thể tùy chỉnh thông qua **DB Conf
 * Tất cả parameter trong danh sách đều có thể chỉnh sửa (modifiable).
 {% endhint %}
 
+{% hint style="warning" %}
+**Lưu ý về memory**: Nhiều parameter ảnh hưởng trực tiếp đến tổng lượng RAM mà PostgreSQL tiêu thụ. Đặt giá trị quá cao so với RAM của node có thể khiến PostgreSQL bị **OOMKilled**.
+
+**Các parameter ảnh hưởng đến memory:**
+
+* `max_connections` — khi có active query, memory tăng thêm do `work_mem` cấp phát per sort/hash operation và nhân với số connection đồng thời
+* `shared_buffers` — cấp phát shared memory ngay khi PostgreSQL start và **không trả lại cho OS** trong suốt vòng đời process; đặt quá lớn sẽ chèn ép OS page cache, làm giảm hiệu quả I/O
+* `work_mem` — nhân với số connection đồng thời **và** số sort/hash operation per query; tổng thực tế có thể rất lớn khi nhiều query phức tạp chạy song song
+* `temp_buffers` — buffer temp table per session, nhân với `max_connections`
+* `max_worker_processes` — mỗi background worker tiêu thụ thêm memory
+* `max_wal_senders` — mỗi WAL sender process cần thêm memory
+
+Hãy chọn giá trị phù hợp với RAM của flavour node đang dùng.
+{% endhint %}
+
 ***
 
 ### Connections
 
 | Parameter | Giá trị mặc định | Giá trị cho phép | Kiểu | Unit | Công dụng | Restart Required |
 | --- | --- | --- | --- | --- | --- | --- |
-| `max_connections` | 100 | 14 - 65536 | integer | | Số lượng tối đa các connection đồng thời truy cập đến database | **Có** |
+| `max_connections` | 100 | 25 - 2000 | integer | | Số lượng tối đa các connection đồng thời truy cập đến database | **Có** |
 
 ### Memory & Buffers
 
@@ -80,7 +95,16 @@ Trang này liệt kê các parameter có thể tùy chỉnh thông qua **DB Conf
 
 | Parameter | Giá trị mặc định | Giá trị cho phép | Kiểu | Unit | Công dụng | Restart Required |
 | --- | --- | --- | --- | --- | --- | --- |
-| `max_worker_processes` | 32 | 0 - 65536 | integer | | Số tiến trình background tối đa | **Có** |
+| `max_worker_processes` | 32 | 2 - 65536 | integer | | Số tiến trình background tối đa | **Có** |
+
+### Replication & WAL
+
+| Parameter | Giá trị mặc định | Giá trị cho phép | Kiểu | Unit | Công dụng | Restart Required |
+| --- | --- | --- | --- | --- | --- | --- |
+| `wal_level` | replica | `replica` / `logical` | string | | Mức độ thông tin ghi vào WAL. Đặt `logical` để dùng Logical Replication hoặc CDC | **Có** |
+| `max_wal_senders` | 10 | 10 - 65536 | integer | | Số lượng WAL sender process tối đa, dùng cho streaming replication và CDC | **Có** |
+| `max_wal_size` | 2048 | 32 - 2147483647 | integer | MB | Kích thước WAL tối đa trước khi trigger checkpoint | Không |
+| `checkpoint_timeout` | 300 | 30 - 86400 | integer | s | Khoảng thời gian tối đa giữa hai checkpoint tự động | Không |
 
 ### Transactions & Locking
 
