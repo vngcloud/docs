@@ -42,7 +42,7 @@ First, you need to initialize a Live Entrypoint following these instructions:
 1. Access vCDN Portal at [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
 2. Select **Live Entrypoint** , then select **Create new.**
 
-<figure><img src="../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Continue to enter/select:
 
@@ -68,9 +68,9 @@ First, you need to initialize a Live Entrypoint following these instructions:
 
 4. Select **Submit** .
 
-<figure><img src="../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Step 2: Create a Live Streaming** <a href="#buoc-2-tao-live-streaming" id="buoc-2-tao-live-streaming"></a>
 
@@ -79,7 +79,7 @@ Next, you need to initiate a Live Streaming following the instructions below:
 1. Access vCDN Portal at [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
 2. Select **Live Streaming** , then select **Create new.**
 
-<figure><img src="../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Continue to enter/select:
 
@@ -89,13 +89,13 @@ Next, you need to initiate a Live Streaming following the instructions below:
     * **CDN Packaging** : The system will handle the "packaging" of content directly on the CDN. Choose CDN Packaging if you want the system to optimize processing time and reduce load from the source.
     * **Origin Packaging** : Package the content at the source (Origin), then the CDN only delivers it.
 
-<figure><img src="../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **CDN Configuration**
   * **Live Entrypoint** : Select the Live Entrypoint created from **step 1** as the data source.
   * **Channel:** Identifier of the live channel on the system.
 
-<figure><img src="../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Security:**
   * **HTTPS (HTTP/2)** : Enable or disable HTTPS security for the CDN stream. You can create a new **Certificate** by selecting **Add new** .

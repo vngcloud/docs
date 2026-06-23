@@ -1,5 +1,18 @@
 # Release notes
 
+## Jun 10, 2026 <a href="#may_21_2026" id="may_21_2026"></a>
+
+VKS (VNG Kubernetes Engine) has just released a new update with the following improvements:
+
+**New features:**
+
+* **Resource Tag** lets you manage a set of key/value labels across all resources — including Servers and Volumes — that belong to a Node Group.
+  * Learn more at [Resource Tag](../node-groups/resource-tag.md).
+  * VKS API Docs: [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html).
+  * Terraform documentation for creating a node group as Infrastructure as Code: [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster_node_group).
+
+***
+
 ## May 21, 2026 <a href="#may_21_2026" id="may_21_2026"></a>
 
 VKS (VNG Kubernetes Engine) has just released its latest update with the following improvements:
@@ -87,8 +100,7 @@ VKS (VNG Kubernetes Engine) has just released its latest update, bringing severa
 
 * **Deprecation of Kubernetes version 1.28:** GreenNode will discontinue support for Kubernetes version 1.28. Starting from November 10, 2025, users will no longer be able to create new Kubernetes clusters using version 1.28 via the Portal, API, or Terraform. On November 24, 2025, all existing Kubernetes 1.28 clusters will be automatically upgraded to the next supported version.
 
-If you are still running this version, please manually upgrade your clusters to a newer supported version before November 24, 2025.
-This change ensures that your Kubernetes environment remains up to date with the latest security patches and feature enhancements, delivering improved performance and reliability.
+If you are still running this version, please manually upgrade your clusters to a newer supported version before November 24, 2025. This change ensures that your Kubernetes environment remains up to date with the latest security patches and feature enhancements, delivering improved performance and reliability.
 
 ***
 

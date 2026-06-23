@@ -13,6 +13,6 @@ GreenNode provides a wide selection of flavor profile optimized for different us
   * General Purpose: best price-performance ratio for a variety of workloads.
   * Compute Optimized: highest performance per core on instance and optimized for compute-intensive workloads.
   * Memory Optimized: offering more memory per core than other machine families and optimized for memory-intensive workloads.
-  * GPU Optimized: offering GPU Instance optimized for ML/AI workloads that require GPUs.
+  * GPU Optimized: offering GPU Instance optimized for ML/AI workloads that require GPUs. H100 GPU flavors support **Multi-Instance GPU (MIG)** — allowing a single physical GPU to be partitioned into multiple isolated instances. See [Use Multi-Instance GPU (MIG)](use-multi-instance-gpu-mig.md).
 * **CPU platform**: Instance families are further classified by CPU platform. For example, the S and S1 series within the General Purpose instance family is the CPU Intel Scalable Gen2 and Gen3 series. Accordingly, A and A1 is described for CPU AMD EPYC Zen2 and Zen3 series. The number after the letter describes the generation of CPU.
 * **Instance type**: describes the ratio of instance size which determines the CPU, memory, GPU... resource size used for your instance.

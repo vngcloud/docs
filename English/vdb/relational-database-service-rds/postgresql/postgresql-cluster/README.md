@@ -43,8 +43,6 @@ To create and manage a PostgreSQL Cluster, please refer to the guide [here](crea
 
 ## PostgreSQL Cluster Architecture
 
-<figure><img src="../../../.gitbook/assets/vDB PostgreSQL Cluster Architecture Diagram.png" alt=""><figcaption></figcaption></figure>
-
 **Key components:**
 
 * **Writer Node (Primary)**: Handles all write operations. Each cluster has exactly 1 Writer.
