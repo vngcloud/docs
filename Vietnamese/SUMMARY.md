@@ -33,6 +33,7 @@
       * [Compute Encryption Volume](vserver/compute-hcm03-1a/server/compute-encryption-volume/README.md)
         * [Sử dụng Compute Encryption Volume](vserver/compute-hcm03-1a/server/compute-encryption-volume/su-dung-compute-encryption-volume.md)
       * [Mã hóa với Customer Managed Key](vserver/compute-hcm03-1a/server/ma-hoa-voi-customer-managed-key.md)
+      * [Sử dụng Multi-Instance GPU (MIG)](vserver/compute-hcm03-1a/server/su-dung-multi-instance-gpu-mig.md)
     * [Placement Group](vserver/compute-hcm03-1a/server-group.md)
     * [Image](vserver/compute-hcm03-1a/image.md)
     * [Network](vserver/compute-hcm03-1a/network/README.md)
