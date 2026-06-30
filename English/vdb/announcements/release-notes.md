@@ -4,6 +4,19 @@ Summary of updates and new features across all engines in the vDB service.
 
 ---
 
+## June 2026 - vDB Redis Cluster (MDS)
+
+GreenNode introduces **Redis Cluster (Non-sharding)** for the vDB MemoryStore (MDS) service, bringing a High Availability architecture and comprehensive data protection for Redis workloads in production.
+
+* **1 Master – up to 9 Replicas:** continuous replication, serving read scaling and ready for failover.
+* **Automatic Failover:** automatically promotes a Replica to the new Master when the Master fails.
+* **Zero-downtime replica scaling:** add/remove one node at a time, ensuring sync completes before each step.
+* **vBackup integration:** easily configure Auto/Manual backups and restore from the Backup Center.
+* **Supports Redis version 7.x.**
+* Learn more at [Redis Cluster](../memorystore-database-service-mds/redis-cluster/README.md).
+
+---
+
 ## April 03, 2026 - vDB PostgreSQL Cluster (RDS) <a href="#april_03_2026_postgresql_cluster" id="april_03_2026_postgresql_cluster"></a>
 
 GreenNode has released the PostgreSQL Cluster feature for the vDB Relational service, enabling PostgreSQL deployment with a High Availability architecture, automatic Failover, and flexible scaling for production workloads.
