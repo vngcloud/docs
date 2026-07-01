@@ -1,5 +1,18 @@
 # Release notes
 
+## Jun 29, 2026 <a href="#jun_29_2026" id="jun_29_2026"></a>
+
+VKS (VNG Kubernetes Engine) has just released a new update with the following improvements:
+
+**New Features:**
+
+* **Kubernetes 1.31 and 1.32 Support:** VKS officially supports Kubernetes versions **1.31** and **1.32**, allowing you to create new clusters or upgrade existing clusters to the latest versions.
+  * Brings improvements in stability, security, performance, and compatibility with the Kubernetes ecosystem.
+  * Helps you keep your environments aligned with community-supported Kubernetes versions.
+  * See [Upgrade Kubernetes Version](../upgrade-kubernetes-version/) for upgrade instructions.
+
+***
+
 ## Jun 10, 2026 <a href="#may_21_2026" id="may_21_2026"></a>
 
 VKS (VNG Kubernetes Engine) has just released a new update with the following improvements:

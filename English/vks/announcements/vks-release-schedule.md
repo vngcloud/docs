@@ -27,11 +27,11 @@ The table below shows the release schedule and support timeline for Kubernetes v
 |---------|-----------------|------------------|-------------------------|-------------------------|
 | **1.27** | 17/04/2024 | 26/08/2024 | 12/05/2025 | - |
 | **1.28** | 17/04/2024 | 26/08/2024 | 24/11/2025 | - |
-| **1.29*** | 17/04/2024 | 20/02/2025 | 05/2026 | 11/2026 |
+| **1.29** | 17/04/2024 | 20/02/2025 | 05/2026 | 11/2026 |
 | **1.30*** | 02/01/2025 | 22/05/2025 | 05/2027 | 11/2027 |
-| **1.31** | 03/2026 | 05/2026 | 05/2028 | 11/2028 |
-| **1.32** | 03/2026 | 06/2026 | 05/2029 | 11/2029 |
-| **1.33** | 05/2026 | 11/2026 | 05/2030 | 11/2030 |
+| **1.31*** | 03/2026 | 05/2026 | 05/2028 | 11/2028 |
+| **1.32*** | 03/2026 | 06/2026 | 05/2029 | 11/2029 |
+| **1.33** | 09/2026 | 11/2026 | 05/2030 | 11/2030 |
 
 {% hint style="warning" %}
 **Note:** After the **End of Standard Support** date, VKS will force upgrade each cluster still running on the old version to the next supported version. Customers who need extended support please [contact us](https://vngcloud.vn/contact) for consultation and assistance.
