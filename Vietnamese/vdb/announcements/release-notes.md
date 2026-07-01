@@ -4,6 +4,19 @@ Tổng hợp các bản cập nhật và tính năng mới của tất cả các
 
 ***
 
+## June 2026 - vDB Redis Cluster (MDS)
+
+GreenNode ra mắt **Redis Cluster (Non-sharding)** cho dịch vụ vDB MemoryStore (MDS), mang kiến trúc High Availability và bảo vệ dữ liệu toàn diện cho workload Redis ở môi trường production.
+
+* **Kiến trúc 1 Master – tối đa 9 Replica:** đồng bộ liên tục, phục vụ read scaling và sẵn sàng failover.
+* **Automatic Failover:** tự động promote Replica thành Master mới khi Master lỗi.
+* **Scale Replica không downtime:** tăng/giảm từng node một, đảm bảo sync hoàn tất trước mỗi bước.
+* **Tích hợp vBackup:** dễ dàng cấu hình Auto/Manual backup, restore từ Backup Center.
+* **Hỗ trợ Redis version 7.x.**
+* Tìm hiểu thêm tại [Redis Cluster](../memorystore-database-service-mds/redis-cluster/README.md).
+
+***
+
 ## March 2026 - vDB PostgreSQL Cluster (RDS) <a href="#april_03_2026_postgresql_cluster" id="april_03_2026_postgresql_cluster"></a>
 
 GreenNode ra mắt dịch vụ mới PostgreSQL Cluster cho dịch vụ vDB Relational, cho phép triển khai PostgreSQL với kiến trúc Multi-Node High Availability, tự động Failover và khả năng scale linh hoạt cho môi trường production.

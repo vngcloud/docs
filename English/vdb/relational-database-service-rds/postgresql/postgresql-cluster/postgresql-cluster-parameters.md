@@ -9,13 +9,28 @@ This page lists the parameters that can be customized through a **DB Configurati
 * All parameters in the list are modifiable.
 {% endhint %}
 
+{% hint style="warning" %}
+**Memory note**: Many parameters directly affect total RAM consumed by PostgreSQL. Setting values too high relative to the node's RAM can cause PostgreSQL to be **OOMKilled**.
+
+**Parameters that affect memory:**
+
+* `max_connections` — when active queries are running, memory increases due to `work_mem` allocated per sort/hash operation, multiplied by the number of concurrent connections
+* `shared_buffers` — allocates shared memory at PostgreSQL start and **does not return it to the OS** for the lifetime of the process; setting it too large squeezes the OS page cache and reduces I/O efficiency
+* `work_mem` — multiplied by the number of concurrent connections **and** the number of sort/hash operations per query; total actual usage can be very large when many complex queries run in parallel
+* `temp_buffers` — temp table buffer per session, multiplied by `max_connections`
+* `max_worker_processes` — each background worker consumes additional memory
+* `max_wal_senders` — each WAL sender process requires additional memory
+
+Choose values appropriate for the RAM of the node flavour in use.
+{% endhint %}
+
 ***
 
 ### Connections
 
 | Parameter | Default Value | Allowed Values | Type | Unit | Description | Restart Required |
 | --- | --- | --- | --- | --- | --- | --- |
-| `max_connections` | 100 | 14 - 65536 | integer | | Maximum number of concurrent connections to the database | **Yes** |
+| `max_connections` | 100 | 25 - 2000 | integer | | Maximum number of concurrent connections to the database | **Yes** |
 
 ### Memory & Buffers
 
@@ -80,7 +95,16 @@ This page lists the parameters that can be customized through a **DB Configurati
 
 | Parameter | Default Value | Allowed Values | Type | Unit | Description | Restart Required |
 | --- | --- | --- | --- | --- | --- | --- |
-| `max_worker_processes` | 32 | 0 - 65536 | integer | | Maximum number of background worker processes | **Yes** |
+| `max_worker_processes` | 32 | 2 - 65536 | integer | | Maximum number of background worker processes | **Yes** |
+
+### Replication & WAL
+
+| Parameter | Default Value | Allowed Values | Type | Unit | Description | Restart Required |
+| --- | --- | --- | --- | --- | --- | --- |
+| `wal_level` | replica | `replica` / `logical` | string | | Level of information written to WAL. Set to `logical` to use Logical Replication or CDC | **Yes** |
+| `max_wal_senders` | 10 | 10 - 65536 | integer | | Maximum number of WAL sender processes, used for streaming replication and CDC | **Yes** |
+| `max_wal_size` | 2048 | 32 - 2147483647 | integer | MB | Maximum WAL size before triggering a checkpoint | No |
+| `checkpoint_timeout` | 300 | 30 - 86400 | integer | s | Maximum time between two automatic checkpoints | No |
 
 ### Transactions & Locking
 
