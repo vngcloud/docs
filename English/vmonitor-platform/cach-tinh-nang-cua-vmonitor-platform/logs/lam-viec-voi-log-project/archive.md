@@ -4,7 +4,7 @@ By default, when purchasing a Log Project package, depending on the package you 
 
 If you need to store log data longer than these times, you can use the Log Archive feature to synchronize data to vStorage for long-term storage. You can follow the instructions below:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. **Select the Log** folder .
 3. Select **Log project.**
 4. Select the **log project** name you want to **archive** .

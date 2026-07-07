@@ -18,7 +18,7 @@ vDB Kafka Cluster cung cấp các tính năng quản lý Kafka user toàn diện
 
 **1. Chọn Cụm Kafka**
 
-* Đăng nhập vào giao diện vDB Kafka Cluster tại đây: [https://vdb.console.vngcloud.vn/kafka/cluster](https://vdb.console.vngcloud.vn/kafka/cluster)
+* Đăng nhập vào giao diện vDB Kafka Cluster tại đây: [https://vdb.console.greennode.ai/kafka/cluster](https://vdb.console.greennode.ai/kafka/cluster)
 * Từ danh sách các cụm Kafka, chọn cụm mà bạn muốn quản lý user.
 
 **2. Truy cập Phần "Users"**

@@ -49,7 +49,7 @@ Tài liệu này nhằm hướng dẫn khách hàng:
 
 **Bước 1: Tiến hành khởi tạo Virtual IP Address trên portal GreenNode**
 
-Truy cập vào [vServer Portal - Create-virtual-ip-address](https://hcm-3.console.vngcloud.vn/vserver/network/virtual-ip-address), chọn Virtual IP Address type là Public Market Place sau đó điền các thông tin theo yêu cầu
+Truy cập vào [vServer Portal - Create-virtual-ip-address](https://hcm-3.console.greennode.ai/vserver/network/virtual-ip-address), chọn Virtual IP Address type là Public Market Place sau đó điền các thông tin theo yêu cầu
 
 <figure><img src=".gitbook/assets/image (466).png" alt=""><figcaption></figcaption></figure>
 

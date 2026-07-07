@@ -8,7 +8,7 @@ Bạn đã tải object lên một container. Lúc này bạn nhận ra object m
 
 {% tabs %}
 {% tab title="Sử dụng vStorage Portal" %}
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn **project, container** sau đó chọn các **object** bạn muốn thực hiện di chuyển.
 3. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648528/image2023-3-6_10-53-48.png?version=1\&modificationDate=1678074829000\&api=v2)hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648528/image2023-2-6_10-20-54.png?version=1\&modificationDate=1678074833000\&api=v2)tại **object** bạn muốn thực hiện di chuyển và chọn![](https://docs.vngcloud.vn/download/thumbnails/49648528/image2023-3-6_10-54-15.png?version=1\&modificationDate=1678074856000\&api=v2)**.**
 4. &#x20;Chọn **container** và **directory** nếu có mà bạn muốn di chuyển object tới. Chúng tôi cũng hỗ trợ bạn tạo directory mới nếu directory bạn muốn di chuyển tới chưa tồn tại.&#x20;

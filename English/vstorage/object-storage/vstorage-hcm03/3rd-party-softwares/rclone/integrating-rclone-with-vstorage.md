@@ -2,7 +2,7 @@
 
 To view the instructions for integrating Rclone with vStorage, you can follow the steps below on the vStorage Portal:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 2. Select the **Integration** menu.
 3. Choose the **Rclone** icon.
 4. In the **Permission** section, fill in the necessary information to configure your Rclone for integration with vStorage, including:

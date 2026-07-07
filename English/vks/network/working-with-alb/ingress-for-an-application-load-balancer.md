@@ -5,7 +5,7 @@ In order for the Ingress resource (Ingress Yaml file) to work, the cluster must 
 ## Prepare <a href="#ingressforanapplicationloadbalancer-chuanbi" id="ingressforanapplicationloadbalancer-chuanbi"></a>
 
 * Create a Kubernetes cluster on GreenNode, or use an existing cluster. Note: make sure you have downloaded the cluster configuration file once the cluster has been successfully initialized and accessed your cluster.
-* Create or use a **service account** created on IAM and attach policy: **vLBFullAccess** , **vServerFullAccess** . To create a service account, go here [and](https://iam.console.vngcloud.vn/service-accounts) follow these steps:
+* Create or use a **service account** created on IAM and attach policy: **vLBFullAccess** , **vServerFullAccess** . To create a service account, go here [and](https://iam.console.greennode.ai/service-accounts) follow these steps:
   * Select " **Create a Service Account** ", enter a name for the Service Account and click **Next Step** to assign permissions to the Service Account
   * Find and select **Policy: vLBFullAccess and Policy: vServerFullAccess** , then click " **Create a Service Account** " to create Service Account, Policy: vLBFullAccess and Policy: vServerFullAccess created by GreenNode, you cannot delete these policies.
   * After successful creation, you need to save **the Client\_ID** and **Secret\_Key** of the Service Account to perform the next step.
@@ -29,7 +29,7 @@ When you initialize the Cluster according to the instructions above, if you have
 
 **Initialize Service Account**
 
-* Create or use a **service account** created on IAM and attach policy: **vLBFullAccess** , **vServerFullAccess** . To create a service account, go here [and](https://iam.console.vngcloud.vn/service-accounts) follow these steps:
+* Create or use a **service account** created on IAM and attach policy: **vLBFullAccess** , **vServerFullAccess** . To create a service account, go here [and](https://iam.console.greennode.ai/service-accounts) follow these steps:
   * Select " **Create a Service Account** ", enter a name for the Service Account and click **Next Step** to assign permissions to the Service Account
   * Find and select **Policy: vLBFullAccess and Policy: vServerFullAccess** , then click " **Create a Service Account** " to create Service Account, Policy: vLBFullAccess and Policy: vServerFullAccess created by GreenNode, you cannot delete these policies.
   * After successful creation, you need to save **the Client\_ID** and **Secret\_Key** of the Service Account to perform the next step.
@@ -177,7 +177,7 @@ spec:
 kubectl apply -f nginx-ingress.yaml
 ```
 
-Once you have deployed Ingress, we will automatically create an ALB on your cluster. This ALB will be displayed on vLB Portal, details can be accessed here [.](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb) This ALB will have default information:
+Once you have deployed Ingress, we will automatically create an ALB on your cluster. This ALB will be displayed on vLB Portal, details can be accessed here [.](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb) This ALB will have default information:
 
 | **Ingredient** | **Quantity** | **Properties**                                                                                                  |
 | -------------- | ------------ | --------------------------------------------------------------------------------------------------------------- |

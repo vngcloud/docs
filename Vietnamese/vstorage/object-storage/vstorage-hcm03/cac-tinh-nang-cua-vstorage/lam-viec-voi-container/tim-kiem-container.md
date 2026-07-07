@@ -6,7 +6,7 @@ Sau khi tạo container và tải lên tệp tin vào container đó, bạn có 
 
 <summary>Sử dụng vStorage Portal</summary>
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **project** mà bạn muốn thực hiện tìm kiếm container.
 

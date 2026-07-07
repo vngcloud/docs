@@ -2,7 +2,7 @@
 
 Để có thể xem được log của Kafka Project bạn truy cập vào vMonitor, sau đó vào **Infrastructure list/vDB Log,** tại màn hình này sẽ giúp bạn có thể theo dõi được các Kafka project log trên GreenNode
 
-Bước 1: Truy cập vào vMonitor portal:  [https://vmonitor.console.vngcloud.vn/infrastructure/vdb-log](https://vmonitor.console.vngcloud.vn/infrastructure/vdb-log)
+Bước 1: Truy cập vào vMonitor portal:  [https://vmonitor.console.greennode.ai/infrastructure/vdb-log](https://vmonitor.console.greennode.ai/infrastructure/vdb-log)
 
 Bước 2: Tìm các Kafka project cần xem log
 

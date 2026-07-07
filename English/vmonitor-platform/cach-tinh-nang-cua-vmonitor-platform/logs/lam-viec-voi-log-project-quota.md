@@ -10,7 +10,7 @@ A Log project is a term on vMonitor Platform that represents a Logs monitoring p
 
 To initialize a log project, follow the steps below:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. Select **Quota & Usage** .
 3. Select **Buy a log project.**
 4. Enter **Log project name.** According to our regulations, the project log name must be from 1 (minimum) to 63 (maximum) characters long. **The log project name** can include lowercase letters (az), numbers (0-9), hyphens (-). **The log project name** must begin with a lowercase letter and end with a lowercase letter or a number.
@@ -29,7 +29,7 @@ We publicize the cost calculation for each log project package on GreenNode's ho
 
 After you initialize the Log project, you can view the Log project package information that you just created by:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. **Select the Quota\&Usage** folder .
 3. Select **Log** .
 4. The system displays the **Log project** package information that has been created and the actual **usage** you are using of that **Log project** package . You can renew within 7 days before the expiration date of the Log project package or increase the package limit to a higher level by selecting **Renew** or **Increase limit.**
@@ -40,7 +40,7 @@ After you initialize the Log project, you can view the Log project package infor
 
 To **renew** a **Log project** , you can:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. **Select the Quota\&Usage** folder .
 3. Select **Log** .
 4. At the Log project package being used, select the icon ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FZdlWblK2S3hEJjD7Fjm1%252Fimage.png%3Falt%3Dmedia%26token%3D8de99894-a975-420f-afb2-6772d1a8eaa6\&width=22\&dpr=4\&quality=100\&sign=6b9b065a\&sv=1)then select **Renew** .
@@ -56,7 +56,7 @@ How to calculate the renewal cost for each Log project package is publicized on 
 
 To **increase the limit of** a **Log project** , you can:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. **Select the Quota\&Usage** folder .
 3. Select Log.
 4. At the Log project package being used, select the icon ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FvyfBd81KPAolelFLhsPk%252Fimage.png%3Falt%3Dmedia%26token%3D90a7d2a2-9e5b-461d-8c4b-1baf99874c78\&width=22\&dpr=4\&quality=100\&sign=5c83c52e\&sv=1)then select **Resize** .
@@ -74,7 +74,7 @@ If you do not need to use the created Log project package, we encourage you to d
 
 To **delete** a **Log project** , you can:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. **Select the Quota\&Usage** folder .
 3. Select **Log** .
 4. In the Log project package being used, select **Delete** .

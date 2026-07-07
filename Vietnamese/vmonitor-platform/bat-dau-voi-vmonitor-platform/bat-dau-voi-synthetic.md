@@ -6,7 +6,7 @@ Bắt đầu sử dụng dịch vụ, bạn cần tạo một Synthetic Test quo
 
 Thực hiện tạo project theo các bước bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn **Quota & Usage**.
 3. Chọn **Mua Synthetic test quota.**
 4. Chọn **Class** mà bạn có nhu cầu sử dụn&#x67;**.** Hiện tại chúng tôi chỉ cung cấp class Basic để bạn trải nghiệm
@@ -24,7 +24,7 @@ API HTTP tests cho phép bạn gửi HTTP(s) requests tới dịch vụ hay ứn
 
 **Để thực hiện tạo API Test với phương thức HTTP(s), hãy làm theo hướng dẫn bên dưới:**
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
+1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.greennode.ai/vmonitor)&#x20;
 2. Chọn thư mục **Synthetic test.**
 3. Chọn **API test.**
 4. Chọn **Create an API test.**

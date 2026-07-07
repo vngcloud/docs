@@ -4,7 +4,7 @@ Trong dịch vụ **vDB OpenSearch** của **GreenNode**, bạn có thể dễ d
 
 Để tăng/ giảm IOPS cho các node trong một OpenSearch Cluster, bạn có thể:
 
-**Bước 1:** Truy cập vào [https://vdb.console.vngcloud.vn/](https://vdb.console.vngcloud.vn/)
+**Bước 1:** Truy cập vào [https://vdb.console.greennode.ai/](https://vdb.console.greennode.ai/)
 
 **Bước 2:** Chọn mục **Cluster** trên mục **OpenSearch**
 

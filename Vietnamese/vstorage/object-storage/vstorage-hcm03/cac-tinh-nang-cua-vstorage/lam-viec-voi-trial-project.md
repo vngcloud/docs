@@ -6,7 +6,7 @@ Sau khi chúng tôi xác nhận tài khoản của bạn đã được bật tri
 
 {% tabs %}
 {% tab title="Khởi tạo trial project" %}
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **region** bạn muốn lưu trữ dữ liệu.
 
@@ -38,7 +38,7 @@ Sau 7 ngày sử dụng trial project, nếu bạn không thực hiện chuyển
 {% tab title="Chuyển trial project thành project thông thường" %}
 Để chuyển trial project thành project thông thường, bạn hãy liên hệ với nhân viên Sale hoặc nhân viên hỗ trợ trực tiếp cho bạn hoặc mở một ticket support trên hệ thống của chúng tôi. Sau khi nhân viên hỗ trợ đã tắt trial trên tài khoản SSO User Account của bạn, hãy tiếp tục thực hiện theo các bước:
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49649749/image2023-3-6_10-2-51.png?version=1\&modificationDate=1678786413000\&api=v2)tại **trial project** bạn muốn thực hiện chuyển thành project thông thường. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49649749/image2023-3-14_16-38-33.png?version=1\&modificationDate=1678786713000\&api=v2).
 

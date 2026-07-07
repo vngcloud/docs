@@ -24,7 +24,7 @@ In there:
 
 To create a lifecycle for a container, you can do so via vStorage Portal according to the instructions below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai).
 2. Select the **project** and choose the **container** for which you want to set up the lifecycle.
 3. Click ![](http://docs.vngcloud.vn/download/thumbnails/67994132/image2023-3-6_10-35-20.png?version=1\&modificationDate=1700794658000\&api=v2)on the container icon or select ![](http://docs.vngcloud.vn/download/thumbnails/67994132/image2023-2-6_10-20-54.png?version=1\&modificationDate=1700794658000\&api=v2) it to use the container lifecycle feature and click ![](http://docs.vngcloud.vn/download/thumbnails/67994132/image2023-11-27_8-54-59.png?version=1\&modificationDate=1701050101000\&api=v2)
 4. The **Lifecycle screen** appears. Choose **Create a lifecycle rule**.

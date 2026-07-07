@@ -89,7 +89,7 @@ Trước khi sử dụng short-term hoặc long-term memory, bạn cần tạo m
 
 #### Tạo Memory Store
 
-1. Mở https://aiplatform.console.vngcloud.vn/memory
+1. Mở https://aiplatform.console.greennode.ai/memory
 2. Nhấn **"Create Memory"**
 3. Điền thông tin:
    * **Name**: ví dụ `customer-support-memory` (0–50 ký tự, `^[a-zA-Z0-9._-]*$`)
@@ -106,7 +106,7 @@ Trước khi sử dụng short-term hoặc long-term memory, bạn cần tạo m
 
 #### Danh sách Memory Store
 
-1. Mở https://aiplatform.console.vngcloud.vn/memory
+1. Mở https://aiplatform.console.greennode.ai/memory
 2. Tất cả memory store được hiển thị với: Name, Status, Description, Event Expiry, Last updated
 
 ![1774584561868](../../../.gitbook/assets/1774584561868.png)

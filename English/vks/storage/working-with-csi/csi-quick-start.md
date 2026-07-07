@@ -16,7 +16,7 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
 To initialize a Cluster, follow the steps below:
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2: At the Overview** screen , select **Activate.**
 
@@ -34,7 +34,7 @@ To initialize a Cluster, follow the steps below:
 
 After the Cluster is successfully initialized, you can connect and check the newly created Cluster information by following these steps:
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2:** The Cluster list is displayed, select **Download Config File** to download the kubeconfig file. This file will give you full access to your Cluster.
 
@@ -74,7 +74,7 @@ ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.
 
 **Initialize Service Account**
 
-* Create or use a **service account** created on IAM and attach policy: **vServerFullAccess** . To create a service account, go here [and](https://iam.console.vngcloud.vn/service-accounts) follow these steps:
+* Create or use a **service account** created on IAM and attach policy: **vServerFullAccess** . To create a service account, go here [and](https://iam.console.greennode.ai/service-accounts) follow these steps:
   * Select " **Create a Service Account** ", enter a name for the Service Account and click **Next Step** to assign permissions to the Service Account
   * Find and select **Policy: vServerFullAccess** , then click " **Create a Service Account** " to create a Service Account, Policy: vLBFullAccess and Policy: vServerFullAccess are created by GreenNode, you cannot delete these policies.
   * After successful creation, you need to save **the Client\_ID** and **Secret\_Key** of the Service Account to perform the next step.
@@ -263,7 +263,7 @@ Snapshot is a low-cost, convenient and effective data backup method and can be u
 
 To be able to create Snapshots, you need to perform Activate Snapshot Service. You will not be charged for activating the snapshot service. After you create snapshots, costs will be calculated based on the storage capacity and storage time of these snapshots. Follow these steps to enable the Snapshot service:
 
-**Step 1:** Visit [https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot/overview](https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot/overview)
+**Step 1:** Visit [https://hcm-3.console.greennode.ai/vserver/block-store/snapshot/overview](https://hcm-3.console.greennode.ai/vserver/block-store/snapshot/overview)
 
 **Step 2:** Select **Activate Snapshot Service** .
 

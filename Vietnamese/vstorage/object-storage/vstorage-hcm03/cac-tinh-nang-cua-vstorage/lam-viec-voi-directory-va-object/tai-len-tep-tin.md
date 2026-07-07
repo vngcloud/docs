@@ -6,7 +6,7 @@ Object là đối tượng lưu trữ dữ liệu gốc và thông tin metadata 
 
 <summary>Sử dụng vStorage Portal</summary>
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **project** và chọn **container** bạn muốn thực hiện tải lên tệp tin. Nếu bạn muốn tải lên tệp tin vào một directory, hãy chọn vào directory đó.
 

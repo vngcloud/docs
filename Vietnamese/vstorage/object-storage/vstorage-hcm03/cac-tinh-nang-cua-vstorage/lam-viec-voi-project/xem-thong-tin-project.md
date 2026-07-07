@@ -6,7 +6,7 @@ Sau khi tạo project và thực hiện hành động trên project đó. Bạn 
 
 &#x20;Sử dụng vStorage Portal
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn/storage](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai/storage](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648432/image2023-2-1\_14-25-3.png?version=1\&modificationDate=1675236304000\&api=v2) tại **project** bạn muốn xem chi tiết.
 

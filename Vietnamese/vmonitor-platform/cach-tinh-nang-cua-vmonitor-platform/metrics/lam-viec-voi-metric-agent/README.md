@@ -18,7 +18,7 @@
 
 Những server cài đặt Metric Agent được gọi là **Host**, sau khi cài đặt thành công trên các Server, bạn có thể thấy danh sách các Host đang đẩy Metric về tại trang Infrastructure List/Host bằng cách:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Infrastructure list.**
 3. Chọn **Host.**
 4. Hệ thống hiển thị thông tin các host mà bạn đã thiết lập đẩy metrics thành công. Thông tin hiển thị bao gồm:
@@ -48,7 +48,7 @@ Khi nhấn vào khung của 1 Host, sẽ có trang xem chi tiết về Host đó
 
 Sau khi bạn thiết lập thành công Metric Agent trên Server, bạn có một số lượng host nhất định đã được đẩy metric về hệ thống vMonitor Platform. Lúc này bạn muốn tắt tạm thời việc đẩy metric từ một host về hệ thống của chúng tôi mà không muốn xoá Metric Agent trên host đó, tính năng Vô hiệu hóa host sẽ giúp bạn làm điều này. Để thực hiện vô hiệu hóa host đã thiết lập thành công Metric Agent, hãy làm theo hướng dẫn bên dưới:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Infrastructure list.**
 3. Chọn **Host.**
 4. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (112).png" alt="" data-size="line"> tại **host** bạn muốn thực hiện vô hiệu quá.
@@ -63,7 +63,7 @@ Khi bạn thực hiện vô hiệu quá một host, cấu hình Metric Agent c�
 
 Bạn đã vô hiệu quá một host trong việc đẩy metric về hệ thống của chúng tôi và các thông số metric của host đã bị tạm dừng đẩy về kể từ thời điểm vô hiệu hóa. Hiện tại, bạn có nhu cầu giám sát trở lại các thông số metric này, để thực hiện khôi phục lại host đang bị vô hiệu quá, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Infrastructure list.**
 3. Chọn **Host.**
 4. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (111).png" alt="" data-size="line">tại **host** bạn muốn thực hiện khôi phục.
@@ -76,7 +76,7 @@ Bạn đã vô hiệu quá một host trong việc đẩy metric về hệ thố
 
 Để **xóa** một **host**, bạn có thể:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Infrastructure list.**
 3. Chọn **Host.**
 4. Tại host bạn muốn thực hiện xóa, chọn **Delete.**

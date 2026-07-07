@@ -11,7 +11,7 @@ Việc cấu hình thông báo email sẽ giúp bạn chủ động hơn trong v
 ## Hướng dẫn cài đặt thông báo
 
 * **Bước 1: Đăng nhập GreenNode Console và chọn Thống kê sử dụng:**
-  * Truy cập đường dẫn sau để truy cập: [https://dashboard.console.vngcloud.vn/user-notification](https://dashboard.console.vngcloud.vn/user-notification)
+  * Truy cập đường dẫn sau để truy cập: [https://dashboard.console.greennode.ai/user-notification](https://dashboard.console.greennode.ai/user-notification)
 * **Bước 2: Truy cập Cài đặt thông báo:**
   *   Tại giao diện chính, tìm và chọn mục 'Cài đặt thông báo'', mục này nằm trong menu bên trái như hình sau:&#x20;
 

@@ -20,7 +20,7 @@ Use this document as a guide for deleting resources. The document will describe 
   * Depending on each product, the selected resource will be permanently deleted or kept in the recycle bin for 7 days before being permanently deleted.&#x20;
   * Email notifying the deleted resource information.
   * Refund unused resource costs for applicable resources.&#x20;
-* Step 3: Check information Users check refund information at user portal, Payment history page: [https://dashboard.console.vngcloud.vn/payment-history](https://dashboard.console.vngcloud.vn/payment-history)
+* Step 3: Check information Users check refund information at user portal, Payment history page: [https://dashboard.console.greennode.ai/payment-history](https://dashboard.console.greennode.ai/payment-history)
 
 **Guide to calculating the refunded resource price**&#x20;
 

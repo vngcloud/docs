@@ -44,7 +44,7 @@ Bất kỳ tool nào cho phép set custom `base_url` theo OpenAI SDK format đ�
 - **Credit-token:** 1 credit = 1 VND
 - **Prepaid:** credit bị trừ mỗi chu kỳ collect 5 phút. Khi hết credit → model bị tắt tự động
 - **Postpaid:** usage được ghi nợ, không giới hạn quota
-- Xem usage real-time tại [AI Platform Console → Usage](https://aiplatform.console.vngcloud.vn/)
+- Xem usage real-time tại [AI Platform Console → Usage](https://aiplatform.console.greennode.ai/)
 
 ---
 
@@ -54,4 +54,4 @@ Bất kỳ tool nào cho phép set custom `base_url` theo OpenAI SDK format đ�
 |---|---|
 | Kết nối Claude Code với MaaS | [Kết nối Claude Code với GreenNode MaaS](ket-noi-claude-code-voi-maas.md) |
 | Kết nối OpenAI-compatible tool với MaaS | [Kết nối OpenAI-compatible với GreenNode MaaS](ket-noi-openai-compatible-voi-maas.md) |
-| Lấy API key | [AI Platform Console](https://aiplatform.console.vngcloud.vn/) |
+| Lấy API key | [AI Platform Console](https://aiplatform.console.greennode.ai/) |

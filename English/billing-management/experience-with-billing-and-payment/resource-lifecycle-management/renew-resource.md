@@ -19,7 +19,7 @@ When extending resources, the default start time will be calculated from the end
 * Step 2: Resource payment -> See detailed instructions here.
 * Step 3: Check resource and payment information
   * 3.1 Check resource information on the product page.
-  * 3.2 Check payment information, and invoice at User Portal: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)&#x20;
+  * 3.2 Check payment information, and invoice at User Portal: [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/)&#x20;
 * Step 4: The system performs&#x20;
   * Email notification of the resource information just extended.
   * New invoice was generated corresponding to the resource usage time.

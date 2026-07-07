@@ -6,7 +6,7 @@
 
 ## Prerequisites
 
-* A VNG Cloud account with access to [GreenNode Portal](https://console.vngcloud.vn).
+* A VNG Cloud account with access to [GreenNode Portal](https://console.greennode.ai).
 
 ***
 
@@ -71,5 +71,5 @@ After completing these steps, you can:
 | I want to...                      | Go to                                                             |
 | --------------------------------- | ----------------------------------------------------------------- |
 | Create my first cluster           | [Getting Started with VKS](getting-started/)                      |
-| View full vServer resource limits | [vServer Limits](https://hcm-3.console.vngcloud.vn/vserver/limit) |
+| View full vServer resource limits | [vServer Limits](https://hcm-3.console.greennode.ai/vserver/limit) |
 | Contact support                   | [GreenNode Helpdesk](https://helpdesk.vngcloud.vn/portal/en/home) |

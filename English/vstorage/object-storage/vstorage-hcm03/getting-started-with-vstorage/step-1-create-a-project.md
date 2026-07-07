@@ -4,7 +4,7 @@ To start using the service, you need to create a project. A Project is a term on
 
 Follow these steps to create a project:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/). If you don't have an account, sign up for free [here](https://chat.openai.com/c/link).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/). If you don't have an account, sign up for free [here](https://chat.openai.com/c/link).
 2. Choose the storage **Region**.
 3. Select **Create a Project**.
 4. Enter the **Project Name** and choose the appropriate **Project Type** (storage package) according to your needs.

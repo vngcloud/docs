@@ -9,7 +9,7 @@ description: >-
 
 ## 1. Truy cập trang Model Caching
 
-Truy cập thông qua đường dẫn: [https://aigateway.console.vngcloud.vn/model-caching/list](https://aigateway.console.vngcloud.vn/model-caching/list)
+Truy cập thông qua đường dẫn: [https://aigateway.console.greennode.ai/model-caching/list](https://aigateway.console.greennode.ai/model-caching/list)
 
 ## 2. Tạo một cấu hình **Caching**
 
@@ -73,7 +73,7 @@ Truy cập thông qua đường dẫn: [https://aigateway.console.vngcloud.vn/mo
 
 #### Xem các cấu hình Caching đã gán cho một Gateway
 
-1. Mở trang Gateway list: [https://aigateway.console.vngcloud.vn/ai-gateway/list](https://aigateway.console.vngcloud.vn/ai-gateway/list).
+1. Mở trang Gateway list: [https://aigateway.console.greennode.ai/ai-gateway/list](https://aigateway.console.greennode.ai/ai-gateway/list).
 2. Chọn Gateway mong muốn → vào trang chi tiết Gateway.
 3. Chọn tab **Model Caching** — sẽ hiển thị danh sách các cấu hình Caching đã gán cho gateway đó, kèm cột: **Caching type**, **Caching configuration** (TTL, semantic threshold), **Associated models.**
 4. Từ đây bạn có thể truy cập nhanh cấu hình, biết model nào đang dùng cache nào.

@@ -12,8 +12,8 @@ For an overview of concepts, architecture, and deployment options, see [OpenClaw
 
 You can access the Agent Marketplace in two ways:
 
-* **Option 1**: Go to the GreenNode homepage at [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/). From the main dashboard, navigate to **AI Stack** and select **Agentbase** â†’ **Agent Marketplace**.
-* **Option 2**: Go directly to [https://aiplatform.console.vngcloud.vn/agent-marketplace](https://aiplatform.console.vngcloud.vn/agent-marketplace).
+* **Option 1**: Go to the GreenNode homepage at [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/). From the main dashboard, navigate to **AI Stack** and select **Agentbase** â†’ **Agent Marketplace**.
+* **Option 2**: Go directly to [https://aiplatform.console.greennode.ai/agent-marketplace](https://aiplatform.console.greennode.ai/agent-marketplace).
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 154428.png" alt=""><figcaption></figcaption></figure>
 

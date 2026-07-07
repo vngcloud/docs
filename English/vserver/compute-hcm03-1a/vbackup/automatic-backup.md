@@ -10,7 +10,7 @@ After creating a backup on the server, the automatic backup feature will be acti
 
 #### **Through the User Interface:** <a href="#tudongsaoluu-thuchienthongquagiaodiennguoidung" id="tudongsaoluu-thuchienthongquagiaodiennguoidung"></a>
 
-1. Access the vServer homepage at: [vServer Overview](https://hcm-3.console.vngcloud.vn/vserver/overview).
+1. Access the vServer homepage at: [vServer Overview](https://hcm-3.console.greennode.ai/vserver/overview).
 2. In the navigation menu, select the "Backup/Backup server" tab.
 3. Choose the Backup server you want to enable the automatic backup feature for from the list.
 4. Find and select "**Enable Automatic Backup**."
@@ -27,7 +27,7 @@ Users can disable the automatic backup feature at any time if they do not want t
 
 **Through the User Interface:**
 
-1. Access the vServer homepage at: [vServer Overview](https://hcm-3.console.vngcloud.vn/vserver/overview).
+1. Access the vServer homepage at: [vServer Overview](https://hcm-3.console.greennode.ai/vserver/overview).
 2. In the navigation menu, select the "Backup/Backup server" tab.
 3. Choose the Backup server you want to disable the automatic backup feature for from the list.
 4. Find and select "**Disable Automatic Backup**."

@@ -17,7 +17,7 @@ Tính năng **Enable TLS Encryption** là một yếu tố quan trọng của b�
 
 #### Hướng dẫn bật tính năng TLS Encryption <a href="#enabletlsencryption-huongdanbattinhnangtlsencryption" id="enabletlsencryption-huongdanbattinhnangtlsencryption"></a>
 
-1. Truy cập vào trang chủ Load Balancer tại đây: [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+1. Truy cập vào trang chủ Load Balancer tại đây: [https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)
 2. Tại trang chủ Load Balancer, click chọn Load Balancer cần cấu hình.
 3. Tại phần thông tin chi tiết Load Balancer, chọn tab Pool.
 4. Tại phần danh sách Pool, rê chuột vào Pool cần chỉnh sửa và nhấn vào biểu tượng Edit.

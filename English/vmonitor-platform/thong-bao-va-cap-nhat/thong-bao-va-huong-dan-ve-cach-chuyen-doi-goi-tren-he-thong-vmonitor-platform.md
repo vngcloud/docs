@@ -28,7 +28,7 @@ There will be a few notes to consider when performing package transfer on the vM
 
 Below is a detailed guide on how to switch packages on the vMonitor Platform:
 
-* **Step 1:** Access the vMonitor Platform at https://hcm-3.console.vngcloud.vn/vmonitor/quota-usage/quota
+* **Step 1:** Access the vMonitor Platform at https://hcm-3.console.greennode.ai/vmonitor/quota-usage/quota
 * **Step 2:** Log into your account.
 * **Step 3:** Select **Usage & Quota** from the left-hand menu.
 * **Step 4:** You will now see a package conversion suggestion on your interface. Select **Convert.**

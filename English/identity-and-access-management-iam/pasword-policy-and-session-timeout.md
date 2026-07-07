@@ -13,7 +13,7 @@ Allows administrators to define and enforce password rules to enhance security a
 **🔧 How to Configure**
 
 1. Log in to the admin portal.
-2. Navigate to [https://iam.console.vngcloud.vn/account-settings](https://iam.console.vngcloud.vn/account-settings)
+2. Navigate to [https://iam.console.greennode.ai/account-settings](https://iam.console.greennode.ai/account-settings)
 3. Adjust the parameters as needed.
 4. Click **Save** to apply changes.
 

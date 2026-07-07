@@ -102,7 +102,7 @@ When creating the Server, the admin user is disabled. If you want to use it, you
 
 ### \[vServer] Where is the history of payments or refunds after creating an Image?&#x20;
 
-To view the created Image information, please access the [<mark style="color:blue;">Image page</mark>](https://hcm-3.console.vngcloud.vn/vserver/block-store/images).
+To view the created Image information, please access the [<mark style="color:blue;">Image page</mark>](https://hcm-3.console.greennode.ai/vserver/block-store/images).
 
 ### \[vServer] Why can't I \[connect] to the \[ports] listening on my VPS?
 
@@ -136,7 +136,7 @@ Please create a ticket for support to increase the quota and specify the amount 
 
 ### \[vServer] Support for viewing RAM, CPU, network?&#x20;
 
-Currently, GreenNode has a vMonitor service in beta version for free trial that can monitor these parameters. You can access it on the [<mark style="color:blue;">vServer homepage</mark>](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), and view RAM, CPU, Network information on the Server details page / Monitor tab or directly on the [<mark style="color:blue;">vMonitor homepage</mark>](https://vmonitor.console.vngcloud.vn/dashboard).
+Currently, GreenNode has a vMonitor service in beta version for free trial that can monitor these parameters. You can access it on the [<mark style="color:blue;">vServer homepage</mark>](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server), and view RAM, CPU, Network information on the Server details page / Monitor tab or directly on the [<mark style="color:blue;">vMonitor homepage</mark>](https://vmonitor.console.greennode.ai/dashboard).
 
 ### \[vServer] How do I keep the old WANIP for the new server?&#x20;
 
@@ -186,7 +186,7 @@ The maximum number of users that can simultaneously access a website depends not
 
 ### \[vServer] Why can't I delete old Certificates and Keys, and how can I use new Certificates and Keys?&#x20;
 
-Currently, we do not support deleting old Certificates and Keys on the Load Balancer. If you want to use new Certificates and Keys, please upload the new Certificate on the [<mark style="color:blue;">Certificate Homepage</mark>](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/certificate) (without the same Certificate name as the old one), then go to the [<mark style="color:blue;">Load Balancer Homepage</mark>](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb) to update the new Certificate details on the LB details page.
+Currently, we do not support deleting old Certificates and Keys on the Load Balancer. If you want to use new Certificates and Keys, please upload the new Certificate on the [<mark style="color:blue;">Certificate Homepage</mark>](https://hcm-3.console.greennode.ai/vserver/load-balancer/certificate) (without the same Certificate name as the old one), then go to the [<mark style="color:blue;">Load Balancer Homepage</mark>](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb) to update the new Certificate details on the LB details page.
 
 ### \[vServer] Why can't I telnet to port XYZ? Even though I have allowed the firewall, ACL on the policy group, and checked that port XYZ is listening.&#x20;
 

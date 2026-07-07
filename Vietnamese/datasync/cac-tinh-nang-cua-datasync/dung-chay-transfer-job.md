@@ -4,7 +4,7 @@ Bạn có thể dừng chạy mọi Transfer job đang chạy hoặc đang đư�
 
 Cụ thể, để dừng chạy một transfer job, hãy làm theo hướng dẫn:&#x20;
 
-**Bước 1:** Truy cập vào [https://datasync.console.vngcloud.vn/](https://datasync.console.vngcloud.vn/transfer-job/list)
+**Bước 1:** Truy cập vào [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/transfer-job/list)
 
 **Bước 2:** Tại menu bên trái, chọn mục **Transfer Job**.&#x20;
 

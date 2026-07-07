@@ -23,7 +23,7 @@ Bạn chỉ có thể xóa Snapshot cho Volume tại trang quản lý Snapshot, 
 
 ### **Xoá Snapshot Volume tại trang danh sách Snapshot trên bảng điều khiển** <a href="#xoasnapshot-xoasnapshotvolumetaitrangdanhsachsnapshottrenbangdieukhien" id="xoasnapshot-xoasnapshotvolumetaitrangdanhsachsnapshottrenbangdieukhien"></a>
 
-1. Mở bảng điều khiển vServer tại [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
+1. Mở bảng điều khiển vServer tại [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/).
 2. Trong ngăn điều hướng, chọn **Snapshot**.
 3. Chọn Snapshot cần xóa rồi chọn **Hành động**, nhấn **Xóa Snapshot.**
 
@@ -31,7 +31,7 @@ Bạn chỉ có thể xóa Snapshot cho Volume tại trang quản lý Snapshot, 
 
 ### **Xoá Snapshot Volume tại trang chi tiết Volume trên bảng điều khiển** <a href="#xoasnapshot-xoasnapshotvolumetaitrangchitietvolumetrenbangdieukhien" id="xoasnapshot-xoasnapshotvolumetaitrangchitietvolumetrenbangdieukhien"></a>
 
-1. Mở bảng điều khiển vServer tại [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
+1. Mở bảng điều khiển vServer tại [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/).
 2. Trong ngăn điều hướng, chọn **Volume**.
 3. Nhấn vào tên Volume để vào trang chi tiết Volume
 4. Chuyển sang Tab **Associated Snapshot**
@@ -41,7 +41,7 @@ Bạn chỉ có thể xóa Snapshot cho Volume tại trang quản lý Snapshot, 
 
 ### **Xoá Snapshot Server tại trang chi tiết Server trên bảng điều khiển** <a href="#xoasnapshot-xoasnapshotservertaitrangchitietservertrenbangdieukhien" id="xoasnapshot-xoasnapshotservertaitrangchitietservertrenbangdieukhien"></a>
 
-1. Mở bảng điều khiển vServer tại [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
+1. Mở bảng điều khiển vServer tại [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/).
 2. Trong ngăn điều hướng, chọn Server.
 3. Nhấn vào tên Server để vào trang chi tiết Server
 4. Chuyển sang Tab **Associated Snapshot**

@@ -2,7 +2,7 @@
 
 Before you can store data in vStorage, you need to create a container. A container is an object that holds data (Objects). In vStorage, you can think of this object as equivalent to a directory in the operating system. You can manage files and directories using the provided tools and APIs.
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/). Choose the **project** in which you want to create a **container**.
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/). Choose the **project** in which you want to create a **container**.
 2. Select **Create a Container**.
 3. Enter the **container name** as per our guidelines.
 4. Choose **Create**.

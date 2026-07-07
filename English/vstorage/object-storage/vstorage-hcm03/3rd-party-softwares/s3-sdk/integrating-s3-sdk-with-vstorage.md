@@ -2,14 +2,14 @@
 
 To view the integration guide for the S3 SDK tool with vStorage, you can follow the steps below through the vStorage Portal:
 
-1. Log in to https://vstorage.console.vngcloud.vn.
+1. Log in to https://vstorage.console.greennode.ai.
 2. Select the **Integration** menu.
 3. Choose the **S3 SDK** icon.
 4. In the **Permission** section, you need to provide the necessary information to configure your S3 SDK for integration with vStorage, including:
    1. Select a **Region** that contains the project you want to access data to from the list of Regions provided.
    2. Choose a **Project** from the list of existing projects in the selected Region. If the project list is not complete, you can choose to reload the latest project list at the time you perform this action.
    3. Select an **Access key** from the list of existing access keys belonging to the previously selected project.
-   4. Enter the corresponding **Secret key** of the selected **Access key**. The access key and secret key are created and managed through the vIAM system. You can click \[here]\([https://vstorage.console.vngcloud.vn/docs/vIAM/s3keys](https://vstorage.console.vngcloud.vn/docs/vIAM/s3keys)) to go to vIAM and manage S3 keys, which provides details on managing S3 keys. For more information about S3 keys, see \[Initializing vStorage Credentials]\([https://vstorage.console.vngcloud.vn/docs/vStorageCredentials](https://vstorage.console.vngcloud.vn/docs/vStorageCredentials)).
+   4. Enter the corresponding **Secret key** of the selected **Access key**. The access key and secret key are created and managed through the vIAM system. You can click \[here]\([https://vstorage.console.greennode.ai/docs/vIAM/s3keys](https://vstorage.console.greennode.ai/docs/vIAM/s3keys)) to go to vIAM and manage S3 keys, which provides details on managing S3 keys. For more information about S3 keys, see \[Initializing vStorage Credentials]\([https://vstorage.console.greennode.ai/docs/vStorageCredentials](https://vstorage.console.greennode.ai/docs/vStorageCredentials)).
 5. After completing the configuration in the **Permission** section, select **Integrate S3 SDK** to go to the **Configuration screen**. You can always come back here to change your Permission information, then select Integrate S3 SDK again to update the usage according to your new parameters. You can view the guide on how to integrate the S3 SDK with various programming languages using the following steps:
    1. Choose a **Programming Language** you want to integrate from the list of programming languages we provide, including Java, Python, Golang, Ruby, C#, NodeJS.
    2. Select a **Library** you want to use to communicate with the server's APIs.

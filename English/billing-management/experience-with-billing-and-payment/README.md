@@ -21,7 +21,7 @@ Here, we divide the system into 3 main functional groups:&#x20;
   * 2.4 Payment successful: The system will redirect users to the previous product page (at step 1).
 * Step 3: Check resource and payment information&#x20;
   * 3.1 Check resource information on the product page.
-  * 3.2 Generate invoices: Check payment and invoice information at User Portal: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
+  * 3.2 Generate invoices: Check payment and invoice information at User Portal: [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/)
 
 Note: The above is a reference guide for prepaid users, there will be some differences for postpaid users. Refer to details at: Prepaid & Postpaid users.
 

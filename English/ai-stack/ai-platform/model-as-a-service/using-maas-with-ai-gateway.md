@@ -2,7 +2,7 @@
 
 To enable MaaS to leverage AI Gateway features (such as Rate Limiting, Model Caching, etc.), follow these steps:
 
-**Step 1**: Access the AI Gateway interface on the GreenNode Console via: [http://aigateway.console.vngcloud.vn/](http://aigateway.console.vngcloud.vn/)
+**Step 1**: Access the AI Gateway interface on the GreenNode Console via: [http://aigateway.console.greennode.ai/](http://aigateway.console.greennode.ai/)
 
 **Step 2**: In the left-hand menu, select AI Gateway, then click the Create an AI Gateway button.
 
@@ -14,8 +14,8 @@ To enable MaaS to leverage AI Gateway features (such as Rate Limiting, Model Cac
 *   **Model Provider:**
 
     * Select OpenAI Compatible as the AI model provider.
-    * **Model Type**: Select the Model Type (refer to [MaaS](https://aiplatform.console.vngcloud.vn/models) in the AI Platform portal).
-    * **Model Endpoint**: Enter the model URL (refer to [MaaS](https://aiplatform.console.vngcloud.vn/models) in the AI Platform portal).
+    * **Model Type**: Select the Model Type (refer to [MaaS](https://aiplatform.console.greennode.ai/models) in the AI Platform portal).
+    * **Model Endpoint**: Enter the model URL (refer to [MaaS](https://aiplatform.console.greennode.ai/models) in the AI Platform portal).
 
     ```
     <figure><img src="/broken/files/g41wCXIWChs9gqtqIDzp" alt=""><figcaption></figcaption></figure>
@@ -24,7 +24,7 @@ To enable MaaS to leverage AI Gateway features (such as Rate Limiting, Model Cac
     *   **Authentication info**:
 
         * header\_name: Enter `Authorization`.
-        * header\_value: Enter the MaaS API Key (created in the AI Platform [Portal ](https://aiplatform.console.vngcloud.vn/keys)).
+        * header\_value: Enter the MaaS API Key (created in the AI Platform [Portal ](https://aiplatform.console.greennode.ai/keys)).
 
         <figure><img src="../../../.gitbook/assets/image (419).png" alt=""><figcaption></figcaption></figure>
 * **Gateway Config:** By default, the system enables the Authenticated Gateway feature.

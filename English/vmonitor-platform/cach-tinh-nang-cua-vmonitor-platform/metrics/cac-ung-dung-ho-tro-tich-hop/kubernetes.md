@@ -10,9 +10,9 @@ You can install vMonitor Platform Metric Agent into your Kubernetes Cluster to c
 
 ### **Preparation steps before installation**
 
-1\. Check that you have the Metric Quota and that your quota has not reached the limit. If you do not have it, you need to buy the Metric Quota [here](https://vmonitor.console.vngcloud.vn/quota-usages/metric) .
+1\. Check that you have the Metric Quota and that your quota has not reached the limit. If you do not have it, you need to buy the Metric Quota [here](https://vmonitor.console.greennode.ai/quota-usages/metric) .
 
-**2. Create a Service Account and attach policy: vMonitorMetricPush to have enough rights to push Metric to vMonitor Platform.** To create a service account, go here [,](https://iam.console.vngcloud.vn/service-accounts) then perform the following steps:
+**2. Create a Service Account and attach policy: vMonitorMetricPush to have enough rights to push Metric to vMonitor Platform.** To create a service account, go here [,](https://iam.console.greennode.ai/service-accounts) then perform the following steps:
 
 * Select " **Create a Service Account** ", enter a name for the Service Account and click **Next Step** to assign permissions to the Service Account
 * Find and select **Policy: vMonitorMetricPush,** then click " **Create a Service Account** " to create a Service Account, Policy: vMonitorMetricPush created by GreenNode only contains the correct permission to push metrics to the system.

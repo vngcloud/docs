@@ -19,7 +19,7 @@ To be able to use Pfsense as NAT Gateway for Cluster on VKS system, you need:
 
 ### Initialize Pfsense <a href="#khoi-tao-pfsense" id="khoi-tao-pfsense"></a>
 
-**Step 1:** Visit [https://marketplace.console.vngcloud.vn/](https://marketplace.console.vngcloud.vn/)
+**Step 1:** Visit [https://marketplace.console.greennode.ai/](https://marketplace.console.greennode.ai/)
 
 **Step 2:** At the main screen, search for **Pfsense , at Pfsense** service , select **Launch** .
 
@@ -31,7 +31,7 @@ To be able to use Pfsense as NAT Gateway for Cluster on VKS system, you need:
 
 ### Configure parameters for Pfsense <a href="#toc165621058" id="toc165621058"></a>
 
-**Step 1:** After initializing Pfsense from vMarketPlace according to the instructions above, you can access the vServer interface here [to](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) check whether the server running Pfsense has been initialized. **Next, open the Any rule on the Security Group for the Pfsense server you just created. Opening the Any rule on the Security Group will allow all traffic to the Pfsense server.**
+**Step 1:** After initializing Pfsense from vMarketPlace according to the instructions above, you can access the vServer interface here [to](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server) check whether the server running Pfsense has been initialized. **Next, open the Any rule on the Security Group for the Pfsense server you just created. Opening the Any rule on the Security Group will allow all traffic to the Pfsense server.**
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F5Bumdpr1FTWdMPFOmgGG%252Fimage.png%3Falt%3Dmedia%26token%3Df6e965e0-5207-43f8-9c66-b35bf9048d36&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=7630a1ac&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
@@ -160,7 +160,7 @@ To be able to use Pfsense as NAT Gateway for Cluster on VKS system, you need:
 
 After Pfsense is successfully initialized and configured, you need to create a Route table to connect to different networks. Specifically, follow these steps to create a Route table:
 
-**Step 1:** Visit [https://hcm-3.console.vngcloud.vn/vserver/network/route-table](https://hcm-3.console.vngcloud.vn/vserver/network/route-table)
+**Step 1:** Visit [https://hcm-3.console.greennode.ai/vserver/network/route-table](https://hcm-3.console.greennode.ai/vserver/network/route-table)
 
 **Step 2:** In the navigation menu bar, select **Network Tab/ Route table.**
 

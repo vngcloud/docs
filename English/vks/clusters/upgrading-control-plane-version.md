@@ -7,7 +7,7 @@ Currently, our VKS system has supported you to upgrade Control Plane Version, yo
 
 **To upgrade the Control Plane version, you can follow these instructions:**
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2: At the Overview** screen , select the **Kubernetes Cluster menu.**
 

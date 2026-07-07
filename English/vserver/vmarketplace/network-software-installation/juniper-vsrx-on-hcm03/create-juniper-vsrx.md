@@ -1,6 +1,6 @@
 # Create Juniper vSRX
 
-To initialize, go to vMarketPlace at the following link: [https://marketplace.console.vngcloud.vn/app-package/detail/4/30/1284a184-2119-4950-bd1c-af9161c52c01](https://marketplace.console.vngcloud.vn/app-package/detail/4/30/1284a184-2119-4950-bd1c-af9161c52c01)
+To initialize, go to vMarketPlace at the following link: [https://marketplace.console.greennode.ai/app-package/detail/4/30/1284a184-2119-4950-bd1c-af9161c52c01](https://marketplace.console.greennode.ai/app-package/detail/4/30/1284a184-2119-4950-bd1c-af9161c52c01)
 
 **Initialize Juniper vSRX**
 

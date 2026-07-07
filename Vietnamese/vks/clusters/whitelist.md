@@ -63,7 +63,7 @@ Tính năng Whitelist IP trên chế độ Private Node Group của VKS cho phé
 
 Để sử dụng tính năng Whitelist IP trên chế độ Private Node Group, bạn cần thực hiện các bước sau:
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Bước 1:** Truy cập vào [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Bước 2:** Tại màn hình **Overview**, chọn menu **Kubernetes Cluster.**
 

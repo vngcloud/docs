@@ -16,7 +16,7 @@ Tổng quan, route table là một cấu trúc dữ liệu chứa các bản ghi
 
 Sử dụng hướng dẫn bên dưới để tạo mới một Route table
 
-1. Mở trang chủ vServer tại: [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview).
+1. Mở trang chủ vServer tại: [https://hcm-3.console.greennode.ai/vserver/overview](https://hcm-3.console.greennode.ai/vserver/overview).
 2. Tại thanh menu điều hướng, chọn **Tab Network/ Route table.**
 3. Nhấn **Tạo Route table.**
 4. Đối với **Tên** hãy nhập tên mô tả cho Route table. Tên Route table có thể bao gồm các chữ cái (a-z, A-Z, 0-9, '\_', '-'). Độ dài dữ liệu đầu vào nằm trong khoảng từ 5 đến 50. Nó không được bao gồm khoảng trắng ở đầu hoặc ở cuối.
@@ -29,7 +29,7 @@ Bạn có thể thêm, xóa và sửa đổi các Route trong Route table của 
 
 Để cập nhật các Route cho Route table bằng bảng điều khiển:
 
-1. Mở trang chủ vServer tại: [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview).
+1. Mở trang chủ vServer tại: [https://hcm-3.console.greennode.ai/vserver/overview](https://hcm-3.console.greennode.ai/vserver/overview).
 2. Tại thành menu điều hướng, chọn **Tab Network/ Route table.**
 3. Chọn một Route table, nhấn **Chỉnh sửa Routes.**
 4.  Sau đó tại phần thêm mới **Route** hãy nhập vào các thông tin bên dướ&#x69;**:**<br>
@@ -49,7 +49,7 @@ Bạn có thể thêm, xóa và sửa đổi các Route trong Route table của 
 
 Bạn có thể xoá Route table nếu không còn nhu cầu sử dụng nó, để xoá Route table bằng bảng định tuyến:
 
-1. Mở trang chủ vServer tại: [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview).
+1. Mở trang chủ vServer tại: [https://hcm-3.console.greennode.ai/vserver/overview](https://hcm-3.console.greennode.ai/vserver/overview).
 2. Tại thành menu điều hướng, chọn **Tab Network/ Route table.**
 3. Chọn Route table cần xoá, sau đó chọn hành động **Xoá.**
 4. Nhấ**n Xác nhận.**

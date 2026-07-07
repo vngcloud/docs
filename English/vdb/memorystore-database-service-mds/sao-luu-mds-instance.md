@@ -1,6 +1,6 @@
 # Backup MDS Instance
 
-The Backup management interface provides an overview of all existing backups and detailed information for each one. You can access the Backup management interface here: https://vdb.console.vngcloud.vn/memorystore/backup. You can create new Manual Backups, Restore (restore a new DB Instance based on a backup), or Delete (delete a backup). Refer to the following instructions for backup management features:
+The Backup management interface provides an overview of all existing backups and detailed information for each one. You can access the Backup management interface here: https://vdb.console.greennode.ai/memorystore/backup. You can create new Manual Backups, Restore (restore a new DB Instance based on a backup), or Delete (delete a backup). Refer to the following instructions for backup management features:
 
 **A. On-Demand Backup (Manual Backup)**
 

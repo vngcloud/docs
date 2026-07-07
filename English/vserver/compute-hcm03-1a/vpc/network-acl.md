@@ -73,7 +73,7 @@ You can create a custom Network ACL for your VPC. By default, the Network ACL yo
 
 To create a Network ACL, follow these steps:
 
-1. Access the vServer service home page at the following link: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+1. Access the vServer service home page at the following link: [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
 2. In the left-hand menu, select **Network**, then select **Network ACLs**.
 3. Select **Create Network ACL**.
 4. Enter a **Name** and select **1 active VPC** where you want to create the Network ACL. Note: The Network ACL name only allows letters (a-z, A-Z, 0-9, '\_', '-') and the length of your input data must be between 5 and 50.
@@ -87,7 +87,7 @@ Your Network ACL is now created with the default Inbound rule and Outbound rule 
 
 To edit the Inbound rule list (rules that allow traffic to enter), follow these steps:
 
-1. Access the vServer service home page at the following link: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+1. Access the vServer service home page at the following link: [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
 2. In the left-hand menu, select **Network**, then select **Network ACLs**.
 3. In the list of created Network ACLs, select a **Network ACL**.
 4. In the **Inbound rules** section, select **Edit Inbound rules**.
@@ -107,7 +107,7 @@ To edit the Inbound rule list (rules that allow traffic to enter), follow these 
 
 To edit the Outbound rule list (rules that allow traffic to exit), follow these steps:
 
-1. Access the vServer service home page at the following link: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+1. Access the vServer service home page at the following link: [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
 2. In the left-hand menu, select **Network**, then select **Network ACLs**.
 3. In the list of created Network ACLs, select a **Network ACL**.
 4. In the **Outbound rules** section, select **Edit Outbound rules**.
@@ -129,7 +129,7 @@ To apply the rules of a Network ACL to a specific subnet, you need to associate 
 
 To associate a subnet with a Network ACL, follow these steps:
 
-1. Access the vServer service home page at the following link: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+1. Access the vServer service home page at the following link: [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
 2. In the left-hand menu, select **Network**, then select **Network ACLs**.
 3. In the list of created Network ACLs, select a **Network ACL**.
 4. In the **Subnet association** section, select **Edit Subnet Association**.
@@ -153,7 +153,7 @@ You can only delete a Network ACL if it is not associated with any subnets. If t
 
 **To delete a Network ACL, follow these steps:**
 
-1. Access the vServer service home page at the following link: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+1. Access the vServer service home page at the following link: [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
 2. In the left-hand menu, select **Network**, then select **Network ACLs**.
 3. At the Network ACL you want to delete, select the icon <img src="https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24_18-17-12.png?version=1&#x26;modificationDate=1708921940000&#x26;api=v2" alt="" data-size="line">.
 4. In the delete confirmation screen, select **Delete** if you are sure you want to delete this Network ACL, or **Cancel** if you want to cancel the deletion.

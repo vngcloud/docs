@@ -23,7 +23,7 @@ You can only delete Volume snapshots on the Snapshot management page; to delete 
 
 ### **Delete Volume Snapshot on the Snapshot list page on the Dashboard** <a href="#xoasnapshot-xoasnapshotvolumetaitrangdanhsachsnapshottrenbangdieukhien" id="xoasnapshot-xoasnapshotvolumetaitrangdanhsachsnapshottrenbangdieukhien"></a>
 
-1. Open the vServer dashboard at [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
+1. Open the vServer dashboard at [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/).
 2. In the navigation sidebar, select **Snapshot**.
 3. Choose the Snapshot you want to delete, then select **Action**, click **Delete Snapsho**t.
 
@@ -31,7 +31,7 @@ You can only delete Volume snapshots on the Snapshot management page; to delete 
 
 ### **Delete Volume Snapshot on the Volume detail page on the Dashboard** <a href="#xoasnapshot-xoasnapshotvolumetaitrangchitietvolumetrenbangdieukhien" id="xoasnapshot-xoasnapshotvolumetaitrangchitietvolumetrenbangdieukhien"></a>
 
-1. Open the vServer Dashboard at [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
+1. Open the vServer Dashboard at [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/).
 2. In the navigation sidebar, select **Volume**.
 3. Click on the Volume name to go to the Volume detail page
 4. Switch to the **Associated Snapshot** Tab
@@ -41,7 +41,7 @@ You can only delete Volume snapshots on the Snapshot management page; to delete 
 
 ### **Delete Server Snapshot on the Server detail page on the Dashboard** <a href="#xoasnapshot-xoasnapshotservertaitrangchitietservertrenbangdieukhien" id="xoasnapshot-xoasnapshotservertaitrangchitietservertrenbangdieukhien"></a>
 
-1. Open the vServer Dashboard at [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
+1. Open the vServer Dashboard at [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/).
 2. In the navigation sidebar, select Server.
 3. Click on the Server name to go to the Server detail page
 4. Switch to the **Associated Snapshot** Tab

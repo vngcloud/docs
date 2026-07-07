@@ -4,7 +4,7 @@ Sau khi tạo Snapshot cho máy chủ ảo và ổ đĩa, bạn có thể xem th
 
 #### Bảng điều khiển <a href="#xemthongtinsnapshot-bangdieukhien" id="xemthongtinsnapshot-bangdieukhien"></a>
 
-1. Mở bảng điều khiển vServer tại [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
+1. Mở bảng điều khiển vServer tại [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/).
 2. Trong ngăn điều hướng, chọn **Snapshot**.
 3. Tại đây bạn có thể xem thông tin tổng quan về các bản Snapshot đang có bao gồm:&#x20;
    1. Tổng dung lượng các bản Snapshot

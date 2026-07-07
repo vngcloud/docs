@@ -1,6 +1,6 @@
 # Juniper vSRX trên HCM03
 
-Truy cập đến ứng dụng Juniper vSRX theo đường dẫn tại đây: [https://marketplace.console.vngcloud.vn/app-package/detail/4/30/1284a184-2119-4950-bd1c-af9161c52c01](https://marketplace.console.vngcloud.vn/app-package/detail/4/30/1284a184-2119-4950-bd1c-af9161c52c01)
+Truy cập đến ứng dụng Juniper vSRX theo đường dẫn tại đây: [https://marketplace.console.greennode.ai/app-package/detail/4/30/1284a184-2119-4950-bd1c-af9161c52c01](https://marketplace.console.greennode.ai/app-package/detail/4/30/1284a184-2119-4950-bd1c-af9161c52c01)
 
 Nhấn chọn **Launch on Compute Engine** để khởi tạo cài đặt ứng dụng.
 

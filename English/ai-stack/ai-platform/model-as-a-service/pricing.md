@@ -144,7 +144,7 @@ Recovery Expiration
 
 To view detailed usage:
 
-* Go to the [**Model Usage**](https://aiplatform.console.vngcloud.vn/model-usage) **page**
+* Go to the [**Model Usage**](https://aiplatform.console.greennode.ai/model-usage) **page**
 * You can:
   * Select a specific time range
   * View details such as:

@@ -19,7 +19,7 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 ## Khởi tạo Pfsense
 
-**Bước 1:** Truy cập vào [https://marketplace.console.vngcloud.vn/](https://marketplace.console.vngcloud.vn/)
+**Bước 1:** Truy cập vào [https://marketplace.console.greennode.ai/](https://marketplace.console.greennode.ai/)
 
 **Bước 2:** Tại màn hình chính, thực hiện tìm kiếm **Pfsense**, tại dịch vụ **Pfsense**, chọn **Launch**.
 
@@ -31,7 +31,7 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 ## Cấu hình thông số cho Pfsense <a href="#toc165621058" id="toc165621058"></a>
 
-**Bước 1:** Sau khi khởi tạo Pfsense từ vMarketPlace theo hướng dẫn bên trên, bạn có thể truy cập vào giao diện vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) để kiểm tra server chạy Pfsense đã được khởi tạo xong chưa. <mark style="color:red;">**Tiếp theo, bạn mở rule Any trên Security Group cho server Pfsense vừa tạo. Việc mở rule Any trên Security Group sẽ cho phép tất cả lưu lượng truy cập đến server Pfsense.**</mark>
+**Bước 1:** Sau khi khởi tạo Pfsense từ vMarketPlace theo hướng dẫn bên trên, bạn có thể truy cập vào giao diện vServer tại [đây](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server) để kiểm tra server chạy Pfsense đã được khởi tạo xong chưa. <mark style="color:red;">**Tiếp theo, bạn mở rule Any trên Security Group cho server Pfsense vừa tạo. Việc mở rule Any trên Security Group sẽ cho phép tất cả lưu lượng truy cập đến server Pfsense.**</mark>
 
 <figure><img src="../../../../.gitbook/assets/pfsense_1.png" alt=""><figcaption></figcaption></figure>
 
@@ -160,7 +160,7 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 Sau khi Pfsense được khởi tạo và cấu hình thành công, bạn cần tạo một Route table để kết nối tới các mạng khác nhau. Cụ thể thực hiện theo các bước sau để tạo Route table:
 
-**Bước 1:** Truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/network/route-table](https://hcm-3.console.vngcloud.vn/vserver/network/route-table)
+**Bước 1:** Truy cập vào [https://hcm-3.console.greennode.ai/vserver/network/route-table](https://hcm-3.console.greennode.ai/vserver/network/route-table)
 
 **Bước 2:** Tại thanh menu điều hướng, chọn **Tab Network/ Route table.**
 

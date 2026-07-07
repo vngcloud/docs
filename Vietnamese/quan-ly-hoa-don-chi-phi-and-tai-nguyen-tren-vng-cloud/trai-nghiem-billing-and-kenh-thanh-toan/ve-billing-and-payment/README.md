@@ -35,7 +35,7 @@ Tại đây, chúng tôi chia hệ thống làm 3 nhóm chức năng chính:
 * **Bước 3: Kiểm tra thông tin tài nguyên và thông tin thanh toán**
   * 3.1 Kiểm tra thông tin tài nguyên tại trang sản phẩm
   * 3.2 Phát sinh hóa đơn: Kiểm tra thông tin thanh toán, hóa đơn tại
-    * **User Portal:** [**https://dashboard.console.vngcloud.vn/**](https://dashboard.console.vngcloud.vn/)
+    * **User Portal:** [**https://dashboard.console.greennode.ai/**](https://dashboard.console.greennode.ai/)
 
 **Lưu ý: Trên đây là hướng dẫn tham khảo cho người dùng trả trước, đối với người dùng trả sau sẽ có 1 số khác biệt. Tham khảo chi tiết tại mục:**
 

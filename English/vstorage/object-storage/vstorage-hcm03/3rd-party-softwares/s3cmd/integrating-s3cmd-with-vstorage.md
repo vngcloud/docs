@@ -2,7 +2,7 @@
 
 To view the guide on integrating the S3cmd tool with vStorage, you can follow the steps below using the vStorage Portal:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 2. Select the **Integration** directory.
 3. Choose the **S3cmd** icon.
 4. In the **Permission** section, fill in the necessary information to configure your S3cmd for integration with vStorage:

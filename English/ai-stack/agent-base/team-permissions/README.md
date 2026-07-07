@@ -2,7 +2,7 @@
 
 **Team & Permissions** helps Root and Admin control who can access AgentBase and with what level of access — through pre-built roles wrapped by AgentBase, easy to assign without manual IAM policy configuration.
 
-Access at: [https://aiplatform.console.vngcloud.vn/team-permissions](https://aiplatform.console.vngcloud.vn/team-permissions)
+Access at: [https://aiplatform.console.greennode.ai/team-permissions](https://aiplatform.console.greennode.ai/team-permissions)
 
 ![Team & Permissions — member list](../../../.gitbook/assets/Agentbase-image/Members-list.png)
 

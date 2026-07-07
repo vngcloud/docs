@@ -4,7 +4,7 @@ In the **GreenNode** vDB OpenSearch service, you can easily expand the number of
 
 To increase the number of nodes for an OpenSearch Cluster, you can:
 
-**Step 1:** Access [https://vdb.console.vngcloud.vn/](https://vdb.console.vngcloud.vn/)
+**Step 1:** Access [https://vdb.console.greennode.ai/](https://vdb.console.greennode.ai/)
 
 **Step 2:** Select **Cluster** under the **OpenSearch** section
 

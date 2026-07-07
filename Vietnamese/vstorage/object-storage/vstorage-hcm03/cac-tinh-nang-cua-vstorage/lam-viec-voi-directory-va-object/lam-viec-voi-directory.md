@@ -8,7 +8,7 @@ Trong vStorage, directory được chúng tôi định nghĩa là các thư mụ
 
 1. **Sử dụng vStorage Portal:**
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **project** và chọn **container** mà bạn bạn muốn tạo directory.
 
@@ -49,7 +49,7 @@ vStorage cũng tương thích với các công cụ phía bạn sử dụng S3 p
 
 Để thực hiện chia sẻ một directory trong một container, bạn có thể thực hiện theo các bước bên dưới:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn **project, container** sau đó chọn một hoặc nhiều các **directory** bạn muốn thực hiện chia sẻ.
 3. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-3-6\_10-50-12.png?version=1\&modificationDate=1699348122000\&api=v2)hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-2-6\_10-20-54.png?version=1\&modificationDate=1678075522000\&api=v2)tại **directory** bạn muốn thực hiện chia sẻ và chọn![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-3-6\_10-50-38.png?version=1\&modificationDate=1699348122000\&api=v2)
 4. Chọn **Mode**:&#x20;
@@ -97,7 +97,7 @@ vStorage cũng tương thích với các công cụ phía bạn sử dụng S3 p
 
 1. **Sử dụng vStorage Portal**
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **project** và chọn **container**, **directory** bạn muốn thực hiện xóa.
 

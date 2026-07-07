@@ -22,7 +22,7 @@ Before you can perform Windows server initialization, make sure you initialize V
 8. Under **Instance type,** there is a list of Flavor configurations, you can choose the desired Flavor configuration for your Server according to. **iot.v1.small1x1** is recommended by us as a default basic configuration to initialize the Server
 9. In **Volume Settings** , enter the configuration for Boot OS Volume (Root) including **Size GB** , **Volume Type SSD** and **IOPS** , then select **Next.**
 10. In addition, you can add **Data Volume** to the Server during the initialization process by selecting **Add Data volume,** then **enter** the configuration for the Data Volume including **Volume name** , **Size GB** , **Volume Type SSD** and **IOPS** , select **Next.**
-11. **Next, select the Network settings** parameter : Here you can select **VPC** to assign Private IP to Server and **Subnet** from the list you created earlier, or you can click [**here**](https://hcm-3.console.vngcloud.vn/vserver/network/vpc) to create a new VPC and Subnet. Note that after creating VPC and Subnet, it will be displayed on the list page for you to choose during Server initialization:
+11. **Next, select the Network settings** parameter : Here you can select **VPC** to assign Private IP to Server and **Subnet** from the list you created earlier, or you can click [**here**](https://hcm-3.console.greennode.ai/vserver/network/vpc) to create a new VPC and Subnet. Note that after creating VPC and Subnet, it will be displayed on the list page for you to choose during Server initialization:
     1. Check the Floating IP box to assign Public IP to the Server (Click [**here**](https://docs.vngcloud.vn/vng-cloud-document/vn/vserver/compute-hcm03-1a/network/floating-ip) to see instructions for attaching/ detach Floating IP)
     2. **Security group** to manage ACL - Access Control List for Server. (Click [**here**](https://docs.vngcloud.vn/vng-cloud-document/vn/vserver/compute-hcm03-1a/security/security-groups) to see instructions for creating and managing Security group)
 12. **Enter Authentication** information : Empty: the system will automatically generate and attach a password or the user can manually adjust and enable or disable skipping the first password change.
@@ -55,7 +55,7 @@ Below is a basic guide for connecting to Windows server on vServer, if you have 
 
 **To be able to connect to a Windows server, you first need to install RDP:** By default, Windows includes an RDP Client. To verify, type **mstsc** at the Command Prompt window. If your computer does not recognize this command, check the Windows home page and search for a download for the [Microsoft Remote Desktop](https://www.microsoft.com/vi-vn/windows) application .
 
-1. Access the Server management page in our driver at: [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)
+1. Access the Server management page in our driver at: [https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server)
 2. Select **the Server** you want to connect to, then select **Action, then select Connect.**
 3. On the **Connect to Server** page , select **the RDP (Window) tab**
 
@@ -95,7 +95,7 @@ After you have connected to Windows server, you need to make sure your Windows s
 
 ## Create a File Storage <a href="#khoi-tao-file-storage" id="khoi-tao-file-storage"></a>
 
-**Step 1:** Go to [https://efs.console.vngcloud.vn/overview](https://efs.console.vngcloud.vn/overview)
+**Step 1:** Go to [https://efs.console.greennode.ai/overview](https://efs.console.greennode.ai/overview)
 
 **Step 2:** Select **File Storage** then select **Create a File storage.**
 

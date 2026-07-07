@@ -2,7 +2,7 @@
 
 Rclone is a tool designed to synchronize data and directories across various cloud storage services, including AWS S3, Google Cloud, Dropbox, Google Drive, vStorage, and more. For additional information about Rclone, please visit: [https://rclone.org/](https://rclone.org/).
 
-To perform an upload to vStorage using Rclone on the Windows operating system, refer to: [https://vstorage.console.vngcloud.vn/integration/integration](https://vstorage.console.vngcloud.vn/integration/integration).
+To perform an upload to vStorage using Rclone on the Windows operating system, refer to: [https://vstorage.console.greennode.ai/integration/integration](https://vstorage.console.greennode.ai/integration/integration).
 
 **Note:**
 

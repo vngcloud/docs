@@ -10,7 +10,7 @@ Việc kích hoạt dịch vụ Snapshot là miễn phí. Tuy nhiên, sau khi b�
 
 **Để kích hoạt dịch vụ Snapshot Dịch vụ điện toán đám mây của GreenNode, vui lòng làm theo các bước sau:**
 
-1. Truy cập bảng điều khiển Snapshot tại [https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot/overview](https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot/overview).&#x20;
+1. Truy cập bảng điều khiển Snapshot tại [https://hcm-3.console.greennode.ai/vserver/block-store/snapshot/overview](https://hcm-3.console.greennode.ai/vserver/block-store/snapshot/overview).&#x20;
 2. Trên trang Snapshot, tìm và nhấp vào "**Kích hoạt dịch vụ Snapshot**".
 
 ***

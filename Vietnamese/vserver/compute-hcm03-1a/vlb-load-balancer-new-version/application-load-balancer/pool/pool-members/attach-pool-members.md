@@ -7,7 +7,7 @@ Sử dụng tài liệu này như là một hướng dẫn về cách thêm Memb
 
 #### 1. Đính kèm/Cập nhật Member là các máy chủ khả dụng <a href="#attachpoolmembers-1.dinhkem-capnhatmemberlacacmaychukhadung" id="attachpoolmembers-1.dinhkem-capnhatmemberlacacmaychukhadung"></a>
 
-* Truy cập vào trang chủ Load Balancer tại đây: [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+* Truy cập vào trang chủ Load Balancer tại đây: [https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)
 * Tại trang chủ Load Balancer, click chọn Load Balancer cần cấu hình. Tại phần thông tin chi tiết Load Balancer, chọn tab Pool. Tại phần danh sách Pool, nhấn chọn Pool cần đính kèm/chỉnh sửa Member.
 * Tại phần thông tin chi tiết Pool bên trái, kéo xuống mục Thông tin Member, nhấn nút "Chỉnh sửa Pool members / Edit Pool member".
 * Tại cửa sổ giao diện "Chỉnh sửa Pool Member", phần "Máy chủ khả dụng / Available instances" sẽ hiện lên danh sách máy chủ backend khả dụng thuộc subnet Load Balancer.
@@ -23,7 +23,7 @@ Sử dụng tài liệu này như là một hướng dẫn về cách thêm Memb
 
 Ngoài việc đính kèm các Pool member thông qua các máy chủ backend, người dùng còn có thể đính kèm các địa chỉ IP như là các Pool Member, tham khảo hướng dẫn dưới đây để thực hiện việc đính kèm.
 
-* Truy cập vào trang chủ Load Balancer tại đây: [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+* Truy cập vào trang chủ Load Balancer tại đây: [https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)
 * Tại trang chủ Load Balancer, click chọn Load Balancer cần cấu hình. Tại phần thông tin chi tiết Load Balancer, chọn tab Pool. Tại phần danh sách Pool, nhấn chọn Pool cần đính kèm/chỉnh sửa Member.
 * Tại phần thông tin chi tiết Pool bên trái, kéo xuống mục Thông tin Member, nhấn nút "Chỉnh sửa Pool members / Edit Pool member".
 * Tại cửa sổ giao diện "Chỉnh sửa Pool Member", tại phần "Custom Instances / Instances tùy chỉnh" thực hiện đính kèm địa chỉ IP vào Pool theo hướng dẫn sau:

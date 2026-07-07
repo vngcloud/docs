@@ -4,7 +4,7 @@ Private Locations allows you to monitor applications/services located on your in
 
 **To create a Private Location, follow the instructions below:**
 
-1. Log in to vMonitor Platform [here.](https://hcm-3.console.vngcloud.vn/vmonitor)
+1. Log in to vMonitor Platform [here.](https://hcm-3.console.greennode.ai/vmonitor)
 2. Select the Synthetic test folder **.**
 3. Select **Location.**
 4. Select **Create a location.**

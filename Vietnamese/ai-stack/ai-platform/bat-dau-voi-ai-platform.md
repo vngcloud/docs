@@ -9,7 +9,7 @@
 
 ### 1. Truy cập AI Platform
 
-* Truy cập AI Platform theo đường dẫn tại đây: [https://aiplatform.console.vngcloud.vn/](https://aiplatform.console.vngcloud.vn/)
+* Truy cập AI Platform theo đường dẫn tại đây: [https://aiplatform.console.greennode.ai/](https://aiplatform.console.greennode.ai/)
 * Nhập **tài khoản và mật khẩu** của bạn tại bước đăng nhập.
 
 ### [2. Khởi tạo Network Voume](https://docs.vngcloud.vn/vng-cloud-document/vn/ai-stack/ai-platform/network-volume)
@@ -22,7 +22,7 @@
 
 ### 6. Quản lý API keys
 
-Truy cập vào phần [API Keys](https://aiplatform.console.vngcloud.vn/keys) trong AI Platform:
+Truy cập vào phần [API Keys](https://aiplatform.console.greennode.ai/keys) trong AI Platform:
 
 <div align="center" data-full-width="false"><figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure></div>
 

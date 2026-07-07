@@ -10,7 +10,7 @@ On the vStorage system, S3 key is a key pair including access key and secret key
 
 To initialize an S3 key, follow the instructions below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn with ](https://vstorage.console.vngcloud.vn/storage/list)<mark style="background-color:orange;">Root User Account</mark> .
+1. Log in to [https://vstorage.console.greennode.ai with ](https://vstorage.console.greennode.ai/storage/list)<mark style="background-color:orange;">Root User Account</mark> .
 2. Select **Region HAN02.**
 3. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FzBejUW7ARqXZMMLNJPI2%252Fimage.png%3Falt%3Dmedia%26token%3D67d600f9-d645-434f-b403-be01af3603e0\&width=37\&dpr=4\&quality=100\&sign=46e8d333\&sv=2)in the project you just created and then select **Identity and Access Management.**
 4. Under **List of S3 keys of this project** , select **Generate S3 key** .
@@ -35,7 +35,7 @@ To initialize an S3 key, follow the instructions below:
 
 To initialize an S3 key, follow the instructions below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) with your <mark style="background-color:orange;">IAM User Account</mark> .
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) with your <mark style="background-color:orange;">IAM User Account</mark> .
 2. Select **Region HAN02.**
 3. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FzBejUW7ARqXZMMLNJPI2%252Fimage.png%3Falt%3Dmedia%26token%3D67d600f9-d645-434f-b403-be01af3603e0\&width=37\&dpr=4\&quality=100\&sign=46e8d333\&sv=2)in the project you just created and then select **Identity and Access Management.**
 4. Under **List of S3 keys of this project** , select **Generate S3 key** .
@@ -89,7 +89,7 @@ To integrate the S3 Browser tool with vStorage, you can follow the instructions 
 
 To cancel (delete) one or more previously created S3 keys, follow the instructions below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn with ](https://vstorage.console.vngcloud.vn/storage/list)Root User Account or IAM User Account .
+1. Log in to [https://vstorage.console.greennode.ai with ](https://vstorage.console.greennode.ai/storage/list)Root User Account or IAM User Account .
 2. Chọn **Region HAN02.**
 3. Select the icon  <img src="../../../../.gitbook/assets/image (526).png" alt="" data-size="line"> in the project you just created and then select **Identity and Access Management.**
 4. In List **of S3 keys of this project** , select **the S3 key** you want to delete and then select **Delete.**

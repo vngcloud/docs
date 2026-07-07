@@ -4,7 +4,7 @@ Mặc định khi mua gói Log Project, tuỳ vào gói mà bạn mua sẽ có L
 
 Nếu bạn có nhu cầu lưu trữ dữ liệu log lâu dài hơn những thời gian này, bạn có thể sử dụng tính năng Log Archive để đồng bộ dữ liệu sang vStorage để lưu trữ lâu dài. bạn có thể theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Log**.
 3. Chọn **Log project.**
 4. Chọn tên **log project** mà bạn muốn thực hiện **Archive**.

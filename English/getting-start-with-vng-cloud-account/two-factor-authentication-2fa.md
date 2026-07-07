@@ -1,6 +1,6 @@
 # Two-Factor Authentication (2FA)
 
-**Step 1**: Log in to the [Account management page](https://dashboard.console.vngcloud.vn/). From the account management functions menu, select "**2FA**".
+**Step 1**: Log in to the [Account management page](https://dashboard.console.greennode.ai/). From the account management functions menu, select "**2FA**".
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 

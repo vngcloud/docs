@@ -16,7 +16,7 @@ Marketplace phù hợp với:
 - Lập trình viên muốn có template agent để prototype nhanh
 - Các team không có chuyên môn về hạ tầng AI
 
-**Truy cập:** [https://aiplatform.console.vngcloud.vn/agent-marketplace](https://aiplatform.console.vngcloud.vn/agent-marketplace)
+**Truy cập:** [https://aiplatform.console.greennode.ai/agent-marketplace](https://aiplatform.console.greennode.ai/agent-marketplace)
 
 ---
 

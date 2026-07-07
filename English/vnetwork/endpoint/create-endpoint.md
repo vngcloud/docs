@@ -17,7 +17,7 @@ description: >-
 ## **Endpoint Creation Process**
 
 1. **Log in** to the GreenNode console at:\
-   [https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list](https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list)
+   [https://hcm-3-vnetwork.console.greennode.ai/endpoint/list](https://hcm-3-vnetwork.console.greennode.ai/endpoint/list)
    * Ensure that the selected **region is HCM**.
 2. From the left-hand navigation panel, click on the **“Endpoint”** menu.
 3. Click **“Create an Endpoint”** to begin the setup process.

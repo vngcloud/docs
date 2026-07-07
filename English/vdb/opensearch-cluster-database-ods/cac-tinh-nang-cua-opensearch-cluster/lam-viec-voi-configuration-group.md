@@ -16,7 +16,7 @@ If you want to customize configuration parameters, create **a new Configuration 
 
 ### **Initialize a Configuration Group**
 
-**Step 1:** Access [https://vdb.console.vngcloud.vn/](https://vdb.console.vngcloud.vn/)
+**Step 1:** Access [https://vdb.console.greennode.ai/](https://vdb.console.greennode.ai/)
 
 **Step 2:** Select **Configuration group** under the **OpenSearch** section.
 

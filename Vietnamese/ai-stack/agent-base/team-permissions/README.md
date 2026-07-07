@@ -2,7 +2,7 @@
 
 **Team & Permissions** giúp Root và Admin kiểm soát ai được truy cập AgentBase và với quyền gì — thông qua hệ thống role được AgentBase wrap sẵn, dễ gán mà không cần cấu hình IAM policy thủ công.
 
-Truy cập tại: [https://aiplatform.console.vngcloud.vn/team-permissions](https://aiplatform.console.vngcloud.vn/team-permissions)
+Truy cập tại: [https://aiplatform.console.greennode.ai/team-permissions](https://aiplatform.console.greennode.ai/team-permissions)
 
 ![Team & Permissions — danh sách thành viên](../../../.gitbook/assets/Agentbase-image/Members-list.png)
 

@@ -4,7 +4,7 @@ Về mặt tổng quan, việc khởi tạo policy có mối ràng buộc với 
 
 Để khởi tạo một policy sử dụng để truy cập vào tài nguyên vStorage, hãy làm theo các bước bên dưới:
 
-1. Đăng nhập vào [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) với tài khoản Root User Account.
+1. Đăng nhập vào [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/) với tài khoản Root User Account.
 2. Chọn thư mục **Policy**.
 3. Chọn **Create a Policy**.
 4. Nhập **Name** và **Description** nếu cho cho Policy.

@@ -6,7 +6,7 @@ To start using the service, you need to create a Synthetic Test quota. A Synthet
 
 Follow the steps below to create a project:
 
-1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor).
+1. Login into [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor).
 2. Select **Quota & Usage**.
 3. Select **Mua Synthetic test quota.**
 4. Select **Class** you need. Currently, we only provide the Basic class for you to experience.

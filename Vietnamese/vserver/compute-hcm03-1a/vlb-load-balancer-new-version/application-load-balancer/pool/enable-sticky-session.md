@@ -29,7 +29,7 @@ Tính năng **Enable Sticky Session** là một phần quan trọng của Load B
 
 #### 2. Hướng dẫn bật/tắt tính năng Sticky Session <a href="#enablestickysession-2.huongdanbat-tattinhnangstickysession" id="enablestickysession-2.huongdanbat-tattinhnangstickysession"></a>
 
-* Truy cập vào trang chủ Load Balancer tại đây: [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+* Truy cập vào trang chủ Load Balancer tại đây: [https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)
 * Tại trang chủ Load Balancer, click chọn Load Balancer cần cấu hình.
 * Tại phần thông tin chi tiết Load Balancer, chọn tab Pool.
 * Tại phần danh sách Pool, rê chuột vào Pool cần chỉnh sửa và nhấn vào biểu tượng Edit.

@@ -53,22 +53,22 @@ _chỉ để lại:_
 \
 **Bước 5:** Sau đó truy cập vào thư mục **vng-cloud-vserver/ examples/ modules/ vng-cloud-vserver/**, và mở file [**variable/tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/modules/vng-cloud-vserver/variable.tf)**:**
 
-* **project\_id**: thông tin project của bạn, bạn có thể lấy ở [{Tab Limit}](https://hcm-3.console.vngcloud.vn/vserver/limit) trên vServer Portal, Ví dụ: **pro-462803f3-6858-466f-bf05-df2b33faa360:**
+* **project\_id**: thông tin project của bạn, bạn có thể lấy ở [{Tab Limit}](https://hcm-3.console.greennode.ai/vserver/limit) trên vServer Portal, Ví dụ: **pro-462803f3-6858-466f-bf05-df2b33faa360:**
 
 <figure><img src="../../../.gitbook/assets/terraform_vserver_3.png" alt=""><figcaption></figcaption></figure>
 
-* **image\_id**: hệ điều hành để khởi tạo vServer ví dụ như: **img-b5bf635e-0456-4765-b493-31d5fcfc05aa** (1\_Ubuntu-22.04x64) ... bạn có thể xem danh sách Id khi tạo vServer trên Portal/ [{Tab System Image}](https://hcm-3.console.vngcloud.vn/vserver/v-server/system-image)
+* **image\_id**: hệ điều hành để khởi tạo vServer ví dụ như: **img-b5bf635e-0456-4765-b493-31d5fcfc05aa** (1\_Ubuntu-22.04x64) ... bạn có thể xem danh sách Id khi tạo vServer trên Portal/ [{Tab System Image}](https://hcm-3.console.greennode.ai/vserver/v-server/system-image)
 
 <figure><img src="../../../.gitbook/assets/terraform_vserver_4.png" alt=""><figcaption></figcaption></figure>
 
-* **flavor\_id**: cấu hình vServer mà bạn sẽ khởi tạo ví dụ: flav-e2028a81-cc75-47e4-8af1-9eef2f857f84 (s-general-2x4) ,... bạn có thể xem danh sách khi tạo vServer trên Portal/ [{Tab Flavors}](https://hcm-3.console.vngcloud.vn/vserver/v-server/flavor).
+* **flavor\_id**: cấu hình vServer mà bạn sẽ khởi tạo ví dụ: flav-e2028a81-cc75-47e4-8af1-9eef2f857f84 (s-general-2x4) ,... bạn có thể xem danh sách khi tạo vServer trên Portal/ [{Tab Flavors}](https://hcm-3.console.greennode.ai/vserver/v-server/flavor).
 
 <figure><img src="../../../.gitbook/assets/terraform_vserver_5.png" alt=""><figcaption></figcaption></figure>
 
 | `variable "project_id"` `{  type`    `= string  default = "pro-462803f3-6858-466f-bf05-df2b33faa360"}variable "s_general_4x8"` `{  type`    `= string  default = "flav-05f97524-0410-46a4-87a8-af92aa759231"}variable "ubuntu_20_04"` `{  type`    `= string  default = "img-a34d639b-e070-46ff-8b91-addf4fac45b4"}` |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-* **volume\_type\_name**: chỉ định IOPS cho root disk và data disk, ví dụ: **SSD-3000, SSD-200, SSD-400,** bạn có thể xem danh sách Volume Type trên vServer Portal/ [{Tab Volume Type}](https://hcm-3.console.vngcloud.vn/vserver/v-server/system-image)
+* **volume\_type\_name**: chỉ định IOPS cho root disk và data disk, ví dụ: **SSD-3000, SSD-200, SSD-400,** bạn có thể xem danh sách Volume Type trên vServer Portal/ [{Tab Volume Type}](https://hcm-3.console.greennode.ai/vserver/v-server/system-image)
 
 <figure><img src="../../../.gitbook/assets/terraform_vserver_6.png" alt=""><figcaption></figcaption></figure>
 
@@ -78,19 +78,19 @@ _chỉ để lại:_
 | `variable "ssd_3000"` `{  type`    `= string  default = "3000"}variable "root_disk_size"` `{  type`    `= number  default = 20}variable "data_disk_size"` `{  type`    `= number  default = 50}` |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
-* **network\_id**: chỉ định network id mà vServer sẽ được tạo trên đó, bạn có thể lấy từ tab [VPC](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), nếu chưa khởi tạo bất cứ network nào bạn có thể xem hướng dẫn [{Trang tạo network}](../network/virtual-private-cloud-vpc/)
-* **subnet\_id**: chỉ định subnet id mà vServer sẽ được tạo trên đó, bạn có thể lấy từ [{Tab VPC}](https://hcm-3.console.vngcloud.vn/vserver/network/vpc), nếu chưa khởi tạo bất cứ subnet nào bạn có thể xem hướng dẫn tại [{Trang tạo subnet}](../network/virtual-private-cloud-vpc/)
+* **network\_id**: chỉ định network id mà vServer sẽ được tạo trên đó, bạn có thể lấy từ tab [VPC](https://hcm-3.console.greennode.ai/vserver/network/vpc), nếu chưa khởi tạo bất cứ network nào bạn có thể xem hướng dẫn [{Trang tạo network}](../network/virtual-private-cloud-vpc/)
+* **subnet\_id**: chỉ định subnet id mà vServer sẽ được tạo trên đó, bạn có thể lấy từ [{Tab VPC}](https://hcm-3.console.greennode.ai/vserver/network/vpc), nếu chưa khởi tạo bất cứ subnet nào bạn có thể xem hướng dẫn tại [{Trang tạo subnet}](../network/virtual-private-cloud-vpc/)
 
 <figure><img src="../../../.gitbook/assets/terraform_vserver_7.png" alt=""><figcaption></figcaption></figure>
 
 | `variable "network_id"` `{  type`    `= string  default = "net-22581aed-a65d-4b1e-86d3-102d68e148e0"}variable "subnet_id"` `{  type`    `= string  default = "sub-5f101cba-7ce0-4084-8576-06b8dbfb298a"` |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-* **ssh\_key\_id**: chỉ định ssh key sẽ được inject vào vServer, bạn có thể lấy ở [{Tab SSH Keys}](https://hcm-3.console.vngcloud.vn/vserver/v-server/ssh-key), nếu chưa khởi tạo bất kì ssh key nào bạn có thể xem tại [{](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[T](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[rang tạo SSH key](../security/ssh-key-bo-khoa.md)[}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901):&#x20;
+* **ssh\_key\_id**: chỉ định ssh key sẽ được inject vào vServer, bạn có thể lấy ở [{Tab SSH Keys}](https://hcm-3.console.greennode.ai/vserver/v-server/ssh-key), nếu chưa khởi tạo bất kì ssh key nào bạn có thể xem tại [{](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[T](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[rang tạo SSH key](../security/ssh-key-bo-khoa.md)[}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901):&#x20;
 
 <figure><img src="../../../.gitbook/assets/terraform_vserver_8.png" alt=""><figcaption></figcaption></figure>
 
-* **security\_group\_id\_list**: chỉ định danh sách security group id cần gắn vào vServer, bạn có thể lấy ở [{Tab Security Groups}](https://hcm-3.console.vngcloud.vn/vserver/network/sec-group), nếu cần tạo thêm security group bạn có thể xem tại [{Trang tạo Security Group}](../security/security-groups.md)
+* **security\_group\_id\_list**: chỉ định danh sách security group id cần gắn vào vServer, bạn có thể lấy ở [{Tab Security Groups}](https://hcm-3.console.greennode.ai/vserver/network/sec-group), nếu cần tạo thêm security group bạn có thể xem tại [{Trang tạo Security Group}](../security/security-groups.md)
 
 <figure><img src="../../../.gitbook/assets/terraform_vserver_9.png" alt=""><figcaption></figcaption></figure>
 
@@ -127,7 +127,7 @@ Cuối cùng bạn chọn chạy dòng lệnh&#x20;
 
 và chọn **YES** để thực hiện việc khởi tạo vServer thông qua Terraform
 
-**Bước 8**: Bạn có thể lên [Portal ](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)để xem Server đang được khởi tạo từ Terraform:
+**Bước 8**: Bạn có thể lên [Portal ](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server)để xem Server đang được khởi tạo từ Terraform:
 
 <figure><img src="../../../.gitbook/assets/terraform_vserver_10.png" alt=""><figcaption></figcaption></figure>
 

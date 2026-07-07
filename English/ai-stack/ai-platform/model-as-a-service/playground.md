@@ -7,7 +7,7 @@ description: >-
 
 # Playground
 
-#### Access [Playground](https://aiplatform.console.vngcloud.vn/playground)​ <a href="#truy-cap-playground" id="truy-cap-playground"></a>
+#### Access [Playground](https://aiplatform.console.greennode.ai/playground)​ <a href="#truy-cap-playground" id="truy-cap-playground"></a>
 
 ### Model Testing Guide
 

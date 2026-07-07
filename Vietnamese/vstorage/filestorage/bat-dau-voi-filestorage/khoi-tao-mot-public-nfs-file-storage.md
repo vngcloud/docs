@@ -4,7 +4,7 @@
 
 ## Khởi tạo File Storage
 
-**Bước 1:** Truy cập vào [https://efs.console.vngcloud.vn/overview](https://efs.console.vngcloud.vn/overview)
+**Bước 1:** Truy cập vào [https://efs.console.greennode.ai/overview](https://efs.console.greennode.ai/overview)
 
 **Bước 2:** Chọn mục **File Storage** sau đó chọn **Create a File storage.**
 

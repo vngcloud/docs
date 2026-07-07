@@ -6,7 +6,7 @@ Bên dưới là các tính năng cơ bản khi bạn làm việc với object
 
 Để tải object lên một bucket, vui lòng thực hiện theo các bước bên dưới:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list). Chọn **project** và **bucket** muốn thực hiện tải lên object.
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list). Chọn **project** và **bucket** muốn thực hiện tải lên object.
 2. Chọn **Upload**.
 3. Chọn **Choose files to upload** hoặc kéo tệp tin từ thiết bị cá nhân của bạn muốn tải lên vào vùng này.
 4. Sau khi kéo hoặc chọn một hay nhiều tệp tin vào vùng này. Chọn **Upload**.
@@ -25,7 +25,7 @@ Bên dưới là các tính năng cơ bản khi bạn làm việc với object
 
 Để tải xuống một hoặc nhiêu objects, vui lòng thực hiện theo các bước bên dưới:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list). Chọn **project** và **bucket** muốn thực hiện tải xuống object.
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list). Chọn **project** và **bucket** muốn thực hiện tải xuống object.
 2. Chọn các **object** mà bạn muốn tải xuống.
 3. Chọn biểu tượng action, sau đó chọn nút **Download**
 
@@ -35,7 +35,7 @@ Bên dưới là các tính năng cơ bản khi bạn làm việc với object
 
 Để tìm kiếm object/ folder, vui lòng thực hiện theo các bước bên dưới:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list). Chọn **project** và **bucket** muốn thực hiện tìm kiếm object/ folder
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list). Chọn **project** và **bucket** muốn thực hiện tìm kiếm object/ folder
 2. Tại ô **Find objects by prefix**, bạn có thể thực hiện tìm kiếm object/ folder thông qua prefix bằng cách nhập chuỗi ký tự là tiền tố bạn muốn tìm kiếm.&#x20;
 3. Nhấn **Enter** hoặc chọn biểu tượng **Tìm kiếm**
 
@@ -45,7 +45,7 @@ Bên dưới là các tính năng cơ bản khi bạn làm việc với object
 
 Để di chuyển object, vui lòng thực hiện theo các bước bên dưới:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list). Chọn **project** và **bucket** chứa object mà bạn muốn di chuyển.
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list). Chọn **project** và **bucket** chứa object mà bạn muốn di chuyển.
 2. Chon biểu tượng **Action** và chọn **Move**
 
 <figure><img src="../../../../../.gitbook/assets/image (1032).png" alt=""><figcaption></figcaption></figure>
@@ -58,7 +58,7 @@ Bạn có thể di chuyển object qua các bucket trong một project. Hiện t
 
 Để sao chép object, vui lòng thực hiện theo các bước bên dưới:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list). Chọn **project** và **bucket** chứa object mà bạn muốn sao chép.
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list). Chọn **project** và **bucket** chứa object mà bạn muốn sao chép.
 2. Chon biểu tượng **Action** và chọn **Copy.**
 
 <figure><img src="../../../../../.gitbook/assets/image (1033).png" alt=""><figcaption></figcaption></figure>
@@ -71,7 +71,7 @@ Bạn có thể sao chép object qua các bucket trong một project. Hiện t�
 
 Để đổi tên object, vui lòng thực hiện theo các bước bên dưới:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list). Chọn **project** và **bucket** chứa object mà bạn muốn đổi tên.
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list). Chọn **project** và **bucket** chứa object mà bạn muốn đổi tên.
 2. Chon biểu tượng **Action** và chọn **Rename.**
 
 <figure><img src="../../../../../.gitbook/assets/image (1034).png" alt=""><figcaption></figcaption></figure>
@@ -86,7 +86,7 @@ Khi thực hiện thay đổi tên của object, bạn không nên thay đổi p
 
 Để thực hiện chia sẻ một object trong một bucket, bạn có thể thực hiện theo các bước bên dưới:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn **project, bucket** sau đó chọn một hoặc nhiều các **object** bạn muốn thực hiện chia sẻ.
 3. Chọn biểu tượng **Action** sau đó chọn **Share**
 4. Nhập **Expiration time** bạn muốn chia sẻ object: thời gian đường dẫn truy cập tới object có hiệu lực. Bạn có thể giới hạn số **ngày**, **giờ**, **phút** mà đường dẫn truy cập tới object tồn tại.
@@ -98,7 +98,7 @@ Khi thực hiện thay đổi tên của object, bạn không nên thay đổi p
 
 Để thiết lập metadata cho object, vui lòng thực hiện theo các bước bên dưới:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list). Chọn **project** và **bucket** chứa object mà bạn muốn thiết lập metadata.
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list). Chọn **project** và **bucket** chứa object mà bạn muốn thiết lập metadata.
 2. Chon biểu tượng **Action** và chọn **Metadata.**
 
 <figure><img src="../../../../../.gitbook/assets/image (1036).png" alt=""><figcaption></figcaption></figure>
@@ -121,7 +121,7 @@ Hiện tại chúng tôi đang hỗ trợ 8 loại key metadata mặc định ba
 
 Để xóa hoặc nhiều object, bạn có thể:
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **project, bucket** sau đó chọn các **object** bạn muốn thực hiện xó&#x61;**.**
 
@@ -135,7 +135,7 @@ Sau khi chọn Xóa, hệ thống sẽ tự động chuyển ra màn hình chín
 
 Để khởi tạo directory, bạn có thể:
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **project, bucket** muốn tạo directory
 
@@ -153,7 +153,7 @@ Sau khi tạo directory, bạn không thể thay đổi tên của directory. Ch
 
 Để xóa một directory, bạn có thể:
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **project, bucket** chứa directory mà bạn muốn thực hiện xóa
 

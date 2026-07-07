@@ -10,7 +10,7 @@ Một Metric quota là một thuật ngữ trên vMonitor Platform thể hiện 
 
 Để khởi tạo một Metric quota, hãy thực hiện theo các bước bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn **Quota & Usage**.
 3. Chọn **Buy metric quota.**
 4. Chọn **Class** mà bạn có nhu cầu sử dụn&#x67;**.** Chúng tôi cung cấp cho bạn chọn 1 trong 2 class bao gồm: Basic, Pro.
@@ -30,7 +30,7 @@ Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai
 
 Sau khi bạn khởi tạo Metric quota, bạn có thể xem thông tin gói Metric quota mà bạn vừa thực hiện khởi tạo bằng cách:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục **Metric**.
 4. Hệ thống hiển thị thông tin gói **Metric quota** đã được khởi tạo và **Usage** thực tế bạn đang sử dụng của gói **Metric quota** đó. Bạn có thể thực hiện Gia hạn trong vòng 7 ngày trước ngày hết hạn của gói Metric quota hoặc Tăng hạn mức gói lên cao hơn bằng cách chọn **Gia hạn** hoặc **Tăng hạn mức.**&#x20;
@@ -41,7 +41,7 @@ Sau khi bạn khởi tạo Metric quota, bạn có thể xem thông tin gói Met
 
 Để **gia hạn** một **Metric quota**, bạn có thể:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục **Metric.**
 4. Tại gói Metric quota đang sử dụng, chọn biểu tượng ![](http://docs.vngcloud.vn/download/thumbnails/49650622/image2024-2-28_22-39-59.png?version=1\&modificationDate=1709134800646\&api=v2) sau đó chọn **Renew**.
@@ -57,7 +57,7 @@ Cách tính chi phí gia hạn cho mỗi gói Metric quota được chúng tôi 
 
 Để **tăng hạn mức** một **Metric quota**, bạn có thể:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục **Metric**.
 4. Tại gói Metric quota đang sử dụng, chọn biểu tượng![](http://docs.vngcloud.vn/download/thumbnails/49650622/image2024-2-28_22-39-59.png?version=1\&modificationDate=1709134800646\&api=v2) sau đó chọn **Resize**.
@@ -75,7 +75,7 @@ Bạn đã khởi tạo một Metric quota ban đầu phù hợp với nhu cầu
 
 Để **xóa** một **Metric quota**, bạn có thể:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục **Metric**.
 4. Tại gói Metric quota đang sử dụng, chọn **Delete**.

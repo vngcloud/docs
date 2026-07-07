@@ -63,12 +63,12 @@ Tham khảo chi tiết hơn tại mục: [**Quản lý tài nguyên**](nguoi-dun
   * Hóa đơn theo tài nguyên sẽ được phát sinh mỗi cuối tháng, dựa vào sử dụng thực tế của khách hàng trong tháng đó.
   * Hóa đơn được phát sinh sẽ được tính là chưa thanh toán, người dùng có thể thanh toán qua hai hình thức sau:
     * Liên hệ đội ngũ Sale, Support
-    * Truy cập vào [**user portal, mục Billing history**](https://dashboard.console.vngcloud.vn/billing-report), chọn hóa đơn cần thanh toán và tiến hành thanh toán
+    * Truy cập vào [**user portal, mục Billing history**](https://dashboard.console.greennode.ai/billing-report), chọn hóa đơn cần thanh toán và tiến hành thanh toán
 
 #### 5. Quản lý thanh toán <a href="#nguoidungtratruoc-and-trasau-5.quanlythanhtoan" id="nguoidungtratruoc-and-trasau-5.quanlythanhtoan"></a>
 
 * **Người dùng trả trước**
-  * Lịch sử thanh toán sẽ xuất hiện ngay tại [**User Portal, mục Payment history**](https://dashboard.console.vngcloud.vn/payment-history) ngay sau khi người dùng thực hiện thanh toán tài nguyên
+  * Lịch sử thanh toán sẽ xuất hiện ngay tại [**User Portal, mục Payment history**](https://dashboard.console.greennode.ai/payment-history) ngay sau khi người dùng thực hiện thanh toán tài nguyên
 * **Người dùng trả sau**
   * Về cơ bản, người dùng trả sau sẽ có lịch sử thanh toán trong các trường hợp sau:
     * Hệ thống thanh toán hóa đơn tự động → Tìm hiểu thêm tại phần [**thanh toán hóa đơn tự động**](thanh-toan/thanh-toan-hoa-don-tu-dong.md)

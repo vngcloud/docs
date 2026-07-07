@@ -6,7 +6,7 @@ Bắt đầu sử dụng dịch vụ, bạn cần tạo một Metric quota. Mộ
 
 Thực hiện mua Metric Quota theo các bước bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn **Quota & Usage**.
 3. Chọn **Buy metric quota.**
 4. Chọn **Class** mà bạn có nhu cầu sử dụn&#x67;**.** Chúng tôi cung cấp cho bạn chọn 1 trong 2 class bao gồm: Basic, Pro.
@@ -24,7 +24,7 @@ Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai
 
 **Tạo Service Account và gắn policy:&#x20;**<mark style="color:red;">**vMonitorMetricPush**</mark>**&#x20;để có đủ quyền đẩy Metric về vMonitor (Có thể bỏ qua bước này nếu đã tạo trước đó)**
 
-Để tạo service account bạn truy cập tại [đây](https://iam.console.vngcloud.vn/service-accounts)
+Để tạo service account bạn truy cập tại [đây](https://iam.console.greennode.ai/service-accounts)
 
 1. Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account.
 2. Tìm và chọn **Policy:** **vMonitorMetricPush,** sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vMonitorMetricPush do GreenNode tạo ra chỉ chứa chính xác quyền đẩy metric về hệ thống.
@@ -56,7 +56,7 @@ https://raw.githubusercontent.com/vngcloud/vmonitor-metrics-agent/main/install.s
 
 Sau khi cài đặt Metric Agent theo hướng dẫn tại **Bước 3: Cài đặt Metric Agent trên Server** để đẩy metric về vMonitor Platform, chúng tôi sẽ tự động tạo **Dashboard mặc định** cho **Host** này. Để xem Dashboard mặc định này, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Chọn **Infrastructure List/ Host.**
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Chọn **Infrastructure List/ Host.**
 
 <figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
@@ -66,7 +66,7 @@ Sau khi cài đặt Metric Agent theo hướng dẫn tại **Bước 3: Cài đ�
 
 Với Dashboard Mặc định này, bạn sẽ có thể xem được các thông tin metric mà chúng tôi đã vẽ trước cho bạn bao gồm các biểu đồ về thông tin CPU, Memory, Load Avg, Disk, Network. Cũng trên **Dashboard mặc định** này bạn không thể thêm widget hay tuỳ chỉnh dashboard. Để thực hiện thay đổi hay tùy chỉnh Dashboard, bạn cần tạo dashboard mới hoặc **Tạo bản sao** từ **Dashboard mặc định** này ra và Chỉnh sửa. Để tạo bản sao Dashboard, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Chọn **Dashboard.**
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Chọn **Dashboard.**
 2. Trên **Dashboard Mặc định** muốn tạo bản sao, chọn <img src="https://docs.vngcloud.vn/download/thumbnails/49649936/image2023-4-18_11-33-12.png?version=1&#x26;modificationDate=1691483173000&#x26;api=v2" alt="" data-size="line">, sau đó chọn **Tạo bản sao Dashboard**.
 3. Nhập **Tên Dashboard.** Theo quy định của chúng tôi, tên Dashboard phải dài từ 1 (tối thiểu) đến 50 (tối đa) ký tự. Tên Dashboard có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), dấu gạch dưới (\_), dấu gạch ngang (-), ký tự (@), ký tự (/).
 4. Chọn **Tạo bản sao**.

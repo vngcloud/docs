@@ -6,7 +6,7 @@
 
 ## Prerequisites
 
-- An active [AI Platform](https://aiplatform.console.vngcloud.vn/) account
+- An active [AI Platform](https://aiplatform.console.greennode.ai/) account
 - An API key with status **ACTIVE**
 - A tool or SDK that supports a custom base URL (OpenAI SDK, LiteLLM, Cursor, Continue.dev, etc.)
 
@@ -18,7 +18,7 @@ The LLM URL for OpenAI-compatible clients is `https://maas-llm-aiplatform-hcm.ap
 
 ## Step 1 — Get an API key from AI Platform
 
-1. Log in to [AI Platform Console](https://aiplatform.console.vngcloud.vn/)
+1. Log in to [AI Platform Console](https://aiplatform.console.greennode.ai/)
 2. Go to **API Keys** → **Create API Key**
 3. Name the key (5–50 chars, lowercase letters, numbers, and hyphens)
 4. Copy the API key — it is shown only once
@@ -132,7 +132,7 @@ Expected result: a JSON response containing `choices[0].message.content`.
 ## Billing & Usage
 
 - Requests through GreenNode MaaS are billed in credit-tokens (1 credit = 1 VND)
-- View real-time usage on [AI Platform Console → Usage](https://aiplatform.console.vngcloud.vn/)
+- View real-time usage on [AI Platform Console → Usage](https://aiplatform.console.greennode.ai/)
 - **Prepaid:** credits are deducted every 5-minute collection cycle — when credits run out, the model is automatically disabled
 - **Postpaid:** usage is recorded as a debt with no quota limit
 
@@ -157,4 +157,4 @@ After configuration, the tool or SDK calls models through GreenNode MaaS instead
 | I want to... | Go to |
 |---|---|
 | Use Claude Code with MaaS | [Connect Claude Code to GreenNode MaaS](connect-claude-code-to-maas.md) |
-| View usage and billing | [AI Platform Console](https://aiplatform.console.vngcloud.vn/) |
+| View usage and billing | [AI Platform Console](https://aiplatform.console.greennode.ai/) |

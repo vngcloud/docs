@@ -18,7 +18,7 @@ Khi bạn sử dụng dịch vụ vBackup. Trong lần đầu tiên, chúng tôi
 
 ### **Tạo bản sao lưu theo bộ lịch Policy tại giao diện vBackup** <a href="#taobansaoluuchomaychuaotheobolichpolicy-taobansaoluutheobolichpolicytaigiaodienvbackup" id="taobansaoluuchomaychuaotheobolichpolicy-taobansaoluutheobolichpolicytaigiaodienvbackup"></a>
 
-1. Mở bảng điều khiển vBackup tại [https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-server](https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-server)
+1. Mở bảng điều khiển vBackup tại [https://hcm-3.console.greennode.ai/vserver/block-store/backup/backup-server](https://hcm-3.console.greennode.ai/vserver/block-store/backup/backup-server)
 2. Chọn **Tạo Backup Server**
 3. Chọn loại tài nguyên bạn muốn sao lưu, ở đây là danh sách Server và Volume đính kèm với nó
 4. Chọn **Policy** bạn muốn áp dụng cho bản sao lưu. Lưu ý bạn cần tạo một Policy để có thể thêm vào cho bản Backup Server của mình. Xem hướng dẫn tạo Policy tại [Tạo, chỉnh sửa, xóa chính sách sao lưu](chinh-sach-sao-luu/tao-chinh-sua-xoa-chinh-sach-sao-luu.md)
@@ -29,14 +29,14 @@ Khi bạn sử dụng dịch vụ vBackup. Trong lần đầu tiên, chúng tôi
 
 ### **Tạo bản sao lưu theo bộ lịch Policy khi khởi tạo Server** <a href="#taobansaoluuchomaychuaotheobolichpolicy-taobansaoluutheobolichpolicykhikhoitaoserver" id="taobansaoluuchomaychuaotheobolichpolicy-taobansaoluutheobolichpolicykhikhoitaoserver"></a>
 
-1. Ngoài cách tạo bản sao lưu tại giao diện vBackup, bạn cũng có thể tùy chọn tạo bản sao lưu khi tạo mới Server. Thực hiện mở bảng điều khiển Server tại [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)
+1. Ngoài cách tạo bản sao lưu tại giao diện vBackup, bạn cũng có thể tùy chọn tạo bản sao lưu khi tạo mới Server. Thực hiện mở bảng điều khiển Server tại [https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server)
 2. Chọn **Tạo mới một Server**
 3. Trang tạo mới Server sẽ hiển th&#x1ECB;**,** tại đây bạn có thể tích chọn vào ô tạo Backup Server tại mục **Cài đặt Khác**
 4. Sau đó khi Server được tạ&#x6F;**,** một bản Backup Server sẽ được tạo kèm cùng với bộ lịch Policy mặc định và hiển thị tại trang danh sách Backup Server
 
 ### **Tạo bản sao lưu theo bộ lịch Policy tại trang danh sách Server** <a href="#taobansaoluuchomaychuaotheobolichpolicy-taobansaoluutheobolichpolicytaitrangdanhsachserver" id="taobansaoluuchomaychuaotheobolichpolicy-taobansaoluutheobolichpolicytaitrangdanhsachserver"></a>
 
-1. Bạn có thể tạo nhanh bản sao lưu cho một hoặc nhiều Server tại trang quản lý danh sách các Server. Thực hiện mở bảng điều khiển Server tại [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)
+1. Bạn có thể tạo nhanh bản sao lưu cho một hoặc nhiều Server tại trang quản lý danh sách các Server. Thực hiện mở bảng điều khiển Server tại [https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server)
 2. Tích chọn một hoặc nhiều Server cần tạo bản sao lưu, sau đó nhấn vào vào thanh công cụ và chọn **Tạo Backup**
 3. Một hoặc nhiều bản Backup Server sẽ được tạo với bộ lịch Policy mặc định tùy theo số lượng Server bạn đã chọn để tạo bản sao lưu
 

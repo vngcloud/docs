@@ -22,6 +22,6 @@ Auto payment is a feature designed to support GreenNode users in paying their un
 
 * Send an email to the user notifying them of the bill that has just been paid.&#x20;
 * Generate transaction history on the user portal at:&#x20;
-  * Billing history: [https://dashboard.console.vngcloud.vn/billing-report](https://dashboard.console.vngcloud.vn/billing-report).
-  * Credit history: [https://dashboard.console.vngcloud.vn/credit-history](https://dashboard.console.vngcloud.vn/credit-history).
-  * Payment history: [https://dashboard.console.vngcloud.vn/payment-history](https://dashboard.console.vngcloud.vn/payment-history).
+  * Billing history: [https://dashboard.console.greennode.ai/billing-report](https://dashboard.console.greennode.ai/billing-report).
+  * Credit history: [https://dashboard.console.greennode.ai/credit-history](https://dashboard.console.greennode.ai/credit-history).
+  * Payment history: [https://dashboard.console.greennode.ai/payment-history](https://dashboard.console.greennode.ai/payment-history).

@@ -13,7 +13,7 @@ Tại GreenNode Service, chúng tôi hỗ trợ người dùng thay đổi mục
   * Chọn thanh toán bằng GreenNode credit hoặc trực tiếp từ cổng thanh toán
 * **Bước 5:** Sau khi thanh toán thành công, người dùng sẽ được chuyển hướng về trang web quản lý tài nguyên để kiểm tra thông tin và tiếp tục sử dụng tài nguyên
 
-Lúc này, hệ thống đã ghi nhận tài nguyên hoàn tất quá trình chuyển đổi sang dịch vụ trả phí, người dùng có thể kiểm tra thông tin hóa đơn dịch vụ (ngoại trừ dịch vụ K8s (vContainer)) tại trang web vConsole - Lịch sử hóa đơn: [https://dashboard.console.vngcloud.vn/billing-report](https://dashboard.console.vngcloud.vn/billing-report)
+Lúc này, hệ thống đã ghi nhận tài nguyên hoàn tất quá trình chuyển đổi sang dịch vụ trả phí, người dùng có thể kiểm tra thông tin hóa đơn dịch vụ (ngoại trừ dịch vụ K8s (vContainer)) tại trang web vConsole - Lịch sử hóa đơn: [https://dashboard.console.greennode.ai/billing-report](https://dashboard.console.greennode.ai/billing-report)
 
 ### **Chuyển đổi tài nguyên K8s (vContainer)** <a href="#chuyendoihinhthucsudungtupocsangdichvutraphi-chuyendoitainguyenk8s-vcontainer" id="chuyendoihinhthucsudungtupocsangdichvutraphi-chuyendoitainguyenk8s-vcontainer"></a>
 
@@ -21,7 +21,7 @@ Lúc này, hệ thống đã ghi nhận tài nguyên hoàn tất quá trình chu
 
 Nhằm giúp người dùng có cái nhìn chi tiết hơn về quá trình trên, dưới đây là các bước hướng dẫn chuyển đổi một loại tài nguyên, cụ thể là Cluster (trong nhóm dịch vụ K8s/vContainer) sang dịch vụ trả phí:
 
-* **Bước 1:** Truy cập vào trang web quản lý tài nguyên tại vServer portal [https://hcm-3.console.vngcloud.vn/vserver/billing](https://hcm-3.console.vngcloud.vn/vserver/billing)
+* **Bước 1:** Truy cập vào trang web quản lý tài nguyên tại vServer portal [https://hcm-3.console.greennode.ai/vserver/billing](https://hcm-3.console.greennode.ai/vserver/billing)
 * **Bước 2:** Chọn cluster POC cần chuyển đổi (sử dụng thanh công cụ tìm kiếm, tìm theo tên/định danh tài nguyên để lọc ra cluster cần tìm). Tham khảo hình bên dưới:
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59804267/image2023-11-29_16-42-44.png?version=1&#x26;modificationDate=1701250964000&#x26;api=v2" alt=""><figcaption></figcaption></figure>

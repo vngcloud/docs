@@ -16,7 +16,7 @@
 
 Để khởi tạo một Cluster, hãy làm theo các bước bên dưới:
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Bước 1:** Truy cập vào [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Bước 2:** Tại màn hình **Overview**, chọn **Activate.**
 
@@ -34,7 +34,7 @@
 
 Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiện kết nối và kiểm tra thông tin Cluster vừa tạo theo các bước:
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
+**Bước 1:** Truy cập vào [https://vks.console.greennode.ai/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
 **Bước 2:** Danh sách Cluster được hiển thị, chọn **Download Config File** để thực hiện tải xuống file kubeconfig. File này sẽ giúp bạn có toàn quyền truy cập vào Cluster của bạn.
 
@@ -74,7 +74,7 @@ ng-0f4ed631-1252-49f7-8dfc-386fa0b2d29b-a8ef0   Ready      <none>   28m   v1.28.
 
 **Khởi tạo Service Account**
 
-* Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://iam.console.vngcloud.vn/service-accounts) và thực hiện theo các bước sau:
+* Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://iam.console.greennode.ai/service-accounts) và thực hiện theo các bước sau:
   * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
   * Tìm và chọn **Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do GreenNode tạo ra, bạn không thể xóa các policy này.
   * Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
@@ -265,7 +265,7 @@ Snapshot là phương pháp sao lưu giữ liệu với chi phí thấp, thuận
 
 Để có thể tạo Snapshot, bạn cần thực hiện Activate Snapshot Service. Bạn sẽ không bị tính phí khi kích hoạt dịch vụ snapshot. Sau khi bạn tạo snapshot, chi phí sẽ được tính dựa trên dung lượng lưu trữ và thời gian lưu trữ của các bản snapshot này. Thực hiện theo các bước sau đây để kích hoạt dịch vụ Snapshot:
 
-**Bước 1:** Truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot/overview](https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot/overview)
+**Bước 1:** Truy cập vào [https://hcm-3.console.greennode.ai/vserver/block-store/snapshot/overview](https://hcm-3.console.greennode.ai/vserver/block-store/snapshot/overview)
 
 **Bước 2:** Chọn **Activate Snapshot Service**.
 

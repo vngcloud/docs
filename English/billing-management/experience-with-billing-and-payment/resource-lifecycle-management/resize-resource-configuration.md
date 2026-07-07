@@ -19,7 +19,7 @@ The resource configuration change feature applies to:&#x20;
 * Step 2: Pay for resources -> See detailed instructions here.
 * Step 3: Check resource and payment information&#x20;
   * 3.1 Check resource information on the product page.
-  * 3.2 Check payment information and invoices at User Portal: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/).
+  * 3.2 Check payment information and invoices at User Portal: [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/).
 * Step 4: System Implementation&#x20;
   * Email notification of the newly changed resource configuration.
   * Invoice generated according to the new configuration.

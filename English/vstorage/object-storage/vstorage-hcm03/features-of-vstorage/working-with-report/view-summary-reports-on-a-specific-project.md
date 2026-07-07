@@ -4,7 +4,7 @@ To generate a summary report for specific projects in a particular region, you c
 
 &#x20;Use vStorage Portal
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).\
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).\
 2\. Select **Reports**.\
 3\. Choose the desired **region** and **project** for which you want to view the report.\
 4\. Select the time period you want to consolidate the data for the report. By default, we display the report for the current day. However, you can adjust the time range to view reports for up to 3 months. You have three options to choose from:

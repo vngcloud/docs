@@ -2,7 +2,7 @@
 
 Để thực hiện xuất dữ liệu logs mà bạn vừa tìm kiếm, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
+1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.greennode.ai/vmonitor)&#x20;
 2. Chọn thư mục **Log.**
 3. Chọn **Log search**.
 4. Thực hiện tìm kiếm logs theo hướng dẫn tại [Search logs](search-logs.md).

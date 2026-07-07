@@ -6,7 +6,7 @@ To renew a project, you can:
 
 &#x20;Use vStorage Portal
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 2. Select the icon ![](https://docs.vngcloud.vn/download/thumbnails/67994045/image2023-3-6\_10-6-56.png?version=1\&modificationDate=1700549566000\&api=v2) for the **project** you want to renew. Choose **Renew**.
 3. Choose the desired storage **period** for renewal. We offer storage period including: 1 month, 3 months, 6 months, 12 months, 24 months, 36 months. When you select the renewal period, the system will automatically calculate the effective time of the new storage period and the total amount you need to pay for renewing the **project**.
 4. Select **Checkout** after reviewing the shopping cart and payment method.

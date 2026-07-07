@@ -4,7 +4,7 @@ You can also rename an object that you have uploaded to a container. To rename a
 
 &#x20;Use vStorage Portal
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 
 2\. Choose the **project**, **container**, and then select the **object** you want to rename.
 

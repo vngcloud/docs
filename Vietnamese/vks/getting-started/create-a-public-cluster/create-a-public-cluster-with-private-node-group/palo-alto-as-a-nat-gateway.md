@@ -16,7 +16,7 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 ## Khởi tạo Palo Alto <a href="#toc165621057" id="toc165621057"></a>
 
-**Bước 1:** Truy cập vào [https://marketplace.console.vngcloud.vn/](https://marketplace.console.vngcloud.vn/)
+**Bước 1:** Truy cập vào [https://marketplace.console.greennode.ai/](https://marketplace.console.greennode.ai/)
 
 **Bước 2:** Tại màn hình chính, thực hiện tìm kiếm **Palo Alto**, tại dịch vụ **Palo Alto**, chọn **Launch**.
 
@@ -28,7 +28,7 @@ Sử dụng hướng dẫn bên dưới dể làm việc với Private Node grou
 
 ## Cấu hình thông số cho Palo Alto <a href="#toc165621058" id="toc165621058"></a>
 
-**Bước 1:** Sau khi khởi tạo Palo Alto từ vMarketPlace theo hướng dẫn bên trên, bạn có thể truy cập vào giao diện vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) để kiểm tra server chạy Palo Alto đã được khởi tạo xong chưa. <mark style="color:red;">**Tiếp theo, bạn mở rule Any trên Security Group cho server Palo Alto vừa tạo. Việc mở rule Any trên Security Group sẽ cho phép tất cả lưu lượng truy cập đến server Palo Alto.**</mark>
+**Bước 1:** Sau khi khởi tạo Palo Alto từ vMarketPlace theo hướng dẫn bên trên, bạn có thể truy cập vào giao diện vServer tại [đây](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server) để kiểm tra server chạy Palo Alto đã được khởi tạo xong chưa. <mark style="color:red;">**Tiếp theo, bạn mở rule Any trên Security Group cho server Palo Alto vừa tạo. Việc mở rule Any trên Security Group sẽ cho phép tất cả lưu lượng truy cập đến server Palo Alto.**</mark>
 
 <figure><img src="../../../../.gitbook/assets/pfsense_1.png" alt=""><figcaption></figcaption></figure>
 
@@ -151,7 +151,7 @@ Lưu ý: Cần thay đổi **IP Address** thành địa chỉ **Static IP** mà 
 
 Sau khi Palo Alto được khởi tạo và cấu hình thành công, bạn cần tạo một Route table để kết nối tới các mạng khác nhau. Cụ thể thực hiện theo các bước sau để tạo Route table:
 
-**Bước 1:** Truy cập vào [https://hcm-3.console.vngcloud.vn/vserver/network/route-table](https://hcm-3.console.vngcloud.vn/vserver/network/route-table)
+**Bước 1:** Truy cập vào [https://hcm-3.console.greennode.ai/vserver/network/route-table](https://hcm-3.console.greennode.ai/vserver/network/route-table)
 
 **Bước 2:** Tại thanh menu điều hướng, chọn **Tab Network/ Route table.**
 

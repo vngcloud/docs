@@ -10,7 +10,7 @@ Create VPN Step By Step
 
 ## **Step 1:** Access the VPN Creation Page from the vNetwork Dashboard
 
-* Access GreenNode successfully, at the main dashboard, select **vNetwork** Service to redirect to vNetwork Dashboard or click here to access HCM03 vNetwork Dashboard [https://hcm-3-vnetwork.console.vngcloud.vn/overview](https://hcm-3-vnetwork.console.vngcloud.vn/overview).
+* Access GreenNode successfully, at the main dashboard, select **vNetwork** Service to redirect to vNetwork Dashboard or click here to access HCM03 vNetwork Dashboard [https://hcm-3-vnetwork.console.greennode.ai/overview](https://hcm-3-vnetwork.console.greennode.ai/overview).
 * On the left menu of the vNetwork Dashboard, choose the VPN Site To Site Menu, the VPN list will be shown at the center.
 * Click "<mark style="color:blue;">**Create new VPN Connection**</mark>".
 
@@ -50,7 +50,7 @@ By default, when creating a **VPN Site-to-Site**, the system requires the creati
   * **IPsec Policy**: Configure for Phase 2 of VPN IPSEC (the Configuration at both sites must be the same).
 * On the right side of the Create Page, review carefully the price of the selected VPN Package, click <mark style="color:blue;">**"Create A VPN Connection"**</mark> to confirm, and go to the checkout page
 
-_-> After checkout successfully, the system will start creating a connection with the above VPN input information and redirect to the VPN List Page_ [_https://hcm-3-vnetwork.console.vngcloud.vn/vpn/list_](https://hcm-3-vnetwork.console.vngcloud.vn/vpn/list)
+_-> After checkout successfully, the system will start creating a connection with the above VPN input information and redirect to the VPN List Page_ [_https://hcm-3-vnetwork.console.greennode.ai/vpn/list_](https://hcm-3-vnetwork.console.greennode.ai/vpn/list)
 
 {% hint style="success" %}
 **Status of VPN Initialization:**
@@ -72,7 +72,7 @@ _-> After checkout successfully, the system will start creating a connection wit
 
 ## **Step 4:** Create a Route to route traffic to remote LAN CIDR through VPN **Private Gateway IP** _(view at Detail Page)_
 
-Access vServer Router Tables to config routing for VPN [https://hcm-3.console.vngcloud.vn/vserver/network/route-table](https://hcm-3.console.vngcloud.vn/vserver/network/route-table)
+Access vServer Router Tables to config routing for VPN [https://hcm-3.console.greennode.ai/vserver/network/route-table](https://hcm-3.console.greennode.ai/vserver/network/route-table)
 
 * Destination: Remote Private CIDR
 * Target: Local Private Gateway

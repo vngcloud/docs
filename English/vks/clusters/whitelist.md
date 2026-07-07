@@ -68,7 +68,7 @@ Make sure to whitelist the **IP address of the NAT Gateway**.
 
 To use the IP Whitelist feature on Private Node Group mode, you need to perform the following steps:
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2: At the Overview** screen , select the **Kubernetes Cluster menu.**
 

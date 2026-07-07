@@ -12,7 +12,7 @@
 
 ## Mở tab Members
 
-Vào [Team & Permissions](https://aiplatform.console.vngcloud.vn/team-permissions) — tab **Members** mở mặc định.
+Vào [Team & Permissions](https://aiplatform.console.greennode.ai/team-permissions) — tab **Members** mở mặc định.
 
 ![Members list](../../../.gitbook/assets/Agentbase-image/Members-list.png)
 
@@ -38,7 +38,7 @@ Thành viên mới không cần tạo tài khoản — họ đăng nhập qua **
 
 | Trường hợp | Kết quả |
 |---|---|
-| **Chưa có IDP** | Popup thông báo — truy cập [IAM Identity Providers](https://iam.console.vngcloud.vn/identity-providers) để tạo IDP trước, sau đó quay lại mời thành viên |
+| **Chưa có IDP** | Popup thông báo — truy cập [IAM Identity Providers](https://iam.console.greennode.ai/identity-providers) để tạo IDP trước, sau đó quay lại mời thành viên |
 | **Đã có IDP** | Popup danh sách IDP: Name / Type / Login URL / icon **Copy** |
 
 **Bước 3:** Nhấp icon **Copy** → gửi Login URL cho thành viên mới

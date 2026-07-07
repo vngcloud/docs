@@ -8,7 +8,7 @@ This guide is intended to guide users to quickly get started with IAM in vMonito
 
 1. Accessing the IAM Console&#x20;
 
-* Open your web browser and access the IAM Console URL: https://iam.console.vngcloud.vn/
+* Open your web browser and access the IAM Console URL: https://iam.console.greennode.ai/
 * Log in as a Root User Account or a User Account with access rights. You will need to provide a username/email and password when logging in.&#x20;
 * After logging in, you will see the IAM Console interface, which provides an overview of your IAM configuration.
 
@@ -21,7 +21,7 @@ This guide is intended to guide users to quickly get started with IAM in vMonito
 
 3. Access the vMonitor Portal with the IAM User Account&#x20;
 
-* Open your web browser and go to the vMonitor website URL: [https://console.vstorage.vngcloud.vn/ ](https://vmonitor.console.vngcloud.vn/)
+* Open your web browser and go to the vMonitor website URL: [https://console.vstorage.vngcloud.vn/ ](https://vmonitor.console.greennode.ai/)
 * Remember to log out of the Root User account and log in with the IAM User Account created in step 2.&#x20;
 * After logging in, you will see an overview of the vMonitor website.&#x20;
 * Try to access the Network, Server, Bock store, Load balancer, Container & Billing pages, you will see a notification about limited permissions as below.
@@ -33,7 +33,7 @@ Notice
 
 **4.** Assign Permissions to IAM Accounts&#x20;
 
-* Open your web browser and go to the IAM Console URL: https://iam.console.vngcloud.vn/
+* Open your web browser and go to the IAM Console URL: https://iam.console.greennode.ai/
 * Log in as the Root User account. You may need to provide a username and password or use other authentication methods such as single sign-on (SSO) if configured.&#x20;
 * Once logged in, you will see the IAM Console interface, which provides an overview of your IAM configuration.&#x20;
 * Click on "User account" in the left menu.

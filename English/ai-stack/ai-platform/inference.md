@@ -15,7 +15,7 @@ Overview of Inference
 
 #### **Step 1: Access the Inference Interface**
 
-1. Log in to [GreenNode AI Platform](https://aiplatform.console.vngcloud.vn/overview)..
+1. Log in to [GreenNode AI Platform](https://aiplatform.console.greennode.ai/overview)..
 2. Navigate to Inference from the left-hand menu.
 3. Click the “**Create endpoint**” button.
 

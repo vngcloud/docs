@@ -4,7 +4,7 @@ Use this guide to modify or remove listeners from your Application Load Balancer
 
 #### Updating a Listener
 
-1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb`.
+1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb`.
 2. **Select Your Load Balancer:** Click on the Load Balancer containing the listener you want to edit.
 3. **Go to the Listener Tab:** In the Load Balancer details page, select the "Listener" tab.
 4. **Review Listener Details:** Click on the listener you want to edit in the list. Review its details on the right side of the screen, including:
@@ -24,7 +24,7 @@ Use this guide to modify or remove listeners from your Application Load Balancer
 
 #### Deleting a Listener
 
-1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb`.
+1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb`.
 2. **Select Your Load Balancer:** Click on the Load Balancer containing the listener you want to delete.
 3. **Go to the Listener Tab:** In the Load Balancer details page, select the "Listener" tab.
 4. **Click "Delete":** Click the "Delete" icon next to the listener you want to remove.

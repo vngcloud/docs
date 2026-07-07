@@ -37,7 +37,7 @@ IAM user cần được cấp đầy đủ các quyền dưới đây (admin nê
 
 **Bước 1**:
 
-1. Truy cập [VKS Console](https://vks.console.vngcloud.vn/overview).
+1. Truy cập [VKS Console](https://vks.console.greennode.ai/overview).
 2. Nhấn Create a Kubernetes **Cluster**/**Node Group**.
 
 **Bước 2**: Điền tag tại **Node Group** Metadata Setting
@@ -51,7 +51,7 @@ IAM user cần được cấp đầy đủ các quyền dưới đây (admin nê
 
 **Bước 1**: Mở **Cluster** Detail
 
-1. Truy cập [VKS Console](https://vks.console.vngcloud.vn/overview).
+1. Truy cập [VKS Console](https://vks.console.greennode.ai/overview).
 2. Chọn **Cluster** chứa **Node Group** cần chỉnh sửa tag.
 
 **Bước 2**: Chọn action **Edit Metadata**

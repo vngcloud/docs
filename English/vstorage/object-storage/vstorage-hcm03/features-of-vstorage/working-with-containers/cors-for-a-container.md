@@ -10,7 +10,7 @@ To share CORS container resources, you can follow the instructions below:
 
 &#x20;Use vStorage Portal
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 
 2\. Select the **project** and choose the **container** you want to share CORS resources.
 

@@ -2,7 +2,7 @@
 
 To initialize an S3 key, follow the instructions below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).&#x20;
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).&#x20;
 2. Select **Region HAN02.**
 3. Select the icon <img src="../../../../.gitbook/assets/image (526).png" alt="" data-size="line"> in the project you just created and then select the **Identity and Access Management** ta&#x62;**.**
 4. In the **List of S3 keys of this project** section, select **Generate S3 key**.

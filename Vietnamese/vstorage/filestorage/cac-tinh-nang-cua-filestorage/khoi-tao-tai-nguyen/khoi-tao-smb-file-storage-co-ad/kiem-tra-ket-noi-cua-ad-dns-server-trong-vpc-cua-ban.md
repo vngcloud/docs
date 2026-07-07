@@ -41,7 +41,7 @@ Giả sử, bạn đã khởi tạo:&#x20;
 
 Bạn có thể kiểm tra việc kết nối này theo hướng dẫn sau:&#x20;
 
-### **Bước 1: Truy cập vServer Portal** tại [đây ](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server).
+### **Bước 1: Truy cập vServer Portal** tại [đây ](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server).
 
 ### **Bước 2: Tạo CentOS Server**
 

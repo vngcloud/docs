@@ -6,7 +6,7 @@ Bắt đầu sử dụng dịch vụ, bạn cần tạo một Log project. Một
 
 Thực hiện tạo project theo các bước bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn **Quota & Usage**.
 3. Chọn **Mua một log project.**
 4. Nhập **Tên Log project.** Theo quy định của chúng tôi, **Tên Log project** phải dài từ 1 (tối thiểu) đến 63 (tối đa) ký tự. **Tên Log project** có thể bao gồm các chữ cái viết thường (a-z), số (0-9), dấu gạch ngang (-). **Tên Log project** phải bắt đầu bằng một chữ cái viết thường và kết thúc bằng một chữ cái viết thường hoặc một chữ số.
@@ -26,7 +26,7 @@ Sau khi mua Log Project, hệ thống sẽ tự động sinh ra certificate cho 
 
 Thực hiện các bước bên dưới để tải certificate và các scitps cài đặt
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Chọn **Integration.**
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Chọn **Integration.**
 2. Chọn **Certificate.**
 3. Chọn **Tải xuống** để tải thông tin certificate về server mà bạn muốn đẩy logs về.
 
@@ -49,7 +49,7 @@ sudo ./filebeat.sh <path-to-file-log>
 
 Để thực hiện tìm kiếm và phân tích log, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Chọn **Log.**
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Chọn **Log.**
 2. Chọn **Log search**.
 3. Chọn **Log project** nào bạn cần xem và phân tích logs. Vị trí chọn log project được hiển thị như hình bên dưới:
 
@@ -61,7 +61,7 @@ sudo ./filebeat.sh <path-to-file-log>
 
 Để thực hiện thống kê log bằng Dashboard, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Chọn **Dashboard.**
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Chọn **Dashboard.**
 2. Chọn **Create a Dashboard.**
 3. Trong màn hình dashboard details, chọn **Add a widget ⇒** chọn **Log** và chỉnh sửa query theo nhu cầu của bạn.
 

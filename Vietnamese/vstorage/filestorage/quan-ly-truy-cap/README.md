@@ -30,7 +30,7 @@ Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông t
 
 Để khởi tạo tài khoản người dùng IAM, trước tiên bạn vui lòng tham khảo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) với tài khoản Root User Account.
+1. Đăng nhập vào [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/) với tài khoản Root User Account.
 2. Chọn mục **User Account**.
 3. Chọn **Create a User Account.**
 4. Tại mục **Account username**, nhập **Account username** mà bạn mong muốn. Tên của IAM User Account phải dài từ 5 (tối thiểu) đến 50 (tối đa) ký tự và chỉ có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), dấu gạch dưới (\_), dấu gạch ngang (-). Tên của IAM User Account không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, mật khẩu đăng nhập,...) cũng như tên IAM User Account phải là duy nhất trên một tài khoản GreenNode cho đến khi IAM User Account đó bị xóa. Ví dụ tên IAM User Account sau là hợp lệ: IAM\_Phong\_kinh\_doanh\_01.
@@ -49,7 +49,7 @@ Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông t
 
 Để khởi tạo một policy sử dụng để truy cập vào tài nguyên File Storage, hãy làm theo các bước bên dưới:
 
-1. Đăng nhập vào [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) với tài khoản Root User Account.
+1. Đăng nhập vào [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/) với tài khoản Root User Account.
 2. Chọn thư mục **Policy**.
 3. Chọn **Create a Policy**.
 4. Nhập **Name** và **Description** nếu cho cho Policy.
@@ -76,7 +76,7 @@ Sau khi bạn thực hiện 8 bước bên trên, policy cho file storage đã �
 
 Sau khi bạn đã khởi tạo IAM User Account và Policy mong muốn, tiếp theo bạn cần liên kết tài khoản IAM User Account vào policy theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) với tài khoản Root User Account.
+1. Đăng nhập vào [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/) với tài khoản Root User Account.
 2. Chọn thư mục **User Account.**
 3. Chọn **IAM User Account** muốn thực hiện gán quyền.
 4. Chọn **Attach policies**.
@@ -89,7 +89,7 @@ Sau khi bạn đã khởi tạo IAM User Account và Policy mong muốn, tiếp 
 
 Thực hiện theo các bước bên dưới để đăng nhập vào File Storage với tài khoản người dùng Root:
 
-1. Truy cập vào trang đăng nhập của dịch vụ File storage: [https://signin.vngcloud.vn.](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=f09ybYi-GTZYYwuHVRv2f1UPRhjM_wI-0J_aXpbUsv4\&codeChallengeMethod=S256\&appState=55eab53a-30f3-43ae-837b-bf3a469dd9db\&redirectUri=https%3A%2F%2Fdashboard.console.vngcloud.vn%2F)
+1. Truy cập vào trang đăng nhập của dịch vụ File storage: [https://signin.vngcloud.vn.](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=f09ybYi-GTZYYwuHVRv2f1UPRhjM_wI-0J_aXpbUsv4\&codeChallengeMethod=S256\&appState=55eab53a-30f3-43ae-837b-bf3a469dd9db\&redirectUri=https%3A%2F%2Fdashboard.console.greennode.ai%2F)
 2. Trang đăng nhập chính sẽ xuất hiện. Chọn **ĐĂNG NHẬP VỚI ROOT USER**.
 3. Nhập địa chỉ **email** và **mật khẩu** được liên kết với tài khoản của bạn và chọn **Đăng nhập**. Nếu trước đó bạn đã đăng nhập với tư cách người dùng root trong trình duyệt này, thì trình duyệt của bạn có thể nhớ địa chỉ email cho tài khoản Root User Account. Nếu vậy, bạn sẽ thấy màn hình hiển thị trong bước tiếp theo. Nếu trước đây bạn đã đăng nhập với tư cách là người dùng IAM sử dụng tài khoản người dùng IAM (IAM User Account) bằng trình duyệt này, thì trình duyệt của bạn có thể hiển thị trang đăng nhập của người dùng IAM thay thế. Để quay lại trang đăng nhập chính, hãy chọn **ĐĂNG NHẬP VỚI ROOT USER.**
 4. Sau khi đăng nhập thành công, bạn có toàn quyền truy cập và thực hiện các tính năng được cung cấp bởi dịch vụ File storage trên các tài nguyên của bạn.
@@ -98,7 +98,7 @@ Thực hiện theo các bước bên dưới để đăng nhập vào File Stora
 
 Thực hiện theo các bước bên dưới để đăng nhập vào File storage với tài khoản người dùng IAM:
 
-1. Truy cập vào trang đăng nhập của dịch vụ File storage: [https://signin.vngcloud.vn.](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=f09ybYi-GTZYYwuHVRv2f1UPRhjM_wI-0J_aXpbUsv4\&codeChallengeMethod=S256\&appState=55eab53a-30f3-43ae-837b-bf3a469dd9db\&redirectUri=https%3A%2F%2Fdashboard.console.vngcloud.vn%2F)
+1. Truy cập vào trang đăng nhập của dịch vụ File storage: [https://signin.vngcloud.vn.](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=f09ybYi-GTZYYwuHVRv2f1UPRhjM_wI-0J_aXpbUsv4\&codeChallengeMethod=S256\&appState=55eab53a-30f3-43ae-837b-bf3a469dd9db\&redirectUri=https%3A%2F%2Fdashboard.console.greennode.ai%2F)
 2. Trang đăng nhập chính sẽ xuất hiện. Chọn **ĐĂNG NHẬP VỚI IAM USER ACCOUNT**.
 3. Nhập địa chỉ **email** của người dùng Root khi đăng ký tài khoản GreenNode.
 4. Nhập **tên người dùng** và **mật khẩu** của tài khoản IAM user account được tạo trên hệ thống vIAM.

@@ -10,8 +10,8 @@ When deploying and managing Server Disaster Recovery (SDR) on GreenNode, setting
 
 VNG Managed Policy is an IAM Policy created by default by the GreenNode IAM system. These Policies are managed by GreenNode itself to support users in quickly setting up the necessary access rights for IAM user accounts for resources of each specific Product. Let's find out the list of VNG Managed Policies for DR:
 
-* [DRFullAccess:](https://iam.console.vngcloud.vn/policies/76de3567-c57c-4167-b304-9133f9af7daf) Includes full access to Disaster Recovery Center resources
-* [DRReadOnlyAccess:](https://iam.console.vngcloud.vn/policies/3d44e007-fcd1-4d6f-85b9-f3981ef286a1) Includes Read access only on resources in the Disaster Recovery Center system
+* [DRFullAccess:](https://iam.console.greennode.ai/policies/76de3567-c57c-4167-b304-9133f9af7daf) Includes full access to Disaster Recovery Center resources
+* [DRReadOnlyAccess:](https://iam.console.greennode.ai/policies/3d44e007-fcd1-4d6f-85b9-f3981ef286a1) Includes Read access only on resources in the Disaster Recovery Center system
 
 ### 3. Get Started Using IAM with DRC <a href="#id-3.-bat-dau-su-dung-iam-voi-drc" id="id-3.-bat-dau-su-dung-iam-voi-drc"></a>
 
@@ -19,7 +19,7 @@ This guide is intended to guide users to quickly start using IAM in DRC services
 
 #### **3.1 Access IAM Console** <a href="#id-3.1-truy-cap-iam-console" id="id-3.1-truy-cap-iam-console"></a>
 
-1. Open your web browser and go to the IAM Console URL: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
+1. Open your web browser and go to the IAM Console URL: [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/)
 2. Log in as a Root User Account or a User Account with access granted. You will need to provide a username/email and password when logging in.
 3. Once signed in, you'll see the IAM Console interface, which provides an overview of your IAM configuration.
 
@@ -43,7 +43,7 @@ This guide is intended to guide users to quickly start using IAM in DRC services
 
 #### **3.4 Assign Permissions to IAM Accounts** <a href="#id-3.4-gan-quyen-cho-tai-khoan-iam" id="id-3.4-gan-quyen-cho-tai-khoan-iam"></a>
 
-1. Open your web browser and go to the IAM Console URL: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
+1. Open your web browser and go to the IAM Console URL: [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/)
 2. Log in as the **Root User** account . You may need to provide a username and password or use other authentication methods such as single sign-on (SSO) if configured.
 3. Once signed in, you'll see the IAM Console interface, which provides an overview of your IAM configuration.
 4. Click on **"User account"** in the left menu.

@@ -30,7 +30,7 @@ To cancel a Root account, you need to contact us by creating a ticket requesting
 
 To create an IAM user account, please first refer to the guide below:
 
-1. Log in to [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) with your Root User Account.
+1. Log in to [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/) with your Root User Account.
 2. Select **User Account**.
 3. Select **Create a User Account.**
 4. In the **Account username** field, enter your desired **Account username**. The IAM User Account name must be between 5 (minimum) and 50 (maximum) characters long and can only include uppercase and lowercase letters (a-z, A-Z), numbers (0-9), periods (.), underscores (\_), and hyphens (-). The IAM User Account name should not contain sensitive information (e.g., IP addresses, login passwords,...) and the IAM User Account name must be unique within a GreenNode account until that IAM User Account is deleted. For example, the following IAM User Account name is valid: IAM\_Sales\_Department\_01.
@@ -47,7 +47,7 @@ To create an IAM user account, please first refer to the guide below:
 
 To create a policy for accessing vDB OpenSearch resources, follow the steps below:
 
-1. Log in to [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) with your Root User Account.
+1. Log in to [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/) with your Root User Account.
 2. Select the **Policy** folder.
 3. Select **Create a Policy**.
 4. Enter **Name** and **Description** for the Policy.
@@ -68,7 +68,7 @@ After completing these 8 steps, the policy for OpenSearch cluster has been creat
 
 After you have created the IAM User Account and desired Policy, you need to link the IAM User Account to the policy following the guide below:
 
-1. Log in to [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) with your Root User Account.
+1. Log in to [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/) with your Root User Account.
 2. Select the **User Account** folder.
 3. Select the **IAM User Account** you want to assign permissions to.
 4. Select **Attach policies**.
@@ -81,7 +81,7 @@ After you have created the IAM User Account and desired Policy, you need to link
 
 Follow the steps below to log in to vDB OpenSearch with a Root user account:
 
-1. Access the vDB OpenSearch login page: [https://signin.vngcloud.vn.](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=f09ybYi-GTZYYwuHVRv2f1UPRhjM_wI-0J_aXpbUsv4\&codeChallengeMethod=S256\&appState=55eab53a-30f3-43ae-837b-bf3a469dd9db\&redirectUri=https%3A%2F%2Fdashboard.console.vngcloud.vn%2F)
+1. Access the vDB OpenSearch login page: [https://signin.vngcloud.vn.](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=f09ybYi-GTZYYwuHVRv2f1UPRhjM_wI-0J_aXpbUsv4\&codeChallengeMethod=S256\&appState=55eab53a-30f3-43ae-837b-bf3a469dd9db\&redirectUri=https%3A%2F%2Fdashboard.console.greennode.ai%2F)
 2. The main login page will appear. Select **LOG IN WITH ROOT USER**.
 3. Enter the **email** address and **password** linked to your account and select **Log in**. If you previously logged in as root user in this browser, your browser may remember the email address for the Root User Account. If so, you will see the screen shown in the next step. If you previously logged in as an IAM user using an IAM User Account in this browser, your browser may display the IAM user login page instead. To return to the main login page, select **LOG IN WITH ROOT USER.**
 4. After successful login, you have full access and can perform all features provided by the vDB OpenSearch service on your resources.
@@ -90,7 +90,7 @@ Follow the steps below to log in to vDB OpenSearch with a Root user account:
 
 Follow the steps below to log in to vDB OpenSearch with an IAM user account:
 
-1. Access the vDB OpenSearch login page: [https://signin.vngcloud.vn.](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=f09ybYi-GTZYYwuHVRv2f1UPRhjM_wI-0J_aXpbUsv4\&codeChallengeMethod=S256\&appState=55eab53a-30f3-43ae-837b-bf3a469dd9db\&redirectUri=https%3A%2F%2Fdashboard.console.vngcloud.vn%2F)
+1. Access the vDB OpenSearch login page: [https://signin.vngcloud.vn.](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=f09ybYi-GTZYYwuHVRv2f1UPRhjM_wI-0J_aXpbUsv4\&codeChallengeMethod=S256\&appState=55eab53a-30f3-43ae-837b-bf3a469dd9db\&redirectUri=https%3A%2F%2Fdashboard.console.greennode.ai%2F)
 2. The main login page will appear. Select **LOG IN WITH IAM USER ACCOUNT**.
 3. Enter the **email** address of the Root user when registering the GreenNode account.
 4. Enter the **username** and **password** of the IAM user account created on the vIAM system.

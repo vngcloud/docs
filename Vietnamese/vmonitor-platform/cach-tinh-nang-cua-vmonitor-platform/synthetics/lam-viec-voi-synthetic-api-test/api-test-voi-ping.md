@@ -4,7 +4,7 @@ API Ping tests cho phép bạn gửi ICMP packet tới server hay các thiết b
 
 **Để thực hiện tạo API Test với phương thức Ping, hãy làm theo hướng dẫn bên dưới:**
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
+1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.greennode.ai/vmonitor)&#x20;
 2. Chọn thư mục **Synthetic test.**
 3. Chọn **API test.**
 4. Chọn **Create an API test.**

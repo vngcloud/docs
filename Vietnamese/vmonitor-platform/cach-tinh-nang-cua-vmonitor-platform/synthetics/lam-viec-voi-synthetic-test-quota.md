@@ -10,7 +10,7 @@ Một Synthetic test quota là một thuật ngữ trên vMonitor Platform thể
 
 Để khởi tạo Synthetic test quota, vui lòng thực hiện theo các bước bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn **Quota & Usage**.
 3. Chọn **Buy Synthetic test quota.**
 4. Tiếp tục chọn **Buy Synthetic test quota.**
@@ -23,7 +23,7 @@ Nhằm thuận tiện cho quá trình dùng thử sản phẩm, chúng tôi cung
 
 Sau khi bạn khởi tạo Synthetic test quota, bạn có thể xem thông tin gói Synthetic test quota mà bạn vừa thực hiện khởi tạo bằng cách:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn **Synthetic test usage**.
 
@@ -37,7 +37,7 @@ Bạn đã khởi tạo Synthetic test quota với chu kỳ sử dụng mặc đ
 
 Để **gia hạn** một **Synthetic test quota**, bạn có thể:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn **Synthetic test usage**.
 4. Tại gói Synthetic test quota đang sử dụng, chọn **Renew**.
@@ -53,7 +53,7 @@ Bạn đã khởi tạo một Synthetic test quota ban đầu phù hợp với n
 
 Để **xóa** một **Synthetic test quota**, bạn có thể:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn **Synthetic test usage**.
 4. Tại gói Synthetic test quota đang sử dụng, chọn **Xóa**.

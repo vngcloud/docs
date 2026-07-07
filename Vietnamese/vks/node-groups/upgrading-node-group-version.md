@@ -6,7 +6,7 @@ Hiện tại, hệ thống VKS của chúng tôi đã hỗ trợ bạn nâng c�
 
 **Để thực hiện nâng cấp phiên bản Node Group Version, bạn có thể thực hiện theo hướng dẫn sau:**&#x20;
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Bước 1:** Truy cập vào [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Bước 2:** Tại màn hình **Overview**, chọn menu **Kubernetes Cluster.** Chọn vào một **Cluster** mà bạn muốn nâng cấp **Node Group Version**.
 

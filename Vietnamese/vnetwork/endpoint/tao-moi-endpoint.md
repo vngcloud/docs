@@ -15,7 +15,7 @@ description: GreenNode Endpoint là điểm kết nối giữa VPC với các d�
 * Nếu **không bật** tùy chọn này hoặc **VPC không hỗ trợ DNS**, cần **thêm bản ghi host thủ công**.
 {% endhint %}
 
-* Người dùng login vào  [https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list](https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list)  với region = HCM
+* Người dùng login vào  [https://hcm-3-vnetwork.console.greennode.ai/endpoint/list](https://hcm-3-vnetwork.console.greennode.ai/endpoint/list)  với region = HCM
 * Chọn menu “**Endpoint**” tại thanh menu bên trái màn hình
 * Chọn chức năng “**Create an Endpoint**”
 * Nhập thông tin **Endpoint** theo yêu cầu gồm:

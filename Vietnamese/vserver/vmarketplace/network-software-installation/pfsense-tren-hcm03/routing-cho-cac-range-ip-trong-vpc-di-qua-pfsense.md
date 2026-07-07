@@ -2,7 +2,7 @@
 
 Bước 1 : Kiểm tra ID của VPC ứng dụng vSRX của bạn.
 
-Bước 2 : vào Route table theo đường dẫn: [https://hcm-3.console.vngcloud.vn/vserver/network/route-table](https://hcm-3.console.vngcloud.vn/vserver/network/route-table)
+Bước 2 : vào Route table theo đường dẫn: [https://hcm-3.console.greennode.ai/vserver/network/route-table](https://hcm-3.console.greennode.ai/vserver/network/route-table)
 
 Bước 3: Thực hiện Edit Route.
 

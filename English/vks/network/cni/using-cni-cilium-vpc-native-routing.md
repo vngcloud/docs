@@ -25,7 +25,7 @@ On VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** operates
 To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
 * There is at least 1 **VPC** and 1 **Subnet in ACTIVE** state . If you do not have any VPC, Subnet, please initialize VPC, Subnet according to the instructions below:
-  * **Step 1**: Access the vServer homepage at the link [https://hcm-3.console.vngcloud.vn/vserver](https://hcm-3.console.vngcloud.vn/vserver)
+  * **Step 1**: Access the vServer homepage at the link [https://hcm-3.console.greennode.ai/vserver](https://hcm-3.console.greennode.ai/vserver)
   * **Step 2**: Select the **VPCs** menu in the left menu of the screen.
   * **Step 3**: Here, if you don't have any VPC yet, please select **Create VPC** by entering the **VPC name** and defining the desired **CIDR/16 range**.
   * **Step 4**: After having at least 1 VPC, to create a subnet, you need to select **View Detail** to expand the control panel at the bottom, including the **Subnet** section.
@@ -59,7 +59,7 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
 To initialize a Cluster, follow the steps below:
 
-**Step 1:** Access [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Step 1:** Access [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Step 2: On the Overview** screen , select **Activate.**
 
@@ -116,7 +116,7 @@ Suppose, when initializing the cluster, I choose:
 
 Below are instructions for deploying an nginx deployment and testing IP assignment for the pods deployed in your cluster.
 
-**Step 1:** Access [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Access [https://vks.console.greennode.ai/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2:** The Cluster list is displayed, select the icon **Download** and select **Download Config File** to download the kubeconfig file. This file will give you full access to your Cluster.
 

@@ -4,7 +4,7 @@ After you upload an object to the container, you can view information about your
 
 &#x20;Use vStorage Portal
 
-1\. Log in to the website [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).\
+1\. Log in to the website [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).\
 2\. Select the **project and container**. Then, choose the objects you want to download.\
 3\. Click ![](https://docs.vngcloud.vn/download/thumbnails/69468628/image2023-3-6\_11-1-46.png?version=1\&modificationDate=1703646844000\&api=v2) or select the icon ![](https://docs.vngcloud.vn/download/thumbnails/69468628/image2023-2-6\_10-20-54.png?version=1\&modificationDate=1703646845000\&api=v2) for the object you want to download and click ![](https://docs.vngcloud.vn/download/thumbnails/69468628/image2023-12-27\_11-31-34.png?version=1\&modificationDate=1703651494000\&api=v2).
 

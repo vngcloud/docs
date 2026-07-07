@@ -13,7 +13,7 @@ For these 2 types of vBackup projects, you can:
 
 After a backup project is created for the first time, your backup project now has a storage capacity of 50GB with a storage period of 1 month. From the second initialization, the backup project has 0GB storage capacity. If this storage capacity is not enough for your needs, you can continue to increase the limit of this backup project by:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 2. Select the icon ![](https://docs.vngcloud.vn/download/thumbnails/69468769/image2023-12-27\_15-24-9.png?version=1\&modificationDate=1703665450000\&api=v2) at the project you want to make quota changes to. Select **Resize**.
 3. The **Resize project** screen is displayed. Select the **storage quota** you want to increase. You can increase or decrease the **storage quota** to a maximum or minimum level equal to the storage quota provided by the storage package. You cannot adjust the storage quota below or beyond this value.
 4. Select **Resize**.
@@ -29,7 +29,7 @@ We only give you 50GB of free Gold class storage for a 1 month storage period. I
 
 After a backup project is created for the first time, your backup project now has a storage capacity of 50GB with a storage period of 1 month. From the second initialization, the backup project has a storage capacity of 0GB with a storage period of 1 month. After 1 month of use, your backup project will expire and will be deleted from our system. If you need to store backup data on this Server for more than 1 month, you can extend the backup project according to the instructions below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 2. Select the icon ![](https://docs.vngcloud.vn/download/thumbnails/69468769/image2023-12-27\_15-24-9.png?version=1\&modificationDate=1703665450000\&api=v2) at the **project** you want to perform the renewal on. Select **Renew**.
 3. Select the **period** you want to renew.
 4. Select **Renew** project.
@@ -60,7 +60,7 @@ Because deleting a project is potentially risky, we recommend that you consider 
 
 You can restore the backup project after deleting according to the instructions above by:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 2. Select the **Trash** menu.
 3. Select the ![](https://docs.vngcloud.vn/download/thumbnails/69468769/image2023-12-27\_15-24-9.png?version=1\&modificationDate=1703665450000\&api=v2) icon on the **project** you want to perform the restore.
 4. Select **Restore** project.

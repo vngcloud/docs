@@ -31,7 +31,7 @@ Refer to the detailed guide below to convert the disk from SSD to NVMe.
 
 **Step 0: Configure the Conversion Information:**
 
-* 0.1: Access the volume list from the portal [here](https://hcm-3.console.vngcloud.vn/vserver/block-store/volumes).
+* 0.1: Access the volume list from the portal [here](https://hcm-3.console.greennode.ai/vserver/block-store/volumes).
 * 0.2: Navigate to the volume to be converted, click the **three-dot icon** in the **Action** column.
 * 0.3: Click "**Migrate Volume**."
 * 0.4: In the window, select the following information for migration:
@@ -81,7 +81,7 @@ Refer to the detailed guide below to convert the disk from NVMe to SSD.
 
 **Step 0: Configure the Conversion Information:**
 
-* 0.1: Access the volume list from the portal [here](https://hcm-3.console.vngcloud.vn/vserver/block-store/volumes).
+* 0.1: Access the volume list from the portal [here](https://hcm-3.console.greennode.ai/vserver/block-store/volumes).
 * 0.2: Navigate to the volume to be converted, click the **three-dot** icon in the **Action** column.
 * 0.3: Click "**Migrate Volume**"
 * 0.4: In the window, select the following information for migration:

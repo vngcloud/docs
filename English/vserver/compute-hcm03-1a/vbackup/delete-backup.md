@@ -18,7 +18,7 @@ You no longer want a backup plan to operate as you originally configured it. Upd
 
 ### Manually Deleting Backups in the vBackup Console <a href="#xoabansaoluu-xoabansaoluubangcachthucongtrentrinhdieukhienvbackup" id="xoabansaoluu-xoabansaoluubangcachthucongtrentrinhdieukhienvbackup"></a>
 
-1. Access the vBackup console at: [vBackup Console](https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-server).
+1. Access the vBackup console at: [vBackup Console](https://hcm-3.console.greennode.ai/vserver/block-store/backup/backup-server).
 2. Select and view the details of the Backup Server by clicking on its name.
 3. On the detail page, select the "**Restore Point" tab**. Here, you will see backups at different restore points created according to the policy schedule.
 4. Select the Backup Server or Backup Volume you need to delete, then click the **delete** icon.

@@ -15,7 +15,7 @@ vBackup project là một loại project được tạo từ chức năng backup
 
 Sau khi một backup project được khởi tạo lần đầu tiên, lúc này backup project của bạn có dung lượng lưu trữ 50GB với thời hạn lưu trữ là 1 tháng. Từ lần khởi tạo thứ hai, backup project có dung lượng lưu trữ 0GB. Nếu dung lượng lưu trữ này là không đủ so với nhu cầu của bạn, bạn có thể tiếp tục thực hiện tăng hạn mức của backup project này bằng cách:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn biểu tượng \<update khi lên guide>tại **project** bạn muốn thực hiện thay đổi quota. Chọn **Thay đổi quota.**
 3. Màn hình **Thay đổi quota** được hiển th&#x1ECB;**.** Chọn **quota** lưu trữ mong muốn tăng thêm, **quota** lưu trữ bạn có thể tăng thêm hoặc giảm đi đến mức tối đa hoặc tối thiểu bằng **quota** lưu trữ mà gói lưu trữ cung cấp. Bạn không thể điều chỉnh **quota** lưu trữ nhỏ hơn hoặc vượt quá giá trị này.
 4. Chọn **Thay đổi quota project.**
@@ -33,7 +33,7 @@ Chúng tôi chỉ miễn phí cho bạn dung lượng lưu trữ 50GB ở lớp 
 
 Sau khi một backup project được khởi tạo lần đầu tiên, lúc này backup project của bạn có dung lượng lưu trữ 50GB với thời hạn lưu trữ là 1 tháng. Từ lần khởi tạo thứ hai, backup project có dung lượng lưu trữ 0GB với thời hạn lưu trữ là 1 tháng. Sau 1 tháng sử dụng thì backup project của bạn sẽ hết hạn và sẽ bị xóa khỏi hệ thống của chúng tôi. Nếu bạn có nhu cầu lưu trữ dữ liệu backup Server này quá 1 tháng thì bạn có thể thực hiện gia hạn backup project theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn biểu tượng \<update khi lên guide> tại **project** bạn muốn thực hiện gia hạn. Chọn **Gia hạn**.
 3. Chọn **chu kỳ** mà bạn mong muốn gia hạn.
 4. Chọn **Gia hạn project**.
@@ -70,7 +70,7 @@ Do hành động xóa project tiềm ẩn nhiều rủi ro nên chúng tôi khuy
 
 Bạn có thể khôi phục backup project sau khi xóa theo hướng dẫn bên trên bằng cách:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn menu **Thùng rác.**
 3. Chọn biểu tượng \<update khi lên guide>trên **project** muốn thực hiện khôi phục.
 4. Chọn **Khôi phục project.**

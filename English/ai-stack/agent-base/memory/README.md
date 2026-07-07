@@ -89,7 +89,7 @@ Before using short-term or long-term memory, you must create a **Memory store** 
 
 #### Create a Memory Store
 
-1. Open https://aiplatform.console.vngcloud.vn/memory
+1. Open https://aiplatform.console.greennode.ai/memory
 2. Click **"Create Memory"**
 3. Fill in:
    * **Name**: e.g., `customer-support-memory` (0â€“50 chars, `^[a-zA-Z0-9._-]*$`)
@@ -106,7 +106,7 @@ Before using short-term or long-term memory, you must create a **Memory store** 
 
 #### List Memory Stores
 
-1. Open https://aiplatform.console.vngcloud.vn/memory
+1. Open https://aiplatform.console.greennode.ai/memory
 2. All memory stores shown with: Name, Status, Descriptopn, Event Expiry, Lated updated
 
 ![1774584561868](../../../.gitbook/assets/1774584561868.png)

@@ -4,7 +4,7 @@ You can also copy objects you have uploaded to different containers. To perform 
 
 &#x20;Use vStorage Portal
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 
 2\. Choose the **project**, **container**, and then select the **objects** you want to copy.
 

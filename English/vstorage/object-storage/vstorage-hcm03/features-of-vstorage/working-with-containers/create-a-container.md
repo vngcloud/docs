@@ -4,7 +4,7 @@ Container is a data-holding object (Object) in vStorage that can be understood a
 
 &#x20;**Use vStorage Portal**
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 
 2\. Choose the **project** for which you want to create a container.
 

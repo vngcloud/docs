@@ -4,7 +4,7 @@ The Pricing Calculator is a web-based planning tool that you can use to create e
 
 The GreenNode Pricing Calculator is very useful for those who have never used vServer. It is also beneficial for those looking to reorganize or expand their vServer usage. You do not need any prior experience with vServer cloud to use the Pricing Calculator.
 
-The Pricing Calculator is available through the web-based console at [GreenNode Pricing Calculator](https://calculator.console.vngcloud.vn/estimate?bid=64c7a367e2725513cbaf9a97).
+The Pricing Calculator is available through the web-based console at [GreenNode Pricing Calculator](https://calculator.console.greennode.ai/estimate?bid=64c7a367e2725513cbaf9a97).
 
 ***
 

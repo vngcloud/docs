@@ -43,7 +43,7 @@ Examples:
 
 To initialize a Dashboard, you can use the vMonitor Platform following the instructions below:
 
-1. Login into vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)
+1. Login into vMonitor Platform [tại đây.](https://hcm-3.console.greennode.ai/vmonitor)
 2. Select the menu **Dashboard.**
 3. Select **Create a Dashboard.**
 4. The **Create Dashboard** screen is displayed. Enter **Dashboard name** and ensure it complies with our naming conventions for your Dashboard. Don't worry, after creating the Dashboard, you can change its name if needed.

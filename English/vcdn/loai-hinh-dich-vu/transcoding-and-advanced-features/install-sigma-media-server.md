@@ -4,7 +4,7 @@ Use the instructions below to install Sigma Media Server:
 
 ## Initialize Sigma Media Server on vMarketplace <a href="#khoi-tao-sigma-media-server-tren-vmarketplace" id="khoi-tao-sigma-media-server-tren-vmarketplace"></a>
 
-**Step 1:** Go to [https://marketplace.console.vngcloud.vn/](https://marketplace.console.vngcloud.vn/)
+**Step 1:** Go to [https://marketplace.console.greennode.ai/](https://marketplace.console.greennode.ai/)
 
 **Step 2:** On the main screen, search for **Sigma , at the Sigma Stream** service , select **Launch** .
 
@@ -28,7 +28,7 @@ that you want to use for your server. You also need to select an existing Server
 
 ## Configure parameters for Sigma Media Server <a href="#cau-hinh-thong-so-cho-sigma-media-server" id="cau-hinh-thong-so-cho-sigma-media-server"></a>
 
-**Step 1:** After initializing Sigma from **vMarketPlace** according to the instructions above, you can access the vServer interface [here ](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)**to** check if the server running Sigma has been initialized. <mark style="color:red;">**Next, you need to open the following on the Security Group for the newly created Sigma server.**</mark>
+**Step 1:** After initializing Sigma from **vMarketPlace** according to the instructions above, you can access the vServer interface [here ](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server)**to** check if the server running Sigma has been initialized. <mark style="color:red;">**Next, you need to open the following on the Security Group for the newly created Sigma server.**</mark>
 
 * 4000 (TCP): Portal
 * 8080 (TCP): HTTP origin (nginx)

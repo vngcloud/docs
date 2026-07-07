@@ -4,7 +4,7 @@ Sử dụng hướng dẫn này để thêm mới/cập nhật một Pool vào m
 
 #### 1. Cách thêm mới Pool <a href="#add-and-updateapool-nlb-1.cachthemmoipool" id="add-and-updateapool-nlb-1.cachthemmoipool"></a>
 
-1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb**](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb**](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)
 2. **Tại trang chủ Load Balancer, click chọn Load Balancer cần thêm mới Pool.**
 3. **Tại phần thông tin chi tiết Load Balancer, chọn tab Pool.**
 4. **Nhấn chọn nút "Thêm mới Pool", một cửa sổ giao diện hiện lên cho phép bạn cấu hình thông tin Pool**
@@ -18,7 +18,7 @@ Sử dụng hướng dẫn này để thêm mới/cập nhật một Pool vào m
 
 #### 2. Cách cập nhật thông tin Pool <a href="#add-and-updateapool-nlb-2.cachcapnhatthongtinpool" id="add-and-updateapool-nlb-2.cachcapnhatthongtinpool"></a>
 
-1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb**](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb**](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)
 2. **Tại trang chủ Load Balancer, click chọn Load Balancer cần cấu hình.**
 3. **Tại phần thông tin chi tiết Load Balancer, chọn tab Pool.**
 4. **Tại phần danh sách Pool, rê chuột vào Pool cần chỉnh sửa và nhấn vào biểu tượng Edit.**

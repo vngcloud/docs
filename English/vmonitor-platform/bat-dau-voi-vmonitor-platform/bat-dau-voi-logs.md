@@ -6,7 +6,7 @@ To start using the service, you need to create a Log project. A Log project is a
 
 Implement project creation according to the steps below:
 
-1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account yet, sign up for free at here.
+1. Login into [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). If you don't have an account yet, sign up for free at here.
 2. Select **Quota & Usage**.
 3. Select **Create a log project.**
 4. Enter **Log project Name**. According to our regulations, **Log project Name** must be 1 (minimum) to 63 (maximum) characters long. **Log project Name** can include lowercase letters (a-z), numbers (0-9), hyphens (-). **Log project Name** must start with a lowercase letter and end with a lowercase letter or a number.
@@ -26,7 +26,7 @@ After purchasing a Log Project, the system will automatically generate a certifi
 
 Follow the steps below to download the certificate and installation scripts.
 
-1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Select **Integration.**
+1. Login into [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Select **Integration.**
 2. Select **Certificate.**
 3. Select **Download** to download the certificate information to the server where you want to push logs.
 
@@ -49,7 +49,7 @@ sudo ./filebeat.sh <path-to-file-log>
 
 To perform log search and analysis, follow the steps below:
 
-1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Select **Log.**
+1. Login into [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Select **Log.**
 2. Select **Log search**.
 3. Select the **Log project** you need to view and analyze logs from. The location for selecting the log project is shown in the image below:
 

@@ -11,13 +11,13 @@
 
 | Service                   | URL                                              |
 | ------------------------- | ------------------------------------------------ |
-| IAM Service Accounts      | https://iam.console.vngcloud.vn/service-accounts |
-| IAM Policies              | https://iam.console.vngcloud.vn/policies         |
-| Access Control (Identity) | https://aiplatform.console.vngcloud.vn/identity  |
-| Runtime          | https://aiplatform.console.vngcloud.vn/runtime   |
-| Memory          | https://aiplatform.console.vngcloud.vn/memory    |
-| Container Registry (vCR)  | https://vcr.console.vngcloud.vn                  |
-| AI Platform (AIP) Models  | https://aiplatform.console.vngcloud.vn/models    |
+| IAM Service Accounts      | https://iam.console.greennode.ai/service-accounts |
+| IAM Policies              | https://iam.console.greennode.ai/policies         |
+| Access Control (Identity) | https://aiplatform.console.greennode.ai/identity  |
+| Runtime          | https://aiplatform.console.greennode.ai/runtime   |
+| Memory          | https://aiplatform.console.greennode.ai/memory    |
+| Container Registry (vCR)  | https://vcr.console.greennode.ai                  |
+| AI Platform (AIP) Models  | https://aiplatform.console.greennode.ai/models    |
 
 ### API Base URLs
 

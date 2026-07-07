@@ -51,7 +51,7 @@ Taylor Smith was hired as a project manager, so he needs access to all company r
 #### **Step 1: Create a User Account in the IAM System** <a href="#cactruonghopsudungiam-buoc1-taotaikhoannguoidung-useraccount-trenhethongiam" id="cactruonghopsudungiam-buoc1-taotaikhoannguoidung-useraccount-trenhethongiam"></a>
 
 1. Alex created a GreenNode account on the homepage: [https://sso.vngcloud.vn/cas/login?service=https%3A%2F%2Fportal3.vngcloud.vn%2F](https://sso.vngcloud.vn/cas/login?service=https%3A%2F%2Fportal3.vngcloud.vn%2F) using the Root user account information: **Admin@vngcloud.vn**, password: **12345678@!**
-2. Navigate to the IAM homepage:  [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)  using the Root user account to log in.
+2. Navigate to the IAM homepage:  [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/)  using the Root user account to log in.
 3. Open the User account tab.
 4. Select "**Create a user account**."
 5. In the **Account user name** field, Alex entered the **name** for the User account as **Sysad01**.
@@ -66,7 +66,7 @@ At this point, Alex created a separate User account for Taylor with the followin
 
 After creating the User account, Alex proceeded to create a user group:
 
-1. Open the Group tab at  [https://iam.console.vngcloud.vn/user-groups](https://iam.console.vngcloud.vn/user-groups).
+1. Open the Group tab at  [https://iam.console.greennode.ai/user-groups](https://iam.console.greennode.ai/user-groups).
 2. Select "**Create a group**."
 3. Alex entered the Group name as **SysAd** in the **Name** field and added a description in the **Description** field.
 4. Proceed to the next step. In the **User** field, **Alex** selected the **Sysad01** User account to add to the **Group**.
@@ -78,7 +78,7 @@ A Group named **SysAd** will be created, including the User account: **Sysad01.*
 
 Currently, IAM provides several default policies that help users quickly and efficiently set up access permissions. Therefore, for the SysAd user group, Alex added the **vServerFullAccess** policy following these steps:
 
-1. Open the Policy tab at [IAM Policies](https://iam.console.vngcloud.vn/policies).
+1. Open the Policy tab at [IAM Policies](https://iam.console.greennode.ai/policies).
 2. Click to view the details of the **vServerFullAccess** policy on the list page.
 3. Then, in the **Policy usage** menu, click **Attach**.
 4. In the **Group tab**, **Alex** selected the **SysAd** group and clicked **Add**.
@@ -87,7 +87,7 @@ After completing these steps, the SysAd group will include the User account Sysa
 
 **Step 4: Access Resources Using the IAM Account (User account)** After creating the User account: Sysad01, Alex granted this account to Taylor, who then used it to access the company's resources:
 
-1. Access the vServer dashboard at: [GreenNode vServer](https://hcm-3.console.vngcloud.vn/vserver/).
+1. Access the vServer dashboard at: [GreenNode vServer](https://hcm-3.console.greennode.ai/vserver/).
 2. On the **login** screen, select "**SIGNIN WITH IAM USER ACCOUNT.**"
 3. Enter the **Root email information: Admin@vngcloud.vn, User name: Sysad01, Password: Asddehj**.
 4. The screen will navigate to the vServer management page, where you can interact with the resources granted in the Policy assigned to the User account.
@@ -100,7 +100,7 @@ Johnson Miles and Scott Enzi joined the company as Developers, so they need perm
 
 **Step 1: Create a User Account in the IAM System**
 
-1. Access the IAM homepage at: [IAM Console](https://iam.console.vngcloud.vn/).
+1. Access the IAM homepage at: [IAM Console](https://iam.console.greennode.ai/).
 2. Open the User account tab.
 3. Select "Create a user account."
 4. In the Account user name field, Alex entered the name for the User account as Dev01.
@@ -116,7 +116,7 @@ At this point, Alex created two separate User accounts for Johnson Miles and Sco
 
 After creating the User accounts, Alex proceeded to create a user **group:**
 
-1. Open the Group tab at [IAM User Groups](https://iam.console.vngcloud.vn/user-groups).
+1. Open the Group tab at [IAM User Groups](https://iam.console.greennode.ai/user-groups).
 2. Select "**Create a group**."
 3. Alex entered the Group name as **DevGroup** in the **Name** field and added a description in the **Description** field.
 4. Proceed to the next step. In the **User** field, **Alex** selected the **Dev01** and **Dev02** User accounts to add to the **Group**.
@@ -128,7 +128,7 @@ A Group named **DevGroup** will be created, including the two User accounts: **D
 
 After creating the Group, Alex needed to create a policy to assign to the Group:
 
-1. Open the Policy tab at [IAM Policies](https://iam.console.vngcloud.vn/policies).
+1. Open the Policy tab at [IAM Policies](https://iam.console.greennode.ai/policies).
 2. Create a new policy by clicking "**Create a Policy.**"
 3. In the Information screen, in the **Name** field, Alex entered the name of the Policy as **Developers**.
 4. Proceed to the **Permissions** step. Alex selected **Product: vServer**.
@@ -145,7 +145,7 @@ After completing these steps, the **SysAd** group will include the two User acco
 
 Sau khi tạo 2 User account: Dev01, Dev02, Alex đã cấp quyền sử dụng account này cho Johnson và Scott, họ  đã sử dụng để truy cập vào tài nguyên của Công ty và sử dụng chúng:
 
-1. Truy cập vào bảng điều khiển vServer tại: [**https://hcm-3.console.vngcloud.vn/vserver/**](https://hcm-3.console.vngcloud.vn/vserver/)
+1. Truy cập vào bảng điều khiển vServer tại: [**https://hcm-3.console.greennode.ai/vserver/**](https://hcm-3.console.greennode.ai/vserver/)
 2. Tại màn hình **Đăng nhập:** chọn **SIGNIN WITH IAM USER ACCOUNT**
 3. Nhập thông tin **Root email: Admin@vngcloud.vn,** Username: **Dev01 ;** Pasword: **Asddehj1 /** Username: **Dev02 ;** Pasword: **Aseeeghe2**
 4. Màn hình sẽ điều hướng sang trang quản lý vServer, tại đây có thể thao tác vào các tài nguyên được cấp quyền trong Policy đã gán với User account.
@@ -154,7 +154,7 @@ Sau khi tạo 2 User account: Dev01, Dev02, Alex đã cấp quyền sử dụng 
 
 After creating the two User accounts: Dev01 and Dev02, Alex granted these accounts to Johnson and Scott, who then used them to access the company's resources:
 
-1. Access the vServer dashboard at: [GreenNode vServer](https://hcm-3.console.vngcloud.vn/vserver/).
+1. Access the vServer dashboard at: [GreenNode vServer](https://hcm-3.console.greennode.ai/vserver/).
 2. On the **login** screen, select "**SIGNIN WITH IAM USER ACCOUNT**."
 3. Enter the **Root email** information: **Admin@vngcloud.vn**, Username: **Dev01** ; Password: **Asddehj1** / Username: **Dev02** ; Password: **Aseeeghe2**.
 4. The screen will navigate to the vServer management page, where you can interact with the resources granted in the Policy assigned to the User account.
@@ -165,7 +165,7 @@ After creating the two User accounts: Dev01 and Dev02, Alex granted these accoun
 
 **Step 1: Create a User Account in the IAM System**
 
-1. Access the IAM homepage at: [IAM Console](https://iam.console.vngcloud.vn/).
+1. Access the IAM homepage at: [IAM Console](https://iam.console.greennode.ai/).
 2. Open the User account tab.
 3. Select "**Create a user account**."
 4. In the **Account user name** field, Alex entered the **name** for the User account as **Supo01**.
@@ -180,7 +180,7 @@ At this point, **Alex** created a separate User account for **Taylor** with the 
 
 After creating the User account, Alex proceeded to create a user **group**:
 
-1. Open the Group tab at [IAM User Groups](https://iam.console.vngcloud.vn/user-groups).
+1. Open the Group tab at [IAM User Groups](https://iam.console.greennode.ai/user-groups).
 2. Select "**Create a group**."
 3. Alex entered the Group name as **SupportGroup** in the **Name** field and added a description in the **Description** field.
 4. Proceed to the next step. In the **User** field, **Alex** selected the **Supo01** User account to add to the **Group**.
@@ -190,7 +190,7 @@ A Group named **SupportGroup** will be created, including the User account: **Su
 
 **Step 3: Assign Permissions to the User Group** Currently, IAM provides several default policies that help users quickly and efficiently set up access permissions. Therefore, for the SupportGroup user group, Alex added the **vServerReadOnlyAccess** policy following these steps:
 
-1. Open the Policy tab at [IAM Policies](https://iam.console.vngcloud.vn/policies).
+1. Open the Policy tab at [IAM Policies](https://iam.console.greennode.ai/policies).
 2. Click to view the details of the **vServerReadOnlyAccess** policy on the list page.
 3. Then, in the **Policy usage** menu, click **Attac**h.
 4. In the Group **tab**, **Alex** selected the **SupportGroup** and clicked **Add.**
@@ -199,7 +199,7 @@ After completing these steps, the SupportGroup will include the User account Sup
 
 **Step 4: Access Resources Using the IAM Account (User account)** After creating the User account: Supo01, Alex granted this account to Taylor, who then used it to access the company's resources:
 
-1. Access the vServer dashboard at: [GreenNode vServer](https://hcm-3.console.vngcloud.vn/vserver/).
+1. Access the vServer dashboard at: [GreenNode vServer](https://hcm-3.console.greennode.ai/vserver/).
 2. On the **login** screen, select "**SIGNIN WITH IAM USER ACCOUNT**."
 3. Enter the **Root email information: Admin@vngcloud.vn, User name: Supo01, Password: Asddehj3.**
 

@@ -2,7 +2,7 @@
 
 To initialize an OpenSearch Cluster Database on the vDB system, you can follow these steps:
 
-**Step 1:** Access [https://vdb.console.vngcloud.vn/](https://vdb.console.vngcloud.vn/)
+**Step 1:** Access [https://vdb.console.greennode.ai/](https://vdb.console.greennode.ai/)
 
 **Step 2:** Select **Cluster** under the **OpenSearch** section, then select **Create a cluster..**
 

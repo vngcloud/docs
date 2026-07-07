@@ -4,7 +4,7 @@ Sử dụng hướng dẫn bên dưới để cài đặt Sigma Media Server:
 
 ### Khởi tạo Sigma Media Server trên vMarketplace
 
-**Bước 1:** Truy cập vào [https://marketplace.console.vngcloud.vn/](https://marketplace.console.vngcloud.vn/)
+**Bước 1:** Truy cập vào [https://marketplace.console.greennode.ai/](https://marketplace.console.greennode.ai/)
 
 **Bước 2:** Tại màn hình chính, thực hiện tìm kiếm **Sigma**, tại dịch vụ **Sigma Stream**, chọn **Launch**.
 
@@ -26,7 +26,7 @@ Lúc này, hệ thống **vServer** sẽ khởi tạo một Server tương ứng
 
 ### Cấu hình thông số cho Sigma Media Server
 
-**Bước 1:** Sau khi khởi tạo Sigma từ **vMarketPlace** theo hướng dẫn bên trên, bạn có thể truy cập vào giao diện **vServer** tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) để kiểm tra server chạy Sigma đã được khởi tạo xong chưa. <mark style="color:red;">**Tiếp theo, bạn cần mở các sau trên Security Group cho server Sigma vừa tạo.**</mark>
+**Bước 1:** Sau khi khởi tạo Sigma từ **vMarketPlace** theo hướng dẫn bên trên, bạn có thể truy cập vào giao diện **vServer** tại [đây](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server) để kiểm tra server chạy Sigma đã được khởi tạo xong chưa. <mark style="color:red;">**Tiếp theo, bạn cần mở các sau trên Security Group cho server Sigma vừa tạo.**</mark>
 
 * 4000 (TCP): Portal
 * 8080 (TCP): HTTP origin (nginx)

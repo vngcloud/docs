@@ -21,7 +21,7 @@ Use this document to learn more about the auto-renewal feature. It will detail t
 
     <figure><img src="../../../.gitbook/assets/image (11) (3).png" alt=""><figcaption></figcaption></figure>
 * **Turn on/off during service use**
-  * Step 1: Navigate to the Resource Billing page in the vServer service: [https://hcm-3.console.vngcloud.vn/vserver/billing](https://hcm-3.console.vngcloud.vn/vserver/billing)
+  * Step 1: Navigate to the Resource Billing page in the vServer service: [https://hcm-3.console.greennode.ai/vserver/billing](https://hcm-3.console.greennode.ai/vserver/billing)
   * Step 2: Click on the three dots icon at the location of the resource that needs to be changed. See image below
     * Select **"Auto-Renew"** to enable auto-renew if not enabled at creation
     * Select **"Update auto-renewal"** to adjust the resource usage time applied when the system performs auto-renewal

@@ -8,7 +8,7 @@ GreenNode automatically provisions a private repository in Container Registry fo
 
 Container Registry in AgentBase is built on [VNG Cloud Container Registry (vCR)](https://github.com/vngcloud/docs/blob/main/vcontainer-registry/README.md). When your organization is onboarded to AgentBase, a private repository is already created for you — no manual setup needed.
 
-View your organization's image list at: [https://aiplatform.console.vngcloud.vn/container-registry/repository](https://aiplatform.console.vngcloud.vn/container-registry/repository)
+View your organization's image list at: [https://aiplatform.console.greennode.ai/container-registry/repository](https://aiplatform.console.greennode.ai/container-registry/repository)
 
 ![Container Registry — image list](../../../.gitbook/assets/Agentbase-image/Container-registry.png)
 

@@ -8,7 +8,7 @@ description: >-
 
 **Access Notebook Instance**
 
-* Log in to [GreenNode AI Platform](https://aiplatform.console.vngcloud.vn/overview).
+* Log in to [GreenNode AI Platform](https://aiplatform.console.greennode.ai/overview).
 * Select “Notebook instance” from the left-hand menu.
 
 **Connect to Running Instances**\

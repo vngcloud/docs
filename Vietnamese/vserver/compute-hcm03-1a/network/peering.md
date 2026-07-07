@@ -14,5 +14,5 @@ Hiện tại chúng tôi chưa hỗ trợ tạo VPC Peering trên giao diện. �
 
 Để thực hiện xóa Peering, bạn cần làm theo các bước hướng dẫn bên dưới:
 
-1. Truy cập vào bảng điều khiển Peering tại: [https://hcm-3.console.vngcloud.vn/vserver/network/peering](https://hcm-3.console.vngcloud.vn/vserver/network/peering)
+1. Truy cập vào bảng điều khiển Peering tại: [https://hcm-3.console.greennode.ai/vserver/network/peering](https://hcm-3.console.greennode.ai/vserver/network/peering)
 2. Chọn Peering, nhấn biểu tượng **Xóa** và xác nhận

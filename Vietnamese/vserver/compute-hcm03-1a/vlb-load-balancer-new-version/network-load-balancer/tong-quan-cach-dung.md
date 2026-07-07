@@ -14,11 +14,11 @@ vLB Console là giao diện người dùng dựa trên web, cho phép bạn qu�
 
 **Cách truy cập Bảng điều khiển vLB**
 
-* Truy cập từ trang chủ vConsole: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
+* Truy cập từ trang chủ vConsole: [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/)
   * Tại mục **"GreenNode Service"** trên giao diện, click **chọn "vServer"**, sau đó click **chọn "vLB"** từ danh sách sản phẩm/dịch vụ tương ứng bên phải
-* Truy cập từ trang chủ vServer: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+* Truy cập từ trang chủ vServer: [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
   * Tại trang chủ vServer, điều hướng đến vLB portal bằng cách click **chọn "Load Balancers" trong mục "Load Balancing"** tại thanh menu bên trái.
-* Truy cập trực tiêp đến vLB Portal thông qua đường dẫn: [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+* Truy cập trực tiêp đến vLB Portal thông qua đường dẫn: [https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)
 
 #### 2. Khởi tạo NLB <a href="#gettingstarted-nlb-2.khoitaonlb" id="gettingstarted-nlb-2.khoitaonlb"></a>
 

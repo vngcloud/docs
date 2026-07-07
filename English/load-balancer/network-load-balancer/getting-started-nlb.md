@@ -14,9 +14,9 @@ The vLB Console is a web-based interface that allows you to manage Load Balancer
 
 **How to Access the vLB Console:**
 
-* **From the vConsole Homepage:** Go to `https://dashboard.console.vngcloud.vn/`. Under "GreenNode Service," click "vServer," then click "vLB" from the list of products/services on the right.
-* **From the vServer Homepage:** Go to `https://hcm-3.console.vngcloud.vn/vserver/`. On the vServer homepage, navigate to the vLB portal by clicking "Load Balancers" under "Load Balancing" in the left menu.
-* **Direct Access:** Go directly to the vLB Portal at `https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb`.
+* **From the vConsole Homepage:** Go to `https://dashboard.console.greennode.ai/`. Under "GreenNode Service," click "vServer," then click "vLB" from the list of products/services on the right.
+* **From the vServer Homepage:** Go to `https://hcm-3.console.greennode.ai/vserver/`. On the vServer homepage, navigate to the vLB portal by clicking "Load Balancers" under "Load Balancing" in the left menu.
+* **Direct Access:** Go directly to the vLB Portal at `https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb`.
 
 ## Create an NLB
 

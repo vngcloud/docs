@@ -7,7 +7,7 @@ description: >-
 
 # Playground
 
-### Truy cập [Playground](https://aiplatform.console.vngcloud.vn/playground)
+### Truy cập [Playground](https://aiplatform.console.greennode.ai/playground)
 
 ### Hướng dẫn thử nghiệm mô hình
 

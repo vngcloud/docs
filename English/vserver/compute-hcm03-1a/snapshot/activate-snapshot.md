@@ -6,7 +6,7 @@ Activating the Snapshot service is free. However, after you create a Snapshot, b
 
 **To activate the Snapshot service for GreenNode's cloud computing service, please follow these steps:**
 
-1\. Access the Snapshot dashboard at [https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot](https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot).
+1\. Access the Snapshot dashboard at [https://hcm-3.console.greennode.ai/vserver/block-store/snapshot](https://hcm-3.console.greennode.ai/vserver/block-store/snapshot).
 
 2\. On the Snapshot page, locate and click on "**Activate Snapshot service**".
 

@@ -10,8 +10,8 @@ Khi triển khai và quản lý Server Disaster Recovery (SDR) trên GreenNode, 
 
 VNG Managed Policy là các Chính Sách IAM (IAM Policy) được tạo mặc định bởi hệ thống IAM GreenNode. Các Chính Sách này được quản lý bởi chính GreenNode nhằm mục đích hỗ trợ người dùng trong việc cài đặt nhanh chóng các quyền truy cập cần thiết cho các tài khoản người dùng IAM đối với các tài nguyên của từng Product cụ thể. Cùng tìm hiểu danh sách VNG Managed Policies cho DR:
 
-* [DRFullAccess:](https://iam.console.vngcloud.vn/policies/76de3567-c57c-4167-b304-9133f9af7daf) Bao gồm toàn quyền truy cập đến các tài nguyên thuộc Disaster Recovery Center
-* [DRReadOnlyAccess:](https://iam.console.vngcloud.vn/policies/3d44e007-fcd1-4d6f-85b9-f3981ef286a1) Chỉ bao gồm quyền Đọc (Read) trên các tài nguyên thuộc hệ Disaster Recovery Center
+* [DRFullAccess:](https://iam.console.greennode.ai/policies/76de3567-c57c-4167-b304-9133f9af7daf) Bao gồm toàn quyền truy cập đến các tài nguyên thuộc Disaster Recovery Center
+* [DRReadOnlyAccess:](https://iam.console.greennode.ai/policies/3d44e007-fcd1-4d6f-85b9-f3981ef286a1) Chỉ bao gồm quyền Đọc (Read) trên các tài nguyên thuộc hệ Disaster Recovery Center
 
 ## 3. Bắt đầu sử dụng IAM với DRC
 
@@ -19,7 +19,7 @@ Hướng dẫn này nhằm hướng dẫn người dùng có thể nhanh chóng 
 
 ### **3.1 Truy cập IAM Console**
 
-1. Mở trình duyệt web của bạn và truy cập vào URL IAM Console: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
+1. Mở trình duyệt web của bạn và truy cập vào URL IAM Console: [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/)
 2. Đăng nhập với tư cách là tài khoản Người dùng Gốc (Root User Account) hoặc User Account được cấp quyền truy cập. Bạn cần cung cấp tên người dùng/email và mật khẩu khi đăng nhập.
 3. Sau khi đăng nhập, bạn sẽ thấy giao diện IAM Console, nơi cung cấp tổng quan về cấu hình IAM của bạn.
 
@@ -43,7 +43,7 @@ Hướng dẫn này nhằm hướng dẫn người dùng có thể nhanh chóng 
 
 ### **3.4 Gán Quyền cho Tài khoản IAM**
 
-1. Mở trình duyệt web của bạn và truy cập vào URL IAM Console: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
+1. Mở trình duyệt web của bạn và truy cập vào URL IAM Console: [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/)
 2. Đăng nhập với tư cách là tài khoản **Người dùng Gốc (Root User)**. Bạn có thể cần cung cấp tên người dùng và mật khẩu hoặc sử dụng các phương thức xác thực khác như đăng nhập duy nhất (SSO) nếu đã được cấu hình.
 3. Sau khi đăng nhập, bạn sẽ thấy giao diện IAM Console, nơi cung cấp tổng quan về cấu hình IAM của bạn.
 4. Nhấp vào **"User account"** trong menu bên trái.

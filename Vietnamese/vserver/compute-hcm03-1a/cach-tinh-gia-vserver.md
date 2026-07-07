@@ -4,7 +4,7 @@ Pricing Calculator là công cụ lập kế hoạch dựa trên web mà bạn c
 
 GreenNode Pricing Calculator rất hữu ích cho những người chưa từng sử dụng vServer. Nó cũng hữu ích cho những ai muốn tổ chức lại hoặc mở rộng việc sử dụng vServer của họ. Bạn không cần có bất kỳ kinh nghiệm nào với đám mây vServer để sử dụng Công cụ tính giá.
 
-Pricing Calculator có sẵn thông qua bảng điều khiển dựa trên web tại [https://calculator.console.vngcloud.vn/estimate?bid=64c7a367e2725513cbaf9a97](https://calculator.console.vngcloud.vn/estimate?bid=64c7a367e2725513cbaf9a97).
+Pricing Calculator có sẵn thông qua bảng điều khiển dựa trên web tại [https://calculator.console.greennode.ai/estimate?bid=64c7a367e2725513cbaf9a97](https://calculator.console.greennode.ai/estimate?bid=64c7a367e2725513cbaf9a97).
 
 ***
 

@@ -27,7 +27,7 @@ A **Cluster in Kubernetes** is a collection of one or more virtual machines (VMs
 
 To create a Cluster, follow the steps below:
 
-**Step 1:** Go to [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Step 1:** Go to [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Step 2:** On the **Overview** screen, select **Activate.**
 
@@ -54,7 +54,7 @@ To create a Cluster, follow the steps below:
 
 After the Cluster is successfully created, you can connect and check the Cluster information by following these steps:
 
-**Step 1:** Go to [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Go to [https://vks.console.greennode.ai/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2:** The Cluster list is displayed, select the **Download** icon and select **Download Config File** to download the kubeconfig file. This file will give you full access to your Cluster.
 

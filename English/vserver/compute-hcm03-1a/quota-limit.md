@@ -6,13 +6,13 @@ In addition to checking the limit values, you can also request limit increases f
 
 ### **View resource limits** <a href="#quotalimit-viewresourcelimits" id="quotalimit-viewresourcelimits"></a>
 
-You can view resource limits using the following option: View detailed information on the existing page. However, please note that you can only view detailed information about the limits for each resource, not the current usage level for your resources. To view detailed information about the limit values and the status of resource limit usage, please visit the [following link](https://hcm-3.console.vngcloud.vn/vserver/limit) In the search box, you can search by the service name you want to see detailed information about the limit.
+You can view resource limits using the following option: View detailed information on the existing page. However, please note that you can only view detailed information about the limits for each resource, not the current usage level for your resources. To view detailed information about the limit values and the status of resource limit usage, please visit the [following link](https://hcm-3.console.greennode.ai/vserver/limit) In the search box, you can search by the service name you want to see detailed information about the limit.
 
 ### **Request limit increases** <a href="#quotalimit-requestlimitincreases" id="quotalimit-requestlimitincreases"></a>
 
 You can request limit increases through the Service Limit Dashboard by using one of the following options. Please note that increase requests will not be granted immediately. It may take a few days for your requested increase to take effect.
 
-1. Open the control panel at [https://hcm-3.console.vngcloud.vn/vserver/limit](https://hcm-3.console.vngcloud.vn/vserver/limit). On the information page, click on "Request Limit Increase," and the interface will redirect you to the page [https://support.vngcloud.vn/#/app/dashboard](https://support.vngcloud.vn/#/app/dashboard), where you can submit your resource limit increase request.
+1. Open the control panel at [https://hcm-3.console.greennode.ai/vserver/limit](https://hcm-3.console.greennode.ai/vserver/limit). On the information page, click on "Request Limit Increase," and the interface will redirect you to the page [https://support.vngcloud.vn/#/app/dashboard](https://support.vngcloud.vn/#/app/dashboard), where you can submit your resource limit increase request.
 2. Or you can go directly to our support ticket creation page: [https://support.vngcloud.vn/#/app/request-ticket/undefined](https://support.vngcloud.vn/#/app/request-ticket/undefined)
 
 The following table lists the maximum values for resources belonging to the vServer service.

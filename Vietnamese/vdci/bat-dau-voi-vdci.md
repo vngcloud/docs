@@ -29,8 +29,8 @@
 
 Sau khi được cấp quyền, người dùng đăng nhập vào Portal và kiểm tra các cấu hình phần cứng theo thông tin dưới đây:
 
-* Truy cập vDCI Portal tại đây: [https://vdci.console.vngcloud.vn/overview](https://vdci.console.vngcloud.vn/overview)
-* Tại mục Dedicated Cloud Instance bên menu bên trái, chọn mục Flavor để kiểm tra danh sách cấu hình phần cứng được cấp phát tại đây: [https://vdci.console.vngcloud.vn/dedicated-cloud-instance/flavor](https://vdci.console.vngcloud.vn/dedicated-cloud-instance/flavor)
+* Truy cập vDCI Portal tại đây: [https://vdci.console.greennode.ai/overview](https://vdci.console.greennode.ai/overview)
+* Tại mục Dedicated Cloud Instance bên menu bên trái, chọn mục Flavor để kiểm tra danh sách cấu hình phần cứng được cấp phát tại đây: [https://vdci.console.greennode.ai/dedicated-cloud-instance/flavor](https://vdci.console.greennode.ai/dedicated-cloud-instance/flavor)
 
 ### **Bước 3: Khởi tạo Network**
 
@@ -50,7 +50,7 @@ Sau khi được cấp quyền, người dùng đăng nhập vào Portal và ki�
 **Lựa chọn 1: Chế độ Thông tin cơ bản (Basic mode)**
 
 * Yêu cầu: Phải khởi tạo SSH Key trước để truy cập máy qua SSH.
-* Cách tạo SSH Key: Truy cập portal vServer để khởi tạo/import SSH Key [tại đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/ssh-key)
+* Cách tạo SSH Key: Truy cập portal vServer để khởi tạo/import SSH Key [tại đây](https://hcm-3.console.greennode.ai/vserver/v-server/ssh-key)
 
 **Lựa chọn 2: Chế độ Thông tin người dùng (User Data mode)**
 

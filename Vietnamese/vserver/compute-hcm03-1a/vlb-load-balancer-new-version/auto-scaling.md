@@ -33,7 +33,7 @@ Người dùng cần chủ động cập nhật bản ghi CNAME để trỏ tên
 
 **Cấu hình Auto Scaling**
 
-1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb**](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb**](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)
 2. **Tại trang chủ Load Balancer, click chọn Load Balancer cần cấu hình.**
 3. **Tại phần thông tin chi tiết Load Balancer, nhấn nút Configure AutoScale.**
 4. **Một cửa sổ giao diện sẽ hiện ra với các trường cấu hình sau:**

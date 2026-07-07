@@ -23,7 +23,7 @@ Chúng tôi khuyên bạn nên sử dụng bảng điều khiển vServer Portal
 
 **Để khởi động lại một Server bằng bảng điều khiển:**
 
-1. Mở bảng điều khiển vServer tại: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+1. Mở bảng điều khiển vServer tại: [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
 2. Trong ngăn điều hướng, chọn Tab Server.
 3. Chỉ định Server và chọn **Hành động,** trong danh sách mở ra chọn **Khởi động lại.**
 4. Chọn **Khởi động lại** khi được nhắc xác nhận.\

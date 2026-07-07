@@ -6,7 +6,7 @@ To change the quota for a project, you can:
 
 &#x20;Use vStorage Portal
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 2. Select the icon ![image2023-3-6\_10-2-51.png](https://docs.vngcloud.vn/download/attachments/49648497/image2023-3-6\_10-2-51.png?version=1\&modificationDate=1678071772000\&api=v2) for the **project** where you want to modify the quota. Choose ![](https://docs.vngcloud.vn/download/thumbnails/67994039/image2023-11-21\_13-48-10.png?version=1\&modificationDate=1700549292000\&api=v2).
 3. The **Resize project** screen appears. Choose the desired storage **quota** to increase, the storage **quota** you can increase or decrease to the maximum or minimum level provided by the storage package. You cannot adjust the storage **quota** below or exceed this value.
 4. Select **Resize**.

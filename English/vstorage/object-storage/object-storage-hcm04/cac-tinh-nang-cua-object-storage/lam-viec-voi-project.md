@@ -2,7 +2,7 @@
 
 After you successfully complete the above steps, the automatic renewal feature for the project has been turned off.
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) .
 2. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FEedDoSjQC1v0i4G6OKT6%252Fimage.png%3Falt%3Dmedia%26token%3D5270bd91-5976-4b49-9747-6c848e043f7e\&width=32\&dpr=4\&quality=100\&sign=e2bdf3ba\&sv=2)in **the project** you want to disable auto-renew. Select **Disable Auto-renew.**
 3. **The Disable Auto-renew** screen is displayed **.**
 4. Select **OK.**
@@ -45,7 +45,7 @@ The following rules apply to project naming in vStorage:
 
 Create a project by following the steps below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. Select **Region HCM04.**
 3. Select **Create a Project.**
 4. Enter **Project Name**
@@ -67,7 +67,7 @@ You can view and use properties for the project including general project inform
 
 To view the properties for a project, you can:
 
-1. Log in to [https://vstorage.console.vngcloud.vn/storage](https://vstorage.console.vngcloud.vn/storage/list) .
+1. Log in to [https://vstorage.console.greennode.ai/storage](https://vstorage.console.greennode.ai/storage/list) .
 2. Select **Region: HCM04**
 3. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FUezdPyPY1knPTFpXbLOa%252Fimage.png%3Falt%3Dmedia%26token%3Df6613ac8-8cb7-4055-91fe-8676327c00ae\&width=40\&dpr=4\&quality=100\&sign=66c02356\&sv=2)in **the project** you want to see details.
 4. **On the project** details page , you can view and use properties for the project.
@@ -87,7 +87,7 @@ You have initialized the project with an initial quota that matches your storage
 
 To change the quota for a project, you can:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) .
 2. Select the checkbox at the project you want to increase or decrease the limit and select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FklArErUf8YJCZgjw6j8E%252Fimage.png%3Falt%3Dmedia%26token%3D8bf06cfe-52c0-4060-837b-caa420fea819\&width=41\&dpr=4\&quality=100\&sign=cc455acd\&sv=2)or you can also select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FrxitUMM9JIncMgn4JDAK%252Fimage.png%3Falt%3Dmedia%26token%3D7baaf770-23ce-478c-816f-bd324ab4ddee\&width=27\&dpr=4\&quality=100\&sign=4695600d\&sv=2)then select Resize.
 3. **The Resize project** screen is displayed **.** Select the storage **quota you want to increase, the storage quota** you can increase or decrease to the maximum or minimum **quota** provided by the hosting package. You cannot adjust the storage **quota** to be smaller or larger than this value.
 4. Select **Resize project.**
@@ -106,7 +106,7 @@ You have started your project with a short retention period. Now your business n
 
 To renew a project, you can:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) .
 2. Select the checkbox at **the project** you want to increase or decrease the limit and select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F1HTMWIvPjqwnOkYKUU7v%252Fimage.png%3Falt%3Dmedia%26token%3De30c9175-97b4-4ab3-8645-57e51c206768\&width=38\&dpr=4\&quality=100\&sign=92bed989\&sv=2)or you can also select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FrxitUMM9JIncMgn4JDAK%252Fimage.png%3Falt%3Dmedia%26token%3D7baaf770-23ce-478c-816f-bd324ab4ddee\&width=27\&dpr=4\&quality=100\&sign=4695600d\&sv=2)then select **Renew** .
 3. Select the desired storage period to renew. We offer storage periods of **1 month, 3 months, 6 months, 12 months, 24 months, 36 months . When you select a renewal period, the system will automatically calculate the effective time of the new storage period and the total amount you need to pay for project** renewal .
 4. Select **Checkout** after reviewing your shopping cart and payment method.
@@ -126,8 +126,8 @@ The automatic renewal feature is a system feature that supports automatic renewa
 
 The system will automatically renew 3 days before the service expires:
 
-* If you have enough credits, all services will be renewed. When the renewal is successful or failed, we will send you an email containing information about the successful/failed renewal. The service renewal payment history will also be stored on the vConsole system. For more information, visit [the vConsole Dashboard](https://dashboard.console.vngcloud.vn/payment-history) .
-* If there are not enough credits, the system will try to renew the services until there are no more credits. When the renewal is successful or failed, we will send you an email containing the successful/failed renewal information. The service renewal payment history will also be stored on the vConsole system. For more information, visit the vConsole [Dashboard](https://dashboard.console.vngcloud.vn/payment-history) .
+* If you have enough credits, all services will be renewed. When the renewal is successful or failed, we will send you an email containing information about the successful/failed renewal. The service renewal payment history will also be stored on the vConsole system. For more information, visit [the vConsole Dashboard](https://dashboard.console.greennode.ai/payment-history) .
+* If there are not enough credits, the system will try to renew the services until there are no more credits. When the renewal is successful or failed, we will send you an email containing the successful/failed renewal information. The service renewal payment history will also be stored on the vConsole system. For more information, visit the vConsole [Dashboard](https://dashboard.console.greennode.ai/payment-history) .
 
 <details>
 
@@ -147,7 +147,7 @@ After you successfully complete the above steps, the new retention period after 
 
 <summary>Set up auto-renewal on previously created projects</summary>
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) .
 2. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FK4egjGi7BcVc4LoWfjmV%252Fimage.png%3Falt%3Dmedia%26token%3D5b4d93e0-8bd9-4970-a85e-e3564c780054\&width=40\&dpr=4\&quality=100\&sign=4fa90d8e\&sv=2)at **the project** you want to perform auto-renew setup. Select Enable Auto-renew.
 3. **The Enable Auto-renew** screen is displayed **.** Select the renewal **Period** you want.
 4. Select **OK.**
@@ -160,7 +160,7 @@ After you successfully complete the above steps, the new retention period after 
 
 <summary>Remove auto-renewal on a project that was previously set to auto-renewal</summary>
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) .
 2. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FEedDoSjQC1v0i4G6OKT6%252Fimage.png%3Falt%3Dmedia%26token%3D5270bd91-5976-4b49-9747-6c848e043f7e\&width=32\&dpr=4\&quality=100\&sign=e2bdf3ba\&sv=2)in **the project** you want to disable auto-renew. Select **Disable Auto-renew.**
 3. **The Disable Auto-renew** screen is displayed **.**
 4. Select **OK.**
@@ -177,7 +177,7 @@ You have created a project with the appropriate hosting package. Now your busine
 
 To delete a project, you can:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) .
 2. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FkcyUBgpsSXeMN2pcVWWi%252Fimage.png%3Falt%3Dmedia%26token%3D94a5949b-5b8c-4780-9b32-9fa7175fab46\&width=21\&dpr=4\&quality=100\&sign=f4d132ff\&sv=2)in the project you want to delete. Select **Delete** .
 3. Enter the string **delete me** and select **Delete.**
 
@@ -195,7 +195,7 @@ The Auto-scale Quota feature in vStorage allows you to set up automatic storage 
 
 To set up automatic growth for a project, you can:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) .
 2. In the project that needs to set Auto-scale Quota, select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs.vngcloud.vn%2F%7Egitbook%2Fimage%3Furl%3Dhttps%253A%252F%252F3672463924-files.gitbook.io%252F%257E%252Ffiles%252Fv0%252Fb%252Fgitbook-x-prod.appspot.com%252Fo%252Fspaces%25252FB0NrrrdJdpYOYzRkbWp5%25252Fuploads%25252Fxle5SMO5J6MplFpJZC74%25252Fimage.png%253Falt%253Dmedia%2526token%253De9cdb754-9a75-4868-90bf-67e670048eb5%26width%3D27%26dpr%3D4%26quality%3D100%26sign%3D1f9a3808%26sv%3D1\&width=27\&dpr=4\&quality=100\&sign=66330d1\&sv=2)then select **Auto-scale** and continue to select **Configure Auto-scale** or select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs.vngcloud.vn%2F%7Egitbook%2Fimage%3Furl%3Dhttps%253A%252F%252F3672463924-files.gitbook.io%252F%257E%252Ffiles%252Fv0%252Fb%252Fgitbook-x-prod.appspot.com%252Fo%252Fspaces%25252FB0NrrrdJdpYOYzRkbWp5%25252Fuploads%25252Fs6DACNvZx3OSJhJDO654%25252Fimage.png%253Falt%253Dmedia%2526token%253D3164ca6e-fc29-4fd0-b88a-34a960d4cde0%26width%3D29%26dpr%3D4%26quality%3D100%26sign%3Daa473973%26sv%3D1\&width=29\&dpr=4\&quality=100\&sign=6440465f\&sv=2)then select **Set Auto-scale**.
 3. **At the Auto-scale** configuration screen , set up the necessary parameters for **Auto Scale**. Specifically:
 
@@ -227,7 +227,7 @@ The **Usage alert** feature in vStorage allows you to set up automatic alert bas
 
 To set up automatic alert for a project, you can:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. In the project that needs to set Usage alert, select the icon <img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fxle5SMO5J6MplFpJZC74%252Fimage.png%3Falt%3Dmedia%26token%3De9cdb754-9a75-4868-90bf-67e670048eb5&#x26;width=27&#x26;dpr=4&#x26;quality=100&#x26;sign=1f9a3808&#x26;sv=1" alt="" data-size="line"> then select **Usage alert** and continue to select **Configure Usage alert**.
 3. At the **Usage alert** configuration screen , set up the necessary parameters for **Usage alert**. Specifically:
 
@@ -259,7 +259,7 @@ Once we confirm that we have provided a POC wallet to your account, to use the P
 
 <summary>Create a project using POC wallet balance</summary>
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) .
 2. Select **region HCM04.**
 3. Select **Create a project.**
 4. **The Create New Project** screen is displayed. In **Project Name** , enter a name that complies with our regulations for your project.
@@ -281,7 +281,7 @@ The default POC resource usage time coincides with the POC wallet expiration tim
 
 After you create a project using POC wallet, you can continue to extend the project using Poc wallet. For details, follow these steps:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) .
 2. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FygA5fq4dzy9Rq5tPOgx2%252Fimage.png%3Falt%3Dmedia%26token%3D721a82c5-eb44-4657-9af9-82d2129a5c2d\&width=22\&dpr=4\&quality=100\&sign=856d143c\&sv=2)at **the project** you want to renew. Select **Renew.**
 3. **You can extend the project using POC wallet if you have extended the POC wallet usage period. After you extend the POC wallet usage period, the time you can extend the project is the period from the current end date to the new expiration date of the POC wallet** . To extend the POC wallet usage period, please contact the Sales staff or the staff who directly supports you or open a support ticket on our system. Select **Extend**.
 4. Select **Checkout PoC** .
@@ -306,7 +306,7 @@ Now the **project will be completely remove** from vStorage.
 
 <summary>Stop POC a project</summary>
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) .
 2. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F7MKwglc67piWKdxGb7Jc%252Fimage.png%3Falt%3Dmedia%26token%3Dc06c8276-677f-4192-8a54-20bc35c657c7\&width=25\&dpr=4\&quality=100\&sign=c1b8c293\&sv=2)at **the project** you want to stop POC. Select **Stop POC**.
 3. Select **Stop POC** .
 

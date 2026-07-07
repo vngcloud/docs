@@ -11,7 +11,7 @@ Follow the instructions below to update the new storage location for your backup
 First, you need to create a new backup location to prepare for changing the backup server storage location.
 
 * **Login:** Log in to your GreenNode service management account.
-* **Access the Backup Location management section:** Find and select "Backup Location" here [https://backupcenter.console.vngcloud.vn/backup-location/list](https://backupcenter.console.vngcloud.vn/backup-location/list)
+* **Access the Backup Location management section:** Find and select "Backup Location" here [https://backupcenter.console.greennode.ai/backup-location/list](https://backupcenter.console.greennode.ai/backup-location/list)
 * **Create new:** Click the "Create backup location" button, an interface window appears for you to fill in the necessary information.
 * **Fill in information:**
   * **Location Name:** Give the storage location a memorable and descriptive name.
@@ -31,7 +31,7 @@ First, you need to create a new backup location to prepare for changing the back
 
 Next, you need to access the backup server page to select the backup servers that need to change the storage location.
 
-* **Access the backup server page** here: [https://backupcenter.console.vngcloud.vn/backup-server/list](https://backupcenter.console.vngcloud.vn/backup-server/list)
+* **Access the backup server page** here: [https://backupcenter.console.greennode.ai/backup-server/list](https://backupcenter.console.greennode.ai/backup-server/list)
 * **Find and select the backup server saved in the vStorage project:**
   *   First, you need to **determine the name of the old storage location** by accessing the backup location, determine the name of the backup location with **type = vStorage** as shown below.
 
@@ -55,7 +55,7 @@ After selecting the backup servers that need to be changed, click on the **Chang
 
 ## 4. Save the backup server point to the new storage location <a href="#id-4.-luu-backup-server-point-tai-noi-luu-tru-moi" id="id-4.-luu-backup-server-point-tai-noi-luu-tru-moi"></a>
 
-Once the changes are complete, you can go to the [backup server](https://backupcenter.console.vngcloud.vn/backup-server/list) page to see the new backup location recorded. Note that:
+Once the changes are complete, you can go to the [backup server](https://backupcenter.console.greennode.ai/backup-server/list) page to see the new backup location recorded. Note that:
 
 * **The backup schedule** and **retention rules** still follow the backup policy, the only difference is that the newly created backup server points will be stored at the new backup location.
 * The **backup server points stored in vBackup-Project** before are unchanged, users can still access them when needed.

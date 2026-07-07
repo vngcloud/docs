@@ -11,7 +11,7 @@ This guide will help you perform the process of restoring resources (servers or 
 
 **Steps to follow**
 
-1. Access the backup server list page here: [https://backupcenter.console.vngcloud.vn/backup-server/list](https://backupcenter.console.vngcloud.vn/backup-server/list)
+1. Access the backup server list page here: [https://backupcenter.console.greennode.ai/backup-server/list](https://backupcenter.console.greennode.ai/backup-server/list)
 2.  Select the Backup Server you want to restore. You can click on the search box and enter the name of the backup server you want to find.
 
     <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FF8FeATCif1jF6W2HHCCw%252Fimage.png%3Falt%3Dmedia%26token%3Dffabaec5-b249-456b-93ab-5d225d5fa284&#x26;width=300&#x26;dpr=4&#x26;quality=100&#x26;sign=9c86105f&#x26;sv=1" alt=""><figcaption></figcaption></figure>

@@ -6,7 +6,7 @@
 
 ## Mở tab Roles & Permissions
 
-Vào [Team & Permissions](https://aiplatform.console.vngcloud.vn/team-permissions) → tab **Roles & Permissions**
+Vào [Team & Permissions](https://aiplatform.console.greennode.ai/team-permissions) → tab **Roles & Permissions**
 
 ![Roles & Permissions](../../../.gitbook/assets/Agentbase-image/Role-permission-tab.png)
 

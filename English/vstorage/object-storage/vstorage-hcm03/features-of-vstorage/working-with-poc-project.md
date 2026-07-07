@@ -6,7 +6,7 @@ Once we confirm that a POC wallet has been provisioned for your account, to use 
 
 &#x20;Create a project using POC wallet balances
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 
 2\. Select the **region** you want to store data in.
 
@@ -46,7 +46,7 @@ The default POC resource usage time coincides with the POC wallet end time. We o
 
 After you create a project using POC wallet, you can now continue to increase or decrease the project's limit also using Poc wallet. For details, please follow these steps:
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 
 2\. Select the icon ![](https://docs.vngcloud.vn/download/thumbnails/69468765/image2023-3-6\_10-2-51.png?version=1\&modificationDate=1703661880000\&api=v2) at the **project** you want to make quota changes to. Select **Resize**.
 
@@ -66,7 +66,7 @@ The process and pricing method are similar to when increasing or decreasing the 
 
 After you create a project using POC wallet, you can now continue to extend the use of the project also using Poc wallet. For details, please follow these steps:
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 
 2\. Select the icon ![](https://docs.vngcloud.vn/download/thumbnails/69468765/image2023-3-6\_10-6-56.png?version=1\&modificationDate=1703661880000\&api=v2) at the **project** you want to perform the renewal on. Select **Renew**.
 
@@ -95,7 +95,7 @@ Now the deleted **project** will be in the **Trash**, you can:
 
 You can restore the project after deleting according to the instructions above by:
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 
 2\. Select the **Trash** menu.
 
@@ -113,7 +113,7 @@ The process and pricing method are similar to when restoring a regular project. 
 
 &#x20;Stop POC
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 
 2\. Select the icon ![](https://docs.vngcloud.vn/download/thumbnails/69468765/image2023-3-6\_10-2-51.png?version=1\&modificationDate=1703661880000\&api=v2) at the project you want to perform a POC stop. Select **Stop POC**.
 

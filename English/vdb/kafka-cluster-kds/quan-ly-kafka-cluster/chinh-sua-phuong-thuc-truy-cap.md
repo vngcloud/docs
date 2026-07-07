@@ -10,7 +10,7 @@ Access Method options and functions
 
 ## Edit Public Accessibility
 
-**1. Select Kafka Cluster:** Log in to vDB Kafka Cluster here [https://vdb.console.vngcloud.vn/kafka/cluster](https://vdb.console.vngcloud.vn/kafka/cluster) and select the Kafka cluster you want to adjust.
+**1. Select Kafka Cluster:** Log in to vDB Kafka Cluster here [https://vdb.console.greennode.ai/kafka/cluster](https://vdb.console.greennode.ai/kafka/cluster) and select the Kafka cluster you want to adjust.
 
 **2. Enable/Disable Public Access:** On the Kafka Cluster management page, find the "Edit Accessibility" feature option and enable or disable this option to allow or block access from outside the VPC.
 
@@ -23,7 +23,7 @@ Access Method options and functions
 
 ## Edit Access Method (mTLS, SASL)
 
-**1. Select Kafka Cluster:** Log in to vDB Kafka Cluster here [https://vdb.console.vngcloud.vn/kafka/cluster](https://vdb.console.vngcloud.vn/kafka/cluster) and select the Kafka cluster you want to adjust.
+**1. Select Kafka Cluster:** Log in to vDB Kafka Cluster here [https://vdb.console.greennode.ai/kafka/cluster](https://vdb.console.greennode.ai/kafka/cluster) and select the Kafka cluster you want to adjust.
 
 **2. Select Authentication Methods:** On the Kafka Cluster management page, find and select the "Edit Access Control Method" feature.
 

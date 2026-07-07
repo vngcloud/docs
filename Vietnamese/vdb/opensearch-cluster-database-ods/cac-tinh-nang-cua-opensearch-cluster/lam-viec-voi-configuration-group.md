@@ -16,7 +16,7 @@ Nếu bạn muốn tùy chỉnh thông số cấu hình, hãy tạo **một Conf
 
 ### **Khởi tạo một Configuration Group**
 
-**Bước 1:** Truy cập vào [https://vdb.console.vngcloud.vn/](https://vdb.console.vngcloud.vn/)
+**Bước 1:** Truy cập vào [https://vdb.console.greennode.ai/](https://vdb.console.greennode.ai/)
 
 **Bước 2:** Chọn mục **Configuration group** trên mục **OpenSearch.**
 

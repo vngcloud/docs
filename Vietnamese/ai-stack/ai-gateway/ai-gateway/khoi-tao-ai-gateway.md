@@ -2,7 +2,7 @@
 
 Để bắt đầu sử dụng AI Gateway trên GreenNode, bạn hãy thực hiện theo các bước sau:
 
-**Bước 1:** Truy cập giao diện AI Gateway tại GreenNode Console thông qua đường dẫn: [http://aigateway.console.vngcloud.vn/](http://aigateway.console.vngcloud.vn/)
+**Bước 1:** Truy cập giao diện AI Gateway tại GreenNode Console thông qua đường dẫn: [http://aigateway.console.greennode.ai/](http://aigateway.console.greennode.ai/)
 
 **Bước 2:** Trong menu bên trái, chọn mục **AI Gateway**, sau đó nhấn vào nút **Create an AI Gateway**.
 

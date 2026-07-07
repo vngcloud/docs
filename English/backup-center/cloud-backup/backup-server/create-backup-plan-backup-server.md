@@ -7,7 +7,7 @@ To protect your server by creating regular backups, you first need to link your 
 
 ## Create backup plan (backup server) <a href="#tao-backup-plan-backup-server" id="tao-backup-plan-backup-server"></a>
 
-1. Access the Backup Server interface of Backup Center here: [https://backupcenter.console.vngcloud.vn/backup-server/list](https://backupcenter.console.vngcloud.vn/backup-server/list)
+1. Access the Backup Server interface of Backup Center here: [https://backupcenter.console.greennode.ai/backup-server/list](https://backupcenter.console.greennode.ai/backup-server/list)
 2. Select **Create Backup Server.**
 3. Select the server to backup, note that this page only shows servers that do not have a backup plan linked.
 4. Select the backup policy that applies to this backup plan (backup server). Learn more about backup policies here.

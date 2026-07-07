@@ -14,9 +14,9 @@ At GreenNode Service, we provide multiple payment methods to meet the demands of
 * Payment history:&#x20;
   * Record the amount at the time of payment for multiple resources.
   * Record information of invoices incurred corresponding to each resource in that payment.
-  * Review payment history here: [https://dashboard.console.vngcloud.vn/payment-history](https://dashboard.console.vngcloud.vn/payment-history).
+  * Review payment history here: [https://dashboard.console.greennode.ai/payment-history](https://dashboard.console.greennode.ai/payment-history).
 * Invoice history:&#x20;
   * Record invoice information corresponding to a specific resource.
   * In this case, the system will generate multiple invoice heads corresponding to each resource.
-  * Review invoice history here: [https://dashboard.console.vngcloud.vn/billing-report](https://dashboard.console.vngcloud.vn/billing-report).
+  * Review invoice history here: [https://dashboard.console.greennode.ai/billing-report](https://dashboard.console.greennode.ai/billing-report).
 * When applying a coupon: Refer to detailed instructions on using coupons here.

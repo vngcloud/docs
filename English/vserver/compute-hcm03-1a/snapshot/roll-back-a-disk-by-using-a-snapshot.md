@@ -23,6 +23,6 @@ You can only restore a virtual disk with a Snapshot of the Data Volume.
 
 ### **Restoring a virtual disk with a Snapshot on the Dashboard** <a href="#khoiphucodiaaobangbansnapshot-khoiphucodiaaobangsnapshottrenbangdieukhien" id="khoiphucodiaaobangbansnapshot-khoiphucodiaaobangsnapshottrenbangdieukhien"></a>
 
-1. Open the vServer dashboard ati [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
+1. Open the vServer dashboard ati [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/).
 2. In the navigation sidebar, select **Snapshot**.
 3. Choose the Snapshot of the Data Volume on the list page, then select **Action**, press Rollback Volume.

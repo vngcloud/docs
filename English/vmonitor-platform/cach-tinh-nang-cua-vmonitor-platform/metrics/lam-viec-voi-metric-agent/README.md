@@ -18,7 +18,7 @@ To push Metrics to vMonitor, you need to install the Metric Agent on your server
 
 Servers with the Metric Agent installed are called Hosts. After successfully installing on the servers, you can view the list of Hosts pushing metrics on the Infrastructure List/Host page by following these steps:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account, register for free [here](https://register.vngcloud.vn/signup).
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). If you don't have an account, register for free [here](https://register.vngcloud.vn/signup).
 2. Select the **Infrastructure List** folder.
 3. Choose **Host**.
 4. The system will display information about the hosts that you have successfully set up to push metrics. The displayed information includes:
@@ -48,7 +48,7 @@ Additionally, clicking on the Host name will take you to the Dashboard page, whe
 
 After successfully setting up the Metric Agent on your server, you have a certain number of hosts pushing metrics to the vMonitor Platform. If you want to temporarily stop a host from pushing metrics to our system without deleting the Metric Agent on that host, the Disable Host feature will help you achieve this. To disable a host with a successfully set up Metric Agent, follow the steps below:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.vngcloud.vn/vmonitor).
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.greennode.ai/vmonitor).
 2. Select the **Infrastructure list** folder.
 3. Choose **Host**.
 4. Select the icon  ![](<../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)  on the host you want to disable.
@@ -63,7 +63,7 @@ When you disable a host, the Metric Agent configuration on the host remains unch
 
 You have disabled a host from pushing metrics to our system, and the metric data from that host has been paused since the time of disabling. If you now need to resume monitoring these metrics, follow the instructions below to restore the disabled host:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.vngcloud.vn/vmonitor).
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.greennode.ai/vmonitor).
 2. Select the **Infrastructure list** folder.
 3. Choose **Host**.
 4. Select the icon ![](<../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>) on the host you want to restore.
@@ -76,7 +76,7 @@ You have disabled a host from pushing metrics to our system, and the metric data
 
 To delete a host, you can:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account, register for free [here](https://register.vngcloud.vn/signup).
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). If you don't have an account, register for free [here](https://register.vngcloud.vn/signup).
 2. Select the **Infrastructure list** folder.
 3. Choose **Host**.
 4. On the host you want to delete, select **Delete**.

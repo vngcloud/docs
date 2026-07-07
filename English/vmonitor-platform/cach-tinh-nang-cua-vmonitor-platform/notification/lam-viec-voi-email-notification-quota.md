@@ -10,7 +10,7 @@ Một Email Notification quota là một thuật ngữ trên vMonitor Platform t
 
 Để khởi tạo một Email Notification Quota, hãy làm theo hướng dẫn bên dưới:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn **Quota & Usage**.
 3. Chọn **Buy Email notification quota.**
 4. Chọn **Email packages** phù hợp với nhu cầu của bạn.
@@ -26,7 +26,7 @@ Một Email Notification quota là một thuật ngữ trên vMonitor Platform t
 
 Sau khi bạn khởi tạo Email Notification Quota, bạn có thể xem thông tin gói Email Notification Quota mà bạn vừa thực hiện khởi tạo bằng cách:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn **Paid notification usage**.
 4. Hệ thống hiển thị thông tin gói **Email notification quota** đã được khởi tạo và **Usage** thực tế bạn đang sử dụng của gói **Email notification quota** đó.&#x20;
@@ -39,7 +39,7 @@ Bạn đã khởi tạo Email notification quota với chu kỳ sử dụng ng�
 
 Để **gia hạn** một **Email Notification Quota**, bạn có thể:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn **Paid notification usage**.
 4. Tại gói Email notification quota đang sử dụng, chọn **Renew.**
@@ -56,7 +56,7 @@ Bạn chỉ có thể gia hạn sử dụng gói Email notification quota trong 
 
 Để **tăng hạn mức** một **Email Notification Quota**, bạn có thể:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn **Paid notification usage**.
 4. Tại gói Email notification quota đang sử dụng, chọn **Upgrade**.
@@ -75,7 +75,7 @@ Nếu bạn không có nhu cầu sử dụng gói Email notification quota đã 
 
 Để **xóa** một **Email Notification Quota**, bạn có thể:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn **Paid notification usage**.
 4. Tại gói Email notification quota đang sử dụng, chọn **Delete**.

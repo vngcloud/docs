@@ -18,7 +18,7 @@ Bạn không còn muốn một gói dự phòng hoạt động theo cách bạn 
 
 ### **Xóa bản sao lưu bằng cách thủ công trên trình điều khiển vBackup** <a href="#xoabansaoluu-xoabansaoluubangcachthucongtrentrinhdieukhienvbackup" id="xoabansaoluu-xoabansaoluubangcachthucongtrentrinhdieukhienvbackup"></a>
 
-1. Truy cập vào bảng điều khiển vBackup tại: [https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-server](https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-server)
+1. Truy cập vào bảng điều khiển vBackup tại: [https://hcm-3.console.greennode.ai/vserver/block-store/backup/backup-server](https://hcm-3.console.greennode.ai/vserver/block-store/backup/backup-server)
 2. Chọn vào xem chi tiết bản Backup Server bằng cách nhấn vào tên
 3. Tại trang chi tiết, chọn **Tab Restore Point,** tại đây sẽ hiển thị các bản Backup tại các điểm khôi phục khác nhau được tạo theo thời gian của bộ lịch Policy
 4. Chọn bản Backup Server hoặc Backup Volume bạn cần xóa sau đó nhấn vào biểu tượng **Delete**

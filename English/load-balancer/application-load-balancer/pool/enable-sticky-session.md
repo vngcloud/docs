@@ -29,7 +29,7 @@ The Enable Sticky Session feature is a crucial part of the Load Balancer, allowi
 
 ## How to Enable/Disable Sticky Sessions
 
-1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb`.
+1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb`.
 2. **Select Your Load Balancer:** Click on the Load Balancer you want to configure.
 3. **Go to the Pool Tab:** In the Load Balancer details page, select the "Pool" tab.
 4. **Edit Pool:** Hover over the pool you want to modify and click the "Edit" icon.

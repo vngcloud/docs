@@ -20,7 +20,7 @@ Detailed steps are as follows
 
 **Step 1: Create User: System1 if you do not have a User Account (note that if you already have User: System1, make sure User: System1 does not have any rights or does not have rights that overlap with the instructions)**
 
-Create a User Account by accessing the User Account tab on the IAM management page here [,](https://iam.console.vngcloud.vn/user-accounts) clicking **Create a User Account,** filling in Username and Password information, then clicking **Create User Account**
+Create a User Account by accessing the User Account tab on the IAM management page here [,](https://iam.console.greennode.ai/user-accounts) clicking **Create a User Account,** filling in Username and Password information, then clicking **Create User Account**
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fh99DI1M7zd14TH4fddYZ%252Fimage2023-7-12_15-18-33.png%3Falt%3Dmedia%26token%3Ddd0d78fd-d46d-4dab-bca3-504a1399e838&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=8d4f9bb2&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
@@ -30,13 +30,13 @@ After successfully creating a User Account, it will be listed on the User Accoun
 
 **Step 2: Get the ID information of the server web1-server**
 
-Visit the server management page here [to](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) get server ID information, click **Copy ID** at server web1-server to get the ID, save it for use in the next steps.
+Visit the server management page here [to](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server) get server ID information, click **Copy ID** at server web1-server to get the ID, save it for use in the next steps.
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FsrOvIubGZoxv2aqpbCil%252Fimage2023-7-12_16-25-13.png%3Falt%3Dmedia%26token%3Db3097754-146d-4f28-82b7-e152f05cfde3&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=1dfdf3d8&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 **Step 3: Create a Policy with the name vServerFullAccessWebServers that allows access to all resources of vServer, but only full rights on web1-server**
 
-To create a Policy, go to the Policy tab on the IAM page here [,](https://iam.console.vngcloud.vn/policies) click **Create a Policy** , **name** the Policy: vServerFullAccessWebServers and click **Next step**
+To create a Policy, go to the Policy tab on the IAM page here [,](https://iam.console.greennode.ai/policies) click **Create a Policy** , **name** the Policy: vServerFullAccessWebServers and click **Next step**
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FmPCGK6iLohYVYnSXodMK%252Fimage2023-7-12_15-22-45.png%3Falt%3Dmedia%26token%3Dfd3f5c6d-7d56-4e49-9883-57f5df69b232&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=ef5e8a05&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
@@ -78,7 +78,7 @@ After adding User: System1 to Policy: vServerFullAccessWebServer, you will see i
 
 Now you can log in to User: System1 to check permissions
 
-Access vServer here [,](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) without logging into any account you will be redirected to the sign-in page, select " **Sign-in With IAM User Account** "
+Access vServer here [,](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server) without logging into any account you will be redirected to the sign-in page, select " **Sign-in With IAM User Account** "
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FRQCKLmbVTKw01hNW2oBa%252Fimage2023-7-12_13-48-49.png%3Falt%3Dmedia%26token%3Db0388752-d3c2-4dab-ada2-3aec720d8387&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=bd5f0942&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 

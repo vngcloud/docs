@@ -4,7 +4,7 @@ Tài khoản **Master User** là tài khoản quản trị chính của **OpenSe
 
 Để thay đổi mật khẩu cho tài khoản master trong một OpenSearch Cluster, bạn có thể:
 
-**Bước 1:** Truy cập vào [https://vdb.console.vngcloud.vn/](https://vdb.console.vngcloud.vn/)
+**Bước 1:** Truy cập vào [https://vdb.console.greennode.ai/](https://vdb.console.greennode.ai/)
 
 **Bước 2:** Chọn mục **Cluster** trên mục **OpenSearch**
 

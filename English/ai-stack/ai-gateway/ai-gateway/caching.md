@@ -9,7 +9,7 @@ description: >-
 
 ## 1. Access the Model Caching Page
 
-Access the page via:: [https://aigateway.console.vngcloud.vn/model-caching/list](https://aigateway.console.vngcloud.vn/model-caching/list)
+Access the page via:: [https://aigateway.console.greennode.ai/model-caching/list](https://aigateway.console.greennode.ai/model-caching/list)
 
 ## 2. Create a Caching Configuration
 
@@ -86,7 +86,7 @@ Access the page via:: [https://aigateway.console.vngcloud.vn/model-caching/list]
 
 #### View Caching Configurations Assigned to a Gateway
 
-1. Open the Gateway list page:: [https://aigateway.console.vngcloud.vn/ai-gateway/list](https://aigateway.console.vngcloud.vn/ai-gateway/list).
+1. Open the Gateway list page:: [https://aigateway.console.greennode.ai/ai-gateway/list](https://aigateway.console.greennode.ai/ai-gateway/list).
 2. Select the desired Gateway → open the Gateway details page.
 3.  Go to the Model Caching tab — this will display all caching configurations assigned to the gateway, including columns for:
 

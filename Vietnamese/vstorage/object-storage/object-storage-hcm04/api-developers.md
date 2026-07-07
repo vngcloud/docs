@@ -9,12 +9,12 @@ Object Storage (HCM04) cung cấp một loạt API để quản lý dữ liệu 
 
 Thực hiện theo các bước bên dưới làm việc với vStorage thông qua Service Account
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list)
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list)
 2. Chọn thư mục **Integration.**
 3. Chọn biểu tượng **vStorage API**.
 4. Tại mục **Authentication**, bạn cần điền thông tin cần thiết để cấu hình vStorage API của bạn bao gồm:
    1. Nhập **Client ID**. Một **Client ID** là một chuỗi ký tự được sử dụng bởi Service API để định danh ứng dụng, đồng thời cũng được dùng để xây dựng "authorization URL" hiển thị phía người dùng. Bạn có thể tạo và quản lý **Client ID** thông qua hệ thống vIAM. **Client ID** sẽ được tự động sinh ra khi bạn tạo mới một **Service Account**.
-   2. Nhập **Client Secret** tương ứng của **Client ID** vừa nhập. Cặp Client ID và Client Secret được bạn tạo và quản lý thông qua hệ thống vIAM. Bạn có thể chọn [Click here to manage your Client ID.](https://iam.console.vngcloud.vn/service-accounts) để chúng tôi điều hướng bạn tới hệ thống vIAM và chi tiết là các màn hình quản lý Service Account.
+   2. Nhập **Client Secret** tương ứng của **Client ID** vừa nhập. Cặp Client ID và Client Secret được bạn tạo và quản lý thông qua hệ thống vIAM. Bạn có thể chọn [Click here to manage your Client ID.](https://iam.console.greennode.ai/service-accounts) để chúng tôi điều hướng bạn tới hệ thống vIAM và chi tiết là các màn hình quản lý Service Account.
 5. Sau khi hoàn tất chọn cấu hình **xác thực**, chọn **Authentication** để chuyển tới màn hình **Configuration. Tại đây bạn có thể sử dụng trực tiếp các vStorage API hoặc bạn có thể sử dụng API thông qua Postman**. Bạn luôn có thể quay lại đây để thay đổi thông tin **Cấp quyền** của mình, sau đó chọn lại **Xác thực** để cập nhật danh sách S3 Rest API theo thông số mới của bạn.
 
 Chi tiết, vui lòng tham khảo thêm tại [https://docs.api.vngcloud.vn/service-docs/vstorage-hcm04-api.html](https://docs.api.vngcloud.vn/service-docs/vstorage-hcm04-api.html).
