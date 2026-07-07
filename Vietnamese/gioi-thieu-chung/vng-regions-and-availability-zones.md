@@ -21,12 +21,12 @@ Availability Zone là một hoặc nhiều data center riêng biệt trong một
 
 ***
 
-## Danh sách VNG Regions
+## Danh sách GreenNode Regions
 
-| Region Code | Region Name | Availability Zones             | Console URL                                                                                                                        |
-| ----------- | ----------- | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
-| HCM         | Ho Chi Minh | HCM-1A, HCM-1B, HCM-1C, BKK-1A | https://hcm-3.console.vngcloud.vn                                                                                                  |
-| HAN         | Ha Noi      | HAN-1A                         | [https://han-1.console.vngcloud.vn/vserver/v-server/cloud-server](https://han-1.console.vngcloud.vn/vserver/v-server/cloud-server) |
+| Region Code | Region Name | Availability Zones             | Console URL                                                                                                |
+| ----------- | ----------- | ------------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| HCM         | Ho Chi Minh | HCM-1A, HCM-1B, HCM-1C, BKK-1A | [https://hcm-3.console.greennode.ai](https://hcm-3.console.greennode.ai)                                   |
+| HAN         | Ha Noi      | HAN-1A                         | [https://han-1.console.greennode.ai/vserver/overview](https://han-1.console.greennode.ai/vserver/overview) |
 
 {% hint style="info" %}
 Cập nhật đến ngày 15/12/2025, GreenNode đang hỗ trợ 2 region: Hồ Chí Minh và Hà Nội.
