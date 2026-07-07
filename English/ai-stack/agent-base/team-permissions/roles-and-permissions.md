@@ -8,7 +8,7 @@
 
 Go to [Team & Permissions](https://aiplatform.console.greennode.ai/team-permissions) → **Roles & Permissions** tab
 
-![Roles & Permissions](../../../.gitbook/assets/Agentbase-image/Role-permission-tab.png)
+![Roles & Permissions](../../../../.gitbook/assets/Role-permission-tab.png)
 
 ***
 
@@ -25,7 +25,7 @@ Go to [Team & Permissions](https://aiplatform.console.greennode.ai/team-permissi
 
 ## Permission Matrix
 
-> ✅ Full access  ·  🔸 Own only (own resources)  ·  ✕ No access
+> ✅ Full access · 🔸 Own only (own resources) · ✕ No access
 
 | Permission Group           | Permission                                   | Root | Admin | Member | Viewer |
 | -------------------------- | -------------------------------------------- | :--: | :---: | :----: | :----: |

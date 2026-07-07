@@ -61,7 +61,7 @@ Ví dụ minh họa
 
 <table data-header-hidden><thead><tr><th width="194"></th><th></th></tr></thead><tbody><tr><td><strong>Loại Dashboard</strong></td><td><strong>Mô tả</strong></td></tr><tr><td>All Dashboards</td><td>Tất cả các dashboard đang có</td></tr><tr><td>All host</td><td>Tất cả các Dashboard được tạo tự động bởi vMonitor Platform khi bạn thiết lập một Host.</td></tr><tr><td>All integration</td><td>Tất cả các Dashboard được tạo tự động bởi vMonitor Platform khi bạn thiết lập các ứng dụng tích hợp.</td></tr><tr><td>All GreenNode</td><td>Tất cả các Dashboard được tạo bởi hệ thống vMonitor Platform cho các Product của GreenNode</td></tr><tr><td>Created by you</td><td>Các Dashboard được tạo bởi người sử dụng</td></tr><tr><td>Favourite</td><td>Các Dashboard được đánh dấu là yêu thích.</td></tr></tbody></table>
 
-Bạn có thể đánh dấu 1 **Dashboard tùy chỉnh** là Dashboard yêu thích cũng như bỏ chúng khỏi danh sách yêu thích bằng cách chọn <img src="../../../.gitbook/assets/image (47) (1).png" alt="" data-size="line">trên mỗi **Dashboard**. Khi biểu tượng trên Dashboard là <img src="../../../.gitbook/assets/image (48) (1).png" alt="" data-size="line">nghĩa là **Dashboard** đã được thêm vào danh sách yêu thích thành công và ngược lại khi biểu tượng trên **Dashboard** là <img src="../../../.gitbook/assets/image (49) (1).png" alt="" data-size="line">nghĩa là **Dashboard** chưa được thêm vào danh sách yêu thích thành công.
+Bạn có thể đánh dấu 1 **Dashboard tùy chỉnh** là Dashboard yêu thích cũng như bỏ chúng khỏi danh sách yêu thích bằng cách chọn <img src="../../../../.gitbook/assets/image (47) (1) (3).png" alt="" data-size="line">trên mỗi **Dashboard**. Khi biểu tượng trên Dashboard là <img src="../../../../.gitbook/assets/image (48) (1) (1).png" alt="" data-size="line">nghĩa là **Dashboard** đã được thêm vào danh sách yêu thích thành công và ngược lại khi biểu tượng trên **Dashboard** là <img src="../../../../.gitbook/assets/image (49) (1) (1).png" alt="" data-size="line">nghĩa là **Dashboard** chưa được thêm vào danh sách yêu thích thành công.
 
 ***
 
@@ -71,7 +71,7 @@ Bạn có thể đánh dấu 1 **Dashboard tùy chỉnh** là Dashboard yêu th�
 
 1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.greennode.ai/vmonitor)
 2. Chọn thư mục **Dashboard.**
-3. Tại **Dashboard** mà bạn muốn thay đổi tên, chọn biểu tượng<img src="../../../.gitbook/assets/image (23).png" alt="" data-size="line">
+3. Tại **Dashboard** mà bạn muốn thay đổi tên, chọn biểu tượng<img src="../../../../.gitbook/assets/image (23) (2).png" alt="" data-size="line">
 4. Chọn **Rename**.
 5. Nhập **Dashboard name**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho Dashboard của bạn.
 6. Chọn **Save**.
@@ -86,7 +86,7 @@ Bạn chỉ có thể thay đổi tên những Dashboard được tạo bởi ch
 
 1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.greennode.ai/vmonitor)
 2. Chọn thư mục **Dashboard.**
-3. Tại **Dashboard** mà bạn muốn tạo bản sao, chọn <img src="../../../.gitbook/assets/image (23).png" alt="" data-size="line">
+3. Tại **Dashboard** mà bạn muốn tạo bản sao, chọn <img src="../../../../.gitbook/assets/image (23) (2).png" alt="" data-size="line">
 4. Chọn **Clone Dashboard.**
 5. Nhập **Dashboard name**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho Dashboard của bạn.
 6. Chọn **Clone.**
@@ -101,7 +101,7 @@ Khi bạn không có nhu cầu sử dụng một **Dashboard** tùy chỉnh nữ
 
 1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.greennode.ai/vmonitor)
 2. Chọn thư mục **Dashboard.**
-3. Tại **Dashboard** mà bạn muốn xóa, chọn <img src="../../../.gitbook/assets/image (23).png" alt="" data-size="line">
+3. Tại **Dashboard** mà bạn muốn xóa, chọn <img src="../../../../.gitbook/assets/image (23) (2).png" alt="" data-size="line">
 4. Chọn **Delete**.
 5. Tại màn hình xác nhận xóa Dashboard, chọn **Delete**.
 

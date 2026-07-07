@@ -2,7 +2,7 @@
 
 i bạn tạo **Widget** cho dữ liệu **metric**, trong phần **Graph your data**, tạo câu lệnh truy vấn dữ liệu của bạn bằng cách chọn **Add a query**. Mỗi câu lệnh truy vấn sẽ được thể hiện bởi một line, một stacked hoặc một number trên biểu đồ. Các thành phần tạo nên câu lệnh truy vấn đối với dữ liệu metric bao gồm:
 
-<figure><img src="../../../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
 Trong đó:
 
@@ -26,7 +26,7 @@ Loại query: khung chọn loại dữ liệu. Để vẽ biểu đồ cho metri
 
 **Filter**: metric mà bạn lựa chọn có thể được filter bởi các **dimensions** (ví dụ host,device,...) từ danh sách **dimensions** được hiển thị, bạn có thể chọn nhiều **dimensions** tại đây. Ngoài việc chọn các dimensions có giá trị cố định của metric, tại đây bạn có thể sử dụng các **variable** để filter linh động hơn. Các **variable** này đã được bạn định nghĩa tại **Dashboard** mà bạn đang muốn tạo **Widget**. Để tìm hiểu thêm về **variable**, vui lòng tham khảo tại [Variable, Save Querying and View](../variable-save-querying-and-view.md). Ví dụ như ảnh bên dưới, chúng tôi chọn metric win\_swap.Percent\_Usage và chọn điều kiện lọc theo 2 dimension bao gồm: host = ThuyVT2-PC và objectname = Paging\_File.
 
-<figure><img src="../../../../.gitbook/assets/2.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/2.gif" alt=""><figcaption></figcaption></figure>
 
 #### 6. Statistics
 
@@ -48,4 +48,4 @@ Loại query: khung chọn loại dữ liệu. Để vẽ biểu đồ cho metri
 
 Bạn có thể tham khảo cách tạo một graph với metric dựa trên video bên dưới
 
-<figure><img src="../../../../.gitbook/assets/3.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/3.gif" alt=""><figcaption></figcaption></figure>

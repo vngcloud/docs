@@ -14,17 +14,17 @@ description: >-
 * Tại thanh menu bên trái của giao diện vNetwork, chọn mục VPN Site-to-Site.
 * Chọn VPN cần chỉnh sửa
 
-<figure><img src="../../../.gitbook/assets/1 (2) (1).png" alt=""><figcaption><p>VPN List</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/1 (2) (1) (1).png" alt=""><figcaption><p>VPN List</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (343).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (343) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Thêm Site
 
 Người dùng có thể cho phép VPC kết nối nhiều đầu xa Gateway khác nhau ngoài Default Site được tạo ở trang Tạo VPN.
 
-<figure><img src="../../../.gitbook/assets/image (967).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (967).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (970).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (970).png" alt=""><figcaption></figcaption></figure>
 
 ## Thêm Tunnel
 
@@ -32,9 +32,9 @@ Người dùng có thể thêm Tunnel trong một Site để cho phép nhiều S
 
 Nhấn vào nút **Thêm Tunnel** giao diện sẽ hiện lên để người dùng cung cấp thông tin Remote Private CIDR thêm cho Site hiện tại.
 
-<figure><img src="../../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (344).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (344).png" alt=""><figcaption></figcaption></figure>
 
 Thông tin cấu hình xem [tại đây](./#cau-hinh-default-tunnel)
 
@@ -44,21 +44,21 @@ Thông tin cấu hình xem [tại đây](./#cau-hinh-default-tunnel)
 
 Người dùng chọn **Sửa tên** để thay đổi tên của Site hoặc **Tunnel**
 
-<figure><img src="../../../.gitbook/assets/image (974).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (974).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (364).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (364).png" alt=""><figcaption></figcaption></figure>
 
 ### Thay đổi cấu hình Kết nối
 
 * Người dùng có thể chọn **Sửa cấu hình** để thay đổi thông tin IPSEC trước đó. Xem thông tin cấu hình [tại đây](./#cau-hinh-default-tunnel)
 
-<figure><img src="../../../.gitbook/assets/Screen Shot 2025-04-02 at 11.19.16.png" alt=""><figcaption><p>Edit Site Configuration</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screen Shot 2025-04-02 at 11.19.16.png" alt=""><figcaption><p>Edit Site Configuration</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (979).png" alt=""><figcaption><p>Edit Site Configuration</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (979).png" alt=""><figcaption><p>Edit Site Configuration</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (982).png" alt=""><figcaption><p>Edit Tunnel Configuration</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (982).png" alt=""><figcaption><p>Edit Tunnel Configuration</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (980).png" alt=""><figcaption><p>Edit Tunnel Configuration</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (980).png" alt=""><figcaption><p>Edit Tunnel Configuration</p></figcaption></figure>
 
 ## Xoá kết nối
 

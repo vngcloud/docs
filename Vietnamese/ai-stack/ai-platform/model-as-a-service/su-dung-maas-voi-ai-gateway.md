@@ -6,7 +6,7 @@
 
 **Bước 2:** Trong menu bên trái, chọn mục **AI Gateway**, sau đó nhấn vào nút **Create an AI Gateway**.
 
-<figure><img src="../../../.gitbook/assets/image (438).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (438).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Tại màn hình **Tạo Gateway mới**, vui lòng điền đầy đủ các thông tin sau:
 
@@ -16,35 +16,35 @@
   * **Model Type**: Chọn Model Type (xem tại [MaaS](https://aiplatform.console.greennode.ai/models/md-37404b64-0656-4c85-978c-a6e1b84ea8ac) ở portal AI Platform).
   * **Model Endpoint**: Điền URL của model (xem tại [MaaS](https://aiplatform.console.greennode.ai/models/md-37404b64-0656-4c85-978c-a6e1b84ea8ac) ở poral AI Platform).
   * **Model Name**: Điền Name của model (xem tại [MaaS](https://aiplatform.console.greennode.ai/models/md-37404b64-0656-4c85-978c-a6e1b84ea8ac) ở poral AI Platform).\
-    ![](<../../../.gitbook/assets/image (3).png>)
+    ![](<../../../../.gitbook/assets/image (3) (1).png>)
   *   **Authentication info**:
 
       * header\_name: Điền `Authorization`.
       * header\_value: Điền `Bearer <api-key-maas>` ( API Key trong hình được tạo ở [Portal ](https://aiplatform.console.greennode.ai/keys)AI Platform).
 
-      <figure><img src="../../../.gitbook/assets/image (439).png" alt="123"><figcaption></figcaption></figure>
+      <figure><img src="../../../../.gitbook/assets/image (439).png" alt="123"><figcaption></figcaption></figure>
 * **Gateway Config:** Mặc định, hệ thống sẽ bật tính năng **Authenticated Gateway.**
 
 **Bước 4**: Chọn Create an AI Gateway, AI Gateway của bạn sẽ được khởi tạo và sẵn sàng để sử dụng.
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5**: Sau khi AI Gateway được khởi tạo bạn cần [tạo Token](https://docs.vngcloud.vn/vng-cloud-document/vn/ai-stack/ai-gateway/ai-gateway/lam-viec-voi-authentication-token) để gọi API.
 
 **Bước 6**: Sau khi bạn tạo token, bạn có thể cấu hình rate limit cụ thể trên từng token theo nhu cầu cá nhân.
 
-<figure><img src="../../../.gitbook/assets/image (445).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (445) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 \
 **Bước 7**: Trong mục **Providers & Model**, tìm mô hình AI bạn đã cấu hình. Tại mô hình đó, nhấn vào biểu tượng **Curl command** để lấy câu lệnh mẫu.
 
-<figure><img src="../../../.gitbook/assets/image (440).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (440).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 8**: Sao chép đoạn lệnh `curl` được hiển thị và thực thi lệnh đó trên máy tính cá nhân của bạn (qua Terminal hoặc Command Prompt).
 
-<figure><img src="../../../.gitbook/assets/image (19) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (3).png" alt=""><figcaption></figcaption></figure>
 
 Ví dụ:
 

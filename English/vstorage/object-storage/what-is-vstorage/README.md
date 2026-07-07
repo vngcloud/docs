@@ -4,7 +4,7 @@ vStorage - GreenNode Storage is a storage service based on Object Storage archit
 
 vStorage offers storage tiers: Gold and Archive. With the Gold storage tier, your data is always ready for use with the ability to respond to access requests in milliseconds. Archive is the most cost-effective storage tier suitable for very rarely accessed data but needs to be stored, such as medical records, transaction logs, etc.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

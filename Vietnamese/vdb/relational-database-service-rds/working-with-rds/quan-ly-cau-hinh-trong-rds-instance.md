@@ -53,7 +53,7 @@ Các RDS Instance đang được liên kết hay chuẩn bị được liên k�
 
 Đầu tiên, bạn đến màn hình quản lý Database, chọn RDS Instance bạn muốn cấu hình bằng cách nhấn vào icon ba chấm và nhấn chọn **Edit Configuration Group** hoặc bạn có thể vào chi tiết RDS Instance và chọn icon **Edit Configuration Group (góc bên phải phía trên)**
 
-<figure><img src="../../../.gitbook/assets/image (443).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (443) (1).png" alt=""><figcaption></figcaption></figure>
 
 Tại mục **DB configuration group**, bạn chọn Configuration Group đã tạo ở trên.
 

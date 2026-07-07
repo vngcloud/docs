@@ -85,17 +85,17 @@ lsblk -o NAME,PTTYPE
 * Cài đặt Management Agent trên Main Server:
   1.  Tải Management Agent.
 
-      <figure><img src="../.gitbook/assets/step1.png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../.gitbook/assets/step1.png" alt=""><figcaption></figcaption></figure>
   2.  Cài đặt Management Agent trên Main Server.
 
-      <figure><img src="../.gitbook/assets/step2.png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../.gitbook/assets/step2.png" alt=""><figcaption></figcaption></figure>
   3. Tạo và chạy backup job cho Main Server.
      *   [x] Tạo Backup Job
 
-         <figure><img src="../.gitbook/assets/step3.png" alt=""><figcaption></figcaption></figure>
+         <figure><img src="../../.gitbook/assets/step3.png" alt=""><figcaption></figcaption></figure>
      *   [x] Run Backup Job
 
-         <figure><img src="../.gitbook/assets/step3.2.png" alt=""><figcaption></figcaption></figure>
+         <figure><img src="../../.gitbook/assets/step3.2.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -108,34 +108,34 @@ lsblk -o NAME,PTTYPE
     * 3.2.2 Giữ nguyên trạng thái hiện tại, sau đó bấm Set up migration để bắt đầu quá trình migrate.
     * 3.3.3 Sau khi hoàn tất Set up Migration, nhấn Start Server để bắt đầu Restore.
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Step 3.2</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="" width="375"><figcaption><p>Step 3.2</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="317"><figcaption><p>Step 3.2.1</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="317"><figcaption><p>Step 3.2.1</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>3.2.2</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>3.2.2</p></figcaption></figure>
 
 * Restore từ Backup
   *   Truy cập Destination VM
 
-      <figure><img src="../.gitbook/assets/start1.png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../.gitbook/assets/start1.png" alt=""><figcaption></figcaption></figure>
   *   Chọn Restore volume
 
-      <figure><img src="../.gitbook/assets/start2.png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../.gitbook/assets/start2.png" alt=""><figcaption></figcaption></figure>
   *   Chọn Add Cloud Connect provider
 
-      <figure><img src="../.gitbook/assets/start3.png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../.gitbook/assets/start3.png" alt=""><figcaption></figcaption></figure>
   *   Nhập thông tin endpoint và port của Veeam cloud repository: E.g. veeam-gw.vngcloud.vn port 443
 
-      <figure><img src="../.gitbook/assets/start4.png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../.gitbook/assets/start4.png" alt=""><figcaption></figcaption></figure>
   *   Nhập username/password
 
-      <figure><img src="../.gitbook/assets/start5.png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../.gitbook/assets/start5.png" alt=""><figcaption></figcaption></figure>
   *   Chọn backup job và restore point cần restore. Nhấn enter
 
-      <figure><img src="../.gitbook/assets/start6.png" alt="" width="375"><figcaption></figcaption></figure>
+      <figure><img src="../../.gitbook/assets/start6.png" alt="" width="375"><figcaption></figcaption></figure>
   *   Chọn sda, chọn restore from rồi nhấn enter. Kiểm tra lại thông tin mapping rồi nhấn enter.
 
-      <figure><img src="../.gitbook/assets/start7.png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../.gitbook/assets/start7.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -143,7 +143,7 @@ lsblk -o NAME,PTTYPE
 
 *   Truy cập Destination VM, nhấn Migrate Server và chọn kết quả thực tế sau khi Restore (Successed/Failed).
 
-    <figure><img src="../.gitbook/assets/check.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/check.png" alt=""><figcaption></figcaption></figure>
 * Truy cập Server Migration tại Backup Center để kiểm tra logs migration[ tại đây](https://backupcenter.console.greennode.ai/server-migration).
 
 ## 5. Hiệu suất migration
@@ -158,4 +158,4 @@ Trong quá trình thử nghiệm thực tế với các cấu hình tối ưu t�
 
 * Thời gian di chuyển thực tế: Với các thông số kỹ thuật như trên, trung bình quá trình di chuyển dữ liệu **20GB chỉ mất khoảng 2–3 phút**, cho thấy sự hiệu quả rõ rệt so với các giải pháp truyền thống hoặc hạ tầng không được tối ưu.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

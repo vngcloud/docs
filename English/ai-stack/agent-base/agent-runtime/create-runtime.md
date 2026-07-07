@@ -2,15 +2,15 @@
 
 > Step-by-step guide to creating an Agent Runtime from a container image on GreenNode AgentBase.
 
----
+***
 
 ## Prerequisites
 
-- A GreenNode account with role Root or Admin
-- A container image for your agent (public registry or [private Container Registry](../container-registry/README.md))
-- An Identity created for the agent — see [Access Control](../access-control/README.md)
+* A GreenNode account with role Root or Admin
+* A container image for your agent (public registry or [private Container Registry](../container-registry/))
+* An Identity created for the agent — see [Access Control](../access-control/)
 
----
+***
 
 ## Quick Deploy with AgentBase Skills
 
@@ -25,16 +25,16 @@ git clone https://github.com/vngcloud/greennode-agentbase-skills .claude/skills/
 
 **Use in Claude Code / Cursor:**
 
-| Skill | What it does |
-|---|---|
-| `/agentbase-wizard` | Full 9-step workflow: scaffold → configure → code → test → deploy → verify |
-| `/agentbase-deploy` | Build container, push image, and deploy to Runtime |
-| `/agentbase-monitor` | View logs, metrics, and Runtime status |
-| `/agentbase-identity` | Configure IAM Identity for your agent |
+| Skill                 | What it does                                                               |
+| --------------------- | -------------------------------------------------------------------------- |
+| `/agentbase-wizard`   | Full 9-step workflow: scaffold → configure → code → test → deploy → verify |
+| `/agentbase-deploy`   | Build container, push image, and deploy to Runtime                         |
+| `/agentbase-monitor`  | View logs, metrics, and Runtime status                                     |
+| `/agentbase-identity` | Configure IAM Identity for your agent                                      |
 
 Recommended for developers who want to integrate deployment into an AI-assisted coding workflow without manual Portal steps.
 
----
+***
 
 ## Create via Portal
 
@@ -42,33 +42,33 @@ Recommended for developers who want to integrate deployment into an AI-assisted 
 
 A popup appears to choose the agent type:
 
-![Deploy a new Agent — choose agent type](../../../.gitbook/assets/Agentbase-image/deploy-new-agent.png)
+![Deploy a new Agent — choose agent type](../../../../.gitbook/assets/deploy-new-agent.png)
 
-| Type | Description |
-|---|---|
-| **Custom Agent** | Agent you code and deploy yourself — full control over runtime, vCR, IAM, and scaling |
-| **OpenClaw** | Platform-managed agent, pre-configured by GreenNode — quick deploy, no runtime configuration needed |
+| Type             | Description                                                                                         |
+| ---------------- | --------------------------------------------------------------------------------------------------- |
+| **Custom Agent** | Agent you code and deploy yourself — full control over runtime, vCR, IAM, and scaling               |
+| **OpenClaw**     | Platform-managed agent, pre-configured by GreenNode — quick deploy, no runtime configuration needed |
 
 Click **DEPLOY** in the **Custom Agent** card to continue.
 
 **Step 2:** Fill in the required information
 
-| Field | Example | Notes |
-|---|---|---|
-| **Name** | `my-order-agent` | Unique, lowercase, hyphens allowed |
-| **Description** | `Production order agent` | Optional |
-| **Image URL** | `vcr.vngcloud.vn/<repo>/my-agent:v1` | Full image path including tag |
-| **Flavor** | `1x1-general` | 1 vCPU, 1 GB RAM |
-| **Min Replicas** | `1` | Range: 1–10 |
-| **Max Replicas** | `1` | Set >1 to enable autoscaling |
-| **CPU Threshold** | `50` | Scale out when CPU exceeds this % (25–75) |
-| **Memory Threshold** | `50` | Scale out when RAM exceeds this % (25–75) |
-| **Registry Auth** | Enable if private | Username = robot account `backendName` |
-| **Environment Variables** | `KEY=value` | Non-sensitive config only |
+| Field                     | Example                              | Notes                                     |
+| ------------------------- | ------------------------------------ | ----------------------------------------- |
+| **Name**                  | `my-order-agent`                     | Unique, lowercase, hyphens allowed        |
+| **Description**           | `Production order agent`             | Optional                                  |
+| **Image URL**             | `vcr.vngcloud.vn/<repo>/my-agent:v1` | Full image path including tag             |
+| **Flavor**                | `1x1-general`                        | 1 vCPU, 1 GB RAM                          |
+| **Min Replicas**          | `1`                                  | Range: 1–10                               |
+| **Max Replicas**          | `1`                                  | Set >1 to enable autoscaling              |
+| **CPU Threshold**         | `50`                                 | Scale out when CPU exceeds this % (25–75) |
+| **Memory Threshold**      | `50`                                 | Scale out when RAM exceeds this % (25–75) |
+| **Registry Auth**         | Enable if private                    | Username = robot account `backendName`    |
+| **Environment Variables** | `KEY=value`                          | Non-sensitive config only                 |
 
 **Step 3:** Configure networking (optional)
 
-- **Private VPC**: enable to deploy inside your enterprise network
+* **Private VPC**: enable to deploy inside your enterprise network
 
 **Step 4:** Configure Endpoint — AgentBase automatically creates a **DEFAULT** Endpoint
 
@@ -76,7 +76,7 @@ Click **DEPLOY** in the **Custom Agent** card to continue.
 
 The Runtime transitions from `CREATING` → `ACTIVE` once the container starts successfully.
 
----
+***
 
 ## Create via API
 
@@ -147,7 +147,7 @@ while true; do
 done
 ```
 
----
+***
 
 ## Service Contract
 
@@ -155,10 +155,10 @@ Your agent container must satisfy the following requirements to work with the Ru
 
 ### Port and Health Check
 
-| Requirement | Value | Notes |
-|---|---|---|
-| Listen port | `8080` | Required — not configurable |
-| Health check | `GET /health` | Must return HTTP 200 |
+| Requirement  | Value         | Notes                       |
+| ------------ | ------------- | --------------------------- |
+| Listen port  | `8080`        | Required — not configurable |
+| Health check | `GET /health` | Must return HTTP 200        |
 
 **Using the greennode-agentbase SDK (recommended):**
 
@@ -196,30 +196,30 @@ def invoke(body: dict):
 
 The Runtime automatically injects these into every container:
 
-| Variable | Description |
-|---|---|
-| `GREENNODE_CLIENT_ID` | IAM service account client ID |
-| `GREENNODE_CLIENT_SECRET` | IAM service account client secret |
-| `GREENNODE_AGENT_IDENTITY` | The agent identity name |
+| Variable                   | Description                       |
+| -------------------------- | --------------------------------- |
+| `GREENNODE_CLIENT_ID`      | IAM service account client ID     |
+| `GREENNODE_CLIENT_SECRET`  | IAM service account client secret |
+| `GREENNODE_AGENT_IDENTITY` | The agent identity name           |
 
 ### Request Headers
 
 Incoming requests to your agent include:
 
-| Header | Description |
-|---|---|
-| `X-GreenNode-AgentBase-User-Id` | End-user ID — use as `actorId` for memory operations |
+| Header                             | Description                                                 |
+| ---------------------------------- | ----------------------------------------------------------- |
+| `X-GreenNode-AgentBase-User-Id`    | End-user ID — use as `actorId` for memory operations        |
 | `X-GreenNode-AgentBase-Session-Id` | Session ID — use as `thread_id` for LangGraph checkpointing |
 
 {% hint style="warning" %}
 If your agent uses memory, validate that these headers are present and return an error if missing. Do not fall back to default values — silent defaults cause data mixing between users.
 {% endhint %}
 
----
+***
 
 ## Next Steps
 
-| I want to... | Go to |
-|---|---|
-| Stop, start, or update the Runtime | [Manage Runtime](manage-runtime.md) |
-| Attach a Policy Group to a Gateway | [Policy Groups](../mcp-governance/policy-groups/README.md) |
+| I want to...                       | Go to                                             |
+| ---------------------------------- | ------------------------------------------------- |
+| Stop, start, or update the Runtime | [Manage Runtime](manage-runtime.md)               |
+| Attach a Policy Group to a Gateway | [Policy Groups](../mcp-governance/policy-groups/) |

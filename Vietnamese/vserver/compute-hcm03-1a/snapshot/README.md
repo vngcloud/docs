@@ -10,9 +10,7 @@ Tại GreenNode, chúng tôi hỗ trợ việc tạo Snapshot cho cả Server v�
 
 Bên cạnh việc khôi phục Roll Back máy chủ từ file snapshot, GreenNode cho phép tạo máy chủ mới dựa trên file Snapshot đã tạo. Từ đó, chúng tôi hỗ trợ việc chia sẻ và sử dụng file Snapshot cho người dùng khác trong GreenNode, mang đến cho người dùng những trải nghiệm quản lý hệ thống tốt hơn.
 
-<figure><img src="../../../.gitbook/assets/image (382).png" alt="" width="563"><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../../.gitbook/assets/image (382).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ***
 
@@ -22,7 +20,7 @@ Sự hình thành của các snapshot trong hệ thống lưu trữ đám mây c
 
 Các snapshot sau này, theo một cách ấn tượng, là các phiên bản tăng dần của snapshot ban đầu. Chúng không đòi hỏi lưu trữ lại toàn bộ dữ liệu trên ổ đĩa nguồn, mà chỉ tập trung vào việc sao lưu các khối dữ liệu mới và đã thay đổi từ thời điểm snapshot trước đó được tạo ra. Điều quan trọng cần lưu ý là kích thước của snapshot đầy đủ không phụ thuộc vào kích thước của ổ đĩa nguồn, mà là dựa trên kích thước của dữ liệu bạn sao lưu. Chẳng hạn, nếu bạn tạo snapshot đầu tiên từ một ổ đĩa có dung lượng 200 GB nhưng chỉ chứa 50 GB dữ liệu, snapshot đầy đủ sẽ có kích thước là 50 GB và bạn sẽ chỉ bị tính phí cho dung lượng lưu trữ của snapshot 50 GB đó.
 
-Tương tự, kích thước và chi phí lưu trữ của các snapshot gia tăng sau này sẽ dựa trên kích thước của dữ liệu mới đã được ghi vào ổ đĩa kể từ thời điểm snapshot trước đó. Tiếp tục ví dụ trên, nếu bạn tạo snapshot thứ hai cho ổ đĩa 200 GB sau khi thay đổi 20 GB dữ liệu và thêm 10 GB dữ liệu, snapshot gia tăng sẽ có kích thước là 30 GB. Sau đó, bạn sẽ bị tính phí cho dung lượng lưu trữ snapshot 30 GB bổ sung đó.&#x20;
+Tương tự, kích thước và chi phí lưu trữ của các snapshot gia tăng sau này sẽ dựa trên kích thước của dữ liệu mới đã được ghi vào ổ đĩa kể từ thời điểm snapshot trước đó. Tiếp tục ví dụ trên, nếu bạn tạo snapshot thứ hai cho ổ đĩa 200 GB sau khi thay đổi 20 GB dữ liệu và thêm 10 GB dữ liệu, snapshot gia tăng sẽ có kích thước là 30 GB. Sau đó, bạn sẽ bị tính phí cho dung lượng lưu trữ snapshot 30 GB bổ sung đó.
 
 **Giả sử bạn có một ổ đĩa với dung lượng 25 GB:**
 

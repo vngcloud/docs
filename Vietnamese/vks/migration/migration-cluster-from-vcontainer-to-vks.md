@@ -8,7 +8,7 @@
 
 ## Quy trình thực hiện
 
-<figure><img src="../../.gitbook/assets/unknown (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (3).png" alt=""><figcaption></figcaption></figure>
 
 **Quy trình thực hiện migrate từ vContainer sang vKS (Khách hàng + GreenNode)**
 

@@ -8,7 +8,7 @@ E**vent Notification** trong vStorage là tính năng cho phép bạn nhận th�
 
 3\. Chọn biểu tượng **Action** và chọn **Configure event notification.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (1023).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (1023).png" alt=""><figcaption></figcaption></figure>
 
 4\. Chọn **Create an Event notification**.
 
@@ -32,13 +32,13 @@ E**vent Notification** trong vStorage là tính năng cho phép bạn nhận th�
   * **Date-based partitioning**:
     * File JSON sẽ được lưu trong các thư mục theo từng phần của ngày (năm/tháng/ngày), giúp phân chia dữ liệu theo từng ngày để dễ dàng truy xuất. Phù hợp nếu bạn cần tổ chức dữ liệu theo ngày để quản lý dễ hơn trong trường hợp có nhiều báo cáo.
     * Cấu trúc thư mục và tên file: `[Bucket]/[YYYY]/[MM]/[DD]/[YYYY]-[MM]-[DD]-[hh]-[mm]`.
-    * Ví dụ: `bucketB/2023/03/01/2023-03-01-21-32`&#x20;
+    * Ví dụ: `bucketB/2023/03/01/2023-03-01-21-32`
 
-<figure><img src="../../../../../../.gitbook/assets/image (1024).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (1024).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (1025).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (1025).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (1026).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (1026).png" alt=""><figcaption></figcaption></figure>
 
 5\. Chọn **Create event notification** để khởi tạo event này.
 

@@ -17,11 +17,11 @@ Khi trạng thái chuyển sang **Active**, bạn có thể nhấn **“Connect�
 
 * Cách 1: Truy cập vào đường dẫn qua tên instance
 
-<figure><img src="../../../.gitbook/assets/image (1106).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1106).png" alt=""><figcaption></figcaption></figure>
 
 * Cách 2: Kết nôi qua cột Action (Hành Động)
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **2. Chạy và Dừng Instance**
 
@@ -31,11 +31,11 @@ Sau khi notebook instance được tạo, nó sẽ tự động chạy. Nếu m�
 
 * Cách 1: Truy cập vào đường dẫn qua tên instance
 
-<figure><img src="../../../.gitbook/assets/image (1108).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1108).png" alt=""><figcaption></figcaption></figure>
 
 * Cách 2: Chạy qua cột Action (Hành Động)
 
-<figure><img src="../../../.gitbook/assets/image (387).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (387).png" alt=""><figcaption></figcaption></figure>
 
 ### **Dừng Instance**
 
@@ -43,11 +43,11 @@ Nếu bạn cần tạm dừng công việc hoặc tiết kiệm tài nguyên, b
 
 * Cách 1: Truy cập vào đường dẫn qua tên instance
 
-<figure><img src="../../../.gitbook/assets/image (1107).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1107).png" alt=""><figcaption></figcaption></figure>
 
 * Cách 2: Dừng qua cột Action (Hành Động)
 
-<figure><img src="../../../.gitbook/assets/image (386).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (386).png" alt=""><figcaption></figcaption></figure>
 
 ## **3. Xoá Instance**
 
@@ -55,15 +55,15 @@ Khi một phiên bản notebook không còn cần thiết, bạn có thể xóa 
 
 * Cách 1: Truy cập vào đường dẫn qua tên instance
 
-<figure><img src="../../../.gitbook/assets/image (1112).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1112).png" alt=""><figcaption></figcaption></figure>
 
 * Cách 2: Dừng qua cột Action (Hành Động)
 
-<figure><img src="../../../.gitbook/assets/image (1111).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1111).png" alt=""><figcaption></figcaption></figure>
 
 * Một hộp thoại xác nhận sẽ xuất hiện để đảm bảo bạn không vô tình xóa nhầm phiên bản
 
-<figure><img src="../../../.gitbook/assets/image (1113).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1113).png" alt=""><figcaption></figcaption></figure>
 
 ## 4. Tăng dung lượng block storage
 
@@ -73,9 +73,9 @@ Chỉ được nhập size lớn hơn hoặc bằng storage size hiện tại
 
 * Truy cập vào đường dẫn qua tên instance
 
-<figure><img src="../../../.gitbook/assets/image (407).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (407).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1116).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1116).png" alt=""><figcaption></figcaption></figure>
 
 ## Những lưu ý quan trọng:
 

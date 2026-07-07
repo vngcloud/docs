@@ -1,7 +1,6 @@
 # Get Bot Token and Pairing with OpenClaw
 
-> This guide covers how to get a bot token and complete pairing to connect a chat channel with OpenClaw on AgentBase.
-> If you haven't deployed OpenClaw yet, see: [Deploy & Manage OpenClaw](deploy-and-manage-openclaw.md).
+> This guide covers how to get a bot token and complete pairing to connect a chat channel with OpenClaw on AgentBase. If you haven't deployed OpenClaw yet, see: [Deploy & Manage OpenClaw](/broken/pages/yYnymA1hIAykuUQNkjkc).
 
 ## Part 1 — Get a Bot Token from Telegram
 
@@ -24,7 +23,7 @@ Copy this token and store it somewhere safe — you will need it when configurin
 
 > **Note:** The token is a secret — do not share it publicly.
 
----
+***
 
 ## Part 2 — Pair your Telegram account with OpenClaw
 
@@ -53,10 +52,10 @@ Replace `<pairing_code>` with the code from Step 1.
 
 ### Result
 
-- Pairing successful → the bot starts receiving and replying to your messages on Telegram.
-- If the code expires → send `/start` again on Telegram to get a new code.
+* Pairing successful → the bot starts receiving and replying to your messages on Telegram.
+* If the code expires → send `/start` again on Telegram to get a new code.
 
----
+***
 
 ## Part 3 — Get a Bot Token from Zalo
 
@@ -80,7 +79,7 @@ Copy the **full token** (including everything after the `:`).
 
 > **Note:** Zalo tokens are longer than Telegram tokens — make sure you copy the complete `:secret` part.
 
----
+***
 
 ## Part 4 — Pair your Zalo account with OpenClaw
 
@@ -102,5 +101,5 @@ Replace `<pairing_code>` with the code from Step 1.
 
 ### Result
 
-- Pairing successful → the bot starts receiving and replying to your messages on Zalo.
-- If the code expires → send `/start` again on Zalo to get a new code.
+* Pairing successful → the bot starts receiving and replying to your messages on Zalo.
+* If the code expires → send `/start` again on Zalo to get a new code.

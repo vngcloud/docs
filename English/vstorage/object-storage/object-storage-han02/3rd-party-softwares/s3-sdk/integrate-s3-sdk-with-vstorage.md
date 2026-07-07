@@ -15,7 +15,7 @@ To see instructions for integrating the S3 SDK with vStorage, you can do so via 
 
 Below is a list of languages, libraries and their corresponding versions that we provide for you to integrate with vStorage:
 
-<figure><img src="../../../../../.gitbook/assets/image (438).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (438) (1).png" alt=""><figcaption></figcaption></figure>
 
 6\. Now the screen with detailed instructions on how to integrate S3 SDK for the languages ​​is displayed. The integration instructions are displayed in 4 sections:
 

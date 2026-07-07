@@ -9,12 +9,12 @@
 
 Minh họa:
 
-<figure><img src="../../../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
 
 Hệ thống vCDN Request Router sẽ quyết định gửi lại IP Server tốt nhất khả thi cho user tại thời điểm đó. Cụ thể Rules điều phối sẽ được thực hiện như sau (ưu tiên từ trên xuống dưới):
 
 * User ở mạng nào và vùng nào sẽ về server có tải ít nhất ở vùng đó thuộc ISP đó.
-* Trong trường hợp POP thuộc ISP tại khu vực của người dùng bị sự cố hoặc quá tải, sẽ chuyển đến POP của ISP khác đang có khả năng phục vụ tại khu vực đó.&#x20;
+* Trong trường hợp POP thuộc ISP tại khu vực của người dùng bị sự cố hoặc quá tải, sẽ chuyển đến POP của ISP khác đang có khả năng phục vụ tại khu vực đó.
 
 Với người dùng các ISP nhỏ như CMC, SPT, SCTV, Netnam sẽ được điều phối ưu tiên lưu lượng về POP của GreenNode tại Công Viên Phần Mềm Quang Trung vì tại đây GreenNode đã thực hiện peering trực tiếp tới mỗi ISP như trên. Việc này đảm bảo phục vụ tốt cho tất cả người dùng cuối.
 

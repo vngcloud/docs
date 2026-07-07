@@ -30,7 +30,7 @@ Region HAN01 has VPCs:
 At Site On-Premise has network:
 
 * 192.168.1.0/24
-* 192.168.2.0/24&#x20;
+* 192.168.2.0/24
 * 192.168.3.0/24
 
 Create VPN Connections:
@@ -44,9 +44,7 @@ After finishing create VPN between above connections:
 * HCM03 VPC01 includes route 172.16.0.0/16 of HAN01 and 192.168.1.0/24 of On-Premise System.
 * HCM03 VPC02 includes route 192.168.1.0/24 and 192.168.2.0/24 of On-Premise System.
 
-
-
-<figure><img src="../../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Basic Diagram VPN</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Basic Diagram VPN</p></figcaption></figure>
 
 ***
 

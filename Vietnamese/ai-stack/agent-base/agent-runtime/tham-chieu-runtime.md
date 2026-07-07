@@ -121,7 +121,7 @@ Tất cả các runtime được hiển thị trong bảng phân trang với: T�
 
 Nhấn vào tên runtime để xem: trạng thái, image, flavor, autoscaling, biến môi trường, endpoint
 
-![1774594267224](../../../.gitbook/assets/1774594267224.png)
+![1774594267224](<../../../../.gitbook/assets/1774594267224 (3).png>)
 
 #### Cập nhật một Runtime
 
@@ -354,7 +354,7 @@ Mỗi `PATCH` trên một runtime tạo một phiên bản bất biến mới. S
 
 1. Mở trang chi tiết runtime → tab **"Versions"**
 
-![1774594455831](../../../.gitbook/assets/1774594455831.png)
+![1774594455831](<../../../../.gitbook/assets/1774594455831 (3).png>)
 
 ***
 

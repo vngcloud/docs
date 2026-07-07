@@ -8,7 +8,7 @@
 
 When you initialize a Web Accelerator, you can configure automatic Redirect from HTTP to HTTPS via:
 
-<figure><img src="../../.gitbook/assets/image (349).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (349) (1).png" alt=""><figcaption></figcaption></figure>
 
 In there:
 

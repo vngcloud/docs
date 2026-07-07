@@ -32,7 +32,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/vngcloud/vmonitor-metrics-a
 
 3. **Sau khi chạy câu lệnh và cài đặt thành công bạn sẽ thấy server ở trang Infrastructure List/Host**
 
-<figure><img src="../../../../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
 
 ### **Telegraf Agent với API\_KEY (deprecated**) <a href="#linuxos-telegrafagentvoiapi_key-deprecated-khongkhuyencaosudung-saptoisedunghotrovoiphuongthucnay" id="linuxos-telegrafagentvoiapi_key-deprecated-khongkhuyencaosudung-saptoisedunghotrovoiphuongthucnay"></a>
 
@@ -52,4 +52,4 @@ API_KEY=$API_KEY bash -c "$(curl -L https://raw.githubusercontent.com/vngcloud/v
 
 * Sau khi chạy câu lệnh và cài đặt thành công bạn sẽ thấy server ở trang Infrastructure List/Host
 
-<figure><img src="../../../../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>

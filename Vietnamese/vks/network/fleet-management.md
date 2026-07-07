@@ -27,7 +27,7 @@ Thực hiện theo hướng dẫn sau đây để tạo một Fleet và quản l
 
 **Bước 3:** Chọn **Create a fleet**
 
-<figure><img src="../../.gitbook/assets/image (932).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (932).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 4:** Nhập tên gợi nhớ cho fleet ở mục **Fleet Name**. Tên **Fleet** phải có độ dài từ 5 tới 50 ký tự, bao gồm các ký tự a-z, 0-9, '-'
 
@@ -41,7 +41,7 @@ Thực hiện theo hướng dẫn sau đây để tạo một Fleet và quản l
 
 **Bước 9:** Chọn **Create**
 
-<figure><img src="../../.gitbook/assets/image (933).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (933).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 10:** Thực hiện triển khai một service trên host cluster. Đầu tiên, bạn cần tải **KubeConfig** của **Host Cluster** về và thực hiện kết nối tới host cluster này. Sau khi tải xuống file **KubeConfig** và cập nhật thành file **config** trong thư mục `~/.kube`, bạn có thể kiểm tra kết nối tới cluster bằng lệnh:
 
@@ -115,7 +115,7 @@ Thay `glb-nginx.yaml` bằng tên file YAML của bạn.
 
 Lúc này, hệ thống sẽ tạo mới một vGLB trên hệ thống vGLB, bạn có thể kiểm tra vGLB được tạo tai [đây](https://glb.console.greennode.ai/glb/list).
 
-<figure><img src="../../.gitbook/assets/image (944).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (944).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**
@@ -142,7 +142,7 @@ nginx-service   fl-cadc9e8c-0930-44aa-a37f-cb330a8c4af9   glb-09108dcc-5d3d-4067
 
 **Bước 14:** Lấy địa chỉ IP hoặc hostname của GLB để truy cập service bằng lệnh:
 
-<figure><img src="../../.gitbook/assets/image (945).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (945).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 15:** Kiểm tra khả năng hoạt động của Fleet bằng cách gửi request đến GLB:
 
@@ -190,7 +190,7 @@ RawContentLength  : 612
 
 Hoặc truy cập trực tiếp như ảnh:
 
-<figure><img src="../../.gitbook/assets/image (946).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (946).png" alt=""><figcaption></figcaption></figure>
 
 ### **Kiểm tra North-South Traffic với GLB**
 
@@ -400,13 +400,13 @@ Sau khi tạo một Fleet, bạn có thể thêm các cluster Kubernetes hiện 
 
 * **Cách 1:** Tại mục **Fleet Management**, chọn **Chỉnh sửa Fleet** sau đó chọn một cluster từ danh sách có sẵn và nhấn **"Register"** để thêm vào Fleet.
 
-<figure><img src="../../.gitbook/assets/image (936).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (936).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (937).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (937).png" alt=""><figcaption></figcaption></figure>
 
 * **Cách 2:** Đăng ký trực tiếp cluster vào Fleet ngay trong quá trình tạo cluster.
 
-<figure><img src="../../.gitbook/assets/image (938).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (938).png" alt=""><figcaption></figcaption></figure>
 
 Nếu không cần sử dụng một cluster trong Fleet nữa, bạn có thể **hủy đăng ký (Unregister)** bằng cách:
 
@@ -416,9 +416,9 @@ Nếu không cần sử dụng một cluster trong Fleet nữa, bạn có thể 
 
 **Bước 3:** Nhấn **"Remove"** hoặc **"Unregister"** (chỉ xóa cluster khỏi Fleet, không xóa cluster khỏi hệ thống VKS).
 
-<figure><img src="../../.gitbook/assets/image (939).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (939).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (940).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (940).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -429,7 +429,7 @@ Sau khi tạo Fleet, bạn có thể chỉnh sửa cấu hình của nó:
 * **Thay đổi Host Cluster** trong Fleet hiện có.
 * **Thêm hoặc loại bỏ các member cluster** khi cần, nhưng luôn đảm bảo Fleet có ít nhất một host cluster.
 
-<figure><img src="../../.gitbook/assets/image (941).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (941).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -443,7 +443,7 @@ Khi không còn cần sử dụng Fleet, bạn có thể xóa nó bằng cách:
 
 **Bước 3:** Nhấn **"Delete"** và xác nhận.
 
-<figure><img src="../../.gitbook/assets/image (464).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (464).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**

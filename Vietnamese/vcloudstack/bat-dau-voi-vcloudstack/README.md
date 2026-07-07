@@ -4,7 +4,7 @@ Sử dụng hướng dẫn này để bắt đầu với **vCloudStack**. Bạn 
 
 ## Cấu trúc hạ tầng <a href="#cau-truc-ha-tang" id="cau-truc-ha-tang"></a>
 
-<figure><img src="../../.gitbook/assets/e87245f2-7905-4126-963a-057504a3c03e.png" alt="" width="563"><figcaption><p>Cấu trúc hạ tầng triển khai vCloudStack</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/e87245f2-7905-4126-963a-057504a3c03e.png" alt="" width="563"><figcaption><p>Cấu trúc hạ tầng triển khai vCloudStack</p></figcaption></figure>
 
 Như giới thiệu, vCloudStack cung cấp dịch vụ điện toán đám mây ngay tại cơ sở cục bộ của khách hàng, nên đa phần các thành phần sẽ được đặt và quản lý tại cơ sở của khách hàng như:
 
@@ -30,7 +30,7 @@ Người quản trị hệ thống thường là những nhân viên cấp cao (
 * <mark style="color:blue;">**Infrastructure:**</mark> Theo dõi thông tin tài nguyên ảo hóa (compute/storage/network/backup);
 * <mark style="color:blue;">**User Resource:**</mark> Theo dõi việc nhân viên vận hành quản lý tài nguyên ảo hóa (Server/Volume).
 
-<figure><img src="../../.gitbook/assets/image (827).png" alt="" width="563"><figcaption><p>Giao diện quản trị Admin Site</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (827).png" alt="" width="563"><figcaption><p>Giao diện quản trị Admin Site</p></figcaption></figure>
 
 ### 2/ vCloudStack User Site <a href="#vcloudstack-user-site" id="vcloudstack-user-site"></a>
 
@@ -40,5 +40,4 @@ Người quản trị hệ thống thường là những nhân viên cấp cao (
 * <mark style="color:blue;">**Blockstore**</mark>: Tạo nơi lưu trữ, sao lưu, snapshot cho máy chủ ảo;l
 * <mark style="color:blue;">**Network:**</mark> Quản trị phần mạng cho máy chủ và phân bổ lưu lượng với LoadBalancer;
 
-<figure><img src="../../.gitbook/assets/image (828).png" alt="" width="563"><figcaption><p>Giao diện vận hành User Site</p></figcaption></figure>
-
+<figure><img src="../../../.gitbook/assets/image (828).png" alt="" width="563"><figcaption><p>Giao diện vận hành User Site</p></figcaption></figure>

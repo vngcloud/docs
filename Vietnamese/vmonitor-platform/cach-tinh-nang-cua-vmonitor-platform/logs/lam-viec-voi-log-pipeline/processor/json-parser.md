@@ -8,7 +8,7 @@ Grok parser là một bộ lọc (filter) giúp phân tích và cấu trúc hóa
 
 ### Cấu hình JSON parser
 
-Để tạo cấu hình Grok parser, hãy làm theo hướng dẫn bên dưới:&#x20;
+Để tạo cấu hình Grok parser, hãy làm theo hướng dẫn bên dưới:
 
 1. Tại mục **Processor information**, nhập các thông tin chung cho một processor theo hướng dẫn tại [Processor](./). Trong nội dung này thì bạn sẽ chọn **Processor type** là **JSON Parser**.
 2. Tại mục **Parsing rule**, nhập các thông tin sau đây:
@@ -17,14 +17,14 @@ Grok parser là một bộ lọc (filter) giúp phân tích và cấu trúc hóa
 * Nhập **Target field**: field sẽ được ghi đè bên destination log project, thông thường bạn sẽ không cần nhập thông tin này.
 * Chọn **Skip on invalid JSON** nếu bạn muốn bỏ qua parser source field không đúng định dạng logs là JSON.
 
-Ví dụ:&#x20;
+Ví dụ:
 
 <table><thead><tr><th>Source log project</th><th>Destination log project</th><th>Message (field logs mà chúng tôi thực hiện parser)</th><th>Kết quả parser</th></tr></thead><tbody><tr><td>webserver</td><td>webserver-parse</td><td><pre><code>{\"timestamp\":\"2023-07-23T12:34:56Z\",\"level\":\"error\",
 \"message\":\"Therewasanerrorprocessingtherequest\",
 \"request_id\":\"1234567890\",\"user_id\":\"vngcloud1\"}
-</code></pre></td><td>{<br>     "timestamp": "2023-07-23T12:34:56Z",<br>     "level": "error",<br>      "message": "There was an error processing the request",<br>      "request_id": "1234567890",<br>      "user_id": "vngcloud1"<br>}</td></tr></tbody></table>
+</code></pre></td><td>{<br>"timestamp": "2023-07-23T12:34:56Z",<br>"level": "error",<br>"message": "There was an error processing the request",<br>"request_id": "1234567890",<br>"user_id": "vngcloud1"<br>}</td></tr></tbody></table>
 
-<figure><img src="../../../../../.gitbook/assets/image (323).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (323).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

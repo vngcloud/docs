@@ -17,9 +17,9 @@ Therefore, GreenNode encourages customers to proactively reduce the MTU value du
 
 1. Modify the Application/Service configuration to remove unnecessary Headers (e.g., custom SIP Headers, IPSec Authentication and Encryption Algorithm).
 2. Change the VM's MTU (for VMs using custom flavors not following the standard GreenNode) to 1450 (or smaller if needed).
-   *   PFSense: WEB UI - Interfaces - WAN - MTU = 1450&#x20;
+   *   PFSense: WEB UI - Interfaces - WAN - MTU = 1450
 
-       <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    *   FortiGate CLI:Bash
 
        ```
@@ -31,7 +31,7 @@ Therefore, GreenNode encourages customers to proactively reduce the MTU value du
        end
        ```
 
-       <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="260"><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="260"><figcaption></figcaption></figure>
    *   Ubuntu/LinuxBash
 
        ```

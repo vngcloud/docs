@@ -5,4 +5,4 @@ Mục này tổng hợp các thông báo, cập nhật và lưu ý quan trọng 
 ## Nội dung
 
 * [Release Notes](release-notes.md) - Tổng hợp các bản cập nhật và tính năng mới của tất cả các engine trong vDB.
-* [Lưu ý & hạn chế](luu-y-and-han-che.md) - Các lưu ý và hạn chế quan trọng khi sử dụng dịch vụ vDB.
+* [Lưu ý & hạn chế](/broken/pages/Qs23qpmdDSamaaO0xSk6) - Các lưu ý và hạn chế quan trọng khi sử dụng dịch vụ vDB.

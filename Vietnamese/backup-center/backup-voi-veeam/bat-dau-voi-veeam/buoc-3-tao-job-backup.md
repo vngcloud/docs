@@ -29,50 +29,50 @@ Sau khi đã <mark style="color:blue;">Khởi tạo Repository,</mark> bạn s�
 
 **Bước 1**: Người dùng vào mục **Inventory**, người dùng chọn Object - Computer (hạ tầng muốn backup), ở hướng dẫn này localhost là Object cần backup, sau đó nhấn chuột phải vào Object để chọn "Add to backup job" và nhấn "**New Job**".
 
-<figure><img src="../../../.gitbook/assets/image (359).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (359).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 2**: Giao diện tạo **New Agent Backup Job** hiện ra, tại tab **Job Mode**, người dùng chọn Mode " **Managed by backup server**", sau đó nhấn **Next**.
 
-<figure><img src="../../../.gitbook/assets/image (360).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (360).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 3:** Tại tab **Name**, người dùng đặt tên cho Job, sau đó nhấn **Next.**
 
-<figure><img src="../../../.gitbook/assets/image (361).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (361).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 4**: Tại tab **Computer**, người dùng có thể chọn computer muốn thực hiện backup.Sau đó nhấn **Next**.
 
-<figure><img src="../../../.gitbook/assets/image (362).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (362).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 5**: Tại tab **Backup Mode**, người dùng chọn mode "**File level backup (slower)**" để backup chỉ những file hay folder được chọn, còn nếu back up toàn bộ computer thì chọn mode "Entire computer". Sau đó nhấn **Next**.
 
-<figure><img src="../../../.gitbook/assets/image (56).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (56) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 6**: Nếu chọn mode "File level backup (slower)" ở bước 5 thì tab **Object** hiện ra để chọn đối tượng cần backup, người dùng chọn tùy chọn "**The following file system objects:**", sau đó ấn "Add" điền đường dẫn folder muốn backup, sau đó nhấn "OK" và cuối cùng nhấn **Next**.
 
 \*Nếu bước 5 chọn mode "Entire computer", thì bỏ qua bước 6 này.
 
-<figure><img src="../../../.gitbook/assets/image (365).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (365).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 7:** Tại tab **Storage**, người dùng chọn **Backup Repository** đã tạo trước đó, sau đó nhấn **Next**. Hệ thống sẽ kiểm tra file backup.
 
-<figure><img src="../../../.gitbook/assets/image (366).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (366).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 8**: Sau khi hệ thống kiểm tra xong thì điều hướng đến tới tab **Guest Processing**, người dùng **bỏ tùy chọn đầu tiên "Enable application-aware processing"**. Nếu người dùng muốn đảm bảo sao lưu nhất quán cho các ứng dụng chạy máy chủ ảo bằng các tương tác với chúng và sử dụng Microsoft VSS ,thì có thể vẫn bật thì Veeam sẽ phải thực hiện các tác vụ trước và sau khi sao lưu.
 
 Sau đó nhấn **Next**.
 
-<figure><img src="../../../.gitbook/assets/image (61).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (61) (3).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 9**: Tại tab **Schedule**, người dùng có thể cài đặt lịch tự động chạy job tự động, nếu chạy bằng tay thì nhấn **Next**.
 
-<figure><img src="../../../.gitbook/assets/image (369).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (369).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 10:** Tại tab Summary, người dùng có thể thấy tổng kết thông tin của Job sẽ tạo, chọn "**Run the job when I click Finish**" sau đó nhấn **Finish** để hệ thống bắt đầu tạo Job.
 
-<figure><img src="../../../.gitbook/assets/image (370).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (370).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 11:** Sau khi job được tạo xong, người dùng có thể kiểm tra bằng cách: vào mục Home, chọn Jobs/Backup, chọn Job đã tạo nếu thấy status là Success thì job đã tạo, người dùng có thể thực hiện backup.
 
-<figure><img src="../../../.gitbook/assets/image (371).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (371).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Hoàn tất quá trình tạo Job để backup dữ liệu.

@@ -11,13 +11,13 @@ Sau một thời gian bạn sử dụng tính năng Archive mà chúng tôi cung
 5. Tại màn hình hiển thị thông tin **Log** **project**, tại tab **Refill**, chọn **Refill**.
 6. Nhập **Refill name** theo quy định của chúng tôi. **Tên Refill** phải dài từ 1 (tối thiểu) tới 63 (tối đa) ký tự. **Tên Archive** có thể bao gồm chữ cái in hoa, in thường (a-z, A-Z), chữ số (0-9) hoặc dấu gạch ngang. **Tên Archive** phải bắt đầu bởi một chữ cái và kết thúc bởi một chữ cái hoặc một chữ số.
 
-<figure><img src="../../../../.gitbook/assets/image (310).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (310).png" alt=""><figcaption></figcaption></figure>
 
 7\. Chọn **Source**. Source tại đây là nguồn dữ liệu đã được archive trước đó mà bạn đã tạo.
 
 Tuỳ vào việc dữ liệu bạn đã archive ở đâu, bạn có thể chọn 1 trong 3 nơi dữ liệu log được archive bao gồm: nguồn **archive** đã tạo trước đó, **vStorage container** hoặc **S3 compatible**.
 
-<figure><img src="../../../../.gitbook/assets/image (311).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (311).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
@@ -41,7 +41,7 @@ Chọn **My container** nếu bạn muốn chọn vStorage container thuộc s�
 4. Nhập **Access key** và **Secret key** để xác thực thông tin kết nối tới hệ thống vStorage. Bạn có thể tìm thấy **Access key** và **Secret key** theo hướng dẫn tại [Service Account](https://docs.vngcloud.vn/display/ONVINA/Service+Account) và [Sử dụng Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648950).
 5. Chọn **Select**.
 
-![](<../../../../.gitbook/assets/image (27).png>)
+![](<../../../../../.gitbook/assets/image (27) (2).png>)
 
 * Custom container
 
@@ -50,7 +50,7 @@ Chọn **My container** nếu bạn muốn chọn vStorage container thuộc s�
 3. Nhập **Access key** và **Secret key** để xác thực thông tin kết nối tới hệ thống vStorage. Bạn có thể tìm thấy **Access key** và **Secret key** theo hướng dẫn tại [Service Account](https://docs.vngcloud.vn/display/ONVINA/Service+Account) và [Sử dụng Service Account](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49648950).
 4. Chọn **Select**.
 
-![](<../../../../.gitbook/assets/image (313).png>)
+![](<../../../../../.gitbook/assets/image (313).png>)
 
 </details>
 

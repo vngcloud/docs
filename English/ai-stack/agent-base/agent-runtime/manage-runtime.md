@@ -2,14 +2,14 @@
 
 > Guide to stopping, starting, updating, managing Endpoints, rolling back versions, and deleting an Agent Runtime.
 
----
+***
 
 ## Prerequisites
 
-- At least 1 Runtime already created
-- Role Root or Admin
+* At least 1 Runtime already created
+* Role Root or Admin
 
----
+***
 
 ## Stop a Runtime
 
@@ -23,7 +23,7 @@ Stop a Runtime to save compute costs. Configuration, Endpoint, and logs are pres
 While the Runtime is in `STOPPED` state, all requests to its Endpoint will return an error until it is started again.
 {% endhint %}
 
----
+***
 
 ## Start a Runtime
 
@@ -31,7 +31,7 @@ While the Runtime is in `STOPPED` state, all requests to its Endpoint will retur
 
 **Step 2:** Click **Start** → Runtime transitions through `STARTING` → `ACTIVE`
 
----
+***
 
 ## Update Runtime / Deploy a New Version
 
@@ -88,7 +88,7 @@ curl -s -X PATCH "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNT
   }' | jq .
 ```
 
----
+***
 
 ## Manage Endpoints
 
@@ -98,7 +98,7 @@ Each Runtime has one **DEFAULT** Endpoint created automatically. You can create 
 
 **View Endpoints:** Open Runtime Detail → **Endpoints** tab
 
-![Runtime detail — Endpoints tab](../../../.gitbook/assets/1774594267224.png)
+![Runtime detail — Endpoints tab](<../../../../.gitbook/assets/1774594267224 (2).png>)
 
 **Create a new Endpoint:**
 
@@ -144,7 +144,7 @@ curl -s -X DELETE "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUN
   -H "Authorization: Bearer $TOKEN"
 ```
 
----
+***
 
 ## View Versions and Rollback
 
@@ -154,7 +154,7 @@ Each update creates a new immutable Version. To roll back, point the DEFAULT End
 
 Open Runtime Detail → **Versions** tab
 
-![Runtime detail — Versions tab](../../../.gitbook/assets/1774594455831.png)
+![Runtime detail — Versions tab](<../../../../.gitbook/assets/1774594455831 (2).png>)
 
 ### Via API
 
@@ -177,7 +177,7 @@ curl -s -X PATCH "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNT
   -H "Authorization: Bearer $TOKEN" | jq .
 ```
 
----
+***
 
 ## Delete a Runtime
 
@@ -198,7 +198,7 @@ curl -s -X DELETE "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUN
   -H "Authorization: Bearer $TOKEN"
 ```
 
----
+***
 
 ## Reset Service Account
 
@@ -213,11 +213,11 @@ curl -s -X PATCH "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNT
 This regenerates `GREENNODE_CLIENT_ID` and `GREENNODE_CLIENT_SECRET`. The Runtime restarts with new credentials.
 {% endhint %}
 
----
+***
 
 ## Next Steps
 
-| I want to... | Go to |
-|---|---|
-| View logs and metrics | [Insight](logs-and-metrics.md) |
-| Configure MCP Gateway | [MCP Governance](../mcp-governance/README.md) |
+| I want to...          | Go to                                                                                                             |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| View logs and metrics | [Insight](logs-and-metrics.md)                                                                                    |
+| Configure MCP Gateway | [MCP Governance](https://github.com/vngcloud/docs/blob/main/English/ai-stack/agent-base/mcp-governance/README.md) |

@@ -8,18 +8,18 @@
 
 [OpenClaw](https://open.claw.cloud/) là một open-source AI agent có khả năng tự động hoàn thành các tác vụ: duyệt web, quản lý file, chạy lệnh, viết code, và tích hợp messaging (Telegram, Zalo). Thay vì cài đặt OpenClaw trên máy tính cá nhân, GreenNode Agentbase cho phép bạn chạy OpenClaw trên cloud với đầy đủ tài nguyên và kết nối sẵn với GreenNode MaaS (Model-as-a-Service).
 
-Để khởi tạo và quản lý OpenClaw instance, vui lòng tham khảo hướng dẫn [tại đây](trien-khai-openclaw-1-click.md).
+Để khởi tạo và quản lý OpenClaw instance, vui lòng tham khảo hướng dẫn [tại đây](/broken/pages/DqYNKAiTpLcmfLmuOjrG).
 
 ### So sánh cài thủ công và 1-Click Deploy
 
-| Tiêu chí | Tự cài OpenClaw (Local) | OpenClaw 1-Click (Agentbase) |
-| --- | --- | --- |
-| **Thời gian setup** | 30–60 phút | 40–60 giây |
-| **Yêu cầu kỹ thuật** | Cần kiến thức DevOps | Không cần |
-| **Cấu hình API key** | Thủ công | Tự động kết nối GreenNode MaaS |
-| **Hạ tầng** | Máy tính cá nhân | Cloud (GreenNode Agentbase) |
-| **Tích hợp messaging** | Tự cấu hình | Telegram, Zalo — cấu hình ngay khi deploy |
-| **Quản lý instance** | Tự quản lý | Qua My Agents Dashboard |
+| Tiêu chí               | Tự cài OpenClaw (Local) | OpenClaw 1-Click (Agentbase)              |
+| ---------------------- | ----------------------- | ----------------------------------------- |
+| **Thời gian setup**    | 30–60 phút              | 40–60 giây                                |
+| **Yêu cầu kỹ thuật**   | Cần kiến thức DevOps    | Không cần                                 |
+| **Cấu hình API key**   | Thủ công                | Tự động kết nối GreenNode MaaS            |
+| **Hạ tầng**            | Máy tính cá nhân        | Cloud (GreenNode Agentbase)               |
+| **Tích hợp messaging** | Tự cấu hình             | Telegram, Zalo — cấu hình ngay khi deploy |
+| **Quản lý instance**   | Tự quản lý              | Qua My Agents Dashboard                   |
 
 ### Khi nào nên sử dụng OpenClaw 1-Click?
 
@@ -33,12 +33,12 @@
 
 Khi bạn nhấn Deploy, hệ thống Agentbase tự động thực hiện 4 bước provisioning:
 
-| Bước | Task | Mô tả |
-| --- | --- | --- |
-| 1 | **OpenClaw Token** | Tạo Identity và token xác thực cho instance |
-| 2 | **AI Service Account** | Tạo IAM Service Account kết nối GreenNode MaaS |
-| 3 | **AI Service Token** | Lấy access token cho model AI đã chọn |
-| 4 | **Cloud Computer** | Khởi động container OpenClaw trên Agentbase Runtime |
+| Bước | Task                   | Mô tả                                               |
+| ---- | ---------------------- | --------------------------------------------------- |
+| 1    | **OpenClaw Token**     | Tạo Identity và token xác thực cho instance         |
+| 2    | **AI Service Account** | Tạo IAM Service Account kết nối GreenNode MaaS      |
+| 3    | **AI Service Token**   | Lấy access token cho model AI đã chọn               |
+| 4    | **Cloud Computer**     | Khởi động container OpenClaw trên Agentbase Runtime |
 
 Sau khi hoàn tất, bạn nhận được **OpenClaw Gateway URL** để truy cập portal chat ngay lập tức.
 
@@ -54,12 +54,12 @@ Dành cho người dùng có tài khoản GreenNode. Hệ thống tự động t
 
 Dành cho người muốn dùng model từ provider bên ngoài. Bạn tự cung cấp API key khi cấu hình.
 
-| Provider hỗ trợ | Ví dụ model |
-| --- | --- |
-| OpenAI | gpt-4o, gpt-4.1 |
-| Anthropic | claude-sonnet-4, claude-opus-4 |
-| Gemini | gemini-2.0-flash |
-| Custom | Tùy chỉnh endpoint |
+| Provider hỗ trợ | Ví dụ model                    |
+| --------------- | ------------------------------ |
+| OpenAI          | gpt-4o, gpt-4.1                |
+| Anthropic       | claude-sonnet-4, claude-opus-4 |
+| Gemini          | gemini-2.0-flash               |
+| Custom          | Tùy chỉnh endpoint             |
 
 ***
 
@@ -67,10 +67,10 @@ Dành cho người muốn dùng model từ provider bên ngoài. Bạn tự cung
 
 OpenClaw hỗ trợ kết nối với các nền tảng nhắn tin để bạn có thể chat với AI Agent ngay trên ứng dụng quen thuộc:
 
-| Channel | Mô tả |
-| --- | --- |
+| Channel      | Mô tả                                                             |
+| ------------ | ----------------------------------------------------------------- |
 | **Telegram** | Kết nối qua Telegram Bot Token. Hỗ trợ mode Pairing và Allow List |
-| **Zalo** | Kết nối qua Zalo |
+| **Zalo**     | Kết nối qua Zalo                                                  |
 
 Channel có thể được cấu hình ngay trong bước deploy hoặc sau đó tại **Settings → Config** trong OpenClaw Gateway.
 

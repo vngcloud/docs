@@ -7,7 +7,7 @@
 * **Transition rule:** Rule hỗ trợ di chuyển object giữa các storage class. Bạn có thể thực hiện thiết lập một hoặc nhiều lifecycle rule di chuyển object nếu trong vòng N ngày mà object không được thay đổi. <mark style="color:red;">Lưu ý: Transition rule chỉ được hỗ trợ trên các project loại Pay as you go.</mark>
 * **Expiration rule**: Rule hỗ trợ xóa các object theo điều kiện ràng buộc. Bạn có thể thực hiện thiết lập một hoặc nhiều lifecycle rule xóa object sau một khoảng thời gian nhất định kể từ ngày object tồn tại trên hệ thống vStorage.
 
-<figure><img src="../../../../../../.gitbook/assets/lifecylce-transition (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/lifecylce-transition (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Tham khảo thêm bảng bên dưới để hiểu cách hoạt động của mỗi storage class:
 
@@ -23,21 +23,21 @@ Thực hiện theo hướng dẫn bên dưới để thiết lập transition ru
 
 2\. Chọn **project** chứa **bucket** bạn muốn thiết lập lifecycle. Giả sử tôi có một bucket `demo-project` đã được khởi tạo tạo Storage Class Gold như hình dưới
 
-<figure><img src="../../../../../../.gitbook/assets/image (1093).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (1093).png" alt=""><figcaption></figcaption></figure>
 
 3\. Chọn biểu tượng **Action** và chọn **Configure Lifecycle.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (1095).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (1095).png" alt=""><figcaption></figcaption></figure>
 
 4\. Màn hình **Lifecycle** được hiển thị. Chọn **Create a lifecycle rule**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (1094).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (1094).png" alt=""><figcaption></figcaption></figure>
 
 5\. Nhập **Rule name**. Rule name mà chúng tôi cho phép bạn nhập bao gồm các chữ cái (a-z, A-Z, 0-9, '\_', '-', space). Độ dài **Rule name** của bạn phải nằm trong khoảng từ 5 đến 50.
 
 6\. Chọn **Rule type**: **Transition**
 
-<figure><img src="../../../../../../.gitbook/assets/image (1157).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (1157).png" alt=""><figcaption></figcaption></figure>
 
 7\. Nhập **Filter**. Filter này được áp dụng cho một lifecycle rule cụ thể. **Mỗi lifecycle rule chỉ được đặt 1 filter duy nhất, nếu bạn muốn áp dụng quy tắc lifecycle mà bạn đang tạo lên tất cả các object thuộc bucket này, hãy để trống trường thông tin này.** Hoặc bạn có thể lọc các object mong muốn áp dụng lifecycle rule thông qua prefix.
 
@@ -48,14 +48,14 @@ Thực hiện theo hướng dẫn bên dưới để thiết lập transition ru
     * Khi kích hoạt, rule này sẽ tự động di chuyển **phiên bản hiện tại** object từ lớp lưu trữ hiện tại xuống lớp lưu trữ thấp hơn tùy chọn sau một khoảng thời gian nhất định.
     * Bạn có thể nhập số ngày trong phần "**After \_\_\_ days from object creation**" để định nghĩa số ngày object được di chuyển nếu không có thay đổi.
 
-    <figure><img src="../../../../../../.gitbook/assets/image (1155).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../../.gitbook/assets/image (1155).png" alt=""><figcaption></figcaption></figure>
 
 **Transition noncurrent version of objects:**
 
 * Khi kích hoạt, rule này sẽ tự động di chuyển **phiên bản không phải là phiên bản hiện tại** (noncurrent versions) object từ lớp lưu trữ hiện tại xuống lớp lưu trữ thấp hơn tùy chọn sau một khoảng thời gian nhất định.
 * Bạn có thể nhập số ngày trong phần "**After \_\_\_ days become noncurrent version**" để định nghĩa số ngày object được di chuyển nếu không có thay đổi.
 
-<figure><img src="../../../../../../.gitbook/assets/image (444).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (444).png" alt=""><figcaption></figcaption></figure>
 
 ## Với Expiration rule
 
@@ -67,11 +67,11 @@ Expiration rule là tập quy định tự động xóa object khi đến thời
 
 3\. Chọn biểu tượng **Action** và chọn **Configure Lifecycle.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (455).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (455).png" alt=""><figcaption></figcaption></figure>
 
 4\. Màn hình **Lifecycle** được hiển thị. Chọn **Create a lifecycle rule**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (456).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (456).png" alt=""><figcaption></figcaption></figure>
 
 5\. Nhập **Rule name**. Rule name mà chúng tôi cho phép bạn nhập bao gồm các chữ cái (a-z, A-Z, 0-9, '\_', '-', space). Độ dài **Rule name** của bạn phải nằm trong khoảng từ 5 đến 50.
 
@@ -79,7 +79,7 @@ Expiration rule là tập quy định tự động xóa object khi đến thời
 
 7\. Nhập **Filter**. Filter này được áp dụng cho một lifecycle rule cụ thể. N**ếu bạn muốn áp dụng quy tắc lifecycle mà bạn đang tạo lên tất cả các object thuộc bucket này, hãy để trống trường thông tin này.** Hoặc bạn có thể lọc các object mong muốn áp dụng lifecycle rule thông qua prefix.
 
-<figure><img src="../../../../../../.gitbook/assets/image (1153).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (1153).png" alt=""><figcaption></figcaption></figure>
 
 8\. Chọn hành động xảy ra với object tại bucket mà bạn chọn, bao gồm:
 
@@ -97,7 +97,7 @@ Expiration rule là tập quy định tự động xóa object khi đến thời
   * Rule này chỉ áp dụng khi bạn đã bật Versioning và có các object delete marker trong bucket.
   * Khi kích hoạt, nó sẽ xóa các **delete marker** đã hết hạn, giúp cải thiện hiệu suất bằng cách làm sạch các marker không còn cần thiết. (Tùy chọn này thường chỉ có thể bật khi có delete marker hết hạn trong bucket.)
 
-<figure><img src="../../../../../../.gitbook/assets/image (1152).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (1152).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Lưu ý:**

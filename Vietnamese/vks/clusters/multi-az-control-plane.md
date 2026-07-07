@@ -47,7 +47,7 @@ Trong mô hình Multi-AZ, các thành phần của Control Plane (API Server, Co
 
 Sơ đồ dưới đây minh họa kiến trúc của Multi-AZ Cluster:
 
-<figure><img src="../../.gitbook/assets/VKS_HA&#x26;Multi AZ.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/VKS_HA&#x26;Multi AZ (1).png" alt=""><figcaption></figcaption></figure>
 
 **Các thành phần chính:**
 
@@ -63,7 +63,7 @@ Sơ đồ dưới đây minh họa kiến trúc của Multi-AZ Cluster:
 
 Tại trang danh sách Kubernetes Cluster, bạn có thể nhận biết Multi-AZ Cluster thông qua cột **Control Plane Availability**:
 
-<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-list-page.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vks-multi-az-cluster-list-page (1).png" alt=""><figcaption></figcaption></figure>
 
 | Badge                             | Ý nghĩa                             |
 | --------------------------------- | ----------------------------------- |
@@ -78,7 +78,7 @@ Khi truy cập vào trang chi tiết của Multi-AZ Cluster:
 
 Hiển thị thêm trường **Control Plane Availability** với giá trị **Multi-AZ** (badge màu xanh đậm)
 
-<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-detail-general-info.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vks-multi-az-cluster-detail-general-info (1).png" alt=""><figcaption></figcaption></figure>
 
 **2. Network Section**
 
@@ -94,7 +94,7 @@ Subnets (2)
 
 * Click vào icon **copy** bên cạnh Subnet ID để copy vào clipboard
 
-<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-detail-network.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vks-multi-az-cluster-detail-network (1).png" alt=""><figcaption></figcaption></figure>
 
 **3. Node Group Tab**
 

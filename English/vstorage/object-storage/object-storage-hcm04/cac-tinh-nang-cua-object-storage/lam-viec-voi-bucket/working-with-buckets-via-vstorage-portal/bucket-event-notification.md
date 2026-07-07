@@ -8,7 +8,7 @@
 
 **3. Select the Action** icon and select **Configure event notification.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (327).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (327).png" alt=""><figcaption></figcaption></figure>
 
 4\. Select **Create an Event notification** .
 
@@ -34,9 +34,9 @@
     * Folder structure and file names: `[Bucket]/[YYYY]/[MM]/[DD]/[YYYY]-[MM]-[DD]-[hh]-[mm]`.
     * For example:`bucketB/2023/03/01/2023-03-01-21-32`
 
-<figure><img src="../../../../../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (328) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
 
 5\. Select **Create event notification** to initiate this event.
 

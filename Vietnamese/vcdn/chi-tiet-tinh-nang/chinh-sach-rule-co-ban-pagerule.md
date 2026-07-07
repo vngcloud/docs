@@ -8,26 +8,26 @@
 
 Khi khởi tạo Live Stream, Object Download,...bạn có thể khởi tạo Page Rule bằng cách chọn **Create Page Rule**. Một Rules sẽ được thực thi khi mà có URI request đúng với điều kiện đã được định nghĩa trong Rule.
 
-<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Sau khi bạn chọn Create Page Rule, màn hình hiển thị như sau:
 
-<figure><img src="../../.gitbook/assets/image (19) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (1) (1) (1) (2).png" alt="" width="375"><figcaption></figcaption></figure>
 
-Trong đó:&#x20;
+Trong đó:
 
 * **URL Pattern:** nhập URL pattern cần áp dụng Page Rule, vCDN hỗ trợ kiểu khai báo “\*” đại diện cho một chuỗi nhiều ký tự. Ví dụ: /trang\_landing\_cu.html
 * **Các hành động khi thỏa điều kiện:** Mỗi Rules khi thỏa điệu kiện đúng URI được request sẽ có thể tùy chọn thực thi một trong khác hành động sau:
-  * Always Use HTTPS&#x20;
-  * Auto Minify&#x20;
-  * Automatic HTTPS Rewrites&#x20;
-  * Server Cache TTL&#x20;
-  * Browser Cache TTL&#x20;
-  * Bypass Cache by Cookie&#x20;
+  * Always Use HTTPS
+  * Auto Minify
+  * Automatic HTTPS Rewrites
+  * Server Cache TTL
+  * Browser Cache TTL
+  * Bypass Cache by Cookie
   * Bypass Cache By Device Type
-  * Forwarding URL&#x20;
-  * Add Response Header&#x20;
-  * Brotli&#x20;
+  * Forwarding URL
+  * Add Response Header
+  * Brotli
   * Gzip
   * Origin Override
 
@@ -35,7 +35,7 @@ Cụ thể, vui lòng tham khảo bảng bên dưới.
 
 Mỗi Page Rule sẽ có các hành động action khác nhau được thể hiện ở bảng dưới đây. “Order” nhằm sắp xếp vị trí các rule, số càng nhỏ, ưu tiên thực hiện càng lớn.
 
-<figure><img src="../../.gitbook/assets/image (20) (1) (1) (1).png" alt="" width="279"><figcaption></figcaption></figure>
+<figure><img src="/broken/files/bUpY8AcRV1K9BPTWv4OY" alt="" width="279"><figcaption></figcaption></figure>
 
 Sau khi tạo xong, chọn **Save changes** để cập nhật thay đổi.
 

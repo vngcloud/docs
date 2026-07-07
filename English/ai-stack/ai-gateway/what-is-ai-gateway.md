@@ -4,7 +4,7 @@
 
 **AI Gateway** is a centralized access layer that enables you to integrate multiple AI models (OpenAI, Google, Deepseek, etc.). Using AI Gateway reduces the complexity of switching between models, while providing monitoring, management, cost optimization, and data security.
 
-<figure><img src="../../.gitbook/assets/image (466).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (466) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Key Features of AI Gateway
 

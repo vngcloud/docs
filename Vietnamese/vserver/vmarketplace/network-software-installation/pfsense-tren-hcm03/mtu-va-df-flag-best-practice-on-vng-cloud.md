@@ -22,7 +22,7 @@ Vì thế GreenNode khuyến khích khách hàng chủ động giảm giá trị
 
     <figure><img src="https://docs.vngcloud.vn/download/attachments/64554291/image2023-10-11_10-15-3.png?version=1&#x26;modificationDate=1696994104000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (686).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (686).png" alt=""><figcaption></figcaption></figure>
 
     **FortiGate CLI:**
 
@@ -43,7 +43,7 @@ Vì thế GreenNode khuyến khích khách hàng chủ động giảm giá trị
     ```
 
     \
-    ![](<../../../../.gitbook/assets/image (687).png>)<br>
+    ![](<../../../../../.gitbook/assets/image (687).png>)<br>
 
     **Ubuntu/Linux**
 
@@ -82,7 +82,7 @@ post-up /sbin/ifconfig <interface-name> mtu <mtu_size>
 | ESP ICV - 32                                |          |
 | Total IPsec Packet Size sending out from VM | 1444     |
 
-&#x20; **Bảng 1: Không enable NAT-T và không enable GRE**
+**Bảng 1: Không enable NAT-T và không enable GRE**
 
 | **Payload**                                 | **Size** |
 | ------------------------------------------- | -------- |
@@ -108,7 +108,7 @@ post-up /sbin/ifconfig <interface-name> mtu <mtu_size>
 | ESP ICV - 32                                |          |
 | Total IPsec Packet Size sending out from VM | **1452** |
 
-&#x20;     **Bảng 2: Enable NAT-T và không enable GRE**
+**Bảng 2: Enable NAT-T và không enable GRE**
 
 | **Payload**                                 | **Size** |
 | ------------------------------------------- | -------- |
@@ -136,4 +136,4 @@ post-up /sbin/ifconfig <interface-name> mtu <mtu_size>
 | ESP ICV - 32                                |          |
 | Total IPsec Packet Size sending out from VM | **1484** |
 
-&#x20;                   **Bảng 3: Enable NAT-T và GRE**
+**Bảng 3: Enable NAT-T và GRE**

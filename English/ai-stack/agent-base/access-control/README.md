@@ -266,7 +266,7 @@ An **agent identity** must exist before creating auth providers. If you haven't 
 3. Fill in: **Name**, **Client ID**, **Client Secret**, **Authorization URL**, **Token URL**
 4. Click **Create** â€” the response includes a **Callback URL** to register in your OAuth2 app
 
-![1774593811794](../../../.gitbook/assets/1774593811794.png)
+![1774593811794](<../../../../.gitbook/assets/1774593811794 (1).png>)
 
 ***
 
@@ -536,13 +536,13 @@ def handler(payload: dict, context: RequestContext, google_token: str) -> dict:
 
 ## Troubleshooting
 
-| Error                           | Cause                                    | Fix                                                             |
-| ------------------------------- | ---------------------------------------- | --------------------------------------------------------------- |
-| 401 Unauthorized                | Expired or invalid IAM token             | Re-obtain token with valid credentials                          |
+| Error                           | Cause                                    | Fix                                                              |
+| ------------------------------- | ---------------------------------------- | ---------------------------------------------------------------- |
+| 401 Unauthorized                | Expired or invalid IAM token             | Re-obtain token with valid credentials                           |
 | 403 Forbidden                   | Service account lacks permissions        | Attach `AgentBaseFullAccess` at https://iam.console.greennode.ai |
-| 409 Conflict                    | Identity or provider name already exists | Choose a different name                                         |
-| Name validation error           | Name doesn't match `^[a-zA-Z0-9_-]+$`    | Use only alphanumeric, underscore, and hyphen. 3â€“50 chars       |
-| 404 Not Found                   | Provider name does not exist             | Verify with a `list` operation                                  |
-| Agent can't retrieve credential | Identity name missing                    | Ensure `GREENNODE_AGENT_IDENTITY` env var is set in the runtime |
+| 409 Conflict                    | Identity or provider name already exists | Choose a different name                                          |
+| Name validation error           | Name doesn't match `^[a-zA-Z0-9_-]+$`    | Use only alphanumeric, underscore, and hyphen. 3â€“50 chars      |
+| 404 Not Found                   | Provider name does not exist             | Verify with a `list` operation                                   |
+| Agent can't retrieve credential | Identity name missing                    | Ensure `GREENNODE_AGENT_IDENTITY` env var is set in the runtime  |
 
 ***

@@ -25,7 +25,7 @@
 1. Tại màn hình chính của **Cyberduck**, chọn **bucket chứa object** mà bạn muốn xóa.
 2. Tại object bạn muốn xóa, chọn chuột phải sau đó chọn **Delete**.
 
-<figure><img src="../../../../../.gitbook/assets/image (533).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (533).png" alt=""><figcaption></figcaption></figure>
 
 3. Trên màn hình xác nhận xóa, tiếp tục chọn **Delete**.
 
@@ -38,11 +38,11 @@
 1. Tại màn hình chính của **Cyberduck**, chọn **bucket chứa object** mà bạn muốn chia sẻ qua Presign URL.
 2. Tại object bạn muốn chia sẻ, chọn chuột phải sau đó chọn **Copy URL** nếu bạn muốn sao chép Presign URL hoặc chọn **Open URL** nếu bạn muốnmở trực tiếp Presign URL trên trình duyệt.
 
-<figure><img src="../../../../../.gitbook/assets/image (534).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (534).png" alt=""><figcaption></figcaption></figure>
 
 3. Chọn một trong các phương thức cho **Presign URL** mà bạn mong muốn.
 
-<figure><img src="../../../../../.gitbook/assets/image (535).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (535).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**

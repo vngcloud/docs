@@ -1,7 +1,5 @@
 # Create NAT
 
-
-
 {% hint style="danger" %}
 **Important**
 
@@ -21,7 +19,7 @@
 * Check the service pricing information in the "**Summary**" section.
 * Click **"CREATE A PUBLIC NAT"**.
 
-When the NAT is successfully created, it will appear on the NAT list. The user needs to configure which VMs will use NAT by specifying the NAT IP gateway, using the sample syntax for Linux.&#x20;
+When the NAT is successfully created, it will appear on the NAT list. The user needs to configure which VMs will use NAT by specifying the NAT IP gateway, using the sample syntax for Linux.
 
 _`ip route add <internet_ip> via <nat_gateway_ip> dev <interface>`._
 
@@ -33,21 +31,18 @@ In this context:
 
 Below is an example of adding a route on a VM with Linux OS using the syntax above:
 
-&#x20;_`ip route add 0.0.0.0/0 via 10.0.0.100 dev eth0`._
+_`ip route add 0.0.0.0/0 via 10.0.0.100 dev eth0`._
 
 **In case there is already an existing route to the internet through a different gateway IP, the user must remove the current route and add a new route to the NAT gateway IP.**
 
 _<mark style="color:purple;">Here is an example of an internet route that already exists through a different gateway IP on Linux OS</mark>_
 
-<figure><img src="../../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
 
 _<mark style="color:purple;">After deleting the existing route on the VM, add the route to the internet through NAT.</mark>_
 
-<figure><img src="../../.gitbook/assets/image (271).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (271) (1).png" alt=""><figcaption></figcaption></figure>
 
 _<mark style="color:purple;">The result is successful as shown in the screenshot.</mark>_
 
-<figure><img src="../../.gitbook/assets/image (272).png" alt=""><figcaption></figcaption></figure>
-
-
-
+<figure><img src="../../../.gitbook/assets/image (272) (1).png" alt=""><figcaption></figcaption></figure>

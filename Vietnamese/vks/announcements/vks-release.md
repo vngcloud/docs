@@ -1,11 +1,12 @@
 # Release notes test
 
 ## Nov 10, 2025
+
 VKS (VNG Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều nâng cấp mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
 
 **Nâng cấp mới:**
 
-- **Ngừng hỗ trợ Kubernetes phiên bản 1.28**: Để đảm bảo môi trường hoạt động tối ưu và tuân thủ các tiêu chuẩn bảo mật mới nhất, VKS sẽ ngừng hỗ trợ Kubernetes phiên bản 1.28. Kể từ ngày 10/11/2025, khách hàng sẽ không thể tạo cụm Kubernetes 1.28 thông qua Portal, API hoặc Terraform. Vào ngày 24/11/2025, tất cả các cụm Kubernetes 1.28 hiện có sẽ được tự động nâng cấp (force-upgrade) lên phiên bản mới hơn. Chi tiết tham khảo thêm tại đây.
+* **Ngừng hỗ trợ Kubernetes phiên bản 1.28**: Để đảm bảo môi trường hoạt động tối ưu và tuân thủ các tiêu chuẩn bảo mật mới nhất, VKS sẽ ngừng hỗ trợ Kubernetes phiên bản 1.28. Kể từ ngày 10/11/2025, khách hàng sẽ không thể tạo cụm Kubernetes 1.28 thông qua Portal, API hoặc Terraform. Vào ngày 24/11/2025, tất cả các cụm Kubernetes 1.28 hiện có sẽ được tự động nâng cấp (force-upgrade) lên phiên bản mới hơn. Chi tiết tham khảo thêm tại đây.
 
 ***
 
@@ -15,7 +16,7 @@ VKS (VNG Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, man
 
 **Nâng cấp mới:**
 
-- **Ngừng hỗ trợ Kubernetes phiên bản 1.28**: VNG Kubernetes Service (VKS) sẽ ngừng hỗ trợ Kubernetes phiên bản 1.28 theo lộ trình cụ thể. Kể từ ngày 10/11/2025, người dùng sẽ không thể tạo cụm Kubernetes phiên bản 1.28 thông qua Portal, API hoặc Terraform. Hệ thống sẽ tự động nâng cấp (force-upgrade) tất cả các cụm Kubernetes phiên bản 1.28 hiện có của khách hàng vào ngày 24/11/2025. Chúng tôi khuyến nghị người dùng chủ động nâng cấp các cụm của mình lên phiên bản mới hơn để đảm bảo tính tương thích và bảo mật. Chi tiết tham khảo thêm tại đây.
+* **Ngừng hỗ trợ Kubernetes phiên bản 1.28**: VNG Kubernetes Service (VKS) sẽ ngừng hỗ trợ Kubernetes phiên bản 1.28 theo lộ trình cụ thể. Kể từ ngày 10/11/2025, người dùng sẽ không thể tạo cụm Kubernetes phiên bản 1.28 thông qua Portal, API hoặc Terraform. Hệ thống sẽ tự động nâng cấp (force-upgrade) tất cả các cụm Kubernetes phiên bản 1.28 hiện có của khách hàng vào ngày 24/11/2025. Chúng tôi khuyến nghị người dùng chủ động nâng cấp các cụm của mình lên phiên bản mới hơn để đảm bảo tính tương thích và bảo mật. Chi tiết tham khảo thêm tại đây.
 
 ***
 
@@ -23,8 +24,7 @@ VKS (VNG Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, man
 
 KAKAKAKA
 
-
----
+***
 
 ***
 
@@ -34,10 +34,9 @@ VKS (VNG Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, man
 
 **Nâng cấp mới:**
 
-- **Ngừng hỗ trợ Kubernetes phiên bản 1.28**: VNG Kubernetes Service (VKS) chính thức ngừng hỗ trợ phiên bản Kubernetes 1.28. Kể từ ngày 10/11/2025, người dùng sẽ không thể tạo cụm Kubernetes 1.28 thông qua Portal, API hoặc Terraform. Vào ngày 24/11/2025, tất cả các cụm Kubernetes 1.28 hiện có sẽ được tự động nâng cấp (force-upgrade) lên phiên bản mới hơn để đảm bảo tính bảo mật và ổn định. Người dùng nên chủ động nâng cấp các cụm của mình trước thời hạn để tránh gián đoạn dịch vụ.
+* **Ngừng hỗ trợ Kubernetes phiên bản 1.28**: VNG Kubernetes Service (VKS) chính thức ngừng hỗ trợ phiên bản Kubernetes 1.28. Kể từ ngày 10/11/2025, người dùng sẽ không thể tạo cụm Kubernetes 1.28 thông qua Portal, API hoặc Terraform. Vào ngày 24/11/2025, tất cả các cụm Kubernetes 1.28 hiện có sẽ được tự động nâng cấp (force-upgrade) lên phiên bản mới hơn để đảm bảo tính bảo mật và ổn định. Người dùng nên chủ động nâng cấp các cụm của mình trước thời hạn để tránh gián đoạn dịch vụ.
 
----
-
+***
 
 ***
 
@@ -47,14 +46,9 @@ VKS (VKS) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều t�
 
 **Tính năng mới:**
 
-- **Hỗ trợ Node groups ở nhiều subnets**: Tính năng này cho phép bạn linh hoạt hơn trong việc quản lý tài nguyên mạng, giúp tối ưu hóa việc phân bổ các Node group trong cùng một cụm Kubernetes. Giờ đây, các Node group có thể được tạo ở nhiều subnets khác nhau trong cùng một VPC, nâng cao khả năng chịu lỗi và hiệu quả sử dụng mạng. Chi tiết tham khảo thêm tại đây.
-  Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/announcements/release-notes)
-
-- **Triển khai VKS trên region HAN01**: VNG Kubernetes Service (VKS) chính thức được triển khai tại region HAN01. Điều này mở rộng phạm vi dịch vụ, mang đến cho khách hàng tại khu vực phía Bắc thêm lựa chọn để triển khai các ứng dụng Kubernetes của mình với độ trễ thấp và hiệu suất cao. Chi tiết tham khảo thêm tại đây.
-  Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/announcements/release-notes)
-
-- **Hỗ trợ CNI Cilium Overlay và Cilium Native Routing**: VKS nay hỗ trợ CNI Cilium với hai chế độ: Cilium Overlay và Cilium Native Routing. Việc tích hợp này mang lại cho khách hàng sự linh hoạt trong việc lựa chọn mô hình mạng cho cụm Kubernetes của mình. Đặc biệt, chế độ Cilium Native Routing giúp cải thiện đáng kể hiệu suất và khả năng kết nối, đáp ứng tối ưu cho các ứng dụng đòi hỏi hiệu năng cao. Chi tiết tham khảo thêm tại đây.
-  Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/announcements/release-notes)
+* **Hỗ trợ Node groups ở nhiều subnets**: Tính năng này cho phép bạn linh hoạt hơn trong việc quản lý tài nguyên mạng, giúp tối ưu hóa việc phân bổ các Node group trong cùng một cụm Kubernetes. Giờ đây, các Node group có thể được tạo ở nhiều subnets khác nhau trong cùng một VPC, nâng cao khả năng chịu lỗi và hiệu quả sử dụng mạng. Chi tiết tham khảo thêm tại đây. Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/announcements/release-notes)
+* **Triển khai VKS trên region HAN01**: VNG Kubernetes Service (VKS) chính thức được triển khai tại region HAN01. Điều này mở rộng phạm vi dịch vụ, mang đến cho khách hàng tại khu vực phía Bắc thêm lựa chọn để triển khai các ứng dụng Kubernetes của mình với độ trễ thấp và hiệu suất cao. Chi tiết tham khảo thêm tại đây. Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/announcements/release-notes)
+* **Hỗ trợ CNI Cilium Overlay và Cilium Native Routing**: VKS nay hỗ trợ CNI Cilium với hai chế độ: Cilium Overlay và Cilium Native Routing. Việc tích hợp này mang lại cho khách hàng sự linh hoạt trong việc lựa chọn mô hình mạng cho cụm Kubernetes của mình. Đặc biệt, chế độ Cilium Native Routing giúp cải thiện đáng kể hiệu suất và khả năng kết nối, đáp ứng tối ưu cho các ứng dụng đòi hỏi hiệu năng cao. Chi tiết tham khảo thêm tại đây. Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/announcements/release-notes)
 
 ***
 
@@ -64,10 +58,9 @@ VKS (VNG Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, man
 
 **Tính năng mới:**
 
-- **Hỗ trợ PVC encryption**: GreenNode hiện đã hỗ trợ tính năng mã hóa PVC (Persistent Volume Claim) cho VKS, mang đến một lớp bảo mật mạnh mẽ hơn cho dữ liệu trên các Persistent Volumes của bạn. Tính năng này hoạt động tương tự như cơ chế mã hóa Volume đã có trên vServer, giúp bảo vệ dữ liệu nhạy cảm khỏi truy cập trái phép ngay cả khi volume bị tháo rời. Việc mã hóa PVC đảm bảo an toàn dữ liệu tuân thủ các tiêu chuẩn bảo mật cao nhất, đặc biệt hữu ích cho các ứng dụng đòi hỏi sự tuân thủ nghiêm ngặt về bảo mật thông tin.
-Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/announcements/release-notes)
+* **Hỗ trợ PVC encryption**: GreenNode hiện đã hỗ trợ tính năng mã hóa PVC (Persistent Volume Claim) cho VKS, mang đến một lớp bảo mật mạnh mẽ hơn cho dữ liệu trên các Persistent Volumes của bạn. Tính năng này hoạt động tương tự như cơ chế mã hóa Volume đã có trên vServer, giúp bảo vệ dữ liệu nhạy cảm khỏi truy cập trái phép ngay cả khi volume bị tháo rời. Việc mã hóa PVC đảm bảo an toàn dữ liệu tuân thủ các tiêu chuẩn bảo mật cao nhất, đặc biệt hữu ích cho các ứng dụng đòi hỏi sự tuân thủ nghiêm ngặt về bảo mật thông tin. Tài liệu tham khảo [tại đây](https://docs.vngcloud.vn/vng-cloud-document/vn/vks/announcements/release-notes)
 
----
+***
 
 ***
 
@@ -77,7 +70,7 @@ VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhấ
 
 **Tính năng mới:**
 
-* **Tự động xóa cluster không có node active sau 30 ngày:** Hệ thống sẽ tự động quét và xóa các cluster không có node nào active trong vòng 30 ngày. Trong thời hạn quét và trước khi xóa, email cảnh báo sẽ được gửi đến bạn để đảm bảo bạn có thể chủ động xử lý nếu cần giữ lại cluster.&#x20;
+* **Tự động xóa cluster không có node active sau 30 ngày:** Hệ thống sẽ tự động quét và xóa các cluster không có node nào active trong vòng 30 ngày. Trong thời hạn quét và trước khi xóa, email cảnh báo sẽ được gửi đến bạn để đảm bảo bạn có thể chủ động xử lý nếu cần giữ lại cluster.
 * **Hỗ trợ Placement Group cho từng Node Group:** cho phép bạn kiểm soát vị trí triển khai node một cách hiệu quả hơn nhằm tối ưu hiệu năng và đảm bảo độ sẵn sàng cao, đặc biệt hữu ích cho các workload yêu cầu phân tán vật lý hoặc đồng vị trí để giảm độ trễ.
 * **Phát hành thêm version Kubernetes v1.30.10:** Phiên bản mới v1.30.10 đã sẵn sàng trên cả hai region HCM, HAN với đầy đủ 2 loại Image (Ubuntu with containerd và Container-Optimized OS with containerd). Phiên bản này đang được phát hành trong **release channel: Rapid** – thích hợp cho môi trường thử nghiệm hoặc các dự án cần cập nhật sớm.
 
@@ -320,7 +313,7 @@ VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhấ
 
 **Cải tiến:**
 
-* **Nâng cấp tính năng thiết lập kích cỡ PVC (Persistent Volume Claim Size):** Người dùng giờ đây có thể chỉ định kích cỡ tối thiểu cho ổ đĩa CSI là <mark style="color:red;">**1GB**</mark> thay vì kích cỡ tối thiểu là 20GB như trước đây. Chi tiết bạn có thể tham khảo thêm tại [Volume ](broken-reference/)và [Integrate with Container Storage Interface](broken-reference/).
+* **Nâng cấp tính năng thiết lập kích cỡ PVC (Persistent Volume Claim Size):** Người dùng giờ đây có thể chỉ định kích cỡ tối thiểu cho ổ đĩa CSI là <mark style="color:red;">**1GB**</mark> thay vì kích cỡ tối thiểu là 20GB như trước đây. Chi tiết bạn có thể tham khảo thêm tại [Volume ](https://github.com/vngcloud/docs/blob/main/Vietnamese/vks/announcements/broken-reference/README.md)và [Integrate with Container Storage Interface](https://github.com/vngcloud/docs/blob/main/Vietnamese/vks/announcements/broken-reference/README.md).
 * **Thay đổi Storage Class mặc định sử dụng cho Cluster:** thay đổi mặc định từ ổ đĩa loại SSD - IOPS 200 thành mặc định ổ đĩa loại SSD - IOPS 3000.
 * **Nâng cấp Plugin GreenNode LoadBalancer Controller, Plugin GreenNode Ingress Controller:** cải tiến plugin giúp tránh trùng lặp việc đặt tên Load Balancer.
 
@@ -336,7 +329,7 @@ Do Storage Class mặc định cũ đã được chúng tôi xóa khỏi hệ th
 kubectl patch pvc sc-iops-200-retain -p '{"spec":{"resources":{"requests":{"storage":"50Gi"\}}\}}'
 ```
 
-Chi tiết tham khảo thêm tại [Integrate with Container Storage Interface](broken-reference/).
+Chi tiết tham khảo thêm tại [Integrate with Container Storage Interface](https://github.com/vngcloud/docs/blob/main/Vietnamese/vks/announcements/broken-reference/README.md).
 {% endhint %}
 
 ***
@@ -347,7 +340,7 @@ VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhấ
 
 **Tính năng mới:**
 
-* **Hỗ trợ người dùng làm việc với VKS thông qua Terraform:** Người dùng có thể dễ dàng khởi tạo Cluster và Node Group trong VKS bằng Terraform. Chi tiết tham khảo thêm tại [đây](broken-reference/).
+* **Hỗ trợ người dùng làm việc với VKS thông qua Terraform:** Người dùng có thể dễ dàng khởi tạo Cluster và Node Group trong VKS bằng Terraform. Chi tiết tham khảo thêm tại [đây](https://github.com/vngcloud/docs/blob/main/Vietnamese/vks/announcements/broken-reference/README.md).
 
 **Cải tiến:**
 
@@ -385,7 +378,7 @@ Bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều tín
 
 **Tính năng mới:**
 
-* **Hỗ trợ tính năng Whitelist:** VKS cho phép tạo Private Node Group với chỉ Private IP đồng thời cho phép IP nào kết nối tới Cluster thông qua tính năng Whitelist IP. Chi tiết tham khảo thêm tại [Whitelist](broken-reference/).
+* **Hỗ trợ tính năng Whitelist:** VKS cho phép tạo Private Node Group với chỉ Private IP đồng thời cho phép IP nào kết nối tới Cluster thông qua tính năng Whitelist IP. Chi tiết tham khảo thêm tại [Whitelist](https://github.com/vngcloud/docs/blob/main/Vietnamese/vks/announcements/broken-reference/README.md).
 
 **Cải tiến:**
 

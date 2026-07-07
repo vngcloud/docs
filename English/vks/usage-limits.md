@@ -19,7 +19,7 @@
 
 **Step 2: Review current usage**
 
-<figure><img src="../.gitbook/assets/rate-limit.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rate-limit.png" alt=""><figcaption></figcaption></figure>
 
 The **CURRENT USAGE** section shows:
 
@@ -68,8 +68,8 @@ After completing these steps, you can:
 * Monitor usage to avoid hitting limits when scaling your system.
 * Proactively request higher limits before deploying large workloads.
 
-| I want to...                      | Go to                                                             |
-| --------------------------------- | ----------------------------------------------------------------- |
-| Create my first cluster           | [Getting Started with VKS](getting-started/)                      |
+| I want to...                      | Go to                                                              |
+| --------------------------------- | ------------------------------------------------------------------ |
+| Create my first cluster           | [Getting Started with VKS](getting-started/)                       |
 | View full vServer resource limits | [vServer Limits](https://hcm-3.console.greennode.ai/vserver/limit) |
-| Contact support                   | [GreenNode Helpdesk](https://helpdesk.vngcloud.vn/portal/en/home) |
+| Contact support                   | [GreenNode Helpdesk](https://helpdesk.vngcloud.vn/portal/en/home)  |

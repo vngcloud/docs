@@ -59,7 +59,7 @@ All AgentBase API calls (Portal, RESTful API, and SDK) require a GreenNode IAM b
    * **Description**: e.g., `Service account for AgentBase test`
 3. Click **"Next Step"**.
 
-![1774518047320](../../.gitbook/assets/1774518047320.png)
+![1774518047320](<../../../.gitbook/assets/1774518047320 (2).png>)
 
 **Step 3 — Attach Policies**
 

@@ -4,9 +4,9 @@
 
 vCloudStack sẽ cơ bản được triển khai với sơ đồ hệ thống như sau:
 
-<figure><img src="../../.gitbook/assets/image (830).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (830).png" alt=""><figcaption></figcaption></figure>
 
-* Thông qua bộ Controller,  giao diện tương tác của người dùng (portal) sẽ tương tác bằng API để có thể nắm các thông tin từ các compute và ceph cluster trong hạ tầng.
+* Thông qua bộ Controller, giao diện tương tác của người dùng (portal) sẽ tương tác bằng API để có thể nắm các thông tin từ các compute và ceph cluster trong hạ tầng.
 * Ngoài việc bộ Controller kết nối với các bộ comput và Ceph Cluster để theo dõi các thông số hoạt động thì bộ Controller cũng kết nối với bộ định tuyến mạng (Switch) cũng để theo dõi trạng thái mạng đang hoạt động trong hạ tầng nội bộ của doanh nghiệp.
 
 ***
@@ -257,7 +257,7 @@ Sau khi cài đặt các phần mềm, trên terminal openstack client có thể
 openstack compute service list | grep nova-compute
 ```
 
-<figure><img src="../../.gitbook/assets/image (829).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (829).png" alt=""><figcaption></figcaption></figure>
 
 ## 4/ Quản lý Compute
 
@@ -296,6 +296,3 @@ openstack aggregate add <compute_host> <aggregate_name>
 ```
 aggregate_instance_extra_specs:hostgroup=’aggregate_name’
 ```
-
-
-

@@ -2,9 +2,9 @@
 
 VKS (GreenNode Kubernetes Service) là một dịch vụ được quản lý trên GreenNode giúp bạn đơn giản hóa quá trình triển khai và quản lý các ứng dụng dựa trên container. Kubernetes là một nền tảng mã nguồn mở được phát triển bởi Google, được sử dụng rộng rãi để quản lý và triển khai các ứng dụng container trên môi trường phân tán.
 
-<figure><img src="../.gitbook/assets/vks_la_gi.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks_la_gi.png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
 ## Những điểm nổi bật của VKS
 
@@ -23,7 +23,7 @@ VKS (GreenNode Kubernetes Service) là một dịch vụ được quản lý tr�
 * Dễ sử dụng: VKS cung cấp giao diện đơn giản và dễ sử dụng.
 * Chi phí hợp lý: VKS cung cấp mức giá cạnh tranh cho các dịch vụ của mình.
 
----
+***
 
 ### **Region**
 

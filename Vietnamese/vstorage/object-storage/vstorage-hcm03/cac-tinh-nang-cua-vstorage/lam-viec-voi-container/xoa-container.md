@@ -2,7 +2,7 @@
 
 Bạn đã khởi tạo một container và thực hiện tải lên/ tải xuống object trong container đó. Hiện tại nhu cầu kinh doanh của bạn thay đổi, bạn không có nhu cầu sử dụng container đã tạo. Bạn có thể thực hiện xóa container theo các cách mà chúng tôi mô tả bên dưới.
 
-Để xóa một container, bạn có thể:&#x20;
+Để xóa một container, bạn có thể:
 
 <details>
 
@@ -18,7 +18,7 @@ Sau khi chọn Xóa, hệ thống sẽ tự động chuyển ra màn hình chín
 
 Để biết thêm thông tin về container segment, hãy xem tại [Tổng quan container](tong-quan-container.md).
 
-<img src="../../../../../.gitbook/assets/Xoa_container.gif" alt="" data-size="original">
+<img src="../../../../../../.gitbook/assets/Xoa_container.gif" alt="" data-size="original">
 
 </details>
 
@@ -36,7 +36,7 @@ Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung c�
 
 <summary>Sử dụng 3rd party softwares</summary>
 
-vStorage cũng tương thích với các công cụ phía người dùng sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.&#x20;
+vStorage cũng tương thích với các công cụ phía người dùng sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.
 
 Để xóa một container qua 3rd party software, hãy xem [3rd party softwares](../../3rd-party-softwares/).
 

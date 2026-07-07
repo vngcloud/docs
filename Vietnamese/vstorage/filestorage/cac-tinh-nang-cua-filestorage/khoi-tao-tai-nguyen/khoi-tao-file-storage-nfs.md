@@ -8,7 +8,7 @@
 
 **Bước 2:** Chọn mục **File Storage** sau đó chọn **Create a File storage.**
 
-<figure><img src="../../../../.gitbook/assets/image (818).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (818).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Tại màn hình khởi tạo File Storage, bạn cần nhập/ chọn:
 
@@ -18,7 +18,7 @@
 * **Protocol:** chọn NFS và version NFS mà bạn mong muốn
 * **Tag:** bạn có thể thêm các tag để đánh dầu file storage theo nhu cầu.
 
-<figure><img src="../../../../.gitbook/assets/image (341).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (341).png" alt=""><figcaption></figcaption></figure>
 
 * **File Storage Max quota:** trong bước khởi tạo file storage, bạn cần đặt một giới hạn quota tối đa cho file storage đó. Quota này có ý nghĩa chính là giới hạn dung lượng lưu trữ mà file storage có thể sử dụng, giúp quản lý tài nguyên hiệu quả. <mark style="color:red;">**Mức quota tối thiểu bạn cần chọn là 1 TB và mức quota tối đa chúng tôi cung cấp là 50 TB.**</mark> Nếu bạn có nhu cấu sử dụng nhiều hơn 50 TB cho một file storage, vui lòng liên hệ với chúng tôi.
 * **Network type**: lựa chọn network type mà bạn mong muốn. Nếu bạn chọn **Private**. Lúc này, bạn cần chọn **VPC**, **Subnet** mà bạn đã khởi tạo từ vServer Portal.
@@ -27,7 +27,7 @@
   * **All:** Cho phép tất cả IP có quyền truy cập RO (Read-Only) hoặc RW (Read-Write).
   * **Restricted:** Chỉ cho phép một số IP cụ thể truy cập với quyền RO hoặc RW.
 
-<figure><img src="../../../../.gitbook/assets/image (340).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (340).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Chọn **Create File Storage.**
 
@@ -37,9 +37,9 @@
 
 Sau khi hệ thống khởi tạo xong File Storage của bạn, để lấy mount guide, vui lòng chọn **Action** sau đó chọn **Mount Guide**
 
-<figure><img src="../../../../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (4) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (4).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

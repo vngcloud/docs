@@ -81,7 +81,7 @@ aws configure set request_checksum_calculation when_required
 
 ## 4. Configure AWS CLI after installation
 
-### Create configuration for the profile (e.g. `hcm04-prod`) via the command:&#x20;
+### Create configuration for the profile (e.g. `hcm04-prod`) via the command:
 
 ```bash
 aws configure --profile hcm04-prod
@@ -94,9 +94,9 @@ Enter information:
 * **Default region name:** `HAN02`
 *   **Default output format:** `json`
 
-    <figure><img src="../../../../../.gitbook/assets/image (632).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="/broken/files/2qFqbrss0KiA9lqXhL5H" alt=""><figcaption></figcaption></figure>
 
-### Check the connection via command:&#x20;
+### Check the connection via command:
 
 ```bash
 # 1. Get a list of all buckets in the project

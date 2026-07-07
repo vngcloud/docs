@@ -16,9 +16,9 @@ Nhằm mở rộng khả năng read scale cho vDB, bạn có thể tạo read re
 
 * Đầu tiên bạn chọn DB Instance cần tạo read replicas từ đó, lưu ý chỉ những DB Instance có **role:standalone** hoặc **role:master** mới khởi tạo đc read replicas, chọn **Action** và chọn **Create Read Replica.**
 
-<figure><img src="../../.gitbook/assets/image (526).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (526).png" alt=""><figcaption></figcaption></figure>
 
-* Tiếp theo, tại trang khởi tạo, bạn chỉ cần đặt **DB Instance Name** cho read replicas và giữ nguyên các thông tin khác như: flavor, storage type, storage size, backup schedule, tuy nhiên chúng tôi khuyến cáo bạn giữ nguyên các thông tin này giống Master hoặc chọn các thông số cao hơn khi cần thiết.&#x20;
+* Tiếp theo, tại trang khởi tạo, bạn chỉ cần đặt **DB Instance Name** cho read replicas và giữ nguyên các thông tin khác như: flavor, storage type, storage size, backup schedule, tuy nhiên chúng tôi khuyến cáo bạn giữ nguyên các thông tin này giống Master hoặc chọn các thông số cao hơn khi cần thiết.
 * Cuối cùng, Nhấn **Create Database** để khởi tạo. Sau khi khởi tạo bạn chờ một khoảng thời gian cho đến khi read replicas đã **Active.**
 
 Vây là bạn đã tạo thành công Read Replica cho vDB hay còn gọi là mô hình master-slave, bạn có thể kiểm tra dữ liệu của master đã được đồng bộ qua slave hay chưa.
@@ -29,9 +29,9 @@ Khi bạn mong muốn chuyển 1 read replica thành standalone, bạn có thể
 
 * Đầu tiên, chọn DB Instance có **role: slave**, chọn **Action - Promote to Standalone.**
 
-<figure><img src="../../.gitbook/assets/image (527).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (527).png" alt=""><figcaption></figcaption></figure>
 
-* Tiếp theo, nhấn xác nhận **Promote** để hoàn tất quá trình.&#x20;
+* Tiếp theo, nhấn xác nhận **Promote** để hoàn tất quá trình.
 
 **Lưu ý:** Trước khi xác nhận promote, chúng tôi khuyến cáo rằng bạn nên dừng việc ghi dữ liệu vào master và đợi đến khi read replica đã đồng bộ toàn bộ dữ liệu, mặc khác sẽ có tỉ lệ read replica không có đủ dữ liệu đã được ghi tại master, chú ý rằng quá trình promotion này có thể mất 1 khoảng thời gian để hoàn thành và sau quá trình này, read replicas sẽ trở thành standalone, và quá trình replication giữa master và slave sẽ dừng lại.
 
@@ -43,7 +43,7 @@ Sau khi promote thành công, read replica đã chuyển thành **role:standalon
 
 * Đầu tiên, chọn MDS Instance cần thay đổi, nhấp vào nút **Action**, chọn **“Thay Đổi Cấu Hình”** / **"Resize Instance Type".**
 
-<figure><img src="../../.gitbook/assets/image (558).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (558).png" alt=""><figcaption></figcaption></figure>
 
 * Tiếp theo, một trình chỉnh sửa sẽ hiển thị cho phép bạn chọn cấu hình flavor mới, xem xét giá cấu hình mới và hiện tại ở phía bên phải trước khi xác nhận.
 * Cuối cùng, nhấn **"Resize" / "Thay đổi"** để xác nhận quá trình. Bạn chờ một lát để hệ thống thực hiện các bước cần thiết, khi MDS Instance thay đổi cấu hình thành công sẽ có trạng thái **Active**.
@@ -59,10 +59,10 @@ Sau khi promote thành công, read replica đã chuyển thành **role:standalon
 
 Đối với phương án 2, bạn có thể thực hiện như sau:
 
-* Đầu tiên, bạn đến màn hình quản lý Database tại đường dẫn:  [https://vdb.console.greennode.ai/memorystore/database](https://vdb.console.greennode.ai/memorystore/database)
+* Đầu tiên, bạn đến màn hình quản lý Database tại đường dẫn: [https://vdb.console.greennode.ai/memorystore/database](https://vdb.console.greennode.ai/memorystore/database)
 * Chọn đến MDS Instance và nhấn **Edit Configuration Group**.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Tại màn hình thay đổi chọn đến Configuration Group muốn áp dụng.
 * Khi mọi lựa chọn đã chính xác, bạn nhấn nút **Save** ở góc phải trên cùng. Bạn chờ một lát để các biến cấu hình được áp dụng xuống MDS Instance và nếu quá trình thay đổi thành công, MDS Instance sẽ có trạng thái **Active**.
@@ -73,7 +73,7 @@ Sau khi promote thành công, read replica đã chuyển thành **role:standalon
 
 Sửa đổi Cài đặt DB cho phép bạn thay đổi **Mật khẩu Maste**r, **Khả năng Truy cập Công khai** và **Cài đặt Sao lưu**. Để làm điều này, chọn database cần sửa đổi, nhấp vào nút **“Edit DB Setting”** ở góc trên bên phải (tham khảo hình bên dưới).
 
-<figure><img src="../../.gitbook/assets/image (560).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (560).png" alt=""><figcaption></figcaption></figure>
 
 Một trình chỉnh sửa sẽ hiển thị để thay đổi Cài đặt DB của bạn, bao gồm:
 
@@ -87,7 +87,7 @@ Lưu ý: Đối với MDS Instance **role:slave**, việc bật/tắt master pas
 
 Các hành động Start, Shutdown và Reboot giúp bạn tối ưu hóa việc sử dụng tài nguyên MDS Instance. Thực hiện các hành động này khi cần thiết, để thực hiện, bạn chọn MDS Instance cần thay đổi, chọn Action và nhấp vào nút “Start” / “Reboot” / “Shutdown” tùy vào mục đích sử dụng.
 
-<figure><img src="../../.gitbook/assets/image (559).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (559).png" alt=""><figcaption></figcaption></figure>
 
 ### G - Delete MDS <a href="#quanlythongtinmdsinstance-a-giaodienquanlydatabase" id="quanlythongtinmdsinstance-a-giaodienquanlydatabase"></a>
 

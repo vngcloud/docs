@@ -10,7 +10,7 @@ Specifically:
   `Total of (Maximum hourly connections - Free allowance) from the beginning of the month until now / 720`
 * If the result < 100 → Round up to 100.
 * If the result ≥ 100 → Keep the original value.
-* #### Example:
+* **Example:**
   * **Free allowance**: 4.000 connection.
   * **Day 1:** Using 10.000 connection → `(10.000 - 4.000) / 720 ≈ 8.33` → Rounded up to 100.
   * **Day 30:** Total for 30 days → `(10.000 - 4.000) × 30 / 720 = 250` → Keep as 250.

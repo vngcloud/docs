@@ -18,7 +18,7 @@ GreenNode vDB hỗ trợ Logical Replication cho **PostgreSQL 16 và 17**.
 
 ## Logical Replication hoạt động như thế nào?
 
-![Kiến trúc Logical Replication](../../../.gitbook/assets/vdb-logical-replication-architecture.png)
+![Kiến trúc Logical Replication](<../../../../.gitbook/assets/vdb-logical-replication-architecture (2).png>)
 
 * **Publisher**: cluster nguồn, chứa dữ liệu gốc. Bạn tạo `PUBLICATION` để chỉ định bảng nào được phép replicate.
 * **Subscriber**: cluster đích, nhận và áp dụng thay đổi. Bạn tạo `SUBSCRIPTION` để kết nối đến Publisher và kéo dữ liệu về.

@@ -8,11 +8,11 @@
 
 Khi khởi tạo một Web Accelerator trên hệ thống vCDN, tại mục Crypto, bạn cần chọn/ nhập:
 
-<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Trong đó:&#x20;
+Trong đó:
 
 * **HTTPS (HTTP/2)**: Bật hoặc tắt chế độ bảo mật HTTPS cho luồng CDN. Bạn có thể tạo mới một **Certificate** bằng cách chọn **Add new**.
 * **HTTP Strict Transport Security (HSTS)**: thông báo cho trình duyệt người dùng rằng họ chỉ có thể kết nối với máy chủ Web thông qua giao thức HTTPS. Điều này có thể được sử dụng để ngăn chặn một số cuộc tấn công hạ cấp kết nối từ HTTPS xuống HTTP. Bật tính năng này để bảo vệ người truy cập website khách hàng.

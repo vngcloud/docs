@@ -4,7 +4,7 @@
 
 Để kiểm tra hiệu suất IOPS (Input/Output Operations Per Second) trên một Volume, bạn có thể sử dụng công cụ `fio.`
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Cảnh báo**
@@ -15,7 +15,7 @@
 ## **Các bước thực hiện** <a href="#kiemtrahieusuatiops-kiemtrahieusuatdongthoirandomread-and-randomwrite" id="kiemtrahieusuatiops-kiemtrahieusuatdongthoirandomread-and-randomwrite"></a>
 
 {% hint style="info" %}
-Bên dưới là hướng dẫn chi tiết và kết quả mẫu cho 3 bài test kiểm tra hiệu suất IOPS Read và Write đồng thời, chỉ Read, chỉ Write vào Volume. Cụ thể, một số cấu hình chúng tôi sử dụng như sau:&#x20;
+Bên dưới là hướng dẫn chi tiết và kết quả mẫu cho 3 bài test kiểm tra hiệu suất IOPS Read và Write đồng thời, chỉ Read, chỉ Write vào Volume. Cụ thể, một số cấu hình chúng tôi sử dụng như sau:
 
 * **Region:** HCM-03
 * **OS Images:** Ubuntu
@@ -26,13 +26,11 @@ Bên dưới là hướng dẫn chi tiết và kết quả mẫu cho 3 bài test
 * **Volume Size:** 100 GB
 {% endhint %}
 
-
-
 ### **Kiểm tra hiệu suất đồng thời random read & random write** <a href="#kiemtrahieusuatiops-kiemtrahieusuatdongthoirandomread-and-randomwrite" id="kiemtrahieusuatiops-kiemtrahieusuatdongthoirandomread-and-randomwrite"></a>
 
 1. Tạo một server với ổ đĩa Volume loại **NVME** với IOPS **5000** tại trang chủ vServer:
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 2. **Kết nối vào Server** của bạn. Để biết thêm thông tin hãy xem hướng dẫn [Kết nối vào máy chủ ảo](../server/ket-noi-vao-may-chu-ao/).
 3. Chạy lệnh sau để cài đặt **FIO**:
@@ -57,7 +55,7 @@ Bên dưới là hướng dẫn chi tiết và kết quả mẫu cho 3 bài test
 sudo fio --randrepeat=1 --ioengine=libaio --direct=1 --gtod_reduce=1 --name=TGS --filename=TGS --bs=4k --iodepth=64 --size=4G --readwrite=randrw --rwmixread=75 --numjobs=1
 ```
 
-* Với 8 jobs chạy đồng thời, bạn có thể sử dụng:&#x20;
+* Với 8 jobs chạy đồng thời, bạn có thể sử dụng:
 
 ```bash
 sudo fio --randrepeat=1 --ioengine=libaio --direct=1 --gtod_reduce=1 --name=TGS --filename=TGS --bs=4k --iodepth=64 --size=4G --readwrite=randrw --rwmixread=75 --numjobs=8
@@ -248,7 +246,7 @@ Disk stats (read/write):
 sudo fio --randrepeat=1 --ioengine=libaio --direct=1 --gtod_reduce=1 --name=TGS --filename=TGS --bs=4k --iodepth=64 --size=4G --readwrite=randread --numjobs=1
 ```
 
-* Với 8 jobs chạy đồng thời, bạn có thể sử dụng:&#x20;
+* Với 8 jobs chạy đồng thời, bạn có thể sử dụng:
 
 ```bash
 sudo fio --randrepeat=1 --ioengine=libaio --direct=1 --gtod_reduce=1 --name=TGS --filename=TGS --bs=4k --iodepth=64 --size=4G --readwrite=randread --numjobs=8
@@ -386,7 +384,7 @@ Disk stats (read/write):
 
 ### **Kiểm tra hiệu suất random write** <a href="#kiemtrahieusuatiops-kiemtrahieusuatrandomwrite" id="kiemtrahieusuatiops-kiemtrahieusuatrandomwrite"></a>
 
-1. Thực hiện các bước 1,2,3 tương tự trường hợp Kiểm tra hiệu suất đồng thời random read và random write. <mark style="background-color:blue;">(Để tăng độ đa dạng, trong ví dụ này, tôi sẽ tăng IOPS của Volume này lên</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**10000**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">thay vì</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**5000,**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">các cấu hình còn lại tôi giữ nguyên).</mark>&#x20;
+1. Thực hiện các bước 1,2,3 tương tự trường hợp Kiểm tra hiệu suất đồng thời random read và random write. <mark style="background-color:blue;">(Để tăng độ đa dạng, trong ví dụ này, tôi sẽ tăng IOPS của Volume này lên</mark> <mark style="background-color:blue;">**10000**</mark> <mark style="background-color:blue;">thay vì</mark> <mark style="background-color:blue;">**5000,**</mark> <mark style="background-color:blue;">các cấu hình còn lại tôi giữ nguyên).</mark>
 2. Tạo 1 file 4GB, sau đó chạy câu lệnh bên dưới để chỉ thực hiện việc **write** với blocksize 4KB theo tỉ lệ 100% (tức toàn bộ chỉ write) và thực hiện đồng thời 64 tác vụ một lúc:
 
 * Với chỉ 1 job chạy, bạn có thể dùng lệnh:
@@ -395,7 +393,7 @@ Disk stats (read/write):
 sudo fio --randrepeat=1 --ioengine=libaio --direct=1 --gtod_reduce=1 --name=TGS --filename=TGS --bs=4k --iodepth=64 --size=4G --readwrite=randwrite --numjobs=1
 ```
 
-* Với 8 jobs chạy đồng thời, bạn có thể sử dụng:&#x20;
+* Với 8 jobs chạy đồng thời, bạn có thể sử dụng:
 
 ```bash
 sudo fio --randrepeat=1 --ioengine=libaio --direct=1 --gtod_reduce=1 --name=TGS --filename=TGS --bs=4k --iodepth=64 --size=4G --readwrite=randwrite --numjobs=8
@@ -535,17 +533,17 @@ Disk stats (read/write):
 
 ## **Giám sát hiệu suất ổ đĩa bằng vMonitor Platform** <a href="#kiemtrahieusuatiops-giamsathieusuatodiabangvmonitor" id="kiemtrahieusuatiops-giamsathieusuatodiabangvmonitor"></a>
 
-Hiện tại, hệ thống vServer và vMonitor Platform đã tích hợp sẵn Dashboard giúp bạn quản lý các thông só của server của bạn (bao gồm cả thông số IOPS). Cụ thể, bạn có thể thực hiện theo các bước:&#x20;
+Hiện tại, hệ thống vServer và vMonitor Platform đã tích hợp sẵn Dashboard giúp bạn quản lý các thông só của server của bạn (bao gồm cả thông số IOPS). Cụ thể, bạn có thể thực hiện theo các bước:
 
 1. Truy cập vào [**vMonitor Platform**](../../../vmonitor-platform/vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/) theo link: [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/)
 2. Chọn mục **Dashboard**, sau đó chọn **All GreenNode**
 3. Tiếp tục tìm và chọn vào **Dashboard** chứa tên server của bạn, tên **Dashboard** này sẽ có định dạng: `vServer-tên-server-xxxx`
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-4. Tại màn hình chi tiết **Dashboard**, bạn có thể thấy biểu đồ thể hiện thông số IOPS tại biểu đồ bên dưới:&#x20;
+4. Tại màn hình chi tiết **Dashboard**, bạn có thể thấy biểu đồ thể hiện thông số IOPS tại biểu đồ bên dưới:
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

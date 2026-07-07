@@ -17,7 +17,7 @@ description: >-
    * In the System prompt section, define instructions or context for the model. You can also add examples to guide its behavior.
 4. Adjust parameters:
 
-<figure><img src="../../../.gitbook/assets/image (393).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (393).png" alt=""><figcaption></figcaption></figure>
 
 5. Start experimenting:
 
@@ -32,7 +32,7 @@ description: >-
     * Python: Provides ready-to-use Python code snippets for your projects.
     * Node.js: Provides Node.js code snippets, suitable for web and server-side applications.
 
-    <figure><img src="../../../.gitbook/assets/image (394).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (394).png" alt=""><figcaption></figcaption></figure>
 
 ### Model Parameter Tuning Guide
 

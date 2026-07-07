@@ -23,9 +23,9 @@ To create an IAM user account, please first refer to the instructions below:
 7. Select **Copy** to copy the password. You must collect this information to access vStorage using an IAM User Account.
 8. Select **Create User Account.**
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Assign permissions to work with the project to the IAM User Account <a href="#phan-quyen-lam-viec-voi-project-vstorage-api-cho-service-account" id="phan-quyen-lam-viec-voi-project-vstorage-api-cho-service-account"></a>
 
@@ -47,7 +47,7 @@ To initialize a policy used to access vStorage resources, follow the steps below
 8. Select **Resources** : select **All resources.**
 9.  Select **Request conditions:** enter special conditions for the policy if any.
 
-    <figure><img src="../../../../.gitbook/assets/Screenshot-4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/Screenshot-4.png" alt=""><figcaption></figcaption></figure>
 
 ### Attach IAM Policy to IAM User Account <a href="#attach-iam-policy-vao-iam-user-account" id="attach-iam-policy-vao-iam-user-account"></a>
 
@@ -60,7 +60,7 @@ Once you have created the desired IAM User Account and Policy, you will need to 
 5. Select the **policies** you want. The vIAM system supports you to assign multiple policies to an IAM User Account. If these policies contain independent permissions, they will complement each other (ie the permission list is merged). On the contrary, if these policies contain conflicting permissions, you will not be able to access the corresponding resources according to this permission list (ie the permission list is merged and when conflicting, they will cancel each other out).
 6. Select **Attach**.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -72,7 +72,7 @@ To grant access to bucket/object for IAM User Account, you need to grant permiss
 2. Select the **Bucket** you want to assign permissions to the IAM User Account.
 3. Select the **Action** icon and select **Configure policy.**
 
-<figure><img src="../../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Here, you can choose the configuration for each **Statement** on the left or directly edit the JSON file in the right column. Specifically, the structure of a Bucket Policy includes:
 
@@ -86,9 +86,9 @@ To grant access to bucket/object for IAM User Account, you need to grant permiss
 
 5. Select **Save** to save the Bucket Policy configuration.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2025-11-10 13-43-42.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot from 2025-11-10 13-43-42.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2025-11-10 13-28-12.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot from 2025-11-10 13-28-12.png" alt=""><figcaption></figcaption></figure>
 
 ## Access to vStorage via IAM User Account <a href="#thuc-hien-truy-cap-vao-vstorage-thong-qua-iam-user-account" id="thuc-hien-truy-cap-vao-vstorage-thong-qua-iam-user-account"></a>
 
@@ -101,7 +101,7 @@ Follow the steps below to log in to vStorage with an IAM user account:
 5. Select **LOG IN WITH IAM USER ACCOUNT** . If you have previously logged in as an IAM user account in this browser, your browser may remember the IAM user account address. If so, you will see the screen shown in step 3. After successfully logging in with an IAM user account, the main screen of vStorage will show the type of user you are using to log in (Root user account or IAM user account).
 6. After successful login, you have the right to access and perform the features provided by the vStorage service on the resources authorized to you.
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (12) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

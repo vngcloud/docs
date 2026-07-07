@@ -11,11 +11,11 @@ description: >-
 
 1. Sau khi đã [tạo Authentication Token](lam-viec-voi-authentication-token.md#tao-moi-authentication-token), tại danh sách các token chọn icon ở cột Hành Động như hình dưới để mở cấu hình giới hạn Rate
 
-<figure><img src="../../../.gitbook/assets/image (465).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (465).png" alt=""><figcaption></figcaption></figure>
 
 2. Hoặc có thể chọn Configure Rate limit khi tạo Authentication Token.
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. Tạo mới **Rate Limit Token**
 
@@ -30,4 +30,4 @@ description: >-
 
 2 Nhấn **Lưu** cấu hình.<br>
 
-<figure><img src="../../../.gitbook/assets/image (446).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (446) (1).png" alt=""><figcaption></figcaption></figure>

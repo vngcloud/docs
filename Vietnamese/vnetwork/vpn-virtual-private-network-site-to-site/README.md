@@ -16,7 +16,7 @@ Kết nối Site-to-Site VPN hỗ trợ hỗ trợ kết nối với giao thức
 
 Để hiểu rõ về sự kết nối giữa các site, hãy xem mô tả cụ thể bên dưới về một kết nối Site-to-Site VPN:
 
-Giả thiết đang có 3 vùng (site) mạng là Hồ Chí Minh (HCM03) và Hà Nội (HAN01) và hệ thống mạng nội bộ riêng (on-premise), mỗi vùng đều đã thiết lập sẵn các VPC từ trước.&#x20;
+Giả thiết đang có 3 vùng (site) mạng là Hồ Chí Minh (HCM03) và Hà Nội (HAN01) và hệ thống mạng nội bộ riêng (on-premise), mỗi vùng đều đã thiết lập sẵn các VPC từ trước.
 
 Region HCM03 có các VPC:
 
@@ -30,10 +30,10 @@ Region HAN01 có các VPC:
 Tại Site On-Premise có các thông tin mạng:
 
 * 192.168.1.0/24
-* 192.168.2.0/24&#x20;
+* 192.168.2.0/24
 * 192.168.3.0/24
 
-Thực hiện việc tạo kết nối VPN với 3 đường kết nối như sau:&#x20;
+Thực hiện việc tạo kết nối VPN với 3 đường kết nối như sau:
 
 * Cổng VPNGW-01 của HCM03 kết nối đến Cổng VPNGW-01 của HAN01;
 * Cổng VPNGW-01 của HCM03 kết nối đến Cổng Router của của hệ thống On-Premise;
@@ -41,12 +41,10 @@ Thực hiện việc tạo kết nối VPN với 3 đường kết nối như sa
 
 Từ đó đồng nghĩa với việc hệ thống mạng kết nối với nhau sau khi:
 
-* VPC1 của HCM03 có route table ghi nhận  VPC là 172.16.0.0/16 của HAN01 và 192.168.1.0/24 của hệ thống On-Premise;
-* VPC2 của HCM03 có route table ghi nhận  VPC là 192.168.1.0/24 và 192.168.2.0/24 của hệ thống On-Premise;
+* VPC1 của HCM03 có route table ghi nhận VPC là 172.16.0.0/16 của HAN01 và 192.168.1.0/24 của hệ thống On-Premise;
+* VPC2 của HCM03 có route table ghi nhận VPC là 192.168.1.0/24 và 192.168.2.0/24 của hệ thống On-Premise;
 
-
-
-<figure><img src="../../.gitbook/assets/image (1) (5).png" alt=""><figcaption><p>Sơ đồ kết nối cơ bản giữa hai site bằng đường IPsec VPN</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (5).png" alt=""><figcaption><p>Sơ đồ kết nối cơ bản giữa hai site bằng đường IPsec VPN</p></figcaption></figure>
 
 ***
 

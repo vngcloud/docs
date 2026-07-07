@@ -24,7 +24,7 @@ Chi tiết các bước thực hiện Thay đổi như sau:
 
 **Bước 4:** Tìm đến Cross Connect muốn thay đổi Băng Thông, chọn nút '**Hành động**', sau đó nhấn '**Thay đổi gói**'.
 
-<figure><img src="../../.gitbook/assets/image (790).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (790).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Màn hình '**Thay đổi gói**' hiển thị tất cả gói mà người dùng có thể thay đổi. Chọn vào gói muốn thay đổi.
 
@@ -37,9 +37,4 @@ Lưu ý:
 
 **Bước 6:** Sau khi chọn gói phù hợp cần thay đổi, người dùng có thể xem tóm tắt chi phí phát sinh hoặc chi phí được hoàn lại trong trường hợp gói băng thông nhỏ hơn. Nhấn nút "Thay đổi gói" để hoàn thành. Khi trạng thái của CrossConnect từ '<mark style="color:blue;">**Changing**</mark>' trở lại '<mark style="color:blue;">**Active**</mark>**'** thì quá trình thay đổi băng thông hoàn tất.
 
-<figure><img src="../../.gitbook/assets/image (791).png" alt=""><figcaption></figcaption></figure>
-
-
-
-
-
+<figure><img src="../../../.gitbook/assets/image (791).png" alt=""><figcaption></figcaption></figure>

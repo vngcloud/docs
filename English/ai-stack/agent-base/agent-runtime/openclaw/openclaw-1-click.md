@@ -8,18 +8,18 @@
 
 [OpenClaw](https://open.claw.cloud/) is an open-source AI agent capable of autonomously completing tasks: browsing the web, managing files, running commands, writing code, and integrating with messaging platforms (Telegram, Zalo). Instead of installing OpenClaw on your local machine, GreenNode Agentbase lets you run OpenClaw on the cloud with full compute resources and a built-in connection to GreenNode MaaS (Model-as-a-Service).
 
-To get started deploying and managing an OpenClaw instance, see [Deploy & Manage OpenClaw](deploy-and-manage-openclaw.md).
+To get started deploying and managing an OpenClaw instance, see [Deploy & Manage OpenClaw](/broken/pages/yYnymA1hIAykuUQNkjkc).
 
 ### Self-install vs. 1-Click Deploy
 
-| Criteria | Self-install OpenClaw (Local) | OpenClaw 1-Click (Agentbase) |
-| --- | --- | --- |
-| **Setup time** | 30–60 minutes | 40–60 seconds |
-| **Technical requirement** | DevOps knowledge required | None |
-| **API key configuration** | Manual | Auto-connected to GreenNode MaaS |
-| **Infrastructure** | Local machine | Cloud (GreenNode Agentbase) |
-| **Messaging integration** | Manual setup | Telegram, Zalo — configurable at deploy time |
-| **Instance management** | Self-managed | Via My Agents Dashboard |
+| Criteria                  | Self-install OpenClaw (Local) | OpenClaw 1-Click (Agentbase)                 |
+| ------------------------- | ----------------------------- | -------------------------------------------- |
+| **Setup time**            | 30–60 minutes                 | 40–60 seconds                                |
+| **Technical requirement** | DevOps knowledge required     | None                                         |
+| **API key configuration** | Manual                        | Auto-connected to GreenNode MaaS             |
+| **Infrastructure**        | Local machine                 | Cloud (GreenNode Agentbase)                  |
+| **Messaging integration** | Manual setup                  | Telegram, Zalo — configurable at deploy time |
+| **Instance management**   | Self-managed                  | Via My Agents Dashboard                      |
 
 ### When should you use OpenClaw 1-Click?
 
@@ -33,12 +33,12 @@ To get started deploying and managing an OpenClaw instance, see [Deploy & Manage
 
 When you click Deploy, Agentbase automatically runs 4 provisioning tasks:
 
-| Step | Task | Description |
-| --- | --- | --- |
-| 1 | **OpenClaw Token** | Creates an Identity and authentication token for the instance |
-| 2 | **AI Service Account** | Creates an IAM Service Account connected to GreenNode MaaS |
-| 3 | **AI Service Token** | Retrieves an access token for the selected AI model |
-| 4 | **Cloud Computer** | Starts the OpenClaw container on Agentbase Runtime |
+| Step | Task                   | Description                                                   |
+| ---- | ---------------------- | ------------------------------------------------------------- |
+| 1    | **OpenClaw Token**     | Creates an Identity and authentication token for the instance |
+| 2    | **AI Service Account** | Creates an IAM Service Account connected to GreenNode MaaS    |
+| 3    | **AI Service Token**   | Retrieves an access token for the selected AI model           |
+| 4    | **Cloud Computer**     | Starts the OpenClaw container on Agentbase Runtime            |
 
 Once complete, you receive an **OpenClaw Gateway URL** to access your chat portal immediately.
 
@@ -54,12 +54,12 @@ For users with a GreenNode account. The system automatically creates an API key 
 
 For users who want to use a model from an external provider. You supply your own API key during configuration.
 
-| Supported Provider | Example Models |
-| --- | --- |
-| OpenAI | gpt-4o, gpt-4.1 |
-| Anthropic | claude-sonnet-4, claude-opus-4 |
-| Gemini | gemini-2.0-flash |
-| Custom | Custom endpoint |
+| Supported Provider | Example Models                 |
+| ------------------ | ------------------------------ |
+| OpenAI             | gpt-4o, gpt-4.1                |
+| Anthropic          | claude-sonnet-4, claude-opus-4 |
+| Gemini             | gemini-2.0-flash               |
+| Custom             | Custom endpoint                |
 
 ***
 
@@ -67,10 +67,10 @@ For users who want to use a model from an external provider. You supply your own
 
 OpenClaw supports connecting to messaging platforms so you can chat with your AI Agent directly from your preferred app:
 
-| Channel | Description |
-| --- | --- |
+| Channel      | Description                                                           |
+| ------------ | --------------------------------------------------------------------- |
 | **Telegram** | Connect via Telegram Bot Token. Supports Pairing and Allow List modes |
-| **Zalo** | Connect via Zalo |
+| **Zalo**     | Connect via Zalo                                                      |
 
 Channels can be configured during the deploy step or later at **Settings → Config** in the OpenClaw Gateway.
 

@@ -2,7 +2,7 @@
 
 System Image là bản sao của các hệ điều hành phổ biến hiện nay trên thị trường và đang được GreenNode hỗ trợ và duy trì tương thích ở mức tốt nhất với hệ thống ảo hoá đang phát triển. System image cần phải được chỉ định trong quá trình khởi chạy một Server. Bạn có thể khởi chạy nhiều Server từ một System Image duy nhất khi bạn yêu cầu nhiều Server có cùng cấu hình. Sử dụng các System Image khác nhau để khởi chạy các Server khi bạn yêu cầu các Server có cấu hình khác nhau.
 
-<figure><img src="../../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure>
 
 Các image tại GreenNode được phân loại thành Image chung, Image riêng và Image từ Marketplace.
 
@@ -33,8 +33,6 @@ Khi tạo image trên GreenNode, có một số hạn mức tài nguyên liên q
 Số lượng Image tối đa trên 1 Root User Account: 50 (có thể điều chỉnh). \GreenNode Dung lượng GB Image Size tối đa trên 1 Root User Account: 1000 GB (có thể điều chỉnh). \GreenNodeGreenNode Vì vậy, khi tạo image, bạn cần lưu ý đến giới hạn tổng dung lượng image là 1000 GB cho toàn bộ các image trong tài khoản của mình. Nếu bạn cần tăng hạn mức này, có thể yêu cầu điều chỉnh thông qua trang hỗ trợ của GreenNode.
 
 Đơn giá cho dịch vụ Image là: 2,400 VND cho mỗi GB mỗi tháng.
-
-
 
 Trường hợp bạn muốn chủ động upload 1 image hoặc OS (Image/OS này chưa có trên GreenNode), bạn cần liên hệ với bộ phận hỗ trợ của GreenNode để được tư vấn trực tiếp.<br>
 

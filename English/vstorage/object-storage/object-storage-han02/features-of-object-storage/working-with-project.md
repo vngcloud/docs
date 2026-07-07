@@ -48,9 +48,9 @@ Create a project by following the steps below:
 8. Select **Period** according to your needs.
 9. **Go through the Checkout** steps and your **Project** will be created.
 
-<figure><img src="../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (25) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -62,7 +62,7 @@ To view the properties for a project, you can:
 
 1. Log in to [https://vstorage.console.greennode.ai/storage](https://vstorage.console.greennode.ai/storage/list).
 2. Select **Region: HAN02**
-3. Select the icon <img src="../../../../.gitbook/assets/image (580).png" alt="" data-size="line">in the **project** you want to see details.
+3. Select the icon <img src="../../../../../.gitbook/assets/image (580).png" alt="" data-size="line">in the **project** you want to see details.
 4. **On the project** details page , you can view and use properties for the project.
 
 * **Information** : Provides general project information such as Total quota, Total usage, Project type, Account URL, Project Owner.
@@ -70,7 +70,7 @@ To view the properties for a project, you can:
 * **History** : Provides historical information affecting the project including action type, action status, time the action occurred, and a detailed description of the action if available.
 * **Connection Information** : Provides commands and configuration files to connect the project to S3.
 
-<figure><img src="../../../../.gitbook/assets/image (581).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (581) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -80,7 +80,7 @@ You have initialized the project with an initial quota that matches your storage
 
 To change the quota for a project, you can:
 
-1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).Select the checkbox at the project you want to increase or decrease the limit and select the icon <img src="../../../../.gitbook/assets/image (582).png" alt="" data-size="line">or you can also select the icon <img src="../../../../.gitbook/assets/image (583).png" alt="" data-size="line"> then select Resize.
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).Select the checkbox at the project you want to increase or decrease the limit and select the icon <img src="../../../../../.gitbook/assets/image (582) (1).png" alt="" data-size="line">or you can also select the icon <img src="../../../../../.gitbook/assets/image (583) (1).png" alt="" data-size="line"> then select Resize.
 2. **The Resize project** screen is displayed **.** Select the storage **quota you want to increase, the storage quota** you can increase or decrease to the maximum or minimum **quota** provided by the hosting package. You cannot adjust the storage **quota** to be smaller or larger than this value.
 3. Select **Resize project.**
 4. Select **Checkout** after reviewing your shopping cart and payment method.
@@ -88,7 +88,7 @@ To change the quota for a project, you can:
 
 After you successfully complete the above 6 steps, the new total **quota** value after change will be updated on the general information of the project you selected.
 
-<figure><img src="../../../../.gitbook/assets/image (584).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (584).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -140,7 +140,7 @@ Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ
 <summary>Set up auto-renewal on previously created projects</summary>
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
-2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (586).png" alt="" data-size="line"> tại **project** bạn muốn thực hiện thiết lập gia hạn tự động. Chọn Enable Auto-renew.
+2. Chọn biểu tượng <img src="../../../../../.gitbook/assets/image (586).png" alt="" data-size="line"> tại **project** bạn muốn thực hiện thiết lập gia hạn tự động. Chọn Enable Auto-renew.
 3. Màn hình **Enable Auto-renew** được hiển th&#x1ECB;**.** Chọn **Period** gia hạn mà bạn mong muốn.
 4. Chọn **OK.**
 
@@ -153,7 +153,7 @@ Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ
 <summary>Remove auto-renewal on a project that was previously set to auto-renewal</summary>
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
-2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (587).png" alt="" data-size="line"> tại **project** bạn muốn thực hiện tắt thiết lập gia hạn tự động. Chọn **Disable Auto-renew.**
+2. Chọn biểu tượng <img src="../../../../../.gitbook/assets/image (587) (1).png" alt="" data-size="line"> tại **project** bạn muốn thực hiện tắt thiết lập gia hạn tự động. Chọn **Disable Auto-renew.**
 3. Màn hình **Disable Auto-renew** được hiển th&#x1ECB;**.**
 4. Chọn **OK.**
 
@@ -170,7 +170,7 @@ You have created a project with the appropriate hosting package. Now your busine
 To delete a project, you can:
 
 1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
-2. Select the icon <img src="../../../../.gitbook/assets/image (588).png" alt="" data-size="line">in the project you want to delete. Select **Delete**.
+2. Select the icon <img src="../../../../../.gitbook/assets/image (588) (1).png" alt="" data-size="line">in the project you want to delete. Select **Delete**.
 3. Enter the string **delete me** and select **Delete.**
 
 After you delete the project, the deleted project will disappear from your project list. At this time, the deleted project will be in **the Trash** , your deleted project will be stored in **the Trash** for 7 days without any charge. During these 7 days, you can restore the deleted project. To restore, see the instructions in the Restore project section. If after 7 days you do not restore the project, the project and all data inside will be completely deleted from the system and cannot be restored.
@@ -207,9 +207,9 @@ To set up automatic growth for a project, you can:
 * If the capacity increase **fails** , the user will receive an email notification. After two consecutive auto-scaling failures, our system will stop sending email notifications to you. You need to proactively access vStorage to manually resize the project according to the instructions above.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 14-29-43.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot from 2026-05-04 14-29-43.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 14-29-47.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot from 2026-05-04 14-29-47.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -235,9 +235,9 @@ To set up automatic alert for a project, you can:
 * **The vStorage system will perform a 2-times per day** usage alert check to automatically alert usage based on the set threshold.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 14-29-54.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot from 2026-05-04 14-29-54 (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 14-30-00.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot from 2026-05-04 14-30-00.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -274,7 +274,7 @@ The default POC resource usage time coincides with the POC wallet expiration tim
 After you create a project using POC wallet, you can continue to extend the project using Poc wallet. For details, follow these steps:
 
 1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
-2. Select the icon <img src="../../../../.gitbook/assets/image (590).png" alt="" data-size="line">at **the project** you want to renew. Select **Renew.**
+2. Select the icon <img src="../../../../../.gitbook/assets/image (590) (1).png" alt="" data-size="line">at **the project** you want to renew. Select **Renew.**
 3. **You can extend the project using POC wallet if you have extended the POC wallet usage period. After you extend the POC wallet usage period, the time you can extend the project is the period from the current end date to the new expiration date of the POC wallet** . To extend the POC wallet usage period, please contact the Sales staff or the staff who directly supports you or open a support ticket on our system. Select **Extend**.
 4. Select **Checkout PoC**.
 
@@ -299,7 +299,7 @@ Now the **project will be completely remove** from vStorage.
 <summary>Stop POC a project</summary>
 
 1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
-2. Select the icon <img src="../../../../.gitbook/assets/image (592).png" alt="" data-size="line">at **the project** you want to stop POC. Select **Stop POC**.
+2. Select the icon <img src="../../../../../.gitbook/assets/image (592) (1).png" alt="" data-size="line">at **the project** you want to stop POC. Select **Stop POC**.
 3. Select **Stop POC**.
 
 Once you successfully stop the POC, your project will be converted to a prepaid resource type with expired status.

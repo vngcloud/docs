@@ -67,15 +67,15 @@ Tạo file `opencode.json` tại thư mục gốc của project:
 
 **Giải thích các field:**
 
-| Field | Mục đích |
-|---|---|
-| `$schema` | Bật autocomplete/validation trong editor |
-| `model` | Model mặc định — format `<provider-key>/<model-id>` |
-| `provider.MAAS-chat` | Provider key — phần trước `/` trong `model` phải khớp chính xác |
-| `npm` | Adapter package — `@ai-sdk/openai-compatible` dùng được cho mọi endpoint OpenAI-style |
-| `options.baseURL` | MaaS endpoint, có `/v1` ở cuối |
-| `options.apiKey` | Token MaaS — dùng `{env:MAAS_API_KEY}` thay vì hardcode |
-| `models` | Danh sách model expose từ provider này |
+| Field                | Mục đích                                                                              |
+| -------------------- | ------------------------------------------------------------------------------------- |
+| `$schema`            | Bật autocomplete/validation trong editor                                              |
+| `model`              | Model mặc định — format `<provider-key>/<model-id>`                                   |
+| `provider.MAAS-chat` | Provider key — phần trước `/` trong `model` phải khớp chính xác                       |
+| `npm`                | Adapter package — `@ai-sdk/openai-compatible` dùng được cho mọi endpoint OpenAI-style |
+| `options.baseURL`    | MaaS endpoint, có `/v1` ở cuối                                                        |
+| `options.apiKey`     | Token MaaS — dùng `{env:MAAS_API_KEY}` thay vì hardcode                               |
+| `models`             | Danh sách model expose từ provider này                                                |
 
 {% hint style="warning" %}
 Lỗi phổ biến: đặt `"model"` thành tên không khớp với provider key đã đăng ký. OpenCode tách theo `/` đầu tiên để tìm provider — nếu không khớp, model không load được. Luôn dùng `MAAS-chat/openai/gpt-oss-120b`.
@@ -131,17 +131,16 @@ Không hardcode API key trực tiếp vào `opencode.json` nếu file đó đư�
 
 ## Bước 5 — Chạy OpenCode và chọn model
 
-1. Di chuyển đến thư mục project và chạy:
+1.  Di chuyển đến thư mục project và chạy:
 
-   ```bash
-   opencode
-   ```
+    ```bash
+    opencode
+    ```
 
-   OpenCode khởi động với `MAAS-chat/openai/gpt-oss-120b` là model mặc định.
-
+    OpenCode khởi động với `MAAS-chat/openai/gpt-oss-120b` là model mặc định.
 2. Đổi model trong phiên bằng lệnh `/models`, sau đó chọn **MAAS chat → openai/gpt-oss-120b** từ danh sách.
 
-<figure><img src="../../../.gitbook/assets/Agentbase-image/using-opencode-with-maas.png" alt=""><figcaption><p>OpenCode chạy với model openai/gpt-oss-120b qua GreenNode MaaS</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/using-opencode-with-maas.png" alt=""><figcaption><p>OpenCode chạy với model openai/gpt-oss-120b qua GreenNode MaaS</p></figcaption></figure>
 
 ***
 
@@ -162,13 +161,13 @@ Sau đó chọn qua `/models`, hoặc đổi `model` ở cấp top-level thành 
 
 ## Troubleshooting
 
-| Triệu chứng | Nguyên nhân | Cách xử lý |
-|---|---|---|
-| `provider not found` / model không load | Giá trị `model` không khớp provider key | Dùng `MAAS-chat/openai/gpt-oss-120b` |
-| `401 Unauthorized` | API key sai, hết hạn, hoặc chưa ACTIVE | Re-export `MAAS_API_KEY`; rotate token tại MAAS Console |
-| `404` khi gửi request | Base URL sai hoặc thiếu `/v1` | Kiểm tra `baseURL` kết thúc bằng `/v1` |
-| Connection timeout | Endpoint không truy cập được từ network hiện tại | Kiểm tra VPN / kết nối đến `*.api.vngcloud.vn` |
-| Model trả lỗi nhưng auth đúng | Sai model ID | Dùng đúng ID mà MaaS publish (`openai/gpt-oss-120b`) |
+| Triệu chứng                             | Nguyên nhân                                      | Cách xử lý                                              |
+| --------------------------------------- | ------------------------------------------------ | ------------------------------------------------------- |
+| `provider not found` / model không load | Giá trị `model` không khớp provider key          | Dùng `MAAS-chat/openai/gpt-oss-120b`                    |
+| `401 Unauthorized`                      | API key sai, hết hạn, hoặc chưa ACTIVE           | Re-export `MAAS_API_KEY`; rotate token tại MAAS Console |
+| `404` khi gửi request                   | Base URL sai hoặc thiếu `/v1`                    | Kiểm tra `baseURL` kết thúc bằng `/v1`                  |
+| Connection timeout                      | Endpoint không truy cập được từ network hiện tại | Kiểm tra VPN / kết nối đến `*.api.vngcloud.vn`          |
+| Model trả lỗi nhưng auth đúng           | Sai model ID                                     | Dùng đúng ID mà MaaS publish (`openai/gpt-oss-120b`)    |
 
 ***
 
@@ -176,8 +175,8 @@ Sau đó chọn qua `/models`, hoặc đổi `model` ở cấp top-level thành 
 
 Sau khi hoàn thành, OpenCode route toàn bộ request qua GreenNode MaaS. Usage được ghi nhận trên [AI Platform Console → Usage](https://aiplatform.console.greennode.ai/).
 
-| Tôi muốn tiếp theo...           | Đi đến                                                                              |
-| ------------------------------- | ----------------------------------------------------------------------------------- |
-| Dùng Codex với Minimax qua MaaS | [Dùng Codex với Minimax qua GreenNode MaaS](hướng-dẫn-xài-codex-với-minimax.md)   |
-| Kết nối Claude Code với MaaS    | [Kết nối Claude Code với GreenNode MaaS](ket-noi-claude-code-voi-maas.md)          |
-| Xem usage và billing            | [AI Platform Console](https://aiplatform.console.greennode.ai/)                      |
+| Tôi muốn tiếp theo...           | Đi đến                                                                          |
+| ------------------------------- | ------------------------------------------------------------------------------- |
+| Dùng Codex với Minimax qua MaaS | [Dùng Codex với Minimax qua GreenNode MaaS](hướng-dẫn-xài-codex-với-minimax.md) |
+| Kết nối Claude Code với MaaS    | [Kết nối Claude Code với GreenNode MaaS](ket-noi-claude-code-voi-maas.md)       |
+| Xem usage và billing            | [AI Platform Console](https://aiplatform.console.greennode.ai/)                 |

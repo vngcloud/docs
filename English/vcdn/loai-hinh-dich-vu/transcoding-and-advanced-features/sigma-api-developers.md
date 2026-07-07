@@ -4,15 +4,15 @@
 
 * First, you access the Figma application, select the **App management** menu then select **the Credential tab:**
 
-<figure><img src="../../../.gitbook/assets/image (54) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (54) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Next, you enter **the Username** and select the corresponding permission **group** (here you group the **Sigma Livestream Full** permission ):
 
-<figure><img src="../../../.gitbook/assets/image (55) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (55) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * After you select **Submit , the Sigma** system will generate **a Username** and **Secret Key** . You need to save this password or download the **credential** file by selecting **Download as .env file**.
 
-<figure><img src="../../../.gitbook/assets/image (309).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (309).png" alt=""><figcaption></figcaption></figure>
 
 * After having **Username** and **Secret Key** , you use **Base64Encode** tool to create **token for Authorization** header with the following syntax:
 
@@ -22,7 +22,7 @@ Authorization: Basic Base64Encode(<Username>:<Secret Key>)
 
 * Finally, you get **App ID** information by selecting the **App management menu,** selecting the **General** tab , then you can see **App ID** information as shown below.
 
-<figure><img src="../../../.gitbook/assets/image (310).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (310) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. API Create live transcode channel <a href="#id-2.-api-tao-kenh-live-transcode" id="id-2.-api-tao-kenh-live-transcode"></a>
 

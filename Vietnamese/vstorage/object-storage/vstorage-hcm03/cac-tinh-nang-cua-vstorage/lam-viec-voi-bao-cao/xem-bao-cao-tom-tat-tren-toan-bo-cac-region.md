@@ -1,15 +1,15 @@
 # Xem báo cáo tóm tắt trên toàn bộ các region
 
-Sau khi bạn đã tạo các project để lưu trữ dữ liệu. Chúng tôi cung cấp cho bạn các báo cáo thống kê các chỉ số thuộc project, từ đó bạn có thể quản lý, kiểm soát và đánh giá hiệu quả việc sử dụng đơn vị lưu trữ hợp lý. Các thuộc tính được chúng tôi sử dụng xuyên suốt các báo cáo bao gồm:&#x20;
+Sau khi bạn đã tạo các project để lưu trữ dữ liệu. Chúng tôi cung cấp cho bạn các báo cáo thống kê các chỉ số thuộc project, từ đó bạn có thể quản lý, kiểm soát và đánh giá hiệu quả việc sử dụng đơn vị lưu trữ hợp lý. Các thuộc tính được chúng tôi sử dụng xuyên suốt các báo cáo bao gồm:
 
 * Quota
 * Lưu lượng
 * Dung lượng sử dụng
 * Số lượng request
 
-Để báo cáo tóm tắt trên toàn bộ các region, bạn có thể:&#x20;
+Để báo cáo tóm tắt trên toàn bộ các region, bạn có thể:
 
-&#x20;Sử dụng vStorage portal
+Sử dụng vStorage portal
 
 1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
@@ -19,7 +19,7 @@ Sau khi bạn đã tạo các project để lưu trữ dữ liệu. Chúng tôi 
 * Nhập khoảng thời gian tương đối mà bạn mong muốn xem dữ liệu (thường theo mốc giờ, phút, giây) tại mục **Tương đối**.
 * Chọn thời gian bắt đầu và thời gian kết thúc chính xác mà bạn muốn xem dữ liệu (thường theo mốc ngày, giờ, phút) tại mục **Chính xác.**
 
-3\. Trên trang báo cáo các thông số chi tiết của tất cả các **project** thuộc mọi **region,** bạn có thể xem các thuộc tính cho project bao gồm:&#x20;
+3\. Trên trang báo cáo các thông số chi tiết của tất cả các **project** thuộc mọi **region,** bạn có thể xem các thuộc tính cho project bao gồm:
 
 * **Thông tin chung**: cung cấp các thông tin chung bao gồm:
   * Region.
@@ -37,12 +37,10 @@ Sau khi bạn đã tạo các project để lưu trữ dữ liệu. Chúng tôi 
   * Số lượng request kiểu PUT/ POST/ DELETE chia theo từng gói lưu trữ Gold, Archive trong khoảng thời gian mà bạn chọn.
 
 {% hint style="info" %}
-**Chú ý:**&#x20;
-
-
+**Chú ý:**
 
 * Các thông số của mỗi project được tổng hợp vào các báo cáo được chúng tôi thực hiện tổng hợp 2 lần mỗi ngày vào 2 khung giờ cố định: 7:00 AM và 12:00 PM. Ví dụ: khi bạn tạo một project, tạo container, tải tệp tệp tin hay thực hiện các hành động PUT/ DELETE object vào khung thời gian 04:00 PM ngày 01/01/2023 thì sau 12:00 PM cùng ngày, các dữ liệu này sẽ được cập nhật. Tức là từ ngày 02/01/2023 các thông số này sẽ được cập nhật đầy đủ trên các báo cáo.
-* Để cung cấp góc nhìn dài hạn cho báo cáo của bạn, chúng tôi hỗ trợ bạn có thể xem các báo cáo này với chu kỳ 3 tháng. Ví dụ bạn có thể chọn xem dữ liệu báo cáo từ ngày 01/01/2023 tới 31/03/2023.&#x20;
+* Để cung cấp góc nhìn dài hạn cho báo cáo của bạn, chúng tôi hỗ trợ bạn có thể xem các báo cáo này với chu kỳ 3 tháng. Ví dụ bạn có thể chọn xem dữ liệu báo cáo từ ngày 01/01/2023 tới 31/03/2023.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/Xem_bao_cao_tom_tat.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Xem_bao_cao_tom_tat.gif" alt=""><figcaption></figcaption></figure>

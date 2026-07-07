@@ -35,7 +35,7 @@ Trước khi thao tác với kubeconfig, account IAM-user cần được cấp �
 | 90 ngày  | Phù hợp cho môi trường production với chu kỳ rotate định kỳ             |
 | 365 ngày | Phù hợp cho các trường hợp cần kubeconfig dài hạn, cần quản lý cẩn thận |
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 **Lưu ý về bảo mật:**
@@ -99,7 +99,7 @@ export KUBECONFIG=<đường_dẫn_kubeconfig>
 
 Khi nhấp **Download Config File** tại màn hình Kubernetes Cluster, hệ thống hiển thị popup thông tin kubeconfig, trong đó bao gồm thời hạn hiệu lực của certificate. Bạn có thể xem ngày hết hạn trực tiếp tại đây trước khi tải xuống.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Cách 2: Kiểm tra bằng lệnh**
 
@@ -117,10 +117,10 @@ Kết quả trả về sẽ hiển thị `notBefore` (ngày bắt đầu) và `n
 
 Khi certificate sắp hết hạn (dưới 7 ngày), hệ thống VKS sẽ gửi thông báo đến bạn. Lúc này bạn có thể:
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure>
 
 * **Tự động renew:** Hệ thống tự động gia hạn certificate nếu đủ điều kiện. Bạn sẽ nhận được thông báo xác nhận khi quá trình hoàn tất.\
-  &#xNAN;_&#x41;ccount **IAM-user** cần quyền `AcknowledgeKubeConfigWarningRenew` để xác nhận thông báo autorenew — xem **Lưu ý cho account IAM-user** ở đầu trang._
+  \&#xNAN;_Account **IAM-user** cần quyền `AcknowledgeKubeConfigWarningRenew` để xác nhận thông báo autorenew — xem **Lưu ý cho account IAM-user** ở đầu trang._
 * **Thủ công renew:** Nếu hệ thống không thể tự động renew, bạn sẽ thấy nút **Renew** trong thông báo. Chọn **Renew** để hệ thống cấp lại certificate mới.
 
 {% hint style="info" %}

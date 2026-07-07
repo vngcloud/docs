@@ -35,9 +35,9 @@ Chi tiết, vui lòng tham khảo thêm tại [https://docs.api.vngcloud.vn/serv
 
 Ví dụ:
 
-<figure><img src="../../../.gitbook/assets/image (715).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (715).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (714).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (714).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -60,7 +60,7 @@ Những API này cho phép bạn quản lý các bucket
     --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=8b4d67b37ab0ba0c6bb42df8d6451fdb48aba5874a0717798aeee9f4c57b8fe9'
     ```
 
-<figure><img src="../../../.gitbook/assets/image (718).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (718).png" alt=""><figcaption></figcaption></figure>
 
 *   **List Buckets**: Liệt kê tất cả các bucket thuộc về người dùng.
 
@@ -75,7 +75,7 @@ Những API này cho phép bạn quản lý các bucket
     --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=997d9b761262a6827002384dd9ba21b777ec4f26e84dedd164a5866bf78d348a'
     ```
 
-<figure><img src="../../../.gitbook/assets/image (717).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (717).png" alt=""><figcaption></figcaption></figure>
 
 * **Delete Bucket**: Xóa một bucket (chỉ khi bucket rỗng).
   * Đường dẫn: `DELETE /<bucket-name>`
@@ -89,7 +89,7 @@ Những API này cho phép bạn quản lý các bucket
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=e164da98dd0564eea205ec8624d701d8809afab7ab57867e45a3beb227f8a71d'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (719).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (719).png" alt=""><figcaption></figcaption></figure>
 
 * **GET Bucket (List Objects)**: Liệt kê các đối tượng trong một bucket.
   * Đường dẫn: `GET /<bucket-name>`
@@ -103,7 +103,7 @@ Những API này cho phép bạn quản lý các bucket
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=7481242fb41364a753658d7db3b2e95c4b2e10458987e14584dc297330ea7dab'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (720).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (720).png" alt=""><figcaption></figcaption></figure>
 
 * **HEAD Bucket**: Kiểm tra sự tồn tại và quyền truy cập vào bucket.
   * Đường dẫn: `HEAD /<bucket-name>`
@@ -117,7 +117,7 @@ Những API này cho phép bạn quản lý các bucket
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=425119560f45bd0cd7a5a58f6835d189e0cc3d7907cdd72bfd84bd6d88f59ae9'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (721).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (721).png" alt=""><figcaption></figcaption></figure>
 
 ### **2. API Kiểm soát truy cập (Access Control APIs)**
 
@@ -135,7 +135,7 @@ Quản lý quyền truy cập cho các bucket và đối tượng.
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=fd112a35fed96929de946f9c48d050c8f15ca1249ae549d7b86664adde8d81cd'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (722).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (722).png" alt=""><figcaption></figcaption></figure>
 
 * **PUT Bucket ACL**: Thiết lập ACL cho bucket.
   * Đường dẫn: `PUT /<bucket-name>?acl`
@@ -172,7 +172,7 @@ Quản lý quyền truy cập cho các bucket và đối tượng.
       '
       ```
 
-<figure><img src="../../../.gitbook/assets/image (741).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (741).png" alt=""><figcaption></figcaption></figure>
 
 * **GET Object ACL**: Lấy ACL của một đối tượng.
   * Đường dẫn: `GET /<bucket-name>/<object-key>?acl`
@@ -186,7 +186,7 @@ Quản lý quyền truy cập cho các bucket và đối tượng.
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=eb53bff6d55ade68e688ea5af5b44ff9da9afb7b361e5e60563f6d0f3e4c763b'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (130).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (130) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **PUT Bucket Make Public:** Thiết lập Bucket Public
   * Đường dẫn: `GET /<bucket-name>/?publicAccessBlock`
@@ -207,7 +207,7 @@ Quản lý quyền truy cập cho các bucket và đối tượng.
       </PublicAccessBlockConfiguration>'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 * **GET Bucket Make Public:** Lấy thông tin bucket public hay private.
   * Đường dẫn: `GET /<bucket-name>/?publicAccessBlock`
@@ -221,7 +221,7 @@ Quản lý quyền truy cập cho các bucket và đối tượng.
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=9c9624d2ac082b98e6925444ab497746/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=041a0737e3e204ca2941069a3bab021ad54a8eb837fcbfd2ff8d2a3dd647d060'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (742).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (742).png" alt=""><figcaption></figcaption></figure>
 
 ### **3. API Quản Lý Phiên Bản (Versioning)**
 
@@ -243,7 +243,7 @@ Quản lý phiên bản của đối tượng trong bucket.
       </VersioningConfiguration>'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (725).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (725).png" alt=""><figcaption></figcaption></figure>
 
 * **GET Bucket Versioning**: Kiểm tra trạng thái quản lý phiên bản của bucket.
   * Đường dẫn: `GET /<bucket-name>?versioning`
@@ -257,7 +257,7 @@ Quản lý phiên bản của đối tượng trong bucket.
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=b45886dbf42a0a6d613a465e38e33f6e59b548c27f361798ea168335fe8243e3'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (726).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (726).png" alt=""><figcaption></figcaption></figure>
 
 * **GET Object Versions**: Liệt kê các phiên bản của các đối tượng trong bucket.
   * Đường dẫn: `GET /<bucket-name>?versions`
@@ -271,7 +271,7 @@ Quản lý phiên bản của đối tượng trong bucket.
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=1b4454bcc74c22d919121588f4c26ccc921b69544510ae65de3fdb1c5c9ac274'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (727).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (727).png" alt=""><figcaption></figcaption></figure>
 
 ### **4. API Lifecycle**
 
@@ -302,7 +302,7 @@ Quản lý vòng đời cho bucket và đối tượng:
       </LifecycleConfiguration>'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (728).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (728).png" alt=""><figcaption></figcaption></figure>
 
 * **GET Bucket Lifecycle**: Lấy thông tin quy tắc vòng đời của bucket.
   * Đường dẫn: `GET /<bucket-name>?lifecycle`
@@ -316,7 +316,7 @@ Quản lý vòng đời cho bucket và đối tượng:
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=31f4e56f55429f271348de461934dc4c495856330d333559fa6e9ae983800fbd'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (729).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (729).png" alt=""><figcaption></figcaption></figure>
 
 * **DELETE Bucket Lifecycle**: Xóa các quy tắc vòng đời đã thiết lập cho bucket.
   * Đường dẫn: `DELETE /<bucket-name>?lifecycle`
@@ -330,7 +330,7 @@ Quản lý vòng đời cho bucket và đối tượng:
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=c4ab9fbfa8ca73af115142e0a78103e0292e87af6b70a214f21fe020535c3db0'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (730).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (730).png" alt=""><figcaption></figcaption></figure>
 
 ### **5. API CORS**
 
@@ -362,7 +362,7 @@ Quản lý truy cập và sử dụng S3 như một dịch vụ lưu trữ trang
       '
       ```
 
-<figure><img src="../../../.gitbook/assets/image (731).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (731).png" alt=""><figcaption></figcaption></figure>
 
 * **GET Bucket Website**: Lấy cấu hình trang web của bucket.
   * Đường dẫn: `GET /<bucket-name>?cors`
@@ -376,7 +376,7 @@ Quản lý truy cập và sử dụng S3 như một dịch vụ lưu trữ trang
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=7632d687924e286195d06f4024d2307c91ccb6df49f6da27328acdd63da63458'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (732).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (732).png" alt=""><figcaption></figcaption></figure>
 
 * **DELETE Bucket Website**: Xóa cấu hình trang web của bucket.
   * Đường dẫn: `DELETE /<bucket-name>?website`
@@ -390,7 +390,7 @@ Quản lý truy cập và sử dụng S3 như một dịch vụ lưu trữ trang
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=78fdf2ff9a9ec36927431dc1f42a8d5fdcb8fd4a1a2c48794cd45c555de3d6b9'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (733).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (733).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -427,7 +427,7 @@ Thiết lập Object Locked thông qua API.
         </ObjectLockConfiguration>'
         ```
 
-    <figure><img src="../../../.gitbook/assets/image (743).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (743).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -450,7 +450,7 @@ Thiết lập Object Locked thông qua API.
       --data 'datatest'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (734).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (734).png" alt=""><figcaption></figcaption></figure>
 
 * **GET Object**: Lấy một đối tượng từ S3.
   * Đường dẫn: `GET /<bucket-name>/<object-key>`
@@ -464,7 +464,7 @@ Thiết lập Object Locked thông qua API.
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=5d1d085388c0464652e30d68b894e4ff1a6ade86c8f04eed4f9fba7c5968676d'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (735).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (735).png" alt=""><figcaption></figcaption></figure>
 
 * **DELETE Object**: Xóa một đối tượng khỏi S3.
   * Đường dẫn: `DELETE /<bucket-name>/<object-key>`
@@ -479,7 +479,7 @@ Thiết lập Object Locked thông qua API.
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-bypass-governance-retention;x-amz-content-sha256;x-amz-date, Signature=54babdc95afd251946a37352d569f825cc5bce8c7b900c0c03874fb3554fdf6c'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (739).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (739).png" alt=""><figcaption></figcaption></figure>
 
 **Chú ý:**
 
@@ -506,7 +506,7 @@ curl --location --request DELETE 'https://hcm04.vstorage.vngcloud.vn/demobucket/
       --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=0fe5fc5caca290919c3782c74f793c0f7cfe36f4f2c7829de8b895bab51ac7d1'
       ```
 
-<figure><img src="../../../.gitbook/assets/image (736).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (736).png" alt=""><figcaption></figcaption></figure>
 
 * **COPY Object**: Sao chép một đối tượng từ một vị trí S3 này sang một vị trí khác.
   * Request: `PUT /<destination-bucket>/<destination-object-key>` với header `x-amz-copy-source`.
@@ -522,4 +522,4 @@ curl --location --request PUT 'https://hcm04.vstorage.vngcloud.vn/demobucket01/d
 --header 'Authorization: AWS4-HMAC-SHA256 Credential=f8502b7bf7ca4773c68899d9efd85474/20240829/HCM04/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-copy-source;x-amz-date;x-amz-object-lock-legal-hold, Signature=bf53eedc8b407de21d94c73191940f2257a6c9759f411e844c912de3c2b26ee9'
 ```
 
-<figure><img src="../../../.gitbook/assets/image (737).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (737).png" alt=""><figcaption></figcaption></figure>

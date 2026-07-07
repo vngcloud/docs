@@ -11,9 +11,9 @@ Tham khảo hướng dẫn đăng nhập vào GreenNode [tại đây](../../iden
 
 ## Bước 2: Tạo Cụm Kafka
 
-1.  Nhấp vào nút "Tạo Cụm Kafka".&#x20;
+1.  Nhấp vào nút "Tạo Cụm Kafka".
 
-    <figure><img src="../../.gitbook/assets/image (744).png" alt="" width="228"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (744).png" alt="" width="228"><figcaption></figcaption></figure>
 2. Điền thông tin sau:
    * **Tên:** Đặt tên cho cụm Kafka của bạn để dễ nhận biết và quản lý.
    * **Kafka Version:** Chọn phiên bản Kafka phù hợp với nhu cầu của bạn. Các phiên bản khác nhau có thể có tính năng và hiệu suất khác nhau.
@@ -24,16 +24,16 @@ Tham khảo hướng dẫn đăng nhập vào GreenNode [tại đây](../../iden
    * **Access Method Control (mTLS, SASL):** Chọn phương thức xác thực và ủy quyền cho client kết nối đến cụm Kafka. mTLS sử dụng chứng chỉ client và server, SASL sử dụng tên người dùng và mật khẩu.
    * **Encryption Mode:** Chọn chế độ mã hóa dữ liệu. Mặc định, mã hóa in transit (dữ liệu được mã hóa khi truyền giữa client và broker) và within cluster (dữ liệu được mã hóa khi lưu trữ trên các broker) được bật.
    * **Config Group:** Chọn nhóm cấu hình áp dụng cho cụm Kafka. Nhóm cấu hình chứa các thiết lập chi tiết về hoạt động của Kafka.
-3.  Nhấp vào nút "Tạo" để bắt đầu quá trình tạo cụm Kafka.&#x20;
+3.  Nhấp vào nút "Tạo" để bắt đầu quá trình tạo cụm Kafka.
 
-    <figure><img src="../../.gitbook/assets/image (745).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (745).png" alt=""><figcaption></figcaption></figure>
 
 ## Bước 3: Tạo Topic
 
 1. Sau khi cụm Kafka được tạo thành công, truy cập vào trang quản lý cụm Kafka đó.
 2. Tìm và nhấp vào phần "Tạo Topic".
 
-<figure><img src="../../.gitbook/assets/image (748).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (748).png" alt=""><figcaption></figcaption></figure>
 
 3. Điền thông tin sau:
 
@@ -48,14 +48,14 @@ Tham khảo hướng dẫn đăng nhập vào GreenNode [tại đây](../../iden
 
 1. Trong trang quản lý cụm Kafka, tìm và nhấp vào phần "Tạo Kafka User".
 
-<figure><img src="../../.gitbook/assets/image (749).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (749).png" alt=""><figcaption></figcaption></figure>
 
 2. Điền thông tin sau:
 
 * **Tên:** Đặt tên cho Kafka user.
 * **Phân quyền:** Tại phần permission, nhấn "Add Permission" để chọn các quyền Produce (ghi dữ liệu vào topic) và Consume (đọc dữ liệu từ topic) cho từng topic mà user này cần truy cập.
 
-<figure><img src="../../.gitbook/assets/image (750).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (750).png" alt=""><figcaption></figcaption></figure>
 
 * **Phương thức Truy cập:** Chọn phương thức truy cập cho Kafka user (mTLS hoặc SASL) tùy thuộc vào phương thức được bật cho cụm Kafka.
 
@@ -89,9 +89,9 @@ wget https://archive.apache.org/dist/kafka/3.7.0/kafka_2.13-3.7.0.tgz
 tar -xzf kafka_2.13-3.7.0.tgz
 ```
 
-5.  Tiếp theo, tải về các chứng chỉ TLS để truy cập đến cụm Kafka.&#x20;
+5.  Tiếp theo, tải về các chứng chỉ TLS để truy cập đến cụm Kafka.
 
-    <figure><img src="../../.gitbook/assets/image (746).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (746).png" alt=""><figcaption></figcaption></figure>
 6. Tại server vừa khởi tạo, tải lên và giải nén các chứng chỉ TLS và unzip theo lệnh bên dưới:
 
 Lưu ý: User ID sẽ là tên thư mục sau khi giải nén chứng chỉ vừa tải về
@@ -119,7 +119,7 @@ Bạn cần cho phép server này truy cập đến cụm kafka như là một p
 
 Lưu ý: Port 9094 với mTLS và 9096 với SASL
 
-<figure><img src="../../.gitbook/assets/image (751).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (751).png" alt=""><figcaption></figcaption></figure>
 
 8. Produce message đến Kafka topic
 
@@ -154,4 +154,3 @@ Example
 1. Khi bạn không còn nhu cầu sử dụng cụm Kafka, hãy truy cập vào trang quản lý cụm Kafka.
 2. Tìm và nhấp vào nút "Xóa Cụm Kafka".
 3. Xác nhận việc xóa cụm Kafka để tránh mất dữ liệu và chi phí không cần thiết.
-

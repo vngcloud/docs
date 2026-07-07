@@ -8,7 +8,7 @@
 
 3\. Chọn biểu tượng **Action** và chọn **Configure event notification.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 4\. Chọn **Create an Event notification**.
 
@@ -32,11 +32,11 @@
   * **Date-based partitioning**:
     * File JSON sẽ được lưu trong các thư mục theo từng phần của ngày (năm/tháng/ngày), giúp phân chia dữ liệu theo từng ngày để dễ dàng truy xuất. Phù hợp nếu bạn cần tổ chức dữ liệu theo ngày để quản lý dễ hơn trong trường hợp có nhiều báo cáo.
     * Cấu trúc thư mục và tên file: `[Bucket]/[YYYY]/[MM]/[DD]/[YYYY]-[MM]-[DD]-[hh]-[mm]`.
-    * Ví dụ: `bucketB/2023/03/01/2023-03-01-21-32`&#x20;
+    * Ví dụ: `bucketB/2023/03/01/2023-03-01-21-32`
 
-<figure><img src="../../../../../../.gitbook/assets/image (8) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (8) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (9) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (9) (4).png" alt=""><figcaption></figcaption></figure>
 
 5\. Chọn **Create event notification** để khởi tạo event này.
 
