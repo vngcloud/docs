@@ -1,11 +1,11 @@
 # Service Health
 
 * Provide information about the health status of GreenNode services.
-* GreenNode users can proactively visit the "[Service Health](https://health.vngcloud.vn/)" page to check the health of the GreenNode services they are using without needing to log in or register for an account.
+* GreenNode users can proactively visit the "[Service Health](https://health.greennode.ai/)" page to check the health of the GreenNode services they are using without needing to log in or register for an account.
 
 ### View the GreenNode Service Health Dashboard
 
-* Navigate to the page [https://health.vngcloud.vn/](https://health.vngcloud.vn/)
+* Navigate to the page [https://health.greennode.ai](https://health.greennode.ai/)
 * Information about service health is displayed for the last 14 days, with incidents or service issues listed by default for this period. Users can choose to view.
 * **Summary Information**
   * Total number of services available on GreenNode

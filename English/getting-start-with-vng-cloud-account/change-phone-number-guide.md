@@ -6,7 +6,7 @@
 
 **Step 2:** Enter the phone number you want to change to. Then, click "**Send OTP**" to receive the OTP code from the email you have registered.
 
-![](<../.gitbook/assets/image (488).png>)<br>
+![](<../.gitbook/assets/image (487).png>)<br>
 
 Our system will send you an email titled "**GreenNode - OTP Update Phone Number.**" Copy the OTP code from the email and paste it into the "**Enter OTP**" field.
 

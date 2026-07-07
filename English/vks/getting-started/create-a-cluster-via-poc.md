@@ -15,8 +15,8 @@ Conditions for using POC resources:
 
 To initialize a **Cluster** and **Deploy** a **Workload**, you need:
 
-* At least 1 **VPC** and 1 **Subnet** in **ACTIVE** state. If you do not have a VPC or Subnet yet, please create one following the instructions [here.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/)
-* At least 1 **SSH** key in **ACTIVE** state. If you do not have any SSH key, please create one following the instructions [here.](../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
+* At least 1 **VPC** and 1 **Subnet** in **ACTIVE** state. If you do not have a VPC or Subnet yet, please create one following the instructions [here.](https://github.com/vngcloud/docs/blob/main/English/vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/README.md)
+* At least 1 **SSH** key in **ACTIVE** state. If you do not have any SSH key, please create one following the instructions [here.](https://github.com/vngcloud/docs/blob/main/English/vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
 * Installed and configured **kubectl** on your device. Please refer [here](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) if you are not sure how to install and use kubectl. Additionally, you should not use a kubectl version that is too old; we recommend using a kubectl version that differs by no more than one version from the cluster version.
 
 ***

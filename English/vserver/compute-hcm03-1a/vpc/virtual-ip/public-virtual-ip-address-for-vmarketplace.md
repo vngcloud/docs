@@ -81,17 +81,17 @@ Fill in the required fields.
 
 Verify the VIP in pfSense.
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Image (4).png" alt=""><figcaption></figcaption></figure>
 
 **Step 4: Create an outbound NAT rule to egress to the Internet via a specific IP**
 
 1. Switch to **Manual Outbound NAT** mode.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Image (5).png" alt=""><figcaption></figcaption></figure>
 
 2. Create a NAT rule.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Image (6).png" alt=""><figcaption></figcaption></figure>
 
 3. Configure the NAT rule.
 

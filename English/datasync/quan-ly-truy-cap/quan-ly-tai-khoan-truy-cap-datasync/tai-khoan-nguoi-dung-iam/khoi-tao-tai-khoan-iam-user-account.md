@@ -1,4 +1,4 @@
-# Khởi tạo tài khoản IAM User Account
+# Create an IAM User Account
 
 Để khởi tạo tài khoản người dùng IAM, trước tiên bạn vui lòng tham khảo hướng dẫn các bước thực hiện tại [đây.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805240) Bên dưới là hướng dẫn chi tiết của chúng tôi nhằm giúp bạn khởi tạo tài khoản người dùng IAM để truy cập vào tài nguyên của DataSync:
 
@@ -9,8 +9,8 @@
 5. Chọn **Add a username**.
 6. Tại mục **Account password**, bạn có thể:
    1. Nhập **password** mà bạn mong muốn. Password phải dài từ 8 (tối thiểu) đến 50 (tối đa) ký tự và phải bao gồm ít nhất 1 ký tự viết hoa (A-Z), 1 ký tự viết thường (a-z), 1 ký tự số (0-9) và 1 ký tự đặc biệt (!@#$%,...).
-   2. Chọn **Auto-generate** nếu bạn muốn hệ thống tự động tạo mật khẩu cho bạn.&#x20;
+   2. Chọn **Auto-generate** nếu bạn muốn hệ thống tự động tạo mật khẩu cho bạn.
 7. Chọn **Copy** để sao chép mật khẩu. Bạn bắt buộc phải thu thập được thông tin này để có thể truy cập vào DataSync sử dụng IAM User Account.
-8. Chọn **Create User Account.**&#x20;
+8. Chọn **Create User Account.**
 
-Sau khi bạn thực hiện 8 bước bên trên, một tài khoản IAM User Account đã được khởi tạo. Lúc này, bạn đã có thể sử dụng nó tuy nhiên IAM User Account vừa tạo chưa có policy nên mọi truy cập đều sẽ bị từ chối. Do đó, bạn cần tiếp tục tạo policy theo hướng dẫn tại [Khởi tạo policy cho IAM User Account](../../../../vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-nguoi-dung-iam/khoi-tao-policy-cho-iam-user-account.md).
+Sau khi bạn thực hiện 8 bước bên trên, một tài khoản IAM User Account đã được khởi tạo. Lúc này, bạn đã có thể sử dụng nó tuy nhiên IAM User Account vừa tạo chưa có policy nên mọi truy cập đều sẽ bị từ chối. Do đó, bạn cần tiếp tục tạo policy theo hướng dẫn tại [Khởi tạo policy cho IAM User Account](https://github.com/vngcloud/docs/blob/main/English/vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-nguoi-dung-iam/khoi-tao-policy-cho-iam-user-account.md).

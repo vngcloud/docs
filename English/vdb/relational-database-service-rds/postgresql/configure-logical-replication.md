@@ -1,27 +1,27 @@
-# Configure Logical Replication for PostgreSQL Cluster
+# Configure Logical Replication
 
 > This guide helps you set up **PostgreSQL Logical Replication** — replicating data changes in real time from a source cluster (Publisher) to a destination cluster (Subscriber). One or both clusters can be hosted on GreenNode vDB.
 
----
+***
 
 ## Prerequisites
 
-- At least one of the two clusters (Publisher or Subscriber) must be a PostgreSQL Cluster on GreenNode vDB (**version 16 or 17**).
-- Both clusters must run the **same major version** of PostgreSQL.
-- The user running SQL commands must be the **owner** of the tables to replicate (to create a Publication).
+* At least one of the two clusters (Publisher or Subscriber) must be a PostgreSQL Cluster on GreenNode vDB (**version 16 or 17**).
+* Both clusters must run the **same major version** of PostgreSQL.
+* The user running SQL commands must be the **owner** of the tables to replicate (to create a Publication).
 
 {% hint style="info" %}
 GreenNode vDB supports Logical Replication for **PostgreSQL 16 and 17** only.
 {% endhint %}
 
----
+***
 
 ## How Logical Replication Works
 
-![Logical Replication architecture](../../../../.gitbook/assets/vdb-logical-replication-architecture.png)
+![Logical Replication architecture](../../../.gitbook/assets/vdb-logical-replication-architecture.png)
 
-- **Publisher**: the source cluster holding the original data. You create a `PUBLICATION` to define which tables are replicated.
-- **Subscriber**: the destination cluster receiving changes. You create a `SUBSCRIPTION` to connect to the Publisher and pull data.
+* **Publisher**: the source cluster holding the original data. You create a `PUBLICATION` to define which tables are replicated.
+* **Subscriber**: the destination cluster receiving changes. You create a `SUBSCRIPTION` to connect to the Publisher and pull data.
 
 **Synchronization happens in two phases:**
 
@@ -29,10 +29,10 @@ GreenNode vDB supports Logical Replication for **PostgreSQL 16 and 17** only.
 2. **Streaming**: After the initial sync completes, only incremental changes (INSERT, UPDATE, DELETE) are replicated in real time.
 
 {% hint style="info" %}
-You **do not need to dump data** — Logical Replication handles that automatically. However, you **must create the table structure (schema) on the Subscriber** before creating the Subscription, because PostgreSQL does not replicate DDL. See [Step B.3](#step-b3-create-tables-on-subscriber) for instructions.
+You **do not need to dump data** — Logical Replication handles that automatically. However, you **must create the table structure (schema) on the Subscriber** before creating the Subscription, because PostgreSQL does not replicate DDL. See [Step B.3](configure-logical-replication.md#step-b3-create-tables-on-subscriber) for instructions.
 {% endhint %}
 
----
+***
 
 ## Part A: vDB PostgreSQL Cluster as Publisher
 
@@ -56,24 +56,24 @@ When managing Subscriptions, do not delete or modify replication slots that do n
 
 Logical Replication requires three PostgreSQL parameters to be correctly configured on the **Publisher cluster**.
 
-| Parameter | Required value | Description |
-|---|---|---|
-| `wal_level` | `logical` | Required — default is `replica`, which is not sufficient for logical replication |
-| `max_replication_slots` | ≥ total slots needed | Total replication slots for all replicas, subscriptions, and CDC connectors |
-| `max_wal_senders` | ≥ total senders needed | Total WAL sender processes (typically equals `max_replication_slots`) |
+| Parameter               | Required value         | Description                                                                      |
+| ----------------------- | ---------------------- | -------------------------------------------------------------------------------- |
+| `wal_level`             | `logical`              | Required — default is `replica`, which is not sufficient for logical replication |
+| `max_replication_slots` | ≥ total slots needed   | Total replication slots for all replicas, subscriptions, and CDC connectors      |
+| `max_wal_senders`       | ≥ total senders needed | Total WAL sender processes (typically equals `max_replication_slots`)            |
 
 **How to calculate `max_replication_slots` and `max_wal_senders`:**
 
-| Component | Slots + senders needed |
-|---|---|
-| Each replica node in the cluster | 1 + 1 |
-| Each Subscription (logical replication) | 1 + 1 |
-| Each CDC connector (Debezium) | 1 + 1 |
+| Component                               | Slots + senders needed |
+| --------------------------------------- | ---------------------- |
+| Each replica node in the cluster        | 1 + 1                  |
+| Each Subscription (logical replication) | 1 + 1                  |
+| Each CDC connector (Debezium)           | 1 + 1                  |
 
 **Example:** 3-node cluster (2 replicas) + 1 subscription → `max_replication_slots = 3`, `max_wal_senders = 3`.
 
 {% hint style="warning" %}
-Changing `wal_level`, `max_replication_slots`, and `max_wal_senders` requires a **cluster restart**. Update all three parameters at the same time to trigger only one restart. See [PostgreSQL Cluster Parameters](postgresql-cluster-parameters.md) for instructions.
+Changing `wal_level`, `max_replication_slots`, and `max_wal_senders` requires a **cluster restart**. Update all three parameters at the same time to trigger only one restart. See [PostgreSQL Cluster Parameters](https://github.com/vngcloud/docs/blob/main/English/vdb/relational-database-service-rds/postgresql/postgresql-cluster-parameters.md) for instructions.
 {% endhint %}
 
 ### Step A.3: Create a Publication
@@ -97,7 +97,7 @@ SELECT pubname, puballtables, pubinsert, pubupdate, pubdelete
 FROM pg_publication;
 ```
 
----
+***
 
 ## Part B: vDB PostgreSQL Cluster as Subscriber
 
@@ -192,21 +192,21 @@ CREATE SUBSCRIPTION my_subscription
     PUBLICATION <publication_name>;
 ```
 
-| Parameter | Description |
-|---|---|
-| `host` | Publisher hostname |
-| `port` | PostgreSQL connection port |
-| `dbname` | Source database name on Publisher |
-| `user` | Username with replication rights on Publisher |
-| `password` | Password with replication rights on Publisher |
-| `sslmode` | SSL encryption mode |
-| `publication_name` | Publication name on Publisher |
+| Parameter          | Description                                   |
+| ------------------ | --------------------------------------------- |
+| `host`             | Publisher hostname                            |
+| `port`             | PostgreSQL connection port                    |
+| `dbname`           | Source database name on Publisher             |
+| `user`             | Username with replication rights on Publisher |
+| `password`         | Password with replication rights on Publisher |
+| `sslmode`          | SSL encryption mode                           |
+| `publication_name` | Publication name on Publisher                 |
 
 {% hint style="warning" %}
 After creating the Subscription, PostgreSQL performs an **initial sync** — copying all existing data from the Publisher to the Subscriber. This may take minutes to hours depending on data size.
 {% endhint %}
 
----
+***
 
 ## Verify Replication Status
 
@@ -226,13 +226,13 @@ FROM pg_stat_subscription;
 
 Replication is working correctly when `state = streaming` on the Publisher and, on the Subscriber, `pid` is non-`NULL` with `received_lsn` advancing.
 
----
+***
 
 ## Result
 
 Once complete, data from the tables in your Publication on the Publisher will be continuously synchronized to the Subscriber in real time. All changes (INSERT, UPDATE, DELETE) are applied automatically.
 
-| I want to... | Go to |
-|---|---|
-| Set up CDC with Debezium | [Set Up CDC with Debezium](set-up-cdc-with-debezium.md) |
-| View cluster configuration parameters | [PostgreSQL Cluster Parameters](postgresql-cluster-parameters.md) |
+| I want to...                          | Go to                                                                                                                                                               |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Set up CDC with Debezium              | [Set Up CDC with Debezium](set-up-cdc-with-debezium.md)                                                                                                             |
+| View cluster configuration parameters | [PostgreSQL Cluster Parameters](https://github.com/vngcloud/docs/blob/main/English/vdb/relational-database-service-rds/postgresql/postgresql-cluster-parameters.md) |

@@ -156,5 +156,5 @@ From the Database list page, click the **Action (⋮)** icon next to a Redis Clu
 
 ## Next Steps
 
-* [View limitations and constraints for Redis Cluster](redis-cluster-limitations.md)
+* [View limitations and constraints for Redis Cluster](https://github.com/vngcloud/docs/blob/main/English/vdb/memorystore-database-service-mds/redis-cluster/redis-cluster-limitations.md)
 * [Understand the architecture and compare with Single-node](./)

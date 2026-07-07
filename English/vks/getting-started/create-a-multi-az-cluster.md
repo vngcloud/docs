@@ -20,7 +20,7 @@ To create a Multi-AZ Cluster, you need to ensure the following prerequisites:
 Multi-AZ Control Plane **only supports VPCs with DNS enabled**. If a VPC does not have DNS enabled, it will **not appear** in the dropdown when creating a Multi-AZ Cluster.
 {% endhint %}
 
-To enable DNS for your VPC, please do so in the vServer portal following the guide [here](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/).
+To enable DNS for your VPC, please do so in the vServer portal following the guide [here](https://github.com/vngcloud/docs/blob/main/English/vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/README.md).
 
 ### 2. Prepare Subnets
 
@@ -44,8 +44,8 @@ Example of **invalid** subnet configuration:
 
 ### 3. Other prerequisites
 
-* At least 1 **VPC** and 1 **Subnet** in **ACTIVE** state. If you do not have a VPC or Subnet yet, please create one following the guide [here.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/)
-* At least 1 **SSH key** in **ACTIVE** state. If you do not have an SSH key, please create one following the guide [here.](../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
+* At least 1 **VPC** and 1 **Subnet** in **ACTIVE** state. If you do not have a VPC or Subnet yet, please create one following the guide [here.](https://github.com/vngcloud/docs/blob/main/English/vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/README.md)
+* At least 1 **SSH key** in **ACTIVE** state. If you do not have an SSH key, please create one following the guide [here.](https://github.com/vngcloud/docs/blob/main/English/vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
 
 ***
 

@@ -70,8 +70,8 @@ There are multiple ways to connect to the Kafka cluster. The following guide wil
 
 Note: The installation guide below is performed on an Ubuntu 22.04 client server.
 
-1. Initialize a Server. See detailed server initialization guide [here](../../vserver/compute-hcm03-1a/server/tao-may-chu-bang-bang-dieu-khien.md).
-2. Connect to the newly initialized server. See detailed guide [here.](../../vserver/compute-hcm03-1a/server/ket-noi-vao-may-chu-ao/)
+1. Initialize a Server. See detailed server initialization guide [here](https://github.com/vngcloud/docs/blob/main/English/vserver/compute-hcm03-1a/server/tao-may-chu-bang-bang-dieu-khien.md).
+2. Connect to the newly initialized server. See detailed guide [here.](https://github.com/vngcloud/docs/blob/main/English/vserver/compute-hcm03-1a/server/ket-noi-vao-may-chu-ao/README.md)
 3. Install Java and necessary packages on the server with the following command:
 
 ```bash

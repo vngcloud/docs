@@ -32,7 +32,7 @@ To move an object, right-click on the object you want to move and select **Copy 
 
 To rename an object, right-click on the object you want to move and select **Rename** as shown below.
 
-<figure><img src="../../../../../.gitbook/assets/image (15) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Set up tag object <a href="#thiet-lap-tag-object" id="thiet-lap-tag-object"></a>
 

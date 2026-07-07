@@ -15,7 +15,7 @@
 
 **Step 3:** Save account information
 
-* Click Button "Save Setting" to complete updating information process.&#x20;
+* Click Button "Save Setting" to complete updating information process.
 * Click " I understand and continue" . You will receive the message confirming the successful account update.
 
 ***
@@ -54,7 +54,7 @@ In Case, you need de-active account, you could implement the following step:
 
 **Step 2**: Click " **De-active my account**"
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3**: Input protect code and click "**De-active my account**" to confirm
 
