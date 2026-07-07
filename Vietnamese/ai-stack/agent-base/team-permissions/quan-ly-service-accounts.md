@@ -12,7 +12,7 @@
 
 ## Mở tab Service Accounts
 
-Vào [Team & Permissions](https://aiplatform.console.vngcloud.vn/team-permissions) → tab **Service Accounts**
+Vào [Team & Permissions](https://aiplatform.console.greennode.ai/team-permissions) → tab **Service Accounts**
 
 Danh sách hiển thị:
 

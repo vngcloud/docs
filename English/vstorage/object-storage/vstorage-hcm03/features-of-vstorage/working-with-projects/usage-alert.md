@@ -4,7 +4,7 @@ The **Usage alert** feature in vStorage allows you to set up automatic alert bas
 
 To set up automatic alert for a project, you can:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. In the project that needs to set Usage alert, select the icon <img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fxle5SMO5J6MplFpJZC74%252Fimage.png%3Falt%3Dmedia%26token%3De9cdb754-9a75-4868-90bf-67e670048eb5&#x26;width=27&#x26;dpr=4&#x26;quality=100&#x26;sign=1f9a3808&#x26;sv=1" alt="" data-size="line"> then select **Usage alert** and continue to select **Configure Usage alert**.
 3. At the **Usage alert** configuration screen , set up the necessary parameters for **Usage alert**. Specifically:
 

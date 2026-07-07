@@ -32,7 +32,7 @@ N/A : không hỗ trợ loại audit logs này
 
 Mặc định GreenNode sẽ không bật sẵn tính năng Audit Logs, khách hàng cần thực hiện các bước dưới đây để kích hoạt:
 
-1. Truy cập vào trang Audit Logs của IAM Portal: [https://iam.console.vngcloud.vn/audit-logs](https://iam.console.vngcloud.vn/audit-logs)
+1. Truy cập vào trang Audit Logs của IAM Portal: [https://iam.console.greennode.ai/audit-logs](https://iam.console.greennode.ai/audit-logs)
 2. Chọn **Set default configuration,** popup thiết lập sẽ hiển thị cho phép bạn chọn bật ADMIN\_WRITE hay SYSTEM\_EVENT
 3. Chọn kích hoạt bật loại audit logs ADMIN\_WRITE hay SYSTEM\_EVENT mà bạn mong muốn
 4. Nhấn nút **Save** để kích hoạt
@@ -47,7 +47,7 @@ Khi đã kích hoạt Audit Logs, hệ thống sẽ bắt đầu lưu các Audit
 
 Để xem các Audit Logs đã kích hoạt, bạn cần làm theo các hướng dẫn sau:
 
-1. Truy cập mục Log Search của vMonitor Logs: [https://hcm-3.console.vngcloud.vn/vmonitor/log/search](https://hcm-3.console.vngcloud.vn/vmonitor/log/search)
+1. Truy cập mục Log Search của vMonitor Logs: [https://hcm-3.console.greennode.ai/vmonitor/log/search](https://hcm-3.console.greennode.ai/vmonitor/log/search)
 2. Chọn **Log Project: required** để xem các Audit Logs đã được lưu trữ. Ví dụ như hình dưới đây là hành động 1 root user account tạo Security Group thuộc vServer tại thời điểm 19/06/2023 17:51:57 đã được ghi nhận lại.
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59806595/image2023-6-19_18-8-35.png?version=1&#x26;modificationDate=1690877516000&#x26;api=v2" alt=""><figcaption></figcaption></figure>

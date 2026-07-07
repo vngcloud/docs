@@ -2,7 +2,7 @@
 
 > Access Control là nền tảng của AgentBase. Nó bao gồm hai vấn đề liên quan mật thiết: **Agent Identity** (đăng ký agent của bạn trên nền tảng) và **Auth & Secrets** (lưu trữ và tiêm credential mà agent của bạn cần để gọi các dịch vụ bên ngoài).
 
-* **Portal:** https://aiplatform.console.vngcloud.vn/access-control
+* **Portal:** https://aiplatform.console.greennode.ai/access-control
 * **API Base URL:** `https://agentbase.api.vngcloud.vn/identity/api/v1`
 
 ***
@@ -62,7 +62,7 @@ Hệ thống auth hỗ trợ ba loại credential:
 
 #### Tạo một Identity
 
-1. Mở https://aiplatform.console.vngcloud.vn/access-control
+1. Mở https://aiplatform.console.greennode.ai/access-control
 2. Nhấn **"Create Identity"**
 3. Điền thông tin:
    * **Name** (bắt buộc): ví dụ, `my-order-agent` — chữ thường, chữ cái số và dấu gạch ngang
@@ -73,17 +73,17 @@ Hệ thống auth hỗ trợ ba loại credential:
 
 #### Xem danh sách Identity
 
-1. Mở https://aiplatform.console.vngcloud.vn/access-control
+1. Mở https://aiplatform.console.greennode.ai/access-control
 2. Tất cả các identity được hiển thị trong danh sách phân trang
 
 #### Xem chi tiết Identity
 
-1. Mở https://aiplatform.console.vngcloud.vn/access-control
+1. Mở https://aiplatform.console.greennode.ai/access-control
 2. Nhấn vào tên identity
 
 #### Cập nhật một Identity
 
-1. Mở https://aiplatform.console.vngcloud.vn/access-control
+1. Mở https://aiplatform.console.greennode.ai/access-control
 2. Nhấn vào tên identity → **"Edit"**
 3. Cập nhật mô tả hoặc allowed return URLs → **Save**
 
@@ -91,7 +91,7 @@ Hệ thống auth hỗ trợ ba loại credential:
 
 > **Lưu ý:** Xóa một identity là **không thể khôi phục**. Hãy dừng tất cả các runtime liên kết và xóa tất cả cấu hình auth trước khi xóa.
 
-1. Mở https://aiplatform.console.vngcloud.vn/access-control
+1. Mở https://aiplatform.console.greennode.ai/access-control
 2. Tìm identity → **Delete** → xác nhận
 
 ***
@@ -248,20 +248,20 @@ Một **agent identity** phải tồn tại trước khi tạo auth provider. N�
 
 #### Static API Key Provider
 
-1. Mở https://aiplatform.console.vngcloud.vn/access-control → **"Auth Providers"**
+1. Mở https://aiplatform.console.greennode.ai/access-control → **"Auth Providers"**
 2. Nhấn **"Create Provider"** → chọn **"Static API Key"**
 3. Điền **Name** (ví dụ, `openai-key`) và **giá trị API Key**
 4. Nhấn **Create**
 
 #### Delegated API Key Provider
 
-1. Mở https://aiplatform.console.vngcloud.vn/access-control → **Auth Providers**
+1. Mở https://aiplatform.console.greennode.ai/access-control → **Auth Providers**
 2. Nhấn **"Create Provider"** → chọn **"Delegated API Key"**
 3. Nhập **Name** (ví dụ, `user-openai-key`) → **Create**
 
 #### OAuth2 Provider
 
-1. Mở https://aiplatform.console.vngcloud.vn/access-control → **Auth Providers**
+1. Mở https://aiplatform.console.greennode.ai/access-control → **Auth Providers**
 2. Nhấn **"Create Provider"** → chọn **"OAuth2"**
 3. Điền: **Name**, **Client ID**, **Client Secret**, **Authorization URL**, **Token URL**
 4. Nhấn **Create** — phản hồi bao gồm một **Callback URL** để đăng ký trong ứng dụng OAuth2 của bạn
@@ -539,7 +539,7 @@ Các trường **AgentIdentityResponse**:
 | Lỗi                                  | Nguyên nhân                           | Cách khắc phục                                                                  |
 | ------------------------------------ | ------------------------------------- | ------------------------------------------------------------------------------- |
 | 401 Unauthorized                     | IAM token hết hạn hoặc không hợp lệ   | Lấy lại token với credential hợp lệ                                             |
-| 403 Forbidden                        | Service account thiếu quyền           | Gắn `AgentBaseFullAccess` tại https://iam.console.vngcloud.vn                   |
+| 403 Forbidden                        | Service account thiếu quyền           | Gắn `AgentBaseFullAccess` tại https://iam.console.greennode.ai                   |
 | 409 Conflict                         | Tên identity hoặc provider đã tồn tại | Chọn một tên khác                                                               |
 | Lỗi xác thực tên                     | Tên không khớp `^[a-zA-Z0-9_-]+$`     | Chỉ sử dụng chữ cái, số, dấu gạch dưới và dấu gạch ngang. 3–50 ký tự            |
 | 404 Not Found                        | Tên provider không tồn tại            | Xác minh bằng thao tác `list`                                                   |

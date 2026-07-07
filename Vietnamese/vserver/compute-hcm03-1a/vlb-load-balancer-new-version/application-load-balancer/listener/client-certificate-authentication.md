@@ -21,7 +21,7 @@ Tính năng "**Client Certificate Authentication**" là một phần quan trọn
 
 **Hướng dẫn bật/tắt Client Certificate Authentication**
 
-1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb**](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb**](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)
 2. **Tại trang chủ Load Balancer, click chọn Load Balancer cần chỉnh sửa.**
 3. **Tại phần thông tin chi tiết Load Balancer, chọn tab Listener.**
 4. **Nhấn biểu tượng Edit tại HTTPS Listener cần bật/tắt tính năng Client CA.**

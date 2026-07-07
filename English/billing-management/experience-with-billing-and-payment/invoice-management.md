@@ -43,7 +43,7 @@ For example, the formula for calculating the invoice value when initiating a Ser
 **For postpaid users**&#x20;
 
 * The amount on the invoice is the amount calculated based on the actual cost of using resources.
-* The usage report will be exported at the end of the month on the user portal: [https://dashboard.console.vngcloud.vn/usage-report](https://dashboard.console.vngcloud.vn/usage-report).
+* The usage report will be exported at the end of the month on the user portal: [https://dashboard.console.greennode.ai/usage-report](https://dashboard.console.greennode.ai/usage-report).
 * To understand more about how to calculate the cost of using resources in a month, please refer to this link.
 
 ## Payment due date&#x20;
@@ -63,5 +63,5 @@ After the service invoice is generated at the end of the month, users can pay in
 
 We provide a user portal website to help users manage usage invoices in the most efficient and effective way:&#x20;
 
-* Access the invoice management page here: [https://dashboard.console.vngcloud.vn/billing-report](https://dashboard.console.vngcloud.vn/billing-report)
+* Access the invoice management page here: [https://dashboard.console.greennode.ai/billing-report](https://dashboard.console.greennode.ai/billing-report)
 * To see more instructions on how to use and the features of the invoice management page, please refer to this link

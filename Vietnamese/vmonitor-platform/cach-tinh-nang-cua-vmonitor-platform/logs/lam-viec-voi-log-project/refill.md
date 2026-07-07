@@ -4,7 +4,7 @@ Sau một thời gian bạn sử dụng tính năng Archive mà chúng tôi cung
 
 Để sử dụng tính năng Refill, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Log**.
 3. Chọn **Log project.**
 4. Chọn **Log project name** mà bạn muốn thực hiện **Refill** vào, dữ liệu sau khi refill sẽ được lưu trữ trong Log Project này.

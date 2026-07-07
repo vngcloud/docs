@@ -21,7 +21,7 @@ Trước khi thao tác với kubeconfig, account IAM-user cần được cấp �
 
 > _Account **IAM-user** cần quyền `RequestKubeconfig` — xem **Lưu ý cho account IAM-user** ở đầu trang._
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Bước 1:** Truy cập vào [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Bước 2:** Tại màn hình **Overview**, chọn menu **Kubernetes Cluster.**
 

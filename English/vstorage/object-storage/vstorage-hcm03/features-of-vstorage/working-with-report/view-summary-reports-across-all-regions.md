@@ -11,7 +11,7 @@ To view summary reports across all regions, you can:
 
 &#x20;Use vStorage Portal
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 
 2\. Select **Reports** and then choose the desired time range for data aggregation in the report. By default, we display reports for the current day. You can adjust the time range to view reports for up to 3 months by:
 

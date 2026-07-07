@@ -8,7 +8,7 @@ If you do not have a GreenNode account, you need to register for an account to u
 Learn how to access the GreenNode Portal using a Root User Account or an IAM User Account. Refer to the guide on [How to Log in to GreenNode](https://docs.vngcloud.vn/vng-cloud-document/identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud).
 
 1. **Access AI Platform**\
-   Access AI Platform via the following link: [https://aiplatform.console.vngcloud.vn/](https://aiplatform.console.vngcloud.vn/)
+   Access AI Platform via the following link: [https://aiplatform.console.greennode.ai/](https://aiplatform.console.greennode.ai/)
 
 Enter your account credentials (username and password) at the login step.
 

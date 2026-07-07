@@ -6,13 +6,13 @@ Cùng với việc tra cứu các giá trị hạn mức, bạn cũng có thể 
 
 ### **Xem hạn mức tài nguyên** <a href="#hanmuctainguyen-xemhanmuctainguyen" id="hanmuctainguyen-xemhanmuctainguyen"></a>
 
-Bạn có thể xem hạn mức tài nguyên bằng tùy chọn sau: Xem thông tin chi tiết tại trang hiện hữu, tuy nhiên cần lưu ý rằng chỉ có thể xem chi tiết thông tin các hạn mức cho từng tài nguyên chứ không thể xem mức sử dụng hiện hữu cho tài nguyên của bạn, để xem chi tiết về thông tin hạn mức và tình trạng sử dụng hạn mức tài nguyên, vui lòng truy cập vào đường dẫn [https://hcm-3.console.vngcloud.vn/vserver/limit](https://hcm-3.console.vngcloud.vn/vserver/limit), tại ô tìm kiếm có thể tìm theo tên dịch vụ mà bạn muốn để xem thông tin chi tiết về hạn mức.
+Bạn có thể xem hạn mức tài nguyên bằng tùy chọn sau: Xem thông tin chi tiết tại trang hiện hữu, tuy nhiên cần lưu ý rằng chỉ có thể xem chi tiết thông tin các hạn mức cho từng tài nguyên chứ không thể xem mức sử dụng hiện hữu cho tài nguyên của bạn, để xem chi tiết về thông tin hạn mức và tình trạng sử dụng hạn mức tài nguyên, vui lòng truy cập vào đường dẫn [https://hcm-3.console.greennode.ai/vserver/limit](https://hcm-3.console.greennode.ai/vserver/limit), tại ô tìm kiếm có thể tìm theo tên dịch vụ mà bạn muốn để xem thông tin chi tiết về hạn mức.
 
 ### **Yêu cầu tăng hạn mức** <a href="#hanmuctainguyen-yeucautanghanmuc" id="hanmuctainguyen-yeucautanghanmuc"></a>
 
 Bạn có thể yêu cầu tăng hạn mức bằng Hạn ngạch dịch vụ, bằng cách sử dụng một trong các tùy chọn sau. Cần lưu ý rằng yêu cầu tăng sẽ không được cấp ngay lập tức. Có thể mất vài ngày để mức tăng của bạn có hiệu lực.
 
-* Mở bảng điều khiển [https://hcm-3.console.vngcloud.vn/vserver/limit](https://hcm-3.console.vngcloud.vn/vserver/limit). Tại trang thông tin, nhấn vào **Yêu cầu tăng hạn mức,** giao diện sẽ chuyển hướng tới trang [https://support.vngcloud.vn/#/app/dashboard](https://support.vngcloud.vn/#/app/dashboard) để bạn có thể thực hiện yêu cầu tăng hạn mức tài nguyên
+* Mở bảng điều khiển [https://hcm-3.console.greennode.ai/vserver/limit](https://hcm-3.console.greennode.ai/vserver/limit). Tại trang thông tin, nhấn vào **Yêu cầu tăng hạn mức,** giao diện sẽ chuyển hướng tới trang [https://support.vngcloud.vn/#/app/dashboard](https://support.vngcloud.vn/#/app/dashboard) để bạn có thể thực hiện yêu cầu tăng hạn mức tài nguyên
 * Hoặc có thể truy cập trực tiếp vào trang tạo yêu cầu hỗ trợ của chúng tôi: [https://support.vngcloud.vn/#/app/request-ticket/undefined](https://support.vngcloud.vn/#/app/request-ticket/undefined)
 
 Bảng sau đây liệt kê các giá trị tối đa cho tài nguyên thuộc dịch vụ vServer.

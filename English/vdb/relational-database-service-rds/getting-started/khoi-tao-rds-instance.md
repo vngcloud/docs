@@ -6,8 +6,8 @@ To initialize RDS Instacne, you can refer to the detailed steps in the instructi
 
 First, you access the vDB service interface in 2 ways as follows:
 
-* Method 1: Access the GreenNode homepage at the link: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/) . At the main interface, you find the **vServer service and select the vDB Relational** service in the list of vServer products/services.
-* Method 2: Directly access the vDB Relational homepage at the link: [https://vdb.console.vngcloud.vn/relational/database](https://vdb.console.vngcloud.vn/relational/database)
+* Method 1: Access the GreenNode homepage at the link: [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/) . At the main interface, you find the **vServer service and select the vDB Relational** service in the list of vServer products/services.
+* Method 2: Directly access the vDB Relational homepage at the link: [https://vdb.console.greennode.ai/relational/database](https://vdb.console.greennode.ai/relational/database)
 
 ## Initialize RDS instance <a href="#khoi-tao-rds-instance" id="khoi-tao-rds-instance"></a>
 

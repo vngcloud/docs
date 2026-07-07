@@ -21,7 +21,7 @@ Before working with kubeconfig, an IAM-user account must be granted all of the p
 
 > _**IAM-user** accounts require the `RequestKubeconfig` permission — see **Note for IAM-user accounts** at the top of the page._
 
-**Step 1:** Go to [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Step 1:** Go to [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Step 2:** On the **Overview** screen, select the **Kubernetes Cluster** menu.
 

@@ -19,7 +19,7 @@ VM Ubuntu/CentOS\
 
 **Step 1: Attach multiple external interfaces in the portal UI**
 
-1. Truy cập portal vServer (ví dụ HCM): [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview)
+1. Truy cập portal vServer (ví dụ HCM): [https://hcm-3.console.greennode.ai/vserver/overview](https://hcm-3.console.greennode.ai/vserver/overview)
 2. Open the server details, go to the **Network Interface** tab, then attach additional external interfaces.
 
 **Step 2: Configure network interfaces**

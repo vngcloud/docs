@@ -2,7 +2,7 @@
 
 To view detailed instructions on integrating the Cyberduck tool with vStorage, please follow the steps below via the vStorage Portal:
 
-1. Log in to https://vstorage.console.vngcloud.vn.
+1. Log in to https://vstorage.console.greennode.ai.
 2. Select the **Integration** menu.
 3. Choose the **Cyberduck** icon.
 4. In the **Permission** section, you need to enter the configuration information for Cyberduck to integrate with vStorage, including:

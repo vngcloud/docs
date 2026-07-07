@@ -19,7 +19,7 @@ Refer to the table below to understand how each storage class works:
 
 Follow the instructions below to set up a transition rule:
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list), then select Region **HAN02**
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list), then select Region **HAN02**
 
 2\. Select **the project** containing **the bucket** you want to set up the lifecycle for. For example, I have a bucket `demo-project` that has been initialized to create Storage Class Gold as shown below.
 
@@ -61,7 +61,7 @@ Follow the instructions below to set up a transition rule:
 
 Expiration rule is a set of rules that automatically delete objects when they expire. Follow the instructions below to set up a expiration rule:
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Select **the project** containing **the bucket** you want to set up the lifecycle for.
 

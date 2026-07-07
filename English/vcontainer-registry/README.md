@@ -16,7 +16,7 @@ GreenNode is proud to introduce our latest addition to the GreenNode ecosystem -
 
 **Getting Started**
 
-* Access the Web Portal: Simply log in to your GreenNode account and navigate to the Container Registry section to begin at [https://vcr.console.vngcloud.vn/](https://vcr.console.vngcloud.vn/) Comment
+* Access the Web Portal: Simply log in to your GreenNode account and navigate to the Container Registry section to begin at [https://vcr.console.greennode.ai/](https://vcr.console.greennode.ai/) Comment
 * Explore the Service: Explore Container Registry by initializing a Repository to store container images, then create Repository Users to Push/Pull images for management within the Repository. Comment
 * Set Permissions: Configure IAM-controlled permissions to effectively manage access and security. Comment Related Articles Comment
 

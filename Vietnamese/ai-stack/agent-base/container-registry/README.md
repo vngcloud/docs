@@ -8,7 +8,7 @@ GreenNode tự động tạo sẵn một repository riêng tư trong Container R
 
 Container Registry trong AgentBase được xây dựng trên [VNG Cloud Container Registry (vCR)](https://github.com/vngcloud/docs/blob/main/vcontainer-registry/README.md). Khi tổ chức của bạn được khởi tạo trên AgentBase, một repository riêng tư đã được tạo sẵn — bạn không cần tự tạo.
 
-Xem danh sách image của tổ chức tại: [https://aiplatform.console.vngcloud.vn/container-registry/repository](https://aiplatform.console.vngcloud.vn/container-registry/repository)
+Xem danh sách image của tổ chức tại: [https://aiplatform.console.greennode.ai/container-registry/repository](https://aiplatform.console.greennode.ai/container-registry/repository)
 
 ![Container Registry — danh sách image](../../../.gitbook/assets/Agentbase-image/Container-registry.png)
 

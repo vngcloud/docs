@@ -15,7 +15,7 @@
 
 **Bước 1: Mở trang Policy Groups**
 
-1. Đăng nhập vào [AI Platform Console](https://aiplatform.console.vngcloud.vn)
+1. Đăng nhập vào [AI Platform Console](https://aiplatform.console.greennode.ai)
 2. Chọn **AgentBase** trong menu trái
 3. Chọn **MCP Governance** → **Policy Groups**
 

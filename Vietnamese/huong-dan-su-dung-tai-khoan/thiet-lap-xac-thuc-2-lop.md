@@ -9,7 +9,7 @@ Khi đăng nhập vào GreenNode, thay vì chỉ cần **một yếu tố** (th�
 
 Sau đây và ví dụ cụ thể cho phép bạn thiết lập chứng thực đa yếu tố:
 
-**Bước 1:** Đăng nhập vào [trang quản trị tài khoản](https://dashboard.console.vngcloud.vn/). Trên menu các chức năng quản trị tài khoản, chọn **"Xác thực 2 lớp".**
+**Bước 1:** Đăng nhập vào [trang quản trị tài khoản](https://dashboard.console.greennode.ai/). Trên menu các chức năng quản trị tài khoản, chọn **"Xác thực 2 lớp".**
 
 <figure><img src="../.gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
 

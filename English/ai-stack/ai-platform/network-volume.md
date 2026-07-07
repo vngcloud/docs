@@ -21,7 +21,7 @@ Network Volume is a type of shared storage in AI Platform that allows users to s
 
 ### **Step 1: Create a Network Volume**
 
-1. Access the Network Volume tab in AI Platform via: [https://aiplatform.console.vngcloud.vn/volume](https://aiplatform.console.vngcloud.vn/volume)
+1. Access the Network Volume tab in AI Platform via: [https://aiplatform.console.greennode.ai/volume](https://aiplatform.console.greennode.ai/volume)
 2. Click Create Network Volume.
 3. Enter the following information:
 

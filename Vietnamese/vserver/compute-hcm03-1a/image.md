@@ -18,7 +18,7 @@ Các image tại GreenNode được phân loại thành Image chung, Image riên
 
 Để tạo VPC, bạn cần thực hiện các bước sau:
 
-1. Truy cập vào trang chủ vSer tại: [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview)
+1. Truy cập vào trang chủ vSer tại: [https://hcm-3.console.greennode.ai/vserver/overview](https://hcm-3.console.greennode.ai/vserver/overview)
 2. Tại thanh menu điều hướng, chọn Tab **"Server"**
 3. Chọn Server cần tạo Image tại trang danh sách các Server hiện hữu, sau đó nhấn vào nút **"Action"** và chọn **"Create Image"**
 4. Đợi 1 vài phút bạn và bạn có thể xem thông tin Image đã tạo ở tab **"Block Store"** mục Image<br>

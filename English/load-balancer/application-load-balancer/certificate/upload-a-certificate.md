@@ -9,7 +9,7 @@ The Certificate Manager supports uploading and managing two types of certificate
 
 #### 1. Uploading TLS/SSL Certificates
 
-1. **Access the Certificate Manager:** Go to `https://hcm-3.console.vngcloud.vn/vserver/load-balancer/certificate`.
+1. **Access the Certificate Manager:** Go to `https://hcm-3.console.greennode.ai/vserver/load-balancer/certificate`.
 2. **Click "Upload Certificate":** A pop-up window will appear for you to enter certificate information.
 3. **Fill in Certificate Details:**
    * **Friendly Name:** We recommend using the domain name as the friendly name.
@@ -38,7 +38,7 @@ The Certificate Manager supports uploading and managing two types of certificate
 
 #### 2. Uploading CA Certificates
 
-1. **Access the Certificate Manager:** Go to `https://hcm-3.console.vngcloud.vn/vserver/load-balancer/certificate`.
+1. **Access the Certificate Manager:** Go to `https://hcm-3.console.greennode.ai/vserver/load-balancer/certificate`.
 2. **Click "Upload Certificate":** A pop-up window will appear for you to enter certificate information.
 3. **Fill in Certificate Details:**
    * **Friendly Name:** We recommend using the domain name as the friendly name.

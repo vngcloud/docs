@@ -4,7 +4,7 @@ Versioning is a feature that supports storing multiple past versions of objects 
 
 To use versioning, please follow these steps:
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Select **the project** containing **the bucket** you want to set up versioning for.
 

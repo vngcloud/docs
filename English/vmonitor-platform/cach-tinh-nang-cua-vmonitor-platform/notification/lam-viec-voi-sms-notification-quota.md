@@ -10,7 +10,7 @@ An SMS Notification quota is a term on the vMonitor Platform representing a pack
 
 To initialize an SMS Notification Quota, follow the instructions below:
 
-1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor).&#x20;
+1. Login into [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor).&#x20;
 2. Select **Quota & Usage**.
 3. Select **Buy SMS notification quota.**
 4. Select **SMS packages** that meet your needs.
@@ -26,7 +26,7 @@ To initialize an SMS Notification Quota, follow the instructions below:
 
 After you initialize the SMS Notification Quota, you can view the information of the SMS Notification Quota package you just created by:
 
-1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor).&#x20;
+1. Login into [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor).&#x20;
 2. Select the menu **Quota\&Usage.**
 3. Select **Paid notification usage**.
 4. The system displays information about the **SMS notification quota** package that has been initialized and the actual **Usage** of the **SMS notification quota** package that you are using.
@@ -39,7 +39,7 @@ You have created an SMS notification quota with a short-term usage cycle. Curren
 
 To **renew** an **SMS Notification Quota**, you can:
 
-1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor).&#x20;
+1. Login into [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor).&#x20;
 2. Select the menu **Quota\&Usage.**
 3. Select **Paid notification usage**.
 4. In the SMS notification quota package you are using, select **Renew.**
@@ -56,7 +56,7 @@ You can only renew your SMS notification quota within 7 days before the current 
 
 To **resize up** an **SMS Notification Quota**, you can:
 
-1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor).&#x20;
+1. Login into [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor).&#x20;
 2. Select the menu **Quota\&Usage.**
 3. Select **Paid notification usage**.
 4. At the SMS notification quota package in use, select **Upgrade**.
@@ -75,7 +75,7 @@ If you do not need to use the created SMS notification quota, we recommend delet
 
 To delete **SMS Notification Quota**, you can:
 
-1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor).&#x20;
+1. Login into [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor).&#x20;
 2. Select the menu **Quota\&Usage.**
 3. Select **Paid notification usage**.
 4. At the SMS notification quota package in use, select **Delete**.

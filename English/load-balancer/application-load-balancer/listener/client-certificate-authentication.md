@@ -27,7 +27,7 @@ For HTTPS listeners, you can easily enable or disable Client Certificate Authent
 
 **Steps to Enable/Disable Client Certificate Authentication:**
 
-1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb`.
+1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb`.
 2. **Select Your Load Balancer:** Click on the Load Balancer you want to modify.
 3. **Go to the Listener Tab:** In the Load Balancer details page, select the "Listener" tab.
 4. **Edit HTTPS Listener:** Click the "Edit" icon next to the HTTPS listener where you want to enable/disable Client Certificate Authentication.

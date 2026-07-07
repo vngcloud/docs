@@ -14,7 +14,7 @@ When you use the vBackup service for the first time, we will automatically creat
 
 ### Creating a Backup Based on Policy Schedule in the vBackup Interface <a href="#taobansaoluuchomaychuaotheobolichpolicy-taobansaoluutheobolichpolicytaigiaodienvbackup" id="taobansaoluuchomaychuaotheobolichpolicy-taobansaoluutheobolichpolicytaigiaodienvbackup"></a>
 
-1. Open the vBackup console at: [vBackup Console](https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-server).
+1. Open the vBackup console at: [vBackup Console](https://hcm-3.console.greennode.ai/vserver/block-store/backup/backup-server).
 2. Select "**Create Backup Server**."
 3. Choose the type of resource you want to back up, such as the list of Servers and their attached Volumes.
 4. Select the **Policy** you want to apply to the backup. Note that you need to create a Policy to add to your Backup Server. See the guide for creating a Policy at "[Create, Edit, Delete Backup Policies](backup-policies/create-edit-delete-backup-policies.md)."
@@ -27,7 +27,7 @@ When you use the vBackup service for the first time, we will automatically creat
 
 In addition to creating a backup in the vBackup interface, you can also opt to create a backup when creating a new Server. Follow these steps:
 
-1. Open the Server console at: [Server Console](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server).
+1. Open the Server console at: [Server Console](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server).
 2. Select "**Create New Server**."
 3. On the Create New Server page, you can check the box to create a Backup Server in the "**Other Settings**" section.
 4. When the Server is created, a Backup Server will be created along with the default Policy schedule and displayed on the Backup Server list page.
@@ -36,7 +36,7 @@ In addition to creating a backup in the vBackup interface, you can also opt to c
 
 You can quickly create a backup for one or more Servers from the Server list management page:
 
-1. Open the Server console at: [Server Console](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server).
+1. Open the Server console at: [Server Console](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server).
 2. Select one or more Servers that need a backup, then click on the toolbar and select "Create Backup."
 3. One or more Backup Servers will be created with the default Policy schedule depending on the number of Servers selected for backup.
 4. After creating a Backup Server, you can wait for the time specified in the Policy schedule for the system to create the Backup file, or you can choose "[Backup Now](create-backups-immediately-back-now.md)" to create a backup immediately.&#x20;

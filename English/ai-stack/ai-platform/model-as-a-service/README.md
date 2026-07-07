@@ -6,7 +6,7 @@ description: >-
 
 # Model as a Service
 
-Access the [Models ](https://aiplatform.console.vngcloud.vn/models)section in AI Platform:
+Access the [Models ](https://aiplatform.console.greennode.ai/models)section in AI Platform:
 
 * To use and enable any model, you need an API key. [See more details](../getting-started-with-ai-platform.md).
 

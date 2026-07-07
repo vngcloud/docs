@@ -6,7 +6,7 @@ To view the information of an object/directory, you can:
 
 &#x20;Use vStorage Portal
 
-1\. Log in to https://vstorage.console.vngcloud.vn.
+1\. Log in to https://vstorage.console.greennode.ai.
 
 2\. Select the **project**, then choose the **container** containing the **object/directory** you want to view detailed information.
 

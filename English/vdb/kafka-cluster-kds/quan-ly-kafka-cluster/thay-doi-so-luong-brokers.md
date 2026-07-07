@@ -16,7 +16,7 @@ When you change the number of brokers, Kafka needs to redistribute the partition
 
 ## Guide to Changing Broker Count
 
-1. **Select Kafka Cluster:** Log in to vDB Kafka Cluster here [https://vdb.console.vngcloud.vn/kafka/cluster](https://vdb.console.vngcloud.vn/kafka/cluster) and select the Kafka cluster you want to adjust.
+1. **Select Kafka Cluster:** Log in to vDB Kafka Cluster here [https://vdb.console.greennode.ai/kafka/cluster](https://vdb.console.greennode.ai/kafka/cluster) and select the Kafka cluster you want to adjust.
 2. **Change Broker Count:**
    * Find and access the Kafka cluster management section.
    * Select the "Edit number of broker" option to increase or decrease the number of brokers.

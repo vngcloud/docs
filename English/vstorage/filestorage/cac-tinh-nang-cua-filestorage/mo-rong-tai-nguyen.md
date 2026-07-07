@@ -4,7 +4,7 @@ You have created **File storage** with the initial maximum quota that suits your
 
 To change the quota for a **File storage** , you can:
 
-**Step 1:** Log in to [https://efs.console.vngcloud.vn/overview](https://efs.console.vngcloud.vn/overview)
+**Step 1:** Log in to [https://efs.console.greennode.ai/overview](https://efs.console.greennode.ai/overview)
 
 **Step 2:** Select the checkbox at the storage file you want to increase quota and select the icon **Resize.**
 

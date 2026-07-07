@@ -15,7 +15,7 @@ GreenNode cung cấp giao diện trực quan trong việc quản lý Load Balanc
 
 **Cách khởi tạo một Network Load Balancer**
 
-1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb**](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb**](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)
 2. **Tại trang chủ Load Balancer, click chọn "Create a Load Balancer".**
 3. **Chọn cấu hình Load Balancer**
    * _**Tên Load Balancer**_**:** Trường hợp người dùng không chủ động điền tên Load Balancer, hệ thống sẽ tự động sinh ra tên Load Balancer. Lưu ý rằng tên Load balancer không thể thay đổi trong quá trình sử dụng, do đó người dùng nên chủ động nhập tên nếu có nhu cầu quản lý theo tên.
@@ -61,7 +61,7 @@ Sử dụng hướng dẫn này để phục vụ cho việc xem danh sách tấ
 
 **Truy cập danh sách Load Balancer**
 
-1. Truy cập vào trang chủ Load Balancer tại đây: [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+1. Truy cập vào trang chủ Load Balancer tại đây: [https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)
 2. Tại trang chủ Load Balancer, một danh sách Load Balancer sẽ xuất hiện bao gồm các thông tin như:
    * Tên và định danh Load Balancer: Có hỗ trợ sao chép định danh Load Balancer nhằm mục đích sử dụng cho Terraform hoặc các nhu cầu khác
    * Trạng thái Load Balancer: Cho biết trạng thái hiện tại của Load Balancer

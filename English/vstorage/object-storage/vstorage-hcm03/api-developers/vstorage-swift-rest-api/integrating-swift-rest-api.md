@@ -2,7 +2,7 @@
 
 To view the guide on integrating Swift Rest API, you can follow the instructions below on vStorage Portal:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 2. Select the **Integration** menu.
 3. Choose the **vStorage API Restful** icon.
 4. In the **Permission** section, you need to enter the necessary information to configure your vStorage API, including:

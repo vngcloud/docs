@@ -13,7 +13,7 @@ To perform the conversion, please follow the instructions below:
   * Choose to pay by GreenNode credit or directly from the payment gateway
 * **Step 5:** After successful payment, users will be redirected to the resource management website to check information and continue using resources.
 
-At this time, the system has recorded the resource has completed the conversion process to paid service, users can check the service invoice information (except K8s service (vContainer)) at the vConsole website - Invoice history: [https://dashboard.console.vngcloud.vn/billing-report](https://dashboard.console.vngcloud.vn/billing-report)
+At this time, the system has recorded the resource has completed the conversion process to paid service, users can check the service invoice information (except K8s service (vContainer)) at the vConsole website - Invoice history: [https://dashboard.console.greennode.ai/billing-report](https://dashboard.console.greennode.ai/billing-report)
 
 ## **K8s Resource Migration (vContainer)** <a href="#chuyendoihinhthucsudungtupocsangdichvutraphi-chuyendoitainguyenk8s-vcontainer" id="chuyendoihinhthucsudungtupocsangdichvutraphi-chuyendoitainguyenk8s-vcontainer"></a>
 
@@ -21,7 +21,7 @@ At this time, the system has recorded the resource has completed the conversion 
 
 To help users have a more detailed view of the above process, below are the steps to guide you in converting a type of resource, specifically a Cluster (in the K8s/vContainer service group) to a paid service:
 
-* **Step 1:** Access the resource management website at vServer portal [https://hcm-3.console.vngcloud.vn/vserver/billing](https://hcm-3.console.vngcloud.vn/vserver/billing)
+* **Step 1:** Access the resource management website at vServer portal [https://hcm-3.console.greennode.ai/vserver/billing](https://hcm-3.console.greennode.ai/vserver/billing)
 * **Step 2:** Select the POC cluster to convert (use the search toolbar, search by name/resource identifier to filter out the cluster to find). Refer to the image below:
 * **Step 3:** Select the action " **Stop POC** " for the cluster found in Step 2
 * **Step 4:** Confirm the conversion again in the pop-up window, now the user will be redirected to the payment page

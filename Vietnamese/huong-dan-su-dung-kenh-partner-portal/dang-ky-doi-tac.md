@@ -8,7 +8,7 @@ Tài khoản dịch vụ sử dụng để đăng ký đối tác phải thỏa 
 * Tài khoản sử dụng đăng ký đối tác, không được là tài khoản khách hàng của một đối tác khác
 * Các account đăng ký làm đối tác của GreenNode phải thuộc loại tài khoản “Doanh Nghiệp"
 
-**Bước 1**: Đăng nhập vào partner portal bằng [Liên Kết](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=CdvLkCA8WBPfEAaQ\_m6lKBqa5h5YM\_6JwbR5HuCo5vI\&codeChallengeMethod=S256\&appState=b4406579-f18e-4cd9-878d-64ebbc809af7\&redirectUri=https%3A%2F%2Fpartner.console.vngcloud.vn%2Foverview)
+**Bước 1**: Đăng nhập vào partner portal bằng [Liên Kết](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=CdvLkCA8WBPfEAaQ\_m6lKBqa5h5YM\_6JwbR5HuCo5vI\&codeChallengeMethod=S256\&appState=b4406579-f18e-4cd9-878d-64ebbc809af7\&redirectUri=https%3A%2F%2Fpartner.console.greennode.ai%2Foverview)
 
 * Chọn "**SIGN IN WITH ROOT USER ACCOUNT**":  người dùng nhập username và password để đăng nhập. Username và password là thông tin của account đã được tạo trong portal [vngcloud.vn](http://vngcloud.vn/)
 * Chọn "**Register Account**": nếu người dùng chưa có tài khoản, _tham khảo hướng dẫn_ [_tại đây_](../huong-dan-su-dung-tai-khoan/dang-ky-tai-khoan.md) _để đăng ký tài khoản_

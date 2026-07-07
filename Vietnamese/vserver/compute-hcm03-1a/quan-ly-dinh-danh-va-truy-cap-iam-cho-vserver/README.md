@@ -34,7 +34,7 @@ Bạn cần hoàn tất các bước sau để có thể sử dụng dịch vụ
 
 Sau khi thiết lập kế hoạch chiến lược IAM, bạn cần tạo Tạo tài khoản **người dùng cá nhân (User account)** trên trang chủ **IAM** của chúng tôi từ tài khoản **Root user account** của bạn cho từng người cần truy cập vào máy chủ:
 
-1. Truy cập vào trang chủ IAM: [tại đây](https://iam.console.vngcloud.vn/)
+1. Truy cập vào trang chủ IAM: [tại đây](https://iam.console.greennode.ai/)
 2. Mở tab User account
 3. Chọn **Create a user account.**
 4. Ở mục **Account user name ,** hãy nhập **Tên** cho User account của bạn. Tên User account phải dài từ 5 đến 50 ký tự và chỉ được chứa chữ cái, chữ số, dấu gạch dưới (\_), dấu chấm (.), dấu gạch ngang (-).
@@ -46,7 +46,7 @@ Sau khi thiết lập kế hoạch chiến lược IAM, bạn cần tạo Tạo 
 
 Tiếp theo bạn cần Tạo nhóm người (Group) dùng dựa trên vai trò hoặc trách nhiệm chung:
 
-1. Mở tab Group tại [https://iam.console.vngcloud.vn/user-groups](https://iam.console.vngcloud.vn/user-groups).
+1. Mở tab Group tại [https://iam.console.greennode.ai/user-groups](https://iam.console.greennode.ai/user-groups).
 2. Chọn **Create a group.**
 3. Nhập tên Group vào mục **Name** (Tên phải dài từ 1 đến 50 ký tự và chỉ có thể bao gồm các chữ cái, số, dấu gạch dưới (\_), dấu chấm (.), dấu gạch nối (-) và dấu cách), sau đó nhập thông tin ghi chú tại mục **Description.**
 4. Chuyển sang bước kế tiếp và gán chính sách (Policy) phù hợp cho nhóm người dùng tại mục **Policy (**&#x4E;ếu chưa có Policy cần tạo Policy theo hướng dẫn **Bước 5)**, sau đó chỉ định người dùng thích hợp vào nhóm tại mục **User**, với các User được thêm vào nhóm sẽ có quyền trên Policy đã chọn trong Group
@@ -57,7 +57,7 @@ Tiếp theo bạn cần Tạo nhóm người (Group) dùng dựa trên vai trò 
 
 Tạo chính sách truy cập chỉ định những hành động mà mỗi nhóm người dùng hoặc vai trò có thể thực hiện, hãy xác định chi tiết các quyền để hạn chế truy cập không cần thiết và thường xuyên xem xét và cập nhật các chính sách truy cập khi cần thiết:
 
-1. Mở tab Policy tại [https://iam.console.vngcloud.vn/policies](https://iam.console.vngcloud.vn/policies).
+1. Mở tab Policy tại [https://iam.console.greennode.ai/policies](https://iam.console.greennode.ai/policies).
 2. Chọn **Create a Policy.**
 3. Nhập tên Policy vào mục **Name** (Tên phải dài từ 1 đến 50 ký tự và chỉ có thể bao gồm các chữ cái, số, dấu gạch dưới (\_), dấu chấm (.), dấu gạch nối (-) và dấu cách), sau đó nhập thông tin ghi chú tại mục **Description.**
 4. Chuyển sang bước kế tiếp, chọn sản phẩm **vserver** tại mục **Product**, sau đó chọn danh sách các quyền cho chính sách của bạn tại mục **Action.** Lưu ý rằng nếu tùy chọn **Allow permissions** được bật mang ý nghĩa người dùng được cấp phép sử dụng các quyền được chọn trong chính sách, nếu Allow permission ở chế độ tắt (**Deny permissions**) người dùng sẽ bị từ chối trên các quyền được chọn trong chính sách.
@@ -75,7 +75,7 @@ Quan trọng
 
 Các bước trên chỉ cho phép chúng ta khởi tạo User account để đăng nhập vào trình điều khiển vServer và trực tiếp khởi tạo tài nguyên tại đó, trường hợp bạn muốn khởi tạo các tài nguyên thuộc đám mây của GreenNode bằng **Terraform**, bạn cần phải khởi tạo một **Service Account**:
 
-1. Mở tab Service account tại [https://iam.console.vngcloud.vn/service-accounts](https://iam.console.vngcloud.vn/service-accounts)
+1. Mở tab Service account tại [https://iam.console.greennode.ai/service-accounts](https://iam.console.greennode.ai/service-accounts)
 2. Chọn **Create a service account**
 3. Nhập tên Service account vào mục **Name** (Tên phải dài từ 1 đến 50 ký tự và chỉ có thể bao gồm các chữ cái, số, dấu gạch dưới (\_), dấu chấm (.), dấu gạch nối (-) và dấu cách), sau đó nhập thông tin ghi chú tại mục **Description.**
 4. Có thể tùy chọn thêm Root user account vào mục **Trusted relationship** (Không bắt buộc)
@@ -89,7 +89,7 @@ Các bước trên chỉ cho phép chúng ta khởi tạo User account để đ�
 
 Sau khi tạo chính sách với các quyền phù hợp, người dùng cần gán chính sách đã tạo cho **User account/ Group/ Service account** phù hợp với các chức năng hoặc trách nhiệm công việc, chỉ định người dùng cho các vai trò dựa trên chức năng công việc của họ, từ đó có thể nhóm các **User account** có quyền giống nhau vào **Group:**
 
-1. **Mở tab User account tại:** [**https://iam.console.vngcloud.vn/user-accounts**](https://iam.console.vngcloud.vn/user-accounts)
+1. **Mở tab User account tại:** [**https://iam.console.greennode.ai/user-accounts**](https://iam.console.greennode.ai/user-accounts)
 2. Chọn User account muốn gán quyền, sau đó tại trang chi tiết User account chọn **Attach Policies** và lựa chọn chính sách Policy muốn gán cho User account phù hợp với nhu cầu của bạn
 3. Tương tự ta có thể gán quyền cho **Group/ Service account** tại trang chi tiết hoặc gán Policy khi khởi tạo chúng
 
@@ -99,7 +99,7 @@ Sau khi tạo chính sách với các quyền phù hợp, người dùng cần g
 
 Bước cuối cùng là sử dụng **IAM User Account** truy cập vào tài nguyên vServer qua vServer portal:
 
-1. Truy cập vào đường dẫn: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
+1. Truy cập vào đường dẫn: [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/)
 2. Nếu trước đây bạn chưa đăng nhập bằng trình duyệt này, trang đăng nhập chính sẽ xuất hiện. Chọn **ĐĂNG NHẬP VỚI IAM USER ACCOUNT**.
 3. Nhập địa chỉ **email** của người dùng Root khi đăng ký tài khoản GreenNode.
 4. Nhập **tên người dùng** và **mật khẩu** của tài khoản IAM user account (User account) được tạo trên hệ thống IAM.

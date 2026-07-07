@@ -50,7 +50,7 @@ VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới nhất. Dư�
 
 * **Usage & Limits:** VKS Portal bổ sung trang **Usage & Limits** giúp bạn theo dõi mức sử dụng tài nguyên (số Kubernetes Cluster đang dùng / giới hạn) và xem giới hạn cấu hình (Node Groups per Cluster, Nodes per Node Group) ngay trên giao diện. Trang này chỉ đọc (read-only) và tích hợp hai liên kết tiện ích:
   * **Request limit increase** — gửi yêu cầu tăng giới hạn trực tiếp đến đội ngũ hỗ trợ 24/7 tại [GreenNode Helpdesk](https://helpdesk.vngcloud.vn/portal/en/home).
-  * **View resource limits on vServer ↗** — xem toàn bộ giới hạn tài nguyên (vCPU, RAM, Disk...) tại [vServer Limits](https://hcm-3.console.vngcloud.vn/vserver/limit).
+  * **View resource limits on vServer ↗** — xem toàn bộ giới hạn tài nguyên (vCPU, RAM, Disk...) tại [vServer Limits](https://hcm-3.console.greennode.ai/vserver/limit).
   * Hướng dẫn chi tiết tại [Usage & Limits](../usage-limits.md).
 
 ***

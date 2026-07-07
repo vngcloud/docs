@@ -7,7 +7,7 @@
 
 ## Tạo backup plan (backup server)
 
-1. Truy cập giao diện Backup Server thuộc Backup Center tại đây:  [https://backupcenter.console.vngcloud.vn/backup-server/list](https://backupcenter.console.vngcloud.vn/backup-server/list)
+1. Truy cập giao diện Backup Server thuộc Backup Center tại đây:  [https://backupcenter.console.greennode.ai/backup-server/list](https://backupcenter.console.greennode.ai/backup-server/list)
 2. Chọn **Create Backup Server.**
 3. Chọn server cần tạo backup, lưu ý rằng trang này chỉ hiển thị những server chưa liên kết backup plan.
 4. Chọn backup policy áp dụng cho backup plan (backup server) này. Tìm hiểu thêm về backup policy tại đây.

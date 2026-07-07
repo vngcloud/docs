@@ -13,7 +13,7 @@ Log Search là nơi để bạn tìm kiếm và phân tích trên dữ liệu c�
 
 Để thực hiện tìm kiếm và phân tích log, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Chọn **Log.**
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Chọn **Log.**
 2. Chọn **Log search**.
 3. Chọn **Log project** nào bạn cần xem và phân tích logs. Vị trí chọn log project được hiển thị như hình bên dưới:
 

@@ -29,13 +29,13 @@ The ability to restrict "API Key X may only use Model Y" is coming soon.
 
 - A GreenNode account with Root or Admin role
 - At least one API Key created (see [Access Control](../access-control/README.md))
-- At least one Model enabled in [GreenNode MaaS](https://aiplatform.console.vngcloud.vn/models)
+- At least one Model enabled in [GreenNode MaaS](https://aiplatform.console.greennode.ai/models)
 
 ---
 
 ## View Rate Limits
 
-Open [Protect & Govern → Rate Limit](https://aiplatform.console.vngcloud.vn/protect-govern/rate-limit).
+Open [Protect & Govern → Rate Limit](https://aiplatform.console.greennode.ai/protect-govern/rate-limit).
 
 ![Rate Limit list](../../../.gitbook/assets/Agentbase-image/rate-limit-list.png)
 

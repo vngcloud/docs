@@ -6,7 +6,7 @@ Node Group là một khái niệm quan trọng trong Kubernetes, dùng để qu�
 
 Để khởi tạo một Node Group, hãy làm theo các bước bên dưới:
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Bước 1:** Truy cập vào [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Bước 2:** Tại Cluster đã khởi tạo trước đó, hãy chọn **Create a Node group.**
 
@@ -43,7 +43,7 @@ Node Group là một khái niệm quan trọng trong Kubernetes, dùng để qu�
 
 **Đối với Node Group, bạn có thể chỉnh sửa các thông số: Number of Nodes, Auto Scaling, Upgrade Strategy, Security Group trong từng lần chỉnh sửa riêng biệt**. Cụ thể, bạn có thể thực hiện theo các bước sau đây:&#x20;
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Bước 1:** Truy cập vào [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Bước 2:** Tại Cluster đã khởi tạo trước đó, hãy chọn **vào Cluster bạn muốn chỉnh sửa Node group.**
 
@@ -74,7 +74,7 @@ Khi không còn nhu cầu sử dụng Node Group, bạn hãy thực hiện xóa 
 * Tất cả các node có trong Node Group (VM)
 {% endhint %}
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Bước 1:** Truy cập vào [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Bước 2:** Tại màn hình **Overview**, chọn menu **Kubernetes Cluster.**
 

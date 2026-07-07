@@ -4,7 +4,7 @@ A Project is a term in vStorage that represents a storage package with a specifi
 
 Use vStorage Portal
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 
 2\. Choose the **region** where you want to store your data.
 

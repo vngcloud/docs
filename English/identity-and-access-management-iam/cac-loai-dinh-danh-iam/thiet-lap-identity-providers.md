@@ -57,7 +57,7 @@ Next, copy the **Login URL** (as shown) and proceed with the connection setup fr
 
 After obtaining the Login URL from Azure AD, proceed with the following steps:
 
-* Visit IAM Identity Provider at: [https://iam.console.vngcloud.vn/identity-providers](https://iam.console.vngcloud.vn/identity-providers)
+* Visit IAM Identity Provider at: [https://iam.console.greennode.ai/identity-providers](https://iam.console.greennode.ai/identity-providers)
 * Click **Add an Identity Provider**
 * Fill in the following information:
   * **Provider Name**: Name of the Identity Provider

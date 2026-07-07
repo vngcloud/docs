@@ -53,7 +53,7 @@ Example of **invalid** subnet configuration:
 
 To create a Multi-AZ Cluster, follow the steps below:
 
-**Step 1:** Navigate to [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Step 1:** Navigate to [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Step 2:** On the **Overview** screen, select **Activate.**
 
@@ -181,7 +181,7 @@ You can SSH into a server within the same VPC to perform the steps below.
 
 After the Cluster has been successfully initialized, you can connect and verify the newly created Cluster by following these steps:
 
-**Step 1:** Navigate to [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console.vngcloud.vn/k8s-cluster)
+**Step 1:** Navigate to [https://vks.console.greennode.ai/k8s-cluster](https://vks.console.greennode.ai/k8s-cluster)
 
 **Step 2:** The Cluster list is displayed. Select the **three-dot icon** to open the dropdown menu, then choose **Download config file** to download the kubeconfig file. This file will give you full access to your Cluster.
 

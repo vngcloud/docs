@@ -14,7 +14,7 @@ This guide walks you through creating a new **Redis Cluster** on vDB, including 
 
 ## Step 1 — Go to Create Database
 
-1. Go to [https://vdb.console.vngcloud.vn](https://vdb.console.vngcloud.vn).
+1. Go to [https://vdb.console.greennode.ai](https://vdb.console.greennode.ai).
 2. In the left menu, select **Memory Store**.
 3. Click **Create Database**.
 

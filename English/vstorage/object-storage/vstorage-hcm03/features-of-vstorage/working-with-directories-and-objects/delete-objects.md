@@ -4,7 +4,7 @@ To delete one or multiple objects, you can follow these steps:
 
 &#x20;Use vStorage Portal
 
-1. Log in to the website [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1. Log in to the website [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 2. Select the **project and container**. Then, choose the objects you want to delete.
 3. Click ![](https://docs.vngcloud.vn/download/thumbnails/69468630/image2023-3-6\_11-3-40.png?version=1\&modificationDate=1703647227000\&api=v2) or select the icon ![](https://docs.vngcloud.vn/download/thumbnails/69468630/image2023-2-6\_10-20-54.png?version=1\&modificationDate=1703647015000\&api=v2) for the object you want to delete and click ![](https://docs.vngcloud.vn/download/thumbnails/69468630/image2023-12-27\_11-10-29.png?version=1\&modificationDate=1703650230000\&api=v2).
 

@@ -6,7 +6,7 @@ To move objects, follow the instructions below:
 
 &#x20;Sử dụng vStorage Portal
 
-1\. Login to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1\. Login to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 
 2\. Choose the **project**, **container**, and then select the **objects** you want to move.
 

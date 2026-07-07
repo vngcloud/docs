@@ -34,7 +34,7 @@ Trên VKS, **Calico Overlay** hoạt động theo mô hình sau:
 
 Để khởi tạo một Cluster, hãy làm theo các bước bên dưới:
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Bước 1:** Truy cập vào [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Bước 2:** Tại màn hình **Overview**, chọn **Activate.**
 
@@ -65,7 +65,7 @@ Trên VKS, **Calico Overlay** hoạt động theo mô hình sau:
 
 Bên dưới là hướng dẫn triển khai một deployment nginx và kiểm tra việc phân chia IP cho các pod được triển khai trong cluster của bạn.
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
+**Bước 1:** Truy cập vào [https://vks.console.greennode.ai/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
 **Bước 2:** Danh sách Cluster được hiển thị, chọn biểu tượng **Download** và chọn **Download Config File** để thực hiện tải xuống file kubeconfig. File này sẽ giúp bạn có toàn quyền truy cập vào Cluster của bạn.
 

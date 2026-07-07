@@ -2,7 +2,7 @@
 
 After successfully creating an AI Gateway, you can start sending requests to the configured AI model by following these steps:
 
-**Step 1:** Access the [AI Gateway Portal](http://aigateway.console.vngcloud.vn/) and locate the gateway you just created.
+**Step 1:** Access the [AI Gateway Portal](http://aigateway.console.greennode.ai/) and locate the gateway you just created.
 
 **Step 2:** In the Providers & Model section, find the AI model you configured. Click the Curl command icon to get a sample request.
 

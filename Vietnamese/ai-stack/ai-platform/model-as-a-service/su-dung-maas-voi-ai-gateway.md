@@ -2,7 +2,7 @@
 
 Để MaaS có thể sử dụng các tính năng của AI Gateway (Rate Limit, Model Caching... ), bạn hãy thực hiện theo các bước sau:
 
-**Bước 1:** Truy cập giao diện AI Gateway tại GreenNode Console thông qua đường dẫn: [http://aigateway.console.vngcloud.vn/](http://aigateway.console.vngcloud.vn/)
+**Bước 1:** Truy cập giao diện AI Gateway tại GreenNode Console thông qua đường dẫn: [http://aigateway.console.greennode.ai/](http://aigateway.console.greennode.ai/)
 
 **Bước 2:** Trong menu bên trái, chọn mục **AI Gateway**, sau đó nhấn vào nút **Create an AI Gateway**.
 
@@ -13,14 +13,14 @@
 * **AI Gateway Name:** Đặt tên dễ nhớ cho gateway của bạn. Tên này chỉ được chứa các ký tự **a–z, A–Z, 0–9, dấu gạch dưới (\_) hoặc dấu gạch ngang (-)**, và có độ dài từ **5 đến 50 ký tự**.
 * **Model Provider:**
   * Chọn nhà cung cấp mô hình AI OpenAI Compatible.
-  * **Model Type**: Chọn Model Type (xem tại [MaaS](https://aiplatform.console.vngcloud.vn/models/md-37404b64-0656-4c85-978c-a6e1b84ea8ac) ở portal AI Platform).
-  * **Model Endpoint**: Điền URL của model (xem tại [MaaS](https://aiplatform.console.vngcloud.vn/models/md-37404b64-0656-4c85-978c-a6e1b84ea8ac) ở poral AI Platform).
-  * **Model Name**: Điền Name của model (xem tại [MaaS](https://aiplatform.console.vngcloud.vn/models/md-37404b64-0656-4c85-978c-a6e1b84ea8ac) ở poral AI Platform).\
+  * **Model Type**: Chọn Model Type (xem tại [MaaS](https://aiplatform.console.greennode.ai/models/md-37404b64-0656-4c85-978c-a6e1b84ea8ac) ở portal AI Platform).
+  * **Model Endpoint**: Điền URL của model (xem tại [MaaS](https://aiplatform.console.greennode.ai/models/md-37404b64-0656-4c85-978c-a6e1b84ea8ac) ở poral AI Platform).
+  * **Model Name**: Điền Name của model (xem tại [MaaS](https://aiplatform.console.greennode.ai/models/md-37404b64-0656-4c85-978c-a6e1b84ea8ac) ở poral AI Platform).\
     ![](<../../../.gitbook/assets/image (3).png>)
   *   **Authentication info**:
 
       * header\_name: Điền `Authorization`.
-      * header\_value: Điền `Bearer <api-key-maas>` ( API Key trong hình được tạo ở [Portal ](https://aiplatform.console.vngcloud.vn/keys)AI Platform).
+      * header\_value: Điền `Bearer <api-key-maas>` ( API Key trong hình được tạo ở [Portal ](https://aiplatform.console.greennode.ai/keys)AI Platform).
 
       <figure><img src="../../../.gitbook/assets/image (439).png" alt="123"><figcaption></figcaption></figure>
 * **Gateway Config:** Mặc định, hệ thống sẽ bật tính năng **Authenticated Gateway.**

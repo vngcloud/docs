@@ -11,7 +11,7 @@ To access your resources on the vStorage storage service, you can use various ch
 2. If the S3 key you just created has the status **Restriction by vIAM = ON**, then proceed to create a Service Account following the instructions at Create Service Account, Create a policy for the Service Account, Link the Service Account to the corresponding policy. Otherwise, if the S3 key has the status **Restriction by vIAM = OFF**, proceed to step 4.
 3. Link the S3 key to the Service Account following the instructions at Link S3 key, Swift user with the corresponding Service Account.
 4. Integrate this S3 key with the S3cmd application. Details are as follows:
-   1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+   1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
    2. Select the **Integration** menu.
    3. Select the **S3cmd** icon.
    4. In the **Permission** section, you need to provide the necessary information to configure your S3cmd to integrate with vStorage, including:

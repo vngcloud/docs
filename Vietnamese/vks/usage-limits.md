@@ -6,7 +6,7 @@
 
 ## Điều kiện cần
 
-* Đã có tài khoản VNG Cloud và đăng nhập vào [GreenNode Portal](https://console.vngcloud.vn).
+* Đã có tài khoản VNG Cloud và đăng nhập vào [GreenNode Portal](https://console.greennode.ai).
 
 ***
 
@@ -71,5 +71,5 @@ Sau khi hoàn thành, bạn có thể:
 | Tôi muốn tiếp theo...       | Đi đến                                                            |
 | --------------------------- | ----------------------------------------------------------------- |
 | Tạo cluster đầu tiên        | [Bắt đầu với VKS](getting-started/)                               |
-| Xem giới hạn vServer đầy đủ | [vServer Limits](https://hcm-3.console.vngcloud.vn/vserver/limit) |
+| Xem giới hạn vServer đầy đủ | [vServer Limits](https://hcm-3.console.greennode.ai/vserver/limit) |
 | Gửi yêu cầu hỗ trợ          | [GreenNode Helpdesk](https://helpdesk.vngcloud.vn/portal/en/home) |

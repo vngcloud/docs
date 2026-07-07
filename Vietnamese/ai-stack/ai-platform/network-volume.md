@@ -21,7 +21,7 @@
 
 ### Bước 1: Khởi tạo Network Volume
 
-1. Truy cập vào tab **Network Volume** trong AI Platform theo đường dẫn: [https://aiplatform.console.vngcloud.vn/volume](https://aiplatform.console.vngcloud.vn/volume)
+1. Truy cập vào tab **Network Volume** trong AI Platform theo đường dẫn: [https://aiplatform.console.greennode.ai/volume](https://aiplatform.console.greennode.ai/volume)
 2. Click **Create Network Volume**.
 3. Nhập thông tin:
    * **Tên Volume**: nhập tên hợp lệ theo quy tắc sau: Chỉ cho phép các chữ cái (a-z, A-Z, 0-9, '\_', '-', '.'). Dữ liệu đầu vào phải nằm trong khoảng từ 1 đến 50 ký tự. Ví dụ `ai-storage`

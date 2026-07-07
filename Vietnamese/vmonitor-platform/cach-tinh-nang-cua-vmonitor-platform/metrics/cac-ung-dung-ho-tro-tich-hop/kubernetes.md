@@ -10,9 +10,9 @@ Bạn có thể cài đặt vMonitor Platform Metric Agent vào Kubernetes Clust
 
 #### **Các bước chuẩn bị trước khi cài đặt** <a href="#kubernetes-cacbuocchuanbitruockhicaidat" id="kubernetes-cacbuocchuanbitruockhicaidat"></a>
 
-&#x20;      1\. Kiểm tra bạn đã có Metric Quota và quota chưa chạm mức giới hạn, nếu chưa có bạn cần thực hiện mua Quota Metric tại [đây](https://vmonitor.console.vngcloud.vn/quota-usages/metric).
+&#x20;      1\. Kiểm tra bạn đã có Metric Quota và quota chưa chạm mức giới hạn, nếu chưa có bạn cần thực hiện mua Quota Metric tại [đây](https://vmonitor.console.greennode.ai/quota-usages/metric).
 
-&#x20;      **2. Tạo Service Account và gắn policy: vMonitorMetricPush để có đủ quyền đẩy Metric về vMonitor Platform.** Để tạo service account bạn truy cập tại [đây](https://iam.console.vngcloud.vn/service-accounts), sau đó thực hiện các bước sau:
+&#x20;      **2. Tạo Service Account và gắn policy: vMonitorMetricPush để có đủ quyền đẩy Metric về vMonitor Platform.** Để tạo service account bạn truy cập tại [đây](https://iam.console.greennode.ai/service-accounts), sau đó thực hiện các bước sau:
 
 * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
 * Tìm và chọn **Policy:** **vMonitorMetricPush,** sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vMonitorMetricPush do GreenNode tạo ra chỉ chứa chính xác quyền đẩy metric về hệ thống

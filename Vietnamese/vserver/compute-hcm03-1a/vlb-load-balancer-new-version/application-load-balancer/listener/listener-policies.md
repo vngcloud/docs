@@ -16,7 +16,7 @@ Nhìn chung, Policies quyết định cách Load Balancer, cụ thể là Listen
 
 Để thêm 1 Policy vào Listener, bạn thực hiện theo các hướng dẫn dưới đây
 
-1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb**](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb**](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)
 2. **Tại trang chủ Load Balancer, click chọn Load Balancer cần cấu hình.**
 3. **Tại phần thông tin chi tiết Load Balancer, chọn tab Listener.**
 4. **Nhấn chọn Listener cần thêm Policy.**
@@ -37,7 +37,7 @@ Nhìn chung, Policies quyết định cách Load Balancer, cụ thể là Listen
 
 Để cập nhật bộ điều kiện & hành động của một Policy, bạn làm theo hướng dẫn dưới đây
 
-1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb**](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb**](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)
 2. **Tại trang chủ Load Balancer, click chọn Load Balancer cần cấu hình.**
 3. **Tại phần thông tin chi tiết Load Balancer, chọn tab Listener.**
 4. **Nhấn chọn Listener cần cập nhật Policy.**
@@ -52,7 +52,7 @@ Việc sắp xếp các Policy trên một Listener trong Load Balancer rất qu
 
 Để sắp xếp các Policy theo thứ tự mong muốn, bạn làm theo hướng dẫn dưới đây
 
-1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb**](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb**](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)
 2. **Tại trang chủ Load Balancer, click chọn Load Balancer cần cấu hình.**
 3. **Tại phần thông tin chi tiết Load Balancer, chọn tab Listener.**
 4. **Nhấn chọn Listener cần thêm Policy.**

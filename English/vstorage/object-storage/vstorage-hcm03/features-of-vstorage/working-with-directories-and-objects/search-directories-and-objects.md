@@ -5,7 +5,7 @@ After creating a container and uploading files to that container, you can search
 | <p><br></p> |
 | ----------- |
 
-1. Login into [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn)
+1. Login into [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai)
 2. Select the **project** and **container** for which you want to search the object/ directory.
 3. In the **Search directories and objects** box, you can search for objects/ directories in the following ways:
    1. Search by Name match by prefix:

@@ -40,7 +40,7 @@ Fetch container logs from all replicas of a runtime. Uses offset-based paginatio
 
 ### Portal (GUI)
 
-1. Open [My Agents](https://aiplatform.console.vngcloud.vn/my-agents?tab=runtime) → click into the Runtime
+1. Open [My Agents](https://aiplatform.console.greennode.ai/my-agents?tab=runtime) → click into the Runtime
 2. Open the runtime detail page â†’ **"Monitor"** tab â†’ click an endpoint â†’ **"Log"** section
 
 ![1774581394627](../../../.gitbook/assets/1774581394627.png)

@@ -35,7 +35,7 @@ You can use **Resource Tag** to:
 
 **Step 1:**
 
-1. Go to the [VKS Console](https://vks.console.vngcloud.vn/overview).
+1. Go to the [VKS Console](https://vks.console.greennode.ai/overview).
 2. Click **Create a Kubernetes Cluster / Node Group**.
 
 **Step 2:** Enter tags under **Node Group Metadata Setting**
@@ -49,7 +49,7 @@ You can use **Resource Tag** to:
 
 **Step 1:** Open the **Cluster** detail page
 
-1. Go to the [VKS Console](https://vks.console.vngcloud.vn/overview).
+1. Go to the [VKS Console](https://vks.console.greennode.ai/overview).
 2. Select the **Cluster** that contains the **Node Group** whose tags you want to edit.
 
 **Step 2:** Choose the **Edit Metadata** action

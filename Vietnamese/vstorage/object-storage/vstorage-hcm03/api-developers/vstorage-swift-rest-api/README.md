@@ -12,7 +12,7 @@ Tích hợp các ứng dụng, công cụ phía người dùng của bạn với
 * Làm việc với container: khởi tạo container.
 * Làm việc với object: ví dụ tải lên/ tải xuống /đổi tên/sao chép/xóa đối tượng bằng tempURL.
 
-Để giúp bạn có thể dễ dàng tích hợp cũng như trải nghiệm nhanh các vStorage Swift REST API, chúng tôi cung cấp một tính năng tích hợp thông qua vStorage Portal. Bạn chỉ cần cung cấp thông tin Region, Project, thông tin chứng thực (vStorage credentials) chính xác và sau đó bạn có thể xem thông tin cũng như trải nghiệm các vStorage Swift REST API ngày trên vStorage Portal. Sau khi đã truy cập được các tài nguyên (project, container, object, v.v.) của bạn trên dịch vụ vStorage, để làm việc với các tài nguyên này sử dụng vStorage Swift REST API, bạn có thể tham khảo tại [đây](https://vstorage.console.vngcloud.vn/assets/resources/vos-docx/vStorage-RESTFUL-API.pdf).
+Để giúp bạn có thể dễ dàng tích hợp cũng như trải nghiệm nhanh các vStorage Swift REST API, chúng tôi cung cấp một tính năng tích hợp thông qua vStorage Portal. Bạn chỉ cần cung cấp thông tin Region, Project, thông tin chứng thực (vStorage credentials) chính xác và sau đó bạn có thể xem thông tin cũng như trải nghiệm các vStorage Swift REST API ngày trên vStorage Portal. Sau khi đã truy cập được các tài nguyên (project, container, object, v.v.) của bạn trên dịch vụ vStorage, để làm việc với các tài nguyên này sử dụng vStorage Swift REST API, bạn có thể tham khảo tại [đây](https://vstorage.console.greennode.ai/assets/resources/vos-docx/vStorage-RESTFUL-API.pdf).
 
 ***
 

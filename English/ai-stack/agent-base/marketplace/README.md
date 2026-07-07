@@ -16,7 +16,7 @@ Marketplace is ideal for:
 - Developers who want an agent template to prototype quickly
 - Teams without dedicated AI infrastructure expertise
 
-**Access:** [https://aiplatform.console.vngcloud.vn/agent-marketplace](https://aiplatform.console.vngcloud.vn/agent-marketplace)
+**Access:** [https://aiplatform.console.greennode.ai/agent-marketplace](https://aiplatform.console.greennode.ai/agent-marketplace)
 
 ---
 

@@ -11,7 +11,7 @@ Sau khi bạn đã tạo các project để lưu trữ dữ liệu. Chúng tôi 
 
 &#x20;Sử dụng vStorage portal
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **Báo cáo**, sau đó chọn khoảng thời gian mong muốn tổng hợp dữ liệu trên báo cáo. Mặc định chúng tôi sẽ hiển thị báo cáo trong ngày. Bạn có thể điều chỉnh khoảng thời gian xem báo cáo lên tới 3 tháng thông qua
 

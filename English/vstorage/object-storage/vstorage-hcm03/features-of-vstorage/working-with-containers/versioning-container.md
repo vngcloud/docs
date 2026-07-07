@@ -6,7 +6,7 @@ Versioning is a term used to refer to a specific release or iteration of softwar
 
 &#x20;Use vStorage Portal
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 
 2\. Select the **project** and choose the **container** for which you want to enable versioning.
 

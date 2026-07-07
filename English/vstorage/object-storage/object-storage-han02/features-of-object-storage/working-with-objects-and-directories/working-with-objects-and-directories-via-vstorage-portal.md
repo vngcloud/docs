@@ -6,7 +6,7 @@ Below are the basic features when you work with objects.
 
 To upload an object to a bucket, please follow the steps below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** you want to upload objects to.
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) . Select **the project** and **bucket** you want to upload objects to.
 2. Select **Upload** .
 3. Select **Choose files to upload** or drag the files from your personal device you want to upload into this area.
 4. After dragging or selecting one or more files into this area. Select **Upload.**
@@ -25,7 +25,7 @@ To upload an object to a bucket, please follow the steps below:
 
 To download one or more objects, please follow the steps below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** you want to download the object from.
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) . Select **the project** and **bucket** you want to download the object from.
 2. Select the **objects** you want to download.
 3. Select the action icon, then select the **Download** button
 
@@ -35,7 +35,7 @@ To download one or more objects, please follow the steps below:
 
 To search for an object/ folder, please follow the steps below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** you want to search for object/folder
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) . Select **the project** and **bucket** you want to search for object/folder
 2. In the **Find objects by prefix** box , you can search for objects/folders by prefix by entering the character string that is the prefix you want to search for.
 3. Press **Enter** or select the **Search** icon
 
@@ -45,7 +45,7 @@ To search for an object/ folder, please follow the steps below:
 
 To move an object, please follow the steps below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** containing the object you want to move.
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) . Select **the project** and **bucket** containing the object you want to move.
 2. Select the **Action** icon and select **Move**
 
 <figure><img src="../../../../../.gitbook/assets/image (543).png" alt=""><figcaption></figcaption></figure>
@@ -58,7 +58,7 @@ You can move objects across buckets within a project. We currently do not suppor
 
 To copy an object, please follow the steps below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** containing the object you want to copy.
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) . Select **the project** and **bucket** containing the object you want to copy.
 2. Select the **Action** icon and select **Copy.**
 
 <figure><img src="../../../../../.gitbook/assets/image (544).png" alt=""><figcaption></figcaption></figure>
@@ -71,7 +71,7 @@ You can copy objects across buckets within a project. Currently we do not suppor
 
 To rename an object, please follow the steps below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** containing the object you want to rename.
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) . Select **the project** and **bucket** containing the object you want to rename.
 2. Select the **Action** icon and select **Rename.**
 
 <figure><img src="../../../../../.gitbook/assets/image (545).png" alt=""><figcaption></figcaption></figure>
@@ -86,7 +86,7 @@ When renaming an object, you should not change the file type (e.g. abc.pdf, .pdf
 
 To share an object in a bucket, you can follow the steps below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) .
 2. Select **project, bucket** then select one or more objects **you** want to share.
 3. **Select the Action** icon then select **Share**
 4. Enter **the Expiration time** you want to share the object: the time the access link to the object is valid. You can limit the number of **days** , **hours** , and **minutes** that the access link to the object exists.
@@ -98,7 +98,7 @@ To share an object in a bucket, you can follow the steps below:
 
 To set metadata for an object, please follow the steps below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** containing the object you want to set metadata for.
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) . Select **the project** and **bucket** containing the object you want to set metadata for.
 2. Select the **Action** icon and select **Metadata.**
 
 <figure><img src="../../../../../.gitbook/assets/image (547).png" alt=""><figcaption></figcaption></figure>
@@ -121,7 +121,7 @@ We currently support 8 default metadata key types including: **Cache-Control, Co
 
 To delete one or more objects, you can:
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) .
 
 2\. Select **project, bucket** then select the **objects** you want to delete **.**
 
@@ -135,7 +135,7 @@ After selecting Delete, the system will automatically switch to the main screen.
 
 To initialize a directory, you can:
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) .
 
 2\. Select **the project, bucket** you want to create a directory
 
@@ -153,7 +153,7 @@ Once a directory is created, you cannot change its name. We recommend that the d
 
 To delete a directory, you can:
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) .
 
 2\. Select **the project, bucket** containing the directory you want to delete
 

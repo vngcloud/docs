@@ -17,7 +17,7 @@ Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Pub
   * **Endpoint** để kết nối tới dịch vụ **vServer** (Endpoint Name: vks-vserver-endpoint-...)
   * **Endpoint** để kết nối tới dịch vụ **vStorage** (Endpoint Name: vks-vstorage-endpoint-...)
 
-Bạn có thể xem thông tin 4 private service endpoint thông qua portal vServer theo đường dẫn tại [đây](https://hcm-3.console.vngcloud.vn/vserver/vnetwork/endpoint/list).
+Bạn có thể xem thông tin 4 private service endpoint thông qua portal vServer theo đường dẫn tại [đây](https://hcm-3.console.greennode.ai/vserver/vnetwork/endpoint/list).
 
 <figure><img src="../../.gitbook/assets/vks_endpoint.png" alt=""><figcaption></figcaption></figure>
 
@@ -75,7 +75,7 @@ Bạn có thể xem thông tin 4 private service endpoint thông qua portal vSer
 
 Để khởi tạo một Cluster, hãy làm theo các bước bên dưới:
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Bước 1:** Truy cập vào [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Bước 2:** Tại màn hình **Overview**, chọn **Activate.**
 
@@ -102,7 +102,7 @@ Bạn có thể xem thông tin 4 private service endpoint thông qua portal vSer
 
 Sau khi Cluster được khởi tạo thành công, bạn có thể thực hiện kết nối và kiểm tra thông tin Cluster vừa tạo theo các bước:
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console.vngcloud.vn/k8s-cluster)
+**Bước 1:** Truy cập vào [https://vks.console.greennode.ai/k8s-cluster](https://vks.console.greennode.ai/k8s-cluster)
 
 **Bước 2:** Danh sách Cluster được hiển thị, chọn biểu tượng **Download** và chọn **Download config file** để thực hiện tải xuống file kubeconfig. File này sẽ giúp bạn có toàn quyền truy cập vào Cluster của bạn.
 
@@ -193,8 +193,8 @@ Do Private Cluster chỉ có thể kết nối private tới hệ thống vConta
 #### **Bước 2: Khởi tạo Public Repository và Repository User trên vContainer Registry Portal:**
 
 * Đăng nhập portal vCR tại đường dẫn:
-  * Với `<mark style="color:red;background-color:red;">`**Region HCM**`</mark>`:  [https://vcr.console.vngcloud.vn/list](https://vcr.console.vngcloud.vn/list)
-  * Với `<mark style="color:red;background-color:red;">`**Region HN**`</mark>`: [https://han-1.console.vngcloud.vn/vcr/repository/list](https://han-1.console.vngcloud.vn/vcr/repository/list)
+  * Với `<mark style="color:red;background-color:red;">`**Region HCM**`</mark>`:  [https://vcr.console.greennode.ai/list](https://vcr.console.greennode.ai/list)
+  * Với `<mark style="color:red;background-color:red;">`**Region HN**`</mark>`: [https://han-1.console.greennode.ai/vcr/repository/list](https://han-1.console.greennode.ai/vcr/repository/list)
 * Thực hiện khởi tạo Repositoryvà Repository theo hướng dẫn tại [đây](../../vcontainer-registry/repository/). Ví dụ trong hình dưới, tôi đã khởi tạo demo\_repo với demo\_user có thể pull/ push image:
 
 <figure><img src="../../.gitbook/assets/image (697).png" alt=""><figcaption></figcaption></figure>
@@ -357,7 +357,7 @@ pod/nginx-app-56bbc8fdd8-4pz68   1/1     Running   0          3m32s   172.16.4.2
 
 ---
 
-Lúc này, hệ thống vLB sẽ khởi tạo môt Network Load Balancer, bạn có thể xem thông tin LB này thông qua portal vLB tại [đây](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb).
+Lúc này, hệ thống vLB sẽ khởi tạo môt Network Load Balancer, bạn có thể xem thông tin LB này thông qua portal vLB tại [đây](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb).
 
 <figure><img src="../../.gitbook/assets/image (699).png" alt=""><figcaption></figcaption></figure>
 
@@ -367,7 +367,7 @@ Lúc này, hệ thống vLB sẽ khởi tạo môt Network Load Balancer, bạn 
 http://Endpoint/
 ```
 
-Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao diện vLB. Cụ thể truy cập tại [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb) hoặc [https://han-1.console.vngcloud.vn/vserver/load-balancer/vlb](https://han-1.console.vngcloud.vn/vserver/load-balancer/vlb) tùy theo Region mà bạn khởi tạo Cluster.
+Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao diện vLB. Cụ thể truy cập tại [https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb/](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb) hoặc [https://han-1.console.greennode.ai/vserver/load-balancer/vlb](https://han-1.console.greennode.ai/vserver/load-balancer/vlb) tùy theo Region mà bạn khởi tạo Cluster.
 
 Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://116.118.88.236/](http://116.118.88.236/)
 
@@ -492,7 +492,7 @@ spec:
 kubectl apply -f nginx-ingress.yaml
 ```
 
-Lúc này, hệ thống vLB sẽ khởi tạo môt Application Load Balancer, bạn có thể xem thông tin LB này thông qua portal vLB tại [đây](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb).
+Lúc này, hệ thống vLB sẽ khởi tạo môt Application Load Balancer, bạn có thể xem thông tin LB này thông qua portal vLB tại [đây](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb).
 
 <figure><img src="../../.gitbook/assets/image (1083).png" alt=""><figcaption></figcaption></figure>
 
@@ -502,7 +502,7 @@ Lúc này, hệ thống vLB sẽ khởi tạo môt Application Load Balancer, b�
 http://Endpoint/
 ```
 
-Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao diện vLB. Cụ thể truy cập tại [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb) hoặc [https://han-1.console.vngcloud.vn/vserver/load-balancer/vlb](https://han-1.console.vngcloud.vn/vserver/load-balancer/vlb) tùy theo Region mà bạn khởi tạo Cluster.
+Bạn có thể lấy thông tin Public Endpoint của Load Balancer tại giao diện vLB. Cụ thể truy cập tại [https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb/](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb) hoặc [https://han-1.console.greennode.ai/vserver/load-balancer/vlb](https://han-1.console.greennode.ai/vserver/load-balancer/vlb) tùy theo Region mà bạn khởi tạo Cluster.
 
 Ví dụ, bên dưới tôi đã truy cập thành công vào app nginx với địa chỉ : [http://180.93.181.129/](http://180.93.181.129/)
 

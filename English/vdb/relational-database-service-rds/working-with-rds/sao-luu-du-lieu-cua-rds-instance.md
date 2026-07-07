@@ -8,7 +8,7 @@ GreenNode vDB supports two methods for data backup: on-demand (manual) and daily
 
 ### **A. On-demand Backup (Manual Backup)**
 
-When you need to create a backup, go to the backup management screen for the vDB Relational service [here](https://vdb.console.vngcloud.vn/relational/backup). This screen will list all backups (manual & auto) for all RDS Instances in your account.
+When you need to create a backup, go to the backup management screen for the vDB Relational service [here](https://vdb.console.greennode.ai/relational/backup). This screen will list all backups (manual & auto) for all RDS Instances in your account.
 
 #### Steps to create a backup:
 

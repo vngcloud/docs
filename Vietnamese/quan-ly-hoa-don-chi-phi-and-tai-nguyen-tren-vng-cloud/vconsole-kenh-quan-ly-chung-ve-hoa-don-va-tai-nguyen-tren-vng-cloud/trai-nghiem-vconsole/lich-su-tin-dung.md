@@ -2,7 +2,7 @@
 
 **Lịch sử tín dụng** tại vConsole ghi nhận lại tất cả hoạt động liên quan đến việc thay đổi số dư ví Credit (là ví hỗ trợ thanh toán các sản phẩm / dịch vụ GreenNode Service, quản lý trực tiếp bởi GreenNode Service). Số dư ví Credit có thể thay đổi bởi các hoạt động của người dùng (nạp credit, thanh toán hóa đơn / dịch vụ, thay đổi cấu hình dịch vụ, ngừng sử dụng dịch vụ,...) hoặc các hoạt động chạy ngầm định kỳ bởi hệ thống (auto renew,...)
 
-Truy cập đến trang **Lịch sử tín dụng / Credit history** [**tại đây**](https://dashboard.console.vngcloud.vn/credit-history)**.**
+Truy cập đến trang **Lịch sử tín dụng / Credit history** [**tại đây**](https://dashboard.console.greennode.ai/credit-history)**.**
 
 Tại trang **Lịch sử tín dụng / Credit history**, người dùng sẽ thấy bảng biểu dữ liệu chính, bao gồm các thành phần:
 

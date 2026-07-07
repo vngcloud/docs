@@ -34,7 +34,7 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
 To initialize a Cluster, follow the steps below:
 
-**Step 1:** Access [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Step 1:** Access [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Step 2: On the Overview** screen , select **Activate.**
 
@@ -65,7 +65,7 @@ To initialize a Cluster, follow the steps below:
 
 Below are instructions for deploying an nginx deployment and testing IP assignment for the pods deployed in your cluster.
 
-**Step 1:** Access [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Access [https://vks.console.greennode.ai/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2:** The Cluster list is displayed, select the **Download** icon and select **Download Config File** to download the kubeconfig file. This file will give you full access to your Cluster.
 

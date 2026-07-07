@@ -70,7 +70,7 @@ Bạn có thể tạo một Network ACL tùy chỉnh cho VPC của mình. Mặc 
 
 Để tạo một Network ACL, hãy làm theo các bước bên dưới:&#x20;
 
-1. Truy cập vào trang chủ của dịch vụ vServer tại đường dẫn: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+1. Truy cập vào trang chủ của dịch vụ vServer tại đường dẫn: [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
 2. Trong menu bên trái, chọn **Network**, sau đó chọn **Network ACLs**.
 3. Chọn **Create Network ACL**.
 4. Nhập **Tên** gợi nhớ và chọn **1 VPC đang hoạt động** mà bạn mong muốn tạo Network ACL. Lưu ý: Tên Network ACL chỉ cho phép các chữ cái (a-z, A-Z, 0-9, '\_', '-') và độ dài dữ liệu đầu vào của bạn phải từ 5 đến 50.
@@ -84,7 +84,7 @@ Lúc này, Network ACL của bạn được tạo với thông tin Inbound rule,
 
 Để chỉnh sửa danh sách Inbound rule (các rule cho phép đi vào), hãy làm theo các bước bên dưới:&#x20;
 
-1. Truy cập vào trang chủ của dịch vụ vServer tại đường dẫn: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+1. Truy cập vào trang chủ của dịch vụ vServer tại đường dẫn: [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
 2. Trong menu bên trái, chọn **Network**, sau đó chọn **Network ACLs**.
 3. Tại danh sách các Network ACL đã tạo, chọn vào một **Network ACL**.
 4. Tại mục Inbound rules, chọn **Chỉnh sửa Inbound rules.**
@@ -104,7 +104,7 @@ Lúc này, Network ACL của bạn được tạo với thông tin Inbound rule,
 
 Để chỉnh sửa danh sách Outbound rule (các rule cho phép đi ra), hãy làm theo các bước bên dưới:&#x20;
 
-1. Truy cập vào trang chủ của dịch vụ vServer tại đường dẫn: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+1. Truy cập vào trang chủ của dịch vụ vServer tại đường dẫn: [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
 2. Trong menu bên trái, chọn **Network**, sau đó chọn **Network ACLs**.
 3. Tại danh sách các Network ACL đã tạo, chọn vào một **Network ACL**.
 4. Tại mục Inbound rules, chọn **Chỉnh sửa Outbound rules.**
@@ -126,7 +126,7 @@ Lúc này, Network ACL của bạn được tạo với thông tin Inbound rule,
 
 Để liên kết một subnet với một Network ACL, hãy làm theo các bước bên dưới:
 
-1. Truy cập vào trang chủ của dịch vụ vServer tại đường dẫn: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+1. Truy cập vào trang chủ của dịch vụ vServer tại đường dẫn: [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
 2. Trong menu bên trái, chọn **Network**, sau đó chọn **Network ACLs**.
 3. Tại danh sách các Network ACL đã tạo, chọn vào một **Network ACL**.
 4. Tại mục Subnet association, chọn **Chỉnh sửa Subnet Association.**
@@ -150,7 +150,7 @@ Bạn chỉ có thể xóa Network ACL nếu không có subnet nào được li�
 
 Để xóa một Network ACL, hãy làm theo các bước bên dưới:&#x20;
 
-1. Truy cập vào trang chủ của dịch vụ vServer tại đường dẫn: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+1. Truy cập vào trang chủ của dịch vụ vServer tại đường dẫn: [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
 2. Trong menu bên trái, chọn **Network**, sau đó chọn **Network ACLs**.
 3. Tại Network ACL muốn xóa, chọn biểu tượng  <img src="https://docs.vngcloud.vn/download/thumbnails/71729277/image2024-2-24_18-17-12.png?version=1&#x26;modificationDate=1708921940000&#x26;api=v2" alt="" data-size="line">.
 4. Tại màn hình xác nhận xóa, chọn **Xóa** nếu bạn chắc chắn muốn xóa Network ACLs này hoặc **Hủy bỏ** nếu muốn hủy bỏ việc xóa.

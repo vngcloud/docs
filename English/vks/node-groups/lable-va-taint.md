@@ -20,7 +20,7 @@ Labels are an important feature in Kubernetes, used to organize and manage objec
 
 To create a Lable for a Node Group, follow these instructions:
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2:** At the previously created Cluster, select **Create a Node group.**
 
@@ -111,7 +111,7 @@ tolerations: - key: node.role.kubernetes.io/master effect: NoSchedule
 
 To create a Taint for a Node Group, follow these instructions:
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2:** At the previously created Cluster, select **Create a Node group.**
 

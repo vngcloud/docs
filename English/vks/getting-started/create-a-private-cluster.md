@@ -17,7 +17,7 @@ Previously, public clusters on VKS were using Public IP addresses to communicate
   * **Endpoint to connect to vServer** service (Endpoint Name: vks-vserver-endpoint-...)
   * **Endpoint** to connect to **vStorage** service (Endpoint Name: vks-vstorage-endpoint-...)
 
-You can view information about the 4 private service endpoints through the vServer portal by following the link [here](https://hcm-3.console.vngcloud.vn/vserver/vnetwork/endpoint/list) .
+You can view information about the 4 private service endpoints through the vServer portal by following the link [here](https://hcm-3.console.greennode.ai/vserver/vnetwork/endpoint/list) .
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FOdI0xwO1gNS0GDkVkxbl%252Fimage.png%3Falt%3Dmedia%26token%3D010cc2be-311d-48d0-8005-c0ca67536fd3&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=4d3f8c2d&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
@@ -58,7 +58,7 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
 To initialize a Cluster, follow the steps below:
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Step 2: At the Overview** screen , select **Activate.**
 
@@ -85,7 +85,7 @@ To initialize a Cluster, follow the steps below:
 
 After the Cluster is successfully initialized, you can connect and check the newly created Cluster information by following these steps:
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console.vngcloud.vn/k8s-cluster)
+**Step 1:** Visit [https://vks.console.greennode.ai/k8s-cluster](https://vks.console.greennode.ai/k8s-cluster)
 
 **Step 2:** The Cluster list is displayed, select the **Download** icon and select **Download config file** to download the kubeconfig file. This file will give you full access to your Cluster.
 
@@ -168,7 +168,7 @@ Because Private Cluster can only connect privately to the vContainer Registry (v
 
 **Step 2: Initialize Public Repository and Repository User on vContainer Registry Portal:**
 
-* Log in to the vCR portal at the link: [https://vcr.console.vngcloud.vn/list](https://vcr.console.vngcloud.vn/list)
+* Log in to the vCR portal at the link: [https://vcr.console.greennode.ai/list](https://vcr.console.greennode.ai/list)
 * Perform Repository and Repository initialization according to instructions [here](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vcontainer-registry/repository) . For example in the image below, I have initialized demo\_repo with demo\_user who can pull/push images:
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FldaY7D8dz9T0h70dePRs%252Fimage.png%3Falt%3Dmedia%26token%3D75575e6c-c13f-4d72-a6d3-f8be61eb527b&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=8e092c75&#x26;sv=1" alt=""><figcaption></figcaption></figure>
@@ -305,7 +305,7 @@ pod/nginx-app-56bbc8fdd8-4pz68   1/1     Running   0          3m32s   172.16.4.2
 
 ***
 
-At this time, the vLB system will initialize a Network Load Balancer, you can view this LB information through the vLB portal [here](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb) .
+At this time, the vLB system will initialize a Network Load Balancer, you can view this LB information through the vLB portal [here](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb) .
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FLPLkTsdXXDMLkLwIafyq%252Fimage.png%3Falt%3Dmedia%26token%3Dfd8288ed-2324-4974-92af-61f0983ae6de&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b48c6767&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
@@ -315,7 +315,7 @@ At this time, the vLB system will initialize a Network Load Balancer, you can vi
 http://Endpoint/
 ```
 
-You can get Load Balancer Public Endpoint information at the vLB interface. Specifically, access at [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb)
+You can get Load Balancer Public Endpoint information at the vLB interface. Specifically, access at [https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb/](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb)
 
 For example, below I have successfully accessed the nginx app with the address: [http://116.118.88.236/](http://116.118.88.236/)
 

@@ -2,7 +2,7 @@
 
 Rclone là công cụ giúp đồng hoá dữ liệu và thư mục đến nhiều dịch vụ lưu trữ cloud khác nhau, bao gồm AWS S3, Google Cloud, Dropbox, Google Drive, vStorage v..v... Để biết thêm thông tin về Rclone, hãy xem tại : [https://rclone.org/](https://rclone.org/).
 
-Để thực hiện upload lên vStorage sử dụng rclone trên hệ điều hành Window bạn hãy xem thêm tại: [https://vstorage.console.vngcloud.vn/integration/integration](https://vstorage.console.vngcloud.vn/integration/integration).
+Để thực hiện upload lên vStorage sử dụng rclone trên hệ điều hành Window bạn hãy xem thêm tại: [https://vstorage.console.greennode.ai/integration/integration](https://vstorage.console.greennode.ai/integration/integration).
 
 **Lưu ý:**
 

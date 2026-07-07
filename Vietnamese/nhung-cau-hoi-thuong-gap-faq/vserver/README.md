@@ -102,7 +102,7 @@ Khi khởi tạo Server đã disable user admin .Nếu Bạn muốn sử dụng 
 
 ### \[vServer] Khi tạo Image để backup thì sau khi tạo xong , quản lí Image nằm ở đâu?
 
-Để xem thông tin Image đã tạo, bạn vui lòng truy cập vào [Trang Image](https://hcm-3.console.vngcloud.vn/vserver/block-store/images).
+Để xem thông tin Image đã tạo, bạn vui lòng truy cập vào [Trang Image](https://hcm-3.console.greennode.ai/vserver/block-store/images).
 
 ### \[vServer] Sao không \[connect] được đến các \[port] đang listen trên VPS được
 
@@ -138,7 +138,7 @@ Bạn vui lòng tạo ticket cần hỗ trợ tăng quota và nội dung cần t
 
 ### \[vServer] Hỗ trợ xem ram, cpu, network
 
-Hiện tại GreenNode có dịch vụ vMonitor đang ở bản beta dùng thử miễn phí có thể monitor các thông số đó. Bạn có thể truy cập vào [trang chủ vServer](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), và xem thông số Ram, Cpu, Network tại trang chi tiết Server/ Tab Monitor hoặc có thể xem trực tiếp [trang chủ vMonitor](https://hcm-3.console.vngcloud.vn/vmonitor/dashboard).
+Hiện tại GreenNode có dịch vụ vMonitor đang ở bản beta dùng thử miễn phí có thể monitor các thông số đó. Bạn có thể truy cập vào [trang chủ vServer](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server), và xem thông số Ram, Cpu, Network tại trang chi tiết Server/ Tab Monitor hoặc có thể xem trực tiếp [trang chủ vMonitor](https://hcm-3.console.greennode.ai/vmonitor/dashboard).
 
 ### \[vServer] Tôi muốn giữ wanip cũ để cho server mới thì phải làm như thế nào?
 
@@ -183,7 +183,7 @@ Số lượng user tối đa có thể truy cập cùng lúc vào websi
 
 ### \[vServer] Tại sao tôi không xóa được Certificate và Key cũ, giờ tôi muốn dùng Certificate và Key mới thì làm thế nào ?
 
-Hiện tại chúng tôi không hỗ trợ xóa Certificate, Key cũ trên Load balancer. Nếu bạn muốn dùng Certificate, Key mới xin vui lòng thực hiện tải lên Certificate mới tại [Trang chủ Certificate](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/certificate) (Không trùng name Certificate, Key cũ), sau đó vào [Trang chủ Load balancer ](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)để update lại Certificate mới tại trang chi tiết LB.
+Hiện tại chúng tôi không hỗ trợ xóa Certificate, Key cũ trên Load balancer. Nếu bạn muốn dùng Certificate, Key mới xin vui lòng thực hiện tải lên Certificate mới tại [Trang chủ Certificate](https://hcm-3.console.greennode.ai/vserver/load-balancer/certificate) (Không trùng name Certificate, Key cũ), sau đó vào [Trang chủ Load balancer ](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)để update lại Certificate mới tại trang chi tiết LB.
 
 ### \[vServer] Tại sao tôi không telnet được port XYZ ? Mặc dù tôi đã allow firewall, ACL trên policy group và check status Port XYZ đã listen.
 

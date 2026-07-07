@@ -22,7 +22,7 @@ You can create policies in the vServer Management Console using a visual editor 
 
 **The procedure for creating a backup policy:**
 
-1. Open the vBackup control panel at [https://hcm-3.console.vngcloud.vn/vserver/block-store/backup](https://hcm-3.console.vngcloud.vn/vserver/block-store/backup)
+1. Open the vBackup control panel at [https://hcm-3.console.greennode.ai/vserver/block-store/backup](https://hcm-3.console.greennode.ai/vserver/block-store/backup)
 2. In the navigation menu bar, select **Backup Policy Tab**
 3. Select **Create Backup Policy**
 4. On the Policy creation page, enter the **Policy Name** information in the Basic Information section
@@ -45,7 +45,7 @@ When a backup policy no longer matches business requirements or data scale or re
 
 **Backup policy editing process:**
 
-1. Open the vBackup control panel at [https://hcm-3.console.vngcloud.vn/vserver/block-store/backup](https://hcm-3.console.vngcloud.vn/vserver/block-store/backup)
+1. Open the vBackup control panel at [https://hcm-3.console.greennode.ai/vserver/block-store/backup](https://hcm-3.console.greennode.ai/vserver/block-store/backup)
 2. In the navigation menu bar, select **Backup Policy Tab**
 3. Click **Edit** Backup Policy
 4. You can re-enter the policy name, as well as change all the parameters of the backup time, time zone, as well as the backup calendar set, the number of copies of the Backup Policy that you want to update
@@ -57,7 +57,7 @@ You can delete a backup policy if you no longer need to use it, but it should be
 
 **Backup Policy deleting process:**
 
-1. Open the vBackup control panel at [https://hcm-3.console.vngcloud.vn/vserver/block-store/backup](https://hcm-3.console.vngcloud.vn/vserver/block-store/backup)
+1. Open the vBackup control panel at [https://hcm-3.console.greennode.ai/vserver/block-store/backup](https://hcm-3.console.greennode.ai/vserver/block-store/backup)
 2. In the navigation menu bar, select **Backup Policy Tab**
 3. Select **Delete** Backup Policy
 4. After deleting the backup policy will be lost from the list page

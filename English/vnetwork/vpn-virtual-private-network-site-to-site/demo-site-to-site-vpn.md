@@ -17,7 +17,7 @@ Below is a demonstration of how to connect two LAN networks via the internet sec
 
 ### a.      Create PFsense server
 
-* Access link [https://marketplace.console.vngcloud.vn/overview](https://marketplace.console.vngcloud.vn/overview)
+* Access link [https://marketplace.console.greennode.ai/overview](https://marketplace.console.greennode.ai/overview)
 * Click Launch
 * Choose Flavor (example 2x4)
 * Network Settings: External Interface Priority = 1

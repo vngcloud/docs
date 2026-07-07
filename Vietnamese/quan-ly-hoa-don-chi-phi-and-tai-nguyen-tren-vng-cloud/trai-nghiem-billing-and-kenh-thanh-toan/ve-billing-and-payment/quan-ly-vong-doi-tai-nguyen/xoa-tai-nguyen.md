@@ -23,7 +23,7 @@ Sử dụng tài liệu này như là một hướng dẫn xóa tài nguyên. T�
   * Email thông báo thông tin tài nguyên vừa xóa
   * Tiến hành hoàn trả chi phí tài nguyên chưa sử dụng đối với các tài nguyên có áp dụng hoàn trả phí.
 * **Bước 3: Kiểm tra thông tin**
-  * Người dùng kiểm tra thông tin hoàn trả phí tại user portal, trang Payment history: [https://dashboard.console.vngcloud.vn/payment-history](https://dashboard.console.vngcloud.vn/payment-history)
+  * Người dùng kiểm tra thông tin hoàn trả phí tại user portal, trang Payment history: [https://dashboard.console.greennode.ai/payment-history](https://dashboard.console.greennode.ai/payment-history)
 
 #### **Hướng dẫn tính giá tài nguyên được hoàn trả** <a href="#xoatainguyen-huongdantinhgiatainguyenduochoantra" id="xoatainguyen-huongdantinhgiatainguyenduochoantra"></a>
 

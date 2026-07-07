@@ -31,7 +31,7 @@ YES: fully supports this type of audit logs
 
 By default, GreenNode does not enable the Audit Logs feature, customers need to follow the steps below to activate it:
 
-1. Access the Audit Logs page of the IAM Portal: https://iam.console.vngcloud.vn/audit-logs
+1. Access the Audit Logs page of the IAM Portal: https://iam.console.greennode.ai/audit-logs
 2. Select Set default configuration, a setup popup will appear allowing you to choose to enable ADMIN\_WRITE or SYSTEM\_EVENT
 3. Select to activate the type of audit logs ADMIN\_WRITE or SYSTEM\_EVENT that you desire
 4. Press the Save button to activate
@@ -42,7 +42,7 @@ Once Audit Logs are activated, the system will start saving Audit Logs from the 
 **4.View the Activated Audit Logs**\
 To view the activated Audit Logs, you need to follow these instructions:
 
-1. Access the Log Search section of vMonitor Logs: https://hcm-3.console.vngcloud.vn/vmonitor/log/search
+1. Access the Log Search section of vMonitor Logs: https://hcm-3.console.greennode.ai/vmonitor/log/search
 2. Select Log Project: required to view the stored Audit Logs.&#x20;
 
 For example, the image below shows an action where 1 root user account created a Security Group belonging to vServer at the time 19/06/2023 17:51:57 was recorded.

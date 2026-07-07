@@ -2,7 +2,7 @@
 
 **Event Notification** in vStorage is a feature that allows you to receive notifications about events that occur in your bucket as a JSON file, such as when an object is uploaded, deleted, or overwritten.
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Select **the project** containing **the bucket** you want to set up event notification for.
 

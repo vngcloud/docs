@@ -35,7 +35,7 @@ Or you can choose to use Palo Alto or Pfsense to work with Private Node Group ac
 
 After Palo Alto, Pfsense is successfully initialized, you need to create a Route table to connect to different networks. Specifically, follow these steps to create a Route table:
 
-**Step 1:** Visit [https://hcm-3.console.vngcloud.vn/vserver/network/route-table](https://hcm-3.console.vngcloud.vn/vserver/network/route-table)
+**Step 1:** Visit [https://hcm-3.console.greennode.ai/vserver/network/route-table](https://hcm-3.console.greennode.ai/vserver/network/route-table)
 
 **Step 2:** In the navigation menu bar, select **Network Tab/ Route table.**
 
@@ -62,7 +62,7 @@ After Palo Alto, Pfsense is successfully initialized, you need to create a Route
 
 To initialize a Cluster, follow the steps below:
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2: At the Overview** screen , select **Activate.**
 
@@ -80,7 +80,7 @@ To initialize a Cluster, follow the steps below:
 
 After the Cluster is successfully initialized, you can connect and check the newly created Cluster information by following these steps:
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2:** The Cluster list is displayed, select the icon![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F73762068%2Fimage2024-4-4\_14-37-11.png%3Fversion%3D1%26modificationDate%3D1712223012000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=57dcd547\&sv=1)and select **Download config file** to download the kubeconfig file. This file will give you full access to your Cluster.
 
@@ -187,7 +187,7 @@ pod/nginx-app-7f45b65946-t7d7k   1/1     Running   0          2m16s   172.16.24.
 http://Endpoint/
 ```
 
-You can get Load Balancer Public Endpoint information at the vLB interface. Specifically, access at [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb)
+You can get Load Balancer Public Endpoint information at the vLB interface. Specifically, access at [https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb/](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb)
 
 For example, below I have successfully accessed the nginx app with the address: [http://180.93.181.20/](http://180.93.181.20/)
 

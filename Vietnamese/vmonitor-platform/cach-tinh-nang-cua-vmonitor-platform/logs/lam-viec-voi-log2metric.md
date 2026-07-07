@@ -32,7 +32,7 @@ Các quy tắc sau áp dụng cho việc đặt tên metric trong vStorage:
 
 Để khởi tạo một metric từ log của bạn, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor/).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor/).
 2. Chọn thư mục **Log**, sau đó chọn menu **Log2metric**.
 3. Chọn **Create a Metric**.
 4. Nhập **Metric name**. Tên metric phải tuân thủ theo quy định của chúng tôi, chi tiết được mô tả bên trên.
@@ -54,7 +54,7 @@ Các **điểm dữ liệu** cho Log2metric vừa tạo được định kỳ t�
 
 Để chỉnh sửa metric đã được tạo từ logs trước đó, hãy làm theo hướng dẫn bên dưới:&#x20;
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
+1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.greennode.ai/vmonitor)&#x20;
 2. Chọn thư mục **Log**, sau đó chọn menu **Log2metric**.
 3. Tại **Metric** mà bạn muốn chỉnh sửa, chọn **Edit**.
 4. Chỉnh sửa các thông số cho biểu đồ mà bạn mong muốn. Các thông số mà bạn có thể chỉnh sửa bao gồm: **Log filter, Advanced query**. Việc chỉnh sửa này tương tự như khi bạn thực hiện tạo mới một Widget.
@@ -68,7 +68,7 @@ Bạn đã khởi tạo một metric từ một log project tương ứng. Metri
 
 Để xóa một project, bạn hãy làm theo hướng dẫn:&#x20;
 
-1\. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor/).
+1\. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor/).
 
 2\. Chọn thư mục **Log**, sau đó chọn menu **Log2metric**.
 

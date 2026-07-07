@@ -301,7 +301,7 @@ Delete resources in this order to avoid dependency errors:
 
 #### Portal (GUI)
 
-1. Open https://aiplatform.console.vngcloud.vn/runtime → click the runtime → **"Delete"** → confirm
+1. Open https://aiplatform.console.greennode.ai/runtime → click the runtime → **"Delete"** → confirm
 
 #### RESTful API
 
@@ -357,7 +357,7 @@ asyncio.run(client.delete_oauth2_provider_async(name="google-oauth"))
 
 #### Portal (GUI)
 
-1. Open https://aiplatform.console.vngcloud.vn/identity → find the identity → **"Delete"** → confirm
+1. Open https://aiplatform.console.greennode.ai/identity → find the identity → **"Delete"** → confirm
 
 #### RESTful API
 
@@ -378,7 +378,7 @@ asyncio.run(client.delete_agent_identity_async(name="my-agent"))
 
 #### Portal (GUI)
 
-1. Open https://aiplatform.console.vngcloud.vn/memory → click the memory → **"Delete"** → confirm
+1. Open https://aiplatform.console.greennode.ai/memory → click the memory → **"Delete"** → confirm
 
 #### RESTful API
 
@@ -412,7 +412,7 @@ asyncio.run(memory_client.delete_async(id="<memory-id>"))
 
 #### Portal (GUI)
 
-1. Open https://vcr.console.vngcloud.vn → navigate to the repository → delete all images first → delete the repository
+1. Open https://vcr.console.greennode.ai → navigate to the repository → delete all images first → delete the repository
 
 #### RESTful API
 

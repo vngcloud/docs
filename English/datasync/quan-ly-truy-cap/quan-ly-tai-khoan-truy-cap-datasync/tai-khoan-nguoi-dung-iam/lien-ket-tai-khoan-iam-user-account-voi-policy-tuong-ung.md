@@ -2,7 +2,7 @@
 
 Sau khi bạn đã khởi tạo IAM User Account và Policy mong muốn, tiếp theo bạn cần liên kết tài khoản IAM User Account vào policy theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/) với tài khoản Root User Account.
+1. Đăng nhập vào [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/) với tài khoản Root User Account.
 2. Chọn thư mục **User Account.**
 3. Chọn **IAM User Account** muốn thực hiện gán quyền.
 4. Chọn **Attach policies**.

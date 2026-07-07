@@ -28,7 +28,7 @@ VNG Cloud Load Balancer Controller đơn giản hóa việc triển khai và qu�
 
 #### Tạo Service Account và cài đặt VNG Cloud LoadBalancer Controller
 
-* Tạo hoặc sử dụng **service account** đã tạo trên IAM và gắn policy: **vLBFullAccess**, **vServerFullAccess**. Để tạo service account, truy cập [tại đây](https://iam.console.vngcloud.vn/service-accounts) và thực hiện theo các bước sau:
+* Tạo hoặc sử dụng **service account** đã tạo trên IAM và gắn policy: **vLBFullAccess**, **vServerFullAccess**. Để tạo service account, truy cập [tại đây](https://iam.console.greennode.ai/service-accounts) và thực hiện theo các bước sau:
   * Chọn "**Create a Service Account**", nhập tên cho Service Account và nhấn **Next Step** để gán quyền cho Service Account
   * Tìm và chọn **Policy: vLBFullAccess và Policy: vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess và Policy: vServerFullAccess được tạo bởi VNG Cloud, bạn không thể xoá các policy này.
   * Sau khi tạo thành công, bạn cần lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.

@@ -8,8 +8,8 @@ Before a service expires, the system will send a notification email about automa
 
 The system will automatically renew 3 days before the service expires:
 
-* If there is enough credit, it will proceed to renew all services. Whether the renewal is successful or unsuccessful, we will send an email containing information about the successful/unsuccessful renewal. The payment history for service renewal will also be stored in the vConsole system. For more information, please visit the [Dashboard vConsole](https://dashboard.console.vngcloud.vn/payment-history).
-* If there is not enough credit, the system will attempt to renew services until there is not enough credit. Whether the renewal is successful or unsuccessful, we will send an email containing information about the successful/unsuccessful renewal. The payment history for service renewal will also be stored in the vConsole system. For more information, please visit the [Dashboard vConsole](https://dashboard.console.vngcloud.vn/payment-history).
+* If there is enough credit, it will proceed to renew all services. Whether the renewal is successful or unsuccessful, we will send an email containing information about the successful/unsuccessful renewal. The payment history for service renewal will also be stored in the vConsole system. For more information, please visit the [Dashboard vConsole](https://dashboard.console.greennode.ai/payment-history).
+* If there is not enough credit, the system will attempt to renew services until there is not enough credit. Whether the renewal is successful or unsuccessful, we will send an email containing information about the successful/unsuccessful renewal. The payment history for service renewal will also be stored in the vConsole system. For more information, please visit the [Dashboard vConsole](https://dashboard.console.greennode.ai/payment-history).
 
 &#x20;Enable the auto-renew feature when creating a project
 
@@ -23,7 +23,7 @@ The system will automatically renew 3 days before the service expires:
 
 &#x20;Enable the auto-renewal feature on a previously created project
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 2. Select the **icon** ![](https://docs.vngcloud.vn/download/thumbnails/67994048/image2023-3-6\_10-2-51.png?version=1\&modificationDate=1700549842000\&api=v2) for the project for which you want to set up auto-renew. Click on the icon ![](https://docs.vngcloud.vn/download/thumbnails/67994048/image2023-11-21\_14-3-59.png?version=1\&modificationDate=1700550240000\&api=v2)
 3. The **Enable auto-renew** screen will appear. Choose the desired **renewal period**.
 4. Select **OK**. For more information on the storage packages we offer, see [Charging Fee](https://docs.vngcloud.vn/display/VSEN/Charging+Fee).
@@ -34,7 +34,7 @@ After successfully completing these steps, the new storage period with auto-rene
 
 &#x20;Disable the auto-renewal feature on a previously created project
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Select the icon ![](https://docs.vngcloud.vn/download/thumbnails/67994048/image2023-3-6\_10-2-51.png?version=1\&modificationDate=1700549842000\&api=v2)for the **project** for which you want to disable auto-renew. Click on the icon ![](https://docs.vngcloud.vn/download/thumbnails/67994048/image2023-11-21\_14-8-49.png?version=1\&modificationDate=1700550530000\&api=v2).
 3. The **Disable auto-renew** screen will appear.
 4. Select **OK.** For more information on the storage packages we offer, see [Charging Fee](https://docs.vngcloud.vn/display/VSEN/Charging+Fee).

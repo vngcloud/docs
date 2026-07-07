@@ -16,7 +16,7 @@ Overall, the route table is a data structure containing routing entries, while a
 
 Use the guide below to create a new Route table:
 
-1. Open the vServer homepage at: [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview).
+1. Open the vServer homepage at: [https://hcm-3.console.greennode.ai/vserver/overview](https://hcm-3.console.greennode.ai/vserver/overview).
 2. In the navigation menu, select the **Network/Route table** tab.
 3. Click **Create Route table**.
 4. For **Name**, enter a descriptive name for the Route table. The Route table name can include letters (a-z, A-Z, 0-9, '\_', '-'). The input length should be between 5 and 50 characters. It must not include leading or trailing spaces.
@@ -29,7 +29,7 @@ You can add, delete, and modify Routes in your Route table. You can only modify 
 
 To update Routes for a Route table using the control panel:
 
-1. Open the vServer homepage at: [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview).
+1. Open the vServer homepage at: [https://hcm-3.console.greennode.ai/vserver/overview](https://hcm-3.console.greennode.ai/vserver/overview).
 2. In the navigation menu, select the **Network/Route table tab**.
 3. Select a Route table, then click **Edit Routes**.
 4. In the Add new **Route** section, enter the following information:
@@ -50,7 +50,7 @@ For Target, enter the **Target CIDR**.
 
 You can delete a Route table if you no longer need it. To delete a Route table using the routing table:
 
-1. Open the vServer homepage at: [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview).
+1. Open the vServer homepage at: [https://hcm-3.console.greennode.ai/vserver/overview](https://hcm-3.console.greennode.ai/vserver/overview).
 2. In the navigation menu, select the **Network/Route table** tab.
 3. Select the Route table to delete, then select the **Delete** action.
 4. Click **Confirm**.

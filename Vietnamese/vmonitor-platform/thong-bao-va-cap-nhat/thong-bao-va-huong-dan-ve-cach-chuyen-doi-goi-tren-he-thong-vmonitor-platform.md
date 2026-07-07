@@ -26,7 +26,7 @@ Sẽ có vài lưu ý khi thực hiện chuyển gói trên hệ thống vMonito
 
 Dưới đây là hướng dẫn chi tiết về cách chuyển đổi gói trên hệ thống vMonitor Platform:
 
-* **Bước 1:** Truy cập vào hệ thống vMonitor Platform tại [https://hcm-3.console.vngcloud.vn/vmonitor/quota-usage/quota](https://hcm-3.console.vngcloud.vn/vmonitor/quota-usage/quota).
+* **Bước 1:** Truy cập vào hệ thống vMonitor Platform tại [https://hcm-3.console.greennode.ai/vmonitor/quota-usage/quota](https://hcm-3.console.greennode.ai/vmonitor/quota-usage/quota).
 * **Bước 2:** Đăng nhập vào tài khoản của Quý khách hàng.
 * **Bước 3:** Chọn **Usage & Quota** từ menu bên trái.
 * **Bước 4:** Lúc này, bạn sẽ thấy gợi ý chuyển đổi gói trên giao diện của bạn. Chọn **Convert.**

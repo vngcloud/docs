@@ -36,7 +36,7 @@ The Backup Now feature allows you to perform an immediate data backup session by
 
 ### Method 1: Backup now from Backup Server <a href="#cach-1-backup-now-tu-backup-server" id="cach-1-backup-now-tu-backup-server"></a>
 
-1. Access the Backup Server management page here: [https://backupcenter.console.vngcloud.vn/backup-server/list](https://backupcenter.console.vngcloud.vn/backup-server/list)
+1. Access the Backup Server management page here: [https://backupcenter.console.greennode.ai/backup-server/list](https://backupcenter.console.greennode.ai/backup-server/list)
 2. Select the Backup Server to perform Backup Now.
 3.  Find and click "Backup Now" as shown below
 
@@ -51,7 +51,7 @@ The Backup Now feature allows you to perform an immediate data backup session by
 
 ### Method 2: Backup now from Server <a href="#cach-2-backup-now-tu-server" id="cach-2-backup-now-tu-server"></a>
 
-1. Access the Server management page here: [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)
+1. Access the Server management page here: [https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server)
 2. Select the Server to perform Backup Now.
 3.  Find and click "Backup Now" as shown below.
 

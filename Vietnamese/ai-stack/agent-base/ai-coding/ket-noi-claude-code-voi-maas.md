@@ -6,7 +6,7 @@
 
 ## Điều kiện cần (Prerequisites)
 
-* Đã có tài khoản [AI Platform](https://aiplatform.console.vngcloud.vn/)
+* Đã có tài khoản [AI Platform](https://aiplatform.console.greennode.ai/)
 * Claude Code CLI đã cài đặt
 
 {% hint style="info" %}
@@ -17,7 +17,7 @@ LLM URL cho Claude Code dùng **Anthropic API protocol**: `https://maas-llm-aipl
 
 ## Bước 1 — Lấy API key từ AI Platform
 
-1. Đăng nhập [AI Platform Console](https://aiplatform.console.vngcloud.vn/)
+1. Đăng nhập [AI Platform Console](https://aiplatform.console.greennode.ai/)
 2. Vào **API Keys** → **Create API Key**
 3. Đặt tên theo format `claude-code-<tên-bạn>` (5–50 ký tự, chữ thường + số + gạch ngang)
 4. Copy API key vừa tạo
@@ -106,7 +106,7 @@ Kết quả mong đợi:
 * Base URL trỏ đến `maas-llm-aiplatform-hcm.api.vngcloud.vn`
 * Model hiển thị đúng với cấu hình
 
-Xác nhận request được ghi nhận tại [AI Platform Console → Usage](https://aiplatform.console.vngcloud.vn/).
+Xác nhận request được ghi nhận tại [AI Platform Console → Usage](https://aiplatform.console.greennode.ai/).
 
 ***
 
@@ -127,7 +127,7 @@ Xác nhận request được ghi nhận tại [AI Platform Console → Usage](ht
 ## Billing & Usage
 
 * Request đi qua GreenNode MaaS được tính phí bằng credit-token (1 credit = 1 VND)
-* Xem usage real-time trên [AI Platform Console → Usage](https://aiplatform.console.vngcloud.vn/)
+* Xem usage real-time trên [AI Platform Console → Usage](https://aiplatform.console.greennode.ai/)
 * **Prepaid:** credit bị trừ mỗi chu kỳ collect 5 phút — khi hết credit, model bị tắt tự động
 * **Postpaid:** usage được ghi nợ, không giới hạn quota
 
@@ -155,4 +155,4 @@ Sau khi hoàn thành, Claude Code CLI sẽ route toàn bộ request qua GreenNod
 | Tôi muốn tiếp theo...                | Đi đến                                                                                |
 | ------------------------------------ | ------------------------------------------------------------------------------------- |
 | Dùng OpenAI-compatible tool với MaaS | [Kết nối OpenAI-compatible với GreenNode MaaS](ket-noi-openai-compatible-voi-maas.md) |
-| Xem usage và billing                 | [AI Platform Console](https://aiplatform.console.vngcloud.vn/)                        |
+| Xem usage và billing                 | [AI Platform Console](https://aiplatform.console.greennode.ai/)                        |

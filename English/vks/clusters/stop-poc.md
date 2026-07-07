@@ -9,7 +9,7 @@ Before learning how to Stop POC for your resources on VKS, you should clearly un
 
 **To continue using the resource that just stopped POC as a normal resource (for the purpose of keeping the configuration intact), the user can do:**
 
-**Step 1:** Access [VKS Portal](https://vks.console.vngcloud.vn/k8s-cluster) , select the Cluster where you want to Stop POC.
+**Step 1:** Access [VKS Portal](https://vks.console.greennode.ai/k8s-cluster) , select the Cluster where you want to Stop POC.
 
 **Step 2:** Select the **Stop POC** button on the top right corner of the screen.
 

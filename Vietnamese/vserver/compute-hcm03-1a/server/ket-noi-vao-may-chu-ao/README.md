@@ -14,7 +14,7 @@ Một số trường hợp cần phải dùng phương pháp kết nối này đ
 
 #### Cách thực hiện <a href="#ketnoivaomaychuao-cachthuchien" id="ketnoivaomaychuao-cachthuchien"></a>
 
-1. Truy cập vào trang Server tại bảng điều khiển: [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)
+1. Truy cập vào trang Server tại bảng điều khiển: [https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server)
 2. Tại trang **Server**, xác định máy chủ muốn kết nối, tại **Menu** lựa chọn ở bên phải, chọn **Console** để mở cửa sổ quản lý server qua console
 3. Bạn sẽ cần mật khẩu hệ điều hành của máy chủ để đăng nhập
 4. Bạn cũng có thể gọi tổ hợp phím tắt CTRL+ALT+DEL để thực hiện khởi động lại máy chủ bằng cách nhấn vào nút **Send CtrlAltDel** ở góc trên bên phải.

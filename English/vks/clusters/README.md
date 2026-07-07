@@ -16,7 +16,7 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
 To initialize a Cluster, follow the steps below:
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2: At the Overview** screen , select **Activate.**
 
@@ -64,7 +64,7 @@ To initialize a Cluster, follow the steps below:
 
 ## Download the Kube Config file <a href="#clusters-taixuongteptinkubeconfig" id="clusters-taixuongteptinkubeconfig"></a>
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2: At the Overview** screen , select the **Kubernetes Cluster menu.**
 
@@ -94,7 +94,7 @@ To initialize a Cluster, follow the steps below:
 * Persistent Volume is integrated into the Cluster by you.
 {% endhint %}
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2: At the Overview** screen , select the **Kubernetes Cluster menu.**
 

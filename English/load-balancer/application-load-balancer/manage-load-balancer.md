@@ -15,7 +15,7 @@ To use the vLB service on GreenNode, the first thing you need to do is create a 
 
 **Steps to Create an Application Load Balancer:**
 
-1. Access the Load Balancer homepage: `https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb`
+1. Access the Load Balancer homepage: `https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb`
 2. On the Load Balancer homepage, click "Create a Load Balancer."
 3. **Choose Load Balancer Configuration:**
    * **Load Balancer Name:** If you don't enter a name, the system will generate one automatically. Note that the Load Balancer name cannot be changed during use, so you should proactively enter a name if you need to manage it by name.
@@ -56,7 +56,7 @@ To use the vLB service on GreenNode, the first thing you need to do is create a 
 
 To view a list of all available Load Balancers in the system:
 
-1. Go to the Load Balancer homepage: `https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb`
+1. Go to the Load Balancer homepage: `https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb`
 
 The homepage will display a list of Load Balancers, including information such as:
 

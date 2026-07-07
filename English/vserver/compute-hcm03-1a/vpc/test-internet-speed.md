@@ -86,7 +86,7 @@ Fast is a perfect tool for those who just want to check download speed in a very
 
 ### Monitoring Internet Speed with vMonitor on the dashboard <a href="#kiemtratocdointernet-giamsattocdointernetbangvmonitortrenbangdieukhien" id="kiemtratocdointernet-giamsattocdointernetbangvmonitortrenbangdieukhien"></a>
 
-* You can access the vMonitor homepage at: [https://hcm-3.console.vngcloud.vn/vmonitor/dashboard](https://hcm-3.console.vngcloud.vn/vmonitor/dashboard) to monitor the internet speed of your server.<br>
+* You can access the vMonitor homepage at: [https://hcm-3.console.greennode.ai/vmonitor/dashboard](https://hcm-3.console.greennode.ai/vmonitor/dashboard) to monitor the internet speed of your server.<br>
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/63766895/image2023-8-14_15-24-20.png?version=1&#x26;modificationDate=1692001461000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 

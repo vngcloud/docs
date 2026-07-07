@@ -6,7 +6,7 @@
 
 ## Prerequisites
 
-- An active [AI Platform](https://aiplatform.console.vngcloud.vn/) account
+- An active [AI Platform](https://aiplatform.console.greennode.ai/) account
 - Claude Code CLI installed
 
 {% hint style="info" %}
@@ -17,7 +17,7 @@ Claude Code uses the **Anthropic API protocol**. The LLM URL is `https://maas-ll
 
 ## Step 1 — Get an API key from AI Platform
 
-1. Log in to [AI Platform Console](https://aiplatform.console.vngcloud.vn/)
+1. Log in to [AI Platform Console](https://aiplatform.console.greennode.ai/)
 2. Go to **API Keys** → **Create API Key**
 3. Name the key using the format `claude-code-<your-name>` (5–50 chars, lowercase letters, numbers, and hyphens)
 4. Copy the API key — it is shown only once
@@ -106,7 +106,7 @@ Expected result:
 - Base URL points to `maas-llm-aiplatform-hcm.api.vngcloud.vn`
 - Model matches your configuration
 
-Confirm requests are recorded in [AI Platform Console → Usage](https://aiplatform.console.vngcloud.vn/).
+Confirm requests are recorded in [AI Platform Console → Usage](https://aiplatform.console.greennode.ai/).
 
 ---
 
@@ -127,7 +127,7 @@ Confirm requests are recorded in [AI Platform Console → Usage](https://aiplatf
 ## Billing & Usage
 
 - Requests through GreenNode MaaS are billed in credit-tokens (1 credit = 1 VND)
-- View real-time usage on [AI Platform Console → Usage](https://aiplatform.console.vngcloud.vn/)
+- View real-time usage on [AI Platform Console → Usage](https://aiplatform.console.greennode.ai/)
 - **Prepaid:** credits are deducted every 5-minute collection cycle — when credits run out, the model is automatically disabled
 - **Postpaid:** usage is recorded as a debt with no quota limit
 
@@ -155,4 +155,4 @@ After completing setup, Claude Code CLI routes all requests through GreenNode Ma
 | I want to... | Go to |
 |---|---|
 | Use an OpenAI-compatible tool with MaaS | [Connect OpenAI-compatible Clients to GreenNode MaaS](connect-openai-compatible-to-maas.md) |
-| View usage and billing | [AI Platform Console](https://aiplatform.console.vngcloud.vn/) |
+| View usage and billing | [AI Platform Console](https://aiplatform.console.greennode.ai/) |

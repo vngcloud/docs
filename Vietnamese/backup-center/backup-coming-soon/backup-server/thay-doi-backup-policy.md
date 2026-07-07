@@ -13,7 +13,7 @@ Việc cập nhật backup policy là một hoạt động thường xuyên đ�
 
 Đầu tiên, bạn cần truy cập vào trang backup server để chọn các backup server cần thay đổi policy
 
-* Truy cập trang backup server tại đây: [https://backupcenter.console.vngcloud.vn/backup-server/list](https://backupcenter.console.vngcloud.vn/backup-server/list)
+* Truy cập trang backup server tại đây: [https://backupcenter.console.greennode.ai/backup-server/list](https://backupcenter.console.greennode.ai/backup-server/list)
 *   Tìm và **chọn các backup server** cần cập nhật policy, sau đó nhấn chọn **Change policy.**&#x20;
 
     <figure><img src="../../../.gitbook/assets/image (780).png" alt=""><figcaption></figcaption></figure>

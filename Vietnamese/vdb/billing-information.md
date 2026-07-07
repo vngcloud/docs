@@ -38,7 +38,7 @@ Billing Dashboard cung cấp cho bạn cái nhìn tổng quan về các DB cloud
 
 ## **Hướng dẫn sử dụng**
 
-* **Bước 1 Truy cập Billing Dashboard:** Đăng nhập vào tài khoản của bạn và truy cập vào trang Billing Dashboard tại đây: [https://vdb.console.vngcloud.vn/billing](https://vdb.console.vngcloud.vn/billing)
+* **Bước 1 Truy cập Billing Dashboard:** Đăng nhập vào tài khoản của bạn và truy cập vào trang Billing Dashboard tại đây: [https://vdb.console.greennode.ai/billing](https://vdb.console.greennode.ai/billing)
 * **Bước 2 Thực hiện hành động:** Chọn Action tại instance cần thực hiện (tham khảo hình bên dưới)
   * Nhấp vào nút "Renew resource" để gia hạn thời gian sử dụng hoặc khôi phục tài nguyên sau khi hết hạn.
   * Nhấp vào nút "Stop POC" để chuyển dang sử dụng thường.

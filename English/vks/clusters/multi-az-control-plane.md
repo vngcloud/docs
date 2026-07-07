@@ -120,7 +120,7 @@ The Control Plane upgrade process for Multi-AZ Cluster is **the same** as for Si
 
 The process for deleting a Multi-AZ Cluster is **similar** to a Single-AZ Cluster:
 
-1. Navigate to [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console.vngcloud.vn/k8s-cluster)
+1. Navigate to [https://vks.console.greennode.ai/k8s-cluster](https://vks.console.greennode.ai/k8s-cluster)
 2. Select the cluster you want to delete and choose **Delete**
 3. Confirm the deletion
 

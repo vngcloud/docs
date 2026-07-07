@@ -4,7 +4,7 @@ Use this guide to add a new pool or update an existing one in your Application L
 
 ## Adding a New Pool
 
-1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb`.
+1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb`.
 2. **Select Your Load Balancer:** Click on the Load Balancer where you want to add the new pool.
 3. **Go to the Pool Tab:** In the Load Balancer details page, select the "Pool" tab.
 4. **Click "Add New Pool":** A pop-up window will appear, allowing you to configure the pool's information.
@@ -18,7 +18,7 @@ Use this guide to add a new pool or update an existing one in your Application L
 
 ## Updating a Pool
 
-1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb`.
+1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb`.
 2. **Select Your Load Balancer:** Click on the Load Balancer containing the pool you want to edit.
 3. **Go to the Pool Tab:** In the Load Balancer details page, select the "Pool" tab.
 4. **Click "Edit":** Hover over the pool you want to edit and click the "Edit" icon.

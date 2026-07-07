@@ -16,7 +16,7 @@ Overall, policies determine how the Load Balancer, specifically the listener, wi
 
 To add a policy to a listener:
 
-1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb`.
+1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb`.
 2. **Select Your Load Balancer:** Click on the Load Balancer you want to configure.
 3. **Go to the Listener Tab:** In the Load Balancer details page, select the "Listener" tab.
 4. **Choose the Listener:** Click on the listener where you want to add the policy.

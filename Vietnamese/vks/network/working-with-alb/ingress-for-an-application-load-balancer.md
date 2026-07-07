@@ -5,7 +5,7 @@
 ### Chuẩn bị <a href="#ingressforanapplicationloadbalancer-chuanbi" id="ingressforanapplicationloadbalancer-chuanbi"></a>
 
 * Tạo một Kubernetes cluster trên GreenNode, hoặc sử dụng một cluster đã có. Lưu ý: đảm bảo bạn đã tải xuống cluster configuration file sau khi cluster được khởi tạo thành công và truy cập vào cluster của bạn.
-* Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **vLBFullAccess**, **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://iam.console.vngcloud.vn/service-accounts) và thực hiện theo các bước sau:
+* Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **vLBFullAccess**, **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://iam.console.greennode.ai/service-accounts) và thực hiện theo các bước sau:
   * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
   * Tìm và chọn **Policy:** **vLBFullAccess và Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do GreenNode tạo ra, bạn không thể xóa các policy này.
   * Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
@@ -29,7 +29,7 @@ Khi bạn thực hiện khởi tạo Cluster theo hướng dẫn bên trên, n�
 
 **Khởi tạo Service Account**
 
-* Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **vLBFullAccess**, **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://iam.console.vngcloud.vn/service-accounts) và thực hiện theo các bước sau:
+* Khởi tạo hoặc sử dụng một **service account** đã tạo trên IAM và gắn policy: **vLBFullAccess**, **vServerFullAccess**. Để tạo service account bạn truy cập tại [đây](https://iam.console.greennode.ai/service-accounts) và thực hiện theo các bước sau:
   * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
   * Tìm và chọn **Policy:** **vLBFullAccess và Policy:** **vServerFullAccess**, sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vLBFullAccess vàPolicy: vServerFullAccess do GreenNode tạo ra, bạn không thể xóa các policy này.
   * Sau khi tạo thành công bạn cần phải lưu lại **Client\_ID** và **Secret\_Key** của Service Account để thực hiện bước tiếp theo.
@@ -176,7 +176,7 @@ spec:
 kubectl apply -f nginx-ingress.yaml
 ```
 
-Sau khi bạn đã thực hiện triển khai Ingress , Chúng tôi sẽ tự động tạo 1 ALB trên cluster của bạn. ALB này sẽ hiển thị trên vLB Portal, chi tiết truy cập tại [đây.](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb) ALB này sẽ có thông tin mặc định:
+Sau khi bạn đã thực hiện triển khai Ingress , Chúng tôi sẽ tự động tạo 1 ALB trên cluster của bạn. ALB này sẽ hiển thị trên vLB Portal, chi tiết truy cập tại [đây.](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb) ALB này sẽ có thông tin mặc định:
 
 <table data-header-hidden><thead><tr><th width="177"></th><th width="120"></th><th></th></tr></thead><tbody><tr><td><strong>Thành phần</strong></td><td><strong>Số lượng</strong></td><td><strong>Thuộc tính</strong></td></tr><tr><td>ALB Package</td><td>1</td><td>VNG ALB_Small</td></tr><tr><td>Listener</td><td>2</td><td><ul><li>1 listener với protocol HTTP và port 80</li><li>1 listener với protocol HTTPS và port 443</li></ul></td></tr><tr><td>Pool</td><td>1</td><td><ul><li>1 pool default protocol HTTP và algorithm ROUND ROBIN</li></ul></td></tr><tr><td>Health Check</td><td>1</td><td><ul><li>Sử dụng TCP để health check các member.</li></ul></td></tr></tbody></table>
 

@@ -7,7 +7,7 @@ This guide will walk you through the process of adding members to a pool in your
 
 #### 1. Attaching/Updating Members as Available Instances
 
-1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb`.
+1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb`.
 2. **Select Your Load Balancer and Pool:** Click on the Load Balancer you want to configure, then select the "Pool" tab. In the pool list, click on the pool you want to attach/edit members to.
 3. **Edit Pool Members:** In the pool details on the left, scroll down to the "Member Information" section and click "Edit Pool Members."
 4. **Available Instances:** The "Available Instances" section will display a list of backend servers available within the Load Balancer's subnet.
@@ -23,7 +23,7 @@ This guide will walk you through the process of adding members to a pool in your
 
 In addition to attaching pool members through backend servers, you can also attach IP addresses as pool members. Follow these steps:
 
-1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb`.
+1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb`.
 2. **Select Your Load Balancer and Pool:** Click on the Load Balancer you want to configure, then select the "Pool" tab. In the pool list, click on the pool you want to attach/edit members to.
 3. **Edit Pool Members:** In the pool details on the left, scroll down to the "Member Information" section and click "Edit Pool Members."
 4. **Custom Instances:** In the "Custom Instances" section, follow these steps to attach IP addresses to the pool:

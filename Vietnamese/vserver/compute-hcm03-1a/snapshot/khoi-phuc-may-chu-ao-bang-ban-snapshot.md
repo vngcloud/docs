@@ -37,13 +37,13 @@ Bạn chỉ có thể khôi phục máy chủ ảo với bản Snapshot của Bo
 
 ### **Khôi phục máy chủ ảo bằng Snapshot trên bảng điều khiển** <a href="#khoiphucmaychuaobangbansnapshot-khoiphucmaychuaobangsnapshottrenbangdieukhien" id="khoiphucmaychuaobangbansnapshot-khoiphucmaychuaobangsnapshottrenbangdieukhien"></a>
 
-1. Mở bảng điều khiển vServer tại [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
+1. Mở bảng điều khiển vServer tại [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/).
 2. Trong ngăn điều hướng, chọn **Snapshot**.
 3. Chọn Snapshot của bản Boot Volume tại trang danh sách rồi chọn **Hành động**, nhấn Rollback Serve&#x72;**.**
 
 ### **Tạo máy chủ (Server) bằng Snapshot trên Màn hình Tạo Server**  <a href="#khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhtaoserversnapshotcreateserve" id="khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhtaoserversnapshotcreateserve"></a>
 
-1. Đăng nhập và mở bảng điều kiển vServer tại [https://hcm-3.console.vngcloud.vn/vserver](https://hcm-3.console.vngcloud.vn/vserver/);
+1. Đăng nhập và mở bảng điều kiển vServer tại [https://hcm-3.console.greennode.ai/vserver](https://hcm-3.console.greennode.ai/vserver/);
 2. Trong ngăn điều hướng, chọn **Servers**;
 3. Chọn nút "**Tạo Server**" (Create a Server), để điều hướng tới màn hình Tạo Server;
 4. Để cấu hình Tạo Server bằng trên snapshot. Tại mục "**Cấu hình cơ bản/Image**" chọn Tab "**My snapshot**";
@@ -57,7 +57,7 @@ Khi cấu hình tạo Server mới bằng Snapshot, user vẫn thực hiện tha
 
 ### **Tạo máy chủ (Server) bằng Snapshot trên Màn hình Snapshot** <a href="#khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhsnapshot" id="khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhsnapshot"></a>
 
-1. Đăng nhập và mở bảng điều kiển vServer tại [https://hcm-3.console.vngcloud.vn/vserver](https://hcm-3.console.vngcloud.vn/vserver/);
+1. Đăng nhập và mở bảng điều kiển vServer tại [https://hcm-3.console.greennode.ai/vserver](https://hcm-3.console.greennode.ai/vserver/);
 2. Trong ngăn điều hướng, chọn **Snapshot**;
 3. Tại màn hình danh sách Snapshot, User **click chọn vào một Snapshot Server**, để điều hướng đến màn hình thông tin chi tiết.
 4. Tại màn hình chi tiết của Snapshot Server, User chọn Tab "**Restore Point**".

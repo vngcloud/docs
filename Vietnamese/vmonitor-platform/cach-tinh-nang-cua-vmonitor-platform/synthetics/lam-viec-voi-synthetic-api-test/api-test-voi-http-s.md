@@ -4,7 +4,7 @@ API HTTP tests cho phép bạn gửi HTTP(s) requests tới dịch vụ hay ứn
 
 **Để thực hiện tạo API Test với phương thức HTTP(s), hãy làm theo hướng dẫn bên dưới:**
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
+1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.greennode.ai/vmonitor)&#x20;
 2. Chọn thư mục **Synthetic test.**
 3. Chọn **API test.**
 4. Chọn **Create an API test.**

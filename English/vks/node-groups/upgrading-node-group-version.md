@@ -6,7 +6,7 @@ Currently, our VKS system has supported you to upgrade Node Group Version, you c
 
 **To perform a Node Group Version upgrade, you can follow these instructions:**
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2: At the Overview** screen , select the **Kubernetes Cluster menu.** Select a **Cluster** where you want to upgrade **Node Group Version** .
 

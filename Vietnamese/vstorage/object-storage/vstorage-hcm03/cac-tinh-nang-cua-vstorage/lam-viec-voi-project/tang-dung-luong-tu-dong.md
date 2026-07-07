@@ -8,7 +8,7 @@ Tính năng Tự động tăng dung lượng lưu trữ (Auto-scale Quota) trên
 
 ### Các bước thực hiện
 
-**Bước 1:** Đăng nhập vào vStorage Portal tại [đây](https://vstorage.console.vngcloud.vn/overview).
+**Bước 1:** Đăng nhập vào vStorage Portal tại [đây](https://vstorage.console.greennode.ai/overview).
 
 **Bước 2**: Tại project cần thiết lập Auto-scale Quota, chọn biểu tượng <img src="../../../../../.gitbook/assets/image (398).png" alt="" data-size="line"> sau đó chọn mục **Auto-scale** và tiếp tục chọn **Configure Auto-scale** hoặc chọn biểu tượng <img src="../../../../../.gitbook/assets/image (400).png" alt="" data-size="line"> sau đó chọn **Set Auto-scale**.
 

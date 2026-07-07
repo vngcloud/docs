@@ -14,7 +14,7 @@ To use the GLB service on GreenNode, the first thing you need to do is create a 
 #### How to Create a Network Global Load Balancer
 
 Access the Global Load Balancer homepage here:\
-[https://glb.console.vngcloud.vn/glb/list](https://glb.console.vngcloud.vn/glb/list)
+[https://glb.console.greennode.ai/glb/list](https://glb.console.greennode.ai/glb/list)
 
 On the GLB homepage, click “Create Global Load Balancer”.
 
@@ -82,7 +82,7 @@ Use this guide to view the list of all available Load Balancers in the system.
 #### Access the Global Load Balancer List
 
 Access the Global Load Balancer homepage here:\
-[https://glb.console.vngcloud.vn/glb/list](https://glb.console.vngcloud.vn/glb/list)
+[https://glb.console.greennode.ai/glb/list](https://glb.console.greennode.ai/glb/list)
 
 On the Global Load Balancer homepage, a GLB list will appear with information such as:
 

@@ -25,7 +25,7 @@ Tính năng **cấu hình ACL (Access Control List)** cho Load Balancer là mộ
 
 **Hướng dẫn cấu hình**
 
-1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb**](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb**](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)
 2. **Tại trang chủ Load Balancer, click chọn Load Balancer cần cấu hình.**
 3. **Tại phần thông tin chi tiết Load Balancer, chọn tab Listener.**
 4. **Nhấn biểu tượng Edit tại Listener cần cấu hình.**

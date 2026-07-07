@@ -31,7 +31,7 @@ The following rules apply to metric naming in vStorage:
 
 To generate a metric from your log, follow the instructions below:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor/) .
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor/) .
 2. **Select the Log** folder , then select the **Log2metric** menu .
 3. Select **Create a Metric** .
 4. Enter **Metric name** . Metric names must comply with our rules, detailed above.
@@ -53,7 +53,7 @@ The **data points** for the newly created Log2metric are periodically generated 
 
 To edit metrics that were previously created from logs, follow the instructions below:
 
-1. Log in to vMonitor Platform [here.](https://hcm-3.console.vngcloud.vn/vmonitor)
+1. Log in to vMonitor Platform [here.](https://hcm-3.console.greennode.ai/vmonitor)
 2. **Select the Log** folder , then select the **Log2metric** menu .
 3. At **the Metric** you want to edit, select **Edit** .
 4. Edit the chart parameters as you desire. Parameters that you can edit include: **Log filter, Advanced query** . This editing is similar to when you create a new Widget.
@@ -67,7 +67,7 @@ You have initialized a metric from a corresponding log project. This metric has 
 
 To delete a project, follow these instructions:
 
-1\. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor/) .
+1\. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor/) .
 
 **2. Select the Log** folder , then select the **Log2metric** menu .
 

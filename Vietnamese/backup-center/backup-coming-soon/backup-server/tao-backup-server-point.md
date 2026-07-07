@@ -36,7 +36,7 @@ Tính năng Backup Now cho phép bạn thực hiện một phiên sao lưu dữ 
 
 ### Cách 1: Backup now từ Backup Server
 
-1. Truy cập vào trang quản lý Backup Server tại đây: [https://backupcenter.console.vngcloud.vn/backup-server/list](https://backupcenter.console.vngcloud.vn/backup-server/list)
+1. Truy cập vào trang quản lý Backup Server tại đây: [https://backupcenter.console.greennode.ai/backup-server/list](https://backupcenter.console.greennode.ai/backup-server/list)
 2. Chọn Backup Server cần thực hiện Backup Now.
 3.  Tìm và nhấn chọn "Backup Now" như hình bên dưới&#x20;
 
@@ -49,7 +49,7 @@ Tính năng Backup Now cho phép bạn thực hiện một phiên sao lưu dữ 
 
 ### Cách 2: Backup now từ Server
 
-1. Truy cập vào trang quản lý Server tại đây: [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)
+1. Truy cập vào trang quản lý Server tại đây: [https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server)
 2. Chọn Server cần thực hiện Backup Now.
 3.  Tìm và nhấn chọn "Backup Now" như hình bên dưới.&#x20;
 

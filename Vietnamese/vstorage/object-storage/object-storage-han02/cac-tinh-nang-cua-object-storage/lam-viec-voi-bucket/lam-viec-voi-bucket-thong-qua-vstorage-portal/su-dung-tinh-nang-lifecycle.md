@@ -19,7 +19,7 @@ Tham khảo thêm bảng bên dưới để hiểu cách hoạt động của m�
 
 Thực hiện theo hướng dẫn bên dưới để thiết lập transition rule:
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list), sau đó chọn Region **HAN02**
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list), sau đó chọn Region **HAN02**
 
 2\. Chọn **project** chứa **bucket** bạn muốn thiết lập lifecycle. Giả sử tôi có một bucket `demo-project` đã được khởi tạo tạo Storage Class Gold như hình dưới
 
@@ -61,7 +61,7 @@ Thực hiện theo hướng dẫn bên dưới để thiết lập transition ru
 
 Expiration rule là tập quy định tự động xóa object khi đến thời điểm hết hạn. Thực hiện theo hướng dẫn bên dưới để thiết lập expiration rule:
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **project** chứa **bucket** bạn muốn thiết lập lifecycle.
 

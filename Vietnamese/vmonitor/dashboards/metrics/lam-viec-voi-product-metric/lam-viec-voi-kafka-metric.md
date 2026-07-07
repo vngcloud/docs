@@ -2,7 +2,7 @@
 
 Sau khi tạo cụm Kafka thành công, hệ thống sẽ tự động thu thập Kafka metric và hiển thị ở tab Infrastructure List/vDB - Database , giúp bạn có thể theo dõi được các Kafka Project trên GreenNode hoàn toàn miễn phí.
 
-Bước 1: Truy cập vào vMonitor portal:  [https://vmonitor.console.vngcloud.vn/infrastructure/vdb](https://vmonitor.console.vngcloud.vn/infrastructure/vdb)
+Bước 1: Truy cập vào vMonitor portal:  [https://vmonitor.console.greennode.ai/infrastructure/vdb](https://vmonitor.console.greennode.ai/infrastructure/vdb)
 
 Bước 2: Chọn filter resources Kafka
 

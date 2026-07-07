@@ -13,7 +13,7 @@ Cho phép quản trị viên hệ thống tùy chỉnh các tiêu chí liên qua
 **🔧 Cách cấu hình**
 
 1. Đăng nhập tài khoản quản trị.
-2. Truy cập [https://iam.console.vngcloud.vn/account-settings](https://iam.console.vngcloud.vn/account-settings)
+2. Truy cập [https://iam.console.greennode.ai/account-settings](https://iam.console.greennode.ai/account-settings)
 3. Điều chỉnh các thông số phù hợp.
 4. Nhấn **Lưu** để áp dụng.
 

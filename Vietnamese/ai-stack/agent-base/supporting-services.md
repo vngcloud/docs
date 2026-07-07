@@ -7,7 +7,7 @@
 
 ## Container Registry (vCR)
 
-- **Portal:** https://vcr.console.vngcloud.vn
+- **Portal:** https://vcr.console.greennode.ai
 - **API Base URL:** `https://vcr.api.vngcloud.vn`
 - **Registry Host:** `vcr.vngcloud.vn`
 
@@ -19,7 +19,7 @@
 
 #### Portal (GUI)
 
-1. Mở https://vcr.console.vngcloud.vn → **"Create Repository"**
+1. Mở https://vcr.console.greennode.ai → **"Create Repository"**
 2. Điền thông tin:
    - **Repository Name**: ví dụ, `my-first-agent` (duy nhất, chữ thường, chữ cái, số và dấu gạch ngang)
    - **Access**: Private (khuyến nghị)
@@ -29,7 +29,7 @@
 
 #### RESTful API
 
-> **�Điều kiện cần:** Tất cả các ví dụ API dưới đây sử dụng `$TOKEN` — một IAM bearer token. Xem [Cấu hình Xác thực](getting-started.md#configure-authentication) để biết cách lấy token.
+> **�Điều kiện cần:** Tất cả các ví dụ API dưới đây sử dụng `$TOKEN` — một IAM bearer token. Xem [Cấu hình Xác thực](getting-started.md#configure-authentication) để biết cách lấy token.
 
 ```bash
 TOKEN=$(bash .claude/skills/agentbase/scripts/get_token.sh)
@@ -191,7 +191,7 @@ curl -s -X DELETE "https://vcr.api.vngcloud.vn/v1/repository/$REPO_ID" \
 
 ## AI Platform (AIP) — Truy cập LLM
 
-- **Portal:** https://aiplatform.console.vngcloud.vn/models
+- **Portal:** https://aiplatform.console.greennode.ai/models
 - **Management API:** `https://aiplatform-hcm.api.vngcloud.vn`
 - **LLM Endpoint:** `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1` (tương thích OpenAI)
 
@@ -203,7 +203,7 @@ curl -s -X DELETE "https://vcr.api.vngcloud.vn/v1/repository/$REPO_ID" \
 
 #### Portal (GUI)
 
-1. Mở https://aiplatform.console.vngcloud.vn/models
+1. Mở https://aiplatform.console.greennode.ai/models
 2. Duyệt các mô hình có sẵn — nhấn vào một mô hình để xem `path` (dùng làm tham số `model` trong các lệnh gọi API)
 
 #### RESTful API
@@ -224,7 +224,7 @@ curl -s "https://aiplatform-hcm.api.vngcloud.vn/v1/models?page=1&size=20" \
 
 #### Portal (GUI)
 
-1. Mở https://aiplatform.console.vngcloud.vn/models → **"API Keys"** → **"Create API Key"**
+1. Mở https://aiplatform.console.greennode.ai/models → **"API Keys"** → **"Create API Key"**
 2. Nhập **Name** (5–50 ký tự chữ thường/số/gạch ngang) → **Create**
 3. Đợi trạng thái `ACTIVE` → sao chép giá trị key
 
@@ -627,7 +627,7 @@ curl -s -X PUT "https://agentbase.api.vngcloud.vn/identity/api/v1/outbound-auth/
 
 **Đặt lại credential tài khoản dịch vụ IAM:**
 
-1. Truy cập https://iam.console.vngcloud.vn/service-accounts
+1. Truy cập https://iam.console.greennode.ai/service-accounts
 2. Nhấn vào tài khoản dịch vụ → tab **"Security credentials"** → **"Reset"**
 3. Sao chép client secret mới (chỉ hiển thị một lần)
 4. Cập nhật `GREENNODE_CLIENT_SECRET` trong môi trường của bạn

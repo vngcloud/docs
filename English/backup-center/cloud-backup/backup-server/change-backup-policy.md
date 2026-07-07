@@ -13,7 +13,7 @@ Updating backup policies is a regular activity to ensure that data is protected 
 
 First, you need to access the backup server page to select the backup servers that need to change the policy.
 
-* Access the backup server page here: [https://backupcenter.console.vngcloud.vn/backup-server/list](https://backupcenter.console.vngcloud.vn/backup-server/list)
+* Access the backup server page here: [https://backupcenter.console.greennode.ai/backup-server/list](https://backupcenter.console.greennode.ai/backup-server/list)
 *   Find and **select the backup servers** that need to update the policy, then click **Change policy.**
 
 

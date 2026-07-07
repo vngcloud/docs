@@ -43,7 +43,7 @@ Ví dụ minh họa
 
 Để khởi tạo một Dashboard, bạn có thể sử dụng vMonitor Platform theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)
+1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.greennode.ai/vmonitor)
 2. Chọn thư mục **Dashboard.**
 3. Chọn **Create a Dashboard.**
 4. Màn hình **Create Dashboard** được hiển thị. Nhập **Dashboard name**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho Dashboard của bạn. Đừng lo lắng, sau khi tạo Dashboard, bạn có thể thay đổi tên cho Dashboard của bạn.
@@ -55,7 +55,7 @@ Ví dụ minh họa
 
 Để xem các Dashboards, bạn có thể:
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)
+1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.greennode.ai/vmonitor)
 2. Chọn thư mục **Dashboard.**
 3. Trên trang hiển thị danh sách **Dashboard** hiển thị, bạn có thể lọc hiển thị danh sách **Dashboard** theo các Loại Dashboard và ý nghĩa được mô tả tại các bảng bên dưới:
 
@@ -69,7 +69,7 @@ Bạn có thể đánh dấu 1 **Dashboard tùy chỉnh** là Dashboard yêu th�
 
 Để thay đổi tên của Dashboard là bạn đã tạo trước đó, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)
+1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.greennode.ai/vmonitor)
 2. Chọn thư mục **Dashboard.**
 3. Tại **Dashboard** mà bạn muốn thay đổi tên, chọn biểu tượng<img src="../../../.gitbook/assets/image (23).png" alt="" data-size="line">
 4. Chọn **Rename**.
@@ -84,7 +84,7 @@ Bạn chỉ có thể thay đổi tên những Dashboard được tạo bởi ch
 
 Để tạo bản sao cho một Dashboard, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)
+1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.greennode.ai/vmonitor)
 2. Chọn thư mục **Dashboard.**
 3. Tại **Dashboard** mà bạn muốn tạo bản sao, chọn <img src="../../../.gitbook/assets/image (23).png" alt="" data-size="line">
 4. Chọn **Clone Dashboard.**
@@ -99,7 +99,7 @@ Lúc này một **Dashboard** mới với thông số giống như **Dashboard**
 
 Khi bạn không có nhu cầu sử dụng một **Dashboard** tùy chỉnh nữa, bạn có thể thực hiện xóa **Dashboard** khỏi hệ thống theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)
+1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.greennode.ai/vmonitor)
 2. Chọn thư mục **Dashboard.**
 3. Tại **Dashboard** mà bạn muốn xóa, chọn <img src="../../../.gitbook/assets/image (23).png" alt="" data-size="line">
 4. Chọn **Delete**.

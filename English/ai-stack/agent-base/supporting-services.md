@@ -7,7 +7,7 @@
 
 ## Container Registry (vCR)
 
-- **Portal:** https://vcr.console.vngcloud.vn
+- **Portal:** https://vcr.console.greennode.ai
 - **API Base URL:** `https://vcr.api.vngcloud.vn`
 - **Registry Host:** `vcr.vngcloud.vn`
 
@@ -19,7 +19,7 @@
 
 #### Portal (GUI)
 
-1. Open https://vcr.console.vngcloud.vn → **"Create Repository"**
+1. Open https://vcr.console.greennode.ai → **"Create Repository"**
 2. Fill in:
    - **Repository Name**: e.g., `my-first-agent` (unique, lowercase, alphanumeric and hyphens)
    - **Access**: Private (recommended)
@@ -191,7 +191,7 @@ curl -s -X DELETE "https://vcr.api.vngcloud.vn/v1/repository/$REPO_ID" \
 
 ## AI Platform (AIP) — LLM Access
 
-- **Portal:** https://aiplatform.console.vngcloud.vn/models
+- **Portal:** https://aiplatform.console.greennode.ai/models
 - **Management API:** `https://aiplatform-hcm.api.vngcloud.vn`
 - **LLM Endpoint:** `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1` (OpenAI-compatible)
 
@@ -203,7 +203,7 @@ curl -s -X DELETE "https://vcr.api.vngcloud.vn/v1/repository/$REPO_ID" \
 
 #### Portal (GUI)
 
-1. Open https://aiplatform.console.vngcloud.vn/models
+1. Open https://aiplatform.console.greennode.ai/models
 2. Browse available models — click a model to see its `path` (used as the `model` parameter in API calls)
 
 #### RESTful API
@@ -224,7 +224,7 @@ curl -s "https://aiplatform-hcm.api.vngcloud.vn/v1/models?page=1&size=20" \
 
 #### Portal (GUI)
 
-1. Open https://aiplatform.console.vngcloud.vn/models → **"API Keys"** → **"Create API Key"**
+1. Open https://aiplatform.console.greennode.ai/models → **"API Keys"** → **"Create API Key"**
 2. Enter a **Name** (5–50 lowercase chars/digits/hyphens) → **Create**
 3. Wait for status `ACTIVE` → copy the key value
 
@@ -627,7 +627,7 @@ curl -s -X PUT "https://agentbase.api.vngcloud.vn/identity/api/v1/outbound-auth/
 
 **Reset IAM service account credentials:**
 
-1. Go to https://iam.console.vngcloud.vn/service-accounts
+1. Go to https://iam.console.greennode.ai/service-accounts
 2. Click the service account → **"Security credentials"** tab → **"Reset"**
 3. Copy the new client secret (shown only once)
 4. Update `GREENNODE_CLIENT_SECRET` in your environment

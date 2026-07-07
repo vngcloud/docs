@@ -6,7 +6,7 @@ Sau khi tạo container và tải lên object vào container đó. Bạn có th�
 
 &#x20;Sử dụng vStorage Portal
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **project** chứa **container** bạn muốn xem chi tiết.
 

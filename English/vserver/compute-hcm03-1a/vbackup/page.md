@@ -19,6 +19,6 @@ IAM: UpdateBackupPolicy
 
 **To change the backup policy for a Backup Server:**
 
-1. Log in to the vBackup console at: [vBackup Console](https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-server). You must log in as an IAM user, assume the IAM account role, or log in as the Root user account (not recommended) within the organization's management account.
+1. Log in to the vBackup console at: [vBackup Console](https://hcm-3.console.greennode.ai/vserver/block-store/backup/backup-server). You must log in as an IAM user, assume the IAM account role, or log in as the Root user account (not recommended) within the organization's management account.
 2. In the Backup Server tab, specify the Backup Server, then select "**Change Policy**."
 3. Find the policy you want to change to, then select "**Apply**." Note that you can change the policy simultaneously for one or more Backup Servers.

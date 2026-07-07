@@ -2,7 +2,7 @@
 
 To view the vStorage API integration guide, you can follow these steps on the vStorage Portal:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 2. Select the **Integration** menu.
 3. Choose the **vStorage API** icon.
 4. In the **Authorization** section, you need to provide the necessary information to configure your vStorage API, including:

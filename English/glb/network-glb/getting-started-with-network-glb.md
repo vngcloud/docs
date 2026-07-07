@@ -12,9 +12,9 @@ The GLB Console is a web-based user interface that allows you to manage Global L
 
 **How to Access the GLB Console**
 
-* Access from the vConsole homepage: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
+* Access from the vConsole homepage: [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/)
   * Under the “GreenNode Service” section in the interface, select “vServer”, then choose “GLB” from the corresponding product/service list on the right.
-* Or directly access the vLB Portal via:: [https://glb.console.vngcloud.vn/overview](https://glb.console.vngcloud.vn/overview)
+* Or directly access the vLB Portal via:: [https://glb.console.greennode.ai/overview](https://glb.console.greennode.ai/overview)
 
 #### 2. Create a Network GLB <a href="#gettingstarted-nlb-2.khoitaonlb" id="gettingstarted-nlb-2.khoitaonlb"></a>
 

@@ -14,7 +14,7 @@ Hướng dẫn này mô tả các bước tạo mới một Redis Cluster trên 
 
 ## Bước 1- Truy cập trang tạo mới Database
 
-1. Truy cập [https://vdb.console.vngcloud.vn](https://vdb.console.vngcloud.vn/).
+1. Truy cập [https://vdb.console.greennode.ai](https://vdb.console.greennode.ai/).
 2. Tại menu bên trái, chọn Memory Store.
 3. Chọn Create Database.
 

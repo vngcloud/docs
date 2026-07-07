@@ -4,7 +4,7 @@
 
 **The vStorage Bucket Policy** feature is a powerful tool for managing access to your buckets through JSON rules. It gives you granular control over the actions that an IAM User (coming soon), another vStorage account, or external sources can perform on your bucket and the objects within it. Here are the basic instructions for configuring Bucket Policy:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Select the icon ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F2Ye0SwJ9LL3dubdbJhKn%252Fimage.png%3Falt%3Dmedia%26token%3Dcee711e0-ec36-4c9d-ab5f-c8537e348626\&width=33\&dpr=4\&quality=100\&sign=d8575ee1\&sv=2)in **the project** containing **the bucket** you want to grant permissions to.
 3. If you want to delegate bucket permissions to a **Root User Account** or another **IAM User Account** or **Service Account** , you need to know the **vStorage User ID** of the user you want to delegate permissions to:
    1. For **Root User Account : you can get vStorage User ID** information right on the **project** information page as shown below.

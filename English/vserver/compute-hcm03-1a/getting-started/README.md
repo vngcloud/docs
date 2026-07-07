@@ -12,7 +12,7 @@ You need to complete the following steps to be able to use our vServer service:
 
 ## **Step 1: Activate vServer:** <a href="#gettingstarted-step1-activatevserver" id="gettingstarted-step1-activatevserver"></a>
 
-1. Open vServer homepage at: [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview)
+1. Open vServer homepage at: [https://hcm-3.console.greennode.ai/vserver/overview](https://hcm-3.console.greennode.ai/vserver/overview)
 2. For a new customer's account, to be able to use the service you need to first activate vServer by creating a Project. In the **"Overview"** tab, click **Activate**
 
 ***
@@ -21,7 +21,7 @@ You need to complete the following steps to be able to use our vServer service:
 
 Next to initialize vServer, you need a VPC:
 
-1. Open vServer homepage at: [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview)
+1. Open vServer homepage at: [https://hcm-3.console.greennode.ai/vserver/overview](https://hcm-3.console.greennode.ai/vserver/overview)
 2. At the navigation menu bar, select Tab **VPC**
 3. Select **Create VPC**
 4. For **Name**, enter a descriptive name for the VPC. VPC names can include letters (a-z, A-Z, 0-9, '\_', '-'). The input data length is between 5 and 50. It must not include leading or trailing spaces.
@@ -36,7 +36,7 @@ Next to initialize vServer, you need a VPC:
 
 After the initialization of the initial VPC is complete, an additional step of Subnet initialization is required. We can create multiple Subnets for our VPC:
 
-1. Open the VPC tab at: [https://hcm-3.console.vngcloud.vn/vserver/network/vpc](https://hcm-3.console.vngcloud.vn/vserver/network/vpc)
+1. Open the VPC tab at: [https://hcm-3.console.greennode.ai/vserver/network/vpc](https://hcm-3.console.greennode.ai/vserver/network/vpc)
 2. Click on your **VPC**, select the **Subnet** tab at the bottom of the page and select **Add Subnet**
 3. For **Name**, enter a descriptive name for the Subnet. Subnet names can include letters (a-z, A-Z, 0-9, '\_', '-'). The input data length is between 5 and 50. It must not include leading or trailing spaces.
 4. Enter **IP** information in the **CIDR** field. The CIDR value of the Subnet must be in the network class of the previously created VPC. For example, the previous VPC we created with a CIDR of 192.168.0.0/16, the Subnet will have the form: 192.168.xxx.0/24
@@ -47,7 +47,7 @@ After the initialization of the initial VPC is complete, an additional step of S
 
 This guide helps you quickly launch your first **Server,** so it won't cover all the must-have options, but you'll get the Server up and running in just a few simple steps:
 
-1. Open the Server tab at: [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)
+1. Open the Server tab at: [https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server)
 2. Select **Create a Server**
 3. In the **Basic Configuration** section, enter the **Server name** to describe the name for your Server. Server name can include letters (a-z, A-Z, 0-9, '\_', '-'). The input data length is between 5 and 50. It must not include leading or trailing spaces and the Server name must be different from the Username.
 4. Choose from the following options in the **Image** section:
@@ -72,7 +72,7 @@ In addition, you can add **Data Volume** to the Server during the initialization
 
 7\. Next is the **Network settings:**
 
-\+  Here you can choose **VPC** to grant Private IP to Server and **Subnet** from the list you created earlier, or you can choose [**Click here**](https://hcm-3.console.vngcloud.vn/vserver/network/vpc) to manage your VPCs to create new VPC and Subnet, it should be noted that after creating VPC and Subnet Subnet, it will be displayed at the list page allowing you to choose during Server initialization
+\+  Here you can choose **VPC** to grant Private IP to Server and **Subnet** from the list you created earlier, or you can choose [**Click here**](https://hcm-3.console.greennode.ai/vserver/network/vpc) to manage your VPCs to create new VPC and Subnet, it should be noted that after creating VPC and Subnet Subnet, it will be displayed at the list page allowing you to choose during Server initialization
 
 \+  Check the box **Floating IP** to assign Public IP to the Server&#x20;
 
@@ -98,7 +98,7 @@ On the Server list screen, you can see the launch status. It takes a short time 
 
 In cases where users create many virtual machines (VMs), GreenNode provides a tool to quickly search for the virtual machines that users have previously created.
 
-**Step 1:** Open the vServer homepage at: [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview)
+**Step 1:** Open the vServer homepage at: [https://hcm-3.console.greennode.ai/vserver/overview](https://hcm-3.console.greennode.ai/vserver/overview)
 
 **Step 2:** Select the **Servers** section to go to the screen listing the created virtual machines.
 

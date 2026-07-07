@@ -4,7 +4,7 @@ With vDB Kafka Cluster, you can quickly deploy and manage Kafka clusters efficie
 
 ## Step 1: Access and Login
 
-1. Open a web browser and access the vDB Kafka Cluster interface at: [https://vdb.console.vngcloud.vn/kafka/cluster](https://vdb.console.vngcloud.vn/kafka/cluster)
+1. Open a web browser and access the vDB Kafka Cluster interface at: [https://vdb.console.greennode.ai/kafka/cluster](https://vdb.console.greennode.ai/kafka/cluster)
 2. If you already have an account, enter your login credentials.
 
 Refer to the GreenNode login guide [here](../../identity-and-access-management-iam/cac-loai-dinh-danh-iam/tai-khoan-user-accounts/cach-dang-nhap-vao-vng-cloud.md).

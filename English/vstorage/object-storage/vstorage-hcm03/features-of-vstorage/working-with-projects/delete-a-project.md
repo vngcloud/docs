@@ -6,7 +6,7 @@ To delete a project, you can:
 
 &#x20;Use vStorage Portal
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 2. Select the icon ![](https://docs.vngcloud.vn/download/thumbnails/67994056/image2023-2-2\_16-17-31.png?version=1\&modificationDate=1700552967000\&api=v2) at the project you want to delete. Click **Delete**.
 3. Enter the character string **delete me** and click **Delete**.
 

@@ -27,20 +27,20 @@ FIPs can be associated with vServer instances. An FIP can be associated only wit
 
 #### Create an Floating IP
 
-A Floating IP is created along with the Server initialization. However, you can view the list of Floating IPs attached to the Server in the vServer control panel at the following link: [https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip](https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip)
+A Floating IP is created along with the Server initialization. However, you can view the list of Floating IPs attached to the Server in the vServer control panel at the following link: [https://hcm-3.console.greennode.ai/vserver/network/wan-ip](https://hcm-3.console.greennode.ai/vserver/network/wan-ip)
 
 #### Associate an Floating IP with an vServer instance
 
-* You can log on to the [Server page](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) and associate an Floating IP with an vServer instance that is located in a VPC and is not attached External Interface.
-* You can also go to the [Floating IP page](https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip) and associate an Floating IP with an vServer instance that is located in a VPC and is not attached External Interface.
+* You can log on to the [Server page](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server) and associate an Floating IP with an vServer instance that is located in a VPC and is not attached External Interface.
+* You can also go to the [Floating IP page](https://hcm-3.console.greennode.ai/vserver/network/wan-ip) and associate an Floating IP with an vServer instance that is located in a VPC and is not attached External Interface.
 
 #### Disassociate an Floating IP from an vServer instance
 
-* If your vServer instance no longer needs an Floating IP, you can disassociate the Floating IP from the instance in the [Server page](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server).
-* You can also disassociate the Floating IP from the vServer instance on the [Floating IP page](https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip)
+* If your vServer instance no longer needs an Floating IP, you can disassociate the Floating IP from the instance in the [Server page](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server).
+* You can also disassociate the Floating IP from the vServer instance on the [Floating IP page](https://hcm-3.console.greennode.ai/vserver/network/wan-ip)
 
 #### Release an Floating IP
 
-* Billing of an Floating IP continues after it is disassociated. If you no longer need the Floating IP, go to the [Floating IP page](https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip) to release the Floating IP
+* Billing of an Floating IP continues after it is disassociated. If you no longer need the Floating IP, go to the [Floating IP page](https://hcm-3.console.greennode.ai/vserver/network/wan-ip) to release the Floating IP
 
 <br>

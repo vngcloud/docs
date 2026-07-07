@@ -38,7 +38,7 @@ The Billing Dashboard provides you with an overview of the DB cloud instance typ
 
 ## **User Guide**
 
-* **Step 1 - Access Billing Dashboard:** Log in to your account and access the Billing Dashboard here: [https://vdb.console.vngcloud.vn/billing](https://vdb.console.vngcloud.vn/billing)
+* **Step 1 - Access Billing Dashboard:** Log in to your account and access the Billing Dashboard here: [https://vdb.console.greennode.ai/billing](https://vdb.console.greennode.ai/billing)
 * **Step 2 - Perform action:** Select Action on the instance you want to manage (refer to the image below)
   * Click the "Renew resource" button to renew the usage period or recover resources after expiration.
   * Click the "Stop POC" button to switch to regular usage.

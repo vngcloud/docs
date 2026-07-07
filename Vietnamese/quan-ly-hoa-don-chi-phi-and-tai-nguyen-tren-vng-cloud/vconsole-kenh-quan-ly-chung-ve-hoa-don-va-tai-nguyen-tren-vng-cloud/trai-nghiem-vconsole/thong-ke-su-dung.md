@@ -2,7 +2,7 @@
 
 **Thống kê sử dụng / Usage report** tại vConsole cung cấp các báo cáo, thống kê chi phí sử dụng các sản phẩm GreenNode Service như (vServer, vMonitor, vStorage, vCDN,...) cụ thể theo từng Resource. Tại đây, người dùng có thể theo dõi thời gian sử dụng Resource cũng như các lần thay đổi cấu hình (nếu có).
 
-Truy cập đến trang **Thống kê sử dụng / Usage report** [**tại đây**](https://dashboard.console.vngcloud.vn/usage-report)**.**
+Truy cập đến trang **Thống kê sử dụng / Usage report** [**tại đây**](https://dashboard.console.greennode.ai/usage-report)**.**
 
 Tại trang **Thống kê sử dụng / Usage report**, người dùng sẽ thấy  bảng biểu dữ liệu chính, bao gồm các thành phần:
 

@@ -59,7 +59,7 @@ Chúng tôi không giới hạn số lượng notification bạn có thể tạo
 
 Bạn đã khởi tạo một Notification trên hệ thống của chúng tôi. Hiện tại notification này không đáp ứng đúng mong muốn về người nhận và kênh gửi thông báo của bạn, lúc này bạn có thể chỉnh sửa notification. Để chỉnh sửa notification, hãy làm theo hướng dẫn bên dưới:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Notification.**
 3. Tại notification mà bạn muốn chỉnh sửa, chọn **Edit**.&#x20;
 4. Chỉnh sửa các thông số cho notification mà bạn mong muốn. Các thông số mà bạn có thể chỉnh sửa bao gồm: **Tên Notification**, Loại Notification, Địa chỉ Email, Số điện thoại, Đường dẫn Webhook, ... cũng như các thông số cấu hình chi tiết một notification.&#x20;
@@ -76,7 +76,7 @@ Sau khi bạn hoàn thành 5 bước được mô tả bên trên, notification 
 
 Khi bạn không có nhu cầu sử dụng một notification nữa, bạn có thể thực hiện xóa notification khỏi hệ thống theo hướng dẫn bên dưới:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Notification.**
 3. Tại **Notification** mà bạn muốn xóa, chọn **Checkbox Chọn**. Bạn có thể chọn một hoặc nhiều notification để thực hiện xóa ở bước này.
 4. Chọn **Xóa**.

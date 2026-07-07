@@ -12,7 +12,7 @@ Processor Group: allows you to specify where to get log data (source log project
 
 To create a processor group, follow the instructions below:
 
-1\. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor/) .
+1\. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor/) .
 
 **2. Select the Log** folder , then select the **Log pipeline** menu .
 
@@ -67,7 +67,7 @@ After you successfully copy:
 
 To edit Processor group in Log pipeline, follow the instructions below
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. Select the Log folder **.**
 3. Select **Log pipeline.**
 4. In the list of available log pipelines, select **the Log pipeline** containing **the Processor group** you want to edit.
@@ -82,7 +82,7 @@ To edit Processor group in Log pipeline, follow the instructions below
 
 When you no longer need to use a custom Processor group, you can delete the Processor group from the system according to the instructions below:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. Select the Log folder **.**
 3. Select **the Log pipeline** containing the processor group you want to delete.
 4. Select **Processor group.**

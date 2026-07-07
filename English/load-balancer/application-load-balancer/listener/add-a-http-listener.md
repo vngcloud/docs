@@ -4,7 +4,7 @@ Use this guide to add a new HTTP listener to an existing Application Load Balanc
 
 #### Steps to Add a New HTTP Listener
 
-1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb`.
+1. **Access the Load Balancer Homepage:** Go to `https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb`.
 2. **Select Your Load Balancer:** Click on the Load Balancer where you want to add the new listener.
 3. **Go to the Listener Tab:** In the Load Balancer details page, select the "Listener" tab.
 4. **Click "Add New Listener":** A pop-up window will appear, allowing you to configure the listener's information.

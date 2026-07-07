@@ -6,7 +6,7 @@ To view detailed information about a container, you can:
 
 &#x20;Use vStorage Portal
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 2. Choose the **project** containing the **container** you want to view details of.
 3. Select the **container** you want to view details of.
 4. On the page displaying detailed information about the container, you can view and use the features we provide for the container, including:

@@ -16,13 +16,13 @@ Chi tiết các bước như sau
 
 **Bước 1: Tạo User: System1 nếu chưa có User Account (lưu ý rằng nếu đã có sẵn User: System1, cần đảo bảo User: System1 không có quyền gì hoặc không có các quyền chồng lấn với hướng dẫn)**
 
-Tiến hành tạo User Account bằng cách truy cập vào tab User Account ở trang quản lý IAM tại [đây](https://iam.console.vngcloud.vn/user-accounts), nhấn **Create a User Account,** điền thông tin Username và Password, sau đó nhấn **Create User Account**&#x20;
+Tiến hành tạo User Account bằng cách truy cập vào tab User Account ở trang quản lý IAM tại [đây](https://iam.console.greennode.ai/user-accounts), nhấn **Create a User Account,** điền thông tin Username và Password, sau đó nhấn **Create User Account**&#x20;
 
 Sau khi tạo thành công User Account, sẽ được liệt kê ở trang User Account.
 
 **Bước 2: Tạo Policy với tên vServerFullAccessExceptDeleteServer cho phép truy cập toàn bộ Resource của vServer, nhưng không cho phép Delete Server**&#x20;
 
-Để tạo Policy bạn qua tab Policy ở trang IAM tại [đây](https://iam.console.vngcloud.vn/policies), nhấn **Create a Policy**, **đặt tên** cho Policy: **vServerFullAccessExceptDeleteServer** và nhấn **Next step**
+Để tạo Policy bạn qua tab Policy ở trang IAM tại [đây](https://iam.console.greennode.ai/policies), nhấn **Create a Policy**, **đặt tên** cho Policy: **vServerFullAccessExceptDeleteServer** và nhấn **Next step**
 
 Nhấn chọn JSON để chuyển sang chế độ JSON và tạo Policy với đoạn JSON có sẵn
 
@@ -69,7 +69,7 @@ Sau khi tạo thành công Policy: vServerFullAccessExceptDeleteServer, bạn ti
 
 Lúc này bạn có thể đăng nhập vào User: System1 để kiểm tra quyền
 
-Truy cập vào vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), khi chưa đăng nhập bất kì tài khoản nào bạn sẽ được chuyển hướng sang trang sign-in chọn "**Sign-in With IAM User Account**"
+Truy cập vào vServer tại [đây](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server), khi chưa đăng nhập bất kì tài khoản nào bạn sẽ được chuyển hướng sang trang sign-in chọn "**Sign-in With IAM User Account**"
 
 Điền thông tin root user account email mà User: System1 trước đó đã được tạo, thông tin IAM username và password của User: System1, nhấn **Sign-in with IAM User Account**
 

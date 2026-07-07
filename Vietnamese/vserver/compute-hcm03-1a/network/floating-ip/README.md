@@ -21,17 +21,17 @@ FIP có thể được liên kết với các cá thể vServer. Một FIP ​�
 
 #### **Tạo Floating IP:** <a href="#floatingip-taofloatingip" id="floatingip-taofloatingip"></a>
 
-Floating IP được tạo kèm khi khởi tạo Server, tuy nhiên bạn có thể xem danh sách các Floating IP được đính kèm với Server tại bảng điều khiển vServer tại đường link: [https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip](https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip)
+Floating IP được tạo kèm khi khởi tạo Server, tuy nhiên bạn có thể xem danh sách các Floating IP được đính kèm với Server tại bảng điều khiển vServer tại đường link: [https://hcm-3.console.greennode.ai/vserver/network/wan-ip](https://hcm-3.console.greennode.ai/vserver/network/wan-ip)
 
 #### **Liên kết Floating IP ​​với một phiên bản vServer:** <a href="#floatingip-lienketfloatingip-voimotphienbanvserver" id="floatingip-lienketfloatingip-voimotphienbanvserver"></a>
 
-* Bạn có thể đăng nhập vào [Trang Server ](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)và liên kết FIP ​​với một phiên bản vServer nằm trong VPC và không được đính kèm Giao diện bên ngoài.
-* Bạn cũng có thể truy cập [Trang Floating IP](https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip) và liên kết FIP ​​với một phiên bản vServer nằm trong VPC và không được đính kèm Giao diện bên ngoài.
+* Bạn có thể đăng nhập vào [Trang Server ](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server)và liên kết FIP ​​với một phiên bản vServer nằm trong VPC và không được đính kèm Giao diện bên ngoài.
+* Bạn cũng có thể truy cập [Trang Floating IP](https://hcm-3.console.greennode.ai/vserver/network/wan-ip) và liên kết FIP ​​với một phiên bản vServer nằm trong VPC và không được đính kèm Giao diện bên ngoài.
 
 #### **Tách một Floating IP ​​khỏi một phiên bản vServer** <a href="#floatingip-tachmotfloatingip-khoimotphienbanvserver" id="floatingip-tachmotfloatingip-khoimotphienbanvserver"></a>
 
-* Nếu bản sao vServer của bạn không cần FIP nữa, bạn có thể tách FIP khỏi bản sao trong [Trang Server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server).
-* Bạn cũng có thể tách FIP khỏi phiên bản vServer trên [Trang Floating IP](https://hcm-3.console.vngcloud.vn/vserver/network/wan-ip).
+* Nếu bản sao vServer của bạn không cần FIP nữa, bạn có thể tách FIP khỏi bản sao trong [Trang Server](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server).
+* Bạn cũng có thể tách FIP khỏi phiên bản vServer trên [Trang Floating IP](https://hcm-3.console.greennode.ai/vserver/network/wan-ip).
 * Đối với windows server có sử dụng license do GreenNode cung cấp, bạn không thể detach floating IP ra khỏi server để đảm bảo việc gia hạn license không bị gián đoạn.
 
 

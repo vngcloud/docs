@@ -8,7 +8,7 @@ Service account for partner registration must satisfy these requirements
 * Account for partner registration must not be customer account of a partner
 * Account for partner registration must be classified as an “**Enterprise**” account
 
-**Step 1**: Sign in to partner portal by [Link](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=CdvLkCA8WBPfEAaQ\_m6lKBqa5h5YM\_6JwbR5HuCo5vI\&codeChallengeMethod=S256\&appState=b4406579-f18e-4cd9-878d-64ebbc809af7\&redirectUri=https%3A%2F%2Fpartner.console.vngcloud.vn%2Foverview)
+**Step 1**: Sign in to partner portal by [Link](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=CdvLkCA8WBPfEAaQ\_m6lKBqa5h5YM\_6JwbR5HuCo5vI\&codeChallengeMethod=S256\&appState=b4406579-f18e-4cd9-878d-64ebbc809af7\&redirectUri=https%3A%2F%2Fpartner.console.greennode.ai%2Foverview)
 
 * Select " **SIGN IN WITH ROOT USER ACCOUNT**", and input username and password to sign in. Username and password are information of the account created on [vngcloud.vn](http://vngcloud.vn/) portal.
 * In case user has not created an account yet, select “**Sign up**” and follow the instruction [here](../getting-start-with-vng-cloud-account/) to register an account.

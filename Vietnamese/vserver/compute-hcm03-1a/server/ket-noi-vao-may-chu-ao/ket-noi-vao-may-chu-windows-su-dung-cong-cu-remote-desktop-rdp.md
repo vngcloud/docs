@@ -29,7 +29,7 @@ Bạn có thể kết nối dễ dàng với các máy chủ Window được t�
 
 ### **Kết nối sử dụng Client RDP trên Window** <a href="#ketnoivaomaychuwindowssudungcongcuremotedesktop-rdp-ketnoisudungclientrdptrenwindow" id="ketnoivaomaychuwindowssudungcongcuremotedesktop-rdp-ketnoisudungclientrdptrenwindow"></a>
 
-1. Truy cập vào trang quản lý Server tại trình điều khiển của chúng tôi tại: [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)
+1. Truy cập vào trang quản lý Server tại trình điều khiển của chúng tôi tại: [https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server)
 2. Chọn Server cần kết nối, sau đó chọn Hành động - **Kết nối**
 3.  Trên trang Kết nối tới máy chủ, chọn tab RDP (Window)\
     <br>

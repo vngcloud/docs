@@ -4,7 +4,7 @@ Nếu bạn chưa sử dụng bất kỳ dịch vụ nào của GreenNode (chưa
 
 **Để sử dụng DataSync, bạn cần thực hiện các bước sau:**
 
-**Bước 1:** Đăng nhập vào [https://datasync.console.vngcloud.vn/](https://datasync.console.vngcloud.vn/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [đây](https://register.vngcloud.vn/signup).
+**Bước 1:** Đăng nhập vào [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [đây](https://register.vngcloud.vn/signup).
 
 **Bước 2:** Nhấp vào nút **Create a transfer job** để bắt đầu tạo job chuyển đổi dữ liệu.
 

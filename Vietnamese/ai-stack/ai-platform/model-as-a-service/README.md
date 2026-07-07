@@ -7,7 +7,7 @@ description: >-
 
 # Model as a Service
 
-Truy cập vào phần [Models ](https://aiplatform.console.vngcloud.vn/models)trong AI Platform:
+Truy cập vào phần [Models ](https://aiplatform.console.greennode.ai/models)trong AI Platform:
 
 * Để sử dụng và enable bất kỳ mô hình nào, bạn cần có API key. [xem thêm](../bat-dau-voi-ai-platform.md#id-6.-quan-ly-api-keys)
 

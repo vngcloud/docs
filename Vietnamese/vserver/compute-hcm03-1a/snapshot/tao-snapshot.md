@@ -19,7 +19,7 @@ Quá trình chụp ảnh nhanh hoạt động không đồng bộ. Mặc dù sna
 
 ### **Tạo Snapshot cho Volume trên bảng điều khiển** <a href="#taosnapshot-taosnapshotchovolumetrenbangdieukhien" id="taosnapshot-taosnapshotchovolumetrenbangdieukhien"></a>
 
-1. Mở bảng điều khiển vServer tại [https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot/overview](https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot/overview).
+1. Mở bảng điều khiển vServer tại [https://hcm-3.console.greennode.ai/vserver/block-store/snapshot/overview](https://hcm-3.console.greennode.ai/vserver/block-store/snapshot/overview).
 2. Chọn tạo **Snapshot**
 3. Tại trang nhập thông tin tạo Snapshot, bạn cần hoàn thành các mục sau đây:
    * **Loại Snapshot** – Chọn đối tượng bạn muốn tạo Snapshot theo Volume.&#x20;
@@ -34,7 +34,7 @@ Quá trình chụp ảnh nhanh hoạt động không đồng bộ. Mặc dù sna
 
 ### **Tạo Snapshot cho Server trên bảng điều khiển** <a href="#taosnapshot-taosnapshotchoservertrenbangdieukhien" id="taosnapshot-taosnapshotchoservertrenbangdieukhien"></a>
 
-1. Mở bảng điều khiển vServer tại [https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot/overview](https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot/overview).
+1. Mở bảng điều khiển vServer tại [https://hcm-3.console.greennode.ai/vserver/block-store/snapshot/overview](https://hcm-3.console.greennode.ai/vserver/block-store/snapshot/overview).
 2. Chọn tạo **Snapshot**
 3. Tại trang nhập thông tin tạo Snapshot, bạn cần hoàn thành các mục sau đây:
    * **Loại Snapshot** – Chọn đối tượng bạn muốn tạo Snapshot theo Server. Nếu lựa chọn theo Server đồng nghĩa với việc bạn sẽ tạo Snapshot được đính kèm với Server đã chọn.

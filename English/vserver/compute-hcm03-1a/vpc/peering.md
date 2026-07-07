@@ -14,7 +14,7 @@ Currently, we do not support creating VPC Peering on the interface. To perform t
 
 To perform Peering deletion, you need to follow the steps below:
 
-1. Access the VPC Peering console at: [https://hcm-3.console.vngcloud.vn/vserver/network/peering](https://hcm-3.console.vngcloud.vn/vserver/network/peering)
+1. Access the VPC Peering console at: [https://hcm-3.console.greennode.ai/vserver/network/peering](https://hcm-3.console.greennode.ai/vserver/network/peering)
 2. Select Peering, tap **Delete** and confirm
 
 <br>

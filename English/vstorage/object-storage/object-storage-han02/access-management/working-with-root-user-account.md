@@ -31,7 +31,7 @@ To access your resources on vStorage storage service, you can access through vSt
 
 Follow the steps below to log into vStorage with the Root user account:
 
-1. Access the vStorage service login page: [https://signin.vngcloud.vn.](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=f09ybYi-GTZYYwuHVRv2f1UPRhjM_wI-0J_aXpbUsv4\&codeChallengeMethod=S256\&appState=55eab53a-30f3-43ae-837b-bf3a469dd9db\&redirectUri=https%3A%2F%2Fdashboard.console.vngcloud.vn%2F)
+1. Access the vStorage service login page: [https://signin.vngcloud.vn.](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=f09ybYi-GTZYYwuHVRv2f1UPRhjM_wI-0J_aXpbUsv4\&codeChallengeMethod=S256\&appState=55eab53a-30f3-43ae-837b-bf3a469dd9db\&redirectUri=https%3A%2F%2Fdashboard.console.greennode.ai%2F)
 2. The main login page will appear. Select **LOG IN WITH ROOT USER** .
 3. **Enter the email** address and **password** associated with your account and select **Sign In** . If you previously signed in as the root user in this browser, your browser may remember the email address for the Root User Account. If so, you will see the screen shown in the next step. If you previously signed in as an IAM user using an IAM User Account in this browser, your browser may display the IAM user login page instead. To return to the main login page, select **LOG IN AS ROOT USER.**
 4. After successful login, you have full access and perform the features provided by vStorage service on your resources.

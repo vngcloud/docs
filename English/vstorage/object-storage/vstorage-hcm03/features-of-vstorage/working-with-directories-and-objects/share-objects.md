@@ -13,7 +13,7 @@ To share objects, follow the instructions below:
 {% tab title="Using vStorage Portal" %}
 To share an object within a container, you can follow the steps below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Select the **project** and **container**, then choose one or more **objects** you want to share.
 3. Choose ![](http://docs.vngcloud.vn/download/thumbnails/67994213/image2023-3-6_10-50-12.png?version=1\&modificationDate=1701065525000\&api=v2) or select the icon ![](http://docs.vngcloud.vn/download/thumbnails/67994213/image2023-2-6_10-20-54.png?version=1\&modificationDate=1701065525000\&api=v2) at the object you want to share and select ![](http://docs.vngcloud.vn/download/thumbnails/67994213/image2023-11-27_13-17-4.png?version=1\&modificationDate=1701065827000\&api=v2).
 4. Choose the **Protocol** as:
@@ -25,7 +25,7 @@ To share an object within a container, you can follow the steps below:
 * If the **Protocol** is **OpenStack Swift**, you can choose **Mode** as **Download** or **View**.
 * If the **Protocol** is **S3**, the **Presigned URL** path will be used by default to **View** the object.
 
-6\. If you choose the S3 Protocol, you need to enter the **S3 key** information here. S3 key information can be obtained in IAM. You can choose Click [here](https://iam.console.vngcloud.vn/vstorage-credentials/s3) to go to IAM and manage s3 keys. to view detailed information about created S3 key pairs and create new S3 key pairs for use. For more details, refer to [Create a S3 key](../../identity-and-access-management/managing-vstorage-access-account/service-account/vstorage-credentials/create-a-s3-key.md).
+6\. If you choose the S3 Protocol, you need to enter the **S3 key** information here. S3 key information can be obtained in IAM. You can choose Click [here](https://iam.console.greennode.ai/vstorage-credentials/s3) to go to IAM and manage s3 keys. to view detailed information about created S3 key pairs and create new S3 key pairs for use. For more details, refer to [Create a S3 key](../../identity-and-access-management/managing-vstorage-access-account/service-account/vstorage-credentials/create-a-s3-key.md).
 
 7\. Enter the **Expiration time** you want to share the object, meaning the time the access path (Temporary URL) to the object is valid. You can limit the number of **days, hours, and minutes** that the access path to the object exists.
 
@@ -47,7 +47,7 @@ In addition to the traditional management interface, we also provide an API that
 
 1. [Khởi tạo tài khoản Service Account](/broken/pages/NMV1pQRE4Qhak7uPSN2d) nếu chưa có
 2. Lấy thông tin access token. Tham khảo tại [Chứng thực với Service Account](/broken/pages/A65btlFQz1T2SbfF3isl)
-3. If you want to create a **Presigned URL**, you need to enter the **S3 key** information. S3 key information can be obtained in IAM. You can choose Click [here](https://iam.console.vngcloud.vn/vstorage-credentials/s3) to go to IAM and manage s3 keys. to view detailed information about created S3 key pairs and create new S3 key pairs for use. For more details, refer to [Create a S3 key](../../identity-and-access-management/managing-vstorage-access-account/service-account/vstorage-credentials/create-a-s3-key.md).
+3. If you want to create a **Presigned URL**, you need to enter the **S3 key** information. S3 key information can be obtained in IAM. You can choose Click [here](https://iam.console.greennode.ai/vstorage-credentials/s3) to go to IAM and manage s3 keys. to view detailed information about created S3 key pairs and create new S3 key pairs for use. For more details, refer to [Create a S3 key](../../identity-and-access-management/managing-vstorage-access-account/service-account/vstorage-credentials/create-a-s3-key.md).
 4. To obtain Temporary URL or Presigned URL for sharing objects through vStorage API, please refer to the [API download/share object](https://docs.api.vngcloud.vn/service-docs/vstorage-api.html#tag/object/operation/retrieveDownloadObjectTempURLUsingPOST).
 
 **Example 1: Create object temporary URL**

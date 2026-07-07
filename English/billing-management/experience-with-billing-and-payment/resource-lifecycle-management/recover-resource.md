@@ -23,7 +23,7 @@ The resource has expired for no more than n days and has been moved to the trash
 * Step 2: Resource Payment -> See detailed instructions here.&#x20;
 * Step 3: Check resource and payment information .
   * 3.1 Check resource information on the product page.&#x20;
-  * 3.2 Check payment information, and invoice at User Portal: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
+  * 3.2 Check payment information, and invoice at User Portal: [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/)
 * Step 4: System Implementation&#x20;
   * Email notification of the recovered resource information.&#x20;
   * New invoice corresponding to the resource usage time.&#x20;

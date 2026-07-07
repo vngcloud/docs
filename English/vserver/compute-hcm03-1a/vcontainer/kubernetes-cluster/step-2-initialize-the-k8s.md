@@ -13,7 +13,7 @@ This topic provides an overview of available options and describes what to consi
 
 ### **Create Kubernetes Cluster** <a href="#step2-initializethek8s-createkubernetescluster" id="step2-initializethek8s-createkubernetescluster"></a>
 
-1. Open the vServer console at: [https://hcm-3.console.vngcloud.vn/vserver/container/cluster](https://hcm-3.console.vngcloud.vn/vserver/container/cluster).
+1. Open the vServer console at: [https://hcm-3.console.greennode.ai/vserver/container/cluster](https://hcm-3.console.greennode.ai/vserver/container/cluster).
 2. Choose **Create a Kubernetes Cluster**
 3. On the Cluster **basic configuration settings** pag&#x65;**,** enter the following fields:<br>
    * **Name** – Name for your Cluster. It must be unique in your GreenNode account. Names can only contain alphanumeric characters (a-z, A-Z, 0-9, '\_', '-'). Your input data length should be between 5 and 50. The name must be unique in the Region and GreenNode account you are creating the Cluster for.
@@ -28,7 +28,7 @@ This topic provides an overview of available options and describes what to consi
    * **Configure Boot Volume** – Parameters set by default by the system to optimize your Cluster
    * **Configure Docker Volume** – Choose the size and type of drive that suits your needs, the size of the Data Disk must be greater than or equal to 20 GB and not exceed 4000 GB.
 7. In the **Network Settings** section, select values for the following fields:
-   * **VPC** – Select an existing VPC that meets the requirements of K8S to create your Cluster. Before choosing a VPC, we recommend that you familiarize yourself with all the requirements and considerations in the VPC as well as the Subnet requirements and considerations. You cannot change which VPC you want to use after creating the Cluster. If no VPC is listed, you need to create one first. For more information, see [**Create a VPC**](https://hcm-3.console.vngcloud.vn/vserver/network/vpc).
+   * **VPC** – Select an existing VPC that meets the requirements of K8S to create your Cluster. Before choosing a VPC, we recommend that you familiarize yourself with all the requirements and considerations in the VPC as well as the Subnet requirements and considerations. You cannot change which VPC you want to use after creating the Cluster. If no VPC is listed, you need to create one first. For more information, see [**Create a VPC**](https://hcm-3.console.greennode.ai/vserver/network/vpc).
    * **Network Type, Encapsulatio**n **Mode** are self-selected by default by the system and you cannot change them, however you can re-enter Calico CIDR parameters (note IP must be private and can be selected from the following options: (10.0.0.0 - 10.255.0.0 / 172.16.0.0 - 172.24.0.0 / 192.168.0.0)
    * **Subnets** – By default, all available subnets in the VPC specified in the previous field will be randomly selected in the first order, you can choose another Subnet, but only 1 can be selected.
    * **SSH keys** - to Import into Kubernetes during initialization (Click [**here** ](../../security/ssh-key-key-pairs.md)for instructions on creating SSH Key)

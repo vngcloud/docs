@@ -32,7 +32,7 @@ Chi tiết hướng dẫn các bước
 
 **Bước 1: Tạo User Groups (SystemAdmin, Developer) và gắn các managed policy tương ứng**
 
-Truy cập vào tab Group ở trang quản lý IAM tại [đây](https://iam.console.vngcloud.vn/user-groups), nhấn "**Create a Group**" và điền thông tin tên group là SystemAdmin, nhấn **Next step** để tới bước gắn Policy
+Truy cập vào tab Group ở trang quản lý IAM tại [đây](https://iam.console.greennode.ai/user-groups), nhấn "**Create a Group**" và điền thông tin tên group là SystemAdmin, nhấn **Next step** để tới bước gắn Policy
 
 <figure><img src="../../.gitbook/assets/image2023-7-12_13-11-7.png" alt=""><figcaption></figcaption></figure>
 
@@ -50,7 +50,7 @@ Như vậy bạn đã hoàn thành việc tạo 2 User Groups: SystemAdmin và D
 
 **Bước 2: Tạo User Account (System1, System2, Developer1, Developer2) và gắn vào các User Group tương ứng**
 
-Tiến hành tạo các User Account bằng cách truy cập vào tab User Account ở trang quản lý IAM tại [đây](https://iam.console.vngcloud.vn/user-accounts), nhấn **Create a User Account,** điền thông tin Username và Password, sau đó nhấn **Create User Account** (lưu ý để hướng dẫn ngắn gọn ở đây chúng tôi tạo 4 user account cùng chung 1 password, khuyến cáo bạn nên tạo các user account riêng lẻ và có password khác nhau, hoặc đổi password khi sử dụng):
+Tiến hành tạo các User Account bằng cách truy cập vào tab User Account ở trang quản lý IAM tại [đây](https://iam.console.greennode.ai/user-accounts), nhấn **Create a User Account,** điền thông tin Username và Password, sau đó nhấn **Create User Account** (lưu ý để hướng dẫn ngắn gọn ở đây chúng tôi tạo 4 user account cùng chung 1 password, khuyến cáo bạn nên tạo các user account riêng lẻ và có password khác nhau, hoặc đổi password khi sử dụng):
 
 <figure><img src="../../.gitbook/assets/image2023-7-12_13-23-4.png" alt=""><figcaption></figcaption></figure>
 
@@ -80,7 +80,7 @@ Vậy là bạn đã hoàn thành việc tạo các User Accounts và thêm chú
 
 Lúc này bạn có thể đăng nhập vào các User Accounts để kiểm tra quyền, tại đây chúng tôi sẽ thử đăng nhập vào 2 User: System1, Developer1 để thực hiện một số thao tác trên vServer để kiểm tra quyền
 
-Truy cập vào vServer tại [đây](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), khi chưa đăng nhập bất kì tài khoản nào bạn sẽ được chuyển hướng sang trang sign-in chọn "**Sign-in With IAM User Account**"
+Truy cập vào vServer tại [đây](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server), khi chưa đăng nhập bất kì tài khoản nào bạn sẽ được chuyển hướng sang trang sign-in chọn "**Sign-in With IAM User Account**"
 
 <figure><img src="../../.gitbook/assets/image2023-7-12_13-48-49.png" alt=""><figcaption></figcaption></figure>
 

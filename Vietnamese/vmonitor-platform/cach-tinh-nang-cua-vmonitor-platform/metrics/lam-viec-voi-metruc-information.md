@@ -4,7 +4,7 @@
 
 Sau khi bạn thiết lập thành công Metric Agent trên Server hoặc bạn đã sử dụng các Product Metric khác, lúc này bạn có thể xem thông tin các thông số metrics được đẩy về hệ thống vMonitor Platform bằng cách:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Metric.**
 3. Chọn **Information**.
 4. Hệ thống hiển thị danh sách các **metrics** được đẩy về trong đó:&#x20;
@@ -21,7 +21,7 @@ Sau khi bạn thiết lập thành công Metric Agent trên Server hoặc bạn 
 
 Để xem thông tin chi tiết một metric được đẩy về vMonitor Platform, hãy làm theo hướng dẫn bên dưới:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Metric.**
 3. Chọn **Information**.
 4. Chọn vào **metric** mà bạn muốn xem thông tin chi tiết. Lúc này hệ thống sẽ hiển thị **Metadata** và **Dimensions** của metric này.&#x20;
@@ -43,7 +43,7 @@ Sau khi bạn thiết lập thành công Metric Agent trên Server hoặc bạn 
 
 Bạn có thể chỉnh sửa thông tin metadata của một metric bằng cách:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Metric.**
 3. Chọn **Information.**
 4. Chọn **Metric** bạn muốn chỉnh sửa.

@@ -6,7 +6,7 @@ To delete a container, you can:
 
 &#x20;Use vStorage Portal
 
-1\. Log in to https://vstorage.console.vngcloud.vn
+1\. Log in to https://vstorage.console.greennode.ai
 
 2\. Choose the **project** and select the **container** you want to delete.
 

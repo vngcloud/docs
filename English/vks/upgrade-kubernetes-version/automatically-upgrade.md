@@ -87,7 +87,7 @@ _**Monday schedule (12:00 PM)**:_
 
 Below are instructions for updating the Upgrade Policy on the VKS system:
 
-**Step 1:** Go to [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Step 1:** Go to [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Step 2:** Select **Create a Cluster.**
 

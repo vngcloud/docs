@@ -12,7 +12,7 @@
 
 ## Open the Members Tab
 
-Go to [Team & Permissions](https://aiplatform.console.vngcloud.vn/team-permissions) — the **Members** tab opens by default.
+Go to [Team & Permissions](https://aiplatform.console.greennode.ai/team-permissions) — the **Members** tab opens by default.
 
 ![Members list](../../../.gitbook/assets/Agentbase-image/Members-list.png)
 
@@ -38,7 +38,7 @@ New members do not need a separate account — they log in via an **IDP Login UR
 
 | Case | Result |
 |---|---|
-| **No IDP configured** | Popup notification — go to [IAM Identity Providers](https://iam.console.vngcloud.vn/identity-providers) to create an IDP first, then return to invite members |
+| **No IDP configured** | Popup notification — go to [IAM Identity Providers](https://iam.console.greennode.ai/identity-providers) to create an IDP first, then return to invite members |
 | **IDP exists** | Popup listing IDPs: Name / Type / Login URL / **Copy** icon |
 
 **Step 3:** Click the **Copy** icon → send the Login URL to the new member

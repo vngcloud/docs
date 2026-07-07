@@ -6,7 +6,7 @@
 
 ## Open the Roles & Permissions Tab
 
-Go to [Team & Permissions](https://aiplatform.console.vngcloud.vn/team-permissions) → **Roles & Permissions** tab
+Go to [Team & Permissions](https://aiplatform.console.greennode.ai/team-permissions) → **Roles & Permissions** tab
 
 ![Roles & Permissions](../../../.gitbook/assets/Agentbase-image/Role-permission-tab.png)
 

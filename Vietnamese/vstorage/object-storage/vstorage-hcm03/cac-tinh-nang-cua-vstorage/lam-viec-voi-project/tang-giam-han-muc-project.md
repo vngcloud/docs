@@ -6,7 +6,7 @@ Bạn đã khởi tạo project với lượng quota ban đầu phù hợp với
 
 &#x20;Sử dụng vStorage Portal
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648497/image2023-3-6_10-2-51.png?version=1\&modificationDate=1678071772000\&api=v2)tại **project** bạn muốn thực hiện thay đổi quota. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648497/image2023-3-6_10-3-4.png?version=1\&modificationDate=1678071785000\&api=v2).
 

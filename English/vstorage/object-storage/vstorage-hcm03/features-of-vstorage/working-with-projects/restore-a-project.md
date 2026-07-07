@@ -6,7 +6,7 @@ To restore a deleted project, you can:
 
 &#x20;Use vStorage Portal
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 2. &#x20;Select the **Trash** menu.
 3. Click on the icon ![](https://docs.vngcloud.vn/download/thumbnails/67994059/image2023-2-2\_16-30-26.png?version=1\&modificationDate=1700622290000\&api=v2) for the **project** you want to restore.
 4. Choose the storage **period** you want to restore. We provide storage periods including 1 month, 3 months, 6 months, 12 months, 24 months, and 36 months. When you choose the restoration period, the system will automatically calculate the effective time of the new storage period and the total amount you need to pay for project renewal.

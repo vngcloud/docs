@@ -38,7 +38,7 @@ vDB Kafka Cluster provides you with comprehensive topic management capabilities,
 
 **1. Select Kafka Cluster**
 
-* Log in to the vDB Kafka Cluster interface here: [https://vdb.console.vngcloud.vn/kafka/cluster](https://vdb.console.vngcloud.vn/kafka/cluster)
+* Log in to the vDB Kafka Cluster interface here: [https://vdb.console.greennode.ai/kafka/cluster](https://vdb.console.greennode.ai/kafka/cluster)
 * From the list of available Kafka clusters, select the cluster where you want to manage topics.
 
 **2. Access the "Topics" Section**

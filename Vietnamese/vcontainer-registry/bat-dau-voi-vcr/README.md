@@ -16,10 +16,10 @@ vCR Console là giao diện người dùng dựa trên web, cho phép bạn qu�
 
 **Cách truy cập vCR Console**
 
-* Truy cập trực tiêp đến vCR Console thông qua đường dẫn: [https://vcr.console.vngcloud.vn/](https://vcr.console.vngcloud.vn/)
-* Truy cập từ trang chủ vServer: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+* Truy cập trực tiêp đến vCR Console thông qua đường dẫn: [https://vcr.console.greennode.ai/](https://vcr.console.greennode.ai/)
+* Truy cập từ trang chủ vServer: [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
   * Tại trang chủ vServer, điều hướng đến vCR portal bằng cách click **chọn "Container Registry" trong mục "Container Registry"** tại thanh menu bên trái.
-* Truy cập từ trang chủ vConsole: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
+* Truy cập từ trang chủ vConsole: [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/)
   * Tại mục **"GreenNode Service"** trên giao diện, click **chọn "vServer"**, sau đó click **chọn "Container Registry"** từ danh sách sản phẩm/dịch vụ tương ứng bên phải
 
 #### 2. Khởi tạo Repository <a href="#gettingstarted-vcr-2.khoitaorepository" id="gettingstarted-vcr-2.khoitaorepository"></a>

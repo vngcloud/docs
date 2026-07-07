@@ -6,7 +6,7 @@ Bài hướng dẫn này sẽ hướng dẫn bạn từng bước để thực h
 
 ### Xem danh sách backup server point
 
-1. Truy cập vào trang danh sách backup server tại đây: [https://backupcenter.console.vngcloud.vn/backup-server/list](https://backupcenter.console.vngcloud.vn/backup-server/list)
+1. Truy cập vào trang danh sách backup server tại đây: [https://backupcenter.console.greennode.ai/backup-server/list](https://backupcenter.console.greennode.ai/backup-server/list)
 2. Chọn Backup Server cần xem backup server point. Bạn có thể nhấn vào ô tìm kiếm, nhập tên backup server cần tìm. ![](<../../../.gitbook/assets/image (767).png>)
 3. Tại trang chi tiết của Backup Server, nhấn chọn tab Restore Point. Tại đây, bạn sẽ thấy danh sách các bản backup server point đã tạo. Thông tin bao gồm:
    1. **Backup Server Point ID** /Định danh backup server point
@@ -23,7 +23,7 @@ Bài hướng dẫn này sẽ hướng dẫn bạn từng bước để thực h
 
 Để xem lịch sử các lần khởi tạo backup server point, làm theo hướng dẫn sau:
 
-1. Truy cập trang History của Backup Center tại đây: [https://backupcenter.console.vngcloud.vn/backup-history/list](https://backupcenter.console.vngcloud.vn/backup-history/list)
+1. Truy cập trang History của Backup Center tại đây: [https://backupcenter.console.greennode.ai/backup-history/list](https://backupcenter.console.greennode.ai/backup-history/list)
 2. Chọn tab Backup History để xem lịch sử các lần khởi tạo backup
 3. Nhập Backup Server ID vào ô tìm kiếm để xem lịch sử khởi tạo backup của một backup server. Thông tin hiển thị bao gồm:
    1. **Status:** Trạng thái khởi tạo backup server point (Active -> Tạo thành công; Error -> Tạo thất bại)

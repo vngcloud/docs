@@ -6,7 +6,7 @@ Node Group is an important concept in Kubernetes, used to manage groups of **nod
 
 To initialize a Node Group, follow the steps below:
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2:** At the previously created Cluster, select **Create a Node group.**
 
@@ -41,7 +41,7 @@ To initialize a Node Group, follow the steps below:
 
 **For Node Group, you can edit the parameters: Number of Nodes, Auto Scaling, Upgrade Strategy, Security Group in each separate edit** . Specifically, you can follow these steps:
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2:** In the previously created Cluster, select **the Cluster you want to edit the Node group.**
 
@@ -72,7 +72,7 @@ When you no longer need to use the Node Group, delete them to save costs. When d
 * All nodes included in the Node Group (VM)
 {% endhint %}
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2: At the Overview** screen , select the **Kubernetes Cluster menu.**
 

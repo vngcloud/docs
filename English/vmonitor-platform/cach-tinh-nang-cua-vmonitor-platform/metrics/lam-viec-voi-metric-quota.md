@@ -10,7 +10,7 @@ A Metric quota is a term on the vMonitor Platform that represents a monitoring p
 
 To initialize a Metric quota, follow the steps below:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.vngcloud.vn/vmonitor).
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.greennode.ai/vmonitor).
 2. Select **Quota & Usage**.
 3. Choose **Buy metric quota**.
 4. Select the Class you need. We offer two classes: Basic and Pro.
@@ -32,7 +32,7 @@ The cost calculation for each metric quota package is publicly available on the 
 
 After you initialize a Metric quota, you can view the details of the Metric quota package you have created by following these steps:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.vngcloud.vn/vmonitor).
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.greennode.ai/vmonitor).
 2. Select the **Quota & Usage** folder.
 3. Choose the **Metric** section.
 4. The system will display the information of the initialized **Metric quota** package and the actual **Usage** you are using for that Metric quota package. You can extend the package within 7 days before the expiration date of the Metric quota package or increase the quota limit by selecting **Extend** or **Increase quota limit**.
@@ -43,7 +43,7 @@ After you initialize a Metric quota, you can view the details of the Metric quot
 
 To renew a Metric quota, you can:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.vngcloud.vn/vmonitor).
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.greennode.ai/vmonitor).
 2. Select the **Quota & Usage** folder.
 3. Choose the **Metric** section.
 4. In the current Metric quota package, select the icon ![](<../../../.gitbook/assets/image (107).png>) and then choose **Renew**.
@@ -59,7 +59,7 @@ The cost calculation for renewing each Metric quota package is publicly availabl
 
 To **increase the limit** of a **Metric quota**, you can:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.vngcloud.vn/vmonitor).
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.greennode.ai/vmonitor).
 2. Select the **Quota & Usage** folder.
 3. Choose the **Metric** section.
 4. In the current Metric quota package, select the icon ![](http://docs.vngcloud.vn/download/thumbnails/49650622/image2024-2-28\_22-39-59.png?version=1\&modificationDate=1709134800646\&api=v2)and then choose **Resize**.
@@ -77,7 +77,7 @@ You have created an initial Metric quota that suits your needs. However, if your
 
 To **delete** a **Metric quota**, you can:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.vngcloud.vn/vmonitor).
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.greennode.ai/vmonitor).
 2. Select the **Quota & Usage** folder.
 3. Choose the **Metric** section.
 4. In the current Metric quota package, select **Delete**.

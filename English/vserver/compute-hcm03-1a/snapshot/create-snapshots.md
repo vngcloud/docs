@@ -21,7 +21,7 @@ The snapshot process operates asynchronously. Even though the point-in-time snap
 
 ### **Create a Snapshot for a Volume on the Dashboard** <a href="#taosnapshot-taosnapshotchovolumetrenbangdieukhien" id="taosnapshot-taosnapshotchovolumetrenbangdieukhien"></a>
 
-1. Open the vServer control panel at [https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot](https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot).
+1. Open the vServer control panel at [https://hcm-3.console.greennode.ai/vserver/block-store/snapshot](https://hcm-3.console.greennode.ai/vserver/block-store/snapshot).
 2. Select **Create Snapshot**
 3. On the Create Snapshot information entry page, you need to complete the following items:
    * **Snapshot Type** – Choose the object you want to create a Snapshot for, according to Volume.&#x20;
@@ -36,7 +36,7 @@ The snapshot process operates asynchronously. Even though the point-in-time snap
 
 ### **Create a Snapshot for a Server on the Dashboard** <a href="#taosnapshot-taosnapshotchoservertrenbangdieukhien" id="taosnapshot-taosnapshotchoservertrenbangdieukhien"></a>
 
-1. Open the vServer control panel at [https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot](https://hcm-3.console.vngcloud.vn/vserver/block-store/snapshot).
+1. Open the vServer control panel at [https://hcm-3.console.greennode.ai/vserver/block-store/snapshot](https://hcm-3.console.greennode.ai/vserver/block-store/snapshot).
 2. Select Create **Snapshot**
 3. On the Create Snapshot information entry page, you need to complete the following items:
    * **Snapshot Type** – Choose the object you want to create a Snapshot for, according to the Server. Selecting by Server implies that you will create a Snapshot attached to the chosen Server.

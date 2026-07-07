@@ -6,7 +6,7 @@
 
 ## Prerequisites
 
-- An active [AI Platform](https://aiplatform.console.vngcloud.vn/) account
+- An active [AI Platform](https://aiplatform.console.greennode.ai/) account
 - API key (`vn-...` token) with status **ACTIVE**
 - Node.js installed
 
@@ -28,7 +28,7 @@ brew install opencode
 
 ## Step 2 — Get an API key from AI Platform
 
-1. Log in to [AI Platform Console](https://aiplatform.console.vngcloud.vn/)
+1. Log in to [AI Platform Console](https://aiplatform.console.greennode.ai/)
 2. Go to **API Keys** → **Create API Key**
 3. Name the key (5–50 chars, lowercase letters, numbers, and hyphens)
 4. Copy the API key (`vn-...`)
@@ -174,10 +174,10 @@ Then select them via `/models`, or update the top-level `model` field to `MAAS-c
 
 ## Result
 
-After completing setup, OpenCode routes all requests through GreenNode MaaS. Usage is recorded on [AI Platform Console → Usage](https://aiplatform.console.vngcloud.vn/).
+After completing setup, OpenCode routes all requests through GreenNode MaaS. Usage is recorded on [AI Platform Console → Usage](https://aiplatform.console.greennode.ai/).
 
 | I want to... | Go to |
 |---|---|
 | Use Codex with Minimax via MaaS | [Use Codex with Minimax via GreenNode MaaS](use-codex-with-minimax.md) |
 | Connect Claude Code to MaaS | [Connect Claude Code to GreenNode MaaS](connect-claude-code-to-maas.md) |
-| View usage and billing | [AI Platform Console](https://aiplatform.console.vngcloud.vn/) |
+| View usage and billing | [AI Platform Console](https://aiplatform.console.greennode.ai/) |

@@ -86,7 +86,7 @@ Fast là công cụ hoàn hảo cho những ai chỉ muốn kiểm tra tốc đ�
 
 ### **Giám sát tốc độ Internet bằng vMonitor trên bảng điều khiển** <a href="#kiemtratocdointernet-giamsattocdointernetbangvmonitortrenbangdieukhien" id="kiemtratocdointernet-giamsattocdointernetbangvmonitortrenbangdieukhien"></a>
 
-*   Bạn có thể truy cập vào trang chủ vMonitor tại: [https://hcm-3.console.vngcloud.vn/vmonitor/dashboard](https://hcm-3.console.vngcloud.vn/vmonitor/dashboard) để theo dõi tốc độ Internet của máy chủ:\
+*   Bạn có thể truy cập vào trang chủ vMonitor tại: [https://hcm-3.console.greennode.ai/vmonitor/dashboard](https://hcm-3.console.greennode.ai/vmonitor/dashboard) để theo dõi tốc độ Internet của máy chủ:\
     <br>
 
     <figure><img src="../../../.gitbook/assets/image (427).png" alt=""><figcaption></figcaption></figure>

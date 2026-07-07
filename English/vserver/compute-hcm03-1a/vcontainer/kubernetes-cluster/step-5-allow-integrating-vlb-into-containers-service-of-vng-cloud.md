@@ -34,7 +34,7 @@ _Note: Như ở trên, chúng ta sẽ tạo 1 Listener trên Port 80. Nếu mu�
 
 2\. Choose **Create Load Balance**r to create vLB
 
-3\. Then access the K8S creation control panel at the link:  [https://hcm-3.console.vngcloud.vn/vserver/container/cluster](https://hcm-3.console.vngcloud.vn/vserver/container/cluster):
+3\. Then access the K8S creation control panel at the link:  [https://hcm-3.console.greennode.ai/vserver/container/cluster](https://hcm-3.console.greennode.ai/vserver/container/cluster):
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59802513/image2023-6-6_16-13-49.png?version=1&#x26;modificationDate=1686042830000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 

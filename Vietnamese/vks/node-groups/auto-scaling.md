@@ -36,7 +36,7 @@ Nếu thỏa mãn 2 điều kiện trên, hệ thống sẽ tăng số node (m�
 
 * Khi hệ thống thực hiện Auto Scaling, việc tạo ra node mới có thể gặp lỗi nếu bạn không có đủ credit hoặc bạn đã hết quota để tạo VM trên hệ thống vServer. Để tránh gặp lỗi bên trên, bạn cần:
   * **Đảm bảo bạn có đủ credit:** Nếu bạn là người dùng trả trước, hãy nạp thêm credit vào tài khoản của bạn.
-  * **Yêu cầu tăng quota:** Bạn có thể yêu cầu tăng quota cho tài khoản của mình tại [đây](https://hcm-3.console.vngcloud.vn/vserver/limit).
+  * **Yêu cầu tăng quota:** Bạn có thể yêu cầu tăng quota cho tài khoản của mình tại [đây](https://hcm-3.console.greennode.ai/vserver/limit).
 {% endhint %}
 
 #### Cơ chế Scale down: hệ thống VKS thực hiện scale down khi

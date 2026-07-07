@@ -1,6 +1,6 @@
 # Change Phone Number Guide
 
-**Step 1**: Log in to the Single Sign-On account management page: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/). In the account management function menu, select the "**Change Phone Number**" option.
+**Step 1**: Log in to the Single Sign-On account management page: [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/). In the account management function menu, select the "**Change Phone Number**" option.
 
 <figure><img src="../.gitbook/assets/image (486).png" alt=""><figcaption></figcaption></figure>
 

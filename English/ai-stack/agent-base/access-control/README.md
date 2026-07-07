@@ -2,7 +2,7 @@
 
 > Access Control is the foundation of AgentBase. It covers two closely related concerns: **Agent Identity** (registering your agent on the platform) and **Auth & Secrets** (storing and injecting credentials your agent needs to call external services).
 
-* **Portal:** https://aiplatform.console.vngcloud.vn/access-control
+* **Portal:** https://aiplatform.console.greennode.ai/access-control
 * **API Base URL:** `https://agentbase.api.vngcloud.vn/identity/api/v1`
 
 ***
@@ -62,7 +62,7 @@ The auth system supports three credential types:
 
 #### Create an Identity
 
-1. Open https://aiplatform.console.vngcloud.vn/access-control
+1. Open https://aiplatform.console.greennode.ai/access-control
 2. Click **"Create Identity"**
 3. Fill in:
    * **Name** (required): e.g., `my-order-agent` â€” lowercase, alphanumeric and hyphens
@@ -73,17 +73,17 @@ The auth system supports three credential types:
 
 #### List Identities
 
-1. Open https://aiplatform.console.vngcloud.vn/access-control
+1. Open https://aiplatform.console.greennode.ai/access-control
 2. All identities are shown in a paginated list
 
 #### Get Identity Details
 
-1. Open https://aiplatform.console.vngcloud.vn/access-control
+1. Open https://aiplatform.console.greennode.ai/access-control
 2. Click on the identity name
 
 #### Update an Identity
 
-1. Open https://aiplatform.console.vngcloud.vn/access-control
+1. Open https://aiplatform.console.greennode.ai/access-control
 2. Click on the identity name â†’ **"Edit"**
 3. Update description or allowed return URLs â†’ **Save**
 
@@ -91,7 +91,7 @@ The auth system supports three credential types:
 
 > **Warning:** Deleting an identity is **irreversible**. Stop all associated runtimes and remove all auth configurations before deleting.
 
-1. Open https://aiplatform.console.vngcloud.vn/access-control
+1. Open https://aiplatform.console.greennode.ai/access-control
 2. Find the identity â†’ **Delete** â†’ confirm
 
 ***
@@ -248,20 +248,20 @@ An **agent identity** must exist before creating auth providers. If you haven't 
 
 #### Static API Key Provider
 
-1. Open https://aiplatform.console.vngcloud.vn/access-control â†’ **"Auth Providers"**
+1. Open https://aiplatform.console.greennode.ai/access-control â†’ **"Auth Providers"**
 2. Click **"Create Provider"** â†’ select **"Static API Key"**
 3. Fill in **Name** (e.g., `openai-key`) and **API Key value**
 4. Click **Create**
 
 #### Delegated API Key Provider
 
-1. Open https://aiplatform.console.vngcloud.vn/access-control â†’ **Auth Providers**
+1. Open https://aiplatform.console.greennode.ai/access-control â†’ **Auth Providers**
 2. Click **"Create Provider"** â†’ select **"Delegated API Key"**
 3. Enter a **Name** (e.g., `user-openai-key`) â†’ **Create**
 
 #### OAuth2 Provider
 
-1. Open https://aiplatform.console.vngcloud.vn/access-control â†’ **Auth Providers**
+1. Open https://aiplatform.console.greennode.ai/access-control â†’ **Auth Providers**
 2. Click **"Create Provider"** â†’ select **"OAuth2"**
 3. Fill in: **Name**, **Client ID**, **Client Secret**, **Authorization URL**, **Token URL**
 4. Click **Create** â€” the response includes a **Callback URL** to register in your OAuth2 app
@@ -539,7 +539,7 @@ def handler(payload: dict, context: RequestContext, google_token: str) -> dict:
 | Error                           | Cause                                    | Fix                                                             |
 | ------------------------------- | ---------------------------------------- | --------------------------------------------------------------- |
 | 401 Unauthorized                | Expired or invalid IAM token             | Re-obtain token with valid credentials                          |
-| 403 Forbidden                   | Service account lacks permissions        | Attach `AgentBaseFullAccess` at https://iam.console.vngcloud.vn |
+| 403 Forbidden                   | Service account lacks permissions        | Attach `AgentBaseFullAccess` at https://iam.console.greennode.ai |
 | 409 Conflict                    | Identity or provider name already exists | Choose a different name                                         |
 | Name validation error           | Name doesn't match `^[a-zA-Z0-9_-]+$`    | Use only alphanumeric, underscore, and hyphen. 3â€“50 chars       |
 | 404 Not Found                   | Provider name does not exist             | Verify with a `list` operation                                  |

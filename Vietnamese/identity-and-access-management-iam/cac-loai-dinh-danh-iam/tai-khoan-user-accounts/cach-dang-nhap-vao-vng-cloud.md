@@ -4,7 +4,7 @@ Tại GreenNode Service, người dùng có thể truy cập đến các website
 
 #### **1. Đăng nhập bằng Root User Account:** <a href="#howtologinintovngcloud-1.dangnhapbangrootuseraccount" id="howtologinintovngcloud-1.dangnhapbangrootuseraccount"></a>
 
-* Truy cập vào 1 trong các website portal thuộc hệ thống GreenNode Service hoăc truy cập vào đường dẫn đăng nhập của GreenNode Console trong trường hợp bạn không nhớ chính xác URL Portal mà mình muốn truy cập: [https://hcm-3.console.vngcloud.vn](https://hcm-3.console.vngcloud.vn/).
+* Truy cập vào 1 trong các website portal thuộc hệ thống GreenNode Service hoăc truy cập vào đường dẫn đăng nhập của GreenNode Console trong trường hợp bạn không nhớ chính xác URL Portal mà mình muốn truy cập: [https://hcm-3.console.greennode.ai](https://hcm-3.console.greennode.ai/).
 * Một giao diện đăng nhập sẽ hiển thi như hình dưới đây:
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/63766843/image2023-8-4_16-39-10.png?version=1&#x26;modificationDate=1691141951000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
@@ -18,7 +18,7 @@ Tại GreenNode Service, người dùng có thể truy cập đến các website
 
 #### **2. Đăng nhập bằng IAM User Account:** <a href="#howtologinintovngcloud-2.dangnhapbangiamuseraccount" id="howtologinintovngcloud-2.dangnhapbangiamuseraccount"></a>
 
-* Truy cập vào 1 trong các website portal thuộc hệ thống GreenNode Service hoăc truy cập vào đường dẫn đăng nhập của GreenNode Console trong trường hợp bạn không nhớ chính xác URL Portal mà mình muốn truy cập: [https://hcm-3.console.vngcloud.vn](https://hcm-3.console.vngcloud.vn/).
+* Truy cập vào 1 trong các website portal thuộc hệ thống GreenNode Service hoăc truy cập vào đường dẫn đăng nhập của GreenNode Console trong trường hợp bạn không nhớ chính xác URL Portal mà mình muốn truy cập: [https://hcm-3.console.greennode.ai](https://hcm-3.console.greennode.ai/).
 * Một giao diện đăng nhập sẽ hiển thi như hình dưới đây:
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/63766843/image2023-8-4_16-39-10.png?version=1&#x26;modificationDate=1691141951000&#x26;api=v2" alt=""><figcaption></figcaption></figure>

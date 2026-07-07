@@ -48,7 +48,7 @@ Standalone mode characteristics:
 
 **Step 1: Create a Virtual IP Address in the GreenNode portal**
 
-Go to [vServer Portal - Create-virtual-ip-address](https://hcm-3.console.vngcloud.vn/vserver/network/virtual-ip-address).\
+Go to [vServer Portal - Create-virtual-ip-address](https://hcm-3.console.greennode.ai/vserver/network/virtual-ip-address).\
 Select **Virtual IP Address type** = **Public Market Place**.\
 Fill in the required information.
 

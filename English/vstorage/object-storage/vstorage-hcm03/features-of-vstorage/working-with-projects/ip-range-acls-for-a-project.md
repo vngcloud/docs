@@ -10,7 +10,7 @@ To set up IP Range ACLs for a project, you can do so through the vStorage Portal
 
 &#x20;Use vStorage Portal
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 2. Select the icon ![](https://docs.vngcloud.vn/download/thumbnails/67994065/image2023-5-9\_13-12-33.png?version=1\&modificationDate=1700622740000\&api=v2) in the **project** you want to set up IP Range ACLs for.
 3. Choose the **IP Range ACLs** section.
 4. Select **Set IP Range ACLs**.

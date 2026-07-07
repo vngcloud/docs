@@ -4,7 +4,7 @@
 
 **CORS (Cross-Origin Resource Sharing)** on ​​vStorage allows applications from a different domain (origin) to access resources in your bucket. This feature is useful when you want to access objects in your bucket from a web application running on a different domain, such as a frontend application that wants to load images from an S3 bucket.
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) .
 
 2\. Select **the project** containing **the bucket** you want to set up CORS for.
 

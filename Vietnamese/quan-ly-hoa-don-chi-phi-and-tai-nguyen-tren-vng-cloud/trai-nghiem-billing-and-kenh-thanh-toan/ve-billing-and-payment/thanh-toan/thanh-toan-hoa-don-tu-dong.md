@@ -17,6 +17,6 @@ Thanh toán tự động là tính năng nhằm mục đích hỗ trợ người
 * **Kết quả khi hoàn thành tác vụ**
   * Gửi mail thông báo đến người dùng thông tin hóa đơn vừa được thanh toán
   * Phát sinh lịch sử giao dịch trên user portal tại:
-    * Billing history: [https://dashboard.console.vngcloud.vn/billing-report](https://dashboard.console.vngcloud.vn/billing-report)
-    * Credit history: [https://dashboard.console.vngcloud.vn/credit-history](https://dashboard.console.vngcloud.vn/credit-history)
-    * Payment history: [https://dashboard.console.vngcloud.vn/payment-history](https://dashboard.console.vngcloud.vn/payment-history)
+    * Billing history: [https://dashboard.console.greennode.ai/billing-report](https://dashboard.console.greennode.ai/billing-report)
+    * Credit history: [https://dashboard.console.greennode.ai/credit-history](https://dashboard.console.greennode.ai/credit-history)
+    * Payment history: [https://dashboard.console.greennode.ai/payment-history](https://dashboard.console.greennode.ai/payment-history)

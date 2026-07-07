@@ -45,7 +45,7 @@ For option 1, please refer to the instructions on Creating an MDS Instance.
 
 For option 2, you can do the following:
 
-1. Go to the Database management screen at: [https://vdb.console.vngcloud.vn/memorystore/database](https://vdb.console.vngcloud.vn/memorystore/database)
+1. Go to the Database management screen at: [https://vdb.console.greennode.ai/memorystore/database](https://vdb.console.greennode.ai/memorystore/database)
 2.  Select the MDS Instance and click "Edit Configuration Group."
 
     <figure><img src="../../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>

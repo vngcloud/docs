@@ -44,7 +44,7 @@ Any tool that allows setting a custom `base_url` in OpenAI SDK format works out 
 - **Credit-token:** 1 credit = 1 VND
 - **Prepaid:** credits deducted every 5-minute collection cycle — model automatically disabled when credits run out
 - **Postpaid:** usage recorded as debt with no quota limit
-- View real-time usage at [AI Platform Console → Usage](https://aiplatform.console.vngcloud.vn/)
+- View real-time usage at [AI Platform Console → Usage](https://aiplatform.console.greennode.ai/)
 
 ---
 
@@ -54,4 +54,4 @@ Any tool that allows setting a custom `base_url` in OpenAI SDK format works out 
 |---|---|
 | Connect Claude Code to MaaS | [Connect Claude Code to GreenNode MaaS](connect-claude-code-to-maas.md) |
 | Connect an OpenAI-compatible tool to MaaS | [Connect OpenAI-compatible Clients to GreenNode MaaS](connect-openai-compatible-to-maas.md) |
-| Get an API key | [AI Platform Console](https://aiplatform.console.vngcloud.vn/) |
+| Get an API key | [AI Platform Console](https://aiplatform.console.greennode.ai/) |

@@ -21,7 +21,7 @@ We recommend using the vServer Portal dashboard, command-line tool, or API to re
 
 **To restart a server using the dashboard:**
 
-1. Open the vServer dashboard at: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+1. Open the vServer dashboard at: [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
 2. In the navigation pane, select the Server tab.
 3. Select the desired Server and choose Actions, then select Restart from the drop-down list.
 4. Confirm when prompted to restart.

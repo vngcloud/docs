@@ -16,7 +16,7 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
 To initialize a Cluster, follow the steps below:
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2: At the Overview** screen , select **Activate.**
 
@@ -34,7 +34,7 @@ To initialize a Cluster, follow the steps below:
 
 After the Cluster is successfully initialized, you can connect and check the newly created Cluster information by following these steps:
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2:** The Cluster list is displayed, select the icon![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F73762054%2Fimage2024-4-4\_14-37-11.png%3Fversion%3D1%26modificationDate%3D1712222503000%26api%3Dv2\&width=300\&dpr=4\&quality=100\&sign=f64230d8\&sv=1)and select **Download Config File** to download the kubeconfig file. This file will give you full access to your Cluster.
 
@@ -73,7 +73,7 @@ When you initialize the Cluster according to the instructions above, if you have
 
 **Initialize Service Account**
 
-* Create or use a **service account** created on IAM and attach policy: **vLBFullAccess** , **vServerFullAccess** . To create a service account, go here [and](https://iam.console.vngcloud.vn/service-accounts) follow these steps:
+* Create or use a **service account** created on IAM and attach policy: **vLBFullAccess** , **vServerFullAccess** . To create a service account, go here [and](https://iam.console.greennode.ai/service-accounts) follow these steps:
   * Select " **Create a Service Account** ", enter a name for the Service Account and click **Next Step** to assign permissions to the Service Account
   * Find and select **Policy: vLBFullAccess and Policy: vServerFullAccess** , then click " **Create a Service Account** " to create Service Account, Policy: vLBFullAccess and Policy: vServerFullAccess created by GreenNode, you cannot delete these policies.
   * After successful creation, you need to save **the Client\_ID** and **Secret\_Key** of the Service Account to perform the next step.
@@ -215,7 +215,7 @@ At this point, the vLB system will automatically create a corresponding LB for t
 http://Endpoint/
 ```
 
-You can get Load Balancer Public Endpoint information at the vLB interface. Specifically, access at [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb)
+You can get Load Balancer Public Endpoint information at the vLB interface. Specifically, access at [https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb/](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb/detail/lb-927c0b5f-5bcf-4ee1-b645-41d6a0caeecb)
 
 For example, below I have successfully accessed the nginx app with the address: [http://180.93.181.20/](http://180.93.181.20/)
 

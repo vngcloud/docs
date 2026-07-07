@@ -12,7 +12,7 @@
 
 ## Open the Service Accounts Tab
 
-Go to [Team & Permissions](https://aiplatform.console.vngcloud.vn/team-permissions) → **Service Accounts** tab
+Go to [Team & Permissions](https://aiplatform.console.greennode.ai/team-permissions) → **Service Accounts** tab
 
 The list shows:
 
