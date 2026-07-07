@@ -1,34 +1,34 @@
-# Sử dụng Multi-Instance GPU (MIG) trên vServer
+# Sử dụng Multi-Instance GPU (MIG)
 
 > Hướng dẫn này giúp bạn cấu hình và sử dụng **Multi-Instance GPU (MIG)** trực tiếp trên vServer bare-metal với NVIDIA H100, chia một GPU vật lý thành nhiều MIG instance độc lập — mỗi instance có VRAM và Streaming Multiprocessors riêng biệt. Các container Docker được assign vào từng MIG instance riêng lẻ, đảm bảo isolation hoàn toàn.
 
 <figure><img src="../../../.gitbook/assets/MIG-vServer/1.architect.png" alt="Kiến trúc MIG trên vServer bare-metal — GPU 0 phân thành 2 MIG instances, GPU 1 giữ nguyên full GPU"><figcaption><p>Kiến trúc MIG trên vServer: Docker + NVIDIA Container Toolkit quản lý cả GPU MIG (2x 3g.40gb) và non-MIG (full 80GB) trên cùng một máy</p></figcaption></figure>
 
----
+***
 
 ## Điều kiện cần (Prerequisites)
 
-- vServer bare-metal có GPU **NVIDIA H100** (hoặc Ampere/Hopper trở lên — MIG chỉ hỗ trợ từ kiến trúc Ampere).
-- NVIDIA Driver **≥ 525** đã được cài đặt trên server. Kiểm tra bằng `nvidia-smi`.
-- **NVIDIA Container Toolkit** đã cài đặt (để chạy container Docker với GPU).
-- **Docker** đã cài đặt và đang chạy.
-- Quyền `sudo` trên server.
+* vServer bare-metal có GPU **NVIDIA H100** (hoặc Ampere/Hopper trở lên — MIG chỉ hỗ trợ từ kiến trúc Ampere).
+* NVIDIA Driver **≥ 525** đã được cài đặt trên server. Kiểm tra bằng `nvidia-smi`.
+* **NVIDIA Container Toolkit** đã cài đặt (để chạy container Docker với GPU).
+* **Docker** đã cài đặt và đang chạy.
+* Quyền `sudo` trên server.
 
----
+***
 
 ## MIG Profiles tham chiếu (H100 80GB)
 
 Trước khi tạo MIG instances, chọn profile phù hợp với workload. H100 80GB hỗ trợ 7 profiles:
 
-| Profile | VRAM | Streaming Multiprocessors (SM) | Tối đa/GPU | DEC |
-|---|---|---|---|---|
-| `1g.10gb` | 9.75 GB | 16 | 7 | 1 |
-| `1g.10gb+me` | 9.75 GB | 16 | 1 | 1 |
-| `1g.20gb` | 19.62 GB | 26 | 4 | 1 |
-| `2g.20gb` | 19.62 GB | 32 | 3 | 2 |
-| **`3g.40gb`** | **39.50 GB** | **60** | **2** | 3 |
-| `4g.40gb` | 39.50 GB | 64 | 1 | 4 |
-| `7g.80gb` | 79.25 GB | 132 | 1 | 7 |
+| Profile       | VRAM         | Streaming Multiprocessors (SM) | Tối đa/GPU | DEC |
+| ------------- | ------------ | ------------------------------ | ---------- | --- |
+| `1g.10gb`     | 9.75 GB      | 16                             | 7          | 1   |
+| `1g.10gb+me`  | 9.75 GB      | 16                             | 1          | 1   |
+| `1g.20gb`     | 19.62 GB     | 26                             | 4          | 1   |
+| `2g.20gb`     | 19.62 GB     | 32                             | 3          | 2   |
+| **`3g.40gb`** | **39.50 GB** | **60**                         | **2**      | 3   |
+| `4g.40gb`     | 39.50 GB     | 64                             | 1          | 4   |
+| `7g.80gb`     | 79.25 GB     | 132                            | 1          | 7   |
 
 <figure><img src="../../../.gitbook/assets/MIG-vServer/2.MIG-PROFILES-AVAILABLE.png" alt="Danh sách MIG profiles trên H100 80GB"><figcaption><p>7 MIG profiles có sẵn trên H100 80GB HBM3 — kiểm tra bằng nvidia-smi mig -lgip</p></figcaption></figure>
 
@@ -36,7 +36,7 @@ Trước khi tạo MIG instances, chọn profile phù hợp với workload. H100
 Profile `3g.40gb` phù hợp để chạy các model AI 7B–30B (BF16). Thực tế đo được: **16.27 req/s và 18,739 tokens/s** với Qwen2.5-7B-Instruct trên 1 instance `3g.40gb`.
 {% endhint %}
 
----
+***
 
 ## Bước 1: Enable MIG trên GPU
 
@@ -68,7 +68,7 @@ MIG mode **không persistent** sau khi reboot trên H100 (Hopper). Bạn cần c
 H100 (Hopper CC 9.0) **không cần reset GPU** khi enable MIG — production-friendly hơn A100.
 {% endhint %}
 
----
+***
 
 ## Bước 2: Xem các MIG Profiles có sẵn
 
@@ -80,7 +80,7 @@ Lệnh này hiển thị đầy đủ 7 profiles cùng thông tin VRAM, SM, số
 
 <figure><img src="../../../.gitbook/assets/MIG-vServer/4.List-GPU-Instance-Profiles.png" alt="Danh sách MIG profiles từ nvidia-smi mig -lgip"><figcaption><p>nvidia-smi mig -lgip liệt kê toàn bộ profiles và số lượng tối đa có thể tạo</p></figcaption></figure>
 
----
+***
 
 ## Bước 3: Tạo MIG Instances
 
@@ -108,14 +108,14 @@ nvidia-smi
 
 Mỗi instance có 40,448 MiB VRAM và 60 SM, được gán UUID riêng biệt:
 
-| MIG Device | GI ID | CI ID | UUID | VRAM | SM |
-|---|---|---|---|---|---|
-| Device 0 | 1 | 0 | `MIG-db487433-...` | 40,448 MiB | 60 |
-| Device 1 | 2 | 0 | `MIG-1ee682bf-...` | 40,448 MiB | 60 |
+| MIG Device | GI ID | CI ID | UUID               | VRAM       | SM |
+| ---------- | ----- | ----- | ------------------ | ---------- | -- |
+| Device 0   | 1     | 0     | `MIG-db487433-...` | 40,448 MiB | 60 |
+| Device 1   | 2     | 0     | `MIG-1ee682bf-...` | 40,448 MiB | 60 |
 
 <figure><img src="../../../.gitbook/assets/MIG-vServer/5.Tao-2x-MIG-3g.40gb-Instances.png" alt="2 MIG instances vừa tạo với UUID riêng biệt"><figcaption><p>2 MIG instances 3g.40gb được tạo thành công — mỗi instance có UUID và VRAM riêng</p></figcaption></figure>
 
----
+***
 
 ## Bước 4: Chạy Docker container trên MIG instance đơn
 
@@ -145,7 +145,7 @@ MIG 3g.40gb Device 0: (UUID: MIG-1ee682bf-...)
 
 <figure><img src="../../../.gitbook/assets/MIG-vServer/6.Test-Docker-Single-Instance.png" alt="Mỗi container thấy đúng 1 MIG device"><figcaption><p>Container trên device=0:0 và device=0:1 thấy MIG UUID khác nhau — isolation đã được xác nhận</p></figcaption></figure>
 
----
+***
 
 ## Bước 5: Chạy 2 container song song
 
@@ -179,7 +179,7 @@ docker rm -f mig0 mig1
 
 <figure><img src="../../../.gitbook/assets/MIG-vServer/7.Test-Docker-2-Container-Song-Song.png" alt="2 container chạy song song trên 2 MIG instances"><figcaption><p>2 container chạy đồng thời trên 2 MIG instances — không conflict, memory hoàn toàn độc lập</p></figcaption></figure>
 
----
+***
 
 ## (Nâng cao) Bước 6: Chạy vLLM trên MIG instance
 
@@ -217,15 +217,15 @@ curl http://localhost:8000/v1/chat/completions \
 
 Kết quả đo được trên MIG `3g.40gb`:
 
-| Metric | Giá trị |
-|---|---|
-| vLLM version | 0.23.0 |
-| Attention backend | FlashAttention v3 |
-| VRAM sử dụng | 34,432 MiB / 40,448 MiB (85%) |
-| KV cache | 329,168 tokens |
-| **Throughput** | **16.27 req/s** |
-| **Tổng tokens/s** | **18,739 tokens/s** |
-| API response | HTTP 200 ✅ |
+| Metric            | Giá trị                       |
+| ----------------- | ----------------------------- |
+| vLLM version      | 0.23.0                        |
+| Attention backend | FlashAttention v3             |
+| VRAM sử dụng      | 34,432 MiB / 40,448 MiB (85%) |
+| KV cache          | 329,168 tokens                |
+| **Throughput**    | **16.27 req/s**               |
+| **Tổng tokens/s** | **18,739 tokens/s**           |
+| API response      | HTTP 200 ✅                    |
 
 <figure><img src="../../../.gitbook/assets/MIG-vServer/8.Test-vLLM-tren-MIG-Instance.png" alt="vLLM chạy trên MIG instance 0:0 với Qwen2.5-7B-Instruct"><figcaption><p>vLLM phục vụ Qwen2.5-7B-Instruct trên MIG 3g.40gb — 34GB VRAM được sử dụng, API hoạt động bình thường</p></figcaption></figure>
 
@@ -250,13 +250,12 @@ grep -E "Throughput|tokens" /tmp/benchmark_mig.txt
 <figure><img src="../../../.gitbook/assets/MIG-vServer/9.Note-(vLLM-0.23.0).png" alt="Benchmark throughput vLLM trên MIG 3g.40gb"><figcaption><p>Benchmark kết quả: 16.27 req/s, 18,739 tokens/s trên MIG 3g.40gb với Qwen2.5-7B-Instruct</p></figcaption></figure>
 
 {% hint style="info" %}
-Từ **vLLM 0.23.0**, lệnh benchmark đã thay đổi. Dùng:
-`python3 -m vllm.entrypoints.cli.main bench throughput`
+Từ **vLLM 0.23.0**, lệnh benchmark đã thay đổi. Dùng: `python3 -m vllm.entrypoints.cli.main bench throughput`
 
 Không dùng lệnh cũ: `python -m vllm.entrypoints.benchmark_throughput` (đã deprecated).
 {% endhint %}
 
----
+***
 
 ## Dọn dẹp (Cleanup)
 
@@ -290,23 +289,24 @@ Disabled MIG Mode for GPU 00000000:05:00.0
 Phải xóa **Compute Instances trước**, sau đó mới xóa **GPU Instances**. Làm ngược lại sẽ báo lỗi.
 {% endhint %}
 
----
+***
 
 ## Kết quả
 
 Sau khi hoàn thành, bạn có thể phân chia GPU H100 80GB thành nhiều MIG instances và assign mỗi Docker container vào một instance riêng biệt:
 
-| Cấu hình ví dụ | Resource Name (Docker) | VRAM | SM |
-|---|---|---|---|
-| 2x MIG `3g.40gb` | `device=0:0`, `device=0:1` | 40 GB / instance | 60 |
-| GPU 1 non-MIG | `device=1` | 80 GB | 132 |
+| Cấu hình ví dụ   | Resource Name (Docker)     | VRAM             | SM  |
+| ---------------- | -------------------------- | ---------------- | --- |
+| 2x MIG `3g.40gb` | `device=0:0`, `device=0:1` | 40 GB / instance | 60  |
+| GPU 1 non-MIG    | `device=1`                 | 80 GB            | 132 |
 
 **Lưu ý quan trọng:**
-- MIG mode không persistent sau reboot — enable lại sau mỗi lần khởi động.
-- Mỗi MIG instance chỉ overhead ~44 MiB khi idle.
-- GPU 1 hoạt động hoàn toàn độc lập với GPU 0 trong suốt quá trình.
 
-| Tôi muốn tiếp theo... | Đi đến |
-|---|---|
-| Xem các GPU flavor có sẵn trên vServer | [Flavor](flavor.md) |
-| Tìm hiểu về MIG trên VKS | [Sử dụng MIG trên VKS](../../../../vks/node-groups/su-dung-multi-instance-gpu-mig.md) |
+* MIG mode không persistent sau reboot — enable lại sau mỗi lần khởi động.
+* Mỗi MIG instance chỉ overhead \~44 MiB khi idle.
+* GPU 1 hoạt động hoàn toàn độc lập với GPU 0 trong suốt quá trình.
+
+| Tôi muốn tiếp theo...                  | Đi đến                                                                                                               |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Xem các GPU flavor có sẵn trên vServer | [Flavor](flavor.md)                                                                                                  |
+| Tìm hiểu về MIG trên VKS               | [Sử dụng MIG trên VKS](https://github.com/vngcloud/docs/blob/main/vks/node-groups/su-dung-multi-instance-gpu-mig.md) |

@@ -2,22 +2,23 @@
 
 GreenNode tự động tạo sẵn một repository riêng tư trong Container Registry cho tổ chức của bạn — lưu trữ container image an toàn và sử dụng trực tiếp khi triển khai Agent Runtime, không cần cấu hình registry bên ngoài.
 
----
+***
 
 ## Tổng quan
 
-Container Registry trong AgentBase được xây dựng trên [VNG Cloud Container Registry (vCR)](../../../../vcontainer-registry/README.md). Khi tổ chức của bạn được khởi tạo trên AgentBase, một repository riêng tư đã được tạo sẵn — bạn không cần tự tạo.
+Container Registry trong AgentBase được xây dựng trên [VNG Cloud Container Registry (vCR)](https://github.com/vngcloud/docs/blob/main/vcontainer-registry/README.md). Khi tổ chức của bạn được khởi tạo trên AgentBase, một repository riêng tư đã được tạo sẵn — bạn không cần tự tạo.
 
 Xem danh sách image của tổ chức tại: [https://aiplatform.console.vngcloud.vn/container-registry/repository](https://aiplatform.console.vngcloud.vn/container-registry/repository)
 
 ![Container Registry — danh sách image](../../../.gitbook/assets/Agentbase-image/Container-registry.png)
 
 **Lợi ích:**
-- Image không thể truy cập công khai
-- Kết hợp với Private VPC để pipeline deploy hoàn toàn nội bộ
-- Tích hợp sẵn khi tạo Custom Agent Runtime — không cần cấu hình thêm
 
----
+* Image không thể truy cập công khai
+* Kết hợp với Private VPC để pipeline deploy hoàn toàn nội bộ
+* Tích hợp sẵn khi tạo Custom Agent Runtime — không cần cấu hình thêm
+
+***
 
 ## Đẩy image lên registry
 
@@ -66,7 +67,7 @@ docker tag my-agent:latest vcr.vngcloud.vn/<repoName>/my-agent:v1.0
 docker push vcr.vngcloud.vn/<repoName>/my-agent:v1.0
 ```
 
----
+***
 
 ## Sử dụng image khi tạo Runtime
 
@@ -79,22 +80,23 @@ bash .claude/skills/agentbase/scripts/runtime.sh create \
 ```
 
 **Dùng Portal** — khi tạo Custom Agent Runtime, nhập:
-- **Image URL:** `vcr.vngcloud.vn/<repoName>/my-agent:v1.0`
-- **Registry Auth:** bật → nhập robot account username và password
+
+* **Image URL:** `vcr.vngcloud.vn/<repoName>/my-agent:v1.0`
+* **Registry Auth:** bật → nhập robot account username và password
 
 Xem hướng dẫn đầy đủ tại [Khởi tạo Runtime](../agent-runtime/khoi-tao-runtime.md).
 
----
+***
 
 ## Quản lý nâng cao
 
-Trang Container Registry trên AgentBase đủ để đẩy và dùng image với Runtime. Để quản lý đầy đủ (thêm repository, cấu hình phân quyền, xóa image theo policy...) → xem tài liệu [VNG Cloud Container Registry](../../../../vcontainer-registry/README.md).
+Trang Container Registry trên AgentBase đủ để đẩy và dùng image với Runtime. Để quản lý đầy đủ (thêm repository, cấu hình phân quyền, xóa image theo policy...) → xem tài liệu [VNG Cloud Container Registry](https://github.com/vngcloud/docs/blob/main/vcontainer-registry/README.md).
 
----
+***
 
 ## Bắt đầu
 
-| Tôi muốn... | Đến |
-|---|---|
-| Tạo Runtime từ image trong registry này | [Khởi tạo Runtime](../agent-runtime/khoi-tao-runtime.md) |
-| Quản lý Container Registry đầy đủ | [VNG Cloud Container Registry](../../../../vcontainer-registry/README.md) |
+| Tôi muốn...                             | Đến                                                                                                      |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Tạo Runtime từ image trong registry này | [Khởi tạo Runtime](../agent-runtime/khoi-tao-runtime.md)                                                 |
+| Quản lý Container Registry đầy đủ       | [VNG Cloud Container Registry](https://github.com/vngcloud/docs/blob/main/vcontainer-registry/README.md) |

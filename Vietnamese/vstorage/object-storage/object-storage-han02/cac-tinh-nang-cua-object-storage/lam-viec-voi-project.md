@@ -43,7 +43,7 @@ Thực hiện tạo project theo các bước bên dưới:
 3. Chọn **Tạo một Project.**
 4. Nhập **Project Name**
 5. Chọn **Billing method** (hình thức thanh toán) phù hợp theo nhu cầu. Chúng tôi đang hỗ trợ **Trả phí theo gói** hoặc **Trả phí theo dung lượng sử dụng**.
-6. Chọn **Project type** (gói) lưu trữ phù hợp theo nhu cầu. Hiện tại ở region HAN02, chúng tôi sẽ cung cấp cho bạn 2 loại gói lưu trữ **Gold** và **Instant Archive**. Để biết thêm thông tin chi tiết về cách tính giá của các gói lưu trữ, vui lòng tham khảo thêm tại [Cách tính phí](../cach-tinh-phi.md).
+6. Chọn **Project type** (gói) lưu trữ phù hợp theo nhu cầu. Hiện tại ở region HAN02, chúng tôi sẽ cung cấp cho bạn 2 loại gói lưu trữ **Gold** và **Instant Archive**. Để biết thêm thông tin chi tiết về cách tính giá của các gói lưu trữ, vui lòng tham khảo thêm tại [Cách tính phí](https://github.com/vngcloud/docs/blob/main/Vietnamese/vstorage/object-storage/object-storage-han02/cach-tinh-phi.md).
 7. Chọn **Quota** (dung lượng lưu trữ) mà bạn mong muốn.
 8. Chọn **Period** và chọn/bỏ chọn **Auto-renew** theo nhu cầu của bạn.
 9. Thực hiện các bước **Thanh toán** giỏ hàng và **Project** của bạn sẽ được khởi tạo.

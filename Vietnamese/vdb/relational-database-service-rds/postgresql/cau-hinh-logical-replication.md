@@ -1,27 +1,27 @@
-# Cấu hình Logical Replication cho PostgreSQL Cluster
+# Cấu hình Logical Replication
 
 > Hướng dẫn này giúp bạn thiết lập **PostgreSQL Logical Replication** — sao chép thay đổi dữ liệu theo thời gian thực từ cluster nguồn (Publisher) sang cluster đích (Subscriber). Một hoặc cả hai cluster có thể nằm trên GreenNode vDB.
 
----
+***
 
 ## Điều kiện cần (Prerequisites)
 
-- Ít nhất một trong hai cluster (Publisher hoặc Subscriber) phải là PostgreSQL Cluster trên GreenNode vDB (**phiên bản 16 hoặc 17**).
-- Cả hai cluster phải dùng **cùng phiên bản major** PostgreSQL.
-- Người dùng thực hiện các lệnh SQL phải có quyền **owner** trên các bảng cần replicate (để tạo Publication).
+* Ít nhất một trong hai cluster (Publisher hoặc Subscriber) phải là PostgreSQL Cluster trên GreenNode vDB (**phiên bản 16 hoặc 17**).
+* Cả hai cluster phải dùng **cùng phiên bản major** PostgreSQL.
+* Người dùng thực hiện các lệnh SQL phải có quyền **owner** trên các bảng cần replicate (để tạo Publication).
 
 {% hint style="info" %}
 GreenNode vDB hỗ trợ Logical Replication cho **PostgreSQL 16 và 17**.
 {% endhint %}
 
----
+***
 
 ## Logical Replication hoạt động như thế nào?
 
-![Kiến trúc Logical Replication](../../../../.gitbook/assets/vdb-logical-replication-architecture.png)
+![Kiến trúc Logical Replication](../../../.gitbook/assets/vdb-logical-replication-architecture.png)
 
-- **Publisher**: cluster nguồn, chứa dữ liệu gốc. Bạn tạo `PUBLICATION` để chỉ định bảng nào được phép replicate.
-- **Subscriber**: cluster đích, nhận và áp dụng thay đổi. Bạn tạo `SUBSCRIPTION` để kết nối đến Publisher và kéo dữ liệu về.
+* **Publisher**: cluster nguồn, chứa dữ liệu gốc. Bạn tạo `PUBLICATION` để chỉ định bảng nào được phép replicate.
+* **Subscriber**: cluster đích, nhận và áp dụng thay đổi. Bạn tạo `SUBSCRIPTION` để kết nối đến Publisher và kéo dữ liệu về.
 
 **Quá trình đồng bộ gồm hai giai đoạn:**
 
@@ -29,16 +29,16 @@ GreenNode vDB hỗ trợ Logical Replication cho **PostgreSQL 16 và 17**.
 2. **Streaming (streaming thay đổi liên tục)**: Sau khi initial sync hoàn tất, chỉ các thay đổi phát sinh mới (INSERT, UPDATE, DELETE) được đồng bộ theo thời gian thực.
 
 {% hint style="info" %}
-Bạn **không cần dump dữ liệu** — Logical Replication tự xử lý phần đó. Tuy nhiên bạn **phải tạo sẵn cấu trúc bảng (schema)** trên Subscriber trước khi tạo Subscription, vì PostgreSQL không tự replicate DDL. Xem hướng dẫn tại [Bước B.3](#bước-b3-tạo-bảng-trên-subscriber).
+Bạn **không cần dump dữ liệu** — Logical Replication tự xử lý phần đó. Tuy nhiên bạn **phải tạo sẵn cấu trúc bảng (schema)** trên Subscriber trước khi tạo Subscription, vì PostgreSQL không tự replicate DDL. Xem hướng dẫn tại [Bước B.3](cau-hinh-logical-replication.md#bước-b3-tạo-bảng-trên-subscriber).
 {% endhint %}
 
----
+***
 
 ## Phần A: vDB PostgreSQL Cluster là Publisher
 
 > Thực hiện các bước trong phần này nếu cluster GreenNode vDB của bạn là **nguồn dữ liệu** (Publisher).
 
-### Bước A.1: Yêu cầu kích hoạt 
+### Bước A.1: Yêu cầu kích hoạt
 
 Liên hệ **GreenNode Support** để yêu cầu kích hoạt tính năng Logical Replication trên cluster của bạn. GreenNode Support sẽ cấu hình và cung cấp **username** và **password** của user replication — thông tin này sẽ được dùng trong connection string khi Subscriber tạo Subscription.
 
@@ -56,24 +56,24 @@ Khi quản lý Subscription, không xóa hoặc chỉnh sửa các replication s
 
 Logical Replication yêu cầu ba tham số PostgreSQL được cấu hình đúng trên **Publisher cluster**.
 
-| Tham số | Giá trị yêu cầu | Mô tả |
-|---|---|---|
-| `wal_level` | `logical` | Bắt buộc — mặc định là `replica`, không đủ để chạy logical replication |
-| `max_replication_slots` | ≥ số slot cần dùng | Tổng số replication slot cho tất cả replica, subscription và CDC connector |
-| `max_wal_senders` | ≥ số sender cần dùng | Tổng số WAL sender process (thường bằng `max_replication_slots`) |
+| Tham số                 | Giá trị yêu cầu      | Mô tả                                                                      |
+| ----------------------- | -------------------- | -------------------------------------------------------------------------- |
+| `wal_level`             | `logical`            | Bắt buộc — mặc định là `replica`, không đủ để chạy logical replication     |
+| `max_replication_slots` | ≥ số slot cần dùng   | Tổng số replication slot cho tất cả replica, subscription và CDC connector |
+| `max_wal_senders`       | ≥ số sender cần dùng | Tổng số WAL sender process (thường bằng `max_replication_slots`)           |
 
 **Cách tính `max_replication_slots` và `max_wal_senders`:**
 
-| Thành phần | Slot + sender cần |
-|---|---|
-| Mỗi replica node trong cluster | 1 + 1 |
-| Mỗi Subscription (logical replication) | 1 + 1 |
-| Mỗi CDC connector (Debezium) | 1 + 1 |
+| Thành phần                             | Slot + sender cần |
+| -------------------------------------- | ----------------- |
+| Mỗi replica node trong cluster         | 1 + 1             |
+| Mỗi Subscription (logical replication) | 1 + 1             |
+| Mỗi CDC connector (Debezium)           | 1 + 1             |
 
 **Ví dụ:** cluster 3 node (2 replica) + 1 subscription → `max_replication_slots = 3`, `max_wal_senders = 3`.
 
 {% hint style="warning" %}
-Thay đổi `wal_level`, `max_replication_slots` và `max_wal_senders` yêu cầu **khởi động lại cluster**. Nên cập nhật cả ba tham số cùng một lần để chỉ gây một lần restart. Xem hướng dẫn tại [Cấu hình tham số cho Cluster](cau-hinh-tham-so-cho-cluster.md).
+Thay đổi `wal_level`, `max_replication_slots` và `max_wal_senders` yêu cầu **khởi động lại cluster**. Nên cập nhật cả ba tham số cùng một lần để chỉ gây một lần restart. Xem hướng dẫn tại [Cấu hình tham số cho Cluster](https://github.com/vngcloud/docs/blob/main/Vietnamese/vdb/relational-database-service-rds/postgresql/cau-hinh-tham-so-cho-cluster.md).
 {% endhint %}
 
 ### Bước A.3: Tạo Publication
@@ -97,7 +97,7 @@ SELECT pubname, puballtables, pubinsert, pubupdate, pubdelete
 FROM pg_publication;
 ```
 
----
+***
 
 ## Phần B: vDB PostgreSQL Cluster là Subscriber
 
@@ -183,7 +183,6 @@ Schema và kiểu dữ liệu của bảng trên Subscriber phải **khớp hoà
 ### Bước B.4: Tạo Subscription
 
 1. Kết nối đến **Subscriber cluster** bằng tài khoản GreenNode cung cấp.
-
 2. Tạo Subscription:
 
 ```sql
@@ -192,21 +191,21 @@ CREATE SUBSCRIPTION my_subscription
     PUBLICATION <publication_name>;
 ```
 
-| Tham số | Mô tả |
-|---|---|
-| `host` | Hostname của Publisher |
-| `port` | Port kết nối PostgreSQL |
-| `dbname` | Tên database nguồn trên Publisher |
-| `user` | Username có quyền replication trên Publisher |
-| `password` | Password có quyền replication trên Publisher |
-| `sslmode` | Chế độ mã hóa SSL |
-| `publication_name` | Tên publication trên Publisher |
+| Tham số            | Mô tả                                        |
+| ------------------ | -------------------------------------------- |
+| `host`             | Hostname của Publisher                       |
+| `port`             | Port kết nối PostgreSQL                      |
+| `dbname`           | Tên database nguồn trên Publisher            |
+| `user`             | Username có quyền replication trên Publisher |
+| `password`         | Password có quyền replication trên Publisher |
+| `sslmode`          | Chế độ mã hóa SSL                            |
+| `publication_name` | Tên publication trên Publisher               |
 
 {% hint style="warning" %}
 Sau khi tạo Subscription, PostgreSQL sẽ thực hiện **initial sync** — sao chép toàn bộ dữ liệu hiện có từ Publisher sang Subscriber. Quá trình này có thể mất vài phút đến vài giờ tuỳ theo kích thước dữ liệu.
 {% endhint %}
 
----
+***
 
 ## Kiểm tra trạng thái Replication
 
@@ -226,13 +225,13 @@ FROM pg_stat_subscription;
 
 Khi `state = streaming` trên Publisher, và trên Subscriber `pid` khác `NULL` cùng `received_lsn` tăng dần, replication đang hoạt động bình thường.
 
----
+***
 
 ## Kết quả
 
 Sau khi hoàn thành, dữ liệu từ các bảng trong Publication trên Publisher sẽ được tự động đồng bộ sang Subscriber theo thời gian thực. Mọi thay đổi (INSERT, UPDATE, DELETE) đều được áp dụng.
 
-| Tôi muốn tiếp theo... | Đi đến |
-|---|---|
-| Thiết lập CDC với Debezium | [Thiết lập CDC với Debezium](thiet-lap-cdc-voi-debezium.md) |
-| Xem các tham số cấu hình Cluster | [Cấu hình tham số cho Cluster](cau-hinh-tham-so-cho-cluster.md) |
+| Tôi muốn tiếp theo...            | Đi đến                                                                                                                                                               |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Thiết lập CDC với Debezium       | [Thiết lập CDC với Debezium](thiet-lap-cdc-voi-debezium.md)                                                                                                          |
+| Xem các tham số cấu hình Cluster | [Cấu hình tham số cho Cluster](https://github.com/vngcloud/docs/blob/main/Vietnamese/vdb/relational-database-service-rds/postgresql/cau-hinh-tham-so-cho-cluster.md) |

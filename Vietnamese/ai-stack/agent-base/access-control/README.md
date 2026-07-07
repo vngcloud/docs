@@ -547,4 +547,4 @@ Các trường **AgentIdentityResponse**:
 
 ***
 
-_Trước đó:_ [_Tổng quan_](../) _| Tiếp theo:_ [_Runtime_](../runtime/)
+_Trước đó:_ [_Tổng quan_](../) _| Tiếp theo:_ [_Runtime_](https://github.com/vngcloud/docs/blob/main/Vietnamese/ai-stack/agent-base/runtime/README.md)

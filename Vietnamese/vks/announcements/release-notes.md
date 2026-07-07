@@ -116,6 +116,7 @@ VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới nhất, mang
 ***
 
 ## May 9, 2025
+
 VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
 
 **Tính năng mới:**
@@ -127,6 +128,7 @@ VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhấ
 ***
 
 ## April 25, 2025
+
 VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều cải tiến cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
 
 **Cải tiến:**
@@ -138,6 +140,7 @@ Nếu cần hỗ trợ, vui lòng liên hệ bộ phận kỹ thuật của chú
 ***
 
 ## April 16, 2025
+
 VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
 
 **Tính năng mới:**
@@ -150,6 +153,7 @@ VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhấ
 ***
 
 ## Mar 5, 2025
+
 VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
 
 **Tính năng mới:**
@@ -159,6 +163,7 @@ VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhấ
 ***
 
 ## Feb 27, 2025
+
 VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
 
 **Tính năng mới:**
@@ -172,6 +177,7 @@ Chi tiết vui lòng tham khảo tài liệu hướng dẫn sử dụng tại [�
 ***
 
 ## Jan 20, 2025
+
 VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
 
 **Tính năng mới:**
@@ -181,6 +187,7 @@ VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhấ
 ***
 
 ## Jan 2, 2025
+
 VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
 
 **Tính năng mới:**
@@ -192,6 +199,7 @@ VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhấ
 ***
 
 ## Dec 5, 2024
+
 VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng mới cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
 
 **Tính năng mới:**
@@ -201,6 +209,7 @@ VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhấ
 ***
 
 ## Oct 23, 2024
+
 VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều cải tiến cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
 
 **Cải tiến:**
@@ -213,6 +222,7 @@ VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhấ
 ***
 
 ## Oct 03, 2024
+
 VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhất, mang đến nhiều tính năng và cải tiến cho người dùng. Dưới đây là những điểm nổi bật của bản cập nhật:
 
 **Triển khai Region mới:**
@@ -233,6 +243,7 @@ VKS (GreenNode Kubernetes Service) vừa ra mắt bản cập nhật mới nhấ
 ***
 
 ## Aug 28, 2024
+
 VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều tính năng mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
 
 **Tính năng mới:**
@@ -242,6 +253,7 @@ VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhấ
 ***
 
 ## Aug 26, 2024
+
 VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
 
 **Cải tiến:**
@@ -260,6 +272,7 @@ VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhấ
 ***
 
 ## Aug 13, 2024
+
 VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
 
 **Cải tiến:**
@@ -269,6 +282,7 @@ VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhấ
 ***
 
 ## Aug 01, 2024
+
 VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều tính năng và cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
 
 **Tính năng mới:**
@@ -278,6 +292,7 @@ VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhấ
 ***
 
 ## July 25, 2024
+
 VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
 
 **Cải tiến:**
@@ -287,6 +302,7 @@ VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhấ
 ***
 
 ## July 23, 2024
+
 VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều cải tiến mới cho người dùng. Dưới đây là chi tiết về bản cập nhật:
 
 **Cải tiến:**
@@ -348,7 +364,7 @@ VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhấ
 
 **Cải tiến:**
 
-* **Nâng cấp tính năng thiết lập kích cỡ PVC (Persistent Volume Claim Size):** Người dùng giờ đây có thể chỉ định kích cỡ tối thiểu cho ổ đĩa CSI là `<mark style="color:red;">`**1GB**`</mark>` thay vì kích cỡ tối thiểu là 20GB như trước đây. Chi tiết bạn có thể tham khảo thêm tại [Volume ](broken-reference/)và [Integrate with Container Storage Interface](broken-reference/).
+* **Nâng cấp tính năng thiết lập kích cỡ PVC (Persistent Volume Claim Size):** Người dùng giờ đây có thể chỉ định kích cỡ tối thiểu cho ổ đĩa CSI là `<mark style="color:red;">`**1GB**`</mark>` thay vì kích cỡ tối thiểu là 20GB như trước đây. Chi tiết bạn có thể tham khảo thêm tại [Volume ](https://github.com/vngcloud/docs/blob/main/Vietnamese/vks/announcements/broken-reference/README.md)và [Integrate with Container Storage Interface](https://github.com/vngcloud/docs/blob/main/Vietnamese/vks/announcements/broken-reference/README.md).
 * **Thay đổi Storage Class mặc định sử dụng cho Cluster:** thay đổi mặc định từ ổ đĩa loại SSD - IOPS 200 thành mặc định ổ đĩa loại SSD - IOPS 3000.
 * **Nâng cấp Plugin GreenNode LoadBalancer Controller, Plugin GreenNode Ingress Controller:** cải tiến plugin giúp tránh trùng lặp việc đặt tên Load Balancer.
 
@@ -364,7 +380,7 @@ Do Storage Class mặc định cũ đã được chúng tôi xóa khỏi hệ th
 kubectl patch pvc sc-iops-200-retain -p '{"spec":{"resources":{"requests":{"storage":"50Gi"\}}\}}'
 ```
 
-Chi tiết tham khảo thêm tại [Integrate with Container Storage Interface](broken-reference/).
+Chi tiết tham khảo thêm tại [Integrate with Container Storage Interface](https://github.com/vngcloud/docs/blob/main/Vietnamese/vks/announcements/broken-reference/README.md).
 {% endhint %}
 
 ***
@@ -375,11 +391,11 @@ VKS (GreenNode Kubernetes Service) giới thiệu bản cập nhật mới nhấ
 
 **Tính năng mới:**
 
-* **Hỗ trợ người dùng làm việc với VKS thông qua Terraform:** Người dùng có thể dễ dàng khởi tạo Cluster và Node Group trong VKS bằng Terraform. Chi tiết tham khảo thêm tại [đây](broken-reference/).
+* **Hỗ trợ người dùng làm việc với VKS thông qua Terraform:** Người dùng có thể dễ dàng khởi tạo Cluster và Node Group trong VKS bằng Terraform. Chi tiết tham khảo thêm tại [đây](https://github.com/vngcloud/docs/blob/main/Vietnamese/vks/announcements/broken-reference/README.md).
 
 **Cải tiến:**
 
-* **Nâng cấp Plugin GreenNode LoadBalancer Controller:** Bổ sung Annotation để cấu hình Load Balancer hỗ trợ Proxy Protocol. Chi tiết tham khảo thêm tại [đây](../../../English/vks/network/working-with-nlb/preserve-source-ip-when-using-nlb-and-nginx-ingress-controller.md).
+* **Nâng cấp Plugin GreenNode LoadBalancer Controller:** Bổ sung Annotation để cấu hình Load Balancer hỗ trợ Proxy Protocol. Chi tiết tham khảo thêm tại [đây](https://github.com/vngcloud/docs/blob/main/English/vks/network/working-with-nlb/preserve-source-ip-when-using-nlb-and-nginx-ingress-controller.md).
 
 ***
 
@@ -413,7 +429,7 @@ Bản cập nhật mới nhất cho VKS đã có sẵn, mang đến nhiều tín
 
 **Tính năng mới:**
 
-* **Hỗ trợ tính năng Whitelist:** VKS cho phép tạo Private Node Group với chỉ Private IP đồng thời cho phép IP nào kết nối tới Cluster thông qua tính năng Whitelist IP. Chi tiết tham khảo thêm tại [Whitelist](broken-reference/).
+* **Hỗ trợ tính năng Whitelist:** VKS cho phép tạo Private Node Group với chỉ Private IP đồng thời cho phép IP nào kết nối tới Cluster thông qua tính năng Whitelist IP. Chi tiết tham khảo thêm tại [Whitelist](https://github.com/vngcloud/docs/blob/main/Vietnamese/vks/announcements/broken-reference/README.md).
 
 **Cải tiến:**
 
