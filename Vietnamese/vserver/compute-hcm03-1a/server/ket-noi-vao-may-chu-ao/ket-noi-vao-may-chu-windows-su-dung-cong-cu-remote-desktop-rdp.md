@@ -2,7 +2,7 @@
 
 Bạn có thể kết nối dễ dàng với các máy chủ Window được tạo từ trình điều khiển GreenNode bằng Remote Desktop. Để làm điều này, bạn cần tải về RDP và làm theo hướng dẫn bên dưới của chúng tôi. RDP có sẵn trên hầu hết các phiên bản Windows và cũng có sẵn cho Mac OS.
 
-Để biết thông tin về cách kết nối với phiên bản Linux, hãy xem hướng dẫn [Kết nối vào máy chủ Linux bằng công cụ SSH Client](ket-noi-vao-may-chu-linux-bang-cong-cu-ssh-client.md) dành cho Phiên bản Linux về cách kết nối với máy chủ của bạn.
+Để biết thông tin về cách kết nối với phiên bản Linux, hãy xem hướng dẫn  [Kết nối vào máy chủ Linux bằng công cụ SSH Client](ket-noi-vao-may-chu-linux-bang-cong-cu-ssh-client.md) dành cho Phiên bản Linux về cách kết nối với máy chủ của bạn.
 
 ***
 
@@ -16,12 +16,12 @@ Bạn có thể kết nối dễ dàng với các máy chủ Window được t�
   * \[Linux] Sử dụng [Remmina](https://remmina.org/)
 * **Máy chủ phải đang chạy**:
   * Sau khi máy chủ được khởi tạo thành công, thông tin của nó sẽ xuất hiện trên trang danh sách máy chủ của bảng điều khiển và trạng thái của máy chủ là Active
-* **Quy tắc Inbound của nhóm bảo mật được tạo** :
+* **Quy tắc Inbound của nhóm bảo mật được tạo** :&#x20;
   * Đảm bảo rằng nhóm bảo mật được liên kết với phiên bản của bạn cho phép lưu lượng RDP đến (cổng 3389) từ địa chỉ IP của bạn. Nhóm bảo mật mặc định không cho phép lưu lượng RDP đến theo mặc định. Để biết thêm thông tin, hãy xem Cho phép lưu lượng truy cập đến cho các phiên bản Windows của bạn.
 * **Network Interface** của máy chủ cần có một địa chỉ IP Public
 * **Thông tin kết nối đến** máy chủ: Để biết thông tin kết nối của máy chủ, vui lòng kiểm tra email đã đăng ký:
 
-<figure><img src="../../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Lưu ý:** Thông tin này là bảo mật và chỉ được gởi cho email đã đăng kí. GreenNode không thể can thiệp để phục hồi thông tin login của máy chủ (username/ password/ key) trong mọi tình huống.
 
@@ -34,26 +34,26 @@ Bạn có thể kết nối dễ dàng với các máy chủ Window được t�
 3.  Trên trang Kết nối tới máy chủ, chọn tab RDP (Window)\
     <br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (417).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (417).png" alt=""><figcaption></figcaption></figure>
 4. Chọn **Tải xuống tệp RDP**. Trình duyệt của bạn sẽ nhắc bạn mở hoặc lưu tệp RDP. Khi bạn đã hoàn tất tải xuống tệp, hãy chọn **Hoàn thành** để quay lại trang máy chủ:
    * Nếu bạn đã mở tệp RDP, bạn sẽ thấy hộp thoại Kết nối Máy tính Từ xa.
    * Nếu bạn đã lưu tệp RDP, hãy điều hướng đến thư mục tải xuống của bạn và mở tệp RDP để hiển thị hộp thoại.
 5.  Bạn có thể nhận được cảnh báo rằng nhà xuất bản của kết nối từ xa không xác định. Chọn **Kết nối** để tiếp tục kết nối với máy chủ của bạn
 
-    <figure><img src="../../../../../.gitbook/assets/image (418).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (418).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/image (419).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (419).png" alt=""><figcaption></figcaption></figure>
 6.  Tài khoản quản trị viên được chọn theo mặc định. Bạn cần sao chép và dán mật khẩu mà bạn đã lưu trước đó vào pop-up đăng nhập (Thông tin này lấy từ mail phía trên), trong đó nhập thông tin **InstanceLogin** vào **Username**, **InstancePassword** vào **Password**:
 
-    <figure><img src="../../../../../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
 7.  Nhấn **OK.** Do tính chất của chứng chỉ tự ký, bạn có thể nhận được cảnh báo rằng chứng chỉ bảo mật không thể được xác thực. Sử dụng các bước sau để xác minh danh tính của máy tính từ xa hoặc chỉ cần chọn **Yes**(Windows) hoặc **Continue** (Mac OS X) nếu bạn tin cậy chứng chỉ.<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (421).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (421).png" alt=""><figcaption></figcaption></figure>
 8.  Màn hình sẽ hiển thị đang kết nối đến máy chủ Window thành công<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (422).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (422).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/image (423).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (423).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

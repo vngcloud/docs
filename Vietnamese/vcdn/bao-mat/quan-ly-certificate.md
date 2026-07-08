@@ -10,7 +10,7 @@ Tính năng **Quản lý Certificate** trên dịch vụ vCDN cho phép khách h
 
 * **Private Key**: file private key tương ứng với chứng chỉ SSL. Đây là khóa bảo mật của chứng chỉ, chỉ có máy chủ của bạn mới có quyền sử dụng.
 * **SSL Certificate**: file certificate SSL của bạn. Đây là chứng chỉ do Certificate Authority (CA) phát hành, xác nhận rằng kết nối giữa người dùng và máy chủ là an toàn.
-* **CA Root Chain**: Nếu chứng chỉ của bạn yêu cầu **Chain CA** (bao gồm các chứng chỉ trung gian giữa chứng chỉ SSL và CA gốc), bạn cần tải lên các chứng chỉ trung gian này dưới dạng một chuỗi (chain).
+* **CA Root Chain**: Nếu chứng chỉ của bạn yêu cầu **Chain CA** (bao gồm các chứng chỉ trung gian giữa chứng chỉ SSL và CA gốc), bạn cần tải lên các chứng chỉ trung gian này dưới dạng một chuỗi (chain).&#x20;
 
 ## Các bước thực hiện
 
@@ -18,7 +18,7 @@ Tính năng **Quản lý Certificate** trên dịch vụ vCDN cho phép khách h
 
 **Bước 2:** Chọn mục **Certificate**, sau đó chọn **Upload.**
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Chọn vào nút **Upload Private Key** để tải lên private key của Certificate, hoặc cũng có thể paste private key vào khung bên dưới.
 
@@ -26,7 +26,7 @@ Tính năng **Quản lý Certificate** trên dịch vụ vCDN cho phép khách h
 
 **Bước 5:** Chọn vào nút Upload CA Root Chain để tải lên thông tin certificate của nhà cung cấp chứng chỉ. Có thể để trống nếu không có thông tin. _<mark style="background-color:blue;">Một số trình duyệt phiên bản cũ có thể báo lỗi Certificate không hợp lệ nếu thiếu thông tin CA Root Chain.</mark>_
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="278"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="278"><figcaption></figcaption></figure>
 
 **Bước 6:** Sau khi nhập/upload đầy đủ thông tin, chọn **Save and Deploy** để lưu và kích hoạt certificate, sẳn sàng cho các CDN sử dụng.
 

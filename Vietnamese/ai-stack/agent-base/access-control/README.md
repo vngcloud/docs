@@ -266,7 +266,7 @@ Một **agent identity** phải tồn tại trước khi tạo auth provider. N�
 3. Điền: **Name**, **Client ID**, **Client Secret**, **Authorization URL**, **Token URL**
 4. Nhấn **Create** — phản hồi bao gồm một **Callback URL** để đăng ký trong ứng dụng OAuth2 của bạn
 
-![1774593811794](<../../../../.gitbook/assets/1774593811794 (2).png>)
+![1774593811794](../../../.gitbook/assets/1774593811794.png)
 
 ***
 
@@ -539,7 +539,7 @@ Các trường **AgentIdentityResponse**:
 | Lỗi                                  | Nguyên nhân                           | Cách khắc phục                                                                  |
 | ------------------------------------ | ------------------------------------- | ------------------------------------------------------------------------------- |
 | 401 Unauthorized                     | IAM token hết hạn hoặc không hợp lệ   | Lấy lại token với credential hợp lệ                                             |
-| 403 Forbidden                        | Service account thiếu quyền           | Gắn `AgentBaseFullAccess` tại https://iam.console.greennode.ai                  |
+| 403 Forbidden                        | Service account thiếu quyền           | Gắn `AgentBaseFullAccess` tại https://iam.console.greennode.ai                   |
 | 409 Conflict                         | Tên identity hoặc provider đã tồn tại | Chọn một tên khác                                                               |
 | Lỗi xác thực tên                     | Tên không khớp `^[a-zA-Z0-9_-]+$`     | Chỉ sử dụng chữ cái, số, dấu gạch dưới và dấu gạch ngang. 3–50 ký tự            |
 | 404 Not Found                        | Tên provider không tồn tại            | Xác minh bằng thao tác `list`                                                   |

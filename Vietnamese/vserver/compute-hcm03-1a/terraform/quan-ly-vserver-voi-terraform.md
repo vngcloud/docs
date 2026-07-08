@@ -2,11 +2,11 @@
 
 ### **Cài đặt Terraform CLI** <a href="#quanlyvservervoiterraform-caidatterraformcli" id="quanlyvservervoiterraform-caidatterraformcli"></a>
 
-Để có thể quản lý vServer với Terraform bạn cần cài đặt Terraform CLI theo hướng dẫn [tại đây](cai-dat-terraform.md)
+Để có thể quản lý vServer với Terraform bạn cần cài đặt Terraform CLI theo hướng dẫn [tại đây ](cai-dat-terraform.md)
 
 ***
 
-### **Cấp quyền IAM cho việc sử dụng** <a href="#quanlyvservervoiterraform-capquyeniamchoviecsudung" id="quanlyvservervoiterraform-capquyeniamchoviecsudung"></a>
+### **Cấp quyền IAM cho việc sử dụng**  <a href="#quanlyvservervoiterraform-capquyeniamchoviecsudung" id="quanlyvservervoiterraform-capquyeniamchoviecsudung"></a>
 
 Để có thể thực hiện quản lý vContainer với Terraform bạn cần tạo **Service account** từ Root account trên trang chủ **IAM** (xem hướng dẫn cách tạo Service account và sử dụng IAM [tại đây](../quan-ly-dinh-danh-va-truy-cap-iam-cho-vserver/)), trong trường hợp này lấy ví dụ cho việc bạn muốn tạo Server với Terraform cần có các quyền (Policy) sau:
 
@@ -32,9 +32,9 @@ Sau khi tải thư mục Example về máy, người dùng mở file [_**variabl
 * **Client\_id:** Lấy tại trang chủ IAM/ Service accoun&#x74;**/ Tab Security credentials**
 * **Client\_secret:** Lấy khi khởi tạo Service account tại trang chủ **IAM** hoặc có thể reset lại tại trang IAM/ Service accoun&#x74;**/ Tab Security credentials**
 
-<figure><img src="../../../../.gitbook/assets/terraform_vserver_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/terraform_vserver_1.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/terraform_vserver_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/terraform_vserver_2.png" alt=""><figcaption></figcaption></figure>
 
 **Bước 4:** Kiểm tra lại thông tin file [**main.tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/main.tf) _**(**&#x74;heo đường dẫn **examples/main.tf)**_**,** trường hợp này bạn cần xóa đi các dóng bên dưới:
 
@@ -44,68 +44,68 @@ Sau khi tải thư mục Example về máy, người dùng mở file [_**variabl
 _chỉ để lại:_
 
 * _module "vserver" {_\
-  \&#xNAN;_source = "./modules/vng-cloud-vserver"_\
-  \&#xNAN;_}_
+  &#xNAN;_&#x73;ource = "./modules/vng-cloud-vserver"_\
+  &#xNAN;_}_
 
-| `terraform { required_providers { vngcloud = { source` `= "vngcloud/vngcloud" version = "1.1.0" } } # backend "s3" { # skip_credentials_validation = true # skip_metadata_api_check = true # skip_region_validation = true # bucket = "bucket-name" # endpoint = "`[`https://hcm01.vstorage.vngcloud.vn/`](https://hcm01.vstorage.vngcloud.vn/)`" # key = "terraform.tfstate" # region = "HCM01" # access_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" # secret_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" # }}` `provider "vngcloud"` `{ token_url = "`[`https://iamapis.vngcloud.vn/accounts-api/v2/auth/token`](https://iamapis.vngcloud.vn/accounts-api/v2/auth/token)`" client_id = var.client_id client_secret = var.client_secret vserver_base_url = "`[`https://hcm-3.api.vngcloud.vn/vserver/vserver-gateway`](https://hcm-3.api.vngcloud.vn/vserver/vserver-gateway)`" vlb_base_url = "`[`https://hcm-3.api.vngcloud.vn/vserver/vlb-gateway`](https://hcm-3.api.vngcloud.vn/vserver/vlb-gateway)`"}` `module "vserver"` `{ source` `= "./modules/vng-cloud-vserver"}` |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `terraform {  required_providers {    vngcloud = {      source`  `= "vngcloud/vngcloud"      version = "1.1.0"    }  }  #  backend "s3" {  #    skip_credentials_validation = true  #    skip_metadata_api_check = true  #    skip_region_validation = true  #    bucket = "bucket-name"  #    endpoint = "`[`https://hcm01.vstorage.vngcloud.vn/`](https://hcm01.vstorage.vngcloud.vn/)`"  #    key = "terraform.tfstate"  #    region = "HCM01"  #    access_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  #    secret_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  #  }}` `provider "vngcloud"` `{  token_url        = "`[`https://iamapis.vngcloud.vn/accounts-api/v2/auth/token`](https://iamapis.vngcloud.vn/accounts-api/v2/auth/token)`"  client_id        = var.client_id  client_secret    = var.client_secret  vserver_base_url = "`[`https://hcm-3.api.vngcloud.vn/vserver/vserver-gateway`](https://hcm-3.api.vngcloud.vn/vserver/vserver-gateway)`"  vlb_base_url = "`[`https://hcm-3.api.vngcloud.vn/vserver/vlb-gateway`](https://hcm-3.api.vngcloud.vn/vserver/vlb-gateway)`"}` `module "vserver"` `{  source` `= "./modules/vng-cloud-vserver"}` |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 \
 **Bước 5:** Sau đó truy cập vào thư mục **vng-cloud-vserver/ examples/ modules/ vng-cloud-vserver/**, và mở file [**variable/tf**](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/modules/vng-cloud-vserver/variable.tf)**:**
 
 * **project\_id**: thông tin project của bạn, bạn có thể lấy ở [{Tab Limit}](https://hcm-3.console.greennode.ai/vserver/limit) trên vServer Portal, Ví dụ: **pro-462803f3-6858-466f-bf05-df2b33faa360:**
 
-<figure><img src="../../../../.gitbook/assets/terraform_vserver_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/terraform_vserver_3.png" alt=""><figcaption></figcaption></figure>
 
 * **image\_id**: hệ điều hành để khởi tạo vServer ví dụ như: **img-b5bf635e-0456-4765-b493-31d5fcfc05aa** (1\_Ubuntu-22.04x64) ... bạn có thể xem danh sách Id khi tạo vServer trên Portal/ [{Tab System Image}](https://hcm-3.console.greennode.ai/vserver/v-server/system-image)
 
-<figure><img src="../../../../.gitbook/assets/terraform_vserver_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/terraform_vserver_4.png" alt=""><figcaption></figcaption></figure>
 
 * **flavor\_id**: cấu hình vServer mà bạn sẽ khởi tạo ví dụ: flav-e2028a81-cc75-47e4-8af1-9eef2f857f84 (s-general-2x4) ,... bạn có thể xem danh sách khi tạo vServer trên Portal/ [{Tab Flavors}](https://hcm-3.console.greennode.ai/vserver/v-server/flavor).
 
-<figure><img src="../../../../.gitbook/assets/terraform_vserver_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/terraform_vserver_5.png" alt=""><figcaption></figcaption></figure>
 
-| `variable "project_id"` `{ type` `= string default = "pro-462803f3-6858-466f-bf05-df2b33faa360"}variable "s_general_4x8"` `{ type` `= string default = "flav-05f97524-0410-46a4-87a8-af92aa759231"}variable "ubuntu_20_04"` `{ type` `= string default = "img-a34d639b-e070-46ff-8b91-addf4fac45b4"}` |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `variable "project_id"` `{  type`    `= string  default = "pro-462803f3-6858-466f-bf05-df2b33faa360"}variable "s_general_4x8"` `{  type`    `= string  default = "flav-05f97524-0410-46a4-87a8-af92aa759231"}variable "ubuntu_20_04"` `{  type`    `= string  default = "img-a34d639b-e070-46ff-8b91-addf4fac45b4"}` |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 * **volume\_type\_name**: chỉ định IOPS cho root disk và data disk, ví dụ: **SSD-3000, SSD-200, SSD-400,** bạn có thể xem danh sách Volume Type trên vServer Portal/ [{Tab Volume Type}](https://hcm-3.console.greennode.ai/vserver/v-server/system-image)
 
-<figure><img src="../../../../.gitbook/assets/terraform_vserver_6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/terraform_vserver_6.png" alt=""><figcaption></figcaption></figure>
 
 * **root\_disk\_size**: chỉ định dung lượng ổ root disk, ví dụ: **20**
 * **data\_disk\_size**: chỉ định dung lượng ổ root disk, ví dụ: **50**
 
-| `variable "ssd_3000"` `{ type` `= string default = "3000"}variable "root_disk_size"` `{ type` `= number default = 20}variable "data_disk_size"` `{ type` `= number default = 50}` |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `variable "ssd_3000"` `{  type`    `= string  default = "3000"}variable "root_disk_size"` `{  type`    `= number  default = 20}variable "data_disk_size"` `{  type`    `= number  default = 50}` |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
 * **network\_id**: chỉ định network id mà vServer sẽ được tạo trên đó, bạn có thể lấy từ tab [VPC](https://hcm-3.console.greennode.ai/vserver/network/vpc), nếu chưa khởi tạo bất cứ network nào bạn có thể xem hướng dẫn [{Trang tạo network}](../network/virtual-private-cloud-vpc/)
 * **subnet\_id**: chỉ định subnet id mà vServer sẽ được tạo trên đó, bạn có thể lấy từ [{Tab VPC}](https://hcm-3.console.greennode.ai/vserver/network/vpc), nếu chưa khởi tạo bất cứ subnet nào bạn có thể xem hướng dẫn tại [{Trang tạo subnet}](../network/virtual-private-cloud-vpc/)
 
-<figure><img src="../../../../.gitbook/assets/terraform_vserver_7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/terraform_vserver_7.png" alt=""><figcaption></figcaption></figure>
 
-| `variable "network_id"` `{ type` `= string default = "net-22581aed-a65d-4b1e-86d3-102d68e148e0"}variable "subnet_id"` `{ type` `= string default = "sub-5f101cba-7ce0-4084-8576-06b8dbfb298a"` |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `variable "network_id"` `{  type`    `= string  default = "net-22581aed-a65d-4b1e-86d3-102d68e148e0"}variable "subnet_id"` `{  type`    `= string  default = "sub-5f101cba-7ce0-4084-8576-06b8dbfb298a"` |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-* **ssh\_key\_id**: chỉ định ssh key sẽ được inject vào vServer, bạn có thể lấy ở [{Tab SSH Keys}](https://hcm-3.console.greennode.ai/vserver/v-server/ssh-key), nếu chưa khởi tạo bất kì ssh key nào bạn có thể xem tại [{](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[T](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[rang tạo SSH key](../security/ssh-key-bo-khoa.md)[}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901):
+* **ssh\_key\_id**: chỉ định ssh key sẽ được inject vào vServer, bạn có thể lấy ở [{Tab SSH Keys}](https://hcm-3.console.greennode.ai/vserver/v-server/ssh-key), nếu chưa khởi tạo bất kì ssh key nào bạn có thể xem tại [{](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[T](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901)[rang tạo SSH key](../security/ssh-key-bo-khoa.md)[}](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49647901):&#x20;
 
-<figure><img src="../../../../.gitbook/assets/terraform_vserver_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/terraform_vserver_8.png" alt=""><figcaption></figcaption></figure>
 
 * **security\_group\_id\_list**: chỉ định danh sách security group id cần gắn vào vServer, bạn có thể lấy ở [{Tab Security Groups}](https://hcm-3.console.greennode.ai/vserver/network/sec-group), nếu cần tạo thêm security group bạn có thể xem tại [{Trang tạo Security Group}](../security/security-groups.md)
 
-<figure><img src="../../../../.gitbook/assets/terraform_vserver_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/terraform_vserver_9.png" alt=""><figcaption></figcaption></figure>
 
-| `variable "ssh_key_id"` `{ type` `= string default = "ssh-b4fbf87a-d9bc-4f04-9ea1-39e086f443de"}variable "security_group_id_list"` `{ type` `= list(string) default = [ "secg-28e91c47-11b1-4cc1-8e24-dd174882708d" ]}` |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `variable "ssh_key_id"` `{  type`    `= string  default = "ssh-b4fbf87a-d9bc-4f04-9ea1-39e086f443de"}variable "security_group_id_list"` `{  type`    `= list(string)  default = [    "secg-28e91c47-11b1-4cc1-8e24-dd174882708d"  ]}` |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 \
 **Bước 6:** Kiểm tra lại thông tin file [main.tf](https://github.com/vngcloud/terraform-provider-vngcloud/blob/main/examples/modules/vng-cloud-vserver/main.tf) _(theo đường dẫn **terraform-provider-vngcloud/examples/modules/vng-cloud-vserver/**)_, trong file chúng tôi để sẵn một số câu lệnh: **Create Server**, **Create Volume, Attach volume to Server,** trường hợp này để Tạo mới Server bạn chỉ cần để lại resource **Create Server** theo hướng dẫn bên dưới:
 
-| `data "vngcloud_vserver_volume_type_zone"` `"volume_type_zone"` `{ name = "SSD" project_id = var.project_id}data "vngcloud_vserver_volume_type"` `"volume_type"` `{ name = var.ssd_3000 project_id = var.project_id volume_type_zone_id = data.vngcloud_vserver_volume_type_zone.volume_type_zone.id}` `resource "vngcloud_vserver_server"` `"server"` `{ count = var.server_count project_id = var.project_id name = "vngcloud-tinbhn22-${count.index}" encryption_volume = false attach_floating = true flavor_id = var.s_general_4x8 image_id = var.ubuntu_20_04 network_id = var.network_id root_disk_size = var.root_disk_size root_disk_type_id = data.vngcloud_vserver_volume_type.volume_type.id security_group = var.security_group_id_list subnet_id = var.subnet_id action = "start" # user_name = "stackops" # user_password = "Vng@Cloud3030" # expire_password = false # ssh_key = var.ssh_key_id #user_data_base64_encode = var.user_data_base64_encode #user_data = "${data.template_cloudinit_config.user_data.rendered}" lifecycle { create_before_destroy = true }}` |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `data "vngcloud_vserver_volume_type_zone"` `"volume_type_zone"` `{  name       = "SSD"  project_id = var.project_id}data "vngcloud_vserver_volume_type"` `"volume_type"` `{  name                = var.ssd_3000  project_id          = var.project_id  volume_type_zone_id = data.vngcloud_vserver_volume_type_zone.volume_type_zone.id}` `resource "vngcloud_vserver_server"` `"server"` `{  count             = var.server_count  project_id        = var.project_id  name              = "vngcloud-tinbhn22-${count.index}"  encryption_volume = false  attach_floating   = true  flavor_id         = var.s_general_4x8  image_id          = var.ubuntu_20_04  network_id        = var.network_id  root_disk_size    = var.root_disk_size  root_disk_type_id = data.vngcloud_vserver_volume_type.volume_type.id  security_group    = var.security_group_id_list  subnet_id         = var.subnet_id  action            = "start"  #  user_name         = "stackops"  #  user_password     = "Vng@Cloud3030"  #  expire_password   = false  #  ssh_key           = var.ssh_key_id  #user_data_base64_encode = var.user_data_base64_encode  #user_data               = "${data.template_cloudinit_config.user_data.rendered}"  lifecycle {    create_before_destroy = true  }}` |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 **Bước 7:** Khởi chạy terraform command
 
-* Sau khi hoàn tất các thông tin trên, để terraform khởi tạo và tải GreenNode provider về đồng thời thiết lập các thông tin cần thiết chạy lệnh bên dưới, lưu ý khi chạy cần đứng tại thư mục terraform-provider-vngcloud/ [examples](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples)/:<br>
+* Sau khi hoàn tất các thông tin trên, để terraform khởi tạo và tải GreenNode provider về đồng thời thiết lập các thông tin cần thiết chạy lệnh bên dưới, lưu ý khi chạy cần đứng tại thư mục terraform-provider-vngcloud/ [examples](https://github.com/vngcloud/terraform-provider-vngcloud/tree/main/examples)/: <br>
 
 | `terraform init` |
 | ---------------- |
@@ -120,7 +120,7 @@ Sau đó, bạn để xem những thay đổi sẽ được áp dụng trên nh�
 | `terraform plan` |
 | ---------------- |
 
-Cuối cùng bạn chọn chạy dòng lệnh
+Cuối cùng bạn chọn chạy dòng lệnh&#x20;
 
 | `terraform apply` |
 | ----------------- |
@@ -129,7 +129,9 @@ và chọn **YES** để thực hiện việc khởi tạo vServer thông qua Te
 
 **Bước 8**: Bạn có thể lên [Portal ](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server)để xem Server đang được khởi tạo từ Terraform:
 
-<figure><img src="../../../../.gitbook/assets/terraform_vserver_10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/terraform_vserver_10.png" alt=""><figcaption></figcaption></figure>
+
+
 
 (Bạn có thể sử dụng Terraform để tạo và quản lý tài nguyên đối với các loại tài khoản POC, tài khoản trả trước, tài khoản trả sau).
 

@@ -1,18 +1,18 @@
 # API developers
 
-## 1. Authentication
+## 1. Authentication&#x20;
 
 * Đầu tiên, bạn truy cập vào ứng dụng Figma, chọn menu **App management** sau đó chọn tab **Credential:**
 
-<figure><img src="../../../../.gitbook/assets/image (672).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (672).png" alt=""><figcaption></figcaption></figure>
 
 * Tiếp theo, bạn nhập **Username** và chọn **Group** nhóm quyền tương ứng (ở đây bạn nhóm quyền **Sigma Livestream Full**):
 
-<figure><img src="../../../../.gitbook/assets/image (671).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (671).png" alt=""><figcaption></figcaption></figure>
 
 * Sau khi bạn chọn **Submit**, hệ thống **Sigma** sẽ sinh ra **Username** và **Secret Key**, quý khách cần lưu mật khẩu này lại hoặc tải xuống tệp tin **credentail** bằng cách chọn **Download as .env file**.
 
-<figure><img src="../../../../.gitbook/assets/image (673).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (673).png" alt=""><figcaption></figcaption></figure>
 
 * Sau khi đã có **Username** và **Secret** **Key**, Quý khách dùng tool **Base64Encode** để tạo **token** cho header **Authorization** theo cú pháp như sau:
 
@@ -22,9 +22,11 @@ Authorization: Basic Base64Encode(<Username>:<Secret Key>)
 
 * Cuối cùng, quý khách lấy thông tin **App ID** bằng cách chọn menu **App management,** chọn tab **General** sau đó quý khách có thể thấy thông tin **App ID** như hình sau
 
-<figure><img src="../../../../.gitbook/assets/image (674).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (674).png" alt=""><figcaption></figcaption></figure>
 
-## 2. API Tạo kênh live transcode
+&#x20;
+
+## 2.    API Tạo kênh live transcode
 
 Để tạo một kênh live transcode với các setting sau:
 
@@ -86,7 +88,7 @@ Nếu kết quả call API thành công, mã **HTTP Response** sẽ là **201**,
 
 ```
 
-## 3. Get thông tin của một channel
+## 3.   Get thông tin của một channel
 
 Sau khi tạo kênh, quý khách có thể lấy thông tin chi tiết của một channel bằng cách gọi API sau:
 
@@ -139,7 +141,7 @@ Data nhận được sẽ như ví dụ sau:
 } 
 ```
 
-## 4. API start live channel
+## 4.   API start live channel
 
 Sử dụng API như sau để start một live channel:
 
@@ -151,7 +153,7 @@ curl --location --request PATCH 'https://api.sigma.video/api/livestream/channels
 
 Nếu kết quả call API thành công, mã HTTP Response sẽ là **200**.
 
-## 5. API stop live channel
+## 5.   API stop live channel
 
 Sử dụng API như sau để stop một live channel:
 
@@ -163,7 +165,7 @@ curl --location --request DELETE 'https://api.sigma.video/api/livestream/channel
 
 Nếu kết quả call API thành công, mã HTTP Response sẽ là **200**.
 
-## 6. Xóa một channel
+## 6.   Xóa một channel
 
 Để xóa channel, sử dụng API như sau:
 
@@ -176,7 +178,7 @@ curl --location 'https://api.sigma.video/api/livestream/sessions?q={"channelId":
 
 Nếu kết quả call API thành công, mã HTTP Response sẽ là **200**.
 
-## 7. Liệt kê danh sách live session của một channel
+## 7.   Liệt kê danh sách live session của một channel
 
 Mỗi phiên livestream của một channel sẽ được tracking lại thành một session. Chúng ta có thể dùng API như sau để lấy danh sách session của một channel:
 
@@ -262,7 +264,7 @@ Nếu kết quả call API thành công, mã HTTP Response sẽ là 200. Kết q
 
 ```
 
-## 8. Xem status của một session
+## 8.   Xem status của một session
 
 Chúng ta có thể lấy trạng thái hoạt động của một live session bằng cách gọi API sau:
 
@@ -278,7 +280,7 @@ Nếu kết quả call API thành công, mã HTTP Response sẽ là 200. Kết q
 {"status":"live"}
 ```
 
-## 9. Liệt kê danh sách event của một session
+## 9.   Liệt kê danh sách event của một session
 
 Trong quá trình hoạt động của một session các action như: khởi tạo, stop, start, tín hiệu bị gián đoạn, tín hiệu đã phục hồi, v.v… sẽ sinh ra và tracking thành các events. Ta có thể dùng API như bên dưới để lấy danh sách các event:
 

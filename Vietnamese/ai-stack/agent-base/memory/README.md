@@ -109,13 +109,13 @@ Trước khi sử dụng short-term hoặc long-term memory, bạn cần tạo m
 1. Mở https://aiplatform.console.greennode.ai/memory
 2. Tất cả memory store được hiển thị với: Name, Status, Description, Event Expiry, Last updated
 
-![1774584561868](<../../../../.gitbook/assets/1774584561868 (3).png>)
+![1774584561868](../../../.gitbook/assets/1774584561868.png)
 
 #### Xem chi tiết Memory Store
 
 Từ trang danh sách memory → nhấn vào tên memory
 
-![1774584650626](<../../../../.gitbook/assets/1774584650626 (3).png>)
+![1774584650626](../../../.gitbook/assets/1774584650626.png)
 
 #### Xóa Memory Store
 
@@ -123,7 +123,7 @@ Từ trang danh sách memory → nhấn vào tên memory
 
 1. Từ trang chi tiết memory → **Delete** → xác nhận
 
-![1774584735238](<../../../../.gitbook/assets/1774584735238 (3).png>)
+![1774584735238](../../../.gitbook/assets/1774584735238.png)
 
 ***
 

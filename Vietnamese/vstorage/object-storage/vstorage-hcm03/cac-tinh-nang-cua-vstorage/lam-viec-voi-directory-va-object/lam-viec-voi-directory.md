@@ -16,7 +16,7 @@ Trong vStorage, directory được chúng tôi định nghĩa là các thư mụ
 
 Màn hình **Tạo mới directory** được hiển thị.
 
-4\. Trong **Tên directory**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho directory của bạn.
+4\. Trong **Tên directory**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho directory của bạn.&#x20;
 
 Sau khi tạo container, bạn không thể thay đổi tên của directory. Chúng tôi khuyến cáo tên của directory nên chứa các chữ cái viết thường, các chữ số và không có các ký tự đặc biệt cụ thể như #, @, $, %, ?, /, \`, \~ ... Nếu bạn thực sự cần đặt tên với các ký tự chữ cái viết hoa, vui lòng lưu ý rằng, nó có thể gặp một số vấn đề khi làm việc với các 3rd party softwares được hỗ trợ từ các nhà cung cấp khác.
 
@@ -24,7 +24,7 @@ Sau khi tạo container, bạn không thể thay đổi tên của directory. Ch
 
 Sau khi bạn hoàn thành 5 bước được mô tả bên trên, directory đã được tạo. Bạn có thể tải directory lên directory này hoặc chia sẻ, xóa directory.
 
-<figure><img src="../../../../../../.gitbook/assets/Khoi_tao_directory.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Khoi_tao_directory.gif" alt=""><figcaption></figcaption></figure>
 
 2. **Sử dụng vStorage API**
 
@@ -33,9 +33,9 @@ Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung c�
 Để tạo mới một directory qua vStorage API, hãy xem [API Developers](../../api-developers/).
 
 \
-3\. **Sử dụng 3rd party softwares**
+3\.  **Sử dụng 3rd party softwares**
 
-vStorage cũng tương thích với các công cụ phía bạn sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.
+vStorage cũng tương thích với các công cụ phía bạn sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.&#x20;
 
 Để tạo mới một directory qua 3rd party software, hãy xem [3rd party softwares](../../3rd-party-softwares/).
 {% endtab %}
@@ -45,29 +45,31 @@ vStorage cũng tương thích với các công cụ phía bạn sử dụng S3 p
 
 1. **Sử dụng vStorage Portal**
 
+
+
 Để thực hiện chia sẻ một directory trong một container, bạn có thể thực hiện theo các bước bên dưới:
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn **project, container** sau đó chọn một hoặc nhiều các **directory** bạn muốn thực hiện chia sẻ.
-3. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-3-6_10-50-12.png?version=1\&modificationDate=1699348122000\&api=v2)hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-2-6_10-20-54.png?version=1\&modificationDate=1678075522000\&api=v2)tại **directory** bạn muốn thực hiện chia sẻ và chọn![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-3-6_10-50-38.png?version=1\&modificationDate=1699348122000\&api=v2)
-4. Chọn **Mode**:
+3. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-3-6\_10-50-12.png?version=1\&modificationDate=1699348122000\&api=v2)hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-2-6\_10-20-54.png?version=1\&modificationDate=1678075522000\&api=v2)tại **directory** bạn muốn thực hiện chia sẻ và chọn![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-3-6\_10-50-38.png?version=1\&modificationDate=1699348122000\&api=v2)
+4. Chọn **Mode**:&#x20;
 5. Nếu **Protocol** là **OpenStack Swift** thì bạn có thể chọn **Mode** là **Download** hoặc **View**.
 
-7\. Nhập **Thời gian hết hạn** bạn muốn chia sẻ directory tức là thời gian đường dẫn (Temporary URL) truy cập tới directory có hiệu lực. Bạn có thể giới hạn số **ngày**, **giờ**, **phút** mà đường dẫn truy cập tới directory tồn tại.
+7\. Nhập **Thời gian hết hạn** bạn muốn chia sẻ directory tức là thời gian đường dẫn (Temporary URL) truy cập tới directory có hiệu lực. Bạn có thể giới hạn số **ngày**, **giờ**, **phút** mà đường dẫn truy cập tới directory tồn tại.&#x20;
 
 8\. Chọn **Tạo đường dẫn** .
 
-9\. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-3-6_10-51-24.png?version=1\&modificationDate=1699348123000\&api=v2) để sao chép từng đường dẫn cho từng directory. Mỗi directory được chúng tôi tạo ra một URL riêng biệt.
+9\. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-3-6\_10-51-24.png?version=1\&modificationDate=1699348123000\&api=v2) để sao chép từng đường dẫn cho từng directory. Mỗi directory được chúng tôi tạo ra một URL riêng biệt.
 
 Sau khi bạn chia sẻ directory thông qua Temporary URL ở cơ chế View, bạn sẽ nhận được 1 đường dẫn (URL). Bạn sao chép đường dẫn này và dán vào bất kỳ trình duyệt nào mà bạn sử dụng. Lúc này hệ thống vStorage không hỗ trợ bạn xem trực tiếp directory, bạn cần thêm tên object thuộc directory này để xem object đó.
 
-* Temporary URL của Directory1: [https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_410ded5c02674846b534ff7b4a894c2e/my-web/directory1?temp\_url\_sig=a41703737ce078e14803362ca681ac959a1df476\&temp\_url\_expires=1687854410\&temp\_url\_prefix=directory1](https://hcm03.vstorage.vngcloud.vn/v1/AUTH_410ded5c02674846b534ff7b4a894c2e/my-web/directory1?temp_url_sig=a41703737ce078e14803362ca681ac959a1df476\&temp_url_expires=1687854410\&temp_url_prefix=directory1)
-* Temporary URL khi bạn muốn xem object **setting.ini** thuộc Directory1: [https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_410ded5c02674846b534ff7b4a894c2e/my-web/Directory1/**setting.ini**?temp\_url\_sig=a41703737ce078e14803362ca681ac959a1df476\&temp\_url\_expires=1687854410\&temp\_url\_prefix=directory1](https://hcm03.vstorage.vngcloud.vn/v1/AUTH_410ded5c02674846b534ff7b4a894c2e/my-web/Directory1/setting.ini?temp_url_sig=a41703737ce078e14803362ca681ac959a1df476\&temp_url_expires=1687854410\&temp_url_prefix=directory1)
+* Temporary URL của Directory1: [https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_410ded5c02674846b534ff7b4a894c2e/my-web/directory1?temp\_url\_sig=a41703737ce078e14803362ca681ac959a1df476\&temp\_url\_expires=1687854410\&temp\_url\_prefix=directory1](https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_410ded5c02674846b534ff7b4a894c2e/my-web/directory1?temp\_url\_sig=a41703737ce078e14803362ca681ac959a1df476\&temp\_url\_expires=1687854410\&temp\_url\_prefix=directory1)
+* Temporary URL khi bạn muốn xem object **setting.ini** thuộc Directory1: [https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_410ded5c02674846b534ff7b4a894c2e/my-web/Directory1/**setting.ini**?temp\_url\_sig=a41703737ce078e14803362ca681ac959a1df476\&temp\_url\_expires=1687854410\&temp\_url\_prefix=directory1](https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_410ded5c02674846b534ff7b4a894c2e/my-web/Directory1/setting.ini?temp\_url\_sig=a41703737ce078e14803362ca681ac959a1df476\&temp\_url\_expires=1687854410\&temp\_url\_prefix=directory1)
 
-Sau khi bạn chia sẻ directory thông qua Temporary URL ở cơ chế Download, bạn sẽ nhận được 1 đường dẫn (URL). bạn sao chép đường dẫn này và dán vào bất kỳ trình duyệt nào mà bạn sử dụng. Lúc này hệ thống vStorage không hỗ trợ bạn xem trực tiếp directory, bạn cần thêm tên object thuộc directory này để tải xuống object đó. Ví dụ:
+Sau khi bạn chia sẻ directory thông qua  Temporary URL ở cơ chế Download, bạn sẽ nhận được 1 đường dẫn (URL). bạn sao chép đường dẫn này và dán vào bất kỳ trình duyệt nào mà bạn sử dụng. Lúc này hệ thống vStorage không hỗ trợ bạn xem trực tiếp directory, bạn cần thêm tên object thuộc directory này để tải xuống object đó. Ví dụ:
 
-* Temporary URL của Directory1: [https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_410ded5c02674846b534ff7b4a894c2e/my-web/directory1?temp\_url\_sig=a41703737ce078e14803362ca681ac959a1df476\&temp\_url\_expires=1687854410\&temp\_url\_prefix=directory1](https://hcm03.vstorage.vngcloud.vn/v1/AUTH_410ded5c02674846b534ff7b4a894c2e/my-web/directory1?temp_url_sig=a41703737ce078e14803362ca681ac959a1df476\&temp_url_expires=1687854410\&temp_url_prefix=directory1)
-* Temporary URL khi bạn muốn xem object **setting.ini** thuộc Directory1: [https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_410ded5c02674846b534ff7b4a894c2e/my-web/Directory1/**setting.ini**?temp\_url\_sig=a41703737ce078e14803362ca681ac959a1df476\&temp\_url\_expires=1687854410\&temp\_url\_prefix=directory1](https://hcm03.vstorage.vngcloud.vn/v1/AUTH_410ded5c02674846b534ff7b4a894c2e/my-web/Directory1/setting.ini?temp_url_sig=a41703737ce078e14803362ca681ac959a1df476\&temp_url_expires=1687854410\&temp_url_prefix=directory1)
+* Temporary URL của Directory1: [https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_410ded5c02674846b534ff7b4a894c2e/my-web/directory1?temp\_url\_sig=a41703737ce078e14803362ca681ac959a1df476\&temp\_url\_expires=1687854410\&temp\_url\_prefix=directory1](https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_410ded5c02674846b534ff7b4a894c2e/my-web/directory1?temp\_url\_sig=a41703737ce078e14803362ca681ac959a1df476\&temp\_url\_expires=1687854410\&temp\_url\_prefix=directory1)
+* Temporary URL khi bạn muốn xem object **setting.ini** thuộc Directory1: [https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_410ded5c02674846b534ff7b4a894c2e/my-web/Directory1/**setting.ini**?temp\_url\_sig=a41703737ce078e14803362ca681ac959a1df476\&temp\_url\_expires=1687854410\&temp\_url\_prefix=directory1](https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_410ded5c02674846b534ff7b4a894c2e/my-web/Directory1/setting.ini?temp\_url\_sig=a41703737ce078e14803362ca681ac959a1df476\&temp\_url\_expires=1687854410\&temp\_url\_prefix=directory1)
 
 Khi bạn dán đường dẫn và chọn mở đường dẫn:
 
@@ -83,9 +85,11 @@ Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung c�
 
 3. **Sử dụng 3rd party softwares**
 
-vStorage cũng tương thích với các công cụ phía bạn sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.
+vStorage cũng tương thích với các công cụ phía bạn sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.&#x20;
 
 Để lấy đường dẫn TempURL nhằm chia sẻ directory qua 3rd party software, hãy xem [3rd party softwares](../../3rd-party-softwares/).
+
+
 {% endtab %}
 
 {% tab title=" Xóa directory" %}
@@ -97,11 +101,11 @@ vStorage cũng tương thích với các công cụ phía bạn sử dụng S3 p
 
 2\. Chọn **project** và chọn **container**, **directory** bạn muốn thực hiện xóa.
 
-3\. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-3-6_11-7-16.png?version=1\&modificationDate=1678075637000\&api=v2)hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-2-6_10-20-54.png?version=1\&modificationDate=1678075522000\&api=v2)tại directory bạn muốn thực hiện xóa và chọn![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-3-6_11-7-37.png?version=1\&modificationDate=1678075658000\&api=v2).
+3\. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-3-6\_11-7-16.png?version=1\&modificationDate=1678075637000\&api=v2)hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-2-6\_10-20-54.png?version=1\&modificationDate=1678075522000\&api=v2)tại directory bạn muốn thực hiện xóa và chọn![](https://docs.vngcloud.vn/download/thumbnails/49648478/image2023-3-6\_11-7-37.png?version=1\&modificationDate=1678075658000\&api=v2).
 
 Sau khi chọn Xóa, hệ thống sẽ tự động chuyển ra màn hình chính, nếu bạn thấy directory vừa thực hiện biến mất khỏi danh sách thì bạn đã xoá thành công. Directory và các directory thuộc directory lúc này đã được xóa vĩnh viễn khỏi hệ thống.
 
-<figure><img src="../../../../../../.gitbook/assets/Xoa_directory.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Xoa_directory.gif" alt=""><figcaption></figcaption></figure>
 
 2. **Sử dụng vStorage API**
 
@@ -111,8 +115,13 @@ Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung c�
 
 3. **Sử dụng 3rd party softwares**
 
-vStorage cũng tương thích với các công cụ phía bạn sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](https://docs.vngcloud.vn/display/VV/3rd+party+softwares) và học cách tích hợp, sử dụng các công cụ này.
+vStorage cũng tương thích với các công cụ phía bạn sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](https://docs.vngcloud.vn/display/VV/3rd+party+softwares) và học cách tích hợp, sử dụng các công cụ này.&#x20;
 
 Để xóa directory qua 3rd party software, hãy xem [3rd party softwares](https://docs.vngcloud.vn/display/VV/3rd+party+softwares).
 {% endtab %}
 {% endtabs %}
+
+
+
+
+

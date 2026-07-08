@@ -39,7 +39,7 @@ Hiện tại có **2 nhóm model chính**:
   * **Output tokens**
 * Mỗi loại tokens có **đơn giá riêng**
 
-<figure><img src="../../../../.gitbook/assets/image (756).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (756).png" alt=""><figcaption></figcaption></figure>
 
 * Phí được tính theo **đơn vị 1.000.000 tokens**
 
@@ -73,7 +73,7 @@ Phí được tính dựa trên:
 
 ⇒ Mỗi cấu hình hình ảnh sẽ có **đơn giá khác nhau**.
 
-<figure><img src="../../../../.gitbook/assets/image (760).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (760).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -85,9 +85,9 @@ Phí được tính dựa trên:
 
 * Người dùng cần **mua trước user-credit** để sử dụng dịch vụ bằng tính năng Top up credits
 
-<figure><img src="../../../../.gitbook/assets/image (811).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (811).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (820).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (820).png" alt=""><figcaption></figcaption></figure>
 
 * Với mỗi lần sử dụng model:
   * Tokens và/hoặc images phát sinh sẽ được:
@@ -123,7 +123,7 @@ Sau khi recover:
     * Buy-more user-credits nếu có nhu cầu tiếp tục sử dụng
 
 > Khuyến nghị người dùng **ước lượng trước nhu cầu sử dụng và chủ động buy-more** để tránh gián đoạn dịch vụ khi hết quota hoặc hết hạn credits.\
-> \&#xNAN;_(Chức năng Quota Alarm đang được phát triển và sẽ cập nhật trong thời gian tới)_
+> &#xNAN;_(Chức năng Quota Alarm đang được phát triển và sẽ cập nhật trong thời gian tới)_
 
 ***
 
@@ -133,15 +133,12 @@ Sau khi recover:
 
 * **user-credit** có **thời hạn sử dụng vĩnh viễn**
 * Người dùng có thể sử dụng model **không cần mua trước quota**
-*   Usage sẽ được:
+* Usage sẽ được:
+  * Ghi nhận theo **thời gian thực**
+  * **Tổng hợp và thanh toán vào cuối mỗi tháng**
+  *
 
-    * Ghi nhận theo **thời gian thực**
-    * **Tổng hợp và thanh toán vào cuối mỗi tháng**
-    *
-
-    ```
-    <figure><img src="../../../.gitbook/assets/image (771).png" alt=""><figcaption></figcaption></figure>
-    ```
+      <figure><img src="../../../.gitbook/assets/image (771).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

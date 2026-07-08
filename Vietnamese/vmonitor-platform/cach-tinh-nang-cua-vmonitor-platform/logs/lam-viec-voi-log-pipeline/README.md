@@ -21,7 +21,7 @@ Log Pipeline là tính năng cho phép bạn thực hiện parse hay enrich dữ
 * Log Pipeline chứa chỉ 1 Processor Group với Filter là source:nginx, nghĩa là với những logs có trường source:nginx thì mới chạy qua hệ thống Processor Group để parse.
 * Processor Group chứa 3 Processor để parse log thành dữ liệu có cấu trúc và lưu vào destination log project.
 
-<figure><img src="../../../../../.gitbook/assets/image (314).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (314).png" alt=""><figcaption></figcaption></figure>
 
 **Log Pipeline 2**: mô hình phức tạp hơn có 1 source log project nhưng dữ liệu parse ra 2 destination log project với các thông tin như bên dưới, dành cho nhu cầu là raw logs của bạn chứa nhiều loại dữ liệu logs khác nhau và bạn muốn parse và lưu trữ ở nhiều destination log project khác nhau
 
@@ -30,7 +30,7 @@ Log Pipeline là tính năng cho phép bạn thực hiện parse hay enrich dữ
 * Log Pipeline chứa 2 Processor Group với Filter là source:nginx và source:apache, tương ứng với dòng logs nào phù hợp với Filter của Group thì sẽ được parse tương ứng với Group đó
 * Processor Group: có 2 Processor Groups tương ứng để parse đúng logs về lưu trữ vào 2 destination log project khác nhau.
 
-<figure><img src="../../../../../.gitbook/assets/image (315).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (315).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -88,7 +88,7 @@ Các quy tắc sau áp dụng cho việc đặt tên Processor trong vMonitor Pl
 1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Log.**
 3. Chọn **Log pipeline.**
-4. Trong danh sách log pipeline đang có, tại **Log pipeline** mà bạn muốn chỉnh sửa, chọn <img src="../../../../../.gitbook/assets/image (40).png" alt="" data-size="line">.
+4. Trong danh sách log pipeline đang có, tại **Log pipeline** mà bạn muốn chỉnh sửa, chọn <img src="../../../../.gitbook/assets/image (40).png" alt="" data-size="line">.
 5. Chọn **Edit pipeline**.
 6. Chỉnh sửa các thông số cho **Log pipeline** mà bạn mong muốn. Bạn có thể chỉnh sửa tất cả các trường thông tin trong cấu hình một Log pipeline. Việc chỉnh sửa này tương tự như khi bạn thực hiện tạo mới một Log pipeline theo hướng dẫn bên trên.
 7. Chọn **Save.**
@@ -101,7 +101,7 @@ Khi bạn không có nhu cầu sử dụng một Log pipeline tùy chỉnh nữa
 
 1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Log.**
-3. Tại **Log pipeline** bạn muốn thực hiện xóa, chọn <img src="../../../../../.gitbook/assets/image (23) (2).png" alt="" data-size="line">
+3. Tại **Log pipeline** bạn muốn thực hiện xóa, chọn <img src="../../../../.gitbook/assets/image (23).png" alt="" data-size="line">
 4. Chọn **Delete**.
 5. Tại màn hình xác nhận xóa Log pipeline, chọn **Delete**.
 

@@ -2,11 +2,13 @@
 
 CORS (Cross Origin Resource Sharing) là một cơ chế cho phép nhiều tài nguyên khác nhau của một website có thể được truy vấn từ domain khác với domain của trang đó dựa trên giao thức HTTP. Các CORS request được thực hiện bằng cách thêm các HTTP headers chỉ dẫn cho trình duyệt web về sử dụng và quản lý nội dung cross-domain, cho phép lấy dữ liệu từ một trang khác thông qua các HTTP request chứa các headers chỉ định CORS. CORS được sinh ra là vì [same-origin policy](https://www.w3.org/Security/wiki/Same_Origin_Policy), là một chính sách liên quan đến bảo mật được cài đặt vào toàn bộ các trình duyệt hiện nay. Chính sách này ngăn chặn việc truy cập tài nguyên của các domain khác một cách vô tội vạ. Cross-origin resource sharing (viết tắt là CORS) là một tiêu chuẩn để truy cập tài nguyên web trên các tên miền khác nhau. CORS cho phép các web scripts tương tác cởi mở hơn với nội dung bên ngoài tên miền gốc, dẫn đến sự tích hợp tốt hơn giữa các dịch vụ web.
 
-Để thiết lập tính năng CORS container, bạn có thể thực hiện theo hướng dẫn bên dưới:
+Để thiết lập tính năng CORS container, bạn có thể thực hiện theo hướng dẫn bên dưới:&#x20;
+
+
 
 <details>
 
-<summary>Sử dụng vStorage Portal</summary>
+<summary> Sử dụng vStorage Portal</summary>
 
 1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
@@ -18,9 +20,11 @@ CORS (Cross Origin Resource Sharing) là một cơ chế cho phép nhiều tài 
 
 CORS chỉ cho thiết lập theo domain xác định ví dụ [https://abc.com.vn](https://abc.com.vn/). Do đó bạn cần nhập Value là giá trị domain xác định này.
 
-<img src="../../../../../../.gitbook/assets/Chia_se_tai_nguyen_CORS.gif" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/Chia_se_tai_nguyen_CORS.gif" alt="" data-size="original">
 
 </details>
+
+
 
 <details>
 
@@ -31,3 +35,4 @@ Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung c�
 Để chia sẻ tài nguyên CORS container qua vStorage API, hãy xem [API Developers](../../api-developers/).
 
 </details>
+

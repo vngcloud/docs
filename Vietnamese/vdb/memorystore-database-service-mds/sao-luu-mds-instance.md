@@ -20,7 +20,7 @@ Khi bạn có nhu cầu tạo bản backup, bạn truy cập dịch vụ GreenNo
 * Sau khi chắc chắn mọi thông tin đều chính xác, bạn nhấn **Create**.
 * Nếu hệ thống tiếp nhận thành công, một bản backup sẽ xuất hiện với **Status** là **NEW**. Khi được tạo thành công, bản backup sẽ đổi sang **Status** là **COMPLETED**.
 
-**Cách 2: Ngoài màn hình quản lý Backup, bạn còn có thể tạo bản Manual Backup ngay tại màn hình quản lý Database.**
+**Cách 2: Ngoài màn hình quản lý Backup, bạn còn có thể tạo bản Manual Backup ngay tại màn hình quản lý Database.**&#x20;
 
 * Nhấn chọn một DB Instance cần tạo Backup, khi đó bạn sẽ được chuyển tới trang chi tiết DB Instance.
 * Tại đây, bạn chuyển tới thẻ **Backup** và cuộn xuống danh sách **Backup list**. Ở đây sẽ liệt kê tất cả các bản backup (manual & auto) tương ứng với DB Instance này. Bạn có thể nhấn **Create Backup** để tiến hành tạo bản **Manual Backup** ngay tại đây.
@@ -39,9 +39,9 @@ vDBaaS hỗ trợ tính năng tự động sao lưu theo ngày tại thời đi�
 
 * Cách 1: Cấu hình luôn trong lúc khởi tạo DB Instance. Đối với phương án đầu, mời bạn xem lại hướng dẫn Khởi tạo DB Instance tại [Hướng dẫn khởi tạo MDS Instance](khoi-tao-mds-instance.md).
 * Cách 2: Thay đổi tại giao diện quản lý Database.
-  *   Bạn truy cập màn hình quản lý Database, click chọn DB Instance muốn cấu hình. Sau đó, bạn click chọn **Edit DB Setting**.
+  *   Bạn truy cập màn hình quản lý Database, click chọn DB Instance muốn cấu hình. Sau đó, bạn click chọn **Edit DB Setting**.&#x20;
 
-      <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
   * Tại đây, bạn kéo xuống mục **Backup settings** và bạn có thể cấu hình các thông tin:
     * **Automatic daily backup:** bật tắt tính năng Automatic daily backup.
     * **Backup retention period:** xác định thời gian lưu trữ bản automatic backup. Nhằm giúp bạn tiết kiệm không gian lưu trữ, các bản automatic backup đã quá khoảng thời gian này sẽ bị xóa.
@@ -52,11 +52,11 @@ vDBaaS hỗ trợ tính năng tự động sao lưu theo ngày tại thời đi�
 
 vDB MemoryStore hỗ trợ bạn **khôi phục (Restore)** lại một MDS Instance mới từ bản sao lưu (Backup) trước đó. Quá trình khôi phục này không phụ thuộc vào cách tạo ra bản backup đó (Manual Backup hay Automactic Daily Backup).
 
-Để thực hiện tiến trình khôi phục, bạn truy cập màn hình quản lý Backup [tại đây](https://vdb.console.greennode.ai/memorystore/backup) và làm theo hướng dẫn sau:
+Để thực hiện tiến trình khôi phục, bạn truy cập màn hình quản lý Backup [tại đây](https://vdb.console.greennode.ai/memorystore/backup) và làm theo hướng dẫn sau:&#x20;
 
-*   Nhấn chọn vào bản Backup mà bạn muốn khôi phục, chọn Action **Restore**. Quá trình Restore cũng gần tương tự như quá trình Tạo một MDS Instance mới.
+*   Nhấn chọn vào bản Backup mà bạn muốn khôi phục, chọn Action **Restore**. Quá trình Restore cũng gần tương tự như quá trình Tạo một MDS Instance mới.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * Tại màn hình khôi phục MDS Instance, bạn cũng có thể lựa chọn các thông tin về cấu hình MDS Instance mới tại các thông tin **Instance flavor, DB instance setting, Network & Security, DB Option và Backup setting.**
 * Sau khi chắc chắn các thông tin đã chính xác, bạn nhấp nút **Restore** ở góc phải trên.
 * Sau đó, bạn quay lại màn hình quản lý Database, sẽ thấy xuất hiện một MDS Instance đang được khởi tạo. Trạng trái của MDS Instance mới này cũng sẽ thay đổi từ **Building/Build** sang **Active** nếu thành công.
@@ -66,3 +66,4 @@ vDB MemoryStore hỗ trợ bạn **khôi phục (Restore)** lại một MDS Inst
 **Để xóa một bản Backup** bạn truy cập màn hình quản lý Backup [tại đây](https://vdb.console.greennode.ai/memorystore/backup) và làm theo hướng dẫn sau:
 
 Bạn nhấn chọn vào bản Backup mà bạn muốn xóa, chọn Action **Delete.** Lúc này sẽ hiển thị một cảnh báo để chắc chắn bạn muốn xóa bản backup. Nếu đồng ý xóa bạn nhấn vào nút **Delete**. Bạn chờ một lát để quá trình xóa được thực thi và khi xóa thành công thì bản backup này sẽ không hiển thị trên màn hình quản lý Backup. Như vậy bạn đã xóa bản backup thành công
+

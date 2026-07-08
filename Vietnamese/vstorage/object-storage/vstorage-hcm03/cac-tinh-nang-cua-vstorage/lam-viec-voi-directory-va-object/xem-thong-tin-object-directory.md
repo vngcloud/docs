@@ -2,10 +2,12 @@
 
 Sau khi bạn đã tạo directory và tải lên object vào container hay tải lên object vào directory. Bạn có thể xem thông tin object/ directory đó và sử dụng các tính năng mà chúng tôi cung cấp cho object/ directory bao gồm: di chuyển, sao chép, đổi tên object,...
 
-Để xem thông tin của một object/ directory, bạn có thể:
+Để xem thông tin của một object/ directory, bạn có thể:&#x20;
 
 {% tabs %}
 {% tab title="Sử dụng vStorage Portal" %}
+
+
 1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **project** sau đó chọn **container** chứa **object/ directory** bạn muốn xem thông tin chi tiết.
@@ -17,12 +19,12 @@ Sau khi bạn đã tạo directory và tải lên object vào container hay tả
 * **Lớp lưu trữ**: lớp lưu trữ trên container chứa object/ directory.
 * **Sửa đổi lần cuối**: thời gian sửa đổi lần gần với hiện tại nhất của object/ directory.
 
-4\. Bạn có thể chọn vào ![](https://docs.vngcloud.vn/download/thumbnails/59805571/image2023-7-13_12-22-47.png?version=1\&modificationDate=1689225769000\&api=v2) tại object/ directory mà bạn muốn xem chi tiết. Khi bạn chọn:
+4\. Bạn có thể chọn vào ![](https://docs.vngcloud.vn/download/thumbnails/59805571/image2023-7-13\_12-22-47.png?version=1\&modificationDate=1689225769000\&api=v2) tại object/ directory mà bạn muốn xem chi tiết. Khi bạn chọn:
 
 * **Object**: màn hình hiển thị thông tin chi tiết của object được chọn bao gồm: **Tên**, **Kích thước,** **Content** **type**, **Sửa đổi lần cuối**, **Đường dẫn**, **Thông tin Checksum**, **Thông tin Phiên bản**.
 * **Directory**: màn hình hiển thị thông tin chi tiết của object được chọn bao gồm: **Tên**, **Content type**, **Đường dẫn**, **Thông tin Phiên bản.**
 
-<figure><img src="../../../../../../.gitbook/assets/Xem_thong_tin_object_directory.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Xem_thong_tin_object_directory.gif" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Sử dụng vStorage API" %}
@@ -32,7 +34,7 @@ Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung c�
 {% endtab %}
 
 {% tab title="Sử dụng 3rd party softwares" %}
-vStorage cũng tương thích với các công cụ phía người dùng sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.
+vStorage cũng tương thích với các công cụ phía người dùng sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.&#x20;
 
 Để xem thông tin một object/ directory qua 3rd party software, hãy xem [3rd party softwares](../../3rd-party-softwares/).
 {% endtab %}

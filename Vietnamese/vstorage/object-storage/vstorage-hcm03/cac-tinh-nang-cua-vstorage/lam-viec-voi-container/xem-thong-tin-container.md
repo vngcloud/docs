@@ -1,10 +1,10 @@
 # Xem thông tin container
 
-Sau khi tạo container và tải lên object vào container đó. Bạn có thể xem chi tiết thông tin container và sử dụng các tính năng mà chúng tôi cung cấp cho container bao gồm: ACLs, Lifecycle, CORS,...
+Sau khi tạo container và tải lên object vào container đó. Bạn có thể xem chi tiết thông tin container và sử dụng các tính năng mà chúng tôi cung cấp cho container bao gồm: ACLs, Lifecycle, CORS,...&#x20;
 
-Để xem chi tiết thông tin của một container, bạn có thể:
+Để xem chi tiết thông tin của một container, bạn có thể:&#x20;
 
-Sử dụng vStorage Portal
+&#x20;Sử dụng vStorage Portal
 
 1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
@@ -20,4 +20,4 @@ Sử dụng vStorage Portal
 * **CORS**: Cung cấp thông tin các đường dẫn được phép truy cập vào tài nguyên của container. Để biết chi tiết cách sử dụng tính năng, hãy xem tại [Chia sẻ tài nguyên CORS container](chia-se-tai-nguyen-cors-container.md).
 * **Lifecycle**: Cung cấp thông tin các lifecycle được thiết lập cho container. Để biết chi tiết cách sử dụng tính năng, hãy xem tại [Sử dụng tính năng container lifecycle](su-dung-tinh-nang-container-lifecycle.md).
 
-<figure><img src="../../../../../../.gitbook/assets/Xem_thong_tin_container.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Xem_thong_tin_container.gif" alt=""><figcaption></figcaption></figure>

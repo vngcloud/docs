@@ -5,36 +5,36 @@
 Tính năng **Bucket Policy** trên vStorage là một công cụ mạnh mẽ giúp quản lý quyền truy cập vào bucket của bạn thông qua các quy tắc dạng JSON. Tính năng này cho phép bạn kiểm soát chi tiết các action mà IAM User (coming soon), tài khoản vStorage khác, hoặc các nguồn bên ngoài có thể thực hiện trên bucket và các object trong đó. Dưới đây là hướng dẫn cơ bản để cấu hình Bucket Policy:
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
-2. Chọn biểu tượng <img src="../../../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="line">tại **project** chứa **bucket** bạn muốn phân quyền.
-3. Nếu bạn muốn phân quyền bucket cho một **Root User Account** hoặc **IAM User Account** hay **Service Account** khác, bạn cần biết thông tin **vStorage User ID** của người dùng mà bạn muốn phân quyền:
+2. Chọn biểu tượng <img src="../../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">tại **project** chứa **bucket** bạn muốn phân quyền.
+3. Nếu bạn muốn phân quyền bucket cho một **Root User Account** hoặc **IAM User Account** hay **Service Account** khác, bạn cần biết thông tin **vStorage User ID** của người dùng mà bạn muốn phân quyền:&#x20;
    1. Đối với **Root User Account**: bạn có thể lấy thông tin **vStorage User ID** bằng cách chọn Add external bucket, tại màn hình này bạn sẽ thấy thông tin vStorage User ID như hình dưới:
 
-<figure><img src="../../../../../../../.gitbook/assets/image (1011).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1011).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../../.gitbook/assets/image (1012).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1012).png" alt=""><figcaption></figcaption></figure>
 
-b. Đối với **IAM User Account** và **Service Account**: bạn có thể lấy thông tin **vStorage User ID** tại mục **Identity and Access Management**
+b. Đối với **IAM User Account** và **Service Account**: bạn có thể lấy thông tin **vStorage User ID** tại mục  **Identity and Access Management**
 
-<figure><img src="../../../../../../../.gitbook/assets/image (1013).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1013).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../../.gitbook/assets/image (1014).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1014).png" alt=""><figcaption></figcaption></figure>
 
 4. Tiếp tục chọn **Bucket** bạn muốn thực hiện phân quyền.
 5. Chọn biểu tượng **Action** và chọn **Configure policy.**
 
-<figure><img src="../../../../../../../.gitbook/assets/image (1015).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1015).png" alt=""><figcaption></figcaption></figure>
 
 6. Tại đây, bạn có thể chọn cấu hình cho từng **Statement** ở bên trái hoặc trực tiếp chỉnh sửa file JSON ở cột bên phải. Cụ thể cấu trúc một Bucket Policy bao gồm:
 
 * **Version**: Xác định phiên bản của Bucket Policy (nên dùng `"2012-10-17"`).
 * **Statement**: Mỗi chính sách sẽ có một hoặc nhiều **Statement** (mục đích cụ thể của policy).
   * **Effect**: `Allow` hoặc `Deny` quyền truy cập.
-  * **Principal**: Đối tượng được cấp quyền truy cập (IAM User (coming soon), tài khoản vStorage cụ thể).
+  * **Principal**: Đối tượng được cấp quyền truy cập (IAM User (coming soon),  tài khoản vStorage cụ thể).
   * **Action**: Các hành động cho phép trên bucket, ví dụ: `s3:GetObject` (xem object), `s3:PutObject` (tải lên object), `s3:DeleteObject` (xóa object),…
   * **Resource**: Các bucket và object cụ thể bị ảnh hưởng bởi policy (dùng ARN để định danh tài nguyên).
   * **Condition**: (Tùy chọn) Điều kiện cụ thể giới hạn quyền truy cập.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (1016).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1016).png" alt=""><figcaption></figcaption></figure>
 
 7. Chọn **Save** để lưu lại cấu hình Bucket Policy.
 
@@ -42,7 +42,7 @@ b. Đối với **IAM User Account** và **Service Account**: bạn có thể l�
 
 ## Ví dụ minh họa
 
-### **Ví dụ 1: Cấp quyền public-read (chỉ đọc) cho toàn bộ bucket**
+### **Ví dụ 1: Cấp quyền public-read (chỉ đọc) cho toàn bộ bucket**&#x20;
 
 ```json
 {

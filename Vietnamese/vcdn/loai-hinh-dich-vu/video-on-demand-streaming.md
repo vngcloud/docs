@@ -15,7 +15,7 @@ Dịch vụ VOD của GreenNode giúp doanh nghiệp:
 
 ## **Sơ đồ hoạt động** <a href="#videoondemandstreaming-cochephanphoidulieu" id="videoondemandstreaming-cochephanphoidulieu"></a>
 
-<figure><img src="../../../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -84,7 +84,7 @@ Hệ thống vCDN cung cấp các chuẩn phát phổ biến, hỗ trợ giao th
 * **Tự động Redirect từ HTTP sang HTTPS**: Hỗ trợ tính năng tự động chuyển hướng tất cả các yêu cầu HTTP sang HTTPS nhằm tăng cường bảo mật và cải thiện trải nghiệm người dùng.
 * **Bảo mật link đầu ra:** Hỗ trợ các cơ chế bảo mật nâng cao để bảo vệ nội dung, bao gồm: CORS, Whitelist/ Blacklist IP, Geo Block, HTTP Referer Block,...
 * **Hỗ trợ chế độ nhà phát triển (Development Mode):** Tính năng này cho phép tạm thời tắt caching tại Edge Server để hỗ trợ giai đoạn thử nghiệm hoặc kiểm tra nội dung trong khi phát triển. Mọi yêu cầu sẽ được trả về trực tiếp từ Origin, giúp cập nhật nội dung ngay lập tức mà không cần xóa cache.
-* **Multi Audio Selection:**
+* **Multi Audio Selection:**&#x20;
   * **Chức năng tách Audio**:
     * Hỗ trợ tách và chọn các track audio khác nhau trong một file MP4 nếu file chứa nhiều định dạng audio (ví dụ: nhiều ngôn ngữ hoặc phiên bản).
     * Tính năng này tương thích với **Adaptive Bitrate (ABR)** và sử dụng file SMIL để định nghĩa.
@@ -100,26 +100,26 @@ Hệ thống vCDN cung cấp các chuẩn phát phổ biến, hỗ trợ giao th
 
 ### **Bước 1: Tạo VOD**
 
-Đầu tiên, bạn cần thực hiện khởi tạo một VOD theo hướng dẫn sau:
+Đầu tiên, bạn cần thực hiện khởi tạo một VOD theo hướng dẫn sau:&#x20;
 
 1. Truy cập vào vCDN Portal tại [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
 2. Chọn mục **Video On Demand**, sau đó chọn **Create new.**
 
-<figure><img src="../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-3. Tiếp tục thực hiện nhập/chọn:
+3. Tiếp tục thực hiện nhập/chọn:&#x20;
 
-* **CDN Info:**
-  * **CDN Name:** Nhập tên định danh cho CDN mà bạn muốn tạo.
-  * **VOD Type:** Chọn loại VOD type mà bạn mong muốn sử dụng. Hiện tại vCDN đang hỗ trợ 3 loại VOD bao gồm:
+* **CDN Info:**&#x20;
+  * **CDN Name:** Nhập tên định danh cho CDN mà bạn muốn tạo.&#x20;
+  * **VOD Type:** Chọn loại VOD type mà bạn mong muốn sử dụng. Hiện tại vCDN đang hỗ trợ 3 loại VOD bao gồm:&#x20;
     * **CDN Packaging:** Hệ thống vCDN sẽ packaging media từ file video gốc của khách hàng
     * **Origin Packaging:** Origin của khách hàng tự packaging, vCDN chỉ phục vụ
     * **MP4:** vCDN phục vụ trực tiếp file mp4 gốc từ origin cho end-user
   * **Segment Size:** Chọn thời gian "băm" của các file "ts" với loại dịch vụ VoD là CDN Packaging.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **Origin:**
+* **Origin:**&#x20;
   * **HTTP Origin**: Server hỗ trợ giao thức HTTP.
     * **Fail-Over Error Code:** Danh sách các mã lỗi HTTP (ví dụ: 500, 502, 503, 504) mà nếu xảy ra sẽ kích hoạt chuyển đổi dự phòng (fail-over) đến Origin khác.
     * **Origin Load Balancing:** Cơ chế cân bằng tải giữa các Origin Server được chỉ định.
@@ -127,11 +127,11 @@ Hệ thống vCDN cung cấp các chuẩn phát phổ biến, hỗ trợ giao th
     * **IP Address:** Địa chỉ IP của Origin Server (ví dụ: IPv4 như 1.1.1.1 hoặc IPv6).
     * **Weight:** Định nghĩa mức ưu tiên của từng Origin Server khi cân bằng tải (giá trị càng cao, lưu lượng nhận được càng nhiều).
   * **S3 Origin**: Nguồn dữ liệu trên hệ thống Object Storage chuẩn S3-compatible.
-    * **Access key:** Access key được lấy từ hệ thống Object Storage của bạn.
+    * **Access key:** Access key được lấy từ hệ thống Object Storage của bạn.&#x20;
     * **Secret key:** Secret key tương ứng với Access key đã nhập bên trên.
     * **Bucket:** Tên của bucket chứa nội dung trên S3.
     * **Region:** Region nơi bucket của bạn được lưu trữ.
-    * **Endpoint**: Đường dẫn URL kết nối với dịch vụ S3.
+    * **Endpoint**: Đường dẫn URL kết nối với dịch vụ S3.&#x20;
     * **S3 Signature:** Signature của S3 được sử dụng. Bạn có thể chọn sử dụng Signature v2 hoặc v4.
     * **Use SSL:** Chọn sử dụng SSL để mã hóa kết nối giữa vCDN và S3 Origin.
   * **Host Origin**: Dữ liệu từ một host cụ thể.
@@ -139,11 +139,11 @@ Hệ thống vCDN cung cấp các chuẩn phát phổ biến, hỗ trợ giao th
     * **Use SSL:** Kích hoạt SSL để mã hóa kết nối với Host Origin.
     * **Host Origin**
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   **Security:**
 
@@ -153,7 +153,7 @@ Hệ thống vCDN cung cấp các chuẩn phát phổ biến, hỗ trợ giao th
     * **Token Configuration**:
       * **Token Type**: Chọn loại token dùng để xác thực người xem. Bạn có thể chọn token type Akamai, SBD hoặc VNG.
 
-    <figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Access Filter:**
       * **IP Address CIDR**: Giới hạn cho phép/ từ chối truy cập dựa trên địa chỉ IP bằng cách chọn **Allow**/ **Block** và nhập địa chỉ IP hoặc CIDR tương ứng.
@@ -163,17 +163,17 @@ Hệ thống vCDN cung cấp các chuẩn phát phổ biến, hỗ trợ giao th
       * **Simple**: Khi chọn Simple, bạn chỉ cần chỉ định các domain cụ thể được phép truy cập thông qua **Allow Origin.**
       * **Advance**: Khi chọn Advance, ngoài việc chỉ định domain cụ thể, bạn cần cấu hình chi tiết hơn về **Allow Header, Allow Method, Expose Header, Allow Credentials** được phép.
 
-    <figure><img src="../../../.gitbook/assets/image (841).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (841).png" alt=""><figcaption></figcaption></figure>
 
     * **Caching:**
       * **Caching Level**: Xác định mức độ cache của CDN. Với VOD, vCDN đang cung cấp 3 mức độ cache bao gồm: URL without query string only, Skip Query String of URL, URL With Query String.
       * **Server Cache Expiration (TTL):** Khoảng thời gian mà hệ thống vCDN sẽ lưu trữ tài nguyên của bạn trong bộ nhớ cache. Trong khoảng thời gian này, hệ thống vCDN sẽ không truy cập server gốc mà phản hồi yêu cầu từ bộ nhớ cache của vCDN. Bạn có thể chọn thời gian này từ 30 phút cho tới 1 năm tùy theo nhu cầu cho hệ thống của bạn.
-      * **Browser Cache Expiration:** Thời gian vCDN yêu cầu trình duyệt của người dùng lưu trữ tệp trong bộ nhớ cache cục bộ.
+      * **Browser Cache Expiration:** Thời gian vCDN yêu cầu trình duyệt của người dùng lưu trữ tệp trong bộ nhớ cache cục bộ.&#x20;
       * **Development mode:** Chế độ nhà phát triển. Tính năng này cho phép tạm thời tắt caching tại Edge Server để hỗ trợ giai đoạn thử nghiệm hoặc kiểm tra nội dung trong khi phát triển. Mọi yêu cầu sẽ được trả về trực tiếp từ Origin, giúp cập nhật nội dung ngay lập tức mà không cần xóa cache.
 
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    * **Page Rules:** Tính năng này giúp khách hàng tối ưu các điều kiện và các tùy chọn để giúp website thể hiện được nhiều mục đích khác nhau. Để tạo Page rules, vui lòng chọn **Create Page Rule**, popup sẽ hiện ra, lúc này bạn cần chọn:
+    * **Page Rules:** Tính năng này giúp khách hàng tối ưu các điều kiện và các tùy chọn để giúp website thể hiện được nhiều mục đích khác nhau. Để tạo Page rules, vui lòng chọn **Create Page Rule**, popup sẽ hiện ra, lúc này bạn cần chọn:&#x20;
       * **URL pattern:** cần áp dụng pagerule, hỗ trợ kiểu khai báo “\*” đại diện cho một chuỗi nhiều ký tự. Ví dụ: /trang\_landing\_cu.html. Sau khi nhập URL pattern, bạn hãy chọn **Add new rule**. Mỗi Rules khi thỏa điệu kiện đúng URI được request sẽ có thể tùy chọn thực thi một trong các hành động sau:
         * Always Use HTTPS
         * Server Cache TTL
@@ -187,11 +187,11 @@ Hệ thống vCDN cung cấp các chuẩn phát phổ biến, hỗ trợ giao th
         * Deny Access
       * Chọn **Save changes** để lưu thay đổi.
 
-    <figure><img src="../../../.gitbook/assets/image (843).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (843).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (844).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (844).png" alt="" width="375"><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="348"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="348"><figcaption></figcaption></figure>
 
     4. Chọn **Submit** để hoàn thành việc tạo VOD.
 
@@ -199,25 +199,25 @@ Hệ thống vCDN cung cấp các chuẩn phát phổ biến, hỗ trợ giao th
 
 Sau khi bạn đã thực hiện khởi tạo xong VOD, bạn có thể truy cập các CDN VOD theo các link dưới đây:
 
-* **MP4:**
+* **MP4:**&#x20;
 
 ```
 https:// <CDN Domain>/<đường dẫn file MP4 trên origin>
 ```
 
-* **MP3:**
+* **MP3:**&#x20;
 
 ```
 https:// <CDN Domain>/<đường dẫn file MP3 trên origin >
 ```
 
-* **HLS:**
+* **HLS:**&#x20;
 
 ```
 https:// <CDN Domain>/<đường dẫn file MP4/SMIL trên origin>/index.m3u8
 ```
 
-* MpegDash:
+* MpegDash:&#x20;
 
 ```
 https:// <CDN Domain>/<đường dẫn file manifest trên origin>

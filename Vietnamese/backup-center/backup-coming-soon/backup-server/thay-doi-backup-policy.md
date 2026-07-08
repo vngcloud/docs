@@ -14,15 +14,15 @@ Việc cập nhật backup policy là một hoạt động thường xuyên đ�
 Đầu tiên, bạn cần truy cập vào trang backup server để chọn các backup server cần thay đổi policy
 
 * Truy cập trang backup server tại đây: [https://backupcenter.console.greennode.ai/backup-server/list](https://backupcenter.console.greennode.ai/backup-server/list)
-*   Tìm và **chọn các backup server** cần cập nhật policy, sau đó nhấn chọn **Change policy.**
+*   Tìm và **chọn các backup server** cần cập nhật policy, sau đó nhấn chọn **Change policy.**&#x20;
 
-    <figure><img src="../../../../.gitbook/assets/image (780).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (780).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. Chọn policy mới để áp dụng tại các backup server vừa chọn
 
 Sau khi chọn **Change policy**, một giao diện sẽ hiển thị cho phép bạn chọn một backup policy để áp dụng cho các backup server này. Tiếp theo, nhấn **"Apply"** để hoàn tất quá trình thay đổi
 
-<figure><img src="../../../../.gitbook/assets/image (781).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (781).png" alt=""><figcaption></figcaption></figure>
 
 ## 3. Tự động áp dụng policy mới tại backup server
 

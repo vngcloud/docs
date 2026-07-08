@@ -8,7 +8,7 @@
 * **Monitoring Status**: trạng thái monitoring của vLB. Nếu chưa enable "Detailed Monitoring" thì trạng thái sẽ là INACTIVE, nếu đã enable thì trạng thái là ACTIVE, còn nếu vLB đã bị xóa thì sẽ là DELETED.
 * **Detailed Monitoring**: kích hoạt hay hủy theo dõi Logs của vLB này.
 
-<figure><img src="../../../../../.gitbook/assets/image (332).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (332).png" alt=""><figcaption></figcaption></figure>
 
 Để kích hoạt theo dõi, bạn cần nhấn **enable** tại cột **Detailed Monitoring.**
 

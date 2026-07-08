@@ -1,6 +1,6 @@
 # Backup dữ liệu từ SMB File Storage sang Object Storage trên GreenNode
 
-Để đảm bảo an toàn và khả năng phục hồi dữ liệu, việc sao lưu (backup) định kỳ dữ liệu từ **File Storage** sang **Object Storage** là một giải pháp cần thiết trong hạ tầng hiện đại.
+Để đảm bảo an toàn và khả năng phục hồi dữ liệu, việc sao lưu (backup) định kỳ dữ liệu từ **File Storage** sang **Object Storage** là một giải pháp cần thiết trong hạ tầng hiện đại.&#x20;
 
 GreenNode cung cấp dịch vụ **Object Storage**, tương thích với chuẩn S3, giúp dễ dàng tích hợp và sao lưu dữ liệu từ máy chủ hoặc các hệ thống lưu trữ nội bộ.
 
@@ -18,8 +18,8 @@ Trong tài liệu này, chúng ta sẽ sử dụng **`rclone`**, vì tính linh 
 
 ### Máy chủ cần backup
 
-* Đã map File Storage vừa khởi tạo tới Windows server
-* Mặc định, nếu máy chủ của bạn truy cập được tới internet, việc backup sẽ đi theo đường public. Bạn có thể thiết lập việc backup đi qua đường private nhưng máy chủ của bạn lúc này cần kết nối được tới **endpoint của vstorage.**
+* Đã map File Storage vừa khởi tạo tới Windows server&#x20;
+* Mặc định, nếu máy chủ của bạn truy cập được tới internet, việc backup sẽ đi theo đường public. Bạn có thể thiết lập việc backup đi qua đường private nhưng máy chủ của bạn lúc này cần kết nối được tới **endpoint của vstorage.**&#x20;
 
 Dưới đây là hướng dẫn cách tạo endpoint để kết nối vStorage thông qua dịch vụ Endpoint trên hệ thống vServer, nhằm đảm bảo backup đi qua đường private:
 
@@ -27,26 +27,26 @@ Dưới đây là hướng dẫn cách tạo endpoint để kết nối vStorage
 
 **Bước 2:** Chọn mục **Endpoint**.
 
-<figure><img src="../../../../.gitbook/assets/image (1063).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1063).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 3:** Trên trang chủ của dịch vụ **vNetwork.**
+**Bước 3:** Trên trang chủ của dịch vụ **vNetwork.**&#x20;
 
 * Vào mục **Endpoint sau đó chọn Create an Endpoint.**
 
-<figure><img src="../../../../.gitbook/assets/image (1064).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1064).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 4:** Thiết lập thông số **Endpoint**
 
 * **Endpoint name:** nhập tên gợi nhớ của endpoint. Endpoint name là bắt buộc, dài tối thiểu 5 tới tối đa 50 ký tự và chỉ bao gồm các chữ cái, ký tự sau a-z, A-Z, 0-9, '\_', '-'
-* **Region:** chọn Region bạn muốn thực hiện tạo endpoint.
+* **Region:** chọn Region bạn muốn thực hiện tạo endpoint.&#x20;
   * Nếu bạn muốn backup vào vStorage trên region **HCM04, HCM03**: vui lòng chọn Region **HCM-03** tại đây.
   * Nếu bạn muốn backup vào vStorage trên region **HAN02**: vui lòng chọn Region **HAN-01** tại đâ&#x79;**.**
-* **Zone**: chọn Zone bạn muốn endpoint được khởi tạo.
-* **Service Selection**:
-  * Nếu bạn chọn Region HCM-03: tại đây bạn có thể chọn
+* **Zone**: chọn Zone bạn muốn endpoint được khởi tạo.&#x20;
+* **Service Selection**:&#x20;
+  * Nếu bạn chọn Region HCM-03: tại đây bạn có thể chọn&#x20;
     * `vstorage.hcm03`: nếu bạn muốn endpoint này sẽ tạo kết nối từ máy chủ của bạn tới vStorage trên region **HCM03**.
     * `vstorage.hcm04`: nếu bạn muốn endpoint này sẽ tạo kết nối từ máy chủ của bạn tới vStorage trên region **HCM04**.
-  * Nếu bạn chọn Region HAN-02: tại đây bạn có thể chọn
+  * Nếu bạn chọn Region HAN-02: tại đây bạn có thể chọn&#x20;
     * `vstorage.han02`: nếu bạn muốn endpoint này sẽ tạo kết nối từ máy chủ của bạn tới vStorage trên region **HAN02**.
 * **Tag:** bạn có thể thêm một hoặc nhiều tag để quản lý endpoint theo cấu trúc key-value.
 * **VPC**: Chọn VPC nơi các máy chủ (vServer) của bạn đang hoạt động.
@@ -54,9 +54,9 @@ Dưới đây là hướng dẫn cách tạo endpoint để kết nối vStorage
 
 Trong ví dụ dưới, tôi sẽ tạo kết nối từ máy chủ của tôi tới vStorage HCM04:
 
-<figure><img src="../../../../.gitbook/assets/image (1065).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1065).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1066).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1066).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5: Xác nhận và tạo Endpoint**
 
@@ -98,10 +98,10 @@ Approximate round trip times in milli-seconds:
 
 ### Thông tin cần có
 
-* Bạn đã tạo project, bucket và có đầy đủ thông tin `Access Key` và `Secret Key` có quyền READ/ WHITE vào bucket trên vStorage.
-* Máy chủ của bạn đã cài đặt sẵn công cụ `rclone`
+* Bạn đã tạo project, bucket và có đầy đủ thông tin `Access Key` và `Secret Key` có quyền READ/ WHITE vào bucket trên vStorage.&#x20;
+* Máy chủ của bạn đã cài đặt sẵn công cụ `rclone`&#x20;
 
-Nếu máy chủ của bạn chưa cài đặt công cụ rclone, vui lòng thực hiện theo hướng dẫn sau đây:
+Nếu máy chủ của bạn chưa cài đặt công cụ rclone, vui lòng thực hiện theo hướng dẫn sau đây:&#x20;
 
 **Bước 1: Mở PowerShell** (bấm Start > gõ `PowerShell` > Run as Administrator) và chạy lệnh:
 
@@ -117,9 +117,9 @@ Lúc này bạn sẽ có `rclone.exe` trong thư mục, chạy luôn được.
 
 * Tại thư mục rclone vừa được giải nén, thực hiện tạo file `rclone.conf`
 
-<figure><img src="../../../../.gitbook/assets/image (1070).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1070).png" alt=""><figcaption></figcaption></figure>
 
-* Nếu bạn muốn backup vào vStorage HCM04, nội dung file config sẽ có định dạng sau:
+* Nếu bạn muốn backup vào vStorage HCM04, nội dung file config sẽ có định dạng sau:&#x20;
 
 ```bash
 [vstorage]
@@ -131,7 +131,7 @@ secret_access_key = <<Secret key hệ thống tạo cho bạn tương ứng vớ
 endpoint = https://hcm04.vstorage.vngcloud.vn
 ```
 
-* Nếu bạn muốn backup vào vStorage HCM03 , nội dung file config sẽ có định dạng sau:
+* Nếu bạn muốn backup vào vStorage HCM03 , nội dung file config sẽ có định dạng sau:&#x20;
 
 ```bash
 [vstorage]
@@ -147,7 +147,7 @@ region = other-v2-signature
 location_constraint = HCM03
 ```
 
-* Nếu bạn muốn backup vào vStorage HAN02 , nội dung file config sẽ có định dạng sau:
+* Nếu bạn muốn backup vào vStorage HAN02 , nội dung file config sẽ có định dạng sau:&#x20;
 
 ```bash
 [vstorage]
@@ -161,17 +161,17 @@ endpoint = https://han02.vstorage.vngcloud.vn
 
 ## Thực hiện backup dữ liệu
 
-Giả sử, tôi đã sử dụng file storage và **map File Storage** vào máy chủ như hình bên dưới. Hiện tại trong thư mục này đang có 4 file như sau:
+Giả sử, tôi đã sử dụng file storage và **map File Storage** vào máy chủ như hình bên dưới. Hiện tại trong thư mục này đang có 4 file như sau:&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1071).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1071).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1072).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1072).png" alt=""><figcaption></figcaption></figure>
 
-Tiếp theo, tôi sẽ backup các file ở ổ `demo-backup-smb-public` này vào `smb-backup` bucket trên vStorage HCM04.
+Tiếp theo, tôi sẽ backup các file ở ổ  `demo-backup-smb-public` này vào `smb-backup` bucket trên vStorage HCM04.
 
 ### Thực hiện backup một lần
 
-* Để thực hiện backup, chúng tôi khuyến cáo bạn sử dụng câu lệnh rclone copy như sau:
+* Để thực hiện backup, chúng tôi khuyến cáo bạn sử dụng câu lệnh rclone copy như sau:&#x20;
 
 ```bash
 rclone copy --progress --metadata --checksum --transfers 8 --checkers 8 Z:\ vstorage:smb-backup
@@ -181,7 +181,7 @@ rclone copy --progress --metadata --checksum --transfers 8 --checkers 8 Z:\ vsto
 * `sync`: đồng bộ hoàn toàn (sẽ xóa file ở đích nếu không còn tồn tại ở nguồn)
 * `> /tmp/abc.log` : nếu muốn lưu log của việc copy hoặc sync vào file abc.log
 
-Ví dụ kết quả chạy thành công sẽ như sau:
+Ví dụ kết quả chạy thành công sẽ như sau:&#x20;
 
 ```bash
 rclone copy --progress --metadata --checksum --transfers 8 --checkers 8 Z:\ vstorage:smb-backup
@@ -190,9 +190,9 @@ Transferred:            4 / 4, 100%
 Elapsed time:       9m9.3s
 ```
 
-Lúc này, tại bucket `smb-backup` trên vStorage, bạn sẽ thấy các tệp tin này như sau:
+Lúc này, tại bucket `smb-backup` trên vStorage, bạn sẽ thấy các tệp tin này như sau:&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1076).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1076).png" alt=""><figcaption></figcaption></figure>
 
 ### Thiết lập lịch backup tự động
 
@@ -204,24 +204,24 @@ C:\Users\<Your Account>\rclone\rclone-v1.69.1-windows-amd64>\rclone.exe copy --p
 
 * Đầu tiên, trên máy chủ, bạn vào **Task Scheduler** sau đó chọn **Task Scheduler Library** và tiếp tục chọn **Create Task**.
 
-<figure><img src="../../../../.gitbook/assets/image (1073).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1073).png" alt=""><figcaption></figcaption></figure>
 
 * Tại mục **Trigger**, chọn **New** sau đó chọn bạn muốn task chạy tự động
 
-<figure><img src="../../../../.gitbook/assets/image (1074).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1074).png" alt=""><figcaption></figcaption></figure>
 
 Ví dụ dưới tôi đã cấu hình lịch chạy hằng ngày lúc 16h:05
 
-<figure><img src="../../../../.gitbook/assets/image (1075).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1075).png" alt=""><figcaption></figcaption></figure>
 
-*   Tại mục **Action**, chọn **New** sau đó
+*   Tại mục **Action**, chọn **New** sau đó&#x20;
 
-    * Tại mục **Program**/ **script**: chọn thư mục `backup-smb.ps1` mà bạn đã tạo
+    * Tại mục **Program**/ **script**: chọn thư mục `backup-smb.ps1` mà bạn đã tạo&#x20;
 
-    <figure><img src="../../../../.gitbook/assets/image (1077).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1077).png" alt=""><figcaption></figcaption></figure>
 * Tới thời điểm chạy, bạn sẽ thấy **task run** như hình
 
-<figure><img src="../../../../.gitbook/assets/image (1078).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1078).png" alt=""><figcaption></figcaption></figure>
 
 * Sau khi task chạy xong, bạn có thể kiểm tra lại dữ liệu trên vStorage Portal.
 

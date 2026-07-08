@@ -10,7 +10,7 @@ Container Registry trong AgentBase được xây dựng trên [VNG Cloud Contain
 
 Xem danh sách image của tổ chức tại: [https://aiplatform.console.greennode.ai/container-registry/repository](https://aiplatform.console.greennode.ai/container-registry/repository)
 
-![Container Registry — danh sách image](<../../../../.gitbook/assets/Container-registry (1).png>)
+![Container Registry — danh sách image](../../../.gitbook/assets/Agentbase-image/Container-registry.png)
 
 **Lợi ích:**
 

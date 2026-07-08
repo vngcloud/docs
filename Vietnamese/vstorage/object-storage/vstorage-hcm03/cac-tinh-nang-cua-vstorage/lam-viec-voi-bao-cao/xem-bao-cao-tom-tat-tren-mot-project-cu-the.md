@@ -16,7 +16,7 @@
 * Nhập khoảng thời gian tương đối mà bạn mong muốn xem dữ liệu (thường theo mốc giờ, phút, giây) tại mục **Tương đối**.
 * Chọn thời gian bắt đầu và thời gian kết thúc chính xác mà bạn muốn xem dữ liệu (thường theo mốc ngày, giờ, phút) tại mục **Chính xác.**
 
-5\. Trên trang báo cáo các thông số chi tiết của **project** thuộc một **region,** bạn có thể xem các thuộc tính cho project bao gồm:
+5\. Trên trang báo cáo các thông số chi tiết của **project** thuộc một **region,** bạn có thể xem các thuộc tính cho project bao gồm:&#x20;
 
 * **Thông tin chung**: cung cấp các thông tin chung bao gồm:
   * Dung lượng sử dụng lớn nhất: dung lượng sử dụng lớn nhất trong khoảng thời gian mà bạn chọn.
@@ -28,16 +28,16 @@
   * Số lượng request kiểu GET/ HEAD chia theo từng gói lưu trữ Gold, Archive trong khoảng thời gian mà bạn chọn.
   * Số lượng request kiểu PUT/ POST/ DELETE chia theo từng gói lưu trữ Gold, Archive trong khoảng thời gian mà bạn chọn.
 * **Thông tin chi tiết**: cung cấp các thông tin bao gồm:
-  * Báo cáo lưu lượng truy cập: chia theo lưu lượng nội bộ, lưu lượng quốc tế, lưu lượng nội địa trong khoảng thời gian mà bạn chọn. Bên cạnh đó chúng tôi hỗ trợ bạn theo dõi lưu lượng truy cập theo từng ngày thông qua biểu đồ đường, cột và bảng dữ liệu.
-  * Báo cáo số lượng request: chia theo số lượng request ở các loại HET, HEAD, PUT, POST, DELETE trong khoảng thời gian mà bạn chọn. Bên cạnh đó chúng tôi hỗ trợ bạn theo dõi số lượng request theo từng ngày thông qua biểu đồ đường, cột và bảng dữ liệu.
-  * Báo cáo dung lượng sử dụng: chia theo từng gói lưu trữ ở các loại Gold, Archive trong khoảng thời gian mà bạn chọn. Bên cạnh đó chúng tôi hỗ trợ bạn theo dõi dung lượng lưu trữ theo từng ngày thông qua biểu đồ đường, cột và bảng dữ liệu.
-  * Báo cáo quota: giá trị quota hiện tại của project. Bên cạnh đó chúng tôi hỗ trợ bạn theo dõi quota theo từng ngày thông qua biểu đồ đường, cột và bảng dữ liệu.
+  * Báo cáo lưu lượng truy cập: chia theo lưu lượng nội bộ, lưu lượng quốc tế, lưu lượng nội địa trong khoảng thời gian mà bạn chọn. Bên cạnh đó chúng tôi hỗ trợ bạn theo dõi lưu lượng truy cập theo từng ngày thông qua biểu đồ đường, cột và bảng dữ liệu.&#x20;
+  * Báo cáo số lượng request: chia theo số lượng request ở các loại HET, HEAD, PUT, POST, DELETE trong khoảng thời gian mà bạn chọn. Bên cạnh đó chúng tôi hỗ trợ bạn theo dõi số lượng request theo từng ngày thông qua biểu đồ đường, cột và bảng dữ liệu.&#x20;
+  * Báo cáo dung lượng sử dụng: chia theo từng gói lưu trữ ở các loại Gold, Archive trong khoảng thời gian mà bạn chọn. Bên cạnh đó chúng tôi hỗ trợ bạn theo dõi dung lượng lưu trữ theo từng ngày thông qua biểu đồ đường, cột và bảng dữ liệu.&#x20;
+  * Báo cáo quota: giá trị quota hiện tại của project. Bên cạnh đó chúng tôi hỗ trợ bạn theo dõi quota theo từng ngày thông qua biểu đồ đường, cột và bảng dữ liệu.&#x20;
 
-**Chú ý:**
+**Chú ý:**&#x20;
 
 * Các thông số của mỗi project được tổng hợp vào các báo cáo được chúng tôi thực hiện tổng hợp 2 lần mỗi ngày vào 2 khung giờ cố định: 7:00 AM và 12:00 PM. Ví dụ: khi bạn tạo một project, tạo container, tải tệp tệp tin hay thực hiện các hành động PUT/ DELETE object vào khung thời gian 04:00 PM ngày 01/01/2023 thì sau 12:00 PM cùng ngày, các dữ liệu này sẽ được cập nhật. Tức là từ ngày 02/01/2023 các thông số này sẽ được cập nhật đầy đủ trên các báo cáo.
-* Để cung cấp góc nhìn dài hạn cho báo cáo của bạn, chúng tôi hỗ trợ bạn có thể xem các báo cáo này với chu kỳ 3 tháng. Ví dụ bạn có thể chọn xem dữ liệu báo cáo từ ngày 01/01/2023 tới 31/03/2023.
+* Để cung cấp góc nhìn dài hạn cho báo cáo của bạn, chúng tôi hỗ trợ bạn có thể xem các báo cáo này với chu kỳ 3 tháng. Ví dụ bạn có thể chọn xem dữ liệu báo cáo từ ngày 01/01/2023 tới 31/03/2023.&#x20;
 
-<figure><img src="../../../../../../.gitbook/assets/Xem_bao_cao_theo project.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Xem_bao_cao_theo project.gif" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}

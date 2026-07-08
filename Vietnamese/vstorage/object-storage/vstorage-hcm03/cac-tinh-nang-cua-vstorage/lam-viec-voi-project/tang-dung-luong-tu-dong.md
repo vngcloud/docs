@@ -10,19 +10,19 @@ Tính năng Tự động tăng dung lượng lưu trữ (Auto-scale Quota) trên
 
 **Bước 1:** Đăng nhập vào vStorage Portal tại [đây](https://vstorage.console.greennode.ai/overview).
 
-**Bước 2**: Tại project cần thiết lập Auto-scale Quota, chọn biểu tượng <img src="../../../../../../.gitbook/assets/image (398).png" alt="" data-size="line"> sau đó chọn mục **Auto-scale** và tiếp tục chọn **Configure Auto-scale** hoặc chọn biểu tượng <img src="../../../../../../.gitbook/assets/image (400).png" alt="" data-size="line"> sau đó chọn **Set Auto-scale**.
+**Bước 2**: Tại project cần thiết lập Auto-scale Quota, chọn biểu tượng <img src="../../../../../.gitbook/assets/image (398).png" alt="" data-size="line"> sau đó chọn mục **Auto-scale** và tiếp tục chọn **Configure Auto-scale** hoặc chọn biểu tượng <img src="../../../../../.gitbook/assets/image (400).png" alt="" data-size="line"> sau đó chọn **Set Auto-scale**.
 
-**Bước 3**: Tại màn hình cấu hình **Auto-scale**, thực hiện thiết lập các thông số cần thiết cho **Auto Scale**. Cụ thể:
+**Bước 3**: Tại màn hình cấu hình **Auto-scale**, thực hiện thiết lập các thông số cần thiết cho **Auto Scale**. Cụ thể:&#x20;
 
 * **Thiết lập Quota Unit:** bạn có thể chọn 1 trong hai loại đơn vị bao gồm **GB** hoặc **Percent**.
-* **Thiết lập Quota Threshold hoặc Quota Remain:** Nếu bạn chọn **Quota Unit** là **Percent**, tại đây bạn sẽ nhập phần trăm ngưỡng sử dụng mà khi đạt tới thì hệ thống sẽ kích hoạt việc tăng quota. Nếu bạn chọn **Quota Unit** là **GB**, tại đây bạn sẽ nhập lượng quota còn lại mà khi đạt tới hệ thống cũng sẽ kích hoạt việc tăng quota.
+* **Thiết lập Quota Threshold hoặc Quota Remain:** Nếu bạn chọn **Quota Unit** là **Percent**, tại đây bạn sẽ nhập phần trăm ngưỡng sử dụng mà khi đạt tới thì hệ thống sẽ kích hoạt việc tăng quota. Nếu bạn chọn **Quota Unit** là **GB**, tại đây bạn sẽ nhập lượng quota còn lại mà khi đạt tới hệ thống cũng sẽ kích hoạt việc tăng quota.&#x20;
 * **Thiết lập Mức Tăng Quota**: nhập mức tăng mong muốn theo **GB** hoặc **Percent**.
 
 **Bước 4**: Chọn nhận thông báo qua **email** khi tăng quota thành công nếu muốn.
 
-**Bước 5:** Bật tính năng **Auto-scale** tại biểu tượng <img src="../../../../../../.gitbook/assets/image (402).png" alt="" data-size="line">. Khi biểu tượng này trở thành <img src="../../../../../../.gitbook/assets/image (403).png" alt="" data-size="line">tức là bạn đã bật **Auto-scale** thành công.
+**Bước 5:** Bật tính năng **Auto-scale** tại biểu tượng <img src="../../../../../.gitbook/assets/image (402).png" alt="" data-size="line">. Khi biểu tượng này trở thành <img src="../../../../../.gitbook/assets/image (403).png" alt="" data-size="line">tức là bạn đã bật **Auto-scale** thành công.&#x20;
 
-**Ví Dụ:**
+**Ví Dụ:**&#x20;
 
 1. Giả sử, bạn cần thiết lập tự động tăng dung lượng quota lên **50%** nếu usage/ quota của bạn chạm ngưỡng **80%**. Cụ thể:
    * **Quota ban đầu**: 100 GB
@@ -30,7 +30,7 @@ Tính năng Tự động tăng dung lượng lưu trữ (Auto-scale Quota) trên
    * **Bạn cấu hình Quota Threshold**: 80%
    * **Bạn cấu hình Quota Up**: 50%
    * **Hệ thống tự động tăng Quota mới**: 100 GB + (100 GB \* 50%) = 150 GB
-2. Một ví dụ khác, bạn cần thiết lập tự động tăng dung lượng quota lên **50 GB** nếu lượng quota còn lại của bạn **<= 30 GB**. Cụ thể:
+2. Một ví dụ khác, bạn cần thiết lập tự động tăng dung lượng quota lên **50 GB** nếu lượng quota còn lại của bạn **<= 30 GB**. Cụ thể:&#x20;
    * **Quota ban đầu**: 100 GB
    * **Lượng Usage Sử dụng**: 83 GB
    * **Bạn cấu hình Quota Remain:** 30 GB

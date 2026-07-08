@@ -15,7 +15,7 @@ Nếu đã có backup location sẵn sàng cho việc lưu trữ backup point, l
 * Truy cập trang backup server tại đây: [https://backupcenter.console.greennode.ai/backup-server/list](https://backupcenter.console.greennode.ai/backup-server/list)
 *   Tìm và **chọn các backup server** cần cập nhật vị trí lưu trữ, sau đó nhấn chọn **Change location**
 
-    <figure><img src="../../../../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. Chọn vị trí lưu trữ mới (backup location)
 
@@ -23,7 +23,7 @@ Sau khi chọn **Change Location**, một giao diện sẽ hiển thị cho phé
 
 *   Chọn nơi lưu trữ mới cho backup server như hình bên dưới
 
-    <figure><img src="../../../../.gitbook/assets/image (775).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (775).png" alt=""><figcaption></figcaption></figure>
 * Nhấn **"Change"** để xác nhận hoàn tất thay đổi.
 
 ## 3. Lưu backup server point tại nơi lưu trữ mới

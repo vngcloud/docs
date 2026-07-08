@@ -4,7 +4,7 @@
 
 Dịch vụ GreenNode Interconnect là lựa chọn tối ưu để kết nối tới tài nguyên GreenNode của bạn một cách trực tiếp và hiệu quả nhất. Khi sử dụng Interconnect, dữ liệu của bạn di chuyển thông qua hệ thống mạng nội bộ của GreenNode mà không cần phải sử dụng Internet công cộng. Điều này giúp giảm nguy cơ tắc nghẽn mạng hoặc độ trễ bất ngờ. Khi bạn cần tạo kết nối mới, bạn có thể triển khai một kết nối chuyên dụng từ GreenNode. Bên cạnh đó, chúng tôi cho phép bạn truyền dữ liệu giữa các vị trí GreenNode Direct Connect để xây dựng một mạng riêng biệt, kết nối linh hoạt giữa các văn phòng và trung tâm dữ liệu trong mạng lưới của bạn.
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -42,3 +42,4 @@ Các ứng dụng yêu cầu băng thông lớn, chẳng hạn như ứng dụng
 Kết nối mạng GreenNode của bạn với các mạng cơ sở để phát triển ứng dụng mở rộng mà không gây tác động đến hiệu suất.
 {% endtab %}
 {% endtabs %}
+

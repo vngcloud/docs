@@ -7,7 +7,7 @@ Sau khi bạn đã thực hiện khởi tạo project và khởi tạo S3 key th
 1. Tải công cụ người dùng S3 Browser tại đây [https://s3browser.com/download.aspx](https://s3browser.com/download.aspx).
 2. Mở ứng dụng **S3 Browser.** Chọn thư mục **Account, sau đó chọn Add new account**
 
-<figure><img src="../../../../../../.gitbook/assets/image (79).png" alt="" width="443"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (79).png" alt="" width="443"><figcaption></figcaption></figure>
 
 3. Màn hình Add New Account hiển thị, lúc này bạn nhập các thông tin như sau:
 
@@ -19,8 +19,8 @@ Sau khi bạn đã thực hiện khởi tạo project và khởi tạo S3 key th
 4. Chọn option **Use Secure transfer (SSL/TLS)** vì vStorage chỉ hỗ trợ kênh truyền đã được mã hoá (HTTPS, port 443) để đảm bảo an toàn dữ liệu, vStorage hiện tại không hỗ trợ kênh truyền không mã hoá (HTTP, port 80).
 5. Chọn **Add new account.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (587).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (587).png" alt=""><figcaption></figcaption></figure>
 
 6. Khi kết nối thành công, màn hình S3 Browser sẽ hiển thị như sau:
 
-<figure><img src="../../../../../../.gitbook/assets/image (588).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (588).png" alt=""><figcaption></figcaption></figure>

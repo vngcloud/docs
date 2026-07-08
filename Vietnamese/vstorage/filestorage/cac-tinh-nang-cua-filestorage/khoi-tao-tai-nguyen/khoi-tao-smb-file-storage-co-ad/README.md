@@ -29,7 +29,7 @@ Trước khi có thể thực hiện khởi tạo Windows server, hãy đảm b�
 13. Ở mục **Other Settings**, có thể tùy chọn server Group hoặc không theo nhu cầu sử dụng. Bạn có thể gán Server vào các Group trước đó đã tạo (Với các thuộc tính như cùng Compute Host hay khác Compute Host)
 14. Chọn **Launch Server** và thực hiện các bước thanh toán để hoàn thành việc khởi tạo server
 
-<img src="../../../../../../.gitbook/assets/image (21) (2) (1).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (21) (2).png" alt="" data-size="original">
 
 </details>
 
@@ -59,12 +59,12 @@ Dưới đây là hướng dẫn cơ bản cho việc kết nối tới Windows 
 2. Chọn **Server** cần kết nối, sau đó chọn **Action, tiếp tục chọn Connect**
 3. Trên trang **Connect to Server**, chọn tab **RDP (Window)**
 
-<img src="../../../../../../.gitbook/assets/image (894).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (894).png" alt="" data-size="original">
 
 4. Chọn **Download RDP File**. Trình duyệt của bạn sẽ nhắc bạn mở hoặc lưu tệp RDP. Khi bạn đã hoàn tất tải xuống tệp, hãy chọn **Done** để quay lại trang máy chủ:
 5. Thực hiện mở tệp tin đã tải xuống để thực hiện remote tới Windows server. Chọn **Connect** để tiếp tục kết nối với máy chủ của bạn
 
-<img src="../../../../../../.gitbook/assets/image (895).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (895).png" alt="" data-size="original">
 
 6. Tài khoản quản trị viên được chọn theo mặc định. Bạn cần sao chép và dán mật khẩu mà bạn đã lưu trước đó vào pop-up đăng nhập (Thông tin này lấy từ email), trong đó nhập thông tin **InstanceLogin** vào **Username**, **InstancePassword** vào **Password.**
 7. Chọn **OK.** Do tính chất của chứng chỉ tự ký, bạn có thể nhận được cảnh báo rằng chứng chỉ bảo mật không thể được xác thực. Sử dụng các bước sau để xác minh danh tính của máy tính từ xa hoặc chỉ cần chọn **Yes** (Windows) hoặc **Continue** (Mac OS X) nếu bạn tin cậy chứng chỉ.
@@ -73,7 +73,7 @@ Dưới đây là hướng dẫn cơ bản cho việc kết nối tới Windows 
 
 8. Màn hình sẽ hiển thị đang kết nối đến máy chủ **Window** thành công
 
-<img src="../../../../../../.gitbook/assets/image (896).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (896).png" alt="" data-size="original">
 
 </details>
 
@@ -91,7 +91,7 @@ Dưới đây là hướng dẫn cơ bản cho việc kết nối tới Windows 
     * **Default gateway:** địa chỉ default gateway phải nằm cùng trong Network với IP tĩnh của VM, và dựa trên Subnet Mask. Ví dụ: IP tĩnh là `10.50.3.9`, Subnet Mask là `255.255.255.0` thì Default gateway có thể là `10.50.3.1`
     * **Preferred DNS server:** địa chỉ IP của DNS Domain (thường cũng chính là địa chỉ IP tĩnh của VM) (bạn có thể bổ sung sau khi đã khởi tạo DNS domain theo hướng dẫn bên dưới)
 
-<figure><img src="../../../../../../.gitbook/assets/image (923).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (923).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -120,35 +120,35 @@ Cụ thể, vui lòng thực hiện theo các bước bên dưới:
 1. Từ màn hình **Desktop**, bạn mở **Start** menu và chọn **Server Manager.**
 2. Chọn mục **All Servers,** chọn chuột phải sau đó chọn **Add roles and Features**
 
-<figure><img src="../../../../../../.gitbook/assets/image (897).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (897).png" alt="" width="563"><figcaption></figcaption></figure>
 
 3. Tại trang **Before you begin,** nhấn **Next**
 
-<figure><img src="../../../../../../.gitbook/assets/image (898).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (898).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. Tại trang **Installation Type**: Chọn **Role-based or feature-based installation** sau đó chọn **Next**
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (3).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (3).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5. Tại mục **Server Selection**: bạn chọn **Select a server from the server pool** và **chọn server hiện tại** sau đó chọn **Next**
 
-<figure><img src="../../../../../../.gitbook/assets/image (18) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (18).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. Tại mục **Server Roles**: Tick chọn **DNS Server** sau đó nhấn **Next** và **Install** để cài đặt.
 
-<figure><img src="../../../../../../.gitbook/assets/image (899).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (899).png" alt="" width="563"><figcaption></figcaption></figure>
 
 7. Lúc này, bạn sẽ được nhắc thêm các tính năng cần thiết cho DNS Server, chọn **Add Features** nếu bạn đồng ý với các mặc định.
 
-<figure><img src="../../../../../../.gitbook/assets/image (900).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (900).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8. Tại trang **Confirmation**, kiểm tra lại các lựa chọn của bạn và nhấn Install để bắt đầu cài đặt DNS Server
 
-<figure><img src="../../../../../../.gitbook/assets/image (5) (1) (2) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 9. Sau khi việc cài đặt hoàn tất, bạn hãy nhấn **Close**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (6) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Tạo một Forward Lookup Zone
 
@@ -156,27 +156,27 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 
 1. Thực hiện mở **DNS Manager** bằng cách chọn **Tools**, sau đó chọn **DNS**
 
-<figure><img src="../../../../../../.gitbook/assets/image (321).png" alt="" width="336"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (321).png" alt="" width="336"><figcaption></figcaption></figure>
 
 2. Trong DNS Manager, chọn vào DNS đang có và tiếp tục nhấp chuột phải vào **Forward Lookup Zones** và chọn **New Zone**
 
-<figure><img src="../../../../../../.gitbook/assets/image (8) (1) (3) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8) (1) (3).png" alt="" width="563"><figcaption></figcaption></figure>
 
 3. Màn hình Tạo zone mới hiển thị, tiếp tục chọn **Next**
 
-<figure><img src="../../../../../../.gitbook/assets/image (9) (6).png" alt="" width="514"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (9) (6).png" alt="" width="514"><figcaption></figcaption></figure>
 
 4. Tại màn hình **Zone Type**: chọn **Primary zone,** sau đó chọn **Next**
 
-<figure><img src="../../../../../../.gitbook/assets/image (11) (4).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (11) (4).png" alt="" width="509"><figcaption></figcaption></figure>
 
 5. Tại màn hình **Zone Name**: nhập tên domain của bạn và chọn **Next**. Ví dụ: `example.local`
 
-<figure><img src="../../../../../../.gitbook/assets/image (13) (4).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (13) (4).png" alt="" width="509"><figcaption></figcaption></figure>
 
 6. Tại màn hình **Zone File**, chọn **Next**
 
-<figure><img src="../../../../../../.gitbook/assets/image (24) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Tại màn hình **Dynamic Update**: Chọn:
 
@@ -184,19 +184,19 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 * **Do not allow dynamic updates:** nếu bạn chưa có sẵn **Active Directory** nào integrate với **zone** của bạn. Nếu bạn chọn phương án này, bạn cần thực hiện <mark style="background-color:orange;">tạo Reverse Lookup Zone thủ công</mark> theo hướng dẫn bên dưới.
 * Sau đó, bạn chọn **Next.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="509"><figcaption></figcaption></figure>
 
 8. Chọn **Finish** để hoàn thành việc tạo New Zone
 
-<figure><img src="../../../../../../.gitbook/assets/image (15) (3).png" alt="" width="508"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (15) (3).png" alt="" width="508"><figcaption></figcaption></figure>
 
 9. Sau khi chọn **Finish**, bạn sẽ thấy forwarding lookup zone trên màn hình chính như hình
 
-<figure><img src="../../../../../../.gitbook/assets/image (16) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (16) (2).png" alt=""><figcaption></figcaption></figure>
 
 10. Sau khi tạo zone, bạn cần thêm bản ghi cho **Domain Controller** bằng cách chọn vào **Zone** vừa tạo, nhần chuột phải và chọn **New Host (A or AAAA)**
 
-<figure><img src="../../../../../../.gitbook/assets/image (17) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (17) (2).png" alt=""><figcaption></figcaption></figure>
 
 11. Tại màn hình **New Host,** bạn cần:
 
@@ -206,7 +206,7 @@ Tiếp theo, bạn sẽ cần tạo một Forward Lookup Zone để chuyển dom
 
 11. Nếu bạn chọn **Create associated pointer (PTR) record**, bạn cần phải tạo một **Reverse Loopup Zone**, các bước khởi tạo tương tự tạo **Forward Lookup Zone**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="347"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="347"><figcaption></figcaption></figure>
 
 ### Tạo một Reverse Lookup Zone
 
@@ -220,50 +220,50 @@ Tiếp theo, bạn sẽ cần tạo một Reverse Lookup Zone để chuyển IP 
 
 1. Thực hiện mở **DNS Manager** bằng cách chọn **Tools**, sau đó chọn **DNS**
 
-<img src="../../../../../../.gitbook/assets/image (321).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (321).png" alt="" data-size="original">
 
 2. Trong DNS Manager, chọn vào DNS đang có và tiếp tục nhấp chuột phải vào **Reverse Lookup Zones** và chọn **New Zone**
 
-<img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 
 3. Tại màn hình **Zone Type**: chọn **Primary zone,** sau đó chọn **Next**
 
-<img src="../../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 
 4. Màn hình Tạo zone mới hiển thị, chọn **IPv4 Reverse Lookup Zone** tiếp tục chọn **Next**
 
-<img src="../../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 
 5. Tại màn hình **Reverse Lookup Zone Name**: nhập Network ID, Network ID tại đây chính là subnet của IP mà bạn cần thực hiện reverse lookup và chọn **Next**. Ví dụ: `10.50.3`.
 
-<img src="../../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 
 6. Tại màn hình **Zone File**, bạn có thể tạo Zone File mới hoặc chọn 1 Zone File đã có sẵn, sau đó chọn **Next**
 
-<img src="../../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 
 7. Tại màn hình **Dynamic Update**: Chọn **Do not allow dynamic updates**, sau đó chọn **Next**
 
-<img src="../../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 
 8. Chọn **Finish** để hoàn thành việc tạo New Zone
 
-<img src="../../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 
 9. Sau khi chọn **Finish**, bạn sẽ thấy Reverse lookup zone trên màn hình chính như hình
 
-<img src="../../../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 
 10. Sau khi tạo xong **reverse lookup zone**, bạn cần tạo **Pointer (PTR)** bằng cách chọn vào **Zone** vừa tạo, nhần chuột phải và chọn **New Pointer (PTR)**
 
-<img src="../../../../../../.gitbook/assets/image (16) (1) (1) (2).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (16) (1) (1).png" alt="" data-size="original">
 
 11. Tại màn hình **New Resource Record,** bạn cần:
     1. **Host IP Address**: Nhập địa chỉ IP tĩnh của Domain Controller (VD: `10.50.3.9`).
     2. **Host Name:** Nhập tên Windows server của bạn (VD: `demo-smb`).
     3. Nhấn **OK**.
 
-<img src="../../../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 
 </details>
 
@@ -307,72 +307,72 @@ Address: 10.50.3.9
 1. Từ màn hình **Desktop**, bạn mở **Start** menu và chọn **Server Manager**
 2. Chọn mục **All Servers,** chọn chuột phải sau đó chọn **Add roles and Features**
 
-<figure><img src="../../../../../../.gitbook/assets/image (877).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (877).png" alt=""><figcaption></figcaption></figure>
 
 3. Tại mục **Before You Begin**, chọn **Next**
 
-<figure><img src="../../../../../../.gitbook/assets/image (878).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (878).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. Tại mục **Installation Type**: Chọn **Role-based or feature-based installation** sau đó chọn **Next**
 
-<figure><img src="../../../../../../.gitbook/assets/image (879).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (879).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5. Tại mục **Server Selection**: bạn chọn **Select a server from the server pool** và **chọn server hiện tại** sau đó chọn **Next**
 
-<figure><img src="../../../../../../.gitbook/assets/image (18) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (18).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. Tại mục **Server Roles**: Tick chọn **Active Directory Domain Services.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (18) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (18) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 7. Lúc này, bạn sẽ được nhắc thêm các tính năng cần thiết cho Active Directory, chọn **Add Features** nếu bạn đồng ý với các mặc định, sau đó chọn **Next**
 
-<figure><img src="../../../../../../.gitbook/assets/image (880).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (880).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8. Tại trang **Feature**, giữ các thông số mặc định và chọn **Next**
 
-<figure><img src="../../../../../../.gitbook/assets/image (882).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (882).png" alt="" width="563"><figcaption></figcaption></figure>
 
 9. Tại trang AD DS, chọn **Next**
 
-<figure><img src="../../../../../../.gitbook/assets/image (883).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (883).png" alt="" width="563"><figcaption></figcaption></figure>
 
 10. Tại trang **Confirmation**, kiểm tra lại các lựa chọn của bạn và nhấn **Install** để bắt đầu cài đặt AD DS
 
-<figure><img src="../../../../../../.gitbook/assets/image (884).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (884).png" alt="" width="563"><figcaption></figcaption></figure>
 
 11. Sau khi chọn **Install**. Hệ thống sẽ bắt đầu cài đặt, bạn không cần khởi động lại server ngay sau khi cài đặt.
 12. Khi việc cài đặt hoàn thành, bạn chọn tiếp **Promote this server to a domain controller**
 
-<figure><img src="../../../../../../.gitbook/assets/image (885).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (885).png" alt="" width="563"><figcaption></figcaption></figure>
 
 13. Tại màn hình **Deployment Configuration**, chọn **Add a new forest** sau đó nhập **DNS domain name** đã tạo (<mark style="color:red;">**chính là Zone name đã tạo tại bước Tạo một Forward Lookup Zone**</mark>) sau đó chọn **Next**
 
-<figure><img src="../../../../../../.gitbook/assets/image (330).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (330).png" alt="" width="563"><figcaption></figcaption></figure>
 
 14. Tại màn hình **Domain Controller Options**, bạn hãy nhập **Password** và **Confirm Password** cho DSRM của bạn
 
-<figure><img src="../../../../../../.gitbook/assets/image (888).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (888).png" alt="" width="563"><figcaption></figcaption></figure>
 
 15. Tại mục DNS Option, bạn bỏ qua và chỉ nhần **Next**
 
-<figure><img src="../../../../../../.gitbook/assets/image (889).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (889).png" alt="" width="563"><figcaption></figcaption></figure>
 
 16. Tại mục **Additional Options**, bạn hãy kiểm tra lại **NetBIOS name** và thay đổi nếu bạn thấy cần thiết sau đó chọn **Next. NetBIOS domain name** là domain rút gọn của Root domain name,
 
-<figure><img src="../../../../../../.gitbook/assets/image (890).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (890).png" alt="" width="563"><figcaption></figcaption></figure>
 
 17. Tại màn hình **Paths**, bạn có thể thay đổi các đường dẫn tới **Database folder, Log file folder, Sysvol** hoặc giữ như mặc định của hệ thống, sau đó chọn Next
 
-<figure><img src="../../../../../../.gitbook/assets/image (891).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (891).png" alt="" width="563"><figcaption></figcaption></figure>
 
 18. Tại màn hình **Review Options**, bạn hãy review lại các thông số và chọn **Next** nếu thông tin đã đúng
 
-<figure><img src="../../../../../../.gitbook/assets/image (892).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (892).png" alt="" width="563"><figcaption></figcaption></figure>
 
 19. Tại màn hình **Prerequisites Check**, bạn sẽ thấy kết quả kiểm tra, tiếp tục chọn **Install** để hệ thống cài đặt AD
 
-<figure><img src="../../../../../../.gitbook/assets/image (893).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (893).png" alt="" width="563"><figcaption></figcaption></figure>
 
 20. Sau khi quá trình cài đặt hoàn thành, hệ thống sẽ tự động khởi động lại server của bạn, bạn cần login lại vào server với tài khoản **Administrator**
 
@@ -414,12 +414,12 @@ Get-DnsClientGlobalSetting
 * **Protocol:** chọn NFS và version NFS mà bạn mong muốn
 * **Tag:** bạn có thể thêm các tag để đánh dầu file storage theo nhu cầu.
 
-<figure><img src="../../../../../../.gitbook/assets/image (5) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **File Storage Max quota:** trong bước khởi tạo file storage, bạn cần đặt một giới hạn quota tối đa cho file storage đó. Quota này có ý nghĩa chính là giới hạn dung lượng lưu trữ mà file storage có thể sử dụng, giúp quản lý tài nguyên hiệu quả. <mark style="color:red;">**Mức quota tối thiểu bạn cần chọn là 1 TB và mức quota tối đa chúng tôi cung cấp là 50 TB.**</mark> Nếu bạn có nhu cấu sử dụng nhiều hơn 50 TB cho một file storage, vui lòng liên hệ với chúng tôi.
 * **Network type**: đối với loại file SMB, network type bắt buộc phải là Private. Lúc này, bạn cần chọn **VPC**, **Subnet** mà bạn đã khởi tạo từ vServer Portal.
 
-<figure><img src="../../../../../../.gitbook/assets/image (904).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (904).png" alt=""><figcaption></figcaption></figure>
 
 * **Window Authentication: c**ấu hình quyền truy cập thông qua **Active Directory Authentication**
   * **Active Directory Authentication:** Nếu Windows server của bạn sử dụng Active Directory để quản lý người dùng và quyền truy cập, thì AD Authentication sẽ dễ dàng tích hợp và quản lý tập trung. Bạn có thể xác thực thông qua Active Directory domain name, DNS server IP addresses, Username, Password trên Active Directory của bạn. Ví dụ, ứng với Avtive Directory đã tạo bên trên, tôi sẽ nhập vào:
@@ -429,13 +429,13 @@ Get-DnsClientGlobalSetting
     * **Password**: Mật khẩu bạn đã tạo ở bước **Cài đặt và cấu hình Active Directory Domain Services**, ví dụ: `123456789aA@`
     * **Confirm Password:** Xác nhận mật khẩu, ví dụ: `123456789aA@`
 
-<figure><img src="../../../../../../.gitbook/assets/image (7) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (7) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Chọn **Create File Storage.**
 
 **Bước 6:** Sau khi hệ thống khởi tạo xong File Storage SMB, bạn có thể lấy thông tin **File Storage IP Address** tại phần thông tin chi tiết của File Storage và tiếp tục thực hiện các bước bên dưới
 
-<figure><img src="../../../../../../.gitbook/assets/image (21) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -452,9 +452,9 @@ Trên Windows Server, bạn có thể map file storage SMB thông qua giao diệ
    2. **Folder**: Nhập đường dẫn SMB share, ví dụ: `\\<File Storage IP Address>\<File Storage Name>`. Ví dụ `\\10.50.3.8\demo-smb`.
    3. Chọn **Finish**, sau khi hoàn tất, bạn có thể kiểm tra trong **File Explorer** để thấy ổ đĩa được map.
 
-<figure><img src="../../../../../../.gitbook/assets/image (22) (1) (3).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (22) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (23) (1) (3).png" alt="" width="501"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (23) (1).png" alt="" width="501"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**

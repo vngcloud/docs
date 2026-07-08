@@ -7,7 +7,7 @@ Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho một hoặc
 * Đối với quyền Đọc: bạn có thể tải xuống các object từ container được cấp quyền.
 * Đối với quyền Ghi: bạn có thể tải lên, tải xuống object từ container được cấp quyền.
 
-Để thiết lập phân quyền truy cập ACLs, bạn có thể thực hiện theo hướng dẫn bên dưới:
+Để thiết lập phân quyền truy cập ACLs, bạn có thể thực hiện theo hướng dẫn bên dưới:&#x20;
 
 <details>
 
@@ -17,7 +17,7 @@ Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho một hoặc
 
 2\. Chọn **project** và chọn **container** bạn muốn phân quyền truy cập ACLs.
 
-3\. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648513/image2023-3-6_10-26-12.png?version=1\&modificationDate=1678073173000\&api=v2) hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648513/image2023-2-6_10-20-54.png?version=1\&modificationDate=1675654311000\&api=v2)tại **container** bạn muốn thực hiện sử dụng tính năng phân quyền truy cập ACls và chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648513/image2023-3-6_10-26-49.png?version=1\&modificationDate=1678073210000\&api=v2)
+3\. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648513/image2023-3-6\_10-26-12.png?version=1\&modificationDate=1678073173000\&api=v2) hoặc chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49648513/image2023-2-6\_10-20-54.png?version=1\&modificationDate=1675654311000\&api=v2)tại **container** bạn muốn thực hiện sử dụng tính năng phân quyền truy cập ACls và chọn ![](https://docs.vngcloud.vn/download/thumbnails/49648513/image2023-3-6\_10-26-49.png?version=1\&modificationDate=1678073210000\&api=v2)
 
 4\. Màn hình **Thiết lập ACLs** được hiển thị. Trong mục **Truy cập cho những tài khoản khác**, bạn nhập địa chỉ email hoặc số điện thoại của Root user account muốn thực hiện thêm quyền. Email hoặc số điện thoại mà bạn nhập phải là email, số điện thoại đã được đăng ký tài khoản GreenNode. Nếu email, số điện thoại chưa được đăng ký thì sẽ không được thêm quyền truy cập ACLs cho container này.
 
@@ -27,7 +27,7 @@ Bạn có thể cấp quyền Đọc, Ghi hoặc Đọc và Ghi cho một hoặc
 
 Sau khi bạn hoàn thành 7 bước được mô tả bên trên, bạn đã phân quyền truy cập ACLs container cho một vài tập người dùng mà bạn chọn. Nếu có việc truy cập không được phép, bạn có thể điều chỉnh thông tin truy cập của các Root user account này sang các quyền truy cập thấp hơn.
 
-<img src="../../../../../../.gitbook/assets/Phan_quyen_truy_cap_ACLs.gif" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/Phan_quyen_truy_cap_ACLs.gif" alt="" data-size="original">
 
 </details>
 
@@ -40,3 +40,4 @@ Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung c�
 Để phân quyền truy cập ACLs container qua vStorage API, hãy xem [API Developers](../../api-developers/).
 
 </details>
+

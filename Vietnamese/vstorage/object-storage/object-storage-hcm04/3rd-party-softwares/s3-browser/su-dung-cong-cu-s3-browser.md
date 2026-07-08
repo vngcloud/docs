@@ -16,7 +16,7 @@ Bên dưới là hướng dẫn cho một số use case thông thường bạn c
 
 * Bạn cũng có thể tạo/ xóa folder bằng cách chọn **New Folder** hoặc **Delete**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (589).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (589).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -30,7 +30,7 @@ Tiếp theo đây là các hướng dẫn cho các tính năng nâng cao bạn c
 
 Để thiết lập ACL cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn Edit Permission (ACL) . Trong phần permission, hãy check chọn quyền hạn bạn mong muốn cấp cho người dùng. Chi tiết tham khảo thêm tại [https://s3browser.com/share-s3-bucket-edit-acls.aspx](https://s3browser.com/share-s3-bucket-edit-acls.aspx)
 
-<figure><img src="../../../../../../.gitbook/assets/image (590).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (590).png" alt=""><figcaption></figcaption></figure>
 
 ### **SSE-S3**
 
@@ -46,11 +46,11 @@ SSE-S3 (Server-Side Encryption with S3 Managed Keys) là tính năng mã hóa d�
 
 Để thiết lập Object Locked cho một bucket bằng S3 Browser, khi khởi tạo một bucket mới, bạn cần chọn phương án **Enable S3 Objected Lock.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (623).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (623).png" alt=""><figcaption></figcaption></figure>
 
 Tiếp theo, khi bucket được tạo thành công, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Object Locked**. Bạn có thể thiết lập object locked ở cả 2 mode **Retention** và **Legal Hold** thông qua S3 Browser. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-object-lock.aspx](https://s3browser.com/amazon-s3-object-lock.aspx)
 
-<figure><img src="../../../../../../.gitbook/assets/image (114) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
 
 ### **Versioning**
 
@@ -58,7 +58,7 @@ Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá
 
 Để thiết lập Versioning cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Edit Versioning Settings**. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-versioning.aspx](https://s3browser.com/amazon-s3-versioning.aspx)
 
-<figure><img src="../../../../../../.gitbook/assets/image (125) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
 
 ### **Lifecycle rotation**
 
@@ -66,7 +66,7 @@ Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá
 
 Để thiết lập Lifecycle rotation cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Lifecycle Configuration**. Chi tiết tham khảo thêm tại [https://s3browser.com/bucket-lifecycle-configuration.aspx](https://s3browser.com/bucket-lifecycle-configuration.aspx)
 
-<figure><img src="../../../../../../.gitbook/assets/image (595).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (595).png" alt=""><figcaption></figcaption></figure>
 
 ### **Lifecycle transit**
 
@@ -74,11 +74,11 @@ Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá
 
 Các chuyển đổi được hỗ trợ được hiển thị trên sơ đồ bên dưới:
 
-<figure><img src="../../../../../../.gitbook/assets/transit_diagram (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/transit_diagram.png" alt=""><figcaption></figcaption></figure>
 
 Để thiết lập Lifecycle transit cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Lifecycle Configuration**. Chi tiết tham khảo thêm tại [https://s3browser.com/bucket-lifecycle-configuration.aspx](https://s3browser.com/bucket-lifecycle-configuration.aspx)
 
-<figure><img src="../../../../../../.gitbook/assets/image (595).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (595).png" alt=""><figcaption></figcaption></figure>
 
 ### **CORS**
 
@@ -86,7 +86,7 @@ CORS (Cross-Origin Resource Sharing) là cơ chế bảo mật cho phép các tr
 
 Để thiết lập CORS cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **CORS Configuration**. Chi tiết tham khảo thêm tại [https://s3browser.com/s3-bucket-cors-configuration.aspx](https://s3browser.com/s3-bucket-cors-configuration.aspx)
 
-<figure><img src="../../../../../../.gitbook/assets/image (596).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (596).png" alt=""><figcaption></figcaption></figure>
 
 ### **Public/ Private bucket**
 
@@ -94,7 +94,7 @@ CORS (Cross-Origin Resource Sharing) là cơ chế bảo mật cho phép các tr
 
 Để thiết lập chế độ công khai cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Public Access block Configuration**. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-public-access-block-configuration.aspx](https://s3browser.com/amazon-s3-public-access-block-configuration.aspx)
 
-<figure><img src="../../../../../../.gitbook/assets/image (597).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (597).png" alt=""><figcaption></figcaption></figure>
 
 ### **Bucket policy**
 
@@ -102,7 +102,7 @@ CORS (Cross-Origin Resource Sharing) là cơ chế bảo mật cho phép các tr
 
 Để thiết lập policy một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Edit Bucket Policy**. Chi tiết tham khảo thêm tại [https://s3browser.com/working-with-amazon-s3-bucket-policies.aspx?v=11.7.5\&fam=x64#amazon-s3-bucket-policies-examples](https://s3browser.com/working-with-amazon-s3-bucket-policies.aspx?v=11.7.5\&fam=x64#amazon-s3-bucket-policies-examples)
 
-<figure><img src="../../../../../../.gitbook/assets/image (598).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (598).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**

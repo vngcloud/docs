@@ -14,7 +14,7 @@ description: >-
 * Tại thanh menu bên trái của giao diện vNetwork, chọn mục VPN Site-to-Site.
 * Tại màn hình danh sách này, nhấn chọn "<mark style="color:blue;">**Tạo mới kết nối VPN**</mark>".
 
-<figure><img src="../../../../.gitbook/assets/1 (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **Bước 2:** Tại màn hình Tạo mới kết nối VPN, điền các thông tin khởi tạo như sau:
 
@@ -34,11 +34,11 @@ Mặc định khi khởi tạo VPN Site-to-Site hệ thống yêu cầu tạo m�
 * **Remote Private CIDR**: Điền Dải địa chỉ IP LAN của server OnPremise pfsense.
 * Tùy chọn **Pre-shared Key**: Là mật khẩu, keys mà VPN GreenNode và Remote VPN OnPremise(Ví dụ: PFsense) sẽ dùng để auth cho nhau (Pre-shared Key – PSK phải giống nhau trên cả 2 bên). _Nếu không tích chọn_ _**"Used Your Pre-shared Key"** hệ thống sẽ tự sinh ra PSK_
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>VPN Basic Configuration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>VPN Basic Configuration</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (963).png" alt=""><figcaption><p>Default Tunnel Configuration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (963).png" alt=""><figcaption><p>Default Tunnel Configuration</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (964).png" alt=""><figcaption><p>Default Tunnel Configuration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (964).png" alt=""><figcaption><p>Default Tunnel Configuration</p></figcaption></figure>
 
 * Bên cạnh đó có mục <mark style="color:blue;">**Cấu hình thuật toán**</mark> cho kết nới VPN, được thiết lập với hai cấu hình chính được thiết lập mặc định. Các cấu hình IPSEC hỗ trợ có thểm xem [tại đây](cac-cau-hinh-ho-tro.md)
   * **IKE Policy**: Cấu hình các config cho phase 1 của VPN IPSEC (Config tại 2 bên phải trùng nhau thì VPN mới hoạt động).
@@ -55,15 +55,15 @@ _-> Sau khi thanh toán thành công, hệ thống sẽ xử lý kết nối th�
 * Thời gian tạo một VPN dao động từ 3-5 phút. Vì cần khởi tạo dịch vụ VPN và Default Tunnel.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (965).png" alt=""><figcaption><p>VPN List</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (965).png" alt=""><figcaption><p>VPN List</p></figcaption></figure>
 
 ## **Bước 3:** Kiểm tra lại thông tin VPN vừa tạo, bằng cách click vào VPN để chuyển qua trang Detail.
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption><p>VPN Detail - Local Configuration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>VPN Detail - Local Configuration</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (343) (2).png" alt=""><figcaption><p>VPN Detail - Tunnel List</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (343).png" alt=""><figcaption><p>VPN Detail - Tunnel List</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>VPN Detail - Tags</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1) (1).png" alt=""><figcaption><p>VPN Detail - Tags</p></figcaption></figure>
 
 ## **Bước 4:** Tạo Route Rule để điều hướng các request đến Remote LAN CIDR đi qua VPN thông qua **Private Gateway IP** _(Detail Page)._
 
@@ -72,6 +72,6 @@ Truy cập vServer Router Tables để thêm cấu hình điều hướng đến
 * Destination: Remote Private CIDR.
 * Target: Local Private Gateway.
 
-<figure><img src="../../../../.gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption><p>VPN Detail - VPN Gateway</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption><p>VPN Detail - VPN Gateway</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (5).png" alt=""><figcaption><p>Update Route Table</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (5).png" alt=""><figcaption><p>Update Route Table</p></figcaption></figure>

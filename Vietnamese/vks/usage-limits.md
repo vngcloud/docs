@@ -19,7 +19,7 @@
 
 **Bước 2: Xem mức sử dụng hiện tại**
 
-<figure><img src="../../.gitbook/assets/rate-limit (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/rate-limit.png" alt=""><figcaption></figcaption></figure>
 
 Khu vực **CURRENT USAGE** hiển thị:
 
@@ -68,8 +68,8 @@ Sau khi hoàn thành, bạn có thể:
 * Theo dõi mức sử dụng để tránh vượt giới hạn khi scale hệ thống.
 * Chủ động yêu cầu tăng limit trước khi triển khai workload lớn.
 
-| Tôi muốn tiếp theo...       | Đi đến                                                             |
-| --------------------------- | ------------------------------------------------------------------ |
-| Tạo cluster đầu tiên        | [Bắt đầu với VKS](getting-started/)                                |
+| Tôi muốn tiếp theo...       | Đi đến                                                            |
+| --------------------------- | ----------------------------------------------------------------- |
+| Tạo cluster đầu tiên        | [Bắt đầu với VKS](getting-started/)                               |
 | Xem giới hạn vServer đầy đủ | [vServer Limits](https://hcm-3.console.greennode.ai/vserver/limit) |
-| Gửi yêu cầu hỗ trợ          | [GreenNode Helpdesk](https://helpdesk.vngcloud.vn/portal/en/home)  |
+| Gửi yêu cầu hỗ trợ          | [GreenNode Helpdesk](https://helpdesk.vngcloud.vn/portal/en/home) |

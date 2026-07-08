@@ -5,7 +5,7 @@
 * **Đã có Cluster với ít nhất 1 Node Group có 1 node trên VKS:**
   * Bạn phải khởi tạo thành công một cluster trên nền tảng VKS.
   * Kubernetes version của cluster phải từ 1.21 trở lên.
-  * Cluster phải có ít nhất một Node Group đang hoạt động.
+  * Cluster phải có ít nhất một Node Group đang hoạt động.&#x20;
   * _Nếu chưa có, bạn cần tham khảo và thực hiện theo tài liệu hướng dẫn tại_ [_đây_](../../../vks/getting-started/create-a-public-cluster/)_._
 * **Đã có File Storage (NFS):**
   * Bạn phải khởi tạo một File Storage theo giao thức NFS. Dịch vụ này có thể là Public File Storage hoặc Private File Storage.
@@ -20,7 +20,7 @@
 
 * Đầu tiên, bạn cần tải file cấu hình: Trên giao diện VKS Portal, chọn **Download Config File** và tải về file `kubeconfig`. File này chứa thông tin xác thực để kết nối đến cluster.
 
-<figure><img src="../../../../.gitbook/assets/image (1118).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1118).png" alt=""><figcaption></figcaption></figure>
 
 * Kiểm tra kết nối: Mở terminal cuar bạn và chạy lệnh sau để xác minh rằng bạn đã kết nối thành công đến cluster:
 
@@ -70,7 +70,7 @@ Storage Class (hay còn được gọi tắt là SC) là **một mẫu** để t
 
 * Đầu tiên, bạn cần lấy thông tin mount của File Storage NFS: Trên giao diện File Storage Portal, chọn **Mount guide** và lưu các thông tin IP cũng như folder thực hiện mount.
 
-<figure><img src="../../../../.gitbook/assets/image (1119).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1119).png" alt=""><figcaption></figcaption></figure>
 
 * Bây giờ, bạn hãy tạo Storage Class bằng cách tạo file `nfs-sc.yaml` với nội dung:
 
@@ -104,7 +104,7 @@ kubectl get storageclasses
 kubectl describe storageclass nfs-csi
 ```
 
-* Kết quả mong muốn:
+* Kết quả mong muốn:&#x20;
 
 ```bash
 # kubectl apply -f nfs-sc.yaml
@@ -140,7 +140,7 @@ Events:             <none>
 
 PersistentVolumeClaim (hay còn gọi là PVC) là **yêu cầu người dùng gửi ra** để xin một ổ đĩa lưu trữ có kích thước cụ thể. Khi bạn tạo một PVC, Kubernetes sẽ dùng SC để tạo hoặc chọn một ổ đĩa phù hợp.
 
-* Tạo file `nfs-pvc.yaml`với nội dung sau:
+* Tạo file `nfs-pvc.yaml`với nội dung sau:    &#x20;
 
 ```yaml
 apiVersion: v1
@@ -169,7 +169,7 @@ kubectl get pvc
 kubectl describe pvc pvc-nfs-dynamic
 ```
 
-* Kết quả mong muốn:
+* Kết quả mong muốn:&#x20;
 
 ```bash
 # kubectl apply -f nfs-pvc.yaml
@@ -254,7 +254,7 @@ spec:
 kubectl apply -f nginx-deployment.yaml
 ```
 
-* Kết quả mong muốn:
+* Kết quả mong muốn:&#x20;
 
 ```bash
 # kubectl apply -f nginx-deployment.yaml
@@ -266,7 +266,7 @@ service/nginx-nfs-service created
 
 ## Kiểm tra NFS File Storage sau khi triển khai
 
-* Đầu tiên, bạn có thể kiểm tra PVC đã bound chưa qua lệnh:
+* Đầu tiên, bạn có thể kiểm tra PVC đã bound chưa qua lệnh:&#x20;
 
 ```bash
 kubectl get pvc pvc-nfs-dynamic
@@ -339,13 +339,13 @@ kubectl exec -it test-nfs-writer -- du -sh /mnt/data
 
 * Và cuối cùng, bạn có thể kiểm tra usage của File storage thông qua portal.
 
-<figure><img src="../../../../.gitbook/assets/image (34) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34) (3).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Advanced Options
 
-Một số option nâng cao bạn có thể sử dụng khi tạo Storage Class:
+Một số option nâng cao bạn có thể sử dụng khi tạo Storage Class:&#x20;
 
 * **Retain Policy**:
 

@@ -30,44 +30,44 @@ Các loại biểu đồ/ báo cáo chúng tôi cung cấp cho bạn bao gồm:
 
 **Bước 2:** Chọn mục **Dashboard.** Tại đây, bạn có thể thấy các biểu đồ, báo cáo được chúng tôi đề cập bên trên. Ví dụ:
 
-<figure><img src="../../.gitbook/assets/image (856).png" alt="" width="164"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (856).png" alt="" width="164"><figcaption></figcaption></figure>
 
 * **Traffic Consuming:**
 
-<figure><img src="../../.gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin Request/s**:
 
-<figure><img src="../../.gitbook/assets/image (246) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin Traffic Consuming/s (GB/s)**:
 
-<figure><img src="../../.gitbook/assets/image (258).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (258).png" alt=""><figcaption></figcaption></figure>
 
 * **Unique IPs:**
 
-<figure><img src="../../.gitbook/assets/image (275) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin Speed/s:**
 
-<figure><img src="../../.gitbook/assets/image (273).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (273).png" alt=""><figcaption></figcaption></figure>
 
 * **Average User Speed:**
 
-<figure><img src="../../.gitbook/assets/image (274).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (274).png" alt=""><figcaption></figcaption></figure>
 
 * **Hit Cache Ratio:**
 
-<figure><img src="../../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
 
 * **Request Content Type:**
 
-<figure><img src="../../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
 
 * **CDN HTTP Codes, Origin HTTP Codes:**
 
-<figure><img src="../../.gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
 
 * **Quản lý và theo dõi tín hiệu được đẩy đến hệ thống Live Entry point:**
 
-<figure><img src="../../.gitbook/assets/image (280) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>

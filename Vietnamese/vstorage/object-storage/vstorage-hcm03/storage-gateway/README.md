@@ -4,14 +4,14 @@
 
 Storage Gateway là dịch vụ cung cấp cổng kết nối giữa hạ tầng vật lý của khách hàng và dịch vụ lưu trữ trên cloud. Storage Gateway hỗ trợ các giao thức lưu trữ tiêu chuẩn như: NFS, SMB, CIFS. Với Storage Gateway của GreenNode, khách hàng thay vì phải tự cấu hình với các câu lệnh phức tạp thì có thể làm chỉ thông qua giao diện web portal.
 
-Mô hình triển khai storage gateway
+Mô hình triển khai storage gateway&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (554).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (554).png" alt=""><figcaption></figcaption></figure>
 
 * Storage gateway được build trên 1 vServer hoặc trên 1 máy chủ on-premise
-* Storage gateway đảm nhận nhiệm vụ làm trung gian giữa người dùng cuối và vStorage cho các tác vụ upload / download. Data nằm trên cache (block disk) giúp enduser truy cập nhanh chóng.
-* Các dữ liệu sẽ được đồng bộ tự động lên vStorage nhằm cho việc lưu trữ lâu dài tối ưu chi phí.
-* Dữ liệu từ gateway sẽ được mã hóa trước khi đưa lên vStorage.
+* Storage gateway đảm nhận nhiệm vụ làm trung gian giữa người dùng cuối và vStorage cho các tác vụ upload / download. Data nằm trên cache (block disk) giúp enduser truy cập nhanh chóng.&#x20;
+* Các dữ liệu sẽ được đồng bộ tự động lên vStorage nhằm cho việc lưu trữ lâu dài tối ưu chi phí.&#x20;
+* Dữ liệu từ gateway sẽ được mã hóa trước khi đưa lên vStorage.&#x20;
 
 ***
 

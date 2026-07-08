@@ -2,15 +2,15 @@
 
 > Hướng dẫn tạo Agent Runtime từ container image để chạy AI Agent của bạn trên GreenNode AgentBase.
 
-***
+---
 
 ## Điều kiện cần
 
-* Tài khoản GreenNode với vai trò Root hoặc Admin
-* Container image cho agent (registry công khai hoặc [private Container Registry](../container-registry/))
-* Identity đã tạo cho agent — xem [Access Control](../access-control/)
+- Tài khoản GreenNode với vai trò Root hoặc Admin
+- Container image cho agent (registry công khai hoặc [private Container Registry](../container-registry/README.md))
+- Identity đã tạo cho agent — xem [Access Control](../access-control/README.md)
 
-***
+---
 
 ## Triển khai nhanh với AgentBase Skills
 
@@ -25,16 +25,16 @@ git clone https://github.com/vngcloud/greennode-agentbase-skills .claude/skills/
 
 **Sử dụng trong Claude Code / Cursor:**
 
-| Skill                 | Chức năng                                                                    |
-| --------------------- | ---------------------------------------------------------------------------- |
-| `/agentbase-wizard`   | Workflow 9 bước đầy đủ: scaffold → configure → code → test → deploy → verify |
-| `/agentbase-deploy`   | Build container, push image và deploy lên Runtime                            |
-| `/agentbase-monitor`  | Xem logs, metrics và trạng thái Runtime                                      |
-| `/agentbase-identity` | Cấu hình IAM Identity cho agent                                              |
+| Skill | Chức năng |
+|---|---|
+| `/agentbase-wizard` | Workflow 9 bước đầy đủ: scaffold → configure → code → test → deploy → verify |
+| `/agentbase-deploy` | Build container, push image và deploy lên Runtime |
+| `/agentbase-monitor` | Xem logs, metrics và trạng thái Runtime |
+| `/agentbase-identity` | Cấu hình IAM Identity cho agent |
 
 Phù hợp với developer muốn tích hợp deploy vào quy trình AI-assisted coding mà không cần thao tác thủ công trên Portal.
 
-***
+---
 
 ## Tạo Runtime qua Portal
 
@@ -42,33 +42,33 @@ Phù hợp với developer muốn tích hợp deploy vào quy trình AI-assisted
 
 Một popup hiện ra để bạn chọn loại agent:
 
-![Deploy a new Agent — chọn loại agent](<../../../../.gitbook/assets/deploy-new-agent (1).png>)
+![Deploy a new Agent — chọn loại agent](../../../.gitbook/assets/Agentbase-image/deploy-new-agent.png)
 
-| Loại             | Mô tả                                                                             |
-| ---------------- | --------------------------------------------------------------------------------- |
+| Loại | Mô tả |
+|---|---|
 | **Custom Agent** | Agent bạn tự code và triển khai — toàn quyền kiểm soát runtime, vCR, IAM, scaling |
-| **OpenClaw**     | Agent được GreenNode cấu hình sẵn, triển khai nhanh, không cần cấu hình runtime   |
+| **OpenClaw** | Agent được GreenNode cấu hình sẵn, triển khai nhanh, không cần cấu hình runtime |
 
 Nhấp **DEPLOY** trong card **Custom Agent** để tiếp tục.
 
 **Bước 2:** Điền thông tin cơ bản
 
-| Trường                    | Giá trị ví dụ                        | Ghi chú                                       |
-| ------------------------- | ------------------------------------ | --------------------------------------------- |
-| **Name**                  | `my-order-agent`                     | Duy nhất, chữ thường, cho phép dấu gạch ngang |
-| **Description**           | `Production order agent`             | Tùy chọn                                      |
-| **Image URL**             | `vcr.vngcloud.vn/<repo>/my-agent:v1` | Đường dẫn image đầy đủ kèm tag                |
-| **Flavor**                | `1x1-general`                        | 1 vCPU, 1 GB RAM                              |
-| **Min Replicas**          | `1`                                  | Phạm vi: 1–10                                 |
-| **Max Replicas**          | `1`                                  | Đặt >1 để bật autoscaling                     |
-| **CPU Threshold**         | `50`                                 | Scale out khi CPU vượt % này (25–75)          |
-| **Memory Threshold**      | `50`                                 | Scale out khi RAM vượt % này (25–75)          |
-| **Registry Auth**         | Bật nếu là private                   | Username = robot account `backendName`        |
-| **Environment Variables** | `KEY=value`                          | Chỉ cấu hình không nhạy cảm                   |
+| Trường | Giá trị ví dụ | Ghi chú |
+|---|---|---|
+| **Name** | `my-order-agent` | Duy nhất, chữ thường, cho phép dấu gạch ngang |
+| **Description** | `Production order agent` | Tùy chọn |
+| **Image URL** | `vcr.vngcloud.vn/<repo>/my-agent:v1` | Đường dẫn image đầy đủ kèm tag |
+| **Flavor** | `1x1-general` | 1 vCPU, 1 GB RAM |
+| **Min Replicas** | `1` | Phạm vi: 1–10 |
+| **Max Replicas** | `1` | Đặt >1 để bật autoscaling |
+| **CPU Threshold** | `50` | Scale out khi CPU vượt % này (25–75) |
+| **Memory Threshold** | `50` | Scale out khi RAM vượt % này (25–75) |
+| **Registry Auth** | Bật nếu là private | Username = robot account `backendName` |
+| **Environment Variables** | `KEY=value` | Chỉ cấu hình không nhạy cảm |
 
 **Bước 3:** Cấu hình mạng (tùy chọn)
 
-* **Private VPC**: bật để triển khai trong mạng nội bộ doanh nghiệp
+- **Private VPC**: bật để triển khai trong mạng nội bộ doanh nghiệp
 
 **Bước 4:** Cấu hình Endpoint — AgentBase tự động tạo một Endpoint **DEFAULT**
 
@@ -76,7 +76,7 @@ Nhấp **DEPLOY** trong card **Custom Agent** để tiếp tục.
 
 Runtime chuyển từ `CREATING` → `ACTIVE` khi container khởi động thành công.
 
-***
+---
 
 ## Tạo Runtime qua API
 
@@ -147,7 +147,7 @@ while true; do
 done
 ```
 
-***
+---
 
 ## Yêu cầu container (Service Contract)
 
@@ -155,10 +155,10 @@ Agent của bạn phải đáp ứng các yêu cầu sau để hoạt động v�
 
 ### Port và Health Check
 
-| Yêu cầu        | Giá trị       | Ghi chú                       |
-| -------------- | ------------- | ----------------------------- |
-| Cổng lắng nghe | `8080`        | Bắt buộc — không thể cấu hình |
-| Health check   | `GET /health` | Phải trả về HTTP 200          |
+| Yêu cầu | Giá trị | Ghi chú |
+|---|---|---|
+| Cổng lắng nghe | `8080` | Bắt buộc — không thể cấu hình |
+| Health check | `GET /health` | Phải trả về HTTP 200 |
 
 **Sử dụng greennode-agentbase SDK (khuyến nghị):**
 
@@ -196,30 +196,30 @@ def invoke(body: dict):
 
 Runtime tự động tiêm các biến sau vào mỗi container:
 
-| Biến                       | Mô tả                             |
-| -------------------------- | --------------------------------- |
-| `GREENNODE_CLIENT_ID`      | IAM service account client ID     |
-| `GREENNODE_CLIENT_SECRET`  | IAM service account client secret |
-| `GREENNODE_AGENT_IDENTITY` | Tên agent identity                |
+| Biến | Mô tả |
+|---|---|
+| `GREENNODE_CLIENT_ID` | IAM service account client ID |
+| `GREENNODE_CLIENT_SECRET` | IAM service account client secret |
+| `GREENNODE_AGENT_IDENTITY` | Tên agent identity |
 
 ### Request Header
 
 Mỗi request đến agent kèm theo:
 
-| Header                             | Mô tả                                                       |
-| ---------------------------------- | ----------------------------------------------------------- |
-| `X-GreenNode-AgentBase-User-Id`    | ID người dùng cuối — dùng làm `actorId` cho thao tác memory |
+| Header | Mô tả |
+|---|---|
+| `X-GreenNode-AgentBase-User-Id` | ID người dùng cuối — dùng làm `actorId` cho thao tác memory |
 | `X-GreenNode-AgentBase-Session-Id` | ID phiên — dùng làm `thread_id` cho LangGraph checkpointing |
 
 {% hint style="warning" %}
 Nếu agent sử dụng memory, hãy kiểm tra sự hiện diện của các header này và trả về lỗi nếu thiếu. Không dùng giá trị mặc định — sẽ gây trộn lẫn dữ liệu giữa các người dùng.
 {% endhint %}
 
-***
+---
 
 ## Kết quả
 
-| Tôi muốn...                           | Đến                                               |
-| ------------------------------------- | ------------------------------------------------- |
-| Dừng, khởi động hoặc cập nhật Runtime | [Quản lý Runtime](quan-ly-runtime.md)             |
-| Gắn Policy Group vào Gateway          | [Policy Groups](../mcp-governance/policy-groups/) |
+| Tôi muốn... | Đến |
+|---|---|
+| Dừng, khởi động hoặc cập nhật Runtime | [Quản lý Runtime](quan-ly-runtime.md) |
+| Gắn Policy Group vào Gateway | [Policy Groups](../mcp-governance/policy-groups/README.md) |

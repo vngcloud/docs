@@ -2,7 +2,7 @@
 
 Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá khứ của các object được lưu trữ trong một bucket. Với tính năng versioning, bạn có thể dễ dàng quản lý lịch sử các thay đổi của dữ liệu và bảo vệ dữ liệu khỏi mất mát do thao tác nhầm. Bật versioning là một phương pháp hiệu quả để kiểm soát và khôi phục dữ liệu trong các tình huống khẩn cấp.
 
-Để sử dụng tính năng versioning, vui lòng thực hiện theo các bước sau:
+Để sử dụng tính năng versioning, vui lòng thực hiện theo các bước sau:&#x20;
 
 1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
@@ -16,22 +16,22 @@ Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá
 * Khi **Object Lock** được bật trên một bucket trong vStorage, thì **versioning** sẽ **tự động được bật và không thể tắt đi** trên bucket đó.
 {% endhint %}
 
-<figure><img src="../../../../../../../.gitbook/assets/image (1001).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1001).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../../.gitbook/assets/image (1002).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1002).png" alt=""><figcaption></figcaption></figure>
 
 4\. Tại màn hình xác nhận bật versioning, vui lòng chọn **Enable versioning**.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (1003).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1003).png" alt=""><figcaption></figcaption></figure>
 
 Sau khi bật versioning, mỗi khi tải lên một object với cùng tên, vStorage sẽ tạo một phiên bản mới cho object đó, và phiên bản cũ vẫn được lưu lại. Bạn có thể chọn Show versions để xem thông tin các version của object.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (1004).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1004).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**
 
-Các thao tác phổ biến với versioning bao gồm:
+&#x20;Các thao tác phổ biến với versioning bao gồm:
 
 * **Tải lên phiên bản mới của object**: Khi bạn tải lên một file với cùng tên vào bucket đã bật versioning, vStorage sẽ giữ lại các phiên bản trước đó của file này.
 * **Xóa phiên bản cụ thể**:

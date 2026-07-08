@@ -8,9 +8,9 @@
 
 ## 2. Tài liệu
 
-| Tài liệu                                                             | Mô tả                                                         |
-| -------------------------------------------------------------------- | ------------------------------------------------------------- |
-| [OpenClaw 1-Click](openclaw-1-click.md)                              | Tổng quan, kiến trúc, so sánh và FAQ                          |
-| [Triển khai và Quản lý OpenClaw](/broken/pages/DqYNKAiTpLcmfLmuOjrG) | Hướng dẫn deploy, stop, restart, xóa instance                 |
-| [Giới hạn và Lưu ý](gioi-han-va-luu-y.md)                            | Giới hạn hiện tại và các lưu ý kỹ thuật quan trọng            |
-| [Lấy Bot Token và Pairing](lay-bot-token-va-pairing.md)              | Hướng dẫn lấy bot token Telegram/Zalo và pairing với OpenClaw |
+| Tài liệu | Mô tả |
+| --- | --- |
+| [OpenClaw 1-Click](openclaw-1-click.md) | Tổng quan, kiến trúc, so sánh và FAQ |
+| [Triển khai và Quản lý OpenClaw](trien-khai-openclaw-1-click.md) | Hướng dẫn deploy, stop, restart, xóa instance |
+| [Giới hạn và Lưu ý](gioi-han-va-luu-y.md) | Giới hạn hiện tại và các lưu ý kỹ thuật quan trọng |
+| [Lấy Bot Token và Pairing](lay-bot-token-va-pairing.md) | Hướng dẫn lấy bot token Telegram/Zalo và pairing với OpenClaw |

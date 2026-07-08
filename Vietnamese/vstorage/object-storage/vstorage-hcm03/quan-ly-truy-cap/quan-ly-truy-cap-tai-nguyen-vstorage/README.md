@@ -1,6 +1,6 @@
 # Quản lý truy cập tài nguyên vStorage
 
-#### Tổng quan <a href="#quanlytruycaptainguyenvstorage-tongquan" id="quanlytruycaptainguyenvstorage-tongquan"></a>
+#### Tổng quan  <a href="#quanlytruycaptainguyenvstorage-tongquan" id="quanlytruycaptainguyenvstorage-tongquan"></a>
 
 Để truy cập và làm việc được với các tài nguyên của dịch vụ vStorage, bạn cần phải:
 
@@ -27,11 +27,11 @@ Khi cấp quyền truy cập tới tài nguyên lưu trữ trên vStorage, bạn
 
 Chi tiết về cách thức phân quyền truy cập và làm việc với các tài nguyên vStorage, vui lòng xem các chủ đề bên dưới:
 
-* [Phân quyền truy cập và làm việc thông qua vStorage](/broken/pages/1XU4EdryMijXQIpd6tKi)
-* [Phân quyền truy cập và làm việc thông qua IAM](/broken/pages/aM64GAx3O1aTOGxR2BaW)
+* [Phân quyền truy cập và làm việc thông qua vStorage](phan-quyen-truy-cap-va-lam-viec-thong-qua-vstorage.md)
+* [Phân quyền truy cập và làm việc thông qua IAM](phan-quyen-truy-cap-va-lam-viec-thong-qua-iam/)
 
 #### Truy cập và làm việc với các tài nguyên vStorage sử dụng tài khoản vStorage <a href="#quanlytruycaptainguyenvstorage-truycapvalamviecvoicactainguyenvstoragesudungtaikhoanvstorage" id="quanlytruycaptainguyenvstorage-truycapvalamviecvoicactainguyenvstoragesudungtaikhoanvstorage"></a>
 
-Để truy cập tài nguyên (project, container, object, report, v.v.) của bạn trên dịch vụ lưu trữ vStorage, bạn có thể sử dụng các tài khoản vStorage bao gồm tài khoản người dùng Root (Root User Account), tài khoản người dùng IAM (IAM User Account) và tài khoản Service Account để truy cập tài nguyên qua các giao diện người dùng (kênh truy cập): vStorage Portal, vStorage API, Swift Rest API, S3 Rest API, 3rd party softwares.
+Để truy cập tài nguyên (project, container, object, report, v.v.) của bạn trên dịch vụ lưu trữ vStorage, bạn có thể sử dụng các tài khoản vStorage bao gồm tài khoản người dùng Root (Root User Account), tài khoản người dùng IAM (IAM User Account) và tài khoản Service Account để truy cập tài nguyên qua các giao diện người dùng (kênh truy cập): vStorage Portal, vStorage API, Swift Rest API, S3 Rest API, 3rd party softwares.&#x20;
 
 <table data-header-hidden><thead><tr><th width="101"></th><th width="227"></th><th width="137"></th><th></th></tr></thead><tbody><tr><td>STT</td><td>Tài khoản người dùng</td><td>Kênh truy cập</td><td>Ghi chú</td></tr><tr><td>1</td><td>Tài khoản người dùng Root (Root User Account)</td><td>vStorage Portal</td><td>Bạn không thể sử dụng tài khoản này để truy cập tài nguyên dịch vụ vStorage qua các kênh khác ngoài vStorage Portal.</td></tr><tr><td>2</td><td>Tài khoản người dùng IAM (IAM User Account)</td><td>vStorage Portal</td><td>Bạn không thể sử dụng tài khoản này để truy cập tài nguyên dịch vụ vStorage qua các kênh khác ngoài vStorage Portal.</td></tr><tr><td>3</td><td>Tài khoản Service Account</td><td>vStorage API, Swift/ s3 client tool, Swift Rest API, S3 Rest API</td><td>Bạn không thể dùng tài khoản này để truy cập tài nguyên qua kênh vStorage Portal. Ngoài ra, bạn có thể sử dụng tài khoản này để tích hợp với dịch vụ vStorage từ ứng dụng phần mềm (software application) của bạn.</td></tr></tbody></table>

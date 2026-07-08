@@ -2,18 +2,18 @@
 
 > Hướng dẫn này giúp bạn cấu hình **Multi-Instance GPU (MIG)** trên VKS để phân chia GPU NVIDIA H100 thành nhiều MIG instance độc lập — mỗi instance có VRAM và Streaming Multiprocessors riêng biệt, đảm bảo isolation hoàn toàn giữa các workload.
 
-<figure><img src="../../../.gitbook/assets/TEST-CASE-SUMMARY (1).png" alt="Kiến trúc MIG trên VKS — GPU 0 phân thành 2 MIG instances, GPU 1 giữ nguyên full GPU"><figcaption><p>Kiến trúc MIG trên VKS: GPU Operator quản lý cả GPU MIG (2x 3g.40gb) và non-MIG (full 80GB) trên cùng một node</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/MIG-VKS/TEST-CASE-SUMMARY.png" alt="Kiến trúc MIG trên VKS — GPU 0 phân thành 2 MIG instances, GPU 1 giữ nguyên full GPU"><figcaption><p>Kiến trúc MIG trên VKS: GPU Operator quản lý cả GPU MIG (2x 3g.40gb) và non-MIG (full 80GB) trên cùng một node</p></figcaption></figure>
 
-***
+---
 
 ## Điều kiện cần (Prerequisites)
 
-* Đã có VKS Cluster đang hoạt động với node group sử dụng GPU **NVIDIA H100** (hoặc Ampere/Hopper trở lên — MIG chỉ hỗ trợ từ kiến trúc Ampere).
-* Đã cài đặt `kubectl` và `helm` trên máy local.
-* Đã cài đặt `yq` version ≥ 4 để merge YAML an toàn (xem Bước 2).
-* `kubectl` đã được kết nối đến cluster. Kiểm tra bằng `kubectl get nodes`.
+- Đã có VKS Cluster đang hoạt động với node group sử dụng GPU **NVIDIA H100** (hoặc Ampere/Hopper trở lên — MIG chỉ hỗ trợ từ kiến trúc Ampere).
+- Đã cài đặt `kubectl` và `helm` trên máy local.
+- Đã cài đặt `yq` version ≥ 4 để merge YAML an toàn (xem Bước 2).
+- `kubectl` đã được kết nối đến cluster. Kiểm tra bằng `kubectl get nodes`.
 
-***
+---
 
 ## Bước 1: Cài GPU Operator với MIG Strategy `mixed`
 
@@ -46,24 +46,24 @@ kubectl -n gpu-operator get pods -owide
 
 Tất cả pods phải ở trạng thái `Running` hoặc `Completed`:
 
-| Pod                              | Trạng thái kỳ vọng |
-| -------------------------------- | ------------------ |
-| `gpu-feature-discovery`          | Running            |
-| `nvidia-container-toolkit`       | Running            |
-| `nvidia-cuda-validator`          | Completed          |
-| `nvidia-dcgm-exporter`           | Running            |
-| `nvidia-device-plugin-daemonset` | Running            |
-| `nvidia-driver-daemonset`        | Running            |
-| `nvidia-mig-manager`             | Running            |
-| `nvidia-operator-validator`      | Running            |
+| Pod | Trạng thái kỳ vọng |
+|---|---|
+| `gpu-feature-discovery` | Running |
+| `nvidia-container-toolkit` | Running |
+| `nvidia-cuda-validator` | Completed |
+| `nvidia-dcgm-exporter` | Running |
+| `nvidia-device-plugin-daemonset` | Running |
+| `nvidia-driver-daemonset` | Running |
+| `nvidia-mig-manager` | Running |
+| `nvidia-operator-validator` | Running |
 
-<figure><img src="../../../.gitbook/assets/Cai-GPU-Operator (1).png" alt="GPU Operator pods đang chạy"><figcaption><p>Tất cả GPU Operator pods ở trạng thái Running/Completed</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/MIG-VKS/Cai-GPU-Operator.png" alt="GPU Operator pods đang chạy"><figcaption><p>Tất cả GPU Operator pods ở trạng thái Running/Completed</p></figcaption></figure>
 
 {% hint style="warning" %}
 VKS node không có NVIDIA driver được cài sẵn. Nếu bỏ `driver.enabled=true`, pod `nvidia-device-plugin` sẽ không khởi động được và node sẽ không expose GPU resource nào.
 {% endhint %}
 
-***
+---
 
 ## Bước 2: Tạo custom MIG ConfigMap
 
@@ -98,9 +98,8 @@ yq -i '.mig-configs.custom-gpu0-3g40gb = [
 ```
 
 Trong ví dụ này:
-
-* **GPU 0** được bật MIG với profile `3g.40gb` — chia thành 2 instances, mỗi instance có 40 GB VRAM và 60 Streaming Multiprocessors.
-* **GPU 1** giữ nguyên non-MIG (full 80 GB).
+- **GPU 0** được bật MIG với profile `3g.40gb` — chia thành 2 instances, mỗi instance có 40 GB VRAM và 60 Streaming Multiprocessors.
+- **GPU 1** giữ nguyên non-MIG (full 80 GB).
 
 **Bước 2.4: Kiểm tra cấu trúc YAML trước khi apply**
 
@@ -136,7 +135,7 @@ helm upgrade gpu-operator nvidia/gpu-operator \
 Helm value `migManager.config.default` chỉ chấp nhận `"all-disabled"` hoặc `""`. Để trỏ sang ConfigMap tùy chỉnh, dùng `migManager.config.name`.
 {% endhint %}
 
-***
+---
 
 ## Bước 3: Apply MIG config lên Node
 
@@ -161,9 +160,9 @@ level=info msg="Successfully updated to MIG config: custom-gpu0-3g40gb"
 level=info msg="Changing the 'nvidia.com/mig.config.state' node label to 'success'"
 ```
 
-<figure><img src="../../../.gitbook/assets/Apply-MIG-config-len-node (1).png" alt="MIG Manager log xác nhận apply config thành công"><figcaption><p>MIG Manager xác nhận apply config thành công với trạng thái "success"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/MIG-VKS/Apply-MIG-config-len-node.png" alt="MIG Manager log xác nhận apply config thành công"><figcaption><p>MIG Manager xác nhận apply config thành công với trạng thái "success"</p></figcaption></figure>
 
-***
+---
 
 ## Bước 4: Verify node resources
 
@@ -190,17 +189,17 @@ kubectl get node <TEN_NODE> -o json \
   | jq '.metadata.labels | with_entries(select(.key | contains("mig")))'
 ```
 
-| Label                                    | Giá trị ví dụ | Ý nghĩa                      |
-| ---------------------------------------- | ------------- | ---------------------------- |
-| `nvidia.com/mig-3g.40gb.count`           | `2`           | Số MIG instance              |
-| `nvidia.com/mig-3g.40gb.memory`          | `40448 MiB`   | VRAM mỗi instance            |
-| `nvidia.com/mig-3g.40gb.multiprocessors` | `60`          | Số Streaming Multiprocessors |
-| `nvidia.com/mig.config.state`            | `success`     | Trạng thái apply config      |
-| `nvidia.com/mig.strategy`                | `mixed`       | Chiến lược MIG đang dùng     |
+| Label | Giá trị ví dụ | Ý nghĩa |
+|---|---|---|
+| `nvidia.com/mig-3g.40gb.count` | `2` | Số MIG instance |
+| `nvidia.com/mig-3g.40gb.memory` | `40448 MiB` | VRAM mỗi instance |
+| `nvidia.com/mig-3g.40gb.multiprocessors` | `60` | Số Streaming Multiprocessors |
+| `nvidia.com/mig.config.state` | `success` | Trạng thái apply config |
+| `nvidia.com/mig.strategy` | `mixed` | Chiến lược MIG đang dùng |
 
-<figure><img src="../../../.gitbook/assets/Verify-node-resources (1).png" alt="Node resources sau khi apply MIG config"><figcaption><p>Node expose đúng 2 MIG instances (mig-3g.40gb: 2) và 1 full GPU (gpu: 1)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/MIG-VKS/Verify-node-resources.png" alt="Node resources sau khi apply MIG config"><figcaption><p>Node expose đúng 2 MIG instances (mig-3g.40gb: 2) và 1 full GPU (gpu: 1)</p></figcaption></figure>
 
-***
+---
 
 ## Bước 5: Deploy workload sử dụng MIG instance
 
@@ -253,9 +252,9 @@ MIG 3g.40gb Device 0: (UUID: MIG-323b277e-e3e9-519a-9042-c8552ea98ed9)
 MIG 3g.40gb Device 0: (UUID: MIG-155d0cb1-2b7a-528c-8f8f-aeb1ab1e9d52)
 ```
 
-<figure><img src="../../../.gitbook/assets/Pod-isolation-test (1).png" alt="2 pods nhận UUID MIG khác nhau"><figcaption><p>Mỗi Pod được assign MIG UUID riêng biệt — isolation hoàn toàn giữa các workload</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/MIG-VKS/Pod-isolation-test.png" alt="2 pods nhận UUID MIG khác nhau"><figcaption><p>Mỗi Pod được assign MIG UUID riêng biệt — isolation hoàn toàn giữa các workload</p></figcaption></figure>
 
-***
+---
 
 ## (Tuỳ chọn) Bước 6: Dọn dẹp
 
@@ -269,21 +268,21 @@ kubectl delete namespace gpu-operator --force --grace-period=0
 kubectl label node <TEN_NODE> nvidia.com/mig.config- --overwrite
 ```
 
-***
+---
 
 ## Kết quả
 
 Sau khi hoàn thành, node VKS của bạn expose đồng thời cả MIG instances và full GPU:
 
-| Resource                     | K8s Resource Name        | Capacity |
-| ---------------------------- | ------------------------ | -------- |
-| GPU 0 — MIG (2x `3g.40gb`)   | `nvidia.com/mig-3g.40gb` | 2        |
-| GPU 1 — non-MIG (full 80 GB) | `nvidia.com/gpu`         | 1        |
+| Resource | K8s Resource Name | Capacity |
+|---|---|---|
+| GPU 0 — MIG (2x `3g.40gb`) | `nvidia.com/mig-3g.40gb` | 2 |
+| GPU 1 — non-MIG (full 80 GB) | `nvidia.com/gpu` | 1 |
 
 Mỗi MIG instance `3g.40gb` có: **40 GB VRAM · 60 SM · isolation hoàn toàn**.
 
-| Tôi muốn tiếp theo...         | Đi đến                                                                                                     |
-| ----------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Giám sát GPU resources        | [Giám sát hoạt động GPU Resources](lam-viec-voi-nvidia-gpu-nodegroups.md#giam-sat-hoat-dong-gpu-resources) |
-| Autoscale GPU Nodegroup       | [Autoscaling GPU Resources](lam-viec-voi-nvidia-gpu-nodegroups.md#autoscaling-gpu-resources)               |
-| So sánh các GPU Sharing modes | [Thiết lập GPU Sharing](lam-viec-voi-nvidia-gpu-nodegroups.md#thiet-lap-gpu-sharing)                       |
+| Tôi muốn tiếp theo... | Đi đến |
+|---|---|
+| Giám sát GPU resources | [Giám sát hoạt động GPU Resources](lam-viec-voi-nvidia-gpu-nodegroups.md#giam-sat-hoat-dong-gpu-resources) |
+| Autoscale GPU Nodegroup | [Autoscaling GPU Resources](lam-viec-voi-nvidia-gpu-nodegroups.md#autoscaling-gpu-resources) |
+| So sánh các GPU Sharing modes | [Thiết lập GPU Sharing](lam-viec-voi-nvidia-gpu-nodegroups.md#thiet-lap-gpu-sharing) |

@@ -8,7 +8,7 @@
 
 Vào [Team & Permissions](https://aiplatform.console.greennode.ai/team-permissions) → tab **Roles & Permissions**
 
-![Roles & Permissions](<../../../../.gitbook/assets/Role-permission-tab (1).png>)
+![Roles & Permissions](../../../.gitbook/assets/Agentbase-image/Role-permission-tab.png)
 
 ***
 
@@ -25,7 +25,7 @@ Vào [Team & Permissions](https://aiplatform.console.greennode.ai/team-permissio
 
 ## Permission Matrix
 
-> ✅ Toàn quyền · 🔸 Chỉ own (tài nguyên của mình) · ✕ Không có quyền
+> ✅ Toàn quyền  ·  🔸 Chỉ own (tài nguyên của mình)  ·  ✕ Không có quyền
 
 | Nhóm quyền                 | Permission                              | Root | Admin | Member | Viewer |
 | -------------------------- | --------------------------------------- | :--: | :---: | :----: | :----: |

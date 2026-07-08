@@ -38,11 +38,11 @@ Tính năng Backup Now cho phép bạn thực hiện một phiên sao lưu dữ 
 
 1. Truy cập vào trang quản lý Backup Server tại đây: [https://backupcenter.console.greennode.ai/backup-server/list](https://backupcenter.console.greennode.ai/backup-server/list)
 2. Chọn Backup Server cần thực hiện Backup Now.
-3.  Tìm và nhấn chọn "Backup Now" như hình bên dưới
+3.  Tìm và nhấn chọn "Backup Now" như hình bên dưới&#x20;
 
-    <figure><img src="../../../../.gitbook/assets/image (764).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (764).png" alt=""><figcaption></figcaption></figure>
 
-**Lưu ý:**
+**Lưu ý:**&#x20;
 
 * Khi backup now, các bản backup server point sẽ là các bản backup full
 * Các bản backup server point được tạo ra sẽ thuộc loại Manual và sẽ không bị ảnh hưởng bởi backup policy, người dùng cần chủ động xóa khi không có nhu cầu sử dụng.
@@ -51,11 +51,11 @@ Tính năng Backup Now cho phép bạn thực hiện một phiên sao lưu dữ 
 
 1. Truy cập vào trang quản lý Server tại đây: [https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server)
 2. Chọn Server cần thực hiện Backup Now.
-3.  Tìm và nhấn chọn "Backup Now" như hình bên dưới.
+3.  Tìm và nhấn chọn "Backup Now" như hình bên dưới.&#x20;
 
-    <figure><img src="../../../../.gitbook/assets/image (765).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (765).png" alt=""><figcaption></figcaption></figure>
 
-**Lưu ý:**
+**Lưu ý:**&#x20;
 
 * Nếu Server được chọn chưa liên kết với một Backup Server nào, hệ thống sẽ tự động tạo một Backup Server với Backup Policy và Backup Location mặc định, và liên kết với Server này, sau đó mới tiến hành tạo bản backup server point tương ứng.
 * Khi backup now, các bản backup server point sẽ là các bản backup full

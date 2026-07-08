@@ -6,11 +6,11 @@ Sau khi khởi tạo xong một AI Gateway, bạn có thể bắt đầu gửi r
 
 **Bước 2:** Trong mục **Providers & Model**, tìm mô hình AI bạn đã cấu hình. Tại mô hình đó, nhấn vào biểu tượng **Curl command** để lấy câu lệnh mẫu.
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Sao chép đoạn lệnh `curl` được hiển thị và thực thi lệnh đó trên máy tính cá nhân của bạn (qua Terminal hoặc Command Prompt).
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Ví dụ:
 
@@ -33,7 +33,7 @@ curl -X POST https://user-60108-gateway-0b50037b-93.ai-gateway.vngcloud.vn/deeps
 
 * Thay thế `{AUTHENTICATION_TOKEN}` bằng token được cung cấp sau khi tạo Gateway.
 * Bạn có thể chỉnh sửa nội dung của prompt (nội dung câu hỏi) trong phần `"content"` để phù hợp với mục đích sử dụng của mình.
-* Nếu AI Gateway mà bạn đang sử dụng **được bật chế độ xác thực (Authenticated Gateway)**, bạn cần t**hêm một header tên là `cf-aig-authorization`** vào request HTTP của bạn.
+* Nếu AI Gateway mà bạn đang sử dụng **được bật chế độ xác thực (Authenticated Gateway)**, bạn cần t**hêm một header tên là `cf-aig-authorization`** vào request HTTP của bạn.&#x20;
 
 Ví dụ, thay vì dùng header thông thường kiểu:
 

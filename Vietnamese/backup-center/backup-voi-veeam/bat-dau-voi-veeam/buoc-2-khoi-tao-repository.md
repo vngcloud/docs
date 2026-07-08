@@ -55,23 +55,23 @@ Các Repository phải có cấu hình Immutable giống nhau và cùng loại O
 
 **Bước 1:** Truy cập sử dụng phần mềm
 
-<figure><img src="../../../../.gitbook/assets/image (347).png" alt="" width="342"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (347).png" alt="" width="342"><figcaption></figcaption></figure>
 
 **Bước 2:** Chọn mục "**Backup Infrastructure**", sau đó chọn mục "**Backup Repositories**", Nhấn nút "**Add Repository**" để bắt đầu cài Repositoty:
 
-<figure><img src="../../../../.gitbook/assets/image (348).png" alt="" width="477"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (348).png" alt="" width="477"><figcaption></figcaption></figure>
 
 **Bước 3:** Tại màn hình Add Backup Repository, chọn tùy chọn "**Object storage**".
 
-<figure><img src="../../../../.gitbook/assets/image (349).png" alt="" width="423"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (349).png" alt="" width="423"><figcaption></figcaption></figure>
 
 **Bước 4:** Tại màn hình Object Storage, chọn tùy chọn "**S3 Compatible**" hoặc chọn lựa chọn đối tượng phú hợp muốn backup.
 
-<figure><img src="../../../../.gitbook/assets/image (350).png" alt="" width="430"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (350).png" alt="" width="430"><figcaption></figcaption></figure>
 
 **Bước 5:** Điều hướng đến màn hình "New Object Storage Reposity" để bắt đầu tạo Repository (nơi backup dữ liệu). Tại bước "**Name**", người dùng đặt tên và viết mô tả cho Repository. Sau đó nhấn "N**ext**"
 
-<figure><img src="../../../../.gitbook/assets/image (351).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (351).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 6:** Tại bước "**Account**", người dùng điền thông tin vào các mục sau đây và ấn "Next":
 
@@ -79,30 +79,30 @@ Các Repository phải có cấu hình Immutable giống nhau và cùng loại O
 * Region: **HCM03**
 * Credentials: nhấn "Add" để nhập "**Access key**" và "**Secret key**" . Để tạo key, có thể khảo bài hướng dẫn [<mark style="color:blue;">**Khởi tạo S3 key**</mark>](../../../vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-s3-key.md).
 
-<figure><img src="../../../../.gitbook/assets/image (352).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (352).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 7:** Tại bước "**Bucket**", người dùng chọn Container đã tạo trước trên vStorage (xem hướng dẫn tạo Container ở [<mark style="color:blue;">**đây**</mark>](../../../vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-container/khoi-tao-container.md)). Đồng thời người dùng **chọn** hoặc **tạo mới folder** để lưu trữ dữ liệu backup vào folder đó. Sau đó nhấn "Next".
 
-<figure><img src="../../../../.gitbook/assets/image (353).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (353).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Lưu ý**: Người dùng cần chọn vào mục: "Make recent backups <mark style="color:red;">**immutable**</mark> for 30 days" . Vì với tùy chọn này giúp bảo vệ bản sao khỏi những rủi ro và ngăn chặn sửa đổi hoặc xóa bản sao lưu trong một khoảng thời gian nhất định, đảm bảo luôn có sẵn bản sao lưu sạch để khôi phục hệ thống trong trường hợp bị tấn công hoặc sự cố.
 
-<figure><img src="../../../../.gitbook/assets/image (354).png" alt="" width="464"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (354).png" alt="" width="464"><figcaption></figcaption></figure>
 
 **Bước 8:** Tại màn hình "**Mount Server**", người dùng có thể chọn máy chủ cần backup dữ liệu, sau đó nhấn "**Next**".
 
-<figure><img src="../../../../.gitbook/assets/image (355).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (355).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 9:** Người dùng tiếp tục nhấn "**Apply**" tại màn hình Review
 
-<figure><img src="../../../../.gitbook/assets/image (356).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (356).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 10:** Sau khi nhấn "**Apply**" thì hệ thống sẽ tiến hành xử lý tạo Repository
 
-<figure><img src="../../../../.gitbook/assets/image (357).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (357).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Bước 11:** Khi hoàn tất thì người dùng nhấn "**Finish**".
 
-<figure><img src="../../../../.gitbook/assets/image (358).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (358).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Sau khi kết thúc quá trình tạo Repository.

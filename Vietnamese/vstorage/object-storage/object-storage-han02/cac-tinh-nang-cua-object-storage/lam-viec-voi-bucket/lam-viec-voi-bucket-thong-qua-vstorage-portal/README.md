@@ -20,7 +20,7 @@ Trước khi có thể lưu trữ dữ liệu trong vStorage, bạn phải tạo
 * Khi bạn chọn **Enable Object Locked**, chúng tôi sẽ tự động bật tính năng **Object version** cho bucket của bạn.
 {% endhint %}
 
-<figure><img src="../../../../../../../.gitbook/assets/image (996).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (996).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -44,7 +44,7 @@ Sau khi tạo bucket và tải lên object vào bucket đó. Bạn có thể xem
 * **Lifecycle**: Cung cấp thông tin các lifecycle được thiết lập cho bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại Sử dụng tính năng [Lifecycle](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/object-storage-han02/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-lifecycle).
 * **Event notification**: Cung cấp thông tin các event notification được thiết lập cho bucket. Để biết chi tiết cách sử dụng tính năng, hãy xem tại Sử dụng tính năng [Event notification](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/object-storage-han02/cac-tinh-nang-cua-object-storage/lam-viec-voi-bucket/lam-viec-voi-bucket-thong-qua-vstorage-portal/su-dung-tinh-nang-event-notification).
 
-<figure><img src="../../../../../../../.gitbook/assets/image (997).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (997).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -60,11 +60,11 @@ Sau khi tạo bucket và tải lên object vào bucket đó. Bạn có thể xem
 
 3\. Chọn biểu tượng **Action** và chọn **Configure encryption**
 
-<figure><img src="../../../../../../../.gitbook/assets/image (998).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (998).png" alt=""><figcaption></figcaption></figure>
 
 4\. Trên trang xác nhận sử dụng encryption SSE-S3, vui lòng chọn **Enable ecryption.**
 
-<figure><img src="../../../../../../../.gitbook/assets/image (999).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (999).png" alt=""><figcaption></figcaption></figure>
 
 **Lưu ý**:
 
@@ -90,6 +90,6 @@ Vui lòng download object về client và thực hiện upload lại (PUT Object
 
 3\. Chọn biểu tượng **Action** và chọn **Delete**
 
-<figure><img src="../../../../../../../.gitbook/assets/image (1000).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1000).png" alt=""><figcaption></figcaption></figure>
 
 Sau khi chọn Xóa, hệ thống sẽ tự động chuyển ra màn hình chính, nếu bạn thấy bucket vừa thực hiện biến mất khỏi danh sách thì bạn đã xoá thành công. Bucket lúc này đã được xóa vĩnh viễn khỏi hệ thống và bạn không thể khôi phục bucket cũng như các object được lưu trữ trong bucket. Vì vậy hãy đảm bảo kiểm tra dữ liệu của bạn trước khi thực hiện thao tác này.

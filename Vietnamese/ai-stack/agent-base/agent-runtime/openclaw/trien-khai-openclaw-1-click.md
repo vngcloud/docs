@@ -15,7 +15,7 @@ Bạn truy cập Agent Marketplace theo 2 cách:
 * **Cách 1**: Truy cập trang chủ GreenNode tại [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/). Tại giao diện chính, tìm đến **AI Stack** và chọn **Agentbase** → **Agent Marketplace**.
 * **Cách 2**: Truy cập trực tiếp tại [https://aiplatform.console.greennode.ai/agent-marketplace](https://aiplatform.console.greennode.ai/agent-marketplace).
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2026-04-03 154428 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 154428.png" alt=""><figcaption></figcaption></figure>
 
 ### Deploy OpenClaw Instance
 
@@ -23,7 +23,7 @@ Tại giao diện Agent Marketplace, tìm **OpenClaw Featured Card** hoặc clic
 
 #### Bước 1: Cấu hình Deploy
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2026-04-03 154505 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 154505.png" alt=""><figcaption></figcaption></figure>
 
 Màn hình cấu hình gồm 3 phần:
 
@@ -71,7 +71,7 @@ Màn hình **"Setting Up Your Workspace"** hiển thị icon xoay trong khi hệ
 
 #### Bước 3: Deploy Success
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2026-04-03 140457 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 140457.png" alt=""><figcaption></figcaption></figure>
 
 Sau khi provisioning hoàn tất, màn hình Deploy Success hiển thị thông tin instance:
 
@@ -95,7 +95,7 @@ Tại giao diện Agentbase, chọn **My Agents** từ menu điều hướng. Tr
 
 Mỗi instance trong danh sách hiển thị: tên instance, trạng thái, phiên bản, và tags.
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2026-04-03 154608 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 154608.png" alt=""><figcaption></figcaption></figure>
 
 ### Mở lại OpenClaw
 
