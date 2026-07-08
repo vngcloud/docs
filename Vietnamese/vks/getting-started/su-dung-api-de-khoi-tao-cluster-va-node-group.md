@@ -3,7 +3,7 @@
 ### Giới thiệu
 
 VKS API cho phép người dùng tự động khởi tạo **Cluster** và **Node Group** thay vì thao tác thủ công trên giao diện.\
-Tài liệu chi tiết: [https://docs.api.vngcloud.vn/service-docs/vks-api.html](https://docs.api.vngcloud.vn/service-docs/vks-api.html?utm_source=chatgpt.com)
+Tài liệu chi tiết: [https://docs.api.greennode.ai/service-docs/vks-api.html](https://docs.api.greennode.ai/service-docs/vks-api.html?utm_source=chatgpt.com)
 
 ***
 

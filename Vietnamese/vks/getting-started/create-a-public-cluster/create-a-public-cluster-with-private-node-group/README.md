@@ -21,7 +21,7 @@
 {% hint style="info" %}
 **Chú ý:**
 
-* Để được hỗ trợ tốt nhất khi sử dụng Palo Alto hoặc Pfsense, vui lòng liên hệ với đội ngũ chuyên viên của chúng tôi qua Hotline <mark style="color:green;">**1900 1549**</mark> hoặc email <mark style="color:green;">**support@vngcloud.vn**</mark><mark style="color:green;">.</mark>
+* Để được hỗ trợ tốt nhất khi sử dụng Palo Alto hoặc Pfsense, vui lòng liên hệ với đội ngũ chuyên viên của chúng tôi qua Hotline <mark style="color:green;">**1900 1549**</mark> hoặc email <mark style="color:green;">**support@greennode.ai**</mark><mark style="color:green;">.</mark>
 {% endhint %}
 
 Hoặc bạn có thể chọn sử dụng Palo Alto hoặc Pfsense để làm việc với Private Node Group theo hướng dẫn tại:

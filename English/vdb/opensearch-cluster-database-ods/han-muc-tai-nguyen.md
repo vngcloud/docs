@@ -1,6 +1,6 @@
 # Resource Limits
 
-The vDB OpenSearch product establishes resource limits to ensure that we can provide fast and flexible services for all customers. These resource limits are the maximum levels we recommend, and some limits can be customized according to your storage needs. To submit a request for limit increase, please visit the GreenNode Support Center and create a request [here](https://helpdesk.vngcloud.vn/portal/en/newticket).
+The vDB OpenSearch product establishes resource limits to ensure that we can provide fast and flexible services for all customers. These resource limits are the maximum levels we recommend, and some limits can be customized according to your storage needs. To submit a request for limit increase, please visit the GreenNode Support Center and create a request [here](https://helpdesk.greennode.ai/portal/en/newticket).
 
 ## Alpha Phase
 

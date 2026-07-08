@@ -21,7 +21,7 @@ VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới với các c
 
 * **Resource Tag** cho phép user quản lý cấu hình một tập nhãn dạng key/value lên toàn bộ tài nguyên bao gồm **Server** và **Volume** thuộc một **Node Group**
 * Tìm hiểu thêm tại [Resource Tag](../node-groups/resource-tag.md).
-* Tài liệu VKS API Docs: [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html).
+* Tài liệu VKS API Docs: [VKS API](https://docs.api.greennode.ai/service-docs/vks-api.html).
 * Tài liệu Terraform tạo node group bằng Infrastructure as Code: [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster_node_group).
 
 ***
@@ -37,7 +37,7 @@ VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới với các c
   * Cơ chế bảo vệ cluster: tự dừng thay thế khi số node lỗi vượt ngưỡng — tránh xóa hàng loạt do sự cố hạ tầng diện rộng.
   * Cấu hình có hiệu lực ngay — không cần khởi động lại cluster hay node.
   * Hướng dẫn chi tiết tại [Auto Healing](../clusters/cau-hinh-auto-healing.md).
-  * Tài liệu API để tạo và quản lý auto healing qua API: [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html).
+  * Tài liệu API để tạo và quản lý auto healing qua API: [VKS API](https://docs.api.greennode.ai/service-docs/vks-api.html).
   * Tài liệu Terraform để triển khai auto healing bằng Infrastructure as Code: [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
 
 ***
@@ -49,7 +49,7 @@ VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới nhất. Dư�
 **Tính năng mới:**
 
 * **Usage & Limits:** VKS Portal bổ sung trang **Usage & Limits** giúp bạn theo dõi mức sử dụng tài nguyên (số Kubernetes Cluster đang dùng / giới hạn) và xem giới hạn cấu hình (Node Groups per Cluster, Nodes per Node Group) ngay trên giao diện. Trang này chỉ đọc (read-only) và tích hợp hai liên kết tiện ích:
-  * **Request limit increase** — gửi yêu cầu tăng giới hạn trực tiếp đến đội ngũ hỗ trợ 24/7 tại [GreenNode Helpdesk](https://helpdesk.vngcloud.vn/portal/en/home).
+  * **Request limit increase** — gửi yêu cầu tăng giới hạn trực tiếp đến đội ngũ hỗ trợ 24/7 tại [GreenNode Helpdesk](https://helpdesk.greennode.ai/portal/en/home).
   * **View resource limits on vServer ↗** — xem toàn bộ giới hạn tài nguyên (vCPU, RAM, Disk...) tại [vServer Limits](https://hcm-3.console.greennode.ai/vserver/limit).
   * Hướng dẫn chi tiết tại [Usage & Limits](../usage-limits.md).
 
@@ -65,7 +65,7 @@ VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới nhất, mang
   * Xem ngày hết hạn certificate trực tiếp trên Portal trước khi tải xuống.
   * Tự động renew certificate khi đủ điều kiện; hỗ trợ renew thủ công nếu cần.
   * Hướng dẫn chi tiết tại [Kubeconfig](../clusters/kubeconfig.md).
-  * Tài liệu API để tạo và quản lý cluster qua API: [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html).
+  * Tài liệu API để tạo và quản lý cluster qua API: [VKS API](https://docs.api.greennode.ai/service-docs/vks-api.html).
   * Tài liệu Terraform để triển khai cluster bằng Infrastructure as Code: [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
 
 ***
@@ -80,7 +80,7 @@ VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới nhất, mang
   * **Miễn phí** trong giai đoạn đầu ra mắt. Chi phí chính thức sẽ được cập nhật sau.
   * Tìm hiểu về khái niệm và cách quản lý tại [Multi-AZ Control Plane](../clusters/multi-az-control-plane.md).
   * Hướng dẫn khởi tạo chi tiết tại [Khởi tạo một Multi-AZ Cluster](../getting-started/khoi-tao-mot-multi-az-cluster.md).
-  * Tài liệu API để tạo và quản lý cluster qua API: [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html).
+  * Tài liệu API để tạo và quản lý cluster qua API: [VKS API](https://docs.api.greennode.ai/service-docs/vks-api.html).
   * Tài liệu Terraform để triển khai cluster bằng Infrastructure as Code: [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
 
 ***

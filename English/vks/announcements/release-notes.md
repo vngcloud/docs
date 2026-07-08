@@ -21,7 +21,7 @@ VKS (VNG Kubernetes Engine) has just released a new update with the following im
 
 * **Resource Tag** lets you manage a set of key/value labels across all resources — including Servers and Volumes — that belong to a Node Group.
   * Learn more at [Resource Tag](../node-groups/resource-tag.md).
-  * VKS API Docs: [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html).
+  * VKS API Docs: [VKS API](https://docs.api.greennode.ai/service-docs/vks-api.html).
   * Terraform documentation for creating a node group as Infrastructure as Code: [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster_node_group).
 
 ***
@@ -37,7 +37,7 @@ VKS (VNG Kubernetes Engine) has just released its latest update with the followi
   * Built-in cluster protection: automatically halts replacements when the number of faulty nodes exceeds the threshold — preventing mass deletion during widespread infrastructure incidents.
   * Configuration changes take effect immediately — no cluster or node restart required.
   * See [Auto Healing](../clusters/configure-auto-healing.md) for detailed instructions.
-  * API documentation for creating and managing Auto Healing via API: [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html).
+  * API documentation for creating and managing Auto Healing via API: [VKS API](https://docs.api.greennode.ai/service-docs/vks-api.html).
   * Terraform documentation for deploying Auto Healing with Infrastructure as Code: [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
 
 ***
@@ -49,7 +49,7 @@ VKS (VNG Kubernetes Engine) has just released its latest update, bringing a nota
 **New Features:**
 
 * **Usage & Limits:** The VKS Portal now includes a **Usage & Limits** page, giving you a clear view of your current resource usage (Kubernetes Clusters used vs. limit) and configuration limits (Node Groups per Cluster, Nodes per Node Group) — all in a read-only interface. Two useful quick links are integrated:
-  * **Request limit increase** — submit a limit increase request directly to the 24/7 support team at [GreenNode Helpdesk](https://helpdesk.vngcloud.vn/portal/en/home).
+  * **Request limit increase** — submit a limit increase request directly to the 24/7 support team at [GreenNode Helpdesk](https://helpdesk.greennode.ai/portal/en/home).
   * **View resource limits on vServer ↗** — view the full set of resource limits (vCPU, RAM, Disk, etc.) at [vServer Limits](https://hcm-3.console.greennode.ai/vserver/limit).
   * See [Usage & Limits](../usage-limits.md) for detailed instructions.
 
@@ -65,7 +65,7 @@ VKS (VNG Kubernetes Engine) has just released its latest update, bringing a nota
   * View the certificate expiry date directly on the Portal before downloading.
   * Automatic certificate renewal when eligible; manual renewal supported when needed.
   * For detailed instructions, see [Kubeconfig](../clusters/kubeconfig.md).
-  * API documentation for creating and managing clusters via API: [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html).
+  * API documentation for creating and managing clusters via API: [VKS API](https://docs.api.greennode.ai/service-docs/vks-api.html).
   * Terraform documentation for deploying clusters with Infrastructure as Code: [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
 
 ***
@@ -80,7 +80,7 @@ VKS (VNG Kubernetes Engine) has just released its latest update, bringing a majo
   * **Free of charge** during the initial release period. Official pricing will be announced at a later date.
   * Learn about the concept and management at [Multi-AZ Control Plane](../clusters/multi-az-control-plane.md).
   * Step-by-step creation guide at [Create a Multi-AZ Cluster](../getting-started/create-a-multi-az-cluster.md).
-  * API documentation for creating and managing clusters via API: [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html).
+  * API documentation for creating and managing clusters via API: [VKS API](https://docs.api.greennode.ai/service-docs/vks-api.html).
   * Terraform documentation for deploying clusters with Infrastructure as Code: [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
 
 ***

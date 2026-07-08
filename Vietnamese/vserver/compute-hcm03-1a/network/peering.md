@@ -8,7 +8,7 @@ VPC peering là một dịch vụ trong môi trường đám mây cho phép kế
 
 #### **Tạo Peering** <a href="#peering-taopeering" id="peering-taopeering"></a>
 
-Hiện tại chúng tôi chưa hỗ trợ tạo VPC Peering trên giao diện. Để thực hiện thao tác tạo, xin vui lòng gởi yêu cầu cho chúng tôi qua hộp thư: [support@vngcloud.vn](mailto:support@vngcloud.vn).
+Hiện tại chúng tôi chưa hỗ trợ tạo VPC Peering trên giao diện. Để thực hiện thao tác tạo, xin vui lòng gởi yêu cầu cho chúng tôi qua hộp thư: [support@greennode.ai](mailto:support@greennode.ai).
 
 #### **Xóa Peering** <a href="#peering-xoapeering" id="peering-xoapeering"></a>
 

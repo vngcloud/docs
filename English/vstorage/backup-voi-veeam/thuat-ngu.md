@@ -2,7 +2,7 @@
 
 ## Overview
 
-In the article introducing and guiding the use of the service, there are terms introduced by the Veeam software provider that you might not fully understand the context of when using these terms. To better understand these terms, you can refer to the Glossary below, or if you have any other questions, you can contact us by submitting a ticket at [https://helpdesk.vngcloud.vn/](https://helpdesk.vngcloud.vn/) or sending an email to support@vngcloud.vn for assistance in clarifying the terms.
+In the article introducing and guiding the use of the service, there are terms introduced by the Veeam software provider that you might not fully understand the context of when using these terms. To better understand these terms, you can refer to the Glossary below, or if you have any other questions, you can contact us by submitting a ticket at [https://helpdesk.greennode.ai/](https://helpdesk.greennode.ai/) or sending an email to support@greennode.ai for assistance in clarifying the terms.
 
 ## List
 

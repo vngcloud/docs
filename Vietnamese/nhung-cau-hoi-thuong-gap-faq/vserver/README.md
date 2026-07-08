@@ -70,7 +70,7 @@ Nếu Server hết hạn, trên giao diện trang chủ sẽ có trạng thái E
 
 ### \[vServer] Tôi muốn Reset Pass của server ?
 
-Bạn không thể tự reset password cho Server của mình. Để tiến hành reset password cho Server, vui lòng gởi request tại trang [Hỗ trợ ](https://helpdesk.vngcloud.vn/)của chúng tôi.&#x20;
+Bạn không thể tự reset password cho Server của mình. Để tiến hành reset password cho Server, vui lòng gởi request tại trang [Hỗ trợ ](https://helpdesk.greennode.ai/)của chúng tôi.&#x20;
 
 ### \[vServer] Tôi không allow được 1 số port trên Webmin Vserver ?
 
@@ -146,7 +146,7 @@ Wan IP khi xóa đi sẽ không thể lấy lại được. Nếu Bạn muốn g
 
 ### \[vServer] vServer có giới hạn băng thông (bandwidth, lưu lượng) không? Sử dụng quá băng thông có hiện tượng gì không?
 
-Hiện tại chúng tôi đang giới hạn băng thông ở mức 100mbps, nếu bạn muốn nâng lên thì vui lòng liên hệ nhân viên kinh doanh hoặc gởi yêu cầu tại trang [Hỗ trợ ](https://helpdesk.vngcloud.vn/)để chúng tôi có thể hỗ trợ bạn tăng bandwidth, lưu ý rằng việc tăng Bandwidth sẽ tốn thêm chi phí của bạn.
+Hiện tại chúng tôi đang giới hạn băng thông ở mức 100mbps, nếu bạn muốn nâng lên thì vui lòng liên hệ nhân viên kinh doanh hoặc gởi yêu cầu tại trang [Hỗ trợ ](https://helpdesk.greennode.ai/)để chúng tôi có thể hỗ trợ bạn tăng bandwidth, lưu ý rằng việc tăng Bandwidth sẽ tốn thêm chi phí của bạn.
 
 ### \[vServer] Tôi muốn tăng quota security policy được không?
 
@@ -207,7 +207,7 @@ Bạn vui lòng vào Group Default add lại các rule Ingress và Egress defaul
 
 ### \[vServer] "vServer: Tôi không tạo thêm được security group? "
 
-Mặc định 1 user chỉ được phép tạo tối đa 10 security group. Nếu bạn có nhu cầu tạo thêm vui lòng liên hệ bộ phận hỗ trợ kĩ thuật hoặc gửi mail vào [https://helpdesk.vngcloud.vn/](https://helpdesk.vngcloud.vn/) để được hỗ trợ, tuy nhiên tối đa là 20 sercurity group.
+Mặc định 1 user chỉ được phép tạo tối đa 10 security group. Nếu bạn có nhu cầu tạo thêm vui lòng liên hệ bộ phận hỗ trợ kĩ thuật hoặc gửi mail vào [https://helpdesk.greennode.ai/](https://helpdesk.greennode.ai/) để được hỗ trợ, tuy nhiên tối đa là 20 sercurity group.
 
 ### \[vServer] Tại sao giao diện console khi đăng nhập cứ báo lỗi no map for 231?
 
@@ -284,4 +284,4 @@ Hiện tại GreenNode không hỗ trợ tách server sang portal khác
 
 ### \[vServer] Tại sao tôi lỡ chuyển nhầm farm thì báo lỗi không thể truy cập vào server nữa?
 
-Bạn có thể thử truy cập lại Server. Trường hợp vẫn báo lỗi, vui lòng gởi yêu cầu báo lỗi cho chúng tôi tại trang [Hỗ trợ](https://helpdesk.vngcloud.vn/).
+Bạn có thể thử truy cập lại Server. Trường hợp vẫn báo lỗi, vui lòng gởi yêu cầu báo lỗi cho chúng tôi tại trang [Hỗ trợ](https://helpdesk.greennode.ai/).

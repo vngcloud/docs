@@ -12,7 +12,7 @@
 
 Để bắt đầu sử dụng dịch vụ vDCI, người dùng cần thực hiện bước chuẩn bị ban đầu như sau:
 
-1. **Liên hệ bộ phận kỹ thuật hoặc Customer Success** để gửi yêu cầu sử dụng dịch vụ vDCI[ tại đây](https://helpdesk.vngcloud.vn/portal/en/home).
+1. **Liên hệ bộ phận kỹ thuật hoặc Customer Success** để gửi yêu cầu sử dụng dịch vụ vDCI[ tại đây](https://helpdesk.greennode.ai/portal/en/home).
 2. Trong yêu cầu cần nêu rõ:
    * Dự kiến số lượng máy ảo cần sử dụng
    * Yêu cầu cấu hình (vCPU, RAM, Disk, GPU nếu có)

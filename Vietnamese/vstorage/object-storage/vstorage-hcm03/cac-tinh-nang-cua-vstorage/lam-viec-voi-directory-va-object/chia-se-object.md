@@ -48,7 +48,7 @@ Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung c�
 1. [Khởi tạo tài khoản Service Account](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-tai-khoan-service-account.md) nếu chưa có
 2. Lấy thông tin access token. Tham khảo tại [Chứng thực với Service Account](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/chung-thuc-voi-service-account.md)
 3. Nếu bạn muốn tạo đường dẫn **Presigned URL** thì bạn cần nhập thông tin **S3 key**. Thông tin S3 key có thể lấy tại IAM. Bạn có thể chọn [Nhấn vào đây để vào vIAM và quản lý s3 keys.](https://iam.console.greennode.ai/vstorage-credentials/s3) để xem thông tin chi tiết các cặp s3 key đã tạo cũng như tạo mới cặp S3 key để sử dụng. Chi tiết tham khảo thêm tại [Khởi tạo S3 key](../../quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/khoi-tao-s3-key.md).
-4. Lấy đường dẫn Tempoary URL hoặc Presigned URL cho object thông qua vStorage API. Hãy xem [API download/chia sẻ object](https://docs.api.vngcloud.vn/service-docs/vstorage-api.html#tag/object/operation/retrieveDownloadObjectTempURLUsingPOST).
+4. Lấy đường dẫn Tempoary URL hoặc Presigned URL cho object thông qua vStorage API. Hãy xem [API download/chia sẻ object](https://docs.api.greennode.ai/service-docs/vstorage-api.html#tag/object/operation/retrieveDownloadObjectTempURLUsingPOST).
 
 **Ví dụ 1: Lấy temporary URL cho object**
 

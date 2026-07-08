@@ -110,5 +110,5 @@ MaaS hỗ trợ nhiều loại mô hình khác nhau:
 
 Lưu ý:
 
-* Bạn có thể tạo [ticket](https://helpdesk.vngcloud.vn/portal/vi/newticket) để yêu cầu model mong muốn
+* Bạn có thể tạo [ticket](https://helpdesk.greennode.ai/portal/vi/newticket) để yêu cầu model mong muốn
 

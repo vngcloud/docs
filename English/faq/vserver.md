@@ -70,7 +70,7 @@ To reboot the Server, please refer to your Server's Reboot page.
 
 ### \[vServer] I want to Reset the Server's password?&#x20;
 
-You cannot reset the password for your Server yourself. To reset the password for the Server, please send a request on our [<mark style="color:blue;">Support page</mark>](https://helpdesk.vngcloud.vn/portal/en/home).
+You cannot reset the password for your Server yourself. To reset the password for the Server, please send a request on our [<mark style="color:blue;">Support page</mark>](https://helpdesk.greennode.ai/portal/en/home).
 
 ### \[vServer] I cannot allow some ports on Webmin vServer?&#x20;
 
@@ -144,7 +144,7 @@ Once the WAN IP is deleted, it cannot be recovered. If you want to keep the WAN 
 
 ### \[vServer] Does vServer have bandwidth limits? What happens if I exceed the bandwidth?&#x20;
 
-Currently, we limit the bandwidth to 100mbps. If you want to increase it, please contact the sales staff or send a request on the [<mark style="color:blue;">Support page</mark>](https://helpdesk.vngcloud.vn/portal/en/home) for us to assist you in increasing the bandwidth. Note that increasing bandwidth will incur additional costs.
+Currently, we limit the bandwidth to 100mbps. If you want to increase it, please contact the sales staff or send a request on the [<mark style="color:blue;">Support page</mark>](https://helpdesk.greennode.ai/portal/en/home) for us to assist you in increasing the bandwidth. Note that increasing bandwidth will incur additional costs.
 
 ### \[vServer] Can I increase the security policy quota?&#x20;
 
@@ -210,7 +210,7 @@ Please go to the Default Group and re-add the default Ingress and Egress rules a
 
 ### \[vServer] "vServer: I can't create additional security groups?"&#x20;
 
-By default, each user is only allowed to create up to 10 security groups. If you need to create more, please contact the technical support department or send an email to [https://helpdesk.vngcloud.vn/](https://helpdesk.vngcloud.vn/) for assistance, however, the maximum is 20 security groups.
+By default, each user is only allowed to create up to 10 security groups. If you need to create more, please contact the technical support department or send an email to [https://helpdesk.greennode.ai/](https://helpdesk.greennode.ai/) for assistance, however, the maximum is 20 security groups.
 
 ### \[vServer] Why does the console interface keep reporting 'no map for 231' error?&#x20;
 
@@ -291,5 +291,5 @@ Currently, GreenNode does not support splitting servers into another portal.
 
 ### \[vServer] Why does it report unable to access the server if I mistakenly switch farms?&#x20;
 
-You can try to access the server again. If the error still persists, please send a bug report to us through the [<mark style="color:blue;">Support page</mark>](https://helpdesk.vngcloud.vn/portal/en/home).
+You can try to access the server again. If the error still persists, please send a bug report to us through the [<mark style="color:blue;">Support page</mark>](https://helpdesk.greennode.ai/portal/en/home).
 
