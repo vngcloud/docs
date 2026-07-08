@@ -4,7 +4,7 @@ Multi-AZ Cluster allows deploying the Control Plane across multiple Availability
 
 To learn more about concepts, architecture, and the comparison between Single-AZ and Multi-AZ, please refer to [Multi-AZ Control Plane](../clusters/multi-az-control-plane.md).
 
-In addition to creating via the Portal, you can also create a Multi-AZ Cluster via [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html) or [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
+In addition to creating via the Portal, you can also create a Multi-AZ Cluster via [VKS API](https://docs.api.greennode.ai/service-docs/vks-api.html) or [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
 
 ***
 

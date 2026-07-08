@@ -51,7 +51,7 @@ If the current limits do not meet your needs, you can request an increase:
 **Step 1: Open the request form**
 
 1. On the **Usage & Limits** page, click the **Request limit increase** button in the top-right corner.
-2. Your browser will open the GreenNode support portal at [https://helpdesk.vngcloud.vn/portal/en/home](https://helpdesk.vngcloud.vn/portal/en/home).
+2. Your browser will open the GreenNode support portal at [https://helpdesk.greennode.ai/portal/en/home](https://helpdesk.greennode.ai/portal/en/home).
 
 **Step 2: Submit the request**
 
@@ -72,4 +72,4 @@ After completing these steps, you can:
 | --------------------------------- | ----------------------------------------------------------------- |
 | Create my first cluster           | [Getting Started with VKS](getting-started/)                      |
 | View full vServer resource limits | [vServer Limits](https://hcm-3.console.greennode.ai/vserver/limit) |
-| Contact support                   | [GreenNode Helpdesk](https://helpdesk.vngcloud.vn/portal/en/home) |
+| Contact support                   | [GreenNode Helpdesk](https://helpdesk.greennode.ai/portal/en/home) |

@@ -33,5 +33,5 @@ GreenNode Backup Center là giải pháp toàn diện và đáng tin cậy để
 
 Hãy liên hệ với GreenNode ngay hôm nay để tìm hiểu thêm về Backup Center và trải nghiệm giải pháp bảo vệ dữ liệu tối ưu cho doanh nghiệp của bạn thông qua các kênh sau:
 
-* Email [support@vngcloud.vn](mailto:support@vngcloud.vn) hoặc số hotline **19001549**
+* Email [support@greennode.ai](mailto:support@greennode.ai) hoặc số hotline **19001549**
 * Tạo yêu cầu hỗ trợ: [https://www.vngcloud.vn/vi/web/guest/contact](https://vngcloud.vn/en/web/guest/contact).

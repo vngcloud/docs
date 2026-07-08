@@ -48,7 +48,7 @@ Sau khi nhấn "**Start Replication**" hệ thống sẽ tiến hành các quy t
    * **Error:** Nếu trạng thái là "Error", có nghĩa là quá trình "Start Replication" chưa được bắt đầu hoặc đã gặp lỗi. Bạn có thể:
      * **Xem chi tiết lỗi:** Truy cập vào thông tin chi tiết của máy chủ để xem lỗi cụ thể là gì. Từ đó, bạn có thể thử tự mình giải quyết vấn đề dựa trên thông tin lỗi.
      * **Liên hệ hỗ trợ:** Nếu không thể tự giải quyết, hãy liên hệ với đội ngũ hỗ trợ của chúng tôi để được giúp đỡ theo các kênh sau:
-       * Email [**support@vngcloud.vn**](mailto:support@vngcloud.vn) or hotline **19001549 – Ext 3.**
+       * Email [**support@greennode.ai**](mailto:support@greennode.ai) or hotline **19001549 – Ext 3.**
        * Open ticket: [https://vngcloud.vn/en/web/guest/contact](https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fu12870758.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3D6Th82stgZiRII4JWBZ2k-2F8jp0RwIXS6fxA7KQMXjUq8DSCsrmL59yXstoJFgaU1dGY-2FSWg-2FK9UdGxb9Lh9dNFA-3D-3DpvNZ_Ym-2Fxt4z9Amb7foJoUGq7k-2FFaxzUNhQVDcUTybZdrS2NXAbbCaEQkSCrQOhYjTHUSbv6080NfkWdCEMWKJJF2zpfOBUaPuOIa3OzTC0yp1D9JlA3uof8O-2BtBLR8V2gs8RQIrzb7xDzuI-2FW-2BVnmHahaTWks-2FX1rqpdHNVHwVyZ6vhj-2BZLRAIyEc2XrBxbfG0QrF7-2FsBJLgoViI1e7tTyjc8Q-3D-3D\&data=05%7C01%7Ctult4%40vng.com.vn%7C7e33555fd46c4091057908db827ef130%7C7c112a6e10e24e09afc42e37bc60d821%7C0%7C0%7C638247253964298461%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C\&sdata=VmVhSabKwqQW2lPslozGS3cQzp0jF4ShJuofnhGp%2Fzs%3D\&reserved=0)
 
 **Lưu ý quan trọng:**

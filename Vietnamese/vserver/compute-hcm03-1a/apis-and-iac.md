@@ -15,6 +15,6 @@ GreenNode cung cấp RESTful API để người dùng có thể quản lý tài 
 
 | Tài liệu                                  | Mô tả                             |
 | ----------------------------------------- | --------------------------------- |
-| [Tutorial](https://docs.api.vngcloud.vn/) | Hướng dẫn xác thực và sử dụng API |
+| [Tutorial](https://docs.api.greennode.ai/) | Hướng dẫn xác thực và sử dụng API |
 
 <br>

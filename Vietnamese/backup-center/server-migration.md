@@ -74,7 +74,7 @@ lsblk -o NAME,PTTYPE
 
 ### 1. Tạo Veeam Account
 
-* Khách hàng gửi request qua 247 hoặc tạo ticket [tại đây](https://helpdesk.vngcloud.vn/portal/en/newticket?departmentId=854860000000006907\&layoutId=854860000000074011) với nhu cầu migrate server từ hệ thống khác lên GreenNode.
+* Khách hàng gửi request qua 247 hoặc tạo ticket [tại đây](https://helpdesk.greennode.ai/portal/en/newticket?departmentId=854860000000006907\&layoutId=854860000000074011) với nhu cầu migrate server từ hệ thống khác lên GreenNode.
 * Sau khi nhận request, GreenNode sẽ hỗ trợ tạo account trên Veeam Portal và cung cấp thông tin user, password, endpoint và port của Veeam cloud repository cho khách hàng.
 
 ***

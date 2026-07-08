@@ -51,7 +51,7 @@ Nếu giới hạn hiện tại chưa đáp ứng nhu cầu, bạn có thể g�
 **Bước 1: Mở form yêu cầu**
 
 1. Trên trang **Usage & Limits**, nhấn nút **Request limit increase** ở góc trên bên phải.
-2. Trình duyệt chuyển đến trang hỗ trợ GreenNode tại [https://helpdesk.vngcloud.vn/portal/en/home](https://helpdesk.vngcloud.vn/portal/en/home).
+2. Trình duyệt chuyển đến trang hỗ trợ GreenNode tại [https://helpdesk.greennode.ai/portal/en/home](https://helpdesk.greennode.ai/portal/en/home).
 
 **Bước 2: Gửi yêu cầu**
 
@@ -72,4 +72,4 @@ Sau khi hoàn thành, bạn có thể:
 | --------------------------- | ----------------------------------------------------------------- |
 | Tạo cluster đầu tiên        | [Bắt đầu với VKS](getting-started/)                               |
 | Xem giới hạn vServer đầy đủ | [vServer Limits](https://hcm-3.console.greennode.ai/vserver/limit) |
-| Gửi yêu cầu hỗ trợ          | [GreenNode Helpdesk](https://helpdesk.vngcloud.vn/portal/en/home) |
+| Gửi yêu cầu hỗ trợ          | [GreenNode Helpdesk](https://helpdesk.greennode.ai/portal/en/home) |

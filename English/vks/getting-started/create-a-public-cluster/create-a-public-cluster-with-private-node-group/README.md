@@ -21,7 +21,7 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 {% hint style="info" %}
 **Attention:**
 
-* For the best support when using Palo Alto or Pfsense, please contact our team of experts via Hotline **1900 1549** or email **support@vngcloud.vn**
+* For the best support when using Palo Alto or Pfsense, please contact our team of experts via Hotline **1900 1549** or email **support@greennode.ai**
 {% endhint %}
 
 Or you can choose to use Palo Alto or Pfsense to work with Private Node Group according to instructions at:

@@ -4,7 +4,7 @@ To use vStorage API, you need at least 1 Client ID and Client Secret (this infor
 
 **Basic process:** Authenticate -> Create project -> Create container -> Upload Object
 
-For a detailed list of vStorage API, refer to [https://docs.api.vngcloud.vn/service-docs/vstorage-api.html#tag/containers](https://docs.api.vngcloud.vn/service-docs/vstorage-api.html#tag/containers).
+For a detailed list of vStorage API, refer to [https://docs.api.greennode.ai/service-docs/vstorage-api.html#tag/containers](https://docs.api.greennode.ai/service-docs/vstorage-api.html#tag/containers).
 
 Below is an example using vStorage API to create a new container in a project:
 
