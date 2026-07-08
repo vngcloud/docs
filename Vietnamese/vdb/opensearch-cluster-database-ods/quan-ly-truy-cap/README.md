@@ -4,14 +4,14 @@
 
 Trên dịch vụ vDB, bạn có thể sử dụng 2 loại tài khoản để truy cập vào OpenSearch. Chi tiết 2 loại này bao gồm:
 
-* **Root user account:** Là tài khoản [khởi tạo đầu tiên](https://register.vngcloud.vn/signup) để truy cập vào GreenNode với đầy đủ quyền truy cập vào tất cả dịch vụ tài nguyên trên GreenNode.
+* **Root user account:** Là tài khoản [khởi tạo đầu tiên](https://register.greennode.ai/signup?hl=en) để truy cập vào GreenNode với đầy đủ quyền truy cập vào tất cả dịch vụ tài nguyên trên GreenNode.
 * **IAM user account:** Là tài khoản được khởi tạo thông qua hệ thống IAM và được sử dụng để thao tác thông qua vDB Portal.
 
 ### Root user account <a href="#root-user-account" id="root-user-account"></a>
 
 #### **Khởi tạo tài khoản người dùng Root (Root User Account)**
 
-Để khởi tạo tài khoản người dùng Root, bạn vui lòng đăng ký tài khoản tại trang đăng ký [https://register.vngcloud.vn/signup](https://register.vngcloud.vn/signup).
+Để khởi tạo tài khoản người dùng Root, bạn vui lòng đăng ký tài khoản tại trang đăng ký [https://register.greennode.ai/signup?hl=en](https://register.greennode.ai/signup?hl=en).
 
 Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông tin sau để truy cập và làm việc với tài nguyên sử dụng tài khoản người dùng Root:
 
@@ -22,7 +22,7 @@ Sau khi khởi tạo tài khoản người dùng Root, bạn thu thập thông t
 
 #### **Hủy tài khoản người dùng Root (Root User Account)**
 
-Để hủy tài khoản Root, bạn cần liên hệ với chúng tôi thông qua việc tạo một ticket yêu cầu hủy tài khoản. Chi tiết xem thêm tại [Hướng dẫn hủy tài khoản](https://docs.vngcloud.vn/vng-cloud-document/v/vn/huong-dan-su-dung-tai-khoan/huong-dan-huy-tai-khoan).
+Để hủy tài khoản Root, bạn cần liên hệ với chúng tôi thông qua việc tạo một ticket yêu cầu hủy tài khoản. Chi tiết xem thêm tại [Hướng dẫn hủy tài khoản](https://docs.greennode.ai/vn/huong-dan-su-dung-tai-khoan/huong-dan-huy-tai-khoan).
 
 ### IAM user account <a href="#root-user-account-1" id="root-user-account-1"></a>
 
@@ -81,7 +81,7 @@ Sau khi bạn đã khởi tạo IAM User Account và Policy mong muốn, tiếp 
 
 Thực hiện theo các bước bên dưới để đăng nhập vào vDB OpenSearch với tài khoản người dùng Root:
 
-1. Truy cập vào trang đăng nhập của dịch vụ vDB OpenSearch: [https://signin.vngcloud.vn.](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=f09ybYi-GTZYYwuHVRv2f1UPRhjM_wI-0J_aXpbUsv4\&codeChallengeMethod=S256\&appState=55eab53a-30f3-43ae-837b-bf3a469dd9db\&redirectUri=https%3A%2F%2Fdashboard.console.greennode.ai%2F)
+1. Truy cập vào trang đăng nhập của dịch vụ vDB OpenSearch: [https://vdb.console.greennode.ai/opensearch/cluster](https://vdb.console.greennode.ai/opensearch/cluster)
 2. Trang đăng nhập chính sẽ xuất hiện. Chọn **ĐĂNG NHẬP VỚI ROOT USER**.
 3. Nhập địa chỉ **email** và **mật khẩu** được liên kết với tài khoản của bạn và chọn **Đăng nhập**. Nếu trước đó bạn đã đăng nhập với tư cách người dùng root trong trình duyệt này, thì trình duyệt của bạn có thể nhớ địa chỉ email cho tài khoản Root User Account. Nếu vậy, bạn sẽ thấy màn hình hiển thị trong bước tiếp theo. Nếu trước đây bạn đã đăng nhập với tư cách là người dùng IAM sử dụng tài khoản người dùng IAM (IAM User Account) bằng trình duyệt này, thì trình duyệt của bạn có thể hiển thị trang đăng nhập của người dùng IAM thay thế. Để quay lại trang đăng nhập chính, hãy chọn **ĐĂNG NHẬP VỚI ROOT USER.**
 4. Sau khi đăng nhập thành công, bạn có toàn quyền truy cập và thực hiện các tính năng được cung cấp bởi dịch vụ vDB OpenSearch trên các tài nguyên của bạn.
@@ -90,7 +90,7 @@ Thực hiện theo các bước bên dưới để đăng nhập vào vDB OpenSe
 
 Thực hiện theo các bước bên dưới để đăng nhập vào vDB OpenSearch với tài khoản người dùng IAM:
 
-1. Truy cập vào trang đăng nhập của dịch vụ vDB OpenSearch: [https://signin.vngcloud.vn.](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=f09ybYi-GTZYYwuHVRv2f1UPRhjM_wI-0J_aXpbUsv4\&codeChallengeMethod=S256\&appState=55eab53a-30f3-43ae-837b-bf3a469dd9db\&redirectUri=https%3A%2F%2Fdashboard.console.greennode.ai%2F)
+1. Truy cập vào trang đăng nhập của dịch vụ vDB OpenSearch: [https://vdb.console.greennode.ai/opensearch/cluster](https://vdb.console.greennode.ai/opensearch/cluster)
 2. Trang đăng nhập chính sẽ xuất hiện. Chọn **ĐĂNG NHẬP VỚI IAM USER ACCOUNT**.
 3. Nhập địa chỉ **email** của người dùng Root khi đăng ký tài khoản GreenNode.
 4. Nhập **tên người dùng** và **mật khẩu** của tài khoản IAM user account được tạo trên hệ thống vIAM.
