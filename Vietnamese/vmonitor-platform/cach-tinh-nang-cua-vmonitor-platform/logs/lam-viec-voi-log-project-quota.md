@@ -10,7 +10,7 @@ Một Log project là một thuật ngữ trên vMonitor Platform thể hiện m
 
 Để khởi tạo một log project, hãy thực hiện theo các bước bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn **Quota & Usage**.
 3. Chọn **Buy a log project.**
 4. Nhập **Log project name.** Theo quy định của chúng tôi, tên log project phải dài từ 1 (tối thiểu) đến 63 (tối đa) ký tự. **Log project name** có thể bao gồm các chữ cái viết thường (a-z), số (0-9), dấu gạch ngang (-). **Log project name** phải bắt đầu bằng một chữ cái viết thường và kết thúc bằng một chữ cái viết thường hoặc một chữ số.
@@ -29,7 +29,7 @@ Cách tính chi phí cho mỗi gói log project được chúng tôi công khai 
 
 Sau khi bạn khởi tạo Log project, bạn có thể xem thông tin gói Log project mà bạn vừa thực hiện khởi tạo bằng cách:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục **Log**.
 4. Hệ thống hiển thị thông tin gói **Log project** đã được khởi tạo và **usage** thực tế bạn đang sử dụng của gói **Log project** đó. Bạn có thể thực hiện Gia hạn trong vòng 7 ngày trước ngày hết hạn của gói Log project hoặc Tăng hạn mức gói lên cao hơn bằng cách chọn **Gia hạn** hoặc **Tăng hạn mức.**
@@ -40,7 +40,7 @@ Sau khi bạn khởi tạo Log project, bạn có thể xem thông tin gói Log 
 
 Để **gia hạn** một **Log project**, bạn có thể:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục **Log**.
 4. Tại gói Log project đang sử dụng, chọn biểu tượng <img src="../../../.gitbook/assets/image (157).png" alt="" data-size="line">sau đó chọn **Renew**.
@@ -56,7 +56,7 @@ Cách tính chi phí gia hạn cho mỗi gói Log project được chúng tôi c
 
 Để **tăng hạn mức** một **Log project**, bạn có thể:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục Log.
 4. Tại gói Log project đang sử dụng, chọn biểu tượng <img src="../../../.gitbook/assets/image (157).png" alt="" data-size="line">sau đó chọn **Resize**.
@@ -74,7 +74,7 @@ Nếu bạn không có nhu cầu sử dụng gói Log project đã tạo, chúng
 
 Để **xóa** một **Log project**, bạn có thể:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục **Log**.
 4. Tại gói Log project đang sử dụng, chọn **Delete**.

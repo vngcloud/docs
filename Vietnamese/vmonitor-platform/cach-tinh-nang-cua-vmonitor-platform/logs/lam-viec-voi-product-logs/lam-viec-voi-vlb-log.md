@@ -1,6 +1,6 @@
 # Làm việc với vLB-Log
 
-Để xem được logs của vLB bạn truy cập vào vMonitor Platform tại [link](https://hcm-3.console.greennode.ai/vmonitor), sau đó vào mục **Infrastructure list/vLB Log.** Tại đây, bạn có thể xem danh sách tất cả vLB trên HCM03 của bạn. Tại màn hình này, bạn sẽ thấy các cột thông tin cơ bản như:
+Để xem được logs của vLB bạn truy cập vào vMonitor Platform tại [link](https://vmonitor.console.greennode.ai/), sau đó vào mục **Infrastructure list/vLB Log.** Tại đây, bạn có thể xem danh sách tất cả vLB trên HCM03 của bạn. Tại màn hình này, bạn sẽ thấy các cột thông tin cơ bản như:
 
 * **vLB Project**: tên của vLB.
 * **Log Project**: log project sẽ chứa logs của vLB khi bạn enable "Detailed Monitoring".

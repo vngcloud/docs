@@ -2,7 +2,7 @@
 
 ### Tổng quan <a href="#lamviecvoivcdn-log-tongquan" id="lamviecvoivcdn-log-tongquan"></a>
 
-**vCDN Log Monitoring** là hệ thống tích hợp giữa **vCDN** và **vMonitor Platform** giúp người dùng giám sát tài nguyên trên vCDN thông qua việc đồng bộ, thu thập và lọc thông tin tại từng **CDN domain** của người dùng. Để bật/ tắt (enable/ disable) tính năng đẩy logs từ **vCDN** về hệ thống vMonitor Platform, trước tiên bạn hãy truy cập tại [đây.](https://hcm-3.console.greennode.ai/vmonitor) Sau đó chọn thư mục **Infrastructure list/vCDN - Log.** Tại đây, bạn có thể xem danh sách tất cả các **vCDN domain** mà bạn có trên tài khoản của bạn.
+**vCDN Log Monitoring** là hệ thống tích hợp giữa **vCDN** và **vMonitor Platform** giúp người dùng giám sát tài nguyên trên vCDN thông qua việc đồng bộ, thu thập và lọc thông tin tại từng **CDN domain** của người dùng. Để bật/ tắt (enable/ disable) tính năng đẩy logs từ **vCDN** về hệ thống vMonitor Platform, trước tiên bạn hãy truy cập tại [đây.](https://vmonitor.console.greennode.ai/) Sau đó chọn thư mục **Infrastructure list/vCDN - Log.** Tại đây, bạn có thể xem danh sách tất cả các **vCDN domain** mà bạn có trên tài khoản của bạn.
 
 * Tại màn hình này, bạn sẽ thấy các cột thông tin cơ bản như:
   * **vCDN domains**: tên domain của CDN.
@@ -18,9 +18,9 @@
 
 ### Bật (enable) tính năng Detailed Monitoring <a href="#lamviecvoivcdn-log-bat-enable-tinhnangdetailedmonitoring" id="lamviecvoivcdn-log-bat-enable-tinhnangdetailedmonitoring"></a>
 
-Để bật (enable) tính năng theo dõi logs của từng vCDN domain, bạn cần nhấn vào biểu tượng **Enable** tại cột **Detailed Monitoring:**&#x20;
+Để bật (enable) tính năng theo dõi logs của từng vCDN domain, bạn cần nhấn vào biểu tượng **Enable** tại cột **Detailed Monitoring:**
 
-* Lúc này hệ thống sẽ hiển thị popup và bạn cần **chọn Log Project** để chứa logs của vCDN domain này, sau đó nhấn nút **Enable**.  Nếu bạn chưa có bất kì Log Project nào, bạn có thể nhấn nút **Create a log project** ở popup hoặc trở lại menu **Quota & Usage** để tạo **Log Project** trước.
+* Lúc này hệ thống sẽ hiển thị popup và bạn cần **chọn Log Project** để chứa logs của vCDN domain này, sau đó nhấn nút **Enable**. Nếu bạn chưa có bất kì Log Project nào, bạn có thể nhấn nút **Create a log project** ở popup hoặc trở lại menu **Quota & Usage** để tạo **Log Project** trước.
 
 <figure><img src="../../../../.gitbook/assets/image (335).png" alt="" width="375"><figcaption></figcaption></figure>
 

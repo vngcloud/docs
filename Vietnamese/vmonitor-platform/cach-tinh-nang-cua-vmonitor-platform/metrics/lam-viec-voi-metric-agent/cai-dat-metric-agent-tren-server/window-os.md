@@ -73,7 +73,7 @@
 
 B1: Tạo API Key (nếu chưa thực hiện tạo bất kỳ API Key nào trước đó )
 
-* Truy cập vào portal vMonitor Platform Product: [https://hcm-3.console.greennode.ai/vmonitor/](https://hcm-3.console.greennode.ai/vmonitor/)
+* Truy cập vào portal vMonitor Platform Product: [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/)
 * Chọn **Intergration** => sau đó chọn phần **API Key**
 
 <figure><img src="../../../../../.gitbook/assets/image (126).png" alt=""><figcaption></figcaption></figure>

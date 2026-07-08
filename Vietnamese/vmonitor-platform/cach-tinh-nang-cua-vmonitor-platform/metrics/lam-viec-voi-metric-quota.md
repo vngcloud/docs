@@ -10,7 +10,7 @@ Một Metric quota là một thuật ngữ trên vMonitor Platform thể hiện 
 
 Để khởi tạo một Metric quota, hãy thực hiện theo các bước bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn **Quota & Usage**.
 3. Chọn **Buy metric quota.**
 4. Chọn **Class** mà bạn có nhu cầu sử dụn&#x67;**.** Chúng tôi cung cấp cho bạn chọn 1 trong 2 class bao gồm: Basic, Pro.
@@ -20,7 +20,7 @@ Một Metric quota là một thuật ngữ trên vMonitor Platform thể hiện 
 8. Chọn **Continue.**
 9. Thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Metric quota** sẽ được khởi tạo.
 
-<mark style="color:red;">Tại một thời điểm, bạn chỉ có thể sở hữu một gói metric quota, nếu gói này không phù hợp với nhu cầu sử dụng của bạn, hãy thực hiện</mark> <mark style="color:red;"></mark><mark style="color:red;">**Gia hạn Metric quota**</mark> <mark style="color:red;"></mark><mark style="color:red;">hoặc</mark> <mark style="color:red;"></mark><mark style="color:red;">**Tăng giảm hạn mức Metric quota**</mark> <mark style="color:red;"></mark><mark style="color:red;">theo hướng dẫn của chúng tôi.</mark>
+<mark style="color:red;">Tại một thời điểm, bạn chỉ có thể sở hữu một gói metric quota, nếu gói này không phù hợp với nhu cầu sử dụng của bạn, hãy thực hiện</mark> <mark style="color:red;">**Gia hạn Metric quota**</mark> <mark style="color:red;">hoặc</mark> <mark style="color:red;">**Tăng giảm hạn mức Metric quota**</mark> <mark style="color:red;">theo hướng dẫn của chúng tôi.</mark>
 
 Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai trên trang chủ của GreenNode, hãy xem tại [Cách tính phí](../../cach-tinh-phi.md).
 
@@ -28,20 +28,20 @@ Cách tính chi phí cho mỗi gói metric quota được chúng tôi công khai
 
 ### Xem thông tin Metric quota
 
-Sau khi bạn khởi tạo Metric quota, bạn có thể xem thông tin gói Metric quota mà bạn vừa thực hiện khởi tạo bằng cách:&#x20;
+Sau khi bạn khởi tạo Metric quota, bạn có thể xem thông tin gói Metric quota mà bạn vừa thực hiện khởi tạo bằng cách:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục **Metric**.
-4. Hệ thống hiển thị thông tin gói **Metric quota** đã được khởi tạo và **Usage** thực tế bạn đang sử dụng của gói **Metric quota** đó. Bạn có thể thực hiện Gia hạn trong vòng 7 ngày trước ngày hết hạn của gói Metric quota hoặc Tăng hạn mức gói lên cao hơn bằng cách chọn **Gia hạn** hoặc **Tăng hạn mức.**&#x20;
+4. Hệ thống hiển thị thông tin gói **Metric quota** đã được khởi tạo và **Usage** thực tế bạn đang sử dụng của gói **Metric quota** đó. Bạn có thể thực hiện Gia hạn trong vòng 7 ngày trước ngày hết hạn của gói Metric quota hoặc Tăng hạn mức gói lên cao hơn bằng cách chọn **Gia hạn** hoặc **Tăng hạn mức.**
 
 ***
 
 ### Gia hạn Metric quota
 
-Để **gia hạn** một **Metric quota**, bạn có thể:&#x20;
+Để **gia hạn** một **Metric quota**, bạn có thể:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục **Metric.**
 4. Tại gói Metric quota đang sử dụng, chọn biểu tượng ![](http://docs.vngcloud.vn/download/thumbnails/49650622/image2024-2-28_22-39-59.png?version=1\&modificationDate=1709134800646\&api=v2) sau đó chọn **Renew**.
@@ -55,13 +55,13 @@ Cách tính chi phí gia hạn cho mỗi gói Metric quota được chúng tôi 
 
 ### Tăng giảm hạn mức Metric quota
 
-Để **tăng hạn mức** một **Metric quota**, bạn có thể:&#x20;
+Để **tăng hạn mức** một **Metric quota**, bạn có thể:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục **Metric**.
 4. Tại gói Metric quota đang sử dụng, chọn biểu tượng![](http://docs.vngcloud.vn/download/thumbnails/49650622/image2024-2-28_22-39-59.png?version=1\&modificationDate=1709134800646\&api=v2) sau đó chọn **Resize**.
-5. Chọn **Metric quota class** mới mà bạn muốn nâng cấp. Nếu gói metric quota của bạn đang ở class Basic thì bạn có thể nâng cấp nó lên class Pro. Nếu gói metric quota của bạn đang ở gói Pro thì bạn có thể nâng cấp nó lên cấu hình cao hơn trong cùng class.&#x20;
+5. Chọn **Metric quota class** mới mà bạn muốn nâng cấp. Nếu gói metric quota của bạn đang ở class Basic thì bạn có thể nâng cấp nó lên class Pro. Nếu gói metric quota của bạn đang ở gói Pro thì bạn có thể nâng cấp nó lên cấu hình cao hơn trong cùng class.
 6. Chọn **Resize.**
 7. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **Metric quota** sẽ được tăng hạn mức.
 
@@ -71,16 +71,16 @@ Cách tính chi phí tăng hạn mức cho mỗi gói Metric quota được chú
 
 ### Xóa Metric quota
 
-Bạn đã khởi tạo một Metric quota ban đầu phù hợp với nhu cầu sử dụng của bạn. Hiện tại nhu cầu kinh doanh của bạn thay đổi, bạn không có nhu cầu sử dụng gói Metric quota đã tạo. Chúng tôi khuyến khích bạn nên xóa gói Metric quota này để tối ưu chi phí.&#x20;
+Bạn đã khởi tạo một Metric quota ban đầu phù hợp với nhu cầu sử dụng của bạn. Hiện tại nhu cầu kinh doanh của bạn thay đổi, bạn không có nhu cầu sử dụng gói Metric quota đã tạo. Chúng tôi khuyến khích bạn nên xóa gói Metric quota này để tối ưu chi phí.
 
-Để **xóa** một **Metric quota**, bạn có thể:&#x20;
+Để **xóa** một **Metric quota**, bạn có thể:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn mục **Metric**.
 4. Tại gói Metric quota đang sử dụng, chọn **Delete**.
 5. Tại màn hình xác nhận xóa Metric quota, chọn **Delete**.
 
-Sau khi bạn bạn thực hiện xóa gói Metric quota thì gói metric quota bị xóa sẽ biến mất khỏi danh sách gói metric quota của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](../../cach-tinh-phi.md).&#x20;
+Sau khi bạn bạn thực hiện xóa gói Metric quota thì gói metric quota bị xóa sẽ biến mất khỏi danh sách gói metric quota của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](../../cach-tinh-phi.md).
 
 <mark style="color:red;">Do hành động xóa Metric quota tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.</mark>

@@ -4,12 +4,12 @@
 
 Sau khi bạn thiết lập thành công Metric Agent trên Server hoặc bạn đã sử dụng các Product Metric khác, lúc này bạn có thể xem thông tin các thông số metrics được đẩy về hệ thống vMonitor Platform bằng cách:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Metric.**
 3. Chọn **Information**.
-4. Hệ thống hiển thị danh sách các **metrics** được đẩy về trong đó:&#x20;
+4. Hệ thống hiển thị danh sách các **metrics** được đẩy về trong đó:
 
-* Metric name: tên của metric được đẩy về.&#x20;
+* Metric name: tên của metric được đẩy về.
 * Metric Unit: đơn vị tính của metric tương ứng.
 * Description: mô tả ý nghĩa của metric tương ứng nếu có.
 
@@ -19,12 +19,12 @@ Sau khi bạn thiết lập thành công Metric Agent trên Server hoặc bạn 
 
 ### Xem thông tin chi tiết metric
 
-Để xem thông tin chi tiết một metric được đẩy về vMonitor Platform, hãy làm theo hướng dẫn bên dưới:&#x20;
+Để xem thông tin chi tiết một metric được đẩy về vMonitor Platform, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Metric.**
 3. Chọn **Information**.
-4. Chọn vào **metric** mà bạn muốn xem thông tin chi tiết. Lúc này hệ thống sẽ hiển thị **Metadata** và **Dimensions** của metric này.&#x20;
+4. Chọn vào **metric** mà bạn muốn xem thông tin chi tiết. Lúc này hệ thống sẽ hiển thị **Metadata** và **Dimensions** của metric này.
 
 <figure><img src="../../../.gitbook/assets/image (145).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -41,9 +41,9 @@ Sau khi bạn thiết lập thành công Metric Agent trên Server hoặc bạn 
 
 ### Chỉnh sửa thông tin metric
 
-Bạn có thể chỉnh sửa thông tin metadata của một metric bằng cách:&#x20;
+Bạn có thể chỉnh sửa thông tin metadata của một metric bằng cách:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Metric.**
 3. Chọn **Information.**
 4. Chọn **Metric** bạn muốn chỉnh sửa.

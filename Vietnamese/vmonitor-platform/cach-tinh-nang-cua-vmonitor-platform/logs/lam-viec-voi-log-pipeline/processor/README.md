@@ -10,7 +10,7 @@ Processor: là những thư viện hỗ trợ bạn parse và enrich dữ liệu
 
 Để tạo một processor, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor/).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/).
 2. Chọn thư mục **Log**, sau đó chọn menu **Log pipeline**.
 3. Chọn một **Log pipeline** đang tồn tại.
 4. Tại **Processor group** đang tồn tại và có cấu hình Source và Destination Log project đúng theo mong muốn parser dữ liệu của bạn, chọn **Create a processor.**
@@ -36,7 +36,7 @@ Processor: là những thư viện hỗ trợ bạn parse và enrich dữ liệu
 
 Để chỉnh sửa Processor trong Log pipeline, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Log.**
 3. Chọn **Log pipeline.**
 4. Trong danh sách log pipeline đang có, chọn **Log pipeline** chứa **Processor group và Processor** mà bạn muốn chỉnh sửa.
@@ -51,7 +51,7 @@ Processor: là những thư viện hỗ trợ bạn parse và enrich dữ liệu
 
 Khi bạn không có nhu cầu sử dụng một Processor tùy chỉnh nữa, bạn có thể thực hiện xóa Processor khỏi hệ thống theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Log.**
 3. Chọn **Log pipeline** chứa Processor group và Processor mà bạn muốn thực hiện xóa.
 4. Chọn **Processor.**
