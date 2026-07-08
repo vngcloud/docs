@@ -8,11 +8,11 @@ Do đó, giải pháp này rất phù hợp với các doanh nghiệp đã sở 
 
 Với vCloudStack, bạn có thể chạy một số dịch vụ GreenNode cục bộ và kết nối với nhiều dịch vụ sẵn có trong những khu vực GreenNode cung cấp. Đây là một môi trường kết hợp , cung cấp tính linh hoạt cao, đồng thời duy trì kiểm soát và bảo mật dữ liệu nhạy cảm.
 
-<figure><img src="../.gitbook/assets/ed6516da-5f8f-4688-9ef4-3927bda79451.png" alt=""><figcaption><p>Giải pháp vCloudStack</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ed6516da-5f8f-4688-9ef4-3927bda79451 (1).png" alt=""><figcaption><p>Giải pháp vCloudStack</p></figcaption></figure>
 
 ***
 
-## Lợi ích&#x20;
+## Lợi ích
 
 **Chạy dịch vụ GreenNode tại chỗ**
 

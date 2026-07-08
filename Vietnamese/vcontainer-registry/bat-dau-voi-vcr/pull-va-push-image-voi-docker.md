@@ -10,20 +10,20 @@
 
 Thực hiện theo các bước sau để khởi tạo một Repository:
 
-**Bước 1**: Truy cập Portal của vContainer Registry.&#x20;
+**Bước 1**: Truy cập Portal của vContainer Registry.
 
 * Với **Region HCM**: [https://vcr.console.greennode.ai/repository/list](https://vcr.console.greennode.ai/repository/list)
 * Với **Region HAN**: [https://han-1.console.greennode.ai/vcr/repository/list](https://han-1.console.greennode.ai/vcr/repository/list)
 
-**Bước 2:** Chọn mục **Repository** sau đó chọn nút **"Create Repository".**&#x20;
+**Bước 2:** Chọn mục **Repository** sau đó chọn nút **"Create Repository".**
 
 **Bước 3:** Thực hiện nhập **Repository name, Access level và Quota Limit** tùy theo nhu cầu của bạn.
 
 **Bước 4:** Nhấn **"Create"** để hoàn tất quá trình khởi tạo.
 
-<figure><img src="../../.gitbook/assets/image (1059).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1059) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1060).png" alt="" width="518"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1060) (1).png" alt="" width="518"><figcaption></figcaption></figure>
 
 ## Khởi tạo Repository User
 
@@ -31,28 +31,28 @@ Thực hiện theo các bước sau để khởi tạo một Repository:
 
 Thực hiện theo các bước sau để khởi tạo một Repository user:
 
-**Bước 1**: Truy cập Portal của vContainer Registry.&#x20;
+**Bước 1**: Truy cập Portal của vContainer Registry.
 
 * Với **Region HCM**: [https://vcr.console.greennode.ai/repository/list](https://vcr.console.greennode.ai/repository/list)
 * Với **Region HAN**: [https://han-1.console.greennode.ai/vcr/repository/list](https://han-1.console.greennode.ai/vcr/repository/list)
 
 **Bước 2:** Chọn mục **Reposity** sau đó chọn vào **Repository** cần tạo **Repository User**, tiếp tục chọn mục **Repository User.** Tiếp tục chọn **Create a user**
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3:** Thực hiện nhập **User name**, chọn **Expiration Date**, nhập **Description** nếu có sau đó chọn chọn **Permission** mong muốn tùy theo nhu cầu của bạn.
 
 **Bước 4:** Nhấn **"Create"** để hoàn tất quá trình khởi tạo.
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 Sau khi user được tạo, bạn hãy nhớ lưu thông tin Secret key lại để sử dụng, ví dụ:
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1).png" alt="" width="346"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (3).png" alt="" width="346"><figcaption></figcaption></figure>
 
 ## Thực hiện PULL/ PUSH Image
 
-Sau khi đã khởi tạo Repository và Repository User, bạn có thể bắt đầu push Docker image lên hệ thống vContainer Registry. Trước tiên, bạn cần:&#x20;
+Sau khi đã khởi tạo Repository và Repository User, bạn có thể bắt đầu push Docker image lên hệ thống vContainer Registry. Trước tiên, bạn cần:
 
 * Đảm bảo Docker đã được cài đặt và đang chạy.
 * Đã tạo Repository và Repository User có quyền **Pull/ Push**.

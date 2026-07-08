@@ -6,12 +6,12 @@ Tham khảo các Script trong API Usage trên Portal
 
 _Curl_
 
-<figure><img src="../../../.gitbook/assets/image (395).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (395) (1).png" alt=""><figcaption></figcaption></figure>
 
 _Python_
 
-<figure><img src="../../../.gitbook/assets/image (397).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (397) (2).png" alt=""><figcaption></figcaption></figure>
 
 Javascript
 
-<figure><img src="../../../.gitbook/assets/image (398).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (398) (2).png" alt=""><figcaption></figcaption></figure>

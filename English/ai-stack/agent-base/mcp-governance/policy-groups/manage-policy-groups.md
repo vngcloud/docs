@@ -2,14 +2,14 @@
 
 > This guide walks you through creating a Policy Group, adding policies to define tool access rules, attaching the group to an MCP Gateway, and deleting groups when no longer needed.
 
----
+***
 
 ## Prerequisites
 
-- A GreenNode account with role **Root** or **Admin** (Member and Viewer have read-only access)
-- At least 1 MCP Gateway created to attach the Policy Group to
+* A GreenNode account with role **Root** or **Admin** (Member and Viewer have read-only access)
+* At least 1 MCP Gateway created to attach the Policy Group to
 
----
+***
 
 ## Create a Policy Group
 
@@ -19,31 +19,31 @@
 2. Select **AgentBase** in the left menu
 3. Select **MCP Governance** → **Policy Groups**
 
-![Policy Groups list](../../../../.gitbook/assets/Agentbase-image/Policy-group-list.png)
+![Policy Groups list](<../../../../../.gitbook/assets/Policy-group-list (1).png>)
 
 4. Click **Create Policy Group**
 
 **Step 2: Fill in basic information (Step 1)**
 
-1. Enter a **Name** following these rules:
-   - Must start with a letter (a–z, A–Z)
-   - Valid characters: letters, digits, underscore `_`
-   - Minimum 5, maximum 50 characters
-   - Unique within the organization
+1.  Enter a **Name** following these rules:
 
-   | Example name | Valid? |
-   |---|---|
-   | `PolicyGroup_Prod01` | ✅ |
-   | `sales_agent_policy` | ✅ |
-   | `myPolicy` | ✅ |
-   | `123invalid` | ❌ — starts with a digit |
-   | `name with space` | ❌ — contains a space |
-   | `ab` | ❌ — fewer than 5 characters |
+    * Must start with a letter (a–z, A–Z)
+    * Valid characters: letters, digits, underscore `_`
+    * Minimum 5, maximum 50 characters
+    * Unique within the organization
 
+    | Example name         | Valid?                      |
+    | -------------------- | --------------------------- |
+    | `PolicyGroup_Prod01` | ✅                           |
+    | `sales_agent_policy` | ✅                           |
+    | `myPolicy`           | ✅                           |
+    | `123invalid`         | ❌ — starts with a digit     |
+    | `name with space`    | ❌ — contains a space        |
+    | `ab`                 | ❌ — fewer than 5 characters |
 2. Enter a **Description** (optional) — up to 4096 characters
 3. Click **Create Policy Group** → the Policy Builder opens
 
----
+***
 
 ## Add Policies (Policy Builder)
 
@@ -57,44 +57,46 @@ After creating the group, the Policy Builder opens (Step 2). You can add up to *
 
 **Step 4: Choose an Effect**
 
-| Choice | Meaning |
-|---|---|
-| **ALLOW** | Permit the agent to execute the action when the policy matches |
-| **DENY** | Block the agent from executing the action when the policy matches |
+| Choice    | Meaning                                                           |
+| --------- | ----------------------------------------------------------------- |
+| **ALLOW** | Permit the agent to execute the action when the policy matches    |
+| **DENY**  | Block the agent from executing the action when the policy matches |
 
 **Step 5: Choose a Principal**
 
-- **All principals (everyone)** — applies to all agents calling through the gateway
-- **Specific principal** — applies only to a specific user or service account
+* **All principals (everyone)** — applies to all agents calling through the gateway
+*   **Specific principal** — applies only to a specific user or service account
 
-  When choosing **Specific**:
+    When choosing **Specific**:
 
-  | Field | Value | Notes |
-  |---|---|---|
-  | Type | `iam` or `jwt` | `iam` = IAM identity; `jwt` = JWT Token |
-  | Identifier | optional | Leave empty → matches all users of that type; enter an ID → matches exactly 1 user |
+    | Field      | Value          | Notes                                                                              |
+    | ---------- | -------------- | ---------------------------------------------------------------------------------- |
+    | Type       | `iam` or `jwt` | `iam` = IAM identity; `jwt` = JWT Token                                            |
+    | Identifier | optional       | Leave empty → matches all users of that type; enter an ID → matches exactly 1 user |
 
-  Examples:
-  - Type `jwt`, identifier `sales-agent-service` → serialized as `"jwt:sales-agent-service"`
-  - Type `iam`, no identifier → serialized as `"iam"` (matches all IAM users)
-  - Type `jwt`, identifier `*` → `"jwt:*"` (valid wildcard — matches all JWT users)
+    Examples:
+
+    * Type `jwt`, identifier `sales-agent-service` → serialized as `"jwt:sales-agent-service"`
+    * Type `iam`, no identifier → serialized as `"iam"` (matches all IAM users)
+    * Type `jwt`, identifier `*` → `"jwt:*"` (valid wildcard — matches all JWT users)
 
 **Step 6: Choose a Gateway Scope**
 
-- **All gateways (*)** — policy enforces on every gateway attached to this group
-- **Specific gateway(s)** — select a subset from the dropdown (only gateways already attached to this group)
+* **All gateways (\*)** — policy enforces on every gateway attached to this group
+* **Specific gateway(s)** — select a subset from the dropdown (only gateways already attached to this group)
 
 **Step 7: Choose an Action**
 
-- **All actions (*)** — applies to all `tools/call` requests
-- **Specific actions** — enter exact patterns in the format `targetName__toolName`
+* **All actions (\*)** — applies to all `tools/call` requests
+*   **Specific actions** — enter exact patterns in the format `targetName__toolName`
 
-  Examples of valid action patterns:
-  ```
-  weatherTarget__getForecast
-  paymentTarget__chargeCard
-  refundTarget__getAmount
-  ```
+    Examples of valid action patterns:
+
+    ```
+    weatherTarget__getForecast
+    paymentTarget__chargeCard
+    refundTarget__getAmount
+    ```
 
 {% hint style="warning" %}
 Only `*` (all) or exact `targetName__toolName` are supported. Partial wildcards like `paymentTarget__*` or `*__chargeCard` are not valid.
@@ -107,7 +109,7 @@ Only `*` (all) or exact `targetName__toolName` are supported. Partial wildcards 
 3. Select an **Operator**, enter a **Key** and **Value**
 4. Repeat to add more conditions — all must be true (**AND logic**)
 
----
+***
 
 ## Policy Examples
 
@@ -124,7 +126,7 @@ Conditions:   (none)
 
 Use as a baseline "permit all", combined with more specific DENY policies layered on top.
 
----
+***
 
 ### Example 2 — ALLOW only a sales agent to call payment tools
 
@@ -141,7 +143,7 @@ Serialized principal: `"jwt:sales-agent-service"`
 
 Only agent `sales-agent-service` with role `sales` can call `chargeCard` and `getBalance`.
 
----
+***
 
 ### Example 3 — DENY all requests outside business hours (before 8 AM)
 
@@ -167,7 +169,7 @@ Conditions:   greaterThan · request.timestamp.hour · 17
 
 Because multiple conditions combine with AND, split into two separate policies — one for before 8 AM and one for after 5 PM.
 
----
+***
 
 ### Example 4 — ALLOW only internal network traffic
 
@@ -193,17 +195,17 @@ Conditions:   (none)
 
 Because evaluation stops at the first match, `allow-internal-only` (placed first) permits internal traffic; `deny-all-fallback` (placed last) blocks everything else.
 
----
+***
 
 **Step 9: Save**
 
 Click **Save Changes** → the group transitions to **Active** status and the Policy Group Detail page opens.
 
-![Policy Group Detail](../../../../.gitbook/assets/Agentbase-image/policy-group-detail.png)
+![Policy Group Detail](<../../../../../.gitbook/assets/policy-group-detail (1).png>)
 
-![Policy Detail within Group](../../../../.gitbook/assets/Agentbase-image/policy-in-policygroup-detail.png)
+![Policy Detail within Group](<../../../../../.gitbook/assets/policy-in-policygroup-detail (1).png>)
 
----
+***
 
 ## Attach a Policy Group to a Gateway
 
@@ -231,7 +233,7 @@ See [Manage MCP Gateway](../mcp-gateway/manage-mcp-gateway.md).
 Each MCP Gateway can only have **one Policy Group** at a time. If the gateway already has a group, attaching a new one **immediately replaces** the old group — policies from the old group stop being enforced.
 {% endhint %}
 
----
+***
 
 ## Detach a Gateway from a Policy Group
 
@@ -241,7 +243,7 @@ Each MCP Gateway can only have **one Policy Group** at a time. If the gateway al
 
 After detaching, the gateway has no policy control — all `tools/call` through that gateway will be denied until a new Policy Group is attached.
 
----
+***
 
 ## Delete a Policy Group
 
@@ -253,13 +255,13 @@ Deleting a Policy Group is **irreversible**. If the group is attached to any gat
 2. Tick the checkbox on the group row
 3. Click **Delete** (red button) → review the warning and confirm
 
----
+***
 
 ## Result
 
 After completing these steps, the Policy Group is in **Active** status and attached to the gateway. Every `tools/call` through that gateway is evaluated against the group's policies in order — first-match wins, DENY by default if no rule matches.
 
-| I want to... | Go to |
-|---|---|
-| Understand the evaluation flow in detail | [Policy Groups — Overview](README.md) |
-| Configure an MCP Gateway | [Manage MCP Gateway](../mcp-gateway/manage-mcp-gateway.md) |
+| I want to...                             | Go to                                                      |
+| ---------------------------------------- | ---------------------------------------------------------- |
+| Understand the evaluation flow in detail | [Policy Groups — Overview](./)                             |
+| Configure an MCP Gateway                 | [Manage MCP Gateway](../mcp-gateway/manage-mcp-gateway.md) |

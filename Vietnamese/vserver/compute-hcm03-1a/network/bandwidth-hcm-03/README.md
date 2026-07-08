@@ -13,11 +13,11 @@ Với GreenNode, chúng tôi hiện tại cung cấp 4 gói băng thông cho kh�
   * **PAYG-INTERNATIONAL**: Gói này sẽ áp dụng cho băng thông sử dụng quốc tế. Bạn sẽ trả tiền cho lượng băng thông sử dụng vượt quá mức miễn phí dành riêng cho lưu lượng quốc tế. Tại gói này, lưu lượng **trong nước sẽ theo cấu hình gói mặc định. Gói này sẽ phù hợp với các doanh nghiệp hoặc cá nhân có nhu cầu sử dụng băng thông quốc tế cao, nhưng băng thông nội địa ít.**
 * **Share**: Gói băng thông với tốc độ cao được chia sẻ cho nhiều khách hàng cùng sử dụng. Tốc độ của gói này có thể khác nhau tại các thời điểm trong ngày. **Gói này phù hợp cho các doanh nghiệp nhỏ hoặc các dự án không yêu cầu băng thông lớn và ổn định liên tục**. Nếu bạn chỉ cần băng thông để duy trì các hoạt động cơ bản và không có yêu cầu cao về hiệu suất mạng, đây là lựa chọn hợp lý nhất cho bạn.
 
-<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (13) (3).png" alt=""><figcaption></figcaption></figure>
 
 * **Dedicated**: Gói băng thông với tốc độ tùy chọn của riêng bạn. Với gói này, chúng tôi cam kết và đảm bảo chất lượng dịch vụ cho khách hàng với dung lượng theo yêu cầu. **Gói này phù hợp cho các doanh nghiệp hoặc dự án cần băng thông lớn và ổn định, ví dụ như các trang web có lượng truy cập cao, các ứng dụng đòi hỏi kết nối mạng nhanh và liên tục, hoặc các dịch vụ trực tuyến cần đảm bảo chất lượng trải nghiệm người dùng.**
 
-<figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (22) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**

@@ -9,10 +9,10 @@
 5. Chọn **Add a username**.
 6. Tại mục **Account password**, bạn có thể:
    1. Nhập **password** mà bạn mong muốn. Password phải dài từ 8 (tối thiểu) đến 50 (tối đa) ký tự và phải bao gồm ít nhất 1 ký tự viết hoa (A-Z), 1 ký tự viết thường (a-z), 1 ký tự số (0-9) và 1 ký tự đặc biệt (!@#$%,...).
-   2. Chọn **Auto-generate** nếu bạn muốn hệ thống tự động tạo mật khẩu cho bạn.&#x20;
+   2. Chọn **Auto-generate** nếu bạn muốn hệ thống tự động tạo mật khẩu cho bạn.
 7. Chọn **Copy** để sao chép mật khẩu. Bạn bắt buộc phải thu thập được thông tin này để có thể truy cập vào vStorage sử dụng IAM User Account.
-8. Chọn **Create User Account.**&#x20;
+8. Chọn **Create User Account.**
 
 Sau khi bạn thực hiện 8 bước bên trên, một tài khoản IAM User Account đã được khởi tạo. Lúc này, bạn đã có thể sử dụng nó tuy nhiên IAM User Account vừa tạo chưa có policy nên mọi truy cập đều sẽ bị từ chối. Do đó, bạn cần tiếp tục tạo policy theo hướng dẫn tại [Khởi tạo policy cho IAM User Account](khoi-tao-policy-cho-iam-user-account.md).
 
-<figure><img src="../../../../../../.gitbook/assets/Khoi_tao_IAM_User_Account.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/Khoi_tao_IAM_User_Account (1).gif" alt=""><figcaption></figcaption></figure>

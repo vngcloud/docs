@@ -6,11 +6,11 @@ After successfully creating an AI Gateway, you can start sending requests to the
 
 **Step 2:** In the Providers & Model section, find the AI model you configured. Click the Curl command icon to get a sample request.
 
-<figure><img src="../../../.gitbook/assets/image (469).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (469) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3:** Copy the displayed curl command and execute it on your local machine (via Terminal or Command Prompt).
 
-<figure><img src="../../../.gitbook/assets/image (470).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (470) (2).png" alt=""><figcaption></figcaption></figure>
 
 Example:
 

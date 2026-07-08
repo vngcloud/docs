@@ -2,15 +2,15 @@
 
 > Configure [OpenAI Codex CLI](https://github.com/openai/codex) to call Minimax models through GreenNode MaaS — using the Responses API via a custom `maas` provider defined in `codex.toml`.
 
----
+***
 
 ## Prerequisites
 
-- An active [AI Platform](https://aiplatform.console.greennode.ai/) account
-- API key (`vn-...` token) with status **ACTIVE**
-- Node.js ≥ 22 installed
+* An active [AI Platform](https://aiplatform.console.greennode.ai/) account
+* API key (`vn-...` token) with status **ACTIVE**
+* Node.js ≥ 22 installed
 
----
+***
 
 ## Step 1 — Install Codex CLI
 
@@ -24,7 +24,7 @@ Verify the installation:
 codex --version
 ```
 
----
+***
 
 ## Step 2 — Get an API key from AI Platform
 
@@ -37,7 +37,7 @@ codex --version
 A newly created API key has status `pending`. Wait until the status is `ACTIVE` before using it.
 {% endhint %}
 
----
+***
 
 ## Step 3 — Configure `codex.toml`
 
@@ -69,17 +69,17 @@ request_max_retries = 3
 
 **Field reference:**
 
-| Field | Purpose |
-|---|---|
-| `model_provider` | Key of the provider defined in `[model_providers.*]` |
-| `model` | Model ID sent to MaaS |
-| `model_context_window` | Declared manually because MaaS does not expose model metadata |
+| Field                      | Purpose                                                               |
+| -------------------------- | --------------------------------------------------------------------- |
+| `model_provider`           | Key of the provider defined in `[model_providers.*]`                  |
+| `model`                    | Model ID sent to MaaS                                                 |
+| `model_context_window`     | Declared manually because MaaS does not expose model metadata         |
 | `disable_response_storage` | Required for stateless backends — resends full conversation each turn |
-| `base_url` | MaaS endpoint with `/v1` — Codex appends `/responses` automatically |
-| `env_key` | Name of the environment variable holding the API key |
-| `wire_api` | Protocol used — `responses` maps to the OpenAI Responses API |
+| `base_url`                 | MaaS endpoint with `/v1` — Codex appends `/responses` automatically   |
+| `env_key`                  | Name of the environment variable holding the API key                  |
+| `wire_api`                 | Protocol used — `responses` maps to the OpenAI Responses API          |
 
----
+***
 
 ## Step 4 — Set the API key and run Codex
 
@@ -109,28 +109,28 @@ model:     minimax/minimax-m2.5   /model to change
 directory: ~/your-project
 ```
 
-<figure><img src="../../../.gitbook/assets/Agentbase-image/use-codex-with-minimax.png" alt=""><figcaption><p>Codex running with minimax/minimax-m2.5 via GreenNode MaaS</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/use-codex-with-minimax (1).png" alt=""><figcaption><p>Codex running with minimax/minimax-m2.5 via GreenNode MaaS</p></figcaption></figure>
 
----
+***
 
 ## Troubleshooting
 
-| Symptom | Cause | Fix |
-|---|---|---|
-| `401 Unauthorized` | Wrong, missing, or inactive API key | Re-export `MAAS_API_KEY`; check key status in AI Platform Console |
-| `404` on requests | Wrong `base_url` or missing `/v1` | Ensure `base_url` ends with `/v1` (no `/responses`) |
-| Context truncated incorrectly | Model metadata not declared | Verify `model_context_window` and `model_max_output_tokens` in config |
-| Previous context lost each turn | `disable_response_storage` not set | Add `disable_response_storage = true` to config |
-| Connection timeout | Endpoint unreachable | Check VPN / connectivity to `*.api.vngcloud.vn` |
+| Symptom                         | Cause                               | Fix                                                                   |
+| ------------------------------- | ----------------------------------- | --------------------------------------------------------------------- |
+| `401 Unauthorized`              | Wrong, missing, or inactive API key | Re-export `MAAS_API_KEY`; check key status in AI Platform Console     |
+| `404` on requests               | Wrong `base_url` or missing `/v1`   | Ensure `base_url` ends with `/v1` (no `/responses`)                   |
+| Context truncated incorrectly   | Model metadata not declared         | Verify `model_context_window` and `model_max_output_tokens` in config |
+| Previous context lost each turn | `disable_response_storage` not set  | Add `disable_response_storage = true` to config                       |
+| Connection timeout              | Endpoint unreachable                | Check VPN / connectivity to `*.api.vngcloud.vn`                       |
 
----
+***
 
 ## Result
 
 After completing setup, Codex CLI routes all requests through GreenNode MaaS using the Minimax model. Usage is recorded on [AI Platform Console → Usage](https://aiplatform.console.greennode.ai/).
 
-| I want to... | Go to |
-|---|---|
-| Use OpenCode with MaaS | [Use OpenCode with GreenNode MaaS](opencode-with-maas-model.md) |
+| I want to...                | Go to                                                                   |
+| --------------------------- | ----------------------------------------------------------------------- |
+| Use OpenCode with MaaS      | [Use OpenCode with GreenNode MaaS](opencode-with-maas-model.md)         |
 | Connect Claude Code to MaaS | [Connect Claude Code to GreenNode MaaS](connect-claude-code-to-maas.md) |
-| View usage and billing | [AI Platform Console](https://aiplatform.console.greennode.ai/) |
+| View usage and billing      | [AI Platform Console](https://aiplatform.console.greennode.ai/)         |

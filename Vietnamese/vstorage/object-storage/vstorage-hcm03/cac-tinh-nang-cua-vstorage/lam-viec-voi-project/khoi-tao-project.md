@@ -2,7 +2,7 @@
 
 Một Project là một thuật ngữ trên vStorage thể hiện một gói lưu trữ với dung tích cụ thể mà bạn thực hiện mua sắm trên GreenNode. Tại một thời điểm bạn có thể sở hữu một hoặc nhiều Project song song và sử dụng chúng như một cách tổ chức tài nguyên cho các nhóm hay phòng ban sử dụng với mục đích khác nhau.
 
-&#x20;Sử dụng vStorage Portal
+Sử dụng vStorage Portal
 
 1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
@@ -14,7 +14,7 @@ Chọn một region gần bạn để giảm thiểu độ trễ và chi phí c�
 
 Màn hình **Tạo mới project** được hiển thị.
 
-4\. Trong **Tên project**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho project của bạn.&#x20;
+4\. Trong **Tên project**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho project của bạn.
 
 Sau khi tạo project, bạn không thể thay đổi tên của project. Để biết thêm thông tin về cách đặt tên project, hãy xem [Phạm vi giới hạn project](pham-vi-gioi-han-project.md).
 
@@ -38,6 +38,4 @@ Quota là kích thước gói lưu trữ tối đa bạn có thể tạo. Đối
 
 Sau khi bạn hoàn thành 10 bước được mô tả bên trên, project đã được tạo. Tiếp tục sử dụng các tính năng mà chúng tôi cung cấp cho project, bắt đầu với [Khởi tạo container](../lam-viec-voi-container/khoi-tao-container.md).
 
-
-
-<figure><img src="../../../../../.gitbook/assets/khoi-tao-project_VtMlelyB.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/khoi-tao-project_VtMlelyB (1).gif" alt=""><figcaption></figcaption></figure>

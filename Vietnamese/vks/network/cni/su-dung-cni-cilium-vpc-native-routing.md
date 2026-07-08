@@ -10,7 +10,7 @@
 
 Trên VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** hoạt động theo mô hình sau:
 
-<figure><img src="../../../.gitbook/assets/image_2024-10-01_10-09-47.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image_2024-10-01_10-09-47 (1).png" alt=""><figcaption></figcaption></figure>
 
 **Trong đó:**
 
@@ -34,9 +34,9 @@ Trên VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** hoạ
     * **Primary CIDR**: Đây là dải địa chỉ IP chính của subnet. Mọi địa chỉ IP nội bộ của các máy ảo (VM) trong subnet này sẽ được lấy từ dải địa chỉ này. Giả sử, nếu bạn đặt Primary CIDR là 10.1.0.0/24, các địa chỉ IP của các VM sẽ nằm trong khoảng từ 10.1.0.1 đến 10.1.0.254.
     * **Secondary CIDR**: Đây là dải địa chỉ IP phụ, được sử dụng để cung cấp thêm địa chỉ IP hoặc để phân chia các dịch vụ khác nhau trong cùng một subnet. Mỗi Node có một dải địa chỉ IP riêng cho các pod (Pod CIDR). Các pod trong mỗi node sử dụng địa chỉ từ CIDR này và giao tiếp qua mạng ảo.
 
-<figure><img src="../../../.gitbook/assets/image (776).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (776) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (777).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (777) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**
@@ -73,7 +73,7 @@ Trên VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** hoạ
 
 ### **Các tính toán số lượng IP cho pod và node:**
 
-<figure><img src="../../../.gitbook/assets/image (758).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (758) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Giả sử, khi khởi tạo cluster, tôi lựa chọn:
 
@@ -85,7 +85,7 @@ Giả sử, khi khởi tạo cluster, tôi lựa chọn:
 
 <table data-full-width="true"><thead><tr><th>Node CIDR mask size</th><th>Số lượng IP cho mỗi node</th><th>Số lượng node có thể tạo trong dải /20 (4096 IP)</th><th>Số lượng IP phân bổ cho pod trên mỗi node</th><th>Số lượng pod thực tế có thể tạo</th></tr></thead><tbody><tr><td><strong>/24</strong></td><td>256</td><td>16</td><td>256</td><td>128</td></tr><tr><td><strong>/25</strong></td><td>128</td><td>32</td><td>128</td><td>64</td></tr><tr><td><strong>/26</strong></td><td>64</td><td>64</td><td>64</td><td>32</td></tr></tbody></table>
 
-<figure><img src="../../../.gitbook/assets/image (131).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (131) (3).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**

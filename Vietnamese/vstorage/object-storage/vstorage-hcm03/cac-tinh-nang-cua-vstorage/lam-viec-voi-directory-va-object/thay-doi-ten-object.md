@@ -2,8 +2,6 @@
 
 Bạn cũng có thể thay đổi tên của object mà bạn đã tải lên một container. Để thực hiện thay đổi tên object, hãy làm theo hướng dẫn bên dưới:
 
-
-
 {% tabs %}
 {% tab title=" Sử dụng vStorage Portal" %}
 1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
@@ -14,9 +12,9 @@ Bạn cũng có thể thay đổi tên của object mà bạn đã tải lên m�
 
 4\. Nhập tên object mà bạn muốn thay đổi, tên object cần tuân thủ theo mô tả của chúng tôi tạo [Phạm vi giới hạn object](pham-vi-gioi-han-object.md).
 
-Khi thực hiện thay đổi tên của object, bạn không nên thay đổi phần kiểu tệp tin (ví dụ: abc.pdf, .pdf chính là kiểu tệp tin) trong tên của object. Việc thay đổi phần extension này của tên của object có thể làm thay đổi content type của object đó, điều này có thể gây lỗi khi bạn tải object xuống thiết bị cá nhân.&#x20;
+Khi thực hiện thay đổi tên của object, bạn không nên thay đổi phần kiểu tệp tin (ví dụ: abc.pdf, .pdf chính là kiểu tệp tin) trong tên của object. Việc thay đổi phần extension này của tên của object có thể làm thay đổi content type của object đó, điều này có thể gây lỗi khi bạn tải object xuống thiết bị cá nhân.
 
-<figure><img src="../../../../../.gitbook/assets/Doi_ten_object.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Doi_ten_object (1).gif" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title=" Sử dụng vStorage API" %}
@@ -26,7 +24,7 @@ Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung c�
 {% endtab %}
 
 {% tab title="Sử dụng 3rd party softwares" %}
-vStorage cũng tương thích với các công cụ phía người dùng sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.&#x20;
+vStorage cũng tương thích với các công cụ phía người dùng sử dụng S3 protocol. Bạn có thể dễ dàng sử dụng các công cụ đã quen thuộc như Rclone, s3cmd, Cyberduck,...Hãy xem [3rd party softwares](../../3rd-party-softwares/) và học cách tích hợp, sử dụng các công cụ này.
 
 Để thay đổi tên object qua 3rd party software, hãy xem [3rd party softwares](../../3rd-party-softwares/).
 {% endtab %}

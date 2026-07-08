@@ -28,4 +28,4 @@ Sau khi bạn thực hiện 8 bước bên trên, policy cho vStorage đã đư�
 
 Ngoài các bước tạo policy đặc thù cho riêng bạn như trên, chúng tôi cũng cung cấp cho bạn một tập các policy mặc định với các quyền hạn đa dạng. Bạn có thể sử dụng tập policy này và liên kết trực tiếp chúng tới tài khoản Service Account. Để biết thêm thông tin về danh sách policy mặc định, tham khảo tại [Tính năng, tài nguyên vStorage và quyền truy cập](../../quan-ly-truy-cap-tai-nguyen-vstorage/phan-quyen-truy-cap-va-lam-viec-thong-qua-iam/tinh-nang-tai-nguyen-vstorage-va-quyen-truy-cap.md).
 
-<figure><img src="../../../../../../.gitbook/assets/Khoi_tao_policy.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/Khoi_tao_policy (1).gif" alt=""><figcaption></figcaption></figure>

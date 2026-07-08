@@ -8,7 +8,7 @@ Dịch vụ Object Download của GreenNode giúp doanh nghiệp: tối ưu chi 
 
 ## **Sơ đồ hoạt động** <a href="#objectdownload-cochephanphoidulieu" id="objectdownload-cochephanphoidulieu"></a>
 
-<figure><img src="../../.gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (216) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -43,21 +43,21 @@ Dịch vụ Object Download của GreenNode giúp doanh nghiệp: tối ưu chi 
 
 ### **Bước 1: Tạo Object Download**
 
-Đầu tiên, bạn cần thực hiện khởi tạo một Object Download theo hướng dẫn sau:&#x20;
+Đầu tiên, bạn cần thực hiện khởi tạo một Object Download theo hướng dẫn sau:
 
 1. Truy cập vào vCDN Portal tại [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
 2. Chọn mục **Object Download**, sau đó chọn **Create new.**
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
-3. Tiếp tục thực hiện nhập/chọn:&#x20;
+3. Tiếp tục thực hiện nhập/chọn:
 
-* **CDN Info:**&#x20;
-  * **CDN Name:** Nhập tên định danh cho CDN mà bạn muốn tạo.&#x20;
+* **CDN Info:**
+  * **CDN Name:** Nhập tên định danh cho CDN mà bạn muốn tạo.
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5).png" alt=""><figcaption></figcaption></figure>
 
-* **Origin:**&#x20;
+* **Origin:**
   * **HTTP Origin**: Server hỗ trợ giao thức HTTP.
     * **Fail-Over Error Code:** Danh sách các mã lỗi HTTP (ví dụ: 500, 502, 503, 504) mà nếu xảy ra sẽ kích hoạt chuyển đổi dự phòng (fail-over) đến Origin khác.
     * **Origin Load Balancing:** Cơ chế cân bằng tải giữa các Origin Server được chỉ định.
@@ -65,11 +65,11 @@ Dịch vụ Object Download của GreenNode giúp doanh nghiệp: tối ưu chi 
     * **IP Address:** Địa chỉ IP của Origin Server (ví dụ: IPv4 như 1.1.1.1 hoặc IPv6).
     * **Weight:** Định nghĩa mức ưu tiên của từng Origin Server khi cân bằng tải (giá trị càng cao, lưu lượng nhận được càng nhiều).
   * **S3 Origin**: Nguồn dữ liệu trên hệ thống Object Storage chuẩn S3-compatible.
-    * **Access key:** Access key được lấy từ hệ thống Object Storage của bạn.&#x20;
+    * **Access key:** Access key được lấy từ hệ thống Object Storage của bạn.
     * **Secret key:** Secret key tương ứng với Access key đã nhập bên trên.
     * **Bucket:** Tên của bucket chứa nội dung trên S3.
     * **Region:** Region nơi bucket của bạn được lưu trữ.
-    * **Endpoint**: Đường dẫn URL kết nối với dịch vụ S3.&#x20;
+    * **Endpoint**: Đường dẫn URL kết nối với dịch vụ S3.
     * **S3 Signature:** Signature của S3 được sử dụng. Bạn có thể chọn sử dụng Signature v2 hoặc v4.
     * **Use SSL:** Chọn sử dụng SSL để mã hóa kết nối giữa vCDN và S3 Origin.
   * **Host Origin**: Dữ liệu từ một host cụ thể.
@@ -77,11 +77,11 @@ Dịch vụ Object Download của GreenNode giúp doanh nghiệp: tối ưu chi 
     * **Use SSL:** Kích hoạt SSL để mã hóa kết nối với Host Origin.
     * **Host Origin**
 
-<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 *   **Security:**
 
@@ -90,17 +90,17 @@ Dịch vụ Object Download của GreenNode giúp doanh nghiệp: tối ưu chi 
     * **Max Age Header (max-age):** Xác định thời gian các header HSTS được lưu trữ trong trình duyệt.
     * **Apply HSTS policy to subdomains (includeSubDomains):** Mọi domain sẽ kế thừa các header HSTS giống nhau. Nếu bất kỳ domain nào của bạn không hỗ trợ HTTPS, chúng sẽ không thể truy cập được.
     * **Preload:** Cho phép trình duyệt tải trước cấu hình HSTS tự động. Preload có thể làm cho một trang web không hỗ trợ HTTPS hoàn toàn không thể truy cập được.
-    * **Relative Canonical URL:** Một URL canonical cho phép bạn thông báo cho các công cụ tìm kiếm rằng các URL tương tự thực sự là cùng một nội dung. Điều này hữu ích khi bạn có sản phẩm hoặc nội dung có thể được tìm thấy trên nhiều URL hoặc thậm chí nhiều trang web.&#x20;
+    * **Relative Canonical URL:** Một URL canonical cho phép bạn thông báo cho các công cụ tìm kiếm rằng các URL tương tự thực sự là cùng một nội dung. Điều này hữu ích khi bạn có sản phẩm hoặc nội dung có thể được tìm thấy trên nhiều URL hoặc thậm chí nhiều trang web.
     * **No-Sniff Header:** Gửi header "X-Content-Type-Options: nosniff" để ngăn Internet Explorer và Google Chrome không kiểm tra MIME khác với Content-Type đã khai báo.
 
-    <figure><img src="../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
     * **Token Configuration**:
       * **Token Type**: Chọn loại token dùng để xác thực người xem. Bạn có thể chọn token type Akamai, SBD hoặc VNG.
 
-    <figure><img src="../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
     * **Access Filter:**
       * **IP Address CIDR**: Giới hạn cho phép/ từ chối truy cập dựa trên địa chỉ IP bằng cách chọn **Allow**/ **Block** và nhập địa chỉ IP hoặc CIDR tương ứng.
@@ -110,23 +110,23 @@ Dịch vụ Object Download của GreenNode giúp doanh nghiệp: tối ưu chi 
       * **Simple**: Khi chọn Simple, bạn chỉ cần chỉ định các domain cụ thể được phép truy cập thông qua **Allow Origin.**
       * **Advance**: Khi chọn Advance, ngoài việc chỉ định domain cụ thể, bạn cần cấu hình chi tiết hơn về **Allow Header, Allow Method, Expose Header, Allow Credentials** được phép.
 
-    <figure><img src="../../.gitbook/assets/image (841).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (841) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Always Use HTTPS:** Bật hoặc tắt tính năng tự động chuyển hướng tất cả các yêu cầu HTTP sang HTTPS nhằm tăng cường bảo mật và cải thiện trải nghiệm người dùng.
     * **Small Object:** Khi bạn bật option này, nếu nội dung có kích thước lớn, **Origin Gateway** sẽ chia nội dung thành các request nhỏ (5MB) và tải đồng thời (byte-range download). Điều này giúp tăng tốc độ tải và phục vụ người dùng ngay khi nhận được dữ liệu đầu tiên.
     * **Minimum TLS Version**: Phiên bản thấp nhất của giao thức TLS được phép sử dụng. Chúng tôi đang hỗ trợ các giao thức TLS 1.0, TLS 1.1, TLS 1.2, TLS 1.3. Bạn hãy chọn sử dụng các phiên bản cao (TLS 1.2 hoặc 1.3) để đảm bảo tính bảo mật.
 
-    <figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
     * **Caching:**
       * **Caching Level**: Xác định mức độ cache của CDN. Với VOD, vCDN đang cung cấp 3 mức độ cache bao gồm: URL without query string only, Skip Query String of URL, URL With Query String.
       * **Server Cache Expiration (TTL):** Khoảng thời gian mà hệ thống vCDN sẽ lưu trữ tài nguyên của bạn trong bộ nhớ cache. Trong khoảng thời gian này, hệ thống vCDN sẽ không truy cập server gốc mà phản hồi yêu cầu từ bộ nhớ cache của vCDN. Bạn có thể chọn thời gian này từ 30 phút cho tới 1 năm tùy theo nhu cầu cho hệ thống của bạn.
-      * **Browser Cache Expiration:** Thời gian vCDN yêu cầu trình duyệt của người dùng lưu trữ tệp trong bộ nhớ cache cục bộ.&#x20;
+      * **Browser Cache Expiration:** Thời gian vCDN yêu cầu trình duyệt của người dùng lưu trữ tệp trong bộ nhớ cache cục bộ.
       * **Development mode:** Chế độ nhà phát triển. Tính năng này cho phép tạm thời tắt caching tại Edge Server để hỗ trợ giai đoạn thử nghiệm hoặc kiểm tra nội dung trong khi phát triển. Mọi yêu cầu sẽ được trả về trực tiếp từ Origin, giúp cập nhật nội dung ngay lập tức mà không cần xóa cache.
 
-    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
-    * **Page Rules:** Tính năng này giúp khách hàng tối ưu các điều kiện và các tùy chọn để giúp website thể hiện được nhiều mục đích khác nhau. Để tạo Page rules, vui lòng chọn **Create Page Rule**, popup sẽ hiện ra, lúc này bạn cần chọn:&#x20;
+    * **Page Rules:** Tính năng này giúp khách hàng tối ưu các điều kiện và các tùy chọn để giúp website thể hiện được nhiều mục đích khác nhau. Để tạo Page rules, vui lòng chọn **Create Page Rule**, popup sẽ hiện ra, lúc này bạn cần chọn:
       * **URL pattern:** cần áp dụng pagerule, hỗ trợ kiểu khai báo “\*” đại diện cho một chuỗi nhiều ký tự. Ví dụ: /trang\_landing\_cu.html. Sau khi nhập URL pattern, bạn hãy chọn **Add new rule**. Mỗi Rules khi thỏa điệu kiện đúng URI được request sẽ có thể tùy chọn thực thi một trong các hành động sau:
         * Always Use HTTPS
         * Server Cache TTL
@@ -140,11 +140,11 @@ Dịch vụ Object Download của GreenNode giúp doanh nghiệp: tối ưu chi 
         * Deny Access
       * Chọn **Save changes** để lưu thay đổi.
 
-    <figure><img src="../../.gitbook/assets/image (843).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (843) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (844).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (844) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="348"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="" width="348"><figcaption></figcaption></figure>
 
     4. Chọn **Submit** để hoàn thành việc tạo Object Download.
 
@@ -156,9 +156,9 @@ Sau khi bạn đã thực hiện khởi tạo xong Object Download, bạn có th
 https:// <CDN Domain>/<đường dẫn file trên origin>
 ```
 
-Nếu bạn sử dụng S3 origin, lưu ý đường dẫn file trên origin của bạn sẽ bao gồm cả tên bucket.&#x20;
+Nếu bạn sử dụng S3 origin, lưu ý đường dẫn file trên origin của bạn sẽ bao gồm cả tên bucket.
 
-Ví dụ:&#x20;
+Ví dụ:
 
 ```
 https:// <CDN Domain>/<tên bucket>/<tên object>

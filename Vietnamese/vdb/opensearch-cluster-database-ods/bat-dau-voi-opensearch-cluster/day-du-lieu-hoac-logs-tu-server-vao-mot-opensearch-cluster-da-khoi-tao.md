@@ -2,9 +2,9 @@
 
 ## Điều kiện cần
 
-Giả sử, bạn đã khởi tạo thành công một OpenSearch Cluster với thông số như sau:&#x20;
+Giả sử, bạn đã khởi tạo thành công một OpenSearch Cluster với thông số như sau:
 
-<figure><img src="../../../.gitbook/assets/opensearch5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/opensearch5.png" alt=""><figcaption></figcaption></figure>
 
 Tiếp theo, hãy thực hiện đẩy dữ liệu mẫu vào OpenSearch Dashboards hoặc đẩy event logs từ Logstash vào OpenSearch.
 
@@ -33,7 +33,7 @@ curl -H "Content-Type: application/json" -X PUT "https://<<OpenSearch_ReceiveLog
 
 Bạn có thể lấy thông tin `OpenSearch_ReceiveLogs_Endpoint` trên vDB Portal và `<<Master_User_Password>>` bằng mật khẩu tài khoản master mà bạn đã khởi tạo trước đó.
 
-Ví dụ:&#x20;
+Ví dụ:
 
 ```bash
 # 2. Create index and data.
@@ -41,8 +41,7 @@ curl -H "Content-Type: application/json" -X PUT "https://open-search-dem-53461-5
 curl -H "Content-Type: application/json" -X PUT "https://open-search-dem-53461-5cfxl-hcm03.vdb-opensearch.vngcloud.vn:9200/ecommerce/_bulk" -k -H "Authorization: Basic $(echo -n 'master-user:123456789aA@' | base64)" --data-binary "@ecommerce.ndjson"
 ```
 
-[\
-](https://liemnt5-cidr-11430-2ue3z-hcm03.vdb-opensearch.vngcloud.tech)Kết quả sẽ hiển thị như sau:&#x20;
+[<br>](https://liemnt5-cidr-11430-2ue3z-hcm03.vdb-opensearch.vngcloud.tech)Kết quả sẽ hiển thị như sau:
 
 ```bash
 curl -H "Content-Type: application/json" -X PUT "https://open-search-dem-53461-5cfxl-hcm03.vdb-opensearch.vngcloud.vn:9200/ecommerce" -k -H "Authorization: Basic $(echo -n 'master-user:123456789aA@' | base64)" --data-binary "@ecommerce-field_mappings.json"
@@ -56,21 +55,21 @@ curl -H "Content-Type: application/json" -X PUT "https://open-search-dem-53461-5
 **Bước 3: Kiểm tra dữ liệu trên OpenSearch Dashboards**
 
 1. Truy cập và đăng nhập vào **OpenSearch Dashboards**
-2. Vào mục **Management**, chọn **Dashboard Management**&#x20;
+2. Vào mục **Management**, chọn **Dashboard Management**
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 3. Chọn mục **Index patterns**, tiếp tục chọn **Create index pattern**
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 4. Nhập **Index pattern name**, ví dụ `ecommerce*` sau đó chọn **Next step**
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 5. Truy cập **Discover** để xem dữ liệu mẫu.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## **Đẩy event logs từ Logstash vào OpenSearch**
 
@@ -158,16 +157,16 @@ Nếu logs xuất hiện, có nghĩa là Logstash đã gửi dữ liệu thành 
 #### **Bước 5: Xem logs trên OpenSearch Dashboards**
 
 1. Truy cập và đăng nhập vào **OpenSearch Dashboards**
-2. Vào mục **Management**, chọn **Dashboard Management**&#x20;
+2. Vào mục **Management**, chọn **Dashboard Management**
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 3. Chọn mục **Index patterns**, tiếp tục chọn **Create index pattern**
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 4. Nhập **Index pattern name**, ví dụ `logstash-logs*` sau đó chọn **Next step**
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 5. Cuối cùng, bạn hãy truy cập vào mục **Discover** để xem logs.

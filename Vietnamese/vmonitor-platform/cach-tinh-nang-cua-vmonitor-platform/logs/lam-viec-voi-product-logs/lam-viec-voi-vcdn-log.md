@@ -12,21 +12,21 @@
   * **Monitoring Status**: trạng thái monitoring của vCDN domain. Nếu bạn chưa bật tính năng Detailed Monitoring thì trạng thái sẽ là **INACTIVE**, nếu bạn đã bật tính năng này và chọn một Log project làm nơi nhận vCDN logs thì trạng thái sẽ là **ACTIVE**, còn nếu vCDN domain đã bị xóa khỏi hệ thống vCDN thì trạng thái sẽ là **DELETED**. Sau 24h, nếu không có logs đổ về thì các vCDN domain có trạng thái monitoring là **DELETED** sẽ bị ẩn khỏi giao diện monitoring của bạn.
   * **Detailed Monitoring**: bật/ tắt (enable/ disable) tính năng theo dõi Logs của từng vCDN domain.
 
-<figure><img src="../../../../.gitbook/assets/image (334).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (334) (3).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Bật (enable) tính năng Detailed Monitoring <a href="#lamviecvoivcdn-log-bat-enable-tinhnangdetailedmonitoring" id="lamviecvoivcdn-log-bat-enable-tinhnangdetailedmonitoring"></a>
 
-Để bật (enable) tính năng theo dõi logs của từng vCDN domain, bạn cần nhấn vào biểu tượng **Enable** tại cột **Detailed Monitoring:**&#x20;
+Để bật (enable) tính năng theo dõi logs của từng vCDN domain, bạn cần nhấn vào biểu tượng **Enable** tại cột **Detailed Monitoring:**
 
-* Lúc này hệ thống sẽ hiển thị popup và bạn cần **chọn Log Project** để chứa logs của vCDN domain này, sau đó nhấn nút **Enable**.  Nếu bạn chưa có bất kì Log Project nào, bạn có thể nhấn nút **Create a log project** ở popup hoặc trở lại menu **Quota & Usage** để tạo **Log Project** trước.
+* Lúc này hệ thống sẽ hiển thị popup và bạn cần **chọn Log Project** để chứa logs của vCDN domain này, sau đó nhấn nút **Enable**. Nếu bạn chưa có bất kì Log Project nào, bạn có thể nhấn nút **Create a log project** ở popup hoặc trở lại menu **Quota & Usage** để tạo **Log Project** trước.
 
-<figure><img src="../../../../.gitbook/assets/image (335).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (335) (3).png" alt="" width="375"><figcaption></figcaption></figure>
 
 * Sau khi bật enable monitoring bạn sẽ thấy status của vCDN domain này chuyển thành **INACTIVE** thành **ACTIVE**, lúc này bạn có thể truy cập vào Log Project vừa chọn để xem logs. Chi tiết tham khảo thêm tại [Làm việc với Log search](../lam-viec-voi-log-search/).
 
-<figure><img src="../../../../.gitbook/assets/image (336).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (336) (3).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -34,7 +34,7 @@
 
 Nếu bạn có nhu cầu thay đổi Log Project chứa Logs, bạn có thể chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/69468834/image2024-1-9_13-27-31.png?version=1\&modificationDate=1704781652000\&api=v2) và chọn nút **Edit Log Project**. Tại popup **Change Log project**, bạn hãy chọn Log Project mới mà bạn muốn thay đổi và bấm **Save**.
 
-<figure><img src="../../../../.gitbook/assets/image (337).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (337) (3).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ***
 
@@ -44,7 +44,7 @@ Nếu bạn không còn nhu cầu để xem logs của 1 vCDN domain bất kỳ,
 
 * Lúc này hệ thống sẽ hiển thị popup và bạn cần chọn **Disable** để tắt tính năng đẩy logs từ **vCDN domain** đang chọn về hệ thống vMonitor Platform.
 
-<figure><img src="../../../../.gitbook/assets/image (338).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (338) (3).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ***
 

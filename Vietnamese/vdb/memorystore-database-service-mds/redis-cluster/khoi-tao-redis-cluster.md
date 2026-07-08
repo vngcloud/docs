@@ -2,7 +2,7 @@
 
 Hướng dẫn này mô tả các bước tạo mới một Redis Cluster trên vDB, bao gồm cấu hình cluster, thiết lập backup và tùy chọn khôi phục từ backup có sẵn.
 
----
+***
 
 ## Điều kiện tiên quyết
 
@@ -10,7 +10,7 @@ Hướng dẫn này mô tả các bước tạo mới một Redis Cluster trên 
 * Đã cấu hình ít nhất 1 Backup Policy và 1 Backup Location (status Available, Product = vDB) trong Backup Center.
 * (Tùy chọn - nếu khôi phục từ backup) Đã có ít nhất 1 backup trong Backup Center với restore point ở trạng thái Completed.
 
----
+***
 
 ## Bước 1- Truy cập trang tạo mới Database
 
@@ -18,9 +18,9 @@ Hướng dẫn này mô tả các bước tạo mới một Redis Cluster trên 
 2. Tại menu bên trái, chọn Memory Store.
 3. Chọn Create Database.
 
-![](../../../.gitbook/assets/Redis-cluster/Redis-list.png)
+![](<../../../../.gitbook/assets/Redis-list (2).png>)
 
----
+***
 
 ## Bước 2 - Cấu hình cơ bản
 
@@ -32,22 +32,24 @@ Hướng dẫn này mô tả các bước tạo mới một Redis Cluster trên 
 * Instance Type: Chọn cấu hình CPU/RAM theo nhu cầu.
 * Storage Size: Dung lượng lưu trữ (GB).
 
----
+***
 
 ## Bước 3 - Cấu hình Cluster
 
 Tại section Cluster configuration, chọn Cluster mode:
 
-![](../../../.gitbook/assets/Redis-cluster/create-redis-cluster.png)
+![](<../../../../.gitbook/assets/create-redis-cluster (2).png>)
 
-| Option       | Mô tả                                                                                   |
-| ------------ | ----------------------------------------------------------------------------------------- |
+| Option       | Mô tả                                                                           |
+| ------------ | ------------------------------------------------------------------------------- |
 | Single-node  | 1 Master node với replica tùy chọn. Phù hợp cho workload nhỏ và môi trường dev. |
-| Cluster Mode | Replication trên nhiều node với tự động failover. Phù hợp cho production và HA.  |
+| Cluster Mode | Replication trên nhiều node với tự động failover. Phù hợp cho production và HA. |
 
 Chọn Cluster Mode để tiếp tục tạo Redis Cluster.
 
-{% hint style="info" %} Khi bật Cluster Mode, hệ thống hỗ trợ High Availability với tự động failover. Một số lệnh Redis không khả dụng ở chế độ này. {% endhint %}
+{% hint style="info" %}
+Khi bật Cluster Mode, hệ thống hỗ trợ High Availability với tự động failover. Một số lệnh Redis không khả dụng ở chế độ này.
+{% endhint %}
 
 ### Cấu hình số Node
 
@@ -58,13 +60,13 @@ Sau khi chọn Cluster Mode, cấu hình trường Number of nodes (2–10):
 
 Cluster topology preview hiển thị sơ đồ trực quan với số Master, Replica và tổng số nodes theo cấu hình đã chọn.
 
----
+***
 
 ## Bước 4 — Khôi phục từ Backup (tùy chọn)
 
 Nếu bạn muốn tạo cluster từ một backup có sẵn thay vì database trống, thực hiện tại section Backup Image:
 
-![](../../../.gitbook/assets/Redis-cluster/create-redis-restore.png)
+![](<../../../../.gitbook/assets/create-redis-restore (2).png>)
 
 1. Danh sách backup từ Backup Center được hiển thị trực tiếp dạng bảng (bao gồm cả Auto và Manual Backup). Chỉ hiển thị các backup có ít nhất 1 restore point ở trạng thái Completed.
 2. Tìm backup cần dùng, nhấn biểu tượng expand để xem danh sách restore points.
@@ -72,32 +74,34 @@ Nếu bạn muốn tạo cluster từ một backup có sẵn thay vì database t
 
 Khi chọn restore point, hệ thống tự động điền các cài đặt instance (instance type, storage size...) từ thông tin backup — bạn không cần nhập lại.
 
-{% hint style="warning" %} Storage Size của cluster mới phải lớn hơn hoặc bằng Min.Restore Size (GB) của restore point đã chọn. Nếu không, hệ thống sẽ báo lỗi và không cho phép tạo cluster. {% endhint %}
+{% hint style="warning" %}
+Storage Size của cluster mới phải lớn hơn hoặc bằng Min.Restore Size (GB) của restore point đã chọn. Nếu không, hệ thống sẽ báo lỗi và không cho phép tạo cluster.
+{% endhint %}
 
 Nếu không chọn restore point nào, cluster sẽ được tạo mới với database trống.
 
----
+***
 
 ## Bước 5 — Cấu hình Backup Setting
 
 Tại step Backup Settings, cấu hình bảo vệ dữ liệu cho cluster:
 
-![](../../../.gitbook/assets/Redis-cluster/redis-backup-setting.png)
+![](<../../../../.gitbook/assets/redis-backup-setting (2).png>)
 
-| Trường        | Bắt buộc | Mô tả                                                                                                 |
-| --------------- | ---------- | ------------------------------------------------------------------------------------------------------- |
-| Backup Policy   | Có        | Chọn policy quy định lịch backup và thời gian lưu trữ từ Backup Center.                        |
-| Backup Location | Có        | Chọn location lưu trữ backup (chỉ hiển thị các location có status Available và Product = vDB). |
+| Trường          | Bắt buộc | Mô tả                                                                                          |
+| --------------- | -------- | ---------------------------------------------------------------------------------------------- |
+| Backup Policy   | Có       | Chọn policy quy định lịch backup và thời gian lưu trữ từ Backup Center.                        |
+| Backup Location | Có       | Chọn location lưu trữ backup (chỉ hiển thị các location có status Available và Product = vDB). |
 
 {% hint style="warning" %}
-
 * Cả 2 trường đều bắt buộc — không thể bỏ qua bước này khi tạo Cluster Mode.
 * Sau khi cluster được tạo, không thể thay đổi Backup Location.
-* Nếu không có Backup Location nào khả dụng, hãy tạo mới tại Backup Center trước khi tiếp tục. {% endhint %}
+* Nếu không có Backup Location nào khả dụng, hãy tạo mới tại Backup Center trước khi tiếp tục.
+{% endhint %}
 
 Sử dụng biểu tượng refresh bên cạnh mỗi dropdown để tải lại danh sách mới nhất từ Backup Center.
 
----
+***
 
 ## Bước 6 — Xem lại và tạo
 
@@ -111,7 +115,7 @@ Hệ thống sẽ khởi tạo cluster với:
 
 Sau khi tạo thành công, bạn sẽ được chuyển đến trang chi tiết của cluster.
 
----
+***
 
 ## Tiếp theo
 

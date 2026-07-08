@@ -7,7 +7,7 @@
 
 ## Tạo backup plan (backup server)
 
-1. Truy cập giao diện Backup Server thuộc Backup Center tại đây:  [https://backupcenter.console.greennode.ai/backup-server/list](https://backupcenter.console.greennode.ai/backup-server/list)
+1. Truy cập giao diện Backup Server thuộc Backup Center tại đây: [https://backupcenter.console.greennode.ai/backup-server/list](https://backupcenter.console.greennode.ai/backup-server/list)
 2. Chọn **Create Backup Server.**
 3. Chọn server cần tạo backup, lưu ý rằng trang này chỉ hiển thị những server chưa liên kết backup plan.
 4. Chọn backup policy áp dụng cho backup plan (backup server) này. Tìm hiểu thêm về backup policy tại đây.
@@ -23,8 +23,7 @@ Người dùng có thể kích hoạt backup plan (backup server) cùng với vi
 
 1. Truy cập giao diện Cloud Server.
 2. Chọn **Create a server**
-3.  Tại trang tạo mới Server bạn có thể tích chọn vào ô **Enable Backup** tại mục **Other settings.**&#x20;
+3.  Tại trang tạo mới Server bạn có thể tích chọn vào ô **Enable Backup** tại mục **Other settings.**
 
-    <figure><img src="../../../.gitbook/assets/image (766).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (766) (1).png" alt=""><figcaption></figcaption></figure>
 4. Sau đó khi Server được tạ&#x6F;**,** một backup plan (backup server) sẽ được tạo kèm với backup policy và backup location mặc định. Có nghĩa, việc tạo bản backup và vị trí lưu trữ đối với server này sẽ phụ thuộc vào backup policy và backup location mặc định. Bạn có thể tùy ý thay đổi backup policy và backup location sau đó.
-

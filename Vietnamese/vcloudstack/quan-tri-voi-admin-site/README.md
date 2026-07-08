@@ -6,4 +6,4 @@ vCloudStack cung cấp giao diện quản trị toàn diện hỗ trợ người
 * Theo dõi hạ tậng vật lý;
 * Theo dõi thông tin tài nguyên ảo hóa.
 
-<figure><img src="../../.gitbook/assets/image (831).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (831) (1).png" alt=""><figcaption></figcaption></figure>

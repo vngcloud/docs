@@ -19,11 +19,11 @@ Follow the steps below to work with vStorage via Service Account
 
 For details, please refer to [https://docs.api.greennode.ai/service-docs/vstorage-han02-api.html](https://docs.api.greennode.ai/service-docs/vstorage-han02-api.html) .
 
-<figure><img src="../../../.gitbook/assets/image (563).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (563) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (564).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (564) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (565).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (565) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## S3 API - Authentication <a href="#authentication" id="authentication"></a>
 
@@ -35,9 +35,9 @@ For details, please refer to [https://docs.api.greennode.ai/service-docs/vstorag
 
 For example:
 
-<figure><img src="../../../.gitbook/assets/image (571).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (571) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (572).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (572) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

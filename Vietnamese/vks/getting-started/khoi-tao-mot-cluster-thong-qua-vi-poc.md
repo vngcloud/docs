@@ -37,7 +37,7 @@ Tài nguyên POC sinh ra nhằm mục đích hỗ trợ người dùng có thể
 
 **Bước 5:** Chọn **POC** và chọn tiếp **Create Kubernetes cluster.** Hãy chờ vài phút để chúng tôi khởi tạo Cluster của bạn, trạng thái của Cluster lúc này là **Creating**.
 
-<figure><img src="../../.gitbook/assets/image (819).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (819) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 6:** Khi trạng thái **Cluster** là **Active**, bạn có thể xem thông tin Cluster, thông tin Node Group bằng cách chọn vào Cluster Name tại cột **Name**.
 
@@ -246,9 +246,9 @@ kubectl apply -f persistent-volume.yaml
 
 Đối với loại resource **Snapshot**, bạn không thể chỉ định snapshot sử dụng ví POC từ VKS. Để thực hiện tạo Snapshot qua ví POC, tại **vServer Portal**, vui lòng chọn **Activate Snapshot**, sau đó tại màn hình **Checkout**, vui lòng chọn sử dụng ví **POC**. Lúc này **tất cả các resource snapshot của bạn sẽ được tạo qua ví POC**. Do đó, việc stop POC cần được bạn thực hiện thông qua **vConsole** hoặc **vServer Portal**. Tham khảo thêm hình bên dưới.
 
-<figure><img src="../../.gitbook/assets/image (450).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (450) (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (452).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (452) (3).png" alt=""><figcaption></figcaption></figure>
 
 **Cài đặt GreenNode Snapshot Controller**
 

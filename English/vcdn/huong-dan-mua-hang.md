@@ -57,11 +57,11 @@ Instructions for purchasing and using Traffic on vCDN Portal
 
 **Step 2** : Select **Package** or **Buy More Traffic . The vCDN Billing** screen will appear.
 
-<figure><img src="../.gitbook/assets/image (379).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (379) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3** : Select **the Accelerator Package** and **Period** you want. Click **Confirm** to continue.
 
-<figure><img src="../.gitbook/assets/image (380).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (380) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 4** : Continue to perform according to the conditions:
 
@@ -69,14 +69,14 @@ Instructions for purchasing and using Traffic on vCDN Portal
 * **For postpaid customers** : no need to choose Traffic package, can use immediately and pay at the end of the month.
 * After selecting a package (if any), click **Confirm** .
 
-<figure><img src="../.gitbook/assets/image (381).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (381) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 5** : In **Payment Details** , check the selected service packages again. If the information is correct, select **Payment Confirm** to complete.
 
-<figure><img src="../.gitbook/assets/image (382).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (382) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 6 : At the Payment Confirm** screen , select **Continue** . Follow the payment instructions.
 
-<figure><img src="../.gitbook/assets/image (383).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (383) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 7:** Once completed, you can check your payment and consumption information in **Pay/Consume History** .

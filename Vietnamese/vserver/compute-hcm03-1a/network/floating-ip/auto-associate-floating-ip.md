@@ -15,17 +15,17 @@ Tính năng này **giảm thiểu các bước cấu hình**, **tối ưu hóa l
 
 ## Hướng dẫn sử dụng
 
-**Khi tạo External Interface:**&#x20;
+**Khi tạo External Interface:**
 
 * Chọn Zone cần sử dụng Floating IP và chọn option "Auto" tại phần Available Floating IPs để tạo mới
 
-<figure><img src="../../../../.gitbook/assets/image (1081).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1081) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Khi tạo Public VIP:**&#x20;
+**Khi tạo Public VIP:**
 
 * Chọn mode Public VIP, tại phần Network Setting chọn Zone cần sử dụng Floating IP và chọn option "Auto" tại phần Available Floating IPs để tạo mới
 
-<figure><img src="../../../../.gitbook/assets/image (1082).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1082) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Ghi chú quan trọng**

@@ -90,8 +90,8 @@ spec:
 
 * Sau đó tôi sử dụng IP 103.245.252.75 để curl vào host kkk.example.com như sau:
 
-<figure><img src="../../../.gitbook/assets/image (383).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (383) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Kết quả log ghi nhận được đã có thông tin Client IP này như hình:
 
-<figure><img src="../../../.gitbook/assets/image (384).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (384) (3).png" alt=""><figcaption></figcaption></figure>

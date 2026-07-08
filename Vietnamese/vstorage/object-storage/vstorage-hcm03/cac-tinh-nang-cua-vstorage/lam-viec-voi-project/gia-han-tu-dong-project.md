@@ -11,8 +11,6 @@ Hệ thống sẽ tự động gia hạn 3 ngày trước khi dịch vụ hết 
 * Nếu đủ credit sẽ tiến hành gia hạn tất cả các dịch vụ. Khi gia hạn thành công hay thất bại, chúng tôi sẽ gửi email chứa thông tin gia hạn thành công/ thất bại cho bạn. Lịch sử thanh toán gia hạn dịch vụ cũng sẽ được chúng tôi lưu trữ trên hệ thống vConsole. Để biết thêm thông tin, hãy truy cập [Dashboard vConsole](https://dashboard.console.greennode.ai/payment-history).
 * Nếu không đủ credit, hệ thống sẽ cố gắng gia hạn những dịch cho đến khi không còn đủ credit. Khi gia hạn thành công hay thất bại, chúng tôi sẽ gửi email chứa thông tin gia hạn thành công/ thất bại cho bạn. Lịch sử thanh toán gia hạn dịch vụ cũng sẽ được chúng tôi lưu trữ trên hệ thống vConsole. Để biết thêm thông tin, hãy truy cập [Dashboard vConsole](https://dashboard.console.greennode.ai/payment-history).
 
-&#x20;
-
 <details>
 
 <summary>Thiết lập tính năng gia hạn tự động khi khởi tạo project</summary>
@@ -21,13 +19,13 @@ Hệ thống sẽ tự động gia hạn 3 ngày trước khi dịch vụ hết 
 2. Tại thời điểm thiết lập thông tin về project cần mua, chọn **Gia hạn tự động**.
 3. Chọn **chu kỳ gia hạn tự động**. Chúng tôi cung cấp các chu kỳ gia hạn bao gồm: 1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng. Khi bạn thực hiện chọn chu kỳ gia hạn, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ lưu trữ mới và tổng số tiền bạn cần chi trả cho việc gia hạn **project**.
 
-Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](../../../cach-tinh-phi.md).&#x20;
+Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](../../../cach-tinh-phi.md).
 
 Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ mới sau khi gia hạn project sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
 
-_**Video hướng dẫn:**_&#x20;
+_**Video hướng dẫn:**_
 
-<img src="../../../../../.gitbook/assets/Khoi_tao_project.gif" alt="" data-size="original">
+<img src="../../../../../../.gitbook/assets/Khoi_tao_project (1).gif" alt="" data-size="original">
 
 </details>
 
@@ -37,14 +35,14 @@ _**Video hướng dẫn:**_&#x20;
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49649654/image2023-3-6_10-2-51.png?version=1\&modificationDate=1678345477000\&api=v2)tại **project** bạn muốn thực hiện thiết lập gia hạn tự động. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49649654/image2023-3-9_14-4-56.png?version=1\&modificationDate=1678345498000\&api=v2).
-3. Màn hình **Bật gia hạn tự động** được hiển th&#x1ECB;**.** Chọn **Thời hạn** gia hạn mà bạn mong muốn.&#x20;
+3. Màn hình **Bật gia hạn tự động** được hiển th&#x1ECB;**.** Chọn **Thời hạn** gia hạn mà bạn mong muốn.
 4. Chọn **Đồng ý.**
 
-Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](../../../cach-tinh-phi.md).&#x20;
+Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí gia hạn project, hãy xem [Cách tính phí](../../../cach-tinh-phi.md).
 
 Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ mới sau khi gia hạn project sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
 
-<img src="../../../../../.gitbook/assets/Bat_gia_han_tu_dong.gif" alt="" data-size="original">
+<img src="../../../../../../.gitbook/assets/Bat_gia_han_tu_dong (1).gif" alt="" data-size="original">
 
 </details>
 
@@ -54,12 +52,12 @@ Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49649654/image2023-3-6_10-2-51.png?version=1\&modificationDate=1678345477000\&api=v2)tại **project** bạn muốn thực hiện tắt thiết lập gia hạn tự động. Chọn ![](https://docs.vngcloud.vn/download/thumbnails/49649654/image2023-3-9_14-8-29.png?version=1\&modificationDate=1678345710000\&api=v2).
-3. Màn hình **Tắt gia hạn tự động** được hiển th&#x1ECB;**.**&#x20;
+3. Màn hình **Tắt gia hạn tự động** được hiển th&#x1ECB;**.**
 4. Chọn **Đồng ý.**
 
 Sau khi bạn thực hiện thành công các bước trên, tính năng gia hạn tự động cho project đã được tắt.
 
-<img src="../../../../../.gitbook/assets/Tat_gia_han_tu_dong.gif" alt="" data-size="original">
+<img src="../../../../../../.gitbook/assets/Tat_gia_han_tu_dong (1).gif" alt="" data-size="original">
 
 </details>
 
@@ -72,4 +70,3 @@ Ngoài cổng giao diện quản lý truyền thống, chúng tôi cũng cung c�
 Để gia hạn tự động một project qua vStorage API, hãy xem [API Developers](../../api-developers/).
 
 </details>
-

@@ -1,8 +1,8 @@
 # Log Alarm
 
-Khi bạn tạo **Alarm** cho dữ liệu **logs**, trong phần **Set Alarm Conditions.** Các thành phần tạo nên câu lệnh truy vấn đối với dữ liệu logs bao gồm:&#x20;
+Khi bạn tạo **Alarm** cho dữ liệu **logs**, trong phần **Set Alarm Conditions.** Các thành phần tạo nên câu lệnh truy vấn đối với dữ liệu logs bao gồm:
 
-<figure><img src="../../../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (110) (3).png" alt=""><figcaption></figcaption></figure>
 
 Trong đó
 
@@ -49,7 +49,7 @@ Save query: nơi bạn có thể chọn và tái sử dụng các query mà bạ
 
 ### 8. Threshold value
 
-**Threshold value**: giá trị ngưỡng mà bạn muốn đặt cảnh báo.&#x20;
+**Threshold value**: giá trị ngưỡng mà bạn muốn đặt cảnh báo.
 
 ### 9. Time frame
 

@@ -1,6 +1,6 @@
 # Tích hợp công cụ Cyberduck với vStorage
 
-Để xem hướng dẫn tích hợp công cụ Cyberduck với vStorage, bạn có thể thực hiện qua vStorage Portal theo hướng dẫn bên dưới:&#x20;
+Để xem hướng dẫn tích hợp công cụ Cyberduck với vStorage, bạn có thể thực hiện qua vStorage Portal theo hướng dẫn bên dưới:
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn thư mục **Tích hợp.**
@@ -15,13 +15,13 @@
 
 ***
 
-#### **Tiếp tục thực hiện theo các bước bên dưới để hoàn thành việc tích hợp S3cmd với vStorage:**  <a href="#tichhopcongcucyberduckvoivstorage-tieptucthuchientheocacbuocbenduoidehoanthanhviectichhops3cmdvoivst" id="tichhopcongcucyberduckvoivstorage-tieptucthuchientheocacbuocbenduoidehoanthanhviectichhops3cmdvoivst"></a>
+#### **Tiếp tục thực hiện theo các bước bên dưới để hoàn thành việc tích hợp S3cmd với vStorage:** <a href="#tichhopcongcucyberduckvoivstorage-tieptucthuchientheocacbuocbenduoidehoanthanhviectichhops3cmdvoivst" id="tichhopcongcucyberduckvoivstorage-tieptucthuchientheocacbuocbenduoidehoanthanhviectichhops3cmdvoivst"></a>
 
 1. Tải công cụ người dùng **Cyberduck** tại đây [https://cyberduck.io/download/](https://cyberduck.io/download/).
-2. Mở ứng dụng **Cyberduck**.&#x20;
+2. Mở ứng dụng **Cyberduck**.
 3. Chọn **Open Connection** hoặc **Bookmark + New Bookmark**.
 
-<figure><img src="../../../../../.gitbook/assets/image (530).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (530) (2).png" alt=""><figcaption></figcaption></figure>
 
 4\. Nhập thông tin kết nối bao gồm:
 
@@ -29,10 +29,10 @@
 * **Access key**: nhập S3 access key mà bạn tạo từ vIAM cũng chính là thông tin access key lấy từ bước 4 bên trên.
 * **Secret key**: nhập S3 access key mà bạn tạo từ vIAM cũng chính là thông tin access key lấy từ bước 4 bên trên.
 
-<figure><img src="../../../../../.gitbook/assets/image (531).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (531) (2).png" alt=""><figcaption></figcaption></figure>
 
 5\. Chọn **Connect**.
 
 6\. Bây giờ **Cyberduck** đã kết nối thành công tới **vStorage**. Bạn đã có thể sử dụng Cyberduck để truy xuất tới vStorage, tham khảo thêm tại Sử dụng công cụ Cyberduck.
 
-<figure><img src="../../../../../.gitbook/assets/image (532).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (532) (2).png" alt=""><figcaption></figcaption></figure>

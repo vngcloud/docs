@@ -26,7 +26,7 @@ Các thông tin thống kê trong report bao gồm:
 
 **Bước 2:** Chọn mục **Report** để xem báo cáo. Dữ liệu bao gồm các thông tin thống kê như đã nêu ở phần chi tiết.
 
-<figure><img src="../.gitbook/assets/image (857).png" alt="" width="166"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (857).png" alt="" width="166"><figcaption></figcaption></figure>
 
 **Bước 3:** Bạn có thể thực hiện **Filter theo điều kiện:**
 
@@ -36,8 +36,8 @@ Các thông tin thống kê trong report bao gồm:
 * **Group**: Gói dịch vụ.
 * **Khung thời gian:** Chọn khoảng thời gian báo cáo.
 
-<figure><img src="../.gitbook/assets/image (283).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (283) (3).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 4:** Nhấp vào biểu tượng **Excel** để xuất báo cáo ra file Excel để lưu trữ hoặc phân tích thêm.
 
-<figure><img src="../.gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (284) (3).png" alt=""><figcaption></figcaption></figure>

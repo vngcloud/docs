@@ -21,47 +21,47 @@
 * Chạy agent installer đã tải ở trên
 * Sau khi nhận thông báo, chọn **More Info**
 
-<figure><img src="../../../../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (115) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Sau đó chọn **Run anyway**, để bắt đầu cài agent
 
-<figure><img src="../../../../../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (116) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Chọn **Next** để tiếp tục
 
-<figure><img src="../../../../../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (117) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Nhập 2 thông tin **Client\_ID** và **Secret\_Key** đã sao chép ở trên vào 2 trường: **IAM\_CLIENT\_ID** và **IAM\_CLIENT\_SECRET**:
 
-<figure><img src="../../../../../.gitbook/assets/image (118).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (118) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Để mặc định, chọn Next để tiếp tục, hoặc nếu bạn muốn thay đổi thư mục cài đặt thì thực hiện thay đổi
 
-<figure><img src="../../../../../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (119) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Chọn **Accept the license,** sau đó chọn **Next** để tiếp tục
 
-<figure><img src="../../../../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (120) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Để mặc định, chọn **Next** để tiếp tục, hoặc bạn có thể tùy chỉnh shortcut menu name cho agent
 
-<figure><img src="../../../../../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (121) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Chọn **Install** để thực hiện cài đặt
 
-<figure><img src="../../../../../.gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (122) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Chọn **Yes** để thực hiện grant quyền cho agent hoạt động
 
-<figure><img src="../../../../../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (123) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Sau khi quá trình cài đặt hoàn tất, chọn **Finish**
 
-<figure><img src="../../../../../.gitbook/assets/image (124).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (124) (3).png" alt=""><figcaption></figcaption></figure>
 
 4\. **Sau khi cài đặt thành công bạn sẽ thấy server ở trang Infrastructure List/Host**
 
-<figure><img src="../../../../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (113) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### **Telegraf Agent với API\_KEY (deprecated**) <a href="#windowos-telegrafagentvoiapi_key-deprecated-khongkhuyencaosudung-saptoisedunghotrovoiphuongthucnay" id="windowos-telegrafagentvoiapi_key-deprecated-khongkhuyencaosudung-saptoisedunghotrovoiphuongthucnay"></a>
 
@@ -76,11 +76,11 @@ B1: Tạo API Key (nếu chưa thực hiện tạo bất kỳ API Key nào trư�
 * Truy cập vào portal vMonitor Platform Product: [https://hcm-3.console.greennode.ai/vmonitor/](https://hcm-3.console.greennode.ai/vmonitor/)
 * Chọn **Intergration** => sau đó chọn phần **API Key**
 
-<figure><img src="../../../../../.gitbook/assets/image (126).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (126) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Chọn **Create an API Key**, để thực hiện tạo mới (nếu chưa tạo bất kỳ API Key nào trước đó)
 
-<figure><img src="../../../../../.gitbook/assets/image (128).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (128) (3).png" alt=""><figcaption></figcaption></figure>
 
 B2: Download Agent Installer
 
@@ -91,54 +91,54 @@ B3: Install Agent
 * Chạy agent installer
 * Sau khi nhận thông báo, chọn **More Info**
 
-<figure><img src="../../../../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (115) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Sau đó chọn **Run anyway**, để bắt đầu install agent
 
-<figure><img src="../../../../../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (116) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Chọn **Next** để tiếp tục
 
-<figure><img src="../../../../../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (132) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Quay về Portal vMonitor Platform, ở phần API Key, **chọn** **biểu** **tượng copy**, để copy thông tin API Key
 
-<figure><img src="../../../../../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (133) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Paste thông tin API Key vào phần nhập **Credentials**
 
-<figure><img src="../../../../../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (134) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Có thể tùy chỉnh installation folder
 
-<figure><img src="../../../../../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (135) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Chọn **Accept the license,** sau đó chọn **Next** để tiếp tục
 
-<figure><img src="../../../../../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (136) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Có thể tùy chỉnh shortcut menu name cho agent, sau đó chọn **Next** để tiếp tục
 
-<figure><img src="../../../../../.gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (138) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Chọn **Install** để thực hiện cài đặt
 
-<figure><img src="../../../../../.gitbook/assets/image (139).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (139) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Chọn Yes để thực hiện grant quyền cho agent hoạt động
 
-<figure><img src="../../../../../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (123) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Sau khi quá trình cài đặt hoàn tất, chọn **Finish**
 
-<figure><img src="../../../../../.gitbook/assets/image (141).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (141) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### B4: Kiểm tra agent đã hoạt động <a href="#windowos-b4-kiemtraagentdahoatdong" id="windowos-b4-kiemtraagentdahoatdong"></a>
 
 * Truy cập vào portal vMonitor Platform, chọn **Infrastructure list** => chọn **Host,** sau đó kiểm tra hostname của VM đã xuất hiện trong danh sách
 
-<figure><img src="../../../../../.gitbook/assets/image (142).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (142) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Chọn vào tên **Hostname**, để kiểm tra dashboard monitor
 
-<figure><img src="../../../../../.gitbook/assets/image (143).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (143) (2).png" alt=""><figcaption></figcaption></figure>

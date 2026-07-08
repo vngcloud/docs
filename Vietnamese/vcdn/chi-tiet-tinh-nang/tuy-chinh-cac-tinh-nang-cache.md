@@ -6,11 +6,11 @@
 
 ## Chi tiết
 
-Hiện tại, vCDN đang hỗ trợ tùy chỉnh các tính năng cach&#x65;**:** cho phép khách hàng tùy chỉnh các chỉ số cache trên hệ thống và trên browser. Cụ thể:&#x20;
+Hiện tại, vCDN đang hỗ trợ tùy chỉnh các tính năng cach&#x65;**:** cho phép khách hàng tùy chỉnh các chỉ số cache trên hệ thống và trên browser. Cụ thể:
 
-<figure><img src="../../.gitbook/assets/image (16) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
-Trong đó:    &#x20;
+Trong đó:
 
 * **Caching Level**: Xác định mức độ cache của CDN. Với VOD, vCDN đang cung cấp 3 mức độ cache bao gồm: URL without query string only, Skip Query String of URL, URL With Query String.
   * URL Without Query String Only: Không cache nếu có URL Param trong request.

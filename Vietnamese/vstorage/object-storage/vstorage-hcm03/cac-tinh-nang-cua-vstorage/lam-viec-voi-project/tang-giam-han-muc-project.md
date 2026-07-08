@@ -2,9 +2,9 @@
 
 Bạn đã khởi tạo project với lượng quota ban đầu phù hợp với nhu cầu lưu trữ. Hiện tại nhu cầu kinh doanh của bạn thay đổi mà dung lượng cũ không đáp ứng được. Để giải quyết vấn đề này, bạn có thể thay đổi quota lưu trữ thông qua tính năng Thay đổi quota mà chúng tôi cung cấp.
 
-Để thay đổi quota cho một project, bạn có thể:&#x20;
+Để thay đổi quota cho một project, bạn có thể:
 
-&#x20;Sử dụng vStorage Portal
+Sử dụng vStorage Portal
 
 1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
@@ -18,10 +18,8 @@ Bạn đã khởi tạo project với lượng quota ban đầu phù hợp với
 
 6\. Chọn **Tiếp tục thanh toán** và thực hiện thanh toán sau khi chọn phương thức thanh toán phù hợp.
 
-Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí tăng thêm khi **thay đổi quota**, hãy xem [Cách tính phí](../../../cach-tinh-phi.md).&#x20;
+Để biết danh sách các loại hình thức thanh toán của vStorage và cách tính phí tăng thêm khi **thay đổi quota**, hãy xem [Cách tính phí](../../../cach-tinh-phi.md).
 
 Sau khi bạn thực hiện thành công 6 bước trên, giá trị tổng **quota** mới sau khi thay đổi sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
 
-
-
-<figure><img src="../../../../../.gitbook/assets/Tang_giam_han_muc_project.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Tang_giam_han_muc_project (1).gif" alt=""><figcaption></figcaption></figure>

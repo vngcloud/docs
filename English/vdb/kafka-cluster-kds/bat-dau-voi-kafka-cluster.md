@@ -13,7 +13,7 @@ Refer to the GreenNode login guide [here](../../identity-and-access-management-i
 
 1. Click the "Create Kafka Cluster" button.
 
-<figure><img src="../../.gitbook/assets/step2-create-kafka.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/step2-create-kafka (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Fill in the following information:
 
@@ -29,14 +29,14 @@ Refer to the GreenNode login guide [here](../../identity-and-access-management-i
 
 3. Click the "Create" button to start the Kafka cluster creation process.
 
-<figure><img src="../../.gitbook/assets/step2-after-click-create-kafka.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/step2-after-click-create-kafka (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3: Create a Topic
 
 1. After the Kafka cluster is successfully created, access the management page of that Kafka cluster.
 2. Find and click the "Create Topic" section.
 
-<figure><img src="../../.gitbook/assets/step3-create-topic.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/step3-create-topic.png" alt=""><figcaption></figcaption></figure>
 
 3. Fill in the following information:
 
@@ -51,14 +51,14 @@ Refer to the GreenNode login guide [here](../../identity-and-access-management-i
 
 1. In the Kafka cluster management page, find and click the "Create Kafka User" section.
 
-<figure><img src="../../.gitbook/assets/step5-topic-user.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/step5-topic-user (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Fill in the following information:
 
 * **Name:** Name the Kafka user.
 * **Permissions:** In the permission section, click "Add Permission" to select Produce (write data to topic) and Consume (read data from topic) permissions for each topic this user needs to access.
 
-<figure><img src="../../.gitbook/assets/step4-permission-button.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/step4-permission-button.png" alt=""><figcaption></figcaption></figure>
 
 * **Access Method:** Choose the access method for the Kafka user (mTLS or SASL) depending on the method enabled for the Kafka cluster.
 
@@ -94,7 +94,7 @@ tar -xzf kafka_2.13-3.7.0.tgz
 
 5. Next, download the TLS certificates to access the Kafka cluster.
 
-<figure><img src="../../.gitbook/assets/step5-topic-user.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/step5-topic-user (1).png" alt=""><figcaption></figcaption></figure>
 
 6. On the newly initialized server, upload and extract the TLS certificates and unzip using the command below:
 
@@ -123,7 +123,7 @@ You need to allow this server to access the Kafka cluster as a private client by
 
 Note: Port 9094 for mTLS and 9096 for SASL
 
-<figure><img src="../../.gitbook/assets/step5-port.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/step5-port (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Produce message to Kafka topic
 

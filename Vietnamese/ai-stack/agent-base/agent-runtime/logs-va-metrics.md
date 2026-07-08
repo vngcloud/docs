@@ -43,7 +43,7 @@ Lấy log từ container của tất cả replica trong một runtime. Sử dụ
 1. Mở [My Agents](https://aiplatform.console.greennode.ai/my-agents?tab=runtime) → nhấp vào Runtime
 2. Mở trang chi tiết runtime → tab **"Monitor"** → nhấn vào một endpoint → phần **"Log"**
 
-![1774581394627](../../../.gitbook/assets/1774581394627.png)
+![1774581394627](<../../../../.gitbook/assets/1774581394627 (2).png>)
 
 ***
 
@@ -118,7 +118,7 @@ Lấy mức sử dụng CPU và RAM tại thời điểm hiện tại cho một 
 
 Mở trang chi tiết runtime → tab **"Monitor"** → nhấn vào một endpoint → phần **"Metrics"**
 
-![1774581238335](../../../.gitbook/assets/1774581238335.png)
+![1774581238335](<../../../../.gitbook/assets/1774581238335 (2).png>)
 
 ***
 

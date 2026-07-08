@@ -2,9 +2,9 @@
 
 **UserData** is the user custom content exposed to the guest instance by the currently deployed and running cloud infrastructure.
 
-Its purpose is to provide additional data for the instance to customize it as much as you need, the vServer cloud service does support this feature.&#x20;
+Its purpose is to provide additional data for the instance to customize it as much as you need, the vServer cloud service does support this feature.
 
-&#x20;GreenNode is able to interpret and use this kind of user specific data in multiple ways. In most of the cases, the thing that indicates of what type is the processed data is usually the first line.
+GreenNode is able to interpret and use this kind of user specific data in multiple ways. In most of the cases, the thing that indicates of what type is the processed data is usually the first line.
 
 * Batch
 * PowerShell
@@ -103,7 +103,7 @@ _Example_:
 set_timezone: Asia/Tbilisi
 </code></pre></td></tr></tbody></table>
 
-* **set\_hostname**: Override the already default set hostname value (taken from  metadata). If the hostname is changed, a reboot will be required.
+* **set\_hostname**: Override the already default set hostname value (taken from metadata). If the hostname is changed, a reboot will be required.
 
 _Example_:
 
@@ -134,7 +134,7 @@ the users are defined as a list. Each element from the list represents a user. E
 2. **gecos**: The user description;
 3. **primary\_group**: the user's primary group;
 4. **groups**: the user's group. On Windows, primary\_group and groups are concatenated.
-5. **passwd**: the user's password. On Linux, the password is a hashed string, whereas on Windows the password is a plaintext string. If the password is not defined, a random password will be set.&#x20;
+5. **passwd**: the user's password. On Linux, the password is a hashed string, whereas on Windows the password is a plaintext string. If the password is not defined, a random password will be set.
 6. **inactive**: boolean value, defaults to False. If set to True, the user will be disabled.
 7. **expiredate**: a string in the format \<year>-\<month>-\<day>. Example: 2020-10-01.
 8. **ssh\_authorized\_keys**: a list of SSH public keys, that will be set in \~/.ssh/authorized\_keys .
@@ -212,7 +212,7 @@ To type the command lines to provide Userdata to Server, you can implement in Cr
 
 * In step "**Network setting**" to configure UserData, you could select "UserData" option, as shown below:
 
-<figure><img src="../../../.gitbook/assets/1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/1 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * You able to upload the file or **input the command lines into content field** to execute providing user information to Server. Refer to the section "Suggestions for filling commands for UserData", GreenNode provided defaults script command suggestions to configure.
 * If UseData information in the tools being used has been Base64 encoded, you will select it.
@@ -254,11 +254,10 @@ Include:
 
 The result will be displayed by default:
 
-<figure><img src="../../../.gitbook/assets/2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/2 (2).png" alt=""><figcaption></figcaption></figure>
 
 | <p>Note:</p><p>Windows license usage is authenticated according to the IP where the VM purchased the license, then system will active the license.</p> |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
-<br>
-
+\
 <br>

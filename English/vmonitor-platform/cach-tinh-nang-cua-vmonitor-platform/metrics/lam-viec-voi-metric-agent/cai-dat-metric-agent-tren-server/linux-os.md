@@ -32,7 +32,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/vngcloud/vmonitor-metrics-a
 
 3. **After running the command and completing the installation, you will see the server in the Infrastructure List/Host page.**
 
-<figure><img src="../../../../../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (108) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### **Telegraf Agent with API\_KEY (deprecated**) <a href="#linuxos-telegrafagentvoiapi_key-deprecated-khongkhuyencaosudung-saptoisedunghotrovoiphuongthucnay" id="linuxos-telegrafagentvoiapi_key-deprecated-khongkhuyencaosudung-saptoisedunghotrovoiphuongthucnay"></a>
 
@@ -52,6 +52,6 @@ API_KEY=$API_KEY bash -c "$(curl -L https://raw.githubusercontent.com/vngcloud/v
 
 * After running the command and completing the installation, you will see the server in the **Infrastructure List/Host** page.
 
-<figure><img src="../../../../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (109) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image%20(114).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (114) (2).png" alt=""><figcaption></figcaption></figure>

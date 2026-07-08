@@ -11,6 +11,4 @@ Khi tạo thành công một container, thì có các container segments đượ
 
 _**Video hướng dẫn:**_
 
-
-
-<figure><img src="../../../../.gitbook/assets/Khoi_tao_container (1).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Khoi_tao_container (1) (1).gif" alt=""><figcaption></figcaption></figure>

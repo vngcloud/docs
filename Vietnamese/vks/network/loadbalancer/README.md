@@ -18,7 +18,7 @@
 
 ### Mô hình triển khai
 
-<figure><img src="../../../.gitbook/assets/image (340).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (340) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## VNG Cloud LoadBalancer Controller
 

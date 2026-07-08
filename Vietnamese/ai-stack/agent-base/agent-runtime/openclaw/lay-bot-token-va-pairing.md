@@ -11,7 +11,7 @@
 3. Nhập **tên hiển thị** của bot (ví dụ: `My OpenClaw Bot`).
 4. Nhập **username** — bắt buộc kết thúc bằng `bot` (ví dụ: `my_openclaw_bot`).
 
-<figure><img src="../../../../.gitbook/assets/bot-father.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/bot-father (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Bước 2: Lấy Bot Token
 
@@ -31,7 +31,7 @@ Sao chép token này và lưu vào nơi an toàn — bạn sẽ cần dùng khi 
 
 ### Bước 1: Lấy Pairing Code
 
-<figure><img src="../../../../.gitbook/assets/paring.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/paring (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Mở Telegram, tìm bot bạn vừa tạo (ví dụ: `@my_openclaw_bot`).
 2. Nhấn **Start** hoặc gửi `/start`.
@@ -59,7 +59,7 @@ Thay `<pairing_code>` bằng code nhận được ở Bước 1.
 * Pairing thành công → bot bắt đầu nhận và trả lời tin nhắn của bạn trên Telegram.
 * Nếu code hết hạn → gửi lại `/start` trên Telegram để lấy code mới.
 
-<figure><img src="../../../../.gitbook/assets/paring trên chat openclaw.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/paring trên chat openclaw (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -73,7 +73,7 @@ Thay `<pairing_code>` bằng code nhận được ở Bước 1.
 2. Tạo bot mới, đặt tên (ví dụ: `Hana OpenClaw Bot`) và cấu hình thông tin cơ bản.
 3. Sau khi tạo xong, vào **bot settings** và sao chép **Bot Token**.
 
-<figure><img src="../../../../.gitbook/assets/tạo bot.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/tạo bot (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Bước 2: Lấy Bot Token
 
@@ -85,7 +85,7 @@ Token Zalo có dạng `numeric_id:secret`, ví dụ:
 
 Sao chép **toàn bộ** token (bao gồm cả phần sau dấu `:`) và lưu vào nơi an toàn.
 
-<figure><img src="../../../../.gitbook/assets/bot token.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/bot token (1).jpg" alt=""><figcaption></figcaption></figure>
 
 > **Lưu ý:** Token Zalo thường dài hơn Telegram — đảm bảo copy đầy đủ, không bỏ sót phần `:secret`.
 
@@ -99,7 +99,7 @@ Sao chép **toàn bộ** token (bao gồm cả phần sau dấu `:`) và lưu v�
 2. Gửi `/start` hoặc `Xin chào`.
 3. Bot phản hồi một **pairing code** (8 ký tự), ví dụ: `EXMP1234`. Code có hiệu lực trong **1 giờ**.
 
-<figure><img src="../../../../.gitbook/assets/chat paring.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/chat paring (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Bước 2: Approve Pairing trong OpenClaw Gateway
 

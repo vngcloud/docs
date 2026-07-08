@@ -11,13 +11,13 @@ Nếu bạn có nhu cầu lưu trữ dữ liệu log lâu dài hơn những th�
 5. Tại màn hình hiển thị thông tin **Log** **project**, tại tab **Archive**, chọn **Archive**.
 6. Nhập **Archive name** theo quy định của chúng tôi. **Tên Archive** phải dài từ 1 (tối thiểu) tới 63 (tối đa) ký tự. **Tên Archive** có thể bao gồm chữ cái in hoa, in thường (a-z, A-Z), chữ số (0-9) hoặc dấu gạch ngang. **Tên Archive** phải bắt đầu bởi một chữ cái và kết thúc bởi một chữ cái hoặc một chữ số.
 
-<figure><img src="../../../../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (159) (3).png" alt=""><figcaption></figcaption></figure>
 
 7\. Nhập **Filter** cho log nếu bạn có nhu cầu chỉ đồng bộ những dữ liệu mà thoả mãn điều kiện này, còn không chúng tôi sẽ đồng bộ tất cả Log của Log Project đang chọn. Bạn có thể nhập điều kiện lọc cho log bằng một trong 2 cách: **Suggestion mode** hoặc **Editor mode**. Cách sử dụng 2 phương thức này và chuyển đổi qua lại giữa 2 phương thức đã được chúng tôi mô tả ở các tính năng bên trên, để biết thêm thông tin hãy xem tại [Log search](../../dashboard/widget/log-search.md).
 
 8\. Chọn **Destination**. Bạn có thể chọn 1 trong 2 nơi dữ liệu log được archive bao gồm: **vStorage container** hoặc **S3 compatible**.
 
-<figure><img src="../../../../.gitbook/assets/image (160).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (160) (2).png" alt=""><figcaption></figcaption></figure>
 
 * **Select a vStorage container**
 
@@ -37,7 +37,7 @@ Nếu bạn có nhu cầu lưu trữ dữ liệu log lâu dài hơn những th�
 
 14\. Chọn **Select**.
 
-<img src="../../../../.gitbook/assets/image (27).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (27) (1).png" alt="" data-size="original">
 
 </details>
 

@@ -11,7 +11,4 @@ Bạn đã tải thành công object lên container của bạn.
 
 _**Video hướng dẫn:**_
 
-
-
-<figure><img src="../../../../.gitbook/assets/Tai_len_tep_tin.gif" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../../../.gitbook/assets/Tai_len_tep_tin (1).gif" alt=""><figcaption></figcaption></figure>

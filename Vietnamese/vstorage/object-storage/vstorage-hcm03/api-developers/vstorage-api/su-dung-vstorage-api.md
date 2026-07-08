@@ -8,9 +8,9 @@ Chi tiết danh sách vStorage API được chúng tôi mô tả tại [https://
 
 Bên dưới là ví dụ với vStorage API tạo mới một container trên một project:
 
-<figure><img src="../../../../../.gitbook/assets/image (553).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (553) (3).png" alt=""><figcaption></figcaption></figure>
 
-**Trong đó:**&#x20;
+**Trong đó:**
 
 * Vùng số 1: vùng tìm kiếm nhanh API theo tên hoặc key words của API.
 * Vùng số 2: vùng hiển thị danh sách API theo từng nhóm chức năng.

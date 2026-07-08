@@ -2,18 +2,18 @@
 
 > This guide walks you through configuring **Multi-Instance GPU (MIG)** on VKS to partition an NVIDIA H100 GPU into multiple isolated MIG instances — each with dedicated VRAM and Streaming Multiprocessors, ensuring complete workload isolation.
 
-<figure><img src="../../.gitbook/assets/MIG-VKS/TEST-CASE-SUMMARY.png" alt="MIG architecture on VKS — GPU 0 partitioned into 2 MIG instances, GPU 1 remains full GPU"><figcaption><p>MIG architecture on VKS: GPU Operator manages both MIG GPU (2x 3g.40gb) and non-MIG GPU (full 80 GB) on the same node</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/TEST-CASE-SUMMARY (1).png" alt="MIG architecture on VKS — GPU 0 partitioned into 2 MIG instances, GPU 1 remains full GPU"><figcaption><p>MIG architecture on VKS: GPU Operator manages both MIG GPU (2x 3g.40gb) and non-MIG GPU (full 80 GB) on the same node</p></figcaption></figure>
 
----
+***
 
 ## Prerequisites
 
-- A running VKS Cluster with a node group using an **NVIDIA H100** GPU (or Ampere/Hopper or newer — MIG requires Ampere architecture or later).
-- `kubectl` and `helm` installed on your local machine.
-- `yq` version ≥ 4 installed for safe YAML merging (see Step 2).
-- `kubectl` connected to the cluster. Verify with `kubectl get nodes`.
+* A running VKS Cluster with a node group using an **NVIDIA H100** GPU (or Ampere/Hopper or newer — MIG requires Ampere architecture or later).
+* `kubectl` and `helm` installed on your local machine.
+* `yq` version ≥ 4 installed for safe YAML merging (see Step 2).
+* `kubectl` connected to the cluster. Verify with `kubectl get nodes`.
 
----
+***
 
 ## Step 1: Install GPU Operator with `mixed` MIG Strategy
 
@@ -46,24 +46,24 @@ kubectl -n gpu-operator get pods -owide
 
 All pods must be `Running` or `Completed`:
 
-| Pod | Expected status |
-|---|---|
-| `gpu-feature-discovery` | Running |
-| `nvidia-container-toolkit` | Running |
-| `nvidia-cuda-validator` | Completed |
-| `nvidia-dcgm-exporter` | Running |
-| `nvidia-device-plugin-daemonset` | Running |
-| `nvidia-driver-daemonset` | Running |
-| `nvidia-mig-manager` | Running |
-| `nvidia-operator-validator` | Running |
+| Pod                              | Expected status |
+| -------------------------------- | --------------- |
+| `gpu-feature-discovery`          | Running         |
+| `nvidia-container-toolkit`       | Running         |
+| `nvidia-cuda-validator`          | Completed       |
+| `nvidia-dcgm-exporter`           | Running         |
+| `nvidia-device-plugin-daemonset` | Running         |
+| `nvidia-driver-daemonset`        | Running         |
+| `nvidia-mig-manager`             | Running         |
+| `nvidia-operator-validator`      | Running         |
 
-<figure><img src="../../.gitbook/assets/MIG-VKS/Cai-GPU-Operator.png" alt="GPU Operator pods running"><figcaption><p>All GPU Operator pods in Running/Completed state</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Cai-GPU-Operator (1).png" alt="GPU Operator pods running"><figcaption><p>All GPU Operator pods in Running/Completed state</p></figcaption></figure>
 
 {% hint style="warning" %}
 VKS nodes have no pre-installed NVIDIA driver. Omitting `driver.enabled=true` will prevent the `nvidia-device-plugin` pod from starting, and the node will not expose any GPU resources.
 {% endhint %}
 
----
+***
 
 ## Step 2: Create a Custom MIG ConfigMap
 
@@ -98,8 +98,9 @@ yq -i '.mig-configs.custom-gpu0-3g40gb = [
 ```
 
 In this example:
-- **GPU 0** is enabled for MIG with profile `3g.40gb` — split into 2 instances, each with 40 GB VRAM and 60 Streaming Multiprocessors.
-- **GPU 1** remains non-MIG (full 80 GB).
+
+* **GPU 0** is enabled for MIG with profile `3g.40gb` — split into 2 instances, each with 40 GB VRAM and 60 Streaming Multiprocessors.
+* **GPU 1** remains non-MIG (full 80 GB).
 
 **Step 2.4: Verify the YAML structure before applying**
 
@@ -135,7 +136,7 @@ helm upgrade gpu-operator nvidia/gpu-operator \
 The Helm value `migManager.config.default` only accepts `"all-disabled"` or `""`. To reference a custom ConfigMap, use `migManager.config.name`.
 {% endhint %}
 
----
+***
 
 ## Step 3: Apply MIG Config to the Node
 
@@ -160,9 +161,9 @@ level=info msg="Successfully updated to MIG config: custom-gpu0-3g40gb"
 level=info msg="Changing the 'nvidia.com/mig.config.state' node label to 'success'"
 ```
 
-<figure><img src="../../.gitbook/assets/MIG-VKS/Apply-MIG-config-len-node.png" alt="MIG Manager log confirming config applied successfully"><figcaption><p>MIG Manager confirms config applied successfully with state "success"</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Apply-MIG-config-len-node (1).png" alt="MIG Manager log confirming config applied successfully"><figcaption><p>MIG Manager confirms config applied successfully with state "success"</p></figcaption></figure>
 
----
+***
 
 ## Step 4: Verify Node Resources
 
@@ -189,17 +190,17 @@ kubectl get node <NODE_NAME> -o json \
   | jq '.metadata.labels | with_entries(select(.key | contains("mig")))'
 ```
 
-| Label | Example value | Meaning |
-|---|---|---|
-| `nvidia.com/mig-3g.40gb.count` | `2` | Number of MIG instances |
-| `nvidia.com/mig-3g.40gb.memory` | `40448 MiB` | VRAM per instance |
-| `nvidia.com/mig-3g.40gb.multiprocessors` | `60` | Streaming Multiprocessors per instance |
-| `nvidia.com/mig.config.state` | `success` | Config apply status |
-| `nvidia.com/mig.strategy` | `mixed` | Active MIG strategy |
+| Label                                    | Example value | Meaning                                |
+| ---------------------------------------- | ------------- | -------------------------------------- |
+| `nvidia.com/mig-3g.40gb.count`           | `2`           | Number of MIG instances                |
+| `nvidia.com/mig-3g.40gb.memory`          | `40448 MiB`   | VRAM per instance                      |
+| `nvidia.com/mig-3g.40gb.multiprocessors` | `60`          | Streaming Multiprocessors per instance |
+| `nvidia.com/mig.config.state`            | `success`     | Config apply status                    |
+| `nvidia.com/mig.strategy`                | `mixed`       | Active MIG strategy                    |
 
-<figure><img src="../../.gitbook/assets/MIG-VKS/Verify-node-resources.png" alt="Node resources after applying MIG config"><figcaption><p>Node exposes 2 MIG instances (mig-3g.40gb: 2) and 1 full GPU (gpu: 1)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Verify-node-resources (1).png" alt="Node resources after applying MIG config"><figcaption><p>Node exposes 2 MIG instances (mig-3g.40gb: 2) and 1 full GPU (gpu: 1)</p></figcaption></figure>
 
----
+***
 
 ## Step 5: Deploy a Workload Using MIG Instances
 
@@ -252,9 +253,9 @@ MIG 3g.40gb Device 0: (UUID: MIG-323b277e-e3e9-519a-9042-c8552ea98ed9)
 MIG 3g.40gb Device 0: (UUID: MIG-155d0cb1-2b7a-528c-8f8f-aeb1ab1e9d52)
 ```
 
-<figure><img src="../../.gitbook/assets/MIG-VKS/Pod-isolation-test.png" alt="2 pods receive different MIG UUIDs"><figcaption><p>Each Pod is assigned a distinct MIG UUID — complete isolation between workloads</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Pod-isolation-test (1).png" alt="2 pods receive different MIG UUIDs"><figcaption><p>Each Pod is assigned a distinct MIG UUID — complete isolation between workloads</p></figcaption></figure>
 
----
+***
 
 ## (Optional) Step 6: Clean Up
 
@@ -268,21 +269,21 @@ kubectl delete namespace gpu-operator --force --grace-period=0
 kubectl label node <NODE_NAME> nvidia.com/mig.config- --overwrite
 ```
 
----
+***
 
 ## Result
 
 After completing these steps, your VKS node exposes both MIG instances and a full GPU simultaneously:
 
-| Resource | K8s Resource Name | Capacity |
-|---|---|---|
-| GPU 0 — MIG (2x `3g.40gb`) | `nvidia.com/mig-3g.40gb` | 2 |
-| GPU 1 — non-MIG (full 80 GB) | `nvidia.com/gpu` | 1 |
+| Resource                     | K8s Resource Name        | Capacity |
+| ---------------------------- | ------------------------ | -------- |
+| GPU 0 — MIG (2x `3g.40gb`)   | `nvidia.com/mig-3g.40gb` | 2        |
+| GPU 1 — non-MIG (full 80 GB) | `nvidia.com/gpu`         | 1        |
 
 Each `3g.40gb` MIG instance provides: **40 GB VRAM · 60 SM · full isolation**.
 
-| I want to... | Go to |
-|---|---|
-| Monitor GPU resources | [Monitor GPU Resources](khoi-tao-va-lam-viec-voi-nvidia-gpu-node-group.md#monitor-gpu-resources) |
-| Autoscale GPU Nodegroup | [Autoscale GPU Resources](khoi-tao-va-lam-viec-voi-nvidia-gpu-node-group.md#autoscaling-gpu-resources) |
-| Compare GPU sharing modes | [GPU Sharing modes](khoi-tao-va-lam-viec-voi-nvidia-gpu-node-group.md#configure-gpu-sharing) |
+| I want to...              | Go to                                                                                                  |
+| ------------------------- | ------------------------------------------------------------------------------------------------------ |
+| Monitor GPU resources     | [Monitor GPU Resources](khoi-tao-va-lam-viec-voi-nvidia-gpu-node-group.md#monitor-gpu-resources)       |
+| Autoscale GPU Nodegroup   | [Autoscale GPU Resources](khoi-tao-va-lam-viec-voi-nvidia-gpu-node-group.md#autoscaling-gpu-resources) |
+| Compare GPU sharing modes | [GPU Sharing modes](khoi-tao-va-lam-viec-voi-nvidia-gpu-node-group.md#configure-gpu-sharing)           |

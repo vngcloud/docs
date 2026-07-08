@@ -7,7 +7,7 @@
 * **Transition rule:** Rules support moving objects between storage classes. You can set up one or more lifecycle rules to move objects if the object has not changed for N days. <mark style="color:red;">Note: Transition rule is only supported on Pay-as-you-go project.</mark>
 * **Expiration rule**: Rules support deleting objects based on constraints. You can set up one or more lifecycle rules to delete objects after a certain period of time since the object exists on the vStorage system.
 
-<figure><img src="../../../../../../.gitbook/assets/lifecylce-transition (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/lifecylce-transition (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Refer to the table below to understand how each storage class works:
 
@@ -23,21 +23,21 @@ Follow the instructions below to set up a transition rule:
 
 2\. Select **the project** containing **the bucket** you want to set up the lifecycle for. For example, I have a bucket `demo-project` that has been initialized to create Storage Class Gold as shown below.
 
-<figure><img src="../../../../../../.gitbook/assets/image (622).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (622) (1).png" alt=""><figcaption></figcaption></figure>
 
 3\. Select the **Action** icon and select **Configure Lifecycle.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (623).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (623) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\. The **Lifecycle** screen is displayed. Select **Create a lifecycle rule**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (624).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (624) (1).png" alt=""><figcaption></figcaption></figure>
 
 5\. Enter **a Rule name** . The Rule names we allow you to enter include letters (az, AZ, 0-9, '\_', '-', space). The length of your **Rule name** must be between 5 and 50.
 
 6\. Select **Rule type**: **Transition**
 
-<figure><img src="../../../../../../.gitbook/assets/image (625).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (625) (1).png" alt=""><figcaption></figcaption></figure>
 
 7\. Enter **Filter**. This filter is applied to a specific lifecycle rule. I**f you want to apply the lifecycle rule you are creating to all objects in this bucket, leave this field blank.** Or you can filter the objects you want to apply the lifecycle rule to through the prefix.
 
@@ -48,14 +48,14 @@ Follow the instructions below to set up a transition rule:
     * When enabled, this rule automatically moves the current version of an object from the current storage class to an selected lower storage class a certain period of time.
     * You can enter a number of days in the "**After \_\_\_ days from object creation**" section to define the number of days from object creation that the current version will be moved.
 
-    <figure><img src="../../../../../../.gitbook/assets/image (626).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../../.gitbook/assets/image (626) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Transition noncurrent version of objects:**
 
 * This rule applies to **noncurrent versions** of objects if you have Versioning enabled.
 * You can configure to move old versions after a number of days since they become noncurrent version, by filling in "**After \_\_\_ days become noncurrent version**".
 
-<figure><img src="../../../../../../.gitbook/assets/image (627).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (627).png" alt=""><figcaption></figcaption></figure>
 
 ## Với Expiration rule
 
@@ -67,11 +67,11 @@ Expiration rule is a set of rules that automatically delete objects when they ex
 
 3\. Select the **Action** icon and select **Configure Lifecycle.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (628).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (628).png" alt=""><figcaption></figcaption></figure>
 
 4\. The **Lifecycle** screen is displayed. Select **Create a lifecycle rule**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (629).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (629).png" alt=""><figcaption></figcaption></figure>
 
 5\. Enter **a Rule name** . The Rule names we allow you to enter include letters (az, AZ, 0-9, '\_', '-', space). The length of your **Rule name** must be between 5 and 50.
 
@@ -79,7 +79,7 @@ Expiration rule is a set of rules that automatically delete objects when they ex
 
 7\. Enter **Filter**. This filter is applied to a specific lifecycle rule. I**f you want to apply the lifecycle rule you are creating to all objects in this bucket, leave this field blank.** Or you can filter the objects you want to apply the lifecycle rule to through the prefix.
 
-<figure><img src="../../../../../../.gitbook/assets/image (630).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (630) (1).png" alt=""><figcaption></figcaption></figure>
 
 8\. Select the action that happens to the object in the bucket you choose, including:
 
@@ -97,7 +97,7 @@ Expiration rule is a set of rules that automatically delete objects when they ex
   * This rule only applies if you have Versioning enabled and have object delete markers in the bucket.
   * When enabled, it will remove expired **delete markers , improving performance by cleaning up markers that are no longer needed. (This option can usually only be enabled when there are expired delete markers in the bucket.)**
 
-<figure><img src="../../../../../../.gitbook/assets/image (631).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (631) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**

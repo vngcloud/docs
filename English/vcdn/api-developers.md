@@ -20,7 +20,7 @@ To work with vCDN API, you need to have at least one valid **API Key . API Key**
 
 **Step 2:** Select **API Key** , then select **Create new.**
 
-<figure><img src="../.gitbook/assets/image (384).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (384) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3:** Select the expiration time of the API Key you want.
 

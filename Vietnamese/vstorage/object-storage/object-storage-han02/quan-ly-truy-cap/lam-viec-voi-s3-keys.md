@@ -12,15 +12,15 @@ Trên hệ thống vStorage, S3 key là cặp key bao gồm access key và secre
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) với tài khoản <mark style="background-color:orange;">Root User Account</mark>.
 2. Chọn **Region HAN02.**
-3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (581).png" alt="" data-size="line"> tại project mà bạn vừa khởi tạo sau đó chọn mục **Identity and Access Management.**
+3. Chọn biểu tượng <img src="../../../../../.gitbook/assets/image (581) (2).png" alt="" data-size="line"> tại project mà bạn vừa khởi tạo sau đó chọn mục **Identity and Access Management.**
 4. Tại mục **List of S3 keys of this project**, chọn **Generate S3 key**.
 5. Chọn **Copy** hoặc **Download** để tải xuống thông tin Access Key/Secret Key mà bạn vừa khởi tạo.
 
-<figure><img src="../../../../.gitbook/assets/image (1050).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1050) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1051).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1051) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1052).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1052) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**
@@ -37,11 +37,11 @@ Trên hệ thống vStorage, S3 key là cặp key bao gồm access key và secre
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) với tài khoản <mark style="background-color:orange;">IAM User Account</mark>.
 2. Chọn **Region HAN02.**
-3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (581).png" alt="" data-size="line"> tại project mà bạn vừa khởi tạo sau đó chọn mục **Identity and Access Management.**
+3. Chọn biểu tượng <img src="../../../../../.gitbook/assets/image (581) (2).png" alt="" data-size="line"> tại project mà bạn vừa khởi tạo sau đó chọn mục **Identity and Access Management.**
 4. Tại mục **List of S3 keys of this project**, chọn **Generate S3 key**.
 5. Chọn **Copy** hoặc **Download** để tải xuống thông tin Access Key/Secret Key mà bạn vừa khởi tạo.
 
-<figure><img src="../../../../.gitbook/assets/image (1053).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1053) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**
@@ -63,7 +63,7 @@ Sau khi bạn đã thực hiện khởi tạo project và khởi tạo S3 key th
 1. Tải công cụ người dùng S3 Browser tại đây [https://s3browser.com/download.aspx](https://s3browser.com/download.aspx).
 2. Mở ứng dụng **S3 Browser.** Chọn thư mục **Account, sau đó chọn Add new account**
 
-<figure><img src="../../../../.gitbook/assets/image (79).png" alt="" width="295"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (79) (3).png" alt="" width="295"><figcaption></figcaption></figure>
 
 3. Màn hình Add New Account hiển thị, lúc này bạn nhập các thông tin như sau:
 
@@ -75,11 +75,11 @@ Sau khi bạn đã thực hiện khởi tạo project và khởi tạo S3 key th
 4. Chọn option **Use Secure transfer (SSL/TLS)** vì vStorage chỉ hỗ trợ kênh truyền đã được mã hoá (HTTPS, port 443) để đảm bảo an toàn dữ liệu, vStorage hiện tại không hỗ trợ kênh truyền không mã hoá (HTTP, port 80).
 5. Chọn **Add new account.**
 
-<figure><img src="../../../../.gitbook/assets/image (992).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (992) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 6. Khi kết nối thành công, màn hình S3 Browser sẽ hiển thị như sau:
 
-<figure><img src="../../../../.gitbook/assets/image (993).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (993) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -89,9 +89,9 @@ Sau khi bạn đã thực hiện khởi tạo project và khởi tạo S3 key th
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) với tài khoản <mark style="background-color:orange;">Root User Account</mark> hoặc tài khoản <mark style="background-color:orange;">IAM User Account</mark>.
 2. Chọn **Region HAN02.**
-3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (581).png" alt="" data-size="line"> tại project mà bạn vừa khởi tạo sau đó chọn mục **Identity and Access Management.**
+3. Chọn biểu tượng <img src="../../../../../.gitbook/assets/image (581) (2).png" alt="" data-size="line"> tại project mà bạn vừa khởi tạo sau đó chọn mục **Identity and Access Management.**
 4. Tại mục **List of S3 keys of this project**, chọn **S3 key** mà bạn muốn xóa sau đó chọn **Delete.**
 
 Kể từ thời điểm S3 key bị hủy thành công, bạn sẽ không thể sử dụng S3 key này để truy xuất vào vStorage. Hãy thận trọng khi thực hiện thao tác hủy (xóa) tài khoản S3 bởi bạn sẽ không thể khôi phục tài khoản đã xóa này.
 
-<figure><img src="../../../../.gitbook/assets/image (1055).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1055) (1).png" alt=""><figcaption></figcaption></figure>

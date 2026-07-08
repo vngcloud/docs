@@ -6,7 +6,7 @@ Default MTU của Pfsense là **1500**. Bạn cần chỉnh thông số này cho
 
 * **Bước 1:** Truy cập vào giao diện quản lý của pfsense, chọn tab interfaces và cấu hình lần lượt cho mạng WAN (hoặc LAN đang sử dụng).
 
-<figure><img src="../../../../.gitbook/assets/image (685).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (685) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Bước 2:** Tại mục MTU, bạn điền thông số 1450.
 

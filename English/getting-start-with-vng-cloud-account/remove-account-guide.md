@@ -4,7 +4,7 @@
 
 Để **HỦY** đăng kí account trên portal GreenNode, người dùng vào hệ thống quản lý ticket của [GreenNode](https://helpdesk.greennode.ai/) chọn chức năng hỗ trợ kỹ thuật như hình :
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 Hệ thống sẽ chuyển vào trang tạo ticket, sau khi login vào hệ thống, màn hình tương tự như sau:
 

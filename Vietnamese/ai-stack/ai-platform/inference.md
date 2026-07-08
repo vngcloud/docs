@@ -41,7 +41,7 @@ Tính năng **Inference** giúp bạn triển khai mô hình AI thành một d�
 
 * Nếu chọn Private Access, Endpoint URL sẽ xác thực bằng API Key (Cần tạo trước 1 API Key mới có thể tạo Inference)
 * Không chọn thì Endpoint URL co thể truy cập public (không cần API Key)\
-  ![](<../../.gitbook/assets/image (453).png>)
+  ![](<../../../.gitbook/assets/image (453) (2).png>)
 
 #### **Bước 5: Tạo và khởi chạy Inference**
 
@@ -61,11 +61,11 @@ Tính năng **Inference** giúp bạn triển khai mô hình AI thành một d�
 
 1. Nhấn nút **URL** tại danh sách các Inference.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 2. Sao chép tại sang chi tiết của một Inference cụ thể.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Bước 3: Gọi Inference
 

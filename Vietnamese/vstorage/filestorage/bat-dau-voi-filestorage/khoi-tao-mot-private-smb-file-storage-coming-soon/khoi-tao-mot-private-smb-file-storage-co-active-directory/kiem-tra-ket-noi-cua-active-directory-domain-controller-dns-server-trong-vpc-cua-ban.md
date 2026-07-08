@@ -2,20 +2,18 @@
 
 ## Tổng quan
 
-Khi bạn thực hiện mapping File Storage với **Windows Server** có tích hợp **Active Directory**, để việc mapping diễn ra thành công, bạn cần đảm bảo rằng **Active Directory Domain Controller** và **DNS Server** của bạn đã được kết nối trên **VPC/ Subnet** của bạn.&#x20;
+Khi bạn thực hiện mapping File Storage với **Windows Server** có tích hợp **Active Directory**, để việc mapping diễn ra thành công, bạn cần đảm bảo rằng **Active Directory Domain Controller** và **DNS Server** của bạn đã được kết nối trên **VPC/ Subnet** của bạn.
 
-* Với SMB File Storage, hệ thống vStorage đã tự động mở các port cần thiết cho việc kết nối trong VPC/ Subnet của bạn.&#x20;
-* Với Active Directory Domain Controller, DNS Server, bạn cần thực hiện mở các kết nối theo mô tả trong hình bên dưới:&#x20;
+* Với SMB File Storage, hệ thống vStorage đã tự động mở các port cần thiết cho việc kết nối trong VPC/ Subnet của bạn.
+* Với Active Directory Domain Controller, DNS Server, bạn cần thực hiện mở các kết nối theo mô tả trong hình bên dưới:
 
+<figure><img src="../../../../../../.gitbook/assets/image (922) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-
-<figure><img src="../../../../../.gitbook/assets/image (922).png" alt="" width="563"><figcaption></figcaption></figure>
-
-Tham khảo thêm danh sách port bên dưới để xác định chính xác các port bạn cần mở.&#x20;
+Tham khảo thêm danh sách port bên dưới để xác định chính xác các port bạn cần mở.
 
 ***
 
-## Danh sách các Port cần thiết để kết nối DNS Server, Active Directory tới VPC&#x20;
+## Danh sách các Port cần thiết để kết nối DNS Server, Active Directory tới VPC
 
 Bên dưới là toàn bộ các port cần thiết mà bạn cần mở trong **Security Group** để đảm bảo kết nối thông suốt giữa DNS Server, Active Directory, và VPC của bạn:
 
@@ -25,7 +23,7 @@ Bên dưới là toàn bộ các port cần thiết mà bạn cần mở trong *
 
 ## Hướng dẫn kiểm tra kết nối
 
-Giả sử, bạn đã khởi tạo:&#x20;
+Giả sử, bạn đã khởi tạo:
 
 * **Windows Server**:
   * **Server name**: `my-window-server`
@@ -37,9 +35,9 @@ Giả sử, bạn đã khởi tạo:&#x20;
 * **SMB File Storage**:
   * **File storage name**: `my-smb-file`
   * **IP Address**: `10.50.3.15`
-  * **Security Group**: Hệ thống vStorage đã tự động mở các port cần thiết cho việc kết nối trong VPC/ Subnet của bạn.&#x20;
+  * **Security Group**: Hệ thống vStorage đã tự động mở các port cần thiết cho việc kết nối trong VPC/ Subnet của bạn.
 
-Bạn có thể kiểm tra việc kết nối này theo hướng dẫn sau:&#x20;
+Bạn có thể kiểm tra việc kết nối này theo hướng dẫn sau:
 
 ### **Bước 1: Truy cập vServer Portal** tại [đây ](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server).
 
@@ -49,7 +47,7 @@ Bạn có thể kiểm tra việc kết nối này theo hướng dẫn sau:&#x20
 * Server này cần thuộc **cùng VPC và Subnet** với Windows Server của bạn.
 * Mở quyền ra ngoài internet trong **Security Group** cho server.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 ### **Bước 3: Tải và chuẩn bị script kiểm tra**
 
@@ -61,7 +59,7 @@ curl -L "https://hcm04.vstorage.vngcloud.vn/efs-source/efs_check.sh" -o /usr/loc
 efs_check.sh --help
 ```
 
-Nếu **user** bạn đang sử dụng **không có quyền** tải script`efs_check.sh`, vui lòng chuyển qua dùng **root user** rồi thực hiện chạy curl thông qua lệnh:&#x20;
+Nếu **user** bạn đang sử dụng **không có quyền** tải script`efs_check.sh`, vui lòng chuyển qua dùng **root user** rồi thực hiện chạy curl thông qua lệnh:
 
 ```bash
 sudo -i
@@ -72,7 +70,7 @@ curl -L "https://hcm04.vstorage.vngcloud.vn/efs-source/efs_check.sh" -o /usr/loc
 efs_check.sh --help
 ```
 
-Nếu thành công, kết quả trả về như sau:&#x20;
+Nếu thành công, kết quả trả về như sau:
 
 ```bash
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -89,7 +87,7 @@ Usage: /usr/local/sbin/efs_check.sh [option...] {--install-packages|--check-dns|
 
 ### **Bước 4: Cấu hình thông tin kết nối**
 
-* Cấu hình thông tin cần thiết cho script bằng lệnh:&#x20;
+* Cấu hình thông tin cần thiết cho script bằng lệnh:
 
 <pre class="language-bash"><code class="lang-bash">export \
 HOST_NAME=&#x3C;Bất kỳ tên nào mà bạn mong muốn> \
@@ -128,7 +126,7 @@ efs_check.sh -i
 efs_check.sh --check-dns
 ```
 
-Nếu thành công, kết quả trả về như sau:&#x20;
+Nếu thành công, kết quả trả về như sau:
 
 ```lua
 Checking DNS reachability:
@@ -139,7 +137,7 @@ IP DNS 10.50.3.10 reachable
 example.local has address 10.50.3.10
 ```
 
-Nếu thất bại, kết quả trả về là:&#x20;
+Nếu thất bại, kết quả trả về là:
 
 ```bash
 Checking DNS reachability:
@@ -149,7 +147,7 @@ Result:
 IP DNS 10.50.3.10 unreachable
 ```
 
-Lúc này, bạn cần kiểm tra lại **Security Group** trên **Window server** và mở thêm các port cần thiết. Chi tiết các port xem phần dưới cùng của tài liệu này.&#x20;
+Lúc này, bạn cần kiểm tra lại **Security Group** trên **Window server** và mở thêm các port cần thiết. Chi tiết các port xem phần dưới cùng của tài liệu này.
 
 ### **Bước 7: Kiểm tra kết nối với Active Directory**
 
@@ -159,7 +157,7 @@ Lúc này, bạn cần kiểm tra lại **Security Group** trên **Window server
 efs_check.sh --check-AD
 ```
 
-Nếu thành công, kết quả trả về như sau:&#x20;
+Nếu thành công, kết quả trả về như sau:
 
 ```sql
 Checking join server as a member of Domain Controller: example.local
@@ -168,7 +166,7 @@ WARNING: Using passwords on command line is insecure. Installing the setproctitl
 Joined domain example.local (S-1-5-21-155487562-3339548754-483448002)
 ```
 
-Nếu thất bại, kết quả trả về là:&#x20;
+Nếu thất bại, kết quả trả về là:
 
 ```vbnet
 Checking join server as a member of Domain Controller: example.local
@@ -181,12 +179,12 @@ ERROR(runtime): uncaught exception - (3221225653, '{Device Timeout} The specifie
     lp.set('workgroup', net.finddc(domain=domain,
 ```
 
-Lúc này, bạn cần kiểm tra lại **Security Group** trên **Window server** và mở thêm các port cần thiết. Chi tiết các port xem phần dưới cùng của tài liệu này.&#x20;
+Lúc này, bạn cần kiểm tra lại **Security Group** trên **Window server** và mở thêm các port cần thiết. Chi tiết các port xem phần dưới cùng của tài liệu này.
 
 {% hint style="info" %}
-Chú ý:&#x20;
+Chú ý:
 
-* **Một CentOS Server chỉ dùng để kiểm tra một Active Directory (AD):**  Sau khi kiểm tra thành công kết nối với một **AD**, script sẽ **lưu cấu hình** cũ, do đó, bạn **không nên tái sử dụng server này để kiểm tra các AD khác**. Nếu cần kiểm tra một AD mới, bạn nên:
+* **Một CentOS Server chỉ dùng để kiểm tra một Active Directory (AD):** Sau khi kiểm tra thành công kết nối với một **AD**, script sẽ **lưu cấu hình** cũ, do đó, bạn **không nên tái sử dụng server này để kiểm tra các AD khác**. Nếu cần kiểm tra một AD mới, bạn nên:
   * Tạo một CentOS server mới.
   * Thực hiện lại các bước từ đầu để đảm bảo kiểm tra độc lập và chính xác.
 * **Trường hợp kiểm tra thất bại (check fail):** Trong trường hợp kiểm tra thất bại, bạn **có thể sử dụng lại CentOS server** để kiểm tra kết nối trên chính DNS Server, AD đã kiểm tra trước đó sau khi đã cập nhật thêm các port trong **Security Group**.

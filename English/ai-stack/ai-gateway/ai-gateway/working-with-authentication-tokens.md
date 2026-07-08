@@ -13,11 +13,11 @@ To create a new token for AI Gateway authentication:
 
 Each token is associated with a specific AI Gateway and can be used to securely call APIs or access the Gateway.
 
-<figure><img src="../../../.gitbook/assets/image (436).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (436) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (471).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (471) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (475).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (475) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Managing the Token List
 
@@ -27,7 +27,7 @@ After creation, the token will appear in the list with the following information
 
 Only tokens with ACTIVE status can be used to authenticate API Gateway requests.
 
-<figure><img src="../../../.gitbook/assets/image (476).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (476) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Deleting an Authentication Token
 
@@ -39,7 +39,7 @@ To delete a token:
 
 Once deleted, the token can no longer be used to authenticate access to the AI Gateway.
 
-<figure><img src="../../../.gitbook/assets/image (477).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (477) (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Notes:

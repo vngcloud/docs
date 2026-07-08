@@ -2,38 +2,38 @@
 
 > Discover, deploy, and scale autonomous AI agents on GreenNode's sovereign cloud infrastructure — high performance, zero latency.
 
----
+***
 
 ## Overview
 
-![Agent Marketplace](../../../.gitbook/assets/Agentbase-image/marketplace.png)
+![Agent Marketplace](<../../../../.gitbook/assets/marketplace (1).png>)
 
 Instead of building an agent from scratch, choose a pre-built agent from the Marketplace and deploy with 1 click — no code, no container configuration required.
 
 Marketplace is ideal for:
 
-- Business users who want to apply AI to operational workflows
-- Developers who want an agent template to prototype quickly
-- Teams without dedicated AI infrastructure expertise
+* Business users who want to apply AI to operational workflows
+* Developers who want an agent template to prototype quickly
+* Teams without dedicated AI infrastructure expertise
 
 **Access:** [https://aiplatform.console.greennode.ai/agent-marketplace](https://aiplatform.console.greennode.ai/agent-marketplace)
 
----
+***
 
 ## Explore Agents
 
 Marketplace organizes agents by category:
 
-| Category | Description |
-|---|---|
-| **All** | All available agents |
-| **AI Chat** | Chat assistants, personal agents, advisory bots |
-| **Coding** | Code assistance, code review, documentation generation |
-| **Automation** | Business process automation agents |
+| Category       | Description                                            |
+| -------------- | ------------------------------------------------------ |
+| **All**        | All available agents                                   |
+| **AI Chat**    | Chat assistants, personal agents, advisory bots        |
+| **Coding**     | Code assistance, code review, documentation generation |
+| **Automation** | Business process automation agents                     |
 
 Default sort is **Trending** — most popular agents appear first.
 
----
+***
 
 ## Featured Agent
 
@@ -47,11 +47,11 @@ OpenClaw is a GreenNode-managed AI Agent, integrated with chat channels (Telegra
 
 **Deploy:** Click **Deploy 1-Click / No config needed** → Runtime is provisioned automatically, no additional configuration steps required.
 
----
+***
 
 ## Getting Started
 
-| I want to... | Go to |
-|---|---|
-| Deploy OpenClaw without code | [OpenClaw](../agent-runtime/openclaw/README.md) |
+| I want to...                    | Go to                                                |
+| ------------------------------- | ---------------------------------------------------- |
+| Deploy OpenClaw without code    | [OpenClaw](../agent-runtime/openclaw/)               |
 | Build an agent from a container | [Create Runtime](../agent-runtime/create-runtime.md) |

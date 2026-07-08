@@ -32,7 +32,7 @@
     kubectl-view-allocations --version
     ```
 
-<figure><img src="../../.gitbook/assets/vksgpu_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_1 (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Trên Cluster vừa tạo, thực hiện kiểm tra node trong node group của bạn qua lệnh:
 
@@ -40,7 +40,7 @@
     kubectl get nodes -owide
     ```
 
-<figure><img src="../../.gitbook/assets/vksgpu_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_2 (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -56,7 +56,7 @@
       --set dcgmExporter.serviceMonitor.enabled=true
     ```
 
-<figure><img src="../../.gitbook/assets/vksgpu_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_3 (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Hệ thống mất khoảng 5 - 10 phút để thực hiện cài đặt operator này, bạn hãy đợi tới khi việc cài đặt hoàn thành. Trong thời gian này, bạn có thể kiểm tra tất cả các pods trong namespace`gpu-operator` đang chạy thông qua lệnh:
 
@@ -64,7 +64,7 @@
     kubectl -n gpu-operator get pods -owide
     ```
 
-<figure><img src="../../.gitbook/assets/vksgpu_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_4 (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Operator sẽ gán label`nvidia.com/gpu`cho node trong node group của bạn, lable này được NVIDIA GPU Operator sử dụng để identify nodes, bạn cũng có thể sử dụng label này để filter những node đang có NVIDIA GPU. Bạn có thể kiểm tra các node được gán nhãn này qua lệnh:
 
@@ -74,7 +74,7 @@
 
 Ví dụ, đối với kết quả bên dưới, node trong cụm có label `nvidia.com/gpu`, có nghĩa là node đó có GPU. Các label này cũng cho biết nút này đang sử dụng 1 card GPU RTX 2080Ti, số lượng GPU có sẵn, Bộ nhớ GPU và các thông tin khác.
 
-<figure><img src="../../.gitbook/assets/vksgpu_6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_6 (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Trên pod `nvidia-device-plugin-daemonset`trong namespace`gpu-operator`, bạn có thể chạy lệnh `nvidia-smi` để kiểm tra thông tin GPU trên node:
 
@@ -83,7 +83,7 @@ Ví dụ, đối với kết quả bên dưới, node trong cụm có label `nvi
     kubectl -n gpu-operator exec -it $POD_NAME -- nvidia-smi
     ```
 
-<figure><img src="../../.gitbook/assets/vksgpu_7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_7 (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -109,7 +109,7 @@ Ví dụ, đối với kết quả bên dưới, node trong cụm có label `nvi
     kubectl delete deploy cuda-vectoradd
     ```
 
-<figure><img src="../../.gitbook/assets/vksgpu_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_8 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Deploy TensorFlow Test
 
@@ -134,14 +134,14 @@ kubectl logs <put-your-tensorflow-gpu-pod-name> --tail 20
 kubectl delete deploy tensorflow-gpu
 ```
 
-<figure><img src="../../.gitbook/assets/vksgpu_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_9 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Thiết lập GPU Sharing
 
 * GPU sharing strategies allow multiple containers to efficiently use your attached GPUs and save running costs. The following tables summarizes the difference between the GPU sharing modes supported by NVIDIA GPUs:
 * Chiến lược GPU Sharing cho phép nhiều containers có thể sử dụng chung một node GPU nhằm mục đích tiết kiệm chi phí của bạn. Bảng sau đây tóm tắt sự khác biệt giữa các chiến lược GPU Sharing được NVIDIA hỗ trợ:
 
-<table data-view="cards"><thead><tr><th>Sharing mode</th><th align="center">Supported by VKS</th><th align="center">Workload isolation level</th><th>Pros</th><th>Cons</th><th>Suitable for these workloads</th></tr></thead><tbody><tr><td><strong><a href="su-dung-multi-instance-gpu-mig.md">Multi-instance GPU (MIG)</a></strong></td><td align="center">✅ (H100+)</td><td align="center">Best</td><td><ul><li>Processes are executed in parallel</li><li>Full isolation (dedicated memory and compute resources)</li></ul></td><td><ul><li>Supported by fewer GPU models (only Ampere or more recent architectures)</li><li>Coarse-grained control over memory and compute resources</li></ul></td><td><ul><li>Recommended for workloads running in parallel and that need certain resiliency and QoS. For example, when running AI inference workloads, multi-instance GPU multi-instance GPU allows multiple inference queries to run simultaneously for quick responses, without slowing each other down.</li></ul></td></tr><tr><td><strong>GPU Time-slicing</strong></td><td align="center">✅</td><td align="center">None</td><td><ul><li>Processes are executed concurrently</li><li>Supported by older GPU architectures (Pascal or newer)</li></ul></td><td><ul><li>No resource limits</li><li>No memory isolation</li><li>Lower performance due to context-switching overhead</li></ul></td><td><ul><li>Recommended for bursty and interactive workloads that have idle periods. These workloads are not cost-effective with a fully dedicated GPU. By using time-sharing, workloads get quick access to the GPU when they are in active phases.</li><li>GPU time-sharing is optimal for scenarios to avoid idling costly GPUs where full isolation and continuous GPU access might not be necessary, for example, when multiple users test or prototype workloads.</li><li>Workloads that use time-sharing need to tolerate certain performance and latency compromises.</li></ul></td></tr><tr><td><strong>Multi-process server (MPS)</strong></td><td align="center">✅</td><td align="center">Medium</td><td><ul><li>Processes are executed parallel</li><li>Fine-grained control over memory and compute resources allocation</li></ul></td><td><ul><li>No error isolation and memory protection</li></ul></td><td><ul><li>Recommended for batch processing for small jobs because MPS maximizes the throughput and concurrent use of a GPU. MPS allows batch jobs to efficiently process in parallel for small to medium sized workloads.</li><li>NVIDIA MPS is optimal for cooperative processes acting as a single application. For example, MPI jobs with inter-MPI rank parallelism. With these jobs, each small CUDA process (typically MPI ranks) can run concurrently on the GPU to fully saturate the whole GPU.</li><li>Workloads that use CUDA MPS need to tolerate the <a href="https://docs.nvidia.com/deploy/mps/#topic_3_3_3">memory protection and error containment limitations</a>.</li></ul></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th>Sharing mode</th><th align="center">Supported by VKS</th><th align="center">Workload isolation level</th><th>Pros</th><th>Cons</th><th>Suitable for these workloads</th></tr></thead><tbody><tr><td><a href="su-dung-multi-instance-gpu-mig.md"><strong>Multi-instance GPU (MIG)</strong></a></td><td align="center">✅ (H100+)</td><td align="center">Best</td><td><ul><li>Processes are executed in parallel</li><li>Full isolation (dedicated memory and compute resources)</li></ul></td><td><ul><li>Supported by fewer GPU models (only Ampere or more recent architectures)</li><li>Coarse-grained control over memory and compute resources</li></ul></td><td><ul><li>Recommended for workloads running in parallel and that need certain resiliency and QoS. For example, when running AI inference workloads, multi-instance GPU multi-instance GPU allows multiple inference queries to run simultaneously for quick responses, without slowing each other down.</li></ul></td></tr><tr><td><strong>GPU Time-slicing</strong></td><td align="center">✅</td><td align="center">None</td><td><ul><li>Processes are executed concurrently</li><li>Supported by older GPU architectures (Pascal or newer)</li></ul></td><td><ul><li>No resource limits</li><li>No memory isolation</li><li>Lower performance due to context-switching overhead</li></ul></td><td><ul><li>Recommended for bursty and interactive workloads that have idle periods. These workloads are not cost-effective with a fully dedicated GPU. By using time-sharing, workloads get quick access to the GPU when they are in active phases.</li><li>GPU time-sharing is optimal for scenarios to avoid idling costly GPUs where full isolation and continuous GPU access might not be necessary, for example, when multiple users test or prototype workloads.</li><li>Workloads that use time-sharing need to tolerate certain performance and latency compromises.</li></ul></td></tr><tr><td><strong>Multi-process server (MPS)</strong></td><td align="center">✅</td><td align="center">Medium</td><td><ul><li>Processes are executed parallel</li><li>Fine-grained control over memory and compute resources allocation</li></ul></td><td><ul><li>No error isolation and memory protection</li></ul></td><td><ul><li>Recommended for batch processing for small jobs because MPS maximizes the throughput and concurrent use of a GPU. MPS allows batch jobs to efficiently process in parallel for small to medium sized workloads.</li><li>NVIDIA MPS is optimal for cooperative processes acting as a single application. For example, MPI jobs with inter-MPI rank parallelism. With these jobs, each small CUDA process (typically MPI ranks) can run concurrently on the GPU to fully saturate the whole GPU.</li><li>Workloads that use CUDA MPS need to tolerate the <a href="https://docs.nvidia.com/deploy/mps/#topic_3_3_3">memory protection and error containment limitations</a>.</li></ul></td></tr></tbody></table>
 
 ### GPU time-slicing
 
@@ -190,7 +190,7 @@ data:
     -p '{"spec": {"dcgmExporter": {"enabled": false}}}'
   ```
 
-<figure><img src="../../.gitbook/assets/vksgpu_10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_10 (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Verify GPU time-slicing
 
@@ -215,7 +215,7 @@ data:
     kubectl delete deploy time-slicing-verification
     ```
 
-<figure><img src="../../.gitbook/assets/vksgpu_11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_11 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Multi-process server (MPS)
 
@@ -297,7 +297,7 @@ kubectl delete job nbody-sample
 * Tuy nhiên, nếu bạn có một node group gồm nhiều node GPU, bạn có thể sử dụng hai chiến lược khác nhau trên hai node riêng biệt. Ví dụ: bạn có thể sử dụng Time Slicing trên một node để chia sẻ GPU và sử dụng MPS trên node còn lại để chia sẻ GPU cho các ứng dụng khác. Chi tiết tham khảo mục bên dưới.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/vksgpu_12.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_12 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Applying Multiple Node-Specific Configurations
 
@@ -362,7 +362,7 @@ kubectl patch clusterpolicies.nvidia.com/cluster-policy \
 kubectl get clusterpolicy
 ```
 
-<figure><img src="../../.gitbook/assets/vksgpu_13.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_13 (1).png" alt=""><figcaption></figcaption></figure>
 
 * Bây giờ, bạn cần thêm label cho node với tên mà bạn chỉ định tại trong file `ConfigMap`:
 
@@ -375,7 +375,7 @@ kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-2080ti
 kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
 ```
 
-<figure><img src="../../.gitbook/assets/vksgpu_14.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_14 (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Verify Multiple Node-Specific Configurations
 
@@ -396,7 +396,7 @@ kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
     kubectl delete deploy tensorflow-mnist
     ```
 
-<figure><img src="../../.gitbook/assets/vksgpu_15.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_15 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Giám sát hoạt động GPU Resources
 
@@ -420,7 +420,7 @@ kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
       --set prometheus.url=http://${prometheus_service}.prometheus.svc.cluster.local
     ```
 
-<figure><img src="../../.gitbook/assets/vksgpu_16.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_16 (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Sau khi cài đặt thành công, chạy lệnh bên dưới để kiểm tra các resource Prometheus đang chạy:
 
@@ -429,7 +429,7 @@ kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
     kubectl -n prometheus get all 
     ```
 
-<figure><img src="../../.gitbook/assets/vksgpu_17.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_17 (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Tiếp theo, bạn cần chạy lệnh bên dưới để enable DCGM exporter để giám sát GPU resources trên cluster của bạn:
 
@@ -444,7 +444,7 @@ kubectl label node <node-name> nvidia.com/device-plugin.config=rtx-4090
     kubectl get --raw /apis/custom.metrics.k8s.io/v1beta1 | jq -r . | grep DCGM
     ```
 
-<figure><img src="../../.gitbook/assets/vksgpu18.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu18 (1).png" alt=""><figcaption></figcaption></figure>
 
 * Bây giờ, bạn hãy chạy lệnh bên dưới để chuyển Prometheus Adapter tới máy localhost của bạn và sau đó kiểm tra các metrics đã thu thập được thông qua [http://localhost:9090](http://localhost:9090)
 
@@ -454,9 +454,9 @@ kubectl -n prometheus \
   port-forward svc/prometheus-stack-kube-prom-prometheus 9090:9090
 ```
 
-<figure><img src="../../.gitbook/assets/vksgpu_19.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_19 (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/vksgpu_20.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_20 (1).png" alt=""><figcaption></figcaption></figure>
 
 * Bên dưới là danh sách một vài GPU Metrics được sử dụng thường xuyên. Tham khảo danh sách GPU metric đầy đủ tại [Field Identifiers](https://docs.nvidia.com/datacenter/dcgm/latest/dcgm-api/dcgm-api-field-ids.html).
   *   **Bảng 1**: Usage
@@ -474,7 +474,7 @@ kubectl -n prometheus \
 ## Autoscaling GPU Resources
 
 * Để enable autoscaling GPU Resource, bạn cần:
-  * Bật tính năng **Autoscale** cho GPU Nodegroups theo hướng dẫn tại [đây](../node-groups/auto-scaling.md).
+  * Bật tính năng **Autoscale** cho GPU Nodegroups theo hướng dẫn tại [đây](auto-scaling.md).
   * Cài đặt [**Keda**](https://keda.sh/) thông qua Helm chart trên Cluster của bạn qua lệnh:
 
 ```bash
@@ -486,9 +486,9 @@ helm install --wait kedacore \
 kubectl -n keda get all
 ```
 
-<figure><img src="../../.gitbook/assets/vksgpu_21.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_21 (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/vksgpu_22.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_22 (1).png" alt=""><figcaption></figcaption></figure>
 
 *   **Nếu BẠN KHÔNG cài đặt Keda trong cụm của mình**, tính năng Auto-scale của VKS sẽ can thiệp vào và:
 
@@ -546,4 +546,4 @@ kubectl -n keda get all
     ```
 * Khi trạng thái `ScaledObject` **Ready** là`True`, GPU Nodegroup được scale dựa trên GPU usage.
 
-<figure><img src="../../.gitbook/assets/vksgpu_23.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vksgpu_23 (1).png" alt=""><figcaption></figcaption></figure>

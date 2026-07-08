@@ -4,7 +4,7 @@
 
 GreenNode cung cấp một nền tảng AI toàn diện giúp doanh nghiệp triển khai, tích hợp và vận hành các ứng dụng Generative AI một cách dễ dàng, bảo mật và hiệu quả. AI Stack của GreenNode được thiết kế theo hướng modular, linh hoạt và tối ưu cho cả đội ngũ kỹ thuật và nhà quản lý.
 
-<figure><img src="../.gitbook/assets/image (1086).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1086) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

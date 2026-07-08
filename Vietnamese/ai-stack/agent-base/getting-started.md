@@ -59,7 +59,7 @@ Tất cả các cuộc gọi AgentBase API (Portal, RESTful API và SDK) đều 
    * **Description**: ví dụ, `Service account for AgentBase test`
 3. Nhấn **"Next Step"**.
 
-![1774518047320](../../.gitbook/assets/1774518047320.png)
+![1774518047320](<../../../.gitbook/assets/1774518047320 (2).png>)
 
 **Bước 3: Gắn Policies**
 
