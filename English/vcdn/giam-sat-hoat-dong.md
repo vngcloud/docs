@@ -30,44 +30,44 @@ The types of charts/reports we provide you include:
 
 **Step 2:** Select **Dashboard.** Here, you can see the charts and reports we mentioned above. For example:
 
-<figure><img src="../../.gitbook/assets/image (385).png" alt="" width="164"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (385).png" alt="" width="164"><figcaption></figcaption></figure>
 
 * **Traffic Consuming:**
 
-<figure><img src="../../.gitbook/assets/image (211) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (211).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin Request/s** :
 
-<figure><img src="../../.gitbook/assets/image (212) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (212).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin Traffic Consuming/s (GB/s)** :
 
-<figure><img src="../../.gitbook/assets/image (213) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
 
 * **Unique IPs:**
 
-<figure><img src="../../.gitbook/assets/image (216) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure>
 
 * **Origin Speed/s:**
 
-<figure><img src="../../.gitbook/assets/image (214) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (214).png" alt=""><figcaption></figcaption></figure>
 
 * **Average User Speed:**
 
-<figure><img src="../../.gitbook/assets/image (215) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
 
 * **Hit Cache Ratio:**
 
-<figure><img src="../../.gitbook/assets/image (217) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (217).png" alt=""><figcaption></figcaption></figure>
 
 * **Request Content Type:**
 
-<figure><img src="../../.gitbook/assets/image (218) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
 
 * **CDN HTTP Codes, Origin HTTP Codes:**
 
-<figure><img src="../../.gitbook/assets/image (219) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (219).png" alt=""><figcaption></figcaption></figure>
 
 * **Manage and monitor signals pushed to the Live Entry point system:**
 
-<figure><img src="../../.gitbook/assets/image (220) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (220).png" alt=""><figcaption></figcaption></figure>

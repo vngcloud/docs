@@ -42,7 +42,7 @@ Overview of Inference
 * If Private Access is selected, the Endpoint URL requires authentication using an API Key (you must create an API Key before creating Inference).
 * If not selected, the Endpoint URL will be publicly accessible (no API Key required).
 
-<figure><img src="../../../.gitbook/assets/image (387) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (387).png" alt=""><figcaption></figcaption></figure>
 
 #### **Step 5: Create and Launch Inference**
 
@@ -62,11 +62,11 @@ Overview of Inference
 
 1. Click the URL button from the Inference list.
 
-<figure><img src="../../../.gitbook/assets/image (388).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (388).png" alt=""><figcaption></figcaption></figure>
 
 2. Copy it from the details page of a specific Inference.
 
-<figure><img src="../../../.gitbook/assets/image (389) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (389).png" alt=""><figcaption></figcaption></figure>
 
 ### **Step 3: Call Inference**
 

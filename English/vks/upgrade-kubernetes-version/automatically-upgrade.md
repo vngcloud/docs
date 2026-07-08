@@ -189,4 +189,4 @@ Additionally, for a successful upgrade, you should also consider the following 2
 
 If you want to proactively control Kubernetes Cluster upgrades (manually upgrade) and do not want the system to automatically upgrade, you can disable the **Regular Upgrade** feature by unchecking **Enable Automatic Upgrade**.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

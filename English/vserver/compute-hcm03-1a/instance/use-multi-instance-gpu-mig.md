@@ -2,7 +2,7 @@
 
 > This guide walks you through configuring and using **Multi-Instance GPU (MIG)** directly on a bare-metal vServer with NVIDIA H100 — partitioning a single physical GPU into multiple isolated MIG instances, each with dedicated VRAM and Streaming Multiprocessors. Docker containers are assigned to individual MIG instances for complete workload isolation.
 
-<figure><img src="../../../../.gitbook/assets/1.architect (1).png" alt="MIG architecture on bare-metal vServer — GPU 0 partitioned into 2 MIG instances, GPU 1 remains full GPU"><figcaption><p>MIG architecture on vServer: Docker + NVIDIA Container Toolkit manages both MIG GPU (2x 3g.40gb) and non-MIG GPU (full 80 GB) on the same machine</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MIG-vServer/1.architect.png" alt="MIG architecture on bare-metal vServer — GPU 0 partitioned into 2 MIG instances, GPU 1 remains full GPU"><figcaption><p>MIG architecture on vServer: Docker + NVIDIA Container Toolkit manages both MIG GPU (2x 3g.40gb) and non-MIG GPU (full 80 GB) on the same machine</p></figcaption></figure>
 
 ***
 
@@ -30,7 +30,7 @@ Choose the profile that fits your workload before creating MIG instances. The H1
 | `4g.40gb`     | 39.50 GB     | 64                             | 1           | 4   |
 | `7g.80gb`     | 79.25 GB     | 132                            | 1           | 7   |
 
-<figure><img src="../../../../.gitbook/assets/2.MIG-PROFILES-AVAILABLE (1).png" alt="MIG profiles available on H100 80GB"><figcaption><p>All 7 MIG profiles available on H100 80GB HBM3 — inspect with nvidia-smi mig -lgip</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MIG-vServer/2.MIG-PROFILES-AVAILABLE.png" alt="MIG profiles available on H100 80GB"><figcaption><p>All 7 MIG profiles available on H100 80GB HBM3 — inspect with nvidia-smi mig -lgip</p></figcaption></figure>
 
 {% hint style="info" %}
 The `3g.40gb` profile is well-suited for running AI models in the 7B–30B range (BF16). Measured performance: **16.27 req/s and 18,739 tokens/s** with Qwen2.5-7B-Instruct on a single `3g.40gb` instance.
@@ -60,7 +60,7 @@ All done.
 > mig.mode.current = Enabled
 ```
 
-<figure><img src="../../../../.gitbook/assets/3.Enable-MIG (1).png" alt="Terminal output confirming MIG is enabled"><figcaption><p>MIG successfully enabled on GPU 0 — mig.mode.current = Enabled</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MIG-vServer/3.Enable-MIG.png" alt="Terminal output confirming MIG is enabled"><figcaption><p>MIG successfully enabled on GPU 0 — mig.mode.current = Enabled</p></figcaption></figure>
 
 {% hint style="warning" %}
 MIG mode is **not persistent** across reboots on H100 (Hopper). You must re-enable it after each server restart. To automate this, add the enable command to `/etc/rc.local` or create a systemd service.
@@ -78,7 +78,7 @@ nvidia-smi mig -lgip -i 0
 
 This command displays all 7 profiles along with VRAM, SM count, and the maximum number of instances that can be created per GPU.
 
-<figure><img src="../../../../.gitbook/assets/4.List-GPU-Instance-Profiles (1).png" alt="MIG profile list from nvidia-smi mig -lgip"><figcaption><p>nvidia-smi mig -lgip lists all available profiles and the maximum instance count for each</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MIG-vServer/4.List-GPU-Instance-Profiles.png" alt="MIG profile list from nvidia-smi mig -lgip"><figcaption><p>nvidia-smi mig -lgip lists all available profiles and the maximum instance count for each</p></figcaption></figure>
 
 ***
 
@@ -113,7 +113,7 @@ Each instance has 40,448 MiB VRAM and 60 SM, with a unique UUID:
 | Device 0   | 1     | 0     | `MIG-db487433-...` | 40,448 MiB | 60 |
 | Device 1   | 2     | 0     | `MIG-1ee682bf-...` | 40,448 MiB | 60 |
 
-<figure><img src="../../../../.gitbook/assets/5.Tao-2x-MIG-3g.40gb-Instances (1).png" alt="2 MIG instances created with distinct UUIDs"><figcaption><p>2 MIG instances of type 3g.40gb created successfully — each with its own UUID and VRAM allocation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MIG-vServer/5.Tao-2x-MIG-3g.40gb-Instances.png" alt="2 MIG instances created with distinct UUIDs"><figcaption><p>2 MIG instances of type 3g.40gb created successfully — each with its own UUID and VRAM allocation</p></figcaption></figure>
 
 ***
 
@@ -143,7 +143,7 @@ GPU 0: NVIDIA H100 80GB HBM3 (UUID: GPU-e1c0ae81-...)
 MIG 3g.40gb Device 0: (UUID: MIG-1ee682bf-...)
 ```
 
-<figure><img src="../../../../.gitbook/assets/6.Test-Docker-Single-Instance (1).png" alt="Each container sees only one MIG device"><figcaption><p>Containers on device=0:0 and device=0:1 see different MIG UUIDs — isolation confirmed</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MIG-vServer/6.Test-Docker-Single-Instance.png" alt="Each container sees only one MIG device"><figcaption><p>Containers on device=0:0 and device=0:1 see different MIG UUIDs — isolation confirmed</p></figcaption></figure>
 
 ***
 
@@ -177,7 +177,7 @@ Expected output — 2 MIG devices running in parallel with independent memory:
 docker rm -f mig0 mig1
 ```
 
-<figure><img src="../../../../.gitbook/assets/7.Test-Docker-2-Container-Song-Song (1).png" alt="2 containers running in parallel on 2 MIG instances"><figcaption><p>2 containers running simultaneously on 2 MIG instances — no conflict, fully independent memory</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MIG-vServer/7.Test-Docker-2-Container-Song-Song.png" alt="2 containers running in parallel on 2 MIG instances"><figcaption><p>2 containers running simultaneously on 2 MIG instances — no conflict, fully independent memory</p></figcaption></figure>
 
 ***
 
@@ -227,7 +227,7 @@ Measured results on MIG `3g.40gb`:
 | **Total tokens/s** | **18,739 tokens/s**           |
 | API response       | HTTP 200 ✅                    |
 
-<figure><img src="../../../../.gitbook/assets/8.Test-vLLM-tren-MIG-Instance (1).png" alt="vLLM running on MIG instance 0:0 with Qwen2.5-7B-Instruct"><figcaption><p>vLLM serving Qwen2.5-7B-Instruct on MIG 3g.40gb — 34 GB VRAM in use, API responding normally</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MIG-vServer/8.Test-vLLM-tren-MIG-Instance.png" alt="vLLM running on MIG instance 0:0 with Qwen2.5-7B-Instruct"><figcaption><p>vLLM serving Qwen2.5-7B-Instruct on MIG 3g.40gb — 34 GB VRAM in use, API responding normally</p></figcaption></figure>
 
 **Run throughput benchmark:**
 
@@ -247,7 +247,7 @@ docker run --rm --gpus '"device=0:0"' \
 grep -E "Throughput|tokens" /tmp/benchmark_mig.txt
 ```
 
-<figure><img src="../../../../.gitbook/assets/9.Note-(vLLM-0.23.0) (1).png" alt="vLLM throughput benchmark on MIG 3g.40gb"><figcaption><p>Benchmark results: 16.27 req/s, 18,739 tokens/s on MIG 3g.40gb with Qwen2.5-7B-Instruct</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MIG-vServer/9.Note-(vLLM-0.23.0).png" alt="vLLM throughput benchmark on MIG 3g.40gb"><figcaption><p>Benchmark results: 16.27 req/s, 18,739 tokens/s on MIG 3g.40gb with Qwen2.5-7B-Instruct</p></figcaption></figure>
 
 {% hint style="info" %}
 Starting from **vLLM 0.23.0**, the benchmark command has changed. Use: `python3 -m vllm.entrypoints.cli.main bench throughput`

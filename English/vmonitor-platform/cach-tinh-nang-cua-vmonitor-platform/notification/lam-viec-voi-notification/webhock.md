@@ -19,6 +19,6 @@
 
 10\. Chọn **Create**.
 
-<figure><img src="../../../../../.gitbook/assets/image (104) (1).png" alt="" width="510"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (104).png" alt="" width="510"><figcaption></figcaption></figure>
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59807037/image2023-8-14_15-8-49.png?version=1&#x26;modificationDate=1692000532000&#x26;api=v2" alt=""><figcaption></figcaption></figure>

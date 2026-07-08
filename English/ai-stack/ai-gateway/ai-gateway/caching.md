@@ -15,7 +15,7 @@ Access the page via:: [https://aigateway.console.greennode.ai/model-caching/list
 
 * Go to the Model Caching page and click the "Create a Caching Configuration" button.
 
-<figure><img src="../../../../.gitbook/assets/image (478) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (478).png" alt=""><figcaption></figcaption></figure>
 
 * In the Create a Caching Configuration form, provide the following information:
   * Configuration Name (required)
@@ -47,7 +47,7 @@ Access the page via:: [https://aigateway.console.greennode.ai/model-caching/list
     * Edit configuration — Modify TTL, name, or caching type.
     * Delete — Remove the configuration.
 
-    <figure><img src="../../../../.gitbook/assets/image (479).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (479).png" alt=""><figcaption></figcaption></figure>
 
 ### Manage Models (Assign Gateways and Models)
 
@@ -69,7 +69,7 @@ Access the page via:: [https://aigateway.console.greennode.ai/model-caching/list
 2. The Manage models dialog will appear. If no gateways have been added yet, you will see the message No Gateway added and an Add a gateway button.
 3. Click Add a gateway → a dropdown list of existing gateways will appear → select a gateway. You may add multiple gateways if needed.
 
-<figure><img src="../../../../.gitbook/assets/image (480) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (480).png" alt=""><figcaption></figcaption></figure>
 
 4. After adding a gateway, under each gateway you will see the API models section with a Select models field. Click this field to open the list of models available in the gateway.
 
@@ -80,7 +80,7 @@ Access the page via:: [https://aigateway.console.greennode.ai/model-caching/list
     Choose Select all models to apply caching to all models within the gateway.
 * Use the Search box to find models by name (e.g `gemini-1.5-pro`, `gpt-4o`...).
 
-<figure><img src="../../../../.gitbook/assets/image (481) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (481).png" alt=""><figcaption></figcaption></figure>
 
 5. After selecting models, click Save to apply the changes.
 
@@ -97,7 +97,7 @@ Access the page via:: [https://aigateway.console.greennode.ai/model-caching/list
     Associated models
 4. From here, you can quickly identify which models are using which cache configurations.
 
-<figure><img src="../../../../.gitbook/assets/image (482).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (482).png" alt=""><figcaption></figcaption></figure>
 
 ### Edit Configuration (Modify TTL / Name / Cache Type)
 

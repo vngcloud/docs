@@ -27,7 +27,7 @@ To create a Service Account, follow the steps below:
 
 After you complete the 10 steps above, a Service Account has been created.
 
-<figure><img src="../../../../../.gitbook/assets/image (561) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (561).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -53,7 +53,7 @@ To initialize a policy used to access vStorage resources, follow the steps below
 8. Select **Resources** : select **All resources.**
 9.  Select **Request conditions:** enter special conditions for the policy if any.
 
-    <figure><img src="../../../../../.gitbook/assets/Screenshot-4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Screenshot-4.png" alt=""><figcaption></figcaption></figure>
 
 ### Attach IAM Policy to Service Account <a href="#attach-iam-policy-vao-service-account" id="attach-iam-policy-vao-service-account"></a>
 
@@ -66,7 +66,7 @@ Once you have created the desired Service Account and Policy, you will need to l
 5. Select the **policies** you want. The vIAM system supports you to assign multiple policies to a Service Account. If these policies contain independent permissions, they will complement each other (ie the permission list is merged). On the contrary, if these policies contain conflicting permissions, you will not be able to access the corresponding resources according to this permission list (ie the permission list is merged and when conflicting, they will cancel each other out).
 6. Select **Attach**.
 
-<figure><img src="../../../../../.gitbook/assets/image (562) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (562).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -78,7 +78,7 @@ To grant access to bucket/object for Service Account, you need to grant permissi
 2. Select the **Bucket** you want to assign permissions to the Service Account.
 3.  Select the **Action** icon and select **Configure policy.**
 
-    <figure><img src="../../../../../.gitbook/assets/image (558) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (558).png" alt=""><figcaption></figcaption></figure>
 4. Here, you can choose the configuration for each **Statement** on the left or directly edit the JSON file in the right column. Specifically, the structure of a Bucket Policy includes:
    * **Version** : Specifies the version of the Bucket Policy (recommended `"2012-10-17"`).
    * **Statement** : Each policy will have one or more **Statements** (specific purposes of the policy).
@@ -89,9 +89,9 @@ To grant access to bucket/object for Service Account, you need to grant permissi
      * **Condition** : (Optional) Specific condition that restricts access.
 5. Select **Save** to save the Bucket Policy configuration.
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot from 2025-11-10 13-55-00.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2025-11-10 13-55-00.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot from 2025-11-10 13-57-21.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2025-11-10 13-57-21.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -109,11 +109,11 @@ Follow the steps below to work with vStorage via Service Account
 
 For details, please refer to [https://docs.api.vngcloud.vn/service-docs/vstorage-api.html](https://docs.api.vngcloud.vn/service-docs/vstorage-api.html) .
 
-<figure><img src="../../../../../.gitbook/assets/image (563).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (563).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (564) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (564).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (565) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (565).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -127,7 +127,7 @@ To use the vStorage APIs, users will use the client ID and the client secret key
 
 **Request body**
 
-> 'grant\_type':'client\_credentials'
+> 'grant\_type':'client\_credentials'&#x20;
 >
 > 'scope':'email'
 
@@ -139,12 +139,16 @@ To use the vStorage APIs, users will use the client ID and the client secret key
 
 If the credentials are authorized, an **access\_token** will be returned. Users will use this **access\_token** to access resources from the resource server.
 
+
+
 **Example:**
 
 > curl -X POST 'https://iamapis.vngcloud.vn/accounts-api/v2/auth/token'\
 > -H 'Content-Type: application/json'\
 > -H 'Authorization: Basic ZGM3MTYxNTYtMjQwMi00MDg2LTliYWItZGU5OTIxODVlYjU1OmJhYjYzYTZmLWYzOGUtNDZmNC05NjIyLTYzNTQwNGQ4MDFlNQ=='\
 > -d '{ "grant\_type": "client\_credentials", "scope":"email" }'
+>
+>
 >
 > {"token\_type":"Bearer","access\_token":"eyJhbGciOiJSUz......GWug","expires\_in":1800,"refresh\_expires\_in":0}
 

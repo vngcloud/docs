@@ -16,15 +16,15 @@ To use versioning, please follow these steps:
 * When **Object Lock** is enabled on a bucket in vStorage, **versioning** is **automatically enabled and cannot be disabled** on that bucket.
 {% endhint %}
 
-<figure><img src="../../../../../../../.gitbook/assets/image (32) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (32) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\. At the versioning confirmation screen, please select **Enable versioning**.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (33) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (33) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After versioning is enabled, every time you upload an object with the same name, vStorage will create a new version for that object, and the old version will still be saved. You can select Show versions to view information about the object's versions.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (34) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (34) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**

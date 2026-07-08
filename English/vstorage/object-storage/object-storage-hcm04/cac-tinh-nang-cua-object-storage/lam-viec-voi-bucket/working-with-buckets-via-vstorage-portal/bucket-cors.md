@@ -10,7 +10,7 @@
 
 **3. Select the Action** icon and select **Set CORS.**
 
-<figure><img src="../../../../../../../.gitbook/assets/image (325) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (325).png" alt=""><figcaption></figcaption></figure>
 
 4\. Here, you import the CORS configuration file. The CORS Configuration in vStorage is a JSON file with a list of rules that you want to apply. Each rule will include:
 
@@ -20,7 +20,7 @@
 * **ExposeHeaders** : The headers that the application can see in the response from S3.
 * **MaxAgeSeconds** : The time in seconds that the browser should cache the results of a request before sending another request.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (326) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (326).png" alt=""><figcaption></figcaption></figure>
 
 5\. Select **Update** to save the configuration for CORS.
 

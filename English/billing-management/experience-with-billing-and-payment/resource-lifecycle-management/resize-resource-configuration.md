@@ -1,26 +1,26 @@
 # Resize resource configuration
 
-Use this document as a guide to modify resource configurations. The document will describe in detail the processing steps related to resource management and the cost changes when changing configurations. Other steps will be simplified and mentioned as part of the process.
+Use this document as a guide to modify resource configurations. The document will describe in detail the processing steps related to resource management and the cost changes when changing configurations. Other steps will be simplified and mentioned as part of the process.&#x20;
 
-The resource configuration change feature applies to:
+The resource configuration change feature applies to:&#x20;
 
 * Target user: Prepaid and postpaid users.
 * Source of money: GreenNode Wallet or other sources (performed through payment gateway)
-* Resources: All resources of GreenNode products that allow configuration changes
+* Resources: All resources of GreenNode products that allow configuration changes&#x20;
 
-## Prepaid users change resource configuration
+## Prepaid users change resource configuration&#x20;
 
-### Process of changing resource configuration
+### Process of changing resource configuration&#x20;
 
 * Step 1: Select new resources and configurations.
   * 1.1 Access the vServer, vStorage, vMonitor product page.
   * 1.2 Select the resources and configurations you want to use on the product page.
-  * 1.3 Confirm the configuration change to proceed to the payment step: At this point, the system will redirect the user to the resource payment page.
+  * 1.3 Confirm the configuration change to proceed to the payment step: At this point, the system will redirect the user to the resource payment page.&#x20;
 * Step 2: Pay for resources -> See detailed instructions here.
-* Step 3: Check resource and payment information
+* Step 3: Check resource and payment information&#x20;
   * 3.1 Check resource information on the product page.
   * 3.2 Check payment information and invoices at User Portal: [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/).
-* Step 4: System Implementation
+* Step 4: System Implementation&#x20;
   * Email notification of the newly changed resource configuration.
   * Invoice generated according to the new configuration.
 
@@ -28,11 +28,11 @@ The resource configuration change feature applies to:
 
 The displayed price at the payment step when changing vServer resource configurations (similarly applied to other resources) is calculated as follows:
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Note: Unused resource values are calculated accurately to the minute Some services may not be eligible for refunds depending on the usage terms of each product (vServer, vStorage, vMonitor).
 
-## Postpaid user when resizing resource
+## Postpaid user when resizing resource&#x20;
 
 * Step 1: Configure resources on the product page
   * 1.1 Access the vServer, vStorage, vMonitor product page.

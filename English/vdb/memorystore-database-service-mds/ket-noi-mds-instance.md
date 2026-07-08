@@ -31,7 +31,9 @@ You have several options for connecting to your Redis DB Instance:
     * Go to the Database management interface, select your newly created MemoryCache Database instance, go to the Connectivity & Security tab, and look under Endpoint & Port.
     * For security reasons, MDS Instances only have a Private Endpoint. You can only connect to it from a vServer in the same Network or from Networks with open ACLs.
 
-    <figure><img src="../../../.gitbook/assets/image (232) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+    <figure><img src="../../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
 
     * Alternatively, you can set up an SSH Tunnel on a vServer in the same Network as this MDS Instance and connect remotely via the Internet.
 *   **Step 2 (Optional): Customize Security Group Rules:**
@@ -39,7 +41,9 @@ You have several options for connecting to your Redis DB Instance:
     * The Security Group Rules section allows you to restrict which Remote IPs can access your DB Instance.
     * By default, GreenNode allows unrestricted access from anywhere (0.0.0.0/0) to your DB Instance. It's recommended to customize this to allow access only from trusted IPs.
 
-    <figure><img src="../../../.gitbook/assets/image (233) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+    <figure><img src="../../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>
 
     * To change the rules, select EDIT and enter the appropriate IP (in CIDR format). You can also add new rules by clicking ADD RULE.
     * After editing, click Save and wait for the changes to be applied.

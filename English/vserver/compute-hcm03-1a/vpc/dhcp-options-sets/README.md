@@ -30,11 +30,11 @@ This guide will help you create a DHCP options set by following these steps:
 2. On the vServer screen, choose the appropriate region;
 3. In the left-hand menu, select **DHCPs**;
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
 
 4. On the DHCP options sets list screen, click the **Create a DHCP Options Set** button;
 
-<figure><img src="../../../../../.gitbook/assets/image (279) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
 
 5. On the DHCP options set creation page, enter the following information:
 
@@ -53,11 +53,11 @@ This guide will help you create a DHCP options set by following these steps:
 You can **enter up to 4 DNS server IP addresses** (you may add 2 more if you are still using the system's 2 default IPs).
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
 
 6. After completing the setup, click the **Create** button to finalize the configuration.
 
-<figure><img src="../../../../../.gitbook/assets/image (281) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -71,15 +71,15 @@ After creating a DHCP options set, you need to associate it with a VPC. There ar
 4. Select an existing DHCP set to access the details screen;
 5. On the details screen, in the **Associated VPCs** tab, all VPCs associated with this set are listed;
 
-<figure><img src="../../../../../.gitbook/assets/image (282) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
 
 6. Click the **Associate** button to list all available VPCs, select the desired VPC, and click **Associate**.
 
-<figure><img src="../../../../../.gitbook/assets/image (283) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (283).png" alt=""><figcaption></figcaption></figure>
 
 After the successful association, the information of the associated VPC will be displayed on the list of VPCs associated with the detailed DHCP on the screen.
 
-<figure><img src="../../../../../.gitbook/assets/image (284) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -95,7 +95,7 @@ Trong quá trình sử dụng DHCP options set, người dùng có thể xóa DH
 4. Select the DHCP options set you want to delete to access its details;
 5. On the details screen, in the **Associated VPCs** tab, all associated VPCs are listed. Select all associated VPCs and click **Detach** to remove them;
 
-<figure><img src="../../../../../.gitbook/assets/image (285) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure>
 
 6. Confirm the detachment of all VPCs from the DHCP options set.
 
@@ -105,4 +105,4 @@ Trong quá trình sử dụng DHCP options set, người dùng có thể xóa DH
 2. Find the DHCP options set you wish to delete, and click the **Delete** action;
 3. Confirm the deletion of the DHCP options set. Once deleted, the DHCP options set cannot be recovered.
 
-<figure><img src="../../../../../.gitbook/assets/image (287) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (287).png" alt=""><figcaption></figcaption></figure>

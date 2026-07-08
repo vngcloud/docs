@@ -66,7 +66,7 @@ To be able to use Pfsense as NAT Gateway for Cluster on VKS system, you need:
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FMBP0zsOGXfCRysPZpQ59%252Fimage.png%3Falt%3Dmedia%26token%3D639d2870-32b3-4d14-88fc-c35641f8c6e3&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=2c24b48a&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (244) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (244).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F0gDLcWa36cpUJo2iSnyG%252Fimage.png%3Falt%3Dmedia%26token%3D5eadf23d-e50a-4b63-8465-fa0edd6b11e6&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e8488882&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
@@ -172,7 +172,7 @@ After Pfsense is successfully initialized and configured, you need to create a R
 
 **Step 6** : Select **Create** to create a new Route table.
 
-**Step 7:** Select ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F73762068%2Fimage2024-4-16_15-40-3.png%3Fversion%3D1%26modificationDate%3D1713256805000%26api%3Dv2\&width=40\&dpr=4\&quality=100\&sign=7bf6e57b\&sv=1)the newly created Route table then select **Edit Routes.**
+**Step 7:** Select ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F73762068%2Fimage2024-4-16\_15-40-3.png%3Fversion%3D1%26modificationDate%3D1713256805000%26api%3Dv2\&width=40\&dpr=4\&quality=100\&sign=7bf6e57b\&sv=1)the newly created Route table then select **Edit Routes.**
 
 **Step 8:** In the add new **Route** section , enter the following information:
 

@@ -20,7 +20,7 @@ If you want to customize configuration parameters, create **a new Configuration 
 
 **Step 2:** Select **Configuration group** under the **OpenSearch** section.
 
-**Step 3:** Select **Create a Configuration group".** The create new configuration group screen appears, where you need to:
+**Step 3:** Select **Create a Configuration group".** The create new configuration group screen appears, where you need to:&#x20;
 
 Enter the required information:
 
@@ -51,7 +51,7 @@ After a Configuration Group is created, you can edit parameters in this Configur
 
 ### **Attach Configuration Group to OpenSearch Cluster**
 
-**Step 1: Select** the icon <img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="line"> on the cluster where you want to change the configuration group
+**Step 1: Select** the icon <img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line"> on the cluster where you want to change the configuration group
 
 **Step 2:** Select **Edit Configuration group**
 

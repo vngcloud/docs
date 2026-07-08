@@ -28,7 +28,7 @@ After 30 days from the end of the previous billing cycle. The system automatical
 
 ### Lifecycle Summary Table
 
-<figure><img src="../../../../.gitbook/assets/unknown (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
 
 | Stage                | Status     | Service         | Data Status | Renewable |
 | -------------------- | ---------- | --------------- | ----------- | --------- |
@@ -51,16 +51,16 @@ After the expiration date (T), the system continues sending reminder emails unti
 You may renew a resource at any time before it is released.\
 The new service period starts immediately after the previous subscription period ends.
 
-* Renewal before expiration supports both manual and automatic methods
+* Renewal before expiration supports both manual and automatic methods&#x20;
 * Renewal after expiration supports manual renewal only
 
 **Renew resources before expiration**
 
-<figure><img src="../../../../.gitbook/assets/unknown (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (1).png" alt=""><figcaption></figcaption></figure>
 
 **Renew resources after expiration**
 
-<figure><img src="../../../../.gitbook/assets/unknown (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Renewal Methods
 
@@ -68,3 +68,4 @@ The new service period starts immediately after the previous subscription period
 | ----------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Manual Renewal    | Before the resource is released   | You manually initiate the renewal. The resource validity period is extended immediately after successful payment.                                                                                                                                                                                                                                                                                                                       |
 | Automatic Renewal | Must be enabled before expiration | <p>• You configure automatic renewal in advance.<br>• The system automatically attempts payment at key milestones: 7 days, 4 days, and 1 day before expiration, as well as on the expiration date.<br>• If all payment attempts fail on the expiration date, automatic renewal stops. You must then renew manually (if the resource is still within its allowed renewal period).<br>• You can cancel automatic renewal at any time.</p> |
+

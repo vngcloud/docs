@@ -17,7 +17,7 @@ AgentBase supports two network modes when creating an Agent Runtime or MCP Gatew
 
 When you select **Private**, AgentBase provisions a dedicated private gateway for your org and routes all traffic through VPC Peering — ensuring that every call between your agent and your internal infrastructure stays on the private network.
 
-![AgentBase Private Networking — VPC Peering](<../../../.gitbook/assets/VPC-Peering-Diagram (1).png>)
+![AgentBase Private Networking — VPC Peering](../../.gitbook/assets/Agentbase-image/VPC-Peering-Diagram.png)
 
 {% hint style="info" %}
 To use **Private** mode, VPC Peering between your VPC and the AgentBase VPC must be set up beforehand. Contact GreenNode support to activate it.
@@ -35,7 +35,7 @@ To use **Private** mode, VPC Peering between your VPC and the AgentBase VPC must
 2. At the **Network settings** step, select **Private**
 3. The **VPC**, **Subnet**, and **Route CIDRs** fields appear
 
-![Select Private — Agent Runtime](<../../../.gitbook/assets/Create-runtime-choose-private-pvc (1).png>)
+![Select Private — Agent Runtime](../../.gitbook/assets/Agentbase-image/Create-runtime-choose-private-pvc.png)
 
 **Step 2: Choose VPC and Subnet**
 
@@ -65,7 +65,7 @@ Fill in the remaining fields (Run command, Flavor, environment variables...) and
 2. At the **Network & Compute** step, select **Private**
 3. The **VPC**, **Subnet**, **Route CIDRs**, **Flavor**, and **Replicas** fields appear
 
-![Select Private — MCP Gateway](<../../../.gitbook/assets/mcp-gateway-private-pvc (1).png>)
+![Select Private — MCP Gateway](../../.gitbook/assets/Agentbase-image/mcp-gateway-private-pvc.png)
 
 **Step 2: Choose VPC, Subnet, and Flavor**
 

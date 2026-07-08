@@ -97,18 +97,18 @@ Runtime: my-order-agent
 2. Click **"Create Runtime"**
 3. Fill information
 
-| Field                     | Example Value                        | Notes                                                                                                                                   |
-| ------------------------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **Name**                  | `my-order-agent`                     | Unique, lowercase, hyphens allowed                                                                                                      |
-| **Description**           | `Production order agent`             | Optional                                                                                                                                |
-| **Image URL**             | `vcr.vngcloud.vn/<repo>/my-agent:v1` | Full image path including tag                                                                                                           |
-| **Flavor**                | `1x1-general`                        | 1 CPU, 1 GB RAM                                                                                                                         |
+| Field                     | Example Value                        | Notes                                                                                                                                 |
+| ------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Name**                  | `my-order-agent`                     | Unique, lowercase, hyphens allowed                                                                                                    |
+| **Description**           | `Production order agent`             | Optional                                                                                                                              |
+| **Image URL**             | `vcr.vngcloud.vn/<repo>/my-agent:v1` | Full image path including tag                                                                                                         |
+| **Flavor**                | `1x1-general`                        | 1 CPU, 1 GB RAM                                                                                                                       |
 | **Min Replicas**          | `1`                                  | Range: 1â€“10                                                                                                                           |
-| **Max Replicas**          | `1`                                  | Set >1 to enable autoscaling                                                                                                            |
+| **Max Replicas**          | `1`                                  | Set >1 to enable autoscaling                                                                                                          |
 | **CPU Threshold**         | `50`                                 | Scale out when CPU exceeds this % (25â€“75)                                                                                             |
 | **Memory Threshold**      | `50`                                 | Scale out when RAM exceeds this % (25â€“75)                                                                                             |
 | **Registry Auth**         | Enable if private                    | Username = robot account `backendName` (see [Supporting Services â€” Robot Accounts](../supporting-services.md#create-a-robot-account)) |
-| **Environment Variables** | `KEY=value`                          | Non-sensitive config only                                                                                                               |
+| **Environment Variables** | `KEY=value`                          | Non-sensitive config only                                                                                                             |
 
 5. Click **Create**
 6. Runtime appears with status `CREATING`, then transitions to `ACTIVE`
@@ -121,7 +121,7 @@ All runtimes are shown in a paginated table with: Name, Status, Description, Las
 
 Click a runtime name to view: status, image, flavor, autoscaling, environment variables, endpoints
 
-![1774594267224](<../../../../.gitbook/assets/1774594267224 (2).png>)
+![1774594267224](../../../.gitbook/assets/1774594267224.png)
 
 #### Update a Runtime
 
@@ -354,7 +354,7 @@ Each `PATCH` on a runtime creates a new immutable version. Use versions to roll 
 
 1. Open the runtime detail page â†’ **"Versions"** tab
 
-![1774594455831](<../../../../.gitbook/assets/1774594455831 (2).png>)
+![1774594455831](../../../.gitbook/assets/1774594455831.png)
 
 ***
 
@@ -389,10 +389,10 @@ Your agent container must fulfill these requirements:
 
 ### Port and Health Check
 
-| Requirement       | Value         | Notes                         |
-| ----------------- | ------------- | ----------------------------- |
+| Requirement       | Value         | Notes                       |
+| ----------------- | ------------- | --------------------------- |
 | Listen port       | `8080`        | Required â€” not configurable |
-| Health check path | `GET /health` | Must return HTTP 200          |
+| Health check path | `GET /health` | Must return HTTP 200        |
 
 **Using the greennode-agentbase SDK (recommended):**
 

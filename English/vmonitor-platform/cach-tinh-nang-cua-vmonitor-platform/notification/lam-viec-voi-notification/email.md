@@ -10,6 +10,6 @@
 6. Nhập **Email address**.
 7. Chọn **Send OTP,** hệ thống sẽ gửi mã OTP vào địa chỉ email bạn đã nhập ở trên. OTP là viết tắt của One Time Password tức là mật khẩu sử dụng một lần, bạn sử dụng mã này để xác thực chính xác email của bạn không phải là email rác.
 8. Nhập mã **OTP** vào OTP. Mã OTP sẽ có hiệu lực trong vòng **120s**, sau 120s mã OTP này sẽ hết hiệu lực và không thể sử dụng để định danh tài khoản email. Bạn có thể chọn **Gửi lại OTP** để nhận mã mới sau đó tiếp tục nhập mã mới này để định danh.
-9. Chọn **Create.**
+9. Chọn **Create.**&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (101) (1).png" alt="" width="512"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (101).png" alt="" width="512"><figcaption></figcaption></figure>

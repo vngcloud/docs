@@ -2,7 +2,7 @@
 
 Kafka Cluster DB is a new service on the vDB platform, providing a powerful and flexible Kafka server cluster to manage real-time event streaming. With Kafka Cluster DB, you can easily build large-scale data processing applications, messaging systems, and centralized logging with high scalability, data durability, and outstanding performance.
 
-<figure><img src="../../../.gitbook/assets/Kafka-Cluster-Database.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Kafka-Cluster-Database.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Features <a href="#tinh-nang-moi" id="tinh-nang-moi"></a>
 

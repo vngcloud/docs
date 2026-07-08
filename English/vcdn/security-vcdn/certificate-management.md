@@ -18,7 +18,7 @@
 
 **Step 2:** Select **Certificate** , then select **Upload.**
 
-<figure><img src="../../../.gitbook/assets/image (399).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (399).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3:** Click the **Upload Private Key** button to upload the Certificate's private key, or you can also paste the private key into the box below.
 
@@ -26,7 +26,7 @@
 
 **Step 5:** Click the Upload CA Root Chain button to upload the certificate information of the certificate provider. You can leave it blank if there is no information. _<mark style="background-color:blue;">Some older browser versions may report an invalid Certificate error if the CA Root Chain information is missing.</mark>_
 
-<figure><img src="../../../.gitbook/assets/image (400) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (400).png" alt=""><figcaption></figcaption></figure>
 
 **Step 6:** After entering/uploading all the information, select **Save and Deploy** to save and activate the certificate, ready for CDNs to use.
 

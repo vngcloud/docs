@@ -10,7 +10,7 @@ Container Registry in AgentBase is built on [VNG Cloud Container Registry (vCR)]
 
 View your organization's image list at: [https://aiplatform.console.greennode.ai/container-registry/repository](https://aiplatform.console.greennode.ai/container-registry/repository)
 
-![Container Registry — image list](../../../../.gitbook/assets/Container-registry.png)
+![Container Registry — image list](../../../.gitbook/assets/Agentbase-image/Container-registry.png)
 
 **Benefits:**
 

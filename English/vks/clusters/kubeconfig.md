@@ -35,7 +35,7 @@ Before working with kubeconfig, an IAM-user account must be granted all of the p
 | 90 days         | Suitable for production environments with periodic rotation cycles          |
 | 365 days        | Suitable for cases requiring long-term kubeconfig, needs careful management |
 
-<figure><img src="../../../.gitbook/assets/Image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Image (4).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 **Security notes:**
@@ -99,7 +99,7 @@ export KUBECONFIG=<path_to_kubeconfig>
 
 When clicking **Download Config File** on the Kubernetes Cluster screen, the system displays a kubeconfig information popup that includes the certificate validity period. You can view the expiry date directly here before downloading.
 
-<figure><img src="../../../.gitbook/assets/Image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Image (5).png" alt=""><figcaption></figcaption></figure>
 
 **Method 2: Check via command**
 
@@ -117,7 +117,7 @@ The output will display `notBefore` (start date) and `notAfter` (expiry date) of
 
 When the certificate is about to expire (within 7 days), the VKS system will send you a notification. At that point, you can:
 
-<figure><img src="../../../.gitbook/assets/Image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Image (6).png" alt=""><figcaption></figcaption></figure>
 
 * **Automatic renewal:** The system automatically renews the certificate if conditions are met. You will receive a confirmation notification when the process is complete.\
   \&#xNAN;_**IAM-user** accounts require the `AcknowledgeKubeConfigWarningRenew` permission to acknowledge the auto-renew notification — see **Note for IAM-user accounts** at the top of the page._

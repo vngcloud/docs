@@ -75,13 +75,13 @@ host_bucket = %(bucket)s.<hostname>
 
 You can obtain \<access\_key>, \<secret\_key>, and \<hostname> from the Network Volume details page in AI Platform.
 
-<figure><img src="../../../.gitbook/assets/image (345) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (345).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (355) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (355).png" alt=""><figcaption></figcaption></figure>
 
 Using s3cmd with the configured s3cnf file, you can perform actions such as put, ls, etc., on the bucket.
 
-<figure><img src="../../../.gitbook/assets/image (369) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (369).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3: Mount Network Volume to Notebook
 
@@ -92,27 +92,27 @@ Attach a Network Volume to a notebook instance. This allows your notebook to acc
 * Select the Data Mount section
 * Specify:
 
-\- Network volume: ai-storage
+&#x20;   \- Network volume: ai-storage
 
-Select your Network Volume from the list.
+&#x20;                 Select your Network Volume from the list.
 
-You can click "Manage your volumes" to manage your existing Network Volumes.
+&#x20;                 You can click "Manage your volumes" to manage your existing Network Volumes.
 
-<figure><img src="../../../.gitbook/assets/image (370) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
 
-\- Mount folder name (Folder Sync):
+&#x20;    \- Mount folder name (Folder Sync):
 
-Create a destination folder in the notebook to synchronize data from the Network Volume. Example: /workspace/notebook-data
+&#x20;       Create a destination folder in the notebook to synchronize data from the Network Volume.        Example: /workspace/notebook-data
 
-Note: Only letters (a-z, A-Z, 0-9, '\_', '-', '+', '.') are allowed. Input length must be less than 256 characters.
+&#x20;       Note: Only letters (a-z, A-Z, 0-9, '\_', '-', '+', '.') are allowed. Input length must be less than 256 characters.
 
-\- Block storage size:
+&#x20;  \- Block storage size:
 
-Enter the temporary storage size (ephemeral block storage) to store the OS and a copy of data from the Network Volume.
+&#x20;      Enter the temporary storage size (ephemeral block storage) to store the OS and a copy of data from the Network Volume.
 
-Choose a size large enough for your data, from 20 to 1000. (If the block storage size is smaller than or equal to the current Network Volume size, notebook creation will fail.)
+&#x20;      Choose a size large enough for your data, from 20 to 1000. (If the block storage size is smaller than or equal to the current Network Volume size, notebook creation will fail.)
 
-<figure><img src="../../../.gitbook/assets/image (371) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (371).png" alt=""><figcaption></figcaption></figure>
 
 * **When starting the notebook:**
 
@@ -133,7 +133,7 @@ Modified data will be synchronized back to the Network Volume.
 * Model repository: Path to the model files (e.g., /models/llama3/)
 * Network volume: Specify the Network Volume containing the AI model so the system can access it during inference. Note: The model must be stored at the correct path specified in Model repository (e.g., ai-storage).
 
-<figure><img src="../../../.gitbook/assets/image (386) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (386).png" alt=""><figcaption></figcaption></figure>
 
 After import, the model will be ready for deployment.
 
