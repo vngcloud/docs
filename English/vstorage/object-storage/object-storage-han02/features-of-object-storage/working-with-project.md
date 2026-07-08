@@ -213,7 +213,7 @@ To set up automatic growth for a project, you can:
 
 ***
 
-## Usage alert <a href="#tang-dung-luong-tu-dong-auto-scale-quota" id="tang-dung-luong-tu-dong-auto-scale-quota"></a>
+## Usage alert <a href="#canh-bao-dung-luong-usage-alert" id="canh-bao-dung-luong-usage-alert"></a>
 
 The **Usage alert** feature in vStorage allows you to set up automatic alert based on your usage and needs. This guide will provide details on how to configure and manage this feature through the vStorage Portal.
 
