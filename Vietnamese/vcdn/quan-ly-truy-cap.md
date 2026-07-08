@@ -34,13 +34,13 @@ Hệ thống phân quyền thứ cấp cho phép khách hàng quản lý quyền
 
 ## **Quy trình thực hiện phân quyền**
 
-**Bước 1:** Truy cập vào vCDN Portal tại [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
+**Bước 1:** Truy cập vào vCDN Portal tại [https://vcdn.greennode.ai/](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
 
 **Bước 2:** Chọn mục **IAM**, sau đó chọn **Add new.**
 
 **Bước 3:** Nhập địa chỉ email của tài khoản đã tồn tại trên hệ thống GreenNode.
 
-**Bước 4:** Tại đối tượng cần phân quyền, chọn loại quyền hạn phù hợp với nhu cầu. Trong đó:&#x20;
+**Bước 4:** Tại đối tượng cần phân quyền, chọn loại quyền hạn phù hợp với nhu cầu. Trong đó:
 
 * **Full:** Toàn quyền, cho phép thực hiện tất cả các thao tác trên hệ thống CDN (cấu hình, quản lý, xóa, thêm mới, v.v.).
 * **Read Only:** Chỉ được phép xem thông tin và trạng thái của dịch vụ CDN, không thể thực hiện thay đổi.

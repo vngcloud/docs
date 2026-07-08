@@ -22,7 +22,7 @@ Các thông tin thống kê trong report bao gồm:
 
 ## **Các bước thực hiện**
 
-**Bước 1:** Truy cập vào vCDN Portal tại [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
+**Bước 1:** Truy cập vào vCDN Portal tại [https://vcdn.greennode.ai/](https://vcdn.greennode.ai/)
 
 **Bước 2:** Chọn mục **Report** để xem báo cáo. Dữ liệu bao gồm các thông tin thống kê như đã nêu ở phần chi tiết.
 
