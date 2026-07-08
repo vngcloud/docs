@@ -10,7 +10,7 @@
 
 Để hiểu rõ về kết nối VPC trong Cross Connect của hai vùng, hãy xem mô tả cụ thể bên dưới về một kết nối Cross Connect giữa 2 VPC của hai vùng Hà Nội và Hồ Chí Minh:
 
-Giả thiết đang có 2 vùng dữ liệu là Hồ Chí Minh (HCM03) và Hà Nội (HAN01), mỗi vùng đều đã thiết lập sẵn các VPC từ trước.
+Giả thiết đang có 2 vùng dữ liệu là Hồ Chí Minh (HCM03) và Hà Nội (HAN01), mỗi vùng đều đã thiết lập sẵn các VPC từ trước.&#x20;
 
 Region HCM03 có các VPC:
 
@@ -28,7 +28,7 @@ Thực hiện việc tạo Cross Connect 1 để tạo tuyền kết nối giữ
 * HCM-VPC01 kết nối với HAN-VPC02;
 * HCM-VPC02 kết nối với HAN-VPC02;
 
-<figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (4).png" alt=""><figcaption><p>Sơ đồ kết nối cơ bản của một tuyền Cross Connect giữa HCM03 và HAN01</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sơ đồ kết nối cơ bản của một tuyền Cross Connect giữa HCM03 và HAN01</p></figcaption></figure>
 
 ***
 
@@ -38,3 +38,6 @@ GreenNode cung cấp cho người dùng dịch vụ Cross Connect có thể th�
 * [Tạo kết nối VPC giữa hai region](tao-ket-noi-vpc.md);
 * [Xóa kết nối Cross Connect](xoa-cross-connect.md);
 * [Kiểm tra điều kiện kết nối VPC](kiem-tra-dieu-kien-ket-noi-vpc.md).
+
+
+

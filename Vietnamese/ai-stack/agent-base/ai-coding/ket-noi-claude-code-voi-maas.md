@@ -67,7 +67,7 @@ export CLAUDE_CODE_SUBAGENT_MODEL="claude-sonnet-4-6"
 source ~/.zshrc
 ```
 
-<figure><img src="../../../../.gitbook/assets/AI-coding-change-baseurl-apikey (2).png" alt=""><figcaption><p>Cấu hình ANTHROPIC_AUTH_TOKEN và ANTHROPIC_BASE_URL trong shell profile</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Agentbase-image/AI-coding-change-baseurl-apikey.png" alt=""><figcaption><p>Cấu hình ANTHROPIC_AUTH_TOKEN và ANTHROPIC_BASE_URL trong shell profile</p></figcaption></figure>
 
 **Cách B — Project settings (chỉ áp dụng cho project cụ thể)**
 
@@ -150,9 +150,9 @@ Xác nhận request được ghi nhận tại [AI Platform Console → Usage](ht
 
 Sau khi hoàn thành, Claude Code CLI sẽ route toàn bộ request qua GreenNode MaaS. Usage được ghi nhận trên AI Platform Console và tính phí theo credit-token nội bộ.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (3).png" alt=""><figcaption><p>Claude Code chạy thành công qua GreenNode MaaS endpoint</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Claude Code chạy thành công qua GreenNode MaaS endpoint</p></figcaption></figure>
 
 | Tôi muốn tiếp theo...                | Đi đến                                                                                |
 | ------------------------------------ | ------------------------------------------------------------------------------------- |
 | Dùng OpenAI-compatible tool với MaaS | [Kết nối OpenAI-compatible với GreenNode MaaS](ket-noi-openai-compatible-voi-maas.md) |
-| Xem usage và billing                 | [AI Platform Console](https://aiplatform.console.greennode.ai/)                       |
+| Xem usage và billing                 | [AI Platform Console](https://aiplatform.console.greennode.ai/)                        |

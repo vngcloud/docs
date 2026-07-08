@@ -25,7 +25,7 @@
 
 Sau khi bạn thực hiện 10 bước bên trên, một tài khoản Service Account đã được khởi tạo.
 
-<figure><img src="../../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -49,7 +49,7 @@ Sau khi bạn thực hiện 10 bước bên trên, một tài khoản Service Ac
 8. Chọn **Resources**: chọn **All resources.**
 9.  Chọn **Request conditions:** nhập điều kiện đặc biệt cho policy nếu có.
 
-    <figure><img src="../../../../../.gitbook/assets/Screenshot-4 (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Screenshot-4.png" alt=""><figcaption></figcaption></figure>
 
 ### Attach IAM Policy vào Service Account
 
@@ -62,7 +62,7 @@ Sau khi bạn đã khởi tạo Service Account và Policy mong muốn, tiếp t
 5. Chọn các **policy** mà bạn mong muốn. Hệ thống vIAM hỗ trợ bạn gán nhiều policy vào một tài khoản Service Account. Nếu các policy này chứa các quyền hạn độc lập thì chúng sẽ bổ sung cho nhau (tức là danh sách quyền hạn được hợp lại). Ngược lại nếu các policy này chứa các quyền hạn trái ngược thì bạn sẽ không thể truy cập vào tài nguyên tương ứng theo danh sách quyền hạn này (tức là danh sách quyền được hợp lại và khi trái ngược thì sẽ triệt tiêu nhau).
 6. Chọn **Attach**.
 
-<figure><img src="../../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -74,7 +74,7 @@ Sau khi bạn đã khởi tạo Service Account và Policy mong muốn, tiếp t
 2. Chọn **Bucket** bạn muốn thực hiện phân quyền cho Service Account.
 3.  Chọn biểu tượng **Action** và chọn **Configure policy.**
 
-    <figure><img src="../../../../../.gitbook/assets/image (1045) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1045).png" alt=""><figcaption></figcaption></figure>
 4. Tại đây, bạn có thể chọn cấu hình cho từng **Statement** ở bên trái hoặc trực tiếp chỉnh sửa file JSON ở cột bên phải. Cụ thể cấu trúc một Bucket Policy bao gồm:
 
 * **Version**: Xác định phiên bản của Bucket Policy (nên dùng `"2012-10-17"`).
@@ -87,9 +87,9 @@ Sau khi bạn đã khởi tạo Service Account và Policy mong muốn, tiếp t
 
 5. Chọn **Save** để lưu lại cấu hình Bucket Policy.
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot from 2025-11-10 13-55-00 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2025-11-10 13-55-00.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot from 2025-11-10 13-57-21 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2025-11-10 13-57-21.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -107,11 +107,11 @@ Thực hiện theo các bước bên dưới làm việc với vStorage thông q
 
 Chi tiết, vui lòng tham khảo thêm tại [https://docs.api.greennode.ai/service-docs/vstorage-api.html](https://docs.api.greennode.ai/service-docs/vstorage-api.html).
 
-<figure><img src="../../../../../.gitbook/assets/image (1047).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1047).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1048) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1048).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1049) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1049).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -125,7 +125,7 @@ Chi tiết, vui lòng tham khảo thêm tại [https://docs.api.greennode.ai/ser
 
 **Request body**
 
-> 'grant\_type':'client\_credentials'
+> 'grant\_type':'client\_credentials'&#x20;
 >
 > 'scope':'email'
 
@@ -137,12 +137,16 @@ Chi tiết, vui lòng tham khảo thêm tại [https://docs.api.greennode.ai/ser
 
 Nếu thông tin đăng nhập được xác thực, một **access\_token** sẽ được trả về. Người dùng sẽ sử dụng **access\_token** để truy cập tài nguyên.
 
+
+
 **Ví dụ:**
 
 > curl -X POST 'https://iamapis.vngcloud.vn/accounts-api/v2/auth/token'\
 > -H 'Content-Type: application/json'\
 > -H 'Authorization: Basic ZGM3MTYxNTYtMjQwMi00MDg2LTliYWItZGU5OTIxODVlYjU1OmJhYjYzYTZmLWYzOGUtNDZmNC05NjIyLTYzNTQwNGQ4MDFlNQ=='\
 > -d '{ "grant\_type": "client\_credentials", "scope":"email" }'
+>
+>
 >
 > {"token\_type":"Bearer","access\_token":"eyJhbGciOiJSUz......GWug","expires\_in":1800,"refresh\_expires\_in":0}
 

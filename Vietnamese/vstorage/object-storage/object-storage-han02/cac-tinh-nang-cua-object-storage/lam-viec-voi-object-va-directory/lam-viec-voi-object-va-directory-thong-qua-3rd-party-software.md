@@ -8,48 +8,48 @@
 
 Để Upload/download object, bạn hãy chọn 2 biểu tượng tương ứng như hình sau.
 
-<figure><img src="../../../../../../.gitbook/assets/image (612) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (612).png" alt=""><figcaption></figcaption></figure>
 
 ## Tìm kiếm object/ folder
 
 Để tìm kiếm object/ folder, bạn hãy chọn biểu tượng tương ứng như hình sau.
 
-<figure><img src="../../../../../../.gitbook/assets/image (613) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (613).png" alt=""><figcaption></figcaption></figure>
 
 ## Di chuyển object
 
 Để di chuyển object, bạn hãy nhấn chuột phải vào object cần di chuyển và chọn **Move to** tương ứng như hình sau.
 
-<figure><img src="../../../../../../.gitbook/assets/image (614) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (614).png" alt=""><figcaption></figcaption></figure>
 
 ## Sao chép object
 
 Để di chuyển object, bạn hãy nhấn chuột phải vào object cần di chuyển và chọn **Copy to** tương ứng như hình sau.
 
-<figure><img src="../../../../../../.gitbook/assets/image (615) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (615).png" alt=""><figcaption></figcaption></figure>
 
 ## Đổi tên object
 
 Để đổi tên object, bạn hãy nhấn chuột phải vào object cần di chuyển và chọn **Rename** tương ứng như hình sau.
 
-<figure><img src="../../../../../../.gitbook/assets/image (616) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (616).png" alt=""><figcaption></figcaption></figure>
 
 ## Thiết lập tag object
 
 Để thiết lập tag cho object, bạn hãy nhấn chuột phải vào object cần di chuyển và chọn **Edit Object Tags** tương ứng như hình sau.
 
-<figure><img src="../../../../../../.gitbook/assets/image (617) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (617).png" alt=""><figcaption></figcaption></figure>
 
 ## Thiết lập metadata object
 
 Để thiết lập metadata cho object, bạn hãy nhấn chuột phải vào object cần di chuyển và chọn **Edit HTTP Header** tương ứng như hình sau.
 
-<figure><img src="../../../../../../.gitbook/assets/image (619) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (619).png" alt=""><figcaption></figcaption></figure>
 
 ## Xóa object
 
 Để xóa object, bạn hãy nhấn chuột phải vào object cần di chuyển và chọn **Delete** tương ứng như hình sau.
 
-<figure><img src="../../../../../../.gitbook/assets/image (618) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (618).png" alt=""><figcaption></figcaption></figure>
 
 Chi tiết các tính năng, vui lòng tham khảo thêm tại [https://s3browser.com/](https://s3browser.com/).

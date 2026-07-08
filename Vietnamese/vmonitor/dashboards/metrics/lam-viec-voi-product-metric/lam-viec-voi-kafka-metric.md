@@ -2,11 +2,11 @@
 
 Sau khi tạo cụm Kafka thành công, hệ thống sẽ tự động thu thập Kafka metric và hiển thị ở tab Infrastructure List/vDB - Database , giúp bạn có thể theo dõi được các Kafka Project trên GreenNode hoàn toàn miễn phí.
 
-Bước 1: Truy cập vào vMonitor portal: [https://vmonitor.console.greennode.ai/infrastructure/vdb](https://vmonitor.console.greennode.ai/infrastructure/vdb)
+Bước 1: Truy cập vào vMonitor portal:  [https://vmonitor.console.greennode.ai/infrastructure/vdb](https://vmonitor.console.greennode.ai/infrastructure/vdb)
 
 Bước 2: Chọn filter resources Kafka
 
-<figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Tại trang này ở mỗi Kafka bạn sẽ thấy các thông tin như sau:
 
@@ -17,11 +17,11 @@ Tại trang này ở mỗi Kafka bạn sẽ thấy các thông tin như sau:
 * **Messages consumed per second**: Số lượng message mà consumer (hoặc consumer group) đang đọc từ Kafka **trong một giây**
 * **Detailed Monitoring**: mặc định là tắt, khi bạn có nhu cầu cần vẽ các Kafka metric khác ngoài các Metric mà dashboard mặc định chúng tôi đã vẽ và tạo các Alarm để cảnh báo với tài nguyên này, thì bạn cần bật tính năng này lên. Để bật tính năng này bạn cần mua gói Metric Quota (gói có phí hoặc miễn phí).
 
-Khi click vào tên của Kafka, bạn sẽ được chuyển sang trang Dashboard, và xem default dashboard của Kafka này (Tên dashboard của Kafka: vDB-Kafka-Project\_Name-{suffix Kafka ID})).
+&#x20;Khi click vào tên của Kafka, bạn sẽ được chuyển sang trang Dashboard, và xem default dashboard của Kafka này (Tên dashboard của Kafka: vDB-Kafka-Project\_Name-{suffix Kafka ID})).
 
-<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**

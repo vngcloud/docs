@@ -75,13 +75,13 @@ host_bucket = %(bucket)s.<hostname>
 
 > Bạn có thể lấy các thông tin `<access_key>`, `<secret_key>`, `<hostname>` từ trang chi tiết của Network Volume trong AI Platform.
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (17) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 Sử dụng s3cmd với file s3cnf đã tạo có thể sử dung các action put, ls ... với bucket
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Bước 3: Mount Network Volume vào Notebook
 
@@ -96,7 +96,7 @@ Gắn một Network Volume vào phiên bản notebook này. Điều này cho ph�
       * Chọn Network Volume trong danh sách đã tạo của bạn.
       * Bạn có thể nhấp vào "Manage your volumes" để quản lý các Network Volume hiện có của mình.
 
-      <figure><img src="../../../.gitbook/assets/image (379) (3).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../.gitbook/assets/image (379).png" alt=""><figcaption></figcaption></figure>
   * Mount folder name (Folder Sync):
     * _Tạo thư mục đích trong notebook để đồng bộ dữ liệu từ Network Volume_. Ví dụ: `/workspace/notebook-data`
     * Lưu ý: Chỉ cho phép các ký tự chữ cái (a-z, A-Z, 0-9, '\_', '-', '+', '.'). Độ dài nhập liệu phải nhỏ hơn 256 ký tự.
@@ -104,7 +104,7 @@ Gắn một Network Volume vào phiên bản notebook này. Điều này cho ph�
     * Nhập dung lượng _dung lượng lưu trữ tạm (ephemeral block storage) để chứa_ OS và bản sao dữ liệu từ network volume.
     * Chọn kích thước đủ lớn so với dữ liệu cần dùng từ 20 đến 1000. (nếu chọn size blockstorage bé hơn hoặc bằng size network volume hiện tại thì quá trình tạo notebook sẽ bị lỗi
 
-<figure><img src="../../../.gitbook/assets/image (1079) (1).png" alt="" width="337"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1079).png" alt="" width="337"><figcaption></figcaption></figure>
 
 * **Khi start notebook:**
   * Dữ liệu từ Network Volume sẽ **tự động copy vào thư mục** mount trên Notebook
@@ -121,7 +121,7 @@ Gắn một Network Volume vào phiên bản notebook này. Điều này cho ph�
    * **Model repository:** Đường dẫn tới file model (VD: `/models/llama3/`)
    * **Network volume**: Chỉ định Network Volume **chứa model AI** để hệ thống có thể truy cập khi chạy inference. Lưu ý model phải được lưu đúng với đường dẫn nhập tại Model repository `ai-storage`
 
-<figure><img src="../../../.gitbook/assets/image (1080) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1080).png" alt="" width="375"><figcaption></figcaption></figure>
 
 > Sau khi import, model sẽ sẵn sàng để deploy.
 

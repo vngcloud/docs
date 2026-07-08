@@ -4,4 +4,4 @@
 
 Dưới đây là địa điểm nơi mà chúng tôi sẽ thiết lập kết nối Interconnect đến vị trí của bạn
 
-<figure><img src="../../../../.gitbook/assets/image (428) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (428).png" alt=""><figcaption></figcaption></figure>

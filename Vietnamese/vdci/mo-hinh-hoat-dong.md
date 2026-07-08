@@ -6,7 +6,7 @@ Mô hình vDCI mang lại khả năng **tách biệt tài nguyên vật lý**, n
 * Hệ thống yêu cầu tài nguyên ổn định
 * Triển khai hybrid cloud hoặc multi-cloud
 
-<figure><img src="../../.gitbook/assets/image (2) (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (6).png" alt=""><figcaption></figcaption></figure>
 
 ## Các thành phần chính
 

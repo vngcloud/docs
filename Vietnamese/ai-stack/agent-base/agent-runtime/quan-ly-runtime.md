@@ -2,14 +2,14 @@
 
 > Hướng dẫn dừng, khởi động, cập nhật, quản lý Endpoint, rollback và xóa Agent Runtime.
 
-***
+---
 
 ## Điều kiện cần
 
-* Ít nhất 1 Runtime đã tạo
-* Vai trò Root hoặc Admin
+- Ít nhất 1 Runtime đã tạo
+- Vai trò Root hoặc Admin
 
-***
+---
 
 ## Dừng Runtime
 
@@ -23,7 +23,7 @@ Dừng Runtime để tiết kiệm chi phí tính toán. Cấu hình, Endpoint v
 Trong khi Runtime ở trạng thái `STOPPED`, mọi request đến Endpoint sẽ trả về lỗi cho đến khi Runtime được khởi động lại.
 {% endhint %}
 
-***
+---
 
 ## Khởi động Runtime
 
@@ -31,7 +31,7 @@ Trong khi Runtime ở trạng thái `STOPPED`, mọi request đến Endpoint s�
 
 **Bước 2:** Nhấp **Start** → Runtime chuyển qua `STARTING` → `ACTIVE`
 
-***
+---
 
 ## Cập nhật Runtime / Triển khai phiên bản mới
 
@@ -88,7 +88,7 @@ curl -s -X PATCH "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNT
   }' | jq .
 ```
 
-***
+---
 
 ## Quản lý Endpoint
 
@@ -98,7 +98,7 @@ Mỗi Runtime có một Endpoint **DEFAULT** được tạo tự động. Bạn 
 
 **Xem danh sách Endpoint:** Mở Runtime Detail → tab **Endpoints**
 
-![Runtime detail — Endpoints tab](<../../../../.gitbook/assets/1774594267224 (2).png>)
+![Runtime detail — Endpoints tab](../../../.gitbook/assets/1774594267224.png)
 
 **Tạo Endpoint mới:**
 
@@ -144,7 +144,7 @@ curl -s -X DELETE "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUN
   -H "Authorization: Bearer $TOKEN"
 ```
 
-***
+---
 
 ## Xem phiên bản và Rollback
 
@@ -154,7 +154,7 @@ Mỗi lần cập nhật tạo một Version bất biến mới. Để rollback,
 
 Mở Runtime Detail → tab **Versions**
 
-![Runtime detail — Versions tab](<../../../../.gitbook/assets/1774594455831 (2).png>)
+![Runtime detail — Versions tab](../../../.gitbook/assets/1774594455831.png)
 
 ### Qua API
 
@@ -177,7 +177,7 @@ curl -s -X PATCH "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNT
   -H "Authorization: Bearer $TOKEN" | jq .
 ```
 
-***
+---
 
 ## Xóa Runtime
 
@@ -198,7 +198,7 @@ curl -s -X DELETE "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUN
   -H "Authorization: Bearer $TOKEN"
 ```
 
-***
+---
 
 ## Đặt lại Service Account
 
@@ -213,11 +213,11 @@ curl -s -X PATCH "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNT
 Lệnh này tạo lại `GREENNODE_CLIENT_ID` và `GREENNODE_CLIENT_SECRET`. Runtime sẽ khởi động lại với credential mới.
 {% endhint %}
 
-***
+---
 
 ## Kết quả
 
-| Tôi muốn...          | Đến                                  |
-| -------------------- | ------------------------------------ |
-| Xem logs và metrics  | [Insight](logs-va-metrics.md)        |
-| Cấu hình MCP Gateway | [MCP Governance](../mcp-governance/) |
+| Tôi muốn... | Đến |
+|---|---|
+| Xem logs và metrics | [Insight](logs-va-metrics.md) |
+| Cấu hình MCP Gateway | [MCP Governance](../mcp-governance/README.md) |

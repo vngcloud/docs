@@ -48,9 +48,9 @@ Thực hiện tạo project theo các bước bên dưới:
 8. Chọn **Period** và chọn/bỏ chọn **Auto-renew** theo nhu cầu của bạn.
 9. Thực hiện các bước **Thanh toán** giỏ hàng và **Project** của bạn sẽ được khởi tạo.
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (7) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -62,7 +62,7 @@ Bạn có thể xem và sử dụng các thuộc tính cho project bao gồm th�
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai/storage](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn **Region: HCM04**
-3. Chọn biểu tượng <img src="../../../../../.gitbook/assets/image (601) (1).png" alt="" data-size="line">tại **project** bạn muốn xem chi tiết.
+3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (601).png" alt="" data-size="line">tại **project** bạn muốn xem chi tiết.
 4. Trên trang hiển thị thông tin chi tiết **project**, bạn có thể xem và sử dụng các thuộc tính cho project
 
 * **Information**: Cung cấp các thông tin chung của project như Tổng quota, Tổng usage, Project type, Account URL, Project Owner.
@@ -70,7 +70,7 @@ Bạn có thể xem và sử dụng các thuộc tính cho project bao gồm th�
 * **History**: Cung cấp thông tin lịch sử tác động tới project bao gồm loại hành động, trạng thái hành động, thời gian hành động xảy ra và mô tả chi tiết hành động nếu có.
 * **Connection Information**: Cung cấp các câu lệnh và tệp tin cấu hình để kết nối project với S3.
 
-<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -81,7 +81,7 @@ Bạn đã khởi tạo project với lượng quota ban đầu phù hợp với
 Để thay đổi quota cho một project, bạn có thể:
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
-2. Chọn checkbox tại project bạn muốn tăng giảm hạn mức và chọn biểu tượng <img src="../../../../../.gitbook/assets/image (604) (1).png" alt="" data-size="line">hoặc bạn cũng có thể chọn biểu tượng <img src="../../../../../.gitbook/assets/image (605) (2).png" alt="" data-size="line"> sau đó chọn Resize.
+2. Chọn checkbox tại project bạn muốn tăng giảm hạn mức và chọn biểu tượng <img src="../../../../.gitbook/assets/image (604).png" alt="" data-size="line">hoặc bạn cũng có thể chọn biểu tượng <img src="../../../../.gitbook/assets/image (605).png" alt="" data-size="line"> sau đó chọn Resize.
 3. Màn hình **Resize project** được hiển th&#x1ECB;**.** Chọn **quota** lưu trữ mong muốn tăng thêm, **quota** lưu trữ bạn có thể tăng thêm hoặc giảm đi đến mức tối đa hoặc tối thiểu bằng **quota** lưu trữ mà gói lưu trữ cung cấp. Bạn không thể điều chỉnh **quota** lưu trữ nhỏ hơn hoặc vượt quá giá trị này.
 4. Chọn **Resize project.**
 5. Chọn **Thanh toán** sau khi kiểm tra giỏ hàng và hình thức thanh toán.
@@ -89,7 +89,7 @@ Bạn đã khởi tạo project với lượng quota ban đầu phù hợp với
 
 Sau khi bạn thực hiện thành công 6 bước trên, giá trị tổng **quota** mới sau khi thay đổi sẽ được cập nhật trên thông tin chung của project mà bạn chọn.
 
-<figure><img src="../../../../../.gitbook/assets/image (603) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (603).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -100,7 +100,7 @@ Bạn đã khởi tạo project với chu kỳ lưu trữ ngắn hạn. Hiện t
 Để renew một project, bạn có thể:
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
-2. Chọn checkbox tại **project** bạn muốn tăng giảm hạn mức và chọn biểu tượng <img src="../../../../../.gitbook/assets/image (606) (2).png" alt="" data-size="line"> hoặc bạn cũng có thể chọn biểu tượng <img src="../../../../../.gitbook/assets/image (605) (2).png" alt="" data-size="line"> sau đó chọn **Renew**.
+2. Chọn checkbox tại **project** bạn muốn tăng giảm hạn mức và chọn biểu tượng <img src="../../../../.gitbook/assets/image (606).png" alt="" data-size="line"> hoặc bạn cũng có thể chọn biểu tượng <img src="../../../../.gitbook/assets/image (605).png" alt="" data-size="line"> sau đó chọn **Renew**.
 3. Chọn Period lưu trữ mong muốn gia hạn. Chúng tôi cung cấp các chu kỳ lưu trữ bao gồm: **1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng**. Khi bạn thực hiện chọn chu kỳ gia hạn, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ lưu trữ mới và tổng số tiền bạn cần chi trả cho việc gia hạn **project**.
 4. Chọn **Thanh toán** sau khi kiểm tra giỏ hàng và hình thức thanh toán.
 5. Chọn **Tiếp tục thanh toán** và thực hiện thanh toán sau khi chọn phương thức thanh toán phù hợp.
@@ -141,7 +141,7 @@ Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ
 <summary>Thiết lập tính năng gia hạn tự động trên project đã được khởi tạo trước đó</summary>
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
-2. Chọn biểu tượng <img src="../../../../../.gitbook/assets/image (607) (1).png" alt="" data-size="line"> tại **project** bạn muốn thực hiện thiết lập gia hạn tự động. Chọn Enable Auto-renew.
+2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (607).png" alt="" data-size="line"> tại **project** bạn muốn thực hiện thiết lập gia hạn tự động. Chọn Enable Auto-renew.
 3. Màn hình **Enable Auto-renew** được hiển th&#x1ECB;**.** Chọn **Period** gia hạn mà bạn mong muốn.
 4. Chọn **OK.**
 
@@ -154,7 +154,7 @@ Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ
 <summary>Gỡ bỏ tính năng gia hạn tự động trên một project đã được thiết lập gia hạn tự động trước đó</summary>
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
-2. Chọn biểu tượng <img src="../../../../../.gitbook/assets/image (609) (2).png" alt="" data-size="line"> tại **project** bạn muốn thực hiện tắt thiết lập gia hạn tự động. Chọn **Disable Auto-renew.**
+2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (609).png" alt="" data-size="line"> tại **project** bạn muốn thực hiện tắt thiết lập gia hạn tự động. Chọn **Disable Auto-renew.**
 3. Màn hình **Disable Auto-renew** được hiển th&#x1ECB;**.**
 4. Chọn **OK.**
 
@@ -171,7 +171,7 @@ Bạn đã khởi tạo một project với gói lưu trữ phù hợp. Hiện t
 Để xóa một project, bạn có thể:
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
-2. Chọn biểu tượng <img src="../../../../../.gitbook/assets/image (610) (2).png" alt="" data-size="line">tại project bạn muốn thực hiện xóa. Chọn **Delete**.
+2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (610).png" alt="" data-size="line">tại project bạn muốn thực hiện xóa. Chọn **Delete**.
 3. Nhập chuỗi ký tự **delete me** và chọn **Delete.**
 
 Sau khi bạn bạn thực hiện xóa project thì project bị xóa sẽ biến mất khỏi danh sách project của bạn. Lúc này project bị xóa sẽ nằm trong **Thùng rác**, project bị xóa của bạn sẽ được lưu trữ tại **Thùng rác** trong vòng 7 ngày mà không mất phí. Trong 7 ngày này bạn có thể khôi phục lại project bị xóa. Để khôi phục, hãy xem hướng dẫn tại mục Khôi phục project. Nếu sau 7 ngày mà bạn không thực hiện khôi phục project thì project cùng các dữ liệu bên trong sẽ bị xóa hoàn toàn khỏi hệ thống và không thể khôi phục lại được nữa.
@@ -190,7 +190,7 @@ Bạn vừa thực hiện xóa một project hoặc một project hết hạn l�
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn menu **Trash.**
-3. Chọn biểu tượng <img src="../../../../../.gitbook/assets/image (611) (2).png" alt="" data-size="line">trên **project** muốn thực hiện khôi phục.
+3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (611).png" alt="" data-size="line">trên **project** muốn thực hiện khôi phục.
 4. Chọn **Restore**.
 5. Chọn **Thanh toán** sau khi kiểm tra giỏ hàng và hình thức thanh toán.
 6. Chọn **Tiếp tục thanh toán** và thực hiện thanh toán sau khi chọn phương thức thanh toán phù hợp.
@@ -227,9 +227,9 @@ Tính năng Tự động tăng dung lượng lưu trữ (Auto-scale Quota) trên
 * Nếu việc tăng dung lượng **thất bại**, người dùng sẽ nhận được thông báo qua email. Sau hai lần thực hiện auto-scale thất bại liên tiếp, hệ thống của chúng tôi sẽ ngừng gửi thông báo qua email cho bạn. Bạn cần chủ động truy cập vào vStorage để thực hiện resize project thủ công theo hướng dẫn bên trên.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-11 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-11.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-24 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-24.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -255,9 +255,9 @@ Tính năng Cảnh báo dung lượng lưu trữ (Usage alert) trên vStorage ch
 * **Hệ thống vStorage** sẽ thực hiện kiểm tra project có/ không đủ điều kiện được cảnh báo dung lượng theo chu kỳ mỗi **2 lần/ngày** để tự động cảnh báo dung lượng dựa trên ngưỡng đã thiết lập. Email cảnh báo sẽ được gởi tối đa 3 lần liên tiếp.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-47 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-47.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-57 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-57.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -294,7 +294,7 @@ Thời gian sử dụng tài nguyên POC mặc định trùng với thời gian 
 Sau khi bạn khởi tạo một project sử dụng ví POC, lúc này bạn có thể tiếp tục gia hạn sử dụng project cũng bằng cách sử dụng ví Poc. Chi tiết hãy làm theo các bước sau:
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
-2. Chọn biểu tượng <img src="../../../../../.gitbook/assets/image (620) (2).png" alt="" data-size="line">tại **project** bạn muốn thực hiện gia hạn. Chọn **Gia hạn.**
+2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (620).png" alt="" data-size="line">tại **project** bạn muốn thực hiện gia hạn. Chọn **Gia hạn.**
 3. **Bạn có thể gia hạn project sử dụng ví POC nếu bạn đã gia hạn thời gian sử dụng ví POC. Sau khi bạn gia hạn thời gian sử dụng ví POC thì thời gian bạn có thể gia hạn project là quãng thời gian từ ngày kết thúc hiện tại tới ngày hết hạn mới của ví POC**. Để tăng thời gian sử dụng ví POC, bạn hãy liên hệ với nhân viên Sale hoặc nhân viên hỗ trợ trực tiếp cho bạn hoặc mở một ticket support trên hệ thống của chúng tôi. Chọn **Gia hạn**.
 4. Chọn **Checkout PoC**.
 
@@ -319,7 +319,7 @@ Lúc này **project** sẽ bị **xóa hoàn toàn** khỏi vStorage.
 <summary>Dừng POC trước thời hạn</summary>
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
-2. Chọn biểu tượng <img src="../../../../../.gitbook/assets/image (622) (2).png" alt="" data-size="line">tại **project** bạn muốn thực hiện dừng POC. Chọn **Dừng POC**.
+2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (622).png" alt="" data-size="line">tại **project** bạn muốn thực hiện dừng POC. Chọn **Dừng POC**.
 3. Chọn **Dừng POC**.
 
 Sau khi bạn thực hiện dừng POC thành công thì project của bạn sẽ được chuyển thành loại tài nguyên trả trước và được chuyển vào Thùng rác.

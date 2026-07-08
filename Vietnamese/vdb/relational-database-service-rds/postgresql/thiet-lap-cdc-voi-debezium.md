@@ -15,7 +15,7 @@
 
 CDC capture toàn bộ thay đổi dữ liệu (INSERT, UPDATE, DELETE) từ PostgreSQL và đẩy ra external systems theo thời gian thực.
 
-![Kiến trúc CDC với Debezium](<../../../../.gitbook/assets/vdb-cdc-debezium-architecture (2).png>)
+![Kiến trúc CDC với Debezium](../../../.gitbook/assets/vdb-cdc-debezium-architecture.png)
 
 |                          | Logical Replication | CDC (Debezium)             |
 | ------------------------ | ------------------- | -------------------------- |

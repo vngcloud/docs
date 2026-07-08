@@ -19,11 +19,11 @@ Thực hiện theo các bước bên dưới làm việc với vStorage thông q
 
 Chi tiết, vui lòng tham khảo thêm tại [https://docs.api.greennode.ai/service-docs/vstorage-han02-api.html](https://docs.api.greennode.ai/service-docs/vstorage-han02-api.html).
 
-<figure><img src="../../../../.gitbook/assets/image (1047).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1047).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1048) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1048).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1049) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1049).png" alt=""><figcaption></figcaption></figure>
 
 ## S3 API - Authentication
 
@@ -35,9 +35,9 @@ Chi tiết, vui lòng tham khảo thêm tại [https://docs.api.greennode.ai/ser
 
 Ví dụ:
 
-<figure><img src="../../../../.gitbook/assets/image (1056) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1056).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (714) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (714).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

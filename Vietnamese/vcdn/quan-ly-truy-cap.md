@@ -40,7 +40,7 @@ Hệ thống phân quyền thứ cấp cho phép khách hàng quản lý quyền
 
 **Bước 3:** Nhập địa chỉ email của tài khoản đã tồn tại trên hệ thống GreenNode.
 
-**Bước 4:** Tại đối tượng cần phân quyền, chọn loại quyền hạn phù hợp với nhu cầu. Trong đó:
+**Bước 4:** Tại đối tượng cần phân quyền, chọn loại quyền hạn phù hợp với nhu cầu. Trong đó:&#x20;
 
 * **Full:** Toàn quyền, cho phép thực hiện tất cả các thao tác trên hệ thống CDN (cấu hình, quản lý, xóa, thêm mới, v.v.).
 * **Read Only:** Chỉ được phép xem thông tin và trạng thái của dịch vụ CDN, không thể thực hiện thay đổi.
@@ -48,4 +48,4 @@ Hệ thống phân quyền thứ cấp cho phép khách hàng quản lý quyền
 
 **Bước 5:** Chọn **Save** để áp dụng các thay đổi.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="" width="371"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="371"><figcaption></figcaption></figure>

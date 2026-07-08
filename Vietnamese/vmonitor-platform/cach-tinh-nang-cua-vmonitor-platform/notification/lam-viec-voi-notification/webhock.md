@@ -2,7 +2,7 @@
 
 Để tạo Notification với kênh gửi/ nhận là Webhook, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Notification.**
 3. Chọn **Create a Notification**.
 4. Màn hình **Create Notification** được hiển thị. Nhập **Notification name**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho Notification của bạn. Sau khi tạo Notification, bạn có thể thay đổi tên cho Notification của bạn. Để biết thêm thông tin về cách đặt tên Notification, hãy xem [Notification](../).
@@ -19,6 +19,6 @@
 
 10\. Chọn **Create**.
 
-<figure><img src="../../../../../.gitbook/assets/image (104) (3).png" alt="" width="510"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (104).png" alt="" width="510"><figcaption></figcaption></figure>
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59807037/image2023-8-14_15-8-49.png?version=1&#x26;modificationDate=1692000532000&#x26;api=v2" alt=""><figcaption></figcaption></figure>

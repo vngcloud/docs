@@ -2,7 +2,7 @@
 
 Hiện tại, vCDN đang hỗ trợ cơ chế “nhà phát triển” (Development Mode). Cơ chế này sẽ cho phép tất cả các request sẽ được bỏ qua cache và đi trực tiếp đến origin nhằm kiểm tra dữ liệu ở origin một cách trực tiếp:
 
-<figure><img src="../../../.gitbook/assets/image (237) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
 
 ## Tổng quan
 
@@ -19,4 +19,4 @@ Cơ chế "Nhà phát triển" của vCDN là một tính năng đặc biệt ch
 
 * Trên vCDN, để bật/ tắt chế độ Nhà phát triển, bạn có thể chọn **Enable/ Disable** tại mục Development mode:
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

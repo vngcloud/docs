@@ -4,13 +4,13 @@
 
 ## Khởi tạo Windows server on vServer
 
-Dưới đây là hướng dẫn cơ bản cho việc khởi tạo Windows server trên vServer, nếu bạn đã có sẵn server, hãy bỏ qua bước này.
+Dưới đây là hướng dẫn cơ bản cho việc khởi tạo Windows server trên vServer, nếu bạn đã có sẵn server, hãy bỏ qua bước này.&#x20;
 
 <details>
 
 <summary>Hướng dẫn tạo Windows server</summary>
 
-Trước khi có thể thực hiện khởi tạo Windows server, hãy đảm bảo bạn khởi tạo VPC, Subnet trên hệ thống vServer. Tiếp theo, thực hiện các bước theo hướng dẫn bên dưới để khởi tạo Windows server:
+Trước khi có thể thực hiện khởi tạo Windows server, hãy đảm bảo bạn khởi tạo VPC, Subnet trên hệ thống vServer. Tiếp theo, thực hiện các bước theo hướng dẫn bên dưới để khởi tạo Windows server:&#x20;
 
 1. Đăng nhập vào vServer tại [https://hcm-03.console.vngcloud.tech/vserver](https://hcm-03.console.vngcloud.tech/vserver/v-server/create-server).
 2. Tiếp tục chọn mục **Servers**.
@@ -29,12 +29,12 @@ Trước khi có thể thực hiện khởi tạo Windows server, hãy đảm b�
 13. Ở mục **Other Settings**, có thể tùy chọn server Group hoặc không theo nhu cầu sử dụng. Bạn có thể gán Server vào các Group trước đó đã tạo (Với các thuộc tính như cùng Compute Host hay khác Compute Host)
 14. Chọn **Launch Server** và thực hiện các bước thanh toán để hoàn thành việc khởi tạo server
 
-<img src="../../../../../.gitbook/assets/image (21) (2).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (21) (2).png" alt="" data-size="original">
 
 </details>
 
 {% hint style="info" %}
-**Chú ý:**
+**Chú ý:**&#x20;
 
 Security Groups trên Windows server cần mở thêm các port sau để share được dữ liệu:
 
@@ -51,7 +51,7 @@ Dưới đây là hướng dẫn cơ bản cho việc kết nối tới Windows 
 
 <details>
 
-<summary>Kết nối tới Windows server</summary>
+<summary>Kết nối tới Windows server </summary>
 
 **Để có thể kết nối vào máy chủ Window, trước tiên, bạn cần cài đặt RDP:** Theo mặc định, Windows sẽ bao gồm RDP Client. Để xác minh, hãy nhập **mstsc** tại cửa sổ Command Prompt. Nếu máy tính của bạn không nhận ra lệnh này, hãy xem trang chủ Windows và tìm kiếm bản tải xuống cho ứng dụng[ Microsoft Remote Desktop](https://www.microsoft.com/vi-vn/windows).
 
@@ -59,12 +59,12 @@ Dưới đây là hướng dẫn cơ bản cho việc kết nối tới Windows 
 2. Chọn **Server** cần kết nối, sau đó chọn **Action, tiếp tục chọn Connect**
 3. Trên trang **Connect to Server**, chọn tab **RDP (Window)**
 
-<img src="../../../../../.gitbook/assets/image (894) (1).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (894).png" alt="" data-size="original">
 
 4. Chọn **Download RDP File**. Trình duyệt của bạn sẽ nhắc bạn mở hoặc lưu tệp RDP. Khi bạn đã hoàn tất tải xuống tệp, hãy chọn **Done** để quay lại trang máy chủ:
 5. Thực hiện mở tệp tin đã tải xuống để thực hiện remote tới Windows server. Chọn **Connect** để tiếp tục kết nối với máy chủ của bạn
 
-<img src="../../../../../.gitbook/assets/image (895) (1).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (895).png" alt="" data-size="original">
 
 6. Tài khoản quản trị viên được chọn theo mặc định. Bạn cần sao chép và dán mật khẩu mà bạn đã lưu trước đó vào pop-up đăng nhập (Thông tin này lấy từ email), trong đó nhập thông tin **InstanceLogin** vào **Username**, **InstancePassword** vào **Password.**
 7. Chọn **OK.** Do tính chất của chứng chỉ tự ký, bạn có thể nhận được cảnh báo rằng chứng chỉ bảo mật không thể được xác thực. Sử dụng các bước sau để xác minh danh tính của máy tính từ xa hoặc chỉ cần chọn **Yes** (Windows) hoặc **Continue** (Mac OS X) nếu bạn tin cậy chứng chỉ.
@@ -73,11 +73,11 @@ Dưới đây là hướng dẫn cơ bản cho việc kết nối tới Windows 
 
 8. Màn hình sẽ hiển thị đang kết nối đến máy chủ **Window** thành công
 
-<img src="../../../../../.gitbook/assets/image (896) (1).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (896).png" alt="" data-size="original">
 
 </details>
 
-Sau khi bạn đã kết nối được vào Windows server, bạn cần đảm bảo Windows server của bạn đã có địa chỉ IP tĩnh, bạn có thể kiểm tra và cấu hình IP tĩnh theo hướng dẫn sau:
+Sau khi bạn đã kết nối được vào Windows server, bạn cần đảm bảo Windows server của bạn đã có địa chỉ IP tĩnh, bạn có thể kiểm tra và cấu hình IP tĩnh theo hướng dẫn sau:&#x20;
 
 * **Kiểm tra cấu hình mạng của VM bằng cách:**
   * Truy cập **Control Panel > Network & Internet > Network Connections**.
@@ -89,7 +89,7 @@ Sau khi bạn đã kết nối được vào Windows server, bạn cần đảm 
     * **IP Address:** địa chỉ IP tĩnh của VM.
     * **Subnet Mask:** Subnet tương ứng, ví dụ: 255.0.0.0
 
-<figure><img src="../../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -99,7 +99,7 @@ Sau khi bạn đã kết nối được vào Windows server, bạn cần đảm 
 
 **Bước 2:** Chọn mục **File Storage** sau đó chọn **Create a File storage.**
 
-**Bước 3:** Tại màn hình khởi tạo File Storage, bạn cần nhập/ chọn:
+**Bước 3:** Tại màn hình khởi tạo File Storage, bạn cần nhập/ chọn:&#x20;
 
 * **File Storage name:** tên gợi nhớ của file storage. Tên file cần dài từ 5 tới 50 ký tự và có thể bao gồm các ký tự a-z, A-Z, 0-9, '-', '\_'
 * **Description**: nhập mô tả cho file storage.
@@ -107,27 +107,27 @@ Sau khi bạn đã kết nối được vào Windows server, bạn cần đảm 
 * **Protocol:** chọn NFS và version NFS mà bạn mong muốn
 * **Tag:** bạn có thể thêm các tag để đánh dầu file storage theo nhu cầu.
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **File Storage Max quota:** trong bước khởi tạo file storage, bạn cần đặt một giới hạn quota tối đa cho file storage đó. Quota này có ý nghĩa chính là giới hạn dung lượng lưu trữ mà file storage có thể sử dụng, giúp quản lý tài nguyên hiệu quả. <mark style="color:red;">**Mức quota tối thiểu bạn cần chọn là 1 TB và mức quota tối đa chúng tôi cung cấp là 50 TB.**</mark> Nếu bạn có nhu cấu sử dụng nhiều hơn 50 TB cho một file storage, vui lòng liên hệ với chúng tôi.
 * **Network type**: đối với loại file SMB, network type bắt buộc phải là Private. Lúc này, bạn cần chọn **VPC**, **Subnet** mà bạn đã khởi tạo từ vServer Portal.
 
-<figure><img src="../../../../../.gitbook/assets/image (904) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (904).png" alt=""><figcaption></figcaption></figure>
 
 * **Window Authentication: c**ấu hình quyền truy cập thông qua **Basic Authentication**
   * **Basic Authentication:** Nếu Windows server của bạn không có Active Directory hoặc bạn muốn quản lý quyền truy cập đơn giản thông qua username và password, bạn có thể sử dụng Basic authentication, chúng tôi hỗ trợ bạn tạo tối đa 10 tài khoản username/password để truy cập file storage.
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Chọn **Create File Storage.**
 
 **Bước 6:** Sau khi hệ thống khởi tạo xong File Storage SMB, bạn có thể lấy thông tin **File Storage IP Address** tại phần thông tin chi tiết của File Storage và tiếp tục thực hiện các bước bên dưới
 
-<figure><img src="../../../../../.gitbook/assets/image (21) (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-## Map File Storage vừa khởi tạo tới Windows server
+## Map File Storage vừa khởi tạo tới Windows server&#x20;
 
 Trên Windows Server, bạn có thể map file storage SMB thông qua giao diện hoặc dòng lệnh.
 
@@ -140,9 +140,9 @@ Trên Windows Server, bạn có thể map file storage SMB thông qua giao diệ
    2. **Folder**: Nhập đường dẫn SMB share, ví dụ: `\\<File Storage IP Address>\<File Storage Name>`. Ví dụ `\\10.50.3.8\demo-smb`.
    3. Chọn **Finish**, sau khi hoàn tất, bạn có thể kiểm tra trong **File Explorer** để thấy ổ đĩa được map.
 
-<figure><img src="../../../../../.gitbook/assets/image (22) (1) (4).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (23) (1) (4).png" alt="" width="501"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23) (1).png" alt="" width="501"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**

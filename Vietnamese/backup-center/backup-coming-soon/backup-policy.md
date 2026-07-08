@@ -33,7 +33,7 @@ Một backup policy bao gồm các yếu tố sau:
 
 * **Ví dụ người dùng cài đặt bộ policy như hình dưới đây:**
 
-<figure><img src="../../../.gitbook/assets/image (789) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (789).png" alt=""><figcaption></figcaption></figure>
 
 * **Giải thích cách hoạt động:**
 

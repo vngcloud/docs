@@ -30,9 +30,9 @@ Bạn truy cập dịch vụ MemoryStore database và chuyển sang mục Config
 
 Để chỉnh sửa các biến cấu hình:
 
-* Tại màn hình chi tiết của Configuration Group, bạn nhấn vào **Edit parameter.**
+* Tại màn hình chi tiết của Configuration Group, bạn nhấn vào **Edit parameter.**&#x20;
 * Bạn có thể tìm kiếm nhanh các biến trong ô **Search**. Tại biến muốn cấu hình, bạn nhập hoặc chọn giá trị mong muốn.
-* Sau khi nhập hoặc chọn gía trị, bạn có thể nhấn **Save** ngay hoặc nhấn **Preview Changes** để xem trước các thay đổi, nếu đã chắc chắn bạn nhấn **Save** để lưu lại các thay đổi.
+* Sau khi nhập hoặc chọn gía trị, bạn có thể nhấn **Save** ngay hoặc nhấn **Preview Changes** để xem trước các thay đổi, nếu đã chắc chắn bạn nhấn **Save** để lưu lại các thay đổi.&#x20;
 * Để hệ thống thực sự áp dụng các thay đổi, bạn nhấn **Apply Change** để hệ thống áp dụng thay đổi lên tất cả các MDS Instance đang được liên kết với **Configuration Group** này.
 
 Các MDS Instance đang được liên kết hay chuẩn bị được liên kết với Configuration Group này sẽ được áp dụng các giá trị mới này. Bạn quay lại màn hình quản lý Database để xem qúa trình áp dụng cấu hình mới. Nếu quá trình áp dụng thành công, MDS Instance sẽ có trạng thái **Active**.
@@ -50,10 +50,10 @@ Các MDS Instance đang được liên kết hay chuẩn bị được liên k�
 
 Đối với phương án 2, bạn có thể thực hiện như sau:
 
-* Đầu tiên, bạn đến màn hình quản lý Database tại đường dẫn: [https://vdb.console.greennode.ai/memorystore/database](https://vdb.console.greennode.ai/memorystore/database)
+* Đầu tiên, bạn đến màn hình quản lý Database tại đường dẫn:  [https://vdb.console.greennode.ai/memorystore/database](https://vdb.console.greennode.ai/memorystore/database)
 * Chọn đến MDS Instance và nhấn **Edit Configuration Group**.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Tại màn hình thay đổi chọn đến Configuration Group muốn áp dụng.
 * Khi mọi lựa chọn đã chính xác, bạn nhấn vào nút **SAVE** . Bạn chờ một lát để các biến cấu hình được áp dụng xuống MDS Instance và nếu quá trình thay đổi thành công, MDS Instance sẽ có trạng thái **Active**.
@@ -66,4 +66,4 @@ Các MDS Instance đang được liên kết hay chuẩn bị được liên k�
 
 Trường hợp Configuration Group chưa gắn vào MDS Instance nào. Bạn nhấn chọn Action **Delete** **.** Lúc này sẽ hiển thị một cảnh báo để chắc chắn bạn muốn xóa Configuration Group này. Nếu đồng ý xóa bạn nhấn vào nút **Delete**. Bạn chờ một lát để quá trình xóa được thực thi và khi xóa thành công thì Configuration Group này sẽ không hiển thị trên màn hình quản lý Configuration Group. Như vậy bạn đã xóa Configuration Group thành công
 
-Trường hợp Configuration Group đã gắn vào MDS Instance rồi. Bạn cần thực hiện tháo các MDS Instance ra khỏi Configuration Group đó. Sau khi Configuration Group không còn gắn vào MDS Instance nào thì bạn có thể xóa Configuration Group đó như hướng dẫn trên.
+Trường hợp Configuration Group đã gắn vào MDS Instance rồi. Bạn cần thực hiện tháo các MDS Instance ra khỏi Configuration Group đó. Sau khi Configuration Group không còn gắn vào MDS Instance nào thì bạn có thể xóa Configuration Group đó như hướng dẫn trên.&#x20;

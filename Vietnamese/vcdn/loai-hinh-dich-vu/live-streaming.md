@@ -8,7 +8,7 @@ Dịch vụ hỗ trợ phát nội dung trực tiếp như sự kiện, chương
 
 ## Sơ đồ hoạt động
 
-<figure><img src="../../../.gitbook/assets/image (207) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (207).png" alt=""><figcaption></figcaption></figure>
 
 **Cơ Chế Phân Phối Dữ Liệu**
 
@@ -42,7 +42,7 @@ Sử dụng phương pháp [PU](../tong-quan/kien-truc-tong-quan/co-che-phan-pho
 1. Truy cập vào vCDN Portal tại [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
 2. Chọn mục **Live Entrypoint**, sau đó chọn **Create new.**
 
-<figure><img src="../../../.gitbook/assets/image (832) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (832).png" alt=""><figcaption></figcaption></figure>
 
 3. Tiếp tục thực hiện nhập/chọn:
 
@@ -68,9 +68,9 @@ Sử dụng phương pháp [PU](../tong-quan/kien-truc-tong-quan/co-che-phan-pho
 
 4. Chọn **Submit**.
 
-<figure><img src="../../../.gitbook/assets/image (834) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (834).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (158) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (158).png" alt=""><figcaption></figcaption></figure>
 
 ### **Bước 2: Tạo Live Streaming**
 
@@ -79,7 +79,7 @@ Tiếp theo, bạn cần thực hiện khởi tạo một Live Streaming theo h�
 1. Truy cập vào vCDN Portal tại [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
 2. Chọn mục **Live Streaming**, sau đó chọn **Create new.**
 
-<figure><img src="../../../.gitbook/assets/image (837) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (837).png" alt=""><figcaption></figcaption></figure>
 
 3. Tiếp tục thực hiện nhập/ chọn:
 
@@ -89,13 +89,13 @@ Tiếp theo, bạn cần thực hiện khởi tạo một Live Streaming theo h�
     * **CDN Packaging**: Hệ thống sẽ xử lý "đóng gói" (packaging) nội dung trực tiếp trên CDN. Hãy chọn CDN Packaging nếu bạn muốn hệ thống tối ưu thời gian xử lý và giảm tải từ nguồn.
     * **Origin Packaging**: Đóng gói nội dung tại nguồn (Origin), sau đó CDN chỉ truyền tải.
 
-<figure><img src="../../../.gitbook/assets/image (838) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (838).png" alt=""><figcaption></figcaption></figure>
 
 * **CDN Configuration**
   * **Live Entrypoint**: Lựa chọn Live Entrypoint đã tạo từ **bước 1** trước làm nguồn dữ liệu.
   * **Channel:** Định danh của kênh phát live trên hệ thốngs.
 
-<figure><img src="../../../.gitbook/assets/image (839) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (839).png" alt=""><figcaption></figcaption></figure>
 
 * **Security:**
   * **HTTPS (HTTP/2)**: Bật hoặc tắt chế độ bảo mật HTTPS cho luồng CDN. Bạn có thể tạo mới một **Certificate** bằng cách chọn **Add new**.
@@ -103,7 +103,7 @@ Tiếp theo, bạn cần thực hiện khởi tạo một Live Streaming theo h�
   * **Token Configuration**:
     * **Token Type**: Chọn loại token dùng để xác thực người xem. Bạn có thể chọn token type Akamai, SBD hoặc VNG.
 
-<figure><img src="../../../.gitbook/assets/image (840) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (840).png" alt=""><figcaption></figcaption></figure>
 
 * **Access Filter:**
   * **IP Address CIDR**: Giới hạn cho phép/ từ chối truy cập dựa trên địa chỉ IP bằng cách chọn **Allow**/ **Block** và nhập địa chỉ IP hoặc CIDR tương ứng.
@@ -113,12 +113,12 @@ Tiếp theo, bạn cần thực hiện khởi tạo một Live Streaming theo h�
   * **Simple**: Khi chọn Simple, bạn chỉ cần chỉ định các domain cụ thể được phép truy cập thông qua **Allow Origin.**
   * **Advance**: Khi chọn Advance, ngoài việc chỉ định domain cụ thể, bạn cần cấu hình chi tiết hơn về **Allow Header, Allow Method, Expose Header, Allow Credentials** được phép.
 
-<figure><img src="../../../.gitbook/assets/image (841) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (841).png" alt=""><figcaption></figcaption></figure>
 
 * **Caching**
   * **Caching Level**: Xác định mức độ cache của CDN.
 
-<figure><img src="../../../.gitbook/assets/image (842) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (842).png" alt=""><figcaption></figcaption></figure>
 
 * **Page Rules:** Tính năng này giúp khách hàng tối ưu các điều kiện và các tùy chọn để giúp website thể hiện được nhiều mục đích khác nhau. Để tạo Page rules, vui lòng chọn **Create Page Rule**, popup sẽ hiện ra, lúc này bạn cần chọn:
   * **URL pattern:** cần áp dụng pagerule, hỗ trợ kiểu khai báo “\*” đại diện cho một chuỗi nhiều ký tự. Ví dụ: /trang\_landing\_cu.html. Sau khi nhập URL pattern, bạn hãy chọn **Add new rule**. Mỗi Rules khi thỏa điệu kiện đúng URI được request sẽ có thể tùy chọn thực thi một trong các hành động sau:
@@ -128,11 +128,11 @@ Tiếp theo, bạn cần thực hiện khởi tạo một Live Streaming theo h�
     * Deny Access
   * Chọn **Save changes** để lưu thay đổi.
 
-<figure><img src="../../../.gitbook/assets/image (843) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (843).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (844) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (844).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (845) (1).png" alt="" width="349"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (845).png" alt="" width="349"><figcaption></figcaption></figure>
 
 4. Chọn **Submit** để hoàn thành việc tạo Live Stream.
 

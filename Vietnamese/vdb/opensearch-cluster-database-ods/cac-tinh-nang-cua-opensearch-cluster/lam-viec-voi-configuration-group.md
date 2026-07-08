@@ -20,7 +20,7 @@ Nếu bạn muốn tùy chỉnh thông số cấu hình, hãy tạo **một Conf
 
 **Bước 2:** Chọn mục **Configuration group** trên mục **OpenSearch.**
 
-**Bước 3:** Chọn **Create a Configuration group".** Màn hình tạo mới configuration group hiển thị, tại đây bạn cần:
+**Bước 3:** Chọn **Create a Configuration group".** Màn hình tạo mới configuration group hiển thị, tại đây bạn cần:&#x20;
 
 Nhập các thông tin cần thiết:
 
@@ -51,7 +51,7 @@ Sau khi một Configuration Group được tạo, bạn có thể chỉnh sửa 
 
 ### **Gắn Configuration Group vào OpenSearch Cluster**
 
-**Bước 1: Chọn** biểu tượng <img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt="" data-size="line">tại cluster bạn muốn thay đổi configuration group
+**Bước 1: Chọn** biểu tượng <img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">tại cluster bạn muốn thay đổi configuration group
 
 **Bước 2:** Chọn **Edit Configuration group**
 

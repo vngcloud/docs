@@ -12,13 +12,13 @@ Trên hệ thống vStorage, S3 key là cặp key bao gồm access key và secre
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) với tài khoản <mark style="background-color:orange;">Root User Account</mark>.
 2. Chọn **Region HCM04.**
-3. Chọn biểu tượng <img src="../../../../../.gitbook/assets/image (581) (2).png" alt="" data-size="line"> tại project mà bạn vừa khởi tạo sau đó chọn mục **Identity and Access Management.**
+3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (581).png" alt="" data-size="line"> tại project mà bạn vừa khởi tạo sau đó chọn mục **Identity and Access Management.**
 4. Tại mục **List of S3 keys of this project**, chọn **Generate S3 key**.
 5. Chọn **Copy** hoặc **Download** để tải xuống thông tin Access Key/Secret Key mà bạn vừa khởi tạo.
 
-<figure><img src="../../../../../.gitbook/assets/image (18) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (19) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**
@@ -35,13 +35,13 @@ Trên hệ thống vStorage, S3 key là cặp key bao gồm access key và secre
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) với tài khoản <mark style="background-color:orange;">IAM User Account</mark>.
 2. Chọn **Region HCM04.**
-3. Chọn biểu tượng <img src="../../../../../.gitbook/assets/image (581) (2).png" alt="" data-size="line"> tại project mà bạn vừa khởi tạo sau đó chọn mục **Identity and Access Management.**
+3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (581).png" alt="" data-size="line"> tại project mà bạn vừa khởi tạo sau đó chọn mục **Identity and Access Management.**
 4. Tại mục **List of S3 keys of this project**, chọn **Generate S3 key**.
 5. Chọn **Copy** hoặc **Download** để tải xuống thông tin Access Key/Secret Key mà bạn vừa khởi tạo.
 
-<figure><img src="../../../../../.gitbook/assets/image (20) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (21) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Chú ý:**
@@ -63,7 +63,7 @@ Sau khi bạn đã thực hiện khởi tạo project và khởi tạo S3 key th
 1. Tải công cụ người dùng S3 Browser tại đây [https://s3browser.com/download.aspx](https://s3browser.com/download.aspx).
 2. Mở ứng dụng **S3 Browser.** Chọn thư mục **Account, sau đó chọn Add new account**
 
-<figure><img src="../../../../../.gitbook/assets/image (79) (3).png" alt="" width="443"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (79).png" alt="" width="443"><figcaption></figcaption></figure>
 
 3. Màn hình Add New Account hiển thị, lúc này bạn nhập các thông tin như sau:
 
@@ -75,11 +75,11 @@ Sau khi bạn đã thực hiện khởi tạo project và khởi tạo S3 key th
 4. Chọn option **Use Secure transfer (SSL/TLS)** vì vStorage chỉ hỗ trợ kênh truyền đã được mã hoá (HTTPS, port 443) để đảm bảo an toàn dữ liệu, vStorage hiện tại không hỗ trợ kênh truyền không mã hoá (HTTP, port 80).
 5. Chọn **Add new account.**
 
-<figure><img src="../../../../../.gitbook/assets/image (587) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (587).png" alt=""><figcaption></figcaption></figure>
 
 6. Khi kết nối thành công, màn hình S3 Browser sẽ hiển thị như sau:
 
-<figure><img src="../../../../../.gitbook/assets/image (588) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (588).png" alt=""><figcaption></figcaption></figure>
 
 ### Sử dụng 3rd party softwares để thực hiện các tính năng trên vStorage
 
@@ -99,7 +99,7 @@ Bên dưới là hướng dẫn cho một số use case thông thường bạn c
 
 * Bạn cũng có thể tạo/ xóa folder bằng cách chọn **New Folder** hoặc **Delete**.
 
-<figure><img src="../../../../../.gitbook/assets/image (589) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (589).png" alt=""><figcaption></figcaption></figure>
 
 #### Các usecase nâng cao
 
@@ -111,7 +111,7 @@ Tiếp theo đây là các hướng dẫn cho các tính năng nâng cao bạn c
 
 Để thiết lập ACL cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn Edit Permission (ACL) . Trong phần permission, hãy check chọn quyền hạn bạn mong muốn cấp cho người dùng. Chi tiết tham khảo thêm tại [https://s3browser.com/share-s3-bucket-edit-acls.aspx](https://s3browser.com/share-s3-bucket-edit-acls.aspx)
 
-<figure><img src="../../../../../.gitbook/assets/image (590) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (590).png" alt=""><figcaption></figcaption></figure>
 
 **SSE-S3**
 
@@ -127,11 +127,11 @@ SSE-S3 (Server-Side Encryption with S3 Managed Keys) là tính năng mã hóa d�
 
 Để thiết lập Object Locked cho một bucket bằng S3 Browser, khi khởi tạo một bucket mới, bạn cần chọn phương án **Enable S3 Objected Lock.**
 
-<figure><img src="../../../../../.gitbook/assets/image (623) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (623).png" alt=""><figcaption></figcaption></figure>
 
 Tiếp theo, khi bucket được tạo thành công, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Object Locked**. Bạn có thể thiết lập object locked ở cả 2 mode **Retention** và **Legal Hold** thông qua S3 Browser. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-object-lock.aspx](https://s3browser.com/amazon-s3-object-lock.aspx)
 
-<figure><img src="../../../../../.gitbook/assets/image (114) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
 
 **Versioning**
 
@@ -139,7 +139,7 @@ Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá
 
 Để thiết lập Versioning cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Edit Versioning Settings**. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-versioning.aspx](https://s3browser.com/amazon-s3-versioning.aspx)
 
-<figure><img src="../../../../../.gitbook/assets/image (125) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
 
 **Lifecycle rotation**
 
@@ -147,7 +147,7 @@ Versioning là một tính năng hỗ trợ lưu trữ nhiều phiên bản quá
 
 Để thiết lập Lifecycle rotation cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Lifecycle Configuration**. Chi tiết tham khảo thêm tại [https://s3browser.com/bucket-lifecycle-configuration.aspx](https://s3browser.com/bucket-lifecycle-configuration.aspx)
 
-<figure><img src="../../../../../.gitbook/assets/image (595) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (595).png" alt=""><figcaption></figcaption></figure>
 
 **Lifecycle transit**
 
@@ -159,7 +159,7 @@ CORS (Cross-Origin Resource Sharing) là cơ chế bảo mật cho phép các tr
 
 Để thiết lập CORS cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **CORS Configuration**. Chi tiết tham khảo thêm tại [https://s3browser.com/s3-bucket-cors-configuration.aspx](https://s3browser.com/s3-bucket-cors-configuration.aspx)
 
-<figure><img src="../../../../../.gitbook/assets/image (596) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (596).png" alt=""><figcaption></figcaption></figure>
 
 **Public/ Private bucket**
 
@@ -167,7 +167,7 @@ CORS (Cross-Origin Resource Sharing) là cơ chế bảo mật cho phép các tr
 
 Để thiết lập chế độ công khai cho một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Public Access block Configuration**. Chi tiết tham khảo thêm tại [https://s3browser.com/amazon-s3-public-access-block-configuration.aspx](https://s3browser.com/amazon-s3-public-access-block-configuration.aspx)
 
-<figure><img src="../../../../../.gitbook/assets/image (597) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (597).png" alt=""><figcaption></figcaption></figure>
 
 **Bucket policy**
 
@@ -175,7 +175,7 @@ CORS (Cross-Origin Resource Sharing) là cơ chế bảo mật cho phép các tr
 
 Để thiết lập policy một bucket bằng S3 Browser, bạn hãy nhấn chuột phải vào bucket, sau đó chọn **Edit Bucket Policy**. Chi tiết tham khảo thêm tại [https://s3browser.com/working-with-amazon-s3-bucket-policies.aspx?v=11.7.5\&fam=x64#amazon-s3-bucket-policies-examples](https://s3browser.com/working-with-amazon-s3-bucket-policies.aspx?v=11.7.5\&fam=x64#amazon-s3-bucket-policies-examples)
 
-<figure><img src="../../../../../.gitbook/assets/image (598) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (598).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -185,9 +185,9 @@ CORS (Cross-Origin Resource Sharing) là cơ chế bảo mật cho phép các tr
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) với tài khoản <mark style="background-color:orange;">Root User Account</mark> hoặc tài khoản <mark style="background-color:orange;">IAM User Account</mark>.
 2. họn **Region HCM04.**
-3. Chọn biểu tượng <img src="../../../../../.gitbook/assets/image (581) (2).png" alt="" data-size="line"> tại project mà bạn vừa khởi tạo sau đó chọn mục **Identity and Access Management.**
+3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (581).png" alt="" data-size="line"> tại project mà bạn vừa khởi tạo sau đó chọn mục **Identity and Access Management.**
 4. Tại mục **List of S3 keys of this project**, chọn **S3 key** mà bạn muốn xóa sau đó chọn **Delete.**
 
 Kể từ thời điểm S3 key bị hủy thành công, bạn sẽ không thể sử dụng S3 key này để truy xuất vào vStorage. Hãy thận trọng khi thực hiện thao tác hủy (xóa) tài khoản S3 bởi bạn sẽ không thể khôi phục tài khoản đã xóa này.
 
-<figure><img src="../../../../../.gitbook/assets/xoa_s3key.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/xoa_s3key.png" alt=""><figcaption></figcaption></figure>

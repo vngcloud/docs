@@ -1,6 +1,6 @@
 # Khởi tạo tài khoản Service Account
 
-Để khởi tạo tài khoản Service Account, hãy làm theo các bước bên dưới:
+Để khởi tạo tài khoản Service Account, hãy làm theo các bước bên dưới:&#x20;
 
 1. Đăng nhập vào [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/) với tài khoản Root User Account.
 2. Chọn mục **Service Account**.
@@ -17,4 +17,4 @@
 
 Sau khi bạn thực hiện 10 bước bên trên, một tài khoản Service Account đã được khởi tạo.
 
-<figure><img src="../../../../../../../.gitbook/assets/Khoi_tao_Service_Account (1).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Khoi_tao_Service_Account.gif" alt=""><figcaption></figcaption></figure>

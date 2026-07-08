@@ -4,7 +4,7 @@ Flavor là một cấu hình tài nguyên phần cứng dành cho Server cụ th
 
 GreenNode cung cấp các Flavor phù hợp với đa dạng nhu cầu để người dùng có thể lựa chọn. Phần đầu tiên trong tên gọi của Flavor quy định loại hạ tầng cho Server, ví dụ s1 là hạ tầng CPU Intel Scalable, a1 là hạ tầng CPU AMD EPYC. Phần thứ 2 là mô tả tỷ lệ tài nguyên như Standard, HighCPU, HighMem. Phần cuối cùng là kích thước của Server, thể hiện số lượng vCPU, RAM (đơn vị GB) sẽ được cấp cho Server.
 
-<figure><img src="../../../../.gitbook/assets/image (914).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (914).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/49647880/download.png?version=1&#x26;modificationDate=1668406683000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 

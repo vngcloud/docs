@@ -1,6 +1,6 @@
 # Tích hợp công cụ S3cmd với vStorage
 
-Để xem hướng dẫn tích hợp công cụ S3cmd với vStorage, bạn có thể thực hiện qua vStorage Portal theo hướng dẫn bên dưới:
+Để xem hướng dẫn tích hợp công cụ S3cmd với vStorage, bạn có thể thực hiện qua vStorage Portal theo hướng dẫn bên dưới:&#x20;
 
 1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn thư mục **Tích hợp.**
@@ -13,7 +13,7 @@
 5. Sau khi hoàn tất chọn cấu hình **Cấp quyền**, chọn **Cấu hình S3cmd** để chuyển tới màn hình **Cấu hình**. Bạn luôn có thể quay lại đây để thay đổi thông tin **Cấp quyền** của mình, sau đó chọn lại **Cấu hình S3cmd** để cập nhật cách sử dụng theo thông số mới của bạn. Bạn có thể xem hướng dẫn cách cài đặt, cấu hình S3cmd ngay trên màn hình này. Chi tiết tham khảo thêm tại: [Tích hợp vStorage.](https://vstorage.console.greennode.ai/integration/integration)
 6. Chọn **Tải tập tin cấu hình.**
 
-#### **Nếu bạn sử dụng hệ điều hành Windows, tiếp tục thực hiện theo các bước bên dưới để hoàn thành việc tích hợp S3cmd với vStorage:** <a href="#tichhopcongcus3cmdvoivstorage-neubansudunghedieuhanhwindows-tieptucthuchientheocacbuocbenduoidehoant" id="tichhopcongcus3cmdvoivstorage-neubansudunghedieuhanhwindows-tieptucthuchientheocacbuocbenduoidehoant"></a>
+#### **Nếu bạn sử dụng hệ điều hành Windows, tiếp tục thực hiện theo các bước bên dưới để hoàn thành việc tích hợp S3cmd với vStorage:**  <a href="#tichhopcongcus3cmdvoivstorage-neubansudunghedieuhanhwindows-tieptucthuchientheocacbuocbenduoidehoant" id="tichhopcongcus3cmdvoivstorage-neubansudunghedieuhanhwindows-tieptucthuchientheocacbuocbenduoidehoant"></a>
 
 1. Lưu tệp tin cấu hình **s3cnf.s3cfg** tải về vào thư mục **C:\Users\\\[User]\AppData\Roaming.**
 2. Đổi tên tệp tin từ **s3cnf.s3cfg** thành **s3cmd.ini**
@@ -24,4 +24,4 @@
 7. Trong **Command Prompt**, thực hiện **trỏ** tới thư mục **s3cmd** vừa **extract**. Cú pháp trỏ thư mục như sau: cd <đường dẫn tới thư mục s3cmd>
 8. Lúc này, bạn đã có thể sử dụng các cú pháp để lấy **danh sách container, tải lên object**, cũng như thực hiện các thao tác khác tại [3rd party softwares](../).
 
-<figure><img src="../../../../../../.gitbook/assets/Tich_hop_s3cmd (1).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Tich_hop_s3cmd.gif" alt=""><figcaption></figcaption></figure>

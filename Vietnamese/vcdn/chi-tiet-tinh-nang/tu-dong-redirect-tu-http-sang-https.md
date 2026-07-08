@@ -8,9 +8,9 @@ Tính năng **Tự động Redirect từ HTTP sang HTTPS** là một giải phá
 
 Khi khởi tạo một Web Accelerator, bạn có thể cấu hình tự động Redirect từ HTTP qua HTTPS thông qua:
 
-<figure><img src="../../../.gitbook/assets/image (17) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Trong đó:
+Trong đó:&#x20;
 
 * **Always Use HTTPS:** Khi bật tùy chọn này, end-user truy cập vào website với giao thức HTTP sẽ được tự động chuyển hướng qua HTTPS.
 * **Automatic HTTPS Rewrites**: Hỗ trợ đổi các link HTTP sang HTTPS trong source cod&#x65;**:** Hệ thống sẽ tự động nhận diện các nguồn http trong source code để chuyển thành HTTPS trước khi chuyển dữ liệu đến người dùng. Khách hàng có thể tùy chọn tính năng này khi khởi tạo CDN hoặc khi chỉnh sửa CDN đã tạo.

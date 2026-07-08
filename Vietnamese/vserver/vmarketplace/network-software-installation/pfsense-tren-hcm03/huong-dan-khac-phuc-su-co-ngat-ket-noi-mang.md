@@ -28,7 +28,7 @@ Lỗi khởi động lại bộ định tuyến có thể xảy ra do nhiều ng
 
 * **Bước 1: Truy cập vào giao diện quản lý của pfsense, chọn tab interfaces và cấu hình lần lượt cho mạng WAN và LAN**
 
-<figure><img src="../../../../../.gitbook/assets/image (684) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (684).png" alt=""><figcaption></figcaption></figure>
 
 *   **Bước 2: Cấu hình mạng WAN**
 
@@ -37,7 +37,7 @@ Lỗi khởi động lại bộ định tuyến có thể xảy ra do nhiều ng
     * Tiếp theo, chọn _**Add new gateway**_ với IP gateway tùy thuộc vào IP public lúc khởi tạo **(4)**
     * Cuối cùng, nhấn _**Save**_ để lưu lại cấu hình vừa chọn **(5)**<br>
 
-    <figure><img src="../../../../../.gitbook/assets/59804344 (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/59804344.png" alt=""><figcaption></figcaption></figure>
 * **Bước 3: Cấu hình mạng LAN** (Tương tự cấu hình mạng WAN)
   * Tại mục _**General Configuration**_: ở thuộc tính **IPv4 Configuration Type**, chọn "Static IPv4" **(1)**
   * Tại mục _**Static IPv4 Configuration**_: ở thuộc tính _**IPv4 Address**_, nhập IP private của server pfsense (thông tin xem tại website vServer) với subnet /24 **(2 và 3)**
