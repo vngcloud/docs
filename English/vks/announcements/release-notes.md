@@ -1,5 +1,16 @@
 # Release notes
 
+## Jul 13, 2026 <a href="#jul_13_2026" id="jul_13_2026"></a>
+
+VKS (VNG Kubernetes Engine) has just released a new update with the following improvements:
+
+**New features:**
+
+* **GreenNode CLI for VKS:** Manage the full lifecycle of **Clusters** and **Node Groups** directly from your terminal with the `grn` command — ideal for fast, repeatable operations and automation scripts.
+  * See [Manage VKS with the GreenNode CLI](../getting-started/manage-vks-with-the-greennode-cli.md) for details.
+
+***
+
 ## Jun 29, 2026 <a href="#jun_29_2026" id="jun_29_2026"></a>
 
 VKS (VNG Kubernetes Engine) has just released a new update with the following improvements:

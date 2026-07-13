@@ -1,5 +1,16 @@
 # Release notes
 
+## Jul 13, 2026 <a href="#jul_13_2026" id="jul_13_2026"></a>
+
+VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới với các cải tiến sau:
+
+**Tính năng mới:**
+
+* **GreenNode CLI cho VKS:** Quản lý toàn bộ vòng đời **Cluster** và **Node Group** trực tiếp từ terminal bằng lệnh `grn` — phù hợp cho thao tác nhanh, lặp lại hoặc viết script tự động hoá.
+  * Hướng dẫn chi tiết tại [Sử dụng GreenNode CLI để quản lý VKS](../getting-started/su-dung-greennode-cli-de-quan-ly-vks.md).
+
+***
+
 ## Jun 29, 2026 <a href="#jun_29_2026" id="jun_29_2026"></a>
 
 VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới với các cải tiến sau:
