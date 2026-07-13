@@ -733,6 +733,7 @@
     * [Khởi tạo một Cluster thông qua ví POC](vks/getting-started/khoi-tao-mot-cluster-thong-qua-vi-poc.md)
     * [Sử dụng API để khởi tạo Cluster và Node Group](vks/getting-started/su-dung-api-de-khoi-tao-cluster-va-node-group.md)
     * [Sử dụng Terraform để khởi tạo Cluster và Node Group](vks/getting-started/su-dung-terraform-de-khoi-tao-cluster-va-node-group.md)
+    * [Sử dụng GreenNode CLI để quản lý VKS](vks/getting-started/su-dung-greennode-cli-de-quan-ly-vks.md)
   * [Clusters](vks/clusters/README.md)
     * [Public Cluster và Private Cluster](vks/clusters/public-cluster-and-private-cluster.md)
     * [Multi-AZ Control Plane](vks/clusters/multi-az-control-plane.md)
