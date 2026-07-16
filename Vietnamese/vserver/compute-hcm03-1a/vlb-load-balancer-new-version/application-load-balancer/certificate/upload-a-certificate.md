@@ -9,7 +9,7 @@ Trình quản lý Certificate hỗ trợ tải lên và quản lý hai loại Ce
 
 ### 1. Hướng dẫn tải lên TLS/SSL Certificate <a href="#uploadacertificate-1.huongdantailentls-sslcertificate" id="uploadacertificate-1.huongdantailentls-sslcertificate"></a>
 
-* **Truy cập trình quản lý Certificate theo đường dẫn:** [**https://hcm-3.console.vngcloud.vn/vserver/load-balancer/certificate**](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/certificate)
+* **Truy cập trình quản lý Certificate theo đường dẫn:** [**https://hcm-3.console.greennode.ai/vserver/load-balancer/certificate**](https://hcm-3.console.greennode.ai/vserver/load-balancer/certificate)
 * **Nhấn nút "Tải lên Certificate / Upload Certificate"**
 * **Một cửa sổ giao diện bật lên cho phép bạn điền thông tin Certificate, bao gồm**
   * **Tên gợi nhớ**: Khuyến khích sử dụng tên miền làm tên gợi nhớ
@@ -38,7 +38,7 @@ Trình quản lý Certificate hỗ trợ tải lên và quản lý hai loại Ce
 
 ### 2. Hướng dẫn tải lên CA Certificate
 
-* **Truy cập trình quản lý Certificate theo đường dẫn:** [**https://hcm-3.console.vngcloud.vn/vserver/load-balancer/certificate**](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/certificate)
+* **Truy cập trình quản lý Certificate theo đường dẫn:** [**https://hcm-3.console.greennode.ai/vserver/load-balancer/certificate**](https://hcm-3.console.greennode.ai/vserver/load-balancer/certificate)
 * **Nhấn nút "Tải lên Certificate / Upload Certificate"**
 * **Một cửa sổ giao diện bật lên cho phép bạn điền thông tin Certificate, bao gồm**
   * **Tên gợi nhớ**: Khuyến khích sử dụng tên miền làm tên gợi nhớ

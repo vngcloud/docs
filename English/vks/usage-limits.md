@@ -6,7 +6,7 @@
 
 ## Prerequisites
 
-* A VNG Cloud account with access to [GreenNode Portal](https://console.vngcloud.vn).
+* A VNG Cloud account with access to [GreenNode Portal](https://console.greennode.ai).
 
 ***
 
@@ -19,7 +19,7 @@
 
 **Step 2: Review current usage**
 
-<figure><img src="../.gitbook/assets/rate-limit.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/rate-limit (1).png" alt=""><figcaption></figcaption></figure>
 
 The **CURRENT USAGE** section shows:
 
@@ -51,7 +51,7 @@ If the current limits do not meet your needs, you can request an increase:
 **Step 1: Open the request form**
 
 1. On the **Usage & Limits** page, click the **Request limit increase** button in the top-right corner.
-2. Your browser will open the GreenNode support portal at [https://helpdesk.vngcloud.vn/portal/en/home](https://helpdesk.vngcloud.vn/portal/en/home).
+2. Your browser will open the GreenNode support portal at [https://helpdesk.greennode.ai/portal/en/home](https://helpdesk.greennode.ai/portal/en/home).
 
 **Step 2: Submit the request**
 
@@ -68,8 +68,8 @@ After completing these steps, you can:
 * Monitor usage to avoid hitting limits when scaling your system.
 * Proactively request higher limits before deploying large workloads.
 
-| I want to...                      | Go to                                                             |
-| --------------------------------- | ----------------------------------------------------------------- |
-| Create my first cluster           | [Getting Started with VKS](getting-started/)                      |
-| View full vServer resource limits | [vServer Limits](https://hcm-3.console.vngcloud.vn/vserver/limit) |
-| Contact support                   | [GreenNode Helpdesk](https://helpdesk.vngcloud.vn/portal/en/home) |
+| I want to...                      | Go to                                                              |
+| --------------------------------- | ------------------------------------------------------------------ |
+| Create my first cluster           | [Getting Started with VKS](getting-started/)                       |
+| View full vServer resource limits | [vServer Limits](https://hcm-3.console.greennode.ai/vserver/limit) |
+| Contact support                   | [GreenNode Helpdesk](https://helpdesk.greennode.ai/portal/en/home) |

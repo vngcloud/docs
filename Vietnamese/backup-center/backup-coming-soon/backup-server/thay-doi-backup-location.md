@@ -12,7 +12,7 @@ Nếu đã có backup location sẵn sàng cho việc lưu trữ backup point, l
 
 Đầu tiên, bạn cần truy cập vào trang backup server để chọn các backup server cần thay đổi vị trí lưu trữ
 
-* Truy cập trang backup server tại đây: [https://backupcenter.console.vngcloud.vn/backup-server/list](https://backupcenter.console.vngcloud.vn/backup-server/list)
+* Truy cập trang backup server tại đây: [https://backupcenter.console.greennode.ai/backup-server/list](https://backupcenter.console.greennode.ai/backup-server/list)
 *   Tìm và **chọn các backup server** cần cập nhật vị trí lưu trữ, sau đó nhấn chọn **Change location**
 
     <figure><img src="../../../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
@@ -28,7 +28,7 @@ Sau khi chọn **Change Location**, một giao diện sẽ hiển thị cho phé
 
 ## 3. Lưu backup server point tại nơi lưu trữ mới
 
-Sau khi hoàn tất thay đổi, bạn có thể vào trang [backup server](https://backupcenter.console.vngcloud.vn/backup-server/list) để xem backup location mới được ghi nhận lại. Lưu ý rằng:
+Sau khi hoàn tất thay đổi, bạn có thể vào trang [backup server](https://backupcenter.console.greennode.ai/backup-server/list) để xem backup location mới được ghi nhận lại. Lưu ý rằng:
 
 * **Lịch chạy backup** và **retention rules** vẫn theo backup policy, chỉ khác là các backup server point mới được tạo ra, sẽ được lưu trữ tại backup location mới.
 * Các **backup server point được lưu trữ tại backup location** trước đó không có gì thay đổi, người dùng vẫn có thể truy cập khi cần thiết.

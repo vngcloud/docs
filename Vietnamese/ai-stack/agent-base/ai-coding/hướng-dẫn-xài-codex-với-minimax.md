@@ -6,7 +6,7 @@
 
 ## Điều kiện cần (Prerequisites)
 
-* Đã có tài khoản [AI Platform](https://aiplatform.console.vngcloud.vn/)
+* Đã có tài khoản [AI Platform](https://aiplatform.console.greennode.ai/)
 * Đã tạo API key (token `vn-...`) với status **ACTIVE**
 * Node.js ≥ 22 đã cài đặt
 
@@ -28,7 +28,7 @@ codex --version
 
 ## Bước 2 — Lấy API key từ AI Platform
 
-1. Đăng nhập [AI Platform Console](https://aiplatform.console.vngcloud.vn/)
+1. Đăng nhập [AI Platform Console](https://aiplatform.console.greennode.ai/)
 2. Vào **API Keys** → **Create API Key**
 3. Đặt tên key (5–50 ký tự, chữ thường + số + gạch ngang)
 4. Copy API key (`vn-...`) vừa tạo
@@ -127,10 +127,10 @@ directory: ~/your-project
 
 ## Kết quả
 
-Sau khi hoàn thành, Codex CLI route toàn bộ request qua GreenNode MaaS với model Minimax. Usage được ghi nhận trên [AI Platform Console → Usage](https://aiplatform.console.vngcloud.vn/).
+Sau khi hoàn thành, Codex CLI route toàn bộ request qua GreenNode MaaS với model Minimax. Usage được ghi nhận trên [AI Platform Console → Usage](https://aiplatform.console.greennode.ai/).
 
 | Tôi muốn tiếp theo...          | Đi đến                                                                                |
 | ------------------------------ | ------------------------------------------------------------------------------------- |
 | Dùng OpenCode với MaaS         | [Dùng OpenCode với GreenNode MaaS](opencode-with-maas-model.md)                      |
 | Kết nối Claude Code với MaaS   | [Kết nối Claude Code với GreenNode MaaS](ket-noi-claude-code-voi-maas.md)            |
-| Xem usage và billing           | [AI Platform Console](https://aiplatform.console.vngcloud.vn/)                        |
+| Xem usage và billing           | [AI Platform Console](https://aiplatform.console.greennode.ai/)                        |

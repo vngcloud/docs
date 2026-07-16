@@ -4,7 +4,7 @@
 
 **Quy trình cơ bản**: Xác thực -> Tạo project ->Tạo container -> Upload Object
 
-Chi tiết danh sách vStorage API được chúng tôi mô tả tại [https://docs.api.vngcloud.vn/service-docs/vstorage-api.html#tag/containers](https://docs.api.vngcloud.vn/service-docs/vstorage-api.html#tag/containers).
+Chi tiết danh sách vStorage API được chúng tôi mô tả tại [https://docs.api.greennode.ai/service-docs/vstorage-api.html#tag/containers](https://docs.api.greennode.ai/service-docs/vstorage-api.html#tag/containers).
 
 Bên dưới là ví dụ với vStorage API tạo mới một container trên một project:
 

@@ -21,7 +21,7 @@ Khi thực hiện gia hạn tài nguyên, mặc định thời gian bắt đầu
 * **Bước 3: Kiểm tra thông tin tài nguyên và thông tin thanh toán**
   * 3.1 Kiểm tra thông tin tài nguyên tại trang sản phẩm
   * 3.2 Kiểm tra **thông tin thanh toán, hóa đơn tại**
-    * **User Portal:** [**https://dashboard.console.vngcloud.vn/**](https://dashboard.console.vngcloud.vn/)
+    * **User Portal:** [**https://dashboard.console.greennode.ai/**](https://dashboard.console.greennode.ai/)
 * **Bước 4: Hệ thống thực hiện**
   * Email thông báo thông tin tài nguyên vừa được gia hạn
   * Phát sinh hóa đơn mới tương ứng với thời gian sử dụng tài nguyên

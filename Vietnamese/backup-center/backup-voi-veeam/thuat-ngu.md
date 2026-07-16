@@ -2,7 +2,7 @@
 
 ## Tổng quan
 
-Trong bài viết giới thiệu và hướng dẫn sử dụng dịch vụ, có những thuật ngữ mà nhà cung cấp phần mềm Veeam đưa ra, có thể bạn sẽ chưa rõ lắm ngữ cảnh khi sử dụng những thuật ngữ này. Để hiểu rõ hơn những thuật ngữ đó, bạn có thể tham khảo Danh sách thuật ngữ bên dưới, hoặc nếu có bất cứ thắc mắc nào khác bạn cứ liên hệ gửi ticket trên [https://helpdesk.vngcloud.vn/](https://helpdesk.vngcloud.vn/portal/en/home) hoặc gửi email về [support@vngcloud.vn](mailto:support@vngcloud.vn) để được hỗ trợ giải đáp các thuật ngữ.
+Trong bài viết giới thiệu và hướng dẫn sử dụng dịch vụ, có những thuật ngữ mà nhà cung cấp phần mềm Veeam đưa ra, có thể bạn sẽ chưa rõ lắm ngữ cảnh khi sử dụng những thuật ngữ này. Để hiểu rõ hơn những thuật ngữ đó, bạn có thể tham khảo Danh sách thuật ngữ bên dưới, hoặc nếu có bất cứ thắc mắc nào khác bạn cứ liên hệ gửi ticket trên [https://helpdesk.greennode.ai/](https://helpdesk.greennode.ai/portal/en/home) hoặc gửi email về [support@greennode.ai](mailto:support@greennode.ai) để được hỗ trợ giải đáp các thuật ngữ.
 
 ## Danh sách thuật ngữ
 

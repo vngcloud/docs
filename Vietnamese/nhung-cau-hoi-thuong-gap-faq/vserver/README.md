@@ -70,7 +70,7 @@ Nếu Server hết hạn, trên giao diện trang chủ sẽ có trạng thái E
 
 ### \[vServer] Tôi muốn Reset Pass của server ?
 
-Bạn không thể tự reset password cho Server của mình. Để tiến hành reset password cho Server, vui lòng gởi request tại trang [Hỗ trợ ](https://helpdesk.vngcloud.vn/)của chúng tôi.&#x20;
+Bạn không thể tự reset password cho Server của mình. Để tiến hành reset password cho Server, vui lòng gởi request tại trang [Hỗ trợ ](https://helpdesk.greennode.ai/)của chúng tôi.&#x20;
 
 ### \[vServer] Tôi không allow được 1 số port trên Webmin Vserver ?
 
@@ -102,7 +102,7 @@ Khi khởi tạo Server đã disable user admin .Nếu Bạn muốn sử dụng 
 
 ### \[vServer] Khi tạo Image để backup thì sau khi tạo xong , quản lí Image nằm ở đâu?
 
-Để xem thông tin Image đã tạo, bạn vui lòng truy cập vào [Trang Image](https://hcm-3.console.vngcloud.vn/vserver/block-store/images).
+Để xem thông tin Image đã tạo, bạn vui lòng truy cập vào [Trang Image](https://hcm-3.console.greennode.ai/vserver/block-store/images).
 
 ### \[vServer] Sao không \[connect] được đến các \[port] đang listen trên VPS được
 
@@ -138,7 +138,7 @@ Bạn vui lòng tạo ticket cần hỗ trợ tăng quota và nội dung cần t
 
 ### \[vServer] Hỗ trợ xem ram, cpu, network
 
-Hiện tại GreenNode có dịch vụ vMonitor đang ở bản beta dùng thử miễn phí có thể monitor các thông số đó. Bạn có thể truy cập vào [trang chủ vServer](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), và xem thông số Ram, Cpu, Network tại trang chi tiết Server/ Tab Monitor hoặc có thể xem trực tiếp [trang chủ vMonitor](https://hcm-3.console.vngcloud.vn/vmonitor/dashboard).
+Hiện tại GreenNode có dịch vụ vMonitor đang ở bản beta dùng thử miễn phí có thể monitor các thông số đó. Bạn có thể truy cập vào [trang chủ vServer](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server), và xem thông số Ram, Cpu, Network tại trang chi tiết Server/ Tab Monitor hoặc có thể xem trực tiếp [trang chủ vMonitor](https://hcm-3.console.greennode.ai/vmonitor/dashboard).
 
 ### \[vServer] Tôi muốn giữ wanip cũ để cho server mới thì phải làm như thế nào?
 
@@ -146,7 +146,7 @@ Wan IP khi xóa đi sẽ không thể lấy lại được. Nếu Bạn muốn g
 
 ### \[vServer] vServer có giới hạn băng thông (bandwidth, lưu lượng) không? Sử dụng quá băng thông có hiện tượng gì không?
 
-Hiện tại chúng tôi đang giới hạn băng thông ở mức 100mbps, nếu bạn muốn nâng lên thì vui lòng liên hệ nhân viên kinh doanh hoặc gởi yêu cầu tại trang [Hỗ trợ ](https://helpdesk.vngcloud.vn/)để chúng tôi có thể hỗ trợ bạn tăng bandwidth, lưu ý rằng việc tăng Bandwidth sẽ tốn thêm chi phí của bạn.
+Hiện tại chúng tôi đang giới hạn băng thông ở mức 100mbps, nếu bạn muốn nâng lên thì vui lòng liên hệ nhân viên kinh doanh hoặc gởi yêu cầu tại trang [Hỗ trợ ](https://helpdesk.greennode.ai/)để chúng tôi có thể hỗ trợ bạn tăng bandwidth, lưu ý rằng việc tăng Bandwidth sẽ tốn thêm chi phí của bạn.
 
 ### \[vServer] Tôi muốn tăng quota security policy được không?
 
@@ -183,7 +183,7 @@ Số lượng user tối đa có thể truy cập cùng lúc vào websi
 
 ### \[vServer] Tại sao tôi không xóa được Certificate và Key cũ, giờ tôi muốn dùng Certificate và Key mới thì làm thế nào ?
 
-Hiện tại chúng tôi không hỗ trợ xóa Certificate, Key cũ trên Load balancer. Nếu bạn muốn dùng Certificate, Key mới xin vui lòng thực hiện tải lên Certificate mới tại [Trang chủ Certificate](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/certificate) (Không trùng name Certificate, Key cũ), sau đó vào [Trang chủ Load balancer ](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)để update lại Certificate mới tại trang chi tiết LB.
+Hiện tại chúng tôi không hỗ trợ xóa Certificate, Key cũ trên Load balancer. Nếu bạn muốn dùng Certificate, Key mới xin vui lòng thực hiện tải lên Certificate mới tại [Trang chủ Certificate](https://hcm-3.console.greennode.ai/vserver/load-balancer/certificate) (Không trùng name Certificate, Key cũ), sau đó vào [Trang chủ Load balancer ](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)để update lại Certificate mới tại trang chi tiết LB.
 
 ### \[vServer] Tại sao tôi không telnet được port XYZ ? Mặc dù tôi đã allow firewall, ACL trên policy group và check status Port XYZ đã listen.
 
@@ -207,7 +207,7 @@ Bạn vui lòng vào Group Default add lại các rule Ingress và Egress defaul
 
 ### \[vServer] "vServer: Tôi không tạo thêm được security group? "
 
-Mặc định 1 user chỉ được phép tạo tối đa 10 security group. Nếu bạn có nhu cầu tạo thêm vui lòng liên hệ bộ phận hỗ trợ kĩ thuật hoặc gửi mail vào [https://helpdesk.vngcloud.vn/](https://helpdesk.vngcloud.vn/) để được hỗ trợ, tuy nhiên tối đa là 20 sercurity group.
+Mặc định 1 user chỉ được phép tạo tối đa 10 security group. Nếu bạn có nhu cầu tạo thêm vui lòng liên hệ bộ phận hỗ trợ kĩ thuật hoặc gửi mail vào [https://helpdesk.greennode.ai/](https://helpdesk.greennode.ai/) để được hỗ trợ, tuy nhiên tối đa là 20 sercurity group.
 
 ### \[vServer] Tại sao giao diện console khi đăng nhập cứ báo lỗi no map for 231?
 
@@ -284,4 +284,4 @@ Hiện tại GreenNode không hỗ trợ tách server sang portal khác
 
 ### \[vServer] Tại sao tôi lỡ chuyển nhầm farm thì báo lỗi không thể truy cập vào server nữa?
 
-Bạn có thể thử truy cập lại Server. Trường hợp vẫn báo lỗi, vui lòng gởi yêu cầu báo lỗi cho chúng tôi tại trang [Hỗ trợ](https://helpdesk.vngcloud.vn/).
+Bạn có thể thử truy cập lại Server. Trường hợp vẫn báo lỗi, vui lòng gởi yêu cầu báo lỗi cho chúng tôi tại trang [Hỗ trợ](https://helpdesk.greennode.ai/).

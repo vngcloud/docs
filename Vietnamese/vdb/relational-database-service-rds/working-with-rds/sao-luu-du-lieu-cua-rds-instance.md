@@ -7,7 +7,7 @@ GreenNode vDB hỗ trợ hai cách sao lưu (backup) dữ liệu là: theo nhu c
 
 ### A. Sao lưu theo nhu cầu (On-demand backup hoặc Manual backup) <a href="#saoluudulieucuardsinstance-a.saoluutheonhucau-on-demandbackuphoacmanualbackup" id="saoluudulieucuardsinstance-a.saoluutheonhucau-on-demandbackuphoacmanualbackup"></a>
 
-Khi bạn có nhu cầu tạo bản backup, bạn truy cập đến màn hình quản lý backup cho dịch vụ vDB Relational [tại đây](https://vdb.console.vngcloud.vn/relational/backup). Màn hình này sẽ liệt kê tất cả các bản backup (manual & auto) của tất cả các RDS Instance có trong tài khoản của bạn.
+Khi bạn có nhu cầu tạo bản backup, bạn truy cập đến màn hình quản lý backup cho dịch vụ vDB Relational [tại đây](https://vdb.console.greennode.ai/relational/backup). Màn hình này sẽ liệt kê tất cả các bản backup (manual & auto) của tất cả các RDS Instance có trong tài khoản của bạn.
 
 Để tạo bản sao lưu, bạn nhấn vào nút **Create Backup,** tại màn hình **Create Backup**, bạn lần lượt lựa chọn các thông tin:
 

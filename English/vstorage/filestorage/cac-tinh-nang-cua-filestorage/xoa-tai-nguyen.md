@@ -4,7 +4,7 @@ You have created a file storage with the appropriate storage capacity. Now, your
 
 To delete a storage file, you can:
 
-**Step 1:** Log in to [https://efs.console.vngcloud.vn/overview](https://efs.console.vngcloud.vn/overview)
+**Step 1:** Log in to [https://efs.console.greennode.ai/overview](https://efs.console.greennode.ai/overview)
 
 **Step 2:** Select the icon at the storage file you want to delete. Select **Delete**.
 

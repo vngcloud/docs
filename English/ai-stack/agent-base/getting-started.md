@@ -8,7 +8,7 @@
 
 ### Create a GreenNode Account
 
-1. Navigate to https://dashboard.console.vngcloud.vn/ and sign up or log in.
+1. Navigate to https://dashboard.console.greennode.ai/ and sign up or log in.
 2. Complete account verification.
 3. Create or join an **Organization**. All AgentBase resources are scoped to an organization.
 
@@ -48,7 +48,7 @@ All AgentBase API calls (Portal, RESTful API, and SDK) require a GreenNode IAM b
 
 **Step 1 — Navigate to IAM Service Accounts**
 
-1. Open: https://iam.console.vngcloud.vn/service-accounts
+1. Open: https://iam.console.greennode.ai/service-accounts
 2. If prompted, log in with your GreenNode account.
 
 **Step 2 — Create a New Service Account**
@@ -59,7 +59,7 @@ All AgentBase API calls (Portal, RESTful API, and SDK) require a GreenNode IAM b
    * **Description**: e.g., `Service account for AgentBase test`
 3. Click **"Next Step"**.
 
-![1774518047320](../../.gitbook/assets/1774518047320.png)
+![1774518047320](<../../.gitbook/assets/1774518047320 (1).png>)
 
 **Step 3 — Attach Policies**
 

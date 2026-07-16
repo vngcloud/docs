@@ -38,7 +38,7 @@ Các quy tắc sau áp dụng cho việc đặt tên project trong vStorage:
 
 Thực hiện tạo project theo các bước bên dưới:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [đây](https://register.vngcloud.vn/signup).
 2. Chọn **Region HCM04.**
 3. Chọn **Tạo một Project.**
 4. Nhập **Project Name**
@@ -60,7 +60,7 @@ Bạn có thể xem và sử dụng các thuộc tính cho project bao gồm th�
 
 Để xem các thuộc tính cho một project, bạn có thể:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn/storage](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai/storage](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn **Region: HCM04**
 3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (601).png" alt="" data-size="line">tại **project** bạn muốn xem chi tiết.
 4. Trên trang hiển thị thông tin chi tiết **project**, bạn có thể xem và sử dụng các thuộc tính cho project
@@ -80,7 +80,7 @@ Bạn đã khởi tạo project với lượng quota ban đầu phù hợp với
 
 Để thay đổi quota cho một project, bạn có thể:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn checkbox tại project bạn muốn tăng giảm hạn mức và chọn biểu tượng <img src="../../../../.gitbook/assets/image (604).png" alt="" data-size="line">hoặc bạn cũng có thể chọn biểu tượng <img src="../../../../.gitbook/assets/image (605).png" alt="" data-size="line"> sau đó chọn Resize.
 3. Màn hình **Resize project** được hiển th&#x1ECB;**.** Chọn **quota** lưu trữ mong muốn tăng thêm, **quota** lưu trữ bạn có thể tăng thêm hoặc giảm đi đến mức tối đa hoặc tối thiểu bằng **quota** lưu trữ mà gói lưu trữ cung cấp. Bạn không thể điều chỉnh **quota** lưu trữ nhỏ hơn hoặc vượt quá giá trị này.
 4. Chọn **Resize project.**
@@ -99,7 +99,7 @@ Bạn đã khởi tạo project với chu kỳ lưu trữ ngắn hạn. Hiện t
 
 Để renew một project, bạn có thể:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn checkbox tại **project** bạn muốn tăng giảm hạn mức và chọn biểu tượng <img src="../../../../.gitbook/assets/image (606).png" alt="" data-size="line"> hoặc bạn cũng có thể chọn biểu tượng <img src="../../../../.gitbook/assets/image (605).png" alt="" data-size="line"> sau đó chọn **Renew**.
 3. Chọn Period lưu trữ mong muốn gia hạn. Chúng tôi cung cấp các chu kỳ lưu trữ bao gồm: **1 tháng, 3 tháng, 6 tháng, 12 tháng, 24 tháng, 36 tháng**. Khi bạn thực hiện chọn chu kỳ gia hạn, hệ thống sẽ tự động tính toán thời gian có hiệu lực của chu kỳ lưu trữ mới và tổng số tiền bạn cần chi trả cho việc gia hạn **project**.
 4. Chọn **Thanh toán** sau khi kiểm tra giỏ hàng và hình thức thanh toán.
@@ -119,8 +119,8 @@ Trước khi dịch vụ hết hạn 7 ngày hệ thống sẽ gửi mail thông
 
 Hệ thống sẽ tự động gia hạn 3 ngày trước khi dịch vụ hết hạn:
 
-* Nếu đủ credit sẽ tiến hành gia hạn tất cả các dịch vụ. Khi gia hạn thành công hay thất bại, chúng tôi sẽ gửi email chứa thông tin gia hạn thành công/ thất bại cho bạn. Lịch sử thanh toán gia hạn dịch vụ cũng sẽ được chúng tôi lưu trữ trên hệ thống vConsole. Để biết thêm thông tin, hãy truy cập [Dashboard vConsole](https://dashboard.console.vngcloud.vn/payment-history).
-* Nếu không đủ credit, hệ thống sẽ cố gắng gia hạn những dịch cho đến khi không còn đủ credit. Khi gia hạn thành công hay thất bại, chúng tôi sẽ gửi email chứa thông tin gia hạn thành công/ thất bại cho bạn. Lịch sử thanh toán gia hạn dịch vụ cũng sẽ được chúng tôi lưu trữ trên hệ thống vConsole. Để biết thêm thông tin, hãy truy cập [Dashboard vConsole](https://dashboard.console.vngcloud.vn/payment-history).
+* Nếu đủ credit sẽ tiến hành gia hạn tất cả các dịch vụ. Khi gia hạn thành công hay thất bại, chúng tôi sẽ gửi email chứa thông tin gia hạn thành công/ thất bại cho bạn. Lịch sử thanh toán gia hạn dịch vụ cũng sẽ được chúng tôi lưu trữ trên hệ thống vConsole. Để biết thêm thông tin, hãy truy cập [Dashboard vConsole](https://dashboard.console.greennode.ai/payment-history).
+* Nếu không đủ credit, hệ thống sẽ cố gắng gia hạn những dịch cho đến khi không còn đủ credit. Khi gia hạn thành công hay thất bại, chúng tôi sẽ gửi email chứa thông tin gia hạn thành công/ thất bại cho bạn. Lịch sử thanh toán gia hạn dịch vụ cũng sẽ được chúng tôi lưu trữ trên hệ thống vConsole. Để biết thêm thông tin, hãy truy cập [Dashboard vConsole](https://dashboard.console.greennode.ai/payment-history).
 
 <details>
 
@@ -140,7 +140,7 @@ Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ
 
 <summary>Thiết lập tính năng gia hạn tự động trên project đã được khởi tạo trước đó</summary>
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (607).png" alt="" data-size="line"> tại **project** bạn muốn thực hiện thiết lập gia hạn tự động. Chọn Enable Auto-renew.
 3. Màn hình **Enable Auto-renew** được hiển th&#x1ECB;**.** Chọn **Period** gia hạn mà bạn mong muốn.
 4. Chọn **OK.**
@@ -153,7 +153,7 @@ Sau khi bạn thực hiện thành công các bước trên, chu kỳ lưu trữ
 
 <summary>Gỡ bỏ tính năng gia hạn tự động trên một project đã được thiết lập gia hạn tự động trước đó</summary>
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (609).png" alt="" data-size="line"> tại **project** bạn muốn thực hiện tắt thiết lập gia hạn tự động. Chọn **Disable Auto-renew.**
 3. Màn hình **Disable Auto-renew** được hiển th&#x1ECB;**.**
 4. Chọn **OK.**
@@ -170,7 +170,7 @@ Bạn đã khởi tạo một project với gói lưu trữ phù hợp. Hiện t
 
 Để xóa một project, bạn có thể:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (610).png" alt="" data-size="line">tại project bạn muốn thực hiện xóa. Chọn **Delete**.
 3. Nhập chuỗi ký tự **delete me** và chọn **Delete.**
 
@@ -188,7 +188,7 @@ Bạn vừa thực hiện xóa một project hoặc một project hết hạn l�
 
 Để khôi phục một project bị xóa, bạn có thể:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn menu **Trash.**
 3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (611).png" alt="" data-size="line">trên **project** muốn thực hiện khôi phục.
 4. Chọn **Restore**.
@@ -207,7 +207,7 @@ Tính năng Tự động tăng dung lượng lưu trữ (Auto-scale Quota) trên
 
 Để thiết lập tăng dung lượng tự động cho một project, bạn có thể:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Tại project cần thiết lập Auto-scale Quota, chọn biểu tượng <img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fxle5SMO5J6MplFpJZC74%252Fimage.png%3Falt%3Dmedia%26token%3De9cdb754-9a75-4868-90bf-67e670048eb5&#x26;width=27&#x26;dpr=4&#x26;quality=100&#x26;sign=1f9a3808&#x26;sv=1" alt="" data-size="line"> sau đó chọn mục **Auto-scale** và tiếp tục chọn **Configure Auto-scale** hoặc chọn biểu tượng <img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fs6DACNvZx3OSJhJDO654%252Fimage.png%3Falt%3Dmedia%26token%3D3164ca6e-fc29-4fd0-b88a-34a960d4cde0&#x26;width=29&#x26;dpr=4&#x26;quality=100&#x26;sign=aa473973&#x26;sv=1" alt="" data-size="line"> sau đó chọn **Set Auto-scale**.
 3. Tại màn hình cấu hình **Auto-scale**, thực hiện thiết lập các thông số cần thiết cho **Auto Scale**. Cụ thể:
 
@@ -239,7 +239,7 @@ Tính năng Cảnh báo dung lượng lưu trữ (Usage alert) trên vStorage ch
 
 Để thiết lập tăng dung lượng tự động cho một project, bạn có thể:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Tại project cần thiết lập Auto-scale Quota, chọn biểu tượng <img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252Fxle5SMO5J6MplFpJZC74%252Fimage.png%3Falt%3Dmedia%26token%3De9cdb754-9a75-4868-90bf-67e670048eb5&#x26;width=27&#x26;dpr=4&#x26;quality=100&#x26;sign=1f9a3808&#x26;sv=1" alt="" data-size="line"> sau đó chọn mục **Cảnh báo dung lượng** và tiếp tục chọn **Cấu hình cảnh báo dung lượng**.
 3. Tại màn hình **Cấu hình cảnh báo dung lượng**, thực hiện thiết lập các thông số cần thiết. Cụ thể:
 
@@ -271,7 +271,7 @@ Sau khi chúng tôi xác nhận đã cung cấp ví POC cho tài khoản của b
 
 <summary>Khởi tạo project sử dụng số dư ví POC</summary>
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn **region HCM04.**
 3. Chọn **Tạo một project.**
 4. Màn hình **Tạo mới project** được hiển thị. Trong **Tên project**, hãy nhập tên tuân thủ theo quy định của chúng tôi cho project của bạn.
@@ -293,7 +293,7 @@ Thời gian sử dụng tài nguyên POC mặc định trùng với thời gian 
 
 Sau khi bạn khởi tạo một project sử dụng ví POC, lúc này bạn có thể tiếp tục gia hạn sử dụng project cũng bằng cách sử dụng ví Poc. Chi tiết hãy làm theo các bước sau:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (620).png" alt="" data-size="line">tại **project** bạn muốn thực hiện gia hạn. Chọn **Gia hạn.**
 3. **Bạn có thể gia hạn project sử dụng ví POC nếu bạn đã gia hạn thời gian sử dụng ví POC. Sau khi bạn gia hạn thời gian sử dụng ví POC thì thời gian bạn có thể gia hạn project là quãng thời gian từ ngày kết thúc hiện tại tới ngày hết hạn mới của ví POC**. Để tăng thời gian sử dụng ví POC, bạn hãy liên hệ với nhân viên Sale hoặc nhân viên hỗ trợ trực tiếp cho bạn hoặc mở một ticket support trên hệ thống của chúng tôi. Chọn **Gia hạn**.
 4. Chọn **Checkout PoC**.
@@ -318,7 +318,7 @@ Lúc này **project** sẽ bị **xóa hoàn toàn** khỏi vStorage.
 
 <summary>Dừng POC trước thời hạn</summary>
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (622).png" alt="" data-size="line">tại **project** bạn muốn thực hiện dừng POC. Chọn **Dừng POC**.
 3. Chọn **Dừng POC**.
 

@@ -6,7 +6,7 @@ Sau khi tạo container và tải lên tệp tin vào container đó, bạn có 
 
 {% tabs %}
 {% tab title="Sử dụng vStorage Portal" %}
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Chọn **project** và **container** mà bạn muốn thực hiện tìm kiếm object/ directory.
 3. Tại ô **Search directories and objects**, bạn có thể thực hiện tìm kiếm object/ directory theo các cách sau:
    1. Nếu bạn muốn tìm kiếm object theo tiền tố:

@@ -35,7 +35,7 @@ Giả sử ban đầu tôi đang sử dụng account1 trên vStorage, nơi lưu 
 
 #### Tạo Transfer Job <a href="#transferdulieutuvstoragetoivstoragekhacaccount-taotransferjob" id="transferdulieutuvstoragetoivstoragekhacaccount-taotransferjob"></a>
 
-**Bước 1:** Đăng nhập vào [https://datasync.console.vngcloud.vn/](https://datasync.console.vngcloud.vn/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [đây](https://register.vngcloud.vn/signup). **Lưu ý: bạn cần đăng nhập với account02 để có thể transfer dữ liệu từ account01 sang account02.**
+**Bước 1:** Đăng nhập vào [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [đây](https://register.vngcloud.vn/signup). **Lưu ý: bạn cần đăng nhập với account02 để có thể transfer dữ liệu từ account01 sang account02.**
 
 **Bước 2:** Nhấp vào nút **Create a transfer job** để bắt đầu tạo job chuyển đổi dữ liệu.
 

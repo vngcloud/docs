@@ -4,12 +4,12 @@ After creating a bucket, you can now upload objects to the bucket. The uploaded 
 
 To upload an object to a bucket, please follow the steps below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** you want to upload objects to.
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) . Select **the project** and **bucket** you want to upload objects to.
 2. Select **Upload** .
 3. Select **Choose files to upload** or drag the files from your personal device you want to upload into this area.
 4. After dragging or selecting one or more files into this area. Select **Upload** .
 
-<figure><img src="../../../../.gitbook/assets/image (80) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (80) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**
@@ -21,8 +21,8 @@ To upload an object to a bucket, please follow the steps below:
 
 To download one or more objects, please follow the steps below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) . Select **the project** and **bucket** you want to download the object from.
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) . Select **the project** and **bucket** you want to download the object from.
 2. Select the **objects** you want to download.
 3. Select the action icon, then select the **Download button**
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>

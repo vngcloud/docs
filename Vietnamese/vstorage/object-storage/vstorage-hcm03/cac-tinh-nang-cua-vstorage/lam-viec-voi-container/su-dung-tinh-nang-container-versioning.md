@@ -6,7 +6,7 @@ Version là một thuật ngữ được sử dụng để chỉ một phiên b�
 
 <summary> Sử dụng vStorage Portal</summary>
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **project** và chọn **container** bạn muốn tạo version.
 

@@ -10,11 +10,11 @@ Tính năng **Quản lý Certificate** trên dịch vụ vCDN cho phép khách h
 
 * **Private Key**: file private key tương ứng với chứng chỉ SSL. Đây là khóa bảo mật của chứng chỉ, chỉ có máy chủ của bạn mới có quyền sử dụng.
 * **SSL Certificate**: file certificate SSL của bạn. Đây là chứng chỉ do Certificate Authority (CA) phát hành, xác nhận rằng kết nối giữa người dùng và máy chủ là an toàn.
-* **CA Root Chain**: Nếu chứng chỉ của bạn yêu cầu **Chain CA** (bao gồm các chứng chỉ trung gian giữa chứng chỉ SSL và CA gốc), bạn cần tải lên các chứng chỉ trung gian này dưới dạng một chuỗi (chain).&#x20;
+* **CA Root Chain**: Nếu chứng chỉ của bạn yêu cầu **Chain CA** (bao gồm các chứng chỉ trung gian giữa chứng chỉ SSL và CA gốc), bạn cần tải lên các chứng chỉ trung gian này dưới dạng một chuỗi (chain).
 
 ## Các bước thực hiện
 
-**Bước 1:** Truy cập vào vCDN Portal tại [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
+**Bước 1:** Truy cập vào vCDN Portal tại [https://vcdn.greennode.ai/](https://vcdn.greennode.ai/)
 
 **Bước 2:** Chọn mục **Certificate**, sau đó chọn **Upload.**
 

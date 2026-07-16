@@ -6,8 +6,8 @@
 
 Đầu tiên, bạn truy cập đến giao diện dịch vụ vDB qua 2 cách như sau:
 
-* Cách 1: Truy cập trang chủ GreenNode tại đường dẫn: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/). Tại giao diện chính, bạn tìm đến dịch vụ **vServer** và chọn dịch vụ **vDB Relational** trong danh sách sản phẩm/dịch vụ vServer.
-* Cách 2: Truy cập trực tiếp đến trang chủ vDB Relational tại đường dẫn: [https://vdb.console.vngcloud.vn/relational/database](https://vdb.console.vngcloud.vn/relational/database)
+* Cách 1: Truy cập trang chủ GreenNode tại đường dẫn: [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/). Tại giao diện chính, bạn tìm đến dịch vụ **vServer** và chọn dịch vụ **vDB Relational** trong danh sách sản phẩm/dịch vụ vServer.
+* Cách 2: Truy cập trực tiếp đến trang chủ vDB Relational tại đường dẫn: [https://vdb.console.greennode.ai/relational/database](https://vdb.console.greennode.ai/relational/database)
 
 ## Khởi tạo RDS instance
 

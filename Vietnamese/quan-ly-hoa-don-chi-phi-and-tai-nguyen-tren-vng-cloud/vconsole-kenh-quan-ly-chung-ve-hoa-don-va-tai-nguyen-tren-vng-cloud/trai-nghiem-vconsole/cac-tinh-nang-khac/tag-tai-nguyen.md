@@ -20,7 +20,7 @@
 
 ### **1. Gắn tag cho tài nguyên**
 
-**Bước 1:** Truy cập vào trang thống kê tài nguyên tại đây: [https://dashboard.console.vngcloud.vn/resource](https://dashboard.console.vngcloud.vn/resource)
+**Bước 1:** Truy cập vào trang thống kê tài nguyên tại đây: [https://dashboard.console.greennode.ai/resource](https://dashboard.console.greennode.ai/resource)
 
 **Bước 2:** Chọn một hoặc nhiều tài nguyên bạn muốn gắn tag (hình bên dưới)
 
@@ -41,7 +41,7 @@ Một cửa sổ giao diện sẽ mở ra cho phép bạn thêm hoặc xóa thô
 
 ### **2. Tìm kiếm tài nguyên theo tag**
 
-**Bước 1:** Truy cập vào trang thống kê tài nguyên tại đây: [https://dashboard.console.vngcloud.vn/resource](https://dashboard.console.vngcloud.vn/resource)
+**Bước 1:** Truy cập vào trang thống kê tài nguyên tại đây: [https://dashboard.console.greennode.ai/resource](https://dashboard.console.greennode.ai/resource)
 
 **Bước 2:** Tìm đến ô tìm kiếm như hình bên dưới:
 
@@ -69,7 +69,7 @@ Tính năng đồng bộ thông tin tag vào hóa đơn giúp liên kết chặt
 
 **Để xem thông tin tag trên hóa đơn:**
 
-1. **Truy cập vào trang thống kê hóa đơn:** [https://dashboard.console.vngcloud.vn/billing-report](https://dashboard.console.vngcloud.vn/billing-report)
+1. **Truy cập vào trang thống kê hóa đơn:** [https://dashboard.console.greennode.ai/billing-report](https://dashboard.console.greennode.ai/billing-report)
 2.  **Xuất hóa đơn:** Click vào nút "Xuất hóa đơn" để tải về bản sao hóa đơn đầy đủ.&#x20;
 
     <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

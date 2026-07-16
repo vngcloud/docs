@@ -25,7 +25,7 @@ Trên VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** hoạ
 Để có thể khởi tạo một **Cluster** và **Deploy** một **Workload**, bạn cần:
 
 * Có ít nhất 1 **VPC** và 1 **Subnet** đang ở trạng thái **ACTIVE**. Nếu bạn chưa có VPC, Subnet nào, vui lòng khởi tạo VPC, Subnet theo hướng dẫn bên dưới:
-  * **Bước 1:** Truy cập vào trang chủ vServer tại link [https://hcm-3.console.vngcloud.vn/vserver](https://hcm-3.console.vngcloud.vn/vserver)
+  * **Bước 1:** Truy cập vào trang chủ vServer tại link [https://hcm-3.console.greennode.ai/vserver](https://hcm-3.console.greennode.ai/vserver)
   * **Bước 2**: Chọn menu **VPCs** ở menu bên trái màn hình.
   * **Bước 3:** Tại đây, nếu bạn chưa có VPC nào, vui lòng chọn **Create VPC** bằng cách nhập VPC name và định nghĩa dãy **CIDR/16** mong muốn.
   * **Bước 4**: Sau khi đã có ít nhất 1 VPC, để tạo subnet, bạn cần chọn **View Detail** để mở rộng bảng điều khiển ở phía dưới, trong đó có mục **Subnet**.
@@ -59,7 +59,7 @@ Trên VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** hoạ
 
 Để khởi tạo một Cluster, hãy làm theo các bước bên dưới:
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Bước 1:** Truy cập vào [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Bước 2:** Tại màn hình **Overview**, chọn **Activate.**
 
@@ -107,7 +107,7 @@ Giả sử, khi khởi tạo cluster, tôi lựa chọn:
 
 Bên dưới là hướng dẫn triển khai một deployment nginx và kiểm tra việc phân chia IP cho các pod được triển khai trong cluster của bạn.
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
+**Bước 1:** Truy cập vào [https://vks.console.greennode.ai/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
 **Bước 2:** Danh sách Cluster được hiển thị, chọn biểu tượng **Download** và chọn **Download Config File** để thực hiện tải xuống file kubeconfig. File này sẽ giúp bạn có toàn quyền truy cập vào Cluster của bạn.
 

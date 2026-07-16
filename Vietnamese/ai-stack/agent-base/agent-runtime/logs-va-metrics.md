@@ -40,7 +40,7 @@ Lấy log từ container của tất cả replica trong một runtime. Sử dụ
 
 ### Portal (GUI)
 
-1. Mở [My Agents](https://aiplatform.console.vngcloud.vn/my-agents?tab=runtime) → nhấp vào Runtime
+1. Mở [My Agents](https://aiplatform.console.greennode.ai/my-agents?tab=runtime) → nhấp vào Runtime
 2. Mở trang chi tiết runtime → tab **"Monitor"** → nhấn vào một endpoint → phần **"Log"**
 
 ![1774581394627](../../../.gitbook/assets/1774581394627.png)

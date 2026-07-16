@@ -37,13 +37,13 @@ You can only restore a virtual server with a Snapshot of the Boot Volume.
 
 ### **Restoring a VM with a Snapshot on the Dashboard** <a href="#khoiphucmaychuaobangbansnapshot-khoiphucmaychuaobangsnapshottrenbangdieukhien" id="khoiphucmaychuaobangbansnapshot-khoiphucmaychuaobangsnapshottrenbangdieukhien"></a>
 
-1. Open the vServer Dashboard at [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
+1. Open the vServer Dashboard at [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/).
 2. In the navigation sidebar, select **Snapshot.**
 3. Choose the Snapshot of the Boot Volume on the list page, then select **Actions**, press Rollback Server.
 
 ### **Create Server with a Snapshot on the Create Server Screen** <a href="#khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhtaoserversnapshotcreateserve" id="khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhtaoserversnapshotcreateserve"></a>
 
-1. Log in and open the vServer dashboard at [https://hcm-3.console.vngcloud.vn/vserver](https://hcm-3.console.vngcloud.vn/vserver/);
+1. Log in and open the vServer dashboard at [https://hcm-3.console.greennode.ai/vserver](https://hcm-3.console.greennode.ai/vserver/);
 2. In the navigation sidebar, select **Server**;
 3. Choose the "**Create a Server**" button to navigate to the Create Server screen;
 4. To configure Creating a Server with the snapshot. In the "**Basic Configuration/Image**" section, select the "**My snapshot**" tab;
@@ -57,7 +57,7 @@ When configuring a new Server creation with Snapshot, users still perform config
 
 ### **Create a Server with a Snapshot on the Snapshot Screen** <a href="#khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhsnapshot" id="khoiphucmaychuaobangbansnapshot-taomaychu-server-bangsnapshottrenmanhinhsnapshot"></a>
 
-1. Log in and open the vServer dashboard at [https://hcm-3.console.vngcloud.vn/vserver](https://hcm-3.console.vngcloud.vn/vserver/);
+1. Log in and open the vServer dashboard at [https://hcm-3.console.greennode.ai/vserver](https://hcm-3.console.greennode.ai/vserver/);
 2. In the navigation sidebar, select **Snapshot**;
 3. On the Snapshot list screen, User **clicks on a Snapshot Server** to navigate to the detailed information screen.
 4. On the detailed screen of the Snapshot Server, User selects the "**Restore Point**" tab.

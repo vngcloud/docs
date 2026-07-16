@@ -8,7 +8,7 @@ Tính năng Cảnh báo dung lượng lưu trữ (Usage alert) trên vStorage ch
 
 ### Các bước thực hiện
 
-**Bước 1:** Đăng nhập vào vStorage Portal tại [đây](https://vstorage.console.vngcloud.vn/overview).
+**Bước 1:** Đăng nhập vào vStorage Portal tại [đây](https://vstorage.console.greennode.ai/overview).
 
 **Bước 2**: Tại project cần thiết lập Cảnh báo dung lượng, chọn biểu tượng <img src="../../../../../.gitbook/assets/image (398).png" alt="" data-size="line"> sau đó chọn mục **Cảnh báo dung lượng** và tiếp tục chọn **Cấu hình** **Cảnh báo dung lượng**.
 

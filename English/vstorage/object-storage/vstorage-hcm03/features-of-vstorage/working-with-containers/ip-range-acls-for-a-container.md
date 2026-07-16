@@ -10,7 +10,7 @@ The IP Range ACLs feature supports both the S3 and HTTP protocols.
 
 To set up IP Range ACLs for a container, you can follow the instructions below via the vStorage Portal:
 
-1\. Log in to https://vstorage.console.vngcloud.vn.\
+1\. Log in to https://vstorage.console.greennode.ai.\
 2\. Choose the **project** and then select ![](https://docs.vngcloud.vn/download/thumbnails/67994184/image2023-5-24\_9-5-19.png?version=1\&modificationDate=1701052880000\&api=v2)at the container which you want to set up IP Range ACLs.\
 3\. In the IP Range ACLs section, choose **Set IP Range ACLs**. To find out the number of IP/ Subnet you can set up for a container, please refer to Resource Limits.\
 4\. By default, the selected container will have the access status set to **All IP/Subnets**. If you want to limit the number of IP addresses that can access your resources, choose **Specific IP/Subnets**.\

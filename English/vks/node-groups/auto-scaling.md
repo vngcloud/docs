@@ -24,7 +24,7 @@ When deploying applications in a cloud environment, using Auto Scaling helps opt
 
 Illustration:
 
-<figure><img src="../../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 If the above two conditions are met, the system will increase the number of nodes (one or more nodes) to accommodate all unscheduling pods. This process will be done immediately in 2 steps:
 
@@ -36,7 +36,7 @@ If the above two conditions are met, the system will increase the number of node
 
 * When the system performs Auto Scaling, creating a new node may encounter an error if you do not have enough credits or you have run out of quota to create a VM on the vServer system. To avoid the error above, you need to:
   * **Make sure you have enough credits:** If you're a prepaid user, add more credits to your account.
-  * **Request a quota increase:** You can request a quota increase for your account [here](https://hcm-3.console.vngcloud.vn/vserver/limit) .
+  * **Request a quota increase:** You can request a quota increase for your account [here](https://hcm-3.console.greennode.ai/vserver/limit) .
 {% endhint %}
 
 ### **Scale down mechanism: the Procuracy system performs scale down when**

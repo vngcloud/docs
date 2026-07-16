@@ -10,7 +10,7 @@ Overview
 
 On VKS, **Cilium Overlay** works according to the following model:
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 **In there:**
 
@@ -35,7 +35,7 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
 To initialize a Cluster, follow the steps below:
 
-**Step 1:** Access [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Step 1:** Access [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Step 2: On the Overview** screen , select **Activate.**
 
@@ -52,7 +52,7 @@ To initialize a Cluster, follow the steps below:
 | **IP-IP encapsulation mode** | IP-IP encapsulation mode in VKS is Always                                                                                                                                      | **In the figure, we select Always** mode to always encapsulate packets.                                          |
 | **CIDR**                     | The virtual network range that the pods will use                                                                                                                               | In the picture, we choose the virtual network range as `172.16.0.0/16`. The pods will get IP from this IP range. |
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**
@@ -71,7 +71,7 @@ To initialize a Cluster, follow the steps below:
 
 Below are instructions for deploying an nginx deployment and testing IP assignment for the pods deployed in your cluster.
 
-**Step 1:** Access [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Access [https://vks.console.greennode.ai/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2:** The Cluster list is displayed, select the **Download** icon and select **Download Config File** to download the kubeconfig file. This file will give you full access to your Cluster.
 

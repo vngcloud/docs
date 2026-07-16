@@ -26,7 +26,7 @@ Các loại biểu đồ/ báo cáo chúng tôi cung cấp cho bạn bao gồm:
 
 ## **Các bước thực hiện**
 
-**Bước 1:** Truy cập vào vCDN Portal tại [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
+**Bước 1:** Truy cập vào vCDN Portal tại [https://vcdn.greennode.ai/](https://vcdn.greennode.ai/)
 
 **Bước 2:** Chọn mục **Dashboard.** Tại đây, bạn có thể thấy các biểu đồ, báo cáo được chúng tôi đề cập bên trên. Ví dụ:
 

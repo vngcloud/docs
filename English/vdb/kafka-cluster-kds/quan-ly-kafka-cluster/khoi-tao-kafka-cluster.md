@@ -6,7 +6,7 @@ By following this guide, you will be able to quickly deploy a ready-to-use Kafka
 
 ## **Step 1: Access the Kafka Management Interface**
 
-1. Open a web browser and access the GreenNode Kafka management interface here: [https://vdb.console.vngcloud.vn/kafka/cluster](https://vdb.console.vngcloud.vn/kafka/cluster)
+1. Open a web browser and access the GreenNode Kafka management interface here: [https://vdb.console.greennode.ai/kafka/cluster](https://vdb.console.greennode.ai/kafka/cluster)
 2. Log in to your account. If you don't have an account yet, register a new one.
 
 ## **Step 2: Start Creating a Kafka Cluster**

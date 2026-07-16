@@ -28,23 +28,23 @@ There will be a few notes to consider when performing package transfer on the vM
 
 Below is a detailed guide on how to switch packages on the vMonitor Platform:
 
-* **Step 1:** Access the vMonitor Platform at https://hcm-3.console.vngcloud.vn/vmonitor/quota-usage/quota
+* **Step 1:** Access the vMonitor Platform at https://hcm-3.console.greennode.ai/vmonitor/quota-usage/quota
 * **Step 2:** Log into your account.
 * **Step 3:** Select **Usage & Quota** from the left-hand menu.
 * **Step 4:** You will now see a package conversion suggestion on your interface. Select **Convert.**
 
-<figure><img src="../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (102) (2).png" alt=""><figcaption></figcaption></figure>
 
 * **Step 5:** We provide a comparison table showing the changes when performing the conversion. You can go through each section including: **Metric Quota, Log Project, Paid SMS Notification, Paid Email Notification, Synthetic Test Quota** to view the detailed parameters of each service package before proceeding with the conversion. You need to confirm the conversion information and select **Convert.**
 
-<figure><img src="../../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (103) (2).png" alt=""><figcaption></figcaption></figure>
 
 The package conversion process will occur immediately. The Quota/Usage parameters will be preserved after you perform the conversion. At this time, the screen will display the new package format as follows:
 
-<figure><img src="../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (104) (2).png" alt=""><figcaption></figcaption></figure>
 
 In this example, I purchased the Metric Quota package. The Log Project incurs additional charges, so when converted, I automatically received an additional 200 SMS and 200 Email credits free for 6 months. Details:
 
-<figure><img src="../../.gitbook/assets/image (33) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (33) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 After converting the resource, you can continue to perform resizing and extending the resource according to other instructions in this document.

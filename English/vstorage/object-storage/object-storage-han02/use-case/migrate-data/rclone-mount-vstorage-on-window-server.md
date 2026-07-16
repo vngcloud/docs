@@ -6,7 +6,7 @@ To Mount vStorage to Local Drive on Windows using Rclone, follow these instructi
 
 * You download Rclone via the link: [https://rclone.org/downloads/](https://rclone.org/downloads/) .
 
-## 2. Create a certificate file rclone.conf  <a href="#id-2.-tao-file-chung-thuc-rclone.conf-theo-mau-sau" id="id-2.-tao-file-chung-thuc-rclone.conf-theo-mau-sau"></a>
+## 2. Create a certificate file rclone.conf <a href="#id-2.-tao-file-chung-thuc-rclone.conf-theo-mau-sau" id="id-2.-tao-file-chung-thuc-rclone.conf-theo-mau-sau"></a>
 
 * After downloading and installing Rclone, create a file rclone.conf in the directory `C:\Users\username\.config\rclone`with the content
 
@@ -42,7 +42,7 @@ endpoint = https://hcm04.vstorage.vngcloud.vn
 
 * If you encounter an error about missing winfsp package as shown below, you can download additional packages at this link [https://github.com/billziss-gh/winfsp/releases/tag/v1.4.19049](https://github.com/billziss-gh/winfsp/releases/tag/v1.4.19049)
 
-<figure><img src="../../../../../.gitbook/assets/image (347).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (347) (1).png" alt=""><figcaption></figcaption></figure>
 
 * You do not need to create the local\_path on the local machine when mounting.
 * Rclone does not support background mode so you must not close cmd during use.

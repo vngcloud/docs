@@ -11,14 +11,14 @@
 2. Nếu tài khoản S3 key vừa tạo đang có trạng thái **Restriction by vIAM = ON** thì bạn tiếp tục tạo tài khoản Service Account theo hướng dẫn tại [Khởi tạo tài khoản Service Account](../quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-tai-khoan-service-account.md), [Khởi tạo policy cho Service Account](../quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-policy-cho-service-account.md), [Liên kết tài khoản Service Account với policy tương ứng](../quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/lien-ket-tai-khoan-service-account-voi-policy-tuong-ung.md). Ngược lại nếu tài khoản S3 key có trạng thái **Restriction by vIAM = OFF** thì chuyển tới bước 4.&#x20;
 3. Liên kết tài khoản S3 key với Service Account theo hướng dẫn tại [Liên kết S3 key, Swift user với tài khoản Service Account tương ứng](../quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-vstorage-credentials/lien-ket-s3-key-swift-user-voi-tai-khoan-service-account-tuong-ung.md).
 4. Tích hợp S3 key này với ứng dụng S3cmd. Chi tiết như sau:
-   1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+   1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
    2. Chọn thư mục **Tích hợp.**
    3. Chọn biểu tượng **S3cmd**.
    4. Tại mục **Cấp quyền**, bạn cần điền thông tin cần thiết để cấu hình S3cmd của bạn nhằm tích hợp với vStorage bao gồm:
       1. Chọn một **Region** chứa project mà bạn muốn thực hiện truy xuất dữ liệu tới trong danh sách các Region mà chúng tôi cung cấp.
       2. Chọn một **Project** trong danh sách các project đang tồn tại trong Region mà bạn chọn trước đó. Nếu danh sách project hiển thị chưa đầy đủ, bạn có thể chọn , chúng tôi sẽ tải lại danh sách project mới nhất tại thời điểm bạn thực hiện hành động này.
       3. Chọn một **Access key** mà bạn vừa tạo ở bước 1 bên trên.
-      4. Nhập **Secret key** tương ứng của **Access key** vừa chọn. Cặp access key và secret key được bạn tạo và quản lý thông qua hệ thống vIAM. Bạn có thể chọn [Nhấn vào đây để vào vIAM và quản lý s3 keys](https://iam.console.vngcloud.vn/vstorage-credentials/s3) để chúng tôi điều hướng bạn tới hệ thống vIAM và chi tiết là các màn hình quản lý S3 keys.&#x20;
+      4. Nhập **Secret key** tương ứng của **Access key** vừa chọn. Cặp access key và secret key được bạn tạo và quản lý thông qua hệ thống vIAM. Bạn có thể chọn [Nhấn vào đây để vào vIAM và quản lý s3 keys](https://iam.console.greennode.ai/vstorage-credentials/s3) để chúng tôi điều hướng bạn tới hệ thống vIAM và chi tiết là các màn hình quản lý S3 keys.&#x20;
    5. Sau khi hoàn tất chọn cấu hình **Cấp quyền**, chọn **Cấu hình S3cmd** để chuyển tới màn hình **Cấu hình**. Bạn luôn có thể quay lại đây để thay đổi thông tin **Cấp quyền** của mình, sau đó chọn lại **Cấu hình S3cmd** để cập nhật cách sử dụng theo thông số mới của bạn. Bạn có thể xem hướng dẫn cách cài đặt, cấu hình S3cmd ngay trên màn hình này.
    6. Nhấn **Tải tệp tin cấu hình** về máy tính cá nhân. Tệp tin tải về sẽ có tên mặc định là **s3cnf.s3cfg**.
 

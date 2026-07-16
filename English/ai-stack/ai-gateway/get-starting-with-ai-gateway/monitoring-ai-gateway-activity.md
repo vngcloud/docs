@@ -14,7 +14,7 @@ In the detailed view of a Gateway, select the Monitor tab to observe real-time m
 
 You can customize the observation time range (15m, 30m, 1h, 2h, etc.) and filter by specific Provider or Model.
 
-<figure><img src="../../../.gitbook/assets/image (472).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (472) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Logs
 
@@ -30,7 +30,7 @@ Here, you can see request details including:
 
 You can customize the observation time range (24h, 1d, 2d, etc.) and filter by specific Status.
 
-<figure><img src="../../../.gitbook/assets/image (473).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (473) (2).png" alt=""><figcaption></figcaption></figure>
 
 Additionally, you can view detailed information for a specific request by:
 

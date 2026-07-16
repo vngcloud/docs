@@ -2,7 +2,7 @@
 
 **Lịch sử thanh toán / Payment history** tại vConsole ghi nhận lại tất cả hoạt động liên quan đến việc thanh toán hóa đơn, thanh toán phí sử dụng dịch vụ các sản phẩm GreenNode Service của tài khoản đăng nhập. Từ đó, người dùng có thể rà soát, cũng như kiểm tra các hoạt động liên quan đến tài khoản của mình một cách trực quan nhất.
 
-Truy cập đến trang **Lịch sử thanh toán / Payment history** [**tại đây.**](https://dashboard.console.vngcloud.vn/payment-history)
+Truy cập đến trang **Lịch sử thanh toán / Payment history** [**tại đây.**](https://dashboard.console.greennode.ai/payment-history)
 
 Tại trang **Lịch sử thanh toán / Payment history**, người dùng sẽ thấy bảng biểu dữ liệu chính, bao gồm các thành phần:
 

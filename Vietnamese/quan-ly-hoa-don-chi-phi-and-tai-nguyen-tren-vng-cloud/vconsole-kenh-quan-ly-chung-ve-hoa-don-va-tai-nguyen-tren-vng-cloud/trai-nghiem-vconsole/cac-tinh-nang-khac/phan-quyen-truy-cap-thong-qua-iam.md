@@ -9,7 +9,7 @@ Thông qua IAM, người dùng GreenNode, cụ thể là website vConsole có th
 Để hiểu rõ hơn, người dùng cần tìm hiểu xem:
 
 * **IAM là gì và sử dụng như thế nào?** Tham khảo tài liệu hướng dẫn [tại đây](../../../../identity-and-access-management-iam.md)
-* **Truy cập đến IAM tại**: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
+* **Truy cập đến IAM tại**: [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/)
 
 Khi đã hiểu rõ về cách hoạt động cũng như sử dụng vIAM, người dùng có thể truy cập đến vIAM để phân quyền cho các tính năng của vConsole như sau
 
@@ -17,7 +17,7 @@ Khi đã hiểu rõ về cách hoạt động cũng như sử dụng vIAM, ngư�
 
 ***
 
-* Bước 1: Truy cập vào website IAM[ tại đây](https://iam.console.vngcloud.vn/)
+* Bước 1: Truy cập vào website IAM[ tại đây](https://iam.console.greennode.ai/)
 * Bước 2: Khởi tạo **Policy**
   * 2.1: Chọn Product vConsole
   * 2.2 Chọn nhóm tính năng được phép truy cập hoặc không đối với các trang chức năng tại vConsole
@@ -32,6 +32,6 @@ Khi đã hiểu rõ về cách hoạt động cũng như sử dụng vIAM, ngư�
 * Bước 4: Khởi tạo **User Account** / **Group Permissions & Users**
   * Trong trường hợp khởi tại Group Permissions, lưu ý nhớ thêm User Account vào Group vừa tạo
 * Bước 5: Attach Policy vừa khởi tạo vào Group Permission / User Account
-* Bước 6: Lúc này, bạn đã hoàn tất việc phân quyền tính năng trên vConsole cho user trên hệ thống IAM. IAM user dùng tài khoản & mật khẩu được cấp đăng nhập vào [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/) và truy cập, sử dụng các tính năng được cấp quyền để sử dụng.
+* Bước 6: Lúc này, bạn đã hoàn tất việc phân quyền tính năng trên vConsole cho user trên hệ thống IAM. IAM user dùng tài khoản & mật khẩu được cấp đăng nhập vào [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/) và truy cập, sử dụng các tính năng được cấp quyền để sử dụng.
 
 \

@@ -1,6 +1,6 @@
 # Quản lý sao lưu MDS Instance (Backup)
 
-Giao diện quản lý Backup cho bạn cái nhìn tổng quan về tất cả các bản Backup hiện có cũng như thông chi tiết cho từng bản Backup. Truy cập giao diện quản lý Backup tại đây: [https://vdb.console.vngcloud.vn/memorystore/backup](https://vdb.console.vngcloud.vn/memorystore/backup)\
+Giao diện quản lý Backup cho bạn cái nhìn tổng quan về tất cả các bản Backup hiện có cũng như thông chi tiết cho từng bản Backup. Truy cập giao diện quản lý Backup tại đây: [https://vdb.console.greennode.ai/memorystore/backup](https://vdb.console.greennode.ai/memorystore/backup)\
 Bạn có thể tạo mới bản **Manual Backup**, **Restore** (khôi phục lại một DB Instance mới dựa trên bản Backup), **Delete** (xóa bản Backup). Tham khảo các hướng dẫn dưới đây về các tính năng quản lý Backup
 
 * [A. Sao lưu theo nhu cầu (On-demand backup hay Manual backup)](sao-luu-mds-instance.md#saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup)
@@ -52,7 +52,7 @@ vDBaaS hỗ trợ tính năng tự động sao lưu theo ngày tại thời đi�
 
 vDB MemoryStore hỗ trợ bạn **khôi phục (Restore)** lại một MDS Instance mới từ bản sao lưu (Backup) trước đó. Quá trình khôi phục này không phụ thuộc vào cách tạo ra bản backup đó (Manual Backup hay Automactic Daily Backup).
 
-Để thực hiện tiến trình khôi phục, bạn truy cập màn hình quản lý Backup [tại đây](https://vdb.console.vngcloud.vn/memorystore/backup) và làm theo hướng dẫn sau:&#x20;
+Để thực hiện tiến trình khôi phục, bạn truy cập màn hình quản lý Backup [tại đây](https://vdb.console.greennode.ai/memorystore/backup) và làm theo hướng dẫn sau:&#x20;
 
 *   Nhấn chọn vào bản Backup mà bạn muốn khôi phục, chọn Action **Restore**. Quá trình Restore cũng gần tương tự như quá trình Tạo một MDS Instance mới.&#x20;
 
@@ -63,7 +63,7 @@ vDB MemoryStore hỗ trợ bạn **khôi phục (Restore)** lại một MDS Inst
 
 ### D. Xóa bản Backup <a href="#saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup" id="saoluumdsinstance-a.saoluutheonhucau-on-demandbackuphaymanualbackup"></a>
 
-**Để xóa một bản Backup** bạn truy cập màn hình quản lý Backup [tại đây](https://vdb.console.vngcloud.vn/memorystore/backup) và làm theo hướng dẫn sau:
+**Để xóa một bản Backup** bạn truy cập màn hình quản lý Backup [tại đây](https://vdb.console.greennode.ai/memorystore/backup) và làm theo hướng dẫn sau:
 
 Bạn nhấn chọn vào bản Backup mà bạn muốn xóa, chọn Action **Delete.** Lúc này sẽ hiển thị một cảnh báo để chắc chắn bạn muốn xóa bản backup. Nếu đồng ý xóa bạn nhấn vào nút **Delete**. Bạn chờ một lát để quá trình xóa được thực thi và khi xóa thành công thì bản backup này sẽ không hiển thị trên màn hình quản lý Backup. Như vậy bạn đã xóa bản backup thành công
 

@@ -5,7 +5,7 @@
 * Biểu đồ tròn: Thống kê chi phí sử dụng dịch vụ GreenNode Service phân loại theo từng sản phẩm cụ thể theo khoảng thời gian nhất định.
 * Biểu đồ cột: Thống kê chi phí thanh toán hóa đơn theo giá tiền và tình trạng thanh toán theo khoảng thời gian nhất định.
 
-Truy cập đến trang **Lịch sử hóa đơn / Billing history** [**tại đây**](https://dashboard.console.vngcloud.vn/billing-report)**.**
+Truy cập đến trang **Lịch sử hóa đơn / Billing history** [**tại đây**](https://dashboard.console.greennode.ai/billing-report)**.**
 
 Tại trang **Lịch sử hóa đơn / Billing history**, người dùng sẽ thấy 2 mục chính, bao gồm:
 

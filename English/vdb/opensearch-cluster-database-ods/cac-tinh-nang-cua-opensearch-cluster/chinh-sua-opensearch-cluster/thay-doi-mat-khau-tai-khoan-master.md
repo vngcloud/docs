@@ -4,7 +4,7 @@ The **Master User** account is the main administrative account of the **OpenSear
 
 To change the password for the master account in an OpenSearch Cluster, you can:
 
-**Step 1:** Access [https://vdb.console.vngcloud.vn/](https://vdb.console.vngcloud.vn/)
+**Step 1:** Access [https://vdb.console.greennode.ai/](https://vdb.console.greennode.ai/)
 
 **Step 2:** Select **Cluster** under the **OpenSearch** section
 

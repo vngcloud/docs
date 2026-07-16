@@ -55,7 +55,7 @@ Thành phần thực hiện:
 
 <figure><img src="../../../../.gitbook/assets/image (658).png" alt=""><figcaption></figcaption></figure>
 
-**Bước 6:** Chọn loại file nguồn cần transcode. Bạn cần nhập vào link [URL](https://han01.vstorage.vngcloud.vn/v1/AUTH_210ff69ad18d4bfa9920b165ef8ddef4/con_01/big_buck_bunny_720p_30mb.mp4) của file nguồn đã được upload lên dịch vụ S3. Ví dụ với vStorage, URL của object sẽ có định dạng tương tự: [https://hcm03.vstorage.vngcloud.vn/v1/AUTH\_123456/cont\_01/pexels\_videos\_1390942%20(2160p).mp4](https://hcm03.vstorage.vngcloud.vn/v1/AUTH_bcd882dd104f40cb8e20f1cd6bb0b4c6/cont_01/pexels_videos_1390942%20\(2160p\).mp4)**Chú ý: bạn cần thực hiện chuyển chế độ công khai (Make Public) cho container/ bucket trên vStorage hoặc Bất kỳ dịch vụ S3 để Sigma có thể truy cập vào link này.**
+**Bước 6:** Chọn loại file nguồn cần transcode. Bạn cần nhập vào link [URL](https://han01.vstorage.vngcloud.vn/v1/AUTH_210ff69ad18d4bfa9920b165ef8ddef4/con_01/big_buck_bunny_720p_30mb.mp4) của file nguồn đã được upload lên dịch vụ S3. Ví dụ với vStorage, URL của object sẽ có định dạng tương tự: [https://hcm03.vstorage.greennode.ai/v1/AUTH\_123456/cont\_01/pexels\_videos\_1390942%20(2160p).mp4](https://hcm03.vstorage.vngcloud.vn/v1/AUTH_bcd882dd104f40cb8e20f1cd6bb0b4c6/cont_01/pexels_videos_1390942%20\(2160p\).mp4) **Chú ý: bạn cần thực hiện chuyển chế độ công khai (Make Public) cho container/ bucket trên vStorage hoặc Bất kỳ dịch vụ S3 để Sigma có thể truy cập vào link này.**
 
 <figure><img src="../../../../.gitbook/assets/image (129).png" alt=""><figcaption></figcaption></figure>
 
@@ -93,7 +93,7 @@ Thành phần thực hiện:
 
 ## Khởi tạo và cấu hình dịch vụ vCDN.
 
-**Bước 1:** Bạn thực hiện truy cập [GreenNode – ](https://vcdn.vngcloud.vn/)[vCDN](https://vcdn.vngcloud.vn/)[ Portal](https://vcdn.vngcloud.vn/)
+**Bước 1:** Bạn thực hiện truy cập [GreenNode – ](https://vcdn.vngcloud.vn/)[vCDN](https://vcdn.greennode.ai/)[ Portal](https://vcdn.vngcloud.vn/)
 
 **Bước 2:** Khởi tạo một domain CDN dành cho VOD theo hướng dẫn tại [đây](../../video-on-demand-streaming.md).
 

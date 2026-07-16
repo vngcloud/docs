@@ -4,7 +4,7 @@ After a period of time when you use the Archive feature that we provide, log dat
 
 To use the Refill feature, follow the instructions below:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. **Select the Log** folder .
 3. Select **Log project.**
 4. Select **the Log project name** that you want to perform **the Refill** in, the data after refilling will be stored in this Log Project.

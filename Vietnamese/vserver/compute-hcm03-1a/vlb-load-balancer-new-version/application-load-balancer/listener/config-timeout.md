@@ -16,7 +16,7 @@ Cơ chế Keep-Alive rất tốt, nhưng cơ chế này không thể giữ kết
 
 Các bước thực hiện:
 
-**Bước 1:** Truy cập vào trang chủ Load Balancer tại đây: [https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+**Bước 1:** Truy cập vào trang chủ Load Balancer tại đây: [https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)
 
 **Bước 2:** Tại trang chủ **Load Balancer**, click chọn **Load Balancer** cần cấu hình.
 

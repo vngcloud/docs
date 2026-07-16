@@ -13,11 +13,11 @@ Log Search is where you search and analyze your data. With Log search, we provid
 
 To perform log search and analysis, follow the instructions below:
 
-1. Log in to [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor) . Select **Log.**
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . Select **Log.**
 2. Select **Log search** .
 3. Select which **Log project** you need to view and analyze logs. The location to select the project log is displayed as shown below:
 
-<figure><img src="../../../../.gitbook/assets/image (32) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (32) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 In there:
 

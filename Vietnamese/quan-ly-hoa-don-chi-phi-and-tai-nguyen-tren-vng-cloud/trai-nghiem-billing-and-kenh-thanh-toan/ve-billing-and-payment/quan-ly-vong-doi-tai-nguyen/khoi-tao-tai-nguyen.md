@@ -23,7 +23,7 @@ Sử dụng tài liệu này như là một hướng dẫn khởi tạo tài ngu
 * **Bước 3: Kiểm tra thông tin tài nguyên và thông tin thanh toán**
   * 3.1 Kiểm tra thông tin tài nguyên tại trang sản phẩm
   * 3.2 Kiểm tra **thông tin thanh toán, hóa đơn tại**
-    * **User Portal:** [**https://dashboard.console.vngcloud.vn/**](https://dashboard.console.vngcloud.vn/)
+    * **User Portal:** [**https://dashboard.console.greennode.ai/**](https://dashboard.console.greennode.ai/)
 * **Bước 4: Hệ thống thực hiện**
   * Email thông báo thông tin tài nguyên vừa khởi tạo
   * Phát sinh hóa đơn tương ứng: Tham khảo thêm cách tính thành tiền cũng như thông tin hóa đơn [**tại đây**](../../quan-ly-hoa-don.md)

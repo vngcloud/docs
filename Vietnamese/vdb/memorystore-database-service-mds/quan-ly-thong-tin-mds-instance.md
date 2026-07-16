@@ -59,7 +59,7 @@ Sau khi promote thành công, read replica đã chuyển thành **role:standalon
 
 Đối với phương án 2, bạn có thể thực hiện như sau:
 
-* Đầu tiên, bạn đến màn hình quản lý Database tại đường dẫn:  [https://vdb.console.vngcloud.vn/memorystore/database](https://vdb.console.vngcloud.vn/memorystore/database)
+* Đầu tiên, bạn đến màn hình quản lý Database tại đường dẫn:  [https://vdb.console.greennode.ai/memorystore/database](https://vdb.console.greennode.ai/memorystore/database)
 * Chọn đến MDS Instance và nhấn **Edit Configuration Group**.
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

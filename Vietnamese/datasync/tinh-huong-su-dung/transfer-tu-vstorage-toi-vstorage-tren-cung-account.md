@@ -35,7 +35,7 @@ Giả sử tôi đang sử dụng vStorage, nơi lưu trữ dữ liệu chính c
 
 #### Tạo Transfer Job <a href="#transferdulieutuvstoragetoivstoragetrencungaccount-taotransferjob" id="transferdulieutuvstoragetoivstoragetrencungaccount-taotransferjob"></a>
 
-**Bước 1:** Đăng nhập vào [https://datasync.console.vngcloud.vn/](https://datasync.console.vngcloud.vn/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [đây](https://register.vngcloud.vn/signup).
+**Bước 1:** Đăng nhập vào [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [đây](https://register.vngcloud.vn/signup).
 
 **Bước 2:** Nhấp vào nút **Create a transfer job** để bắt đầu tạo job chuyển đổi dữ liệu.
 

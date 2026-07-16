@@ -8,7 +8,7 @@
 
 ### Tạo tài khoản GreenNode
 
-1. Truy cập https://dashboard.console.vngcloud.vn/ và đăng ký hoặc đăng nhập.
+1. Truy cập https://dashboard.console.greennode.ai/ và đăng ký hoặc đăng nhập.
 2. Hoàn thành xác minh tài khoản.
 3. Tạo hoặc tham gia một **Organization**. Tất cả tài nguyên AgentBase đều thuộc phạm vi một organization.
 
@@ -48,7 +48,7 @@ Tất cả các cuộc gọi AgentBase API (Portal, RESTful API và SDK) đều 
 
 **Bước 1: Di chuyển đến IAM Service Accounts**
 
-1. Mở: https://iam.console.vngcloud.vn/service-accounts
+1. Mở: https://iam.console.greennode.ai/service-accounts
 2. Nếu được yêu cầu, đăng nhập bằng tài khoản GreenNode của bạn.
 
 **Bước 2: Tạo Service Account mới**

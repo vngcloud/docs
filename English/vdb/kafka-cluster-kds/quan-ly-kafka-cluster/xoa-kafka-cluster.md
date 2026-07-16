@@ -4,7 +4,7 @@ vDB Kafka Cluster provides the ability to delete a Kafka cluster when you no lon
 
 **Steps to perform:**
 
-1. **Select Kafka Cluster:** Log in to vDB Kafka Cluster here [https://vdb.console.vngcloud.vn/kafka/cluster](https://vdb.console.vngcloud.vn/kafka/cluster) and select the Kafka cluster you want to delete.
+1. **Select Kafka Cluster:** Log in to vDB Kafka Cluster here [https://vdb.console.greennode.ai/kafka/cluster](https://vdb.console.greennode.ai/kafka/cluster) and select the Kafka cluster you want to delete.
 2. **Delete Cluster:** Find the "Delete" option.
 3. **Confirm:** The system will ask you to confirm the cluster deletion. Read the warnings and information carefully before confirming.
 4. **Monitor Progress:** The system will begin the Kafka cluster deletion process. You can monitor progress through the management interface.

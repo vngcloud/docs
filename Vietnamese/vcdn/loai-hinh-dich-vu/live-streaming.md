@@ -39,7 +39,7 @@ Sử dụng phương pháp [PU](../tong-quan/kien-truc-tong-quan/co-che-phan-pho
 
 Đầu tiên, bạn cần thực hiện khởi tạo một Live Entrypoint theo hướng dẫn sau:
 
-1. Truy cập vào vCDN Portal tại [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
+1. Truy cập vào vCDN Portal tại [https://vcdn.greennode.ai/live-entrypoint/list.html](https://vcdn.greennode.ai/live-entrypoint/list.html)
 2. Chọn mục **Live Entrypoint**, sau đó chọn **Create new.**
 
 <figure><img src="../../.gitbook/assets/image (832).png" alt=""><figcaption></figcaption></figure>
@@ -76,7 +76,7 @@ Sử dụng phương pháp [PU](../tong-quan/kien-truc-tong-quan/co-che-phan-pho
 
 Tiếp theo, bạn cần thực hiện khởi tạo một Live Streaming theo hướng dẫn sau:
 
-1. Truy cập vào vCDN Portal tại [https://vcdn.vngcloud.vn](https://vcdn.vngcloud.vn/live-entrypoint/list.html)
+1. Truy cập vào vCDN Portal tại [https://vcdn.greennode.ai/live-cdn/list.html](https://vcdn.greennode.ai/live-cdn/list.html)
 2. Chọn mục **Live Streaming**, sau đó chọn **Create new.**
 
 <figure><img src="../../.gitbook/assets/image (837).png" alt=""><figcaption></figcaption></figure>

@@ -4,13 +4,13 @@
 
 **CORS (Cross-Origin Resource Sharing)** on ​​vStorage allows applications from a different domain (origin) to access resources in your bucket. This feature is useful when you want to access objects in your bucket from a web application running on a different domain, such as a frontend application that wants to load images from an S3 bucket.
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Select **the project** containing **the bucket** you want to set up CORS for.
 
 **3. Select the Action** icon and select **Set CORS.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (615).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (615) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\. Here, you import the CORS configuration file. The CORS Configuration in vStorage is a JSON file with a list of rules that you want to apply. Each rule will include:
 
@@ -20,7 +20,7 @@
 * **ExposeHeaders** : The headers that the application can see in the response from S3.
 * **MaxAgeSeconds** : The time in seconds that the browser should cache the results of a request before sending another request.
 
-<figure><img src="../../../../../../.gitbook/assets/image (616).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (616) (1).png" alt=""><figcaption></figcaption></figure>
 
 5\. Select **Update** to save the configuration for CORS.
 

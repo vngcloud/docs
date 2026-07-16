@@ -1,6 +1,6 @@
 # Hướng dẫn thay đổi số điện thoại
 
-**Bước 1**: Đăng nhập vào trang quản trị tài khoản SSO: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/) Trên menu các chức năng quản trị tài khoản, chọn mục **Đổi số điện thoại**
+**Bước 1**: Đăng nhập vào trang quản trị tài khoản SSO: [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/) Trên menu các chức năng quản trị tài khoản, chọn mục **Đổi số điện thoại**
 
 <figure><img src="../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 

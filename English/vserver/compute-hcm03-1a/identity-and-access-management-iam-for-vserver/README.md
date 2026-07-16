@@ -34,7 +34,7 @@ You need to complete the following steps to be able to use the IAM service for o
 
 After setting up the IAM strategy plan, you need to create a Personal User account on our IAM homepage from your Root user account for each person who needs to access the server:
 
-1. Visit IAM homepage: [click here](https://iam.console.vngcloud.vn/).
+1. Visit IAM homepage: [click here](https://iam.console.greennode.ai/).
 2. Open the **User account** tab
 3. Select **Create a user account.**
 4. n the **Account user name** field, enter a Name for your User account. User account name must be between 5 and 50 characters long and can only contain letters, numbers, underscore (\_), period (.), dash (-).
@@ -46,7 +46,7 @@ After setting up the IAM strategy plan, you need to create a Personal User accou
 
 Next you need to create a group of people (Group) based on common roles or responsibilities:
 
-1. Open the **Group tab** at  [https://iam.console.vngcloud.vn/user-groups](https://iam.console.vngcloud.vn/user-groups).
+1. Open the **Group tab** at  [https://iam.console.greennode.ai/user-groups](https://iam.console.greennode.ai/user-groups).
 2. Select **Create a group.**
 3. Enter the Group name in the **Name** field (The name must be from 1 to 50 characters long and can only include letters, numbers, underscores (\_), periods (.), hyphens (-) and spaces. ), then enter the note information in the **Description** field.
 4. Go to the next step and assign the appropriate Policy to the user account in the **Policy** section, then assign the appropriate user to the group in the **User** section, with the Users added to the group will have permissions on the selected Policy. in Group
@@ -57,7 +57,7 @@ Next you need to create a group of people (Group) based on common roles or respo
 
 Create an access policy that specifies what actions each user group or role can take, define detailed permissions to restrict unnecessary access, and regularly review and update access policies. Access when needed:
 
-1. Open the Policy tab at  [https://iam.console.vngcloud.vn/policies](https://iam.console.vngcloud.vn/policies).
+1. Open the Policy tab at  [https://iam.console.greennode.ai/policies](https://iam.console.greennode.ai/policies).
 2. Select **Create a Policy**.
 3. Enter the Group name in the Name field (The name must be from 1 to 50 characters long and can only include letters, numbers, underscores (\_), periods (.), hyphens (-) and spaces. ), then enter the note information in the **Description** field.
 4. Go to the next step, select the **vserver** product in the **Product** section, then select the list of permissions for your policy in the **Action** section.&#x20;
@@ -77,7 +77,7 @@ For detailed information and meanings of actions (Actions), resources (Resources
 
 The final step is to use the IAM User Account to access vServer resources via the vServer portal:
 
-1. Access path: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
+1. Access path: [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/)
 2. If you haven't signed in with this browser before, the main sign-in page will appear. **Select SIGN IN WITH IAM USER ACCOUNT**.
 3. Enter the email address of the Root user when registering a GreenNode account.
 4. Enter the **username** and **password** of the IAM user account (User account) created on the vIAM system.
@@ -90,7 +90,7 @@ The final step is to use the IAM User Account to access vServer resources via th
 
 Bước cuối cùng là sử dụng **IAM User Account** truy cập vào tài nguyên vServer qua vServer portal:
 
-1. Truy cập vào đường dẫn: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
+1. Truy cập vào đường dẫn: [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/)
 2. Nếu trước đây bạn chưa đăng nhập bằng trình duyệt này, trang đăng nhập chính sẽ xuất hiện. Chọn **ĐĂNG NHẬP VỚI IAM USER ACCOUNT**.
 3. Nhập địa chỉ **email** của người dùng Root khi đăng ký tài khoản GreenNode.
 4. Nhập **tên người dùng** và **mật khẩu** của tài khoản IAM user account (User account) được tạo trên hệ thống vIAM.
@@ -102,7 +102,7 @@ Bước cuối cùng là sử dụng **IAM User Account** truy cập vào tài n
 
 The last step is to use  IAM User Account  to access vServer resources via vServer portal:
 
-1. Access the link:  [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
+1. Access the link:  [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/)
 2. If you have not previously logged in with this browser, the main login page will appear. Select LOG IN WITH IAM USER ACCOUNT.
 3. Enter the email  address of the Root user when registering for a GreenNode account.
 4. Enter the username and password  of the IAM user account (User account) created on the viIAM system.

@@ -20,7 +20,7 @@ Bạn có thể tạo chính sách trong Bảng điều khiển quản lý vServ
 
 **Quy trình tạo chính sách sao lưu:**
 
-1. Mở bảng điều khiển vBackup tại [https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-policy](https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-policy)
+1. Mở bảng điều khiển vBackup tại [https://hcm-3.console.greennode.ai/vserver/block-store/backup/backup-policy](https://hcm-3.console.greennode.ai/vserver/block-store/backup/backup-policy)
 2. Tại thanh menu điều hướng, chọn Tab **Backup Policy**
 3. Chọn **Tạo Backup Policy**
 4. Tại trang tạo Policy, nhập thông tin **Tên Policy** tại mục **Thông tin cơ bản**
@@ -43,7 +43,7 @@ Khi chính sách sao lưu không còn phù hợp với yêu cầu kinh doanh hay
 
 **Quy trình chỉnh sửa chính sách sao lưu:**
 
-1. Mở bảng điều khiển vBackup tại [https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-policy](https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-policy)
+1. Mở bảng điều khiển vBackup tại [https://hcm-3.console.greennode.ai/vserver/block-store/backup/backup-policy](https://hcm-3.console.greennode.ai/vserver/block-store/backup/backup-policy)
 2. Tại thanh menu điều hướng, chọn Tab **Backup Policy**
 3. Chọn **Chỉnh sửa Backup Policy**
 4. Bạn có thể nhập lại tên chính sách, cũng như thay đổi tất cả các thông số về thời gian, múi giờ sao lưu, cũng như bộ lịch sao lưu, số bản lưu của Chính sách sao lưu mà bạn muốn cập nhật
@@ -55,7 +55,7 @@ Bạn có thể xóa chính sách sao lưu nếu không còn nhu cầu sử dụ
 
 **Quy trình xóa chính sách sao lưu:**
 
-1. Mở bảng điều khiển vBackup tại [https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-policy](https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-policy)
+1. Mở bảng điều khiển vBackup tại [https://hcm-3.console.greennode.ai/vserver/block-store/backup/backup-policy](https://hcm-3.console.greennode.ai/vserver/block-store/backup/backup-policy)
 2. Tại thanh menu điều hướng, chọn Tab **Backup Policy**
 3. Chọn **Xóa Backup Policy**
 4. Sau khi xóa xong chính sách sao lưu sẽ mất khỏi trang danh sách

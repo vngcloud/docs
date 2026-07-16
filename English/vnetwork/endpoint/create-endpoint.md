@@ -17,7 +17,7 @@ description: >-
 ## **Endpoint Creation Process**
 
 1. **Log in** to the GreenNode console at:\
-   [https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list](https://hcm-3-vnetwork.console.vngcloud.vn/endpoint/list)
+   [https://hcm-3-vnetwork.console.greennode.ai/endpoint/list](https://hcm-3-vnetwork.console.greennode.ai/endpoint/list)
    * Ensure that the selected **region is HCM**.
 2. From the left-hand navigation panel, click on the **“Endpoint”** menu.
 3. Click **“Create an Endpoint”** to begin the setup process.
@@ -78,15 +78,15 @@ To configure private access from your server to the Endpoint Service, follow the
 
 > ✅ **Note:** Host entry configuration is only required on servers located within the same VPC or that have a valid network route to the Endpoint Service.
 
-<figure><img src="../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption><p>Endpoint List</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (2) (1).png" alt=""><figcaption><p>Endpoint List</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption><p>Endpoint Detail</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (2).png" alt=""><figcaption><p>Endpoint Detail</p></figcaption></figure>
 
 Add host entries on servers that need to access the service via the Endpoint Service.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>Add host</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (2).png" alt=""><figcaption><p>Add host</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Private Endpoints in a VPC with DNS Support
 

@@ -21,8 +21,8 @@ vMonitor Platform Log là dịch vụ giúp thu thập dữ liệu Log của má
 Chúng tôi cung cấp cho bạn các giải pháp hàng đầu bao gồm:
 
 * Tìm kiếm, phân tích, hỗ trợ xử lý sự cố nhanh chóng: nhờ hệ thống Log Search, doanh nghiệp có thể tìm kiếm, phân tích trên những dữ liệu Log đã thu thập, từ đó giúp doanh nghiệp xử lý sự cố nhanh chóng hơn.
-* Lưu trữ Log dài hạn trên vStorage: với nhu cầu lưu trữ Log dài hạn trên hệ thống, vMonitor Log cho phép doanh nghiệp archive dữ liệu từ Log Search sang [vStorage](https://www.vngcloud.vn/product/vstorage).
-* Cho phép tìm kiếm, phân tích dữ liệu đã lưu trên vStorage: khi có nhu cầu tìm kiếm Log đã lưu vào [vStorage](https://www.vngcloud.vn/product/vstorage), doanh nghiệp có thể sử dụng tính năng refill để nạp lại dữ liệu vStorage về hệ thống Log Search.
+* Lưu trữ Log dài hạn trên vStorage: với nhu cầu lưu trữ Log dài hạn trên hệ thống, vMonitor Log cho phép doanh nghiệp archive dữ liệu từ Log Search sang [vStorage](https://vstorage.console.greennode.ai/overview).
+* Cho phép tìm kiếm, phân tích dữ liệu đã lưu trên vStorage: khi có nhu cầu tìm kiếm Log đã lưu vào [vStorage](https://vstorage.console.greennode.ai/overview), doanh nghiệp có thể sử dụng tính năng refill để nạp lại dữ liệu vStorage về hệ thống Log Search.
 * Cảnh báo nhanh chóng và kịp thời: cảnh báo kịp thời và tin cậy khi thoả mãn điều kiện.
 * Hệ thống thông báo đa dạng: hệ thống thông báo và phản hồi đa dạng qua Email, Slack, Webhook và SMS.
 * Mô hình triển khai: được triển khai và vận hành bởi những chuyên gia hàng đầu tại GreenNode, vMonitor Log có thể thu thập và xử lý lượng dữ liệu lớn lên tới hàng triệu dòng Log trên phút.

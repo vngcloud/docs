@@ -8,7 +8,7 @@ Sau khi chúng tôi xác nhận đã cung cấp ví POC cho tài khoản của b
 
 <summary>Khởi tạo project sử dụng số dư ví POC</summary>
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **region** bạn muốn lưu trữ dữ liệu.
 
@@ -50,7 +50,7 @@ Thời gian sử dụng tài nguyên POC mặc định trùng với thời gian 
 
 Sau khi bạn khởi tạo một project sử dụng ví POC, lúc này bạn có thể tiếp tục gia hạn sử dụng project cũng bằng cách sử dụng ví Poc. Chi tiết hãy làm theo các bước sau:
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49649751/image2023-3-6\_10-6-56.png?version=1\&modificationDate=1678788462000\&api=v2)tại **project** bạn muốn thực hiện gia hạn. Chọn **Gia hạn**.
 
@@ -83,7 +83,7 @@ Lúc này **project** bị xóa sẽ nằm trong **Thùng rác**, bạn có th�
 
 DBạn có thể khôi phục project sau khi xóa theo hướng dẫn bên trên bằng cách:
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn menu **Thùng rác.**
 
@@ -105,7 +105,7 @@ Quy trình và phương thức tính giá tương tự như khi khôi phục pro
 
 
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn biểu tượng ![](https://docs.vngcloud.vn/download/thumbnails/49649751/image2023-3-6\_10-2-51.png?version=1\&modificationDate=1678788252000\&api=v2)tại **project** bạn muốn thực hiện dừng POC. Chọn **Dừng POC**.
 

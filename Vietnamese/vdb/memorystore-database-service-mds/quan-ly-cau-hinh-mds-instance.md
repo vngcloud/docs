@@ -2,7 +2,7 @@
 
 **Configuration Group** là tập hợp các biến cấu hình dịch vụ cơ sở dữ liệu của MDS Instance. Thay vì phải sửa file cấu hình và restart dịch vụ như cách truyền thống, bạn có thể thay đổi chỉ bằng vài thao tác nhanh với Configuration Group. Tiện lợi hơn nữa, một Configuration Group có thể được cấu hình cho nhiều MDS Instance. Bạn có thể cấu hình một lần và áp dụng cho hàng loạt MDS Instance.
 
-Bạn truy cập dịch vụ MemoryStore database và chuyển sang mục Configuration Group để đến với giao diện quản lý Configuration Groups tại đây: [https://vdb.console.vngcloud.vn/memorystore/config-group](https://vdb.console.vngcloud.vn/memorystore/config-group)
+Bạn truy cập dịch vụ MemoryStore database và chuyển sang mục Configuration Group để đến với giao diện quản lý Configuration Groups tại đây: [https://vdb.console.greennode.ai/memorystore/config-group](https://vdb.console.greennode.ai/memorystore/config-group)
 
 * [A - Khởi tạo Configuration Group](quan-ly-cau-hinh-mds-instance.md#quanlycauhinhmdsinstance-a-khoitaoconfigurationgroup)
 * [B - Chỉnh sửa các biến cấu hình](quan-ly-cau-hinh-mds-instance.md#quanlycauhinhmdsinstance-b-chinhsuacacbiencauhinh)
@@ -50,7 +50,7 @@ Các MDS Instance đang được liên kết hay chuẩn bị được liên k�
 
 Đối với phương án 2, bạn có thể thực hiện như sau:
 
-* Đầu tiên, bạn đến màn hình quản lý Database tại đường dẫn:  [https://vdb.console.vngcloud.vn/memorystore/database](https://vdb.console.vngcloud.vn/memorystore/database)
+* Đầu tiên, bạn đến màn hình quản lý Database tại đường dẫn:  [https://vdb.console.greennode.ai/memorystore/database](https://vdb.console.greennode.ai/memorystore/database)
 * Chọn đến MDS Instance và nhấn **Edit Configuration Group**.
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -62,7 +62,7 @@ Các MDS Instance đang được liên kết hay chuẩn bị được liên k�
 
 ### D - Xóa Configuration Group <a href="#quanlycauhinhmdsinstance-a-khoitaoconfigurationgroup" id="quanlycauhinhmdsinstance-a-khoitaoconfigurationgroup"></a>
 
-**Để xóa một Configuration Group** bạn truy cập màn hình quản lý Configuration tại đây [https://vdb.console.vngcloud.vn/memorystore/config-group](https://vdb.console.vngcloud.vn/memorystore/config-group) và làm theo hướng dẫn sau:
+**Để xóa một Configuration Group** bạn truy cập màn hình quản lý Configuration tại đây [https://vdb.console.greennode.ai/memorystore/config-group](https://vdb.console.greennode.ai/memorystore/config-group) và làm theo hướng dẫn sau:
 
 Trường hợp Configuration Group chưa gắn vào MDS Instance nào. Bạn nhấn chọn Action **Delete** **.** Lúc này sẽ hiển thị một cảnh báo để chắc chắn bạn muốn xóa Configuration Group này. Nếu đồng ý xóa bạn nhấn vào nút **Delete**. Bạn chờ một lát để quá trình xóa được thực thi và khi xóa thành công thì Configuration Group này sẽ không hiển thị trên màn hình quản lý Configuration Group. Như vậy bạn đã xóa Configuration Group thành công
 

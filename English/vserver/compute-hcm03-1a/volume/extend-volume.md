@@ -12,7 +12,7 @@ Use the following guide to resize the Volume on the dashboard:
 
 **Step 1: Increase Disk Capacity on the vServer Console**
 
-1. Open the vServer console at: [https://hcm-3.console.vngcloud.vn/vserver/block-store/volumes](https://hcm-3.console.vngcloud.vn/vserver/block-store/volumes)
+1. Open the vServer console at: [https://hcm-3.console.greennode.ai/vserver/block-store/volumes](https://hcm-3.console.greennode.ai/vserver/block-store/volumes)
 2. On the "VPC/Volumes" tab, select a volume and click "**Actions**."
 3. Choose "**Expand.**"
 4. Select the new size and IOPS for the volume. Note that the volume size must be at least 20 GB and can be up to 10,000 GB. You can check the additional cost in the right column.

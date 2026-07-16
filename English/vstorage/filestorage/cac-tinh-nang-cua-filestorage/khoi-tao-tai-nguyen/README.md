@@ -4,11 +4,11 @@ To create a File Storage on the File Storage system, you can follow these steps:
 
 ## Create a File Storage <a href="#khoi-tao-file-storage" id="khoi-tao-file-storage"></a>
 
-**Step 1:** Go to [https://efs.console.vngcloud.vn/overview](https://efs.console.vngcloud.vn/overview)
+**Step 1:** Go to [https://efs.console.greennode.ai/overview](https://efs.console.greennode.ai/overview)
 
 **Step 2:** Select **File Storage** then select **Create a File storage** .
 
-<figure><img src="../../../../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (82) (3).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3:** At the File Storage initialization screen, you need to enter/select:
 

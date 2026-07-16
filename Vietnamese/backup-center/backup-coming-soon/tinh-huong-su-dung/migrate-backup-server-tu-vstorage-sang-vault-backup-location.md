@@ -11,7 +11,7 @@ Làm theo hướng dẫn dưới đây để cập nhật vị trí lưu trữ m
 Đầu tiên, bạn cần tạo mới một backup location để chuẩn bị cho việc thay đổi vị trí lưu trữ của backup server.
 
 * **Đăng nhập:** Đăng nhập vào tài khoản quản lý dịch vụ GreenNode.
-* **Truy cập vào phần quản lý Backup Location:** Tìm và chọn mục "Backup Location" tại đây [https://backupcenter.console.vngcloud.vn/backup-location/list](https://backupcenter.console.vngcloud.vn/backup-location/list)
+* **Truy cập vào phần quản lý Backup Location:** Tìm và chọn mục "Backup Location" tại đây [https://backupcenter.console.greennode.ai/backup-location/list](https://backupcenter.console.greennode.ai/backup-location/list)
 * **Tạo mới:** Nhấp vào nút "Create backup location", một cửa sổ giao diện hiện lên cho bạn điền các thông tin cần thiết.
 * **Điền thông tin:**
   * **Tên vị trí:** Đặt tên dễ nhớ và mô tả cho vị trí lưu trữ.
@@ -31,7 +31,7 @@ Làm theo hướng dẫn dưới đây để cập nhật vị trí lưu trữ m
 
 Tiếp theo, bạn cần truy cập vào trang backup server để chọn các backup server cần thay đổi vị trí lưu trữ
 
-* **Truy cập trang backup server** tại đây: [https://backupcenter.console.vngcloud.vn/backup-server/list](https://backupcenter.console.vngcloud.vn/backup-server/list)
+* **Truy cập trang backup server** tại đây: [https://backupcenter.console.greennode.ai/backup-server/list](https://backupcenter.console.greennode.ai/backup-server/list)
 * **Tìm và chọn backup server lưu tại vStorage project:**
   * Đầu tiên, bạn cần **xác định tên của vị trí lưu trữ cũ** bằng cách truy cập vào backup location, xác định tên của backup location có **type = vStorage** như hình dưới đây ![](<../../../.gitbook/assets/image (773).png>)
   *   Tiếp theo, truy cập trang **backup serve**r, chọn các backup server có nơi lưu trữ là **vBackup-Project-5fa985c8** (lưu ý rằng, tên này sẽ thay đổi tùy vào từng người dùng).&#x20;
@@ -49,7 +49,7 @@ Sau khi chọn xong các backup server cần thay đổi, nhấn chọn tính n�
 
 ## 4. Lưu backup server point tại nơi lưu trữ mới
 
-Sau khi hoàn tất thay đổi, bạn có thể vào trang [backup server](https://backupcenter.console.vngcloud.vn/backup-server/list) để xem backup location mới được ghi nhận lại. Lưu ý rằng:
+Sau khi hoàn tất thay đổi, bạn có thể vào trang [backup server](https://backupcenter.console.greennode.ai/backup-server/list) để xem backup location mới được ghi nhận lại. Lưu ý rằng:
 
 * **Lịch chạy backup** và **retention rules** vẫn theo backup policy,  chỉ khác là các backup server point mới được tạo ra, sẽ được lưu trữ tại backup location mới.
 * Các **backup server point được lưu trữ tại vBackup-Project** trước đó không có gì thay đổi, người dùng vẫn có thể truy cập khi cần thiết.

@@ -21,4 +21,4 @@ Farm là một thuật ngữ dùng riêng cho vStorage, farm được chúng tô
 * Tải lên tệp tin thông qua encrypption endpoint sẽ bảo mật tệp tin của bạn hơn nhưng có thể làm giảm tốc độ tải lên. Tốc độ tải lên trung bình khi sử dụng encryption enpoint có thể giảm từ 5% đến 10% so với việc tải lên sử dụng endpoint thông thường.
 {% endhint %}
 
-Đối với mỗi farm, ngoài các tính năng vStorage chung, sẽ có một số tính năng riêng biệt đặc trưng cho farm đó. Chi tiết sẽ được chúng tôi cập nhật sớm nhất tại đây. Bạn cũng có thể yêu cầu chúng tôi cung cấp một farm đặc biệt nếu dữ liệu bạn cần lưu trữ đủ lớn và là dữ liệu đặc thù. Để liên hệ với chúng tôi, bạn có thể yêu cầu hỗ trợ hay liên hệ trực tiếp tới nhân viên VNG Clou đang hỗ trợ của bạn.
+Đối với mỗi farm, ngoài các tính năng vStorage chung, sẽ có một số tính năng riêng biệt đặc trưng cho farm đó. Chi tiết sẽ được chúng tôi cập nhật sớm nhất tại đây. Bạn cũng có thể yêu cầu chúng tôi cung cấp một farm đặc biệt nếu dữ liệu bạn cần lưu trữ đủ lớn và là dữ liệu đặc thù. Để liên hệ với chúng tôi, bạn có thể yêu cầu hỗ trợ hay liên hệ trực tiếp tới nhân viên GreenNode đang hỗ trợ của bạn.

@@ -14,11 +14,11 @@ Tại GreenNode Service, chúng tôi cung cấp nhiều phương thức thanh to
 * **Lịch sử thanh toán**:
   * Ghi nhận số tiền tại thời điểm thanh toán cho nhiều tài nguyên
   * Ghi nhận thông tin các hóa đơn đã phát sinh tương ứng với từng tài nguyên trong lần thanh toán đó
-  * Xem lại lịch sử thanh toán tại đây: [https://dashboard.console.vngcloud.vn/payment-history](https://dashboard.console.vngcloud.vn/payment-history)
+  * Xem lại lịch sử thanh toán tại đây: [https://dashboard.console.greennode.ai/payment-history](https://dashboard.console.greennode.ai/payment-history)
 * **Lịch sử hóa đơn**:
   * Ghi nhận thông tin hóa đơn tương ứng với 1 tài nguyên cụ thể
   * Trong trường hợp này hệ thống sẽ phát sinh nhiều đầu hóa đơn tương ứng với từng tài nguyên
-  * Xem lại lịch sử hóa đơn tại đây: [https://dashboard.console.vngcloud.vn/billing-report](https://dashboard.console.vngcloud.vn/billing-report)
+  * Xem lại lịch sử hóa đơn tại đây: [https://dashboard.console.greennode.ai/billing-report](https://dashboard.console.greennode.ai/billing-report)
 * **Khi áp dụng Coupon:**&#x20;
   * Tham khảo chi tiết hướng dẫn sử dụng coupon [tại đây](ap-dung-coupon-khi-thanh-toan.md)
 

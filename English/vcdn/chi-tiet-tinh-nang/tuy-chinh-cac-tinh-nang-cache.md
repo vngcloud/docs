@@ -8,7 +8,7 @@
 
 Currently, vCDN supports customizing cache features **:** allowing customers to customize cache metrics on the system and on the browser. Specifically:
 
-<figure><img src="../../.gitbook/assets/image (348).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (348) (2).png" alt=""><figcaption></figcaption></figure>
 
 In there:
 

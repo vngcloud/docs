@@ -13,7 +13,7 @@ Tích hợp các ứng dụng, công cụ phía người dùng của bạn với
 * Truy xuất các số liệu như hạn ngạch, mức sử dụng, lưu lượng truy cập…
 * Các tính năng khác: sao lưu phiên bản container.
 
-Để giúp bạn có thể dễ dàng tích hợp cũng như trải nghiệm nhanh các vStorage API, chúng tôi cung cấp một tính năng tích hợp thông qua vStorage Portal. Bạn chỉ cần cung cấp thông tin Region, Project, thông tin chứng thực (Client ID/ Client Secret) chính xác và sau đó bạn có thể xem thông tin cũng như trải nghiệm các vStorage API ngày trên vStorage Portal. Sau khi đã truy cập được các tài nguyên (project, container, object, v.v.) của bạn trên dịch vụ vStorage, để làm việc với các tài nguyên này sử dụng vStorage API, bạn có thể tham khảo tại [https://docs.api.vngcloud.vn/service-docs/vstorage-api.html](https://docs.api.vngcloud.vn/service-docs/vstorage-api.html).
+Để giúp bạn có thể dễ dàng tích hợp cũng như trải nghiệm nhanh các vStorage API, chúng tôi cung cấp một tính năng tích hợp thông qua vStorage Portal. Bạn chỉ cần cung cấp thông tin Region, Project, thông tin chứng thực (Client ID/ Client Secret) chính xác và sau đó bạn có thể xem thông tin cũng như trải nghiệm các vStorage API ngày trên vStorage Portal. Sau khi đã truy cập được các tài nguyên (project, container, object, v.v.) của bạn trên dịch vụ vStorage, để làm việc với các tài nguyên này sử dụng vStorage API, bạn có thể tham khảo tại [https://docs.api.greennode.ai/service-docs/vstorage-api.html](https://docs.api.greennode.ai/service-docs/vstorage-api.html).
 
 ***
 

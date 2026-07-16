@@ -2,28 +2,28 @@
 
 > This guide helps you configure **Change Data Capture (CDC)** from a vDB PostgreSQL Cluster to external systems — Kafka, data pipelines, search indexes — using the **Debezium PostgreSQL Connector**.
 
----
+***
 
 ## Prerequisites
 
-- A PostgreSQL Cluster on vDB (**version 16 or 17**).
-- The user creating the Publication must be the owner of the tables, or contact GreenNode Support to create a `FOR ALL TABLES` Publication.
+* A PostgreSQL Cluster on vDB (**version 16 or 17**).
+* The user creating the Publication must be the owner of the tables, or contact GreenNode Support to create a `FOR ALL TABLES` Publication.
 
----
+***
 
 ## What is CDC and How Does it Differ from Logical Replication?
 
 CDC captures all data changes (INSERT, UPDATE, DELETE) from PostgreSQL and streams them to external systems in real time.
 
-![CDC architecture with Debezium](../../../../.gitbook/assets/vdb-cdc-debezium-architecture.png)
+![CDC architecture with Debezium](<../../../.gitbook/assets/vdb-cdc-debezium-architecture (1).png>)
 
-| | Logical Replication | CDC (Debezium) |
-|---|---|---|
-| Data destination | Another PostgreSQL Cluster | Kafka, data pipeline, etc. |
-| Who creates Replication Slot? | PostgreSQL automatically | Debezium on startup |
-| Slot cleanup on stop | PostgreSQL automatically | **Must clean up manually** |
+|                               | Logical Replication        | CDC (Debezium)             |
+| ----------------------------- | -------------------------- | -------------------------- |
+| Data destination              | Another PostgreSQL Cluster | Kafka, data pipeline, etc. |
+| Who creates Replication Slot? | PostgreSQL automatically   | Debezium on startup        |
+| Slot cleanup on stop          | PostgreSQL automatically   | **Must clean up manually** |
 
----
+***
 
 ## Step 1: Request CDC Activation and Receive Credentials
 
@@ -39,33 +39,33 @@ ALTER USER <username> PASSWORD '<new_password>';
 When managing replication slots, do not delete or modify replication slots that do not belong to you. These slots may belong to the system or other Subscriptions — accidentally dropping one may impact the system.
 {% endhint %}
 
----
+***
 
 ## Step 2: Check and Configure PostgreSQL Parameters
 
 CDC requires three PostgreSQL parameters to be correctly configured on the source cluster. If not configured, Debezium will fail to connect and adding new replicas from the portal may also fail.
 
-| Parameter | Required value | Description |
-|---|---|---|
-| `wal_level` | `logical` | Required — default is `replica`, which is not sufficient for CDC |
-| `max_replication_slots` | ≥ total slots needed | Total replication slots for all replicas, subscriptions, and CDC connectors |
-| `max_wal_senders` | ≥ total senders needed | Total WAL sender processes (typically equals `max_replication_slots`) |
+| Parameter               | Required value         | Description                                                                 |
+| ----------------------- | ---------------------- | --------------------------------------------------------------------------- |
+| `wal_level`             | `logical`              | Required — default is `replica`, which is not sufficient for CDC            |
+| `max_replication_slots` | ≥ total slots needed   | Total replication slots for all replicas, subscriptions, and CDC connectors |
+| `max_wal_senders`       | ≥ total senders needed | Total WAL sender processes (typically equals `max_replication_slots`)       |
 
 **How to calculate `max_replication_slots` and `max_wal_senders`:**
 
-| Component | Slots + senders needed |
-|---|---|
-| Each replica node in the cluster | 1 + 1 |
-| Each Subscription (logical replication) | 1 + 1 |
-| Each CDC connector (Debezium) | 1 + 1 |
+| Component                               | Slots + senders needed |
+| --------------------------------------- | ---------------------- |
+| Each replica node in the cluster        | 1 + 1                  |
+| Each Subscription (logical replication) | 1 + 1                  |
+| Each CDC connector (Debezium)           | 1 + 1                  |
 
 **Example:** 3-node cluster (2 replicas) + 1 CDC connector → `max_replication_slots = 3`, `max_wal_senders = 3`.
 
 {% hint style="warning" %}
-Changing `wal_level`, `max_replication_slots`, and `max_wal_senders` requires a **cluster restart**. Update all three parameters at the same time to trigger only one restart. See [PostgreSQL Cluster Parameters](postgresql-cluster-parameters.md) for instructions.
+Changing `wal_level`, `max_replication_slots`, and `max_wal_senders` requires a **cluster restart**. Update all three parameters at the same time to trigger only one restart. See [PostgreSQL Cluster Parameters](https://github.com/vngcloud/docs/blob/main/English/vdb/relational-database-service-rds/postgresql/postgresql-cluster-parameters.md) for instructions.
 {% endhint %}
 
----
+***
 
 ## Step 3: Create a Publication
 
@@ -89,13 +89,13 @@ SELECT pubname, puballtables, pubinsert, pubupdate, pubdelete
 FROM pg_publication;
 ```
 
----
+***
 
 ## Step 4: Configure the Debezium Connector
 
-**Kafka Connect** is the framework (bundled with Kafka) for running *connectors* — processes that move data between Kafka and external systems. Connectors are loaded into Kafka Connect as JSON configuration and managed via **REST API**.
+**Kafka Connect** is the framework (bundled with Kafka) for running _connectors_ — processes that move data between Kafka and external systems. Connectors are loaded into Kafka Connect as JSON configuration and managed via **REST API**.
 
-The **Debezium PostgreSQL Connector** runs as a *source connector* inside Kafka Connect: it maintains a connection to the source cluster, watches for data changes in the database, and pushes each change as an event to the corresponding Kafka topic.
+The **Debezium PostgreSQL Connector** runs as a _source connector_ inside Kafka Connect: it maintains a connection to the source cluster, watches for data changes in the database, and pushes each change as an event to the corresponding Kafka topic.
 
 Use the **username and password provided by GreenNode** (replication user) to configure the Debezium PostgreSQL Connector:
 
@@ -119,29 +119,29 @@ Use the **username and password provided by GreenNode** (replication user) to co
 }
 ```
 
-| Parameter | Description |
-|---|---|
-| `database.hostname` | Hostname provided by GreenNode |
-| `database.port` | PostgreSQL connection port |
-| `database.user` | Username provided by GreenNode |
-| `database.password` | Password provided by GreenNode |
-| `database.dbname` | Source database name |
-| `topic.prefix` | Prefix for Kafka topic names. Each table is published to `<prefix>.<schema>.<table>` — for example: prefix `pg-cdc` → topic `pg-cdc.public.orders` |
-| `plugin.name` | Logical decoding plugin (built-in since PG 10, no extension needed) |
-| `publication.name` | Name of the Publication created in Step 3 |
-| `slot.name` | Replication slot name — use a meaningful name for easier management |
-| `table.include.list` | List of tables to capture (format: `schema.table`) |
-| `snapshot.mode` | Controls whether the connector reads existing table data on startup. In the example, `initial` reads all existing data on first startup, then only records new changes. |
+| Parameter             | Description                                                                                                                                                              |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `database.hostname`   | Hostname provided by GreenNode                                                                                                                                           |
+| `database.port`       | PostgreSQL connection port                                                                                                                                                |
+| `database.user`       | Username provided by GreenNode                                                                                                                                           |
+| `database.password`   | Password provided by GreenNode                                                                                                                                            |
+| `database.dbname`     | Source database name                                                                                                                                                      |
+| `topic.prefix`        | Prefix for Kafka topic names. Each table is published to `<prefix>.<schema>.<table>` — for example: prefix `pg-cdc` → topic `pg-cdc.public.orders`                       |
+| `plugin.name`         | Logical decoding plugin (built-in since PG 10, no extension needed)                                                                                                       |
+| `publication.name`    | Name of the Publication created in Step 3                                                                                                                                 |
+| `slot.name`           | Replication slot name — use a meaningful name for easier management                                                                                                       |
+| `table.include.list`  | List of tables to capture (format: `schema.table`)                                                                                                                        |
+| `snapshot.mode`       | Controls whether the connector reads existing table data on startup. In the example, `initial` reads all existing data on first startup, then only records new changes. |
 
 **`snapshot.mode` values:**
 
-| Value | Meaning |
-|---|---|
-| `initial` (default) | Reads all existing data on first startup, then only records new changes |
-| `always` | Re-reads all existing data on every startup |
-| `no_data` | Does not read existing data — only records changes that occur after the connector starts |
-| `initial_only` | Reads existing data once, then stops |
-| `when_needed` | Reads existing data only when the connector determines it's necessary |
+| Value                | Meaning                                                                                   |
+| --------------------- | -------------------------------------------------------------------------------------------- |
+| `initial` (default)  | Reads all existing data on first startup, then only records new changes                    |
+| `always`              | Re-reads all existing data on every startup                                                |
+| `no_data`             | Does not read existing data — only records changes that occur after the connector starts   |
+| `initial_only`        | Reads existing data once, then stops                                                       |
+| `when_needed`         | Reads existing data only when the connector determines it's necessary                      |
 
 See all options at [Debezium PostgreSQL Connector — Snapshot properties](https://debezium.io/documentation/reference/stable/connectors/postgresql.html#postgresql-connector-snapshot-properties).
 
@@ -149,7 +149,7 @@ See all options at [Debezium PostgreSQL Connector — Snapshot properties](https
 `plugin.name: pgoutput` is built into PostgreSQL since version 10. No additional extension installation is required.
 {% endhint %}
 
----
+***
 
 ## Step 5: Register the Connector via Kafka Connect REST API
 
@@ -169,7 +169,7 @@ curl -s http://<kafka-connect-host>:8083/connectors/<connector_name>/status
 
 The connector is running normally when both the connector and task `state` are `RUNNING`.
 
----
+***
 
 ## Step 6: Monitor the Replication Slot
 
@@ -193,7 +193,7 @@ When you no longer need the connector, **stop or delete the connector first** (s
 SELECT pg_drop_replication_slot('<slot_name>');
 ```
 
----
+***
 
 ## Actions to Avoid
 
@@ -201,12 +201,12 @@ SELECT pg_drop_replication_slot('<slot_name>');
 The following actions may cause data loss or disrupt the CDC pipeline.
 {% endhint %}
 
-| Action | Risk |
-|---|---|
+| Action                                                           | Risk                                                        |
+| ---------------------------------------------------------------- | ----------------------------------------------------------- |
 | Delete the connector without dropping the Replication Slot first | Inactive slot → WAL accumulates → disk full → cluster crash |
-| Run `pg_drop_replication_slot()` on a slot that is not yours | May drop a system slot → replication lost |
+| Run `pg_drop_replication_slot()` on a slot that is not yours     | May drop a system slot → replication lost                   |
 
----
+***
 
 ## Result
 
@@ -227,7 +227,7 @@ kafka-console-consumer \
   --from-beginning
 ```
 
-| I want to... | Go to |
-|---|---|
-| Configure Logical Replication between two Clusters | [Configure Logical Replication](configure-logical-replication.md) |
-| View cluster configuration parameters | [PostgreSQL Cluster Parameters](postgresql-cluster-parameters.md) |
+| I want to...                                       | Go to                                                                                                                                                               |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Configure Logical Replication between two Clusters | [Configure Logical Replication](configure-logical-replication.md)                                                                                                   |
+| View cluster configuration parameters              | [PostgreSQL Cluster Parameters](https://github.com/vngcloud/docs/blob/main/English/vdb/relational-database-service-rds/postgresql/postgresql-cluster-parameters.md) |

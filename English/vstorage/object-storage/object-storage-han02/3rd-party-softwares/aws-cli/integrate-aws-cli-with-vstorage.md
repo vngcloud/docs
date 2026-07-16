@@ -96,7 +96,7 @@ Enter information:
 * **Default region name:** `HAN02`
 * **Default output format:** `json`
 
-<figure><img src="../../../../../.gitbook/assets/image (593).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (593) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Check the connection via command:
 

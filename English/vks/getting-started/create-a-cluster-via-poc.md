@@ -15,8 +15,8 @@ Conditions for using POC resources:
 
 To initialize a **Cluster** and **Deploy** a **Workload**, you need:
 
-* At least 1 **VPC** and 1 **Subnet** in **ACTIVE** state. If you do not have a VPC or Subnet yet, please create one following the instructions [here.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/)
-* At least 1 **SSH** key in **ACTIVE** state. If you do not have any SSH key, please create one following the instructions [here.](../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
+* At least 1 **VPC** and 1 **Subnet** in **ACTIVE** state. If you do not have a VPC or Subnet yet, please create one following the instructions [here.](https://github.com/vngcloud/docs/blob/main/English/vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/README.md)
+* At least 1 **SSH** key in **ACTIVE** state. If you do not have any SSH key, please create one following the instructions [here.](https://github.com/vngcloud/docs/blob/main/English/vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
 * Installed and configured **kubectl** on your device. Please refer [here](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) if you are not sure how to install and use kubectl. Additionally, you should not use a kubectl version that is too old; we recommend using a kubectl version that differs by no more than one version from the cluster version.
 
 ***
@@ -27,7 +27,7 @@ A **Cluster in Kubernetes** is a collection of one or more virtual machines (VMs
 
 To create a Cluster, follow the steps below:
 
-**Step 1:** Go to [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Step 1:** Go to [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Step 2:** On the **Overview** screen, select **Activate.**
 
@@ -54,7 +54,7 @@ To create a Cluster, follow the steps below:
 
 After the Cluster is successfully created, you can connect and check the Cluster information by following these steps:
 
-**Step 1:** Go to [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Go to [https://vks.console.greennode.ai/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2:** The Cluster list is displayed, select the **Download** icon and select **Download Config File** to download the kubeconfig file. This file will give you full access to your Cluster.
 
@@ -244,9 +244,9 @@ kubectl apply -f persistent-volume.yaml
 
 For **Snapshot** resources, you cannot specify snapshot to use the POC wallet from VKS. To create a Snapshot via the POC wallet, on **vServer Portal**, please select **Activate Snapshot**, then on the **Checkout** screen, please select the **POC** wallet. At this point, **all your snapshot resources will be created via the POC wallet**. Therefore, stopping POC needs to be done through **vConsole** or **vServer Portal**. See the image below for reference.
 
-<figure><img src="../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (85) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (87) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Install GreenNode Snapshot Controller**
 

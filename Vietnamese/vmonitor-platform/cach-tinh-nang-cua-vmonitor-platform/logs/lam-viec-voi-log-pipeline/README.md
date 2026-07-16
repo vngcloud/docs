@@ -72,7 +72,7 @@ Các quy tắc sau áp dụng cho việc đặt tên Processor trong vMonitor Pl
 
 Để tạo một log pipeline, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor/).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/).
 2. Chọn thư mục **Log**, sau đó chọn menu **Log pipeline**.
 3. Chọn **Create a Log pipeline**.
 4. Nhập **Pipeline name**. Tên pipeline phải tuân thủ theo quy định của chúng tôi được mô tả phía trên.
@@ -85,7 +85,7 @@ Các quy tắc sau áp dụng cho việc đặt tên Processor trong vMonitor Pl
 
 Để chỉnh sửa một log pipeline, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Log.**
 3. Chọn **Log pipeline.**
 4. Trong danh sách log pipeline đang có, tại **Log pipeline** mà bạn muốn chỉnh sửa, chọn <img src="../../../../.gitbook/assets/image (40).png" alt="" data-size="line">.
@@ -99,7 +99,7 @@ Các quy tắc sau áp dụng cho việc đặt tên Processor trong vMonitor Pl
 
 Khi bạn không có nhu cầu sử dụng một Log pipeline tùy chỉnh nữa, bạn có thể thực hiện xóa Log pipeline khỏi hệ thống theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Log.**
 3. Tại **Log pipeline** bạn muốn thực hiện xóa, chọn <img src="../../../../.gitbook/assets/image (23).png" alt="" data-size="line">
 4. Chọn **Delete**.

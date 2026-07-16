@@ -10,7 +10,7 @@
 
 On VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** operates according to the following model:
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 **In there:**
 
@@ -25,7 +25,7 @@ On VKS, **CNI (Container Network Interface) Cilium VPC Native Routing** operates
 To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
 * There is at least 1 **VPC** and 1 **Subnet in ACTIVE** state . If you do not have any VPC, Subnet, please initialize VPC, Subnet according to the instructions below:
-  * **Step 1**: Access the vServer homepage at the link [https://hcm-3.console.vngcloud.vn/vserver](https://hcm-3.console.vngcloud.vn/vserver)
+  * **Step 1**: Access the vServer homepage at the link [https://hcm-3.console.greennode.ai/vserver](https://hcm-3.console.greennode.ai/vserver)
   * **Step 2**: Select the **VPCs** menu in the left menu of the screen.
   * **Step 3**: Here, if you don't have any VPC yet, please select **Create VPC** by entering the **VPC name** and defining the desired **CIDR/16 range**.
   * **Step 4**: After having at least 1 VPC, to create a subnet, you need to select **View Detail** to expand the control panel at the bottom, including the **Subnet** section.
@@ -34,9 +34,9 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
     * **Primary CIDR** : :This is the primary IP address range of the subnet. All internal IP addresses of virtual machines (VMs) in this subnet will be taken from this address range. For example, if you set Primary CIDR to 10.1.0.0/24, the IP addresses of the VMs will be in the range of 10.1.0.1 to 10.1.0.254.
     * **Secondary CIDR** : This is a secondary IP address range, used to provide additional IP addresses or to separate different services within the same subnet. Each Node has a private IP address range for its pods (Pod CIDR). The pods in each node use addresses from this CIDR and communicate over the virtual network.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**
@@ -59,7 +59,7 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
 To initialize a Cluster, follow the steps below:
 
-**Step 1:** Access [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Step 1:** Access [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Step 2: On the Overview** screen , select **Activate.**
 
@@ -78,7 +78,7 @@ To initialize a Cluster, follow the steps below:
 
 #### **Calculating the number of IPs for pods and nodes:** <a href="#cac-tinh-toan-so-luong-ip-cho-pod-va-node" id="cac-tinh-toan-so-luong-ip-cho-pod-va-node"></a>
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Suppose, when initializing the cluster, I choose:
 
@@ -94,7 +94,7 @@ Suppose, when initializing the cluster, I choose:
 | **/25**                 | 128                        | 32                                                                  | 128                                              | 64                                            |
 | **/26**                 | 64                         | 64                                                                  | 64                                               | 32                                            |
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**
@@ -116,7 +116,7 @@ Suppose, when initializing the cluster, I choose:
 
 Below are instructions for deploying an nginx deployment and testing IP assignment for the pods deployed in your cluster.
 
-**Step 1:** Access [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Access [https://vks.console.greennode.ai/k8s-cluster](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2:** The Cluster list is displayed, select the icon **Download** and select **Download Config File** to download the kubeconfig file. This file will give you full access to your Cluster.
 

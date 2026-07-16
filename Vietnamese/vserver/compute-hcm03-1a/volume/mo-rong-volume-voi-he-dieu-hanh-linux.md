@@ -13,7 +13,7 @@ Sử dụng hướng dẫn sau để thay đổi kích thước Volume trên b�
 
 **Bước 1: Tăng dung lượng ổ cứng trên bảng điều khiển vServer**
 
-1. Mở trình điều khiển vServer tại: [https://hcm-3.console.vngcloud.vn/vserver/block-store/volumes](https://hcm-3.console.vngcloud.vn/vserver/block-store/volumes)
+1. Mở trình điều khiển vServer tại: [https://hcm-3.console.greennode.ai/vserver/block-store/volumes](https://hcm-3.console.greennode.ai/vserver/block-store/volumes)
 2. Trên tab VPC/  Volumes, chọn một Volume và nhấn chọn **Hành động**
 3. Sau đó chọn **Mở rộng**
 4. Chọn kích thước và IOPS mới cho Volume, lưu ý kích thước của Volume phải lớn hơn hoặc bằng 20 GB và kích thước lớn nhất là 10000 GB, bạn có thể kiểm tra chi phí tăng thêm ở cột bên phải

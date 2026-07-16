@@ -2,13 +2,13 @@
 
 **Event Notification** in vStorage is a feature that allows you to receive notifications about events that occur in your bucket as a JSON file, such as when an object is uploaded, deleted, or overwritten.
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Select **the project** containing **the bucket** you want to set up event notification for.
 
 **3. Select the Action** icon and select **Configure event notification.**
 
-<figure><img src="../../../../../../.gitbook/assets/image (617).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (617) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\. Select **Create an Event notification** .
 
@@ -34,11 +34,11 @@
     * Folder structure and file names: `[Bucket]/[YYYY]/[MM]/[DD]/[YYYY]-[MM]-[DD]-[hh]-[mm]`.
     * For example:`bucketB/2023/03/01/2023-03-01-21-32`
 
-<figure><img src="../../../../../../.gitbook/assets/image (618).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (618) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (619).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (619) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (620).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (620) (1).png" alt=""><figcaption></figcaption></figure>
 
 5\. Select **Create event notification** to initiate this event.
 

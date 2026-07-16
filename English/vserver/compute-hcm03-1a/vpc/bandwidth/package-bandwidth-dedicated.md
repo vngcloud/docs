@@ -13,7 +13,7 @@ The Dedicated bandwidth package offers customizable speeds tailored to your need
 * When creating a bandwidth package, you can choose to purchase either Domestic bandwidth or International bandwidth, or both at the same time.
 {% endhint %}
 
-**Step 1:** Log in to your GreenNode account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Step 1:** Log in to your GreenNode account and go to [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
 
 **Step 2:** In the left-hand menu, under the **Network** section, select **Bandwidth**.
 
@@ -47,7 +47,7 @@ The Dedicated bandwidth package offers customizable speeds tailored to your need
 
 ### **Viewing Package Details**
 
-**Step 1:** Log in to your GreenNode account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Step 1:** Log in to your GreenNode account and go to [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
 
 **Step 2:** In the left-hand menu, under the **Network** section, select **Bandwidth**.
 
@@ -68,7 +68,7 @@ The Dedicated bandwidth package offers customizable speeds tailored to your need
 * IP addresses with the ATTACHED status mean that they have already been assigned to a bandwidth package. When you add these ATTACHED IP addresses to your bandwidth package, they will be removed from the old package and reassigned to the new one. **This ensures that an IP address can only be assigned to one bandwidth package at a time.**
 {% endhint %}
 
-**Step 1:** Log in to your GreenNode account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Step 1:** Log in to your GreenNode account and go to [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
 
 **Step 2:** In the left-hand menu, under the **Network** section, select **Bandwidth**.
 
@@ -78,19 +78,19 @@ The Dedicated bandwidth package offers customizable speeds tailored to your need
 
 **Step 5:** The **Add IP** screen will be displayed. You can filter the list of IP addresses by type by selecting an option in the **Resource Type** field. Currently, we provide the following resource types: **K8S, Floating IP, External Interface, vLB.**
 
-**Step 6:** Select one or more IP addresses by selecting the icon ![](<../../../../.gitbook/assets/image (70) (2).png>) and then choosing **Add**.
+**Step 6:** Select one or more IP addresses by selecting the icon ![](<../../../../.gitbook/assets/image (70) (2) (1).png>) and then choosing **Add**.
 
 ***
 
 ### **Removing IP Addresses from the Package**
 
-**Step 1:** Log in to your GreenNode account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Step 1:** Log in to your GreenNode account and go to [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
 
 **Step 2:** In the left-hand menu, under the **Network** section, select **Bandwidth**.
 
 **Step 3:** From the list of available bandwidth packages, select the **Dedicated** package according to your usage needs.
 
-**Step 4:** Under the **IP List** section, select the icon ![](<../../../../.gitbook/assets/image (71) (1).png>) next to the **IP address** you want to remove from the package and choose the icon ![](<../../../../.gitbook/assets/image (72) (2).png>)
+**Step 4:** Under the **IP List** section, select the icon ![](<../../../../.gitbook/assets/image (71) (1) (1).png>) next to the **IP address** you want to remove from the package and choose the icon ![](<../../../../.gitbook/assets/image (72) (2) (1).png>)
 
 **Step 5:** On the IP removal confirmation screen, select **Delete**.
 
@@ -104,7 +104,7 @@ The Dedicated bandwidth package offers customizable speeds tailored to your need
 
 ### **Resize Package**
 
-**Step 1:** Log in to your GreenNode account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+**Step 1:** Log in to your GreenNode account and go to [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
 
 **Step 2:** In the left-hand menu, under the **Network** section, select **Bandwidth**.
 

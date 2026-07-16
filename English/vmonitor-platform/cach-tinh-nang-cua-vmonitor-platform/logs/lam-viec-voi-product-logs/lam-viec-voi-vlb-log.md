@@ -1,6 +1,6 @@
 # Working with vLB-Log
 
-To view vLB logs, access vMonitor Platform at [the link](https://hcm-3.console.vngcloud.vn/vmonitor) , then go to **Infrastructure list/vLB Log.** Here you can see a list of all vLBs on your HCM03. On this screen, you will see basic information columns such as:
+To view vLB logs, access vMonitor Platform at [the link](https://hcm-3.console.greennode.ai/vmonitor) , then go to **Infrastructure list/vLB Log.** Here you can see a list of all vLBs on your HCM03. On this screen, you will see basic information columns such as:
 
 * **vLB Project** : name of vLB.
 * **Log Project** : log project will contain vLB logs when you enable "Detailed Monitoring".

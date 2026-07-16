@@ -1,6 +1,6 @@
 # Thay đổi chính sách sao lưu
 
-1. Đăng nhập vào bảng điều khiển vBackup tại: [https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-server](https://hcm-3.console.vngcloud.vn/vserver/block-store/backup/backup-server). Bạn phải đăng nhập với tư cách người dùng IAM, đảm nhận vai trò IAM account hoặc đăng nhập với tư cách Root user account (không được khuyến nghị) trong tài khoản quản lý của tổ chức.
+1. Đăng nhập vào bảng điều khiển vBackup tại: [https://hcm-3.console.greennode.ai/vserver/block-store/backup/backup-server](https://hcm-3.console.greennode.ai/vserver/block-store/backup/backup-server). Bạn phải đăng nhập với tư cách người dùng IAM, đảm nhận vai trò IAM account hoặc đăng nhập với tư cách Root user account (không được khuyến nghị) trong tài khoản quản lý của tổ chức.
 2. Tại tab Backup Server, chỉ định Backup Server sau đó hãy chọn **Thay đổi Policy**
 3. Tìm chính sách mà bạn muốn thay đổi, rồi chọn **Áp dụng**, lưu ý rằng: bạn có thể thay đổi Policy đồng thời cho một hoặc nhiều Backup Server.
 

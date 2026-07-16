@@ -87,7 +87,7 @@ _**Monday schedule (12:00 PM)**:_
 
 Below are instructions for updating the Upgrade Policy on the VKS system:
 
-**Step 1:** Go to [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Step 1:** Go to [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Step 2:** Select **Create a Cluster.**
 
@@ -189,4 +189,4 @@ Additionally, for a successful upgrade, you should also consider the following 2
 
 If you want to proactively control Kubernetes Cluster upgrades (manually upgrade) and do not want the system to automatically upgrade, you can disable the **Regular Upgrade** feature by unchecking **Enable Automatic Upgrade**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>

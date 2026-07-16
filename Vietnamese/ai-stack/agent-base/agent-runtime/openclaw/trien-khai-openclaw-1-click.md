@@ -12,8 +12,8 @@ OpenClaw 1-Click cho phép triển khai AI Agent cá nhân trên GreenNode Agent
 
 Bạn truy cập Agent Marketplace theo 2 cách:
 
-* **Cách 1**: Truy cập trang chủ GreenNode tại [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/). Tại giao diện chính, tìm đến **AI Stack** và chọn **Agentbase** → **Agent Marketplace**.
-* **Cách 2**: Truy cập trực tiếp tại [https://aiplatform.console.vngcloud.vn/agent-marketplace](https://aiplatform.console.vngcloud.vn/agent-marketplace).
+* **Cách 1**: Truy cập trang chủ GreenNode tại [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/). Tại giao diện chính, tìm đến **AI Stack** và chọn **Agentbase** → **Agent Marketplace**.
+* **Cách 2**: Truy cập trực tiếp tại [https://aiplatform.console.greennode.ai/agent-marketplace](https://aiplatform.console.greennode.ai/agent-marketplace).
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 154428.png" alt=""><figcaption></figcaption></figure>
 

@@ -6,7 +6,7 @@ To view properties for a project, you can:
 
 &#x20;Use vStorage Portal
 
-1\. Log in to [https://vstorage.console.vngcloud.vn/storage](https://vstorage.console.vngcloud.vn/storage).
+1\. Log in to [https://vstorage.console.greennode.ai/storage](https://vstorage.console.greennode.ai/storage).
 
 2\. Select the icon ![image2023-2-1\_14-25-3.png](https://docs.vngcloud.vn/download/attachments/49648432/image2023-2-1\_14-25-3.png?version=1\&modificationDate=1675236304000\&api=v2) at the **project** you want to view details for.
 

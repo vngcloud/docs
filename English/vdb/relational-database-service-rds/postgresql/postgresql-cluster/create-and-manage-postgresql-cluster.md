@@ -12,8 +12,8 @@ For more information about concepts, architecture, and the comparison between Si
 
 You can access the vDB service interface in 2 ways:
 
-* **Option 1**: Go to the GreenNode homepage at [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/). On the main interface, navigate to **vServer** and select **vDB Relational** from the list of vServer products/services.
-* **Option 2**: Go directly to the vDB Relational homepage at [https://vdb.console.vngcloud.vn/relational/database](https://vdb.console.vngcloud.vn/relational/database)
+* **Option 1**: Go to the GreenNode homepage at [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/). On the main interface, navigate to **vServer** and select **vDB Relational** from the list of vServer products/services.
+* **Option 2**: Go directly to the vDB Relational homepage at [https://vdb.console.greennode.ai/relational/database](https://vdb.console.greennode.ai/relational/database)
 
 ### Create a PostgreSQL Cluster
 

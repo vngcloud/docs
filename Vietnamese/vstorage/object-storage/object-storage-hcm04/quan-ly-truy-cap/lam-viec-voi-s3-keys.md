@@ -10,7 +10,7 @@ Trên hệ thống vStorage, S3 key là cặp key bao gồm access key và secre
 
 Để khởi tạo S3 key, làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) với tài khoản <mark style="background-color:orange;">Root User Account</mark>.
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) với tài khoản <mark style="background-color:orange;">Root User Account</mark>.
 2. Chọn **Region HCM04.**
 3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (581).png" alt="" data-size="line"> tại project mà bạn vừa khởi tạo sau đó chọn mục **Identity and Access Management.**
 4. Tại mục **List of S3 keys of this project**, chọn **Generate S3 key**.
@@ -33,7 +33,7 @@ Trên hệ thống vStorage, S3 key là cặp key bao gồm access key và secre
 
 Để khởi tạo S3 key, làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) với tài khoản <mark style="background-color:orange;">IAM User Account</mark>.
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) với tài khoản <mark style="background-color:orange;">IAM User Account</mark>.
 2. Chọn **Region HCM04.**
 3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (581).png" alt="" data-size="line"> tại project mà bạn vừa khởi tạo sau đó chọn mục **Identity and Access Management.**
 4. Tại mục **List of S3 keys of this project**, chọn **Generate S3 key**.
@@ -183,7 +183,7 @@ CORS (Cross-Origin Resource Sharing) là cơ chế bảo mật cho phép các tr
 
 Để hủy (xóa) một hay nhiều S3 key đã tạo trước đó, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) với tài khoản <mark style="background-color:orange;">Root User Account</mark> hoặc tài khoản <mark style="background-color:orange;">IAM User Account</mark>.
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) với tài khoản <mark style="background-color:orange;">Root User Account</mark> hoặc tài khoản <mark style="background-color:orange;">IAM User Account</mark>.
 2. họn **Region HCM04.**
 3. Chọn biểu tượng <img src="../../../../.gitbook/assets/image (581).png" alt="" data-size="line"> tại project mà bạn vừa khởi tạo sau đó chọn mục **Identity and Access Management.**
 4. Tại mục **List of S3 keys of this project**, chọn **S3 key** mà bạn muốn xóa sau đó chọn **Delete.**

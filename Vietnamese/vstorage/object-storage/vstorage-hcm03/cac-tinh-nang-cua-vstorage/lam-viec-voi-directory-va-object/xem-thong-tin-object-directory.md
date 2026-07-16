@@ -8,7 +8,7 @@ Sau khi bạn đã tạo directory và tải lên object vào container hay tả
 {% tab title="Sử dụng vStorage Portal" %}
 
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **project** sau đó chọn **container** chứa **object/ directory** bạn muốn xem thông tin chi tiết.
 

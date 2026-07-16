@@ -8,13 +8,13 @@ VPC peering is a service in a cloud environment that allows direct connections b
 
 #### **Create Peering** <a href="#peering-createpeering" id="peering-createpeering"></a>
 
-Currently, we do not support creating VPC Peering on the interface. To perform the creation operation, please send us a request via email: [support@vngcloud.vn](mailto:support@vngcloud.vn).
+Currently, we do not support creating VPC Peering on the interface. To perform the creation operation, please send us a request via email: [support@greennode.ai](mailto:support@greennode.ai).
 
 #### **Delete VPC Peering** <a href="#peering-deletevpcpeering" id="peering-deletevpcpeering"></a>
 
 To perform Peering deletion, you need to follow the steps below:
 
-1. Access the VPC Peering console at: [https://hcm-3.console.vngcloud.vn/vserver/network/peering](https://hcm-3.console.vngcloud.vn/vserver/network/peering)
+1. Access the VPC Peering console at: [https://hcm-3.console.greennode.ai/vserver/network/peering](https://hcm-3.console.greennode.ai/vserver/network/peering)
 2. Select Peering, tap **Delete** and confirm
 
 <br>

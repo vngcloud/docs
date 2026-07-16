@@ -2,7 +2,7 @@
 
 Nếu bạn không còn nhu cầu sử dụng transfer job, hãy thực hiện xóa nó theo hướng dẫn sau:&#x20;
 
-**Bước 1:** Truy cập vào [https://datasync.console.vngcloud.vn/](https://datasync.console.vngcloud.vn/transfer-job/list)
+**Bước 1:** Truy cập vào [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/transfer-job/list)
 
 **Bước 2:**&#x54;ại menu bên trái, chọn mục **Transfer Job**.&#x20;
 

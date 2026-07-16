@@ -9,7 +9,7 @@ To set up metadata for an object, you can follow the instructions below:
 \
 
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 
 2\. Choose the **project** and **container**, then select the **objects** for which you want to set up metadata.
 

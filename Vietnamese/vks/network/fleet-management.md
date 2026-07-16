@@ -21,7 +21,7 @@ Fleet Management là tính năng giúp gom nhóm các Kubernetes cluster trên n
 
 Thực hiện theo hướng dẫn sau đây để tạo một Fleet và quản lý phân phối traffic với GLB:
 
-**Bước 1:** Đăng nhập vào **VKS Portal** tại link: [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Bước 1:** Đăng nhập vào **VKS Portal** tại link: [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Bước 2:** Chọn mục **Fleet Management**
 
@@ -113,7 +113,7 @@ kubectl apply -f glb-nginx.yaml
 
 Thay `glb-nginx.yaml` bằng tên file YAML của bạn.
 
-Lúc này, hệ thống sẽ tạo mới một vGLB trên hệ thống vGLB, bạn có thể kiểm tra vGLB được tạo tai [đây](https://glb.console.vngcloud.vn/glb/list).
+Lúc này, hệ thống sẽ tạo mới một vGLB trên hệ thống vGLB, bạn có thể kiểm tra vGLB được tạo tai [đây](https://glb.console.greennode.ai/glb/list).
 
 <figure><img src="../../.gitbook/assets/image (944).png" alt=""><figcaption></figcaption></figure>
 

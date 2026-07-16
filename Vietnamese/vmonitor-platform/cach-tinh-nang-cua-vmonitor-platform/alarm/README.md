@@ -49,7 +49,7 @@ Các quy tắc sau áp dụng cho việc đặt tên Alarm trong vMonitor Platfo
 
 Mỗi Alarm **chỉ có thể chứa một loại cảnh báo được thiết lập trên dữ liệu metrics hoặc dữ liệu logs**. Để tạo Alarm, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Alarm.**
 3. Chọn **Create an Alarm**.
 4. Trong mục **Select an alarm type**, chọn **Metric** nếu bạn muốn thiết lập cảnh báo dựa trên dữ liệu metric hoặc chọn **Log** nếu bạn muốn thiết lập cảnh báo dựa trên dữ liệu log.&#x20;
@@ -97,7 +97,7 @@ Mỗi Alarm **chỉ có thể chứa một loại cảnh báo được thiết l
 
 Để chỉnh sửa Alarm, hãy làm theo hướng dẫn bên dưới:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Alarm.**
 3. Tại **Alarm** mà bạn muốn chỉnh sửa, chọn **Edit.**
 4. Chỉnh sửa các thông số cho **Alarm** mà bạn mong muốn. Bạn không thể thay đổi thông tin trong mục Select an **alarm type** mà chỉ có thể chỉnh sửa các thông số alarm trong các mục: **Set alarm conditions, Configure actions, Add alarm description.** Việc chỉnh sửa này tương tự như khi bạn thực hiện tạo mới một Alarm theo hướng dẫn bên trên.
@@ -109,7 +109,7 @@ Mỗi Alarm **chỉ có thể chứa một loại cảnh báo được thiết l
 
 Khi bạn không có nhu cầu sử dụng một alarm nữa, bạn có thể thực hiện xóa alarm khỏi hệ thống theo hướng dẫn bên dưới:&#x20;
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **alarm.**
 3. Tại **alarm** mà bạn muốn xóa, chọn **Checkbox Chọn.** Bạn có thể chọn một hoặc nhiều alarm để thực hiện xóa ở bước này.
 4. Chọn **Delete**.

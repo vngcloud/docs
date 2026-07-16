@@ -4,7 +4,7 @@ vStorage supports the default Private container mode for each container. This mo
 
 &#x20;Use vStorage Portal
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 
 2\. Select the **project** and choose the **container** you want to switch to private mode.
 

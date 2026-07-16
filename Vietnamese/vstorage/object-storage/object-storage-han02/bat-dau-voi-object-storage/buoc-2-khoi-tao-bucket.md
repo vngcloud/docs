@@ -4,7 +4,7 @@ Trước khi có thể lưu trữ dữ liệu trong vStorage, bạn phải tạo
 
 Để khởi tạo một bucket, vui lòng thực hiện theo các bước bên dưới:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list). Chọn **project** muốn thực hiện tạo **bucket.**
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list). Chọn **project** muốn thực hiện tạo **bucket.**
 2. Chọn **Create a bucket**.
 3. Nhập **Bucket name** theo quy định của chúng tôi.
 4. Chọn **Enable Object Locked** nếu bạn muốn sử dụng tính năng **Object locked** cho bucket này.&#x20;

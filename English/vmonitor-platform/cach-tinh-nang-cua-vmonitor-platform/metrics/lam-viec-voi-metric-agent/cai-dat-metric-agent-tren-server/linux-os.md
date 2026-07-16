@@ -12,7 +12,7 @@ To push Metrics to vMonitor, you need to install the Metric Agent on your server
 
 1. **Creating a Service Account and Attaching policy: the vMonitorMetricPush to Push Metrics to vMonitor.**
 
-To create a service account, visit [this link](https://hcm-3.console.vngcloud.vn/vmonitor).
+To create a service account, visit [this link](https://hcm-3.console.greennode.ai/vmonitor).
 
 * Select **Create a Service Account**, enter a name for the Service Account, and click **Next Step** to assign permissions to the Service Account.
 * Find and select the policy: **vMonitorMetricPush**, then click **Create a Service Account**. This policy, created by GreenNode, contains the exact permissions needed to push metrics to the system.
@@ -32,7 +32,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/vngcloud/vmonitor-metrics-a
 
 3. **After running the command and completing the installation, you will see the server in the Infrastructure List/Host page.**
 
-<figure><img src="../../../../../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (108) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### **Telegraf Agent with API\_KEY (deprecated**) <a href="#linuxos-telegrafagentvoiapi_key-deprecated-khongkhuyencaosudung-saptoisedunghotrovoiphuongthucnay" id="linuxos-telegrafagentvoiapi_key-deprecated-khongkhuyencaosudung-saptoisedunghotrovoiphuongthucnay"></a>
 
@@ -52,6 +52,6 @@ API_KEY=$API_KEY bash -c "$(curl -L https://raw.githubusercontent.com/vngcloud/v
 
 * After running the command and completing the installation, you will see the server in the **Infrastructure List/Host** page.
 
-<figure><img src="../../../../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (109) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image%20(114).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (114) (2).png" alt=""><figcaption></figcaption></figure>

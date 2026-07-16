@@ -172,7 +172,7 @@ Cluster 20 node, `Unhealthy Range = [2-5]`:
 
 **Bước 1: Truy cập trang tạo Cluster**
 
-1. Đăng nhập vào [VNG Cloud Console](https://console.vngcloud.vn)
+1. Đăng nhập vào [VNG Cloud Console](https://console.greennode.ai)
 2. Chọn **VKS** → **Clusters** → **Create Cluster**
 
 **Bước 2: Cấu hình Auto Healing**

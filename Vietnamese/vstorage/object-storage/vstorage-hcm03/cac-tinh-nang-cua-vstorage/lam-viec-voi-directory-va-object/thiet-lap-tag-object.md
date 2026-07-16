@@ -8,7 +8,7 @@ Tag là một nhãn (label) gắn liền với một object với mục đích n
 
 {% tabs %}
 {% tab title=" Sử dụng vStorage Portal" %}
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **project, container** sau đó chọn các **object** bạn muốn thực hiện thiết lập tag.&#x20;
 

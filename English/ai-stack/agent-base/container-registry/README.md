@@ -2,22 +2,23 @@
 
 GreenNode automatically provisions a private repository in Container Registry for your organization — store container images securely and use them directly when deploying Agent Runtime, with no external registry setup required.
 
----
+***
 
 ## Overview
 
-Container Registry in AgentBase is built on [VNG Cloud Container Registry (vCR)](../../../../vcontainer-registry/README.md). When your organization is onboarded to AgentBase, a private repository is already created for you — no manual setup needed.
+Container Registry in AgentBase is built on [VNG Cloud Container Registry (vCR)](https://github.com/vngcloud/docs/blob/main/vcontainer-registry/README.md). When your organization is onboarded to AgentBase, a private repository is already created for you — no manual setup needed.
 
-View your organization's image list at: [https://aiplatform.console.vngcloud.vn/container-registry/repository](https://aiplatform.console.vngcloud.vn/container-registry/repository)
+View your organization's image list at: [https://aiplatform.console.greennode.ai/container-registry/repository](https://aiplatform.console.greennode.ai/container-registry/repository)
 
-![Container Registry — image list](../../../.gitbook/assets/Agentbase-image/Container-registry.png)
+![Container Registry — image list](<../../../.gitbook/assets/Container-registry (1).png>)
 
 **Benefits:**
-- Images are not publicly accessible
-- Combine with Private VPC for a fully internal deploy pipeline
-- Natively integrated when creating a Custom Agent Runtime — no extra configuration needed
 
----
+* Images are not publicly accessible
+* Combine with Private VPC for a fully internal deploy pipeline
+* Natively integrated when creating a Custom Agent Runtime — no extra configuration needed
+
+***
 
 ## Push an Image to the Registry
 
@@ -66,7 +67,7 @@ docker tag my-agent:latest vcr.vngcloud.vn/<repoName>/my-agent:v1.0
 docker push vcr.vngcloud.vn/<repoName>/my-agent:v1.0
 ```
 
----
+***
 
 ## Use the Image When Creating a Runtime
 
@@ -79,22 +80,23 @@ bash .claude/skills/agentbase/scripts/runtime.sh create \
 ```
 
 **Using the Portal** — when creating a Custom Agent Runtime, enter:
-- **Image URL:** `vcr.vngcloud.vn/<repoName>/my-agent:v1.0`
-- **Registry Auth:** enable → enter robot account username and password
+
+* **Image URL:** `vcr.vngcloud.vn/<repoName>/my-agent:v1.0`
+* **Registry Auth:** enable → enter robot account username and password
 
 See the full guide at [Create Runtime](../agent-runtime/create-runtime.md).
 
----
+***
 
 ## Advanced Management
 
-The Container Registry page in AgentBase is sufficient for pushing and using images with Runtime. For full management (additional repositories, access control policies, image lifecycle rules...) → see [VNG Cloud Container Registry](../../../../vcontainer-registry/README.md).
+The Container Registry page in AgentBase is sufficient for pushing and using images with Runtime. For full management (additional repositories, access control policies, image lifecycle rules...) → see [VNG Cloud Container Registry](https://github.com/vngcloud/docs/blob/main/vcontainer-registry/README.md).
 
----
+***
 
 ## Getting Started
 
-| I want to... | Go to |
-|---|---|
-| Create a Runtime from an image in this registry | [Create Runtime](../agent-runtime/create-runtime.md) |
-| Manage Container Registry in full | [VNG Cloud Container Registry](../../../../vcontainer-registry/README.md) |
+| I want to...                                    | Go to                                                                                                    |
+| ----------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Create a Runtime from an image in this registry | [Create Runtime](../agent-runtime/create-runtime.md)                                                     |
+| Manage Container Registry in full               | [VNG Cloud Container Registry](https://github.com/vngcloud/docs/blob/main/vcontainer-registry/README.md) |

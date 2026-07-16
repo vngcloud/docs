@@ -4,7 +4,7 @@ After creating a Transfer Job, you can start running the task to transfer data. 
 
 **To run a Transfer Job, follow the instructions:**
 
-**Step 1:** Login into [https://datasync.console.vngcloud.vn/](https://datasync.console.vngcloud.vn/transfer-job/list)
+**Step 1:** Login into [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/transfer-job/list)
 
 **Step 2**: In the left menu, select **Transfer Job**.&#x20;
 

@@ -10,7 +10,7 @@ Sau khi bạn đã tạo bản backup trên server, tính năng tự động sao
 
 #### **Thực Hiện Thông Qua Giao Diện Người Dùng:** <a href="#tudongsaoluu-thuchienthongquagiaodiennguoidung" id="tudongsaoluu-thuchienthongquagiaodiennguoidung"></a>
 
-1. Truy cập vào trang chủ vServer tại: [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview)
+1. Truy cập vào trang chủ vServer tại: [https://hcm-3.console.greennode.ai/vserver/overview](https://hcm-3.console.greennode.ai/vserver/overview)
 2. Tại thanh menu điều hướng, chọn Tab Backup/ Backup server
 3. Chọn Backup server mà bạn muốn kích hoạt tính năng tự động sao lưu tại trang danh sách
 4. Tìm và thực hiện chọn Bật "**Tự động sao lưu"**
@@ -27,7 +27,7 @@ Người dùng có thể tắt tính năng tự động sao lưu bất cứ lúc
 
 **Thực Hiện Thông Qua Giao Diện Người Dùng:**
 
-1. Truy cập vào trang chủ vServer tại: [https://hcm-3.console.vngcloud.vn/vserver/overview](https://hcm-3.console.vngcloud.vn/vserver/overview)
+1. Truy cập vào trang chủ vServer tại: [https://hcm-3.console.greennode.ai/vserver/overview](https://hcm-3.console.greennode.ai/vserver/overview)
 2. Tại thanh menu điều hướng, chọn Tab Backup/ Backup server
 3. Chọn Backup server mà bạn muốn kích hoạt tính năng tự động sao lưu tại trang danh sách
 4. Tìm và thực hiện chọn Tắt "**Tự động sao lưu"**

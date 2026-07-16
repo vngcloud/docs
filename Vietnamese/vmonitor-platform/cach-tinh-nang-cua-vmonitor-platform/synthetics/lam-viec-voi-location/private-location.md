@@ -4,7 +4,7 @@ Private Locations cho phép bạn theo dõi các ứng dụng/dịch vụ nằm 
 
 **Để thực hiện tạo Private Location, hãy làm theo hướng dẫn bên dưới:**
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)
+1. Đăng nhập vào vMonitor Platform [tại đây.](https://vmonitor.console.greennode.ai/)
 2. Chọn thư mục **Synthetic test.**
 3. Chọn **Location.**
 4. Chọn **Create a location.**

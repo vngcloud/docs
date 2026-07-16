@@ -7,9 +7,7 @@ To integrate the S3 Browser tool with vStorage, you can follow the instructions 
 1. Download the S3 Browser user tool here [https://s3browser.com/download.aspx](https://s3browser.com/download.aspx) .
 2. Open the S3 Browser app **.** Select the Account folder **, then select Add new account**
 
-<figure><img src="../../../../.gitbook/assets/image (530).png" alt="" width="295"><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../../.gitbook/assets/image (530) (1).png" alt="" width="295"><figcaption></figcaption></figure>
 
 3. The Add New Account screen appears, now you enter the following information:
 
@@ -21,8 +19,8 @@ To integrate the S3 Browser tool with vStorage, you can follow the instructions 
 4. Select the **Use Secure transfer (SSL/TLS)** option because vStorage only supports encrypted transmission channels (HTTPS, port 443) to ensure data security, vStorage currently does not support unencrypted transmission channels (HTTP, port 80).
 5. Select **Add new account.**
 
-<figure><img src="../../../../.gitbook/assets/image (531).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (531) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-6. When the connection is successful, the S3 Browser screen will display as follows:&#x20;
+6. When the connection is successful, the S3 Browser screen will display as follows:
 
-<figure><img src="../../../../.gitbook/assets/image (532).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (532) (1).png" alt=""><figcaption></figcaption></figure>

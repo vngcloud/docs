@@ -16,10 +16,10 @@ The vCR Console is a web-based user interface that allows you to manage Reposito
 
 **How to access the vCR Console:**
 
-* Access the vCR Console directly through the link: [https://vcr.console.vngcloud.vn/list](https://vcr.console.vngcloud.vn/list)
-* Access from the vServer homepage: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+* Access the vCR Console directly through the link: [https://vcr.console.greennode.ai/list](https://vcr.console.greennode.ai/list)
+* Access from the vServer homepage: [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
   * On the vServer homepage, navigate to the vCR portal by clicking on "Container Registry" in the "Container Registry" section of the left menu.
-* Access from the vConsole homepage: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
+* Access from the vConsole homepage: [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/)
   * In the "GreenNode Service" section on the interface, click on "vServer", then click on "Container Registry" from the list of corresponding products/services on the right.
 
 ## 2. Creating a Repository

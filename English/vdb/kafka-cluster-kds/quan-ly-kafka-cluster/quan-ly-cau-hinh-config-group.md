@@ -8,7 +8,7 @@ A Kafka Config Group is a collection of Kafka configuration parameters. You can 
 
 **1. Create New Config Group**
 
-* **Access Kafka Config Group:** Log in to vDB and select the Config Group page here: [https://vdb.console.vngcloud.vn/kafka/config-group](https://vdb.console.vngcloud.vn/kafka/config-group)
+* **Access Kafka Config Group:** Log in to vDB and select the Config Group page here: [https://vdb.console.greennode.ai/kafka/config-group](https://vdb.console.greennode.ai/kafka/config-group)
 * **Click "Create New" button:** Click the "Create Config Group" button to start creating a new Config Group.
 * **Set name and description:** Enter a name for the Config Group and a brief description (optional).
 * **Add configuration parameters:** Add the necessary Kafka parameters to the Config Group. You can use the graphical interface or enter parameters directly as text.

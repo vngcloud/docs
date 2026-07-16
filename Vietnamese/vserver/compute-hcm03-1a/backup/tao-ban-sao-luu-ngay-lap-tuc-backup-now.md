@@ -28,7 +28,7 @@ Khi bạn tạo bản Backup Now cho Backup Server, bản Backup này sẽ nằm
 
 ### **Tạo bản sao lưu ngay lập tức cho Server trên bảng điều khiển vBackup** <a href="#taobansaoluungaylaptuc-backupnow-taobansaoluungaylaptucchoservertrenbangdieukhienvbackup" id="taobansaoluungaylaptuc-backupnow-taobansaoluungaylaptucchoservertrenbangdieukhienvbackup"></a>
 
-1. Bạn có thể thực hiện tạo Backup Now tại trang danh sách Server. Truy cập vào bảng điều khiển vServer tại đường link: [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)
+1. Bạn có thể thực hiện tạo Backup Now tại trang danh sách Server. Truy cập vào bảng điều khiển vServer tại đường link: [https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server)
 2. Chọn một hoặc nhiều Server bạn muốn tạo bản Backup ngay lập tức
 3. Sau đó chọn **Hành động, chọn** Backup Now
 4. Sau đó một bản Backup sẽ được tạo ngay tại thời điểm thực hiện hành động đồng thời sẽ hiển thị tại trang danh sách Backup Server

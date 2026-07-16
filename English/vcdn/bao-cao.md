@@ -26,7 +26,7 @@ Statistical information in the report includes:
 
 **Step 2:** Select **Report** to view the report. The data includes statistical information as stated in the details section.
 
-<figure><img src="../.gitbook/assets/image (396).png" alt="" width="166"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (396) (2).png" alt="" width="166"><figcaption></figcaption></figure>
 
 **Step 3:** You can **filter according to the conditions:**
 
@@ -36,8 +36,8 @@ Statistical information in the report includes:
 * **Group** : Service package.
 * **Timeframe:** Select the reporting period.
 
-<figure><img src="../.gitbook/assets/image (222).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (222) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 4: Click on the Excel** icon to export the report to an Excel file for storage or further analysis.
 
-<figure><img src="../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (223) (1).png" alt=""><figcaption></figcaption></figure>

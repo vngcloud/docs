@@ -4,7 +4,7 @@ When you no longer need an object or container, we encourage you to delete them 
 
 After you have deleted your objects and containers, they will no longer exist. If you want to continue using the same container name, we recommend you delete the objects but not the container. After you delete a container, that container's name will be available for reuse.
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/). Choose the **project** and **container** that contains the object you want to delete.
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/). Choose the **project** and **container** that contains the object you want to delete.
 2. Select ![image2023-3-6\_9-53-5.png](https://docs.vngcloud.vn/download/attachments/49648424/image2023-3-6\_9-53-5.png?version=1\&modificationDate=1678071186000\&api=v2) at the **containers** or **objects** you want to delete.
 3. Choose the icon ![](https://docs.vngcloud.vn/download/thumbnails/67994013/image2023-3-6\_9-54-5.png?version=1\&modificationDate=1700540195000\&api=v2) above or select ![](https://docs.vngcloud.vn/download/thumbnails/67994013/image2023-3-6\_9-54-25.png?version=1\&modificationDate=1700540196000\&api=v2)at the container, object you want to delete and then continue to select ![](https://docs.vngcloud.vn/download/thumbnails/67994013/image2023-12-27\_11-16-1.png?version=1\&modificationDate=1703650562000\&api=v2).
 

@@ -2,7 +2,7 @@
 
 Sau khi khởi tạo xong một AI Gateway, bạn có thể bắt đầu gửi request đến mô hình AI đã cấu hình theo các bước sau:
 
-**Bước 1:** Truy cập [AI Gateway Portal](http://aigateway.console.vngcloud.vn/), tìm đến gateway mà bạn vừa tạo.
+**Bước 1:** Truy cập [AI Gateway Portal](http://aigateway.console.greennode.ai/), tìm đến gateway mà bạn vừa tạo.
 
 **Bước 2:** Trong mục **Providers & Model**, tìm mô hình AI bạn đã cấu hình. Tại mô hình đó, nhấn vào biểu tượng **Curl command** để lấy câu lệnh mẫu.
 

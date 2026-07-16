@@ -3,7 +3,7 @@
 ### Introduction
 
 The VKS API allows users to automate the creation of **Clusters** and **Node Groups** instead of manual operations on the portal.\
-Detailed documentation: [https://docs.api.vngcloud.vn/service-docs/vks-api.html](https://docs.api.vngcloud.vn/service-docs/vks-api.html?utm_source=chatgpt.com)
+Detailed documentation: [https://docs.api.greennode.ai/service-docs/vks-api.html](https://docs.api.greennode.ai/service-docs/vks-api.html?utm_source=chatgpt.com)
 
 ***
 

@@ -8,7 +8,7 @@ Sau khi bạn khởi tạo container, ở cấu hình mặc định container c�
 
 Trước khi có thể thực hiện chuyển chế độ công khai container, bạn cần thực hiện phân quyền truy cập ACLs container cho toàn bộ người dùng, chi tiết tham khảo tại [Phân quyền truy cập ACLs container](phan-quyen-truy-cap-acls-container.md).
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **project** và chọn **container** bạn muốn chuyển chế độ công khai.
 

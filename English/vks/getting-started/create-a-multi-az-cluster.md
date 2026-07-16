@@ -4,7 +4,7 @@ Multi-AZ Cluster allows deploying the Control Plane across multiple Availability
 
 To learn more about concepts, architecture, and the comparison between Single-AZ and Multi-AZ, please refer to [Multi-AZ Control Plane](../clusters/multi-az-control-plane.md).
 
-In addition to creating via the Portal, you can also create a Multi-AZ Cluster via [VKS API](https://docs.api.vngcloud.vn/service-docs/vks-api.html) or [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
+In addition to creating via the Portal, you can also create a Multi-AZ Cluster via [VKS API](https://docs.api.greennode.ai/service-docs/vks-api.html) or [VKS Terraform](https://registry.terraform.io/providers/vngcloud/vngcloud/latest/docs/resources/vks_cluster).
 
 ***
 
@@ -20,7 +20,7 @@ To create a Multi-AZ Cluster, you need to ensure the following prerequisites:
 Multi-AZ Control Plane **only supports VPCs with DNS enabled**. If a VPC does not have DNS enabled, it will **not appear** in the dropdown when creating a Multi-AZ Cluster.
 {% endhint %}
 
-To enable DNS for your VPC, please do so in the vServer portal following the guide [here](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/).
+To enable DNS for your VPC, please do so in the vServer portal following the guide [here](https://github.com/vngcloud/docs/blob/main/English/vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/README.md).
 
 ### 2. Prepare Subnets
 
@@ -44,8 +44,8 @@ Example of **invalid** subnet configuration:
 
 ### 3. Other prerequisites
 
-* At least 1 **VPC** and 1 **Subnet** in **ACTIVE** state. If you do not have a VPC or Subnet yet, please create one following the guide [here.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/)
-* At least 1 **SSH key** in **ACTIVE** state. If you do not have an SSH key, please create one following the guide [here.](../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
+* At least 1 **VPC** and 1 **Subnet** in **ACTIVE** state. If you do not have a VPC or Subnet yet, please create one following the guide [here.](https://github.com/vngcloud/docs/blob/main/English/vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/README.md)
+* At least 1 **SSH key** in **ACTIVE** state. If you do not have an SSH key, please create one following the guide [here.](https://github.com/vngcloud/docs/blob/main/English/vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
 
 ***
 
@@ -53,7 +53,7 @@ Example of **invalid** subnet configuration:
 
 To create a Multi-AZ Cluster, follow the steps below:
 
-**Step 1:** Navigate to [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Step 1:** Navigate to [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Step 2:** On the **Overview** screen, select **Activate.**
 
@@ -70,7 +70,7 @@ To create a Multi-AZ Cluster, follow the steps below:
 
 * **Control Plane Availability:** Select **Multi-AZ** to deploy the Control Plane across multiple Availability Zones.
 
-<figure><img src="../../.gitbook/assets/multi-az-control-plane-availability-dropdown.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/multi-az-control-plane-availability-dropdown (1).png" alt=""><figcaption></figcaption></figure>
 
 There are 2 options:
 
@@ -83,7 +83,7 @@ There are 2 options:
   * For **Calico Overlay, Cilium Overlay** network types: Encapsulation Mode is automatically set by the system and cannot be changed. You can modify the **CIDR** (the virtual network range that pods will use).
   * For **Cilium VPC Native Routing** network type: When selecting this network type, the **Node CIDR mask size** field will appear in the Network Setting section. This parameter specifies the CIDR size allocated to each node, determining the number of IP addresses from the Pod IP range that can be assigned to that node. You need to select a value that suits your needs.
 
-<figure><img src="../../.gitbook/assets/multi-az-network-setting-cilium-vpc-native-routing.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/multi-az-network-setting-cilium-vpc-native-routing (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note about Cilium VPC Native Routing and Multi-AZ:**
@@ -97,7 +97,7 @@ When selecting **Cilium VPC Native Routing** combined with **Multi-AZ**, the **P
   * Selected subnets are displayed as **chip/tag**. Click the **(x)** button on a chip to remove that subnet from the selection.
   * You can add/remove subnets but must ensure **at least 2 subnets from 2 different AZs**.
 
-<figure><img src="../../.gitbook/assets/multi-az-network-setting.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/multi-az-network-setting (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Validation Rules:**
@@ -127,14 +127,14 @@ When selecting **Cilium VPC Native Routing** combined with **Multi-AZ**, the **P
 
 **Step 7:** Configure the **Node Group Network Setting** — this section differs from Single-AZ Cluster:
 
-<figure><img src="../../.gitbook/assets/multi-az-node-group-network-setting.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/multi-az-node-group-network-setting (1).png" alt=""><figcaption></figcaption></figure>
 
 * You can choose **Public Node Group** or **Private Node Group** based on your Cluster usage needs.
 * **VPC:** Inherited from Network Configuration (read-only, cannot be changed).
 * **Subnet:** Single-select dropdown, **only displays the subnets selected for the cluster in Step 5**. Each Node Group can only select **1 subnet** (corresponding to 1 AZ).
 * **Pod IP range** _(only displayed when Network type = Cilium VPC Native Routing)_: The secondary IP range used to allocate IP addresses for pods on this Node Group. You need to select at least 1 Secondary IP range created from vServer.
 
-<figure><img src="../../.gitbook/assets/multi-az-node-group-network-setting-pod-ip-range.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/multi-az-node-group-network-setting-pod-ip-range (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:**
@@ -157,7 +157,7 @@ When selecting **Cilium VPC Native Routing** combined with **Multi-AZ**, the **P
 
 **Step 10:** When the **Cluster** status is **Active**, you can view Cluster information and Node Group information by clicking on the Cluster Name in the **Name** column. In the **Control Plane Availability** column, you will see the **Multi-AZ** badge confirming the cluster was created with the correct configuration.
 
-<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-list-page.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-list-page (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -181,7 +181,7 @@ You can SSH into a server within the same VPC to perform the steps below.
 
 After the Cluster has been successfully initialized, you can connect and verify the newly created Cluster by following these steps:
 
-**Step 1:** Navigate to [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console.vngcloud.vn/k8s-cluster)
+**Step 1:** Navigate to [https://vks.console.greennode.ai/k8s-cluster](https://vks.console.greennode.ai/k8s-cluster)
 
 **Step 2:** The Cluster list is displayed. Select the **three-dot icon** to open the dropdown menu, then choose **Download config file** to download the kubeconfig file. This file will give you full access to your Cluster.
 

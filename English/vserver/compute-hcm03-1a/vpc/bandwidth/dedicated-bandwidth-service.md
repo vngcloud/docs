@@ -10,7 +10,7 @@ The Pay As You Go bandwidth package requires you to pay for the amount of bandwi
 
 ### **View Detailed Package Information**
 
-**Step 1**: Log in to your GreenNode account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
+**Step 1**: Log in to your GreenNode account and go to [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/).
 
 **Step 2**: In the left-hand menu, under the **Network** section, select **Bandwidth**.
 
@@ -39,7 +39,7 @@ The Pay As You Go bandwidth package requires you to pay for the amount of bandwi
 
 **To add IP addresses to the package, follow these steps:**
 
-**Step 1**: Log in to your GreenNode account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
+**Step 1**: Log in to your GreenNode account and go to [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/).
 
 **Step 2**: In the left-hand menu, under the **Network** section, select **Bandwidth**.
 
@@ -49,7 +49,7 @@ The Pay As You Go bandwidth package requires you to pay for the amount of bandwi
 
 **Step 5**: The **Add IP** screen will be displayed. You can filter the list of IP addresses by type by selecting an option in the **Resource Type** field. Currently, we provide the following resource types: **K8S, Floating IP, External Interface, vLB.**
 
-**Step 6**: Select one or more IP addresses by selecting the icon <img src="../../../../.gitbook/assets/image (64) (1).png" alt="" data-size="line">and then choosing **Add**.
+**Step 6**: Select one or more IP addresses by selecting the icon <img src="../../../../.gitbook/assets/image (64) (1) (2).png" alt="" data-size="line">and then choosing **Add**.
 
 ***
 
@@ -57,13 +57,13 @@ The Pay As You Go bandwidth package requires you to pay for the amount of bandwi
 
 To remove IP addresses from the package, follow these steps:
 
-**Step 1**: Log in to your GreenNode account and go to [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
+**Step 1**: Log in to your GreenNode account and go to [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/).
 
 **Step 2**: In the left-hand menu, under the **Network** section, select **Bandwidth**.
 
 **Step 3**: From the list of available bandwidth packages, select the **PAYG-ALL, PAYG-DOMESTIC, or PAYG-INTERNATIONAL** package according to your needs.
 
-**Step 4**: Under the **IP List** section, select the icon <img src="../../../../.gitbook/assets/image (65) (1).png" alt="" data-size="line">next to the IP address you want to remove from the package and choose the icon <img src="../../../../.gitbook/assets/image (66) (2).png" alt="" data-size="line">.
+**Step 4**: Under the **IP List** section, select the icon <img src="../../../../.gitbook/assets/image (65) (1) (2).png" alt="" data-size="line">next to the IP address you want to remove from the package and choose the icon <img src="../../../../.gitbook/assets/image (66) (2) (1).png" alt="" data-size="line">.
 
 **Step 5**: On the IP removal confirmation screen, select **Delete**.
 

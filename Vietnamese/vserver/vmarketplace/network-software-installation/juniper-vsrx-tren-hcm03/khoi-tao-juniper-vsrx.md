@@ -1,6 +1,6 @@
 # Khởi tạo Juniper vSRX
 
-Để khởi tạo, bạn vào vMarketPlace theo đường dẫn sau: [https://marketplace.console.vngcloud.vn/app-package/detail/4/30/1284a184-2119-4950-bd1c-af9161c52c01](https://marketplace.console.vngcloud.vn/app-package/detail/4/30/1284a184-2119-4950-bd1c-af9161c52c01)
+Để khởi tạo, bạn vào vMarketPlace theo đường dẫn sau: [https://marketplace.console.greennode.ai/app-package/detail/4/30/1284a184-2119-4950-bd1c-af9161c52c01](https://marketplace.console.greennode.ai/app-package/detail/4/30/1284a184-2119-4950-bd1c-af9161c52c01)
 
 ## Khởi tạo Juniper vSRX
 

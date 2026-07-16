@@ -74,7 +74,7 @@ lsblk -o NAME,PTTYPE
 
 ### 1. Tạo Veeam Account
 
-* Khách hàng gửi request qua 247 hoặc tạo ticket [tại đây](https://helpdesk.vngcloud.vn/portal/en/newticket?departmentId=854860000000006907\&layoutId=854860000000074011) với nhu cầu migrate server từ hệ thống khác lên GreenNode.
+* Khách hàng gửi request qua 247 hoặc tạo ticket [tại đây](https://helpdesk.greennode.ai/portal/en/newticket?departmentId=854860000000006907\&layoutId=854860000000074011) với nhu cầu migrate server từ hệ thống khác lên GreenNode.
 * Sau khi nhận request, GreenNode sẽ hỗ trợ tạo account trên Veeam Portal và cung cấp thông tin user, password, endpoint và port của Veeam cloud repository cho khách hàng.
 
 ***
@@ -101,7 +101,7 @@ lsblk -o NAME,PTTYPE
 
 ### 3. Khởi tạo Destination VM và bắt đầu migration
 
-* 3.1 Truy cập [server portal](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) để tạo mới Destination Server.
+* 3.1 Truy cập [server portal](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server) để tạo mới Destination Server.
 *   3.2 Truy cập vào server vừa tạo, nhấn Migrate Server.
 
     * 3.2.1 Nếu server chưa được shutdown, hệ thống sẽ yêu cầu bạn shutdown trước khi migrate.
@@ -144,7 +144,7 @@ lsblk -o NAME,PTTYPE
 *   Truy cập Destination VM, nhấn Migrate Server và chọn kết quả thực tế sau khi Restore (Successed/Failed).
 
     <figure><img src="../.gitbook/assets/check.png" alt=""><figcaption></figcaption></figure>
-* Truy cập Server Migration tại Backup Center để kiểm tra logs migration[ tại đây](https://backupcenter.console.vngcloud.vn/server-migration).
+* Truy cập Server Migration tại Backup Center để kiểm tra logs migration[ tại đây](https://backupcenter.console.greennode.ai/server-migration).
 
 ## 5. Hiệu suất migration
 

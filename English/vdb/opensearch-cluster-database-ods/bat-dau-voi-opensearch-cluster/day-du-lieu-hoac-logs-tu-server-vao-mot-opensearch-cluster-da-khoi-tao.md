@@ -55,19 +55,19 @@ curl -H "Content-Type: application/json" -X PUT "https://open-search-dem-53461-5
 1. Access and log in to **OpenSearch Dashboards**
 2. Go to **Management**, select **Dashboard Management**
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 3. Select **Index patterns**, then select **Create index pattern**
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 4. Enter **Index pattern name**, for example `ecommerce*` then select **Next step**
 
-<figure><img src="../../../.gitbook/assets/image (378) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (378) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Access **Discover** to view the sample data.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## **Push event logs from Logstash into OpenSearch**
 
@@ -157,14 +157,14 @@ If logs appear, it means Logstash has successfully sent data to OpenSearch.
 1. Access and log in to **OpenSearch Dashboards**
 2. Go to **Management**, select **Dashboard Management**
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 3. Select **Index patterns**, then select **Create index pattern**
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 4. Enter **Index pattern name**, for example `logstash-logs*` then select **Next step**
 
-<figure><img src="../../../.gitbook/assets/image (360).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (360) (2).png" alt=""><figcaption></figcaption></figure>
 
 5. Finally, access **Discover** to view the logs.

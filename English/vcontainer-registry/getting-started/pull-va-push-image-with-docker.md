@@ -13,9 +13,9 @@ Follow these steps to create a Repository:
 #### Step 1: Access the vContainer Registry Portal
 
 * For HCM Region:\
-  [https://vcr.console.vngcloud.vn/repository/list](https://vcr.console.vngcloud.vn/repository/list)
+  [https://vcr.console.greennode.ai/repository/list](https://vcr.console.greennode.ai/repository/list)
 * For HAN Region:\
-  [https://han-1.console.vngcloud.vn/vcr/repository/list](https://han-1.console.vngcloud.vn/vcr/repository/list)
+  [https://han-1.console.greennode.ai/vcr/repository/list](https://han-1.console.greennode.ai/vcr/repository/list)
 
 #### Step 2:
 
@@ -40,9 +40,9 @@ Follow these steps to create a Repository User:
 #### Step 1: Access the vContainer Registry Portal
 
 * For HCM Region:\
-  [https://vcr.console.vngcloud.vn/repository/list](https://vcr.console.vngcloud.vn/repository/list)
+  [https://vcr.console.greennode.ai/repository/list](https://vcr.console.greennode.ai/repository/list)
 * For HAN Region:\
-  [https://han-1.console.vngcloud.vn/vcr/repository/list](https://han-1.console.vngcloud.vn/vcr/repository/list)
+  [https://han-1.console.greennode.ai/vcr/repository/list](https://han-1.console.greennode.ai/vcr/repository/list)
 
 #### Step 2:
 

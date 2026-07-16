@@ -4,7 +4,7 @@ Sử dụng hướng dẫn này để thay đổi thông tin/xóa Listener trong
 
 #### Thay đổi thông tin Listener <a href="#update-and-deletelistener-nlb-thaydoithongtinlistener" id="update-and-deletelistener-nlb-thaydoithongtinlistener"></a>
 
-1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb**](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb**](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)
 2. **Tại trang chủ Load Balancer, click chọn Load Balancer cần chỉnh sửa Listener.**
 3. **Tại phần thông tin chi tiết Load Balancer, chọn tab Listener.**
 4. **Tại danh sách Listener, rê chuột đến Listener cần chỉnh sửa, một biểu tượng "Edit" sẽ hiện lên, nhấn vào biểu tượng đó để bắt đầu chỉnh sửa Listener.**
@@ -17,7 +17,7 @@ Sử dụng hướng dẫn này để thay đổi thông tin/xóa Listener trong
 
 #### Xóa Listener <a href="#update-and-deletelistener-nlb-xoalistener" id="update-and-deletelistener-nlb-xoalistener"></a>
 
-1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb**](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb)
+1. **Truy cập vào trang chủ Load Balancer tại đây:** [**https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb**](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb)
 2. **Tại trang chủ Load Balancer, click chọn Load Balancer cần xóa Listener.**
 3. **Tại phần thông tin chi tiết Load Balancer, chọn tab Listener.**
 4. **Tại danh sách Listener, nhấn chọn biểu tượng "Xóa" tại hàng Listener cần xóa.**

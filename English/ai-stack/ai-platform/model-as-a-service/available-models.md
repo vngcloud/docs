@@ -110,4 +110,4 @@ MaaS hỗ trợ nhiều loại mô hình khác nhau:
 
 Note:
 
-* You can create [ticket](https://helpdesk.vngcloud.vn/portal/vi/newticket) for request new model
+* You can create [ticket](https://helpdesk.greennode.ai/portal/vi/newticket) for request new model

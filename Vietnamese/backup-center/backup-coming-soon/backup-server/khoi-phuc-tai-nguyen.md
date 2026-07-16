@@ -11,7 +11,7 @@ Hướng dẫn này sẽ giúp bạn thực hiện quá trình khôi phục tài
 
 #### Các bước thực hiện
 
-1. Truy cập vào trang danh sách backup server tại đây: [https://backupcenter.console.vngcloud.vn/backup-server/list](https://backupcenter.console.vngcloud.vn/backup-server/list)
+1. Truy cập vào trang danh sách backup server tại đây: [https://backupcenter.console.greennode.ai/backup-server/list](https://backupcenter.console.greennode.ai/backup-server/list)
 2. Chọn Backup Server cần khôi phục. Bạn có thể nhấn vào ô tìm kiếm, nhập tên backup server cần tìm. ![](<../../../.gitbook/assets/image (767).png>)
 3.  Tại trang chi tiết của Backup Server, nhấn chọn tab Restore Point. Tại đây, bạn sẽ thấy danh sách các bản backup server point đã tạo.&#x20;
 

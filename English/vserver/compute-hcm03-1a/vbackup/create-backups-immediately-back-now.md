@@ -26,7 +26,7 @@ When you create a "Backup Now" for a Backup Server, this backup will be listed u
 
 ### Creating an Immediate Backup for a Server on the vBackup Console <a href="#taobansaoluungaylaptuc-backupnow-taobansaoluungaylaptucchoservertrenbangdieukhienvbackup" id="taobansaoluungaylaptuc-backupnow-taobansaoluungaylaptucchoservertrenbangdieukhienvbackup"></a>
 
-1. You can perform a "Backup Now" on the Server list page. Access the vServer console at: [vServer Console](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server).
+1. You can perform a "Backup Now" on the Server list page. Access the vServer console at: [vServer Console](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server).
 2. Select one or more Servers you want to create an immediate backup for.
 3. Then select "**Actions**," and choose "**Backup Now**."
 4. A backup will be created immediately at the time of action and will be displayed on the Backup Server list page.

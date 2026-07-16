@@ -23,7 +23,7 @@ Trong tài liệu này, chúng ta sẽ sử dụng **`rclone`**, vì tính linh 
 
 Dưới đây là hướng dẫn cách tạo endpoint để kết nối vStorage thông qua dịch vụ Endpoint trên hệ thống vServer, nhằm đảm bảo backup đi qua đường private:
 
-**Bước 1:** Đăng nhập vào Portal của hệ thống vServer tại [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)
+**Bước 1:** Đăng nhập vào Portal của hệ thống vServer tại [https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server)
 
 **Bước 2:** Chọn mục **Endpoint**.
 

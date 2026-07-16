@@ -6,7 +6,7 @@ To start using the service, you need to create a Metric quota. A Metric quota is
 
 Perform the purchase of Metric Quota by following these steps:
 
-1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). If you don't have an account yet, sign up for free at [here](https://register.vngcloud.vn/signup).
+1. Login into [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). If you don't have an account yet, sign up for free at [here](https://register.vngcloud.vn/signup).
 2. Choose **Quota & Usage**.
 3. Choose **Buy metric quota.**
 4. Choose the **Class** that you need. We offer you a choice of 1 in 2 classes including: Basic, Pro.
@@ -54,17 +54,17 @@ https://raw.githubusercontent.com/vngcloud/vmonitor-metrics-agent/main/install.s
 
 After installing the Metric Agent as guided in **Step 3: Install Metric Agent on Server** to push metrics to the vMonitor Platform, we will automatically create a **default Dashboard** for this **Host**. To view this default Dashboard, please follow the instructions below:
 
-1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Choose **Infrastructure List/ Host.**
+1. Login into [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Choose **Infrastructure List/ Host.**
 
-<figure><img src="../../.gitbook/assets/image (34) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (34) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Choose the **Hostname**. For example, if the device **LAP15839** is successfully configured with the Metric Agent to the vMonitor Platform, the default dashboard will be named: **LAP15839**. When you select the dashboard, it will display as shown in the image:
 
-<figure><img src="../../.gitbook/assets/image (36) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 With this Default Dashboard, you will be able to view the metric information that we have pre-drawn for you, including charts on CPU, Memory, Load Avg, Disk, and Network information. On this **Default Dashboard**, you cannot add widgets or customize the dashboard. To make changes or customize the Dashboard, you need to create a new dashboard or **Create a copy** from this **Default Dashboard** and Edit. To create a Dashboard copy, follow the instructions below:
 
-1. Login into [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Choose **Dashboard.**
+1. Login into [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Choose **Dashboard.**
 2. On the **Default Dashboard** you want to copy, select **Create Dashboard Copy**
 3. Enter the **Dashboard Name**. According to our regulations, the Dashboard name must be between 1 (minimum) and 50 (maximum) characters long. The Dashboard name can include uppercase, lowercase letters (a-z, A-Z), numbers (0-9), period (.), underscore (\_), hyphen (-), at symbol (@), and slash (/).
 4. Select **Create Copy**.

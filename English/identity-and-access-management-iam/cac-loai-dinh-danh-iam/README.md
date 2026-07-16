@@ -24,19 +24,19 @@ IAM User Groups are collections of IAM User Accounts. IAM User Groups simplify p
 
 Service Account is an identity you can create under your Root User account with specific permissions. Service Account has some similarities to IAM User Account. Both Server Account and User Account are identities with permission policies that define what that identity can and cannot do with GreenNode resources. However, Service Accounts are identities used by applications or computers, not people, to make authorized API calls and access specific resources. Learn more detailed instructions at:
 
-* [Quản lý Service Account](../../vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-tai-khoan-service-account.md)
+* [Quản lý Service Account](https://github.com/vngcloud/docs/blob/main/English/vstorage/object-storage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-service-account/khoi-tao-tai-khoan-service-account.md)
 
 #### vStorage credentials <a href="#iamidentities-vstoragecredentials" id="iamidentities-vstoragecredentials"></a>
 
-vStorage credentials are a feature that is specific to the vStorage product/service. vStorage credentials include key pairs that allow you to create and grant access to vStorage resources. There are two main types of vStorage credentials:&#x20;
+vStorage credentials are a feature that is specific to the vStorage product/service. vStorage credentials include key pairs that allow you to create and grant access to vStorage resources. There are two main types of vStorage credentials:
 
-* S3 Key: The S3 key includes an access key and secret key that integrates with vStorage to ensure integration with S3 Client tools such as s3cmd and the S3 SDK.&#x20;
+* S3 Key: The S3 key includes an access key and secret key that integrates with vStorage to ensure integration with S3 Client tools such as s3cmd and the S3 SDK.
 * Swift User: Contains user/password information and is the primary authentication method supported by vStorage.
 
 **vStorage credentials access**
 
-1. When S3 keys or Swift users are created, by default they have full access to all vStorage projects/objects (with Restricted by IAM set to NO). To enable proper access control for these key pairs and users, you need to enable Restricted by IAM by setting it to YES.&#x20;
-2. Once you enable Restricted by IAM to YES, IAM will manage and grant permissions to these key pairs and users. Therefore, by default, enabled key pairs and users will not have access to any vStorage projects/objects.&#x20;
+1. When S3 keys or Swift users are created, by default they have full access to all vStorage projects/objects (with Restricted by IAM set to NO). To enable proper access control for these key pairs and users, you need to enable Restricted by IAM by setting it to YES.
+2. Once you enable Restricted by IAM to YES, IAM will manage and grant permissions to these key pairs and users. Therefore, by default, enabled key pairs and users will not have access to any vStorage projects/objects.
 3. After enabling Restricted by IAM to YES, to grant permissions, you need to associate these key pairs and users to a Service Account so that they inherit the permissions assigned to the attached Service Account. Find more detailed instructions on how to use and apply vStorage credentials on vStorage resources at:
 
 * [Cách hoạt động của vStorage credentials](./#iamidentities-vstoragecredentials)
@@ -46,7 +46,7 @@ vStorage credentials are a feature that is specific to the vStorage product/serv
 Identity Providers are services that allow users to authenticate their identity and access multiple applications and services with a single set of credentials, using authentication protocols to securely exchange identity information and manage access control policies. Our system currently supports SAML2 as the primary authentication protocol, facilitating secure identity exchange between IDPs (Authentication Providers) and GreenNode (Service Provider). SAML2 has proven to be effective in enabling single sign-on (SSO) and seamless access to multiple applications and services.
 
 * To integrate with our system using SAML, you can use our SAML entity ID: https://signin.vngcloud.vn/auth/realms/iam
-* This URL acts as the endpoint to initiate the SAML authentication process and securely exchange identity information.&#x20;
+* This URL acts as the endpoint to initiate the SAML authentication process and securely exchange identity information.
 
 Find more detailed instructions at:
 

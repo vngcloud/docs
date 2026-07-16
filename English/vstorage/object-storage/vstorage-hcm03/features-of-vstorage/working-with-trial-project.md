@@ -6,7 +6,7 @@ After we confirm your account has been trial enabled, to create a trial project,
 
 &#x20;Create a trial project
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 
 2\. Select the **region** you want to store data in.
 
@@ -40,7 +40,7 @@ After 7 days of using the trial project, if you do not convert this trial projec
 
 To convert a trial project into a regular project, please contact your Sales or support staff directly or open a support ticket on our system. Once the support staff has turned off the trial on your SSO User Account, continue to follow these steps:
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/).
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/).
 
 2\. Select the icon ![](https://docs.vngcloud.vn/download/thumbnails/69468762/image2023-3-6\_10-2-51.png?version=1\&modificationDate=1703659954000\&api=v2) at the **trial project** you want to convert to a regular project. Select **Buy now**.
 

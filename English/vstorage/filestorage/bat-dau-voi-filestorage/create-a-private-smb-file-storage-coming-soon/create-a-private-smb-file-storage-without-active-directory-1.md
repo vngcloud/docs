@@ -22,14 +22,14 @@ Before you can perform Windows server initialization, make sure you initialize V
 8. Under **Instance type,** there is a list of Flavor configurations, you can choose the desired Flavor configuration for your Server according to. **iot.v1.small1x1** is recommended by us as a default basic configuration to initialize the Server
 9. In **Volume Settings** , enter the configuration for Boot OS Volume (Root) including **Size GB** , **Volume Type SSD** and **IOPS** , then select **Next.**
 10. In addition, you can add **Data Volume** to the Server during the initialization process by selecting **Add Data volume,** then **enter** the configuration for the Data Volume including **Volume name** , **Size GB** , **Volume Type SSD** and **IOPS** , select **Next.**
-11. **Next, select the Network settings** parameter : Here you can select **VPC** to assign Private IP to Server and **Subnet** from the list you created earlier, or you can click [**here**](https://hcm-3.console.vngcloud.vn/vserver/network/vpc) to create a new VPC and Subnet. Note that after creating VPC and Subnet, it will be displayed on the list page for you to choose during Server initialization:
+11. **Next, select the Network settings** parameter : Here you can select **VPC** to assign Private IP to Server and **Subnet** from the list you created earlier, or you can click [**here**](https://hcm-3.console.greennode.ai/vserver/network/vpc) to create a new VPC and Subnet. Note that after creating VPC and Subnet, it will be displayed on the list page for you to choose during Server initialization:
     1. Check the Floating IP box to assign Public IP to the Server (Click [**here**](https://docs.vngcloud.vn/vng-cloud-document/vn/vserver/compute-hcm03-1a/network/floating-ip) to see instructions for attaching/ detach Floating IP)
     2. **Security group** to manage ACL - Access Control List for Server. (Click [**here**](https://docs.vngcloud.vn/vng-cloud-document/vn/vserver/compute-hcm03-1a/security/security-groups) to see instructions for creating and managing Security group)
 12. **Enter Authentication** information : Empty: the system will automatically generate and attach a password or the user can manually adjust and enable or disable skipping the first password change.
 13. In **Other Settings** , you can choose Server Group or not according to your needs. You can assign Server to previously created Groups (With properties such as same Compute Host or different Compute Host)
 14. Select **Launch Server** and follow the payment steps to complete the server initialization.
 
-![](<../../../../.gitbook/assets/image (453).png>)
+![](<../../../../.gitbook/assets/image (453) (1).png>)
 
 </details>
 
@@ -55,25 +55,25 @@ Below is a basic guide for connecting to Windows server on vServer, if you have 
 
 **To be able to connect to a Windows server, you first need to install RDP:** By default, Windows will include an RDP Client. To verify, type **mstsc** at the Command Prompt window. If your computer does not recognize this command, check the Windows home page and search for a download for the [Microsoft Remote Desktop](https://www.microsoft.com/vi-vn/windows) application .
 
-1. Access the Server management page in our driver at: [https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server)
+1. Access the Server management page in our driver at: [https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server)
 2. Select **the Server** you want to connect to, then select **Action, then select Connect.**
 3. On the **Connect to Server** page , select **the RDP (Window) tab**
 
-![](<../../../../.gitbook/assets/image (454).png>)
+![](<../../../../.gitbook/assets/image (454) (1).png>)
 
 4. Select **Download RDP File** . Your browser will prompt you to open or save the RDP file. When you've finished downloading the file, select **Done** to return to the server page:
 5. Open the downloaded file to remote to Windows server. Select **Connect** to continue connecting to your server.
 
-![](<../../../../.gitbook/assets/image (24).png>)
+![](<../../../../.gitbook/assets/image (24) (2).png>)
 
 6. The administrator account is selected by default. You need to copy and paste the password you saved earlier into the login pop-up (This information is taken from the email), in which enter the information **InstanceLogin** into **Username** , **InstancePassword** into **Password.**
 7. Select **OK.** Due to the nature of self-signed certificates, you may receive a warning that the security certificate cannot be validated. Use the following steps to verify the identity of the remote computer, or simply select **Yes** (Windows) or **Continue** (Mac OS X) if you trust the certificate.
 
-![](<../../../../.gitbook/assets/image (456).png>)
+![](<../../../../.gitbook/assets/image (456) (2).png>)
 
 8. The screen will show that the connection to the **Windows** server is successful.
 
-![](<../../../../.gitbook/assets/image (457).png>)
+![](<../../../../.gitbook/assets/image (457) (2).png>)
 
 </details>
 
@@ -89,13 +89,13 @@ After you have connected to Windows server, you need to make sure your Windows s
     * **IP Address:** static IP address of the VM.
     * **Subnet Mask:** Corresponding subnet, for example: 255.0.0.0
 
-<figure><img src="../../../../.gitbook/assets/image (458).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (458) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ## Create a File Storage <a href="#khoi-tao-file-storage" id="khoi-tao-file-storage"></a>
 
-**Step 1:** Go to [https://efs.console.vngcloud.vn/overview](https://efs.console.vngcloud.vn/overview)
+**Step 1:** Go to [https://efs.console.greennode.ai/overview](https://efs.console.greennode.ai/overview)
 
 **Step 2:** Select **File Storage** then select **Create a File storage.**
 
@@ -107,23 +107,23 @@ After you have connected to Windows server, you need to make sure your Windows s
 * **Protocol:** select SMB
 * **Tag:** you can add tags to mark file storage as needed.
 
-<figure><img src="../../../../.gitbook/assets/image (459).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (459) (2).png" alt=""><figcaption></figcaption></figure>
 
 * **File Storage Max quota:** in the file storage initialization step, you need to set a maximum quota limit for that file storage. This quota means the limit of storage capacity that the file storage can use, helping to manage resources effectively. <mark style="color:red;">**The minimum quota you need to choose is 1 TB and the maximum quota we provide is 50 TB**</mark>**.** If you need to use more than 50 TB for a file storage, please contact us.
 * **Network type** : for SMB file type, network type must be Private. At this point, you need to select **VPC** , **Subnet** that you have created from vServer Portal.
 
-<figure><img src="../../../../.gitbook/assets/image (460).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (460) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Window Authentication:** configure access rights via **Basic Authentication**
   * **Basic Authentication:** If your Windows server does not have Active Directory or you want to manage access simply through username and password, you can use Basic authentication, we support you to create up to 10 username/password accounts to access file storage.
 
-<figure><img src="../../../../.gitbook/assets/image (461).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (461) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 5:** Select **Create File Storage.**
 
 **Step 6:** After the system has completed initializing the SMB File Storage, you can get the **File Storage IP Address** information in the File Storage details section and continue to perform the steps below.
 
-<figure><img src="../../../../.gitbook/assets/image (462).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (462) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -140,9 +140,9 @@ On Windows Server, you can map SMB file storage through the interface or command
    2. **Folder** : Enter the SMB share path, for example: `\\<File Storage IP Address>\<File Storage Name>`. For example `\\10.50.3.8\demo-smb`.
    3. Select **Finish** , once done, you can check in **File Explorer** to see the mapped drive.
 
-<figure><img src="../../../../.gitbook/assets/image (463).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (463) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (464).png" alt="" width="501"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (464) (2).png" alt="" width="501"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**

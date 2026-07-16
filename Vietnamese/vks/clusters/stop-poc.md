@@ -6,7 +6,7 @@ Trước khi tìm hiểu cách Stop POC cho tài nguyên của bạn trên VKS, 
 
 Để khởi tạo Cluster thông qua ví POC, hãy thực hiện các bước như sau;
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Bước 1:** Truy cập vào [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Bước 2:** Tại màn hình **Overview**, chọn **Activate.**
 
@@ -184,7 +184,7 @@ spec:
 
 **Để tiếp tục sử dụng tài nguyên vừa dừng POC như một tài nguyên bình thường (với mục đích giữ nguyên cấu hình), người dùng có thể thực hiện:**
 
-**Bước 1:** Truy cập vào [VKS Portal](https://vks.console.vngcloud.vn/k8s-cluster), chọn Cluster mà bạn muốn Stop POC.
+**Bước 1:** Truy cập vào [VKS Portal](https://vks.console.greennode.ai/k8s-cluster), chọn Cluster mà bạn muốn Stop POC.
 
 **Bước 2:** Chọn nút **Stop POC** phía trên góc phải màn hình.
 

@@ -301,7 +301,7 @@ Xóa tài nguyên theo thứ tự sau để tránh lỗi phụ thuộc:
 
 #### Portal (GUI)
 
-1. Mở https://aiplatform.console.vngcloud.vn/runtime → nhấn vào runtime → **"Delete"** → xác nhận
+1. Mở https://aiplatform.console.greennode.ai/runtime → nhấn vào runtime → **"Delete"** → xác nhận
 
 #### RESTful API
 
@@ -357,7 +357,7 @@ asyncio.run(client.delete_oauth2_provider_async(name="google-oauth"))
 
 #### Portal (GUI)
 
-1. Mở https://aiplatform.console.vngcloud.vn/identity → tìm identity → **"Delete"** → xác nhận
+1. Mở https://aiplatform.console.greennode.ai/identity → tìm identity → **"Delete"** → xác nhận
 
 #### RESTful API
 
@@ -378,7 +378,7 @@ asyncio.run(client.delete_agent_identity_async(name="my-agent"))
 
 #### Portal (GUI)
 
-1. Mở https://aiplatform.console.vngcloud.vn/memory → nhấn vào memory → **"Delete"** → xác nhận
+1. Mở https://aiplatform.console.greennode.ai/memory → nhấn vào memory → **"Delete"** → xác nhận
 
 #### RESTful API
 
@@ -412,7 +412,7 @@ asyncio.run(memory_client.delete_async(id="<memory-id>"))
 
 #### Portal (GUI)
 
-1. Mở https://vcr.console.vngcloud.vn → điều hướng đến repository → xóa tất cả image trước → xóa repository
+1. Mở https://vcr.console.greennode.ai → điều hướng đến repository → xóa tất cả image trước → xóa repository
 
 #### RESTful API
 

@@ -93,7 +93,7 @@ Runtime: my-order-agent
 
 #### Tạo một Runtime
 
-1. Mở https://aiplatform.console.vngcloud.vn/my-agents?tab=runtime
+1. Mở https://aiplatform.console.greennode.ai/my-agents?tab=runtime
 2. Nhấn **"Create Runtime"**
 3. Điền thông tin
 

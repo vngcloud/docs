@@ -2,7 +2,7 @@
 
 ## Step 1: Access Model Registry
 
-* Log in with your GreenNode account and navigate to the [Model Registry Dashboard](https://aiplatform.console.vngcloud.vn/registry).
+* Log in with your GreenNode account and navigate to the [Model Registry Dashboard](https://aiplatform.console.greennode.ai/registry).
 * Find and click the "Import a model registry" button..
 
 ## Step 2: Configure Model Registry

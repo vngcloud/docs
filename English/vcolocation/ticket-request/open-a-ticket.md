@@ -2,11 +2,11 @@
 
 On the request management page, click "Open Ticket" to create a new ticket.
 
-<figure><img src="../../.gitbook/assets/image (229).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (229) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Ticket Information Input Interface:
 
-<figure><img src="../../.gitbook/assets/image (230).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (230) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Explanation of the steps:
 

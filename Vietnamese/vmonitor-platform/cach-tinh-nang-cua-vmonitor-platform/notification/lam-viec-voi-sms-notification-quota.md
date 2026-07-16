@@ -8,9 +8,9 @@ Một SMS Notification quota là một thuật ngữ trên vMonitor Platform th�
 
 ### Khởi tạo SMS Notification Quota
 
-Để khởi tạo một SMS Notification Quota, hãy làm theo hướng dẫn bên dưới:&#x20;
+Để khởi tạo một SMS Notification Quota, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn **Quota & Usage**.
 3. Chọn **Buy SMS notification quota.**
 4. Chọn **SMS packages** phù hợp với nhu cầu của bạn.
@@ -24,12 +24,12 @@ Một SMS Notification quota là một thuật ngữ trên vMonitor Platform th�
 
 ### Xem thông tin SMS Notification Quota
 
-Sau khi bạn khởi tạo SMS Notification Quota, bạn có thể xem thông tin gói SMS Notification Quota mà bạn vừa thực hiện khởi tạo bằng cách:&#x20;
+Sau khi bạn khởi tạo SMS Notification Quota, bạn có thể xem thông tin gói SMS Notification Quota mà bạn vừa thực hiện khởi tạo bằng cách:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn **Paid notification usage**.
-4. Hệ thống hiển thị thông tin gói **SMS notification quota** đã được khởi tạo và **Usage** thực tế bạn đang sử dụng của gói **SMS notification quota** đó.&#x20;
+4. Hệ thống hiển thị thông tin gói **SMS notification quota** đã được khởi tạo và **Usage** thực tế bạn đang sử dụng của gói **SMS notification quota** đó.
 
 ***
 
@@ -37,9 +37,9 @@ Sau khi bạn khởi tạo SMS Notification Quota, bạn có thể xem thông ti
 
 Bạn đã khởi tạo SMS notification quota với chu kỳ sử dụng ngắn hạn. Hiện tại nhu cầu giám sát của bạn thay đổi và bạn muốn tăng thêm chu kỳ sử dụng gói notification này. Để giải quyết vấn đề nêu trên, bạn có thể thay đổi chu kỳ lưu trữ thông qua tính năng **renew** mà chúng tôi cung cấp.
 
-Để **gia hạn** một **SMS Notification Quota**, bạn có thể:&#x20;
+Để **gia hạn** một **SMS Notification Quota**, bạn có thể:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn **Paid notification usage**.
 4. Tại gói SMS notification quota đang sử dụng, chọn **Renew.**
@@ -54,13 +54,13 @@ Bạn chỉ có thể gia hạn sử dụng gói SMS notification quota trong v�
 
 ### Tăng giảm hạn mức SMS Notification Quota
 
-Để **tăng hạn mức** một **SMS Notification Quota**, bạn có thể:&#x20;
+Để **tăng hạn mức** một **SMS Notification Quota**, bạn có thể:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn **Paid notification usage**.
 4. Tại gói SMS notification quota đang sử dụng, chọn **Upgrade**.
-5. Chọn **gói SMS notification quota** mới mà bạn muốn nâng cấp. Gói notification nâng cấp phải đảm bảo điều kiện có cấu hình (số lượng tin nhắn văn bản) trên cấu hình gói (số lượng tin nhắn văn bản) cao hơn cấu hình gói đang sử dụng.&#x20;
+5. Chọn **gói SMS notification quota** mới mà bạn muốn nâng cấp. Gói notification nâng cấp phải đảm bảo điều kiện có cấu hình (số lượng tin nhắn văn bản) trên cấu hình gói (số lượng tin nhắn văn bản) cao hơn cấu hình gói đang sử dụng.
 6. Chọn **Upgrade.**
 7. Nhập **Coupon** nếu có và chọn **Apply**.
 8. Chọn **Continue** và tiếp tục thực hiện các bước **Thanh toán** giỏ hàng và sau khi thanh toán thành công **SMS notification quota** sẽ được tăng hạn mức.
@@ -71,16 +71,16 @@ Cách tính chi phí tăng hạn mức cho mỗi gói SMS notification quota đ�
 
 ### Xóa SMS Notification Quota
 
-Nếu bạn không có nhu cầu sử dụng gói SMS notification quota đã tạo. Chúng tôi khuyến khích bạn nên xóa gói SMS notification quota này để tối ưu chi phí.&#x20;
+Nếu bạn không có nhu cầu sử dụng gói SMS notification quota đã tạo. Chúng tôi khuyến khích bạn nên xóa gói SMS notification quota này để tối ưu chi phí.
 
-Để **xóa** một **SMS Notification Quota**, bạn có thể:&#x20;
+Để **xóa** một **SMS Notification Quota**, bạn có thể:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Quota\&Usage.**
 3. Chọn **Paid notification usage**.
 4. Tại gói SMS notification quota đang sử dụng, chọn **Delete**.
 5. Tại màn hình xác nhận xóa SMS notification quota, chọn **Delete**.
 
-Sau khi bạn bạn thực hiện xóa gói SMS notification quota thì gói notification bị xóa sẽ biến mất khỏi danh sách gói notification của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](../../cach-tinh-phi.md).&#x20;
+Sau khi bạn bạn thực hiện xóa gói SMS notification quota thì gói notification bị xóa sẽ biến mất khỏi danh sách gói notification của bạn. Nếu tài nguyên của bạn còn thời hạn sử dụng thì chúng tôi sẽ thực hiện bồi hoàn cho bạn số dư chưa sử dụng thông qua số dư ví credit. Chi tiết cách vMonitor Platform tính phí bồi hoàn tài nguyên, hãy xem [Cách tính phí](../../cach-tinh-phi.md).
 
-<mark style="color:red;">**Do hành động xóa SMS notification quota tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.**</mark>&#x20;
+<mark style="color:red;">**Do hành động xóa SMS notification quota tiềm ẩn nhiều rủi ro (không thể khôi phục lại tài nguyên sau khi thực hiện xóa) nên chúng tôi khuyến cáo bạn hãy xem xét cẩn thận trước khi thực hiện xóa.**</mark>

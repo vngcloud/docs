@@ -8,7 +8,7 @@ Trước khi có thể lưu trữ dữ liệu trong vStorage, bạn phải tạo
 
 Để khởi tạo một project, vui lòng thực hiện theo các bước bên dưới:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list). Chọn **project** muốn thực hiện tạo **bucket.**
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list). Chọn **project** muốn thực hiện tạo **bucket.**
 2. Chọn **Create a bucket**.
 3. Nhập **Bucket name** theo quy định của chúng tôi.
 4. Chọn **Enable Object Locked** nếu bạn muốn sử dụng tính năng **Object locked** cho bucket này.
@@ -30,7 +30,7 @@ Sau khi tạo bucket và tải lên object vào bucket đó. Bạn có thể xem
 
 Để xem chi tiết thông tin của một bucket, bạn có thể:
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **project** chứa **bucket** bạn muốn xem chi tiết.
 
@@ -54,7 +54,7 @@ Sau khi tạo bucket và tải lên object vào bucket đó. Bạn có thể xem
 
 Để sử dụng tính năng Bucket encryption, vui lòng thực hiện theo các bước bên dưới:
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **project** chứa **bucket** bạn muốn thiết lập encryption.
 
@@ -84,7 +84,7 @@ Vui lòng download object về client và thực hiện upload lại (PUT Object
 
 Để xóa một bucket, vui lòng thực hiện theo các bước bên dưới:
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **project** và chọn **bucket** bạn muốn thực hiện xóa.
 

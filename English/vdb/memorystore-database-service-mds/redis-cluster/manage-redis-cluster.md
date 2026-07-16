@@ -29,7 +29,7 @@ A count badge is shown next to each tab name. The quick filter works together wi
 
 The **Topology** tab on the cluster detail page displays the full master–replica structure of the cluster.
 
-![](../../../.gitbook/assets/Redis-cluster/redis-cluster-detail.png)
+![](<../../../.gitbook/assets/redis-cluster-detail (1).png>)
 
 **To view Topology:**
 
@@ -48,7 +48,7 @@ This tab shows:
 
 You can scale up or scale down the number of Replicas after cluster creation with no downtime.
 
-![](../../../.gitbook/assets/Redis-cluster/redis-edit-node.png)
+![](<../../../.gitbook/assets/redis-edit-node (1).png>)
 
 **To change the number of Replicas:**
 
@@ -79,7 +79,7 @@ The **Back up now** button is located directly in the cluster detail page header
 
 The system will show a _"Manual backup is being created"_ notification and the new backup will appear in the **Backup** tab with **In Progress** status.
 
-![](../../../.gitbook/assets/Redis-cluster/redis-backup-now.png)
+![](<../../../.gitbook/assets/redis-backup-now (1).png>)
 
 {% hint style="warning" %}
 * The **Back up now** button is disabled when a backup job is already running (Auto or Manual). A tooltip will display: _"A backup job is currently in progress"_.
@@ -97,7 +97,7 @@ The **Backup** tab on the cluster detail page lets you monitor backup status and
 
 1. On the cluster detail page, select the **Backup** tab.
 
-![](../../../.gitbook/assets/Redis-cluster/redis-detail-tab-backup.png)
+![](<../../../.gitbook/assets/redis-detail-tab-backup (1).png>)
 
 This tab shows:
 
@@ -156,5 +156,5 @@ From the Database list page, click the **Action (⋮)** icon next to a Redis Clu
 
 ## Next Steps
 
-* [View limitations and constraints for Redis Cluster](redis-cluster-limitations.md)
+* [View limitations and constraints for Redis Cluster](https://github.com/vngcloud/docs/blob/main/English/vdb/memorystore-database-service-mds/redis-cluster/redis-cluster-limitations.md)
 * [Understand the architecture and compare with Single-node](./)

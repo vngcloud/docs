@@ -13,7 +13,7 @@ vStorage provides you with storage statistics and project activity reports, you 
 
 To report a summary of projects in a specific region, you can:
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) .
 
 2\. Select **the Region** you want to view the report\*\*.\*\*
 
@@ -40,7 +40,7 @@ To report a summary of projects in a specific region, you can:
 
 To report a summary of projects in a specific region, you can:
 
-1\. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list) .
+1\. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list) .
 
 2\. Select **the Region** you want to view the report\*\*.\*\*
 

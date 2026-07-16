@@ -8,7 +8,7 @@ vStorage hỗ trợ chế độ riêng tư (Private container) mặc định cho
 
 <summary>Sử dụng vStorage Portal</summary>
 
-1\. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list).
+1\. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 
 2\. Chọn **project** và chọn **container** bạn muốn chuyển chế độ riêng tư.
 

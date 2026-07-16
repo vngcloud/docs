@@ -4,7 +4,7 @@ If you have not used any GreenNode services (have not registered an account with
 
 **Getting Started with DataSync, you can follow these steps below:**
 
-**Step 1:** Login into [https://datasync.console.vngcloud.vn/](https://datasync.console.vngcloud.vn/) . If you don't have an account, register for free here.
+**Step 1:** Login into [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/) . If you don't have an account, register for free here.
 
 **Step 2:** Select the button **Create a transfer job** to create a job uses to transfer data.
 

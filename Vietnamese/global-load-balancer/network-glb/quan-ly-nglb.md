@@ -13,7 +13,7 @@ GreenNode cung cấp giao diện trực quan trong việc quản lý NGLB, bao g
 
 **Cách khởi tạo một Network Global Load Balancer**
 
-1. **Truy cập vào trang chủ Global Load Balancer tại đây:** [**https://glb.console.vngcloud.vn/glb/list**](https://glb.console.vngcloud.vn/glb/list)
+1. **Truy cập vào trang chủ Global Load Balancer tại đây:** [**https://glb.console.greennode.ai/glb/list**](https://glb.console.greennode.ai/glb/list)
 2. **Tại trang chủ GLB, click chọn "Create Global Load Balancer".**
 3. **Chọn cấu hình Global Load Balancer**
    * _**Tên Load Balancer**_**:** Trường hợp người dùng không chủ động điền tên Load Balancer, hệ thống sẽ tự động sinh ra tên Load Balancer. Lưu ý rằng tên Load balancer không thể thay đổi trong quá trình sử dụng, do đó người dùng nên chủ động nhập tên nếu có nhu cầu quản lý theo tên.
@@ -50,7 +50,7 @@ Sử dụng hướng dẫn này để phục vụ cho việc xem danh sách tấ
 
 **Truy cập danh sách Global Load Balancer**
 
-1. Truy cập vào trang chủ Global Load Balancer tại đây: [https://glb.console.vngcloud.vn/glb/list](https://glb.console.vngcloud.vn/glb/list)
+1. Truy cập vào trang chủ Global Load Balancer tại đây: [https://glb.console.greennode.ai/glb/list](https://glb.console.greennode.ai/glb/list)
 2. Tại trang chủ Global Load Balancer, một danh sách GLB sẽ xuất hiện bao gồm các thông tin như:
    * Tên và định danh Global Load Balancer: Có hỗ trợ sao chép định danh Global Load Balancer nhằm mục đích sử dụng cho Terraform hoặc các nhu cầu khác
    * Trạng thái GLB: Cho biết trạng thái hiện tại của Global Load Balancer

@@ -12,7 +12,7 @@ Processor Group: cho phép bạn chỉ định nơi lấy dữ liệu log (sourc
 
 Để tạo processor group, hãy làm theo hướng dẫn bên dưới:
 
-1\. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor/).
+1\. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/).
 
 2\. Chọn thư mục **Log**, sau đó chọn menu **Log pipeline**.
 
@@ -75,7 +75,7 @@ Sau khi bạn sao chép thành công:
 
 Để chỉnh sửa Processor group trong Log pipeline, hãy làm theo hướng dẫn bên dưới
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Log.**
 3. Chọn **Log pipeline.**
 4. Trong danh sách log pipeline đang có, chọn **Log pipeline** chứa **Processor group** mà bạn muốn chỉnh sửa.
@@ -90,7 +90,7 @@ Sau khi bạn sao chép thành công:
 
 Khi bạn không có nhu cầu sử dụng một Processor group tùy chỉnh nữa, bạn có thể thực hiện xóa Processor group khỏi hệ thống theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.vngcloud.vn/vmonitor](https://hcm-3.console.vngcloud.vn/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Log.**
 3. Chọn **Log pipeline** chứa processor group mà bạn muốn thực hiện xóa.
 4. Chọn **Processor group.**

@@ -2,7 +2,7 @@
 
 ## Overview <a href="#lamviecvoivcdn-log-tongquan" id="lamviecvoivcdn-log-tongquan"></a>
 
-**vCDN Log Monitoring** is an integrated system between **vCDN** and **vMonitor Platform** that helps users monitor resources on vCDN through synchronizing, collecting and filtering information at each user's **CDN domain** . To enable/disable the feature of pushing logs from **vCDN** to the vMonitor Platform system, first visit here [.](https://hcm-3.console.vngcloud.vn/vmonitor) Then select **the Infrastructure list/vCDN - Log folder.** Here, you can see a list of all the **vCDN domains** you have on your account.
+**vCDN Log Monitoring** is an integrated system between **vCDN** and **vMonitor Platform** that helps users monitor resources on vCDN through synchronizing, collecting and filtering information at each user's **CDN domain** . To enable/disable the feature of pushing logs from **vCDN** to the vMonitor Platform system, first visit here [.](https://hcm-3.console.greennode.ai/vmonitor) Then select **the Infrastructure list/vCDN - Log folder.** Here, you can see a list of all the **vCDN domains** you have on your account.
 
 * On this screen, you will see basic information columns such as:
   * **vCDN domains** : domain name of CDN.

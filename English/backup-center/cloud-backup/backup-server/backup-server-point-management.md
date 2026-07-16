@@ -6,7 +6,7 @@ This tutorial will guide you step by step through the Backup Server Point manage
 
 ## View list of backup server points <a href="#xem-danh-sach-backup-server-point" id="xem-danh-sach-backup-server-point"></a>
 
-1. Access the backup server list page here: [https://backupcenter.console.vngcloud.vn/backup-server/list](https://backupcenter.console.vngcloud.vn/backup-server/list)
+1. Access the backup server list page here: [https://backupcenter.console.greennode.ai/backup-server/list](https://backupcenter.console.greennode.ai/backup-server/list)
 2.  Select the Backup Server to view the backup server point. You can click on the search box, enter the name of the backup server you want to find.
 
     <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FF8FeATCif1jF6W2HHCCw%252Fimage.png%3Falt%3Dmedia%26token%3Dffabaec5-b249-456b-93ab-5d225d5fa284&#x26;width=300&#x26;dpr=4&#x26;quality=100&#x26;sign=9c86105f&#x26;sv=1" alt=""><figcaption></figcaption></figure>
@@ -27,7 +27,7 @@ This tutorial will guide you step by step through the Backup Server Point manage
 
 To view the history of backup server point initializations, follow these instructions:
 
-1. Access the History page of Backup Center here: [https://backupcenter.console.vngcloud.vn/backup-history/list](https://backupcenter.console.vngcloud.vn/backup-history/list)
+1. Access the History page of Backup Center here: [https://backupcenter.console.greennode.ai/backup-history/list](https://backupcenter.console.greennode.ai/backup-history/list)
 2. Select the Backup History tab to view the history of backup initiations.
 3. Enter Backup Server ID in the search box to view the backup initialization history of a backup server. The information displayed includes:
    1. **Status:** Backup server point initialization status (Active -> Created successfully; Error -> Created failed)

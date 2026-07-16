@@ -12,8 +12,8 @@ Thực hiện theo các bước sau để khởi tạo một Repository:
 
 **Bước 1**: Truy cập Portal của vContainer Registry.&#x20;
 
-* Với **Region HCM**: [https://vcr.console.vngcloud.vn/repository/list](https://vcr.console.vngcloud.vn/repository/list)
-* Với **Region HAN**: [https://han-1.console.vngcloud.vn/vcr/repository/list](https://han-1.console.vngcloud.vn/vcr/repository/list)
+* Với **Region HCM**: [https://vcr.console.greennode.ai/repository/list](https://vcr.console.greennode.ai/repository/list)
+* Với **Region HAN**: [https://han-1.console.greennode.ai/vcr/repository/list](https://han-1.console.greennode.ai/vcr/repository/list)
 
 **Bước 2:** Chọn mục **Repository** sau đó chọn nút **"Create Repository".**&#x20;
 
@@ -33,8 +33,8 @@ Thực hiện theo các bước sau để khởi tạo một Repository user:
 
 **Bước 1**: Truy cập Portal của vContainer Registry.&#x20;
 
-* Với **Region HCM**: [https://vcr.console.vngcloud.vn/repository/list](https://vcr.console.vngcloud.vn/repository/list)
-* Với **Region HAN**: [https://han-1.console.vngcloud.vn/vcr/repository/list](https://han-1.console.vngcloud.vn/vcr/repository/list)
+* Với **Region HCM**: [https://vcr.console.greennode.ai/repository/list](https://vcr.console.greennode.ai/repository/list)
+* Với **Region HAN**: [https://han-1.console.greennode.ai/vcr/repository/list](https://han-1.console.greennode.ai/vcr/repository/list)
 
 **Bước 2:** Chọn mục **Reposity** sau đó chọn vào **Repository** cần tạo **Repository User**, tiếp tục chọn mục **Repository User.** Tiếp tục chọn **Create a user**
 

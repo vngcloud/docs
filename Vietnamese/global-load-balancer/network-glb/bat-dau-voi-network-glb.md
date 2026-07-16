@@ -13,9 +13,9 @@ GLB Console là giao diện người dùng dựa trên web, cho phép bạn qu�
 
 **Cách truy cập Bảng điều khiển GLB**
 
-* Truy cập từ trang chủ vConsole: [https://dashboard.console.vngcloud.vn/](https://dashboard.console.vngcloud.vn/)
+* Truy cập từ trang chủ vConsole: [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/)
   * Tại mục **"GreenNode Service"** trên giao diện, click **chọn "vServer"**, sau đó click **chọn "GLB"** từ danh sách sản phẩm/dịch vụ tương ứng bên phải
-* Truy cập trực tiêp đến vLB Portal thông qua đường dẫn: [https://glb.console.vngcloud.vn/overview](https://glb.console.vngcloud.vn/overview)
+* Truy cập trực tiêp đến vLB Portal thông qua đường dẫn: [https://glb.console.greennode.ai/overview](https://glb.console.greennode.ai/overview)
 
 #### 2. Khởi tạo Network GLB <a href="#gettingstarted-nlb-2.khoitaonlb" id="gettingstarted-nlb-2.khoitaonlb"></a>
 

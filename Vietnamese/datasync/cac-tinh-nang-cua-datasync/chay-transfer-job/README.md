@@ -4,7 +4,7 @@ Sau khi tạo một Transfer Job, bạn có thể bắt đầu chạy task để
 
 **Để chạy Transfer Job, hãy làm theo hướng dẫn:**
 
-**Bước 1:** Truy cập vào [https://datasync.console.vngcloud.vn/](https://datasync.console.vngcloud.vn/transfer-job/list)
+**Bước 1:** Truy cập vào [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/transfer-job/list)
 
 **Bước 2:** Tại menu bên trái, chọn mục **Transfer Job**.&#x20;
 

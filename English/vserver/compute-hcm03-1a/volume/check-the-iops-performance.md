@@ -535,7 +535,7 @@ Disk stats (read/write):
 
 Currently, the vServer and vMonitor Platform systems have integrated Dashboards to help you manage your server parameters (including IOPS parameters). Specifically, you can follow these steps:
 
-1. Access [**vMonitor Platform**](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vmonitor/vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi) at the link: [https://vmonitor.console.vngcloud.vn/](https://vmonitor.console.vngcloud.vn/)
+1. Access [**vMonitor Platform**](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/vn/vmonitor/vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi) at the link: [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/)
 2. Select **Dashboard** , then select **All GreenNode**
 3. Continue to find and select **the Dashboard** containing your server name, this **Dashboard** name will have the format:`vServer-server-name-xxxx`
 

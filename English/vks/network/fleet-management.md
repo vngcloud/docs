@@ -23,13 +23,13 @@ Fleet Management is a feature that helps group Kubernetes clusters across multip
 
 Follow these instructions to create a Fleet and manage traffic distribution with GLB:
 
-**Step 1:** Log in to **VKS Portal** at the link: [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Step 1:** Log in to **VKS Portal** at the link: [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Step 2:** Select **Fleet Management**
 
 **Step 3:** Select **Create a fleet**
 
-<figure><img src="../../.gitbook/assets/image (507).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (507) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 4:** Enter a memorable name for the fleet in the **Fleet Name** field . The **Fleet** name must be between 5 and 50 characters long, including the characters a-z, 0-9, '-'
 
@@ -43,7 +43,7 @@ Follow these instructions to create a Fleet and manage traffic distribution with
 
 **Step 9:** Select **Create**
 
-<figure><img src="../../.gitbook/assets/image (508).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (508) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 10:** Deploy a service on the host cluster. First, you need to download **the KubeConfig** of **the Host Cluster** and connect to this host cluster. After downloading the **KubeConfig** file and updating it to a **config** file in the directory `~/.kube`, you can check the connection to the cluster with the command:
 
@@ -115,9 +115,9 @@ kubectl apply -f glb-nginx.yaml
 
 Replace `glb-nginx.yaml`with your YAML file name.
 
-At this time, the system will create a new vGLB on the vGLB system, you can check the created vGLB [here](https://glb.console.vngcloud.vn/glb/list) .
+At this time, the system will create a new vGLB on the vGLB system, you can check the created vGLB [here](https://glb.console.greennode.ai/glb/list) .
 
-<figure><img src="../../.gitbook/assets/image (509).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (509) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**
@@ -144,7 +144,7 @@ nginx-service   fl-cadc9e8c-0930-44aa-a37f-cb330a8c4af9   glb-09108dcc-5d3d-4067
 
 **Step 14:** Get the IP address or hostname of GLB to access the service using the command:
 
-<figure><img src="../../.gitbook/assets/image (510).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (510) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 15:** Test Fleet's performance by sending a request to GLB:
 
@@ -192,7 +192,7 @@ RawContentLength  : 612
 
 Or access directly as picture:
 
-<figure><img src="../../.gitbook/assets/image (511).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (511) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### **Check North-South Traffic with GLB** <a href="#kiem-tra-north-south-traffic-voi-glb" id="kiem-tra-north-south-traffic-voi-glb"></a>
 
@@ -404,13 +404,13 @@ After creating a Fleet, you can add existing Kubernetes clusters to the Fleet in
 
 * **Method 1:** In **Fleet Management** , select **Edit Fleet** then select a cluster from the available list and click **"Register"** to add to Fleet.
 
-<figure><img src="../../.gitbook/assets/image (512).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (512) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (513).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (513) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Method 2:** Register the cluster directly to Fleet during the cluster creation process.
 
-<figure><img src="../../.gitbook/assets/image (514).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (514) (1).png" alt=""><figcaption></figcaption></figure>
 
 If you no longer need a cluster in Fleet, you can **Unregister it** by:
 
@@ -420,9 +420,9 @@ If you no longer need a cluster in Fleet, you can **Unregister it** by:
 
 **Step 3:** Click **"Remove"** or **"Unregister"** (only delete cluster from Fleet, not delete cluster from VKS system).
 
-<figure><img src="../../.gitbook/assets/image (515).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (515) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (516).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (516) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -433,7 +433,7 @@ Once you create a Fleet, you can edit its configuration:
 * **Change Host Cluster** in existing Fleet.
 * **Add or remove cluster members** as needed, but always ensure Fleet has at least one cluster host.
 
-<figure><img src="../../.gitbook/assets/image (517).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (517) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -447,7 +447,7 @@ When you no longer need a Fleet, you can delete it by:
 
 **Step 3:** Click **"Delete"** and confirm.
 
-<figure><img src="../../.gitbook/assets/image (519).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (519) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**

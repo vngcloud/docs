@@ -21,7 +21,7 @@ Network Volume is a type of shared storage in AI Platform that allows users to s
 
 ### **Step 1: Create a Network Volume**
 
-1. Access the Network Volume tab in AI Platform via: [https://aiplatform.console.vngcloud.vn/volume](https://aiplatform.console.vngcloud.vn/volume)
+1. Access the Network Volume tab in AI Platform via: [https://aiplatform.console.greennode.ai/volume](https://aiplatform.console.greennode.ai/volume)
 2. Click Create Network Volume.
 3. Enter the following information:
 
@@ -75,13 +75,13 @@ host_bucket = %(bucket)s.<hostname>
 
 You can obtain \<access\_key>, \<secret\_key>, and \<hostname> from the Network Volume details page in AI Platform.
 
-<figure><img src="../../.gitbook/assets/image (345).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (345) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (355).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (355) (2).png" alt=""><figcaption></figcaption></figure>
 
 Using s3cmd with the configured s3cnf file, you can perform actions such as put, ls, etc., on the bucket.
 
-<figure><img src="../../.gitbook/assets/image (369).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (369) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3: Mount Network Volume to Notebook
 
@@ -92,27 +92,27 @@ Attach a Network Volume to a notebook instance. This allows your notebook to acc
 * Select the Data Mount section
 * Specify:
 
-&#x20;   \- Network volume: ai-storage
+\- Network volume: ai-storage
 
-&#x20;                 Select your Network Volume from the list.
+Select your Network Volume from the list.
 
-&#x20;                 You can click "Manage your volumes" to manage your existing Network Volumes.
+You can click "Manage your volumes" to manage your existing Network Volumes.
 
-<figure><img src="../../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (370) (2).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;    \- Mount folder name (Folder Sync):
+\- Mount folder name (Folder Sync):
 
-&#x20;       Create a destination folder in the notebook to synchronize data from the Network Volume.        Example: /workspace/notebook-data
+Create a destination folder in the notebook to synchronize data from the Network Volume. Example: /workspace/notebook-data
 
-&#x20;       Note: Only letters (a-z, A-Z, 0-9, '\_', '-', '+', '.') are allowed. Input length must be less than 256 characters.
+Note: Only letters (a-z, A-Z, 0-9, '\_', '-', '+', '.') are allowed. Input length must be less than 256 characters.
 
-&#x20;  \- Block storage size:
+\- Block storage size:
 
-&#x20;      Enter the temporary storage size (ephemeral block storage) to store the OS and a copy of data from the Network Volume.
+Enter the temporary storage size (ephemeral block storage) to store the OS and a copy of data from the Network Volume.
 
-&#x20;      Choose a size large enough for your data, from 20 to 1000. (If the block storage size is smaller than or equal to the current Network Volume size, notebook creation will fail.)
+Choose a size large enough for your data, from 20 to 1000. (If the block storage size is smaller than or equal to the current Network Volume size, notebook creation will fail.)
 
-<figure><img src="../../.gitbook/assets/image (371).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (371) (2).png" alt=""><figcaption></figcaption></figure>
 
 * **When starting the notebook:**
 
@@ -133,7 +133,7 @@ Modified data will be synchronized back to the Network Volume.
 * Model repository: Path to the model files (e.g., /models/llama3/)
 * Network volume: Specify the Network Volume containing the AI model so the system can access it during inference. Note: The model must be stored at the correct path specified in Model repository (e.g., ai-storage).
 
-<figure><img src="../../.gitbook/assets/image (386).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (386) (2).png" alt=""><figcaption></figcaption></figure>
 
 After import, the model will be ready for deployment.
 

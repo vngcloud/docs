@@ -4,7 +4,7 @@ To start using the service, you need to create a project. A Project is a term on
 
 Create a project by following the steps below:
 
-1. Log in to [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list). If you don't have an account, register for free [here](https://register.vngcloud.vn/signup).
+1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list). If you don't have an account, register for free [here](https://register.vngcloud.vn/signup).
 2. Select **Region HAN02.**
 3. Select **Create a Project.**
 4. Enter **Project Name**
@@ -14,6 +14,6 @@ Create a project by following the steps below:
 8. Select **Period** according to your needs.
 9. **Go through the Checkout** steps and your **Project** will be created.
 
-<figure><img src="../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (25) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (77) (2).png" alt=""><figcaption></figcaption></figure>

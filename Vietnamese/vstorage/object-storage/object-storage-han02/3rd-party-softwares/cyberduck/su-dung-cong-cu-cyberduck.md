@@ -5,7 +5,7 @@
 **Tạo một bucket mới**
 
 1. Tại màn hình chính của **Cyberduck**, nhấn chuột phải tại vùng trang trắng và chọn **New Folder.** Hoặc bạn có thể nhấn tổ hợp phím **Ctrl + Shift + N.**
-2. Nhập tên **bucket**. Tên bucket mà bạn nhập phải tuân thủ theo quy định của chúng tôi. Chi tiết tham khảo tại [Phạm vi giới hạn bucket](../../../vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-bucket/pham-vi-gioi-han-bucket.md)
+2. Nhập tên **bucket**. Tên bucket mà bạn nhập phải tuân thủ theo quy định của chúng tôi. Chi tiết tham khảo tại [Phạm vi giới hạn bucket](https://github.com/vngcloud/docs/blob/main/Vietnamese/vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-bucket/pham-vi-gioi-han-bucket.md)
 
 <figure><img src="https://contabo.com/blog/wp-content/uploads/2022/12/image-7.png" alt=""><figcaption></figcaption></figure>
 

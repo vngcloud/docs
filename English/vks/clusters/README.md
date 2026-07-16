@@ -6,8 +6,8 @@
 
 To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
-* There is at least 1 **VPC** and 1 **Subnet in ACTIVE** state . If you do not have a VPC or Subnet yet, please create a VPC and Subnet according to the instructions here [.](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md)
-* There is at least 1 **SSH key in ACTIVE** state . If you do not have any SSH key, please create an SSH key according to the instructions here [.](../../vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
+* There is at least 1 **VPC** and 1 **Subnet in ACTIVE** state . If you do not have a VPC or Subnet yet, please create a VPC and Subnet according to the instructions here [.](https://github.com/vngcloud/docs/blob/main/English/vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md)
+* There is at least 1 **SSH key in ACTIVE** state . If you do not have any SSH key, please create an SSH key according to the instructions here [.](https://github.com/vngcloud/docs/blob/main/English/vserver/compute-hcm03-1a/security/ssh-key-bo-khoa.md)
 * Installed and configured **kubectl** on your device. Please refer here [if](https://kubernetes.io/vi/docs/tasks/tools/install-kubectl/) you are not sure how to install and use kuberctl. In addition, you should not use a kubectl version that is too old, we recommend that you use a kubectl version that is no more than one version different from the cluster version.
 
 ***
@@ -16,7 +16,7 @@ To be able to initialize a **Cluster** and **Deploy** a **Workload** , you need:
 
 To initialize a Cluster, follow the steps below:
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2: At the Overview** screen , select **Activate.**
 
@@ -31,7 +31,7 @@ To initialize a Cluster, follow the steps below:
     * **Description:** Enter the information you want to note for the Cluster to create a separate mark for easier management in the future.
   * Network Setting:
     * **Network type, Encapsulation Mode** are selected by default by the system and you cannot change them, however you can re-enter **Calico CIDR** parameters (note that IP must be private and can be selected according to the following options ( 10.0.0.0 - 10.255.0.0 / 172.16.0.0 - 172.24.0.0 / 192.168.0.0)
-    * **VPC:** Select an existing VPC that meets K8S requirements to create your Cluster. Before choosing a VPC, we recommend that you familiarize yourself with all VPC requirements and considerations as well as Subnet requirements and considerations. You cannot change which VPC you want to use after creating the Cluster. If no VPC is listed, you need to create one first. For more information, see [**Create a VPC**](../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md) **.**
+    * **VPC:** Select an existing VPC that meets K8S requirements to create your Cluster. Before choosing a VPC, we recommend that you familiarize yourself with all VPC requirements and considerations as well as Subnet requirements and considerations. You cannot change which VPC you want to use after creating the Cluster. If no VPC is listed, you need to create one first. For more information, see [**Create a VPC**](https://github.com/vngcloud/docs/blob/main/English/vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc.md) **.**
     * **Subnet:** By default, all available subnets in the VPC specified in the previous field will be randomly selected in the first order, you can choose another Subnet again, but only 1 can be selected.
 * Default Node group Configuration:
   * Node Group Information:
@@ -64,11 +64,11 @@ To initialize a Cluster, follow the steps below:
 
 ## Download the Kube Config file <a href="#clusters-taixuongteptinkubeconfig" id="clusters-taixuongteptinkubeconfig"></a>
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2: At the Overview** screen , select the **Kubernetes Cluster menu.**
 
-**Step 3:** In the successfully created **Cluster , select the icon and** select **Download Config File.**![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F71729305%2Fimage2024-4-16\_16-41-12.png%3Fversion%3D1%26modificationDate%3D1713260474000%26api%3Dv2\&width=40\&dpr=4\&quality=100\&sign=95404067\&sv=1)
+**Step 3:** In the successfully created **Cluster , select the icon and** select **Download Config File.**![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F71729305%2Fimage2024-4-16_16-41-12.png%3Fversion%3D1%26modificationDate%3D1713260474000%26api%3Dv2\&width=40\&dpr=4\&quality=100\&sign=95404067\&sv=1)
 
 **Step 4:** The config file will be saved to your computer, now you can use Kubectl to manage your Cluster on your personal device.
 
@@ -94,7 +94,7 @@ To initialize a Cluster, follow the steps below:
 * Persistent Volume is integrated into the Cluster by you.
 {% endhint %}
 
-**Step 1:** Visit [https://vks.console.vngcloud.vn/overview](https://vks.console-dev.vngcloud.tech/overview)
+**Step 1:** Visit [https://vks.console.greennode.ai/overview](https://vks.console-dev.vngcloud.tech/overview)
 
 **Step 2: At the Overview** screen , select the **Kubernetes Cluster menu.**
 

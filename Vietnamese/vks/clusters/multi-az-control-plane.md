@@ -120,7 +120,7 @@ Quy trình upgrade Control Plane cho Multi-AZ Cluster **không khác biệt** so
 
 Quy trình xóa Multi-AZ Cluster **tương tự** như Single-AZ Cluster:
 
-1. Truy cập vào [https://vks.console.vngcloud.vn/k8s-cluster](https://vks.console.vngcloud.vn/k8s-cluster)
+1. Truy cập vào [https://vks.console.greennode.ai/k8s-cluster](https://vks.console.greennode.ai/k8s-cluster)
 2. Chọn cluster muốn xóa và chọn **Delete**
 3. Xác nhận xóa
 

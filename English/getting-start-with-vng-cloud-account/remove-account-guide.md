@@ -2,9 +2,9 @@
 
 ### **Trường hợp user log in vào được portal** <a href="#huongdanhuytaikhoan-1.truonghopuserloginvaoduocportal" id="huongdanhuytaikhoan-1.truonghopuserloginvaoduocportal"></a>
 
-Để **HỦY** đăng kí account trên portal GreenNode, người dùng vào hệ thống quản lý ticket của [GreenNode](https://helpdesk.vngcloud.vn/) chọn chức năng hỗ trợ kỹ thuật như hình :
+Để **HỦY** đăng kí account trên portal GreenNode, người dùng vào hệ thống quản lý ticket của [GreenNode](https://helpdesk.greennode.ai/) chọn chức năng hỗ trợ kỹ thuật như hình :
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Hệ thống sẽ chuyển vào trang tạo ticket, sau khi login vào hệ thống, màn hình tương tự như sau:
 
@@ -23,7 +23,7 @@ Tình hình xử lí yêu cầu của bạn cũng được cập nhật tương 
 
 ### **2. Trường hợp user không log in vào được portal** <a href="#huongdanhuytaikhoan-2.truonghopuserkhongloginvaoduocportal" id="huongdanhuytaikhoan-2.truonghopuserkhongloginvaoduocportal"></a>
 
-User gửi yêu cầu vào hộp mail [support@vngcloud.vn](mailto:support@vngcloud.vn) với nội dung cần hủy tài khoản và gửi thông tin để đội ngũ kỹ thuật xác minh thông tin tài khoản.
+User gửi yêu cầu vào hộp mail [support@greennode.ai](mailto:support@greennode.ai) với nội dung cần hủy tài khoản và gửi thông tin để đội ngũ kỹ thuật xác minh thông tin tài khoản.
 
 Sau khi tài hoản đã được xác minh hoàn tất, đội ngũ kỹ thuật sẽ tiến hành hủy đăng lý tài khoản.
 

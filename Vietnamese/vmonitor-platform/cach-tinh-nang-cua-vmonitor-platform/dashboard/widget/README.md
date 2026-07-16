@@ -16,9 +16,9 @@ Widget trong Dashboard là các biểu đồ được sử dụng để trực q
 
 ### Chỉnh sửa Widget
 
-Bạn đã khởi tạo một Widget trên một Dashboard. Hiện tại Widget này không đáp ứng đúng mong muốn về hiển thị dữ liệu của bạn, lúc này bạn có thể chỉnh sửa Widget. Để chỉnh sửa Widget trong Dashboard, hãy làm theo hướng dẫn bên dưới:&#x20;
+Bạn đã khởi tạo một Widget trên một Dashboard. Hiện tại Widget này không đáp ứng đúng mong muốn về hiển thị dữ liệu của bạn, lúc này bạn có thể chỉnh sửa Widget. Để chỉnh sửa Widget trong Dashboard, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
+1. Đăng nhập vào vMonitor Platform [tại đây.](https://vmonitor.console.greennode.ai/)
 2. Chọn thư mục **Dashboard.**
 3. Chọn **Dashboard** chứa **Widget** mà bạn muốn chính sửa.
 4. Tại **Widget** mà bạn muốn chỉnh sửa, chọn <img src="../../../../.gitbook/assets/image (53) (1).png" alt="" data-size="line">
@@ -29,9 +29,9 @@ Bạn đã khởi tạo một Widget trên một Dashboard. Hiện tại Widget 
 
 ### Xóa Widget
 
-Bạn đã khởi tạo một Widget trên một Dashboard. Hiện tại bạn không có nhu cầu sử dụng Widget này nữa, bạn có thể xóa chúng khỏi Dashboard của bạn. Để xóa Widget khỏi Dashboard, hãy làm theo hướng dẫn bên dưới:&#x20;
+Bạn đã khởi tạo một Widget trên một Dashboard. Hiện tại bạn không có nhu cầu sử dụng Widget này nữa, bạn có thể xóa chúng khỏi Dashboard của bạn. Để xóa Widget khỏi Dashboard, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
+1. Đăng nhập vào vMonitor Platform [tại đây.](https://vmonitor.console.greennode.ai/)
 2. Chọn thư mục **Dashboard.**
 3. Chọn **Dashboard** chứa Widget mà bạn muốn xóa.
 4. Tại **Widget** mà bạn muốn xóa, chọn <img src="../../../../.gitbook/assets/image (54) (1).png" alt="" data-size="line">
@@ -44,9 +44,9 @@ Widget được xóa khỏi Dashboard của bạn cũng như xóa khỏi hệ th
 
 ### Export thông tin từ Widget
 
-Để tải xuống dữ liệu từ một Widget với định dạng CSV, hãy làm theo hướng dẫn bên dưới:&#x20;
+Để tải xuống dữ liệu từ một Widget với định dạng CSV, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào vMonitor Platform [tại đây.](https://hcm-3.console.vngcloud.vn/vmonitor)&#x20;
+1. Đăng nhập vào vMonitor Platform [tại đây.](https://vmonitor.console.greennode.ai/)
 2. Chọn thư mục **Dashboard.**
 3. Chọn **Dashboard** chứa Widget mà bạn muốn export thông tin.
 4. Tại **Widget** mà bạn muốn export thông tin, chọn **Export Table.**

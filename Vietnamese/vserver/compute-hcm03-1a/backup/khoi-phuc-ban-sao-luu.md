@@ -6,7 +6,7 @@ Nếu bạn đang khôi phục máy ảo của GreenNode, bạn có thể thực
 
 ### **Quy trình khôi phục máy chủ ảo** <a href="#khoiphucbansaoluu-quytrinhkhoiphucmaychuao" id="khoiphucbansaoluu-quytrinhkhoiphucmaychuao"></a>
 
-1. Mở bảng điều khiển vBackup tại [https://hcm-3.console.vngcloud.vn/vserver/block-store/backup](https://hcm-3.console.vngcloud.vn/vserver/block-store/backup)
+1. Mở bảng điều khiển vBackup tại [https://hcm-3.console.greennode.ai/vserver/block-store/backup](https://hcm-3.console.greennode.ai/vserver/block-store/backup)
 2. Tại trang điều hướng, chọn máy chủ ảo được sao lưu và nhấn vào **Restore**
 3. Trang tạo mới máy chủ ảo sẽ hiển thị với cấu hình của bản sao lưu, bạn cần chọn các thông số còn lại để hoàn tất việc khôi phục bản sao lưu lên một máy ảo
 4. Chọn **tạo mới máy ảo**&#x20;
@@ -14,7 +14,7 @@ Nếu bạn đang khôi phục máy ảo của GreenNode, bạn có thể thực
 
 ### **Quy trình khôi phục ổ đĩa** <a href="#khoiphucbansaoluu-quytrinhkhoiphucodia" id="khoiphucbansaoluu-quytrinhkhoiphucodia"></a>
 
-1. Mở bảng điều khiển vBackup tại [https://hcm-3.console.vngcloud.vn/vserver/block-store/backup](https://hcm-3.console.vngcloud.vn/vserver/block-store/backup)
+1. Mở bảng điều khiển vBackup tại [https://hcm-3.console.greennode.ai/vserver/block-store/backup](https://hcm-3.console.greennode.ai/vserver/block-store/backup)
 2. Tại trang điều hướng, xem chi tiết máy chủ ảo được sao lưu
 3. Tại danh sách ổ đĩa đính kèm với máy ảo, chọn ổ đĩa bạn được sao lưu và nhấn vào **Restore**
 4. Trang tạo mới ổ đĩa sẽ hiển thị với cấu hình của bản sao lưu, bạn cần chọn các thông số còn lại để hoàn tất việc khôi phục bản sao lưu lên một ổ đĩa

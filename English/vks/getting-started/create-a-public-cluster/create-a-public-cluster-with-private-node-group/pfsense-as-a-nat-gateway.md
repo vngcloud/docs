@@ -19,7 +19,7 @@ To be able to use Pfsense as NAT Gateway for Cluster on VKS system, you need:
 
 ### Initialize Pfsense <a href="#khoi-tao-pfsense" id="khoi-tao-pfsense"></a>
 
-**Step 1:** Visit [https://marketplace.console.vngcloud.vn/](https://marketplace.console.vngcloud.vn/)
+**Step 1:** Visit [https://marketplace.console.greennode.ai/](https://marketplace.console.greennode.ai/)
 
 **Step 2:** At the main screen, search for **Pfsense , at Pfsense** service , select **Launch** .
 
@@ -31,7 +31,7 @@ To be able to use Pfsense as NAT Gateway for Cluster on VKS system, you need:
 
 ### Configure parameters for Pfsense <a href="#toc165621058" id="toc165621058"></a>
 
-**Step 1:** After initializing Pfsense from vMarketPlace according to the instructions above, you can access the vServer interface here [to](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server) check whether the server running Pfsense has been initialized. **Next, open the Any rule on the Security Group for the Pfsense server you just created. Opening the Any rule on the Security Group will allow all traffic to the Pfsense server.**
+**Step 1:** After initializing Pfsense from vMarketPlace according to the instructions above, you can access the vServer interface here [to](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server) check whether the server running Pfsense has been initialized. **Next, open the Any rule on the Security Group for the Pfsense server you just created. Opening the Any rule on the Security Group will allow all traffic to the Pfsense server.**
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F5Bumdpr1FTWdMPFOmgGG%252Fimage.png%3Falt%3Dmedia%26token%3Df6e965e0-5207-43f8-9c66-b35bf9048d36&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=7630a1ac&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
@@ -66,7 +66,7 @@ To be able to use Pfsense as NAT Gateway for Cluster on VKS system, you need:
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FMBP0zsOGXfCRysPZpQ59%252Fimage.png%3Falt%3Dmedia%26token%3D639d2870-32b3-4d14-88fc-c35641f8c6e3&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=2c24b48a&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (244).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (244) (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252F0gDLcWa36cpUJo2iSnyG%252Fimage.png%3Falt%3Dmedia%26token%3D5eadf23d-e50a-4b63-8465-fa0edd6b11e6&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e8488882&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
@@ -160,7 +160,7 @@ To be able to use Pfsense as NAT Gateway for Cluster on VKS system, you need:
 
 After Pfsense is successfully initialized and configured, you need to create a Route table to connect to different networks. Specifically, follow these steps to create a Route table:
 
-**Step 1:** Visit [https://hcm-3.console.vngcloud.vn/vserver/network/route-table](https://hcm-3.console.vngcloud.vn/vserver/network/route-table)
+**Step 1:** Visit [https://hcm-3.console.greennode.ai/vserver/network/route-table](https://hcm-3.console.greennode.ai/vserver/network/route-table)
 
 **Step 2:** In the navigation menu bar, select **Network Tab/ Route table.**
 
@@ -172,7 +172,7 @@ After Pfsense is successfully initialized and configured, you need to create a R
 
 **Step 6** : Select **Create** to create a new Route table.
 
-**Step 7:** Select ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F73762068%2Fimage2024-4-16\_15-40-3.png%3Fversion%3D1%26modificationDate%3D1713256805000%26api%3Dv2\&width=40\&dpr=4\&quality=100\&sign=7bf6e57b\&sv=1)the newly created Route table then select **Edit Routes.**
+**Step 7:** Select ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2Fdocs-admin.vngcloud.vn%2Fdownload%2Fthumbnails%2F73762068%2Fimage2024-4-16_15-40-3.png%3Fversion%3D1%26modificationDate%3D1713256805000%26api%3Dv2\&width=40\&dpr=4\&quality=100\&sign=7bf6e57b\&sv=1)the newly created Route table then select **Edit Routes.**
 
 **Step 8:** In the add new **Route** section , enter the following information:
 

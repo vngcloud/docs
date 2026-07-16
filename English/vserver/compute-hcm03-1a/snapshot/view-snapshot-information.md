@@ -4,7 +4,7 @@ After creating Snapshots for the virtual server and disks, you can view the list
 
 ### Dashboard
 
-1. Open the vServer control panel at [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/).
+1. Open the vServer control panel at [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/).
 2. In the navigation sidebar, select **Snapshot**.
 3. Here, you can view an overview of existing snapshots, including:
    1. Total snapshot capacity

@@ -62,14 +62,14 @@ Facts are extracted from conversation events using a **Long-Term Memory Strategy
 
 ### Data Model
 
-| Concept                              | Description                                                      | Lifetime                                 |
-| ------------------------------------ | ---------------------------------------------------------------- | ---------------------------------------- |
-| **Memory**                           | Top-level container (memory store) holding events and records    | Permanent until deleted                  |
-| **Event**                            | Single conversation turn (role + message)                        | Expires after `eventExpiryDuration` days |
+| Concept                              | Description                                                        | Lifetime                                 |
+| ------------------------------------ | ------------------------------------------------------------------ | ---------------------------------------- |
+| **Memory**                           | Top-level container (memory store) holding events and records      | Permanent until deleted                  |
+| **Event**                            | Single conversation turn (role + message)                          | Expires after `eventExpiryDuration` days |
 | **Actor**                            | Participant identifier â€” represents the end-user (not the agent) | Created on first event                   |
-| **Session**                          | Conversation thread within an actor                              | Created on first event                   |
-| **Memory Record**                    | Distilled long-term fact extracted from events                   | Permanent until deleted                  |
-| **Long-Term Memory Strategy (LTMS)** | Extraction rules for generating memory records                   | Configured at memory creation            |
+| **Session**                          | Conversation thread within an actor                                | Created on first event                   |
+| **Memory Record**                    | Distilled long-term fact extracted from events                     | Permanent until deleted                  |
+| **Long-Term Memory Strategy (LTMS)** | Extraction rules for generating memory records                     | Configured at memory creation            |
 
 ### Namespace Template
 
@@ -89,7 +89,7 @@ Before using short-term or long-term memory, you must create a **Memory store** 
 
 #### Create a Memory Store
 
-1. Open https://aiplatform.console.vngcloud.vn/memory
+1. Open https://aiplatform.console.greennode.ai/memory
 2. Click **"Create Memory"**
 3. Fill in:
    * **Name**: e.g., `customer-support-memory` (0â€“50 chars, `^[a-zA-Z0-9._-]*$`)
@@ -106,16 +106,16 @@ Before using short-term or long-term memory, you must create a **Memory store** 
 
 #### List Memory Stores
 
-1. Open https://aiplatform.console.vngcloud.vn/memory
+1. Open https://aiplatform.console.greennode.ai/memory
 2. All memory stores shown with: Name, Status, Descriptopn, Event Expiry, Lated updated
 
-![1774584561868](../../../.gitbook/assets/1774584561868.png)
+![1774584561868](<../../../.gitbook/assets/1774584561868 (1).png>)
 
 #### Get Memory Store Details
 
 From the memory list page â†’ click a memory name
 
-![1774584650626](../../../.gitbook/assets/1774584650626.png)
+![1774584650626](<../../../.gitbook/assets/1774584650626 (1).png>)
 
 #### Delete a Memory Store
 
@@ -123,7 +123,7 @@ From the memory list page â†’ click a memory name
 
 1. From memory detailed page â†’ **Delete** â†’ confirm
 
-![1774584735238](../../../.gitbook/assets/1774584735238.png)
+![1774584735238](<../../../.gitbook/assets/1774584735238 (1).png>)
 
 ***
 
@@ -291,10 +291,10 @@ asyncio.run(client.delete_async(id=MEMORY_ID))
 
 Once your Memory Store is created, your agent reads and writes memory at runtime. Choose the approach that fits your stack.
 
-| Approach                     | When to use                                                                                           |
-| ---------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Approach                     | When to use                                                                                             |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------- |
 | **A: Agentic Frameworks**    | Building with LangGraph or LangChain â€” use built-in checkpointer for short-term + tools for long-term |
-| **B: Direct SDK / REST API** | Any other stack, or when you need full control over when and how memory is read and written           |
+| **B: Direct SDK / REST API** | Any other stack, or when you need full control over when and how memory is read and written             |
 
 > **Required headers:** Your agent receives `X-GreenNode-AgentBase-User-Id` (maps to `actor_id`) and `X-GreenNode-AgentBase-Session-Id` (maps to `thread_id` / `session_id`) on every request from the Runtime. Always validate them before performing memory operations â€” never fall back to defaults, as silent defaults cause data mixing between users.
 
@@ -563,13 +563,13 @@ curl -s "https://agentbase.api.vngcloud.vn/memory/memories/$MEMORY_ID/memory-rec
 
 ## Memory Service Limits
 
-| Parameter                        | Value      | Notes                           |
-| -------------------------------- | ---------- | ------------------------------- |
+| Parameter                        | Value        | Notes                           |
+| -------------------------------- | ------------ | ------------------------------- |
 | `eventExpiryDuration` range      | 1â€“365 days | Set at memory store creation    |
-| Memory name max length           | 50 chars   | Pattern:`^[a-zA-Z0-9._-]*$`     |
+| Memory name max length           | 50 chars     | Pattern:`^[a-zA-Z0-9._-]*$`     |
 | Semantic search `limit` range    | 5â€“200      | Per search request              |
 | Semantic search `scoreThreshold` | 0â€“1 float  | Higher = more strict similarity |
-| Max `from` for event pagination  | 5000       | Offset-based                    |
+| Max `from` for event pagination  | 5000         | Offset-based                    |
 
 ***
 
@@ -579,7 +579,7 @@ curl -s "https://agentbase.api.vngcloud.vn/memory/memories/$MEMORY_ID/memory-rec
 | --------------------------- | ------------------------------------- | ------------------------------------------------------ |
 | 401 Unauthorized            | Expired IAM token                     | Re-obtain token                                        |
 | Memory not found            | Wrong memory ID                       | Verify with `GET /memories` list                       |
-| No records returned         | Namespace mismatch or async delay     | Records generated asynchronously â€” wait and retry      |
+| No records returned         | Namespace mismatch or async delay     | Records generated asynchronously â€” wait and retry    |
 | Events not appearing        | Events expired                        | Check `eventExpiryDuration`                            |
 | Auto-generation not working | Strategy misconfigured                | Verify `enableAutomaticMemoryRecordGeneration: true`   |
 | "Missing required headers"  | Request missing User-Id or Session-Id | Include both headers in every request that uses memory |

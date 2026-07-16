@@ -537,7 +537,7 @@ Disk stats (read/write):
 
 Hiện tại, hệ thống vServer và vMonitor Platform đã tích hợp sẵn Dashboard giúp bạn quản lý các thông só của server của bạn (bao gồm cả thông số IOPS). Cụ thể, bạn có thể thực hiện theo các bước:&#x20;
 
-1. Truy cập vào [**vMonitor Platform**](../../../vmonitor-platform/vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/) theo link: [https://vmonitor.console.vngcloud.vn/](https://vmonitor.console.vngcloud.vn/)
+1. Truy cập vào [**vMonitor Platform**](../../../vmonitor-platform/vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/) theo link: [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/)
 2. Chọn mục **Dashboard**, sau đó chọn **All GreenNode**
 3. Tiếp tục tìm và chọn vào **Dashboard** chứa tên server của bạn, tên **Dashboard** này sẽ có định dạng: `vServer-tên-server-xxxx`
 

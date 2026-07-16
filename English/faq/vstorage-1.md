@@ -29,7 +29,7 @@ You can use [Endpoint Service ](../vnetwork/endpoint/create-endpoint.md)to estab
 
 To resolve Endpoint Service connectivity issues:
 
-1. [Add the host](../vnetwork/public-nat-instance/create-nat.md) entry in your VMs
+1. [Add the host](/broken/pages/bLsJQk3Tqo5hyJCkAT2L) entry in your VMs
 2. Configure the system to resolve the Endpoint Domain as a private IP
 
 ### \[vNetwork] Why can't I establish a connection with Remote VPN?

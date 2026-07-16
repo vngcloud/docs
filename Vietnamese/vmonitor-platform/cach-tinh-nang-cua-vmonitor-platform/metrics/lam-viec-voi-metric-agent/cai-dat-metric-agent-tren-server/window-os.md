@@ -6,7 +6,7 @@
 
 1. **Tạo Service Account và gắn policy: vMonitorMetricPush để có đủ quyền đẩy Metric về vMonitor**
 
-Để tạo service account bạn truy cập tại [đây](https://iam.console.vngcloud.vn/service-accounts):
+Để tạo service account bạn truy cập tại [đây](https://iam.console.greennode.ai/service-accounts):
 
 * Chọn "**Create a Service Account**", điền tên cho Service Account và nhấn **Next Step** để gắn quyền cho Service Account
 * Tìm và chọn **Policy:** **vMonitorMetricPush,** sau đó nhấn "**Create a Service Account**" để tạo Service Account, Policy: vMonitorMetricPush do GreenNode tạo ra chỉ chứa chính xác quyền đẩy metric về hệ thống
@@ -73,7 +73,7 @@
 
 B1: Tạo API Key (nếu chưa thực hiện tạo bất kỳ API Key nào trước đó )
 
-* Truy cập vào portal vMonitor Platform Product: [https://hcm-3.console.vngcloud.vn/vmonitor/](https://hcm-3.console.vngcloud.vn/vmonitor/)
+* Truy cập vào portal vMonitor Platform Product: [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/)
 * Chọn **Intergration** => sau đó chọn phần **API Key**
 
 <figure><img src="../../../../../.gitbook/assets/image (126).png" alt=""><figcaption></figcaption></figure>

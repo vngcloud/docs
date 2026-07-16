@@ -4,7 +4,7 @@ Bạn có thể xem trạng thái hiện tại của kết nối của bạn. B�
 
 **Để xem thông tin kết nối Interconnect, vui lòng thực hiện theo hướng dẫn bên dưới:**
 
-1. Mở bảng điều khiển vServer tại: [https://hcm-3.console.vngcloud.vn/vserver/](https://hcm-3.console.vngcloud.vn/vserver/)
+1. Mở bảng điều khiển vServer tại: [https://hcm-3.console.greennode.ai/vserver/](https://hcm-3.console.greennode.ai/vserver/)
 2. Trong thanh menu bên trái, chọn Interconnect.
 3. Trang danh sách Interconnect sẽ hiển thị bao gồm các kết nối hiện có mà bạn đang sở hữu
 

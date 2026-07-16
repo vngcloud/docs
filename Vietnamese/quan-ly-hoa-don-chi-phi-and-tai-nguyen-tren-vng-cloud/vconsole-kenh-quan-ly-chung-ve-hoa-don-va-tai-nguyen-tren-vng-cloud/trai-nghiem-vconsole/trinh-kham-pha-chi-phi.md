@@ -4,7 +4,7 @@
 
 **Trình khám phá chi phí / Cost explorer** tại vConsole cung cấp thống kê, phân tích và dự đoán chi phí sử dụng dịch vụ trên GreenNode theo **nhiều chiều dữ liệu** (theo sản phẩm, theo loại tài nguyên và theo từng resource), với nhiều mức tổng hợp thời gian và khả năng lọc dữ liệu linh hoạt.
 
-Truy cập đến trang **Trình khám phá chi phí / Cost explorer** [**tại đây**](https://dashboard.console.vngcloud.vn/cost-explorer)**.**
+Truy cập đến trang **Trình khám phá chi phí / Cost explorer** [**tại đây**](https://dashboard.console.greennode.ai/cost-explorer)**.**
 
 **Cost explorer chỉ hỗ trợ dự đoán chi phí dịch vụ của các sản phẩm / dịch vụ sau:**
 

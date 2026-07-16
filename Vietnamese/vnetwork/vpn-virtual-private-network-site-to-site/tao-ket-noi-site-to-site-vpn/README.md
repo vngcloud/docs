@@ -45,7 +45,7 @@ Mặc định khi khởi tạo VPN Site-to-Site hệ thống yêu cầu tạo m�
   * **IPsec Policy**: Cấu hình các config cho phase 2 của VPN IPSEC (Config tại 2 bên phải trùng nhau thì VPN mới hoạt động).
 * Tại bên phải màn hình, xem tổng chi phí gói VPN đã chọn, sau đó nhấn chọn <mark style="color:blue;">**"Tạo mới kết nối VPN"**</mark> đề xác nhận và tiến hành thanh toán;
 
-_-> Sau khi thanh toán thành công, hệ thống sẽ xử lý kết nối thành công tuyến VPN vừa tạo và chuyển về màn hình danh sách VPN_ [_https://hcm-3-vnetwork.console.vngcloud.vn/vpn/list_](https://hcm-3-vnetwork.console.vngcloud.vn/vpn/list)
+_-> Sau khi thanh toán thành công, hệ thống sẽ xử lý kết nối thành công tuyến VPN vừa tạo và chuyển về màn hình danh sách VPN_ [_https://hcm-3-vnetwork.console.greennode.ai/vpn/list_](https://hcm-3-vnetwork.console.greennode.ai/vpn/list)
 
 {% hint style="success" %}
 **Lưu ý về trạng thái tạo VPN:**
@@ -67,7 +67,7 @@ _-> Sau khi thanh toán thành công, hệ thống sẽ xử lý kết nối th�
 
 ## **Bước 4:** Tạo Route Rule để điều hướng các request đến Remote LAN CIDR đi qua VPN thông qua **Private Gateway IP** _(Detail Page)._
 
-Truy cập vServer Router Tables để thêm cấu hình điều hướng đến VPN [https://hcm-3.console.vngcloud.vn/vserver/network/route-table](https://hcm-3.console.vngcloud.vn/vserver/network/route-table)
+Truy cập vServer Router Tables để thêm cấu hình điều hướng đến VPN [https://hcm-3.console.greennode.ai/vserver/network/route-table](https://hcm-3.console.greennode.ai/vserver/network/route-table)
 
 * Destination: Remote Private CIDR.
 * Target: Local Private Gateway.

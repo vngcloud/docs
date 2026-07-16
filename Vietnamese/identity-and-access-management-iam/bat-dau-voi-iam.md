@@ -12,7 +12,7 @@ IAM Console là giao diện người dùng dựa trên web, cho phép bạn qu�
 
 **Cách truy cập Bảng điều khiển IAM?**
 
-1. Mở trình duyệt web của bạn và truy cập vào URL IAM Console: [https://iam.console.vngcloud.vn/](https://iam.console.vngcloud.vn/)
+1. Mở trình duyệt web của bạn và truy cập vào URL IAM Console: [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/)
 2. Đăng nhập với tư cách là tài khoản Người dùng Gốc (Root User Account) hoặc User Account được cấp quyền truy cập. Bạn cần cung cấp tên người dùng/email và mật khẩu khi đăng nhập.
 3. Sau khi đăng nhập, bạn sẽ thấy giao diện IAM Console, nơi cung cấp tổng quan về cấu hình IAM của bạn.
 

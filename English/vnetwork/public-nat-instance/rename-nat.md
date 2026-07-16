@@ -1,7 +1,7 @@
 # Rename NAT
 
-* Log in to [https://hcm-3-vnetwork.console.vngcloud.vn/nat/list ](https://hcm-3-vnetwork.console.vngcloud.vn/nat/list)with region set to HCM.
-* In the **"Public NAT Instance"** menu, find and select the NAT you want to rename.
-* Right-click and select the "**Rename**" submenu.
-* In the popup screen, enter a new name for the NAT.
-* Click **"Save"** to confirm the NAT name change.
+1. Access https://hcm-3-vnetwork.console.greennode.ai/nat/list after logging in with the region set to HCM.
+2. In the "Public NAT" section, locate and select the NAT instance you want to rename.
+3. Right-click and choose "Rename".
+4. A dialog box appears where you can enter the new name for the NAT.
+5. Click "Save" to apply and finalize the rename.

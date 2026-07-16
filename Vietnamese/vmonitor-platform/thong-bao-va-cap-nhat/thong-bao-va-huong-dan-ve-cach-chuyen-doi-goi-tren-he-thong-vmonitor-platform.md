@@ -5,14 +5,14 @@
 Từ ngày **29/02/2024**, hệ thống vMonitor Platform sẽ thay đổi cách mua tài nguyên đơn giản hơn nhằm đáp ứng nhu cầu đa dạng của Quý khách hàng. Cụ thể thay vì chọn các gói dịch vụ (package) có sẵn mà chúng tôi cung cấp thì bạn có thể tự lựa chọn cấu hình tài nguyên tùy theo nhu cầu. Bên cạnh đó, bạn cũng có thể mua đồng thời nhiều loại tài nguyên trên hệ thống vMonitor Platform. Kể từ thời điểm này tới ngày **22/04/2024**, nếu bạn còn ít nhất 1 tài nguyên Metric Quota, Log Project trên hệ thống vMonitor Platform, hãy thực hiện chuyển đổi theo hướng dẫn bên dưới của chúng tôi. Sau thời gian này, nếu bạn chưa thực hiện chuyển đổi tài nguyên thì hệ thống vMonitor Platform sẽ tự động thực hiện chuyển đổi. Dưới đây là một vài điểm lưu ý trước khi bạn thực hiện chuyển đổi gói:
 
 {% hint style="info" %}
-**Chú ý:**&#x20;
+**Chú ý:**
 
-Sẽ có vài lưu ý khi thực hiện chuyển gói trên hệ thống vMonitor Platform mà bạn cần biết, bao gồm:&#x20;
+Sẽ có vài lưu ý khi thực hiện chuyển gói trên hệ thống vMonitor Platform mà bạn cần biết, bao gồm:
 
 * Các **tier** hiện tại sẽ được chúng tôi chuyển đổi thành các **class**. Cụ thể:
   * Free tier được chúng tôi chuyển đổi thành Class Basic. Tham khảo thông tin chi tiết cho các class tại [Metric Quota Class](../vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/metric-quota-class.md), [Log Project Class](../vmonitor-platform-la-gi/vmonitor-platform-log-la-gi/log-project-class.md) và [Synthetic Test Quota Class](../vmonitor-platform-la-gi/vmonitor-platform-synthetic-la-gi/synthetic-test-quota-class.md)
   * Small/ Medium/ Large,... tier được chúng tôi chuyển đổi thành Class Pro. Tham khảo thông tin chi tiết cho các class tại [Metric Quota Class](../vmonitor-platform-la-gi/vmonitor-platform-metric-la-gi/metric-quota-class.md), [Log Project Class](../vmonitor-platform-la-gi/vmonitor-platform-log-la-gi/log-project-class.md) và [Synthetic Test Quota Class](../vmonitor-platform-la-gi/vmonitor-platform-synthetic-la-gi/synthetic-test-quota-class.md)
-* Với các class **Basic, Pro** mới, chúng tôi sẽ không giới hạn số lượng **alarm** bạn có thể tạo.&#x20;
+* Với các class **Basic, Pro** mới, chúng tôi sẽ không giới hạn số lượng **alarm** bạn có thể tạo.
 * Việc chuyển đổi gói sang dạng mới sẽ hoàn toàn **miễn phí** và **không ảnh hưởng** đến:
   * **Chi phí**: Giá cước của bạn sẽ **giữ nguyên** sau khi chuyển đổi.
   * **Chức năng**: Bạn vẫn sẽ **giữ nguyên** tất cả các chức năng của gói cước hiện tại.
@@ -26,7 +26,7 @@ Sẽ có vài lưu ý khi thực hiện chuyển gói trên hệ thống vMonito
 
 Dưới đây là hướng dẫn chi tiết về cách chuyển đổi gói trên hệ thống vMonitor Platform:
 
-* **Bước 1:** Truy cập vào hệ thống vMonitor Platform tại [https://hcm-3.console.vngcloud.vn/vmonitor/quota-usage/quota](https://hcm-3.console.vngcloud.vn/vmonitor/quota-usage/quota).
+* **Bước 1:** Truy cập vào hệ thống vMonitor Platform tại [https://hcm-3.console.greennode.ai/vmonitor/quota-usage/quota](https://vmonitor.console.greennode.ai/quota-usages/metric).
 * **Bước 2:** Đăng nhập vào tài khoản của Quý khách hàng.
 * **Bước 3:** Chọn **Usage & Quota** từ menu bên trái.
 * **Bước 4:** Lúc này, bạn sẽ thấy gợi ý chuyển đổi gói trên giao diện của bạn. Chọn **Convert.**
@@ -41,7 +41,7 @@ Quá trình chuyển đổi gói sẽ diễn ra ngay lập tức. Các thông s�
 
 <figure><img src="../../.gitbook/assets/image (32) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Trong ví dụ này, tôi đã mua gói Metric Quota, Log Project có tính phí nên khi chuyển đổi, tôi đã tự động được tặng thêm 200 SMS và 200 Email miễn phí trong vòng 6 tháng. Cụ thể:&#x20;
+Trong ví dụ này, tôi đã mua gói Metric Quota, Log Project có tính phí nên khi chuyển đổi, tôi đã tự động được tặng thêm 200 SMS và 200 Email miễn phí trong vòng 6 tháng. Cụ thể:
 
 <figure><img src="../../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
 

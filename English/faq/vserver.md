@@ -70,7 +70,7 @@ To reboot the Server, please refer to your Server's Reboot page.
 
 ### \[vServer] I want to Reset the Server's password?&#x20;
 
-You cannot reset the password for your Server yourself. To reset the password for the Server, please send a request on our [<mark style="color:blue;">Support page</mark>](https://helpdesk.vngcloud.vn/portal/en/home).
+You cannot reset the password for your Server yourself. To reset the password for the Server, please send a request on our [<mark style="color:blue;">Support page</mark>](https://helpdesk.greennode.ai/portal/en/home).
 
 ### \[vServer] I cannot allow some ports on Webmin vServer?&#x20;
 
@@ -102,7 +102,7 @@ When creating the Server, the admin user is disabled. If you want to use it, you
 
 ### \[vServer] Where is the history of payments or refunds after creating an Image?&#x20;
 
-To view the created Image information, please access the [<mark style="color:blue;">Image page</mark>](https://hcm-3.console.vngcloud.vn/vserver/block-store/images).
+To view the created Image information, please access the [<mark style="color:blue;">Image page</mark>](https://hcm-3.console.greennode.ai/vserver/block-store/images).
 
 ### \[vServer] Why can't I \[connect] to the \[ports] listening on my VPS?
 
@@ -136,7 +136,7 @@ Please create a ticket for support to increase the quota and specify the amount 
 
 ### \[vServer] Support for viewing RAM, CPU, network?&#x20;
 
-Currently, GreenNode has a vMonitor service in beta version for free trial that can monitor these parameters. You can access it on the [<mark style="color:blue;">vServer homepage</mark>](https://hcm-3.console.vngcloud.vn/vserver/v-server/cloud-server), and view RAM, CPU, Network information on the Server details page / Monitor tab or directly on the [<mark style="color:blue;">vMonitor homepage</mark>](https://vmonitor.console.vngcloud.vn/dashboard).
+Currently, GreenNode has a vMonitor service in beta version for free trial that can monitor these parameters. You can access it on the [<mark style="color:blue;">vServer homepage</mark>](https://hcm-3.console.greennode.ai/vserver/v-server/cloud-server), and view RAM, CPU, Network information on the Server details page / Monitor tab or directly on the [<mark style="color:blue;">vMonitor homepage</mark>](https://vmonitor.console.greennode.ai/dashboard).
 
 ### \[vServer] How do I keep the old WANIP for the new server?&#x20;
 
@@ -144,7 +144,7 @@ Once the WAN IP is deleted, it cannot be recovered. If you want to keep the WAN 
 
 ### \[vServer] Does vServer have bandwidth limits? What happens if I exceed the bandwidth?&#x20;
 
-Currently, we limit the bandwidth to 100mbps. If you want to increase it, please contact the sales staff or send a request on the [<mark style="color:blue;">Support page</mark>](https://helpdesk.vngcloud.vn/portal/en/home) for us to assist you in increasing the bandwidth. Note that increasing bandwidth will incur additional costs.
+Currently, we limit the bandwidth to 100mbps. If you want to increase it, please contact the sales staff or send a request on the [<mark style="color:blue;">Support page</mark>](https://helpdesk.greennode.ai/portal/en/home) for us to assist you in increasing the bandwidth. Note that increasing bandwidth will incur additional costs.
 
 ### \[vServer] Can I increase the security policy quota?&#x20;
 
@@ -186,7 +186,7 @@ The maximum number of users that can simultaneously access a website depends not
 
 ### \[vServer] Why can't I delete old Certificates and Keys, and how can I use new Certificates and Keys?&#x20;
 
-Currently, we do not support deleting old Certificates and Keys on the Load Balancer. If you want to use new Certificates and Keys, please upload the new Certificate on the [<mark style="color:blue;">Certificate Homepage</mark>](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/certificate) (without the same Certificate name as the old one), then go to the [<mark style="color:blue;">Load Balancer Homepage</mark>](https://hcm-3.console.vngcloud.vn/vserver/load-balancer/vlb) to update the new Certificate details on the LB details page.
+Currently, we do not support deleting old Certificates and Keys on the Load Balancer. If you want to use new Certificates and Keys, please upload the new Certificate on the [<mark style="color:blue;">Certificate Homepage</mark>](https://hcm-3.console.greennode.ai/vserver/load-balancer/certificate) (without the same Certificate name as the old one), then go to the [<mark style="color:blue;">Load Balancer Homepage</mark>](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb) to update the new Certificate details on the LB details page.
 
 ### \[vServer] Why can't I telnet to port XYZ? Even though I have allowed the firewall, ACL on the policy group, and checked that port XYZ is listening.&#x20;
 
@@ -210,7 +210,7 @@ Please go to the Default Group and re-add the default Ingress and Egress rules a
 
 ### \[vServer] "vServer: I can't create additional security groups?"&#x20;
 
-By default, each user is only allowed to create up to 10 security groups. If you need to create more, please contact the technical support department or send an email to [https://helpdesk.vngcloud.vn/](https://helpdesk.vngcloud.vn/) for assistance, however, the maximum is 20 security groups.
+By default, each user is only allowed to create up to 10 security groups. If you need to create more, please contact the technical support department or send an email to [https://helpdesk.greennode.ai/](https://helpdesk.greennode.ai/) for assistance, however, the maximum is 20 security groups.
 
 ### \[vServer] Why does the console interface keep reporting 'no map for 231' error?&#x20;
 
@@ -291,5 +291,5 @@ Currently, GreenNode does not support splitting servers into another portal.
 
 ### \[vServer] Why does it report unable to access the server if I mistakenly switch farms?&#x20;
 
-You can try to access the server again. If the error still persists, please send a bug report to us through the [<mark style="color:blue;">Support page</mark>](https://helpdesk.vngcloud.vn/portal/en/home).
+You can try to access the server again. If the error still persists, please send a bug report to us through the [<mark style="color:blue;">Support page</mark>](https://helpdesk.greennode.ai/portal/en/home).
 

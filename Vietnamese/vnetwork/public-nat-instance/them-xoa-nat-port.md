@@ -1,41 +1,24 @@
----
-description: >-
-  Public NAT instance trên GreenNode là một dịch vụ mạng cho phép các instance
-  trong private subnet giao tiếp với các dịch vụ ngoài internet và chặn các truy
-  cập từ internet vào những instance này.
----
-
 # Thêm/ Xóa NAT Port
 
-* Người dùng có thể thêm NAT port khi có nhu cầu sử dụng hoặc xóa NAT port khi không còn nhu cầu sử dụng
-* Thực hiện theo thứ tự sau đây
+Inbound rule quy định cổng và giao thức nào được đi qua NAT. Mỗi NAT khi tạo đều có sẵn bộ rule mặc định cho phép các dịch vụ ra ngoài phổ biến từ VPC — DNS (UDP 53), HTTP (TCP 80), HTTPS (TCP 443) và ICMP (ping). Bạn có thể thêm rule khi cần hoặc xóa rule không dùng nữa.
 
-### Thêm NAT Port
+Mở NAT từ danh sách và vào màn hình chi tiết để xem mục Inbound Rules, cùng NAT Gateway IP và Public IP của NAT.
 
-* Tại màn hình danh sách NAT, chọn NAT muốn thêm port
-* Nhấn chọn vào tên NAT để vào màn hình chi tiết NAT
-* Di chuyển đến phần Inbound Rules, nhấn chọn “Create an inbound rule”
-* Điền thông tin thích hợp vào màn hình nhập mới inbound rule:
+## Thêm cổng NAT
 
-&#x20;                o   Protocol
+* Ở danh sách NAT, chọn NAT muốn thêm cổng.
+* Nhấn tên NAT để mở màn hình chi tiết.
+* Vào mục Inbound Rules và nhấn "Create an Inbound Rule".
+* Nhập các trường: Protocol, Ether Type, Port range, Description.
+* Nhấn "Create".
 
-&#x20;                o   Ether Type
-
-&#x20;                o   Port range
-
-&#x20;                o   Description
-
-* Nhấn chọn Create để tạo Port
-
-### Xóa NAT Port
-
-
+## Xóa cổng NAT
 
 {% hint style="danger" %}
-_Người dùng không thể xóa rule do hệ thống tạo_
+Không thể xóa các rule do hệ thống tạo (các rule mặc định DNS / HTTP / HTTPS / ICMP).
 {% endhint %}
 
-* Tại màn hình danh sách NAT, chọn NAT xóa port
-* Nhấn chọn vào tên NAT để vào màn hình chi tiết NAT
-* Di chuyển đến phần Inbound Rules
-* Định vị tại dòng inbound rule muốn xóa, nhấn vào biểu tượng Xóa
+* Ở danh sách NAT, chọn NAT muốn xóa cổng.
+* Nhấn tên NAT để mở màn hình chi tiết.
+* Vào mục Inbound Rules.
+* Tìm rule cần xóa và nhấn biểu tượng xóa.

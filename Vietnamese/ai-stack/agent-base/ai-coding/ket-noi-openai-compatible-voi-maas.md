@@ -6,7 +6,7 @@
 
 ## Điều kiện cần (Prerequisites)
 
-* Đã có tài khoản [AI Platform](https://aiplatform.console.vngcloud.vn/)
+* Đã có tài khoản [AI Platform](https://aiplatform.console.greennode.ai/)
 * Đã tạo API key với status **ACTIVE**
 * Tool/SDK hỗ trợ tuỳ chỉnh base URL (OpenAI SDK, LiteLLM, Cursor, Continue.dev, v.v.)
 
@@ -18,7 +18,7 @@ LLM URL cho OpenAI-compatible client: `https://maas-llm-aiplatform-hcm.api.vngcl
 
 ## Bước 1 — Lấy API key từ AI Platform
 
-1. Đăng nhập [AI Platform Console](https://aiplatform.console.vngcloud.vn/)
+1. Đăng nhập [AI Platform Console](https://aiplatform.console.greennode.ai/)
 2. Vào **API Keys** → **Create API Key**
 3. Đặt tên key (5–50 ký tự, chữ thường + số + gạch ngang)
 4. Copy API key vừa tạo
@@ -132,7 +132,7 @@ Kết quả mong đợi: response JSON có trường `choices[0].message.content
 ## Billing & Usage
 
 * Request đi qua GreenNode MaaS được tính phí bằng credit-token (1 credit = 1 VND)
-* Xem usage real-time trên [AI Platform Console → Usage](https://aiplatform.console.vngcloud.vn/)
+* Xem usage real-time trên [AI Platform Console → Usage](https://aiplatform.console.greennode.ai/)
 * **Prepaid:** credit bị trừ mỗi chu kỳ collect 5 phút — khi hết credit, model bị tắt tự động
 * **Postpaid:** usage được ghi nợ, không giới hạn quota
 
@@ -157,4 +157,4 @@ Sau khi cấu hình, tool hoặc SDK sẽ gọi model qua GreenNode MaaS thay v�
 | Tôi muốn tiếp theo...     | Đi đến                                                                    |
 | ------------------------- | ------------------------------------------------------------------------- |
 | Dùng Claude Code với MaaS | [Kết nối Claude Code với GreenNode MaaS](ket-noi-claude-code-voi-maas.md) |
-| Xem usage và billing      | [AI Platform Console](https://aiplatform.console.vngcloud.vn/)            |
+| Xem usage và billing      | [AI Platform Console](https://aiplatform.console.greennode.ai/)            |

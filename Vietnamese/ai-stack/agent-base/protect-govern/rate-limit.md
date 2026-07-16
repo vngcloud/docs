@@ -29,13 +29,13 @@ Tính năng giới hạn "API Key X chỉ được dùng Model Y" sẽ ra mắt 
 
 - Tài khoản GreenNode với vai trò Root hoặc Admin
 - Ít nhất một API Key đã tạo (xem [Access Control](../access-control/README.md))
-- Ít nhất một Model đã bật trong [GreenNode MaaS](https://aiplatform.console.vngcloud.vn/models)
+- Ít nhất một Model đã bật trong [GreenNode MaaS](https://aiplatform.console.greennode.ai/models)
 
 ---
 
 ## Xem danh sách Rate Limit
 
-Mở [Protect & Govern → Rate Limit](https://aiplatform.console.vngcloud.vn/protect-govern/rate-limit).
+Mở [Protect & Govern → Rate Limit](https://aiplatform.console.greennode.ai/protect-govern/rate-limit).
 
 ![Danh sách Rate Limit](../../../.gitbook/assets/Agentbase-image/rate-limit-list.png)
 

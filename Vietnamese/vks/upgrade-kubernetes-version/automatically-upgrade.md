@@ -87,7 +87,7 @@ _**Lịch Thứ Hai(12:00 PM)**:_
 
 Bên dưới là hướng dẫn thực hiện cập nhật Upgrade Policy trên hệ thống VKS:
 
-**Bước 1:** Truy cập vào [https://vks.console.vngcloud.vn/overview](https://vks.console.vngcloud.vn/overview)
+**Bước 1:** Truy cập vào [https://vks.console.greennode.ai/overview](https://vks.console.greennode.ai/overview)
 
 **Bước 2:** Chọn **Create a Cluster.**
 

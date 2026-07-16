@@ -4,7 +4,7 @@ Bắt đầu sử dụng dịch vụ, bạn cần tạo một project. Một Pro
 
 Thực hiện tạo project theo các bước bên dưới:
 
-1. Đăng nhập vào [https://vstorage.console.vngcloud.vn](https://vstorage.console.vngcloud.vn/storage/list). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [đây](https://register.vngcloud.vn/signup).
 2. Chọn **Region HAN02.**
 3. Chọn **Tạo một Project.**
 4. Nhập **Project Name**

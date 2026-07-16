@@ -2,7 +2,7 @@
 
 Configuration Groups are collections of configuration variables for MDS Instance database services. Instead of manually editing configuration files and restarting services, you can make changes quickly and easily with Configuration Groups. Even better, a single Configuration Group can be applied to multiple MDS Instances, allowing you to configure once and apply to many.
 
-To access Configuration Groups, go to the MemoryStore database service and switch to the Configuration Group section: https://vdb.console.vngcloud.vn/memorystore/config-group
+To access Configuration Groups, go to the MemoryStore database service and switch to the Configuration Group section: https://vdb.console.greennode.ai/memorystore/config-group
 
 **A. Creating a Configuration Group**
 
@@ -46,10 +46,10 @@ For option 1, please refer to the instructions on Creating an MDS Instance.
 
 For option 2, you can do the following:
 
-1. Go to the Database management screen at: https://vdb.console.vngcloud.vn/memorystore/database
+1. Go to the Database management screen at: https://vdb.console.greennode.ai/memorystore/database
 2.  Select the MDS Instance and click "Edit Configuration Group."
 
-    <figure><img src="../../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (237) (2).png" alt=""><figcaption></figcaption></figure>
 3. On the change screen, select the Configuration Group you want to apply.
 4. When all selections are correct, click the "SAVE" button in the upper right corner. Wait for a while for the configuration variables to be applied to the MDS Instance. If the change is successful, the MDS Instance will have the status "Active."
 
