@@ -20,9 +20,7 @@
 * **Tags** (optional) — add key/value tags to help manage your resources.
 * **Service Package** — select the service package (e.g. Standard).
 
->
->
-> ![](../../.gitbook/assets/create_form_1_1.png)
+> <img src="../../.gitbook/assets/create_form1.png" alt="" data-size="original">
 {% endstep %}
 
 {% step %}
@@ -35,9 +33,8 @@
 ## Network Settings
 
 * **VPC** — select the VPC in which to create the Public NAT (the VPC CIDR, e.g. 10.5.0.0/16, is shown next to its name).
-* **Subnet** — select the subnet.
 
-> ![](../../.gitbook/assets/create_form_1_2.png)
+> <img src="../../.gitbook/assets/create_form2.png" alt="" data-size="original">
 
 * Check the pricing in the "Summary" panel on the right.
 * Click "CREATE A PUBLIC NAT".
