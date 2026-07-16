@@ -19,4 +19,4 @@
 
 9\. Chọn **Create.**
 
-<figure><img src="../../../../../.gitbook/assets/image (103) (2).png" alt="" width="512"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (103) (2).png" alt="" width="512"><figcaption></figcaption></figure>

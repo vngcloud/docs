@@ -43,7 +43,7 @@ Fetch container logs from all replicas of a runtime. Uses offset-based paginatio
 1. Open [My Agents](https://aiplatform.console.greennode.ai/my-agents?tab=runtime) → click into the Runtime
 2. Open the runtime detail page â†’ **"Monitor"** tab â†’ click an endpoint â†’ **"Log"** section
 
-![1774581394627](<../../../../.gitbook/assets/1774581394627 (1).png>)
+![1774581394627](<../../../.gitbook/assets/1774581394627 (1).png>)
 
 ***
 
@@ -118,7 +118,7 @@ Get point-in-time CPU and RAM usage for a specific endpoint.
 
 Open the runtime detail page â†’ **"Monitor"** tab â†’ click an endpoint â†’ **"Metrics"** section
 
-![1774581238335](<../../../../.gitbook/assets/1774581238335 (1).png>)
+![1774581238335](<../../../.gitbook/assets/1774581238335 (1).png>)
 
 ***
 

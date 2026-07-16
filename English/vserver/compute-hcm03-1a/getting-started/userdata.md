@@ -212,7 +212,7 @@ To type the command lines to provide Userdata to Server, you can implement in Cr
 
 * In step "**Network setting**" to configure UserData, you could select "UserData" option, as shown below:
 
-<figure><img src="../../../../.gitbook/assets/1 (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * You able to upload the file or **input the command lines into content field** to execute providing user information to Server. Refer to the section "Suggestions for filling commands for UserData", GreenNode provided defaults script command suggestions to configure.
 * If UseData information in the tools being used has been Base64 encoded, you will select it.
@@ -254,7 +254,7 @@ Include:
 
 The result will be displayed by default:
 
-<figure><img src="../../../../.gitbook/assets/2 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2 (2).png" alt=""><figcaption></figcaption></figure>
 
 | <p>Note:</p><p>Windows license usage is authenticated according to the IP where the VM purchased the license, then system will active the license.</p> |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------ |

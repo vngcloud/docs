@@ -2,7 +2,7 @@
 
 Khi bạn tạo **Alarm** cho dữ liệu **logs**, trong phần **Set Alarm Conditions.** Các thành phần tạo nên câu lệnh truy vấn đối với dữ liệu logs bao gồm:
 
-<figure><img src="../../../../.gitbook/assets/image (110) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (110) (2).png" alt=""><figcaption></figcaption></figure>
 
 Trong đó
 

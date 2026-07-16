@@ -15,7 +15,7 @@
 
 CDC captures all data changes (INSERT, UPDATE, DELETE) from PostgreSQL and streams them to external systems in real time.
 
-![CDC architecture with Debezium](<../../../../.gitbook/assets/vdb-cdc-debezium-architecture (1).png>)
+![CDC architecture with Debezium](<../../../.gitbook/assets/vdb-cdc-debezium-architecture (1).png>)
 
 |                               | Logical Replication        | CDC (Debezium)             |
 | ----------------------------- | -------------------------- | -------------------------- |

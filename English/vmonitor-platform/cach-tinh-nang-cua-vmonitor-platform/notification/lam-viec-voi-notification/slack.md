@@ -12,4 +12,4 @@
 8. Nhập mã **OTP** vào OTP. Mã OTP sẽ có hiệu lực trong vòng **120s**, sau 120s mã OTP này sẽ hết hiệu lực và không thể sử dụng để định danh tài khoản Slack. Bạn có thể chọn **Gửi lại OTP** để nhận mã mới sau đó tiếp tục nhập mã mới này để định danh.
 9. Chọn **Create.**
 
-<figure><img src="../../../../../.gitbook/assets/image (102) (2).png" alt="" width="512"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (102) (2).png" alt="" width="512"><figcaption></figcaption></figure>

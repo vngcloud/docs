@@ -20,7 +20,7 @@ To initiate a project, please follow the steps below:
 * When you select **Enable Object Locked** , we will automatically enable **Object versioning** for your bucket.
 {% endhint %}
 
-<figure><img src="../../../../../../../.gitbook/assets/image (575) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (575) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -44,7 +44,7 @@ To view detailed information about a bucket, you can:
 * **Lifecycle** : Provides information about the lifecycles set up for the bucket. For details on how to use the feature, see [Using the lifecycle feature.](https://docs.vngcloud.vn/vng-cloud-document/vstorage/object-storage/object-storage-han02/features-of-object-storage/working-with-bucket/working-with-buckets-via-vstorage-portal/bucket-lifecycle)
 * **Event notification** : Provides information about event notifications set up for the bucket. For details on how to use this feature, see [Using the Event notification feature.](https://docs.vngcloud.vn/vng-cloud-document/vstorage/object-storage/object-storage-han02/features-of-object-storage/working-with-bucket/working-with-buckets-via-vstorage-portal/bucket-event-notification)
 
-<figure><img src="../../../../../../../.gitbook/assets/image (576) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (576) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -60,11 +60,11 @@ To use Bucket encryption, please follow the steps below:
 
 **3. Select the Action** icon and select **Configure encryption**
 
-<figure><img src="../../../../../../../.gitbook/assets/image (577) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (577) (1).png" alt=""><figcaption></figcaption></figure>
 
 4\. On the SSE-S3 encryption usage confirmation page, please select **Enable ecryption.**
 
-<figure><img src="../../../../../../../.gitbook/assets/image (578) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (578) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Note:**\
 Currently, in **vStorage – HAN02 region**, the `CopyObject` API is **not supported** in the following cases:
@@ -89,6 +89,6 @@ To delete a bucket, please follow the steps below:
 
 **3. Select the Action** icon and select **Delete**
 
-<figure><img src="../../../../../../../.gitbook/assets/image (579) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (579) (1).png" alt=""><figcaption></figcaption></figure>
 
 After selecting Delete, the system will automatically switch to the main screen. If you see the bucket you just performed disappears from the list, you have successfully deleted it. The bucket has now been permanently deleted from the system and you cannot restore the bucket as well as the objects stored in the bucket. So make sure to check your data before performing this operation.

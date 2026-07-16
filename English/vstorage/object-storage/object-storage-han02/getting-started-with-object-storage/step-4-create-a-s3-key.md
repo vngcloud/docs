@@ -4,15 +4,15 @@ To initialize an S3 key, follow the instructions below:
 
 1. Log in to [https://vstorage.console.greennode.ai](https://vstorage.console.greennode.ai/storage/list).
 2. Select **Region HAN02.**
-3. Select the icon <img src="../../../../../.gitbook/assets/image (526) (1).png" alt="" data-size="line"> in the project you just created and then select the **Identity and Access Management** ta&#x62;**.**
+3. Select the icon <img src="../../../../.gitbook/assets/image (526) (1).png" alt="" data-size="line"> in the project you just created and then select the **Identity and Access Management** ta&#x62;**.**
 4. In the **List of S3 keys of this project** section, select **Generate S3 key**.
 5. Select **Copy** or **Download** to download the Access Key/Secret Key information you just generated.
 
-<figure><img src="../../../../../.gitbook/assets/image (527) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (527) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (528) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (528) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (529) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (529) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**

@@ -9,20 +9,20 @@
 3. If you want to delegate bucket permissions to a **Root User Account** or another **IAM User Account** or **Service Account** , you need to know the **vStorage User ID** of the user you want to delegate permissions to:
    1. For **Root User Account : you can get vStorage User ID** information right on the **project** information page as shown below.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (605) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (605) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../../.gitbook/assets/image (606) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (606) (1).png" alt=""><figcaption></figcaption></figure>
 
 b. For **IAM User Account** and **Service Account : you can get vStorage User ID** information in **Identity and Access Management**
 
-<figure><img src="../../../../../../../.gitbook/assets/image (607).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (607) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../../.gitbook/assets/image (608) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (608) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Continue to select **the Bucket** you want to perform authorization.
 5. **Select the Action** icon and select **Configure policy.**
 
-<figure><img src="../../../../../../../.gitbook/assets/image (609) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (609) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Here, you can choose the configuration for each **Statement** on the left or directly edit the JSON file in the right column. Specifically, the structure of a Bucket Policy includes:
 
@@ -34,7 +34,7 @@ b. For **IAM User Account** and **Service Account : you can get vStorage User ID
   * **Resource** : Specific buckets and objects affected by the policy (using ARN to identify resources).
   * **Condition** : (Optional) Specific condition that restricts access.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (610) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (610) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Select **Save** to save the Bucket Policy configuration.
 

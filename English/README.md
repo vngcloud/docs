@@ -5,7 +5,7 @@ description: >-
   updated in the new UI.
 ---
 
-# 🇬🇧 Greennode Help Center
+# 🇬🇧 GreenNode Help Center
 
 ## Overview
 
@@ -45,7 +45,7 @@ GreenNode is a cloud computing platform developed by VNG, providing businesses w
 
 \- _vMarketPlace is a centralized hub that provides GreenNode cloud solutions, enabling users to efficiently access a wide range of third-party applications and services._
 
-<figure><img src="../.gitbook/assets/greennode cover (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/greennode cover (1).png" alt=""><figcaption></figcaption></figure>
 
 {% tabs %}
 {% tab title="Infrastructure as a Service " %}

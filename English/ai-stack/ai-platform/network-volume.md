@@ -75,13 +75,13 @@ host_bucket = %(bucket)s.<hostname>
 
 You can obtain \<access\_key>, \<secret\_key>, and \<hostname> from the Network Volume details page in AI Platform.
 
-<figure><img src="../../../.gitbook/assets/image (345) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (345) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (355) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (355) (2).png" alt=""><figcaption></figcaption></figure>
 
 Using s3cmd with the configured s3cnf file, you can perform actions such as put, ls, etc., on the bucket.
 
-<figure><img src="../../../.gitbook/assets/image (369) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (369) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3: Mount Network Volume to Notebook
 
@@ -98,7 +98,7 @@ Select your Network Volume from the list.
 
 You can click "Manage your volumes" to manage your existing Network Volumes.
 
-<figure><img src="../../../.gitbook/assets/image (370) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (370) (2).png" alt=""><figcaption></figcaption></figure>
 
 \- Mount folder name (Folder Sync):
 
@@ -112,7 +112,7 @@ Enter the temporary storage size (ephemeral block storage) to store the OS and a
 
 Choose a size large enough for your data, from 20 to 1000. (If the block storage size is smaller than or equal to the current Network Volume size, notebook creation will fail.)
 
-<figure><img src="../../../.gitbook/assets/image (371) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (371) (2).png" alt=""><figcaption></figcaption></figure>
 
 * **When starting the notebook:**
 
@@ -133,7 +133,7 @@ Modified data will be synchronized back to the Network Volume.
 * Model repository: Path to the model files (e.g., /models/llama3/)
 * Network volume: Specify the Network Volume containing the AI model so the system can access it during inference. Note: The model must be stored at the correct path specified in Model repository (e.g., ai-storage).
 
-<figure><img src="../../../.gitbook/assets/image (386) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (386) (2).png" alt=""><figcaption></figcaption></figure>
 
 After import, the model will be ready for deployment.
 

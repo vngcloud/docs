@@ -42,7 +42,7 @@ endpoint = https://hcm04.vstorage.vngcloud.vn
 
 * If you encounter an error about missing winfsp package as shown below, you can download additional packages at this link [https://github.com/billziss-gh/winfsp/releases/tag/v1.4.19049](https://github.com/billziss-gh/winfsp/releases/tag/v1.4.19049)
 
-<figure><img src="../../../../../../.gitbook/assets/image (347) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (347) (1).png" alt=""><figcaption></figcaption></figure>
 
 * You do not need to create the local\_path on the local machine when mounting.
 * Rclone does not support background mode so you must not close cmd during use.

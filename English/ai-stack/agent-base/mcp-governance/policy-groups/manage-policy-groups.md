@@ -19,7 +19,7 @@
 2. Select **AgentBase** in the left menu
 3. Select **MCP Governance** → **Policy Groups**
 
-![Policy Groups list](<../../../../../.gitbook/assets/Policy-group-list (1).png>)
+![Policy Groups list](<../../../../.gitbook/assets/Policy-group-list (1).png>)
 
 4. Click **Create Policy Group**
 
@@ -201,9 +201,9 @@ Because evaluation stops at the first match, `allow-internal-only` (placed first
 
 Click **Save Changes** → the group transitions to **Active** status and the Policy Group Detail page opens.
 
-![Policy Group Detail](<../../../../../.gitbook/assets/policy-group-detail (1).png>)
+![Policy Group Detail](<../../../../.gitbook/assets/policy-group-detail (1).png>)
 
-![Policy Detail within Group](<../../../../../.gitbook/assets/policy-in-policygroup-detail (1).png>)
+![Policy Detail within Group](<../../../../.gitbook/assets/policy-in-policygroup-detail (1).png>)
 
 ***
 

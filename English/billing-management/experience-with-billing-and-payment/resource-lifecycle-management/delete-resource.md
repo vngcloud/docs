@@ -28,7 +28,7 @@ Below is a guide to calculating the refunded price when deleting a Server resour
 
 _For example, the formula for calculating the refunded price when deleting a Server resource includes the following information:_
 
-<figure><img src="../../../../.gitbook/assets/image (226) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (226) (2).png" alt=""><figcaption></figcaption></figure>
 
 → Unused resource value (VND) = 181,000 / 30 \* 20 = 122,667.
 

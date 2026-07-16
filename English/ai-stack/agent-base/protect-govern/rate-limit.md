@@ -37,7 +37,7 @@ The ability to restrict "API Key X may only use Model Y" is coming soon.
 
 Open [Protect & Govern → Rate Limit](https://aiplatform.console.greennode.ai/protect-govern/rate-limit).
 
-![Rate Limit list](<../../../../.gitbook/assets/rate-limit-list (1).png>)
+![Rate Limit list](<../../../.gitbook/assets/rate-limit-list (1).png>)
 
 Each Rate Limit displays:
 
@@ -58,7 +58,7 @@ Each Rate Limit displays:
 
 **Step 2:** Fill in the popup form:
 
-![Create Rate Limit](<../../../../.gitbook/assets/Create-rate-limit (1).png>)
+![Create Rate Limit](<../../../.gitbook/assets/Create-rate-limit (1).png>)
 
 | Field               | Example value            | Notes                                           |
 | ------------------- | ------------------------ | ----------------------------------------------- |

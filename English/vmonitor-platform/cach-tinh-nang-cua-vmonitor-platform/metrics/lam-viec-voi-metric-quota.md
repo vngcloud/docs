@@ -1,4 +1,4 @@
-# Work with Metric Quota
+# Working with Metric Quota
 
 ### Overview
 
@@ -46,7 +46,7 @@ To renew a Metric quota, you can:
 1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). If you don't have an account, register for free [here](https://hcm-3.console.greennode.ai/vmonitor).
 2. Select the **Quota & Usage** folder.
 3. Choose the **Metric** section.
-4. In the current Metric quota package, select the icon ![](<../../../../.gitbook/assets/image (107) (2).png>) and then choose **Renew**.
+4. In the current Metric quota package, select the icon ![](<../../../.gitbook/assets/image (107) (2).png>) and then choose **Renew**.
 5. Select **Renew**.
 6. Choose the desired renewal period in the **Period** column. When you select the period, the system will automatically calculate the effective time of the new usage cycle and the total amount you need to pay for the renewal of the **Metric quota** package.
 7. Select **Continue** and proceed with the **checkout** steps. After successful **payment**, the **Metric quota** will be renewed.

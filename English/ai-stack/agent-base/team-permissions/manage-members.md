@@ -14,7 +14,7 @@
 
 Go to [Team & Permissions](https://aiplatform.console.greennode.ai/team-permissions) — the **Members** tab opens by default.
 
-![Members list](<../../../../.gitbook/assets/Members-list (1).png>)
+![Members list](<../../../.gitbook/assets/Members-list (1).png>)
 
 The list shows: **Name**, **Role**, **Joined Date**, **Status**, **Source**, **Action**
 
@@ -34,7 +34,7 @@ New members do not need a separate account — they log in via an **IDP Login UR
 
 **Step 2:** A popup shows the list of IDPs configured in IAM:
 
-![Invite Member — copy IDP Login URL](<../../../../.gitbook/assets/Invite-member (1).png>)
+![Invite Member — copy IDP Login URL](<../../../.gitbook/assets/Invite-member (1).png>)
 
 | Case                  | Result                                                                                                                                                         |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -69,7 +69,7 @@ The Root Account cannot be removed. Ownership transfer is handled separately in 
 
 **Step 2:** The **Change role** popup appears — select one or more roles to assign:
 
-![Change role popup](<../../../../.gitbook/assets/Change-role (1).png>)
+![Change role popup](<../../../.gitbook/assets/Change-role (1).png>)
 
 | Role       | Description                                                                                           |
 | ---------- | ----------------------------------------------------------------------------------------------------- |

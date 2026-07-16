@@ -1,4 +1,4 @@
-# Runtime
+# Runtime Reference
 
 > The Runtime manages the full lifecycle of your agent's compute environment â€” container deployment, autoscaling, versioning, and endpoints.
 
@@ -121,7 +121,7 @@ All runtimes are shown in a paginated table with: Name, Status, Description, Las
 
 Click a runtime name to view: status, image, flavor, autoscaling, environment variables, endpoints
 
-![1774594267224](<../../../../.gitbook/assets/1774594267224 (1).png>)
+![1774594267224](<../../../.gitbook/assets/1774594267224 (1).png>)
 
 #### Update a Runtime
 
@@ -354,7 +354,7 @@ Each `PATCH` on a runtime creates a new immutable version. Use versions to roll 
 
 1. Open the runtime detail page â†’ **"Versions"** tab
 
-![1774594455831](<../../../../.gitbook/assets/1774594455831 (1).png>)
+![1774594455831](<../../../.gitbook/assets/1774594455831 (1).png>)
 
 ***
 

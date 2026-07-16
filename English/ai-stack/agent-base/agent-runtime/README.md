@@ -19,7 +19,7 @@ Lists agents you built and deployed from your own container image. Each agent ca
 * **Created date** and the **version** currently running (e.g. `VERSION: V10`)
 * **View Detail** button → opens the detail page to view logs, metrics, Endpoint, and manage versions
 
-![Agent Runtime — Custom Agent tab](<../../../../.gitbook/assets/agent-runtime-custom-tab-list (1).png>)
+![Agent Runtime — Custom Agent tab](<../../../.gitbook/assets/agent-runtime-custom-tab-list (1).png>)
 
 ### OpenClaw tab
 
@@ -30,7 +30,7 @@ Lists OpenClaw agents deployed from the Marketplace. In addition to the same car
 * **Upgrade version** — upgrades to the latest OpenClaw release
 * Edit / disable / delete icons directly on the card
 
-![Agent Runtime — OpenClaw tab](<../../../../.gitbook/assets/agent-runtime-openclaw-tab-list (1).png>)
+![Agent Runtime — OpenClaw tab](<../../../.gitbook/assets/agent-runtime-openclaw-tab-list (1).png>)
 
 ***
 

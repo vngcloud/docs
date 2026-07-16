@@ -1,8 +1,8 @@
-# Use Multi-Instance GPU (MIG) on VKS
+# Use Multi-Instance GPU (MIG)
 
 > This guide walks you through configuring **Multi-Instance GPU (MIG)** on VKS to partition an NVIDIA H100 GPU into multiple isolated MIG instances — each with dedicated VRAM and Streaming Multiprocessors, ensuring complete workload isolation.
 
-<figure><img src="../../../.gitbook/assets/TEST-CASE-SUMMARY (1).png" alt="MIG architecture on VKS — GPU 0 partitioned into 2 MIG instances, GPU 1 remains full GPU"><figcaption><p>MIG architecture on VKS: GPU Operator manages both MIG GPU (2x 3g.40gb) and non-MIG GPU (full 80 GB) on the same node</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/TEST-CASE-SUMMARY (1).png" alt="MIG architecture on VKS — GPU 0 partitioned into 2 MIG instances, GPU 1 remains full GPU"><figcaption><p>MIG architecture on VKS: GPU Operator manages both MIG GPU (2x 3g.40gb) and non-MIG GPU (full 80 GB) on the same node</p></figcaption></figure>
 
 ***
 
@@ -57,7 +57,7 @@ All pods must be `Running` or `Completed`:
 | `nvidia-mig-manager`             | Running         |
 | `nvidia-operator-validator`      | Running         |
 
-<figure><img src="../../../.gitbook/assets/Cai-GPU-Operator (1).png" alt="GPU Operator pods running"><figcaption><p>All GPU Operator pods in Running/Completed state</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Cai-GPU-Operator (1).png" alt="GPU Operator pods running"><figcaption><p>All GPU Operator pods in Running/Completed state</p></figcaption></figure>
 
 {% hint style="warning" %}
 VKS nodes have no pre-installed NVIDIA driver. Omitting `driver.enabled=true` will prevent the `nvidia-device-plugin` pod from starting, and the node will not expose any GPU resources.
@@ -161,7 +161,7 @@ level=info msg="Successfully updated to MIG config: custom-gpu0-3g40gb"
 level=info msg="Changing the 'nvidia.com/mig.config.state' node label to 'success'"
 ```
 
-<figure><img src="../../../.gitbook/assets/Apply-MIG-config-len-node (1).png" alt="MIG Manager log confirming config applied successfully"><figcaption><p>MIG Manager confirms config applied successfully with state "success"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Apply-MIG-config-len-node (1).png" alt="MIG Manager log confirming config applied successfully"><figcaption><p>MIG Manager confirms config applied successfully with state "success"</p></figcaption></figure>
 
 ***
 
@@ -198,7 +198,7 @@ kubectl get node <NODE_NAME> -o json \
 | `nvidia.com/mig.config.state`            | `success`     | Config apply status                    |
 | `nvidia.com/mig.strategy`                | `mixed`       | Active MIG strategy                    |
 
-<figure><img src="../../../.gitbook/assets/Verify-node-resources (1).png" alt="Node resources after applying MIG config"><figcaption><p>Node exposes 2 MIG instances (mig-3g.40gb: 2) and 1 full GPU (gpu: 1)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Verify-node-resources (1).png" alt="Node resources after applying MIG config"><figcaption><p>Node exposes 2 MIG instances (mig-3g.40gb: 2) and 1 full GPU (gpu: 1)</p></figcaption></figure>
 
 ***
 
@@ -253,7 +253,7 @@ MIG 3g.40gb Device 0: (UUID: MIG-323b277e-e3e9-519a-9042-c8552ea98ed9)
 MIG 3g.40gb Device 0: (UUID: MIG-155d0cb1-2b7a-528c-8f8f-aeb1ab1e9d52)
 ```
 
-<figure><img src="../../../.gitbook/assets/Pod-isolation-test (1).png" alt="2 pods receive different MIG UUIDs"><figcaption><p>Each Pod is assigned a distinct MIG UUID — complete isolation between workloads</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Pod-isolation-test (1).png" alt="2 pods receive different MIG UUIDs"><figcaption><p>Each Pod is assigned a distinct MIG UUID — complete isolation between workloads</p></figcaption></figure>
 
 ***
 

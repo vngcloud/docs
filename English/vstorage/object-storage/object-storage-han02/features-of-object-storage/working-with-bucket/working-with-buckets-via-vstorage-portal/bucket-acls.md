@@ -10,19 +10,19 @@
 
     1. For **Root User Account : you can get vStorage User ID** information right on the **project** information page as shown below.
 
-    <figure><img src="../../../../../../../.gitbook/assets/image (605) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (605) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../../../.gitbook/assets/image (606) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (606) (1).png" alt=""><figcaption></figcaption></figure>
 
     b. For **IAM User Account** and **Service Account : you can get vStorage User ID** information in **Identity and Access Management**
 
-    <figure><img src="../../../../../../../.gitbook/assets/image (607).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (607) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../../../.gitbook/assets/image (608) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (608) (1).png" alt=""><figcaption></figcaption></figure>
 4. Continue to select **the Bucket** you want to perform ACLs setup.
 5. Select the **Action** icon and select **Set ACLs.**
 
-<figure><img src="../../../../../../../.gitbook/assets/image (611) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (611) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Here, you can select user sets and corresponding access rights. Specifically:
 
@@ -35,7 +35,7 @@
 
 * **In addition, the ReadBucketACL, WriteBucketACL, ReadObjectACL, WriteObjectACL permissions:** Allow users to view information/update the ACLs configuration of the bucket or object.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (612) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (612) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Select **Update** to save the configuration set for ACLs.
 
@@ -55,11 +55,11 @@ Attention:
 * Select **the List, Write** action to grant permission to list objects in the bucket and upload objects to this bucket.
 * Select **Save**.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (613) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (613) (1).png" alt=""><figcaption></figcaption></figure>
 
 * As shown above, I have assigned the above working permission `bucketshared` to the user `demoiaas-053461`. Now, the user `demoiaas-053461` can use the feature `Add external bucket`to add this shared bucket to your bucket list:
 
-<figure><img src="../../../../../../../.gitbook/assets/image (614) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (614) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**

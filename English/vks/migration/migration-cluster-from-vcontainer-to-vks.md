@@ -4,7 +4,7 @@
 
 ## 1. Process <a href="#id-1.-quy-trinh" id="id-1.-quy-trinh"></a>
 
-<figure><img src="../../../.gitbook/assets/image (293) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (293) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Process of migrating from vContainer to vKS (Customer + GreenNode)**
 

@@ -21,47 +21,47 @@ To create a service account, visit [here](https://iam.console.greennode.ai/servi
 * Run the agent installer you downloaded above. A
 * fter receiving the notification, select **More Info**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (110) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (110) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Then select **Run anyway** to start installing the agent.
 
-<figure><img src="../../../../../../.gitbook/assets/image (111) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (111) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Chosse **Next** to continue
 
-<figure><img src="../../../../../../.gitbook/assets/image (112) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (112) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Enter the two pieces of information, **Client\_ID** and **Secret\_Key**, you copied above into the fields: **IAM\_CLIENT\_ID** and **IAM\_CLIENT\_SECRET:**
 
-<figure><img src="../../../../../../.gitbook/assets/image (113) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (113) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Keep the default settings and select Next to continue, or if you want to change the installation directory, make the necessary changes.
 
-<figure><img src="../../../../../../.gitbook/assets/image (114) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (114) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Select "**Accept the license**," then click **Next** to continue.
 
-<figure><img src="../../../../../../.gitbook/assets/image (115) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (115) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Keep the default settings and select **Next** to continue, or you can customize the shortcut menu name for the agent.
 
-<figure><img src="../../../../../../.gitbook/assets/image (116) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (116) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Select **Install** to begin the installation.
 
-<figure><img src="../../../../../../.gitbook/assets/image (117) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (117) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Select **Yes** to grant permissions for the agent to operate.
 
-<figure><img src="../../../../../../.gitbook/assets/image (118) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (118) (2).png" alt=""><figcaption></figcaption></figure>
 
 * After the installation process is complete, select **Finish**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (120) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (120) (2).png" alt=""><figcaption></figcaption></figure>
 
 4.**After successful installation, you will see the server on the Infrastructure List/Host page**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (121) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (121) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### **Telegraf Agent với API\_KEY (deprecated**) <a href="#windowos-telegrafagentvoiapi_key-deprecated-khongkhuyencaosudung-saptoisedunghotrovoiphuongthucnay" id="windowos-telegrafagentvoiapi_key-deprecated-khongkhuyencaosudung-saptoisedunghotrovoiphuongthucnay"></a>
 
@@ -76,11 +76,11 @@ Step 1: Create an API Key (if you have not created any API Key before).
 * Access the vMonitor Platform Product portal: [https://hcm-3.console.greennode.ai/vmonitor/](https://hcm-3.console.greennode.ai/vmonitor/)
 * Select **Integration** => then choose **API Key**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (122) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (122) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Select **Create an API Key** to create a new one (if you have not created any API Key before).
 
-<figure><img src="../../../../../../.gitbook/assets/image (123) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (123) (2).png" alt=""><figcaption></figcaption></figure>
 
 Step 2: Download Agent Installer
 
@@ -91,54 +91,54 @@ Step 3: Install Agent
 * Run the agent installer.
 * After receiving the notification, select **More Info**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (124) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (124) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Then select **Run anyway** to start installing the agent.
 
-<figure><img src="../../../../../../.gitbook/assets/image (125) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (125) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Select **Next** to continue.
 
-<figure><img src="../../../../../../.gitbook/assets/image (126) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (126) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Return to the vMonitor Platform portal, in the API Key section, select the **copy icon** to copy the API Key information.
 
-<figure><img src="../../../../../../.gitbook/assets/image (127) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (127) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Paste the API Key information into the **credentials** entry field.
 
-<figure><img src="../../../../../../.gitbook/assets/image (128) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (128) (2).png" alt=""><figcaption></figcaption></figure>
 
 * You can customize the installation folder if needed.
 
-<figure><img src="../../../../../../.gitbook/assets/image (129) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (129) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Select **Accept the license**, then click **Next** to continue.
 
-<figure><img src="../../../../../../.gitbook/assets/image (130) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (130) (2).png" alt=""><figcaption></figcaption></figure>
 
 * You can customize the shortcut menu name for the agent, then select **Next** to continue.
 
-<figure><img src="../../../../../../.gitbook/assets/image (131) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (131) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Select **Install** to begin the installation.
 
-<figure><img src="../../../../../../.gitbook/assets/image (132) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (132) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Select **Yes** to grant permissions for the agent to operate.
 
-<figure><img src="../../../../../../.gitbook/assets/image (134) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (134) (2).png" alt=""><figcaption></figcaption></figure>
 
 * After the installation process is complete, select **Finish**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (135) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (135) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Step 4: Verify Agent Operated <a href="#windowos-b4-kiemtraagentdahoatdong" id="windowos-b4-kiemtraagentdahoatdong"></a>
 
 * Access the vMonitor Platform portal, select **Infrastructure list** => choose **Host**, then check if the hostname of the VM has appeared in the list.
 
-<figure><img src="../../../../../../.gitbook/assets/image (136) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (136) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Click on the **hostname** to check the monitoring dashboard.
 
-<figure><img src="../../../../../../.gitbook/assets/image (137) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (137) (2).png" alt=""><figcaption></figcaption></figure>

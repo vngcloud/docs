@@ -14,6 +14,6 @@ To increase the number of nodes for an OpenSearch Cluster, you can:
 
 **Step 5:** Select **Resize** and complete the payment steps (if any) if you are a prepaid user.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 After you have successfully completed the steps above, the new total number of nodes after the change will be updated on the general information of the cluster you selected.

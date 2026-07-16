@@ -19,7 +19,7 @@
 
 **Step 2: Review current usage**
 
-<figure><img src="../../.gitbook/assets/rate-limit (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/rate-limit (1).png" alt=""><figcaption></figcaption></figure>
 
 The **CURRENT USAGE** section shows:
 

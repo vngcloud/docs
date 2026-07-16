@@ -24,6 +24,6 @@ To set up automatic growth for a project, you can:
 * If the capacity increase **fails** , the user will receive an email notification. After two consecutive auto-scaling failures, our system will stop sending email notifications to you. You need to proactively access vStorage to manually resize the project according to the instructions above.
 {% endhint %}
 
-<figure><img src="../../../../../../.gitbook/assets/Screenshot from 2026-05-04 15-49-03 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot from 2026-05-04 15-49-03 (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/Screenshot from 2026-05-04 15-49-10 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot from 2026-05-04 15-49-10 (1).png" alt=""><figcaption></figcaption></figure>

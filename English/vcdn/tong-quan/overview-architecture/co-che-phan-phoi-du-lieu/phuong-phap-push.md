@@ -4,7 +4,7 @@
 
 * Initialize a Live Entrypoint to receive signals. Live Entrypoint supports multiple receiving points at different DCs and operates according to Active-Backup mechanism.
 
-<figure><img src="../../../../../.gitbook/assets/image (148) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (148) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -14,4 +14,4 @@
 * Streaming via HLS with format: https:// //index.m3u8.
 * Supports Adaptive Bitrate feature: The packaging system automatically combines channels with the same name with different qualities into ABR channels. Customers can create multiple Live Entrypoints and manage them through the portal interface.
 
-<figure><img src="../../../../../.gitbook/assets/image (149) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (149) (1).png" alt=""><figcaption></figcaption></figure>

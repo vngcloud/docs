@@ -16,4 +16,4 @@ To initiate a bucket, please follow the steps below:
 * When you select **Enable Object Locked**, we will automatically enable **Object versioning** for your bucket.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/image (523) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (523) (1).png" alt=""><figcaption></figcaption></figure>

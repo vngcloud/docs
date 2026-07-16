@@ -4,7 +4,7 @@
 
 Access at: [https://aiplatform.console.greennode.ai/team-permissions](https://aiplatform.console.greennode.ai/team-permissions)
 
-![Team & Permissions — member list](<../../../../.gitbook/assets/Members-list (1).png>)
+![Team & Permissions — member list](<../../../.gitbook/assets/Members-list (1).png>)
 
 ***
 

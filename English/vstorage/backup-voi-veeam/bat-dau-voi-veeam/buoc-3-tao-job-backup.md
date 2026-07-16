@@ -31,48 +31,48 @@ Updating
 
 **Step 1**: Users go to the **Inventory** section, select Object - Computer (infrastructure to be backed up), in this guide localhost is the Object to be backed up, then right-click on the Object to select "Add to backup job" and press "**New Job**".
 
-<figure><img src="../../../../.gitbook/assets/image (257) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (257) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Step 2:** The **New Agent Backup Job** interface appears, in the **Job Mode** tab, the user selects the Mode "**Managed by backup server**", then press **Next**.
 
-<figure><img src="../../../../.gitbook/assets/image (258) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (258) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Step 3:** In the **Name** tab, the user names the Job, then presses **Next**.
 
-<figure><img src="../../../../.gitbook/assets/image (259) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (259) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Step 4:** In the **Computer** tab, the user can choose the computer to perform the backup. Then press **Next**.
 
-<figure><img src="../../../../.gitbook/assets/image (260) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (260) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Step 5:** In the **Backup Mode** tab, the user chooses the mode "**File level backup (slower)**" to backup only selected files or folders, or if backing up the entire computer then choose the mode "Entire computer". Then press **Next**.
 
-<figure><img src="../../../../.gitbook/assets/image (261) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (261) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Step 6:** If the "File level backup (slower)" mode is chosen in step 5, then the **Object** tab appears to select the objects to backup, the user chooses the option "**The following file system objects**:", then press "Add" to enter the path of the folder to backup, then press "OK" and finally press **Next**.
 
 \*If "Entire computer" mode is chosen in step 5, skip step 6.
 
-<figure><img src="../../../../.gitbook/assets/image (262) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (262) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Step 7:** In the **Storage** tab, the user selects the previously created **Backup Repository**, then press **Next**. The system will check the backup file.
 
-<figure><img src="../../../../.gitbook/assets/image (263) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (263) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Step 8:** After the system finishes checking, navigate to the **Guest Processing** tab, the user **deselects the first option "Enable application-aware processing"**. If the user wants to ensure consistent backups for applications running on virtual servers by interacting with them and using Microsoft VSS, then it can still be enabled and Veeam will have to perform pre and post backup tasks. Then press **Next**.
 
-<figure><img src="../../../../.gitbook/assets/image (264) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (264) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Step 9:** In the **Schedule** tab, the user can set the schedule to run the job automatically, if running manually then press **Next**.
 
-<figure><img src="../../../../.gitbook/assets/image (265) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (265) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Step 10:** In the Summary tab, the user can see a summary of the Job information to be created, choose "**Run the job when I click Finish**" then press **Finish** for the system to start creating the Job.
 
-<figure><img src="../../../../.gitbook/assets/image (266) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (266) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Step 11:** After the job is created, the user can check by: going to the Home section, select Jobs/Backup, select the created Job if the status is Success then the job has been created, the user can perform the backup.
 
-<figure><img src="../../../../.gitbook/assets/image (267) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (267) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Complete the process of creating a Job to backup data.

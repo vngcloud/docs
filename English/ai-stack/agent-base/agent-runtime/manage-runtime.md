@@ -98,7 +98,7 @@ Each Runtime has one **DEFAULT** Endpoint created automatically. You can create 
 
 **View Endpoints:** Open Runtime Detail → **Endpoints** tab
 
-![Runtime detail — Endpoints tab](<../../../../.gitbook/assets/1774594267224 (1).png>)
+![Runtime detail — Endpoints tab](<../../../.gitbook/assets/1774594267224 (1).png>)
 
 **Create a new Endpoint:**
 
@@ -154,7 +154,7 @@ Each update creates a new immutable Version. To roll back, point the DEFAULT End
 
 Open Runtime Detail → **Versions** tab
 
-![Runtime detail — Versions tab](<../../../../.gitbook/assets/1774594455831 (1).png>)
+![Runtime detail — Versions tab](<../../../.gitbook/assets/1774594455831 (1).png>)
 
 ### Via API
 

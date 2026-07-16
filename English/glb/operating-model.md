@@ -2,7 +2,7 @@
 
 GLB is a critical solution for ensuring the performance and availability of web applications on a global scale. By distributing traffic to the most appropriate servers, GLB helps minimize latency, improve resiliency, and enhance user experience. Below is an example of how GLB operates.
 
-<figure><img src="../../.gitbook/assets/image (441) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (441) (2).png" alt=""><figcaption></figcaption></figure>
 
 1. Geographic Distributio&#x6E;**:** You deploy your application servers across multiple geographic regions (for example: HCM-03, HAN-01).
 2. GLB Configuratio&#x6E;**:** You configure a GLB to manage traffic distribution across these servers. The GLB continuously monitors server health and network conditions.

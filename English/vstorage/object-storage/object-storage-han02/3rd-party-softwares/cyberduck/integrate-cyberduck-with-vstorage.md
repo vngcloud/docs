@@ -20,7 +20,7 @@ To see instructions for integrating Cyberduck with vStorage, you can do so via t
 2. **Open the Cyberduck** app .
 3. Select **Open Connection** or **Bookmark + New Bookmark** .
 
-<figure><img src="../../../../../../.gitbook/assets/image (426) (2).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (426) (2).png" alt="" width="375"><figcaption></figcaption></figure>
 
 4\. Enter connection information including:
 
@@ -32,4 +32,4 @@ To see instructions for integrating Cyberduck with vStorage, you can do so via t
 
 6\. Now **Cyberduck** has successfully connected to **vStorage** . You can use Cyberduck to access vStorage, see Using Cyberduck tool for more information.
 
-<figure><img src="../../../../../../.gitbook/assets/image (428) (2).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (428) (2).png" alt="" width="375"><figcaption></figcaption></figure>

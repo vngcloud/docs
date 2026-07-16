@@ -140,7 +140,7 @@ Do not hardcode the API key directly in `opencode.json` if the file is committed
     OpenCode starts with `MAAS-chat/openai/gpt-oss-120b` as the active model.
 2. Switch models at runtime with the `/models` command, then pick **MAAS chat → openai/gpt-oss-120b** from the list.
 
-<figure><img src="../../../../.gitbook/assets/using-opencode-with-maas (1).png" alt=""><figcaption><p>OpenCode running with openai/gpt-oss-120b via GreenNode MaaS</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/using-opencode-with-maas (1).png" alt=""><figcaption><p>OpenCode running with openai/gpt-oss-120b via GreenNode MaaS</p></figcaption></figure>
 
 ***
 

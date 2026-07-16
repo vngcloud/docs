@@ -5,11 +5,11 @@ On region HAN02, you can use 4 types of accounts to access vStorage. Details of 
 * **Root User Account:** Is the first account [created](https://register.vngcloud.vn/signup) to access GreenNode with full access to all resource services on GreenNode.
 * **IAM User Account, Service Account:** Is an account created from the single Root user account with access rights depending on the access policy set from the Root user account.
 
-<figure><img src="../../../../../.gitbook/assets/image (551) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (551) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **S3 keys:** Is a pair of s3 keys with access key and secret key integrated by vStorage for compatibility with S3 client tools such as s3cmd, s3 SDK,...
 
-<figure><img src="../../../../../.gitbook/assets/image (552) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (552) (1).png" alt=""><figcaption></figcaption></figure>
 
 Refer to the table below to get an overview of how accounts work on vStorage:
 

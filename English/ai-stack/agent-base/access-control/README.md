@@ -266,7 +266,7 @@ An **agent identity** must exist before creating auth providers. If you haven't 
 3. Fill in: **Name**, **Client ID**, **Client Secret**, **Authorization URL**, **Token URL**
 4. Click **Create** â€” the response includes a **Callback URL** to register in your OAuth2 app
 
-![1774593811794](<../../../../.gitbook/assets/1774593811794 (1).png>)
+![1774593811794](<../../../.gitbook/assets/1774593811794 (1).png>)
 
 ***
 

@@ -8,7 +8,7 @@ AI Coding lets you connect popular AI coding tools — Claude Code, OpenAI SDK, 
 
 Requests from your tool are redirected to the GreenNode MaaS endpoint. MaaS exposes two protocols in parallel to support all existing clients:
 
-<figure><img src="../../../../.gitbook/assets/ai_coding_flow (1).png" alt=""><figcaption><p>Both API protocols connect to a single MaaS endpoint sharing the same Model Pool</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ai_coding_flow (1).png" alt=""><figcaption><p>Both API protocols connect to a single MaaS endpoint sharing the same Model Pool</p></figcaption></figure>
 
 A single AI Platform API key works for both protocols.
 

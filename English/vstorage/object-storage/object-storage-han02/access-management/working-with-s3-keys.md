@@ -16,11 +16,11 @@ To initialize an S3 key, follow the instructions below:
 4. Under **List of S3 keys of this project** , select **Generate S3 key** .
 5. Select **Copy** or **Download** to download the Access Key/Secret Key information you just generated.
 
-<figure><img src="../../../../../.gitbook/assets/image (566) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (566) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (567) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (567) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (568) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (568) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**
@@ -41,7 +41,7 @@ To initialize an S3 key, follow the instructions below:
 4. Under **List of S3 keys of this project** , select **Generate S3 key** .
 5. Select **Copy** or **Download** to download the Access Key/Secret Key information you just generated.
 
-<figure><img src="../../../../../.gitbook/assets/image (569) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (569) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Attention:**
@@ -63,7 +63,7 @@ To integrate the S3 Browser tool with vStorage, you can follow the instructions 
 1. Download the S3 Browser user tool here [https://s3browser.com/download.aspx](https://s3browser.com/download.aspx) .
 2. Open the S3 Browser app **.** Select the Account folder, **then select Add new account**
 
-<figure><img src="../../../../../.gitbook/assets/image (530) (1).png" alt="" width="295"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (530) (1).png" alt="" width="295"><figcaption></figcaption></figure>
 
 3. The Add New Account screen appears, now you enter the following information:
    * **Display name:** Display name of the account. Example: Demo\_HAN02
@@ -73,11 +73,11 @@ To integrate the S3 Browser tool with vStorage, you can follow the instructions 
 4. Select the **Use Secure transfer (SSL/TLS)** option because vStorage only supports encrypted transmission channels (HTTPS, port 443) to ensure data security, vStorage currently does not support unencrypted transmission channels (HTTP, port 80).
 5. Select **Add new account.**
 
-<figure><img src="../../../../../.gitbook/assets/image (531) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (531) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 6. When the connection is successful, the S3 Browser screen will display as follows:
 
-<figure><img src="../../../../../.gitbook/assets/image (532) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (532) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -87,9 +87,9 @@ To cancel (delete) one or more previously created S3 keys, follow the instructio
 
 1. Log in to [https://vstorage.console.greennode.ai with ](https://vstorage.console.greennode.ai/storage/list)Root User Account or IAM User Account .
 2. Chọn **Region HAN02.**
-3. Select the icon <img src="../../../../../.gitbook/assets/image (526) (1).png" alt="" data-size="line"> in the project you just created and then select **Identity and Access Management.**
+3. Select the icon <img src="../../../../.gitbook/assets/image (526) (1).png" alt="" data-size="line"> in the project you just created and then select **Identity and Access Management.**
 4. In List **of S3 keys of this project** , select **the S3 key** you want to delete and then select **Delete.**
 
 Once the S3 key is successfully cancelled, you will no longer be able to use this S3 key to access vStorage. Be careful when cancelling (deleting) an S3 account as you will not be able to recover this deleted account.
 
-<figure><img src="../../../../../.gitbook/assets/image (570) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (570) (1).png" alt=""><figcaption></figcaption></figure>

@@ -37,12 +37,12 @@ _`ip route add 0.0.0.0/0 via 10.0.0.100 dev eth0`._
 
 _<mark style="color:purple;">Here is an example of an internet route that already exists through a different gateway IP on Linux OS</mark>_
 
-<figure><img src="../../../.gitbook/assets/image (275) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (275) (1).png" alt=""><figcaption></figcaption></figure>
 
 _<mark style="color:purple;">After deleting the existing route on the VM, add the route to the internet through NAT.</mark>_
 
-<figure><img src="../../../.gitbook/assets/image (271) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (271) (1).png" alt=""><figcaption></figcaption></figure>
 
 _<mark style="color:purple;">The result is successful as shown in the screenshot.</mark>_
 
-<figure><img src="../../../.gitbook/assets/image (272).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (272) (1).png" alt=""><figcaption></figcaption></figure>

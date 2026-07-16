@@ -8,7 +8,7 @@
 
 Go to [Team & Permissions](https://aiplatform.console.greennode.ai/team-permissions) → **Roles & Permissions** tab
 
-![Roles & Permissions](<../../../../.gitbook/assets/Role-permission-tab (1).png>)
+![Roles & Permissions](<../../../.gitbook/assets/Role-permission-tab (1).png>)
 
 ***
 

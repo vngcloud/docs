@@ -1,4 +1,4 @@
-# Create a Runtime
+# Create Runtime
 
 > Step-by-step guide to creating an Agent Runtime from a container image on GreenNode AgentBase.
 
@@ -42,7 +42,7 @@ Recommended for developers who want to integrate deployment into an AI-assisted 
 
 A popup appears to choose the agent type:
 
-![Deploy a new Agent — choose agent type](<../../../../.gitbook/assets/deploy-new-agent (1).png>)
+![Deploy a new Agent — choose agent type](<../../../.gitbook/assets/deploy-new-agent (1).png>)
 
 | Type             | Description                                                                                         |
 | ---------------- | --------------------------------------------------------------------------------------------------- |

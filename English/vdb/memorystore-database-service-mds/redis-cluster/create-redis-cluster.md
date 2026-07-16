@@ -18,7 +18,7 @@ This guide walks you through creating a new **Redis Cluster** on vDB, including 
 2. In the left menu, select **Memory Store**.
 3. Click **Create Database**.
 
-![](<../../../../.gitbook/assets/Redis-list (1).png>)
+![](<../../../.gitbook/assets/Redis-list (1).png>)
 
 ***
 
@@ -38,7 +38,7 @@ Fill in the general database information:
 
 In the **Cluster configuration** section, select your **Cluster mode**:
 
-![](<../../../../.gitbook/assets/create-redis-cluster (1).png>)
+![](<../../../.gitbook/assets/create-redis-cluster (1).png>)
 
 | Option           | Description                                                                                     |
 | ---------------- | ----------------------------------------------------------------------------------------------- |
@@ -66,7 +66,7 @@ The **Cluster topology preview** shows a visual diagram with the number of Maste
 
 If you want to create the cluster from an existing backup instead of an empty database, use the **Backup Image** section:
 
-![](<../../../../.gitbook/assets/create-redis-restore (1).png>)
+![](<../../../.gitbook/assets/create-redis-restore (1).png>)
 
 1. Backups from Backup Center are displayed directly as a table (includes both Auto and Manual Backups). Only backups with at least 1 restore point in **Completed** status are shown.
 2. Find the backup you want, click the expand icon to view the list of **restore points**.
@@ -86,7 +86,7 @@ If no restore point is selected, the cluster will be created with an empty datab
 
 In the **Backup Settings** step, configure data protection for the cluster:
 
-![](<../../../../.gitbook/assets/redis-backup-setting (1).png>)
+![](<../../../.gitbook/assets/redis-backup-setting (1).png>)
 
 | Field               | Required | Description                                                                                          |
 | ------------------- | -------- | ---------------------------------------------------------------------------------------------------- |
