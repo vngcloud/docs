@@ -47,7 +47,7 @@ When the NAT is created successfully, it appears on the NAT list. Open it to see
 
 With V2 you do not need to log in to each VM to add a route. When the NAT is created, GreenNode automatically adds a default route (0.0.0.0/0) pointing to the NAT gateway into your VPC route table. Every instance in the VPC then reaches the internet through the NAT with no further configuration.
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 **If an instance still cannot reach the internet**
 
 Make sure the instance does not already have its own default route to a different gateway that overrides the VPC route. If such a route exists on the VM, remove it so traffic follows the NAT route added to the VPC route table.

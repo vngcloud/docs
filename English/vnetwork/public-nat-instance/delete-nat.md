@@ -5,7 +5,7 @@
 3. Right-click and select "Delete".
 4. A warning screen appears: "Deleting NAT may have some consequences for the user." Click "Delete" to confirm.
 
-{% hint style="info" %}
+{% hint style="danger" %}
 When a V2 NAT is deleted, the default route to the internet that was added automatically to your VPC route table when the NAT was created is also removed. After deletion, instances in the VPC will no longer reach the internet through this NAT.
 {% endhint %}
 
