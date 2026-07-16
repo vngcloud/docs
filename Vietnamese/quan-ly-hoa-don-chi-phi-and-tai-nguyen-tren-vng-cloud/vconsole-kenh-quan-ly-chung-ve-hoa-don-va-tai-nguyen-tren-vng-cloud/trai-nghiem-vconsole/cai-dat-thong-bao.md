@@ -14,9 +14,11 @@ Việc cấu hình thông báo email sẽ giúp bạn chủ động hơn trong v
   * Truy cập đường dẫn sau để truy cập: [https://dashboard.console.greennode.ai/user-notification](https://dashboard.console.greennode.ai/user-notification)
 * **Bước 2: Truy cập Cài đặt thông báo:**
   * Tại giao diện chính, tìm và chọn mục 'Cài đặt thông báo'', mục này nằm trong menu bên trái như hình sau:
-  *
 
-      <figure><img src="../../../.gitbook/assets/image (14).png" alt="" width="229"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (41).png" alt="" width="224"><figcaption></figcaption></figure>
+
+
+
 *   **Bước 3: Cấu hình địa chỉ email nhận thông báo:**
 
     * Tại trang **'Trung tâm thông báo',** nhấn chọn **'Quản lý người nhận':**&#x20;
@@ -35,8 +37,7 @@ Việc cấu hình thông báo email sẽ giúp bạn chủ động hơn trong v
 * **Tên:** Nhập tên gợi nhớ của người nhận.
 * **Địa chỉ mail:** Nhập địa chỉ mail của người nhận.
 * Nhấn **'Thêm'** để hoàn tất quá trình
-
-- **Bước 4: Chọn từng loại thông báo tương ứng với từng đối tượng người nhận**
+* **Bước 4: Chọn từng loại thông báo tương ứng với từng đối tượng người nhận**
   *   Tại trang cài đặt chung, tìm đến mục loại thông báo, nhấn **'Chỉnh sửa'**
 
       <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
