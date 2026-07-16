@@ -1,7 +1,33 @@
 # Rename NAT
 
-* Log in to [https://hcm-3-vnetwork.console.greennode.ai/nat/list ](https://hcm-3-vnetwork.console.greennode.ai/nat/list)with region set to HCM.
-* In the **"Public NAT Instance"** menu, find and select the NAT you want to rename.
-* Right-click and select the "**Rename**" submenu.
-* In the popup screen, enter a new name for the NAT.
-* Click **"Save"** to confirm the NAT name change.
+{% stepper %}
+{% step %}
+## Access the NAT list
+
+Access https://hcm-3-vnetwork.console.greennode.ai/nat/list after logging in with the region set to HCM.
+{% endstep %}
+
+{% step %}
+## Select the NAT instance
+
+In the "Public NAT" section, locate and select the NAT instance you want to rename.
+{% endstep %}
+
+{% step %}
+## Open the rename action
+
+Right-click and choose "Rename".
+{% endstep %}
+
+{% step %}
+## Enter the new name
+
+A dialog box appears where you can enter the new name for the NAT.
+{% endstep %}
+
+{% step %}
+## Save the change
+
+Click "Save" to apply and finalize the rename.
+{% endstep %}
+{% endstepper %}
