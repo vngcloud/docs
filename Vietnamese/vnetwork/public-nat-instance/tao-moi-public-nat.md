@@ -51,7 +51,7 @@ Khi NAT tạo thành công, nó xuất hiện trong danh sách NAT. Mở NAT đ�
 
 Với V2 bạn không cần đăng nhập từng máy ảo để thêm route. Khi tạo NAT, GreenNode tự động thêm route mặc định (0.0.0.0/0) trỏ tới NAT gateway vào route table của VPC. Nhờ đó mọi máy ảo trong VPC ra internet qua NAT mà không cần cấu hình thêm.
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 **Nếu một máy ảo vẫn không ra được internet**
 
 Kiểm tra xem máy ảo có route mặc định riêng trỏ tới gateway khác đè lên route của VPC không. Nếu có, hãy xóa nó để lưu lượng đi theo route NAT đã thêm vào route table VPC.

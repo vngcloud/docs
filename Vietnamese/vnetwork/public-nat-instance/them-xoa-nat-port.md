@@ -14,7 +14,7 @@ Mở NAT từ danh sách và vào màn hình chi tiết để xem mục Inbound 
 
 ## Xóa cổng NAT
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 Không thể xóa các rule do hệ thống tạo (các rule mặc định DNS / HTTP / HTTPS / ICMP).
 {% endhint %}
 
