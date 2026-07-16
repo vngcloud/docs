@@ -22,7 +22,7 @@
 * **Tags** (tùy chọn) — thêm thẻ key/value để dễ quản lý tài nguyên.
 * **Service Package** (Gói dịch vụ) — chọn gói (ví dụ Standard).
 
-<figure><img src="../../.gitbook/assets/create_form_1_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/create_form1.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -36,7 +36,7 @@
 
 * **VPC** — chọn VPC để tạo Public NAT (dải CIDR như 10.5.0.0/16 hiện bên cạnh tên).
 
-<figure><img src="../../.gitbook/assets/create_form_1_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/create_form2.png" alt=""><figcaption></figcaption></figure>
 
 Network Settings
 
