@@ -2,8 +2,8 @@
 
 {% hint style="danger" %}
 * Any VM in the same VPC (the entire /16) can reach the internet through the NAT — it does not need to be on the NAT's subnet. (In V1, the VM had to be on the same subnet as the NAT.)
-* The NAT's public interface is created automatically when the NAT is successfully established. You can add the public IP into a [purchased bandwidth](https://docs.greennode.ai/vng-cloud-document/vserver/compute-hcm03-1a/vpc/bandwidth/datatransfers-bandwidth-service) package (if available) to increase the NAT's bandwidth.
-* By default, the NAT allows some common outbound services from your VPC: DNS (UDP 53), HTTP (TCP 80), HTTPS (TCP 443), and ICMP (ping). To allow additional ports or protocols, add an inbound rule (see [Add / Remove NAT Port](/broken/pages/36c349d2212aa971b7367af2f31735365325976d)).
+* The NAT's public interface is created automatically when the NAT is successfully established. You can add the public IP into a [purchased bandwidth](https://docs.greennode.ai/vserver/compute-hcm03-1a/vpc/bandwidth/datatransfers-bandwidth-service) package (if available) to increase the NAT's bandwidth.
+* By default, the NAT allows some common outbound services from your VPC: DNS (UDP 53), HTTP (TCP 80), HTTPS (TCP 443), and ICMP (ping). To allow additional ports or protocols, add an inbound rule (see [Add / Remove NAT Port](https://docs.greennode.ai/vnetwork/public-nat-instance/add-remove-nat-port)).
 * With V2, the route from your VPC to the internet through the NAT gateway is added to your VPC route table automatically. You do not need to configure a route on each VM.
 {% endhint %}
 
