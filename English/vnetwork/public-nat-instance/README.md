@@ -24,6 +24,14 @@ In V1, you had to log in to each VM and manually add a route to the NAT gateway.
 In V1, only VMs on the **same subnet** as the NAT could route through it. In V2, **any VM in the same VPC (the entire /16)** can reach the internet through the NAT — not just the NAT's subnet.
 {% endhint %}
 
+{% hint style="info" %}
+**How to tell V1 from V2**
+
+In the **Public NAT** list, look at the **HA** column: **HA = Yes** means the NAT is **V2** (highly available); **HA = No** means it is a **V1** NAT.
+{% endhint %}
+
+The HA column on the Public NAT list: Yes = V2, No = V1
+
 ## Feature summary
 
 | Capability                               | V1 (legacy)            | V2                                      |
@@ -34,7 +42,3 @@ In V1, only VMs on the **same subnet** as the NAT could route through it. In V2,
 | Public interface                         | Created automatically  | Created automatically                   |
 | Default allowed services (from your VPC) | DNS, HTTP, HTTPS, ICMP | DNS, HTTP, HTTPS, ICMP                  |
 | Add / remove inbound rules               | Yes                    | Yes                                     |
-
-***
-
-**Note:** For complete documentation, consult the [llms.txt index](https://docs.greennode.ai/llms.txt). Markdown versions are accessible by adding `.md` to any page URL.
