@@ -119,19 +119,29 @@ Sử dụng **username và password do GreenNode cung cấp** (user replication)
 }
 ```
 
-| Tham số              | Mô tả                                                                                                                                                                                     |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `database.hostname`  | Hostname do GreenNode cung cấp                                                                                                                                                            |
-| `database.port`      | Port kết nối PostgreSQL                                                                                                                                                                   |
-| `database.user`      | Username do GreenNode cung cấp                                                                                                                                                            |
-| `database.password`  | Password do GreenNode cung cấp                                                                                                                                                            |
-| `database.dbname`    | Tên database nguồn                                                                                                                                                                        |
-| `topic.prefix`       | Tiền tố cho tên Kafka topic. Mỗi bảng sẽ được publish vào topic `<prefix>.<schema>.<table>` — ví dụ: prefix `pg-cdc` → topic `pg-cdc.public.orders`                                       |
-| `plugin.name`        | Plugin logical decoding (built-in từ PG 10, không cần cài thêm)                                                                                                                           |
-| `publication.name`   | Tên Publication đã tạo ở Bước 3                                                                                                                                                           |
-| `slot.name`          | Tên replication slot — đặt tên có ý nghĩa để dễ quản lý                                                                                                                                   |
-| `table.include.list` | Danh sách bảng cần capture (format: `schema.table`)                                                                                                                                       |
-| `snapshot.mode`      | Chế độ snapshot khi connector khởi động (xem bảng bên dưới). Trong ví dụ, mode `initial` dùng để snapshot toàn bộ dữ liệu hiện có khi khởi động lần đầu, sau đó chuyển sang streaming WAL |
+| Tham số               | Mô tả                                                                                                                                                                                    |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `database.hostname`   | Hostname do GreenNode cung cấp                                                                                                                                                           |
+| `database.port`       | Port kết nối PostgreSQL                                                                                                                                                                  |
+| `database.user`       | Username do GreenNode cung cấp                                                                                                                                                           |
+| `database.password`   | Password do GreenNode cung cấp                                                                                                                                                            |
+| `database.dbname`     | Tên database nguồn                                                                                                                                                                        |
+| `topic.prefix`        | Tiền tố cho tên Kafka topic. Mỗi bảng sẽ được publish vào topic `<prefix>.<schema>.<table>` — ví dụ: prefix `pg-cdc` → topic `pg-cdc.public.orders`                                      |
+| `plugin.name`         | Plugin logical decoding (built-in từ PG 10, không cần cài thêm)                                                                                                                           |
+| `publication.name`    | Tên Publication đã tạo ở Bước 3                                                                                                                                                           |
+| `slot.name`           | Tên replication slot — đặt tên có ý nghĩa để dễ quản lý                                                                                                                                   |
+| `table.include.list`  | Danh sách bảng cần capture (format: `schema.table`)                                                                                                                                       |
+| `snapshot.mode`       | Quy định connector có đọc dữ liệu hiện có trong bảng khi khởi động hay không. Trong ví dụ, giá trị `initial` sẽ đọc toàn bộ dữ liệu hiện có ở lần khởi động đầu tiên, sau đó chỉ ghi nhận các thay đổi mới. |
+
+**Các giá trị `snapshot.mode`:**
+
+| Giá trị               | Ý nghĩa                                                                                     |
+| --------------------- | ---------------------------------------------------------------------------------------------- |
+| `initial` (mặc định) | Đọc toàn bộ dữ liệu hiện có ở lần khởi động đầu tiên, sau đó chỉ ghi nhận các thay đổi mới     |
+| `always`               | Mỗi lần khởi động đều đọc lại toàn bộ dữ liệu hiện có                                          |
+| `no_data`              | Không đọc dữ liệu hiện có, chỉ ghi nhận các thay đổi phát sinh sau khi connector khởi động     |
+| `initial_only`         | Chỉ đọc dữ liệu hiện có một lần rồi dừng                                                       |
+| `when_needed`          | Chỉ đọc dữ liệu hiện có khi connector xác định là cần thiết                                    |
 
 Xem đầy đủ các tùy chọn tại [Debezium PostgreSQL Connector — Snapshot properties](https://debezium.io/documentation/reference/stable/connectors/postgresql.html#postgresql-connector-snapshot-properties).
 

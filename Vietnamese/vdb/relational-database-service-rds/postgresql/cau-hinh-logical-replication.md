@@ -201,9 +201,20 @@ CREATE SUBSCRIPTION my_subscription
 | `sslmode`          | Chế độ mã hóa SSL                            |
 | `publication_name` | Tên publication trên Publisher               |
 
-{% hint style="warning" %}
-Sau khi tạo Subscription, PostgreSQL sẽ thực hiện **initial sync** — sao chép toàn bộ dữ liệu hiện có từ Publisher sang Subscriber. Quá trình này có thể mất vài phút đến vài giờ tuỳ theo kích thước dữ liệu.
+{% hint style="info" %}
+PostgreSQL sẽ mặc định thực hiện **initial sync**: sao chép toàn bộ dữ liệu hiện có từ Publisher sang Subscriber trước khi chuyển sang đồng bộ các thay đổi mới.
 {% endhint %}
+
+Nếu Subscriber đã có sẵn dữ liệu (ví dụ được `pg_dump`/restore từ trước), có thể bỏ qua bước initial sync:
+
+```sql
+CREATE SUBSCRIPTION my_subscription
+    CONNECTION 'host=<publisher_hostname> port=5432 dbname=<tên_database> user=<username> password=<password> sslmode=require'
+    PUBLICATION <publication_name>
+    WITH (copy_data = false);
+```
+
+Khi `copy_data = false`, Subscriber chỉ nhận các thay đổi phát sinh sau thời điểm tạo Subscription.
 
 ***
 
