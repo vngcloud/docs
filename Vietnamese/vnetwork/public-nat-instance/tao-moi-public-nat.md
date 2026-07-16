@@ -1,58 +1,58 @@
----
-description: >-
-  Public NAT instance trên GreenNode là một dịch vụ mạng cho phép các instance
-  trong private subnet giao tiếp với các dịch vụ ngoài internet và chặn các truy
-  cập từ internet vào những instance này.
----
-
 # Tạo mới Public NAT
 
 {% hint style="danger" %}
-**Lưu ý quan trọng**
+**Quan trọng**
 
-* _<mark style="color:blue;">NAT và VM đi qua NAT ra internet phải cùng subnet</mark>_
-* _<mark style="color:blue;">Public interface của NAT được tạo tự động khi NAT được tạo thành công, người dùng có thể cấu hình public IP vào các gói</mark>_ [_<mark style="color:blue;">bandwidth</mark>_](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/network/bandwidth-hcm-03/dich-vu-datatransfers-bandwidth) _<mark style="color:blue;">đã mua (nếu có) để tăng băng thông cho NAT.</mark>_
-* _<mark style="color:blue;">Mặc định, NAT được tạo ra sẽ được mở sẵn một số port thông dụng như DNS(53), HTTP(80), HTTPS(443), ICMP packets, cũng như một số port của tại VNG như 10092, 6443. Trong trường hợp khách hàng muốn chỉnh sửa thêm port thì có thể thao tác</mark>_ [_<mark style="color:blue;">tại đây</mark>_](them-xoa-nat-port.md)
-* _<mark style="color:blue;">Trong trường hợp muốn phân giải DNS, người dùng phải đảm bảo</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**route**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">ở trên được cấu hình chính xác đi qua gateway NAT cho IP Resolver</mark>_
+* Mọi máy ảo trong cùng VPC (toàn dải /16) đều ra internet qua NAT được — không bắt buộc nằm trên subnet của NAT. (Ở V1 máy ảo phải cùng subnet với NAT.)
+* Interface public của NAT được tạo tự động khi NAT khởi tạo thành công. Bạn có thể thêm IP public vào gói [băng thông đã mua](https://docs.greennode.ai/vng-cloud-document/vserver/compute-hcm03-1a/vpc/bandwidth/datatransfers-bandwidth-service) (nếu có) để tăng băng thông cho NAT.
+* Mặc định, NAT cho phép một số dịch vụ ra ngoài phổ biến từ VPC: DNS (UDP 53), HTTP (TCP 80), HTTPS (TCP 443) và ICMP (ping). Để mở thêm cổng/giao thức khác, hãy thêm inbound rule (xem [Thêm / Xóa cổng NAT](/broken/pages/b3417cbeb4fa126b1bfc86e92117b56bd6618017)).
+* Với V2, route từ VPC ra internet qua NAT gateway được thêm tự động vào route table của VPC. Bạn không cần cấu hình route trên từng máy.
 {% endhint %}
 
-* Người dùng login vào [https://hcm-3-vnetwork.console.greennode.ai/nat/list](https://hcm-3-vnetwork.console.greennode.ai/nat/list) với region = HCM
-* Chọn menu “**Public NAT Instance**” tại thanh menu bên trái màn hình
-* Chọn chức năng “**Create a Public NAT**”
-* Nhập thông tin NAT theo yêu cầu gồm:
-  * Tên NAT
-  * Gói dịch vụ
-  * VPC, Subnet
-* Kiểm tra thông tin giá dịch vụ tại phần “**Summary**”
-* &#x20;Nhấn “**TẠO PUBLIC NAT**”
+* Đăng nhập https://hcm-3-vnetwork.console.greennode.ai/nat/list với region HCM.
+* Chọn menu "Public NAT", rồi chọn "Create a Public NAT".
 
-Khi NAT được tạo thành công, người dùng sẽ thấy NAT xuất hiện trên màn hình danh sách NAT.
+{% stepper %}
+{% step %}
+## Bước 1 — Basic Information (Thông tin cơ bản)
 
-Người dùng cần thực hiện bước cấu hình các VM nào sẽ đi qua NAT bằng cách sử dụng NAT IP gateway theo cú pháp của OS Linux
+* **Public NAT Name** (Tên NAT) — chỉ cho phép chữ (a–z, A–Z), số (0–9), `_` và `-`; độ dài 5–50 ký tự.
+* **Region** — chọn region (ví dụ HCM-03).
+* **Availability Zone** — chọn zone đặt NAT.
+* **Tags** (tùy chọn) — thêm thẻ key/value để dễ quản lý tài nguyên.
+* **Service Package** (Gói dịch vụ) — chọn gói (ví dụ Standard).
 
-_`ip route add <internet_ip> via <nat_gateway_ip> dev <interface>`._
+<figure><img src="../../.gitbook/assets/create_form_1_1.png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
 
-* `<internet_ip>`: IP internet, ví dụ : 0.0.0.0/0 hoặc default
-* `<nat_gateway_ip>`: IP gate way được cung cấp trên màn hình chi tiết thông tin NAT sau khi NAT được tạo thành công
-* dev `<interface>`: Device private interface của VM kết nối với NAT&#x20;
+{% step %}
+## Bước 2 — Public Interface
 
-Dưới đây là ví dụ add route trên VM với OS Linux theo cú pháp ở trên:&#x20;
+* Public interface dùng để kết nối ra internet. Nó được tạo tự động cho Public NAT — không cần nhập gì.
+{% endstep %}
 
-_`ip route add 0.0.0.0/0 via 10.0.0.100 dev eth0`_
+{% step %}
+## Bước 3 — Network Settings (Cấu hình mạng)
 
-**Trong trường hợp đã tồn tại route ra internet thông qua một gateway IP khác thì người dùng phải phải remove route hiện tại và add route mới đến NAT gateway IP.**&#x20;
+* **VPC** — chọn VPC để tạo Public NAT (dải CIDR như 10.5.0.0/16 hiện bên cạnh tên).
 
-_<mark style="color:purple;">Dưới đây là một ví dụ về route ra internet đã tồn tại qua một gateway IP khác trên OS Linux</mark>_
+<figure><img src="../../.gitbook/assets/create_form_1_2.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (712).png" alt=""><figcaption></figcaption></figure>
+Network Settings
 
-_<mark style="color:purple;">Sau khi xóa route đã tồn tại trên VM, add lại route ra internet qua NAT</mark>_
+* Kiểm tra giá ở khung "Summary" bên phải.
+* Nhấn "CREATE A PUBLIC NAT".
 
-<figure><img src="../../.gitbook/assets/image (708).png" alt=""><figcaption></figcaption></figure>
+Khi NAT tạo thành công, nó xuất hiện trong danh sách NAT. Mở NAT để xem chi tiết, gồm NAT Gateway IP và Public IP.
+{% endstep %}
+{% endstepper %}
 
-_<mark style="color:purple;">Kết quả thành công như hình</mark>_
+## Định tuyến (tự động)
 
-<figure><img src="../../.gitbook/assets/image (709).png" alt=""><figcaption></figcaption></figure>
+Với V2 bạn không cần đăng nhập từng máy ảo để thêm route. Khi tạo NAT, GreenNode tự động thêm route mặc định (0.0.0.0/0) trỏ tới NAT gateway vào route table của VPC. Nhờ đó mọi máy ảo trong VPC ra internet qua NAT mà không cần cấu hình thêm.
 
+{% hint style="warning" %}
+**Nếu một máy ảo vẫn không ra được internet**
 
-
+Kiểm tra xem máy ảo có route mặc định riêng trỏ tới gateway khác đè lên route của VPC không. Nếu có, hãy xóa nó để lưu lượng đi theo route NAT đã thêm vào route table VPC.
+{% endhint %}

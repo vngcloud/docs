@@ -12,7 +12,7 @@ description: >-
 
 * _<mark style="color:blue;">NAT và VM đi qua NAT ra internet phải cùng subnet</mark>_
 * _<mark style="color:blue;">Public interface của NAT được tạo tự động khi NAT được tạo thành công, người dùng có thể cấu hình public IP vào các gói</mark>_ [_<mark style="color:blue;">bandwidth</mark>_](https://docs.vngcloud.vn/vng-cloud-document/v/vn/vserver/compute-hcm03-1a/network/bandwidth-hcm-03/dich-vu-datatransfers-bandwidth) _<mark style="color:blue;">đã mua (nếu có) để tăng băng thông cho NAT.</mark>_
-* _<mark style="color:blue;">Mặc định, NAT được tạo ra sẽ được mở sẵn một số port thông dụng như DNS(53), HTTP(80), HTTPS(443), ICMP packets, cũng như một số port của tại VNG như 10092, 6443. Trong trường hợp khách hàng muốn chỉnh sửa thêm port thì có thể thao tác</mark>_ [_<mark style="color:blue;">tại đây</mark>_](../them-xoa-nat-port.md)
+* _<mark style="color:blue;">Mặc định, NAT được tạo ra sẽ được mở sẵn một số port thông dụng như DNS(53), HTTP(80), HTTPS(443), ICMP packets, cũng như một số port của tại VNG như 10092, 6443. Trong trường hợp khách hàng muốn chỉnh sửa thêm port thì có thể thao tác</mark>_ [_<mark style="color:blue;">tại đây</mark>_](/broken/pages/v4sNFbglOwORFaile6M4)
 * _<mark style="color:blue;">Trong trường hợp muốn phân giải DNS, người dùng phải đảm bảo</mark>_ _<mark style="color:blue;">**route**</mark>_ _<mark style="color:blue;">ở trên được cấu hình chính xác đi qua gateway NAT cho IP Resolver</mark>_
 {% endhint %}
 
