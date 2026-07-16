@@ -4,8 +4,8 @@
 **Quan trọng**
 
 * Mọi máy ảo trong cùng VPC (toàn dải /16) đều ra internet qua NAT được — không bắt buộc nằm trên subnet của NAT. (Ở V1 máy ảo phải cùng subnet với NAT.)
-* Interface public của NAT được tạo tự động khi NAT khởi tạo thành công. Bạn có thể thêm IP public vào gói [băng thông đã mua](https://docs.greennode.ai/vng-cloud-document/vserver/compute-hcm03-1a/vpc/bandwidth/datatransfers-bandwidth-service) (nếu có) để tăng băng thông cho NAT.
-* Mặc định, NAT cho phép một số dịch vụ ra ngoài phổ biến từ VPC: DNS (UDP 53), HTTP (TCP 80), HTTPS (TCP 443) và ICMP (ping). Để mở thêm cổng/giao thức khác, hãy thêm inbound rule (xem [Thêm / Xóa cổng NAT](/broken/pages/b3417cbeb4fa126b1bfc86e92117b56bd6618017)).
+* Interface public của NAT được tạo tự động khi NAT khởi tạo thành công. Bạn có thể thêm IP public vào gói [băng thông đã mua](https://docs.greennode.ai/vn/vserver/compute-hcm03-1a/network/bandwidth-hcm-03/dich-vu-datatransfers-bandwidth) (nếu có) để tăng băng thông cho NAT.
+* Mặc định, NAT cho phép một số dịch vụ ra ngoài phổ biến từ VPC: DNS (UDP 53), HTTP (TCP 80), HTTPS (TCP 443) và ICMP (ping). Để mở thêm cổng/giao thức khác, hãy thêm inbound rule (xem [Thêm / Xóa cổng NAT](https://docs.greennode.ai/vn/vnetwork/public-nat-instance/them-xoa-nat-port)).
 * Với V2, route từ VPC ra internet qua NAT gateway được thêm tự động vào route table của VPC. Bạn không cần cấu hình route trên từng máy.
 {% endhint %}
 
