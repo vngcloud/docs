@@ -24,6 +24,14 @@ V2 hoạt động theo cặp dự phòng (active/standby) và tự động chuy�
 Ở V1, chỉ các máy ảo **cùng subnet** với NAT mới đi ra internet qua NAT được. Ở V2, **mọi máy ảo trong cùng VPC (toàn dải /16)** đều có thể ra internet qua NAT — không chỉ subnet của NAT.
 {% endhint %}
 
+{% hint style="info" %}
+**Phân biệt V1 và V2**
+
+Trong danh sách **Public NAT**, xem cột **HA**: **HA = Yes** nghĩa là NAT thuộc **V2** (tính sẵn sàng cao); **HA = No** nghĩa là NAT **V1**.
+{% endhint %}
+
+_Cột HA trên danh sách Public NAT: Yes = V2, No = V1_
+
 ## Bảng so sánh tính năng
 
 | Tính năng                               | V1 (cũ)                 | V2                                    |
@@ -34,5 +42,3 @@ V2 hoạt động theo cặp dự phòng (active/standby) và tự động chuy�
 | Interface public                        | Tự động tạo             | Tự động tạo                           |
 | Dịch vụ mở sẵn (từ VPC của bạn)         | DNS, HTTP, HTTPS, ICMP  | DNS, HTTP, HTTPS, ICMP                |
 | Thêm / xóa inbound rule                 | Có                      | Có                                    |
-
-**Lưu ý:** Để xem toàn bộ tài liệu, tham khảo [llms.txt index](https://docs.greennode.ai/llms.txt). Có thể xem bản Markdown của bất kỳ trang nào bằng cách thêm `.md` vào cuối URL.
