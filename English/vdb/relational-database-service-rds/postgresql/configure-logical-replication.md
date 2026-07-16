@@ -202,9 +202,20 @@ CREATE SUBSCRIPTION my_subscription
 | `sslmode` | SSL encryption mode |
 | `publication_name` | Publication name on Publisher |
 
-{% hint style="warning" %}
-After creating the Subscription, PostgreSQL performs an **initial sync** — copying all existing data from the Publisher to the Subscriber. This may take minutes to hours depending on data size.
+{% hint style="info" %}
+By default, PostgreSQL performs an **initial sync**: copying all existing data from the Publisher to the Subscriber before switching to streaming new changes.
 {% endhint %}
+
+If the Subscriber already has data (for example, restored earlier via `pg_dump`), you can skip the initial sync:
+
+```sql
+CREATE SUBSCRIPTION my_subscription
+    CONNECTION 'host=<publisher_hostname> port=5432 dbname=<database_name> user=<username> password=<password> sslmode=require'
+    PUBLICATION <publication_name>
+    WITH (copy_data = false);
+```
+
+When `copy_data = false`, the Subscriber only receives changes that occur after the Subscription is created.
 
 ---
 
