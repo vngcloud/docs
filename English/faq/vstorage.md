@@ -22,7 +22,7 @@ When downloading objects from the vStorage storage service, if you encounter an 
 
 Regarding URI encoding/decoding, you can refer to the following links:
 
-[https://www.urlencoder.io/java/](https://www.urlencoder.io/java/)&#x20;
+[https://www.urlencoder.io/java/](https://www.urlencoder.io/java/)
 
 [https://www.urlencoder.io/php/](https://www.urlencoder.io/php/)
 
@@ -35,7 +35,7 @@ Currently, vStorage is compatible with user-side tools such as:
 * GUI-based user tools: Cyberduck, S3 Browser
 * CLI-based user tools: Swift CLI, Rclone, S3cmd, Duplicity
 
-&#x20;Please refer to the documentation on working with [3rd party softwares](/broken/pages/u9RiIiSIkx9miXFDZBeY) for more details.
+Please refer to the documentation on working with [3rd party softwares](/broken/pages/u9RiIiSIkx9miXFDZBeY) for more details.
 
 ### \[vStorage] Why do I see my project missing when I check vStorage?
 
@@ -57,7 +57,7 @@ Please access the administration page and delete the projects that are no longer
 
 There could be various reasons for this error, but the quickest solution is to delete the problematic file and then upload the desired files again.
 
-### \[vStorage] I've just created storage on vngcloud, how do I upload files or folders?
+### \[vStorage] I've just created storage on GreenNode, how do I upload files or folders?
 
 Please refer to the upload file guide at [Upload Objects](/broken/pages/vR1QhBvJOdiBR1N8FZ4g) and the folder operation guide at [Create Folder](/broken/pages/z7w5mPSUxLBlrSDfyMRw).
 
@@ -98,6 +98,6 @@ For Archive storage class, request fees are incurred when you interact with obje
 * HEAD: Similar to GET but the response does not include a body, only HTTP headers. For example, Content-Type, Accept-Encoding, Accept-Charset.
 * POST: Sending metadata information, object content (data) to the server. For example, uploading a file to the server.
 * PUT: Overwriting all information of the object with what is sent to the server. For example, overwriting the content of an object previously uploaded to the server.
-* DELETE: Deleting the object from the server. For example, deleting an object previously uploaded to vStorage.&#x20;
+* DELETE: Deleting the object from the server. For example, deleting an object previously uploaded to vStorage.
 
 You can also refer to our billing guide at [Billing management](../billing-management/) on GreenNode for more details.
