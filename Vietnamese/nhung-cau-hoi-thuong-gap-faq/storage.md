@@ -26,12 +26,12 @@ Liên quan đến encode/ decode URI, quý khách có thể tham khảo các lin
 
 ### \[vStorage] Tôi đang sử dụng vStorage tôi thấy website còn hạn chế tôi muốn tool sử dụng kết nối tới storage để upload file và tạo folder được không?
 
-Hiện tại vStorage tương thích với các công cụ phía người dùng như:&#x20;
+Hiện tại vStorage tương thích với các công cụ phía người dùng như:
 
 * SDK S3 AWS ​
 * SDK SWIFT ​
 * Công cụ phía người dùng dạng GUI: Cyberduck, S3 Browser.​
-* Công cụ phía người dùng dạng CLI: Swift CLI, Rclone, S3cmd, Duplicity.&#x20;
+* Công cụ phía người dùng dạng CLI: Swift CLI, Rclone, S3cmd, Duplicity.
 
 Quý khách vui lòng xem tài liệu hướng dẫn làm việc với 3rd party softwares tại [3rd party softwares](../vstorage/object-storage/vstorage-hcm03/3rd-party-softwares/).
 
@@ -55,7 +55,7 @@ Quý khách vui lòng truy cập vào trang quản trị và xóa project không
 
 Có nhiều nguyên nhân có thể gây ra lỗi này nhưng chúng tôi gợi ý cách nhanh nhất để quý khách xử lý lỗi là quý khách thực hiện xóa file lỗi sau đó tải lên lại các file mà quý khách mong muốn.
 
-### \[vStorage] Mình mới tạo storage trên vngcloud, giờ làm sao để upload file hoặc folder lên
+### \[vStorage] Mình mới tạo storage trên GreenNode, giờ làm sao để upload file hoặc folder lên
 
 Quý khách vui lòng tham khảo link hướng dẫn tải lên file tại [Tải lên tệp tin](../vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-directory-va-object/tai-len-tep-tin.md) và hướng dẫn làm việc với folder tại [Tạo folder](../vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-directory-va-object/lam-viec-voi-directory.md).
 
@@ -78,7 +78,7 @@ Bạn có thể phân quyền với các cấp độ object/ directory/ containe
 
 ### \[vStorage] Có thể mount vStorage thành 1 ổ cứng trên vServer để sử dụng như 1 ổ volume data được không?
 
-Bạn có thể sử dụng các 3rd party software như Rclone / S3cmd có thể thiết lập mount vStorage để sử dụng như ổ mạng. Chi tiết xem hướng dẫn [tại đây](../vstorage/object-storage/vstorage-hcm03/tinh-huong-su-dung-use-case/migrate-du-lieu-migrate-data/rclone-mount-vstorage-len-window-server.md)  hoặc [tại đây](../vstorage/object-storage/vstorage-hcm03/tinh-huong-su-dung-use-case/migrate-du-lieu-migrate-data/rclone-mount-vstorage-thanh-local-drive-tren-linux.md) nếu bạn sử dụng Linux.
+Bạn có thể sử dụng các 3rd party software như Rclone / S3cmd có thể thiết lập mount vStorage để sử dụng như ổ mạng. Chi tiết xem hướng dẫn [tại đây](../vstorage/object-storage/vstorage-hcm03/tinh-huong-su-dung-use-case/migrate-du-lieu-migrate-data/rclone-mount-vstorage-len-window-server.md) hoặc [tại đây](../vstorage/object-storage/vstorage-hcm03/tinh-huong-su-dung-use-case/migrate-du-lieu-migrate-data/rclone-mount-vstorage-thanh-local-drive-tren-linux.md) nếu bạn sử dụng Linux.
 
 ### \[vStorage] Tôi có thể xem traffic và request sử dụng thực tế hằng tháng ở đâu? Có hỗ trợ xem realtime không?
 
@@ -90,7 +90,7 @@ Traffic đi ra khỏi lãnh thổ Việt Nam được tính là traffic quốc t
 
 ### \[vStorage] Cách tính phí request của vStorage được tính theo cách nào?
 
-Đối với storage class loại Archive, sẽ có phát sinh request khi bạn tương tác với object. Khi lượng request này vượt khỏi mốc miễn phí (mốc được thiết lập sẵn bởi chúng tôi và được thể hiện trên giao diện khi bạn [Khởi tạo project](../vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-project/khoi-tao-project.md)) thì lượng request vượt mức này sẽ được thống kê và tính phí bổ sung trên 1 bill phí vượt mức vào cuối tháng. \
+Đối với storage class loại Archive, sẽ có phát sinh request khi bạn tương tác với object. Khi lượng request này vượt khỏi mốc miễn phí (mốc được thiết lập sẵn bởi chúng tôi và được thể hiện trên giao diện khi bạn [Khởi tạo project](../vstorage/object-storage/vstorage-hcm03/cac-tinh-nang-cua-vstorage/lam-viec-voi-project/khoi-tao-project.md)) thì lượng request vượt mức này sẽ được thống kê và tính phí bổ sung trên 1 bill phí vượt mức vào cuối tháng.\
 Các hành động tính phí theo request bao gồm:
 
 * GET: được sử dụng để lấy thông tin từ server theo URL đã cung cấp. Ví dụ lấy thông tin metadata của danh sách accounts, containers, objects... hay lấy về nội dung (content) của objects.
