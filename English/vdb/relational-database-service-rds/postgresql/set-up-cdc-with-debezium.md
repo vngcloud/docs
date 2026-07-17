@@ -25,15 +25,9 @@ CDC captures all data changes (INSERT, UPDATE, DELETE) from PostgreSQL and strea
 
 ***
 
-## Step 1: Request CDC Activation and Receive Credentials
+## Step 1: Request CDC Activation
 
-Contact **GreenNode Support** to request CDC activation on your cluster. GreenNode Support will create a dedicated user and provide you with a **username** and **password** to configure the Debezium connector.
-
-To change the replication user password, run the following command on the cluster:
-
-```sql
-ALTER USER <username> PASSWORD '<new_password>';
-```
+Contact **GreenNode Support** to request CDC activation on your cluster. GreenNode Support will grant the `REPLICATION` privilege, along with any other privileges needed, directly to your cluster's existing admin account.
 
 {% hint style="warning" %}
 When managing replication slots, do not delete or modify replication slots that do not belong to you. These slots may belong to the system or other Subscriptions — accidentally dropping one may impact the system.
@@ -62,7 +56,7 @@ CDC requires three PostgreSQL parameters to be correctly configured on the sourc
 **Example:** 3-node cluster (2 replicas) + 1 CDC connector → `max_replication_slots = 3`, `max_wal_senders = 3`.
 
 {% hint style="warning" %}
-Changing `wal_level`, `max_replication_slots`, and `max_wal_senders` requires a **cluster restart**. Update all three parameters at the same time to trigger only one restart. See [PostgreSQL Cluster Parameters](https://github.com/vngcloud/docs/blob/main/English/vdb/relational-database-service-rds/postgresql/postgresql-cluster-parameters.md) for instructions.
+Changing `wal_level`, `max_replication_slots`, and `max_wal_senders` requires a **cluster restart**. See [PostgreSQL Cluster Parameters](https://github.com/vngcloud/docs/blob/main/English/vdb/relational-database-service-rds/postgresql/postgresql-cluster-parameters.md) for instructions.
 {% endhint %}
 
 ***
@@ -97,7 +91,7 @@ FROM pg_publication;
 
 The **Debezium PostgreSQL Connector** runs as a _source connector_ inside Kafka Connect: it maintains a connection to the source cluster, watches for data changes in the database, and pushes each change as an event to the corresponding Kafka topic.
 
-Use the **username and password provided by GreenNode** (replication user) to configure the Debezium PostgreSQL Connector:
+Use the **username and password of your admin account** (already granted `REPLICATION` in Step 1) to configure the Debezium PostgreSQL Connector:
 
 ```json
 {
@@ -123,8 +117,8 @@ Use the **username and password provided by GreenNode** (replication user) to co
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `database.hostname`   | Hostname provided by GreenNode                                                                                                                                           |
 | `database.port`       | PostgreSQL connection port                                                                                                                                                |
-| `database.user`       | Username provided by GreenNode                                                                                                                                           |
-| `database.password`   | Password provided by GreenNode                                                                                                                                            |
+| `database.user`       | Username of your admin account                                                                                                                                           |
+| `database.password`   | Password of your admin account                                                                                                                                            |
 | `database.dbname`     | Source database name                                                                                                                                                      |
 | `topic.prefix`        | Prefix for Kafka topic names. Each table is published to `<prefix>.<schema>.<table>` — for example: prefix `pg-cdc` → topic `pg-cdc.public.orders`                       |
 | `plugin.name`         | Logical decoding plugin (built-in since PG 10, no extension needed)                                                                                                       |
@@ -148,6 +142,8 @@ See all options at [Debezium PostgreSQL Connector — Snapshot properties](https
 {% hint style="info" %}
 `plugin.name: pgoutput` is built into PostgreSQL since version 10. No additional extension installation is required.
 {% endhint %}
+
+Once configuration is complete, save it as `connector-config.json`.
 
 ***
 

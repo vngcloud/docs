@@ -23,30 +23,15 @@ GreenNode vDB hỗ trợ Logical Replication cho **PostgreSQL 16 và 17**.
 * **Publisher**: cluster nguồn, chứa dữ liệu gốc. Bạn tạo `PUBLICATION` để chỉ định bảng nào được phép replicate.
 * **Subscriber**: cluster đích, nhận và áp dụng thay đổi. Bạn tạo `SUBSCRIPTION` để kết nối đến Publisher và kéo dữ liệu về.
 
-**Quá trình đồng bộ gồm hai giai đoạn:**
-
-1. **Initial sync (đồng bộ ban đầu)**: Ngay khi bạn tạo Subscription, PostgreSQL tự động sao chép toàn bộ dữ liệu hiện có từ Publisher sang Subscriber — bạn không cần dump và restore dữ liệu thủ công. Quá trình này có thể mất vài phút đến vài giờ tuỳ theo kích thước dữ liệu.
-2. **Streaming (streaming thay đổi liên tục)**: Sau khi initial sync hoàn tất, chỉ các thay đổi phát sinh mới (INSERT, UPDATE, DELETE) được đồng bộ theo thời gian thực.
-
-{% hint style="info" %}
-Bạn **không cần dump dữ liệu** — Logical Replication tự xử lý phần đó. Tuy nhiên bạn **phải tạo sẵn cấu trúc bảng (schema)** trên Subscriber trước khi tạo Subscription, vì PostgreSQL không tự replicate DDL. Xem hướng dẫn tại [Bước B.3](cau-hinh-logical-replication.md#bước-b3-tạo-bảng-trên-subscriber).
-{% endhint %}
-
 ***
 
 ## Phần A: vDB PostgreSQL Cluster là Publisher
 
 > Thực hiện các bước trong phần này nếu cluster GreenNode vDB của bạn là **nguồn dữ liệu** (Publisher).
 
-### Bước A.1: Yêu cầu kích hoạt
+### Bước A.1: Yêu cầu kích hoạt Logical Replication
 
-Liên hệ **GreenNode Support** để yêu cầu kích hoạt tính năng Logical Replication trên cluster của bạn. GreenNode Support sẽ cấu hình và cung cấp **username** và **password** của user replication — thông tin này sẽ được dùng trong connection string khi Subscriber tạo Subscription.
-
-Để đổi password của replication user, chạy lệnh sau trên cluster:
-
-```sql
-ALTER USER <username> PASSWORD '<new_password>';
-```
+Liên hệ **GreenNode Support** để yêu cầu kích hoạt tính năng Logical Replication trên cluster của bạn. GreenNode Support sẽ cấp trực tiếp quyền `REPLICATION` cùng các quyền cần thiết khác cho tài khoản admin hiện có của cluster.
 
 {% hint style="warning" %}
 Khi quản lý Subscription, không xóa hoặc chỉnh sửa các replication slot không thuộc sở hữu của bạn. Các slot này có thể thuộc về hệ thống — xóa nhầm có thể gây ảnh hưởng đến hệ thống.
@@ -66,14 +51,14 @@ Logical Replication yêu cầu ba tham số PostgreSQL được cấu hình đú
 
 | Thành phần                             | Slot + sender cần |
 | -------------------------------------- | ----------------- |
-| Mỗi replica node trong cluster         | 1 + 1             |
-| Mỗi Subscription (logical replication) | 1 + 1             |
-| Mỗi CDC connector (Debezium)           | 1 + 1             |
+| Mỗi replica node trong cluster         | 1 slot + 1 sender            |
+| Mỗi Subscription (logical replication) | 1 slot + 1 sender             |
+| Mỗi CDC connector (Debezium)           | 1 slot + 1 sender             |
 
 **Ví dụ:** cluster 3 node (2 replica) + 1 subscription → `max_replication_slots = 3`, `max_wal_senders = 3`.
 
 {% hint style="warning" %}
-Thay đổi `wal_level`, `max_replication_slots` và `max_wal_senders` yêu cầu **khởi động lại cluster**. Nên cập nhật cả ba tham số cùng một lần để chỉ gây một lần restart. Xem hướng dẫn tại [Cấu hình tham số cho Cluster](https://github.com/vngcloud/docs/blob/main/Vietnamese/vdb/relational-database-service-rds/postgresql/cau-hinh-tham-so-cho-cluster.md).
+Thay đổi `wal_level`, `max_replication_slots` và `max_wal_senders` yêu cầu **khởi động lại cluster**. Xem hướng dẫn tại [Cấu hình tham số cho Cluster](https://github.com/vngcloud/docs/blob/main/Vietnamese/vdb/relational-database-service-rds/postgresql/cau-hinh-tham-so-cho-cluster.md).
 {% endhint %}
 
 ### Bước A.3: Tạo Publication
@@ -103,44 +88,41 @@ FROM pg_publication;
 
 > Thực hiện các bước trong phần này nếu cluster GreenNode vDB của bạn là **đích nhận dữ liệu** (Subscriber).
 
-### Bước B.1: Yêu cầu kích hoạt tính năng Logical Replication
+### Bước B.1: Yêu cầu kích hoạt Logical Replication
 
-Liên hệ **GreenNode Support** để yêu cầu kích hoạt tính năng Logical Replication trên cluster của bạn. GreenNode Support sẽ cấu hình và cung cấp **username** và **password** của user replication — thông tin này sẽ được dùng trong connection string khi Subscriber tạo Subscription.
-
-Để đổi password của replication user, chạy lệnh sau trên cluster:
-
-```sql
-ALTER USER <username> PASSWORD '<new_password>';
-```
+Liên hệ **GreenNode Support** để yêu cầu kích hoạt tính năng Logical Replication trên cluster của bạn. GreenNode Support sẽ cấp trực tiếp quyền `REPLICATION` cùng các quyền cần thiết khác cho tài khoản admin hiện có của cluster.
 
 {% hint style="warning" %}
 Khi quản lý Subscription, không xóa hoặc chỉnh sửa các replication slot không thuộc sở hữu của bạn. Các slot này có thể thuộc về hệ thống — xóa nhầm có thể gây ảnh hưởng đến hệ thống.
 {% endhint %}
 
-### Bước B.2: Cấp quyền CREATE trên schema và database đích
+### Bước B.2: Tạo bảng trên Subscriber
 
-Kết nối đến **Subscriber cluster** bằng tài khoản **owner** của schema và database đích, sau đó chạy các lệnh sau:
+Logical Replication **không tự tạo bảng** trên Subscriber. Trước khi tạo Subscription, bạn phải tạo schema và bảng tương ứng trên Subscriber. 
+
+{% hint style="warning" %}
+Schema và kiểu dữ liệu của bảng trên Subscriber phải **khớp hoàn toàn** với Publisher. Nếu không khớp, Subscription có thể sẽ báo lỗi.
+{% endhint %}
+
+Bạn có thể tạo bảng bằng một trong các cách sau:
+
+#### Tạo bảng thủ công
+
+Viết trực tiếp câu lệnh CREATE TABLE khớp với schema trên Publisher. Phù hợp khi chỉ có vài bảng đơn giản cần replicate.
 
 ```sql
--- Cấp quyền CREATE trên database (bắt buộc để chạy CREATE SUBSCRIPTION)
-GRANT CREATE ON DATABASE <tên_database> TO <username>;
-
--- Cấp quyền USAGE và CREATE trên schema
-GRANT USAGE ON SCHEMA <tên_schema> TO <username>;
-GRANT CREATE ON SCHEMA <tên_schema> TO <username>;
+-- Ví dụ: tạo bảng orders trên Subscriber
+CREATE TABLE orders (
+    id      serial PRIMARY KEY,
+    product text   NOT NULL,
+    qty     int    NOT NULL,
+    ts      timestamptz DEFAULT now()
+);
 ```
 
-{% hint style="info" %}
-`<username>` ở đây là tài khoản dùng để chạy `CREATE TABLE` (Bước B.3) và `CREATE SUBSCRIPTION` (Bước B.4) — không phải replication user trong CONNECTION string (được GreenNode cung cấp ở Bước B.1).
-{% endhint %}
+#### Tạo bảng bằng `pg_dump`
 
-### Bước B.3: Tạo bảng trên Subscriber
-
-Logical Replication **không tự tạo bảng** trên Subscriber. Trước khi tạo Subscription, bạn phải tạo schema và bảng tương ứng trên Subscriber.
-
-{% hint style="info" %}
-**Gợi ý:** Thay vì viết lại thủ công, bạn có thể dùng `pg_dump --schema-only` để dump cấu trúc bảng từ Publisher, kiểm tra file, rồi áp dụng lên Subscriber bằng `psql -f`.
-{% endhint %}
+Thay vì viết lại thủ công, bạn có thể dùng `pg_dump --schema-only` để dump cấu trúc bảng từ Publisher, kiểm tra file, rồi áp dụng lên Subscriber bằng `psql -f`.
 
 ```bash
 # Bước 1: dump schema từ Publisher ra file
@@ -164,30 +146,14 @@ psql \
 
 Nếu muốn dump nhiều bảng, thêm `--table` cho từng bảng. Bỏ flag `--table` để dump toàn bộ schema.
 
-**Hoặc tạo bảng thủ công:**
+### Bước B.3: Tạo Subscription
 
-```sql
--- Ví dụ: tạo bảng orders trên Subscriber
-CREATE TABLE orders (
-    id      serial PRIMARY KEY,
-    product text   NOT NULL,
-    qty     int    NOT NULL,
-    ts      timestamptz DEFAULT now()
-);
-```
-
-{% hint style="warning" %}
-Schema và kiểu dữ liệu của bảng trên Subscriber phải **khớp hoàn toàn** với Publisher. Nếu không khớp, Subscription có thể sẽ báo lỗi.
-{% endhint %}
-
-### Bước B.4: Tạo Subscription
-
-1. Kết nối đến **Subscriber cluster** bằng tài khoản GreenNode cung cấp.
+1. Kết nối đến **Subscriber cluster** bằng tài khoản admin đã được cấp quyền `REPLICATION` ở Bước B.1.
 2. Tạo Subscription:
 
 ```sql
 CREATE SUBSCRIPTION my_subscription
-    CONNECTION 'host=<publisher_hostname> port=5432 dbname=<tên_database> user=<username> password=<password> sslmode=require'
+    CONNECTION 'host=<host> port=5432 dbname=<dbname> user=<user> password=<password> sslmode=require'
     PUBLICATION <publication_name>;
 ```
 
@@ -201,15 +167,17 @@ CREATE SUBSCRIPTION my_subscription
 | `sslmode`          | Chế độ mã hóa SSL                            |
 | `publication_name` | Tên publication trên Publisher               |
 
-{% hint style="info" %}
-PostgreSQL sẽ mặc định thực hiện **initial sync**: sao chép toàn bộ dữ liệu hiện có từ Publisher sang Subscriber trước khi chuyển sang đồng bộ các thay đổi mới.
+{% hint style="warning" %}
+`user`/`password` trong CONNECTION string ở trên là tài khoản **của Publisher**, khác với tài khoản Subscriber bạn dùng để kết nối và chạy lệnh tạo Subscription.
 {% endhint %}
+
+PostgreSQL sẽ mặc định thực hiện **initial sync**: sao chép toàn bộ dữ liệu hiện có từ Publisher sang Subscriber trước khi chuyển sang đồng bộ các thay đổi mới.
 
 Nếu Subscriber đã có sẵn dữ liệu (ví dụ được `pg_dump`/restore từ trước), có thể bỏ qua bước initial sync:
 
 ```sql
 CREATE SUBSCRIPTION my_subscription
-    CONNECTION 'host=<publisher_hostname> port=5432 dbname=<tên_database> user=<username> password=<password> sslmode=require'
+    CONNECTION 'host=<host> port=5432 dbname=<dbname> user=<user> password=<password> sslmode=require'
     PUBLICATION <publication_name>
     WITH (copy_data = false);
 ```
