@@ -25,15 +25,9 @@ CDC capture toàn bộ thay đổi dữ liệu (INSERT, UPDATE, DELETE) từ Pos
 
 ***
 
-## Bước 1: Yêu cầu kích hoạt CDC và nhận thông tin đăng nhập
+## Bước 1: Yêu cầu kích hoạt CDC
 
-Liên hệ **GreenNode Support** để yêu cầu kích hoạt tính năng CDC trên cluster của bạn. GreenNode Support sẽ tạo user chuyên dụng và cung cấp lại cho bạn **username** và **password** để cấu hình Debezium connector.
-
-Để đổi password của replication user, chạy lệnh sau trên cluster:
-
-```sql
-ALTER USER <username> PASSWORD '<new_password>';
-```
+Liên hệ **GreenNode Support** để yêu cầu kích hoạt tính năng CDC trên cluster của bạn. GreenNode Support sẽ cấp trực tiếp quyền `REPLICATION` cùng các quyền cần thiết khác cho tài khoản admin hiện có của cluster.
 
 {% hint style="warning" %}
 Trong quá trình quản lý replication slot, không xóa hoặc chỉnh sửa các replication slot không thuộc sở hữu của bạn. Các slot này có thể thuộc về hệ thống — xóa nhầm có thể gây ảnh hưởng đến hệ thống.
@@ -55,14 +49,14 @@ CDC yêu cầu ba tham số PostgreSQL được cấu hình đúng trên cluster
 
 | Thành phần                             | Slot + sender cần |
 | -------------------------------------- | ----------------- |
-| Mỗi replica node trong cluster         | 1 + 1             |
-| Mỗi Subscription (logical replication) | 1 + 1             |
-| Mỗi CDC connector (Debezium)           | 1 + 1             |
+| Mỗi replica node trong cluster         | 1 slot + 1 sender             |
+| Mỗi Subscription (logical replication) | 1 slot + 1 sender             |
+| Mỗi CDC connector (Debezium)           | 1 slot + 1 sender             |
 
 **Ví dụ:** cluster 3 node (2 replica) + 1 CDC connector → `max_replication_slots = 3`, `max_wal_senders = 3`.
 
 {% hint style="warning" %}
-Thay đổi `wal_level`, `max_replication_slots` và `max_wal_senders` yêu cầu **khởi động lại cluster**. Nên cập nhật cả ba tham số cùng một lần để chỉ gây một lần restart. Xem hướng dẫn tại [Cấu hình tham số cho Cluster](https://github.com/vngcloud/docs/blob/main/Vietnamese/vdb/relational-database-service-rds/postgresql/cau-hinh-tham-so-cho-cluster.md).
+Thay đổi `wal_level`, `max_replication_slots` và `max_wal_senders` yêu cầu **khởi động lại cluster**. Xem hướng dẫn tại [Cấu hình tham số cho Cluster](https://github.com/vngcloud/docs/blob/main/Vietnamese/vdb/relational-database-service-rds/postgresql/cau-hinh-tham-so-cho-cluster.md).
 {% endhint %}
 
 ***
@@ -95,9 +89,9 @@ FROM pg_publication;
 
 **Kafka Connect** là framework (đi kèm Kafka) dùng để chạy các _connector_ — tiến trình di chuyển dữ liệu giữa Kafka và hệ thống bên ngoài. Connector được nạp vào Kafka Connect dưới dạng cấu hình JSON và quản lý qua **REST API**.
 
-**Debezium PostgreSQL Connector** chạy như một _source connector_ bên trong Kafka Connect: nó giữ kết nối tới cluster nguồn, theo dõi dữ liệu trong database và đẩy mỗi thay đổi thành event vào Kafka topic tương ứng.
+**Debezium PostgreSQL Connector** chạy như một _source connector_ bên trong Kafka Connect: nó giữ kết nối tới PostgreSQL cluster nguồn, theo dõi dữ liệu trong database và đẩy mỗi thay đổi thành event vào Kafka topic tương ứng.
 
-Sử dụng **username và password do GreenNode cung cấp** (user replication) để cấu hình Debezium PostgreSQL Connector:
+Sử dụng **username và password của tài khoản admin** (đã được cấp quyền `REPLICATION` ở Bước 1) để cấu hình Debezium PostgreSQL Connector:
 
 ```json
 {
@@ -123,8 +117,8 @@ Sử dụng **username và password do GreenNode cung cấp** (user replication)
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `database.hostname`   | Hostname do GreenNode cung cấp                                                                                                                                                           |
 | `database.port`       | Port kết nối PostgreSQL                                                                                                                                                                  |
-| `database.user`       | Username do GreenNode cung cấp                                                                                                                                                           |
-| `database.password`   | Password do GreenNode cung cấp                                                                                                                                                            |
+| `database.user`       | Username của tài khoản admin                                                                                                                                                              |
+| `database.password`   | Password của tài khoản admin                                                                                                                                                              |
 | `database.dbname`     | Tên database nguồn                                                                                                                                                                        |
 | `topic.prefix`        | Tiền tố cho tên Kafka topic. Mỗi bảng sẽ được publish vào topic `<prefix>.<schema>.<table>` — ví dụ: prefix `pg-cdc` → topic `pg-cdc.public.orders`                                      |
 | `plugin.name`         | Plugin logical decoding (built-in từ PG 10, không cần cài thêm)                                                                                                                           |
@@ -148,6 +142,8 @@ Xem đầy đủ các tùy chọn tại [Debezium PostgreSQL Connector — Snaps
 {% hint style="info" %}
 `plugin.name: pgoutput` là plugin tích hợp sẵn trong PostgreSQL từ phiên bản 10. Bạn không cần cài thêm extension nào.
 {% endhint %}
+
+Sau khi đã hoàn tất cấu hình, lưu thành file `connector-config.json`.
 
 ***
 

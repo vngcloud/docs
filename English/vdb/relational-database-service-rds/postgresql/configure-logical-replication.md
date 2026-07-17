@@ -23,30 +23,15 @@ GreenNode vDB supports Logical Replication for **PostgreSQL 16 and 17** only.
 * **Publisher**: the source cluster holding the original data. You create a `PUBLICATION` to define which tables are replicated.
 * **Subscriber**: the destination cluster receiving changes. You create a `SUBSCRIPTION` to connect to the Publisher and pull data.
 
-**Synchronization happens in two phases:**
-
-1. **Initial sync**: As soon as you create a Subscription, PostgreSQL automatically copies all existing data from Publisher to Subscriber — you do not need to manually dump and restore data. This may take minutes to hours depending on data size.
-2. **Streaming**: After the initial sync completes, only incremental changes (INSERT, UPDATE, DELETE) are replicated in real time.
-
-{% hint style="info" %}
-You **do not need to dump data** — Logical Replication handles that automatically. However, you **must create the table structure (schema) on the Subscriber** before creating the Subscription, because PostgreSQL does not replicate DDL. See [Step B.3](configure-logical-replication.md#step-b3-create-tables-on-subscriber) for instructions.
-{% endhint %}
-
 ***
 
 ## Part A: vDB PostgreSQL Cluster as Publisher
 
 > Follow the steps in this section if your GreenNode vDB cluster is the **data source** (Publisher).
 
-### Step A.1: Request Activation
+### Step A.1: Request Logical Replication Activation
 
-Contact **GreenNode Support** to request Logical Replication activation on your cluster. GreenNode Support will configure the cluster and provide you with a **username** and **password** for the replication user — this information will be used in the connection string when the Subscriber creates its Subscription.
-
-To change the replication user password, run the following command on the cluster:
-
-```sql
-ALTER USER <username> PASSWORD '<new_password>';
-```
+Contact **GreenNode Support** to request Logical Replication activation on your cluster. GreenNode Support will grant the `REPLICATION` privilege, along with any other privileges needed, directly to your cluster's existing admin account.
 
 {% hint style="warning" %}
 When managing Subscriptions, do not delete or modify replication slots that do not belong to you. These slots may belong to the system or other Subscriptions — accidentally dropping one will cause replication loss immediately.
@@ -66,14 +51,14 @@ Logical Replication requires three PostgreSQL parameters to be correctly configu
 
 | Component                               | Slots + senders needed |
 | --------------------------------------- | ---------------------- |
-| Each replica node in the cluster        | 1 + 1                  |
-| Each Subscription (logical replication) | 1 + 1                  |
-| Each CDC connector (Debezium)           | 1 + 1                  |
+| Each replica node in the cluster        | 1 slot + 1 sender      |
+| Each Subscription (logical replication) | 1 slot + 1 sender      |
+| Each CDC connector (Debezium)           | 1 slot + 1 sender      |
 
 **Example:** 3-node cluster (2 replicas) + 1 subscription → `max_replication_slots = 3`, `max_wal_senders = 3`.
 
 {% hint style="warning" %}
-Changing `wal_level`, `max_replication_slots`, and `max_wal_senders` requires a **cluster restart**. Update all three parameters at the same time to trigger only one restart. See [PostgreSQL Cluster Parameters](https://github.com/vngcloud/docs/blob/main/English/vdb/relational-database-service-rds/postgresql/postgresql-cluster-parameters.md) for instructions.
+Changing `wal_level`, `max_replication_slots`, and `max_wal_senders` requires a **cluster restart**. See [PostgreSQL Cluster Parameters](https://github.com/vngcloud/docs/blob/main/English/vdb/relational-database-service-rds/postgresql/postgresql-cluster-parameters.md) for instructions.
 {% endhint %}
 
 ### Step A.3: Create a Publication
@@ -105,42 +90,39 @@ FROM pg_publication;
 
 ### Step B.1: Request Logical Replication Activation
 
-Contact **GreenNode Support** to request Logical Replication activation on your cluster. GreenNode Support will configure the cluster and provide you with a **username** and **password** for the replication user — this information will be used in the connection string when the Subscriber creates its Subscription.
-
-To change the replication user password, run the following command on the cluster:
-
-```sql
-ALTER USER <username> PASSWORD '<new_password>';
-```
+Contact **GreenNode Support** to request Logical Replication activation on your cluster. GreenNode Support will grant the `REPLICATION` privilege, along with any other privileges needed, directly to your cluster's existing admin account.
 
 {% hint style="warning" %}
 When managing Subscriptions, do not delete or modify replication slots that do not belong to you. These slots may belong to the system or other Subscriptions — accidentally dropping one will cause replication loss immediately.
 {% endhint %}
 
-### Step B.2: Grant CREATE on Schema and Target Database
-
-Connect to the **Subscriber cluster** using the **owner** account of the target database and schema, then run the following commands:
-
-```sql
--- Grant CREATE on the database (required to run CREATE SUBSCRIPTION)
-GRANT CREATE ON DATABASE <database_name> TO <username>;
-
--- Grant USAGE and CREATE on the schema
-GRANT USAGE ON SCHEMA <schema_name> TO <username>;
-GRANT CREATE ON SCHEMA <schema_name> TO <username>;
-```
-
-{% hint style="info" %}
-`<username>` here is the account used to run `CREATE TABLE` (Step B.3) and `CREATE SUBSCRIPTION` (Step B.4) — not the replication user in the CONNECTION string (provided by GreenNode in Step B.1).
-{% endhint %}
-
-### Step B.3: Create Tables on Subscriber
+### Step B.2: Create Tables on Subscriber
 
 Logical Replication **does not create tables automatically** on the Subscriber. You must create the schema and tables on the Subscriber before creating the Subscription.
 
-{% hint style="info" %}
-**Tip:** Instead of writing DDL by hand, use `pg_dump --schema-only` to dump the table structure from the Publisher, review the file, then apply it to the Subscriber with `psql -f`.
+{% hint style="warning" %}
+The schema and data types of tables on the Subscriber must **exactly match** the Publisher. A mismatch will cause the Subscription to fail when applying changes.
 {% endhint %}
+
+You can create the tables using one of the following methods:
+
+#### Create the table manually
+
+Write the CREATE TABLE statement directly, matching the Publisher's schema. Suitable when only a few simple tables need to be replicated.
+
+```sql
+-- Example: create the orders table on Subscriber
+CREATE TABLE orders (
+    id      serial PRIMARY KEY,
+    product text   NOT NULL,
+    qty     int    NOT NULL,
+    ts      timestamptz DEFAULT now()
+);
+```
+
+#### Create the table using `pg_dump`
+
+Instead of writing DDL by hand, use `pg_dump --schema-only` to dump the table structure from the Publisher, review the file, then apply it to the Subscriber with `psql -f`.
 
 ```bash
 # Step 1: dump schema from Publisher to a file
@@ -153,7 +135,6 @@ pg_dump \
   -f schema.sql
 
 # Step 2: inspect the file before applying (optional)
-# cat schema.sql
 
 # Step 3: apply to Subscriber
 psql \
@@ -165,30 +146,14 @@ psql \
 
 To dump multiple tables, repeat `--table` for each one. Omit `--table` to dump the entire schema.
 
-**Or create the table manually:**
+### Step B.3: Create a Subscription
 
-```sql
--- Example: create the orders table on Subscriber
-CREATE TABLE orders (
-    id      serial PRIMARY KEY,
-    product text   NOT NULL,
-    qty     int    NOT NULL,
-    ts      timestamptz DEFAULT now()
-);
-```
-
-{% hint style="warning" %}
-The schema and data types of tables on the Subscriber must **exactly match** the Publisher. A mismatch will cause the Subscription to fail when applying changes.
-{% endhint %}
-
-### Step B.4: Create a Subscription
-
-1. Connect to the **Subscriber cluster** using the GreenNode-provided account.
+1. Connect to the **Subscriber cluster** using the admin account granted `REPLICATION` in Step B.1.
 2. Create the Subscription:
 
 ```sql
 CREATE SUBSCRIPTION my_subscription
-    CONNECTION 'host=<publisher_hostname> port=5432 dbname=<database_name> user=<username> password=<password> sslmode=require'
+    CONNECTION 'host=<host> port=5432 dbname=<dbname> user=<user> password=<password> sslmode=require'
     PUBLICATION <publication_name>;
 ```
 
@@ -202,15 +167,17 @@ CREATE SUBSCRIPTION my_subscription
 | `sslmode`          | SSL encryption mode                           |
 | `publication_name` | Publication name on Publisher                 |
 
-{% hint style="info" %}
-By default, PostgreSQL performs an **initial sync**: copying all existing data from the Publisher to the Subscriber before switching to streaming new changes.
+{% hint style="warning" %}
+The `user`/`password` in the CONNECTION string above is the **Publisher's account**, not the Subscriber account you used to connect and run the CREATE SUBSCRIPTION command.
 {% endhint %}
+
+By default, PostgreSQL performs an **initial sync**: copying all existing data from the Publisher to the Subscriber before switching to streaming new changes.
 
 If the Subscriber already has data (for example, restored earlier via `pg_dump`), you can skip the initial sync:
 
 ```sql
 CREATE SUBSCRIPTION my_subscription
-    CONNECTION 'host=<publisher_hostname> port=5432 dbname=<database_name> user=<username> password=<password> sslmode=require'
+    CONNECTION 'host=<host> port=5432 dbname=<dbname> user=<user> password=<password> sslmode=require'
     PUBLICATION <publication_name>
     WITH (copy_data = false);
 ```
