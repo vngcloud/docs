@@ -10,7 +10,7 @@ Sử dụng tài liệu này để hiểu thêm về tính năng tự động gi
 
 #### **2. Hướng dẫn bật/tắt tính năng "Tự động gia hạn"** <a href="#tudonggiahantainguyen-chinhsachvadieukhoan-2.huongdanbat-tattinhnang-tudonggiahan" id="tudonggiahantainguyen-chinhsachvadieukhoan-2.huongdanbat-tattinhnang-tudonggiahan"></a>
 
-**2.1 Đối với các sản phẩm dịch vụ vStorage:** [**https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/cach-tinh-phi**](https://docs.vngcloud.vn/vng-cloud-document/vn/vstorage/object-storage/cach-tinh-phi)
+**2.1 Đối với các sản phẩm dịch vụ vStorage:** [**https://docs.greennode.ai/vn/vstorage/object-storage/cach-tinh-phi**](https://docs.greennode.ai/vn/vstorage/object-storage/cach-tinh-phi)
 
 **2.2 Đối với các sản phẩm, dịch vụ vServer**
 
@@ -23,7 +23,7 @@ Sử dụng tài liệu này để hiểu thêm về tính năng tự động gi
 
     <figure><img src="https://docs.vngcloud.vn/download/attachments/49649295/image2023-12-12_10-49-53.png?version=1&#x26;modificationDate=1702352993000&#x26;api=v2" alt=""><figcaption></figcaption></figure>
 * **Bật/Tắt trong quá trình sử dụng dịch vụ**<br>
-  * Bước 1: Điều hướng đến trang Resource Billing trong dịch vụ vServer: [https://hcm-3.console.greennode.ai/vserver/billing](https://hcm-3.console.greennode.ai/vserver/billing)
+  * Bước 1: Điều hướng đến trang Resource Billing trong dịch vụ vServer: [https://dashboard.console.greennode.ai/resource](https://dashboard.console.greennode.ai/resource)
   * Bước 2: Nhấn vào biểu tượng ba chấm tại vị trí tài nguyên cần thực hiện thay đổi. Xem hình bên dưới
     * Chọn **"Tự động gia hạn"** để bật tính năng tự động gia hạn nếu chưa bật khi khởi tạo
     * Chọn **"Cập nhật tự động gia hạn"** để điều chỉnh thời gian sử dụng tài nguyên được áp dụng khi hệ thống thực hiện tự động gia hạn
@@ -47,7 +47,7 @@ Tự động gia hạn tài nguyên là **tính năng của hệ thống**, giú
 
 **Điều khoản áp dụng dành cho tính năng "Tự động gia hạn" trên GreenNode như sau:**
 
-* Tài nguyên được mặc định **gia hạn thêm 1 tháng**, kể từ thời điểm kết thúc.  (Hệ thống sẽ thực hiện gia hạn tài nguyên vào 8:00 AM)
+* Tài nguyên được mặc định **gia hạn thêm 1 tháng**, kể từ thời điểm kết thúc. (Hệ thống sẽ thực hiện gia hạn tài nguyên vào 8:00 AM)
 * Người dùng cần chuẩn bị đủ số dư credit khả dụng theo như thông báo để hệ thống có thể tiến hành gia hạn
 * Hệ thống chính thức thực hiện gia hạn vào các mốc thời gian: trước 7 ngày, trước 4 ngày, trước 1 ngày và ngay ngày hết hạn của tài nguyên. **Lưu ý, tính năng auto-renew chỉ áp dụng cho tài nguyên đã được Khách hàng lựa chọn cho phép tự động gia hạn và có trạng thái đang hoạt động (active). Trường hợp tài nguyên đã hết hạn hoặc bị xóa trước các mốc thời gian hệ thống thực hiện thì sẽ không tự động gia hạn.**
   * Cách tính giá khi hệ thống tự động gia hạn không khác biệt so với việc người dùng chủ động gia hạn tài nguyên, tham khảo thêm [tại đây](gia-han-tai-nguyen.md)

@@ -21,7 +21,7 @@ Lúc này, hệ thống đã ghi nhận tài nguyên hoàn tất quá trình chu
 
 Nhằm giúp người dùng có cái nhìn chi tiết hơn về quá trình trên, dưới đây là các bước hướng dẫn chuyển đổi một loại tài nguyên, cụ thể là Cluster (trong nhóm dịch vụ K8s/vContainer) sang dịch vụ trả phí:
 
-* **Bước 1:** Truy cập vào trang web quản lý tài nguyên tại vServer portal [https://hcm-3.console.greennode.ai/vserver/billing](https://hcm-3.console.greennode.ai/vserver/billing)
+* **Bước 1:** Truy cập vào trang web quản lý tài nguyên tại vServer portal [https://dashboard.console.greennode.ai/resource](https://dashboard.console.greennode.ai/resource)
 * **Bước 2:** Chọn cluster POC cần chuyển đổi (sử dụng thanh công cụ tìm kiếm, tìm theo tên/định danh tài nguyên để lọc ra cluster cần tìm). Tham khảo hình bên dưới:
 
 <figure><img src="https://docs.vngcloud.vn/download/attachments/59804267/image2023-11-29_16-42-44.png?version=1&#x26;modificationDate=1701250964000&#x26;api=v2" alt=""><figcaption></figcaption></figure>

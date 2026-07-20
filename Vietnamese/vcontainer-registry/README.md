@@ -16,7 +16,7 @@ GreenNode xin giới thiệu đến quý khách hàng dịch vụ mới thuộc 
 
 **Bắt đầu như thế nào:**
 
-* **Truy cập Cổng Web:** Đơn giản đăng nhập vào tài khoản GreenNode của bạn và điều hướng đến phần Container Registry để bắt đầu tại [https://vcr.console.greennode.ai/](https://vcr.console.greennode.ai/list)
+* **Truy cập Cổng Web:** Đơn giản đăng nhập vào tài khoản GreenNode của bạn và điều hướng đến phần Container Registry để bắt đầu tại [https://vcr.console.greennode.ai/](https://vcr.console.greennode.ai/repository/list)
 * **Khám phá Dịch Vụ:** Khám phá Container Registry với việc khởi tạo Repository để chứa các container image, sau đó khởi tạo các Repository User để Push/Pull các image để quản lý tại Repository.
 * **Thiết lập Quyền Hạn:** Cấu hình quyền hạn được điều khiển bằng IAM để quản lý truy cập và bảo mật một cách hiệu quả.
 

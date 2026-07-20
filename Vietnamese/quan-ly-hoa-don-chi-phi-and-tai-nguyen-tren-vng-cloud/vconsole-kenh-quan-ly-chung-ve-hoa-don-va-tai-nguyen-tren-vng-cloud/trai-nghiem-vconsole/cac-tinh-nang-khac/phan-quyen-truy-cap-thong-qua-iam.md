@@ -2,7 +2,7 @@
 
 Phân quyền truy cập là yếu tố thiết yếu của bảo mật nhằm xác định đối tượng và điều kiện để truy cập vào một số dữ liệu, ứng dụng và tài nguyên nhất định.
 
-Chính sách kiểm soát truy cập chủ yếu dựa trên các kỹ thuật như xác thực và ủy quyền, cho phép tổ chức xác minh rõ ràng rằng người dùng không bị giả mạo và được cấp mức độ truy cập thích hợp dựa trên thông tin người dùng, vai trò cùng nhiều yếu tố khác.&#x20;
+Chính sách kiểm soát truy cập chủ yếu dựa trên các kỹ thuật như xác thực và ủy quyền, cho phép tổ chức xác minh rõ ràng rằng người dùng không bị giả mạo và được cấp mức độ truy cập thích hợp dựa trên thông tin người dùng, vai trò cùng nhiều yếu tố khác.
 
 Thông qua IAM, người dùng GreenNode, cụ thể là website vConsole có thể chủ động phân quyền hoặc được phân quyền truy cập/hành động trên từng tính năng cụ thể.
 
@@ -34,4 +34,3 @@ Khi đã hiểu rõ về cách hoạt động cũng như sử dụng vIAM, ngư�
 * Bước 5: Attach Policy vừa khởi tạo vào Group Permission / User Account
 * Bước 6: Lúc này, bạn đã hoàn tất việc phân quyền tính năng trên vConsole cho user trên hệ thống IAM. IAM user dùng tài khoản & mật khẩu được cấp đăng nhập vào [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/) và truy cập, sử dụng các tính năng được cấp quyền để sử dụng.
 
-\

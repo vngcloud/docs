@@ -2,7 +2,7 @@
 
 Sử dụng hướng dẫn này để bắt đầu với **vConsole**. Bạn sẽ học cách xem _thống kê, báo cáo chi phí hóa đơn_ theo từng kỳ sử dụng, cũng như các _thống kê, báo cáo về lịch sử thanh toán, thay đổi số dư credit_ liên quan đến việc mua và thay đổi cấu hình dịch vụ các sản phẩm GreenNode Service.
 
-Đối với quý khách hàng chưa sử dụng bất kỳ dịch vụ nào của GreenNode Service (chưa đăng ký tài khoản sử dụng với GreenNode Service), bạn cần đăng ký tài khoản với GreenNode Service [**tại đây**](https://www.vngcloud.vn/) để truy cập đến vConsole.
+Đối với quý khách hàng chưa sử dụng bất kỳ dịch vụ nào của GreenNode Service (chưa đăng ký tài khoản sử dụng với GreenNode Service), bạn cần đăng ký tài khoản với GreenNode Service [**tại đây**](https://register.greennode.ai/signup?hl=en) để truy cập đến vConsole.
 
 ## Tổng quan <a href="#trainghiemvconsole-tongquan" id="trainghiemvconsole-tongquan"></a>
 
@@ -55,7 +55,7 @@ Sử dụng hướng dẫn này để bắt đầu với **vConsole**. Bạn s�
 
 ### **Trình khám phá chi phí / Cost explorer** <a href="#trainghiemvconsole-trinhkhamphachiphi-costexplorer" id="trainghiemvconsole-trinhkhamphachiphi-costexplorer"></a>
 
-1. Truy cập vào trang Trình khám phá chi phí / Cost explorer tại: [https://dashboard.console.greennode.ai/cost-explorer](https://dashboard.console.greennode.ai/credit-history)
+1. Truy cập vào trang Trình khám phá chi phí / Cost explorer tại: [https://dashboard.console.greennode.ai/cost-explorer](https://dashboard.console.greennode.ai/cost-explorer)
 2. Tìm hiểu thêm các tính năng của trang Trình khám phá chi phí, mời tham khảo [**tại đây**](trinh-kham-pha-chi-phi.md)
 
 <br>
