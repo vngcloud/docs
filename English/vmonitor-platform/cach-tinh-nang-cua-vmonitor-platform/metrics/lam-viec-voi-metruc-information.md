@@ -4,7 +4,7 @@
 
 After you have successfully set up the Metric Agent on the Server or you have used other Product Metrics, you can now view the metrics information pushed to the vMonitor Platform system by:
 
-1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.greennode.ai/signup?hl=en) .
 2. Select the Metric folder **.**
 3. Select **Information** .
 4. The system displays a list of **metrics** pushed in:
@@ -21,7 +21,7 @@ After you have successfully set up the Metric Agent on the Server or you have us
 
 To view detailed information about a metric pushed to vMonitor Platform, follow the instructions below:
 
-1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.greennode.ai/signup?hl=en) .
 2. Select the Metric folder **.**
 3. Select **Information** .
 4. Select **the metric** for which you want to see detailed information. The system will now display **Metadata** and **Dimensions** of this metric.
@@ -42,7 +42,7 @@ To view detailed information about a metric pushed to vMonitor Platform, follow 
 
 You can edit a metric's metadata information by:
 
-1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/) . If you don't have an account, register for free [here](https://register.greennode.ai/signup?hl=en) .
 2. Select the Metric folder **.**
 3. Select **Information.**
 4. Select **the Metric** you want to edit.

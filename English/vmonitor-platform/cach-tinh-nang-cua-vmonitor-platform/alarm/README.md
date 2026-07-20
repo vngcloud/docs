@@ -49,12 +49,12 @@ Các quy tắc sau áp dụng cho việc đặt tên Alarm trong vMonitor Platfo
 
 Mỗi Alarm **chỉ có thể chứa một loại cảnh báo được thiết lập trên dữ liệu metrics hoặc dữ liệu logs**. Để tạo Alarm, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Alarm.**
 3. Chọn **Create an Alarm**.
 4. Trong mục **Select an alarm type**, chọn **Metric** nếu bạn muốn thiết lập cảnh báo dựa trên dữ liệu metric hoặc chọn **Log** nếu bạn muốn thiết lập cảnh báo dựa trên dữ liệu log.
 
-<figure><img src="../../../.gitbook/assets/image (47) (3) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (47) (3).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5\. Trong mục **Set alarm conditions**, làm theo hướng dẫn bên dưới nếu bạn muốn thiết lập Alarm cho metric hay log:
 
@@ -69,7 +69,7 @@ Mỗi Alarm **chỉ có thể chứa một loại cảnh báo được thiết l
 * **OK**: gửi cảnh báo tới nhóm người nhận khi kết quả alarm nằm trong ngưỡng đã xác định.
 * **Undetermined**: gửi cảnh báo tới nhóm người nhận khi alarm vừa bắt đầu hoặc không có đủ dữ liệu để xác định.
 
-<figure><img src="../../../.gitbook/assets/image (48) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
 <mark style="color:red;">Ở mỗi trạng thái của alarm (In-alarm, OK, Undetermined), bạn có thể chọn một hoặc nhiều notification đã thiết lập tại</mark> [_<mark style="color:red;">**Notification**</mark>_](../notification/)<mark style="color:red;">. Một người nhận thông báo cũng có thể nhận cảnh báo cho alarm ở tất cả các trạng thái. Chúng tôi không giới hạn số lượng người nhận mà bạn có thể tạo tại notification cũng như số lượng người nhận mà bạn thiết lập trên alarm nhưng số lượng thông báo gửi đi qua các kênh sẽ phụ thuộc vào cấu hình gói metric quota, log project hay SMS notification quota, Email notification quota.</mark>
 
@@ -81,13 +81,13 @@ Mỗi Alarm **chỉ có thể chứa một loại cảnh báo được thiết l
 
 11\. Chọn **Severity** của Alarm. Có 3 mức độ nghiêm trọng được chúng tôi định nghĩa bao gồm: **Thấp, Trung Bình, Cao**. Bạn hãy chọn 1 mức độ theo đánh giá cá nhân của bạn với cảnh báo.
 
-<figure><img src="../../../.gitbook/assets/image (107) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
 
 12\. Chọn **Create**.
 
 13\. Sau khi bạn thiết lập xong một alarm, ban đầu alarm sẽ ở trạng thái: **Undertermine.** Tới lần đánh giá tiếp theo Alarm sẽ chuyển trạng thái tương ứng là **OK** hoặc **In-alarm**. Từ đó gửi cảnh báo theo điều kiện được thiết lập tương ứng.
 
-<figure><img src="../../../.gitbook/assets/image (108) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
 
 14\. Cảnh báo được gửi và bạn có thể xem chi tiết **Alarm** bằng cách nhấn vô tên của **Alarm** tương ứng.
 
@@ -97,7 +97,7 @@ Mỗi Alarm **chỉ có thể chứa một loại cảnh báo được thiết l
 
 Để chỉnh sửa Alarm, hãy làm theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **Alarm.**
 3. Tại **Alarm** mà bạn muốn chỉnh sửa, chọn **Edit.**
 4. Chỉnh sửa các thông số cho **Alarm** mà bạn mong muốn. Bạn không thể thay đổi thông tin trong mục Select an **alarm type** mà chỉ có thể chỉnh sửa các thông số alarm trong các mục: **Set alarm conditions, Configure actions, Add alarm description.** Việc chỉnh sửa này tương tự như khi bạn thực hiện tạo mới một Alarm theo hướng dẫn bên trên.
@@ -109,7 +109,7 @@ Mỗi Alarm **chỉ có thể chứa một loại cảnh báo được thiết l
 
 Khi bạn không có nhu cầu sử dụng một alarm nữa, bạn có thể thực hiện xóa alarm khỏi hệ thống theo hướng dẫn bên dưới:
 
-1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.vngcloud.vn/signup).
+1. Đăng nhập vào [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [tại đây](https://register.greennode.ai/signup?hl=en).
 2. Chọn thư mục **alarm.**
 3. Tại **alarm** mà bạn muốn xóa, chọn **Checkbox Chọn.** Bạn có thể chọn một hoặc nhiều alarm để thực hiện xóa ở bước này.
 4. Chọn **Delete**.

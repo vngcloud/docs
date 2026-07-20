@@ -23,5 +23,5 @@ When you click on the name of the vDB, you will be redirected to the Dashboard p
 **Attention:**
 
 * The vMonitor system will take an average of 5-10 minutes (worst case can be 20 minutes) to update the new vDB after you create it.
-* To see the corresponding list of metrics for each of these products, see [Support Metrics List](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/metrics/danh-sach-metrics-ho-tro)
+* To see the corresponding list of metrics for each of these products, see [Support Metrics List](https://docs.greennode.ai/vmonitor/dashboards/metrics/danh-sach-metrics-ho-tro?fallback=true)
 {% endhint %}
