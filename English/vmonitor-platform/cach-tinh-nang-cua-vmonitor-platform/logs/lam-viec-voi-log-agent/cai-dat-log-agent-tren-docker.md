@@ -1,6 +1,6 @@
 # Install Log Agent on Docker
 
-Before installing the agent on the operating systems we support below, you need to download the certificate according to the instructions at [Initialize Certificate](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/logs/lam-viec-voi-log-agent/khoi-tao-certificate) . Information on setting up the agent is in the readme file, and the instruction scripts are also in the downloaded certificate file. Use this information with the instructions below to complete Agent for Log setup.
+Before installing the agent on the operating systems we support below, you need to download the certificate according to the instructions at [Initialize Certificate](https://docs.greennode.ai/vn/vmonitor/dashboards/logs/lam-viec-voi-log-agent/khoi-tao-certificate) . Information on setting up the agent is in the readme file, and the instruction scripts are also in the downloaded certificate file. Use this information with the instructions below to complete Agent for Log setup.
 
 **Setting**
 
@@ -109,7 +109,6 @@ required_acks: 1
 compression: gzip
 max_message_bytes: 1000000
 ssl.certificate_authorities:
-
 /usr/share/filebeat/VNG.trust
 ssl.certificate: /usr/share/filebeat/user.cer.pem
 ssl.key: /usr/share/filebeat/user.key.pem
@@ -146,7 +145,6 @@ limits:
 cpus: '1'
 memory: 2G
 </code></pre></td></tr><tr><td><p>Copy</p><pre><code>filebeat.inputs:
-
 type: log
 paths:
 /var/log/app.log
@@ -159,7 +157,6 @@ required_acks: 1
 compression: gzip
 max_message_bytes: 1000000
 ssl.certificate_authorities:
-
 /usr/share/filebeat/VNG.trust
 ssl.certificate: /usr/share/filebeat/user.cer.pem
 ssl.key: /usr/share/filebeat/user.key.pem
@@ -198,4 +195,4 @@ FilebeatLogstash
 
 ***
 
-Before performing agent installation on the operating systems we support below, you need to [Initialize Certificate](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/logs/lam-viec-voi-log-agent/khoi-tao-certificate) . The setup agent instructions are in the readme file, the script instructions are also in the downloaded certificate file. Use this information with the instructions below to complete Agent for Log setup.
+Before performing agent installation on the operating systems we support below, you need to [Initialize Certificate](https://docs.greennode.ai/vn/vmonitor/dashboards/logs/lam-viec-voi-log-agent/khoi-tao-certificate) . The setup agent instructions are in the readme file, the script instructions are also in the downloaded certificate file. Use this information with the instructions below to complete Agent for Log setup.

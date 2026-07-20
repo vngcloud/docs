@@ -21,5 +21,5 @@ When you click on the name of vStorage Project, you will be redirected to the Da
 **Attention:**
 
 * The vMonitor system will take an average of 5-10 minutes (the worst case can be 20 minutes) to update the new vStorage Project after you create it.
-* To see the corresponding list of metrics for each of these products, see [List of Supported Metrics](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/metrics/danh-sach-metrics-ho-tro) .
+* To see the corresponding list of metrics for each of these products, see [List of Supported Metrics](https://docs.greennode.ai/vmonitor/dashboards/metrics/danh-sach-metrics-ho-tro?fallback=true) .
 {% endhint %}

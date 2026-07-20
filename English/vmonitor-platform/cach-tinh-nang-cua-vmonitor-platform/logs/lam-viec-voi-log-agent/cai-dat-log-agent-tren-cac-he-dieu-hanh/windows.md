@@ -1,6 +1,6 @@
 # Windows
 
-Before installing the agent on the operating systems we support below, you need to download the certificate according to the instructions at [Initialize Certificate](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/logs/lam-viec-voi-log-agent/khoi-tao-certificate) . The download file will contain the certificates used to authenticate with the vMonitor Logs system. Use this information with the instructions below to complete Agent for Log setup.
+Before installing the agent on the operating systems we support below, you need to download the certificate according to the instructions at [Initialize Certificate](https://docs.greennode.ai/vmonitor/dashboards/logs/lam-viec-voi-log-agent/khoi-tao-certificate) . The download file will contain the certificates used to authenticate with the vMonitor Logs system. Use this information with the instructions below to complete Agent for Log setup.
 
 **Setting**
 
@@ -50,7 +50,6 @@ required_acks: 1
 compression: gzip
 max_message_bytes: 1000000
 ssl.certificate_authorities:
-
 $PATH_FILE_VNG_TRUST_PEM
 ssl.certificate: $PATH_FILE_USER_CER_PEM
 ssl.key: $PATH_FILE_USER_KEY_PEM
