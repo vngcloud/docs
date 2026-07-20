@@ -53,12 +53,12 @@ Về cơ bản, các tính năng mà người dùng có thể thực hiện trê
   * Thay đổi cấu hình
   * xóa tài nguyên
 
-Tham khảo chi tiết hơn tại mục: [**Quản lý tài nguyên**](nguoi-dung-tra-truoc-and-tra-sau.md#nguoidungtratruoc-and-trasau-3.quanlytainguyen)
+Tham khảo chi tiết hơn tại mục: [**Quản lý tài nguyên**](https://dashboard.console.greennode.ai/resource)
 
 #### 4. Quản lý hóa đơn <a href="#nguoidungtratruoc-and-trasau-4.quanlyhoadon" id="nguoidungtratruoc-and-trasau-4.quanlyhoadon"></a>
 
 * **Người dùng trả trước**
-  * Tại bước thanh toán thành công, sau khi cung cấp tài nguyên thành công, hệ thống sẽ phát sinh **hóa đơn được tính là đã thanh toán** tương ứng với tài nguyên của người dùng.&#x20;
+  * Tại bước thanh toán thành công, sau khi cung cấp tài nguyên thành công, hệ thống sẽ phát sinh **hóa đơn được tính là đã thanh toán** tương ứng với tài nguyên của người dùng.
 * **Người dùng trả sau**
   * Hóa đơn theo tài nguyên sẽ được phát sinh mỗi cuối tháng, dựa vào sử dụng thực tế của khách hàng trong tháng đó.
   * Hóa đơn được phát sinh sẽ được tính là chưa thanh toán, người dùng có thể thanh toán qua hai hình thức sau:

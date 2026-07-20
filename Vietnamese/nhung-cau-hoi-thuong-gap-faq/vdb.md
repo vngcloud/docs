@@ -8,7 +8,7 @@ Lúc khởi tạo vDB quý khách click vào Public accessibility. Còn nếu đ
 
 Quý khách có thể tham khảo link hướng dẫn như sau:<br>
 
-[https://docs.vngcloud.vn/vng-cloud-document/vn/vdb/relational-database-service-rds/gia-han-rds-instance](https://docs.vngcloud.vn/vng-cloud-document/vn/vdb/relational-database-service-rds/gia-han-rds-instance)
+[https://docs.greennode.ai/vn/vdb/relational-database-service-rds/working-with-rds/gia-han-rds-instance](https://docs.greennode.ai/vn/vdb/relational-database-service-rds/working-with-rds/gia-han-rds-instance)
 
 ### \[vDB] Tại sao tôi không thể nâng gói MySQL của mình?
 
@@ -17,7 +17,7 @@ Quý khách vui lòng kiểm tra lại thông tin server của quý khách còn 
 ### \[vDB] Tại sao tôi sử dụng trial vDB MySQL thì nó lại báo lỗi Please select Network?
 
 Quý khách vui lòng khởi tạo network trước như link hướng dẫn sau:\
-[https://docs.vngcloud.vn/pages/viewpage.action?pageId=13009888.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=13009888.).\
+[https://docs.greennode.ai/vn/vserver/compute-hcm03-1a/network](https://docs.greennode.ai/vn/vserver/compute-hcm03-1a/network).\
 Sau khi khởi tạo network xong quý khách có thể tạo được vDB được.
 
 ### \[vDB] Để update timezone trên vDB thì tôi làm như thế nào?
@@ -30,7 +30,7 @@ Quý khách không cần restart DB khi resize volume, hệ thống đã tự đ
 
 ### \[vDB] Tôi muốn sử dụng vDB API thì có API curl để tạo user kafka không?
 
-Quý khách có thể tham khảo tài liệu vDB API tại đây [https://docs.api.greennode.ai/service-docs/vdb-api.html#tag/Kafka-Cluster-API/operation/createUser](https://docs.api.greennode.ai/service-docs/vdb-api.html#tag/Kafka-Cluster-API/operation/createUser)&#x20;
+Quý khách có thể tham khảo tài liệu vDB API tại đây [https://docs.api.greennode.ai/service-docs/vdb-api.html#tag/Kafka-Cluster-API/operation/createUser](https://docs.api.greennode.ai/service-docs/vdb-api.html#tag/Kafka-Cluster-API/operation/createUser)
 
 ### \[vDB] vDB đổi cổng kết nối được không?
 

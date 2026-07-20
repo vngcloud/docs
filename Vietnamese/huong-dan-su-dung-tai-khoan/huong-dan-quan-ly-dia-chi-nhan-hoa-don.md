@@ -12,7 +12,7 @@ Tính năng **Quản lý Địa Chỉ Nhận Hóa Đơn** cho phép người dù
 
 ### 2. Cách truy cập <a href="#id-2-cach-truy-cap" id="id-2-cach-truy-cap"></a>
 
-Truy cập vào màn hình **Quản lý Địa Chỉ Nhận Hóa Đơn** tại [https://register.vngcloud.vn/profile#invoice-address-info](https://register.vngcloud.vn/profile#invoice-address-info)
+Truy cập vào màn hình **Quản lý Địa Chỉ Nhận Hóa Đơn** tại [https://register.greennode.ai/profile#invoice-address-info](https://register.greennode.ai/profile#invoice-address-info)
 
 ### 3. Giao diện màn hình chính <a href="#id-3-giao-dien-man-hinh-chinh" id="id-3-giao-dien-man-hinh-chinh"></a>
 

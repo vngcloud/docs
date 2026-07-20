@@ -2,7 +2,7 @@
 
 Bên dưới là hướng dẫn giúp bạn thay đổi mật khẩu của tài khoản quản trị trên GreenNode:
 
-**Bước 1:** Truy cập trực tiếp vào đường dẫn [https://register.vngcloud.vn/resetpwd](https://register.vngcloud.vn/resetpwd) hoặc [https://my.vngcloud.vn](https://register.vngcloud.vn/resetpwd) sau đó chọn **Quên mật khẩu?**
+**Bước 1:** Truy cập trực tiếp vào đường dẫn [https://register.greennode.ai/resetpwd](https://register.greennode.ai/resetpwd) hoặc vào page đăng nhập và chọn Quên mật khẩu
 
 <figure><img src="../.gitbook/assets/image (195).png" alt=""><figcaption></figcaption></figure>
 
