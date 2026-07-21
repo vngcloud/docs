@@ -8,7 +8,7 @@ description: >-
 
 Access the [Models ](https://aiplatform.console.greennode.ai/models)section in AI Platform:
 
-* To use and enable any model, you need an API key. [See more details](../getting-started-with-ai-platform.md).
+* To use and enable any model, you need an API key. [See more details](../ai-platform/getting-started-with-ai-platform.md).
 
 You can filter models using the options on the left sidebar:
 
@@ -30,16 +30,16 @@ You can filter models using the options on the left sidebar:
 ### Enable / Disable Models
 
 1. Click the "Toggle models" button. Users must activate billing to enable models. For Prepaid users, quota must be added before enabling models, while Postpaid users can enable and use models immediately. Refer to [pricing details](pricing.md).\
-   ![](<../../../.gitbook/assets/image (390) (1).png>)
+   ![](<../../.gitbook/assets/image (390) (1).png>)
 2. Model Selection: A popup window will appear, allowing you to search and filter models by Provider, Status, or Type.
 3. Enable/disable models individually or in bulk.
 4. Save your changes.
 
-<figure><img src="../../../.gitbook/assets/image (391) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (391) (2).png" alt=""><figcaption></figcaption></figure>
 
 To start experimenting and comparing models before integration, you can use the [Playground](playground.md)
 
-<figure><img src="../../../.gitbook/assets/image (392) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (392) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Experiment with AI Platform Playground
 

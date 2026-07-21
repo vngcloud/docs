@@ -17,7 +17,7 @@ description: >-
    * Trong phần System prompt, hãy định nghĩa các hướng dẫn hoặc ngữ cảnh cho mô hình. Bạn cũng có thể thêm các ví dụ để định hướng hành vi của nó.
 4.  [Tinh chỉnh các tham số:](playground.md#huong-dan-tinh-chinh-thamso-mo-hinh)
 
-    <figure><img src="../../../.gitbook/assets/image (442).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (442).png" alt=""><figcaption></figcaption></figure>
 5. Bắt đầu thử nghiệm:
 
 * Nhập câu lệnh của bạn và quan sát cách các mô hình khác nhau phản hồi.
@@ -30,7 +30,7 @@ description: >-
   * Python: Cung cấp đoạn mã Python sẵn sàng để bạn sao chép và sử dụng trong các dự án Python của mình.
   * Node.js: Cung cấp đoạn mã Node.js, phù hợp cho các dự án web và ứng dụng server-side.
 
-<figure><img src="../../../.gitbook/assets/image (1124).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1124).png" alt=""><figcaption></figcaption></figure>
 
 ### Hướng dẫn tinh chỉnh tham số mô hình
 
@@ -74,7 +74,7 @@ Khi sử dụng Playground, bạn có thể điều chỉnh các thông số sau
 * Presence Penalty: Mức phạt cho các từ đã xuất hiện trong cuộc trò chuyện, khuyến khích mô hình tạo ra các chủ đề mới và giảm lặp từ.
   * Phạm vi: -2 đến 2 (Mặc định: 0).
 
-Để xem thêm các thông số chi tiết, bạn có thể tham khảo tài liệu của [vLLM ](../../../)và [OpenAI](https://platform.openai.com/docs/api-reference/introduction).
+Để xem thêm các thông số chi tiết, bạn có thể tham khảo tài liệu của [vLLM ](../../)và [OpenAI](https://platform.openai.com/docs/api-reference/introduction).
 
 ### So sánh mô hình
 
@@ -83,6 +83,6 @@ Tính năng này cho phép bạn chạy và so sánh kết quả đầu ra của
 * Nhấp vào nút So sánh (Compare) để mở hai cửa sổ trò chuyện song song.
 * Bạn có thể nhập câu lệnh và gửi tới cả hai mô hình cùng một lúc để xem phản hồi và đánh giá hiệu quả.
 
-<figure><img src="../../../.gitbook/assets/image (1125).png" alt="" width="164"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1125).png" alt="" width="164"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1127).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1127).png" alt="" width="563"><figcaption></figcaption></figure>
