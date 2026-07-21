@@ -21,7 +21,7 @@ GreenNode AgentBase ra mắt **Phase 2** với các tính năng mới mở rộn
   * Tìm hiểu thêm tại [MCP Governance](mcp-governance/README.md).
 
 * **AI Coding:** Kết nối Claude Code CLI và các AI coding tool OpenAI-compatible (OpenAI SDK, LiteLLM, Cursor...) trực tiếp với GreenNode MaaS — thanh toán bằng credit-token nội bộ.
-  * Tìm hiểu thêm tại [AI Coding](ai-coding/README.md).
+  * Tìm hiểu thêm tại [AI Coding](../ai-coding/README.md).
 
 * **Usage & Budget:** Dashboard theo dõi lượng tiêu thụ token và chi phí realtime theo agent, model, API key và khoảng thời gian; cài đặt ngân sách tháng với cảnh báo tự động khi đạt 80% và 100%.
   * Tìm hiểu thêm tại [Usage & Budget](usage-budget/README.md).

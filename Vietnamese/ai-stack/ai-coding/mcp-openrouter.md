@@ -58,8 +58,8 @@ claude mcp list
 
 Nếu bạn triển khai MCP ở quy mô tổ chức (kiểm soát server nào được phép, phân quyền theo tool, đặt qua gateway chung), hãy xem phần **MCP Governance** của AgentBase:
 
-* [MCP Gateway](../mcp-governance/mcp-gateway/README.md)
-* [Policy Groups](../mcp-governance/policy-groups/README.md)
+* [MCP Gateway](../agent-base/mcp-governance/mcp-gateway/README.md)
+* [Policy Groups](../agent-base/mcp-governance/policy-groups/README.md)
 
 ---
 

@@ -6,9 +6,10 @@
 
 ## Điều kiện cần (Prerequisites)
 
-* Đã có tài khoản [AI Platform](https://aiplatform.console.greennode.ai/)
-* Đã tạo API key (token `vn-...`) với status **ACTIVE**
+* Chuẩn bị API key, Base URL và model theo [Bắt đầu với AI Coding](../bat-dau.md)
 * Node.js đã cài đặt
+
+> Model GLM 5.2 qua OpenCode dùng **chuẩn OpenAI** — Base URL có `/v1`: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1`.
 
 ***
 
@@ -176,8 +177,20 @@ Sau đó chọn qua `/models`, hoặc đổi `model` ở cấp top-level thành 
 
 Sau khi hoàn thành, OpenCode route toàn bộ request qua GreenNode MaaS. Usage được ghi nhận trên [AI Platform Console → Usage](https://aiplatform.console.greennode.ai/).
 
-| Tôi muốn tiếp theo...           | Đi đến                                                                              |
-| ------------------------------- | ----------------------------------------------------------------------------------- |
-| Dùng Codex với Minimax qua MaaS | [Dùng Codex với Minimax qua GreenNode MaaS](hướng-dẫn-xài-codex-với-minimax.md)   |
-| Kết nối Claude Code với MaaS    | [Kết nối Claude Code với GreenNode MaaS](ket-noi-claude-code-voi-maas.md)          |
-| Xem usage và billing            | [AI Platform Console](https://aiplatform.console.greennode.ai/)                      |
+| Tôi muốn tiếp theo... | Đi đến |
+|---|---|
+| Dùng Codex với Minimax qua MaaS | [Dùng Codex với Minimax qua GreenNode MaaS](codex-cli.md) |
+| Kết nối Claude Code với MaaS | [Kết nối Claude Code với GreenNode MaaS](claude-code.md) |
+| Xem usage và billing | [AI Platform Console](https://aiplatform.console.greennode.ai/) |
+
+***
+
+## Cần hỗ trợ?
+
+Nếu bạn làm theo mà vẫn chưa được, đừng ngại liên hệ bộ phận Hỗ trợ Khách hàng của GreenNode:
+
+* Email: [support@greennode.ai](mailto:support@greennode.ai)
+* Hotline: 19001549
+* Trung tâm hỗ trợ: [helpdesk.greennode.ai](https://helpdesk.greennode.ai)
+
+Cảm ơn bạn đã sử dụng dịch vụ của GreenNode.

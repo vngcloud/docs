@@ -109,7 +109,7 @@ model:     minimax/minimax-m2.5   /model to change
 directory: ~/your-project
 ```
 
-<figure><img src="../../../.gitbook/assets/use-codex-with-minimax (1).png" alt=""><figcaption><p>Codex running with minimax/minimax-m2.5 via GreenNode MaaS</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/use-codex-with-minimax (1).png" alt=""><figcaption><p>Codex running with minimax/minimax-m2.5 via GreenNode MaaS</p></figcaption></figure>
 
 ***
 
