@@ -53,7 +53,7 @@ Any tool that allows setting a custom `base_url` in OpenAI SDK format works out 
 | I want to... | Go to |
 |---|---|
 | Prepare an API key, Base URL, and choose a model | [Getting Started with AI Coding](getting-started.md) |
-| Use a GUI tool | [GUI Tools group](gui-tools/README.md) |
+| Use a GUI tool | Coming soon |
 | Use a CLI tool | [CLI Tools group](cli-tools/README.md) |
 | Attach an MCP server to an agent | [Using MCP Servers with AI Coding](mcp-servers.md) |
 | Get an API key | [AI Platform Console](https://aiplatform.console.vngcloud.vn/) |

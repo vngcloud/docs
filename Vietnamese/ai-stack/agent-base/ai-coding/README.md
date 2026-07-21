@@ -53,7 +53,7 @@ Bất kỳ tool nào cho phép set custom `base_url` theo OpenAI SDK format đ�
 | Tôi muốn... | Đi đến |
 |---|---|
 | Chuẩn bị API key, Base URL, chọn model | [Bắt đầu với AI Coding](bat-dau.md) |
-| Dùng công cụ có giao diện (GUI) | [Nhóm Có giao diện](co-giao-dien/README.md) |
+| Dùng công cụ có giao diện (GUI) | Đang cập nhật, sẽ có sau |
 | Dùng công cụ dòng lệnh (CLI) | [Nhóm Dòng lệnh](dong-lenh/README.md) |
 | Gắn MCP server cho agent | [Dùng MCP Server với AI Coding](mcp-openrouter.md) |
 | Lấy API key | [AI Platform Console](https://aiplatform.console.vngcloud.vn/) |

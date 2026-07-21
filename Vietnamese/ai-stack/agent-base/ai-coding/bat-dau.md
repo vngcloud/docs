@@ -82,7 +82,7 @@ Nếu model chưa ENABLED, liên hệ đội quản trị AI Platform của Gree
 
 | Bạn thích... | Hệ điều hành | Nên dùng |
 |--------------|--------------|----------|
-| **Bấm chuột, chưa quen gõ lệnh** | macOS / Windows | [Nhóm Có giao diện (GUI)](co-giao-dien/README.md) → **Claude Desktop** |
+| **Bấm chuột, chưa quen gõ lệnh** | macOS / Windows | Nhóm Có giao diện (GUI) → **Claude Desktop** *(đang cập nhật, sẽ có link sau)* |
 | Gõ lệnh trong terminal | macOS / Linux / WSL / Windows | [Nhóm Dòng lệnh (CLI)](dong-lenh/README.md) → **Claude Code**, OpenCode, Codex CLI… |
 
 {% hint style="info" %}

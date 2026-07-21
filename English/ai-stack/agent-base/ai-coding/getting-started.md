@@ -82,7 +82,7 @@ If the model isn't ENABLED yet, contact GreenNode's AI Platform admin team to ha
 
 | You prefer... | OS | Use |
 |--------------|--------------|----------|
-| **Clicking, not comfortable typing commands yet** | macOS / Windows | [GUI tools group](gui-tools/README.md) → **Claude Desktop** |
+| **Clicking, not comfortable typing commands yet** | macOS / Windows | GUI tools group → **Claude Desktop** *(coming soon)* |
 | Typing commands in a terminal | macOS / Linux / WSL / Windows | [CLI tools group](cli-tools/README.md) → **Claude Code**, OpenCode, Codex CLI… |
 
 {% hint style="info" %}
