@@ -8,7 +8,7 @@ AI Coding cho phép kết nối các AI coding tool phổ biến — Claude Code
 
 Request từ tool của bạn được redirect sang GreenNode MaaS endpoint. MaaS expose hai protocol song song để tương thích với mọi client hiện có:
 
-<figure><img src="../../../.gitbook/assets/Agentbase-image/ai_coding_flow.png" alt=""><figcaption><p>Hai chuẩn API cùng kết nối tới một MaaS endpoint, dùng chung Model Pool</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Agentbase-image/ai_coding_flow.png" alt=""><figcaption><p>Hai chuẩn API cùng kết nối tới một MaaS endpoint, dùng chung Model Pool</p></figcaption></figure>
 
 Một API key từ AI Platform dùng được cho cả hai protocol.
 

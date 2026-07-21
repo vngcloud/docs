@@ -67,7 +67,7 @@ Reload without restarting the terminal:
 source ~/.zshrc
 ```
 
-<figure><img src="../../../.gitbook/assets/AI-coding-change-baseurl-apikey (1).png" alt=""><figcaption><p>ANTHROPIC_AUTH_TOKEN and ANTHROPIC_BASE_URL configured in shell profile</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/AI-coding-change-baseurl-apikey (1).png" alt=""><figcaption><p>ANTHROPIC_AUTH_TOKEN and ANTHROPIC_BASE_URL configured in shell profile</p></figcaption></figure>
 
 **Option B — Project settings (per-project)**
 
@@ -150,7 +150,7 @@ Confirm requests are recorded in [AI Platform Console → Usage](https://aiplatf
 
 After completing setup, Claude Code CLI routes all requests through GreenNode MaaS. Usage is recorded in AI Platform Console and billed via internal credit-tokens.
 
-<figure><img src="../../../.gitbook/assets/AI-coding-success (1).png" alt=""><figcaption><p>Claude Code running successfully through GreenNode MaaS endpoint</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/AI-coding-success (1).png" alt=""><figcaption><p>Claude Code running successfully through GreenNode MaaS endpoint</p></figcaption></figure>
 
 | I want to...                            | Go to                                                                                       |
 | --------------------------------------- | ------------------------------------------------------------------------------------------- |

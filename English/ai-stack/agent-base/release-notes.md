@@ -21,7 +21,7 @@ GreenNode AgentBase releases **Phase 2** with new features expanding governance,
   * Learn more at [MCP Governance](mcp-governance/README.md).
 
 * **AI Coding:** Connect Claude Code CLI and OpenAI-compatible AI coding tools (OpenAI SDK, LiteLLM, Cursor...) directly to GreenNode MaaS — billed via internal credit-tokens.
-  * Learn more at [AI Coding](ai-coding/README.md).
+  * Learn more at [AI Coding](../ai-coding/README.md).
 
 * **Usage & Budget:** Real-time dashboard tracking token consumption and costs by agent, model, API key, and time range; set monthly budget limits with automatic alerts at 80% and 100%.
   * Learn more at [Usage & Budget](usage-budget/README.md).

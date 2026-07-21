@@ -58,8 +58,8 @@ claude mcp list
 
 If you're rolling out MCP at an organizational scale (controlling which servers are allowed, permissions per tool, routing through a shared gateway), see AgentBase's **MCP Governance** section:
 
-* [MCP Gateway](../mcp-governance/mcp-gateway/README.md)
-* [Policy Groups](../mcp-governance/policy-groups/README.md)
+* [MCP Gateway](../agent-base/mcp-governance/mcp-gateway/README.md)
+* [Policy Groups](../agent-base/mcp-governance/policy-groups/README.md)
 
 ---
 
