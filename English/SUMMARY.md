@@ -724,6 +724,8 @@
       * [Claude Code](ai-stack/ai-coding/cli-tools/claude-code.md)
       * [Codex CLI](ai-stack/ai-coding/cli-tools/codex-cli.md)
       * [OpenCode](ai-stack/ai-coding/cli-tools/opencode.md)
+    * [GUI Tools](ai-stack/ai-coding/gui-tools/README.md)
+      * [Codex Desktop](ai-stack/ai-coding/gui-tools/codex-desktop.md)
   * [GenAI Studio](ai-stack/genai-studio.md)
   * [GreenNode AgentBase](ai-stack/agent-base/README.md)
     * [Release Notes](ai-stack/agent-base/release-notes.md)
