@@ -6,7 +6,7 @@ To enable MaaS to leverage AI Gateway features (such as Rate Limiting, Model Cac
 
 **Step 2**: In the left-hand menu, select AI Gateway, then click the Create an AI Gateway button.
 
-<figure><img src="../../../.gitbook/assets/image (402) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (402) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3**: On the Create New Gateway screen, fill in the following information:
 
@@ -26,29 +26,29 @@ To enable MaaS to leverage AI Gateway features (such as Rate Limiting, Model Cac
         * header\_name: Enter `Authorization`.
         * header\_value: Enter the MaaS API Key (created in the AI Platform [Portal ](https://aiplatform.console.greennode.ai/keys)).
 
-        <figure><img src="../../../.gitbook/assets/image (419) (2).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../.gitbook/assets/image (419) (2).png" alt=""><figcaption></figcaption></figure>
 * **Gateway Config:** By default, the system enables the Authenticated Gateway feature.
 
 **Step 4**: Click Create an AI Gateway. Your AI Gateway will be initialized and ready to use.
 
-<figure><img src="../../../.gitbook/assets/image (421) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (421) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Step 5:** After the AI Gateway is created, generate a Token to call the API.
 
 **Step 6:** After creating the token, you can configure specific rate limits for each token based on your needs
 
-<figure><img src="../../../.gitbook/assets/image (422) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (422) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (448) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (448) (2).png" alt=""><figcaption></figcaption></figure>
 
 \
 **Step 7**: In the Providers & Model section, locate the AI model you configured. Click the Curl command icon to get a sample request.
 
-<figure><img src="../../../.gitbook/assets/image (449) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (449) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 8:** Copy the displayed curl command and execute it on your local machine (via Terminal or Command Prompt).
 
-<figure><img src="../../../.gitbook/assets/image (450) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (450) (2).png" alt=""><figcaption></figcaption></figure>
 
 Example:
 

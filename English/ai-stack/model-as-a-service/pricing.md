@@ -39,7 +39,7 @@ Applies to models such as:
   * **Output tokens**
 * Each token type has **its own unit price**.
 
-<figure><img src="../../../.gitbook/assets/image (451) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (451) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Pricing is calculated **per 1,000,000 tokens**.
 
@@ -73,7 +73,7 @@ Pricing is based on:
 
 ⇒ Each image configuration has a different price.
 
-<figure><img src="../../../.gitbook/assets/image (452) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (452) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -85,9 +85,9 @@ Pricing is based on:
 
 * Users must purchase user credits in advance using the Top-up credits feature.
 
-<figure><img src="../../../.gitbook/assets/image (455) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (455) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (465) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (465) (2).png" alt=""><figcaption></figcaption></figure>
 
 * For each model usage:
   * Generated tokens and/or images will be:
