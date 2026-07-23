@@ -63,6 +63,8 @@ $env:ANTHROPIC_AUTH_TOKEN = "--"   # thay bằng API key của bạn
 {% endtab %}
 {% endtabs %}
 
+<figure><img src="../../../.gitbook/assets/Agentbase-image/AI-coding-change-baseurl-apikey.png" alt=""><figcaption><p>Cấu hình ANTHROPIC_AUTH_TOKEN và ANTHROPIC_BASE_URL trong shell profile</p></figcaption></figure>
+
 ---
 
 ## Bước 3 — Chạy Claude Code với GLM 5.2
@@ -88,6 +90,8 @@ Trong Claude Code, gõ `/status` — đúng khi:
 
 Sau đó vào **[AI Platform Console](https://aiplatform.console.greennode.ai/)** để thấy lượt gọi được ghi nhận.
 
+<figure><img src="../../../.gitbook/assets/ai-coding/claude-code-with-glm.png" alt=""><figcaption><p>Claude Code chạy thành công với model z-ai/glm-5.2 qua GreenNode MaaS</p></figcaption></figure>
+
 ---
 
 ## Xử lý sự cố
@@ -105,7 +109,6 @@ Sau đó vào **[AI Platform Console](https://aiplatform.console.greennode.ai/)*
 
 | Tôi muốn tiếp theo... | Đi đến |
 |------------------------|--------|
-| Dùng bản có giao diện | [Claude Desktop](../co-giao-dien/claude-desktop.md) |
 | Dùng OpenCode | [OpenCode](opencode.md) |
 | Xem điều kiện cần | [Bắt đầu với AI Coding](../bat-dau.md) |
 

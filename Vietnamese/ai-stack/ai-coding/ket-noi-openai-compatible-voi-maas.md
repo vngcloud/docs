@@ -156,5 +156,5 @@ Sau khi cấu hình, tool hoặc SDK sẽ gọi model qua GreenNode MaaS thay v�
 
 | Tôi muốn tiếp theo...     | Đi đến                                                                    |
 | ------------------------- | ------------------------------------------------------------------------- |
-| Dùng Claude Code với MaaS | [Kết nối Claude Code với GreenNode MaaS](ket-noi-claude-code-voi-maas.md) |
+| Dùng Claude Code với MaaS | [Kết nối Claude Code với GreenNode MaaS](dong-lenh/claude-code.md) |
 | Xem usage và billing      | [AI Platform Console](https://aiplatform.console.greennode.ai/)            |

@@ -845,7 +845,6 @@
     * [Bảo mật](ai-stack/ai-gateway/bao-mat.md)
     * [Cách tính giá](ai-stack/ai-gateway/cach-tinh-gia.md)
   * [AI Coding](ai-stack/ai-coding/README.md)
-    * [Kết nối Claude Code với GreenNode MaaS](ai-stack/ai-coding/ket-noi-claude-code-voi-maas.md)
     * [Kết nối OpenAI-compatible với GreenNode MaaS](ai-stack/ai-coding/ket-noi-openai-compatible-voi-maas.md)
     * [Bắt đầu với AI Coding](ai-stack/ai-coding/bat-dau.md)
     * [Dùng MCP Server với AI Coding](ai-stack/ai-coding/mcp-openrouter.md)
