@@ -2,7 +2,7 @@
 
 To export the logs data you just searched for, follow the instructions below:
 
-1. Log in to vMonitor Platform [here.](https://hcm-3.console.greennode.ai/vmonitor)
+1. Log in to vMonitor Platform [here.](https://vmonitor.console.greennode.ai/)
 2. Select the Log folder **.**
 3. Select **Log search** .
 4. Perform a search for logs according to the instructions at [Search logs](https://docs-vngcloud-vn.translate.goog/vng-cloud-document/v/vn/vmonitor/dashboards/logs/lam-viec-voi-log-search/search-logs) .

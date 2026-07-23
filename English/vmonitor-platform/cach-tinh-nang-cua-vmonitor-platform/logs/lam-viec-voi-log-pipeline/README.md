@@ -72,7 +72,7 @@ The following rules apply to Processor naming in vMonitor Platform:
 
 To create a log pipeline, follow the instructions below:
 
-1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor/) .
+1. Log in to [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/) .
 2. **Select the Log** folder , then select the **Log pipeline** menu .
 3. Select **Create a Log pipeline** .
 4. Enter **Pipeline name** . The pipeline name must comply with our rules described above.
@@ -85,10 +85,10 @@ To create a log pipeline, follow the instructions below:
 
 To edit a log pipeline, follow the instructions below:
 
-1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. Select the Log folder **.**
 3. Select **Log pipeline.**
-4. In the list of existing log pipelines, at **the Log pipeline** you want to edit, select ![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FNYVs1TBqc044WNqQ0sbv%252Fimage.png%3Falt%3Dmedia%26token%3D94dbb161-89f1-486a-b0d7-4db0b6d8aa62\&width=32\&dpr=4\&quality=100\&sign=71d78aa4\&sv=1).
+4. In the list of existing log pipelines, at **the Log pipeline** you want to edit, select ![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FNYVs1TBqc044WNqQ0sbv%252Fimage.png%3Falt%3Dmedia%26token%3D94dbb161-89f1-486a-b0d7-4db0b6d8aa62\&width=32\&dpr=4\&quality=100\&sign=71d78aa4\&sv=1).
 5. Select **Edit pipeline** .
 6. Edit the parameters for **the Log pipeline** as you desire. You can edit all information fields in a Log pipeline configuration. This editing is similar to when you create a new Log pipeline according to the instructions above.
 7. Select **Save.**
@@ -99,9 +99,9 @@ To edit a log pipeline, follow the instructions below:
 
 When you no longer need to use a custom Log pipeline, you can delete the Log pipeline from the system according to the instructions below:
 
-1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. Select the Log folder **.**
-3. At **the Log pipeline** you want to delete, select![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FKzv1Impf4FlmWXpgefNh%252Fimage.png%3Falt%3Dmedia%26token%3Dcfcd9532-f7bd-435d-9c4f-5027ad6291ac\&width=31\&dpr=4\&quality=100\&sign=8af1a2bd\&sv=1)
+3. At **the Log pipeline** you want to delete, select![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FKzv1Impf4FlmWXpgefNh%252Fimage.png%3Falt%3Dmedia%26token%3Dcfcd9532-f7bd-435d-9c4f-5027ad6291ac\&width=31\&dpr=4\&quality=100\&sign=8af1a2bd\&sv=1)
 4. Select **Delete** .
 5. At the Log pipeline deletion confirmation screen, select **Delete** .
 

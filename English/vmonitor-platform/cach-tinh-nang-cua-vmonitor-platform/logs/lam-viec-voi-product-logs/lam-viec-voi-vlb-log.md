@@ -1,6 +1,6 @@
 # Working with vLB-Log
 
-To view vLB logs, access vMonitor Platform at [the link](https://hcm-3.console.greennode.ai/vmonitor) , then go to **Infrastructure list/vLB Log.** Here you can see a list of all vLBs on your HCM03. On this screen, you will see basic information columns such as:
+To view vLB logs, access vMonitor Platform at [the link](https://vmonitor.console.greennode.ai/) , then go to **Infrastructure list/vLB Log.** Here you can see a list of all vLBs on your HCM03. On this screen, you will see basic information columns such as:
 
 * **vLB Project** : name of vLB.
 * **Log Project** : log project will contain vLB logs when you enable "Detailed Monitoring".
@@ -72,12 +72,12 @@ The two destinations are independent: you can export to Kafka only, to OpenSearc
 2. Toggle **Enable logging** on.
 3. Select:
 
-| Field | Notes |
-|---|---|
-| **Cluster** | The Kafka Cluster that will receive access logs. |
-| **Topic** | The Topic in the selected Cluster. |
-| **User** | The Kafka user used to write logs. |
-| **Mode** | Authentication mechanism — choose **mTLS** or **SASL** (whichever both the Cluster and the user support). |
+| Field       | Notes                                                                                                     |
+| ----------- | --------------------------------------------------------------------------------------------------------- |
+| **Cluster** | The Kafka Cluster that will receive access logs.                                                          |
+| **Topic**   | The Topic in the selected Cluster.                                                                        |
+| **User**    | The Kafka user used to write logs.                                                                        |
+| **Mode**    | Authentication mechanism — choose **mTLS** or **SASL** (whichever both the Cluster and the user support). |
 
 4. Click **Save**.
 
@@ -91,10 +91,10 @@ The system automatically fetches the Kafka user's credentials from vDB — you d
 2. Toggle **Enable logging** on.
 3. Select and enter:
 
-| Field | Requirement |
-|---|---|
-| **Cluster** | The OpenSearch Cluster that will receive access logs. |
-| **Username** | Account with write permission on the Cluster. 3–31 characters, made of letters, digits, and `_`, `.`, `-`. |
+| Field        | Requirement                                                                                                   |
+| ------------ | ------------------------------------------------------------------------------------------------------------- |
+| **Cluster**  | The OpenSearch Cluster that will receive access logs.                                                         |
+| **Username** | Account with write permission on the Cluster. 3–31 characters, made of letters, digits, and `_`, `.`, `-`.    |
 | **Password** | At least 8 characters, including uppercase, lowercase, digit, and one special character from `@ $ ! % * ? &`. |
 
 4. Click **Save**.
@@ -113,10 +113,10 @@ Reopen the corresponding dialog, toggle **Enable logging** off, and click **Save
 
 ### Troubleshooting
 
-| Message | Cause & action |
-|---|---|
+| Message                                         | Cause & action                                                                                  |
+| ----------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | Error about Cluster, Topic, User, or permission | The matching resource on vDB is not ready. Check its status and permissions on vDB, then retry. |
-| OpenSearch connection error on **Save** | Wrong Username or Password. Re-enter the correct credentials and save again. |
+| OpenSearch connection error on **Save**         | Wrong Username or Password. Re-enter the correct credentials and save again.                    |
 
 ***
 

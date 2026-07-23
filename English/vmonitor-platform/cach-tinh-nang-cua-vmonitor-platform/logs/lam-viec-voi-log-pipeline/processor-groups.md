@@ -12,7 +12,7 @@ Processor Group: allows you to specify where to get log data (source log project
 
 To create a processor group, follow the instructions below:
 
-1\. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor/) .
+1\. Log in to [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/) .
 
 **2. Select the Log** folder , then select the **Log pipeline** menu .
 
@@ -42,10 +42,7 @@ To create a processor group, follow the instructions below:
 Currently, GreenNode supports libraries for two popular applications: **Apache and Nginx** . Once you select **Process Group Library** , continue with the steps below to complete creating the processor group
 
 1. Select ( **Duplicate this group)** to create a Processor Group from this Library.
-
-<!---->
-
-1. Enter information including:
+2. Enter information including:
 
 * **Group name** : enter the processor group name. The group name must comply with our regulations, for details see [Log pipeline limit scope](https://docs.vngcloud.vn/pages/viewpage.action?pageId=49650030) .
 * **Description** : enter a description of this processor group
@@ -67,11 +64,11 @@ After you successfully copy:
 
 To edit Processor group in Log pipeline, follow the instructions below
 
-1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. Select the Log folder **.**
 3. Select **Log pipeline.**
 4. In the list of available log pipelines, select **the Log pipeline** containing **the Processor group** you want to edit.
-5. At **the Processor group** you want to edit, select![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FhUSfl2B8MBXpOcUq9h0q%252Fimage.png%3Falt%3Dmedia%26token%3D3939ab59-81e2-48cb-8dd1-498ce9007e29\&width=32\&dpr=4\&quality=100\&sign=b31ddedf\&sv=1)
+5. At **the Processor group** you want to edit, select![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FhUSfl2B8MBXpOcUq9h0q%252Fimage.png%3Falt%3Dmedia%26token%3D3939ab59-81e2-48cb-8dd1-498ce9007e29\&width=32\&dpr=4\&quality=100\&sign=b31ddedf\&sv=1)
 6. Select **Edit group** .
 7. Edit the parameters for **the Processor group** you desire. You can edit all information fields in a processor group configuration. This editing is similar to when you create a new Processor group according to the instructions above.
 8. Select **Save.**
@@ -82,11 +79,11 @@ To edit Processor group in Log pipeline, follow the instructions below
 
 When you no longer need to use a custom Processor group, you can delete the Processor group from the system according to the instructions below:
 
-1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. Select the Log folder **.**
 3. Select **the Log pipeline** containing the processor group you want to delete.
 4. Select **Processor group.**
-5. At **the Processor group** you want to delete, select![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FM0htYOlkZQzClLStnGpq%252Fimage.png%3Falt%3Dmedia%26token%3D978b5221-e697-4b44-80fb-671aba835d4b\&width=32\&dpr=4\&quality=100\&sign=ee49d6de\&sv=1)
+5. At **the Processor group** you want to delete, select![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FM0htYOlkZQzClLStnGpq%252Fimage.png%3Falt%3Dmedia%26token%3D978b5221-e697-4b44-80fb-671aba835d4b\&width=32\&dpr=4\&quality=100\&sign=ee49d6de\&sv=1)
 6. Select **Delete** .
 7. At the Processor group deletion confirmation screen, select **Delete** .
 

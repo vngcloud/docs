@@ -4,7 +4,7 @@ By default, when purchasing a Log Project package, depending on the package you 
 
 If you need to store log data longer than these times, you can use the Log Archive feature to synchronize data to vStorage for long-term storage. You can follow the instructions below:
 
-1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. **Select the Log** folder .
 3. Select **Log project.**
 4. Select the **log project** name you want to **archive** .
@@ -37,7 +37,7 @@ If you need to store log data longer than these times, you can use the Log Archi
 
 14\. Select **Select** .
 
-![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FcXDmFAaGjtU1vHKFAwGe%252Fimage.png%3Falt%3Dmedia%26token%3D5a06f777-8493-4883-9bf7-969bdbad51e0\&width=300\&dpr=4\&quality=100\&sign=a7403e6a\&sv=1)
+![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FcXDmFAaGjtU1vHKFAwGe%252Fimage.png%3Falt%3Dmedia%26token%3D5a06f777-8493-4883-9bf7-969bdbad51e0\&width=300\&dpr=4\&quality=100\&sign=a7403e6a\&sv=1)
 
 </details>
 

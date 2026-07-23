@@ -10,7 +10,7 @@ A Synthetic test quota is a term on vMonitor Platform that represents a monitori
 
 To initialize Synthetic test quota, please follow the steps below:
 
-1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. Select **Quota & Usage** .
 3. Select **Buy Synthetic test quota.**
 4. Continue selecting **Buy Synthetic test quota.**
@@ -23,7 +23,7 @@ To facilitate the product trial process, we provide you with a Free Tier with Pa
 
 After you initialize the Synthetic test quota, you can view the Synthetic test quota package information that you just created by:
 
-1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. **Select the Quota\&Usage** folder .
 3. Select **Synthetic test usage** .
 
@@ -37,7 +37,7 @@ You have initialized the Synthetic test quota with a default usage cycle of 1 mo
 
 To **extend** a **Synthetic test quota** , you can:
 
-1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. **Select the Quota\&Usage** folder .
 3. Select **Synthetic test usage** .
 4. In the Synthetic test quota package being used, select **Renew** .
@@ -53,7 +53,7 @@ You have created an initial Synthetic test quota that suits your needs. If you d
 
 To **delete** a **Synthetic test quota** , you can:
 
-1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
+1. Log in to [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/) . If you don't have an account, register for free [here](https://register.vngcloud.vn/signup) .
 2. **Select the Quota\&Usage** folder .
 3. Select **Synthetic test usage** .
 4. In the Synthetic test quota package being used, select **Delete** .

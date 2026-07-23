@@ -31,7 +31,7 @@ The following rules apply to metric naming in vStorage:
 
 To generate a metric from your log, follow the instructions below:
 
-1. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor/) .
+1. Log in to [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/) .
 2. **Select the Log** folder , then select the **Log2metric** menu .
 3. Select **Create a Metric** .
 4. Enter **Metric name** . Metric names must comply with our rules, detailed above.
@@ -53,7 +53,7 @@ The **data points** for the newly created Log2metric are periodically generated 
 
 To edit metrics that were previously created from logs, follow the instructions below:
 
-1. Log in to vMonitor Platform [here.](https://hcm-3.console.greennode.ai/vmonitor)
+1. Log in to vMonitor Platform [here.](https://vmonitor.console.greennode.ai/)
 2. **Select the Log** folder , then select the **Log2metric** menu .
 3. At **the Metric** you want to edit, select **Edit** .
 4. Edit the chart parameters as you desire. Parameters that you can edit include: **Log filter, Advanced query** . This editing is similar to when you create a new Widget.
@@ -67,11 +67,11 @@ You have initialized a metric from a corresponding log project. This metric has 
 
 To delete a project, follow these instructions:
 
-1\. Log in to [https://hcm-3.console.greennode.ai/vmonitor](https://hcm-3.console.greennode.ai/vmonitor/) .
+1\. Log in to [https://vmonitor.console.greennode.ai/](https://vmonitor.console.greennode.ai/) .
 
 **2. Select the Log** folder , then select the **Log2metric** menu .
 
-3\. In the list of existing **metrics**![](https://docs.vngcloud.vn/\~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FLYHslWyx45GFqWXwFOpi%252Fimage.png%3Falt%3Dmedia%26token%3D68527325-aa58-43e6-af78-6a146e85c8ba\&width=35\&dpr=4\&quality=100\&sign=406fbad6\&sv=1) , select **the metric** you want to delete, then select **Delete** .
+3\. In the list of existing **metrics**![](https://docs.vngcloud.vn/~gitbook/image?url=https%3A%2F%2F3672463924-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FB0NrrrdJdpYOYzRkbWp5%252Fuploads%252FLYHslWyx45GFqWXwFOpi%252Fimage.png%3Falt%3Dmedia%26token%3D68527325-aa58-43e6-af78-6a146e85c8ba\&width=35\&dpr=4\&quality=100\&sign=406fbad6\&sv=1) , select **the metric** you want to delete, then select **Delete** .
 
 4\. Select **Delete** .
 
