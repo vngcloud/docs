@@ -852,6 +852,8 @@
       * [Claude Code](ai-stack/ai-coding/dong-lenh/claude-code.md)
       * [Codex CLI](ai-stack/ai-coding/dong-lenh/codex-cli.md)
       * [OpenCode](ai-stack/ai-coding/dong-lenh/opencode.md)
+    * [Có giao diện (GUI)](ai-stack/ai-coding/co-giao-dien/README.md)
+      * [Codex Desktop](ai-stack/ai-coding/co-giao-dien/codex-desktop.md)
   * [GenAI Studio](ai-stack/genai-studio.md)
   * [GreenNode AgentBase](ai-stack/agent-base/README.md)
     * [Lịch sử cập nhật](ai-stack/agent-base/release-notes.md)
