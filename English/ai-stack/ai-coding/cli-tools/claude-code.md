@@ -63,6 +63,8 @@ To persist them for your account (run once, then **reopen PowerShell**):
 {% endtab %}
 {% endtabs %}
 
+<figure><img src="../../../.gitbook/assets/AI-coding-change-baseurl-apikey (1).png" alt=""><figcaption><p>ANTHROPIC_AUTH_TOKEN and ANTHROPIC_BASE_URL configured in the shell profile</p></figcaption></figure>
+
 ---
 
 ## Step 3 — Run Claude Code with GLM 5.2
@@ -88,6 +90,8 @@ In Claude Code, type `/status` — it's correct when:
 
 Then check the **[AI Platform Console](https://aiplatform.console.greennode.ai/)** to see the call logged.
 
+<figure><img src="../../../.gitbook/assets/ai-coding/claude-code-with-glm.png" alt=""><figcaption><p>Claude Code responding successfully with the z-ai/glm-5.2 model via GreenNode MaaS</p></figcaption></figure>
+
 ---
 
 ## Troubleshooting
@@ -105,7 +109,6 @@ Then check the **[AI Platform Console](https://aiplatform.console.greennode.ai/)
 
 | I want to next... | Go to |
 |------------------------|--------|
-| Use the GUI version | [Claude Desktop](../gui-tools/claude-desktop.md) |
 | Use OpenCode | [OpenCode](opencode.md) |
 | See the prerequisites | [Getting Started with AI Coding](../getting-started.md) |
 

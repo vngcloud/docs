@@ -717,7 +717,6 @@
     * [Security](ai-stack/ai-gateway/security.md)
     * [Pricing](ai-stack/ai-gateway/pricing.md)
   * [AI Coding](ai-stack/ai-coding/README.md)
-    * [Connect Claude Code to GreenNode MaaS](ai-stack/ai-coding/connect-claude-code-to-maas.md)
     * [Connect OpenAI-compatible Clients to GreenNode MaaS](ai-stack/ai-coding/connect-openai-compatible-to-maas.md)
     * [Getting Started with AI Coding](ai-stack/ai-coding/getting-started.md)
     * [Using MCP Servers with AI Coding](ai-stack/ai-coding/mcp-servers.md)

@@ -9,7 +9,7 @@
 * Prepare your API key, Base URL, and model following [Getting Started with AI Coding](../getting-started.md)
 * Node.js ≥ 22 installed
 
-> The GLM 5.2 model via Codex uses the **OpenAI standard** — the Base URL includes `/v1`: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1`.
+> The Minimax M2.5 model via Codex uses the **OpenAI standard** — the Base URL includes `/v1`: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1`.
 
 ***
 
@@ -132,6 +132,7 @@ Once done, the Codex CLI routes all requests through GreenNode MaaS using the Mi
 
 | I want to next... | Go to |
 |---|---|
+| Use the GUI version | [Codex Desktop](../gui-tools/codex-desktop.md) |
 | Use OpenCode with MaaS | [Use OpenCode with GreenNode MaaS](opencode.md) |
 | Connect Claude Code to MaaS | [Connect Claude Code to GreenNode MaaS](claude-code.md) |
 | View usage and billing | [AI Platform Console](https://aiplatform.console.greennode.ai/) |

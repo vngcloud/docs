@@ -9,7 +9,7 @@
 * Chuẩn bị API key, Base URL và model theo [Bắt đầu với AI Coding](../bat-dau.md)
 * Node.js ≥ 22 đã cài đặt
 
-> Model GLM 5.2 qua Codex dùng **chuẩn OpenAI** — Base URL có `/v1`: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1`.
+> Model Minimax M2.5 qua Codex dùng **chuẩn OpenAI** — Base URL có `/v1`: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1`.
 
 ***
 
@@ -132,6 +132,7 @@ Sau khi hoàn thành, Codex CLI route toàn bộ request qua GreenNode MaaS vớ
 
 | Tôi muốn tiếp theo... | Đi đến |
 |---|---|
+| Dùng bản có giao diện | [Codex Desktop](../co-giao-dien/codex-desktop.md) |
 | Dùng OpenCode với MaaS | [Dùng OpenCode với GreenNode MaaS](opencode.md) |
 | Kết nối Claude Code với MaaS | [Kết nối Claude Code với GreenNode MaaS](claude-code.md) |
 | Xem usage và billing | [AI Platform Console](https://aiplatform.console.greennode.ai/) |

@@ -156,5 +156,5 @@ After configuration, the tool or SDK calls models through GreenNode MaaS instead
 
 | I want to... | Go to |
 |---|---|
-| Use Claude Code with MaaS | [Connect Claude Code to GreenNode MaaS](connect-claude-code-to-maas.md) |
+| Use Claude Code with MaaS | [Connect Claude Code to GreenNode MaaS](cli-tools/claude-code.md) |
 | View usage and billing | [AI Platform Console](https://aiplatform.console.greennode.ai/) |
