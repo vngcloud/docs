@@ -23,6 +23,10 @@ Farm là một thuật ngữ dùng riêng cho vStorage, farm được chúng tô
 
 Để biết thông tin cụ thể, vui lòng tham khảo tại [đây](../vstorage-la-gi/farm-la-gi.md).
 
+{% hint style="warning" %}
+Khi sử dụng private endpoint, hãy allow CIDR `172.27.0.0/16`.
+{% endhint %}
+
 ***
 
 ## Hạn mức tài nguyên

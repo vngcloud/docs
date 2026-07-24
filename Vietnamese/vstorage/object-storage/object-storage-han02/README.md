@@ -16,6 +16,10 @@ Farm là một thuật ngữ dùng riêng cho vStorage, farm được chúng tô
 
 <table data-full-width="true"><thead><tr><th width="107.80000000000001">Farm</th><th width="211">Farm ID</th><th width="319">vStorage endpoint</th><th>Mục đích sử dụng</th></tr></thead><tbody><tr><td>HAN02</td><td>5d10c8ba-7187-4acc-b8c5-2d67d71c9202</td><td>https://han02.vstorage.vngcloud.vn</td><td>Farm phục vụ đa mục đích với hiệu suất cao và được dùng chung cho dữ liệu lưu trữ tại Region Hà Nội.</td></tr></tbody></table>
 
+{% hint style="warning" %}
+Khi sử dụng private endpoint, hãy allow CIDR `172.27.0.0/16`.
+{% endhint %}
+
 ***
 
 ## Hạn mức tài nguyên
@@ -30,7 +34,7 @@ Các bảng sau đây liệt kê các giá trị tối đa cho tài nguyên lưu
 
 * Per IP
 
-<table data-full-width="true"><thead><tr><th width="167">Storage Class</th><th width="187.091064453125">Request all types</th><th width="174.45458984375">Put request</th><th width="188.364013671875">Get request</th><th>Delete request</th></tr></thead><tbody><tr><td>Gold</td><td>5000  request/s/IP</td><td>2000  request/s/IP</td><td>3000  request/s/IP</td><td>1000  request/s/IP</td></tr><tr><td>Instant Archive</td><td>2500  request/s/IP</td><td>1000  request/s/IP</td><td>1500  request/s/IP</td><td>500  request/s/IP</td></tr><tr><td>Archive</td><td>1000 request/s/IP</td><td>500 request/s/IP</td><td>500  request/s/IP</td><td>100  request/s/IP</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="167">Storage Class</th><th width="187.091064453125">Request all types</th><th width="174.45458984375">Put request</th><th width="188.364013671875">Get request</th><th>Delete request</th></tr></thead><tbody><tr><td>Gold</td><td>5000 request/s/IP</td><td>2000 request/s/IP</td><td>3000 request/s/IP</td><td>1000 request/s/IP</td></tr><tr><td>Instant Archive</td><td>2500 request/s/IP</td><td>1000 request/s/IP</td><td>1500 request/s/IP</td><td>500 request/s/IP</td></tr><tr><td>Archive</td><td>1000 request/s/IP</td><td>500 request/s/IP</td><td>500 request/s/IP</td><td>100 request/s/IP</td></tr></tbody></table>
 
 * Per path
 

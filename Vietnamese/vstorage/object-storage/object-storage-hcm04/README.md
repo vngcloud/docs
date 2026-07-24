@@ -16,6 +16,10 @@ Farm là một thuật ngữ dùng riêng cho vStorage, farm được chúng tô
 
 <table data-full-width="true"><thead><tr><th width="107.80000000000001">Farm</th><th width="211">Farm ID</th><th width="319">vStorage endpoint</th><th>Mục đích sử dụng</th></tr></thead><tbody><tr><td>HCM04</td><td>8b1e9c9b-7123-54a5-ua8f-2d67d71c9204</td><td>https://hcm04.vstorage.vngcloud.vn</td><td>Farm phục vụ đa mục đích với hiệu suất cao và được dùng chung cho dữ liệu lưu trữ tại Region Hồ Chí Minh.</td></tr></tbody></table>
 
+{% hint style="warning" %}
+Khi sử dụng private endpoint, hãy allow CIDR `172.27.0.0/16`.
+{% endhint %}
+
 ***
 
 ## Hạn mức tài nguyên
