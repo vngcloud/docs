@@ -14,6 +14,8 @@ Farm is a term specifically used for vStorage, a farm is defined by us as a syst
 
 <table data-full-width="true"><thead><tr><th width="115">Farm</th><th width="255">Farm ID</th><th width="309">vStorage endpoint</th><th>Mục đích sử dụng</th></tr></thead><tbody><tr><td>HCM04</td><td>8b1e9c9b-7123-54a5-ua8f-2d67d71c9204</td><td>https://hcm04.vstorage.vngcloud.vn</td><td>Multi-purpose server farm with high performance and shared storage in Ho Chi Minh City Region.</td></tr></tbody></table>
 
+{% include "../../../.gitbook/includes/private-endpoint-acl-requirement.md" %}
+
 ***
 
 ## Resource quota <a href="#han-muc-tai-nguyen" id="han-muc-tai-nguyen"></a>
@@ -22,7 +24,7 @@ The tables below list the maximum values for storage resources on your vStorage.
 
 #### Bandwidth <a href="#bandwidth" id="bandwidth"></a>
 
-<table data-full-width="true"><thead><tr><th>Farm</th><th>Download BW Domestic</th><th>Download BW International</th><th>Upload BW Domestic</th><th>Upload BW International</th></tr></thead><tbody><tr><td>HCM04</td><td>10Gbps shared</td><td>300Mbps </td><td>10Gbps shared</td><td>300Mbps </td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Farm</th><th>Download BW Domestic</th><th>Download BW International</th><th>Upload BW Domestic</th><th>Upload BW International</th></tr></thead><tbody><tr><td>HCM04</td><td>10Gbps shared</td><td>300Mbps</td><td>10Gbps shared</td><td>300Mbps</td></tr></tbody></table>
 
 #### Request per limit <a href="#request-per-limit" id="request-per-limit"></a>
 

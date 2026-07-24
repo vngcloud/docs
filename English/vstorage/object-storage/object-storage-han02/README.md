@@ -17,6 +17,8 @@ Farm is a term specifically used for vStorage, a farm is defined by us as a syst
 | HAN02 | 5d10c8ba-7187-4acc-b8c5-2d67d71c9202 | https://han02.vstorage.vngcloud.vn | Multi-purpose server farm with high performance and shared storage in Hanoi Region. |
 | ----- | ------------------------------------ | ---------------------------------- | ----------------------------------------------------------------------------------- |
 
+{% include "../../../.gitbook/includes/private-endpoint-acl-requirement.md" %}
+
 ***
 
 ## Resource quota
@@ -31,7 +33,7 @@ The tables below list the maximum values for storage resources on your vStorage.
 
 * Per IP
 
-<table data-full-width="true"><thead><tr><th width="167">Storage Class</th><th width="187.091064453125">Request all types</th><th width="174.45458984375">Put request</th><th width="188.364013671875">Get request</th><th>Delete request</th></tr></thead><tbody><tr><td>Gold</td><td>5000  request/s/IP</td><td>2000  request/s/IP</td><td>3000  request/s/IP</td><td>1000  request/s/IP</td></tr><tr><td>Instant Archive</td><td>2500  request/s/IP</td><td>1000  request/s/IP</td><td>1500  request/s/IP</td><td>500  request/s/IP</td></tr><tr><td>Archive</td><td>1000 request/s/IP</td><td>500 request/s/IP</td><td>500  request/s/IP</td><td>100  request/s/IP</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="167">Storage Class</th><th width="187.091064453125">Request all types</th><th width="174.45458984375">Put request</th><th width="188.364013671875">Get request</th><th>Delete request</th></tr></thead><tbody><tr><td>Gold</td><td>5000 request/s/IP</td><td>2000 request/s/IP</td><td>3000 request/s/IP</td><td>1000 request/s/IP</td></tr><tr><td>Instant Archive</td><td>2500 request/s/IP</td><td>1000 request/s/IP</td><td>1500 request/s/IP</td><td>500 request/s/IP</td></tr><tr><td>Archive</td><td>1000 request/s/IP</td><td>500 request/s/IP</td><td>500 request/s/IP</td><td>100 request/s/IP</td></tr></tbody></table>
 
 * Per path
 

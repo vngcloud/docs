@@ -17,6 +17,8 @@ Farm is a term specifically used for vStorage. A farm is defined by us as a syst
 
 <table data-full-width="true"><thead><tr><th>Farm</th><th>Farm ID</th><th>Authentication endpoint</th><th>vStorage endpoint</th><th>Purpose of use</th></tr></thead><tbody><tr><td>HCM03</td><td>8b1e9c9b-7123-54a5-ua8f-2d67d71c9212</td><td>https://hcm03.auth.vstorage.vngcloud.vn/v3</td><td>https://hcm03.vstorage.vngcloud.vn</td><td>The farm serves multiple purposes and is shared for the project's initial data in the HoChiMinh Region.</td></tr><tr><td>HCM03</td><td>8b1e9c9b-7123-54a5-ua8f-2d67d71c9212</td><td>https://hcm03.auth.vstorage.vngcloud.vn/v3</td><td>https://hcm03-encrypt-vstorage.vngcloud.vn</td><td>When using this encryption endpoint, your data will be automatically encrypted when uploading files to vStorage in accordance with the AES-256 encryption standard.</td></tr></tbody></table>
 
+{% include "../../../.gitbook/includes/private-endpoint-acl-requirement.md" %}
+
 To find specific information please refer [here](../what-is-vstorage/what-is-farm.md).
 
 ***
