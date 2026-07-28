@@ -34,15 +34,15 @@ Các bảng sau đây liệt kê các giá trị tối đa cho tài nguyên lưu
 
 * Per IP
 
-<table data-full-width="true"><thead><tr><th width="167">Storage Class</th><th width="198.45458984375">Request all types</th><th width="229">Put request</th><th>Get request</th><th>Delete request</th></tr></thead><tbody><tr><td>Instant Archive</td><td>2500 request/s/IP</td><td>1000 request/s/IP</td><td>1500 request/s/IP</td><td>500 request/s/IP</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="167">Storage Class</th><th width="229">Put + Delete request</th><th>Get request</th></tr></thead><tbody><tr><td>Gold</td><td>200 request/s/IP</td><td>500 request/s/IP</td></tr><tr><td>Instant Archive</td><td>200 request/s/IP</td><td>500 request/s/IP</td></tr></tbody></table>
 
 * Per path
 
-<table data-full-width="true"><thead><tr><th width="171">Storage Class</th><th width="199.727294921875">Request all types</th><th width="229">Put request</th><th>Get request</th><th>Delete request</th></tr></thead><tbody><tr><td>Instant Archive</td><td>2500 request/s/path</td><td>1000 request/s/path</td><td>1500 request/s/path</td><td>500 request/s/path</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="171">Storage Class</th><th width="199.727294921875">Request all types</th><th width="229">Put request</th><th>Get request</th><th>Delete request</th></tr></thead><tbody><tr><td>Gold</td><td>4000 request/s/path</td><td>1500 request/s/path</td><td>2500 request/s/path</td><td>1000 request/s/path</td></tr><tr><td>Instant Archive</td><td>2000 request/s/path</td><td>800 request/s/path</td><td>1500 request/s/path</td><td>400 request/s/path</td></tr></tbody></table>
 
 ### Các hạn mức khác
 
-<table data-full-width="true"><thead><tr><th>Item</th><th>Limit</th></tr></thead><tbody><tr><td>Số lượng object tối đa được lưu trữ trên một bucket</td><td>600 triệu objects</td></tr><tr><td>Số lượng container/ bucket tối đa có thể tạo trên một project</td><td>Không giới hạn</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Item</th><th>Limit</th></tr></thead><tbody><tr><td>Số lượng object tối đa được lưu trữ trên một bucket</td><td>600 triệu objects</td></tr><tr><td>Số lượng container/ bucket tối đa có thể tạo trên một project</td><td>1000</td></tr></tbody></table>
 
 ***
 
