@@ -39,7 +39,7 @@ To configure this feature, you have two options:
 
 1.  Go to the Database management screen, click on the DB Instance you want to configure.
 
-    <figure><img src="../../.gitbook/assets/image (242) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
 2. Then, click "Edit DB Setting."
 3. Scroll down to the "Backup settings" section, and you can configure the following information:
    * **Automatic daily backup:** Enable/disable the automatic daily backup feature.
@@ -56,7 +56,7 @@ To perform the restoration process, go to the Backup management screen and follo
 
 1.  Click on the backup you want to restore and choose "Action" -> "Restore." The Restore process is similar to creating a new MDS Instance.
 
-    <figure><img src="../../.gitbook/assets/image (241) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (241).png" alt=""><figcaption></figcaption></figure>
 2. On the MDS Instance restoration screen, you can also choose information about the new MDS Instance configuration in the Instance flavor, DB instance setting, Network & Security, DB Option, and Backup setting sections.
 3. After ensuring the information is correct, click the "Restore" button in the upper right corner.
 4. Then, return to the Database management screen, and you will see a new MDS Instance being created. The status of this new MDS Instance will also change from "Building/Build" to "Active" if successful.

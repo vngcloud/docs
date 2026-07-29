@@ -15,7 +15,7 @@ You can access the Agent Marketplace in two ways:
 * **Option 1**: Go to the GreenNode homepage at [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/). From the main dashboard, navigate to **AI Stack** and select **Agentbase** â†’ **Agent Marketplace**.
 * **Option 2**: Go directly to [https://aiplatform.console.greennode.ai/agent-marketplace](https://aiplatform.console.greennode.ai/agent-marketplace).
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 154428 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 154428.png" alt=""><figcaption></figcaption></figure>
 
 ### Deploy an OpenClaw Instance
 
@@ -23,7 +23,7 @@ On the Agent Marketplace, find the **OpenClaw Featured Card** or click **"Deploy
 
 #### Step 1: Configure Your Deployment
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 154505 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 154505.png" alt=""><figcaption></figcaption></figure>
 
 The configuration screen has 3 sections:
 
@@ -71,7 +71,7 @@ The **"Setting Up Your Workspace"** screen displays a loading spinner while the 
 
 #### Step 3: Deploy Success
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 140457 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 140457.png" alt=""><figcaption></figcaption></figure>
 
 Once provisioning is complete, the Deploy Success screen shows your instance details:
 
@@ -95,7 +95,7 @@ In the Agentbase interface, select **My Agents** from the navigation menu. This 
 
 Each instance in the list shows: instance name, status, AI model in use, version, and tags.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 154608 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 154608.png" alt=""><figcaption></figcaption></figure>
 
 ### Open an Instance
 

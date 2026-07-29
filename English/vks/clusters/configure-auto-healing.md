@@ -33,7 +33,7 @@ Before configuring Auto Healing, IAM-user accounts must be granted the permissio
 
 ## 3. How it works
 
-<figure><img src="../../.gitbook/assets/vks-auto-healing-architecture (1).png" alt="Auto Healing flow diagram"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-auto-healing-architecture.png" alt="Auto Healing flow diagram"><figcaption></figcaption></figure>
 
 ***
 
@@ -186,7 +186,7 @@ Cluster of 20 nodes, `Unhealthy Range = [2-5]`:
 | **Max Unhealthy** | `40%`         | Stop replacement when more than 40% of nodes are faulty |
 | **Timeout**       | `5`           | Wait 5 minutes before marking a node as unhealthy       |
 
-<figure><img src="../../.gitbook/assets/vks-auto-healing-create (1).png" alt="Auto Healing configuration form when creating cluster"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-auto-healing-create.png" alt="Auto Healing configuration form when creating cluster"><figcaption></figcaption></figure>
 
 4. Click **Create** to create the cluster
 
@@ -203,7 +203,7 @@ If you skip the Auto Healing section, the system automatically enables it with d
 1. Select **VKS** → **Clusters**
 2. Click the name of the cluster you want to update
 
-<figure><img src="../../.gitbook/assets/vks-auto-healing-edit-1 (1).png" alt="Cluster detail page showing Auto Healing row with Edit button"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-auto-healing-edit-1.png" alt="Cluster detail page showing Auto Healing row with Edit button"><figcaption></figcaption></figure>
 
 **Step 2: Edit the Auto Healing configuration**
 
@@ -212,7 +212,7 @@ If you skip the Auto Healing section, the system automatically enables it with d
 1. Locate the **Auto Healing** row on the Cluster details page → click **Edit**
 2. Update the parameters as needed
 
-<figure><img src="../../.gitbook/assets/vks-auto-healing-edit-2 (1).png" alt="Edit Auto Healing dialog"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-auto-healing-edit-2.png" alt="Edit Auto Healing dialog"><figcaption></figcaption></figure>
 
 3. Click **Save** to apply the changes
 

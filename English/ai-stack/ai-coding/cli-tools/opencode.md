@@ -1,4 +1,4 @@
-# Use OpenCode with GreenNode MaaS
+# OpenCode
 
 > Guide to configuring [OpenCode](https://opencode.ai) — a TUI coding assistant — to call a model via GreenNode MaaS through the `@ai-sdk/openai-compatible` provider, billed via internal credit-tokens.
 
@@ -68,15 +68,15 @@ Create an `opencode.json` file at your project root:
 
 **Field explanations:**
 
-| Field | Purpose |
-|---|---|
-| `$schema` | Enables autocomplete/validation in your editor |
-| `model` | Default model — format `<provider-key>/<model-id>` |
-| `provider.MAAS-chat` | Provider key — must exactly match the part before `/` in `model` |
-| `npm` | Adapter package — `@ai-sdk/openai-compatible` works for any OpenAI-style endpoint |
-| `options.baseURL` | MaaS endpoint, ending with `/v1` |
-| `options.apiKey` | MaaS token — use `{env:MAAS_API_KEY}` instead of hardcoding |
-| `models` | List of models exposed from this provider |
+| Field                | Purpose                                                                           |
+| -------------------- | --------------------------------------------------------------------------------- |
+| `$schema`            | Enables autocomplete/validation in your editor                                    |
+| `model`              | Default model — format `<provider-key>/<model-id>`                                |
+| `provider.MAAS-chat` | Provider key — must exactly match the part before `/` in `model`                  |
+| `npm`                | Adapter package — `@ai-sdk/openai-compatible` works for any OpenAI-style endpoint |
+| `options.baseURL`    | MaaS endpoint, ending with `/v1`                                                  |
+| `options.apiKey`     | MaaS token — use `{env:MAAS_API_KEY}` instead of hardcoding                       |
+| `models`             | List of models exposed from this provider                                         |
 
 {% hint style="warning" %}
 Common mistake: setting `"model"` to a name that doesn't match a registered provider key. OpenCode splits on the first `/` to find the provider — if it doesn't match, the model won't load. Always use `MAAS-chat/openai/gpt-oss-120b`.
@@ -132,17 +132,16 @@ Don't hardcode your API key directly in `opencode.json` if that file gets commit
 
 ## Step 5 — Run OpenCode and select a model
 
-1. Navigate to your project directory and run:
+1.  Navigate to your project directory and run:
 
-   ```bash
-   opencode
-   ```
+    ```bash
+    opencode
+    ```
 
-   OpenCode starts with `MAAS-chat/openai/gpt-oss-120b` as the default model.
-
+    OpenCode starts with `MAAS-chat/openai/gpt-oss-120b` as the default model.
 2. Switch models within the session with the `/models` command, then choose **MAAS chat → openai/gpt-oss-120b** from the list.
 
-<figure><img src="../../../.gitbook/assets/Agentbase-image/using-opencode-with-maas.png" alt=""><figcaption><p>OpenCode running with the openai/gpt-oss-120b model via GreenNode MaaS</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/using-opencode-with-maas (1).png" alt=""><figcaption><p>OpenCode running with the openai/gpt-oss-120b model via GreenNode MaaS</p></figcaption></figure>
 
 ***
 
@@ -163,13 +162,13 @@ Then select via `/models`, or change the top-level `model` to the new `MAAS-chat
 
 ## Troubleshooting
 
-| Symptom | Cause | Fix |
-|---|---|---|
-| `provider not found` / model won't load | `model` value doesn't match the provider key | Use `MAAS-chat/openai/gpt-oss-120b` |
-| `401 Unauthorized` | Wrong, expired, or not-yet-ACTIVE API key | Re-export `MAAS_API_KEY`; rotate the token in the MAAS Console |
-| `404` when sending a request | Wrong Base URL or missing `/v1` | Check `baseURL` ends with `/v1` |
-| Connection timeout | Endpoint unreachable from the current network | Check VPN / connection to `*.api.vngcloud.vn` |
-| Model errors but auth is correct | Wrong model ID | Use the exact ID published by MaaS (`openai/gpt-oss-120b`) |
+| Symptom                                 | Cause                                         | Fix                                                            |
+| --------------------------------------- | --------------------------------------------- | -------------------------------------------------------------- |
+| `provider not found` / model won't load | `model` value doesn't match the provider key  | Use `MAAS-chat/openai/gpt-oss-120b`                            |
+| `401 Unauthorized`                      | Wrong, expired, or not-yet-ACTIVE API key     | Re-export `MAAS_API_KEY`; rotate the token in the MAAS Console |
+| `404` when sending a request            | Wrong Base URL or missing `/v1`               | Check `baseURL` ends with `/v1`                                |
+| Connection timeout                      | Endpoint unreachable from the current network | Check VPN / connection to `*.api.vngcloud.vn`                  |
+| Model errors but auth is correct        | Wrong model ID                                | Use the exact ID published by MaaS (`openai/gpt-oss-120b`)     |
 
 ***
 
@@ -177,11 +176,11 @@ Then select via `/models`, or change the top-level `model` to the new `MAAS-chat
 
 Once done, OpenCode routes all requests through GreenNode MaaS. Usage is logged on the [AI Platform Console → Usage](https://aiplatform.console.greennode.ai/).
 
-| I want to next... | Go to |
-|---|---|
-| Use Codex with Minimax via MaaS | [Use Codex with Minimax via GreenNode MaaS](codex-cli.md) |
-| Connect Claude Code to MaaS | [Connect Claude Code to GreenNode MaaS](claude-code.md) |
-| View usage and billing | [AI Platform Console](https://aiplatform.console.greennode.ai/) |
+| I want to next...               | Go to                                                           |
+| ------------------------------- | --------------------------------------------------------------- |
+| Use Codex with Minimax via MaaS | [Use Codex with Minimax via GreenNode MaaS](codex-cli.md)       |
+| Connect Claude Code to MaaS     | [Connect Claude Code to GreenNode MaaS](claude-code.md)         |
+| View usage and billing          | [AI Platform Console](https://aiplatform.console.greennode.ai/) |
 
 ***
 

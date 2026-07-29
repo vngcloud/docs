@@ -60,7 +60,7 @@ If you have not used any GreenNode services (have not registered an account with
 4. Select **Folder path** : if you only want to transfer data of a folder in the container, select the folder you want to transfer data to in this section. For example:
    * To move data from container01/folder01/subfolder02 to vStorage, you need to select folder01 then select subfolder02.
    * To transfer all data in container01, leave this field blank.
-5. Enter **Access Key/ Secret Key** : enter your access key and secret key. This S3 key pair is created and managed via IAM, please refer to [IAM for vStorage](../../identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vstorage.md) .
+5. Enter **Access Key/ Secret Key** : enter your access key and secret key. This S3 key pair is created and managed via IAM, please refer to [IAM for vStorage](../../../identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vstorage.md) .
 
 **Step 4.2:** After entering all the required information in the sections above, you need to check the connection by clicking the **Test connection** button. At this point, our system will verify the information and display the results. If the connection is successful, you will receive a " **Connection successful** " notification. If the connection fails, you will receive an error notification with a detailed description of the error.
 
@@ -79,7 +79,7 @@ If you have not used any GreenNode services (have not registered an account with
 4. Select **Folder path** : if you only want to transfer data of a folder in the container, select the folder you want to transfer data to in this section. For example:
    * To move data from container01/folder01/subfolder02 to vStorage, you need to select folder01 then select subfolder02.
    * To transfer all data in container01, leave this field blank.
-5. Enter **Access Key/ Secret Key** : enter your access key and secret key. This S3 key pair is created and managed via IAM, please refer to [IAM for vStorage](../../identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vstorage.md) .
+5. Enter **Access Key/ Secret Key** : enter your access key and secret key. This S3 key pair is created and managed via IAM, please refer to [IAM for vStorage](../../../identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vstorage.md) .
 
 **Step 5.2:** After entering all the required information in the fields above, you can choose to test the connection by clicking the **Test connection** button. Our system will then verify the validity of the information and display the results. If the connection is successful, you will receive a " **Connection successful** " notification. If the connection fails, you will receive an error message with detailed error descriptions.
 
@@ -119,7 +119,7 @@ If you have not used any GreenNode services (have not registered an account with
    1. Select **Region** : where your container is located. For example: HCM03
    2. Select **Project** : the project containing the container to which you want to transfer data.
    3. Select **Container** : the name of your source container on vStorage.
-   4. **Access Key/ Secret Key** : enter your access key and secret key. This S3 key pair is created and managed via IAM, please refer to [IAM for vStorage](../../identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vstorage.md) .
+   4. **Access Key/ Secret Key** : enter your access key and secret key. This S3 key pair is created and managed via IAM, please refer to [IAM for vStorage](../../../identity-and-access-management-iam/cach-phan-quyen-iam-cho-dich-vu-vng-cloud/iam-cho-vstorage.md) .
 3. Once you have entered all the required information in the fields above, you can check the connection by clicking the **Test connection** button. At this point, our system will validate the information and display the results. If the connection is successful, you will receive a " **Connection successful** " message. If the connection fails, you will receive an error message with a detailed description of the error.
 
 **Step 6.5:** Select **Logging Option** if you want to push log transfers to the vMonitor Platform. To perform log pushing, you need at least 1 log project on the vMonitor Platform. For details, refer to Working with Log Project.

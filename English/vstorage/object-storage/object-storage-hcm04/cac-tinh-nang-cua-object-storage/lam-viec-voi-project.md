@@ -55,9 +55,9 @@ Create a project by following the steps below:
 8. Select **Period** and check/uncheck **Auto-renew** according to your needs.
 9. **Go through the Checkout** steps and your **Project** will be created.
 
-<figure><img src="../../../../.gitbook/assets/image (105) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (133) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -77,7 +77,7 @@ To view the properties for a project, you can:
 * **History** : Provides historical information affecting the project including action type, action status, time the action occurred, and a detailed description of the action if available.
 * **Connection Information** : Provides commands and configuration files to connect the project to S3.
 
-<figure><img src="../../../../.gitbook/assets/image (25) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (25) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -96,7 +96,7 @@ To change the quota for a project, you can:
 
 After you successfully complete the above 6 steps, the new total **quota** value after change will be updated on the general information of the project you selected.
 
-<figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -215,9 +215,9 @@ To set up automatic growth for a project, you can:
 * If the capacity increase **fails** , the user will receive an email notification. After two consecutive auto-scaling failures, our system will stop sending email notifications to you. You need to proactively access vStorage to manually resize the project according to the instructions above.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-11 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-11.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-24 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-24.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -243,9 +243,9 @@ To set up automatic alert for a project, you can:
 * **The vStorage system will perform a 2-times per day** usage alert check to automatically alert usage based on the set threshold.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-47 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-47.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-57 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2026-05-04 13-45-57.png" alt=""><figcaption></figcaption></figure>
 
 ***
 

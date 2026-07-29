@@ -8,11 +8,11 @@
 
 When initializing Live Stream, Object Download,... you can initialize Page Rule by selecting **Create Page Rule** . A Rule will be executed when there is a URI request that matches the conditions defined in the Rule.
 
-<figure><img src="../../.gitbook/assets/image (375) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (375).png" alt=""><figcaption></figcaption></figure>
 
 After you select Create Page Rule, the screen displays as follows:
 
-<figure><img src="../../.gitbook/assets/image (376) (2).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (376).png" alt="" width="375"><figcaption></figcaption></figure>
 
 In there:
 
@@ -35,7 +35,7 @@ For details, please refer to the table below.
 
 Each Page Rule will have different actions shown in the table below. “Order” is to arrange the position of the rules, the smaller the number, the higher the priority of execution.
 
-<figure><img src="../../.gitbook/assets/image (377) (1) (2).png" alt="" width="279"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (377).png" alt="" width="279"><figcaption></figcaption></figure>
 
 Once created, select **Save changes** to update the changes.
 

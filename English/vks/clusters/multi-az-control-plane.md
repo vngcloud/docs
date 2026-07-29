@@ -47,7 +47,7 @@ To create a Multi-AZ Cluster, please refer to the guide [here](../getting-starte
 
 The diagram below illustrates the architecture of a Multi-AZ Cluster:
 
-<figure><img src="../../.gitbook/assets/VKS_HA&#x26;Multi AZ (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/VKS_HA&#x26;Multi AZ.png" alt=""><figcaption></figcaption></figure>
 
 **Key components:**
 
@@ -63,7 +63,7 @@ The diagram below illustrates the architecture of a Multi-AZ Cluster:
 
 On the Kubernetes Cluster list page, you can identify Multi-AZ Clusters through the **Control Plane Availability** column:
 
-<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-list-page (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-list-page.png" alt=""><figcaption></figcaption></figure>
 
 | Badge                          | Meaning                                          |
 | ------------------------------ | ------------------------------------------------ |
@@ -78,7 +78,7 @@ When accessing the detail page of a Multi-AZ Cluster:
 
 Displays an additional **Control Plane Availability** field with the value **Multi-AZ** (dark blue badge)
 
-<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-detail-general-info (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-detail-general-info.png" alt=""><figcaption></figcaption></figure>
 
 **2. Network Section**
 
@@ -94,7 +94,7 @@ Subnets (2)
 
 * Click the **copy** icon next to the Subnet ID to copy it to clipboard
 
-<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-detail-network (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vks-multi-az-cluster-detail-network.png" alt=""><figcaption></figcaption></figure>
 
 **3. Node Group Tab**
 

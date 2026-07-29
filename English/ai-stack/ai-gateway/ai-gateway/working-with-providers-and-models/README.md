@@ -7,7 +7,7 @@ In addition to adding models during AI Gateway creation, you can also add, edit,
 * Go to the Gateway detail page.
 * Click the "**Manage Provider & Models**" button.
 
-<figure><img src="../../../../.gitbook/assets/image (431) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (431).png" alt=""><figcaption></figcaption></figure>
 
 #### Step 2: The "Connect Gateway to AI Models" interface will appear.
 
@@ -22,7 +22,7 @@ In addition to adding models during AI Gateway creation, you can also add, edit,
 
     Click the - icon next to the Provider name to remove the entire Provider from the Gateway.
 
-<figure><img src="../../../../.gitbook/assets/image (432) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (432).png" alt=""><figcaption></figcaption></figure>
 
 #### Step 3: After completing the configuration, click “Save” to apply the changes.
 

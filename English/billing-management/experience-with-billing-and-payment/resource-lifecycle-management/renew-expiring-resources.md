@@ -28,7 +28,7 @@ After 30 days from the end of the previous billing cycle. The system automatical
 
 ### Lifecycle Summary Table
 
-<figure><img src="../../../.gitbook/assets/unknown (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
 
 | Stage                | Status     | Service         | Data Status | Renewable |
 | -------------------- | ---------- | --------------- | ----------- | --------- |
@@ -56,11 +56,11 @@ The new service period starts immediately after the previous subscription period
 
 **Renew resources before expiration**
 
-<figure><img src="../../../.gitbook/assets/unknown (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (1).png" alt=""><figcaption></figcaption></figure>
 
 **Renew resources after expiration**
 
-<figure><img src="../../../.gitbook/assets/unknown (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Renewal Methods
 

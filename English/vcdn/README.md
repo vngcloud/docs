@@ -2,7 +2,7 @@
 
 **vCDN** (**GreenNode Content Delivery Network**) is a content delivery network developed by **GreenNode**. With servers strategically located in various locations and equipped with extremely high bandwidth, vCDN accelerates the speed of websites and mobile applications. This enhances user experience and increases customer satisfaction.
 
-<figure><img src="../.gitbook/assets/image (93) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

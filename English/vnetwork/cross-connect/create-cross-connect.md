@@ -8,7 +8,7 @@
 
 **Step 3:** The screen will navigate to the Cross Connect List page;
 
-<figure><img src="../../.gitbook/assets/image111 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image111.png" alt=""><figcaption></figcaption></figure>
 
 **Step 4:** On the Cross Connect list screen, click '<mark style="color:blue;">**Create a Cross Connect**</mark>';
 
@@ -19,7 +19,7 @@
 * <mark style="color:blue;">**Cross Connect Configuration**</mark>: Select the Requester (default according to the configured region) and Accepter as the two regions that need to communicate with each other;
 * <mark style="color:blue;">**Bandwidth Configuration**</mark>: Select the appropriate bandwidth package according to your needs.
 
-<figure><img src="../../.gitbook/assets/image2222 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image2222.png" alt=""><figcaption></figcaption></figure>
 
 **Step 6:** On the right side of the screen, review the package summary and bandwidth costs to create the Cross Connect, then click '**Create**' to confirm and proceed with payment;
 

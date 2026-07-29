@@ -51,7 +51,7 @@ After a Configuration Group is created, you can edit parameters in this Configur
 
 ### **Attach Configuration Group to OpenSearch Cluster**
 
-**Step 1: Select** the icon <img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="line"> on the cluster where you want to change the configuration group
+**Step 1: Select** the icon <img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line"> on the cluster where you want to change the configuration group
 
 **Step 2:** Select **Edit Configuration group**
 

@@ -10,7 +10,7 @@ To enable communication between two regions via Cross Connect, it is necessary t
 
 ### <mark style="color:blue;">\[Error Code 2010] An existing VPC connection pair already exists.</mark>
 
-<figure><img src="../../.gitbook/assets/image (289) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (289).png" alt=""><figcaption></figcaption></figure>
 
 From the diagram, we can see that:
 
@@ -20,7 +20,7 @@ From the diagram, we can see that:
 
 ### <mark style="color:blue;">\[Error Code 2011] Overlapping CIDR of a VPC connection in the Cross Connect at the Requester.</mark>
 
-<figure><img src="../../.gitbook/assets/image (290) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (290).png" alt=""><figcaption></figcaption></figure>
 
 From the diagram, we can see that:
 
@@ -29,7 +29,7 @@ From the diagram, we can see that:
 
 ### <mark style="color:blue;">\[Error Code 2013] Overlapping CIDR of a VPC connection in the Cross Connect at the Accepter.</mark>
 
-<figure><img src="../../.gitbook/assets/image (291) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (291).png" alt=""><figcaption></figcaption></figure>
 
 From the diagram, we can see that:
 

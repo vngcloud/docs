@@ -48,4 +48,4 @@ The secondary authorization system allows customers to manage access and operati
 
 **Step 5:** Select **Save** to apply the changes.
 
-<figure><img src="../.gitbook/assets/image (378) (1) (2).png" alt="" width="371"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (378).png" alt="" width="371"><figcaption></figcaption></figure>

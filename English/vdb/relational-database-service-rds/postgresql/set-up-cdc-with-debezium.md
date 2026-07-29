@@ -15,7 +15,7 @@
 
 CDC captures all data changes (INSERT, UPDATE, DELETE) from PostgreSQL and streams them to external systems in real time.
 
-![CDC architecture with Debezium](<../../../.gitbook/assets/vdb-cdc-debezium-architecture (1).png>)
+![CDC architecture with Debezium](../../../.gitbook/assets/vdb-cdc-debezium-architecture.png)
 
 |                               | Logical Replication        | CDC (Debezium)             |
 | ----------------------------- | -------------------------- | -------------------------- |
@@ -113,29 +113,29 @@ Use the **username and password of your admin account** (already granted `REPLIC
 }
 ```
 
-| Parameter             | Description                                                                                                                                                              |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `database.hostname`   | Hostname provided by GreenNode                                                                                                                                           |
-| `database.port`       | PostgreSQL connection port                                                                                                                                                |
-| `database.user`       | Username of your admin account                                                                                                                                           |
-| `database.password`   | Password of your admin account                                                                                                                                            |
-| `database.dbname`     | Source database name                                                                                                                                                      |
-| `topic.prefix`        | Prefix for Kafka topic names. Each table is published to `<prefix>.<schema>.<table>` — for example: prefix `pg-cdc` → topic `pg-cdc.public.orders`                       |
-| `plugin.name`         | Logical decoding plugin (built-in since PG 10, no extension needed)                                                                                                       |
-| `publication.name`    | Name of the Publication created in Step 3                                                                                                                                 |
-| `slot.name`           | Replication slot name — use a meaningful name for easier management                                                                                                       |
-| `table.include.list`  | List of tables to capture (format: `schema.table`)                                                                                                                        |
-| `snapshot.mode`       | Controls whether the connector reads existing table data on startup. In the example, `initial` reads all existing data on first startup, then only records new changes. |
+| Parameter            | Description                                                                                                                                                             |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `database.hostname`  | Hostname provided by GreenNode                                                                                                                                          |
+| `database.port`      | PostgreSQL connection port                                                                                                                                              |
+| `database.user`      | Username of your admin account                                                                                                                                          |
+| `database.password`  | Password of your admin account                                                                                                                                          |
+| `database.dbname`    | Source database name                                                                                                                                                    |
+| `topic.prefix`       | Prefix for Kafka topic names. Each table is published to `<prefix>.<schema>.<table>` — for example: prefix `pg-cdc` → topic `pg-cdc.public.orders`                      |
+| `plugin.name`        | Logical decoding plugin (built-in since PG 10, no extension needed)                                                                                                     |
+| `publication.name`   | Name of the Publication created in Step 3                                                                                                                               |
+| `slot.name`          | Replication slot name — use a meaningful name for easier management                                                                                                     |
+| `table.include.list` | List of tables to capture (format: `schema.table`)                                                                                                                      |
+| `snapshot.mode`      | Controls whether the connector reads existing table data on startup. In the example, `initial` reads all existing data on first startup, then only records new changes. |
 
 **`snapshot.mode` values:**
 
-| Value                | Meaning                                                                                   |
-| --------------------- | -------------------------------------------------------------------------------------------- |
-| `initial` (default)  | Reads all existing data on first startup, then only records new changes                    |
-| `always`              | Re-reads all existing data on every startup                                                |
-| `no_data`             | Does not read existing data — only records changes that occur after the connector starts   |
-| `initial_only`        | Reads existing data once, then stops                                                       |
-| `when_needed`         | Reads existing data only when the connector determines it's necessary                      |
+| Value               | Meaning                                                                                  |
+| ------------------- | ---------------------------------------------------------------------------------------- |
+| `initial` (default) | Reads all existing data on first startup, then only records new changes                  |
+| `always`            | Re-reads all existing data on every startup                                              |
+| `no_data`           | Does not read existing data — only records changes that occur after the connector starts |
+| `initial_only`      | Reads existing data once, then stops                                                     |
+| `when_needed`       | Reads existing data only when the connector determines it's necessary                    |
 
 See all options at [Debezium PostgreSQL Connector — Snapshot properties](https://debezium.io/documentation/reference/stable/connectors/postgresql.html#postgresql-connector-snapshot-properties).
 

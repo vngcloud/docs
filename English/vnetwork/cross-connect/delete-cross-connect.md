@@ -11,7 +11,7 @@ Users can still delete a Cross Connect. However, to delete it, the following ste
 5. On the Cross Connect detail screen, in the **Connections** tab, hover over the VPC connections to display the delete icon, then click the delete icon;
 6. Confirm the deletion of the VPC connection from the Cross Connect.
 
-<figure><img src="../../.gitbook/assets/11111 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/11111.png" alt=""><figcaption></figcaption></figure>
 
 **Step 2**: Delete the Cross Connect.
 
@@ -19,4 +19,4 @@ Users can still delete a Cross Connect. However, to delete it, the following ste
 2. For the Cross Connect you wish to delete, click the 'Delete' action to perform the deletion;
 3. Confirm the deletion of the Cross Connect. Once deleted, it cannot be recovered.
 
-<figure><img src="../../.gitbook/assets/222222 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/222222.png" alt=""><figcaption></figcaption></figure>

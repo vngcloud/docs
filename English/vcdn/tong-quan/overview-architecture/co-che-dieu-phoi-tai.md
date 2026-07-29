@@ -7,7 +7,7 @@
 * Load of connections between POPs.
 * Load of each POP.
 
-<figure><img src="../../../.gitbook/assets/image (147) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (147).png" alt=""><figcaption></figcaption></figure>
 
 The vCDN Request Router system will decide to send back the best possible IP Server to the user at that time. Specifically, the coordination rules will be implemented as follows (priority from top to bottom):
 

@@ -11,11 +11,11 @@ description: >-
 
 1. After creating an Authentication Token, navigate to the token list and select the icon in the **Action** column, as illustrated below, to open the Rate Limit configuration panel.
 
-<figure><img src="../../../.gitbook/assets/image (483) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (483).png" alt=""><figcaption></figcaption></figure>
 
 2. Or you may select **Configure Rate Limit** directly when creating an Authentication Token.
 
-<figure><img src="../../../.gitbook/assets/image (484) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (484).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Create a New Rate Limit Configuration <a href="#id-2.-tao-moi-rate-limit-token" id="id-2.-tao-moi-rate-limit-token"></a>
 
@@ -42,4 +42,4 @@ description: >-
 
 ### 3 Nhấn **Lưu** cấu hình.
 
-<figure><img src="../../../.gitbook/assets/image (485) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (485).png" alt=""><figcaption></figcaption></figure>

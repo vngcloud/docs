@@ -20,6 +20,6 @@ To set up automatic alert for a project, you can:
 * **The vStorage system will perform a 2-times per day** usage alert check to automatically alert usage based on the set threshold.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot from 2026-05-04 16-04-19 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot from 2026-05-04 16-04-19.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot from 2026-05-04 16-04-24 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot from 2026-05-04 16-04-24.png" alt=""><figcaption></figcaption></figure>

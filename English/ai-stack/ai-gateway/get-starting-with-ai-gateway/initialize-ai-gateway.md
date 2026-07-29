@@ -6,7 +6,7 @@ To start using AI Gateway on GreenNode, follow these steps:
 
 **Step 2:** In the left-hand menu, select AI Gateway, then click the Create an AI Gateway button.
 
-<figure><img src="../../../.gitbook/assets/image (467) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (467).png" alt=""><figcaption></figcaption></figure>
 
 **Step 3:** On the Create New Gateway screen, fill in the following information:
 
@@ -19,4 +19,4 @@ To start using AI Gateway on GreenNode, follow these steps:
 
 **Step 4:** Click Create an AI Gateway. Your AI Gateway will be initialized and ready for use.
 
-<figure><img src="../../../.gitbook/assets/image (468) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (468).png" alt=""><figcaption></figcaption></figure>

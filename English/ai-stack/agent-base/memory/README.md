@@ -109,13 +109,13 @@ Before using short-term or long-term memory, you must create a **Memory store** 
 1. Open https://aiplatform.console.greennode.ai/memory
 2. All memory stores shown with: Name, Status, Descriptopn, Event Expiry, Lated updated
 
-![1774584561868](<../../../.gitbook/assets/1774584561868 (1).png>)
+![1774584561868](../../../.gitbook/assets/1774584561868.png)
 
 #### Get Memory Store Details
 
 From the memory list page â†’ click a memory name
 
-![1774584650626](<../../../.gitbook/assets/1774584650626 (1).png>)
+![1774584650626](../../../.gitbook/assets/1774584650626.png)
 
 #### Delete a Memory Store
 
@@ -123,7 +123,7 @@ From the memory list page â†’ click a memory name
 
 1. From memory detailed page â†’ **Delete** â†’ confirm
 
-![1774584735238](<../../../.gitbook/assets/1774584735238 (1).png>)
+![1774584735238](../../../.gitbook/assets/1774584735238.png)
 
 ***
 
