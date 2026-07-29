@@ -1,9 +1,9 @@
-# Bảo mật dữ liệu lưu trữ trên vStorage
+# Data Security stored on vStorage
 
-Mã hóa nội dung các tệp tin (object) được lưu trữ là một giải pháp bảo mật dữ liệu hiệu quả. Bằng cách mã hóa dữ liệu khi lưu trữ, dữ liệu sẽ được biến đổi thành một dạng không thể đọc được đối với những người không có quyền truy cập. Điều này giúp bảo vệ dữ liệu khỏi bị truy cập trái phép, ngay cả khi kẻ tấn công có thể truy cập vào gateway storage của hệ thống.
+Encrypting the content of stored files (objects) is an effective data-security solution. By encrypting data at rest, the data is transformed into a form unreadable to anyone without access rights, protecting it from unauthorized access even if an attacker can reach the system's storage gateway.
 
-GreenNode hiện tại cung cấp cơ chế mã hóa nội dung các tệp tin (object) được lưu trữ trên dịch vụ vStorage như sau:
+GreenNode currently provides the following mechanism for encrypting the content of files (objects) stored on the vStorage service:
 
-* **Mã hóa tại người dùng (Client-side encryption):** Trong cơ chế này, người dùng sẽ chịu trách nhiệm quản lý key và workload của quá trình mã hóa. Dữ liệu sẽ được mã hóa tại máy của người dùng hoặc lớp ứng dụng của người dùng.
+* **Client-side encryption:** the user is responsible for managing the key and the encryption workload. Data is encrypted on the user's machine or at the user's application layer.
 
-Do đó, nếu khách hàng muốn triển khai mã hóa nội dung các tệp tin (object) được lưu trữ trên dịch vụ vStorage của GreenNode, GreenNode khuyến nghị khách hàng sử dụng cơ chế mã hóa tại máy của người dùng.
+Therefore, if a customer wants to encrypt the content of files (objects) stored on GreenNode's vStorage service, GreenNode recommends using the client-side encryption mechanism.

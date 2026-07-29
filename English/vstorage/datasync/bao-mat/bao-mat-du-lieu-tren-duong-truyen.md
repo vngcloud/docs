@@ -1,9 +1,9 @@
-# Bảo mật dữ liệu trên đường truyền
+# Data in Transit Security
 
-Mã hóa đường truyền là một giải pháp bảo mật dữ liệu hiệu quả và phổ biến. Bằng cách mã hóa dữ liệu khi truyền, dữ liệu sẽ được biến đổi thành một dạng không thể đọc được đối với những người không có quyền truy cập. Điều này giúp bảo vệ dữ liệu khỏi bị truy cập trái phép trong quá trình truyền qua mạng. Trong trường hợp của Object Storage, mã hóa đường truyền thường được thực hiện bằng cách sử dụng HTTPS. HTTPS là một giao thức bảo mật dựa trên HTTP, sử dụng mã hóa TLS/SSL để bảo vệ dữ liệu trong quá trình truyền.
+Transport (in-transit) encryption is an effective and widely used data-security solution. By encrypting data during transmission, the data is transformed into a form unreadable to anyone without access rights, protecting it from unauthorized access as it travels over the network. For Object Storage, transport encryption is usually done using HTTPS — a security protocol based on HTTP that uses TLS/SSL encryption to protect data in transit.
 
-Dưới đây là một số lợi ích của việc sử dụng mã hóa đường truyền để bảo mật dữ liệu trên DataSync:
+Some benefits of using transport encryption to secure data on DataSync:
 
-* **Giúp bảo vệ dữ liệu khỏi bị truy cập trái phép:** Mã hóa đường truyền giúp bảo vệ dữ liệu khỏi bị truy cập trái phép trong quá trình truyền qua mạng. Điều này giúp giảm thiểu rủi ro vi phạm dữ liệu.
-* **Giúp tăng cường tính toàn vẹn của dữ liệu:** Mã hóa đường truyền giúp đảm bảo rằng dữ liệu không bị thay đổi hoặc sửa đổi trong quá trình truyền. Điều này giúp bảo vệ dữ liệu khỏi bị giả mạo hoặc thay đổi.
-* **Giúp đáp ứng các yêu cầu quy định:** Nhiều quy định yêu cầu sử dụng mã hóa để bảo vệ dữ liệu nhạy cảm. Bằng cách sử dụng mã hóa đường truyền, các doanh nghiệp có thể đáp ứng các yêu cầu quy định này.
+* **Protects data from unauthorized access:** transport encryption protects data from unauthorized access during transmission over the network, reducing the risk of data breaches.
+* **Strengthens data integrity:** it helps ensure data is not changed or modified during transmission, protecting it from forgery or alteration.
+* **Helps meet regulatory requirements:** many regulations require encryption to protect sensitive data. Using transport encryption helps businesses meet these requirements.

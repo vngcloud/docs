@@ -1,22 +1,22 @@
-# Dừng chạy Transfer Job
+# Stop a Transfer Job
 
-Bạn có thể dừng chạy mọi Transfer job đang chạy hoặc đang được xếp hàng đợi.&#x20;
+You can stop any Transfer Job that is running or queued.
 
-Cụ thể, để dừng chạy một transfer job, hãy làm theo hướng dẫn:&#x20;
+To stop a transfer job, follow these steps:
 
-**Bước 1:** Truy cập vào [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/transfer-job/list)
+**Step 1:** Go to [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/)
 
-**Bước 2:** Tại menu bên trái, chọn mục **Transfer Job**.&#x20;
+**Step 2:** In the left menu, select **Transfer Job**.
 
-**Bước 3:** Trên danh sách các transfer job, hãy chọn một **Transfer Job** mà đang chạy.
+**Step 3:** From the transfer job list, select a **Transfer Job** that is running.
 
-**Bước 4:** Chọn biểu tượng <img src="https://docs.vngcloud.vn/download/thumbnails/73761197/image2024-3-14_10-34-18.png?version=1&#x26;modificationDate=1710387258000&#x26;api=v2" alt="" data-size="line">hoặc chọn <img src="https://docs.vngcloud.vn/download/thumbnails/73761197/image2024-3-14_10-34-37.png?version=1&#x26;modificationDate=1710387278000&#x26;api=v2" alt="" data-size="line"> và chọn <img src="https://docs.vngcloud.vn/download/thumbnails/73761197/image2024-3-14_10-34-58.png?version=1&#x26;modificationDate=1710387298000&#x26;api=v2" alt="" data-size="line">.
+**Step 4:** Select the stop icon, or open the action menu and select the **Stop** action.
 
-**Bước 5:** Ngoài ra bạn cũng có thể chọn vào chi tiết transfer job, chọn biểu tượng <img src="https://docs.vngcloud.vn/download/thumbnails/73761197/image2024-3-14_10-35-47.png?version=1&#x26;modificationDate=1710387348000&#x26;api=v2" alt="" data-size="line">tại mục Lastest run.
+**Step 5:** Alternatively, open the transfer job details and select the stop icon in the **Latest run** section.
 
 {% hint style="info" %}
-**Chú ý:**&#x20;
+**Note:**
 
-Khi bạn thực hiện dừng chạy một Transfer Job, hệ thống DataSync sẽ thực hiện dừng quá trình transfer, kết quả chạy của transfer job này được thu thập tới tới thời điểm mà bạn thực hiện dừng và trạng thái cuối cùng của lần chạy Transfer Job này là Failed.
+When you stop a Transfer Job, the DataSync system stops the transfer process. The run result of this transfer job is collected up to the moment you stop it, and the final status of this run becomes **Failed**.
 {% endhint %}
 

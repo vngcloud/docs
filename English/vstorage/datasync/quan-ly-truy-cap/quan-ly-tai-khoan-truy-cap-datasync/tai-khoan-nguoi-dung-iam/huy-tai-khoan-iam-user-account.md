@@ -1,10 +1,10 @@
-# Hủy tài khoản IAM User Account
+# Delete an IAM User Account
 
-Để hủy (xóa) một tài khoản IAM User Account đã tạo trước đó, hãy làm theo hướng dẫn bên dưới:
+To delete a previously created IAM User Account, follow the guide below:
 
-1. Đăng nhập vào [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/) với tài khoản Root User Account.
-2. Chọn mục **User Account**.
-3. Trên danh sach các IAM User Account đang có, bạn hãy chọn một hoặc nhiều tài khoản người dùng IAM mà bạn muốn hủy bỏ (xóa).
-4. Chọn **Delete**.
+1. Log in to [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/) with your Root User Account.
+2. Select **User Account**.
+3. From the list of existing IAM User Accounts, select one or more accounts you want to delete.
+4. Select **Delete**.
 
-Kể từ thời điểm IAM User Account bị hủy thành công, bạn sẽ không thể sử dụng IAM User Account này để truy xuất vào DataSync. Hãy thận trọng khi thực hiện thao tác hủy (xóa) tài khoản IAM User Account bởi bạn sẽ không thể khôi phục tài khoản đã xóa này. Chi tiết hãy tham khảo thêm tại [đây.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805240)
+From the moment an IAM User Account is successfully deleted, you can no longer use it to access DataSync. Be careful when deleting an IAM User Account, because you cannot recover a deleted account. For details, refer [here](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805240).

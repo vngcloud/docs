@@ -1,72 +1,73 @@
-# Transfer dữ liệu từ Amazon S3 tới vStorage
+# Transfer data from Amazon S3 to vStorage
 
-#### Tổng quan <a href="#transferdulieutuamazons3toivstorage.-tongquan" id="transferdulieutuamazons3toivstorage.-tongquan"></a>
+#### **Overview**
 
-Giả sử tôi đang sử dụng Amazon S3 làm nơi lưu trữ dữ liệu, hiện tại tôi cần chuyển dữ liệu này về vStorage. Việc transfer dữ liệu sẽ diễn ra mỗi ngày trong tuần vào lúc 09:30 AM từ ngày 01/01/2024 đến 10/01/2024, các object được transfer sẽ được gắn tag "froms3", thông báo khi chạy transfer job thành công được gửi tới [example@gmail.com](mailto:example@gmail.com)[.](mailto:myemail@gmail.com.) Chi tiết:&#x20;
+Suppose you use Amazon S3 as your data storage and now need to move this data to vStorage. The transfer runs every day of the week at 09:30 AM from 01/01/2024 to 10/01/2024; the transferred objects are tagged `froms3`; and a notification is sent to `example@gmail.com` when the transfer job runs successfully. Details:
 
 * **Source** information: Amazon S3
   * Region: ap-southeast-1
-  * Endpoint: https://[s3.amazonaws.com](http://s3.amazonaws.com/)
+  * Endpoint: [https://s3.amazonaws.com](https://s3.amazonaws.com)
   * Bucket: bucket-source
   * Access key: accesskeysource
   * Secret key: secretkeysource
 * **Destination** information: vStorage
   * Region: HCM03
-  * Endpoint: [https://hcm03.vstorage.vngcloud.vn](https://hcm03.vstorage.vngcloud.vn/)
+  * Endpoint: [https://hcm03.vstorage.vngcloud.vn](https://hcm03.vstorage.vngcloud.vn)
   * Project: project01
   * Bucket: container01
   * Access key: accesskeydestination
   * Secret key: secretkeydestination
-* **Run**: Daily on 09:00 AM từ 01/01/2024 đến 10/01/2024
-* **Tag**: fromS3
-* **Email** **notification**: example@gmail.com.
+* **Run:** Daily at 09:00 AM from 01/01/2024 to 10/01/2024
+* **Tag:** fromS3
+* **Email notification:** [example@gmail.com](mailto:example@gmail.com)
 
 ***
 
-#### Điều kiện cần <a href="#transferdulieutuamazons3toivstorage.-dieukiencan" id="transferdulieutuamazons3toivstorage.-dieukiencan"></a>
+#### **Prerequisites**
 
-Để đảm bảo việc transfer dữ liệu thành công, bạn cần đảm bảo các thông tin Source và Destination hợp lệ, trong đó:&#x20;
+To ensure a successful transfer, make sure the Source and Destination information is valid, where:
 
-* **Access key và Secret key** tại Source phải có tối thiểu quyền đọc dữ liệu.
-* **Access key và Secret key** tại Destination phải có tối thiểu quyền đọc và ghi dữ liệu.
+* The **Access key and Secret key** at the Source must have at least read permission.
+* The **Access key and Secret key** at the Destination must have at least read and write permission.
 
 ***
 
-#### Tạo Transfer Job <a href="#transferdulieutuamazons3toivstorage.-taotransferjob" id="transferdulieutuamazons3toivstorage.-taotransferjob"></a>
+#### **Create the Transfer Job**
 
-**Bước 1:** Đăng nhập vào [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [đây](https://register.vngcloud.vn/signup).
+**Step 1:** Log in to [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/). If you don't have an account, [register for free](https://register.vngcloud.vn/signup).
 
-**Bước 2:** Nhấp vào nút **Create a transfer job** để bắt đầu tạo job chuyển đổi dữ liệu.
+**Step 2:** Click **Create a transfer job** to start creating a data transfer job.
 
-**Bước 3:** Nhập **Basic configuration,** bao gồm:&#x20;
+**Step 3:** Enter the **Basic configuration**:
 
-1. Nhập **Job name.**Ví dụ: Transfer from S3
-2. Chọn **Source Type** là Amazon S3.
+1. Enter the **Job name**. Example: `Transfer from S3`.
+2. Select **Source Type** as **Amazon S3**.
 
-**Bước 4:** Nhập **Source configuration**, bao gồm:&#x20;
+**Step 4:** Enter the **Source configuration**:
 
-* Chọn **Region:** ap-southeast-1.
-* Nhập **Bucket**: bucket-source.
-* Nhập **Access Key:** accesskeysource
-* Nhập **Secret Key**: secretkeysource
-* Sau khi nhập đẩy đủ thông tin tại các mục bên trên, bạn có thể chọn kiểm tra kết nối bằng cách nhấn vào nút **Test connection**. Lúc này, hệ thống của chúng tôi sẽ kiểm tra tính hợp lệ của thông tin và hiển thị kết quả. Nếu kết nối thành công, bạn sẽ nhận được thông báo "**Connection successful**". Nếu kết nối thất bại, bạn sẽ nhận được thông báo lỗi và mô tả chi tiết về lỗi.
+* Select **Region:** ap-southeast-1.
+* Enter **Bucket:** bucket-source.
+* Enter **Access Key:** accesskeysource.
+* Enter **Secret Key:** secretkeysource.
+* After entering all the information above, you can click **Test connection** to verify it. The system checks the validity and displays the result. If successful, you receive a "**Connection successful**" message; if it fails, you receive an error message with a detailed description.
 
-**Bước 5:** Nhập **Destination configuration**, bao gồm:
+**Step 5:** Enter the **Destination configuration**:
 
-* Chọn **Region**: HCM03.
-* Chọn **Project**: project01.
-* Chọn **Container**: container01.
-* Nhập **Access key**: accesskeydestination
-* Nhập **Secret key**: secretkeydestination
-* Sau khi nhập đẩy đủ thông tin tại các mục bên trên, bạn có thể chọn kiểm tra kết nối bằng cách nhấn vào nút **Test connection**. Lúc này, hệ thống của chúng tôi sẽ kiểm tra tính hợp lệ của thông tin và hiển thị kết quả. Nếu kết nối thành công, bạn sẽ nhận được thông báo "**Connection successful**". Nếu kết nối thất bại, bạn sẽ nhận được thông báo lỗi và mô tả chi tiết về lỗi.
+* Select **Region:** HCM03.
+* Select **Project:** project01.
+* Select **Container:** container01.
+* Enter **Access key:** accesskeydestination.
+* Enter **Secret key:** secretkeydestination.
+* Test the connection as described above.
 
-**Bước 6:** Nhập **Job condition**, bao gồm:
+**Step 6:** Enter the **Job condition**:
 
-* Chọn **Advanced configuration.** Nhập froms3 sau đó chọn **Add.**
-* Chọn **Run schedule (Chạy lập lịch):**
-  * **Chọn Start date: 01/01/2024 09:00**
-  * **Chọn End date: 10/01/2024**
-  * **Chọn Period: Daily.**
-* Chọn **Notification Option.** Nhập [example@gmail.com](mailto:example@gmail.com) sau đó nhấn Add.
+* Select **Advanced configuration**. Enter `froms3`, then select **Add**.
+* Select **Run schedule:**
+  * **Start date:** 01/01/2024 09:00
+  * **End date:** 10/01/2024
+  * **Period:** Daily
+* Select **Notification Option**. Enter [example@gmail.com](mailto:example@gmail.com), then click **Add**.
 
-**Bước 7:** Chọn **Create Transfer Job.**
+**Step 7:** Select **Create Transfer Job**.
+

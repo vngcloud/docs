@@ -1,13 +1,11 @@
-# Quản lý tài khoản truy cập DataSync
+# Managing DataSync access account
 
-#### Tổng quan <a href="#quanlytaikhoantruycapdatasync-tongquan" id="quanlytaikhoantruycapdatasync-tongquan"></a>
+### **Overview**
 
-Bạn có thể sử dụng 2 loại tài khoản để truy cập vào DataSync. Chi tiết 2 loại này bao gồm:
+You can use two types of accounts to access DataSync:
 
-* **Root user account:** Là tài khoản [khởi tạo đầu tiên](https://register.vngcloud.vn/signup) để truy cập vào GreenNode với đầy đủ quyền truy cập vào tất cả dịch vụ tài nguyên trên GreenNode.
-* **IAM user account (User account):** Là tài khoản được tạo ra từ tài khoản Root user account duy nhất với những quyền truy cập phụ thuộc vào chính sách cho phép truy cập được thiết lập từ Root user account.
+* **Root user account:** the [first account you create](https://register.vngcloud.vn/signup) to access GreenNode, with full access to all GreenNode resource services.
+* **IAM user account (User account):** an account created from the single Root user account, with access permissions that depend on the access policies configured by the Root user account.
 
 ***
-
-
 

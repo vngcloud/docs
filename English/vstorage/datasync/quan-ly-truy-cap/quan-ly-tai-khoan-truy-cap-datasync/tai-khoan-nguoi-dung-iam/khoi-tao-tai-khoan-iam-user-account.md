@@ -1,16 +1,17 @@
 # Create an IAM User Account
 
-Để khởi tạo tài khoản người dùng IAM, trước tiên bạn vui lòng tham khảo hướng dẫn các bước thực hiện tại [đây.](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805240) Bên dưới là hướng dẫn chi tiết của chúng tôi nhằm giúp bạn khởi tạo tài khoản người dùng IAM để truy cập vào tài nguyên của DataSync:
+To create an IAM user account, first refer to the step-by-step guide [here](https://docs.vngcloud.vn/pages/viewpage.action?pageId=59805240). Below is our detailed guide to help you create an IAM user account for accessing DataSync resources:
 
-1. Đăng nhập vào [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/) với tài khoản Root User Account.
-2. Chọn mục **User Account**.
-3. Chọn **Create a User Account.**
-4. Tại mục **Account username**, nhập **Account username** mà bạn mong muốn. Tên của IAM User Account phải dài từ 5 (tối thiểu) đến 50 (tối đa) ký tự và chỉ có thể bao gồm các chữ cái viết hoa, viết thường (a-z, A-Z), số (0-9), dấu chấm (.), dấu gạch dưới (\_), dấu gạch ngang (-). Tên của IAM User Account không nên chứa các thông tin nhạy cảm (ví dụ địa chỉ IP, mật khẩu đăng nhập,...) cũng như tên IAM User Account phải là duy nhất trên một tài khoản GreenNode cho đến khi IAM User Account đó bị xóa. Ví dụ tên IAM User Account sau là hợp lệ: IAM\_Phong\_kinh\_doanh\_01.
-5. Chọn **Add a username**.
-6. Tại mục **Account password**, bạn có thể:
-   1. Nhập **password** mà bạn mong muốn. Password phải dài từ 8 (tối thiểu) đến 50 (tối đa) ký tự và phải bao gồm ít nhất 1 ký tự viết hoa (A-Z), 1 ký tự viết thường (a-z), 1 ký tự số (0-9) và 1 ký tự đặc biệt (!@#$%,...).
-   2. Chọn **Auto-generate** nếu bạn muốn hệ thống tự động tạo mật khẩu cho bạn.
-7. Chọn **Copy** để sao chép mật khẩu. Bạn bắt buộc phải thu thập được thông tin này để có thể truy cập vào DataSync sử dụng IAM User Account.
-8. Chọn **Create User Account.**
+1. Log in to [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/) with your Root User Account.
+2. Select **User Account**.
+3. Select **Create a User Account**.
+4. In **Account username**, enter the username you want. The IAM User Account name must be 5 (minimum) to 50 (maximum) characters long and may only contain uppercase and lowercase letters (a–z, A–Z), numbers (0–9), periods (.), underscores (\_), and hyphens (-). It should not contain sensitive information (e.g., IP address, login password), and it must be unique within a GreenNode account until that IAM User Account is deleted. For example, `IAM_Phong_kinh_doanh_01` is a valid name.
+5. Select **Add a username**.
+6. In **Account password**, you can:
+   1. Enter your desired **password**. The password must be 8 (minimum) to 50 (maximum) characters and must include at least 1 uppercase letter (A–Z), 1 lowercase letter (a–z), 1 number (0–9), and 1 special character (!@#$%, …).
+   2. Select **Auto-generate** if you want the system to generate a password for you.
+7. Select **Copy** to copy the password. You must capture this information to access DataSync using the IAM User Account.
+8. Select **Create User Account**.
 
-Sau khi bạn thực hiện 8 bước bên trên, một tài khoản IAM User Account đã được khởi tạo. Lúc này, bạn đã có thể sử dụng nó tuy nhiên IAM User Account vừa tạo chưa có policy nên mọi truy cập đều sẽ bị từ chối. Do đó, bạn cần tiếp tục tạo policy theo hướng dẫn tại [Khởi tạo policy cho IAM User Account](https://github.com/vngcloud/docs/blob/main/English/vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-nguoi-dung-iam/khoi-tao-policy-cho-iam-user-account.md).
+After completing the 8 steps above, an IAM User Account is created. You can now use it; however, the newly created IAM User Account has no policy yet, so all access is denied. Therefore, continue by creating a policy following the guide at [Create Policies for IAM User Account](https://github.com/vngcloud/docs/blob/main/English/vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-nguoi-dung-iam/khoi-tao-policy-cho-iam-user-account.md).
+

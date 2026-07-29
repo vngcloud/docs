@@ -1,74 +1,74 @@
-# Transfer từ vStorage tới vStorage trên cùng account
+# Transfer data from vStorage to vStorage same account
 
-#### Tổng quan <a href="#transferdulieutuvstoragetoivstoragetrencungaccount-tongquan" id="transferdulieutuvstoragetoivstoragetrencungaccount-tongquan"></a>
+#### **Overview**
 
-Giả sử tôi đang sử dụng vStorage, nơi lưu trữ dữ liệu chính của tôi là region HCM04. Do các dữ liệu này quan trọng nên tôi cần backup dữ liệu này từ region HCM04 về một project khác trên region HAN02 trên cùng account của tôi. Việc transfer dữ liệu sẽ diễn ra mỗi tháng trong năm vào lúc 09:30 AM từ ngày 01/01/2024 đến 31/12/2024, log sẽ được lưu tại log project "Mylogproject", thông báo khi chạy transfer job thành công được gửi tới [example@gmail.com](mailto:example@gmail.com)[.](mailto:myemail@gmail.com.) Chi tiết:&#x20;
+Suppose you use vStorage, with your main data storage in region HCM04. Because this data is important, you need to back it up from region HCM04 to another project in region HAN02 within the same account. The transfer runs every month at 09:30 AM from 01/01/2024 to 31/12/2024; logs are stored in the log project `Mylogproject`; and a notification is sent to [example@gmail.com](mailto:example@gmail.com) when the transfer job runs successfully. Details:
 
 * **Source** information: vStorage
   * Region: HCM04
-  * Endpoint: [https://hcm04.vstorage.vngcloud.vn](https://hcm04.vstorage.vngcloud.vn/)
+  * Endpoint: [https://hcm04.vstorage.vngcloud.vn](https://hcm04.vstorage.vngcloud.vn)
   * Project: project01
   * Bucket: bucket01
   * Access key: accesskeysource
   * Secret key: secretkeysource
 * **Destination** information: vStorage
   * Region: HAN02
-  * Endpoint: [https://han02.vstorage.vngcloud.vn](https://han02.vstorage.vngcloud.vn/)
+  * Endpoint: [https://han02.vstorage.vngcloud.vn](https://han02.vstorage.vngcloud.vn)
   * Project: project02
   * Bucket: bucket02
   * Folder path: backup/fromregionhcm04
   * Access key: accesskeydestination
   * Secret key: secretkeydestination
-* **Run**: Daily on 09:00 AM từ 01/01/2024 đến 31/12/2024
-* **Email** **notification**: [example@gmail.com](mailto:example@gmail.com).
+* **Run:** Monthly at 09:00 AM from 01/01/2024 to 31/12/2024
+* **Email notification:** [example@gmail.com](mailto:example@gmail.com)
 
 ***
 
-#### Điều kiện cần <a href="#transferdulieutuvstoragetoivstoragetrencungaccount-dieukiencan" id="transferdulieutuvstoragetoivstoragetrencungaccount-dieukiencan"></a>
+#### **Prerequisites**
 
-Để đảm bảo việc transfer dữ liệu thành công, bạn cần đảm bảo các thông tin Source và Destination hợp lệ, trong đó:&#x20;
+To ensure a successful transfer, make sure the Source and Destination information is valid, where:
 
-* **Access key và Secret key** tại Source phải có tối thiểu quyền đọc dữ liệu.
-* **Access key và Secret key** tại Destination phải có tối thiểu quyền đọc và ghi dữ liệu.
+* The **Access key and Secret key** at the Source must have at least read permission.
+* The **Access key and Secret key** at the Destination must have at least read and write permission.
 
 ***
 
-#### Tạo Transfer Job <a href="#transferdulieutuvstoragetoivstoragetrencungaccount-taotransferjob" id="transferdulieutuvstoragetoivstoragetrencungaccount-taotransferjob"></a>
+#### **Create the Transfer Job**
 
-**Bước 1:** Đăng nhập vào [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/). Nếu bạn chưa có tài khoản, đăng ký miễn phí tại [đây](https://register.vngcloud.vn/signup).
+**Step 1:** Log in to [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/). If you don't have an account, [register for free](https://register.vngcloud.vn/signup).
 
-**Bước 2:** Nhấp vào nút **Create a transfer job** để bắt đầu tạo job chuyển đổi dữ liệu.
+**Step 2:** Click **Create a transfer job** to start creating a data transfer job.
 
-**Bước 3:** Nhập **Basic configuration,** bao gồm:&#x20;
+**Step 3:** Enter the **Basic configuration**:
 
-1. Nhập **Job name.**Ví dụ: Transfercungaccount
-2. Chọn **Source Type** là vStorage.
+1. Enter the **Job name**. Example: `Transfercungaccount`.
+2. Select **Source Type** as **vStorage**.
 
-**Bước 4:** Nhập **Source configuration**, bao gồm:&#x20;
+**Step 4:** Enter the **Source configuration**:
 
-* Chọn **Region**: HCM04.
-* Chọn **Project**: project01.
-* Chọn **Container**: bucket01.
-* Nhập **Access key**: accesskeysource.
-* Nhập **Secret key**: secretkeysource
-* Sau khi nhập đẩy đủ thông tin tại các mục bên trên, bạn có thể chọn kiểm tra kết nối bằng cách nhấn vào nút **Test connection**. Lúc này, hệ thống của chúng tôi sẽ kiểm tra tính hợp lệ của thông tin và hiển thị kết quả. Nếu kết nối thành công, bạn sẽ nhận được thông báo "**Connection successful**". Nếu kết nối thất bại, bạn sẽ nhận được thông báo lỗi và mô tả chi tiết về lỗi.
+* Select **Region:** HCM04.
+* Select **Project:** project01.
+* Select **Container:** bucket01.
+* Enter **Access key:** accesskeysource.
+* Enter **Secret key:** secretkeysource.
+* Test the connection: click **Test connection**; the system verifies the information and shows the result ("**Connection successful**" or an error with details).
 
-**Bước 5:** Nhập **Destination configuration**, bao gồm:
+**Step 5:** Enter the **Destination configuration**:
 
-* Chọn **Region**: HAN02.
-* Chọn **Project**: project02.
-* Chọn **Container**: bucket02.
-* Chọn **Folder**: backup/fromregionhcm04
-* Nhập **Access key**: accesskeydestination
-* Nhập **Secret key**: secretkeydestination
-* Sau khi nhập đẩy đủ thông tin tại các mục bên trên, bạn có thể chọn kiểm tra kết nối bằng cách nhấn vào nút **Test connection**. Lúc này, hệ thống của chúng tôi sẽ kiểm tra tính hợp lệ của thông tin và hiển thị kết quả. Nếu kết nối thành công, bạn sẽ nhận được thông báo "**Connection successful**". Nếu kết nối thất bại, bạn sẽ nhận được thông báo lỗi và mô tả chi tiết về lỗi.
+* Select **Region:** HAN02.
+* Select **Project:** project02.
+* Select **Container:** bucket02.
+* Select **Folder:** backup/fromregionhcm04.
+* Enter **Access key:** accesskeydestination.
+* Enter **Secret key:** secretkeydestination.
+* Test the connection as described above.
 
-**Bước 6:** Nhập **Job condition**, bao gồm:
+**Step 6:** Enter the **Job condition**:
 
-* Chọn **Run schedule (Chạy lập lịch):**
-  * Chọn **Start date**: 01/01/2024 09:00
-  * Chọn **End date**: 31/12/2024
-  * Chọn **Period**: Monthly.
-* Chọn **Notification Option.** Nhập [example@gmail.com](mailto:example@gmail.com) sau đó nhấn Add.
+* Select **Run schedule:**
+  * **Start date:** 01/01/2024 09:00
+  * **End date:** 31/12/2024
+  * **Period:** Monthly
+* Select **Notification Option**. Enter [example@gmail.com](mailto:example@gmail.com), then click **Add**.
 
-**Bước 7:** Chọn **Create Transfer Job.**
+**Step 7:** Select **Create Transfer Job**.

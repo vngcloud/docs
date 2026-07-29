@@ -1,13 +1,13 @@
-# Cách tính phí
+# Charging Fee
 
-Dịch vụ DataSync hiện tại GreenNode cung cấp là hoàn toàn **miễn phí đối với tất cả người dùng** và không giới hạn dung lượng dữ liệu di chuyển.
+The DataSync service that GreenNode currently provides is completely **free for all users**, with no limit on the volume of data transferred.
 
-Tuy nhiên, do tất cả người dùng GreenNode cùng sử dụng chung dịch vụ này, nên:&#x20;
+However, because all GreenNode users share this service:
 
-* Hạ tầng DataSync được sử dụng chung cho tất cả người dùng.
-* Hiệu năng có thể thay đổi tùy theo thời điểm và lượng người sử dụng dịch vụ tại thời điểm đó.
-* GreenNode sẽ cố gắng đảm bảo hiệu năng tốt nhất cho tất cả người dùng.
+* The DataSync infrastructure is shared among all users.
+* Performance may vary depending on the time and the number of users using the service at that moment.
+* GreenNode strives to ensure the best possible performance for all users.
 
-**Nhu cầu sử dụng nâng cao:**
+**Advanced usage needs:**
 
-* Nếu bạn có nhu cầu sử dụng DataSync với hiệu năng cao hơn, GreenNode có thể cung cấp giải pháp nâng cao với hiệu năng được đảm bảo cũng như tùy chỉnh cấu hình theo nhu cầu. Để biết thêm thông tin chi tiết, vui lòng liên hệ với GreenNode.
+* If you need DataSync with higher performance, GreenNode can provide an advanced solution with guaranteed performance and configuration customized to your needs. For details, contact GreenNode.

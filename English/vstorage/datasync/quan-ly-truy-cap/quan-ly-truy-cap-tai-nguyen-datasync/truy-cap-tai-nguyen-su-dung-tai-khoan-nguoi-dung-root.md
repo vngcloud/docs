@@ -1,10 +1,10 @@
-# Truy cập tài nguyên sử dụng tài khoản người dùng Root
+# Access Permissions and Working Through Root User Account
 
-Để truy cập vào tài nguyên của bạn trên dịch vụ lưu trữ Data Sync, bạn có thể truy cập thông qua Data Sync Portal. Đối với Data Sync Portal, bạn sử dụng tài khoản người dùng Root hoặc tài khoản IAM (IAM User Account) để truy cập vào. Nếu bạn chưa có tài khoản người dùng Root, bạn vui lòng tham khảo tại [Tài khoản người dùng Root](../quan-ly-tai-khoan-truy-cap-datasync/tai-khoan-nguoi-dung-root.md).
+To access your resources on the DataSync storage service, use the DataSync Portal. For the DataSync Portal, you can log in with the Root user account or an IAM User Account. If you do not have a Root user account yet, refer to [_Root User Account_](../quan-ly-tai-khoan-truy-cap-datasync/tai-khoan-nguoi-dung-root.md).
 
-Thực hiện theo các bước bên dưới để đăng nhập vào Data Sync với tài khoản người dùng Root:
+Follow the steps below to log in to DataSync with the Root user account:
 
-1. Truy cập vào trang đăng nhập của dịch vụ Data Sync: [https://signin.vngcloud.vn.](https://signin.vngcloud.vn/ap/auth?clientId=c9e78411-f2a2-41ba-a9e4-3c56263c181a\&responseType=code\&codeChallenge=f09ybYi-GTZYYwuHVRv2f1UPRhjM\_wI-0J\_aXpbUsv4\&codeChallengeMethod=S256\&appState=55eab53a-30f3-43ae-837b-bf3a469dd9db\&redirectUri=https%3A%2F%2Fdashboard.console.greennode.ai%2F)
-2. Trang đăng nhập chính sẽ xuất hiện. Chọn **ĐĂNG NHẬP VỚI ROOT USER**.
-3. Nhập địa chỉ **email** và **mật khẩu** được liên kết với tài khoản của bạn và chọn **Đăng nhập**. Nếu trước đó bạn đã đăng nhập với tư cách người dùng root trong trình duyệt này, thì trình duyệt của bạn có thể nhớ địa chỉ email cho tài khoản Root User Account. Nếu vậy, bạn sẽ thấy màn hình hiển thị trong bước tiếp theo. Nếu trước đây bạn đã đăng nhập với tư cách là người dùng IAM sử dụng tài khoản người dùng IAM (IAM User Account) bằng trình duyệt này, thì trình duyệt của bạn có thể hiển thị trang đăng nhập của người dùng IAM thay thế. Để quay lại trang đăng nhập chính, hãy chọn **ĐĂNG NHẬP VỚI ROOT USER.**
-4. Sau khi đăng nhập thành công, bạn có toàn quyền truy cập và thực hiện các tính năng được cung cấp bởi dịch vụ Data Sync trên các tài nguyên của bạn. Chi tiết về các tính năng Data Sync hỗ trợ, bạn vui lòng tham khảo tại [Các tính năng của DataSync](../../cac-tinh-nang-cua-datasync/).
+1. Go to the DataSync sign-in page: [https://signin.vngcloud.vn](https://signin.vngcloud.vn).
+2. On the main sign-in page, select **LOG IN WITH ROOT USER**.
+3. Enter the **email** and **password** associated with your account and select **Sign in**. If you previously logged in as a root user in this browser, the browser may remember the email for the Root User Account and show the next screen directly. If you previously logged in as an IAM user in this browser, the browser may show the IAM user sign-in page instead; to return to the main sign-in page, select **LOG IN WITH ROOT USER**.
+4. After signing in successfully, you have full access to use the DataSync features on your resources. For the supported features, refer to [Features of DataSync](https://docs.greennode.ai/vstorage/datasync/cac-tinh-nang-cua-datasync.md).

@@ -1,16 +1,7 @@
 # Resoure Quota
 
-DataSync thiết lập hạn mức tài nguyên để đảm bảo rằng chúng tôi có thể cung cấp dịch vụ nhanh chóng và linh hoạt cho tất cả khách hàng. Hạn mức tài nguyên này là mức tối đa mà chúng tôi đề xuất và một số hạn mức tài nguyên có thể được tùy chỉnh theo nhu cầu lưu trữ của bạn. Để gửi yêu cầu điều chỉnh tăng hạn mức, vui lòng truy cập Trung tâm hỗ trợ GreenNode và tạo yêu cầu.
+DataSync sets resource quotas to ensure we can provide fast, flexible service to all customers. These quotas are the maximums we recommend, and some can be customized to your storage needs. To request a quota increase, go to the GreenNode Support Center and create a request.
 
-Các bảng sau đây liệt kê các giá trị tối đa cho tài nguyên lưu trữ trên DataSync của bạn.
+The following table lists the maximum values for your storage resources on DataSync. You cannot adjust these quota values.
 
-Bạn không thể điều chỉnh các giá trị hạn mức này.
-
-| **STT** | **Quota**                           | **Mặc định** | **Giải thích**                                                                         |
-| ------- | ----------------------------------- | ------------ | -------------------------------------------------------------------------------------- |
-| 1       | SSO User Account/ Email-SĐT         | 20           | 1 Email - SĐT được phép đăng ký tối đa 20 SSO User Account thông qua GreenNode Portal  |
-| 2       | IAM User Account/ Root User Account | 20           | 1 Root User Account được phép khởi tạo tối đa 20 IAM User Account thông qua IAM Portal |
-| 3       | Transfer Job/Root User Account      | 5            | 1 Root User Account được phép khởi tạo tối đa 5 Transfer Job                           |
-| 4       | Include Filter/ Transfer Job        | 5            | 1 Transfer Job được tạo tối đa 5 Include filter.                                       |
-| 5       | Exclude Filter/ Transfer Job        | 5            | 1 Transfer Job được tạo tối đa 5 Exclude filter.                                       |
-| 6       | Email Notification / Transfer Job   | 5            | 1 Tranfer Job được tạo tối đa 5 email nhận notification.                               |
+<table data-header-hidden><thead><tr><th width="59.41015625"></th><th></th><th width="88.66796875"></th><th width="344.21875"></th></tr></thead><tbody><tr><td><strong>No.</strong></td><td><strong>Quota</strong></td><td><strong>Default</strong></td><td><strong>Explanation</strong></td></tr><tr><td>1</td><td>SSO User Account/ Email-SĐT</td><td>20</td><td>1 email/phone may register up to 20 SSO User Accounts via the GreenNode Portal.</td></tr><tr><td>2</td><td>IAM User Account/ Root User Account</td><td>20</td><td>1 Root User Account may create up to 20 IAM User Accounts via the IAM Portal.</td></tr><tr><td>3</td><td>Transfer Job/Root User Account</td><td>5</td><td>1 Root User Account may create up to 5 Transfer Jobs.</td></tr><tr><td>4</td><td>Include Filter/ Transfer Job</td><td>5</td><td>1 Transfer Job may have up to 5 Include filters.</td></tr><tr><td>5</td><td>Exclude Filter/ Transfer Job</td><td>5</td><td>1 Transfer Job may have up to 5 Exclude filters.</td></tr><tr><td>6</td><td>Email Notification / Transfer Job</td><td>5</td><td>1 Transfer Job may have up to 5 notification emails.</td></tr></tbody></table>

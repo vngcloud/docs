@@ -1,21 +1,22 @@
-# Chỉnh sửa Transfer Job
+# Edit a Transfer Job
 
-Khi bạn muốn thay đổi các điều kiện chạy Transfer Job, bạn có thể thực hiện chỉnh sửa chúng theo hướng dẫn:&#x20;
+When you want to change the run conditions of a Transfer Job, you can edit them as follows:
 
-**Bước 1:** Truy cập vào [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/transfer-job/list)
+**Step 1:** Go to [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/)
 
-**Bước 2:** Tại menu bên trái, chọn mục **Transfer Job**.&#x20;
+**Step 2:** In the left menu, select **Transfer Job**.
 
-**Bước 3:** Trên danh sách các transfer job đã tạo, hãy chọn một **Transfer Job** mà bạn muốn chỉnh sửa.&#x20;
+**Step 3:** From the list of created transfer jobs, select the **Transfer Job** you want to edit.
 
-**Bước 4:** Chọn biểu tượng <img src="https://docs.vngcloud.vn/download/thumbnails/73761187/image2024-3-14_10-39-36.png?version=1&#x26;modificationDate=1710387576000&#x26;api=v2" alt="" data-size="line"> hoặc chọn biểu tượng <img src="https://docs.vngcloud.vn/download/thumbnails/73761187/image2024-3-14_10-4-58.png?version=1&#x26;modificationDate=1710387562000&#x26;api=v2" alt="" data-size="line">sau đó chọn hành động <img src="https://docs.vngcloud.vn/download/thumbnails/73761187/image2024-3-14_10-39-48.png?version=1&#x26;modificationDate=1710387589000&#x26;api=v2" alt="" data-size="line">.
+**Step 4:** Select the edit icon, or open the action menu and select the **Edit** action.
 
-**Bước 5:** Màn hình **Edit Transfer Job** hiển thị, lúc này bạn có thể chỉnh sửa các thông số **Data Filtering, Job Condition** tương tự theo hướng dẫn tại [Khởi tạo Transfer Job](khoi-tao-transfer-job.md).
+**Step 5:** The **Edit Transfer Job** screen appears. You can now edit the **Data Filtering** and **Job Condition** parameters, following the guide at [Create a Transfer Job](https://docs.greennode.ai/vstorage/datasync/cac-tinh-nang-cua-datasync/khoi-tao-transfer-job.md).
 
-**Bước 6:** Chọn **Save.**&#x20;
+**Step 6:** Select **Save**.
 
 {% hint style="info" %}
-**Chú ý:**
+**Note:**
 
-Bạn chỉ có thể chỉnh sửa một Transfer Job đang không chạy. Nếu transfer job của bạn đang chạy mà bạn muốn chỉnh sửa nó, hãy thực hiện Dừng chạy Transfer Job theo hướng dẫn tại [Dừng chạy Transfer Job](dung-chay-transfer-job.md).
+You can only edit a Transfer Job that is not running. If your transfer job is running and you want to edit it, first stop it following the guide at [Stop a Transfer Job](dung-chay-transfer-job.md).
 {% endhint %}
+

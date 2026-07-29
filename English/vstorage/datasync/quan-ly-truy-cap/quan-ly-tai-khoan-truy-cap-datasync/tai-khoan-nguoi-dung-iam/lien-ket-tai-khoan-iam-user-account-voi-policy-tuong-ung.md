@@ -1,12 +1,12 @@
 # Attach Policies with IAM User Account
 
-Sau khi bạn đã khởi tạo IAM User Account và Policy mong muốn, tiếp theo bạn cần liên kết tài khoản IAM User Account vào policy theo hướng dẫn bên dưới:
+After you have created the IAM User Account and the Policy you want, attach the account to the policy as follows:
 
-1. Đăng nhập vào [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/) với tài khoản Root User Account.
-2. Chọn thư mục **User Account.**
-3. Chọn **IAM User Account** muốn thực hiện gán quyền.
-4. Chọn **Attach policies**.
-5. Chọn các **policy** mà bạn mong muốn. Hệ thống vIAM hỗ trợ bạn gán nhiều policy vào một tài khoản IAM User Account. Nếu các policy này chứa các quyền hạn độc lập thì chúng sẽ bổ sung cho nhau (tức là danh sách quyền hạn được hợp lại). Ngược lại nếu các policy này chứa các quyền hạn trái ngược thì bạn sẽ không thể truy cập vào tài nguyên tương ứng theo danh sách quyền hạn này (tức là danh sách quyền được hợp lại và khi trái ngược thì sẽ triệt tiêu nhau).
-6. Chọn **Attach**.
+1. Log in to [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/) with your Root User Account.
+2. Select the **User Account** folder.
+3. Select the **IAM User Account** you want to assign permissions to.
+4. Select **Attach policies**.
+5. Select the **policies** you want. The vIAM system lets you attach multiple policies to one IAM User Account. If the policies contain independent permissions, they complement each other (the permission lists are merged). If they contain conflicting permissions, you will not be able to access the corresponding resource under this permission list (the merged lists cancel each other out where they conflict).
+6. Select **Attach**.
 
-Sau khi bạn thực hiện 6 bước bên trên, lúc này bạn đã có thể sử dụng Service Account để truy cập vào tài nguyên DataSync. Để biết thêm thông tin, hãy xem tại [Truy cập tài nguyên sử dụng tài khoản người dùng IAM](https://github.com/vngcloud/docs/blob/main/English/vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-truy-cap-tai-nguyen-vstorage/truy-cap-tai-nguyen-su-dung-tai-khoan-nguoi-dung-iam.md)
+After completing the 6 steps above, you can use the account to access DataSync resources. For more information, see [Access Permissions and Working Through IAM](https://github.com/vngcloud/docs/blob/main/English/vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-truy-cap-tai-nguyen-vstorage/truy-cap-tai-nguyen-su-dung-tai-khoan-nguoi-dung-iam.md).

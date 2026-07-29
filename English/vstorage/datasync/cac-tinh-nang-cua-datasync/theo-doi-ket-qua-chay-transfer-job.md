@@ -1,48 +1,51 @@
 # Monitor Transfer Job Results
 
-Khi Transfer Job của bạn đang chạy hoặc đã chạy hoàn thành, bạn có thể xem chi tiết các thông số của Transfer Job bằng cách:
+When your Transfer Job is running or has finished running, you can view its detailed parameters as follows:
 
-**Bước 1:** Truy cập vào [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/transfer-job/list)
+**Step 1:** Go to [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/)
 
-**Bước 2:** Tại menu bên trái, chọn mục **Transfer Job**.
+**Step 2:** In the left menu, select **Transfer Job**.
 
-**Bước 3:** Trên danh sách các transfer job đã chạy hoặc đang chạy, hãy chọn một **Transfer Job** mà bạn muốn chạy.
+**Step 3:** From the list of transfer jobs that have run or are running, select the **Transfer Job** you want to view.
 
-**Bước 4:** Lúc này, màn hình thông tin chi tiết Transfer Job hiển thị, trong đó:
+**Step 4:** The Transfer Job detail screen appears, where:
 
-**Bước 4.1: Kiểm tra thông tin tại General information**
+**Step 4.1 — Check the information in General Information**
 
-1. **Job ID:** ID của job.
-2. **Job Description:** mô tả job
-3. **Job Schedule:** cấu hình chạy một lần/ lập lịch định kỳ của job.
-4. **Source Information:** thông tin nguồn gửi dữ liệu.
-5. **Destination Infomation:** thông tin đích nhận dữ liệu.
+1. **Job ID:** the job's ID.
+2. **Job Description:** the job description.
+3. **Job Schedule:** the run-once / recurring-schedule configuration of the job.
+4. **Source Information:** information about the data source.
+5. **Destination Information:** information about the data destination.
 
-**Bước 4.2: Kiểm tra thông tin tại Operation**
+**Step 4.2 — Check the information in Operation**
 
-1. Hiển thị lịch sử các lần chạy của Transfer Job, bao gồm:
-   1. **Lastest run**: lần chạy gần nhất trong quá khứ nếu transfer job đang không được chạy hoặc kết quả realtime của lần chạy hiện tại. Trong phần này, bạn có thể xem các thông số bao gồm:
-      1. **Status**: trạng thái của lần chạy Transfer Job.
-      2. **Duration**: tổng thời gian chạy job.
-      3. **Start time**: thời gian bắt đầu chạy job.
-      4. **End time**: thời gian kết thúc chạy job.
-      5. **Progress**: tiến trình chạy job, thông số này sẽ thay đổi realtime theo kết quả thực tế mà transfer job đang chạy.
-      6. **Data transferred**: tổng số byte và số file đã thực hiện transfer bởi hệ thống DataSync. Lưu ý: không phải tất cả số byte/ file này đều transfer thành công, trong quá trình transfer có thể xảy ra lỗi tại một hoặc nhiều file. Bạn có thể xem danh sách này tại mục bên dưới.
-      7. **Error**: tổng số byte và số file bị lỗi trong quá trình transfer. Bạn có thể thực hiện chạy lại transfer job với danh sách file này theo hướng dẫn tại [Chạy lại Transfer Job](chay-lai-transfer-job.md).
-      8. **Data skipper**: tổng số file bị bỏ qua trong quá trình transfer.
-      9. **Average speed estimate**: băng thông trung bình của hệ thống trong quá trình transfer.
-   2. **Run history:** kết quả của những lần chạy trong quá khứ của transfer job. Bạn có thể chọn vào biểu tượng <img src="http://docs.vngcloud.vn/download/thumbnails/73761255/image2024-3-14_10-21-27.png?version=1&#x26;modificationDate=1710386487732&#x26;api=v2" alt="" data-size="line">tại mỗi lần chạy để xem chi tiết kết quả của lần chạy đó. Các thông số hiển thị tương tự như mục Lastest run đã đề cập bên trên.
+The run history of the Transfer Job is displayed, including:
 
-**Bước 4.3: Kiểm tra thông tin tại Monitor**
+* **Latest run:** the most recent past run (if the transfer job is not currently running) or the real-time result of the current run. In this section, you can view:
+  * **Status:** status of the Transfer Job run.
+  * **Duration:** total run time of the job.
+  * **Start time:** the time the job started.
+  * **End time:** the time the job ended.
+  * **Progress:** the job's progress; this value updates in real time based on the actual results of the running transfer job.
+  * **Data transferred:** total number of bytes and files transferred by the DataSync system. Note: not all of these bytes/files are transferred successfully — errors may occur on one or more files during transfer. You can view this list in the section below.
+  * **Error:** total number of bytes and files that failed during transfer. You can retry the transfer job with this file list following the guide at [Retry a Transfer Job](chay-lai-transfer-job.md).
+  * **Data skipped:** total number of files skipped during transfer.
+  * **Average speed estimate:** the system's average bandwidth during transfer.
+* **Run history:** results of the transfer job's past runs. Click the icon on each run to view the detailed result of that run. The displayed parameters are the same as in the **Latest run** section above.
 
-1. Hiển thị biểu đồ thống kê về tiến trình transfer dữ liệu. Cứ mỗi 60s thì chúng tôi sẽ thu thập các metric thành 1 điểm dữ liệu, chi tiết bạn có thể thao khảo tại [Làm việc với Metric Information](../../../vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/lam-viec-voi-metruc-information.md) để biết thêm cách làm việc với chúng. Hoặc bạn có thể chọn các khung thời gian để xem biểu đồ tại vùng <img src="http://docs.vngcloud.vn/download/thumbnails/73761255/image2024-3-14_10-26-31.png?version=1&#x26;modificationDate=1710386792108&#x26;api=v2" alt="" data-size="original">.Trên GreenNode DataSync, các metric được hiển thị thông qua biểu đồ bao gồm:
-   * **Data throughput** (byte/s): số byte được truyền tải trên mỗi giây.
-   * **File throughput** (file/s): số file được truyền tải trên mỗi giây.
-   * **Object transfer error** (file): số file bị lỗi trong quá trình transfer.
+**Step 4.3 — Check the information in Monitor**
 
-**Bước 4.4: Kiểm tra thông tin tại Configuration**
+Statistical charts of the data transfer process are displayed. Every 60 seconds, we collect metrics into one data point; for more on working with them, refer to [_Working with Metric Information_](../../../vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/metrics/lam-viec-voi-metruc-information.md). You can also choose a time range to view the chart. On GreenNode DataSync, the metrics displayed via charts include:
 
-1. Hiển thị thông tin cấu hình của Transfer Job, bao gồm:
-   * **Source**: thông tin chi tiết của source bao gồm: Source type, Region, Project name, Bucket name, Endpoint, Folder path, Access key.
-   * **Destination**: thông tin chi tiết của destination bao gồm: Destination type, Region, Project name, Container name, Folder path, Access key
-   * **Job condition**: Có/ không bật Copy object metadata, Có/ không bật Overwrite, các Tag, Metadata, nơi lưu Job Report, nơi nhận Log, và email nhận Notification của bạn đã thiết lập trên Transfer Job.
+* **Data throughput** (byte/s): number of bytes transferred per second.
+* **File throughput** (file/s): number of files transferred per second.
+* **Object transfer error** (file): number of files that failed during transfer.
+
+**Step 4.4 — Check the information in Configuration**
+
+The Transfer Job's configuration is displayed, including:
+
+* **Source:** source details — Source type, Region, Project name, Bucket name, Endpoint, Folder path, Access key.
+* **Destination:** destination details — Destination type, Region, Project name, Container name, Folder path, Access key.
+* **Job condition:** whether Copy object metadata is on/off, whether Overwrite is on/off, and the Tags, Metadata, Job Report storage location, Log destination, and Notification email you configured on the Transfer Job.

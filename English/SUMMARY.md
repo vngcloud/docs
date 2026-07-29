@@ -456,7 +456,7 @@
       * [Monitor Transfer Job Results](vstorage/datasync/cac-tinh-nang-cua-datasync/theo-doi-ket-qua-chay-transfer-job.md)
       * [Stop a Transfer Job](vstorage/datasync/cac-tinh-nang-cua-datasync/dung-chay-transfer-job.md)
       * [Edit a Transfer Job](vstorage/datasync/cac-tinh-nang-cua-datasync/chinh-sua-transfer-job.md)
-      * [Xóa Transfer Job](vstorage/datasync/cac-tinh-nang-cua-datasync/xoa-transfer-job.md)
+      * [Delete a Transfer Job](vstorage/datasync/cac-tinh-nang-cua-datasync/xoa-transfer-job.md)
       * [Retry a Transfer Job](vstorage/datasync/cac-tinh-nang-cua-datasync/chay-lai-transfer-job.md)
     * [Identity and Access Management](vstorage/datasync/quan-ly-truy-cap/README.md)
       * [Managing DataSync access account](vstorage/datasync/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-datasync/README.md)

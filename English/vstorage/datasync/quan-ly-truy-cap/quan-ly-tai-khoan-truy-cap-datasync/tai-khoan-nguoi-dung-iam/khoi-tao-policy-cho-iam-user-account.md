@@ -1,27 +1,27 @@
 # Create Policies for IAM User Account
 
-Để khởi tạo một policy sử dụng để truy cập vào tài nguyên DataSync, hãy làm theo các bước bên dưới:
+To create a policy for accessing DataSync resources, follow the steps below:
 
-1. Đăng nhập vào [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/) với tài khoản Root User Account.
-2. Chọn thư mục **Policy**.
-3. Chọn **Create a Policy**.
-4. Nhập **Name** và **Description** nếu cho cho Policy.
-5. Chọn **Next step**.
-6. Chọn **Product là DataSync**.
-7. Chọn **Actions**:
-   1. Chọn **Allow permissions**: mặc định hệ thống vIAM sẽ luôn bật tức là cho phép quyền hạn được áp dụng trên policy. Nếu bạn tắt mode này thì hệ thống sẽ từ chối (đảo chiều) quyền hạn tương ứng.
-      1. **Allow permissions**: cho phép truy cập theo action đã chọn.
-      2. **Deny permissions**: từ chối truy cập theo action đã chọn.
-   2. Chọn **All DataSync actions** nếu muốn tạo policy có quyền thực hiện tất cả các hành động trên DataSync. Chi tiết ý nghĩa của các action vui lòng tham khảo tại [Tính năng, tài nguyên DataSync và quyền truy cập](../../quan-ly-truy-cap-tai-nguyen-datasync/tinh-nang-tai-nguyen-datasync-va-quyen-truy-cap.md).
-8. Chọn **Resources**:
-   1. Chọn **All resources** nếu muốn quyền truy cập đã chọn bên trên được phép truy cập vào mọi tài nguyên trên tài khoản SSO account của bạn.
-   2. Chọn **Specify resources**: chọn project, container, object cụ thể mà bạn muốn cho phép truy cập tới. Bạn có thể nhập thông tin cho mỗi loại resources này bằng 1 trong những cách sau:
-      1. **Nhập \*** nếu bạn muốn chọn tất cả tài nguyên.
-      2. **Nhập cụ thể ID của project, tên của container, tên của object** nếu bạn muốn chỉ định tới chính xác project, container, object đó.
-      3. **Nhập tiền tố (prefix)** nếu bạn muốn chỉ định tới một tập project, container, object được bắt đầu bằng tiền tố đã khai báo.
-   3. Bạn cũng có thể chọn **Any** để cho phép truy cập tới mọi project, container, object trong tài khoản SSO account của bạn.
-   4. Chọn **Request conditions:** nhập điều kiện đặc biệt cho policy nếu có.
+1. Log in to [https://iam.console.greennode.ai/](https://iam.console.greennode.ai/) with your Root User Account.
+2. Select the **Policy** folder.
+3. Select **Create a Policy**.
+4. Enter a **Name** and **Description** for the Policy.
+5. Select **Next step**.
+6. Select **Product** as **DataSync**.
+7. Select **Actions**:
+   1. **Allow permissions** toggle: by default, the vIAM system keeps this on, meaning the permissions are allowed on the policy. If you turn this mode off, the system denies (inverts) the corresponding permissions.
+      * **Allow permissions:** allow access for the selected action.
+      * **Deny permissions:** deny access for the selected action.
+   2. Select **All DataSync actions** if you want a policy with permission to perform all actions on DataSync. For the meaning of each action, refer to [Features, DataSync Resources, and Access Permissions](../../quan-ly-truy-cap-tai-nguyen-datasync/tinh-nang-tai-nguyen-datasync-va-quyen-truy-cap.md).
+8. Select **Resources**:
+   1. Select **All resources** if you want the selected permissions above to apply to every resource in your SSO account.
+   2. Select **Specify resources**: choose the specific project, container, or object you want to grant access to. You can enter each resource type in one of the following ways:
+      * Enter `*` to select all resources.
+      * Enter a specific **project ID, container name, or object name** to target that exact resource.
+      * Enter a **prefix** to target a set of projects, containers, or objects that start with the declared prefix.
+   3. You can also select **Any** to allow access to every project, container, and object in your SSO account.
+   4. Select **Request conditions:** enter special conditions for the policy, if any.
 
-Sau khi bạn thực hiện 8 bước bên trên, policy cho DataSync đã được khởi tạo. Tiếp theo, bạn hãy gán nó vào IAM User Account theo hướng dẫn tại [Liên kết tài khoản IAM User Account với policy tương ứng](https://github.com/vngcloud/docs/blob/main/English/vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-nguoi-dung-iam/lien-ket-tai-khoan-iam-user-account-voi-policy-tuong-ung.md).
+After completing the 8 steps above, the DataSync policy is created. Next, attach it to the IAM User Account following the guide at [Attach Policies with IAM User Account](https://github.com/vngcloud/docs/blob/main/English/vstorage/vstorage-hcm03/quan-ly-truy-cap/quan-ly-tai-khoan-truy-cap-vstorage/tai-khoan-nguoi-dung-iam/lien-ket-tai-khoan-iam-user-account-voi-policy-tuong-ung.md).
 
-Ngoài các bước tạo policy đặc thù cho riêng bạn như trên, chúng tôi cũng cung cấp cho bạn một tập các policy mặc định với các quyền hạn đa dạng. Bạn có thể sử dụng tập policy này và liên kết trực tiếp chúng tới tài khoản IAM User Account. Để biết thêm thông tin về danh sách policy mặc định, tham khảo tại [Tính năng, tài nguyên DataSync và quyền truy cập](../../quan-ly-truy-cap-tai-nguyen-datasync/tinh-nang-tai-nguyen-datasync-va-quyen-truy-cap.md).
+In addition to creating your own custom policy as above, we also provide a set of default policies with a range of permissions. You can use this set and attach them directly to IAM User Accounts for quick authorization without creating a detailed policy. For more information about the default policy list, refer to [Features, DataSync Resources, and Access Permissions](../../quan-ly-truy-cap-tai-nguyen-datasync/tinh-nang-tai-nguyen-datasync-va-quyen-truy-cap.md).

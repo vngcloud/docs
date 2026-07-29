@@ -1,29 +1,29 @@
-# Chạy lại Transfer Job
+# Retry a Transfer Job
 
-Trong quá trình chạy transfer job, có thể xảy ra lỗi tại một hoặc một tập file. Khi transfer job chạy hoàn thành, bạn có thể thực hiện chạy lại transfer job này với điều kiện:
+During a transfer job run, errors may occur on one file or a set of files. When the transfer job has finished, you can retry it, provided that:
 
-* Các thông tin về **Source**, **Destination, Job Information, Job Configuration không thay đổi so với lần chạy trước đó.**
-* Chỉ thực hiện transfer danh sách **file** có trạng thái **transfer là** **error** được ghi nhận từ lần chạy trước đó.
+* The **Source**, **Destination**, **Job Information**, and **Job Configuration** are unchanged from the previous run.
+* Only the list of **files** whose transfer **status was error**, recorded from the previous run, is transferred.
 
-Để thực hiện chạy lại Transfer Job, bạn có thể thực hiện như sau:&#x20;
+To retry a Transfer Job:
 
-**Bước 1:** Truy cập vào [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/transfer-job/list)
+**Step 1:** Go to [https://datasync.console.greennode.ai/](https://datasync.console.greennode.ai/)
 
-**Bước 2:** Tại menu bên trái, chọn mục **Transfer Job**.&#x20;
+**Step 2:** In the left menu, select **Transfer Job**.
 
-**Bước 3:** Trên danh sách các transfer job đã tạo, hãy chọn một **Transfer Job** có File error ở lần chạy trước đó mà bạn muốn chạy lại.
+**Step 3:** From the list of created transfer jobs, select the **Transfer Job** that had file errors in its previous run and that you want to retry.
 
-**Bước 4:** Tại mục **Error**, chọn **View error details**.&#x20;
+**Step 4:** In the **Error** section, select **View error details**.
 
-**Bước 5:** Lúc này, danh sách file bị transfer lỗi hiển thị.
+**Step 5:** The list of files that failed to transfer is displayed.
 
-**Bước 6:** Chọn <img src="https://docs.vngcloud.vn/download/thumbnails/73761209/image2024-3-14_10-53-48.png?version=1&#x26;modificationDate=1710388429000&#x26;api=v2" alt="" data-size="line">.
+**Step 6:** Select the retry icon.
 
-**Bước 7:** Chọn **Retry** để xác nhận chạy lại job.
+**Step 7:** Select **Retry** to confirm re-running the job.
 
 {% hint style="info" %}
-**Chú ý:**
+**Note:**
 
-* Khi thực hiện Retry, GreenNode DataSync sẽ chỉ transfer lại những file lỗi trước đó. Những file đã được di chuyển thành công trước đó sẽ không bị di chuyển lại.
-* Bạn có thể thực hiện Retry nhiều lần tới khi nào tất cả file của bạn đã được transfer thành công. Tuy nhiên, nếu việc retry liên tục xảy ra lỗi, bạn nên kiểm tra lại cấu hình Transfer Job và nguồn dữ liệu.
+* When you Retry, GreenNode DataSync re-transfers only the previously failed files. Files that were moved successfully before are not moved again.
+* You can retry multiple times until all your files have been transferred successfully. However, if retries keep failing, recheck the Transfer Job configuration and the data source.
 {% endhint %}
