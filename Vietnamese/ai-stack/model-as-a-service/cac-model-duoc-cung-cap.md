@@ -3,7 +3,7 @@
 MaaS API cung cấp quyền truy cập với độ chính xác đầy đủ vào các họ mô hình Gemini, Anthropic, OpenAI... được liệt kê bên dưới.
 
 {% hint style="info" %}
-Danh mục model bên dưới đã được cập nhật theo lộ trình chuyển đổi bắt đầu **03/08/2026**, gồm model do GreenNode self-host và model third-party đã ký hợp đồng chính thức. Xem chi tiết mốc thời gian tại [Release Notes](release-notes.md) và bảng giá đầy đủ tại [Bảng giá Model](bang-gia-model.md).
+Danh mục model bên dưới đã được cập nhật theo lộ trình chuyển đổi bắt đầu **03/08/2026**, gồm model do GreenNode self-host và model third-party đã ký hợp đồng chính thức. Xem chi tiết mốc thời gian tại [Release Notes](../release-notes.md) và bảng giá đầy đủ tại [Bảng giá Model](bang-gia-model.md).
 {% endhint %}
 
 ### Danh sách mô hình

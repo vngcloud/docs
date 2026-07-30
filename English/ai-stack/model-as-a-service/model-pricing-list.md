@@ -7,7 +7,7 @@ description: >-
 # Model Pricing List
 
 {% hint style="info" %}
-The model catalog and pricing below apply under the transition starting **August 3, 2026**. See the timeline details in [Release Notes](release-notes.md).
+The model catalog and pricing below apply under the transition starting **August 3, 2026**. See the timeline details in [Release Notes](../release-notes.md).
 {% endhint %}
 
 ### 1. Token-based Models

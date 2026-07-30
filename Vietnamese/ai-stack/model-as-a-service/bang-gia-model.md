@@ -7,7 +7,7 @@ description: >-
 # Bảng giá Model
 
 {% hint style="info" %}
-Danh mục model và bảng giá dưới đây áp dụng theo lộ trình chuyển đổi bắt đầu **03/08/2026**. Xem chi tiết mốc thời gian tại [Release Notes](release-notes.md).
+Danh mục model và bảng giá dưới đây áp dụng theo lộ trình chuyển đổi bắt đầu **03/08/2026**. Xem chi tiết mốc thời gian tại [Release Notes](../release-notes.md).
 {% endhint %}
 
 ### 1. Model tính theo Token
