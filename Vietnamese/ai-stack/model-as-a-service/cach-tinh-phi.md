@@ -10,6 +10,8 @@ description: >-
 
 MaaS hỗ trợ nhiều loại model khác nhau, và **cách tính phí phụ thuộc vào loại model được sử dụng**.
 
+Xem đơn giá chi tiết theo từng model tại [Bảng giá Model](bang-gia-model.md).
+
 #### Phân loại model theo billing
 
 Hiện tại có **2 nhóm model chính**:

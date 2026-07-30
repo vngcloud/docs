@@ -2,53 +2,40 @@
 
 The MaaS API provides full-accuracy access to model families such as Gemini, Anthropic, OpenAI, and others listed below.
 
+{% hint style="info" %}
+The model catalog below has been updated under the transition starting **August 3, 2026**, covering models self-hosted by GreenNode and third-party models under official contracts. See the timeline details in [Release Notes](release-notes.md) and the full price list in [Model Pricing List](model-pricing-list.md).
+{% endhint %}
+
 ### Danh sách mô hình
 
 MaaS hỗ trợ nhiều loại mô hình khác nhau:
 
 #### _**Chat**_
 
-| Model Name                     | Provider  | Rate Limit        |
-| ------------------------------ | --------- | ----------------- |
-| Claude Sonnet 4.0              | Anthropic | 50 requests / day |
-| Claude 3.7 Sonnet              | Anthropic | 50 requests / day |
-| Claude 3.5 Haiku               | Anthropic | 50 requests / day |
-| Claude 3 Opus                  | Anthropic | 50 requests / day |
-| Gemini 3.1 Pro Preview         | Google    | 50 requests / day |
-| Gemini 2.5 Pro                 | Google    | 50 requests / day |
-| Gemini 2.5 Flash               | Google    | 50 requests / day |
-| Gemini 2.5 Flash Lite          | Google    | 50 requests / day |
-| Gemini 2.0 Flash               | Google    | 50 requests / day |
-| Gemini 2.0 Flash Lite          | Google    | 50 requests / day |
-| gpt-5                          | OpenAI    | 50 requests / day |
-| gpt-5-mini                     | OpenAI    | 50 requests / day |
-| gpt-5-nano                     | OpenAI    | 50 requests / day |
-| gpt-oss-120b                   | OpenAI    | 50 requests / day |
-| gpt-oss-20b                    | OpenAI    | 50 requests / day |
-| ChatGPT 4o                     | OpenAI    | 50 requests / day |
-| ChatGPT 4o mini                | OpenAI    | 50 requests / day |
-| ChatGPT 3.5 Turbo              | OpenAI    | 50 requests / day |
-| DeepSeek Reasoner              | DeepSeek  | 50 requests / day |
-| DeepSeek Chat                  | DeepSeek  | 50 requests / day |
-| deepseek-r1-qwen3-8b           | DeepSeek  | 50 requests / day |
-| Qwen3-235B-A22B-Thinking-2507  | Qwen      | 50 requests / day |
-| Qwen3-235B-A22B-Instruct-2507  | Qwen      | 50 requests / day |
-| Qwen3-VL-235B-A22B-Instruct    | Qwen      | 50 requests / day |
-| qwen3-30b-a3b-thinking-2507    | Qwen      | 50 requests / day |
-| qwen3-coder-plus-2025-07-22    | Qwen      | 50 requests / day |
-| qwen3-coder-plus               | Qwen      | 50 requests / day |
-| qwen3-coder-480b-a35b-instruct | Qwen      | 50 requests / day |
-| qwen3-5-27b                    | Qwen      | 50 requests / day |
-| ByteDance-Seed-1.6             | ByteDance | 50 requests / day |
-| ByteDance-Seed-1.6-flash       | ByteDance | 50 requests / day |
-| Skylark-pro                    | ByteDance | 50 requests / day |
-| Skylark-vision                 | ByteDance | 50 requests / day |
-| meta-llama-4-maverick          | Meta      | 50 requests / day |
-| meta-llama-4-scout             | Meta      | 50 requests / day |
-| meta-llama-3-8b                | Meta      | 50 requests / day |
-| gemma-3-27b-it                 | Google    | 50 requests / day |
-| nemotron-3-nano-30b-a3b        | NVIDIA    | 50 requests / day |
-| GreenMind Medium 14B R1 Chat   | GreenNode | 50 requests / day |
+| Model Name              | Provider    | Rate Limit |
+| ------------------------ | ----------- | ---------- |
+| Kimi K2.7 Code          | Moonshot AI | –          |
+| Kimi 2.6                | Moonshot AI | –          |
+| GLM-5.2                 | Zhipu AI    | –          |
+| Opus 4.8                | Anthropic   | –          |
+| Sonnet 4.6              | Anthropic   | –          |
+| Haiku 4.5               | Anthropic   | –          |
+| Gemma 4 31B-IT          | Google      | –          |
+| Qwen 3.7 Plus           | Qwen        | –          |
+| Qwen 3.6 Plus           | Qwen        | –          |
+| Qwen 3.6 Flash          | Qwen        | –          |
+| MiniMax M3              | MiniMax     | –          |
+| MiniMax M2.5            | MiniMax     | –          |
+| GPT-5.4                 | OpenAI      | –          |
+| GPT-5.4 Mini            | OpenAI      | –          |
+| GPT-5.4 Nano            | OpenAI      | –          |
+| GPT-5                   | OpenAI      | –          |
+| GPT-5 Mini              | OpenAI      | –          |
+| GPT-5 Nano              | OpenAI      | –          |
+| GPT-4o                  | OpenAI      | –          |
+| GPT-4o Mini             | OpenAI      | –          |
+| GPT-OSS 20B             | OpenAI      | –          |
+| GPT-OSS 120B            | OpenAI      | –          |
 
 #### _Generate Content_
 
@@ -60,11 +47,9 @@ MaaS hỗ trợ nhiều loại mô hình khác nhau:
 
 #### _Image Generation_
 
-| Model Name  | Provider | Rate Limit      |
-| ----------- | -------- | --------------- |
-| GPT-image-1 | OpenAI   | 5 request / day |
-| Dall-e-3    | OpenAI   | 5 request / day |
-| Dall-e-2    | OpenAI   | 5 request / day |
+| Model Name    | Provider | Rate Limit |
+| -------------- | -------- | ---------- |
+| gpt-image-2    | OpenAI   | –          |
 
 #### _Completion_
 
@@ -74,21 +59,16 @@ MaaS hỗ trợ nhiều loại mô hình khác nhau:
 
 #### _Embedding_
 
-| Model Name                     | Provider  | Rate Limit        |
-| ------------------------------ | --------- | ----------------- |
-| openai-text-embedding-3-large  | OpenAI    | 50 requests / day |
-| openai-text-embedding-3-small  | OpenAI    | 50 requests / day |
-| openai-text-embedding-ada-002  | OpenAI    | 50 requests / day |
-| gemini-embedding-001           | Google    | 50 requests / day |
-| qwen3-embedding-8b             | Qwen      | 50 requests / day |
-| BGE-M3                         | BAAI      | 50 requests / day |
-| GreenNode Embedding Large 1007 | GreenNode | 50 requests / day |
+| Model Name          | Provider | Rate Limit |
+| -------------------- | -------- | ---------- |
+| Cohere Embed v4     | Cohere   | –          |
+| Qwen3 Embedding 8B  | Qwen     | –          |
 
 #### _Rerank_
 
-| Model Name        | Provider | Rate Limit |
-| ----------------- | -------- | ---------- |
-| qwen3-reranker-8b | Qwen     |            |
+| Model Name              | Provider | Rate Limit |
+| ------------------------ | -------- | ---------- |
+| Cohere Rerank v4.0 pro  | Cohere   | –          |
 
 #### _Text to Speech_
 
