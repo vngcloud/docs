@@ -3,7 +3,7 @@
 The MaaS API provides full-accuracy access to model families such as Gemini, Anthropic, OpenAI, and others listed below.
 
 {% hint style="info" %}
-The model catalog below has been updated under the transition starting **August 3, 2026**, covering models self-hosted by GreenNode and third-party models under official contracts. See the timeline details in [Release Notes](release-notes.md) and the full price list in [Model Pricing List](model-pricing-list.md).
+The model catalog below has been updated under the transition starting **August 3, 2026**, covering models self-hosted by GreenNode and third-party models under official contracts. See the timeline details in [Release Notes](../release-notes.md) and the full price list in [Model Pricing List](model-pricing-list.md).
 {% endhint %}
 
 ### Danh sách mô hình
