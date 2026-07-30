@@ -42,6 +42,11 @@ Runtime Service hỗ trợ autoscaling dựa trên mức sử dụng CPU hoặc 
 
 Khi tải giảm, AgentBase thu hẹp số bản sao về `minReplicas`.
 
+### Security Settings
+
+* **IP Access Control** — giới hạn dải IP CIDR nguồn được phép truy cập endpoint của Runtime; để trống nếu muốn cho phép mọi nguồn.
+* **Inbound Identity** — cấu hình cách xác thực request đến, thông qua **Inbound Auth type**: **IAM Permissions** (IAM token của GreenNode AI Platform), **JSON Web Tokens (JWT)** (validate qua Discovery URL hoặc JWKS inline), hoặc **No authorization** (accessible công khai, không có access control).
+
 ### Hợp đồng dịch vụ (Service Contract)
 
 Container agent của bạn phải đáp ứng các yêu cầu sau để hoạt động đúng với Runtime Service:
@@ -109,6 +114,10 @@ Runtime: my-order-agent
 | **Memory Threshold**      | `50`                                 | Scale out khi RAM vượt quá % này (25–75)                                                                                              |
 | **Registry Auth**         | Bật nếu là private                   | Username = robot account `backendName` (xem [Supporting Services — Robot Accounts](../supporting-services.md#create-a-robot-account)) |
 | **Environment Variables** | `KEY=value`                          | Chỉ cấu hình không nhạy cảm                                                                                                           |
+| **IP Access Control**     | `10.0.0.0/16`                        | Tùy chọn — dải IP CIDR nguồn được phép truy cập; để trống nếu muốn cho phép mọi nguồn                                                |
+| **Inbound Auth type**     | `JSON Web Tokens (JWT)`              | Tùy chọn — **IAM Permissions**, **JWT** (Discovery URL hoặc JWKS inline), hoặc **No authorization**                                  |
+
+![Security Settings — IP Access Control và Inbound Identity](<../../../.gitbook/assets/Agentbase-image/Security-Runtime.png>)
 
 5. Nhấn **Create**
 6. Runtime xuất hiện với trạng thái `CREATING`, sau đó chuyển sang `ACTIVE`

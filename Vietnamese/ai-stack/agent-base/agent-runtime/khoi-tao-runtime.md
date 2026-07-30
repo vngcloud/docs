@@ -70,9 +70,30 @@ Nhấp **DEPLOY** trong card **Custom Agent** để tiếp tục.
 
 - **Private VPC**: bật để triển khai trong mạng nội bộ doanh nghiệp
 
-**Bước 4:** Cấu hình Endpoint — AgentBase tự động tạo một Endpoint **DEFAULT**
+**Bước 4:** Cấu hình Security Settings (tùy chọn) — kiểm soát client nào được phép truy cập Runtime và cách xác thực request đến
 
-**Bước 5:** Xem lại → nhấp **Create**
+![Security Settings — IP Access Control và Inbound Identity](<../../../.gitbook/assets/Agentbase-image/Security-Runtime.png>)
+
+| Cấu hình | Mô tả |
+| --- | --- |
+| **IP Access Control** | Giới hạn dải IP CIDR nguồn được phép truy cập Runtime này. Thêm một hoặc nhiều CIDR vào **Allowed source IP ranges**; để trống nếu muốn cho phép mọi nguồn. |
+| **Inbound Identity** | Cấu hình cách xác thực request đến Runtime này — chọn **Inbound Auth type** bên dưới. |
+
+**Inbound Auth type:**
+
+| Chế độ | Mô tả |
+| --- | --- |
+| **IAM Permissions** | Xác thực caller bằng IAM token của GreenNode AI Platform. |
+| **JSON Web Tokens (JWT)** | Validate JWT bearer token đính kèm trong request. Chọn **JWT key source** là **Discovery URL** (tự fetch và refresh public keys) hoặc JWKS inline. |
+| **No authorization** | Không yêu cầu xác thực. |
+
+{% hint style="warning" %}
+Chọn **No authorization** khiến Runtime accessible công khai với bất kỳ ai có endpoint URL, không có access control. Dùng **IAM Permissions** hoặc **JWT** cho môi trường production.
+{% endhint %}
+
+**Bước 5:** Cấu hình Endpoint — AgentBase tự động tạo một Endpoint **DEFAULT**
+
+**Bước 6:** Xem lại → nhấp **Create**
 
 Runtime chuyển từ `CREATING` → `ACTIVE` khi container khởi động thành công.
 

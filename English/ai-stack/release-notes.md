@@ -42,6 +42,22 @@ Need support during the transition? Contact us via email at [support@greennode.a
 
 ***
 
+## July 2026
+
+**GreenNode AgentBase — Security Runtime & MCP Connectors**
+
+GreenNode AgentBase adds new security and integration capabilities for AI Agents:
+
+**New Features:**
+
+* **Security Runtime:** Control which clients can reach a Runtime and how incoming requests are authenticated — configure **IP Access Control** (allowed source IP CIDR ranges) and **Inbound Identity** (IAM Permissions, JWT, or No authorization) directly when creating a Runtime.
+  * Learn more at [Create Runtime](agent-base/agent-runtime/create-runtime.md).
+
+* **MCP Connectors:** Connect an agent to external services — GitHub, Slack, Microsoft 365 (M365 VNG bundle)... — in minutes via a prebuilt catalog, without building an MCP server or hand-coding OAuth.
+  * Learn more at [MCP Connectors](agent-base/mcp-connectors/README.md).
+
+***
+
 ## May 2026
 
 **GreenNode AgentBase — Phase 2**
