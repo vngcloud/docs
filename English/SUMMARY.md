@@ -736,6 +736,7 @@
       * [Import Model Registry Using vLLM](ai-stack/ai-platform/model-registry/import-model-registry-using-vllm.md)
       * [Import Model Registry Using a Custom Container](ai-stack/ai-platform/model-registry/import-model-registry-using-a-custom-container.md)
   * [Model as a Service (MaaS)](ai-stack/model-as-a-service/README.md)
+    * [Understanding AI Models](ai-stack/model-as-a-service/understanding-ai-models.md)
     * [OCR API Usage Guide](ai-stack/model-as-a-service/ocr-api-usage-guide.md)
     * [Playground](ai-stack/model-as-a-service/playground.md)
     * [Available Models](ai-stack/model-as-a-service/available-models.md)

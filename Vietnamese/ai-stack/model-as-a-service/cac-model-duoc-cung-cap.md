@@ -12,53 +12,53 @@ MaaS hỗ trợ nhiều loại mô hình khác nhau:
 
 #### _Chat_
 
-| Model Name     | Provider    | Rate Limit | Sẵn có từ    |
-| --------------- | ----------- | ---------- | ------------ |
-| Kimi K2.7 Code | Moonshot AI | –          | 03/08/2026   |
-| Kimi 2.6       | Moonshot AI | –          | 03/08/2026   |
-| GLM-5.2        | Zhipu AI    | –          | 03/08/2026   |
-| Gemma 4 31B-IT | Google      | –          | 03/08/2026   |
-| Qwen 3.7 Plus  | Qwen        | –          | 03/08/2026   |
-| Qwen 3.6 Plus  | Qwen        | –          | 03/08/2026   |
-| Qwen 3.6 Flash | Qwen        | –          | 03/08/2026   |
-| MiniMax M3     | MiniMax     | –          | 03/08/2026   |
-| MiniMax M2.5   | MiniMax     | –          | 03/08/2026   |
-| Opus 4.8       | Anthropic   | –          | 20/08/2026   |
-| Sonnet 4.6     | Anthropic   | –          | 20/08/2026   |
-| Haiku 4.5      | Anthropic   | –          | 20/08/2026   |
-| GPT-5.4        | OpenAI      | –          | 20/08/2026   |
-| GPT-5.4 Mini   | OpenAI      | –          | 20/08/2026   |
-| GPT-5.4 Nano   | OpenAI      | –          | 20/08/2026   |
-| GPT-5          | OpenAI      | –          | 20/08/2026   |
-| GPT-5 Mini     | OpenAI      | –          | 20/08/2026   |
-| GPT-5 Nano     | OpenAI      | –          | 20/08/2026   |
-| GPT-4o         | OpenAI      | –          | 20/08/2026   |
-| GPT-4o Mini    | OpenAI      | –          | 20/08/2026   |
-| GPT-OSS 20B    | OpenAI      | –          | 20/08/2026   |
-| GPT-OSS 120B   | OpenAI      | –          | 20/08/2026   |
+| Model Name     | Provider    | Modalities (Input → Output)   | Rate Limit | Sẵn có từ    |
+| --------------- | ----------- | ---------------------------------- | ---------- | ------------ |
+| Kimi K2.7 Code | Moonshot AI | Text + Image → Text               | –          | 03/08/2026   |
+| Kimi 2.6       | Moonshot AI | Text + Image + Video → Text       | –          | 03/08/2026   |
+| GLM-5.2        | Zhipu AI    | Text → Text                        | –          | 03/08/2026   |
+| Gemma 4 31B-IT | Google      | Text + Image → Text               | –          | 03/08/2026   |
+| Qwen 3.7 Plus  | Qwen        | Text + Image + Video → Text       | –          | 03/08/2026   |
+| Qwen 3.6 Plus  | Qwen        | Text + Image + Video → Text       | –          | 03/08/2026   |
+| Qwen 3.6 Flash | Qwen        | Text + Image → Text               | –          | 03/08/2026   |
+| MiniMax M3     | MiniMax     | Text + Image + Video → Text       | –          | 03/08/2026   |
+| MiniMax M2.5   | MiniMax     | Text → Text                        | –          | 03/08/2026   |
+| Opus 4.8       | Anthropic   | Text + Image → Text               | –          | 20/08/2026   |
+| Sonnet 4.6     | Anthropic   | Text + Image → Text               | –          | 20/08/2026   |
+| Haiku 4.5      | Anthropic   | Text + Image → Text               | –          | 20/08/2026   |
+| GPT-5.4        | OpenAI      | Text + Image → Text               | –          | 20/08/2026   |
+| GPT-5.4 Mini   | OpenAI      | Text + Image → Text               | –          | 20/08/2026   |
+| GPT-5.4 Nano   | OpenAI      | Text + Image → Text               | –          | 20/08/2026   |
+| GPT-5          | OpenAI      | Text + Image → Text               | –          | 20/08/2026   |
+| GPT-5 Mini     | OpenAI      | Text + Image → Text               | –          | 20/08/2026   |
+| GPT-5 Nano     | OpenAI      | Text + Image → Text               | –          | 20/08/2026   |
+| GPT-4o         | OpenAI      | Text + Image → Text               | –          | 20/08/2026   |
+| GPT-4o Mini    | OpenAI      | Text + Image → Text               | –          | 20/08/2026   |
+| GPT-OSS 20B    | OpenAI      | Text → Text                        | –          | 20/08/2026   |
+| GPT-OSS 120B   | OpenAI      | Text → Text                        | –          | 20/08/2026   |
 
 {% hint style="info" %}
-Model có mốc **03/08/2026** đã sẵn sàng sử dụng. Model có mốc **20/08/2026** đang được triển khai dần và chưa khả dụng.
+Modalities mô tả khả năng chung của model theo tài liệu của nhà cung cấp — khả năng thực tế có thể phụ thuộc vào endpoint API cụ thể được gọi qua MaaS. Model có mốc **03/08/2026** đã sẵn sàng sử dụng; model có mốc **20/08/2026** đang được triển khai dần và chưa khả dụng.
 {% endhint %}
 
 #### _Image Generation_
 
-| Model Name    | Provider | Rate Limit | Sẵn có từ  |
-| -------------- | -------- | ---------- | ---------- |
-| gpt-image-2    | OpenAI   | –          | 20/08/2026 |
+| Model Name    | Provider | Modalities (Input → Output) | Rate Limit | Sẵn có từ  |
+| -------------- | -------- | ------------------------------- | ---------- | ---------- |
+| gpt-image-2    | OpenAI   | Text + Image → Image           | –          | 20/08/2026 |
 
 #### _Embedding_
 
-| Model Name          | Provider | Rate Limit | Sẵn có từ  |
-| -------------------- | -------- | ---------- | ---------- |
-| Cohere Embed v4     | Cohere   | –          | 20/08/2026 |
-| Qwen3 Embedding 8B  | Qwen     | –          | 20/08/2026 |
+| Model Name          | Provider | Modalities (Input → Output) | Rate Limit | Sẵn có từ  |
+| -------------------- | -------- | ------------------------------- | ---------- | ---------- |
+| Cohere Embed v4     | Cohere   | Text + Image → Vector          | –          | 20/08/2026 |
+| Qwen3 Embedding 8B  | Qwen     | Text → Vector                   | –          | 20/08/2026 |
 
 #### _Rerank_
 
-| Model Name              | Provider | Rate Limit | Sẵn có từ  |
-| ------------------------ | -------- | ---------- | ---------- |
-| Cohere Rerank v4.0 pro  | Cohere   | –          | 20/08/2026 |
+| Model Name              | Provider | Modalities (Input → Output) | Rate Limit | Sẵn có từ  |
+| ------------------------ | -------- | ------------------------------- | ---------- | ---------- |
+| Cohere Rerank v4.0 pro  | Cohere   | Text → Ranked List             | –          | 20/08/2026 |
 
 Lưu ý:
 
