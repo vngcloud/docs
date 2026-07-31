@@ -825,6 +825,7 @@
       * [Import Model Registry sử dụng vLLM](ai-stack/ai-platform/model-registry/import-vllm-model.md)
       * [Import Model Registry với custom container](ai-stack/ai-platform/model-registry/import-model-registry-voi-custom-container.md)
   * [Model as a Service (MaaS)](ai-stack/model-as-a-service/README.md)
+    * [Giới thiệu về AI Model](ai-stack/model-as-a-service/gioi-thieu-ve-ai-model.md)
     * [Hướng dẫn sử dụng API OCR](ai-stack/model-as-a-service/huong-dan-su-dung-api-ocr.md)
     * [Playground](ai-stack/model-as-a-service/playground.md)
     * [Các Model được cung cấp](ai-stack/model-as-a-service/cac-model-duoc-cung-cap.md)
