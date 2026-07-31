@@ -70,9 +70,30 @@ Click **DEPLOY** in the **Custom Agent** card to continue.
 
 * **Private VPC**: enable to deploy inside your enterprise network
 
-**Step 4:** Configure Endpoint — AgentBase automatically creates a **DEFAULT** Endpoint
+**Step 4:** Configure Security Settings (optional) — control which clients can reach the Runtime and how incoming requests are authenticated
 
-**Step 5:** Review → click **Create**
+![Security Settings — IP Access Control and Inbound Identity](<../../../.gitbook/assets/Agentbase-image/Security-Runtime.png>)
+
+| Setting | Description |
+| ------- | ----------- |
+| **IP Access Control** | Restrict which source IP CIDR ranges can reach this Runtime. Add one or more CIDRs to **Allowed source IP ranges**; leave empty to allow all sources. |
+| **Inbound Identity** | Configure how incoming requests to this Runtime are authenticated — set the **Inbound Auth type** below. |
+
+**Inbound Auth type:**
+
+| Mode | Description |
+| ---- | ----------- |
+| **IAM Permissions** | Authenticates callers using the GreenNode AI Platform IAM token. |
+| **JSON Web Tokens (JWT)** | Validates incoming JWT bearer tokens. Set the **JWT key source** to a **Discovery URL** (automatically fetches and refreshes public keys) or inline **JWKS**. |
+| **No authorization** | No authentication required. |
+
+{% hint style="warning" %}
+Selecting **No authorization** makes the Runtime publicly accessible to anyone with the endpoint URL, with no access control. Use **IAM Permissions** or **JWT** for production workloads.
+{% endhint %}
+
+**Step 5:** Configure Endpoint — AgentBase automatically creates a **DEFAULT** Endpoint
+
+**Step 6:** Review → click **Create**
 
 The Runtime transitions from `CREATING` → `ACTIVE` once the container starts successfully.
 

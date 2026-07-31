@@ -42,6 +42,11 @@ The Runtime Service supports autoscaling based on CPU or RAM utilization. You de
 
 When load drops, AgentBase scales replicas back down to `minReplicas`.
 
+### Security Settings
+
+* **IP Access Control** â€” restricts which source IP CIDR ranges can reach the Runtime endpoint; leave empty to allow all sources.
+* **Inbound Identity** â€” configures how incoming requests are authenticated, via an **Inbound Auth type**: **IAM Permissions** (GreenNode AI Platform IAM token), **JSON Web Tokens (JWT)** (validated via a Discovery URL or inline JWKS), or **No authorization** (publicly accessible, no access control).
+
 ### Service Contract
 
 Your agent container must satisfy these requirements to work correctly with the Runtime Service:
@@ -109,6 +114,10 @@ Runtime: my-order-agent
 | **Memory Threshold**      | `50`                                 | Scale out when RAM exceeds this % (25â€“75)                                                                                             |
 | **Registry Auth**         | Enable if private                    | Username = robot account `backendName` (see [Supporting Services â€” Robot Accounts](../supporting-services.md#create-a-robot-account)) |
 | **Environment Variables** | `KEY=value`                          | Non-sensitive config only                                                                                                               |
+| **IP Access Control**     | `10.0.0.0/16`                        | Optional â€” allowed source IP CIDR ranges; leave empty to allow all sources                                                            |
+| **Inbound Auth type**     | `JSON Web Tokens (JWT)`              | Optional â€” **IAM Permissions**, **JWT** (Discovery URL or inline JWKS), or **No authorization**                                       |
+
+![Security Settings â€” IP Access Control and Inbound Identity](<../../../.gitbook/assets/Agentbase-image/Security-Runtime.png>)
 
 5. Click **Create**
 6. Runtime appears with status `CREATING`, then transitions to `ACTIVE`

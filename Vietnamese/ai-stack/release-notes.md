@@ -42,6 +42,22 @@ Cần hỗ trợ trong quá trình chuyển đổi? Liên hệ qua email [suppor
 
 ***
 
+## Tháng 7, 2026
+
+**GreenNode AgentBase — Security Runtime & MCP Connectors**
+
+GreenNode AgentBase bổ sung các tính năng bảo mật và tích hợp mới cho AI Agent:
+
+**Tính năng mới:**
+
+* **Security Runtime:** Kiểm soát client nào được phép truy cập Runtime và cách xác thực request đến — cấu hình **IP Access Control** (dải IP CIDR nguồn được phép) và **Inbound Identity** (IAM Permissions, JWT, hoặc No authorization) ngay khi tạo Runtime.
+  * Tìm hiểu thêm tại [Khởi tạo Runtime](agent-base/agent-runtime/khoi-tao-runtime.md).
+
+* **MCP Connectors:** Kết nối agent với external service — GitHub, Slack, Microsoft 365 (bundle M365 VNG)... — chỉ trong vài phút thông qua catalog dựng sẵn, không cần build MCP server hay tự code OAuth.
+  * Tìm hiểu thêm tại [MCP Connectors](agent-base/mcp-connectors/README.md).
+
+***
+
 ## Tháng 5, 2026
 
 **GreenNode AgentBase — Phase 2**
