@@ -15,25 +15,25 @@ MaaS hỗ trợ nhiều loại mô hình khác nhau:
 | Model Name     | Provider    | Modalities (Input → Output)   | Rate Limit | Sẵn có từ    |
 | --------------- | ----------- | ---------------------------------- | ---------- | ------------ |
 | Kimi K2.7 Code | Moonshot AI | Text + Image → Text               | –          | 03/08/2026   |
-| Kimi 2.6       | Moonshot AI | Text + Image + Video → Text       | –          | 03/08/2026   |
+| Kimi 2.6       | Moonshot AI | Text + Image → Text               | –          | 03/08/2026   |
 | GLM-5.2        | Zhipu AI    | Text → Text                        | –          | 03/08/2026   |
 | Gemma 4 31B-IT | Google      | Text + Image → Text               | –          | 03/08/2026   |
 | Qwen 3.7 Plus  | Qwen        | Text + Image + Video → Text       | –          | 03/08/2026   |
 | Qwen 3.6 Plus  | Qwen        | Text + Image + Video → Text       | –          | 03/08/2026   |
-| Qwen 3.6 Flash | Qwen        | Text + Image → Text               | –          | 03/08/2026   |
+| Qwen 3.6 Flash | Qwen        | Text + Image + Video → Text       | –          | 03/08/2026   |
 | MiniMax M3     | MiniMax     | Text + Image + Video → Text       | –          | 03/08/2026   |
 | MiniMax M2.5   | MiniMax     | Text → Text                        | –          | 03/08/2026   |
-| Opus 4.8       | Anthropic   | Text + Image → Text               | –          | 20/08/2026   |
-| Sonnet 4.6     | Anthropic   | Text + Image → Text               | –          | 20/08/2026   |
-| Haiku 4.5      | Anthropic   | Text + Image → Text               | –          | 20/08/2026   |
-| GPT-5.4        | OpenAI      | Text + Image → Text               | –          | 20/08/2026   |
-| GPT-5.4 Mini   | OpenAI      | Text + Image → Text               | –          | 20/08/2026   |
-| GPT-5.4 Nano   | OpenAI      | Text + Image → Text               | –          | 20/08/2026   |
-| GPT-5          | OpenAI      | Text + Image → Text               | –          | 20/08/2026   |
-| GPT-5 Mini     | OpenAI      | Text + Image → Text               | –          | 20/08/2026   |
-| GPT-5 Nano     | OpenAI      | Text + Image → Text               | –          | 20/08/2026   |
-| GPT-4o         | OpenAI      | Text + Image → Text               | –          | 20/08/2026   |
-| GPT-4o Mini    | OpenAI      | Text + Image → Text               | –          | 20/08/2026   |
+| Opus 4.8       | Anthropic   | Text + Image + File → Text        | –          | 20/08/2026   |
+| Sonnet 4.6     | Anthropic   | Text + Image + File → Text        | –          | 20/08/2026   |
+| Haiku 4.5      | Anthropic   | Text + Image + File → Text        | –          | 20/08/2026   |
+| GPT-5.4        | OpenAI      | Text + Image + File → Text        | –          | 20/08/2026   |
+| GPT-5.4 Mini   | OpenAI      | Text + Image + File → Text        | –          | 20/08/2026   |
+| GPT-5.4 Nano   | OpenAI      | Text + Image + File → Text        | –          | 20/08/2026   |
+| GPT-5          | OpenAI      | Text + Image + File → Text        | –          | 20/08/2026   |
+| GPT-5 Mini     | OpenAI      | Text + Image + File → Text        | –          | 20/08/2026   |
+| GPT-5 Nano     | OpenAI      | Text + Image + File → Text        | –          | 20/08/2026   |
+| GPT-4o         | OpenAI      | Text + Image + File → Text        | –          | 20/08/2026   |
+| GPT-4o Mini    | OpenAI      | Text + Image + File → Text        | –          | 20/08/2026   |
 | GPT-OSS 20B    | OpenAI      | Text → Text                        | –          | 20/08/2026   |
 | GPT-OSS 120B   | OpenAI      | Text → Text                        | –          | 20/08/2026   |
 
