@@ -13,7 +13,7 @@
 
 ## Open Usage & Cost
 
-1. Go to **AgentBase** → sidebar → **Usage & Budget** → **Usage & Cost**
+1. Go to **AI Platform Console** → sidebar → **Usage & Budget** → **Usage & Cost**
 2. The dashboard opens on the **Usage tab** by default with Time Range = **Last 1h**
 
 ***

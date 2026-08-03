@@ -14,9 +14,9 @@
 
 **Bước 1: Mở Budget & Alerts**
 
-1. Vào **AgentBase** → sidebar → **Usage & Budget** → **Budget & Alerts**
+1. Vào **AI Platform Console** → sidebar → **Usage & Budget** → **Budget & Alerts**
 
-![Budget & Alerts](../../../.gitbook/assets/Agentbase-image/Budget-Alerts.png)
+![Budget & Alerts](../../.gitbook/assets/Agentbase-image/Budget-Alerts.png)
 
 **Bước 2: Nhập hạn mức và lưu**
 

@@ -13,7 +13,7 @@
 
 ## Mở Usage & Cost
 
-1. Vào **AgentBase** → sidebar → **Usage & Budget** → **Usage & Cost**
+1. Vào **AI Platform Console** → sidebar → **Usage & Budget** → **Usage & Cost**
 2. Dashboard mở mặc định ở **Tab Usage** với Time Range = **Last 1h**
 
 ---
@@ -50,7 +50,7 @@ Global filter bar nằm cố định ở đầu trang, áp dụng cho cả Tab U
 
 Tab Usage hiển thị 4 KPI cards và 3 section chính:
 
-![Usage & Cost — Tab Usage](../../../.gitbook/assets/Agentbase-image/Usage-tab.png)
+![Usage & Cost — Tab Usage](../../.gitbook/assets/Agentbase-image/Usage-tab.png)
 
 **KPI cards:**
 
@@ -91,7 +91,7 @@ Khi chi phí tháng hiện tại đạt ≥ 80% budget limit, banner cảnh báo
 
 Chuyển sang **Tab Cost** để xem phân tích chi phí chi tiết:
 
-![Usage & Cost — Tab Cost](../../../.gitbook/assets/Agentbase-image/Cost-tab.png)
+![Usage & Cost — Tab Cost](../../.gitbook/assets/Agentbase-image/Cost-tab.png)
 
 **KPI cards:**
 

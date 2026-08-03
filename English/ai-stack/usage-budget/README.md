@@ -1,6 +1,6 @@
 # Usage & Budget
 
-**Usage & Budget** helps you monitor resource consumption and control monthly spending — all within a single menu group on AgentBase.
+**Usage & Budget** helps you monitor resource consumption and control monthly spending — combining usage from Agents (AgentBase) and direct MaaS calls, in a single menu group on the AI Platform Console.
 
 ---
 

@@ -14,7 +14,7 @@
 
 **Step 1: Open Budget & Alerts**
 
-1. Go to **AgentBase** → sidebar → **Usage & Budget** → **Budget & Alerts**
+1. Go to **AI Platform Console** → sidebar → **Usage & Budget** → **Budget & Alerts**
 
 **Step 2: Enter the limit and save**
 

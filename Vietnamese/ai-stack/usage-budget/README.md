@@ -1,6 +1,6 @@
 # Usage & Budget
 
-**Usage & Budget** giúp bạn theo dõi mức tiêu thụ tài nguyên và kiểm soát ngân sách hàng tháng — tất cả trong một nhóm menu duy nhất trên AgentBase.
+**Usage & Budget** giúp bạn theo dõi mức tiêu thụ tài nguyên và kiểm soát ngân sách hàng tháng — gộp chung usage từ Agent (AgentBase) lẫn MaaS gọi trực tiếp, trong một nhóm menu duy nhất trên AI Platform Console.
 
 ---
 
