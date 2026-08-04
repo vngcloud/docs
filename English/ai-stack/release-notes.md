@@ -8,37 +8,33 @@ A single timeline of updates across all GreenNode AI Stack products — GreenNod
 
 **GreenNode MaaS — Model Catalog & Pricing Update**
 
-To deliver a better experience, GreenNode is updating the MaaS model catalog, now organized into two groups:
+GreenNode is updating the MaaS model catalog into two groups — **GreenNode self-hosted models** and **third-party models** under official contracts — along with better pricing on many models. The Portal now shows a **model type label (Self-host / Partner)** right on the model list, making it easy to tell models apart and pick the right one.
 
-* **Models self-hosted directly by GreenNode.**
-* **Third-party models from officially contracted partners.**
-
-**Transition Timeline**
-
-| Event                                                                                      | Date            |
-| -------------------------------------------------------------------------------------------- | --------------- |
-| Current models are discontinued & the new catalog is published on the portal               | August 3, 2026  |
-| Automatic 30-day extension — you may keep using current models until                       | September 2, 2026 |
-| After this date, requests to the old models will return an error and will not be processed | From September 3, 2026 |
-
-**What You Need to Do**
-
-* Compare your **current models** with the [new model catalog](model-as-a-service/available-models.md). If your current model remains in the catalog, **no action is needed**. Only if it is no longer available should you review the [pricing](model-as-a-service/model-pricing-list.md) and select a suitable replacement.
-* **Technical check before switching** (if a replacement is needed): replacement models may differ in model ID/endpoint and output behavior. Please test in advance and adjust your configuration and prompts to avoid disruption.
-* If you need **more transition time** beyond September 2, 2026, or have a specific model requirement, please contact the GreenNode team for guidance.
-
-**Benefits After the Transition**
-
-* **Transparency on model source:** the portal clearly shows which models are GreenNode self-hosted and which are third-party.
-* **More competitive pricing:** many models in the new catalog are priced better than before — see details in [Model Pricing List](model-as-a-service/model-pricing-list.md).
-* **Comprehensive & continuously growing catalog:** covering most top-tier open-source and closed-source models (Claude, GPT,…).
+* Current models are discontinued & the new catalog goes live on **August 3, 2026**, with an automatic extension until **September 2, 2026** before old-model requests start returning errors.
+* Compare your current models against the [new catalog](model-as-a-service/available-models.md); only switch if your model is no longer listed.
+* See full pricing at [Model Pricing List](model-as-a-service/model-pricing-list.md).
 
 {% hint style="info" %}
-Need support during the transition? Contact us via email at [support@greennode.ai](mailto:support@greennode.ai), hotline **19001549**, or the [Help Center](https://helpdesk.greennode.ai/portal/en/home).
+Need support during the transition? Contact [support@greennode.ai](mailto:support@greennode.ai), hotline **19001549**, or the [Help Center](https://helpdesk.greennode.ai/portal/en/home).
 {% endhint %}
 
-* See the new model catalog in [Available Models](model-as-a-service/available-models.md).
-* See full pricing details in [Model Pricing List](model-as-a-service/model-pricing-list.md).
+**GreenNode AI Gateway — Architecture Upgrade, Optimized Performance**
+
+GreenNode has upgraded the AI Gateway architecture to better handle growing traffic from MaaS and Token Plan:
+
+* **Low Latency:** Reduced latency in API key authentication and rate limiting.
+* **Scalability:** No longer limited by memory — serves more models and more users.
+* **High Performance:** Handles Token Plan traffic reliably.
+* Learn more at [AI Gateway](ai-gateway/README.md).
+
+**GreenNode AI Stack — Token Plan**
+
+Token Plan lets you lock in your monthly AI budget with a **30-day prepaid** package that has a fixed token/request limit per model — instead of paying per token actually used like PAYG.
+
+* Access via a **subscription-key**, fully separate from PAYG API Keys.
+* Browse and buy packages directly under the **Token Plan** group on the Portal.
+* Suited for stable daily usage (e.g. coding assistants).
+* Learn more at [Token Plan](token-plan/README.md).
 
 ***
 
