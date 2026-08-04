@@ -24,8 +24,6 @@ Mua gói  →  Gói tự sinh subscription-key  →  Copy key + Base URL
 Muốn hiểu sâu Token Plan khác PAYG chỗ nào, kiến trúc ra sao → xem [Token Plan (tổng quan)](README.md).
 {% endhint %}
 
-📎 *Sơ đồ BPMN đầy đủ của toàn bộ quy trình (3 lane: Admin/Root · Hệ thống GreenNode · Thành viên): file `flow-token-plan.bpmn` cùng thư mục — mở bằng [demo.bpmn.io](https://demo.bpmn.io/) hoặc Camunda Modeler.*
-
 ---
 
 ## 1. Điều kiện cần — checklist trước khi bắt đầu
