@@ -8,37 +8,33 @@ Tổng hợp các bản cập nhật của toàn bộ sản phẩm trong GreenNo
 
 **GreenNode MaaS — Cập nhật danh mục model & bảng giá**
 
-Để mang lại trải nghiệm tốt hơn, GreenNode cập nhật danh mục model trên MaaS, gồm hai nhóm:
+GreenNode cập nhật danh mục model trên MaaS thành hai nhóm — **model do GreenNode self-host** và **model third-party** đã ký hợp đồng chính thức — kèm bảng giá tốt hơn cho nhiều model. Portal bổ sung **label loại model (Self-host / Partner)** ngay trên danh sách, giúp bạn dễ dàng phân biệt và chọn model phù hợp.
 
-* **Model do GreenNode trực tiếp self-host.**
-* **Model third-party từ đối tác đã ký kết hợp đồng chính thức.**
-
-**Mốc thời gian chuyển đổi**
-
-| Sự kiện                                                                            | Thời điểm      |
-| ------------------------------------------------------------------------------------ | -------------- |
-| Dừng cung cấp các model hiện tại & công bố danh mục model mới trên portal            | 03/08/2026     |
-| Gia hạn tự động 30 ngày — tiếp tục dùng model hiện tại đến hết                       | 02/09/2026     |
-| Sau thời điểm này, request đến model cũ sẽ trả về lỗi và không thực hiện được        | Từ 03/09/2026  |
-
-**Quý khách cần làm gì**
-
-* Đối chiếu **model đang sử dụng** với [danh mục model mới](model-as-a-service/cac-model-duoc-cung-cap.md). Nếu model hiện tại vẫn còn trong danh mục, **không cần thay đổi**. Chỉ khi model không còn trong danh mục, mới cần tham khảo [bảng giá](model-as-a-service/bang-gia-model.md) và chọn model thay thế phù hợp.
-* **Kiểm tra kỹ thuật khi chuyển đổi** (nếu cần thay thế model): model thay thế có thể khác về model ID/endpoint cũng như đặc điểm output. Vui lòng kiểm thử trước và điều chỉnh cấu hình, prompt cho phù hợp để tránh gián đoạn.
-* Nếu cần **thêm thời gian chuyển đổi** ngoài mốc 02/09/2026, hoặc có nhu cầu đặc biệt về một model cụ thể, vui lòng liên hệ đội ngũ GreenNode để được tư vấn.
-
-**Lợi ích sau chuyển đổi**
-
-* **Minh bạch nguồn model:** trên portal hiển thị rõ model nào thuộc GreenNode self-host và model nào là third-party.
-* **Chi phí tối ưu hơn:** nhiều model trong danh mục mới có giá tốt hơn trước — xem chi tiết tại [Bảng giá Model](model-as-a-service/bang-gia-model.md).
-* **Danh mục đầy đủ & liên tục mở rộng:** đáp ứng đa số model open-source và closed-source top tier (Claude, GPT,…).
+* Model hiện tại ngừng cung cấp & danh mục mới lên portal từ **03/08/2026**, gia hạn tự động đến **02/09/2026** trước khi request đến model cũ bắt đầu trả lỗi.
+* Đối chiếu model đang dùng với [danh mục mới](model-as-a-service/cac-model-duoc-cung-cap.md); chỉ cần đổi model nếu model hiện tại không còn trong danh mục.
+* Xem chi tiết giá tại [Bảng giá Model](model-as-a-service/bang-gia-model.md).
 
 {% hint style="info" %}
-Cần hỗ trợ trong quá trình chuyển đổi? Liên hệ qua email [support@greennode.ai](mailto:support@greennode.ai), hotline **19001549**, hoặc [Trung tâm hỗ trợ](https://helpdesk.greennode.ai/portal/vi/home).
+Cần hỗ trợ trong quá trình chuyển đổi? Liên hệ [support@greennode.ai](mailto:support@greennode.ai), hotline **19001549**, hoặc [Trung tâm hỗ trợ](https://helpdesk.greennode.ai/portal/vi/home).
 {% endhint %}
 
-* Xem danh mục model mới tại [Các Model được cung cấp](model-as-a-service/cac-model-duoc-cung-cap.md).
-* Xem bảng giá chi tiết tại [Bảng giá Model](model-as-a-service/bang-gia-model.md).
+**GreenNode AI Gateway — Nâng cấp kiến trúc, tối ưu hiệu năng**
+
+GreenNode nâng cấp kiến trúc AI Gateway để đáp ứng tốt hơn lưu lượng ngày càng lớn từ MaaS và Token Plan:
+
+* **Low Latency:** Giảm độ trễ authentication API key và rate limiter.
+* **Scalability:** Không còn giới hạn bởi memory — phục vụ nhiều model, nhiều user hơn.
+* **High Performance:** Đáp ứng tốt traffic từ Token Plan.
+* Tìm hiểu thêm tại [AI Gateway](ai-gateway/README.md).
+
+**GreenNode AI Stack — Token Plan**
+
+Token Plan giúp khoá trước ngân sách AI hàng tháng bằng gói **prepaid 30 ngày** với hạn mức token/request cố định theo từng model — thay vì trả theo token thực dùng như PAYG.
+
+* Truy cập qua **subscription-key** riêng biệt hoàn toàn với API Key PAYG.
+* Browse & mua gói ngay trong nhóm **Token Plan** trên Portal.
+* Phù hợp với usage ổn định hàng ngày (ví dụ: coding assistant).
+* Tìm hiểu thêm tại [Token Plan](token-plan/README.md).
 
 ***
 
