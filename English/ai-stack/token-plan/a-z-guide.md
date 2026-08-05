@@ -61,7 +61,7 @@ Not enough credit? Top up in the AI Platform Console before buying — the syste
 | **Max keys** | How many people/tools you can issue keys to |
 | **Duration** | The plan cycle (usually 30 days) |
 | **Tokens / Requests per cycle** | The allowance per cycle — tracked **independently per model**, with no transfer between them |
-| **Included Models** | The models you can call (Model, Status, **Model code**, Provider) — remember the **Model code**, you'll need to enter it in your tool shortly |
+| **Included Models** | The plan's model table (Model, Hosting mode, Status, Token quota, Request quota). **Click the model name** to see its **Model code** — note it down, you'll need to enter it in your tool shortly |
 | **Subscription Endpoint** | `https://tokenplan.api.greennode.ai` — this is the **Base URL** you will use. OpenAI-standard tools append `/v1`, Anthropic-standard tools do **not** — see [Section 5](#5-set-it-up-in-the-tool-running-your-agent) |
 | **What happens when activated** | What happens right after activation |
 

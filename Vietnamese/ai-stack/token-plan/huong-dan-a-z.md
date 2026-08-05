@@ -61,7 +61,7 @@ Credit chưa đủ? Nạp thêm tại AI Platform Console trước khi mua — h
 | **Max keys**                    | Cấp được tối đa bao nhiêu người/tool                                                                                              |
 | **Duration**                    | Chu kỳ gói (thường 30 ngày)                                                                                                           |
 | **Tokens / Requests per cycle** | Hạn mức mỗi chu kỳ — tính **riêng cho từng model**, không bù trừ qua lại                                                  |
-| **Included Models**             | Danh sách model được gọi (Model, Status, **Model code**, Provider) — nhớ **Model code**, lát nữa cần điền vào tool |
+| **Included Models** | Bảng model trong gói (Model, Hosting mode, Status, Token quota, Request quota). **Nhấp vào tên model** để xem **Model code** — nhớ lấy, lát nữa cần điền vào tool |
 | **Subscription Endpoint** | `https://tokenplan.api.greennode.ai` — chính là **Base URL** bạn sẽ dùng. Tool chuẩn OpenAI thêm `/v1` ở cuối, tool chuẩn Anthropic thì **không** — xem [Mục 5](#5-setup-vao-tool-dang-chay-agent) |
 | **What happens when activated** | Điều gì xảy ra ngay sau khi kích hoạt                                                                                                |
 

@@ -23,7 +23,7 @@
 **Bước 2: Xem chi tiết trước khi mua**
 
 1. Nhấn vào 1 Plan Type để mở **Package Detail**
-2. Xem đầy đủ: số Max keys, số Model, Duration, hạn mức token/request mỗi chu kỳ, danh sách **Included Models** (Model, Status, Model code, Provider), mục **What happens when activated**, và **Subscription Endpoint** — host `tokenplan.api.greennode.ai`, thêm `/v1` cho tool chuẩn OpenAI và **không** có `/v1` cho tool chuẩn Anthropic
+2. Xem đầy đủ: số Max keys, số Model, Duration, hạn mức token/request mỗi chu kỳ, bảng **Included Models** (Model, Hosting mode, Status, Token quota, Request quota — **nhấp vào tên model** để xem Model code), mục **What happens when activated**, và **Subscription Endpoint** — host `tokenplan.api.greennode.ai`, thêm `/v1` cho tool chuẩn OpenAI và **không** có `/v1` cho tool chuẩn Anthropic
 
 {% hint style="warning" %}
 Gói đã mua **không thể đổi sang Plan Type khác hoặc trả lại theo yêu cầu tùy ý**. Nếu cần dừng gói giữa chu kỳ, dùng action **Delete** — phần hạn mức chưa dùng của chu kỳ hiện tại sẽ được hoàn lại pro rata vào Credits (xem [Quản lý Token Plan](quan-ly-token-plan.md)).
