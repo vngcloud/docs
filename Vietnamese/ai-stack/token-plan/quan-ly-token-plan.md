@@ -158,7 +158,23 @@ Sau khi có subscription-key và model nằm trong gói, cách gọi model **ho�
 
 Gửi request `POST` tới endpoint trên với header `Authorization: Bearer <subscription-key>` và trường `"model": "<model code>"` trong body (model code lấy từ tab **Models**, ví dụ `glm-5.2`).
 
-Xem chi tiết cấu hình client (OpenAI SDK, LiteLLM, Cursor, Continue.dev, Claude Code...) tại [Kết nối OpenAI-compatible với GreenNode MaaS](../ai-coding/ket-noi-openai-compatible-voi-maas.md) — chỉ cần đổi Base URL và API Key theo bảng trên, các bước còn lại giữ nguyên.
+### Hướng dẫn cấu hình theo từng tool
+
+Khi cấp subscription-key cho một thành viên, gửi kèm link tương ứng để họ tự setup:
+
+| Tool | Hướng dẫn cấu hình |
+|---|---|
+| Chưa biết chọn tool nào | [Bắt đầu với AI Coding](../ai-coding/bat-dau.md) |
+| Tool OpenAI-compatible bất kỳ (Cursor, Continue.dev, LiteLLM, OpenAI SDK...) | [Kết nối OpenAI-compatible với GreenNode MaaS](../ai-coding/ket-noi-openai-compatible-voi-maas.md) |
+| Nhóm dòng lệnh (CLI) | [Dòng lệnh (CLI)](../ai-coding/dong-lenh/README.md) — [Claude Code](../ai-coding/dong-lenh/claude-code.md), [Codex CLI](../ai-coding/dong-lenh/codex-cli.md), [OpenCode](../ai-coding/dong-lenh/opencode.md) |
+| Nhóm có giao diện (GUI) | [Có giao diện (GUI)](../ai-coding/co-giao-dien/README.md) — [Codex Desktop](../ai-coding/co-giao-dien/codex-desktop.md) |
+| Thêm MCP Server vào tool | [Dùng MCP Server với AI Coding](../ai-coding/mcp-openrouter.md) |
+
+Các trang trên viết theo API Key PAYG — giữ nguyên mọi bước, chỉ đổi Base URL và API key theo bảng so sánh ở trên.
+
+{% hint style="warning" %}
+**Claude Code / Anthropic SDK** dùng chuẩn Anthropic (base URL **không** có `/v1`), khác với Subscription Endpoint OpenAI-compatible. Xem [Claude Code](../ai-coding/dong-lenh/claude-code.md) và xác nhận với đội hỗ trợ về endpoint áp dụng cho Token Plan.
+{% endhint %}
 
 ---
 
@@ -169,5 +185,7 @@ Bạn có thể theo dõi hạn mức từng gói, chủ động bật/tắt gia
 | Tôi muốn tiếp theo... | Đi đến |
 |---|---|
 | Mua thêm gói | [Mua gói Token Plan](mua-goi-token-plan.md) |
+| Cấu hình tool AI coding cho thành viên | [Bắt đầu với AI Coding](../ai-coding/bat-dau.md) |
+| Đi hết một vòng từ mua gói đến chạy được trên tool | [Hướng dẫn A-Z](huong-dan-a-z.md) |
 | Xem usage & chi phí tổng | [Usage & Budget](../usage-budget/README.md) |
 | Cấu hình Rate Limit | [Rate Limit](../agent-base/protect-govern/rate-limit.md) |

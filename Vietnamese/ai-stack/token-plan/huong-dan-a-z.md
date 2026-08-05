@@ -32,8 +32,8 @@ Tick đủ 3 dòng này rồi mới sang bước 2:
 
 | # | Cần có                                                         | Cách kiểm tra                                                                                                       |
 | - | ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| 1 | **Tài khoản GreenNode** đăng nhập được AI Platform | Mở[aiplatform.console.greennode.ai](https://aiplatform.console.greennode.ai/)                                         |
-| 2 | **Vai trò Root hoặc Admin**                              | Chỉ 2 role này được mua gói. Xem[Phân quyền theo Role](../agent-base/team-permissions/phan-quyen-theo-role.md) |
+| 1 | **Tài khoản GreenNode** đăng nhập được AI Platform | Mở [aiplatform.console.greennode.ai](https://aiplatform.console.greennode.ai/)                                         |
+| 2 | **Vai trò Root hoặc Admin**                              | Chỉ 2 role này được mua gói. Xem [Phân quyền theo Role](../agent-base/team-permissions/phan-quyen-theo-role.md) |
 | 3 | **Đủ Credits** trong tài khoản cho giá gói           | Số dư hiển thị ngay ở màn thanh toán (**Balance**). 1 credit = 1 VND                                     |
 
 {% hint style="warning" %}
@@ -58,8 +58,8 @@ Credit chưa đủ? Nạp thêm tại AI Platform Console trước khi mua — h
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Max keys**                    | Cấp được tối đa bao nhiêu người/tool                                                                                              |
 | **Duration**                    | Chu kỳ gói (thường 30 ngày)                                                                                                           |
-| **Tokens / Requests per cycle** | Hạn mức mỗi chu kỳ — tính**riêng cho từng model**, không bù trừ qua lại                                                  |
-| **Included Models**             | Danh sách model được gọi (Model, Status,**Model code**, Provider) — nhớ **Model code**, lát nữa cần điền vào tool |
+| **Tokens / Requests per cycle** | Hạn mức mỗi chu kỳ — tính **riêng cho từng model**, không bù trừ qua lại                                                  |
+| **Included Models**             | Danh sách model được gọi (Model, Status, **Model code**, Provider) — nhớ **Model code**, lát nữa cần điền vào tool |
 | **Subscription Endpoint**       | `https://tokenplan.api.greennode.ai/v1` — chính là **Base URL** bạn sẽ dùng                                                  |
 | **What happens when activated** | Điều gì xảy ra ngay sau khi kích hoạt                                                                                                |
 
@@ -80,7 +80,7 @@ Gói đã mua **không đổi được sang Plan Type khác** và **không trả
 
 | Trường                                      | Ví dụ                                                        | Lưu ý                                                                                                                       |
 | --------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| **Plan name** (bắt buộc)              | `ENG-GLM-1`                                                  | Chỉ`a-z A-Z 0-9 _ - .`, tối đa 50 ký tự. **Đặt tên theo phòng ban/dự án** để sau này lọc usage cho dễ |
+| **Plan name** (bắt buộc)              | `ENG-GLM-1`                                                  | Chỉ `a-z A-Z 0-9 _ - .`, tối đa 50 ký tự. **Đặt tên theo phòng ban/dự án** để sau này lọc usage cho dễ |
 | **Plan price / Duration / VAT / Total** | `1.080.000 VND` / `30 days` / Included / `1.080.000 VND` | Tự tính theo Plan Type                                                                                                      |
 | **Auto-renew**                          | ON (mặc định)                                               | Tự gia hạn cuối mỗi chu kỳ — tắt được sau khi mua                                                                   |
 | **Payment method**                      | Credits                                                        | 1 credit = 1 VND                                                                                                              |
@@ -119,7 +119,7 @@ Chép 3 giá trị này ra Notepad:
 | ------------------ | ---------------------------------------------- |
 | **Base URL** | `https://tokenplan.api.greennode.ai/v1`      |
 | **API key**  | subscription-key vừa copy                     |
-| **Model**    | model code từ tab Models (ví dụ`glm-5.2`) |
+| **Model**    | model code từ tab Models (ví dụ `glm-5.2`) |
 
 {% hint style="warning" %}
 Subscription-key là **bí mật** — ai cầm được key là gọi được model và tiêu hạn mức của gói. Không dán vào chat nhóm, không commit lên Git. Cấp riêng cho từng người (xem [Mục 6](#6-quan-ly-cap-phat-cho-tung-thanh-vien)) để lỡ lộ thì thu hồi đúng một key.
@@ -208,12 +208,12 @@ curl https://tokenplan.api.greennode.ai/v1/chat/completions \
 
 | Triệu chứng                   | Nguyên nhân                                       | Cách xử lý                                                                  |
 | ------------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------ |
-| `401 Unauthorized`            | Key sai, key bị Disable, hoặc copy thiếu ký tự | Copy lại key ở tab**Subscription keys**, kiểm tra Status = `ACTIVE` |
-| `403 Forbidden`               | Gọi model**không nằm trong gói**          | Chỉ gọi model có trong tab**Models** của gói đó                   |
+| `401 Unauthorized`            | Key sai, key bị Disable, hoặc copy thiếu ký tự | Copy lại key ở tab **Subscription keys**, kiểm tra Status = `ACTIVE` |
+| `403 Forbidden`               | Gọi model **không nằm trong gói**          | Chỉ gọi model có trong tab **Models** của gói đó                   |
 | `402 Payment Required`        | Gói đã hết hạn hoặc đã bị xoá             | Mua lại (**Buy again**) hoặc bật lại Auto-renew                      |
-| `404 Not Found`               | Base URL thiếu`/v1`                              | Base URL phải kết thúc bằng`/v1`                                         |
+| `404 Not Found`               | Base URL thiếu `/v1`                              | Base URL phải kết thúc bằng `/v1`                                         |
 | Request hết token giữa chừng | Pool token của model đó đã về 0               | Đợi chu kỳ mới, mua thêm 1 gói, hoặc tạm chuyển sang API Key PAYG     |
-| Response lỗi parse             | Tool tự nối`/v1` vào base URL                  | Thử bỏ`/v1` nếu tool tự xử lý                                          |
+| Response lỗi parse             | Tool tự nối `/v1` vào base URL                  | Thử bỏ `/v1` nếu tool tự xử lý                                          |
 
 📎 *Cấu hình chi tiết cho từng tool cụ thể (LiteLLM, Cursor, Continue.dev, Node.js SDK…): [Kết nối OpenAI-compatible với GreenNode MaaS](../ai-coding/ket-noi-openai-compatible-voi-maas.md) — các bước giữ nguyên, chỉ đổi Base URL và key sang giá trị Token Plan ở Mục 4.*
 
@@ -351,8 +351,8 @@ Filter **All API Keys** là **single select** — mỗi lần chỉ xem được
 
 | Chỉ số                     | Ý nghĩa với gói Token Plan                                                                                                         |
 | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| **Tokens Consumed**    | Số quan trọng nhất — tổng Input + Output + Cache. So với**Tokens/cycle** trong Plan Detail để biết còn lại bao nhiêu |
-| **Total Requests**     | So với**Requests/cycle** trong Plan Detail                                                                                      |
+| **Tokens Consumed**    | Số quan trọng nhất — tổng Input + Output + Cache. So với **Tokens/cycle** trong Plan Detail để biết còn lại bao nhiêu |
+| **Total Requests**     | So với **Requests/cycle** trong Plan Detail                                                                                      |
 | **Errors**             | Số request lỗi — tăng đột biến thường là key sai, gọi model ngoài gói, hoặc gói đã hết hạn mức                     |
 | **Requests over time** | Line chart theo giờ/ngày — xem nhịp sử dụng đều hay dồn cục                                                                  |
 | **Token Breakdown**    | Doughnut tách Cache / Output / Input                                                                                                  |
@@ -365,12 +365,12 @@ Nguồn chính xác nhất về hạn mức còn lại vẫn là **Plan Detail**
 
 | Câu hỏi                                   | Cách trả lời                                                                                  |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| Ai đang xài nhiều nhất?                 | Lọc lần lượt từng key thành viên, so**Tokens Consumed**                             |
-| Gói sắp cạn chưa?                       | So Tokens Consumed với**Tokens/cycle** trong Plan Detail                                  |
+| Ai đang xài nhiều nhất?                 | Lọc lần lượt từng key thành viên, so **Tokens Consumed**                             |
+| Gói sắp cạn chưa?                       | So Tokens Consumed với **Tokens/cycle** trong Plan Detail                                  |
 | Chu kỳ sau nên mua gói to hay nhỏ hơn? | Xem tổng tiêu thụ trọn 1 chu kỳ (Time Range = Absolute từ ngày mua đến ngày hết hạn) |
-| Có ai gọi lỗi liên tục không?         | Xem card**Errors** khi lọc theo key đó                                                  |
+| Có ai gọi lỗi liên tục không?         | Xem card **Errors** khi lọc theo key đó                                                  |
 
-📎 *Chi tiết dashboard, các filter khác và phân quyền xem theo role: [Xem Usage &amp; Cost](../usage-budget/xem-usage-cost.md)*
+📎 *Chi tiết dashboard, các filter khác và phân quyền xem theo role: [Xem Usage & Cost](../usage-budget/xem-usage-cost.md)*
 
 ---
 
@@ -402,7 +402,7 @@ Không đổi được. Phải **Delete** gói cũ (hoàn pro rata phần chưa 
 | Chi tiết quản lý gói & subscription-key      | [Quản lý Token Plan](quan-ly-token-plan.md)                                                         |
 | Cấu hình chi tiết từng tool AI coding        | [Kết nối OpenAI-compatible với GreenNode MaaS](../ai-coding/ket-noi-openai-compatible-voi-maas.md) |
 | Chọn tool phù hợp (GUI hay CLI)               | [Bắt đầu với AI Coding](../ai-coding/bat-dau.md)                                                  |
-| Dashboard usage (Tab Usage)                      | [Xem Usage &amp; Cost](../usage-budget/xem-usage-cost.md)                                             |
+| Dashboard usage (Tab Usage)                      | [Xem Usage & Cost](../usage-budget/xem-usage-cost.md)                                             |
 | Phân quyền thành viên trong tổ chức        | [Phân quyền theo Role](../agent-base/team-permissions/phan-quyen-theo-role.md)                      |
 
 ---

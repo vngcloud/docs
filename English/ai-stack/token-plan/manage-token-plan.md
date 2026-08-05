@@ -158,7 +158,23 @@ Once you have a subscription-key and the model is included in the plan, calling 
 
 Send a `POST` request to the endpoint above with the header `Authorization: Bearer <subscription-key>` and `"model": "<model code>"` in the body (get the model code from the **Models** tab, e.g. `glm-5.2`).
 
-See [Connect OpenAI-compatible tools to GreenNode MaaS](../ai-coding/connect-openai-compatible-to-maas.md) for client setup (OpenAI SDK, LiteLLM, Cursor, Continue.dev, Claude Code...) — just swap the Base URL and API Key per the table above; every other step stays the same.
+### Setup guides per tool
+
+When you issue a subscription-key to a team member, send the matching guide along so they can set it up themselves:
+
+| Tool | Setup guide |
+|---|---|
+| Not sure which tool to pick | [Getting Started with AI Coding](../ai-coding/getting-started.md) |
+| Any OpenAI-compatible tool (Cursor, Continue.dev, LiteLLM, OpenAI SDK...) | [Connect OpenAI-compatible Clients to GreenNode MaaS](../ai-coding/connect-openai-compatible-to-maas.md) |
+| CLI tools | [CLI Tools](../ai-coding/cli-tools/README.md) — [Claude Code](../ai-coding/cli-tools/claude-code.md), [Codex CLI](../ai-coding/cli-tools/codex-cli.md), [OpenCode](../ai-coding/cli-tools/opencode.md) |
+| GUI tools | [GUI Tools](../ai-coding/gui-tools/README.md) — [Codex Desktop](../ai-coding/gui-tools/codex-desktop.md) |
+| Add an MCP Server to your tool | [Using MCP Servers with AI Coding](../ai-coding/mcp-servers.md) |
+
+Those pages are written for PAYG API Keys — keep every step the same and only swap the Base URL and API key per the comparison table above.
+
+{% hint style="warning" %}
+**Claude Code / the Anthropic SDK** follow the Anthropic standard (the base URL has **no** `/v1`), which differs from the OpenAI-compatible Subscription Endpoint. See [Claude Code](../ai-coding/cli-tools/claude-code.md) and confirm the applicable Token Plan endpoint with the support team.
+{% endhint %}
 
 ---
 
@@ -169,5 +185,7 @@ You can track each plan's allowance, control renewal or delete a plan when neede
 | I want to... | Go to |
 |---|---|
 | Buy another plan | [Buy a Token Plan](buy-token-plan.md) |
+| Configure AI coding tools for team members | [Getting Started with AI Coding](../ai-coding/getting-started.md) |
+| Walk the full path from purchase to a working tool | [A-Z Guide](a-z-guide.md) |
 | View overall usage & cost | [Usage & Budget](../usage-budget/README.md) |
 | Configure Rate Limit | [Rate Limit](../agent-base/protect-govern/rate-limit.md) |

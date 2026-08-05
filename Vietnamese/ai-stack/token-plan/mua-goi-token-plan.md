@@ -63,7 +63,41 @@ Xác nhận sẽ **trừ ngay số tiền hiển thị ở Total** từ Credits 
 
 Gói xuất hiện trong **My Token Plans** với trạng thái `ACTIVE`, **Auto-renew** bật ON, và hệ thống tự tạo sẵn 1 subscription-key mặc định tên `default-key` với quyền gọi toàn bộ model trong gói — sẵn sàng dùng ngay sau khi provisioning hoàn tất.
 
-| Tôi muốn tiếp theo... | Đi đến |
+---
+
+## Tích hợp subscription-key vào tool AI coding
+
+Để một tool AI coding gọi được model trong gói, bạn cần đúng **3 giá trị**:
+
+| Giá trị | Lấy ở đâu |
+|---|---|
+| **Base URL** | `https://tokenplan.api.greennode.ai/v1` — mục **Subscription Endpoint** trong Package Detail |
+| **API key** | Tab **Subscription keys** trong Plan Detail — dùng `default-key` có sẵn hoặc key bạn tự tạo |
+| **Model code** | Tab **Models** trong Plan Detail — ví dụ `glm-5.2` |
+
+Có đủ 3 giá trị rồi thì chọn hướng dẫn theo tool đang dùng:
+
+| Tool | Hướng dẫn cấu hình |
+|---|---|
+| Chưa biết chọn tool nào | [Bắt đầu với AI Coding](../ai-coding/bat-dau.md) |
+| Tool OpenAI-compatible bất kỳ (Cursor, Continue.dev, LiteLLM, OpenAI SDK...) | [Kết nối OpenAI-compatible với GreenNode MaaS](../ai-coding/ket-noi-openai-compatible-voi-maas.md) |
+| Claude Code | [Claude Code](../ai-coding/dong-lenh/claude-code.md) |
+| Codex CLI | [Codex CLI](../ai-coding/dong-lenh/codex-cli.md) |
+| OpenCode | [OpenCode](../ai-coding/dong-lenh/opencode.md) |
+| Codex Desktop | [Codex Desktop](../ai-coding/co-giao-dien/codex-desktop.md) |
+| Thêm MCP Server vào tool | [Dùng MCP Server với AI Coding](../ai-coding/mcp-openrouter.md) |
+
+{% hint style="info" %}
+Các trang AI Coding viết theo API Key PAYG. Dùng Token Plan thì giữ nguyên toàn bộ các bước, chỉ đổi 2 giá trị: **Base URL** thành Subscription Endpoint ở trên và **API key** thành subscription-key của gói.
+{% endhint %}
+
+---
+
+## Bước tiếp theo
+
+| Tôi muốn... | Đi đến |
 |---|---|
 | Tạo thêm subscription-key & quản lý gói | [Quản lý Token Plan](quan-ly-token-plan.md) |
+| Đi hết một vòng từ mua gói đến chạy được trên tool | [Hướng dẫn A-Z](huong-dan-a-z.md) |
 | Xem tổng quan Token Plan | [Token Plan](README.md) |
+| Theo dõi usage của gói | [Xem Usage & Cost](../usage-budget/xem-usage-cost.md) |
