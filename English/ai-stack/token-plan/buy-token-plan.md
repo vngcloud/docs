@@ -23,7 +23,7 @@
 **Step 2: View details before buying**
 
 1. Click a Plan Type to open **Package Detail**
-2. Review Max keys, Model count, Duration, the token/request allowance per cycle, the **Included Models** table (Model, Status, Model code, Provider), **What happens when activated**, and the **Subscription Endpoint** — host `tokenplan.api.greennode.ai`, with `/v1` for OpenAI-standard tools and **no** `/v1` for Anthropic-standard tools
+2. Review Max keys, Model count, Duration, the token/request allowance per cycle, the **Included Models** table (Model, Hosting mode, Status, Token quota, Request quota — **click a model name** to see its Model code), **What happens when activated**, and the **Subscription Endpoint** — host `tokenplan.api.greennode.ai`, with `/v1` for OpenAI-standard tools and **no** `/v1` for Anthropic-standard tools
 
 {% hint style="warning" %}
 Once purchased, a plan **cannot be swapped for a different Plan Type or returned on request**. To stop a plan mid-cycle, use **Delete** instead — the unused allowance for the current cycle is refunded pro rata to Credits (see [Manage Token Plan](manage-token-plan.md)).

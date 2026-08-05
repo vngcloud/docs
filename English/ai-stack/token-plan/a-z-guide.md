@@ -54,14 +54,18 @@ Not enough credit? Top up in the AI Platform Console before buying — the syste
    *Example, the **Token Plan Alpha** card: `1,080,000 VND / 30 days` — GLM 5.2 model — up to 5 keys.*
 2. Click a card to open **Package Detail** and read it carefully before spending:
 
+![The Packages list — one card per Plan Type](../../.gitbook/assets/Package-plan/packages-list.png)
+
 | Look at | To learn |
 |---|---|
 | **Max keys** | How many people/tools you can issue keys to |
 | **Duration** | The plan cycle (usually 30 days) |
 | **Tokens / Requests per cycle** | The allowance per cycle — tracked **independently per model**, with no transfer between them |
-| **Included Models** | The models you can call (Model, Status, **Model code**, Provider) — remember the **Model code**, you'll need to enter it in your tool shortly |
+| **Included Models** | The plan's model table (Model, Hosting mode, Status, Token quota, Request quota). **Click the model name** to see its **Model code** — note it down, you'll need to enter it in your tool shortly |
 | **Subscription Endpoint** | `https://tokenplan.api.greennode.ai` — this is the **Base URL** you will use. OpenAI-standard tools append `/v1`, Anthropic-standard tools do **not** — see [Section 5](#5-set-it-up-in-the-tool-running-your-agent) |
 | **What happens when activated** | What happens right after activation |
+
+![Package Detail — max keys, duration, included models and the Subscription Endpoint](../../.gitbook/assets/Package-plan/view-detail-package.png)
 
 {% hint style="warning" %}
 Once purchased, a plan **cannot be swapped for a different Plan Type** and **cannot be returned on request**. If you must stop mid-cycle, use **Delete** — the unused allowance is refunded pro rata to Credits. Think it through at this step.
@@ -111,9 +115,13 @@ The **Plan Detail** page has 2 tabs — you need information from both:
   - **Anthropic**-standard tools (Claude Code, Claude Desktop): `https://tokenplan.api.greennode.ai` — **no** `/v1`
 - The **Model code** of the model you want (e.g. `glm-5.2`) — copy it exactly, one wrong character breaks the call
 
+![Plan Detail — Models tab: the gateway base URL and each model's code](../../.gitbook/assets/Package-plan/detail-tab-models.png)
+
 **The `Subscription keys` tab** → grab the key:
 
 - Copy `default-key` (or a key you created yourself in [Section 6](#6-manage-issue-a-key-to-each-member))
+
+![Plan Detail — Subscription keys tab](../../.gitbook/assets/Package-plan/detail-tab-keys.png)
 
 Jot these 3 values down:
 
@@ -266,6 +274,8 @@ This section is for whoever holds **Root/Admin** and needs to share a plan acros
 
 The list shows: plan name, Plan Type, expiry date (**Expires**), and **Auto-renew** status.
 
+![The My Token Plans list](../../.gitbook/assets/Package-plan/my-token-plan-list.png)
+
 | Status | Meaning |
 |---|---|
 | `ACTIVE` | The plan is running |
@@ -303,6 +313,8 @@ Name them `{department}-{name}` or `{system}-{environment}` — the name alone s
 2. Fill in **Key name** following your plan table
 3. The popup shows what the key inherits from the plan: access to **every model in the plan**, the plan's **shared** token/request allowance, and **the same gateway endpoint**
 4. Click **Create key**
+
+![Create subscription key popup](../../.gitbook/assets/Package-plan/Create-subscription-key.png)
 
 The new key appears with status `ACTIVE` and automatically shows up on the [Access Control](../agent-base/access-control/README.md) page with `Key Type = Plan: {plan name}` — the same record, no duplicate.
 
@@ -343,6 +355,8 @@ Click the **Auto-renew** toggle in the list or in Plan Detail. The **Turn off au
 - No credit is charged now, and **no refund** is issued for turning Auto-renew off
 - You can turn it back on, or **Buy again**, anytime before the plan expires
 
+![Turn off auto-renew popup](../../.gitbook/assets/Package-plan/turn-off-auto-renew.png)
+
 {% hint style="info" %}
 With Auto-renew ON, the system renews before expiry. If credit is short, it retries — and if that still fails, the plan becomes `EXPIRED` and the whole team loses model access. **Keep enough credit on hand before the expiry date.**
 {% endhint %}
@@ -350,6 +364,8 @@ With Auto-renew ON, the system renews before expiry. If credit is short, it retr
 ### 6.4 Delete/cancel a plan
 
 In **Plan Detail** click **Delete**, or in **My Token Plans** tick the checkbox and click the trash icon (bulk). The popup spells it out: every key is torn down **immediately**, the unused allowance is refunded **pro rata** to Credits, and the plan disappears from the list while usage history is retained for auditing.
+
+![Delete Token Plan popup](../../.gitbook/assets/Package-plan/delete-plan-alert.png)
 
 {% hint style="warning" %}
 Deleting a plan **cannot be undone**. Tell the team before you click.
