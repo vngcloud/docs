@@ -4,7 +4,7 @@
 
 **AgentBase MCP** giúp AI assistant (Claude Desktop, Claude Code, Cursor, Windsurf, hoặc bất kỳ MCP client nào) thao tác trực tiếp với **GreenNode AgentBase** bằng ngôn ngữ tự nhiên — liệt kê Runtime, tạo MCP Gateway, tra Policy, xem Memory — mà không cần nhớ cú pháp lệnh hay click qua Portal.
 
-AgentBase MCP là máy chủ triển khai theo chuẩn [Model Context Protocol](https://modelcontextprotocol.io/). Repo: [https://github.com/vngcloud/greennode-agentbase-mcp](https://github.com/vngcloud/greennode-agentbase-mcp)
+AgentBase MCP là máy chủ triển khai theo chuẩn [Model Context Protocol](https://modelcontextprotocol.io/). Repo: [https://github.com/GreenNodeHub/greennode-agentbase-mcp](https://github.com/GreenNodeHub/greennode-agentbase-mcp)
 
 Điểm khác biệt so với một MCP server thông thường: thay vì expose hàng trăm tool tương ứng từng API, AgentBase MCP chỉ expose **3 meta-tool** — `list_servers`, `search_tools`, `execute`. AI assistant tự tìm operation cần dùng rồi gọi, nên context của client luôn gọn dù AgentBase có bao nhiêu API.
 
@@ -55,7 +55,7 @@ Chọn **local stdio** khi bạn kiểm soát được máy chạy và muốn th
 ### 3. Cài đặt server cho cách local stdio
 
 ```bash
-git clone https://github.com/vngcloud/greennode-agentbase-mcp.git
+git clone https://github.com/GreenNodeHub/greennode-agentbase-mcp.git
 cd greennode-agentbase-mcp
 npm install
 

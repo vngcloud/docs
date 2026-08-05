@@ -4,7 +4,7 @@
 
 **AgentBase MCP** lets AI assistants (Claude Desktop, Claude Code, Cursor, Windsurf, or any MCP-compatible client) operate **GreenNode AgentBase** directly through natural language — list Runtimes, create an MCP Gateway, look up a Policy, inspect Memory — without memorizing command syntax or clicking through the Portal.
 
-AgentBase MCP is a server built on the [Model Context Protocol](https://modelcontextprotocol.io/) standard. Repo: [https://github.com/vngcloud/greennode-agentbase-mcp](https://github.com/vngcloud/greennode-agentbase-mcp)
+AgentBase MCP is a server built on the [Model Context Protocol](https://modelcontextprotocol.io/) standard. Repo: [https://github.com/GreenNodeHub/greennode-agentbase-mcp](https://github.com/GreenNodeHub/greennode-agentbase-mcp)
 
 What sets it apart from a conventional MCP server: instead of exposing hundreds of tools — one per API — AgentBase MCP exposes only **3 meta-tools**: `list_servers`, `search_tools`, `execute`. The AI assistant discovers the operation it needs and then runs it, so your client's context stays small no matter how many APIs AgentBase has.
 
@@ -55,7 +55,7 @@ Choose **local stdio** when you control the machine and want to experiment quick
 ### 3. Install the server for the local stdio path
 
 ```bash
-git clone https://github.com/vngcloud/greennode-agentbase-mcp.git
+git clone https://github.com/GreenNodeHub/greennode-agentbase-mcp.git
 cd greennode-agentbase-mcp
 npm install
 
