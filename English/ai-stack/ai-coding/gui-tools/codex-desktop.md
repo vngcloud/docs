@@ -11,6 +11,7 @@ You'll need these 3 values (from the Prerequisites page):
 | Info                       | Value                                                                           |
 | -------------------------- | ------------------------------------------------------------------------------- |
 | Base URL (OpenAI standard) | `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1` (**with** `/v1`) |
+| Base URL (Token Plan / package key) | `https://tokenplan.api.greennode.ai/v1` — see [Token Plan](../../token-plan/README.md) |
 | API key                    | your`vn-...` key                                                              |
 | Model ID                   | `z-ai/glm-5.2`                                                                |
 

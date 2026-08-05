@@ -64,6 +64,14 @@ https://maas-llm-aiplatform-hcm.api.vngcloud.vn
 Each tool's page will tell you which one you need.
 {% endhint %}
 
+{% hint style="info" %}
+**Using a Token Plan (subscription package) key instead of a pay-as-you-go API key?** The Token Plan Base URL follows the same Anthropic / OpenAI rule as above, just on a different domain:
+* **Anthropic**-standard tools (Claude Desktop, Claude Code): `https://tokenplan.api.greennode.ai` — **no** `/v1`.
+* **OpenAI**-standard tools (OpenCode, Codex, Cursor…): `https://tokenplan.api.greennode.ai/v1`.
+
+See [Token Plan](../token-plan/README.md) for details.
+{% endhint %}
+
 ### 3.3 — Confirm the GLM 5.2 model is enabled
 
 1. Open the **[Models page](https://aiplatform.console.greennode.ai/models)** and search for the model you want (e.g. **GLM 5.2**).
@@ -97,6 +105,8 @@ The **Claude Desktop app is only available for macOS and Windows.** If you use *
 |-----------|---------|
 | Base URL (Anthropic standard) | `https://maas-llm-aiplatform-hcm.api.vngcloud.vn` |
 | Base URL (OpenAI standard) | `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1` |
+| Base URL (Token Plan, Anthropic standard) | `https://tokenplan.api.greennode.ai` |
+| Base URL (Token Plan, OpenAI standard) | `https://tokenplan.api.greennode.ai/v1` |
 | Model ID | See the model's detail page (e.g. GLM 5.2 → `z-ai/glm-5.2`) |
 | Create / get API key | https://aiplatform.console.greennode.ai/keys |
 | Check GLM 5.2 model | https://aiplatform.console.greennode.ai/models (search for GLM 5.2) |

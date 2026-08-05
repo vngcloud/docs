@@ -9,6 +9,7 @@
 | Thông tin | Giá trị |
 |-----------|---------|
 | Base URL | `https://maas-llm-aiplatform-hcm.api.vngcloud.vn` (chuẩn Anthropic, **không** `/v1`) |
+| Base URL (key của gói Token Plan) | `https://tokenplan.api.greennode.ai` (**không** `/v1`) — xem [Token Plan](../../token-plan/README.md) |
 | API key | key của bạn |
 | Model ID | `z-ai/glm-5.2` |
 
