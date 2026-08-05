@@ -54,6 +54,8 @@ Credit chưa đủ? Nạp thêm tại AI Platform Console trước khi mua — h
    *Ví dụ card **Token Plan Alpha**: `1.080.000 VND / 30 ngày` — model GLM 5.2 — tối đa 5 keys.*
 2. Bấm vào 1 card để mở **Package Detail** và đọc kỹ trước khi xuống tiền:
 
+![Danh sách Packages — mỗi Plan Type là một card](../../.gitbook/assets/Package-plan/packages-list.png)
+
 | Xem mục                              | Để biết                                                                                                                                 |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Max keys**                    | Cấp được tối đa bao nhiêu người/tool                                                                                              |
@@ -62,6 +64,8 @@ Credit chưa đủ? Nạp thêm tại AI Platform Console trước khi mua — h
 | **Included Models**             | Danh sách model được gọi (Model, Status, **Model code**, Provider) — nhớ **Model code**, lát nữa cần điền vào tool |
 | **Subscription Endpoint** | `https://tokenplan.api.greennode.ai` — chính là **Base URL** bạn sẽ dùng. Tool chuẩn OpenAI thêm `/v1` ở cuối, tool chuẩn Anthropic thì **không** — xem [Mục 5](#5-setup-vao-tool-dang-chay-agent) |
 | **What happens when activated** | Điều gì xảy ra ngay sau khi kích hoạt                                                                                                |
+
+![Package Detail — Max keys, Duration, Included Models và Subscription Endpoint](../../.gitbook/assets/Package-plan/view-detail-package.png)
 
 {% hint style="warning" %}
 Gói đã mua **không đổi được sang Plan Type khác** và **không trả lại tuỳ ý**. Nếu buộc phải dừng giữa chu kỳ, dùng **Delete** — phần hạn mức chưa dùng được hoàn pro rata vào Credits. Cân nhắc kỹ ở bước này.
@@ -111,9 +115,13 @@ Trang **Plan Detail** có 2 tab — bạn cần lấy thông tin ở cả hai:
   - Tool chuẩn **Anthropic** (Claude Code, Claude Desktop): `https://tokenplan.api.greennode.ai` — **không** có `/v1`
 - **Model code** của model muốn dùng (ví dụ `glm-5.2`) — copy chính xác, sai một ký tự là lỗi
 
+![Plan Detail — tab Models: Gateway base URL và Model code từng model](../../.gitbook/assets/Package-plan/detail-tab-models.png)
+
 **Tab `Subscription keys`** → lấy chìa khoá:
 
 - Copy `default-key` (hoặc key bạn tự tạo ở [Mục 6](#6-quan-ly-cap-phat-cho-tung-thanh-vien))
+
+![Plan Detail — tab Subscription keys](../../.gitbook/assets/Package-plan/detail-tab-keys.png)
 
 Chép 3 giá trị này ra Notepad:
 
@@ -266,6 +274,8 @@ Phần này dành cho người nắm **Root/Admin** cần chia gói cho cả nh�
 
 Danh sách hiển thị: tên plan, Plan Type, ngày hết hạn (**Expires**), trạng thái **Auto-renew**.
 
+![Danh sách My Token Plans](../../.gitbook/assets/Package-plan/my-token-plan-list.png)
+
 | Trạng thái | Ý nghĩa                                                                  |
 | ------------ | -------------------------------------------------------------------------- |
 | `ACTIVE`   | Gói đang chạy                                                           |
@@ -303,6 +313,8 @@ Mua nhiều gói song song = nhiều plan instance **độc lập**, quota **kh�
 2. Điền **Key name** theo bảng kế hoạch
 3. Popup cho biết key sẽ kế thừa từ gói: gọi được **toàn bộ model trong gói**, **dùng chung** hạn mức token/request, **cùng 1 gateway endpoint**
 4. Bấm **Create key**
+
+![Popup Create subscription key](../../.gitbook/assets/Package-plan/Create-subscription-key.png)
 
 Key mới xuất hiện với trạng thái `ACTIVE`, đồng thời tự động hiện trên trang [Access Control](../agent-base/access-control/README.md) với nhãn `Key Type = Plan: {tên gói}` — cùng một bản ghi, không bị trùng.
 
@@ -343,6 +355,8 @@ Bấm toggle **Auto-renew** trong danh sách hoặc trong Plan Detail. Popup **T
 - Không trừ credit lúc này, và **không hoàn tiền** cho việc tắt Auto-renew
 - Bật lại, hoặc **Buy again**, bất cứ lúc nào trước khi gói hết hạn
 
+![Popup Turn off auto-renew](../../.gitbook/assets/Package-plan/turn-off-auto-renew.png)
+
 {% hint style="info" %}
 Auto-renew ON: hệ thống gia hạn trước hạn. Nếu credit không đủ, hệ thống retry — vẫn thất bại thì gói chuyển `EXPIRED` và cả nhóm mất quyền gọi model. **Nhớ giữ đủ credit trước ngày hết hạn.**
 {% endhint %}
@@ -350,6 +364,8 @@ Auto-renew ON: hệ thống gia hạn trước hạn. Nếu credit không đủ,
 ### 6.4 Xoá/huỷ gói
 
 Trong **Plan Detail** bấm **Delete**, hoặc trong **My Token Plans** tick checkbox rồi bấm icon thùng rác (bulk). Popup nêu rõ: toàn bộ key bị vô hiệu **ngay lập tức**, hạn mức chưa dùng được hoàn **pro rata** vào Credits, gói biến mất khỏi danh sách nhưng lịch sử usage vẫn giữ để đối soát.
+
+![Popup Delete Token Plan](../../.gitbook/assets/Package-plan/delete-plan-alert.png)
 
 {% hint style="warning" %}
 Xoá gói **không thể hoàn tác**. Báo trước cho cả nhóm trước khi bấm.
