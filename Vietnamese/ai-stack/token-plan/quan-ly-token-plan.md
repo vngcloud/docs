@@ -152,9 +152,10 @@ Sau khi có subscription-key và model nằm trong gói, cách gọi model **ho�
 
 | | API Key PAYG | Subscription-key (Token Plan) |
 |---|---|---|
-| Base URL | GreenNode MaaS Endpoint | `https://tokenplan.api.greennode.ai/v1` |
+| Base URL — tool chuẩn **OpenAI** | GreenNode MaaS Endpoint + `/v1` | `https://tokenplan.api.greennode.ai/v1` |
+| Base URL — tool chuẩn **Anthropic** | GreenNode MaaS Endpoint (**không** `/v1`) | `https://tokenplan.api.greennode.ai` (**không** `/v1`) |
 | Key | API Key | Subscription-key |
-| Tương thích | OpenAI SDK | OpenAI SDK |
+| Tương thích | OpenAI SDK / Anthropic SDK | OpenAI SDK / Anthropic SDK |
 
 Gửi request `POST` tới endpoint trên với header `Authorization: Bearer <subscription-key>` và trường `"model": "<model code>"` trong body (model code lấy từ tab **Models**, ví dụ `glm-5.2`).
 
@@ -173,7 +174,7 @@ Khi cấp subscription-key cho một thành viên, gửi kèm link tương ứng
 Các trang trên viết theo API Key PAYG — giữ nguyên mọi bước, chỉ đổi Base URL và API key theo bảng so sánh ở trên.
 
 {% hint style="warning" %}
-**Claude Code / Anthropic SDK** dùng chuẩn Anthropic (base URL **không** có `/v1`), khác với Subscription Endpoint OpenAI-compatible. Xem [Claude Code](../ai-coding/dong-lenh/claude-code.md) và xác nhận với đội hỗ trợ về endpoint áp dụng cho Token Plan.
+**Claude Code / Claude Desktop / Anthropic SDK** dùng chuẩn Anthropic: Base URL là `https://tokenplan.api.greennode.ai` — cùng host nhưng **không** có `/v1`, và dùng biến `ANTHROPIC_BASE_URL` / `ANTHROPIC_AUTH_TOKEN` thay vì `OPENAI_*`. Xem [Claude Code](../ai-coding/dong-lenh/claude-code.md).
 {% endhint %}
 
 ---

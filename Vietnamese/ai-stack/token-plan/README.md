@@ -17,7 +17,9 @@ Portal (Packages / My Token Plans)
 ```
 
 - **Portal:** Token Plan nằm trong nhóm **API Key**, cùng cấp với **API Keys**, trên **AI Platform**.
-- **Subscription Endpoint:** `https://tokenplan.api.greennode.ai/v1` — tương thích OpenAI SDK, tách biệt với GreenNode MaaS Endpoint dùng cho API Key PAYG.
+- **Subscription Endpoint:** dùng chung một host `tokenplan.api.greennode.ai`, tách biệt với GreenNode MaaS Endpoint dùng cho API Key PAYG. Có thêm hậu tố `/v1` hay không là tuỳ chuẩn của tool:
+  - Tool chuẩn **OpenAI** (Cursor, OpenCode, Codex…): `https://tokenplan.api.greennode.ai/v1`
+  - Tool chuẩn **Anthropic** (Claude Code, Claude Desktop): `https://tokenplan.api.greennode.ai` — **không** có `/v1`
 
 ---
 

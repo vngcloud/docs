@@ -17,7 +17,9 @@ Portal (Packages / My Token Plans)
 ```
 
 - **Portal:** Token Plan sits under the **API Key** group, next to **API Keys**, on **AI Platform**.
-- **Subscription Endpoint:** `https://tokenplan.api.greennode.ai/v1` — OpenAI SDK compatible, separate from the GreenNode MaaS Endpoint used by PAYG API Keys.
+- **Subscription Endpoint:** one shared host, `tokenplan.api.greennode.ai`, separate from the GreenNode MaaS Endpoint used by PAYG API Keys. Whether you append `/v1` depends on your tool's standard:
+  - **OpenAI**-standard tools (Cursor, OpenCode, Codex…): `https://tokenplan.api.greennode.ai/v1`
+  - **Anthropic**-standard tools (Claude Code, Claude Desktop): `https://tokenplan.api.greennode.ai` — **no** `/v1`
 
 ---
 
