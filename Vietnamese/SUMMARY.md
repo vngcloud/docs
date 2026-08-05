@@ -869,6 +869,8 @@
   * [GenAI Studio](ai-stack/genai-studio.md)
   * [GreenNode AgentBase](ai-stack/agent-base/README.md)
     * [Bắt đầu](ai-stack/agent-base/getting-started.md)
+    * [Sử dụng GreenNode CLI để quản lý AgentBase](ai-stack/agent-base/su-dung-greennode-cli-de-quan-ly-agentbase.md)
+    * [Sử dụng GreenNode MCP để quản lý AgentBase](ai-stack/agent-base/su-dung-greennode-mcp-de-quan-ly-agentbase.md)
     * [Access Control](ai-stack/agent-base/access-control/README.md)
     * [Agent Runtime](ai-stack/agent-base/agent-runtime/README.md)
       * [Khởi tạo Runtime](ai-stack/agent-base/agent-runtime/khoi-tao-runtime.md)
