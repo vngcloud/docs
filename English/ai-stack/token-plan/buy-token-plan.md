@@ -23,7 +23,7 @@
 **Step 2: View details before buying**
 
 1. Click a Plan Type to open **Package Detail**
-2. Review Max keys, Model count, Duration, the token/request allowance per cycle, the **Included Models** table (Model, Status, Model code, Provider), **What happens when activated**, and the **Subscription Endpoint** (`https://tokenplan.api.greennode.ai/v1`, OpenAI SDK compatible)
+2. Review Max keys, Model count, Duration, the token/request allowance per cycle, the **Included Models** table (Model, Status, Model code, Provider), **What happens when activated**, and the **Subscription Endpoint** — host `tokenplan.api.greennode.ai`, with `/v1` for OpenAI-standard tools and **no** `/v1` for Anthropic-standard tools
 
 {% hint style="warning" %}
 Once purchased, a plan **cannot be swapped for a different Plan Type or returned on request**. To stop a plan mid-cycle, use **Delete** instead — the unused allowance for the current cycle is refunded pro rata to Credits (see [Manage Token Plan](manage-token-plan.md)).
@@ -71,7 +71,7 @@ To let an AI coding tool call the models in your plan, you need exactly **3 valu
 
 | Value | Where to get it |
 |---|---|
-| **Base URL** | `https://tokenplan.api.greennode.ai/v1` — the **Subscription Endpoint** in Package Detail |
+| **Base URL** | The **Subscription Endpoint** in Package Detail — `https://tokenplan.api.greennode.ai/v1` for OpenAI-standard tools, `https://tokenplan.api.greennode.ai` (**no** `/v1`) for Anthropic-standard tools such as Claude Code |
 | **API key** | The **Subscription keys** tab in Plan Detail — use the built-in `default-key` or one you create |
 | **Model code** | The **Models** tab in Plan Detail — e.g. `glm-5.2` |
 
@@ -88,7 +88,7 @@ With all 3 values in hand, pick the guide for the tool you use:
 | Add an MCP Server to your tool | [Using MCP Servers with AI Coding](../ai-coding/mcp-servers.md) |
 
 {% hint style="info" %}
-The AI Coding pages are written for PAYG API Keys. With Token Plan, keep every step exactly the same and swap just 2 values: **Base URL** to the Subscription Endpoint above, and **API key** to your plan's subscription-key.
+The AI Coding pages are written for PAYG API Keys. With Token Plan, keep every step exactly the same and swap just 2 values: **API key** to your plan's subscription-key, and **Base URL** to the Subscription Endpoint above — in the form your tool's standard expects (`/v1` for OpenAI, no `/v1` for Anthropic).
 {% endhint %}
 
 ---

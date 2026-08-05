@@ -23,7 +23,7 @@
 **Bước 2: Xem chi tiết trước khi mua**
 
 1. Nhấn vào 1 Plan Type để mở **Package Detail**
-2. Xem đầy đủ: số Max keys, số Model, Duration, hạn mức token/request mỗi chu kỳ, danh sách **Included Models** (Model, Status, Model code, Provider), mục **What happens when activated**, và **Subscription Endpoint** (`https://tokenplan.api.greennode.ai/v1`, tương thích OpenAI SDK)
+2. Xem đầy đủ: số Max keys, số Model, Duration, hạn mức token/request mỗi chu kỳ, danh sách **Included Models** (Model, Status, Model code, Provider), mục **What happens when activated**, và **Subscription Endpoint** — host `tokenplan.api.greennode.ai`, thêm `/v1` cho tool chuẩn OpenAI và **không** có `/v1` cho tool chuẩn Anthropic
 
 {% hint style="warning" %}
 Gói đã mua **không thể đổi sang Plan Type khác hoặc trả lại theo yêu cầu tùy ý**. Nếu cần dừng gói giữa chu kỳ, dùng action **Delete** — phần hạn mức chưa dùng của chu kỳ hiện tại sẽ được hoàn lại pro rata vào Credits (xem [Quản lý Token Plan](quan-ly-token-plan.md)).
@@ -71,7 +71,7 @@ Gói xuất hiện trong **My Token Plans** với trạng thái `ACTIVE`, **Auto
 
 | Giá trị | Lấy ở đâu |
 |---|---|
-| **Base URL** | `https://tokenplan.api.greennode.ai/v1` — mục **Subscription Endpoint** trong Package Detail |
+| **Base URL** | Mục **Subscription Endpoint** trong Package Detail — `https://tokenplan.api.greennode.ai/v1` cho tool chuẩn OpenAI, `https://tokenplan.api.greennode.ai` (**không** `/v1`) cho tool chuẩn Anthropic như Claude Code |
 | **API key** | Tab **Subscription keys** trong Plan Detail — dùng `default-key` có sẵn hoặc key bạn tự tạo |
 | **Model code** | Tab **Models** trong Plan Detail — ví dụ `glm-5.2` |
 
@@ -88,7 +88,7 @@ Có đủ 3 giá trị rồi thì chọn hướng dẫn theo tool đang dùng:
 | Thêm MCP Server vào tool | [Dùng MCP Server với AI Coding](../ai-coding/mcp-openrouter.md) |
 
 {% hint style="info" %}
-Các trang AI Coding viết theo API Key PAYG. Dùng Token Plan thì giữ nguyên toàn bộ các bước, chỉ đổi 2 giá trị: **Base URL** thành Subscription Endpoint ở trên và **API key** thành subscription-key của gói.
+Các trang AI Coding viết theo API Key PAYG. Dùng Token Plan thì giữ nguyên toàn bộ các bước, chỉ đổi 2 giá trị: **API key** thành subscription-key của gói, và **Base URL** thành Subscription Endpoint ở trên — nhớ đúng dạng theo chuẩn của tool (`/v1` cho OpenAI, không `/v1` cho Anthropic).
 {% endhint %}
 
 ---

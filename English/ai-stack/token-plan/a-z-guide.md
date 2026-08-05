@@ -60,7 +60,7 @@ Not enough credit? Top up in the AI Platform Console before buying — the syste
 | **Duration** | The plan cycle (usually 30 days) |
 | **Tokens / Requests per cycle** | The allowance per cycle — tracked **independently per model**, with no transfer between them |
 | **Included Models** | The models you can call (Model, Status, **Model code**, Provider) — remember the **Model code**, you'll need to enter it in your tool shortly |
-| **Subscription Endpoint** | `https://tokenplan.api.greennode.ai/v1` — this is the **Base URL** you will use |
+| **Subscription Endpoint** | `https://tokenplan.api.greennode.ai` — this is the **Base URL** you will use. OpenAI-standard tools append `/v1`, Anthropic-standard tools do **not** — see [Section 5](#5-set-it-up-in-the-tool-running-your-agent) |
 | **What happens when activated** | What happens right after activation |
 
 {% hint style="warning" %}
@@ -106,7 +106,9 @@ The **Plan Detail** page has 2 tabs — you need information from both:
 
 **The `Models` tab** → grab 2 things:
 
-- The **Gateway base URL** shared by the whole plan: `https://tokenplan.api.greennode.ai/v1`
+- The **Gateway base URL** shared by the whole plan — pick the form that matches your tool's standard:
+  - **OpenAI**-standard tools (Cursor, OpenCode, Codex…): `https://tokenplan.api.greennode.ai/v1`
+  - **Anthropic**-standard tools (Claude Code, Claude Desktop): `https://tokenplan.api.greennode.ai` — **no** `/v1`
 - The **Model code** of the model you want (e.g. `glm-5.2`) — copy it exactly, one wrong character breaks the call
 
 **The `Subscription keys` tab** → grab the key:
@@ -117,7 +119,7 @@ Jot these 3 values down:
 
 | Information | Value |
 |---|---|
-| **Base URL** | `https://tokenplan.api.greennode.ai/v1` |
+| **Base URL** | `https://tokenplan.api.greennode.ai/v1` (OpenAI standard) or `https://tokenplan.api.greennode.ai` (Anthropic standard, **no** `/v1`) |
 | **API key** | the subscription-key you just copied |
 | **Model** | the model code from the Models tab (e.g. `glm-5.2`) |
 
@@ -129,9 +131,16 @@ A subscription-key is a **secret** — anyone holding it can call models and bur
 
 ## 5. Set it up in the tool running your agent
 
-The Token Plan Subscription Endpoint follows the **OpenAI-compatible** standard. That means any tool that lets you change `base_url` in the OpenAI format will work — just enter the 3 values from Section 4 and change nothing else.
+Token Plan uses one shared host for every tool — the two standards differ only in the `/v1` suffix and in the environment variable names:
 
-### 5.1 Tools with built-in config fields (Cursor, Continue.dev, and similar)
+| Tool standard | Base URL to enter |
+|---|---|
+| **OpenAI** (Cursor, Continue.dev, OpenCode, Codex, LiteLLM, OpenAI SDK…) | `https://tokenplan.api.greennode.ai/v1` — **with** `/v1` |
+| **Anthropic** (Claude Code, Claude Desktop, Anthropic SDK) | `https://tokenplan.api.greennode.ai` — **without** `/v1` |
+
+Nothing else changes — you still only need the 3 values from Section 4.
+
+### 5.1 OpenAI-standard tools with built-in config fields (Cursor, Continue.dev, and similar)
 
 In the tool's Settings, fill in:
 
@@ -141,7 +150,7 @@ In the tool's Settings, fill in:
 | **API Key** | `<your subscription-key>` |
 | **Model** | `<model code>` — e.g. `glm-5.2` |
 
-### 5.2 Tools that read environment variables (CLI)
+### 5.2 OpenAI-standard tools that read environment variables (CLI)
 
 {% tabs %}
 {% tab title="macOS / Linux / WSL" %}
@@ -211,17 +220,39 @@ curl https://tokenplan.api.greennode.ai/v1/chat/completions \
 | `401 Unauthorized` | Wrong key, key Disabled, or characters missing from the copy | Re-copy the key from the **Subscription keys** tab, check Status = `ACTIVE` |
 | `403 Forbidden` | Calling a model **not included in the plan** | Only call models listed in that plan's **Models** tab |
 | `402 Payment Required` | The plan has expired or was deleted | **Buy again** or turn Auto-renew back on |
-| `404 Not Found` | Base URL missing `/v1` | The Base URL must end with `/v1` |
+| `404 Not Found` | The Base URL doesn't match your tool's standard | OpenAI-standard tools: the Base URL must end with `/v1`. Anthropic-standard tools (Claude Code): the Base URL must **not** have `/v1` |
 | Requests run out of tokens mid-cycle | That model's token pool hit 0 | Wait for the new cycle, buy another plan, or switch to a PAYG API Key for now |
 | Response parse error | The tool appends `/v1` to the base URL itself | Try dropping `/v1` if the tool handles it for you |
+
+### 5.6 Anthropic-standard tools (Claude Code, Claude Desktop)
+
+These tools speak the Anthropic protocol rather than OpenAI, so the Base URL is the **same host without `/v1`**, and the environment variable names differ too:
+
+{% tabs %}
+{% tab title="macOS / Linux / WSL" %}
+
+```bash
+export ANTHROPIC_BASE_URL="https://tokenplan.api.greennode.ai"
+export ANTHROPIC_AUTH_TOKEN="<your subscription-key>"
+```
+
+{% endtab %}
+
+{% tab title="Windows PowerShell" %}
+
+```powershell
+$env:ANTHROPIC_BASE_URL   = "https://tokenplan.api.greennode.ai"
+$env:ANTHROPIC_AUTH_TOKEN = "<your subscription-key>"
+```
+
+{% endtab %}
+{% endtabs %}
+
+Full walkthrough: [Claude Code](../ai-coding/cli-tools/claude-code.md).
 
 📎 *Detailed configuration for specific tools (LiteLLM, Cursor, Continue.dev, Node.js SDK…): [Connect OpenAI-compatible Clients to GreenNode MaaS](../ai-coding/connect-openai-compatible-to-maas.md) — the steps stay the same, just point the Base URL and key at your Token Plan values from Section 4.*
 
 📎 *Supported tools and how to pick the right one: [AI Coding](../ai-coding/README.md) · [Getting Started with AI Coding](../ai-coding/getting-started.md) · [CLI Tools](../ai-coding/cli-tools/README.md)*
-
-{% hint style="warning" %}
-**Claude Code / the Anthropic SDK** follow the Anthropic standard (the base URL has **no** `/v1`), which differs from the OpenAI-compatible Subscription Endpoint above. If you want to use that family of tools, see [Claude Code](../ai-coding/cli-tools/claude-code.md) and confirm the applicable Token Plan endpoint with the support team.
-{% endhint %}
 
 ---
 
@@ -278,7 +309,8 @@ The new key appears with status `ACTIVE` and automatically shows up on the [Acce
 **Step 3 — Hand the key to the member.** Send each person exactly 3 values:
 
 ```
-Base URL : https://tokenplan.api.greennode.ai/v1
+Base URL : https://tokenplan.api.greennode.ai/v1   # OpenAI-standard tools (Cursor, OpenCode, Codex…)
+           https://tokenplan.api.greennode.ai      # Anthropic-standard tools (Claude Code, Claude Desktop)
 API key  : <that person's own key>
 Model    : <model code>
 ```

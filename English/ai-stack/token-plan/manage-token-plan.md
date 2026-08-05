@@ -152,9 +152,10 @@ Once you have a subscription-key and the model is included in the plan, calling 
 
 | | PAYG API Key | Subscription-key (Token Plan) |
 |---|---|---|
-| Base URL | GreenNode MaaS Endpoint | `https://tokenplan.api.greennode.ai/v1` |
+| Base URL — **OpenAI**-standard tools | GreenNode MaaS Endpoint + `/v1` | `https://tokenplan.api.greennode.ai/v1` |
+| Base URL — **Anthropic**-standard tools | GreenNode MaaS Endpoint (**no** `/v1`) | `https://tokenplan.api.greennode.ai` (**no** `/v1`) |
 | Key | API Key | Subscription-key |
-| Compatibility | OpenAI SDK | OpenAI SDK |
+| Compatibility | OpenAI SDK / Anthropic SDK | OpenAI SDK / Anthropic SDK |
 
 Send a `POST` request to the endpoint above with the header `Authorization: Bearer <subscription-key>` and `"model": "<model code>"` in the body (get the model code from the **Models** tab, e.g. `glm-5.2`).
 
@@ -173,7 +174,7 @@ When you issue a subscription-key to a team member, send the matching guide alon
 Those pages are written for PAYG API Keys — keep every step the same and only swap the Base URL and API key per the comparison table above.
 
 {% hint style="warning" %}
-**Claude Code / the Anthropic SDK** follow the Anthropic standard (the base URL has **no** `/v1`), which differs from the OpenAI-compatible Subscription Endpoint. See [Claude Code](../ai-coding/cli-tools/claude-code.md) and confirm the applicable Token Plan endpoint with the support team.
+**Claude Code / Claude Desktop / the Anthropic SDK** follow the Anthropic standard: the Base URL is `https://tokenplan.api.greennode.ai` — the same host but **without** `/v1`, and they read `ANTHROPIC_BASE_URL` / `ANTHROPIC_AUTH_TOKEN` instead of `OPENAI_*`. See [Claude Code](../ai-coding/cli-tools/claude-code.md).
 {% endhint %}
 
 ---

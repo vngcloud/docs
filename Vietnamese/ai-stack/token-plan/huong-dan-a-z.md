@@ -60,7 +60,7 @@ Credit chưa đủ? Nạp thêm tại AI Platform Console trước khi mua — h
 | **Duration**                    | Chu kỳ gói (thường 30 ngày)                                                                                                           |
 | **Tokens / Requests per cycle** | Hạn mức mỗi chu kỳ — tính **riêng cho từng model**, không bù trừ qua lại                                                  |
 | **Included Models**             | Danh sách model được gọi (Model, Status, **Model code**, Provider) — nhớ **Model code**, lát nữa cần điền vào tool |
-| **Subscription Endpoint**       | `https://tokenplan.api.greennode.ai/v1` — chính là **Base URL** bạn sẽ dùng                                                  |
+| **Subscription Endpoint** | `https://tokenplan.api.greennode.ai` — chính là **Base URL** bạn sẽ dùng. Tool chuẩn OpenAI thêm `/v1` ở cuối, tool chuẩn Anthropic thì **không** — xem [Mục 5](#5-setup-vao-tool-dang-chay-agent) |
 | **What happens when activated** | Điều gì xảy ra ngay sau khi kích hoạt                                                                                                |
 
 {% hint style="warning" %}
@@ -106,7 +106,9 @@ Trang **Plan Detail** có 2 tab — bạn cần lấy thông tin ở cả hai:
 
 **Tab `Models`** → lấy 2 thứ:
 
-- **Gateway base URL** dùng chung cho cả gói: `https://tokenplan.api.greennode.ai/v1`
+- **Gateway base URL** dùng chung cho cả gói — chọn dạng theo chuẩn của tool:
+  - Tool chuẩn **OpenAI** (Cursor, OpenCode, Codex…): `https://tokenplan.api.greennode.ai/v1`
+  - Tool chuẩn **Anthropic** (Claude Code, Claude Desktop): `https://tokenplan.api.greennode.ai` — **không** có `/v1`
 - **Model code** của model muốn dùng (ví dụ `glm-5.2`) — copy chính xác, sai một ký tự là lỗi
 
 **Tab `Subscription keys`** → lấy chìa khoá:
@@ -117,7 +119,7 @@ Chép 3 giá trị này ra Notepad:
 
 | Thông tin         | Giá trị                                      |
 | ------------------ | ---------------------------------------------- |
-| **Base URL** | `https://tokenplan.api.greennode.ai/v1`      |
+| **Base URL** | `https://tokenplan.api.greennode.ai/v1` (chuẩn OpenAI) hoặc `https://tokenplan.api.greennode.ai` (chuẩn Anthropic, **không** `/v1`) |
 | **API key**  | subscription-key vừa copy                     |
 | **Model**    | model code từ tab Models (ví dụ `glm-5.2`) |
 
@@ -129,9 +131,16 @@ Subscription-key là **bí mật** — ai cầm được key là gọi được 
 
 ## 5. Setup vào tool đang chạy agent
 
-Subscription Endpoint của Token Plan theo chuẩn **OpenAI-compatible**. Nghĩa là bất kỳ tool nào cho phép đổi `base_url` theo format OpenAI đều dùng được — chỉ cần điền 3 giá trị ở Mục 4, không đổi gì khác.
+Token Plan dùng chung một host cho mọi tool — hai chuẩn chỉ khác nhau ở hậu tố `/v1` và ở tên biến môi trường:
 
-### 5.1 Tool có ô cấu hình sẵn (Cursor, Continue.dev, và tương tự)
+| Chuẩn của tool | Base URL điền vào |
+|---|---|
+| **OpenAI** (Cursor, Continue.dev, OpenCode, Codex, LiteLLM, OpenAI SDK…) | `https://tokenplan.api.greennode.ai/v1` — **có** `/v1` |
+| **Anthropic** (Claude Code, Claude Desktop, Anthropic SDK) | `https://tokenplan.api.greennode.ai` — **không** có `/v1` |
+
+Ngoài Base URL thì không đổi gì khác — vẫn đúng 3 giá trị ở Mục 4.
+
+### 5.1 Tool chuẩn OpenAI có ô cấu hình sẵn (Cursor, Continue.dev, và tương tự)
 
 Vào phần Settings của tool, điền:
 
@@ -141,7 +150,7 @@ Vào phần Settings của tool, điền:
 | **API Key**  | `<subscription-key của bạn>`          |
 | **Model**    | `<model code>` — ví dụ `glm-5.2`   |
 
-### 5.2 Tool đọc biến môi trường (CLI)
+### 5.2 Tool chuẩn OpenAI đọc biến môi trường (CLI)
 
 {% tabs %}
 {% tab title="macOS / Linux / WSL" %}
@@ -211,17 +220,39 @@ curl https://tokenplan.api.greennode.ai/v1/chat/completions \
 | `401 Unauthorized`            | Key sai, key bị Disable, hoặc copy thiếu ký tự | Copy lại key ở tab **Subscription keys**, kiểm tra Status = `ACTIVE` |
 | `403 Forbidden`               | Gọi model **không nằm trong gói**          | Chỉ gọi model có trong tab **Models** của gói đó                   |
 | `402 Payment Required`        | Gói đã hết hạn hoặc đã bị xoá             | Mua lại (**Buy again**) hoặc bật lại Auto-renew                      |
-| `404 Not Found`               | Base URL thiếu `/v1`                              | Base URL phải kết thúc bằng `/v1`                                         |
+| `404 Not Found` | Base URL sai dạng so với chuẩn của tool | Tool chuẩn OpenAI: Base URL phải kết thúc bằng `/v1`. Tool chuẩn Anthropic (Claude Code): Base URL **không** được có `/v1` |
 | Request hết token giữa chừng | Pool token của model đó đã về 0               | Đợi chu kỳ mới, mua thêm 1 gói, hoặc tạm chuyển sang API Key PAYG     |
 | Response lỗi parse             | Tool tự nối `/v1` vào base URL                  | Thử bỏ `/v1` nếu tool tự xử lý                                          |
+
+### 5.6 Tool chuẩn Anthropic (Claude Code, Claude Desktop)
+
+Nhóm này nói giao thức Anthropic chứ không phải OpenAI, nên Base URL là **cùng host nhưng không có `/v1`**, và tên biến môi trường cũng khác:
+
+{% tabs %}
+{% tab title="macOS / Linux / WSL" %}
+
+```bash
+export ANTHROPIC_BASE_URL="https://tokenplan.api.greennode.ai"
+export ANTHROPIC_AUTH_TOKEN="<subscription-key của bạn>"
+```
+
+{% endtab %}
+
+{% tab title="Windows PowerShell" %}
+
+```powershell
+$env:ANTHROPIC_BASE_URL   = "https://tokenplan.api.greennode.ai"
+$env:ANTHROPIC_AUTH_TOKEN = "<subscription-key của bạn>"
+```
+
+{% endtab %}
+{% endtabs %}
+
+Hướng dẫn đầy đủ: [Kết nối Claude Code với GreenNode MaaS](../ai-coding/dong-lenh/claude-code.md).
 
 📎 *Cấu hình chi tiết cho từng tool cụ thể (LiteLLM, Cursor, Continue.dev, Node.js SDK…): [Kết nối OpenAI-compatible với GreenNode MaaS](../ai-coding/ket-noi-openai-compatible-voi-maas.md) — các bước giữ nguyên, chỉ đổi Base URL và key sang giá trị Token Plan ở Mục 4.*
 
 📎 *Danh sách tool đang hỗ trợ và cách chọn tool phù hợp: [AI Coding](../ai-coding/README.md) · [Bắt đầu với AI Coding](../ai-coding/bat-dau.md) · [Nhóm Dòng lệnh (CLI)](../ai-coding/dong-lenh/README.md)*
-
-{% hint style="warning" %}
-**Claude Code / Anthropic SDK** dùng chuẩn Anthropic (base URL **không** có `/v1`), khác với Subscription Endpoint OpenAI-compatible ở trên. Nếu bạn muốn dùng nhóm tool này, xem [Kết nối Claude Code với GreenNode MaaS](../ai-coding/dong-lenh/claude-code.md) và xác nhận với đội hỗ trợ về endpoint áp dụng cho Token Plan.
-{% endhint %}
 
 ---
 
@@ -278,7 +309,8 @@ Key mới xuất hiện với trạng thái `ACTIVE`, đồng thời tự độn
 **Bước 3 — Giao key cho thành viên.** Gửi cho mỗi người đúng 3 giá trị:
 
 ```
-Base URL : https://tokenplan.api.greennode.ai/v1
+Base URL : https://tokenplan.api.greennode.ai/v1   # tool chuẩn OpenAI (Cursor, OpenCode, Codex…)
+           https://tokenplan.api.greennode.ai      # tool chuẩn Anthropic (Claude Code, Claude Desktop)
 API key  : <key riêng của người đó>
 Model    : <model code>
 ```
