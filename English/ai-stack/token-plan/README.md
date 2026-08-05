@@ -51,6 +51,7 @@ A dedicated key for calling models within a plan's allowance, entirely separate 
 
 | I want to... | Go to |
 |---|---|
+| **Brand new — walk the full path from purchase to a working tool** | [A-Z Guide](a-z-guide.md) |
 | Browse & buy a Token Plan | [Buy a Token Plan](buy-token-plan.md) |
 | Manage a purchased plan & its subscription-keys | [Manage Token Plan](manage-token-plan.md) |
 | Use a subscription-key with an AI coding tool (Claude Code, Cursor,...) | [Connect OpenAI-compatible tools to GreenNode MaaS](../ai-coding/connect-openai-compatible-to-maas.md) |

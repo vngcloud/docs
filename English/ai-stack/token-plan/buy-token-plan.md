@@ -63,7 +63,41 @@ Confirming immediately deducts the amount shown as **Total** from the organizati
 
 The plan appears in **My Token Plans** with status `ACTIVE`, **Auto-renew** ON, and the system auto-creates 1 default subscription-key named `default-key` with access to every model in the plan — ready to use once provisioning finishes.
 
+---
+
+## Integrate the subscription-key into an AI coding tool
+
+To let an AI coding tool call the models in your plan, you need exactly **3 values**:
+
+| Value | Where to get it |
+|---|---|
+| **Base URL** | `https://tokenplan.api.greennode.ai/v1` — the **Subscription Endpoint** in Package Detail |
+| **API key** | The **Subscription keys** tab in Plan Detail — use the built-in `default-key` or one you create |
+| **Model code** | The **Models** tab in Plan Detail — e.g. `glm-5.2` |
+
+With all 3 values in hand, pick the guide for the tool you use:
+
+| Tool | Setup guide |
+|---|---|
+| Not sure which tool to pick | [Getting Started with AI Coding](../ai-coding/getting-started.md) |
+| Any OpenAI-compatible tool (Cursor, Continue.dev, LiteLLM, OpenAI SDK...) | [Connect OpenAI-compatible Clients to GreenNode MaaS](../ai-coding/connect-openai-compatible-to-maas.md) |
+| Claude Code | [Claude Code](../ai-coding/cli-tools/claude-code.md) |
+| Codex CLI | [Codex CLI](../ai-coding/cli-tools/codex-cli.md) |
+| OpenCode | [OpenCode](../ai-coding/cli-tools/opencode.md) |
+| Codex Desktop | [Codex Desktop](../ai-coding/gui-tools/codex-desktop.md) |
+| Add an MCP Server to your tool | [Using MCP Servers with AI Coding](../ai-coding/mcp-servers.md) |
+
+{% hint style="info" %}
+The AI Coding pages are written for PAYG API Keys. With Token Plan, keep every step exactly the same and swap just 2 values: **Base URL** to the Subscription Endpoint above, and **API key** to your plan's subscription-key.
+{% endhint %}
+
+---
+
+## Next steps
+
 | I want to... | Go to |
 |---|---|
 | Create more subscription-keys & manage the plan | [Manage Token Plan](manage-token-plan.md) |
+| Walk the full path from purchase to a working tool | [A-Z Guide](a-z-guide.md) |
 | See the Token Plan overview | [Token Plan](README.md) |
+| Track the plan's usage | [View Usage & Cost](../usage-budget/view-usage-cost.md) |
