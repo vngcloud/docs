@@ -780,6 +780,8 @@
   * [GenAI Studio](ai-stack/genai-studio.md)
   * [GreenNode AgentBase](ai-stack/agent-base/README.md)
     * [Getting Started](ai-stack/agent-base/getting-started.md)
+    * [Manage AgentBase with the GreenNode CLI](ai-stack/agent-base/manage-agentbase-with-the-greennode-cli.md)
+    * [Manage AgentBase with the GreenNode MCP](ai-stack/agent-base/manage-agentbase-with-the-greennode-mcp.md)
     * [Access Control](ai-stack/agent-base/access-control/README.md)
     * [Agent Runtime](ai-stack/agent-base/agent-runtime/README.md)
       * [Create Runtime](ai-stack/agent-base/agent-runtime/create-runtime.md)

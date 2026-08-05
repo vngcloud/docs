@@ -6,6 +6,16 @@ A single timeline of updates across all GreenNode AI Stack products — GreenNod
 
 ## August 2026
 
+**GreenNode AgentBase — CLI & MCP**
+
+AgentBase adds two ways to work alongside the Portal — the command line and AI assistants:
+
+* **GreenNode CLI:** the `grn agentbase` command group manages the full agent lifecycle — Identity, Runtime, Memory, MCP Gateway, Policy and Container Registry — and deploys a whole agent from a single manifest via `grn agentbase deploy up`. Ideal for moving agent deployment into automation scripts and CI/CD.
+  * Learn more at [Manage AgentBase with the GreenNode CLI](agent-base/manage-agentbase-with-the-greennode-cli.md).
+
+* **AgentBase MCP:** an MCP server that lets AI assistants (Claude Desktop, Claude Code, Cursor, Windsurf...) operate AgentBase through natural language via the 3 meta-tools `list_servers` / `search_tools` / `execute`. Supports both local (stdio) and remote (HTTP through the MCP Gateway) connections.
+  * Learn more at [Manage AgentBase with the GreenNode MCP](agent-base/manage-agentbase-with-the-greennode-mcp.md).
+
 **GreenNode MaaS — Model Catalog & Pricing Update**
 
 GreenNode is updating the MaaS model catalog into two groups — **GreenNode self-hosted models** and **third-party models** under official contracts — along with better pricing on many models. The Portal now shows a **model type label (Self-host / Partner)** right on the model list, making it easy to tell models apart and pick the right one.

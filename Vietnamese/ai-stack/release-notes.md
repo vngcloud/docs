@@ -6,6 +6,16 @@ Tổng hợp các bản cập nhật của toàn bộ sản phẩm trong GreenNo
 
 ## Tháng 8, 2026
 
+**GreenNode AgentBase — CLI & MCP**
+
+AgentBase bổ sung 2 cách làm việc bên cạnh Portal — dòng lệnh và AI assistant:
+
+* **GreenNode CLI:** nhóm lệnh `grn agentbase` quản lý trọn vòng đời agent — Identity, Runtime, Memory, MCP Gateway, Policy và Container Registry — và deploy cả agent bằng một manifest duy nhất qua `grn agentbase deploy up`. Phù hợp để đưa việc deploy agent vào script tự động hoá và CI/CD.
+  * Tìm hiểu thêm tại [Sử dụng GreenNode CLI để quản lý AgentBase](agent-base/su-dung-greennode-cli-de-quan-ly-agentbase.md).
+
+* **AgentBase MCP:** máy chủ MCP cho phép AI assistant (Claude Desktop, Claude Code, Cursor, Windsurf...) thao tác với AgentBase bằng ngôn ngữ tự nhiên qua 3 meta-tool `list_servers` / `search_tools` / `execute`. Hỗ trợ cả kết nối local (stdio) và remote (HTTP qua MCP Gateway).
+  * Tìm hiểu thêm tại [Sử dụng GreenNode MCP để quản lý AgentBase](agent-base/su-dung-greennode-mcp-de-quan-ly-agentbase.md).
+
 **GreenNode MaaS — Cập nhật danh mục model & bảng giá**
 
 GreenNode cập nhật danh mục model trên MaaS thành hai nhóm — **model do GreenNode self-host** và **model third-party** đã ký hợp đồng chính thức — kèm bảng giá tốt hơn cho nhiều model. Portal bổ sung **label loại model (Self-host / Partner)** ngay trên danh sách, giúp bạn dễ dàng phân biệt và chọn model phù hợp.
