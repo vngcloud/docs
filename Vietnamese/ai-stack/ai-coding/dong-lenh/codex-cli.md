@@ -11,6 +11,10 @@
 
 > Model Minimax M2.5 qua Codex dùng **chuẩn OpenAI** — Base URL có `/v1`: `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1`.
 
+{% hint style="info" %}
+**Nếu dùng key của gói Token Plan (subscription) thay vì API key trả theo mức dùng (pay-as-you-go)**, dùng `https://tokenplan.api.greennode.ai/v1` làm Base URL thay thế. Xem chi tiết tại [Token Plan](../../token-plan/README.md).
+{% endhint %}
+
 ***
 
 ## Bước 1 — Cài đặt Codex CLI

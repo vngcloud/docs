@@ -109,6 +109,10 @@ Trong phần cài đặt của tool, điền:
 | **API Key**  | `<your-api-key>`                                     |
 | **Model**    | `openai/gpt-4o`, `gemini/gemini-2.5-flash`, `qwen/qwen3-27b` (hoặc model từ bước 2) |
 
+{% hint style="info" %}
+**Nếu dùng key của gói Token Plan (subscription) thay vì API key trả theo mức dùng (pay-as-you-go)**, dùng `https://tokenplan.api.greennode.ai/v1` làm Base URL thay thế. Xem chi tiết tại [Token Plan](../token-plan/README.md).
+{% endhint %}
+
 ***
 
 ## Bước 4 — Kiểm tra kết nối

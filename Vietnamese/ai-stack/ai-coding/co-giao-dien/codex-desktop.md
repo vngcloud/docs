@@ -11,6 +11,7 @@ Bạn sẽ cần 3 giá trị này (lấy ở trang Điều kiện cần):
 | Thông tin | Giá trị |
 |-----------|---------|
 | Base URL (chuẩn OpenAI) | `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1` (**có** `/v1`) |
+| Base URL (key của gói Token Plan) | `https://tokenplan.api.greennode.ai/v1` — xem [Token Plan](../../token-plan/README.md) |
 | API key | key `vn-...` của bạn |
 | Model ID | `z-ai/glm-5.2` |
 

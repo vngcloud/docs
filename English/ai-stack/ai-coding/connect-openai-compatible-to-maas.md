@@ -109,6 +109,10 @@ In the tool's settings, fill in:
 | **API Key** | `<your-api-key>` |
 | **Model** | `openai/gpt-4o`, `gemini/gemini-2.5-flash`, `qwen/qwen3-27b` (or the model ID from Step 2) |
 
+{% hint style="info" %}
+**Using a Token Plan (subscription package) key instead of a pay-as-you-go API key?** Use `https://tokenplan.api.greennode.ai/v1` as the Base URL instead. See [Token Plan](../token-plan/README.md) for details.
+{% endhint %}
+
 ---
 
 ## Step 4 — Verify the connection

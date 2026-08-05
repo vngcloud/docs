@@ -64,6 +64,14 @@ https://maas-llm-aiplatform-hcm.api.vngcloud.vn
 Trang công cụ sẽ nói rõ bạn cần bản nào.
 {% endhint %}
 
+{% hint style="info" %}
+**Nếu dùng key của gói Token Plan (subscription) thay vì API key trả theo mức dùng (pay-as-you-go)**, Base URL của Token Plan cũng theo đúng quy tắc Anthropic / OpenAI như trên, chỉ khác domain:
+* Công cụ chuẩn **Anthropic** (Claude Desktop, Claude Code): `https://tokenplan.api.greennode.ai` — **không** có `/v1`.
+* Công cụ chuẩn **OpenAI** (OpenCode, Codex, Cursor…): `https://tokenplan.api.greennode.ai/v1`.
+
+Xem chi tiết tại [Token Plan](../token-plan/README.md).
+{% endhint %}
+
 ### 3.3 — Kiểm tra model GLM 5.2 đã được bật
 
 1. Mở **[trang Models](https://aiplatform.console.greennode.ai/models)** và gõ tìm model bạn muốn dùng (ví dụ **GLM 5.2**).
@@ -97,6 +105,8 @@ App **Claude Desktop chỉ có bản macOS và Windows.** Nếu bạn dùng **Li
 |-----------|---------|
 | Base URL (chuẩn Anthropic) | `https://maas-llm-aiplatform-hcm.api.vngcloud.vn` |
 | Base URL (chuẩn OpenAI) | `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1` |
+| Base URL (Token Plan, chuẩn Anthropic) | `https://tokenplan.api.greennode.ai` |
+| Base URL (Token Plan, chuẩn OpenAI) | `https://tokenplan.api.greennode.ai/v1` |
 | Model ID | Xem trong chi tiết model (ví dụ GLM 5.2 → `z-ai/glm-5.2`) |
 | Tạo / lấy API key | https://aiplatform.console.greennode.ai/keys |
 | Kiểm tra model GLM 5.2 | https://aiplatform.console.greennode.ai/models (gõ tìm GLM 5.2) |
