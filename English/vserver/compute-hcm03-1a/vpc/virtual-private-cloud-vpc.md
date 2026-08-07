@@ -31,6 +31,19 @@ Each VPC is defined as one private CIDR block with address mask 16 and consists 
 
 A VPC is belong to only one Availability Zone in the Region. In order to span your network to multiple AZ or Region, you can use VPC Peering. See more at {VPC Peering page}
 
+#### CIDR allocation for services
+
+The system reserves CIDR blocks for the following services:
+
+* **vDNS**
+  * HCM: up to three `/28` subnets across three zones.
+  * HAN: up to two `/28` subnets across two zones.
+* **Peering**
+  * Each peering connection uses two `/24` subnets, one from each connected VPC.
+* **NAT**
+  * HCM: up to three `/24` subnets across three zones.
+  * HAN: up to two `/24` subnets across two zones.
+
 ### Route table <a href="#virtualprivatecloud-vpc-routetable" id="virtualprivatecloud-vpc-routetable"></a>
 
 Your VPC has an implicit router with one main route table. All subnets in VPC is automatically routed to each others. You only use Route Table to control static routes where network traffic is directed as your needed.
