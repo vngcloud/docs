@@ -6,7 +6,7 @@
 
 * **Python ≥ 3.11**.
 * [`uv`](https://docs.astral.sh/uv/) — quản lý môi trường và chạy **Python**.
-* Repo [`greennode-mcp`](https://github.com/vngcloud/greennode-mcp) clone sẵn trên máy (client trỏ `--directory` tới đây; `uv run` tự cài deps ở lần chạy đầu).
+* Repo [`greennode-mcp`](https://github.com/GreenNodeHub/greennode-mcp) clone sẵn trên máy (client trỏ `--directory` tới đây; `uv run` tự cài deps ở lần chạy đầu).
 * Một **MCP client**: Claude Desktop, Claude Code, Cursor, hoặc VS Code (Copilot MCP).
 * **GreenNode credentials** — cung cấp hai cách:
   * File `~/.greennode/credentials` + `~/.greennode/config`: cài greennode-cli theo [hướng dẫn GreenNode CLI](https://docs.greennode.ai/vn/vks/getting-started/su-dung-greennode-cli-de-quan-ly-vks) rồi chạy `grn configure`.

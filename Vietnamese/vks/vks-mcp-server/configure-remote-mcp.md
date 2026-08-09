@@ -7,7 +7,7 @@ Remote MCP là VKS MCP Server đã được host sẵn: **một endpoint duy nh�
 ### Prerequisites
 
 * Một **MCP client** hỗ trợ remote MCP + OAuth: Claude Code, Claude Desktop / claude.ai, Cursor, Visual Studio Code.
-* Một **GreenNode IAM user** có quyền trên VKS (chính là account đăng nhập [GreenNode Portal](https://signin.greennode.ai)).
+* Một **GreenNode IAM user** có quyền trên VKS (chính là account đăng nhập [GreenNode Portal](https://vks.console.greennode.ai)).
 
 > Không cần API token hay `client_id` / `client_secret`. Client tự chạy OAuth
 

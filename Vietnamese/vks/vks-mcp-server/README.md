@@ -49,6 +49,6 @@ Các `list_*` tool luôn echo lại region vừa query, nên bạn không nhầm
 ### Resources
 
 * **GreenNode CLI** — quản lý VKS bằng dòng lệnh: [Sử dụng GreenNode CLI để quản lý VKS](https://docs.greennode.ai/vn/vks/getting-started/su-dung-greennode-cli-de-quan-ly-vks)
-* **GreenNode MCP Github** — [**https://github.com/vngcloud/greennode-mcp**](https://github.com/vngcloud/greennode-mcp)
+* **GreenNode MCP Github** — [**https://github.com/GreenNodeHub/greennode-mcp**](https://github.com/GreenNodeHub/greennode-mcp)
 * **Model Context Protocol** — đặc tả chuẩn MCP: [modelcontextprotocol.io](https://modelcontextprotocol.io)
 
