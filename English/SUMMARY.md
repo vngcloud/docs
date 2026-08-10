@@ -538,6 +538,7 @@
     * [Getting Start with Metrics](vmonitor-platform/bat-dau-voi-vmonitor-platform/bat-dau-voi-metrics.md)
     * [Getting Start with Logs](vmonitor-platform/bat-dau-voi-vmonitor-platform/bat-dau-voi-logs.md)
     * [Getting Start with Synthetic](vmonitor-platform/bat-dau-voi-vmonitor-platform/bat-dau-voi-synthetic.md)
+  * [Install and use the vMonitor Datasource plugin for Grafana](vmonitor/install-vmonitor-grafana-plugin.md)
   * [Features of vMonitor Platform](vmonitor/dashboards.md)
     * [Dashboard](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/dashboard/README.md)
       * [Widget](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/dashboard/widget/README.md)

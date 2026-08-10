@@ -619,6 +619,7 @@
     * [Bắt đầu với Metrics](vmonitor-platform/bat-dau-voi-vmonitor-platform/bat-dau-voi-metrics.md)
     * [Bắt đầu với Logs](vmonitor-platform/bat-dau-voi-vmonitor-platform/bat-dau-voi-logs.md)
     * [Bắt đầu với Synthetic](vmonitor-platform/bat-dau-voi-vmonitor-platform/bat-dau-voi-synthetic.md)
+  * [Cài đặt và sử dụng vMonitor Datasource Plugin cho Grafana](vmonitor/cai-dat-vmonitor-grafana-plugin.md)
   * [Các tính năng của vMonitor Platform](vmonitor/dashboards.md)
     * [Dashboard](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/dashboard/README.md)
       * [Widget](vmonitor-platform/cach-tinh-nang-cua-vmonitor-platform/dashboard/widget/README.md)
