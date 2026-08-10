@@ -1,5 +1,16 @@
 # Release notes
 
+## Aug 10, 2026 <a href="#jul_13_2026" id="jul_13_2026"></a>
+
+VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới với các cải tiến sau:
+
+**Tính năng mới:**
+
+* **VKS MCP Server:** Kết nối AI assistant (Claude, Cursor, VS Code…) trực tiếp vào VKS qua chuẩn [Model Context Protocol](https://modelcontextprotocol.io) — ra lệnh bằng ngôn ngữ tự nhiên để quản lý **Cluster**, **Node Group** và cả **Kubernetes resource bên trong cluster**.
+  * **Remote (hosted):** dùng ngay một endpoint host sẵn, đăng nhập bằng **GreenNode IAM user** qua browser (OAuth 2.1) — không cần cài đặt, không cần khai báo secret trong file config. Xem [Configure Remote MCP](../vks-mcp-server/configure-remote-mcp.md).
+  * **Local (stdio):** chạy server ngay trên máy, dùng chung credentials `~/.greennode` với GreenNode CLI. Xem [Configure Local MCP](../vks-mcp-server/configure-local-mcp.md).
+  * Hướng dẫn chi tiết tại [VKS MCP Server](../vks-mcp-server/).
+
 ## Jul 13, 2026 <a href="#jul_13_2026" id="jul_13_2026"></a>
 
 VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới với các cải tiến sau:

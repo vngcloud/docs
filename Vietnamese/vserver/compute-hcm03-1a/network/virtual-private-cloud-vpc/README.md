@@ -29,6 +29,18 @@ Mỗi VPC được định nghĩa bằng 1 dãy CIDR có subnet mask /16, trong 
 | 172.16.0.0/16 - 172.24.0.0/16 | Số lượng địa chỉ IP private sẵn sàng (trừ các IP dành riêng sẵn cho hệ thống): hơn 500K địa chỉ |
 | 10.0.0.0/16 - 10.255.0.0/16   | Số lượng địa chỉ IP private sẵn sàng (trừ các IP dành riêng sẵn cho hệ thống): hơn 16M địa chỉ  |
 
+#### **CIDR sử dụng cho dịch vụ**
+
+Hệ thống sử dụng các CIDR sau khi bạn kích hoạt từng dịch vụ:
+
+| Dịch vụ     | Khu vực | CIDR và giới hạn                                                  |
+| ----------- | ------- | ----------------------------------------------------------------- |
+| vDNS        | HCM     | Tối đa 3 subnet `/28`, trên 3 zone.                               |
+| vDNS        | HAN     | Tối đa 2 subnet `/28`, trên 2 zone.                               |
+| VPC Peering | —       | Mỗi kết nối Peering sử dụng 2 subnet `/24` từ 2 VPC được kết nối. |
+| NAT         | HCM     | Tối đa 3 subnet `/24`, trên 3 zone.                               |
+| NAT         | HAN     | Tối đa 2 subnet `/24`, trên 2 zone.                               |
+
 Một VPC chỉ nằm ở một Availability Zone trong Region. Để mở rộng môi trường mạng của bạn đến các AZ khác, bạn cần sử dụng tính năng VPC Peering. Xem thêm tại {Trang VPC Peering}
 
 ### **Bảng route** <a href="#virtualprivatecloud-vpc-bangroute" id="virtualprivatecloud-vpc-bangroute"></a>

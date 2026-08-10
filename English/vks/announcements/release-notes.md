@@ -1,5 +1,16 @@
 # Release notes
 
+## Aug 10, 2026 <a href="#jul_13_2026" id="jul_13_2026"></a>
+
+VKS (VNG Kubernetes Engine) has just released a new update with the following improvements:
+
+**New features:**
+
+* **VKS MCP Server:** Connect AI assistants (Claude, Cursor, VS Code…) straight to VKS over the [Model Context Protocol](https://modelcontextprotocol.io) — manage **Clusters**, **Node Groups** and the **Kubernetes resources inside a cluster** in plain language.
+  * **Remote (hosted):** use the hosted endpoint right away and sign in with your **GreenNode IAM user** in the browser (OAuth 2.1) — nothing to install, no secret in any config file. See [Configure Remote MCP](../vks-mcp-server/configure-remote-mcp.md).
+  * **Local (stdio):** run the server on your own machine, sharing the `~/.greennode` credentials with the GreenNode CLI. See [Configure Local MCP](../vks-mcp-server/configure-local-mcp.md).
+  * See [VKS MCP Server](../vks-mcp-server/) for details.
+
 ## Jul 13, 2026 <a href="#jul_13_2026" id="jul_13_2026"></a>
 
 VKS (VNG Kubernetes Engine) has just released a new update with the following improvements:
