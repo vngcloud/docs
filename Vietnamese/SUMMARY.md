@@ -1176,6 +1176,7 @@
   * [Giới hạn sử dụng](identity-and-access-management-iam/gioi-han-su-dung.md)
   * [Security for IAM](identity-and-access-management-iam/security-for-iam.md)
   * [Chính sách mật khẩu & thời gian phiên làm việc](identity-and-access-management-iam/chinh-sach-mat-khau-and-thoi-gian-phien-lam-viec.md)
+  * [Cấu hình IP Whitelist](identity-and-access-management-iam/cau-hinh-ip-whitelist.md)
 * [Quản lý hóa đơn, chi phí & tài nguyên trên GreenNode](quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/README.md)
   * [vConsole - Kênh quản lý chung về hóa đơn và tài nguyên trên GreenNode](quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/vconsole-kenh-quan-ly-chung-ve-hoa-don-va-tai-nguyen-tren-vng-cloud/README.md)
     * [vConsole là gì?](quan-ly-hoa-don-chi-phi-and-tai-nguyen-tren-vng-cloud/vconsole-kenh-quan-ly-chung-ve-hoa-don-va-tai-nguyen-tren-vng-cloud/vconsole-la-gi.md)

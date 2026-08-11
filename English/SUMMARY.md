@@ -1127,6 +1127,7 @@
   * [Limitation](identity-and-access-management-iam/gioi-han-su-dung.md)
   * [Security for IAM](identity-and-access-management-iam/security-for-iam.md)
   * [Pasword policy & session timeout](identity-and-access-management-iam/pasword-policy-and-session-timeout.md)
+  * [Configure IP Whitelist](identity-and-access-management-iam/configure-ip-whitelist.md)
 * [Billing & Payment](billing-management/README.md)
   * [vConsole – Management channel for billing and resources](billing-management/vconsole-management-channel-for-billing-and-resources/README.md)
     * [What is vConsole](billing-management/vconsole-management-channel-for-billing-and-resources/what-is-vconsole.md)
