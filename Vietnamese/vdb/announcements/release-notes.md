@@ -4,6 +4,17 @@ Tổng hợp các bản cập nhật và tính năng mới của tất cả các
 
 ***
 
+## Tháng 8, 2026 - vDB PostgreSQL Cluster (RDS) — region HAN
+
+GreenNode mở rộng PostgreSQL Cluster (RDS) sang region **HAN-01**, cho phép triển khai cluster PostgreSQL High Availability tại Hà Nội với các availability zone **HAN01-1A** và **HAN01-1B**, song song với region HCM hiện có.
+
+* **Region mới HAN-01:** triển khai PostgreSQL Cluster tại Hà Nội bên cạnh HCM.
+* **Hai availability zone:** HAN01-1A và HAN01-1B, hỗ trợ High Availability multi-AZ và automatic failover.
+* Cùng kiến trúc 1 Writer + N Readers, 2–10 node, tích hợp vBackup và các extension được hỗ trợ (pgvector, timescaledb, postgis...).
+* Tìm hiểu thêm tại [PostgreSQL Cluster](../relational-database-service-rds/postgresql/postgresql-cluster/).
+
+---
+
 ## June 2026 - vDB Redis Cluster (MDS)
 
 GreenNode ra mắt **Redis Cluster (Non-sharding)** cho dịch vụ vDB MemoryStore (MDS), mang kiến trúc High Availability và bảo vệ dữ liệu toàn diện cho workload Redis ở môi trường production.
