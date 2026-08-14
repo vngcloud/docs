@@ -4,6 +4,17 @@ Summary of updates and new features across all engines in the vDB service.
 
 ***
 
+## August 2026 - vDB PostgreSQL Cluster (RDS) — HAN region
+
+GreenNode extends PostgreSQL Cluster (RDS) to the **HAN-01** region, so you can now deploy High Availability PostgreSQL clusters in Hanoi with availability zones **HAN01-1A** and **HAN01-1B**, alongside the existing HCM region.
+
+* **New region HAN-01:** deploy PostgreSQL Clusters in Hanoi in addition to HCM.
+* **Two availability zones:** HAN01-1A and HAN01-1B, supporting multi-AZ High Availability and automatic failover.
+* Same 1 Writer + N Readers architecture, 2–10 nodes, vBackup integration, and supported extensions (pgvector, timescaledb, postgis...).
+* Learn more at [PostgreSQL Cluster](../relational-database-service-rds/postgresql/postgresql-cluster/).
+
+---
+
 ## June 2026 - vDB Redis Cluster (MDS)
 
 GreenNode introduces **Redis Cluster (Non-sharding)** for the vDB MemoryStore (MDS) service, bringing a High Availability architecture and comprehensive data protection for Redis workloads in production.
