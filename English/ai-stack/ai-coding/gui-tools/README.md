@@ -4,6 +4,10 @@
 
 Before installing, see [Prerequisites](../getting-started.md).
 
+{% hint style="warning" %}
+Each tool's configuration section has **separate tabs for PAYG and Token Plan**. Settle your service type first (go by where you got your key), then copy only from that tab — a key and Base URL from different service types return `401 Unauthorized`.
+{% endhint %}
+
 | Tool | Notes |
 |---|---|
 | [Codex Desktop](codex-desktop.md) | Configured via the `config.toml` file in Settings |
