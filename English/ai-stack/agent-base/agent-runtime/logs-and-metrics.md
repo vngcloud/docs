@@ -49,7 +49,7 @@ Fetch container logs from all replicas of a runtime. Uses offset-based paginatio
 
 ### RESTful API
 
-> **Prerequisite:** All API examples below use `$TOKEN` â€” an IAM bearer token. See [Configure Authentication](../getting-started.md#configure-authentication) for how to obtain it.
+> **Prerequisite:** All API examples below use `$TOKEN` — an IAM bearer token. See [Configure Authentication](../getting-started.md#configure-authentication) for how to obtain it.
 
 ```bash
 RUNTIME_ID="<your-runtime-id>"
@@ -153,7 +153,7 @@ curl -s "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNTIME_ID/en
 
 ### Pseudo-Tailing (Poll Pattern)
 
-Log streaming is not supported â€” use polling to approximate tailing:
+Log streaming is not supported — use polling to approximate tailing:
 
 ```bash
 OFFSET=0
@@ -194,18 +194,18 @@ done
 
 | CPU       | RAM    | Diagnosis                                                                     |
 | --------- | ------ | ----------------------------------------------------------------------------- |
-| High      | Normal | CPU-bound workload â€” scale up or optimize                                   |
-| Normal    | High   | Memory leak or large data structures â€” scale up or fix leak                 |
-| Both high | â€”    | Resource exhaustion â€” scale up flavor                                       |
-| Both low  | â€”    | External bottleneck (LLM API latency, network) â€” add request timing in logs |
+| High      | Normal | CPU-bound workload — scale up or optimize                                   |
+| Normal    | High   | Memory leak or large data structures — scale up or fix leak                 |
+| Both high | —    | Resource exhaustion — scale up flavor                                       |
+| Both low  | —    | External bottleneck (LLM API latency, network) — add request timing in logs |
 
 ***
 
 ## What's Supported
 
-* **Log time range filter** â€” Filter logs by a specific time window (start/end timestamp), so you can narrow down exactly when an issue occurred without fetching the entire log history.
-* **Log keyword search** â€” Search logs by keyword or phrase directly in the query, returning only matching entries without needing to grep locally after fetching.
-* **Historical metrics** â€” Query CPU and RAM usage over a time range, not just the current point-in-time snapshot. Useful for spotting resource trends, spikes, and patterns leading up to an incident.
+* **Log time range filter** — Filter logs by a specific time window (start/end timestamp), so you can narrow down exactly when an issue occurred without fetching the entire log history.
+* **Log keyword search** — Search logs by keyword or phrase directly in the query, returning only matching entries without needing to grep locally after fetching.
+* **Historical metrics** — Query CPU and RAM usage over a time range, not just the current point-in-time snapshot. Useful for spotting resource trends, spikes, and patterns leading up to an incident.
 
 ***
 

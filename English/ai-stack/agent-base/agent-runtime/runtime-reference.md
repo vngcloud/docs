@@ -1,6 +1,6 @@
 # Runtime Reference
 
-> The Runtime manages the full lifecycle of your agent's compute environment â€” container deployment, autoscaling, versioning, and endpoints.
+> The Runtime manages the full lifecycle of your agent's compute environment — container deployment, autoscaling, versioning, and endpoints.
 
 ***
 
@@ -22,11 +22,11 @@ A **Runtime** is the managed compute environment that runs your containerized ag
 
 ### Versions
 
-Every time you deploy a new container image to a runtime, AgentBase creates a new **Version**. Versions are immutable â€” a version's image and configuration never change after creation.
+Every time you deploy a new container image to a runtime, AgentBase creates a new **Version**. Versions are immutable — a version's image and configuration never change after creation.
 
 ### Endpoint
 
-An **Endpoint** is the URL that clients call to interact with your agent. A runtime can have multiple endpoints and multiple versions â€” these are independent concepts. The **default** endpoint automatically tracks the latest version whenever a new version is deployed. You can designate any endpoint as the default, and create additional endpoints pinned to specific versions (for example, for canary or staging traffic).
+An **Endpoint** is the URL that clients call to interact with your agent. A runtime can have multiple endpoints and multiple versions — these are independent concepts. The **default** endpoint automatically tracks the latest version whenever a new version is deployed. You can designate any endpoint as the default, and create additional endpoints pinned to specific versions (for example, for canary or staging traffic).
 
 ### Compute Flavors
 
@@ -36,24 +36,24 @@ A **Compute Flavor** defines the CPU and RAM allocated to each replica of your a
 
 The Runtime Service supports autoscaling based on CPU or RAM utilization. You define:
 
-* `minReplicas`: The floor â€” always running (range: 1â€“10)
-* `maxReplicas`: The ceiling â€” caps resource usage (range: 1â€“10)
-* `cpuUtilization` and `memoryUtilization`: Thresholds (25â€“75%) that trigger scale-out
+* `minReplicas`: The floor — always running (range: 1–10)
+* `maxReplicas`: The ceiling — caps resource usage (range: 1–10)
+* `cpuUtilization` and `memoryUtilization`: Thresholds (25–75%) that trigger scale-out
 
 When load drops, AgentBase scales replicas back down to `minReplicas`.
 
 ### Security Settings
 
-* **IP Access Control** â€” restricts which source IP CIDR ranges can reach the Runtime endpoint; leave empty to allow all sources.
-* **Inbound Identity** â€” configures how incoming requests are authenticated, via an **Inbound Auth type**: **IAM Permissions** (GreenNode AI Platform IAM token), **JSON Web Tokens (JWT)** (validated via a Discovery URL or inline JWKS), or **No authorization** (publicly accessible, no access control).
+* **IP Access Control** — restricts which source IP CIDR ranges can reach the Runtime endpoint; leave empty to allow all sources.
+* **Inbound Identity** — configures how incoming requests are authenticated, via an **Inbound Auth type**: **IAM Permissions** (GreenNode AI Platform IAM token), **JSON Web Tokens (JWT)** (validated via a Discovery URL or inline JWKS), or **No authorization** (publicly accessible, no access control).
 
 ### Service Contract
 
 Your agent container must satisfy these requirements to work correctly with the Runtime Service:
 
-1. **Listen on port 8080** â€” the required port; `app.run(host="0.0.0.0", port=8080)`
+1. **Listen on port 8080** — the required port; `app.run(host="0.0.0.0", port=8080)`
 2. **Health check endpoint**: `GET /health` must return HTTP 200 to pass readiness checks
-3. **Stateless**: Do not store session state in process memory â€” use the Memory Service instead
+3. **Stateless**: Do not store session state in process memory — use the Memory Service instead
 
 **Auto-injected environment variables** (available in all deployed agent containers):
 
@@ -71,24 +71,24 @@ Your agent container must satisfy these requirements to work correctly with the 
 
 ```
 Runtime: my-order-agent
-â”‚
-â”œâ”€â”€ Versions
-â”‚   â”œâ”€â”€ Version 1  (image: my-agent:v1.0.0)
-â”‚   â””â”€â”€ Version 2  (image: my-agent:v2.0.0)  â† latest
-â”‚
-â”œâ”€â”€ Endpoints
-â”‚   â”œâ”€â”€ DEFAULT  â†’ https://<default-url>   (auto-tracks latest version)
-â”‚   â””â”€â”€ canary   â†’ https://<canary-url>    (pinned to Version 1)
-â”‚
-â””â”€â”€ Autoscaling: min=1, max=3, CPU threshold=50%
+│
+├── Versions
+│   ├── Version 1  (image: my-agent:v1.0.0)
+│   └── Version 2  (image: my-agent:v2.0.0)  â† latest
+│
+├── Endpoints
+│   ├── DEFAULT  â†’ https://<default-url>   (auto-tracks latest version)
+│   └── canary   â†’ https://<canary-url>    (pinned to Version 1)
+│
+└── Autoscaling: min=1, max=3, CPU threshold=50%
 ```
 
 **Key facts:**
 
-* Each `PATCH /agent-runtimes/{id}` creates a new **version** â€” versions and endpoints are independent concepts under a runtime
+* Each `PATCH /agent-runtimes/{id}` creates a new **version** — versions and endpoints are independent concepts under a runtime
 * The **default** endpoint automatically tracks the latest version whenever a new version is deployed
-* A runtime can have multiple endpoints â€” you choose which one is the default
-* You have full control over all endpoints â€” create, update, or delete
+* A runtime can have multiple endpoints — you choose which one is the default
+* You have full control over all endpoints — create, update, or delete
 
 ***
 
@@ -108,16 +108,16 @@ Runtime: my-order-agent
 | **Description**           | `Production order agent`             | Optional                                                                                                                                |
 | **Image URL**             | `vcr.vngcloud.vn/<repo>/my-agent:v1` | Full image path including tag                                                                                                           |
 | **Flavor**                | `1x1-general`                        | 1 CPU, 1 GB RAM                                                                                                                         |
-| **Min Replicas**          | `1`                                  | Range: 1â€“10                                                                                                                           |
+| **Min Replicas**          | `1`                                  | Range: 1–10                                                                                                                           |
 | **Max Replicas**          | `1`                                  | Set >1 to enable autoscaling                                                                                                            |
-| **CPU Threshold**         | `50`                                 | Scale out when CPU exceeds this % (25â€“75)                                                                                             |
-| **Memory Threshold**      | `50`                                 | Scale out when RAM exceeds this % (25â€“75)                                                                                             |
-| **Registry Auth**         | Enable if private                    | Username = robot account `backendName` (see [Supporting Services â€” Robot Accounts](../supporting-services.md#create-a-robot-account)) |
+| **CPU Threshold**         | `50`                                 | Scale out when CPU exceeds this % (25–75)                                                                                             |
+| **Memory Threshold**      | `50`                                 | Scale out when RAM exceeds this % (25–75)                                                                                             |
+| **Registry Auth**         | Enable if private                    | Username = robot account `backendName` (see [Supporting Services — Robot Accounts](../supporting-services.md#create-a-robot-account)) |
 | **Environment Variables** | `KEY=value`                          | Non-sensitive config only                                                                                                               |
-| **IP Access Control**     | `10.0.0.0/16`                        | Optional â€” allowed source IP CIDR ranges; leave empty to allow all sources                                                            |
-| **Inbound Auth type**     | `JSON Web Tokens (JWT)`              | Optional â€” **IAM Permissions**, **JWT** (Discovery URL or inline JWKS), or **No authorization**                                       |
+| **IP Access Control**     | `10.0.0.0/16`                        | Optional — allowed source IP CIDR ranges; leave empty to allow all sources                                                            |
+| **Inbound Auth type**     | `JSON Web Tokens (JWT)`              | Optional — **IAM Permissions**, **JWT** (Discovery URL or inline JWKS), or **No authorization**                                       |
 
-![Security Settings â€” IP Access Control and Inbound Identity](<../../../.gitbook/assets/Agentbase-image/Security-Runtime.png>)
+![Security Settings — IP Access Control and Inbound Identity](<../../../.gitbook/assets/Agentbase-image/Security-Runtime.png>)
 
 5. Click **Create**
 6. Runtime appears with status `CREATING`, then transitions to `ACTIVE`
@@ -147,7 +147,7 @@ In Runtime detail page, find the runtime â†’ **Delete** â†’ confirm
 
 ### RESTful API
 
-> **Prerequisite:** All API examples below use `$TOKEN` â€” an IAM bearer token. See [Configure Authentication](../getting-started.md#configure-authentication) for how to obtain it.
+> **Prerequisite:** All API examples below use `$TOKEN` — an IAM bearer token. See [Configure Authentication](../getting-started.md#configure-authentication) for how to obtain it.
 
 #### Create a Runtime
 
@@ -400,7 +400,7 @@ Your agent container must fulfill these requirements:
 
 | Requirement       | Value         | Notes                         |
 | ----------------- | ------------- | ----------------------------- |
-| Listen port       | `8080`        | Required â€” not configurable |
+| Listen port       | `8080`        | Required — not configurable |
 | Health check path | `GET /health` | Must return HTTP 200          |
 
 **Using the greennode-agentbase SDK (recommended):**
@@ -454,6 +454,6 @@ Incoming requests to your agent include:
 | `X-GreenNode-AgentBase-User-Id`    | End-user ID (use as `actorId` for memory operations)        |
 | `X-GreenNode-AgentBase-Session-Id` | Session ID (use as `thread_id` for LangGraph checkpointing) |
 
-> **Important:** If your agent uses memory, validate that these headers are present and return an error if missing. Do not fall back to default values â€” silent defaults cause data mixing between users.
+> **Important:** If your agent uses memory, validate that these headers are present and return an error if missing. Do not fall back to default values — silent defaults cause data mixing between users.
 
 ***

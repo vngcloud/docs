@@ -5,7 +5,7 @@
 * Đăng nhập với GreenNode account của bạn và truy cập tới [Model Registry Dashboard](https://aiplatform.console.greennode.ai/registry).
 * Tìm và nhấn vào nút "Import a model registry" (Nhập một model registry).
 
-## Bước 2: Truy cập Model Registry
+## Bước 2: Cấu hình Model Registry
 
 * **Region & Model registry name**: Chọn region và tên cụ thể cho model của bạn.
 * **Container**: Chọn option Pre-built container để sử dụng các framework được hỗ trợ.

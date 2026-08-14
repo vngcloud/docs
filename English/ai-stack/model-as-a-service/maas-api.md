@@ -1,8 +1,8 @@
 # MaaS API
 
-**MaaS** cung cấp một API **tương thích với OpenAI** để thực hiện suy luận mô hình một cách liền mạch. Bạn có thể dễ dàng tích hợp bằng **Python, JavaScript SDK**, hoặc trực tiếp qua **terminal với cURL**.
+**MaaS** provides an **OpenAI-compatible** API for seamless model inference. You can integrate easily using the **Python or JavaScript SDK**, or directly from your **terminal with cURL**.
 
-Tham khảo các Script trong API Usage trên Portal
+Refer to the scripts under API Usage on the Portal.
 
 _Curl_
 
