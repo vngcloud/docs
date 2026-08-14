@@ -1,6 +1,6 @@
 # Làm việc với Provider và Model
 
-goài việc thêm model trong lúc tạo AI Gateway, bạn có thể **thêm mới**, **chỉnh sửa**, hoặc **xóa model** như sau:
+Ngoài việc thêm model trong lúc tạo AI Gateway, bạn có thể **thêm mới**, **chỉnh sửa**, hoặc **xóa model** như sau:
 
 **Bước 1:** Truy cập cấu hình Provider & Model
 

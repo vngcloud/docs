@@ -1,12 +1,12 @@
 # Memory
 
-> The Memory service gives agents the ability to remember â€” across turns in a conversation (short-term via events) and across sessions and time (long-term via memory records with semantic search).
+> The Memory service gives agents the ability to remember — across turns in a conversation (short-term via events) and across sessions and time (long-term via memory records with semantic search).
 
 ***
 
 ## Core Concepts
 
-LLMs are stateless by nature â€” each API call is independent. For an agent to maintain context across a conversation or across sessions, it needs an external memory store. AgentBase's Memory module provides this as a managed service with two memory layers:
+LLMs are stateless by nature — each API call is independent. For an agent to maintain context across a conversation or across sessions, it needs an external memory store. AgentBase's Memory module provides this as a managed service with two memory layers:
 
 ### Short-Term Memory (Conversation History)
 
@@ -14,12 +14,12 @@ Short-term memory stores the **ordered sequence of messages** in a conversation 
 
 ```
 Session 1: user 1
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+─────────────────────────────────────────────────────────
 Role        Content
 human       "What's the weather like in Hanoi today?"
-assistant   "Currently 28Â°C, partly cloudy in Hanoi."
+assistant   "Currently 28°C, partly cloudy in Hanoi."
 human       "What about tomorrow?"
-assistant   "Tomorrow: 31Â°C, sunny with light winds."
+assistant   "Tomorrow: 31°C, sunny with light winds."
 ```
 
 **Key characteristics:**
@@ -31,11 +31,11 @@ assistant   "Tomorrow: 31Â°C, sunny with light winds."
 
 ### Long-Term Memory (Semantic Facts)
 
-Long-term memory stores **persistent facts about entities** â€” users, products, preferences, past interactions â€” and retrieves them via **semantic similarity search** against the current query.
+Long-term memory stores **persistent facts about entities** — users, products, preferences, past interactions — and retrieves them via **semantic similarity search** against the current query.
 
 ```
 User ID - Namespace
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+───────────────────────────────────────────────────────────────────────
 fact_001   "User prefers delivery to home address"
 fact_002   "User has a premium subscription"
 fact_003   "User frequently orders electronics"
@@ -66,7 +66,7 @@ Facts are extracted from conversation events using a **Long-Term Memory Strategy
 | ------------------------------------ | ------------------------------------------------------------------ | ---------------------------------------- |
 | **Memory**                           | Top-level container (memory store) holding events and records      | Permanent until deleted                  |
 | **Event**                            | Single conversation turn (role + message)                          | Expires after `eventExpiryDuration` days |
-| **Actor**                            | Participant identifier â€” represents the end-user (not the agent) | Created on first event                   |
+| **Actor**                            | Participant identifier — represents the end-user (not the agent) | Created on first event                   |
 | **Session**                          | Conversation thread within an actor                                | Created on first event                   |
 | **Memory Record**                    | Distilled long-term fact extracted from events                     | Permanent until deleted                  |
 | **Long-Term Memory Strategy (LTMS)** | Extraction rules for generating memory records                     | Configured at memory creation            |
@@ -81,9 +81,9 @@ Available variables: `{memoryStrategyId}`, `{actorId}`, `{sessionId}`
 
 ***
 
-## Setup â€” Create Memory Store
+## Setup — Create Memory Store
 
-Before using short-term or long-term memory, you must create a **Memory store** â€” the top-level container that holds all events and memory records for your agent.
+Before using short-term or long-term memory, you must create a **Memory store** — the top-level container that holds all events and memory records for your agent.
 
 ### Portal
 
@@ -92,10 +92,10 @@ Before using short-term or long-term memory, you must create a **Memory store** 
 1. Open https://aiplatform.console.greennode.ai/memory
 2. Click **"Create Memory"**
 3. Fill in:
-   * **Name**: e.g., `customer-support-memory` (0â€“50 chars, `^[a-zA-Z0-9._-]*$`)
+   * **Name**: e.g., `customer-support-memory` (0–50 chars, `^[a-zA-Z0-9._-]*$`)
    * **Description**: optional
 4. Configure **Short-Term Memory**:
-   * **Event Expiry Duration**: number of days before conversation events are automatically deleted (1â€“365), e.g., `30` days
+   * **Event Expiry Duration**: number of days before conversation events are automatically deleted (1–365), e.g., `30` days
 5. Add one or more **Long-Term Memory Strategies** (optional, for long-term memory):
    * **Strategy Name**: e.g., `semantic-facts`
    * **Type**: `SEMANTIC`, `USER_PREFERENCE`, or `CUSTOM`
@@ -129,7 +129,7 @@ From the memory list page â†’ click a memory name
 
 ### RESTful API
 
-> **Prerequisite:** All API examples below use `$TOKEN` â€” an IAM bearer token. See [Configure Authentication](../getting-started.md#configure-authentication) for how to obtain it.
+> **Prerequisite:** All API examples below use `$TOKEN` — an IAM bearer token. See [Configure Authentication](../getting-started.md#configure-authentication) for how to obtain it.
 
 #### Create a Memory Store
 
@@ -276,7 +276,7 @@ memory, strategies = asyncio.run(asyncio.gather(
 
 print(f"Name: {memory.name}, Status: {memory.status}")
 for s in strategies:
-    print(f"  {s.get('name')} â€” Type: {s['type']}")
+    print(f"  {s.get('name')} — Type: {s['type']}")
 ```
 
 #### Delete a Memory Store
@@ -287,16 +287,16 @@ asyncio.run(client.delete_async(id=MEMORY_ID))
 
 ***
 
-## Step 2 â€” Use Memory in Your Agent
+## Step 2 — Use Memory in Your Agent
 
 Once your Memory Store is created, your agent reads and writes memory at runtime. Choose the approach that fits your stack.
 
 | Approach                     | When to use                                                                                             |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------- |
-| **A: Agentic Frameworks**    | Building with LangGraph or LangChain â€” use built-in checkpointer for short-term + tools for long-term |
+| **A: Agentic Frameworks**    | Building with LangGraph or LangChain — use built-in checkpointer for short-term + tools for long-term |
 | **B: Direct SDK / REST API** | Any other stack, or when you need full control over when and how memory is read and written             |
 
-> **Required headers:** Your agent receives `X-GreenNode-AgentBase-User-Id` (maps to `actor_id`) and `X-GreenNode-AgentBase-Session-Id` (maps to `thread_id` / `session_id`) on every request from the Runtime. Always validate them before performing memory operations â€” never fall back to defaults, as silent defaults cause data mixing between users.
+> **Required headers:** Your agent receives `X-GreenNode-AgentBase-User-Id` (maps to `actor_id`) and `X-GreenNode-AgentBase-Session-Id` (maps to `thread_id` / `session_id`) on every request from the Runtime. Always validate them before performing memory operations — never fall back to defaults, as silent defaults cause data mixing between users.
 
 ```python
 @app.entrypoint
@@ -317,7 +317,7 @@ def handler(payload: dict, context: RequestContext) -> dict:
 pip install "greennode-agent-bridge[langgraph]"
 ```
 
-#### Short-Term Memory â€” LangGraph Checkpointer
+#### Short-Term Memory — LangGraph Checkpointer
 
 Pass `AgentBaseMemoryEvents` as the checkpointer when compiling your graph. LangGraph automatically writes and loads conversation history using the `thread_id` (mapped from `session_id`).
 
@@ -339,9 +339,9 @@ result = graph.invoke(
 )
 ```
 
-#### Long-Term Memory â€” Tool-Based Approach
+#### Long-Term Memory — Tool-Based Approach
 
-Define `remember` and `recall` as agent tools backed by `MemoryClient`. The `actor_id` and `strategy_id` are resolved from runtime config â€” they must **not** be exposed as LLM-accessible parameters.
+Define `remember` and `recall` as agent tools backed by `MemoryClient`. The `actor_id` and `strategy_id` are resolved from runtime config — they must **not** be exposed as LLM-accessible parameters.
 
 ```python
 from greennode_agentbase.memory import MemoryClient
@@ -541,7 +541,7 @@ for record in results:
 
 ## Reference: Browse and Manage Memory Data
 
-Use these operations to inspect memory data â€” useful for debugging, auditing, or building admin tooling.
+Use these operations to inspect memory data — useful for debugging, auditing, or building admin tooling.
 
 ### List Actors
 
@@ -565,10 +565,10 @@ curl -s "https://agentbase.api.vngcloud.vn/memory/memories/$MEMORY_ID/memory-rec
 
 | Parameter                        | Value        | Notes                           |
 | -------------------------------- | ------------ | ------------------------------- |
-| `eventExpiryDuration` range      | 1â€“365 days | Set at memory store creation    |
+| `eventExpiryDuration` range      | 1–365 days | Set at memory store creation    |
 | Memory name max length           | 50 chars     | Pattern:`^[a-zA-Z0-9._-]*$`     |
-| Semantic search `limit` range    | 5â€“200      | Per search request              |
-| Semantic search `scoreThreshold` | 0â€“1 float  | Higher = more strict similarity |
+| Semantic search `limit` range    | 5–200      | Per search request              |
+| Semantic search `scoreThreshold` | 0–1 float  | Higher = more strict similarity |
 | Max `from` for event pagination  | 5000         | Offset-based                    |
 
 ***
@@ -579,7 +579,7 @@ curl -s "https://agentbase.api.vngcloud.vn/memory/memories/$MEMORY_ID/memory-rec
 | --------------------------- | ------------------------------------- | ------------------------------------------------------ |
 | 401 Unauthorized            | Expired IAM token                     | Re-obtain token                                        |
 | Memory not found            | Wrong memory ID                       | Verify with `GET /memories` list                       |
-| No records returned         | Namespace mismatch or async delay     | Records generated asynchronously â€” wait and retry    |
+| No records returned         | Namespace mismatch or async delay     | Records generated asynchronously — wait and retry    |
 | Events not appearing        | Events expired                        | Check `eventExpiryDuration`                            |
 | Auto-generation not working | Strategy misconfigured                | Verify `enableAutomaticMemoryRecordGeneration: true`   |
 | "Missing required headers"  | Request missing User-Id or Session-Id | Include both headers in every request that uses memory |

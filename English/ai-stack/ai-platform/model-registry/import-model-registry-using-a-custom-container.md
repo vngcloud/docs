@@ -7,7 +7,7 @@
 
 ## Step 2: Import Model Registry
 
-* **Region & Model registry name**: Select the region and provide a specific name for your model.n.
+* **Region & Model registry name**: Select the region and provide a specific name for your model.
 * Select “Custom container” in the Container section.
   * **Custom image URI**:
     * Provide the URL of your custom container image, stored in a container registry.\

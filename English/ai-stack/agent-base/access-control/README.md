@@ -11,7 +11,7 @@
 
 ### What Is an Identity?
 
-In AgentBase, an **Identity** is a named, platform-managed record that uniquely represents your agent within the organization. Think of it as the agent's "account" â€” the foundation on which everything else is built. An identity must exist before a Runtime can be created for that agent, and before any auth credentials can be retrieved.
+In AgentBase, an **Identity** is a named, platform-managed record that uniquely represents your agent within the organization. Think of it as the agent's "account" — the foundation on which everything else is built. An identity must exist before a Runtime can be created for that agent, and before any auth credentials can be retrieved.
 
 **An identity has:**
 
@@ -21,7 +21,7 @@ In AgentBase, an **Identity** is a named, platform-managed record that uniquely 
 
 **Identity naming rules:**
 
-* 3â€“50 characters
+* 3–50 characters
 * Alphanumeric, underscore `_`, and hyphen `-` only (`^[a-zA-Z0-9_-]+$`)
 * Must be unique within the organization
 
@@ -31,20 +31,20 @@ An Identity is persistent and environment-agnostic. A Runtime is tied to a speci
 
 ```
 Identity: my-order-agent (persistent)
-     â”‚
-     â”œâ”€â”€â”€ Runtime: my-order-agent-staging  (environment-specific)
-     â””â”€â”€â”€ Runtime: my-order-agent-prod     (environment-specific)
+     │
+     ├─── Runtime: my-order-agent-staging  (environment-specific)
+     └─── Runtime: my-order-agent-prod     (environment-specific)
 ```
 
 ### Outbound Authentication
 
-When your agent calls external services (OpenAI, Google, Slack, internal APIs), it needs credentials. AgentBase's Auth system lets you store these credentials centrally and have them automatically delivered to your agent at runtime â€” without hardcoding them.
+When your agent calls external services (OpenAI, Google, Slack, internal APIs), it needs credentials. AgentBase's Auth system lets you store these credentials centrally and have them automatically delivered to your agent at runtime — without hardcoding them.
 
 The auth system supports three credential types:
 
-* **Static API Key** â€” A fixed string (such as an API key) associated with an identity. Use when the external service issues a long-lived API key and you want centralized management.
-* **Delegated API Key** â€” A credential that is scoped and potentially short-lived, useful for multi-tenant scenarios where different agents should get different scoped keys.
-* **OAuth2 Provider** â€” For services that use OAuth2 (Google, Slack, and others). AgentBase stores the client credentials and refresh token, and handles token refresh automatically.
+* **Static API Key** — A fixed string (such as an API key) associated with an identity. Use when the external service issues a long-lived API key and you want centralized management.
+* **Delegated API Key** — A credential that is scoped and potentially short-lived, useful for multi-tenant scenarios where different agents should get different scoped keys.
+* **OAuth2 Provider** — For services that use OAuth2 (Google, Slack, and others). AgentBase stores the client credentials and refresh token, and handles token refresh automatically.
 
 | Provider Type         | Use Case                                           | Storage                   |
 | --------------------- | -------------------------------------------------- | ------------------------- |
@@ -65,7 +65,7 @@ The auth system supports three credential types:
 1. Open https://aiplatform.console.greennode.ai/access-control
 2. Click **"Create Identity"**
 3. Fill in:
-   * **Name** (required): e.g., `my-order-agent` â€” lowercase, alphanumeric and hyphens
+   * **Name** (required): e.g., `my-order-agent` — lowercase, alphanumeric and hyphens
    * **Description** (optional): e.g., `Handles order inquiries`
    * **Allowed Return URLs** (optional): OAuth2 callback URLs for this identity
 4. Click **Create**
@@ -98,7 +98,7 @@ The auth system supports three credential types:
 
 ### RESTful API
 
-> **Prerequisite:** All API examples below use `$TOKEN` â€” an IAM bearer token. See [Configure Authentication](../getting-started.md#configure-authentication) for how to obtain it.
+> **Prerequisite:** All API examples below use `$TOKEN` — an IAM bearer token. See [Configure Authentication](../getting-started.md#configure-authentication) for how to obtain it.
 
 #### Create an Identity
 
@@ -126,7 +126,7 @@ curl -s -X POST "https://agentbase.api.vngcloud.vn/identity/api/v1/agent-identit
 }
 ```
 
-**Error: 409 Conflict** â€” name already exists. Choose a different name or use the existing identity.
+**Error: 409 Conflict** — name already exists. Choose a different name or use the existing identity.
 
 #### List Identities
 
@@ -264,7 +264,7 @@ An **agent identity** must exist before creating auth providers. If you haven't 
 1. Open https://aiplatform.console.greennode.ai/access-control â†’ **Auth Providers**
 2. Click **"Create Provider"** â†’ select **"OAuth2"**
 3. Fill in: **Name**, **Client ID**, **Client Secret**, **Authorization URL**, **Token URL**
-4. Click **Create** â€” the response includes a **Callback URL** to register in your OAuth2 app
+4. Click **Create** — the response includes a **Callback URL** to register in your OAuth2 app
 
 ![1774593811794](../../../.gitbook/assets/1774593811794.png)
 
@@ -367,7 +367,7 @@ curl -s -X POST "https://agentbase.api.vngcloud.vn/identity/api/v1/outbound-auth
   }' | jq .
 ```
 
-**Response includes `callbackUrl` â€” register this in your OAuth2 app.**
+**Response includes `callbackUrl` — register this in your OAuth2 app.**
 
 **List:**
 
@@ -541,7 +541,7 @@ def handler(payload: dict, context: RequestContext, google_token: str) -> dict:
 | 401 Unauthorized                | Expired or invalid IAM token             | Re-obtain token with valid credentials                           |
 | 403 Forbidden                   | Service account lacks permissions        | Attach `AgentBaseFullAccess` at https://iam.console.greennode.ai |
 | 409 Conflict                    | Identity or provider name already exists | Choose a different name                                          |
-| Name validation error           | Name doesn't match `^[a-zA-Z0-9_-]+$`    | Use only alphanumeric, underscore, and hyphen. 3â€“50 chars      |
+| Name validation error           | Name doesn't match `^[a-zA-Z0-9_-]+$`    | Use only alphanumeric, underscore, and hyphen. 3–50 chars      |
 | 404 Not Found                   | Provider name does not exist             | Verify with a `list` operation                                   |
 | Agent can't retrieve credential | Identity name missing                    | Ensure `GREENNODE_AGENT_IDENTITY` env var is set in the runtime  |
 

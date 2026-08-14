@@ -1,6 +1,6 @@
 # Deploy & Manage OpenClaw
 
-OpenClaw 1-Click lets you deploy a personal AI Agent on GreenNode Agentbase in 40â€“60 seconds, automatically connected to GreenNode MaaS with no manual configuration required.
+OpenClaw 1-Click lets you deploy a personal AI Agent on GreenNode Agentbase in 40–60 seconds, automatically connected to GreenNode MaaS with no manual configuration required.
 
 For an overview of concepts, architecture, and deployment options, see [OpenClaw 1-Click](openclaw-1-click.md).
 
@@ -27,14 +27,14 @@ On the Agent Marketplace, find the **OpenClaw Featured Card** or click **"Deploy
 
 The configuration screen has 3 sections:
 
-**Section 1 â€” AI Source**
+**Section 1 — AI Source**
 
 Select the AI source for your OpenClaw instance:
 
 | Option                          | Description                                            | Requirement                |
 | ------------------------------- | ------------------------------------------------------ | -------------------------- |
 | **GreenNode MaaS** (default)    | Automatically connects to GreenNode Model-as-a-Service | GreenNode account required |
-| **BYOK â€” Bring Your Own Key** | Use an API key from an external provider               | Valid API key required     |
+| **BYOK — Bring Your Own Key** | Use an API key from an external provider               | Valid API key required     |
 
 When selecting **BYOK**, provide the following additional details:
 
@@ -46,14 +46,14 @@ When selecting **BYOK**, provide the following additional details:
 **BYOK note:** If the API key is invalid or expired, the system will show an inline error and block submission. Double-check your key before submitting.
 {% endhint %}
 
-**Section 2 â€” Instance Configuration**
+**Section 2 — Instance Configuration**
 
 | Field             | Description                                  | Notes                                                                  |
 | ----------------- | -------------------------------------------- | ---------------------------------------------------------------------- |
 | **OpenClaw Name** | Instance identifier                          | Auto-filled as `openclaw/{username}`, cannot be changed after creation |
 | **Flavor**        | Compute resource configuration (vCPU Ã— RAM) | Default: `2Ã—4`. Options include `4Ã—8`, `8Ã—16`...                    |
 
-**Section 3 â€” Channel Configuration (Optional)**
+**Section 3 — Channel Configuration (Optional)**
 
 Connect OpenClaw to a messaging platform so you can chat right after deployment.
 
@@ -65,7 +65,7 @@ Connect OpenClaw to a messaging platform so you can chat right after deployment.
 
 Once all fields are filled, click **"Start Setup"** to begin provisioning.
 
-#### Step 2: Provisioning â€” Setting Up Your Workspace
+#### Step 2: Provisioning — Setting Up Your Workspace
 
 The **"Setting Up Your Workspace"** screen displays a loading spinner while the system automatically prepares your environment. Once complete, you receive a **Gateway Token** and the **OpenClaw web admin URL** to log in and start using immediately.
 
@@ -101,7 +101,7 @@ Each instance in the list shows: instance name, status, AI model in use, version
 
 1. In My Agents, find the instance you want to access.
 2. Click **"Open"** on the instance.
-3. You are redirected straight to the OpenClaw web admin â€” no wizard or re-provisioning required.
+3. You are redirected straight to the OpenClaw web admin — no wizard or re-provisioning required.
 
 ### Stop an Instance
 
