@@ -70,7 +70,7 @@ The Model ID for the same model **can differ** between the two service types. Al
 Model ID used in configuration (PAYG example): **`z-ai/glm-5.2`**
 
 {% hint style="info" %}
-**GLM 5.2 here is just an example model.** GreenNode self-hosts **many models** — swap in whichever model you want to use. On PAYG, the exact **Model ID** and **Base URL** for each model are on that model's **detail page** in the [Models portal](https://aiplatform.console.greennode.ai/models). On Token Plan, check your purchased plan's **Models** tab.
+**GLM 5.2 here is just an example model.** GreenNode MaaS offers **many models** — swap in whichever model you want to use. On PAYG, the exact **Model ID** and **Base URL** for each model are on that model's **detail page** in the [Models portal](https://aiplatform.console.greennode.ai/models). On Token Plan, check your purchased plan's **Models** tab.
 {% endhint %}
 
 ---

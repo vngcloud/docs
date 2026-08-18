@@ -70,7 +70,7 @@ Model ID của hai loại dịch vụ **có thể khác nhau** cho cùng một m
 Model ID dùng khi cấu hình (ví dụ PAYG): **`z-ai/glm-5.2`**
 
 {% hint style="info" %}
-**GLM 5.2 ở đây chỉ là một model ví dụ.** GreenNode self-host **nhiều model** khác nhau — bạn thay bằng model mình muốn dùng. Với PAYG, **Model ID** và **Base URL** chính xác của từng model nằm trong **trang chi tiết của model đó** trên [portal Models](https://aiplatform.console.greennode.ai/models). Với Token Plan, xem tab **Models** của gói bạn đã mua.
+**GLM 5.2 ở đây chỉ là một model ví dụ.** GreenNode MaaS cung cấp **nhiều model** khác nhau — bạn thay bằng model mình muốn dùng. Với PAYG, **Model ID** và **Base URL** chính xác của từng model nằm trong **trang chi tiết của model đó** trên [portal Models](https://aiplatform.console.greennode.ai/models). Với Token Plan, xem tab **Models** của gói bạn đã mua.
 {% endhint %}
 
 ---

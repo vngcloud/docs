@@ -58,6 +58,6 @@ Càng nhiều token trong context (prompt + lịch sử hội thoại), model x�
 | Tôi muốn...                                    | Đi đến                                            |
 | ------------------------------------------------- | -------------------------------------------------- |
 | Xem danh sách model theo từng nhóm chức năng    | [Các Model được cung cấp](cac-model-duoc-cung-cap.md) |
-| Xem đơn giá theo model                          | [Bảng giá Model](bang-gia-model.md)                |
+| Xem cách tính phí khi dùng model                | [Cách tính phí](cach-tinh-phi.md)                  |
 | Thử nhanh model trước khi tích hợp              | [Playground](playground.md)                        |
 | Gọi model qua API                               | [MaaS API](maas-api.md)                            |

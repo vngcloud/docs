@@ -10,7 +10,7 @@ description: >-
 
 MaaS supports multiple model types, and pricing depends on the type of model used.
 
-See detailed per-model unit prices in [Model Pricing List](model-pricing-list.md).
+Per-model unit prices are shown directly on the [AI Platform Portal](https://aiplatform.console.greennode.ai/models).
 
 #### Model Classification for Billing
 
