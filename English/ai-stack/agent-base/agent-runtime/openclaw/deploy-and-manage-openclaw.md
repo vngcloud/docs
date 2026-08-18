@@ -12,7 +12,7 @@ For an overview of concepts, architecture, and deployment options, see [OpenClaw
 
 You can access the Agent Marketplace in two ways:
 
-* **Option 1**: Go to the GreenNode homepage at [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/). From the main dashboard, navigate to **AI Stack** and select **Agentbase** â†’ **Agent Marketplace**.
+* **Option 1**: Go to the GreenNode homepage at [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/). From the main dashboard, navigate to **AI Stack** and select **Agentbase** → **Agent Marketplace**.
 * **Option 2**: Go directly to [https://aiplatform.console.greennode.ai/agent-marketplace](https://aiplatform.console.greennode.ai/agent-marketplace).
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 154428.png" alt=""><figcaption></figcaption></figure>
@@ -51,7 +51,7 @@ When selecting **BYOK**, provide the following additional details:
 | Field             | Description                                  | Notes                                                                  |
 | ----------------- | -------------------------------------------- | ---------------------------------------------------------------------- |
 | **OpenClaw Name** | Instance identifier                          | Auto-filled as `openclaw/{username}`, cannot be changed after creation |
-| **Flavor**        | Compute resource configuration (vCPU Ã— RAM) | Default: `2Ã—4`. Options include `4Ã—8`, `8Ã—16`...                    |
+| **Flavor**        | Compute resource configuration (vCPU × RAM) | Default: `2×4`. Options include `4×8`, `8×16`... |
 
 **Section 3 — Channel Configuration (Optional)**
 
@@ -61,7 +61,11 @@ Connect OpenClaw to a messaging platform so you can chat right after deployment.
 | -------------------- | ------------------ | -------------------------------------------------------- |
 | **Channel Provider** | Messaging platform | Supported: Telegram, Zalo                                |
 | **Mode**             | Connection mode    | Pairing (default) or Allow List                          |
-| **Bot Token**        | Channel bot token  | Optional. Can be configured later at Settings â†’ Config |
+| **Bot Token**        | Channel bot token  | Not enforced by the form, but **fill it in here** — see the note below |
+
+{% hint style="warning" %}
+**Enter the Bot Token at this step.** The deploy form does not require a Bot Token, but if you leave it empty, adding the token after the instance is created means asking the agent inside OpenClaw to update the channel configuration itself — which is hard to do and easy to get wrong. Get your bot token first via [Get Bot Token and Pairing](get-bot-token-and-pairing.md), then paste it here so the channel connects as soon as the deploy finishes.
+{% endhint %}
 
 Once all fields are filled, click **"Start Setup"** to begin provisioning.
 
@@ -78,12 +82,16 @@ Once provisioning is complete, the Deploy Success screen shows your instance det
 | Field                    | Description                                                  |
 | ------------------------ | ------------------------------------------------------------ |
 | **Instance Name**        | The name of your created instance (e.g. `openclaw/username`) |
-| **Status**               | ðŸŸ¢ Active                                                  |
+| **Status**               | 🟢 Active |
 | **Gateway Token**        | Token used to log in to the OpenClaw web admin               |
 | **OpenClaw Gateway URL** | Link to your OpenClaw web admin                              |
 | **Created At**           | Timestamp                                                    |
 
 Click **"Open OpenClaw"** to access your OpenClaw Gateway Dashboard and start using it immediately.
+
+{% hint style="warning" %}
+**Only start pairing once the status is 🟢 Active.** If you send `/start` to your Telegram/Zalo bot while the instance is still `Creating`, the bot returns no pairing code — and that message is not reprocessed once the instance becomes Active. Wait for Active, then follow [Get Bot Token and Pairing](get-bot-token-and-pairing.md).
+{% endhint %}
 
 ***
 
@@ -115,7 +123,7 @@ After stopping, the instance status changes to **Stopped** and its URL is no lon
 
 1. In My Agents, filter by **Stopped** status to find the instance.
 2. Click **"Restart"** on the instance.
-3. The instance transitions through **Starting â†’ Active**.
+3. The instance transitions through **Starting → Active**.
 
 After restarting, the URL becomes accessible again.
 

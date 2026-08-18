@@ -74,6 +74,10 @@ OpenClaw hỗ trợ kết nối với các nền tảng nhắn tin để bạn c
 
 Channel có thể được cấu hình ngay trong bước deploy hoặc sau đó tại **Settings → Config** trong OpenClaw Gateway.
 
+{% hint style="warning" %}
+**Nên nhập Bot Token ngay khi deploy.** Trường Bot Token ở bước Cấu hình Channel không bắt buộc, nhưng nếu để trống thì sau khi tạo instance bạn phải nhờ agent tự cập nhật cấu hình channel — việc này khó thực hiện và dễ sai. Chuẩn bị token trước theo [Lấy Bot Token và Pairing](lay-bot-token-va-pairing.md).
+{% endhint %}
+
 ***
 
 ## FAQ
@@ -92,6 +96,8 @@ Dữ liệu của instance được giữ lại sau auto-shutdown. Bạn Restart
 
 ### 4. Tôi có thể tích hợp Telegram hoặc Zalo không?
 
-**Có.** Bạn có thể cấu hình ngay trong bước deploy hoặc sau đó tại **Settings → Config** trong OpenClaw Gateway. Hiện hỗ trợ Telegram và Zalo.
+**Có.** Hiện hỗ trợ Telegram và Zalo. Bạn có thể cấu hình ngay trong bước deploy hoặc sau đó tại **Settings → Config** trong OpenClaw Gateway — nhưng nên nhập **Bot Token** ngay khi deploy, vì thêm token sau khi instance đã tạo phải thực hiện qua agent và khó hơn nhiều.
+
+Sau khi deploy, chỉ bắt đầu pairing (`/start` phía Telegram/Zalo) khi instance đã ở trạng thái 🟢 **Active** — gửi lúc còn `Creating` sẽ không nhận được pairing code.
 
 Xem thêm giới hạn và lưu ý kỹ thuật tại [Giới hạn và Lưu ý](gioi-han-va-luu-y.md).

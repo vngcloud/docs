@@ -61,7 +61,11 @@ Cho phép kết nối OpenClaw với Telegram để chat ngay sau khi deploy.
 | -------------------- | ------------------------- | --------------------------------------------------------- |
 | **Channel Provider** | Nền tảng nhắn tin         | Hiện hỗ trợ: Telegram, Zalo                               |
 | **Mode**             | Chế độ kết nối            | Pairing (mặc định) hoặc Allow List                        |
-| **Bot Token**        | Bot Token kết nối channel | Không bắt buộc. Có thể cấu hình sau tại Settings → Config |
+| **Bot Token**        | Bot Token kết nối channel | Hệ thống không bắt buộc, nhưng **nên nhập ngay tại đây** — xem lưu ý bên dưới |
+
+{% hint style="warning" %}
+**Nên nhập Bot Token ngay ở bước này.** Form deploy không bắt buộc nhập Bot Token, nhưng nếu để trống thì sau khi instance được tạo bạn phải nhờ agent trong OpenClaw tự cập nhật cấu hình channel — việc này khó thực hiện và dễ sai. Hãy lấy bot token trước theo [Lấy Bot Token và Pairing](lay-bot-token-va-pairing.md), rồi dán vào đây để channel kết nối được ngay sau khi deploy.
+{% endhint %}
 
 Sau khi điền đầy đủ thông tin, nhấn **"Bắt đầu thiết lập"** để bắt đầu provisioning.
 
@@ -84,6 +88,10 @@ Sau khi provisioning hoàn tất, màn hình Deploy Success hiển thị thông 
 | **Thời gian tạo**        | Timestamp                                        |
 
 Nhấn **"Mở OpenClaw"** để truy cập OpenClaw Gateway Dashboard và bắt đầu sử dụng ngay.
+
+{% hint style="warning" %}
+**Chỉ bắt đầu pairing sau khi trạng thái là 🟢 Active.** Nếu bạn gửi `/start` cho bot Telegram/Zalo lúc instance còn đang khởi tạo (`Creating`), bot sẽ không trả về pairing code — và tin nhắn đó cũng không được xử lý lại khi instance Active. Đợi Active rồi làm theo [Lấy Bot Token và Pairing](lay-bot-token-va-pairing.md).
+{% endhint %}
 
 ***
 
