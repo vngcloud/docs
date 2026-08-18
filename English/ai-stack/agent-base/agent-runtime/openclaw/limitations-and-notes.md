@@ -27,4 +27,15 @@ If a BYOK API key expires or is revoked after deployment, the instance will no l
 
 ***
 
+## Channel connection notes
+
+| Situation | Why it matters | What to do |
+| --- | --- | --- |
+| **Bot Token left empty at deploy** | The deploy form doesn't require a Bot Token, but adding one after the instance is created means asking the agent to update the channel configuration itself — hard to do and easy to get wrong | Get the bot token first, then enter it in the **Channel Configuration** step while deploying |
+| **Sending `/start` while the instance is `Creating`** | The bot can only generate a pairing code once the instance is running; send too early and the bot returns **no code at all**, and that message is not reprocessed once the instance becomes Active | Wait for 🟢 **Active** in **My Agents**, then send `/start` |
+
+Details: [Get Bot Token and Pairing](get-bot-token-and-pairing.md).
+
+***
+
 If you encounter any difficulties, please contact the GreenNode team for support.
