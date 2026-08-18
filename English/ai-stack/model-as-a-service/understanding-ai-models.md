@@ -58,6 +58,6 @@ The more tokens in context (prompt + conversation history), the longer a model t
 | I want to...                                | Go to                                    |
 | ---------------------------------------------- | ------------------------------------------ |
 | See models grouped by function                | [Available Models](available-models.md)   |
-| See unit prices by model                       | [Model Pricing List](model-pricing-list.md) |
+| See how usage is charged                       | [Pricing](pricing.md)                     |
 | Quickly try a model before integrating         | [Playground](playground.md)               |
 | Call a model via API                           | [MaaS API](maas-api.md)                    |

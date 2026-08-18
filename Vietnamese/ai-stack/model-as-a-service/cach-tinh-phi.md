@@ -10,7 +10,7 @@ description: >-
 
 MaaS hỗ trợ nhiều loại model khác nhau, và **cách tính phí phụ thuộc vào loại model được sử dụng**.
 
-Xem đơn giá chi tiết theo từng model tại [Bảng giá Model](bang-gia-model.md).
+Đơn giá chi tiết của từng model được hiển thị trực tiếp trên [Portal AI Platform](https://aiplatform.console.greennode.ai/models).
 
 #### Phân loại model theo billing
 

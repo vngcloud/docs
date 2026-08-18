@@ -22,7 +22,7 @@ GreenNode is updating the MaaS model catalog into two groups — **GreenNode sel
 
 * Current models are discontinued & the new catalog goes live on **August 3, 2026**, with an automatic extension until **September 2, 2026** before old-model requests start returning errors.
 * Compare your current models against the [new catalog](model-as-a-service/available-models.md); only switch if your model is no longer listed.
-* See full pricing at [Model Pricing List](model-as-a-service/model-pricing-list.md).
+* See how charges are calculated in [Pricing](model-as-a-service/pricing.md); per-model unit prices are shown directly on the [AI Platform Portal](https://aiplatform.console.greennode.ai/models).
 
 {% hint style="info" %}
 Need support during the transition? Contact [support@greennode.ai](mailto:support@greennode.ai), hotline **19001549**, or the [Help Center](https://helpdesk.greennode.ai/portal/en/home).

@@ -22,7 +22,7 @@ GreenNode cập nhật danh mục model trên MaaS thành hai nhóm — **model 
 
 * Model hiện tại ngừng cung cấp & danh mục mới lên portal từ **03/08/2026**, gia hạn tự động đến **02/09/2026** trước khi request đến model cũ bắt đầu trả lỗi.
 * Đối chiếu model đang dùng với [danh mục mới](model-as-a-service/cac-model-duoc-cung-cap.md); chỉ cần đổi model nếu model hiện tại không còn trong danh mục.
-* Xem chi tiết giá tại [Bảng giá Model](model-as-a-service/bang-gia-model.md).
+* Xem chi tiết cách tính phí tại [Cách tính phí](model-as-a-service/cach-tinh-phi.md); đơn giá của từng model được hiển thị trực tiếp trên [Portal AI Platform](https://aiplatform.console.greennode.ai/models).
 
 {% hint style="info" %}
 Cần hỗ trợ trong quá trình chuyển đổi? Liên hệ [support@greennode.ai](mailto:support@greennode.ai), hotline **19001549**, hoặc [Trung tâm hỗ trợ](https://helpdesk.greennode.ai/portal/vi/home).
