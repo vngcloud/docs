@@ -6,6 +6,23 @@ The MaaS API provides full-accuracy access to model families such as Anthropic, 
 The model catalog below has been updated under the transition starting **August 3, 2026**, covering models self-hosted by GreenNode and third-party models under official contracts. See the timeline details in [Release Notes](../release-notes.md) and the billing rules in [Pricing](pricing.md).
 {% endhint %}
 
+### Rate limit
+
+Applies by default to **every account** using the MaaS API:
+
+| Limit | Value |
+| --- | --- |
+| Per minute | **10 RPM** — 10 requests/minute |
+| Per day | **14,400 requests/day** |
+
+The limit is counted **per account** and shared across all models — it is not a separate per-model quota. In the tables below, a `–` in the **Rate Limit** column means that model has no limit of its own and falls under this default.
+
+{% hint style="info" %}
+Need more than 10 RPM? [Contact GreenNode](https://helpdesk.greennode.ai/portal/en/newticket) to be considered for the **whitelist**. Whitelisting is reviewed case by case.
+{% endhint %}
+
+***
+
 ### Model list
 
 The **Provider Type** column tells you where your request is processed:
@@ -65,6 +82,3 @@ Modalities describe the model's general capability per its provider's documentat
 | ------------------------ | ------------- | ------------------------------- | ---------- | --------------- |
 | Cohere Rerank v4.0 pro  | Third-party   | Text → Ranked List             | –          | August 20, 2026 |
 
-Note:
-
-* You can create [ticket](https://helpdesk.greennode.ai/portal/vi/newticket) for request new model

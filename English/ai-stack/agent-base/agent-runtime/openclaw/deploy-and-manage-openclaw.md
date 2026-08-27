@@ -73,6 +73,10 @@ Once all fields are filled, click **"Start Setup"** to begin provisioning.
 
 The **"Setting Up Your Workspace"** screen displays a loading spinner while the system automatically prepares your environment. Once complete, you receive a **Gateway Token** and the **OpenClaw web admin URL** to log in and start using immediately.
 
+{% hint style="warning" %}
+**Save the Gateway Token the moment it appears.** This token is **shown only once** on the success screen — afterwards it is hidden and cannot be retrieved. Copy it somewhere safe (a password manager) before you leave the page. If you have already lost it, contact the GreenNode team for help.
+{% endhint %}
+
 #### Step 3: Deploy Success
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 140457.png" alt=""><figcaption></figcaption></figure>
@@ -83,7 +87,7 @@ Once provisioning is complete, the Deploy Success screen shows your instance det
 | ------------------------ | ------------------------------------------------------------ |
 | **Instance Name**        | The name of your created instance (e.g. `openclaw/username`) |
 | **Status**               | 🟢 Active |
-| **Gateway Token**        | Token used to log in to the OpenClaw web admin               |
+| **Gateway Token**        | Token used to log in to the OpenClaw web admin — **shown only once**, copy and save it immediately |
 | **OpenClaw Gateway URL** | Link to your OpenClaw web admin                              |
 | **Created At**           | Timestamp                                                    |
 

@@ -73,6 +73,10 @@ Sau khi điền đầy đủ thông tin, nhấn **"Bắt đầu thiết lập"**
 
 Màn hình **"Setting Up Your Workspace"** hiển thị icon xoay trong khi hệ thống tự động chuẩn bị môi trường. Sau khi hoàn tất, bạn nhận được **Gateway Token** và **URL trang web admin OpenClaw** để đăng nhập và sử dụng ngay.
 
+{% hint style="warning" %}
+**Lưu Gateway Token ngay khi nó hiện ra.** Token này **chỉ hiển thị một lần** ở màn hình tạo thành công — sau đó sẽ bị ẩn và không xem lại được. Copy và lưu vào nơi an toàn (password manager) trước khi rời khỏi trang. Nếu bạn đã mất token, hãy liên hệ đội ngũ GreenNode để được hỗ trợ.
+{% endhint %}
+
 #### Bước 3: Deploy Success
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 140457.png" alt=""><figcaption></figcaption></figure>
@@ -83,7 +87,7 @@ Sau khi provisioning hoàn tất, màn hình Deploy Success hiển thị thông 
 | ------------------------ | ------------------------------------------------ |
 | **Instance Name**        | Tên instance đã tạo (ví dụ: `openclaw/username`) |
 | **Trạng thái**           | 🟢 Active                                        |
-| **Gateway Token**        | Token đăng nhập vào trang web admin OpenClaw     |
+| **Gateway Token**        | Token đăng nhập vào trang web admin OpenClaw — **chỉ hiển thị một lần**, hãy copy và lưu lại ngay |
 | **OpenClaw Gateway URL** | Link truy cập trang web admin OpenClaw           |
 | **Thời gian tạo**        | Timestamp                                        |
 

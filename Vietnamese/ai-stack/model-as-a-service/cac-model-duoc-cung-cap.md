@@ -6,6 +6,23 @@ MaaS API cung cấp quyền truy cập với độ chính xác đầy đủ vào
 Danh mục model bên dưới đã được cập nhật theo lộ trình chuyển đổi bắt đầu **03/08/2026**, gồm model do GreenNode self-host và model third-party đã ký hợp đồng chính thức. Xem chi tiết mốc thời gian tại [Release Notes](../release-notes.md) và nguyên tắc tính phí tại [Cách tính phí](cach-tinh-phi.md).
 {% endhint %}
 
+### Rate limit
+
+Mặc định áp dụng cho **mọi tài khoản** dùng MaaS API:
+
+| Giới hạn | Giá trị |
+| --- | --- |
+| Theo phút | **10 RPM** — 10 request/phút |
+| Theo ngày | **14.400 request/ngày** |
+
+Giới hạn được tính trên **tài khoản** và dùng chung cho mọi model — không phải hạn mức riêng của từng model. Trong các bảng bên dưới, cột **Rate Limit** hiển thị `–` nghĩa là model đó không có giới hạn riêng và áp dụng mức mặc định này.
+
+{% hint style="info" %}
+Cần mức cao hơn 10 RPM? Hãy [liên hệ GreenNode](https://helpdesk.greennode.ai/portal/vi/newticket) để được xem xét đưa vào **whitelist**. Whitelist được xét theo từng trường hợp cụ thể.
+{% endhint %}
+
+***
+
 ### Danh sách mô hình
 
 Cột **Loại Provider** cho biết request của bạn được xử lý ở đâu:
@@ -64,8 +81,4 @@ Modalities mô tả khả năng chung của model theo tài liệu của nhà cu
 | Model Name              | Loại Provider | Modalities (Input → Output) | Rate Limit | Sẵn có từ  |
 | ------------------------ | ------------- | ------------------------------- | ---------- | ---------- |
 | Cohere Rerank v4.0 pro  | Third-party   | Text → Ranked List             | –          | 20/08/2026 |
-
-Lưu ý:
-
-* Bạn có thể tạo [ticket](https://helpdesk.greennode.ai/portal/vi/newticket) để yêu cầu model mong muốn
 
