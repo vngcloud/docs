@@ -2,8 +2,7 @@
 description: >-
   Rate Limit is a mechanism used to control the number of requests or tokens
   within a specified period of time. It helps protect the system from abuse,
-  ensures fairness when multiple users share the same gateway, and optimizes
-  cost and stability for the model
+  ensures fairness when multiple users share the sam
 ---
 
 # Rate Limit

@@ -50,6 +50,8 @@ opnnqpqr.waf.greennode.vn
 
 To find the routing domain issued to your account, go to **GreenNode Portal → vWAF → Applications**. It is shown in the notice box above the application list:
 
+<figure><img src="../.gitbook/assets/GreenNode_WAF_Applications_blurred.png" alt=""><figcaption></figcaption></figure>
+
 > To ensure all traffic is audited and protected by GreenNode WAF:
 >
 > * **Recommended:** Point your domain to the CNAME `<routing-code>.waf.greennode.vn`.
