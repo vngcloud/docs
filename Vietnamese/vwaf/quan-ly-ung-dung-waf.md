@@ -70,14 +70,9 @@ Tên này chỉ dùng để nhận diện trong dashboard của WAF và không �
 
 #### Domain
 
-Nhập một hoặc nhiều domain cần được WAF bảo vệ.
+Nhập tên miền gốc cần được WAF bảo vệ, không bao gồm http/https hoặc ký tự đại diện (\*) — ví dụ: `example.com`.
 
-* Có thể thêm nhiều domain bằng cách nhấn **Enter** hoặc phân tách bằng dấu cách
-* Hỗ trợ domain dạng wildcard, ví dụ: `*.example.com`
-
-**Thông báo hệ thống:**
-
-Tất cả domain phải trỏ DNS A về `103.7.174.2` thì WAF mới bắt đầu có hiệu lực bảo vệ.
+* Chọn ô bên dưới nếu bạn muốn bảo vệ thêm tên miền con `www` (ví dụ: `www.example.com`).
 
 ***
 
