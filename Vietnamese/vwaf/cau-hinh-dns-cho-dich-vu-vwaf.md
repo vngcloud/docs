@@ -50,6 +50,8 @@ opnnqpqr.waf.greennode.vn
 
 Để xem domain định tuyến được cấp cho tài khoản của mình, Quý Khách hàng truy cập **Portal GreenNode → vWAF → Ứng dụng**. Domain được hiển thị ngay tại khung thông báo phía trên danh sách ứng dụng:
 
+<figure><img src="../.gitbook/assets/GreenNode_WAF_Applications_blurred.png" alt=""><figcaption></figcaption></figure>
+
 > Để đảm bảo toàn bộ lưu lượng được kiểm soát và bảo vệ bởi GreenNode WAF:
 >
 > * **Khuyến nghị:** Trỏ domain của Quý Khách hàng về CNAME `<mã-định-tuyến>.waf.greennode.vn`.
