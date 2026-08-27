@@ -158,6 +158,37 @@ curl -s -X PATCH "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNT
 
 ***
 
+**H: Agent của tôi cần nơi lưu trữ data và file. AgentBase có Storage không?**
+
+AgentBase **không có** dịch vụ storage riêng. Filesystem của container runtime là **ephemeral** — mọi file ghi trong container sẽ mất khi replica restart, scale, hoặc khi bạn deploy phiên bản mới. Đừng dùng nó làm nơi lưu trữ lâu dài.
+
+Để lưu trữ bền vững, dùng **S3 storage thông qua vStorage**. Agent của bạn upload file lên S3 và retrieve lại khi cần, bằng bất kỳ S3-compatible client nào (ví dụ `boto3`):
+
+```python
+import boto3
+
+s3 = boto3.client(
+    "s3",
+    endpoint_url="<vStorage S3 endpoint>",
+    aws_access_key_id="<access-key>",
+    aws_secret_access_key="<secret-key>",
+)
+
+# Upload file agent vừa tạo
+s3.upload_file("/tmp/report.pdf", "my-bucket", "reports/report.pdf")
+
+# Retrieve lại khi cần
+s3.download_file("my-bucket", "reports/report.pdf", "/tmp/report.pdf")
+```
+
+Khởi tạo bucket và lấy access key tại [vStorage Console](https://vstorage.console.greennode.ai/overview).
+
+{% hint style="info" %}
+Lưu access key của vStorage bằng cấu hình xác thực của [Access Control](access-control/) thay vì hardcode trong image — agent truy xuất credential lúc runtime theo agent identity.
+{% endhint %}
+
+***
+
 ## Memory
 
 **H: Dữ liệu hội thoại của tôi có riêng tư cho tổ chức không?**

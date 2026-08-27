@@ -158,6 +158,37 @@ curl -s -X PATCH "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNT
 
 ***
 
+**Q: My agent needs somewhere to store data and files. Does AgentBase have Storage?**
+
+AgentBase has **no** storage service of its own. The runtime container filesystem is **ephemeral** — anything written inside the container is lost when a replica restarts, scales, or when you deploy a new version. Don't treat it as durable storage.
+
+For durable storage, use **S3 storage via vStorage**. Your agent uploads files to S3 and retrieves them when needed, using any S3-compatible client (e.g. `boto3`):
+
+```python
+import boto3
+
+s3 = boto3.client(
+    "s3",
+    endpoint_url="<vStorage S3 endpoint>",
+    aws_access_key_id="<access-key>",
+    aws_secret_access_key="<secret-key>",
+)
+
+# Upload a file the agent produced
+s3.upload_file("/tmp/report.pdf", "my-bucket", "reports/report.pdf")
+
+# Retrieve it later
+s3.download_file("my-bucket", "reports/report.pdf", "/tmp/report.pdf")
+```
+
+Create your bucket and access keys in the [vStorage Console](https://vstorage.console.greennode.ai/overview).
+
+{% hint style="info" %}
+Store the vStorage access key as an [Access Control](access-control/) auth configuration rather than hardcoding it in your image — the agent retrieves the credential at runtime via its agent identity.
+{% endhint %}
+
+***
+
 ## Memory
 
 **Q: Is my conversation data private to my organization?**
