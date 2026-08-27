@@ -32,9 +32,14 @@ Mỗi ứng dụng trong danh sách hiển thị các thông tin sau:
 
 #### Yêu cầu DNS
 
-Để toàn bộ lưu lượng được ghi nhận và bảo vệ bởi **WAF của VNG Cloud**, tất cả domain trong ứng dụng **phải được cấu hình bản ghi DNS A trỏ về địa chỉ IP công khai `103.7.174.2`**.
+WAF chỉ có hiệu lực sau khi hoàn tất cấu hình DNS. Tất cả domain trong ứng dụng phải được trỏ DNS về hệ thống vWAF theo **một trong hai phương thức** dưới đây:
 
-WAF chỉ bắt đầu có hiệu lực sau khi cấu hình DNS này được hoàn tất.
+* **CNAME** _(khuyến nghị)_ — trỏ CNAME Record của domain dịch vụ về domain DNS riêng do GreenNode cấp (dạng `<mã-định-tuyến>.waf.greennode.vn`). Với phương thức này, GreenNode có thể chủ động điều chỉnh định tuyến lưu lượng sang zone vWAF phù hợp mà không yêu cầu Quý Khách hàng thay đổi cấu hình DNS.
+* **A Record** — trỏ A Record của domain dịch vụ trực tiếp về địa chỉ IP public `103.7.174.2`. Áp dụng cho cả Root Domain (Apex) và các DNS Provider không hỗ trợ CNAME tại Root Domain.
+
+Domain định tuyến CNAME của tài khoản được hiển thị tại khung thông báo phía trên danh sách ứng dụng trên màn hình **Ứng dụng**.
+
+Xem hướng dẫn chi tiết tại Cấu hình DNS cho dịch vụ vWAF.
 
 ***
 
