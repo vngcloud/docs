@@ -597,6 +597,7 @@
   * [WAF là gì?](vwaf/waf-la-gi.md)
   * [Thống kê & Phân tích lưu lượng](vwaf/thong-ke-and-phan-tich-luu-luong.md)
   * [Quản lý ứng dụng WAF](vwaf/quan-ly-ung-dung-waf.md)
+  * [Cấu hình DNS cho dịch vụ vWAF](vwaf/cau-hinh-dns-cho-dich-vu-vwaf.md)
   * [Giám sát tấn công](vwaf/giam-sat-tan-cong.md)
   * [Quy tắc Cho phép & Chặn](vwaf/quy-tac-cho-phep-and-chan.md)
   * [Chống HTTP Flood](vwaf/chong-http-flood.md)
