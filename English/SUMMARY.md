@@ -1006,6 +1006,7 @@
   * [What Is a WAF?](vwaf/what-is-a-waf.md)
   * [Traffic Statistics & Analysis](vwaf/traffic-statistics-and-analysis.md)
   * [Application Management](vwaf/application-management.md)
+  * [DNS Configuration for vWAF](vwaf/dns-configuration-for-vwaf.md)
   * [Attack Monitoring](vwaf/attack-monitoring.md)
   * [Allow & Deny Rules](vwaf/allow-and-deny-rules.md)
   * [HTTP Flood Protection](vwaf/http-flood-protection.md)
