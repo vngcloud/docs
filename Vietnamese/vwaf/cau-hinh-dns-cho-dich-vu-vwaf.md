@@ -67,8 +67,8 @@ opnnqpqr.waf.greennode.vn
 
 | Type  | Name / Host | Value / Target              | TTL |
 | ----- | ----------- | --------------------------- | --- |
-| CNAME | @           | `opnclhqr.waf.greennode.vn` | 300 |
-| CNAME | `api`       | `opnclhqr.waf.greennode.vn` | 300 |
+| CNAME | @           | `opnnqpqr.waf.greennode.vn` | 300 |
+| CNAME | `api`       | `opnnqpqr.waf.greennode.vn` | 300 |
 
 Kết quả: `example.com` và `api.example.com` cùng đi qua vWAF.
 
