@@ -716,6 +716,7 @@
   * [Working VKS with Terraform](vks/su-dung-vks-voi-terraform.md)
   * [Monitoring](vks/monitoring/README.md)
     * [Metrics](vks/monitoring/metrics.md)
+    * [Configure Cluster Logging](vks/monitoring/configure-cluster-logging.md)
   * [Charging Fee](vks/cach-tinh-gia.md)
   * [Reference](vks/reference/README.md)
     * [Kubernetes versions](vks/reference/phien-ban-ho-tro-kubernetes.md)
