@@ -799,6 +799,7 @@
   * [Sử dụng VKS với Terraform](vks/su-dung-vks-voi-terraform.md)
   * [Giám sát](vks/monitoring/README.md)
     * [Metrics](vks/monitoring/metrics.md)
+    * [Cấu hình Logging cho Cluster](vks/monitoring/cau-hinh-logging-cho-cluster.md)
   * [Cách tính giá](vks/cach-tinh-gia.md)
   * [Tài nguyên VKS](vks/reference/README.md)
     * [Danh sách Flavor đang hỗ trợ](vks/reference/node-flavors/README.md)
