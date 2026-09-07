@@ -31,6 +31,10 @@ Các trường hợp sử dụng phổ biến:
 
 ## 3. Điều kiện cần (Prerequisites)
 
+{% hint style="info" %}
+Tính năng hiện chỉ khả dụng tại **region HAN**. Nếu Cluster của bạn ở region khác, bước **Logging configuration** sẽ không hiển thị.
+{% endhint %}
+
 - Đã có tài khoản GreenNode và đã kích hoạt dịch vụ **VKS**.
 - Đã tạo sink trên vDB, tùy loại bạn chọn:
   - **OpenSearch**: một [OpenSearch Cluster](../../vdb/opensearch-cluster-database-ods/) đang **ACTIVE**, kèm **Username** và **Password** có đủ quyền sau trên các index có tên bắt đầu bằng `{user_id}_{cluster_id}_`:

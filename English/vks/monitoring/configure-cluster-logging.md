@@ -31,6 +31,10 @@ Common use cases:
 
 ## 3. Prerequisites
 
+{% hint style="info" %}
+This feature is currently available in **region HAN** only. If your Cluster is in another region, the **Logging configuration** step does not appear.
+{% endhint %}
+
 - A GreenNode account with the **VKS** service activated.
 - A sink already created on vDB, depending on the type you choose:
   - **OpenSearch**: an [OpenSearch Cluster](../../vdb/opensearch-cluster-database-ods/) in **ACTIVE** state, plus a **Username** and **Password** with the following permissions on indices whose name starts with `{user_id}_{cluster_id}_`:
