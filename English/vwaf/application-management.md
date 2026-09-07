@@ -28,9 +28,12 @@ Each application in the list displays the following information:
 
 #### DNS Requirement
 
-For all traffic to be audited and protected by **VNG Cloud’s WAF**, all domains in applications **must have their DNS A record pointed to the service’s public IP address `103.7.174.2`**.
+The WAF only takes effect once DNS configuration is complete. Every domain in the application must be pointed to the vWAF system using **one of the two methods** below:
 
-WAF protection will not become effective until this DNS configuration is completed.
+* **CNAME** _(recommended)_ — point your service domain's CNAME record to the dedicated DNS domain issued by GreenNode (in the form `<routing-code>.waf.greennode.vn`). With this method, GreenNode can steer traffic to the appropriate vWAF zone without requiring any DNS change on your side.
+* **A Record** — point your service domain's A record directly to the public IP address `103.7.174.2`. Works for Root Domains (Apex) and for DNS providers that do not support CNAME at the Root Domain.
+
+Your account's CNAME routing domain is shown in the notice box above the application list on the **Applications** screen.
 
 ***
 
@@ -61,14 +64,9 @@ This name is used only for identification within the WAF dashboard and does not 
 
 #### Domain
 
-Enter one or more domains to be protected by the WAF.
+Enter the root domain to be protected by the WAF, without http/https or a wildcard (\*) — e.g. `example.com`.
 
-* Multiple domains can be added by pressing **Enter** or separating them with spaces
-* Wildcard domains such as `*.example.com` are supported
-
-**System notice:**
-
-All domains must have their DNS A record pointed to `103.7.174.2` before WAF protection becomes effective.
+* Check the box below if you also want to protect the `www` subdomain (e.g. `www.example.com`).
 
 ***
 

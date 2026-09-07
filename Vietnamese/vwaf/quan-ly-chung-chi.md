@@ -9,10 +9,15 @@ Chứng chỉ giúp đảm bảo kết nối HTTPS an toàn, bảo vệ tính to
 Module này cung cấp một nơi tập trung để:
 
 * Theo dõi trạng thái chứng chỉ
-* Cấp chứng chỉ miễn phí
 * Upload chứng chỉ tùy chỉnh
 * Gán chứng chỉ cho ứng dụng
 * Gia hạn hoặc thay thế chứng chỉ sắp hết hạn
+
+> **⚠️ Thông báo thay đổi:** GreenNode **đã ngừng cấp chứng chỉ SSL/TLS miễn phí (Let's Encrypt)**. Tùy chọn _Lấy chứng chỉ miễn phí_ không còn khả dụng khi thêm chứng chỉ mới.
+>
+> * Với các ứng dụng mới, Quý Khách hàng vui lòng **upload chứng chỉ SSL/TLS của riêng mình**.
+> * Các chứng chỉ miễn phí **đã được cấp trước đó vẫn tiếp tục hoạt động**, vẫn hiển thị trong danh sách với `Type = FREE` và vẫn có thể gán cho ứng dụng.
+> * GreenNode khuyến nghị Quý Khách hàng **chủ động chuẩn bị chứng chỉ thay thế trước ngày hết hạn** của các chứng chỉ miễn phí đang dùng, để tránh gián đoạn dịch vụ HTTPS. Theo dõi cột **Expire On** trong danh sách chứng chỉ.
 
 ***
 
@@ -36,16 +41,12 @@ Trang này giúp quản trị viên nhanh chóng nắm được tình trạng SS
 
 ### Loại chứng chỉ
 
-#### Chứng chỉ miễn phí (Tự động cấp)
+#### Chứng chỉ miễn phí _(đã ngừng cấp mới)_
 
-Chứng chỉ miễn phí được WAF tự động cấp thông qua **Let’s Encrypt**, sử dụng phương thức xác thực **HTTP-01**.
-
-Đặc điểm chính:
-
-* Miễn phí
-* Tự động gia hạn **trước 30 ngày khi hết hạn**
-* Yêu cầu domain trỏ DNS A về IP public của WAF
-* Không cần thao tác thủ công với key hoặc file chứng chỉ
+> Trước đây WAF hỗ trợ tự động cấp chứng chỉ miễn phí qua Let's Encrypt. **Tính năng này đã ngừng cung cấp** — Quý Khách hàng không thể yêu cầu cấp chứng chỉ miễn phí mới.
+>
+> * Các chứng chỉ đã cấp trước đó vẫn hiển thị trong danh sách với `Type = FREE` và vẫn sử dụng được cho ứng dụng.
+> * Khi chứng chỉ loại này đến hạn, Quý Khách hàng cần **upload chứng chỉ thay thế** (xem mục _Chứng chỉ upload_).
 
 ***
 
@@ -75,7 +76,7 @@ Mã định danh duy nhất của chứng chỉ.
 
 #### Type
 
-Xác định chứng chỉ là **FREE** hay **UPLOADED**.
+Xác định chứng chỉ là `UPLOADED` (chứng chỉ do Quý Khách hàng upload) hay `FREE` (chứng chỉ miễn phí được cấp trước khi tính năng này ngừng cung cấp). Chứng chỉ mới luôn có loại `UPLOADED`.
 
 #### Domain
 
@@ -107,12 +108,9 @@ Các thao tác quản lý bao gồm:
 
 ### Thêm chứng chỉ
 
-Trang **Add Certificate** cho phép thêm chứng chỉ SSL/TLS mới cho WAF.
+Trang Add Certificate cho phép thêm chứng chỉ SSL/TLS mới cho WAF bằng cách **upload chứng chỉ của riêng Quý Khách hàng**.
 
-Bạn có thể:
-
-* Upload chứng chỉ của riêng mình
-* Hoặc yêu cầu WAF cấp chứng chỉ miễn phí tự động
+Tùy chọn yêu cầu WAF cấp chứng chỉ miễn phí tự động đã ngừng cung cấp.
 
 ***
 
@@ -132,27 +130,6 @@ Cần cung cấp:
 
 ***
 
-#### Lấy chứng chỉ miễn phí
-
-Chọn tùy chọn này để WAF tự động cấp chứng chỉ miễn phí thông qua **Let’s Encrypt**.
-
-***
-
-### ⚠️ Lưu ý quan trọng – Trước khi lấy chứng chỉ miễn phí
-
-**Trước khi yêu cầu cấp chứng chỉ miễn phí cho một domain, bạn BẮT BUỘC phải thực hiện các bước sau:**
-
-* **Tạo application trước trên WAF với chính domain đó**.
-* Cấu hình application sử dụng **cổng 80 (HTTP)**.
-* **KHÔNG gán bất kỳ chứng chỉ SSL nào** cho application tại thời điểm này.
-* Đảm bảo domain đã được cấu hình **DNS A record trỏ về IP public của WAF: `103.7.174.2`**.
-* Chờ DNS được cập nhật hoàn toàn.
-
-Các bước trên là **bắt buộc** để hệ thống thực hiện xác thực **Let’s Encrypt HTTP-01**.\
-Nếu application chưa được tạo với **port 80 và không có cert**, việc cấp chứng chỉ miễn phí sẽ **không thành công**.
-
-***
-
 ### Các trường trong form Add Certificate
 
 #### Domain (bắt buộc)
@@ -160,28 +137,4 @@ Nếu application chưa được tạo với **port 80 và không có cert**, vi
 Nhập một hoặc nhiều domain để cấp hoặc upload chứng chỉ.
 
 * Có thể phân tách domain bằng dấu cách hoặc xuống dòng
-* Hỗ trợ wildcard (`*`) cho chứng chỉ upload
-
-***
-
-#### Email Address
-
-_(Bắt buộc với chứng chỉ miễn phí)_
-
-Được sử dụng để:
-
-* Nhận thông báo từ Let’s Encrypt
-* Xác thực quyền sở hữu domain
-
-***
-
-### Yêu cầu xác thực (Chứng chỉ miễn phí)
-
-Các yêu cầu bắt buộc trong quá trình cấp chứng chỉ:
-
-* Tất cả domain phải trỏ DNS A về IP public của WAF: `103.7.174.2`
-* Domain phải truy cập được từ Internet
-* WAF thực hiện xác thực **HTTP-01**
-* Chứng chỉ được gia hạn tự động trước khi hết hạn
-
-Nếu DNS hoặc kết nối không chính xác, chứng chỉ sẽ không thể được cấp.
+* Hỗ trợ wildcard (`*`)
