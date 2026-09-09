@@ -4,15 +4,15 @@
 
 **GreenNode CLI** (lệnh `grn`) là công cụ dòng lệnh để quản lý tài nguyên GreenNode trực tiếp từ terminal. Với VKS, bạn có thể tạo và quản lý toàn bộ vòng đời **Cluster** và **Node Group** thay vì thao tác thủ công trên giao diện.
 
-Tài liệu tham khảo lệnh đầy đủ: [https://vngcloud.github.io/greennode-cli/](https://vngcloud.github.io/greennode-cli/).
+Tài liệu tham khảo lệnh đầy đủ: [http://github.com/GreenNodeHub/greennode-cli](http://github.com/GreenNodeHub/greennode-cli).
 
-CLI là một trong các cách làm việc với VKS, bên cạnh [Console](README.md), [API](su-dung-api-de-khoi-tao-cluster-va-node-group.md) và [Terraform](su-dung-terraform-de-khoi-tao-cluster-va-node-group.md). Chọn CLI khi cần thao tác nhanh, lặp lại hoặc viết script tự động hoá nhẹ.
+CLI là một trong các cách làm việc với VKS, bên cạnh [Console](./), [API](su-dung-api-de-khoi-tao-cluster-va-node-group.md) và [Terraform](su-dung-terraform-de-khoi-tao-cluster-va-node-group.md). Chọn CLI khi cần thao tác nhanh, lặp lại hoặc viết script tự động hoá nhẹ.
 
----
+***
 
 ### 1. Cài đặt
 
-Tài liệu gốc: [Installation](https://vngcloud.github.io/greennode-cli/installation/).
+Tài liệu gốc: [Installation](https://greennodehub.github.io/greennode-cli/installation/).
 
 Tải binary mới nhất cho hệ điều hành của bạn từ [GitHub Releases](https://github.com/vngcloud/greennode-cli/releases).
 
@@ -20,9 +20,9 @@ Tải binary mới nhất cho hệ điều hành của bạn từ [GitHub Releas
 
 ```bash
 # Apple Silicon (M1/M2/M3)
-curl -L -o grn https://github.com/vngcloud/greennode-cli/releases/latest/download/grn-darwin-arm64
+curl -L -o grn https://github.com/GreenNodeHub/greennode-cli/releases/latest/download/grn-darwin-arm64
 # Intel
-curl -L -o grn https://github.com/vngcloud/greennode-cli/releases/latest/download/grn-darwin-amd64
+curl -L -o grn https://github.com/GreenNodeHub/greennode-cli/releases/latest/download/grn-darwin-amd64
 chmod +x grn && sudo mv grn /usr/local/bin/
 ```
 
@@ -30,9 +30,9 @@ chmod +x grn && sudo mv grn /usr/local/bin/
 
 ```bash
 # x86_64
-curl -L -o grn https://github.com/vngcloud/greennode-cli/releases/latest/download/grn-linux-amd64
+curl -L -o grn https://github.com/GreenNodeHub/greennode-cli/releases/latest/download/grn-linux-amd64
 # ARM64
-curl -L -o grn https://github.com/vngcloud/greennode-cli/releases/latest/download/grn-linux-arm64
+curl -L -o grn https://github.com/GreenNodeHub/greennode-cli/releases/latest/download/grn-linux-arm64
 chmod +x grn && sudo mv grn /usr/local/bin/
 ```
 
@@ -42,11 +42,11 @@ chmod +x grn && sudo mv grn /usr/local/bin/
 
 Kiểm tra: `grn --version`
 
----
+***
 
 ### 2. Cấu hình
 
-Tài liệu gốc: [Configuration](https://vngcloud.github.io/greennode-cli/configuration/).
+Tài liệu gốc: [Configuration](https://greennodehub.github.io/greennode-cli/configuration/).
 
 Chạy wizard và nhập thông tin:
 
@@ -66,8 +66,8 @@ Credential (Client ID / Secret) lấy tại **GreenNode IAM Portal → Service A
 
 **Region khả dụng:**
 
-| Region    | VKS Endpoint                          |
-| --------- | ------------------------------------- |
+| Region  | VKS Endpoint                        |
+| ------- | ----------------------------------- |
 | `HCM-3` | `https://vks.api.vngcloud.vn`       |
 | `HAN`   | `https://vks-han-1.api.vngcloud.vn` |
 
@@ -75,29 +75,29 @@ Cấu hình lưu tại `~/.greenode/credentials` (quyền `0600`) và `~/.greeno
 
 Nhiều môi trường thì dùng profile: `grn configure --profile staging`, rồi `grn --profile staging vks ...`.
 
----
+***
 
 ### 3. Các lệnh VKS
 
-Tài liệu gốc: [VKS Commands Overview](https://vngcloud.github.io/greennode-cli/commands/vks/).
+Tài liệu gốc: [VKS Commands Overview](https://greennodehub.github.io/greennode-cli/commands/vks/).
 
 Cấu trúc: `grn [global-options] vks <command> [command-options]`. Xem trợ giúp bất kỳ lúc nào với `grn vks` hoặc `grn vks <command> --help`.
 
-| Nhóm                  | Lệnh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Cluster**      | [list-clusters](https://vngcloud.github.io/greennode-cli/commands/vks/list-clusters/), [get-cluster](https://vngcloud.github.io/greennode-cli/commands/vks/get-cluster/), [create-cluster](https://vngcloud.github.io/greennode-cli/commands/vks/create-cluster/), [update-cluster](https://vngcloud.github.io/greennode-cli/commands/vks/update-cluster/), [delete-cluster](https://vngcloud.github.io/greennode-cli/commands/vks/delete-cluster/)                                                                                                                                                                                                                                                                                                                                 |
-| **Node Group**   | [list-nodegroups](https://vngcloud.github.io/greennode-cli/commands/vks/list-nodegroups/), [get-nodegroup](https://vngcloud.github.io/greennode-cli/commands/vks/get-nodegroup/), [create-nodegroup](https://vngcloud.github.io/greennode-cli/commands/vks/create-nodegroup/), [update-nodegroup](https://vngcloud.github.io/greennode-cli/commands/vks/update-nodegroup/), [update-nodegroup-metadata](https://vngcloud.github.io/greennode-cli/commands/vks/update-nodegroup-metadata/), [upgrade-nodegroup-version](https://vngcloud.github.io/greennode-cli/commands/vks/upgrade-nodegroup-version/), [list-nodes](https://vngcloud.github.io/greennode-cli/commands/vks/list-nodes/), [delete-nodegroup](https://vngcloud.github.io/greennode-cli/commands/vks/delete-nodegroup/) |
-| **Versions**     | [list-cluster-versions](https://vngcloud.github.io/greennode-cli/commands/vks/list-cluster-versions/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| **Auto-Upgrade** | [config-auto-upgrade](https://vngcloud.github.io/greennode-cli/commands/vks/config-auto-upgrade/), [delete-auto-upgrade-config](https://vngcloud.github.io/greennode-cli/commands/vks/delete-auto-upgrade-config/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| **Auto-Healing** | [config-auto-healing](https://vngcloud.github.io/greennode-cli/commands/vks/config-auto-healing/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| **Events**       | [get-cluster-events](https://vngcloud.github.io/greennode-cli/commands/vks/get-cluster-events/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| **Kubeconfig**   | [generate-kubeconfig](https://vngcloud.github.io/greennode-cli/commands/vks/generate-kubeconfig/), [update-kubeconfig](https://vngcloud.github.io/greennode-cli/commands/vks/update-kubeconfig/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| **Quota**        | [get-quota](https://vngcloud.github.io/greennode-cli/commands/vks/get-quota/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| **Waiter**       | [wait](https://vngcloud.github.io/greennode-cli/commands/vks/wait/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Nhóm             | Lệnh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Cluster**      | [list-clusters](https://greennodehub.github.io/greennode-cli/commands/vks/list-clusters/), [get-cluster](https://greennodehub.github.io/greennode-cli/commands/vks/get-cluster/), [create-cluster](https://greennodehub.github.io/greennode-cli/commands/vks/create-cluster/), [update-cluster](https://greennodehub.github.io/greennode-cli/commands/vks/update-cluster/), [delete-cluster](https://greennodehub.github.io/greennode-cli/commands/vks/delete-cluster/)                                                                                                                                                                                                                                                                                                                                                |
+| **Node Group**   | [list-nodegroups](https://greennodehub.github.io/greennode-cli/commands/vks/list-nodegroups/), [get-nodegroup](https://greennodehub.github.io/greennode-cli/commands/vks/get-nodegroup/), [create-nodegroup](https://greennodehub.github.io/greennode-cli/commands/vks/create-nodegroup/), [update-nodegroup](https://greennodehub.github.io/greennode-cli/commands/vks/update-nodegroup/), [update-nodegroup-metadata](https://greennodehub.github.io/greennode-cli/commands/vks/update-nodegroup-metadata/), [upgrade-nodegroup-version](https://greennodehub.github.io/greennode-cli/commands/vks/upgrade-nodegroup-version/), [list-nodes](https://greennodehub.github.io/greennode-cli/commands/vks/list-nodes/), [delete-nodegroup](https://greennodehub.github.io/greennode-cli/commands/vks/delete-nodegroup/) |
+| **Versions**     | [list-cluster-versions](https://greennodehub.github.io/greennode-cli/commands/vks/list-cluster-versions/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Auto-Upgrade** | [config-auto-upgrade](https://greennodehub.github.io/greennode-cli/commands/vks/config-auto-upgrade/), [delete-auto-upgrade-config](https://greennodehub.github.io/greennode-cli/commands/vks/delete-auto-upgrade-config/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Auto-Healing** | [config-auto-healing](https://greennodehub.github.io/greennode-cli/commands/vks/config-auto-healing/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Events**       | [get-cluster-events](https://greennodehub.github.io/greennode-cli/commands/vks/get-cluster-events/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Kubeconfig**   | [generate-kubeconfig](https://greennodehub.github.io/greennode-cli/commands/vks/generate-kubeconfig/), [update-kubeconfig](https://greennodehub.github.io/greennode-cli/commands/vks/update-kubeconfig/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Quota**        | [get-quota](https://greennodehub.github.io/greennode-cli/commands/vks/get-quota/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Waiter**       | [wait](https://greennodehub.github.io/greennode-cli/commands/vks/wait/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
-Tuỳ chọn toàn cục (`--profile`, `--region`, `--output`, `--query`, `--endpoint-url`, `--debug`) và các chủ đề khác (Output, Pagination, Dry-run, Shell Completion) xem trong [tài liệu CLI](https://vngcloud.github.io/greennode-cli/).
+Tuỳ chọn toàn cục (`--profile`, `--region`, `--output`, `--query`, `--endpoint-url`, `--debug`) và các chủ đề khác (Output, Pagination, Dry-run, Shell Completion) xem trong [tài liệu CLI](https://greennodehub.github.io/greennode-cli/).
 
----
+***
 
 ### Ví dụ nhanh: tạo cluster đến khi kubectl chạy được
 
@@ -126,6 +126,6 @@ kubectl get nodes
 
 Xem `grn vks list-cluster-versions` để lấy `--k8s-version`; các ID còn lại (VPC, subnet, flavor, SSH key) lấy trên Console.
 
----
+***
 
 Nếu gặp vấn đề, liên hệ GreenNode qua email: [**support@greennode.ai**](mailto:support@greennode.ai) - hotline: **19001549**. Trung tâm hỗ trợ: [https://helpdesk.greennode.ai](https://helpdesk.greennode.ai)
