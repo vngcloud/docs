@@ -9,10 +9,15 @@ Certificates ensure secure HTTPS communication, protect data integrity, and prev
 This module provides a centralized location to:
 
 * View certificate status
-* Issue free certificates
 * Upload custom certificates
 * Assign certificates to applications
 * Renew or replace expiring certificates
+
+> **⚠️ Service change:** GreenNode has **discontinued free SSL/TLS certificates (Let's Encrypt)**. The _Get free certificate_ option is no longer available when adding a new certificate.
+>
+> * For new applications, please **upload your own SSL/TLS certificate**.
+> * Free certificates **issued previously remain active**, still appear in the list with `Type = FREE`, and can still be assigned to applications.
+> * GreenNode recommends **preparing a replacement certificate before the expiry date** of any free certificate still in use, to avoid HTTPS service disruption. Track the **Expire On** column in the certificate list.
 
 ***
 
@@ -36,16 +41,14 @@ This overview helps administrators quickly assess SSL/TLS status across all WAF-
 
 ### Certificate Types
 
-#### Free Certificates (Auto-issued)
+#### Free Certificates _(no longer issued)_
 
-Free certificates are automatically issued by the WAF using the **Let’s Encrypt** certificate authority with the **HTTP-01** validation method.
-
-Key characteristics:
-
-* No cost
-* Automatically renewed **30 days before expiration**
-* Requires domain DNS A record pointing to the WAF public IP
-* No manual handling of private keys or certificate files
+> #### Free certificate _(no longer issued)_
+>
+> WAF previously supported automatic issuance of free certificates via Let's Encrypt. **This feature has been discontinued** — new free certificates can no longer be requested.
+>
+> * Certificates issued previously still appear in the list with `Type = FREE` and remain usable by applications.
+> * When such a certificate approaches expiry, **upload a replacement certificate** (see _Uploaded certificates_).
 
 ***
 
@@ -75,7 +78,7 @@ Unique identifier of the certificate.
 
 #### Type
 
-Indicates whether the certificate is **FREE** or **UPLOADED**.
+Indicates whether the certificate is `UPLOADED` (a certificate uploaded by the Customer) or `FREE` (a free certificate issued before this feature was discontinued). New certificates are always of the `UPLOADED` type.
 
 #### Domain
 
@@ -109,7 +112,7 @@ Provides management options, such as:
 
 The **Add Certificate** page allows you to add a new SSL/TLS certificate to the WAF.
 
-You can either upload your own certificate or request a free auto-issued certificate.
+The option to request WAF to automatically issue a free certificate has been discontinued.
 
 ***
 
@@ -129,27 +132,6 @@ Supported format: **PEM**
 
 ***
 
-#### Get free cert
-
-Select this option to let the WAF automatically issue a free certificate via **Let’s Encrypt**.
-
-***
-
-### ⚠️ Important – Before Getting a Free Certificate
-
-**Before requesting a free certificate for a domain, you MUST complete the following steps:**
-
-* **Create the application first** in the WAF **using the same domain**.
-* Configure the application with **port 80 (HTTP)** enabled.
-* **Do NOT attach any SSL certificate** to the application at this stage.
-* Ensure the domain’s **DNS A record is pointing to the WAF public IP address `103.7.174.2`**.
-* Wait for DNS propagation to complete.
-
-These steps are **mandatory** for **Let’s Encrypt HTTP-01 validation**.\
-If the application is not created with **port 80 and no certificate**, the free certificate issuance will fail.
-
-***
-
 ### Add Certificate – Form Fields
 
 #### Domain (required)
@@ -157,28 +139,4 @@ If the application is not created with **port 80 and no certificate**, the free 
 Enter one or more domains for which the certificate will be issued or uploaded.
 
 * Multiple domains can be separated by spaces or new lines
-* Wildcard (`*`) domains are supported for uploaded certificates
-
-***
-
-#### Email Address
-
-_(Required for free certificates)_
-
-Used for:
-
-* Let’s Encrypt notifications
-* Domain ownership and issuance communication
-
-***
-
-### Verification Requirements (Free Certificates)
-
-The following requirements are enforced during certificate issuance:
-
-* All domains must have their DNS A record pointing to the WAF public IP: `103.7.174.2`
-* Domain must be publicly reachable
-* WAF performs Let’s Encrypt **HTTP-01** validation
-* Certificates are automatically renewed before expiration
-
-If DNS configuration or connectivity is incorrect, the certificate cannot be issued.
+* Wildcard (`*`) domains are supported for uploaded certificate

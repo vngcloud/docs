@@ -2,7 +2,7 @@
 description: >-
   Rate Limit is a mechanism used to control the number of requests or tokens
   within a specified period of time. It helps protect the system from abuse,
-  ensures fairness when multiple users share the
+  ensures fairness when multiple users share the sam
 ---
 
 # Rate Limit
@@ -40,6 +40,6 @@ description: >-
     * 1 Month
   * **Window Time Type:** Currently supports **Fixed Window** only.
 
-### 3 Nhấn **Lưu** cấu hình.
+### 3. Save the Configuration
 
 <figure><img src="../../../.gitbook/assets/image (485).png" alt=""><figcaption></figcaption></figure>

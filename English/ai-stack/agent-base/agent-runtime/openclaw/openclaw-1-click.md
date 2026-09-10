@@ -74,6 +74,10 @@ OpenClaw supports connecting to messaging platforms so you can chat with your AI
 
 Channels can be configured during the deploy step or later at **Settings → Config** in the OpenClaw Gateway.
 
+{% hint style="warning" %}
+**Enter the Bot Token during deploy.** The Bot Token field in the Channel Configuration step is optional, but if you leave it empty, adding the token after the instance is created means asking the agent to update the channel configuration itself — which is hard to do and easy to get wrong. Prepare the token first via [Get Bot Token and Pairing](get-bot-token-and-pairing.md).
+{% endhint %}
+
 ***
 
 ## FAQ
@@ -92,6 +96,8 @@ Instance data is preserved after an auto-shutdown. Simply Restart from My Agents
 
 ### 4. Can I integrate Telegram or Zalo?
 
-**Yes.** You can configure the integration during the deploy step or later at **Settings → Config** in the OpenClaw Gateway. Both Telegram and Zalo are supported.
+**Yes.** Both Telegram and Zalo are supported. You can configure the integration during the deploy step or later at **Settings → Config** in the OpenClaw Gateway — but enter the **Bot Token** during deploy, because adding a token after the instance exists has to go through the agent and is considerably harder.
+
+After deploying, only start pairing (sending `/start` from Telegram/Zalo) once the instance is 🟢 **Active** — sending it while the instance is still `Creating` returns no pairing code.
 
 For current limitations and important technical notes, see [Limitations & Notes](limitations-and-notes.md).

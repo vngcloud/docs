@@ -3,20 +3,26 @@
 > Dành cho **người mới bắt đầu** dùng macOS hoặc Windows. Cấu hình bằng cách sửa 1 file `config.toml` qua Settings — có thể nhờ AI hỗ trợ soạn, không cần thuộc cú pháp TOML. Codex Desktop sẽ dùng model **GLM 5.2** chạy nội bộ của GreenNode.
 
 {% hint style="info" %}
-**Trước tiên hãy chuẩn bị [Điều kiện cần](../bat-dau.md):** API key (ACTIVE), Base URL, và model GLM 5.2 đã ENABLED. Trang này chỉ hướng dẫn cài và cấu hình.
+**Trước tiên hãy chuẩn bị [Điều kiện cần](../bat-dau.md):** key (ACTIVE), Base URL đúng loại dịch vụ, và model đã ENABLED. Trang này chỉ hướng dẫn cài và cấu hình.
 {% endhint %}
 
-Bạn sẽ cần 3 giá trị này (lấy ở trang Điều kiện cần):
+---
 
-| Thông tin | Giá trị |
-|-----------|---------|
-| Base URL (chuẩn OpenAI) | `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1` (**có** `/v1`) |
-| Base URL (key của gói Token Plan) | `https://tokenplan.api.greennode.ai/v1` — xem [Token Plan](../../token-plan/README.md) |
-| API key | key `vn-...` của bạn |
-| Model ID | `z-ai/glm-5.2` |
+## Chọn cấu hình theo loại dịch vụ
+
+Codex Desktop dùng **chuẩn OpenAI** → `base_url` **có** `/v1` ở cả hai loại dịch vụ. Chỉ khác host và loại key:
+
+| Loại dịch vụ | `base_url` | Key | `model` |
+|---|---|---|---|
+| **PAYG** | `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1` | API Key từ [trang API Keys](https://aiplatform.console.greennode.ai/keys) | `z-ai/glm-5.2` |
+| **Token Plan** | `https://tokenplan.api.greennode.ai/v1` | subscription-key từ Plan Detail → tab **Subscription keys** | Model code ở tab **Models** (ví dụ `glm-5.2`) |
+
+{% hint style="warning" %}
+**Key và `base_url` phải cùng một loại dịch vụ.** API Key PAYG gửi tới host `tokenplan…` (hoặc ngược lại) trả về `401 Unauthorized` dù key vẫn còn hiệu lực. Không nhận biết loại key bằng mắt được — nhớ theo nơi bạn đã lấy key. Xem [Mục 2 của trang Điều kiện cần](../bat-dau.md).
+{% endhint %}
 
 {% hint style="info" %}
-**GLM 5.2 chỉ là model ví dụ.** GreenNode có nhiều model — bạn thay bằng model mình muốn. Model ID và Base URL của từng model đều xem được trong [trang chi tiết model](https://aiplatform.console.greennode.ai/models).
+**GLM 5.2 chỉ là model ví dụ.** GreenNode có nhiều model — bạn thay bằng model mình muốn. Với PAYG, Model ID xem trong [trang chi tiết model](https://aiplatform.console.greennode.ai/models); với Token Plan, xem tab **Models** của gói.
 {% endhint %}
 
 ---
@@ -47,13 +53,15 @@ Mở Codex, đăng nhập bằng tài khoản ChatGPT/OpenAI của bạn.
 
 ## Bước 4 — Thêm cấu hình model self-host
 
-Thêm đoạn sau vào **cuối** file `config.toml` (giữ nguyên nội dung có sẵn phía trên):
+Thêm đoạn dưới đây vào **cuối** file `config.toml` (giữ nguyên nội dung có sẵn phía trên). Copy đúng tab theo loại dịch vụ của bạn:
 
+{% tabs %}
+{% tab title="PAYG" %}
 ```toml
 [model_providers.vngcloud-glm]
 name = "VNGCloud GLM"
 base_url = "https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1"
-experimental_bearer_token = "vn-...key-của-bạn..."
+experimental_bearer_token = "<API-key-PAYG-của-bạn>"
 wire_api = "responses"
 stream_idle_timeout_ms = 3000000
 request_max_retries = 3
@@ -67,20 +75,47 @@ model_auto_compact_token_limit = 200000
 model_reasoning_effort = "medium"
 model_reasoning_summary = "auto"
 ```
+{% endtab %}
+
+{% tab title="Token Plan" %}
+```toml
+[model_providers.greennode-tokenplan]
+name = "GreenNode Token Plan"
+base_url = "https://tokenplan.api.greennode.ai/v1"
+experimental_bearer_token = "<subscription-key-của-bạn>"
+wire_api = "responses"
+stream_idle_timeout_ms = 3000000
+request_max_retries = 3
+supports_websockets = false
+
+[profiles.glm]
+model = "glm-5.2"   # thay bằng Model code ở tab Models của gói
+model_provider = "greennode-tokenplan"
+model_context_window = 200000
+model_auto_compact_token_limit = 200000
+model_reasoning_effort = "medium"
+model_reasoning_summary = "auto"
+```
+
+{% hint style="info" %}
+`model` phải là **Model code** đúng như tab **Models** của gói hiển thị, và model đó phải nằm trong gói — gọi model ngoài gói trả về `403 Forbidden`.
+{% endhint %}
+{% endtab %}
+{% endtabs %}
 
 **Giải thích các field quan trọng:**
 
 | Field | Mục đích |
 |---|---|
-| `model_providers.vngcloud-glm` | Tên provider tuỳ bạn đặt — dùng lại ở `model_provider` bên dưới |
-| `base_url` | Base URL chuẩn OpenAI, **có** `/v1` |
-| `experimental_bearer_token` | API key của bạn, dán trực tiếp vào file — Codex Desktop không cần export biến môi trường như CLI |
+| `model_providers.<tên>` | Tên provider tuỳ bạn đặt — dùng lại ở `model_provider` bên dưới |
+| `base_url` | Endpoint theo loại dịch vụ, **có** `/v1` |
+| `experimental_bearer_token` | Key của bạn, dán trực tiếp vào file — Codex Desktop không cần export biến môi trường như CLI |
 | `wire_api` | Để `"responses"` — đúng chuẩn Responses API mà Codex Desktop dùng |
 | `stream_idle_timeout_ms` | Thời gian chờ tối đa (ms) trước khi coi stream là timeout |
 | `request_max_retries` | Số lần retry lại request khi gọi lỗi |
 | `supports_websockets` | Để `false` — MaaS chưa hỗ trợ websocket |
 | `profiles.glm` | Tên profile tuỳ bạn đặt — sẽ hiện trong model picker của app |
-| `model` | Model ID gửi lên MaaS |
+| `model` | Model ID gửi lên — PAYG dùng Model ID của portal Models, Token Plan dùng Model code của gói |
 | `model_provider` | Trỏ về provider đã khai báo ở trên |
 | `model_context_window` | Khai báo thủ công vì MaaS không expose metadata model |
 | `model_auto_compact_token_limit` | Ngưỡng token để Codex tự nén (compact) lại context |
@@ -92,7 +127,7 @@ model_reasoning_summary = "auto"
 {% endhint %}
 
 {% hint style="info" %}
-**Chưa quen cú pháp TOML?** Copy toàn bộ nội dung file `config.toml` hiện tại, dán vào một AI chat (Codex, ChatGPT, Claude...) kèm 3 giá trị Base URL / API key / Model ID ở trên, nhờ AI viết giúp đoạn `[model_providers.*]` và `[profiles.*]` đúng chuẩn Codex rồi dán lại vào file.
+**Chưa quen cú pháp TOML?** Copy toàn bộ nội dung file `config.toml` hiện tại, dán vào một AI chat (Codex, ChatGPT, Claude...) kèm 3 giá trị Base URL / key / Model ID của **đúng loại dịch vụ** bạn dùng, nhờ AI viết giúp đoạn `[model_providers.*]` và `[profiles.*]` đúng chuẩn Codex rồi dán lại vào file.
 {% endhint %}
 
 ---
@@ -124,10 +159,13 @@ model_reasoning_summary = "auto"
 | Hiện tượng | Nguyên nhân | Cách xử lý |
 |------------|-------------|------------|
 | Không thấy profile mới trong model picker | Chưa restart app, hoặc sai tên section `[profiles.*]` | Thoát hẳn và mở lại Codex; kiểm tra lại cú pháp TOML |
-| `401` / "Unauthorized" | API key sai hoặc chưa ACTIVE | Kiểm tra lại key; đợi trạng thái **ACTIVE** |
-| `404` / "Not Found" | Base URL sai (thiếu `/v1`) | Đúng phải là `https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1` |
+| `401` / "Unauthorized" | Key sai hoặc chưa ACTIVE | Kiểm tra lại key; đợi trạng thái **ACTIVE** |
+| `401` dù key còn hiệu lực | **Key và `base_url` lệch loại dịch vụ** | Đối chiếu bảng đầu trang: key ở trang **API Keys** → host `maas-llm-…`; key ở tab **Subscription keys** → host `tokenplan…` |
+| `403 Forbidden` (Token Plan) | Model không nằm trong gói | Đặt `model` là Model code có trong tab **Models** của gói |
+| `402 Payment Required` (Token Plan) | Gói hết hạn hoặc bị xoá | Mua lại gói hoặc bật **Auto-renew** |
+| `404` / "Not Found" | Base URL sai (thiếu `/v1`) | Codex Desktop là chuẩn OpenAI — `base_url` phải kết thúc bằng `/v1` |
 | App báo lỗi khi mở / không đọc được config | Sai cú pháp TOML (thiếu dấu `"`, sai indent) | Nhờ AI kiểm tra lại đoạn vừa thêm, hoặc so lại với mẫu ở Bước 4 |
-| AI không phản hồi dù đã chọn đúng model | Hết credit nên model bị tắt | Nạp credit tại AI Platform Console |
+| AI không phản hồi dù đã chọn đúng model | PAYG hết credit, hoặc Token Plan hết hạn mức token | PAYG: nạp credit. Token Plan: đợi chu kỳ mới, mua thêm gói, hoặc tạm chuyển sang API Key PAYG |
 | Đổi model qua model picker (UI) xong, model self-host không dùng được nữa | `model` và `model_provider` trong `config.toml` bị lệch nhau — picker chỉ ghi đè `model`, không reset `model_provider` | Mở lại `config.toml`, sửa `model` / `model_provider` cho khớp đúng cặp (xem mẫu ở Bước 4), lưu rồi restart Codex |
 
 ---
@@ -136,6 +174,7 @@ model_reasoning_summary = "auto"
 |------------------------|--------|
 | Dùng bằng dòng lệnh | [Codex CLI](../dong-lenh/codex-cli.md) |
 | Xem điều kiện cần | [Bắt đầu với AI Coding](../bat-dau.md) |
+| Tìm hiểu gói Token Plan | [Token Plan](../../token-plan/README.md) |
 | Xem usage & billing | [AI Platform Console](https://aiplatform.console.greennode.ai/) |
 
 ---

@@ -1,6 +1,6 @@
 # Deploy & Manage OpenClaw
 
-OpenClaw 1-Click lets you deploy a personal AI Agent on GreenNode Agentbase in 40â€“60 seconds, automatically connected to GreenNode MaaS with no manual configuration required.
+OpenClaw 1-Click lets you deploy a personal AI Agent on GreenNode Agentbase in 40–60 seconds, automatically connected to GreenNode MaaS with no manual configuration required.
 
 For an overview of concepts, architecture, and deployment options, see [OpenClaw 1-Click](openclaw-1-click.md).
 
@@ -12,7 +12,7 @@ For an overview of concepts, architecture, and deployment options, see [OpenClaw
 
 You can access the Agent Marketplace in two ways:
 
-* **Option 1**: Go to the GreenNode homepage at [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/). From the main dashboard, navigate to **AI Stack** and select **Agentbase** â†’ **Agent Marketplace**.
+* **Option 1**: Go to the GreenNode homepage at [https://dashboard.console.greennode.ai/](https://dashboard.console.greennode.ai/). From the main dashboard, navigate to **AI Stack** and select **Agentbase** → **Agent Marketplace**.
 * **Option 2**: Go directly to [https://aiplatform.console.greennode.ai/agent-marketplace](https://aiplatform.console.greennode.ai/agent-marketplace).
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2026-04-03 154428.png" alt=""><figcaption></figcaption></figure>
@@ -27,14 +27,14 @@ On the Agent Marketplace, find the **OpenClaw Featured Card** or click **"Deploy
 
 The configuration screen has 3 sections:
 
-**Section 1 â€” AI Source**
+**Section 1 — AI Source**
 
 Select the AI source for your OpenClaw instance:
 
 | Option                          | Description                                            | Requirement                |
 | ------------------------------- | ------------------------------------------------------ | -------------------------- |
 | **GreenNode MaaS** (default)    | Automatically connects to GreenNode Model-as-a-Service | GreenNode account required |
-| **BYOK â€” Bring Your Own Key** | Use an API key from an external provider               | Valid API key required     |
+| **BYOK — Bring Your Own Key** | Use an API key from an external provider               | Valid API key required     |
 
 When selecting **BYOK**, provide the following additional details:
 
@@ -46,14 +46,14 @@ When selecting **BYOK**, provide the following additional details:
 **BYOK note:** If the API key is invalid or expired, the system will show an inline error and block submission. Double-check your key before submitting.
 {% endhint %}
 
-**Section 2 â€” Instance Configuration**
+**Section 2 — Instance Configuration**
 
 | Field             | Description                                  | Notes                                                                  |
 | ----------------- | -------------------------------------------- | ---------------------------------------------------------------------- |
 | **OpenClaw Name** | Instance identifier                          | Auto-filled as `openclaw/{username}`, cannot be changed after creation |
-| **Flavor**        | Compute resource configuration (vCPU Ã— RAM) | Default: `2Ã—4`. Options include `4Ã—8`, `8Ã—16`...                    |
+| **Flavor**        | Compute resource configuration (vCPU × RAM) | Default: `2×4`. Options include `4×8`, `8×16`... |
 
-**Section 3 â€” Channel Configuration (Optional)**
+**Section 3 — Channel Configuration (Optional)**
 
 Connect OpenClaw to a messaging platform so you can chat right after deployment.
 
@@ -61,13 +61,21 @@ Connect OpenClaw to a messaging platform so you can chat right after deployment.
 | -------------------- | ------------------ | -------------------------------------------------------- |
 | **Channel Provider** | Messaging platform | Supported: Telegram, Zalo                                |
 | **Mode**             | Connection mode    | Pairing (default) or Allow List                          |
-| **Bot Token**        | Channel bot token  | Optional. Can be configured later at Settings â†’ Config |
+| **Bot Token**        | Channel bot token  | Not enforced by the form, but **fill it in here** — see the note below |
+
+{% hint style="warning" %}
+**Enter the Bot Token at this step.** The deploy form does not require a Bot Token, but if you leave it empty, adding the token after the instance is created means asking the agent inside OpenClaw to update the channel configuration itself — which is hard to do and easy to get wrong. Get your bot token first via [Get Bot Token and Pairing](get-bot-token-and-pairing.md), then paste it here so the channel connects as soon as the deploy finishes.
+{% endhint %}
 
 Once all fields are filled, click **"Start Setup"** to begin provisioning.
 
-#### Step 2: Provisioning â€” Setting Up Your Workspace
+#### Step 2: Provisioning — Setting Up Your Workspace
 
 The **"Setting Up Your Workspace"** screen displays a loading spinner while the system automatically prepares your environment. Once complete, you receive a **Gateway Token** and the **OpenClaw web admin URL** to log in and start using immediately.
+
+{% hint style="warning" %}
+**Save the Gateway Token the moment it appears.** This token is **shown only once** on the success screen — afterwards it is hidden and cannot be retrieved. Copy it somewhere safe (a password manager) before you leave the page. If you have already lost it, contact the GreenNode team for help.
+{% endhint %}
 
 #### Step 3: Deploy Success
 
@@ -78,12 +86,16 @@ Once provisioning is complete, the Deploy Success screen shows your instance det
 | Field                    | Description                                                  |
 | ------------------------ | ------------------------------------------------------------ |
 | **Instance Name**        | The name of your created instance (e.g. `openclaw/username`) |
-| **Status**               | ðŸŸ¢ Active                                                  |
-| **Gateway Token**        | Token used to log in to the OpenClaw web admin               |
+| **Status**               | 🟢 Active |
+| **Gateway Token**        | Token used to log in to the OpenClaw web admin — **shown only once**, copy and save it immediately |
 | **OpenClaw Gateway URL** | Link to your OpenClaw web admin                              |
 | **Created At**           | Timestamp                                                    |
 
 Click **"Open OpenClaw"** to access your OpenClaw Gateway Dashboard and start using it immediately.
+
+{% hint style="warning" %}
+**Only start pairing once the status is 🟢 Active.** If you send `/start` to your Telegram/Zalo bot while the instance is still `Creating`, the bot returns no pairing code — and that message is not reprocessed once the instance becomes Active. Wait for Active, then follow [Get Bot Token and Pairing](get-bot-token-and-pairing.md).
+{% endhint %}
 
 ***
 
@@ -101,7 +113,7 @@ Each instance in the list shows: instance name, status, AI model in use, version
 
 1. In My Agents, find the instance you want to access.
 2. Click **"Open"** on the instance.
-3. You are redirected straight to the OpenClaw web admin â€” no wizard or re-provisioning required.
+3. You are redirected straight to the OpenClaw web admin — no wizard or re-provisioning required.
 
 ### Stop an Instance
 
@@ -115,7 +127,7 @@ After stopping, the instance status changes to **Stopped** and its URL is no lon
 
 1. In My Agents, filter by **Stopped** status to find the instance.
 2. Click **"Restart"** on the instance.
-3. The instance transitions through **Starting â†’ Active**.
+3. The instance transitions through **Starting → Active**.
 
 After restarting, the URL becomes accessible again.
 
