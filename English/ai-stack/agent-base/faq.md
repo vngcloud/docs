@@ -162,14 +162,15 @@ curl -s -X PATCH "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNT
 
 AgentBase has **no** storage service of its own. The runtime container filesystem is **ephemeral** — anything written inside the container is lost when a replica restarts, scales, or when you deploy a new version. Don't treat it as durable storage.
 
-For durable storage, use **S3 storage via vStorage**. Your agent uploads files to S3 and retrieves them when needed, using any S3-compatible client (e.g. `boto3`):
+For durable storage, use **S3 storage via vStorage**. vStorage exposes an S3 API compatible with AWS Signature V4, so your agent can upload files to S3 and retrieve them later with `boto3`:
 
 ```python
 import boto3
 
 s3 = boto3.client(
     "s3",
-    endpoint_url="<vStorage S3 endpoint>",
+    endpoint_url="https://hcm04.vstorage.vngcloud.vn",   # match your bucket's region
+    region_name="HCM04",                                 # match your bucket's region
     aws_access_key_id="<access-key>",
     aws_secret_access_key="<secret-key>",
 )
@@ -181,10 +182,20 @@ s3.upload_file("/tmp/report.pdf", "my-bucket", "reports/report.pdf")
 s3.download_file("my-bucket", "reports/report.pdf", "/tmp/report.pdf")
 ```
 
-Create your bucket and access keys in the [vStorage Console](https://vstorage.console.greennode.ai/overview).
+Where the four values in that snippet come from:
+
+| Value | Where to get it |
+| --- | --- |
+| `endpoint_url` and `region_name` | Match your bucket's region — e.g. HCM04 uses `https://hcm04.vstorage.vngcloud.vn` with region `HCM04`; HAN02 uses `https://han02.vstorage.vngcloud.vn` with region `HAN02` |
+| Bucket | Create it in the [vStorage Console](https://vstorage.console.greennode.ai/overview) |
+| `aws_access_key_id` / `aws_secret_access_key` | An **S3 key** pair, created and managed in vIAM — [Manage S3 keys](https://iam.console.greennode.ai/vstorage-credentials/s3) |
 
 {% hint style="info" %}
-Store the vStorage access key as an [Access Control](access-control/) auth configuration rather than hardcoding it in your image — the agent retrieves the credential at runtime via its agent identity.
+Rather not write the code yourself? The vStorage Console ships a code generator at [**Integration** → **S3 SDK**](https://vstorage.console.greennode.ai/integration/integration) — pick language **Python** and library **AWS SDK**, and the portal emits a snippet pre-filled with your own endpoint, region, and credentials. The combination vStorage tests against is Python 3.8 + boto3 1.26.110. Details: [Integrate S3 SDK with vStorage](../../vstorage/object-storage/object-storage-hcm04/3rd-party-softwares/s3-sdk/integrate-s3-sdk-with-vstorage.md).
+{% endhint %}
+
+{% hint style="info" %}
+Store the vStorage S3 key as an [Access Control](access-control/) auth configuration rather than hardcoding it in your image — the agent retrieves the credential at runtime via its agent identity.
 {% endhint %}
 
 ***

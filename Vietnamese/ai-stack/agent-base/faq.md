@@ -162,14 +162,15 @@ curl -s -X PATCH "https://agentbase.api.vngcloud.vn/runtime/agent-runtimes/$RUNT
 
 AgentBase **không có** dịch vụ storage riêng. Filesystem của container runtime là **ephemeral** — mọi file ghi trong container sẽ mất khi replica restart, scale, hoặc khi bạn deploy phiên bản mới. Đừng dùng nó làm nơi lưu trữ lâu dài.
 
-Để lưu trữ bền vững, dùng **S3 storage thông qua vStorage**. Agent của bạn upload file lên S3 và retrieve lại khi cần, bằng bất kỳ S3-compatible client nào (ví dụ `boto3`):
+Để lưu trữ bền vững, dùng **S3 storage thông qua vStorage**. vStorage expose S3 API tương thích AWS Signature V4, nên agent của bạn upload file lên S3 và retrieve lại khi cần bằng `boto3`:
 
 ```python
 import boto3
 
 s3 = boto3.client(
     "s3",
-    endpoint_url="<vStorage S3 endpoint>",
+    endpoint_url="https://hcm04.vstorage.vngcloud.vn",   # đổi theo region của bucket
+    region_name="HCM04",                                 # đổi theo region của bucket
     aws_access_key_id="<access-key>",
     aws_secret_access_key="<secret-key>",
 )
@@ -181,10 +182,20 @@ s3.upload_file("/tmp/report.pdf", "my-bucket", "reports/report.pdf")
 s3.download_file("my-bucket", "reports/report.pdf", "/tmp/report.pdf")
 ```
 
-Khởi tạo bucket và lấy access key tại [vStorage Console](https://vstorage.console.greennode.ai/overview).
+Chuẩn bị 4 giá trị trong đoạn code trên:
+
+| Giá trị | Lấy ở đâu |
+| --- | --- |
+| `endpoint_url` và `region_name` | Theo region của bucket — ví dụ HCM04 dùng `https://hcm04.vstorage.vngcloud.vn` + region `HCM04`; HAN02 dùng `https://han02.vstorage.vngcloud.vn` + region `HAN02` |
+| Bucket | Tạo tại [vStorage Console](https://vstorage.console.greennode.ai/overview) |
+| `aws_access_key_id` / `aws_secret_access_key` | Cặp **S3 key** được tạo và quản lý trong vIAM — [Quản lý S3 keys](https://iam.console.greennode.ai/vstorage-credentials/s3) |
 
 {% hint style="info" %}
-Lưu access key của vStorage bằng cấu hình xác thực của [Access Control](access-control/) thay vì hardcode trong image — agent truy xuất credential lúc runtime theo agent identity.
+Không muốn tự viết code? vStorage Console có sẵn trình sinh code mẫu tại [**Integration** → **S3 SDK**](https://vstorage.console.greennode.ai/integration/integration) — chọn ngôn ngữ **Python** và thư viện **AWS SDK**, portal sinh ra đoạn code đã điền đúng endpoint, region và credential của bạn. Combo được vStorage kiểm thử: Python 3.8 + boto3 1.26.110. Chi tiết: [Tích hợp công cụ S3 SDK với vStorage](../../vstorage/object-storage/object-storage-hcm04/3rd-party-softwares/s3-sdk/tich-hop-cong-cu-s3-sdk-voi-vstorage.md).
+{% endhint %}
+
+{% hint style="info" %}
+Lưu S3 key của vStorage bằng cấu hình xác thực của [Access Control](access-control/) thay vì hardcode trong image — agent truy xuất credential lúc runtime theo agent identity.
 {% endhint %}
 
 ***
