@@ -61,3 +61,4 @@ The more tokens in context (prompt + conversation history), the longer a model t
 | See how usage is charged                       | [Pricing](pricing.md)                     |
 | Quickly try a model before integrating         | [Playground](playground.md)               |
 | Call a model via API                           | [MaaS API](maas-api.md)                    |
+| See the service uptime commitment              | [SLA](sla.md)                             |

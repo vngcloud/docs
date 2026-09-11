@@ -61,3 +61,4 @@ Càng nhiều token trong context (prompt + lịch sử hội thoại), model x�
 | Xem cách tính phí khi dùng model                | [Cách tính phí](cach-tinh-phi.md)                  |
 | Thử nhanh model trước khi tích hợp              | [Playground](playground.md)                        |
 | Gọi model qua API                               | [MaaS API](maas-api.md)                            |
+| Xem cam kết uptime của dịch vụ                  | [Cam kết SLA](cam-ket-sla.md)                      |

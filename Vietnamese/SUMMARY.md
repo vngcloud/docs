@@ -837,6 +837,7 @@
     * [Các Model được cung cấp](ai-stack/model-as-a-service/cac-model-duoc-cung-cap.md)
     * [MaaS API](ai-stack/model-as-a-service/maas-api.md)
     * [Cách tính phí](ai-stack/model-as-a-service/cach-tinh-phi.md)
+    * [Cam kết SLA](ai-stack/model-as-a-service/cam-ket-sla.md)
   * [AI Gateway](ai-stack/ai-gateway/README.md)
     * [AI Gateway là gì?](ai-stack/ai-gateway/ai-gateway-la-gi.md)
     * [Bắt đầu với AI Gateway](ai-stack/ai-gateway/bat-dau-voi-ai-gateway.md)
