@@ -751,6 +751,7 @@
     * [Available Models](ai-stack/model-as-a-service/available-models.md)
     * [MaaS API](ai-stack/model-as-a-service/maas-api.md)
     * [Pricing](ai-stack/model-as-a-service/pricing.md)
+    * [SLA](ai-stack/model-as-a-service/sla.md)
   * [AI Gateway](ai-stack/ai-gateway/README.md)
     * [What is AI Gateway?](ai-stack/ai-gateway/what-is-ai-gateway.md)
     * [Get Started with AI Gateway](ai-stack/ai-gateway/get-starting-with-ai-gateway/README.md)
