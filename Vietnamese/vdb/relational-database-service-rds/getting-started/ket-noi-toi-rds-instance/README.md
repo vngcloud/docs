@@ -106,4 +106,6 @@ trong đó:
 * Master\_user: là master user bạn đăng kí lúc khởi tạo.
 * Database\_Name: là Database Name bạn điền vào ở phần DB Options. (khác với DB Instance Name ở mục DB Settting lúc khởi tạo và hiển thị ở mục Database trên Portal). Nếu quên, bạn có thể liên hệ GreenNode Support để lấy lại thông tin này.&#x20;
 
+Đối với **PostgreSQL Cluster**, để tăng tính bảo mật, bạn có thể thêm `sslmode=require` vào chuỗi kết nối, ví dụ: `psql "host=<Endpoint_vDB> port=5432 dbname=<Database_Name> user=<master_user> sslmode=require"`.
+
 Nếu có vấn đề gì cần hỗ trợ, bạn có thể liên hệ **GreenNode Support Team** ngay. Cảm ơn bạn đã xem hết bài hướng dẫn.
