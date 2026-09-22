@@ -85,8 +85,3 @@ After a successful connection, you get the redis-cli prompt:
 ```
 
 You can now run Redis commands against the Redis Cluster Instance.
-
-| I want to... | Go to |
-|---|---|
-| Manage topology, backup, delete cluster | [Manage a Redis Cluster](manage-redis-cluster.md) |
-| View limits and limitations | [Limitations](limitations.md) |

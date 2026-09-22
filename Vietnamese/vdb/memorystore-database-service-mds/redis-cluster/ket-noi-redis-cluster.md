@@ -85,8 +85,3 @@ Sau khi kết nối thành công, bạn nhận được prompt của redis-cli:
 ```
 
 Bạn đã có thể chạy các lệnh Redis lên Redis Cluster Instance.
-
-| Tôi muốn tiếp theo... | Đi đến |
-|---|---|
-| Quản lý topology, backup, xóa cluster | [Quản lý Redis Cluster](quan-ly-redis-cluster.md) |
-| Xem giới hạn và hạn chế | [Giới hạn và hạn chế](gioi-han-va-han-che.md) |
