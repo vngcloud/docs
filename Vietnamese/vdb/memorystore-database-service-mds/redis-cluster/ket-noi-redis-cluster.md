@@ -32,7 +32,7 @@ sudo make install
 1. Mở giao diện quản lý Database, chọn Redis Cluster Instance cần kết nối.
 2. Chọn tab **Connectivity & Security**, xem mục **Endpoint & Port**.
 3. Ghi lại **IP** hoặc **Domain** của Instance và **Port** (mặc định `6379`).
-4. Lấy thông tin xác thực: ACL user và password của Instance.
+4. Lấy thông tin xác thực: ACL user (mặc định `master-user`) và password của Instance.
 
 ![](../../../.gitbook/assets/Redis-cluster/ket-noi-redis-cluster-endpoint.png)
 
@@ -54,29 +54,21 @@ Mặc định Instance cho phép truy cập từ mọi nơi (`0.0.0.0/0`). Green
 
 ## Bước 3 - Kết nối bằng redis-cli
 
+Khi tạo Redis Cluster Instance, hệ thống tự tạo ACL user mặc định tên `master-user`. Bạn kết nối bằng `master-user` cùng password đã đặt lúc khởi tạo.
+
 Kết nối qua **IP**:
 
 ```bash
-redis-cli -h <IP> -p <PORT> --user <ACL_USER> --pass '<PASSWORD>'
+redis-cli -h 10.0.0.10 -p 6379 --user master-user --pass '<PASSWORD>'
 ```
 
 Kết nối qua **Domain**:
 
 ```bash
-redis-cli -h <DOMAIN> -p <PORT> --user <ACL_USER> --pass '<PASSWORD>'
+redis-cli -h my-redis-cluster.vdb-redis.vngcloud.vn -p 6379 --user master-user --pass '<PASSWORD>'
 ```
 
-Ví dụ kết nối qua IP với ACL user mặc định `master-user`:
-
-```bash
-redis-cli -h <IP> -p 6379 --user master-user --pass '<PASSWORD>'
-```
-
-Ví dụ kết nối qua Domain:
-
-```bash
-redis-cli -h <cluster-name>.vdb-redis.vngcloud.vn -p 6379 --user master-user --pass '<PASSWORD>'
-```
+Thay `10.0.0.10` hoặc `my-redis-cluster.vdb-redis.vngcloud.vn` bằng IP/Domain của Instance, và `<PASSWORD>` bằng password đã đặt lúc khởi tạo.
 
 {% hint style="info" %}
 Đối với long-time query, cấu hình **tcp_keepalive** hoặc **healthcheck_interval** để tránh gián đoạn kết nối. Xem thêm [Lưu ý & hạn chế](../../announcements/luu-y-and-han-che.md#e.-long-time-query).

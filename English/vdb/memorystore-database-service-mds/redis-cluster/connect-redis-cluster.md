@@ -32,7 +32,7 @@ sudo make install
 1. Open the Database management console and select the Redis Cluster Instance to connect to.
 2. Select the **Connectivity & Security** tab and review the **Endpoint & Port** section.
 3. Note the Instance **IP** or **Domain** and the **Port** (default `6379`).
-4. Get the authentication credentials: the ACL user and password of the Instance.
+4. Get the authentication credentials: the ACL user (default `master-user`) and password of the Instance.
 
 ![](../../../.gitbook/assets/Redis-cluster/ket-noi-redis-cluster-endpoint.png)
 
@@ -54,29 +54,21 @@ By default the Instance allows access from anywhere (`0.0.0.0/0`). GreenNode rec
 
 ## Step 3 - Connect with redis-cli
 
+When you create a Redis Cluster Instance, a default ACL user named `master-user` is created automatically. You connect using `master-user` with the password set during creation.
+
 Connect via **IP**:
 
 ```bash
-redis-cli -h <IP> -p <PORT> --user <ACL_USER> --pass '<PASSWORD>'
+redis-cli -h 10.0.0.10 -p 6379 --user master-user --pass '<PASSWORD>'
 ```
 
 Connect via **Domain**:
 
 ```bash
-redis-cli -h <DOMAIN> -p <PORT> --user <ACL_USER> --pass '<PASSWORD>'
+redis-cli -h my-redis-cluster.vdb-redis.vngcloud.vn -p 6379 --user master-user --pass '<PASSWORD>'
 ```
 
-Example connecting via IP with the default ACL user `master-user`:
-
-```bash
-redis-cli -h <IP> -p 6379 --user master-user --pass '<PASSWORD>'
-```
-
-Example connecting via Domain:
-
-```bash
-redis-cli -h <cluster-name>.vdb-redis.vngcloud.vn -p 6379 --user master-user --pass '<PASSWORD>'
-```
+Replace `10.0.0.10` or `my-redis-cluster.vdb-redis.vngcloud.vn` with your Instance IP/Domain, and `<PASSWORD>` with the password set during creation.
 
 {% hint style="info" %}
 For long-time queries, configure **tcp_keepalive** or **healthcheck_interval** to avoid connection drops. See [Notes & limitations](../../announcements/luu-y-and-han-che.md#e.-long-time-query).
