@@ -957,6 +957,7 @@
       * [Quản lý sao lưu MDS Instance (Backup)](vdb/memorystore-database-service-mds/sao-luu-mds-instance.md)
     * [Redis Cluster](vdb/memorystore-database-service-mds/redis-cluster/README.md)
       * [Khởi tạo Redis Cluster](vdb/memorystore-database-service-mds/redis-cluster/khoi-tao-redis-cluster.md)
+      * [Kết nối Redis Cluster](vdb/memorystore-database-service-mds/redis-cluster/ket-noi-redis-cluster.md)
       * [Quản lý Redis Cluster](vdb/memorystore-database-service-mds/redis-cluster/quan-ly-redis-cluster.md)
   * [Kafka Cluster Database (KDS)](vdb/kafka-cluster-kds/README.md)
     * [Cách thức hoạt động](vdb/kafka-cluster-kds/cach-thuc-hoat-dong.md)

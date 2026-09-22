@@ -1,0 +1,100 @@
+# Connect to Redis Cluster
+
+This guide describes how to connect to a Redis Cluster Instance on vDB using redis-cli, via IP or Domain, with ACL user authentication.
+
+---
+
+## Prerequisites
+
+* A Redis Cluster Instance has been created on vDB. See [Create a Redis Cluster](create-redis-cluster.md).
+* **redis-cli** is installed on the connecting machine (or an equivalent redis client).
+* The connecting machine is in the same Network as the Instance, or in a Network with an ACL rule to the Instance's Endpoint Private.
+
+---
+
+## Install redis-cli
+
+If you don't have redis-cli, on Linux download and build the source as follows:
+
+```bash
+wget http://download.redis.io/redis-stable.tar.gz
+tar xvzf redis-stable.tar.gz
+cd redis-stable
+make distclean  # Ubuntu systems only
+make
+sudo make install
+```
+
+---
+
+## Step 1 - Identify Endpoint & credentials
+
+1. Open the Database management console and select the Redis Cluster Instance to connect to.
+2. Select the **Connectivity & Security** tab and review the **Endpoint & Port** section.
+3. Note the Instance **IP** or **Domain** and the **Port** (default `6379`).
+4. Get the authentication credentials: the ACL user and password of the Instance.
+
+![](../../../.gitbook/assets/Redis-cluster/ket-noi-redis-cluster-endpoint.png)
+
+{% hint style="info" %}
+Redis Cluster supports connecting via **IP** or **Domain** — either value works.
+{% endhint %}
+
+## Step 2 - Configure Security Group Rules (optional)
+
+1. Open the **Connectivity & Security** tab, under **Security Group Rules**, select **EDIT**.
+2. Enter the trusted **Remote IP** in CIDR notation, or select **ADD RULE** to add a new rule.
+3. Select **Save** and wait for the change to be saved.
+
+![](../../../.gitbook/assets/Redis-cluster/ket-noi-redis-cluster-security-group.png)
+
+{% hint style="warning" %}
+By default the Instance allows access from anywhere (`0.0.0.0/0`). GreenNode recommends restricting access to only trusted Remote IPs.
+{% endhint %}
+
+## Step 3 - Connect with redis-cli
+
+Connect via **IP**:
+
+```bash
+redis-cli -h <IP> -p <PORT> --user <ACL_USER> --pass '<PASSWORD>'
+```
+
+Connect via **Domain**:
+
+```bash
+redis-cli -h <DOMAIN> -p <PORT> --user <ACL_USER> --pass '<PASSWORD>'
+```
+
+Example connecting via IP with the default ACL user `master-user`:
+
+```bash
+redis-cli -h <IP> -p 6379 --user master-user --pass '<PASSWORD>'
+```
+
+Example connecting via Domain:
+
+```bash
+redis-cli -h <cluster-name>.vdb-redis.vngcloud.vn -p 6379 --user master-user --pass '<PASSWORD>'
+```
+
+{% hint style="info" %}
+For long-time queries, configure **tcp_keepalive** or **healthcheck_interval** to avoid connection drops. See [Notes & limitations](../../announcements/luu-y-and-han-che.md#e.-long-time-query).
+{% endhint %}
+
+---
+
+## Result
+
+After a successful connection, you get the redis-cli prompt:
+
+```bash
+<IP>:6379>
+```
+
+You can now run Redis commands against the Redis Cluster Instance.
+
+| I want to... | Go to |
+|---|---|
+| Manage topology, backup, delete cluster | [Manage a Redis Cluster](manage-redis-cluster.md) |
+| View limits and limitations | [Limitations](limitations.md) |
