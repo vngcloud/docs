@@ -1,12 +1,12 @@
 # Connect to Redis Cluster
 
-This guide describes how to connect to a Redis Cluster Instance on vDB using redis-cli, via IP or Domain, with ACL user authentication.
+This guide describes how to connect to a Redis Cluster on vDB using redis-cli, via IP or Domain, with ACL user authentication.
 
 ---
 
 ## Prerequisites
 
-* A Redis Cluster Instance has been created on vDB. See [Create a Redis Cluster](create-redis-cluster.md).
+* A Redis Cluster has been created on vDB. See [Create a Redis Cluster](create-redis-cluster.md).
 * **redis-cli** is installed on the connecting machine (or an equivalent redis client).
 * The connecting machine is in the same Network as the Instance, or in a Network with an ACL rule to the Instance's Endpoint Private.
 
@@ -29,10 +29,10 @@ sudo make install
 
 ## Step 1 - Identify Endpoint & credentials
 
-1. Open the Database management console and select the Redis Cluster Instance to connect to.
+1. Open the Database management console and select the Redis Cluster to connect to.
 2. Select the **Connectivity & Security** tab and review the **Endpoint & Port** section.
 3. Note the Instance **IP** or **Domain** and the **Port** (default `6379`).
-4. Get the authentication credentials: the ACL user (default `master-user`) and password of the Instance.
+4. Get the authentication credentials: the ACL user (default `master-user`) and password.
 
 ![](../../../.gitbook/assets/Redis-cluster/ket-noi-redis-cluster-endpoint.png)
 
@@ -54,7 +54,7 @@ By default the Instance allows access from anywhere (`0.0.0.0/0`). GreenNode rec
 
 ## Step 3 - Connect with redis-cli
 
-When you create a Redis Cluster Instance, a default ACL user named `master-user` is created automatically. You connect using `master-user` with the password set during creation.
+When you create a Redis Cluster, a default ACL user named `master-user` is created automatically. You connect using `master-user` with the password set during creation.
 
 Connect via **IP**:
 
@@ -84,4 +84,4 @@ After a successful connection, you get the redis-cli prompt:
 <IP>:6379>
 ```
 
-You can now run Redis commands against the Redis Cluster Instance.
+You can now run Redis commands against the Redis Cluster.

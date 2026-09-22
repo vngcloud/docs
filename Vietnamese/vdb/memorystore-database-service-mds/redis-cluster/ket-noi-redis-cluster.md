@@ -1,12 +1,12 @@
 # Kết nối Redis Cluster
 
-Hướng dẫn này mô tả các bước kết nối tới Redis Cluster Instance trên vDB bằng redis-cli, thông qua IP hoặc Domain, sử dụng ACL user để xác thực.
+Hướng dẫn này mô tả các bước kết nối tới Redis Cluster trên vDB bằng redis-cli, thông qua IP hoặc Domain, sử dụng ACL user để xác thực.
 
 ---
 
 ## Điều kiện tiên quyết
 
-* Đã tạo Redis Cluster Instance trên vDB. Xem [Khởi tạo Redis Cluster](khoi-tao-redis-cluster.md).
+* Đã tạo Redis Cluster trên vDB. Xem [Khởi tạo Redis Cluster](khoi-tao-redis-cluster.md).
 * Đã cài **redis-cli** trên máy dùng để kết nối (hoặc một redis client tương đương).
 * Máy kết nối nằm chung Network với Instance, hoặc thuộc Network có mở ACL tới Endpoint Private của Instance.
 
@@ -29,10 +29,10 @@ sudo make install
 
 ## Bước 1 - Xác định thông tin Endpoint & xác thực
 
-1. Mở giao diện quản lý Database, chọn Redis Cluster Instance cần kết nối.
+1. Mở giao diện quản lý Database, chọn Redis Cluster cần kết nối.
 2. Chọn tab **Connectivity & Security**, xem mục **Endpoint & Port**.
 3. Ghi lại **IP** hoặc **Domain** của Instance và **Port** (mặc định `6379`).
-4. Lấy thông tin xác thực: ACL user (mặc định `master-user`) và password của Instance.
+4. Lấy thông tin xác thực: ACL user (mặc định `master-user`) và password.
 
 ![](../../../.gitbook/assets/Redis-cluster/ket-noi-redis-cluster-endpoint.png)
 
@@ -54,7 +54,7 @@ Mặc định Instance cho phép truy cập từ mọi nơi (`0.0.0.0/0`). Green
 
 ## Bước 3 - Kết nối bằng redis-cli
 
-Khi tạo Redis Cluster Instance, hệ thống tự tạo ACL user mặc định tên `master-user`. Bạn kết nối bằng `master-user` cùng password đã đặt lúc khởi tạo.
+Khi tạo Redis Cluster, hệ thống tự tạo ACL user mặc định tên `master-user`. Bạn kết nối bằng `master-user` cùng password đã đặt lúc khởi tạo.
 
 Kết nối qua **IP**:
 
@@ -84,4 +84,4 @@ Sau khi kết nối thành công, bạn nhận được prompt của redis-cli:
 <IP>:6379>
 ```
 
-Bạn đã có thể chạy các lệnh Redis lên Redis Cluster Instance.
+Bạn đã có thể chạy các lệnh Redis lên Redis Cluster.
