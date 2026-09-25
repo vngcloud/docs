@@ -1,6 +1,6 @@
 # Change Password Guide
 
-**Step 1:** Directly access the link [https://register.vngcloud.vn/resetpwd](https://register.vngcloud.vn/resetpwd) or [https://my.vngcloud.vn](https://my.vngcloud.vn/) and then select '**Forgot Password?**'
+**Step 1:** Directly access the link [https://register.greennode.ai/resetpwd](https://register.greennode.ai/resetpwd) or  Select '**Forgot Password?**' on Login tab
 
 <figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
@@ -14,9 +14,9 @@ You will receive a notification as below.
 
 Please check your email with the subject "GreenNode - Reset Password." Click on this link to proceed to Step 3.
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-**Step 3**: Fill in all the required information as requested. In the **OTP Confirmation** section, please click the "**Send OTP**" button to receive the OTP via the email you registered.
+**Step 3**: Fill in all the required information as requested. In the **OTP Confirmation** section, please click the "**Send OTP**" button to receive the OTP via the phone number you registered.
 
 <figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 

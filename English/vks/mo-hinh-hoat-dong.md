@@ -34,24 +34,25 @@ A **Multi-AZ Cluster** deploys the Control Plane across **multiple Availability 
 **Relationship between Public/Private Cluster and Single-AZ/Multi-AZ:**
 
 These are **2 independent dimensions of choice**:
+
 * **Public/Private**: about network accessibility
 * **Single-AZ/Multi-AZ**: about Control Plane availability (HA)
 
 Combine these options to suit your needs:
-
-| Combination | Suitable for |
-| --- | --- |
-| Public Cluster + Single-AZ (default) | Dev/Test, apps that don't require HA |
-| Public Cluster + Multi-AZ | Production needing HA + easy access |
-| Private Cluster + Single-AZ | High security, Dev/Test |
-| Private Cluster + Multi-AZ | Production with highest security + HA |
 {% endhint %}
+
+| Combination                          | Suitable for                          |
+| ------------------------------------ | ------------------------------------- |
+| Public Cluster + Single-AZ (default) | Dev/Test, apps that don't require HA  |
+| Public Cluster + Multi-AZ            | Production needing HA + easy access   |
+| Private Cluster + Single-AZ          | High security, Dev/Test               |
+| Private Cluster + Multi-AZ           | Production with highest security + HA |
 
 ## 4. Comparison between using Public Cluster and Private Cluster
 
 Below is a comparison table between creating and using Public Cluster and Private Cluster on the VKS system:
 
-<table data-header-hidden><thead><tr><th width="201"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Criteria</strong></td><td><strong>Public Cluster</strong></td><td><strong>Private Cluster</strong></td></tr><tr><td><strong>Connect</strong></td><td>Use Public IP addresses to communicate between nodes and control plane, between clients and control plane, between nodes and other services in GreenNode.</td><td>Use Private IP addresses to communicate between nodes and control plane, between clients and control plane, between nodes and other services in GreenNode.</td></tr><tr><td><strong>Security</strong></td><td>Medium security since connections use Public IP.</td><td>Higher security with all connections private and limited access.</td></tr><tr><td><strong>Access management</strong></td><td>More difficult to control, access can be managed through the Whitelist feature</td><td>Strict access control, all connections are within GreenNode's private network, thereby minimizing the risk of external network attacks.</td></tr><tr><td><strong>Scalability (AutoScaling)</strong></td><td>Easily scalable through <strong>Auto Scaling</strong> feature .</td><td>Easily scalable through <strong>Auto Scaling</strong> feature .</td></tr><tr><td><strong>AutoHealing</strong> </td><td>Automatically detect errors and restart the node ( <strong>Auto Healing</strong> )</td><td>Automatically detect errors and restart the node ( <strong>Auto Healing</strong> )</td></tr><tr><td><strong>Accessibility from outside</strong></td><td>Easy access from anywhere with internet.</td><td>Access from outside must be through other security solutions.</td></tr><tr><td><strong>Configuration and deployment</strong></td><td>Simpler because it does not require setting up an internal network.</td><td>More complex, requires private and secure network configuration.</td></tr><tr><td><strong>Cost</strong></td><td>Usually lower because there is no need to set up a complex security infrastructure.</td><td>Higher cost due to additional security and management components required. <strong>Specifically, when using a private cluster, you need to pay for 4 automatically created private service endpoints to connect to services on GreenNode.</strong></td></tr><tr><td><strong>Flexibility</strong></td><td>High, easy to change and access services.</td><td>More flexible in applications that require security, but less flexible for applications that require external access.</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="201"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Criteria</strong></td><td><strong>Public Cluster</strong></td><td><strong>Private Cluster</strong></td></tr><tr><td><strong>Connect</strong></td><td>Use Public IP addresses to communicate between nodes and control plane, between clients and control plane, between nodes and other services in GreenNode.</td><td>Use Private IP addresses to communicate between nodes and control plane, between clients and control plane, between nodes and other services in GreenNode.</td></tr><tr><td><strong>Security</strong></td><td>Medium security since connections use Public IP.</td><td>Higher security with all connections private and limited access.</td></tr><tr><td><strong>Access management</strong></td><td>More difficult to control, access can be managed through the Whitelist feature</td><td>Strict access control, all connections are within GreenNode's private network, thereby minimizing the risk of external network attacks.</td></tr><tr><td><strong>Scalability (AutoScaling)</strong></td><td>Easily scalable through <strong>Auto Scaling</strong> feature .</td><td>Easily scalable through <strong>Auto Scaling</strong> feature .</td></tr><tr><td><strong>AutoHealing</strong></td><td>Automatically detect errors and restart the node ( <strong>Auto Healing</strong> )</td><td>Automatically detect errors and restart the node ( <strong>Auto Healing</strong> )</td></tr><tr><td><strong>Accessibility from outside</strong></td><td>Easy access from anywhere with internet.</td><td>Access from outside must be through other security solutions.</td></tr><tr><td><strong>Configuration and deployment</strong></td><td>Simpler because it does not require setting up an internal network.</td><td>More complex, requires private and secure network configuration.</td></tr><tr><td><strong>Cost</strong></td><td>Usually lower because there is no need to set up a complex security infrastructure.</td><td>Higher cost due to additional security and management components required. <strong>Specifically, when using a private cluster, you need to pay for 4 automatically created private service endpoints to connect to services on GreenNode.</strong></td></tr><tr><td><strong>Flexibility</strong></td><td>High, easy to change and access services.</td><td>More flexible in applications that require security, but less flexible for applications that require external access.</td></tr></tbody></table>
 
 Therefore:
 
