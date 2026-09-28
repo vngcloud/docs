@@ -1,5 +1,14 @@
 # Release notes
 
+## Sep 28, 2026 <a href="#sep_07_2026" id="sep_07_2026"></a>
+
+VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới với các cải tiến sau:
+
+**Tính năng mới:**
+
+* **Control Plane Logging:** Bật thu thập log Control Plane của Cluster — gồm **Audit**, **API Server**, **Controller Manager**, **Scheduler** — và gửi về **OpenSearch** hoặc **Kafka** trên vDB của bạn, phục vụ audit, compliance và troubleshooting. Chính thức hỗ trợ trên **region HCM.**
+  * Hướng dẫn chi tiết tại [Cấu hình Logging cho Cluster](https://docs.greennode.ai/vn/vks/monitoring/cau-hinh-logging-cho-cluster).
+
 ## Sep 07, 2026 <a href="#sep_07_2026" id="sep_07_2026"></a>
 
 VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới với các cải tiến sau:
