@@ -1,5 +1,14 @@
 # Release notes
 
+## Sep 28, 2026 <a href="#sep_07_2026" id="sep_07_2026"></a>
+
+VKS (VNG Kubernetes Engine) has just released a new update with the following improvements:
+
+**New features:**
+
+* **Control Plane Logging:** Collect the Control Plane logs of a Cluster — including **Audit**, **API Server**, **Controller Manager**, **Scheduler** — and send them to your **OpenSearch** or **Kafka** on vDB, for audit, compliance, and troubleshooting. Officially supported in the HCM region.
+  * See [Configure Cluster Logging](../monitoring/configure-cluster-logging.md) for details.
+
 ## Sep 07, 2026 <a href="#sep_07_2026" id="sep_07_2026"></a>
 
 VKS (VNG Kubernetes Engine) has just released a new update with the following improvements:
