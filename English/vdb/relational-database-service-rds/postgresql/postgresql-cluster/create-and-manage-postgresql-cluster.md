@@ -24,6 +24,7 @@ On the Database management interface, click **Create Database**. The creation pr
 * **Cluster Name**: Enter a name for the cluster (6-20 characters, must start with a letter).
 * **Database Engine**: Select **PostgreSQL**.
 * **Deployment Type**: Select **Cluster** (this option only appears when the Engine is PostgreSQL).
+* **Availability & Durability**: Select **Single-AZ** or **Multi-AZ**. For Multi-AZ, see the dedicated guide at [Create a Multi-AZ PostgreSQL Cluster](create-multi-az-postgresql-cluster.md).
 
 {% hint style="info" %}
 When selecting **Cluster** as the Deployment Type, the label changes from "Database Instance Name" to "Cluster Name".
@@ -74,6 +75,7 @@ When selecting **Cluster** as the Deployment Type, the system also displays a **
 
 * **Cloud Network (VPC & Subnet)**: Select the VPC and Subnet for the cluster. If you don't have one yet, you can create a new one following the guide [here](../../../../vserver/compute-hcm03-1a/vpc/virtual-private-cloud-vpc.md).
 * **Public Accessibility**: Enable if you want the cluster to have a Public IP and be accessible from the Internet; disable if you only want access via Private IP.
+* **Multi-AZ**: if you selected **Multi-AZ** in Step 1, this step requires a VPC with DNS enabled and shows a **Subnets** table for zone selection instead of a single Subnet — see [Create a Multi-AZ PostgreSQL Cluster](create-multi-az-postgresql-cluster.md).
 
 {% hint style="warning" %}
 **Note:** The Public Accessibility setting can only be selected **once** at the time of creation and cannot be changed afterwards.

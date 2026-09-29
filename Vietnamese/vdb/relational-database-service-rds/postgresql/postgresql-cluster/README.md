@@ -23,6 +23,7 @@ Trong mô hình PostgreSQL Cluster, các node được phân vai trò rõ ràng:
 | **Scale Read**        | Không                              | Có (Read traffic phân bổ đến Readers)                     |
 | **Backup**            | Automatic daily backup (cơ chế cũ) | Tích hợp Backup Center (Auto Backup + Manual Backup)      |
 | **Số lượng node**     | 1                                  | 2 - 10                                                    |
+| **Availability & Durability** | Single-AZ                          | Single-AZ hoặc Multi-AZ                                   |
 | **Use Case**          | Development, Testing, ứng dụng nhỏ | Production, Mission-critical, ứng dụng yêu cầu uptime cao |
 
 ### Khi nào nên sử dụng PostgreSQL Cluster?
@@ -55,13 +56,23 @@ Trong mô hình PostgreSQL Cluster, các node được phân vai trò rõ ràng:
 
 ***
 
+## Chế độ Availability & Durability
+
+PostgreSQL Cluster có hai chế độ triển khai, chọn tại trường **Availability & Durability** ở bước Basic configuration:
+
+* **Single-AZ**: toàn bộ Node nằm trong một Availability Zone. Phù hợp khi bạn cần High Availability ở mức Node và muốn cấu hình đơn giản nhất.
+* **Multi-AZ**: Node được trải trên từ hai Availability Zone trở lên. Cluster vẫn phục vụ được khi một Availability Zone gặp sự cố.
+
+Multi-AZ hiện chỉ khả dụng tại region HCM và yêu cầu VPC đã bật DNS. Hướng dẫn chi tiết tại [Khởi tạo PostgreSQL Cluster Multi-AZ](khoi-tao-postgresql-cluster-multi-az.md).
+
+***
 ## Tích hợp Backup Center
 
 PostgreSQL Cluster được tích hợp với **Backup Center (vBackup)**, cung cấp giải pháp backup & restore toàn diện:
 
 * **Auto Backup**: Được cấu hình bắt buộc khi tạo cluster. Backup chạy tự động theo lịch của Backup Policy đã chọn.
 * **Manual Backup**: Cho phép tạo **Full Snapshot** thủ công bất kỳ lúc nào từ trang chi tiết cluster.
-* **Restore**: Tạo cluster mới từ một restore point có sẵn trong Backup Center. Storage Size của cluster mới phải lớn hơn hoặc bằng Backup Size.
+* **Restore**: Tạo cluster mới từ một restore point có sẵn trong Backup Center. Cluster mới cần dung lượng lớn hơn dung lượng của bản backup; hệ thống hiển thị mức tối thiểu ngay tại trường **Storage size** sau khi bạn chọn bản backup.
 
 {% hint style="warning" %}
 **Lưu ý về Backup khi xóa Cluster:**
@@ -79,6 +90,7 @@ PostgreSQL Cluster được tích hợp với **Backup Center (vBackup)**, cung 
 | Giới hạn             | Mô tả                                                                   |
 | -------------------- | ----------------------------------------------------------------------- |
 | **Số lượng node**    | Tối thiểu 2, tối đa 10 node mỗi cluster                                 |
+| **Số Availability Zone** | Cluster Multi-AZ yêu cầu tối thiểu 2 zone, mỗi zone một Subnet          |
 | **Writer node**      | Luôn có đúng 1 Writer trong mỗi cluster                                 |
 | **Database Proxy**   | Chưa hỗ trợ trong phiên bản hiện tại (Coming Soon - Phase 2)            |
 | **Backup đồng thời** | Chỉ cho phép 1 job backup/restore chạy tại 1 thời điểm trên mỗi cluster |
@@ -111,8 +123,12 @@ Khi Writer node gặp sự cố, hệ thống sẽ **tự động failover**: m�
 
 ### 3. Tôi có thể tạo cluster từ bản backup có sẵn không?
 
-**Có.** Khi tạo cluster mới, bạn có thể chọn một restore point từ Backup Center để khôi phục dữ liệu. Lưu ý rằng Storage Size của cluster mới phải lớn hơn hoặc bằng Backup Size của bản backup.
+**Có.** Khi tạo cluster mới, bạn có thể chọn một restore point từ Backup Center để khôi phục dữ liệu. Cluster mới cần dung lượng lớn hơn dung lượng của bản backup; hệ thống hiển thị mức tối thiểu ngay tại trường **Storage size** sau khi bạn chọn bản backup.
 
 ### 4. Database Proxy là gì và khi nào sẽ có?
 
 Database Proxy cung cấp connection pooling và load balancing cho cluster. Tính năng này đang được phát triển và sẽ ra mắt trong **Phase 2**. Vui lòng theo dõi trang [Thông báo và Cập nhật](../../../announcements/release-notes.md) để nắm thông tin mới nhất.
+
+### 5. Multi-AZ khác Single-AZ ở đâu?
+
+**Single-AZ** đặt toàn bộ Node trong một Availability Zone; **Multi-AZ** trải Node trên từ hai Availability Zone trở lên, nên cluster vẫn chạy khi một Availability Zone gặp sự cố. Multi-AZ hiện chỉ có ở region HCM, yêu cầu VPC đã bật DNS và tối thiểu 2 zone. Xem [Khởi tạo PostgreSQL Cluster Multi-AZ](khoi-tao-postgresql-cluster-multi-az.md).

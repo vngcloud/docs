@@ -942,6 +942,7 @@
       * [Cài đặt Extension cho PostgreSQL Standalone](vdb/relational-database-service-rds/postgresql/postgresql-standalone/cac-extension-duoc-ho-tro-cho-standalone.md)
     * [PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster/README.md)
       * [Khởi tạo và Quản lý PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster/khoi-tao-va-quan-ly-postgresql-cluster.md)
+      * [Khởi tạo PostgreSQL Cluster Multi-AZ](vdb/relational-database-service-rds/postgresql/postgresql-cluster/khoi-tao-postgresql-cluster-multi-az.md)
       * [Cấu hình tham số cho PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster/cau-hinh-tham-so-cho-cluster.md)
       * [Cài đặt Extension cho PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster/cac-extension-duoc-ho-tro-cho-cluster.md)
       * [Migrate từ PostgreSQL Single sang PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster/migrate-tu-postgresql-single-sang-cluster.md)
