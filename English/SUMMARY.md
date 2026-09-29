@@ -852,6 +852,7 @@
       * [Extensions for PostgreSQL Standalone](vdb/relational-database-service-rds/postgresql/postgresql-standalone/vdb-postgresql-standalone-extensions.md)
     * [PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster/README.md)
       * [Create and Manage PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster/create-and-manage-postgresql-cluster.md)
+      * [Create a Multi-AZ PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster/create-multi-az-postgresql-cluster.md)
       * [Parameters for PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster/postgresql-cluster-parameters.md)
       * [Extensions for PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster/vdb-postgresql-cluster-extensions.md)
       * [Migrate from PostgreSQL Single to PostgreSQL Cluster](vdb/relational-database-service-rds/postgresql/postgresql-cluster/migrate-from-postgresql-single-to-cluster.md)

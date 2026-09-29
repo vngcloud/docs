@@ -24,6 +24,7 @@ Tại giao diện quản lý Database, bạn click chọn **Create Database**. Q
 * **Cluster Name**: Nhập tên cho cluster (6-20 ký tự, bắt đầu bằng chữ cái).
 * **Database Engine**: Chọn **PostgreSQL**.
 * **Deployment Type**: Chọn **Cluster** (tùy chọn này chỉ hiển thị khi Engine là PostgreSQL).
+* **Availability & Durability**: Chọn **Single-AZ** hoặc **Multi-AZ**. Với Multi-AZ, xem hướng dẫn riêng tại [Khởi tạo PostgreSQL Cluster Multi-AZ](khoi-tao-postgresql-cluster-multi-az.md).
 
 {% hint style="info" %}
 Khi chọn Deployment Type là **Cluster**, label sẽ đổi từ "Database Instance Name" thành "Cluster Name".
@@ -74,6 +75,7 @@ Khi chọn Deployment Type là **Cluster**, hệ thống hiển thị thêm sect
 
 * **Cloud Network (VPC & Subnet)**: Chọn VPC và Subnet cho cluster. Nếu chưa có, bạn có thể tạo mới theo hướng dẫn [tại đây](../../../../vserver/compute-hcm03-1a/network/virtual-private-cloud-vpc/README.md).
 * **Public Accessibility**: Bật nếu muốn cluster có IP Public và truy cập từ Internet; tắt nếu chỉ muốn truy cập qua IP Private.
+* **Multi-AZ**: nếu ở Bước 1 bạn chọn **Multi-AZ**, mục này yêu cầu VPC đã bật DNS và hiển thị bảng **Subnets** để chọn zone thay cho một Subnet đơn — xem [Khởi tạo PostgreSQL Cluster Multi-AZ](khoi-tao-postgresql-cluster-multi-az.md).
 
 {% hint style="warning" %}
 **Lưu ý:** Thiết lập Public Accessibility chỉ được chọn **một lần duy nhất** tại thời điểm khởi tạo và không thể thay đổi sau đó.

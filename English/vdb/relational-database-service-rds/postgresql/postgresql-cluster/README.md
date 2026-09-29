@@ -23,6 +23,7 @@ To create and manage a PostgreSQL Cluster, please refer to the guide [here](crea
 | **Scale Read**        | No                                       | Yes (Read traffic distributed to Readers)                        |
 | **Backup**            | Automatic daily backup (legacy)          | Integrated with Backup Center (Auto Backup + Manual Backup)      |
 | **Number of nodes**   | 1                                        | 2 - 10                                                           |
+| **Availability & Durability** | Single-AZ                              | Single-AZ or Multi-AZ                                            |
 | **Use Case**          | Development, Testing, small applications | Production, Mission-critical, applications requiring high uptime |
 
 ### When should you use PostgreSQL Cluster?
@@ -60,13 +61,23 @@ To create and manage a PostgreSQL Cluster, please refer to the guide [here](crea
 
 ***
 
+## Availability & Durability modes
+
+A PostgreSQL Cluster has two deployment modes, selected in the **Availability & Durability** field of the Basic configuration step:
+
+* **Single-AZ**: every Node sits in one Availability Zone. Suitable when you need High Availability at the Node level with the simplest configuration.
+* **Multi-AZ**: Nodes are spread across two or more Availability Zones. The cluster keeps serving traffic when one Availability Zone fails.
+
+Multi-AZ is currently available in the HCM region only and requires a VPC with DNS enabled. For the full guide, see [Create a Multi-AZ PostgreSQL Cluster](create-multi-az-postgresql-cluster.md).
+
+***
 ## Backup Center Integration
 
 PostgreSQL Cluster is integrated with **Backup Center (vBackup)**, providing a comprehensive backup & restore solution:
 
 * **Auto Backup**: Mandatory configuration when creating a cluster. Backup runs automatically according to the schedule of the selected Backup Policy.
 * **Manual Backup**: Allows creating a **Full Snapshot** manually at any time from the cluster detail page.
-* **Restore**: Create a new cluster from an available restore point in Backup Center. The Storage Size of the new cluster must be greater than or equal to the Backup Size.
+* **Restore**: Create a new cluster from an available restore point in Backup Center. The new cluster needs more storage than the backup itself; the system shows the required minimum on the **Storage size** field once you select a backup.
 
 {% hint style="warning" %}
 **Note about Backup when deleting a Cluster:**
@@ -84,6 +95,7 @@ PostgreSQL Cluster is integrated with **Backup Center (vBackup)**, providing a c
 | Limitation             | Description                                              |
 | ---------------------- | -------------------------------------------------------- |
 | **Number of nodes**    | Minimum 2, maximum 10 nodes per cluster                  |
+| **Availability Zones**  | A Multi-AZ Cluster requires at least 2 zones, one Subnet per zone |
 | **Writer node**        | Always exactly 1 Writer per cluster                      |
 | **Database Proxy**     | Not supported in current version (Coming Soon - Phase 2) |
 | **Concurrent backups** | Only 1 backup/restore job allowed at a time per cluster  |
@@ -116,8 +128,12 @@ When the Writer node encounters an issue, the system will **automatically failov
 
 ### 3. Can I create a cluster from an existing backup?
 
-**Yes.** When creating a new cluster, you can select a restore point from Backup Center to restore data. Note that the Storage Size of the new cluster must be greater than or equal to the Backup Size of the backup.
+**Yes.** When creating a new cluster, you can select a restore point from Backup Center to restore data. The new cluster needs more storage than the backup itself; the system shows the required minimum on the **Storage size** field once you select a backup.
 
 ### 4. What is Database Proxy and when will it be available?
 
 Database Proxy provides connection pooling and load balancing for the cluster. This feature is under development and will be released in **Phase 2**. Please follow the [Announcements and Updates](../../../announcements/release-notes.md) page for the latest information.
+
+### 5. How does Multi-AZ differ from Single-AZ?
+
+**Single-AZ** places every Node in one Availability Zone; **Multi-AZ** spreads Nodes across two or more Availability Zones, so the cluster keeps running when one Availability Zone fails. Multi-AZ is currently available in the HCM region only, requires a VPC with DNS enabled, and needs at least 2 zones. See [Create a Multi-AZ PostgreSQL Cluster](create-multi-az-postgresql-cluster.md).
