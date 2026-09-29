@@ -4,6 +4,18 @@ Tổng hợp các bản cập nhật và tính năng mới của tất cả các
 
 ***
 
+## Tháng 9, 2026 - vDB PostgreSQL Cluster (RDS) — chế độ Multi-AZ
+
+GreenNode bổ sung chế độ **Multi-AZ** cho PostgreSQL Cluster (RDS) tại region HCM, cho phép trải các Node của cluster trên từ hai availability zone trở lên để cluster vẫn phục vụ được khi một zone gặp sự cố.
+
+* **Chọn chế độ ngay từ đầu:** trường **Availability & Durability** ở bước Basic configuration, chọn Single-AZ hoặc Multi-AZ kèm mô tả từng chế độ.
+* **Tối thiểu 2 availability zone:** chọn zone và Subnet trong cùng một bảng ở bước Network & Security, mỗi zone một Subnet.
+* Giữ nguyên kiến trúc 1 Primary (Writer) + N Replicas (Reader), 2–10 node, automatic failover sang zone còn lại.
+* Yêu cầu VPC đã bật **DNS**; hiện chỉ khả dụng tại region HCM.
+* Tìm hiểu thêm tại [Khởi tạo PostgreSQL Cluster Multi-AZ](../relational-database-service-rds/postgresql/postgresql-cluster/khoi-tao-postgresql-cluster-multi-az.md).
+
+---
+
 ## Tháng 8, 2026 - vDB PostgreSQL Cluster (RDS) — region HAN
 
 GreenNode mở rộng PostgreSQL Cluster (RDS) sang region **HAN-01**, cho phép triển khai cluster PostgreSQL High Availability tại Hà Nội với các availability zone **HAN01-1A** và **HAN01-1B**, song song với region HCM hiện có.

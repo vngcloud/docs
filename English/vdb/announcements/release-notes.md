@@ -4,6 +4,18 @@ Summary of updates and new features across all engines in the vDB service.
 
 ***
 
+## September 2026 - vDB PostgreSQL Cluster (RDS) — Multi-AZ mode
+
+GreenNode adds the **Multi-AZ** mode to PostgreSQL Cluster (RDS) in the HCM region, letting you spread a cluster's Nodes across two or more availability zones so the cluster keeps serving traffic when one zone fails.
+
+* **Choose the mode up front:** the **Availability & Durability** field in the Basic configuration step, offering Single-AZ or Multi-AZ with a description of each.
+* **At least 2 availability zones:** pick zones and Subnets in one table in the Network & Security step, one Subnet per zone.
+* Keeps the same 1 Primary (Writer) + N Replicas (Reader) architecture, 2–10 nodes, with automatic failover to a remaining zone.
+* Requires a VPC with **DNS** enabled; currently available in the HCM region only.
+* Learn more at [Create a Multi-AZ PostgreSQL Cluster](../relational-database-service-rds/postgresql/postgresql-cluster/create-multi-az-postgresql-cluster.md).
+
+---
+
 ## August 2026 - vDB PostgreSQL Cluster (RDS) — HAN region
 
 GreenNode extends PostgreSQL Cluster (RDS) to the **HAN-01** region, so you can now deploy High Availability PostgreSQL clusters in Hanoi with availability zones **HAN01-1A** and **HAN01-1B**, alongside the existing HCM region.
