@@ -139,6 +139,4 @@ Lists detailed costs down to each individual **resource** — the most detailed 
 * Costs are calculated using the **current price list**, so the figures are **most accurate for postpaid users**. For **prepaid users**, discrepancies may occur if the price list changes between the payment date and the time Cost Explorer is accessed.
 * The **Forecast month cost** metric is based on usage trends from the beginning of the month to date and is for reference only.
 
-\
-\
-\\<br>
+<br>
