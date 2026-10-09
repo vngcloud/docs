@@ -27,7 +27,32 @@ CDC capture toàn bộ thay đổi dữ liệu (INSERT, UPDATE, DELETE) từ Pos
 
 ## Bước 1: Yêu cầu kích hoạt CDC
 
-Liên hệ **GreenNode Support** để yêu cầu kích hoạt tính năng CDC trên cluster của bạn. GreenNode Support sẽ cấp trực tiếp quyền `REPLICATION` cùng các quyền cần thiết khác cho tài khoản admin hiện có của cluster.
+CDC dựa trên Logical Replication, nên bạn cần kích hoạt Logical Replication cho cluster. Việc này gồm hai bước: GreenNode Support cấp quyền cho tài khoản của bạn, sau đó bạn tự bật tính năng trên portal.
+
+1. Liên hệ **GreenNode Support** để được cấp quyền kích hoạt Logical Replication cho cluster của bạn. GreenNode Support sẽ cấp trực tiếp quyền `REPLICATION` cùng các quyền cần thiết khác cho tài khoản admin hiện có của cluster.
+2. Trên portal, chọn **Request Logical Replication** từ một trong hai vị trí:
+   * Danh sách **Database**: bấm biểu tượng **⋮** ở cột **Action** của cluster.
+   * Trang chi tiết cluster: bấm biểu tượng **⋮** ở góc trên bên phải.
+
+![Chọn Request Logical Replication từ danh sách Database](../../../.gitbook/assets/vdb-pg-logical-replication-menu-list.png)
+
+![Chọn Request Logical Replication từ trang chi tiết cluster](../../../.gitbook/assets/vdb-pg-logical-replication-menu-detail.png)
+
+3. Trong hộp thoại **Request Logical Replication**, tick **Enable Logical Replication**, rồi bấm **Save**.
+
+![Hộp thoại Request Logical Replication](../../../.gitbook/assets/vdb-pg-logical-replication-dialog.png)
+
+4. Kiểm tra trường **Logical Replication** trong mục **General information** của cluster đã chuyển sang **Enabled**. Sau khi bật, tùy chọn **Request Logical Replication** không còn hiển thị trong menu.
+
+![Logical Replication ở trạng thái Enabled trong General information](../../../.gitbook/assets/vdb-pg-logical-replication-enabled.png)
+
+{% hint style="danger" %}
+Sau khi bật, Logical Replication **không thể tắt lại** trên cluster.
+{% endhint %}
+
+Nếu tài khoản chưa được GreenNode Support cấp quyền, khi bấm **Save** portal sẽ hiển thị thông báo **You don't have permission** và Logical Replication vẫn ở trạng thái **Disabled**. Liên hệ GreenNode Support để được cấp quyền, rồi thực hiện lại.
+
+![Thông báo khi tài khoản chưa được cấp quyền](../../../.gitbook/assets/vdb-pg-logical-replication-no-permission.png)
 
 {% hint style="warning" %}
 Trong quá trình quản lý replication slot, không xóa hoặc chỉnh sửa các replication slot không thuộc sở hữu của bạn. Các slot này có thể thuộc về hệ thống — xóa nhầm có thể gây ảnh hưởng đến hệ thống.
