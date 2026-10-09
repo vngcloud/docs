@@ -31,7 +31,32 @@ GreenNode vDB supports Logical Replication for **PostgreSQL 16 and 17** only.
 
 ### Step A.1: Request Logical Replication Activation
 
-Contact **GreenNode Support** to request Logical Replication activation on your cluster. GreenNode Support will grant the `REPLICATION` privilege, along with any other privileges needed, directly to your cluster's existing admin account.
+Enabling Logical Replication takes two steps: GreenNode Support grants permission to your account, then you enable the feature yourself on the portal.
+
+1. Contact **GreenNode Support** to be granted permission to enable Logical Replication on your cluster. GreenNode Support will grant the `REPLICATION` privilege, along with any other privileges needed, directly to your cluster's existing admin account.
+2. On the portal, select **Request Logical Replication** from either location:
+   * **Database** list: click the **⋮** icon in the cluster's **Action** column.
+   * Cluster detail page: click the **⋮** icon in the top-right corner.
+
+![Select Request Logical Replication from the Database list](../../../.gitbook/assets/vdb-pg-logical-replication-menu-list.png)
+
+![Select Request Logical Replication from the cluster detail page](../../../.gitbook/assets/vdb-pg-logical-replication-menu-detail.png)
+
+3. In the **Request Logical Replication** dialog, check **Enable Logical Replication**, then click **Save**.
+
+![Request Logical Replication dialog](../../../.gitbook/assets/vdb-pg-logical-replication-dialog.png)
+
+4. Verify that the **Logical Replication** field under **General information** shows **Enabled**. Once enabled, **Request Logical Replication** no longer appears in the menu.
+
+![Logical Replication shown as Enabled under General information](../../../.gitbook/assets/vdb-pg-logical-replication-enabled.png)
+
+{% hint style="danger" %}
+Once enabled, Logical Replication **cannot be turned off** on the cluster.
+{% endhint %}
+
+If your account has not been granted permission by GreenNode Support, clicking **Save** shows a **You don't have permission** message and Logical Replication stays **Disabled**. Contact GreenNode Support to be granted permission, then try again.
+
+![Message shown when the account has not been granted permission](../../../.gitbook/assets/vdb-pg-logical-replication-no-permission.png)
 
 {% hint style="warning" %}
 When managing Subscriptions, do not delete or modify replication slots that do not belong to you. These slots may belong to the system or other Subscriptions — accidentally dropping one will cause replication loss immediately.
@@ -90,7 +115,32 @@ FROM pg_publication;
 
 ### Step B.1: Request Logical Replication Activation
 
-Contact **GreenNode Support** to request Logical Replication activation on your cluster. GreenNode Support will grant the `REPLICATION` privilege, along with any other privileges needed, directly to your cluster's existing admin account.
+Enabling Logical Replication takes two steps: GreenNode Support grants permission to your account, then you enable the feature yourself on the portal.
+
+1. Contact **GreenNode Support** to be granted permission to enable Logical Replication on your cluster. GreenNode Support will grant the `REPLICATION` privilege, along with any other privileges needed, directly to your cluster's existing admin account.
+2. On the portal, select **Request Logical Replication** from either location:
+   * **Database** list: click the **⋮** icon in the cluster's **Action** column.
+   * Cluster detail page: click the **⋮** icon in the top-right corner.
+
+![Select Request Logical Replication from the Database list](../../../.gitbook/assets/vdb-pg-logical-replication-menu-list.png)
+
+![Select Request Logical Replication from the cluster detail page](../../../.gitbook/assets/vdb-pg-logical-replication-menu-detail.png)
+
+3. In the **Request Logical Replication** dialog, check **Enable Logical Replication**, then click **Save**.
+
+![Request Logical Replication dialog](../../../.gitbook/assets/vdb-pg-logical-replication-dialog.png)
+
+4. Verify that the **Logical Replication** field under **General information** shows **Enabled**. Once enabled, **Request Logical Replication** no longer appears in the menu.
+
+![Logical Replication shown as Enabled under General information](../../../.gitbook/assets/vdb-pg-logical-replication-enabled.png)
+
+{% hint style="danger" %}
+Once enabled, Logical Replication **cannot be turned off** on the cluster.
+{% endhint %}
+
+If your account has not been granted permission by GreenNode Support, clicking **Save** shows a **You don't have permission** message and Logical Replication stays **Disabled**. Contact GreenNode Support to be granted permission, then try again.
+
+![Message shown when the account has not been granted permission](../../../.gitbook/assets/vdb-pg-logical-replication-no-permission.png)
 
 {% hint style="warning" %}
 When managing Subscriptions, do not delete or modify replication slots that do not belong to you. These slots may belong to the system or other Subscriptions — accidentally dropping one will cause replication loss immediately.
