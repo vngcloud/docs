@@ -21,27 +21,28 @@ You can choose the appropriate form to optimize your or your unit's storage cost
 
 The pricing below applies to all Object Storage regions (HCM03, HAN02, HCM04).
 
-|                                  | Gold              | Gold (PAYG)         | Instant Archive   | Instant Archive (PAYG) |
-| -------------------------------- | ----------------- | ------------------- | ----------------- | ---------------------- |
-| **Storage price** (VND/GB/month) | 1,000             | 1,400               | 530               | 742                    |
-| **Request**                      | Unlimited         | Unlimited           | Unlimited         | Unlimited              |
-| **Traffic download (free)**      | Free x10          | Free x10            | Free 3TB          | Free 3TB               |
-| **Traffic upload**               | Free              | Free                | Free              | Free                   |
-| **Data retrieval time**          | Immediately       | Immediately         | Immediately       | Immediately            |
-| **Billing method**               | Package           | Pay as you go       | Package           | Pay as you go          |
-| **Billing unit**                 | GB                | GB                  | GB                | GB                     |
-| **Minimum package size**         | 30 GB             | 1 GB                | 30 GB             | 1 GB                   |
+|                                  | Gold        | Gold (PAYG)   | Gold High Perf | Gold High Perf (PAYG) | Instant Archive | Instant Archive (PAYG) |
+| -------------------------------- | ----------- | ------------- | -------------- | --------------------- | --------------- | ---------------------- |
+| **Storage price** (VND/GB/month) | 1,000       | 1,400         | 3,400          | 4,760                 | 530             | 742                    |
+| **Request**                      | Unlimited   | Unlimited     | Unlimited      | Unlimited             | Unlimited       | Unlimited              |
+| **Traffic download (free)**      | Free x10    | Free x10      | —              | —                     | Free 3TB        | Free 3TB               |
+| **Traffic upload**               | Free        | Free          | —              | —                     | Free            | Free                   |
+| **Data retrieval time**          | Immediately | Immediately   | —              | —                     | Immediately     | Immediately            |
+| **Billing method**               | Package     | Pay as you go | Package        | Pay as you go         | Package         | Pay as you go          |
+| **Billing unit**                 | GB          | GB            | GB/30 days     | GB                    | GB              | GB                     |
+| **Minimum package size**         | 30 GB       | 1 GB          | 30 GB          | 1 GB                  | 30 GB           | 1 GB                   |
 
 ***
 
 ## Extra Fees
 
-|                                              | Gold     | Gold (PAYG) | Instant Archive | Instant Archive (PAYG) |
-| -------------------------------------------- | -------- | ----------- | --------------- | ---------------------- |
-| **Domestic download traffic** (VND/GB)       | 280      | 280         | 280             | 280                    |
-| **International download traffic** (VND/GB)  | 330–580  | 330–580     | 330–580         | 330–580                |
+|                                             | Gold    | Gold High Perf & Gold High Perf PAYG | Gold (PAYG) | Instant Archive | Instant Archive (PAYG) |
+| ------------------------------------------- | ------- | ------------------------------------ | ----------- | --------------- | ---------------------- |
+| **Domestic download traffic** (VND/GB)      | 280     | 280                                  | 280         | 280             | 280                    |
+| **International download traffic** (VND/GB) | 330–580 | 330–580                              | 330–580     | 330–580         | 330–580                |
 
 > **Notes on free Traffic download:**
-> - **Gold:** Free download quota equals 10× your storage size (e.g., storing 30 GB → 300 GB free download/month).
-> - **Instant Archive:** Fixed 3 TB/month.
-> - When exceeding the free tier, traffic is charged at the **Domestic / International download** rates shown in the Extra Fees table above.
+>
+> * **Gold:** Free download quota equals 10× your storage size (e.g., storing 30 GB → 300 GB free download/month).
+> * **Instant Archive:** Fixed 3 TB/month.
+> * When exceeding the free tier, traffic is charged at the **Domestic / International download** rates shown in the Extra Fees table above.
