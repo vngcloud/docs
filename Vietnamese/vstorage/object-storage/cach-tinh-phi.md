@@ -21,27 +21,28 @@ Bạn có thể lựa chọn hình thức phù hợp để tối ưu chi phí l�
 
 Bảng giá dưới đây áp dụng cho toàn bộ các region Object Storage (HCM03, HAN02, HCM04).
 
-|                                       | Gold              | Gold (PAYG)         | Instant Archive   | Instant Archive (PAYG) |
-| ------------------------------------- | ----------------- | ------------------- | ----------------- | ---------------------- |
-| **Giá lưu trữ** (VND/GB/tháng)        | 1.000             | 1.400               | 530               | 742                    |
-| **Request**                           | Unlimited         | Unlimited           | Unlimited         | Unlimited              |
-| **Traffic download (free)**           | Free x10          | Free x10            | Free 3TB          | Free 3TB               |
-| **Traffic upload**                    | Free              | Free                | Free              | Free                   |
-| **Thời gian retrieval dữ liệu**       | Ngay lập tức      | Ngay lập tức        | Ngay lập tức      | Ngay lập tức           |
-| **Hình thức tính phí**                | Mua package       | Dung lượng sử dụng  | Mua package       | Dung lượng sử dụng     |
-| **Đơn vị tính phí**                   | GB                | GB                  | GB                | GB                     |
-| **Minimum package size**              | 30 GB             | 1 GB                | 30 GB             | 1 GB                   |
+|                                 | Gold         | Gold (PAYG)        | Gold High Perf | Gold High Perf (PAYG) | Instant Archive | Instant Archive (PAYG) |
+| ------------------------------- | ------------ | ------------------ | -------------- | --------------------- | --------------- | ---------------------- |
+| **Giá lưu trữ** (VND/GB/tháng)  | 1.000        | 1.400              | 3.400          | 4.760                 | 530             | 742                    |
+| **Request**                     | Unlimited    | Unlimited          | Unlimited      | Unlimited             | Unlimited       | Unlimited              |
+| **Traffic download (free)**     | Free x10     | Free x10           | Free x10       | Free x10              | Free 3TB        | Free 3TB               |
+| **Traffic upload**              | Free         | Free               | Free           | Free                  | Free            | Free                   |
+| **Thời gian retrieval dữ liệu** | Ngay lập tức | Ngay lập tức       | Ngay lập tức   | Ngay lập tức          | Ngay lập tức    | Ngay lập tức           |
+| **Hình thức tính phí**          | Mua package  | Dung lượng sử dụng | Mua package    | Dung lượng sử dụng    | Mua package     | Dung lượng sử dụng     |
+| **Đơn vị tính phí**             | GB           | GB                 | GB/30 ngày     | GB                    | GB              | GB                     |
+| **Minimum package size**        | 30 GB        | 1 GB               | 30 GB          | 1 GB                  | 30 GB           | 1 GB                   |
 
 ***
 
 ## Phí phát sinh (Extra)
 
-|                                              | Gold     | Gold (PAYG) | Instant Archive | Instant Archive (PAYG) |
-| -------------------------------------------- | -------- | ----------- | --------------- | ---------------------- |
-| **Domestic download traffic** (VND/GB)       | 280      | 280         | 280             | 280                    |
-| **International download traffic** (VND/GB)  | 330–580  | 330–580     | 330–580         | 330–580                |
+|                                             | Gold & Gold PAYG | Gold High Perf & Gold High Perf PAYG | Instant Archive | Instant Archive (PAYG) |
+| ------------------------------------------- | ---------------- | ------------------------------------ | --------------- | ---------------------- |
+| **Domestic download traffic** (VND/GB)      | 280              | 280                                  | 280             | 280                    |
+| **International download traffic** (VND/GB) | 330–580          | 330–580                              | 330–580         | 330–580                |
 
 > **Lưu ý về Traffic download free:**
-> - **Gold:** Hạn mức download miễn phí bằng 10 lần dung lượng lưu trữ (VD: lưu 30 GB → miễn phí 300 GB/tháng).
-> - **Instant Archive:** Hạn mức cố định 3 TB/tháng.
-> - Khi vượt hạn mức free, traffic sẽ tính phí theo giá **Domestic / International download** ở bảng Phí phát sinh.
+>
+> * **Gold:** Hạn mức download miễn phí bằng 10 lần dung lượng lưu trữ (VD: lưu 30 GB → miễn phí 300 GB/tháng).
+> * **Instant Archive:** Hạn mức cố định 3 TB/tháng.
+> * Khi vượt hạn mức free, traffic sẽ tính phí theo giá **Domestic / International download** ở bảng Phí phát sinh.
