@@ -103,8 +103,15 @@ Hãy chọn giá trị phù hợp với RAM của flavour node đang dùng.
 | --- | --- | --- | --- | --- | --- | --- |
 | `wal_level` | replica | `replica` / `logical` | string | | Mức độ thông tin ghi vào WAL. Đặt `logical` để dùng Logical Replication hoặc CDC | **Có** |
 | `max_wal_senders` | 10 | 10 - 65536 | integer | | Số lượng WAL sender process tối đa, dùng cho streaming replication và CDC | **Có** |
+| `max_logical_replication_workers` | 4 | 0 - 262143 | integer | | Số lượng worker tối đa cho Logical Replication ở phía subscriber (apply worker và table sync worker). Mỗi worker được tính vào `max_worker_processes` | **Có** |
 | `max_wal_size` | 2048 | 32 - 2147483647 | integer | MB | Kích thước WAL tối đa trước khi trigger checkpoint | Không |
 | `checkpoint_timeout` | 300 | 30 - 86400 | integer | s | Khoảng thời gian tối đa giữa hai checkpoint tự động | Không |
+
+### pg_cron
+
+| Parameter | Giá trị mặc định | Giá trị cho phép | Kiểu | Unit | Công dụng | Restart Required |
+| --- | --- | --- | --- | --- | --- | --- |
+| `cron.database_name` | Database đầu tiên bạn tạo khi khởi tạo Cluster | `^(?!postgres$)[a-zA-Z_][a-zA-Z0-9_]{0,62}$` | string | | Database mà pg_cron chạy job. Extension `pg_cron` chỉ tạo và dùng được trong database này | **Có** |
 
 ### Transactions & Locking
 
