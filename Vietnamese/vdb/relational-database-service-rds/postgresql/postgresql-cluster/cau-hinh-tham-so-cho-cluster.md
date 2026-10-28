@@ -24,6 +24,12 @@ Trang này liệt kê các parameter có thể tùy chỉnh thông qua **DB Conf
 Hãy chọn giá trị phù hợp với RAM của flavour node đang dùng.
 {% endhint %}
 
+{% hint style="info" %}
+**Hành vi khi bỏ parameter khỏi DB Configuration Group**: Khi bạn bỏ một parameter khỏi DB Configuration Group đang gắn với cluster, parameter đó **giữ nguyên giá trị đang áp dụng** (giá trị được gán gần nhất) và **không** trở về giá trị mặc định của Database Engine. Parameter không còn nằm trong group vẫn tiếp tục chạy với giá trị hiện tại.
+
+Bạn có thể thay đổi **số lượng parameter tùy ý** trong group. Parameter nào không được thay đổi trên portal sẽ giữ nguyên giá trị hiện tại của cluster.
+{% endhint %}
+
 ***
 
 ### Connections

@@ -24,6 +24,12 @@ This page lists the parameters that can be customized through a **DB Configurati
 Choose values appropriate for the RAM of the node flavour in use.
 {% endhint %}
 
+{% hint style="info" %}
+**Behavior when removing a parameter from the DB Configuration Group**: When you remove a parameter from the DB Configuration Group attached to the cluster, the parameter **keeps its currently applied value** (the most recently assigned value) and does **not** revert to the Database Engine's default value. A parameter that is no longer in the group continues to run with its current value.
+
+You can change **any number of parameters** in the group. Parameters that are not changed on the portal keep their current values on the cluster.
+{% endhint %}
+
 ***
 
 ### Connections
