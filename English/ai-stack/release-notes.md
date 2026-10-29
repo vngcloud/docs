@@ -4,6 +4,27 @@ A single timeline of updates across all GreenNode AI Stack products — GreenNod
 
 ***
 
+## October 2026
+
+**GreenNode AgentBase — Built-in Tools (Code Interpreter & Browser)**
+
+AgentBase introduces **Built-in Tools** — ready-made tools that let AI agents run code and drive a browser inside a microVM sandbox isolated per session:
+
+* **Code Interpreter:** run Python and shell commands, read/write files, run background processes — each session in its own microVM with a dedicated kernel.
+  * Learn more at [Use Code Interpreter](agent-base/built-in-tools/use-code-interpreter.md).
+
+* **Browser:** drive a real Chrome over CDP (Playwright/Puppeteer), watch the screen live via live view, and download session recordings.
+  * Learn more at [Use Browser](agent-base/built-in-tools/use-browser.md).
+
+* Integrates over **MCP**: connect your agent with an MCP endpoint and authenticate through the GreenNode Portal login flow — tokens from a Root user, IAM user, or Service Account all work.
+
+* Sandbox workloads run on a dedicated vKS node group with nested virtualization (Kata Containers + Cloud Hypervisor), fully separated from shared infrastructure.
+  * Learn more at [Built-in Tools](agent-base/built-in-tools/README.md).
+
+* The feature is rolling out by account **whitelist** — contact [support@greennode.ai](mailto:support@greennode.ai) to get enabled.
+
+***
+
 ## August 2026
 
 **GreenNode AgentBase — CLI & MCP**
