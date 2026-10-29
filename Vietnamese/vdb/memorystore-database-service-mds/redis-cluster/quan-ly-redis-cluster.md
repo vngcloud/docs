@@ -1,6 +1,6 @@
 # Quản lý Redis Cluster
 
-Sau khi tạo Redis Cluster, bạn có thể quản lý topology, thay đổi số replica, thực hiện backup thủ công và xóa cluster trực tiếp từ trang chi tiết.
+Sau khi tạo Redis Cluster, bạn có thể quản lý topology, thay đổi số replica, thay đổi instance type, thực hiện backup thủ công và xóa cluster trực tiếp từ trang chi tiết.
 
 ---
 
@@ -62,6 +62,57 @@ Bạn có thể scale up hoặc scale down số Replica của cluster sau khi t�
 5. Chọn SAVE để áp dụng.
 
 {% hint style="info" %} Mỗi lần edit chỉ được thay đổi ±1 node. Để đạt số node mong muốn, lưu và lặp lại thao tác. Cơ chế này đảm bảo sync hoàn tất trước mỗi bước, tránh lỗi replication. {% endhint %}
+
+---
+
+## Thay đổi Instance Type (Resize Instance Type)
+
+Bạn có thể tăng hoặc giảm instance type (CPU/RAM) của cluster ngay trên portal mà không phải tạo cluster mới, không phải chuyển dữ liệu và không phải đổi endpoint trong ứng dụng.
+
+{% hint style="info" %} Resize Instance Type cho Redis Cluster hiện chỉ khả dụng tại region **HAN**. {% endhint %}
+
+* Resize áp cho **cả cluster**: mọi node cùng đổi sang một instance type, không resize riêng từng node.
+* Áp cho cả hai chiều: tăng lên package lớn hơn hoặc giảm xuống package nhỏ hơn.
+* Chỉ resize được khi cluster đang ở trạng thái **ACTIVE**.
+
+Để thay đổi Instance Type:
+
+1. Mở dialog **Resize instance type** theo một trong hai cách:
+   * Tại trang danh sách Database, chọn biểu tượng Action (⋮) của cluster, rồi chọn **Resize Instance Type**.
+
+     ![Menu Action có mục Resize Instance Type](../../../.gitbook/assets/vdb-redis-cluster-resize-action-menu.png)
+   * Tại trang chi tiết cluster, chọn nút **Resize Instance Type** trên header.
+
+     ![Nút Resize Instance Type trên header trang chi tiết](../../../.gitbook/assets/vdb-redis-cluster-resize-header-button.png)
+2. Trong dialog, chọn **Instance family** và **CPU Platform**, rồi chọn package mới trong bảng. Cột **Description** cho biết dung lượng bộ nhớ dùng được cho dữ liệu của từng package.
+3. Kiểm tra chi phí ở bên phải dialog:
+   * **CURRENT INSTANCE TYPE**: package và giá của instance type đang dùng.
+   * **NEW INSTANCE TYPE**: package và giá của package vừa chọn.
+   * **Total**: bằng giá của package mới.
+
+   Giá hiển thị là giá tháng của một node nhân với số node của cluster.
+4. Chọn **RESIZE** để áp dụng, hoặc **CANCEL** để đóng dialog mà không thay đổi gì.
+
+![Dialog Resize instance type](../../../.gitbook/assets/vdb-redis-cluster-resize-dialog.png)
+
+Một số package trong bảng bị làm mờ và không chọn được:
+
+* Package đang dùng.
+* Package nhỏ hơn mà không chứa đủ lượng dữ liệu cluster đang có.
+
+Khi tăng instance type, hệ thống kiểm tra quota cho phần CPU/RAM tăng thêm nhân với số node. Nếu không đủ quota, yêu cầu bị từ chối kèm thông báo và cluster giữ nguyên cấu hình cũ. Khi giảm instance type, hệ thống không kiểm tra quota.
+
+### Trong và sau khi resize
+
+* Cluster chuyển sang trạng thái **BUILDING**. Trong thời gian này, mọi action ở menu Action và trên header (kể cả Resize Instance Type và Delete) đều bị làm mờ và không thao tác được.
+* Trong lúc các node khởi động lại lần lượt, thao tác ghi vào Redis có thể lỗi trong một khoảng ngắn mỗi khi chuyển master. Endpoint kết nối giữ nguyên.
+* Khi hoàn tất, cluster trở về **ACTIVE** và mục Instance type hiển thị package mới. Toàn bộ dữ liệu được giữ nguyên.
+* Giá của package mới bắt đầu tính từ lúc resize thành công. Dung lượng Free Backup cũng thay đổi theo package mới.
+* Tab **History** ghi lại thao tác với Action **Resize**, Description "Change package from" kèm tên package cũ và package mới. Status chuyển từ **IN-PROGRESS** sang **FINISHED**.
+
+![Dòng Resize trong tab History](../../../.gitbook/assets/vdb-redis-cluster-resize-history.png)
+
+Nếu resize gặp lỗi, hệ thống tự đưa cluster về instance type cũ và trạng thái **ACTIVE**, dữ liệu không bị ảnh hưởng và giá không đổi. Dòng Resize trong tab History chuyển sang **FAILED**, nội dung lỗi hiển thị ở cột **Message**.
 
 ---
 
@@ -187,6 +238,7 @@ Từ trang danh sách Database, chọn biểu tượng Action (⋮) bên cạnh 
 
 | Action                   | Mô tả                                                     |
 | ------------------------ | ----------------------------------------------------------- |
+| Resize Instance Type     | Tăng hoặc giảm instance type (CPU/RAM) của cluster. Hiện chỉ khả dụng tại region HAN. |
 | Edit configuration group | Chỉnh sửa Redis configuration parameters.                 |
 | Edit DB settings         | Chỉnh sửa tên, backup policy và các database settings. |
 | Delete                   | Xóa cluster (có dialog xác nhận).                       |

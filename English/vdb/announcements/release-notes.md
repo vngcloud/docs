@@ -4,6 +4,28 @@ Summary of updates and new features across all engines in the vDB service.
 
 ***
 
+## October 2026 - vDB Redis Cluster (MDS) — HAN region and Resize Instance Type
+
+GreenNode extends Redis Cluster (MDS) to the **HAN** region and adds **Resize Instance Type**, letting you increase or decrease a cluster's CPU/RAM directly on the portal.
+
+* **New region HAN:** deploy Redis Clusters in Hanoi with availability zones **HAN01-1A** and **HAN01-1B**, alongside the existing HCM region.
+* **Resize Instance Type:** change the instance type of the whole cluster up or down, without creating a new cluster, moving data, or changing the endpoint.
+* If a resize fails, the system automatically reverts the cluster to its previous configuration; data is not affected.
+* Resize Instance Type is currently available in the HAN region only.
+* Learn more at [Manage a Redis Cluster](../memorystore-database-service-mds/redis-cluster/manage-redis-cluster.md).
+
+---
+
+## October 2026 - vDB PostgreSQL Cluster (RDS) — pg_cron extension
+
+GreenNode adds the **pg_cron** extension to PostgreSQL Cluster (RDS), letting you schedule recurring SQL statements with cron syntax directly in the database.
+
+* **pg_cron 1.6** is now in the list of supported extensions for PostgreSQL Cluster.
+* pg_cron runs jobs in the database set by the `cron.database_name` parameter, which defaults to the first database you create when creating the Cluster. The extension can only be created and used in this database.
+* Learn more at [PostgreSQL Cluster Extensions](../relational-database-service-rds/postgresql/postgresql-cluster/vdb-postgresql-cluster-extensions.md) and [PostgreSQL Parameters for Cluster](../relational-database-service-rds/postgresql/postgresql-cluster/postgresql-cluster-parameters.md).
+
+---
+
 ## September 2026 - vDB PostgreSQL Cluster (RDS) — Multi-AZ mode
 
 GreenNode adds the **Multi-AZ** mode to PostgreSQL Cluster (RDS) in the HCM region, letting you spread a cluster's Nodes across two or more availability zones so the cluster keeps serving traffic when one zone fails.

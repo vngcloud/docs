@@ -1,6 +1,6 @@
 # Manage a Redis Cluster
 
-After creating a Redis Cluster, you can manage its topology, change the number of replicas, trigger manual backups, and delete the cluster directly from the cluster detail page.
+After creating a Redis Cluster, you can manage its topology, change the number of replicas, change the instance type, trigger manual backups, and delete the cluster directly from the cluster detail page.
 
 ***
 
@@ -64,6 +64,59 @@ You can scale up or scale down the number of Replicas after cluster creation wit
 {% hint style="info" %}
 Each edit allows only **±1 node** at a time. To reach a target node count, save and repeat the operation. This ensures each sync completes before the next step, preventing replication errors.
 {% endhint %}
+
+***
+
+## Change Instance Type (Resize Instance Type)
+
+You can increase or decrease the instance type (CPU/RAM) of a cluster directly on the portal, without creating a new cluster, moving data, or changing the endpoint in your application.
+
+{% hint style="info" %}
+Resize Instance Type for Redis Cluster is currently available in the **HAN** region only.
+{% endhint %}
+
+* Resizing applies to the **whole cluster**: all nodes switch to the same instance type. You cannot resize individual nodes.
+* Works in both directions: up to a larger package or down to a smaller one.
+* A cluster can be resized only while it is in **ACTIVE** status.
+
+**To change the Instance Type:**
+
+1. Open the **Resize instance type** dialog in one of two ways:
+   * On the Database list page, click the **Action (⋮)** icon of the cluster, then select **Resize Instance Type**.
+
+     ![Action menu with Resize Instance Type](../../../.gitbook/assets/vdb-redis-cluster-resize-action-menu.png)
+   * On the cluster detail page, click the **Resize Instance Type** button in the header.
+
+     ![Resize Instance Type button in the detail page header](../../../.gitbook/assets/vdb-redis-cluster-resize-header-button.png)
+2. In the dialog, select an **Instance family** and a **CPU Platform**, then select a new package in the table. The **Description** column shows how much memory each package provides for your data.
+3. Review the cost on the right side of the dialog:
+   * **CURRENT INSTANCE TYPE:** package and price of the instance type in use.
+   * **NEW INSTANCE TYPE:** package and price of the selected package.
+   * **Total:** equal to the price of the new package.
+
+   Prices shown are the monthly price of one node multiplied by the number of nodes in the cluster.
+4. Click **RESIZE** to apply, or **CANCEL** to close the dialog without changes.
+
+![Resize instance type dialog](../../../.gitbook/assets/vdb-redis-cluster-resize-dialog.png)
+
+Some packages in the table are greyed out and cannot be selected:
+
+* The package currently in use.
+* Smaller packages that cannot hold the amount of data the cluster currently stores.
+
+When increasing the instance type, the system checks your quota for the additional CPU/RAM multiplied by the number of nodes. If the quota is insufficient, the request is rejected with a message and the cluster keeps its current configuration. No quota check is performed when decreasing the instance type.
+
+### During and after resizing
+
+* The cluster switches to **BUILDING** status. During this time, all actions in the Action menu and the header (including Resize Instance Type and Delete) are greyed out and unavailable.
+* While nodes restart one after another, writes to Redis may fail for a short moment each time the master switches. The connection endpoint stays the same.
+* When the resize completes, the cluster returns to **ACTIVE** and the Instance type field shows the new package. All data is preserved.
+* The new package's price applies from the moment the resize succeeds. The Free Backup size also changes with the new package.
+* The **History** tab records the operation with Action **Resize** and Description "Change package from" followed by the old and new package names. Status changes from **IN-PROGRESS** to **FINISHED**.
+
+![Resize row in the History tab](../../../.gitbook/assets/vdb-redis-cluster-resize-history.png)
+
+If the resize fails, the system automatically reverts the cluster to the previous instance type and **ACTIVE** status; data is not affected and the price does not change. The Resize row in the History tab changes to **FAILED**, with the error shown in the **Message** column.
 
 ***
 
@@ -193,6 +246,7 @@ From the Database list page, click the **Action (⋮)** icon next to a Redis Clu
 
 | Action                       | Description                                                  |
 | ---------------------------- | ------------------------------------------------------------ |
+| **Resize Instance Type**     | Increase or decrease the cluster's instance type (CPU/RAM). Currently available in the HAN region only. |
 | **Edit configuration group** | Edit Redis configuration parameters.                         |
 | **Edit DB settings**         | Edit the cluster name, backup policy, and database settings. |
 | **Delete**                   | Delete the cluster (with confirmation dialog).               |
