@@ -126,14 +126,14 @@ A Redis Cluster applies parameter configuration through a **DB Configuration Gro
 
 ### View and create a Configuration Group
 
-1. Open the **Configuration group** page on the vpB portal.
+1. Open the **Configuration group** page on the vDB portal.
 2. Search for a group by name or ID, or create a new group with **Create a Configuration group**.
 
 ![Configuration group list](../../../.gitbook/assets/vdb-redis-cluster-config-group-list.png)
 
 When creating a group for a Redis Cluster: enter a **Configuration name** and description, select **Engine** Redis, **Deployment type** Cluster, then choose the **Engine version** that matches your cluster.
 
-![Create Configuration group dialog](../../../.gitbook/assets/vdb-redis-cluster-config-group-create.png)
+<figure><img src="../../../.gitbook/assets/vdb-redis-cluster-config-group-create.png" alt="Create Configuration group dialog"><figcaption><p>Create Configuration group dialog — select Deployment type Cluster when creating a group for a Redis Cluster</p></figcaption></figure>
 
 ### Attach a group to a Redis Cluster
 
@@ -158,9 +158,9 @@ In the **Preview changes and apply** dialog: review the changes in the **Current
 ![Preview changes and apply dialog](../../../.gitbook/assets/vdb-redis-cluster-config-group-edit-parameters-preview.png)
 
 {% hint style="info" %}
-**Behavior when removing a parameter from the Configuration Group**: When you remove a parameter from the Configuration Group attached to the cluster, the parameter **keeps its currently applied value** (the most recently assigned value) and does **not** revert to the Database Engine's default value. A parameter that is no longer in the group continues to run with its current value.
+**Behavior when removing a parameter from the Configuration Group**: For a Redis Cluster, when you remove a parameter from the Configuration Group attached to the cluster, the parameter **keeps its current value** and does **not** revert to the Database Engine's default value. This differs from a Redis Single node, where a removed parameter reverts to the Database Engine's default value.
 
-You can change **any number of parameters** in the group. Parameters that are not changed on the portal keep their current values on the cluster.
+Each time you edit, you can change one or more parameters. Parameters that you do not change on the portal keep their current values.
 {% endhint %}
 
 ***
