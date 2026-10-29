@@ -4,6 +4,37 @@ Tổng hợp các bản cập nhật của toàn bộ sản phẩm trong GreenNo
 
 ***
 
+## Tháng 10, 2026
+
+**GreenNode AI Platform — Guardrail**
+
+AI Platform ra mắt **Guardrail** — tính năng bảo vệ dữ liệu và kiểm soát nội dung trước khi request tới model trên MaaS, không cần sửa code client:
+
+* **Word filters:** chặn/che theo từ khoá hoặc cụm từ bạn khai báo (hành động Mask / Detect / Block).
+* **Prompt-based filter:** model "giám sát" đọc và đánh giá nội dung theo mô tả của bạn — bắt được cả prompt vượt rào (jailbreak) được diễn đạt lại.
+* **Sensitive information:** che/thay/xoá tự động dữ liệu PII (email, số thẻ tín dụng, số điện thoại…) và regex tuỳ chỉnh trước khi dữ liệu tới model.
+* Gắn Guardrail vào model trên MaaS là mọi request tự động đi qua — endpoint và API key giữ nguyên.
+* Tìm hiểu thêm tại [Guardrail](ai-platform/guardrail/README.md).
+
+**GreenNode AgentBase — Built-in Tools (Code Interpreter & Browser)**
+
+AgentBase ra mắt **Built-in Tools** — bộ tool dựng sẵn cho AI Agent chạy code và điều khiển trình duyệt trong sandbox microVM được cô lập theo từng session:
+
+* **Code Interpreter:** chạy Python và lệnh shell, đọc/ghi file, chạy tiến trình nền — mỗi session trong một microVM riêng có kernel riêng.
+  * Tìm hiểu thêm tại [Sử dụng Code Interpreter](agent-base/built-in-tools/su-dung-code-interpreter.md).
+
+* **Browser:** điều khiển Chrome thật qua CDP (Playwright/Puppeteer), xem trực tiếp màn hình qua live view và tải lại bản ghi phiên (recording).
+  * Tìm hiểu thêm tại [Sử dụng Browser](agent-base/built-in-tools/su-dung-browser.md).
+
+* Tích hợp qua **MCP**: kết nối agent bằng endpoint MCP, xác thực qua flow đăng nhập GreenNode Portal — token từ Root user, IAM user hoặc Service Account đều dùng được.
+
+* Sandbox workload chạy trên node group vKS riêng bật nested virtualization (Kata Containers + Cloud Hypervisor), tách biệt hoàn toàn khỏi hạ tầng chung.
+  * Tìm hiểu thêm tại [Built-in Tools](agent-base/built-in-tools/README.md).
+
+* Tính năng đang mở theo **whitelist** account — liên hệ [support@greennode.ai](mailto:support@greennode.ai) để được bật.
+
+***
+
 ## Tháng 8, 2026
 
 **GreenNode AgentBase — CLI & MCP**
