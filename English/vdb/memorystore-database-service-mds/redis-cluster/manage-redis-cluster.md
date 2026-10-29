@@ -126,14 +126,14 @@ A Redis Cluster applies parameter configuration through a **DB Configuration Gro
 
 ### View and create a Configuration Group
 
-1. Open the **Configuration group** page on the vpB portal.
+1. Open the **Configuration group** page on the vDB portal.
 2. Search for a group by name or ID, or create a new group with **Create a Configuration group**.
 
 ![Configuration group list](../../../.gitbook/assets/vdb-redis-cluster-config-group-list.png)
 
 When creating a group for a Redis Cluster: enter a **Configuration name** and description, select **Engine** Redis, **Deployment type** Cluster, then choose the **Engine version** that matches your cluster.
 
-![Create Configuration group dialog](../../../.gitbook/assets/vdb-redis-cluster-config-group-create.png)
+<figure><img src="../../../.gitbook/assets/vdb-redis-cluster-config-group-create.png" alt="Create Configuration group dialog"><figcaption><p>Create Configuration group dialog — select Deployment type Cluster when creating a group for a Redis Cluster</p></figcaption></figure>
 
 ### Attach a group to a Redis Cluster
 

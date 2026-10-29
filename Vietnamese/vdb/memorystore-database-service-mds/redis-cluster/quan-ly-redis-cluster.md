@@ -124,14 +124,14 @@ Redis Cluster áp dụng cấu hình tham số qua **DB Configuration Group**: b
 
 ### Xem và tạo Configuration Group
 
-1. Mở trang **Configuration group** trên vpB portal.
+1. Mở trang **Configuration group** trên vDB portal.
 2. Tìm group theo tên hoặc ID, hoặc tạo group mới bằng **Create a Configuration group**.
 
 ![Danh sách Configuration group](../../../.gitbook/assets/vdb-redis-cluster-config-group-list.png)
 
 Khi tạo group cho Redis Cluster: đặt **Configuration name** và mô tả, chọn **Engine** là Redis, **Deployment type** là Cluster, rồi chọn **Engine version** phù hợp với cluster.
 
-![Dialog Create Configuration group](../../../.gitbook/assets/vdb-redis-cluster-config-group-create.png)
+<figure><img src="../../../.gitbook/assets/vdb-redis-cluster-config-group-create.png" alt="Dialog Create Configuration group"><figcaption><p>Dialog Create Configuration group — chọn Deployment type là Cluster khi tạo group cho Redis Cluster</p></figcaption></figure>
 
 ### Gắn group vào Redis Cluster
 
