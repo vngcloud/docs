@@ -118,6 +118,51 @@ Trang Backup của vDB (menu: Memory Store > Backup) hiển thị tổng quan da
 
 ---
 
+## Cấu hình tham số (Configuration Group)
+
+Redis Cluster áp dụng cấu hình tham số qua **DB Configuration Group**: bạn tạo group, gắn vào cluster và chỉnh sửa tham số ngay trên portal thay vì sửa file cấu hình thủ công. Cách tạo, chỉnh sửa và gắn group cho MDS Instance được mô tả chi tiết ở trang [Quản lý cấu hình MDS Instance (Configuration Group)](../quan-ly-cau-hinh-mds-instance.md).
+
+### Xem và tạo Configuration Group
+
+1. Mở trang **Configuration group** trên vpB portal.
+2. Tìm group theo tên hoặc ID, hoặc tạo group mới bằng **Create a Configuration group**.
+
+![Danh sách Configuration group](../../../.gitbook/assets/vdb-redis-cluster-config-group-list.png)
+
+Khi tạo group cho Redis Cluster: đặt **Configuration name** và mô tả, chọn **Engine** là Redis, **Deployment type** là Cluster, rồi chọn **Engine version** phù hợp với cluster.
+
+![Dialog Create Configuration group](../../../.gitbook/assets/vdb-redis-cluster-config-group-create.png)
+
+### Gắn group vào Redis Cluster
+
+1. Mở trang chi tiết Redis Cluster và chọn **Edit Configuration Group** trên header. Hành động này cũng có trong Action Menu (⋮) của cluster ở danh sách Database.
+2. Trong dialog, mở dropdown **DB configuration group** và chọn group muốn gắn. Danh sách chỉ liệt kê các group cùng engine với cluster; nhấn biểu tượng làm mới nếu group mới tạo chưa xuất hiện.
+3. Chọn **Save** để cập nhật group cho cluster.
+
+![Dialog Edit Configuration Group](../../../.gitbook/assets/vdb-redis-cluster-config-group-edit-configuration-group.png)
+
+### Sửa tham số
+
+Mở Configuration Group đang gắn với cluster — trang chi tiết hiển thị bảng tham số với **Name**, **Values**, **Allowed values** và **Data type**.
+
+![Trang chi tiết Configuration group với bảng tham số](../../../.gitbook/assets/vdb-redis-cluster-config-group-detail.png)
+
+Chọn **Edit parameters** để chuyển sang chế độ chỉnh sửa, thay đổi các tham số trong khoảng **Allowed values** cho phép, rồi chọn **Preview and Save**.
+
+![Chế độ Edit parameters](../../../.gitbook/assets/vdb-redis-cluster-config-group-edit-parameters.png)
+
+Trong dialog **Preview changes and apply**: đối chiếu thay đổi ở bảng **Current value** / **New value**, tick checkbox xác nhận việc sửa tham số sẽ ảnh hưởng tới các database đang gắn group, rồi chọn **Apply**.
+
+![Dialog Preview changes and apply](../../../.gitbook/assets/vdb-redis-cluster-config-group-edit-parameters-preview.png)
+
+{% hint style="info" %}
+**Hành vi khi bỏ một parameter khỏi Configuration Group**: Khi bạn bỏ một parameter khỏi Configuration Group đang gắn với cluster, parameter đó **giữ nguyên giá trị đang áp dụng** (giá trị được gán gần nhất) và **không** trở về giá trị mặc định của Database Engine. Parameter không còn nằm trong group vẫn tiếp tục chạy với giá trị hiện tại.
+
+Bạn có thể thay đổi **số lượng parameter tùy ý** trong group. Parameter nào không được thay đổi trên portal sẽ giữ nguyên giá trị hiện tại của cluster.
+{% endhint %}
+
+---
+
 ## Xóa Redis Cluster
 
 {% hint style="warning" %} Thao tác xóa cluster không thể hoàn tác. Toàn bộ dữ liệu sẽ bị xóa vĩnh viễn. {% endhint %}

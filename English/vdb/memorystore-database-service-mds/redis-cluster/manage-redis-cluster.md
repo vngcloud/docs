@@ -120,6 +120,51 @@ The vDB **Backup** page (menu: Memory Store > Backup) shows a summary of your ba
 
 ***
 
+## Configure Parameters (Configuration Group)
+
+A Redis Cluster applies parameter configuration through a **DB Configuration Group**: you create a group, attach it to the cluster, and edit parameters directly on the portal instead of manually editing configuration files.
+
+### View and create a Configuration Group
+
+1. Open the **Configuration group** page on the vpB portal.
+2. Search for a group by name or ID, or create a new group with **Create a Configuration group**.
+
+![Configuration group list](../../../.gitbook/assets/vdb-redis-cluster-config-group-list.png)
+
+When creating a group for a Redis Cluster: enter a **Configuration name** and description, select **Engine** Redis, **Deployment type** Cluster, then choose the **Engine version** that matches your cluster.
+
+![Create Configuration group dialog](../../../.gitbook/assets/vdb-redis-cluster-config-group-create.png)
+
+### Attach a group to a Redis Cluster
+
+1. Open the Redis Cluster detail page and select **Edit Configuration Group** on the header. This action is also available in the cluster's Action Menu (⋮) on the Database list.
+2. In the dialog, open the **DB configuration group** dropdown and select the group to attach. The list only shows groups of the same engine as the cluster; click the refresh icon if a newly created group does not appear.
+3. Click **Save** to update the group for the cluster.
+
+![Edit Configuration Group dialog](../../../.gitbook/assets/vdb-redis-cluster-config-group-edit-configuration-group.png)
+
+### Edit parameters
+
+Open the Configuration Group attached to the cluster — the detail page shows the parameter table with **Name**, **Values**, **Allowed values**, and **Data type**.
+
+![Configuration group detail page with the parameter table](../../../.gitbook/assets/vdb-redis-cluster-config-group-detail.png)
+
+Click **Edit parameters** to switch to edit mode, change parameters within their **Allowed values**, then click **Preview and Save**.
+
+![Edit parameters mode](../../../.gitbook/assets/vdb-redis-cluster-config-group-edit-parameters.png)
+
+In the **Preview changes and apply** dialog: review the changes in the **Current value** / **New value** table, tick the checkbox to confirm that editing parameters will affect the attached databases, then click **Apply**.
+
+![Preview changes and apply dialog](../../../.gitbook/assets/vdb-redis-cluster-config-group-edit-parameters-preview.png)
+
+{% hint style="info" %}
+**Behavior when removing a parameter from the Configuration Group**: When you remove a parameter from the Configuration Group attached to the cluster, the parameter **keeps its currently applied value** (the most recently assigned value) and does **not** revert to the Database Engine's default value. A parameter that is no longer in the group continues to run with its current value.
+
+You can change **any number of parameters** in the group. Parameters that are not changed on the portal keep their current values on the cluster.
+{% endhint %}
+
+***
+
 ## Delete a Redis Cluster
 
 {% hint style="warning" %}
