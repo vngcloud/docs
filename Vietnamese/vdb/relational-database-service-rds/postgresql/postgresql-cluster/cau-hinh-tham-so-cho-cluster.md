@@ -25,9 +25,9 @@ Hãy chọn giá trị phù hợp với RAM của flavour node đang dùng.
 {% endhint %}
 
 {% hint style="info" %}
-**Hành vi khi bỏ parameter khỏi DB Configuration Group**: Khi bạn bỏ một parameter khỏi DB Configuration Group đang gắn với cluster, parameter đó **giữ nguyên giá trị đang áp dụng** (giá trị được gán gần nhất) và **không** trở về giá trị mặc định của Database Engine. Parameter không còn nằm trong group vẫn tiếp tục chạy với giá trị hiện tại.
+**Hành vi khi bỏ parameter khỏi DB Configuration Group**: Với PostgreSQL Cluster, khi bạn bỏ một parameter khỏi DB Configuration Group đang gắn với cluster, parameter đó **giữ nguyên giá trị đang có** và **không** trở về giá trị mặc định của Database Engine. Điều này khác với PostgreSQL Standalone (Single node), nơi parameter bị bỏ sẽ trở về giá trị mặc định của Database Engine.
 
-Bạn có thể thay đổi **số lượng parameter tùy ý** trong group. Parameter nào không được thay đổi trên portal sẽ giữ nguyên giá trị hiện tại của cluster.
+Mỗi lần chỉnh sửa, bạn có thể thay đổi một hoặc nhiều parameter. Các parameter không được thay đổi trên portal sẽ giữ nguyên giá trị đang có.
 {% endhint %}
 
 ***

@@ -156,9 +156,9 @@ Trong dialog **Preview changes and apply**: đối chiếu thay đổi ở bản
 ![Dialog Preview changes and apply](../../../.gitbook/assets/vdb-redis-cluster-config-group-edit-parameters-preview.png)
 
 {% hint style="info" %}
-**Hành vi khi bỏ một parameter khỏi Configuration Group**: Khi bạn bỏ một parameter khỏi Configuration Group đang gắn với cluster, parameter đó **giữ nguyên giá trị đang áp dụng** (giá trị được gán gần nhất) và **không** trở về giá trị mặc định của Database Engine. Parameter không còn nằm trong group vẫn tiếp tục chạy với giá trị hiện tại.
+**Hành vi khi bỏ một parameter khỏi Configuration Group**: Với Redis Cluster, khi bạn bỏ một parameter khỏi Configuration Group đang gắn với cluster, parameter đó **giữ nguyên giá trị đang có** và **không** trở về giá trị mặc định của Database Engine. Điều này khác với Redis Single node, nơi parameter bị bỏ sẽ trở về giá trị mặc định của Database Engine.
 
-Bạn có thể thay đổi **số lượng parameter tùy ý** trong group. Parameter nào không được thay đổi trên portal sẽ giữ nguyên giá trị hiện tại của cluster.
+Mỗi lần chỉnh sửa, bạn có thể thay đổi một hoặc nhiều parameter. Các parameter không được thay đổi trên portal sẽ giữ nguyên giá trị đang có.
 {% endhint %}
 
 ---

@@ -158,9 +158,9 @@ In the **Preview changes and apply** dialog: review the changes in the **Current
 ![Preview changes and apply dialog](../../../.gitbook/assets/vdb-redis-cluster-config-group-edit-parameters-preview.png)
 
 {% hint style="info" %}
-**Behavior when removing a parameter from the Configuration Group**: When you remove a parameter from the Configuration Group attached to the cluster, the parameter **keeps its currently applied value** (the most recently assigned value) and does **not** revert to the Database Engine's default value. A parameter that is no longer in the group continues to run with its current value.
+**Behavior when removing a parameter from the Configuration Group**: For a Redis Cluster, when you remove a parameter from the Configuration Group attached to the cluster, the parameter **keeps its current value** and does **not** revert to the Database Engine's default value. This differs from a Redis Single node, where a removed parameter reverts to the Database Engine's default value.
 
-You can change **any number of parameters** in the group. Parameters that are not changed on the portal keep their current values on the cluster.
+Each time you edit, you can change one or more parameters. Parameters that you do not change on the portal keep their current values.
 {% endhint %}
 
 ***

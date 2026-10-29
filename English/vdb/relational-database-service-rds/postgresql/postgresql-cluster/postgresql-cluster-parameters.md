@@ -25,9 +25,9 @@ Choose values appropriate for the RAM of the node flavour in use.
 {% endhint %}
 
 {% hint style="info" %}
-**Behavior when removing a parameter from the DB Configuration Group**: When you remove a parameter from the DB Configuration Group attached to the cluster, the parameter **keeps its currently applied value** (the most recently assigned value) and does **not** revert to the Database Engine's default value. A parameter that is no longer in the group continues to run with its current value.
+**Behavior when removing a parameter from the DB Configuration Group**: For a PostgreSQL Cluster, when you remove a parameter from the DB Configuration Group attached to the cluster, the parameter **keeps its current value** and does **not** revert to the Database Engine's default value. This differs from a PostgreSQL Standalone (Single node), where a removed parameter reverts to the Database Engine's default value.
 
-You can change **any number of parameters** in the group. Parameters that are not changed on the portal keep their current values on the cluster.
+Each time you edit, you can change one or more parameters. Parameters that you do not change on the portal keep their current values.
 {% endhint %}
 
 ***
