@@ -6,6 +6,16 @@ Tổng hợp các bản cập nhật của toàn bộ sản phẩm trong GreenNo
 
 ## Tháng 10, 2026
 
+**GreenNode AI Platform — Guardrail**
+
+AI Platform ra mắt **Guardrail** — tính năng bảo vệ dữ liệu và kiểm soát nội dung trước khi request tới model trên MaaS, không cần sửa code client:
+
+* **Word filters:** chặn/che theo từ khoá hoặc cụm từ bạn khai báo (hành động Mask / Detect / Block).
+* **Prompt-based filter:** model "giám sát" đọc và đánh giá nội dung theo mô tả của bạn — bắt được cả prompt vượt rào (jailbreak) được diễn đạt lại.
+* **Sensitive information:** che/thay/xoá tự động dữ liệu PII (email, số thẻ tín dụng, số điện thoại…) và regex tuỳ chỉnh trước khi dữ liệu tới model.
+* Gắn Guardrail vào model trên MaaS là mọi request tự động đi qua — endpoint và API key giữ nguyên.
+* Tìm hiểu thêm tại [Guardrail](ai-platform/guardrail/README.md).
+
 **GreenNode AgentBase — Built-in Tools (Code Interpreter & Browser)**
 
 AgentBase ra mắt **Built-in Tools** — bộ tool dựng sẵn cho AI Agent chạy code và điều khiển trình duyệt trong sandbox microVM được cô lập theo từng session:
