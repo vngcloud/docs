@@ -4,6 +4,28 @@ Tổng hợp các bản cập nhật và tính năng mới của tất cả các
 
 ***
 
+## Tháng 10, 2026 - vDB Redis Cluster (MDS) — region HAN và Resize Instance Type
+
+GreenNode mở rộng Redis Cluster (MDS) sang region **HAN**, đồng thời bổ sung tính năng **Resize Instance Type** để tăng hoặc giảm CPU/RAM của cluster ngay trên portal.
+
+* **Region mới HAN:** triển khai Redis Cluster tại Hà Nội với các availability zone **HAN01-1A** và **HAN01-1B**, song song với region HCM hiện có.
+* **Resize Instance Type:** đổi instance type cho cả cluster theo cả hai chiều tăng và giảm, không phải tạo cluster mới, không phải chuyển dữ liệu và giữ nguyên endpoint.
+* Hệ thống tự đưa cluster về cấu hình cũ nếu resize gặp lỗi, dữ liệu không bị ảnh hưởng.
+* Resize Instance Type hiện chỉ khả dụng tại region HAN.
+* Tìm hiểu thêm tại [Quản lý Redis Cluster](../memorystore-database-service-mds/redis-cluster/quan-ly-redis-cluster.md).
+
+---
+
+## Tháng 10, 2026 - vDB PostgreSQL Cluster (RDS) — extension pg_cron
+
+GreenNode bổ sung extension **pg_cron** cho PostgreSQL Cluster (RDS), cho phép lên lịch chạy câu lệnh SQL định kỳ theo cú pháp cron ngay trong database.
+
+* **pg_cron 1.6** có trong danh sách extension được hỗ trợ của PostgreSQL Cluster.
+* pg_cron chạy job trên database được chỉ định ở tham số `cron.database_name`, mặc định là database đầu tiên bạn tạo khi khởi tạo Cluster. Extension chỉ tạo và dùng được trong database này.
+* Tìm hiểu thêm tại [PostgreSQL Cluster Extensions](../relational-database-service-rds/postgresql/postgresql-cluster/cac-extension-duoc-ho-tro-cho-cluster.md) và [PostgreSQL Parameters cho Cluster](../relational-database-service-rds/postgresql/postgresql-cluster/cau-hinh-tham-so-cho-cluster.md).
+
+---
+
 ## Tháng 9, 2026 - vDB PostgreSQL Cluster (RDS) — chế độ Multi-AZ
 
 GreenNode bổ sung chế độ **Multi-AZ** cho PostgreSQL Cluster (RDS) tại region HCM, cho phép trải các Node của cluster trên từ hai availability zone trở lên để cluster vẫn phục vụ được khi một zone gặp sự cố.
