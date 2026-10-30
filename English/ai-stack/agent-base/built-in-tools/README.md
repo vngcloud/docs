@@ -19,24 +19,11 @@ Built-in Tools is currently being rolled out by **whitelist**. If your account i
 
 ## Architecture
 
-Each of your sessions runs inside its own microVM with a dedicated kernel, claimed from a pre-warmed VM pool, so creating a session takes only a few seconds.
+Each of your sessions runs inside its own microVM with a dedicated kernel, claimed from a pre-warmed VM pool, so creating a session takes only a few seconds. Both tools share the same sandbox foundation — they differ in the product layer on top:
 
-```
-Agent / MCP client
-        │  MCP (HTTPS)
-        ▼
-Built-in Tools gateway
-  (Code Interpreter · Browser)
-        │
-        ▼
-AgentBase Runtime ── OpenSandbox (warm VM pool)
-        │
-        ▼
-Dedicated vKS node group (nested virtualization)
-        │  Kata Containers + Cloud Hypervisor
-        ▼
-Each session = 1 microVM with its own kernel
-```
+<figure><img src="../../../.gitbook/assets/Agentbase-image/agentbase-code-interpreter-architecture.svg" alt=""><figcaption><p>Code Interpreter — the agent calls tools over MCP, code runs in an isolated sandbox microVM</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/Agentbase-image/agentbase-browser-architecture.svg" alt=""><figcaption><p>Browser — the agent drives Chromium inside a sandbox microVM over CDP</p></figcaption></figure>
 
 Main layers:
 

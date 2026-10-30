@@ -64,6 +64,10 @@ Recording ─ saved when the session is deleted ─────┘
 - **Live view** — a human watches Chrome's screen live over noVNC, embedded in the portal via an iframe.
 - **Recording** — a session recording is preserved when the session ends.
 
+The full flow: your agent (with an automation library such as Playwright or browser-use) receives a query → the LLM picks tool calls (`click`, `type`, `goto`...) → CDP commands travel over the automation stream into the Chromium inside the session → page content and screenshots return to the agent:
+
+<figure><img src="../../../.gitbook/assets/Agentbase-image/agentbase-browser-architecture.svg" alt=""><figcaption><p>Browser architecture — the agent drives Chromium inside a sandbox microVM over CDP</p></figcaption></figure>
+
 Browser follows the same pattern as [Code Interpreter](use-code-interpreter.md): create the resource, wait for `ACTIVE`, create sessions (one VM per session), delete when done.
 
 ---

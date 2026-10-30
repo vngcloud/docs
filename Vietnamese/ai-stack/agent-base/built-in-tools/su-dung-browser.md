@@ -64,6 +64,10 @@ Ghi hình ── recording (lưu khi xoá session) ──────┘
 - **Live view** — người xem màn hình Chrome trực tiếp qua noVNC, nhúng trong portal bằng iframe.
 - **Recording** — bản ghi phiên được lưu lại khi session kết thúc.
 
+Luồng đầy đủ: agent (kèm automation library như Playwright, browser-use) nhận query → LLM chọn tool call (`click`, `type`, `goto`...) → lệnh CDP đi qua automation stream vào Chromium trong session → nội dung trang và screenshot trả về agent:
+
+<figure><img src="../../../.gitbook/assets/Agentbase-image/agentbase-browser-architecture.svg" alt=""><figcaption><p>Kiến trúc Browser — agent điều khiển Chromium trong sandbox microVM qua CDP</p></figcaption></figure>
+
 Browser dùng cùng khuôn với [Code Interpreter](su-dung-code-interpreter.md): tạo tài nguyên, chờ `ACTIVE`, tạo session (một VM mỗi session), xoá khi hết dùng.
 
 ---

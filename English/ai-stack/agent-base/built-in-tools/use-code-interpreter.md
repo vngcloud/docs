@@ -52,6 +52,16 @@ Tokens from a **Root user, IAM user, or Service Account** all work. If your agen
 
 ---
 
+## How it works
+
+Your agent receives a user query, the LLM picks a tool call, and the tool call travels over the MCP connection into the Code Interpreter — running inside its own sandbox microVM and returning the result to the agent:
+
+<figure><img src="../../../.gitbook/assets/Agentbase-image/agentbase-code-interpreter-architecture.svg" alt=""><figcaption><p>Code Interpreter architecture — the agent calls tools over MCP, code runs in an isolated sandbox microVM</p></figcaption></figure>
+
+A Code Interpreter is **created once and reused** across sessions — each session is still its own microVM.
+
+---
+
 ## Usage lifecycle
 
 One round of using Code Interpreter goes through these steps:

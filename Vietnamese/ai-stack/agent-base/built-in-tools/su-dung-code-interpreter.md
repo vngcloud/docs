@@ -52,6 +52,16 @@ Token từ **Root user, IAM user hoặc Service Account** đều dùng được.
 
 ---
 
+## Mô hình hoạt động
+
+Agent nhận query của người dùng, LLM chọn tool call, rồi tool call đi qua kết nối MCP vào Code Interpreter — chạy trong sandbox microVM riêng và trả kết quả về cho agent:
+
+<figure><img src="../../../.gitbook/assets/Agentbase-image/agentbase-code-interpreter-architecture.svg" alt=""><figcaption><p>Kiến trúc Code Interpreter — agent gọi tool qua MCP, code chạy trong sandbox microVM cô lập</p></figcaption></figure>
+
+Code Interpreter tạo **một lần và dùng lại** cho nhiều session — mỗi session vẫn là một microVM riêng.
+
+---
+
 ## Vòng đời sử dụng
 
 Một lần dùng Code Interpreter đi qua các bước sau:
