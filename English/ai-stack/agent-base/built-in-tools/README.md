@@ -69,7 +69,7 @@ The endpoint is an **OAuth resource server** — your client drives the whole lo
 
 Tokens from a **Root user, IAM user, or Service Account** all work — all three issue the same kind of access token. If your agent runs headless (no browser available), attach the access token directly in your client's configuration.
 
-See each tool's page for detailed connection instructions.
+Each MCP connection is pinned to a specific resource via a header — `x-code-interpreter-id` for Code Interpreter, `x-browser-id` for Browser — see each tool's page for detailed connection instructions.
 
 ---
 

@@ -69,7 +69,7 @@ Endpoint là một **OAuth resource server** — client tự điều phối toà
 
 Token từ **Root user, IAM user hoặc Service Account** đều dùng được — cả ba đều cấp cùng một loại access token. Nếu agent chạy headless (không mở được trình duyệt), gắn access token trực tiếp vào cấu hình của client.
 
-Xem hướng dẫn kết nối chi tiết trong trang từng tool.
+Mỗi kết nối MCP gắn với một tài nguyên cụ thể qua header — `x-code-interpreter-id` cho Code Interpreter, `x-browser-id` cho Browser — xem hướng dẫn kết nối chi tiết trong trang từng tool.
 
 ---
 

@@ -21,24 +21,30 @@
 https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/code
 ```
 
-**Step 2:** Add it to your MCP client configuration. Example for Claude Code:
+**Step 2:** Add it to your MCP client configuration, with a header pointing to the Code Interpreter to use. Example for Claude Code:
 
 ```bash
-claude mcp add --transport http code-interpreter \
-  https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/code
+claude mcp add --transport http --scope user code-interpreter \
+  "https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/code" \
+  --header "x-code-interpreter-id: <YOUR_CODE_INTERPRETER_ID>"
 ```
 
-Or for Cursor / VS Code — only `url` is needed:
+Or for Cursor / VS Code — add the header to the config:
 
 ```json
 {
   "mcpServers": {
     "code-interpreter": {
-      "url": "https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/code"
+      "url": "https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/code",
+      "headers": {
+        "x-code-interpreter-id": "<YOUR_CODE_INTERPRETER_ID>"
+      }
     }
   }
 }
 ```
+
+Replace `<YOUR_CODE_INTERPRETER_ID>` with the `id` of the Code Interpreter you created (see [Usage lifecycle](#usage-lifecycle)) — every call over this MCP connection goes into that exact Code Interpreter.
 
 **Step 3:** Sign in the first time. The endpoint is an OAuth resource server: your client runs the login flow itself (**Dynamic Client Registration**) and opens the GreenNode Portal login URL in the browser. After sign-in, the access token is kept and **refreshed automatically** — no re-login every session.
 
@@ -57,8 +63,8 @@ Create Code Interpreter → wait for ACTIVE → create session → invoke tools 
 
 **Step 1: Create a Code Interpreter**
 
-1. Run the create tool (or call `POST /v1/code-interpreters` via the API).
-2. The request returns immediately with status `CREATING`.
+1. Call `POST /v1/code-interpreters` to create a Code Interpreter.
+2. The request returns immediately with status `CREATING` and an `id` — this is the value for the `x-code-interpreter-id` header when connecting over MCP.
 
 **Step 2: Wait for the ACTIVE status**
 
