@@ -21,24 +21,30 @@
 https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/browser
 ```
 
-**Step 2:** Add it to your MCP client configuration. Example for Claude Code:
+**Step 2:** Add it to your MCP client configuration, with a header pointing to the Browser to use. Example for Claude Code:
 
 ```bash
-claude mcp add --transport http browser \
-  https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/browser
+claude mcp add --transport http --scope user browser \
+  "https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/browser" \
+  --header "x-browser-id: <YOUR_BROWSER_ID>"
 ```
 
-Or for Cursor / VS Code — only `url` is needed:
+Or for Cursor / VS Code — add the header to the config:
 
 ```json
 {
   "mcpServers": {
     "browser": {
-      "url": "https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/browser"
+      "url": "https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/browser",
+      "headers": {
+        "x-browser-id": "<YOUR_BROWSER_ID>"
+      }
     }
   }
 }
 ```
+
+Replace `<YOUR_BROWSER_ID>` with the `id` of the Browser you created — every call over this MCP connection goes into that exact Browser.
 
 **Step 3:** Sign in the first time — your client runs the login flow itself (**Dynamic Client Registration**) and opens the GreenNode Portal login URL in the browser; the access token is kept and **refreshed automatically** afterwards. Tokens from a **Root user, IAM user, or Service Account** all work.
 
@@ -64,7 +70,7 @@ Browser follows the same pattern as [Code Interpreter](use-code-interpreter.md):
 
 ## Driving Chrome with the automation stream
 
-**Step 1:** Create a Browser and a session (same as Code Interpreter: create → wait for `ACTIVE` → create session).
+**Step 1:** Create a Browser with the `POST /v1/browsers` API, wait for the `ACTIVE` status, then create a session — same as Code Interpreter. The `id` returned on creation is the value for the `x-browser-id` header when connecting over MCP.
 
 **Step 2:** Enable the automation stream for the session (tool / API `PUT .../sessions/{sessionId}/streams`). The stream can be toggled per session.
 

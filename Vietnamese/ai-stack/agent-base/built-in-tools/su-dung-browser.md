@@ -21,24 +21,30 @@
 https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/browser
 ```
 
-**Bước 2:** Thêm vào cấu hình MCP client của bạn. Ví dụ với Claude Code:
+**Bước 2:** Thêm vào cấu hình MCP client của bạn, kèm header chỉ định Browser sẽ dùng. Ví dụ với Claude Code:
 
 ```bash
-claude mcp add --transport http browser \
-  https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/browser
+claude mcp add --transport http --scope user browser \
+  "https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/browser" \
+  --header "x-browser-id: <YOUR_BROWSER_ID>"
 ```
 
-Hoặc với Cursor / VS Code — chỉ cần `url`:
+Hoặc với Cursor / VS Code — thêm header vào config:
 
 ```json
 {
   "mcpServers": {
     "browser": {
-      "url": "https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/browser"
+      "url": "https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/browser",
+      "headers": {
+        "x-browser-id": "<YOUR_BROWSER_ID>"
+      }
     }
   }
 }
 ```
+
+Thay `<YOUR_BROWSER_ID>` bằng `id` của Browser bạn đã tạo — mọi lời gọi qua kết nối MCP này đi vào đúng Browser đó.
 
 **Bước 3:** Đăng nhập lần đầu — client tự chạy flow đăng nhập (**Dynamic Client Registration**) và mở URL login của GreenNode Portal trên trình duyệt; access token được giữ và **tự refresh** sau đó. Token từ **Root user, IAM user hoặc Service Account** đều dùng được.
 
@@ -64,7 +70,7 @@ Browser dùng cùng khuôn với [Code Interpreter](su-dung-code-interpreter.md)
 
 ## Điều khiển Chrome bằng automation stream
 
-**Bước 1:** Tạo Browser và session (giống Code Interpreter: tạo → chờ `ACTIVE` → tạo session).
+**Bước 1:** Tạo Browser bằng API `POST /v1/browsers`, chờ trạng thái `ACTIVE` rồi tạo session — giống Code Interpreter. `id` trả về khi tạo là giá trị đi vào header `x-browser-id` khi kết nối MCP.
 
 **Bước 2:** Bật automation stream cho session (tool/API `PUT .../sessions/{sessionId}/streams`). Luồng này bật/tắt được cho từng session.
 

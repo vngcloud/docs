@@ -21,24 +21,30 @@
 https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/code
 ```
 
-**Bước 2:** Thêm vào cấu hình MCP client của bạn. Ví dụ với Claude Code:
+**Bước 2:** Thêm vào cấu hình MCP client của bạn, kèm header chỉ định Code Interpreter sẽ dùng. Ví dụ với Claude Code:
 
 ```bash
-claude mcp add --transport http code-interpreter \
-  https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/code
+claude mcp add --transport http --scope user code-interpreter \
+  "https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/code" \
+  --header "x-code-interpreter-id: <YOUR_CODE_INTERPRETER_ID>"
 ```
 
-Hoặc với Cursor / VS Code — chỉ cần `url`:
+Hoặc với Cursor / VS Code — thêm header vào config:
 
 ```json
 {
   "mcpServers": {
     "code-interpreter": {
-      "url": "https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/code"
+      "url": "https://gw-greennode-builtin-tools-110718.agentbase-gateway.aiplatform.vngcloud.vn/code",
+      "headers": {
+        "x-code-interpreter-id": "<YOUR_CODE_INTERPRETER_ID>"
+      }
     }
   }
 }
 ```
+
+Thay `<YOUR_CODE_INTERPRETER_ID>` bằng `id` của Code Interpreter bạn đã tạo (xem [Vòng đời sử dụng](#vong-doi-su-dung)) — mọi lời gọi qua kết nối MCP này đi vào đúng Code Interpreter đó.
 
 **Bước 3:** Đăng nhập lần đầu. Endpoint là một OAuth resource server: client tự chạy flow đăng nhập (**Dynamic Client Registration**) và mở URL login của GreenNode Portal trên trình duyệt. Sau khi đăng nhập, access token được giữ và **tự refresh** — không cần đăng nhập lại mỗi session.
 
@@ -57,8 +63,8 @@ Tạo Code Interpreter → chờ ACTIVE → tạo session → gọi tool → (l�
 
 **Bước 1: Tạo Code Interpreter**
 
-1. Chạy tool tạo Code Interpreter (hoặc gọi `POST /v1/code-interpreters` qua API).
-2. Yêu cầu trả về ngay với trạng thái `CREATING`.
+1. Gọi `POST /v1/code-interpreters` để tạo Code Interpreter.
+2. Yêu cầu trả về ngay với trạng thái `CREATING`, kèm `id` — đây là giá trị đi vào header `x-code-interpreter-id` khi kết nối MCP.
 
 **Bước 2: Chờ trạng thái ACTIVE**
 
