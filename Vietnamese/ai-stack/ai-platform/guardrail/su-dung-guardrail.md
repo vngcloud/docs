@@ -1,32 +1,32 @@
 # Sử dụng Guardrail
 
-> Hướng dẫn này giúp bạn tạo một Guardrail trên AI Platform, gắn Guardrail vào các model MaaS và kiểm tra request đi qua Guardrail — client không cần sửa code. Xem [Guardrail là gì?](README.md) nếu chưa quen với ba lớp kiểm tra.
+> Hướng dẫn này giúp bạn tạo một Guardrail trên AI Platform, gắn Guardrail vào các model MaaS và kiểm tra request đi qua Guardrail — client không cần sửa code. Xem [Guardrail là gì?](./) nếu chưa quen với ba lớp kiểm tra.
 
----
+***
 
 ## Điều kiện cần (Prerequisites)
 
-- Có **tài khoản AI Platform** với model đã bật trên MaaS — Guardrail gắn vào model catalog của bạn (model tên riêng tự host/BYOK chưa gắn được).
-- Model cần bảo vệ thuộc một trong các loại route: **chat, completions, responses, messages, embeddings** (các loại khác như generateContent/rerank chưa hỗ trợ).
-- Mỗi model chỉ gắn được vào **một Guardrail** tại một thời điểm.
-- Nếu dùng Word filters kèm file, chuẩn bị file **.xlsx** theo template (nút **Download template** trong form).
+* Có **tài khoản AI Platform** với model đã bật trên MaaS — Guardrail gắn vào model catalog của bạn (model tên riêng tự host/BYOK chưa gắn được).
+* Model cần bảo vệ thuộc một trong các loại route: **chat, completions, responses, messages, embeddings** (các loại khác như generateContent/rerank chưa hỗ trợ).
+* Mỗi model chỉ gắn được vào **một Guardrail** tại một thời điểm.
+* Nếu dùng Word filters kèm file, chuẩn bị file **.xlsx** theo template (nút **Download template** trong form).
 
----
+***
 
 ## Tạo một Guardrail
 
 **Bước 1: Mở form tạo**
 
 1. Đăng nhập vào Console AI Platform.
-2. Truy cập **Configuration → Guardrail**.
-3. Nhấn **Create a Guardrail**. Form gồm 4 khối: **Basic configuration**, **Word filters**, **Prompt-based filter**, **Sensitive information**.
+2. Truy cập mục [**Guardrail**](https://aiplatform.console.greennode.ai/guardrail).
+3. Nhấn [**Create a Guardrail**](https://aiplatform.console.greennode.ai/guardrail/create). Form gồm 4 khối: **Basic configuration**, **Word filters**, **Prompt-based filter**, **Sensitive information**.
 
 **Bước 2: Điền Basic configuration**
 
-| Trường                        | Bắt buộc | Quy tắc                                                                                                                        |
-| ------------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| **Guardrail name**        | Có        | Chỉ chữ thường `a-z`, số `0-9` và dấu `-`; độ dài 5–100 ký tự; không trùng tên Guardrail khác của bạn. |
-| **Guardrail description** | Không     | Tối đa 255 ký tự.                                                                                                           |
+| Trường                    | Bắt buộc | Quy tắc                                                                                                |
+| ------------------------- | -------- | ------------------------------------------------------------------------------------------------------ |
+| **Guardrail name**        | Có       | Chỉ chữ thường `a-z`, số `0-9` và dấu `-`; độ dài 5–100 ký tự; không trùng tên Guardrail khác của bạn. |
+| **Guardrail description** | Không    | Tối đa 255 ký tự.                                                                                      |
 
 **Bước 3: Cấu hình Word filters**
 
@@ -35,11 +35,11 @@ Guardrail phát hiện từ/cụm từ trong input request rồi áp hành độ
 1. Thêm từng từ bằng **Add a word or phrase**, hoặc nạp hàng loạt bằng **Upload .xlsx file** (template tải bằng **Download template**).
 2. Điền các trường theo bảng dưới cho mỗi từ.
 
-| Trường                | Bắt buộc | Quy tắc                                                                                                                        |
-| ----------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| **Word / phrase** | Có        | Tối đa 100 ký tự và tối đa 3 từ (tách bởi khoảng trắng).                                                            |
-| **Category**      | Có        | Tên nhóm tự đặt (ví dụ: `profanity`, `brand`, `internal-code`) — dùng để lọc trên bảng và trang chi tiết. |
-| **Action**        | Có        | Một trong **Mask / Detect / Block** (xem [hành động của từng bộ lọc](README.md#hanh-dong-cua-tung-bo-loc)).        |
+| Trường            | Bắt buộc | Quy tắc                                                                                                   |
+| ----------------- | -------- | --------------------------------------------------------------------------------------------------------- |
+| **Word / phrase** | Có       | Tối đa 100 ký tự và tối đa 3 từ (tách bởi khoảng trắng).                                                  |
+| **Category**      | Có       | Tên nhóm tự đặt (ví dụ: `profanity`, `brand`, `internal-code`) — dùng để lọc trên bảng và trang chi tiết. |
+| **Action**        | Có       | Một trong **Mask / Detect / Block** (xem [hành động của từng bộ lọc](./#hanh-dong-cua-tung-bo-loc)).      |
 
 Bảng danh sách hỗ trợ tìm kiếm, lọc theo category/action, chọn nhiều dòng để **Remove**.
 
@@ -51,18 +51,18 @@ Mỗi cặp (category, word) là một rule riêng — cùng một từ có th�
 
 Guardrail áp hành động lên input request nếu nội dung khớp với mô tả bạn khai báo. Mỗi rule gồm:
 
-| Trường                              | Bắt buộc | Quy tắc                                                                                                                                                                                |
-| ------------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Description name**            | Có        | Tên rule, tối đa 100 ký tự, không trùng nhau.                                                                                                                                    |
-| **Mô tả** (ô văn bản lớn) | Có        | Mô tả bằng lời hành vi cần bắt — ví dụ: *"Yêu cầu bỏ qua hoặc vượt qua hướng dẫn hệ thống trước đó"*. Viết càng rõ, model "giám sát" càng bắt chuẩn. |
-| **Action**                      | Có        | **Detect** hoặc **Block**.                                                                                                                                                 |
+| Trường                    | Bắt buộc | Quy tắc                                                                                                                                              |
+| ------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Description name**      | Có       | Tên rule, tối đa 100 ký tự, không trùng nhau.                                                                                                        |
+| **Mô tả** (ô văn bản lớn) | Có       | Mô tả bằng lời hành vi cần bắt — ví dụ: _"Yêu cầu bỏ qua hoặc vượt qua hướng dẫn hệ thống trước đó"_. Viết càng rõ, model "giám sát" càng bắt chuẩn. |
+| **Action**                | Có       | **Detect** hoặc **Block**.                                                                                                                           |
 
 Vài ví dụ mô tả hay dùng:
 
-- *Bỏ qua, ghi đè hoặc vượt qua hướng dẫn hệ thống trước đó.*
-- *Đóng vai AI assistant không bị giới hạn hoặc đã bị "jailbreak".*
-- *Trích xuất hoặc làm lộ system prompt / cấu hình nội bộ.*
-- *Giả danh developer, quản trị viên hoặc người tạo ra model để ghi đè giới hạn an toàn.*
+* _Bỏ qua, ghi đè hoặc vượt qua hướng dẫn hệ thống trước đó._
+* _Đóng vai AI assistant không bị giới hạn hoặc đã bị "jailbreak"._
+* _Trích xuất hoặc làm lộ system prompt / cấu hình nội bộ._
+* _Giả danh developer, quản trị viên hoặc người tạo ra model để ghi đè giới hạn an toàn._
 
 **Bước 5: Cấu hình Sensitive information (tuỳ chọn)**
 
@@ -70,20 +70,20 @@ Guardrail xử lý thông tin nhạy cảm được khai báo dưới đây trư
 
 **PERSONALLY IDENTIFIABLE INFORMATION** — chọn các loại PII và action cho từng loại:
 
-| Trường                    | Bắt buộc                                      | Quy tắc                                                                                                                                                                                                                                                                        |
-| --------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **PII types**         | Không (bỏ trống cả khối nếu không dùng) | Chọn từ danh sách hệ thống (URL, IP Address, Credit Card Number, Email, IBAN Code…). Danh sách đầy đủ lấy qua API `GET /v1/guardrails/pii/types`. Không chọn trùng loại.                                                                                      |
-| **Score**             | Không                                          | Số thực 0.0 – 1.0, để trống mặc định 0.5. Áp dụng chung cho mọi loại đã chọn.                                                                                                                                                                                   |
-| **Action mỗi loại** | Có (nếu chọn loại)                          | **Mask / Replace / Delete**. Với **Replace** có thể nhập giá trị thay thế tuỳ ý (để trống thì hệ thống dùng tên loại, ví dụ `<EMAIL>`); với **Mask** có thể tuỳ chỉnh số ký tự bị che và ký tự che (mặc định che `*`). |
+| Trường              | Bắt buộc                                | Quy tắc                                                                                                                                                                                                                |
+| ------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **PII types**       | Không (bỏ trống cả khối nếu không dùng) | Chọn từ danh sách hệ thống (URL, IP Address, Credit Card Number, Email, IBAN Code…). Danh sách đầy đủ lấy qua API `GET /v1/guardrails/pii/types`. Không chọn trùng loại.                                               |
+| **Score**           | Không                                   | Số thực 0.0 – 1.0, để trống mặc định 0.5. Áp dụng chung cho mọi loại đã chọn.                                                                                                                                          |
+| **Action mỗi loại** | Có (nếu chọn loại)                      | **Mask / Replace / Delete**. Với **Replace** có thể nhập giá trị thay thế tuỳ ý (để trống thì hệ thống dùng tên loại, ví dụ `<EMAIL>`); với **Mask** có thể tuỳ chỉnh số ký tự bị che và ký tự che (mặc định che `*`). |
 
 **REGULAR EXPRESSION** — thêm regex riêng của bạn:
 
-| Trường                | Bắt buộc | Quy tắc                                                                                                                  |
-| ----------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------- |
-| **Name**          | Có        | Tối đa 100 ký tự, không trùng nhau.                                                                                 |
-| **Score**         | Không     | 0.0 – 1.0, mặc định 0.5.                                                                                              |
-| **Action**        | Có        | **Mask / Replace / Delete**. Giá trị thay thế tối đa 255 ký tự, ký tự che tối đa 100 ký tự.            |
-| **Regex pattern** | Có        | Tối đa 255 ký tự và phải là biểu thức chính quy hợp lệ (hệ thống từ chối pattern không compile được). |
+| Trường            | Bắt buộc | Quy tắc                                                                                               |
+| ----------------- | -------- | ----------------------------------------------------------------------------------------------------- |
+| **Name**          | Có       | Tối đa 100 ký tự, không trùng nhau.                                                                   |
+| **Score**         | Không    | 0.0 – 1.0, mặc định 0.5.                                                                              |
+| **Action**        | Có       | **Mask / Replace / Delete**. Giá trị thay thế tối đa 255 ký tự, ký tự che tối đa 100 ký tự.           |
+| **Regex pattern** | Có       | Tối đa 255 ký tự và phải là biểu thức chính quy hợp lệ (hệ thống từ chối pattern không compile được). |
 
 Cả hai khối đều có nút **Reset configuration to default**.
 
@@ -93,12 +93,12 @@ Cả hai khối đều có nút **Reset configuration to default**.
 2. Nhấn nút tạo để hoàn tất.
 
 {% hint style="info" %}
-Ít nhất một trong ba bộ lọc phải có cấu hình — tạo Guardrail "trống" sẽ bị từ chối với lỗi *"Guardrails must declare at least one of Prompt-based, PII, or Word filter"*.
+Ít nhất một trong ba bộ lọc phải có cấu hình — tạo Guardrail "trống" sẽ bị từ chối với lỗi _"Guardrails must declare at least one of Prompt-based, PII, or Word filter"_.
 {% endhint %}
 
 Sau khi tạo, Guardrail xuất hiện trên danh sách ở trạng thái **CREATING** rồi chuyển **ACTIVE** khi sẵn sàng. Lúc này nó chưa bảo vệ model nào — gắn model ở bước tiếp theo.
 
----
+***
 
 ## Gắn model cần bảo vệ (Manage Models)
 
@@ -115,16 +115,16 @@ Sau khi tạo, Guardrail xuất hiện trên danh sách ở trạng thái **CREA
 
 Quy tắc khi gắn:
 
-| Quy tắc                     | Chi tiết                                                                                                                                                                                                    |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Một model – một Guardrail | Model đã gắn vào Guardrail khác sẽ bị từ chối: *"Model 'X' is already attached to guardrails 'Y'"*. Phải gỡ ở Guardrail cũ trước.                                                           |
-| Loại route được hỗ trợ | chat, completions, responses, messages, embeddings.                                                                                                                                                          |
-| Trạng thái                 | Guardrail phải đang **ACTIVE** hoặc **ATTACH_FAILED**; model phải đang bật.                                                                                                                |
-| Thao tác tranh chấp        | Chỉ một thao tác gắn/gỡ chạy tại một thời điểm trên tài khoản — nếu đang có thao tác khác chạy sẽ báo *"Another guardrails attach/detach is in flight for this user. Please wait."* |
+| Quy tắc                   | Chi tiết                                                                                                                                                                            |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Một model – một Guardrail | Model đã gắn vào Guardrail khác sẽ bị từ chối: _"Model 'X' is already attached to guardrails 'Y'"_. Phải gỡ ở Guardrail cũ trước.                                                   |
+| Loại route được hỗ trợ    | chat, completions, responses, messages, embeddings.                                                                                                                                 |
+| Trạng thái                | Guardrail phải đang **ACTIVE** hoặc **ATTACH\_FAILED**; model phải đang bật.                                                                                                        |
+| Thao tác tranh chấp       | Chỉ một thao tác gắn/gỡ chạy tại một thời điểm trên tài khoản — nếu đang có thao tác khác chạy sẽ báo _"Another guardrails attach/detach is in flight for this user. Please wait."_ |
 
 Sau khi **Save**, thay đổi được áp dụng xuống gateway; trong lúc áp dụng Guardrail ở trạng thái **UPDATING**, xong thì về lại **ACTIVE**.
 
----
+***
 
 ## Gọi API qua Guardrail
 
@@ -175,7 +175,7 @@ Word filter chặn:
 
 Khi Sensitive information phát hiện dữ liệu nhạy cảm, request **không bị chặn** — nội dung được che/thay/xoá rồi mới tới model.
 
----
+***
 
 ## Quét system prompt bằng tag `<vng-guard-content>`
 
@@ -185,12 +185,12 @@ Mặc định Guardrail **bỏ qua** system prompt. Điều này an toàn cho h�
 
 ### Cách hoạt động
 
-| Tình huống                           | Kết quả                                                                                                                                              |
-| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| System prompt **không có** tag | Toàn bộ bị bỏ qua — không bộ lọc nào quét.                                                                                                   |
+| Tình huống                      | Kết quả                                                                                                                   |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| System prompt **không có** tag  | Toàn bộ bị bỏ qua — không bộ lọc nào quét.                                                                                |
 | System prompt **có** tag        | Mọi nội dung từ vị trí tag trở đi được quét như nội dung người dùng (đi qua đủ 3 bộ lọc). Phần trước tag vẫn được bỏ qua. |
-| Có nhiều message/block `system`    | Tag ở bất kỳ block nào cũng bật quét cho toàn bộ phần còn lại của system prompt — kể cả các block phía sau.                          |
-| Gõ sai tag                            | Không có gì được quét — hệ thống bỏ qua im lặng. Sao chép đúng `<vng-guard-content>`.                                                 |
+| Có nhiều message/block `system` | Tag ở bất kỳ block nào cũng bật quét cho toàn bộ phần còn lại của system prompt — kể cả các block phía sau.               |
+| Gõ sai tag                      | Không có gì được quét — hệ thống bỏ qua im lặng. Sao chép đúng `<vng-guard-content>`.                                     |
 
 ### Ví dụ
 
@@ -212,7 +212,7 @@ Có tag — từ vị trí tag trở đi được quét (đây là phần instru
 }
 ```
 
-Cùng body đầy đủ, ghép vào curl mẫu ở phần [Gọi API qua Guardrail](#goi-api-qua-guardrail):
+Cùng body đầy đủ, ghép vào curl mẫu ở phần [Gọi API qua Guardrail](su-dung-guardrail.md#goi-api-qua-guardrail):
 
 ```bash
 curl --request POST \
@@ -237,53 +237,53 @@ curl --request POST \
 }'
 ```
 
----
+***
 
 ## Quản lý Guardrail trên trang danh sách
 
 Trang **Protect & Govern → Guardrail** liệt kê mọi Guardrail của bạn với các cột:
 
-| Cột                          | Nội dung                                                                               |
-| ----------------------------- | --------------------------------------------------------------------------------------- |
+| Cột                     | Nội dung                                                                  |
+| ----------------------- | ------------------------------------------------------------------------- |
 | **Name**                | Tên + ID hệ thống (`gr-…`) + thời gian tạo. Bấm tên để mở trang chi tiết. |
-| **Status**              | Trạng thái (xem [trạng thái Guardrail](README.md#trang-thai-guardrail)).             |
-| **Prompt-based filter** | Số rule prompt-based đã cấu hình.                                                  |
-| **PII type & Regex**    | Các loại PII / regex đã cấu hình.                                                 |
-| **Protected models**    | Các model đang được Guardrail này bảo vệ.                                       |
-| **Action**              | Menu tác vụ: **Edit info**, **Manage Models**, **Delete**.          |
+| **Status**              | Trạng thái (xem [trạng thái Guardrail](./#trang-thai-guardrail)).         |
+| **Prompt-based filter** | Số rule prompt-based đã cấu hình.                                         |
+| **PII type & Regex**    | Các loại PII / regex đã cấu hình.                                         |
+| **Protected models**    | Các model đang được Guardrail này bảo vệ.                                 |
+| **Action**              | Menu tác vụ: **Edit info**, **Manage Models**, **Delete**.                |
 
 Thanh công cụ trên bảng có nút làm mới và nút xoá hàng loạt (chọn nhiều dòng bằng checkbox).
 
-**Edit info** — sửa **tên** và **mô tả**. Tên mới vẫn phải đúng quy tắc ở [Tạo một Guardrail](#tao-mot-guardrail) (Basic configuration) và không trùng tên khác của bạn.
+**Edit info** — sửa **tên** và **mô tả**. Tên mới vẫn phải đúng quy tắc ở [Tạo một Guardrail](su-dung-guardrail.md#tao-mot-guardrail) (Basic configuration) và không trùng tên khác của bạn.
 
 **Delete** — xoá Guardrail:
 
 {% hint style="warning" %}
-Guardrail đang gắn model phải **gỡ model trước** (Manage Models → bỏ chọn hết) — xoá khi còn gắn sẽ bị từ chối: *"Guardrails is attached to one or more models. Please detach them first."* Chỉ xoá được Guardrail ở trạng thái ACTIVE, ERROR, ATTACH_FAILED hoặc CREATE_ERROR.
+Guardrail đang gắn model phải **gỡ model trước** (Manage Models → bỏ chọn hết) — xoá khi còn gắn sẽ bị từ chối: _"Guardrails is attached to one or more models. Please detach them first."_ Chỉ xoá được Guardrail ở trạng thái ACTIVE, ERROR, ATTACH\_FAILED hoặc CREATE\_ERROR.
 {% endhint %}
 
----
+***
 
 ## Xem và sửa trên trang chi tiết Guardrail
 
 Bấm tên Guardrail ở danh sách để mở trang chi tiết:
 
-- **General information** — ID (`gr-…`), mô tả, các model đang bảo vệ.
-- **Detail information** — 3 tab đúng theo 3 bộ lọc:
-  - **Word filters** — bảng từ khoá, lọc theo category/action, sửa bằng **Edit words & phrases**.
-  - **Prompt-based filter** — danh sách rule (tên + mô tả), sửa bằng **Edit**.
-  - **Sensitive Info** — cấu hình PII types, score và regex, sửa tương tự form tạo.
-- Ở góc phải trên: sửa nhanh thông tin (**Edit info**), **Manage Models**, và **Delete**.
+* **General information** — ID (`gr-…`), mô tả, các model đang bảo vệ.
+* **Detail information** — 3 tab đúng theo 3 bộ lọc:
+  * **Word filters** — bảng từ khoá, lọc theo category/action, sửa bằng **Edit words & phrases**.
+  * **Prompt-based filter** — danh sách rule (tên + mô tả), sửa bằng **Edit**.
+  * **Sensitive Info** — cấu hình PII types, score và regex, sửa tương tự form tạo.
+* Ở góc phải trên: sửa nhanh thông tin (**Edit info**), **Manage Models**, và **Delete**.
 
-Các thao tác sửa trên trang chi tiết có cùng quy tắc như lúc tạo (xem [Tạo một Guardrail](#tao-mot-guardrail)).
+Các thao tác sửa trên trang chi tiết có cùng quy tắc như lúc tạo (xem [Tạo một Guardrail](su-dung-guardrail.md#tao-mot-guardrail)).
 
----
+***
 
 ## Kết quả
 
 Sau khi hoàn thành, mọi request tới các model đã gắn đều đi qua Guardrail: request vi phạm bị từ chối với HTTP 400 kèm lý do cụ thể, còn dữ liệu nhạy cảm được che/thay/xoá tự động trước khi tới model — client không phải thay đổi gì.
 
-| Tôi muốn tiếp theo...                          | Đi đến                                                |
-| ------------------------------------------------- | -------------------------------------------------------- |
-| Hiểu rõ ba lớp kiểm tra và các hành động | [Guardrail là gì?](README.md)                       |
-| Tra cứu giới hạn, thông báo lỗi và FAQ     | [Tham chiếu và FAQ](tham-chieu-va-faq.md)             |
+| Tôi muốn tiếp theo...                    | Đi đến                                    |
+| ---------------------------------------- | ----------------------------------------- |
+| Hiểu rõ ba lớp kiểm tra và các hành động | [Guardrail là gì?](./)                    |
+| Tra cứu giới hạn, thông báo lỗi và FAQ   | [Tham chiếu và FAQ](tham-chieu-va-faq.md) |
