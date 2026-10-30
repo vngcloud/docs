@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" width="1200" height="470" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="470" fill="#ffffff"/>
+
+  <!-- User -->
+  <circle cx="80" cy="198" r="20" fill="none" stroke="#1f2937" stroke-width="2.5"/>
+  <path d="M46,262 V246 a34,26 0 0 1 68,0 V262 Z" fill="none" stroke="#1f2937" stroke-width="2.5" stroke-linejoin="round"/>
+  <text x="80" y="292" text-anchor="middle" font-size="22" font-weight="600" fill="#111827">User</text>
+
+  <!-- User <-> Agent -->
+  <path d="M130,205 H234" stroke="#1f2937" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="182" y="196" text-anchor="middle" font-size="15" fill="#111827">Query</text>
+  <path d="M236,240 H132" stroke="#1f2937" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="182" y="260" text-anchor="middle" font-size="15" fill="#111827">Result</text>
+
+  <!-- Agent -->
+  <rect x="240" y="185" width="140" height="70" rx="10" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2.5"/>
+  <text x="310" y="227" text-anchor="middle" font-size="22" font-weight="600" fill="#111827">Agent</text>
+
+  <!-- LLM -->
+  <rect x="470" y="40" width="220" height="70" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="2.5"/>
+  <text x="580" y="70" text-anchor="middle" font-size="17" fill="#111827">Large Language</text>
+  <text x="580" y="92" text-anchor="middle" font-size="17" fill="#111827">Model (LLM)</text>
+
+  <!-- Agent <-> LLM -->
+  <path d="M300,185 V65 H466" stroke="#1f2937" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="312" y="57" font-size="15" fill="#111827">1. Prompt + tools</text>
+  <path d="M470,95 H340 V181" stroke="#1f2937" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="352" y="88" font-size="15" fill="#111827">2. Tool call</text>
+
+  <!-- Code Interpreter -->
+  <rect x="720" y="160" width="430" height="260" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="935" y="186" text-anchor="middle" font-size="18" font-weight="600" fill="#111827">Code Interpreter</text>
+  <text x="935" y="206" text-anchor="middle" font-size="13" fill="#4b5563">isolated sandbox, created once and reused</text>
+
+  <!-- Session -->
+  <rect x="745" y="220" width="380" height="180" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+  <rect x="765" y="236" width="165" height="58" rx="4" fill="#f9fafb" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="847" y="262" text-anchor="middle" font-size="16" fill="#111827">Python</text>
+  <text x="847" y="282" text-anchor="middle" font-size="12" fill="#4b5563" font-family="ui-monospace, Menlo, Consolas, monospace">executeCode</text>
+  <rect x="940" y="236" width="165" height="58" rx="4" fill="#f9fafb" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="1022" y="262" text-anchor="middle" font-size="16" fill="#111827">Shell</text>
+  <text x="1022" y="282" text-anchor="middle" font-size="12" fill="#4b5563" font-family="ui-monospace, Menlo, Consolas, monospace">executeCommand</text>
+  <rect x="765" y="304" width="340" height="58" rx="4" fill="#f9fafb" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="935" y="330" text-anchor="middle" font-size="16" fill="#111827">File System</text>
+  <text x="935" y="350" text-anchor="middle" font-size="12" fill="#4b5563" font-family="ui-monospace, Menlo, Consolas, monospace">writeFiles · readFiles · listFiles</text>
+  <text x="935" y="386" text-anchor="middle" font-size="16" font-weight="600" fill="#111827">Session</text>
+
+  <!-- Agent -> Session -->
+  <path d="M380,240 H741" stroke="#1f2937" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="560" y="230" text-anchor="middle" font-size="15" fill="#111827">3. Invoke the tool</text>
+  <text x="560" y="262" text-anchor="middle" font-size="12" fill="#4b5563" font-family="ui-monospace, Menlo, Consolas, monospace">POST …/sessions/{sessionId}/invoke</text>
+
+  <!-- Session -> Agent -->
+  <path d="M935,420 V448 H310 V259" stroke="#1f2937" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="622" y="440" text-anchor="middle" font-size="15" fill="#111827">4. Tool result (output, files)</text>
+</svg>

@@ -19,24 +19,11 @@ Built-in Tools đang được mở theo từng đợt **whitelist**. Nếu accou
 
 ## Kiến trúc
 
-Mỗi session của bạn chạy trong một microVM riêng có kernel riêng, được cấp từ pool VM làm nóng sẵn (warm pool) nên tạo session chỉ mất vài giây.
+Mỗi session của bạn chạy trong một microVM riêng có kernel riêng, được cấp từ pool VM làm nóng sẵn (warm pool) nên tạo session chỉ mất vài giây. Hai tool dùng chung một nền sandbox — khác nhau ở lớp sản phẩm bên trên:
 
-```
-Agent / MCP client
-        │  MCP (HTTPS)
-        ▼
-Built-in Tools gateway
-  (Code Interpreter · Browser)
-        │
-        ▼
-AgentBase Runtime ── OpenSandbox (Pool VM nóng sẵn)
-        │
-        ▼
-vKS node group riêng (nested virtualization)
-        │  Kata Containers + Cloud Hypervisor
-        ▼
-Mỗi session = 1 microVM có kernel riêng
-```
+<figure><img src="../../../.gitbook/assets/Agentbase-image/agentbase-code-interpreter-architecture.svg" alt=""><figcaption><p>Code Interpreter — agent gọi tool qua MCP, code chạy trong sandbox microVM cô lập</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/Agentbase-image/agentbase-browser-architecture.svg" alt=""><figcaption><p>Browser — agent điều khiển Chromium trong sandbox microVM qua CDP</p></figcaption></figure>
 
 Các tầng chính:
 

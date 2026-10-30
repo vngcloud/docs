@@ -90,6 +90,16 @@ Khi chọn **Private**, AgentBase tạo một private gateway riêng cho org và
 
 ---
 
+## Whitelist Outbound IP của Runtime Private
+
+Khi Runtime Private gọi vào hạ tầng của bạn (database, API nội bộ, MCP Server), nguồn của request là **Outbound IP** của Runtime. Nếu hạ tầng phía bạn chặn theo IP (security group, firewall, whitelist), bạn cần cho phép IP này:
+
+1. Mở trang chi tiết Runtime — xem [Quản lý Runtime](agent-runtime/quan-ly-runtime.md#xem-outbound-ip-cua-runtime)
+2. Copy **Outbound IP** hiển thị trên trang chi tiết
+3. Thêm IP vào whitelist / security group / firewall của server hoặc VM trong VPC của bạn
+
+---
+
 ## Kết quả
 
 Sau khi tạo thành công với chế độ Private:

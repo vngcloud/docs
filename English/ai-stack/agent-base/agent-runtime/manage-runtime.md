@@ -33,6 +33,20 @@ While the Runtime is in `STOPPED` state, all requests to its Endpoint will retur
 
 ***
 
+## View a Runtime's Outbound IP
+
+The Runtime detail page shows the **Outbound IP** — the address the Runtime uses when calling out to your infrastructure (internal APIs, databases, MCP Servers in your VPC).
+
+**Step 1:** Open **Agent Runtime** → click the Runtime name to open its detail page
+
+**Step 2:** Check the **Outbound IP** field on the detail page
+
+{% hint style="info" %}
+For **Private** Runtimes: if a server or VM in your VPC uses an IP-based firewall / whitelist, add the Runtime's **Outbound IP** to the allow list — otherwise, calls from the Runtime to your infrastructure will be blocked.
+{% endhint %}
+
+***
+
 ## Update Runtime / Deploy a New Version
 
 Each update creates a new immutable **Version**. The DEFAULT Endpoint automatically points to the latest version — the old version continues serving traffic until the deployment completes.

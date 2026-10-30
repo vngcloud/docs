@@ -33,6 +33,20 @@ Trong khi Runtime ở trạng thái `STOPPED`, mọi request đến Endpoint s�
 
 ---
 
+## Xem Outbound IP của Runtime
+
+Trang chi tiết Runtime hiển thị **Outbound IP** — địa chỉ mà Runtime dùng khi gọi ra ngoài tới hạ tầng của bạn (API nội bộ, database, MCP Server trong VPC).
+
+**Bước 1:** Mở **Agent Runtime** → nhấp tên Runtime để mở trang chi tiết
+
+**Bước 2:** Xem trường **Outbound IP** hiển thị trên trang chi tiết
+
+{% hint style="info" %}
+Với Runtime **Private**: nếu server hoặc VM trong VPC của bạn có firewall / whitelist theo IP, hãy thêm **Outbound IP** của Runtime vào danh sách cho phép — nếu không, các cuộc gọi từ Runtime tới hạ tầng của bạn sẽ bị chặn.
+{% endhint %}
+
+---
+
 ## Cập nhật Runtime / Triển khai phiên bản mới
 
 Mỗi lần cập nhật tạo ra một **Version** bất biến mới. Endpoint DEFAULT tự động trỏ đến phiên bản mới nhất — phiên bản cũ tiếp tục phục vụ traffic cho đến khi deployment hoàn tất.

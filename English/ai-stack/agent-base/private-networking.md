@@ -90,6 +90,16 @@ Fill in the remaining fields (Inbound Auth, MCP Servers, Policy Group...) and cl
 
 ***
 
+## Whitelist a Private Runtime's Outbound IP
+
+When a Private Runtime calls into your infrastructure (databases, internal APIs, MCP Servers), the request originates from the Runtime's **Outbound IP**. If your side filters by IP (security group, firewall, whitelist), you need to allow this IP:
+
+1. Open the Runtime detail page — see [Manage Runtime](agent-runtime/manage-runtime.md#view-a-runtimes-outbound-ip)
+2. Copy the **Outbound IP** shown on the detail page
+3. Add the IP to the whitelist / security group / firewall of the server or VM in your VPC
+
+***
+
 ## Result
 
 After creation with Private mode:
