@@ -800,6 +800,7 @@
       * [Integrate with Container Storage Interface (CSI)](vks/storage/working-with-csi/integrate-with-container-storage-interface-csi.md)
       * [Giới hạn và hạn chế CSI](vks/storage/working-with-csi/gioi-han-va-han-che-csi.md)
   * [Security Group](vks/security-group.md)
+    * [Giới hạn outbound cho worker node](vks/security-group/gioi-han-outbound-cho-worker-node.md)
   * [Upgrade Kubernetes Version](vks/upgrade-kubernetes-version/README.md)
     * [Manually Upgrade](vks/upgrade-kubernetes-version/manually-upgrade.md)
     * [Automatically Upgrade](vks/upgrade-kubernetes-version/automatically-upgrade.md)

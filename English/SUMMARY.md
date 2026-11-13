@@ -717,6 +717,7 @@
       * [CSI Quick Start](vks/storage/working-with-csi/csi-quick-start.md)
       * [CSI Limitation](vks/storage/working-with-csi/gioi-han-va-han-che-csi.md)
   * [Security Group](vks/security-group.md)
+    * [Limit outbound traffic for VKS worker nodes](vks/security-group/limit-outbound-traffic-for-worker-nodes.md)
   * [Upgrade Kubernetes Version](vks/upgrade-kubernetes-version/README.md)
     * [Manually Upgrade](vks/upgrade-kubernetes-version/manually-upgrade.md)
     * [Automatically Upgrade](vks/upgrade-kubernetes-version/automatically-upgrade.md)

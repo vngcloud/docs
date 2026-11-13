@@ -1,5 +1,18 @@
 # Release notes
 
+## Nov 13, 2026
+
+VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới với các cải tiến sau:
+
+**Tính năng mới:**
+
+* **Giới hạn outbound cho worker node:** Hướng dẫn mới giúp bạn thay rule outbound allow-all mặc định trên worker node bằng bộ rule tối thiểu để cluster vẫn hoạt động ổn định (join node, pull image, tạo volume, load balancer), đáp ứng yêu cầu bảo mật và compliance về kiểm soát traffic ra ngoài.
+  * Áp dụng cho **private cluster** (khuyến nghị CNI Cilium overlay); Calico và Cilium native routing áp dụng được với điều chỉnh port giữa các node.
+  * Hướng dẫn chi tiết tại [Giới hạn outbound cho worker node](../security-group/gioi-han-outbound-cho-worker-node.md).
+* **Tắt outbound mặc định trên Security Group của Load Balancer qua annotation:** GreenNode LoadBalancer Controller (từ phiên bản **0.5.0**) hỗ trợ annotation **`vks.vngcloud.vn/enable-default-egress`** trên Service NLB và Ingress ALB.
+  * Đặt `"false"` để gỡ 2 rule outbound allow-all (`0.0.0.0/0`, `::/0`) khỏi SG do controller tạo cho Service/Ingress mà không gây downtime; gỡ annotation thì 2 rule được tạo lại. Mặc định `"true"` — Service/Ingress hiện có không thay đổi hành vi.
+  * Không có tác dụng khi Service/Ingress dùng Security Group riêng qua annotation `vks.vngcloud.vn/security-groups`.
+
 ## Nov 11, 2026
 
 VKS (VNG Kubernetes Engine) vừa ra mắt bản cập nhật mới với các cải tiến sau:

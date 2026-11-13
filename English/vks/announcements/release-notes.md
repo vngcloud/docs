@@ -1,5 +1,18 @@
 # Release notes
 
+## Nov 13, 2026
+
+VKS (VNG Kubernetes Engine) has just released a new update with the following improvements:
+
+**New features:**
+
+* **Limit outbound traffic for worker nodes:** A new guide shows how to replace the default allow-all outbound rules on worker nodes with the minimum rule set that keeps the cluster stable (node join, image pull, volume and load balancer creation) — meeting security and compliance requirements for outbound traffic control.
+  * Applies to **private clusters** (Cilium overlay CNI recommended); Calico and Cilium native routing work with adjusted inter-node ports.
+  * See [Limit outbound traffic for VKS worker nodes](../security-group/limit-outbound-traffic-for-worker-nodes.md) for details.
+* **Disable default outbound on the Load Balancer Security Group via annotation:** Starting with version **0.5.0**, GreenNode LoadBalancer Controller supports the annotation **`vks.vngcloud.vn/enable-default-egress`** on NLB Services and ALB Ingresses.
+  * Set it to `"false"` to remove the 2 outbound allow-all rules (`0.0.0.0/0`, `::/0`) from the controller-created SG for that Service/Ingress without downtime; removing the annotation recreates them. Defaults to `"true"` — existing Services/Ingresses keep their current behavior.
+  * Has no effect when the Service/Ingress uses your own Security Group via the annotation `vks.vngcloud.vn/security-groups`.
+
 ## Nov 11, 2026
 
 VKS (VNG Kubernetes Engine) has just released a new update with the following improvements:
