@@ -57,3 +57,8 @@ Trước khi tích hợp vào ứng dụng của bạn, hãy khám phá các kh�
 Sau khi thử nghiệm trong Playground, bạn có thể truy cập các mô hình thông qua AI Platform MaaS:
 
 * Hỗ trợ cả yêu cầu đồng bộ và truyền phát (streaming) cho các ứng dụng thời gian thực.
+
+### Bảo mật và quyền riêng tư dữ liệu
+
+* Dữ liệu được mã hóa trên kênh truyền bằng **TLS 1.3**.
+* Dữ liệu chỉ tồn tại trong bộ nhớ của hệ thống suy luận trong thời gian xử lý yêu cầu. GreenNode không lưu trữ prompt đầu vào và kết quả đầu ra của người dùng lâu dài cho bất kỳ mục đích nào khác.

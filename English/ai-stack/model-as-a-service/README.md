@@ -54,3 +54,8 @@ Before integrating into your application, explore model capabilities in the Play
 After testing in the Playground, you can access models via AI Platform MaaS:
 
 * Supports both synchronous requests and streaming for real-time applications.
+
+### Data Security and Privacy
+
+* Data in transit is encrypted with **TLS 1.3**.
+* Data exists only in the memory of the inference system for the duration of request processing. GreenNode does not store your prompt inputs and outputs long-term for any other purpose.
