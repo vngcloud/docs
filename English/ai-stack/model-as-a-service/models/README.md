@@ -35,7 +35,6 @@ Every model is addressed as `vendor/model`. Click a model for details and a read
 
 | Model ID | Name | Context | Max output | Input | Endpoints | Reasoning |
 | --- | --- | --- | --- | --- | --- | --- |
-| [`baai/bge-m3`](baai/bge-m3.md) | BGE-M3 | 8K | — | text | embedding | — |
 | [`qwen/qwen3-embedding-8b`](qwen/qwen3-embedding-8b.md) | Qwen 3 Embedding 8B | 33K | — | text | embedding | — |
 
 ## Rerank
