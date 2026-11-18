@@ -35,12 +35,14 @@ Mỗi model được gọi theo dạng `vendor/model`. Bấm vào tên model đ�
 
 | Model ID | Tên | Ngữ cảnh | Output tối đa | Đầu vào | Endpoints | Reasoning |
 | --- | --- | --- | --- | --- | --- | --- |
+| [`baai/bge-m3`](baai/bge-m3.md) | BGE-M3 | 8K | — | text | embedding | — |
 | [`qwen/qwen3-embedding-8b`](qwen/qwen3-embedding-8b.md) | Qwen 3 Embedding 8B | 33K | — | text | embedding | — |
 
 ## Rerank
 
 | Model ID | Tên | Ngữ cảnh | Output tối đa | Đầu vào | Endpoints | Reasoning |
 | --- | --- | --- | --- | --- | --- | --- |
+| [`baai/bge-reranker-v2-m3`](baai/bge-reranker-v2-m3.md) | BGE Reranker v2 m3 | 8K | — | text | rerank | — |
 | [`qwen/qwen3-reranker-8b`](qwen/qwen3-reranker-8b.md) | Qwen 3 Reranker 8B | 33K | — | text | rerank | — |
 
 ## OCR
