@@ -8,7 +8,7 @@ description: "Lỗi do gateway sinh ra có mã máy đọc được trong header
 
 | Code | HTTP | Ý nghĩa | Retry? |
 | --- | --- | --- | --- |
-| `invalid_request` | 400 | JSON sai, tham số hoặc giá trị không hỗ trợ, `max_tokens` quá lớn, loại nội dung không hỗ trợ, hoặc `model` trong body khác model trên URL riêng của model. | Không — sửa request |
+| `invalid_request` | 400 | Thiếu prompt (`messages` thiếu hoặc rỗng — message "request body doesn't contain valid prompts"), tham số hoặc giá trị không hỗ trợ, `max_tokens` quá lớn, loại nội dung không hỗ trợ, hoặc `model` trong body khác model trên URL riêng của model. | Không — sửa request |
 | `request_denied` | 401 | Thiếu API key, key không tồn tại, bị vô hiệu hoặc hết hạn. | Không |
 | `request_denied` | 403 | Model chưa được bật cho tài khoản (“model not allowed for this key”). | Không — bật model |
 | `request_denied` | 400 | Guardrail an toàn nội dung đã chặn request. Xem [An toàn nội dung](../features/content-safety.md). | Không |
@@ -81,14 +81,13 @@ Một số response do tầng proxy trả trước khi request tới model. Chú
 | --- | --- | --- |
 | 404 | `{"message":"no Route matched with those values", …}` | Sai đường dẫn hoặc HTTP method, hoặc model không tồn tại trong URL riêng của model. Kiểm tra lại URL. |
 | 405 | `{"error":{"code":"method_not_allowed", …}}` | `/v1/models` chỉ nhận `GET`. |
-| 400 | `{"message":"request body doesn't contain valid prompts", …}` | Body không phải JSON hợp lệ. Kiểm tra lại body. |
-| 502 | `{"message":"An invalid response was received from the upstream server", …}` | Trên các endpoint `/v1/…`: body thiếu trường `model` nên không định tuyến được. Luôn gửi `model`. Lỗi này không retry được. |
+| 502 | `{"message":"An invalid response was received from the upstream server", …}` | Trên các endpoint `/v1/…`: gateway không đọc được trường `model` trong body (body không phải JSON hợp lệ, body rỗng, hoặc thiếu `model`) nên không định tuyến được. Gửi body JSON hợp lệ có `model`. Lỗi này không retry được. |
 | 504 | `{"message":"The upstream server is timing out", …}` | Model không trả lời trong giới hạn thời gian của request. Dùng streaming hoặc giảm `max_tokens`. Xem [giới hạn](limits.md). |
 
 {% hint style="info" %}
 **Đã đối chiếu production**
 
-Các response 401, 404 `model_not_found`, 404 không có route, 405 và 502 ở trên đã được ghi nhận trên gateway production ngày 2026-11-14; response 400 khi body không phải JSON hợp lệ ghi nhận ngày 2026-11-18.
+Các response 401, 404 `model_not_found`, 404 không có route, 405 và 502 ở trên đã được ghi nhận trên gateway production ngày 2026-11-14 và kiểm tra lại ngày 2026-11-18.
 {% endhint %}
 
 ## Chính sách retry khuyến nghị
