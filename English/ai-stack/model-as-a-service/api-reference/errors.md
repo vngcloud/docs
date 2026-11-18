@@ -81,13 +81,14 @@ A few responses come from the proxy layer before the request reaches a model. Th
 | --- | --- | --- |
 | 404 | `{"message":"no Route matched with those values", …}` | Wrong path or HTTP method, or an unknown model in a per-model URL. Check the URL. |
 | 405 | `{"error":{"code":"method_not_allowed", …}}` | `/v1/models` only accepts `GET`. |
-| 502 | `{"message":"An invalid response was received from the upstream server", …}` | On `/v1/…` endpoints: the body is not valid JSON or has no `model` field, so the request cannot be routed. Always send `model`. This is not retryable. |
+| 400 | `{"message":"request body doesn't contain valid prompts", …}` | The body is not valid JSON. Check the body. |
+| 502 | `{"message":"An invalid response was received from the upstream server", …}` | On `/v1/…` endpoints: the body has no `model` field, so the request cannot be routed. Always send `model`. This is not retryable. |
 | 504 | `{"message":"The upstream server is timing out", …}` | The model did not answer within the request time limit. Use streaming or lower `max_tokens`. See [limits](limits.md). |
 
 {% hint style="info" %}
 **Checked on production**
 
-The 401, 404 `model_not_found`, 404 no-route, 405 and 502 responses above were observed on the production gateway on 2026-11-14.
+The 401, 404 `model_not_found`, 404 no-route, 405 and 502 responses above were observed on the production gateway on 2026-11-14; the 400 for a body that is not valid JSON was observed on 2026-11-18.
 {% endhint %}
 
 ## Recommended retry policy

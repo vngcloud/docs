@@ -129,8 +129,10 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORT
 
 ### Quick Troubleshooting for OCR
 
+* `401 Unauthorized`:
+  * Missing `Authorization` (`missing api key`) or invalid API key (`unknown api key`).
 * `403 Forbidden`:
-  * Missing/invalid `Authorization` or permission denied.
+  * The user ID in the path differs from the owner of the API key (`tenant mismatch`).
 * `400 Bad Request` / `4XX`:
   * Missing required fields (`flow`, `file_type`, `file`, ...)
   * Invalid `doc_type` configuration.

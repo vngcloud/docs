@@ -129,8 +129,10 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORT
 
 ### Troubleshooting nhanh cho OCR
 
+* `401 Unauthorized`:
+  * Thiếu `Authorization` (`missing api key`) hoặc API key sai (`unknown api key`).
 * `403 Forbidden`:
-  * Thiếu/sai `Authorization` hoặc không có quyền.
+  * User ID trong đường dẫn khác chủ sở hữu API key (`tenant mismatch`).
 * `400 Bad Request` / `4XX`:
   * Thiếu field bắt buộc (`flow`, `file_type`, `file`, ...)
   * `doc_type` không đúng theo cấu hình.

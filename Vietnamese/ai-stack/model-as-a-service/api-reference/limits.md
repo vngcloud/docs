@@ -7,7 +7,7 @@ description: "Cách giới hạn được báo trên mỗi response, lỗi rate 
 {% hint style="info" %}
 **Giới hạn mặc định**
 
-Mỗi tài khoản khởi đầu với 10 request mỗi phút trên từng model; mọi API key của tài khoản dùng chung bộ đếm. Xem [Rate limit](../portal/rate-limits.md) để biết mặc định và cách đề nghị tăng.
+Mỗi tài khoản khởi đầu với 10 request và 1.000.000 token mỗi phút trên từng model (đếm riêng từng model); mọi API key của tài khoản dùng chung bộ đếm. Xem [Rate limit](../portal/rate-limits.md) để biết mặc định và cách đề nghị tăng.
 {% endhint %}
 
 ## Header rate limit

@@ -21,7 +21,7 @@ description: "OpenAI Responses API, dùng được với mọi model chat. Đư�
 | `input` | string \| array | **Bắt buộc** | text, hoặc các item: `message`, `function_call`, `function_call_output` | — | Toàn bộ hội thoại cho lượt này. Ảnh đặt trong phần `input_image`. |
 | `instructions` | string | Tuỳ chọn | — | — | Chỉ dẫn hệ thống. |
 | `max_output_tokens` | integer | Tuỳ chọn | 1 … output tối đa của model | theo model | Giới hạn output, gồm cả reasoning. |
-| `reasoning.effort` | string | Tuỳ chọn | none · minimal · low · medium · high · xhigh · max | `default_effort` của model | Xem [Reasoning](../features/reasoning.md). |
+| `reasoning.effort` | string | Tuỳ chọn | none · minimal · low · medium · high · xhigh · max | `default_effort` của model; model không khai báo thì theo mặc định của nhà cung cấp | Xem [Reasoning](../features/reasoning.md). |
 | `tools` | array | Tuỳ chọn | `{type:"function", name, parameters}`, hoặc `{"type":"web_search"}` | — | Function tool và server tool tìm kiếm web. |
 | `tool_choice` | string \| object | Tuỳ chọn | auto · none · required · một hàm cụ thể | auto | Bắt buộc hoặc cấm gọi tool. |
 | `stream` | boolean | Tuỳ chọn | true · false | false | Stream theo chuỗi event của Responses. |
@@ -32,11 +32,11 @@ description: "OpenAI Responses API, dùng được với mọi model chat. Đư�
 {% hint style="info" %}
 **Về khoảng giá trị và mặc định**
 
-Khoảng giá trị theo đặc tả API mà endpoint tương thích. Model có nhận một tham số hay không được liệt kê trong `supported_parameters` (`GET /v1/models`); tham số hoặc giá trị không hỗ trợ sẽ trả `400 invalid_request`. Xem [Tham số](parameters.md) để biết bao nhiêu model hỗ trợ từng tham số.
+Khoảng giá trị theo đặc tả API mà endpoint tương thích. Model có nhận một tham số hay không được liệt kê trong `supported_parameters` (`GET /v1/models`); tham số không có trong danh sách đó bị bỏ qua (không báo lỗi). Xem [Tham số](parameters.md) để biết bao nhiêu model hỗ trợ từng tham số.
 {% endhint %}
 
 {% hint style="info" %}
-Gateway không lưu trạng thái: gửi toàn bộ hội thoại trong `input` ở mỗi lượt. `previous_response_id`, `store`, `background`, `truncation`, `metadata` và `conversation` bị bỏ qua chứ không bị từ chối — request dựa vào chúng sẽ chạy mà không có ngữ cảnh trước đó.
+Gateway không lưu trạng thái: gửi toàn bộ hội thoại trong `input` ở mỗi lượt. `previous_response_id` trả `400 invalid_request`. `store`, `background`, `truncation`, `metadata` và `conversation` bị bỏ qua chứ không bị từ chối — request dựa vào chúng sẽ chạy mà không có ngữ cảnh trước đó.
 {% endhint %}
 
 ## Ví dụ

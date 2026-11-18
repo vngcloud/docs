@@ -26,17 +26,17 @@ Không phải model nào cũng hỗ trợ mọi tham số. Kiểm tra `supported
 
 ## Mức hỗ trợ tham số theo model
 
-Đếm từ `supported_parameters` của 18 model chat trong snapshot `GET /v1/models` ngày 2026-11-12.
+Đếm từ `supported_parameters` của 18 model chat công khai ngày 2026-11-18. Model được bật riêng cho từng tài khoản có thể khác — luôn kiểm tra `supported_parameters` của model qua `GET /v1/models`.
 
 | Tham số | Số model chat hỗ trợ | Ghi chú |
 | --- | --- | --- |
-| `max_completion_tokens` | 18 / 18 | mọi model chat |
-| `max_tokens` | 18 / 18 | mọi model chat |
-| `parallel_tool_calls` | 18 / 18 | mọi model chat |
-| `reasoning_effort` | 18 / 18 | mọi model chat |
-| `seed` | 18 / 18 | mọi model chat |
-| `tool_choice` | 18 / 18 | mọi model chat |
-| `tools` | 18 / 18 | mọi model chat |
+| `max_completion_tokens` | 18 / 18 | mọi model chat công khai |
+| `max_tokens` | 18 / 18 | mọi model chat công khai |
+| `parallel_tool_calls` | 18 / 18 | mọi model chat công khai |
+| `reasoning_effort` | 18 / 18 | mọi model chat công khai |
+| `seed` | 18 / 18 | mọi model chat công khai |
+| `tool_choice` | 18 / 18 | mọi model chat công khai |
+| `tools` | 18 / 18 | mọi model chat công khai |
 | `repetition_penalty` | 17 / 18 | xem `supported_parameters` của model |
 | `top_k` | 17 / 18 | xem `supported_parameters` của model |
 | `frequency_penalty` | 16 / 18 | xem `supported_parameters` của model |

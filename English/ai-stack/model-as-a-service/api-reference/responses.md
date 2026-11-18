@@ -21,7 +21,7 @@ description: "OpenAI Responses API, available on every chat model. Used by Codex
 | `input` | string \| array | **Required** | text, or items: `message`, `function_call`, `function_call_output` | — | The full conversation for this turn. Images go in `input_image` parts. |
 | `instructions` | string | Optional | — | — | System instructions. |
 | `max_output_tokens` | integer | Optional | 1 … the model's max output | per model | Output cap, reasoning included. |
-| `reasoning.effort` | string | Optional | none · minimal · low · medium · high · xhigh · max | the model's `default_effort` | See [Reasoning](../features/reasoning.md). |
+| `reasoning.effort` | string | Optional | none · minimal · low · medium · high · xhigh · max | the model's `default_effort`; if the model declares none, the provider's own default | See [Reasoning](../features/reasoning.md). |
 | `tools` | array | Optional | `{type:"function", name, parameters}`, or `{"type":"web_search"}` | — | Function tools and the web search server tool. |
 | `tool_choice` | string \| object | Optional | auto · none · required · a named function | auto | Forces or forbids tool calls. |
 | `stream` | boolean | Optional | true · false | false | Stream as Responses events. |
@@ -32,11 +32,11 @@ description: "OpenAI Responses API, available on every chat model. Used by Codex
 {% hint style="info" %}
 **About ranges and defaults**
 
-Ranges follow the API specification the endpoint is compatible with. Whether a given model accepts a parameter is listed in its `supported_parameters` (`GET /v1/models`); an unsupported parameter or value returns `400 invalid_request`. See [Parameters](parameters.md) for how many models support each one.
+Ranges follow the API specification the endpoint is compatible with. Whether a given model accepts a parameter is listed in its `supported_parameters` (`GET /v1/models`); a parameter not on that list is ignored (no error). See [Parameters](parameters.md) for how many models support each one.
 {% endhint %}
 
 {% hint style="info" %}
-The gateway is stateless: send the full conversation in `input` each turn. `previous_response_id`, `store`, `background`, `truncation`, `metadata` and `conversation` are ignored, not rejected — a request that relies on them will run without the earlier context.
+The gateway is stateless: send the full conversation in `input` each turn. `previous_response_id` returns `400 invalid_request`. `store`, `background`, `truncation`, `metadata` and `conversation` are ignored, not rejected — a request that relies on them will run without the earlier context.
 {% endhint %}
 
 ## Example

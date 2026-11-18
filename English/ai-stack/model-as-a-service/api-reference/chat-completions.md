@@ -22,7 +22,7 @@ description: "OpenAI-compatible chat endpoint. Works with every chat model."
 | `max_tokens`<br>`max_completion_tokens` | integer | Optional | 1 … the model's max output | per model | Output cap, **reasoning included**. Larger than the model's max output → 400. |
 | `stream` | boolean | Optional | true · false | false | Stream the reply as server-sent events. See [Streaming](streaming.md). |
 | `stream_options` | object | Optional | `{"include_usage": true}` | — | Adds a final chunk carrying `usage`. |
-| `reasoning_effort` | string | Optional | none · minimal · low · medium · high · xhigh · max | the model's `default_effort` | How much the model reasons before answering. Any other value → 400. See [Reasoning](../features/reasoning.md). |
+| `reasoning_effort` | string | Optional | none · minimal · low · medium · high · xhigh · max | the model's `default_effort`; if the model declares none, the provider's own default | How much the model reasons before answering. Any other value → 400. See [Reasoning](../features/reasoning.md). |
 | `temperature` | number | Optional | 0 – 2 | per model | Higher is more random. Tune this or `top_p`, not both. |
 | `top_p` | number | Optional | 0 – 1 | per model | Nucleus sampling. |
 | `stop` | string \| array | Optional | one or more strings | — | Generation stops when one of these strings appears. |
@@ -33,7 +33,7 @@ description: "OpenAI-compatible chat endpoint. Works with every chat model."
 | `seed` | integer | Optional | any integer | — | Makes results more repeatable (best effort). |
 | `presence_penalty`<br>`frequency_penalty` | number | Optional | -2 – 2 | 0 | Reduce repetition / encourage new topics. |
 | `logprobs`<br>`top_logprobs` | boolean \| integer | Optional | — | — | Token log-probabilities, where the model supports them. |
-| `top_k`<br>`min_p`<br>`repetition_penalty` | number | Optional | — | — | Accepted only by models that list them in `supported_parameters`. |
+| `top_k`<br>`min_p`<br>`repetition_penalty` | number | Optional | — | — | Only take effect on models that list them in `supported_parameters`; other models ignore them (no error). |
 
 ## Example
 

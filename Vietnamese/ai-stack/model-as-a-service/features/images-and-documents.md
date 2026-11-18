@@ -70,7 +70,7 @@ completion = client.chat.completions.create(
 {% endtab %}
 {% endtabs %}
 
-Gửi ảnh cho model chỉ nhận văn bản sẽ trả về 400 `invalid_request`. Ảnh được tính vào token đầu vào.
+Ảnh gửi cho model chỉ nhận văn bản bị bỏ qua (request vẫn trả 200); kiểm tra `input_modalities` của model trước khi gửi. Ảnh được tính vào token đầu vào.
 
 ## Tài liệu (PDF, Word…)
 

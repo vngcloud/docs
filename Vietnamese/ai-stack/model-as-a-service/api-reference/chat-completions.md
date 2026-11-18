@@ -22,7 +22,7 @@ description: "Endpoint chat tương thích OpenAI. Dùng được với mọi mo
 | `max_tokens`<br>`max_completion_tokens` | integer | Tuỳ chọn | 1 … output tối đa của model | theo model | Giới hạn output, **gồm cả reasoning**. Lớn hơn output tối đa của model → 400. |
 | `stream` | boolean | Tuỳ chọn | true · false | false | Trả kết quả dạng server-sent events. Xem [Streaming](streaming.md). |
 | `stream_options` | object | Tuỳ chọn | `{"include_usage": true}` | — | Thêm chunk cuối chứa `usage`. |
-| `reasoning_effort` | string | Tuỳ chọn | none · minimal · low · medium · high · xhigh · max | `default_effort` của model | Mức suy luận trước khi trả lời. Giá trị khác → 400. Xem [Reasoning](../features/reasoning.md). |
+| `reasoning_effort` | string | Tuỳ chọn | none · minimal · low · medium · high · xhigh · max | `default_effort` của model; model không khai báo thì theo mặc định của nhà cung cấp | Mức suy luận trước khi trả lời. Giá trị khác → 400. Xem [Reasoning](../features/reasoning.md). |
 | `temperature` | number | Tuỳ chọn | 0 – 2 | theo model | Càng cao càng ngẫu nhiên. Chỉnh tham số này hoặc `top_p`, không chỉnh cả hai. |
 | `top_p` | number | Tuỳ chọn | 0 – 1 | theo model | Nucleus sampling. |
 | `stop` | string \| array | Tuỳ chọn | một hoặc nhiều chuỗi | — | Dừng sinh khi gặp một trong các chuỗi này. |
@@ -33,7 +33,7 @@ description: "Endpoint chat tương thích OpenAI. Dùng được với mọi mo
 | `seed` | integer | Tuỳ chọn | số nguyên bất kỳ | — | Giúp kết quả lặp lại ổn định hơn (không đảm bảo tuyệt đối). |
 | `presence_penalty`<br>`frequency_penalty` | number | Tuỳ chọn | -2 – 2 | 0 | Giảm lặp từ / khuyến khích chủ đề mới. |
 | `logprobs`<br>`top_logprobs` | boolean \| integer | Tuỳ chọn | — | — | Log-probability của token, với model có hỗ trợ. |
-| `top_k`<br>`min_p`<br>`repetition_penalty` | number | Tuỳ chọn | — | — | Chỉ nhận ở model có liệt kê trong `supported_parameters`. |
+| `top_k`<br>`min_p`<br>`repetition_penalty` | number | Tuỳ chọn | — | — | Chỉ có tác dụng ở model có liệt kê trong `supported_parameters`; model khác bỏ qua (không báo lỗi). |
 
 ## Ví dụ
 

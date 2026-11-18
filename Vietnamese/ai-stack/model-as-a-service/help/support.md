@@ -8,7 +8,7 @@ description: "Cách liên hệ GreenNode, cần gửi gì khi báo lỗi, và c�
 
 | Kênh | Chi tiết |
 | --- | --- |
-| Help Center | [helpdesk.greennode.ai](https://helpdesk.greennode.ai/portal/en/home) |
+| Help Center | [helpdesk.greennode.ai](https://helpdesk.greennode.ai/portal/vi/home) |
 | Email | [support@greennode.ai](mailto:support@greennode.ai) |
 | Hotline | 19001549 |
 

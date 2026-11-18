@@ -112,8 +112,14 @@ await stream.finalMessage();
 
 {% code title="event order" %}
 ```
-response.created → response.in_progress → response.output_item.added
-→ response.content_part.added → response.output_text.delta (×N) → response.output_text.done
+response.created → response.in_progress
+[model có reasoning]
+→ response.output_item.added (reasoning) → response.reasoning_summary_part.added
+→ response.reasoning_summary_text.delta (×N) → response.reasoning_summary_text.done
+→ response.reasoning_summary_part.done → response.output_item.done
+[nội dung trả lời]
+→ response.output_item.added → response.content_part.added
+→ response.output_text.delta (×N) → response.output_text.done
 → response.content_part.done → response.output_item.done → response.completed (usage)
 ```
 {% endcode %}

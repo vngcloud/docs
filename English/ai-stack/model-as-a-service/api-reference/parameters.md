@@ -26,17 +26,17 @@ Not every model supports every parameter. Check `supported_parameters` in [`GET 
 
 ## Parameter support by model
 
-Counted from `supported_parameters` of the 18 chat models in the `GET /v1/models` snapshot of 2026-11-12.
+Counted from `supported_parameters` of the 18 public chat models on 2026-11-18. Models enabled for a specific account may differ — always check the model's `supported_parameters` via `GET /v1/models`.
 
 | Parameter | Chat models supporting it | Note |
 | --- | --- | --- |
-| `max_completion_tokens` | 18 / 18 | all chat models |
-| `max_tokens` | 18 / 18 | all chat models |
-| `parallel_tool_calls` | 18 / 18 | all chat models |
-| `reasoning_effort` | 18 / 18 | all chat models |
-| `seed` | 18 / 18 | all chat models |
-| `tool_choice` | 18 / 18 | all chat models |
-| `tools` | 18 / 18 | all chat models |
+| `max_completion_tokens` | 18 / 18 | all public chat models |
+| `max_tokens` | 18 / 18 | all public chat models |
+| `parallel_tool_calls` | 18 / 18 | all public chat models |
+| `reasoning_effort` | 18 / 18 | all public chat models |
+| `seed` | 18 / 18 | all public chat models |
+| `tool_choice` | 18 / 18 | all public chat models |
+| `tools` | 18 / 18 | all public chat models |
 | `repetition_penalty` | 17 / 18 | check `supported_parameters` of the model |
 | `top_k` | 17 / 18 | check `supported_parameters` of the model |
 | `frequency_penalty` | 16 / 18 | check `supported_parameters` of the model |

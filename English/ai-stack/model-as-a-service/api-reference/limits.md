@@ -7,7 +7,7 @@ description: "How limits are reported on each response, what a rate-limit error 
 {% hint style="info" %}
 **Default limit**
 
-Every account starts with 10 requests per minute on each model; all API keys of the account share the counter. See [Rate limits](../portal/rate-limits.md) for the defaults and how to request more.
+Every account starts with 10 requests and 1,000,000 tokens per minute on each model (counted separately per model); all API keys of the account share the counter. See [Rate limits](../portal/rate-limits.md) for the defaults and how to request more.
 {% endhint %}
 
 ## Rate limit headers

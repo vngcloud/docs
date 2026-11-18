@@ -1,5 +1,5 @@
 ---
-description: "Every account has a default request limit on each model. Higher limits are granted case by case."
+description: "Every account has a default request and token limit on each model. Higher limits are granted case by case."
 ---
 
 # Rate limits
@@ -9,8 +9,9 @@ description: "Every account has a default request limit on each model. Higher li
 | Limit | Value | Counted |
 | --- | --- | --- |
 | Requests per minute | **10 RPM** on each model | Per account and per model. All API keys of the account share one counter. |
+| Tokens per minute | **1,000,000 TPM** on each model | Same as above. |
 
-* 10 RPM sustained over a full day is 14,400 requests per model. There is no separate daily cap by default.
+* Each model has its own counter: calling one model does not consume the quota of another.
 * Creating more API keys does not raise the limit, because keys share the account counter.
 * A few models carry their own limit instead of the default (for example a daily request and token cap). The model page on the portal and the `x-ratelimit-*` headers of a response show the limit that applies to you.
 * An account that has been granted a higher limit uses that limit instead.
@@ -31,4 +32,4 @@ The request returns `429` with `x-ai-error-code: request_denied` and a message n
 
 ## Request a higher limit
 
-Need more than 10 RPM? [Contact GreenNode](https://helpdesk.greennode.ai/portal/en/newticket) to be considered for the whitelist. Include your account, the model IDs, the RPM you need and the expected traffic. Requests are reviewed case by case and depend on the capacity of the model.
+Need more than 10 RPM or 1,000,000 TPM? [Contact GreenNode](https://helpdesk.greennode.ai/portal/en/newticket) to be considered for the whitelist. Include your account, the model IDs, the RPM/TPM you need and the expected traffic. Requests are reviewed case by case and depend on the capacity of the model.

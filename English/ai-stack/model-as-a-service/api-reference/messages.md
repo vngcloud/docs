@@ -21,8 +21,8 @@ description: "Anthropic-compatible Messages API, available on every chat model. 
 | `max_tokens` | integer | **Required** | 1 … the model's max output | — | Output cap, reasoning included. |
 | `messages` | array | **Required** | `role`: user · assistant | — | Alternating turns. `content` is a string or blocks: `text`, `image`, `tool_use`, `tool_result`, `document` with a text source. |
 | `system` | string \| array | Optional | — | — | System prompt, as a string or text blocks. |
-| `output_config.effort` | string | Optional | low … max | the model's `default_effort` | Reasoning effort. See [Reasoning](../features/reasoning.md). |
-| `thinking` | object | Optional | `{"type":"enabled","budget_tokens":N}` · `{"type":"disabled"}` | per model | Anthropic-style thinking control. |
+| `output_config.effort` | string | Optional | low … max | the model's `default_effort`; if the model declares none, the provider's own default | Reasoning effort. See [Reasoning](../features/reasoning.md). |
+| `thinking` | object | Optional | `{"type":"enabled","budget_tokens":N}` · `{"type":"disabled"}` | per model | Anthropic-style thinking control. Some models (for example `qwen/qwen3.8-flash`) still think when `disabled`. |
 | `stream` | boolean | Optional | true · false | false | Stream as Anthropic events. |
 | `stop_sequences` | array | Optional | strings | — | Stop sequences. |
 | `temperature`<br>`top_p` | number | Optional | 0 – 1 | per model | Sampling, as in Anthropic's API. |
@@ -32,7 +32,7 @@ description: "Anthropic-compatible Messages API, available on every chat model. 
 {% hint style="info" %}
 **About ranges and defaults**
 
-Ranges follow the API specification the endpoint is compatible with. Whether a given model accepts a parameter is listed in its `supported_parameters` (`GET /v1/models`); an unsupported parameter or value returns `400 invalid_request`. See [Parameters](parameters.md) for how many models support each one.
+Ranges follow the API specification the endpoint is compatible with. Whether a given model accepts a parameter is listed in its `supported_parameters` (`GET /v1/models`); a parameter not on that list is ignored (no error). See [Parameters](parameters.md) for how many models support each one.
 {% endhint %}
 
 ## Example

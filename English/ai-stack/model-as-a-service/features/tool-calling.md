@@ -97,8 +97,10 @@ curl https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1/chat/completions \
 * `"required"` — must call at least one tool.
 * `{"type":"function","function":{"name":"get_weather"}}` — force a specific tool.
 
+Note: some models (for example `qwen/qwen3.8-flash`) may not honour `"required"` or a named tool and answer in text instead (`finish_reason: stop`). Always check `tool_calls` in the response.
+
 {% hint style="info" %}
-Only `function` tools (plus the [web search](web-search.md) server tool) are supported. Other OpenAI built-in tool types such as `file_search`, `code_interpreter` or `custom` do not work: on `/v1/responses` they are dropped from the request without an error, on `/v1/chat/completions` the model rejects them.
+Only `function` tools (plus the [web search](web-search.md) server tool) are supported. Other OpenAI built-in tool types such as `file_search`, `code_interpreter` or `custom` do not work: on `/v1/responses` the request returns `400`, on `/v1/chat/completions` the model rejects them. Use `function` tools instead.
 {% endhint %}
 
 On Messages use Anthropic's format (`tools[].input_schema`, `tool_use` / `tool_result` blocks); on Responses use `function_call` / `function_call_output` items. See [Parameters](../api-reference/parameters.md).

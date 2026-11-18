@@ -34,6 +34,8 @@ Luôn gửi key trong header, không đặt trong URL hay body. Ba header dướ
 | `x-api-key: <API_KEY>` | Anthropic SDK, Claude Code |
 | `apikey: <API_KEY>` | Tích hợp cũ |
 
+`GET /v1/models` không nhận header `apikey` (trả 401); với endpoint này hãy dùng `Authorization: Bearer` hoặc `x-api-key`.
+
 {% code title="shell" %}
 ```bash
 export GREENNODE_API_KEY="<your API key>"

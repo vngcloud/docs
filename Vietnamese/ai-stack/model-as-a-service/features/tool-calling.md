@@ -97,8 +97,10 @@ curl https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1/chat/completions \
 * `"required"` — bắt buộc gọi ít nhất một tool.
 * `{"type":"function","function":{"name":"get_weather"}}` — buộc gọi một tool cụ thể.
 
+Lưu ý: một số model (ví dụ `qwen/qwen3.8-flash`) có thể không tuân theo `"required"` hoặc tool được chỉ định và vẫn trả lời bằng văn bản (`finish_reason: stop`). Hãy kiểm tra `tool_calls` trong response.
+
 {% hint style="info" %}
-Chỉ hỗ trợ tool loại `function` (và server tool [web search](web-search.md)). Các loại tool tích hợp khác của OpenAI như `file_search`, `code_interpreter` hay `custom` không dùng được: trên `/v1/responses` chúng bị loại khỏi request mà không báo lỗi, trên `/v1/chat/completions` model sẽ từ chối.
+Chỉ hỗ trợ tool loại `function` (và server tool [web search](web-search.md)). Các loại tool tích hợp khác của OpenAI như `file_search`, `code_interpreter` hay `custom` không dùng được: trên `/v1/responses` request trả `400`, trên `/v1/chat/completions` model sẽ từ chối. Hãy dùng tool loại `function`.
 {% endhint %}
 
 Với Messages dùng định dạng Anthropic (`tools[].input_schema`, block `tool_use` / `tool_result`); với Responses dùng item `function_call` / `function_call_output`. Xem [Tham số](../api-reference/parameters.md).

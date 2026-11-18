@@ -27,8 +27,8 @@ description: "MaaS hỗ trợ ba chuẩn API trên cùng các model. Trang này 
 | Ảnh đầu vào | ✓ | ✓ | ✓ | Model có `image` trong loại đầu vào. |
 | PDF / file đầu vào | ✗ | một phần | ✗ | Messages chỉ nhận block `document` với nguồn dạng text; block PDF trả 400. |
 | Prompt caching | ✓ | ✓ | ✓ | Tự động; báo cáo trong cached tokens. |
-| Lưu hội thoại (`previous_response_id`) | — | — | ✗ | Gateway không lưu trạng thái. Gửi toàn bộ hội thoại mỗi lượt. |
-| Tool dựng sẵn: `file_search`, `code_interpreter`, `custom` | ✗ | — | ✗ | Không hỗ trợ: bị loại mà không báo lỗi trên Responses, bị model từ chối trên Chat. |
+| Lưu hội thoại (`previous_response_id`) | — | — | ✗ | Gateway không lưu trạng thái: gửi `previous_response_id` trả `400 invalid_request`. Gửi toàn bộ hội thoại mỗi lượt. |
+| Tool dựng sẵn: `file_search`, `code_interpreter`, `custom` | ✗ | — | ✗ | Không hỗ trợ: trả `400` trên Responses, bị model từ chối trên Chat. Dùng tool loại `function`. |
 | Server tool `web_fetch` | ✗ | ✗ | ✗ | Chưa có. |
 
 ## Điểm khác cần lưu ý
@@ -37,4 +37,4 @@ description: "MaaS hỗ trợ ba chuẩn API trên cùng các model. Trang này 
 * Trường `model` trong response là tên phía backend (ví dụ `qwen3.6-flash`), có thể khác ID bạn gửi.
 * Nhiều model mặc định có reasoning, và token reasoning tính vào `max_tokens`. Hãy đặt effort rõ ràng.
 * Lỗi có mã ổn định trong header `x-ai-error-code` ngoài phần body.
-* Tham số mà model không liệt kê trong `supported_parameters` sẽ trả 400 chứ không bị bỏ qua.
+* Tham số mà model không liệt kê trong `supported_parameters` bị bỏ qua (không báo lỗi).

@@ -79,6 +79,7 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORT
 
 | Symptom | Cause |
 | --- | --- |
-| `403 Forbidden` | Missing or invalid `Authorization`, or permission denied. |
+| `401 Unauthorized` | Missing `Authorization` (`missing api key`) or invalid API key (`unknown api key`). |
+| `403 Forbidden` | The user ID in the path differs from the owner of the API key (`tenant mismatch`). |
 | `400 Bad Request` / 4xx | A required field is missing (`flow`, `file_type`, `file`, …) or `doc_type` is invalid. |
 | Polling never returns | Send `request_id`, the time of the call and a sample file to support. |

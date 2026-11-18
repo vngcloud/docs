@@ -15,7 +15,7 @@ description: >-
 2. Chọn loại mô hình: Ở bảng điều khiển bên phải, chọn một mô hình từ danh sách
 3. Thiết lập prompt
    * Trong phần System prompt, hãy định nghĩa các hướng dẫn hoặc ngữ cảnh cho mô hình. Bạn cũng có thể thêm các ví dụ để định hướng hành vi của nó.
-4.  [Tinh chỉnh các tham số:](playground.md#huong-dan-tinh-chinh-thamso-mo-hinh)
+4.  [Tinh chỉnh các tham số:](playground.md#huong-dan-tinh-chinh-tham-so-mo-hinh)
 
     <figure><img src="../../.gitbook/assets/image (442).png" alt=""><figcaption></figcaption></figure>
 5. Bắt đầu thử nghiệm:
@@ -74,7 +74,7 @@ Khi sử dụng Playground, bạn có thể điều chỉnh các thông số sau
 * Presence Penalty: Mức phạt cho các từ đã xuất hiện trong cuộc trò chuyện, khuyến khích mô hình tạo ra các chủ đề mới và giảm lặp từ.
   * Phạm vi: -2 đến 2 (Mặc định: 0).
 
-Để xem thêm các thông số chi tiết, bạn có thể tham khảo tài liệu của [vLLM ](../../)và [OpenAI](https://platform.openai.com/docs/api-reference/introduction).
+Để xem thêm các thông số chi tiết, bạn có thể tham khảo tài liệu của [vLLM](https://docs.vllm.ai)và [OpenAI](https://platform.openai.com/docs/api-reference/introduction).
 
 ### So sánh mô hình
 

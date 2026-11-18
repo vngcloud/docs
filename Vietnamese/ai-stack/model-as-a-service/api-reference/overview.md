@@ -31,6 +31,8 @@ Gửi API key qua một trong các header sau; dùng header mà SDK của bạn 
 | `x-api-key: <key>` | Anthropic SDKs |
 | `apikey: <key>` | Tích hợp cũ |
 
+`GET /v1/models` không nhận header `apikey` (trả 401); với endpoint này hãy dùng `Authorization: Bearer` hoặc `x-api-key`.
+
 Thiếu key hoặc key không hợp lệ → **401** `request_denied`. Model chưa được bật cho key → **403** `request_denied`.
 
 ## Chọn model

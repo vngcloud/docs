@@ -21,8 +21,8 @@ description: "Messages API tương thích Anthropic, dùng được với mọi 
 | `max_tokens` | integer | **Bắt buộc** | 1 … output tối đa của model | — | Giới hạn output, gồm cả reasoning. |
 | `messages` | array | **Bắt buộc** | `role`: user · assistant | — | Các lượt xen kẽ. `content` là chuỗi hoặc các block: `text`, `image`, `tool_use`, `tool_result`, `document` với nguồn dạng text. |
 | `system` | string \| array | Tuỳ chọn | — | — | System prompt, dạng chuỗi hoặc các block text. |
-| `output_config.effort` | string | Tuỳ chọn | low … max | `default_effort` của model | Mức reasoning. Xem [Reasoning](../features/reasoning.md). |
-| `thinking` | object | Tuỳ chọn | `{"type":"enabled","budget_tokens":N}` · `{"type":"disabled"}` | theo model | Điều khiển thinking theo kiểu Anthropic. |
+| `output_config.effort` | string | Tuỳ chọn | low … max | `default_effort` của model; model không khai báo thì theo mặc định của nhà cung cấp | Mức reasoning. Xem [Reasoning](../features/reasoning.md). |
+| `thinking` | object | Tuỳ chọn | `{"type":"enabled","budget_tokens":N}` · `{"type":"disabled"}` | theo model | Điều khiển thinking theo kiểu Anthropic. Một số model (ví dụ `qwen/qwen3.8-flash`) vẫn suy luận khi `disabled`. |
 | `stream` | boolean | Tuỳ chọn | true · false | false | Stream theo chuỗi event của Anthropic. |
 | `stop_sequences` | array | Tuỳ chọn | các chuỗi | — | Chuỗi dừng. |
 | `temperature`<br>`top_p` | number | Tuỳ chọn | 0 – 1 | theo model | Sampling, như API của Anthropic. |
@@ -32,7 +32,7 @@ description: "Messages API tương thích Anthropic, dùng được với mọi 
 {% hint style="info" %}
 **Về khoảng giá trị và mặc định**
 
-Khoảng giá trị theo đặc tả API mà endpoint tương thích. Model có nhận một tham số hay không được liệt kê trong `supported_parameters` (`GET /v1/models`); tham số hoặc giá trị không hỗ trợ sẽ trả `400 invalid_request`. Xem [Tham số](parameters.md) để biết bao nhiêu model hỗ trợ từng tham số.
+Khoảng giá trị theo đặc tả API mà endpoint tương thích. Model có nhận một tham số hay không được liệt kê trong `supported_parameters` (`GET /v1/models`); tham số không có trong danh sách đó bị bỏ qua (không báo lỗi). Xem [Tham số](parameters.md) để biết bao nhiêu model hỗ trợ từng tham số.
 {% endhint %}
 
 ## Ví dụ

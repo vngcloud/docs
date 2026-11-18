@@ -4,6 +4,16 @@ description: "Hầu hết model chat suy luận từng bước trước khi tr�
 
 # Reasoning
 
+## Trạng thái reasoning của model
+
+Cột **Reasoning** trong [Danh sách model](../models/README.md) có ba giá trị:
+
+| Trạng thái | Ý nghĩa | Trường trong `GET /v1/models` |
+| --- | --- | --- |
+| **Luôn bật** | Model luôn suy luận. Bạn có thể hạ mức effort nhưng không tắt được. | `reasoning.mandatory: true` |
+| **Mặc định bật** | Model suy luận nếu bạn không chỉ định gì; có thể tắt hoặc hạ effort. | `mandatory: false`, `default_enabled: true` |
+| **Tùy chọn** | Model chỉ suy luận khi bạn bật (đặt `reasoning_effort`). | `mandatory: false`, `default_enabled: false` |
+
 ## Đặt mức effort
 
 | Endpoint | Trường | Ví dụ |
@@ -51,7 +61,7 @@ print(getattr(msg, "reasoning_content", None))       # reasoning text, if any
 
 | Endpoint | Nội dung suy luận | Số token suy luận |
 | --- | --- | --- |
-| Chat | `message.reasoning_content` (stream: `delta.reasoning_content`) | `usage.completion_tokens_details.reasoning_tokens` |
+| Chat | `message.reasoning_content` (stream: `delta.reasoning_content`) | `usage.completion_tokens_details.reasoning_tokens` (một số model, ví dụ GLM: `usage.reasoning_tokens`) |
 | Messages | `content[type="thinking"].thinking` | `usage.output_tokens_details.reasoning_tokens` |
 | Responses | `output[type="reasoning"].summary[].text` | `usage.output_tokens_details.reasoning_tokens` |
 

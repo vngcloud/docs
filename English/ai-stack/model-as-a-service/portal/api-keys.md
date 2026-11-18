@@ -34,6 +34,8 @@ Always send the key in a header, never in the URL or the body. The three headers
 | `x-api-key: <API_KEY>` | Anthropic SDK, Claude Code |
 | `apikey: <API_KEY>` | Legacy integrations |
 
+`GET /v1/models` does not accept the `apikey` header (returns 401); use `Authorization: Bearer` or `x-api-key` for that endpoint.
+
 {% code title="shell" %}
 ```bash
 export GREENNODE_API_KEY="<your API key>"

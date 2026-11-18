@@ -79,6 +79,7 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORT
 
 | Hiện tượng | Nguyên nhân |
 | --- | --- |
-| `403 Forbidden` | Thiếu hoặc sai `Authorization`, hoặc không có quyền. |
+| `401 Unauthorized` | Thiếu `Authorization` (`missing api key`) hoặc API key sai (`unknown api key`). |
+| `403 Forbidden` | User ID trong đường dẫn khác chủ sở hữu API key (`tenant mismatch`). |
 | `400 Bad Request` / 4xx | Thiếu trường bắt buộc (`flow`, `file_type`, `file`, …) hoặc `doc_type` không hợp lệ. |
 | Polling không có kết quả | Gửi `request_id`, thời điểm gọi và file mẫu cho bộ phận hỗ trợ. |

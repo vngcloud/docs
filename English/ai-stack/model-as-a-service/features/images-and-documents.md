@@ -70,7 +70,7 @@ completion = client.chat.completions.create(
 {% endtab %}
 {% endtabs %}
 
-Sending an image to a text-only model returns 400 `invalid_request`. Images count toward input tokens.
+An image sent to a text-only model is ignored (the request still returns 200); check the model's `input_modalities` before sending. Images count toward input tokens.
 
 ## Documents (PDF, Word…)
 

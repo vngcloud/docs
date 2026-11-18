@@ -31,6 +31,8 @@ Send your API key in one of these headers; use the one your SDK sends by default
 | `x-api-key: <key>` | Anthropic SDKs |
 | `apikey: <key>` | Legacy integrations |
 
+`GET /v1/models` does not accept the `apikey` header (returns 401); use `Authorization: Bearer` or `x-api-key` for that endpoint.
+
 Missing or unknown key → **401** `request_denied`. Model not enabled for the key → **403** `request_denied`.
 
 ## Selecting the model
