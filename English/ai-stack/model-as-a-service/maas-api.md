@@ -77,7 +77,7 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORT
 This is normal because OCR processing is still in progress.
 
 * Wait 2–5 seconds and call the API again (polling) until `data.status` is `COMPLETED`.
-* If the timeout is exceeded and no data is returned, send the request\_id to the support team for investigation.
+* If the timeout is exceeded and no data is returned, send the `request_id` to the support team for investigation.
 
 ### Additional OCR Data APIs (optional, depending on needs)
 
