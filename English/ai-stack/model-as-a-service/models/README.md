@@ -23,7 +23,7 @@ Every model is addressed as `vendor/model`. Click a model for details and a read
 | [`qwen/qwen3.6-flash`](qwen/qwen3.6-flash.md) | Qwen 3.6 Flash | 1M | 64K | text, image, video | chat, responses, messages | On by default |
 | [`qwen/qwen3.6-plus`](qwen/qwen3.6-plus.md) | Qwen 3.6 Plus | 1M | 64K | text, image, video | chat, responses, messages | On by default |
 | [`qwen/qwen3.7-plus`](qwen/qwen3.7-plus.md) | Qwen 3.7 Plus | 1M | 128K | text, image, video | chat, responses, messages | On by default |
-| [`qwen/qwen3.8-27b`](qwen/qwen3.8-27b.md) | Qwen 3.8 27B | 262K | 262K | text, image | chat, responses, messages | On by default |
+| [`qwen/qwen3.8-27b`](qwen/qwen3.8-27b.md) | Qwen 3.8 27B | 262K | 128K | text, image | chat, responses, messages | On by default |
 | [`qwen/qwen3.8-flash`](qwen/qwen3.8-flash.md) | Qwen 3.8 Flash | 1M | 128K | text, image, video | chat, responses, messages | On by default |
 | [`qwen/qwen3.8-max`](qwen/qwen3.8-max.md) | Qwen 3.8 Max | 1M | 128K | text, image, video | chat, responses, messages | On by default |
 | [`z-ai/glm-5.2-thirdparty`](z-ai/glm-5.2-thirdparty.md) | GLM-5.2 | 1M | 128K | text | chat, responses, messages | On by default |

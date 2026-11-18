@@ -15,7 +15,7 @@ Qwen3.8-27B is a 27B-parameter open-weight model from the Qwen3.8 family, self-h
 | Spec | Value |
 | --- | --- |
 | Context length | 262K tokens |
-| Max output | 262K tokens |
+| Max output | 128K tokens |
 | Input | text, image |
 | Output | text |
 | Endpoints | `/v1/chat/completions`, `/v1/responses`, `/v1/messages` |
