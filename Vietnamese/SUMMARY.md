@@ -875,7 +875,6 @@
       * [Qwen 3 Embedding 8B](ai-stack/model-as-a-service/models/qwen/qwen3-embedding-8b.md)
       * [BGE Reranker v2 m3](ai-stack/model-as-a-service/models/baai/bge-reranker-v2-m3.md)
       * [Qwen 3 Reranker 8B](ai-stack/model-as-a-service/models/qwen/qwen3-reranker-8b.md)
-      * [GreenNode IDP](ai-stack/model-as-a-service/models/greennode/idp.md)
     * [MaaS API](ai-stack/model-as-a-service/maas-api.md)
     * [Cách tính phí](ai-stack/model-as-a-service/cach-tinh-phi.md)
     * [Cam kết SLA](ai-stack/model-as-a-service/cam-ket-sla.md)

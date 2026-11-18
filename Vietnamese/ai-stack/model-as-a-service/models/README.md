@@ -44,9 +44,3 @@ Mỗi model được gọi theo dạng `vendor/model`. Bấm vào tên model đ�
 | --- | --- | --- | --- | --- | --- | --- |
 | [`baai/bge-reranker-v2-m3`](baai/bge-reranker-v2-m3.md) | BGE Reranker v2 m3 | 8K | — | text | rerank | — |
 | [`qwen/qwen3-reranker-8b`](qwen/qwen3-reranker-8b.md) | Qwen 3 Reranker 8B | 33K | — | text | rerank | — |
-
-## OCR
-
-| Model ID | Tên | Ngữ cảnh | Output tối đa | Đầu vào | Endpoints | Reasoning |
-| --- | --- | --- | --- | --- | --- | --- |
-| [`greennode/idp`](greennode/idp.md) | GreenNode IDP | 164K | — | image, file | ocr | — |
