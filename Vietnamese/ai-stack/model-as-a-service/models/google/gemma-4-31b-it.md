@@ -1,5 +1,5 @@
 ---
-description: "Gemma 4 31B-IT is Google's open-weight instruction-tuned model from the Gemma 4 family, featuring 31 billion parameters with native multimodal support for text and image inputs. It offers a 128K..."
+description: "Gemma 4 31B-IT is Google's open-weight instruction-tuned model from the Gemma 4 family, featuring 31 billion parameters with native multimodal support for text and image inputs. It offers a 128K token context window and is optimized for instruction following, reasoning, coding, and vision-language tasks."
 ---
 
 # Gemma 4 31B-IT
@@ -8,7 +8,7 @@ description: "Gemma 4 31B-IT is Google's open-weight instruction-tuned model fro
 
 Model ID: `google/gemma-4-31b-it` · Loại: Chat
 
-Gemma 4 31B-IT is Google's open-weight instruction-tuned model from the Gemma 4 family, featuring 31 billion parameters with native multimodal support for text and image inputs. It offers a 128K...
+Gemma 4 31B-IT is Google's open-weight instruction-tuned model from the Gemma 4 family, featuring 31 billion parameters with native multimodal support for text and image inputs. It offers a 128K token context window and is optimized for instruction following, reasoning, coding, and vision-language tasks.
 
 ## Thông số
 

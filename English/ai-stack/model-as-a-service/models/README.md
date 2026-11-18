@@ -8,6 +8,8 @@ description: "GreenNode MaaS models: context length, input modalities, endpoints
 
 Every model is addressed as `vendor/model`. Click a model for details and a ready-to-run request.
 
+**Reasoning** column: **Always on** = the model always reasons; you can lower `reasoning_effort` but not turn it off; **On by default** = reasons unless you turn it off; **Optional** = reasons only when you turn it on; **—** = no reasoning support.
+
 ## Chat
 
 | Model ID | Name | Context | Max output | Input | Endpoints | Reasoning |

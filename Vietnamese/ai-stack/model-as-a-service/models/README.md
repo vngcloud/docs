@@ -8,6 +8,8 @@ description: "Danh sách model GreenNode MaaS: độ dài ngữ cảnh, đầu v
 
 Mỗi model được gọi theo dạng `vendor/model`. Bấm vào tên model để xem chi tiết và ví dụ gọi API.
 
+Cột **Reasoning**: **Luôn bật** = model luôn suy luận, chỉ giảm được mức `reasoning_effort` chứ không tắt được; **Mặc định bật** = có suy luận khi không truyền gì, tắt được; **Tùy chọn** = chỉ suy luận khi bạn bật; **—** = model không hỗ trợ suy luận.
+
 ## Chat
 
 | Model ID | Tên | Ngữ cảnh | Output tối đa | Đầu vào | Endpoints | Reasoning |
