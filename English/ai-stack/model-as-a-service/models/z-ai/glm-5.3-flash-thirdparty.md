@@ -1,5 +1,5 @@
 ---
-description: "GLM-5.3-Flash is the first natively multimodal model in Z.ai's GLM-5 series, released August 26, 2026 under the MIT license. Built on a 320B-parameter Mixture-of-Experts architecture with ~18B active parameters per..."
+description: "GLM-5.3-Flash is the first natively multimodal model in Z.ai's GLM-5 series, released 2026-08-25 under the MIT license. Built on a 320B-parameter Mixture-of-Experts architecture with ~18B active parameters per token, it..."
 ---
 
 # GLM-5.3 Flash
@@ -8,7 +8,7 @@ description: "GLM-5.3-Flash is the first natively multimodal model in Z.ai's GLM
 
 Model ID: `z-ai/glm-5.3-flash-thirdparty` · Type: Chat
 
-GLM-5.3-Flash is the first natively multimodal model in Z.ai's GLM-5 series, released August 26, 2026 under the MIT license. Built on a 320B-parameter Mixture-of-Experts architecture with ~18B active parameters per...
+GLM-5.3-Flash is the first natively multimodal model in Z.ai's GLM-5 series, released 2026-08-25 under the MIT license. Built on a 320B-parameter Mixture-of-Experts architecture with ~18B active parameters per token, it...
 
 ## Specs
 

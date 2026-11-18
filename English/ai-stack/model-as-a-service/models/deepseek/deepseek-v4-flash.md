@@ -1,5 +1,5 @@
 ---
-description: "DeepSeek-V4-Flash is the efficiency-optimized tier of the DeepSeek-V4 family: a 284B-parameter Mixture-of-Experts model with only 13B active parameters per token, sharing the Pro tier's hybrid attention architecture (CSA + HCA)..."
+description: "DeepSeek-V4 Flash is the speed- and cost-optimized tier of the DeepSeek-V4 family. On the same MLA + DeepSeekMoE backbone it activates fewer experts per token to deliver high-throughput, low-latency responses..."
 ---
 
 # DeepSeek V4 Flash
@@ -8,7 +8,7 @@ description: "DeepSeek-V4-Flash is the efficiency-optimized tier of the DeepSeek
 
 Model ID: `deepseek/deepseek-v4-flash` · Type: Chat
 
-DeepSeek-V4-Flash is the efficiency-optimized tier of the DeepSeek-V4 family: a 284B-parameter Mixture-of-Experts model with only 13B active parameters per token, sharing the Pro tier's hybrid attention architecture (CSA + HCA)...
+DeepSeek-V4 Flash is the speed- and cost-optimized tier of the DeepSeek-V4 family. On the same MLA + DeepSeekMoE backbone it activates fewer experts per token to deliver high-throughput, low-latency responses...
 
 ## Specs
 

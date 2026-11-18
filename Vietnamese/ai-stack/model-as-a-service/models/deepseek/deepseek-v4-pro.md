@@ -1,5 +1,5 @@
 ---
-description: "DeepSeek-V4-Pro is the flagship tier of the DeepSeek-V4 family: a 1.6T-parameter Mixture-of-Experts model with 49B active parameters per token, built on a hybrid attention stack (Compressed Sparse Attention + Heavily..."
+description: "DeepSeek-V4 Pro is the flagship tier of the DeepSeek-V4 family — a Mixture-of-Experts (MoE) model built on Multi-head Latent Attention (MLA) and the DeepSeekMoE architecture with an auxiliary-loss-free load-balancing strategy...."
 ---
 
 # DeepSeek V4 Pro
@@ -8,7 +8,7 @@ description: "DeepSeek-V4-Pro is the flagship tier of the DeepSeek-V4 family: a 
 
 Model ID: `deepseek/deepseek-v4-pro` · Loại: Chat
 
-DeepSeek-V4-Pro is the flagship tier of the DeepSeek-V4 family: a 1.6T-parameter Mixture-of-Experts model with 49B active parameters per token, built on a hybrid attention stack (Compressed Sparse Attention + Heavily...
+DeepSeek-V4 Pro is the flagship tier of the DeepSeek-V4 family — a Mixture-of-Experts (MoE) model built on Multi-head Latent Attention (MLA) and the DeepSeekMoE architecture with an auxiliary-loss-free load-balancing strategy....
 
 ## Thông số
 

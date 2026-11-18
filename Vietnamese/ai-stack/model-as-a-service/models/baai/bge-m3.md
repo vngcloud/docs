@@ -1,5 +1,5 @@
 ---
-description: "BGE-M3 is a multilingual, multi-function, long-context text embedding model that unifies dense, sparse (lexical), and multi-vector (ColBERT-style) retrieval in a single backbone; it supports >100 languages and up to 8192..."
+description: "BGE is the new series of Qwen large language models"
 ---
 
 # BGE-M3
@@ -8,7 +8,7 @@ description: "BGE-M3 is a multilingual, multi-function, long-context text embedd
 
 Model ID: `baai/bge-m3` · Loại: Embedding
 
-BGE-M3 is a multilingual, multi-function, long-context text embedding model that unifies dense, sparse (lexical), and multi-vector (ColBERT-style) retrieval in a single backbone; it supports >100 languages and up to 8192...
+BGE is the new series of Qwen large language models
 
 ## Thông số
 

@@ -1,5 +1,5 @@
 ---
-description: "Qwen3.8-27B is a 27B-parameter open-weight model from the Qwen3.8 family, self-hosted on VNG infrastructure (SGLang). It supports a 262K-token context window, hybrid thinking / non-thinking modes and is exposed over..."
+description: "Qwen3.8-27B is a 27B-parameter open-weight model from the Qwen3.8 family, self-hosted on VNG infrastructure (SGLang). It supports a 1M-token context window, text and image input, hybrid thinking / non-thinking modes..."
 ---
 
 # Qwen 3.8 27B
@@ -8,7 +8,7 @@ description: "Qwen3.8-27B is a 27B-parameter open-weight model from the Qwen3.8 
 
 Model ID: `qwen/qwen3.8-27b` · Type: Chat
 
-Qwen3.8-27B is a 27B-parameter open-weight model from the Qwen3.8 family, self-hosted on VNG infrastructure (SGLang). It supports a 262K-token context window, hybrid thinking / non-thinking modes and is exposed over...
+Qwen3.8-27B is a 27B-parameter open-weight model from the Qwen3.8 family, self-hosted on VNG infrastructure (SGLang). It supports a 1M-token context window, text and image input, hybrid thinking / non-thinking modes...
 
 ## Specs
 
