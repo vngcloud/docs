@@ -15,7 +15,7 @@ Qwen3-Embedding-8B is an 8B text embedding model from Alibaba, fine-tuned from Q
 | Thông số | Giá trị |
 | --- | --- |
 | Ngữ cảnh | 33K tokens |
-| Output tối đa | — tokens |
+| Output tối đa | — |
 | Đầu vào | text |
 | Đầu ra | embeddings |
 | Endpoints | `/v1/embeddings` |

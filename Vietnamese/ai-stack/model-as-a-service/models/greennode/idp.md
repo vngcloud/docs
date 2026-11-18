@@ -15,7 +15,7 @@ GreenNode IDP is an Intelligent Document Processing solution researched and deve
 | Thông số | Giá trị |
 | --- | --- |
 | Ngữ cảnh | 164K tokens |
-| Output tối đa | — tokens |
+| Output tối đa | — |
 | Đầu vào | image, file |
 | Đầu ra | text |
-| Endpoints | `ocr` |
+| Endpoints | [OCR API](../../api-reference/ocr.md) |

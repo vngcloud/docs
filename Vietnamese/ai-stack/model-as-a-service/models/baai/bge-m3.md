@@ -15,7 +15,7 @@ BGE is the new series of Qwen large language models
 | Thông số | Giá trị |
 | --- | --- |
 | Ngữ cảnh | 8K tokens |
-| Output tối đa | — tokens |
+| Output tối đa | — |
 | Đầu vào | text |
 | Đầu ra | embeddings |
 | Endpoints | `/v1/embeddings` |

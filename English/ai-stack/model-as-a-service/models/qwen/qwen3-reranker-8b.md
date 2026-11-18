@@ -15,7 +15,7 @@ Qwen3 is the new series of Qwen large language models
 | Spec | Value |
 | --- | --- |
 | Context length | 33K tokens |
-| Max output | — tokens |
+| Max output | — |
 | Input | text |
 | Output | rerank |
 | Endpoints | `/v1/rerank` |

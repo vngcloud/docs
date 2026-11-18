@@ -15,7 +15,7 @@ BGE-Reranker-v2-m3 is a lightweight multilingual cross-encoder reranker from BAA
 | Spec | Value |
 | --- | --- |
 | Context length | 8K tokens |
-| Max output | — tokens |
+| Max output | — |
 | Input | text |
 | Output | rerank |
 | Endpoints | `/v1/rerank` |

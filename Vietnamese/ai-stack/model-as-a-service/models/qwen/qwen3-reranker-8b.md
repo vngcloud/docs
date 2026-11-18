@@ -15,7 +15,7 @@ Qwen3 is the new series of Qwen large language models
 | Thông số | Giá trị |
 | --- | --- |
 | Ngữ cảnh | 33K tokens |
-| Output tối đa | — tokens |
+| Output tối đa | — |
 | Đầu vào | text |
 | Đầu ra | rerank |
 | Endpoints | `/v1/rerank` |
