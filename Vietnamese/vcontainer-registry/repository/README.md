@@ -29,6 +29,10 @@ Xem danh sách Repository User được đính kèm bằng cách nhấp vào tab
 
 Lịch sử truy cập của Repository giúp bạn theo dõi tất cả các hành động liên quan đến nó, bao gồm cả những hành động đối với Repository và Images liên quan. Tham khảo thêm tại Repository History.
 
+**CẤU HÌNH RETENTION POLICY**
+
+Tự động dọn dẹp các artifact cũ trong Repository. Bạn đặt các rule để chọn artifact cần giữ lại; vCR sẽ xoá phần còn lại theo lịch chạy hoặc khi bạn bấm Chạy ngay. Tham khảo chi tiết tại Retention Policy.
+
 #### Bài viết liên quan <a href="#repository-baivietlienquan" id="repository-baivietlienquan"></a>
 
 * [Create Repository](cach-tao-repository.md)
@@ -36,5 +40,6 @@ Lịch sử truy cập của Repository giúp bạn theo dõi tất cả các h�
 * [Image Management](cach-quan-ly-image.md)
 * [Repository User](../cach-tao-repository-user/)
 * [Repository History](xem-lich-su-repository-history.md)
+* [Retention Policy](cau-hinh-retention-policy.md)
 
 <br>

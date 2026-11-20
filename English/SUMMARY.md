@@ -1114,6 +1114,7 @@
     * [Edit quota limit](vcontainer-registry/repository/edit-quota-limit.md)
     * [Manage image](vcontainer-registry/repository/manage-image.md)
     * [Repository History](vcontainer-registry/repository/repository-history.md)
+    * [Retention Policy](vcontainer-registry/repository/retention-policy.md)
   * [Repository user](vcontainer-registry/repository-user/README.md)
     * [Create repository user](vcontainer-registry/repository-user/create-repository-user.md)
     * [Edit user information](vcontainer-registry/repository-user/edit-user-information.md)
