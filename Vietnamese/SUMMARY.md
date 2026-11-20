@@ -1114,6 +1114,7 @@
     * [Cách chỉnh sửa Quota Limit](vcontainer-registry/repository/cach-chinh-sua-quota-limit.md)
     * [Cách quản lý Image](vcontainer-registry/repository/cach-quan-ly-image.md)
     * [Xem lịch sử Repository History](vcontainer-registry/repository/xem-lich-su-repository-history.md)
+    * [Cấu hình Retention Policy](vcontainer-registry/repository/cau-hinh-retention-policy.md)
   * [Repository User](vcontainer-registry/cach-tao-repository-user/README.md)
     * [Tạo Repository User](vcontainer-registry/cach-tao-repository-user/tao-repository-user.md)
     * [Điều chỉnh thông tin](vcontainer-registry/cach-tao-repository-user/dieu-chinh-thong-tin.md)

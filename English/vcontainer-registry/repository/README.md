@@ -29,3 +29,7 @@ For more details, refer to the "Repository User" section.
 **VIEW HISTORY**
 
 The access history of the Repository allows you to track all actions related to it, including actions on the Repository itself and related Images. For more information, refer to the "Repository History" section.
+
+**RETENTION POLICY**
+
+Clean up old artifacts in the Repository automatically. You set rules to choose which artifacts to keep; vCR deletes the rest on a schedule or when you click Run now. For more details, refer to the "[Retention Policy](retention-policy.md)" section.
