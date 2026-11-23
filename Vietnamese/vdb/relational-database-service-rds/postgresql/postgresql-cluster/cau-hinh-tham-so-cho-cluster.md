@@ -123,4 +123,4 @@ Mỗi lần chỉnh sửa, bạn có thể thay đổi một hoặc nhiều para
 
 | Parameter | Giá trị mặc định | Giá trị cho phép | Kiểu | Unit | Công dụng | Restart Required |
 | --- | --- | --- | --- | --- | --- | --- |
-| `max_locks_per_transaction` | 64 | 10 - 2147483647 | integer | | Số lock tối đa mỗi transaction | **Có** |
+| `max_locks_per_transaction` | 64 | 32 - 2147483647 | integer | | Số lock tối đa mỗi transaction | **Có** |

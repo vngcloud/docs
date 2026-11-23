@@ -123,4 +123,4 @@ Each time you edit, you can change one or more parameters. Parameters that you d
 
 | Parameter | Default Value | Allowed Values | Type | Unit | Description | Restart Required |
 | --- | --- | --- | --- | --- | --- | --- |
-| `max_locks_per_transaction` | 64 | 10 - 2147483647 | integer | | Maximum number of locks per transaction | **Yes** |
+| `max_locks_per_transaction` | 64 | 32 - 2147483647 | integer | | Maximum number of locks per transaction | **Yes** |
