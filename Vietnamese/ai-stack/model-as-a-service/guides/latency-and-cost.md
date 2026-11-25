@@ -19,4 +19,4 @@ description: "Phần lớn request chậm hoặc tốn kém là do reasoning, ou
 
 * `usage` trong mỗi response cho biết token input, output, reasoning và cached.
 * `x-kong-upstream-latency` là thời gian chờ model; `x-kong-proxy-latency` là thời gian gateway cộng thêm. Cả hai tính bằng mili giây.
-* Trang [Model Usage](https://aiplatform.console.greennode.ai/model-usage) hiển thị token và chi phí theo thời gian.
+* Trang [Usage & Cost](https://aiplatform.console.greennode.ai/usage-cost) (menu **Usage & Budget**) hiển thị token và chi phí theo thời gian.

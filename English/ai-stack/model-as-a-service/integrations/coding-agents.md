@@ -88,4 +88,4 @@ Keep `multi_agent = false`: recent Codex versions otherwise send OpenAI-only sub
 ## Tips
 
 * Agents send long, growing histories — [prompt caching](../features/prompt-caching.md) makes them much faster. Avoid tools/plugins that rewrite earlier turns.
-* Check the model's max output on the [Models](../models/README.md) page — some (e.g. Kimi, 16k) are lower than agents' default output settings.
+* Check the model's max output on the [Models](../models/README.md) page — some models' limits are lower than agents' default output settings.

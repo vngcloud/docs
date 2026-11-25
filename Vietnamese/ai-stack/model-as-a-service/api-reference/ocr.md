@@ -21,7 +21,7 @@ Body là `multipart/form-data`:
 | --- | --- | --- | --- |
 | `flow` | **Bắt buộc** | `single` · `<FLOW_ID>` | `single` chạy OCR cho một tài liệu; flow ID chạy một luồng tài liệu. |
 | `doc_type` | Bắt buộc khi `flow=single` | `<DOC_TYPE>` | Loại tài liệu cần trích xuất, ví dụ `Doc2Text` (OCR văn bản chung). Danh sách loại tài liệu khác: liên hệ GreenNode. |
-| `file_type` | Bắt buộc khi `flow=single` | `PDF` · `IMAGE` | Loại file upload. |
+| `file_type` | **Bắt buộc** | `PDF` · `IMAGE` | Loại file upload. |
 | `file` | **Bắt buộc** | nhị phân | File cần xử lý. `PDF`: 1 file đuôi `.pdf`, 2 KB–50 MB. `IMAGE`: jpg, jpeg, png, bmp, tif, tiff, mỗi file 2 KB–10 MB, gửi được nhiều file. |
 
 {% code title="curl" %}
@@ -53,7 +53,7 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORT
 {% hint style="info" %}
 **Chưa có dữ liệu?**
 
-Tài liệu đang được xử lý. Chờ 2–5 giây rồi gọi lại (polling) cho tới khi `data.status` = `COMPLETED`. Nếu mãi không có kết quả, gửi `request_id` cho bộ phận hỗ trợ.
+Tài liệu đang được xử lý. Chờ 2–5 giây rồi gọi lại (polling) cho tới khi `data.status` = `COMPLETED` (thành công) hoặc `FAILED` (xử lý thất bại, dừng polling). Nếu mãi không có kết quả, gửi `request_id` cho bộ phận hỗ trợ.
 {% endhint %}
 
 ## Các endpoint kết quả khác
@@ -81,7 +81,7 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORT
 | --- | --- |
 | `401 Unauthorized` | Thiếu `Authorization` (`missing api key`) hoặc API key sai (`unknown api key`). |
 | `403 Forbidden` | User ID trong đường dẫn khác chủ sở hữu API key (`tenant mismatch`). |
-| `400 Bad Request` | Thiếu `doc_type` hoặc `file_type` khi `flow=single`, thiếu `file`, hoặc loại / kích thước file không hợp lệ. |
+| `400 Bad Request` | Thiếu `doc_type` khi `flow=single`, thiếu `file_type`, thiếu `file`, hoặc loại / kích thước file không hợp lệ. |
 | `404 Not Found` | `request_id` không tồn tại. |
 | `500` `Multipart field value cannot be null` | Thiếu trường `flow`. |
 | `500` `Doc Type not found` | `doc_type` không tồn tại. |

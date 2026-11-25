@@ -149,10 +149,9 @@ Recovery Expiration
 
 To view detailed usage:
 
-* Go to the [**Model Usage**](https://aiplatform.console.greennode.ai/model-usage) **page**
+* Go to **Usage & Budget → Usage & Cost** in the [AI Platform Console](https://aiplatform.console.greennode.ai/usage-cost) (see [View Usage & Cost](../usage-budget/view-usage-cost.md))
 * You can:
   * Select a specific time range
   * View details such as:
     * Tokens input / output / cache
-    * Number of generated images
     * Corresponding costs

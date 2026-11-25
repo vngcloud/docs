@@ -19,4 +19,4 @@ description: "Most slow or expensive requests come from reasoning, long outputs 
 
 * `usage` in every response shows input, output, reasoning and cached tokens.
 * `x-kong-upstream-latency` is the time spent waiting for the model; `x-kong-proxy-latency` is the time added by the gateway. Both are in milliseconds.
-* The [Model Usage](https://aiplatform.console.greennode.ai/model-usage) page shows tokens and cost over time.
+* The [Usage & Cost](https://aiplatform.console.greennode.ai/usage-cost) page (under **Usage & Budget**) shows tokens and cost over time.
