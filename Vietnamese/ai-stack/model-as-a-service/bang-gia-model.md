@@ -76,15 +76,11 @@ Bảng giá hiện hành của các model trên GreenNode MaaS. Các lần thay 
 | Model               | Loại   |    Giá (VNĐ) |
 | ------------------- | ------ | -----------: |
 | BGE Reranker v2 m3  | Input  |          265 |
-| BGE Reranker v2 m3  | Output | Chưa công bố |
 | BGE-M3              | Input  |        2.836 |
-| BGE-M3              | Output | Chưa công bố |
 | GreenNode IDP       | Input  | Chưa công bố |
 | GreenNode IDP       | Output | Chưa công bố |
 | Qwen 3 Reranker 8B  | Input  |        2.650 |
-| Qwen 3 Reranker 8B  | Output |        2.650 |
 | Qwen 3 Embedding 8B | Input  |        2.650 |
-| Qwen 3 Embedding 8B | Output |        2.650 |
 
 {% hint style="info" %}
 **Chưa công bố**: model chưa có giá chính thức; giá sẽ được cập nhật khi công bố.

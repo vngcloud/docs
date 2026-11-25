@@ -76,15 +76,11 @@ Unit: **VND / 1,000,000 tokens**. See how the pricing formula is applied in [Pri
 | Model               | Type   |       Price (VND) |
 | ------------------- | ------ | ----------------: |
 | BGE Reranker v2 m3  | Input  |               265 |
-| BGE Reranker v2 m3  | Output | Not yet announced |
 | BGE-M3              | Input  |             2,836 |
-| BGE-M3              | Output | Not yet announced |
 | GreenNode IDP       | Input  | Not yet announced |
 | GreenNode IDP       | Output | Not yet announced |
 | Qwen 3 Reranker 8B  | Input  |             2,650 |
-| Qwen 3 Reranker 8B  | Output |             2,650 |
 | Qwen 3 Embedding 8B | Input  |             2,650 |
-| Qwen 3 Embedding 8B | Output |             2,650 |
 
 {% hint style="info" %}
 **Not yet announced**: no official price yet; it will be updated once announced.

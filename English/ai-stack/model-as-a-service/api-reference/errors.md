@@ -79,9 +79,9 @@ A few responses come from the proxy layer before the request reaches a model. Th
 
 | HTTP | Body | Cause and fix |
 | --- | --- | --- |
-| 404 | `{"message":"no Route matched with those values", …}` | Wrong path or HTTP method. Check the URL. |
+| 404 | `{"message":"no Route matched with those values", …}` | Wrong path or HTTP method, or the body has no valid `model` (`model` is missing, the body is empty, or it is not JSON). Check the URL and send a JSON body with `model`. |
 | 405 | `{"error":{"code":"method_not_allowed", …}}` | `/v1/models` only accepts `GET`. |
-| 502 | `{"message":"An invalid response was received from the upstream server", …}` | On `/v1/…` endpoints: the gateway cannot read `model` from the body (the body is not valid JSON, is empty, or has no `model`), so the request cannot be routed. Send a valid JSON body with `model`. This is not retryable. |
+| 502 | `{"message":"An invalid response was received from the upstream server", …}` | On `/v1/…` endpoints, a body with no valid `model` (`model` is missing, the body is empty, or it is not JSON) can return `502` instead of `404`. Send a valid JSON body with `model`. This is not retryable. |
 | 504 | `{"message":"The upstream server is timing out", …}` | The model did not answer within the request time limit. Use streaming or lower `max_tokens`. See [limits](limits.md). |
 
 

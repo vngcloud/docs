@@ -50,7 +50,7 @@ curl https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1/chat/completions \
 
 * Đường dẫn endpoint giống nhau cho mọi model (ví dụ `POST /v1/chat/completions`); chỉ giá trị `model` thay đổi.
 * Lấy model ID tại [Danh sách model](../models/README.md) hoặc bằng `GET /v1/models`.
-* Request thiếu `model` không định tuyến được và trả `502`; model ID không tồn tại trả `404 model_not_found`. Xem [Lỗi](errors.md).
+* Request thiếu `model` (hoặc body không phải JSON hợp lệ) không định tuyến được và trả `404` hoặc `502`; model ID không tồn tại trả `404 model_not_found`. Xem [Lỗi](errors.md).
 
 {% hint style="info" %}
 **Ngoại lệ: OCR.** Model OCR (`greennode/idp`) nhận file và trả kết quả sau, nên dùng bộ endpoint riêng và không nhận `model` trong body. Xem [OCR API](ocr.md).

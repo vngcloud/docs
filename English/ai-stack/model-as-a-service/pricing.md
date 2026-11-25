@@ -40,6 +40,7 @@ Applies to models such as:
   * **Cache tokens** _(if applicable)_
   * **Output tokens**
 * Each token type has **its own unit price**.
+* Embedding and Rerank models are billed on **input tokens** only (no cache or output tokens).
 
 <figure><img src="../../.gitbook/assets/image (451).png" alt=""><figcaption></figcaption></figure>
 

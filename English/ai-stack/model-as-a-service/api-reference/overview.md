@@ -50,7 +50,7 @@ curl https://maas-llm-aiplatform-hcm.api.vngcloud.vn/v1/chat/completions \
 
 * The endpoint path is the same for every model (for example `POST /v1/chat/completions`); only the `model` value changes.
 * Get model IDs from the [Model list](../models/README.md) or with `GET /v1/models`.
-* A request without `model` cannot be routed and returns `502`; an unknown model ID returns `404 model_not_found`. See [Errors](errors.md).
+* A request without `model` (or whose body is not valid JSON) cannot be routed and returns `404` or `502`; an unknown model ID returns `404 model_not_found`. See [Errors](errors.md).
 
 {% hint style="info" %}
 **Exception: OCR.** The OCR model (`greennode/idp`) takes a file and returns the result later, so it has its own set of endpoints and does not take `model` in the body. See [OCR API](ocr.md).

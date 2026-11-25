@@ -79,9 +79,9 @@ Một số response do tầng proxy trả trước khi request tới model. Chú
 
 | HTTP | Body | Nguyên nhân và cách xử lý |
 | --- | --- | --- |
-| 404 | `{"message":"no Route matched with those values", …}` | Sai đường dẫn hoặc HTTP method. Kiểm tra lại URL. |
+| 404 | `{"message":"no Route matched with those values", …}` | Sai đường dẫn hoặc HTTP method, hoặc body không có `model` hợp lệ (thiếu `model`, body rỗng hoặc không phải JSON). Kiểm tra URL và gửi body JSON có `model`. |
 | 405 | `{"error":{"code":"method_not_allowed", …}}` | `/v1/models` chỉ nhận `GET`. |
-| 502 | `{"message":"An invalid response was received from the upstream server", …}` | Trên các endpoint `/v1/…`: gateway không đọc được trường `model` trong body (body không phải JSON hợp lệ, body rỗng, hoặc thiếu `model`) nên không định tuyến được. Gửi body JSON hợp lệ có `model`. Lỗi này không retry được. |
+| 502 | `{"message":"An invalid response was received from the upstream server", …}` | Trên các endpoint `/v1/…`, body không có `model` hợp lệ (thiếu `model`, body rỗng hoặc không phải JSON) có thể trả `502` thay vì `404`. Gửi body JSON hợp lệ có `model`. Lỗi này không retry được. |
 | 504 | `{"message":"The upstream server is timing out", …}` | Model không trả lời trong giới hạn thời gian của request. Dùng streaming hoặc giảm `max_tokens`. Xem [giới hạn](limits.md). |
 
 
