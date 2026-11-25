@@ -109,6 +109,7 @@ Each time you edit, you can change one or more parameters. Parameters that you d
 | --- | --- | --- | --- | --- | --- | --- |
 | `wal_level` | replica | `replica` / `logical` | string | | Level of information written to WAL. Set to `logical` to use Logical Replication or CDC | **Yes** |
 | `max_wal_senders` | 10 | 10 - 65536 | integer | | Maximum number of WAL sender processes, used for streaming replication and CDC | **Yes** |
+| `max_replication_slots` | 10 | 10 - 262143 | integer | | Maximum number of replication slots, used for replicas, Logical Replication subscriptions and CDC connectors | **Yes** |
 | `max_logical_replication_workers` | 4 | 0 - 262143 | integer | | Maximum number of Logical Replication workers on the subscriber side (apply workers and table sync workers). Each worker counts toward `max_worker_processes` | **Yes** |
 | `max_wal_size` | 2048 | 32 - 2147483647 | integer | MB | Maximum WAL size before triggering a checkpoint | No |
 | `checkpoint_timeout` | 300 | 30 - 86400 | integer | s | Maximum time between two automatic checkpoints | No |
