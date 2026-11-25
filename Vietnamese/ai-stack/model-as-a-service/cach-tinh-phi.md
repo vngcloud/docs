@@ -40,6 +40,7 @@ Hiện tại có **2 nhóm model chính**:
   * **Cache tokens** _(nếu có)_
   * **Output tokens**
 * Mỗi loại tokens có **đơn giá riêng**
+* Embedding và Rerank chỉ tính **Input tokens** (không có Cache và Output).
 
 <figure><img src="../../.gitbook/assets/image (756).png" alt=""><figcaption></figcaption></figure>
 

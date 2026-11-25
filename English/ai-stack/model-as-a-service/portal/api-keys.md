@@ -8,7 +8,7 @@ description: "An API key identifies your account on every MaaS request. You need
 
 1. Sign in to [AI Platform](https://aiplatform.console.greennode.ai) and open **API Keys**.
 2. Click **Create an API key**.
-3. Enter an **API Key Name**: it must not start or end with a hyphen (`-`) and must not match an existing key name. Optionally tick **Set as default** to make it the default key.
+3. Enter an **API Key Name**: 5–35 characters, lowercase letters (a-z), digits (0-9) and hyphens (`-`) only; it must not start or end with a hyphen and must not match an existing key name. Optionally tick **Set as default** to make it the default key.
 4. Click **Create API key**. The key appears in the list.
 
 {% hint style="info" %}

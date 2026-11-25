@@ -8,7 +8,7 @@ description: "API key định danh tài khoản của bạn trong mọi request 
 
 1. Đăng nhập [AI Platform](https://aiplatform.console.greennode.ai) và mở mục **API Keys**.
 2. Bấm **Create an API key**.
-3. Nhập **API Key Name**: không bắt đầu hoặc kết thúc bằng dấu gạch ngang (`-`) và không trùng tên key đã có. Có thể chọn **Set as default** để đặt làm key mặc định.
+3. Nhập **API Key Name**: 5–35 ký tự, chỉ gồm chữ thường (a-z), số (0-9) và dấu gạch ngang (`-`); không bắt đầu hoặc kết thúc bằng `-` và không trùng tên key đã có. Có thể chọn **Set as default** để đặt làm key mặc định.
 4. Bấm **Create API key**. Key xuất hiện trong danh sách.
 
 {% hint style="info" %}
