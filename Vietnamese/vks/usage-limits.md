@@ -19,8 +19,6 @@
 
 **Bước 2: Xem mức sử dụng hiện tại**
 
-<figure><img src="../.gitbook/assets/rate-limit.png" alt=""><figcaption></figcaption></figure>
-
 Khu vực **CURRENT USAGE** hiển thị:
 
 | Tài nguyên              | Ý nghĩa                                                                                      |

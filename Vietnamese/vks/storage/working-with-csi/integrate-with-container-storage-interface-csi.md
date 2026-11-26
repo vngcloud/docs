@@ -206,8 +206,6 @@ kubectl apply -f podnginx-pvc.yaml
 
 Lúc này, hệ thống vServer sẽ tự động tạo một Volume tương ứng với file yaml bên trên, volume này sẽ được attach vào node chứa pod dùng PVC đang chạy, ví dụ:
 
-<figure><img src="../../../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
-
 ***
 
 ### **Tạo Snapshot**
@@ -223,8 +221,6 @@ Snapshot là phương pháp sao lưu giữ liệu với chi phí thấp, thuận
 **Bước 2:** Chọn **Activate Snapshot Service**.
 
 Ví dụ:
-
-<figure><img src="../../../.gitbook/assets/vks_snapshot.png" alt=""><figcaption></figcaption></figure>
 
 #### **Cài đặt GreenNode Snapshot Controller**
 

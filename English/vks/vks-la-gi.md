@@ -2,8 +2,6 @@
 
 VKS (GreenNode Kubernetes Service) is a managed service on GreenNode that simplifies the deployment and management of container-based applications. Kubernetes, an open-source platform developed by Google, is widely used to manage and deploy containerized applications in distributed environments.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 ***
 
 ## Highlights of VKS <a href="#whatisvks-nhungdiemnoibatcuavks" id="whatisvks-nhungdiemnoibatcuavks"></a>

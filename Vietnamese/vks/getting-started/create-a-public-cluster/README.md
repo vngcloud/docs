@@ -2,10 +2,6 @@
 
 ## **Model**
 
-<figure><img src="../../../.gitbook/assets/vks_model_public.png" alt=""><figcaption></figcaption></figure>
-
-
-
 Khi bạn khởi tạo một **Public Cluster với Public Node Group**, hệ thống VKS sẽ:
 
 * Tạo VM có Floating IP ( tức có IP Public). Lúc này các VM (Node) này có thể join trực tiếp vào cụm K8S thông qua Public IP này. Bằng cách sử dụng Public Cluster và Public Node Group, bạn có thể dễ dàng tạo các cụm Kubernetes và thực hiện expose service mà không cần sử dụng Load Balancer. Việc này sẽ góp phần tiết kiệm chi phí cho cụm của bạn.

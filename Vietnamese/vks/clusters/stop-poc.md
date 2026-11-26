@@ -16,8 +16,6 @@ Trước khi tìm hiểu cách Stop POC cho tài nguyên của bạn trên VKS, 
 
 **Bước 5:** Chọn POC như hình bên dưới
 
-<figure><img src="../../.gitbook/assets/image (792).png" alt=""><figcaption></figcaption></figure>
-
 **Bước 6:** Chọn **Create Kubernetes cluster.** Hãy chờ vài phút để chúng tôi khởi tạo Cluster của bạn, trạng thái của Cluster lúc này là **Creating**.
 
 **Bước 7:** Khi trạng thái **Cluster** là **Active**, bạn có thể xem thông tin Cluster, thông tin Node Group bằng cách chọn vào Cluster Name tại cột **Name**.
@@ -188,19 +186,9 @@ spec:
 
 **Bước 2:** Chọn nút **Stop POC** phía trên góc phải màn hình.
 
-<figure><img src="../../.gitbook/assets/image (517).png" alt=""><figcaption></figcaption></figure>
-
 **Bước 3:** Lúc này, màn hình hiển thị danh sách tất cả các Server và Volume (<mark style="color:red;">**bao gồm cả Boot Volume và PVC mà bạn attach vào node trong Cluster của bạn)**</mark> , Load Balancer, Endpoint thuộc Cluster đang có trạng thái POC. Bạn có thể kiểm tra thông tin sau đó chọn **Stop POC**
 
-<figure><img src="../../.gitbook/assets/image (795).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image (794).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image (793).png" alt=""><figcaption></figcaption></figure>
-
 **Bước 4**: Tiến hành thanh toán tài nguyên bằng tiền thật, bạn có thể lựa chọn **Chu kỳ sử dụng mong muốn, bật tắt Tự động gia hạn, nhập Coupon** nếu có và chọn **Continue** để thực hiện Thanh toán tài nguyên
-
-<figure><img src="../../.gitbook/assets/image (796).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5**: Thực hiện thanh toán bằng số dư credit hoặc qua các hình thức thanh toán khác nếu có.
 
@@ -216,7 +204,5 @@ spec:
 * Sau khi stop POC trên VKS, nút "**Stop POC**" sẽ tiếp tục hiển thị **nếu chúng tôi thấy vẫn còn resource chưa được Stop POC** sau khi thực hiện trên VKS Portal. Bạn có thể tiếp tục chọn và thực hiện **Stop POC** cho đến khi tất cả các resource được chuyển về resource thật.
 * <mark style="color:red;">Đối với loại resource</mark> <mark style="color:red;">**Snapshot**</mark><mark style="color:red;">, bạn không thể chỉ định snapshot sử dụng ví POC từ VKS. Để thực hiện tạo Snapshot qua ví POC, tại</mark> <mark style="color:red;">**vServer Portal**</mark><mark style="color:red;">, vui lòng chọn</mark> <mark style="color:red;">**Activate Snapshot**</mark><mark style="color:red;">, sau đó tại màn hình</mark> <mark style="color:red;">**Checkout**</mark><mark style="color:red;">, vui lòng chọn sử dụng ví</mark> <mark style="color:red;">**POC**</mark><mark style="color:red;">. Lúc này</mark> <mark style="color:red;">**tất cả các resource snapshot của bạn sẽ được tạo qua ví POC**</mark><mark style="color:red;">. Do đó, việc stop POC cần được bạn thực hiện thông qua</mark> <mark style="color:red;">**vConsole**</mark> <mark style="color:red;">hoặc</mark> <mark style="color:red;">**vServer Portal**</mark><mark style="color:red;">. Tham khảo thêm hình bên dưới.</mark>
 {% endhint %}
-
-<figure><img src="../../.gitbook/assets/image (450).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (452).png" alt=""><figcaption></figcaption></figure>
