@@ -4,8 +4,6 @@ Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Pub
 
 ### Model
 
-<figure><img src="../../.gitbook/assets/vks_model_private.png" alt=""><figcaption></figcaption></figure>
-
 **Thành phần**
 
 * **Control plane**: Được quản lý bởi GreenNode, chịu trách nhiệm điều phối và quản lý toàn bộ cluster.
@@ -18,8 +16,6 @@ Trước đây, các public cluster trên VKS đang sử dụng địa chỉ Pub
   * **Endpoint** để kết nối tới dịch vụ **vStorage** (Endpoint Name: vks-vstorage-endpoint-...)
 
 Bạn có thể xem thông tin 4 private service endpoint thông qua portal vServer theo đường dẫn tại [đây](https://hcm-3.console.greennode.ai/vserver/vnetwork/endpoint/list).
-
-<figure><img src="../../.gitbook/assets/vks_endpoint.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Warning:**
@@ -81,8 +77,6 @@ Bạn có thể xem thông tin 4 private service endpoint thông qua portal vSer
 **Bước 3:** Chờ đợi tới khi chúng tôi khởi tạo thành công tài khoản VKS của bạn. Sau khi Activate thành công, bạn hãy chọn **Create a Cluster**
 
 **Bước 4:** Tại màn hình khởi tạo Cluster, chúng tôi đã thiết lập thông tin cho Cluster và một **Default Node Group** cho bạn, bạn có thể giữ các giá trị mặc định này hoặc điều chỉnh các thông số mong muốn cho Cluster và Node Group của bạn tại Cluster Configuration, Default Node Group Configuration, Plugin.
-
-<figure><img src="../../.gitbook/assets/image (693).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 5:** Chọn **Create Kubernetes cluster.** Hãy chờ vài phút để chúng tôi khởi tạo Cluster của bạn, trạng thái của Cluster lúc này là **Creating**.
 
@@ -195,10 +189,6 @@ Do Private Cluster chỉ có thể kết nối private tới hệ thống vConta
   * Với `<mark style="color:red;background-color:red;">`**Region HCM**`</mark>`: [https://vcr.console.greennode.ai/list](https://vcr.console.greennode.ai/list)
   * Với `<mark style="color:red;background-color:red;">`**Region HN**`</mark>`: [https://han-1.console.greennode.ai/vcr/repository/list](https://han-1.console.greennode.ai/vcr/repository/list)
 * Thực hiện khởi tạo Repositoryvà Repository theo hướng dẫn tại [đây](../../vcontainer-registry/repository/). Ví dụ trong hình dưới, tôi đã khởi tạo demo\_repo với demo\_user có thể pull/ push image:
-
-<figure><img src="../../.gitbook/assets/image (697).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image (698).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Warning:**
@@ -357,8 +347,6 @@ pod/nginx-app-56bbc8fdd8-4pz68   1/1     Running   0          3m32s   172.16.4.2
 ***
 
 Lúc này, hệ thống vLB sẽ khởi tạo môt Network Load Balancer, bạn có thể xem thông tin LB này thông qua portal vLB tại [đây](https://hcm-3.console.greennode.ai/vserver/load-balancer/vlb).
-
-<figure><img src="../../.gitbook/assets/image (699).png" alt=""><figcaption></figcaption></figure>
 
 **Bước 3: Để truy cập vào app nginx vừa expose, bạn có thể sử dụng Endpoint của Load Balancer URL với định dạng:**
 

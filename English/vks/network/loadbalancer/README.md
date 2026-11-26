@@ -18,8 +18,6 @@
 
 ### Model deployment
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 ## GreenNode LoadBalancer Controller
 
 The GreenNode Load Balancer Controller simplifies the deployment and management of load balancers in GreenNode environments for Kubernetes clusters. It automates the creation, configuration, and lifecycle management of load balancers for Kubernetes services and ingress resources. The controller ensures seamless integration with GreenNode services, enabling dynamic load balancing, SSL termination, and efficient traffic routing. It continuously monitors and reconciles resources to maintain their desired state, ensuring high availability, scalability, and optimized performance for applications running on GreenNode.

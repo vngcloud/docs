@@ -18,8 +18,6 @@
 
 ### Mô hình triển khai
 
-<figure><img src="../../../.gitbook/assets/image (340).png" alt=""><figcaption></figcaption></figure>
-
 ## VNG Cloud LoadBalancer Controller
 
 VNG Cloud Load Balancer Controller đơn giản hóa việc triển khai và quản lý bộ cân bằng tải trong môi trường VNG Cloud cho các cụm Kubernetes. Controller tự động hóa việc tạo, cấu hình và quản lý vòng đời của bộ cân bằng tải cho các dịch vụ Kubernetes và tài nguyên ingress. Controller đảm bảo tích hợp liền mạch với các dịch vụ VNG Cloud, cho phép cân bằng tải động, kết thúc SSL và định tuyến lưu lượng hiệu quả. Controller liên tục giám sát và đồng bộ tài nguyên để duy trì trạng thái mong muốn, đảm bảo tính khả dụng cao, khả năng mở rộng và hiệu suất tối ưu cho các ứng dụng chạy trên VNG Cloud.

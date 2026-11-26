@@ -246,8 +246,6 @@ For **Snapshot** resources, you cannot specify snapshot to use the POC wallet fr
 
 <figure><img src="../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
-
 **Install GreenNode Snapshot Controller**
 
 * Install Helm version 3.0 or higher. Refer to [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/) for installation instructions.

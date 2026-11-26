@@ -46,8 +46,6 @@ Trên VKS, **Calico Overlay** hoạt động theo mô hình sau:
 
 <table><thead><tr><th width="117">Field</th><th width="375">Ý nghĩa</th><th>Ví dụ minh họa</th></tr></thead><tbody><tr><td><strong>VPC</strong></td><td>Dải địa chỉ IP mà các node của Cluster sẽ sử dụng để giao tiếp.</td><td>Trong hình, chúng tôi lựa chọn VPC có IP range là <strong>10.111.0.0/16</strong>, tương ứng với <strong>65536 IP</strong></td></tr><tr><td><strong>Subnet</strong></td><td>Dải địa chỉ IP nhỏ hơn thuộc VPC. Mỗi node trong Cluster sẽ được gán một IP từ Subnet này. Subnet phải nằm trong dải IP của VPC đã chọn.</td><td>Trong hình, chúng tôi lựa chọn Subnet có <strong>Primary IP range</strong> là <strong>10.111.0.0/24</strong>, tương ứng với <strong>256 IP</strong></td></tr><tr><td><strong>IP-IP encapsulation mode</strong></td><td>Chế độ IP-IP encapsulation trong VKS là Always</td><td>Trong hình, chúng tôi lựa chọn chế độ <strong>Always</strong> để luôn encapsulate các gói tin.</td></tr><tr><td><strong>CIDR</strong></td><td>Dải mạng ảo mà các pod sẽ sử dụng</td><td>Trong hình, chúng tôi lựa chọn dải mạng ảo là <code>172.16.0.0/16</code>. Các pod sẽ lấy IP từ dải IP này.</td></tr></tbody></table>
 
-<figure><img src="../../../.gitbook/assets/image (761).png" alt=""><figcaption></figcaption></figure>
-
 {% hint style="info" %}
 **Chú ý:**&#x20;
 

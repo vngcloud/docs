@@ -19,8 +19,6 @@
 
 **Step 2: Review current usage**
 
-<figure><img src="../.gitbook/assets/rate-limit.png" alt=""><figcaption></figcaption></figure>
-
 The **CURRENT USAGE** section shows:
 
 | Resource                | Description                                                                                             |
