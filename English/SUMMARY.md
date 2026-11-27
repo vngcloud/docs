@@ -752,7 +752,6 @@
     * [Playground](ai-stack/model-as-a-service/playground.md)
     * [Available Models](ai-stack/model-as-a-service/available-models.md)
     * [Model list](ai-stack/model-as-a-service/models/README.md)
-      * [DeepSeek V4 Flash](ai-stack/model-as-a-service/models/deepseek/deepseek-v4-flash.md)
       * [DeepSeek V4 Pro](ai-stack/model-as-a-service/models/deepseek/deepseek-v4-pro.md)
       * [DeepSeek V4.1 Flash](ai-stack/model-as-a-service/models/deepseek/deepseek-v4.1-flash-thirdparty.md)
       * [Gemma 4 31B-IT](ai-stack/model-as-a-service/models/google/gemma-4-31b-it.md)

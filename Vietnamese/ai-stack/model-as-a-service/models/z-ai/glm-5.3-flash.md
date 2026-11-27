@@ -10,7 +10,7 @@ GLM-5.3-Flash is the first natively multimodal model in Z.ai's GLM-5 series, rel
 | --- | --- |
 | Ngữ cảnh | 1M tokens |
 | Output tối đa | 128K tokens |
-| Đầu vào | text, image, file, video |
+| Đầu vào | text, image, video |
 | Đầu ra | text |
 | Endpoints | `/v1/chat/completions`, `/v1/responses`, `/v1/messages` |
 
