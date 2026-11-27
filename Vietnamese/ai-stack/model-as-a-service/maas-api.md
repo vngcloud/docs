@@ -36,7 +36,7 @@ OCR là một loại model trong MaaS, nhưng do đặc thù xử lý tài liệ
     * `single`: OCR 1 tài liệu
     * hoặc `<FLOW_ID>`: OCR theo bộ tài liệu (nếu bạn được cấp flow)
   * `doc_type` (required nếu `flow=single`): `<DOC_TYPE>`, ví dụ `Doc2Text` (OCR văn bản chung). Loại tài liệu khác: liên hệ GreenNode
-  * `file_type` (required nếu `flow=single`): `PDF` hoặc `IMAGE`
+  * `file_type` (required): `PDF` hoặc `IMAGE`
   * `file` (required): file cần OCR. `PDF`: 1 file đuôi `.pdf`, 2 KB–50 MB. `IMAGE`: jpg, jpeg, png, bmp, tif, tiff, mỗi file 2 KB–10 MB, gửi được nhiều file
 
 #### Ví dụ
@@ -76,7 +76,7 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORT
 
 Điều này bình thường vì OCR đang xử lý.
 
-* Đợi 2–5 giây và gọi lại API này (polling) cho tới khi `data.status` = `COMPLETED`.
+* Đợi 2–5 giây và gọi lại API này (polling) cho tới khi `data.status` = `COMPLETED` (thành công) hoặc `FAILED` (xử lý thất bại, dừng polling).
 * Nếu quá thời gian timeout mà vẫn không có dữ liệu, gửi `request_id` cho team support để kiểm tra.
 
 ### Các API lấy thêm dữ liệu khác của OCR (tuỳ nhu cầu)
@@ -134,7 +134,7 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORT
 * `403 Forbidden`:
   * User ID trong đường dẫn khác chủ sở hữu API key (`tenant mismatch`).
 * `400 Bad Request`:
-  * Thiếu `doc_type` hoặc `file_type` khi `flow=single`, thiếu `file`, hoặc loại / kích thước file không hợp lệ.
+  * Thiếu `doc_type` khi `flow=single`, thiếu `file_type`, thiếu `file`, hoặc loại / kích thước file không hợp lệ.
 * `404 Not Found`:
   * `request_id` không tồn tại.
 * `500`:

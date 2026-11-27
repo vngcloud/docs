@@ -62,7 +62,7 @@ Dùng mỗi ứng dụng hoặc môi trường một key, để khi xoay vòng h
 
 1. Xoá key trên portal ngay. Đây là cách duy nhất để thu hồi key.
 2. Tạo key thay thế và triển khai.
-3. Mở **Model Usage** và kiểm tra mức dùng lạ trong khoảng thời gian key bị lộ.
+3. Mở **Usage & Budget → Usage & Cost** và kiểm tra mức dùng lạ trong khoảng thời gian key bị lộ.
 4. Gỡ key khỏi nơi bị lộ (lịch sử repository, log, chat) và liên hệ hỗ trợ nếu thấy khoản phí bất thường.
 
 ## Giữ key an toàn

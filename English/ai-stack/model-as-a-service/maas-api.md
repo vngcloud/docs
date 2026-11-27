@@ -36,7 +36,7 @@ OCR is one of the model types available in MaaS. Because it works on documents (
     * `single`: OCR for a single document
     * or `<FLOW_ID>`: OCR for a document workflow (if provided)
   * `doc_type` (required if `flow=single`): `<DOC_TYPE>`, e.g. `Doc2Text` (general text OCR). Contact GreenNode for other document types
-  * `file_type` (required if `flow=single`): `PDF` or `IMAGE`
+  * `file_type` (required): `PDF` or `IMAGE`
   * `file` (required): file to be processed by OCR. `PDF`: one `.pdf` file, 2 KB–50 MB. `IMAGE`: jpg, jpeg, png, bmp, tif, tiff, 2 KB–10 MB each; multiple files allowed
 
 #### Example
@@ -76,7 +76,7 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORT
 
 This is normal because OCR processing is still in progress.
 
-* Wait 2–5 seconds and call the API again (polling) until `data.status` is `COMPLETED`.
+* Wait 2–5 seconds and call the API again (polling) until `data.status` is `COMPLETED` (success) or `FAILED` (processing failed; stop polling).
 * If the timeout is exceeded and no data is returned, send the `request_id` to the support team for investigation.
 
 ### Additional OCR Data APIs (optional, depending on needs)
@@ -134,7 +134,7 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORT
 * `403 Forbidden`:
   * The user ID in the path differs from the owner of the API key (`tenant mismatch`).
 * `400 Bad Request`:
-  * `doc_type` or `file_type` missing when `flow=single`, `file` missing, or an invalid file type / size.
+  * `doc_type` missing when `flow=single`, `file_type` missing, `file` missing, or an invalid file type / size.
 * `404 Not Found`:
   * The `request_id` does not exist.
 * `500`:

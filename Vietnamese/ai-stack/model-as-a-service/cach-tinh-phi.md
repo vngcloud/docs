@@ -151,10 +151,9 @@ Sau khi recover:
 
 Để xem chi tiết lượng usage đã sử dụng:
 
-* Truy cập trang [**Model Usage**](https://aiplatform.console.greennode.ai/model-usage)
+* Vào **Usage & Budget → Usage & Cost** trên [AI Platform Console](https://aiplatform.console.greennode.ai/usage-cost) (xem [Xem Usage & Cost](../usage-budget/xem-usage-cost.md))
 * Cho phép:
   * Chọn **khoảng thời gian cụ thể**
   * Xem chi tiết:
     * Tokens input / output / cache
-    * Số lượng hình ảnh đã tạo
     * Chi phí tương ứng

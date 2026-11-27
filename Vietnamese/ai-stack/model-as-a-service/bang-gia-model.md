@@ -64,9 +64,6 @@ Bảng giá hiện hành của các model trên GreenNode MaaS. Các lần thay 
 | Qwen 3.7 Plus            | Input  |    11.342 |
 | Qwen 3.7 Plus            | Output |    45.368 |
 | Qwen 3.7 Plus            | Cache  |     2.268 |
-| DeepSeek V4 Flash        | Input  |     4.537 |
-| DeepSeek V4 Flash        | Output |     9.074 |
-| DeepSeek V4 Flash        | Cache  |       454 |
 | DeepSeek V4 Pro          | Input  |    54.442 |
 | DeepSeek V4 Pro          | Output |   108.883 |
 | DeepSeek V4 Pro          | Cache  |     5.387 |

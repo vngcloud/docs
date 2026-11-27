@@ -88,4 +88,4 @@ Giữ `multi_agent = false`: các bản Codex gần đây nếu không sẽ gử
 ## Lưu ý
 
 * Agent gửi lịch sử hội thoại dài và tăng dần — [prompt caching](../features/prompt-caching.md) giúp nhanh hơn đáng kể. Tránh các plugin sửa đổi các lượt trước đó.
-* Kiểm tra output tối đa của model ở trang [Danh sách model](../models/README.md) — một số model (ví dụ Kimi, 16k) thấp hơn thiết lập output mặc định của agent.
+* Kiểm tra output tối đa của model ở trang [Danh sách model](../models/README.md) — một số model có output tối đa thấp hơn thiết lập output mặc định của agent.

@@ -21,7 +21,7 @@ The body is `multipart/form-data`:
 | --- | --- | --- | --- |
 | `flow` | **Required** | `single` · `<FLOW_ID>` | `single` runs OCR on one document; a flow ID runs a document workflow. |
 | `doc_type` | Required when `flow=single` | `<DOC_TYPE>` | The document type to extract, e.g. `Doc2Text` (general text OCR). Contact GreenNode for other document types. |
-| `file_type` | Required when `flow=single` | `PDF` · `IMAGE` | Type of the uploaded file. |
+| `file_type` | **Required** | `PDF` · `IMAGE` | Type of the uploaded file. |
 | `file` | **Required** | binary | The file to process. `PDF`: one `.pdf` file, 2 KB–50 MB. `IMAGE`: jpg, jpeg, png, bmp, tif, tiff, 2 KB–10 MB each; multiple files allowed. |
 
 {% code title="curl" %}
@@ -53,7 +53,7 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORT
 {% hint style="info" %}
 **No data yet?**
 
-Processing is still running. Wait 2–5 seconds and call again (polling) until `data.status` is `COMPLETED`. If it never returns, send the `request_id` to support.
+Processing is still running. Wait 2–5 seconds and call again (polling) until `data.status` is `COMPLETED` (success) or `FAILED` (processing failed; stop polling). If it never returns, send the `request_id` to support.
 {% endhint %}
 
 ## More result endpoints
@@ -81,7 +81,7 @@ curl --location 'https://maas-llm-aiplatform-hcm.api.vngcloud.vn/maas/user-<PORT
 | --- | --- |
 | `401 Unauthorized` | Missing `Authorization` (`missing api key`) or invalid API key (`unknown api key`). |
 | `403 Forbidden` | The user ID in the path differs from the owner of the API key (`tenant mismatch`). |
-| `400 Bad Request` | `doc_type` or `file_type` missing when `flow=single`, `file` missing, or an invalid file type / size. |
+| `400 Bad Request` | `doc_type` missing when `flow=single`, `file_type` missing, `file` missing, or an invalid file type / size. |
 | `404 Not Found` | The `request_id` does not exist. |
 | `500` `Multipart field value cannot be null` | The `flow` field is missing. |
 | `500` `Doc Type not found` | The `doc_type` does not exist. |

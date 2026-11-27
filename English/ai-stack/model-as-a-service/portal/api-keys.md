@@ -62,7 +62,7 @@ Use one key per application or environment, so that rotating or revoking one doe
 
 1. Delete the key on the portal right away. This is the only way to revoke it.
 2. Create a replacement key and deploy it.
-3. Open **Model Usage** and check for usage you do not recognise in the period the key was exposed.
+3. Open **Usage & Budget → Usage & Cost** and check for usage you do not recognise in the period the key was exposed.
 4. Remove the key from wherever it leaked (repository history, logs, chat) and contact support if you see unexpected charges.
 
 ## Keep keys safe
