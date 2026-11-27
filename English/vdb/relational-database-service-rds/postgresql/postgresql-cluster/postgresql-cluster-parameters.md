@@ -74,29 +74,6 @@ Each time you edit, you can change one or more parameters. Parameters that you d
 | `enable_indexscan` | on | true / false | boolean | | Enable/disable index scan | No |
 | `enable_hashjoin` | on | true / false | boolean | | Enable/disable hash join | No |
 
-### Locale & Format
-
-| Parameter | Default Value | Allowed Values | Type | Unit | Description | Restart Required |
-| --- | --- | --- | --- | --- | --- | --- |
-| `DateStyle` | ISO, MDY | See table below | string | | Date/time display format | No |
-
-**Supported DateStyle values:**
-
-| DateStyle | Input Example | Output Example |
-| --- | --- | --- |
-| ISO, DMY | `01-02-2026` → 1 Feb 2026 | `2026-02-01` |
-| ISO, MDY | `01-02-2026` → 2 Jan 2026 | `2026-01-02` |
-| ISO, YMD | `2026-02-01` → 1 Feb 2026 | `2026-02-01` |
-| SQL, DMY | `01-02-2026` → 1 Feb 2026 | `01/02/2026` |
-| SQL, MDY | `01-02-2026` → 2 Jan 2026 | `01/02/2026` |
-| SQL, YMD | `2026-02-01` → 1 Feb 2026 | `2026-02-01` |
-| Postgres, DMY | `01-02-2026` → 1 Feb 2026 | `Fri 01 Feb 00:00:00 2026` |
-| Postgres, MDY | `01-02-2026` → 2 Jan 2026 | `Fri 02 Jan 00:00:00 2026` |
-| Postgres, YMD | `2026-02-01` → 1 Feb 2026 | `Fri 01 Feb 00:00:00 2026` |
-| German, DMY | `01.02.2026` → 1 Feb 2026 | `01.02.2026` |
-| German, MDY | `01.02.2026` → 2 Jan 2026 | `02.01.2026` |
-| German, YMD | `2026.02.01` → 1 Feb 2026 | `01.02.2026` |
-
 ### Asynchronous & Workers
 
 | Parameter | Default Value | Allowed Values | Type | Unit | Description | Restart Required |
@@ -113,6 +90,7 @@ Each time you edit, you can change one or more parameters. Parameters that you d
 | `max_logical_replication_workers` | 4 | 0 - 262143 | integer | | Maximum number of Logical Replication workers on the subscriber side (apply workers and table sync workers). Each worker counts toward `max_worker_processes` | **Yes** |
 | `max_wal_size` | 2048 | 32 - 2147483647 | integer | MB | Maximum WAL size before triggering a checkpoint | No |
 | `checkpoint_timeout` | 300 | 30 - 86400 | integer | s | Maximum time between two automatic checkpoints | No |
+| `max_standby_streaming_delay` | 30000 | 0 - 1800000 | integer | ms | Maximum time a Reader waits before canceling queries that conflict with WAL received from the Writer via streaming replication. A higher value lets long-running queries on Readers be canceled less often but increases replication lag | No |
 
 ### pg_cron
 

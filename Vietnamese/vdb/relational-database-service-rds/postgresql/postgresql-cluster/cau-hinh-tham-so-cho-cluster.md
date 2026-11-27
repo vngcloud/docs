@@ -74,29 +74,6 @@ Mỗi lần chỉnh sửa, bạn có thể thay đổi một hoặc nhiều para
 | `enable_indexscan` | on | true / false | boolean | | Bật/tắt index scan | Không |
 | `enable_hashjoin` | on | true / false | boolean | | Bật/tắt hash join | Không |
 
-### Locale & Format
-
-| Parameter | Giá trị mặc định | Giá trị cho phép | Kiểu | Unit | Công dụng | Restart Required |
-| --- | --- | --- | --- | --- | --- | --- |
-| `DateStyle` | ISO, MDY | Xem bảng bên dưới | string | | Format hiển thị ngày giờ | Không |
-
-**Các giá trị DateStyle được hỗ trợ:**
-
-| DateStyle | Input ví dụ | Output ví dụ |
-| --- | --- | --- |
-| ISO, DMY | `01-02-2026` → 1 Feb 2026 | `2026-02-01` |
-| ISO, MDY | `01-02-2026` → 2 Jan 2026 | `2026-01-02` |
-| ISO, YMD | `2026-02-01` → 1 Feb 2026 | `2026-02-01` |
-| SQL, DMY | `01-02-2026` → 1 Feb 2026 | `01/02/2026` |
-| SQL, MDY | `01-02-2026` → 2 Jan 2026 | `01/02/2026` |
-| SQL, YMD | `2026-02-01` → 1 Feb 2026 | `2026-02-01` |
-| Postgres, DMY | `01-02-2026` → 1 Feb 2026 | `Fri 01 Feb 00:00:00 2026` |
-| Postgres, MDY | `01-02-2026` → 2 Jan 2026 | `Fri 02 Jan 00:00:00 2026` |
-| Postgres, YMD | `2026-02-01` → 1 Feb 2026 | `Fri 01 Feb 00:00:00 2026` |
-| German, DMY | `01.02.2026` → 1 Feb 2026 | `01.02.2026` |
-| German, MDY | `01.02.2026` → 2 Jan 2026 | `02.01.2026` |
-| German, YMD | `2026.02.01` → 1 Feb 2026 | `01.02.2026` |
-
 ### Asynchronous & Workers
 
 | Parameter | Giá trị mặc định | Giá trị cho phép | Kiểu | Unit | Công dụng | Restart Required |
@@ -113,6 +90,7 @@ Mỗi lần chỉnh sửa, bạn có thể thay đổi một hoặc nhiều para
 | `max_logical_replication_workers` | 4 | 0 - 262143 | integer | | Số lượng worker tối đa cho Logical Replication ở phía subscriber (apply worker và table sync worker). Mỗi worker được tính vào `max_worker_processes` | **Có** |
 | `max_wal_size` | 2048 | 32 - 2147483647 | integer | MB | Kích thước WAL tối đa trước khi trigger checkpoint | Không |
 | `checkpoint_timeout` | 300 | 30 - 86400 | integer | s | Khoảng thời gian tối đa giữa hai checkpoint tự động | Không |
+| `max_standby_streaming_delay` | 30000 | 0 - 1800000 | integer | ms | Thời gian tối đa Reader chờ trước khi hủy các query đang xung đột với WAL nhận từ Writer qua streaming replication. Giá trị lớn giúp query dài trên Reader ít bị hủy nhưng làm tăng replication lag | Không |
 
 ### pg_cron
 
