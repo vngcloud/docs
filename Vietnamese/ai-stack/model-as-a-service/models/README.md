@@ -12,7 +12,6 @@ Cột **Reasoning**: **Luôn bật** = model luôn suy luận, chỉ giảm đư
 
 | Model ID | Tên | Ngữ cảnh | Output tối đa | Đầu vào | Endpoints | Reasoning |
 | --- | --- | --- | --- | --- | --- | --- |
-| [`deepseek/deepseek-v4-flash`](deepseek/deepseek-v4-flash.md) | DeepSeek V4 Flash | 1M | 384K | text | chat, responses, messages | Luôn bật |
 | [`deepseek/deepseek-v4-pro`](deepseek/deepseek-v4-pro.md) | DeepSeek V4 Pro | 1M | 384K | text | chat, responses, messages | Luôn bật |
 | [`deepseek/deepseek-v4.1-flash-thirdparty`](deepseek/deepseek-v4.1-flash-thirdparty.md) | DeepSeek V4.1 Flash | 1M | 384K | text, image | chat, responses, messages | Mặc định bật |
 | [`google/gemma-4-31b-it`](google/gemma-4-31b-it.md) | Gemma 4 31B-IT | 262K | 32K | text, image | chat, responses, messages | Tùy chọn |
@@ -28,7 +27,7 @@ Cột **Reasoning**: **Luôn bật** = model luôn suy luận, chỉ giảm đư
 | [`qwen/qwen3.8-max`](qwen/qwen3.8-max.md) | Qwen 3.8 Max | 1M | 128K | text, image, video | chat, responses, messages | Mặc định bật |
 | [`z-ai/glm-5.2-thirdparty`](z-ai/glm-5.2-thirdparty.md) | GLM-5.2 | 1M | 128K | text | chat, responses, messages | Mặc định bật |
 | [`z-ai/glm-5.3`](z-ai/glm-5.3.md) | GLM-5.3 | 300K | 128K | text | chat, responses, messages | Luôn bật |
-| [`z-ai/glm-5.3-flash`](z-ai/glm-5.3-flash.md) | GLM-5.3 Flash | 1M | 128K | text, image, file, video | chat, responses, messages | Luôn bật |
+| [`z-ai/glm-5.3-flash`](z-ai/glm-5.3-flash.md) | GLM-5.3 Flash | 1M | 128K | text, image, video | chat, responses, messages | Luôn bật |
 | [`z-ai/glm-5.3-flash-thirdparty`](z-ai/glm-5.3-flash-thirdparty.md) | GLM-5.3 Flash Thirdparty | 1M | 128K | text, image, video | chat, responses, messages | Luôn bật |
 
 ## Embedding
